@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/core">
+        <file>skin.svg</file>
+    </qresource>
+</RCC>
