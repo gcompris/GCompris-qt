@@ -97,6 +97,8 @@ function getCurrentActivityInfo() {
 
 function displayHelp() {
     bar.showHelp(currentActivityInfo.section,
+                 currentActivityInfo.title,
+                 currentActivityInfo.description,
                  currentActivityInfo.prerequisite,
                  currentActivityInfo.goal,
                  currentActivityInfo.manual,

@@ -12,7 +12,9 @@ QML_IMPORT_PATH =
 # MOBILITY +=
 
 # The .cpp file which was generated for your project. Feel free to hack it.
-SOURCES += main.cpp
+SOURCES += main.cpp \
+    ActivityInfo.cpp \
+    ActivityInfoTree.cpp
 
 # Installation path
 # target.path =
@@ -50,3 +52,7 @@ OTHER_FILES += \
     android/res/values-pt-rBR/strings.xml \
     android/res/values-et/strings.xml \
     android/res/values-ms/strings.xml
+
+HEADERS += \
+    ActivityInfo.h \
+    ActivityInfoTree.h
