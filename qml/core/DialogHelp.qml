@@ -9,9 +9,15 @@ DialogBackground {
     property string section
     property string contentText
 
-    function show(section, prerequisite, goal, manual, credit) {
+    function show(section,
+                  title, description,
+                  prerequisite, goal, manual, credit) {
         dialogHelp.section = section
         contentText = ""
+        contentText += "<center><b>" + title + "</b></center>"
+        contentText += "<br/><br/>"
+        contentText += "<b>" + description + "</b>"
+        contentText += "<br/><br/>"
         if(prerequisite) {
             contentText += "<b>" + "Prerequisite: " + "</b>" + prerequisite
             contentText += "<br/><br/>"

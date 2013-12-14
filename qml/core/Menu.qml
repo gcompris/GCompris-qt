@@ -1,33 +1,13 @@
 import QtQuick 2.0
 import "core.js" as Core
+import GCompris 1.0
 
 Item {
     id: container
     width: parent.width
     height: parent.height
 
-    ListModel {
-        id: activities
-
-        function add(activityName) {
-            var qmlActivityInfo = Qt.createComponent("../" + activityName + "/ActivityInfo.qml")
-            if (qmlActivityInfo.status == Component.Ready) {
-                var currentActivityInfo = qmlActivityInfo.createObject(main);
-                if (currentActivityInfo == null) {
-                    console.log("error creating activityInfo" + activityName);
-                    console.log(component.errorString());
-                    return false;
-                }
-                activities.append( currentActivityInfo )
-            }
-        }
-    }
-
     Component.onCompleted: {
-        activities.add("leftright-activity")
-        activities.add("leftright-activity")
-        activities.add("leftright-activity")
-        activities.add("leftright-activity")
     }
 
     Rectangle {
@@ -50,7 +30,7 @@ Item {
         ListView {
             anchors.fill: parent
 
-            model: activities
+            model: ActivityInfoTree.menuTree
             delegate: Image {
                 source: "../" + dir + "/" + icon;
                 MouseArea {
@@ -58,9 +38,7 @@ Item {
                     onClicked: Core.startActivity(dir);
                 }
             }
-
         }
-
     }
 
     Rectangle {
@@ -73,5 +51,4 @@ Item {
         border.width: 1
         radius: 10
     }
-
 }

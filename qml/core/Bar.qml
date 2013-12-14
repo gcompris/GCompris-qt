@@ -20,8 +20,10 @@ Rectangle {
         content.value = newContent
     }
 
-    function showHelp(section, prerequisite, goal, manual, credit) {
-        dialogHelp.show(section, prerequisite, goal, manual, credit)
+    function showHelp(section, title, description,
+                      prerequisite, goal, manual, credit) {
+        dialogHelp.show(section, title, description,
+                        prerequisite, goal, manual, credit)
     }
 
     Row {

@@ -28,8 +28,8 @@ Item {
 
     Keys.onEscapePressed: Core.stopActivity()
     Keys.onPressed: {
-        if (event.modifiers == Qt.ControlModifier &&
-            event.key == Qt.Key_Q) {
+        if (event.modifiers === Qt.ControlModifier &&
+            event.key === Qt.Key_Q) {
             Qt.quit()
         }
     }
