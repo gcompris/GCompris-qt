@@ -7,6 +7,8 @@
 class ActivityInfo : public QObject
 {
 	Q_OBJECT
+	Q_PROPERTY(QString name READ name WRITE setName NOTIFY nameChanged)
+	Q_PROPERTY(QString type READ type WRITE setType NOTIFY typeChanged)
 	Q_PROPERTY(QString dir READ dir WRITE setDir NOTIFY dirChanged)
 	Q_PROPERTY(QString section READ section WRITE setSection NOTIFY sectionChanged)
 	Q_PROPERTY(int difficulty READ difficulty WRITE setDifficulty NOTIFY difficultyChanged)
@@ -25,6 +27,10 @@ class ActivityInfo : public QObject
 public:
 	ActivityInfo(QObject *parent = 0);
 
+	QString name() const;
+	void setName(const QString &);
+	QString type() const;
+	void setType(const QString &);
 	QString dir() const;
 	void setDir(const QString &);
 	QString section() const;
@@ -53,6 +59,8 @@ public:
 	void setCredit(const QString &);
 
 signals:
+	void nameChanged();
+	void typeChanged();
 	void dirChanged();
 	void sectionChanged();
 	void difficultyChanged();
@@ -68,6 +76,8 @@ signals:
 	void creditChanged();
 	
 private:
+	QString m_name;
+	QString m_type;
 	QString m_dir;
 	QString m_section;
 	int m_difficulty;

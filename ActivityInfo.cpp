@@ -5,8 +5,21 @@
 
 #include "ActivityInfoTree.h"
 
-ActivityInfo::ActivityInfo(QObject *parent) : QObject(parent)
+ActivityInfo::ActivityInfo(QObject *parent):
+	QObject(parent),
+	m_dir(""),
+	m_type("")
 {}
+
+QString ActivityInfo::name() const
+{
+	return m_name;
+}
+void ActivityInfo::setName(const QString &name)
+{
+	m_name = name;
+	emit nameChanged();
+}
 
 QString ActivityInfo::dir() const
 {
@@ -16,6 +29,16 @@ void ActivityInfo::setDir(const QString &dir)
 {
 	m_dir = dir;
 	emit dirChanged();
+}
+
+QString ActivityInfo::type() const
+{
+	return m_type;
+}
+void ActivityInfo::setType(const QString &type)
+{
+	m_type = type;
+	emit typeChanged();
 }
 
 QString ActivityInfo::section() const

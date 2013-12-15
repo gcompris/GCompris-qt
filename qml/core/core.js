@@ -53,20 +53,18 @@ function stopDialogs() {
     main.stopDialogs()
 }
 
-function startActivity(activityName) {
+function selectActivity(activity) {
+    console.log("selected activity: " + activity.name);
+    if(activity.type != 'menu') {
+        startActivity(activity)
+    }
+}
+
+function startActivity(activity) {
     stopMenu()
     stopDialogs()
-    var qmlActivityInfo = Qt.createComponent("../" + activityName + "/ActivityInfo.qml")
-    if (qmlActivityInfo.status == Quick.Component.Ready) {
-        currentActivityInfo = qmlActivityInfo.createObject(main);
-        if (currentActivityInfo == null) {
-            console.log("error creating activityInfo" + activityName);
-            console.log(component.errorString());
-            return false;
-        }
-    }
-
-    var qmlActivity = Qt.createComponent("../" + activityName + "/Activity.qml")
+    currentActivityInfo = activity
+    var qmlActivity = Qt.createComponent("../" + activity.name + "/Activity.qml")
     if (qmlActivity.status == Quick.Component.Ready) {
         currentActivity = qmlActivity.createObject(main);
         if (currentActivity == null) {

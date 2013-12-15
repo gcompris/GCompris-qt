@@ -2,6 +2,7 @@
 #include <QQmlProperty>
 #include <QQmlEngine>
 #include <QQmlComponent>
+#include <QDir>
 
 #include "ActivityInfoTree.h"
 
@@ -38,6 +39,25 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	ActivityInfoTree *menuTree = new ActivityInfoTree(NULL);
 
 	// TODO Parse all ActivityInfo on disk
+	QDir menuDir("../gcompris-qt/menus", "*.qml");
+	qDebug() << menuDir.absolutePath();
+	QStringList list = menuDir.entryList();
+	for (int i = 0; i < list.size(); ++i) {
+		QString menuFile = menuDir.absolutePath() + "/" + list.at(i);
+
+		QQmlComponent component(engine,
+				QUrl::fromLocalFile(menuFile));
+		QObject *object = component.create();
+		if(component.isReady()) {
+			if(QQmlProperty::read(object, "section").toString() == "") {
+				QQmlProperty::write(object, "dir", menuDir.absolutePath());
+				menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(object));
+			}
+		} else {
+			qDebug() << menuFile << ": Failed to load";
+		}
+
+	}
 	QQmlComponent component(engine,
 			QUrl::fromLocalFile("qml/leftright-activity/ActivityInfo.qml"));
 	QObject *object = component.create();
