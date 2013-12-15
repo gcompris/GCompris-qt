@@ -28,14 +28,15 @@ Item {
         border.width: 1
 
         ListView {
+            id: sectionList
             anchors.fill: parent
-
+            anchors.centerIn: parent.center
             model: ActivityInfoTree.menuTree
             delegate: Image {
-                source: "../" + dir + "/" + icon;
+                source: dir + "/" + icon;
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: Core.startActivity(dir);
+                    onClicked: Core.selectActivity(ActivityInfoTree.menuTree[index]);
                 }
             }
         }
