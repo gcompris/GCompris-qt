@@ -21,12 +21,9 @@ Image {
         id: blackBoard
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: topBorder.bottom
-        //width: main.width > 400 ? 400 : main.width - 10
-        //width: Math.min(main.width / 410, main.height / 410)
-        width: Math.min(main.width, main.height * 0.9)
+        width: Math.min(main.width, main.height * 0.8)
         height: width * 3 / 4
-        source: "resource/leftright/blackboard.svgz"
-        //scale: main.width > 410 ? 1.0 : main.width / 410
+        source: "resource/blackboard.svgz"
 
         Image {
             id: handImage
@@ -39,7 +36,7 @@ Image {
 
         Image {
             id: lightImage
-            source: "resource/leftright/light.svgz"
+            source: "resource/light.svgz"
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: 40
@@ -91,7 +88,7 @@ Image {
         }
 
         Button {
-            width: 100
+            width: main.width * 0.2
             height: main.height * 0.15
             anchors.left: blackBoard.left
             anchors.top: blackBoard.bottom
@@ -104,7 +101,7 @@ Image {
         }
 
         Button {
-            width: 100
+            width: main.width * 0.2
             height: main.height * 0.15
             anchors.right: blackBoard.right
             anchors.top: blackBoard.bottom
