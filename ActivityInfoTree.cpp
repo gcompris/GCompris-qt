@@ -1,8 +1,6 @@
 #include <QtDebug>
 #include <QQmlProperty>
-#include <QQmlEngine>
 #include <QQmlComponent>
-#include <QDir>
 
 #include "ActivityInfoTree.h"
 
@@ -25,12 +23,43 @@ ActivityInfo *ActivityInfoTree::menuTree(int index) const
 	return m_menuTree.at(index);
 }
 
+ActivityInfo *ActivityInfoTree::getParentActivity(ActivityInfo *root, ActivityInfo *menu)
+{
+
+	qDebug() << "Parent Path= " << menu->getSectionPath();
+
+	Q_FOREACH( QObject *object, root->children() )
+	{
+		ActivityInfo *activityInfo = qobject_cast<ActivityInfo*>(object);
+		if(activityInfo->section() == menu->section()) {
+			return activityInfo;
+		}
+	}
+
+	return m_menuTree.at(0);
+}
+
 void ActivityInfoTree::menuTreeAppend(ActivityInfo *menu)
 {
 	m_menuTree.append(menu);
 	emit menuTreeChanged();
 }
 
+void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
+									  const QDir &menuDir, const QString &menuFile)
+{
+	QQmlComponent component(engine,
+							QUrl::fromLocalFile(menuDir.absolutePath() + "/" + menuFile));
+	QObject *object = component.create();
+	if(component.isReady()) {
+		if(QQmlProperty::read(object, "section").toString() == "") {
+			QQmlProperty::write(object, "dir", menuDir.absolutePath());
+			menuTreeAppend(qobject_cast<ActivityInfo*>(object));
+		}
+	} else {
+		qDebug() << menuFile << ": Failed to load";
+	}
+}
 
 QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
 {
@@ -43,27 +72,20 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	qDebug() << menuDir.absolutePath();
 	QStringList list = menuDir.entryList();
 	for (int i = 0; i < list.size(); ++i) {
-		QString menuFile = menuDir.absolutePath() + "/" + list.at(i);
-
-		QQmlComponent component(engine,
-				QUrl::fromLocalFile(menuFile));
-		QObject *object = component.create();
-		if(component.isReady()) {
-			if(QQmlProperty::read(object, "section").toString() == "") {
-				QQmlProperty::write(object, "dir", menuDir.absolutePath());
-				menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(object));
-			}
-		} else {
-			qDebug() << menuFile << ": Failed to load";
-		}
-
+		menuTree->menuTreeAppend(engine, menuDir,
+								 list.at(i));
 	}
 	QQmlComponent component(engine,
-			QUrl::fromLocalFile("qml/leftright-activity/ActivityInfo.qml"));
+			QUrl("qrc:///leftright/ActivityInfo.qml"));
 	QObject *object = component.create();
+	qDebug() << "bar_home.svgz file exists?" << QFile(":/core/resource/core/bar_home.svgz").exists();
 	qDebug() << "Property value:" << QQmlProperty::read(object, "dir").toString();
+	qDebug() << "Property value:" << QQmlProperty::read(object, "icon").toString();
 
 	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(object));
+
+//	qDebug() << "getParentActivity:" << menuTree->getParentActivity(menuTree->menuTree(0),
+//																	qobject_cast<ActivityInfo*>(object))->name();
 	return menuTree;
 }
 

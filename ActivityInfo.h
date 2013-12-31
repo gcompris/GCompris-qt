@@ -58,6 +58,8 @@ public:
 	QString credit() const;
 	void setCredit(const QString &);
 
+	QStringList getSectionPath();
+
 signals:
 	void nameChanged();
 	void typeChanged();

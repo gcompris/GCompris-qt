@@ -15,6 +15,5 @@ int main(int argc, char *argv[])
 	viewer.setMainQmlFile(QStringLiteral("qml/main.qml"));
     viewer.showExpanded();
 
-
     return app.exec();
 }
