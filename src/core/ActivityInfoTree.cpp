@@ -78,7 +78,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	QQmlComponent component(engine,
 			QUrl("qrc:///leftright/ActivityInfo.qml"));
 	QObject *object = component.create();
-	qDebug() << "bar_home.svgz file exists?" << QFile(":/core/resource/core/bar_home.svgz").exists();
+	qDebug() << "bar_home.svgz file exists?" << QFile(":/core/resource/bar_home.svgz").exists();
 	qDebug() << "Property value:" << QQmlProperty::read(object, "dir").toString();
 	qDebug() << "Property value:" << QQmlProperty::read(object, "icon").toString();
 

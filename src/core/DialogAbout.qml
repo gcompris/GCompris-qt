@@ -16,7 +16,7 @@ DialogBackground {
 
     Image {
         id: logo
-        source: "resource/core/gcompris.png";
+        source: "resource/gcompris.png";
         width: 70
         fillMode: Image.PreserveAspectFit
         anchors.right: parent.right
