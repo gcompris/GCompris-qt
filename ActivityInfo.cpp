@@ -7,8 +7,8 @@
 
 ActivityInfo::ActivityInfo(QObject *parent):
 	QObject(parent),
-	m_dir(""),
-	m_type("")
+	m_type(""),
+	m_dir("")
 {}
 
 QString ActivityInfo::name() const
@@ -159,4 +159,14 @@ void ActivityInfo::setCredit(const QString &credit)
 {
   m_credit = credit;
   emit creditChanged();
+}
+
+QStringList ActivityInfo::getSectionPath()
+{
+	QStringList path;
+	ActivityInfo *activity(this);
+	do {
+		path.prepend(activity->section());
+	} while( ( activity = qobject_cast<ActivityInfo*>(activity->parent()) ) );
+	return path;
 }

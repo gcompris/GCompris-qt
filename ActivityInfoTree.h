@@ -3,6 +3,8 @@
 
 #include <qqml.h>
 #include "ActivityInfo.h"
+#include <QQmlEngine>
+#include <QDir>
 
 class ActivityInfoTree : public QObject
 {
@@ -13,7 +15,10 @@ public:
 	QQmlListProperty<ActivityInfo> menuTree();
 	int menuTreeCount() const;
 	ActivityInfo *menuTree(int) const;
+	ActivityInfo *getParentActivity(ActivityInfo *root, ActivityInfo *menu);
 	void menuTreeAppend(ActivityInfo *menu);
+	void menuTreeAppend(QQmlEngine *engine,
+						const QDir &menuDir, const QString &menuFile);
 signals:
 	void menuTreeChanged();
 
