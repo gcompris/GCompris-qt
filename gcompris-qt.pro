@@ -1,5 +1,5 @@
 # Add more folders to ship with the application, here
-folder_01.source = qml
+folder_01.source = src
 folder_01.target =
 folder_02.source = menus
 folder_02.target =
@@ -13,20 +13,19 @@ QML_IMPORT_PATH =
 # CONFIG += mobility
 # MOBILITY +=
 
-# The .cpp file which was generated for your project. Feel free to hack it.
-SOURCES += main.cpp \
-    ActivityInfo.cpp \
-    ActivityInfoTree.cpp
+SOURCES += src/core/main.cpp \
+	src/core/ActivityInfo.cpp \
+	src/core/ActivityInfoTree.cpp
 
 # Installation path
 # target.path =
 
 HEADERS += \
-    ActivityInfo.h \
-    ActivityInfoTree.h
+	src/core/ActivityInfo.h \
+	src/core/ActivityInfoTree.h
 
-RESOURCES += qml/core/core.qrc \
-	qml/leftright-activity/resource.qrc
+RESOURCES += src/core/core.qrc \
+	src/activities/leftright/resource.qrc
 
 QT += core gui svg xml
 

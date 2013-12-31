@@ -1,6 +1,5 @@
 import QtQuick 2.0
-import "core"
-import "core/core.js" as Core
+import "core.js" as Core
 
 Item {
     id: main

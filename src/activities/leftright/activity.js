@@ -1,5 +1,5 @@
 .import QtQuick 2.0 as Quick
-.import "../core/core.js" as Core
+.import "../../core/core.js" as Core
 
 var currentHands = []
 var levels = [
