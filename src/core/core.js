@@ -64,7 +64,7 @@ function startActivity(activity) {
     stopMenu()
     stopDialogs()
     currentActivityInfo = activity
-    var qmlActivityFile = "../../src/activities/" + activity.name + "/Activity.qml"
+    var qmlActivityFile = "../../" + activity.dir + "/Activity.qml"
     var qmlActivity = Qt.createComponent(qmlActivityFile)
     console.log(qmlActivity.errorString())
     if (qmlActivity.status === Quick.Component.Ready) {
@@ -80,7 +80,7 @@ function startActivity(activity) {
 }
 
 function stopActivity() {
-    if(currentActivity != null)
+    if(currentActivity !== null)
         currentActivity.destroy()
     startMenu()
 }

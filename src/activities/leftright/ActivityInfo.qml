@@ -3,7 +3,7 @@ import GCompris 1.0
 
 ActivityInfo {
     name: "leftright"
-    dir: "../../src/activities/leftright"
+    dir: "src/activities/leftright"
     section: "/discovery/miscelaneous"
     difficulty: 1
     icon: "leftright/leftright.svg"
