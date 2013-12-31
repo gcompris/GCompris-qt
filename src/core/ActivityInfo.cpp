@@ -81,16 +81,6 @@ void ActivityInfo::setAuthor(const QString &author)
   emit authorChanged();
 }
 
-QString ActivityInfo::boarddir() const
-{
-  return m_boarddir;
-}
-void ActivityInfo::setBoarddir(const QString &boarddir)
-{
-	m_boarddir = boarddir;
-	emit boarddirChanged();
-}
-
 bool ActivityInfo::demo() const
 {
   return m_demo;
