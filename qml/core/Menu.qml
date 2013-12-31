@@ -33,7 +33,8 @@ Item {
             anchors.centerIn: parent.center
             model: ActivityInfoTree.menuTree
             delegate: Image {
-                source: dir + "/" + icon;
+//                source: dir + "/" + icon;
+                source: "qrc:///" + icon;
                 MouseArea {
                     anchors.fill: parent
                     onClicked: Core.selectActivity(ActivityInfoTree.menuTree[index]);

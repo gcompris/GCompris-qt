@@ -6,7 +6,7 @@ ActivityInfo {
     dir: "../qml/leftright-activity"
     section: "/discovery/miscelaneous"
     difficulty: 1
-    icon: "leftright.svg"
+    icon: "leftright/leftright.svg"
     author: "Pascal Georges (pascal.georges1@free.fr)"
     boarddir: "leftright"
     demo: true

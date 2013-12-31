@@ -101,7 +101,8 @@ function displayHand() {
 }
 
 function getCurrentHandImage() {
-    return "resource/leftright/" + currentHands[currentImageId].image
+//    return "resource/leftright/" + currentHands[currentImageId].image
+    return "qrc:///leftright/resource/leftright/" + currentHands[currentImageId].image
 }
 
 function getCurrentHandRotation() {

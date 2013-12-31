@@ -5,7 +5,7 @@ import "../lib"
 import "activity.js" as Activity
 
 Image {
-    source: "resource/leftright/back.svgz"
+    source: "qrc:///leftright/resource/leftright/back.svgz"
     fillMode: Image.PreserveAspectCrop
     Component.onCompleted: Activity.start();
     property Item main: parent;

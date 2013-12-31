@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/core">
+        <file>resource/core/bar_about.svgz</file>
+        <file>resource/core/bar_config.svgz</file>
+        <file>resource/core/bar_exit.svgz</file>
+        <file>resource/core/bar_help.svgz</file>
+        <file>resource/core/bar_home.svgz</file>
+        <file>resource/core/bar_next.svgz</file>
+        <file>resource/core/bar_ok.svgz</file>
+        <file>resource/core/bar_previous.svgz</file>
+        <file>resource/core/bar_reload.svgz</file>
+        <file>resource/core/gcompris.png</file>
+    </qresource>
+</RCC>
