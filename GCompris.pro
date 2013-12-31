@@ -33,3 +33,8 @@ QT += core gui svg xml
 include(qtquick2applicationviewer/qtquick2applicationviewer.pri)
 qtcAddDeployment()
 
+ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
+
+OTHER_FILES += \
+    android/AndroidManifest.xml
+
