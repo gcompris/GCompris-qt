@@ -33,23 +33,23 @@ Rectangle {
         anchors.bottomMargin: 10
         Item { width: 10; height: 1 }
         BarButton {
-            source: "resource/core/bar_exit.svgz";
+            source: "qrc:///core/resource/core/bar_exit.svgz";
             contentId: content.exit
             onClicked: Qt.quit();
         }
         BarButton {
-            source: "resource/core/bar_about.svgz";
+            source: "qrc:///core/resource/core/bar_about.svgz";
             contentId: content.about
             onClicked: dialogAbout.visible = true;
         }
         BarButton {
-            source: "resource/core/bar_help.svgz";
+            source: "qrc:///core/resource/core/bar_help.svgz";
             contentId: content.help
             onClicked: Core.displayHelp()
         }
         BarButton {
             id: previousButton
-            source: "resource/core/bar_previous.svgz";
+            source: "qrc:///core/resource/core/bar_previous.svgz";
             contentId: content.previous
             onClicked: Core.previousLevel()
         }
@@ -65,13 +65,13 @@ Rectangle {
         }
         BarButton {
             id: nextButton
-            source: "resource/core/bar_next.svgz";
+            source: "qrc:///core/resource/core/bar_next.svgz";
             contentId: content.next
             onClicked: Core.nextLevel()
         }
         BarButton {
             id: homeButton
-            source: "resource/core/bar_home.svgz";
+            source: "qrc:///core/resource/core/bar_home.svgz";
             contentId: content.home
             onClicked: Core.stopActivity()
         }
