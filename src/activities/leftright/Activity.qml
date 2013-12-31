@@ -22,10 +22,11 @@ Image {
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: topBorder.bottom
         //width: main.width > 400 ? 400 : main.width - 10
-        width: 400
+        //width: Math.min(main.width / 410, main.height / 410)
+        width: Math.min(main.width, main.height * 0.9)
         height: width * 3 / 4
         source: "resource/leftright/blackboard.svgz"
-        scale: main.width > 410 ? 1.0 : main.width / 410
+        //scale: main.width > 410 ? 1.0 : main.width / 410
 
         Image {
             id: handImage
@@ -91,7 +92,7 @@ Image {
 
         Button {
             width: 100
-            height: 75
+            height: main.height * 0.15
             anchors.left: blackBoard.left
             anchors.top: blackBoard.bottom
             anchors.margins: 10
@@ -104,7 +105,7 @@ Image {
 
         Button {
             width: 100
-            height: 75
+            height: main.height * 0.15
             anchors.right: blackBoard.right
             anchors.top: blackBoard.bottom
             anchors.margins: 10
