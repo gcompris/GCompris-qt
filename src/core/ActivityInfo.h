@@ -14,7 +14,6 @@ class ActivityInfo : public QObject
 	Q_PROPERTY(int difficulty READ difficulty WRITE setDifficulty NOTIFY difficultyChanged)
 	Q_PROPERTY(QString icon READ icon WRITE setIcon NOTIFY iconChanged)
 	Q_PROPERTY(QString author READ author WRITE setAuthor NOTIFY authorChanged)
-	Q_PROPERTY(QString boarddir READ boarddir WRITE setBoarddir NOTIFY boarddirChanged)
 	Q_PROPERTY(bool demo READ demo WRITE setDemo NOTIFY demoChanged)
 	Q_PROPERTY(QString title READ title WRITE setTitle NOTIFY titleChanged)
 	Q_PROPERTY(QString description READ description WRITE setDescription NOTIFY descriptionChanged)
@@ -41,8 +40,6 @@ public:
 	void setIcon(const QString &);
 	QString author() const;
 	void setAuthor(const QString &);
-	QString boarddir() const;
-	void setBoarddir(const QString &);
 	bool demo() const;
 	void setDemo(const bool &);
 	QString title() const;
@@ -68,7 +65,6 @@ signals:
 	void difficultyChanged();
 	void iconChanged();
 	void authorChanged();
-	void boarddirChanged();
 	void demoChanged();
 	void titleChanged();
 	void descriptionChanged();
@@ -85,7 +81,6 @@ private:
 	int m_difficulty;
 	QString m_icon;
 	QString m_author;
-	QString m_boarddir;
 	bool m_demo;
 	QString m_title;
 	QString m_description;

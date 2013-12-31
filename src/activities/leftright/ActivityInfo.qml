@@ -8,7 +8,6 @@ ActivityInfo {
     difficulty: 1
     icon: "leftright/leftright.svg"
     author: "Pascal Georges (pascal.georges1@free.fr)"
-    boarddir: "leftright"
     demo: true
     title: qsTr("Find your left and right hands")
     description: qsTr("Determine if a hand is a right or a left hand")
