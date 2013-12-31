@@ -64,14 +64,18 @@ function startActivity(activity) {
     stopMenu()
     stopDialogs()
     currentActivityInfo = activity
-    var qmlActivity = Qt.createComponent("../" + activity.name + "/Activity.qml")
-    if (qmlActivity.status == Quick.Component.Ready) {
+    var qmlActivityFile = "../../src/activities/" + activity.name + "/Activity.qml"
+    var qmlActivity = Qt.createComponent(qmlActivityFile)
+    console.log(qmlActivity.errorString())
+    if (qmlActivity.status === Quick.Component.Ready) {
         currentActivity = qmlActivity.createObject(main);
-        if (currentActivity == null) {
+        if (currentActivity === null) {
             console.log("error creating activity " + activityName);
             console.log(component.errorString());
             return false;
         }
+    } else {
+        console.log("failed to load activity: " + qmlActivityFile);
     }
 }
 

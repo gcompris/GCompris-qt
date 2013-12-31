@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	ActivityInfoTree::init();
 
 	QtQuick2ApplicationViewer viewer;
-	viewer.setMainQmlFile(QStringLiteral("qml/main.qml"));
+	viewer.setMainQmlFile(QStringLiteral("src/core/main.qml"));
     viewer.showExpanded();
 
     return app.exec();
