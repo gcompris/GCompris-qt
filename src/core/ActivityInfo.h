@@ -8,7 +8,6 @@ class ActivityInfo : public QObject
 {
 	Q_OBJECT
 	Q_PROPERTY(QString name READ name WRITE setName NOTIFY nameChanged)
-	Q_PROPERTY(QString type READ type WRITE setType NOTIFY typeChanged)
 	Q_PROPERTY(QString dir READ dir WRITE setDir NOTIFY dirChanged)
 	Q_PROPERTY(QString section READ section WRITE setSection NOTIFY sectionChanged)
 	Q_PROPERTY(int difficulty READ difficulty WRITE setDifficulty NOTIFY difficultyChanged)
@@ -28,8 +27,6 @@ public:
 
 	QString name() const;
 	void setName(const QString &);
-	QString type() const;
-	void setType(const QString &);
 	QString dir() const;
 	void setDir(const QString &);
 	QString section() const;

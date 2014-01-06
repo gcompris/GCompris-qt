@@ -1,5 +1,5 @@
 .import QtQuick 2.0 as Quick
-.import "../../core/core.js" as Core
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentHands = []
 var levels = [
@@ -102,7 +102,8 @@ function displayHand() {
 
 function getCurrentHandImage() {
 //    return "resource/leftright/" + currentHands[currentImageId].image
-    return "qrc:///leftright/resource/" + currentHands[currentImageId].image
+    return "qrc:/gcompris/src/activities/leftright/resource/" +
+            currentHands[currentImageId].image
 }
 
 function getCurrentHandRotation() {

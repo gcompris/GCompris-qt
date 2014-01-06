@@ -1,40 +1,35 @@
-# Add more folders to ship with the application, here
-folder_01.source = src
-folder_01.target =
-folder_02.source = menus
-folder_02.target =
-DEPLOYMENTFOLDERS = folder_01 folder_02
+cache()
 
-# Additional import path used to resolve QML modules in Creator's code model
-QML_IMPORT_PATH =
+TEMPLATE = app
+QT += qml quick gui network xmlpatterns svg
+//QT += core gui svg xml
+TARGET = GCompris
 
-# If your application uses the Qt Mobility libraries, uncomment the following
-# lines and add the respective components to the MOBILITY variable.
-# CONFIG += mobility
-# MOBILITY +=
+include(src/core/core.pri)
+include(src/activities/leftright/activity.pri)
 
-SOURCES += src/core/main.cpp \
-	src/core/ActivityInfo.cpp \
-	src/core/ActivityInfoTree.cpp
+OTHER_FILES += $$APP_FILES
 
-# Installation path
-# target.path =
+# Create the resource file
+GENERATED_RESOURCE_FILE = $$OUT_PWD/gcompris.qrc
 
-HEADERS += \
-	src/core/ActivityInfo.h \
-	src/core/ActivityInfoTree.h
+RESOURCE_CONTENT = \
+	"<RCC>" \
+	"<qresource>"
 
-RESOURCES += src/core/core.qrc \
-	src/activities/leftright/resource.qrc
+for(resourcefile, APP_FILES) {
+	resourcefileabsolutepath = $$absolute_path($$resourcefile)
+	relativepath_in = $$relative_path($$resourcefileabsolutepath, $$_PRO_FILE_PWD_)
+	relativepath_out = $$relative_path($$resourcefileabsolutepath, $$OUT_PWD)
+	RESOURCE_CONTENT += "<file alias=\"gcompris/$$relativepath_in\">$$relativepath_out</file>"
+}
 
-QT += core gui svg xml
+RESOURCE_CONTENT += \
+	"</qresource>" \
+	"</RCC>"
 
-# Please do not modify the following two lines. Required for deployment.
-include(qtquick2applicationviewer/qtquick2applicationviewer.pri)
-qtcAddDeployment()
+write_file($$GENERATED_RESOURCE_FILE, RESOURCE_CONTENT)|error("Aborting.")
 
-ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
+RESOURCES += $$GENERATED_RESOURCE_FILE
 
-OTHER_FILES += \
-    android/AndroidManifest.xml
-
+android: ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
