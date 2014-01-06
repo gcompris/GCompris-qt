@@ -1,16 +1,17 @@
-import QtQuick 2.0
+import QtQuick 2.1
 import QtQuick.Controls 1.0
 import QtQuick.Controls.Styles 1.0
-import "../../lib"
+import "qrc:/gcompris/src/core"
 import "activity.js" as Activity
 
 Image {
-    source: "qrc:///leftright/resource/back.svgz"
+    source: "qrc:/gcompris/src/activities/leftright/resource/back.svgz"
     fillMode: Image.PreserveAspectCrop
-    Component.onCompleted: Activity.start();
     property Item main: parent;
     focus: true
     anchors.fill: parent
+    z: 1
+    Component.onCompleted: Activity.start();
 
     Item {
         id: topBorder
@@ -21,9 +22,9 @@ Image {
         id: blackBoard
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.top: topBorder.bottom
-        width: Math.min(main.width, main.height * 0.8)
+        width: Math.min(main.width, main.height * 0.7)
         height: width * 3 / 4
-        source: "resource/blackboard.svgz"
+        source: "qrc:/gcompris/src/activities/leftright/resource/blackboard.svgz"
 
         Image {
             id: handImage
@@ -36,7 +37,7 @@ Image {
 
         Image {
             id: lightImage
-            source: "resource/light.svgz"
+            source: "qrc:/gcompris/src/activities/leftright/resource/light.svgz"
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: 40
@@ -88,7 +89,8 @@ Image {
         }
 
         Button {
-            width: main.width * 0.2
+            id: leftButton
+            width: blackBoard.width * 0.45
             height: main.height * 0.15
             anchors.left: blackBoard.left
             anchors.top: blackBoard.bottom
@@ -101,7 +103,7 @@ Image {
         }
 
         Button {
-            width: main.width * 0.2
+            width: blackBoard.width * 0.45
             height: main.height * 0.15
             anchors.right: blackBoard.right
             anchors.top: blackBoard.bottom

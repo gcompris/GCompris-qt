@@ -1,15 +1,17 @@
-import QtQuick 2.0
+import QtQuick 2.1
+import QtQuick.Controls 1.0
 import "core.js" as Core
+import QtQuick.Window 2.1
 
-Item {
+Window {
     id: main
     width: 800
     height: 520
-    focus: true
+    title: "GCompris"
 
     Component.onCompleted: Core.init(main, menu, bar);
 
-    Menu {
+    GCMenu {
         id: menu
     }
     Bar {

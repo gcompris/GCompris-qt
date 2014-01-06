@@ -1,6 +1,7 @@
 #include <QtDebug>
 #include <QtGui/QGuiApplication>
-#include "qtquick2applicationviewer.h"
+#include <QtQuick/QQuickWindow>
+#include <QtQml>
 #include <QObject>
 
 #include "ActivityInfoTree.h"
@@ -11,9 +12,15 @@ int main(int argc, char *argv[])
 
 	ActivityInfoTree::init();
 
-	QtQuick2ApplicationViewer viewer;
-	viewer.setMainQmlFile(QStringLiteral("src/core/main.qml"));
-    viewer.showExpanded();
+	QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
+	QObject *topLevel = engine.rootObjects().value(0);
 
-    return app.exec();
+	QQuickWindow *window = qobject_cast<QQuickWindow *>(topLevel);
+	if ( !window ) {
+		qWarning("Error: Your root item has to be a Window.");
+		return -1;
+	}
+	window->show();
+	return app.exec();
+
 }

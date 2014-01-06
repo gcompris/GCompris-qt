@@ -52,8 +52,7 @@ void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
 							QUrl::fromLocalFile(menuDir.absolutePath() + "/" + menuFile));
 	QObject *object = component.create();
 	if(component.isReady()) {
-		if(QQmlProperty::read(object, "section").toString() == "") {
-			QQmlProperty::write(object, "dir", menuDir.absolutePath());
+		if(QQmlProperty::read(object, "section").toString() == "/") {
 			menuTreeAppend(qobject_cast<ActivityInfo*>(object));
 		}
 	} else {
@@ -68,17 +67,17 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	ActivityInfoTree *menuTree = new ActivityInfoTree(NULL);
 
 	// TODO Parse all ActivityInfo on disk
-	QDir menuDir("../gcompris-qt/menus", "*.qml");
-	qDebug() << menuDir.absolutePath();
-	QStringList list = menuDir.entryList();
-	for (int i = 0; i < list.size(); ++i) {
-		menuTree->menuTreeAppend(engine, menuDir,
-								 list.at(i));
-	}
+//	QDir menuDir("../gcompris-qt/src/activities/menus", "*.qml");
+//	qDebug() << "menu dir path= " << menuDir.absolutePath();
+//	QStringList list = menuDir.entryList();
+//	for (int i = 0; i < list.size(); ++i) {
+//		menuTree->menuTreeAppend(engine, menuDir,
+//								 list.at(i));
+//	}
 	QQmlComponent component(engine,
-			QUrl("qrc:///leftright/ActivityInfo.qml"));
+			QUrl("qrc:/gcompris/src/activities/leftright/ActivityInfo.qml"));
 	QObject *object = component.create();
-	qDebug() << "bar_home.svgz file exists?" << QFile(":/core/resource/bar_home.svgz").exists();
+	qDebug() << "bar_home.svgz file exists?" << QFile(":/gcompris/src/core/resource/bar_home.svgz").exists();
 	qDebug() << "Property value:" << QQmlProperty::read(object, "dir").toString();
 	qDebug() << "Property value:" << QQmlProperty::read(object, "icon").toString();
 

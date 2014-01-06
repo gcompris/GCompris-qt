@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.1
 import QtQuick.Controls 1.0
 
 DialogBackground {
@@ -16,7 +16,7 @@ DialogBackground {
 
     Image {
         id: logo
-        source: "resource/gcompris.png";
+        source: "qrc:/gcompris/src/core/resource/gcompris.png";
         width: 70
         fillMode: Image.PreserveAspectFit
         anchors.right: parent.right

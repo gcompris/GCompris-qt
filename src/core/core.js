@@ -40,13 +40,13 @@ function startMenu() {
     menu.visible = true
     setBarLevel(0)
     startBar(bar.content.exit | bar.content.about | bar.content.help)
-    main.focus = true
+//    main.focus = true
 }
 
 function stopMenu() {
     menu.visible = false
     bar.visible = false
-    main.focus = false
+//    main.focus = false
 }
 
 function stopDialogs() {
@@ -64,7 +64,9 @@ function startActivity(activity) {
     stopMenu()
     stopDialogs()
     currentActivityInfo = activity
-    var qmlActivityFile = "../../" + activity.dir + "/Activity.qml"
+    console.log("activity.dir=" + activity.dir);
+//    var qmlActivityFile = "../../" + activity.dir + "/Activity.qml"
+    var qmlActivityFile = "qrc:/gcompris/src/activities/" + activity.name + "/Activity.qml"
     var qmlActivity = Qt.createComponent(qmlActivityFile)
     console.log(qmlActivity.errorString())
     if (qmlActivity.status === Quick.Component.Ready) {

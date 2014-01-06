@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.1
 import "core.js" as Core
 
 Rectangle {
@@ -11,7 +11,7 @@ Rectangle {
     height: barRow.height - 30
     border.color: "black"
     border.width: 2
-    scale: 0.7
+    scale: 1.0
     z: 1000
     property BarEnumContent content
     property int level: 0
@@ -33,23 +33,23 @@ Rectangle {
         anchors.bottomMargin: 10
         Item { width: 10; height: 1 }
         BarButton {
-            source: "qrc:///core/resource/bar_exit.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_exit.svgz";
             contentId: content.exit
             onClicked: Qt.quit();
         }
         BarButton {
-            source: "qrc:///core/resource/bar_about.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_about.svgz";
             contentId: content.about
             onClicked: dialogAbout.visible = true;
         }
         BarButton {
-            source: "qrc:///core/resource/bar_help.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_help.svgz";
             contentId: content.help
             onClicked: Core.displayHelp()
         }
         BarButton {
             id: previousButton
-            source: "qrc:///core/resource/bar_previous.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_previous.svgz";
             contentId: content.previous
             onClicked: Core.previousLevel()
         }
@@ -65,13 +65,13 @@ Rectangle {
         }
         BarButton {
             id: nextButton
-            source: "qrc:///core/resource/bar_next.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_next.svgz";
             contentId: content.next
             onClicked: Core.nextLevel()
         }
         BarButton {
             id: homeButton
-            source: "qrc:///core/resource/bar_home.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_home.svgz";
             contentId: content.home
             onClicked: Core.stopActivity()
         }

@@ -7,7 +7,6 @@
 
 ActivityInfo::ActivityInfo(QObject *parent):
 	QObject(parent),
-	m_type(""),
 	m_dir("")
 {}
 
@@ -29,16 +28,6 @@ void ActivityInfo::setDir(const QString &dir)
 {
 	m_dir = dir;
 	emit dirChanged();
-}
-
-QString ActivityInfo::type() const
-{
-	return m_type;
-}
-void ActivityInfo::setType(const QString &type)
-{
-	m_type = type;
-	emit typeChanged();
 }
 
 QString ActivityInfo::section() const

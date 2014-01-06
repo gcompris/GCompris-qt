@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="91.495277"
+   height="100"
+   id="svg3593"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="lang-nature.svg">
+  <title
+     id="title3642">Insect Beetle</title>
+  <defs
+     id="defs3595">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3601" />
+    <inkscape:perspective
+       id="perspective3573"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="5.97"
+     inkscape:cx="38.280065"
+     inkscape:cy="50"
+     inkscape:document-units="px"
+     inkscape:current-layer="g3848"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="744"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-35.35585,-826.99402)">
+    <g
+       id="g3848"
+       transform="matrix(0.31793343,0,0,0.31793343,34.243083,621.56928)">
+      <g
+         id="g3826">
+        <path
+           sodipodi:nodetypes="cccccccc"
+           id="path3820"
+           d="m 204.4375,814.46875 45.71875,20.21875 15.375,45.28125 25.75,15.96875 -30.71875,-12 -15.25,-44.8125 L 202,819.96875 l 2.4375,-5.5 z"
+           style="opacity:0.8;fill:#668000;fill-opacity:1;stroke:none"
+           inkscape:connector-curvature="0" />
+        <path
+           sodipodi:nodetypes="cccccccc"
+           id="path3822"
+           d="m 206.8125,857.9375 39.65625,30.46875 -11.40625,45.34375 23.6875,26.90625 -30,-25.15625 10.90625,-44.65625 -36.5,-28.15625 3.65625,-4.75 z"
+           style="opacity:0.8;fill:#668000;fill-opacity:1;stroke:none"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path3824"
+           d="m 248.4375,705.44463 -25.57193,17.22461 -5.29988,39.66961 0.0265,0.053 -0.053,0.053 -32.83276,26.7114 -3.20643,-3.94841 31.2693,-25.43943 5.35288,-40.0406 30.31532,-14.28318 z"
+           style="opacity:0.8;fill:#668000;fill-opacity:1;stroke:none"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         id="g3831">
+        <path
+           style="opacity:0.8;fill:#668000;fill-opacity:1;stroke:none"
+           d="M 90.34375,814.46875 44.625,834.6875 29.25,879.96875 3.5,895.9375 l 30.71875,-12 15.25,-44.8125 43.3125,-19.15625 -2.4375,-5.5 z"
+           id="path3795"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:connector-curvature="0" />
+        <path
+           style="opacity:0.8;fill:#668000;fill-opacity:1;stroke:none"
+           d="M 87.96875,857.9375 48.3125,888.40625 59.71875,933.75 l -23.6875,26.90625 30,-25.15625 -10.90625,-44.65625 36.5,-28.15625 -3.65625,-4.75 z"
+           id="path3793"
+           sodipodi:nodetypes="cccccccc"
+           inkscape:connector-curvature="0" />
+        <path
+           style="opacity:0.8;fill:#668000;fill-opacity:1;stroke:none"
+           d="m 46.34375,705.44463 25.571927,17.22461 5.299881,39.66961 -0.0265,0.053 0.053,0.053 32.832762,26.7114 3.20643,-3.94841 -31.269299,-25.43943 -5.35288,-40.0406 -30.315321,-14.28318 z"
+           id="path3797"
+           inkscape:connector-curvature="0" />
+      </g>
+      <path
+         id="path3774"
+         d="m 77.03125,805.21875 c -3.610926,12.29534 -5.59375,25.73259 -5.59375,39.84375 0,57.96 33.6,105 75,105 41.4,0 75,-47.04 75,-105 0,-14.11116 -2.01407,-27.54841 -5.625,-39.84375 l -138.78125,0 z"
+         style="fill:#ff0000;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         transform="matrix(0,0.4404287,-0.4404287,0,482.82476,692.09681)"
+         d="m 238.19216,765.2193 c 0,29.19219 -38.29069,52.85714 -85.52465,52.85714 -47.23396,0 -85.52465,-23.66495 -85.52465,-52.85714 0,-29.19219 38.29069,-52.85714 85.52465,-52.85714 47.23396,0 85.52465,23.66495 85.52465,52.85714 z"
+         sodipodi:ry="52.857143"
+         sodipodi:rx="85.524651"
+         sodipodi:cy="765.2193"
+         sodipodi:cx="152.66751"
+         id="path3784"
+         style="fill:#2a7fff;fill-opacity:1;stroke:none;stroke-width:0.71414795;stroke-miterlimit:4;stroke-dasharray:none"
+         sodipodi:type="arc" />
+      <path
+         style="opacity:0.8;fill:#ffd42a;fill-opacity:1;stroke:none"
+         d="m 137.32515,805.21875 c -2.10326,12.29534 -3.25819,25.73259 -3.25819,39.84375 0,57.96 19.571,105 43.68527,105 24.11427,0 43.68527,-47.04 43.68527,-105 0,-14.11116 -1.17314,-27.54841 -3.2764,-39.84375 l -80.83595,0 z"
+         id="path3787"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3789"
+         d="m 74.587841,805.21875 c -2.10326,12.29534 -3.25819,25.73259 -3.25819,39.84375 0,57.96 19.571,105 43.685269,105 24.11427,0 43.68527,-47.04 43.68527,-105 0,-14.11116 -1.17314,-27.54841 -3.2764,-39.84375 l -80.835949,0 z"
+         style="opacity:0.8;fill:#ffd42a;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3782"
+         d="m 145.92227,756.47829 c -29.96964,0 -56.003424,19.74369 -69.249999,48.72418 15.603171,9.33653 40.458119,15.36512 68.468749,15.36511 28.75816,0 54.21199,-6.3716 69.71875,-16.13563 -13.35347,-28.56122 -39.23282,-47.95365 -68.9375,-47.95366 z"
+         style="opacity:0.8;fill:#668000;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3836"
+         d="m 205.75,646.125 c -28.842,0 -52.25,31.27384 -52.25,69.8077 0,4.33221 0.3088,8.57774 0.875,12.6923 l 2.09375,0 c -0.45179,-3.64822 -0.71875,-7.37016 -0.71875,-11.18927 0,-37.70417 22.904,-68.30465 51.125,-68.30465 28.03435,0 50.82479,30.1927 51.125,67.55313 0.002,-0.25128 0,-0.49962 0,-0.75151 0,-38.53386 -23.408,-69.8077 -52.25,-69.8077 z"
+         style="opacity:0.8;fill:#668000;fill-opacity:1;stroke:none"
+         inkscape:connector-curvature="0" />
+      <path
+         style="opacity:0.8;fill:#668000;fill-opacity:1;stroke:none"
+         d="m 83.75089,646.125 c 28.842,0 52.25,31.27384 52.25,69.8077 0,4.33221 -0.3088,8.57774 -0.875,12.6923 l -2.09375,0 c 0.45179,-3.64822 0.71875,-7.37016 0.71875,-11.18927 0,-37.70417 -22.904,-68.30465 -51.125,-68.30465 -28.03435,0 -50.82479,30.1927 -51.125,67.55313 -0.002,-0.25128 0,-0.49962 0,-0.75151 0,-38.53386 23.408,-69.8077 52.25,-69.8077 z"
+         id="path3846"
+         inkscape:connector-curvature="0" />
+    </g>
+  </g>
+  <metadata
+     id="metadata25">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Open Clip Art Library</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Insect</dc:title>
+        <dc:date>2010-04-20T22:23:56</dc:date>
+        <dc:description />
+        <dc:source>http://openclipart.org/detail/49309/insect-by-sheikh_tuhin</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>sheikh_tuhin</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>insect</rdf:li>
+            <rdf:li>nature</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
