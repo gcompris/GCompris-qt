@@ -8,6 +8,16 @@ ActivityInfoTree::ActivityInfoTree(QObject *parent) : QObject(parent)
 {}
 
 
+void ActivityInfoTree::setRootMenu(ActivityInfo *rootMenu)
+{
+	m_rootMenu = rootMenu;
+}
+
+ActivityInfo *ActivityInfoTree::getRootMenu() const
+{
+	return m_rootMenu;
+}
+
 QQmlListProperty<ActivityInfo> ActivityInfoTree::menuTree()
 {
 	return QQmlListProperty<ActivityInfo>(this, m_menuTree);
@@ -74,6 +84,12 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 //		menuTree->menuTreeAppend(engine, menuDir,
 //								 list.at(i));
 //	}
+
+	QQmlComponent componentRoot(engine,
+			QUrl("qrc:/gcompris/src/activities/menu/ActivityInfo.qml"));
+	QObject *objectRoot = componentRoot.create();
+	menuTree->setRootMenu(qobject_cast<ActivityInfo*>(objectRoot));
+
 	QQmlComponent component(engine,
 			QUrl("qrc:/gcompris/src/activities/leftright/ActivityInfo.qml"));
 	QObject *object = component.create();

@@ -15,15 +15,13 @@ Rectangle {
     z: 1000
     property BarEnumContent content
     property int level: 0
+    signal aboutClicked
+    signal helpClicked
+    signal nextLevelClicked
+    signal previousLevelClicked
 
     function show(newContent) {
         content.value = newContent
-    }
-
-    function showHelp(section, title, description,
-                      prerequisite, goal, manual, credit) {
-        dialogHelp.show(section, title, description,
-                        prerequisite, goal, manual, credit)
     }
 
     Row {
@@ -40,18 +38,18 @@ Rectangle {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_about.svgz";
             contentId: content.about
-            onClicked: dialogAbout.visible = true;
+            onClicked: bar.aboutClicked()
         }
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_help.svgz";
             contentId: content.help
-            onClicked: Core.displayHelp()
+            onClicked: bar.helpClicked()
         }
         BarButton {
             id: previousButton
             source: "qrc:/gcompris/src/core/resource/bar_previous.svgz";
             contentId: content.previous
-            onClicked: Core.previousLevel()
+            onClicked: bar.previousLevelClicked()
         }
         Text {
             text: "" + level
@@ -67,7 +65,7 @@ Rectangle {
             id: nextButton
             source: "qrc:/gcompris/src/core/resource/bar_next.svgz";
             contentId: content.next
-            onClicked: Core.nextLevel()
+            onClicked: bar.nextLevelClicked()
         }
         BarButton {
             id: homeButton

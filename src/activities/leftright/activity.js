@@ -53,12 +53,6 @@ var currentLevel = 0;
 
 function start() {
     initLevel()
-    Core.startBar(Core.bar.content.help |
-                  Core.bar.content.home |
-                  Core.bar.content.previous |
-                  Core.bar.content.next)
-    Core.setBarPreviousCallback(previousLevel)
-    Core.setBarNextCallback(nextLevel)
 }
 
 function stop() {
@@ -66,7 +60,7 @@ function stop() {
 }
 
 function initLevel() {
-    Core.setBarLevel(currentLevel + 1)
+    bar.level = currentLevel + 1
     currentImageId = 0
     currentHands = new Array()
     var level = levels[currentLevel]

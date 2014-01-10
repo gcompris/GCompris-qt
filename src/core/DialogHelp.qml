@@ -9,7 +9,17 @@ DialogBackground {
     property string section
     property string contentText
 
-    function show(section,
+    function fill(activityInfo) {
+        fillFull(activityInfo.section,
+                 activityInfo.title,
+                 activityInfo.description,
+                 activityInfo.prerequisite,
+                 activityInfo.goal,
+                 activityInfo.manual,
+                 activityInfo.credit)
+    }
+
+    function fillFull(section,
                   title, description,
                   prerequisite, goal, manual, credit) {
         dialogHelp.section = section
@@ -34,7 +44,6 @@ DialogBackground {
             contentText += "<b>" + "Credit: " + "</b>" + credit
             contentText += "<br/><br/>"
         }
-        dialogHelp.visible = true;
     }
 
     content: TextArea {
@@ -46,7 +55,7 @@ DialogBackground {
         selectByMouse: false
         MouseArea {
             anchors.fill: parent
-            onClicked: dialogHelp.visible = false
+            onClicked: Core.pagePop()
         }
     }
 
