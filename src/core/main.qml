@@ -1,7 +1,10 @@
 import QtQuick 2.1
 import QtQuick.Controls 1.0
-import "core.js" as Core
 import QtQuick.Window 2.1
+
+import "qrc:/gcompris/src/core"
+import "qrc:/gcompris/src/core/core.js" as Core
+import GCompris 1.0
 
 Window {
     id: main
@@ -9,29 +12,59 @@ Window {
     height: 520
     title: "GCompris"
 
-    Component.onCompleted: Core.init(main, menu, bar);
+    Component.onCompleted: Core.init(pageView);
 
-    GCMenu {
-        id: menu
-    }
-    Bar {
-        id: bar
-        content: BarEnumContent { value: help | exit | about }
-    }
+    StackView {
+        id: pageView
+        anchors.fill: parent
+        initialItem: "qrc:/gcompris/src/activities/menu/Activity.qml"
+        delegate: StackViewDelegate {
+            pushTransition: StackViewTransition {
+                function transitionFinished(properties)
+                {
+                    properties.exitItem.opacity = 1
+                }
+                PropertyAnimation {
+                    target: enterItem
+                    property: "x"
+                    from: target.width
+                    to: 0
+                    duration: 500
+                    easing.type: Easing.OutSine
+                }
+                PropertyAnimation {
+                    target: exitItem
+                    property: "x"
+                    from: 0
+                    to: -target.width
+                    duration: 500
+                    easing.type: Easing.OutSine
+                }
+            }
+            popTransition: StackViewTransition {
+                function transitionFinished(properties)
+                {
+                    properties.exitItem.opacity = 1
+                }
+                PropertyAnimation {
+                    target: enterItem
+                    property: "x"
+                    from: -target.width
+                    to: 0
+                    duration: 500
+                    easing.type: Easing.OutSine
+                }
+                PropertyAnimation {
+                    target: exitItem
+                    property: "x"
+                    from: 0
+                    to: target.width
+                    duration: 500
+                    easing.type: Easing.OutSine
 
-    DialogAbout { id: dialogAbout  }
-    DialogHelp { id: dialogHelp }
-
-    function stopDialogs() {
-        dialogAbout.visible = false
-        dialogHelp.visible = false
-    }
-
-    Keys.onEscapePressed: Core.stopActivity()
-    Keys.onPressed: {
-        if (event.modifiers === Qt.ControlModifier &&
-            event.key === Qt.Key_Q) {
-            Qt.quit()
+                }
+            }
+            property Component replaceTransition: pushTransition
         }
     }
 }

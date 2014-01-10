@@ -3,14 +3,13 @@ import QtQuick.Controls 1.0
 import QtQuick.Controls.Styles 1.0
 import "qrc:/gcompris/src/core"
 import "activity.js" as Activity
+import "qrc:/gcompris/src/core/core.js" as Core
 
 Image {
     source: "qrc:/gcompris/src/activities/leftright/resource/back.svgz"
     fillMode: Image.PreserveAspectCrop
     property Item main: parent;
     focus: true
-    anchors.fill: parent
-    z: 1
     Component.onCompleted: Activity.start();
 
     Item {
@@ -118,4 +117,24 @@ Image {
 
     Keys.onLeftPressed: Activity.leftClick()
     Keys.onRightPressed: Activity.rightClick()
+    Keys.onEscapePressed: Core.stopActivity()
+    Keys.onPressed: {
+        if (event.modifiers === Qt.ControlModifier &&
+            event.key === Qt.Key_Q) {
+            Qt.quit()
+        }
+    }
+
+    DialogHelp { id: dialogHelp }
+
+    Bar {
+        id: bar
+        content: BarEnumContent { value: help | home | previous | next }
+        onHelpClicked: {
+            dialogHelp.fill(Core.getCurrentActivityInfo() )
+            Core.pagePush(dialogHelp)
+        }
+        onPreviousLevelClicked: { Activity.previousLevel() }
+        onNextLevelClicked: { Activity.nextLevel() }
+    }
 }

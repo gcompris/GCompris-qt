@@ -1,5 +1,6 @@
 import QtQuick 2.1
 import QtQuick.Controls 1.0
+import "core.js" as Core
 
 DialogBackground {
     title: "About GCompris"
@@ -54,7 +55,7 @@ DialogBackground {
             selectByMouse: false
             MouseArea {
                 anchors.fill: parent
-                onClicked: dialogAbout.visible = false
+                onClicked: Core.pagePop()
             }
         }
         Column {

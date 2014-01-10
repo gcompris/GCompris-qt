@@ -1,10 +1,13 @@
 import QtQuick 2.1
-import "core.js" as Core
+import "qrc:/gcompris/src/core"
+import "qrc:/gcompris/src/core/core.js" as Core
 import GCompris 1.0
 
 Item {
     id: container
-    anchors.fill: parent
+    focus: true
+    signal nextPage
+    signal previousPage
 
     Rectangle {
         color: "#f8d600"
@@ -27,6 +30,30 @@ Item {
                     onClicked: Core.selectActivity(ActivityInfoTree.menuTree[index]);
                 }
             }
+        }
+    }
+
+
+    DialogAbout { id: dialogAbout  }
+    DialogHelp { id: dialogHelp }
+
+    Bar {
+        id: bar
+        content: BarEnumContent { value: help | exit | about }
+        onAboutClicked: {
+            pageView.push(dialogAbout)
+        }
+
+        onHelpClicked: {
+            dialogHelp.fill(ActivityInfoTree.rootMenu)
+            pageView.push(dialogHelp)
+        }
+    }
+
+    Keys.onPressed: {
+        if (event.modifiers === Qt.ControlModifier &&
+            event.key === Qt.Key_Q) {
+            Qt.quit()
         }
     }
 

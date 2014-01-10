@@ -16,7 +16,6 @@ APP_FILES = \
 	$$PWD/DialogBackground.qml \
 	$$PWD/DialogHelp.qml \
 	$$PWD/GCButtonStyle.qml \
-	$$PWD/main.qml \
-	$$PWD/GCMenu.qml
+	$$PWD/main.qml
 
 include(resource/resource.pri)

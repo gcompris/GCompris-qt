@@ -7,6 +7,7 @@ TARGET = GCompris
 
 include(src/core/core.pri)
 include(src/activities/leftright/activity.pri)
+include(src/activities/menu/activity.pri)
 
 OTHER_FILES += $$APP_FILES
 
