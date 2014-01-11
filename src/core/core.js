@@ -11,12 +11,15 @@ function init(thePageView) {
 
 function selectActivity(activity) {
     console.log("selected activity: " + activity.name);
-    if(activity.type != 'menu') {
+    if(activity.type !== 'menu') {
         startActivity(activity)
     }
 }
 
 function startActivity(activity) {
+    if(currentActivity !== undefined) {
+        currentActivity.destroy()
+    }
     currentActivityInfo = activity
     console.log("activity.dir=" + activity.dir);
     var qmlActivityFile = "qrc:/gcompris/src/activities/" + activity.name + "/Activity.qml"
@@ -36,9 +39,8 @@ function startActivity(activity) {
 }
 
 function stopActivity() {
-    if(currentActivity !== null) {
+    if(currentActivity !== undefined) {
         pageView.pop()
-        //currentActivity.destroy()
     }
 }
 

@@ -1,4 +1,5 @@
 import QtQuick 2.1
+import "core.js" as Core
 
 Rectangle {
     id: dialogBackground
@@ -17,7 +18,7 @@ Rectangle {
 
     MouseArea {
         anchors.fill: parent
-        onClicked: dialogBackground.visible = false
+        onClicked: Core.pagePop()
     }
 
     Row {

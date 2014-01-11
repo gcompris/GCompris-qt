@@ -3,9 +3,9 @@ import QtQuick.Controls 1.0
 import "core.js" as Core
 
 DialogBackground {
+    visible: false
     title: "About GCompris"
     subtitle: "GCompris Home Page: http://gcompris.net"
-    visible: false
 
     property string translators: "Bruno Coudoin <bruno.coudoin@free.fr>\n" +
     "Christophe Merlet <redfox@redfoxcenter.org>\n" +
