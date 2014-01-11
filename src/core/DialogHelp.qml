@@ -3,9 +3,9 @@ import QtQuick.Controls 1.0
 import "core.js" as Core
 
 DialogBackground {
+    visible: false
     title: "Help"
     subtitle: section
-    visible: false
     property string section
     property string contentText
 
