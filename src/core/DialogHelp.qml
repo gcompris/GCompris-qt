@@ -1,53 +1,39 @@
 import QtQuick 2.1
 import QtQuick.Controls 1.0
-import "core.js" as Core
 
 DialogBackground {
     visible: false
     title: "Help"
-    subtitle: section
-    property string section
-    property string contentText
+    subtitle: activityInfo.section
+    property QtObject activityInfo
 
-    function fill(activityInfo) {
-        fillFull(activityInfo.section,
-                 activityInfo.title,
-                 activityInfo.description,
-                 activityInfo.prerequisite,
-                 activityInfo.goal,
-                 activityInfo.manual,
-                 activityInfo.credit)
-    }
-
-    function fillFull(section,
-                  title, description,
-                  prerequisite, goal, manual, credit) {
-        dialogHelp.section = section
-        contentText = ""
-        contentText += "<center><b>" + title + "</b></center>"
+    function getContent() {
+        var contentText = ""
+        contentText += "<center><b>" + activityInfo.title + "</b></center>"
         contentText += "<br/><br/>"
-        contentText += "<b>" + description + "</b>"
+        contentText += "<b>" + activityInfo.description + "</b>"
         contentText += "<br/><br/>"
-        if(prerequisite) {
-            contentText += "<b>" + "Prerequisite: " + "</b>" + prerequisite
+        if(activityInfo.prerequisite) {
+            contentText += "<b>" + "Prerequisite: " + "</b>" + activityInfo.prerequisite
             contentText += "<br/><br/>"
         }
-        if(goal) {
-            contentText += "<b>" + "Goal: " + "</b>" + goal
+        if(activityInfo.goal) {
+            contentText += "<b>" + "Goal: " + "</b>" + activityInfo.goal
             contentText += "<br/><br/>"
         }
-        if(manual) {
-            contentText += "<b>" + "Manual: " + "</b>" + manual
+        if(activityInfo.manual) {
+            contentText += "<b>" + "Manual: " + "</b>" + activityInfo.manual
             contentText += "<br/><br/>"
         }
-        if(credit) {
-            contentText += "<b>" + "Credit: " + "</b>" + credit
+        if(activityInfo.credit) {
+            contentText += "<b>" + "Credit: " + "</b>" + activityInfo.credit
             contentText += "<br/><br/>"
         }
+        return contentText
     }
 
     content: TextArea {
-        text: contentText
+        text: getContent()
         font.pointSize: 12
         wrapMode: Text.WordWrap
         textFormat: TextEdit.RichText
@@ -55,7 +41,7 @@ DialogBackground {
         selectByMouse: false
         MouseArea {
             anchors.fill: parent
-            onClicked: Core.pagePop()
+            onClicked: close()
         }
     }
 

@@ -8,10 +8,10 @@ HEADERS += \
 	$$PWD/ActivityInfoTree.h
 
 APP_FILES = \
+	$$PWD/ActivityBase.qml \
 	$$PWD/BarButton.qml \
 	$$PWD/BarEnumContent.qml \
 	$$PWD/Bar.qml \
-	$$PWD/core.js \
 	$$PWD/DialogAbout.qml \
 	$$PWD/DialogBackground.qml \
 	$$PWD/DialogHelp.qml \
@@ -19,3 +19,6 @@ APP_FILES = \
 	$$PWD/main.qml
 
 include(resource/resource.pri)
+
+OTHER_FILES += \
+    src/core/ActivityBase.qml

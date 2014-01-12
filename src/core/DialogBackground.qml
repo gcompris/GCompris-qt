@@ -1,12 +1,9 @@
 import QtQuick 2.1
-import "core.js" as Core
 
 Rectangle {
     id: dialogBackground
     color: "#696da3"
     radius: 6.0
-    anchors.horizontalCenter: main.horizontalCenter
-    anchors.verticalCenter: main.verticalCenter
     width: main.width > 800 ? 800 : main.width
     height: main.height > 500 ? 500 : main.height
     border.color: "black"
@@ -15,10 +12,11 @@ Rectangle {
     property string title
     property string subtitle
     property Component content
+    signal close
 
     MouseArea {
         anchors.fill: parent
-        onClicked: Core.pagePop()
+        onClicked: close()
     }
 
     Row {

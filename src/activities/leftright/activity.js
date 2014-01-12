@@ -1,5 +1,4 @@
 .import QtQuick 2.0 as Quick
-.import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentHands = []
 var levels = [

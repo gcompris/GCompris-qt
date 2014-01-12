@@ -1,5 +1,4 @@
 import QtQuick 2.1
-import "core.js" as Core
 
 Rectangle {
     id: bar
@@ -19,6 +18,7 @@ Rectangle {
     signal helpClicked
     signal nextLevelClicked
     signal previousLevelClicked
+    signal homeClicked
 
     function show(newContent) {
         content.value = newContent
@@ -71,7 +71,7 @@ Rectangle {
             id: homeButton
             source: "qrc:/gcompris/src/core/resource/bar_home.svgz";
             contentId: content.home
-            onClicked: Core.stopActivity()
+            onClicked: bar.homeClicked()
         }
         Item { width: 10; height: 1 }
     }
