@@ -8,14 +8,14 @@ ActivityBase {
     id: activity
     focus: true
 
-    // FIXME It's not working
-    Keys.onLeftPressed: Activity.leftClick()
-    Keys.onRightPressed: Activity.rightClick()
-
-    Image {
+    pageComponent: Image {
         source: "qrc:/gcompris/src/activities/leftright/resource/back.svgz"
         fillMode: Image.PreserveAspectCrop
-        Component.onCompleted: Activity.start();
+        Component.onCompleted: Activity.start(bar, bonus, imageAnimOff);
+
+        // FIXME It's not working
+        Keys.onLeftPressed: Activity.leftClick()
+        Keys.onRightPressed: Activity.rightClick()
 
         Item {
             id: topBorder
