@@ -3,7 +3,6 @@ import QtQuick.Controls 1.0
 import QtQuick.Window 2.1
 
 import "qrc:/gcompris/src/core"
-import "qrc:/gcompris/src/core/core.js" as Core
 import GCompris 1.0
 
 Window {
@@ -11,8 +10,6 @@ Window {
     width: 800
     height: 520
     title: "GCompris"
-
-    Component.onCompleted: Core.init(pageView);
 
     StackView {
         id: pageView

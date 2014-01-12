@@ -1,52 +1,65 @@
 import QtQuick 2.1
 import "qrc:/gcompris/src/core"
-import "qrc:/gcompris/src/core/core.js" as Core
 import GCompris 1.0
 
-Item {
-    id: container
+ActivityBase {
+    id: menuActivity
     focus: true
-    signal nextPage
-    signal previousPage
+
+    onHome: { pageView.pop() }
+    onDisplayDialog: {
+        console.log("on display dialog")
+        pageView.push(dialog)
+    }
 
     Rectangle {
-        color: "#f8d600"
-        x: 10
-        width: 100
-        anchors.verticalCenter: parent.verticalCenter
-        height: parent.height
-        border.color: "#696da3"
-        border.width: 1
+        color: "#ececec"
+        anchors.fill: parent
+    }
 
-        ListView {
-            id: sectionList
-            anchors.fill: parent
-            anchors.centerIn: parent.center
-            model: ActivityInfoTree.menuTree
-            delegate: Image {
-                source: "qrc:/gcompris/src/activities/" + icon;
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: Core.selectActivity(ActivityInfoTree.menuTree[index]);
+    Loader { id: activityLoader }
+
+    ListView {
+        id: sectionList
+        anchors.fill: parent
+        anchors.centerIn: parent.center
+        model: ActivityInfoTree.menuTree
+        delegate: Image {
+            source: "qrc:/gcompris/src/activities/" + icon;
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    activityLoader.source = "qrc:/gcompris/src/activities/" +
+                            ActivityInfoTree.menuTree[index].name + "/Activity.qml"
+                    activityLoader.item.activityInfo = ActivityInfoTree.menuTree[index]
+                    pageView.push(activityLoader.item)
+                    activityLoader.item.home.connect(home)
+                    activityLoader.item.displayDialog.connect(displayDialog)
                 }
             }
         }
     }
 
 
-    DialogAbout { id: dialogAbout  }
-    DialogHelp { id: dialogHelp }
+    DialogAbout {
+        id: dialogAbout
+        onClose: home()
+    }
+    DialogHelp {
+        id: dialogHelp
+        onClose: home()
+        activityInfo: ActivityInfoTree.rootMenu
+    }
 
     Bar {
         id: bar
         content: BarEnumContent { value: help | exit | about }
         onAboutClicked: {
-            pageView.push(dialogAbout)
+            displayDialog(dialogAbout)
         }
 
         onHelpClicked: {
-            dialogHelp.fill(ActivityInfoTree.rootMenu)
-            pageView.push(dialogHelp)
+            displayDialog(dialogHelp)
         }
     }
 

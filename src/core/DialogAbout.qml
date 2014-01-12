@@ -1,6 +1,5 @@
 import QtQuick 2.1
 import QtQuick.Controls 1.0
-import "core.js" as Core
 
 DialogBackground {
     visible: false
@@ -55,7 +54,7 @@ DialogBackground {
             selectByMouse: false
             MouseArea {
                 anchors.fill: parent
-                onClicked: Core.pagePop()
+                onClicked: close()
             }
         }
         Column {
