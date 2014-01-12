@@ -9,7 +9,7 @@
 class ActivityInfoTree : public QObject
 {
 	Q_OBJECT
-	Q_PROPERTY(ActivityInfo* rootMenu READ getRootMenu)
+	Q_PROPERTY(ActivityInfo* rootMenu READ getRootMenu CONSTANT)
 	Q_PROPERTY(QQmlListProperty<ActivityInfo> menuTree READ menuTree NOTIFY menuTreeChanged)
 public:
 	ActivityInfoTree(QObject *parent = 0);
