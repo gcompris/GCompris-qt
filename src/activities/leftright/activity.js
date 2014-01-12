@@ -112,12 +112,16 @@ function displayNextHand() {
 function leftClick() {
     if(currentHands[currentImageId].image.indexOf("gauche") !== -1) {
         displayNextHand()
+    } else {
+        bonus.bad("flower")
     }
 }
 
 function rightClick() {
     if(currentHands[currentImageId].image.indexOf("droit") !== -1) {
         displayNextHand()
+    } else {
+        bonus.bad("flower")
     }
 }
 

@@ -12,6 +12,9 @@ Item {
         if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_Q) {
             Qt.quit()
+        } else if (event.modifiers === Qt.ControlModifier &&
+                event.key === Qt.Key_B) {
+            bar.toggle()
         }
     }
 }

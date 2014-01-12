@@ -12,6 +12,7 @@ APP_FILES = \
 	$$PWD/BarButton.qml \
 	$$PWD/BarEnumContent.qml \
 	$$PWD/Bar.qml \
+	$$PWD/Bonus.qml \
 	$$PWD/DialogAbout.qml \
 	$$PWD/DialogBackground.qml \
 	$$PWD/DialogHelp.qml \
@@ -19,6 +20,3 @@ APP_FILES = \
 	$$PWD/main.qml
 
 include(resource/resource.pri)
-
-OTHER_FILES += \
-    src/core/ActivityBase.qml

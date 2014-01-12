@@ -20,6 +20,10 @@ Rectangle {
     signal previousLevelClicked
     signal homeClicked
 
+    function toggle() {
+        opacity = (opacity == 0 ? 1.0 : 0)
+    }
+
     function show(newContent) {
         content.value = newContent
     }
@@ -75,4 +79,6 @@ Rectangle {
         }
         Item { width: 10; height: 1 }
     }
+
+    Behavior on opacity { PropertyAnimation { duration: 500 } }
 }
