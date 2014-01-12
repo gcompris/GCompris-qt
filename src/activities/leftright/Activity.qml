@@ -8,6 +8,10 @@ ActivityBase {
     id: activity
     focus: true
 
+    // FIXME It's not working
+    Keys.onLeftPressed: Activity.leftClick()
+    Keys.onRightPressed: Activity.rightClick()
+
     Image {
         source: "qrc:/gcompris/src/activities/leftright/resource/back.svgz"
         fillMode: Image.PreserveAspectCrop
@@ -116,9 +120,6 @@ ActivityBase {
             }
         }
 
-        Keys.onLeftPressed: Activity.leftClick()
-        Keys.onRightPressed: Activity.rightClick()
-
         DialogHelp {
             id: dialogHelpLeftRight
             onClose: home()
@@ -134,6 +135,10 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: home()
+        }
+
+        Bonus {
+            id: bonus
         }
     }
 }

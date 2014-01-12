@@ -8,7 +8,6 @@ ActivityBase {
 
     onHome: { pageView.pop() }
     onDisplayDialog: {
-        console.log("on display dialog")
         pageView.push(dialog)
     }
 
@@ -62,12 +61,4 @@ ActivityBase {
             displayDialog(dialogHelp)
         }
     }
-
-    Keys.onPressed: {
-        if (event.modifiers === Qt.ControlModifier &&
-            event.key === Qt.Key_Q) {
-            Qt.quit()
-        }
-    }
-
 }
