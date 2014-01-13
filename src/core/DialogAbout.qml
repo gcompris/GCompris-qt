@@ -14,48 +14,17 @@ DialogBackground {
     "Jean-Philippe Ayanidès <jp.ayanides@free.fr>\n" +
     "Mickael Albertus <mickael.albertus@gmail.com>"
 
-    Image {
-        id: logo
-        source: "qrc:/gcompris/src/core/resource/gcompris.png";
-        width: 70
-        fillMode: Image.PreserveAspectFit
-        anchors.right: parent.right
-        visible: parent.width > 700
-        smooth: true
-        SequentialAnimation {
-              id: anim
-              running: true
-              loops: Animation.Infinite
-              NumberAnimation {
-                  target: logo
-                  property: "rotation"
-                  from: -10; to: 10
-                  duration: 500
-                  easing.type: Easing.InOutQuad
-              }
-              NumberAnimation {
-                  target: logo
-                  property: "rotation"
-                  from: 10; to: -10
-                  duration: 500
-                  easing.type: Easing.InOutQuad }
-          }
-    }
-
     content: Item {
         TextArea {
             width: parent.width
             height: parent.height - footer.height
-            text: "<center><b>" + "GCompris V13.11" + "</b></center>" + "<br/>" + "<b>" + "Translators: " +"</b>" + translators
-            font.pointSize: 12
+            text: "<center><b>" + "GCompris V13.11" + "</b></center>" + "<br/>" +
+                  "<b>" + "Translators: " +"</b>" + translators
+            font.pointSize: 16
             wrapMode: Text.WordWrap
             textFormat: TextEdit.RichText
             readOnly: true
             selectByMouse: false
-            MouseArea {
-                anchors.fill: parent
-                onClicked: close()
-            }
         }
         Column {
             id: footer

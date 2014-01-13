@@ -3,9 +3,6 @@ import QtQuick 2.1
 Rectangle {
     id: dialogBackground
     color: "#696da3"
-    radius: 6.0
-    width: main.width > 800 ? 800 : main.width
-    height: main.height > 500 ? 500 : main.height
     border.color: "black"
     border.width: 1
     z: 1000
@@ -13,11 +10,6 @@ Rectangle {
     property string subtitle
     property Component content
     signal close
-
-    MouseArea {
-        anchors.fill: parent
-        onClicked: close()
-    }
 
     Row {
         spacing: 2
@@ -87,4 +79,38 @@ Rectangle {
             Item { width: 1; height: 10 }
         }
     }
+
+    // The cancel button
+    Image {
+        id: logo
+        source: "qrc:/gcompris/src/core/resource/cancel.svgz";
+        width: 70
+        fillMode: Image.PreserveAspectFit
+        anchors.right: parent.right
+        visible: parent.width > 700
+        smooth: true
+        SequentialAnimation {
+              id: anim
+              running: true
+              loops: Animation.Infinite
+              NumberAnimation {
+                  target: logo
+                  property: "rotation"
+                  from: -10; to: 10
+                  duration: 500
+                  easing.type: Easing.InOutQuad
+              }
+              NumberAnimation {
+                  target: logo
+                  property: "rotation"
+                  from: 10; to: -10
+                  duration: 500
+                  easing.type: Easing.InOutQuad }
+          }
+        MouseArea {
+            anchors.fill: parent
+            onClicked: close()
+        }
+    }
+
 }

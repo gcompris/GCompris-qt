@@ -34,15 +34,11 @@ DialogBackground {
 
     content: TextArea {
         text: getContent()
-        font.pointSize: 12
+        font.pointSize: 24
         wrapMode: Text.WordWrap
         textFormat: TextEdit.RichText
         readOnly: true
         selectByMouse: false
-        MouseArea {
-            anchors.fill: parent
-            onClicked: close()
-        }
     }
 
 }
