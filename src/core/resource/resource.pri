@@ -9,6 +9,7 @@ APP_FILES += \
 	$$PWD/bar_ok.svgz \
 	$$PWD/bar_previous.svgz \
 	$$PWD/bar_reload.svgz \
+	$$PWD/cancel.svgz \
 	$$PWD/gcompris-medium.png \
 	$$PWD/gcompris-small.png \
 	$$PWD/gcompris.png \
