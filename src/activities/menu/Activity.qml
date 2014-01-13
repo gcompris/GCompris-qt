@@ -17,22 +17,27 @@ ActivityBase {
 
         Loader { id: activityLoader }
 
+        property int iconWidth: 210
+        property int iconHeight: 210
 
         GridView {
-            x: 10
+            x: 0
             y: 10
             width: main.width
-            height: main.height - 200
-            cellWidth: 210
-            cellHeight: 210
+            height: main.height - 50
+            cellWidth: iconWidth+(main.width%iconWidth)/Math.round(main.width/iconWidth)
+            cellHeight: iconHeight
             focus: true
+            clip: true
             model: ActivityInfoTree.menuTree
             delegate: Item {
-                width: 200
-                height: 200
+                width: iconWidth+(main.width%iconWidth)/Math.round(main.width/iconWidth)
+                height: iconHeight
                 Rectangle {
                     id: background
-                    anchors.fill: parent
+                    width: 200
+                    height: 200
+                    anchors.horizontalCenter: parent.horizontalCenter
                     opacity: 0.6
                     border.width: 2
                     border.color: "black"
