@@ -46,17 +46,6 @@ ActivityBase {
                     source: "qrc:/gcompris/src/activities/" + icon;
                     anchors.top: background.top
                     anchors.horizontalCenter: parent.horizontalCenter
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            activityLoader.source = "qrc:/gcompris/src/activities/" +
-                                    ActivityInfoTree.menuTree[index].name + "/Activity.qml"
-                            activityLoader.item.activityInfo = ActivityInfoTree.menuTree[index]
-                            pageView.push(activityLoader.item)
-                            activityLoader.item.home.connect(home)
-                            activityLoader.item.displayDialog.connect(displayDialog)
-                        }
-                    }
                     Text {
                         anchors.top: parent.bottom
                         anchors.horizontalCenter: parent.horizontalCenter
@@ -69,6 +58,17 @@ ActivityBase {
                         maximumLineCount: 2
                         wrapMode: Text.WordWrap
                         text: ActivityInfoTree.menuTree[index].title
+                    }
+                }
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        activityLoader.source = "qrc:/gcompris/src/activities/" +
+                                ActivityInfoTree.menuTree[index].name + "/Activity.qml"
+                        activityLoader.item.activityInfo = ActivityInfoTree.menuTree[index]
+                        pageView.push(activityLoader.item)
+                        activityLoader.item.home.connect(home)
+                        activityLoader.item.displayDialog.connect(displayDialog)
                     }
                 }
             }
