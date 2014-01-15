@@ -66,9 +66,9 @@ ActivityBase {
                         activityLoader.source = "qrc:/gcompris/src/activities/" +
                                 ActivityInfoTree.menuTree[index].name + "/Activity.qml"
                         activityLoader.item.activityInfo = ActivityInfoTree.menuTree[index]
-                        pageView.push(activityLoader.item)
                         activityLoader.item.home.connect(home)
                         activityLoader.item.displayDialog.connect(displayDialog)
+                        pageView.push(activityLoader.item)
                     }
                 }
             }

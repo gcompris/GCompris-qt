@@ -10,7 +10,7 @@ Rectangle {
     height: barRow.height - 30
     border.color: "black"
     border.width: 2
-    scale: 1.0
+    scale: 1.4
     z: 1000
     property BarEnumContent content
     property int level: 0
@@ -60,8 +60,8 @@ Rectangle {
             font.family: "Helvetica"
             font.pointSize: 24
             font.weight: Font.DemiBold
-            style: Text.Outline;
-            styleColor: "grey"
+            style: Text.Raised;
+            styleColor: "white"
             color: "black"
             visible: level > 0 ? 1.0 : 0
         }

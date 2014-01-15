@@ -10,6 +10,7 @@ ActivityBase {
 
     pageComponent: Image {
         source: "qrc:/gcompris/src/activities/leftright/resource/back.svgz"
+        focus: true
         fillMode: Image.PreserveAspectCrop
         Component.onCompleted: Activity.start(bar, bonus, imageAnimOff);
 

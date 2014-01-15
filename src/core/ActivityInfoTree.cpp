@@ -93,10 +93,14 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	QQmlComponent component(engine,
 			QUrl("qrc:/gcompris/src/activities/leftright/ActivityInfo.qml"));
 	QObject *object = component.create();
-	qDebug() << "bar_home.svgz file exists?" << QFile(":/gcompris/src/core/resource/bar_home.svgz").exists();
-	qDebug() << "Property value:" << QQmlProperty::read(object, "dir").toString();
-	qDebug() << "Property value:" << QQmlProperty::read(object, "icon").toString();
+	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(object));
 
+	QQmlComponent component2(engine,
+			QUrl("qrc:/gcompris/src/activities/clickgame/ActivityInfo.qml"));
+	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(component2.create()));
+	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(object));
+	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(object));
+	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(object));
 	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(object));
 
 //	qDebug() << "getParentActivity:" << menuTree->getParentActivity(menuTree->menuTree(0),
