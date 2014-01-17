@@ -5,7 +5,7 @@ AnimatedSprite {
     id: fish
     Component.onCompleted: x=900
     property int duration: 5000
-    frameRate: 10
+    frameRate: 2
     interpolate: true
 
     transform: Rotation {
