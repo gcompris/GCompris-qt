@@ -6,9 +6,9 @@ QT += qml quick gui network xmlpatterns svg
 TARGET = GCompris
 
 include(src/core/core.pri)
-include(src/activities/clickgame/activity.pri)
-include(src/activities/leftright/activity.pri)
-include(src/activities/menu/activity.pri)
+include(src/activities/clickgame/clickgame.pri)
+include(src/activities/leftright/leftright.pri)
+include(src/activities/menu/menu.pri)
 
 OTHER_FILES += $$APP_FILES
 

@@ -19,4 +19,30 @@ APP_FILES = \
 	$$PWD/GCButtonStyle.qml \
 	$$PWD/main.qml
 
-include(resource/resource.pri)
+APP_FILES += \
+	$$PWD/resource/bar_about.svgz \
+	$$PWD/resource/bar_config.svgz \
+	$$PWD/resource/bar_exit.svgz \
+	$$PWD/resource/bar_help.svgz \
+	$$PWD/resource/bar_home.svgz \
+	$$PWD/resource/bar_next.svgz \
+	$$PWD/resource/bar_ok.svgz \
+	$$PWD/resource/bar_previous.svgz \
+	$$PWD/resource/bar_reload.svgz \
+	$$PWD/resource/cancel.svgz \
+	$$PWD/resource/gcompris-medium.png \
+	$$PWD/resource/gcompris-small.png \
+	$$PWD/resource/gcompris.png \
+	$$PWD/resource/bonus/flower_bad.png \
+	$$PWD/resource/bonus/flower_good.png \
+	$$PWD/resource/bonus/gnu_bad.png \
+	$$PWD/resource/bonus/gnu_good.png \
+	$$PWD/resource/bonus/lion_bad.png \
+	$$PWD/resource/bonus/lion_good.png \
+	$$PWD/resource/bonus/note_bad.png \
+	$$PWD/resource/bonus/note_good.png \
+	$$PWD/resource/bonus/smiley_bad.png \
+	$$PWD/resource/bonus/smiley_good.png \
+	$$PWD/resource/bonus/tux_bad.png \
+	$$PWD/resource/bonus/tux_good.png
+
