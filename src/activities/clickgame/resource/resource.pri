@@ -32,4 +32,7 @@ APP_FILES += \
 	$$PWD/sea6.jpg \
 	$$PWD/shark1.png \
 	$$PWD/six_barred.png \
-	$$PWD/teeth.png
+	$$PWD/teeth.png \
+	$$PWD/sizeTable.png \
+	$$PWD/star.png \
+	$$PWD/bubble.png
