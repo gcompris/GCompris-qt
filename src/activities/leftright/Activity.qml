@@ -8,11 +8,22 @@ ActivityBase {
     id: activity
     focus: true
 
+    onStart: {}
+    onStop: {}
+
     pageComponent: Image {
         source: "qrc:/gcompris/src/activities/leftright/resource/back.svgz"
         focus: true
+        signal start
+        signal stop
         fillMode: Image.PreserveAspectCrop
-        Component.onCompleted: Activity.start(bar, bonus, imageAnimOff);
+
+        Component.onCompleted: {
+            activity.start.connect(start)
+            activity.stop.connect(stop)
+        }
+        onStart: { Activity.start(bar, bonus, imageAnimOff) }
+        onStop: { Activity.stop() }
 
         // FIXME It's not working
         Keys.onLeftPressed: Activity.leftClick()
