@@ -17,6 +17,7 @@ ActivityBase {
         signal stop
         focus: true
         fillMode: Image.PreserveAspectCrop
+        source: "qrc:/gcompris/src/activities/clickgame/resource/sea1.jpg"
 
         Component.onCompleted: {
             activity.start.connect(start)

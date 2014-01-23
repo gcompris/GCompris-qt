@@ -6,6 +6,7 @@ Rectangle {
     border.color: "black"
     border.width: 1
     z: 1000
+    property bool isDialog: true
     property string title
     property string subtitle
     property Component content

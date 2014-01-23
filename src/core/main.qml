@@ -17,7 +17,26 @@ Window {
         anchors.fill: parent
         initialItem: "qrc:/gcompris/src/activities/menu/Activity.qml"
         delegate: StackViewDelegate {
-            pushTransition: StackViewTransition {
+            id: root
+            function getTransition(properties)
+            {
+                if(properties.name === "pushTransition") {
+                    if(properties.enterItem.isDialog) {
+                        return pushVTransition
+                    } else {
+                        return pushHTransition
+                    }
+                } else {
+                    if(properties.exitItem.isDialog) {
+                        return popVTransition
+                    } else {
+                        return popHTransition
+                    }
+
+                }
+            }
+
+            property Component pushHTransition: StackViewTransition {
                 function transitionFinished(properties)
                 {
                     properties.exitItem.opacity = 1
@@ -39,7 +58,8 @@ Window {
                     easing.type: Easing.OutSine
                 }
             }
-            popTransition: StackViewTransition {
+
+            property Component popHTransition: StackViewTransition {
                 function transitionFinished(properties)
                 {
                     properties.exitItem.opacity = 1
@@ -59,10 +79,56 @@ Window {
                     to: target.width
                     duration: 500
                     easing.type: Easing.OutSine
-
                 }
             }
-            property Component replaceTransition: pushTransition
+
+            property Component pushVTransition: StackViewTransition {
+                function transitionFinished(properties)
+                {
+                    properties.exitItem.opacity = 1
+                }
+                PropertyAnimation {
+                    target: enterItem
+                    property: "y"
+                    from: -target.height
+                    to: 0
+                    duration: 500
+                    easing.type: Easing.OutSine
+                }
+                PropertyAnimation {
+                    target: exitItem
+                    property: "y"
+                    from: 0
+                    to: target.height
+                    duration: 500
+                    easing.type: Easing.OutSine
+                }
+            }
+
+            property Component popVTransition: StackViewTransition {
+                function transitionFinished(properties)
+                {
+                    properties.exitItem.opacity = 1
+                }
+                PropertyAnimation {
+                    target: enterItem
+                    property: "y"
+                    from: target.height
+                    to: 0
+                    duration: 500
+                    easing.type: Easing.OutSine
+                }
+                PropertyAnimation {
+                    target: exitItem
+                    property: "y"
+                    from: 0
+                    to: -target.height
+                    duration: 500
+                    easing.type: Easing.OutSine
+                }
+            }
+
+            property Component replaceTransition: pushHTransition
         }
     }
 }
