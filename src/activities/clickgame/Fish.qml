@@ -1,50 +1,56 @@
 import QtQuick 2.1
 import QtQuick.Particles 2.0
 import "activity.js" as Activity
+import GCompris 1.0
 
 AnimatedSprite {
     id: fish
-    Component.onCompleted: x=900
+    property Item main
+    Component.onCompleted: x = main.width
     property int duration: 5000
     frameRate: 2
     interpolate: true
+
 
     transform: Rotation {
         id: rotate; origin.x: width / 2; origin.y: 0; axis { x: 0; y: 1; z: 0 } angle: 0
     }
 
     SequentialAnimation {
-                id: rotateLeftAnimation
-                loops: 1
-                PropertyAnimation {
-                    target: rotate
-                    properties: "angle"
-                    from: 0
-                    to: 180
-                    duration: 500
-                }
+        id: rotateLeftAnimation
+        loops: 1
+        PropertyAnimation {
+            target: rotate
+            properties: "angle"
+            from: 0
+            to: 180
+            duration: 500
+        }
     }
 
     SequentialAnimation {
-                id: rotateRightAnimation
-                loops: 1
-                PropertyAnimation {
-                    target: rotate
-                    properties: "angle"
-                    from: 180
-                    to: 0
-                    duration: 500
-                }
+        id: rotateRightAnimation
+        loops: 1
+        PropertyAnimation {
+            target: rotate
+            properties: "angle"
+            from: 180
+            to: 0
+            duration: 500
+        }
     }
+
     onXChanged: {
-        if(x > 600) {
+        if(x >= main.width - fish.width && rotate.angle == 180) {
+            // The window has been shrunk
+        } else if(x >= main.width - fish.width) {
             rotateLeftAnimation.start()
             x = 0
-            y = Activity.getY(y)
+            y = Math.random() * (main.height - fish.height)
             bubbleEffect.restart()
-        } else if(x < 100) {
+        } else if(x <= 0) {
             rotateRightAnimation.start()
-            x = 800
+            x = ApplicationInfo.applicationWidth
             bubbleEffect.restart()
         }
     }

@@ -188,20 +188,22 @@ var levelProperty = [
                 "minDuration": 6000
             },
         ]
-var currentImageId = 0;
-var currentLevel = 0;
+var currentImageId = 0
+var currentLevel = 0
+var main
 var background
-var bar;
-var bonus;
+var bar
+var bonus
 
 // The array of created fishes object
-var createdFishes;
-var killedFishes;
+var createdFishes
+var killedFishes
 
-function start(_background, _bar, _bonus) {
+function start(_main, _background, _bar, _bonus) {
+    main = _main
     background = _background
-    bar = _bar;
-    bonus = _bonus;
+    bar = _bar
+    bonus = _bonus
     currentLevel = 0
     initLevel()
 }
@@ -257,8 +259,9 @@ function createFish(minDuration) {
     var fish = component.createObject(
                 background,
                 {
-                    "x": Math.floor(Math.random() * 400) + 100,
-                    "y": Math.floor(Math.random() * 500),
+                    "main": main,
+                    "x": Math.random() * (main.width - fishSource.width),
+                    "y": Math.random() * (main.height - fishSource.height),
                     "width": fishSource.width,
                     "height": fishSource.height,
                     "source": "qrc:/gcompris/src/activities/clickgame/resource/" +
@@ -292,9 +295,3 @@ function fishKilled() {
     }
 }
 
-function getY(y) {
-    if(currentLevel > 3) {
-        return Math.floor(Math.random() * 500)
-    }
-    return y
-}
