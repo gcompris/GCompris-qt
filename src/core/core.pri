@@ -1,11 +1,13 @@
 SOURCES += \
 	$$PWD/ActivityInfo.cpp \
 	$$PWD/ActivityInfoTree.cpp \
-	$$PWD/main.cpp
+	$$PWD/main.cpp \
+	$$PWD/ApplicationInfo.cpp
 
 HEADERS += \
 	$$PWD/ActivityInfo.h \
-	$$PWD/ActivityInfoTree.h
+	$$PWD/ActivityInfoTree.h \
+	$$PWD/ApplicationInfo.h
 
 APP_FILES = \
 	$$PWD/ActivityBase.qml \

@@ -1,4 +1,5 @@
 import QtQuick 2.1
+import GCompris 1.0
 
 Rectangle {
     id: bar
@@ -10,7 +11,7 @@ Rectangle {
     height: barRow.height - 30
     border.color: "black"
     border.width: 2
-    scale: 1.4
+    scale: 1 * ApplicationInfo.ratio
     z: 1000
     property BarEnumContent content
     property int level: 0

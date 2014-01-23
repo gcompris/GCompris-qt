@@ -4,12 +4,16 @@
 #include <QtQml>
 #include <QObject>
 
+#include "ApplicationInfo.h"
 #include "ActivityInfoTree.h"
 
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
+	app.setOrganizationName("GCompris");
+	app.setApplicationName("GCompris");
 
+	ApplicationInfo::init();
 	ActivityInfoTree::init();
 
 	QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));

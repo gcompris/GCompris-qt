@@ -2,13 +2,14 @@ import QtQuick 2.1
 import QtQuick.Controls 1.0
 import QtQuick.Window 2.1
 
-import "qrc:/gcompris/src/core"
 import GCompris 1.0
 
 Window {
     id: main
     width: 800
     height: 520
+    minimumWidth: 600
+    minimumHeight: 400
     title: "GCompris"
 
     StackView {

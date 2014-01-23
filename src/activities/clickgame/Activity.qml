@@ -8,11 +8,22 @@ ActivityBase {
     id: activity
     focus: true
 
+    onStart: {}
+    onStop: {}
+
     pageComponent: Image {
-        id: backgound
+        id: background
+        signal start
+        signal stop
         focus: true
         fillMode: Image.PreserveAspectCrop
-        Component.onCompleted: Activity.start(backgound, bar, bonus);
+
+        Component.onCompleted: {
+            activity.start.connect(start)
+            activity.stop.connect(stop)
+        }
+        onStart: { Activity.start(main, background, bar, bonus) }
+        onStop: { Activity.stop() }
 
         // FIXME It's not working
         Keys.onLeftPressed: Activity.leftClick()
@@ -39,4 +50,5 @@ ActivityBase {
             id: bonus
         }
     }
+
 }
