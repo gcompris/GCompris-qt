@@ -237,22 +237,6 @@ function previousLevel() {
     initLevel();
 }
 
-function leftClick() {
-    if(currentHands[currentImageId].image.indexOf("gauche") !== -1) {
-        displayNextHand()
-    } else {
-        bonus.bad("flower")
-    }
-}
-
-function rightClick() {
-    if(currentHands[currentImageId].image.indexOf("droit") !== -1) {
-        displayNextHand()
-    } else {
-        bonus.bad("flower")
-    }
-}
-
 function createFish(minDuration) {
     var component = Qt.createComponent("qrc:/gcompris/src/activities/clickgame/Fish.qml");
     var fishSource = fishes[Math.floor(Math.random() * fishes.length)]
@@ -291,7 +275,7 @@ function destroyFishes() {
 function fishKilled() {
     killedFishes += 1
     if(killedFishes === createdFishes.length) {
-        nextLevel()
+        bonus.good("flower")
     }
 }
 

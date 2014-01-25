@@ -7,6 +7,7 @@ Image {
     anchors.fill: parent
     fillMode: Image.Pad
 
+    signal done
 
     function good(name) {
         source = "qrc:/gcompris/src/core/resource/bonus/" + name + "_good.png"
@@ -34,5 +35,6 @@ Image {
             duration: 500
             easing.type: Easing.InOutQuad
         }
+        onStopped: done()
     }
 }
