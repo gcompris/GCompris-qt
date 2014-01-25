@@ -135,7 +135,6 @@ ActivityBase {
         DialogHelp {
             id: dialogHelpLeftRight
             onClose: home()
-            activityInfo: activity.activityInfo
         }
 
         Bar {

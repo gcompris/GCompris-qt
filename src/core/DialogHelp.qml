@@ -1,11 +1,13 @@
 import QtQuick 2.2
 import QtQuick.Controls 1.1
+import GCompris 1.0
 
 DialogBackground {
     visible: false
     title: "Help"
+    property QtObject activityInfo: ActivityInfoTree.currentActivity
     subtitle: activityInfo.section
-    property QtObject activityInfo
+
 
     function getContent() {
         var contentText = ""

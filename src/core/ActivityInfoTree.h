@@ -11,6 +11,7 @@ class ActivityInfoTree : public QObject
 	Q_OBJECT
 	Q_PROPERTY(ActivityInfo* rootMenu READ getRootMenu CONSTANT)
 	Q_PROPERTY(QQmlListProperty<ActivityInfo> menuTree READ menuTree NOTIFY menuTreeChanged)
+	Q_PROPERTY(ActivityInfo* currentActivity READ getCurrentActivity WRITE setCurrentActivity NOTIFY currentActivityChanged)
 public:
 	ActivityInfoTree(QObject *parent = 0);
 	QQmlListProperty<ActivityInfo> menuTree();
@@ -18,16 +19,20 @@ public:
 	ActivityInfo *getRootMenu() const;
 	void setRootMenu(ActivityInfo *rootMenu);
 	ActivityInfo *menuTree(int) const;
+	void setCurrentActivity(ActivityInfo *currentActivity);
+	ActivityInfo *getCurrentActivity() const;
 	ActivityInfo *getParentActivity(ActivityInfo *root, ActivityInfo *menu);
 	void menuTreeAppend(ActivityInfo *menu);
 	void menuTreeAppend(QQmlEngine *engine,
 						const QDir &menuDir, const QString &menuFile);
 signals:
 	void menuTreeChanged();
+	void currentActivityChanged();
 
 private:
 	QList<ActivityInfo *> m_menuTree;
 	ActivityInfo *m_rootMenu;
+	ActivityInfo *m_currentActivity;
 
 public:
 	static void init();
