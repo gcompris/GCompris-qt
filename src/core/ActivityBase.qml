@@ -6,7 +6,6 @@ Item {
     id: page
     property Item main: parent;
     property Component pageComponent
-    property QtObject activityInfo
     property bool isLocked: true
     signal home
     signal start

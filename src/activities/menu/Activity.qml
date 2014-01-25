@@ -63,9 +63,9 @@ ActivityBase {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
+                        ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
                         activityLoader.source = "qrc:/gcompris/src/activities/" +
                                 ActivityInfoTree.menuTree[index].name + "/Activity.qml"
-                        activityLoader.item.activityInfo = ActivityInfoTree.menuTree[index]
                         activityLoader.item.home.connect(home)
                         activityLoader.item.displayDialog.connect(displayDialog)
                         pageView.push(activityLoader.item)

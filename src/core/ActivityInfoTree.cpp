@@ -4,7 +4,8 @@
 
 #include "ActivityInfoTree.h"
 
-ActivityInfoTree::ActivityInfoTree(QObject *parent) : QObject(parent)
+ActivityInfoTree::ActivityInfoTree(QObject *parent) : QObject(parent),
+	m_currentActivity(NULL)
 {}
 
 
@@ -31,6 +32,17 @@ int ActivityInfoTree::menuTreeCount() const
 ActivityInfo *ActivityInfoTree::menuTree(int index) const
 {
 	return m_menuTree.at(index);
+}
+
+void ActivityInfoTree::setCurrentActivity(ActivityInfo *currentActivity)
+{
+	m_currentActivity = currentActivity;
+	emit currentActivityChanged();
+}
+
+ActivityInfo *ActivityInfoTree::getCurrentActivity() const
+{
+	return m_currentActivity;
 }
 
 ActivityInfo *ActivityInfoTree::getParentActivity(ActivityInfo *root, ActivityInfo *menu)
