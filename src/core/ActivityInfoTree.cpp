@@ -3,7 +3,7 @@
 #include <QQmlComponent>
 
 #include "ActivityInfoTree.h"
-
+#include <iostream>
 ActivityInfoTree::ActivityInfoTree(QObject *parent) : QObject(parent),
 	m_currentActivity(NULL)
 {}
@@ -88,41 +88,30 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 
 	ActivityInfoTree *menuTree = new ActivityInfoTree(NULL);
 
-	// TODO Parse all ActivityInfo on disk
-//	QDir menuDir("../gcompris-qt/src/activities/menus", "*.qml");
-//	qDebug() << "menu dir path= " << menuDir.absolutePath();
-//	QStringList list = menuDir.entryList();
-//	for (int i = 0; i < list.size(); ++i) {
-//		menuTree->menuTreeAppend(engine, menuDir,
-//								 list.at(i));
-//	}
-
 	QQmlComponent componentRoot(engine,
-			QUrl("qrc:/gcompris/src/activities/menu/ActivityInfo.qml"));
+								QUrl("qrc:/gcompris/src/activities/menu/ActivityInfo.qml"));
 	QObject *objectRoot = componentRoot.create();
 	menuTree->setRootMenu(qobject_cast<ActivityInfo*>(objectRoot));
 
-	QQmlComponent component(engine,
-			QUrl("qrc:/gcompris/src/activities/leftright/ActivityInfo.qml"));
-	QObject *object = component.create();
-	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(object));
 
-	QQmlComponent component2(engine,
-			QUrl("qrc:/gcompris/src/activities/clickgame/ActivityInfo.qml"));
-	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(component2.create()));
+	QStringList activities;
+	activities << "leftright" << "clickgame" <<
+				  "erase" << "erase_clic" << "erase_2clic";
 
-	menuTree->menuTreeAppend(
-		qobject_cast<ActivityInfo*>(
-			QQmlComponent(engine,
-				QUrl("qrc:/gcompris/src/activities/erase/ActivityInfo.qml")).create()));
+	for (int i = 0; i < activities.size(); ++i) {
+		QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(activities.at(i));
+		std::cout << url.toStdString() << std::endl;
+		QQmlComponent componentRoot(engine,	QUrl(url));
+		QObject *objectRoot = componentRoot.create();
+		menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(objectRoot));
 
-	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(object));
-	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(object));
-	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(object));
-	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(object));
 
-//	qDebug() << "getParentActivity:" << menuTree->getParentActivity(menuTree->menuTree(0),
-//																	qobject_cast<ActivityInfo*>(object))->name();
+//		menuTree->menuTreeAppend(
+//			qobject_cast<ActivityInfo*>(
+//				QQmlComponent(engine,
+//					QUrl(url)).create()));
+	}
+
 	return menuTree;
 }
 
