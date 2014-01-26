@@ -72,16 +72,18 @@ var main
 var background
 var bar
 var bonus
+var type
 
 // The array of created blocks object
 var createdBlocks
 var killedBlocks
 
-function start(_main, _background, _bar, _bonus) {
+function start(_main, _background, _bar, _bonus, _type) {
     main = _main
     background = _background
     bar = _bar
     bonus = _bonus
+    type = _type
     currentLevel = 0
     currentSubLevel = 0
     currentImage = 0
@@ -149,7 +151,8 @@ function createBlock(x, y, w, h, img) {
                     "width": w,
                     "height": h,
                     "opacity": 0.0,
-                    "source": img
+                    "source": img,
+                    "type": type
                 });
 
     block.opacity = 1.0

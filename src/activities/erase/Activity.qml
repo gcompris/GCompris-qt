@@ -9,6 +9,7 @@ import "activity.js" as Activity
 ActivityBase {
     id: activity
     focus: true
+    property string type: "erase"
 
     onStart: {}
     onStop: {}
@@ -19,13 +20,13 @@ ActivityBase {
         signal stop
         focus: true
         fillMode: Image.PreserveAspectCrop
-        source: "resource/" + Activity.getFirstImage()
+        source: "qrc:/gcompris/src/activities/erase/resource/" + Activity.getFirstImage()
 
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        onStart: { Activity.start(main, background, bar, bonus) }
+        onStart: { Activity.start(main, background, bar, bonus, type) }
         onStop: { Activity.stop() }
 
         DialogHelp {

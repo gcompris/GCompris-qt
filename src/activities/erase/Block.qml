@@ -9,6 +9,7 @@ Image {
     opacity: 0
 
     property Item main
+    property string type
 
     Behavior on opacity { PropertyAnimation { duration: 200 } }
 
@@ -22,22 +23,35 @@ Image {
 
     MouseArea {
         anchors.fill: parent
-        hoverEnabled: true
+        hoverEnabled: block.type === "erase"
         onClicked: {
-            enabled = false
-            block.opacity = 0
-            Activity.blockKilled()
+            if(block.type === "click") {
+                enabled = false
+                block.opacity = 0
+                timerEnd.start()
+            }
+        }
+        onDoubleClicked: {
+            if(block.type === "double_click") {
+                enabled = false
+                block.opacity = 0
+                timerEnd.start()
+            }
         }
         onEntered: {
-            block.opacity = 0
+            if(block.type === "erase") {
+                block.opacity = 0
+            }
         }
         onExited: {
-            if(block.opacity == 0) {
-                enabled = false
-                hoverEnabled = false
-                timerEnd.start()
-            } else {
-                block.opacity = 1.0
+            if(block.type === "erase") {
+                if(block.opacity == 0) {
+                    enabled = false
+                    hoverEnabled = false
+                    timerEnd.start()
+                } else {
+                    block.opacity = 1.0
+                }
             }
         }
     }
