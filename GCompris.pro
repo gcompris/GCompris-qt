@@ -9,6 +9,7 @@ include(src/core/core.pri)
 include(src/activities/clickgame/clickgame.pri)
 include(src/activities/leftright/leftright.pri)
 include(src/activities/menu/menu.pri)
+include(src/activities/erase/erase.pri)
 
 OTHER_FILES += $$APP_FILES
 
