@@ -39,10 +39,6 @@ ActivityBase {
         onStart: { Activity.start(main, background, bar, bonus) }
         onStop: { Activity.stop() }
 
-        // FIXME It's not working
-        Keys.onLeftPressed: Activity.leftClick()
-        Keys.onRightPressed: Activity.rightClick()
-
         DialogHelp {
             id: dialogHelpLeftRight
             onClose: home()

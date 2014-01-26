@@ -219,7 +219,7 @@ function initLevel() {
             bar.level + ".jpg"
     createdFishes = new Array()
     for(var i = 0;  i < levelProperty[currentLevel].nbFish; ++i) {
-         createdFishes[i] = createFish(levelProperty[currentLevel].minDuration, i)
+         createdFishes[i] = createFish(levelProperty[currentLevel].minDuration)
     }
 }
 
@@ -273,8 +273,7 @@ function destroyFishes() {
 }
 
 function fishKilled() {
-    killedFishes += 1
-    if(killedFishes === createdFishes.length) {
+    if(++killedFishes === createdFishes.length) {
         bonus.good("flower")
     }
 }
