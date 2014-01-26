@@ -110,6 +110,12 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	QQmlComponent component2(engine,
 			QUrl("qrc:/gcompris/src/activities/clickgame/ActivityInfo.qml"));
 	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(component2.create()));
+
+	menuTree->menuTreeAppend(
+		qobject_cast<ActivityInfo*>(
+			QQmlComponent(engine,
+				QUrl("qrc:/gcompris/src/activities/erase/ActivityInfo.qml")).create()));
+
 	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(object));
 	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(object));
 	menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(object));

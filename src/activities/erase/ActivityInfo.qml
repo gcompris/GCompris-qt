@@ -5,7 +5,7 @@ ActivityInfo {
   name: "erase"
   dir: "src/activities/erase"
   difficulty: 1
-  icon: "menus/erase.svg"
+  icon: "erase/erase.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Move the mouse")
