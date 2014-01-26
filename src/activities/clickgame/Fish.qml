@@ -1,5 +1,6 @@
 import QtQuick 2.1
 import QtQuick.Particles 2.0
+import QtMultimedia 5.0
 import "activity.js" as Activity
 import GCompris 1.0
 
@@ -11,6 +12,10 @@ AnimatedSprite {
     frameRate: 2
     interpolate: true
 
+    Audio {
+        id: audioDrip
+        source: "qrc:/gcompris/src/activities/clickgame/resource/drip.wav"
+    }
 
     transform: Rotation {
         id: rotate; origin.x: width / 2; origin.y: 0; axis { x: 0; y: 1; z: 0 } angle: 0
@@ -63,6 +68,7 @@ AnimatedSprite {
         onClicked: {
             parent.opacity = 0
             enabled = false
+            audioDrip.play()
             Activity.fishKilled()
             clickedEffect.start()
         }

@@ -8,6 +8,7 @@ APP_FILES += \
 
 
 APP_FILES += \
+	$$PWD/resource/bubble.wav \
 	$$PWD/resource/blueking2.png \
 	$$PWD/resource/butfish.png \
 	$$PWD/resource/cichlid1.png \
@@ -15,6 +16,7 @@ APP_FILES += \
 	$$PWD/resource/collaris.png \
 	$$PWD/resource/discus2.png \
 	$$PWD/resource/discus3.png \
+	$$PWD/resource/drip.wav \
 	$$PWD/resource/f00.png \
 	$$PWD/resource/f01.png \
 	$$PWD/resource/f02.png \
