@@ -10,6 +10,7 @@ Image {
 
     property Item main
     property string type
+    property int counter: 0
 
     Behavior on opacity { PropertyAnimation { duration: 200 } }
 
@@ -29,6 +30,7 @@ Image {
                 enabled = false
                 block.opacity = 0
                 timerEnd.start()
+                playSound()
             }
         }
         onDoubleClicked: {
@@ -36,11 +38,13 @@ Image {
                 enabled = false
                 block.opacity = 0
                 timerEnd.start()
+                playSound()
             }
         }
         onEntered: {
             if(block.type === "erase") {
                 block.opacity = 0
+                playSound()
             }
         }
         onExited: {
@@ -49,6 +53,7 @@ Image {
                     enabled = false
                     hoverEnabled = false
                     timerEnd.start()
+                    playSound()
                 } else {
                     block.opacity = 1.0
                 }
@@ -56,13 +61,22 @@ Image {
         }
     }
 
-//    Audio {
-//        id: audioEraser1
-//        source: "qrc:/gcompris/src/activities/erase/resource/eraser1.wav"
-//    }
+    function playSound()
+    {
+        if(counter++ % 2) {
+            audioEraser1.play()
+        } else {
+            audioEraser2.play()
+        }
+    }
 
-//    Audio {
-//        id: audioEraser2
-//        source: "qrc:/gcompris/src/activities/erase/resource/eraser2.wav"
-//    }
+    Audio {
+        id: audioEraser1
+        source: "qrc:/gcompris/src/activities/erase/resource/eraser1.wav"
+    }
+
+    Audio {
+        id: audioEraser2
+        source: "qrc:/gcompris/src/activities/erase/resource/eraser2.wav"
+    }
 }

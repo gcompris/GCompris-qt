@@ -1,7 +1,7 @@
 cache()
 
 TEMPLATE = app
-QT += qml quick gui network xmlpatterns svg
+QT += qml quick gui multimedia network xmlpatterns svg
 //QT += core gui svg xml
 TARGET = GCompris
 
