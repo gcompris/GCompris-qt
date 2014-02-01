@@ -6,6 +6,7 @@ Image {
     opacity: 0
     anchors.fill: parent
     fillMode: Image.Pad
+    z: 1000
 
     signal done
 
