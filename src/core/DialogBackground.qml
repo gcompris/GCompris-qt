@@ -88,7 +88,6 @@ Rectangle {
         width: 70
         fillMode: Image.PreserveAspectFit
         anchors.right: parent.right
-        visible: parent.width > 700
         smooth: true
         SequentialAnimation {
               id: anim
