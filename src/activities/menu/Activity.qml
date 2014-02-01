@@ -46,6 +46,7 @@ ActivityBase {
                     source: "qrc:/gcompris/src/activities/" + icon;
                     anchors.top: background.top
                     anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.margins: 5
                     Text {
                         anchors.top: parent.bottom
                         anchors.horizontalCenter: parent.horizontalCenter
