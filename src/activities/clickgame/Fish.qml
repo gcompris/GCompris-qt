@@ -51,7 +51,7 @@ AnimatedSprite {
         } else if(x >= main.width - fish.width) {
             rotateLeftAnimation.start()
             x = 0
-            y = Math.random() * (main.height - fish.height)
+            y = Activity.currentLevel > 0 ? Math.random() * (main.height - fish.height) : y
             bubbleEffect.restart()
         } else if(x <= 0) {
             rotateRightAnimation.start()
