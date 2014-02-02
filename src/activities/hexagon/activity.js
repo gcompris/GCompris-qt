@@ -46,12 +46,6 @@ function initLevel() {
     // Select a random place for the strawberry
     strawBerry = Math.floor(Math.random() * i)
     createdHexagon[strawBerry].hasStrawberry = true
-//    i=0
-//    for(var ix = 0;  ix < nbx; ++ix) {
-//        for(var iy = 0;  iy < nby; ++iy) {
-//            createdHexagon[i++].color = getColor(getDistance(ix, iy))
-//        }
-//    }
 
 }
 
