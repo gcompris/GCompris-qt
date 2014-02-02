@@ -26,8 +26,27 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        onStart: { Activity.start(main, background, bar, bonus, type) }
+        onStart: Activity.start(main, background, bar, bonus, type)
+
         onStop: { Activity.stop() }
+
+        MultiPointTouchArea {
+            anchors.fill: parent
+            onTouchUpdated: {
+
+                for(var i in touchPoints) {
+                    var touch = touchPoints[i]
+
+                    var newBlock = background.childAt(touch.x, touch.y)
+                    if(newBlock)
+                        newBlock.enter()
+
+                    var previousBlock = background.childAt(touch.previousX, touch.previousY)
+                    if(previousBlock !== newBlock)
+                        previousBlock.leave()
+                }
+            }
+        }
 
         DialogHelp {
             id: dialogHelpLeftRight
