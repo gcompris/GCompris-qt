@@ -13,11 +13,6 @@ Window {
     minimumHeight: 400
     title: "GCompris"
 
-    Component.onCompleted: {
-        console.log("ApplicationInfo.isMobile:" + ApplicationInfo.isMobile)
-        console.log("ApplicationInfo.ratio:" + ApplicationInfo.ratio)
-    }
-
     Audio {
         id: audio
         source: "qrc:/gcompris/src/core/resource/intro.ogg"
@@ -33,6 +28,11 @@ Window {
             id: root
             function getTransition(properties)
             {
+                properties.exitItem.pause()
+                if(!properties.exitItem.isDialog) {
+                    properties.enterItem.start()
+                }
+
                 if(properties.name === "pushTransition") {
                     if(properties.enterItem.isDialog) {
                         return pushVTransition
@@ -49,11 +49,16 @@ Window {
                 }
             }
 
-            property Component pushHTransition: StackViewTransition {
-                function transitionFinished(properties)
-                {
-                    properties.exitItem.opacity = 1
+            function transitionFinished(properties)
+            {
+                properties.exitItem.opacity = 1
+                properties.enterItem.play()
+                if(!properties.enterItem.isDialog) {
+                    properties.exitItem.stop()
                 }
+            }
+
+            property Component pushHTransition: StackViewTransition {
                 PropertyAnimation {
                     target: enterItem
                     property: "x"
@@ -73,10 +78,6 @@ Window {
             }
 
             property Component popHTransition: StackViewTransition {
-                function transitionFinished(properties)
-                {
-                    properties.exitItem.opacity = 1
-                }
                 PropertyAnimation {
                     target: enterItem
                     property: "x"
@@ -96,10 +97,6 @@ Window {
             }
 
             property Component pushVTransition: StackViewTransition {
-                function transitionFinished(properties)
-                {
-                    properties.exitItem.opacity = 1
-                }
                 PropertyAnimation {
                     target: enterItem
                     property: "y"
@@ -119,10 +116,6 @@ Window {
             }
 
             property Component popVTransition: StackViewTransition {
-                function transitionFinished(properties)
-                {
-                    properties.exitItem.opacity = 1
-                }
                 PropertyAnimation {
                     target: enterItem
                     property: "y"

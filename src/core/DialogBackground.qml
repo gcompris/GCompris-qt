@@ -1,4 +1,5 @@
 import QtQuick 2.2
+import QtQuick.Controls 1.1
 
 Rectangle {
     id: dialogBackground
@@ -9,8 +10,12 @@ Rectangle {
     property bool isDialog: true
     property string title
     property string subtitle
-    property Component content
+    property string content
     signal close
+    signal start
+    signal pause
+    signal play
+    signal stop
 
     Row {
         spacing: 2
@@ -71,10 +76,25 @@ Rectangle {
                 border.width: 2
                 anchors.margins: 100
 
-                Loader {
+                Flickable {
+                    id: flickArea
                     anchors.fill: parent
-                    anchors.margins: 8
-                    sourceComponent: content
+                    contentWidth: parent.width;
+                    contentHeight: parent.height;
+                    flickableDirection: Flickable.VerticalFlick
+                    clip: true
+
+                    TextArea {
+                        id: textContent
+                        anchors.fill: parent
+                        anchors.margins: 8
+                        text: content
+                        font.pointSize: 24
+                        wrapMode: Text.WordWrap
+                        textFormat: TextEdit.RichText
+                        readOnly: true
+                        selectByMouse: false
+                    }
                 }
             }
             Item { width: 1; height: 10 }

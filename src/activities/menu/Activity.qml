@@ -1,4 +1,5 @@
 import QtQuick 2.1
+import QtQuick.Controls 1.0
 import "qrc:/gcompris/src/core"
 import GCompris 1.0
 
@@ -6,10 +7,8 @@ ActivityBase {
     id: menuActivity
     focus: true
 
-    onHome: { pageView.pop() }
-    onDisplayDialog: {
-        pageView.push(dialog)
-    }
+    onHome: pageView.pop()
+    onDisplayDialog: pageView.push(dialog)
 
     pageComponent: Image {
         source: "qrc:/gcompris/src/activities/menu/resource/background.svgz"
