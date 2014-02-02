@@ -7,6 +7,17 @@ import GCompris 1.0
 Image {
     id: block
     opacity: 0
+    property Item main
+    property Item bar
+    property double ix
+    property double iy
+    property int nbx
+    property int nby
+
+    x: ix * main.width / nbx
+    y: iy * (main.height - bar.height) / nby
+    width: main.width / nbx
+    height: (main.height - bar.height) / nby
 
     signal enter
     signal leave
@@ -15,7 +26,6 @@ Image {
 
     onEnter: {
         if(opacity == 1.0) {
-            console.log("onEnter")
             playSound()
             block.opacity = 0
         }
@@ -23,7 +33,6 @@ Image {
 
     onLeave: {
         if(opacity != 0) {
-            console.log("onLeave")
             block.opacity = 1.0
             playSound()
         }
