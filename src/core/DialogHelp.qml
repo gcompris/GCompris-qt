@@ -34,13 +34,6 @@ DialogBackground {
         return contentText
     }
 
-    content: TextArea {
-        text: getContent()
-        font.pointSize: 24
-        wrapMode: Text.WordWrap
-        textFormat: TextEdit.RichText
-        readOnly: true
-        selectByMouse: false
-    }
+    content: getContent()
 
 }

@@ -9,16 +9,10 @@ Item {
     property bool isLocked: true
     signal home
     signal start
+    signal pause
+    signal play
     signal stop
     signal displayDialog(Item dialog)
-
-    Stack.onStatusChanged: {
-        if (Stack.status == Stack.Active) {
-            start()
-        } else if (Stack.status == Stack.Inactive) {
-            stop()
-        }
-    }
 
     Keys.onEscapePressed: home()
     Keys.onPressed: {

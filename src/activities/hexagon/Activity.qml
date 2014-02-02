@@ -10,9 +10,6 @@ ActivityBase {
     id: activity
     focus: true
 
-    onStart: {}
-    onStop: {}
-
     pageComponent: Rectangle {
         id: background
         color: "#ececec"
@@ -25,8 +22,8 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
-        onStart: { Activity.start(main, background, bar, bonus) }
-        onStop: { Activity.stop() }
+        onStart: Activity.start(main, background, bar, bonus)
+        onStop: Activity.stop()
 
         DialogHelp {
             id: dialogHelpLeftRight

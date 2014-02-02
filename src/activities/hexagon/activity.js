@@ -25,7 +25,7 @@ function start(_main, _background, _bar, _bonus) {
 }
 
 function stop() {
-    destroyHexagon();
+    destroyHexagon()
 }
 
 function initLevel() {
