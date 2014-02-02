@@ -38,7 +38,6 @@
 **
 ****************************************************************************/
 
-#include <QtCore/QFile>
 #include <QtCore/qmath.h>
 #include <QtCore/QUrl>
 #include <QtCore/QUrlQuery>
@@ -47,19 +46,14 @@
 
 #include "ApplicationInfo.h"
 #include <QDebug>
-#include <QQmlEngine>
-#include <qqml.h>
 
-ApplicationInfo::ApplicationInfo()
+ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 {
 
 	m_isMobile = false;
 #if defined(Q_OS_ANDROID) || defined(Q_OS_IOS) || defined(Q_OS_BLACKBERRY)
 	m_isMobile = true;
 #endif
-
-	m_constants = new QQmlPropertyMap(this);
-	m_constants->insert(QLatin1String("isMobile"), QVariant(m_isMobile));
 
 	QRect rect = qApp->primaryScreen()->geometry();
 	m_ratio = m_isMobile ? qMin(qMax(rect.width(), rect.height())/1136. , qMin(rect.width(), rect.height())/640.) : 1;
@@ -100,8 +94,8 @@ void ApplicationInfo::setIsPortraitMode(const bool newMode)
 	}
 }
 
-static QObject *systeminfo_provider(QQmlEngine *engine,
-									QJSEngine *scriptEngine)
+QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,
+											 QJSEngine *scriptEngine)
 {
 	Q_UNUSED(engine)
 	Q_UNUSED(scriptEngine)
@@ -110,6 +104,6 @@ static QObject *systeminfo_provider(QQmlEngine *engine,
 
 void ApplicationInfo::init()
 {
-	qmlRegisterSingletonType<ApplicationInfo>(
-				"GCompris", 1, 0, "ApplicationInfo", systeminfo_provider);
+	qmlRegisterSingletonType<ApplicationInfo>("GCompris", 1, 0, "ApplicationInfo", systeminfoProvider);
+	qmlRegisterType<ApplicationInfo>("GCompris", 1, 0, "ApplicationInfo");
 }

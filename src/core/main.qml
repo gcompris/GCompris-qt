@@ -1,6 +1,7 @@
 import QtQuick 2.1
 import QtQuick.Controls 1.0
 import QtQuick.Window 2.1
+import QtMultimedia 5.0
 
 import GCompris 1.0
 
@@ -11,6 +12,18 @@ Window {
     minimumWidth: 600
     minimumHeight: 400
     title: "GCompris"
+
+    Component.onCompleted: {
+        console.log("ApplicationInfo.isMobile:" + ApplicationInfo.isMobile)
+        console.log("ApplicationInfo.ratio:" + ApplicationInfo.ratio)
+    }
+
+    Audio {
+        id: audio
+        source: "qrc:/gcompris/src/core/resource/intro.ogg"
+        onError: console.log("intro play error: " + errorString)
+        autoPlay: true
+    }
 
     StackView {
         id: pageView

@@ -40,15 +40,17 @@
 #ifndef APPLICATIONINFO_H
 #define APPLICATIONINFO_H
 
+#include <qqml.h>
 #include <QtCore/QObject>
 #include <QtQml/QQmlPropertyMap>
+#include <QQmlEngine>
 
 
 class ApplicationInfo : public QObject
 {
 	Q_OBJECT
 	Q_PROPERTY(int applicationWidth READ applicationWidth WRITE setApplicationWidth NOTIFY applicationWidthChanged)
-	Q_PROPERTY(QObject *constants READ constants CONSTANT)
+	Q_PROPERTY(bool isMobile READ isMobile CONSTANT)
 	Q_PROPERTY(bool isPortraitMode READ isPortraitMode WRITE setIsPortraitMode NOTIFY portraitModeChanged)
 	Q_PROPERTY(qreal ratio READ ratio NOTIFY ratioChanged)
 	Q_PROPERTY(qreal hMargin READ hMargin NOTIFY hMarginChanged)
@@ -57,16 +59,18 @@ class ApplicationInfo : public QObject
 	Q_PROPERTY(qreal sliderGapWidth READ sliderGapWidth NOTIFY ratioChanged)
 
 public:
-	ApplicationInfo();
+	ApplicationInfo(QObject *parent = 0);
 	static void init();
-
-	QQmlPropertyMap *constants() const { return m_constants; }
+	static QObject *systeminfoProvider(QQmlEngine *engine,
+									   QJSEngine *scriptEngine);
 
 	int applicationWidth() const { return m_applicationWidth; }
 	void setApplicationWidth(const int newWidth);
 
 	bool isPortraitMode() const { return m_isPortraitMode; }
 	void setIsPortraitMode(const bool newMode);
+
+	bool isMobile() const { return m_isMobile; }
 
 	qreal hMargin() const { return m_hMargin; }
 	qreal ratio() const { return m_ratio; }

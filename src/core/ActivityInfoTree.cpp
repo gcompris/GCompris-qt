@@ -3,7 +3,7 @@
 #include <QQmlComponent>
 
 #include "ActivityInfoTree.h"
-#include <iostream>
+
 ActivityInfoTree::ActivityInfoTree(QObject *parent) : QObject(parent),
 	m_currentActivity(NULL)
 {}
@@ -101,7 +101,6 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 
 	for (int i = 0; i < activities.size(); ++i) {
 		QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(activities.at(i));
-		std::cout << url.toStdString() << std::endl;
 		QQmlComponent componentRoot(engine,	QUrl(url));
 		QObject *objectRoot = componentRoot.create();
 		menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(objectRoot));
@@ -115,3 +114,4 @@ void ActivityInfoTree::init()
 	qmlRegisterSingletonType<QObject>("GCompris", 1, 0, "ActivityInfoTree", menuTreeProvider);
 	qmlRegisterType<ActivityInfo>("GCompris", 1, 0, "ActivityInfo");
 }
+
