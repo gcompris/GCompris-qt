@@ -9,7 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-    QGuiApplication app(argc, argv);
+	QGuiApplication app(argc, argv);
 	app.setOrganizationName("GCompris");
 	app.setApplicationName("GCompris");
 
