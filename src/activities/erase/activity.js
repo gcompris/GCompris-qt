@@ -106,16 +106,16 @@ function initLevel() {
         currentImage = 0
     }
     createdBlocks = new Array()
-    var number_of_item_x = (currentLevel % 2 * 3) + 5;
-    var number_of_item_y = (currentLevel % 2 * 3) + 5;
-    var w = main.width / number_of_item_x
-    var h = (main.height - bar.height) / number_of_item_y
+    var nbx = (currentLevel % 2 * 3) + 5;
+    var nby = (currentLevel % 2 * 3) + 5;
+    var w = main.width / nbx
+    var h = (main.height - bar.height) / nby
     var i = 0
 
     for(var imgIndex = 0; imgIndex <= Math.floor(currentLevel / 2) ; imgIndex++) {
-        for(var x = 0;  x < number_of_item_x; ++x) {
-            for(var y = 0;  y < number_of_item_y; ++y) {
-             createdBlocks[i++] = createBlock(w * x, h * y, w, h, blockImages[imgIndex])
+        for(var x = 0;  x < nbx; ++x) {
+            for(var y = 0;  y < nby; ++y) {
+             createdBlocks[i++] = createBlock(x, y, nbx, nby, blockImages[imgIndex])
             }
         }
     }
@@ -143,15 +143,17 @@ function previousLevel() {
     initLevel();
 }
 
-function createBlock(x, y, w, h, img) {
+function createBlock(ix, iy, nbx, nby, img) {
     var component = Qt.createComponent("qrc:/gcompris/src/activities/erase/Block.qml");
     var block = component.createObject(
                 background,
                 {
-                    "x": x,
-                    "y": y,
-                    "width": w,
-                    "height": h,
+                    "main": main,
+                    "bar": bar,
+                    "ix": ix,
+                    "iy": iy,
+                    "nbx": nbx,
+                    "nby": nby,
                     "opacity": 0.0,
                     "source": img,
                     "type": type
