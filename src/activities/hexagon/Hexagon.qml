@@ -11,8 +11,8 @@ Item {
     property bool hasStrawberry: false
     property double ix
     property double iy
-    property double nbx
-    property double nby
+    property int nbx
+    property int nby
     property double r: Math.min(main.width / nbx / 2, (main.height - 10) / nby / 2)
     property double offsetX: (main.width % (width * nbx)) / 2
     property double offsetY: (main.height % (height * nby)) / 2
