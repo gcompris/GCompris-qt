@@ -8,55 +8,62 @@ Image {
     id: block
     opacity: 0
 
-    property Item main
+    signal enter
+    signal leave
     property string type
     property int counter: 0
 
+    onEnter: {
+        if(opacity == 1.0) {
+            console.log("onEnter")
+            playSound()
+            block.opacity = 0
+        }
+    }
+
+    onLeave: {
+        if(opacity != 0) {
+            console.log("onLeave")
+            block.opacity = 1.0
+            playSound()
+        }
+    }
+
     Behavior on opacity { PropertyAnimation { duration: 200 } }
 
-    Timer {
-        id: timerEnd
-        interval: 3000; running: false; repeat: false
-        onTriggered: {
+    onOpacityChanged: {
+        if (opacity == 0) {
+            mouseArea.enabled = false
+            mouseArea.hoverEnabled = false
             Activity.blockKilled()
         }
     }
 
     MouseArea {
+        id: mouseArea
         anchors.fill: parent
-        hoverEnabled: block.type === "erase"
+        enabled: block.type !== "erase" || !ApplicationInfo.isMobile
+        hoverEnabled: block.type === "erase" && !ApplicationInfo.isMobile
         onClicked: {
             if(block.type === "click") {
                 enabled = false
-                block.opacity = 0
-                timerEnd.start()
-                playSound()
+                block.enter()
             }
         }
         onDoubleClicked: {
             if(block.type === "double_click") {
                 enabled = false
-                block.opacity = 0
-                timerEnd.start()
-                playSound()
+                block.enter()
             }
         }
         onEntered: {
             if(block.type === "erase") {
-                block.opacity = 0
-                playSound()
+                block.enter()
             }
         }
         onExited: {
             if(block.type === "erase") {
-                if(block.opacity == 0) {
-                    enabled = false
-                    hoverEnabled = false
-                    timerEnd.start()
-                    playSound()
-                } else {
-                    block.opacity = 1.0
-                }
+                block.leave()
             }
         }
     }

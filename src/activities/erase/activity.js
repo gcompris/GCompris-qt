@@ -78,6 +78,9 @@ var type
 var createdBlocks
 var killedBlocks
 
+var nbLevel = 6
+var nbSubLevel = 8
+
 function start(_main, _background, _bar, _bonus, _type) {
     main = _main
     background = _background
@@ -103,8 +106,8 @@ function initLevel() {
         currentImage = 0
     }
     createdBlocks = new Array()
-    var number_of_item_x = (currentLevel % 2 + 1) * 5;
-    var number_of_item_y = (currentLevel % 2 + 1) * 5;
+    var number_of_item_x = (currentLevel % 2 * 3) + 5;
+    var number_of_item_y = (currentLevel % 2 * 3) + 5;
     var w = main.width / number_of_item_x
     var h = (main.height - bar.height) / number_of_item_y
     var i = 0
@@ -119,14 +122,14 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if( ++currentLevel >= 6 ) {
+    if( ++currentLevel >= nbLevel ) {
         currentLevel = 0
     }
     initLevel();
 }
 
 function nextSubLevel() {
-    if( ++currentSubLevel > 10) {
+    if( ++currentSubLevel >= nbSubLevel) {
         currentSubLevel = 0
         nextLevel()
     }
@@ -135,7 +138,7 @@ function nextSubLevel() {
 
 function previousLevel() {
     if(--currentLevel < 0) {
-        currentLevel = 5
+        currentLevel = nbLevel - 1
     }
     initLevel();
 }
@@ -145,7 +148,6 @@ function createBlock(x, y, w, h, img) {
     var block = component.createObject(
                 background,
                 {
-                    "main": main,
                     "x": x,
                     "y": y,
                     "width": w,
