@@ -77,23 +77,22 @@ Rectangle {
                 anchors.margins: 100
 
                 Flickable {
-                    id: flickArea
+                    id: flick
+                    anchors.margins: 8
                     anchors.fill: parent
-                    contentWidth: parent.width;
-                    contentHeight: parent.height;
+                    contentWidth: textContent.contentWidth
+                    contentHeight: textContent.contentHeight
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
 
-                    TextArea {
+                    TextEdit {
                         id: textContent
-                        anchors.fill: parent
-                        anchors.margins: 8
                         text: content
+                        width: flick.width
+                        height: flick.height
                         font.pointSize: 24
-                        wrapMode: Text.WordWrap
+                        wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.RichText
-                        readOnly: true
-                        selectByMouse: false
                     }
                 }
             }
