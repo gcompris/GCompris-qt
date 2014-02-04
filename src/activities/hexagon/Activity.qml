@@ -10,9 +10,10 @@ ActivityBase {
     id: activity
     focus: true
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
+        source: "qrc:/gcompris/src/activities/menu/resource/background.svgz"
+        fillMode: Image.PreserveAspectCrop
         id: background
-        color: "#ececec"
         signal start
         signal stop
         focus: true
