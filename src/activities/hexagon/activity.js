@@ -73,7 +73,7 @@ function createHexagon(ix, iy, nbx, nby) {
                     "iy": iy,
                     "nbx": nbx,
                     "nby": nby,
-                    "color": "rgba(0,153,255,1.0)"
+                    "color": "rgba(0,153,255,0.85)"
                 });
 
     if (hexagon === null) {
@@ -122,5 +122,5 @@ function getColor(dist) {
         b = 0xFF
         r = 0xFF * ((dist - 15) / maxSize)
     }
-    return "rgba(" + Math.floor(r) + "," + Math.floor(g) + "," + Math.floor(b) + ",1.0)"
+    return "rgba(" + Math.floor(r) + "," + Math.floor(g) + "," + Math.floor(b) + ",0.85)"
 }

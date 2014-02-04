@@ -22,10 +22,8 @@ Item {
     height: r * 2
 
     Image {
+        id: strawberry
         anchors.fill: parent
-        enabled: hasStrawberry
-        visible: hasStrawberry
-        source: "qrc:/gcompris/src/activities/hexagon/resource/strawberry.svg"
     }
 
     Audio {
@@ -84,6 +82,7 @@ Item {
             if(hasStrawberry) {
                 canvas.opacity = 0
                 enabled = false
+                strawberry.source = "qrc:/gcompris/src/activities/hexagon/resource/strawberry.svg"
                 audioDrip.play()
                 Activity.strawberryFound()
                 clickedEffect.start()
