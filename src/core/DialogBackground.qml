@@ -85,7 +85,7 @@ Rectangle {
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
 
-                    TextEdit {
+                    Text {
                         id: textContent
                         text: content
                         width: flick.width
