@@ -24,7 +24,8 @@ DialogBackground {
             contentText += "<br/><br/>"
         }
         if(activityInfo.manual) {
-            contentText += "<b>" + "Manual: " + "</b>" + activityInfo.manual
+            var manual = activityInfo.manual.replace(/^    (.*)$/gm,'<ul><li>$1</li></ul>')
+            contentText += "<b>" + "Manual: " + "</b>" + manual
             contentText += "<br/><br/>"
         }
         if(activityInfo.credit) {
