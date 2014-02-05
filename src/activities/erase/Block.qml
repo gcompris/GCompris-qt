@@ -34,7 +34,6 @@ Image {
     onLeave: {
         if(opacity != 0) {
             block.opacity = 1.0
-            playSound()
         }
     }
 
@@ -79,20 +78,12 @@ Image {
 
     function playSound()
     {
-        if(counter++ % 2) {
-            audioEraser1.play()
-        } else {
-            audioEraser2.play()
-        }
+        audioEraser.play()
     }
 
     Audio {
-        id: audioEraser1
-        source: "qrc:/gcompris/src/activities/erase/resource/eraser1.wav"
-    }
-
-    Audio {
-        id: audioEraser2
-        source: "qrc:/gcompris/src/activities/erase/resource/eraser2.wav"
+        id: audioEraser
+        source: ix % 2 ? "qrc:/gcompris/src/activities/erase/resource/eraser1.wav" :
+                         "qrc:/gcompris/src/activities/erase/resource/eraser2.wav"
     }
 }
