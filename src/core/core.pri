@@ -35,6 +35,7 @@ APP_FILES += \
 	$$PWD/resource/gcompris-medium.png \
 	$$PWD/resource/gcompris-small.png \
 	$$PWD/resource/gcompris.png \
+	$$PWD/resource/intro.ogg \
 	$$PWD/resource/bonus/flower_bad.png \
 	$$PWD/resource/bonus/flower_good.png \
 	$$PWD/resource/bonus/gnu_bad.png \
