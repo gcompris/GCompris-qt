@@ -1,16 +1,12 @@
 import QtQuick 2.1
 import GCompris 1.0
 
-Rectangle {
+Item {
     id: bar
-    color: "red"
-    radius: 5.0
-    anchors.horizontalCenter: parent.horizontalCenter
+    x: 0
     anchors.bottom: parent.bottom
     width: barRow.width
     height: barRow.height - 30
-    border.color: "black"
-    border.width: 2
     scale: 1 * ApplicationInfo.ratio
     z: 1000
     property BarEnumContent content
