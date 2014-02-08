@@ -10,4 +10,5 @@ Item {
     property int previous: 32
     property int next: 64
     property int reload: 128
+    property int disabled: 256
 }
