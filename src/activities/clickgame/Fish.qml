@@ -7,10 +7,12 @@ import GCompris 1.0
 AnimatedSprite {
     id: fish
     property Item main
+    property Item bar
     Component.onCompleted: x = main.width
     property int duration: 5000
     frameRate: 2
     interpolate: true
+    scale: 1 * ApplicationInfo.ratio
 
     Audio {
         id: audioDrip
@@ -51,7 +53,7 @@ AnimatedSprite {
         } else if(x >= main.width - fish.width) {
             rotateLeftAnimation.start()
             x = 0
-            y = Activity.currentLevel > 0 ? Math.random() * (main.height - fish.height) : y
+            y = Activity.currentLevel > 0 ? Math.random() * (main.height - bar.height - fish.height) : y
             bubbleEffect.restart()
         } else if(x <= 0) {
             rotateRightAnimation.start()
