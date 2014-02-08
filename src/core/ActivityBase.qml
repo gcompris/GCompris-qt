@@ -24,6 +24,12 @@ Item {
             bar.toggle()
         }
     }
+    Keys.onReleased: {
+        if (event.key === Qt.Key_Back) {
+            event.accepted = true
+            home()
+        }
+    }
 
     Loader {
         id: activity
