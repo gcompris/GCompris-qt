@@ -37,7 +37,7 @@ Rectangle {
         Item { width: 10; height: 1 }
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svgz";
-            contentId: content.exit
+            contentId: ApplicationInfo.isMobile ? content.disabled : content.exit
             onClicked: Qt.quit();
         }
         BarButton {
@@ -75,7 +75,7 @@ Rectangle {
         BarButton {
             id: homeButton
             source: "qrc:/gcompris/src/core/resource/bar_home.svgz";
-            contentId: content.home
+            contentId: ApplicationInfo.isMobile ? content.disabled : content.home
             onClicked: bar.homeClicked()
         }
         Item { width: 10; height: 1 }

@@ -7,7 +7,8 @@ ActivityBase {
     id: menuActivity
     focus: true
 
-    onHome: pageView.pop()
+    onHome: pageView.depth === 1 ? Qt.quit() : pageView.pop()
+
     onDisplayDialog: pageView.push(dialog)
 
     pageComponent: Image {
