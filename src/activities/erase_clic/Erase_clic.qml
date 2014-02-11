@@ -7,6 +7,6 @@ import "qrc:/gcompris/src/core"
 import "qrc:/gcompris/src/activities/erase"
 import "qrc:/gcompris/src/activities/erase/activity.js" as Activity
 
-Activity {
-    type: "double_click"
+Erase {
+    type: "click"
 }

@@ -2,8 +2,7 @@ import QtQuick 2.1
 import GCompris 1.0
 
 ActivityInfo {
-    name: "leftright"
-    dir: "src/activities/leftright"
+    name: "leftright/Leftright.qml"
     section: "/discovery/miscelaneous"
     difficulty: 1
     icon: "leftright/leftright.svg"

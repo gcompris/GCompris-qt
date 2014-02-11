@@ -66,7 +66,7 @@ ActivityBase {
                     onClicked: {
                         ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
                         activityLoader.source = "qrc:/gcompris/src/activities/" +
-                                ActivityInfoTree.menuTree[index].name + "/Activity.qml"
+                                ActivityInfoTree.menuTree[index].name
                         activityLoader.item.home.connect(home)
                         activityLoader.item.displayDialog.connect(displayDialog)
                         pageView.push(activityLoader.item)

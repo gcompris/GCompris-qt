@@ -2,8 +2,7 @@ import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "hexagon"
-  dir: "src/activities/hexagon"
+  name: "hexagon/Hexagon.qml"
   difficulty: 2
   icon: "hexagon/hexagon.svg"
   author: "Christof Petig and Ingo Konrad"
