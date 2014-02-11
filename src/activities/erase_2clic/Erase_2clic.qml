@@ -5,7 +5,7 @@ import QtMultimedia 5.0
 
 import "qrc:/gcompris/src/core"
 import "qrc:/gcompris/src/activities/erase"
-import "qrc:/gcompris/src/activities/erase/activity.js" as Activity
+import "qrc:/gcompris/src/activities/erase/erase.js" as Activity
 
 Erase {
     type: "double_click"

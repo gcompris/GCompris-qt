@@ -2,7 +2,7 @@
 APP_FILES += \
 	$$PWD/ActivityInfo.qml \
 	$$PWD/Clickgame.qml \
-	$$PWD/activity.js \
+	$$PWD/clickgame.js \
 	$$PWD/clickgame.svg \
 	$$PWD/Fish.qml
 

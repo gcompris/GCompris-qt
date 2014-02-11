@@ -2,7 +2,7 @@
 APP_FILES += \
 	$$PWD/ActivityInfo.qml \
 	$$PWD/Erase.qml \
-	$$PWD/activity.js \
+	$$PWD/erase.js \
 	$$PWD/erase.svg \
 	$$PWD/Block.qml
 

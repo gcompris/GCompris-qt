@@ -1,7 +1,7 @@
 import QtQuick 2.1
 import QtQuick.Particles 2.0
 import QtMultimedia 5.0
-import "activity.js" as Activity
+import "clickgame.js" as Activity
 import GCompris 1.0
 
 AnimatedSprite {
