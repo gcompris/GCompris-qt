@@ -1,10 +1,10 @@
 
 APP_FILES += \
 	$$PWD/ActivityInfo.qml \
-	$$PWD/Activity.qml \
+	$$PWD/Hexagon.qml \
 	$$PWD/activity.js \
 	$$PWD/hexagon.svg \
-	$$PWD/Hexagon.qml
+	$$PWD/HexagonItem.qml
 
 APP_FILES += \
 	$$PWD/resource/strawberry.svg

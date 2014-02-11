@@ -2,8 +2,7 @@ import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "clickgame"
-  dir: "src/activities/clickgame"
+  name: "clickgame/Clickgame.qml"
   difficulty: 1
   icon: "clickgame/clickgame.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"

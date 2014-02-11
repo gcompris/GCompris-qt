@@ -2,12 +2,7 @@ import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "menu"
-  dir: "src/activities/menu"
-  difficulty: 0
-  icon: "menus/"
-  author: ""
-  demo: true
+  name: "menu/Menu.qml"
   title: qsTr("GCompris Main Menu")
   description: qsTr("Left-click the mouse on an activity to select it.")
   goal: qsTr("The goal of GCompris is to provide a free alternative to popular proprietary edutainment software")

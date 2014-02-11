@@ -64,7 +64,7 @@ function previousLevel() {
 }
 
 function createHexagon(ix, iy, nbx, nby) {
-    var component = Qt.createComponent("qrc:/gcompris/src/activities/hexagon/Hexagon.qml");
+    var component = Qt.createComponent("qrc:/gcompris/src/activities/hexagon/HexagonItem.qml");
     var hexagon = component.createObject(
                 background,
                 {

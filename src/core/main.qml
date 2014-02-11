@@ -23,7 +23,7 @@ Window {
     StackView {
         id: pageView
         anchors.fill: parent
-        initialItem: "qrc:/gcompris/src/activities/menu/Activity.qml"
+        initialItem: "qrc:/gcompris/src/activities/" + ActivityInfoTree.rootMenu.name
         delegate: StackViewDelegate {
             id: root
             function getTransition(properties)

@@ -2,7 +2,7 @@
 APP_FILES += \
 	$$PWD/ActivityInfo.qml \
 	$$PWD/activity.js \
-	$$PWD/Activity.qml \
+	$$PWD/Leftright.qml \
 	$$PWD/leftright.svg
 
 APP_FILES += \

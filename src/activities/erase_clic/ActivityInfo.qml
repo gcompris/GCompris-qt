@@ -2,8 +2,7 @@ import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "erase_clic"
-  dir: "src/activities/erase_clic"
+  name: "erase_clic/Erase_clic.qml"
   difficulty: 1
   icon: "erase_clic/erase_clic.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
