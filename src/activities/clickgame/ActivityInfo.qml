@@ -1,4 +1,3 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
