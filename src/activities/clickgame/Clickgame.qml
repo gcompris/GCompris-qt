@@ -4,7 +4,7 @@ import QtQuick.Controls.Styles 1.0
 import QtMultimedia 5.0
 
 import "qrc:/gcompris/src/core"
-import "activity.js" as Activity
+import "clickgame.js" as Activity
 
 ActivityBase {
     id: activity
