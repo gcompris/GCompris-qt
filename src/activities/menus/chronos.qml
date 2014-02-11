@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "chronos"
-  dir: "src/activities/chronos"
+  name: "chronos/Chronos.qml"
   difficulty: 1
-  icon: "menus/chronos.svg"
+  icon: "chronos/chronos.svg"
   author: "José Jorge <jjorge@free.fr>"
   demo: true
   title: qsTr("Chronos")

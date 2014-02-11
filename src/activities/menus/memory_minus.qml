@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_minus"
-  dir: "src/activities/memory_minus"
+  name: "memory_minus/Memory_minus.qml"
   difficulty: 1
-  icon: "menus/mem_solo_minus.svg"
+  icon: "memory_minus/mem_solo_minus.svg"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("Subtraction memory game")

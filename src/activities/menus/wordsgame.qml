@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "wordsgame"
-  dir: "src/activities/wordsgame"
+  name: "wordsgame/Wordsgame.qml"
   difficulty: 2
-  icon: "menus/wordsgame.svg"
+  icon: "wordsgame/wordsgame.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Falling Words")

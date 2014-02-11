@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "ballcatch"
-  dir: "src/activities/ballcatch"
+  name: "ballcatch/Ballcatch.qml"
   difficulty: 1
-  icon: "menus/ballcatch.svg"
+  icon: "ballcatch/ballcatch.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Make the ball go to Tux")

@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "enumerate"
-  dir: "src/activities/enumerate"
+  name: "enumerate/Enumerate.qml"
   difficulty: 1
-  icon: "menus/enumerate.svg"
+  icon: "enumerate/enumerate.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Count the items")

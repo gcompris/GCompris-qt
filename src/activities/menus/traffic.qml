@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "traffic"
-  dir: "src/activities/traffic"
+  name: "traffic/Traffic.qml"
   difficulty: 2
-  icon: "menus/traffic.svg"
+  icon: "traffic/traffic.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("A sliding-block puzzle game")

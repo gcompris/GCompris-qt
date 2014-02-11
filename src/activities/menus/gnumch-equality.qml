@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "gnumch-equality"
-  dir: "src/activities/gnumch-equality"
+  name: "gnumch-equality/Gnumch-equality.qml"
   difficulty: 3
-  icon: "menus/gnumch-equal.svg"
+  icon: "gnumch-equality/gnumch-equal.svg"
   author: "Joe Neeman <spuzzzzzzz@gmail.com>"
   demo: true
   title: qsTr("Equality Number Munchers")

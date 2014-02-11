@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "lightsoff"
-  dir: "src/activities/lightsoff"
+  name: "lightsoff/Lightsoff.qml"
   difficulty: 6
-  icon: "menus/lightsoff.svg"
+  icon: "lightsoff/lightsoff.svg"
   author: "Bruno and Clément coudoin"
   demo: false
   title: qsTr("Lights Off")

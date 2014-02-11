@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "sudoku"
-  dir: "src/activities/sudoku"
+  name: "sudoku/Sudoku.qml"
   difficulty: 4
-  icon: "menus/sudoku.svg"
+  icon: "sudoku/sudoku.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Sudoku, place unique symbols in a square.")

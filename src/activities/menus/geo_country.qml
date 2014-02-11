@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "geo_country"
-  dir: "src/activities/geo_country"
+  name: "geo_country/Geo_country.qml"
   difficulty: 2
-  icon: "menus/france_region.svg"
+  icon: "geo_country/france_region.svg"
   author: "Jean-Philippe Ayanides <jp.ayanides@free.fr>"
   demo: true
   title: qsTr("Locate the region")

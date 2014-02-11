@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "wordprocessor"
-  dir: "src/activities/wordprocessor"
+  name: "wordprocessor/Wordprocessor.qml"
   difficulty: 2
-  icon: "menus/wordprocessor.svg"
+  icon: "wordprocessor/wordprocessor.svg"
   author: "Bruno coudoin"
   demo: false
   title: qsTr("Your word processor")

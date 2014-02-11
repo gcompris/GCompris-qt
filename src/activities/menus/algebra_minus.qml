@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "algebra_minus"
-  dir: "src/activities/algebra_minus"
+  name: "algebra_minus/Algebra_minus.qml"
   difficulty: 2
-  icon: "menus/algebra_minus.svg"
+  icon: "algebra_minus/algebra_minus.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Practice the subtraction operation")

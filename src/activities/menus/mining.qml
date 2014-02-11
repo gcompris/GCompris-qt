@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "mining"
-  dir: "src/activities/mining"
+  name: "mining/Mining.qml"
   difficulty: 1
-  icon: "menus/mining.svg"
+  icon: "mining/mining.svg"
   author: "Peter Albrecht <pa-dev@gmx.de>"
   demo: true
   title: qsTr("Mining for gold")

@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_sound_tux"
-  dir: "src/activities/memory_sound_tux"
+  name: "memory_sound_tux/Memory_sound_tux.qml"
   difficulty: 2
-  icon: "menus/memory_sound_tux.svg"
+  icon: "memory_sound_tux/memory_sound_tux.svg"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("Audio memory game against Tux")

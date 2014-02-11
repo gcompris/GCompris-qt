@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "braille_fun"
-  dir: "src/activities/braille_fun"
+  name: "braille_fun/Braille_fun.qml"
   difficulty: 6
-  icon: "menus/braille_fun.svg"
+  icon: "braille_fun/braille_fun.svg"
   author: "Srishti Sethi <srishakatux@gmail.com>"
   demo: true
   title: qsTr("Braille Fun")

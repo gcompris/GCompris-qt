@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "colors"
-  dir: "src/activities/colors"
+  name: "colors/Colors.qml"
   difficulty: 1
-  icon: "menus/colors.svg"
+  icon: "colors/colors.svg"
   author: "Pascal Georges <pascal.georges1@free.fr>"
   demo: true
   title: qsTr("Colors")

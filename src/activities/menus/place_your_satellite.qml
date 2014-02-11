@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "place_your_satellite"
-  dir: "src/activities/place_your_satellite"
+  name: "place_your_satellite/Place_your_satellite.qml"
   difficulty: 4
-  icon: "menus/place_your_satellite.svg"
+  icon: "place_your_satellite/place_your_satellite.svg"
   author: "Matilda Bernard <seah4291@gmail.com>"
   demo: true
   title: qsTr("Place your satellite")

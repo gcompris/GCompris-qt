@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "submarine"
-  dir: "src/activities/submarine"
+  name: "submarine/Submarine.qml"
   difficulty: 5
-  icon: "menus/submarine.svg"
+  icon: "submarine/submarine.svg"
   author: "Pascal Georges <pascal.georges1@free.fr>"
   demo: true
   title: qsTr("Pilot a submarine")

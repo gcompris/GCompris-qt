@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "algebra_plus"
-  dir: "src/activities/algebra_plus"
+  name: "algebra_plus/Algebra_plus.qml"
   difficulty: 1
-  icon: "menus/algebra_plus.svg"
+  icon: "algebra_plus/algebra_plus.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Practice the addition operation")

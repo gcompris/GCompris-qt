@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_add_minus_tux"
-  dir: "src/activities/memory_add_minus_tux"
+  name: "memory_add_minus_tux/Memory_add_minus_tux.qml"
   difficulty: 1
-  icon: "menus/mem_tux_plus_minus.svg"
+  icon: "memory_add_minus_tux/mem_tux_plus_minus.svg"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("Addition and subtraction memory game against Tux")

@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "mazeInvisible"
-  dir: "src/activities/mazeInvisible"
+  name: "mazeInvisible/MazeInvisible.qml"
   difficulty: 4
-  icon: "menus/mazeInvisible.svg"
+  icon: "mazeInvisible/mazeInvisible.svg"
   author: "Bastiaan Verhoef <b.f.verhoef@student.utwente.nl>"
   demo: true
   title: qsTr("Maze")

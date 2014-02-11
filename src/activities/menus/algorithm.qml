@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "algorithm"
-  dir: "src/activities/algorithm"
+  name: "algorithm/Algorithm.qml"
   difficulty: 2
-  icon: "menus/algorithm.svg"
+  icon: "algorithm/algorithm.svg"
   author: "Christof Petig and Ingo Konrad"
   demo: true
   title: qsTr("algorithm")

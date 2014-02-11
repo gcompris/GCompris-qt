@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "planegame"
-  dir: "src/activities/planegame"
+  name: "planegame/Planegame.qml"
   difficulty: 2
-  icon: "menus/helicogame.svg"
+  icon: "planegame/helicogame.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Numbers in Order")

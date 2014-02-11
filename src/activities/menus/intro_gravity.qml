@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "intro_gravity"
-  dir: "src/activities/intro_gravity"
+  name: "intro_gravity/Intro_gravity.qml"
   difficulty: 4
-  icon: "menus/intro_gravity.svg"
+  icon: "intro_gravity/intro_gravity.svg"
   author: "Matilda Bernard <seah4291@gmail.com>"
   demo: true
   title: qsTr("Intro gravity")

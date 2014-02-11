@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "note_names"
-  dir: "src/activities/note_names"
+  name: "note_names/Note_names.qml"
   difficulty: 4
-  icon: "menus/note_names.svg"
+  icon: "note_names/note_names.svg"
   author: "Beth Hadley <bethmhadley@gmail.com>"
   demo: true
   title: qsTr("Name that Note!")

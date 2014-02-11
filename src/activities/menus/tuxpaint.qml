@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "tuxpaint"
-  dir: "src/activities/tuxpaint"
+  name: "tuxpaint/Tuxpaint.qml"
   difficulty: 1
-  icon: "menus/tuxpaint.svg"
+  icon: "tuxpaint/tuxpaint.svg"
   author: "Bill Kendrick <Tuxpaint>"
   demo: true
   title: qsTr("Tuxpaint")

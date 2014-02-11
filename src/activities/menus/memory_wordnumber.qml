@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_wordnumber"
-  dir: "src/activities/memory_wordnumber"
+  name: "memory_wordnumber/Memory_wordnumber.qml"
   difficulty: 1
-  icon: "menus/memo_wordnumber.svg"
+  icon: "memory_wordnumber/memo_wordnumber.svg"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("Wordnumber memory game")

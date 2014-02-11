@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "anim"
-  dir: "src/activities/anim"
+  name: "anim/Anim.qml"
   difficulty: 3
-  icon: "menus/anim.svg"
+  icon: "anim/anim.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Create a drawing or an animation")

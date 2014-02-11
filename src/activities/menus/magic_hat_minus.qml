@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "magic_hat_minus"
-  dir: "src/activities/magic_hat_minus"
+  name: "magic_hat_minus/Magic_hat_minus.qml"
   difficulty: 2
-  icon: "menus/magic_hat_minus.svg"
+  icon: "magic_hat_minus/magic_hat_minus.svg"
   author: "Marc BRUN"
   demo: true
   title: qsTr("The magician hat")

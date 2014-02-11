@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "followline"
-  dir: "src/activities/followline"
+  name: "followline/Followline.qml"
   difficulty: 1
-  icon: "menus/followline.svg"
+  icon: "followline/followline.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Control the hose-pipe")

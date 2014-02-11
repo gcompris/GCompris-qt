@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "clickgame"
-  dir: "src/activities/clickgame"
+  name: "clickgame/Clickgame.qml"
   difficulty: 1
-  icon: "menus/clickgame.svg"
+  icon: "clickgame/clickgame.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Click On Me")

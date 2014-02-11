@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "maze3D"
-  dir: "src/activities/maze3D"
+  name: "maze3D/Maze3D.qml"
   difficulty: 2
-  icon: "menus/maze3D.svg"
+  icon: "maze3D/maze3D.svg"
   author: "Christof Petig <christof@petig-baender.de>"
   demo: true
   title: qsTr("3D Maze")

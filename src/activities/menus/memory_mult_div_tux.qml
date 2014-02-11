@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_mult_div_tux"
-  dir: "src/activities/memory_mult_div_tux"
+  name: "memory_mult_div_tux/Memory_mult_div_tux.qml"
   difficulty: 1
-  icon: "menus/mem_tux_mult_div.svg"
+  icon: "memory_mult_div_tux/mem_tux_mult_div.svg"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("Multiplication and division memory game against Tux")

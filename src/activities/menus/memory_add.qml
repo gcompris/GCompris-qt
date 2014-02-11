@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_add"
-  dir: "src/activities/memory_add"
+  name: "memory_add/Memory_add.qml"
   difficulty: 1
-  icon: "menus/mem_solo_plus.svg"
+  icon: "memory_add/mem_solo_plus.svg"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("Addition memory game")

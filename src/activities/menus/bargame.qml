@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "bargame"
-  dir: "src/activities/bargame"
+  name: "bargame/Bargame.qml"
   difficulty: 2
-  icon: "menus/bargame.svg"
+  icon: "bargame/bargame.svg"
   author: "Yves Combe"
   demo: true
   title: qsTr("bar game")

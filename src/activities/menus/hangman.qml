@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "hangman"
-  dir: "src/activities/hangman"
+  name: "hangman/Hangman.qml"
   difficulty: 5
-  icon: "menus/hangman.svg"
+  icon: "hangman/hangman.svg"
   author: "Bruno Coudoin"
   demo: false
   title: qsTr("The classic hangman game")

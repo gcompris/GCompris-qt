@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "details"
-  dir: "src/activities/details"
+  name: "details/Details.qml"
   difficulty: 2
-  icon: "menus/details.svg"
+  icon: "details/details.svg"
   author: "Marc Levivier <malev@free.fr>"
   demo: true
   title: qsTr("Find the details")

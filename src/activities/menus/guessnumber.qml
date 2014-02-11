@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "guessnumber"
-  dir: "src/activities/guessnumber"
+  name: "guessnumber/Guessnumber.qml"
   difficulty: 3
-  icon: "menus/guessnumber.svg"
+  icon: "guessnumber/guessnumber.svg"
   author: "Clement Coudoin <clement.coudoin@free.fr>"
   demo: true
   title: qsTr("Guess a number")

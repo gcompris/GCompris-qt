@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "drawnumber"
-  dir: "src/activities/drawnumber"
+  name: "drawnumber/Drawnumber.qml"
   difficulty: 4
-  icon: "menus/drawnumber.svg"
+  icon: "drawnumber/drawnumber.svg"
   author: "Olivier Ponchaut <opvg@edpnet.be>"
   demo: true
   title: qsTr("Draw Number")

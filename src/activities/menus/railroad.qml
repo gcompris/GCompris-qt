@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "railroad"
-  dir: "src/activities/railroad"
+  name: "railroad/Railroad.qml"
   difficulty: 1
-  icon: "menus/railroad.svg"
+  icon: "railroad/railroad.svg"
   author: "Pascal Georges <pascal.georges1@free.fr>"
   demo: true
   title: qsTr("Railway")

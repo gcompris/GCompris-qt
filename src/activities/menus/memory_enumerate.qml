@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_enumerate"
-  dir: "src/activities/memory_enumerate"
+  name: "memory_enumerate/Memory_enumerate.qml"
   difficulty: 1
-  icon: "menus/memo_enumerate.svg"
+  icon: "memory_enumerate/memo_enumerate.svg"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("Enumeration memory game")

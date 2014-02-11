@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "draw"
-  dir: "src/activities/draw"
+  name: "draw/Draw.qml"
   difficulty: 2
-  icon: "menus/draw.svg"
+  icon: "draw/draw.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("A simple vector-drawing tool")

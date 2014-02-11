@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_div"
-  dir: "src/activities/memory_div"
+  name: "memory_div/Memory_div.qml"
   difficulty: 1
-  icon: "menus/mem_solo_div.svg"
+  icon: "memory_div/mem_solo_div.svg"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("Division memory game")

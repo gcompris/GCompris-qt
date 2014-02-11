@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "explore_world_music"
-  dir: "src/activities/explore_world_music"
+  name: "explore_world_music/Explore_world_music.qml"
   difficulty: 4
-  icon: "menus/explore_world_music.svg"
+  icon: "explore_world_music/explore_world_music.svg"
   author: "Beth Hadley <bethmhadley@gmail.com>"
   demo: true
   title: qsTr("Explore World Music")

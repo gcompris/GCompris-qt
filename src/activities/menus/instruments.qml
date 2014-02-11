@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "instruments"
-  dir: "src/activities/instruments"
+  name: "instruments/Instruments.qml"
   difficulty: 4
-  icon: "menus/instruments.svg"
+  icon: "instruments/instruments.svg"
   author: "Sylvain Dechy <syl.1@free.fr>"
   demo: true
   title: qsTr("Music instruments")
