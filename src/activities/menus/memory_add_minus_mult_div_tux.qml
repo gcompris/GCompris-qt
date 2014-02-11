@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_add_minus_mult_div_tux"
-  dir: "src/activities/memory_add_minus_mult_div_tux"
+  name: "memory_add_minus_mult_div_tux/Memory_add_minus_mult_div_tux.qml"
   difficulty: 1
-  icon: "menus/mem_tux_all.svg"
+  icon: "memory_add_minus_mult_div_tux/mem_tux_all.svg"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("All operations memory game against Tux")

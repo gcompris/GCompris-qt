@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "connect4"
-  dir: "src/activities/connect4"
+  name: "connect4/Connect4.qml"
   difficulty: 2
-  icon: "menus/connect4.svg"
+  icon: "connect4/connect4.svg"
   author: "Laurent Lacheny <laurent.lacheny@wanadoo.fr>"
   demo: true
   title: qsTr("Connect 4")

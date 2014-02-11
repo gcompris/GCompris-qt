@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "searace1player"
-  dir: "src/activities/searace1player"
+  name: "searace1player/Searace1player.qml"
   difficulty: 6
-  icon: "menus/searace1player.svg"
+  icon: "searace1player/searace1player.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Sea race (Single Player)")

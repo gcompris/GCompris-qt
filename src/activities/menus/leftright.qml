@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "leftright"
-  dir: "src/activities/leftright"
+  name: "leftright/Leftright.qml"
   difficulty: 1
-  icon: "menus/leftright.svg"
+  icon: "leftright/leftright.svg"
   author: "Pascal Georges <pascal.georges1@free.fr>"
   demo: true
   title: qsTr("Find your left and right hands")

@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "clockgame"
-  dir: "src/activities/clockgame"
+  name: "clockgame/Clockgame.qml"
   difficulty: 2
-  icon: "menus/clockgame.svg"
+  icon: "clockgame/clockgame.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Learning Clock")

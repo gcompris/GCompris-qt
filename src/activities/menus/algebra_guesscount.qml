@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "algebra_guesscount"
-  dir: "src/activities/algebra_guesscount"
+  name: "algebra_guesscount/Algebra_guesscount.qml"
   difficulty: 3
-  icon: "menus/algebra_guesscount.svg"
+  icon: "algebra_guesscount/algebra_guesscount.svg"
   author: "Pascal Georges <pascal.georges1@free.fr>"
   demo: true
   title: qsTr("Find the series of correct operations that matches the given answer")

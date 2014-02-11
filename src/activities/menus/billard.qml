@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "billard"
-  dir: "src/activities/billard"
+  name: "billard/Billard.qml"
   difficulty: 1
-  icon: "menus/foot.svg"
+  icon: "billard/foot.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("The football game")

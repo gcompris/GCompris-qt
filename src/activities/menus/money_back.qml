@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "money_back"
-  dir: "src/activities/money_back"
+  name: "money_back/Money_back.qml"
   difficulty: 3
-  icon: "menus/money_back.svg"
+  icon: "money_back/money_back.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Give tux his change")

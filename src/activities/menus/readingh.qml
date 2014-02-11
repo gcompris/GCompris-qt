@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "readingh"
-  dir: "src/activities/readingh"
+  name: "readingh/Readingh.qml"
   difficulty: 2
-  icon: "menus/readingh.svg"
+  icon: "readingh/readingh.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Horizontal reading practice")

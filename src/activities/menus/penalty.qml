@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "penalty"
-  dir: "src/activities/penalty"
+  name: "penalty/Penalty.qml"
   difficulty: 2
-  icon: "menus/penalty.svg"
+  icon: "penalty/penalty.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Penalty kick")

@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "chess_partyend"
-  dir: "src/activities/chess_partyend"
+  name: "chess_partyend/Chess_partyend.qml"
   difficulty: 2
-  icon: "menus/chess_partyend.svg"
+  icon: "chess_partyend/chess_partyend.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Learning chess")

@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "target"
-  dir: "src/activities/target"
+  name: "target/Target.qml"
   difficulty: 2
-  icon: "menus/target.svg"
+  icon: "target/target.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Practice addition with a target game")

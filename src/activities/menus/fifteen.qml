@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "fifteen"
-  dir: "src/activities/fifteen"
+  name: "fifteen/Fifteen.qml"
   difficulty: 5
-  icon: "menus/fifteen.svg"
+  icon: "fifteen/fifteen.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("The fifteen game")

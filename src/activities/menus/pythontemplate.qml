@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "pythontemplate"
-  dir: "src/activities/pythontemplate"
+  name: "pythontemplate/Pythontemplate.qml"
   difficulty: 1
-  icon: "menus/python.svg"
+  icon: "pythontemplate/python.svg"
   author: "Bruno Coudoin"
   demo: false
   title: qsTr("Python Template")

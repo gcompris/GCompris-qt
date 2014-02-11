@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "chat"
-  dir: "src/activities/chat"
+  name: "chat/Chat.qml"
   difficulty: 3
-  icon: "menus/chat.svg"
+  icon: "chat/chat.svg"
   author: "Bruno coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Chat and draw with your friends")

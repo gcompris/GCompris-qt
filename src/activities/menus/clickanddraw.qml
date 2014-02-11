@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "clickanddraw"
-  dir: "src/activities/clickanddraw"
+  name: "clickanddraw/Clickanddraw.qml"
   difficulty: 2
-  icon: "menus/clickanddraw.svg"
+  icon: "clickanddraw/clickanddraw.svg"
   author: "Olivier Ponchaut <opvg@edpnet.be>"
   demo: true
   title: qsTr("Click and draw")

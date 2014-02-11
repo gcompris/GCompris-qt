@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "land_safe"
-  dir: "src/activities/land_safe"
+  name: "land_safe/Land_safe.qml"
   difficulty: 4
-  icon: "menus/land_safe.svg"
+  icon: "land_safe/land_safe.svg"
   author: "Matilda Bernard <serah4291@gmail.com>"
   demo: true
   title: qsTr("Land Safe")

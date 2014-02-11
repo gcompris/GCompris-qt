@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "redraw"
-  dir: "src/activities/redraw"
+  name: "redraw/Redraw.qml"
   difficulty: 3
-  icon: "menus/redraw.svg"
+  icon: "redraw/redraw.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Redraw the given item")

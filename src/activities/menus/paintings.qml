@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "paintings"
-  dir: "src/activities/paintings"
+  name: "paintings/Paintings.qml"
   difficulty: 1
-  icon: "menus/shapegame.svg"
+  icon: "paintings/shapegame.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Assemble the puzzle")

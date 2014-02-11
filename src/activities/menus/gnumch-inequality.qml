@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "gnumch-inequality"
-  dir: "src/activities/gnumch-inequality"
+  name: "gnumch-inequality/Gnumch-inequality.qml"
   difficulty: 3
-  icon: "menus/gnumch-inequal.svg"
+  icon: "gnumch-inequality/gnumch-inequal.svg"
   author: "Joe Neeman <spuzzzzzzz@gmail.com>"
   demo: true
   title: qsTr("Inequality Number Munchers")

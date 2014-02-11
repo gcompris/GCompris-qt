@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "smallnumbers2"
-  dir: "src/activities/smallnumbers2"
+  name: "smallnumbers2/Smallnumbers2.qml"
   difficulty: 1
-  icon: "menus/smallnumbers2.svg"
+  icon: "smallnumbers2/smallnumbers2.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Numbers with pairs of dice")

@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "gnumch-multiples"
-  dir: "src/activities/gnumch-multiples"
+  name: "gnumch-multiples/Gnumch-multiples.qml"
   difficulty: 3
-  icon: "menus/gnumch-multiples.svg"
+  icon: "gnumch-multiples/gnumch-multiples.svg"
   author: "Joe Neeman <spuzzzzzzz@gmail.com>"
   demo: true
   title: qsTr("Multiple Number Munchers")

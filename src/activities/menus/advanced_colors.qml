@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "advanced_colors"
-  dir: "src/activities/advanced_colors"
+  name: "advanced_colors/Advanced_colors.qml"
   difficulty: 6
-  icon: "menus/advanced_colors.svg"
+  icon: "advanced_colors/advanced_colors.svg"
   author: "Pascal Georges <pascal.georges1@free.fr>"
   demo: true
   title: qsTr("Advanced colors")

@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "gnumch-primes"
-  dir: "src/activities/gnumch-primes"
+  name: "gnumch-primes/Gnumch-primes.qml"
   difficulty: 6
-  icon: "menus/gnumch-primes.svg"
+  icon: "gnumch-primes/gnumch-primes.svg"
   author: "Joe Neeman <spuzzzzzzz@gmail.com>"
   demo: true
   title: qsTr("Prime Number Munchers")

@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "missing_letter"
-  dir: "src/activities/missing_letter"
+  name: "missing_letter/Missing_letter.qml"
   difficulty: 2
-  icon: "menus/missing_letter.svg"
+  icon: "missing_letter/missing_letter.svg"
   author: "Pascal Georges <pascal.georges1@free.fr>"
   demo: true
   title: qsTr("Missing Letter")

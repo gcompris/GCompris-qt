@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "play_piano"
-  dir: "src/activities/play_piano"
+  name: "play_piano/Play_piano.qml"
   difficulty: 2
-  icon: "menus/play_piano.svg"
+  icon: "play_piano/play_piano.svg"
   author: "Beth Hadley <bethmhadley@gmail.com>"
   demo: true
   title: qsTr("Play Piano!")

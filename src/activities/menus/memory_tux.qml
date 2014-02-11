@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_tux"
-  dir: "src/activities/memory_tux"
+  name: "memory_tux/Memory_tux.qml"
   difficulty: 2
-  icon: "menus/memory_tux.svg"
+  icon: "memory_tux/memory_tux.svg"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("Memory Game with images, against Tux")

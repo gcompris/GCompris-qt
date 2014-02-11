@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "lang-other"
-  dir: "src/activities/lang-other"
+  name: "lang-other/Lang-other.qml"
   difficulty: 4
-  icon: "menus/lang-other.svg"
+  icon: "lang-other/lang-other.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Enrich your vocabulary")

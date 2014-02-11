@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "scalesboard"
-  dir: "src/activities/scalesboard"
+  name: "scalesboard/Scalesboard.qml"
   difficulty: 2
-  icon: "menus/scalesicon.svg"
+  icon: "scalesboard/scalesicon.svg"
   author: "miguel DE IZARRA <miguel2i@free.fr>"
   demo: true
   title: qsTr("Balance the scales properly")

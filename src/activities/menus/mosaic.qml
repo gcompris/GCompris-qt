@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "mosaic"
-  dir: "src/activities/mosaic"
+  name: "mosaic/Mosaic.qml"
   difficulty: 1
-  icon: "menus/mosaic.svg"
+  icon: "mosaic/mosaic.svg"
   author: "Clement Coudoin <clement.coudoin@free.fr>"
   demo: true
   title: qsTr("Rebuild the mosaic")

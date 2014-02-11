@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "explore_world_animals"
-  dir: "src/activities/explore_world_animals"
+  name: "explore_world_animals/Explore_world_animals.qml"
   difficulty: 4
-  icon: "menus/explore_world_animals.svg"
+  icon: "explore_world_animals/explore_world_animals.svg"
   author: "Beth Hadley <bethmhadley@gmail.com>"
   demo: true
   title: qsTr("Explore World Animals")

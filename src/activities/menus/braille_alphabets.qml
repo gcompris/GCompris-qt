@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "braille_alphabets"
-  dir: "src/activities/braille_alphabets"
+  name: "braille_alphabets/Braille_alphabets.qml"
   difficulty: 5
-  icon: "menus/braille_alphabets.svg"
+  icon: "braille_alphabets/braille_alphabets.svg"
   author: "Srishti Sethi <srishakatux@gmail.com>"
   demo: true
   title: qsTr("Discover the Braille system")

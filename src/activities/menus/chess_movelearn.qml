@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "chess_movelearn"
-  dir: "src/activities/chess_movelearn"
+  name: "chess_movelearn/Chess_movelearn.qml"
   difficulty: 2
-  icon: "menus/chess_movelearn.svg"
+  icon: "chess_movelearn/chess_movelearn.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Learning chess")

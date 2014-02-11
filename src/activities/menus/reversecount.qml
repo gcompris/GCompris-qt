@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "reversecount"
-  dir: "src/activities/reversecount"
+  name: "reversecount/Reversecount.qml"
   difficulty: 2
-  icon: "menus/reversecount.svg"
+  icon: "reversecount/reversecount.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Practice subtraction with a fun game")

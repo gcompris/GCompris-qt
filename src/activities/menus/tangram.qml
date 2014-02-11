@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "tangram"
-  dir: "src/activities/tangram"
+  name: "tangram/Tangram.qml"
   difficulty: 1
-  icon: "menus/tangram.svg"
+  icon: "tangram/tangram.svg"
   author: "Yves Combe /  Philippe Banwarth"
   demo: true
   title: qsTr("The tangram puzzle game")

@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "redraw_symmetrical"
-  dir: "src/activities/redraw_symmetrical"
+  name: "redraw_symmetrical/Redraw_symmetrical.qml"
   difficulty: 4
-  icon: "menus/redraw_symmetry.svg"
+  icon: "redraw_symmetrical/redraw_symmetry.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Mirror the given item")

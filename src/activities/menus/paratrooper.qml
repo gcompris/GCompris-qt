@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "paratrooper"
-  dir: "src/activities/paratrooper"
+  name: "paratrooper/Paratrooper.qml"
   difficulty: 1
-  icon: "menus/tuxpara.svg"
+  icon: "paratrooper/tuxpara.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Parachutist")

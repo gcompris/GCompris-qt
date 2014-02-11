@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_add_minus_mult_div"
-  dir: "src/activities/memory_add_minus_mult_div"
+  name: "memory_add_minus_mult_div/Memory_add_minus_mult_div.qml"
   difficulty: 1
-  icon: "menus/mem_solo_all.svg"
+  icon: "memory_add_minus_mult_div/mem_solo_all.svg"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("All operations memory game")

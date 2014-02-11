@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "maze2DRelative"
-  dir: "src/activities/maze2DRelative"
+  name: "maze2DRelative/Maze2DRelative.qml"
   difficulty: 3
-  icon: "menus/maze.svg"
+  icon: "maze2DRelative/maze.svg"
   author: "Bastiaan Verhoef <b.f.verhoef@student.utwente.nl>"
   demo: true
   title: qsTr("Maze")

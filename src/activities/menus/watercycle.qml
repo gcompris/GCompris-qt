@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "watercycle"
-  dir: "src/activities/watercycle"
+  name: "watercycle/Watercycle.qml"
   difficulty: 3
-  icon: "menus/watercycle.svg"
+  icon: "watercycle/watercycle.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Learn about the water cycle")

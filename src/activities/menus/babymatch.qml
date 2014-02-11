@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "babymatch"
-  dir: "src/activities/babymatch"
+  name: "babymatch/Babymatch.qml"
   difficulty: 1
-  icon: "menus/babymatch.svg"
+  icon: "babymatch/babymatch.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Matching Items")

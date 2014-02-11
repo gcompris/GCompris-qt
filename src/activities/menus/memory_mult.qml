@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_mult"
-  dir: "src/activities/memory_mult"
+  name: "memory_mult/Memory_mult.qml"
   difficulty: 1
-  icon: "menus/mem_solo_mult.svg"
+  icon: "memory_mult/mem_solo_mult.svg"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("Multiplication memory game")

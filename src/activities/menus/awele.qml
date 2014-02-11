@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "awele"
-  dir: "src/activities/awele"
+  name: "awele/Awele.qml"
   difficulty: 2
-  icon: "menus/awele.svg"
+  icon: "awele/awele.svg"
   author: "Frédéric Mazzarol"
   demo: true
   title: qsTr("Oware")

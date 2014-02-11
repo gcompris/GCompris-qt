@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "photohunter"
-  dir: "src/activities/photohunter"
+  name: "photohunter/Photohunter.qml"
   difficulty: 2
-  icon: "menus/photohunter.svg"
+  icon: "photohunter/photohunter.svg"
   author: "Marc Le Douarain <http://membres.lycos.fr/mavati>"
   demo: true
   title: qsTr("Photo hunter")

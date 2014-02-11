@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "crane"
-  dir: "src/activities/crane"
+  name: "crane/Crane.qml"
   difficulty: 2
-  icon: "menus/crane.svg"
+  icon: "crane/crane.svg"
   author: "Marc BRUN"
   demo: true
   title: qsTr("Build the same model")

@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "color_mix_light"
-  dir: "src/activities/color_mix_light"
+  name: "color_mix_light/Color_mix_light.qml"
   difficulty: 1
-  icon: "menus/color_mix_light.svg"
+  icon: "color_mix_light/color_mix_light.svg"
   author: "Matilda Bernard <serah4291@gmail.com>"
   demo: true
   title: qsTr("Mixing colors of light")

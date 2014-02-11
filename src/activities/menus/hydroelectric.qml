@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "hydroelectric"
-  dir: "src/activities/hydroelectric"
+  name: "hydroelectric/Hydroelectric.qml"
   difficulty: 4
-  icon: "menus/hydroelectric.svg"
+  icon: "hydroelectric/hydroelectric.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Learn about an electrical system based on renewable energy")

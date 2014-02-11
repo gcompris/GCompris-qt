@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "louis_braille"
-  dir: "src/activities/louis_braille"
+  name: "louis_braille/Louis_braille.qml"
   difficulty: 4
-  icon: "menus/louis_braille.png"
+  icon: "louis_braille/louis_braille.png"
   author: "Srishti Sethi <srishakatux@gmail.com>"
   demo: true
   title: qsTr("The History of Louis Braille")

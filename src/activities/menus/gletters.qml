@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "gletters"
-  dir: "src/activities/gletters"
+  name: "gletters/Gletters.qml"
   difficulty: 1
-  icon: "menus/gletters.svg"
+  icon: "gletters/gletters.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: true
   title: qsTr("Simple Letters")

@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "smallnumbers"
-  dir: "src/activities/smallnumbers"
+  name: "smallnumbers/Smallnumbers.qml"
   difficulty: 1
-  icon: "menus/smallnumbers.svg"
+  icon: "smallnumbers/smallnumbers.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Numbers With Dice")

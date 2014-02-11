@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "imagename"
-  dir: "src/activities/imagename"
+  name: "imagename/Imagename.qml"
   difficulty: 3
-  icon: "menus/imagename.svg"
+  icon: "imagename/imagename.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Image Name")

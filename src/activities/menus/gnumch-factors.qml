@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "gnumch-factors"
-  dir: "src/activities/gnumch-factors"
+  name: "gnumch-factors/Gnumch-factors.qml"
   difficulty: 5
-  icon: "menus/gnumch-factors.svg"
+  icon: "gnumch-factors/gnumch-factors.svg"
   author: "Joe Neeman <spuzzzzzzz@gmail.com>"
   demo: true
   title: qsTr("Factor Number Munchers")

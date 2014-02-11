@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "electric"
-  dir: "src/activities/electric"
+  name: "electric/Electric.qml"
   difficulty: 5
-  icon: "menus/electric.svg"
+  icon: "electric/electric.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Electricity")

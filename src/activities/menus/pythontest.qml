@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "pythontest"
-  dir: "src/activities/pythontest"
+  name: "pythontest/Pythontest.qml"
   difficulty: 1
-  icon: "menus/python.svg"
+  icon: "pythontest/python.svg"
   author: "Olivier Samyn <osamyn@ulb.ac.be>"
   demo: true
   title: qsTr("Python Test")

@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "hanoi"
-  dir: "src/activities/hanoi"
+  name: "hanoi/Hanoi.qml"
   difficulty: 2
-  icon: "menus/hanoi.svg"
+  icon: "hanoi/hanoi.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Simplified Tower of Hanoi")

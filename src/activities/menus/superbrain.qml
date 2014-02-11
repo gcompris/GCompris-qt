@@ -1,11 +1,9 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "superbrain"
-  dir: "src/activities/superbrain"
+  name: "superbrain/Superbrain.qml"
   difficulty: 2
-  icon: "menus/superbrain.svg"
+  icon: "superbrain/superbrain.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Super Brain")
