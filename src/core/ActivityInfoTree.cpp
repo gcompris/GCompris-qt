@@ -95,8 +95,8 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 
 
 	QStringList activities;
-	activities << "leftright" << "clickgame" <<
-				  "erase" << "erase_clic" << "erase_2clic" <<
+    activities << "ballcatch" << "leftright" << "clickgame" <<
+                  "erase" << "erase_clic" << "erase_2clic" <<
 				  "hexagon";
 
 	for (int i = 0; i < activities.size(); ++i) {
