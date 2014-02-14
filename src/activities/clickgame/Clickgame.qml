@@ -57,7 +57,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: done.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 
