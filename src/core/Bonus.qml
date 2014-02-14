@@ -8,20 +8,15 @@ Image {
     fillMode: Image.Pad
     z: 1000
 
-    signal win
-    signal loose
-
-    property bool isWin:false
+    signal done
 
     function good(name) {
         source = "qrc:/gcompris/src/core/resource/bonus/" + name + "_good.png"
-        isWin = true;
         animation.start()
     }
 
     function bad(name) {
         source = "qrc:/gcompris/src/core/resource/bonus/" + name + "_bad.png"
-        isWin = false;
         animation.start()
     }
 
@@ -41,6 +36,6 @@ Image {
             duration: 500
             easing.type: Easing.InOutQuad
         }
-        onStopped: isWin ? win() : loose()
+        onStopped: done()
     }
 }
