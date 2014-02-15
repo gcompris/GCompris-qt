@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import GCompris 1.0
 
 Image {
     id: bonus
@@ -7,6 +8,7 @@ Image {
     anchors.fill: parent
     fillMode: Image.Pad
     z: 1000
+    scale: ApplicationInfo.ratio
 
     signal win
     signal loose

@@ -56,7 +56,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 #endif
 
 	QRect rect = qApp->primaryScreen()->geometry();
-	m_ratio = m_isMobile ? qMin(qMax(rect.width(), rect.height())/1136. , qMin(rect.width(), rect.height())/640.) : 1;
+	m_ratio = m_isMobile ? qMin(qMax(rect.width(), rect.height())/800. , qMin(rect.width(), rect.height())/520.) : 1;
 	m_sliderHandleWidth = getSizeWithRatio(70);
 	m_sliderHandleHeight = getSizeWithRatio(87);
 	m_sliderGapWidth = getSizeWithRatio(100);

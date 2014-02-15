@@ -1,6 +1,7 @@
 import QtQuick 2.1
 import QtQuick.Controls 1.0
 import QtQuick.Controls.Styles 1.0
+import GCompris 1.0
 import "qrc:/gcompris/src/core"
 import "leftright.js" as Activity
 
@@ -49,6 +50,7 @@ ActivityBase {
                 fillMode: Image.PreserveAspectFit
                 width: main.width > 200 ? 200 : parent.width - 10
                 opacity: 0
+                scale: 1 * ApplicationInfo.ratio
             }
 
             Image {
@@ -60,6 +62,7 @@ ActivityBase {
                 width: parent.width
                 height: parent.height
                 opacity: 0
+                scale: 1 * ApplicationInfo.ratio
             }
 
             ParallelAnimation {
