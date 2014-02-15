@@ -1,6 +1,8 @@
 /* gcompris - ActivityInfo.qml
 
- Copyright (C) 2003, 2014 Bruno Coudoin and Johnny Jazeix
+ Copyright (C)
+ 2003, 2014: Bruno Coudoin: initial version
+ 2014: Johnny Jazeix: Qt port
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -24,9 +26,11 @@ ActivityInfo {
     author: "Johnny Jazeix <jazeix@gmail.com>"
     demo: false
     title: qsTr("Make the ball go to Tux")
-    description: qsTr("Press the two shift keys at the same time, to make the ball go in a straight line.")
+    description: qsTr("Press the two shift keys at the same time, to make the
+                       ball go in a straight line.")
     goal: ""
     prerequisite: ""
-    manual: qsTr("Press the two shift keys at the same time, to make the ball go in a straight line.")
+    manual: qsTr("Press the two shift keys at the same time,
+to make the ball go in a straight line.")
     credit: ""
 }

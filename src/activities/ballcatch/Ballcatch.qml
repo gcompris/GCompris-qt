@@ -1,6 +1,8 @@
 /* gcompris - Ballcatch.qml
 
- Copyright (C) 2003, 2014 Bruno Coudoin and Johnny Jazeix
+ Copyright (C)
+ 2003, 2014: Bruno Coudoin: initial version
+ 2014: Johnny Jazeix: Qt port
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -30,17 +32,22 @@ ActivityBase {
     onStart: {
         focus=true;
 
-        // You can dissociate left shift and right shift easily on Qt so we put all possibilities for scanCode here
+        /* You can dissociate left shift and right shift easily
+           on Qt so we put all possibilities for scanCode here */
         switch(ApplicationInfo.platform) {
-        case ApplicationInfo.Linux: // todo find existing enum for those values ?
-            supposedRightKeyCode = [62]; // Do not know if it is the same for all linux ?
+        case ApplicationInfo.Linux: // todo find existing enum for those values?
+            // Do not know if it is the same for all linux ?
+            supposedRightKeyCode = [62];
             supposedLeftKeyCode = [50];
             break;
         case ApplicationInfo.Windows:
-            supposedRightKeyCode = [0xA1, 54]; // VK_RSHIFT in WinUser.h is 0xA1, but does not work in my win8...
-            supposedLeftKeyCode = [0xA0, 42]; // VK_LSHIFT in WinUser.h, but does not work in my win8...
+            // VK_RSHIFT in WinUser.h is 0xA1, but does not work in my win8...
+            supposedRightKeyCode = [0xA1, 54];
+            // VK_LSHIFT in WinUser.h, but does not work in my win8...
+            supposedLeftKeyCode = [0xA0, 42];
             break;
-        case ApplicationInfo.MacOs: // keyEvent.nativeScanCode not filled in mac
+        case ApplicationInfo.MacOs:
+            // keyEvent.nativeScanCode not filled in mac
         default: // Will it be played with keyboard on mobile/tablet ?
             supposedRightKeyCode = [-1];
             supposedLeftKeyCode = [-1];
@@ -48,7 +55,7 @@ ActivityBase {
     }
     onStop: {}
 
-    // Lists containing all possible values for the current platform for scanCode
+    //Lists containing all possible values for the current platform for scanCode
     property var supposedRightKeyCode
     property var supposedLeftKeyCode
 
@@ -56,14 +63,15 @@ ActivityBase {
     property int rightKeyCode: -2
     property int leftKeyCode: -2
 
-    // when the corresponding shift key is pressed, the following boolean pass to true and is reseted at the end of the level
+    /* when the corresponding shift key is pressed, the following boolean pass
+       to true and is reseted at the end of the level */
     property bool leftPressed: false
     property bool rightPressed: false
 
     Keys.onPressed: {
         if(event.key == Qt.Key_Shift) {
-
-            if(leftKeyCode == -2 || rightKeyCode == -2) { // Default values, look for real values
+             // Default values, look for real values
+            if(leftKeyCode == -2 || rightKeyCode == -2) {
                 // Look if it is a left key
                 var isLeft = false;
                 var i = 0;
@@ -88,10 +96,12 @@ ActivityBase {
 
                 if(!(isLeft || isRight)) {
                     /*
-                     * Not existing :(
-                     * Print a log because if the person is a developer he could give us the values :)
-                     */
-                    print("You pressed key_shift with nativeScanCode=" + event.nativeScanCode + " not handled")
+                     Not existing :(
+                     Print a log because if the person is a developer
+                     he could give us the values :)
+                    */
+                    print("You pressed key_shift with nativeScanCode=" +
+                          event.nativeScanCode + " not handled")
 
                     // Randomly put the key in left or right...
                     if(leftKeyCode == -2 && rightKeyCode == -2) {
@@ -142,7 +152,10 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        onStart: { Activity.start(background, bar, activity, ball, deltaPressedTimer) }
+        onStart: {
+            Activity.start(background, bar, activity, ball, deltaPressedTimer)
+        }
+
         onStop: { Activity.stop() }
 
         DialogHelp {
@@ -237,7 +250,8 @@ ActivityBase {
         // Instructions
         TextEdit {
             id: instructions
-            text: qsTr("Press the two shift keys at the same time, to make the ball go in a straight line.")
+            text: qsTr("Press the two shift keys at the same time,
+                        to make the ball go in a straight line.")
             x: main.width/2 + 120.0
             y: main.height/2
             width: 250
@@ -245,7 +259,8 @@ ActivityBase {
             wrapMode: TextEdit.WordWrap
             horizontalAlignment: TextEdit.AlignHCenter
             verticalAlignment: TextEdit.AlignVCenter
-            visible: !(leftPressed && rightPressed) // Remove the text when both keys has been pressed
+            // Remove the text when both keys has been pressed
+            visible: !(leftPressed && rightPressed)
         }
 
         function playSound(identifier) {

@@ -1,6 +1,8 @@
 # gcompris - ballcatch.pri
 #
-# Copyright (C) 2003, 2014 Bruno Coudoin and Johnny Jazeix
+# Copyright (C)
+# 2003, 2014: Bruno Coudoin: initial version
+# 2014: Johnny Jazeix: Qt port
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by

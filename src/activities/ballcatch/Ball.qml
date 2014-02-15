@@ -1,6 +1,8 @@
 /* gcompris - Ball.qml
 
- Copyright (C) 2003, 2014 Bruno Coudoin and Johnny Jazeix
+ Copyright (C)
+ 2003, 2014: Bruno Coudoin: initial version
+ 2014: Johnny Jazeix: Qt port
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -24,12 +26,17 @@ Item {
     property int initX: background.width / 2 - 65
     property int initY: leftHand.y
     property int initRadius: 130
+    property double initBorderWidth: 5
 
-    property int finishX // If won, ball goes on tux, if loose, depends on the side clicked first
+     // If won, ball goes on tux, if loose, depends on the side clicked first
+    property int finishX
+
     property int finishY: tux.y+tux.height/2
     property int finishRadius: initRadius/3
+    property double finishBorderWidth: 1
 
     property int radius: initRadius
+    property int borderWidth: initBorderWidth
     x: initX
     y: initY
     z: 3
@@ -38,13 +45,17 @@ Item {
         circle.radius=radius
     }
 
+    onBorderWidthChanged: {
+        circle.border.width=borderWidth
+    }
+
     Rectangle {
         id: circle
         width: radius
         height: width
         color: "red"
         border.color: "black"
-        border.width: 5
+        border.width: borderWidth
     }
 
     ParallelAnimation {
@@ -52,9 +63,14 @@ Item {
 
         running: false
 
-        NumberAnimation { target: ball; property: "x"; from: ball.initX; to: ball.finishX; duration: 1000 }
-        NumberAnimation { target: ball; property: "y"; from: ball.initY; to: ball.finishY; duration: 1000 }
-        NumberAnimation { target: ball; property: "radius"; to: ball.finishRadius; duration: 1000 }
+        NumberAnimation { target: ball; property: "x";
+                          from: ball.initX; to: ball.finishX; duration: 1000 }
+        NumberAnimation { target: ball; property: "y";
+                          from: ball.initY; to: ball.finishY; duration: 1000 }
+        NumberAnimation { target: ball; property: "radius";
+                          to: ball.finishRadius; duration: 1000 }
+        NumberAnimation { target: ball; property: "borderWidth";
+                          to: finishBorderWidth; duration: 1000 }
 
         onStopped: {
             // We are done with the ballon move
@@ -81,7 +97,8 @@ Item {
         else {
             finishX = background.width - 2*ball.finishRadius
         }
-        // Only start the timer if the game is at init state. In init state, radius is initRadius
+        /* Only start the timer if the game is at init state.
+           In init state, radius is initRadius */
         if(ball.radius == ball.initRadius)
             animation.start()
     }
@@ -90,5 +107,6 @@ Item {
         x = initX;
         y = initY;
         radius = initRadius;
+        borderWidth = initBorderWidth;
     }
 }
