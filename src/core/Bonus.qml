@@ -1,4 +1,5 @@
 import QtQuick 2.0
+import GCompris 1.0
 
 Image {
     id: bonus
@@ -7,11 +8,12 @@ Image {
     anchors.fill: parent
     fillMode: Image.Pad
     z: 1000
+    scale: ApplicationInfo.ratio
 
     signal win
     signal loose
 
-    property bool isWin:false
+    property bool isWin: false
 
     function good(name) {
         source = "qrc:/gcompris/src/core/resource/bonus/" + name + "_good.png"

@@ -1,5 +1,6 @@
 import QtQuick 2.2
 import QtQuick.Controls 1.1
+import GCompris 1.0
 
 Rectangle {
     id: dialogBackground
@@ -102,25 +103,26 @@ Rectangle {
 
     // The cancel button
     Image {
-        id: logo
+        id: cancel
         source: "qrc:/gcompris/src/core/resource/cancel.svgz";
         width: 70
         fillMode: Image.PreserveAspectFit
         anchors.right: parent.right
         smooth: true
+        scale: 1.0 * ApplicationInfo.ratio
         SequentialAnimation {
               id: anim
               running: true
               loops: Animation.Infinite
               NumberAnimation {
-                  target: logo
+                  target: cancel
                   property: "rotation"
                   from: -10; to: 10
                   duration: 500
                   easing.type: Easing.InOutQuad
               }
               NumberAnimation {
-                  target: logo
+                  target: cancel
                   property: "rotation"
                   from: 10; to: -10
                   duration: 500

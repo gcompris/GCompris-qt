@@ -6,6 +6,7 @@ QT += qml quick gui multimedia network xmlpatterns svg
 TARGET = GCompris
 
 include(src/core/core.pri)
+include(src/activities/ballcatch/ballcatch.pri)
 include(src/activities/clickgame/clickgame.pri)
 include(src/activities/leftright/leftright.pri)
 include(src/activities/menu/menu.pri)
@@ -13,6 +14,9 @@ include(src/activities/erase/erase.pri)
 include(src/activities/erase_clic/erase_clic.pri)
 include(src/activities/erase_2clic/erase_2clic.pri)
 include(src/activities/hexagon/hexagon.pri)
+
+APP_FILES += \
+	$$PWD/src/activities/activities.txt \
 
 OTHER_FILES += $$APP_FILES
 

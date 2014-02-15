@@ -1,0 +1,9 @@
+# The list of activities that will be loaded
+# at GCompris start.
+ballcatch
+clickgame
+erase
+erase_2clic
+erase_clic
+hexagon
+leftright

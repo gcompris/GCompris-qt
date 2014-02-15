@@ -95,9 +95,19 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 
 
 	QStringList activities;
-	activities << "leftright" << "clickgame" <<
-				  "erase" << "erase_clic" << "erase_2clic" <<
-				  "hexagon";
+
+    QFile file(":/gcompris/src/activities/activities.txt");
+	if(!file.open(QFile::ReadOnly)) {
+		qDebug() << "Failed to load the activity list";
+	}
+	QTextStream in(&file);
+	while (!in.atEnd())
+	{
+		QString line = in.readLine();
+		if(!line.startsWith("#"))
+			activities << line;
+	}
+	file.close();
 
 	for (int i = 0; i < activities.size(); ++i) {
 		QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(activities.at(i));
