@@ -14,6 +14,9 @@ include(src/activities/erase_clic/erase_clic.pri)
 include(src/activities/erase_2clic/erase_2clic.pri)
 include(src/activities/hexagon/hexagon.pri)
 
+APP_FILES += \
+	$$PWD/src/activities/activities.txt \
+
 OTHER_FILES += $$APP_FILES
 
 # Create the resource file
