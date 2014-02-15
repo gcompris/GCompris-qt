@@ -15,8 +15,8 @@ Item {
     signal stop
     signal displayDialog(Item dialog)
 
-    onHome: menu.home()
-    onDisplayDialog: menu.displayDialog(dialog)
+    onHome: menu ? menu.home() : ""
+    onDisplayDialog: menu ? menu.displayDialog(dialog) : ""
 
     Keys.onEscapePressed: home()
     Keys.onPressed: {
