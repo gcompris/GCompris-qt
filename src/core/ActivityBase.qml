@@ -6,6 +6,7 @@ Item {
     id: page
     property Item main: parent;
     property Component pageComponent
+    property QtObject menu
     property bool isLocked: true
     signal home
     signal start
@@ -13,6 +14,9 @@ Item {
     signal play
     signal stop
     signal displayDialog(Item dialog)
+
+    onHome: menu.home()
+    onDisplayDialog: menu.displayDialog(dialog)
 
     Keys.onEscapePressed: home()
     Keys.onPressed: {
