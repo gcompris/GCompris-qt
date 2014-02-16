@@ -50,60 +50,74 @@
 ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 {
 
-	m_isMobile = false;
+    m_isMobile = false;
 #if defined(Q_OS_ANDROID) || defined(Q_OS_IOS) || defined(Q_OS_BLACKBERRY)
-	m_isMobile = true;
+    m_isMobile = true;
 #endif
 
-	QRect rect = qApp->primaryScreen()->geometry();
-	m_ratio = m_isMobile ? qMin(qMax(rect.width(), rect.height())/800. , qMin(rect.width(), rect.height())/520.) : 1;
-	m_sliderHandleWidth = getSizeWithRatio(70);
-	m_sliderHandleHeight = getSizeWithRatio(87);
-	m_sliderGapWidth = getSizeWithRatio(100);
-	m_isPortraitMode = m_isMobile ? rect.height() > rect.width() : false;
-	m_hMargin =  m_isPortraitMode ? 20 * ratio() : 50 * ratio();
-	m_applicationWidth = m_isMobile ? rect.width() : 1120;
+#if defined(Q_OS_LINUX) || defined(Q_OS_UNIX)
+    m_platform = Linux;
+#elif defined(Q_OS_WIN)
+    m_platform = Windows;
+#elif defined(Q_OS_MAC)
+    m_platform = MacOs;
+#elif defined(Q_OS_ANDROID)
+    m_platform = Android;
+#elif defined(Q_OS_IOS)
+    m_platform = Ios;
+#elif defined(Q_OS_BLACKBERRY)
+    m_platform = Blackberry;
+#endif
 
-	if (m_isMobile)
-		connect(qApp->primaryScreen(), SIGNAL(physicalSizeChanged(QSizeF)), this, SLOT(notifyPortraitMode()));
+    QRect rect = qApp->primaryScreen()->geometry();
+    m_ratio = m_isMobile ? qMin(qMax(rect.width(), rect.height())/800. , qMin(rect.width(), rect.height())/520.) : 1;
+    m_sliderHandleWidth = getSizeWithRatio(70);
+    m_sliderHandleHeight = getSizeWithRatio(87);
+    m_sliderGapWidth = getSizeWithRatio(100);
+    m_isPortraitMode = m_isMobile ? rect.height() > rect.width() : false;
+    m_hMargin =  m_isPortraitMode ? 20 * ratio() : 50 * ratio();
+    m_applicationWidth = m_isMobile ? rect.width() : 1120;
+
+    if (m_isMobile)
+        connect(qApp->primaryScreen(), SIGNAL(physicalSizeChanged(QSizeF)), this, SLOT(notifyPortraitMode()));
 
 }
 
 void ApplicationInfo::setApplicationWidth(const int newWidth)
 {
-	if (newWidth != m_applicationWidth) {
-		m_applicationWidth = newWidth;
-		emit applicationWidthChanged();
-	}
+    if (newWidth != m_applicationWidth) {
+        m_applicationWidth = newWidth;
+        emit applicationWidthChanged();
+    }
 }
 
 void ApplicationInfo::notifyPortraitMode()
 {
-	int width = qApp->primaryScreen()->geometry().width();
-	int height = qApp->primaryScreen()->geometry().height();
-	setIsPortraitMode(height > width);
+    int width = qApp->primaryScreen()->geometry().width();
+    int height = qApp->primaryScreen()->geometry().height();
+    setIsPortraitMode(height > width);
 }
 
 void ApplicationInfo::setIsPortraitMode(const bool newMode)
 {
-	if (m_isPortraitMode != newMode) {
-		m_isPortraitMode = newMode;
-		m_hMargin = m_isPortraitMode ? 20 * ratio() : 50 * ratio();
-		emit portraitModeChanged();
-		emit hMarginChanged();
-	}
+    if (m_isPortraitMode != newMode) {
+        m_isPortraitMode = newMode;
+        m_hMargin = m_isPortraitMode ? 20 * ratio() : 50 * ratio();
+        emit portraitModeChanged();
+        emit hMarginChanged();
+    }
 }
 
 QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,
-											 QJSEngine *scriptEngine)
+                                             QJSEngine *scriptEngine)
 {
-	Q_UNUSED(engine)
-	Q_UNUSED(scriptEngine)
-	return new ApplicationInfo();
+    Q_UNUSED(engine)
+    Q_UNUSED(scriptEngine)
+    return new ApplicationInfo();
 }
 
 void ApplicationInfo::init()
 {
-	qmlRegisterSingletonType<ApplicationInfo>("GCompris", 1, 0, "ApplicationInfo", systeminfoProvider);
-	qmlRegisterType<ApplicationInfo>("GCompris", 1, 0, "ApplicationInfo");
+    qmlRegisterSingletonType<ApplicationInfo>("GCompris", 1, 0, "ApplicationInfo", systeminfoProvider);
+    qmlRegisterType<ApplicationInfo>("GCompris", 1, 0, "ApplicationInfo");
 }

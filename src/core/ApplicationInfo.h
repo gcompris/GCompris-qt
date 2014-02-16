@@ -45,13 +45,16 @@
 #include <QtQml/QQmlPropertyMap>
 #include <QQmlEngine>
 
-
 class ApplicationInfo : public QObject
 {
 	Q_OBJECT
+
+    Q_ENUMS(Platform)
+
 	Q_PROPERTY(int applicationWidth READ applicationWidth WRITE setApplicationWidth NOTIFY applicationWidthChanged)
-	Q_PROPERTY(bool isMobile READ isMobile CONSTANT)
-	Q_PROPERTY(bool isPortraitMode READ isPortraitMode WRITE setIsPortraitMode NOTIFY portraitModeChanged)
+    Q_PROPERTY(Platform platform READ platform CONSTANT)
+    Q_PROPERTY(bool isMobile READ isMobile CONSTANT)
+    Q_PROPERTY(bool isPortraitMode READ isPortraitMode WRITE setIsPortraitMode NOTIFY portraitModeChanged)
 	Q_PROPERTY(qreal ratio READ ratio NOTIFY ratioChanged)
 	Q_PROPERTY(qreal hMargin READ hMargin NOTIFY hMarginChanged)
 	Q_PROPERTY(qreal sliderHandleWidth READ sliderHandleWidth NOTIFY ratioChanged)
@@ -59,13 +62,25 @@ class ApplicationInfo : public QObject
 	Q_PROPERTY(qreal sliderGapWidth READ sliderGapWidth NOTIFY ratioChanged)
 
 public:
-	ApplicationInfo(QObject *parent = 0);
+
+    enum Platform {
+        Linux,
+        Windows,
+        MacOs,
+        Android,
+        Ios,
+        Blackberry
+    };
+
+    ApplicationInfo(QObject *parent = 0);
 	static void init();
 	static QObject *systeminfoProvider(QQmlEngine *engine,
 									   QJSEngine *scriptEngine);
 
 	int applicationWidth() const { return m_applicationWidth; }
 	void setApplicationWidth(const int newWidth);
+
+    Platform platform() const { return m_platform; }
 
 	bool isPortraitMode() const { return m_isPortraitMode; }
 	void setIsPortraitMode(const bool newMode);
@@ -92,6 +107,7 @@ signals:
 
 private:
 	int m_applicationWidth;
+    Platform m_platform;
 	QQmlPropertyMap *m_constants;
 	bool m_isPortraitMode;
 	bool m_isMobile;
