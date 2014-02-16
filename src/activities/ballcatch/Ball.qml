@@ -23,39 +23,23 @@ import "ballcatch.js" as Activity
 import GCompris 1.0
 
 Item {
-    property int initX: background.width / 2 - 65
-    property int initY: leftHand.y
     property int initRadius: 130
-    property double initBorderWidth: 5
 
-     // If won, ball goes on tux, if loose, depends on the side clicked first
+    // If won, ball goes on tux, if loose, depends on the side clicked first
     property int finishX
 
     property int finishY: tux.y+tux.height/2
     property int finishRadius: initRadius/3
-    property double finishBorderWidth: 1
 
     property int radius: initRadius
-    property int borderWidth: initBorderWidth
-    x: initX
-    y: initY
+
     z: 3
 
-    onRadiusChanged: {
-        circle.radius=radius
-    }
-
-    onBorderWidthChanged: {
-        circle.border.width=borderWidth
-    }
-
-    Rectangle {
+    Image {
         id: circle
+        source: "qrc:/gcompris/src/activities/ballcatch/resource/ball.svg"
         width: radius
         height: width
-        color: "red"
-        border.color: "black"
-        border.width: borderWidth
     }
 
     ParallelAnimation {
@@ -64,13 +48,13 @@ Item {
         running: false
 
         NumberAnimation { target: ball; property: "x";
-                          from: ball.initX; to: ball.finishX; duration: 1000 }
+                          to: ball.finishX; duration: 1000 }
         NumberAnimation { target: ball; property: "y";
-                          from: ball.initY; to: ball.finishY; duration: 1000 }
-        NumberAnimation { target: ball; property: "radius";
+                          to: ball.finishY; duration: 1000 }
+        NumberAnimation { target: circle; property: "width";
                           to: ball.finishRadius; duration: 1000 }
-        NumberAnimation { target: ball; property: "borderWidth";
-                          to: finishBorderWidth; duration: 1000 }
+        NumberAnimation { target: circle; property: "rotation";
+                          to: 360; duration: 1000 }
 
         onStopped: {
             // We are done with the ballon move
@@ -104,9 +88,9 @@ Item {
     }
 
     function reinitBall() {
-        x = initX;
-        y = initY;
-        radius = initRadius;
-        borderWidth = initBorderWidth;
+        x = background.width / 2 - 65;
+        y = leftHand.y;
+        circle.width = initRadius;
+        circle.rotation = 0;
     }
 }

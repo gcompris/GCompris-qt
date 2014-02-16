@@ -25,6 +25,7 @@ APP_FILES += \
         $$PWD/ballcatch.svg
 
 APP_FILES += \
+        $$PWD/resource/ball.svg \
         $$PWD/resource/ballcatch.svg \
         $$PWD/resource/beach1.svgz \
         $$PWD/resource/beach2.svgz \

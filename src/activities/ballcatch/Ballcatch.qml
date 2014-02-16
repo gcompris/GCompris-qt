@@ -158,6 +158,10 @@ ActivityBase {
 
         onStop: { Activity.stop() }
 
+        onWidthChanged: { ball.reinitBall() }
+
+        onHeightChanged: { ball.reinitBall() }
+
         DialogHelp {
             id: dialogHelpLeftRight
             onClose: home()
