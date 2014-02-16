@@ -9,7 +9,7 @@ HEADERS += \
 	$$PWD/ActivityInfoTree.h \
 	$$PWD/ApplicationInfo.h
 
-APP_FILES = \
+APP_FILES += \
 	$$PWD/ActivityBase.qml \
 	$$PWD/BarButton.qml \
 	$$PWD/BarEnumContent.qml \
