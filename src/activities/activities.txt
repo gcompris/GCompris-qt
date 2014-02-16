@@ -1,7 +1,8 @@
-# The list of activities that will be loaded
-# at GCompris start.
+# The list of activities that will be loaded at GCompris start.
+# Keep it sorted
 ballcatch
 clickgame
+colors
 erase
 erase_2clic
 erase_clic
