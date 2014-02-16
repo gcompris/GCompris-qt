@@ -66,7 +66,7 @@ public:
     enum Platform {
         Linux,
         Windows,
-        MacOs,
+		MacOSX,
         Android,
         Ios,
         Blackberry
