@@ -5,6 +5,7 @@ QT += qml quick gui multimedia network xmlpatterns svg
 //QT += core gui svg xml
 TARGET = GCompris
 
+# Activity Includes
 include(src/core/core.pri)
 include(src/activities/clickgame/clickgame.pri)
 include(src/activities/leftright/leftright.pri)
