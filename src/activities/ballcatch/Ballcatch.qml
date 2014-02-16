@@ -32,7 +32,7 @@ ActivityBase {
     onStart: {
         focus=true;
 
-        /* You can dissociate left shift and right shift easily
+        /* You cannot dissociate left shift and right shift easily
            on Qt so we put all possibilities for scanCode here */
         switch(ApplicationInfo.platform) {
         case ApplicationInfo.Linux: // todo find existing enum for those values?
