@@ -95,7 +95,8 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 
 
 	QStringList activities;
-	QFile file(":/gcompris/src/activities/activities.txt");
+
+    QFile file(":/gcompris/src/activities/activities.txt");
 	if(!file.open(QFile::ReadOnly)) {
 		qDebug() << "Failed to load the activity list";
 	}
