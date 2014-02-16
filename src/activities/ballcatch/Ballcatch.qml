@@ -254,11 +254,14 @@ ActivityBase {
         // Instructions
         TextEdit {
             id: instructions
-            text: qsTr("Press the two shift keys at the same time,
-                        to make the ball go in a straight line.")
+            text: ApplicationInfo.isMobile ?
+                      qsTr("Tap both side of the ball,
+to make the ball go in a straight line.") :
+                      qsTr("Press the two shift keys at the same time,
+to make the ball go in a straight line.")
             x: main.width/2 + 120.0
             y: main.height/2
-            width: 250
+            width: main.width-x
             readOnly: true
             wrapMode: TextEdit.WordWrap
             horizontalAlignment: TextEdit.AlignHCenter
@@ -269,29 +272,32 @@ ActivityBase {
 
         function playSound(identifier) {
             if(identifier == "tuxok") {
-                play(tuxok.source)
+                tuxok.play()
             }
             else if(identifier == "youcannot") {
-                play(youcannot.source)
+                youcannot.play()
             }
             else if(identifier == "brick") {
-                play(brick.source)
+                brick.play()
             }
         }
 
         Audio {
             id: brick
             source: "qrc:/gcompris/src/activities/ballcatch/resource/brick.wav"
+            onError: console.log("brick play error: " + errorString)
         }
 
         Audio {
             id: tuxok
             source: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
+            onError: console.log("tux play error: " + errorString)
         }
 
         Audio {
             id: youcannot
             source: "qrc:/gcompris/src/activities/ballcatch/resource/youcannot.wav"
+            onError: console.log("youcannot play error: " + errorString)
         }
 
         /* Timer starting when user first presses a shift key.

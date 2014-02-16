@@ -23,13 +23,13 @@ import "ballcatch.js" as Activity
 import GCompris 1.0
 
 Item {
-    property int initRadius: 130
+    readonly property int initRadius: 130
 
     // If won, ball goes on tux, if loose, depends on the side clicked first
     property int finishX
 
-    property int finishY: tux.y+tux.height/2
-    property int finishRadius: initRadius/3
+    readonly property int finishY: tux.y+tux.height/2
+    readonly property int finishRadius: initRadius/3
 
     property int radius: initRadius
 

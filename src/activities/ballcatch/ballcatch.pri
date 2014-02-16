@@ -25,6 +25,9 @@ APP_FILES += \
         $$PWD/ballcatch.svg
 
 APP_FILES += \
+        $$PWD/resource/brick.wav \
+        $$PWD/resource/youcannot.wav \
+        $$PWD/resource/tuxok.wav \
         $$PWD/resource/ball.svg \
         $$PWD/resource/ballcatch.svg \
         $$PWD/resource/beach1.svgz \
