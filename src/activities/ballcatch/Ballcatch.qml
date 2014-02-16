@@ -70,7 +70,7 @@ ActivityBase {
 
     Keys.onPressed: {
         if(event.key == Qt.Key_Shift) {
-             // Default values, look for real values
+            // Default values, look for real values
             if(leftKeyCode == -2 || rightKeyCode == -2) {
                 // Look if it is a left key
                 var isLeft = false;
@@ -216,11 +216,11 @@ ActivityBase {
             y: main.height - 150
             source: "qrc:/gcompris/src/activities/ballcatch/resource/shift_key.svg"
             opacity: leftPressed ? 1 : 0.5
-            MouseArea {
+            MultiPointTouchArea {
+
                 id: mouseAreaLeftShift
                 anchors.fill: parent
-                hoverEnabled: true
-                onClicked: {
+                onTouchUpdated: {
                     // left
                     if(!leftPressed) {
                         Activity.leftShiftPressed();
@@ -237,12 +237,11 @@ ActivityBase {
             y: main.height - 150
             source: "qrc:/gcompris/src/activities/ballcatch/resource/shift_key.svg"
             opacity: rightPressed ? 1 : 0.5
-            MouseArea {
+            MultiPointTouchArea {
                 id: mouseAreaRightShift
                 anchors.fill: parent
-                hoverEnabled: true
-                onClicked: {
-                    // left
+                onTouchUpdated: {
+                    // right
                     if(!rightPressed) {
                         Activity.rightShiftPressed();
                         rightPressed = true
