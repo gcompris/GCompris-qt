@@ -60,7 +60,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 #elif defined(Q_OS_WIN)
     m_platform = Windows;
 #elif defined(Q_OS_MAC)
-    m_platform = MacOs;
+	m_platform = MacOSX;
 #elif defined(Q_OS_ANDROID)
     m_platform = Android;
 #elif defined(Q_OS_IOS)
