@@ -7,6 +7,7 @@ TARGET = GCompris
 
 # Activity Includes
 include(src/core/core.pri)
+include(src/activities/ballcatch/ballcatch.pri)
 include(src/activities/clickgame/clickgame.pri)
 include(src/activities/leftright/leftright.pri)
 include(src/activities/menu/menu.pri)
