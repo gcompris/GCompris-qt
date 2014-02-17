@@ -1,0 +1,251 @@
+[common]
+
+objectAreaXYWH=110,80,580,240
+# If you want a rectangle under the objects
+#objectAreaFill=0xCCCCCCAA
+#objectAreaStroke=0xFFFF33AA
+#objectAreaRadiusX=10
+#objectAreaRadiusY=10
+#objectAreaLineWidth=2
+
+objectSelectionFill=0xFF000090
+objectSelectionStroke=0xFFFFFFCC
+objectGap=20
+
+questionColor=0xFFFFFFFF
+questionFont=gcompris/board/title bold
+
+# Provide a text color and font to have it being displayed
+#textColor=0xFFFFFFFF
+#textFont=gcompris/board/big bold
+
+background=background.svgz
+
+questionPosition=400,30
+
+okPosition=680,30
+
+[1]
+object1Image=clarinet.svg
+object1Text=Find the clarinet
+object1Audio=instruments/clarinet.ogg
+
+object2Image=flute_traversiere.svg
+object2Text=Find the transverse flute
+object2Audio=instruments/flute_traversiere.ogg
+
+object3Image=guitar.svg
+object3Text=Find the guitar
+object3Audio=instruments/guitar.ogg
+
+object4Image=harp.svg
+object4Text=Find the harp
+object4Audio=instruments/harp.ogg
+
+[2]
+object1Image=piano.svg
+object1Text=Find the piano
+object1Audio=instruments/piano.ogg
+
+object2Image=saxophone.svg
+object2Text=Find the saxophone
+object2Audio=instruments/saxophone.ogg
+
+object3Image=trombone.svg
+object3Text=Find the trombone
+object3Audio=instruments/trombone.ogg
+
+object4Image=trumpet.svg
+object4Text=Find the trumpet
+object4Audio=instruments/trumpet.ogg
+
+object5Image=violin.svg
+object5Text=Find the violin
+object5Audio=instruments/violin.ogg
+
+[3]
+object1Image=clarinet.svg
+object1Text=Find the clarinet
+object1Audio=instruments/clarinet.ogg
+
+object2Image=flute_traversiere.svg
+object2Text=Find the flute traversiere
+object2Audio=instruments/flute_traversiere.ogg
+
+object3Image=guitar.svg
+object3Text=Find the guitar
+object3Audio=instruments/guitar.ogg
+
+object4Image=harp.svg
+object4Text=Find the harp
+object4Audio=instruments/harp.ogg
+
+object5Image=piano.svg
+object5Text=Find the piano
+object5Audio=instruments/piano.ogg
+
+object6Image=saxophone.svg
+object6Text=Find the saxophone
+object6Audio=instruments/saxophone.ogg
+
+object7Image=trombone.svg
+object7Text=Find the trombone
+object7Audio=instruments/trombone.ogg
+
+object8Image=trumpet.svg
+object8Text=Find the trumpet
+object8Audio=instruments/trumpet.ogg
+
+[4]
+object1Image=violin.svg
+object1Text=Find the violin
+object1Audio=instruments/violin.ogg
+
+object2Image=flute_traversiere.svg
+object2Text=Find the flute traversiere
+object2Audio=instruments/flute_traversiere.ogg
+
+object3Image=guitar.svg
+object3Text=Find the guitar
+object3Audio=instruments/guitar.ogg
+
+object4Image=harp.svg
+object4Text=Find the harp
+object4Audio=instruments/harp.ogg
+
+object5Image=piano.svg
+object5Text=Find the piano
+object5Audio=instruments/piano.ogg
+
+object6Image=saxophone.svg
+object6Text=Find the saxophone
+object6Audio=instruments/saxophone.ogg
+
+object7Image=trombone.svg
+object7Text=Find the trombone
+object7Audio=instruments/trombone.ogg
+
+object8Image=trumpet.svg
+object8Text=Find the trumpet
+object8Audio=instruments/trumpet.ogg
+
+[5]
+object1Image=drum_kit.svg
+object1Text=Find the drum kit
+object1Audio=instruments/drum_kit.ogg
+
+object2Image=accordion.png
+object2Text=Find the accordion
+object2Audio=instruments/accordion.ogg
+
+object3Image=banjo.svg
+object3Text=Find the banjo
+object3Audio=instruments/banjo.ogg
+
+object4Image=bongo.png
+object4Text=Find the bongo
+object4Audio=instruments/bongo.ogg
+
+object5Image=electric_guitar.svg
+object5Text=Find the electric guitar
+object5Audio=instruments/electric_guitar.ogg
+
+object6Image=castanets.svg
+object6Text=Find the castanets
+object6Audio=instruments/castanets.ogg
+
+[6]
+object1Image=drum_kit.svg
+object1Text=Find the drum kit
+object1Audio=instruments/drum_kit.ogg
+
+object2Image=accordion.png
+object2Text=Find the accordion
+object2Audio=instruments/accordion.ogg
+
+object3Image=banjo.svg
+object3Text=Find the banjo
+object3Audio=instruments/banjo.ogg
+
+object4Image=cymbal.svg
+object4Text=Find the cymbal
+object4Audio=instruments/cymbal.ogg
+
+object5Image=cello.svg
+object5Text=Find the cello
+object5Audio=instruments/cello.ogg
+
+[7]
+
+object1Image=bongo.png
+object1Text=Find the bongo
+object1Audio=instruments/bongo.ogg
+
+object2Image=electric_guitar.svg
+object2Text=Find the electric guitar
+object2Audio=instruments/electric_guitar.ogg
+
+object3Image=harmonica.svg
+object3Text=Find the harmonica
+object3Audio=instruments/harmonica.ogg
+
+object4Image=horn.svg
+object4Text=Find the horn
+object4Audio=instruments/horn.ogg
+
+object5Image=maracas.svg
+object5Text=Find the maracas
+object5Audio=instruments/maracas.ogg
+
+object6Image=organ.png
+object6Text=Find the organ
+object6Audio=instruments/organ.ogg
+
+[8]
+
+object1Image=snare_drum.svg
+object1Text=Find the snare drum
+object1Audio=instruments/snare_drum.ogg
+
+object2Image=timpani.svg
+object2Text=Find the timpani
+object2Audio=instruments/timpani.ogg
+
+object3Image=triangle.png
+object3Text=Find the triangle
+object3Audio=instruments/triangle.ogg
+
+object4Image=horn.svg
+object4Text=Find the horn
+object4Audio=instruments/horn.ogg
+
+object5Image=maracas.svg
+object5Text=Find the maracas
+object5Audio=instruments/maracas.ogg
+
+object6Image=organ.png
+object6Text=Find the organ
+object6Audio=instruments/organ.ogg
+
+[9]
+
+object1Image=snare_drum.svg
+object1Text=Find the snare drum
+object1Audio=instruments/snare_drum.ogg
+
+object2Image=timpani.svg
+object2Text=Find the timpani
+object2Audio=instruments/timpani.ogg
+
+object3Image=triangle.png
+object3Text=Find the triangle
+object3Audio=instruments/triangle.ogg
+
+object4Image=tambourine.svg
+object4Text=Find the tambourine
+object4Audio=instruments/tambourine.ogg
+
+object5Image=tuba.svg
+object5Text=Find the tuba
+object5Audio=instruments/tuba.ogg
+

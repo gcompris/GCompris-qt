@@ -7,4 +7,5 @@ erase
 erase_2clic
 erase_clic
 hexagon
+instruments
 leftright
