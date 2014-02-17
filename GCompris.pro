@@ -9,6 +9,7 @@ include(src/core/core.pri)
 include(src/activities/menu/menu.pri)
 
 # Activity Includes
+include(src/activities/instruments/instruments.pri)
 include(src/activities/ballcatch/ballcatch.pri)
 include(src/activities/clickgame/clickgame.pri)
 include(src/activities/colors/colors.pri)
