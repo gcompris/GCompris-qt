@@ -1,4 +1,4 @@
-/* GCompris - Colors.qml
+/* GCompris
  *
  * Copyright (C) 2014 Bruno Coudoin
  *
@@ -19,173 +19,94 @@
 .pragma library
 .import QtQuick 2.0 as Quick
 
-var colors =
+var _colors =
         [
             [ // Level 1
              {
-                 "image": "yellow_duck.svgz",
+                 "image": "qrc:/gcompris/src/activities/colors/resource/yellow_duck.svgz",
                  "text": "Find the yellow duck",
                  "audio": "voices/$LOCALE/colors/yellow.ogg"
              },
              {
-                 "image": "black_duck.svgz",
+                 "image": "qrc:/gcompris/src/activities/colors/resource/black_duck.svgz",
                  "text": "Find the black duck",
                  "audio": "voices/$LOCALE/colors/black.ogg"
              },
              {
-                 "image": "green_duck.svgz",
+                 "image": "qrc:/gcompris/src/activities/colors/resource/green_duck.svgz",
                  "text": "Find the green duck",
                  "audio": "voices/$LOCALE/colors/green.ogg"
              },
              {
-                 "image": "red_duck.svgz",
+                 "image": "qrc:/gcompris/src/activities/colors/resource/red_duck.svgz",
                  "text": "Find the red duck",
                  "audio": "voices/$LOCALE/colors/red.ogg"
              },
              {
-                 "image": "white_duck.svgz",
+                 "image": "qrc:/gcompris/src/activities/colors/resource/white_duck.svgz",
                  "text": "Find the white duck",
                  "audio": "voices/$LOCALE/colors/white.ogg"
              },
              {
-                 "image": "blue_duck.svgz",
+                 "image": "qrc:/gcompris/src/activities/colors/resource/blue_duck.svgz",
                  "text": "Find the blue duck",
                  "audio": "voices/$LOCALE/colors/blue.ogg"
              }
             ],
             [ // Level 2
              {
-                 "image": "yellow_duck.svgz",
+                 "image": "qrc:/gcompris/src/activities/colors/resource/yellow_duck.svgz",
                  "text": "Find the yellow duck",
                  "audio": "voices/$LOCALE/colors/yellow.ogg"
              },
              {
-                 "image": "black_duck.svgz",
+                 "image": "qrc:/gcompris/src/activities/colors/resource/black_duck.svgz",
                  "text": "Find the black duck",
                  "audio": "voices/$LOCALE/colors/black.ogg"
              },
              {
-                 "image": "brown_duck.svgz",
+                 "image": "qrc:/gcompris/src/activities/colors/resource/brown_duck.svgz",
                  "text": "Find the brown duck",
                  "audio": "voices/$LOCALE/colors/brown.ogg"
              },
              {
-                 "image": "green_duck.svgz",
+                 "image": "qrc:/gcompris/src/activities/colors/resource/green_duck.svgz",
                  "text": "Find the green duck",
                  "audio": "voices/$LOCALE/colors/green.ogg"
              },
              {
-                 "image": "grey_duck.svgz",
+                 "image": "qrc:/gcompris/src/activities/colors/resource/grey_duck.svgz",
                  "text": "Find the grey duck",
                  "audio": "voices/$LOCALE/colors/grey.ogg"
              },
              {
-                 "image": "orange_duck.svgz",
+                 "image": "qrc:/gcompris/src/activities/colors/resource/orange_duck.svgz",
                  "text": "Find the orange duck",
                  "audio": "voices/$LOCALE/colors/orange.ogg"
              },
              {
-                 "image": "purple_duck.svgz",
+                 "image": "qrc:/gcompris/src/activities/colors/resource/purple_duck.svgz",
                  "text": "Find the purple duck",
                  "audio": "voices/$LOCALE/colors/purple.ogg"
              },
              {
-                 "image": "red_duck.svgz",
+                 "image": "qrc:/gcompris/src/activities/colors/resource/red_duck.svgz",
                  "text": "Find the red duck",
                  "audio": "voices/$LOCALE/colors/red.ogg"
              },
              {
-                 "image": "white_duck.svgz",
+                 "image": "qrc:/gcompris/src/activities/colors/resource/white_duck.svgz",
                  "text": "Find the white duck",
                  "audio": "voices/$LOCALE/colors/white.ogg"
              },
              {
-                 "image": "blue_duck.svgz",
+                 "image": "qrc:/gcompris/src/activities/colors/resource/blue_duck.svgz",
                  "text": "Find the blue duck",
                  "audio": "voices/$LOCALE/colors/blue.ogg"
              }
             ]
         ]
 
-var _currentLevel = 0
-var _numberOfLevel = colors.length
-var _main
-var _background
-var _bar
-var _bonus
-var _containerModel
-var _questionItem
-
-var _currentQuestion
-
-function start(main, background, bar, bonus,
-               containerModel, questionItem) {
-    _main = main
-    _background = background
-    _bar = bar
-    _bonus = bonus
-    _currentLevel = 0
-    _containerModel = containerModel
-    _questionItem = questionItem
-    initLevel()
-}
-
-function stop() {
-}
-
-function initLevel() {
-    _bar.level = _currentLevel + 1
-    _containerModel.clear()
-    _currentQuestion = 0
-    colors[_currentLevel] = shuffle(colors[_currentLevel])
-
-    for(var i = 0;  i < colors[_currentLevel].length; ++i) {
-        _containerModel.append(colors[_currentLevel][i])
-    }
-
-    // Shuffle again not to ask the question in the model order
-    colors[_currentLevel] = shuffle(colors[_currentLevel])
-    initQuestion()
-}
-
-function initQuestion() {
-    // We just set the opacity to 0, the questionItem will then grab
-    // the new question by itself
-    _questionItem.opacity = 0
-}
-
-function nextQuestion() {
-    if(colors[_currentLevel].length <= ++_currentQuestion ) {
-        _bonus.good("flower")
-    } else {
-        initQuestion()
-    }
-}
-
-function nextLevel() {
-    if(_numberOfLevel <= ++_currentLevel ) {
-        _currentLevel = 0
-    }
-    initLevel();
-}
-
-function previousLevel() {
-    if(--_currentLevel < 0) {
-        _currentLevel = _numberOfLevel - 1
-    }
-    initLevel();
-}
-
-function getCurrentQuestion() {
-    return colors[_currentLevel][_currentQuestion].text
-}
-
-function lost() {
-    _bonus.bad("flower")
-}
-
-function shuffle(o) {
-    for(var j, x, i = o.length; i;
-        j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-    return o;
+function get() {
+    return _colors
 }

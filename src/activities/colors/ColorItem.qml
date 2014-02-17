@@ -1,7 +1,7 @@
 import QtQuick 2.1
 import QtQuick.Particles 2.0
 import QtMultimedia 5.0
-import "colors.js" as Activity
+import "findit.js" as Activity
 import GCompris 1.0
 
 Image {
@@ -12,17 +12,19 @@ Image {
     property string question
 
     Audio {
-        id: audioDrip
+        id: audio
         source: audioSrc
     }
 
     MouseArea {
         anchors.fill: parent
         onClicked: {
-            if(question === Activity.getCurrentQuestion())
+            if(question === Activity.getCurrentTextQuestion())
                 Activity.nextQuestion()
-            else
+            else {
+                audio.play()
                 Activity.lost()
+            }
         }
     }
 
