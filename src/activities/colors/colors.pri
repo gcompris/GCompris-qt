@@ -4,7 +4,8 @@ APP_FILES += \
 	$$PWD/Colors.qml \
 	$$PWD/ColorItem.qml \
 	$$PWD/colors.js \
-	$$PWD/colors.svg
+	$$PWD/colors.svg \
+	$$PWD/findit.js
 
 APP_FILES += \
 	$$PWD/resource/background.svgz \

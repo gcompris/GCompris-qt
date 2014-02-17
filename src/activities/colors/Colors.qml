@@ -20,9 +20,11 @@
  */
 
 import QtQuick 2.1
+import QtMultimedia 5.0
 
 import "qrc:/gcompris/src/core"
-import "colors.js" as Activity
+import "colors.js" as Dataset
+import "findit.js" as Activity
 
 ActivityBase {
     id: activity
@@ -30,6 +32,10 @@ ActivityBase {
 
     onStart: {}
     onStop: {}
+    property variant dataset: Dataset.get()
+    property string backgroundImg: "qrc:/gcompris/src/activities/colors/resource/background.svgz"
+    property int itemWidth: 110
+    property int itemHeight: 110
 
     pageComponent: Image {
         id: background
@@ -37,14 +43,15 @@ ActivityBase {
         signal stop
         focus: true
         fillMode: Image.PreserveAspectCrop
-        source: "qrc:/gcompris/src/activities/colors/resource/background.svgz"
+        source: backgroundImg
 
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
         onStart: { Activity.start(main, background, bar, bonus,
-                                  containerModel, questionItem) }
+                                  containerModel, questionItem,
+                                  dataset) }
         onStop: { Activity.stop() }
 
         ListModel {
@@ -58,13 +65,17 @@ ActivityBase {
            y: main.height * 0.2
            width: main.width * 0.7
            height: main.height * 0.6
-           cellWidth : 110
-           cellHeight : 110
+           cellWidth : itemWidth
+           cellHeight : itemHeight
            delegate: ColorItem {
-                   source: "qrc:/gcompris/src/activities/colors/resource/" + image
-                   audioSrc: "qrc:/gcompris/src/activities/colors/resource/" + audio
+                   source: image
+                   audioSrc: audio
                    question: text
            }
+        }
+
+        Audio {
+            id: audioQuestion
         }
 
         Text {
@@ -78,7 +89,9 @@ ActivityBase {
             styleColor: "gray"
 
             function initQuestion() {
-                text = Activity.getCurrentQuestion()
+                text = Activity.getCurrentTextQuestion()
+                audioQuestion.source = Activity.getCurrentAudioQuestion()
+                audioQuestion.play()
                 opacity = 1.0
             }
 
