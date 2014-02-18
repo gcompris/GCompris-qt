@@ -1,5 +1,6 @@
 # The list of activities that will be loaded at GCompris start.
 # Keep it sorted
+advanced_colors
 ballcatch
 clickgame
 colors
