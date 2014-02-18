@@ -1,7 +1,7 @@
 /* GCompris - Colors.qml
  *
  * Original activity in the Gtk+ version of GCompris by
- * Pascal Georges (pascal.georges1@free.fr)
+ * Pascal Georges <pascal.georges1@free.fr>
  *
  * Copyright (C) 2014 Bruno Coudoin
  *
@@ -20,106 +20,12 @@
  */
 
 import QtQuick 2.1
-import QtMultimedia 5.0
 
-import "qrc:/gcompris/src/core"
 import "colors.js" as Dataset
-import "findit.js" as Activity
 
-ActivityBase {
-    id: activity
-    focus: true
-
-    onStart: {}
-    onStop: {}
-    property variant dataset: Dataset.get()
-    property string backgroundImg: "qrc:/gcompris/src/activities/colors/resource/background.svgz"
-    property int itemWidth: 110
-    property int itemHeight: 110
-
-    pageComponent: Image {
-        id: background
-        signal start
-        signal stop
-        focus: true
-        fillMode: Image.PreserveAspectCrop
-        source: backgroundImg
-
-        Component.onCompleted: {
-            activity.start.connect(start)
-            activity.stop.connect(stop)
-        }
-        onStart: { Activity.start(main, background, bar, bonus,
-                                  containerModel, questionItem,
-                                  dataset) }
-        onStop: { Activity.stop() }
-
-        ListModel {
-              id: containerModel
-        }
-
-        GridView {
-           id: container
-           model: containerModel
-           x: main.width * 0.2
-           y: main.height * 0.2
-           width: main.width * 0.7
-           height: main.height * 0.6
-           cellWidth : itemWidth
-           cellHeight : itemHeight
-           delegate: ColorItem {
-                   source: image
-                   audioSrc: audio
-                   question: text
-           }
-        }
-
-        Audio {
-            id: audioQuestion
-        }
-
-        Text {
-            id: questionItem
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: parent.top
-            anchors.topMargin: 10
-            font.pointSize: 24
-            color: "white"
-            style: Text.Raised;
-            styleColor: "gray"
-
-            function initQuestion() {
-                text = Activity.getCurrentTextQuestion()
-                audioQuestion.source = Activity.getCurrentAudioQuestion()
-                audioQuestion.play()
-                opacity = 1.0
-            }
-
-            onOpacityChanged: opacity == 0 ? initQuestion() : ""
-            Behavior on opacity { PropertyAnimation { duration: 500 } }
-        }
-
-        DialogHelp {
-            id: dialogHelp
-            onClose: home()
-        }
-
-        Bar {
-            id: bar
-            content: BarEnumContent { value: help | home | previous | next }
-            onHelpClicked: {
-                displayDialog(dialogHelp)
-            }
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
-        }
-
-        Bonus {
-            id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
-        }
-
-    }
-
+FindIt {
+    dataset: Dataset.get()
+    backgroundImg: "qrc:/gcompris/src/activities/colors/resource/background.svgz"
+    itemWidth: 130
+    itemHeight: 130
 }
