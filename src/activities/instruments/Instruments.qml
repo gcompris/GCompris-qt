@@ -24,7 +24,7 @@ import QtQuick 2.1
 import "qrc:/gcompris/src/activities/colors"
 import "instruments.js" as Dataset
 
-Colors {
+FindIt {
     dataset: Dataset.get()
     backgroundImg: "qrc:/gcompris/src/activities/instruments/resource/background.svgz"
     itemWidth: 130
