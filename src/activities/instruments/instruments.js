@@ -16,9 +16,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-.pragma library
-.import QtQuick 2.0 as Quick
-
 var _colors =
         [
             [ // Level 1
@@ -161,7 +158,7 @@ var _colors =
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/drum_kit.ogg"
             },
             {
-                "image": "qrc:/gcompris/src/activities/instruments/resource/accordion.pngz",
+                "image": "qrc:/gcompris/src/activities/instruments/resource/accordion.png",
                 "text": "Find the accordion",
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/accordion.ogg"
             },
@@ -171,7 +168,7 @@ var _colors =
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/banjo.ogg"
             },
             {
-                "image": "qrc:/gcompris/src/activities/instruments/resource/bongo.pngz",
+                "image": "qrc:/gcompris/src/activities/instruments/resource/bongo.png",
                 "text": "Find the bongo",
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/bongo.ogg"
             },
@@ -193,7 +190,7 @@ var _colors =
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/drum_kit.ogg"
             },
             {
-                "image": "qrc:/gcompris/src/activities/instruments/resource/accordion.pngz",
+                "image": "qrc:/gcompris/src/activities/instruments/resource/accordion.png",
                 "text": "Find the accordion",
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/accordion.ogg"
             },
@@ -216,7 +213,7 @@ var _colors =
             [ // Level 7
 
             {
-                "image": "qrc:/gcompris/src/activities/instruments/resource/bongo.pngz",
+                "image": "qrc:/gcompris/src/activities/instruments/resource/bongo.png",
                 "text": "Find the bongo",
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/bongo.ogg"
             },
@@ -241,7 +238,7 @@ var _colors =
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/maracas.ogg"
             },
             {
-                "image": "qrc:/gcompris/src/activities/instruments/resource/organ.pngz",
+                "image": "qrc:/gcompris/src/activities/instruments/resource/organ.png",
                 "text": "Find the organ",
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/organ.ogg"
             }
@@ -259,7 +256,7 @@ var _colors =
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/timpani.ogg"
             },
             {
-                "image": "qrc:/gcompris/src/activities/instruments/resource/triangle.pngz",
+                "image": "qrc:/gcompris/src/activities/instruments/resource/triangle.png",
                 "text": "Find the triangle",
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/triangle.ogg"
             },
@@ -274,7 +271,7 @@ var _colors =
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/maracas.ogg"
             },
             {
-                "image": "qrc:/gcompris/src/activities/instruments/resource/organ.pngz",
+                "image": "qrc:/gcompris/src/activities/instruments/resource/organ.png",
                 "text": "Find the organ",
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/organ.ogg"
             }
@@ -292,7 +289,7 @@ var _colors =
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/timpani.ogg"
             },
             {
-                "image": "qrc:/gcompris/src/activities/instruments/resource/triangle.pngz",
+                "image": "qrc:/gcompris/src/activities/instruments/resource/triangle.png",
                 "text": "Find the triangle",
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/triangle.ogg"
             },
