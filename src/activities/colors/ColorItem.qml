@@ -22,7 +22,9 @@ Image {
             if(question === Activity.getCurrentTextQuestion())
                 Activity.nextQuestion()
             else {
-                audio.play()
+                if(audioSrc) {
+                    audio.play()
+                }
                 Activity.lost()
             }
         }
