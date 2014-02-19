@@ -10,6 +10,7 @@ include(src/activities/menu/menu.pri)
 
 # Activity Includes
 include(src/activities/advanced_colors/advanced_colors.pri)
+include(src/activities/algebra_by/algebra_by.pri)
 include(src/activities/ballcatch/ballcatch.pri)
 include(src/activities/clickgame/clickgame.pri)
 include(src/activities/colors/colors.pri)
