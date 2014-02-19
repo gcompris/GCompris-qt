@@ -69,14 +69,19 @@ var background
 var bar
 var activity
 var ball
+var rightHand
+var leftHand
 var deltaPressedTimer
 
-function start(background_, bar_, activity_, ball_, deltaPressedTimer_) {
+function start(background_, bar_, activity_, ball_, rightHand_,
+               leftHand_, deltaPressedTimer_) {
     background = background_
     bar = bar_
     activity = activity_
     deltaPressedTimer = deltaPressedTimer_
     ball = ball_
+    rightHand = rightHand_;
+    leftHand = leftHand_;
 
     currentLevel = 0
 
@@ -89,18 +94,24 @@ function stop() {
 }
 
 function leftShiftPressed() {
-    if(!deltaPressedTimer.running && !activity.rightPressed)
+    if(!deltaPressedTimer.running && !activity.rightPressed) {
+        leftHand.animate(timerinc)
         deltaPressedTimer.start()
+    }
 
     if(activity.rightPressed) {
+        leftHand.animate(timerinc)
         background.playSound("brick")
     }
 }
 
 function rightShiftPressed() {
-    if(!deltaPressedTimer.running && !activity.leftPressed)
+    if(!deltaPressedTimer.running && !activity.leftPressed) {
         deltaPressedTimer.start()
+        rightHand.animate(timerinc)
+    }
     if(activity.leftPressed) {
+        rightHand.animate(timerinc)
         background.playSound("brick")
     }
 }
@@ -126,6 +137,8 @@ function initLevel() {
 
     activity.gameWon = false
 
+    leftHand.reinitPosition()
+    rightHand.reinitPosition()
 }
 
 function nextLevel() {
