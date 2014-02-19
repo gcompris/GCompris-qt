@@ -21,8 +21,10 @@ APP_FILES += \
 	$$PWD/DialogBackground.qml \
 	$$PWD/DialogHelp.qml \
 	$$PWD/GCButtonStyle.qml \
-	$$PWD/Score.qml \
-	$$PWD/NumPad.qml
+	$$PWD/main.qml \
+	$$PWD/NumPad.qml \
+	$$PWD/AnswerButton.qml
+	$$PWD/Score.qml
 
 APP_FILES += \
 	$$PWD/resource/bar_about.svgz \
@@ -56,6 +58,4 @@ APP_FILES += \
 	$$PWD/resource/bonus/tux_good.png \
 	$$PWD/resource/tuxballoon.png
 
-OTHER_FILES += \
-    src/core/AnswerButton.qml
 
