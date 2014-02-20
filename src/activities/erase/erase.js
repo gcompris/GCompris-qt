@@ -81,12 +81,12 @@ var killedBlocks
 var nbLevel = 6
 var nbSubLevel = 8
 
-function start(_main, _background, _bar, _bonus, _type) {
-    main = _main
-    background = _background
-    bar = _bar
-    bonus = _bonus
-    type = _type
+function start(main_, background_, bar_, bonus_, type_) {
+    main = main_
+    background = background_
+    bar = bar_
+    bonus = bonus_
+    type = type_
     currentLevel = 0
     currentSubLevel = 0
     currentImage = 0

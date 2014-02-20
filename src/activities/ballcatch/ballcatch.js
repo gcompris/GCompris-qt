@@ -71,12 +71,12 @@ var activity
 var ball
 var deltaPressedTimer
 
-function start(_background, _bar, _activity, _ball, _deltaPressedTimer) {
-    background = _background
-    bar = _bar
-    activity = _activity
-    deltaPressedTimer = _deltaPressedTimer
-    ball = _ball
+function start(background_, bar_, activity_, ball_, deltaPressedTimer_) {
+    background = background_
+    bar = bar_
+    activity = activity_
+    deltaPressedTimer = deltaPressedTimer_
+    ball = ball_
 
     currentLevel = 0
 

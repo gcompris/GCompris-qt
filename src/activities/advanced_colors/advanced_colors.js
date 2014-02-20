@@ -16,7 +16,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-var _advanced_colors =
+var advanced_colors =
         [
             [ // Level 1
              {
@@ -703,5 +703,5 @@ var _advanced_colors =
 
 
 function get() {
-    return _advanced_colors
+    return advanced_colors
 }

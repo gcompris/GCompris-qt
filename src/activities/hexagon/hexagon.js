@@ -15,11 +15,11 @@ var strawBerry
 var nbx
 var nby
 
-function start(_main, _background, _bar, _bonus) {
-    main = _main
-    background = _background
-    bar = _bar
-    bonus = _bonus
+function start(main_, background_, bar_, bonus_) {
+    main = main_
+    background = background_
+    bar = bar_
+    bonus = bonus_
     currentLevel = 0
     initLevel()
 }
