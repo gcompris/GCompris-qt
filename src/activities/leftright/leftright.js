@@ -53,10 +53,10 @@ var bar;
 var bonus;
 var imageAnimOff;
 
-function start(_bar, _bonus, _imageAnimOff) {
-    bar = _bar;
-    bonus = _bonus;
-    imageAnimOff = _imageAnimOff;
+function start(bar_, bonus_, imageAnimOff_) {
+    bar = bar_;
+    bonus = bonus_;
+    imageAnimOff = imageAnimOff_;
     initLevel()
 }
 

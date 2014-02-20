@@ -16,7 +16,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-var _colors =
+var colors =
         [
             [ // Level 1
              {
@@ -105,5 +105,5 @@ var _colors =
         ]
 
 function get() {
-    return _colors
+    return colors
 }
