@@ -67,6 +67,7 @@ ActivityBase {
            height: main.height * 0.6
            cellWidth : itemWidth
            cellHeight : itemHeight
+           interactive: false
            delegate: ColorItem {
                    source: image
                    audioSrc: audio
