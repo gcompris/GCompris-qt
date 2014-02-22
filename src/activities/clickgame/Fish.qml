@@ -8,11 +8,15 @@ AnimatedSprite {
     id: fish
     property Item main
     property Item bar
-    Component.onCompleted: x = main.width
+    property real targetX // The x target of the fish
     property int duration: 5000
     frameRate: 2
     interpolate: true
-    scale: 1 * ApplicationInfo.ratio
+
+    Component.onCompleted: {
+        targetX = main.width - fish.width
+        x = targetX
+    }
 
     Audio {
         id: audioDrip
@@ -48,16 +52,17 @@ AnimatedSprite {
     }
 
     onXChanged: {
-        if(x >= main.width - fish.width && rotate.angle == 180) {
-            // The window has been shrunk
-        } else if(x >= main.width - fish.width) {
+        if( (x > main.width - fish.width && rotate.angle == 0) ||
+            (x == targetX && rotate.angle == 0) ) {
             rotateLeftAnimation.start()
-            x = 0
+            targetX = 0
+            x = targetX
             y = Activity.currentLevel > 0 ? Math.random() * (main.height - bar.height - fish.height) : y
             bubbleEffect.restart()
-        } else if(x <= 0) {
+        } else if(x == 0 && rotate.angle == 180) {
             rotateRightAnimation.start()
-            x = ApplicationInfo.applicationWidth
+            targetX = main.width - fish.width
+            x = targetX
             bubbleEffect.restart()
         }
     }
