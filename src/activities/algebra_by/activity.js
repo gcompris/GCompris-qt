@@ -13,6 +13,8 @@ var bar
 var bonus
 var secondOperand
 var firstOperand
+var totalQuestions
+var score
 
 // The array of created blocks object
 var createdBlocks
@@ -29,6 +31,8 @@ function start(_main, _background, _bar, _bonus) {
     currentLevel = 0
     currentSubLevel = 0
     initLevel()
+    totalQuestions = 1
+    score = 0
 
     console.log("Activity.js start()");
 }
@@ -70,42 +74,34 @@ function previousLevel() {
 function calculateOperands()
 {
     console.log("Activity.js calculateOperands()");
-    var min
-    var max
+    firstOperand = bar.level
+    secondOperand = getOperand()
+}
+function getOperand()
+{
+  var j = 10;
+  var i = Math.floor((Math.random() * 10) + 1);
 
-    switch(currentLevel + 1)
+  // Get the next free slot
+  //while(operation_done[i]==TRUE && j>=0)
+    while(j>=0)
     {
-    case 1 :
-        min = 1;
-        max = 2;
-        break;
-    case 2 :
-        min = 2;
-        max = 3;
-        break;
-    case 3 :
-        min = 4;
-        max = 5;
-        break;
-    case 4 :
-        min = 6;
-        max = 7;
-        break;
-    case 5 :
-        min = 8;
-        max = 9;
-        break;
-    case 6 :
-        min = 1;
-        max = 10;
-        break;
-    default :
-        min = 1;
-        max = 10;
+      j--;
+      i++;
+      if(i>10)
+        i=1;
     }
-    secondOperand = (min + Math.floor(Math.random() * max-min+1));
-    console.log(secondOperand);
-    firstOperand  = (secondOperand*(min + Math.floor(Math.random() * max)));
-    console.log(firstOperand);
+  //operation_done[i]=TRUE;
+  return i;
+}
+
+function validateAnswer(screenAnswer)
+{
+    if(firstOperand * secondOperand == (screenAnswer * 1))
+    {
+        console.log("Correct Answer")
+        totalQuestions += 1
+        return true
+    }
 }
 
