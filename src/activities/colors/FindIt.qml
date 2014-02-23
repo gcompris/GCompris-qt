@@ -59,20 +59,22 @@ ActivityBase {
         }
 
         GridView {
-           id: container
-           model: containerModel
-           x: main.width * 0.2
-           y: main.height * 0.2
-           width: main.width * 0.7
-           height: main.height * 0.6
-           cellWidth : itemWidth
-           cellHeight : itemHeight
-           interactive: false
-           delegate: ColorItem {
-                   source: image
-                   audioSrc: audio
-                   question: text
-           }
+            id: container
+            model: containerModel
+            x: main.width * 0.2
+            y: main.height * 0.2
+            width: main.width * 0.7
+            height: main.height * 0.6
+            interactive: false
+            cellWidth: itemHeight + 10
+            cellHeight: itemWidth + 10
+            delegate: ColorItem {
+                source: image
+                audioSrc: audio
+                question: text
+                sourceSize.height: itemHeight
+                sourceSize.width: itemWidth
+            }
         }
 
         Audio {
@@ -86,8 +88,9 @@ ActivityBase {
             anchors.topMargin: 10
             font.pointSize: 24
             color: "white"
-            style: Text.Raised;
+            style: Text.Raised
             styleColor: "gray"
+            font.weight: Font.DemiBold
 
             function initQuestion() {
                 text = Activity.getCurrentTextQuestion()

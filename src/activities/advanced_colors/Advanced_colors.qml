@@ -20,6 +20,7 @@
  */
 
 import QtQuick 2.1
+import GCompris 1.0
 
 import "qrc:/gcompris/src/activities/colors"
 import "advanced_colors.js" as Dataset
@@ -27,6 +28,6 @@ import "advanced_colors.js" as Dataset
 FindIt {
     dataset: Dataset.get()
     backgroundImg: "qrc:/gcompris/src/activities/advanced_colors/resource/background.svgz"
-    itemWidth: 130
-    itemHeight: 130
+    itemWidth: 130 * ApplicationInfo.ratio
+    itemHeight: 130 * ApplicationInfo.ratio
 }
