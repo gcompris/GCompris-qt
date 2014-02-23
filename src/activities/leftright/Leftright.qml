@@ -48,9 +48,8 @@ ActivityBase {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 fillMode: Image.PreserveAspectFit
-                width: main.width > 200 ? 200 : parent.width - 10
                 opacity: 0
-                scale: 1 * ApplicationInfo.ratio
+                sourceSize.height: blackBoard.height * 0.5
             }
 
             Image {
