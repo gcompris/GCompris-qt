@@ -7,13 +7,13 @@ APP_FILES += \
 
 APP_FILES += \
 	$$PWD/resource/accordion.ogg \
-	$$PWD/resource/accordion.png \
+	$$PWD/resource/accordion.svgz \
 	$$PWD/resource/activity.desktop \
 	$$PWD/resource/background.svgz \
 	$$PWD/resource/banjo.ogg \
 	$$PWD/resource/banjo.svgz \
 	$$PWD/resource/bongo.ogg \
-	$$PWD/resource/bongo.png \
+	$$PWD/resource/bongo.svgz \
 	$$PWD/resource/castanets.ogg \
 	$$PWD/resource/castanets.svgz \
 	$$PWD/resource/cello.ogg \
@@ -39,7 +39,7 @@ APP_FILES += \
 	$$PWD/resource/maracas.ogg \
 	$$PWD/resource/maracas.svgz \
 	$$PWD/resource/organ.ogg \
-	$$PWD/resource/organ.png \
+	$$PWD/resource/organ.svgz \
 	$$PWD/resource/piano.ogg \
 	$$PWD/resource/piano.svgz \
 	$$PWD/resource/saxophone.ogg \
@@ -51,7 +51,7 @@ APP_FILES += \
 	$$PWD/resource/timpani.ogg \
 	$$PWD/resource/timpani.svgz \
 	$$PWD/resource/triangle.ogg \
-	$$PWD/resource/triangle.png \
+	$$PWD/resource/triangle.svgz \
 	$$PWD/resource/trombone.ogg \
 	$$PWD/resource/trombone.svgz \
 	$$PWD/resource/trumpet.ogg \
