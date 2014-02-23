@@ -17,16 +17,18 @@ ActivityBase {
 
         Loader { id: activityLoader }
 
-        property int iconWidth: 210
-        property int iconHeight: 210
+        property int iconWidth: 210 * ApplicationInfo.ratio
+        property int iconHeight: 210 * ApplicationInfo.ratio
+        property int cellWidth2: iconWidth+(main.width%iconWidth)/Math.round(main.width/iconWidth)
+        property int cellHeight2: iconHeight * 1.3
 
         GridView {
             x: 0
             y: 10
             width: main.width
             height: main.height - 50
-            cellWidth: iconWidth+(main.width%iconWidth)/Math.round(main.width/iconWidth)
-            cellHeight: iconHeight
+            cellWidth: cellWidth2
+            cellHeight: cellHeight2
             focus: true
             clip: true
             model: ActivityInfoTree.menuTree
@@ -35,8 +37,8 @@ ActivityBase {
                 height: iconHeight
                 Rectangle {
                     id: background
-                    width: 200
-                    height: 200
+                    width: cellWidth2 - 10
+                    height: cellHeight2 - 10
                     anchors.horizontalCenter: parent.horizontalCenter
                     opacity: 0.6
                     border.width: 2
@@ -46,6 +48,7 @@ ActivityBase {
                     source: "qrc:/gcompris/src/activities/" + icon;
                     anchors.top: background.top
                     anchors.horizontalCenter: parent.horizontalCenter
+                    sourceSize.height: iconHeight
                     anchors.margins: 5
                     Text {
                         anchors.top: parent.bottom
