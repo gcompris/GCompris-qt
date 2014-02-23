@@ -15,6 +15,11 @@ DialogBackground {
         contentText += "<br/><br/>"
         contentText += "<b>" + activityInfo.description + "</b>"
         contentText += "<br/><br/>"
+        if(activityInfo.author) {
+            contentText += "<b>" + "Author: " + "</b>" + activityInfo.author
+            contentText += "<br/><br/>"
+        }
+        contentText += "<br/><br/>"
         if(activityInfo.prerequisite) {
             contentText += "<b>" + "Prerequisite: " + "</b>" + activityInfo.prerequisite
             contentText += "<br/><br/>"
