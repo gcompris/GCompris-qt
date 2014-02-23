@@ -70,10 +70,10 @@ Image {
             finishX = x
         }
         else if(activity.leftPressed) {
-            finishX = background.width - 3 * width
+            finishX = tux.x + tux.width * 2
         }
         else {
-            finishX = 2 * width
+            finishX = tux.x - tux.width * 2
         }
         /* Only start the timer if the game is at init state.
            In init state, radius is initScale */
@@ -83,7 +83,7 @@ Image {
 
     function reinitBall() {
         x = background.width / 2 - width / 2;
-        y = leftHand.y;
+        y = leftHand.y + 10;
         ball.scale = initScale;
         ball.rotation = 0;
     }
