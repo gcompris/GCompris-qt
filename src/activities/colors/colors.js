@@ -87,14 +87,46 @@ var colors =
                  "audio": "voices/$LOCALE/colors/purple.ogg"
              },
              {
-                 "image": "qrc:/gcompris/src/activities/colors/resource/red_duck.svgz",
-                 "text": "Find the red duck",
-                 "audio": "voices/$LOCALE/colors/red.ogg"
-             },
-             {
                  "image": "qrc:/gcompris/src/activities/colors/resource/white_duck.svgz",
                  "text": "Find the white duck",
                  "audio": "voices/$LOCALE/colors/white.ogg"
+             }
+            ],
+            [ // Level 3
+             {
+                 "image": "qrc:/gcompris/src/activities/colors/resource/yellow_duck.svgz",
+                 "text": "Find the yellow duck",
+                 "audio": "voices/$LOCALE/colors/yellow.ogg"
+             },
+             {
+                 "image": "qrc:/gcompris/src/activities/colors/resource/brown_duck.svgz",
+                 "text": "Find the brown duck",
+                 "audio": "voices/$LOCALE/colors/brown.ogg"
+             },
+             {
+                 "image": "qrc:/gcompris/src/activities/colors/resource/green_duck.svgz",
+                 "text": "Find the green duck",
+                 "audio": "voices/$LOCALE/colors/green.ogg"
+             },
+             {
+                 "image": "qrc:/gcompris/src/activities/colors/resource/grey_duck.svgz",
+                 "text": "Find the grey duck",
+                 "audio": "voices/$LOCALE/colors/grey.ogg"
+             },
+             {
+                 "image": "qrc:/gcompris/src/activities/colors/resource/orange_duck.svgz",
+                 "text": "Find the orange duck",
+                 "audio": "voices/$LOCALE/colors/orange.ogg"
+             },
+             {
+                 "image": "qrc:/gcompris/src/activities/colors/resource/purple_duck.svgz",
+                 "text": "Find the purple duck",
+                 "audio": "voices/$LOCALE/colors/purple.ogg"
+             },
+             {
+                 "image": "qrc:/gcompris/src/activities/colors/resource/red_duck.svgz",
+                 "text": "Find the red duck",
+                 "audio": "voices/$LOCALE/colors/red.ogg"
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/blue_duck.svgz",
