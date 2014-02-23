@@ -12,7 +12,6 @@ import "activity.js" as Activity
 ActivityBase {
     id: activity
     focus: true
-
     pageComponent: Image {
         source: "qrc:/gcompris/src/activities/algebra_by/resource/scenery2_background.png"
         fillMode: Image.PreserveAspectCrop
@@ -65,20 +64,15 @@ ActivityBase {
             id: bonus
             Component.onCompleted: done.connect(Activity.nextLevel)
         }
+
         Balloon {
             id: balloon
 
         }
-        NumPad {
-            id:numpadLeft
-            x:0
-            y:0
-        }
 
-        NumPad{
-            id:numpadRight
-            x:parent.width - 70
-            y:0
+        NumPad {
+            id:numpad
+
         }
 
         Text{
@@ -90,9 +84,8 @@ ActivityBase {
             function firstOpCalculated() {
                 firstOp.text = Activity.firstOperand
             }
-
-
         }
+
         Text{
             id: multiply
             x: 150
@@ -106,19 +99,47 @@ ActivityBase {
             x: 210
             y:80
             font.pixelSize: 32
-
-
             function secondOpCalculated() {
                 secondOp.text = Activity.secondOperand
+                numpad.resetText()
             }
         }
-            Text{
-                id: equals
-                x: 270
-                y:80
-                font.pixelSize: 32
-                text: "="
+
+        Text{
+            id: equals
+            x: 270
+            y:80
+            font.pixelSize: 32
+            text: "="
+        }
+
+        Text{
+            id:product
+            x: 330
+            y:80
+            font.pixelSize: 32
+            text: numpad.answer
+
+            onTextChanged: {
+                if(Activity.validateAnswer(numpad.answer))
+                {
+                    numpad.answer =""
+                    if(Activity.totalQuestions <= 10)
+                    {
+                        Activity.score += 1
+                        Activity.calculateOperands()
+                        firstOp.firstOpCalculated()
+                        secondOp.secondOpCalculated()
+                        console.log("product.text")
+
+                    }
+                }
 
             }
+
+
         }
     }
+
+}
+
