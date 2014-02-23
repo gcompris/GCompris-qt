@@ -1,10 +1,13 @@
 import QtQuick 2.1
+import GCompris 1.0
 
 Image {
     id: button
     state: "notclicked"
-    property int contentId
     visible: contentId & bar.content.value
+
+    property int contentId
+
     signal clicked
 
     MouseArea {

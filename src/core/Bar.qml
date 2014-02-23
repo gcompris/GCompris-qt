@@ -7,8 +7,8 @@ Item {
     anchors.bottom: parent.bottom
     width: barRow.width
     height: barRow.height - 30
-    scale: 1 * ApplicationInfo.ratio
     z: 1000
+    property real barZoom: 1.2 * ApplicationInfo.ratio
     property BarEnumContent content
     property int level: 0
     signal aboutClicked
@@ -34,22 +34,26 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svgz";
             contentId: ApplicationInfo.isMobile ? content.disabled : content.exit
+            sourceSize.width: 66 * barZoom
             onClicked: Qt.quit();
         }
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_about.svgz";
             contentId: content.about
+            sourceSize.width: 66 * barZoom
             onClicked: bar.aboutClicked()
         }
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_help.svgz";
             contentId: content.help
+            sourceSize.width: 66 * barZoom
             onClicked: bar.helpClicked()
         }
         BarButton {
             id: previousButton
             source: "qrc:/gcompris/src/core/resource/bar_previous.svgz";
             contentId: content.previous
+            sourceSize.width: 30 * barZoom
             onClicked: bar.previousLevelClicked()
         }
         Text {
@@ -66,12 +70,14 @@ Item {
             id: nextButton
             source: "qrc:/gcompris/src/core/resource/bar_next.svgz";
             contentId: content.next
+            sourceSize.width: 30 * barZoom
             onClicked: bar.nextLevelClicked()
         }
         BarButton {
             id: homeButton
             source: "qrc:/gcompris/src/core/resource/bar_home.svgz";
             contentId: ApplicationInfo.isMobile ? content.disabled : content.home
+            sourceSize.width: 66 * barZoom
             onClicked: bar.homeClicked()
         }
         Item { width: 10; height: 1 }
