@@ -197,17 +197,18 @@ ActivityBase {
 
         Image {
             id: tux
-            x: main.width/2 - width/2
+            x: main.width / 2 - width / 2
             y: main.height / 3
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg"
+            sourceSize.height: 100 * ApplicationInfo.ratio
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svgz"
         }
 
         Image {
             id: leftHand
-            x: main.width/2 - 240.0
-            y: main.height - 200
+            y: main.height - 1.5 * height
             z: 5
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svg"
+            sourceSize.height: 150 * ApplicationInfo.ratio
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svgz"
 
             NumberAnimation {
                 id: leftHandAnimation
@@ -222,7 +223,7 @@ ActivityBase {
             }
 
             function reinitPosition() {
-                leftHand.x = main.width/2 - 240.0
+                leftHand.x = main.width / 2 - width * 2
             }
 
             MultiPointTouchArea {
@@ -242,10 +243,10 @@ ActivityBase {
         Image {
             id: rightHand
             mirror: true
-            x: main.width/2 + 140.0
-            y: main.height - 200
+            y: main.height - 1.5 * height
             z: 5
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svg"
+            sourceSize.height: 150 * ApplicationInfo.ratio
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svgz"
 
             function animate(newTime) {
                 rightHandAnimation.duration = newTime
@@ -253,14 +254,15 @@ ActivityBase {
             }
 
             function reinitPosition() {
-                rightHand.x = main.width/2 + 140.0
+                rightHand.x = main.width / 2 + width
             }
 
             NumberAnimation {
                 id: rightHandAnimation
                 target: rightHand; property: "x";
-                to: main.width/2 + 5;
-                duration: 1000; easing.type: Easing.InQuad
+                to: main.width / 2 + 5;
+                duration: 1000;
+                easing.type: Easing.InQuad
             }
 
             MultiPointTouchArea {
@@ -278,9 +280,9 @@ ActivityBase {
 
         Image {
             id: leftShift
-            x: main.width/2 - 240.0 - leftHand.width - 10
-            y: main.height - 150
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/shift_key.svg"
+            x: 10
+            y: rightHand.y + rightHand.height / 2
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/shift_key.svgz"
             opacity: leftPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
         }
@@ -288,9 +290,9 @@ ActivityBase {
         Image {
             id: rightShift
             mirror: true
-            x: main.width/2 + 140.0 + rightHand.width + 10
-            y: main.height - 150
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/shift_key.svg"
+            x: main.width - width - 10
+            y: rightHand.y + rightHand.height / 2
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/shift_key.svgz"
             opacity: rightPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
         }
@@ -303,13 +305,13 @@ ActivityBase {
 to make the ball go in a straight line.") :
                       qsTr("Press the two shift keys at the same time,
 to make the ball go in a straight line.")
-            x: main.width/2 + 110.0
-            y: main.height/2
-            width: main.width-x-10
+            x: 10.0
+            y: tux.y
+            width: tux.x - 10
             wrapMode: TextEdit.WordWrap
             horizontalAlignment: TextEdit.AlignHCenter
             verticalAlignment: TextEdit.AlignVCenter
-            font.pointSize: main.width == 0 ? 10 : main.width/80
+            font.pointSize: 16
             // Remove the text when both keys has been pressed
             visible: !(leftPressed && rightPressed)
         }
