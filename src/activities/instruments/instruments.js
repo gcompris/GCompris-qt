@@ -158,7 +158,7 @@ var colors =
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/drum_kit.ogg"
             },
             {
-                "image": "qrc:/gcompris/src/activities/instruments/resource/accordion.png",
+                "image": "qrc:/gcompris/src/activities/instruments/resource/accordion.svgz",
                 "text": "Find the accordion",
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/accordion.ogg"
             },
@@ -168,7 +168,7 @@ var colors =
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/banjo.ogg"
             },
             {
-                "image": "qrc:/gcompris/src/activities/instruments/resource/bongo.png",
+                "image": "qrc:/gcompris/src/activities/instruments/resource/bongo.svgz",
                 "text": "Find the bongo",
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/bongo.ogg"
             },
@@ -190,7 +190,7 @@ var colors =
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/drum_kit.ogg"
             },
             {
-                "image": "qrc:/gcompris/src/activities/instruments/resource/accordion.png",
+                "image": "qrc:/gcompris/src/activities/instruments/resource/accordion.svgz",
                 "text": "Find the accordion",
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/accordion.ogg"
             },
@@ -213,7 +213,7 @@ var colors =
             [ // Level 7
 
             {
-                "image": "qrc:/gcompris/src/activities/instruments/resource/bongo.png",
+                "image": "qrc:/gcompris/src/activities/instruments/resource/bongo.svgz",
                 "text": "Find the bongo",
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/bongo.ogg"
             },
@@ -238,7 +238,7 @@ var colors =
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/maracas.ogg"
             },
             {
-                "image": "qrc:/gcompris/src/activities/instruments/resource/organ.png",
+                "image": "qrc:/gcompris/src/activities/instruments/resource/organ.svgz",
                 "text": "Find the organ",
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/organ.ogg"
             }
@@ -256,7 +256,7 @@ var colors =
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/timpani.ogg"
             },
             {
-                "image": "qrc:/gcompris/src/activities/instruments/resource/triangle.png",
+                "image": "qrc:/gcompris/src/activities/instruments/resource/triangle.svgz",
                 "text": "Find the triangle",
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/triangle.ogg"
             },
@@ -271,7 +271,7 @@ var colors =
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/maracas.ogg"
             },
             {
-                "image": "qrc:/gcompris/src/activities/instruments/resource/organ.png",
+                "image": "qrc:/gcompris/src/activities/instruments/resource/organ.svgz",
                 "text": "Find the organ",
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/organ.ogg"
             }
@@ -289,7 +289,7 @@ var colors =
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/timpani.ogg"
             },
             {
-                "image": "qrc:/gcompris/src/activities/instruments/resource/triangle.png",
+                "image": "qrc:/gcompris/src/activities/instruments/resource/triangle.svgz",
                 "text": "Find the triangle",
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/triangle.ogg"
             },
