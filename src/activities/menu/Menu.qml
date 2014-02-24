@@ -17,10 +17,10 @@ ActivityBase {
 
         Loader { id: activityLoader }
 
-        property int iconWidth: 210 * ApplicationInfo.ratio
-        property int iconHeight: 210 * ApplicationInfo.ratio
+        property int iconWidth: 190 * ApplicationInfo.ratio
+        property int iconHeight: 190 * ApplicationInfo.ratio
         property int cellWidth2: iconWidth+(main.width%iconWidth)/Math.round(main.width/iconWidth)
-        property int cellHeight2: iconHeight * 1.3
+        property int cellHeight2: iconHeight * 1.35
 
         GridView {
             x: 0
