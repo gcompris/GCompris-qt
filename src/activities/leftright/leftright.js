@@ -47,16 +47,17 @@ var levels = [
 ]
 
 
-var currentImageId = 0;
-var currentLevel = 0;
+var currentImageId;
+var currentLevel;
 var bar;
 var bonus;
 var imageAnimOff;
 
 function start(bar_, bonus_, imageAnimOff_) {
-    bar = bar_;
-    bonus = bonus_;
-    imageAnimOff = imageAnimOff_;
+    bar = bar_
+    bonus = bonus_
+    imageAnimOff = imageAnimOff_
+    currentLevel = 0
     initLevel()
 }
 
