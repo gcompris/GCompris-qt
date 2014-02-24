@@ -57,14 +57,15 @@ Item {
             onClicked: bar.previousLevelClicked()
         }
         Text {
+            id: levelTextId
             text: "" + level
             font.family: "Helvetica"
-            font.pointSize: 24
-            font.weight: Font.DemiBold
+            font.pointSize: 36
+            font.weight: Font.Bold
             style: Text.Raised;
             styleColor: "white"
             color: "black"
-            visible: level > 0 ? 1.0 : 0
+            visible: content.previous & content.value
         }
         BarButton {
             id: nextButton
