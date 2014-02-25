@@ -7,6 +7,7 @@ import GCompris 1.0
 Item {
     id: hexagon
     property Item main
+    property Audio audioDrip
     property string color
     property bool hasStrawberry: false
     property double ix
@@ -24,11 +25,6 @@ Item {
     Image {
         id: strawberry
         anchors.fill: parent
-    }
-
-    Audio {
-        id: audioDrip
-        source: "qrc:/gcompris/src/activities/clickgame/resource/drip.wav"
     }
 
     // Taken from
