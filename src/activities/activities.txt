@@ -10,3 +10,4 @@ erase_clic
 hexagon
 instruments
 leftright
+planegame
