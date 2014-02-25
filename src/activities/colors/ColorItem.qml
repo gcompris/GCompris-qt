@@ -19,9 +19,10 @@ Image {
     MouseArea {
         anchors.fill: parent
         onClicked: {
-            if(question === Activity.getCurrentTextQuestion())
+            if(question === Activity.getCurrentTextQuestion()) {
+                clickedEmitter.pulse(500)
                 Activity.nextQuestion()
-            else {
+            } else {
                 if(audioSrc) {
                     audio.play()
                 }
@@ -48,5 +49,32 @@ Image {
               duration: 400 + Math.floor(Math.random() * 400)
               easing.type: Easing.InOutQuad }
     }
+
+    ParticleSystem
+    {
+        id: clickedEffect
+        anchors.fill: parent
+        running: true
+        Emitter {
+            id: clickedEmitter
+            anchors.fill: parent
+            emitRate: 100
+            lifeSpan: 100
+            lifeSpanVariation: 50
+            size: 48
+            sizeVariation: 20
+            system: clickedEffect
+            enabled: false
+        }
+        ImageParticle {
+            source: "qrc:/gcompris/src/activities/clickgame/resource/star.png"
+            sizeTable: "qrc:/gcompris/src/activities/clickgame/resource/sizeTable.png"
+            color: "white"
+            blueVariation: 0.5
+            greenVariation: 0.5
+            redVariation: 0.5
+        }
+    }
+
 
 }
