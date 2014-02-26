@@ -14,7 +14,6 @@ var cloudComponent = Qt.createComponent("qrc:/gcompris/src/activities/planegame/
 var clouds = new Array;
 
 function start(main_, background_, bar_, bonus_, score_, activity_, plane_) {
-    console.log("planegame activity: start")
     main = main_
     background = background_
     bar = bar_
@@ -29,7 +28,6 @@ function start(main_, background_, bar_, bonus_, score_, activity_, plane_) {
 }
 
 function stop() {
-    console.log("planegame activity: stop")
 }
 
 function increaseSpeedX() {
@@ -53,7 +51,6 @@ function decreaseSpeedY() {
 }
 
 function initLevel() {
-    console.log("planegame activity: init level")
     bar.level = activity.currentLevel + 1;
     score.currentSubLevel = 1
 

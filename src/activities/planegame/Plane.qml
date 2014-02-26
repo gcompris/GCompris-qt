@@ -70,7 +70,7 @@ Image {
     Audio {
         id: bonusSound
         source: "qrc:/gcompris/src/activities/planegame/resource/sounds/bonus.wav"
-        onError: console.log("bonus play error: " + errorString)
+        onError: console.log("Plane.qml, bonus play error: " + errorString)
     }
 
     function computeSpeed() {
