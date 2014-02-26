@@ -13,7 +13,7 @@ ActivityBase {
 
     property int itemWidth
     property int itemHeight
-    property int rowsnb
+    property int rowsNb
     property int paired
 
     onStart: {}
@@ -21,7 +21,7 @@ ActivityBase {
     paired:0
 
     onPairedChanged: {
-        if (paired==3){//when 2 pictures are clicked and we click a third one
+        if (paired == 3){ //when 2 pictures are clicked and we click a third one
           Activity.cardReturn()
         }
 
@@ -44,30 +44,25 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         ListModel {
-              id: containerModel
+            id: containerModel
         }
 
         Grid {
-            id:grid
-            columns: Activity.getColumn()
-            x: main.width*0.1
+            id: grid
+            x: main.width * 0.1
             y: main.height * 0.1
             spacing: 20
             Repeater {
-                id:cardRepeater
-                model:containerModel
+                id: cardRepeater
+                model: containerModel
                 delegate: CardItem {
-
                        source: back  //first picture is the back
                        width: width_
-                       height:height_
+                       height: height_
                        backPict: back
-                       isBack:true
-                       imagePath:image
-
-
-                       //audioSrc: audio
-                       //question: text
+                       isBack: true
+                       imagePath: image
+                       matchCode: matchCode_
                }
             }
 

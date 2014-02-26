@@ -18,7 +18,6 @@
  along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 import QtQuick 2.1
-import QtMultimedia 5.0
 import "memory.js" as Activity
 import GCompris 1.0
 
@@ -29,62 +28,62 @@ Image {
     property string audioSrc
     property string backPict
     property string imagePath
-    property bool isBack : true
-    property bool isFound : false
+    property string matchCode
+    property bool isBack: true
+    property bool isFound: false
 
     fillMode: Image.PreserveAspectFit
 
-    //property string question
-
-//    Audio {
-//        id: audio
-//        source: audioSrc
-//    }
-
     MouseArea {
         anchors.fill: parent
+        enabled: item.isBack
         onClicked: {
-
-            if (item.isBack==true){ //card can be clicked only when back
-            item.isBack= false
-            Activity.cardClicked(item,item.imagePath)
-
-            }
+            console.log("code=" + code)
+            item.isBack = false
+            Activity.cardClicked(item)
         }
     }
 
 
     states : [
-        State{
-          name:"hidden";when: isFound==true
-          PropertyChanges { target: item; source:item.imagePath ; opacity:0}
+        State {
+          name: "hidden"; when: isFound == true
+          PropertyChanges { target: item; source:item.imagePath; opacity:0 }
         },
-        State{
-                name:"returned";when: isBack==true
-                PropertyChanges { target: item; source:item.backPict }
+        State {
+            name:"returned"; when: isBack == true
+            PropertyChanges { target: item; source:item.backPict }
+        },
+        State {
+            name:"faced"; when: isBack==false
+            PropertyChanges { target: item; source:item.imagePath }
+        }
+    ]
 
+    transitions: [
+        Transition {
+            from: "faced"; to: "hidden"; reversible: false
+            ParallelAnimation {
+                PropertyAnimation {
+                    duration: 500;
+                    target: item;
+                    property: "opacity";
+                    to: 0
+                }
+            }
         },
-        State{
-                name:"faced";when: isBack==false
-                PropertyChanges { target: item; source:item.imagePath }
+        Transition {
+            from: "faced"; to: "back"; reversible: false
+            ParallelAnimation {
+                PropertyAnimation {
+                    duration: 500;
+                    target: item;
+                    property: "source";
+                    from: item.imagePath;
+                    to: item.backPict }
+            }
         }
 
-            ]
-
-      transitions: [
-          Transition {
-                 from: "faced"; to: "hidden"; reversible: false
-                 ParallelAnimation {
-                     PropertyAnimation { duration: 500; target: item; property: "opacity"; to: 0 }
-                 }
-          },
-          Transition {
-                   from: "faced"; to: "back"; reversible: false
-                   ParallelAnimation {
-                       PropertyAnimation { duration: 500; target: item; property: "source"; from: item.imagePath; to: item.backPict }
-                   }
-          }
-
-                    ]
+    ]
 
 }
