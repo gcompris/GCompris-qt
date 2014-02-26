@@ -14,6 +14,9 @@ Item{
     property variant colours : ["#ea7025", "#67c111", "#00bde3", "#bde300","#e3004c"]
     property variant numbers: [0,1,2,3,4]
     property string answer: ""
+    property bool answerFlag: false
+
+    signal onAnswerChanged()
 
     Column{
 
@@ -37,6 +40,15 @@ Item{
                     anchors.verticalCenter: parent.verticalCenter
                     text: numbers[index]
                     font.pixelSize: parent.height/2
+                }
+
+                MouseArea{
+                    anchors.fill:parent
+
+                    onClicked :{
+                        if(answer.length < 2)
+                            answer += numbers[index]
+                    }
                 }
 
             }
@@ -66,6 +78,14 @@ Item{
                     text:numbers[index] + 5
                     font.pixelSize: parent.height/2
                 }
+                MouseArea{
+                    anchors.fill:parent
+
+                    onClicked: {
+                        if(answer.length < 2)
+                            answer += numbers[index] + 5
+                    }
+                }
             }
         }
         Rectangle{
@@ -82,11 +102,18 @@ Item{
                 anchors.verticalCenter: parent.verticalCenter
                 text:"backspace"
                 font.pixelSize: parent.height/3
-
             }
+
+            MouseArea{
+                anchors.fill:parent
+                onClicked:{
+                    answer = answer.substring(0,answer.length - 1)
+                }
+            }
+
         }
     }
-    MouseArea{
+    /*MouseArea{
         id:pressedNumber
         width:parent.width
         height:parent.height
@@ -113,7 +140,12 @@ Item{
             }
         }
 
-    }
+    }*/
+
+    /*onAnswerChanged: {
+        if(answer != "")
+            answerFlag = true
+    }*/
 
     function resetText()
     {
