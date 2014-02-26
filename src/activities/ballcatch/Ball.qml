@@ -71,10 +71,9 @@ Image {
         }
         else if(activity.leftPressed) {
             finishX = tux.x + tux.width * 2
-            finishX = background.width - 2*ball.finishRadius
         }
         else {
-            finishX = ball.finishRadius
+            finishX = tux.x - tux.width * 2
         }
         /* Only start the timer if the game is at init state.
            In init state, radius is initScale */
