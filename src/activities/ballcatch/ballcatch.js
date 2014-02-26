@@ -82,7 +82,6 @@ function start(background_, bar_, activity_, ball_, rightHand_,
     ball = ball_
     rightHand = rightHand_;
     leftHand = leftHand_;
-
     currentLevel = 0
 
     initLevel()
