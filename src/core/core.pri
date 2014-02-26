@@ -19,6 +19,7 @@ APP_FILES += \
 	$$PWD/DialogBackground.qml \
 	$$PWD/DialogHelp.qml \
 	$$PWD/GCButtonStyle.qml \
+        $$PWD/Score.qml \
 	$$PWD/main.qml
 
 APP_FILES += \

@@ -43,9 +43,12 @@
 #include <QtCore/QUrlQuery>
 #include <QtGui/QGuiApplication>
 #include <QtGui/QScreen>
+#include <QtCore/QLocale>
 
 #include "ApplicationInfo.h"
 #include <QDebug>
+
+#define GC_DEFAULT_LOCALE "en_US.UTF-8"
 
 ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 {
@@ -81,6 +84,18 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     if (m_isMobile)
         connect(qApp->primaryScreen(), SIGNAL(physicalSizeChanged(QSizeF)), this, SLOT(notifyPortraitMode()));
 
+    /*
+     *  TODO See in storage (database, QSettings)
+     *  if the value exist and use it if exist
+     */
+    QLocale locale = QLocale::system();
+    QLocale::setDefault(locale);
+
+    m_Locale = locale.name().split('_').at(0);
+
+    if(m_Locale == "C") {
+        m_Locale = "en"; // TODO with GC_DEFAULT_LOCALE
+    }
 }
 
 void ApplicationInfo::setApplicationWidth(const int newWidth)
