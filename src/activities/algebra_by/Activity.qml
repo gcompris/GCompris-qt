@@ -30,7 +30,8 @@ ActivityBase {
             Activity.start(main, background, bar, bonus)
             firstOp.firstOpCalculated()
             secondOp.secondOpCalculated()
-            balloon.startMoving(parent.height * 10/(Activity.currentLevel + 1))
+            displayScore.displayText()
+            balloon.startMoving(parent.height * 50/(Activity.currentLevel + 1))
         }
         onStop: Activity.stop()
 
@@ -49,20 +50,15 @@ ActivityBase {
                 Activity.previousLevel()
                 firstOp.firstOpCalculated()
                 secondOp.secondOpCalculated()
-                balloon.startMoving(parent.height * 10/(Activity.bar.level))
+                balloon.startMoving(parent.height * 50/(Activity.bar.level))
             }
             onNextLevelClicked: {
                 Activity.nextLevel()
                 firstOp.firstOpCalculated()
                 secondOp.secondOpCalculated()
-                balloon.startMoving(parent.height * 10/(Activity.bar.level))
+                balloon.startMoving(parent.height * 50/(Activity.bar.level))
             }
             onHomeClicked: home()
-        }
-
-        Bonus {
-            id: bonus
-            Component.onCompleted: done.connect(Activity.nextLevel)
         }
 
         Balloon {
@@ -73,7 +69,24 @@ ActivityBase {
         NumPad {
             id:numpad
 
+            onAnswerChanged:{
+                questionsLeft()
+            }
         }
+
+        Bonus {
+            id: bonus
+            Component.onCompleted:
+            {
+                //done.connect(Activity.nextLevel)
+                firstOp.firstOpCalculated()
+                console.log("FirstOperand()" + Activity.firstOperand)
+                secondOp.secondOpCalculated()
+                console.log("SecondOperand()" + Activity.secondOperand)
+                balloon.startMoving(parent.height * 50/(Activity.currentLevel + 1))
+            }
+        }
+
 
         Text{
             id: firstOp
@@ -101,7 +114,6 @@ ActivityBase {
             font.pixelSize: 32
             function secondOpCalculated() {
                 secondOp.text = Activity.secondOperand
-                numpad.resetText()
             }
         }
 
@@ -119,27 +131,52 @@ ActivityBase {
             y:80
             font.pixelSize: 32
             text: numpad.answer
+        }
 
-            onTextChanged: {
-                if(Activity.validateAnswer(numpad.answer))
+        Text{
+            id:displayScore
+            x:parent.width * 3/4
+            y:50
+            font.pixelSize: 32
+
+            function displayText()
+            {
+                console.log("Display text" + Activity.score)
+                if(Activity.score > 0)
+                    displayScore.text = Activity.score + " / 10"
+                else
+                    displayScore.text = "0 / 10"
+            }
+        }
+
+        function questionsLeft()
+        {
+            if(Activity.validateAnswer(numpad.answer))
+            {
+                //numpad.answer =""
+                numpad.resetText()
+                if(Activity.totalQuestions < 2)
                 {
-                    numpad.answer =""
-                    if(Activity.totalQuestions <= 10)
-                    {
-                        Activity.score += 1
-                        Activity.calculateOperands()
-                        firstOp.firstOpCalculated()
-                        secondOp.secondOpCalculated()
-                        console.log("product.text")
+                    Activity.totalQuestions += 1
+                    Activity.score += 1
+                    displayScore.displayText()
+                    Activity.calculateOperands()
+                    firstOp.firstOpCalculated()
+                    secondOp.secondOpCalculated()
+                    balloon.startMoving(parent.height * 50/(Activity.currentLevel + 1))
+                    console.log("product.text")
 
-                    }
                 }
 
+                else
+                {
+                    console.log("Calling bonus")
+                    bonus.good("smiley");
             }
 
 
+            }
         }
     }
 
 }
-
