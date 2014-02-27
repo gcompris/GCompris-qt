@@ -7,6 +7,7 @@ var main
 var background
 var bar
 var bonus
+var audioDrip
 
 // The array of created hexagon object
 var createdHexagon
@@ -15,11 +16,12 @@ var strawBerry
 var nbx
 var nby
 
-function start(main_, background_, bar_, bonus_) {
+function start(main_, background_, bar_, bonus_, audioDrip_) {
     main = main_
     background = background_
     bar = bar_
     bonus = bonus_
+    audioDrip = audioDrip_
     currentLevel = 0
     initLevel()
 }
@@ -69,6 +71,7 @@ function createHexagon(ix, iy, nbx, nby) {
                 background,
                 {
                     "main": main,
+                    "audioDrip": audioDrip,
                     "ix": ix,
                     "iy": iy,
                     "nbx": nbx,
