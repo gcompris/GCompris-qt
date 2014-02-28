@@ -90,9 +90,11 @@ Item{
         }
         Rectangle{
             id:backspaceButton
-            width:parent.width * 2
+//            width:parent.width * 2
+//            height:containerPanel.height - rightPanel.height
+//            x:-parent.width
+            width:parent.width
             height:containerPanel.height - rightPanel.height
-            x:-parent.width
             color: "white"
             border.color: "black"
             border.width: 3
@@ -100,7 +102,7 @@ Item{
             Text{
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
-                text:"backspace"
+                text:"←"
                 font.pixelSize: parent.height/3
             }
 
