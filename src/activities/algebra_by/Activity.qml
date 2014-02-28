@@ -12,6 +12,8 @@ import "activity.js" as Activity
 ActivityBase {
     id: activity
     focus: true
+
+    //property bool iamReadyFlag: false
     pageComponent: Image {
         source: "qrc:/gcompris/src/activities/algebra_by/resource/scenery2_background.png"
         fillMode: Image.PreserveAspectCrop
@@ -21,8 +23,11 @@ ActivityBase {
         focus: true
 
         Component.onCompleted: {
-            activity.start.connect(start)
-            activity.stop.connect(stop)
+//            if(iamReadyFlag)
+//            {
+                activity.start.connect(start)
+                activity.stop.connect(stop)
+//            }
         }
 
         onStart:
@@ -79,11 +84,7 @@ ActivityBase {
             Component.onCompleted:
             {
                 //done.connect(Activity.nextLevel)
-                firstOp.firstOpCalculated()
-                console.log("FirstOperand()" + Activity.firstOperand)
-                secondOp.secondOpCalculated()
-                console.log("SecondOperand()" + Activity.secondOperand)
-                balloon.startMoving(parent.height * 50/(Activity.currentLevel + 1))
+
             }
         }
 
@@ -133,10 +134,26 @@ ActivityBase {
             text: numpad.answer
         }
 
+        Rectangle{
+         id:scoreBoundary
+         x: parent.width * 3/4
+         y: parent.height - 100
+         width: 100
+         height:50
+         //color: '#FFFF00'
+         border.color: "black"
+         radius:4
+         smooth:true
+         border.width:2
+         gradient: Gradient {
+                     GradientStop { position: 0.0; color: "#FFFF66" }
+                     GradientStop { position: 1.0; color: "#FFFF00" }
+                 }
+
         Text{
             id:displayScore
-            x:parent.width * 3/4
-            y:50
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
             font.pixelSize: 32
 
             function displayText()
@@ -147,6 +164,7 @@ ActivityBase {
                 else
                     displayScore.text = "0 / 10"
             }
+        }
         }
 
         function questionsLeft()
@@ -170,13 +188,46 @@ ActivityBase {
 
                 else
                 {
+                    Activity.nextLevel()
+                    Activity.score = 0
+                    Activity.totalQuestions = 0
+                    firstOp.firstOpCalculated()
+                    console.log("FirstOperand()" + Activity.firstOperand)
+                    secondOp.secondOpCalculated()
+                    console.log("SecondOperand()" + Activity.secondOperand)
+                    balloon.startMoving(parent.height * 50/(Activity.currentLevel + 1))
+
                     console.log("Calling bonus")
                     bonus.good("smiley");
-            }
+                }
 
 
             }
         }
     }
+//    Rectangle{
+//        id:iamReady
+//        anchors.horizontalCenter: parent.horizontalCenter
+//        anchors.verticalCenter: parent.verticalCenter
+//        width:parent.width/5
+//        height:parent.height/5
+//        border.color: "black"
+//        radius:4
+//        smooth:true
+//        border.width:2
+//        gradient: Gradient {
+//                    GradientStop { position: 0.0; color: "#FFFF66" }
+//                    GradientStop { position: 1.0; color: "#FFFF00" }
+//                }
+//        MouseArea{
+//            anchors.fill: parent
+
+//            onClicked: {
+//                iamReadyFlag = true
+//            }
+//        }
+
+
+//    }
 
 }
