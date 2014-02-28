@@ -58,14 +58,6 @@ function nextLevel() {
     initLevel();
 }
 
-function nextSubLevel() {
-    if( ++currentSubLevel >= nbSubLevel) {
-        currentSubLevel = 0
-        nextLevel()
-    }
-    initLevel();
-}
-
 function previousLevel() {
     if(--currentLevel < 0) {
         currentLevel = nbLevel - 1
