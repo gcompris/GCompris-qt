@@ -11,7 +11,7 @@ ActivityBase {
     onStart: { focus = true; }
     onStop: { }
 
-    readonly property int max_speed: 7
+    readonly property int max_speed: 8
     property var cloudList
     property int currentLevel: 0
     readonly property int numberOfLevel: 2

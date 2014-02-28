@@ -24,14 +24,13 @@ import GCompris 1.0
 
 Image {
     id: cloud
-    property int speedX : -3
     property int number
 
     property Item activity
 
     sourceSize.height: 100 * ApplicationInfo.ratio
 
-    height: sourceSize.height-50*(activity.currentLevel)
+    height: sourceSize.height-20*(activity.currentLevel)
 
     source: "qrc:/gcompris/src/activities/planegame/resource/cloud.svgz"
     fillMode: Image.PreserveAspectFit
@@ -42,22 +41,17 @@ Image {
         anchors.horizontalCenter: cloud.horizontalCenter
         anchors.verticalCenter: cloud.verticalCenter
         text: number
-        color: "red"
+        color: "black"
+        font.bold: true
+        font.pointSize: 18
     }
 
     Component.onCompleted: {
-        timer.start();
+        x = -cloud.width-1
+        y = Activity.getRandomInt(0, activity.height - cloud.height)
     }
 
-    Timer {
-        id: timer
-        interval: 100
-        repeat: true
-        onTriggered: {
-            if(x+width > 0)
-                x += speedX;
-        }
-    }
+    Behavior on x { PropertyAnimation { duration: 30*activity.width } }
 
     Audio {
         id: audioNumber

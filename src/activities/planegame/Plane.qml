@@ -69,7 +69,7 @@ Image {
 
     Audio {
         id: bonusSound
-        source: "qrc:/gcompris/src/activities/planegame/resource/sounds/bonus.wav"
+        source: "qrc:/gcompris/src/activities/planegame/resource/bonus.wav"
         onError: console.log("Plane.qml, bonus play error: " + errorString)
     }
 
@@ -113,38 +113,41 @@ Image {
     function handleCollisionsWithCloud() {
         var planeX1 = x; var planeX2 = x+width
         var planeY1 = y; var planeY2 = y+height
-        for(var i = cloudList.length - 1; i >= 0 ; --i) {
-            var cloud = cloudList[i];
-            var x1 = cloud.x; var x2 = cloud.x+cloud.width;
-            var y1 = cloud.y; var y2 = cloud.y+cloud.height;
 
-            if(x2 < 0) {
-                // Remove the cloud
-                cloud.destroy()
-                cloudList.splice(i, 1)
-            }
-            else if(isIn(x1, y1, planeX1, planeY1, planeX2, planeY2) ||
-                    isIn(x2, y1, planeX1, planeY1, planeX2, planeY2) ||
-                    isIn(x1, y2, planeX1, planeY1, planeX2, planeY2) ||
-                    isIn(x2, y2, planeX1, planeY1, planeX2, planeY2)) {
+        if(cloudList != undefined) {
+            for(var i = cloudList.length - 1; i >= 0 ; --i) {
+                var cloud = cloudList[i];
+                var x1 = cloud.x; var x2 = cloud.x+cloud.width;
+                var y1 = cloud.y; var y2 = cloud.y+cloud.height;
 
-                // Collision, look for id
-                if(cloud.number == score.currentSubLevel) {
-                    cloud.playSound()
+                if(x2 < 0) {
                     // Remove the cloud
                     cloud.destroy()
                     cloudList.splice(i, 1)
+                }
+                else if(isIn(x1, y1, planeX1, planeY1, planeX2, planeY2) ||
+                        isIn(x2, y1, planeX1, planeY1, planeX2, planeY2) ||
+                        isIn(x1, y2, planeX1, planeY1, planeX2, planeY2) ||
+                        isIn(x2, y2, planeX1, planeY1, planeX2, planeY2)) {
 
-                    score.currentSubLevel++
+                    // Collision, look for id
+                    if(cloud.number == score.currentSubLevel) {
+                        cloud.playSound()
+                        // Remove the cloud
+                        cloud.destroy()
+                        cloudList.splice(i, 1)
 
-                    if(score.currentSubLevel == score.numberOfSublevels
-                            && activity.currentLevel == 0) {
-                        /* Try the next level */
-                        Activity.nextLevel()
+                        score.currentSubLevel++
 
-                        bonusSound.play();
+                        if(score.currentSubLevel == score.numberOfSublevels
+                                && activity.currentLevel == 0) {
+                            /* Try the next level */
+                            Activity.nextLevel()
 
-                        break;
+                            bonusSound.play();
+
+                            break;
+                        }
                     }
                 }
             }
