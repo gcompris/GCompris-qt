@@ -88,7 +88,7 @@ function repositionObjectsOnWidthChanged(factor) {
     plane.x *= factor
     for(var i = clouds.length - 1; i >= 0 ; --i) {
         var cloud = clouds[i];
-        cloud.x *= factor
+        //cloud.x *= factor
     }
 }
 
@@ -101,10 +101,11 @@ function repositionObjectsOnHeightChanged(factor) {
 }
 
 function createCloud() {
-    var cloud = cloudComponent.createObject(background, {"activity": activity});
-
-    cloud.x = background.width - cloud.width
-    cloud.y = getRandomInt(0, background.height - cloud.height)
+    var cloud = cloudComponent.createObject(
+                background, {
+                    "activity": activity,
+                    "x": background.width
+                });
 
     /* Random cloud number */
     if(getRandomInt(0, 1) == 0) {
