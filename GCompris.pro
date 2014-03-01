@@ -20,6 +20,7 @@ include(src/activities/erase_clic/erase_clic.pri)
 include(src/activities/erase_2clic/erase_2clic.pri)
 include(src/activities/hexagon/hexagon.pri)
 include(src/activities/leftright/leftright.pri)
+include(src/activities/planegame/planegame.pri)
 
 APP_FILES += \
 	$$PWD/src/activities/activities.txt \

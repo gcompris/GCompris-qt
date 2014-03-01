@@ -96,6 +96,8 @@ public:
 protected slots:
 	void notifyPortraitMode();
 
+    Q_INVOKABLE QString getAudioFilePath(const QString &file);
+
 protected:
 	qreal getSizeWithRatio(const qreal height) { return ratio() * height; }
 
