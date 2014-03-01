@@ -60,7 +60,6 @@ class ApplicationInfo : public QObject
 	Q_PROPERTY(qreal sliderHandleWidth READ sliderHandleWidth NOTIFY ratioChanged)
 	Q_PROPERTY(qreal sliderHandleHeight READ sliderHandleHeight NOTIFY ratioChanged)
 	Q_PROPERTY(qreal sliderGapWidth READ sliderGapWidth NOTIFY ratioChanged)
-    Q_PROPERTY(QString locale READ locale)
 
 public:
 
@@ -94,10 +93,10 @@ public:
 	qreal sliderGapWidth()  { return m_sliderGapWidth; }
 	qreal sliderHandleWidth()  { return m_sliderHandleWidth; }
 
-    QString locale() { return m_Locale; }
-
 protected slots:
 	void notifyPortraitMode();
+
+    Q_INVOKABLE QString getAudioFilePath(const QString &file);
 
 protected:
 	qreal getSizeWithRatio(const qreal height) { return ratio() * height; }
@@ -117,7 +116,6 @@ private:
 	qreal m_ratio;
 	qreal m_hMargin;
 	qreal m_sliderHandleHeight, m_sliderHandleWidth, m_sliderGapWidth;
-    QString m_Locale;
 };
 
 #endif // APPLICATIONINFO_H

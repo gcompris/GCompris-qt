@@ -59,9 +59,8 @@ Image {
     }
 
     function playSound() {
-        /* TODO Use QTextCodec or QString toUnicode instead, and see where are
-          stored the voices */
-        audioNumber.source = "../../../voices/"+ApplicationInfo.locale+"/alphabet/U003" + number + ".ogg"
+        /* TODO Use QTextCodec or QString toUnicode instead */
+        audioNumber.source = ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/U003" + number + ".ogg")
         audioNumber.play()
     }
 }

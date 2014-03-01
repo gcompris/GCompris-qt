@@ -83,19 +83,6 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 
     if (m_isMobile)
         connect(qApp->primaryScreen(), SIGNAL(physicalSizeChanged(QSizeF)), this, SLOT(notifyPortraitMode()));
-
-    /*
-     *  TODO See in storage (database, QSettings)
-     *  if the value exist and use it if exist
-     */
-    QLocale locale = QLocale::system();
-    QLocale::setDefault(locale);
-
-    m_Locale = locale.name().split('_').at(0);
-
-    if(m_Locale == "C") {
-        m_Locale = "en"; // TODO with GC_DEFAULT_LOCALE
-    }
 }
 
 void ApplicationInfo::setApplicationWidth(const int newWidth)
@@ -121,6 +108,28 @@ void ApplicationInfo::setIsPortraitMode(const bool newMode)
         emit portraitModeChanged();
         emit hMarginChanged();
     }
+}
+
+QString ApplicationInfo::getAudioFilePath(const QString &file)
+{
+    /*
+     *  TODO See in storage (database, QSettings)
+     *  if the value exist and use it if exist
+     */
+    QLocale locale = QLocale::system();
+    QString localeShortName = locale.name().split('_').at(0);
+    if(locale.language() == QLocale::C) {
+        localeShortName = "en";
+    }
+
+    QString filename = file;
+    filename.replace("$LOCALE", localeShortName);
+    QString("file:///%1/%2").arg(QCoreApplication::applicationDirPath(), filename);
+#if defined(Q_OS_ANDROID)
+    return QString("asset:/%1").arg(file);
+#else
+    return QString("file:///%1/%2").arg(QCoreApplication::applicationDirPath(), filename);
+#endif
 }
 
 QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,

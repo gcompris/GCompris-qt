@@ -56,7 +56,7 @@ Image {
         name: "rotated"
         PropertyChanges {
             target: plane;
-            rotation: Math.abs(plane.speedX) * 45 / activity.max_speed;
+            rotation: Math.abs(plane.speedX) * 20 / activity.max_speed;
         }
     }
 
