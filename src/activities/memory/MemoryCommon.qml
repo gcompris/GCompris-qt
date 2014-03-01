@@ -10,11 +10,17 @@ import "memory.js" as Activity
 ActivityBase {
     id: activity
     focus: true
-
+    property real displayWidthRatio
+    property real displayHeightRatio
+    property int displayX
+    property int displayY
     property int itemWidth
     property int itemHeight
     property int rowsNb
     property int paired
+    property string backgroundImg
+    property string type  //define if it's a "picture" ou a "sound" memory
+    property var dataset
 
     onStart: {}
     onStop: {}
@@ -28,7 +34,7 @@ ActivityBase {
     }
 
     pageComponent: Image {
-        source: "qrc:/gcompris/src/activities/memory/resource/scenery_background.png"
+        source: backgroundImg
         fillMode: Image.PreserveAspectCrop
         id: background
         signal start
@@ -40,7 +46,7 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        onStart: { Activity.start(main, background, bar, bonus, containerModel,cardRepeater,grid) }
+        onStart: { Activity.start(main, type,background, bar, bonus, containerModel,cardRepeater,grid, dataset,displayWidthRatio,displayHeightRatio,displayX,displayY) }
         onStop: { Activity.stop() }
 
         ListModel {
@@ -49,8 +55,8 @@ ActivityBase {
 
         Grid {
             id: grid
-            x: main.width * 0.1
-            y: main.height * 0.1
+            x: displayX
+            y: displayY
             spacing: 20
             Repeater {
                 id: cardRepeater
@@ -63,6 +69,7 @@ ActivityBase {
                        isBack: true
                        imagePath: image
                        matchCode: matchCode_
+
                }
             }
 
