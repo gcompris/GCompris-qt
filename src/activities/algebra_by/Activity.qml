@@ -46,6 +46,9 @@ ActivityBase {
             onPreviousLevelClicked: {
                 iamReady.visible = true
                 balloon.visible = false
+                firstOp.visible = false
+                secondOp.visible = false
+                score.currentSubLevel = 0
                 balloon.stopMoving()
                 Activity.previousLevel()
 
@@ -53,6 +56,9 @@ ActivityBase {
             onNextLevelClicked: {
                 iamReady.visible = true
                 balloon.visible = false
+                firstOp.visible = false
+                secondOp.visible = false
+                score.currentSubLevel = 0
                 balloon.stopMoving()
                 Activity.nextLevel()
 
