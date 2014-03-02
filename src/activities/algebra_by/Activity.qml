@@ -84,7 +84,7 @@ ActivityBase {
                 score.numberOfSubLevels = 10
                 balloon.visible = true
                 balloon.stopMoving()
-                balloon.startMoving(balloon.parent.height * 50/(Activity.currentLevel + 1))
+                balloon.startMoving(balloon.parent.height * 50)
 
             }
         }
