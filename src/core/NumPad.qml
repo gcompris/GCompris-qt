@@ -14,7 +14,7 @@ Item{
     property variant colours : ["#ea7025", "#67c111", "#00bde3", "#bde300","#e3004c"]
     property variant numbers: [0,1,2,3,4]
     property string answer: ""
-    property bool answerFlag: false
+    property bool answerFlag: true
 
     signal onAnswerChanged()
 
@@ -90,9 +90,6 @@ Item{
         }
         Rectangle{
             id:backspaceButton
-//            width:parent.width * 2
-//            height:containerPanel.height - rightPanel.height
-//            x:-parent.width
             width:parent.width
             height:containerPanel.height - rightPanel.height
             color: "white"
@@ -115,39 +112,6 @@ Item{
 
         }
     }
-    /*MouseArea{
-        id:pressedNumber
-        width:parent.width
-        height:parent.height
-        onClicked: {
-            if(mouseY >= 0 && mouseY <= leftPanel.height && answer.length < 2)
-            {
-                if(mouseX <= 70)
-                {
-                    answer += Math.floor(mouseY/(leftPanel.height/5))
-                }
-                else if(mouseX >= parent.width - 70 && mouseX <= parent.width)
-                {
-                    answer += Math.floor(mouseY/(leftPanel.height/5)) + 5
-                }
-            }
-            else if(mouseY >=leftPanel.height)
-            {
-
-                if(mouseX >= containerPanel.width-parent.width && mouseX <= parent.width)
-                {
-                    answer = answer.substring(0,answer.length - 1)
-
-                }
-            }
-        }
-
-    }*/
-
-    /*onAnswerChanged: {
-        if(answer != "")
-            answerFlag = true
-    }*/
 
     function resetText()
     {
