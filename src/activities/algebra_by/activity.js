@@ -10,8 +10,10 @@ var bonus
 var secondOperand
 var firstOperand
 var totalQuestions
-var score
 var operationDone = [false, false, false, false, false, false, false, false, false, false]
+var jsIamReady
+var jsBalloon
+var jsScore
 
 // The array of created blocks object
 var createdBlocks
@@ -28,14 +30,10 @@ function start(_main, _background, _bar, _bonus) {
     currentLevel = 0
     currentSubLevel = 0
     initLevel()
-    totalQuestions = 0
-    score = 0
-
-    console.log("Activity.js start()");
+    totalQuestions = 1
 }
 
 function stop() {
-    //destroyBlocks();
 }
 
 function initLevel() {
@@ -43,13 +41,10 @@ function initLevel() {
     for(var i=0; i<10; i++)
         operationDone[i] = false
     bar.level = currentLevel + 1
-    console.log("Activity.js initLevel()");
     background.source = "qrc:/gcompris/src/activities/algebra_by/resource/scenery2_background.png"
     calculateOperands()
-    totalQuestions = 0
-    score = 0
-
- }
+    totalQuestions = 1
+}
 
 function nextLevel() {
     if( ++currentLevel >= nbLevel ) {
@@ -67,36 +62,80 @@ function previousLevel() {
 
 function calculateOperands()
 {
-    console.log("Activity.js calculateOperands() " + bar.level);
     firstOperand = bar.level
     secondOperand = getOperand()
 }
+
 function getOperand()
 {
-    console.log("Activity.js getOperand() " + bar.level)
-  var j = 10;
-  var i = Math.floor((Math.random() * 10) + 1);
+    var j = 10;
+    var i = Math.floor((Math.random() * 10) + 1);
 
-  // Get the next free slot
-  while(operationDone[i] === true && j>=0)
-    //while(j>=0)
+    // Get the next free slot
+    while(operationDone[i] === true && j>=0)
     {
-      j--;
-      i++;
-      if(i>10)
-        i=1;
+        j--;
+        i++;
+        if(i>10)
+            i=1;
     }
-  operationDone[i] = true;
-  return i;
+    operationDone[i] = true;
+    return i;
 }
 
 function validateAnswer(screenAnswer)
 {
     if(firstOperand * secondOperand == (screenAnswer * 1))
     {
-        console.log("Correct Answer")
-        //totalQuestions += 1
         return true
+    }
+}
+
+function questionsLeft(numpad, score, firstOp, secondOp, balloon, iamReady)
+{
+    jsIamReady = iamReady
+    jsBalloon = balloon
+    jsScore = score
+    if(validateAnswer(numpad.answer))
+    {
+        numpad.resetText()
+        numpad.answerFlag = true
+
+        if(totalQuestions < 10)
+        {
+            console.log("totalQuestions " + totalQuestions + "second Operand " + secondOperand)
+            totalQuestions += 1
+            score.currentSubLevel += 1
+            calculateOperands()
+            firstOp.firstOpCalculated()
+            secondOp.secondOpCalculated()
+            balloon.startMoving(balloon.parent.height * 50/(bar.level + 1))
+
+        }
+
+        else if(totalQuestions >= 10)
+        {
+            score.currentSubLevel += 1
+            console.log("totalQuestions " + totalQuestions + "second Operand " + secondOperand)
+            totalQuestions = 0
+            balloon.visible = false
+            balloon.stopMoving()
+            firstOp.visible = false
+            secondOp.visible = false
+            bonus.good("smiley");
+            bonus.done.connect(afterDone)
+            nextLevel()
+
+        }
+
+
+    }
+
+    function afterDone(iamReady, balloon)
+    {
+        jsIamReady.visible = true
+        jsBalloon.visible = false
+        jsScore.currentSubLevel = 0
     }
 }
 
