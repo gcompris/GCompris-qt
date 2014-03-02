@@ -19,8 +19,7 @@ var jsScore
 var createdBlocks
 var killedBlocks
 
-var nbLevel = 6
-var nbSubLevel = 8
+var nbLevel = 10
 
 function start(_main, _background, _bar, _bonus) {
     main = _main
@@ -109,7 +108,7 @@ function questionsLeft(numpad, score, firstOp, secondOp, balloon, iamReady)
             calculateOperands()
             firstOp.firstOpCalculated()
             secondOp.secondOpCalculated()
-            balloon.startMoving(balloon.parent.height * 50/(bar.level + 1))
+            balloon.startMoving(balloon.parent.height * 50)
 
         }
 
