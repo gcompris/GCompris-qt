@@ -10,4 +10,5 @@ erase_clic
 hexagon
 instruments
 leftright
+memory
 planegame
