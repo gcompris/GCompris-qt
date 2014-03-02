@@ -9,7 +9,6 @@ include(src/core/core.pri)
 include(src/activities/menu/menu.pri)
 
 # Activity Includes
-include(src/activities/memory/memory.pri)
 include(src/activities/advanced_colors/advanced_colors.pri)
 include(src/activities/instruments/instruments.pri)
 include(src/activities/ballcatch/ballcatch.pri)
@@ -20,6 +19,8 @@ include(src/activities/erase_clic/erase_clic.pri)
 include(src/activities/erase_2clic/erase_2clic.pri)
 include(src/activities/hexagon/hexagon.pri)
 include(src/activities/leftright/leftright.pri)
+include(src/activities/memory/memory.pri)
+include(src/activities/memory-sound/memory-sound.pri)
 include(src/activities/planegame/planegame.pri)
 
 APP_FILES += \

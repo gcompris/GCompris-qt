@@ -11,4 +11,5 @@ hexagon
 instruments
 leftright
 memory
+memory-sound
 planegame

@@ -1,95 +1,16 @@
 import QtQuick 2.1
-import QtQuick.Controls 1.0
-import QtQuick.Controls.Styles 1.0
-import QtMultimedia 5.0
 
-import "qrc:/gcompris/src/core"
 import "qrc:/gcompris/src/activities/memory"
+import "qrc:/gcompris/src/core"
 import "memory.js" as Activity
+import "memorydataset.js" as Dataset
 
-ActivityBase {
-    id: activity
-    focus: true
-
-    property int itemWidth
-    property int itemHeight
-    property int rowsNb
-    property int paired
-
-    onStart: {}
-    onStop: {}
-    paired:0
-
-    onPairedChanged: {
-        if (paired == 3){ //when 2 pictures are clicked and we click a third one
-          Activity.cardReturn()
-        }
-
-    }
-
-    pageComponent: Image {
-        source: "qrc:/gcompris/src/activities/memory/resource/scenery_background.png"
-        fillMode: Image.PreserveAspectCrop
-        id: background
-        signal start
-        signal stop
-        focus: true
-
-
-        Component.onCompleted: {
-            activity.start.connect(start)
-            activity.stop.connect(stop)
-        }
-        onStart: { Activity.start(main, background, bar, bonus, containerModel,cardRepeater,grid) }
-        onStop: { Activity.stop() }
-
-        ListModel {
-            id: containerModel
-        }
-
-        Grid {
-            id: grid
-            x: main.width * 0.1
-            y: main.height * 0.1
-            spacing: 20
-            Repeater {
-                id: cardRepeater
-                model: containerModel
-                delegate: CardItem {
-                       source: back  //first picture is the back
-                       width: width_
-                       height: height_
-                       backPict: back
-                       isBack: true
-                       imagePath: image
-                       matchCode: matchCode_
-               }
-            }
-
-        }
-
-
-
-        DialogHelp {
-            id: dialogHelp
-            onClose: home()
-        }
-
-        Bar {
-            id: bar
-            content: BarEnumContent { value: help | home | previous | next }
-            onHelpClicked: {
-                displayDialog(dialogHelp)
-            }
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: home()
-        }
-
-        Bonus {
-            id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
-        }
-    }
-
+MemoryCommon {
+    dataset: Dataset.get()
+    backgroundImg: "qrc:/gcompris/src/activities/memory/resource/scenery_background.png"
+    displayWidthRatio:0.7
+    displayHeightRatio:0.6
+    displayX:50
+    displayY:50
+    type:"picture"
 }

@@ -18,6 +18,7 @@
  along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 import QtQuick 2.1
+import QtMultimedia 5.0
 import "memory.js" as Activity
 import GCompris 1.0
 
@@ -31,6 +32,7 @@ Image {
     property string matchCode
     property bool isBack: true
     property bool isFound: false
+    property string audioFile
 
     fillMode: Image.PreserveAspectFit
 
@@ -38,12 +40,20 @@ Image {
         anchors.fill: parent
         enabled: item.isBack
         onClicked: {
-            console.log("code=" + code)
+            console.log("code=" + matchCode)
             item.isBack = false
             Activity.cardClicked(item)
+            if (Activity.type == "sound"){
+                console.log("playing sound : " + audioFile)
+                sound1.play()
+            }
         }
     }
 
+    Audio {
+           id: sound1
+           source: "qrc:/gcompris/src/activities/memory-sound/resource/" + audioFile
+       }
 
     states : [
         State {

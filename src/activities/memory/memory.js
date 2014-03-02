@@ -8,14 +8,7 @@ nbOfPairLevelRelationArray = new Array([3,2],[4,2],[5,2],[4,3],
                                        [8,4])
 
 // list of picture
-imageList = new Array("01_cat.png","02_pig.png","03_bear.png",
-                      "04_hippopotamus.png","05_penguin.png",
-                      "06_cow.png", "07_sheep.png", "08_turtle.png",
-                      "09_panda.png", "10_chicken.png", "11_redbird.png",
-                      "12_wolf.png", "13_monkey.png", "14_fox.png",
-                      "15_bluebirds.png", "16_elephant.png", "17_lion.png",
-                      "18_gnu.png", "19_bluebaby.png", "20_greenbaby.png",
-                      "21_frog.png")
+
 
 var currentLevel = 0
 var numberOfLevel = 9
@@ -34,11 +27,23 @@ var column
 var firstPictureClicked
 var lastPics = new Array
 var cardLeft
+var displayWidthRatio
+var displayHeightRatio
+var displayX
+var displayY
+var type
 
 
-function start(main_, background_, bar_, bonus_,
-               containerModel_, cardRepeater_, grid_) {
+function start(main_,type_, background_, bar_, bonus_,
+               containerModel_, cardRepeater_, grid_,
+               dataset_, displayWidthRatio_, displayHeightRatio_,
+               displayX_, displayY_) {
+    displayWidthRatio = displayWidthRatio_
+    displayHeightRatio = displayHeightRatio_
+    displayX = displayX_
+    displayY = displayY_
     main = main_
+    type = type_
     background = background_
     bar = bar_
     bonus = bonus_
@@ -46,7 +51,7 @@ function start(main_, background_, bar_, bonus_,
     cardRepeater = cardRepeater_
     grid = grid_
     currentLevel = 0
-
+    imageList = dataset_ //could be a sound list
     initLevel()
 }
 
@@ -88,13 +93,22 @@ function initLevel() {
 
     // fill in with pictures
     for(var i = 0;  i < cardList.length; ++i) {
-        containerModel.append({
-                                  "back": "resource/backcard.png",
-                                  "image": "resource/" + cardList[i],
-                                  "width_": main.width * 0.7 / column,
-                                  "height_": main.height * 0.6 / line,
-                                  "matchCode_": cardList[i]
-                              })
+        if (type == "picture"){
+        containerModel.append({"back": "resource/backcard.png",
+                               "image": "resource/" + cardList[i],
+                               "width_": main.width * displayWidthRatio / column,
+                               "height_": main.height * displayHeightRatio / line,
+                               "matchCode_": cardList[i],
+                               "audioFile_": ""})
+        }
+        else if (type == "sound") {
+            containerModel.append({"back": "qrc:/gcompris/src/activities/memory-sound/resource/Tux_mute.png",
+                                   "image": "qrc:/gcompris/src/activities/memory-sound/resource/Tux_play.png", //it's a sound memory
+                                   "width_": main.width * displayWidthRatio / column,
+                                   "height_": main.height * displayHeightRatio / line,
+                                   "matchCode_": cardList[i],
+                                   "audioFile_": cardList[i]})
+        }
     }
 
 }
