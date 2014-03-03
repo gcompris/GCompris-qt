@@ -1,6 +1,4 @@
 import QtQuick 2.1
-import QtQuick.Controls 1.0
-import QtQuick.Controls.Styles 1.0
 import GCompris 1.0
 import "qrc:/gcompris/src/core"
 import "leftright.js" as Activity
@@ -23,7 +21,8 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        onStart: { Activity.start(bar, bonus, imageAnimOff) }
+        onStart: { Activity.start(bar, bonus, imageAnimOff,
+                                  leftButton, rightButton) }
         onStop: { Activity.stop() }
 
         // FIXME It's not working
@@ -106,31 +105,26 @@ ActivityBase {
                 }
             }
 
-            Button {
+            AnswerButton {
                 id: leftButton
                 width: blackBoard.width * 0.45
                 height: main.height * 0.15
                 anchors.left: blackBoard.left
                 anchors.top: blackBoard.bottom
                 anchors.margins: 10
-                action: Action {
-                    text: qsTr("Left hand")
-                    onTriggered: Activity.leftClick()
-                }
-                style: GCButtonStyle {}
+                textLabel: qsTr("Left hand")
+                onCorrectlyPressed: Activity.leftClick();
             }
 
-            Button {
+            AnswerButton {
+                id: rightButton
                 width: blackBoard.width * 0.45
                 height: main.height * 0.15
                 anchors.right: blackBoard.right
                 anchors.top: blackBoard.bottom
                 anchors.margins: 10
-                action: Action {
-                    text: qsTr("Right hand")
-                    onTriggered: Activity.rightClick()
-                }
-                style: GCButtonStyle {}
+                textLabel: qsTr("Right hand")
+                onCorrectlyPressed: Activity.rightClick();
             }
         }
 
