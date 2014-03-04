@@ -33,6 +33,7 @@ Image {
     property bool isBack: true
     property bool isFound: false
     property string audioFile
+    property string textDisplayed
 
     fillMode: Image.PreserveAspectFit
 
@@ -40,7 +41,7 @@ Image {
         anchors.fill: parent
         enabled: item.isBack
         onClicked: {
-            console.log("code=" + matchCode)
+            console.log("code=" + matchCode, textDisplayed)
             item.isBack = false
             Activity.cardClicked(item)
             if (Activity.type == "sound"){
@@ -54,6 +55,17 @@ Image {
            id: sound1
            source: "qrc:/gcompris/src/activities/memory-sound/resource/" + audioFile
        }
+    Text {
+           id:text1
+           anchors.centerIn: parent
+           text: textDisplayed
+           font.family: "Helvetica"
+           font.pointSize: Activity.column==5 ? 14 : 36/(Math.floor(Activity.column/3)+1) //awful hack to set a good font size
+           horizontalAlignment: Text.AlignHCenter
+           verticalAlignment: Text.AlignVCenter
+           color: "black"
+
+       }
 
     states : [
         State {
@@ -63,6 +75,7 @@ Image {
         State {
             name:"returned"; when: isBack == true
             PropertyChanges { target: item; source:item.backPict }
+            PropertyChanges { target: text1; visible:!isBack }
         },
         State {
             name:"faced"; when: isBack==false

@@ -46,10 +46,12 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
+
         onStart: { Activity.start(main, type, background, bar, bonus,
                                   containerModel, cardRepeater, grid,
                                   dataset, displayWidthRatio, displayHeightRatio,
                                   displayX, displayY) }
+
         onStop: { Activity.stop() }
 
         ListModel {
@@ -73,6 +75,8 @@ ActivityBase {
                        imagePath: image
                        matchCode: matchCode_
                        audioFile: audioFile_
+                       textDisplayed : text_
+
                }
             }
 

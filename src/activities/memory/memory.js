@@ -51,7 +51,7 @@ function start(main_,type_, background_, bar_, bonus_,
     cardRepeater = cardRepeater_
     grid = grid_
     currentLevel = 0
-    imageList = dataset_ //could be a sound list
+    imageList = dataset_ //could be a sound list or a operation list
     initLevel()
 }
 
@@ -75,20 +75,48 @@ function initLevel() {
     for(var ix = 0;  ix < nb_of_pair; ++ix){
         // select  a picture randomly from 21 pictures
         if (cardList.length > 0) {
-            var card = imageList[Math.floor((imageList.length) * Math.random())]
-            // is card still in cardList?
-            while (cardList.indexOf(card) >= 0) {
+            if (type=="math"){
+                var card = imageList[Math.floor((imageList.length/10*(currentLevel+1)) * Math.random())] //Difficulty is define here. By construction of dataset
+
+            }
+            else {
                 var card = imageList[Math.floor((imageList.length) * Math.random())]
+                // is card still in cardList?
+                while (cardList.indexOf(card) >= 0) {
+                    var card = imageList[Math.floor((imageList.length) * Math.random())]
+            }
             }
             cardList[ix]= card
         }
         else {
-            var card = imageList[Math.floor((imageList.length) * Math.random())] //first run
-            cardList[ix]= card
+            if (type=="math"){
+
+                var card = imageList[Math.floor((imageList.length/10*(currentLevel+1)) * Math.random())] //Difficulty is define here. By construciton of dataset
+                cardList[ix]= card
+
+            }
+            else {
+                var card = imageList[Math.floor((imageList.length) * Math.random())] //first run
+                cardList[ix]= card
+            }
         }
 
     }
-    cardList = shuffle(cardList.concat(cardList))
+    if (type=="math"){
+
+        var cardListValue = new Array()
+        for(var ix = 0;  ix < nb_of_pair; ++ix){
+            var valeur = eval(cardList[ix].toString())
+            cardListValue[ix] = valeur
+        }
+
+        cardList = shuffle(cardList.concat(cardListValue))
+    }
+    else {
+        cardList = shuffle(cardList.concat(cardList))
+    }
+
+
     cardLeft = cardList.length
 
     // fill in with pictures
@@ -99,7 +127,8 @@ function initLevel() {
                                "width_": main.width * displayWidthRatio / column,
                                "height_": main.height * displayHeightRatio / line,
                                "matchCode_": cardList[i],
-                               "audioFile_": ""})
+                               "audioFile_": "",
+                               "text_": ""})
         }
         else if (type == "sound") {
             containerModel.append({"back": "qrc:/gcompris/src/activities/memory-sound/resource/Tux_mute.png",
@@ -107,15 +136,32 @@ function initLevel() {
                                    "width_": main.width * displayWidthRatio / column,
                                    "height_": main.height * displayHeightRatio / line,
                                    "matchCode_": cardList[i],
-                                   "audioFile_": cardList[i]})
+                                   "audioFile_": cardList[i],
+                                   "text_": ""})
+        }
+        else if (type == "math") {
+            containerModel.append({"back": "qrc:/gcompris/src/activities/memory/resource/backcard.png",
+                                   "image": "qrc:/gcompris/src/activities/memory/resource/emptycard.png",
+                                   "width_": main.width * displayWidthRatio / column,
+                                   "height_": main.height * displayHeightRatio / line,
+                                   "matchCode_": eval(cardList[i].toString()),
+                                   "audioFile_": "",
+                                   "text_": cardList[i].toString().replace("*","x").replace("/",String.fromCharCode(247))})
         }
     }
 
 }
 
+function isFormule(text){
+    return ((text.indexOf("+")>0) || (text.indexOf("-")>0) || (text.indexOf("x")>0) || (text.indexOf(String.fromCharCode(247))>0))
+}
+
+function isAnswer(text){
+    return !isFormule(text)
+}
 
 function cardClicked(cardObject) {
-    if (!firstPictureClicked) {
+    if (!firstPictureClicked) {//at first click
         firstPictureClicked = cardObject
         if(lastPics.length == 2) {
             lastPics[0].isBack = true
@@ -124,18 +170,40 @@ function cardClicked(cardObject) {
         }
     } else {
         // Check that the 2 pictures are the same
-        console.log(firstPictureClicked.matchCode)
-        console.log(cardObject.matchCode)
+
         if (firstPictureClicked.matchCode === cardObject.matchCode) {
-            firstPictureClicked.isBack = false // stay faced
-            firstPictureClicked.isFound = true // signal for hidden state
-            cardObject.isBack = false
-            cardObject.isFound = true
-            cardLeft = cardLeft - 2
-            if(cardLeft == 0) { // no more cards in the level
-                youWon()
+            if (type=="math"){//need to evaluate if a formula and a result were clicked
+                //one and only one text can have a mathematical sign
+                if (!(isFormule(cardObject.textDisplayed)&&(isFormule(firstPictureClicked.textDisplayed))) && (!(isAnswer(cardObject.textDisplayed)&&(isAnswer(firstPictureClicked.textDisplayed))))){
+                    //not 2 formules and not two answers
+
+                    firstPictureClicked.isBack = false // stay faced
+                    firstPictureClicked.isFound = true // signal for hidden state
+                    cardObject.isBack = false
+                    cardObject.isFound = true
+                    cardLeft = cardLeft - 2
+                    if(cardLeft == 0) { // no more cards in the level
+                        youWon()
+                    }
+                }
+                else {  console.log("deux résultats ou deux forumes")
+                        lastPics = [firstPictureClicked, cardObject]
+                }
+
             }
-        } else { // pictures clicked are not the same
+            else {
+                firstPictureClicked.isBack = false // stay faced
+                firstPictureClicked.isFound = true // signal for hidden state
+                cardObject.isBack = false
+                cardObject.isFound = true
+                cardLeft = cardLeft - 2
+                if(cardLeft == 0) { // no more cards in the level
+                    youWon()
+
+                }
+            }
+        }
+        else { // pictures clicked are not the same
             // keep them to reverse them on next click
             lastPics = [firstPictureClicked, cardObject]
         }
