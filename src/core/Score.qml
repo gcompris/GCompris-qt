@@ -25,9 +25,10 @@ Rectangle {
     Text{
         id: subLevelText
         anchors.centerIn: parent
+        font.pixelSize: parent.width/8
+        font.bold: true
         //font.pointSize: main.width == 0 ? 20 : main.width/40
-        color: "white"
-        text: score.currentSubLevel + "/" + score.numberOfSublevels
+        color: "black"
+        text: score.currentSubLevel + "/" + score.numberOfSubLevels
     }
 }
-

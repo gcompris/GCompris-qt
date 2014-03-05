@@ -60,7 +60,7 @@ ActivityBase {
             onHomeClicked: home()
         }
 
-        ReadyButton{
+        ReadyButton {
             id:iamReady
 
             Component.onCompleted: {
@@ -95,7 +95,7 @@ ActivityBase {
         NumPad {
             id:numpad
 
-            onAnswerChanged:{
+            onAnswerChanged: {
                 Activity.questionsLeft(numpad, score, firstOp, secondOp, balloon, iamReady)
             }
         }
@@ -155,12 +155,12 @@ ActivityBase {
             text: numpad.answer
         }
 
-        Score{
-            id:score
+        Score {
+            id: score
             x: parent.width * 3/4
             y: parent.height - 100
             currentSubLevel: 0
-            numberOfSubLevels:10
+            numberOfSubLevels: 10
 
         }
     }

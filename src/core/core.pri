@@ -23,7 +23,6 @@ APP_FILES += \
 	$$PWD/GCButtonStyle.qml \
 	$$PWD/main.qml \
 	$$PWD/NumPad.qml \
-	$$PWD/AnswerButton.qml
 	$$PWD/Score.qml
 
 APP_FILES += \
