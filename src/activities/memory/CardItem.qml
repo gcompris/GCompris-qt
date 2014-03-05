@@ -46,15 +46,16 @@ Image {
             Activity.cardClicked(item)
             if (Activity.type == "sound"){
                 console.log("playing sound : " + audioFile)
+                sound1.source = "qrc:/gcompris/src/activities/memory-sound/resource/"+ audioFile
                 sound1.play()
             }
         }
     }
 
-    Audio {
-           id: sound1
-           source: "qrc:/gcompris/src/activities/memory-sound/resource/" + audioFile
-       }
+//    Audio {
+//           id: sound1
+//           source: "qrc:/gcompris/src/activities/memory-sound/resource/" + audioFile
+//       }
     Text {
            id:text1
            anchors.centerIn: parent
