@@ -2,46 +2,51 @@
 .import QtQuick 2.0 as Quick
 
 var currentLevel
-var currentSubLevel
 var main
 var background
 var bar
 var bonus
-var secondOperand
-var firstOperand
-var totalQuestions
-var operationDone = [false, false, false, false, false, false, false, false, false, false]
-var jsIamReady
-var jsBalloon
-var jsScore
-
-// The array of created blocks object
-var createdBlocks
-var killedBlocks
+var score
+var balloon
+var iAmReady
+var firstOp
+var secondOp
+var secondOperandVal
+var firstOperandVal
+var operations = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 var nbLevel = 10
 
-function start(_main, _background, _bar, _bonus) {
+function start(_main, _background, _bar, _bonus, _score, _balloon,
+               _iAmReady, _firstOp, _secondOp) {
     main = _main
     background = _background
     bar = _bar
     bonus = _bonus
+    score = _score
+    balloon = _balloon
+    iAmReady = _iAmReady
+    firstOp = _firstOp
+    secondOp = _secondOp
     currentLevel = 0
-    currentSubLevel = 0
+    score.numberOfSubLevels = 10
     initLevel()
-    totalQuestions = 1
 }
 
 function stop() {
 }
 
 function initLevel() {
-
-    for(var i=0; i<10; i++)
-        operationDone[i] = false
     bar.level = currentLevel + 1
+    score.currentSubLevel = 0
+    operations = shuffle(operations)
     calculateOperands()
-    totalQuestions = 1
+
+    iAmReady.visible = true
+    balloon.visible = false
+    firstOp.visible = false
+    secondOp.visible = false
+    balloon.stopMoving()
 }
 
 function nextLevel() {
@@ -60,74 +65,45 @@ function previousLevel() {
 
 function calculateOperands()
 {
-    firstOperand = bar.level
-    secondOperand = getOperand()
-}
-
-function getOperand()
-{
-    var j = 10;
-    var i = Math.floor((Math.random() * 10) + 1);
-
-    // Get the next free slot
-    while(operationDone[i] === true && j>=0)
-    {
-        j--;
-        i++;
-        if(i>10)
-            i=1;
-    }
-    operationDone[i] = true;
-    return i;
+    firstOperandVal = bar.level
+    secondOperandVal = operations[score.currentSubLevel]
+    score.currentSubLevel++
+    firstOp.text = firstOperandVal
+    secondOp.text = secondOperandVal
 }
 
 function validateAnswer(screenAnswer)
 {
-    if(firstOperand * secondOperand == (screenAnswer * 1))
-    {
-        return true
-    }
+    return (firstOperandVal * secondOperandVal === screenAnswer)
 }
 
-function questionsLeft(numpad, score, firstOp, secondOp, balloon, iamReady)
+function questionsLeft(numpad, firstOp, secondOp)
 {
-    jsIamReady = iamReady
-    jsBalloon = balloon
-    jsScore = score
-    if(validateAnswer(numpad.answer))
+    if(validateAnswer(parseInt(numpad.answer)))
     {
         numpad.resetText()
         numpad.answerFlag = true
 
-        if(totalQuestions < 10)
+        if(score.currentSubLevel < 10)
         {
-            totalQuestions += 1
-            score.currentSubLevel += 1
             calculateOperands()
-            firstOp.firstOpCalculated()
-            secondOp.secondOpCalculated()
             balloon.startMoving(balloon.parent.height * 50)
-
         }
 
-        else if(totalQuestions >= 10)
+        else if(score.currentSubLevel >= 10)
         {
             score.currentSubLevel += 1
-            totalQuestions = 0
             balloon.visible = false
             balloon.stopMoving()
             firstOp.visible = false
             secondOp.visible = false
             bonus.good("smiley");
-            nextLevel()
         }
     }
 }
 
-function afterDone()
-{
-    jsIamReady.visible = true
-    jsBalloon.visible = false
-    jsScore.currentSubLevel = 0
+function shuffle(o) {
+    for(var j, x, i = o.length; i;
+        j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
 }
-

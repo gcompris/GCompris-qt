@@ -16,7 +16,7 @@ Rectangle {
         GradientStop { position: 1.0; color: "#CECECE" }
     }
 
-    signal clickTheBox
+    signal clicked
 
     Text {
         id: iamReadyText
@@ -37,7 +37,9 @@ Rectangle {
     MouseArea {
         anchors.fill: parent
 
-        onClicked:
-            clickTheBox()
+        onClicked: {
+            iamReady.visible = false
+            iamReady.clicked()
+        }
     }
 }

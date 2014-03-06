@@ -20,7 +20,8 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
-        onStart: Activity.start(main, background, bar, bonus)
+        onStart: Activity.start(main, background, bar, bonus, score, balloon,
+                                iAmReady, firstOp, secondOp)
         onStop: Activity.stop()
 
         DialogHelp {
@@ -35,22 +36,9 @@ ActivityBase {
                 displayDialog(dialogHelpLeftRight)
             }
             onPreviousLevelClicked: {
-                iamReady.visible = true
-                balloon.visible = false
-                firstOp.visible = false
-                secondOp.visible = false
-                score.currentSubLevel = 0
-                balloon.stopMoving()
                 Activity.previousLevel()
-
             }
             onNextLevelClicked: {
-                iamReady.visible = true
-                balloon.visible = false
-                firstOp.visible = false
-                secondOp.visible = false
-                score.currentSubLevel = 0
-                balloon.stopMoving()
                 Activity.nextLevel()
 
             }
@@ -58,37 +46,24 @@ ActivityBase {
         }
 
         ReadyButton {
-            id:iamReady
+            id: iAmReady
 
-            Component.onCompleted: {
-                clickTheBox.connect(reset)
-            }
-
-            function reset()
-            {
-                iamReady.visible = false
+            onClicked: {
+                iAmReady.visible = false
                 firstOp.visible = true
                 secondOp.visible = true
-                firstOp.firstOpCalculated()
-                secondOp.secondOpCalculated()
-                score.currentSubLevel = 0
-                score.numberOfSubLevels = 10
-                balloon.visible = true
-                balloon.stopMoving()
                 balloon.startMoving(balloon.parent.height * 50)
-
             }
         }
 
         Balloon {
             id: balloon
-            visible: !iamReady.visible
         }
 
         Bonus {
             id: bonus
             Component.onCompleted: {
-                win.connect(Activity.afterDone)
+                win.connect(Activity.nextLevel)
             }
         }
 
@@ -96,22 +71,17 @@ ActivityBase {
             id:numpad
 
             onAnswerChanged: {
-                Activity.questionsLeft(numpad, score, firstOp, secondOp,
-                                       balloon, iamReady)
+                Activity.questionsLeft(numpad, firstOp, secondOp)
             }
         }
 
         Text {
             id: firstOp
-            visible: !iamReady.visible
+            visible: !iAmReady.visible
             x:90
             y:80
             font.pixelSize: 32
             font.bold: true
-
-            function firstOpCalculated() {
-                firstOp.text = Activity.firstOperand
-            }
         }
 
         Text{
@@ -128,12 +98,9 @@ ActivityBase {
             id: secondOp
             x: 210
             y: 80
-            visible: !iamReady.visible
+            visible: !iAmReady.visible
             font.pixelSize: 32
             font.bold: true
-            function secondOpCalculated() {
-                secondOp.text = Activity.secondOperand
-            }
         }
 
         Text {
@@ -150,7 +117,7 @@ ActivityBase {
             id:product
             x: 330
             y:80
-            visible: !iamReady.visible
+            visible: !iAmReady.visible
             font.pixelSize: 32
             font.bold: true
             text: numpad.answer

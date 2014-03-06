@@ -18,6 +18,7 @@ Image {
 
     function startMoving(durationIncoming)
     {
+        balloon.visible = true
         move.duration = durationIncoming
         moveFlag = true
         move.stop()
