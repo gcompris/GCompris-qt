@@ -19,7 +19,7 @@ Rectangle {
 
     z: 1000
 
-    property int numberOfSublevels
+    property int numberOfSubLevels
     property int currentSubLevel
 
     Text{

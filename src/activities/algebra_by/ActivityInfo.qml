@@ -1,9 +1,7 @@
-import QtQuick 2.0
 import GCompris 1.0
 
 ActivityInfo {
-  name: "algebra_by"
-  dir: "src/activities/algebra_by"
+  name: "algebra_by/AlgebraBy.qml"
   difficulty: 3
   icon: "algebra_by/algebra_by.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"

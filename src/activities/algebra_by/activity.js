@@ -40,7 +40,6 @@ function initLevel() {
     for(var i=0; i<10; i++)
         operationDone[i] = false
     bar.level = currentLevel + 1
-    background.source = "qrc:/gcompris/src/activities/algebra_by/resource/scenery2_background.png"
     calculateOperands()
     totalQuestions = 1
 }
@@ -102,7 +101,6 @@ function questionsLeft(numpad, score, firstOp, secondOp, balloon, iamReady)
 
         if(totalQuestions < 10)
         {
-            console.log("totalQuestions " + totalQuestions + "second Operand " + secondOperand)
             totalQuestions += 1
             score.currentSubLevel += 1
             calculateOperands()
@@ -115,26 +113,21 @@ function questionsLeft(numpad, score, firstOp, secondOp, balloon, iamReady)
         else if(totalQuestions >= 10)
         {
             score.currentSubLevel += 1
-            console.log("totalQuestions " + totalQuestions + "second Operand " + secondOperand)
             totalQuestions = 0
             balloon.visible = false
             balloon.stopMoving()
             firstOp.visible = false
             secondOp.visible = false
             bonus.good("smiley");
-            bonus.done.connect(afterDone)
             nextLevel()
-
         }
-
-
     }
+}
 
-    function afterDone(iamReady, balloon)
-    {
-        jsIamReady.visible = true
-        jsBalloon.visible = false
-        jsScore.currentSubLevel = 0
-    }
+function afterDone()
+{
+    jsIamReady.visible = true
+    jsBalloon.visible = false
+    jsScore.currentSubLevel = 0
 }
 
