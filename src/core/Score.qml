@@ -6,13 +6,14 @@ Rectangle {
 
     gradient: Gradient {
         GradientStop { position: 0.0; color: "#FFFFFF" }
-        GradientStop { position: 1.0; color: "#0e1B20" }
+        GradientStop { position: 0.9; color: "#FFFFFF" }
+        GradientStop { position: 1.0; color: "#CECECE" }
     }
-    width: background.width/8
-    height: background.height/8
+    width: background.width / 8
+    height: background.height / 8
     radius: 10
-    anchors.bottom: background.bottom
-    anchors.right: background.right
+    x: background.width - 80
+    y: background.height - 30
 
     border.color: "black"
     border.width: 2
@@ -22,12 +23,11 @@ Rectangle {
     property int numberOfSubLevels
     property int currentSubLevel
 
-    Text{
+    Text {
         id: subLevelText
         anchors.centerIn: parent
-        font.pixelSize: parent.width/8
+        font.pointSize: 16
         font.bold: true
-        //font.pointSize: main.width == 0 ? 20 : main.width/40
         color: "black"
         text: score.currentSubLevel + "/" + score.numberOfSubLevels
     }

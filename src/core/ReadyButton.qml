@@ -1,12 +1,10 @@
 import QtQuick 2.1
 import GCompris 1.0
 
-Rectangle{
+Rectangle {
     id: iamReady
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.verticalCenter: parent.verticalCenter
-    width: parent.width / 8
-    height: parent.height / 8
     border.color: "black"
     visible: true
     radius: 4
@@ -14,23 +12,29 @@ Rectangle{
     border.width: 2
     gradient: Gradient {
         GradientStop { position: 0.0; color: "#FFFFFF" }
-        GradientStop { position: 1.0; color: "#0e1B20" }
+        GradientStop { position: 0.9; color: "#FFFFFF" }
+        GradientStop { position: 1.0; color: "#CECECE" }
     }
 
     signal clickTheBox
 
-    Text{
+    Text {
         id: iamReadyText
 
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
         font.bold: true
-        font.pixelSize: parent.width/8
+        font.pointSize: 18
         text: qsTr("I am Ready!")
         visible: iamReady.visible
+
+        Component.onCompleted: {
+            parent.width = width + 20
+            parent.height = height + 10
+        }
     }
 
-    MouseArea{
+    MouseArea {
         anchors.fill: parent
 
         onClicked:

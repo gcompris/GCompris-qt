@@ -52,7 +52,7 @@ Item {
         }
     }
 
-    Column{
+    Column {
 
         id:rightPanel
         height:parent.height - 70
@@ -63,19 +63,19 @@ Item {
         Repeater {
 
             model:5
-            Rectangle{
+            Rectangle {
                 width:parent.width
                 height: parent.height/5
                 color: colours[index]
                 border.color: Qt.darker(color)
 
-                Text{
+                Text {
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     text:numbers[index] + 5
                     font.pixelSize: parent.height/2
                 }
-                MouseArea{
+                MouseArea {
                     anchors.fill:parent
 
                     onClicked: {
@@ -85,24 +85,24 @@ Item {
                 }
             }
         }
-        Rectangle{
-            id:backspaceButton
-            width:parent.width
-            height:containerPanel.height - rightPanel.height
+        Rectangle {
+            id: backspaceButton
+            width: parent.width
+            height: containerPanel.height - rightPanel.height
             color: "white"
             border.color: "black"
             border.width: 3
 
-            Text{
+            Text {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 text:"←"
                 font.pixelSize: parent.height/3
             }
 
-            MouseArea{
-                anchors.fill:parent
-                onClicked:{
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
                     answer = answer.substring(0,answer.length - 1)
                 }
             }
