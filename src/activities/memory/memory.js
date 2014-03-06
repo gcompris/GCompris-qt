@@ -3,7 +3,7 @@
 
 // The dataset
 // each array item is nb of line then column in memory
-nbOfPairLevelRelationArray = new Array([3,2],[4,2],[5,2],[4,3],
+var nbOfPairLevelRelationArray = new Array([3,2],[4,2],[5,2],[4,3],
                                        [6,3],[5,4],[6,4],[7,4],
                                        [8,4])
 
@@ -20,7 +20,6 @@ var grid
 var containerModel
 var cardRepeater
 var nb_of_pair
-var nbOfPairLevelRelationArray
 var imageList
 var line
 var column
@@ -75,8 +74,9 @@ function initLevel() {
     for(var ix = 0;  ix < nb_of_pair; ++ix){
         // select  a picture randomly from 21 pictures
         if (cardList.length > 0) {
-            if (type=="math"){
-                var card = imageList[Math.floor((imageList.length/10*(currentLevel+1)) * Math.random())] //Difficulty is define here. By construction of dataset
+            if (type === "math"){
+                // Difficulty is defined here. By construction of dataset
+                var card = imageList[Math.floor((imageList.length / 10 * (currentLevel+1)) * Math.random())]
 
             }
             else {
@@ -84,12 +84,12 @@ function initLevel() {
                 // is card still in cardList?
                 while (cardList.indexOf(card) >= 0) {
                     var card = imageList[Math.floor((imageList.length) * Math.random())]
-            }
+                }
             }
             cardList[ix]= card
         }
         else {
-            if (type=="math"){
+            if (type === "math"){
 
                 var card = imageList[Math.floor((imageList.length/10*(currentLevel+1)) * Math.random())] //Difficulty is define here. By construciton of dataset
                 cardList[ix]= card
@@ -102,12 +102,11 @@ function initLevel() {
         }
 
     }
-    if (type=="math"){
+    if (type === "math"){
 
         var cardListValue = new Array()
         for(var ix = 0;  ix < nb_of_pair; ++ix){
-            var valeur = eval(cardList[ix].toString())
-            cardListValue[ix] = valeur
+            cardListValue[ix] = eval(cardList[ix].toString())
         }
 
         cardList = shuffle(cardList.concat(cardListValue))
@@ -121,7 +120,7 @@ function initLevel() {
 
     // fill in with pictures
     for(var i = 0;  i < cardList.length; ++i) {
-        if (type == "picture"){
+        if (type === "picture"){
         containerModel.append({"back": "resource/backcard.png",
                                "image": "resource/" + cardList[i],
                                "width_": main.width * displayWidthRatio / column,
@@ -130,7 +129,7 @@ function initLevel() {
                                "audioFile_": "",
                                "text_": ""})
         }
-        else if (type == "sound") {
+        else if (type === "sound") {
             containerModel.append({"back": "qrc:/gcompris/src/activities/memory-sound/resource/Tux_mute.png",
                                    "image": "qrc:/gcompris/src/activities/memory-sound/resource/Tux_play.png", //it's a sound memory
                                    "width_": main.width * displayWidthRatio / column,
@@ -139,7 +138,7 @@ function initLevel() {
                                    "audioFile_": cardList[i],
                                    "text_": ""})
         }
-        else if (type == "math") {
+        else if (type === "math") {
             containerModel.append({"back": "qrc:/gcompris/src/activities/memory/resource/backcard.png",
                                    "image": "qrc:/gcompris/src/activities/memory/resource/emptycard.png",
                                    "width_": main.width * displayWidthRatio / column,
@@ -152,12 +151,13 @@ function initLevel() {
 
 }
 
-function isFormule(text){
-    return ((text.indexOf("+")>0) || (text.indexOf("-")>0) || (text.indexOf("x")>0) || (text.indexOf(String.fromCharCode(247))>0))
+function isFormula(text){
+    return ((text.indexOf("+")>0) || (text.indexOf("-")>0) ||
+            (text.indexOf("x")>0) || (text.indexOf(String.fromCharCode(247))>0))
 }
 
 function isAnswer(text){
-    return !isFormule(text)
+    return !isFormula(text)
 }
 
 function cardClicked(cardObject) {
@@ -174,8 +174,11 @@ function cardClicked(cardObject) {
         if (firstPictureClicked.matchCode === cardObject.matchCode) {
             if (type=="math"){//need to evaluate if a formula and a result were clicked
                 //one and only one text can have a mathematical sign
-                if (!(isFormule(cardObject.textDisplayed)&&(isFormule(firstPictureClicked.textDisplayed))) && (!(isAnswer(cardObject.textDisplayed)&&(isAnswer(firstPictureClicked.textDisplayed))))){
-                    //not 2 formules and not two answers
+                if (!(isFormula(cardObject.textDisplayed) &&
+                      (isFormula(firstPictureClicked.textDisplayed))) &&
+                        (!(isAnswer(cardObject.textDisplayed) &&
+                           (isAnswer(firstPictureClicked.textDisplayed))))){
+                    //not 2 formula and not two answers
 
                     firstPictureClicked.isBack = false // stay faced
                     firstPictureClicked.isFound = true // signal for hidden state
@@ -186,8 +189,8 @@ function cardClicked(cardObject) {
                         youWon()
                     }
                 }
-                else {  console.log("deux résultats ou deux forumes")
-                        lastPics = [firstPictureClicked, cardObject]
+                else {
+                    lastPics = [firstPictureClicked, cardObject]
                 }
 
             }

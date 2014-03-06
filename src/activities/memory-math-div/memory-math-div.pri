@@ -5,6 +5,3 @@ APP_FILES += \
 	$$PWD/memory-math-div.js \
         $$PWD/memory-divdataset.js \
 	$$PWD/memory-math-div.svg
-
-OTHER_FILES += \
-    src/activities/memory/CardItem.qml
