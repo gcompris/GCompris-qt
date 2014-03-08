@@ -46,7 +46,7 @@ ActivityBase {
             // VK_LSHIFT in WinUser.h, but does not work in my win8...
             supposedLeftKeyCode = [0xA0, 42];
             break;
-        case ApplicationInfo.MacOs:
+        case ApplicationInfo.MacOSX:
             // keyEvent.nativeScanCode not filled in mac
         default: // Will it be played with keyboard on mobile/tablet ?
             supposedRightKeyCode = [-1];
@@ -153,14 +153,23 @@ ActivityBase {
             activity.stop.connect(stop)
         }
         onStart: {
-            Activity.start(background, bar, activity, ball, deltaPressedTimer)
+            Activity.start(background, bar, activity, ball, rightHand,
+                           leftHand, deltaPressedTimer)
         }
 
         onStop: { Activity.stop() }
 
-        onWidthChanged: { ball.reinitBall() }
+        onWidthChanged: {
+            ball.reinitBall();
+            leftHand.reinitPosition();
+            rightHand.reinitPosition();
+        }
 
-        onHeightChanged: { ball.reinitBall() }
+        onHeightChanged: {
+            ball.reinitBall();
+            leftHand.reinitPosition();
+            rightHand.reinitPosition();
+        }
 
         DialogHelp {
             id: dialogHelpLeftRight
@@ -188,34 +197,35 @@ ActivityBase {
 
         Image {
             id: tux
-            x: main.width/2 - width/2
+            x: main.width / 2 - width / 2
             y: main.height / 3
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg"
+            sourceSize.height: 100 * ApplicationInfo.ratio
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svgz"
         }
 
         Image {
             id: leftHand
-            x: main.width/2 - width - 5
-            y: main.height - 200
+            y: main.height - 1.5 * height
             z: 5
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svg"
-        }
+            sourceSize.height: 150 * ApplicationInfo.ratio
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svgz"
 
-        Image {
-            id: rightHand
-            mirror: true
-            x: main.width/2 + 5
-            y: main.height - 200
-            z: 5
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svg"
-        }
+            NumberAnimation {
+                id: leftHandAnimation
+                target: leftHand; property: "x";
+                to: main.width/2 - leftHand.width - 5;
+                duration: 1000; easing.type: Easing.InQuad
+            }
 
-        Image {
-            id: leftShift
-            x: main.width/2 - 240.0
-            y: main.height - 150
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/shift_key.svg"
-            opacity: leftPressed ? 1 : 0.5
+            function animate(newTime) {
+                leftHandAnimation.duration = newTime
+                leftHandAnimation.start();
+            }
+
+            function reinitPosition() {
+                leftHand.x = main.width / 2 - width * 2
+            }
+
             MultiPointTouchArea {
 
                 id: mouseAreaLeftShift
@@ -231,12 +241,30 @@ ActivityBase {
         }
 
         Image {
-            id: rightShift
+            id: rightHand
             mirror: true
-            x: main.width/2 + 140.0
-            y: main.height - 150
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/shift_key.svg"
-            opacity: rightPressed ? 1 : 0.5
+            y: main.height - 1.5 * height
+            z: 5
+            sourceSize.height: 150 * ApplicationInfo.ratio
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svgz"
+
+            function animate(newTime) {
+                rightHandAnimation.duration = newTime
+                rightHandAnimation.start();
+            }
+
+            function reinitPosition() {
+                rightHand.x = main.width / 2 + width
+            }
+
+            NumberAnimation {
+                id: rightHandAnimation
+                target: rightHand; property: "x";
+                to: main.width / 2 + 5;
+                duration: 1000;
+                easing.type: Easing.InQuad
+            }
+
             MultiPointTouchArea {
                 id: mouseAreaRightShift
                 anchors.fill: parent
@@ -250,26 +278,46 @@ ActivityBase {
             }
         }
 
+        Image {
+            id: leftShift
+            x: 10
+            y: rightHand.y + rightHand.height / 2
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/shift_key.svgz"
+            opacity: leftPressed ? 1 : 0.5
+            visible: !ApplicationInfo.isMobile
+        }
+
+        Image {
+            id: rightShift
+            mirror: true
+            x: main.width - width - 10
+            y: rightHand.y + rightHand.height / 2
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/shift_key.svgz"
+            opacity: rightPressed ? 1 : 0.5
+            visible: !ApplicationInfo.isMobile
+        }
+
         // Instructions
-        TextEdit {
+        Text {
             id: instructions
             text: ApplicationInfo.isMobile ?
-                      qsTr("Tap both side of the ball,
+                      qsTr("Tap both hands at the same time,
 to make the ball go in a straight line.") :
                       qsTr("Press the two shift keys at the same time,
 to make the ball go in a straight line.")
-            x: main.width/2 + 120.0
-            y: main.height/2
-            width: main.width-x
-            readOnly: true
+            x: 10.0
+            y: tux.y
+            width: tux.x - 10
             wrapMode: TextEdit.WordWrap
             horizontalAlignment: TextEdit.AlignHCenter
             verticalAlignment: TextEdit.AlignVCenter
+            font.pointSize: 16
             // Remove the text when both keys has been pressed
             visible: !(leftPressed && rightPressed)
         }
 
         function playSound(identifier) {
+
             if(identifier == "tuxok") {
                 tuxok.play()
             }

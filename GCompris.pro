@@ -9,15 +9,27 @@ include(src/core/core.pri)
 include(src/activities/menu/menu.pri)
 
 # Activity Includes
-include(src/activities/instruments/instruments.pri)
+include(src/activities/advanced_colors/advanced_colors.pri)
+include(src/activities/algebra_by/algebra_by.pri)
 include(src/activities/ballcatch/ballcatch.pri)
 include(src/activities/clickgame/clickgame.pri)
 include(src/activities/colors/colors.pri)
-include(src/activities/erase/erase.pri)
-include(src/activities/erase_clic/erase_clic.pri)
 include(src/activities/erase_2clic/erase_2clic.pri)
+include(src/activities/erase_clic/erase_clic.pri)
+include(src/activities/erase/erase.pri)
 include(src/activities/hexagon/hexagon.pri)
+include(src/activities/instruments/instruments.pri)
 include(src/activities/leftright/leftright.pri)
+include(src/activities/memory-math-add/memory-math-add.pri)
+include(src/activities/memory-math-add-minus/memory-math-add-minus.pri)
+include(src/activities/memory-math-div/memory-math-div.pri)
+include(src/activities/memory-math-minus/memory-math-minus.pri)
+include(src/activities/memory-math-mult-div/memory-math-mult-div.pri)
+include(src/activities/memory-math-mult/memory-math-mult.pri)
+include(src/activities/memory/memory.pri)
+include(src/activities/memory-sound/memory-sound.pri)
+include(src/activities/planegame/planegame.pri)
+
 
 APP_FILES += \
 	$$PWD/src/activities/activities.txt \

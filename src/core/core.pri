@@ -11,6 +11,8 @@ HEADERS += \
 
 APP_FILES += \
 	$$PWD/ActivityBase.qml \
+	$$PWD/AnswerButton.qml \
+	$$PWD/Balloon.qml \
 	$$PWD/BarButton.qml \
 	$$PWD/BarEnumContent.qml \
 	$$PWD/Bar.qml \
@@ -19,7 +21,12 @@ APP_FILES += \
 	$$PWD/DialogBackground.qml \
 	$$PWD/DialogHelp.qml \
 	$$PWD/GCButtonStyle.qml \
-	$$PWD/main.qml
+	$$PWD/main.qml \
+	$$PWD/NumPad.qml \
+	$$PWD/ReadyButton.qml \
+	$$PWD/Score.qml
+
+
 
 APP_FILES += \
 	$$PWD/resource/bar_about.svgz \
@@ -31,11 +38,14 @@ APP_FILES += \
 	$$PWD/resource/bar_ok.svgz \
 	$$PWD/resource/bar_previous.svgz \
 	$$PWD/resource/bar_reload.svgz \
+	$$PWD/resource/button.svgz \
 	$$PWD/resource/cancel.svgz \
 	$$PWD/resource/gcompris-medium.png \
 	$$PWD/resource/gcompris-small.png \
 	$$PWD/resource/gcompris.png \
 	$$PWD/resource/intro.ogg \
+	$$PWD/resource/sizeTable.png \
+	$$PWD/resource/star.png \
 	$$PWD/resource/bonus/flower_bad.png \
 	$$PWD/resource/bonus/flower_good.png \
 	$$PWD/resource/bonus/gnu_bad.png \
@@ -47,5 +57,7 @@ APP_FILES += \
 	$$PWD/resource/bonus/smiley_bad.png \
 	$$PWD/resource/bonus/smiley_good.png \
 	$$PWD/resource/bonus/tux_bad.png \
-	$$PWD/resource/bonus/tux_good.png
+	$$PWD/resource/bonus/tux_good.png \
+	$$PWD/resource/tuxballoon.png
+
 

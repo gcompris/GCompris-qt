@@ -91,7 +91,7 @@ Rectangle {
                         text: content
                         width: flick.width
                         height: flick.height
-                        font.pointSize: 24
+                        font.pointSize: 16
                         wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.RichText
                     }
@@ -105,11 +105,12 @@ Rectangle {
     Image {
         id: cancel
         source: "qrc:/gcompris/src/core/resource/cancel.svgz";
-        width: 70
         fillMode: Image.PreserveAspectFit
         anchors.right: parent.right
+        anchors.top: parent.top
         smooth: true
-        scale: 1.0 * ApplicationInfo.ratio
+        sourceSize.width: 60 * ApplicationInfo.ratio
+        anchors.margins: 10
         SequentialAnimation {
               id: anim
               running: true

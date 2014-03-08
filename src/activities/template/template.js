@@ -1,20 +1,20 @@
 .pragma library
 .import QtQuick 2.0 as Quick
 
-var _currentLevel = 0
-var _numberOfLevel = 4
-var _main
-var _background
-var _bar
-var _bonus
+var currentLevel = 0
+var numberOfLevel = 4
+var main
+var background
+var bar
+var bonus
 
-function start(main, background, bar, bonus) {
+function start(main_, background_, bar_, bonus_) {
     console.log("template activity: start")
-    _main = main
-    _background = background
-    _bar = bar
-    _bonus = bonus
-    _currentLevel = 0
+    main = main_
+    background = background_
+    bar = bar_
+    bonus = bonus_
+    currentLevel = 0
     initLevel()
 }
 
@@ -27,15 +27,15 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(_numberOfLevel <= ++_currentLevel ) {
-        _currentLevel = 0
+    if(numberOfLevel <= ++currentLevel ) {
+        currentLevel = 0
     }
     initLevel();
 }
 
 function previousLevel() {
-    if(--_currentLevel < 0) {
-        _currentLevel = _numberOfLevel - 1
+    if(--currentLevel < 0) {
+        currentLevel = numberOfLevel - 1
     }
     initLevel();
 }

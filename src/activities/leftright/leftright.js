@@ -47,16 +47,22 @@ var levels = [
 ]
 
 
-var currentImageId = 0;
-var currentLevel = 0;
+var currentImageId;
+var currentLevel;
 var bar;
 var bonus;
 var imageAnimOff;
+var leftButton;
+var rightButton;
 
-function start(_bar, _bonus, _imageAnimOff) {
-    bar = _bar;
-    bonus = _bonus;
-    imageAnimOff = _imageAnimOff;
+function start(bar_, bonus_, imageAnimOff_,
+               leftButton_, rightButton_) {
+    bar = bar_
+    bonus = bonus_
+    imageAnimOff = imageAnimOff_
+    leftButton = leftButton_
+    rightButton = rightButton_
+    currentLevel = 0
     initLevel()
 }
 
@@ -96,6 +102,8 @@ function previousLevel() {
 }
 
 function displayHand() {
+    leftButton.isCorrectAnswer = isLeft()
+    rightButton.isCorrectAnswer = isRight()
     imageAnimOff.start()
 }
 
@@ -110,24 +118,29 @@ function getCurrentHandRotation() {
 
 function displayNextHand() {
     if(currentHands.length <= ++currentImageId ) {
+        bonus.good("flower")
         nextLevel()
     }
     displayHand()
 }
 
+function isLeft() {
+    return (currentHands[currentImageId].image.indexOf("gauche") !== -1) ? true : false
+}
+
 function leftClick() {
     if(currentHands[currentImageId].image.indexOf("gauche") !== -1) {
         displayNextHand()
-    } else {
-        bonus.bad("flower")
     }
+}
+
+function isRight() {
+    return (currentHands[currentImageId].image.indexOf("droit") !== -1) ? true : false
 }
 
 function rightClick() {
     if(currentHands[currentImageId].image.indexOf("droit") !== -1) {
         displayNextHand()
-    } else {
-        bonus.bad("flower")
     }
 }
 

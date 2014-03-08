@@ -1,5 +1,6 @@
 import QtQuick 2.1
 import QtQuick.Controls 1.0
+import QtQuick.Particles 2.0
 import "qrc:/gcompris/src/core"
 import GCompris 1.0
 
@@ -15,18 +16,29 @@ ActivityBase {
         source: "qrc:/gcompris/src/activities/menu/resource/background.svgz"
         fillMode: Image.PreserveAspectCrop
 
-        Loader { id: activityLoader }
+        function loadActivity() {
+            activityLoader.item.menu = menuActivity
+            pageView.push(activityLoader.item)
+        }
 
-        property int iconWidth: 210
-        property int iconHeight: 210
+        Loader {
+            id: activityLoader
+            asynchronous: true
+            onStatusChanged: if (status == Loader.Ready) loadActivity()
+        }
+
+        property int iconWidth: 190 * ApplicationInfo.ratio
+        property int iconHeight: 190 * ApplicationInfo.ratio
+        property int cellWidth2: iconWidth+(main.width%iconWidth)/Math.round(main.width/iconWidth)
+        property int cellHeight2: iconHeight * 1.35
 
         GridView {
             x: 0
             y: 10
             width: main.width
             height: main.height - 50
-            cellWidth: iconWidth+(main.width%iconWidth)/Math.round(main.width/iconWidth)
-            cellHeight: iconHeight
+            cellWidth: cellWidth2
+            cellHeight: cellHeight2
             focus: true
             clip: true
             model: ActivityInfoTree.menuTree
@@ -35,8 +47,8 @@ ActivityBase {
                 height: iconHeight
                 Rectangle {
                     id: background
-                    width: 200
-                    height: 200
+                    width: cellWidth2 - 10
+                    height: cellHeight2 - 10
                     anchors.horizontalCenter: parent.horizontalCenter
                     opacity: 0.6
                     border.width: 2
@@ -46,6 +58,7 @@ ActivityBase {
                     source: "qrc:/gcompris/src/activities/" + icon;
                     anchors.top: background.top
                     anchors.horizontalCenter: parent.horizontalCenter
+                    sourceSize.height: iconHeight
                     anchors.margins: 5
                     Text {
                         anchors.top: parent.bottom
@@ -61,14 +74,39 @@ ActivityBase {
                         text: ActivityInfoTree.menuTree[index].title
                     }
                 }
+                ParticleSystem
+                {
+                    id: clickedEffect
+                    anchors.fill: parent
+                    running: true
+                    Emitter {
+                        id: clickedEmitter
+                        anchors.fill: parent
+                        emitRate: 100
+                        lifeSpan: 100
+                        lifeSpanVariation: 50
+                        size: 48
+                        sizeVariation: 20
+                        system: clickedEffect
+                        enabled: false
+                    }
+                    ImageParticle {
+                        source: "qrc:/gcompris/src/activities/clickgame/resource/star.png"
+                        sizeTable: "qrc:/gcompris/src/activities/clickgame/resource/sizeTable.png"
+                        color: "white"
+                        blueVariation: 0.5
+                        greenVariation: 0.5
+                        redVariation: 0.5
+                    }
+                }
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
+                        clickedEmitter.pulse(500)
                         ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
                         activityLoader.source = "qrc:/gcompris/src/activities/" +
                                 ActivityInfoTree.menuTree[index].name
-                        activityLoader.item.menu = menuActivity
-                        pageView.push(activityLoader.item)
+                        if (activityLoader.status == Loader.Ready) loadActivity()
                     }
                 }
             }

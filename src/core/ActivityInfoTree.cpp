@@ -94,8 +94,6 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	menuTree->setRootMenu(qobject_cast<ActivityInfo*>(objectRoot));
 
 
-	QStringList activities;
-
     QFile file(":/gcompris/src/activities/activities.txt");
 	if(!file.open(QFile::ReadOnly)) {
 		qDebug() << "Failed to load the activity list";
@@ -104,17 +102,15 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	while (!in.atEnd())
 	{
 		QString line = in.readLine();
-		if(!line.startsWith("#"))
-			activities << line;
+		if(!line.startsWith("#")) {
+			QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(line);
+			QQmlComponent componentRoot(engine,	QUrl(url));
+			QObject *objectRoot = componentRoot.create();
+			if(objectRoot)
+				menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(objectRoot));
+		}
 	}
 	file.close();
-
-	for (int i = 0; i < activities.size(); ++i) {
-		QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(activities.at(i));
-		QQmlComponent componentRoot(engine,	QUrl(url));
-		QObject *objectRoot = componentRoot.create();
-		menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(objectRoot));
-	}
 
 	return menuTree;
 }

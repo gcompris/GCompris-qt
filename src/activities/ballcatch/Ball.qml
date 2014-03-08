@@ -22,38 +22,32 @@ import QtMultimedia 5.0
 import "ballcatch.js" as Activity
 import GCompris 1.0
 
-Item {
-    readonly property int initRadius: 130
+Image {
+    id: ball
+    source: "qrc:/gcompris/src/activities/ballcatch/resource/ball.svgz"
+    sourceSize.height: 100 * ApplicationInfo.ratio
+    z: 3
+
+    readonly property real initScale: 1.0
 
     // If won, ball goes on tux, if loose, depends on the side clicked first
     property int finishX
 
-    readonly property int finishY: tux.y+tux.height/2
-    readonly property int finishRadius: initRadius/3
-
-    property int radius: initRadius
-
-    z: 3
-
-    Image {
-        id: circle
-        source: "qrc:/gcompris/src/activities/ballcatch/resource/ball.svg"
-        width: radius
-        height: width
-    }
+    readonly property int finishY: tux.y + tux.height / 2
+    readonly property real finishScale: initScale / 2
+    property int radius: initScale
 
     ParallelAnimation {
         id: animation
-
         running: false
 
         NumberAnimation { target: ball; property: "x";
-                          to: ball.finishX; duration: 1000 }
+                          to: finishX; duration: 1000 }
         NumberAnimation { target: ball; property: "y";
-                          to: ball.finishY; duration: 1000 }
-        NumberAnimation { target: circle; property: "width";
-                          to: ball.finishRadius; duration: 1000 }
-        NumberAnimation { target: circle; property: "rotation";
+                          to: finishY; duration: 1000 }
+        NumberAnimation { target: ball; property: "scale";
+                          to: finishScale; duration: 1000 }
+        NumberAnimation { target: ball; property: "rotation";
                           to: 360; duration: 1000 }
 
         onStopped: {
@@ -73,24 +67,24 @@ Item {
 
     function startAnimation() {
         if(gameWon) {
-            finishX = tux.x+tux.width/2-ball.finishRadius/2
+            finishX = x
         }
         else if(activity.leftPressed) {
-            finishX = ball.finishRadius
+            finishX = tux.x + tux.width * 2
         }
         else {
-            finishX = background.width - 2*ball.finishRadius
+            finishX = tux.x - tux.width * 2
         }
         /* Only start the timer if the game is at init state.
-           In init state, radius is initRadius */
-        if(ball.radius == ball.initRadius)
+           In init state, radius is initScale */
+        if(ball.radius == ball.initScale)
             animation.start()
     }
 
     function reinitBall() {
-        x = background.width / 2 - 65;
-        y = leftHand.y;
-        circle.width = initRadius;
-        circle.rotation = 0;
+        x = background.width / 2 - width / 2;
+        y = leftHand.y + 10;
+        ball.scale = initScale;
+        ball.rotation = 0;
     }
 }

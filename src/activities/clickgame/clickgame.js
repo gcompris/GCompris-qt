@@ -1,5 +1,6 @@
 .pragma library
 .import QtQuick 2.0 as Quick
+.import GCompris 1.0 as GCompris
 
 var fishes = [
             {
@@ -199,11 +200,11 @@ var bonus
 var createdFishes
 var killedFishes
 
-function start(_main, _background, _bar, _bonus) {
-    main = _main
-    background = _background
-    bar = _bar
-    bonus = _bonus
+function start(main_, background_, bar_, bonus_) {
+    main = main_
+    background = background_
+    bar = bar_
+    bonus = bonus_
     currentLevel = 0
     initLevel()
 }
@@ -247,8 +248,8 @@ function createFish(minDuration) {
                     "bar": bar,
                     "x": Math.random() * (main.width - fishSource.width),
                     "y": Math.random() * (main.height - bar.height - fishSource.height),
-                    "width": fishSource.width,
-                    "height": fishSource.height,
+                    "width": fishSource.width * 1.1 * GCompris.ApplicationInfo.ratio,
+                    "height": fishSource.height * 1.1 * GCompris.ApplicationInfo.ratio,
                     "source": "qrc:/gcompris/src/activities/clickgame/resource/" +
                               fishSource.imgName,
                     "frameCount": fishSource.nbFrame,

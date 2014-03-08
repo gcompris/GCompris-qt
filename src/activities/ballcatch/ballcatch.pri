@@ -28,13 +28,13 @@ APP_FILES += \
         $$PWD/resource/brick.wav \
         $$PWD/resource/youcannot.wav \
         $$PWD/resource/tuxok.wav \
-        $$PWD/resource/ball.svg \
-        $$PWD/resource/ballcatch.svg \
+		$$PWD/resource/ball.svgz \
+		$$PWD/resource/ballcatch.svgz \
         $$PWD/resource/beach1.svgz \
         $$PWD/resource/beach2.svgz \
         $$PWD/resource/beach3.svgz \
         $$PWD/resource/beach4.svgz \
-        $$PWD/resource/hand.svg \
-        $$PWD/resource/shift_key.svg \
-        $$PWD/resource/tux.svg
+		$$PWD/resource/hand.svgz \
+		$$PWD/resource/shift_key.svgz \
+		$$PWD/resource/tux.svgz
 
