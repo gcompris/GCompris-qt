@@ -23,6 +23,7 @@ APP_FILES += \
 	$$PWD/GCButtonStyle.qml \
 	$$PWD/main.qml \
 	$$PWD/NumPad.qml \
+	$$PWD/ParticleSystemStar.qml \
 	$$PWD/ReadyButton.qml \
 	$$PWD/Score.qml
 
@@ -60,5 +61,4 @@ APP_FILES += \
 	$$PWD/resource/bonus/tux_bad.png \
 	$$PWD/resource/bonus/tux_good.png \
 	$$PWD/resource/tuxballoon.svgz
-
 
