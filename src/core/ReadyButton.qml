@@ -11,9 +11,9 @@ Rectangle {
     smooth: true
     border.width: 2
     gradient: Gradient {
-        GradientStop { position: 0.0; color: "#FFFFFF" }
-        GradientStop { position: 0.9; color: "#FFFFFF" }
-        GradientStop { position: 1.0; color: "#CECECE" }
+        GradientStop { position: 0.0; color: "#AAFFFFFF" }
+        GradientStop { position: 0.9; color: "#AAFFFFFF" }
+        GradientStop { position: 1.0; color: "#AACECECE" }
     }
 
     signal clicked
