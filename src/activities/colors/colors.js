@@ -22,116 +22,116 @@ var colors =
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/yellow_duck.svgz",
                  "text": "Find the yellow duck",
-                 "audio": "voices/$LOCALE/colors/yellow.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/yellow.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/black_duck.svgz",
                  "text": "Find the black duck",
-                 "audio": "voices/$LOCALE/colors/black.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/black.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/green_duck.svgz",
                  "text": "Find the green duck",
-                 "audio": "voices/$LOCALE/colors/green.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/green.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/red_duck.svgz",
                  "text": "Find the red duck",
-                 "audio": "voices/$LOCALE/colors/red.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/red.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/white_duck.svgz",
                  "text": "Find the white duck",
-                 "audio": "voices/$LOCALE/colors/white.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/white.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/blue_duck.svgz",
                  "text": "Find the blue duck",
-                 "audio": "voices/$LOCALE/colors/blue.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/blue.ogg")
              }
             ],
             [ // Level 2
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/yellow_duck.svgz",
                  "text": "Find the yellow duck",
-                 "audio": "voices/$LOCALE/colors/yellow.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/yellow.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/black_duck.svgz",
                  "text": "Find the black duck",
-                 "audio": "voices/$LOCALE/colors/black.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/black.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/brown_duck.svgz",
                  "text": "Find the brown duck",
-                 "audio": "voices/$LOCALE/colors/brown.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/brown.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/green_duck.svgz",
                  "text": "Find the green duck",
-                 "audio": "voices/$LOCALE/colors/green.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/green.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/grey_duck.svgz",
                  "text": "Find the grey duck",
-                 "audio": "voices/$LOCALE/colors/grey.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/grey.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/orange_duck.svgz",
                  "text": "Find the orange duck",
-                 "audio": "voices/$LOCALE/colors/orange.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/orange.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/purple_duck.svgz",
                  "text": "Find the purple duck",
-                 "audio": "voices/$LOCALE/colors/purple.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/purple.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/white_duck.svgz",
                  "text": "Find the white duck",
-                 "audio": "voices/$LOCALE/colors/white.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/white.ogg")
              }
             ],
             [ // Level 3
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/yellow_duck.svgz",
                  "text": "Find the yellow duck",
-                 "audio": "voices/$LOCALE/colors/yellow.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/yellow.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/brown_duck.svgz",
                  "text": "Find the brown duck",
-                 "audio": "voices/$LOCALE/colors/brown.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/brown.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/green_duck.svgz",
                  "text": "Find the green duck",
-                 "audio": "voices/$LOCALE/colors/green.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/green.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/grey_duck.svgz",
                  "text": "Find the grey duck",
-                 "audio": "voices/$LOCALE/colors/grey.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/grey.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/orange_duck.svgz",
                  "text": "Find the orange duck",
-                 "audio": "voices/$LOCALE/colors/orange.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/orange.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/purple_duck.svgz",
                  "text": "Find the purple duck",
-                 "audio": "voices/$LOCALE/colors/purple.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/purple.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/red_duck.svgz",
                  "text": "Find the red duck",
-                 "audio": "voices/$LOCALE/colors/red.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/red.ogg")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/blue_duck.svgz",
                  "text": "Find the blue duck",
-                 "audio": "voices/$LOCALE/colors/blue.ogg"
+                 "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/blue.ogg")
              }
             ]
         ]

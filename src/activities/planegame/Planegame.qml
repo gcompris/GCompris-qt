@@ -145,6 +145,8 @@ ActivityBase {
         Score {
             id: score
             visible: (activity.currentLevel == 0) ? 1 : 0
+            anchors.bottom: background.bottom
+            anchors.right: background.right
         }
 
         Timer {
