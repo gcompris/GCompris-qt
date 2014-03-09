@@ -61,11 +61,11 @@ Item {
             id: levelTextId
             text: "" + level
             font.family: "Helvetica"
-            font.pointSize: 36
-            font.weight: Font.Bold
-            style: Text.Raised;
-            styleColor: "white"
-            color: "black"
+            font.pointSize: 32
+            font.weight: Font.DemiBold
+            style: Text.Outline
+            styleColor: "black"
+            color: "white"
             visible: content.previous & content.value
         }
         BarButton {
