@@ -2,7 +2,6 @@
 APP_FILES += \
 	$$PWD/ActivityInfo.qml \
 	$$PWD/Memory-sound.qml \
-	$$PWD/memory-sound.js \
 	$$PWD/memorysounddataset.js \
 	$$PWD/memory-sound.svg
 
