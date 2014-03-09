@@ -58,6 +58,6 @@ APP_FILES += \
 	$$PWD/resource/bonus/smiley_good.png \
 	$$PWD/resource/bonus/tux_bad.png \
 	$$PWD/resource/bonus/tux_good.png \
-	$$PWD/resource/tuxballoon.png
+	$$PWD/resource/tuxballoon.svgz
 
 
