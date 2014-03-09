@@ -15,6 +15,7 @@ Item {
     signal helpClicked
     signal nextLevelClicked
     signal previousLevelClicked
+    signal repeatClicked
     signal homeClicked
 
     function toggle() {
@@ -73,6 +74,13 @@ Item {
             contentId: content.next
             sourceSize.width: 30 * barZoom
             onClicked: bar.nextLevelClicked()
+        }
+        BarButton {
+            id: repeatButton
+            source: "qrc:/gcompris/src/core/resource/bar_repeat.svgz";
+            sourceSize.width: 66 * barZoom
+            contentId: content.repeat
+            onClicked: bar.repeatClicked()
         }
         BarButton {
             id: homeButton
