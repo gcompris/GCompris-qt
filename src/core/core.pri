@@ -38,6 +38,7 @@ APP_FILES += \
 	$$PWD/resource/bar_ok.svgz \
 	$$PWD/resource/bar_previous.svgz \
 	$$PWD/resource/bar_reload.svgz \
+	$$PWD/resource/bar_repeat.svgz \
 	$$PWD/resource/button.svgz \
 	$$PWD/resource/cancel.svgz \
 	$$PWD/resource/gcompris-medium.png \

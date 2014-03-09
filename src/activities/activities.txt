@@ -3,6 +3,7 @@
 advanced_colors
 algebra_by
 ballcatch
+click_on_letter
 clickgame
 colors
 erase
