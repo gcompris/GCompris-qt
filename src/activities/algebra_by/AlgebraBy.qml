@@ -17,6 +17,7 @@
  */
 
 import QtQuick 2.1
+import GCompris 1.0
 
 import "qrc:/gcompris/src/core"
 import "algebra_by.js" as Activity
@@ -94,52 +95,51 @@ ActivityBase {
             onAnswerChanged: Activity.questionsLeft()
         }
 
-        Text {
-            id: firstOp
-            visible: !iAmReady.visible
-            x:90
-            y:80
-            font.pixelSize: 32
-            font.bold: true
-        }
-
-        Text{
-            id: multiply
-            x: 150
-            y:80
-            visible: firstOp.visible
-            font.pixelSize: 32
-            text: "x"
-            font.bold: true
-        }
-
-        Text{
-            id: secondOp
-            x: 210
+        Flow {
+            x: 90 * ApplicationInfo.ratio
             y: 80
-            visible: !iAmReady.visible
-            font.pixelSize: 32
-            font.bold: true
-        }
+            width: parent.width / 2
+            height: 100
+            anchors.margins: 4
+            spacing: 10
 
-        Text {
-            id: equals
-            x: 270
-            y: 80
-            visible: firstOp.visible
-            font.pixelSize: 32
-            font.bold: true
-            text: "="
-        }
+            Text {
+                id: firstOp
+                visible: !iAmReady.visible
+                font.pointSize: 32
+                font.bold: true
+            }
 
-        Text {
-            id: result
-            x: 330
-            y:80
-            visible: !iAmReady.visible
-            font.pixelSize: 32
-            font.bold: true
-            text: numpad.answer
+            Text{
+                id: multiply
+                visible: firstOp.visible
+                font.pointSize: 32
+                text: "x"
+                font.bold: true
+            }
+
+            Text{
+                id: secondOp
+                visible: !iAmReady.visible
+                font.pointSize: 32
+                font.bold: true
+            }
+
+            Text {
+                id: equals
+                visible: firstOp.visible
+                font.pointSize: 32
+                font.bold: true
+                text: "="
+            }
+
+            Text {
+                id: result
+                visible: !iAmReady.visible
+                font.pointSize: 32
+                font.bold: true
+                text: numpad.answer
+            }
         }
 
         Score {

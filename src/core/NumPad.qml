@@ -1,5 +1,4 @@
 import QtQuick 2.1
-import QtQml.Models 2.1
 import QtQuick.Controls 1.0
 import GCompris 1.0
 
@@ -19,7 +18,7 @@ Item {
 
         id: leftPanel
         height: parent.height - 70
-        width: 70
+        width: 70 * ApplicationInfo.ratio
         opacity: 0.8
 
         Repeater {
@@ -35,7 +34,8 @@ Item {
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     text: numbers[index]
-                    font.pixelSize: parent.height/2
+                    font.pointSize: 28
+                    font.bold: true
                 }
 
                 MouseArea{
@@ -54,9 +54,9 @@ Item {
     Column {
 
         id: rightPanel
-        height: parent.height - 70
-        width: 70
-        x: parent.width - 70
+        height: parent.height - 70 * ApplicationInfo.ratio
+        width: 70 * ApplicationInfo.ratio
+        x: parent.width - 70 * ApplicationInfo.ratio
         opacity: 0.8
 
         Repeater {
@@ -72,7 +72,8 @@ Item {
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     text: numbers[index] + 5
-                    font.pixelSize: parent.height/2
+                    font.pointSize: 28
+                    font.bold: true
                 }
                 MouseArea {
                     anchors.fill: parent
@@ -96,7 +97,8 @@ Item {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 text: "←"
-                font.pixelSize: parent.height/3
+                font.pointSize: 28
+                font.bold: true
             }
 
             MouseArea {

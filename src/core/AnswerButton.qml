@@ -94,7 +94,8 @@ Item {
         // the x of the text is changed, which would not work if we use an anchor layout.
         property int horizontallyCenteredX: (button.width - width) >> 1;
         x: horizontallyCenteredX;
-        font.pixelSize: parent.height * 0.33
+        font.pointSize: 32
+        font.bold: true
         text: textLabel
     }
 
