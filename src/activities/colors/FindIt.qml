@@ -34,9 +34,6 @@ ActivityBase {
     property int itemWidth
     property int itemHeight
 
-    onStart: {}
-    onStop: {}
-
     pageComponent: Image {
         id: background
         signal start
