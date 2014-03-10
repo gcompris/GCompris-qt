@@ -1,9 +1,9 @@
 APP_FILES += \
 	$$PWD/ActivityInfo.qml \
 	$$PWD/AlgebraBy.qml \
-	$$PWD/activity.js \
+	$$PWD/algebra_by.js \
 	$$PWD/algebra_by.svg
 
 APP_FILES += \
-	$$PWD/resource/scenery2_background.png
+	$$PWD/resource/background.svgz
 

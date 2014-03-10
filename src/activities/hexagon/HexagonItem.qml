@@ -1,7 +1,7 @@
 import QtQuick 2.1
-import QtQuick.Particles 2.0
 import QtMultimedia 5.0
 import "hexagon.js" as Activity
+import "qrc:/gcompris/src/core"
 import GCompris 1.0
 
 Item {
@@ -81,7 +81,7 @@ Item {
                 strawberry.source = "qrc:/gcompris/src/activities/hexagon/resource/strawberry.svg"
                 audioDrip.play()
                 Activity.strawberryFound()
-                clickedEffect.start()
+                particles.emitter.burst(40)
             } else {
                 hexagon.color =
                         Activity.getColor(Activity.getDistance(hexagon.ix, hexagon.iy))
@@ -91,28 +91,10 @@ Item {
         }
     }
 
-    ParticleSystem
+    ParticleSystemStar
     {
-        id: clickedEffect
-        anchors.fill: parent
-        running: false
-        Emitter {
-            anchors.fill: parent
-            emitRate: 100
-            lifeSpan: 100
-            lifeSpanVariation: 50
-            size: 48
-            sizeVariation: 20
-        }
-
-        ImageParticle {
-            source: "qrc:/gcompris/src/activities/clickgame/resource/star.png"
-            sizeTable: "qrc:/gcompris/src/activities/clickgame/resource/sizeTable.png"
-            color: "white"
-            blueVariation: 0.5
-            greenVariation: 0.5
-            redVariation: 0.5
-        }
+        id: particles
+        clip: false
     }
 
 }

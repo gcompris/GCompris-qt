@@ -23,7 +23,6 @@
 */
 
 import QtQuick 2.2
-import QtQuick.Particles 2.0
 import GCompris 1.0
 
 Item {
@@ -50,35 +49,8 @@ Item {
         color: normalStateColor
         opacity: 0.5
     }
-    ParticleSystem {
+    ParticleSystemStar {
         id: particles
-        anchors.fill: parent
-        Emitter {
-            id: clickedEmitter
-            anchors.fill: parent
-            emitRate: 20
-            lifeSpan: 800
-            lifeSpanVariation: 400
-            sizeVariation: 12
-            size: 24 * ApplicationInfo.ratio
-            system: particles
-            velocity: PointDirection {xVariation: 100; yVariation: 100;}
-            acceleration: PointDirection {xVariation: 50; yVariation: 50;}
-            velocityFromMovement: 50
-            enabled: false
-        }
-        ImageParticle {
-            source: "qrc:/gcompris/src/core/resource/star.png"
-            sizeTable: "qrc:/gcompris/src/core/resource/sizeTable.png"
-            anchors.fill: parent
-            color: "white"
-            blueVariation: 0.5
-            greenVariation: 0.5
-            redVariation: 0.5
-            clip: true
-            smooth: false
-            autoRotation: true
-        }
     }
     Image {
         source: "qrc:/gcompris/src/core/resource/button.svgz"
@@ -94,7 +66,8 @@ Item {
         // the x of the text is changed, which would not work if we use an anchor layout.
         property int horizontallyCenteredX: (button.width - width) >> 1;
         x: horizontallyCenteredX;
-        font.pixelSize: parent.height * 0.33
+        font.pointSize: 18
+        font.bold: true
         text: textLabel
     }
 
@@ -118,7 +91,7 @@ Item {
                     feedback.playCorrectSound();
                 blockClicks = true;
                 if (typeof(particles) === "object")
-                    clickedEmitter.burst(40);
+                    particles.emitter.burst(40);
             }
         }
         PropertyAction {

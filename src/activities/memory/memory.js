@@ -31,12 +31,13 @@ var displayHeightRatio
 var displayX
 var displayY
 var type
+var sound1
 
 
 function start(main_,type_, background_, bar_, bonus_,
                containerModel_, cardRepeater_, grid_,
                dataset_, displayWidthRatio_, displayHeightRatio_,
-               displayX_, displayY_) {
+               displayX_, displayY_, sound1_) {
     displayWidthRatio = displayWidthRatio_
     displayHeightRatio = displayHeightRatio_
     displayX = displayX_
@@ -50,6 +51,7 @@ function start(main_,type_, background_, bar_, bonus_,
     cardRepeater = cardRepeater_
     grid = grid_
     currentLevel = 0
+    sound1 = sound1_
     imageList = dataset_ //could be a sound list or a operation list
     initLevel()
 }

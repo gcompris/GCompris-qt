@@ -3,6 +3,7 @@
 advanced_colors
 algebra_by
 ballcatch
+click_on_letter
 clickgame
 colors
 erase
@@ -22,3 +23,4 @@ memory-sound
 planegame
 
 
+memory-math-add-minus-mult-div

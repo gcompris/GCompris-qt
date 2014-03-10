@@ -21,6 +21,7 @@ ActivityBase {
     property string backgroundImg
     property string type  //define if it's a "picture" ou a "sound" memory
     property var dataset
+    property Audio sound1
 
     onStart: {}
     onStop: {}
@@ -31,6 +32,12 @@ ActivityBase {
           Activity.cardReturn()
         }
 
+    }
+
+    // For perf reason it is best not to put this in each HexagonItem
+    Audio {
+        id: sound1
+        source: ""
     }
 
     pageComponent: Image {
@@ -50,7 +57,7 @@ ActivityBase {
         onStart: { Activity.start(main, type, background, bar, bonus,
                                   containerModel, cardRepeater, grid,
                                   dataset, displayWidthRatio, displayHeightRatio,
-                                  displayX, displayY) }
+                                  displayX, displayY,sound1) }
 
         onStop: { Activity.stop() }
 
@@ -62,7 +69,7 @@ ActivityBase {
             id: grid
             x: displayX
             y: displayY
-            spacing: 20
+            spacing: 5
             Repeater {
                 id: cardRepeater
                 model: containerModel

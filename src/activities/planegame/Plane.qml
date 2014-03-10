@@ -139,7 +139,7 @@ Image {
 
                         score.currentSubLevel++
 
-                        if(score.currentSubLevel == score.numberOfSublevels
+                        if(score.currentSubLevel == score.numberOfSubLevels
                                 && activity.currentLevel == 0) {
                             /* Try the next level */
                             Activity.nextLevel()

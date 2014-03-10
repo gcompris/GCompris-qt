@@ -43,6 +43,4 @@ APP_FILES += \
 	$$PWD/resource/shark1.png \
 	$$PWD/resource/six_barred.png \
 	$$PWD/resource/teeth.png \
-	$$PWD/resource/sizeTable.png \
-	$$PWD/resource/star.png \
 	$$PWD/resource/bubble.png

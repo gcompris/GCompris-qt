@@ -87,10 +87,10 @@ ActivityBase {
             anchors.top: parent.top
             anchors.topMargin: 10
             font.pointSize: 24
-            color: "white"
-            style: Text.Raised
-            styleColor: "gray"
             font.weight: Font.DemiBold
+            style: Text.Outline
+            styleColor: "black"
+            color: "white"
 
             function initQuestion() {
                 text = Activity.getCurrentTextQuestion()
