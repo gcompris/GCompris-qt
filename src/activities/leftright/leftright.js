@@ -49,19 +49,10 @@ var levels = [
 
 var currentImageId;
 var currentLevel;
-var bar;
-var bonus;
-var imageAnimOff;
-var leftButton;
-var rightButton;
+var items
 
-function start(bar_, bonus_, imageAnimOff_,
-               leftButton_, rightButton_) {
-    bar = bar_
-    bonus = bonus_
-    imageAnimOff = imageAnimOff_
-    leftButton = leftButton_
-    rightButton = rightButton_
+function start(items_) {
+    items = items_
     currentLevel = 0
     initLevel()
 }
@@ -71,7 +62,7 @@ function stop() {
 }
 
 function initLevel() {
-    bar.level = currentLevel + 1
+    items.bar.level = currentLevel + 1
     currentImageId = 0
     currentHands = new Array()
     var level = levels[currentLevel]
@@ -102,9 +93,9 @@ function previousLevel() {
 }
 
 function displayHand() {
-    leftButton.isCorrectAnswer = isLeft()
-    rightButton.isCorrectAnswer = isRight()
-    imageAnimOff.start()
+    items.leftButton.isCorrectAnswer = isLeft()
+    items.rightButton.isCorrectAnswer = isRight()
+    items.imageAnimOff.start()
 }
 
 function getCurrentHandImage() {
@@ -118,7 +109,7 @@ function getCurrentHandRotation() {
 
 function displayNextHand() {
     if(currentHands.length <= ++currentImageId ) {
-        bonus.good("flower")
+        items.bonus.good("flower")
         nextLevel()
     }
     displayHand()
@@ -145,11 +136,11 @@ function rightClick() {
 }
 
 function leftClickPressed() {
-    leftButton.pressed()
+    items.leftButton.pressed()
 }
 
 function rightClickPressed() {
-    rightButton.pressed()
+    items.rightButton.pressed()
 }
 
 function shuffle(o) {

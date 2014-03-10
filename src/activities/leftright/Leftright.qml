@@ -18,12 +18,20 @@ ActivityBase {
         signal stop
         fillMode: Image.PreserveAspectCrop
 
+        Item {
+            id: items
+            property alias bar: bar
+            property alias bonus: bonus
+            property alias imageAnimOff: imageAnimOff
+            property alias leftButton: leftButton
+            property alias rightButton: rightButton
+        }
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        onStart: { Activity.start(bar, bonus, imageAnimOff,
-                                  leftButton, rightButton) }
+        onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
         Item {
