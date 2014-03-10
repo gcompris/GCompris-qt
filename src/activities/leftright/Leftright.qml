@@ -5,10 +5,11 @@ import "leftright.js" as Activity
 
 ActivityBase {
     id: activity
-    focus: true
 
-    onStart: {}
-    onStop: {}
+    onStart: focus = true;
+
+    Keys.onLeftPressed: Activity.leftClickPressed()
+    Keys.onRightPressed: Activity.rightClickPressed()
 
     pageComponent: Image {
         source: "qrc:/gcompris/src/activities/leftright/resource/back.svgz"
@@ -24,10 +25,6 @@ ActivityBase {
         onStart: { Activity.start(bar, bonus, imageAnimOff,
                                   leftButton, rightButton) }
         onStop: { Activity.stop() }
-
-        // FIXME It's not working
-        Keys.onLeftPressed: Activity.leftClick()
-        Keys.onRightPressed: Activity.rightClick()
 
         Item {
             id: topBorder
