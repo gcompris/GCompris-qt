@@ -45,9 +45,10 @@ var letterAudio;
 var level;
 var questions;
 var answers;
+var mode;
 
 function start(_bar, _bonus, _trainModel, _nextLevelAudio, _letterAudio,
-        _questionItem, _score, _levelsFile)
+        _questionItem, _score, _levelsFile, _mode)
 {
     bar = _bar;
     bonus = _bonus;
@@ -57,6 +58,7 @@ function start(_bar, _bonus, _trainModel, _nextLevelAudio, _letterAudio,
     questionItem = _questionItem;
     score = _score;
     levelsFile = _levelsFile
+    mode = _mode
 
     loadLevels();
     currentLevel = 0;
@@ -102,6 +104,17 @@ function loadLevels()
             console.error("Click_on_letter: Invalid default levels file "
                 + levelsFile.name + ". Can't continue!");
             // any way to error-exit here?
+            return;
+        }
+    }
+    // at this point we have valid levels
+    for (var i = 0; i < levels.length; i++) {
+        if (mode === "lowercase") {
+            levels[i].questions = levels[i].questions.toLocaleLowerCase();
+            levels[i].answers = levels[i].answers.toLocaleLowerCase();
+        } else {
+            levels[i].questions = levels[i].questions.toLocaleUpperCase();
+            levels[i].answers = levels[i].answers.toLocaleUpperCase();        
         }
     }
 }
