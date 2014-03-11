@@ -31,6 +31,13 @@ ActivityBase {
     id: activity
     focus: true
 
+    File {
+        id: levelsFile
+        name: ""
+            
+        onError: console.log("Click_on_letter: levelsFile error: " + msg);
+    }
+    
     Audio {
         id: nextLevelAudio
         source: "resource/voices/" + ApplicationInfo.locale + "/misc/click_on_letter.ogg" //FIXME: adjust to voices path
@@ -73,7 +80,7 @@ ActivityBase {
         }
 
         onStart: Activity.start(bar, bonus, trainModel, nextLevelAudio, 
-                                letterAudio, questionItem, score)
+                                letterAudio, questionItem, score, levelsFile)
         onStop: Activity.stop()
 
         DialogHelp {
