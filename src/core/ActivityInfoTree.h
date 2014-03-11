@@ -25,6 +25,8 @@ public:
 	void menuTreeAppend(ActivityInfo *menu);
 	void menuTreeAppend(QQmlEngine *engine,
 						const QDir &menuDir, const QString &menuFile);
+	void sortByDifficulty();
+	void sortByName();
 signals:
 	void menuTreeChanged();
 	void currentActivityChanged();
@@ -33,6 +35,22 @@ private:
 	QList<ActivityInfo *> m_menuTree;
 	ActivityInfo *m_rootMenu;
 	ActivityInfo *m_currentActivity;
+
+	struct SortByDifficulty
+	{
+		bool operator()(const ActivityInfo *a, const ActivityInfo *b) const
+		{
+			return a->difficulty() < b->difficulty();
+		}
+	};
+
+	struct SortByName
+	{
+		bool operator()(const ActivityInfo *a, const ActivityInfo *b) const
+		{
+			return a->name() < b->name();
+		}
+	};
 
 public:
 	static void init();

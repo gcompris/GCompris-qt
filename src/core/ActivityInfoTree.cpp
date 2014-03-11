@@ -82,6 +82,16 @@ void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
 	}
 }
 
+void ActivityInfoTree::sortByDifficulty()
+{
+	qSort(m_menuTree.begin(), m_menuTree.end(), SortByDifficulty());
+}
+
+void ActivityInfoTree::sortByName()
+{
+	qSort(m_menuTree.begin(), m_menuTree.end(), SortByName());
+}
+
 QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
 {
 	Q_UNUSED(scriptEngine)
@@ -112,6 +122,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	}
 	file.close();
 
+	menuTree->sortByDifficulty();
 	return menuTree;
 }
 

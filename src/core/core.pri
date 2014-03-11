@@ -42,6 +42,12 @@ APP_FILES += \
 	$$PWD/resource/bar_repeat.svgz \
 	$$PWD/resource/button.svgz \
 	$$PWD/resource/cancel.svgz \
+	$$PWD/resource/difficulty1.svgz \
+	$$PWD/resource/difficulty2.svgz \
+	$$PWD/resource/difficulty3.svgz \
+	$$PWD/resource/difficulty4.svgz \
+	$$PWD/resource/difficulty5.svgz \
+	$$PWD/resource/difficulty6.svgz \
 	$$PWD/resource/gcompris-medium.png \
 	$$PWD/resource/gcompris-small.png \
 	$$PWD/resource/gcompris.png \

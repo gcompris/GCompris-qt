@@ -1,3 +1,24 @@
+/* GCompris - Click_on_letter.qml
+ *
+ * Copyright (C) 2014 Bruno Coudoin
+ *
+ * Authors:
+ *   Pascal Georges <pascal.georges1@free.fr> (GTK+ version)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
 import QtQuick 2.1
 import GCompris 1.0
 import "qrc:/gcompris/src/core"
@@ -5,10 +26,11 @@ import "leftright.js" as Activity
 
 ActivityBase {
     id: activity
-    focus: true
 
-    onStart: {}
-    onStop: {}
+    onStart: focus = true;
+
+    Keys.onLeftPressed: Activity.leftClickPressed()
+    Keys.onRightPressed: Activity.rightClickPressed()
 
     pageComponent: Image {
         source: "qrc:/gcompris/src/activities/leftright/resource/back.svgz"
@@ -17,17 +39,21 @@ ActivityBase {
         signal stop
         fillMode: Image.PreserveAspectCrop
 
+        Item {
+            id: items
+            property alias bar: bar
+            property alias bonus: bonus
+            property alias imageAnimOff: imageAnimOff
+            property alias leftButton: leftButton
+            property alias rightButton: rightButton
+        }
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        onStart: { Activity.start(bar, bonus, imageAnimOff,
-                                  leftButton, rightButton) }
+        onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
-
-        // FIXME It's not working
-        Keys.onLeftPressed: Activity.leftClick()
-        Keys.onRightPressed: Activity.rightClick()
 
         Item {
             id: topBorder

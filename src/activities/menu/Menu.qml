@@ -59,6 +59,13 @@ ActivityBase {
                     anchors.horizontalCenter: parent.horizontalCenter
                     sourceSize.height: iconHeight
                     anchors.margins: 5
+                    Image {
+                        source: "qrc:/gcompris/src/core/resource/difficulty" +
+                                ActivityInfoTree.menuTree[index].difficulty + ".svgz";
+                        anchors.top: parent.top
+                        sourceSize.width: iconWidth * 0.15
+                        x: 5
+                    }
                     Text {
                         anchors.top: parent.bottom
                         anchors.horizontalCenter: parent.horizontalCenter

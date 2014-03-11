@@ -43,6 +43,16 @@ Item {
     signal correctlyPressed
     signal incorrectlyPressed
 
+    signal pressed
+    onPressed: {
+        if (!blockClicks) {
+            if (isCorrectAnswer)
+                correctAnswerAnimation.start();
+            else
+                wrongAnswerAnimation.start();
+        }
+    }
+
     Rectangle {
         id: rect
         anchors.fill: parent
@@ -72,15 +82,9 @@ Item {
     }
 
     MouseArea {
+        id: mouseArea
         anchors.fill: parent
-        onPressed: {
-            if (!blockClicks) {
-                if (isCorrectAnswer)
-                    correctAnswerAnimation.start();
-                else
-                    wrongAnswerAnimation.start();
-            }
-        }
+        onPressed: button.pressed()
     }
 
     SequentialAnimation {
