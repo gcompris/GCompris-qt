@@ -39,8 +39,21 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
-        onStart: Activity.start(main, background, bar, bonus, score, balloon,
-                                iAmReady, firstOp, secondOp, timer, numpad)
+        Item {
+            id: items
+            property alias background: background
+            property alias bar: bar
+            property alias bonus: bonus
+            property alias score: score
+            property alias balloon: balloon
+            property alias iAmReady: iAmReady
+            property alias firstOp: firstOp
+            property alias secondOp: secondOp
+            property alias timer: timer
+            property alias numpad: numpad
+        }
+
+        onStart: Activity.start(items)
         onStop: Activity.stop()
 
         DialogHelp {

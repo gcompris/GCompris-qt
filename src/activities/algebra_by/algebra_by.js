@@ -20,38 +20,17 @@
 .import QtQuick 2.0 as Quick
 
 var currentLevel
-var main
-var background
-var bar
-var bonus
-var score
-var balloon
-var iAmReady
-var firstOp
-var secondOp
-var timer
-var numpad
+var items
 var secondOperandVal
 var firstOperandVal
 var operations = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 var nbLevel = 10
 
-function start(_main, _background, _bar, _bonus, _score, _balloon,
-               _iAmReady, _firstOp, _secondOp, _timer, _numpad) {
-    main = _main
-    background = _background
-    bar = _bar
-    bonus = _bonus
-    score = _score
-    balloon = _balloon
-    iAmReady = _iAmReady
-    firstOp = _firstOp
-    secondOp = _secondOp
-    timer = _timer
-    numpad = _numpad
+function start(items_) {
+    items = items_
     currentLevel = 0
-    score.numberOfSubLevels = 10
+    items.score.numberOfSubLevels = 10
     initLevel()
 }
 
@@ -59,16 +38,16 @@ function stop() {
 }
 
 function initLevel() {
-    bar.level = currentLevel + 1
-    score.visible = false
-    score.currentSubLevel = 1
+    items.bar.level = currentLevel + 1
+    items.score.visible = false
+    items.score.currentSubLevel = 1
     operations = shuffle(operations)
     calculateOperands()
 
-    iAmReady.visible = true
-    firstOp.visible = false
-    secondOp.visible = false
-    balloon.stopMoving()
+    items.iAmReady.visible = true
+    items.firstOp.visible = false
+    items.secondOp.visible = false
+    items.balloon.stopMoving()
 }
 
 function nextLevel() {
@@ -87,10 +66,10 @@ function previousLevel() {
 
 function calculateOperands()
 {
-    firstOperandVal = bar.level
-    secondOperandVal = operations[score.currentSubLevel - 1]
-    firstOp.text = firstOperandVal
-    secondOp.text = secondOperandVal
+    firstOperandVal = items.bar.level
+    secondOperandVal = operations[items.score.currentSubLevel - 1]
+    items.firstOp.text = firstOperandVal
+    items.secondOp.text = secondOperandVal
 }
 
 function validateAnswer(screenAnswer)
@@ -100,26 +79,26 @@ function validateAnswer(screenAnswer)
 
 function run() {
     calculateOperands()
-    numpad.resetText()
-    score.visible = true
-    iAmReady.visible = false
-    firstOp.visible = true
-    secondOp.visible = true
+    items.numpad.resetText()
+    items.score.visible = true
+    items.iAmReady.visible = false
+    items.firstOp.visible = true
+    items.secondOp.visible = true
     // TODO adjusting or disabling the difficulty
-    balloon.startMoving(20000)
+    items.balloon.startMoving(20000)
 }
 
 function questionsLeft() {
-    if(validateAnswer(parseInt(numpad.answer))) {
-        numpad.answerFlag = true
+    if(validateAnswer(parseInt(items.numpad.answer))) {
+        items.numpad.answerFlag = true
 
-        if(score.currentSubLevel < 10) {
-            score.currentSubLevel++
-            timer.start()
-        } else if(score.currentSubLevel >= 10) {
-            score.currentSubLevel = 1
-            balloon.stopMoving()
-            bonus.good("smiley");
+        if(items.score.currentSubLevel < 10) {
+            items.score.currentSubLevel++
+            items.timer.start()
+        } else if(items.score.currentSubLevel >= 10) {
+            items.score.currentSubLevel = 1
+            items.balloon.stopMoving()
+            items.bonus.good("smiley");
         }
     }
 }
