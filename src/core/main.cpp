@@ -6,6 +6,7 @@
 
 #include "ApplicationInfo.h"
 #include "ActivityInfoTree.h"
+#include "File.h"
 
 int main(int argc, char *argv[])
 {
@@ -15,6 +16,7 @@ int main(int argc, char *argv[])
 
 	ApplicationInfo::init();
 	ActivityInfoTree::init();
+	File::init();
 
 	QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
 	QObject *topLevel = engine.rootObjects().value(0);
