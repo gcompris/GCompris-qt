@@ -39,7 +39,7 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
-        Item {
+        QtObject {
             id: items
             property alias background: background
             property alias bar: bar

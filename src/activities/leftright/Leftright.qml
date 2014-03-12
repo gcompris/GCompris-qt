@@ -39,7 +39,7 @@ ActivityBase {
         signal stop
         fillMode: Image.PreserveAspectCrop
 
-        Item {
+        QtObject {
             id: items
             property alias bar: bar
             property alias bonus: bonus
