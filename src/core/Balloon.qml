@@ -30,11 +30,14 @@ Image {
     scale: 0.8
     x: parent.width / 2
     y: - balloon.height
+    property int parentHeight: parent.height
     signal timeout
     signal ready
 
     property int duration
     property bool disabled
+
+    onParentHeightChanged: startMoving(duration)
 
     function startMoving(durationIncoming)
     {
