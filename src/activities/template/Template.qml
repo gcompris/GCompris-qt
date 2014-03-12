@@ -43,7 +43,7 @@ ActivityBase {
         }
 
         // Add here the QML items you need to access in javascript
-        Item {
+        QtObject {
             id: items
             property Item main: activity.main
             property alias background: background
