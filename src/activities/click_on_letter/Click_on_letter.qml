@@ -30,6 +30,17 @@ import "click_on_letter.js" as Activity
 ActivityBase {
     id: activity
     focus: true
+    
+    /* mode of the activity, either "lowercase" (click_on_letter)
+     * or "uppercase" (click_on_letter_up): */
+    property string mode: "lowercase" 
+
+    File {
+        id: levelsFile
+        name: ""
+            
+        onError: console.log("Click_on_letter: levelsFile error: " + msg);
+    }
 
     Audio {
         id: nextLevelAudio
@@ -73,7 +84,8 @@ ActivityBase {
         }
 
         onStart: Activity.start(bar, bonus, trainModel, nextLevelAudio, 
-                                letterAudio, questionItem, score)
+                                letterAudio, questionItem, score, levelsFile,
+                                mode)
         onStop: Activity.stop()
 
         DialogHelp {
