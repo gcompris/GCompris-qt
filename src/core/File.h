@@ -37,8 +37,8 @@ public:
     QString name() const;
     void setName(const QString &str);
 
-    Q_INVOKABLE QString read();
-    Q_INVOKABLE bool write(const QString& data);
+    Q_INVOKABLE QString read(const QString& name = QString());
+    Q_INVOKABLE bool write(const QString& data, const QString& name = QString());
 
     static void init();
 

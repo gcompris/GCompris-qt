@@ -92,14 +92,12 @@ function parseLevels(json)
 
 function loadLevels()
 {
-    var ret;
-    levelsFile.name = GCompris.ApplicationInfo.getAudioFilePath("click_on_letter/levels-$LOCALE.json"); // FIXME: this should be something like ApplicationInfo.getDataPath() + "click_on_letter" + "levels-" + ApplicationInfo.getCurrentLocale() + ".json" once it is there.
-    var json = levelsFile.read();
+    var ret;    
+    var json = levelsFile.read(GCompris.ApplicationInfo.getAudioFilePath("click_on_letter/levels-$LOCALE.json")); // FIXME: this should be something like ApplicationInfo.getDataPath() + "click_on_letter" + "levels-" + ApplicationInfo.getCurrentLocale() + ".json" once it is there.
     if (json == "" || !parseLevels(json)) {
         console.warn("Click_on_letter: Invalid levels file " + levelsFile.name);
         // fallback to default Latin (levels-en.json) file:
-        levelsFile.name = defaultLevelsFile;
-        json = levelsFile.read();
+        json = levelsFile.read(defaultLevelsFile);
         if (json == "" || !parseLevels(json)) {
             console.error("Click_on_letter: Invalid default levels file "
                 + levelsFile.name + ". Can't continue!");

@@ -51,8 +51,11 @@ void File::setName(const QString &str)
     }
 }
 
-QString File::read()
+QString File::read(const QString& name)
 {
+    if (name != QString())
+        setName(name);
+
     if (m_name.isEmpty()){
         emit error("source is empty");
         return QString();
@@ -76,8 +79,11 @@ QString File::read()
     return fileContent;
 }
 
-bool File::write(const QString& data)
+bool File::write(const QString& data, const QString& name)
 {
+    if (name != QString())
+        setName(name);
+
     if (m_name.isEmpty()) {
         emit error("source is empty");
         return false;
