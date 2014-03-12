@@ -51,11 +51,10 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        Item {
+        QtObject {
             id: items
             property alias background: background
             property alias bar: bar
-            property ActivityBase activity: activity
             property alias ball: ball
             property alias rightHand: rightHand
             property alias leftHand: leftHand
