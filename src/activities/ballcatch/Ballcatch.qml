@@ -30,115 +30,14 @@ ActivityBase {
     id: activity
 
     onStart: {
-        focus=true;
-
-        /* You cannot dissociate left shift and right shift easily
-           on Qt so we put all possibilities for scanCode here */
-        switch(ApplicationInfo.platform) {
-        case ApplicationInfo.Linux: // todo find existing enum for those values?
-            // Do not know if it is the same for all linux ?
-            supposedRightKeyCode = [62];
-            supposedLeftKeyCode = [50];
-            break;
-        case ApplicationInfo.Windows:
-            // VK_RSHIFT in WinUser.h is 0xA1, but does not work in my win8...
-            supposedRightKeyCode = [0xA1, 54];
-            // VK_LSHIFT in WinUser.h, but does not work in my win8...
-            supposedLeftKeyCode = [0xA0, 42];
-            break;
-        case ApplicationInfo.MacOSX:
-            // keyEvent.nativeScanCode not filled in mac
-        default: // Will it be played with keyboard on mobile/tablet ?
-            supposedRightKeyCode = [-1];
-            supposedLeftKeyCode = [-1];
-        }
+        focus = true;
+        Activity.initKey()
     }
     onStop: {}
 
-    //Lists containing all possible values for the current platform for scanCode
-    property var supposedRightKeyCode
-    property var supposedLeftKeyCode
-
-    // Real scanCode if found, -1 else
-    property int rightKeyCode: -2
-    property int leftKeyCode: -2
-
-    /* when the corresponding shift key is pressed, the following boolean pass
-       to true and is reseted at the end of the level */
-    property bool leftPressed: false
-    property bool rightPressed: false
-
     Keys.onPressed: {
-        if(event.key == Qt.Key_Shift) {
-            // Default values, look for real values
-            if(leftKeyCode == -2 || rightKeyCode == -2) {
-                // Look if it is a left key
-                var isLeft = false;
-                var i = 0;
-                for(i = 0 ; i < supposedLeftKeyCode.length ; ++ i) {
-                    if(event.nativeScanCode == supposedLeftKeyCode[i]) {
-                        leftKeyCode = event.nativeScanCode;
-                        isLeft = true;
-                        break;
-                    }
-                }
-
-                var isRight = false;
-                if(!isLeft) { // If not left look if it is a right
-                    for(i = 0 ; i < supposedRightKeyCode.length ; ++ i) {
-                        if(event.nativeScanCode == supposedRightKeyCode[i]) {
-                            rightKeyCode = event.nativeScanCode;
-                            isRight = true;
-                            break;
-                        }
-                    }
-                }
-
-                if(!(isLeft || isRight)) {
-                    /*
-                     Not existing :(
-                     Print a log because if the person is a developer
-                     he could give us the values :)
-                    */
-                    print("You pressed key_shift with nativeScanCode=" +
-                          event.nativeScanCode + " not handled")
-
-                    // Randomly put the key in left or right...
-                    if(leftKeyCode == -2 && rightKeyCode == -2) {
-                        if(Math.random()%2 == 0)
-                            leftKeyCode = event.nativeScanCode;
-                        else
-                            rightKeyCode = event.nativeScanCode;
-                    }
-                    else if(leftKeyCode == -2) {
-                        leftKeyCode = event.nativeScanCode;
-                    }
-                    else {
-                        rightKeyCode = event.nativeScanCode;
-                    }
-                }
-            }
-
-            // Look for the key !
-            if(event.nativeScanCode == leftKeyCode) {
-                // left
-                if(!leftPressed) {
-                    Activity.leftShiftPressed();
-                    leftPressed = true
-                }
-            }
-            else {
-                // right
-                if(!rightPressed) {
-                    Activity.rightShiftPressed();
-                    rightPressed = true
-                }
-            }
-            event.accepted = true;
-        }
+        Activity.processKey(event)
     }
-
-    property bool gameWon: false
 
     pageComponent: Image {
         id: background
@@ -152,9 +51,19 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
+        Item {
+            id: items
+            property alias background: background
+            property alias bar: bar
+            property ActivityBase activity: activity
+            property alias ball: ball
+            property alias rightHand: rightHand
+            property alias leftHand: leftHand
+            property alias deltaPressedTimer: deltaPressedTimer
+        }
+
         onStart: {
-            Activity.start(background, bar, activity, ball, rightHand,
-                           leftHand, deltaPressedTimer)
+            Activity.start(items)
         }
 
         onStop: { Activity.stop() }
@@ -270,7 +179,7 @@ ActivityBase {
                 anchors.fill: parent
                 onTouchUpdated: {
                     // right
-                    if(!rightPressed) {
+                    if(!Activity.rightPressed) {
                         Activity.rightShiftPressed();
                         rightPressed = true
                     }
@@ -283,7 +192,7 @@ ActivityBase {
             x: 10
             y: rightHand.y + rightHand.height / 2
             source: "qrc:/gcompris/src/activities/ballcatch/resource/shift_key.svgz"
-            opacity: leftPressed ? 1 : 0.5
+            opacity: Activity.leftPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
         }
 
@@ -293,7 +202,7 @@ ActivityBase {
             x: main.width - width - 10
             y: rightHand.y + rightHand.height / 2
             source: "qrc:/gcompris/src/activities/ballcatch/resource/shift_key.svgz"
-            opacity: rightPressed ? 1 : 0.5
+            opacity: Activity.rightPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
         }
 
@@ -313,7 +222,7 @@ to make the ball go in a straight line.")
             verticalAlignment: TextEdit.AlignVCenter
             font.pointSize: 16
             // Remove the text when both keys has been pressed
-            visible: !(leftPressed && rightPressed)
+            visible: !(Activity.leftPressed && Activity.rightPressed)
         }
 
         function playSound(identifier) {

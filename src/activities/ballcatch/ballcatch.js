@@ -58,6 +58,21 @@ var levelProperties = [
             },
         ]
 
+// Lists containing all possible values for the current platform for scanCode
+var supposedRightKeyCode
+var supposedLeftKeyCode
+
+// Real scanCode if found, -1 else
+var rightKeyCode = -2
+var leftKeyCode = -2
+
+/* when the corresponding shift key is pressed, the following boolean pass
+   to true and is reseted at the end of the level */
+var leftPressed = false
+var rightPressed = false
+
+var gameWon = false
+
 // Store the time diff between left and right key
 var timerDiff = 0
 // The child has to press both key between this laps of time
@@ -65,24 +80,10 @@ var timerinc = 900
 
 var currentLevel = 0
 
-var background
-var bar
-var activity
-var ball
-var rightHand
-var leftHand
-var deltaPressedTimer
+var items
 
-function start(background_, bar_, activity_, ball_, rightHand_,
-               leftHand_, deltaPressedTimer_) {
-    background = background_
-    bar = bar_
-    activity = activity_
-    deltaPressedTimer = deltaPressedTimer_
-    ball = ball_
-    rightHand = rightHand_;
-    leftHand = leftHand_;
-
+function start(items_) {
+    items = items_
     currentLevel = 0
 
     initLevel()
@@ -94,51 +95,51 @@ function stop() {
 }
 
 function leftShiftPressed() {
-    if(!deltaPressedTimer.running && !activity.rightPressed) {
-        leftHand.animate(timerinc)
-        deltaPressedTimer.start()
+    if(!items.deltaPressedTimer.running && !rightPressed) {
+        items.leftHand.animate(timerinc)
+        items.deltaPressedTimer.start()
     }
 
-    if(activity.rightPressed) {
-        leftHand.animate(timerinc)
-        background.playSound("brick")
+    if(rightPressed) {
+        items.leftHand.animate(timerinc)
+        items.background.playSound("brick")
     }
 }
 
 function rightShiftPressed() {
-    if(!deltaPressedTimer.running && !activity.leftPressed) {
-        deltaPressedTimer.start()
-        rightHand.animate(timerinc)
+    if(!items.deltaPressedTimer.running && !leftPressed) {
+        items.deltaPressedTimer.start()
+        items.rightHand.animate(timerinc)
     }
-    if(activity.leftPressed) {
-        rightHand.animate(timerinc)
-        background.playSound("brick")
+    if(leftPressed) {
+        items.rightHand.animate(timerinc)
+        items.background.playSound("brick")
     }
 }
 
 function endTimer() {
-    activity.gameWon = activity.rightPressed && activity.leftPressed
+    gameWon = rightPressed && leftPressed
 }
 
 function initLevel() {
-    bar.level = currentLevel + 1
+    items.bar.level = currentLevel + 1
     timerinc = levelProperties[currentLevel].timerInc
 
     timerDiff = 0
-    deltaPressedTimer.interval = timerinc
+    items.deltaPressedTimer.interval = timerinc
 
-    background.source = "qrc:/gcompris/src/activities/ballcatch/resource/beach" +
+    items.background.source = "qrc:/gcompris/src/activities/ballcatch/resource/beach" +
             levelProperties[currentLevel].backgroundImage + ".svgz"
 
-    ball.reinitBall();
+    items.ball.reinitBall();
 
-    activity.leftPressed = false
-    activity.rightPressed = false
+    leftPressed = false
+    rightPressed = false
 
-    activity.gameWon = false
+    gameWon = false
 
-    leftHand.reinitPosition()
-    rightHand.reinitPosition()
+    items.leftHand.reinitPosition()
+    items.rightHand.reinitPosition()
 }
 
 function nextLevel() {
@@ -157,4 +158,97 @@ function previousLevel() {
 
 function restartLevel() {
     initLevel();
+}
+
+function initKey() {
+    /* You cannot dissociate left shift and right shift easily
+       on Qt so we put all possibilities for scanCode here */
+    switch(ApplicationInfo.platform) {
+    case ApplicationInfo.Linux: // todo find existing enum for those values?
+        // Do not know if it is the same for all linux ?
+        supposedRightKeyCode = [62];
+        supposedLeftKeyCode = [50];
+        break;
+    case ApplicationInfo.Windows:
+        // VK_RSHIFT in WinUser.h is 0xA1, but does not work in my win8...
+        supposedRightKeyCode = [0xA1, 54];
+        // VK_LSHIFT in WinUser.h, but does not work in my win8...
+        supposedLeftKeyCode = [0xA0, 42];
+        break;
+    case ApplicationInfo.MacOSX:
+        // keyEvent.nativeScanCode not filled in mac
+    default: // Will it be played with keyboard on mobile/tablet ?
+        supposedRightKeyCode = [-1];
+        supposedLeftKeyCode = [-1];
+    }
+}
+
+function processKey(event) {
+    if(event.key == Qt.Key_Shift) {
+        // Default values, look for real values
+        if(leftKeyCode == -2 || rightKeyCode == -2) {
+            // Look if it is a left key
+            var isLeft = false;
+            var i = 0;
+            for(i = 0 ; i < supposedLeftKeyCode.length ; ++ i) {
+                if(event.nativeScanCode == supposedLeftKeyCode[i]) {
+                    leftKeyCode = event.nativeScanCode;
+                    isLeft = true;
+                    break;
+                }
+            }
+
+            var isRight = false;
+            if(!isLeft) { // If not left look if it is a right
+                for(i = 0 ; i < supposedRightKeyCode.length ; ++ i) {
+                    if(event.nativeScanCode == supposedRightKeyCode[i]) {
+                        rightKeyCode = event.nativeScanCode;
+                        isRight = true;
+                        break;
+                    }
+                }
+            }
+
+            if(!(isLeft || isRight)) {
+                /*
+             Not existing :(
+             Print a log because if the person is a developer
+             he could give us the values :)
+            */
+                print("You pressed key_shift with nativeScanCode=" +
+                      event.nativeScanCode + " not handled")
+
+                // Randomly put the key in left or right...
+                if(leftKeyCode == -2 && rightKeyCode == -2) {
+                    if(Math.random()%2 == 0)
+                        leftKeyCode = event.nativeScanCode;
+                    else
+                        rightKeyCode = event.nativeScanCode;
+                }
+                else if(leftKeyCode == -2) {
+                    leftKeyCode = event.nativeScanCode;
+                }
+                else {
+                    rightKeyCode = event.nativeScanCode;
+                }
+            }
+        }
+
+        // Look for the key !
+        if(event.nativeScanCode === leftKeyCode) {
+            // left
+            if(!leftPressed) {
+                leftShiftPressed();
+                leftPressed = true
+            }
+        }
+        else {
+            // right
+            if(!rightPressed) {
+                rightShiftPressed();
+                rightPressed = true
+            }
+        }
+        event.accepted = true;
+    }
 }

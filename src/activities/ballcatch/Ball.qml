@@ -52,7 +52,7 @@ Image {
 
         onStopped: {
             // We are done with the ballon move
-            if(gameWon) {
+            if(Activity.gameWon) {
                 // This is a win
                 background.playSound("tuxok")
                 bonus.good("tux")
@@ -66,7 +66,7 @@ Image {
     }
 
     function startAnimation() {
-        if(gameWon) {
+        if(Activity.gameWon) {
             finishX = x
         }
         else if(activity.leftPressed) {
