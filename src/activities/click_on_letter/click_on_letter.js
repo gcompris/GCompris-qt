@@ -25,21 +25,11 @@
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 
-//FIXME: initialize from file (default-en.desktop):
-var levels = [
-              { level: 1, questions: "aeiouy", answers: "aeiouy" },
-              { level: 2, questions: "aeiouy", answers: "aeiouycs" },
-              { level: 3, questions: "aeiouy", answers: "aeiouycksvxz" },
-              { level: 4, questions: "ckpsvxwz", answers: "ckpsvxwz" },
-              { level: 5, questions: "bfglmnqt", answers: "bfglmnqt" },
-              { level: 6, questions: "bdgqpnmu", answers: "bdgqpnmu" },
-              { level: 7, questions: "ilthwvae", answers: "ilthwvae" },
-              { level: 8, questions: "abcdefgh", answers: "abcdefgh" },
-              { level: 9, questions: "ijklmnop", answers: "ijklmnop" },
-              { level: 10, questions: "qrstuvwxyz", answers: "qrstuvwxyz" },
-              { level: 11, questions: "bcdfghjklmnpqrstvwxz", answers: "bcdfghjklmnpqrstvwxz" }
-];
+var defaultLevelsFile = ":/gcompris/src/activities/click_on_letter/resource/levels-en.json";
+var maxLettersPerLine = 6;
 
+var levels;
+var levelsFile;
 var currentLevel;
 var maxLevel;
 var currentSubLevel;
@@ -55,9 +45,10 @@ var letterAudio;
 var level;
 var questions;
 var answers;
-var maxLettersPerLine = 6;
+var mode;
 
-function start(_bar, _bonus, _trainModel, _nextLevelAudio, _letterAudio, _questionItem, _score)
+function start(_bar, _bonus, _trainModel, _nextLevelAudio, _letterAudio,
+        _questionItem, _score, _levelsFile, _mode)
 {
     bar = _bar;
     bonus = _bonus;
@@ -66,10 +57,64 @@ function start(_bar, _bonus, _trainModel, _nextLevelAudio, _letterAudio, _questi
     trainModel = _trainModel;
     questionItem = _questionItem;
     score = _score;
+    levelsFile = _levelsFile
+    mode = _mode
+
+    loadLevels();
     currentLevel = 0;
     currentSubLevel = 0;
     maxLevel = levels.length;
     initLevel();
+}
+
+function parseLevels(json)
+{
+    try {
+        levels = JSON.parse(json);
+        // minimal syntax check:
+        var i;
+        for (i = 0; i < levels.length; i++) {
+            if (undefined === levels[i].questions
+                || typeof levels[i].questions != "string"
+                || levels[i].questions.length < 1
+                || typeof levels[i].answers != "string"
+                || levels[i].answers.length < 1)
+                return false;
+        }
+        if (i < 1)
+            return false;
+    } catch(e) {
+        console.error("Click_on_letter: Error parsing JSON: " + e)
+        return false;
+    }
+    return true;
+}
+
+function loadLevels()
+{
+    var ret;    
+    var json = levelsFile.read(GCompris.ApplicationInfo.getAudioFilePath("click_on_letter/levels-$LOCALE.json")); // FIXME: this should be something like ApplicationInfo.getDataPath() + "click_on_letter" + "levels-" + ApplicationInfo.getCurrentLocale() + ".json" once it is there.
+    if (json == "" || !parseLevels(json)) {
+        console.warn("Click_on_letter: Invalid levels file " + levelsFile.name);
+        // fallback to default Latin (levels-en.json) file:
+        json = levelsFile.read(defaultLevelsFile);
+        if (json == "" || !parseLevels(json)) {
+            console.error("Click_on_letter: Invalid default levels file "
+                + levelsFile.name + ". Can't continue!");
+            // any way to error-exit here?
+            return;
+        }
+    }
+    // at this point we have valid levels
+    for (var i = 0; i < levels.length; i++) {
+        if (mode === "lowercase") {
+            levels[i].questions = levels[i].questions.toLocaleLowerCase();
+            levels[i].answers = levels[i].answers.toLocaleLowerCase();
+        } else {
+            levels[i].questions = levels[i].questions.toLocaleUpperCase();
+            levels[i].answers = levels[i].answers.toLocaleUpperCase();        
+        }
+    }
 }
 
 function stop()
