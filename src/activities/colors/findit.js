@@ -19,28 +19,15 @@
 .pragma library
 .import QtQuick 2.0 as Quick
 
-var dataset
-
 var currentLevel = 0
 var numberOfLevel
-var main
-var background
-var bar
-var bonus
-var containerModel
-var questionItem
+var items
+var dataset
 
 var currentQuestion
 
-function start(main_, background_, bar_, bonus_,
-               containerModel_, questionItem_, dataset_) {
-    main = main_
-    background = background_
-    bar = bar_
-    bonus = bonus_
-    currentLevel = 0
-    containerModel = containerModel_
-    questionItem = questionItem_
+function start(items_, dataset_) {
+    items = items_
     dataset = dataset_
     numberOfLevel = dataset.length
     initLevel()
@@ -50,13 +37,13 @@ function stop() {
 }
 
 function initLevel() {
-    bar.level = currentLevel + 1
-    containerModel.clear()
+    items.bar.level = currentLevel + 1
+    items.containerModel.clear()
     currentQuestion = 0
     dataset[currentLevel] = shuffle(dataset[currentLevel])
 
     for(var i = 0;  i < dataset[currentLevel].length; ++i) {
-        containerModel.append(dataset[currentLevel][i])
+        items.containerModel.append(dataset[currentLevel][i])
     }
 
     // Shuffle again not to ask the question in the model order
@@ -67,12 +54,12 @@ function initLevel() {
 function initQuestion() {
     // We just set the opacity to 0, the questionItem will then grab
     // the new question by itself
-    questionItem.opacity = 0
+    items.questionItem.opacity = 0
 }
 
 function nextQuestion() {
     if(dataset[currentLevel].length <= ++currentQuestion ) {
-        bonus.good("flower")
+        items.bonus.good("flower")
     } else {
         initQuestion()
     }
@@ -101,7 +88,7 @@ function getCurrentAudioQuestion() {
 }
 
 function lost() {
-    bonus.bad("flower")
+    items.bonus.bad("flower")
 }
 
 function shuffle(o) {

@@ -46,9 +46,15 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        onStart: { Activity.start(main, background, bar, bonus,
-                                  containerModel, questionItem,
-                                  dataset) }
+        QtObject {
+            id: items
+            property alias background: background
+            property alias bar: bar
+            property alias bonus: bonus
+            property alias containerModel: containerModel
+            property alias questionItem: questionItem
+        }
+        onStart: { Activity.start(items, dataset) }
         onStop: { Activity.stop() }
 
         ListModel {
