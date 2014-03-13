@@ -4,10 +4,7 @@
 var maxNumberOfLevel = 9
 var currentLevel = 0
 var main
-var background
-var bar
-var bonus
-var audioDrip
+var items
 
 // The array of created hexagon object
 var createdHexagon
@@ -16,12 +13,9 @@ var strawBerry
 var nbx
 var nby
 
-function start(main_, background_, bar_, bonus_, audioDrip_) {
+function start(main_, items_) {
     main = main_
-    background = background_
-    bar = bar_
-    bonus = bonus_
-    audioDrip = audioDrip_
+    items = items_
     currentLevel = 0
     initLevel()
 }
@@ -32,7 +26,7 @@ function stop() {
 
 function initLevel() {
     destroyHexagon();
-    bar.level = currentLevel + 1
+    items.bar.level = currentLevel + 1
     createdHexagon = new Array()
     nbx = 10 + currentLevel
     nby = Math.floor(nbx * (main.height / main.width))
@@ -68,10 +62,10 @@ function previousLevel() {
 function createHexagon(ix, iy, nbx, nby) {
     var component = Qt.createComponent("qrc:/gcompris/src/activities/hexagon/HexagonItem.qml");
     var hexagon = component.createObject(
-                background,
+                items.background,
                 {
                     "main": main,
-                    "audioDrip": audioDrip,
+                    "audioDrip": items.audioDrip,
                     "ix": ix,
                     "iy": iy,
                     "nbx": nbx,
@@ -97,7 +91,7 @@ function destroyHexagon() {
 }
 
 function strawberryFound() {
-    bonus.good("flower")
+    items.bonus.good("flower")
 }
 
 function getDistance(ix, iy) {

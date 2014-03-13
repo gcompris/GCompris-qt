@@ -22,8 +22,15 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
+        QtObject {
+            id: items
+            property alias background: background
+            property alias bar: bar
+            property alias bonus: bonus
+            property alias audioDrip: audioDrip
+        }
 
-        onStart: Activity.start(main, background, bar, bonus, audioDrip)
+        onStart: Activity.start(main, items)
         onStop: Activity.stop()
 
         // For perf reason it is best not to put this in each HexagonItem
