@@ -26,6 +26,10 @@ ActivityBase {
     id: activity
     focus: true
 
+    onStart: {
+        focus = true;
+    }
+
     pageComponent: Image {
         id: background
         source: "qrc:/gcompris/src/activities/algebra_by/resource/background.svgz"
@@ -37,23 +41,20 @@ ActivityBase {
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
+
         }
 
-        QtObject {
-            id: items
+        Item {
+            id: coreItems
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
             property alias score: score
             property alias balloon: balloon
-            property alias iAmReady: iAmReady
-            property alias firstOp: firstOp
-            property alias secondOp: secondOp
-            property alias timer: timer
-            property alias numpad: numpad
+            property alias timer:timer
         }
 
-        onStart: Activity.start(items)
+        onStart: Activity.start(coreItems, otherItems)
         onStop: Activity.stop()
 
         DialogHelp {
@@ -83,12 +84,6 @@ ActivityBase {
             onHomeClicked: home()
         }
 
-        ReadyButton {
-            id: iAmReady
-
-            onClicked: Activity.run()
-        }
-
         Balloon {
             id: balloon
             onTimeout: bonus.bad("smiley")
@@ -103,58 +98,6 @@ ActivityBase {
             }
         }
 
-        NumPad {
-            id: numpad
-            onAnswerChanged: Activity.questionsLeft()
-        }
-
-        Flow {
-            x: 90 * ApplicationInfo.ratio
-            y: 80
-            width: parent.width / 2
-            height: 100
-            anchors.margins: 4
-            spacing: 10
-
-            Text {
-                id: firstOp
-                visible: !iAmReady.visible
-                font.pointSize: 32
-                font.bold: true
-            }
-
-            Text{
-                id: multiply
-                visible: firstOp.visible
-                font.pointSize: 32
-                text: "x"
-                font.bold: true
-            }
-
-            Text{
-                id: secondOp
-                visible: !iAmReady.visible
-                font.pointSize: 32
-                font.bold: true
-            }
-
-            Text {
-                id: equals
-                visible: firstOp.visible
-                font.pointSize: 32
-                font.bold: true
-                text: "="
-            }
-
-            Text {
-                id: result
-                visible: !iAmReady.visible
-                font.pointSize: 32
-                font.bold: true
-                text: numpad.answer
-            }
-        }
-
         Score {
             id: score
             x: parent.width * 0.2
@@ -163,5 +106,76 @@ ActivityBase {
             numberOfSubLevels: 10
         }
     }
-}
 
+    Item{
+        id: otherItems
+        property alias iAmReady: iAmReady
+        property alias firstOp:firstOp
+        property alias secondOp:secondOp
+        property alias numpad:numpad
+    }
+
+    NumPad {
+        id: numpad
+        onAnswerChanged: Activity.questionsLeft()
+    }
+
+    ReadyButton {
+        id: iAmReady
+        onClicked: Activity.run()
+    }
+
+    Flow {
+        x: 200 * ApplicationInfo.ratio
+        y: 80
+        width: parent.width / 2
+        height: 100
+        anchors.margins: 4
+        spacing: 10
+
+        Text {
+            id: firstOp
+            visible: !iAmReady.visible
+            font.pointSize: 32
+            font.bold: true
+        }
+
+        Text{
+            id: multiply
+            visible: firstOp.visible
+            font.pointSize: 32
+            text: "x"
+            font.bold: true
+        }
+
+        Text{
+            id: secondOp
+            visible: !iAmReady.visible
+            font.pointSize: 32
+            font.bold: true
+        }
+
+        Text {
+            id: equals
+            visible: firstOp.visible
+            font.pointSize: 32
+            font.bold: true
+            text: "="
+        }
+
+        Text {
+            id: result
+            visible: !iAmReady.visible
+            font.pointSize: 32
+            font.bold: true
+            text: numpad.answer
+        }
+    }
+    Keys.onPressed: {
+        Activity.keyEvent(event.key, true)
+    }
+
+    Keys.onReleased: {
+        Activity.keyEvent(event.key, false)
+    }
+}

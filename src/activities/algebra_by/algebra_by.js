@@ -20,17 +20,19 @@
 .import QtQuick 2.0 as Quick
 
 var currentLevel
-var items
+var coreItems
+var otheritems
 var secondOperandVal
 var firstOperandVal
 var operations = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 var nbLevel = 10
 
-function start(items_) {
-    items = items_
+function start(coreItems_, otherItems_) {
+    coreItems = coreItems_
+    otheritems = otherItems_
     currentLevel = 0
-    items.score.numberOfSubLevels = 10
+    coreItems.score.numberOfSubLevels = 10
     initLevel()
 }
 
@@ -38,16 +40,16 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
-    items.score.visible = false
-    items.score.currentSubLevel = 1
+    coreItems.bar.level = currentLevel + 1
+    coreItems.score.visible = false
+    coreItems.score.currentSubLevel = 1
     operations = shuffle(operations)
     calculateOperands()
 
-    items.iAmReady.visible = true
-    items.firstOp.visible = false
-    items.secondOp.visible = false
-    items.balloon.stopMoving()
+    otheritems.iAmReady.visible = true
+    otheritems.firstOp.visible = false
+    otheritems.secondOp.visible = false
+    coreItems.balloon.stopMoving()
 }
 
 function nextLevel() {
@@ -66,10 +68,10 @@ function previousLevel() {
 
 function calculateOperands()
 {
-    firstOperandVal = items.bar.level
-    secondOperandVal = operations[items.score.currentSubLevel - 1]
-    items.firstOp.text = firstOperandVal
-    items.secondOp.text = secondOperandVal
+    firstOperandVal = coreItems.bar.level
+    secondOperandVal = operations[coreItems.score.currentSubLevel - 1]
+    otheritems.firstOp.text = firstOperandVal
+    otheritems.secondOp.text = secondOperandVal
 }
 
 function validateAnswer(screenAnswer)
@@ -79,28 +81,114 @@ function validateAnswer(screenAnswer)
 
 function run() {
     calculateOperands()
-    items.numpad.resetText()
-    items.score.visible = true
-    items.iAmReady.visible = false
-    items.firstOp.visible = true
-    items.secondOp.visible = true
+    otheritems.numpad.resetText()
+    coreItems.score.visible = true
+    otheritems.iAmReady.visible = false
+    otheritems.firstOp.visible = true
+    otheritems.secondOp.visible = true
+    otheritems.numpad.answerFlag = false
+
     // TODO adjusting or disabling the difficulty
-    items.balloon.startMoving(20000)
+    coreItems.balloon.startMoving(20000)
 }
 
 function questionsLeft() {
-    if(validateAnswer(parseInt(items.numpad.answer))) {
-        items.numpad.answerFlag = true
+    if(validateAnswer(parseInt(otheritems.numpad.answer))) {
+        otheritems.numpad.answerFlag = true
 
-        if(items.score.currentSubLevel < 10) {
-            items.score.currentSubLevel++
-            items.timer.start()
-        } else if(items.score.currentSubLevel >= 10) {
-            items.score.currentSubLevel = 1
-            items.balloon.stopMoving()
-            items.bonus.good("smiley");
+        if(coreItems.score.currentSubLevel < 10) {
+            coreItems.score.currentSubLevel++
+            coreItems.timer.start()
+        } else if(coreItems.score.currentSubLevel >= 10) {
+            coreItems.score.currentSubLevel = 1
+            coreItems.balloon.stopMoving()
+            coreItems.bonus.good("smiley");
         }
     }
+}
+
+function keyEvent(key, pressed)
+{
+    var keyValue;
+
+    switch(key)
+    {
+    case Qt.Key_0 :
+        keyValue = 0;
+        break;
+    case Qt.Key_1:
+        keyValue = 1;
+        break;
+    case Qt.Key_2:
+        keyValue = 2;
+        break;
+    case Qt.Key_3:
+        keyValue = 3;
+        break;
+    case Qt.Key_4:
+        keyValue = 4;
+        break;
+    case Qt.Key_5:
+        keyValue = 5;
+        break;
+    case Qt.Key_6:
+        keyValue = 6;
+        break;
+    case Qt.Key_7:
+        keyValue = 7;
+        break;
+    case Qt.Key_8:
+        keyValue = 8;
+        break;
+    case Qt.Key_9:
+        keyValue = 9;
+        break;
+    case Qt.Key_Backspace:
+        keyValue = 10;
+    }
+
+    if(pressed && !otheritems.numpad.answerFlag)
+    {
+        if(keyValue < 5 && otheritems.numpad.answer.length < 2)
+        {
+            otheritems.numpad.answer += keyValue;
+            otheritems.numpad.leftPanelComponent.children[keyValue].color = Qt.lighter(otheritems.numpad.colours[keyValue])
+            otheritems.numpad.leftPanelComponent.children[keyValue].border.width = 5
+        }
+        else if(keyValue < 10 && otheritems.numpad.answer.length < 2)
+        {
+            otheritems.numpad.answer += keyValue;
+            otheritems.numpad.rightPanelComponent.children[keyValue - 5].color = Qt.lighter(otheritems.numpad.colours[keyValue - 5])
+            otheritems.numpad.rightPanelComponent.children[keyValue - 5].border.width = 5
+        }
+        else if(keyValue === 10)
+        {
+            otheritems.numpad.answer = otheritems.numpad.answer.substring(0,otheritems.numpad.answer.length - 1)
+            otheritems.numpad.backspaceButtonComponent.color = Qt.lighter("white")
+            otheritems.numpad.backspaceButtonComponent.border.width = 5
+        }
+    }
+    else
+    {
+        if(keyValue < 5)
+        {
+            otheritems.numpad.leftPanelComponent.children[keyValue].color = otheritems.numpad.colours[keyValue]
+            otheritems.numpad.leftPanelComponent.children[keyValue].border.width = 2
+        }
+        else if(keyValue < 10)
+        {
+
+            otheritems.numpad.rightPanelComponent.children[keyValue - 5].color = otheritems.numpad.colours[keyValue - 5]
+            otheritems.numpad.rightPanelComponent.children[keyValue - 5].border.width = 2
+        }
+        else if(keyValue === 10)
+        {
+            otheritems.numpad.backspaceButtonComponent.color = "white"
+            otheritems.numpad.backspaceButtonComponent.border.width = 2
+        }
+
+    }
+
 }
 
 function shuffle(o) {
