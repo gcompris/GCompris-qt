@@ -26,7 +26,13 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        onStart: Activity.start(main, background, bar, bonus, type)
+        QtObject {
+            id: items
+            property alias background: background
+            property alias bar: bar
+            property alias bonus: bonus
+        }
+        onStart: Activity.start(main, items, type)
 
         onStop: { Activity.stop() }
 

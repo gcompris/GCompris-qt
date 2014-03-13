@@ -69,9 +69,7 @@ var currentLevel
 var currentSubLevel
 var currentImage
 var main
-var background
-var bar
-var bonus
+var items
 var type
 
 // The array of created blocks object
@@ -81,11 +79,9 @@ var killedBlocks
 var nbLevel = 6
 var nbSubLevel = 8
 
-function start(main_, background_, bar_, bonus_, type_) {
+function start(main_, items_, type_) {
     main = main_
-    background = background_
-    bar = bar_
-    bonus = bonus_
+    items = items_
     type = type_
     currentLevel = 0
     currentSubLevel = 0
@@ -99,8 +95,8 @@ function stop() {
 
 function initLevel() {
     destroyBlocks();
-    bar.level = currentLevel + 1
-    background.source = "qrc:/gcompris/src/activities/erase/resource/" +
+    items.bar.level = currentLevel + 1
+    items.background.source = "qrc:/gcompris/src/activities/erase/resource/" +
             backgroundImages[currentImage++]
     if(currentImage >= backgroundImages.length) {
         currentImage = 0
@@ -109,7 +105,7 @@ function initLevel() {
     var nbx = (currentLevel % 2 * 3) + 5;
     var nby = (currentLevel % 2 * 3) + 5;
     var w = main.width / nbx
-    var h = (main.height - bar.height) / nby
+    var h = (main.height - items.bar.height) / nby
     var i = 0
 
     for(var imgIndex = 0; imgIndex <= Math.floor(currentLevel / 2) ; imgIndex++) {
@@ -146,10 +142,10 @@ function previousLevel() {
 function createBlock(ix, iy, nbx, nby, img) {
     var component = Qt.createComponent("qrc:/gcompris/src/activities/erase/Block.qml");
     var block = component.createObject(
-                background,
+                items.background,
                 {
                     "main": main,
-                    "bar": bar,
+                    "bar": items.bar,
                     "ix": ix,
                     "iy": iy,
                     "nbx": nbx,
@@ -179,7 +175,7 @@ function destroyBlocks() {
 
 function blockKilled() {
     if(++killedBlocks === createdBlocks.length) {
-        bonus.good("flower")
+        items.bonus.good("flower")
     }
 }
 
