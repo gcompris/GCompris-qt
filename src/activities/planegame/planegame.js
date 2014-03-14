@@ -21,64 +21,77 @@
 
 .pragma library
 .import QtQuick 2.0 as Quick
+.import GCompris 1.0 as GCompris //for ApplicationInfo
+
+var max_speed = 8
+var currentLevel
+var numberOfLevel = 2
+
+var upPressed
+var downPressed
+var leftPressed
+var rightPressed
 
 var planeLastTarget = 10;
 var main
-var background
-var bar
-var bonus
-var score
-var activity
-var plane
+var items
 
 var cloudComponent = Qt.createComponent("qrc:/gcompris/src/activities/planegame/Cloud.qml");
 var clouds = new Array;
 
-function start(main_, background_, bar_, bonus_, score_, activity_, plane_) {
+function start(main_, items_) {
     main = main_
-    background = background_
-    bar = bar_
-    bonus = bonus_
-    score = score_;
-    activity = activity_
-    plane = plane_
-    activity.currentLevel = 0
+    items = items_
+    currentLevel = 0
     initLevel()
 
-    score.numberOfSubLevels = planeLastTarget
+    items.movePlaneTimer.start();
+    items.cloudCreation.start()
+
+    items.score.numberOfSubLevels = planeLastTarget
 }
 
 function stop() {
+    items.movePlaneTimer.stop()
+    items.cloudCreation.stop()
 }
 
 function increaseSpeedX() {
-    if(plane.speedX < activity.max_speed)
-        plane.speedX ++;
+    if(items.plane.speedX < max_speed)
+        items.plane.speedX++;
 }
 
 function decreaseSpeedX() {
-    if(plane.speedX > -activity.max_speed)
-        plane.speedX --;
+    if(items.plane.speedX > -max_speed)
+        items.plane.speedX--;
 }
 
 function increaseSpeedY() {
-    if(plane.speedY < activity.max_speed)
-        plane.speedY ++;
+    if(items.plane.speedY < max_speed)
+        items.plane.speedY++;
 }
 
 function decreaseSpeedY() {
-    if(plane.speedY > -activity.max_speed)
-        plane.speedY --;
+    if(items.plane.speedY > - max_speed)
+        items.plane.speedY--;
 }
 
 function initLevel() {
-    bar.level = activity.currentLevel + 1;
-    score.currentSubLevel = 1
+    items.bar.level = currentLevel + 1;
+    items.score.currentSubLevel = 1
 
-    plane.x = 100
-    plane.y = background.height/2-plane.height/2
-    plane.speedX = 0
-    plane.speedY = 0
+    if(currentLevel === 0)
+        items.score.visible = true
+
+    upPressed = false
+    downPressed = false
+    leftPressed = false
+    rightPressed = false
+
+    items.plane.x = 100
+    items.plane.y = items.background.height/2 - items.plane.height/2
+    items.plane.speedX = 0
+    items.plane.speedY = 0
 
     for(var i = clouds.length - 1; i >= 0 ; --i) {
         var cloud = clouds[i];
@@ -90,23 +103,23 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(activity.numberOfLevel-1 <= ++activity.currentLevel) {
-        activity.currentLevel = activity.numberOfLevel-1
+    if(numberOfLevel-1 <= ++currentLevel) {
+        currentLevel = numberOfLevel-1
     }
 
     initLevel();
 }
 
 function previousLevel() {
-    if(--activity.currentLevel < 0) {
-        activity.currentLevel = activity.numberOfLevel - 1
+    if(--currentLevel < 0) {
+        currentLevel = numberOfLevel - 1
     }
     initLevel();
 }
 
 function repositionObjectsOnWidthChanged(factor) {
 
-    plane.x *= factor
+    items.plane.x *= factor
     for(var i = clouds.length - 1; i >= 0 ; --i) {
         var cloud = clouds[i];
         //cloud.x *= factor
@@ -114,7 +127,7 @@ function repositionObjectsOnWidthChanged(factor) {
 }
 
 function repositionObjectsOnHeightChanged(factor) {
-    plane.y *= factor
+    items.plane.y *= factor
     for(var i = clouds.length - 1; i >= 0 ; --i) {
         var cloud = clouds[i];
         cloud.y *= factor
@@ -122,20 +135,21 @@ function repositionObjectsOnHeightChanged(factor) {
 }
 
 function createCloud() {
+    console.log("createCloud")
     var cloud = cloudComponent.createObject(
-                background, {
-                    "activity": activity,
-                    "x": background.width
+                items.background, {
+                    "background": items.background,
+                    "x": items.background.width
                 });
 
     /* Random cloud number */
-    if(getRandomInt(0, 1) == 0) {
+    if(getRandomInt(0, 1) === 0) {
         /* Put the target */
-        cloud.number = score.currentSubLevel;
+        cloud.number = items.score.currentSubLevel;
     }
     else {
-        var min = Math.max(1, score.currentSubLevel - 1);
-        cloud.number = min + getRandomInt(0, score.currentSubLevel - min + 3);
+        var min = Math.max(1, items.score.currentSubLevel - 1);
+        cloud.number = min + getRandomInt(0, items.score.currentSubLevel - min + 3);
     }
 
     clouds.push(cloud);
@@ -143,4 +157,137 @@ function createCloud() {
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function processPressedKey(event) {
+    switch(event.key) {
+    case Qt.Key_Right:
+        rightPressed = true;
+        event.accepted = true;
+        break;
+    case Qt.Key_Left:
+        leftPressed = true;
+        event.accepted = true;
+        break;
+    case Qt.Key_Up:
+        upPressed = true;
+        event.accepted = true;
+        break;
+    case Qt.Key_Down:
+        downPressed = true;
+        event.accepted = true;
+    }
+}
+
+function processReleasedKey(event) {
+    switch(event.key) {
+    case Qt.Key_Right:
+        rightPressed = false;
+        event.accepted = true;
+        break;
+    case Qt.Key_Left:
+        leftPressed = false;
+        event.accepted = true;
+        break;
+    case Qt.Key_Up:
+        upPressed = false;
+        event.accepted = true;
+        break;
+    case Qt.Key_Down:
+        downPressed = false;
+        event.accepted = true;
+    }
+}
+
+function computeSpeed() {
+    if(rightPressed) {
+        increaseSpeedX()
+    }
+    if(leftPressed) {
+        decreaseSpeedX()
+    }
+    if(upPressed) {
+        decreaseSpeedY()
+    }
+    if(downPressed) {
+        increaseSpeedY()
+    }
+}
+
+function move() {
+    if(items.plane.x + items.plane.width > items.background.width &&
+            items.plane.speedX > 0) {
+        items.plane.speedX = 0;
+    }
+    if(items.plane.x < 0 && items.plane.speedX < 0) {
+        items.plane.speedX = 0;
+    }
+    items.plane.x += items.plane.speedX;
+
+    if(items.plane.y < 0 && items.plane.speedY < 0) {
+        items.plane.speedY = 0;
+    }
+    if(items.plane.y + items.plane.height > items.background.height &&
+            items.plane.speedY > 0) {
+        items.plane.speedY = 0;
+    }
+    items.plane.y += items.plane.speedY;
+}
+
+function isIn(x1, y1, px1, py1, px2, py2) {
+    return (x1>px1 && x1<px2 && y1>py1 && y1<py2)
+}
+
+function handleCollisionsWithCloud() {
+    var planeX1 = items.plane.x
+    var planeX2 = items.plane.x + items.plane.width
+    var planeY1 = items.plane.y
+    var planeY2 = items.plane.y + items.plane.height
+
+    if(clouds !== undefined) {
+        for(var i = clouds.length - 1; i >= 0 ; --i) {
+            var cloud = clouds[i];
+            var x1 = cloud.x
+            var x2 = cloud.x + cloud.width
+            var y1 = cloud.y
+            var y2 = cloud.y + cloud.height
+
+            if(x2 < 0) {
+                // Remove the cloud
+                cloud.destroy()
+                clouds.splice(i, 1)
+            }
+            else if(isIn(x1, y1, planeX1, planeY1, planeX2, planeY2) ||
+                    isIn(x2, y1, planeX1, planeY1, planeX2, planeY2) ||
+                    isIn(x1, y2, planeX1, planeY1, planeX2, planeY2) ||
+                    isIn(x2, y2, planeX1, planeY1, planeX2, planeY2)) {
+
+                // Collision, look for id
+                if(cloud.number == items.score.currentSubLevel) {
+                    playSound(cloud.number)
+                    // Remove the cloud
+                    cloud.destroy()
+                    clouds.splice(i, 1)
+
+                    items.score.currentSubLevel++
+
+                    if(items.score.currentSubLevel == items.score.numberOfSubLevels
+                            && currentLevel === 0) {
+                        /* Try the next level */
+                        nextLevel()
+                        items.bonusSound.play();
+                        break;
+                    }
+                }
+            }
+        }
+    }
+}
+
+function playSound(number) {
+    /* TODO Use QTextCodec or QString toUnicode instead */
+    items.audioNumber.source =
+            GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/U003" +
+                                                      number + ".ogg")
+    items.audioNumber.play()
 }

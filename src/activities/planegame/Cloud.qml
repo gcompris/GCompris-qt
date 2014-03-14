@@ -24,13 +24,11 @@ import GCompris 1.0
 
 Image {
     id: cloud
-    property int number
-
-    property Item activity
+    property Item background
+    property alias number: number.text
 
     sourceSize.height: 100 * ApplicationInfo.ratio
-
-    height: sourceSize.height-20*(activity.currentLevel)
+    height: sourceSize.height - 20 * Activity.currentLevel
 
     source: "qrc:/gcompris/src/activities/planegame/resource/cloud.svgz"
     fillMode: Image.PreserveAspectFit
@@ -38,29 +36,25 @@ Image {
     z: 5
 
     Text {
+        id: number
         anchors.horizontalCenter: cloud.horizontalCenter
         anchors.verticalCenter: cloud.verticalCenter
-        text: number
         color: "black"
         font.bold: true
         font.pointSize: 18
     }
 
     Component.onCompleted: {
-        x = -cloud.width-1
-        y = Activity.getRandomInt(0, activity.height - cloud.height)
+        console.log("cloud completed")
+        x = -cloud.width - 1
+        y = Activity.getRandomInt(0, background.height - cloud.height)
     }
 
-    Behavior on x { PropertyAnimation { duration: 30*activity.width } }
+    Behavior on x { PropertyAnimation { duration: 30 * background.width } }
 
     Audio {
         id: audioNumber
         onError: { console.log("voice " + source + " play error: " + errorString); }
     }
 
-    function playSound() {
-        /* TODO Use QTextCodec or QString toUnicode instead */
-        audioNumber.source = ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/U003" + number + ".ogg")
-        audioNumber.play()
-    }
 }

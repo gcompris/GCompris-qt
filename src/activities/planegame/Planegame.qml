@@ -19,6 +19,7 @@
 */
 
 import QtQuick 2.1
+import QtMultimedia 5.0
 import GCompris 1.0
 
 import "qrc:/gcompris/src/core"
@@ -31,61 +32,13 @@ ActivityBase {
     onStart: { focus = true; }
     onStop: { }
 
-    readonly property int max_speed: 8
-    property var cloudList
-    property int currentLevel: 0
-    readonly property int numberOfLevel: 2
-
-    property bool upPressed: false
-    property bool downPressed: false
-    property bool leftPressed: false
-    property bool rightPressed: false
-
-    Keys.onPressed: {
-        switch(event.key) {
-        case Qt.Key_Right:
-            rightPressed = true;
-            event.accepted = true;
-            break;
-        case Qt.Key_Left:
-            leftPressed = true;
-            event.accepted = true;
-            break;
-        case Qt.Key_Up:
-            upPressed = true;
-            event.accepted = true;
-            break;
-        case Qt.Key_Down:
-            downPressed = true;
-            event.accepted = true;
-        }
-    }
-
-    Keys.onReleased: {
-        switch(event.key) {
-        case Qt.Key_Right:
-            rightPressed = false;
-            event.accepted = true;
-            break;
-        case Qt.Key_Left:
-            leftPressed = false;
-            event.accepted = true;
-            break;
-        case Qt.Key_Up:
-            upPressed = false;
-            event.accepted = true;
-            break;
-        case Qt.Key_Down:
-            downPressed = false;
-            event.accepted = true;
-        }
-    }
+    Keys.onPressed: Activity.processPressedKey(event)
+    Keys.onReleased: Activity.processReleasedKey(event)
 
     property int oldWidth: width
-
     onWidthChanged: {
         // Reposition helico and clouds, same for height
-        if(Activity.plane != undefined) {
+        if(Activity.plane !== undefined) {
             Activity.repositionObjectsOnWidthChanged(width/oldWidth)
         }
         oldWidth = width
@@ -94,8 +47,8 @@ ActivityBase {
     property int oldHeight: height
     onHeightChanged: {
         // Reposition helico and clouds, same for height
-        if(Activity.plane != undefined) {
-            Activity.repositionObjectsOnHeightChanged(height/oldHeight)
+        if(Activity.plane !== undefined) {
+            Activity.repositionObjectsOnHeightChanged(height / oldHeight)
         }
         oldHeight = height
     }
@@ -111,14 +64,25 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
+        QtObject {
+            id: items
+            property alias background: background
+            property alias bar: bar
+            property alias bonus: bonus
+            property alias score: score
+            property alias plane: plane
+            property alias bonusSound: bonusSound
+            property alias audioNumber: audioNumber
+            property alias movePlaneTimer: movePlaneTimer
+            property alias cloudCreation: cloudCreation
+        }
         onStart: {
-            Activity.start(main, background, bar, bonus, score, activity, plane)
+            Activity.start(main, items)
             movePlaneTimer.start();
-            cloudList = Activity.clouds
+            cloudCreation.start()
         }
         onStop: {
             Activity.stop();
-            movePlaneTimer.stop()
         }
 
         DialogHelp {
@@ -144,37 +108,46 @@ ActivityBase {
 
         Score {
             id: score
-            visible: (activity.currentLevel == 0) ? 1 : 0
+            visible: false
             anchors.bottom: background.bottom
             anchors.right: background.right
         }
 
         Timer {
             id: movePlaneTimer
-            running: true
-            interval: 100+(40/(activity.currentLevel+1))
+            running: false
             repeat: true
+            interval: 100 + (40 / (bar.level))
             onTriggered: {
-                plane.handleCollisionsWithCloud();
-                plane.computeSpeed();
-                plane.move();
+                Activity.handleCollisionsWithCloud();
+                Activity.computeSpeed();
+                Activity.move();
             }
         }
 
         Timer {
             id: cloudCreation
-            running: true
-            interval: 10000-(activity.currentLevel*200)
+            running: false
             repeat: true
-            onTriggered: {
-                Activity.createCloud()
-            }
+            interval: 10200 - (bar.level * 200)
+            onTriggered: Activity.createCloud()
         }
 
         Plane {
             id: plane
             background: background
             score: score
+        }
+
+        Audio {
+            id: bonusSound
+            source: "qrc:/gcompris/src/activities/planegame/resource/bonus.wav"
+            onError: console.log("Plane.qml, bonus play error: " + errorString)
+        }
+
+        Audio {
+            id: audioNumber
+            onError: console.log("Plane.qml, bonus play error: " + errorString)
         }
 
         Item {
@@ -188,9 +161,7 @@ ActivityBase {
                 anchors.verticalCenter: parent.verticalCenter
                 mirror: true
 
-                onButtonPressedChanged: {
-                    leftPressed = buttonPressed;
-                }
+                onButtonPressedChanged: Activity.leftPressed = buttonPressed
             }
 
             Arrow {
@@ -198,28 +169,21 @@ ActivityBase {
                 anchors.right: parent.right
                 anchors.verticalCenter: parent.verticalCenter
 
-                onButtonPressedChanged: {
-                    rightPressed = buttonPressed;
-                }
-
+                onButtonPressedChanged: Activity.rightPressed = buttonPressed
             }
             Arrow {
                 id: topArrow
                 rotation: 270
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.top: parent.top
-                onButtonPressedChanged: {
-                    upPressed = buttonPressed;
-                }
+                onButtonPressedChanged: Activity.upPressed = buttonPressed;
             }
             Arrow {
                 id: downArrow
                 rotation: 90
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.bottom: parent.bottom
-                onButtonPressedChanged: {
-                    downPressed = buttonPressed;
-                }
+                onButtonPressedChanged: Activity.downPressed = buttonPressed
             }
         }
     }

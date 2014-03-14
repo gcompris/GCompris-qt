@@ -22,7 +22,7 @@ import GCompris 1.0
 
 Image {
     source: "qrc:/gcompris/src/activities/planegame/resource/arrow.svgz"
-    sourceSize.height: 100*ApplicationInfo.ratio
+    sourceSize.height: 100 * ApplicationInfo.ratio
 
     property alias buttonPressed: arrow.pressed
 
@@ -31,11 +31,7 @@ Image {
         property bool pressed: false
         opacity: pressed ? 1 : 0.8
         anchors.fill: parent
-        onPressed: {
-            pressed = true;
-        }
-        onReleased: {
-            pressed = false;
-        }
+        onPressed: pressed = true
+        onReleased: pressed = false
     }
 }
