@@ -33,7 +33,6 @@ include(src/activities/memory/memory.pri)
 include(src/activities/memory-sound/memory-sound.pri)
 include(src/activities/planegame/planegame.pri)
 include(src/activities/enumerate/enumerate.pri)
-include(src/activities/magic_hat_plus/magic_hat_plus.pri)
 
 
 APP_FILES += \
