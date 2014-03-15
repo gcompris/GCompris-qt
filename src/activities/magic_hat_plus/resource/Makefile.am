@@ -1,0 +1,1 @@
+SUBDIRS = magic_hat

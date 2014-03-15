@@ -32,6 +32,7 @@ include(src/activities/memory-math-mult/memory-math-mult.pri)
 include(src/activities/memory/memory.pri)
 include(src/activities/memory-sound/memory-sound.pri)
 include(src/activities/planegame/planegame.pri)
+include(src/activities/enumerate/enumerate.pri)
 
 
 APP_FILES += \
