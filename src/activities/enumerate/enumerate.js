@@ -184,8 +184,8 @@ function createAnswerArea(type){
 function createOneItem(type){
     var component=Qt.createComponent("ItemToEnumerate.qml");
     var newItem=component.createObject(background,
-                         {"x": getRandomInt(30,background.width-30),
-                         "y": getRandomInt(30,background.height-30),
+                         {"x": getRandomInt(100,background.width-100),
+                         "y": getRandomInt(100,background.height-100),
                          "imgPath": itemIcons[type]});
     return newItem
 }
