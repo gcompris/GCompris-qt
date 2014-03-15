@@ -147,6 +147,7 @@ function repositionObjectsOnHeightChanged(factor) {
     }
 }
 
+var cloudCounter = 1
 function createCloud() {
     var cloud = cloudComponent.createObject(
                 items.background, {
@@ -154,12 +155,12 @@ function createCloud() {
                     "x": items.background.width
                 });
 
-    /* Random cloud number */
-    if(getRandomInt(0, 1) === 0) {
+    /* Random cloud number but at least one in 3 */
+    if(cloudCounter++ % 3 == 0 || getRandomInt(0, 1) === 0) {
         /* Put the target */
         cloud.number = items.score.currentSubLevel;
-    }
-    else {
+        cloudCounter = 1
+    } else {
         var min = Math.max(1, items.score.currentSubLevel - 1);
         cloud.number = min + getRandomInt(0, items.score.currentSubLevel - min + 3);
     }
