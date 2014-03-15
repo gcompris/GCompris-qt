@@ -76,14 +76,8 @@ ActivityBase {
             property alias movePlaneTimer: movePlaneTimer
             property alias cloudCreation: cloudCreation
         }
-        onStart: {
-            Activity.start(main, items)
-            movePlaneTimer.start();
-            cloudCreation.start()
-        }
-        onStop: {
-            Activity.stop();
-        }
+        onStart: Activity.start(main, items)
+        onStop: Activity.stop();
 
         DialogHelp {
             id: dialogHelp
@@ -93,9 +87,7 @@ ActivityBase {
         Bar {
             id: bar
             content: BarEnumContent { value: help | home | previous | next }
-            onHelpClicked: {
-                displayDialog(dialogHelp)
-            }
+            onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
@@ -117,11 +109,11 @@ ActivityBase {
             id: movePlaneTimer
             running: false
             repeat: true
-            interval: 100 + (40 / (bar.level))
             onTriggered: {
+                interval = 100
                 Activity.handleCollisionsWithCloud();
                 Activity.computeSpeed();
-                Activity.move();
+                Activity.planeMove();
             }
         }
 

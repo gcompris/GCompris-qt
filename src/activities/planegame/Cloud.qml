@@ -45,7 +45,6 @@ Image {
     }
 
     Component.onCompleted: {
-        console.log("cloud completed")
         x = -cloud.width - 1
         y = Activity.getRandomInt(0, background.height - cloud.height)
     }

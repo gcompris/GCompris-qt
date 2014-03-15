@@ -44,11 +44,6 @@ function start(main_, items_) {
     items = items_
     currentLevel = 0
     initLevel()
-
-    items.movePlaneTimer.start();
-    items.cloudCreation.start()
-
-    items.score.numberOfSubLevels = planeLastTarget
 }
 
 function stop() {
@@ -79,19 +74,24 @@ function decreaseSpeedY() {
 function initLevel() {
     items.bar.level = currentLevel + 1;
     items.score.currentSubLevel = 1
+    items.score.numberOfSubLevels = planeLastTarget
 
-    if(currentLevel === 0)
-        items.score.visible = true
+    items.movePlaneTimer.stop();
+    items.cloudCreation.stop()
+
+    items.score.visible = (currentLevel === 0)
 
     upPressed = false
     downPressed = false
     leftPressed = false
     rightPressed = false
 
-    items.plane.x = 100
-    items.plane.y = items.background.height/2 - items.plane.height/2
     items.plane.speedX = 0
     items.plane.speedY = 0
+    items.plane.planeVelocity = 50 + 50 * currentLevel
+    items.plane.heightRatio = 1.0 - currentLevel / 10
+    items.plane.x = 100
+    items.plane.y = items.background.height/2 - items.plane.height/2
 
     for(var i = clouds.length - 1; i >= 0 ; --i) {
         var cloud = clouds[i];
@@ -100,6 +100,13 @@ function initLevel() {
         // Remove the element from the list
         clouds.splice(i, 1)
     }
+
+    // For initial plane position reset
+    // Will set a slower velocity in move() later
+    items.plane.planeVelocity = 500
+    items.movePlaneTimer.interval = 1000
+    items.movePlaneTimer.start();
+    items.cloudCreation.start()
 }
 
 function nextLevel() {
@@ -135,7 +142,6 @@ function repositionObjectsOnHeightChanged(factor) {
 }
 
 function createCloud() {
-    console.log("createCloud")
     var cloud = cloudComponent.createObject(
                 items.background, {
                     "background": items.background,
@@ -214,7 +220,10 @@ function computeSpeed() {
     }
 }
 
-function move() {
+function planeMove() {
+    // Just reset it here for reinit plane position case (start level)
+    items.plane.planeVelocity = 50 + 50 * currentLevel
+
     if(items.plane.x + items.plane.width > items.background.width &&
             items.plane.speedX > 0) {
         items.plane.speedX = 0;
@@ -222,7 +231,7 @@ function move() {
     if(items.plane.x < 0 && items.plane.speedX < 0) {
         items.plane.speedX = 0;
     }
-    items.plane.x += items.plane.speedX;
+    items.plane.x += items.plane.speedX * 10;
 
     if(items.plane.y < 0 && items.plane.speedY < 0) {
         items.plane.speedY = 0;
@@ -231,7 +240,7 @@ function move() {
             items.plane.speedY > 0) {
         items.plane.speedY = 0;
     }
-    items.plane.y += items.plane.speedY;
+    items.plane.y += items.plane.speedY * 10;
 }
 
 function isIn(x1, y1, px1, py1, px2, py2) {
@@ -271,7 +280,7 @@ function handleCollisionsWithCloud() {
 
                     items.score.currentSubLevel++
 
-                    if(items.score.currentSubLevel == items.score.numberOfSubLevels
+                    if(items.score.currentSubLevel === items.score.numberOfSubLevels
                             && currentLevel === 0) {
                         /* Try the next level */
                         nextLevel()

@@ -26,18 +26,22 @@ Image {
 
     property Item score
     property Item background
+    property int planeVelocity: 50
+    property double heightRatio: 1
 
     source: "qrc:/gcompris/src/activities/planegame/resource/tuxhelico.svgz"
     fillMode: Image.PreserveAspectFit
 
     sourceSize.height: 200 * ApplicationInfo.ratio
-
-    height: sourceSize.height - 50 * ApplicationInfo.ratio * Activity.currentLevel
+    height: sourceSize.height * ApplicationInfo.ratio * heightRatio
 
     z: 10
 
     property int speedX: 0
     property int speedY: 0
+
+    Behavior on x { SmoothedAnimation { velocity: planeVelocity } }
+    Behavior on y { SmoothedAnimation { velocity: planeVelocity } }
 
     onSpeedXChanged: {
         rotation = Math.abs(plane.speedX) * 20 / Activity.max_speed
@@ -59,5 +63,4 @@ Image {
             direction: RotationAnimation.Shortest
         }
     }
-
 }
