@@ -20,6 +20,7 @@
 import QtQuick 2.1
 import QtMultimedia 5.0
 import "planegame.js" as Activity
+import "qrc:/gcompris/src/core"
 import GCompris 1.0
 
 Image {
@@ -34,6 +35,13 @@ Image {
     fillMode: Image.PreserveAspectFit
 
     z: 5
+
+    signal done
+
+    onDone: {
+        particles.emitter.burst(50)
+        opacityTimer.start()
+    }
 
     Text {
         id: number
@@ -50,6 +58,21 @@ Image {
     }
 
     Behavior on x { PropertyAnimation { duration: 30 * background.width } }
+    Behavior on opacity { PropertyAnimation { duration: 400 } }
+
+    Timer {
+        id: opacityTimer
+        running: false
+        repeat: false
+        interval: 500
+        onTriggered: opacity = 0
+    }
+
+    ParticleSystemStar {
+        id: particles
+        anchors.fill: parent
+        clip: false
+    }
 
     Audio {
         id: audioNumber

@@ -38,6 +38,7 @@ var items
 
 var cloudComponent = Qt.createComponent("qrc:/gcompris/src/activities/planegame/Cloud.qml");
 var clouds = new Array;
+var cloudsErased = new Array;
 
 function start(main_, items_) {
     main = main_
@@ -71,6 +72,16 @@ function decreaseSpeedY() {
         items.plane.speedY--;
 }
 
+function cloudDestroy(clouds) {
+    for(var i = clouds.length - 1; i >= 0 ; --i) {
+        var cloud = clouds[i];
+        // Remove the cloud
+        cloud.destroy()
+        // Remove the element from the list
+        clouds.splice(i, 1)
+    }
+}
+
 function initLevel() {
     items.bar.level = currentLevel + 1;
     items.score.currentSubLevel = 1
@@ -93,13 +104,8 @@ function initLevel() {
     items.plane.x = 100
     items.plane.y = items.background.height/2 - items.plane.height/2
 
-    for(var i = clouds.length - 1; i >= 0 ; --i) {
-        var cloud = clouds[i];
-        // Remove the cloud
-        cloud.destroy()
-        // Remove the element from the list
-        clouds.splice(i, 1)
-    }
+    cloudDestroy(clouds)
+    cloudDestroy(cloudsErased)
 
     // For initial plane position reset
     // Will set a slower velocity in move() later
@@ -274,10 +280,10 @@ function handleCollisionsWithCloud() {
                 // Collision, look for id
                 if(cloud.number == items.score.currentSubLevel) {
                     playSound(cloud.number)
-                    // Remove the cloud
-                    cloud.destroy()
+                    // Move the cloud to the erased list
+                    cloud.done()
+                    cloudsErased.push(cloud)
                     clouds.splice(i, 1)
-
                     items.score.currentSubLevel++
 
                     if(items.score.currentSubLevel === items.score.numberOfSubLevels
