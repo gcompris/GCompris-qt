@@ -42,6 +42,7 @@ Image {
 
     Behavior on x { SmoothedAnimation { velocity: planeVelocity } }
     Behavior on y { SmoothedAnimation { velocity: planeVelocity } }
+    Behavior on height { PropertyAnimation { duration: 100 } }
 
     onSpeedXChanged: {
         rotation = Math.abs(plane.speedX) * 20 / Activity.max_speed
