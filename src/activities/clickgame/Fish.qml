@@ -112,7 +112,7 @@ AnimatedSprite {
 
         ImageParticle {
             source: "qrc:/gcompris/src/activities/clickgame/resource/bubble.png"
-            sizeTable: "qrc:/gcompris/src/activities/clickgame/resource/sizeTable.png"
+            sizeTable: "qrc:/gcompris/src/core/resource/sizeTable.png"
         }
     }
 
