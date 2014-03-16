@@ -4,6 +4,7 @@
  Copyright (C)
  2003, 2014: Bruno Coudoin: initial version
  2014: Johnny Jazeix: Qt port
+ 2014: Bruno Coudoin: Added support for dataset, smooth plane anim
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -26,6 +27,8 @@
 var max_speed = 8
 var currentLevel
 var numberOfLevel
+var currentSubLevel
+var numberOfSubLevels
 
 var upPressed
 var downPressed
@@ -34,17 +37,15 @@ var rightPressed
 
 var items
 var dataset
-var scoreOnLevel1
 
 var cloudComponent = Qt.createComponent("qrc:/gcompris/src/activities/planegame/Cloud.qml");
 var clouds = new Array;
 var cloudsErased = new Array;
 
-function start(items_, dataset_, scoreOnLevel1_) {
+function start(items_, dataset_) {
     items = items_
     dataset = dataset_
     numberOfLevel = dataset.length
-    scoreOnLevel1 = scoreOnLevel1_
     currentLevel = 0
     initLevel()
 }
@@ -68,13 +69,14 @@ function cloudDestroy(clouds) {
 
 function initLevel() {
     items.bar.level = currentLevel + 1;
-    items.score.currentSubLevel = 0
-    items.score.numberOfSubLevels = dataset[currentLevel].length
+    currentSubLevel = 0
+    numberOfSubLevels = dataset[currentLevel].data.length
 
     items.movePlaneTimer.stop();
     items.cloudCreation.stop()
 
-    items.score.visible = (currentLevel === 0 && scoreOnLevel1)
+    items.score.visible = dataset[currentLevel].showNext
+    items.score.message = dataset[currentLevel].data[currentSubLevel]
 
     upPressed = false
     downPressed = false
@@ -84,7 +86,8 @@ function initLevel() {
     items.plane.speedX = 0
     items.plane.speedY = 0
     items.plane.planeVelocity = 50 + 50 * currentLevel
-    items.plane.heightRatio = 1.0 - currentLevel / 10
+    // Tend towards 0.5 ratio
+    items.plane.heightRatio = 1.0 - 0.5 * currentLevel / 10
     items.plane.x = 100
     items.plane.y = items.background.height/2 - items.plane.height/2
 
@@ -137,19 +140,20 @@ function createCloud() {
     var cloud = cloudComponent.createObject(
                 items.background, {
                     "background": items.background,
-                    "x": items.background.width
+                    "x": items.background.width,
+                    "heightRatio": 1.0 - 0.5 * currentLevel / 10
                 });
 
     /* Random cloud number but at least one in 3 */
     if(cloudCounter++ % 3 == 0 || getRandomInt(0, 1) === 0) {
         /* Put the target */
-        cloud.text = dataset[currentLevel][items.score.currentSubLevel];
+        cloud.text = dataset[currentLevel].data[currentSubLevel];
         cloudCounter = 1
     } else {
-        var min = Math.max(1, items.score.currentSubLevel - 1);
-        var index = Math.min(min + getRandomInt(0, items.score.currentSubLevel - min + 3),
-                             items.score.numberOfSubLevels - 1)
-        cloud.text = dataset[currentLevel][index]
+        var min = Math.max(1, currentSubLevel - 1);
+        var index = Math.min(min + getRandomInt(0, currentSubLevel - min + 3),
+                             numberOfSubLevels - 1)
+        cloud.text = dataset[currentLevel].data[index]
     }
 
     clouds.push(cloud);
@@ -286,19 +290,21 @@ function handleCollisionsWithCloud() {
                     isIn(x2, y2, planeX1, planeY1, planeX2, planeY2)) {
 
                 // Collision, look for id
-                if(cloud.text === dataset[currentLevel][items.score.currentSubLevel]) {
+                if(cloud.text === dataset[currentLevel].data[currentSubLevel]) {
                     playSound(cloud.text)
                     // Move the cloud to the erased list
                     cloud.done()
                     cloudsErased.push(cloud)
                     clouds.splice(i, 1)
-                    items.score.currentSubLevel++
+                    currentSubLevel++
 
-                    if(items.score.currentSubLevel === items.score.numberOfSubLevels) {
+                    if(currentSubLevel === numberOfSubLevels) {
                         /* Try the next level */
                         nextLevel()
                         items.bonusSound.play();
                         break;
+                    } else {
+                        items.score.message = dataset[currentLevel].data[currentSubLevel]
                     }
                 }
             }

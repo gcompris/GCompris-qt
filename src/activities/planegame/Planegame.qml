@@ -36,7 +36,6 @@ ActivityBase {
     Keys.onReleased: Activity.processReleasedKey(event)
 
     property variant dataset
-    property bool scoreOnLevel1: false
 
     property int oldWidth: width
     onWidthChanged: {
@@ -79,7 +78,7 @@ ActivityBase {
             property alias movePlaneTimer: movePlaneTimer
             property alias cloudCreation: cloudCreation
         }
-        onStart: Activity.start(items, dataset, scoreOnLevel1)
+        onStart: Activity.start(items, dataset)
         onStop: Activity.stop();
 
         DialogHelp {

@@ -23,7 +23,21 @@ import "qrc:/gcompris/src/activities/planegame"
 Planegame {
 
     dataset: [
-        qsTr("a b c d e f g h i j k l m n o p q r s t u v w x y z").split(" "),
-        qsTr("A B C D E F G H I J K L M N O P Q R S T U V W X Y Z").split(" ")
+        {
+            data: qsTr("a b c d e f g h i j k l m n o p q r s t u v w x y z").split(" "),
+            showNext: true
+        },
+        {
+            data: qsTr("A B C D E F G H I J K L M N O P Q R S T U V W X Y Z").split(" "),
+            showNext: true
+        },
+        {
+            data: qsTr("a b c d e f g h i j k l m n o p q r s t u v w x y z").split(" "),
+            showNext: false
+        },
+        {
+            data: qsTr("A B C D E F G H I J K L M N O P Q R S T U V W X Y Z").split(" "),
+            showNext: false
+        }
     ]
 }

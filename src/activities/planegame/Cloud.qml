@@ -27,9 +27,10 @@ Image {
     id: cloud
     property Item background
     property alias text: number.text
+    property double heightRatio: 1
 
     sourceSize.height: 100 * ApplicationInfo.ratio
-    height: sourceSize.height - 20 * Activity.currentLevel
+    height: sourceSize.height * ApplicationInfo.ratio * heightRatio
 
     source: "qrc:/gcompris/src/activities/planegame/resource/cloud.svgz"
     fillMode: Image.PreserveAspectFit
