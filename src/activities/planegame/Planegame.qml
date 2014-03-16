@@ -107,14 +107,18 @@ ActivityBase {
             anchors.right: background.right
         }
 
+        property int movePlaneTimerCounter: 0
         Timer {
             id: movePlaneTimer
             running: false
             repeat: true
             onTriggered: {
-                interval = 100
-                Activity.handleCollisionsWithCloud();
-                Activity.computeSpeed();
+                interval = 50
+                if(movePlaneTimerCounter++ % 3 == 0) {
+                    /* Do not call this too often or plane commands are too hard */
+                    Activity.handleCollisionsWithCloud();
+                    Activity.computeSpeed();
+                }
                 Activity.planeMove();
             }
         }
