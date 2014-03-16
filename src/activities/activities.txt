@@ -13,6 +13,7 @@ erase_clic
 hexagon
 instruments
 leftright
+numbers-odd-even
 memory
 memory-math-add
 memory-math-mult
