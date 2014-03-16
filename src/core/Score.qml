@@ -40,8 +40,14 @@ Rectangle {
 
     z: 1000
 
+    /* Either fill in numberOfSubLevels and currentSubLevel
+     * or directly the message you want to write */
     property int numberOfSubLevels
     property int currentSubLevel
+    property string message
+
+    onCurrentSubLevelChanged: message = currentSubLevel + "/" + numberOfSubLevels
+    onNumberOfSubLevelsChanged: message = currentSubLevel + "/" + numberOfSubLevels
 
     Text {
         id: subLevelText
@@ -49,6 +55,6 @@ Rectangle {
         font.pointSize: 16
         font.bold: true
         color: "black"
-        text: score.currentSubLevel + "/" + score.numberOfSubLevels
+        text: message
     }
 }
