@@ -11,6 +11,7 @@ include(src/activities/menu/menu.pri)
 # Activity Includes
 include(src/activities/advanced_colors/advanced_colors.pri)
 include(src/activities/algebra_by/algebra_by.pri)
+include(src/activities/alphabet-sequence/alphabet-sequence.pri)
 include(src/activities/ballcatch/ballcatch.pri)
 include(src/activities/click_on_letter/click_on_letter.pri)
 include(src/activities/click_on_letter_up/click_on_letter_up.pri)
