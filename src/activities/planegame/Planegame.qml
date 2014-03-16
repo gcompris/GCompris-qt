@@ -73,8 +73,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias plane: plane
-            property alias bonusSound: bonusSound
-            property alias audioNumber: audioNumber
+            property alias audio: audio
             property alias movePlaneTimer: movePlaneTimer
             property alias cloudCreation: cloudCreation
         }
@@ -138,13 +137,7 @@ ActivityBase {
         }
 
         Audio {
-            id: bonusSound
-            source: "qrc:/gcompris/src/activities/planegame/resource/bonus.wav"
-            onError: console.log("Plane.qml, bonus play error: " + errorString)
-        }
-
-        Audio {
-            id: audioNumber
+            id: audio
             onError: console.log("Plane.qml, bonus play error: " + errorString)
         }
 

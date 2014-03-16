@@ -271,6 +271,7 @@ function handleCollisionsWithCloud() {
     var planeY1 = items.plane.y
     var planeY2 = items.plane.y + items.plane.height
 
+    var gotOne = false
     if(clouds !== undefined) {
         for(var i = clouds.length - 1; i >= 0 ; --i) {
             var cloud = clouds[i];
@@ -289,9 +290,10 @@ function handleCollisionsWithCloud() {
                     isIn(x1, y2, planeX1, planeY1, planeX2, planeY2) ||
                     isIn(x2, y2, planeX1, planeY1, planeX2, planeY2)) {
 
+                gotOne = true
                 // Collision, look for id
                 if(cloud.text === dataset[currentLevel].data[currentSubLevel]) {
-                    playSound(cloud.text)
+                    playLetterSound(cloud.text)
                     // Move the cloud to the erased list
                     cloud.done()
                     cloudsErased.push(cloud)
@@ -301,21 +303,39 @@ function handleCollisionsWithCloud() {
                     if(currentSubLevel === numberOfSubLevels) {
                         /* Try the next level */
                         nextLevel()
-                        items.bonusSound.play();
-                        break;
+                        playSound("qrc:/gcompris/src/core/resource/sounds/bonus.wav")
                     } else {
                         items.score.message = dataset[currentLevel].data[currentSubLevel]
                     }
+                } else {
+                    /* Touched the wrong cloud */
+                    if(!cloud.touched)
+                        playSound("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                    cloud.touched = true
                 }
+                break;
+            }
+        }
+
+        // Reset the touched state on the clouds
+        if(!gotOne) {
+            for(var i = clouds.length - 1; i >= 0 ; --i) {
+                clouds[i].touched = false
             }
         }
     }
 }
 
-function playSound(number) {
+function playSound(sound) {
+    console.log("play sound " + sound)
+    items.audio.source = sound
+    items.audio.play()
+}
+
+function playLetterSound(number) {
     /* TODO Use QTextCodec or QString toUnicode instead */
-    items.audioNumber.source =
+    items.audio.source =
             GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/U003" +
                                                       number + ".ogg")
-    items.audioNumber.play()
+    items.audio.play()
 }

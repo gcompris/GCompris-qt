@@ -31,6 +31,4 @@ APP_FILES += \
         $$PWD/resource/background.svgz \
         $$PWD/resource/cloud.svgz \
         $$PWD/resource/tuxhelico.svgz \
-        $$PWD/resource/arrow.svgz \
-        $$PWD/resource/bonus.wav
-
+		$$PWD/resource/arrow.svgz

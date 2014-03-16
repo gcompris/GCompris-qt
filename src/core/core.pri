@@ -42,20 +42,6 @@ APP_FILES += \
 	$$PWD/resource/bar_previous.svgz \
 	$$PWD/resource/bar_reload.svgz \
 	$$PWD/resource/bar_repeat.svgz \
-	$$PWD/resource/button.svgz \
-	$$PWD/resource/cancel.svgz \
-	$$PWD/resource/difficulty1.svgz \
-	$$PWD/resource/difficulty2.svgz \
-	$$PWD/resource/difficulty3.svgz \
-	$$PWD/resource/difficulty4.svgz \
-	$$PWD/resource/difficulty5.svgz \
-	$$PWD/resource/difficulty6.svgz \
-	$$PWD/resource/gcompris-medium.png \
-	$$PWD/resource/gcompris-small.png \
-	$$PWD/resource/gcompris.png \
-	$$PWD/resource/intro.ogg \
-	$$PWD/resource/sizeTable.png \
-	$$PWD/resource/star.png \
 	$$PWD/resource/bonus/flower_bad.png \
 	$$PWD/resource/bonus/flower_good.png \
 	$$PWD/resource/bonus/gnu_bad.png \
@@ -68,5 +54,23 @@ APP_FILES += \
 	$$PWD/resource/bonus/smiley_good.png \
 	$$PWD/resource/bonus/tux_bad.png \
 	$$PWD/resource/bonus/tux_good.png \
+	$$PWD/resource/button.svgz \
+	$$PWD/resource/cancel.svgz \
+	$$PWD/resource/difficulty1.svgz \
+	$$PWD/resource/difficulty2.svgz \
+	$$PWD/resource/difficulty3.svgz \
+	$$PWD/resource/difficulty4.svgz \
+	$$PWD/resource/difficulty5.svgz \
+	$$PWD/resource/difficulty6.svgz \
+	$$PWD/resource/gcompris-medium.png \
+	$$PWD/resource/gcompris.png \
+	$$PWD/resource/gcompris-small.png \
+	$$PWD/resource/intro.ogg \
+	$$PWD/resource/sizeTable.png \
+	$$PWD/resource/star.png \
 	$$PWD/resource/tuxballoon.svgz
+
+APP_FILES += \
+	$$PWD/resource/sounds/bonus.wav \
+	$$PWD/resource/sounds/crash.wav
 

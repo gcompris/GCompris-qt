@@ -29,6 +29,9 @@ Image {
     property alias text: number.text
     property double heightRatio: 1
 
+    /* An helper property to remember if a cloud has been wrongly touched */
+    property bool touched: false
+
     sourceSize.height: 100 * ApplicationInfo.ratio
     height: sourceSize.height * ApplicationInfo.ratio * heightRatio
 
