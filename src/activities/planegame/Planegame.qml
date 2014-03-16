@@ -35,6 +35,9 @@ ActivityBase {
     Keys.onPressed: Activity.processPressedKey(event)
     Keys.onReleased: Activity.processReleasedKey(event)
 
+    property variant dataset
+    property bool scoreOnLevel1: false
+
     property int oldWidth: width
     onWidthChanged: {
         // Reposition helico and clouds, same for height
@@ -76,7 +79,7 @@ ActivityBase {
             property alias movePlaneTimer: movePlaneTimer
             property alias cloudCreation: cloudCreation
         }
-        onStart: Activity.start(main, items)
+        onStart: Activity.start(items, dataset, scoreOnLevel1)
         onStop: Activity.stop();
 
         DialogHelp {

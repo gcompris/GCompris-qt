@@ -26,7 +26,7 @@ import GCompris 1.0
 Image {
     id: cloud
     property Item background
-    property alias number: number.text
+    property alias text: number.text
 
     sourceSize.height: 100 * ApplicationInfo.ratio
     height: sourceSize.height - 20 * Activity.currentLevel

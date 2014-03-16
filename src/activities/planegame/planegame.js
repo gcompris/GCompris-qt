@@ -25,51 +25,35 @@
 
 var max_speed = 8
 var currentLevel
-var numberOfLevel = 2
+var numberOfLevel
 
 var upPressed
 var downPressed
 var leftPressed
 var rightPressed
 
-var planeLastTarget = 10;
-var main
 var items
+var dataset
+var scoreOnLevel1
 
 var cloudComponent = Qt.createComponent("qrc:/gcompris/src/activities/planegame/Cloud.qml");
 var clouds = new Array;
 var cloudsErased = new Array;
 
-function start(main_, items_) {
-    main = main_
+function start(items_, dataset_, scoreOnLevel1_) {
     items = items_
+    dataset = dataset_
+    numberOfLevel = dataset.length
+    scoreOnLevel1 = scoreOnLevel1_
     currentLevel = 0
     initLevel()
 }
 
 function stop() {
+    cloudDestroy(clouds)
+    cloudDestroy(cloudsErased)
     items.movePlaneTimer.stop()
     items.cloudCreation.stop()
-}
-
-function increaseSpeedX() {
-    if(items.plane.speedX < max_speed)
-        items.plane.speedX++;
-}
-
-function decreaseSpeedX() {
-    if(items.plane.speedX > -max_speed)
-        items.plane.speedX--;
-}
-
-function increaseSpeedY() {
-    if(items.plane.speedY < max_speed)
-        items.plane.speedY++;
-}
-
-function decreaseSpeedY() {
-    if(items.plane.speedY > - max_speed)
-        items.plane.speedY--;
 }
 
 function cloudDestroy(clouds) {
@@ -84,13 +68,13 @@ function cloudDestroy(clouds) {
 
 function initLevel() {
     items.bar.level = currentLevel + 1;
-    items.score.currentSubLevel = 1
-    items.score.numberOfSubLevels = planeLastTarget
+    items.score.currentSubLevel = 0
+    items.score.numberOfSubLevels = dataset[currentLevel].length
 
     items.movePlaneTimer.stop();
     items.cloudCreation.stop()
 
-    items.score.visible = (currentLevel === 0)
+    items.score.visible = (currentLevel === 0 && scoreOnLevel1)
 
     upPressed = false
     downPressed = false
@@ -113,6 +97,8 @@ function initLevel() {
     items.movePlaneTimer.interval = 1000
     items.movePlaneTimer.start();
     items.cloudCreation.start()
+    // Inject the first cloud now
+    createCloud()
 }
 
 function nextLevel() {
@@ -135,7 +121,6 @@ function repositionObjectsOnWidthChanged(factor) {
     items.plane.x *= factor
     for(var i = clouds.length - 1; i >= 0 ; --i) {
         var cloud = clouds[i];
-        //cloud.x *= factor
     }
 }
 
@@ -158,11 +143,13 @@ function createCloud() {
     /* Random cloud number but at least one in 3 */
     if(cloudCounter++ % 3 == 0 || getRandomInt(0, 1) === 0) {
         /* Put the target */
-        cloud.number = items.score.currentSubLevel;
+        cloud.text = dataset[currentLevel][items.score.currentSubLevel];
         cloudCounter = 1
     } else {
         var min = Math.max(1, items.score.currentSubLevel - 1);
-        cloud.number = min + getRandomInt(0, items.score.currentSubLevel - min + 3);
+        var index = Math.min(min + getRandomInt(0, items.score.currentSubLevel - min + 3),
+                             items.score.numberOfSubLevels - 1)
+        cloud.text = dataset[currentLevel][index]
     }
 
     clouds.push(cloud);
@@ -210,6 +197,26 @@ function processReleasedKey(event) {
         downPressed = false;
         event.accepted = true;
     }
+}
+
+function increaseSpeedX() {
+    if(items.plane.speedX < max_speed)
+        items.plane.speedX++;
+}
+
+function decreaseSpeedX() {
+    if(items.plane.speedX > -max_speed)
+        items.plane.speedX--;
+}
+
+function increaseSpeedY() {
+    if(items.plane.speedY < max_speed)
+        items.plane.speedY++;
+}
+
+function decreaseSpeedY() {
+    if(items.plane.speedY > - max_speed)
+        items.plane.speedY--;
 }
 
 function computeSpeed() {
@@ -279,16 +286,15 @@ function handleCollisionsWithCloud() {
                     isIn(x2, y2, planeX1, planeY1, planeX2, planeY2)) {
 
                 // Collision, look for id
-                if(cloud.number == items.score.currentSubLevel) {
-                    playSound(cloud.number)
+                if(cloud.text === dataset[currentLevel][items.score.currentSubLevel]) {
+                    playSound(cloud.text)
                     // Move the cloud to the erased list
                     cloud.done()
                     cloudsErased.push(cloud)
                     clouds.splice(i, 1)
                     items.score.currentSubLevel++
 
-                    if(items.score.currentSubLevel === items.score.numberOfSubLevels
-                            && currentLevel === 0) {
+                    if(items.score.currentSubLevel === items.score.numberOfSubLevels) {
                         /* Try the next level */
                         nextLevel()
                         items.bonusSound.play();

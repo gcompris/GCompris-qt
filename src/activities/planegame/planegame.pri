@@ -20,9 +20,10 @@
 APP_FILES += \
 	$$PWD/ActivityInfo.qml \
 	$$PWD/Planegame.qml \
-        $$PWD/Plane.qml \
-        $$PWD/Cloud.qml \
-        $$PWD/Arrow.qml \
+	$$PWD/Plane.qml \
+	$$PWD/Cloud.qml \
+	$$PWD/Arrow.qml \
+	$$PWD/Sequence.qml \
 	$$PWD/planegame.js \
 	$$PWD/planegame.svg
 
@@ -32,3 +33,4 @@ APP_FILES += \
         $$PWD/resource/tuxhelico.svgz \
         $$PWD/resource/arrow.svgz \
         $$PWD/resource/bonus.wav
+

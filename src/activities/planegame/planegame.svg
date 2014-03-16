@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
@@ -12,10 +13,9 @@
    height="100"
    id="svg12024"
    sodipodi:version="0.32"
-   inkscape:version="0.44.1"
+   inkscape:version="0.48.3.1 r9886"
    version="1.0"
-   sodipodi:docbase="/home/mat/Travaux/Inkscape/Gcompris/boardicons"
-   sodipodi:docname="helicogame.svg">
+   sodipodi:docname="planegame.svg">
   <defs
      id="defs12026" />
   <sodipodi:namedview
@@ -33,9 +33,11 @@
      height="100px"
      width="100px"
      inkscape:window-width="1015"
-     inkscape:window-height="891"
+     inkscape:window-height="706"
      inkscape:window-x="33"
-     inkscape:window-y="0" />
+     inkscape:window-y="0"
+     showgrid="false"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata12029">
     <rdf:RDF>
@@ -134,5 +136,19 @@
        d="M 17.920566,39.852811 L 51.495881,41.50068 L 55.615552,45.105391 L 56.851453,49.946004 L 60.559156,54.065674 L 64.266859,56.331493 L 70.858332,56.74346 L 76.831854,56.537476 L 84.041278,56.949444 L 89.190866,56.331493 L 91.868652,54.889608 L 94.752421,52.417806 L 93.928487,57.567394 L 88.160948,60.24518 L 65.090794,59.833213 L 59.941205,58.391328 L 59.529238,56.537476 L 56.233502,55.713542 L 54.791617,53.447724 L 52.319816,46.444284 L 47.788178,43.148547 L 18.538517,41.706663 L 17.920566,39.852811 z "
        id="path40971"
        sodipodi:nodetypes="ccccccccccccccccccccccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:19.54555511px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.3541525;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Ruluko;-inkscape-font-specification:Ruluko"
+       x="5.9441066"
+       y="89.36544"
+       id="text3000"
+       sodipodi:linespacing="125%"
+       inkscape:transform-center-x="-23.482122"
+       inkscape:transform-center-y="-15.860731"><tspan
+         sodipodi:role="line"
+         id="tspan3002"
+         x="5.9441066"
+         y="89.36544"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#000000;fill-opacity:1;stroke:#ffffff;stroke-width:0.3541525;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;font-family:Ubuntu;-inkscape-font-specification:Ubuntu">12345678</tspan></text>
   </g>
 </svg>
