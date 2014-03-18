@@ -55,13 +55,10 @@ Image{
             }
 
            Keys.onPressed: {
-               if(event.key==Qt.Key_Return){
-                   ApplicationLogic.checkAnswers()
-               }
-               else{
                    userEntry.text=event.text
-                   ApplicationLogic.setUserAnswer(itemType,parseInt(userEntry.text))
-               }
+                        if(event.text!=""){
+                            ApplicationLogic.setUserAnswer(itemType,parseInt(userEntry.text))
+                        }
            }
 
            Text{

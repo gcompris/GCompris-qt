@@ -12,6 +12,7 @@ var nbDiffrentTypes=0
 var number_of_types=16
 var number_of_item_type=0
 var number_of_item_max=5
+var nbValidations
 var userAnswerInput
 var items
 var itemTypes = {
@@ -168,6 +169,7 @@ function cleanUp(){
         number_of_item_type = 5;
         number_of_item_max = 10;
       }
+    nbValidations=0
 }
 
 function createAnswerArea(type){
@@ -184,8 +186,8 @@ function createAnswerArea(type){
 function createOneItem(type){
     var component=Qt.createComponent("ItemToEnumerate.qml");
     var newItem=component.createObject(background,
-                         {"x": getRandomInt(100,background.width-100),
-                         "y": getRandomInt(100,background.height-100),
+                         {"x": getRandomInt(200,background.width-200),
+                         "y": getRandomInt(200,background.height-200),
                          "imgPath": itemIcons[type]});
     return newItem
 }
@@ -205,16 +207,22 @@ function addItems(type,nbItems){
 
 function setUserAnswer(type,userValue){
         userAnswers[type]=userValue
+        nbValidations++
+    console.log("Nb validations : " + nbValidations)
+        if(nbValidations==number_of_item_type){
+            checkAnswers()
+        }
 }
 
 function checkAnswers(){
-    for(var i=0;i<number_of_types;i++){
-                if(userAnswers[i]!=answerToFind[i]){
-                    bonus.bad("smiley")
-                    return;
-                }
-    }
-    bonus.good("smiley")
+        for(var i=0;i<number_of_types;i++){
+                    if(userAnswers[i]!=answerToFind[i]){
+                        bonus.bad("smiley")
+                        nbValidations--
+                        return;
+                    }
+        }
+        bonus.good("smiley")
 }
 
 function getRandomInt(min, max) {
