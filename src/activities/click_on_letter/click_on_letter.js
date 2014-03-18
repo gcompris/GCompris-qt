@@ -29,36 +29,21 @@ var defaultLevelsFile = ":/gcompris/src/activities/click_on_letter/resource/leve
 var maxLettersPerLine = 6;
 
 var levels;
-var levelsFile;
 var currentLevel;
 var maxLevel;
 var currentSubLevel;
 var currentLetter;
 var maxSubLevel;
-var bar;
-var bonus;
-var trainModel;
-var questionItem;
-var score;
-var nextLevelAudio;
-var letterAudio;
 var level;
 var questions;
 var answers;
+var items;
 var mode;
 
-function start(_bar, _bonus, _trainModel, _nextLevelAudio, _letterAudio,
-        _questionItem, _score, _levelsFile, _mode)
+function start(_items, _mode)
 {
-    bar = _bar;
-    bonus = _bonus;
-    nextLevelAudio = _nextLevelAudio;
-    letterAudio = _letterAudio;
-    trainModel = _trainModel;
-    questionItem = _questionItem;
-    score = _score;
-    levelsFile = _levelsFile
-    mode = _mode
+    items = _items;
+    mode = _mode;
 
     loadLevels();
     currentLevel = 0;
@@ -93,14 +78,15 @@ function parseLevels(json)
 function loadLevels()
 {
     var ret;    
-    var json = levelsFile.read(GCompris.ApplicationInfo.getAudioFilePath("click_on_letter/levels-$LOCALE.json")); // FIXME: this should be something like ApplicationInfo.getDataPath() + "click_on_letter" + "levels-" + ApplicationInfo.getCurrentLocale() + ".json" once it is there.
+    var json = items.levelsFile.read(GCompris.ApplicationInfo.getAudioFilePath("click_on_letter/levels-$LOCALE.json")); // FIXME: this should be something like ApplicationInfo.getDataPath() + "click_on_letter" + "levels-" + ApplicationInfo.getCurrentLocale() + ".json" once it is there.
     if (json == "" || !parseLevels(json)) {
-        console.warn("Click_on_letter: Invalid levels file " + levelsFile.name);
+        console.warn("Click_on_letter: Invalid levels file " +
+                items.levelsFile.name);
         // fallback to default Latin (levels-en.json) file:
-        json = levelsFile.read(defaultLevelsFile);
+        json = items.levelsFile.read(defaultLevelsFile);
         if (json == "" || !parseLevels(json)) {
             console.error("Click_on_letter: Invalid default levels file "
-                + levelsFile.name + ". Can't continue!");
+                + items.levelsFile.name + ". Can't continue!");
             // any way to error-exit here?
             return;
         }
@@ -136,19 +122,19 @@ function shuffleString(s)
 }
 
 function initLevel() {
-    bar.level = currentLevel + 1;
+    items.bar.level = currentLevel + 1;
     if (currentSubLevel == 0) {
         level = levels[currentLevel];
         maxSubLevel = level.questions.length;
-        score.numberOfSubLevels = maxSubLevel;
-        score.currentSubLevel = "1";
+        items.score.numberOfSubLevels = maxSubLevel;
+        items.score.currentSubLevel = "1";
         questions = shuffleString(level.questions);
         answers = shuffleString(level.answers);
 
         var answerArr = answers.split("");
-        trainModel.clear();
+        items.trainModel.clear();
         for (var i = 0; i < answerArr.length; i++) {                
-            trainModel.append({
+            items.trainModel.append({
                 "image": i < maxLettersPerLine ? 
                         "qrc:/gcompris/src/activities/click_on_letter/resource/carriage-off.png":
                         "qrc:/gcompris/src/activities/click_on_letter/resource/cloud-off.png",
@@ -158,26 +144,26 @@ function initLevel() {
         }
     } else {
         // reset all images:
-        for (var i = 0; i < trainModel.count; i++) {
-            trainModel.setProperty(i, "image", i < maxLettersPerLine ? 
+        for (var i = 0; i < items.trainModel.count; i++) {
+            items.trainModel.setProperty(i, "image", i < maxLettersPerLine ? 
                 "qrc:/gcompris/src/activities/click_on_letter/resource/carriage-off.png":
                 "qrc:/gcompris/src/activities/click_on_letter/resource/cloud-off.png");
         }
-        score.currentSubLevel = currentSubLevel + 1;
+        items.score.currentSubLevel = currentSubLevel + 1;
     }
 
     currentLetter = questions.split("")[currentSubLevel];
     if (getSetting("fx")) {
-        nextLevelAudio.stop();
-        nextLevelAudio.play();
-        letterAudio.source = "resource/voices/" + GCompris.ApplicationInfo.locale +  // FIXME: adjust to voices path
+        items.nextLevelAudio.stop();
+        items.nextLevelAudio.play();
+        items.letterAudio.source = "resource/voices/" + GCompris.ApplicationInfo.locale +  // FIXME: adjust to voices path
             "/alphabet/" + getSoundFilenamForChar(currentLetter);
-        letterAudio.playDelayed(1500);
+        items.letterAudio.playDelayed(1500);
     } //else 
     if (!getSetting("fx") || GCompris.ApplicationInfo.isMobile) {  // FIXME once we have voices on mobile 
         // no sound -> show question
-        questionItem.visible = true;
-        questionItem.text = currentLetter;
+        items.questionItem.visible = true;
+        items.questionItem.text = currentLetter;
     }
 }
 
@@ -207,11 +193,11 @@ function nextSubLevel() {
 
 function checkAnswer(index)
 {
-    var modelEntry = trainModel.get(index);
+    var modelEntry = items.trainModel.get(index);
     if (modelEntry.letter == currentLetter)
-        bonus.good("flower");
+        items.bonus.good("flower");
     else {
-        bonus.bad("flower");
+        items.bonus.bad("flower");
         modelEntry.image = index < maxLettersPerLine ? 
             "qrc:/gcompris/src/activities/click_on_letter/resource/carriage-on.png" :
             "qrc:/gcompris/src/activities/click_on_letter/resource/cloud-on.png";
