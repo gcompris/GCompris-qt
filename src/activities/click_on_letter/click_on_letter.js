@@ -156,8 +156,8 @@ function initLevel() {
     if (getSetting("fx")) {
         items.nextLevelAudio.stop();
         items.nextLevelAudio.play();
-        items.letterAudio.source = "resource/voices/" + GCompris.ApplicationInfo.locale +  // FIXME: adjust to voices path
-            "/alphabet/" + getSoundFilenamForChar(currentLetter);
+        items.letterAudio.source = GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
+                + getSoundFilenamForChar(currentLetter));
         items.letterAudio.playDelayed(1500);
     } //else 
     if (!getSetting("fx") || GCompris.ApplicationInfo.isMobile) {  // FIXME once we have voices on mobile 

@@ -189,7 +189,7 @@ ActivityBase {
 
         Audio {
             id: nextLevelAudio
-            source: "resource/voices/" + ApplicationInfo.locale + "/misc/click_on_letter.ogg" //FIXME: adjust to voices path
+            source: ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/click_on_letter.ogg")
             
             onErrorChanged: console.log("Click_on_letter: nextLevelAudio error: " +
                     error + ": " + errorString + " (source: " + source + ")")
