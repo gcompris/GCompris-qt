@@ -208,7 +208,6 @@ function addItems(type,nbItems){
 function setUserAnswer(type,userValue){
         userAnswers[type]=userValue
         nbValidations++
-    console.log("Nb validations : " + nbValidations)
         if(nbValidations==number_of_item_type){
             checkAnswers()
         }
