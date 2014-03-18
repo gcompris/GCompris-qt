@@ -40,18 +40,14 @@ ActivityBase {
     property int oldWidth: width
     onWidthChanged: {
         // Reposition helico and clouds, same for height
-        if(Activity.plane !== undefined) {
-            Activity.repositionObjectsOnWidthChanged(width/oldWidth)
-        }
+        Activity.repositionObjectsOnWidthChanged(width / oldWidth)
         oldWidth = width
     }
 
     property int oldHeight: height
     onHeightChanged: {
         // Reposition helico and clouds, same for height
-        if(Activity.plane !== undefined) {
-            Activity.repositionObjectsOnHeightChanged(height / oldHeight)
-        }
+        Activity.repositionObjectsOnHeightChanged(height / oldHeight)
         oldHeight = height
     }
 
@@ -112,11 +108,12 @@ ActivityBase {
             running: false
             repeat: true
             onTriggered: {
+                plane.state = "play"
                 interval = 50
                 if(movePlaneTimerCounter++ % 3 == 0) {
                     /* Do not call this too often or plane commands are too hard */
                     Activity.handleCollisionsWithCloud();
-                    Activity.computeSpeed();
+                    Activity.computeVelocity();
                 }
                 Activity.planeMove();
             }
@@ -133,7 +130,6 @@ ActivityBase {
         Plane {
             id: plane
             background: background
-            score: score
         }
 
         Audio {
@@ -141,41 +137,5 @@ ActivityBase {
             onError: console.log("Plane.qml, bonus play error: " + errorString)
         }
 
-        Item {
-            id: multitouchFourArrowsOnSides
-            anchors.fill: parent
-            visible: ApplicationInfo.isMobile
-
-            Arrow {
-                id: leftArrow
-                anchors.left: parent.left
-                anchors.verticalCenter: parent.verticalCenter
-                mirror: true
-
-                onButtonPressedChanged: Activity.leftPressed = buttonPressed
-            }
-
-            Arrow {
-                id: rightArrow
-                anchors.right: parent.right
-                anchors.verticalCenter: parent.verticalCenter
-
-                onButtonPressedChanged: Activity.rightPressed = buttonPressed
-            }
-            Arrow {
-                id: topArrow
-                rotation: 270
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.top: parent.top
-                onButtonPressedChanged: Activity.upPressed = buttonPressed;
-            }
-            Arrow {
-                id: downArrow
-                rotation: 90
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.bottom: parent.bottom
-                onButtonPressedChanged: Activity.downPressed = buttonPressed
-            }
-        }
     }
 }

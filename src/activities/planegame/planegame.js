@@ -24,7 +24,7 @@
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 
-var max_speed = 8
+var max_velocity = 500 * GCompris.ApplicationInfo.ratio
 var currentLevel
 var numberOfLevel
 var currentSubLevel
@@ -83,20 +83,11 @@ function initLevel() {
     leftPressed = false
     rightPressed = false
 
-    items.plane.speedX = 0
-    items.plane.speedY = 0
-    items.plane.planeVelocity = 50 + 50 * currentLevel
-    // Tend towards 0.5 ratio
-    items.plane.heightRatio = 1.0 - 0.5 * currentLevel / 10
-    items.plane.x = 100
-    items.plane.y = items.background.height/2 - items.plane.height/2
-
     cloudDestroy(clouds)
     cloudDestroy(cloudsErased)
 
-    // For initial plane position reset
-    // Will set a slower velocity in move() later
-    items.plane.planeVelocity = 500
+    // Tend towards 0.5 ratio
+    items.plane.state = "init"
     items.movePlaneTimer.interval = 1000
     items.movePlaneTimer.start();
     items.cloudCreation.start()
@@ -120,15 +111,20 @@ function previousLevel() {
 }
 
 function repositionObjectsOnWidthChanged(factor) {
-
-    items.plane.x *= factor
+    if(items.plane) {
+        items.movePlaneTimer.interval = 1000
+        items.plane.state = "init"
+    }
     for(var i = clouds.length - 1; i >= 0 ; --i) {
         var cloud = clouds[i];
     }
 }
 
 function repositionObjectsOnHeightChanged(factor) {
-    items.plane.y *= factor
+    if(items.plane) {
+        items.movePlaneTimer.interval = 1000
+        items.plane.state = "init"
+    }
     for(var i = clouds.length - 1; i >= 0 ; --i) {
         var cloud = clouds[i];
         cloud.y *= factor
@@ -203,62 +199,88 @@ function processReleasedKey(event) {
     }
 }
 
-function increaseSpeedX() {
-    if(items.plane.speedX < max_speed)
-        items.plane.speedX++;
+var VELOCITY_STEP = 50
+function increaseVelocityX() {
+    if(items.plane.velocityX < max_velocity)
+        items.plane.velocityX += VELOCITY_STEP;
 }
 
-function decreaseSpeedX() {
-    if(items.plane.speedX > -max_speed)
-        items.plane.speedX--;
+function decreaseVelocityX() {
+    if(items.plane.velocityX > -max_velocity)
+        items.plane.velocityX -= VELOCITY_STEP;
 }
 
-function increaseSpeedY() {
-    if(items.plane.speedY < max_speed)
-        items.plane.speedY++;
+function increaseVelocityY() {
+    if(items.plane.velocityY < max_velocity)
+        items.plane.velocityY += VELOCITY_STEP;
 }
 
-function decreaseSpeedY() {
-    if(items.plane.speedY > - max_speed)
-        items.plane.speedY--;
+function decreaseVelocityY() {
+    if(items.plane.velocityY > - max_velocity)
+        items.plane.velocityY -= VELOCITY_STEP;
 }
 
-function computeSpeed() {
+function computeVelocity() {
     if(rightPressed) {
-        increaseSpeedX()
+        increaseVelocityX()
     }
     if(leftPressed) {
-        decreaseSpeedX()
+        decreaseVelocityX()
     }
     if(upPressed) {
-        decreaseSpeedY()
+        decreaseVelocityY()
     }
     if(downPressed) {
-        increaseSpeedY()
+        increaseVelocityY()
+    }
+
+    if(!rightPressed && !leftPressed && !upPressed && !downPressed) {
+        // Speed auto decreasing
+        if(items.plane.velocityX > 10)
+            items.plane.velocityX -= 10
+        else if(items.plane.velocityX < -10)
+            items.plane.velocityX += 10
+        else
+            items.plane.velocityX = 0
+
+        if(items.plane.velocityY > 10)
+            items.plane.velocityY -= 10
+        else if(items.plane.velocityY < -10)
+            items.plane.velocityY += 10
+        else
+            items.plane.velocityY = 0
     }
 }
 
+/* We move x/y of the plane to let its smooth animation track it */
 function planeMove() {
-    // Just reset it here for reinit plane position case (start level)
-    items.plane.planeVelocity = 50 + 50 * currentLevel
 
     if(items.plane.x + items.plane.width > items.background.width &&
-            items.plane.speedX > 0) {
-        items.plane.speedX = 0;
+            items.plane.velocityX > 0) {
+        items.plane.velocityX = 0;
     }
-    if(items.plane.x < 0 && items.plane.speedX < 0) {
-        items.plane.speedX = 0;
+    if(items.plane.x < 0 && items.plane.velocityX < 0) {
+        items.plane.velocityX = 0;
     }
-    items.plane.x += items.plane.speedX * 10;
+    if(items.plane.velocityX)
+        if(items.plane.velocityX > 0)
+            items.plane.x += 10
+        else
+            items.plane.x -= 10
 
-    if(items.plane.y < 0 && items.plane.speedY < 0) {
-        items.plane.speedY = 0;
+    if(items.plane.y < 0 && items.plane.velocityY < 0) {
+        items.plane.velocityY = 0;
     }
     if(items.plane.y + items.plane.height > items.background.height &&
-            items.plane.speedY > 0) {
-        items.plane.speedY = 0;
+            items.plane.velocityY > 0) {
+        items.plane.velocityY = 0;
     }
-    items.plane.y += items.plane.speedY * 10;
+    if(items.plane.velocityY)
+        if(items.plane.velocityY > 0)
+            items.plane.y += 10
+        else
+            items.plane.y -= 10
+
 }
 
 function isIn(x1, y1, px1, py1, px2, py2) {
@@ -327,7 +349,6 @@ function handleCollisionsWithCloud() {
 }
 
 function playSound(sound) {
-    console.log("play sound " + sound)
     items.audio.source = sound
     items.audio.play()
 }

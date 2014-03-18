@@ -22,7 +22,6 @@ APP_FILES += \
 	$$PWD/Planegame.qml \
 	$$PWD/Plane.qml \
 	$$PWD/Cloud.qml \
-	$$PWD/Arrow.qml \
 	$$PWD/Sequence.qml \
 	$$PWD/planegame.js \
 	$$PWD/planegame.svg
@@ -30,5 +29,4 @@ APP_FILES += \
 APP_FILES += \
         $$PWD/resource/background.svgz \
         $$PWD/resource/cloud.svgz \
-        $$PWD/resource/tuxhelico.svgz \
-		$$PWD/resource/arrow.svgz
+		$$PWD/resource/tuxhelico.svgz

@@ -33,7 +33,7 @@ Image {
     property bool touched: false
 
     sourceSize.height: 100 * ApplicationInfo.ratio
-    height: sourceSize.height * ApplicationInfo.ratio * heightRatio
+    height: sourceSize.height * heightRatio
 
     source: "qrc:/gcompris/src/activities/planegame/resource/cloud.svgz"
     fillMode: Image.PreserveAspectFit
@@ -61,7 +61,7 @@ Image {
         y = Activity.getRandomInt(0, background.height - cloud.height)
     }
 
-    Behavior on x { PropertyAnimation { duration: 30 * background.width } }
+    Behavior on x { PropertyAnimation { duration: 20000 } }
     Behavior on opacity { PropertyAnimation { duration: 400 } }
 
     Timer {
