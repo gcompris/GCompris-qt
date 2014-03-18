@@ -13,4 +13,5 @@ APP_FILES += \
     $$PWD/resource/carriage-off.png \
     $$PWD/resource/cloud-off.png \
     $$PWD/resource/cloud-on.png \
-    $$PWD/resource/levels-en.json
+    $$PWD/resource/levels-en.json \
+    $$PWD/resource/levels-fr.json
