@@ -29,8 +29,6 @@ Algebra{
 
     onStart:{
         setOperand("-")
-        Activity.start(coreItems, otherItems)
-
     }
 
 }
