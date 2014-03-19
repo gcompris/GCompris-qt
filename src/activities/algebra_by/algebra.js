@@ -1,4 +1,4 @@
-/* GCompris - activity.js
+/* GCompris - algebra.js
  *
  * Copyright (C) 2014 Aruna Sankaranarayanan and Bruno Coudoin
  *
@@ -68,15 +68,42 @@ function previousLevel() {
 
 function calculateOperands()
 {
-    firstOperandVal = coreItems.bar.level
-    secondOperandVal = operations[coreItems.score.currentSubLevel - 1]
+    switch(otheritems.operand.text)
+    {
+    case "x":
+        firstOperandVal = coreItems.bar.level
+        secondOperandVal = operations[coreItems.score.currentSubLevel - 1]
+        break;
+    case "+":
+        firstOperandVal = coreItems.bar.level
+        secondOperandVal = operations[coreItems.score.currentSubLevel - 1]
+        break;
+    case "-":
+        firstOperandVal = coreItems.bar.level + 9
+        secondOperandVal = operations[coreItems.score.currentSubLevel - 1]
+        break;
+    }
+
+
+
     otheritems.firstOp.text = firstOperandVal
     otheritems.secondOp.text = secondOperandVal
 }
 
 function validateAnswer(screenAnswer)
 {
-    return (firstOperandVal * secondOperandVal === screenAnswer)
+        switch(otheritems.operand.text)
+        {
+            case "x":
+                return (firstOperandVal * secondOperandVal === screenAnswer)
+
+            case "+":
+               return (firstOperandVal + secondOperandVal === screenAnswer)
+
+            case "-":
+                return (firstOperandVal - secondOperandVal === screenAnswer)
+        }
+
 }
 
 function run() {

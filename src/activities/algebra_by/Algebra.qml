@@ -111,6 +111,7 @@ ActivityBase {
         id: otherItems
         property alias iAmReady: iAmReady
         property alias firstOp:firstOp
+        property alias operand: operand
         property alias secondOp:secondOp
         property alias numpad:numpad
     }
@@ -126,6 +127,7 @@ ActivityBase {
     }
 
     Flow {
+        id:textFlow
         x: 200 * ApplicationInfo.ratio
         y: 80
         width: parent.width / 2
@@ -141,7 +143,7 @@ ActivityBase {
         }
 
         Text{
-            id: multiply
+            id: operand
             visible: firstOp.visible
             font.pointSize: 32
             text: "x"
@@ -177,5 +179,10 @@ ActivityBase {
 
     Keys.onReleased: {
         Activity.keyEvent(event.key, false)
+    }
+
+    function setOperand(value)
+    {
+        operand.text = value;
     }
 }
