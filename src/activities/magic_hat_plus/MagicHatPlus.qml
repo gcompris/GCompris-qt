@@ -1,4 +1,5 @@
 import QtQuick 2.1
+import QtQuick.Layouts 1.1
 
 import "qrc:/gcompris/src/core"
 import "magic_hat_plus.js" as Activity
@@ -18,18 +19,12 @@ ActivityBase {
         signal start
         signal stop
 
-
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
         onStart: { Activity.start(main, background, bar, bonus) }
         onStop: { Activity.stop() }
-
-        Hat{
-            x: background.width/5
-            y:  background.height/5
-        }
 
         DialogHelp {
             id: dialogHelp

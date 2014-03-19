@@ -3,11 +3,19 @@ import "magic_hat_plus.js" as ApplicationLogic
 
 Image {
     id: hatImg
-    width: parent.width/4
-    height: parent.height/2.5
+    width: parent.width/3.5
+    height: parent.height/2.25
     source: "qrc:/gcompris/src/activities/magic_hat_plus/resource/magic_hat/hat.svg"
     fillMode: Image.PreserveAspectFit
     state: "NormalPosition"
+    transform: Rotation{
+        id: rotate
+        origin.x:hatImg.x/2
+        origin.y:hatImg.y + hatImg.height/2
+        axis.x: 0
+        axis.y: 0
+        axis.z: 1
+    }
 
     MouseArea{
         id: hatMouseArea
@@ -28,23 +36,26 @@ Image {
         State{
             name: "NormalPosition"
             PropertyChanges {
-                target: hatImg
-                rotation: 0
+                target: rotate
+                angle: 0
             }
         },
         State{
             name: "Rotated"
             PropertyChanges {
-                target: hatImg
-                rotation: -30
+                target: rotate
+                angle: -45
             }
         },
         State{
             name: "GuessNumber"
             PropertyChanges{
                 target: hatImg
-                rotation: 0
                 source: "qrc:/gcompris/src/activities/magic_hat_plus/resource/magic_hat/hat-point.svg"
+            }
+            PropertyChanges {
+                target: rotate
+                angle: 0
             }
         }
     ]

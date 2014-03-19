@@ -12,4 +12,6 @@ APP_FILES += \
         $$PWD/resource/magic_hat/star2.svgz \
         $$PWD/resource/magic_hat/star3.svgz \
         $$PWD/Hat.qml \
-        $$PWD/Star.qml
+        $$PWD/Star.qml \
+        $$PWD/StarsBar.qml \
+
