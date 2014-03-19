@@ -38,7 +38,7 @@
 **
 ****************************************************************************/
 
-#include <QtCore/qmath.h>
+#include <QtCore/QtMath>
 #include <QtCore/QUrl>
 #include <QtCore/QUrlQuery>
 #include <QtGui/QGuiApplication>
