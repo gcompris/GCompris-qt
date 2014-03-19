@@ -25,11 +25,7 @@ import "qrc:/gcompris/src/core"
 import "../algebra_by/"
 
 Algebra{
-
     onStart:{
-        setOperand("-")
-        Activity.start(coreItems, otherItems)
-
+        setOperand("+")
     }
-
 }
