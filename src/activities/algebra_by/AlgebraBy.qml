@@ -28,7 +28,7 @@ import "../algebra_by/"
 Algebra{
 
     onStart:{
-        setOperand("x")
+        operand.text ="x"
     }
 
 }

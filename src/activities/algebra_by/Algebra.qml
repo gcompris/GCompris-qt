@@ -26,6 +26,8 @@ ActivityBase {
     id: activity
     focus: true
 
+    property alias operand: operand
+
     onStart: {
         focus = true;
     }
@@ -54,7 +56,7 @@ ActivityBase {
             property alias timer:timer
         }
 
-        onStart: Activity.start(coreItems, otherItems)
+        onStart: Activity.start(coreItems, otherItems, operand)
         onStop: Activity.stop()
 
         DialogHelp {
@@ -111,7 +113,6 @@ ActivityBase {
         id: otherItems
         property alias iAmReady: iAmReady
         property alias firstOp:firstOp
-        property alias operand: operand
         property alias secondOp:secondOp
         property alias numpad:numpad
     }
@@ -179,10 +180,5 @@ ActivityBase {
 
     Keys.onReleased: {
         Activity.keyEvent(event.key, false)
-    }
-
-    function setOperand(value)
-    {
-        operand.text = value;
     }
 }

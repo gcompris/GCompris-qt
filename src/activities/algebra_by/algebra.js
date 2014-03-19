@@ -22,13 +22,15 @@
 var currentLevel
 var coreItems
 var otheritems
+var operand
 var secondOperandVal
 var firstOperandVal
 var operations = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 var nbLevel = 10
 
-function start(coreItems_, otherItems_) {
+function start(coreItems_, otherItems_, operand_) {
+    operand   = operand_
     coreItems = coreItems_
     otheritems = otherItems_
     currentLevel = 0
@@ -68,7 +70,7 @@ function previousLevel() {
 
 function calculateOperands()
 {
-    switch(otheritems.operand.text)
+    switch(operand.text)
     {
     case "x":
         firstOperandVal = coreItems.bar.level
@@ -92,7 +94,7 @@ function calculateOperands()
 
 function validateAnswer(screenAnswer)
 {
-        switch(otheritems.operand.text)
+        switch(operand.text)
         {
             case "x":
                 return (firstOperandVal * secondOperandVal === screenAnswer)
