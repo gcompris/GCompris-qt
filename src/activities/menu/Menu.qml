@@ -82,9 +82,10 @@ ActivityBase {
                 }
                 ParticleSystemStar {
                     id: particles
+                    anchors.fill: background
                 }
                 MouseArea {
-                    anchors.fill: parent
+                    anchors.fill: background
                     onClicked: {
                         particles.emitter.burst(50)
                         ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
