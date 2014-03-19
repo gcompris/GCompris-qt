@@ -111,7 +111,7 @@ function previousLevel() {
 }
 
 function repositionObjectsOnWidthChanged(factor) {
-    if(items.plane) {
+    if(items && items.plane) {
         items.movePlaneTimer.interval = 1000
         items.plane.state = "init"
     }
@@ -121,7 +121,7 @@ function repositionObjectsOnWidthChanged(factor) {
 }
 
 function repositionObjectsOnHeightChanged(factor) {
-    if(items.plane) {
+    if(items && items.plane) {
         items.movePlaneTimer.interval = 1000
         items.plane.state = "init"
     }
