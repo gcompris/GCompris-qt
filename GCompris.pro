@@ -9,6 +9,7 @@ include(src/core/core.pri)
 include(src/activities/menu/menu.pri)
 
 # Activity Includes
+include(src/activities/brat197/brat197.pri)
 include(src/activities/advanced_colors/advanced_colors.pri)
 include(src/activities/algebra_by/algebra_by.pri)
 include(src/activities/alphabet-sequence/alphabet-sequence.pri)
