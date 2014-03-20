@@ -140,7 +140,7 @@ ActivityBase {
                 anchors.fill: parent
                 onTouchUpdated: {
                     // left
-                    if(!Activity.leftPressed) {
+                    if(!Activity.leftPressed && !Activity.gameFinished) {
                         Activity.leftShiftPressed();
                         Activity.leftPressed = true
                     }
@@ -178,7 +178,7 @@ ActivityBase {
                 anchors.fill: parent
                 onTouchUpdated: {
                     // right
-                    if(!Activity.rightPressed) {
+                    if(!Activity.rightPressed && !Activity.gameFinished) {
                         Activity.rightShiftPressed();
                         Activity.rightPressed = true
                     }
