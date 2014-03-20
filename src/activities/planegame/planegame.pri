@@ -28,5 +28,6 @@ APP_FILES += \
 
 APP_FILES += \
         $$PWD/resource/background.svgz \
-        $$PWD/resource/cloud.svgz \
+		$$PWD/resource/cloud.svgz \
+		$$PWD/resource/cloud_storm.svgz \
 		$$PWD/resource/tuxhelico.svgz

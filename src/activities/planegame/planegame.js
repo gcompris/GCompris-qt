@@ -333,7 +333,7 @@ function handleCollisionsWithCloud() {
                     /* Touched the wrong cloud */
                     if(!cloud.touched)
                         playSound("qrc:/gcompris/src/core/resource/sounds/crash.wav")
-                    cloud.touched = true
+                    cloud.touch()
                 }
                 break;
             }

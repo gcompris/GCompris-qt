@@ -35,16 +35,23 @@ Image {
     sourceSize.height: 100 * ApplicationInfo.ratio
     height: sourceSize.height * heightRatio
 
-    source: "qrc:/gcompris/src/activities/planegame/resource/cloud.svgz"
+    state: "normal"
+//    source: "qrc:/gcompris/src/activities/planegame/resource/cloud.svgz"
     fillMode: Image.PreserveAspectFit
 
     z: 5
 
     signal done
+    signal touch
 
     onDone: {
         particles.emitter.burst(50)
         opacityTimer.start()
+    }
+
+    onTouch: {
+        touched = true
+        state = "storm"
     }
 
     Text {
@@ -63,6 +70,34 @@ Image {
 
     Behavior on x { PropertyAnimation { duration: 20000 } }
     Behavior on opacity { PropertyAnimation { duration: 400 } }
+
+    Timer {
+        id: stormy
+        interval: 2000;
+        running: false;
+        repeat: false
+        onTriggered: cloud.state = "normal"
+    }
+
+    states: [
+        State {
+            name: "normal"
+            PropertyChanges {
+                target: cloud
+                source: "qrc:/gcompris/src/activities/planegame/resource/cloud.svgz"
+            }
+        },
+        State {
+            name: "storm"
+            PropertyChanges {
+                target: cloud
+                source: "qrc:/gcompris/src/activities/planegame/resource/cloud_storm.svgz"
+            }
+            StateChangeScript {
+                script: stormy.start()
+            }
+        }
+    ]
 
     Timer {
         id: opacityTimer
