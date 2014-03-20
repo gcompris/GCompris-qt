@@ -33,44 +33,8 @@ ActivityBase {
     
     /* mode of the activity, either "lowercase" (click_on_letter)
      * or "uppercase" (click_on_letter_up): */
-    property string mode: "lowercase" 
-
-    File {
-        id: levelsFile
-        name: ""
-            
-        onError: console.log("Click_on_letter: levelsFile error: " + msg);
-    }
-
-    Audio {
-        id: nextLevelAudio
-        source: "resource/voices/" + ApplicationInfo.locale + "/misc/click_on_letter.ogg" //FIXME: adjust to voices path
-        
-        onErrorChanged: console.log("Click_on_letter: nextLevelAudio error: " +
-                error + ": " + errorString + " (source: " + source + ")")
-    }
-
-    Audio {
-        id: letterAudio
-        source: ""
-        
-        onErrorChanged: console.log("Click_on_letter: letterAudio error: "
-                + error + ": " + errorString + " (source: " + source + ")")
-        
-        function playDelayed(ms) {
-            if (letterAudioTimer.running)
-                letterAudioTimer.stop();
-            letterAudioTimer.interval = ms;
-            letterAudioTimer.start();
-        }
-    }
-
-    Timer {
-        id: letterAudioTimer
-        repeat: false        
-        onTriggered: letterAudio.play();
-    }
-
+    property string mode: "lowercase"
+    
     pageComponent: Image {
         source: "qrc:/gcompris/src/activities/click_on_letter/resource/background.svgz"
         id: background
@@ -82,10 +46,21 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-
-        onStart: Activity.start(bar, bonus, trainModel, nextLevelAudio, 
-                                letterAudio, questionItem, score, levelsFile,
-                                mode)
+        
+        QtObject {
+            id: items
+            property alias bar: bar
+            property alias trainModel: trainModel
+            property alias nextLevelAudio: nextLevelAudio
+            property alias levelsFile: levelsFile
+            property alias letterAudio: letterAudio 
+            property alias questionItem: questionItem
+            property alias score: score
+            property alias bonus: bonus
+        }
+        
+        onStart: Activity.start(items, mode); 
+        
         onStop: Activity.stop()
 
         DialogHelp {
@@ -203,6 +178,42 @@ ActivityBase {
             
             model: trainModel
             delegate: Carriage { }
+        }
+        
+        File {
+            id: levelsFile
+            name: ""
+                
+            onError: console.log("Click_on_letter: levelsFile error: " + msg);
+        }
+
+        Audio {
+            id: nextLevelAudio
+            source: ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/click_on_letter.ogg")
+            
+            onErrorChanged: console.log("Click_on_letter: nextLevelAudio error: " +
+                    error + ": " + errorString + " (source: " + source + ")")
+        }
+
+        Audio {
+            id: letterAudio
+            source: ""
+            
+            onErrorChanged: console.log("Click_on_letter: letterAudio error: "
+                    + error + ": " + errorString + " (source: " + source + ")")
+            
+            function playDelayed(ms) {
+                if (letterAudioTimer.running)
+                    letterAudioTimer.stop();
+                letterAudioTimer.interval = ms;
+                letterAudioTimer.start();
+            }
+        }
+        
+        Timer {
+            id: letterAudioTimer
+            repeat: false        
+            onTriggered: letterAudio.play();
         }
     }
 }
