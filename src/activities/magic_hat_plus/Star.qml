@@ -6,6 +6,7 @@ Item{
     id: mainItem
     property string starState: "off"
     property bool isClickable: false
+    property bool displayBounds: true
 
     width: 34
     height: 34
@@ -29,42 +30,42 @@ Item{
             width: parent.width
             height: parent.height
             color: "black"
+            opacity: displayBounds? 1.0:0.0
+
+            Rectangle{
+                id: innerRect
+                width: contour.width - 2
+                height: contour.height - 2
+                anchors.centerIn: contour
+                color: "grey"
+                opacity: displayBounds? 1.0:0.0
+            }
     }
 
-    Rectangle{
-        id: innerRect
-        width: contour.width - 2
-        height: contour.height - 2
+    Image {
+        id: starImg
+        width: innerRect.width - 4
+        height: innerRect.height - 4
         anchors.centerIn: contour
-        color: "grey"
+        state: starState
+        fillMode: Image.PreserveAspectFit
 
-
-        Image {
-            id: starImg
-            width: innerRect.width - 4
-            height: innerRect.height - 4
-            anchors.verticalCenter: parent.verticalCenter
-            anchors.horizontalCenter: parent.horizontalCenter
-            state: starState
-            fillMode: Image.PreserveAspectFit
-
-            states:[
-                State{
-                    name: "on"
-                    PropertyChanges {
-                        target: starImg
-                        source: "qrc:/gcompris/src/activities/magic_hat_plus/resource/magic_hat/star1.svgz"
-                    }
-                },
-                State{
-                    name: "off"
-                    PropertyChanges {
-                        target: starImg
-                        source: "qrc:/gcompris/src/activities/magic_hat_plus/resource/magic_hat/star-clear.svgz"
-                    }
+        states:[
+            State{
+                name: "on"
+                PropertyChanges {
+                    target: starImg
+                    source: "qrc:/gcompris/src/activities/magic_hat_plus/resource/magic_hat/star1.svgz"
                 }
-            ]
-        }
+            },
+            State{
+                name: "off"
+                PropertyChanges {
+                    target: starImg
+                    source: "qrc:/gcompris/src/activities/magic_hat_plus/resource/magic_hat/star-clear.svgz"
+                }
+            }
+        ]
     }
 
     Behavior on x{

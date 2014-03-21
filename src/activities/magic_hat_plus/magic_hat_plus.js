@@ -44,9 +44,9 @@ function initLevel() {
                 nbStars2=getRandomInt(1,2)
              break;
         case 2: nbStars1=getRandomInt(1,3)
-            nbStars2=getRandomInt(1,3)
+            nbStars2=getRandomInt(1,2)
              break;
-        case 3: nbStars1=getRandomInt(1,5)
+        case 3: nbStars1=getRandomInt(1,4)
             nbStars2=getRandomInt(1,3)
             break;
         case 4: nbStars1=getRandomInt(1,5)
@@ -127,11 +127,12 @@ function createStarBar(nbStarsOn,barNumber){
         var starcomponent=Qt.createComponent("Star.qml")
         var star=starcomponent.createObject(background,
                                             {
-                                                "x" : starbar.x,
+                                                "x" : starbar.x + (starbar.height + 5)*i,
                                                 "y" : starbar.y,
                                                 "width" : starbar.height,
                                                 "height" : starbar.height,
                                                 "starState" : "on",
+                                                "displayBounds": false
                                             })
         starsToCount[nbStarsUnderHat]=star
         nbStarsUnderHat++
