@@ -25,3 +25,4 @@ memory-math-mult-div
 memory-sound
 planegame
 memory-math-add-minus-mult-div
+duckmove
