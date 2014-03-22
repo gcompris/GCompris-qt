@@ -21,7 +21,7 @@
 */
 
 .pragma library
-.import QtQuick 2.0 as Quick
+.import QtQuick 2.2 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 
 var max_velocity = 500 * GCompris.ApplicationInfo.ratio
