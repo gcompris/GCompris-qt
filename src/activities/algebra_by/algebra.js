@@ -1,4 +1,4 @@
-/* GCompris - activity.js
+/* GCompris - algebra.js
  *
  * Copyright (C) 2014 Aruna Sankaranarayanan and Bruno Coudoin
  *
@@ -22,13 +22,15 @@
 var currentLevel
 var coreItems
 var otheritems
+var operand
 var secondOperandVal
 var firstOperandVal
 var operations = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 var nbLevel = 10
 
-function start(coreItems_, otherItems_) {
+function start(coreItems_, otherItems_, operand_) {
+    operand   = operand_
     coreItems = coreItems_
     otheritems = otherItems_
     currentLevel = 0
@@ -68,15 +70,42 @@ function previousLevel() {
 
 function calculateOperands()
 {
-    firstOperandVal = coreItems.bar.level
-    secondOperandVal = operations[coreItems.score.currentSubLevel - 1]
+    switch(operand.text)
+    {
+    case "x":
+        firstOperandVal = coreItems.bar.level
+        secondOperandVal = operations[coreItems.score.currentSubLevel - 1]
+        break;
+    case "+":
+        firstOperandVal = coreItems.bar.level
+        secondOperandVal = operations[coreItems.score.currentSubLevel - 1]
+        break;
+    case "-":
+        firstOperandVal = coreItems.bar.level + 9
+        secondOperandVal = operations[coreItems.score.currentSubLevel - 1]
+        break;
+    }
+
+
+
     otheritems.firstOp.text = firstOperandVal
     otheritems.secondOp.text = secondOperandVal
 }
 
 function validateAnswer(screenAnswer)
 {
-    return (firstOperandVal * secondOperandVal === screenAnswer)
+        switch(operand.text)
+        {
+            case "x":
+                return (firstOperandVal * secondOperandVal === screenAnswer)
+
+            case "+":
+               return (firstOperandVal + secondOperandVal === screenAnswer)
+
+            case "-":
+                return (firstOperandVal - secondOperandVal === screenAnswer)
+        }
+
 }
 
 function run() {

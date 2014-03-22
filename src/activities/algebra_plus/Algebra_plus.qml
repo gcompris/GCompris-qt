@@ -1,10 +1,10 @@
-/* GCompris - AlgebraBy.qml
+/* GCompris - AlgebraPlus.qml
  *
- * Copyright (C) 2014 Aruna Sankaranarayanan and Bruno Coudoin
+ * Copyright (C) 2014 <YOUR NAME HERE>
  *
  * Authors:
- *   Bruno Coudoin (GTK+ version)
- *   Aruna Sankaranarayanan aruna.evam@gmail.com (Qt Quick port)
+ *   <THE GTK VERSION AUTHOR> (GTK+ version)
+ *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -24,11 +24,8 @@ import QtQuick 2.1
 import "qrc:/gcompris/src/core"
 import "../algebra_by/"
 
-
 Algebra{
-
     onStart:{
-        operand.text ="x"
+        operand.text = "+"
     }
-
 }

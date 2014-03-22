@@ -2,6 +2,8 @@
 # Keep it sorted
 advanced_colors
 algebra_by
+algebra_minus
+algebra_plus
 alphabet-sequence
 ballcatch
 click_on_letter

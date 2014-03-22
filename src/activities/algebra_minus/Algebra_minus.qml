@@ -1,4 +1,4 @@
-/* GCompris - AlgebraBy.qml
+/* GCompris - Algebra_minus.qml
  *
  * Copyright (C) 2014 Aruna Sankaranarayanan and Bruno Coudoin
  *
@@ -28,7 +28,7 @@ import "../algebra_by/"
 Algebra{
 
     onStart:{
-        operand.text ="x"
+        operand.text = "-"
     }
 
 }
