@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/gcompris/src/activities/click_on_letter_up">
+        <file>ActivityInfo.qml</file>
+        <file>Click_on_letter_up.qml</file>
+        <file>click_on_letter_up.svg</file>
+    </qresource>
+</RCC>
