@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/gcompris/src/activities/click_on_letter">
+        <file>ActivityInfo.qml</file>
+        <file>Click_on_letter.qml</file>
+        <file>Carriage.qml</file>
+        <file>click_on_letter.js</file>
+        <file>click_on_letter.svg</file>
+        <file>resource/background.svgz</file>
+        <file>resource/engine.svgz</file>
+        <file>resource/carriage-on.png</file>
+        <file>resource/carriage-off.png</file>
+        <file>resource/cloud-off.png</file>
+        <file>resource/cloud-on.png</file>
+        <file>resource/levels-en.json</file>
+        <file>resource/levels-fr.json</file>
+    </qresource>
+</RCC>

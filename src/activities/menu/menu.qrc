@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/gcompris/src/activities/">
+        <file alias="activities.txt">../activities.txt</file>
+    </qresource>
+
+    <qresource prefix="/gcompris/src/activities/menu">
+        <file>ActivityInfo.qml</file>
+        <file>Menu.qml</file>
+        <file>resource/background.svgz</file>
+    </qresource>
+</RCC>

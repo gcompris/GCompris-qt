@@ -1,0 +1,45 @@
+<RCC>
+    <qresource prefix="/gcompris/src/activities/clickgame">
+        <file>ActivityInfo.qml</file>
+        <file>Clickgame.qml</file>
+        <file>clickgame.js</file>
+        <file>clickgame.svg</file>
+        <file>Fish.qml</file>
+        <file>resource/bubble.wav</file>
+        <file>resource/blueking2.png</file>
+        <file>resource/butfish.png</file>
+        <file>resource/cichlid1.png</file>
+        <file>resource/cichlid4.png</file>
+        <file>resource/collaris.png</file>
+        <file>resource/discus2.png</file>
+        <file>resource/discus3.png</file>
+        <file>resource/drip.wav</file>
+        <file>resource/f00.png</file>
+        <file>resource/f01.png</file>
+        <file>resource/f02.png</file>
+        <file>resource/f03.png</file>
+        <file>resource/f04.png</file>
+        <file>resource/f05.png</file>
+        <file>resource/f06.png</file>
+        <file>resource/f07.png</file>
+        <file>resource/f08.png</file>
+        <file>resource/f09.png</file>
+        <file>resource/f10.png</file>
+        <file>resource/f11.png</file>
+        <file>resource/f12.png</file>
+        <file>resource/f13.png</file>
+        <file>resource/manta.png</file>
+        <file>resource/newf1.png</file>
+        <file>resource/QueenAngel.png</file>
+        <file>resource/sea1.jpg</file>
+        <file>resource/sea2.jpg</file>
+        <file>resource/sea3.jpg</file>
+        <file>resource/sea4.jpg</file>
+        <file>resource/sea5.jpg</file>
+        <file>resource/sea6.jpg</file>
+        <file>resource/shark1.png</file>
+        <file>resource/six_barred.png</file>
+        <file>resource/teeth.png</file>
+        <file>resource/bubble.png</file>
+    </qresource>
+</RCC>

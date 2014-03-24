@@ -1,0 +1,44 @@
+<RCC>
+    <qresource prefix="/gcompris/src/activities/memory-sound">
+        <file>ActivityInfo.qml</file>
+        <file>Memory-sound.qml</file>
+        <file>memorysounddataset.js</file>
+        <file>memory-sound.svg</file>
+        <file>resource/gcompris_band.svgz</file>
+        <file>resource/guitar_melody.ogg</file>
+        <file>resource/guitar_son1.ogg</file>
+        <file>resource/guitar_son2.ogg</file>
+        <file>resource/guitar_son3.ogg</file>
+        <file>resource/guitar_son4.ogg</file>
+        <file>resource/LRApplauses_1_LA_cut.ogg</file>
+        <file>resource/LRBark_1_LA_cut.ogg</file>
+        <file>resource/LRBark_3_LA_cut.ogg</file>
+        <file>resource/LRBuddhist_gong_05_LA.ogg</file>
+        <file>resource/LRDoor_Open_2_LA.ogg</file>
+        <file>resource/LRFactory_noise_01_LA.ogg</file>
+        <file>resource/LRFactory_noise_02_LA.ogg</file>
+        <file>resource/LRFactory_noise_03_LA.ogg</file>
+        <file>resource/LRFactory_noise_04_LA.ogg</file>
+        <file>resource/LRFactory_noise_05_LA.ogg</file>
+        <file>resource/LRFactory_noise_06_LA.ogg</file>
+        <file>resource/LRFireballs_01_LA.ogg</file>
+        <file>resource/LRFrogsInPondDuringStormLACut.ogg</file>
+        <file>resource/LRHeart_beat_01_LA.ogg</file>
+        <file>resource/LRHits_01_LA.ogg</file>
+        <file>resource/LRLaPause_short.ogg</file>
+        <file>resource/LRObject_falling_01_LA.ogg</file>
+        <file>resource/LRObject_falling_02_LA.ogg</file>
+        <file>resource/LRRain_in_garden_01_LA_cut.ogg</file>
+        <file>resource/LRRing_01_LA.ogg</file>
+        <file>resource/LRStartAndStopCarEngine1LACut.ogg</file>
+        <file>resource/LRTrain_slowing_down_01_LA_cut.ogg</file>
+        <file>resource/LRWeird_1_LA.ogg</file>
+        <file>resource/LRWeird_2_LA.ogg</file>
+        <file>resource/LRWeird_3_LA.ogg</file>
+        <file>resource/LRWeird_4_LA.ogg</file>
+        <file>resource/LRWeird_5_LA.ogg</file>
+        <file>resource/LRWeird_6_LA.ogg</file>
+        <file>resource/Tux_mute.png</file>
+        <file>resource/Tux_play.png</file>
+    </qresource>
+</RCC>
