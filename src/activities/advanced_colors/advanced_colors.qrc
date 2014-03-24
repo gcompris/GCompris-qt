@@ -1,7 +1,7 @@
 <RCC>
     <qresource prefix="/gcompris/src/activities/advanced_colors">
         <file>ActivityInfo.qml</file>
-        <file>Advanced_colors.qml</file>
+        <file>AdvancedColors.qml</file>
         <file>advanced_colors.js</file>
         <file>advanced_colors.svg</file>
         <file>resource/absinthe_butterfly.svgz</file>

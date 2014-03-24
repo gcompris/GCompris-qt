@@ -1,7 +1,7 @@
 <RCC>
     <qresource prefix="/gcompris/src/activities/algebra_minus">
         <file>ActivityInfo.qml</file>
-        <file>Algebra_minus.qml</file>
+        <file>AlgebraMinus.qml</file>
         <file>algebra_minus.js</file>
         <file>algebra_minus.svg</file>
     </qresource>
