@@ -23,12 +23,13 @@
 .import QtQuick 2.0 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 4
+var numberOfLevel = 5
 var max = 8
 var index
 var difficulty = 0
 var answerIndex
 var items
+var number
 var images = ["apple.png",
               'cerise.png',
               'egg.png',
@@ -54,32 +55,54 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    number = Math.floor(Math.random() * 10000) % 8
-    index = getIndex(number)
-    setSample(index)
-    answerIndex = getIndex(number)
-    setAnswer(answerIndex)
+    setUp()
 }
-var sample = [[0,1,2,3,0,1,2,3],[0,1,2,3,3,1,2,0],[0,1,2,3,0,2,1,3],
-              [0,1,2,3,2,3,1,0],[0,1,2,3,4,0,1,2],[0,1,2,3,1,2,3,1],[0,1,2,3,1,0,0,1],[0,1,0,1,0,1,0,1]]
 
 //Add more cases to sample and differentiate arrange according to level of difficulty
 //Develop an algo to choose them accordingly for each level
-var number
 
-function getIndex(number){
+var sample = [[[0,1,0,1,0,1,0,1],[0,1,2,0,1,2,0,1],[0,1,2,3,0,1,2,3],[0,1,2,3,3,2,1,0]],//level1
+              [[0,1,2,3,1,0,0,1],[0,1,2,3,0,1,0,1],[0,1,2,3,1,2,1,2],[0,1,2,3,2,3,2,3]],//2
+              [[0,1,2,3,0,1,2,0],[0,1,2,3,1,2,3,1],[0,1,2,3,2,1,3,1],[0,1,2,3,3,1,2,1]],//3
+              [[0,1,2,3,1,2,3,0],[0,1,2,3,2,3,0,1],[0,1,2,3,3,0,1,2],[0,1,2,3,4,0,1,2]],//4
+              [[0,1,2,3,3,1,2,0],[0,1,2,3,0,2,1,3],[0,1,2,3,2,3,1,0],[0,1,2,3,2,1,3,0]]]//5
+
+
+function setUp(){
+    number = Math.floor(Math.random() * 10000) % 4
+
+    index = getIndex(number, currentLevel)
+    console.log("Sample:",index)
+    setSample(index)
+
+    answerIndex = getIndex(number, currentLevel)
+    console.log("Answer:", answerIndex)
+    setAnswer(answerIndex)
+}
+
+
+function getSetLength(list){
+    //used to determine how many unique images are required for a sample
+    var count = []
+    for(var i=0; i<list.length;i++){
+        if(!(list[i] in count)){
+            count.push(list[i])
+        }
+    }
+    return count.length
+}
+
+function getIndex(number, level){
 // Returns a set of indices that is used to set either the Sample algorithm or the Answer tray
-
-    var x = []
-    for(var i=0;i<4;i++){
-        x.push((Math.floor(Math.random()*10000)) % 8)
+    var index = []
+    var setLength = getSetLength(sample[level][number])
+    for(var i=0;i<setLength;i++){
+        index.push((Math.floor(Math.random()*10000)) % 8)
     }
-    for(var i=4;i<max;i++){
-        x.push(x[sample[number][i]])
-
+    for(var i=setLength;i<max;i++){
+        index.push(index[sample[level][number][i]])
     }
-    console.log(x)
-    return x
+    return index
 }
 
 function setSample(indices){
@@ -106,43 +129,66 @@ function setAnswer(indices){
     items.answerTray.visible7 =  false
     items.answerTray.visible8 = false
 }
-var count = 5
-var times = 0
-function clickHandler(id){
-    var str = (answerIndex[count]+1).toString()
-    if(id == ('img'+str)){
-        count++;
+
+
+var choiceCount = 5 //game is won when choiceCount = 8
+var times = 0 // level increases when times = 3
+
+//The audio part does not work as expected
+
+function playSound(id){
+    if(id == "brick"){
+        items.brick.play()
+    }
+    else if(id == "bleep"){
         items.bleep.play()
-        if(count == 6){
+    }
+}
+
+function clickHandler(id){
+    var str = (answerIndex[choiceCount]+1).toString()
+
+    if(id == ('img'+str)){//correct answer
+
+        choiceCount++;
+        playSound('bleep')
+        console.log("That was right.")
+        if(choiceCount == 6){//1st answer
             items.answerTray.src6 = url+images[str-1]
             items.answerTray.src7 = url+images[8]
             items.answerTray.visible7 = true
         }
-        if(count == 7){
+
+        if(choiceCount == 7){//2nd answer
             items.answerTray.src7 = url+images[str-1]
             items.answerTray.src8 = url+images[8]
             items.answerTray.visible8 = true
         }
-        if(count == 8){
+
+        if(choiceCount == 8){//3rd answer
             items.answerTray.src8 = url+images[str-1]
-            // Make something graphical happen here
-            count = 5
+            choiceCount = 5
             times++
-            initLevel()
-            if(times == 3){
-                nextLevel()
+
+            if(times == 3){//increment level after 3 successful games
+                items.bonus.good("tux")
+            }
+            else{
+                console.log("Repeat level.")
+                items.bonus.good("flower")
+                items.bonus.isWin = false
+                setUp()
             }
         }
-
     }
-    else{
-        // Make something graphical happen here
-        items.brick.play()
+    else{//Wrong answer, try again
+        console.log("That was wrong.")
+        playSound('brick')
     }
-
 }
 
 function nextLevel() {
+    console.log("Next level.")
     if(numberOfLevel <= ++currentLevel ) {
         currentLevel = 0
     }

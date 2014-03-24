@@ -23,6 +23,7 @@ import QtQuick 2.1
 import QtMultimedia 5.0
 import GCompris 1.0
 import QtQuick.Controls 1.0
+import QtQuick.Particles 2.0
 import "qrc:/gcompris/src/core"
 import "algorithm.js" as Activity
 
@@ -51,28 +52,30 @@ ActivityBase {
             property alias algoTray: algoTray
             property alias answerTray: answerTray
             property alias choiceTray: choiceTray
-            property alias background: background
-            property alias bar: bar
             property alias brick: brick
             property alias bleep: bleep
+            property alias background: background
+            property alias bar: bar
             property alias bonus: bonus
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Rect{
+        Rect {
             id: algoTray
             x: parent.width/6
             y: parent.height/15
             visible: true
         }
-        Rect{
+
+        Rect {
             id: answerTray
             x: parent.width/6
             y: parent.height/4 + 8
         }
-        RectHighlight{
+
+        RectHighlight {
             id: choiceTray
             x: parent.width/6
             y: 3*parent.height/4 - 10
@@ -80,9 +83,10 @@ ActivityBase {
 
         Audio {
             id:brick
-            source: "qrc:/gcompris/src/activities/algorithm/resource/brick.wav"
+            source:"qrc:/gcompris/src/activities/algorithm/resource/brick.wav"
             onError: console.log("brick play error: " + errorString)
         }
+
         Audio {
             id:bleep
             source: "qrc:/gcompris/src/activities/algorithm/resource/bleep.wav"

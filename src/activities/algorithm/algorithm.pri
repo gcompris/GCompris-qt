@@ -16,8 +16,10 @@ APP_FILES += \
         $$PWD/resource/scenery5_background.png \
         $$PWD/resource/strawberry.png \
         $$PWD/resource/question_mark.png \
+        $$PWD/resource/tux_good.png \
         $$PWD/resource/brick.wav \
         $$PWD/resource/bleep.wav \
+        $$PWD/resource/brick1.wav \
 
 OTHER_FILES += \
     src/activities/algorithm/Rect.qml \

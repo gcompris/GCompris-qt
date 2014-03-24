@@ -1,6 +1,8 @@
 import QtQuick 2.0
 import "algorithm.js" as Activity
-
+import QtMultimedia 5.0
+import QtQuick.Particles 2.0
+import "qrc:/gcompris/src/core"
 Rectangle{
     id: sampleTray
     height: parent.height/8
@@ -31,11 +33,14 @@ Rectangle{
                 anchors.fill: parent
                 onEntered: rect1.opacity = 0.5
                 onExited: rect1.opacity = 0
-                onClicked: Activity.clickHandler('img1')
+                onClicked: {Activity.clickHandler('img1');particle1.emitter.burst(20)}
             }
-
         }
+            ParticleSystemStar{
+                id: particle1
+            }
     }
+
     Image{
         id: img2
         source: sampleTray.src2
@@ -54,11 +59,15 @@ Rectangle{
                 anchors.fill: parent
                 onEntered: rect2.opacity = 0.5
                 onExited: rect2.opacity = 0
-                onClicked: Activity.clickHandler('img2')
+                onClicked: {Activity.clickHandler('img2');particle2.emitter.burst(20)}
             }
 
         }
+        ParticleSystemStar{
+            id: particle2
+        }
     }
+
     Image{
         id: img3
         source: sampleTray.src3
@@ -77,11 +86,15 @@ Rectangle{
                 anchors.fill: parent
                 onEntered: rect3.opacity = 0.5
                 onExited: rect3.opacity = 0
-                onClicked: Activity.clickHandler('img3')
+                onClicked: {Activity.clickHandler('img3');particle3.emitter.burst(20)}
             }
 
         }
+        ParticleSystemStar{
+            id: particle3
+        }
     }
+
     Image{
         id: img4
         source: sampleTray.src4
@@ -100,11 +113,15 @@ Rectangle{
                 anchors.fill: parent
                 onEntered: rect4.opacity = 0.5
                 onExited: rect4.opacity = 0
-                onClicked: Activity.clickHandler('img4')
+                onClicked: {Activity.clickHandler('img4');particle4.emitter.burst(20)}
             }
 
         }
+        ParticleSystemStar{
+            id: particle4
+        }
     }
+
     Image{
         id: img5
         source: sampleTray.src5
@@ -123,11 +140,15 @@ Rectangle{
                 anchors.fill: parent
                 onEntered: rect5.opacity = 0.5
                 onExited: rect5.opacity = 0
-                onClicked: Activity.clickHandler('img5')
+                onClicked: {Activity.clickHandler('img5');particle5.emitter.burst(20)}
             }
 
         }
+        ParticleSystemStar{
+            id: particle5
+        }
     }
+
     Image{
         id: img6
         source: sampleTray.src6
@@ -146,11 +167,15 @@ Rectangle{
                 anchors.fill: parent
                 onEntered: rect6.opacity = 0.5
                 onExited: rect6.opacity = 0
-                onClicked: Activity.clickHandler('img6')
+                onClicked: {Activity.clickHandler('img6');particle6.emitter.burst(20)}
             }
 
         }
+        ParticleSystemStar{
+            id: particle6
+        }
     }
+
     Image{
         id: img7
         source: sampleTray.src7
@@ -169,11 +194,15 @@ Rectangle{
                 anchors.fill: parent
                 onEntered: rect7.opacity = 0.5
                 onExited: rect7.opacity = 0
-                onClicked: Activity.clickHandler('img7')
+                onClicked: {Activity.clickHandler('img7');particle7.emitter.burst(20)}
             }
 
         }
+        ParticleSystemStar{
+            id: particle7
+        }
     }
+
     Image{
         id: img8
         source: sampleTray.src8
@@ -192,10 +221,12 @@ Rectangle{
                 anchors.fill: parent
                 onEntered: rect8.opacity = 0.5
                 onExited: rect8.opacity = 0
-                onClicked: Activity.clickHandler('img8')
+                onClicked: {Activity.clickHandler('img8');particle8.emitter.burst(20)}
             }
 
         }
+        ParticleSystemStar{
+            id: particle8
+        }
     }
-
 }

@@ -22,8 +22,8 @@ Rectangle{
         visible: true
         height: parent.height
         width: parent.width/9
-
     }
+
     Image{
         id: img2
         source: sampleTray.src2
@@ -33,6 +33,7 @@ Rectangle{
         anchors.left: img1.right
         anchors.leftMargin: 10
     }
+
     Image{
         id: img3
         source: sampleTray.src3
@@ -42,6 +43,7 @@ Rectangle{
         anchors.left: img2.right
         anchors.leftMargin: 10
     }
+
     Image{
         id: img4
         source: sampleTray.src4
@@ -51,6 +53,7 @@ Rectangle{
         anchors.left: img3.right
         anchors.leftMargin: 10
     }
+
     Image{
         id: img5
         source: sampleTray.src5
@@ -60,6 +63,7 @@ Rectangle{
         anchors.left: img4.right
         anchors.leftMargin: 10
     }
+
     Image{
         id: img6
         source: sampleTray.src6
@@ -69,6 +73,7 @@ Rectangle{
         anchors.left: img5.right
         anchors.leftMargin: 10
     }
+
     Image{
         id: img7
         source: sampleTray.src7
@@ -78,6 +83,7 @@ Rectangle{
         anchors.left: img6.right
         anchors.leftMargin: 10
     }
+
     Image{
         id: img8
         source: sampleTray.src8
@@ -87,5 +93,4 @@ Rectangle{
         anchors.left: img7.right
         anchors.leftMargin: 10
     }
-
 }
