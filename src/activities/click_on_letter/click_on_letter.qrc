@@ -1,7 +1,7 @@
 <RCC>
     <qresource prefix="/gcompris/src/activities/click_on_letter">
         <file>ActivityInfo.qml</file>
-        <file>Click_on_letter.qml</file>
+        <file>ClickOnLetter.qml</file>
         <file>Carriage.qml</file>
         <file>click_on_letter.js</file>
         <file>click_on_letter.svg</file>
