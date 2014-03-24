@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/gcompris/src/activities/memory-math-minus">
+        <file>ActivityInfo.qml</file>
+        <file>Memory-math-minus.qml</file>
+        <file>memory-minusdataset.js</file>
+        <file>memory-math-minus.svg</file>
+    </qresource>
+</RCC>

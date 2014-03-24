@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/gcompris/src/activities/alphabet-sequence">
+        <file>ActivityInfo.qml</file>
+        <file>AlphabetSequence.qml</file>
+        <file>alphabet-sequence.svg</file>
+    </qresource>
+</RCC>
