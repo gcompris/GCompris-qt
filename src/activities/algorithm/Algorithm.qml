@@ -49,7 +49,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property alias algoTray: algoTray
+            property alias questionTray: questionTray
             property alias answerTray: answerTray
             property alias choiceTray: choiceTray
             property alias brick: brick
@@ -63,7 +63,7 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         Rect {
-            id: algoTray
+            id: questionTray
             x: parent.width/6
             y: parent.height/15
             visible: true

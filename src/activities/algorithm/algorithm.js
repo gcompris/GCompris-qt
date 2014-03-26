@@ -22,11 +22,45 @@
 .pragma library
 .import QtQuick 2.0 as Quick
 
+/*
+
+functions :-
+
+setUp() - the function is called to set the basic game layout each time (questionTray, answerTray)
+getSetLength() - returns the number of unique indices in the chosen sample
+getIndex() - returns a random array of length 8 that is based on the chosen sample
+setQuestion() - the function is called to set questionTray
+setAnswer() - the function is called to set answerTray
+playSound() - the function used to play audio brick and bleep
+clickHandler() - called to handle click event
+
+variables :-
+
+sample - this array has an array of arrays for each level
+choiceCount (int) - initialised with the value 5 and the game is won when choiceCount is 8
+times (int) - initialised with 0 level increases when times is 3
+
+Example 1:
+sample: [0,1,0,1,0,1,0,1]
+getSetLength() output - 2
+getIndex() sample output - [6,7,6,7,6,7,6,7]
+
+Example 2:
+sample: [0,1,2,0,1,2,0,1]
+getSetLength() output - 3
+getIndex() sample output - [3,5,7,3,5,7,3,5]
+
+Example 3:
+sample: [0,1,2,3,3,2,1,0]
+getSetLength() output - 4
+getIndex() sample output - [1,3,2,5,5,2,3,1]
+
+*/
+
 var currentLevel = 0
 var numberOfLevel = 5
 var max = 8
 var index
-var difficulty = 0
 var answerIndex
 var items
 var number
@@ -73,7 +107,7 @@ function setUp(){
 
     index = getIndex(number, currentLevel)
     console.log("Sample:",index)
-    setSample(index)
+    setQuestion(index)
 
     answerIndex = getIndex(number, currentLevel)
     console.log("Answer:", answerIndex)
@@ -105,17 +139,17 @@ function getIndex(number, level){
     return index
 }
 
-function setSample(indices){
-// The source of algoTray is changed to reflect the chosen set of random indices
+function setQuestion(indices){
+// The source of questionTray is changed to reflect the chosen set of random indices
 
-    items.algoTray.src1 = url+images[indices[0]]
-    items.algoTray.src2 = url+images[indices[1]]
-    items.algoTray.src3 = url+images[indices[2]]
-    items.algoTray.src4 = url+images[indices[3]]
-    items.algoTray.src5 = url+images[indices[4]]
-    items.algoTray.src6 = url+images[indices[5]]
-    items.algoTray.src7 = url+images[indices[6]]
-    items.algoTray.src8 = url+images[indices[7]]
+    items.questionTray.src1 = url+images[indices[0]]
+    items.questionTray.src2 = url+images[indices[1]]
+    items.questionTray.src3 = url+images[indices[2]]
+    items.questionTray.src4 = url+images[indices[3]]
+    items.questionTray.src5 = url+images[indices[4]]
+    items.questionTray.src6 = url+images[indices[5]]
+    items.questionTray.src7 = url+images[indices[6]]
+    items.questionTray.src8 = url+images[indices[7]]
 }
 
 function setAnswer(indices){
