@@ -27,9 +27,8 @@ APP_FILES += \
 	$$PWD/NumPad.qml \
 	$$PWD/ParticleSystemStar.qml \
 	$$PWD/ReadyButton.qml \
-	$$PWD/Score.qml
-
-
+	$$PWD/Score.qml \
+	$$PWD/Wordlist.qml
 
 APP_FILES += \
 	$$PWD/resource/bar_about.svgz \
