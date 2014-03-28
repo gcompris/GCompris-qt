@@ -71,5 +71,6 @@ APP_FILES += \
 
 APP_FILES += \
 	$$PWD/resource/sounds/bonus.wav \
-	$$PWD/resource/sounds/crash.wav
+	$$PWD/resource/sounds/crash.wav \
+	$$PWD/resource/sounds/flip.wav
 
