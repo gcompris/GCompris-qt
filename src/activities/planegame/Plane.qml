@@ -51,6 +51,10 @@ Image {
             name: "play"
             PropertyChanges {
                 target: plane
+                x: 20
+                y: parent.height / 2 - plane.height / 2
+                velocityX: 200
+                velocityY: 200
                 height: sourceSize.height * (1.0 - 0.5 * Activity.currentLevel / 10)
             }
         }
@@ -58,64 +62,27 @@ Image {
 
     Behavior on x {
         SmoothedAnimation {
-            velocity: Math.abs(velocityX) * ApplicationInfo.ratio
+            velocity: velocityX * ApplicationInfo.ratio
             reversingMode: SmoothedAnimation.Immediate
         }
     }
     Behavior on y {
         SmoothedAnimation {
-            velocity: Math.abs(velocityY) * ApplicationInfo.ratio
+            velocity: velocityY * ApplicationInfo.ratio
             reversingMode: SmoothedAnimation.Immediate
         }
     }
     Behavior on height { PropertyAnimation { duration: 100 } }
-
-    onVelocityXChanged: {
-        if(plane.state == "play") {
-            if(rotate.angle == 0 && velocityX < 0)
-                rotation = velocityX * 15 / Activity.max_velocity
-            else
-                rotation = Math.abs(velocityX) * 15 / Activity.max_velocity
-        }
-    }
-
-    transform: Rotation {
-        id: rotate
-        origin { x: width / 2; y: 0 }
-        axis { x: 0; y: 1; z: 0 }
-        angle: plane.velocityX >= -200 ? 0 : 180
-
-        Behavior on angle { PropertyAnimation { duration: 400 } }
-    }
-
-    transitions: Transition {
-        RotationAnimation {
-            duration: 200;
-            direction: RotationAnimation.Shortest
-        }
-    }
+    Behavior on rotation { PropertyAnimation { duration: 100 } }
 
     MultiPointTouchArea {
         anchors.fill: parent
         touchPoints: [ TouchPoint { id: point1 } ]
 
         onReleased: {
-            var pStart = plane.mapFromItem(null, point1.startX, point1.startY)
-            var pEnd = plane.mapFromItem(null, point1.x, point1.y)
-            velocityX = (pEnd.x - pStart.x) / ApplicationInfo.ratio
-            if(velocityX > 0)
-                velocityX = Math.min(velocityX, Activity.max_velocity)
-            else if(velocityX < 0)
-                velocityX = Math.max(velocityX, -Activity.max_velocity)
-
-            velocityY = (pEnd.y - pStart.y) / ApplicationInfo.ratio
-            if(velocityY > 0)
-                velocityY = Math.min(velocityY, Activity.max_velocity)
-            else if(velocityY < 0)
-                velocityY = Math.max(velocityY, -Activity.max_velocity)
-
-            if(Math.abs(velocityX) < 10) velocityX = 0
-            if(Math.abs(velocityY) < 10) velocityY = 0
+            var point = plane.mapToItem(null, point1.x, point1.y)
+            plane.x = point.x - plane.width / 2
+            plane.y = point.y - plane.height / 2
         }
     }
 }

@@ -113,8 +113,8 @@ ActivityBase {
                 if(movePlaneTimerCounter++ % 3 == 0) {
                     /* Do not call this too often or plane commands are too hard */
                     Activity.handleCollisionsWithCloud();
-                    Activity.computeVelocity();
                 }
+                Activity.computeVelocity();
                 Activity.planeMove();
             }
         }
