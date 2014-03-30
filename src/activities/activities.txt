@@ -13,7 +13,7 @@ erase_clic
 hexagon
 instruments
 leftright
-memoryonItemAdded(int index, Item item)
+memory
 memory-math-add
 memory-math-mult
 memory-math-div
@@ -23,6 +23,4 @@ memory-math-mult-div
 memory-sound
 planegame
 memory-math-add-minus-mult-div
-brat197
-algorithm
-Quiz
+
