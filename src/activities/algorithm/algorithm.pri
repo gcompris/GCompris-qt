@@ -2,8 +2,6 @@
 APP_FILES += \
 	$$PWD/ActivityInfo.qml \
         $$PWD/Algorithm.qml \
-        $$PWD/Rect.qml \
-        $$PWD/RectHighlight.qml \
 	$$PWD/algorithm.js \
         $$PWD/algorithm.svg \
         $$PWD/resource/apple.png \
@@ -21,6 +19,4 @@ APP_FILES += \
         $$PWD/resource/bleep.wav \
         $$PWD/resource/brick1.wav \
 
-OTHER_FILES += \
-    src/activities/algorithm/Rect.qml \
-    src/activities/algorithm/RectHighlight.qml \
+OTHER_FILES +=

@@ -64,15 +64,15 @@ var index
 var answerIndex
 var items
 var number
-var images = ["apple.png",
-              'cerise.png',
-              'egg.png',
-              'eggpot.png',
-              'football.png',
-              'glass.png',
-              'peer.png',
-              'strawberry.png',
-              'question_mark.png'
+var images = ["apple",
+              'cerise',
+              'egg',
+              'eggpot',
+              'football',
+              'glass',
+              'peer',
+              'strawberry',
+              'question_mark'
 ]
 var url = "qrc:/gcompris/src/activities/algorithm/resource/"
 
@@ -129,6 +129,7 @@ function getSetLength(list){
 function getIndex(number, level){
 // Returns a set of indices that is used to set either the Sample algorithm or the Answer tray
     var index = []
+    var imageNames = []
     var setLength = getSetLength(sample[level][number])
     for(var i=0;i<setLength;i++){
         index.push((Math.floor(Math.random()*10000)) % 8)
@@ -136,32 +137,26 @@ function getIndex(number, level){
     for(var i=setLength;i<max;i++){
         index.push(index[sample[level][number][i]])
     }
-    return index
+    for(var i=0; i<index.length; i++){
+        imageNames.push(images[index[i]])
+    }
+    return imageNames
 }
 
 function setQuestion(indices){
 // The source of questionTray is changed to reflect the chosen set of random indices
-
-    items.questionTray.src1 = url+images[indices[0]]
-    items.questionTray.src2 = url+images[indices[1]]
-    items.questionTray.src3 = url+images[indices[2]]
-    items.questionTray.src4 = url+images[indices[3]]
-    items.questionTray.src5 = url+images[indices[4]]
-    items.questionTray.src6 = url+images[indices[5]]
-    items.questionTray.src7 = url+images[indices[6]]
-    items.questionTray.src8 = url+images[indices[7]]
+    items.question.model = indices
 }
 
 function setAnswer(indices){
-// The first 5 images of answerTray are set, the 6th is a question mark and the other two images are not visible
-    items.answerTray.src1 = url+images[indices[0]]
-    items.answerTray.src2 = url+images[indices[1]]
-    items.answerTray.src3 = url+images[indices[2]]
-    items.answerTray.src4 = url+images[indices[3]]
-    items.answerTray.src5 = url+images[indices[4]]
-    items.answerTray.src6 = url+images[8]
-    items.answerTray.visible7 =  false
-    items.answerTray.visible8 = false
+// The first 5 images of answerTray are set and the 6th is a question mark
+
+    var tempIndex = []
+    for(var i=0; i<5; i++){
+        tempIndex.push(indices[i])
+    }
+    tempIndex.push('question_mark')
+    items.answer.model = tempIndex
 }
 
 
@@ -180,30 +175,25 @@ function playSound(id){
 }
 
 function clickHandler(id){
-    var str = (answerIndex[choiceCount]+1).toString()
+    var tempIndex = []
 
-    if(id == ('img'+str)){//correct answer
+    if(id == answerIndex[choiceCount]){//correct answer
 
+        tempIndex = items.answer.model
         choiceCount++;
         playSound('bleep')
         console.log("That was right.")
-        if(choiceCount == 6){//1st answer
-            items.answerTray.src6 = url+images[str-1]
-            items.answerTray.src7 = url+images[8]
-            items.answerTray.visible7 = true
+
+        if(choiceCount < 8){
+            tempIndex.push('question_mark')
         }
 
-        if(choiceCount == 7){//2nd answer
-            items.answerTray.src7 = url+images[str-1]
-            items.answerTray.src8 = url+images[8]
-            items.answerTray.visible8 = true
-        }
+        tempIndex[choiceCount - 1] = answerIndex[choiceCount - 1]
+        items.answer.model = tempIndex
 
-        if(choiceCount == 8){//3rd answer
-            items.answerTray.src8 = url+images[str-1]
+        if(choiceCount == 8){
             choiceCount = 5
             times++
-
             if(times == 3){//increment level after 3 successful games
                 items.bonus.good("tux")
             }
@@ -215,6 +205,7 @@ function clickHandler(id){
             }
         }
     }
+
     else{//Wrong answer, try again
         console.log("That was wrong.")
         playSound('brick')

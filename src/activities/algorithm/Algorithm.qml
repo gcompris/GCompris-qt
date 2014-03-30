@@ -19,7 +19,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.1
+import QtQuick 2.2
 import QtMultimedia 5.0
 import GCompris 1.0
 import QtQuick.Controls 1.0
@@ -52,6 +52,9 @@ ActivityBase {
             property alias questionTray: questionTray
             property alias answerTray: answerTray
             property alias choiceTray: choiceTray
+            property alias question: question
+            property alias answer: answer
+            property alias choice: choice
             property alias brick: brick
             property alias bleep: bleep
             property alias background: background
@@ -62,23 +65,87 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Rect {
+        Rectangle{
             id: questionTray
+            height: parent.height/8
+            width: parent.width - parent.width/3
             x: parent.width/6
             y: parent.height/15
-            visible: true
+            color: "transparent"
+            Row{
+                anchors.fill: parent
+                spacing: 10
+                Repeater{
+                    id: question
+                    Image{
+                        source: "qrc:/gcompris/src/activities/algorithm/resource/"+modelData+'.png'
+                        visible: true
+                        height: questionTray.height
+                        width: questionTray.width/9
+                    }
+                }
+            }
         }
 
-        Rect {
+        Rectangle{
             id: answerTray
+            height: parent.height/8
+            width: parent.width - parent.width/3
             x: parent.width/6
             y: parent.height/4 + 8
+            color: "transparent"
+            Row{
+                anchors.fill: parent
+                spacing: 10
+                Repeater{
+                    id: answer
+                    Image{
+                        source: "qrc:/gcompris/src/activities/algorithm/resource/"+modelData+'.png'
+                        visible: true
+                        height: answerTray.height
+                        width: answerTray.width/9
+                    }
+                }
+            }
         }
 
-        RectHighlight {
+        Rectangle{
             id: choiceTray
+            height: parent.height/8
+            width: parent.width - parent.width/3
             x: parent.width/6
             y: 3*parent.height/4 - 10
+            color: "transparent"
+            Row{
+                anchors.fill: parent
+                spacing: 10
+                Repeater{
+                    id: choice
+                    model: ["apple",'cerise','egg','eggpot','football','glass','peer','strawberry']
+                    Image{
+                        source: "qrc:/gcompris/src/activities/algorithm/resource/"+modelData+'.png'
+                        visible: true
+                        height: choiceTray.height
+                        width: choiceTray.width/9
+                        Rectangle{
+                            color: "red"
+                            anchors.fill: parent
+                            opacity: 0
+                            radius: 10.0
+                            MouseArea{
+                                hoverEnabled: true
+                                anchors.fill: parent
+                                onEntered: parent.opacity = 0.5
+                                onExited: parent.opacity = 0
+                                onClicked: {Activity.clickHandler(modelData);particle.emitter.burst(20)}
+                            }
+                        }
+                        ParticleSystemStar{
+                            id: particle
+                        }
+                    }
+                }
+            }
         }
 
         Audio {

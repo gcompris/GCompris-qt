@@ -13,7 +13,7 @@ erase_clic
 hexagon
 instruments
 leftright
-memory
+memoryonItemAdded(int index, Item item)
 memory-math-add
 memory-math-mult
 memory-math-div
