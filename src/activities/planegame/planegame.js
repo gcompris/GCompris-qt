@@ -199,87 +199,56 @@ function processReleasedKey(event) {
     }
 }
 
-var VELOCITY_STEP = 50
-function increaseVelocityX() {
-    if(items.plane.velocityX < max_velocity)
-        items.plane.velocityX += VELOCITY_STEP;
-}
-
-function decreaseVelocityX() {
-    if(items.plane.velocityX > -max_velocity)
-        items.plane.velocityX -= VELOCITY_STEP;
-}
-
-function increaseVelocityY() {
-    if(items.plane.velocityY < max_velocity)
-        items.plane.velocityY += VELOCITY_STEP;
-}
-
-function decreaseVelocityY() {
-    if(items.plane.velocityY > - max_velocity)
-        items.plane.velocityY -= VELOCITY_STEP;
-}
+var speedX = 0
+var speedY = 0
+var speedFactor = 20
 
 function computeVelocity() {
-    if(rightPressed) {
-        increaseVelocityX()
-    }
-    if(leftPressed) {
-        decreaseVelocityX()
-    }
-    if(upPressed) {
-        decreaseVelocityY()
-    }
-    if(downPressed) {
-        increaseVelocityY()
-    }
 
-    if(!rightPressed && !leftPressed && !upPressed && !downPressed) {
-        // Speed auto decreasing
-        if(items.plane.velocityX > 10)
-            items.plane.velocityX -= 10
-        else if(items.plane.velocityX < -10)
-            items.plane.velocityX += 10
-        else
-            items.plane.velocityX = 0
+    if(rightPressed && speedX < 300)
+        speedX += speedFactor
 
-        if(items.plane.velocityY > 10)
-            items.plane.velocityY -= 10
-        else if(items.plane.velocityY < -10)
-            items.plane.velocityY += 10
-        else
-            items.plane.velocityY = 0
-    }
+    if(leftPressed && speedX > -300)
+        speedX -= speedFactor
+
+    if(!rightPressed && speedX > 0)
+        speedX = 0
+    else if(!leftPressed && speedX < 0)
+        speedX = 0
+    else if(leftPressed || rightPressed)
+        items.plane.x += speedX
+
+    if(upPressed && speedY > -300)
+        speedY -= speedFactor
+    if(downPressed && speedY < 300)
+        speedY += speedFactor
+
+    if(!upPressed && speedY < 0)
+        speedY = 0
+    else if(!downPressed && speedY > 0)
+        speedY = 0
+    else if(upPressed || downPressed)
+        items.plane.y += speedY
+
+    items.plane.rotation = speedX * 10 / max_velocity
 }
 
 /* We move x/y of the plane to let its smooth animation track it */
 function planeMove() {
 
-    if(items.plane.x + items.plane.width > items.background.width &&
-            items.plane.velocityX > 0) {
-        items.plane.velocityX = 0;
+    if(items.plane.x + items.plane.width > items.background.width) {
+        items.plane.x = items.background.width - items.plane.width;
     }
-    if(items.plane.x < 0 && items.plane.velocityX < 0) {
-        items.plane.velocityX = 0;
+    if(items.plane.x < 0) {
+        items.plane.x = 0;
     }
-    if(items.plane.velocityX)
-        if(items.plane.velocityX > 0)
-            items.plane.x += 10
-        else
-            items.plane.x -= 10
 
-    if(items.plane.y < 0 && items.plane.velocityY < 0) {
-        items.plane.velocityY = 0;
+    if(items.plane.y < 0) {
+        items.plane.y = 0;
     }
-    if(items.plane.y + items.plane.height > items.background.height &&
-            items.plane.velocityY > 0) {
-        items.plane.velocityY = 0;
+    if(items.plane.y + items.plane.height > items.background.height) {
+        items.plane.y = items.background.height - items.plane.height;
     }
-    if(items.plane.velocityY)
-        if(items.plane.velocityY > 0)
-            items.plane.y += 10
-        else
-            items.plane.y -= 10
 
 }
 
