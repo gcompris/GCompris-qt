@@ -13,6 +13,7 @@ colors
 erase
 erase_2clic
 erase_clic
+gletters
 hexagon
 instruments
 leftright
