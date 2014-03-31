@@ -71,8 +71,7 @@ var images = ["apple",
               'orange',
               'pear',
               'pineapple',
-              'plum',
-              'question_mark']
+              'plum']
 var url = "qrc:/gcompris/src/activities/algorithm/resource/"
 
 function start(items_) {
@@ -91,8 +90,8 @@ function initLevel() {
     setUp()
 }
 
-//Add more cases to sample and differentiate arrange according to level of difficulty
-//Develop an algo to choose them accordingly for each level
+// Add more cases to sample and differentiate arrange according to level of difficulty
+// Develop an algo to choose them accordingly for each level
 
 var sample = [[[0,1,0,1,0,1,0,1],[0,1,2,0,1,2,0,1],[0,1,2,3,0,1,2,3],[0,1,2,3,3,2,1,0]],//level1
               [[0,1,2,3,1,0,0,1],[0,1,2,3,0,1,0,1],[0,1,2,3,1,2,1,2],[0,1,2,3,2,3,2,3]],//2
@@ -115,41 +114,43 @@ function setUp(){
 function getSetLength(list){
     //used to determine how many unique images are required for a sample
     var count = []
-    for(var i=0; i<list.length;i++){
-        if(!(list[i] in count)){
+    for(var i=0; i<list.length;i++) {
+        if(!(list[i] in count)) {
             count.push(list[i])
         }
     }
     return count.length
 }
 
-function getIndex(number, level){
-// Returns a set of indices that is used to set either the Sample algorithm or the Answer tray
+// Returns a set of indices that is used to set
+// either the Sample algorithm or the Answer tray
+function getIndex(number, level) {
     var index = []
     var imageNames = []
     var setLength = getSetLength(sample[level][number])
-    for(var i=0;i<setLength;i++){
+    for(var i=0; i < setLength; i++) {
         index.push((Math.floor(Math.random()*10000)) % 8)
     }
-    for(var i=setLength;i<max;i++){
+    for(var i=setLength; i < max; i++) {
         index.push(index[sample[level][number][i]])
     }
-    for(var i=0; i<index.length; i++){
+    for(var i=0; i < index.length; i++) {
         imageNames.push(images[index[i]])
     }
     return imageNames
 }
 
+// The source of questionTray is changed to reflect the chosen
+// set of random indices
 function setQuestion(indices){
-// The source of questionTray is changed to reflect the chosen set of random indices
     items.question.model = indices
 }
 
-function setAnswer(indices){
 // The first 5 images of answerTray are set and the 6th is a question mark
+function setAnswer(indices){
 
     var tempIndex = []
-    for(var i=0; i<5; i++){
+    for(var i=0; i < 5; i++) {
         tempIndex.push(indices[i])
     }
     tempIndex.push('question_mark')
@@ -160,21 +161,17 @@ function setAnswer(indices){
 var choiceCount = 5 //game is won when choiceCount = 8
 var times = 0 // level increases when times = 3
 
-//The audio part does not work as expected
+// The audio part does not work as expected
 
-function playSound(id){
-    if(id == "brick"){
-        items.brick.play()
-    }
-    else if(id == "bleep"){
-        items.bleep.play()
-    }
+function playSound(id) {
+    items.audio.source = "qrc:/gcompris/src/core/resource/sounds/" + id + ".wav"
+    items.audio.play()
 }
 
 function clickHandler(id){
     var tempIndex = []
 
-    if(id == answerIndex[choiceCount]){//correct answer
+    if(id === answerIndex[choiceCount]) { //correct answer
         tempIndex = items.answer.model
         choiceCount++;
         playSound('bleep')
@@ -189,19 +186,16 @@ function clickHandler(id){
         if(choiceCount == 8){
             choiceCount = 5
             times++
-            if(times == 3){//increment level after 3 successful games
+            if(times == 3) { // increment level after 3 successful games
                 items.bonus.good("tux")
-            }
-            else{
+            } else {
                 items.bonus.good("flower")
                 items.bonus.isWin = false
                 setUp()
             }
         }
         return 1
-    }
-
-    else{//Wrong answer, try again
+    } else { // Wrong answer, try again
         playSound('brick')
     }
 }

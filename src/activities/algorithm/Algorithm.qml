@@ -22,8 +22,6 @@
 import QtQuick 2.2
 import QtMultimedia 5.0
 import GCompris 1.0
-import QtQuick.Controls 1.0
-import QtQuick.Particles 2.0
 import "qrc:/gcompris/src/core"
 import "algorithm.js" as Activity
 
@@ -55,8 +53,7 @@ ActivityBase {
             property alias question: question
             property alias answer: answer
             property alias choice: choice
-            property alias brick: brick
-            property alias bleep: bleep
+            property alias audio: audio
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
@@ -65,28 +62,25 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Rectangle{
+        Rectangle {
             id: questionTray
-            height: parent.height/8
-            width: parent.width - parent.width/3
-            x: parent.width/6
-            y: parent.height/15
-            color: "transparent"
-            Rectangle{
-                color: "transparent"
-                anchors.fill: parent
-                border.color: "red"
-                border.width: 3
-            }
-            Row{
+            height: parent.height / 8
+            width: parent.width - parent.width / 3
+            x: parent.width / 6
+            y: parent.height / 15
+            color: "#55333333"
+            border.color: "black"
+            border.width: 2
+            radius: 5
+            Row {
                 anchors.leftMargin: parent.width/70
                 anchors.fill: parent
                 anchors.rightMargin: parent.width/70
                 spacing: parent.width/70
-                Repeater{
+                Repeater {
                     id: question
-                    Image{
-                        source: "qrc:/gcompris/src/activities/algorithm/resource/"+modelData+'.svgz'
+                    Image {
+                        source: Activity.url + modelData + '.svgz'
                         visible: true
                         height: questionTray.height
                         width: questionTray.width/9
@@ -95,28 +89,28 @@ ActivityBase {
             }
         }
 
-        Rectangle{
+        Rectangle {
             id: answerTray
             height: parent.height/8
             width: parent.width - parent.width/3
             x: parent.width/6
             y: parent.height/4 + 8
-            color: "transparent"
-            Rectangle{
-                color: "transparent"
-                anchors.fill: parent
-                border.color: "red"
-                border.width: 3
-            }
-            Row{
+            color: "#55333333"
+            border.color: "black"
+            border.width: 2
+            radius: 5
+            Row {
+                anchors.topMargin: 10
+                anchors.bottomMargin: 10
                 anchors.leftMargin: parent.width/70
                 anchors.fill: parent
                 anchors.rightMargin: parent.width/70
                 spacing: parent.width/70
-                Repeater{
+                Repeater {
                     id: answer
-                    Image{
-                        source: "qrc:/gcompris/src/activities/algorithm/resource/"+modelData+'.svgz'
+                    Image {
+                        source: "qrc:/gcompris/src/activities/algorithm/resource/" +
+                                modelData + '.svgz'
                         visible: true
                         height: answerTray.height
                         width: answerTray.width/9
@@ -125,40 +119,41 @@ ActivityBase {
             }
         }
 
-        Rectangle{
+        Rectangle {
             id: choiceTray
             height: parent.height/8
             width: parent.width - parent.width/3
             x: parent.width/6
             y: 3*parent.height/4 - 10
-            color: "transparent"
-            Rectangle{
-                color: "transparent"
-                anchors.fill: parent
-                border.color: "red"
-                border.width: 3
-            }
-            Row{
+            color: "#55333333"
+            border.color: "black"
+            border.width: 2
+            radius: 5
+            Row {
                 anchors.leftMargin: parent.width/70
                 anchors.fill: parent
                 anchors.rightMargin: parent.width/70
                 spacing: parent.width/70
-                Repeater{
+                Repeater {
                     id: choice
-                    model: ["apple",'banana','cherries','lemon','orange','pear','pineapple','plum']
-                    Image{
+                    model: Activity.images
+                    Image {
                         id: img
-                        source: "qrc:/gcompris/src/activities/algorithm/resource/"+modelData+'.svgz'
+                        source: Activity.url + modelData + '.svgz'
                         visible: true
                         height: choiceTray.height
                         width: choiceTray.width/9
                         state: "notclicked"
                         signal clicked
-                        MouseArea{
+                        MouseArea {
                             id: mouseArea
                             hoverEnabled: true
                             anchors.fill: parent
-                            onClicked: {var a = Activity.clickHandler(modelData);if(a){particle.emitter.burst(20);}}
+                            onClicked: {
+                                if(Activity.clickHandler(modelData)) {
+                                    particle.emitter.burst(20)
+                                }
+                            }
                         }
                         states: [
                             State {
@@ -188,8 +183,9 @@ ActivityBase {
 
                         Behavior on scale { NumberAnimation { duration: 70 } }
 
-                        ParticleSystemStar{
+                        ParticleSystemStar {
                             id: particle
+                            clip: false
                         }
                     }
                 }
@@ -197,15 +193,8 @@ ActivityBase {
         }
 
         Audio {
-            id:brick
-            source:"qrc:/gcompris/src/core/resource/sounds/brick.wav"
-            onError: console.log("brick play error: " + errorString)
-        }
-
-        Audio {
-            id:bleep
-            source: "qrc:/gcompris/src/core/resource/sounds/bleep.wav"
-            onError: console.log("bleep play error: " + errorString)
+            id: audio
+            onError: console.log("play error: " + errorString)
         }
 
         DialogHelp {
