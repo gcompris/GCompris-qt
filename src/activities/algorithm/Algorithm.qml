@@ -34,7 +34,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: "qrc:/gcompris/src/activities/algorithm/resource/scenery5_background.png"
+        source: Activity.url + "desert_scene.svgz"
         signal start
         signal stop
 
@@ -62,136 +62,151 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Rectangle {
-            id: questionTray
-            height: parent.height / 8
-            width: parent.width - parent.width / 3
-            x: parent.width / 6
-            y: parent.height / 15
-            color: "#55333333"
-            border.color: "black"
-            border.width: 2
-            radius: 5
-            Row {
-                anchors.leftMargin: parent.width/70
-                anchors.fill: parent
-                anchors.rightMargin: parent.width/70
-                spacing: parent.width/70
-                Repeater {
-                    id: question
-                    Image {
-                        source: Activity.url + modelData + '.svgz'
-                        visible: true
-                        height: questionTray.height
-                        width: questionTray.width/9
-                    }
-                }
-            }
-        }
+        Column {
+            id: column
+            spacing: 10
+            x: parent.width * 0.1
+            y: parent.height * 0.1
+            width: parent.width * 0.8
 
-        Rectangle {
-            id: answerTray
-            height: parent.height/8
-            width: parent.width - parent.width/3
-            x: parent.width/6
-            y: parent.height/4 + 8
-            color: "#55333333"
-            border.color: "black"
-            border.width: 2
-            radius: 5
-            Row {
-                anchors.topMargin: 10
-                anchors.bottomMargin: 10
-                anchors.leftMargin: parent.width/70
-                anchors.fill: parent
-                anchors.rightMargin: parent.width/70
-                spacing: parent.width/70
-                Repeater {
-                    id: answer
-                    Image {
-                        source: "qrc:/gcompris/src/activities/algorithm/resource/" +
-                                modelData + '.svgz'
-                        visible: true
-                        height: answerTray.height
-                        width: answerTray.width/9
-                    }
-                }
-            }
-        }
+            property int itemWidth: width / Activity.images.length - 10
+            property int itemHeight: itemWidth
 
-        Rectangle {
-            id: choiceTray
-            height: parent.height/8
-            width: parent.width - parent.width/3
-            x: parent.width/6
-            y: 3*parent.height/4 - 10
-            color: "#55333333"
-            border.color: "black"
-            border.width: 2
-            radius: 5
-            Row {
-                anchors.leftMargin: parent.width/70
-                anchors.fill: parent
-                anchors.rightMargin: parent.width/70
-                spacing: parent.width/70
-                Repeater {
-                    id: choice
-                    model: Activity.images
-                    Image {
-                        id: img
-                        source: Activity.url + modelData + '.svgz'
-                        visible: true
-                        height: choiceTray.height
-                        width: choiceTray.width/9
-                        state: "notclicked"
-                        signal clicked
-                        MouseArea {
-                            id: mouseArea
-                            hoverEnabled: true
-                            anchors.fill: parent
-                            onClicked: {
-                                if(Activity.clickHandler(modelData)) {
-                                    particle.emitter.burst(20)
-                                }
-                            }
-                        }
-                        states: [
-                            State {
-                                name: "notclicked"
-                                PropertyChanges {
-                                    target: img
-                                    scale: 1.0
-                                }
-                            },
-                            State {
-                                name: "clicked"
-                                when: mouseArea.pressed
-                                PropertyChanges {
-                                    target: img
-                                    scale: 0.9
-                                }
-                            },
-                            State {
-                                name: "hover"
-                                when: mouseArea.containsMouse
-                                PropertyChanges {
-                                    target: img
-                                    scale: 1.1
-                                }
-                            }
-                        ]
+            Rectangle {
+                id: questionTray
+                height: column.itemHeight + 10
+                width: parent.width + 10
+                color: "#55333333"
+                border.color: "black"
+                border.width: 2
+                radius: 5
 
-                        Behavior on scale { NumberAnimation { duration: 70 } }
-
-                        ParticleSystemStar {
-                            id: particle
-                            clip: false
+                Row {
+                    anchors.topMargin: 4
+                    anchors.bottomMargin: 4
+                    anchors.leftMargin: 10
+                    anchors.rightMargin: 10
+                    anchors.fill: parent
+                    spacing: 10
+                    Repeater {
+                        id: question
+                        Image {
+                            source: Activity.url + modelData + '.svgz'
+                            sourceSize.height: parent.height
+                            width: column.itemWidth
+                            height: column.itemHeight
                         }
                     }
                 }
             }
-        }
 
+            Rectangle {
+                id: answerTray
+                height: column.itemHeight + 10
+                width: parent.width + 10
+                color: "#55333333"
+                border.color: "black"
+                border.width: 2
+                radius: 5
+                Row {
+                    anchors.topMargin: 4
+                    anchors.bottomMargin: 4
+                    anchors.leftMargin: 10
+                    anchors.rightMargin: 10
+                    anchors.fill: parent
+                    spacing: 10
+                    Repeater {
+                        id: answer
+                        Image {
+                            source: "qrc:/gcompris/src/activities/algorithm/resource/" +
+                                    modelData + '.svgz'
+                            sourceSize.height: parent.height
+                            width: column.itemWidth
+                            height: column.itemHeight
+                        }
+                    }
+                }
+            }
+
+            // A spacer
+            Item {
+                height: column.itemHeight / 2
+                width: parent.width
+            }
+
+            Rectangle {
+                id: choiceTray
+                height: column.itemHeight + 10
+                width: parent.width + 10
+                color: "#55333333"
+                border.color: "black"
+                border.width: 2
+                radius: 5
+                Row {
+                    anchors.topMargin: 4
+                    anchors.bottomMargin: 4
+                    anchors.leftMargin: 10
+                    anchors.rightMargin: 10
+                    anchors.fill: parent
+                    spacing: 10
+                    Repeater {
+                        id: choice
+                        model: Activity.images
+                        Image {
+                            id: img
+                            source: Activity.url + modelData + '.svgz'
+                            sourceSize.height: parent.height
+                            width: column.itemWidth
+                            height: column.itemHeight
+                            state: "notclicked"
+                            signal clicked
+                            MouseArea {
+                                id: mouseArea
+                                hoverEnabled: true
+                                anchors.fill: parent
+                                onClicked: {
+                                    if(Activity.clickHandler(modelData)) {
+                                        particle.emitter.burst(20)
+                                    }
+                                }
+                            }
+                            states: [
+                                State {
+                                    name: "notclicked"
+                                    PropertyChanges {
+                                        target: img
+                                        scale: 1.0
+                                    }
+                                },
+                                State {
+                                    name: "clicked"
+                                    when: mouseArea.pressed
+                                    PropertyChanges {
+                                        target: img
+                                        scale: 0.9
+                                    }
+                                },
+                                State {
+                                    name: "hover"
+                                    when: mouseArea.containsMouse
+                                    PropertyChanges {
+                                        target: img
+                                        scale: 1.1
+                                    }
+                                }
+                            ]
+
+                            Behavior on scale { NumberAnimation { duration: 70 } }
+
+                            ParticleSystemStar {
+                                id: particle
+                                clip: false
+                            }
+                        }
+                    }
+                }
+            }
+        }
         Audio {
             id: audio
             onError: console.log("play error: " + errorString)
