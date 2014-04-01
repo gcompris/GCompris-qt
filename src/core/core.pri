@@ -70,7 +70,9 @@ APP_FILES += \
 	$$PWD/resource/tuxballoon.svgz
 
 APP_FILES += \
-	$$PWD/resource/sounds/bonus.wav \
 	$$PWD/resource/sounds/crash.wav \
+	$$PWD/resource/sounds/bleep.wav \
+	$$PWD/resource/sounds/bonus.wav \
+	$$PWD/resource/sounds/brick.wav \
 	$$PWD/resource/sounds/flip.wav
 
