@@ -1,5 +1,5 @@
-import QtQuick 2.1
-import QtQuick.Controls 1.0
+import QtQuick 2.2
+import QtQuick.Controls 1.2
 import "qrc:/gcompris/src/core"
 import GCompris 1.0
 
@@ -82,9 +82,10 @@ ActivityBase {
                 }
                 ParticleSystemStar {
                     id: particles
+                    anchors.fill: background
                 }
                 MouseArea {
-                    anchors.fill: parent
+                    anchors.fill: background
                     onClicked: {
                         particles.emitter.burst(50)
                         ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]

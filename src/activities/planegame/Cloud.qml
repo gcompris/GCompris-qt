@@ -17,50 +17,105 @@
  You should have received a copy of the GNU General Public License
  along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
-import QtQuick 2.1
+import QtQuick 2.2
 import QtMultimedia 5.0
 import "planegame.js" as Activity
+import "qrc:/gcompris/src/core"
 import GCompris 1.0
 
 Image {
     id: cloud
-    property int number
+    property Item background
+    property alias text: number.text
+    property double heightRatio: 1
 
-    property Item activity
+    /* An helper property to remember if a cloud has been wrongly touched */
+    property bool touched: false
 
     sourceSize.height: 100 * ApplicationInfo.ratio
+    height: sourceSize.height * heightRatio
 
-    height: sourceSize.height-20*(activity.currentLevel)
-
-    source: "qrc:/gcompris/src/activities/planegame/resource/cloud.svgz"
+    state: "normal"
+//    source: "qrc:/gcompris/src/activities/planegame/resource/cloud.svgz"
     fillMode: Image.PreserveAspectFit
 
     z: 5
 
+    signal done
+    signal touch
+
+    onDone: {
+        particles.emitter.burst(50)
+        opacityTimer.start()
+    }
+
+    onTouch: {
+        touched = true
+        state = "storm"
+    }
+
     Text {
+        id: number
         anchors.horizontalCenter: cloud.horizontalCenter
         anchors.verticalCenter: cloud.verticalCenter
-        text: number
         color: "black"
         font.bold: true
         font.pointSize: 18
     }
 
     Component.onCompleted: {
-        x = -cloud.width-1
-        y = Activity.getRandomInt(0, activity.height - cloud.height)
+        x = -cloud.width - 1
+        y = Activity.getRandomInt(0, background.height - cloud.height)
     }
 
-    Behavior on x { PropertyAnimation { duration: 30*activity.width } }
+    Behavior on x { PropertyAnimation { duration: 20000 } }
+    Behavior on opacity { PropertyAnimation { duration: 400 } }
+
+    Timer {
+        id: stormy
+        interval: 2000;
+        running: false;
+        repeat: false
+        onTriggered: cloud.state = "normal"
+    }
+
+    states: [
+        State {
+            name: "normal"
+            PropertyChanges {
+                target: cloud
+                source: "qrc:/gcompris/src/activities/planegame/resource/cloud.svgz"
+            }
+        },
+        State {
+            name: "storm"
+            PropertyChanges {
+                target: cloud
+                source: "qrc:/gcompris/src/activities/planegame/resource/cloud_storm.svgz"
+            }
+            StateChangeScript {
+                script: stormy.start()
+            }
+        }
+    ]
+
+    Timer {
+        id: opacityTimer
+        running: false
+        repeat: false
+        interval: 500
+        onTriggered: opacity = 0
+    }
+
+    ParticleSystemStar {
+        id: particles
+        anchors.fill: parent
+        clip: false
+    }
 
     Audio {
         id: audioNumber
         onError: { console.log("voice " + source + " play error: " + errorString); }
     }
 
-    function playSound() {
-        /* TODO Use QTextCodec or QString toUnicode instead */
-        audioNumber.source = ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/U003" + number + ".ogg")
-        audioNumber.play()
-    }
 }

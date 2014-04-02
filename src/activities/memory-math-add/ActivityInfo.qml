@@ -4,7 +4,7 @@ ActivityInfo {
   name: "memory-math-add/Memory-math-add.qml"
   difficulty: 1
   icon: "memory-math-add/memory-math-add.svg"
-  author: "Yves Combe (yves@ycombe.net) ported by JB BUTET <ashashiwa@gmail.com>"
+  author: "JB BUTET <ashashiwa@gmail.com>"
   demo: false
   title: qsTr("Addition memory game")
   description: qsTr("Turn the cards over to find two numbers which add up the same, until all the cards are gone.")

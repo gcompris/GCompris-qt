@@ -1,0 +1,144 @@
+{
+   "levels" : [
+      {
+         "level" : "1",
+         "words" : [
+            "a",
+            "b",
+            "c",
+            "č",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "r",
+            "s",
+            "š",
+            "t",
+            "u",
+            "v",
+            "z",
+            "ž"
+         ]
+      },
+      {
+         "level" : "2",
+         "words" : [
+            "a",
+            "b",
+            "c",
+            "č",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "r",
+            "s",
+            "š",
+            "t",
+            "u",
+            "v",
+            "z",
+            "ž",
+            "numbers"
+         ]
+      },
+      {
+         "level" : "3",
+         "words" : [
+            "uppercase"
+         ]
+      },
+      {
+         "level" : "4",
+         "words" : [
+            "uppercase",
+            "numbers"
+         ]
+      },
+      {
+         "level" : "5",
+         "words" : [
+            "a",
+            "b",
+            "c",
+            "č",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "r",
+            "s",
+            "š",
+            "t",
+            "u",
+            "v",
+            "z",
+            "ž",
+            "uppercase"
+         ]
+      },
+      {
+         "level" : "6",
+         "words" : [
+            "a",
+            "b",
+            "c",
+            "č",
+            "d",
+            "e",
+            "f",
+            "g",
+            "h",
+            "i",
+            "j",
+            "k",
+            "l",
+            "m",
+            "n",
+            "o",
+            "p",
+            "r",
+            "s",
+            "š",
+            "t",
+            "u",
+            "v",
+            "z",
+            "ž",
+            "uppercase",
+            "numbers"
+         ]
+      }
+   ],
+   "name" : "default-sl",
+   "locale" : "sl",
+   "description" : "Default Slovenian"
+}

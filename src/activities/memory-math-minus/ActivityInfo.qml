@@ -4,7 +4,7 @@ ActivityInfo {
   name: "memory-math-minus/Memory-math-minus.qml"
   difficulty: 1
   icon: "memory-math-minus/memory-math-minus.svg"
-  author: "Yves Combe (yves@ycombe.net) ported by JB BUTET <ashashiwa@mgail.com>"
+  author: "JB BUTET <ashashiwa@mgail.com>"
   demo: false
   title: qsTr("Addition and subtraction memory game")
   description: qsTr("Turn the cards over to find two numbers which add or subtract the same, until all the cards are gone.")

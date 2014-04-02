@@ -18,7 +18,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.1
+import QtQuick 2.2
 import GCompris 1.0
 
 Rectangle {
@@ -40,8 +40,14 @@ Rectangle {
 
     z: 1000
 
+    /* Either fill in numberOfSubLevels and currentSubLevel
+     * or directly the message you want to write */
     property int numberOfSubLevels
     property int currentSubLevel
+    property string message
+
+    onCurrentSubLevelChanged: message = currentSubLevel + "/" + numberOfSubLevels
+    onNumberOfSubLevelsChanged: message = currentSubLevel + "/" + numberOfSubLevels
 
     Text {
         id: subLevelText
@@ -49,6 +55,6 @@ Rectangle {
         font.pointSize: 16
         font.bold: true
         color: "black"
-        text: score.currentSubLevel + "/" + score.numberOfSubLevels
+        text: message
     }
 }

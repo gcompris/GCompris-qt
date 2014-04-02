@@ -4,7 +4,7 @@ ActivityInfo {
   name: "memory-math-add-minus-mult-div/Memory-math-add-minus-mult-div.qml"
   difficulty: 1
   icon: "memory-math-add-minus-mult-div/memory-math-add-minus-mult-div.svg"
-  author: "Yves Combe (yves@ycombe.net) ported by JB BUTET <ashashiwa@gmail.com>"
+  author: "JB BUTET <ashashiwa@gmail.com>"
   demo: false
   title: qsTr("All operations memory game")
   description: qsTr("Turn the cards over to find a matching operation, until all the cards are gone.")

@@ -21,7 +21,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-    name: "planegame/Planegame.qml"
+    name: "planegame/Sequence.qml"
     difficulty: 2
     icon: "planegame/planegame.svg"
     author: "Johnny Jazeix <jazeix@gmail.com>"
