@@ -4,7 +4,7 @@ ActivityInfo {
   name: "mosaic/Mosaic.qml"
   difficulty: 1
   icon: "mosaic/mosaic.svg"
-  author: "Clement Coudoin <clement.coudoin@free.fr>"
+  author: "Bruno Coudoin <bruno.coudoin@free.fr>"
   demo: true
   title: qsTr("Rebuild the mosaic")
   description: qsTr("Rebuild the mosaic")
