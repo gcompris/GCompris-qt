@@ -24,13 +24,9 @@ Image {
             ApplicationLogic.moveStarsUnderTheHat()
             if(hatImg.state=="NormalPosition")
                 hatImg.state="Rotated"
-            else {
-                 if(hatImg.state=="Rotated"){
-                    hatImg.state="GuessNumber"
-                 }
-            }
         }
     }
+
 
     states: [
         State{
@@ -63,6 +59,7 @@ Image {
     transitions:[
         Transition{
                 RotationAnimation {
+                            id: rotAnim
                             direction: if(hatImg.state=="Rotated"){
                                            RotationAnimation.Counterclockwise
                                        }

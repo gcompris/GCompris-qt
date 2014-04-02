@@ -59,6 +59,13 @@ Item{
                 }
             },
             State{
+                name: "on_difficult"
+                PropertyChanges {
+                    target: starImg
+                    source: "qrc:/gcompris/src/activities/magic_hat_plus/resource/magic_hat/star2.svgz"
+                }
+            },
+            State{
                 name: "off"
                 PropertyChanges {
                     target: starImg
@@ -72,6 +79,9 @@ Item{
         NumberAnimation{
             id: movingAnimation
             duration: 1000
+            onRunningChanged: if(!movingAnimation.running){
+                                  ApplicationLogic.hideStarsUnderHat()
+                              }
         }
     }
     Behavior on y{

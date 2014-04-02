@@ -31,6 +31,7 @@ function stop() {
 
 function initLevel() {
     console.log("template activity: create some content in my activity")
+    destroyObjects()
     starsBars=new Array(3)
     starsToCount=new Array()
     nbUserStars=0
@@ -171,6 +172,10 @@ function moveStarsUnderTheHat(){
         starsToCount[i].y=magicHat.y + magicHat.height - 40
         starsToCount[i].z=magicHat.z-1
     }
+}
+
+function hideStarsUnderHat(){
+    magicHat.state="GuessNumber"
 }
 
 function getRandomInt(min, max) {
