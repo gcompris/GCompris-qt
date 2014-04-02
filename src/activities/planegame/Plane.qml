@@ -17,140 +17,72 @@
  You should have received a copy of the GNU General Public License
  along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
-import QtQuick 2.1
-import QtMultimedia 5.0
+import QtQuick 2.2
 import "planegame.js" as Activity
 import GCompris 1.0
 
 Image {
     id: plane
 
-    property Item score
     property Item background
+    property real velocityX
+    property real velocityY
 
     source: "qrc:/gcompris/src/activities/planegame/resource/tuxhelico.svgz"
     fillMode: Image.PreserveAspectFit
 
     sourceSize.height: 200 * ApplicationInfo.ratio
 
-    height: sourceSize.height-50*(activity.currentLevel)
-
     z: 10
 
-    property int speedX: 0
-    property int speedY: 0
-
-    onSpeedXChanged: {
-        plane.state = "rotated"
-    }
-
-    // Mirror the plan if it goes to right
-    transform: Rotation {
-        id: rotate; origin.x: width / 2; origin.y: 0;
-        axis { x: 0; y: 1; z: 0 } angle: plane.speedX >= 0 ? 0 : 180
-
-        Behavior on angle { PropertyAnimation { duration: 400 } }
-    }
-
-    states: State {
-        name: "rotated"
-        PropertyChanges {
-            target: plane;
-            rotation: Math.abs(plane.speedX) * 20 / activity.max_speed;
-        }
-    }
-
-    transitions: Transition {
-        RotationAnimation {
-            duration: 200;
-            direction: RotationAnimation.Shortest
-        }
-    }
-
-    Audio {
-        id: bonusSound
-        source: "qrc:/gcompris/src/activities/planegame/resource/bonus.wav"
-        onError: console.log("Plane.qml, bonus play error: " + errorString)
-    }
-
-    function computeSpeed() {
-        if(activity.rightPressed) {
-            Activity.increaseSpeedX()
-        }
-        if(activity.leftPressed) {
-            Activity.decreaseSpeedX()
-        }
-        if(activity.upPressed) {
-            Activity.decreaseSpeedY()
-        }
-        if(activity.downPressed) {
-            Activity.increaseSpeedY()
-        }
-    }
-
-    function move() {
-        if(x+width > background.width && speedX > 0) {
-            speedX = 0;
-        }
-        if(x < 0 && speedX < 0) {
-            speedX = 0;
-        }
-        x+=speedX;
-
-        if(y < 0 && speedY < 0) {
-            speedY = 0;
-        }
-        if(y+height > background.height && speedY > 0) {
-            speedY = 0;
-        }
-        y+=speedY;
-    }
-
-    function isIn(x1, y1, px1, py1, px2, py2) {
-        return (x1>px1 && x1<px2 && y1>py1 && y1<py2)
-    }
-
-    function handleCollisionsWithCloud() {
-        var planeX1 = x; var planeX2 = x+width
-        var planeY1 = y; var planeY2 = y+height
-
-        if(cloudList != undefined) {
-            for(var i = cloudList.length - 1; i >= 0 ; --i) {
-                var cloud = cloudList[i];
-                var x1 = cloud.x; var x2 = cloud.x+cloud.width;
-                var y1 = cloud.y; var y2 = cloud.y+cloud.height;
-
-                if(x2 < 0) {
-                    // Remove the cloud
-                    cloud.destroy()
-                    cloudList.splice(i, 1)
-                }
-                else if(isIn(x1, y1, planeX1, planeY1, planeX2, planeY2) ||
-                        isIn(x2, y1, planeX1, planeY1, planeX2, planeY2) ||
-                        isIn(x1, y2, planeX1, planeY1, planeX2, planeY2) ||
-                        isIn(x2, y2, planeX1, planeY1, planeX2, planeY2)) {
-
-                    // Collision, look for id
-                    if(cloud.number == score.currentSubLevel) {
-                        cloud.playSound()
-                        // Remove the cloud
-                        cloud.destroy()
-                        cloudList.splice(i, 1)
-
-                        score.currentSubLevel++
-
-                        if(score.currentSubLevel == score.numberOfSubLevels
-                                && activity.currentLevel == 0) {
-                            /* Try the next level */
-                            Activity.nextLevel()
-
-                            bonusSound.play();
-
-                            break;
-                        }
-                    }
-                }
+    states: [
+        State {
+            name: "init"
+            PropertyChanges {
+                target: plane
+                x: 20
+                y: parent.height / 2 - plane.height / 2
+                velocityX: 700
+                velocityY: 700
+                height: sourceSize.height * (1.0 - 0.5 * Activity.currentLevel / 10)
             }
+        },
+        State {
+            name: "play"
+            PropertyChanges {
+                target: plane
+                x: 20
+                y: parent.height / 2 - plane.height / 2
+                velocityX: 200
+                velocityY: 200
+                height: sourceSize.height * (1.0 - 0.5 * Activity.currentLevel / 10)
+            }
+        }
+    ]
+
+    Behavior on x {
+        SmoothedAnimation {
+            velocity: velocityX * ApplicationInfo.ratio
+            reversingMode: SmoothedAnimation.Immediate
+        }
+    }
+    Behavior on y {
+        SmoothedAnimation {
+            velocity: velocityY * ApplicationInfo.ratio
+            reversingMode: SmoothedAnimation.Immediate
+        }
+    }
+    Behavior on height { PropertyAnimation { duration: 100 } }
+    Behavior on rotation { PropertyAnimation { duration: 100 } }
+
+    MultiPointTouchArea {
+        anchors.fill: parent
+        touchPoints: [ TouchPoint { id: point1 } ]
+
+        onReleased: {
+            var point = plane.mapToItem(null, point1.x, point1.y)
+            plane.x = point.x - plane.width / 2
+            plane.y = point.y - plane.height / 2
         }
     }
 }

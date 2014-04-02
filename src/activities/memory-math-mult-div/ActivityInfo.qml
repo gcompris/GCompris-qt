@@ -4,11 +4,11 @@ ActivityInfo {
   name: "memory-math-mult-div/Memory-math-mult-div.qml"
   difficulty: 1
   icon: "memory-math-mult-div/memory-math-mult-div.svg"
-  author: "Yves Combe (yves@ycombe.net) ported by JB BUTET <ashashiwa@gmail.com>"
+  author: "JB BUTET <ashashiwa@gmail.com>"
   demo: false
   title: qsTr("Multiplication and division memory game")
   description: qsTr("Turn the cards over to find a matching operation, until all the cards are gone.")
-  goal: qsTr("ractise multiplication, division, until all the cards are gone.")
+  goal: qsTr("Practise multiplication, division, until all the cards are gone.")
   prerequisite: qsTr("Multiplication, division")
   manual: qsTr("You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 

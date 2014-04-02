@@ -19,6 +19,9 @@
  along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 
+.pragma library
+.import GCompris 1.0 as GCompris //for ApplicationInfo
+
 var levelProperties = [
             {
                 "timerInc": 900,
@@ -73,6 +76,9 @@ var rightPressed = false
 
 var gameWon = false
 
+// When the timer is finished we set this variable to true to disabled key press
+var gameFinished = false
+
 // Store the time diff between left and right key
 var timerDiff = 0
 // The child has to press both key between this laps of time
@@ -118,6 +124,7 @@ function rightShiftPressed() {
 }
 
 function endTimer() {
+    gameFinished = true
     gameWon = rightPressed && leftPressed
 }
 
@@ -137,6 +144,7 @@ function initLevel() {
     rightPressed = false
 
     gameWon = false
+    gameFinished = false
 
     items.leftHand.reinitPosition()
     items.rightHand.reinitPosition()
@@ -163,19 +171,19 @@ function restartLevel() {
 function initKey() {
     /* You cannot dissociate left shift and right shift easily
        on Qt so we put all possibilities for scanCode here */
-    switch(ApplicationInfo.platform) {
-    case ApplicationInfo.Linux: // todo find existing enum for those values?
+    switch(GCompris.ApplicationInfo.platform) {
+    case GCompris.ApplicationInfo.Linux: // todo find existing enum for those values?
         // Do not know if it is the same for all linux ?
         supposedRightKeyCode = [62];
         supposedLeftKeyCode = [50];
         break;
-    case ApplicationInfo.Windows:
+    case GCompris.ApplicationInfo.Windows:
         // VK_RSHIFT in WinUser.h is 0xA1, but does not work in my win8...
         supposedRightKeyCode = [0xA1, 54];
         // VK_LSHIFT in WinUser.h, but does not work in my win8...
         supposedLeftKeyCode = [0xA0, 42];
         break;
-    case ApplicationInfo.MacOSX:
+    case GCompris.ApplicationInfo.MacOSX:
         // keyEvent.nativeScanCode not filled in mac
     default: // Will it be played with keyboard on mobile/tablet ?
         supposedRightKeyCode = [-1];
@@ -184,7 +192,7 @@ function initKey() {
 }
 
 function processKey(event) {
-    if(event.key == Qt.Key_Shift) {
+    if(event.key == Qt.Key_Shift && !gameFinished) {
         // Default values, look for real values
         if(leftKeyCode == -2 || rightKeyCode == -2) {
             // Look if it is a left key
