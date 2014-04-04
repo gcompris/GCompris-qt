@@ -1,3 +1,0 @@
-module QtBluetooth
-plugin declarative_bluetooth
-typeinfo plugins.qmltypes
