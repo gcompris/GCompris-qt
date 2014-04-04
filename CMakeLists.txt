@@ -13,7 +13,7 @@ set(GCOMPRIS_VERSION ${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION}.${GCOMP
 
 set(QT_REQUIRED_VERSION 5.2.0)
 
-find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Qml Quick Gui Multimedia Core)
+find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Qml Quick Gui Multimedia Core Svg XmlPatterns)
 
 # To have src/core/*{.qml/.js} files and activities.txt in qtcreator project
 file(GLOB gcompris_SRCS src/core/*.qml src/core/*.js src/activities/activities.txt)
@@ -21,9 +21,9 @@ set(gcompris_SRCS ${QML_SRC} ${gcompris_SRCS})
 
 # Set output directory
 if(ANDROID)
-add_subdirectory(android)
 # Android .so output
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android/libs/${ARM_TARGET}/)
+add_subdirectory(android)
 else(ANDROID)
 # Desktop build
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
