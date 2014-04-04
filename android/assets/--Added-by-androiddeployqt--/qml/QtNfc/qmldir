@@ -1,3 +1,0 @@
-module QtNfc
-plugin declarative_nfc
-typeinfo plugins.qmltypes
