@@ -41,7 +41,7 @@ endif(NOT ANDROID)
 
 if(ANDROID)
   add_library(GCompris SHARED ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RCC_SRCS})
-  qt5_use_modules(GCompris Qml Quick Gui Multimedia Core)
+  qt5_use_modules(GCompris Qml Quick Gui Multimedia Core Svg XmlPatterns)
   target_link_libraries(GCompris
     ${QT_LIBRARIES}
     #  ${KCONFIG_LIB}

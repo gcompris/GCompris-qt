@@ -18,21 +18,28 @@ endif(NOT ANDROID_LOCATION)
 set(ANDROID_VERSION_NAME ${GCOMPRIS_VERSION})
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/AndroidManifest.xml.cmake ${CMAKE_CURRENT_BINARY_DIR}/AndroidManifest.xml @ONLY)
 
+### androiddeployqt modified version
+
+# create json file parsed by the androiddeployqt
+set(ANDROID_SDK $ENV{ANDROID_SDK})
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/configAndroid.json.cmake ${CMAKE_CURRENT_BINARY_DIR}/configAndroid.json @ONLY)
+
 add_custom_command (
-      OUTPUT build.xml
-      DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/AndroidManifest.xml
-      COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR}
-      COMMAND ${ANDROID_LOCATION}/android update project -t android-${ANDROID_API_LEVEL} --name GCompris -p ${CMAKE_CURRENT_BINARY_DIR}
+  OUTPUT createApkFromAndroidDeployQt
+  DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/AndroidManifest.xml
+  COMMAND ${CMAKE_COMMAND} -E copy_directory ${CMAKE_CURRENT_SOURCE_DIR} ${CMAKE_CURRENT_BINARY_DIR}
+  COMMAND qmake && make && ./androiddeployqt --output ${CMAKE_CURRENT_BINARY_DIR}/ --input ${CMAKE_CURRENT_BINARY_DIR}/configAndroid.json
+  WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/tools/copyQtAndroidData
 )
 
 # Command to create apk from Makefile
 add_custom_target ( apk_debug
    COMMAND ${ANT_LOCATION} debug
-   DEPENDS build.xml
+   DEPENDS createApkFromAndroidDeployQt
 )
 
 # Command to create apk from Makefile
 add_custom_target ( apk_release
    COMMAND ${ANT_LOCATION} release
-   DEPENDS build.xml
+   DEPENDS createApkFromAndroidDeployQt
 )
