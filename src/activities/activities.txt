@@ -31,6 +31,7 @@ money
 money_back
 money_back_cents
 money_cents
+missing-letter
 mosaic
 numbers-odd-even
 penalty
