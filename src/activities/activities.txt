@@ -18,11 +18,9 @@ gletters
 hexagon
 instruments
 leftright
-<<<<<<< HEAD
-magic_hat_plus
-=======
+magic-hat-plus
+magic-hat
 numbers-odd-even
->>>>>>> upstream/master
 memory
 memory-math-add
 memory-math-mult

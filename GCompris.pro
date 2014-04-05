@@ -7,7 +7,7 @@ TARGET = GCompris
 
 include(src/core/core.pri)
 include(src/activities/menu/menu.pri)
-
+#Activities include
 #include(src/activities/advanced_colors/advanced_colors.pri)
 #include(src/activities/algebra_by/algebra_by.pri)
 #include(src/activities/algebra_minus/algebra_minus.pri)
@@ -38,6 +38,7 @@ include(src/activities/menu/menu.pri)
 #include(src/activities/planegame/planegame.pri)
 #include(src/activities/enumerate/enumerate.pri)
 include(src/activities/magic-hat/magic-hat.pri)
+include(src/activities/magic-hat-plus/magic-hat-plus.pri)
 
 
 APP_FILES += \

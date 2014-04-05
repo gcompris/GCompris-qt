@@ -1,9 +1,9 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "magic_hat_plus/MagicHatPlus.qml"
+  name: "magic-hat-plus/MagicHatPlus.qml"
   difficulty: 1
-  icon: "magic_hat_plus/magic_hat_plus.svg"
+  icon: "magic-hat-plus/magic-hat-plus.svg"
   author: "Thib ROMAIN <thibrom@gmail.com>"
   demo: false
   title: qsTr("Magic Hat Plus")

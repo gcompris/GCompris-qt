@@ -55,21 +55,21 @@ Item{
                 name: "on"
                 PropertyChanges {
                     target: starImg
-                    source: "qrc:/gcompris/src/activities/magic_hat_plus/resource/magic_hat/star1.svgz"
+                    source: "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/star1.svgz"
                 }
             },
             State{
                 name: "on_difficult"
                 PropertyChanges {
                     target: starImg
-                    source: "qrc:/gcompris/src/activities/magic_hat_plus/resource/magic_hat/star2.svgz"
+                    source: "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/star2.svgz"
                 }
             },
             State{
                 name: "off"
                 PropertyChanges {
                     target: starImg
-                    source: "qrc:/gcompris/src/activities/magic_hat_plus/resource/magic_hat/star-clear.svgz"
+                    source: "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/star-clear.svgz"
                 }
             }
         ]

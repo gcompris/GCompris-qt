@@ -1,10 +1,10 @@
 /* GCompris - magic-hat.qml
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 <Thibaut ROMAIN>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   <Bruno Coudoin> (GTK+ version)
+ *   Thibaut ROMAIN <Thibaut ROMAIN> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -30,12 +30,12 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    property string mode: "plus"
+    property string mode: "minus"
 
     pageComponent: Image{
         id: background
         anchors.fill: parent
-        source: mode=="plus"? "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/magic_hat_plus_bg.png" : "qrc:/gcompris/src/activities/magic_hat_plus/resource/magic-hat/magic_hat_minus_bg.png"
+        source: mode=="minus"? "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/magic_hat_minus_bg.png" : "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/magic_hat_plus_bg.png"
         fillMode: Image.PreserveAspectFit
         signal start
         signal stop
@@ -45,19 +45,53 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
-        Grid {
+        Column {
             id: mainlayout
-            anchors.fill: background
-            Column {
-                width: background.width/2
-                height: background.height
-                id: leftLayout
+            anchors.left: background.left
+            width: background.width/2
+            height:background.height
+            Hat{
+                    id: chapeau
             }
-            Column {
-                width: background.width/2
-                height:background.height
-                id: rightLayout
-                spacing: 100
+        }
+        Grid {
+            anchors.right: background.right
+            anchors.rightMargin: -background.width/25
+            anchors.verticalCenter: background.verticalCenter
+            anchors.verticalCenterOffset: background.height/6
+            width: background.width/2
+            height:background.height
+            id: rightLayout
+            rows: 3
+            spacing: background.height/5
+            Column{
+                spacing: 5
+                StarsBar{
+                    id: sb0
+                    starsSize: background.height/18
+                }
+                StarsBar{
+                    id: sb1
+                    starsSize: background.height/18
+                    opacity: 0
+                }
+            }
+            Column{
+                spacing: 5
+                StarsBar{
+                    id: sb2
+                    starsSize: background.height/18
+                }
+                StarsBar{
+                    id: sb3
+                    starsSize: background.height/18
+                    opacity: 0
+                }
+            }
+            StarsBar{
+                nbStarsOn: 0
+                starsSize: background.height/18
+                authorizeClick: true
             }
         }
 
@@ -68,6 +102,11 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property alias hat: chapeau
+            property alias starsBar0: sb0
+            property alias starsBar1: sb1
+            property alias starsBar2: sb2
+            property alias starsBar3: sb3
         }
 
         onStart: { Activity.start(items,mode) }

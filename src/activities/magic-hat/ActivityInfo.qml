@@ -3,10 +3,10 @@ import GCompris 1.0
 ActivityInfo {
   name: "magic-hat/MagicHat.qml"
   difficulty: 1
-  icon: "magic-hat/magic-hat.svg"
-  author: "Your Name <yy@zz.org>"
+  icon: "magic-hat/magic-hat-minus.svg"
+  author: "Thibaut ROMAIN <thibrom@gmail.com>"
   demo: false
-  title: qsTr("magic-hat activity")
+  title: qsTr("Magic Hat Minus")
   description: qsTr("")
   goal: qsTr("")
   prerequisite: qsTr("")

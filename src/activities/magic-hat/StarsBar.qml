@@ -1,17 +1,14 @@
 import QtQuick 2.0
+import "magic-hat.js" as Activity
 
 Item{
-    property int vertOffset: 0
     property int nbStarsOn: 0
     property bool authorizeClick: false
+    property int starsSize: 32
 
     id: item
     width: row.width
-    height: parent.width/26
-    anchors.right: parent.right
-    anchors.rightMargin: parent.width/25
-    anchors.verticalCenter: parent.verticalCenter
-    anchors.verticalCenterOffset: vertOffset
+    height: starsSize
 
     Row{
         id: row
@@ -23,6 +20,7 @@ Item{
                 starState: "on"
                 width: item.height
                 height: item.height
+                displayBounds: true
                 isClickable: authorizeClick
             }
         }
