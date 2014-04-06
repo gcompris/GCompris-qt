@@ -1,12 +1,12 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "money_back/Money_back.qml"
-  difficulty: 3
-  icon: "money_back/money_back.svg"
+  name: "money_back_cents/MoneyBackCents.qml"
+  difficulty: 5
+  icon: "money_back_cents/money_back_cents.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
-  title: qsTr("Give tux his change")
+  title: qsTr("Give tux his change, including cents")
   description: qsTr("Practice money usage by giving Tux his change")
   goal: qsTr("Tux bought you different items and shows you his money. You must give him back his change. At higher levels, several items are displayed, and you must first calculate the total price.")
   prerequisite: qsTr("Can count")

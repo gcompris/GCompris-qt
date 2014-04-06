@@ -26,8 +26,11 @@ memory-math-minus
 memory-math-add-minus
 memory-math-mult-div
 memory-sound
+money_back_cents
+money_back
+money
+money_cents
 mosaic
 planegame
 memory-math-add-minus-mult-div
 algorithm
-

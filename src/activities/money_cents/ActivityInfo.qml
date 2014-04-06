@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "money_cents/Money_cents.qml"
+  name: "money_cents/MoneyCents.qml"
   difficulty: 5
   icon: "money_cents/money_cents.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
