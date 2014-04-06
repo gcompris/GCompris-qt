@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "erase_2clic/Erase_2clic.qml"
+  name: "erase_2clic/Erase2clic.qml"
   difficulty: 2
   icon: "erase_2clic/erase_2clic.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
