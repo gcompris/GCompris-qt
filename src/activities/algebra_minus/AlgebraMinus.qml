@@ -1,4 +1,4 @@
-/* GCompris - Algebra_minus.qml
+/* GCompris - AlgebraMinus.qml
  *
  * Copyright (C) 2014 Aruna Sankaranarayanan and Bruno Coudoin
  *
