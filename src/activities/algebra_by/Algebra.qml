@@ -24,7 +24,6 @@ import "algebra.js" as Activity
 
 ActivityBase {
     id: activity
-    focus: true
 
     property alias operand: operand
 
@@ -38,7 +37,6 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
         signal start
         signal stop
-        focus: true
 
         Component.onCompleted: {
             activity.start.connect(start)
