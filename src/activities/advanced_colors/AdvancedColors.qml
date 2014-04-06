@@ -1,4 +1,4 @@
-/* GCompris - Advanced_colors.qml
+/* GCompris - AdvancedColors.qml
  *
  * Original activity in the Gtk+ version of GCompris by
  * Pascal Georges <pascal.georges1@free.fr>

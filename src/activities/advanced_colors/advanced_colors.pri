@@ -1,7 +1,7 @@
 
 APP_FILES += \
 	$$PWD/ActivityInfo.qml \
-	$$PWD/Advanced_colors.qml \
+	$$PWD/AdvancedColors.qml \
 	$$PWD/advanced_colors.js \
 	$$PWD/advanced_colors.svg
 
