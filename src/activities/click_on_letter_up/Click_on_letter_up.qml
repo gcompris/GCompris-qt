@@ -26,7 +26,6 @@ import GCompris 1.0
 
 import "qrc:/gcompris/src/core"
 import "qrc:/gcompris/src/activities/click_on_letter"
-import "qrc:/gcompris/src/activities/click_on_letter/click_on_letter.js" as Activity
 
 Click_on_letter {
     id: activity
