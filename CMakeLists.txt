@@ -11,9 +11,24 @@ set(GCOMPRIS_PATCH_VERSION 0)
 
 set(GCOMPRIS_VERSION ${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION}.${GCOMPRIS_PATCH_VERSION})
 
+#option(USE_KCONFIG
+#  "Use KConfig to store persistent data" OFF)
+
+#if (USE_KCONFIG)
+  # Compile 3rd party
+#  add_subdirectory(3rdparty)
+#  find_package(ECM 0.0.11 REQUIRED NO_MODULE)
+#  find_package(KConfig REQUIRED)
+#endif(USE_KCONFIG)
+
 set(QT_REQUIRED_VERSION 5.2.0)
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Qml Quick Gui Multimedia Core Svg XmlPatterns)
+
+#get_cmake_property(_variableNames VARIABLES)
+#foreach (_variableName ${_variableNames})
+#    message("${_variableName}=${${_variableName}}")
+#endforeach()
 
 # To have src/core/*{.qml/.js} files and activities.txt in qtcreator project
 file(GLOB gcompris_SRCS src/core/*.qml src/core/*.js src/activities/activities.txt)
