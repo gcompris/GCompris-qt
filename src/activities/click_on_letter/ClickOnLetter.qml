@@ -1,4 +1,4 @@
-/* GCompris - Click_on_letter.qml
+/* GCompris - ClickOnLetter.qml
  *
  * Copyright (C) 2014 Holger Kaelberer 
  * 

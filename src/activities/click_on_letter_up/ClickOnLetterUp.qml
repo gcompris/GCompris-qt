@@ -1,4 +1,4 @@
-/* GCompris - Click_on_letter_up.qml
+/* GCompris - ClickOnLetterUp.qml
  *
  * Copyright (C) 2014 Holger Kaelberer 
  * 
@@ -27,7 +27,7 @@ import GCompris 1.0
 import "qrc:/gcompris/src/core"
 import "qrc:/gcompris/src/activities/click_on_letter"
 
-Click_on_letter {
+ClickOnLetter {
     id: activity
     
     mode: "uppercase"
