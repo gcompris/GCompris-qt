@@ -6,7 +6,7 @@ ActivityInfo {
   icon: "memory-math-mult/memory-math-mult.svg"
   author: "JB BUTET <ashashiwa@gmail.com>"
   demo: false
-  title: qsTr("Multiplication memory gam")
+  title: qsTr("Multiplication memory game")
   description: qsTr("Turn the cards over to find two numbers which multiply the same, until all the cards are gone.")
   goal: qsTr("Practise multiplication, until all the cards are gone.")
   prerequisite: qsTr("Multiplication")
