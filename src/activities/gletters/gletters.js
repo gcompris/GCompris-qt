@@ -50,9 +50,6 @@ var wordComponent = null;
 function start(items_, uppercaseOnly_) {
     console.log("Gletters activity: start");
     
-    //if (GCompris.ApplicationInfo.isMobile) {
-    //    Qt.inputMethod.show();
-    //}
     items = items_;
     uppercaseOnly = uppercaseOnly_;
     currentLevel = 0;
@@ -66,8 +63,6 @@ function stop() {
     console.log("Gletters activity: stop");
     deleteWords();
     items.wordDropTimer.stop();
-    //if (GCompris.ApplicationInfo.isMobile)
-    //    Qt.inputMethod.hide();
 }
 
 function initLevel() {
@@ -90,18 +85,39 @@ function initLevel() {
                 + " maxSubLvl=" + maxSubLevel 
                 + " wordCount=" + level.words.length
                 + " speed=" + speed + " fallspeed=" + fallSpeed); */
+        
+        if (GCompris.ApplicationInfo.isMobile) 
+        {
+            /* populate VirtualKeyboard for mobile:
+             * 1. for < 10 letters print them all in the same row
+             * 2. for > 10 letters create 3 rows with equal amount of keys per row
+             *    if possible, otherwise more keys in the upper rows
+             */
+            var layout = new Array();
+            var row = 0;
+            var offset = 0;
+            while (offset < level.words.length-1) {
+                var cols = level.words.length <= 10 ? level.words.length : (Math.ceil((level.words.length-offset) / (3 - row)));
+                layout[row] = new Array();
+                for (var j = 0; j < cols; j++)
+                    layout[row][j] = { label: level.words[j+offset] };
+                offset += j;
+                row++;
+            }
+            items.keyboard.layout = layout;
+        }
     }
+    
     // initialize sublevel
     items.score.currentSubLevel = currentSubLevel + 1;
     dropWord();
     //console.log("Gletters: initializing subLevel " + (currentSubLevel + 1) + " words=" + JSON.stringify(level.words));
 }
 
-function processKeyPress(event) {
+function processKeyPress(text) {
     for (var i = 0; i< droppedWords.length; i++) {
         var chars = droppedWords[i].text.split("");
-        var typedText = uppercaseOnly ? event.text.toLocaleUpperCase() : event.text;
-        //console.log("Gletters: comparing keypress: " + event.text + " ~ " + typedText);
+        var typedText = uppercaseOnly ? text.toLocaleUpperCase() : text;
         if (chars[droppedWords[i].unmatchedIndex] == typedText) {
             // typed correctly
             droppedWords[i].nextCharMatched();
@@ -194,6 +210,7 @@ function nextLevel() {
     if(maxLevel <= ++currentLevel ) {
         currentLevel = 0
     }
+    currentSubLevel = 0;
     initLevel();
 }
 
@@ -201,6 +218,7 @@ function previousLevel() {
     if(--currentLevel < 0) {
         currentLevel = maxLevel - 1
     }
+    currentSubLevel = 0;
     initLevel();
 }
 

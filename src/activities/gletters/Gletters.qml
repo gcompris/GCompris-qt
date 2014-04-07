@@ -35,7 +35,7 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
     
-    Keys.onPressed: Activity.processKeyPress(event)
+    Keys.onPressed: Activity.processKeyPress(event.text)
     
     pageComponent: Image {
         id: background
@@ -56,6 +56,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias wordlist: wordlist
             property alias score: score
+            property alias keyboard: keyboard
             property alias wordDropTimer: wordDropTimer
             property alias flipAudio: flipAudio
             property alias crashAudio: crashAudio
@@ -68,7 +69,7 @@ ActivityBase {
             id: dialogHelp
             onClose: home()
         }
-
+        
         Bar {
             id: bar
             content: BarEnumContent { value: help | home | previous | next }
@@ -88,10 +89,25 @@ ActivityBase {
         Score {
             id: score
             
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            anchors.top: parent.top
+            anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
+        }
+        
+        VirtualKeyboard {
+            id: keyboard
+            
+            anchors.bottom: parent.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width
+
+            keyHeight: 35
+            equalKeyWidth: true
+            
+            onKeypress: Activity.processKeyPress(text)
+            
+            onError: console.log("VirtualKeyboard error: " + msg);
         }
         
         Wordlist {
