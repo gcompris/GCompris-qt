@@ -85,7 +85,7 @@ ActivityBase {
             property int ratio: 0
             property ParallelAnimation anim: animationLeft
 
-            opacity: progressBarOpacity
+            opacity: items.progressBarOpacity
             anchors.left: parent.left
             anchors.leftMargin: parent.width/parent.implicitWidth*62
             anchors.top: parent.top
@@ -118,7 +118,7 @@ ActivityBase {
             property int ratio: 0
             property ParallelAnimation anim: animationRight
 
-            opacity: progressBarOpacity
+            opacity: items.progressBarOpacity
             anchors.right: parent.right
             anchors.rightMargin: parent.width/parent.implicitWidth*50
             anchors.top: parent.top
@@ -151,7 +151,7 @@ ActivityBase {
             property int ratio: 0
             property ParallelAnimation anim: animationTop
 
-            opacity: progressBarOpacity
+            opacity: items.progressBarOpacity
             anchors.top: parent.top
             anchors.topMargin: parent.width/parent.implicitWidth*40
             anchors.horizontalCenter: parent.horizontalCenter
@@ -229,6 +229,9 @@ ActivityBase {
                 },State {
                     name: "CENTER"
                     PropertyChanges { target: ball; x:parent.width/2-width/2; y:background.height*0.1}
+                },State {
+                    name: "FAIL"
+                    PropertyChanges { target: ball; x:parent.width/2-width/2; y:300}
                 }
             ]
 
@@ -262,7 +265,7 @@ ActivityBase {
                             playBrick.play()
 
                             /* Success or not */
-                            if(progess.ratio<70) {
+                            if(progess.ratio<100) {
                                 /* Success */
                                 if(progess===progressLeft) {
                                     ball.state="LEFT"
@@ -275,7 +278,7 @@ ActivityBase {
                                 bonus.good("tux")
                             } else {
                                 /* failure */
-                                ball.y=300
+                                ball.state="FAIL"
                                 bonus.bad("tux")
                             }
                         } else {
