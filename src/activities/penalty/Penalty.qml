@@ -69,6 +69,16 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
         }
 
+        /* Text to help */
+        Text {
+            id: help
+            y:parent.height*0.65
+            anchors.horizontalCenter: parent.horizontalCenter
+            font.pointSize: 22
+            color: "white"
+            text: ""
+        }
+
         /* The progress bars */
         Rectangle {
             id: progressLeft
@@ -176,6 +186,22 @@ ActivityBase {
             width: parent.width/parent.implicitWidth*implicitWidth
             height: parent.height/parent.implicitHeight*implicitHeight
             x:parent.width/2-width/2
+
+            MouseArea {
+                anchors.fill: parent
+                acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MidButton
+                onClicked: {
+                    if (ball.y!=ball.parent.height*0.77-ball.height/2) {
+                        /* The ball is not on the initial place */
+                        help.text = qsTr("Click on the ball to place it again.")
+                    }
+                    else
+                    {
+                        /* The ball is  on the initial place */
+                        help.text = qsTr("Click twice on the ball to shoot it.")
+                    }
+                }
+            }
         }
 
         /* The ball */
@@ -185,20 +211,35 @@ ActivityBase {
             fillMode: Image.PreserveAspectFit
             width: parent.width/parent.implicitWidth*implicitWidth
             height: parent.height/parent.implicitHeight*implicitHeight
-            x:parent.width/2-width/2
-            y:parent.height*0.77-height/2
 
             Behavior on x { PropertyAnimation {easing.type: Easing.OutQuad; duration:  1000} }
             Behavior on y { PropertyAnimation {easing.type: Easing.OutQuad; duration:  1000} }
+
+            state: "INITIAL"
+            states: [
+                State {
+                    name: "INITIAL"
+                    PropertyChanges { target: ball; x:parent.width/2-width/2; y:parent.height*0.77-height/2}
+                },State {
+                    name: "RIGHT"
+                    PropertyChanges { target: ball; x:background.width*0.8; y:background.height*0.3}
+                },State {
+                    name: "LEFT"
+                    PropertyChanges { target: ball; x:background.width*0.2; y:background.height*0.3}
+                },State {
+                    name: "CENTER"
+                    PropertyChanges { target: ball; x:parent.width/2-width/2; y:background.height*0.1}
+                }
+            ]
 
             MouseArea {
                 anchors.fill: parent
                 acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MidButton
                 onClicked: {
+                    help.text = ""
                     if (ball.y!=ball.parent.height*0.77-ball.height/2) {
                         /* Reset initial position */
-                        ball.x=ball.parent.width/2-ball.width/2
-                        ball.y=ball.parent.height*0.77-ball.height/2
+                        ball.state = "INITIAL"
                         progressRight.ratio=0
                         progressLeft.ratio=0
                         progressTop.ratio=0
@@ -224,13 +265,11 @@ ActivityBase {
                             if(progess.ratio<70) {
                                 /* Success */
                                 if(progess===progressLeft) {
-                                    ball.x=background.width*0.2
-                                    ball.y=background.height*0.3
+                                    ball.state="LEFT"
                                 } else if(progess===progressRight) {
-                                    ball.x=background.width*0.8
-                                    ball.y=background.height*0.3
+                                    ball.state="RIGHT"
                                 } else {
-                                    ball.y=background.height*0.1
+                                    ball.state="CENTER"
                                 }
 
                                 bonus.good("tux")
