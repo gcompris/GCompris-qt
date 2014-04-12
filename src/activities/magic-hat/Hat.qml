@@ -1,5 +1,5 @@
 import QtQuick 2.1
-import "magic-hat.js" as ApplicationLogic
+import "magic-hat.js" as Activity
 
 Item {
     id: hatItem
@@ -35,7 +35,7 @@ Item {
         }
         transform: Rotation{
             id: rotate
-            origin.x:hatImg.x/2
+            origin.x:hatImg.x/3
             origin.y:hatImg.y
             axis.x: 0
             axis.y: 0
@@ -79,6 +79,13 @@ Item {
                                            }
                                            else RotationAnimation.Clockwise
                                 duration: 500
+                                onRunningChanged: {
+                                    console.log("blah")
+                                    if(!rotAnim.running){
+                                         console.log("moving stars")
+                                         Activity.moveStars()
+                                    }
+                                }
                     }
             }
         ]
@@ -88,7 +95,6 @@ Item {
         id: hatMouseArea
         anchors.fill:parent
         onClicked: {
-            ApplicationLogic.moveStarsUnderTheHat()
             if(hatImg.state=="NormalPosition")
                 hatImg.state="Rotated"
         }

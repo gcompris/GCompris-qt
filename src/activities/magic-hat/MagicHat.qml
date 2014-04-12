@@ -110,9 +110,9 @@ ActivityBase {
             property alias starsBar1: sb1
             property alias starsBar2: sb2
             property alias starsBar3: sb3
+            property alias starsBarAnswer : sbAnswer
             property alias starsSize: sb0.starsSize
             property alias columnY : secondRow.y
-            property alias columnX : secondRow.x
         }
 
         onStart: { Activity.start(items,mode) }
