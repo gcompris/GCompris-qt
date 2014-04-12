@@ -56,7 +56,7 @@ ActivityBase {
         }
         Grid {
             anchors.right: background.right
-            anchors.rightMargin: -background.width/25
+            anchors.rightMargin: -background.width/26
             anchors.verticalCenter: background.verticalCenter
             anchors.verticalCenterOffset: background.height/6
             width: background.width/2
@@ -65,6 +65,7 @@ ActivityBase {
             rows: 3
             spacing: background.height/5
             Column{
+                id: firstRow
                 spacing: 5
                 StarsBar{
                     id: sb0
@@ -77,6 +78,7 @@ ActivityBase {
                 }
             }
             Column{
+                id: secondRow
                 spacing: 5
                 StarsBar{
                     id: sb2
@@ -89,6 +91,7 @@ ActivityBase {
                 }
             }
             StarsBar{
+                id: sbAnswer
                 nbStarsOn: 0
                 starsSize: background.height/18
                 authorizeClick: true
@@ -107,6 +110,9 @@ ActivityBase {
             property alias starsBar1: sb1
             property alias starsBar2: sb2
             property alias starsBar3: sb3
+            property alias starsSize: sb0.starsSize
+            property alias columnY : secondRow.y
+            property alias columnX : secondRow.x
         }
 
         onStart: { Activity.start(items,mode) }

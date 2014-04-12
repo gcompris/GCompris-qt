@@ -1,5 +1,5 @@
 import QtQuick 2.1
-import "magic-hat.js" as ApplicationLogic
+import "magic-hat.js" as Activity
 
 
 Item{
@@ -11,7 +11,7 @@ Item{
     width: 34
     height: 34
 
-    MouseArea{
+    MouseArea {
         id:mouseArea
         anchors.fill:parent
         enabled: isClickable
@@ -21,7 +21,7 @@ Item{
                  starState="off"
             }
             else starState="on"
-            ApplicationLogic.verifyAnswer(starState)
+            Activity.verifyAnswer(starState)
         }
     }
 
@@ -80,7 +80,7 @@ Item{
             id: movingAnimation
             duration: 1000
             onRunningChanged: if(!movingAnimation.running){
-                                  ApplicationLogic.hideStarsUnderHat()
+                                  Activity.hideStarsUnderHat()
                               }
         }
     }

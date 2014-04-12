@@ -1,22 +1,31 @@
 import QtQuick 2.0
 import "magic-hat.js" as Activity
 
-Item{
+Item {
     property int nbStarsOn: 0
     property bool authorizeClick: false
     property int starsSize: 32
+    property alias repeater : repeaterStarsOn
 
     id: item
-    width: row.width
+    width: starsSize
     height: starsSize
 
-    Row{
-        id: row
+    Row {
+        id: rowlayout
         height: item.height
         spacing: 5
-        Repeater{
+        Repeater {
+            id: repeaterStarsOn
             model: nbStarsOn
-            Star{
+            Star {
+                starState: "on"
+                width: item.height
+                height: item.height
+                displayBounds: false
+                isClickable: authorizeClick
+            }
+            Star {
                 starState: "on"
                 width: item.height
                 height: item.height
@@ -24,9 +33,10 @@ Item{
                 isClickable: authorizeClick
             }
         }
-        Repeater{
+        Repeater {
+            id: repeaterStarsOff
             model: 10-nbStarsOn
-            Star{
+            Star {
                 starState: "off"
                 width: item.height
                 height: item.height

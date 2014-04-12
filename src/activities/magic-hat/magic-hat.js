@@ -74,52 +74,11 @@ function createStarsToMoveUnderHat(){
         var starcomponent=Qt.createComponent("Star.qml")
         var star=starcomponent.createObject(items.background,
                                                 {
-                                                    "x" : items.starsBar0.x,
-                                                    "y" : items.starsBar0.y,
-                                                    "width" : items.starsBar0.starsSize,
-                                                    "height" : items.starsBar0.starsSize,
-                                                    "starState" : "on",
-                                                    "displayBounds": false
-                                                })
-         starsToCount[nbStarsToCount]=star
-        nbStarsToCount++
-   }
-    for(var i=0;i<nbStars[1];i++){
-        starcomponent=Qt.createComponent("Star.qml")
-        star=starcomponent.createObject(items.background,
-                                                {
-                                                    "x" : items.starsBar1.x,
-                                                    "y" : items.starsBar1.y,
-                                                    "width" : items.starsBar1.starsSize,
-                                                    "height" : items.starsBar1.starsSize,
-                                                    "starState" : "on",
-                                                    "displayBounds": false
-                                                })
-         starsToCount[nbStarsToCount]=star
-        nbStarsToCount++
-   }
-    for(var i=0;i<nbStars[2];i++){
-        starcomponent=Qt.createComponent("Star.qml")
-        star=starcomponent.createObject(items.background,
-                                                {
-                                                    "x" : items.starsBar2.x,
-                                                    "y" : items.starsBar2.y,
-                                                    "width" : items.starsBar2.starsSize,
-                                                    "height" : items.starsBar2.starsSize,
-                                                    "starState" : "on",
-                                                    "displayBounds": false
-                                                })
-         starsToCount[nbStarsToCount]=star
-        nbStarsToCount++
-   }
-    for(var i=0;i<nbStars[3];i++){
-        starcomponent=Qt.createComponent("Star.qml")
-        star=starcomponent.createObject(items.background,
-                                                {
-                                                    "x" : items.starsBar3.x,
-                                                    "y" : items.starsBar3.y,
-                                                    "width" : items.starsBar3.starsSize,
-                                                    "height" : items.starsBar3.starsSize,
+                                                    "x" : magicHat.x + magicHat.width/2,
+                                                    "y" : magicHat.y + magicHat.height/1.5,
+                                                    "z" : magicHat.z - 1,
+                                                    "width" : items.starsSize,
+                                                    "height" : items.starsSize,
                                                     "starState" : "on",
                                                     "displayBounds": false
                                                 })
@@ -128,7 +87,7 @@ function createStarsToMoveUnderHat(){
    }
 }
 
-function verifyAnswer(starState){
+function verifyAnswer(starState) {
     if(starState=="on"){
         nbUserStars++
     }
@@ -154,9 +113,9 @@ function previousLevel() {
 
 function moveStarsUnderTheHat(){
     for(var i=0;i<nbStarsUnderHat;i++){
-        starsToCount[i].x=magicHat.imageX + magicHat.imageWidth/2
-        starsToCount[i].y=magicHat.imageY + magicHat.imageHeight
-        starsToCount[i].z=magicHat.imageZ-1
+        starsToCount[i].x=items.background.width/2 + items.background.width/26 + i*(items.starsSize + 5)
+        starsToCount[i].y=items.columnY + items.background.height/6
+        starsToCount[i].z++
     }
 }
 
