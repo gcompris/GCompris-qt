@@ -236,22 +236,19 @@ to make the ball go in a straight line.")
             }
         }
 
-        Audio {
+        GCAudio {
             id: brick
             source: "qrc:/gcompris/src/activities/ballcatch/resource/brick.wav"
-            onError: console.log("brick play error: " + errorString)
         }
 
-        Audio {
+        GCAudio {
             id: tuxok
             source: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
-            onError: console.log("tux play error: " + errorString)
         }
 
-        Audio {
+        GCAudio {
             id: youcannot
             source: "qrc:/gcompris/src/activities/ballcatch/resource/youcannot.wav"
-            onError: console.log("youcannot play error: " + errorString)
         }
 
         /* Timer starting when user first presses a first key.

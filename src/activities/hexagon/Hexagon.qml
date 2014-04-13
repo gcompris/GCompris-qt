@@ -34,7 +34,7 @@ ActivityBase {
         onStop: Activity.stop()
 
         // For perf reason it is best not to put this in each HexagonItem
-        Audio {
+        GCAudio {
             id: audioDrip
             source: "qrc:/gcompris/src/activities/clickgame/resource/drip.wav"
         }

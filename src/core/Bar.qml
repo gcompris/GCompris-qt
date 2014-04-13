@@ -33,6 +33,7 @@ Item {
     property int level: 0
     signal aboutClicked
     signal helpClicked
+    signal configClicked
     signal nextLevelClicked
     signal previousLevelClicked
     signal repeatClicked
@@ -101,6 +102,13 @@ Item {
             sourceSize.width: 66 * barZoom
             contentId: content.repeat
             onClicked: bar.repeatClicked()
+        }
+        BarButton {
+            id: configButton
+            source: "qrc:/gcompris/src/core/resource/bar_config.svgz";
+            contentId: content.config
+            sourceSize.width: 66 * barZoom
+            onClicked: bar.configClicked()
         }
         BarButton {
             id: homeButton

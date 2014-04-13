@@ -81,7 +81,7 @@ Image {
         audioEraser.play()
     }
 
-    Audio {
+    GCAudio {
         id: audioEraser
         source: ix % 2 ? "qrc:/gcompris/src/activities/erase/resource/eraser1.wav" :
                          "qrc:/gcompris/src/activities/erase/resource/eraser2.wav"

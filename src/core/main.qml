@@ -33,10 +33,9 @@ Window {
     minimumHeight: 400
     title: "GCompris"
 
-    Audio {
+    GCAudio {
         id: audio
         source: "qrc:/gcompris/src/core/resource/intro.ogg"
-        onError: console.log("intro play error: " + errorString)
         autoPlay: true
     }
 

@@ -21,7 +21,7 @@ ActivityBase {
     property string backgroundImg
     property string type  //define if it's a "picture" ou a "sound" memory
     property var dataset
-    property Audio sound1
+    property GCAudio sound1
 
     onStart: {}
     onStop: {}
@@ -35,7 +35,7 @@ ActivityBase {
     }
 
     // For perf reason it is best not to put this in each HexagonItem
-    Audio {
+    GCAudio {
         id: sound1
         source: ""
     }
