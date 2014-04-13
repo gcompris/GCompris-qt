@@ -187,21 +187,15 @@ ActivityBase {
             onError: console.log("Click_on_letter: levelsFile error: " + msg);
         }
 
-        Audio {
+        GCAudio {
             id: nextLevelAudio
             source: ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/click_on_letter.ogg")
-            
-            onErrorChanged: console.log("Click_on_letter: nextLevelAudio error: " +
-                    error + ": " + errorString + " (source: " + source + ")")
         }
 
-        Audio {
+        GCAudio {
             id: letterAudio
             source: ""
-            
-            onErrorChanged: console.log("Click_on_letter: letterAudio error: "
-                    + error + ": " + errorString + " (source: " + source + ")")
-            
+
             function playDelayed(ms) {
                 if (letterAudioTimer.running)
                     letterAudioTimer.stop();

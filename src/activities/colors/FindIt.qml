@@ -80,7 +80,7 @@ ActivityBase {
             }
         }
 
-        Audio {
+        GCAudio {
             id: audioQuestion
         }
 

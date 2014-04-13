@@ -4,7 +4,7 @@ set(gcompris_SRCS
    ActivityInfo.cpp
    ActivityInfoTree.cpp
    ApplicationInfo.cpp
-#   ApplicationSettings.cpp
+   ApplicationSettings.cpp
    File.cpp
    main.cpp
 )
@@ -14,7 +14,7 @@ set(gcompris_HEADERS
    ActivityInfo.h
    ActivityInfoTree.h
    ApplicationInfo.h
-#   ApplicationSettings.h
+   ApplicationSettings.h
    File.h
 )
 
@@ -22,11 +22,9 @@ set(gcompris_RCCS ${gcompris_RCCS} core.qrc CACHE STRING "resourceFile" FORCE)
 
 qt5_wrap_cpp(gcompris_MOC ${gcompris_SRCS} ${gcompris_HEADERS})
 qt5_add_resources(gcompris_RCC_SRCS ${gcompris_RCCS})
-set(gcompris_RCC_SRCS ${gcompris_RCC_SRCS} )
+set(gcompris_RCC_SRCS ${gcompris_RCC_SRCS})
 
-#if (USE_KCONFIG)
-#  link_directories( ${KCONFIG_LIBRARY_DIR} )
-#endif (USE_KCONFIG)
+include_directories(${KCONFIG_INCLUDE_DIR})
 
 set_source_files_properties(${gcompris_RCC_SRCS} PROPERTIES GENERATED ON)
 
@@ -35,7 +33,7 @@ if(NOT ANDROID)
   qt5_use_modules(GCompris Qml Quick Gui Multimedia Network XmlPatterns Svg Core)
   target_link_libraries(GCompris
     ${QT_LIBRARIES}
-    #  ${KCONFIG_LIB}
+    ${KCONFIG_LIBRARY}
     )
 endif(NOT ANDROID)
 
@@ -44,6 +42,6 @@ if(ANDROID)
   qt5_use_modules(GCompris Qml Quick Gui Multimedia Core Svg XmlPatterns)
   target_link_libraries(GCompris
     ${QT_LIBRARIES}
-    #  ${KCONFIG_LIB}
+    #${KCONFIG_LIB}
   )
 endif(ANDROID)

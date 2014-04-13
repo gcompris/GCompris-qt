@@ -11,7 +11,7 @@ Image {
     property string audioSrc
     property string question
 
-    Audio {
+    GCAudio {
         id: audio
         source: audioSrc
     }

@@ -19,7 +19,7 @@ AnimatedSprite {
         x = targetX
     }
 
-    Audio {
+    GCAudio {
         id: audioDrip
         source: "qrc:/gcompris/src/activities/clickgame/resource/drip.wav"
     }

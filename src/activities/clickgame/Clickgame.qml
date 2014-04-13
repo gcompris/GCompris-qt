@@ -13,10 +13,9 @@ ActivityBase {
     onStart: {}
     onStop: {}
 
-    Audio {
+    GCAudio {
         id: audio
         source: "qrc:/gcompris/src/activities/clickgame/resource/bubble.wav"
-        onError: console.log("bubble play error: " + errorString)
     }
 
     Timer {
