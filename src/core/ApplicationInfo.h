@@ -45,6 +45,8 @@
 #include <QtQml/QQmlPropertyMap>
 #include <QQmlEngine>
 
+#include "ApplicationSettings.h"
+
 class ApplicationInfo : public QObject
 {
 	Q_OBJECT
@@ -60,6 +62,9 @@ class ApplicationInfo : public QObject
 	Q_PROPERTY(qreal sliderHandleWidth READ sliderHandleWidth NOTIFY ratioChanged)
 	Q_PROPERTY(qreal sliderHandleHeight READ sliderHandleHeight NOTIFY ratioChanged)
 	Q_PROPERTY(qreal sliderGapWidth READ sliderGapWidth NOTIFY ratioChanged)
+    Q_PROPERTY(bool isAudioEnabled READ isAudioEnabled WRITE setIsAudioEnabled NOTIFY audioEnabledChanged)
+    Q_PROPERTY(bool isEffectEnabled READ isEffectEnabled WRITE setIsEffectEnabled NOTIFY effectEnabledChanged)
+    Q_PROPERTY(bool isFullscreen READ isFullscreen WRITE setFullscreen NOTIFY fullscreenChanged)
 
 public:
 
@@ -93,10 +98,24 @@ public:
 	qreal sliderGapWidth()  { return m_sliderGapWidth; }
 	qreal sliderHandleWidth()  { return m_sliderHandleWidth; }
 
+    bool isAudioEnabled() const { return m_applicationSettings.isAudioEnabled(); }
+    void setIsAudioEnabled(const bool newMode) {m_applicationSettings.setIsAudioEnabled(newMode);emit audioEnabledChanged();}
+
+    bool isEffectEnabled() const { return m_applicationSettings.isEffectEnabled(); }
+    void setIsEffectEnabled(const bool newMode) {m_applicationSettings.setIsEffectEnabled(newMode); emit effectEnabledChanged();}
+
+    bool isFullscreen() const { return m_applicationSettings.isFullscreen(); }
+    void setFullscreen(const bool newMode) {m_applicationSettings.setFullscreen(newMode); emit fullscreenChanged();}
+
 protected slots:
 	void notifyPortraitMode();
 
     Q_INVOKABLE QString getAudioFilePath(const QString &file);
+
+    Q_INVOKABLE void notifyAudioEnabledChanged() {}
+    Q_INVOKABLE void notifyEffectEnabledChanged() {}
+    Q_INVOKABLE void notifyFullscreenChanged() {}
+
 
 protected:
 	qreal getSizeWithRatio(const qreal height) { return ratio() * height; }
@@ -106,6 +125,12 @@ signals:
 	void portraitModeChanged();
 	void hMarginChanged();
 	void ratioChanged();
+    void applicationSettingsChanged();
+
+    void audioEnabledChanged();
+    void effectEnabledChanged();
+    void fullscreenChanged();
+
 
 private:
 	int m_applicationWidth;
@@ -116,6 +141,8 @@ private:
 	qreal m_ratio;
 	qreal m_hMargin;
 	qreal m_sliderHandleHeight, m_sliderHandleWidth, m_sliderGapWidth;
+
+    ApplicationSettings m_applicationSettings;
 };
 
 #endif // APPLICATIONINFO_H

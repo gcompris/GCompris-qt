@@ -108,15 +108,24 @@ ActivityBase {
         activityInfo: ActivityInfoTree.rootMenu
     }
 
+    DialogConfig {
+        id: dialogConfig
+        onClose: home()
+    }
+
     Bar {
         id: bar
-        content: BarEnumContent { value: help | exit | about }
+        content: BarEnumContent { value: help | exit | config | about }
         onAboutClicked: {
             displayDialog(dialogAbout)
         }
 
         onHelpClicked: {
             displayDialog(dialogHelp)
+        }
+
+        onConfigClicked: {
+            displayDialog(dialogConfig)
         }
     }
 }

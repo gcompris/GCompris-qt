@@ -132,9 +132,8 @@ ActivityBase {
             background: background
         }
 
-        Audio {
+        GCAudio {
             id: audio
-            onError: console.log("Plane.qml, bonus play error: " + errorString)
         }
 
     }

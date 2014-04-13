@@ -113,9 +113,8 @@ Image {
         clip: false
     }
 
-    Audio {
+    GCAudio {
         id: audioNumber
-        onError: { console.log("voice " + source + " play error: " + errorString); }
     }
 
 }

@@ -18,14 +18,18 @@
         <file>Bonus.qml</file>
         <file>DialogAbout.qml</file>
         <file>DialogBackground.qml</file>
+        <file>DialogConfig.qml</file>
         <file>DialogHelp.qml</file>
+        <file>GCAudio.qml</file>
         <file>GCButtonStyle.qml</file>
+        <file>GCComboBoxStyle.qml</file>
         <file>main.qml</file>
         <file>NumPad.qml</file>
         <file>ParticleSystemStar.qml</file>
         <file>ReadyButton.qml</file>
         <file>Score.qml</file>
         <file>Wordlist.qml</file>
+        <file>resource/apply.svgz</file>
         <file>resource/bar_about.svgz</file>
         <file>resource/bar_config.svgz</file>
         <file>resource/bar_exit.svgz</file>

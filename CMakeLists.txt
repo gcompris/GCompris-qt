@@ -11,15 +11,13 @@ set(GCOMPRIS_PATCH_VERSION 0)
 
 set(GCOMPRIS_VERSION ${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION}.${GCOMPRIS_PATCH_VERSION})
 
-#option(USE_KCONFIG
-#  "Use KConfig to store persistent data" OFF)
+# cmake modules setup
+set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/")
 
-#if (USE_KCONFIG)
-  # Compile 3rd party
-#  add_subdirectory(3rdparty)
-#  find_package(ECM 0.0.11 REQUIRED NO_MODULE)
-#  find_package(KConfig REQUIRED)
-#endif(USE_KCONFIG)
+# Compile 3rd party
+#add_subdirectory(3rdparty)
+#find_package(ECM 0.0.11 REQUIRED NO_MODULE)
+find_package(KConfig REQUIRED)
 
 set(QT_REQUIRED_VERSION 5.2.0)
 
