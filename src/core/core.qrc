@@ -71,6 +71,6 @@
         <file>resource/sounds/bleep.wav</file>
         <file>resource/sounds/bonus.wav</file>
         <file>resource/sounds/brick.wav</file>
-        <file>resource/sounds/flip.wav</file>
+        <file>resource/sounds/flip.wav</file>     
     </qresource>
 </RCC>
