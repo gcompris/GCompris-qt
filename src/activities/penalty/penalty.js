@@ -1,10 +1,10 @@
 /* GCompris - penalty.js
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 Stephane Mankowski <stephane@mankowski.fr>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+ *   Stephane Mankowski <stephane@mankowski.fr> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -42,11 +42,11 @@ function initLevel() {
     if(currentLevel === 0) items.duration = 1000
     else if(currentLevel === 1) items.duration = 800
     else if(currentLevel === 2) items.duration = 600
-    else if(currentLevel === 3)  items.duration = 400
+    else if(currentLevel === 3) items.duration = 400
     else if(currentLevel === 4) items.duration = 250
     else if(currentLevel === 5) items.duration = 200
     else if(currentLevel === 6) items.duration = 180
-    else if(currentLevel == 7) items.duration = 170
+    else if(currentLevel === 7) items.duration = 170
     else if(currentLevel === 8) items.duration = 160
 }
 

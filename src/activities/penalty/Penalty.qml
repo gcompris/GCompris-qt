@@ -1,10 +1,10 @@
-/* GCompris - penalty.qml
+/* GCompris - Penalty.qml
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 Stephane Mankowski <stephane@mankowski.fr>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+ *   Stephane Mankowski <stephane@mankowski.fr> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -69,14 +69,15 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
         }
 
-        /* Text to help */
+        /* Instruction */
         Text {
-            id: help
+            id: instruction
             y:parent.height*0.65
             anchors.horizontalCenter: parent.horizontalCenter
             font.pointSize: 22
             color: "white"
             text: ""
+            z: 99
         }
 
         /* The progress bars */
@@ -193,12 +194,12 @@ ActivityBase {
                 onClicked: {
                     if (ball.y!=ball.parent.height*0.77-ball.height/2) {
                         /* The ball is not on the initial place */
-                        help.text = qsTr("Click on the ball to place it again.")
+                        instruction.text = qsTr("Click on the ball to place it again.")
                     }
                     else
                     {
                         /* The ball is  on the initial place */
-                        help.text = qsTr("Click twice on the ball to shoot it.")
+                        instruction.text = qsTr("Click twice on the ball to shoot it.")
                     }
                 }
             }
@@ -239,7 +240,7 @@ ActivityBase {
                 anchors.fill: parent
                 acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MidButton
                 onClicked: {
-                    help.text = ""
+                    instruction.text = ""
                     if (ball.y!=ball.parent.height*0.77-ball.height/2) {
                         /* Reset initial position */
                         ball.state = "INITIAL"
