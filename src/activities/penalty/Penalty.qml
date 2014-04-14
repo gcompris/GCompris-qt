@@ -72,7 +72,7 @@ ActivityBase {
         /* Instruction */
         Text {
             id: instruction
-            y:parent.height*0.65
+            y: parent.height * 0.65
             anchors.horizontalCenter: parent.horizontalCenter
             font.pointSize: 22
             color: "white"
@@ -88,11 +88,11 @@ ActivityBase {
 
             opacity: items.progressBarOpacity
             anchors.left: parent.left
-            anchors.leftMargin: parent.width/parent.implicitWidth*62
+            anchors.leftMargin: parent.width / parent.implicitWidth * 62
             anchors.top: parent.top
-            anchors.topMargin: parent.height/parent.implicitHeight*100
-            width: ratio/100*parent.width/parent.implicitWidth*200
-            height: parent.height/parent.implicitHeight*20
+            anchors.topMargin: parent.height / parent.implicitHeight * 100
+            width: ratio / 100 * parent.width / parent.implicitWidth * 200
+            height: parent.height / parent.implicitHeight * 20
             ParallelAnimation {
                 id: animationLeft
                 PropertyAnimation
@@ -121,11 +121,11 @@ ActivityBase {
 
             opacity: items.progressBarOpacity
             anchors.right: parent.right
-            anchors.rightMargin: parent.width/parent.implicitWidth*50
+            anchors.rightMargin: parent.width/parent.implicitWidth * 50
             anchors.top: parent.top
-            anchors.topMargin: parent.height/parent.implicitHeight*100
-            width: ratio/100*parent.width/parent.implicitWidth*200
-            height: parent.height/parent.implicitHeight*20
+            anchors.topMargin: parent.height/parent.implicitHeight * 100
+            width: ratio / 100 * parent.width / parent.implicitWidth * 200
+            height: parent.height / parent.implicitHeight * 20
             ParallelAnimation {
                 id: animationRight
                 PropertyAnimation
@@ -154,10 +154,10 @@ ActivityBase {
 
             opacity: items.progressBarOpacity
             anchors.top: parent.top
-            anchors.topMargin: parent.width/parent.implicitWidth*40
+            anchors.topMargin: parent.width / parent.implicitWidth * 40
             anchors.horizontalCenter: parent.horizontalCenter
-            width: parent.height/parent.implicitHeight*20
-            height: ratio/100*parent.width/parent.implicitWidth*100
+            width: parent.height / parent.implicitHeight * 20
+            height: ratio / 100 * parent.width / parent.implicitWidth * 100
             ParallelAnimation {
                 id: animationTop
                 PropertyAnimation
@@ -184,15 +184,15 @@ ActivityBase {
             source: Activity.url + "penalty_player.svgz"
             fillMode: Image.PreserveAspectFit
             anchors.verticalCenter: parent.verticalCenter
-            width: parent.width/parent.implicitWidth*implicitWidth
-            height: parent.height/parent.implicitHeight*implicitHeight
-            x:parent.width/2-width/2
+            width: parent.width / parent.implicitWidth * implicitWidth
+            height: parent.height / parent.implicitHeight * implicitHeight
+            x: parent.width/2 - width/2
 
             MouseArea {
                 anchors.fill: parent
                 acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MidButton
                 onClicked: {
-                    if (ball.y!=ball.parent.height*0.77-ball.height/2) {
+                    if (ball.y != ball.parent.height * 0.77-ball.height/2) {
                         /* The ball is not on the initial place */
                         instruction.text = qsTr("Click on the ball to place it again.")
                     }
@@ -210,8 +210,8 @@ ActivityBase {
             id: ball
             source: Activity.url + "penalty_ball.svgz"
             fillMode: Image.PreserveAspectFit
-            width: parent.width/parent.implicitWidth*implicitWidth
-            height: parent.height/parent.implicitHeight*implicitHeight
+            width: parent.width / parent.implicitWidth * implicitWidth
+            height: parent.height / parent.implicitHeight * implicitHeight
 
             Behavior on x { PropertyAnimation {easing.type: Easing.OutQuad; duration:  1000} }
             Behavior on y { PropertyAnimation {easing.type: Easing.OutQuad; duration:  1000} }
@@ -220,19 +220,43 @@ ActivityBase {
             states: [
                 State {
                     name: "INITIAL"
-                    PropertyChanges { target: ball; x:parent.width/2-width/2; y:parent.height*0.77-height/2}
-                },State {
+                    PropertyChanges {
+                        target: ball;
+                        x: parent.width/2 - width/2;
+                        y: parent.height*0.77 - height/2
+                    }
+                },
+                State {
                     name: "RIGHT"
-                    PropertyChanges { target: ball; x:background.width*0.8; y:background.height*0.3}
-                },State {
+                    PropertyChanges {
+                        target: ball;
+                        x: background.width * 0.8;
+                        y: background.height * 0.3
+                    }
+                },
+                State {
                     name: "LEFT"
-                    PropertyChanges { target: ball; x:background.width*0.2; y:background.height*0.3}
-                },State {
+                    PropertyChanges {
+                        target: ball;
+                        x: background.width * 0.2;
+                        y: background.height * 0.3
+                    }
+                },
+                State {
                     name: "CENTER"
-                    PropertyChanges { target: ball; x:parent.width/2-width/2; y:background.height*0.1}
-                },State {
+                    PropertyChanges {
+                        target: ball;
+                        x: parent.width/2 - width/2;
+                        y: background.height * 0.1
+                    }
+                },
+                State {
                     name: "FAIL"
-                    PropertyChanges { target: ball; x:parent.width/2-width/2; y:300}
+                    PropertyChanges {
+                        target: ball;
+                        x: parent.width/2 - width/2;
+                        y: 300
+                    }
                 }
             ]
 
@@ -241,21 +265,21 @@ ActivityBase {
                 acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MidButton
                 onClicked: {
                     instruction.text = ""
-                    if (ball.y!=ball.parent.height*0.77-ball.height/2) {
+                    if (ball.y != ball.parent.height * 0.77 - ball.height/2) {
                         /* Reset initial position */
                         ball.state = "INITIAL"
-                        progressRight.ratio=0
-                        progressLeft.ratio=0
-                        progressTop.ratio=0
+                        progressRight.ratio = 0
+                        progressLeft.ratio = 0
+                        progressTop.ratio = 0
                     }
                     else
                     {
                         /* This is a shoot */
-                        var progess=progressTop
+                        var progess = progressTop
                         if (mouse.button == Qt.LeftButton) {
-                            progess=progressLeft
+                            progess = progressLeft
                         } else if (mouse.button == Qt.RightButton) {
-                            progess=progressRight
+                            progess = progressRight
                         }
 
                         if(progess.ratio > 0) {
@@ -266,20 +290,20 @@ ActivityBase {
                             playBrick.play()
 
                             /* Success or not */
-                            if(progess.ratio<100) {
+                            if(progess.ratio < 100) {
                                 /* Success */
-                                if(progess===progressLeft) {
-                                    ball.state="LEFT"
-                                } else if(progess===progressRight) {
-                                    ball.state="RIGHT"
+                                if(progess === progressLeft) {
+                                    ball.state = "LEFT"
+                                } else if(progess === progressRight) {
+                                    ball.state = "RIGHT"
                                 } else {
-                                    ball.state="CENTER"
+                                    ball.state = "CENTER"
                                 }
 
                                 bonus.good("tux")
                             } else {
                                 /* failure */
-                                ball.state="FAIL"
+                                ball.state = "FAIL"
                                 bonus.bad("tux")
                             }
                         } else {
