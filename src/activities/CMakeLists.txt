@@ -16,11 +16,6 @@ foreach(ACTIVITY ${ACTIVITIES})
     if("USE_${ACTIVITY}")
       # Add the directory for compilation
       add_subdirectory(${ACTIVITY})
-
-      # Add the qml/js for qtcreator project
-      file(GLOB gcompris_SRCS ${ACTIVITY}/*.qml ${ACTIVITY}/*.js)
-      set(gcompris_SRCS ${QML_SRC} ${gcompris_SRCS})
-
     endif("USE_${ACTIVITY}")
   endif(${match})
 endforeach(ACTIVITY ${ACTIVITIES})

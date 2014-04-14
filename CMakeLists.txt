@@ -29,7 +29,7 @@ find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Qml Quick Gui Multimedia
 #endforeach()
 
 # To have src/core/*{.qml/.js} files and activities.txt in qtcreator project
-file(GLOB gcompris_SRCS src/core/*.qml src/core/*.js src/activities/activities.txt)
+file(GLOB gcompris_SRCS src/core/*.qml src/core/*.js src/activities/*/*.qml src/activities/*/*.js src/activities/activities.txt)
 set(gcompris_SRCS ${QML_SRC} ${gcompris_SRCS})
 
 # Set output directory
