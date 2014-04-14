@@ -48,6 +48,15 @@ function initLevel() {
     else if(currentLevel === 6) items.duration = 180
     else if(currentLevel === 7) items.duration = 170
     else if(currentLevel === 8) items.duration = 160
+
+    resetLevel()
+}
+
+function resetLevel() {
+    items.ball.state = "INITIAL"
+    items.progressRight.ratio = 0
+    items.progressLeft.ratio = 0
+    items.progressTop.ratio = 0
 }
 
 function nextLevel() {

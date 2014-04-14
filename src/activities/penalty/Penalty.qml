@@ -50,6 +50,10 @@ ActivityBase {
             property Item main: activity.main
             property alias background: background
             property alias bar: bar
+            property alias ball: ball
+            property alias progressLeft: progressLeft
+            property alias progressRight: progressRight
+            property alias progressTop: progressTop
             property alias bonus: bonus
             property int duration : 0
             property int progressBarOpacity : 40
@@ -95,6 +99,11 @@ ActivityBase {
             height: parent.height / parent.implicitHeight * 20
             ParallelAnimation {
                 id: animationLeft
+                onRunningChanged: {
+                    if (!animationLeft.running) {
+                        timerBad.start()
+                    }
+                }
                 PropertyAnimation
                 {
                     target: progressLeft
@@ -128,6 +137,11 @@ ActivityBase {
             height: parent.height / parent.implicitHeight * 20
             ParallelAnimation {
                 id: animationRight
+                onRunningChanged: {
+                    if (!animationRight.running) {
+                        timerBad.start()
+                    }
+                }
                 PropertyAnimation
                 {
                     target: progressRight
@@ -160,6 +174,11 @@ ActivityBase {
             height: ratio / 100 * parent.width / parent.implicitWidth * 100
             ParallelAnimation {
                 id: animationTop
+                onRunningChanged: {
+                    if (!animationTop.running) {
+                        timerBad.start()
+                    }
+                }
                 PropertyAnimation
                 {
                     target: progressTop
@@ -192,15 +211,8 @@ ActivityBase {
                 anchors.fill: parent
                 acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MidButton
                 onClicked: {
-                    if (ball.y != ball.parent.height * 0.77-ball.height/2) {
-                        /* The ball is not on the initial place */
-                        instruction.text = qsTr("Click on the ball to place it again.")
-                    }
-                    else
-                    {
-                        /* The ball is  on the initial place */
-                        instruction.text = qsTr("Click twice on the ball to shoot it.")
-                    }
+                    /* The ball is  on the initial place */
+                    instruction.text = qsTr("Click twice on the ball to shoot it.")
                 }
             }
         }
@@ -265,57 +277,61 @@ ActivityBase {
                 acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MidButton
                 onClicked: {
                     instruction.text = ""
-                    if (ball.y != ball.parent.height * 0.77 - ball.height/2) {
-                        /* Reset initial position */
-                        ball.state = "INITIAL"
-                        progressRight.ratio = 0
-                        progressLeft.ratio = 0
-                        progressTop.ratio = 0
+                    /* This is a shoot */
+                    var progess = progressTop
+                    if (mouse.button == Qt.LeftButton) {
+                        progess = progressLeft
+                    } else if (mouse.button == Qt.RightButton) {
+                        progess = progressRight
                     }
-                    else
-                    {
-                        /* This is a shoot */
-                        var progess = progressTop
-                        if (mouse.button == Qt.LeftButton) {
-                            progess = progressLeft
-                        } else if (mouse.button == Qt.RightButton) {
-                            progess = progressRight
-                        }
 
-                        if(progess.ratio > 0) {
-                            /* Second click, stop animation */
-                            progess.anim.running = false;
+                    if(progess.ratio > 0) {
+                        /* Second click, stop animation */
+                        progess.anim.running = false;
 
-                            /* Play sound */
-                            playBrick.play()
+                        /* Play sound */
+                        playBrick.play()
 
-                            /* Success or not */
-                            if(progess.ratio < 100) {
-                                /* Success */
-                                if(progess === progressLeft) {
-                                    ball.state = "LEFT"
-                                } else if(progess === progressRight) {
-                                    ball.state = "RIGHT"
-                                } else {
-                                    ball.state = "CENTER"
-                                }
-
-                                bonus.good("tux")
+                        /* Success or not */
+                        if(progess.ratio < 100) {
+                            /* Success */
+                            if(progess === progressLeft) {
+                                ball.state = "LEFT"
+                            } else if(progess === progressRight) {
+                                ball.state = "RIGHT"
                             } else {
-                                /* failure */
-                                ball.state = "FAIL"
-                                bonus.bad("tux")
+                                ball.state = "CENTER"
                             }
-                        } else {
-                            /* First click, start animation*/
-                            progess.anim.running = true;
 
-                            /* Play sound */
-                            playFlip.play()
+                            timerGood.start()
+                        } else {
+                            /* failure */
+                            ball.state = "FAIL"
+                            timerBad.start()
                         }
+                    } else {
+                        /* First click, start animation*/
+                        progess.anim.running = true;
+
+                        /* Play sound */
+                        playFlip.play()
                     }
                 }
             }
+        }
+
+        Timer {
+            id: timerGood
+            interval: 1500
+            onTriggered: bonus.good("tux")
+
+        }
+
+        Timer {
+            id: timerBad
+            interval: 1500
+            onTriggered: bonus.bad("tux")
+
         }
 
         DialogHelp {
@@ -336,7 +352,10 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: {
+                win.connect(Activity.nextLevel)
+                loose.connect(Activity.resetLevel)
+            }
         }
     }
 
