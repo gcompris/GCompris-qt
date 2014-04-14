@@ -9,7 +9,6 @@ include(src/core/core.pri)
 include(src/activities/menu/menu.pri)
 
 # Activity Includes
-include(src/activities/penalty/penalty.pri)
 include(src/activities/advanced_colors/advanced_colors.pri)
 include(src/activities/algebra_by/algebra_by.pri)
 include(src/activities/algebra_minus/algebra_minus.pri)
@@ -43,6 +42,7 @@ include(src/activities/money_cents/money_cents.pri)
 include(src/activities/money/money.pri)
 include(src/activities/mosaic/mosaic.pri)
 include(src/activities/numbers-odd-even/numbers-odd-even.pri)
+include(src/activities/penalty/penalty.pri)
 include(src/activities/planegame/planegame.pri)
 
 
