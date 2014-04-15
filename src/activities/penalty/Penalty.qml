@@ -21,6 +21,7 @@
  */
 import QtQuick 2.1
 import QtMultimedia 5.0
+import GCompris 1.0
 
 import "qrc:/gcompris/src/core"
 import "penalty.js" as Activity
@@ -203,8 +204,7 @@ ActivityBase {
             source: Activity.url + "penalty_player.svgz"
             fillMode: Image.PreserveAspectFit
             anchors.verticalCenter: parent.verticalCenter
-            width: parent.width / parent.implicitWidth * implicitWidth
-            height: parent.height / parent.implicitHeight * implicitHeight
+            sourceSize.width: 154 * ApplicationInfo.ratio
             x: parent.width/2 - width/2
 
             MouseArea {
@@ -217,13 +217,34 @@ ActivityBase {
             }
         }
 
+        /* The 2 click icon */
+        Image {
+            source: Activity.url + "click_icon.svgz"
+            sourceSize.width: 90 * ApplicationInfo.ratio
+            anchors.bottomMargin: 10
+            anchors.rightMargin: 10
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+        }
+
+        /* The spot under the ball */
+        Rectangle {
+            radius: ball.width / 2
+            color: "white"
+            width: ball.width / 2
+            height: ball.height / 3
+            x: parent.width / 2 - width / 2
+            y: parent.height * 0.77 + ball.height / 2 - height / 2
+            border.width: 1
+            border.color: "#b4b4b4"
+        }
+
         /* The ball */
         Image {
             id: ball
             source: Activity.url + "penalty_ball.svgz"
             fillMode: Image.PreserveAspectFit
-            width: parent.width / parent.implicitWidth * implicitWidth
-            height: parent.height / parent.implicitHeight * implicitHeight
+            sourceSize.width: 62 * ApplicationInfo.ratio
 
             Behavior on x { PropertyAnimation {easing.type: Easing.OutQuad; duration:  1000} }
             Behavior on y { PropertyAnimation {easing.type: Easing.OutQuad; duration:  1000} }
@@ -267,7 +288,7 @@ ActivityBase {
                     PropertyChanges {
                         target: ball;
                         x: parent.width/2 - width/2;
-                        y: 300
+                        y: player.y + player.height / 2
                     }
                 }
             ]
@@ -277,6 +298,12 @@ ActivityBase {
                 acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MidButton
                 onClicked: {
                     instruction.text = ""
+
+                    if(ball.state === "FAIL") {
+                        Activity.resetLevel()
+                        return
+                    }
+
                     /* This is a shoot */
                     var progess = progressTop
                     if (mouse.button == Qt.LeftButton) {
@@ -324,14 +351,12 @@ ActivityBase {
             id: timerGood
             interval: 1500
             onTriggered: bonus.good("tux")
-
         }
 
         Timer {
             id: timerBad
             interval: 1500
             onTriggered: bonus.bad("tux")
-
         }
 
         DialogHelp {
@@ -354,7 +379,6 @@ ActivityBase {
             id: bonus
             Component.onCompleted: {
                 win.connect(Activity.nextLevel)
-                loose.connect(Activity.resetLevel)
             }
         }
     }
