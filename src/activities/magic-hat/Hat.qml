@@ -5,14 +5,11 @@ Item {
     id: hatItem
     width: parent.width
     height: parent.height
-    property alias repeater : repeaterStars
-    property alias imageX: hatImg.x
-    property alias imageY: hatImg.y
-    property alias imageZ: hatImg.z
-    property alias imageWidth: hatImg.width
-    property alias imageHeight: hatImg.height
     property alias state: hatImg.state
+    property int newX
+    property int newY
     property int nbStarsUnderHat : 0
+    property double starsOpacity : 1.0
 
     Image {
         id: hatImg
@@ -72,7 +69,8 @@ Item {
                            else RotationAnimation.Clockwise
                 duration: 500
                 onRunningChanged: if(!rotAnim.running){
-                                      Activity.moveStars()
+                                      Activity.getNewStarsCoordinates()
+                                      moveStars()
                                   }
     }
 
@@ -84,6 +82,14 @@ Item {
         }
     }
 
+    function moveStars(){
+        for(var i=0;i<nbStarsUnderHat;i++){
+            repeaterStars.itemAt(i).x=newX + i*(hatItem.height/18 + 5)
+            repeaterStars.itemAt(i).y=newY
+            repeaterStars.itemAt(i).z+=2
+        }
+    }
+
     Repeater {
         id: repeaterStars
         model: nbStarsUnderHat
@@ -91,11 +97,12 @@ Item {
             starState: "on"
             height: hatItem.height/18
             width: hatItem.height/18
-            x:hatImg.x + hatImg.width/2
-            y:hatImg.y + hatImg.height - hatItem.height/18
+            x: hatImg.x + hatImg.width/2
+            y: hatImg.y + hatImg.height - hatItem.height/16
             z: hatImg.z - 1
             displayBounds: false
             isClickable: false
+            opacity: starsOpacity
         }
     }
 }

@@ -80,7 +80,7 @@ Item{
             id: movingAnimation
             duration: 1000
             onRunningChanged: if(!movingAnimation.running){
-                                  Activity.hideStarsUnderHat()
+                                  Activity.changeHatState()
                               }
         }
     }

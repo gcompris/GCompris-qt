@@ -3,7 +3,6 @@
 
 var currentLevel = 0
 var numberOfLevel = 4
-var starsToCount
 var nbTotalStars=0
 var nbUserStars=0
 var items;
@@ -29,8 +28,6 @@ function initLevel() {
     console.log("Magic hat minus activity: create some content in my activity")
     items.bar.level=currentLevel + 1
     magicHat.state="NormalPosition"
-    destroyObjects()
-    starsToCount=new Array()
     nbStars=new Array(0,0,0,0)
     nbUserStars=0
     nbStarsToRemove=0
@@ -80,21 +77,6 @@ function initLevel() {
 
     nbStarsToCount=nbTotalStars-nbStarsToRemove
 
-    createMovingStars()
-}
-
-function createMovingStars(){
-    for(var i=0;i<items.hat.nbStarsUnderHat;i++){
-        starsToCount[i]=items.hat.repeater.itemAt(i)
-    }
-}
-
-function destroyObjects() {
-    if(starsToCount) {
-        for(var i=0;i<starsToCount.length;i++) {
-            starsToCount[i].destroy()
-        }
-    }
 }
 
 function verifyAnswer(starState) {
@@ -121,15 +103,14 @@ function previousLevel() {
     initLevel();
 }
 
-function moveStars(){
-    for(var i=0;i<nbStarsToRemove;i++){
-        starsToCount[i].x=items.background.width/2 + items.background.width/26 + i*(items.starsSize + 5)
-        starsToCount[i].y=items.columnY + items.background.height/6
-        starsToCount[i].z++
-    }
+function getNewStarsCoordinates(){
+    items.hat.newX=items.background.width/2 + items.background.width/26
+    items.hat.newY=items.columnY + items.background.height/6
 }
 
-function hideStarsUnderHat(){
+function changeHatState(){
+    items.barsList[2].nbStarsOn=nbStarsToRemove
+    items.hat.starsOpacity=0
     magicHat.state="GuessNumber"
 }
 
