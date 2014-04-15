@@ -31,6 +31,7 @@ function initLevel() {
     nbStars=new Array(0,0,0,0)
     nbUserStars=0
     nbStarsToRemove=0
+    items.hat.starsOpacity=1.0
     items.barsList[0].nbStarsOn = 0
     items.barsList[1].nbStarsOn = 0
     items.barsList[2].nbStarsOn = 0
@@ -52,15 +53,15 @@ function initLevel() {
                 nbStars[1]=getRandomInt(1,2)
                 nbStars[2]=getRandomInt(1,3)
                 nbStars[3]=0
-                items.starsBar1.opacity = 1
+                items.barsList[1].opacity = 1
 
             break;
         case 3: nbStars[0]=getRandomInt(1,3)
                 nbStars[1]=getRandomInt(1,2)
                 nbStars[2]=getRandomInt(1,2)
                 nbStars[3]=getRandomInt(1,3)
-                items.starsBar1.opacity = 1
-                items.starsBar2.opacity = 1
+                items.barsList[1].opacity = 1
+                items.barsList[2].opacity = 1
             break;
     }
 

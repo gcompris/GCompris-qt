@@ -68,7 +68,7 @@ Item {
                            }
                            else RotationAnimation.Clockwise
                 duration: 500
-                onRunningChanged: if(!rotAnim.running){
+                onRunningChanged: if(!rotAnim.running && hatImg.state=="Rotated"){
                                       Activity.getNewStarsCoordinates()
                                       moveStars()
                                   }
@@ -76,17 +76,10 @@ Item {
 
     MouseArea {
         id: hatMouseArea
-        anchors.fill:parent
+        anchors.fill:hatImg
         onClicked: {
-            hatImg.state="Rotated"
-        }
-    }
-
-    function moveStars(){
-        for(var i=0;i<nbStarsUnderHat;i++){
-            repeaterStars.itemAt(i).x=newX + i*(hatItem.height/18 + 5)
-            repeaterStars.itemAt(i).y=newY
-            repeaterStars.itemAt(i).z+=2
+            if(hatImg.state=="NormalPosition")
+                hatImg.state="Rotated"
         }
     }
 
@@ -98,11 +91,19 @@ Item {
             height: hatItem.height/18
             width: hatItem.height/18
             x: hatImg.x + hatImg.width/2
-            y: hatImg.y + hatImg.height - hatItem.height/16
+            y: hatImg.y + hatImg.height - hatImg.height/8
             z: hatImg.z - 1
             displayBounds: false
             isClickable: false
             opacity: starsOpacity
+        }
+    }
+
+    function moveStars() {
+        for(var i=0;i<nbStarsUnderHat;i++){
+            repeaterStars.itemAt(i).x=newX + i*(hatItem.height/18 + 5)
+            repeaterStars.itemAt(i).y=newY
+            repeaterStars.itemAt(i).z+=2
         }
     }
 }
