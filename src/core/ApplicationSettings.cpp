@@ -70,6 +70,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent), m_co
     m_locale = generalGroup.readEntry("locale");
 
     connect(this, SIGNAL(audioEnabledChanged()), this, SLOT(notifyAudioEnabledChanged()));
+    connect(this, SIGNAL(localeChanged()), this, SLOT(notifyLocaleChanged()));
 }
 
 void ApplicationSettings::notifyAudioEnabledChanged()
@@ -81,5 +82,15 @@ void ApplicationSettings::notifyAudioEnabledChanged()
     // Save in config
     qDebug() << "notifyAudio: " << m_isAudioEnabled;
     m_config.sync();
+}
 
+void ApplicationSettings::notifyLocaleChanged()
+{
+    // Load settings from KConfig
+    KConfigGroup generalGroup = KConfigGroup(&m_config, "General");
+    generalGroup.writeEntry("locale", m_locale);
+
+    // Save in config
+    qDebug() << "new locale: " << m_locale;
+    m_config.sync();
 }

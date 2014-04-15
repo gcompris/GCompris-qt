@@ -65,6 +65,8 @@ class ApplicationInfo : public QObject
     Q_PROPERTY(bool isAudioEnabled READ isAudioEnabled WRITE setIsAudioEnabled NOTIFY audioEnabledChanged)
     Q_PROPERTY(bool isEffectEnabled READ isEffectEnabled WRITE setIsEffectEnabled NOTIFY effectEnabledChanged)
     Q_PROPERTY(bool isFullscreen READ isFullscreen WRITE setFullscreen NOTIFY fullscreenChanged)
+    Q_PROPERTY(QString locale READ locale WRITE setLocale NOTIFY localeChanged)
+    Q_PROPERTY(QString localeShort READ localeShort)
 
 public:
 
@@ -107,6 +109,12 @@ public:
     bool isFullscreen() const { return m_applicationSettings.isFullscreen(); }
     void setFullscreen(const bool newMode) {m_applicationSettings.setFullscreen(newMode); emit fullscreenChanged();}
 
+    QString locale() const { return m_applicationSettings.locale(); }
+    void setLocale(const QString newLocale) {m_applicationSettings.setLocale(newLocale); emit localeChanged();}
+
+    // Can't use left(2) because of Asturian where there are 3 chars
+    QString localeShort() const { return m_applicationSettings.locale().left(m_applicationSettings.locale().indexOf('_')); }
+
 protected slots:
 	void notifyPortraitMode();
 
@@ -130,6 +138,7 @@ signals:
     void audioEnabledChanged();
     void effectEnabledChanged();
     void fullscreenChanged();
+    void localeChanged();
 
 
 private:
