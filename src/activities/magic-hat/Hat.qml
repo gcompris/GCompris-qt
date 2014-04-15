@@ -90,8 +90,8 @@ Item {
             starState: "on"
             height: hatItem.height/18
             width: hatItem.height/18
-            x: hatImg.x + hatImg.width/2
-            y: hatImg.y + hatImg.height - hatImg.height/8
+            anchors.centerIn: parent
+            anchors.verticalCenterOffset: hatImg.height/2 - hatImg.height/6
             z: hatImg.z - 1
             displayBounds: false
             isClickable: false
@@ -101,6 +101,7 @@ Item {
 
     function moveStars() {
         for(var i=0;i<nbStarsUnderHat;i++){
+            repeaterStars.itemAt(i).anchors.centerIn= undefined
             repeaterStars.itemAt(i).x=newX + i*(hatItem.height/18 + 5)
             repeaterStars.itemAt(i).y=newY
             repeaterStars.itemAt(i).z+=2

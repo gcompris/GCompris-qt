@@ -36,7 +36,6 @@ function initLevel() {
     items.barsList[1].nbStarsOn = 0
     items.barsList[2].nbStarsOn = 0
     items.barsList[3].nbStarsOn = 0
-    items.barsList[4].nbStarsOn = 0
 
     switch(currentLevel){
         case 0: nbStars[0]=getRandomInt(2,4)
@@ -69,6 +68,7 @@ function initLevel() {
     items.barsList[1].nbStarsOn = nbStars[1]
     items.barsList[2].nbStarsOn = nbStars[2]
     items.barsList[3].nbStarsOn = nbStars[3]
+    items.barsList[4].nbStarsOn = 0
 
     nbStarsToRemove=getRandomInt(1,nbStars[0]-1)
 
