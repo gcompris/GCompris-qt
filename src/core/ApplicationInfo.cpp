@@ -48,8 +48,6 @@
 #include "ApplicationInfo.h"
 #include <QDebug>
 
-#define GC_DEFAULT_LOCALE "en_US.UTF-8"
-
 ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 {
 
@@ -99,11 +97,7 @@ QString ApplicationInfo::getAudioFilePath(const QString &file)
      *  TODO See in storage (database, QSettings)
      *  if the value exist and use it if exist
      */
-    QLocale locale = QLocale::system();
-    QString localeShortName = locale.name().split('_').at(0);
-    if(locale.language() == QLocale::C) {
-        localeShortName = "en";
-    }
+    QString localeShortName = localeShort();
 
     QString filename = file;
     filename.replace("$LOCALE", localeShortName);

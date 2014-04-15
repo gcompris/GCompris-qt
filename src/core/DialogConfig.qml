@@ -1,6 +1,7 @@
 import QtQuick 2.2
 import QtQuick.Controls 1.1
 import QtQuick.Controls.Styles 1.1
+import QtQuick.Dialogs 1.1
 import GCompris 1.0
 
 Rectangle {
@@ -96,44 +97,31 @@ Rectangle {
                         spacing: 10
                         // Put configuration here
                         CheckBox {
+                            id: enableAudioBox
                             text: "Enable audio"
-                            checked: ApplicationInfo.isAudioEnabled
+                            checked: isAudioEnabled
                             style: CheckBoxStyle {
                                 indicator: Image {
                                     sourceSize.height: 50 * ApplicationInfo.ratio
-                                    source: control.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" : "qrc:/gcompris/src/core/resource/cancel.svgz"
+                                    source:
+                                        control.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
+                                                          "qrc:/gcompris/src/core/resource/cancel.svgz"
                                 }
                             }
                             onCheckedChanged: {
-                                ApplicationInfo.isAudioEnabled = checked;
-                                print("audio enabled:" + ApplicationInfo.isAudioEnabled)
-                            }
-                        }
-                        Switch {
-                            style: SwitchStyle {
-                                groove: Rectangle {
-                                    color: control.checked ? "green" : "red"
-                                    implicitWidth: 100
-                                    implicitHeight: 20
-                                    radius: 9
-                                    border.color: control.activeFocus ? "darkblue" : "gray"
-                                    border.width: 1
-                                }
+                                isAudioEnabled = checked;
                             }
                         }
                         ComboBox {
-                            currentIndex: 2
+                            id: languageBox
                             style: GCComboBoxStyle {}
-                            model: ListModel {
-                                id: cbItems
-                                ListElement { text: "Banana"; color: "Yellow" }
-                                ListElement { text: "Apple"; color: "Green" }
-                                ListElement { text: "Coconut"; color: "Brown" }
-                            }
+                            model: languages
                             width: 200
                             onCurrentIndexChanged:
-                                console.debug(cbItems.get(currentIndex).text +
-                                              ", " + cbItems.get(currentIndex).color)
+                                if(languages != undefined) {
+                                console.debug(languages.get(currentIndex).text +
+                                              ", " + languages.get(currentIndex).locale)
+                                }
                         }
                     }
                 }
@@ -172,8 +160,52 @@ Rectangle {
         }
         MouseArea {
             anchors.fill: parent
-            onClicked: close()
+            onClicked: confirmDialog.open()
         }
     }
 
+    property bool isAudioEnabled: ApplicationInfo.isAudioEnabled
+
+    onStart: {
+        // Synchronize settings with data
+        isAudioEnabled = ApplicationInfo.isAudioEnabled
+        enableAudioBox.checked = isAudioEnabled
+
+        // Set locale
+        for(var i = 0 ; i < languages.count ; i ++) {
+           print(i + " " + languages.get(i).locale)
+            if(languages.get(i).locale == ApplicationInfo.locale) {
+                languageBox.currentIndex = i;
+                break;
+            }
+        }
+    }
+
+    MessageDialog {
+        id: confirmDialog
+        title: qsTr("Confirm changes")
+        text: qsTr("Do you want to apply these changes ?")
+        icon: StandardIcon.Question
+        standardButtons: StandardButton.Yes | StandardButton.No | StandardButton.Cancel
+        onYes: {  // Save settings, propagate signals then quit the page
+            ApplicationInfo.isAudioEnabled = isAudioEnabled
+            ApplicationInfo.locale = languages.get(languageBox.currentIndex).locale
+            dialogConfig.close()
+        }
+        onNo: {
+            dialogConfig.close() // Do not save, quit the page
+        }
+        onRejected: {
+            close() // Cancel, we stay on the config page
+        }
+    }
+
+    ListModel {
+        id: languages
+        // todo: load all from json/xml file ?
+        ListElement { text:  QT_TR_NOOP("English (Great Britain)"); locale: "en_GB.UTF-8" }
+        ListElement { text:  QT_TR_NOOP("English (United States)"); locale: "en_US.UTF-8" }
+        ListElement { text: QT_TR_NOOP("French"); locale: "fr_FR.UTF-8" }
+        ListElement { text: QT_TR_NOOP("German"); locale: "de_DE.UTF-8" }
+    }
 }
