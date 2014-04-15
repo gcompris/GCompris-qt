@@ -106,12 +106,8 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias hat: chapeau
-            property alias starsBar0: sb0
-            property alias starsBar1: sb1
-            property alias starsBar2: sb2
-            property alias starsBar3: sb3
-            property alias starsBarAnswer : sbAnswer
-            property alias starsSize: sb0.starsSize
+            property var barsList : [sb0,sb1,sb2,sb3,sbAnswer]
+            property int starsSize: background.height/18
             property alias columnY : secondRow.y
         }
 

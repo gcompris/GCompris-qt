@@ -22,24 +22,16 @@ Item {
         fillMode: Image.PreserveAspectFit
         anchors.centerIn: parent
         state: "NormalPosition"
-        Repeater {
-            id: repeaterStars
-            model: nbStarsUnderHat
-            Star {
-                starState: "on"
-                width: item.height
-                height: item.height
-                displayBounds: false
-                isClickable: authorizeClick
-            }
-        }
         transform: Rotation{
             id: rotate
-            origin.x:hatImg.x/3
-            origin.y:hatImg.y
+            origin.x:hatImg.x - hatImg.width
+            origin.y:hatImg.y + hatImg.height/2
             axis.x: 0
             axis.y: 0
             axis.z: 1
+            Behavior on angle{
+                animation: rotAnim
+            }
         }
 
         states: [
@@ -70,33 +62,40 @@ Item {
             }
         ]
 
-        transitions:[
-            Transition{
-                    RotationAnimation {
-                                id: rotAnim
-                                direction: if(hatImg.state=="Rotated"){
-                                               RotationAnimation.Counterclockwise
-                                           }
-                                           else RotationAnimation.Clockwise
-                                duration: 500
-                                onRunningChanged: {
-                                    console.log("blah")
-                                    if(!rotAnim.running){
-                                         console.log("moving stars")
-                                         Activity.moveStars()
-                                    }
-                                }
-                    }
-            }
-        ]
      }
+
+    RotationAnimation {
+                id: rotAnim
+                direction: if(hatImg.state=="Rotated"){
+                               RotationAnimation.Counterclockwise
+                           }
+                           else RotationAnimation.Clockwise
+                duration: 500
+                onRunningChanged: if(!rotAnim.running){
+                                      Activity.moveStars()
+                                  }
+    }
 
     MouseArea {
         id: hatMouseArea
         anchors.fill:parent
         onClicked: {
-            if(hatImg.state=="NormalPosition")
-                hatImg.state="Rotated"
+            hatImg.state="Rotated"
+        }
+    }
+
+    Repeater {
+        id: repeaterStars
+        model: nbStarsUnderHat
+        Star {
+            starState: "on"
+            height: hatItem.height/18
+            width: hatItem.height/18
+            x:hatImg.x + hatImg.width/2
+            y:hatImg.y + hatImg.height - hatItem.height/18
+            z: hatImg.z - 1
+            displayBounds: false
+            isClickable: false
         }
     }
 }

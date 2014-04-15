@@ -34,11 +34,11 @@ function initLevel() {
     nbStars=new Array(0,0,0,0)
     nbUserStars=0
     nbStarsToRemove=0
-    items.starsBar0.nbStarsOn = 0
-    items.starsBar1.nbStarsOn = 0
-    items.starsBar2.nbStarsOn = 0
-    items.starsBar3.nbStarsOn = 0
-    items.starsBarAnswer.nbStarsOn = 0
+    items.barsList[0].nbStarsOn = 0
+    items.barsList[1].nbStarsOn = 0
+    items.barsList[2].nbStarsOn = 0
+    items.barsList[3].nbStarsOn = 0
+    items.barsList[4].nbStarsOn = 0
 
     switch(currentLevel){
         case 0: nbStars[0]=getRandomInt(2,4)
@@ -67,12 +67,14 @@ function initLevel() {
             break;
     }
 
-    items.starsBar0.nbStarsOn = nbStars[0]
-    items.starsBar1.nbStarsOn = nbStars[1]
-    items.starsBar2.nbStarsOn = nbStars[2]
-    items.starsBar3.nbStarsOn = nbStars[3]
+    items.barsList[0].nbStarsOn = nbStars[0]
+    items.barsList[1].nbStarsOn = nbStars[1]
+    items.barsList[2].nbStarsOn = nbStars[2]
+    items.barsList[3].nbStarsOn = nbStars[3]
 
     nbStarsToRemove=getRandomInt(1,nbStars[0]-1)
+
+    items.hat.nbStarsUnderHat=nbStarsToRemove
 
     nbTotalStars=nbStars[0]+nbStars[1]+nbStars[2]+nbStars[3]
 
@@ -82,20 +84,9 @@ function initLevel() {
 }
 
 function createMovingStars(){
-    for(var i=0;i<nbStarsToRemove;i++){
-        var starcomponent=Qt.createComponent("Star.qml")
-        var star=starcomponent.createObject(items.background,
-                                                {
-                                                    "x" : magicHat.x + magicHat.width/2,
-                                                    "y" : magicHat.y + magicHat.height/1.5,
-                                                    "z" : magicHat.z - 1,
-                                                    "width" : items.starsSize,
-                                                    "height" : items.starsSize,
-                                                    "starState" : "on",
-                                                    "displayBounds": false
-                                                })
-        starsToCount[i]=star
-   }
+    for(var i=0;i<items.hat.nbStarsUnderHat;i++){
+        starsToCount[i]=items.hat.repeater.itemAt(i)
+    }
 }
 
 function destroyObjects() {
