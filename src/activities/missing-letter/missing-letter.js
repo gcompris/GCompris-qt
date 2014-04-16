@@ -179,9 +179,7 @@ function wrongOptionPressed()
 function answerPressed(character)
 {
     var question = dataset[currentQuestionNumber]
-    console.log(question)
     var currentQuestion = question.questionString
-    console.log(currentQuestion)
     var i = 0
     for(  ; i < currentQuestion.length ; ++i )
     {

@@ -1,7 +1,7 @@
 
 APP_FILES += \
 	$$PWD/ActivityInfo.qml \
-	$$PWD/missing-letter.qml \
+	$$PWD/MissingLetter.qml \
 	$$PWD/missing-letter.js \
 	$$PWD/missing-letter.svg
 
@@ -13,7 +13,6 @@ APP_FILES += \
 	$$PWD/resource/bed.png \
 	$$PWD/resource/bottle.png \
 	$$PWD/resource/button.png \
-	$$PWD/resource/button_selected.png \
 	$$PWD/resource/cake.png \
 	$$PWD/resource/car.png \
 	$$PWD/resource/dog.png \
