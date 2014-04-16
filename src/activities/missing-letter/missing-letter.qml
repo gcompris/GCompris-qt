@@ -1,10 +1,10 @@
 /* GCompris - missing-letter.qml
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 "Amit Tomar" <a.tomar@outlook.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   "Pascal Georges" <pascal.georgis1.free.fr> (GTK+ version)
+ *   "Amit Tomar" <a.tomar@outlook.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -33,11 +33,6 @@ ActivityBase
     onStart: focus = true
     onStop: {}
 
-    property string currentQuestion         : ""
-    property string currentAnswer           : ""
-    property string currentOption           : ""
-    property string currentPictureSource    : ""
-
     pageComponent: Rectangle
     {
         id: background
@@ -57,168 +52,48 @@ ActivityBase
         {
             id: items
             property Item  main: activity.main
-            property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property alias buttonHolderMouseArea: buttonHolder.buttonHolderMouseArea
+            property alias questionImage: questionImage
+            property alias questionText: questionText
+            property alias answers: answers
             property alias currentQuestionNumberText : currentQuestionNumberText
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        // Take appropriate action based on the character being pressed
-        function optionPressed ( character )
-        {
-            var i = 0
-            for(  ; i < currentQuestion.length ; ++i )
-            {
-                if( "_" == currentQuestion.charAt(i)  )
-                {
-                    break;
-                }
-            }
-
-            buttonHolder.buttonHolderMouseArea = false
-            bar.opacity = 0
-
-            // Correct option pressed
-            if( character === currentAnswer.charAt(i) )
-            {
-                currentQuestion = currentAnswer                
-
-                if( 0 == Activity.currentQuestionNumber % 6 )
-                    good.play()
-                else if( 1 == Activity.currentQuestionNumber % 6 )
-                    great.play()
-                else if( 2 == Activity.currentQuestionNumber % 6 )
-                    awesome.play()
-                else if( 3 == Activity.currentQuestionNumber % 6 )
-                    congratulation.play()
-                else if( 4 == Activity.currentQuestionNumber % 6 )
-                    fantastic.play()
-                else if( 5 == Activity.currentQuestionNumber % 6 )
-                    perfect.play()
-                else
-                    waytogo.play()
-
-                items.bonus.good("flower")
-            }
-
-            // Incorrect option pressed
-            else
-            {
-                check_answer.play()
-                items.bonus.bad("flower")
-            }
-        }
-
-        // Reset all questions of a given level
-        function resetQuestionsOfLevel(level)
-        {
-            for( var i = 0 ; i < Activity.questionList().length ; ++ i )
-            {
-                if( level === Activity.questionList()[i].level )
-                Activity.questionList()[i].questionAsked = false;
-            }
-        }
-
-        // Reset all questions of game
-        function resetAllQuestions()
-        {
-            for( var i = 0 ; i < Activity.questionList().length ; ++ i )
-            {
-                Activity.questionList()[i].questionAsked = false;
-            }
-        }
-
-        function totalQuestionsInLevel(level)
-        {
-            var total = 0;
-            for( var i = 0 ; i < Activity.questionList().length ; ++ i )
-            {
-                if( level === Activity.questionList()[i].level )
-                    ++ total
-            }
-
-            return total
-        }
-
-        // Reset the screen values for next question
-        function nextQuestion()
-        {
-            optionsModel.clear()
-            var questionNumber = Activity.getNextRandomQuestionNumber( Activity.currentLevel + 1 )
-
-            // If all the questions are over for this level, go to next level and then ask for next question
-            if(  questionNumber < 0 && Activity.currentLevel+1 <= Activity.numberOfLevel )
-            {
-                currentQuestion = currentAnswer
-                resetAllQuestions()
-                Activity.nextLevel()
-                nextQuestion()
-            }
-
-
-            // If there are still questions left for this level, ask for the number
-            else
-            {
-                var choice = Activity.questionList()[questionNumber].choiceString
-
-                for( var i = 0 ; i < choice.length ; ++i )
-                {
-                    optionsModel.insert(0,{ "option" : "" + choice.charAt(i)})
-                }
-
-                currentQuestion = Activity.questionList()[questionNumber].questionString
-                currentAnswer = Activity.questionList()[questionNumber].answerString
-                currentPictureSource = Activity.questionList()[questionNumber].pictureSource
-                currentOption = Activity.questionList()[questionNumber].choiceString
-            }
-        }
-
-        // Add a new level which contains all the questions given in the questions list, combined together.
-        function addLastLevel()
-        {
-            var length = Activity.questionList().length
-
-            for( var i =0 ; i < length ; ++ i)
-            {
-                var obj =
-                {
-                       "questionString": Activity.questionList()[i].questionString,
-                       "answerString"  : Activity.questionList()[i].answerString,
-                       "choiceString"  : Activity.questionList()[i].choiceString,
-                       pictureSource   : Activity.questionList()[i].pictureSource,
-                       level           : Activity.numberOfLevel,
-                       questionAsked   : false
-                }
-
-                Activity.questionList().push ( obj )
-            }
-        }
-
         // Picture holder for different images being shown
         Image
         {   id: bgImage
-            source: "qrc:/gcompris/src/activities/missing-letter/resource/missingletter-bg.png"
-            width: parent.width * .55
-            height: parent.height * .85
-            anchors { right: parent.right ; bottom: parent.bottom ; bottomMargin: 50 ; rightMargin: 10 }
+            source: Activity.url + "missingletter-bg.png"
+            sourceSize.width: parent.width * .55
+            anchors {
+                right: parent.right
+                bottom: parent.bottom
+                bottomMargin: 50
+                rightMargin: 10
+            }
 
             Image
             {
-                source: currentPictureSource
-                anchors{ top: parent.top ; horizontalCenter: parent.horizontalCenter ; topMargin: parent.height * .05 }
-                width: parent.width * .60
-                height: width
+                id: questionImage
+                anchors {
+                    top: parent.top
+                    horizontalCenter: parent.horizontalCenter
+                    topMargin: parent.height * .05
+                }
+                sourceSize.width: parent.width * .60
             }
 
             Text
             {
                 id: questionText
-                text: qsTr(currentQuestion)
-                anchors{ horizontalCenter: parent.horizontalCenter ; bottom: parent.bottom ; bottomMargin: parent.height * .08}
+                anchors {
+                    horizontalCenter: parent.horizontalCenter
+                    bottom: parent.bottom
+                    bottomMargin: parent.height * .08
+                }
                 color: "white"
                 font.pixelSize: parent.width * .10
             }
@@ -230,60 +105,64 @@ ActivityBase
              id: buttonHolder
              property bool buttonHolderMouseArea : true
              spacing: 10
-             anchors { left: parent.left ; top: parent.top ; leftMargin: parent.width * .15 ; topMargin: parent.height * .05 }
+             anchors {
+                 left: parent.left
+                 top: parent.top
+                 leftMargin: parent.width * .15
+                 topMargin: parent.height * .05
+             }
 
-             add: Transition
-             {
-                     NumberAnimation { properties: "y"; from: 10; duration: 500 }
+             add: Transition {
+                 NumberAnimation { properties: "y"; from: 10; duration: 500 }
              }
 
              Repeater
              {
-                 id: options
-                 model: ListModel { id: optionsModel }
-
+                 id: answers
                  Image
                  {
-                     source: "qrc:/gcompris/src/activities/missing-letter/resource/button.png"
+                     source: Activity.url + "button.png"
                      width: activity.width * .10
                      height: width
 
-                     Text { text: option ; color : "white" ; font.pixelSize: activity.width * .08; anchors.centerIn: parent }
+                     Text {
+                         text: modelData
+                         color : "white";
+                         font.pointSize: 24;
+                         anchors.centerIn: parent
+                     }
 
                      MouseArea
                      {
                          id: buttonMouseArea
                          anchors.fill: parent
-                         enabled: buttonHolder.buttonHolderMouseArea
-                         onClicked:
-                         {
-                            optionPressed(option)
-                            parent.source = "qrc:/gcompris/src/activities/missing-letter/resource/button_selected.png"
+                         onClicked: {
+                             if(Activity.answerPressed(modelData))
+                                 particle.emitter.burst(30)
                          }
-
-                         onEnabledChanged:
-                         {
-                             if( true == enabled )
-                                 parent.source = "qrc:/gcompris/src/activities/missing-letter/resource/button.png"
-                         }
+                     }
+                     ParticleSystemStar {
+                         id: particle
                      }
                  }
              }
          }
 
-        // Solved questions enumerator at a level
+        // Counter of progress within this level
         Image
         {
-            source: "qrc:/gcompris/src/activities/missing-letter/resource/enumerate_answer.png"
+            source: Activity.url + "enumerate_answer.png"
             scale: .85
-            anchors{ right: parent.right ; bottom: parent.bottom; }
+            anchors {
+                right: parent.right
+                bottom: parent.bottom
+            }
 
             Text
             {
                 id: currentQuestionNumberText
                 anchors.centerIn: parent
-                text: "1/" + background.totalQuestionsInLevel(1)
-                font.pixelSize: 35
+                font.pointSize: 24
                 color: "white"
             }
         }
@@ -298,28 +177,9 @@ ActivityBase
         {
             id: bar
             content: BarEnumContent { value: help | home | previous | next }
-            onHelpClicked:
-            {
-                displayDialog(dialogHelp)
-            }
-            onPreviousLevelClicked:
-            {
-                background.resetAllQuestions()
-                Activity.previousLevel()
-                optionsModel.clear()
-                background.nextQuestion()
-                Activity.currentQuestionNumber = 1
-                currentQuestionNumberText.text = "1/" + background.totalQuestionsInLevel(Activity.currentLevel+1)
-            }
-            onNextLevelClicked:
-            {
-                background.resetAllQuestions()
-                Activity.nextLevel()
-                optionsModel.clear()
-                background.nextQuestion()
-                Activity.currentQuestionNumber = 1
-                currentQuestionNumberText.text = "1/" + background.totalQuestionsInLevel(Activity.currentLevel+1)
-            }
+            onHelpClicked: displayDialog(dialogHelp)
+            onPreviousLevelClicked: Activity.previousLevel()
+            onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
         }
 
@@ -328,13 +188,8 @@ ActivityBase
             id: bonus
             Component.onCompleted:
             {
-                Activity.currentLevel = 0
-                background.addLastLevel()
                 win.connect(Activity.correctOptionPressed)
                 loose.connect(Activity.wrongOptionPressed)
-
-                // Generate first question
-                background.nextQuestion()
             }
         }
 

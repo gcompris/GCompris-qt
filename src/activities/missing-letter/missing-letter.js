@@ -22,178 +22,123 @@
 .pragma library
 .import QtQuick 2.0 as Quick
 
-var items
-var currentLevel
-var numberOfLevel = 4
-var numberOfQuestions = 12
-var currentQuestionNumber = 1
+var url = "qrc:/gcompris/src/activities/missing-letter/resource/"
 
-var questions =
+var questionsStatic =
         [
-            // Level 1
+            [
+                // Level 1
+                {
+                    questionString: "c_r",
+                    answerString  : "car",
+                    choiceString  : "atr",
+                    pictureSource : url + "car.png",
+                },
+                {
+                    questionString: "_og",
+                    answerString  : "dog",
+                    choiceString  : "dws",
+                    pictureSource : url + "dog.png",
+                },
+                {
+                    questionString: "_pple",
+                    answerString  : "apple",
+                    choiceString  : "back",
+                    pictureSource : url + "apple.png",
+                },
 
-            {
-                "questionString": "c_r",
-                "answerString"  : "car",
-                "choiceString"  : "atr",
-                pictureSource: "qrc:/gcompris/src/activities/missing-letter/resource/car.png",
-                level: 1,
-                questionAsked: false
-            },
-
-            {
-                "questionString": "_og",
-                "answerString"  : "dog",
-                "choiceString"  : "dws",
-                pictureSource: "qrc:/gcompris/src/activities/missing-letter/resource/dog.png",
-                level: 1,
-                questionAsked: false
-            },
-
-            {
-                "questionString": "_pple",
-                "answerString"  : "apple",
-                "choiceString"  : "back",
-                pictureSource: "qrc:/gcompris/src/activities/missing-letter/resource/apple.png",
-                level: 1,
-                questionAsked: false
-            },
-
-            {
-                "questionString": "bal_",
-                "answerString"  : "ball",
-                "choiceString"  : "hlt",
-                pictureSource: "qrc:/gcompris/src/activities/missing-letter/resource/ball.png",
-                level: 1,
-                questionAsked: false
-            },
-
-            // Level 2
-
-            {
-                "questionString": "be_",
-                "answerString"  : "bed",
-                "choiceString"  : "dfg",
-                pictureSource: "qrc:/gcompris/src/activities/missing-letter/resource/bed.png",
-                level: 2,
-                questionAsked: false
-            },
-
-
-            {
-                "questionString": "_ake",
-                "answerString"  : "cake",
-                "choiceString"  : "lxc",
-                pictureSource: "qrc:/gcompris/src/activities/missing-letter/resource/cake.png",
-                level: 2,
-                questionAsked: false
-            },
-
-            {
-                "questionString": "ba_",
-                "answerString"  : "bag",
-                "choiceString"  : "qlg",
-                pictureSource: "qrc:/gcompris/src/activities/missing-letter/resource/bag.png",
-                level: 2,
-                questionAsked: false
-            },
-
-            {
-                "questionString": "f_sh",
-                "answerString"  : "fish",
-                "choiceString"  : "epi",
-                pictureSource: "qrc:/gcompris/src/activities/missing-letter/resource/fish.png",
-                level: 2,
-                questionAsked: false
-            },
-
-            // Level 3
-
-            {
-                "questionString": "bana_a",
-                "answerString"  : "banana",
-                "choiceString"  : "bakn",
-                pictureSource: "qrc:/gcompris/src/activities/missing-letter/resource/banana.png",
-                level: 3,
-                questionAsked: false
-            },
-
-            {
-                "questionString": "bottl_",
-                "answerString"  : "bottle",
-                "choiceString"  : "degw",
-                pictureSource: "qrc:/gcompris/src/activities/missing-letter/resource/bottle.png",
-                level: 3,
-                questionAsked: false
-            },
-
-            {
-                "questionString": "_ouse",
-                "answerString"  : "house",
-                "choiceString"  : "khpz",
-                pictureSource: "qrc:/gcompris/src/activities/missing-letter/resource/house.png",
-                level: 3,
-                questionAsked: false
-            },
-
-            {
-                "questionString": "_lane",
-                "answerString"  : "plane",
-                "choiceString"  : "lmpo",
-                pictureSource: "qrc:/gcompris/src/activities/missing-letter/resource/plane.png",
-                level: 3,
-                questionAsked: false
-            }
+                {
+                    questionString: "bal_",
+                    answerString  : "ball",
+                    choiceString  : "hlt",
+                    pictureSource : url + "ball.png",
+                }
+            ],
+            [
+                // Level 2
+                {
+                    questionString: "be_",
+                    answerString  : "bed",
+                    choiceString  : "dfg",
+                    pictureSource : url + "bed.png",
+                },
+                {
+                    questionString: "_ake",
+                    answerString  : "cake",
+                    choiceString  : "lxc",
+                    pictureSource : url + "cake.png",
+                },
+                {
+                    questionString: "ba_",
+                    answerString  : "bag",
+                    choiceString  : "qlg",
+                    pictureSource : url + "bag.png",
+                },
+                {
+                    questionString: "f_sh",
+                    answerString  : "fish",
+                    choiceString  : "epi",
+                    pictureSource : url + "fish.png",
+                }
+            ],
+            [
+                // Level 3
+                {
+                    questionString: "bana_a",
+                    answerString  : "banana",
+                    choiceString  : "bakn",
+                    pictureSource : url + "banana.png",
+                },
+                {
+                    questionString: "bottl_",
+                    answerString  : "bottle",
+                    choiceString  : "degw",
+                    pictureSource : url + "bottle.png",
+                },
+                {
+                    questionString: "_ouse",
+                    answerString  : "house",
+                    choiceString  : "khpz",
+                    pictureSource : url + "house.png",
+                },
+                {
+                    questionString: "_lane",
+                    answerString  : "plane",
+                    choiceString  : "lmpo",
+                    pictureSource : url + "plane.png",
+                }
+            ]
         ]
 
-// Returns the question number of a random question that hasnt been asked yet from the given level
-function getNextRandomQuestionNumber(level)
-{
-    var seed = Math.floor((Math.random()*numberOfQuestions)+1);
+var items
+var currentLevel
+var numberOfLevel
+var currentQuestionNumber
 
-    if( numberOfLevel >= level )
-    {
-        for ( var i = seed ; i < questions.length ; ++i )
-        {
-            if(( false === questions[i].questionAsked && level === questions[i].level) )
-            {
-                questions[i].questionAsked = true
-                return i;
-            }
-        }
-
-        for ( i = 0 ; i < seed ; ++i )
-        {
-            if( (false === questions[i].questionAsked && level === (questions[i].level)) )
-            {
-                questions[i].questionAsked = true
-                return i;
-            }
-        }
-    }
-
-    return -1;
-}
+var questions
+var dataset
 
 function start(items_)
 {
     items = items_
     currentLevel = 0
+    questions = questionsStatic
+    createLastLevel()
+    numberOfLevel = questions.length
     initLevel()
 }
 
 function stop()
 {
-    items.background.resetAllQuestions()
-    currentLevel = 0
-    items.background.nextQuestion()
-    currentQuestionNumber = 1
-    items.currentQuestionNumberText.text = "1/" + items.background.totalQuestionsInLevel(currentLevel+1)
 }
 
 function initLevel()
 {
     items.bar.level = currentLevel + 1
+    dataset = shuffle(questions[currentLevel])
+    currentQuestionNumber = 0
+    nextQuestion()
+    items.currentQuestionNumberText.text = "1/" + dataset.length
 }
 
 function nextLevel()
@@ -214,26 +159,88 @@ function previousLevel()
     initLevel();
 }
 
-function questionList()
-{
-    return questions;
-}
-
 function correctOptionPressed()
 {
-    items.background.nextQuestion()
-    items.buttonHolderMouseArea = true
-    items.bar.opacity = 1
-    ++ currentQuestionNumber
+    nextQuestion()
 
-    if( currentQuestionNumber > items.background.totalQuestionsInLevel(currentLevel+1) )
-        currentQuestionNumber = 1
+    if( currentQuestionNumber > dataset.length )
+        currentQuestionNumber = 0
 
-    items.currentQuestionNumberText.text = currentQuestionNumber + "/" + items.background.totalQuestionsInLevel(currentLevel+1)
+    items.currentQuestionNumberText.text =
+            currentQuestionNumber + "/" + dataset.length
 }
 
 function wrongOptionPressed()
 {
-    items.buttonHolderMouseArea = true
     items.bar.opacity = 1
+}
+
+// Take appropriate action based on the character being pressed
+function answerPressed(character)
+{
+    var question = dataset[currentQuestionNumber]
+    console.log(question)
+    var currentQuestion = question.questionString
+    console.log(currentQuestion)
+    var i = 0
+    for(  ; i < currentQuestion.length ; ++i )
+    {
+        if( "_" == currentQuestion.charAt(i)  )
+        {
+            break;
+        }
+    }
+
+    if( character === question.answerString.charAt(i) )
+    {
+        items.bonus.good("flower")
+        return true
+    }
+    else
+    {
+        items.bonus.bad("flower")
+    }
+    return false
+}
+
+// Reset the screen values for next question
+function nextQuestion()
+{
+    items.answers.model = []
+
+    if(++currentQuestionNumber >= dataset.length) {
+        nextLevel()
+        return
+    }
+
+    var question = dataset[currentQuestionNumber]
+
+    var choice = question.choiceString
+
+    var answersModel = new Array()
+    for(var i = 0 ; i < choice.length ; ++i)
+        answersModel.push(choice.charAt(i))
+    items.answers.model = answersModel
+
+    items.questionText.text = question.questionString
+    items.questionImage.source = question.pictureSource
+}
+
+// Add a new level which contains all the questions given in the
+// questions list, combined together.
+function createLastLevel()
+{
+    var lastData = []
+    for(var level = 0 ; level < questions.length ; ++level)
+        for(var i = 0 ; i < questions.length ; ++i)
+            lastData.push(questions[level][i])
+
+    questions.push(lastData)
+
+}
+
+function shuffle(o) {
+    for(var j, x, i = o.length; i;
+        j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
 }
