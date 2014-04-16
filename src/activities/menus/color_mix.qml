@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "color_mix/Color_mix.qml"
+  name: "color_mix/ColorMix.qml"
   difficulty: 4
   icon: "color_mix/color_mix.svg"
   author: "Matilda Bernard"

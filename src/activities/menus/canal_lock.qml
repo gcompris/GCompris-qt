@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "canal_lock/Canal_lock.qml"
+  name: "canal_lock/CanalLock.qml"
   difficulty: 2
   icon: "canal_lock/canal_lock.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"

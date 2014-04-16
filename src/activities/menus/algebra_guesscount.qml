@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "algebra_guesscount/Algebra_guesscount.qml"
+  name: "algebra_guesscount/AlgebraGuesscount.qml"
   difficulty: 3
   icon: "algebra_guesscount/algebra_guesscount.svg"
   author: "Pascal Georges <pascal.georges1@free.fr>"

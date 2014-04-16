@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "chess_movelearn/Chess_movelearn.qml"
+  name: "chess_movelearn/ChessMovelearn.qml"
   difficulty: 2
   icon: "chess_movelearn/chess_movelearn.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
