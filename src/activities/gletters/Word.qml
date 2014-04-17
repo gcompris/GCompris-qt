@@ -35,7 +35,16 @@ Item {
     ///< index into text.split("") where next typed match should occur
     property int unmatchedIndex: 0;
     property alias text: wordText.text;
-    
+
+    signal won
+
+    onWon: {
+        opacity = 0
+        particle.emitter.burst(30)
+    }
+
+    Behavior on opacity { PropertyAnimation { duration: 1000 } }
+
     /** Called when user typed the next letter correctly */
     function  nextCharMatched()
     {
@@ -63,6 +72,11 @@ Item {
         color: "navy"        
     }
     
+    ParticleSystemStar {
+        id: particle
+        clip: false
+    }
+
     NumberAnimation {
         id: down
         target: word

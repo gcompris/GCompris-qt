@@ -124,7 +124,7 @@ function processKeyPress(text) {
             if (droppedWords[i].isCompleted()) {
                 // win!
                 items.flipAudio.play();
-                droppedWords[i].destroy();
+                droppedWords[i].won();
                 droppedWords.splice(i, 1);
                 nextSubLevel();
             }
