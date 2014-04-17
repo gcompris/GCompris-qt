@@ -75,10 +75,10 @@ Item {
     property var layout: null
     //property bool shift: false  // FIXME: add support for shift-key
     property bool equalKeyWidth: true
-    property int rowSpacing: 5
-    property int keySpacing: 3
-    property int keyHeight: 35
-    property int margin: 5
+    property int rowSpacing: 5 * ApplicationInfo.ratio
+    property int keySpacing: 3 * ApplicationInfo.ratio
+    property int keyHeight: 35 * ApplicationInfo.ratio
+    property int margin: 5 * ApplicationInfo.ratio
     opacity: 0.9
     
     visible: priv.initialized  // this should probably be readonly from outside
@@ -99,7 +99,8 @@ Item {
     QtObject {
         id: priv
         
-        readonly property int cHeight: numRows * keyboard.keyHeight + (numRows - 1) * keyboard.rowSpacing //+ keyboard.margin * 2
+        readonly property int cHeight: numRows * keyboard.keyHeight +
+                                       (numRows - 1) * keyboard.rowSpacing //+ keyboard.margin * 2
         property int numRows: 0
         property bool initialized: false
     }
@@ -133,7 +134,11 @@ Item {
         
         // populate
         for (var i = 0; i < a.length; i++) {
-            var offset = equalKeyWidth ? ((maxButtons - a[i].length)*(keyboard.width - maxButtons * keyboard.rowSpacing - keyboard.margin*2) / maxButtons) : 0; // FIXME: keyboard.width instead of main.width
+            var offset =
+                    equalKeyWidth ? ((maxButtons - a[i].length) *
+                                     (keyboard.width - maxButtons *
+                                      keyboard.rowSpacing - keyboard.margin*2) /
+                                     maxButtons) : 0;
             rowListModel.append({ rowNum: i,
                                   offset: offset,
                                   keys: a[i]});
@@ -164,7 +169,11 @@ Item {
     }
     
     transitions: Transition {
-        NumberAnimation { properties: "height"; duration: 500; easing.type: Easing.OutCubic }
+        NumberAnimation {
+            properties: "height"
+            duration: 500
+            easing.type: Easing.OutCubic
+        }
     }
     
     states: [
@@ -192,7 +201,8 @@ Item {
             id: keyboardTouchArea
             
             anchors.fill: parent
-            enabled: ApplicationInfo.isMobile  // mutually exclusive with drawerMouseArea
+            // mutually exclusive with drawerMouseArea
+            enabled: ApplicationInfo.isMobile
             touchPoints: [ TouchPoint { id: point1 } ]
             
             property bool inGesture: false
@@ -200,9 +210,11 @@ Item {
             onGestureStarted: keyboardTouchArea.inGesture = true;
             
             onReleased: {
-                if (point1.y > 20 && keyboardTouchArea.inGesture && keyboard.state != "CLOSED")
+                if (point1.y > 20 && keyboardTouchArea.inGesture &&
+                        keyboard.state != "CLOSED")
                     keyboard.state = "CLOSED"; //slide down
-                else if (point1.y < 0 && keyboardTouchArea.inGesture && keyboard.state != "OPENED")
+                else if (point1.y < 0 && keyboardTouchArea.inGesture &&
+                         keyboard.state != "OPENED")
                     keyboard.state = "OPENED"; //slide up
                 else if (point1.y > 0 && point1.y <= keyboardDrawer.height) {
                     // assume: click on drawer
@@ -217,7 +229,7 @@ Item {
         
         Rectangle {
             id: keyboardDrawer
-            height: 15;
+            height: 15 * ApplicationInfo.ratio;
             width: parent.width
             border.color : "#6A6D6A"
             border.width: 1
@@ -235,7 +247,12 @@ Item {
                 source: "qrc:/gcompris/src/core/resource/arrow.png"
                 anchors.centerIn: parent
 
-                Behavior { NumberAnimation { property: "rotation"; easing.type: Easing.OutExpo } }
+                Behavior {
+                    NumberAnimation {
+                        property: "rotation"
+                        easing.type: Easing.OutExpo
+                    }
+                }
             }
             
             MouseArea {
@@ -243,7 +260,8 @@ Item {
                 
                 anchors.fill: parent
                 hoverEnabled: true
-                enabled: !ApplicationInfo.isMobile // mutually exclusive with keyboardTouchArea
+                // mutually exclusive with keyboardTouchArea
+                enabled: !ApplicationInfo.isMobile
                 
                 onEntered: parent.border.color = Qt.lighter("#6A6D6A")
                 
@@ -290,12 +308,14 @@ Item {
                         hoverEnabled: true
                         propagateComposedEvents: true
                         
-                        onEntered: rowList.currentIndex = index; // update index to allow for updating z value of the rows
+                        // update index to allow for updating z value of the rows
+                        onEntered: rowList.currentIndex = index;
                         
                         onPressed: {
                             // same onPress for mobile
                             rowList.currentIndex = index;
-                            mouse.accepted = false;  // need to propagate through to the key for mobile! 
+                            // need to propagate through to the key for mobile!
+                            mouse.accepted = false;
                         }
                     }
                     
@@ -319,8 +339,12 @@ Item {
                             z: rowListDelegate.ListView.isCurrentItem ? 1 : -1
         
                             model: keys
-                            delegate: VirtualKey { width: (keyboard.width - keyboardRowRepeater.count * keyboardRow.spacing - offset - keyboard.margin*2) / keyboardRowRepeater.count
-                                                   height: keyboard.keyHeight}
+                            delegate: VirtualKey {
+                                width: (keyboard.width - keyboardRowRepeater.count *
+                                        keyboardRow.spacing - offset - keyboard.margin*2) /
+                                       keyboardRowRepeater.count
+                                height: keyboard.keyHeight
+                            }
                             
                             onItemAdded: item.pressed.connect(keyboard.keypress);
                             

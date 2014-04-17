@@ -32,7 +32,8 @@ Item {
     width: wordText.width
     height: wordText.height
     
-    property int unmatchedIndex: 0;    ///< index into text.split("") where next typed match should occur
+    ///< index into text.split("") where next typed match should occur
+    property int unmatchedIndex: 0;
     property alias text: wordText.text;
     
     /** Called when user typed the next letter correctly */

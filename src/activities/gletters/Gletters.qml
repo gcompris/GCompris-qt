@@ -102,7 +102,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
 
-            keyHeight: 35
+            keyHeight: 35 * ApplicationInfo.ratio
             equalKeyWidth: true
             
             onKeypress: Activity.processKeyPress(text)
@@ -113,7 +113,10 @@ ActivityBase {
         Wordlist {
             id: wordlist
             defaultFilename: ":/gcompris/src/activities/gletters/resource/default-en.json"
-            filename: ApplicationInfo.getAudioFilePath("gletters/default-de.json");  // FIXME: this should be something like ApplicationInfo.getDataPath() + "gletters/" + "default-" + ApplicationInfo.getCurrentLocale() + ".json" once it is there.
+            // FIXME: this should be something like
+            // ApplicationInfo.getDataPath() + "gletters/" + "default-" + ApplicationInfo.getCurrentLocale() + ".json"
+            // once it is there.
+            filename: ApplicationInfo.getAudioFilePath("gletters/default-de.json");
 
             onError: console.log("Gletters: Wordlist error: " + msg);
         }
