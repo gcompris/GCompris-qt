@@ -119,8 +119,8 @@ Rectangle {
                             width: 200
                             onCurrentIndexChanged:
                                 if(languages != undefined) {
-                                console.debug(languages.get(currentIndex).text +
-                                              ", " + languages.get(currentIndex).locale)
+                                    console.debug(languages.get(currentIndex).text +
+                                                  ", " + languages.get(currentIndex).locale)
                                 }
                         }
                     }
@@ -160,7 +160,22 @@ Rectangle {
         }
         MouseArea {
             anchors.fill: parent
-            onClicked: confirmDialog.open()
+            onClicked: {
+                if(hasConfigChanged()) {
+                    // If locale changed, ask the user to restart GCompris
+                    if(ApplicationInfo.locale != languages.get(languageBox.currentIndex).locale) {
+                        confirmDialog.text = qsTr("Do you want to apply these changes ?\n
+Locale has changed, restart the application to have new locale")
+                    }
+                    else {
+                        confirmDialog.text = qsTr("Do you want to apply these changes ?");
+                    }
+                    confirmDialog.open()
+                }
+                else {
+                    close();
+                }
+            }
         }
     }
 
@@ -173,7 +188,7 @@ Rectangle {
 
         // Set locale
         for(var i = 0 ; i < languages.count ; i ++) {
-           print(i + " " + languages.get(i).locale)
+            print(i + " " + languages.get(i).locale)
             if(languages.get(i).locale == ApplicationInfo.locale) {
                 languageBox.currentIndex = i;
                 break;
@@ -207,5 +222,10 @@ Rectangle {
         ListElement { text:  QT_TR_NOOP("English (United States)"); locale: "en_US.UTF-8" }
         ListElement { text: QT_TR_NOOP("French"); locale: "fr_FR.UTF-8" }
         ListElement { text: QT_TR_NOOP("German"); locale: "de_DE.UTF-8" }
+    }
+
+    function hasConfigChanged() {
+        return (ApplicationInfo.locale != languages.get(languageBox.currentIndex).locale ||
+                (ApplicationInfo.isAudioEnabled != isAudioEnabled));
     }
 }

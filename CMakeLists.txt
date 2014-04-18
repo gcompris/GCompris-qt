@@ -14,6 +14,14 @@ set(GCOMPRIS_VERSION ${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION}.${GCOMP
 # cmake modules setup
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/")
 
+
+# prevent build in source directory
+if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
+    message(SEND_ERROR "Building in the source directory is not supported.")
+    message(FATAL_ERROR "Please remove the created \"CMakeCache.txt\" file, the \"CMakeFiles\"
+            directory and create a build directory and call \"${CMAKE_COMMAND} <path to the sources>\".")
+endif("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
+
 # Compile 3rd party
 #add_subdirectory(3rdparty)
 #find_package(ECM 0.0.11 REQUIRED NO_MODULE)
@@ -21,7 +29,8 @@ find_package(KConfig REQUIRED)
 
 set(QT_REQUIRED_VERSION 5.2.0)
 
-find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Qml Quick Gui Multimedia Core Svg XmlPatterns)
+find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED
+            Qml Quick Gui Multimedia Core Svg XmlPatterns LinguistTools)
 
 #get_cmake_property(_variableNames VARIABLES)
 #foreach (_variableName ${_variableNames})
@@ -31,6 +40,30 @@ find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED Qml Quick Gui Multimedia
 # To have src/core/*{.qml/.js} files and activities.txt in qtcreator project
 file(GLOB gcompris_SRCS src/core/*.qml src/core/*.js src/activities/*/*.qml src/activities/*/*.js src/activities/activities.txt)
 set(gcompris_SRCS ${QML_SRC} ${gcompris_SRCS})
+
+
+# Translations handling
+SET(GCOMPRIS_TRANSLATIONS
+    translations/gcompris_de_DE.ts
+    translations/gcompris_fr_FR.ts
+)
+
+# Translations should go to bin output directory by default
+qt5_create_translation(QM_FILES ${gcompris_SRCS} ${GCOMPRIS_TRANSLATIONS})
+add_custom_target(translations ALL DEPENDS ${QM_FILES})
+
+# Move all generated .qm to bin folder.
+# TODO Find a better way ?
+file(GLOB QM_OUTPUT_FILES ${CMAKE_BINARY_DIR}/*.qm)
+
+set(counter 1)
+foreach(QmFile ${QM_OUTPUT_FILES})
+  add_custom_target(copyTranslation${counter}
+                    ALL DEPENDS translations
+                    COMMAND ${CMAKE_COMMAND} -E copy ${QmFile} ${CMAKE_BINARY_DIR}/bin/
+                    COMMAND ${CMAKE_COMMAND} -E remove ${QmFile})
+  set(counter counter+1)
+endforeach()
 
 # Set output directory
 if(ANDROID)

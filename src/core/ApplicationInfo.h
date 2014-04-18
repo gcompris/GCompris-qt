@@ -80,8 +80,8 @@ public:
     };
 
     ApplicationInfo(QObject *parent = 0);
-	static void init();
-	static QObject *systeminfoProvider(QQmlEngine *engine,
+    static void init();
+    static QObject *systeminfoProvider(QQmlEngine *engine,
 									   QJSEngine *scriptEngine);
 
 	int applicationWidth() const { return m_applicationWidth; }
