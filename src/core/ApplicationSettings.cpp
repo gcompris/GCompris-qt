@@ -60,7 +60,8 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent), m_co
         generalGroup.writeEntry("enableEffects", true);
         generalGroup.writeEntry("fullscreen", false);
         generalGroup.writeEntry("enableSounds", true);
-        generalGroup.writeEntry("locale", GC_DEFAULT_LOCALE); // Todo get locale
+         // Todo get locale, if "C", put default locale
+        generalGroup.writeEntry("locale", GC_DEFAULT_LOCALE);
         m_config.sync();
     }
 
