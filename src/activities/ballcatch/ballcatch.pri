@@ -35,6 +35,6 @@ APP_FILES += \
         $$PWD/resource/beach3.svgz \
         $$PWD/resource/beach4.svgz \
 		$$PWD/resource/hand.svgz \
-		$$PWD/resource/shift_key.svgz \
+                $$PWD/resource/arrow_key.svgz \
 		$$PWD/resource/tux.svgz
 
