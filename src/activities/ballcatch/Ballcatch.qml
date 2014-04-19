@@ -31,7 +31,6 @@ ActivityBase {
 
     onStart: {
         focus = true;
-        Activity.initKey()
     }
     onStop: {}
 
@@ -189,8 +188,8 @@ ActivityBase {
         Image {
             id: leftShift
             x: 10
-            y: rightHand.y + rightHand.height / 2
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/shift_key.svgz"
+            y: rightHand.y
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svgz"
             opacity: Activity.leftPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
         }
@@ -199,8 +198,8 @@ ActivityBase {
             id: rightShift
             mirror: true
             x: main.width - width - 10
-            y: rightHand.y + rightHand.height / 2
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/shift_key.svgz"
+            y: rightHand.y
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svgz"
             opacity: Activity.rightPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
         }
@@ -211,7 +210,7 @@ ActivityBase {
             text: ApplicationInfo.isMobile ?
                       qsTr("Tap both hands at the same time,
 to make the ball go in a straight line.") :
-                      qsTr("Press the two shift keys at the same time,
+                      qsTr("Press left and right arrow keys at the same time,
 to make the ball go in a straight line.")
             x: 10.0
             y: tux.y
@@ -255,8 +254,8 @@ to make the ball go in a straight line.")
             onError: console.log("youcannot play error: " + errorString)
         }
 
-        /* Timer starting when user first presses a shift key.
-           If still running when the user presses the other shift key, he wins !
+        /* Timer starting when user first presses a first key.
+           If still running when the user presses the other key, he wins !
         */
         Timer {
             id: deltaPressedTimer
