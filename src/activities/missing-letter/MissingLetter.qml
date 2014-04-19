@@ -23,8 +23,6 @@ import QtQuick 2.1
 
 import "qrc:/gcompris/src/core"
 import "missing-letter.js" as Activity
-import QtMultimedia 5.0
-
 
 ActivityBase
 {
@@ -33,11 +31,12 @@ ActivityBase
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle
+    pageComponent: Image
     {
         id: background
-        anchors.fill: parent
-        color: "#ABCDEF"
+        source: Activity.url + "background.svgz"
+        fillMode: Image.PreserveAspectCrop
+
         signal start
         signal stop
 
@@ -63,99 +62,137 @@ ActivityBase
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        // Option holder for buttons shown on the left of screen
+        Column
+        {
+            id: buttonHolder
+            property bool buttonHolderMouseArea : true
+            spacing: 10
+            x: holder.x - width - 10
+            y: 30
+
+            add: Transition {
+                NumberAnimation { properties: "y"; from: 10; duration: 500 }
+            }
+
+            Repeater
+            {
+                id: answers
+
+                AnswerButton {
+                    width: 100
+                    height: 60
+                    textLabel: modelData
+                    isCorrectAnswer: modelData === Activity.getCorrectAnswer()
+                    onCorrectlyPressed: Activity.answerPressed(modelData)
+                    onPressed: if(modelData === Activity.getCorrectAnswer()) Activity.showAnswer()
+                }
+            }
+        }
+
         // Picture holder for different images being shown
-        Image
-        {   id: bgImage
-            source: Activity.url + "missingletter-bg.png"
-            sourceSize.width: parent.width * .55
-            anchors {
-                right: parent.right
-                bottom: parent.bottom
-                bottomMargin: 50
-                rightMargin: 10
+        Rectangle
+        {
+            id: holder
+            width: Math.max(questionImage.width * 1.1, questionImage.height * 1.1)
+            height: questionTextBg.y + questionTextBg.height
+            x: (activity.width - width) / 2 + 50
+            y: 20
+            color: "black"
+            radius: 10
+            border.width: 2
+            border.color: "black"
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "#80FFFFFF" }
+                GradientStop { position: 0.9; color: "#80EEEEEE" }
+                GradientStop { position: 1.0; color: "#80AAAAAA" }
+            }
+
+            Item
+            {
+                id: spacer
+                height: 20
             }
 
             Image
             {
                 id: questionImage
-                anchors {
-                    top: parent.top
-                    horizontalCenter: parent.horizontalCenter
-                    topMargin: parent.height * .05
+                anchors.horizontalCenter: holder.horizontalCenter
+                anchors.top: spacer.bottom
+                width: Math.min(activity.width * 0.7, (activity.height - 100) * 0.7)
+                height: width
+            }
+
+            Rectangle {
+                id: questionTextBg
+                width: holder.width
+                height: questionText.height * 1.5
+                anchors.horizontalCenter: holder.horizontalCenter
+                anchors.margins: 20
+                anchors.top: questionImage.bottom
+                radius: 10
+                border.width: 2
+                border.color: "black"
+                gradient: Gradient {
+                    GradientStop { position: 0.0; color: "#000" }
+                    GradientStop { position: 0.9; color: "#666" }
+                    GradientStop { position: 1.0; color: "#AAA" }
                 }
-                sourceSize.width: parent.width * .60
             }
 
             Text
             {
                 id: questionText
                 anchors {
-                    horizontalCenter: parent.horizontalCenter
-                    bottom: parent.bottom
-                    bottomMargin: parent.height * .08
+                    horizontalCenter: questionTextBg.horizontalCenter
+                    verticalCenter: questionTextBg.verticalCenter
                 }
+                style: Text.Outline; styleColor: "black"
                 color: "white"
-                font.pixelSize: parent.width * .10
+                font.pointSize: 24
+
+                states: [
+                    State {
+                        name: "question"
+                        PropertyChanges {
+                            target: questionText
+                            scale: 1.0
+                            rotation: 0
+                        }
+                    },
+                    State {
+                        name: "answer"
+                        PropertyChanges {
+                            target: questionText
+                            scale: 1.6
+                        }
+                    }
+                ]
+
+                Behavior on scale { NumberAnimation { duration: 200 } }
             }
+
         }
 
-        // Option holder for buttons shown on the left of screen
-        Column
-        {
-             id: buttonHolder
-             property bool buttonHolderMouseArea : true
-             spacing: 10
-             anchors {
-                 left: parent.left
-                 top: parent.top
-                 leftMargin: parent.width * .15
-                 topMargin: parent.height * .05
-             }
-
-             add: Transition {
-                 NumberAnimation { properties: "y"; from: 10; duration: 500 }
-             }
-
-             Repeater
-             {
-                 id: answers
-                 Image
-                 {
-                     source: Activity.url + "button.png"
-                     width: activity.width * .10
-                     height: width
-
-                     Text {
-                         text: modelData
-                         color : "white";
-                         font.pointSize: 24;
-                         anchors.centerIn: parent
-                     }
-
-                     MouseArea
-                     {
-                         id: buttonMouseArea
-                         anchors.fill: parent
-                         onClicked: {
-                             if(Activity.answerPressed(modelData))
-                                 particle.emitter.burst(30)
-                         }
-                     }
-                     ParticleSystemStar {
-                         id: particle
-                     }
-                 }
-             }
-         }
-
         // Counter of progress within this level
-        Image
+        Rectangle
         {
-            source: Activity.url + "enumerate_answer.png"
-            scale: .85
+            width: 130 * 0.7
+            height: 70
             anchors {
                 right: parent.right
                 bottom: parent.bottom
+                margins: 10
+            }
+            color: "black"
+            radius: 10
+            border.width: 3
+            border.color: "black"
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "#fdf1aa" }
+                GradientStop { position: 0.1; color: "#fcec89" }
+                GradientStop { position: 0.4; color: "#f8d600" }
+                GradientStop { position: 1.0; color: "#f8d600" }
             }
 
             Text
@@ -163,6 +200,7 @@ ActivityBase
                 id: currentQuestionNumberText
                 anchors.centerIn: parent
                 font.pointSize: 24
+                style: Text.Outline; styleColor: "black"
                 color: "white"
             }
         }
@@ -191,62 +229,6 @@ ActivityBase
                 win.connect(Activity.correctOptionPressed)
                 loose.connect(Activity.wrongOptionPressed)
             }
-        }
-
-        Audio
-        {
-            id: awesome
-            source: "qrc:/gcompris/src/activities/missing-letter/resource/awesome.ogg"
-            onError: console.log("brick play error: " + errorString)
-        }
-
-        Audio
-        {
-            id: congratulation
-            source: "qrc:/gcompris/src/activities/missing-letter/resource/congratulation.ogg"
-            onError: console.log("tux play error: " + errorString)
-        }
-
-        Audio
-        {
-            id: fantastic
-            source: "qrc:/gcompris/src/activities/missing-letter/resource/fantastic.ogg"
-            onError: console.log("youcannot play error: " + errorString)
-        }
-
-        Audio
-        {
-            id: good
-            source: "qrc:/gcompris/src/activities/missing-letter/resource/good.ogg"
-            onError: console.log("youcannot play error: " + errorString)
-        }
-
-        Audio
-        {
-            id: great
-            source: "qrc:/gcompris/src/activities/missing-letter/resource/great.ogg"
-            onError: console.log("youcannot play error: " + errorString)
-        }
-
-        Audio
-        {
-            id: perfect
-            source: "qrc:/gcompris/src/activities/missing-letter/resource/perfect.ogg"
-            onError: console.log("youcannot play error: " + errorString)
-        }
-
-        Audio
-        {
-            id: waytogo
-            source: "qrc:/gcompris/src/activities/missing-letter/resource/waytogo.ogg"
-            onError: console.log("youcannot play error: " + errorString)
-        }
-
-        Audio
-        {
-            id: check_answer
-            source: "qrc:/gcompris/src/activities/missing-letter/resource/check_answer.ogg"
-            onError: console.log("youcannot play error: " + errorString)
         }
     }
 }

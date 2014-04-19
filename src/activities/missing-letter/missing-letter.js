@@ -175,8 +175,7 @@ function wrongOptionPressed()
     items.bar.opacity = 1
 }
 
-// Take appropriate action based on the character being pressed
-function answerPressed(character)
+function getCorrectAnswer()
 {
     var question = dataset[currentQuestionNumber]
     var currentQuestion = question.questionString
@@ -189,7 +188,13 @@ function answerPressed(character)
         }
     }
 
-    if( character === question.answerString.charAt(i) )
+    return question.answerString.charAt(i)
+}
+
+// Take appropriate action based on the character being pressed
+function answerPressed(character)
+{
+    if( character === getCorrectAnswer() )
     {
         items.bonus.good("flower")
         return true
@@ -201,9 +206,17 @@ function answerPressed(character)
     return false
 }
 
+function showAnswer()
+{
+    var question = dataset[currentQuestionNumber]
+    items.questionText.text = question.answerString
+    items.questionText.state = "answer"
+}
+
 // Reset the screen values for next question
 function nextQuestion()
 {
+    items.questionText.state = "question"
     items.answers.model = []
 
     if(++currentQuestionNumber >= dataset.length) {
