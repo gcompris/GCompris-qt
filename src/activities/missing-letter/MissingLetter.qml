@@ -20,6 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import GCompris 1.0
 
 import "qrc:/gcompris/src/core"
 import "missing-letter.js" as Activity
@@ -67,8 +68,8 @@ ActivityBase
         {
             id: buttonHolder
             property bool buttonHolderMouseArea : true
-            spacing: 10
-            x: holder.x - width - 10
+            spacing: 10 * ApplicationInfo.ratio
+            x: holder.x - width - 10 * ApplicationInfo.ratio
             y: 30
 
             add: Transition {
@@ -80,8 +81,8 @@ ActivityBase
                 id: answers
 
                 AnswerButton {
-                    width: 100
-                    height: 60
+                    width: 120 * ApplicationInfo.ratio
+                    height: 80 * ApplicationInfo.ratio
                     textLabel: modelData
                     isCorrectAnswer: modelData === Activity.getCorrectAnswer()
                     onCorrectlyPressed: Activity.answerPressed(modelData)
@@ -96,7 +97,8 @@ ActivityBase
             id: holder
             width: Math.max(questionImage.width * 1.1, questionImage.height * 1.1)
             height: questionTextBg.y + questionTextBg.height
-            x: (activity.width - width) / 2 + 50
+            x: (activity.width - width - 130 * ApplicationInfo.ratio) / 2 +
+               130 * ApplicationInfo.ratio
             y: 20
             color: "black"
             radius: 10
@@ -119,7 +121,8 @@ ActivityBase
                 id: questionImage
                 anchors.horizontalCenter: holder.horizontalCenter
                 anchors.top: spacer.bottom
-                width: Math.min(activity.width * 0.7, (activity.height - 100) * 0.7)
+                width: Math.min((activity.width - 120 * ApplicationInfo.ratio) * 0.7,
+                                (activity.height - 100 * ApplicationInfo.ratio) * 0.7)
                 height: width
             }
 
@@ -177,14 +180,13 @@ ActivityBase
         // Counter of progress within this level
         Rectangle
         {
-            width: 130 * 0.7
-            height: 70
+            width: 130 * 0.7 * ApplicationInfo.ratio
+            height: 70 * ApplicationInfo.ratio
             anchors {
                 right: parent.right
                 bottom: parent.bottom
                 margins: 10
             }
-            color: "black"
             radius: 10
             border.width: 3
             border.color: "black"
@@ -200,8 +202,8 @@ ActivityBase
                 id: currentQuestionNumberText
                 anchors.centerIn: parent
                 font.pointSize: 24
-                style: Text.Outline; styleColor: "black"
-                color: "white"
+                style: Text.Outline; styleColor: "white"
+                color: "black"
             }
         }
 
