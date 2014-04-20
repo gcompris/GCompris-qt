@@ -161,20 +161,9 @@ Rectangle {
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                if(hasConfigChanged()) {
-                    // If locale changed, ask the user to restart GCompris
-                    if(ApplicationInfo.locale != languages.get(languageBox.currentIndex).locale) {
-                        confirmDialog.text = qsTr("Do you want to apply these changes ?\n
-Locale has changed, restart the application to have new locale")
-                    }
-                    else {
-                        confirmDialog.text = qsTr("Do you want to apply these changes ?");
-                    }
-                    confirmDialog.open()
-                }
-                else {
-                    close();
-                }
+                if(hasConfigChanged())
+                    save()
+                close()
             }
         }
     }
@@ -196,23 +185,9 @@ Locale has changed, restart the application to have new locale")
         }
     }
 
-    MessageDialog {
-        id: confirmDialog
-        title: qsTr("Confirm changes")
-        text: qsTr("Do you want to apply these changes ?")
-        icon: StandardIcon.Question
-        standardButtons: StandardButton.Yes | StandardButton.No | StandardButton.Cancel
-        onYes: {  // Save settings, propagate signals then quit the page
-            ApplicationInfo.isAudioEnabled = isAudioEnabled
-            ApplicationInfo.locale = languages.get(languageBox.currentIndex).locale
-            dialogConfig.close()
-        }
-        onNo: {
-            dialogConfig.close() // Do not save, quit the page
-        }
-        onRejected: {
-            close() // Cancel, we stay on the config page
-        }
+    function save() {
+        ApplicationInfo.isAudioEnabled = isAudioEnabled
+        ApplicationInfo.locale = languages.get(languageBox.currentIndex).locale
     }
 
     ListModel {
