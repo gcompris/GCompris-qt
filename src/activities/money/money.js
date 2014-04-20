@@ -705,11 +705,13 @@ function checkAnswer() {
     for (var i = 0; i < items.answerModel.count; ++i)
         paid += items.answerModel.get(i).val
 
+    paid = paid.toFixed(2)
+
     if(!backMode) {
-        if(paid == priceTotal)
+        if(paid === priceTotal.toFixed(2))
             items.bonus.good("flower")
     } else {
-        if(paid == dataset[currentLevel].paid - priceTotal)
+        if(paid === (dataset[currentLevel].paid - priceTotal).toFixed(2))
             items.bonus.good("flower")
     }
 }
