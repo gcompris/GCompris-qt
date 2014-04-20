@@ -42,6 +42,6 @@ if(ANDROID)
   qt5_use_modules(GCompris Qml Quick Gui Multimedia Core Svg XmlPatterns)
   target_link_libraries(GCompris
     ${QT_LIBRARIES}
-    #${KCONFIG_LIB}
+    ${KCONFIG_LIBRARY}
   )
 endif(ANDROID)
