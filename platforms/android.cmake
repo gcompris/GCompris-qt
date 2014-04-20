@@ -27,6 +27,11 @@ message(STATUS "Android Native API level: ${ANDROID_NATIVE_API_LEVEL}")
 #   ADD_ANDROID_APPLICATION(my_app) : macro to add android application build
 #
 set(ANDROID_TOOL $ENV{ANDROID_SDK}/tools/android)
+
+if( CMAKE_HOST_WIN32 )
+    set( ANDROID_TOOL "${ANDROID_TOOL}.bat" )
+endif( CMAKE_HOST_WIN32 )
+
 if(NOT EXISTS ${ANDROID_TOOL})
     message(FATAL_ERROR "Failed to find `android` tool. Please make sure you have ANDROID_SDK environment variable defined")
 endif()
@@ -514,7 +519,7 @@ elseif( ANDROID_STANDALONE_TOOLCHAIN )
  set( BUILD_WITH_STANDALONE_TOOLCHAIN True )
 else()
  list(GET ANDROID_NDK_SEARCH_PATHS 0 ANDROID_NDK_SEARCH_PATH)
- message( FATAL_ERROR "Could not find neither Android NDK nor Android standalone toolcahin.
+ message( FATAL_ERROR "Could not find neither Android NDK nor Android standalone toolchain.
     You should either set an environment variable:
       export ANDROID_NDK=~/my-android-ndk
     or
@@ -560,16 +565,26 @@ if( BUILD_WITH_ANDROID_NDK )
  set( __availableToolchainArchs "" )
  set( __availableToolchainCompilerVersions "" )
  foreach( __toolchain ${__availableToolchains} )
-  __DETECT_TOOLCHAIN_MACHINE_NAME( __machine "${ANDROID_NDK}/toolchains/${__toolchain}/prebuilt/${ANDROID_NDK_HOST_SYSTEM_NAME}" )
-  if( __machine )
-   string( REGEX MATCH "[0-9]+[.][0-9]+[.]*[0-9]*$" __version "${__toolchain}" )
-   string( REGEX MATCH "^[^-]+" __arch "${__toolchain}" )
-   list( APPEND __availableToolchainMachines "${__machine}" )
-   list( APPEND __availableToolchainArchs "${__arch}" )
-   list( APPEND __availableToolchainCompilerVersions "${__version}" )
-  else()
-   list( REMOVE_ITEM __availableToolchains "${__toolchain}" )
-  endif()
+
+   __DETECT_TOOLCHAIN_MACHINE_NAME( __machine "${ANDROID_NDK}/toolchains/${__toolchain}/prebuilt/${ANDROID_NDK_HOST_SYSTEM_NAME}" )
+   if("" STREQUAL __machine ) # Try to find a 64bit version
+     # Special case for windows
+     if( CMAKE_HOST_WIN32 )
+       __DETECT_TOOLCHAIN_MACHINE_NAME( __machine "${ANDROID_NDK}/toolchains/${__toolchain}/prebuilt/${ANDROID_NDK_HOST_SYSTEM_NAME}-x86_64" )
+     else( CMAKE_HOST_WIN32 )
+       __DETECT_TOOLCHAIN_MACHINE_NAME( __machine "${ANDROID_NDK}/toolchains/${__toolchain}/prebuilt/${ANDROID_NDK_HOST_SYSTEM_NAME}_64" )
+     endif( CMAKE_HOST_WIN32 )
+   endif( not ${__machine} )
+   
+   if( __machine )
+     string( REGEX MATCH "[0-9]+[.][0-9]+[.]*[0-9]*$" __version "${__toolchain}" )
+     string( REGEX MATCH "^[^-]+" __arch "${__toolchain}" )
+     list( APPEND __availableToolchainMachines "${__machine}" )
+     list( APPEND __availableToolchainArchs "${__arch}" )
+     list( APPEND __availableToolchainCompilerVersions "${__version}" )
+   else()
+     list( REMOVE_ITEM __availableToolchains "${__toolchain}" )
+   endif()
  endforeach()
  if( NOT __availableToolchains )
   message( FATAL_ERROR "Could not any working toolchain in the NDK. Probably your Android NDK is broken." )
@@ -717,6 +732,9 @@ list( GET __availableToolchainMachines ${__toolchainIdx} ANDROID_TOOLCHAIN_MACHI
 list( GET __availableToolchainCompilerVersions ${__toolchainIdx} ANDROID_COMPILER_VERSION )
 set( ANDROID_TOOLCHAIN_NAME "${ANDROID_TOOLCHAIN_NAME}" CACHE INTERNAL "Name of toolchain used" )
 set( ANDROID_COMPILER_VERSION "${ANDROID_COMPILER_VERSION}" CACHE INTERNAL "compiler version from selected toolchain" )
+
+SET(CMAKE_CXX_COMPILER_VERSION ${ANDROID_COMPILER_VERSION}) 
+
 unset( __toolchainIdx )
 unset( __availableToolchains )
 unset( __availableToolchainMachines )
