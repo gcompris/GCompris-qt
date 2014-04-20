@@ -7,7 +7,7 @@ import GCompris 1.0
 Item {
     id: hexagon
     property Item main
-    property Audio audioDrip
+    property GCAudio audioDrip
     property string color
     property bool hasStrawberry: false
     property double ix
