@@ -3,10 +3,11 @@ import QtMultimedia 5.0
 import GCompris 1.0
 
 Item {
+    id: gcaudio
     property bool muted: !ApplicationInfo.isAudioEnabled
 
     property alias source: audio.source
-    property alias autoPlay: audio.autoPlay
+    property bool autoPlay
 
     function play() {
         if(!muted) {
@@ -16,6 +17,7 @@ Item {
 
     Audio {
         id: audio
+        autoPlay: gcaudio.autoPlay && !gcaudio.muted
         onError: console.log("error while playing: " + source + ": " + errorString)
         onPlaying: console.log("Playing " + source)
     }
