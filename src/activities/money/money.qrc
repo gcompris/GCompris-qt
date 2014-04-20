@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/gcompris/src/activities/money">
+        <file>ActivityInfo.qml</file>
+        <file>MoneyCore.qml</file>
+        <file>Money.qml</file>
+        <file>money.js</file>
+        <file>money.svg</file>
+        <file>resource/apple.svgz</file>
+        <file>resource/banane.svgz</file>
+        <file>resource/background.svgz</file>
+        <file>resource/bicycle.svgz</file>
+        <file>resource/bottle.svgz</file>
+        <file>resource/c10c.svgz</file>
+        <file>resource/c1c.svgz</file>
+        <file>resource/c1e.svgz</file>
+        <file>resource/c20c.svgz</file>
+        <file>resource/c2c.svgz</file>
+        <file>resource/c2e.svgz</file>
+        <file>resource/c50c.svgz</file>
+        <file>resource/c5c.svgz</file>
+        <file>resource/cake.svgz</file>
+        <file>resource/carot.svgz</file>
+        <file>resource/cerise.svgz</file>
+        <file>resource/eggpot.svgz</file>
+        <file>resource/football.svgz</file>
+        <file>resource/lamp.svgz</file>
+        <file>resource/light.svgz</file>
+        <file>resource/n10e.svgz</file>
+        <file>resource/n20e.svgz</file>
+        <file>resource/n50e.svgz</file>
+        <file>resource/n5e.svgz</file>
+        <file>resource/orange.svgz</file>
+        <file>resource/pamplemousse.svgz</file>
+        <file>resource/pencil.svgz</file>
+        <file>resource/tux.svgz</file>
+        <file>resource/umbrella.svgz</file>
+    </qresource>
+</RCC>

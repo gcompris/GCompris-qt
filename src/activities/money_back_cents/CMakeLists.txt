@@ -1,0 +1,2 @@
+ ### License ###
+set(gcompris_RCCS ${gcompris_RCCS} ${CMAKE_CURRENT_LIST_DIR}/money_back_cents.qrc CACHE STRING "resourceFile" FORCE)

@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/gcompris/src/activities/penalty">
+        <file>ActivityInfo.qml</file>
+        <file>Penalty.qml</file>
+        <file>penalty.js</file>
+        <file>penalty.svg</file>
+		<file>resource/click_icon.svgz</file>
+		<file>resource/penalty_bg.svgz</file>
+		<file>resource/penalty_ball.svgz</file>
+		<file>resource/penalty_player.svgz</file>
+    </qresource>
+</RCC>

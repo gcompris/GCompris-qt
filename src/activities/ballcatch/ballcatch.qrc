@@ -5,6 +5,7 @@
         <file>Ball.qml</file>
         <file>ballcatch.js</file>
         <file>ballcatch.svg</file>
+	<file>resource/arrow_key.svgz</file>
         <file>resource/brick.wav</file>
         <file>resource/youcannot.wav</file>
         <file>resource/tuxok.wav</file>
@@ -15,7 +16,6 @@
         <file>resource/beach3.svgz</file>
         <file>resource/beach4.svgz</file>
         <file>resource/hand.svgz</file>
-        <file>resource/shift_key.svgz</file>
         <file>resource/tux.svgz</file>
     </qresource>
 </RCC>

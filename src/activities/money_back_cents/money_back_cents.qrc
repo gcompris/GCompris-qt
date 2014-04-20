@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/gcompris/src/activities/money_back_cents">
+        <file>ActivityInfo.qml</file>
+        <file>MoneyBackCents.qml</file>
+        <file>money_back_cents.svg</file>
+    </qresource>
+</RCC>
