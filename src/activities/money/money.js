@@ -730,6 +730,8 @@ function unpay(index) {
 
     // Remove it from the Answer
     items.answerModel.remove(index, 1)
+
+    checkAnswer()
 }
 
 function nextLevel() {
