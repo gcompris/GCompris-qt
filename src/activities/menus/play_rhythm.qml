@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "play_rhythm/Play_rhythm.qml"
+  name: "play_rhythm/PlayRhythm.qml"
   difficulty: 3
   icon: "play_rhythm/play_rhythm.svg"
   author: "Beth Hadley <bethmhadley@gmail.com>"

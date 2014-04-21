@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "redraw_symmetrical/Redraw_symmetrical.qml"
+  name: "redraw_symmetrical/RedrawSymmetrical.qml"
   difficulty: 4
   icon: "redraw_symmetrical/redraw_symmetry.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"

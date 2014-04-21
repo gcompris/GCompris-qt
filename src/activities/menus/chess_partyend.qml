@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "chess_partyend/Chess_partyend.qml"
+  name: "chess_partyend/ChessPartyend.qml"
   difficulty: 2
   icon: "chess_partyend/chess_partyend.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
