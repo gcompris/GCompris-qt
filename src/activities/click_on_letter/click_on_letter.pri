@@ -1,7 +1,7 @@
 
 APP_FILES += \
     $$PWD/ActivityInfo.qml \
-    $$PWD/Click_on_letter.qml \
+	$$PWD/ClickOnLetter.qml \
     $$PWD/Carriage.qml \
     $$PWD/click_on_letter.js \
     $$PWD/click_on_letter.svg

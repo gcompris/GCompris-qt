@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_wordnumber/Memory_wordnumber.qml"
+  name: "memory_wordnumber/MemoryWordnumber.qml"
   difficulty: 1
   icon: "memory_wordnumber/memo_wordnumber.svg"
   author: "Yves Combe <yves@ycombe.net>"

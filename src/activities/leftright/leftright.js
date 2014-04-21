@@ -1,4 +1,4 @@
-/* GCompris - Click_on_letter.qml
+/* GCompris - leftright.js
  *
  * Copyright (C) 2014 Bruno Coudoin
  *

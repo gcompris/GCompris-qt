@@ -28,8 +28,10 @@ APP_FILES += \
 	$$PWD/ParticleSystemStar.qml \
 	$$PWD/ReadyButton.qml \
 	$$PWD/Score.qml \
-	$$PWD/Wordlist.qml
-
+	$$PWD/Wordlist.qml \
+	$$PWD/VirtualKeyboard.qml \
+	$$PWD/VirtualKey.qml
+    
 APP_FILES += \
 	$$PWD/resource/bar_about.svgz \
 	$$PWD/resource/bar_config.svgz \
@@ -67,7 +69,9 @@ APP_FILES += \
 	$$PWD/resource/intro.ogg \
 	$$PWD/resource/sizeTable.png \
 	$$PWD/resource/star.png \
-	$$PWD/resource/tuxballoon.svgz
+	$$PWD/resource/tuxballoon.svgz \
+	$$PWD/resource/arrow.png
+	
 
 APP_FILES += \
 	$$PWD/resource/sounds/crash.wav \

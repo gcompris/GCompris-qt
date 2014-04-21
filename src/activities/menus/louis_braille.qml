@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "louis_braille/Louis_braille.qml"
+  name: "louis_braille/LouisBraille.qml"
   difficulty: 4
   icon: "louis_braille/louis_braille.png"
   author: "Srishti Sethi <srishakatux@gmail.com>"
