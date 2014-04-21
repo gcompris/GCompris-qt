@@ -68,7 +68,7 @@ function initLevel() {
     items.barsList[1].nbStarsOn = nbStars[1]
     items.barsList[2].nbStarsOn = nbStars[2]
     items.barsList[3].nbStarsOn = nbStars[3]
-    items.barsList[4].nbStarsOn = 0
+    items.barsList[4].resetStars()
 
     nbStarsToRemove=getRandomInt(1,nbStars[0]-1)
 
@@ -113,6 +113,7 @@ function changeHatState(){
     items.barsList[2].nbStarsOn=nbStarsToRemove
     items.hat.starsOpacity=0
     magicHat.state="GuessNumber"
+    items.barsList[4].authorizeClick=true
 }
 
 function getRandomInt(min, max) {

@@ -2,7 +2,7 @@ import QtQuick 2.1
 import "magic-hat.js" as Activity
 
 
-Item{
+Item {
     id: mainItem
     property string starState: "off"
     property bool isClickable: false
@@ -15,9 +15,8 @@ Item{
         id:mouseArea
         anchors.fill:parent
         enabled: isClickable
-        hoverEnabled: true
         onClicked: {
-            if(starState=="on"){
+            if(starState=="on") {
                  starState="off"
             }
             else starState="on"
@@ -25,14 +24,14 @@ Item{
         }
     }
 
-    Rectangle{
+    Rectangle {
             id: contour
             width: parent.width
             height: parent.height
             color: "black"
             opacity: displayBounds? 1.0:0.0
 
-            Rectangle{
+            Rectangle {
                 id: innerRect
                 width: contour.width - 2
                 height: contour.height - 2
@@ -51,21 +50,21 @@ Item{
         fillMode: Image.PreserveAspectFit
 
         states:[
-            State{
+            State {
                 name: "on"
                 PropertyChanges {
                     target: starImg
                     source: "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/star1.svgz"
                 }
             },
-            State{
+            State {
                 name: "on_difficult"
                 PropertyChanges {
                     target: starImg
                     source: "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/star2.svgz"
                 }
             },
-            State{
+            State {
                 name: "off"
                 PropertyChanges {
                     target: starImg
@@ -75,16 +74,16 @@ Item{
         ]
     }
 
-    Behavior on x{
-        NumberAnimation{
+    Behavior on x {
+        NumberAnimation {
             id: movingAnimation
             duration: 1000
-            onRunningChanged: if(!movingAnimation.running){
+            onRunningChanged: if(!movingAnimation.running) {
                                   Activity.changeHatState()
                               }
         }
     }
-    Behavior on y{
+    Behavior on y {
         animation: movingAnimation
     }
 }

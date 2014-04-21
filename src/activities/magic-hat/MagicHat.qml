@@ -94,7 +94,6 @@ ActivityBase {
                 id: sbAnswer
                 nbStarsOn: 0
                 starsSize: background.height/18
-                authorizeClick: true
             }
         }
 

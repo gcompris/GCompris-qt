@@ -35,4 +35,12 @@ Item {
             }
         }
     }
+
+   function resetStars(){
+       authorizeClick=false
+       nbStarsOn=0
+       for(var i=0;i<10-nbStarsOn;i++){
+           repeaterStarsOff.itemAt(i).starState="off"
+       }
+   }
 }

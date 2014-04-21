@@ -32,21 +32,21 @@ Item {
         }
 
         states: [
-            State{
+            State {
                 name: "NormalPosition"
                 PropertyChanges {
                     target: rotate
                     angle: 0
                 }
             },
-            State{
+            State {
                 name: "Rotated"
                 PropertyChanges {
                     target: rotate
                     angle: -45
                 }
             },
-            State{
+            State {
                 name: "GuessNumber"
                 PropertyChanges{
                     target: hatImg
@@ -108,5 +108,3 @@ Item {
         }
     }
 }
-
-
