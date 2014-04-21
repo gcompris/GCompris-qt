@@ -35,3 +35,6 @@ mosaic
 numbers-odd-even
 penalty
 planegame
+maze
+mazerelative
+mazeinvisible
