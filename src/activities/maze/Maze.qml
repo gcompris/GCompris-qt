@@ -33,6 +33,7 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {
+
     }
 
     Keys.onPressed: Activity.processPressedKey(event)
@@ -59,7 +60,7 @@ ActivityBase {
             property alias mazeRows: maze.rows
             property alias mazeColumns: maze.columns
             property alias mazeRepeater: mazeRepeater.model
-            property alias playerState: player.state
+            property alias playerRotation: player.rotation
             property alias playBrick: playBrick
             property alias message: message
             property int playerx: 0
@@ -78,8 +79,8 @@ ActivityBase {
             Activity.stop()
         }
 
-        Rectangle{
-            color:"white"
+        Rectangle {
+            color: "white"
             anchors.fill: maze
         }
 
@@ -159,38 +160,7 @@ ActivityBase {
             x: maze.x + items.cellSize * 0.05 + items.wallSize / 2 + items.playerx * items.cellSize
             y: maze.y + items.cellSize * 0.05 + items.wallSize / 2 + items.playery * items.cellSize
             z: 2
-
-            states: [
-                State {
-                    name: "DIREAST"
-                    PropertyChanges {
-                        target: player
-                        rotation: -90
-                    }
-                },
-                State {
-                    name: "DIRSOUTH"
-                    PropertyChanges {
-                        target: player
-                        rotation: 0
-                    }
-                },
-                State {
-                    name: "DIRWEST"
-                    PropertyChanges {
-                        target: player
-                        rotation: 90
-                    }
-                },
-                State {
-                    name: "DIRNORTH"
-                    PropertyChanges {
-                        target: player
-                        rotation: 180
-                    }
-                }
-            ]
-            state: "DIREAST"
+            rotation: 270
             Behavior on x {
                 PropertyAnimation {
                     duration: 100

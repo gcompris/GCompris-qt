@@ -294,11 +294,21 @@ function autoMove(direction) {
     }
 }
 
+/* 0= SOUTH
+ * 90= WEST
+  * 180 = NORTH
+   * 270 =EST
+    */
+function getPlayerRotation() {
+    return ((items.playerRotation % 360) + 360) % 360
+}
+
 function processPressedKey(event) {
     /* Mode invisible */
     if (invisibleMode && event.key === Qt.Key_Space) {
         items.wallVisible = !items.wallVisible
-        items.message.text = qsTr("Look at your position, then switch back to invisible mode to continue your moves")
+        items.message.text = qsTr(
+                    "Look at your position, then switch back to invisible mode to continue your moves")
         items.message.visible = items.wallVisible
     }
 
@@ -310,29 +320,17 @@ function processPressedKey(event) {
             /* Relative mode */
             switch (event.key) {
             case Qt.Key_Right:
-                if (items.playerState === "DIREAST")
-                    items.playerState = "DIRSOUTH"
-                else if (items.playerState === "DIRSOUTH")
-                    items.playerState = "DIRWEST"
-                else if (items.playerState === "DIRWEST")
-                    items.playerState = "DIRNORTH"
-                else
-                    items.playerState = "DIREAST"
+                if (items.playerRotation % 90 === 0)
+                    items.playerRotation += 90
                 event.accepted = true
                 break
             case Qt.Key_Left:
-                if (items.playerState === "DIREAST")
-                    items.playerState = "DIRNORTH"
-                else if (items.playerState === "DIRNORTH")
-                    items.playerState = "DIRWEST"
-                else if (items.playerState === "DIRWEST")
-                    items.playerState = "DIRSOUTH"
-                else
-                    items.playerState = "DIREAST"
+                if (items.playerRotation % 90 === 0)
+                    items.playerRotation -= 90
                 event.accepted = true
                 break
             case Qt.Key_Up:
-                if (items.playerState === "DIREAST") {
+                if (getPlayerRotation() === 270) {
                     if (!(maze[getId(items.playerx, items.playery)] & EAST)) {
                         ++items.playerx
                         if (items.fastMode) {
@@ -341,7 +339,7 @@ function processPressedKey(event) {
                     } else {
                         items.playBrick.play()
                     }
-                } else if (items.playerState === "DIRNORTH") {
+                } else if (getPlayerRotation() === 180) {
                     if (!(maze[getId(items.playerx, items.playery)] & NORTH)) {
                         --items.playery
                         if (items.fastMode) {
@@ -350,7 +348,7 @@ function processPressedKey(event) {
                     } else {
                         items.playBrick.play()
                     }
-                } else if (items.playerState === "DIRWEST") {
+                } else if (getPlayerRotation() === 90) {
                     if (!(maze[getId(items.playerx, items.playery)] & WEST)) {
                         --items.playerx
                         if (items.fastMode) {
@@ -373,21 +371,20 @@ function processPressedKey(event) {
                 event.accepted = true
                 break
             case Qt.Key_Down:
-                if (items.playerState === "DIREAST")
-                    items.playerState = "DIRWEST"
-                else if (items.playerState === "DIRNORTH")
-                    items.playerState = "DIRSOUTH"
-                else if (items.playerState === "DIRWEST")
-                    items.playerState = "DIREAST"
-                else
-                    items.playerState = "DIRNORTH"
+                if (items.playerRotation % 90 === 0) {
+                    if (items.playerRotation >= 180)
+                        items.playerRotation -= 180
+                    else
+                        items.playerRotation += 180
+                }
                 event.accepted = true
             }
         } else {
             /* Absolute mode */
+            var curpos = getPlayerRotation()
             switch (event.key) {
             case Qt.Key_Right:
-                items.playerState = "DIREAST"
+                items.playerRotation = items.playerRotation - (curpos === 0 ? 90 : curpos - 270)
                 if (!(maze[getId(items.playerx, items.playery)] & EAST)) {
                     ++items.playerx
                     if (items.fastMode) {
@@ -399,7 +396,7 @@ function processPressedKey(event) {
                 event.accepted = true
                 break
             case Qt.Key_Left:
-                items.playerState = "DIRWEST"
+                items.playerRotation = items.playerRotation - curpos + 90
                 if (!(maze[getId(items.playerx, items.playery)] & WEST)) {
                     --items.playerx
                     if (items.fastMode) {
@@ -411,7 +408,7 @@ function processPressedKey(event) {
                 event.accepted = true
                 break
             case Qt.Key_Up:
-                items.playerState = "DIRNORTH"
+                items.playerRotation = items.playerRotation - curpos + 180
                 if (!(maze[getId(items.playerx, items.playery)] & NORTH)) {
                     --items.playery
                     if (items.fastMode) {
@@ -423,7 +420,7 @@ function processPressedKey(event) {
                 event.accepted = true
                 break
             case Qt.Key_Down:
-                items.playerState = "DIRSOUTH"
+                items.playerRotation = items.playerRotation - (curpos === 270 ? -90 : curpos)
                 if (!(maze[getId(items.playerx, items.playery)] & SOUTH)) {
                     ++items.playery
                     if (items.fastMode) {
