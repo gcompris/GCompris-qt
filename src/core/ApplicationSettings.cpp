@@ -52,7 +52,9 @@
 
 #define GC_DEFAULT_LOCALE "en_US.UTF-8"
 
-ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent), m_config()
+ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
+     m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/GCompris.conf")
+
 {
     KConfigGroup generalGroup(&m_config, "General");
     // Default values if file does not exist

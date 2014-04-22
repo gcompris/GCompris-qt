@@ -27,7 +27,8 @@ int main(int argc, char *argv[])
     QString locale;
     {
         // Local scope for config
-        KConfig config;
+        KConfig config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/GCompris.conf");
+        qDebug() << config.name();
         KConfigGroup generalGroup(&config, "General");
         // Get locale
         if(config.hasGroup(generalGroup.name())) {
