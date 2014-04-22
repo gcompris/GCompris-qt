@@ -28,6 +28,8 @@
         <file>ParticleSystemStar.qml</file>
         <file>ReadyButton.qml</file>
         <file>Score.qml</file>
+        <file>VirtualKey.qml</file>
+        <file>VirtualKeyboard.qml</file>
         <file>Wordlist.qml</file>
         <file>resource/apply.svgz</file>
         <file>resource/bar_about.svgz</file>
