@@ -246,61 +246,72 @@ function getMaze() {
     return maze
 }
 
-function autoMove(direction) {
-    var number = 0
-    var result = 0
-    if (direction !== WEST && !(maze[getId(items.playerx,
-                                           items.playery)] & EAST)) {
-        number++
-        result |= EAST
-    }
-    if (direction !== EAST && !(maze[getId(items.playerx,
-                                           items.playery)] & WEST)) {
-        number++
-        result |= WEST
-    }
-    if (direction !== NORTH && !(maze[getId(items.playerx,
-                                            items.playery)] & SOUTH)) {
-        number++
-        result |= SOUTH
-    }
-    if (direction !== SOUTH && !(maze[getId(items.playerx,
-                                            items.playery)] & NORTH)) {
-        number++
-        result |= NORTH
-    }
-    if (number == 1) {
-        if (items.playery !== items.doory
-                || items.playerx !== mazeColumns - 1) {
-            switch (result) {
-            case EAST:
-                ++items.playerx
-                autoMove(EAST)
-                break
-            case WEST:
-                --items.playerx
-                autoMove(WEST)
-                break
-            case NORTH:
-                --items.playery
-                autoMove(NORTH)
-                break
-            case SOUTH:
-                ++items.playery
-                autoMove(SOUTH)
-                break
+function autoMove() {
+    if (items.fastMode) {
+        var number = 0
+        var result = 0
+        if (getPlayerRotation() !== 90 && !(maze[getId(
+                                                     items.playerx,
+                                                     items.playery)] & EAST)) {
+            number++
+            result |= EAST
+        }
+        if (getPlayerRotation() !== 270 && !(maze[getId(
+                                                      items.playerx,
+                                                      items.playery)] & WEST)) {
+            number++
+            result |= WEST
+        }
+        if (getPlayerRotation() !== 180
+                && !(maze[getId(items.playerx, items.playery)] & SOUTH)) {
+            number++
+            result |= SOUTH
+        }
+        if (getPlayerRotation() !== 0 && !(maze[getId(
+                                                    items.playerx,
+                                                    items.playery)] & NORTH)) {
+            number++
+            result |= NORTH
+        }
+        if (number == 1) {
+            if (items.playery !== items.doory
+                    || items.playerx !== mazeColumns - 1) {
+                switch (result) {
+                case EAST:
+                    items.playerr = 270
+                    ++items.playerx
+                    break
+                case WEST:
+                    items.playerr = 90
+                    --items.playerx
+                    break
+                case NORTH:
+                    items.playerr = 180
+                    --items.playery
+                    break
+                case SOUTH:
+                    items.playerr = 0
+                    ++items.playery
+                    break
+                }
+
+                /* Check if success */
+                if (items.playery === items.doory
+                        && items.playerx === mazeColumns - 1) {
+                    items.bonus.good("lion")
+                }
             }
         }
     }
 }
 
 /* 0= SOUTH
- * 90= WEST
-  * 180 = NORTH
-   * 270 =EST
-    */
+* 90= WEST
+* 180 = NORTH
+* 270 =EST
+*/
 function getPlayerRotation() {
-    return ((items.playerRotation % 360) + 360) % 360
+    return ((items.playerr % 360) + 360) % 360
 }
 
 function processPressedKey(event) {
@@ -320,49 +331,37 @@ function processPressedKey(event) {
             /* Relative mode */
             switch (event.key) {
             case Qt.Key_Right:
-                if (items.playerRotation % 90 === 0)
-                    items.playerRotation += 90
+                if (items.playerr % 90 === 0)
+                    items.playerr += 90
                 event.accepted = true
                 break
             case Qt.Key_Left:
-                if (items.playerRotation % 90 === 0)
-                    items.playerRotation -= 90
+                if (items.playerr % 90 === 0)
+                    items.playerr -= 90
                 event.accepted = true
                 break
             case Qt.Key_Up:
                 if (getPlayerRotation() === 270) {
                     if (!(maze[getId(items.playerx, items.playery)] & EAST)) {
                         ++items.playerx
-                        if (items.fastMode) {
-                            autoMove(EAST)
-                        }
                     } else {
                         items.playBrick.play()
                     }
                 } else if (getPlayerRotation() === 180) {
                     if (!(maze[getId(items.playerx, items.playery)] & NORTH)) {
                         --items.playery
-                        if (items.fastMode) {
-                            autoMove(NORTH)
-                        }
                     } else {
                         items.playBrick.play()
                     }
                 } else if (getPlayerRotation() === 90) {
                     if (!(maze[getId(items.playerx, items.playery)] & WEST)) {
                         --items.playerx
-                        if (items.fastMode) {
-                            autoMove(WEST)
-                        }
                     } else {
                         items.playBrick.play()
                     }
                 } else {
                     if (!(maze[getId(items.playerx, items.playery)] & SOUTH)) {
                         ++items.playery
-                        if (items.fastMode) {
-                            autoMove(SOUTH)
-                        }
                     } else {
                         items.playBrick.play()
                     }
@@ -371,11 +370,11 @@ function processPressedKey(event) {
                 event.accepted = true
                 break
             case Qt.Key_Down:
-                if (items.playerRotation % 90 === 0) {
-                    if (items.playerRotation >= 180)
-                        items.playerRotation -= 180
+                if (items.playerr % 90 === 0) {
+                    if (items.playerr >= 180)
+                        items.playerr -= 180
                     else
-                        items.playerRotation += 180
+                        items.playerr += 180
                 }
                 event.accepted = true
             }
@@ -384,48 +383,36 @@ function processPressedKey(event) {
             var curpos = getPlayerRotation()
             switch (event.key) {
             case Qt.Key_Right:
-                items.playerRotation = items.playerRotation - (curpos === 0 ? 90 : curpos - 270)
+                items.playerr = items.playerr - (curpos === 0 ? 90 : curpos - 270)
                 if (!(maze[getId(items.playerx, items.playery)] & EAST)) {
                     ++items.playerx
-                    if (items.fastMode) {
-                        autoMove(EAST)
-                    }
                 } else {
                     items.playBrick.play()
                 }
                 event.accepted = true
                 break
             case Qt.Key_Left:
-                items.playerRotation = items.playerRotation - curpos + 90
+                items.playerr = items.playerr - curpos + 90
                 if (!(maze[getId(items.playerx, items.playery)] & WEST)) {
                     --items.playerx
-                    if (items.fastMode) {
-                        autoMove(WEST)
-                    }
                 } else {
                     items.playBrick.play()
                 }
                 event.accepted = true
                 break
             case Qt.Key_Up:
-                items.playerRotation = items.playerRotation - curpos + 180
+                items.playerr = items.playerr - curpos + 180
                 if (!(maze[getId(items.playerx, items.playery)] & NORTH)) {
                     --items.playery
-                    if (items.fastMode) {
-                        autoMove(NORTH)
-                    }
                 } else {
                     items.playBrick.play()
                 }
                 event.accepted = true
                 break
             case Qt.Key_Down:
-                items.playerRotation = items.playerRotation - (curpos === 270 ? -90 : curpos)
+                items.playerr = items.playerr - (curpos === 270 ? -90 : curpos)
                 if (!(maze[getId(items.playerx, items.playery)] & SOUTH)) {
                     ++items.playery
-                    if (items.fastMode) {
-                        autoMove(SOUTH)
-                    }
                 } else {
                     items.playBrick.play()
                 }

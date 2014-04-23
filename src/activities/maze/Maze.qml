@@ -60,11 +60,11 @@ ActivityBase {
             property alias mazeRows: maze.rows
             property alias mazeColumns: maze.columns
             property alias mazeRepeater: mazeRepeater.model
-            property alias playerRotation: player.rotation
             property alias playBrick: playBrick
             property alias message: message
             property int playerx: 0
             property int playery: 0
+            property int playerr: 270
             property int doory: 0
             property int cellSize: (parent.height - 200) / mazeRows
             property int wallSize: cellSize / 10
@@ -160,15 +160,33 @@ ActivityBase {
             x: maze.x + items.cellSize * 0.05 + items.wallSize / 2 + items.playerx * items.cellSize
             y: maze.y + items.cellSize * 0.05 + items.wallSize / 2 + items.playery * items.cellSize
             z: 2
-            rotation: 270
+            rotation: items.playerr
+            Timer {
+                id: timeAutoMove
+                interval: 10
+                running: false
+                repeat: false
+                onTriggered: Activity.autoMove()
+            }
+
             Behavior on x {
-                PropertyAnimation {
-                    duration: 100
+                SequentialAnimation {
+                    NumberAnimation {
+                        duration: 100
+                    }
+                    ScriptAction {
+                        script: timeAutoMove.running = true
+                    }
                 }
             }
             Behavior on y {
-                PropertyAnimation {
-                    duration: 100
+                SequentialAnimation {
+                    NumberAnimation {
+                        duration: 100
+                    }
+                    ScriptAction {
+                        script: timeAutoMove.running = true
+                    }
                 }
             }
             Behavior on rotation {
