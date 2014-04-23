@@ -66,7 +66,8 @@ ActivityBase {
             property int playery: 0
             property int playerr: 270
             property int doory: 0
-            property int cellSize: (parent.height - 200) / mazeRows
+            property int cellSize: Math.min((parent.height - 200) / mazeRows,
+                                            (parent.width - 40) / mazeColumns)
             property int wallSize: cellSize / 10
             property bool wallVisible: true
             property bool fastMode: false
