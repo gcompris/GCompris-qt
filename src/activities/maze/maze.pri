@@ -8,5 +8,6 @@ APP_FILES += \
     src/activities/maze/resource/tux_shoes_top_south.svgz \
     src/activities/maze/resource/door.png \
     src/activities/maze/resource/tux_top_south.svg \
-    src/activities/maze/resource/maze_bg.svgz
+    src/activities/maze/resource/maze_bg.svgz \
+    src/activities/maze/resource/maze-2d-bubble.svg
 

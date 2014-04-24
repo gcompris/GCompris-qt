@@ -318,8 +318,6 @@ function processPressedKey(event) {
     /* Mode invisible */
     if (invisibleMode && event.key === Qt.Key_Space) {
         items.wallVisible = !items.wallVisible
-        items.message.text = qsTr(
-                    "Look at your position, then switch back to invisible mode to continue your moves")
         items.message.visible = items.wallVisible
     }
 

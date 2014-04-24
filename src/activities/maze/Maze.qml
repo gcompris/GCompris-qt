@@ -222,6 +222,20 @@ ActivityBase {
             anchors.rightMargin: items.cellSize * 0.05 + items.wallSize / 2
         }
 
+        BarButton {
+            id: switchMaze
+            source: Activity.url + "maze-2d-bubble.svg"
+            anchors.left: bar.right
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 10
+            sourceSize.width: 66 * bar.barZoom
+            visible: invisibleMode
+            onClicked: {
+                items.wallVisible = !items.wallVisible
+                message.visible = items.wallVisible
+            }
+        }
+
         Image {
             id: fastmode
             source: Activity.url + "fast-mode-button.svgz"
@@ -243,6 +257,7 @@ ActivityBase {
             anchors.topMargin: 5
             font.pointSize: 18
             visible: false
+            text: qsTr("Look at your position, then switch back to invisible mode to continue your moves")
         }
 
         Audio {
