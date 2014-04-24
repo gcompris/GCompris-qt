@@ -203,6 +203,7 @@ ActivityBase {
                 }
             }
 
+
             Image {
                 id: shoes
                 source: Activity.url + "tux_shoes_top_south.svgz"
@@ -210,6 +211,42 @@ ActivityBase {
                 anchors.centerIn: parent
                 visible: items.fastMode
             }
+        }
+
+        MouseArea {
+            id: clickUp
+            x: maze.x + items.playerx * items.cellSize
+            y: maze.y + items.playery * items.cellSize - height
+            height: items.cellSize
+            width: items.cellSize
+            onClicked: Activity.clickUp()
+        }
+
+        MouseArea {
+            id: clickDown
+            x: maze.x + items.playerx * items.cellSize
+            y: maze.y + items.playery * items.cellSize + player.height
+            height: items.cellSize
+            width: items.cellSize
+            onClicked: Activity.clickDown()
+        }
+
+        MouseArea {
+            id: clickRight
+            x: maze.x + items.playerx * items.cellSize + player.width
+            y: maze.y + items.playery * items.cellSize
+            height: items.cellSize
+            width: items.cellSize
+            onClicked: Activity.clickRight()
+        }
+
+        MouseArea {
+            id: clickLeft
+            x: maze.x + items.playerx * items.cellSize - width
+            y: maze.y + items.playery * items.cellSize
+            height: items.cellSize
+            width: items.cellSize
+            onClicked: Activity.clickLeft()
         }
 
         Image {

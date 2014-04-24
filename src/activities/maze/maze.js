@@ -112,8 +112,6 @@ function initLevel() {
         mazeRows = 19
     }
 
-    items.fastMode = (currentLevel + 1 >= 14)
-
     items.mazeRows = mazeRows
     items.mazeColumns = mazeColumns
 
@@ -141,6 +139,8 @@ function initLevel() {
 
     /* Set position of door */
     items.doory = Math.floor(Math.random() * mazeRows)
+
+    items.fastMode = (currentLevel + 1 >= 14)
 }
 
 function getId(x, y) {
@@ -296,10 +296,7 @@ function autoMove() {
                 }
 
                 /* Check if success */
-                if (items.playery === items.doory
-                        && items.playerx === mazeColumns - 1) {
-                    items.bonus.good("lion")
-                }
+                checkSuccess()
             }
         }
     }
@@ -314,6 +311,12 @@ function getPlayerRotation() {
     return ((items.playerr % 360) + 360) % 360
 }
 
+function checkSuccess() {
+    if (items.playery === items.doory && items.playerx === mazeColumns - 1) {
+        items.bonus.good("lion")
+    }
+}
+
 function processPressedKey(event) {
     /* Mode invisible */
     if (invisibleMode && event.key === Qt.Key_Space) {
@@ -322,105 +325,152 @@ function processPressedKey(event) {
     }
 
     /* Move the player */
+    switch (event.key) {
+    case Qt.Key_Right:
+        clickRight()
+        event.accepted = true
+        break
+    case Qt.Key_Left:
+        clickLeft()
+        event.accepted = true
+        break
+    case Qt.Key_Up:
+        clickUp()
+        event.accepted = true
+        break
+    case Qt.Key_Down:
+        clickDown()
+        event.accepted = true
+        break
+    }
+
+    /* Check if success */
+    checkSuccess()
+}
+
+function clickRight() {
+    /* Move the player */
     if ((!invisibleMode || !items.wallVisible)
             && (items.playery !== items.doory
                 || items.playerx !== mazeColumns - 1)) {
         if (relativeMode) {
             /* Relative mode */
-            switch (event.key) {
-            case Qt.Key_Right:
-                if (items.playerr % 90 === 0)
-                    items.playerr += 90
-                event.accepted = true
-                break
-            case Qt.Key_Left:
-                if (items.playerr % 90 === 0)
-                    items.playerr -= 90
-                event.accepted = true
-                break
-            case Qt.Key_Up:
-                if (getPlayerRotation() === 270) {
-                    if (!(maze[getId(items.playerx, items.playery)] & EAST)) {
-                        ++items.playerx
-                    } else {
-                        items.playBrick.play()
-                    }
-                } else if (getPlayerRotation() === 180) {
-                    if (!(maze[getId(items.playerx, items.playery)] & NORTH)) {
-                        --items.playery
-                    } else {
-                        items.playBrick.play()
-                    }
-                } else if (getPlayerRotation() === 90) {
-                    if (!(maze[getId(items.playerx, items.playery)] & WEST)) {
-                        --items.playerx
-                    } else {
-                        items.playBrick.play()
-                    }
-                } else {
-                    if (!(maze[getId(items.playerx, items.playery)] & SOUTH)) {
-                        ++items.playery
-                    } else {
-                        items.playBrick.play()
-                    }
-                }
-
-                event.accepted = true
-                break
-            case Qt.Key_Down:
-                if (items.playerr % 90 === 0) {
-                    if (items.playerr >= 180)
-                        items.playerr -= 180
-                    else
-                        items.playerr += 180
-                }
-                event.accepted = true
-            }
+            if (items.playerr % 90 === 0)
+                items.playerr += 90
         } else {
             /* Absolute mode */
             var curpos = getPlayerRotation()
-            switch (event.key) {
-            case Qt.Key_Right:
-                items.playerr = items.playerr - (curpos === 0 ? 90 : curpos - 270)
-                if (!(maze[getId(items.playerx, items.playery)] & EAST)) {
-                    ++items.playerx
-                } else {
-                    items.playBrick.play()
-                }
-                event.accepted = true
-                break
-            case Qt.Key_Left:
-                items.playerr = items.playerr - curpos + 90
-                if (!(maze[getId(items.playerx, items.playery)] & WEST)) {
-                    --items.playerx
-                } else {
-                    items.playBrick.play()
-                }
-                event.accepted = true
-                break
-            case Qt.Key_Up:
-                items.playerr = items.playerr - curpos + 180
-                if (!(maze[getId(items.playerx, items.playery)] & NORTH)) {
-                    --items.playery
-                } else {
-                    items.playBrick.play()
-                }
-                event.accepted = true
-                break
-            case Qt.Key_Down:
-                items.playerr = items.playerr - (curpos === 270 ? -90 : curpos)
-                if (!(maze[getId(items.playerx, items.playery)] & SOUTH)) {
-                    ++items.playery
-                } else {
-                    items.playBrick.play()
-                }
-                event.accepted = true
+            items.playerr = items.playerr - (curpos === 0 ? 90 : curpos - 270)
+            if (!(maze[getId(items.playerx, items.playery)] & EAST)) {
+                ++items.playerx
+            } else {
+                items.playBrick.play()
             }
         }
     }
 
     /* Check if success */
-    if (items.playery === items.doory && items.playerx === mazeColumns - 1) {
-        items.bonus.good("lion")
+    checkSuccess()
+}
+
+function clickLeft() {
+    /* Move the player */
+    if ((!invisibleMode || !items.wallVisible)
+            && (items.playery !== items.doory
+                || items.playerx !== mazeColumns - 1)) {
+        if (relativeMode) {
+            /* Relative mode */
+            if (items.playerr % 90 === 0)
+                items.playerr -= 90
+        } else {
+            /* Absolute mode */
+            var curpos = getPlayerRotation()
+            items.playerr = items.playerr - curpos + 90
+            if (!(maze[getId(items.playerx, items.playery)] & WEST)) {
+                --items.playerx
+            } else {
+                items.playBrick.play()
+            }
+        }
     }
+
+    /* Check if success */
+    checkSuccess()
+}
+
+function clickDown() {
+    /* Move the player */
+    if ((!invisibleMode || !items.wallVisible)
+            && (items.playery !== items.doory
+                || items.playerx !== mazeColumns - 1)) {
+        if (relativeMode) {
+            /* Relative mode */
+            if (items.playerr % 90 === 0) {
+                if (items.playerr >= 180)
+                    items.playerr -= 180
+                else
+                    items.playerr += 180
+            }
+        } else {
+            /* Absolute mode */
+            var curpos = getPlayerRotation()
+            items.playerr = items.playerr - (curpos === 270 ? -90 : curpos)
+            if (!(maze[getId(items.playerx, items.playery)] & SOUTH)) {
+                ++items.playery
+            } else {
+                items.playBrick.play()
+            }
+        }
+    }
+
+    /* Check if success */
+    checkSuccess()
+}
+
+function clickUp() {
+    /* Move the player */
+    if ((!invisibleMode || !items.wallVisible)
+            && (items.playery !== items.doory
+                || items.playerx !== mazeColumns - 1)) {
+        if (relativeMode) {
+            /* Relative mode */
+            if (getPlayerRotation() === 270) {
+                if (!(maze[getId(items.playerx, items.playery)] & EAST)) {
+                    ++items.playerx
+                } else {
+                    items.playBrick.play()
+                }
+            } else if (getPlayerRotation() === 180) {
+                if (!(maze[getId(items.playerx, items.playery)] & NORTH)) {
+                    --items.playery
+                } else {
+                    items.playBrick.play()
+                }
+            } else if (getPlayerRotation() === 90) {
+                if (!(maze[getId(items.playerx, items.playery)] & WEST)) {
+                    --items.playerx
+                } else {
+                    items.playBrick.play()
+                }
+            } else {
+                if (!(maze[getId(items.playerx, items.playery)] & SOUTH)) {
+                    ++items.playery
+                } else {
+                    items.playBrick.play()
+                }
+            }
+        } else {
+            /* Absolute mode */
+            var curpos = getPlayerRotation()
+            items.playerr = items.playerr - curpos + 180
+            if (!(maze[getId(items.playerx, items.playery)] & NORTH)) {
+                --items.playery
+            } else {
+                items.playBrick.play()
+            }
+        }
+    }
+
+    /* Check if success */
+    checkSuccess()
 }
