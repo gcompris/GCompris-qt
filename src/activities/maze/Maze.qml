@@ -88,7 +88,7 @@ ActivityBase {
         Grid {
             id: maze
             anchors.top: parent.top
-            anchors.topMargin: 50
+            anchors.topMargin: (parent.height - height) / 2
             anchors.horizontalCenter: parent.horizontalCenter
             columns: 0
             rows: 0
