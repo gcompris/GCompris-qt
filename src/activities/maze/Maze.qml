@@ -203,7 +203,6 @@ ActivityBase {
                 }
             }
 
-
             Image {
                 id: shoes
                 source: Activity.url + "tux_shoes_top_south.svgz"
@@ -274,18 +273,61 @@ ActivityBase {
             }
         }
 
-        Image {
+        BarButton {
             id: fastmode
             source: Activity.url + "fast-mode-button.svgz"
-            sourceSize.width: 66 * ApplicationInfo.ratio
+            sourceSize.width: 66 * bar.barZoom
+            visible: true
             x: 10
             y: 10
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    items.fastMode = !items.fastMode
-                }
-            }
+            onClicked: items.fastMode = !items.fastMode
+        }
+
+        BarButton {
+            id: buttonright
+            anchors.bottom: bar.bottom
+            anchors.bottomMargin: 10
+            anchors.right: parent.right
+            anchors.rightMargin: 10
+            visible: true
+            source: "qrc:/gcompris/src/core/resource/bar_next.svgz"
+            sourceSize.width: 30 * bar.barZoom
+            onClicked: Activity.clickRight()
+        }
+
+        BarButton {
+            id: buttonbottom
+            anchors.bottom: bar.bottom
+            anchors.bottomMargin: 10
+            anchors.right: buttonright.left
+            anchors.rightMargin: 10
+            visible: true
+            source: Activity.url + "button_down.svgz"
+            sourceSize.height: 30 * bar.barZoom
+            onClicked: Activity.clickDown()
+        }
+
+        BarButton {
+            id: buttontop
+            anchors.bottom: buttonbottom.top
+            anchors.bottomMargin: 10
+            anchors.right: buttonright.left
+            anchors.rightMargin: 10
+            visible: true
+            source: Activity.url + "button_up.svgz"
+            sourceSize.height: 30 * bar.barZoom
+            onClicked: Activity.clickUp()
+        }
+        BarButton {
+            id: buttonleft
+            anchors.bottom: bar.bottom
+            anchors.bottomMargin: 10
+            anchors.right: buttonbottom.left
+            anchors.rightMargin: 10
+            visible: true
+            source: "qrc:/gcompris/src/core/resource/bar_previous.svgz"
+            sourceSize.width: 30 * bar.barZoom
+            onClicked: Activity.clickLeft()
         }
 
         Text {
