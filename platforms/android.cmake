@@ -570,10 +570,15 @@ if( BUILD_WITH_ANDROID_NDK )
    if("" STREQUAL __machine ) # Try to find a 64bit version
      # Special case for windows
      if( CMAKE_HOST_WIN32 )
-       __DETECT_TOOLCHAIN_MACHINE_NAME( __machine "${ANDROID_NDK}/toolchains/${__toolchain}/prebuilt/${ANDROID_NDK_HOST_SYSTEM_NAME}-x86_64" )
+       set(NEW_ANDROID_NDK_HOST_SYSTEM_NAME "${ANDROID_NDK_HOST_SYSTEM_NAME}-x86_64")
      else( CMAKE_HOST_WIN32 )
-       __DETECT_TOOLCHAIN_MACHINE_NAME( __machine "${ANDROID_NDK}/toolchains/${__toolchain}/prebuilt/${ANDROID_NDK_HOST_SYSTEM_NAME}_64" )
+       set(NEW_ANDROID_NDK_HOST_SYSTEM_NAME "${ANDROID_NDK_HOST_SYSTEM_NAME}_64")
      endif( CMAKE_HOST_WIN32 )
+     __DETECT_TOOLCHAIN_MACHINE_NAME( __machine "${ANDROID_NDK}/toolchains/${__toolchain}/prebuilt/${NEW_ANDROID_NDK_HOST_SYSTEM_NAME}" )
+     # If 64b version exists, we update the ANDROID_NDK_HOST_SYSTEM_NAME value
+     if( __machine )
+       set(ANDROID_NDK_HOST_SYSTEM_NAME ${NEW_ANDROID_NDK_HOST_SYSTEM_NAME})
+     endif(__machine)
    endif( not ${__machine} )
    
    if( __machine )
