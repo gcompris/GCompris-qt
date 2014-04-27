@@ -88,7 +88,7 @@ ActivityBase {
         Grid {
             id: maze
             anchors.top: parent.top
-            anchors.topMargin: 50
+            anchors.topMargin: (parent.height - height) / 2
             anchors.horizontalCenter: parent.horizontalCenter
             columns: 0
             rows: 0
@@ -278,55 +278,55 @@ ActivityBase {
             source: Activity.url + "fast-mode-button.svgz"
             sourceSize.width: 66 * bar.barZoom
             visible: true
-            x: 10
-            y: 10
+            x: 10 * ApplicationInfo.ratio
+            y: 10 * ApplicationInfo.ratio
             onClicked: items.fastMode = !items.fastMode
         }
 
         BarButton {
             id: buttonright
             anchors.bottom: bar.bottom
-            anchors.bottomMargin: 10
+            anchors.bottomMargin: 20 * ApplicationInfo.ratio
             anchors.right: parent.right
-            anchors.rightMargin: 10
+            anchors.rightMargin: 20 * ApplicationInfo.ratio
             visible: ApplicationInfo.isMobile
             source: relativeMode ? Activity.url + "button_rotate_right.svg" : "qrc:/gcompris/src/core/resource/bar_next.svgz"
-            sourceSize.width: 30 * bar.barZoom
+            sourceSize.width: 45 * ApplicationInfo.ratio
             onClicked: Activity.clickRight()
         }
 
         BarButton {
             id: buttonbottom
             anchors.bottom: bar.bottom
-            anchors.bottomMargin: 10
+            anchors.bottomMargin: 20 * ApplicationInfo.ratio
             anchors.right: buttonright.left
-            anchors.rightMargin: 10
+            anchors.rightMargin: 20 * ApplicationInfo.ratio
             visible: ApplicationInfo.isMobile
             source: Activity.url + "button_down.svgz"
-            sourceSize.height: 30 * bar.barZoom
+            sourceSize.height: 45 * ApplicationInfo.ratio
             onClicked: Activity.clickDown()
         }
 
         BarButton {
             id: buttontop
             anchors.bottom: buttonbottom.top
-            anchors.bottomMargin: 10
+            anchors.bottomMargin: 20 * ApplicationInfo.ratio
             anchors.right: buttonright.left
-            anchors.rightMargin: 10
+            anchors.rightMargin: 20 * ApplicationInfo.ratio
             visible: ApplicationInfo.isMobile
             source: Activity.url + "button_up.svgz"
-            sourceSize.height: 30 * bar.barZoom
+            sourceSize.height: 45 * ApplicationInfo.ratio
             onClicked: Activity.clickUp()
         }
         BarButton {
             id: buttonleft
             anchors.bottom: bar.bottom
-            anchors.bottomMargin: 10
+            anchors.bottomMargin: 20 * ApplicationInfo.ratio
             anchors.right: buttonbottom.left
-            anchors.rightMargin: 10
+            anchors.rightMargin: 20 * ApplicationInfo.ratio
             visible: ApplicationInfo.isMobile
             source: relativeMode ? Activity.url + "button_rotate_left.svg" : "qrc:/gcompris/src/core/resource/bar_previous.svgz"
-            sourceSize.width: 30 * bar.barZoom
+            sourceSize.width: 45 * ApplicationInfo.ratio
             onClicked: Activity.clickLeft()
         }
 
