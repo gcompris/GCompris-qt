@@ -289,8 +289,8 @@ ActivityBase {
             anchors.bottomMargin: 10
             anchors.right: parent.right
             anchors.rightMargin: 10
-            visible: true
-            source: "qrc:/gcompris/src/core/resource/bar_next.svgz"
+            visible: ApplicationInfo.isMobile
+            source: relativeMode ? Activity.url + "button_rotate_right.svg" : "qrc:/gcompris/src/core/resource/bar_next.svgz"
             sourceSize.width: 30 * bar.barZoom
             onClicked: Activity.clickRight()
         }
@@ -301,7 +301,7 @@ ActivityBase {
             anchors.bottomMargin: 10
             anchors.right: buttonright.left
             anchors.rightMargin: 10
-            visible: true
+            visible: ApplicationInfo.isMobile
             source: Activity.url + "button_down.svgz"
             sourceSize.height: 30 * bar.barZoom
             onClicked: Activity.clickDown()
@@ -313,7 +313,7 @@ ActivityBase {
             anchors.bottomMargin: 10
             anchors.right: buttonright.left
             anchors.rightMargin: 10
-            visible: true
+            visible: ApplicationInfo.isMobile
             source: Activity.url + "button_up.svgz"
             sourceSize.height: 30 * bar.barZoom
             onClicked: Activity.clickUp()
@@ -324,8 +324,8 @@ ActivityBase {
             anchors.bottomMargin: 10
             anchors.right: buttonbottom.left
             anchors.rightMargin: 10
-            visible: true
-            source: "qrc:/gcompris/src/core/resource/bar_previous.svgz"
+            visible: ApplicationInfo.isMobile
+            source: relativeMode ? Activity.url + "button_rotate_left.svg" : "qrc:/gcompris/src/core/resource/bar_previous.svgz"
             sourceSize.width: 30 * bar.barZoom
             onClicked: Activity.clickLeft()
         }
