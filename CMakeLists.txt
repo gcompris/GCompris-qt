@@ -38,9 +38,8 @@ find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED
 #endforeach()
 
 # To have src/core/*{.qml/.js} files and activities.txt in qtcreator project
-file(GLOB gcompris_SRCS src/core/*.qml src/core/*.js src/activities/*/*.qml src/activities/*/*.js src/activities/activities.txt)
-set(gcompris_SRCS ${QML_SRC} ${gcompris_SRCS})
-
+file(GLOB gcompris_SRCS src/core/*.qml src/core/*.js src/activities/*/*.qml
+  src/activities/*/*.js src/activities/activities.txt)
 
 # Translations handling
 SET(GCOMPRIS_TRANSLATIONS
