@@ -1,3 +1,23 @@
+/* GCompris - dialogBackground.qml
+ *
+ * Copyright (C) 2014 Johnny Jazeix <jazeix@gmail.com>
+ *
+ * Authors:
+ *   Johnny Jazeix <jazeix@gmail.com>
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
 import QtQuick 2.2
 import QtQuick.Controls 1.1
 import QtQuick.Controls.Styles 1.1
@@ -192,11 +212,33 @@ Rectangle {
 
     ListModel {
         id: languages
-        // todo: load all from json/xml file ?
-        ListElement { text:  QT_TR_NOOP("English (Great Britain)"); locale: "en_GB.UTF-8" }
-        ListElement { text:  QT_TR_NOOP("English (United States)"); locale: "en_US.UTF-8" }
-        ListElement { text: QT_TR_NOOP("French"); locale: "fr_FR.UTF-8" }
-        ListElement { text: QT_TR_NOOP("German"); locale: "de_DE.UTF-8" }
+        ListElement { text: qsTr("English (Great Britain)"); locale: "en_GB.UTF-8" }
+        ListElement { text: qsTr("English (United States)"); locale: "en_US.UTF-8" }
+        ListElement { text: qsTr("Bulgarian"); locale: "bg_BG.UTF-8" }
+        ListElement { text: qsTr("Breton"); locale: "br_FR.UTF-8" }
+        ListElement { text: qsTr("Czech Republic"); locale: "cs_CZ.UTF-8" }
+        ListElement { text: qsTr("Danish"); locale: "da_DK.UTF-8" }
+        ListElement { text: qsTr("German"); locale: "de_DE.UTF-8" }
+        ListElement { text: qsTr("Greek"); locale: "el_GR.UTF-8" }
+        ListElement { text: qsTr("Spanish"); locale: "es_ES.UTF-8" }
+        ListElement { text: qsTr("French"); locale: "fr_FR.UTF-8" }
+        ListElement { text: qsTr("Scottish Gaelic"); locale: "gd_GB.UTF-8" }
+        ListElement { text: qsTr("Galician"); locale: "gl_ES.UTF-8" }
+        ListElement { text: qsTr("Hungarian"); locale: "hu_HU.UTF-8" }
+        ListElement { text: qsTr("Lithuanian"); locale: "lt_LT.UTF-8" }
+        ListElement { text: qsTr("Latvian"); locale: "lv_LV.UTF-8" }
+        ListElement { text: qsTr("Dutch"); locale: "nl_NL.UTF-8" }
+        ListElement { text: qsTr("Norwegian Nynorsk"); locale: "nn_NO.UTF-8" }
+        ListElement { text: qsTr("Polish"); locale: "pl_PL.UTF-8" }
+        ListElement { text: qsTr("Russian"); locale: "ru_RU.UTF-8" }
+        ListElement { text: qsTr("Portuguese (Brazil)"); locale: "pt_BR.UTF-8" }
+        ListElement { text: qsTr("Slovak"); locale: "sk_SK.UTF-8" }
+        ListElement { text: qsTr("Slovenian"); locale: "sl_SI.UTF-8" }
+        ListElement { text: qsTr("Montenegrin"); locale: "sr_ME.UTF-8" }
+        ListElement { text: qsTr("Swedish"); locale: "sv_FI.UTF-8" }
+        ListElement { text: qsTr("Tamil"); locale: "ta_IN.UTF-8" }
+        ListElement { text: qsTr("Thai"); locale: "th_TH.UTF-8" }
+        ListElement { text: qsTr("Chinese (Traditional)"); locale: "zh_TW.UTF-8" }
     }
 
     function hasConfigChanged() {

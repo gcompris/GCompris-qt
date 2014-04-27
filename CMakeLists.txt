@@ -42,36 +42,53 @@ file(GLOB gcompris_SRCS src/core/*.qml src/core/*.js src/activities/*/*.qml
   src/activities/*/*.js src/activities/activities.txt)
 
 # Translations handling
-SET(GCOMPRIS_TRANSLATIONS
-    translations/gcompris_de_DE.ts
-    translations/gcompris_fr_FR.ts
+SET(TRANSLATIONS_FILES
+  translations/gcompris_bg.ts
+  translations/gcompris_br.ts
+  translations/gcompris_cs.ts
+  translations/gcompris_da.ts
+  translations/gcompris_de.ts
+  translations/gcompris_el.ts
+  translations/gcompris_es.ts
+  translations/gcompris_fr.ts
+  translations/gcompris_gd.ts
+  translations/gcompris_gl.ts
+  translations/gcompris_hu.ts
+  translations/gcompris_lt.ts
+  translations/gcompris_lv.ts
+  translations/gcompris_nl.ts
+  translations/gcompris_nn.ts
+  translations/gcompris_pl.ts
+  translations/gcompris_pt_BR.ts
+  translations/gcompris_ru.ts
+  translations/gcompris_sk.ts
+  translations/gcompris_sl.ts
+  translations/gcompris_sr.ts
+  translations/gcompris_sv.ts
+  translations/gcompris_ta.ts
+  translations/gcompris_th.ts
+  translations/gcompris_zh_TW.ts
 )
 
-# Translations should go to bin output directory by default
-qt5_create_translation(QM_FILES ${gcompris_SRCS} ${GCOMPRIS_TRANSLATIONS})
-add_custom_target(translations ALL DEPENDS ${QM_FILES})
-
-# Move all generated .qm to bin folder.
-# TODO Find a better way ?
-file(GLOB QM_OUTPUT_FILES ${CMAKE_BINARY_DIR}/*.qm)
-
-set(counter 1)
-foreach(QmFile ${QM_OUTPUT_FILES})
-  add_custom_target(copyTranslation${counter}
-                    ALL DEPENDS translations
-                    COMMAND ${CMAKE_COMMAND} -E copy ${QmFile} ${CMAKE_BINARY_DIR}/bin/
-                    COMMAND ${CMAKE_COMMAND} -E remove ${QmFile})
-  set(counter counter+1)
+# Set the output dir for the translation files to /bin
+foreach(TsSource ${TRANSLATIONS_FILES})
+  set_source_files_properties(${TsSource}
+	PROPERTIES OUTPUT_LOCATION ${CMAKE_CURRENT_BINARY_DIR}/bin)
 endforeach()
+
+# FIXME On make clean the translations/*.ts files should not be removed
+qt5_create_translation(QM_FILES ${gcompris_SRCS} ${TRANSLATIONS_FILES})
+add_custom_target(UpdateTranslations DEPENDS ${gcompris_SRCS} ${TRANSLATIONS_FILES})
+add_custom_target(BuildTranslations DEPENDS ${QM_FILES})
 
 # Set output directory
 if(ANDROID)
-# Android .so output
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android/libs/${ARM_TARGET}/)
-add_subdirectory(android)
+  # Android .so output
+  set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android/libs/${ARM_TARGET}/)
+  add_subdirectory(android)
 else(ANDROID)
-# Desktop build
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+  # Desktop build
+  set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 endif(ANDROID)
 
 add_subdirectory(src)

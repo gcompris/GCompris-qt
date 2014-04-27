@@ -31,7 +31,10 @@ for messages in root.iter('message'):
             if entry.msgid.encode('utf-8') == original.encode('utf-8') and \
                     messages.find('translation').attrib['type'] == 'unfinished':
                 messages.find('translation').text = entry.msgstr
-                messages.find('translation').attrib.pop('type')
+                try:
+                    messages.find('translation').attrib.pop('type')
+                except:
+                    pass
                 break
 
 with open('gcompris_' + sys.argv[3] + '.ts', 'wb') as f:
