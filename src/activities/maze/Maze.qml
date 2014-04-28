@@ -332,12 +332,18 @@ ActivityBase {
 
         Text {
             id: message
-            anchors.top: maze.bottom
-            anchors.topMargin: 5
+            anchors {
+                top: activity.top
+                left: fastmode.right
+                right: activity.right
+                bottom: maze.top
+                margins: 20
+            }
+            width: activity.width - x - 20
             font.pointSize: 18
             horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
             visible: false
-            width: parent.width
             wrapMode: Text.Wrap
             text: qsTr("Look at your position, then switch back to invisible mode to continue your moves")
         }
