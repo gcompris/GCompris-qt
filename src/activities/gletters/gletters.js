@@ -30,6 +30,8 @@
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 
+var url = "qrc:/gcompris/src/activities/gletters/resource/"
+
 var currentLevel = 0;
 var currentSubLevel = 0;
 var level = null;

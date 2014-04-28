@@ -39,7 +39,9 @@ ActivityBase {
     
     pageComponent: Image {
         id: background
-        source: "qrc:/gcompris/src/activities/gletters/resource/scenery_background.png"
+        source: Activity.url + "scenery_background.png"
+        fillMode: Image.PreserveAspectCrop
+
         signal start
         signal stop
         
@@ -112,11 +114,11 @@ ActivityBase {
         
         Wordlist {
             id: wordlist
-            defaultFilename: ":/gcompris/src/activities/gletters/resource/default-en.json"
+            defaultFilename: Activity.url + "default-en.json"
             // FIXME: this should be something like
             // ApplicationInfo.getDataPath() + "gletters/" + "default-" + ApplicationInfo.getCurrentLocale() + ".json"
             // once it is there.
-            filename: ApplicationInfo.getAudioFilePath("gletters/default-de.json");
+            filename: ApplicationInfo.getAudioFilePath("gletters/default-en.json");
 
             onError: console.log("Gletters: Wordlist error: " + msg);
         }
