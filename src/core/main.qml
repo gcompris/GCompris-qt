@@ -29,7 +29,7 @@ Window {
     id: main
     width: 800
     height: 520
-    minimumWidth: 600
+    minimumWidth: 400
     minimumHeight: 400
     title: "GCompris"
 
