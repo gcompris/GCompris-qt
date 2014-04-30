@@ -95,6 +95,8 @@ ActivityBase {
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.left: parent.left
             anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.bottom: undefined
+            anchors.right: undefined
         }
 
         Bonus {
