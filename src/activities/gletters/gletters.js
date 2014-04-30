@@ -21,7 +21,6 @@
  */
 
 /* ToDo / open issues:
- * - Android
  * - adjust wordlist filenames once we have an ApplicationInfo.dataPath() or so
  * - make uppercaseOnly be taken from (activity-) settings
  */
@@ -30,7 +29,8 @@
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 
-var url = "qrc:/gcompris/src/activities/gletters/resource/"
+var glettersUrl = "qrc:/gcompris/src/activities/gletters/resource/"
+var wordsgameUrl = "qrc:/gcompris/src/activities/wordsgame/resource/"
 
 var currentLevel = 0;
 var currentSubLevel = 0;
@@ -39,21 +39,39 @@ var maxLevel = 0;
 var maxSubLevel = 0;
 var items;
 var uppercaseOnly;
-var defaultSubLevel = 8;  // min. # of sublevels
+var mode;
+var defaultSubLevel = 8; // min. # of sublevels
+
+//speed calculations, common:
 var speed = 0;           // how fast letters fall
+var fallSpeed = 0;       // how often new letters are dropped
+var incFallSpeed = 1000; // how much drop rate increases per sublevel 
+var incSpeed = 10;       // how much speed increases per sublevel
+// gletters:
 var fallRateBase = 40;   // default for how fast letters fall (smaller is faster)
 var fallRateMult = 80;   // default for how much falling speed increases per level (smaller is faster)
-var fallSpeed = 0;       // how often new letters are dropped
 var dropRateBase = 5000; // default for how often new letters are dropped
 var dropRateMult = 100;  // default for how much drop rate increases per level
+// wordsgame:
+var wgMaxFallSpeed = 7000;
+var wgMaxSpeed = 150;
+var wgMinFallSpeed = 3000;
+var wgMinSpeed = 50;
+var wgDefaultFallSpeed = 8000;
+var wgDefaultSpeed = 170;
+var wgAddSpeed = 20;
+var wgAddFallSpeed = 1000;
+
 var droppedWords;
+var currentWord = null;  // reference to the word currently typing, null if n/a
 var wordComponent = null;
 
-function start(items_, uppercaseOnly_) {
-    console.log("Gletters activity: start");
+function start(items_, uppercaseOnly_,  _mode) {
+    console.log("Gletters activity: start in mode " + _mode);
     
     items = items_;
     uppercaseOnly = uppercaseOnly_;
+    mode = _mode;
     currentLevel = 0;
     currentSubLevel = 0;
     maxLevel = items.wordlist.maxLevel;
@@ -77,32 +95,43 @@ function initLevel() {
         maxSubLevel = items.wordlist.getMaxSubLevel(currentLevel + 1);
         if (maxSubLevel == 0) {
             // If level length is not set in wordlist, make sure the level doesn't get too long
-            var wordCount = level.words.length;
-            wordCount = Math.floor(wordCount / 3 + (currentLevel + 1) / 3);
-            maxSubLevel = (defaultSubLevel > wordCount ? defaultSubLevel : wordCount);
+            if (mode == "letter") {
+                var wordCount = level.words.length;
+                wordCount = Math.floor(wordCount / 3 + (currentLevel + 1) / 3);
+                maxSubLevel = (defaultSubLevel > wordCount ? defaultSubLevel : wordCount);
+            } else
+                maxSubLevel = 10 + currentLevel * 5;
         }
         items.score.numberOfSubLevels = maxSubLevel;
         setSpeed();
         /*console.log("Gletters: initializing level " + (currentLevel + 1) 
                 + " maxSubLvl=" + maxSubLevel 
                 + " wordCount=" + level.words.length
-                + " speed=" + speed + " fallspeed=" + fallSpeed); */
+                + " speed=" + speed + " fallspeed=" + fallSpeed);*/
         
         if (GCompris.ApplicationInfo.isMobile) 
         {
             /* populate VirtualKeyboard for mobile:
              * 1. for < 10 letters print them all in the same row
              * 2. for > 10 letters create 3 rows with equal amount of keys per row
-             *    if possible, otherwise more keys in the upper rows
-             */
+             *    if possible, otherwise more keys in the upper rows  */
+            // first generate a map of needed letters
+            var letters = new Array();
+            for (var i = 0; i < level.words.length; i++) {
+                for (var j = 0; j < level.words[i].length; j++)
+                    if (letters.indexOf(level.words[i].charAt(j)) === -1)
+                        letters.push(level.words[i].charAt(j));
+            }
+            letters.sort();
+            // generate layout from letter map
             var layout = new Array();
             var row = 0;
             var offset = 0;
-            while (offset < level.words.length-1) {
-                var cols = level.words.length <= 10 ? level.words.length : (Math.ceil((level.words.length-offset) / (3 - row)));
+            while (offset < letters.length-1) {
+                var cols = letters.length <= 10 ? letters.length : (Math.ceil((letters.length-offset) / (3 - row)));
                 layout[row] = new Array();
                 for (var j = 0; j < cols; j++)
-                    layout[row][j] = { label: level.words[j+offset] };
+                    layout[row][j] = { label: letters[j+offset] };
                 offset += j;
                 row++;
             }
@@ -111,35 +140,61 @@ function initLevel() {
     }
     
     // initialize sublevel
+    currentWord = null;
+    if (currentSubLevel != 0) {
+        // increase speed
+        speed = Math.max(speed - incSpeed, wgMinSpeed);
+        items.wordDropTimer.interval = fallSpeed = Math.max(fallSpeed - incFallSpeed, wgMinFallSpeed);
+    }
     items.score.currentSubLevel = currentSubLevel + 1;
-    dropWord();
+    if (currentSubLevel == 0 || droppedWords.length <= 1)  // note, last word is still fading out
+        dropWord();
     //console.log("Gletters: initializing subLevel " + (currentSubLevel + 1) + " words=" + JSON.stringify(level.words));
 }
 
 function processKeyPress(text) {
-    for (var i = 0; i< droppedWords.length; i++) {
-        var chars = droppedWords[i].text.split("");
-        var typedText = uppercaseOnly ? text.toLocaleUpperCase() : text;
-        if (chars[droppedWords[i].unmatchedIndex] == typedText) {
-            // typed correctly
-            droppedWords[i].nextCharMatched();
-            if (droppedWords[i].isCompleted()) {
-                // win!
-                items.flipAudio.play();
-                droppedWords[i].won();
-                droppedWords.splice(i, 1);
-                nextSubLevel();
-            }
-            break;
+    var typedText = uppercaseOnly ? text.toLocaleUpperCase() : text;
+    
+    if (currentWord !== null) {
+        // check against a currently typed word
+        if (!currentWord.checkMatch(typedText)) {
+            currentWord = null;
+            return;
         }
+    } else {
+        // no current word, check against all available words
+        for (var i = 0; i< droppedWords.length; i++) {
+            if (droppedWords[i].checkMatch(typedText)) {
+                // typed correctly
+                currentWord = droppedWords[i];
+                break;
+            }
+        }
+    }
+
+    if (currentWord !== null && currentWord.isCompleted()) {
+        // win!
+        items.flipAudio.play();
+        currentWord.won();  // note: deleteWord() is triggered after fadeout
+        nextSubLevel();
     }
 }
 
 function setSpeed()
 {
-    speed = (level.speed !== undefined) ? level.speed : (fallRateBase + Math.floor(fallRateMult / (currentLevel + 1)));
-    fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : Math.floor((dropRateBase + (dropRateMult * (currentLevel + 1))));
-    items.wordDropTimer.interval=fallSpeed;
+    if (mode == "letter") {
+        speed = (level.speed !== undefined) ? level.speed : (fallRateBase + Math.floor(fallRateMult / (currentLevel + 1)));
+        fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : Math.floor((dropRateBase + (dropRateMult * (currentLevel + 1))));
+    } else { // wordsgame
+        speed = (level.speed !== undefined) ? level.speed : wgDefaultSpeed - (currentLevel+1)*wgAddSpeed;
+        fallSpeed = (level.fallspeed !== undefined) ? level.fallspeed : wgDefaultFallSpeed - (currentLevel+1)*wgAddFallSpeed
+
+        if(speed < wgMinSpeed ) speed = wgMinSpeed;
+        if(speed > wgMaxSpeed ) speed = wgMaxSpeed;
+        if(fallSpeed < wgMinFallSpeed ) fallSpeed = wgMinFallSpeed;
+        if(fallSpeed > wgMaxFallSpeed ) fallSpeed = wgMaxFallSpeed;
+    }
+    items.wordDropTimer.interval = fallSpeed;
 }
 
 function deleteWords()
@@ -155,6 +210,8 @@ function deleteWord(w)
 {
     if (droppedWords === undefined || droppedWords.length < 1)
         return;
+    if (w == currentWord)
+        currentWord = null;
     for (var i = 0; i< droppedWords.length; i++)
         if (droppedWords[i] == w) {
             droppedWords[i].destroy();
@@ -173,8 +230,9 @@ function createWord()
         var word = wordComponent.createObject( items.background, 
                 {
                     "text": text,
-                    "x": Math.random() * (items.main.width - 25), // FIXME: 25? 
-                    "y": -25,  // FIXME: -25?
+                    // assume x=width-25px for now, Word auto-adjusts onCompleted():
+                    "x": Math.random() * (items.main.width - 25),
+                    "y": -25,
                 });
         if (word === null)
             console.log("Gletters: Error creating word object");
