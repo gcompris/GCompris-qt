@@ -39,6 +39,8 @@ ActivityBase {
         id: background
         source: Activity.url + "background.jpg"
         anchors.fill: parent
+        fillMode: Image.PreserveAspectCrop
+
         signal start
         signal stop
 
@@ -86,11 +88,11 @@ ActivityBase {
         Text {
             text: qsTr("Match the color")
             font.pointSize: 18
-            horizontalAlignment: Text.AlignHCenter
-            width: 200
+            horizontalAlignment: Text.AlignRight
             wrapMode: Text.WordWrap
             anchors.verticalCenter: target.verticalCenter
             anchors.right: target.left
+            anchors.left: parent.left
             anchors.rightMargin: 20
         }
 
