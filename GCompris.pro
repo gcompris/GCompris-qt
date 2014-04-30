@@ -48,6 +48,7 @@ include(src/activities/mosaic/mosaic.pri)
 include(src/activities/numbers-odd-even/numbers-odd-even.pri)
 include(src/activities/penalty/penalty.pri)
 include(src/activities/planegame/planegame.pri)
+include(src/activities/wordsgame/wordsgame.pri)
 
 
 APP_FILES += \

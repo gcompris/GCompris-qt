@@ -39,3 +39,4 @@ planegame
 maze
 mazerelative
 mazeinvisible
+wordsgame

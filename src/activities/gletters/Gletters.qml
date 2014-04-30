@@ -31,6 +31,8 @@ ActivityBase {
     id: activity
     
     property bool uppercaseOnly: false;  // FIXME: this should go in activity settings
+    /* mode of the activity, "letter" (gletters) or "word" (wordsgame):*/
+    property string mode: "letter"
 
     onStart: focus = true
     onStop: {}
@@ -39,7 +41,8 @@ ActivityBase {
     
     pageComponent: Image {
         id: background
-        source: Activity.url + "scenery_background.png"
+        source: (activity.mode == "letter" ? Activity.glettersUrl : Activity.wordsgameUrl)
+                 + "scenery_background.png"
         fillMode: Image.PreserveAspectCrop
 
         signal start
@@ -64,7 +67,7 @@ ActivityBase {
             property alias crashAudio: crashAudio
         }
 
-        onStart: { Activity.start(items, uppercaseOnly) }
+        onStart: { Activity.start(items, uppercaseOnly, mode) }
         onStop: { Activity.stop() }
 
         DialogHelp {
@@ -115,11 +118,16 @@ ActivityBase {
         
         Wordlist {
             id: wordlist
-            defaultFilename: Activity.url + "default-en.json"
+            defaultFilename: ( activity.mode == "letter" ?
+                               Activity.glettersUrl : Activity.wordsgameUrl )
+                               + "default-en.json"
             // FIXME: this should be something like
             // ApplicationInfo.getDataPath() + "gletters/" + "default-" + ApplicationInfo.getCurrentLocale() + ".json"
             // once it is there.
-            filename: ApplicationInfo.getAudioFilePath("gletters/default-en.json");
+            filename: ApplicationInfo.getAudioFilePath(activity.mode == "letter" ?
+                        "gletters/default-en.json" :
+                        "wordsgame/default-en.json");
+
 
             onError: console.log("Gletters: Wordlist error: " + msg);
         }

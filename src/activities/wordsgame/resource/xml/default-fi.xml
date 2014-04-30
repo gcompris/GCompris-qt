@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<GCompris>
+  <Wordlist name="default-fi" description="Default Finnish" locale="fi">
+    <level value="1">
+talo
+äiti
+peli
+isä
+nopea
+auto
+pyörä
+lintu
+tie
+minun
+lintu
+muki
+lentää
+hauska
+koira
+kissa
+lumi
+kirja
+musta
+valkea
+minun
+vesi
+kylpy
+valo
+lamppu
+ikkuna
+kone
+pöytä
+tuoli
+paperi
+takka
+puu
+kuusi
+taivas
+lattia
+    </level>
+    <level value="2">
+aurinko
+polkupyörä
+opettaa
+meri
+vuoristo
+elefantti
+tietokone
+musiikki
+tervetuloa
+painava
+värittää
+    </level>
+    <level value="3">
+talo
+äiti
+peli
+isä
+nopea
+auto
+pyörä
+lintu
+tie
+minun
+lintu
+muki
+lentää
+hauska
+koira
+kissa
+lumi
+kirja
+musta
+valkea
+minun
+vesi
+kylpy
+valo
+lamppu
+ikkuna
+kone
+pöytä
+tuoli
+paperi
+takka
+puu
+kuusi
+taivas
+lattia
+aurinko
+polkupyörä
+opettaa
+meri
+vuoristo
+elefantti
+tietokone
+musiikki
+tervetuloa
+painava
+värittää
+    </level>
+  </Wordlist>
+</GCompris>
