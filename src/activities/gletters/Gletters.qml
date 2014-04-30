@@ -90,11 +90,12 @@ ActivityBase {
         
         Score {
             id: score
-            
+
             anchors.top: parent.top
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.bottom: undefined
         }
         
         VirtualKeyboard {
