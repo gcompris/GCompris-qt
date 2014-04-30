@@ -100,8 +100,10 @@ ActivityBase {
 
         Score {
             id: score
-            x: parent.width * 0.2
+            x: parent.width * 0.25
             y: parent.height * 0.65
+            anchors.right: undefined
+            anchors.bottom: undefined
             currentSubLevel: 0
             numberOfSubLevels: 10
         }
