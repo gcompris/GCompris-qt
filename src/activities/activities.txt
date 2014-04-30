@@ -39,3 +39,5 @@ planegame
 maze
 mazerelative
 mazeinvisible
+color_mix
+color_mix_light

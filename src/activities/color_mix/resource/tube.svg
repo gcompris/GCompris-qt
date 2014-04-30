@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg6431" viewBox="0 0 207.99 76.2" version="1.0">
+  <defs id="defs3">
+    <linearGradient id="linearGradient12398">
+      <stop id="stop12400" stop-color="#f0f0f0" offset="0"/>
+      <stop id="stop12402" stop-color="#c8c8c8" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient8414">
+      <stop id="stop8416" stop-color="#fff" offset="0"/>
+      <stop id="stop8418" stop-color="#fff" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient4190" y2="38.906" xlink:href="#linearGradient12398" gradientUnits="userSpaceOnUse" x2="143.65" y1="73.656" x1="141.6"/>
+    <linearGradient id="linearGradient4205" y2="356.22" gradientUnits="userSpaceOnUse" x2="142.08" gradientTransform="translate(133.53 -137.52)" y1="378.75" x1="130.14">
+      <stop id="stop8446" stop-color="#e5e5e5" stop-opacity="0" offset="0"/>
+      <stop id="stop8448" stop-color="#4a4a4a" stop-opacity=".56842" offset=".5"/>
+      <stop id="stop8450" stop-color="#b8b8b8" stop-opacity="0" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient4208" y2="39.81" xlink:href="#linearGradient8414" gradientUnits="userSpaceOnUse" x2="-106.25" gradientTransform="matrix(.82457 0 0 .95225 -18.827 169.57)" y1="38.985" x1="-96.9"/>
+    <linearGradient id="linearGradient4211" y2="284.64" xlink:href="#linearGradient12398" spreadMethod="repeat" gradientUnits="userSpaceOnUse" x2="353.17" gradientTransform="matrix(.80037 0 0 .82926 3.1209 -4.34)" y1="287.55" x1="353.17"/>
+    <linearGradient id="linearGradient4214" y2="371.23" xlink:href="#linearGradient12398" gradientUnits="userSpaceOnUse" x2="99.469" gradientTransform="matrix(1.7486 0 0 1.1547 -282.46 -195.94)" y1="370.93" x1="104.03"/>
+    <linearGradient id="linearGradient4217" y2="92.378" xlink:href="#linearGradient8414" gradientUnits="userSpaceOnUse" x2="149.1" gradientTransform="matrix(.99685 0 0 1 .31499 167.58)" y1="39.281" x1="150.81"/>
+    <linearGradient id="linearGradient4220" y2="393.82" gradientUnits="userSpaceOnUse" x2="147" gradientTransform="translate(133.53 -137.52)" y1="375.93" x1="138.4">
+      <stop id="stop3406" stop-color="#e5e5e5" offset="0"/>
+      <stop id="stop8432" stop-color="#4a4a4a" offset=".5"/>
+      <stop id="stop3408" stop-color="#b8b8b8" offset="1"/>
+    </linearGradient>
+    <linearGradient id="linearGradient4224" y2="323.45" xlink:href="#linearGradient12398" spreadMethod="reflect" gradientUnits="userSpaceOnUse" x2="126.66" gradientTransform="matrix(.67577 0 0 1.0025 38.717 -56.067)" y1="294.99" x1="125.67"/>
+  </defs>
+  <g id="layer1" transform="translate(-96.791 -202.79)">
+    <g id="g4226">
+      <path id="path6381" stroke-linejoin="bevel" style="color:#000000" d="m106.82 204.66l151.48 9.02v55.06l-151.48 9.01v-73.09z" stroke="#6c6c6c" stroke-width=".74076" fill="url(#linearGradient4224)"/>
+      <path id="path8406" d="m106.56 38.438v35.218h151.41v-26.218l-151.41-9z" style="color:#000000" fill="url(#linearGradient4190)" transform="matrix(.99685 0 0 1 .63085 166.41)"/>
+      <path id="path6385" d="m280.07 231.74l-22-17.99 0.15 54.96 21.85-18.04v-18.93z" style="color:#000000" fill="url(#linearGradient4220)"/>
+      <path id="path8410" opacity=".87879" d="m111.1 207.25v27.56c52.56 14.21 100.57 10.85 145.56 5.61 0.33-18.99 0.37-5.02 0.24-22.71-0.2-1.4-1.09-2.67-2.87-2.78l-142.93-7.68z" style="color:#000000" fill="url(#linearGradient4217)"/>
+      <rect id="rect6383" stroke-linejoin="bevel" style="color:#000000" transform="scale(-1,1)" height="75.316" width="11.302" stroke="#6c6c6c" y="203.23" x="-108.53" stroke-width=".88363" fill="url(#linearGradient4214)"/>
+      <rect id="rect6387" stroke-linejoin="bevel" style="color:#000000" height="19.295" width="24.276" stroke="#6c6c6c" y="231.7" x="280.14" stroke-width=".73322" fill="url(#linearGradient4211)"/>
+      <rect id="rect8434" style="color:#000000" transform="scale(-1,1)" height="71.795" width="7.7135" y="204.74" x="-106.44" fill="url(#linearGradient4208)"/>
+      <path id="path8440" stroke-linejoin="bevel" style="color:#000000" d="m280.07 231.74l-22-17.99 0.15 54.96 21.85-18.04v-18.93z" stroke="#6c6c6c" stroke-width=".9" fill="url(#linearGradient4205)"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Color tube White</dc:title>
+        <dc:date>2010-07-14T11:43:29</dc:date>
+        <dc:description>Colored tube of paint</dc:description>
+        <dc:source>http://openclipart.org/detail/72877/color-tube-white-by-trnsltlife</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>TrnsltLife</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>Blanc</rdf:li>
+            <rdf:li>Colors of the spectrum</rdf:li>
+            <rdf:li>Couleurs du spectre</rdf:li>
+            <rdf:li>Quality</rdf:li>
+            <rdf:li>Qualit&#xE9;</rdf:li>
+            <rdf:li>White</rdf:li>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
