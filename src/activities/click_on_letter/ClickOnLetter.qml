@@ -36,8 +36,9 @@ ActivityBase {
     property string mode: "lowercase"
     
     pageComponent: Image {
-        source: "qrc:/gcompris/src/activities/click_on_letter/resource/background.svgz"
         id: background
+        source: Activity.url + "background.svgz"
+        fillMode: Image.PreserveAspectCrop
         signal start
         signal stop
         focus: true
@@ -104,17 +105,28 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextSubLevel)
         }
         
+        Image {
+            id: railway
+            source: Activity.url + "railway.svgz"
+            fillMode: Image.PreserveAspectCrop
+            anchors.bottom: parent.bottom
+            anchors.left: parent.left
+            width: parent.width
+            height: 15 * ApplicationInfo.ratio
+            sourceSize.width: parent.width
+            anchors.bottomMargin: 13 * ApplicationInfo.ratio
+        }
+
         Item {
             id: questionItem
             anchors.left: parent.left
             anchors.top: parent.top
             anchors.leftMargin: 10 * ApplicationInfo.ratio
-            anchors.topMargin: 160 * ApplicationInfo.ratio
+            anchors.topMargin: parent.height * 0.25
             z: 10
-            width: 80
-            height: 80
-            scale: 1 * ApplicationInfo.ratio
-            visible: false;
+            width: questionText.width * 2
+            height: questionText.height * 1.3
+            visible: false
             
             property alias text: questionText.text
             
@@ -128,7 +140,7 @@ ActivityBase {
                 opacity: 0.31
                 radius: 10
             }
-                        
+
             Text {
                 id: questionText
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -139,47 +151,62 @@ ActivityBase {
                 font.pointSize: 44
                 font.bold: true
                 style: Text.Outline
-                styleColor: "darkblue"
+                styleColor: "black"
                 color: "white"
             }
         }
         
         ListModel {
-            id: trainModel
-            
+            id: trainModel     
         }
         
+        property int itemWidth: Math.min(parent.width / 7.5, parent.height / 5)
+        property int itemHeight: itemWidth * 1.11
+
         Image {
             id: engine
-            source: "qrc:/gcompris/src/activities/click_on_letter/resource/engine.svgz"
-            
-            anchors.bottom: parent.bottom
-            anchors.left: parent.left
-            anchors.bottomMargin: 13 * ApplicationInfo.ratio
-            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            source: Activity.url + "engine.svgz"
 
-            scale: 1 * ApplicationInfo.ratio      
+            anchors.bottom: railway.bottom
+            anchors.left: railway.left
+            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.bottomMargin: 5 * ApplicationInfo.ratio
+            sourceSize.width: itemWidth
+            fillMode: Image.PreserveAspectFit
+        }
+
+        Image {
+            id: smoke
+            source: Activity.url + "smoke.svgz"
+
+            anchors.bottom: engine.top
+            anchors.left: railway.left
+            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.bottomMargin: 5 * ApplicationInfo.ratio
+            sourceSize.width: itemWidth
+            fillMode: Image.PreserveAspectFit
         }
 
         GridView {
             id: train
-            anchors.bottom: parent.bottom
-            anchors.left: parent.left
-            anchors.bottomMargin: 13 * ApplicationInfo.ratio
-            anchors.leftMargin: (10 + engine.width) * ApplicationInfo.ratio
-            width: (820 - 144) * ApplicationInfo.ratio
-            height: parent.height - anchors.bottomMargin
-            cellWidth: 112 * ApplicationInfo.ratio
-            cellHeight: 126 * ApplicationInfo.ratio
-
-            flickableDirection: Flickable.HorizontalFlick
-            interactive: ApplicationInfo.isMobile ? true : false   // FIXME allow scrolling the train horizontally on mobile: need to implement a kind of returnToBounds()
-            clip: ApplicationInfo.isMobile ? true : false // flick only the carriages
+            anchors.bottom: railway.bottom
+            anchors.left: engine.right
+            anchors.right: parent.right
+            anchors.top: parent.top
+            anchors.bottomMargin: 5 * ApplicationInfo.ratio
+            cellWidth: itemWidth
+            cellHeight: itemHeight
+            clip: false
+            interactive: false
             verticalLayoutDirection: GridView.BottomToTop
             layoutDirection: Qt.LeftToRight
             
             model: trainModel
-            delegate: Carriage { }
+            delegate: Carriage {
+                sourceSize.width: background.itemWidth
+                width: background.itemWidth
+                nbCarriage: (parent.width - engine.width) / background.itemWidth
+            }
         }
         
         File {

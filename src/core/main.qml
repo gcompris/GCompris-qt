@@ -37,7 +37,7 @@ Window {
         id: audio
         source: "qrc:/gcompris/src/core/resource/intro.ogg"
         onError: console.log("intro play error: " + errorString)
-        autoPlay: true
+        autoPlay: false
     }
 
     StackView {

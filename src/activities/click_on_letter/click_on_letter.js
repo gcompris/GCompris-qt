@@ -25,6 +25,7 @@
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 
+var url = "qrc:/gcompris/src/activities/click_on_letter/resource/"
 var defaultLevelsFile = ":/gcompris/src/activities/click_on_letter/resource/levels-en.json";
 var maxLettersPerLine = 6;
 
@@ -78,7 +79,12 @@ function parseLevels(json)
 function loadLevels()
 {
     var ret;    
-    var json = items.levelsFile.read(GCompris.ApplicationInfo.getAudioFilePath("click_on_letter/levels-$LOCALE.json")); // FIXME: this should be something like ApplicationInfo.getDataPath() + "click_on_letter" + "levels-" + ApplicationInfo.getCurrentLocale() + ".json" once it is there.
+    // FIXME: this should be something like
+    // ApplicationInfo.getDataPath() + "click_on_letter" +
+    // "levels-" + ApplicationInfo.getCurrentLocale() + ".json" once it is there.
+    var json = items.levelsFile.read(
+                GCompris.ApplicationInfo.getAudioFilePath(
+                    "click_on_letter/levels-$LOCALE.json"));
     if (json == "" || !parseLevels(json)) {
         console.warn("Click_on_letter: Invalid levels file " +
                 items.levelsFile.name);
@@ -135,20 +141,10 @@ function initLevel() {
         items.trainModel.clear();
         for (var i = 0; i < answerArr.length; i++) {                
             items.trainModel.append({
-                "image": i < maxLettersPerLine ? 
-                        "qrc:/gcompris/src/activities/click_on_letter/resource/carriage-off.png":
-                        "qrc:/gcompris/src/activities/click_on_letter/resource/cloud-off.png",
                 "letter": answerArr[i],
-                "type": i < maxLettersPerLine ? "carriage" : "cloud"
             });
         }
     } else {
-        // reset all images:
-        for (var i = 0; i < items.trainModel.count; i++) {
-            items.trainModel.setProperty(i, "image", i < maxLettersPerLine ? 
-                "qrc:/gcompris/src/activities/click_on_letter/resource/carriage-off.png":
-                "qrc:/gcompris/src/activities/click_on_letter/resource/cloud-off.png");
-        }
         items.score.currentSubLevel = currentSubLevel + 1;
     }
 
@@ -159,8 +155,9 @@ function initLevel() {
         items.letterAudio.source = GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
                 + getSoundFilenamForChar(currentLetter));
         items.letterAudio.playDelayed(1500);
-    } //else 
-    if (!getSetting("fx") || GCompris.ApplicationInfo.isMobile) {  // FIXME once we have voices on mobile 
+    }
+    // FIXME once we have voices on mobile
+    if (!getSetting("fx") || GCompris.ApplicationInfo.isMobile) {
         // no sound -> show question
         items.questionItem.visible = true;
         items.questionItem.text = currentLetter;
@@ -194,13 +191,11 @@ function nextSubLevel() {
 function checkAnswer(index)
 {
     var modelEntry = items.trainModel.get(index);
-    if (modelEntry.letter == currentLetter)
+    if (modelEntry.letter == currentLetter) {
         items.bonus.good("flower");
-    else {
-        items.bonus.bad("flower");
-        modelEntry.image = index < maxLettersPerLine ? 
-            "qrc:/gcompris/src/activities/click_on_letter/resource/carriage-on.png" :
-            "qrc:/gcompris/src/activities/click_on_letter/resource/cloud-on.png";
+        return true
+    } else {
+        return false
     }
 }
 

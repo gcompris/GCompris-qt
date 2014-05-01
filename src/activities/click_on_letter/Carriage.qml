@@ -23,57 +23,107 @@
 
 import QtQuick 2.1
 import GCompris 1.0
+import QtGraphicalEffects 1.0
 import "qrc:/gcompris/src/core"
 import "click_on_letter.js" as Activity
 
-Component {
-    Image {
-        id: carriageImage
-        source: image
-        scale: 1 * ApplicationInfo.ratio
-        
-        Text {
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.horizontalCenterOffset: type == "carriage" ? -8 : 0
-            anchors.verticalCenter: type == "carriage" ? undefined : parent.verticalCenter
-            anchors.top: type == "carriage" ? parent.top : undefined
-            anchors.topMargin: type == "carriage" ? 1 : undefined
-            z:11
-                        
-            text: letter
-            font.pointSize: 44
-            font.bold: true
-            style: Text.Outline
-            styleColor: "lightblue"
-                color: "black"
-        }
-        
-        MouseArea {
-            id: mouseArea
-            anchors.fill: parent
-            hoverEnabled: ApplicationInfo.isMobile ? false : true
-                
-            onClicked: {
-                clickAnimation.restart();
-                Activity.checkAnswer(index);
-                carriageImage.focus = false;
+Image {
+    id: carriageImage
+    fillMode: Image.PreserveAspectFit
+    source: isCarriage ?
+                Activity.url + "carriage.svgz":
+                Activity.url + "cloud.svgz"
+
+    property int nbCarriage
+    property bool isCarriage: index <= nbCarriage
+
+    Text {
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.horizontalCenterOffset: isCarriage ? -8 : 0
+        anchors.verticalCenter: parent.verticalCenter
+        z: 11
+
+        text: letter
+        font.pixelSize: Math.min(parent.width * 0.8, 80)
+        font.bold: true
+        style: Text.Outline
+        styleColor: "black"
+        color: "white"
+    }
+
+    MouseArea {
+        id: mouseArea
+        anchors.fill: parent
+        hoverEnabled: ApplicationInfo.isMobile ? false : true
+
+        onClicked: {
+            if (Activity.checkAnswer(index)) {
+                successAnimation.restart();
+                particle.emitter.burst(30)
+            } else {
+                failureAnimation.restart()
             }
         }
-            
-        states: State {
-            name: "scaled"; when: mouseArea.containsMouse
-            PropertyChanges { target: carriageImage; scale: /*carriageImage.scale * */ 1.2 }
-        }
+    }
 
-        transitions: Transition {
-            NumberAnimation { properties: "scale"; easing.type: Easing.OutCubic }
+    ParticleSystemStar {
+        id: particle
+        clip: false
+    }
+
+    states: State {
+        name: "scaled"; when: mouseArea.containsMouse
+        PropertyChanges {
+            target: carriageImage
+            scale: /*carriageImage.scale * */ 1.2 }
+    }
+
+    transitions: Transition {
+        NumberAnimation { properties: "scale"; easing.type: Easing.OutCubic }
+    }
+
+    SequentialAnimation {
+        id: successAnimation
+        NumberAnimation {
+            target: carriageImage
+            easing.type: Easing.InOutQuad
+            property: "rotation"
+            to: 20; duration: 100
         }
-            
-        SequentialAnimation {
-            id: clickAnimation
-            NumberAnimation { target: carriageImage; easing.type: Easing.InOutQuad; property: "rotation"; to: 20; duration: 100 }
-            NumberAnimation { target: carriageImage; easing.type: Easing.InOutQuad; property: "rotation"; to: -20; duration: 100 }
-            NumberAnimation { target: carriageImage; easing.type: Easing.InOutQuad; property: "rotation"; to: 0; duration: 50 }
+        NumberAnimation {
+            target: carriageImage
+            easing.type: Easing.InOutQuad
+            property: "rotation"; to: -20
+            duration: 100 }
+        NumberAnimation {
+            target: carriageImage
+            easing.type: Easing.InOutQuad
+            property: "rotation"
+            to: 0
+            duration: 50 }
+    }
+
+    Colorize {
+        id: color
+        anchors.fill: parent
+        source: parent
+        hue: 0.0
+        saturation: 1
+        opacity: 0
+    }
+
+
+    SequentialAnimation {
+        id: failureAnimation
+        NumberAnimation {
+            target: color
+            property: "opacity"
+            to: 1; duration: 400
+        }
+        NumberAnimation {
+            target: color
+            property: "opacity"
+            to: 0; duration: 200
         }
     }
 }
