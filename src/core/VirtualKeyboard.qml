@@ -117,7 +117,8 @@ Item {
             return;
         }
         nRows = a.length;
-        for (var i = 0; i < a.length; i++) {
+        var i
+        for (i = 0; i < a.length; i++) {
             if (!Array.isArray(a[i])) {
                 error("VirtualKeyboard: Invalid layout, expecting array of arrays of keys");
                 return;
@@ -133,7 +134,7 @@ Item {
         }
         
         // populate
-        for (var i = 0; i < a.length; i++) {
+        for (i = 0; i < a.length; i++) {
             var offset =
                     equalKeyWidth ? ((maxButtons - a[i].length) *
                                      (keyboard.width - maxButtons *
