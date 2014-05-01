@@ -1,4 +1,4 @@
-/* GCompris - color_mix.qml
+/* GCompris - colormix.qml
 *
 * Copyright (C) 2014 Stephane Mankowski <stephane@mankowski.fr>
 *
@@ -23,7 +23,7 @@ import QtQuick 2.1
 import GCompris 1.0
 
 import "qrc:/gcompris/src/core"
-import "color_mix.js" as Activity
+import "colormix.js" as Activity
 
 ActivityBase {
     id: activity
@@ -63,6 +63,7 @@ ActivityBase {
             property alias currentColor1: color1.currentStep
             property alias currentColor2: color2.currentStep
             property alias currentColor3: color3.currentStep
+            property int margins: 20
         }
 
         onStart: {
@@ -75,11 +76,13 @@ ActivityBase {
         Rectangle {
             id: target
             height: width / 2
-            width: 200
+            width: parent.width / 5
             radius: height / 10
-            anchors.top: parent.top
-            anchors.topMargin: 20
-            anchors.horizontalCenter: parent.horizontalCenter
+            anchors {
+                top: parent.top
+                topMargin: items.margins
+                horizontalCenter: parent.horizontalCenter
+            }
             border.color: "black"
             color: Activity.getColor(items.targetColor1, items.targetColor2,
                                      items.targetColor3)
@@ -90,10 +93,12 @@ ActivityBase {
             font.pointSize: 18
             horizontalAlignment: Text.AlignRight
             wrapMode: Text.WordWrap
-            anchors.verticalCenter: target.verticalCenter
-            anchors.right: target.left
-            anchors.left: parent.left
-            anchors.rightMargin: 20
+            anchors {
+                verticalCenter: target.verticalCenter
+                right: target.left
+                left: parent.left
+                rightMargin: items.margins
+            }
         }
 
         Text {
@@ -102,19 +107,23 @@ ActivityBase {
             font.pointSize: 16
             horizontalAlignment: Text.AlignLeft
             wrapMode: Text.WordWrap
-            anchors.verticalCenter: target.verticalCenter
-            anchors.left: target.right
-            anchors.right: parent.right
-            anchors.leftMargin: 20
+            anchors {
+                verticalCenter: target.verticalCenter
+                left: target.right
+                right: parent.right
+                leftMargin: items.margins
+            }
         }
         Rectangle {
             id: result
-            height: 150
+            height: target.height
             width: height
             radius: height / 2
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: target.bottom
-            anchors.topMargin: 20
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+                top: target.bottom
+                topMargin: items.margins
+            }
             border.color: "black"
             color: Activity.getColor(items.currentColor1, items.currentColor2,
                                      items.currentColor3)
@@ -123,29 +132,38 @@ ActivityBase {
         ColorChooser {
             id: color1
             hue: activity.modeRGB ? 0 : 300 / 360 /* red / magenta */
+            sourceSize.height: result.height
             maxSteps: items.maxSteps
-            anchors.right: result.left
-            anchors.rightMargin: 20
-            anchors.verticalCenter: result.verticalCenter
+            anchors {
+                right: result.left
+                rightMargin: items.margins
+                verticalCenter: result.verticalCenter
+            }
         }
 
         ColorChooser {
             id: color2
             hue: activity.modeRGB ? 120 / 360 : 60 / 360 /* green / yellow */
+            sourceSize.height: result.height
             maxSteps: items.maxSteps
-            anchors.horizontalCenter: result.horizontalCenter
-            anchors.top: result.bottom
-            anchors.topMargin: 20 + width / 2 - height / 2
+            anchors {
+                horizontalCenter: result.horizontalCenter
+                top: result.bottom
+                topMargin: items.margins + width / 2 - height / 2
+            }
             rotation: -90
         }
 
         ColorChooser {
             id: color3
             hue: activity.modeRGB ? 240 / 360 : 180 / 360 /* blue / cyan */
+            sourceSize.height: result.height
             maxSteps: items.maxSteps
-            anchors.left: result.right
-            anchors.leftMargin: 20
-            anchors.verticalCenter: result.verticalCenter
+            anchors {
+                left: result.right
+                leftMargin: items.margins
+                verticalCenter: result.verticalCenter
+            }
             rotation: 180
         }
 
@@ -154,10 +172,12 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/bar_ok.svgz"
             sourceSize.width: 66 * bar.barZoom
             visible: true
-            anchors.right: parent.right
-            anchors.rightMargin: 20
-            anchors.top: parent.top
-            anchors.topMargin: 20
+            anchors {
+                left: color2.right
+                leftMargin: items.margins
+                top: color3.bottom
+                topMargin: items.margins
+            }
             onClicked: {
                 var message = ""
                 if (activity.modeRGB) {

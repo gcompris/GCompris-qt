@@ -1,4 +1,4 @@
-/* GCompris - color_mix_light.qml
+/* GCompris - colormixlight.qml
  *
  * Copyright (C) 2014 Stephane Mankowski <stephane@mankowski.fr>
  *
@@ -22,6 +22,6 @@
 import QtQuick 2.1
 import "qrc:/gcompris/src/activities/color_mix"
 
-Color_mix {
+ColorMix {
     modeRGB: true
 }

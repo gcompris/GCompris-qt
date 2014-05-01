@@ -1,9 +1,9 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "color_mix/Color_mix.qml"
+  name: "color_mix/ColorMix.qml"
   difficulty: 4
-  icon: "color_mix/color_mix.svg"
+  icon: "color_mix/colormix.svg"
   author: "Stephane Mankowski <stephane@mankowski.fr>"
   demo: true
   title: qsTr("Mixing color of paint")

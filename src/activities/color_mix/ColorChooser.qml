@@ -24,16 +24,44 @@ import QtGraphicalEffects 1.0
 
 import GCompris 1.0
 
-import "color_mix.js" as Activity
+import "colormix.js" as Activity
 
 Image {
-    id: color1
+    id: chooser
     source: Activity.url + (activity.modeRGB ? "flashlight.svgz" : "tube.svg")
     sourceSize.height: 100 * ApplicationInfo.ratio
+    z:1
 
     property int maxSteps: 10
     property int currentStep: 0
     property alias hue: color.hue
+
+    Image {
+        id: intensity
+        source: Activity.url + "flashlight2.svgz"
+        sourceSize.height: parent.sourceSize.height
+        visible: activity.modeRGB
+        anchors.fill: parent
+        z:2
+        Colorize {
+            anchors.fill: parent
+            source: parent
+            hue: chooser.hue
+            lightness: -(maxSteps - currentStep) / maxSteps
+            saturation: 1
+        }
+    }
+
+    Rectangle {
+        anchors {
+            left: parent.right
+            verticalCenter: parent.verticalCenter
+        }
+        height: parent.sourceSize.height / 4* currentStep/maxSteps
+        width: parent.sourceSize.height / 2
+        visible: !activity.modeRGB
+        color: Activity.getColorFromHsl(chooser.hue, 1, 0.5)
+    }
 
     Colorize {
         id: color
@@ -47,11 +75,14 @@ Image {
         id: up
         height: parent.height / 4
         width: height
+        z:3
         radius: width / 2
         border.color: "black"
-        anchors.verticalCenter: parent.verticalCenter
-        anchors.right: parent.right
-        anchors.rightMargin: parent.width * 0.2
+        anchors {
+            verticalCenter: parent.verticalCenter
+            right: parent.right
+            rightMargin: parent.width * 0.2
+        }
 
         Text {
             id: upText
@@ -63,7 +94,9 @@ Image {
         }
 
         MouseArea {
-            anchors.fill: parent
+            anchors.centerIn: parent
+            height: 2*parent.height
+            width: 2*parent.width
             onClicked: currentStep = Math.min(currentStep + 1, maxSteps)
         }
     }
@@ -72,11 +105,14 @@ Image {
         id: down
         height: up.height
         width: height
+        z:3
         radius: width / 2
         border.color: "black"
-        anchors.verticalCenter: parent.verticalCenter
-        anchors.left: parent.left
-        anchors.leftMargin: parent.width * 0.4
+        anchors {
+            verticalCenter: parent.verticalCenter
+            left: parent.left
+            leftMargin: parent.width * 0.4
+        }
 
         Text {
             id: downText
@@ -88,7 +124,9 @@ Image {
         }
 
         MouseArea {
-            anchors.fill: parent
+            anchors.centerIn: parent
+            height: 2*parent.height
+            width: 2*parent.width
             onClicked: currentStep = Math.max(currentStep - 1, 0)
         }
     }
