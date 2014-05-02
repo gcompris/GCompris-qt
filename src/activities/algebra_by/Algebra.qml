@@ -109,17 +109,19 @@ ActivityBase {
         }
     }
 
-    Item{
+    Item {
         id: otherItems
         property alias iAmReady: iAmReady
-        property alias firstOp:firstOp
-        property alias secondOp:secondOp
-        property alias numpad:numpad
+        property alias firstOp: firstOp
+        property alias secondOp: secondOp
+        property alias numpad: numpad
+        property int result
     }
 
     NumPad {
         id: numpad
         onAnswerChanged: Activity.questionsLeft()
+        maxDigit: ('' + otherItems.result).length
     }
 
     ReadyButton {
