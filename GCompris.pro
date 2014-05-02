@@ -53,6 +53,7 @@ include(src/activities/planegame/planegame.pri)
 include(src/activities/wordsgame/wordsgame.pri)
 
 
+
 APP_FILES += \
 	$$PWD/src/activities/activities.txt \
 
