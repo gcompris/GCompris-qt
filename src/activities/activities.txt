@@ -13,6 +13,7 @@ click_on_letter_up
 color_mix
 color_mix_light
 colors
+enumerate
 erase
 erase_2clic
 erase_clic
