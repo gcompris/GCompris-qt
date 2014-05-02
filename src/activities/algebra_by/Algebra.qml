@@ -138,41 +138,30 @@ ActivityBase {
         anchors.margins: 4
         spacing: 10
 
-        Text {
+        AlgebraText {
             id: firstOp
             visible: !iAmReady.visible
-            font.pointSize: 32
-            font.bold: true
         }
 
-        Text{
+        AlgebraText {
             id: operand
             visible: firstOp.visible
-            font.pointSize: 32
-            text: "x"
-            font.bold: true
         }
 
-        Text{
+        AlgebraText {
             id: secondOp
             visible: !iAmReady.visible
-            font.pointSize: 32
-            font.bold: true
         }
 
-        Text {
+        AlgebraText {
             id: equals
             visible: firstOp.visible
-            font.pointSize: 32
-            font.bold: true
             text: "="
         }
 
-        Text {
+        AlgebraText {
             id: result
             visible: !iAmReady.visible
-            font.pointSize: 32
-            font.bold: true
             text: numpad.answer
         }
     }
