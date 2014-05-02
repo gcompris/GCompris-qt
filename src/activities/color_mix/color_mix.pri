@@ -2,7 +2,8 @@
 APP_FILES += \
 	$$PWD/ActivityInfo.qml \
         $$PWD/ColorMix.qml \
-        $$PWD/ColorChooser.qml \
+		$$PWD/ColorChooser.qml \
+		$$PWD/ColorButton.qml \
 		$$PWD/colormix.js \
 		$$PWD/colormix.svg \
 		$$PWD/resource/brush.svgz \

@@ -61,63 +61,52 @@ Image {
         saturation: 1
     }
 
-    Rectangle {
-        id: up
-        height: parent.height / 4
-        width: height
-        z: 3
-        radius: width / 2
-        border.color: "black"
+    ColorButton {
+        text: "+"
         anchors {
             verticalCenter: parent.verticalCenter
             right: parent.right
             rightMargin: parent.width * 0.2
         }
-
-        Text {
-            id: upText
-            anchors.centerIn: parent
-            text: "+"
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            font.pointSize: Math.max(parent.height * 0.8, 10)
-        }
-
-        MouseArea {
-            anchors.centerIn: parent
-            height: 2*parent.height
-            width: 2*parent.width
-            onClicked: currentStep = Math.min(currentStep + 1, maxSteps)
-        }
+        onClicked: currentStep = Math.min(currentStep + 1, maxSteps)
     }
 
-    Rectangle {
-        id: down
-        height: up.height
-        width: height
-        z: 3
-        radius: width / 2
-        border.color: "black"
+    ColorButton {
+        text: "-"
         anchors {
             verticalCenter: parent.verticalCenter
             left: parent.left
             leftMargin: parent.width * 0.4
         }
-
-        Text {
-            id: downText
-            anchors.centerIn: parent
-            text: "-"
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-            font.pointSize: upText.font.pointSize
-        }
-
-        MouseArea {
-            anchors.centerIn: parent
-            height: 2*parent.height
-            width: 2*parent.width
-            onClicked: currentStep = Math.max(currentStep - 1, 0)
-        }
+        onClicked: currentStep = Math.max(currentStep - 1, 0)
     }
+
+//    Rectangle {
+//        id: down
+//        height: up.height
+//        width: height
+//        z: 3
+//        radius: width / 2
+//        border.color: "black"
+//        anchors {
+//            verticalCenter: parent.verticalCenter
+//            left: parent.left
+//            leftMargin: parent.width * 0.4
+//        }
+
+//        Text {
+//            id: downText
+//            anchors.centerIn: parent
+//            text: "-"
+//            horizontalAlignment: Text.AlignHCenter
+//            verticalAlignment: Text.AlignVCenter
+//            font.pointSize: upText.font.pointSize
+//        }
+
+//        MouseArea {
+//            anchors.centerIn: parent
+//            height: 2*parent.height
+//            width: 2*parent.width
+//        }
+//    }
 }
