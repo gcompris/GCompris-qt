@@ -128,8 +128,14 @@ function getIndex(number, level) {
     var index = []
     var imageNames = []
     var setLength = getSetLength(sample[level][number])
-    for(var i=0; i < setLength; i++) {
-        index.push((Math.floor(Math.random()*10000)) % 8)
+    var temp
+    var i = 0
+    while(i < setLength) {
+        temp = Math.floor(Math.random()*10000) % 8
+        if(index.indexOf(temp) == -1){
+        index.push(temp)
+        i++
+        }
     }
     for(var i=setLength; i < max; i++) {
         index.push(index[sample[level][number][i]])
