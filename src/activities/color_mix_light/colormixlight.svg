@@ -13,9 +13,9 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   width="104.93636"
-   height="92.312706"
-   sodipodi:docname="color_mix_light.svg">
+   width="100"
+   height="100"
+   sodipodi:docname="colormixlight.svg">
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -174,15 +174,15 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1680"
-     inkscape:window-height="1026"
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
      id="namedview4"
      showgrid="false"
      inkscape:zoom="2.56"
-     inkscape:cx="18.814495"
-     inkscape:cy="45.751898"
-     inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:cx="175.06449"
+     inkscape:cy="45.751901"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
      inkscape:window-maximized="1"
      inkscape:current-layer="g4405"
      fit-margin-top="0"
@@ -190,13 +190,13 @@
      fit-margin-right="0"
      fit-margin-bottom="0" />
   <g
-     transform="matrix(0.16729318,-0.09658676,0.09658676,0.16729318,-34.508319,-10.679735)"
+     transform="matrix(0.16729318,-0.09658676,0.09658676,0.16729318,-34.508319,-2.9924423)"
      id="layer1"
      inkscape:label="Layer 1">
     <g
        id="g4405">
       <g
-         transform="translate(769.79421,442.11481)"
+         transform="matrix(0.95295856,0,0,0.95295856,743.84933,420.34037)"
          id="g8547">
         <path
            style="fill:#000000;fill-opacity:0.31372549;fill-rule:nonzero;stroke:none"
@@ -205,7 +205,8 @@
            inkscape:connector-curvature="0" />
       </g>
       <g
-         id="g8580">
+         id="g8580"
+         transform="matrix(0.95295856,0,0,0.95295856,10.267353,-0.9767082)">
         <path
            inkscape:connector-curvature="0"
            id="path4333"

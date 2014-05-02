@@ -37,7 +37,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: Activity.url + "background.jpg"
+        source: Activity.url + (modeRGB ? "background.svgz" : "background2.svgz")
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
 
@@ -64,6 +64,8 @@ ActivityBase {
             property alias currentColor2: color2.currentStep
             property alias currentColor3: color3.currentStep
             property int margins: 20
+            property int chooserHeight: Math.min(activity.height * 0.2,
+                                                 activity.width * 0.2)
         }
 
         onStart: {
@@ -84,6 +86,7 @@ ActivityBase {
                 horizontalCenter: parent.horizontalCenter
             }
             border.color: "black"
+            border.width: 2
             color: Activity.getColor(items.targetColor1, items.targetColor2,
                                      items.targetColor3)
         }
@@ -108,7 +111,7 @@ ActivityBase {
             horizontalAlignment: Text.AlignLeft
             wrapMode: Text.WordWrap
             anchors {
-                verticalCenter: target.verticalCenter
+                top: target.top
                 left: target.right
                 right: parent.right
                 leftMargin: items.margins
@@ -116,15 +119,16 @@ ActivityBase {
         }
         Rectangle {
             id: result
-            height: target.height
-            width: height
+            height: width
+            width: target.width * 0.75
             radius: height / 2
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 top: target.bottom
-                topMargin: items.margins
+                topMargin: (activity.height - items.chooserHeight * 4) / 2
             }
             border.color: "black"
+            border.width: 2
             color: Activity.getColor(items.currentColor1, items.currentColor2,
                                      items.currentColor3)
         }
@@ -132,7 +136,7 @@ ActivityBase {
         ColorChooser {
             id: color1
             hue: activity.modeRGB ? 0 : 300 / 360 /* red / magenta */
-            sourceSize.height: result.height
+            sourceSize.height: items.chooserHeight
             maxSteps: items.maxSteps
             anchors {
                 right: result.left
@@ -144,7 +148,7 @@ ActivityBase {
         ColorChooser {
             id: color2
             hue: activity.modeRGB ? 120 / 360 : 60 / 360 /* green / yellow */
-            sourceSize.height: result.height
+            sourceSize.height: items.chooserHeight
             maxSteps: items.maxSteps
             anchors {
                 horizontalCenter: result.horizontalCenter
@@ -157,7 +161,7 @@ ActivityBase {
         ColorChooser {
             id: color3
             hue: activity.modeRGB ? 240 / 360 : 180 / 360 /* blue / cyan */
-            sourceSize.height: result.height
+            sourceSize.height: items.chooserHeight
             maxSteps: items.maxSteps
             anchors {
                 left: result.right
@@ -173,8 +177,8 @@ ActivityBase {
             sourceSize.width: 66 * bar.barZoom
             visible: true
             anchors {
-                left: color2.right
-                leftMargin: items.margins
+                right: parent.right
+                rightMargin: items.margins
                 top: color3.bottom
                 topMargin: items.margins
             }

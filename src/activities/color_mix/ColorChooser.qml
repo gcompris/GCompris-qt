@@ -28,9 +28,9 @@ import "colormix.js" as Activity
 
 Image {
     id: chooser
-    source: Activity.url + (activity.modeRGB ? "flashlight.svgz" : "tube.svg")
+    source: Activity.url + (activity.modeRGB ? "flashlight.svgz" : "tube.svgz")
     sourceSize.height: 100 * ApplicationInfo.ratio
-    z:1
+    z: 1
 
     property int maxSteps: 10
     property int currentStep: 0
@@ -38,29 +38,19 @@ Image {
 
     Image {
         id: intensity
-        source: Activity.url + "flashlight2.svgz"
+        source: Activity.url + (activity.modeRGB ? "flashlight2.svgz" : "brush.svgz")
         sourceSize.height: parent.sourceSize.height
-        visible: activity.modeRGB
         anchors.fill: parent
-        z:2
+        z: 2
         Colorize {
             anchors.fill: parent
             source: parent
             hue: chooser.hue
-            lightness: -(maxSteps - currentStep) / maxSteps
+            lightness: activity.modeRGB ?
+                           -(maxSteps - currentStep) / maxSteps :
+                           (maxSteps - currentStep) / maxSteps
             saturation: 1
         }
-    }
-
-    Rectangle {
-        anchors {
-            left: parent.right
-            verticalCenter: parent.verticalCenter
-        }
-        height: parent.sourceSize.height / 4* currentStep/maxSteps
-        width: parent.sourceSize.height / 2
-        visible: !activity.modeRGB
-        color: Activity.getColorFromHsl(chooser.hue, 1, 0.5)
     }
 
     Colorize {
@@ -75,7 +65,7 @@ Image {
         id: up
         height: parent.height / 4
         width: height
-        z:3
+        z: 3
         radius: width / 2
         border.color: "black"
         anchors {
@@ -105,7 +95,7 @@ Image {
         id: down
         height: up.height
         width: height
-        z:3
+        z: 3
         radius: width / 2
         border.color: "black"
         anchors {
