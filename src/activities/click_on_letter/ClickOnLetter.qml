@@ -23,6 +23,7 @@
 
 import QtQuick 2.1
 import QtMultimedia 5.0
+import QtGraphicalEffects 1.0
 import GCompris 1.0
 import "qrc:/gcompris/src/core"
 import "click_on_letter.js" as Activity
@@ -154,6 +155,18 @@ ActivityBase {
                 styleColor: "black"
                 color: "white"
             }
+
+            DropShadow {
+                anchors.fill: questionText
+                cached: true
+                horizontalOffset: 3
+                verticalOffset: 3
+                radius: 8.0
+                samples: 16
+                color: "#80000000"
+                source: questionText
+            }
+
         }
         
         ListModel {

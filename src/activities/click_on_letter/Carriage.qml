@@ -38,6 +38,7 @@ Image {
     property bool isCarriage: index <= nbCarriage
 
     Text {
+        id: text
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.horizontalCenterOffset: isCarriage ? -8 : 0
         anchors.verticalCenter: parent.verticalCenter
@@ -49,6 +50,17 @@ Image {
         style: Text.Outline
         styleColor: "black"
         color: "white"
+    }
+
+    DropShadow {
+        anchors.fill: text
+        cached: true
+        horizontalOffset: 3
+        verticalOffset: 3
+        radius: 8.0
+        samples: 16
+        color: "#80000000"
+        source: text
     }
 
     MouseArea {
