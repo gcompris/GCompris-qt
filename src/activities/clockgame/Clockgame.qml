@@ -310,9 +310,12 @@ ActivityBase {
                     var a = (270 + 360 + 180 * Math.atan2(
                                  mouseY - (center.y + center.height / 2),
                                  mouseX - (center.x + center.width / 2)) / Math.PI) % 360
-                    var dh = Math.abs(a - h.angle)
-                    var dm = Math.abs(a - m.angle)
-                    var ds = s.visible ? Math.abs(a - s.angle) : 9999
+                    var agnh=h.angle
+                    var angm=m.angle
+                    var angs=s.angle
+                    var dh = Math.min(Math.abs(a - agnh), Math.abs(a - agnh - 360), Math.abs(a - agnh + 360))
+                    var dm = Math.min(Math.abs(a - angm), Math.abs(a - angm - 360), Math.abs(a - angm + 360))
+                    var ds = s.visible ? Math.min(Math.abs(a - angs), Math.abs(a - angs - 360), Math.abs(a - angs + 360)) : 9999
                     var dmin = Math.min(dh, dm, ds)
 
                     if (dh === dmin) {
