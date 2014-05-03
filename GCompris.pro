@@ -51,11 +51,7 @@ include(src/activities/mosaic/mosaic.pri)
 include(src/activities/numbers-odd-even/numbers-odd-even.pri)
 include(src/activities/penalty/penalty.pri)
 include(src/activities/planegame/planegame.pri)
-<<<<<<< HEAD
-include(src/activities/enumerate/enumerate.pri)
-=======
 include(src/activities/wordsgame/wordsgame.pri)
->>>>>>> upstream/master
 
 
 APP_FILES += \

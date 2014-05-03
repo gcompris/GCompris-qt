@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /* GCompris - Enumerate.qml
 *
 * Copyright (C) 2014 Thib ROMAIN <thibrom@gmail.com>
@@ -21,7 +19,6 @@
 *   You should have received a copy of the GNU General Public License
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
->>>>>>> upstream/master
 import QtQuick 2.1
 import QtMultimedia 5.0
 
@@ -41,22 +38,12 @@ ActivityBase {
         signal start
         signal stop
         fillMode: Image.PreserveAspectCrop
-<<<<<<< HEAD
-        source: "qrc:/gcompris/src/activities/enumerate/resource/enumerate_background.png"
-=======
         source: Activity.url + "background.svgz"
->>>>>>> upstream/master
 
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-<<<<<<< HEAD
-        onStart: { Activity.start(main, background, bar, bonus) }
-        onStop: { Activity.stop() }
-
-        DropArea{
-=======
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
@@ -70,7 +57,6 @@ ActivityBase {
         }
 
         DropArea {
->>>>>>> upstream/master
             id: dropableArea
             anchors.left: background.left
             anchors.bottom: background.bottom
@@ -78,8 +64,6 @@ ActivityBase {
             height: background.height
         }
 
-<<<<<<< HEAD
-=======
         Column {
             anchors {
                 right: parent.right
@@ -108,7 +92,6 @@ ActivityBase {
             }
         }
 
->>>>>>> upstream/master
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -127,11 +110,7 @@ ActivityBase {
 
         Audio {
             id: winAudio
-<<<<<<< HEAD
-            source: "qrc:/gcompris/src/activities/enumerate/resource/bonus.wav"
-=======
             source: "qrc:/gcompris/src/core/resource/sounds/bonus.wav"
->>>>>>> upstream/master
         }
 
         Bonus {
