@@ -20,18 +20,23 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 import QtQuick 2.0
+import "enumerate.js" as Activity
 
 Item {
-    property string imgPath : "qrc:/gcompris/src/activities/enumerate/resource/banana.png"
-    property int type: 0
     height: 100
     width: 100
+    z: 0
+    x: Activity.getRandomInt(10, main.width - 220)
+    y: Activity.getRandomInt(10, main.height - 150)
 
-    id : itemToEnumerate
-    Image{
+    property string imgPath
+    property int type: 0
+    property Item main
+
+    Image {
         id: img
-        anchors.fill: parent
         source: imgPath
+        width: Math.min(100, main.width / 6)
         fillMode : Image.PreserveAspectFit
     }
 
@@ -39,10 +44,13 @@ Item {
     Drag.hotSpot.x : 10
     Drag.hotSpot.y : 10
 
-    MouseArea{
+    MouseArea {
         id: dragArea
         anchors.fill: parent
         drag.target: parent
+        onPressed: {
+            parent.z = ++Activity.globalZ
+        }
         onReleased: parent.Drag.drop()
     }
 }

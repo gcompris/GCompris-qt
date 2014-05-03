@@ -38,21 +38,58 @@ ActivityBase {
         signal start
         signal stop
         fillMode: Image.PreserveAspectCrop
-        source: "qrc:/gcompris/src/activities/enumerate/resource/enumerate_background.png"
+        source: Activity.url + "background.svgz"
 
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        onStart: { Activity.start(main, background, bar, bonus) }
+        onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        DropArea{
+        QtObject {
+            id: items
+            property alias background: background
+            property alias bar: bar
+            property alias bonus: bonus
+            property alias answerColumnModel: answerColumn.model
+            property alias itemListModel: itemList.model
+        }
+
+        DropArea {
             id: dropableArea
             anchors.left: background.left
             anchors.bottom: background.bottom
             width: background.width
             height: background.height
+        }
+
+        Column {
+            anchors {
+                right: parent.right
+                bottom: parent.bottom
+                margins: 10
+            }
+            spacing: 5
+
+            Repeater
+            {
+                id: answerColumn
+                AnswerArea {
+                    imgPath: modelData
+                    focus: true
+                }
+            }
+        }
+
+        Repeater
+        {
+            id: itemList
+
+            ItemToEnumerate {
+                imgPath: modelData
+                main: background
+            }
         }
 
         DialogHelp {

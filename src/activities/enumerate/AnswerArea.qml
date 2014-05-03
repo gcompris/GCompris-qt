@@ -20,17 +20,33 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 import QtQuick 2.1
-import "enumerate.js" as ApplicationLogic
+import "enumerate.js" as Activity
 
-Image {
-    property string imgPath : ""
-    property string backgroundImg : "qrc:/gcompris/src/activities/enumerate/resource/enumerate_answer_focus.png"
-    property string backgroundImgWithFocus : "qrc:/gcompris/src/activities/enumerate/resource/enumerate_answer.png"
-    property int itemType : 0
-
+Rectangle {
     id: answerBackground
-    focus: true
-    source: activeFocus ? backgroundImgWithFocus : backgroundImg
+    width: 140
+    height: 70
+    color: activeFocus ? "#ff07fff2" : "#cccccccc"
+    radius: 10
+    border {
+        width: activeFocus ?  3 : 1
+        color: "black"
+    }
+
+    // A top gradient
+    Rectangle {
+        anchors.fill: parent
+        anchors.margins: activeFocus ?  3 : 1
+        radius: 10
+        gradient: Gradient {
+            GradientStop { position: 0.0; color: "#CCFFFFFF" }
+            GradientStop { position: 0.5; color: "#80FFFFFF" }
+            GradientStop { position: 1.0; color: "#00000000" }
+        }
+    }
+
+
+    property string imgPath
 
     MouseArea {
         id: mouseArea
@@ -40,35 +56,10 @@ Image {
         }
     }
 
-    Rectangle {
-        id: contourRect
-        height: img.height + 12
-        width: img.width - 12
-        anchors.centerIn: img
-        color: "white"
-        opacity: mouseImageArea.containsMouse? 1.0:0.0
-        radius: 8
-        Rectangle{
-            id: innerRect
-            height: contourRect.height - 4
-            width: contourRect.width - 4
-            anchors.centerIn: contourRect
-            color: "red"
-            opacity: mouseImageArea.containsMouse? 0.7:0.0
-            radius: 8
-        }
-    }
-
-    Image{
-
-        MouseArea{
-            id: mouseImageArea
-            anchors.fill: parent
-            hoverEnabled: true
-        }
+    Image {
         id: img
-        y: 8
         x: 10
+        anchors.verticalCenter: parent.verticalCenter
         height: 52
         width: 52
         source: imgPath
@@ -76,10 +67,32 @@ Image {
     }
 
     Keys.onPressed: {
-        userEntry.text = event.text
-        if(event.text != ""){
-            ApplicationLogic.setUserAnswer(itemType,parseInt(userEntry.text))
+        if(event.key === Qt.Key_Backspace) {
+            userEntry.text = userEntry.text.slice(0, -1)
+            if(userEntry.text.length === 0) {
+                userEntry.text = "?"
+                Activity.setUserAnswer(imgPath, -1)
+                return
+            } else {
+                Activity.setUserAnswer(imgPath, parseInt(userEntry.text))
+                return
+            }
         }
+
+        var number = parseInt(event.text)
+        if(isNaN(number))
+            return
+
+        if(userEntry.text === "?") {
+            userEntry.text = ""
+        }
+
+        if(userEntry.text.length >= 2) {
+            return
+        }
+
+        userEntry.text += event.text
+        Activity.setUserAnswer(imgPath, parseInt(userEntry.text))
     }
 
     Text {
@@ -87,9 +100,10 @@ Image {
         x: img.x + img.width + 15
         anchors.verticalCenter: img.verticalCenter
         text: "?"
-        color: "blue"
+        color: "white"
         font.bold: true
         font.pixelSize: 24
+        style: Text.Outline
+        styleColor: "black"
     }
 }
-

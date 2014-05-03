@@ -8,7 +8,7 @@ APP_FILES += \
 	$$PWD/ItemToEnumerate.qml
 
 APP_FILES += \
-	$$PWD/resource/enumerate_background.png \
+	$$PWD/resource/background.svgz \
 	$$PWD/resource/baby_bottle.png \
 	$$PWD/resource/banana.png \
 	$$PWD/resource/bread_slice.png \
@@ -16,8 +16,6 @@ APP_FILES += \
 	$$PWD/resource/chocolate_cake.png \
 	$$PWD/resource/chocolate.png \
 	$$PWD/resource/cookie.png \
-	$$PWD/resource/enumerate_answer_focus.png \
-	$$PWD/resource/enumerate_answer.png \
 	$$PWD/resource/french_croissant.png \
 	$$PWD/resource/grapefruit.png \
 	$$PWD/resource/marmelade.png \
