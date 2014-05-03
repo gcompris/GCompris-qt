@@ -61,11 +61,6 @@ var levelProperties = [
             },
         ]
 
-/* when the corresponding arrow key is pressed, the following boolean pass
-   to true and is reseted at the end of the level */
-var leftPressed = false
-var rightPressed = false
-
 var gameWon = false
 
 // When the timer is finished we set this variable to true to disabled key press
@@ -93,23 +88,23 @@ function stop() {
 }
 
 function leftShiftPressed() {
-    if(!items.deltaPressedTimer.running && !rightPressed) {
+    if(!items.deltaPressedTimer.running && !items.rightPressed) {
         items.leftHand.animate(timerinc)
         items.deltaPressedTimer.start()
     }
 
-    if(rightPressed) {
+    if(items.rightPressed) {
         items.leftHand.animate(timerinc)
         items.background.playSound("brick")
     }
 }
 
 function rightShiftPressed() {
-    if(!items.deltaPressedTimer.running && !leftPressed) {
+    if(!items.deltaPressedTimer.running && !items.leftPressed) {
         items.deltaPressedTimer.start()
         items.rightHand.animate(timerinc)
     }
-    if(leftPressed) {
+    if(items.leftPressed) {
         items.rightHand.animate(timerinc)
         items.background.playSound("brick")
     }
@@ -117,7 +112,7 @@ function rightShiftPressed() {
 
 function endTimer() {
     gameFinished = true
-    gameWon = rightPressed && leftPressed
+    gameWon = items.rightPressed && items.leftPressed
 }
 
 function initLevel() {
@@ -132,8 +127,8 @@ function initLevel() {
 
     items.ball.reinitBall();
 
-    leftPressed = false
-    rightPressed = false
+    items.leftPressed = false
+    items.rightPressed = false
 
     gameWon = false
     gameFinished = false
@@ -164,16 +159,16 @@ function processKey(event) {
     if(!gameFinished) {
         if(event.key == Qt.Key_Left) {
             // left
-            if(!leftPressed) {
+            if(!items.leftPressed) {
                 leftShiftPressed();
-                leftPressed = true
+                items.leftPressed = true
             }
         }
         else if(event.key == Qt.Key_Right) {
             // right
-            if(!rightPressed) {
+            if(!items.rightPressed) {
                 rightShiftPressed();
-                rightPressed = true
+                items.rightPressed = true
             }
         }
     }

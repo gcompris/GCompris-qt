@@ -80,7 +80,7 @@ Item {
     {
         var doc;
         try {
-            var doc = JSON.parse(json);
+            doc = JSON.parse(json);
             // minimal syntax check:
             var i;
             if (undefined === doc.levels)

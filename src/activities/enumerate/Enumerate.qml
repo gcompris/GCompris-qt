@@ -1,3 +1,27 @@
+<<<<<<< HEAD
+=======
+/* GCompris - Enumerate.qml
+*
+* Copyright (C) 2014 Thib ROMAIN <thibrom@gmail.com>
+*
+* Authors:
+*   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+*   Thib ROMAIN <thibrom@gmail.com> (Qt Quick port)
+*
+*   This program is free software; you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation; either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/
+>>>>>>> upstream/master
 import QtQuick 2.1
 import QtMultimedia 5.0
 
@@ -17,16 +41,36 @@ ActivityBase {
         signal start
         signal stop
         fillMode: Image.PreserveAspectCrop
+<<<<<<< HEAD
         source: "qrc:/gcompris/src/activities/enumerate/resource/enumerate_background.png"
+=======
+        source: Activity.url + "background.svgz"
+>>>>>>> upstream/master
 
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
+<<<<<<< HEAD
         onStart: { Activity.start(main, background, bar, bonus) }
         onStop: { Activity.stop() }
 
         DropArea{
+=======
+        onStart: { Activity.start(items) }
+        onStop: { Activity.stop() }
+
+        QtObject {
+            id: items
+            property alias background: background
+            property alias bar: bar
+            property alias bonus: bonus
+            property alias answerColumnModel: answerColumn.model
+            property alias itemListModel: itemList.model
+        }
+
+        DropArea {
+>>>>>>> upstream/master
             id: dropableArea
             anchors.left: background.left
             anchors.bottom: background.bottom
@@ -34,6 +78,37 @@ ActivityBase {
             height: background.height
         }
 
+<<<<<<< HEAD
+=======
+        Column {
+            anchors {
+                right: parent.right
+                bottom: parent.bottom
+                margins: 10
+            }
+            spacing: 5
+
+            Repeater
+            {
+                id: answerColumn
+                AnswerArea {
+                    imgPath: modelData
+                    focus: true
+                }
+            }
+        }
+
+        Repeater
+        {
+            id: itemList
+
+            ItemToEnumerate {
+                imgPath: modelData
+                main: background
+            }
+        }
+
+>>>>>>> upstream/master
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -52,7 +127,11 @@ ActivityBase {
 
         Audio {
             id: winAudio
+<<<<<<< HEAD
             source: "qrc:/gcompris/src/activities/enumerate/resource/bonus.wav"
+=======
+            source: "qrc:/gcompris/src/core/resource/sounds/bonus.wav"
+>>>>>>> upstream/master
         }
 
         Bonus {

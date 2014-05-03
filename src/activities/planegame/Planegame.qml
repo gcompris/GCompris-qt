@@ -98,8 +98,6 @@ ActivityBase {
         Score {
             id: score
             visible: false
-            anchors.bottom: background.bottom
-            anchors.right: background.right
         }
 
         property int movePlaneTimerCounter: 0

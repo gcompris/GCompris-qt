@@ -67,23 +67,32 @@ ActivityBase {
             width: parent.width * 0.9
 
             property int nbItems: 24
+            property bool horizontal: activity.width > activity.height
             property int nbColumns: Activity.questionLayout[nbItems][0]
             property int nbLines: Activity.questionLayout[nbItems][1]
-            property int itemWidth: Math.min(width / 2 / nbColumns - 10 - 10 / nbColumns / 2,
-                                             parent.height / 2 / nbLines - 10 - 10 / nbLines / 2)
+            property int itemWidth: horizontal ?
+                                        Math.min(width / 2 / nbColumns - 10 - 10 / nbColumns / 2,
+                                                 parent.height / 2 / nbLines - 10 - 10 / nbLines / 2) :
+                                        Math.min(width / nbColumns - 10 - 10 / nbColumns / 2,
+                                                 parent.height * 0.25 / nbLines - 10 - 10 / nbLines / 2)
             property int itemHeight: itemWidth
 
-            property int nbSelectorColumns: Activity.selectorLayout[nbItems][0]
-            property int nbSelectorLines: Activity.selectorLayout[nbItems][1]
+            property int nbSelectorColumns: horizontal ?
+                                                Activity.selectorLayout[nbItems][0] :
+                                                Activity.selectorLayout[nbItems][0] / 2
+            property int nbSelectorLines: horizontal ?
+                                              Activity.selectorLayout[nbItems][1] :
+                                              Activity.selectorLayout[nbItems][1] * 2
 
-            Row {
+            Grid {
                 id: row
                 spacing: 10
+                columns: column.horizontal ? 2 : 1
 
                 // === The Question Area ===
                 Rectangle {
                     height: (column.itemHeight + 10) * column.nbLines
-                    width: column.width / 2
+                    width: column.horizontal ? column.width / 2 : column.width + 10
                     color: "#55333333"
                     border.color: "black"
                     border.width: 2
@@ -112,7 +121,7 @@ ActivityBase {
                 // === The Answer Area ===
                 Rectangle {
                     height: (column.itemHeight + 10) * column.nbLines
-                    width: column.width / 2
+                    width: column.horizontal ? column.width / 2 : column.width + 10
                     color: "#55333333"
                     border.color: "black"
                     border.width: 2

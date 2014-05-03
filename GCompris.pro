@@ -19,14 +19,20 @@ include(src/activities/ballcatch/ballcatch.pri)
 include(src/activities/clickgame/clickgame.pri)
 include(src/activities/click_on_letter/click_on_letter.pri)
 include(src/activities/click_on_letter_up/click_on_letter_up.pri)
+include(src/activities/color_mix/color_mix.pri)
+include(src/activities/color_mix_light/color_mix_light.pri)
 include(src/activities/colors/colors.pri)
 include(src/activities/erase_2clic/erase_2clic.pri)
 include(src/activities/erase_clic/erase_clic.pri)
+include(src/activities/enumerate/enumerate.pri)
 include(src/activities/erase/erase.pri)
 include(src/activities/gletters/gletters.pri)
 include(src/activities/hexagon/hexagon.pri)
 include(src/activities/instruments/instruments.pri)
 include(src/activities/leftright/leftright.pri)
+include(src/activities/maze/maze.pri)
+include(src/activities/mazeinvisible/mazeinvisible.pri)
+include(src/activities/mazerelative/mazerelative.pri)
 include(src/activities/missing-letter/missing-letter.pri)
 include(src/activities/memory-math-add/memory-math-add.pri)
 include(src/activities/memory-math-add-minus/memory-math-add-minus.pri)
@@ -45,7 +51,11 @@ include(src/activities/mosaic/mosaic.pri)
 include(src/activities/numbers-odd-even/numbers-odd-even.pri)
 include(src/activities/penalty/penalty.pri)
 include(src/activities/planegame/planegame.pri)
+<<<<<<< HEAD
 include(src/activities/enumerate/enumerate.pri)
+=======
+include(src/activities/wordsgame/wordsgame.pri)
+>>>>>>> upstream/master
 
 
 APP_FILES += \
