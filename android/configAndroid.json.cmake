@@ -9,6 +9,5 @@
  "ndk-host": "@ANDROID_NDK_HOST_SYSTEM_NAME@",
  "target-architecture": "@ARM_TARGET@",
  "application-binary": "@CMAKE_LIBRARY_OUTPUT_DIRECTORY@libGCompris.so",
- "android-package": "net.gcompris",
- "android-extra-libs": "@KCONFIG_LIBRARY@"
+ "android-package": "net.gcompris"
 }
