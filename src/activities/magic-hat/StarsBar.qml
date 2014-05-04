@@ -59,6 +59,7 @@ Item {
         for(var i=0;i<nbStarsOn;i++){
             repeaterStarsToMove.itemAt(i).x=targetX
             repeaterStarsToMove.itemAt(i).y=targetY
+            repeaterStarsToMove.itemAt(i).z-=2
         }
     }
 

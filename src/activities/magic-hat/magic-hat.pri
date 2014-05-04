@@ -8,6 +8,7 @@ APP_FILES += \
         $$PWD/resource/magic-hat/hat-point.svg \
         $$PWD/resource/magic-hat/magic_hat_plus_bg.png \
         $$PWD/resource/magic-hat/magic_hat_minus_newbg.svg \
+        $$PWD/resource/magic-hat/magic_hat_plus_newbg.svg \
         $$PWD/resource/magic-hat/magic_hat_minus_bg.png \
         $$PWD/resource/magic-hat/star-clear.svgz \
         $$PWD/resource/magic-hat/star1.svgz \

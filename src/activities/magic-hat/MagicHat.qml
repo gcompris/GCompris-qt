@@ -35,7 +35,7 @@ ActivityBase {
     pageComponent: Image{
         id: background
         anchors.fill: parent
-        source: mode=="minus"? "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/magic_hat_minus_newbg.svg" : "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/magic_hat_plus_bg.png"
+        source: mode=="minus"? "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/magic_hat_minus_newbg.svg" : "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/magic_hat_plus_newbg.svg"
         fillMode: Image.PreserveAspectFit
         signal start
         signal stop
