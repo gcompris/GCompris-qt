@@ -6,8 +6,8 @@ Item {
     width: parent.width
     height: parent.height
     property alias state: hatImg.state
-    property int newX
-    property int newY
+    property int targetX
+    property int targetY
     property int nbStarsUnderHat : 0
     property double starsOpacity : 1.0
 
@@ -69,9 +69,9 @@ Item {
                            else RotationAnimation.Clockwise
                 duration: 500
                 onRunningChanged: if(!rotAnim.running && hatImg.state=="Rotated"){
-                                      Activity.getNewStarsCoordinates()
-                                      moveStars()
+                                      Activity.moveStarsUnderHat()
                                   }
+
     }
 
     MouseArea {
@@ -87,23 +87,35 @@ Item {
         id: repeaterStars
         model: nbStarsUnderHat
         Star {
-            starState: "on"
+            starState: "on_yellow"
             height: hatItem.height/18
             width: hatItem.height/18
             anchors.centerIn: parent
             anchors.verticalCenterOffset: hatImg.height/2 - hatImg.height/6
-            z: hatImg.z - 1
             displayBounds: false
             isClickable: false
+            z: hatImg.z - 1
             opacity: starsOpacity
         }
+    }
+
+    Star{
+        id: offStar
+        starState: "off"
+        height: hatItem.height/18
+        width: hatItem.height/18
+        anchors.centerIn: parent
+        anchors.verticalCenterOffset: hatImg.height/2 - hatImg.height/6
+        displayBounds: false
+        isClickable: false
+        z: hatImg.z - 1
     }
 
     function moveStars() {
         for(var i=0;i<nbStarsUnderHat;i++){
             repeaterStars.itemAt(i).anchors.centerIn= undefined
-            repeaterStars.itemAt(i).x=newX + i*(hatItem.height/18 + 5)
-            repeaterStars.itemAt(i).y=newY
+            repeaterStars.itemAt(i).x=targetX + i*(hatItem.height/18 + 5)
+            repeaterStars.itemAt(i).y=targetY
             repeaterStars.itemAt(i).z+=2
         }
     }

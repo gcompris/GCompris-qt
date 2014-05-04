@@ -5,6 +5,9 @@ Item {
     property int nbStarsOn: 0
     property bool authorizeClick: false
     property int starsSize: 32
+    property string starsColor: "yellow"
+    property int targetX
+    property int targetY
     id: item
     width: starsSize
     height: starsSize
@@ -17,7 +20,7 @@ Item {
             id: repeaterStarsOn
             model: nbStarsOn
             Star {
-                starState: "on"
+                starState: starsColor=="yellow" ? "on_yellow" : "on_green"
                 width: item.height
                 height: item.height
                 displayBounds: true
@@ -33,6 +36,29 @@ Item {
                 height: item.height
                 isClickable: authorizeClick
             }
+        }
+    }
+
+    Row{
+        spacing: 5
+        Repeater{
+            id: repeaterStarsToMove
+            model: nbStarsOn
+            Star {
+                starState: starsColor=="yellow" ? "on_yellow" : "on_green"
+                width: item.height
+                height: item.height
+                displayBounds: false
+                isClickable: authorizeClick
+                opacity: 1
+            }
+        }
+    }
+
+    function moveStars(){
+        for(var i=0;i<nbStarsOn;i++){
+            repeaterStarsToMove.itemAt(i).x=targetX
+            repeaterStarsToMove.itemAt(i).y=targetY
         }
     }
 

@@ -16,10 +16,10 @@ Item {
         anchors.fill:parent
         enabled: isClickable
         onClicked: {
-            if(starState=="on") {
+            if(starState=="on_yellow" || starState=="on_green") {
                  starState="off"
             }
-            else starState="on"
+            else starState="on_yellow"
             Activity.verifyAnswer(starState)
         }
     }
@@ -51,14 +51,14 @@ Item {
 
         states:[
             State {
-                name: "on"
+                name: "on_yellow"
                 PropertyChanges {
                     target: starImg
                     source: "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/star1.svgz"
                 }
             },
             State {
-                name: "on_difficult"
+                name: "on_green"
                 PropertyChanges {
                     target: starImg
                     source: "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/star2.svgz"
@@ -78,9 +78,11 @@ Item {
         NumberAnimation {
             id: movingAnimation
             duration: 1000
-            onRunningChanged: if(!movingAnimation.running) {
-                                  Activity.changeHatState()
-                              }
+            onRunningChanged:
+                        if(!movingAnimation.running) {
+                             Activity.animationFinished()
+                             starImg.opacity=0.0
+                        }
         }
     }
     Behavior on y {

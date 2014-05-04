@@ -35,7 +35,7 @@ ActivityBase {
     pageComponent: Image{
         id: background
         anchors.fill: parent
-        source: mode=="minus"? "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/magic_hat_minus_bg.png" : "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/magic_hat_plus_bg.png"
+        source: mode=="minus"? "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/magic_hat_minus_newbg.svg" : "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/magic_hat_plus_bg.png"
         fillMode: Image.PreserveAspectFit
         signal start
         signal stop
@@ -58,7 +58,7 @@ ActivityBase {
             anchors.right: background.right
             anchors.rightMargin: -background.width/26
             anchors.verticalCenter: background.verticalCenter
-            anchors.verticalCenterOffset: background.height/6
+            anchors.verticalCenterOffset: background.height/6.5
             width: background.width/2
             height:background.height
             id: rightLayout
@@ -70,10 +70,12 @@ ActivityBase {
                 StarsBar{
                     id: sb0
                     starsSize: background.height/18
+                    starsColor: "yellow"
                 }
                 StarsBar{
                     id: sb1
                     starsSize: background.height/18
+                    starsColor: "green"
                     opacity: 0
                 }
             }
@@ -83,17 +85,20 @@ ActivityBase {
                 StarsBar{
                     id: sb2
                     starsSize: background.height/18
+                    starsColor: "yellow"
                 }
                 StarsBar{
                     id: sb3
                     starsSize: background.height/18
                     opacity: 0
+                    starsColor: "green"
                 }
             }
             StarsBar{
                 id: sbAnswer
                 nbStarsOn: 0
                 starsSize: background.height/18
+                starsColor: "yellow"
             }
         }
 
