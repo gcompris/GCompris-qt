@@ -5,8 +5,7 @@
 #include <QObject>
 #include <QTranslator>
 
-#include <KConfig>
-#include <KConfigGroup>
+#include <QSettings>
 
 #include "ApplicationInfo.h"
 #include "ActivityInfoTree.h"
@@ -27,12 +26,11 @@ int main(int argc, char *argv[])
     QString locale;
     {
         // Local scope for config
-        KConfig config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/GCompris.conf");
-        qDebug() << config.name();
-        KConfigGroup generalGroup(&config, "General");
+        QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/GCompris.conf",
+                         QSettings::IniFormat);
         // Get locale
-        if(config.hasGroup(generalGroup.name())) {
-            locale = generalGroup.readEntry("locale");
+        if(config.contains("General/locale")) {
+            locale = config.value("General/locale").toString();
         }
         else {
             locale = "en_US.UTF-8";

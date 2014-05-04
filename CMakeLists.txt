@@ -22,11 +22,6 @@ if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
             directory and create a build directory and call \"${CMAKE_COMMAND} <path to the sources>\".")
 endif("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
 
-# Compile 3rd party
-#add_subdirectory(3rdparty)
-#find_package(ECM 0.0.11 REQUIRED NO_MODULE)
-find_package(KConfig REQUIRED)
-
 set(QT_REQUIRED_VERSION 5.2.0)
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED

@@ -6,7 +6,7 @@
 #include <QtCore/QObject>
 #include <QQmlEngine>
 
-#include <KConfig>
+#include <QSettings>
 
 class ApplicationSettings : public QObject
 {
@@ -54,7 +54,7 @@ private:
 
     QString m_locale;
 
-    KConfig m_config;
+    QSettings m_config;
 };
 
 #endif // APPLICATIONSETTINGS_H

@@ -24,8 +24,6 @@ qt5_wrap_cpp(gcompris_MOC ${gcompris_SRCS} ${gcompris_HEADERS})
 qt5_add_resources(gcompris_RCC_SRCS ${gcompris_RCCS})
 set(gcompris_RCC_SRCS ${gcompris_RCC_SRCS})
 
-include_directories(${KCONFIG_INCLUDE_DIR})
-
 set_source_files_properties(${gcompris_RCC_SRCS} PROPERTIES GENERATED ON)
 
 if(NOT ANDROID)
@@ -33,7 +31,6 @@ if(NOT ANDROID)
   qt5_use_modules(GCompris Qml Quick Gui Multimedia Network XmlPatterns Svg Core)
   target_link_libraries(GCompris
     ${QT_LIBRARIES}
-    ${KCONFIG_LIBRARY}
     )
 endif(NOT ANDROID)
 
@@ -42,6 +39,5 @@ if(ANDROID)
   qt5_use_modules(GCompris Qml Quick Gui Multimedia Core Svg XmlPatterns)
   target_link_libraries(GCompris
     ${QT_LIBRARIES}
-    ${KCONFIG_LIBRARY}
   )
 endif(ANDROID)

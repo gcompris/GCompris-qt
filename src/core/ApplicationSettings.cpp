@@ -45,55 +45,54 @@
 #include <QtGui/QScreen>
 #include <QtCore/QLocale>
 
-#include <KConfigGroup>
-
+#include <QSettings>
+#include <QStandardPaths>
 #include "ApplicationSettings.h"
 #include <QDebug>
 
 #define GC_DEFAULT_LOCALE "en_US.UTF-8"
 
 ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
-     m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/GCompris.conf")
+     m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/GCompris.conf", QSettings::IniFormat)
 
 {
-    KConfigGroup generalGroup(&m_config, "General");
+    m_config.beginGroup("General");
     // Default values if file does not exist
-    if(!m_config.hasGroup(generalGroup.name())) {
-        generalGroup.writeEntry("enableEffects", true);
-        generalGroup.writeEntry("fullscreen", false);
-        generalGroup.writeEntry("enableSounds", true);
+    if(!m_config.contains("fullscreen")) {
+        m_config.setValue("enableEffects", true);
+        m_config.setValue("fullscreen", false);
+        m_config.setValue("enableSounds", true);
          // Todo get locale, if "C", put default locale
-        generalGroup.writeEntry("locale", GC_DEFAULT_LOCALE);
+        m_config.setValue("locale", GC_DEFAULT_LOCALE);
         m_config.sync();
     }
 
-    m_isEffectEnabled = generalGroup.readEntry("enableEffects", true);
-    m_isFullscreen = generalGroup.readEntry("fullscreen", false);
-    m_isAudioEnabled = generalGroup.readEntry("enableSounds", false);
-    m_locale = generalGroup.readEntry("locale");
+    m_isEffectEnabled = m_config.value("enableEffects").toBool();
+    m_isFullscreen = m_config.value("fullscreen").toBool();
+    m_isAudioEnabled = m_config.value("enableSounds").toBool();
+    m_locale = m_config.value("locale").toString();
 
+    m_config.endGroup();
     connect(this, SIGNAL(audioEnabledChanged()), this, SLOT(notifyAudioEnabledChanged()));
     connect(this, SIGNAL(localeChanged()), this, SLOT(notifyLocaleChanged()));
 }
 
 void ApplicationSettings::notifyAudioEnabledChanged()
 {
-    // Load settings from KConfig
-    KConfigGroup generalGroup = KConfigGroup(&m_config, "General");
-    generalGroup.writeEntry("enableSounds", m_isAudioEnabled);
-
     // Save in config
+    m_config.beginGroup("General");
+    m_config.setValue("enableSounds", m_isAudioEnabled);
+    m_config.endGroup();
     qDebug() << "notifyAudio: " << m_isAudioEnabled;
     m_config.sync();
 }
 
 void ApplicationSettings::notifyLocaleChanged()
 {
-    // Load settings from KConfig
-    KConfigGroup generalGroup = KConfigGroup(&m_config, "General");
-    generalGroup.writeEntry("locale", m_locale);
-
     // Save in config
+    m_config.beginGroup("General");
+    m_config.setValue("locale", m_locale);
+    m_config.endGroup();
     qDebug() << "new locale: " << m_locale;
     m_config.sync();
 }
