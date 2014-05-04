@@ -10,5 +10,6 @@ APP_FILES += \
 		$$PWD/resource/background.svgz \
 		$$PWD/resource/background2.svgz \
 		$$PWD/resource/flashlight.svgz \
-        $$PWD/resource/flashlight2.svgz \
+		$$PWD/resource/flashlight2.svgz \
+		$$PWD/resource/light.svgz \
 		$$PWD/resource/tube.svgz
