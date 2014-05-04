@@ -27,23 +27,28 @@ var items
 var currentLevel = 0
 var numberOfLevel = 9
 var itemIcons = [
-            url + "baby_bottle.png",
-            url + "banana.png",
-            url + "butter.png",
-            url + "chocolate.png",
-            url + "chocolate_cake.png",
-            url + "cookie.png",
-            url + "french_croissant.png",
-            url + "grapefruit.png",
-            url + "marmelade.png",
-            url + "milk_cup.png",
-            url + "milk_shake.png",
-            url + "orange.png",
-            url + "pear.png",
-            url + "round_cookie.png",
-            url + "suggar_box.png",
-            url + "yahourt.png"
-]
+            url + "apple.svgz",
+            url + "baby_bottle.svgz",
+            url + "balloon.svgz",
+            url + "banana.svgz",
+            url + "bottle.svgz",
+            url + "bread_slice.svgz",
+            url + "butter.svgz",
+            url + "carrot.svgz",
+            url + "cherry.svgz",
+            url + "chocolate_cake.svgz",
+            url + "chocolate.svgz",
+            url + "cookie.svgz",
+            url + "french_croissant.svgz",
+            url + "grapefruit.svgz",
+            url + "marmelade.svgz",
+            url + "milk_cup.svgz",
+            url + "orange.svgz",
+            url + "round_cookie.svgz",
+            url + "strawberry.svgz",
+            url + "sugar_box.svgz",
+            url + "yahourt.svgz"
+        ]
 var numberOfTypes = itemIcons.length
 var userAnswers = new Array()
 var answerToFind = new Array()
@@ -170,4 +175,11 @@ function shuffle(o) {
     for(var j, x, i = o.length; i;
         j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
     return o;
+}
+
+var currentAnswerItem
+
+function registerAnswerItem(item) {
+    currentAnswerItem = item
+    item.forceActiveFocus()
 }

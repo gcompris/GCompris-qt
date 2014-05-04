@@ -20,6 +20,7 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 import QtQuick 2.1
+import GCompris 1.0
 import QtMultimedia 5.0
 
 import "qrc:/gcompris/src/core"
@@ -67,7 +68,7 @@ ActivityBase {
         Column {
             anchors {
                 right: parent.right
-                bottom: parent.bottom
+                bottom: ApplicationInfo.isMobile ? keyboard.top : parent.bottom
                 margins: 10
             }
             spacing: 5
@@ -78,6 +79,7 @@ ActivityBase {
                 AnswerArea {
                     imgPath: modelData
                     focus: true
+                    backspaceCode: keyboard.backspace
                 }
             }
         }
@@ -87,9 +89,36 @@ ActivityBase {
             id: itemList
 
             ItemToEnumerate {
-                imgPath: modelData
+                source: modelData
                 main: background
             }
+        }
+
+        VirtualKeyboard {
+            id: keyboard
+            anchors.bottom: parent.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width
+            visible: ApplicationInfo.isMobile
+
+            keyHeight: 35 * ApplicationInfo.ratio
+            equalKeyWidth: true
+            layout: [ [
+                    { label: "0" },
+                    { label: "1" },
+                    { label: "2" },
+                    { label: "3" },
+                    { label: "4" },
+                    { label: "5" },
+                    { label: "6" },
+                    { label: "7" },
+                    { label: "8" },
+                    { label: "9" },
+                    { label: keyboard.backspace }
+                ] ]
+            onKeypress: Activity.currentAnswerItem.appendText(text)
+
+            onError: console.log("VirtualKeyboard error: " + msg);
         }
 
         DialogHelp {

@@ -72,6 +72,7 @@ Item {
                            { label: "n" },
                            { label: "m" } ]]
     
+    property string backspace: "\u2190"
     property var layout: null
     //property bool shift: false  // FIXME: add support for shift-key
     property bool equalKeyWidth: true

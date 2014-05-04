@@ -8,21 +8,25 @@ APP_FILES += \
 	$$PWD/ItemToEnumerate.qml
 
 APP_FILES += \
+	$$PWD/resource/apple.svgz \
+	$$PWD/resource/baby_bottle.svgz \
 	$$PWD/resource/background.svgz \
-	$$PWD/resource/baby_bottle.png \
-	$$PWD/resource/banana.png \
-	$$PWD/resource/bread_slice.png \
-	$$PWD/resource/butter.png \
-	$$PWD/resource/chocolate_cake.png \
-	$$PWD/resource/chocolate.png \
-	$$PWD/resource/cookie.png \
-	$$PWD/resource/french_croissant.png \
-	$$PWD/resource/grapefruit.png \
-	$$PWD/resource/marmelade.png \
-	$$PWD/resource/milk_cup.png \
-	$$PWD/resource/milk_shake.png \
-	$$PWD/resource/orange.png \
-	$$PWD/resource/pear.png \
-	$$PWD/resource/round_cookie.png \
-	$$PWD/resource/suggar_box.png \
-	$$PWD/resource/yahourt.png
+	$$PWD/resource/balloon.svgz \
+	$$PWD/resource/banana.svgz \
+	$$PWD/resource/bottle.svgz \
+	$$PWD/resource/bread_slice.svgz \
+	$$PWD/resource/butter.svgz \
+	$$PWD/resource/carrot.svgz \
+	$$PWD/resource/cherry.svgz \
+	$$PWD/resource/chocolate_cake.svgz \
+	$$PWD/resource/chocolate.svgz \
+	$$PWD/resource/cookie.svgz \
+	$$PWD/resource/french_croissant.svgz \
+	$$PWD/resource/grapefruit.svgz \
+	$$PWD/resource/marmelade.svgz \
+	$$PWD/resource/milk_cup.svgz \
+	$$PWD/resource/orange.svgz \
+	$$PWD/resource/round_cookie.svgz \
+	$$PWD/resource/strawberry.svgz \
+	$$PWD/resource/sugar_box.svgz \
+	$$PWD/resource/yahourt.svgz
