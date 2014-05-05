@@ -72,7 +72,7 @@ ActivityBase {
                       items.targetH) + ":" + Activity.get2CharValue(
                       items.targetM) + ":" + Activity.get2CharValue(
                       items.targetS)
-            font.pointSize: helper.font.pointSize
+            font.pointSize: 18
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap
             z: 10
@@ -121,9 +121,9 @@ ActivityBase {
                 Text {
                     text: index + 1
                     font {
-                        pointSize: Math.max(
+                        pixelSize: Math.max(
                                        (index + 1) % 5
-                                       === 0 ? clock.height / 50 : clock.height / 70,
+                                       === 0 ? clock.height / 40 : clock.height / 60,
                                                1)
                         bold: items.currentM === ((index + 1) % 60) || (items.currentS === ((index + 1) % 60) && s.visible)
                         underline: items.currentM === ((index + 1) % 60) || (items.currentS === ((index + 1) % 60) && s.visible)
@@ -170,7 +170,7 @@ ActivityBase {
                 Text {
                     text: index + 1
                     font {
-                        pointSize: Math.max(clock.height / 50, 1)
+                        pixelSize: Math.max(clock.height / 30, 1)
                         bold: items.currentH === ((index + 1) % 12)
                         underline: items.currentH === ((index + 1) % 12)
                     }
@@ -218,7 +218,7 @@ ActivityBase {
                           items.currentH) + ":" + Activity.get2CharValue(
                           items.currentM) + ":" + Activity.get2CharValue(
                           items.currentS)
-                font.pointSize: Math.max(clock.height / 30, 1)
+                font.pixelSize: Math.max(clock.height / 30, 1)
                 anchors {
                     verticalCenter: clock.verticalCenter
                     horizontalCenter: clock.horizontalCenter
