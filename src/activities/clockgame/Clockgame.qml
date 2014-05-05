@@ -75,6 +75,9 @@ ActivityBase {
             font.pointSize: 18
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap
+            width: parent.width / 3
+            style: Text.Outline
+            styleColor: "white"
             z: 10
             anchors {
                 right: background.right
@@ -123,7 +126,7 @@ ActivityBase {
                     font {
                         pixelSize: Math.max(
                                        (index + 1) % 5
-                                       === 0 ? clock.height / 40 : clock.height / 60,
+                                       === 0 ? clock.height / 40 : clock.height / 45,
                                                1)
                         bold: items.currentM === ((index + 1) % 60) || (items.currentS === ((index + 1) % 60) && s.visible)
                         underline: items.currentM === ((index + 1) % 60) || (items.currentS === ((index + 1) % 60) && s.visible)
