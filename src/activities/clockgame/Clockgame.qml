@@ -120,10 +120,14 @@ ActivityBase {
                 model: 60
                 Text {
                     text: index + 1
-                    font.pointSize: Math.max(
-                                        (index + 1) % 5
-                                        === 0 ? clock.height / 50 : clock.height / 70,
-                                                1)
+                    font {
+                        pointSize: Math.max(
+                                       (index + 1) % 5
+                                       === 0 ? clock.height / 50 : clock.height / 70,
+                                               1)
+                        bold: items.currentM === ((index + 1) % 60) || (items.currentS === ((index + 1) % 60) && s.visible)
+                        underline: items.currentM === ((index + 1) % 60) || (items.currentS === ((index + 1) % 60) && s.visible)
+                    }
                     anchors {
                         verticalCenter: clock.verticalCenter
                         horizontalCenter: clock.horizontalCenter
@@ -165,7 +169,11 @@ ActivityBase {
                 model: 12
                 Text {
                     text: index + 1
-                    font.pointSize: Math.max(clock.height / 50, 1)
+                    font {
+                        pointSize: Math.max(clock.height / 50, 1)
+                        bold: items.currentH === ((index + 1) % 12)
+                        underline: items.currentH === ((index + 1) % 12)
+                    }
                     anchors {
                         verticalCenter: clock.verticalCenter
                         horizontalCenter: clock.horizontalCenter
