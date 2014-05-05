@@ -212,33 +212,38 @@ Rectangle {
 
     ListModel {
         id: languages
-        ListElement { text: qsTr("English (Great Britain)"); locale: "en_GB.UTF-8" }
-        ListElement { text: qsTr("English (United States)"); locale: "en_US.UTF-8" }
-        ListElement { text: qsTr("Bulgarian"); locale: "bg_BG.UTF-8" }
-        ListElement { text: qsTr("Breton"); locale: "br_FR.UTF-8" }
-        ListElement { text: qsTr("Czech Republic"); locale: "cs_CZ.UTF-8" }
-        ListElement { text: qsTr("Danish"); locale: "da_DK.UTF-8" }
-        ListElement { text: qsTr("German"); locale: "de_DE.UTF-8" }
-        ListElement { text: qsTr("Greek"); locale: "el_GR.UTF-8" }
-        ListElement { text: qsTr("Spanish"); locale: "es_ES.UTF-8" }
-        ListElement { text: qsTr("French"); locale: "fr_FR.UTF-8" }
-        ListElement { text: qsTr("Scottish Gaelic"); locale: "gd_GB.UTF-8" }
-        ListElement { text: qsTr("Galician"); locale: "gl_ES.UTF-8" }
-        ListElement { text: qsTr("Hungarian"); locale: "hu_HU.UTF-8" }
-        ListElement { text: qsTr("Lithuanian"); locale: "lt_LT.UTF-8" }
-        ListElement { text: qsTr("Latvian"); locale: "lv_LV.UTF-8" }
-        ListElement { text: qsTr("Dutch"); locale: "nl_NL.UTF-8" }
-        ListElement { text: qsTr("Norwegian Nynorsk"); locale: "nn_NO.UTF-8" }
-        ListElement { text: qsTr("Polish"); locale: "pl_PL.UTF-8" }
-        ListElement { text: qsTr("Russian"); locale: "ru_RU.UTF-8" }
-        ListElement { text: qsTr("Portuguese (Brazil)"); locale: "pt_BR.UTF-8" }
-        ListElement { text: qsTr("Slovak"); locale: "sk_SK.UTF-8" }
-        ListElement { text: qsTr("Slovenian"); locale: "sl_SI.UTF-8" }
-        ListElement { text: qsTr("Montenegrin"); locale: "sr_ME.UTF-8" }
-        ListElement { text: qsTr("Swedish"); locale: "sv_FI.UTF-8" }
-        ListElement { text: qsTr("Tamil"); locale: "ta_IN.UTF-8" }
-        ListElement { text: qsTr("Thai"); locale: "th_TH.UTF-8" }
-        ListElement { text: qsTr("Chinese (Traditional)"); locale: "zh_TW.UTF-8" }
+
+        // This is done this way for having the translations
+        Component.onCompleted: {
+            languages.append( { "text": qsTr("English (Great Britain)"), "locale": "en_GB.UTF-8" })
+            languages.append( { "text": qsTr("English (Great Britain)"), "locale": "en_GB.UTF-8" } )
+            languages.append( { "text": qsTr("English (United States)"), "locale": "en_US.UTF-8" } )
+            languages.append( { "text": qsTr("Bulgarian"), "locale": "bg_BG.UTF-8" } )
+            languages.append( { "text": qsTr("Breton"), "locale": "br_FR.UTF-8" } )
+            languages.append( { "text": qsTr("Czech Republic"), "locale": "cs_CZ.UTF-8" } )
+            languages.append( { "text": qsTr("Danish"), "locale": "da_DK.UTF-8" } )
+            languages.append( { "text": qsTr("German"), "locale": "de_DE.UTF-8" } )
+            languages.append( { "text": qsTr("Greek"), "locale": "el_GR.UTF-8" } )
+            languages.append( { "text": qsTr("Spanish"), "locale": "es_ES.UTF-8" } )
+            languages.append( { "text": qsTr("French"), "locale": "fr_FR.UTF-8" } )
+            languages.append( { "text": qsTr("Scottish Gaelic"), "locale": "gd_GB.UTF-8" } )
+            languages.append( { "text": qsTr("Galician"), "locale": "gl_ES.UTF-8" } )
+            languages.append( { "text": qsTr("Hungarian"), "locale": "hu_HU.UTF-8" } )
+            languages.append( { "text": qsTr("Lithuanian"), "locale": "lt_LT.UTF-8" } )
+            languages.append( { "text": qsTr("Latvian"), "locale": "lv_LV.UTF-8" } )
+            languages.append( { "text": qsTr("Dutch"), "locale": "nl_NL.UTF-8" } )
+            languages.append( { "text": qsTr("Norwegian Nynorsk"), "locale": "nn_NO.UTF-8" } )
+            languages.append( { "text": qsTr("Polish"), "locale": "pl_PL.UTF-8" } )
+            languages.append( { "text": qsTr("Russian"), "locale": "ru_RU.UTF-8" } )
+            languages.append( { "text": qsTr("Portuguese (Brazil)"), "locale": "pt_BR.UTF-8" } )
+            languages.append( { "text": qsTr("Slovak"), "locale": "sk_SK.UTF-8" } )
+            languages.append( { "text": qsTr("Slovenian"), "locale": "sl_SI.UTF-8" } )
+            languages.append( { "text": qsTr("Montenegrin"), "locale": "sr_ME.UTF-8" } )
+            languages.append( { "text": qsTr("Swedish"), "locale": "sv_FI.UTF-8" } )
+            languages.append( { "text": qsTr("Tamil"), "locale": "ta_IN.UTF-8" } )
+            languages.append( { "text": qsTr("Thai"), "locale": "th_TH.UTF-8" } )
+            languages.append( { "text": qsTr("Chinese (Traditional)"), "locale": "zh_TW.UTF-8" } )
+        }
     }
 
     function hasConfigChanged() {
