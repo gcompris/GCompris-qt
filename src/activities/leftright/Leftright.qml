@@ -57,15 +57,16 @@ ActivityBase {
 
         Item {
             id: topBorder
-            height: main.height * 0.1
+            height: activity.height * 0.1
         }
 
         Image {
             id: blackBoard
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: topBorder.bottom
-            width: Math.min(main.width, main.height * 0.7)
-            height: width * 3 / 4
+            fillMode: Image.PreserveAspectFit
+            sourceSize.width: Math.min(activity.width,
+                                       (main.height - bar.height - leftButton.height) * 1.3)
             source: "qrc:/gcompris/src/activities/leftright/resource/blackboard.svgz"
 
             Image {
@@ -73,20 +74,19 @@ ActivityBase {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 fillMode: Image.PreserveAspectFit
+                scale: blackBoard.height / 300 * 0.8
                 opacity: 0
-                sourceSize.height: blackBoard.height * 0.5
             }
 
             Image {
                 id: lightImage
                 source: "qrc:/gcompris/src/activities/leftright/resource/light.svgz"
+                sourceSize.width: parent.width
+                sourceSize.height: parent.height
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.top: parent.top
                 anchors.topMargin: 40
-                width: parent.width
-                height: parent.height
                 opacity: 0
-                scale: 1 * ApplicationInfo.ratio
             }
 
             ParallelAnimation {
@@ -95,6 +95,7 @@ ActivityBase {
                     if (!imageAnimOff.running) {
                         handImage.source = Activity.getCurrentHandImage()
                         handImage.rotation = Activity.getCurrentHandRotation()
+
                         imageAnimOn.start()
                     }
                 }
@@ -134,7 +135,7 @@ ActivityBase {
             AnswerButton {
                 id: leftButton
                 width: blackBoard.width * 0.45
-                height: main.height * 0.15
+                height: activity.height * 0.15
                 anchors.left: blackBoard.left
                 anchors.top: blackBoard.bottom
                 anchors.margins: 10
@@ -145,7 +146,7 @@ ActivityBase {
             AnswerButton {
                 id: rightButton
                 width: blackBoard.width * 0.45
-                height: main.height * 0.15
+                height: activity.height * 0.15
                 anchors.right: blackBoard.right
                 anchors.top: blackBoard.bottom
                 anchors.margins: 10

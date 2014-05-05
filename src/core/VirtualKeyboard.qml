@@ -72,6 +72,7 @@ Item {
                            { label: "n" },
                            { label: "m" } ]]
     
+    property string backspace: "\u2190"
     property var layout: null
     //property bool shift: false  // FIXME: add support for shift-key
     property bool equalKeyWidth: true
@@ -117,7 +118,8 @@ Item {
             return;
         }
         nRows = a.length;
-        for (var i = 0; i < a.length; i++) {
+        var i
+        for (i = 0; i < a.length; i++) {
             if (!Array.isArray(a[i])) {
                 error("VirtualKeyboard: Invalid layout, expecting array of arrays of keys");
                 return;
@@ -133,7 +135,7 @@ Item {
         }
         
         // populate
-        for (var i = 0; i < a.length; i++) {
+        for (i = 0; i < a.length; i++) {
             var offset =
                     equalKeyWidth ? ((maxButtons - a[i].length) *
                                      (keyboard.width - maxButtons *

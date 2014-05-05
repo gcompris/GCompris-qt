@@ -7,10 +7,10 @@
         <file>click_on_letter.svg</file>
         <file>resource/background.svgz</file>
         <file>resource/engine.svgz</file>
-        <file>resource/carriage-on.png</file>
-        <file>resource/carriage-off.png</file>
-        <file>resource/cloud-off.png</file>
-        <file>resource/cloud-on.png</file>
+        <file>resource/carriage.svgz</file>
+        <file>resource/cloud.svgz</file>
+        <file>resource/railway.svgz</file>
+        <file>resource/smoke.svgz</file>
         <file>resource/levels-en.json</file>
         <file>resource/levels-fr.json</file>
     </qresource>

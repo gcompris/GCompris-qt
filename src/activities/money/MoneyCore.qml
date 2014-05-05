@@ -205,6 +205,7 @@ ActivityBase {
                 anchors.bottomMargin: 4
                 anchors.leftMargin: 10
                 anchors.rightMargin: 10
+                visible: bar.level === 1
                 Text {
                     id: instructions
                     horizontalAlignment: Text.AlignHCenter
@@ -217,7 +218,7 @@ ActivityBase {
             Rectangle {
                 height: (column.itemHeight + 10) * column.nbLines
                 width: column.width
-                color: "#55333333"
+                color: "#661111AA"
                 border.color: "black"
                 border.width: 2
                 radius: 5

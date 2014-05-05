@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/gcompris/src/activities/mazeinvisible">
+        <file>ActivityInfo.qml</file>
+        <file>Mazeinvisible.qml</file>
+        <file>mazeinvisible.svg</file>
+    </qresource>
+</RCC>

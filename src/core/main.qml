@@ -29,14 +29,14 @@ Window {
     id: main
     width: 800
     height: 520
-    minimumWidth: 600
+    minimumWidth: 400
     minimumHeight: 400
     title: "GCompris"
 
     GCAudio {
         id: audio
         source: "qrc:/gcompris/src/core/resource/intro.ogg"
-        autoPlay: true
+        autoPlay: false
     }
 
     StackView {

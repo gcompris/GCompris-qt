@@ -35,10 +35,11 @@ binmode STDIN, ":utf8";
 binmode STDOUT, ":utf8";
 binmode STDERR, ":utf8";
 
-local $/;
-$xml_str = <STDIN>;
-
-my $xml = XMLin(encode('utf8', $xml_str));
+my $xml_str;
+while (<STDIN>) {
+    $xml_str .= encode('utf8', $_);
+}
+my $xml = XMLin($xml_str);
 
 my $obj = {};
 
@@ -61,7 +62,9 @@ foreach $l (@{$levels}) {
     $l->{level} = $l->{value}; delete $l->{value};
     my $wordarr = [];
     foreach $word (split('\n', $l->{content})) {
-    	push(@$wordarr, $word) if (length($word) > 0);
+        $word =~ s/^\s+//;
+        $word =~ s/\s+$//;
+        push(@$wordarr, $word) if (length($word) > 0);
     }
     $l->{words} = $wordarr;
     delete $l->{content};

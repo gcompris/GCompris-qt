@@ -86,10 +86,23 @@ function calculateOperands()
         break;
     }
 
-
-
     otheritems.firstOp.text = firstOperandVal
     otheritems.secondOp.text = secondOperandVal
+}
+
+// Return the expected answer
+function getAnswer() {
+    switch(operand.text)
+    {
+        case "x":
+            return (firstOperandVal * secondOperandVal)
+
+        case "+":
+           return (firstOperandVal + secondOperandVal)
+
+        case "-":
+            return (firstOperandVal - secondOperandVal)
+    }
 }
 
 function validateAnswer(screenAnswer)
@@ -97,15 +110,14 @@ function validateAnswer(screenAnswer)
         switch(operand.text)
         {
             case "x":
-                return (firstOperandVal * secondOperandVal === screenAnswer)
+                return (getAnswer() === screenAnswer)
 
             case "+":
-               return (firstOperandVal + secondOperandVal === screenAnswer)
+               return (getAnswer() === screenAnswer)
 
             case "-":
-                return (firstOperandVal - secondOperandVal === screenAnswer)
+                return (getAnswer() === screenAnswer)
         }
-
 }
 
 function run() {
@@ -116,6 +128,7 @@ function run() {
     otheritems.firstOp.visible = true
     otheritems.secondOp.visible = true
     otheritems.numpad.answerFlag = false
+    otheritems.result = getAnswer()
 
     // TODO adjusting or disabling the difficulty
     coreItems.balloon.startMoving(20000)
@@ -178,13 +191,15 @@ function keyEvent(key, pressed)
 
     if(pressed && !otheritems.numpad.answerFlag)
     {
-        if(keyValue < 5 && otheritems.numpad.answer.length < 2)
+        if(keyValue < 5 &&
+           otheritems.numpad.answer.length < otheritems.numpad.maxDigit)
         {
             otheritems.numpad.answer += keyValue;
             otheritems.numpad.leftPanelComponent.children[keyValue].color = Qt.lighter(otheritems.numpad.colours[keyValue])
             otheritems.numpad.leftPanelComponent.children[keyValue].border.width = 5
         }
-        else if(keyValue < 10 && otheritems.numpad.answer.length < 2)
+        else if(keyValue < 10 &&
+            otheritems.numpad.answer.length < otheritems.numpad.maxDigit)
         {
             otheritems.numpad.answer += keyValue;
             otheritems.numpad.rightPanelComponent.children[keyValue - 5].color = Qt.lighter(otheritems.numpad.colours[keyValue - 5])
@@ -215,7 +230,6 @@ function keyEvent(key, pressed)
             otheritems.numpad.backspaceButtonComponent.color = "white"
             otheritems.numpad.backspaceButtonComponent.border.width = 2
         }
-
     }
 
 }

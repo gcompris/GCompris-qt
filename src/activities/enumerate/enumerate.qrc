@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/gcompris/src/activities/enumerate">
+        <file>ActivityInfo.qml</file>
+        <file>Enumerate.qml</file>
+        <file>enumerate.js</file>
+        <file>enumerate.svg</file>
+        <file>AnswerArea.qml</file>
+        <file>ItemToEnumerate.qml</file>
+        <file>resource/apple.svgz</file>
+        <file>resource/baby_bottle.svgz</file>
+        <file>resource/background.svgz</file>
+        <file>resource/balloon.svgz</file>
+        <file>resource/banana.svgz</file>
+        <file>resource/bottle.svgz</file>
+        <file>resource/bread_slice.svgz</file>
+        <file>resource/butter.svgz</file>
+        <file>resource/carrot.svgz</file>
+        <file>resource/cherry.svgz</file>
+        <file>resource/chocolate_cake.svgz</file>
+        <file>resource/chocolate.svgz</file>
+        <file>resource/cookie.svgz</file>
+        <file>resource/french_croissant.svgz</file>
+        <file>resource/grapefruit.svgz</file>
+        <file>resource/marmelade.svgz</file>
+        <file>resource/milk_cup.svgz</file>
+        <file>resource/orange.svgz</file>
+        <file>resource/round_cookie.svgz</file>
+        <file>resource/strawberry.svgz</file>
+        <file>resource/sugar_box.svgz</file>
+        <file>resource/yahourt.svgz</file>
+    </qresource>
+</RCC>

@@ -32,24 +32,58 @@ Item {
     width: wordText.width
     height: wordText.height
     
-    ///< index into text.split("") where next typed match should occur
+    /// index into text.split("") where next typed match should occur
     property int unmatchedIndex: 0;
     property alias text: wordText.text;
 
     signal won
 
     onWon: {
-        opacity = 0
         particle.emitter.burst(30)
+        fadeout.restart();
+    }
+    
+    Component.onCompleted: {
+        // make sure our word is completely visible
+        if (x + width > parent.width)
+            x = parent.width - width;
     }
 
-    Behavior on opacity { PropertyAnimation { duration: 1000 } }
+    onUnmatchedIndexChanged: {
+        if (unmatchedIndex <= 0)
+            highlightedWordText.text = "";
+        else if (wordText.text.length > 0 && wordText.text.length >= unmatchedIndex) {
+            highlightedWordText.text = wordText.text.substring(0, unmatchedIndex);
+            /* Need to add the ZERO WIDTH JOINER to force joined char in Arabic and
+             * Hangul: http://en.wikipedia.org/wiki/Zero-width_joiner
+             * 
+             * FIXME: this works only on desktop systems, on android this
+             * shifts the typed word a few pixels down. */
+            if (!ApplicationInfo.isMobile)
+                highlightedWordText.text += "\u200C"; 
+        }
+    }
 
-    /** Called when user typed the next letter correctly */
-    function  nextCharMatched()
+    PropertyAnimation {
+        id: fadeout
+        target: word;
+        property: "opacity"
+        to: 0
+        duration: 1000
+        
+        onStopped: Activity.deleteWord(word);
+    }
+
+    function checkMatch(c)
     {
-        unmatchedIndex++;
-        // FIXME: update char color of matched chars for multichar words!
+        var chars = text.split("");
+        if (chars[unmatchedIndex] == c) {
+            unmatchedIndex++;
+            return true;
+        } else {
+            unmatchedIndex = 0;
+            return false;
+        }
     }
     
     function startMoving(dur)
@@ -69,7 +103,18 @@ Item {
         text: ""
         font.pointSize: 35
         font.bold: true
-        color: "navy"        
+        color: "navy"
+            
+        Text {
+            id: highlightedWordText
+            
+            anchors.fill: parent
+            
+            text: ""
+            font.pointSize: parent.font.pointSize
+            font.bold: parent.font.pointSize
+            color: "red"
+        }
     }
     
     ParticleSystemStar {
@@ -84,9 +129,6 @@ Item {
         to: parent.height
         duration: 10000
         
-        onStopped: {
-            //console.log("Gletters: word hit the ground: " + wordText.text);
-            Activity.deleteWord(word);
-        }
+        onStopped: Activity.deleteWord(word);
     }
 }
