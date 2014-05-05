@@ -29,6 +29,7 @@ for messages in root.iter('message'):
     if original != None:
         for entry in po:
             if entry.msgid.encode('utf-8') == original.encode('utf-8') and \
+                    'type' in messages.find('translation').attrib and \
                     messages.find('translation').attrib['type'] == 'unfinished':
                 messages.find('translation').text = entry.msgstr
                 try:

@@ -216,7 +216,6 @@ Rectangle {
         // This is done this way for having the translations
         Component.onCompleted: {
             languages.append( { "text": qsTr("English (Great Britain)"), "locale": "en_GB.UTF-8" })
-            languages.append( { "text": qsTr("English (Great Britain)"), "locale": "en_GB.UTF-8" } )
             languages.append( { "text": qsTr("English (United States)"), "locale": "en_US.UTF-8" } )
             languages.append( { "text": qsTr("Bulgarian"), "locale": "bg_BG.UTF-8" } )
             languages.append( { "text": qsTr("Breton"), "locale": "br_FR.UTF-8" } )
