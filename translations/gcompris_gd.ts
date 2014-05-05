@@ -59,7 +59,7 @@ Sa gheama seo, tha na cairtean a’ falach an dà thaobh aig àireamhan air an c
     <message>
         <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="18" />
         <source />
-        <translation type="unfinished" />
+        <translation />
     </message>
     <message>
         <location filename="../src/activities/gletters/ActivityInfo.qml" line="9" />
@@ -79,6 +79,7 @@ Sa gheama seo, tha na cairtean a’ falach an dà thaobh aig àireamhan air an c
     </message>
     <message>
         <location filename="../src/activities/gletters/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="12" />
         <source>Keyboard manipulation</source>
         <translation>Cleachdadh a’ mheur-chlàir
 
@@ -104,29 +105,24 @@ Mur obraich sin, tadhail air www.iGaidhlig.net airson barrachd fiosrachaidh ’s
         <translation>Cleachd toirt air falbh gus am bi gach cairt air falbh.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="12" />
         <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="12" />
         <source>Addition and subtraction</source>
         <translation>Cur ri chèile is toirt air falbh</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="13" />
         <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="13" />
         <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="13" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found all the operations, you've won the game! :)</source>
         <translation>Chì thu cairtean, ach chan fhaic thu na tha air an taobh eile dhiubh. Falaichidh gach cairt obrachadh no a fhreagairt.
 
 Sa gheama seo, ’s e an dà phàirt aig obrachadh a dh’fhalaicheas na cairtean. Feumaidh tu an dà phàirt aig obrachadh a lorg is an cur còmhla. Briog air cairt gus faighinn a-mach dè an àireamh a dh’fhalaicheas i is an uair sin feuch an lorg thu an cairt eile a fhreagras dhi gus obrachadh slàn a dhèanamh. Chan urrainn dhut car a thoirt ach air dà chairt aig an aon àm, mar sin feumaidh tu cur nad chuimhne far a bheil na h-àireamhan gam falach. An uair sin, ’s urrainn dhut an leth eile a lorg gus am maidseadh. Tha thu a’ dèanamh an obair aig an t-samhla co-ionnanachd is feumaidh tu na h-àireamhan a chur còmhla ach am bi an dà thaobh co-ionnan. Nuair a nì thu seo, thèid an dà chairt a-mach à sealladh! Nuair a bhios a h-uile cairt air dol a-mach à sealladh is tu air a h-uile obrachadh a lorg, buannaichidh tu an geama! :)</translation>
-    </message>
-    <message>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="16" />
-        <source />
-        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="9" />
@@ -139,18 +135,18 @@ Sa gheama seo, ’s e an dà phàirt aig obrachadh a dh’fhalaicheas na cairtea
         <translation>Briog leis an luchag gus an raon a shuathadh is an cùlaibh a nochdadh</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="11" />
         <location filename="../src/activities/erase/ActivityInfo.qml" line="11" />
         <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="11" />
         <source>Motor-coordination</source>
         <translation>Co-ghluasad</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/erase/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="12" />
         <location filename="../src/activities/memory/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/erase/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="12" />
         <source>Mouse-manipulation</source>
         <translation>Cleachdadh na luchaige</translation>
     </message>
@@ -160,19 +156,14 @@ Sa gheama seo, ’s e an dà phàirt aig obrachadh a dh’fhalaicheas na cairtea
         <translation>Briog leis an luchag air na ceart-cheàrnaich gus an tèid na h-uile bloca à sealladh.</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="14" />
         <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="14" />
         <source>Animal pictures come from the Animal Photography Page of Ralf Schmode (http://schmode.net/). Ralf has kindly permitted GCompris to include his pictures. Thanks a lot, Ralf.</source>
         <translation>Thàinig dealbhan nam beathaichean o dhuilleag dealbhan bheathaichean aig Ralf Schmode (http://schmode.net/). Thug Ralf còir cead dha GCompris gus na dealbhan aige a chleachdadh. A Ralf, tha sinn fada nad chomain.</translation>
     </message>
     <message>
         <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="10" />
         <source>missing-letter activity</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="11" />
-        <source />
         <translation type="unfinished" />
     </message>
     <message>
@@ -189,11 +180,6 @@ Sa gheama seo, ’s e an dà phàirt aig obrachadh a dh’fhalaicheas na cairtea
         <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="14" />
         <source>An object is displayed in the main area, and an incomplete word is printed under the picture. Select the missing letter to complete the word.</source>
         <translation>Chì thu nì air a’ phrìomh raon is facal neo-choileanta fon dealbh. Tagh an litir a tha a dhìth gus am facal a dhèanamh coileanta.</translation>
-    </message>
-    <message>
-        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="15" />
-        <source />
-        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../src/activities/erase/ActivityInfo.qml" line="9" />
@@ -231,8 +217,8 @@ Sa gheama seo, ’s e an dà phàirt aig obrachadh a dh’fhalaicheas na cairtea
         <translation>Cleas trèanadh loidig</translation>
     </message>
     <message>
-        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="12" />
         <location filename="../src/activities/hexagon/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="12" />
         <source>Move and click the mouse</source>
         <translation>Gluais is briog leis an luchag</translation>
     </message>
@@ -242,19 +228,14 @@ Sa gheama seo, ’s e an dà phàirt aig obrachadh a dh’fhalaicheas na cairtea
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="14" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
         <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="9" />
         <source>Practice the addition operation</source>
         <translation>Cleachd cur ri chèile</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="10" />
         <source>Answer some algebra questions</source>
         <translation>Freagair ceistean ailseabra</translation>
     </message>
@@ -271,11 +252,6 @@ Sa gheama seo, ’s e an dà phàirt aig obrachadh a dh’fhalaicheas na cairtea
     <message>
         <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="13" />
         <source>An addition of two numbers is displayed. At the right of the equals sign, give the answer, the sum. If the answer is correct, the next question will be displayed. If not, you can try again to give the correct answer. Use the backspace key to erase and change your answer.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="14" />
-        <source />
         <translation type="unfinished" />
     </message>
     <message>
@@ -351,38 +327,8 @@ Sa gheama seo, ’s e an dà phàirt aig obrachadh a dh’fhalaicheas na cairtea
         <translation>Iomadachadh</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="16" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
         <location filename="../src/activities/template/ActivityInfo.qml" line="9" />
         <source>template activity</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/template/ActivityInfo.qml" line="10" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/template/ActivityInfo.qml" line="11" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/template/ActivityInfo.qml" line="12" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/template/ActivityInfo.qml" line="13" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/template/ActivityInfo.qml" line="14" />
-        <source />
         <translation type="unfinished" />
     </message>
     <message>
@@ -435,20 +381,20 @@ Sa gheama seo, ’s e an dà phàirt aig obrachadh a dh’fhalaicheas na cairtea
         <translation>Briog air litir bheag</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="10" />
         <source>Listen to a letter and click on the right one</source>
         <translation>Èist ri litir is briog air an tè cheart</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="11" />
         <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="11" />
         <source>Letter-name recognition</source>
         <translation>Aithneachadh ainmean nan litrichean</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="12" />
         <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="12" />
         <source>Visual letter-recognition. Can move the mouse.</source>
         <translation>Aithnichidh tu na litrichean a chì thu. Tha thu comasach air an luchag a ghluasad.
 
@@ -459,8 +405,8 @@ Mar a gheibh thu na stràcan:
 Mur obraich sin, tadhail air www.iGaidhlig.net airson barrachd fiosrachaidh ’s taic.</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="13" />
         <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="13" />
         <source>A letter is spoken. Click on the matching letter in the main area. You can listen to the letter again, by clicking on the mouth icon in the bottom box.</source>
         <translation>Cluinnidh tu litir. Briog air an litir co-ionnan sa phrìomh raon. Faodaidh tu èisteachd ris an litir a-rithist ’s tu a’ briogadh air ìomhaigheag beòil sa bhogsa aig a’ bharr.</translation>
     </message>
@@ -478,11 +424,6 @@ Mur obraich sin, tadhail air www.iGaidhlig.net airson barrachd fiosrachaidh ’s
         <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="11" />
         <source>Practise addition, subtraction, until all the cards are gone.</source>
         <translation>Cleachd cur ri chèile is toirt air falbh gus am bi a h-uile cairt air falbh.</translation>
-    </message>
-    <message>
-        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="16" />
-        <source />
-        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../src/activities/planegame/ActivityInfo.qml" line="29" />
@@ -527,23 +468,8 @@ Mur obraich sin, tadhail air www.iGaidhlig.net airson barrachd fiosrachaidh ’s
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/penalty/ActivityInfo.qml" line="11" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/penalty/ActivityInfo.qml" line="12" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
         <location filename="../src/activities/penalty/ActivityInfo.qml" line="13" />
         <source>Double clic quickly with the mousse to kick the ball and put the goal.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/penalty/ActivityInfo.qml" line="14" />
-        <source />
         <translation type="unfinished" />
     </message>
     <message>
@@ -639,19 +565,14 @@ to make the ball go in a straight line.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="14" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
         <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="9" />
         <source>Division memory game</source>
         <translation>Geama cuimhne roinnidh</translation>
     </message>
     <message>
+        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="10" />
         <source>Turn the cards over to find a matching operation, until all the cards are gone.</source>
         <translation>Thoir car air dà cairt gus an obrachadh a lorg a nì seise gus am bi a h-uile cairt air falbh.</translation>
     </message>
@@ -664,11 +585,6 @@ to make the ball go in a straight line.</source>
         <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="12" />
         <source>Division</source>
         <translation>Roinneadh</translation>
-    </message>
-    <message>
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="16" />
-        <source />
-        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../src/activities/hexagon/ActivityInfo.qml" line="9" />
@@ -769,11 +685,6 @@ Shortcuts:
         <translation>Iomadachadh, roinneadh</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="16" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
         <location filename="../src/activities/clickgame/ActivityInfo.qml" line="9" />
         <source>Click On Me</source>
         <translation>Briog orm</translation>
@@ -859,11 +770,6 @@ Shortcuts:
         <translation>Cur ris, toirt air falbh, iomadachadh is roinneadh</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="16" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
         <location filename="../src/activities/colors/ActivityInfo.qml" line="9" />
         <source>Colors</source>
         <translation>Dathan</translation>
@@ -913,6 +819,185 @@ Shortcuts:
         <source>Bruno Coudoin (bruno.coudoin@gcompris.net),Mathieu Ignacio (mignacio@april.org), JB BUTET &lt;ashashiwa@gmail.com&gt;</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="9" />
+        <source>Mixing colors of light</source>
+        <translation>A' measgachadh dathan solais</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="10" />
+        <source>Understanding mixing of colors of light.</source>
+        <translation>A' tuigsinn measgachadh dathan an t-solais.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="11" />
+        <source>Mix the primary colors to match to the given color.</source>
+        <translation>Meagaich na prìomh dhathan gus an dath a chaidh a thoirt seachad fhaighinn.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="13" />
+        <source>The activity deals with mixing primary colors of light (additive mixing).
+
+In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="16" />
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="17" />
+        <source>Images from http://openclipart.org</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="9" />
+        <source>Maze</source>
+        <translation>Cuartan</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="10" />
+        <source>Find your way out of the maze</source>
+        <translation>Faigh lorg air an t-slighe a-mach às a' chuartan</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="11" />
+        <source>Help Tux get out of this maze.</source>
+        <translation>Thoir cobhair dha Tux ach am faigh e a-mach às a' chuartan seo.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="12" />
+        <source>Can use the keyboard arrow to move an object.</source>
+        <translation>Tha cleachdadh na h-iuchrach saighde agad gus nì a ghluasad.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="13" />
+        <source>Use the keyboard arrows to move Tux up to the door.
+
+At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
+
+For larger labyrinths, there is a special walking mode, called "run-fast-mode". If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
+
+You can see whether this mode is enabled or not, by looking at Tux's feet: If Tux is barefooted, "run-fast-mode" is disabled. And if he wears red sport shoes, "run-fast-mode" is enabled.
+
+From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the "barefoot / sportshoe"-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="9" />
+        <source>Maze relative</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="10" />
+        <source>Find your way out of the maze (Move is relative)</source>
+        <translation>Faigh lorg air an t-slighe a-mach às a' chuartan (Tha gluasad dàimheach)</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="13" />
+        <source>Use the keyboard arrows to move Tux up to the door. In this maze, the move is relative (first person). Use the up arrow to go forward. The other arrows let you turn Tux in another direction.
+
+At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
+
+For larger labyrinths, there is a special walking mode, called "run-fast-mode". If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
+
+You can see whether this mode is enabled or not, by looking at Tux's feet: If Tux is barefooted, "run-fast-mode" is disabled. And if he wears red sport shoes, "run-fast-mode" is enabled.
+
+From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the "barefoot / sportshoe"-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="9" />
+        <source>Mixing color of paint</source>
+        <translation>A' measgachadh dathan peant</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="10" />
+        <source>To understand color mixing.</source>
+        <translation>Gus measgachadh dhathan a thuigsinn.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="11" />
+        <source>Mix the primary colors to match to the given color</source>
+        <translation>Meagaich na prìomh dhathan gus an dath a chaidh a thoirt seachad fhaighinn</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="13" />
+        <source>
+The activity deals with mixing primary colors of paint (subtractive mixing).
+
+In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="9" />
+        <source>Falling Words</source>
+        <translation>Faclan a' tuiteam</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="10" />
+        <source>Type the falling words before they reach the ground</source>
+        <translation>Sgrìobh na faclan a thuiteas mus ruig iad an làr</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="11" />
+        <source>Keyboard training</source>
+        <translation>Cleachdadh a' mheur-chlàir</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="13" />
+        <source>Type the complete word as it falls, before it reaches the ground</source>
+        <translation>Sgrìobh am facal gu lèir fhad 's a tha e a' tuiteam is mus ruig e an làr</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="9" />
+        <source>Enumerate</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="10" />
+        <source>Count the elements</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="11" />
+        <source>Reflexion</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="12" />
+        <source>Mouse-Manipulation</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="13" />
+        <source>Move the elements and arrange them in order to count them properly</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="9" />
+        <source>Maze invisible</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="10" />
+        <source>Find your way out of the invisible maze</source>
+        <translation>Faigh lorg air an t-slighe a-mach às a' chuartan do-fhaicsinneach</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="13" />
+        <source>Use the keyboard arrows to move Tux up to the door. Use the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
+
+At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
+
+For larger labyrinths, there is a special walking mode, called "run-fast-mode". If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
+
+You can see whether this mode is enabled or not, by looking at Tux's feet: If Tux is barefooted, "run-fast-mode" is disabled. And if he wears red sport shoes, "run-fast-mode" is enabled.
+
+From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the "barefoot / sportshoe"-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>AlphabetSequence</name>
@@ -932,15 +1017,95 @@ Shortcuts:
 <context>
     <name>Ballcatch</name>
     <message>
-        <location filename="../src/activities/ballcatch/Ballcatch.qml" line="211" />
+        <location filename="../src/activities/ballcatch/Ballcatch.qml" line="215" />
         <source>Tap both hands at the same time,
 to make the ball go in a straight line.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/ballcatch/Ballcatch.qml" line="213" />
+        <location filename="../src/activities/ballcatch/Ballcatch.qml" line="217" />
         <source>Press left and right arrow keys at the same time,
 to make the ball go in a straight line.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>ColorMix</name>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="95" />
+        <source>Match the color</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="190" />
+        <source>Not enough red.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="192" />
+        <source>Too much red.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="195" />
+        <source>Not enough green.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="197" />
+        <source>Too much green.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="200" />
+        <source>Not enough blue.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="202" />
+        <source>Too much blue.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="206" />
+        <source>Not enough magenta.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="208" />
+        <source>Too much magenta.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="211" />
+        <source>Not enough yellow.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="213" />
+        <source>Too much yellow.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="216" />
+        <source>Not enough cyan.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="218" />
+        <source>Too much cyan.
+</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -965,137 +1130,137 @@ to make the ball go in a straight line.</source>
 <context>
     <name>DialogConfig</name>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="215" />
+        <location filename="../src/core/DialogConfig.qml" line="218" />
         <source>English (Great Britain)</source>
         <translation>Beurla (na Breatainne Mòire)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="216" />
+        <location filename="../src/core/DialogConfig.qml" line="219" />
         <source>English (United States)</source>
         <translation>Beurla (nan Stàitean Aonaichte)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="217" />
+        <location filename="../src/core/DialogConfig.qml" line="220" />
         <source>Bulgarian</source>
         <translation>Bulgairis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="218" />
+        <location filename="../src/core/DialogConfig.qml" line="221" />
         <source>Breton</source>
         <translation>Breatnais</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="219" />
+        <location filename="../src/core/DialogConfig.qml" line="222" />
         <source>Czech Republic</source>
         <translation>Poblachd na Seice</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="220" />
+        <location filename="../src/core/DialogConfig.qml" line="223" />
         <source>Danish</source>
         <translation>Danmhairgis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="221" />
+        <location filename="../src/core/DialogConfig.qml" line="224" />
         <source>German</source>
         <translation>Gearmailtis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="222" />
+        <location filename="../src/core/DialogConfig.qml" line="225" />
         <source>Greek</source>
         <translation>Greugais</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="223" />
+        <location filename="../src/core/DialogConfig.qml" line="226" />
         <source>Spanish</source>
         <translation>Spàinntis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="224" />
+        <location filename="../src/core/DialogConfig.qml" line="227" />
         <source>French</source>
         <translation>Fraingis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="225" />
+        <location filename="../src/core/DialogConfig.qml" line="228" />
         <source>Scottish Gaelic</source>
         <translation>Gàidhlig</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="226" />
+        <location filename="../src/core/DialogConfig.qml" line="229" />
         <source>Galician</source>
         <translation>Gailìsis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="227" />
+        <location filename="../src/core/DialogConfig.qml" line="230" />
         <source>Hungarian</source>
         <translation>Ungairis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="228" />
+        <location filename="../src/core/DialogConfig.qml" line="231" />
         <source>Lithuanian</source>
         <translation>Liotuainis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="229" />
+        <location filename="../src/core/DialogConfig.qml" line="232" />
         <source>Latvian</source>
         <translation>Laitbheis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="230" />
+        <location filename="../src/core/DialogConfig.qml" line="233" />
         <source>Dutch</source>
         <translation>Duitsis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="231" />
+        <location filename="../src/core/DialogConfig.qml" line="234" />
         <source>Norwegian Nynorsk</source>
         <translation>Nynorsk na Nirribhidh</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="232" />
+        <location filename="../src/core/DialogConfig.qml" line="235" />
         <source>Polish</source>
         <translation>Pòlainnis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="233" />
+        <location filename="../src/core/DialogConfig.qml" line="236" />
         <source>Russian</source>
         <translation>Ruisis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="234" />
+        <location filename="../src/core/DialogConfig.qml" line="237" />
         <source>Portuguese (Brazil)</source>
         <translation>Portagailis (Braisil)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="235" />
+        <location filename="../src/core/DialogConfig.qml" line="238" />
         <source>Slovak</source>
         <translation>Slòbhacais</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="236" />
+        <location filename="../src/core/DialogConfig.qml" line="239" />
         <source>Slovenian</source>
         <translation>Slòbhainis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="237" />
+        <location filename="../src/core/DialogConfig.qml" line="240" />
         <source>Montenegrin</source>
         <translation>Monadh Neagrach</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="238" />
+        <location filename="../src/core/DialogConfig.qml" line="241" />
         <source>Swedish</source>
         <translation>Suainis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="239" />
+        <location filename="../src/core/DialogConfig.qml" line="242" />
         <source>Tamil</source>
         <translation>Taimilis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="240" />
+        <location filename="../src/core/DialogConfig.qml" line="243" />
         <source>Thai</source>
         <translation>Cànan nan Tàidh</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="241" />
+        <location filename="../src/core/DialogConfig.qml" line="244" />
         <source>Chinese (Traditional)</source>
         <translation>Sìnis (Thradaiseanta)</translation>
     </message>
@@ -1103,14 +1268,23 @@ to make the ball go in a straight line.</source>
 <context>
     <name>Leftright</name>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="141" />
+        <location filename="../src/activities/leftright/Leftright.qml" line="142" />
         <source>Left hand</source>
         <translation>An làmh chlì</translation>
     </message>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="152" />
+        <location filename="../src/activities/leftright/Leftright.qml" line="153" />
         <source>Right hand</source>
         <translation>An làmh dheas</translation>
+    </message>
+</context>
+<context>
+    <name>Maze</name>
+    <message>
+        <location filename="../src/activities/maze/Maze.qml" line="348" />
+        <source>Look at your position, then switch back to invisible mode to continue your moves</source>
+        <translation>Thoir sùil air an ionad agad is an uairsin gearr leum air ais dhan mhodh do-fhaicsinneach
+gus leantainn air na gluasadan agad</translation>
     </message>
 </context>
 <context>
@@ -1139,7 +1313,7 @@ to make the ball go in a straight line.</source>
 <context>
     <name>ReadyButton</name>
     <message>
-        <location filename="../src/core/ReadyButton.qml" line="48" />
+        <location filename="../src/core/ReadyButton.qml" line="50" />
         <source>I am Ready!</source>
         <translation type="unfinished" />
     </message>

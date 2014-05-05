@@ -59,7 +59,7 @@ En este juego, estas cartas esconden dos partes de una suma. Necesitas encontrar
     <message>
         <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="18" />
         <source />
-        <translation type="unfinished" />
+        <translation />
     </message>
     <message>
         <location filename="../src/activities/gletters/ActivityInfo.qml" line="9" />
@@ -79,6 +79,7 @@ En este juego, estas cartas esconden dos partes de una suma. Necesitas encontrar
     </message>
     <message>
         <location filename="../src/activities/gletters/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="12" />
         <source>Keyboard manipulation</source>
         <translation>Manipulación del teclado</translation>
     </message>
@@ -98,29 +99,24 @@ En este juego, estas cartas esconden dos partes de una suma. Necesitas encontrar
         <translation>Practica la resta hasta que todas las cartas desaparezcan.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="12" />
         <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="12" />
         <source>Addition and subtraction</source>
         <translation>Suma y resta</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="13" />
         <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="13" />
         <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="13" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found all the operations, you've won the game! :)</source>
         <translation>Puedes ver algunas cartas, pero no puedes ver lo que hay al otro lado de ellas. Cada carta esconde una operación, o su respuesta.
 
 En este juego, estas cartas están escondiendo dos partes de una operación. Necesitas encontrar las dos partes de la operación, y juntarlas de nuevo. Pulsa en una carta para ver el número que esconde, luego intenta encontrar la otra carta que va con ella, para completar la operación. Sólo puedes dar la vuelta a dos cartas a la vez, por lo que tienes que recordar dónde se esconden los números, después puedes emparejarlos cuando encuentres su otra mitad. Estás haciendo el trabajo del signo igual, y los números necesitan que los juntes para hacer una igualdad correcta. Cuando lo hagas, ¡las cartas desaparecerán! Cuando las hagas desaparecer a todas, hayas encontrado todas las operaciones, ¡habrás ganado el juego! :)</translation>
-    </message>
-    <message>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="16" />
-        <source />
-        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="9" />
@@ -133,18 +129,18 @@ En este juego, estas cartas están escondiendo dos partes de una operación. Nec
         <translation>Pulsa con el ratón para borrar el área y descubrir el fondo</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="11" />
         <location filename="../src/activities/erase/ActivityInfo.qml" line="11" />
         <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="11" />
         <source>Motor-coordination</source>
         <translation>Coordinación motriz</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/erase/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="12" />
         <location filename="../src/activities/memory/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/erase/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="12" />
         <source>Mouse-manipulation</source>
         <translation>Manipulación del ratón</translation>
     </message>
@@ -154,19 +150,14 @@ En este juego, estas cartas están escondiendo dos partes de una operación. Nec
         <translation>Pulsa en los rectángulos con el ratón hasta que desaparezcan todos los bloques.</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="14" />
         <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="14" />
         <source>Animal pictures come from the Animal Photography Page of Ralf Schmode (http://schmode.net/). Ralf has kindly permitted GCompris to include his pictures. Thanks a lot, Ralf.</source>
         <translation>Las fotografías de animales provienen de la Página de Fotografía Animal de Ralf Schmode (http://schomde.net/) Ralf ha permitido amablemente a GCompris incluir sus fotografías. Muchas gracias Ralf.</translation>
     </message>
     <message>
         <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="10" />
         <source>missing-letter activity</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="11" />
-        <source />
         <translation type="unfinished" />
     </message>
     <message>
@@ -183,11 +174,6 @@ En este juego, estas cartas están escondiendo dos partes de una operación. Nec
         <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="14" />
         <source>An object is displayed in the main area, and an incomplete word is printed under the picture. Select the missing letter to complete the word.</source>
         <translation>Se muestra un objeto en el área principal. Debajo de la imagen se muestra una palabra incompleta. Selecciona la letra que falta para completar la palabra.</translation>
-    </message>
-    <message>
-        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="15" />
-        <source />
-        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../src/activities/erase/ActivityInfo.qml" line="9" />
@@ -225,8 +211,8 @@ En este juego, estas cartas están escondiendo dos partes de una operación. Nec
         <translation>Actividad de entrenamiento de lógica</translation>
     </message>
     <message>
-        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="12" />
         <location filename="../src/activities/hexagon/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="12" />
         <source>Move and click the mouse</source>
         <translation>Mueve y pulsa el ratón</translation>
     </message>
@@ -236,19 +222,14 @@ En este juego, estas cartas están escondiendo dos partes de una operación. Nec
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="14" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
         <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="9" />
         <source>Practice the addition operation</source>
         <translation>Practica la operación de suma</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="10" />
         <source>Answer some algebra questions</source>
         <translation>Contesta algunas preguntas de álgebra</translation>
     </message>
@@ -265,11 +246,6 @@ En este juego, estas cartas están escondiendo dos partes de una operación. Nec
     <message>
         <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="13" />
         <source>An addition of two numbers is displayed. At the right of the equals sign, give the answer, the sum. If the answer is correct, the next question will be displayed. If not, you can try again to give the correct answer. Use the backspace key to erase and change your answer.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="14" />
-        <source />
         <translation type="unfinished" />
     </message>
     <message>
@@ -345,38 +321,8 @@ En este juego, estas cartas están escondiendo dos partes de una operación. Nec
         <translation>Multiplicación</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="16" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
         <location filename="../src/activities/template/ActivityInfo.qml" line="9" />
         <source>template activity</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/template/ActivityInfo.qml" line="10" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/template/ActivityInfo.qml" line="11" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/template/ActivityInfo.qml" line="12" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/template/ActivityInfo.qml" line="13" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/template/ActivityInfo.qml" line="14" />
-        <source />
         <translation type="unfinished" />
     </message>
     <message>
@@ -429,26 +375,26 @@ En este juego, estas cartas están escondiendo dos partes de una operación. Nec
         <translation>Pulsa sobre una letra minúscula</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="10" />
         <source>Listen to a letter and click on the right one</source>
         <translation>Escucha una letra y pulsa en la correcta</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="11" />
         <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="11" />
         <source>Letter-name recognition</source>
         <translation>Reconocimiento de nombres de letras</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="12" />
         <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="12" />
         <source>Visual letter-recognition. Can move the mouse.</source>
         <translation>Reconocimiento visual de letras. Puede mover el ratón.</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="13" />
         <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="13" />
         <source>A letter is spoken. Click on the matching letter in the main area. You can listen to the letter again, by clicking on the mouth icon in the bottom box.</source>
         <translation>Se pronuncia una letra. Pulse sobre la letra correspondiente en el área principal. Puedes oír nuevamente la letra pulsando sobre el icono con la boca en marco horizontal inferior.</translation>
     </message>
@@ -466,11 +412,6 @@ En este juego, estas cartas están escondiendo dos partes de una operación. Nec
         <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="11" />
         <source>Practise addition, subtraction, until all the cards are gone.</source>
         <translation>Practica la suma, resta, hasta que desaparezcan todas las cartas.</translation>
-    </message>
-    <message>
-        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="16" />
-        <source />
-        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../src/activities/planegame/ActivityInfo.qml" line="29" />
@@ -515,23 +456,8 @@ En este juego, estas cartas están escondiendo dos partes de una operación. Nec
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/penalty/ActivityInfo.qml" line="11" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/penalty/ActivityInfo.qml" line="12" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
         <location filename="../src/activities/penalty/ActivityInfo.qml" line="13" />
         <source>Double clic quickly with the mousse to kick the ball and put the goal.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/penalty/ActivityInfo.qml" line="14" />
-        <source />
         <translation type="unfinished" />
     </message>
     <message>
@@ -627,19 +553,14 @@ to make the ball go in a straight line.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="14" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
         <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="9" />
         <source>Division memory game</source>
         <translation>Juego de memoria de la división</translation>
     </message>
     <message>
+        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="10" />
         <source>Turn the cards over to find a matching operation, until all the cards are gone.</source>
         <translation>Da la vuelta a las cartas para encontrar una operación que case hasta que todas las cartas desaparezcan.</translation>
     </message>
@@ -652,11 +573,6 @@ to make the ball go in a straight line.</source>
         <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="12" />
         <source>Division</source>
         <translation>División</translation>
-    </message>
-    <message>
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="16" />
-        <source />
-        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../src/activities/hexagon/ActivityInfo.qml" line="9" />
@@ -757,11 +673,6 @@ Shortcuts:
         <translation>Multiplicación, división</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="16" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
         <location filename="../src/activities/clickgame/ActivityInfo.qml" line="9" />
         <source>Click On Me</source>
         <translation>Pulsa sobre mí</translation>
@@ -847,11 +758,6 @@ Shortcuts:
         <translation>Suma, resta, multiplicación y división</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="16" />
-        <source />
-        <translation type="unfinished" />
-    </message>
-    <message>
         <location filename="../src/activities/colors/ActivityInfo.qml" line="9" />
         <source>Colors</source>
         <translation>Colores</translation>
@@ -901,6 +807,185 @@ Shortcuts:
         <source>Bruno Coudoin (bruno.coudoin@gcompris.net),Mathieu Ignacio (mignacio@april.org), JB BUTET &lt;ashashiwa@gmail.com&gt;</source>
         <translation type="unfinished" />
     </message>
+    <message>
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="9" />
+        <source>Mixing colors of light</source>
+        <translation>Mezclando colores de luz</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="10" />
+        <source>Understanding mixing of colors of light.</source>
+        <translation>Entendiendo la mezcla de colores de luz</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="11" />
+        <source>Mix the primary colors to match to the given color.</source>
+        <translation>Mezcla los colores primarios para que coincidan con el color dado.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="13" />
+        <source>The activity deals with mixing primary colors of light (additive mixing).
+
+In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="16" />
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="17" />
+        <source>Images from http://openclipart.org</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="9" />
+        <source>Maze</source>
+        <translation>Laberinto</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="10" />
+        <source>Find your way out of the maze</source>
+        <translation>Encuentra tu salida del laberinto</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="11" />
+        <source>Help Tux get out of this maze.</source>
+        <translation>Ayuda a Tux a salir de este laberinto.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="12" />
+        <source>Can use the keyboard arrow to move an object.</source>
+        <translation>Puedes usar las flechas del teclado para mover un objeto.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="13" />
+        <source>Use the keyboard arrows to move Tux up to the door.
+
+At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
+
+For larger labyrinths, there is a special walking mode, called "run-fast-mode". If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
+
+You can see whether this mode is enabled or not, by looking at Tux's feet: If Tux is barefooted, "run-fast-mode" is disabled. And if he wears red sport shoes, "run-fast-mode" is enabled.
+
+From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the "barefoot / sportshoe"-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="9" />
+        <source>Maze relative</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="10" />
+        <source>Find your way out of the maze (Move is relative)</source>
+        <translation>Encuentra tu salida del laberinto (el movimiento es relativo)</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="13" />
+        <source>Use the keyboard arrows to move Tux up to the door. In this maze, the move is relative (first person). Use the up arrow to go forward. The other arrows let you turn Tux in another direction.
+
+At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
+
+For larger labyrinths, there is a special walking mode, called "run-fast-mode". If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
+
+You can see whether this mode is enabled or not, by looking at Tux's feet: If Tux is barefooted, "run-fast-mode" is disabled. And if he wears red sport shoes, "run-fast-mode" is enabled.
+
+From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the "barefoot / sportshoe"-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="9" />
+        <source>Mixing color of paint</source>
+        <translation>Mezclando colores de pintura</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="10" />
+        <source>To understand color mixing.</source>
+        <translation>Para entender la mezcla de colores.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="11" />
+        <source>Mix the primary colors to match to the given color</source>
+        <translation>Mezcla los colores primarios para que coincidan con el color dado</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="13" />
+        <source>
+The activity deals with mixing primary colors of paint (subtractive mixing).
+
+In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="9" />
+        <source>Falling Words</source>
+        <translation>Palabras que caen</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="10" />
+        <source>Type the falling words before they reach the ground</source>
+        <translation>Teclea las palabras que caen antes de que lleguen al suelo</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="11" />
+        <source>Keyboard training</source>
+        <translation>Entrenamiento con el teclado</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="13" />
+        <source>Type the complete word as it falls, before it reaches the ground</source>
+        <translation>Teclea la palabra completa mientras cae, antes de que llegue al suelo</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="9" />
+        <source>Enumerate</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="10" />
+        <source>Count the elements</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="11" />
+        <source>Reflexion</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="12" />
+        <source>Mouse-Manipulation</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="13" />
+        <source>Move the elements and arrange them in order to count them properly</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="9" />
+        <source>Maze invisible</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="10" />
+        <source>Find your way out of the invisible maze</source>
+        <translation>Encuentra tu salida del laberinto invisible</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="13" />
+        <source>Use the keyboard arrows to move Tux up to the door. Use the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
+
+At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
+
+For larger labyrinths, there is a special walking mode, called "run-fast-mode". If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
+
+You can see whether this mode is enabled or not, by looking at Tux's feet: If Tux is barefooted, "run-fast-mode" is disabled. And if he wears red sport shoes, "run-fast-mode" is enabled.
+
+From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the "barefoot / sportshoe"-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
+        <translation type="unfinished" />
+    </message>
 </context>
 <context>
     <name>AlphabetSequence</name>
@@ -920,15 +1005,95 @@ Shortcuts:
 <context>
     <name>Ballcatch</name>
     <message>
-        <location filename="../src/activities/ballcatch/Ballcatch.qml" line="211" />
+        <location filename="../src/activities/ballcatch/Ballcatch.qml" line="215" />
         <source>Tap both hands at the same time,
 to make the ball go in a straight line.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/ballcatch/Ballcatch.qml" line="213" />
+        <location filename="../src/activities/ballcatch/Ballcatch.qml" line="217" />
         <source>Press left and right arrow keys at the same time,
 to make the ball go in a straight line.</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>ColorMix</name>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="95" />
+        <source>Match the color</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="190" />
+        <source>Not enough red.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="192" />
+        <source>Too much red.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="195" />
+        <source>Not enough green.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="197" />
+        <source>Too much green.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="200" />
+        <source>Not enough blue.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="202" />
+        <source>Too much blue.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="206" />
+        <source>Not enough magenta.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="208" />
+        <source>Too much magenta.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="211" />
+        <source>Not enough yellow.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="213" />
+        <source>Too much yellow.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="216" />
+        <source>Not enough cyan.
+</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="218" />
+        <source>Too much cyan.
+</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -953,137 +1118,137 @@ to make the ball go in a straight line.</source>
 <context>
     <name>DialogConfig</name>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="215" />
+        <location filename="../src/core/DialogConfig.qml" line="218" />
         <source>English (Great Britain)</source>
         <translation>Inglés (Gran Bretaña)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="216" />
+        <location filename="../src/core/DialogConfig.qml" line="219" />
         <source>English (United States)</source>
         <translation>Inglés (Estados Unidos)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="217" />
+        <location filename="../src/core/DialogConfig.qml" line="220" />
         <source>Bulgarian</source>
         <translation>Búlgaro</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="218" />
+        <location filename="../src/core/DialogConfig.qml" line="221" />
         <source>Breton</source>
         <translation>Bretón</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="219" />
+        <location filename="../src/core/DialogConfig.qml" line="222" />
         <source>Czech Republic</source>
         <translation>República Checa</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="220" />
+        <location filename="../src/core/DialogConfig.qml" line="223" />
         <source>Danish</source>
         <translation>Danés</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="221" />
+        <location filename="../src/core/DialogConfig.qml" line="224" />
         <source>German</source>
         <translation>Alemán</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="222" />
+        <location filename="../src/core/DialogConfig.qml" line="225" />
         <source>Greek</source>
         <translation>Griego</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="223" />
+        <location filename="../src/core/DialogConfig.qml" line="226" />
         <source>Spanish</source>
         <translation>Español</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="224" />
+        <location filename="../src/core/DialogConfig.qml" line="227" />
         <source>French</source>
         <translation>Francés</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="225" />
+        <location filename="../src/core/DialogConfig.qml" line="228" />
         <source>Scottish Gaelic</source>
         <translation>Gaélico escocés</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="226" />
+        <location filename="../src/core/DialogConfig.qml" line="229" />
         <source>Galician</source>
         <translation>Galicia</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="227" />
+        <location filename="../src/core/DialogConfig.qml" line="230" />
         <source>Hungarian</source>
         <translation>Húngaro</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="228" />
+        <location filename="../src/core/DialogConfig.qml" line="231" />
         <source>Lithuanian</source>
         <translation>Lituano</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="229" />
+        <location filename="../src/core/DialogConfig.qml" line="232" />
         <source>Latvian</source>
         <translation>Letón</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="230" />
+        <location filename="../src/core/DialogConfig.qml" line="233" />
         <source>Dutch</source>
         <translation>Holandés</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="231" />
+        <location filename="../src/core/DialogConfig.qml" line="234" />
         <source>Norwegian Nynorsk</source>
         <translation>Noruego Nynorsk</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="232" />
+        <location filename="../src/core/DialogConfig.qml" line="235" />
         <source>Polish</source>
         <translation>Polaco</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="233" />
+        <location filename="../src/core/DialogConfig.qml" line="236" />
         <source>Russian</source>
         <translation>Ruso</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="234" />
+        <location filename="../src/core/DialogConfig.qml" line="237" />
         <source>Portuguese (Brazil)</source>
         <translation>Portugués (Brasil)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="235" />
+        <location filename="../src/core/DialogConfig.qml" line="238" />
         <source>Slovak</source>
         <translation>Eslovaco</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="236" />
+        <location filename="../src/core/DialogConfig.qml" line="239" />
         <source>Slovenian</source>
         <translation>Esloveno</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="237" />
+        <location filename="../src/core/DialogConfig.qml" line="240" />
         <source>Montenegrin</source>
         <translation>Montenegrin</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="238" />
+        <location filename="../src/core/DialogConfig.qml" line="241" />
         <source>Swedish</source>
         <translation>Sueco</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="239" />
+        <location filename="../src/core/DialogConfig.qml" line="242" />
         <source>Tamil</source>
         <translation>Tamil</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="240" />
+        <location filename="../src/core/DialogConfig.qml" line="243" />
         <source>Thai</source>
         <translation>Tailandés</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="241" />
+        <location filename="../src/core/DialogConfig.qml" line="244" />
         <source>Chinese (Traditional)</source>
         <translation>Chino (tradicional)</translation>
     </message>
@@ -1091,14 +1256,22 @@ to make the ball go in a straight line.</source>
 <context>
     <name>Leftright</name>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="141" />
+        <location filename="../src/activities/leftright/Leftright.qml" line="142" />
         <source>Left hand</source>
         <translation>Mano izquierda</translation>
     </message>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="152" />
+        <location filename="../src/activities/leftright/Leftright.qml" line="153" />
         <source>Right hand</source>
         <translation>Mano derecha</translation>
+    </message>
+</context>
+<context>
+    <name>Maze</name>
+    <message>
+        <location filename="../src/activities/maze/Maze.qml" line="348" />
+        <source>Look at your position, then switch back to invisible mode to continue your moves</source>
+        <translation>Mira tu posición, después vuelve a modo invisible para continuar tus movimientos</translation>
     </message>
 </context>
 <context>
@@ -1127,7 +1300,7 @@ to make the ball go in a straight line.</source>
 <context>
     <name>ReadyButton</name>
     <message>
-        <location filename="../src/core/ReadyButton.qml" line="48" />
+        <location filename="../src/core/ReadyButton.qml" line="50" />
         <source>I am Ready!</source>
         <translation type="unfinished" />
     </message>
