@@ -141,26 +141,31 @@ function previousLevel() {
 
 function createBlock(ix, iy, nbx, nby, img) {
     var component = Qt.createComponent("qrc:/gcompris/src/activities/erase/Block.qml");
-    var block = component.createObject(
-                items.background,
-                {
-                    "main": main,
-                    "bar": items.bar,
-                    "ix": ix,
-                    "iy": iy,
-                    "nbx": nbx,
-                    "nby": nby,
-                    "opacity": 0.0,
-                    "source": img,
-                    "type": type
-                });
+    if (component.status === 1 /* Component.Ready */) {
+        var block = component.createObject(
+                    items.background,
+                    {
+                        "main": main,
+                        "bar": items.bar,
+                        "ix": ix,
+                        "iy": iy,
+                        "nbx": nbx,
+                        "nby": nby,
+                        "opacity": 0.0,
+                        "source": img,
+                        "type": type
+                    });
+        block.opacity = 1.0
+        if (block === null) {
+            // Error Handling
+            console.log("Error creating object Block.qml");
+            return block;
+        }
+    } else if (component.status === 3 /* Component.Error */) {
+        console.log("erase: error creating word component: " + component.errorString());
+    } else
+        console.log("erase: error creating word component: " + component.errorString());
 
-    block.opacity = 1.0
-    if (block === null) {
-        // Error Handling
-        console.log("Error creating object");
-    }
-    return block;
 }
 
 function destroyBlocks() {
