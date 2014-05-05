@@ -54,6 +54,7 @@
         <file>resource/bonus/smiley_good.png</file>
         <file>resource/bonus/tux_bad.png</file>
         <file>resource/bonus/tux_good.png</file>
+        <file>resource/arrow.png</file>
         <file>resource/button.svgz</file>
         <file>resource/cancel.svgz</file>
         <file>resource/difficulty1.svgz</file>
