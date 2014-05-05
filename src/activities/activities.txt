@@ -18,6 +18,7 @@ gletters
 hexagon
 instruments
 leftright
+lightsoff
 memory
 memory-math-add
 memory-math-add-minus
