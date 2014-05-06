@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "scalesboard_weight/Scalesboard_weight.qml"
+  name: "scalesboard_weight/ScalesboardWeight.qml"
   difficulty: 4
   icon: "scalesboard_weight/scalesboard_weight.svg"
   author: "Wolfram Sang <wolfram@iswi.org>"

@@ -10,7 +10,11 @@ ballcatch
 clickgame
 click_on_letter
 click_on_letter_up
+clockgame
+color_mix
+color_mix_light
 colors
+enumerate
 erase
 erase_2clic
 erase_clic
@@ -32,7 +36,12 @@ money
 money_back
 money_back_cents
 money_cents
+missing-letter
 mosaic
 numbers-odd-even
 penalty
 planegame
+maze
+mazerelative
+mazeinvisible
+wordsgame

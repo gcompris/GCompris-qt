@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "explore_world_music/Explore_world_music.qml"
+  name: "explore_world_music/ExploreWorldMusic.qml"
   difficulty: 4
   icon: "explore_world_music/explore_world_music.svg"
   author: "Beth Hadley <bethmhadley@gmail.com>"

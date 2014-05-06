@@ -31,15 +31,20 @@ ActivityBase {
     id: activity
     
     property bool uppercaseOnly: false;  // FIXME: this should go in activity settings
+    /* mode of the activity, "letter" (gletters) or "word" (wordsgame):*/
+    property string mode: "letter"
 
     onStart: focus = true
     onStop: {}
     
-    Keys.onPressed: Activity.processKeyPress(event)
+    Keys.onPressed: Activity.processKeyPress(event.text)
     
     pageComponent: Image {
         id: background
-        source: "qrc:/gcompris/src/activities/gletters/resource/scenery_background.png"
+        source: (activity.mode == "letter" ? Activity.glettersUrl : Activity.wordsgameUrl)
+                 + "scenery_background.png"
+        fillMode: Image.PreserveAspectCrop
+
         signal start
         signal stop
         
@@ -56,19 +61,20 @@ ActivityBase {
             property alias bonus: bonus
             property alias wordlist: wordlist
             property alias score: score
+            property alias keyboard: keyboard
             property alias wordDropTimer: wordDropTimer
             property alias flipAudio: flipAudio
             property alias crashAudio: crashAudio
         }
 
-        onStart: { Activity.start(items, uppercaseOnly) }
+        onStart: { Activity.start(items, uppercaseOnly, mode) }
         onStop: { Activity.stop() }
 
         DialogHelp {
             id: dialogHelp
             onClose: home()
         }
-
+        
         Bar {
             id: bar
             content: BarEnumContent { value: help | home | previous | next }
@@ -87,17 +93,41 @@ ActivityBase {
         
         Score {
             id: score
-            
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+
+            anchors.top: parent.top
+            anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.bottom: undefined
+        }
+        
+        VirtualKeyboard {
+            id: keyboard
+            
+            anchors.bottom: parent.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width
+
+            keyHeight: 35 * ApplicationInfo.ratio
+            equalKeyWidth: true
+            
+            onKeypress: Activity.processKeyPress(text)
+            
+            onError: console.log("VirtualKeyboard error: " + msg);
         }
         
         Wordlist {
             id: wordlist
-            defaultFilename: ":/gcompris/src/activities/gletters/resource/default-en.json"
-            filename: ApplicationInfo.getAudioFilePath("gletters/default-de.json");  // FIXME: this should be something like ApplicationInfo.getDataPath() + "gletters/" + "default-" + ApplicationInfo.getCurrentLocale() + ".json" once it is there.
+            defaultFilename: ( activity.mode == "letter" ?
+                               Activity.glettersUrl : Activity.wordsgameUrl )
+                               + "default-en.json"
+            // FIXME: this should be something like
+            // ApplicationInfo.getDataPath() + "gletters/" + "default-" + ApplicationInfo.getCurrentLocale() + ".json"
+            // once it is there.
+            filename: ApplicationInfo.getAudioFilePath(activity.mode == "letter" ?
+                        "gletters/default-en.json" :
+                        "wordsgame/default-en.json");
+
 
             onError: console.log("Gletters: Wordlist error: " + msg);
         }

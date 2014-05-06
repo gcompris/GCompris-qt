@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_sound_tux/Memory_sound_tux.qml"
+  name: "memory_sound_tux/MemorySoundTux.qml"
   difficulty: 2
   icon: "memory_sound_tux/memory_sound_tux.svg"
   author: "Yves Combe <yves@ycombe.net>"

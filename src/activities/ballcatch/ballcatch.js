@@ -61,19 +61,6 @@ var levelProperties = [
             },
         ]
 
-// Lists containing all possible values for the current platform for scanCode
-var supposedRightKeyCode
-var supposedLeftKeyCode
-
-// Real scanCode if found, -1 else
-var rightKeyCode = -2
-var leftKeyCode = -2
-
-/* when the corresponding shift key is pressed, the following boolean pass
-   to true and is reseted at the end of the level */
-var leftPressed = false
-var rightPressed = false
-
 var gameWon = false
 
 // When the timer is finished we set this variable to true to disabled key press
@@ -101,23 +88,23 @@ function stop() {
 }
 
 function leftShiftPressed() {
-    if(!items.deltaPressedTimer.running && !rightPressed) {
+    if(!items.deltaPressedTimer.running && !items.rightPressed) {
         items.leftHand.animate(timerinc)
         items.deltaPressedTimer.start()
     }
 
-    if(rightPressed) {
+    if(items.rightPressed) {
         items.leftHand.animate(timerinc)
         items.background.playSound("brick")
     }
 }
 
 function rightShiftPressed() {
-    if(!items.deltaPressedTimer.running && !leftPressed) {
+    if(!items.deltaPressedTimer.running && !items.leftPressed) {
         items.deltaPressedTimer.start()
         items.rightHand.animate(timerinc)
     }
-    if(leftPressed) {
+    if(items.leftPressed) {
         items.rightHand.animate(timerinc)
         items.background.playSound("brick")
     }
@@ -125,7 +112,7 @@ function rightShiftPressed() {
 
 function endTimer() {
     gameFinished = true
-    gameWon = rightPressed && leftPressed
+    gameWon = items.rightPressed && items.leftPressed
 }
 
 function initLevel() {
@@ -140,8 +127,8 @@ function initLevel() {
 
     items.ball.reinitBall();
 
-    leftPressed = false
-    rightPressed = false
+    items.leftPressed = false
+    items.rightPressed = false
 
     gameWon = false
     gameFinished = false
@@ -168,95 +155,22 @@ function restartLevel() {
     initLevel();
 }
 
-function initKey() {
-    /* You cannot dissociate left shift and right shift easily
-       on Qt so we put all possibilities for scanCode here */
-    switch(GCompris.ApplicationInfo.platform) {
-    case GCompris.ApplicationInfo.Linux: // todo find existing enum for those values?
-        // Do not know if it is the same for all linux ?
-        supposedRightKeyCode = [62];
-        supposedLeftKeyCode = [50];
-        break;
-    case GCompris.ApplicationInfo.Windows:
-        // VK_RSHIFT in WinUser.h is 0xA1, but does not work in my win8...
-        supposedRightKeyCode = [0xA1, 54];
-        // VK_LSHIFT in WinUser.h, but does not work in my win8...
-        supposedLeftKeyCode = [0xA0, 42];
-        break;
-    case GCompris.ApplicationInfo.MacOSX:
-        // keyEvent.nativeScanCode not filled in mac
-    default: // Will it be played with keyboard on mobile/tablet ?
-        supposedRightKeyCode = [-1];
-        supposedLeftKeyCode = [-1];
-    }
-}
-
 function processKey(event) {
-    if(event.key == Qt.Key_Shift && !gameFinished) {
-        // Default values, look for real values
-        if(leftKeyCode == -2 || rightKeyCode == -2) {
-            // Look if it is a left key
-            var isLeft = false;
-            var i = 0;
-            for(i = 0 ; i < supposedLeftKeyCode.length ; ++ i) {
-                if(event.nativeScanCode == supposedLeftKeyCode[i]) {
-                    leftKeyCode = event.nativeScanCode;
-                    isLeft = true;
-                    break;
-                }
-            }
-
-            var isRight = false;
-            if(!isLeft) { // If not left look if it is a right
-                for(i = 0 ; i < supposedRightKeyCode.length ; ++ i) {
-                    if(event.nativeScanCode == supposedRightKeyCode[i]) {
-                        rightKeyCode = event.nativeScanCode;
-                        isRight = true;
-                        break;
-                    }
-                }
-            }
-
-            if(!(isLeft || isRight)) {
-                /*
-             Not existing :(
-             Print a log because if the person is a developer
-             he could give us the values :)
-            */
-                print("You pressed key_shift with nativeScanCode=" +
-                      event.nativeScanCode + " not handled")
-
-                // Randomly put the key in left or right...
-                if(leftKeyCode == -2 && rightKeyCode == -2) {
-                    if(Math.random()%2 == 0)
-                        leftKeyCode = event.nativeScanCode;
-                    else
-                        rightKeyCode = event.nativeScanCode;
-                }
-                else if(leftKeyCode == -2) {
-                    leftKeyCode = event.nativeScanCode;
-                }
-                else {
-                    rightKeyCode = event.nativeScanCode;
-                }
-            }
-        }
-
-        // Look for the key !
-        if(event.nativeScanCode === leftKeyCode) {
+    if(!gameFinished) {
+        if(event.key == Qt.Key_Left) {
             // left
-            if(!leftPressed) {
+            if(!items.leftPressed) {
                 leftShiftPressed();
-                leftPressed = true
+                items.leftPressed = true
             }
         }
-        else {
+        else if(event.key == Qt.Key_Right) {
             // right
-            if(!rightPressed) {
+            if(!items.rightPressed) {
                 rightShiftPressed();
-                rightPressed = true
+                items.rightPressed = true
             }
         }
-        event.accepted = true;
     }
+    event.accepted = true;
 }

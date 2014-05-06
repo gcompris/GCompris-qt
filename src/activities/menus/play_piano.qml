@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "play_piano/Play_piano.qml"
+  name: "play_piano/PlayPiano.qml"
   difficulty: 2
   icon: "play_piano/play_piano.svg"
   author: "Beth Hadley <bethmhadley@gmail.com>"

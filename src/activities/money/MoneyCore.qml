@@ -49,8 +49,8 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property alias answer: answer
-            property alias pocket: pocket
+            property alias answerModel: answerModel
+            property alias pocketModel: pocketModel
             property alias store: store
             property alias instructions: instructions
             property alias tux: tux
@@ -92,11 +92,28 @@ ActivityBase {
                     anchors.rightMargin: 10
                     anchors.fill: parent
                     spacing: 10
+
+                    add: Transition {
+                        NumberAnimation {
+                            properties: "x"
+                            from: parent.width * 0.05
+                            easing.type: Easing.InOutQuad
+                        }
+                    }
+
+                    move: Transition {
+                        NumberAnimation {
+                            properties: "x,y"
+                            easing.type: Easing.InOutQuad
+                        }
+                    }
+
                     Repeater {
                         id: answer
+                        model: ListModel { id: answerModel }
                         Image {
-                            source: Activity.url + modelData.img
-                            sourceSize.height:  column.itemHeight
+                            source: Activity.url + img
+                            sourceSize.height: column.itemHeight
                             height: column.itemHeight
 
                             MouseArea {
@@ -130,6 +147,14 @@ ActivityBase {
                     anchors.rightMargin: 20
                     anchors.fill: parent
                     spacing: 40
+
+                    add: Transition {
+                        NumberAnimation {
+                            properties: "x"
+                            from: parent.width * 0.05
+                            duration: 300
+                        }
+                    }
 
                     Image {
                         id: tux
@@ -180,6 +205,7 @@ ActivityBase {
                 anchors.bottomMargin: 4
                 anchors.leftMargin: 10
                 anchors.rightMargin: 10
+                visible: bar.level === 1
                 Text {
                     id: instructions
                     horizontalAlignment: Text.AlignHCenter
@@ -192,7 +218,7 @@ ActivityBase {
             Rectangle {
                 height: (column.itemHeight + 10) * column.nbLines
                 width: column.width
-                color: "#55333333"
+                color: "#661111AA"
                 border.color: "black"
                 border.width: 2
                 radius: 5
@@ -204,10 +230,27 @@ ActivityBase {
                     anchors.rightMargin: 10
                     anchors.fill: parent
                     spacing: 10
+
+                    add: Transition {
+                        NumberAnimation {
+                            properties: "x"
+                            from: parent.width * 0.05
+                            easing.type: Easing.InOutQuad
+                        }
+                    }
+
+                    move: Transition {
+                        NumberAnimation {
+                            properties: "x,y"
+                            easing.type: Easing.InOutQuad
+                        }
+                    }
+
                     Repeater {
                         id: pocket
+                        model: ListModel { id: pocketModel }
                         Image {
-                            source: Activity.url + modelData.img
+                            source: Activity.url + img
                             sourceSize.height:  column.itemHeight
                             height: column.itemHeight
 

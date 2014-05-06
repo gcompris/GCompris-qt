@@ -608,8 +608,13 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
 
+    items.answerModel.clear()
+    items.pocketModel.clear()
+
     var data = dataset[currentLevel]
-    items.pocket.model = shuffle(data.pocket)
+    var pocket = shuffle(data.pocket)
+    for (var i in pocket)
+        items.pocketModel.append(pocket[i])
 
     // fill up the store in a random way
     var storeModel = new Array()
@@ -643,9 +648,6 @@ function initLevel() {
         priceCounter += price
     }
     items.store.model = storeModel
-
-    var answerModel = []
-    items.answer.model = answerModel
 
     if(!backMode) {
         items.instructions.text =
@@ -699,11 +701,10 @@ function getRandomObject(price) {
 }
 
 function checkAnswer() {
-    var answerModel = items.answer.model
     var paid = 0
-    for (var i in answerModel) {
-        paid += answerModel[i].val
-    }
+    for (var i = 0; i < items.answerModel.count; ++i)
+        paid += items.answerModel.get(i).val
+
     if(!backMode) {
         if(paid == priceTotal)
             items.bonus.good("flower")
@@ -714,30 +715,23 @@ function checkAnswer() {
 }
 
 function pay(index) {
-    var money = items.pocket.model[index]
-    // Remove it from the pocket
-    var pocketModel = items.pocket.model
-    pocketModel.splice(index, 1)
-    items.pocket.model = pocketModel
-
     // Add it to the anwser
-    var answerModel = items.answer.model
-    answerModel.push(money)
-    items.answer.model = answerModel
+    items.answerModel.append(items.pocketModel.get(index))
+
+    // Remove it from the pocket
+    items.pocketModel.remove(index, 1)
+
     checkAnswer()
 }
 
 function unpay(index) {
-    var money = items.answer.model[index]
-    // Remove it from the Answer
-    var answerModel = items.answer.model
-    answerModel.splice(index, 1)
-    items.answer.model = answerModel
-
     // Add it to the pocket
-    var pocketModel = items.pocket.model
-    pocketModel.push(money)
-    items.pocket.model = pocketModel
+    items.pocketModel.append(items.answerModel.get(index))
+
+    // Remove it from the Answer
+    items.answerModel.remove(index, 1)
+
+    checkAnswer()
 }
 
 function nextLevel() {

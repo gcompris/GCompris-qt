@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "braille_lotto/Braille_lotto.qml"
+  name: "braille_lotto/BrailleLotto.qml"
   difficulty: 6
   icon: "braille_lotto/braille_lotto.svg"
   author: "Srishti Sethi <srishakatux@gmail.com>"
