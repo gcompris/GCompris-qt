@@ -52,36 +52,48 @@
 
 #define GC_DEFAULT_LOCALE "en_US.UTF-8"
 
+static const QString GENERAL_GROUP_KEY = "General";
+static const QString FULLSCREEN_KEY = "fullscreen";
+static const QString ENABLE_AUDIO_KEY = "enableSounds";
+static const QString ENABLE_EFFECTS_KEY = "enableEffects";
+
 ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
      m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/GCompris.conf", QSettings::IniFormat)
 
 {
-    m_config.beginGroup("General");
+    m_config.beginGroup(GENERAL_GROUP_KEY);
     // Default values if file does not exist
-    if(!m_config.contains("fullscreen")) {
-        m_config.setValue("enableEffects", true);
-        m_config.setValue("fullscreen", false);
-        m_config.setValue("enableSounds", true);
+    if(!m_config.contains(FULLSCREEN_KEY)) {
+        m_config.setValue(ENABLE_EFFECTS_KEY, true);
+
+#if defined(Q_OS_ANDROID) || defined(Q_OS_IOS) || defined(Q_OS_BLACKBERRY)
+        m_config.setValue(FULLSCREEN_KEY, true);
+#else
+        m_config.setValue(FULLSCREEN_KEY, false);
+#endif
+
+        m_config.setValue(ENABLE_AUDIO_KEY, true);
          // Todo get locale, if "C", put default locale
         m_config.setValue("locale", GC_DEFAULT_LOCALE);
         m_config.sync();
     }
 
-    m_isEffectEnabled = m_config.value("enableEffects").toBool();
-    m_isFullscreen = m_config.value("fullscreen").toBool();
-    m_isAudioEnabled = m_config.value("enableSounds").toBool();
+    m_isEffectEnabled = m_config.value(ENABLE_EFFECTS_KEY).toBool();
+    m_isFullscreen = m_config.value(FULLSCREEN_KEY).toBool();
+    m_isAudioEnabled = m_config.value(ENABLE_AUDIO_KEY).toBool();
     m_locale = m_config.value("locale").toString();
 
     m_config.endGroup();
     connect(this, SIGNAL(audioEnabledChanged()), this, SLOT(notifyAudioEnabledChanged()));
+    connect(this, SIGNAL(fullscreenChanged()), this, SLOT(notifyFullscreenChanged()));
     connect(this, SIGNAL(localeChanged()), this, SLOT(notifyLocaleChanged()));
 }
 
 void ApplicationSettings::notifyAudioEnabledChanged()
 {
     // Save in config
-    m_config.beginGroup("General");
-    m_config.setValue("enableSounds", m_isAudioEnabled);
+    m_config.beginGroup(GENERAL_GROUP_KEY);
+    m_config.setValue(ENABLE_AUDIO_KEY, m_isAudioEnabled);
     m_config.endGroup();
     qDebug() << "notifyAudio: " << m_isAudioEnabled;
     m_config.sync();
@@ -90,9 +102,19 @@ void ApplicationSettings::notifyAudioEnabledChanged()
 void ApplicationSettings::notifyLocaleChanged()
 {
     // Save in config
-    m_config.beginGroup("General");
+    m_config.beginGroup(GENERAL_GROUP_KEY);
     m_config.setValue("locale", m_locale);
     m_config.endGroup();
     qDebug() << "new locale: " << m_locale;
+    m_config.sync();
+}
+
+void ApplicationSettings::notifyFullscreenChanged()
+{
+    // Save in config
+    m_config.beginGroup(GENERAL_GROUP_KEY);
+    m_config.setValue(FULLSCREEN_KEY, m_isFullscreen);
+    m_config.endGroup();
+    qDebug() << "fullscreen set to: " << m_isFullscreen;
     m_config.sync();
 }

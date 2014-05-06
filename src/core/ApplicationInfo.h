@@ -47,6 +47,8 @@
 
 #include "ApplicationSettings.h"
 
+class QQuickWindow;
+
 class ApplicationInfo : public QObject
 {
 	Q_OBJECT
@@ -83,6 +85,8 @@ public:
     static void init();
     static QObject *systeminfoProvider(QQmlEngine *engine,
 									   QJSEngine *scriptEngine);
+
+    static void setWindow(QQuickWindow *window);
 
 	int applicationWidth() const { return m_applicationWidth; }
 	void setApplicationWidth(const int newWidth);
@@ -122,7 +126,7 @@ protected slots:
 
     Q_INVOKABLE void notifyAudioEnabledChanged() {}
     Q_INVOKABLE void notifyEffectEnabledChanged() {}
-    Q_INVOKABLE void notifyFullscreenChanged() {}
+    Q_INVOKABLE void notifyFullscreenChanged();
 
 
 protected:
@@ -152,6 +156,8 @@ private:
 	qreal m_sliderHandleHeight, m_sliderHandleWidth, m_sliderGapWidth;
 
     ApplicationSettings m_applicationSettings;
+
+    static QQuickWindow *m_window;
 };
 
 #endif // APPLICATIONINFO_H

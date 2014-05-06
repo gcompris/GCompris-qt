@@ -1,4 +1,4 @@
-/* GCompris - dialogBackground.qml
+/* GCompris - DialogConfig.qml
  *
  * Copyright (C) 2014 Johnny Jazeix <jazeix@gmail.com>
  *
@@ -41,7 +41,7 @@ Rectangle {
     signal stop
 
     visible: false
-    title: "Configuration"
+    title: qsTr("Configuration")
     property QtObject activityInfo: ActivityInfoTree.currentActivity
     //subtitle: activityInfo.section
 
@@ -118,7 +118,7 @@ Rectangle {
                         // Put configuration here
                         CheckBox {
                             id: enableAudioBox
-                            text: "Enable audio"
+                            text: qsTr("Enable audio")
                             checked: isAudioEnabled
                             style: CheckBoxStyle {
                                 indicator: Image {
@@ -132,16 +132,30 @@ Rectangle {
                                 isAudioEnabled = checked;
                             }
                         }
+
+                        CheckBox {
+                            id: enableFullscreenBox
+                            text: qsTr("Fullscreen")
+                            checked: isFullscreen
+                            visible: !ApplicationInfo.isMobile
+                            style: CheckBoxStyle {
+                                indicator: Image {
+                                    sourceSize.height: 50 * ApplicationInfo.ratio
+                                    source:
+                                        control.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
+                                                          "qrc:/gcompris/src/core/resource/cancel.svgz"
+                                }
+                            }
+                            onCheckedChanged: {
+                                isFullscreen = checked;
+                            }
+                        }
+
                         ComboBox {
                             id: languageBox
                             style: GCComboBoxStyle {}
                             model: languages
                             width: 200
-                            onCurrentIndexChanged:
-                                if(languages != undefined) {
-                                    console.debug(languages.get(currentIndex).text +
-                                                  ", " + languages.get(currentIndex).locale)
-                                }
                         }
                     }
                 }
@@ -176,7 +190,8 @@ Rectangle {
                 property: "rotation"
                 from: 10; to: -10
                 duration: 500
-                easing.type: Easing.InOutQuad }
+                easing.type: Easing.InOutQuad
+            }
         }
         MouseArea {
             anchors.fill: parent
@@ -189,11 +204,15 @@ Rectangle {
     }
 
     property bool isAudioEnabled: ApplicationInfo.isAudioEnabled
+    property bool isFullscreen: ApplicationInfo.isFullscreen
 
     onStart: {
         // Synchronize settings with data
         isAudioEnabled = ApplicationInfo.isAudioEnabled
         enableAudioBox.checked = isAudioEnabled
+
+        isFullscreen = ApplicationInfo.isFullscreen
+        enableFullscreenBox.checked = isFullscreen
 
         // Set locale
         for(var i = 0 ; i < languages.count ; i ++) {
@@ -207,6 +226,7 @@ Rectangle {
 
     function save() {
         ApplicationInfo.isAudioEnabled = isAudioEnabled
+        ApplicationInfo.isFullscreen = isFullscreen
         ApplicationInfo.locale = languages.get(languageBox.currentIndex).locale
     }
 
@@ -247,6 +267,7 @@ Rectangle {
 
     function hasConfigChanged() {
         return (ApplicationInfo.locale != languages.get(languageBox.currentIndex).locale ||
-                (ApplicationInfo.isAudioEnabled != isAudioEnabled));
+                (ApplicationInfo.isAudioEnabled != isAudioEnabled) ||
+                (ApplicationInfo.isFullscreen != isFullscreen));
     }
 }

@@ -44,9 +44,11 @@
 #include <QtGui/QGuiApplication>
 #include <QtGui/QScreen>
 #include <QtCore/QLocale>
-
+#include <QtQuick/QQuickWindow>
 #include "ApplicationInfo.h"
 #include <QDebug>
+
+QQuickWindow *ApplicationInfo::m_window = NULL;
 
 ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 {
@@ -131,11 +133,27 @@ QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,
 {
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)
-    return new ApplicationInfo();
+    ApplicationInfo* appInfo = new ApplicationInfo();
+    connect(&appInfo->m_applicationSettings, SIGNAL(fullscreenChanged()), appInfo,
+            SLOT(notifyFullscreenChanged()));
+    return appInfo;
+}
+
+void ApplicationInfo::setWindow(QQuickWindow *window)
+{
+    m_window = window;
 }
 
 void ApplicationInfo::init()
 {
     qmlRegisterSingletonType<ApplicationInfo>("GCompris", 1, 0, "ApplicationInfo", systeminfoProvider);
     qmlRegisterType<ApplicationInfo>("GCompris", 1, 0, "ApplicationInfo");
+}
+
+void ApplicationInfo::notifyFullscreenChanged()
+{
+    if(m_applicationSettings.isFullscreen())
+        m_window->showFullScreen();
+    else
+        m_window->showNormal();
 }

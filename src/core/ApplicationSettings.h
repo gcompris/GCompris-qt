@@ -36,7 +36,7 @@ public:
 protected slots:
     Q_INVOKABLE void notifyAudioEnabledChanged();
     Q_INVOKABLE void notifyEffectEnabledChanged() {}
-    Q_INVOKABLE void notifyFullscreenChanged() {}
+    Q_INVOKABLE void notifyFullscreenChanged();
     Q_INVOKABLE void notifyLocaleChanged();
 
 protected:

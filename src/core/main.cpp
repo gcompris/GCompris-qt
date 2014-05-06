@@ -24,6 +24,7 @@ int main(int argc, char *argv[])
 
     // Load translation
     QString locale;
+    bool isFullscreen = false;
     {
         // Local scope for config
         QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/GCompris.conf",
@@ -31,6 +32,7 @@ int main(int argc, char *argv[])
         // Get locale
         if(config.contains("General/locale")) {
             locale = config.value("General/locale").toString();
+            isFullscreen = config.value("General/fullscreen").toBool();
         }
         else {
             locale = "en_US.UTF-8";
@@ -48,15 +50,23 @@ int main(int argc, char *argv[])
     // Apply translation
     app.installTranslator(&translator);
 
-	QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
-	QObject *topLevel = engine.rootObjects().value(0);
+    QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
+    QObject *topLevel = engine.rootObjects().value(0);
 
-	QQuickWindow *window = qobject_cast<QQuickWindow *>(topLevel);
+    QQuickWindow *window = qobject_cast<QQuickWindow *>(topLevel);
     if (!window) {
 		qWarning("Error: Your root item has to be a Window.");
 		return -1;
 	}
-	window->show();
+    ApplicationInfo::setWindow(window);
+
+    if(isFullscreen) {
+        window->showFullScreen();
+    }
+    else {
+        window->show();
+    }
+
 	return app.exec();
 
 }
