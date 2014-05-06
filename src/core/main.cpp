@@ -24,7 +24,8 @@ int main(int argc, char *argv[])
 
     // Load translation
     QString locale;
-    bool isFullscreen = false;
+    // Getting fullscreen mode from config if exist, else true is default value
+    bool isFullscreen = true;
     {
         // Local scope for config
         QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/GCompris.conf",

@@ -56,6 +56,7 @@ static const QString GENERAL_GROUP_KEY = "General";
 static const QString FULLSCREEN_KEY = "fullscreen";
 static const QString ENABLE_AUDIO_KEY = "enableSounds";
 static const QString ENABLE_EFFECTS_KEY = "enableEffects";
+static const QString LOCALE_KEY = "locale";
 
 ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
      m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/GCompris.conf", QSettings::IniFormat)
@@ -65,23 +66,17 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     // Default values if file does not exist
     if(!m_config.contains(FULLSCREEN_KEY)) {
         m_config.setValue(ENABLE_EFFECTS_KEY, true);
-
-#if defined(Q_OS_ANDROID) || defined(Q_OS_IOS) || defined(Q_OS_BLACKBERRY)
         m_config.setValue(FULLSCREEN_KEY, true);
-#else
-        m_config.setValue(FULLSCREEN_KEY, false);
-#endif
-
         m_config.setValue(ENABLE_AUDIO_KEY, true);
          // Todo get locale, if "C", put default locale
-        m_config.setValue("locale", GC_DEFAULT_LOCALE);
+        m_config.setValue(LOCALE_KEY, GC_DEFAULT_LOCALE);
         m_config.sync();
     }
 
     m_isEffectEnabled = m_config.value(ENABLE_EFFECTS_KEY).toBool();
     m_isFullscreen = m_config.value(FULLSCREEN_KEY).toBool();
     m_isAudioEnabled = m_config.value(ENABLE_AUDIO_KEY).toBool();
-    m_locale = m_config.value("locale").toString();
+    m_locale = m_config.value(LOCALE_KEY).toString();
 
     m_config.endGroup();
     connect(this, SIGNAL(audioEnabledChanged()), this, SLOT(notifyAudioEnabledChanged()));
@@ -103,7 +98,7 @@ void ApplicationSettings::notifyLocaleChanged()
 {
     // Save in config
     m_config.beginGroup(GENERAL_GROUP_KEY);
-    m_config.setValue("locale", m_locale);
+    m_config.setValue(LOCALE_KEY, m_locale);
     m_config.endGroup();
     qDebug() << "new locale: " << m_locale;
     m_config.sync();

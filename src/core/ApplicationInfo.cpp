@@ -133,6 +133,10 @@ QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,
 {
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)
+    /*
+     * Connect the fullscreen change signal to applicationInfo in order to change
+     * the QQuickWindow value
+     */
     ApplicationInfo* appInfo = new ApplicationInfo();
     connect(&appInfo->m_applicationSettings, SIGNAL(fullscreenChanged()), appInfo,
             SLOT(notifyFullscreenChanged()));
