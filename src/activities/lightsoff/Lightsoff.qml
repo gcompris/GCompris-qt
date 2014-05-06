@@ -29,7 +29,6 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {
-
     }
 
     pageComponent: Rectangle {
@@ -117,23 +116,23 @@ ActivityBase {
                     height: items.cellSize
                     width: items.cellSize
                     border {
-                        color: modelData > 1 ? "red" :"transparent"
+                        color: modelData > 1 ? "red" : "transparent"
                         width: items.cellSize / 40
                     }
                     radius: items.cellSize / 10
                     Image {
                         anchors.fill: parent
                         fillMode: Image.PreserveAspectFit
-                        source: Activity.url + (modelData % 2 === 0 ? "off.svg" : "../lightsoff.svg")
+                        source: Activity.url + (modelData % 2
+                                                === 0 ? "off.svg" : "../lightsoff.svg")
                         sourceSize.height: items.cellSize
 
                         MouseArea {
                             anchors.fill: parent
-                            onClicked: Activity.switchCandle(index)
+                            onClicked: Activity.switchLight(index)
                         }
                     }
                 }
-
             }
         }
 
