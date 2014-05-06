@@ -1,24 +1,24 @@
 /* GCompris - Clockgame.qml
- *
- * Copyright (C) 2014 Stephane Mankowski <stephane@mankowski.fr>
- *
- * Authors:
- *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
- *   Stephane Mankowski <stephane@mankowski.fr> (Qt Quick port)
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 3 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
- */
+*
+* Copyright (C) 2014 Stephane Mankowski <stephane@mankowski.fr>
+*
+* Authors:
+*   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+*   Stephane Mankowski <stephane@mankowski.fr> (Qt Quick port)
+*
+*   This program is free software; you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation; either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/
 import QtQuick 2.1
 
 import "qrc:/gcompris/src/core"
@@ -72,7 +72,7 @@ ActivityBase {
                       items.targetH) + ":" + Activity.get2CharValue(
                       items.targetM) + ":" + Activity.get2CharValue(
                       items.targetS)
-            font.pointSize: Math.max(clock.height / 30, 1)
+            font.pointSize: helper.font.pointSize
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap
             z: 10
@@ -205,6 +205,7 @@ ActivityBase {
 
             /* Help text */
             Text {
+                id: helper
                 text: Activity.get2CharValue(
                           items.currentH) + ":" + Activity.get2CharValue(
                           items.currentM) + ":" + Activity.get2CharValue(
@@ -233,6 +234,12 @@ ActivityBase {
                     origin.x: h.width / 2
                     origin.y: 0
                     angle: (180 + 360 * (items.currentH / 12 + items.currentM / 60 / 12)) % 360
+                    Behavior on angle {
+                        RotationAnimation {
+                            duration: 100
+                            direction: RotationAnimation.Shortest
+                        }
+                    }
                 }
 
                 anchors {
@@ -256,6 +263,12 @@ ActivityBase {
                     origin.x: m.width / 2
                     origin.y: 0
                     angle: (180 + 360 * (items.currentM / 60 + items.currentS / 60 / 60)) % 360
+                    Behavior on angle {
+                        RotationAnimation {
+                            duration: 100
+                            direction: RotationAnimation.Shortest
+                        }
+                    }
                 }
 
                 anchors {
@@ -279,6 +292,12 @@ ActivityBase {
                     origin.x: s.width / 2
                     origin.y: 0
                     angle: (180 + 360 * items.currentS / 60) % 360
+                    Behavior on angle {
+                        RotationAnimation {
+                            duration: 100
+                            direction: RotationAnimation.Shortest
+                        }
+                    }
                 }
 
                 anchors {
@@ -310,12 +329,19 @@ ActivityBase {
                     var a = (270 + 360 + 180 * Math.atan2(
                                  mouseY - (center.y + center.height / 2),
                                  mouseX - (center.x + center.width / 2)) / Math.PI) % 360
-                    var agnh=h.angle
-                    var angm=m.angle
-                    var angs=s.angle
-                    var dh = Math.min(Math.abs(a - agnh), Math.abs(a - agnh - 360), Math.abs(a - agnh + 360))
-                    var dm = Math.min(Math.abs(a - angm), Math.abs(a - angm - 360), Math.abs(a - angm + 360))
-                    var ds = s.visible ? Math.min(Math.abs(a - angs), Math.abs(a - angs - 360), Math.abs(a - angs + 360)) : 9999
+                    var agnh = h.angle
+                    var angm = m.angle
+                    var angs = s.angle
+                    var dh = Math.min(Math.abs(a - agnh),
+                                      Math.abs(a - agnh - 360),
+                                      Math.abs(a - agnh + 360))
+                    var dm = Math.min(Math.abs(a - angm),
+                                      Math.abs(a - angm - 360),
+                                      Math.abs(a - angm + 360))
+                    var ds = s.visible ? Math.min(
+                                             Math.abs(a - angs),
+                                             Math.abs(a - angs - 360),
+                                             Math.abs(a - angs + 360)) : 9999
                     var dmin = Math.min(dh, dm, ds)
 
                     if (dh === dmin) {
@@ -348,13 +374,13 @@ ActivityBase {
                         var previousS = items.currentS
 
                         if (Activity.selectedArrow === h) {
-                            items.currentH = Math.floor(
-                                        12 * (a - 180) / 360 + 12) % 12
+                            items.currentH = Math.round(
+                                        12 * ((a - 180) / 360 - items.currentM / 60 / 12) + 12) % 12
                         } else if (Activity.selectedArrow === m) {
-                            items.currentM = Math.floor(
-                                        60 * (a - 180) / 360 + 60) % 60
+                            items.currentM = Math.round(
+                                        60 * ((a - 180) / 360 - items.currentS / 60 / 60) + 60) % 60
                         } else {
-                            items.currentS = Math.floor(
+                            items.currentS = Math.round(
                                         60 * (a - 180) / 360 + 60) % 60
                         }
 

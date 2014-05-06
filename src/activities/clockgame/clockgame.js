@@ -69,7 +69,7 @@ function initLevel() {
 
 function nextTry() {
     if (numberOfTry <= ++currentTry) {
-        currentLevel = 0
+        currentTry = 0
         nextLevel()
     } else {
         initLevel()
