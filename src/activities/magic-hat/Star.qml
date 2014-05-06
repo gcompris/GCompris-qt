@@ -16,7 +16,7 @@ Item {
         anchors.fill:parent
         enabled: isClickable
         onClicked: {
-            if(starState=="on_yellow" || starState=="on_green") {
+            if(starState=="on_yellow" || starState=="on_green" || starState=="on_blue") {
                  starState="off"
             }
             else starState="on_yellow"
@@ -48,7 +48,7 @@ Item {
         anchors.centerIn: contour
         state: starState
         fillMode: Image.PreserveAspectFit
-
+        opacity: 1
         states:[
             State {
                 name: "on_yellow"
@@ -62,6 +62,13 @@ Item {
                 PropertyChanges {
                     target: starImg
                     source: "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/star2.svgz"
+                }
+            },
+            State {
+                name: "on_blue"
+                PropertyChanges {
+                    target: starImg
+                    source: "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/star3.svgz"
                 }
             },
             State {

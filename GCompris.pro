@@ -36,7 +36,7 @@ include(src/activities/ballcatch/ballcatch.pri)
 #include(src/activities/memory-sound/memory-sound.pri)
 #include(src/activities/numbers-odd-even/numbers-odd-even.pri)
 #include(src/activities/planegame/planegame.pri)
-#include(src/activities/enumerate/enumerate.pri)
+include(src/activities/enumerate/enumerate.pri)
 include(src/activities/magic-hat/magic-hat.pri)
 include(src/activities/magic-hat-plus/magic-hat-plus.pri)
 

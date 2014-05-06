@@ -8,7 +8,9 @@ Item {
     property alias state: hatImg.state
     property int targetX
     property int targetY
-    property int nbStarsUnderHat : 0
+    property int nbStars0
+    property int nbStars1
+    property int nbStars2
     property double starsOpacity : 1.0
 
     Image {
@@ -84,8 +86,8 @@ Item {
     }
 
     Repeater {
-        id: repeaterStars
-        model: nbStarsUnderHat
+        id: repeaterStars0
+        model: nbStars0
         Star {
             starState: "on_yellow"
             height: hatItem.height/18
@@ -95,7 +97,39 @@ Item {
             displayBounds: false
             isClickable: false
             z: hatImg.z - 1
-            opacity: starsOpacity
+            opacity: 1
+        }
+    }
+
+    Repeater {
+        id: repeaterStars1
+        model: nbStars1
+        Star {
+            starState: "on_green"
+            height: hatItem.height/18
+            width: hatItem.height/18
+            anchors.centerIn: parent
+            anchors.verticalCenterOffset: hatImg.height/2 - hatImg.height/6
+            displayBounds: false
+            isClickable: false
+            z: hatImg.z - 1
+            opacity: 1
+        }
+    }
+
+    Repeater {
+        id: repeaterStars2
+        model: nbStars2
+        Star {
+            starState: "on_blue"
+            height: hatItem.height/18
+            width: hatItem.height/18
+            anchors.centerIn: parent
+            anchors.verticalCenterOffset: hatImg.height/2 - hatImg.height/6
+            displayBounds: false
+            isClickable: false
+            z: hatImg.z - 1
+            opacity: 1
         }
     }
 
@@ -112,11 +146,23 @@ Item {
     }
 
     function moveStars() {
-        for(var i=0;i<nbStarsUnderHat;i++){
-            repeaterStars.itemAt(i).anchors.centerIn= undefined
-            repeaterStars.itemAt(i).x=targetX + i*(hatItem.height/18 + 5)
-            repeaterStars.itemAt(i).y=targetY
-            repeaterStars.itemAt(i).z+=2
+        for(var i=0;i<nbStars0;i++){
+            repeaterStars0.itemAt(i).anchors.centerIn=undefined
+            repeaterStars0.itemAt(i).x=targetX + i*(hatItem.height/18 + 5)
+            repeaterStars0.itemAt(i).y=targetY
+            repeaterStars0.itemAt(i).z+=2
+        }
+        for(var i=0;i<nbStars1;i++){
+            repeaterStars1.itemAt(i).anchors.centerIn=undefined
+            repeaterStars1.itemAt(i).x=targetX + i*(hatItem.height/18 + 5)
+            repeaterStars1.itemAt(i).y=targetY
+            repeaterStars1.itemAt(i).z+=2
+        }
+        for(var i=0;i<nbStars2;i++){
+            repeaterStars2.itemAt(i).anchors.centerIn=undefined
+            repeaterStars2.itemAt(i).x=targetX + i*(hatItem.height/18 + 5)
+            repeaterStars2.itemAt(i).y=targetY
+            repeaterStars2.itemAt(i).z+=2
         }
     }
 }

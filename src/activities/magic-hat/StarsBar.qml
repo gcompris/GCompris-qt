@@ -20,7 +20,7 @@ Item {
             id: repeaterStarsOn
             model: nbStarsOn
             Star {
-                starState: starsColor=="yellow" ? "on_yellow" : "on_green"
+                starState: "on_" + starsColor
                 width: item.height
                 height: item.height
                 displayBounds: true
@@ -45,7 +45,7 @@ Item {
             id: repeaterStarsToMove
             model: nbStarsOn
             Star {
-                starState: starsColor=="yellow" ? "on_yellow" : "on_green"
+                starState: "on_" + starsColor
                 width: item.height
                 height: item.height
                 displayBounds: false
@@ -56,6 +56,7 @@ Item {
     }
 
     function moveStars(){
+        console.log("Move stars : " + nbStarsOn)
         for(var i=0;i<nbStarsOn;i++){
             repeaterStarsToMove.itemAt(i).x=targetX
             repeaterStarsToMove.itemAt(i).y=targetY

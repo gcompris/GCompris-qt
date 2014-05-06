@@ -40,6 +40,8 @@ ActivityBase {
         signal start
         signal stop
 
+        property var starColors : ["yellow","green","blue"]
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -58,47 +60,51 @@ ActivityBase {
             anchors.right: background.right
             anchors.rightMargin: -background.width/26
             anchors.verticalCenter: background.verticalCenter
-            anchors.verticalCenterOffset: background.height/6.5
+            anchors.verticalCenterOffset: background.height/8
             width: background.width/2
             height:background.height
             id: rightLayout
             rows: 3
-            spacing: background.height/5
+            spacing: background.height/10
             Column{
                 id: firstRow
                 spacing: 5
-                StarsBar{
-                    id: sb0
-                    starsSize: background.height/18
-                    starsColor: "yellow"
-                }
-                StarsBar{
-                    id: sb1
-                    starsSize: background.height/18
-                    starsColor: "green"
-                    opacity: 0
+                Repeater{
+                    id: repeaterFirstRow
+                    model: 3
+                    StarsBar{
+                        starsSize: background.height/18
+                        starsColor: starColors[index]
+                        opacity: index==0 ? 1.0 : 0.0
+                    }
                 }
             }
             Column{
                 id: secondRow
                 spacing: 5
-                StarsBar{
-                    id: sb2
-                    starsSize: background.height/18
-                    starsColor: "yellow"
-                }
-                StarsBar{
-                    id: sb3
-                    starsSize: background.height/18
-                    opacity: 0
-                    starsColor: "green"
+                Repeater{
+                    id: repeaterSecondRow
+                    model: 3
+                    StarsBar{
+                        starsSize: background.height/18
+                        starsColor: starColors[index]
+                        opacity: index==0 ? 1.0 : 0.0
+                    }
                 }
             }
-            StarsBar{
-                id: sbAnswer
-                nbStarsOn: 0
-                starsSize: background.height/18
-                starsColor: "yellow"
+            Column{
+                id: answerRow
+                spacing: 5
+                Repeater{
+                    id: repeaterAnswerRow
+                    model: 3
+                    StarsBar{
+                        starsSize: background.height/18
+                        starsColor: starColors[index]
+                        opacity: index==0 ? 1.0 : 0.0
+                        authorizeClick: false
+                    }
+                }
             }
         }
 
@@ -110,7 +116,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias hat: chapeau
-            property var barsList : [sb0,sb1,sb2,sb3,sbAnswer]
+            property var repeatersList : [repeaterFirstRow,repeaterSecondRow,repeaterAnswerRow]
             property int starsSize: background.height/18
             property alias columnY : secondRow.y
         }
