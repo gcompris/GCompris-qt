@@ -177,7 +177,7 @@ function initLevel() {
     }
     showSoluce = false
     items.nbCell = size
-    items.modelTable = getTable()
+    refreshModel()
     checkResult()
 }
 
@@ -219,12 +219,19 @@ function switchLightNoCheck(index) {
         table[index + size] = 1 - table[index + size]
 }
 
+function refreshModel() {
+    var table = getTable()
+    for (var i = 0; i < size * size; ++i) {
+        items.modelTable.set(i, { 'value': table[i] })
+    }
+}
+
 function switchLight(index) {
     /* Switch the selected item */
     switchLightNoCheck(index)
 
     /* Refresh the lights */
-    items.modelTable = getTable()
+    refreshModel()
 
     /* Check the result */
     checkResult()
@@ -264,5 +271,5 @@ function solve() {
     showSoluce = !showSoluce
 
     /* Refresh the lights */
-    items.modelTable = getTable()
+    refreshModel()
 }

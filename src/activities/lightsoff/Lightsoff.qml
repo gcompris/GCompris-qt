@@ -52,7 +52,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias skyColor: background.color
-            property alias modelTable: modelTable.model
+            property alias modelTable: modelTable
             property int nbCell: 5
             property int cellSize: Math.min(
                                        (parent.height - 200) / items.nbCell,
@@ -134,27 +134,37 @@ ActivityBase {
             spacing: items.cellSize / 10
             z: 5
 
-            Repeater {
+            ListModel {
                 id: modelTable
-                model: Activity.getTable()
+            }
+
+            Repeater {
+                model: modelTable
                 Rectangle {
                     color: "transparent"
                     height: items.cellSize
                     width: items.cellSize
                     border {
-                        color: modelData > 1 ? "red" : "transparent"
+                        color: value > 1 ? "red" : "transparent"
                         width: items.cellSize / 40
                     }
                     radius: items.cellSize / 10
                     BarButton {
                         anchors.fill: parent
                         fillMode: Image.PreserveAspectFit
-                        source: Activity.url + (modelData % 2
-                                                === 0 ? "off.svgz" : "../lightsoff.svgz")
+                        source: Activity.url + "off.svgz"
                         sourceSize.height: items.cellSize
                         visible: true
-
-                        onClicked: Activity.switchLight(index)
+                    }
+                    BarButton {
+                        anchors.fill: parent
+                        fillMode: Image.PreserveAspectFit
+                        source: Activity.url + "../lightsoff.svgz"
+                        sourceSize.height: items.cellSize
+                        opacity: value % 2 === 0 ? 0 : 1
+                        onClicked: { Activity.switchLight(index) }
+                        Behavior on opacity { PropertyAnimation { duration: 200 } }
+                        visible: true
                     }
                 }
             }
