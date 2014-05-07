@@ -29,6 +29,7 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {
+
     }
 
     pageComponent: Rectangle {
@@ -52,8 +53,11 @@ ActivityBase {
             property alias bonus: bonus
             property alias skyColor: background.color
             property alias modelTable: modelTable.model
-            property int cellSize: Math.min((parent.height - 200) / 5,
-                                            (parent.width - 40) / 5)
+            property int nbCell: 5
+            property int cellSize: Math.min(
+                                       (parent.height - 200) / items.nbCell,
+                                       (parent.width - 40) / items.nbCell)
+            property int nbCelToWin: 0
         }
 
         onStart: {
@@ -65,9 +69,25 @@ ActivityBase {
 
         /* The background picture */
         Image {
-            source: Activity.url + "back.svg"
+            source: Activity.url + "back.svgz"
             fillMode: Image.Stretch
             anchors.fill: parent
+            z: 2
+        }
+
+        /* The sun */
+        Image {
+            id: sun
+            source: Activity.url + "sun.svgz"
+            sourceSize.height: items.cellSize * 2
+            anchors {
+                left: parent.left
+                leftMargin: 100
+                bottom: parent.bottom
+                bottomMargin: parent.height / 3 + 2 / 3 * parent.height
+                              * items.nbCelToWin / (items.nbCell * items.nbCell)
+            }
+            z: 1
         }
 
         /* Tux */
@@ -76,10 +96,13 @@ ActivityBase {
             fillMode: Image.PreserveAspectFit
             source: Activity.url + "tux.svgz"
             sourceSize.height: items.cellSize * 3
+            z: 3
             visible: true
             anchors {
                 right: parent.right
                 rightMargin: 20
+                left: grid.right
+                leftMargin: 20
                 bottom: parent.bottom
                 bottomMargin: 20
             }
@@ -92,6 +115,7 @@ ActivityBase {
             anchors.margins: items.cellSize / -10
             color: "lightgrey"
             opacity: 0.6
+            z: 4
             border {
                 color: "black"
                 width: items.cellSize / 20
@@ -104,9 +128,10 @@ ActivityBase {
             anchors.top: parent.top
             anchors.topMargin: (parent.height - height - items.bar.height) / 2
             anchors.horizontalCenter: parent.horizontalCenter
-            rows: 5
-            columns: 5
+            rows: items.nbCell
+            columns: items.nbCell
             spacing: items.cellSize / 10
+            z: 5
 
             Repeater {
                 id: modelTable
@@ -120,17 +145,15 @@ ActivityBase {
                         width: items.cellSize / 40
                     }
                     radius: items.cellSize / 10
-                    Image {
+                    BarButton {
                         anchors.fill: parent
                         fillMode: Image.PreserveAspectFit
                         source: Activity.url + (modelData % 2
-                                                === 0 ? "off.svg" : "../lightsoff.svg")
+                                                === 0 ? "off.svgz" : "../lightsoff.svgz")
                         sourceSize.height: items.cellSize
+                        visible: true
 
-                        MouseArea {
-                            anchors.fill: parent
-                            onClicked: Activity.switchLight(index)
-                        }
+                        onClicked: Activity.switchLight(index)
                     }
                 }
             }

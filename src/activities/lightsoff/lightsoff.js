@@ -140,6 +140,7 @@ var items
 var table
 var soluc
 var showSoluce = false
+var size = 5
 
 var url = "qrc:/gcompris/src/activities/lightsoff/resource/"
 
@@ -157,22 +158,25 @@ function initLevel() {
     /* Is it a static or dynamic level ? */
     if (currentLevel > levels.length / 2) {
         /* Dynamic */
-        table = new Array(25)
-        soluc = new Array(25)
-        for (var i = 0; i < 25; ++i) {
+        size=Math.min(Math.floor((currentLevel+1)/10), 9)
+        table = new Array(size * size)
+        soluc = new Array(size * size)
+        for (var i = 0; i < size * size; ++i) {
             table[i] = 0
             soluc[i] = 0
         }
 
         for (var j = 0; j < currentLevel; ++j) {
-            switchLightNoCheck(Math.floor(25 * Math.random()))
+            switchLightNoCheck(Math.floor(size * size * Math.random()))
         }
     } else {
         /* Static */
+        size = 5
         table = levels[currentLevel * 2].slice(0)
         soluc = levels[currentLevel * 2 + 1].slice(0)
     }
     showSoluce = false
+    items.nbCell = size
     items.modelTable = getTable()
     checkResult()
 }
@@ -199,20 +203,20 @@ function switchLightNoCheck(index) {
     soluc[index] = 1 - soluc[index]
 
     /* Switch neighbor left */
-    if (index % 5 !== 0)
+    if (index % size !== 0)
         table[index - 1] = 1 - table[index - 1]
 
     /* Switch neighbor right */
-    if (index % 5 !== 4)
+    if (index % size !== size - 1)
         table[index + 1] = 1 - table[index + 1]
 
     /* Switch neighbor up */
-    if (index > 4)
-        table[index - 5] = 1 - table[index - 5]
+    if (index > size - 1)
+        table[index - size] = 1 - table[index - size]
 
     /* Switch neighbor down */
-    if (index < 20)
-        table[index + 5] = 1 - table[index + 5]
+    if (index < size * size -size)
+        table[index + size] = 1 - table[index + size]
 }
 
 function switchLight(index) {
@@ -228,7 +232,7 @@ function switchLight(index) {
 
 function getTable() {
     var a = new Array()
-    for (var i = 0; i < 25; ++i) {
+    for (var i = 0; i < size * size; ++i) {
         a[i] = table[i] + (showSoluce ? 2 * soluc[i] : 0)
     }
     return a
@@ -241,12 +245,19 @@ function checkResult() {
         nb += entry
     })
 
-    items.skyColor = Qt.rgba(0, (127 - 127 * (25 - nb) / 25) / 255,
-                             (255 - 255 * (25 - nb) / 25) / 255, 1)
-
     if (nb === 0) {
         items.bonus.good("tux")
     }
+
+    /* Check the soluce */
+    var nb2 = 0
+    soluc.forEach(function (entry) {
+        nb2 += entry
+    })
+    items.nbCelToWin = nb2
+
+    items.skyColor = Qt.rgba(0, (127 - 127 * (size * size - nb2) / (size * size)) / 255,
+                             (255 - 255 * (size * size - nb2) / (size * size)) / 255, 1)
 }
 
 function solve() {
