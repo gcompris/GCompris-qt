@@ -26,17 +26,12 @@ cp -r $templatedir $activitydir
 
 cd $activitydir
 mv $template.js $activity.js
-mv $template.pri $activity.pri
 mv $template.svg $activity.svg
 mv $Template.qml $Activity.qml
+mv $template.qrc $activity.qrc
 sed -i s/$template/$activity/g *
 sed -i s/$Template/$Activity/g *
 cd ..
 
 # The list of activities
 echo $activity >> activities.txt
-
-# The main makefile
-include_marker="# Activity Includes"
-include="include(src/activities/$activity/$activity.pri)"
-sed -i "s:${include_marker}:${include_marker}\n${include}:g" ../../GCompris.pro

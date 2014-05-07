@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/gcompris/src/activities/template">
+        <file>ActivityInfo.qml</file>
+        <file>Template.qml</file>
+        <file>template.js</file>
+        <file>template.svg</file>
+    </qresource>
+</RCC>
