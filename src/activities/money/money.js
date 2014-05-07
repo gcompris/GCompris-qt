@@ -21,6 +21,7 @@
  */
 .pragma library
 .import QtQuick 2.0 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/money/resource/"
 
@@ -612,7 +613,7 @@ function initLevel() {
     items.pocketModel.clear()
 
     var data = dataset[currentLevel]
-    var pocket = shuffle(data.pocket)
+    var pocket = Core.shuffle(data.pocket)
     for (var i in pocket)
         items.pocketModel.append(pocket[i])
 
@@ -748,10 +749,4 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
-}
-
-function shuffle(o) {
-    for(var j, x, i = o.length; i;
-        j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-    return o;
 }

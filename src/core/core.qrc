@@ -16,6 +16,7 @@
         <file>BarEnumContent.qml</file>
         <file>Bar.qml</file>
         <file>Bonus.qml</file>
+        <file>core.js</file>
         <file>DialogAbout.qml</file>
         <file>DialogBackground.qml</file>
         <file>DialogConfig.qml</file>

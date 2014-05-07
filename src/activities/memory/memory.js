@@ -1,5 +1,6 @@
 .pragma library
 .import QtQuick 2.0 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 // The dataset
 // each array item is nb of line then column in memory
@@ -111,10 +112,10 @@ function initLevel() {
             cardListValue[ix] = eval(cardList[ix].toString())
         }
 
-        cardList = shuffle(cardList.concat(cardListValue))
+        cardList = Core.shuffle(cardList.concat(cardListValue))
     }
     else {
-        cardList = shuffle(cardList.concat(cardList))
+        cardList = Core.shuffle(cardList.concat(cardList))
     }
 
 
@@ -233,10 +234,4 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
-}
-
-function shuffle(o) {
-    for(var j, x, i = o.length; i;
-        j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-    return o;
 }

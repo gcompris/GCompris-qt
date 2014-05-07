@@ -23,6 +23,7 @@
 .pragma library
 .import QtQuick 2.2 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var max_velocity = 500 * GCompris.ApplicationInfo.ratio
 var currentLevel
@@ -323,9 +324,9 @@ function playSound(sound) {
 }
 
 function playLetterSound(number) {
-    /* TODO Use QTextCodec or QString toUnicode instead */
     items.audio.source =
-            GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/U003" +
-                                                      number + ".ogg")
+            GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
+                            + Core.getSoundFilenamForChar(number))
+
     items.audio.play()
 }

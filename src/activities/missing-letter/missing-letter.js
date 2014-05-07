@@ -21,6 +21,7 @@
  */
 .pragma library
 .import QtQuick 2.0 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/missing-letter/resource/"
 
@@ -135,7 +136,7 @@ function stop()
 function initLevel()
 {
     items.bar.level = currentLevel + 1
-    dataset = shuffle(questions[currentLevel])
+    dataset = Core.shuffle(questions[currentLevel])
     currentQuestionNumber = 0
     nextQuestion()
     items.currentQuestionNumberText.text = "1/" + dataset.length
@@ -248,10 +249,4 @@ function createLastLevel()
 
     questions.push(lastData)
 
-}
-
-function shuffle(o) {
-    for(var j, x, i = o.length; i;
-        j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-    return o;
 }
