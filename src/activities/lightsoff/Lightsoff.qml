@@ -88,6 +88,7 @@ ActivityBase {
                               * items.nbCelToWin / (items.nbCell * items.nbCell)
             }
             z: 1
+            Behavior on anchors.bottomMargin { PropertyAnimation { duration: 1000 } }
         }
 
         /* Tux */
