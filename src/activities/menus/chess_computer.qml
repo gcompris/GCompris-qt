@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "chess_computer/Chess_computer.qml"
+  name: "chess_computer/ChessComputer.qml"
   difficulty: 2
   icon: "chess_computer/chess_computer.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"

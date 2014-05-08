@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "advanced_colors/Advanced_colors.qml"
+  name: "advanced_colors/AdvancedColors.qml"
   difficulty: 6
   icon: "advanced_colors/advanced_colors.svg"
   author: "Pascal Georges <pascal.georges1@free.fr>"

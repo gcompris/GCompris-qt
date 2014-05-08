@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_add_tux/Memory_add_tux.qml"
+  name: "memory_add_tux/MemoryAddTux.qml"
   difficulty: 1
   icon: "memory_add_tux/mem_tux_plus.svg"
   author: "Yves Combe <yves@ycombe.net>"

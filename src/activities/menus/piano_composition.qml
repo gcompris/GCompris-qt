@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "piano_composition/Piano_composition.qml"
+  name: "piano_composition/PianoComposition.qml"
   difficulty: 4
   icon: "piano_composition/piano_composition.svg"
   author: "Beth Hadley <bethmhadley@gmail.com>"

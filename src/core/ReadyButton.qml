@@ -30,6 +30,8 @@ Rectangle {
     radius: 4
     smooth: true
     border.width: 2
+    width: iamReadyText.width + 50 * ApplicationInfo.ratio
+    height: iamReadyText.height + 50 * ApplicationInfo.ratio
     gradient: Gradient {
         GradientStop { position: 0.0; color: "#AAFFFFFF" }
         GradientStop { position: 0.9; color: "#AAFFFFFF" }
@@ -47,19 +49,44 @@ Rectangle {
         font.pointSize: 18
         text: qsTr("I am Ready!")
         visible: iamReady.visible
-
-        Component.onCompleted: {
-            parent.width = width + 20
-            parent.height = height + 10
-        }
     }
 
     MouseArea {
+        id: mouseArea
         anchors.fill: parent
+        hoverEnabled: true
 
         onClicked: {
             iamReady.visible = false
             iamReady.clicked()
         }
     }
+
+    states: [
+        State {
+            name: "notclicked"
+            PropertyChanges {
+                target: iamReady
+                scale: 1.0
+            }
+        },
+        State {
+            name: "clicked"
+            when: mouseArea.pressed
+            PropertyChanges {
+                target: iamReady
+                scale: 0.9
+            }
+        },
+        State {
+            name: "hover"
+            when: mouseArea.containsMouse
+            PropertyChanges {
+                target: iamReady
+                scale: 1.1
+            }
+        }
+    ]
+
+    Behavior on scale { NumberAnimation { duration: 70 } }
 }

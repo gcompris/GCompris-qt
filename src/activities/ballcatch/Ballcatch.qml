@@ -31,7 +31,6 @@ ActivityBase {
 
     onStart: {
         focus = true;
-        Activity.initKey()
     }
     onStop: {}
 
@@ -59,6 +58,10 @@ ActivityBase {
             property alias rightHand: rightHand
             property alias leftHand: leftHand
             property alias deltaPressedTimer: deltaPressedTimer
+            /* when the corresponding arrow key is pressed, the following boolean pass
+               to true and is reseted at the end of the level */
+            property bool leftPressed
+            property bool rightPressed
         }
 
         onStart: {
@@ -140,9 +143,9 @@ ActivityBase {
                 anchors.fill: parent
                 onTouchUpdated: {
                     // left
-                    if(!Activity.leftPressed && !Activity.gameFinished) {
+                    if(!items.leftPressed && !Activity.gameFinished) {
                         Activity.leftShiftPressed();
-                        Activity.leftPressed = true
+                        items.leftPressed = true
                     }
                 }
             }
@@ -178,9 +181,9 @@ ActivityBase {
                 anchors.fill: parent
                 onTouchUpdated: {
                     // right
-                    if(!Activity.rightPressed && !Activity.gameFinished) {
+                    if(!items.rightPressed && !Activity.gameFinished) {
                         Activity.rightShiftPressed();
-                        Activity.rightPressed = true
+                        items.rightPressed = true
                     }
                 }
             }
@@ -189,9 +192,9 @@ ActivityBase {
         Image {
             id: leftShift
             x: 10
-            y: rightHand.y + rightHand.height / 2
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/shift_key.svgz"
-            opacity: Activity.leftPressed ? 1 : 0.5
+            y: rightHand.y
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svgz"
+            opacity: items.leftPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
         }
 
@@ -199,9 +202,9 @@ ActivityBase {
             id: rightShift
             mirror: true
             x: main.width - width - 10
-            y: rightHand.y + rightHand.height / 2
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/shift_key.svgz"
-            opacity: Activity.rightPressed ? 1 : 0.5
+            y: rightHand.y
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svgz"
+            opacity: items.rightPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
         }
 
@@ -211,7 +214,7 @@ ActivityBase {
             text: ApplicationInfo.isMobile ?
                       qsTr("Tap both hands at the same time,
 to make the ball go in a straight line.") :
-                      qsTr("Press the two shift keys at the same time,
+                      qsTr("Press left and right arrow keys at the same time,
 to make the ball go in a straight line.")
             x: 10.0
             y: tux.y
@@ -221,7 +224,8 @@ to make the ball go in a straight line.")
             verticalAlignment: TextEdit.AlignVCenter
             font.pointSize: 16
             // Remove the text when both keys has been pressed
-            visible: !(Activity.leftPressed && Activity.rightPressed)
+            visible: bar.level === 1 &&
+                     !(items.leftPressed && items.rightPressed)
         }
 
         function playSound(identifier) {
@@ -255,8 +259,8 @@ to make the ball go in a straight line.")
             onError: console.log("youcannot play error: " + errorString)
         }
 
-        /* Timer starting when user first presses a shift key.
-           If still running when the user presses the other shift key, he wins !
+        /* Timer starting when user first presses a first key.
+           If still running when the user presses the other key, he wins !
         */
         Timer {
             id: deltaPressedTimer

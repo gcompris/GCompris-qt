@@ -29,11 +29,12 @@ Rectangle {
         GradientStop { position: 0.9; color: "#AAFFFFFF" }
         GradientStop { position: 1.0; color: "#AACECECE" }
     }
-    width: background.width / 8
-    height: background.height / 8
+    width: subLevelText.width * 2
+    height: subLevelText.height * 2
     radius: 10
-    x: background.width - 80
-    y: background.height - 30
+    anchors.bottom: parent.bottom
+    anchors.right: parent.right
+    anchors.margins: 30
 
     border.color: "black"
     border.width: 2

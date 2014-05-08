@@ -29,7 +29,7 @@ Window {
     id: main
     width: 800
     height: 520
-    minimumWidth: 600
+    minimumWidth: 400
     minimumHeight: 400
     title: "GCompris"
 
@@ -37,7 +37,7 @@ Window {
         id: audio
         source: "qrc:/gcompris/src/core/resource/intro.ogg"
         onError: console.log("intro play error: " + errorString)
-        autoPlay: true
+        autoPlay: false
     }
 
     StackView {

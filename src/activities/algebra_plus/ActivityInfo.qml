@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "algebra_plus/Algebra_plus.qml"
+  name: "algebra_plus/AlgebraPlus.qml"
   difficulty: 1
   icon: "algebra_plus/algebra_plus.svg"
   author: "Bruno Coudoin"

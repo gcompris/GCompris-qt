@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "magic_hat_minus/Magic_hat_minus.qml"
+  name: "magic_hat_minus/MagicHatMinus.qml"
   difficulty: 2
   icon: "magic_hat_minus/magic_hat_minus.svg"
   author: "Marc BRUN"

@@ -34,6 +34,7 @@ Item {
     property var leftPanelComponent: leftPanel
     property var rightPanelComponent: rightPanel
     property var backspaceButtonComponent:backspaceButton
+    property int maxDigit: 2
 
     signal answer
 
@@ -67,7 +68,7 @@ Item {
                     enabled: (ApplicationInfo.isMobile) ? true : false
 
                     onClicked :{
-                        if(answer.length < 2)
+                        if(answer.length < maxDigit)
                             answer += numbers[index]
                     }
                     onPressed: {
@@ -114,7 +115,7 @@ Item {
                     enabled: (ApplicationInfo.isMobile) ? true : false
 
                     onClicked: {
-                        if(answer.length < 2)
+                        if(answer.length < maxDigit)
                             answer += numbers[index] + 5
                     }
                     onPressed: {

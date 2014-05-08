@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_add_minus_mult_div_tux/Memory_add_minus_mult_div_tux.qml"
+  name: "memory_add_minus_mult_div_tux/MemoryAddMinusMultDivTux.qml"
   difficulty: 1
   icon: "memory_add_minus_mult_div_tux/mem_tux_all.svg"
   author: "Yves Combe <yves@ycombe.net>"

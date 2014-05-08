@@ -24,7 +24,6 @@ import "algebra.js" as Activity
 
 ActivityBase {
     id: activity
-    focus: true
 
     property alias operand: operand
 
@@ -38,7 +37,6 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
         signal start
         signal stop
-        focus: true
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -102,24 +100,28 @@ ActivityBase {
 
         Score {
             id: score
-            x: parent.width * 0.2
+            x: parent.width * 0.25
             y: parent.height * 0.65
+            anchors.right: undefined
+            anchors.bottom: undefined
             currentSubLevel: 0
             numberOfSubLevels: 10
         }
     }
 
-    Item{
+    Item {
         id: otherItems
         property alias iAmReady: iAmReady
-        property alias firstOp:firstOp
-        property alias secondOp:secondOp
-        property alias numpad:numpad
+        property alias firstOp: firstOp
+        property alias secondOp: secondOp
+        property alias numpad: numpad
+        property int result
     }
 
     NumPad {
         id: numpad
         onAnswerChanged: Activity.questionsLeft()
+        maxDigit: ('' + otherItems.result).length
     }
 
     ReadyButton {
@@ -136,41 +138,30 @@ ActivityBase {
         anchors.margins: 4
         spacing: 10
 
-        Text {
+        AlgebraText {
             id: firstOp
             visible: !iAmReady.visible
-            font.pointSize: 32
-            font.bold: true
         }
 
-        Text{
+        AlgebraText {
             id: operand
             visible: firstOp.visible
-            font.pointSize: 32
-            text: "x"
-            font.bold: true
         }
 
-        Text{
+        AlgebraText {
             id: secondOp
             visible: !iAmReady.visible
-            font.pointSize: 32
-            font.bold: true
         }
 
-        Text {
+        AlgebraText {
             id: equals
             visible: firstOp.visible
-            font.pointSize: 32
-            font.bold: true
             text: "="
         }
 
-        Text {
+        AlgebraText {
             id: result
             visible: !iAmReady.visible
-            font.pointSize: 32
-            font.bold: true
             text: numpad.answer
         }
     }

@@ -28,7 +28,7 @@ functions :-
 
 setUp() - the function is called to set the basic game layout each time (questionTray, answerTray)
 getSetLength() - returns the number of unique indices in the chosen sample
-getIndex() - returns a random array of length 8 that is based on the chosen sample
+getImages() - returns a random array of length 8 that is based on the chosen sample
 setQuestion() - the function is called to set questionTray
 setAnswer() - the function is called to set answerTray
 playSound() - the function used to play audio brick and bleep
@@ -43,17 +43,17 @@ times (int) - initialised with 0 level increases when times is 3
 Example 1:
 sample: [0,1,0,1,0,1,0,1]
 getSetLength() output - 2
-getIndex() sample output - [6,7,6,7,6,7,6,7]
+getImages() sample output - [6,7,6,7,6,7,6,7]
 
 Example 2:
 sample: [0,1,2,0,1,2,0,1]
 getSetLength() output - 3
-getIndex() sample output - [3,5,7,3,5,7,3,5]
+getImages() sample output - [3,5,7,3,5,7,3,5]
 
 Example 3:
 sample: [0,1,2,3,3,2,1,0]
 getSetLength() output - 4
-getIndex() sample output - [1,3,2,5,5,2,3,1]
+getImages() sample output - [1,3,2,5,5,2,3,1]
 
 */
 
@@ -103,10 +103,10 @@ var sample = [[[0,1,0,1,0,1,0,1],[0,1,2,0,1,2,0,1],[0,1,2,3,0,1,2,3],[0,1,2,3,3,
 function setUp(){
     number = Math.floor(Math.random() * 10000) % 4
 
-    index = getIndex(number, currentLevel)
+    index = getImages(number, currentLevel)
     setQuestion(index)
 
-    answerIndex = getIndex(number, currentLevel)
+    answerIndex = getImages(number, currentLevel)
     setAnswer(answerIndex)
 }
 
@@ -122,22 +122,18 @@ function getSetLength(list){
     return count.length
 }
 
-// Returns a set of indices that is used to set
+// Returns a set of images that is used to set
 // either the Sample algorithm or the Answer tray
-function getIndex(number, level) {
-    var index = []
-    var imageNames = []
+function getImages(number, level) {
     var setLength = getSetLength(sample[level][number])
-    for(var i=0; i < setLength; i++) {
-        index.push((Math.floor(Math.random()*10000)) % 8)
+    var results = shuffle(images).slice(0, setLength)
+    // Repeat the set
+    while(results.length < 8) {
+        results = results.concat(results)
     }
-    for(var i=setLength; i < max; i++) {
-        index.push(index[sample[level][number][i]])
-    }
-    for(var i=0; i < index.length; i++) {
-        imageNames.push(images[index[i]])
-    }
-    return imageNames
+    // Remove extra items
+    results = results.slice(0, 8)
+    return results
 }
 
 // The source of questionTray is changed to reflect the chosen
@@ -214,4 +210,10 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
+}
+
+function shuffle(o) {
+    for(var j, x, i = o.length; i;
+        j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
 }

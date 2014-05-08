@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "land_safe/Land_safe.qml"
+  name: "land_safe/LandSafe.qml"
   difficulty: 4
   icon: "land_safe/land_safe.svg"
   author: "Matilda Bernard <serah4291@gmail.com>"
