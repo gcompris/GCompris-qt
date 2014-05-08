@@ -53,6 +53,8 @@ include(src/activities/numbers-odd-even/numbers-odd-even.pri)
 include(src/activities/penalty/penalty.pri)
 include(src/activities/planegame/planegame.pri)
 include(src/activities/wordsgame/wordsgame.pri)
+include(src/activities/magic-hat/magic-hat.pri)
+include(src/activities/magic-hat-plus/magic-hat-plus.pri)
 
 
 APP_FILES += \

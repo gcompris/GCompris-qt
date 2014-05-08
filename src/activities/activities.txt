@@ -22,6 +22,9 @@ gletters
 hexagon
 instruments
 leftright
+magic-hat-plus
+magic-hat
+numbers-odd-even
 memory
 memory-math-add
 memory-math-add-minus
