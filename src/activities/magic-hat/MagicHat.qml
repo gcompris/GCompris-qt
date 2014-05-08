@@ -36,7 +36,7 @@ ActivityBase {
         id: background
         anchors.fill: parent
         source: mode=="minus"? "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/magic_hat_minus_newbg.svg" : "qrc:/gcompris/src/activities/magic-hat/resource/magic-hat/magic_hat_plus_newbg.svg"
-        fillMode: Image.PreserveAspectFit
+        fillMode: Image.PreserveAspectCrop
         signal start
         signal stop
 
@@ -53,7 +53,7 @@ ActivityBase {
             width: background.width/2
             height:background.height
             Hat{
-                    id: chapeau
+                    id: theHat
             }
         }
         Grid {
@@ -115,7 +115,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property alias hat: chapeau
+            property alias hat: theHat
             property var repeatersList : [repeaterFirstRow,repeaterSecondRow,repeaterAnswerRow]
             property int starsSize: background.height/18
             property alias columnY : secondRow.y

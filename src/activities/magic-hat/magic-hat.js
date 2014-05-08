@@ -134,15 +134,28 @@ function initLevel() {
     }
 }
 
-function verifyAnswer(starState) {
+function verifyAnswer(starState,starColor) {
     if(starState=="on_yellow"){
         number_of_userStars[0]++
     }
-    if(starState=="on_green"){
-        number_of_userStars[1]++
-    }
-    if(starState=="on_blue"){
-        number_of_userStars[2]++
+    else {
+        if(starState=="on_green"){
+            number_of_userStars[1]++
+        }
+        if(starState=="on_blue"){
+            number_of_userStars[2]++
+        }
+        if(starState=="off"){
+            if(starColor=="yellow"){
+                number_of_userStars[0]--
+            }
+            if(starColor=="green"){
+                number_of_userStars[1]--
+            }
+            if(starColor=="blue"){
+                number_of_userStars[2]--
+            }
+        }
     }
     if(number_of_userStars[0]==nbStarsToCount[0] && number_of_userStars[1]==nbStarsToCount[1] && number_of_userStars[2]==nbStarsToCount[2]){
         items.bonus.good("flower")

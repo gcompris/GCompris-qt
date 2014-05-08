@@ -21,7 +21,7 @@ Item {
                  starState="off"
             }
             else starState="on_" + wantedColor
-            Activity.verifyAnswer(starState)
+            Activity.verifyAnswer(starState,wantedColor)
         }
     }
 
