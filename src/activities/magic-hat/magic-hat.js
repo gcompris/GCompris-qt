@@ -106,7 +106,9 @@ function initLevel() {
 
     for(var i=0;i<3;i++){
         items.repeatersList[0].itemAt(i).nbStarsOn = number_of_stars[i]
-        nbStarsToAddOrRemove[i]=getRandomInt(1,number_of_stars[i]-1)
+        if(mode=="minus")
+            nbStarsToAddOrRemove[i]=getRandomInt(1,number_of_stars[i]-1)
+        else nbStarsToAddOrRemove[i]=getRandomInt(1,10-number_of_stars[i])
     }
 
     if(mode=="minus"){
