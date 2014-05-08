@@ -221,9 +221,8 @@ function switchLightNoCheck(index) {
 }
 
 function refreshModel() {
-    var table = getTable()
     for (var i = 0; i < size * size; ++i) {
-        items.modelTable.set(i, { 'value': table[i] })
+        items.modelTable.set(i, { 'lighton': table[i],  'soluce': showSoluce ? soluc[i] : 0})
     }
 }
 
@@ -238,14 +237,6 @@ function switchLight(index) {
     checkResult()
 }
 
-function getTable() {
-    var a = new Array()
-    for (var i = 0; i < size * size; ++i) {
-        a[i] = table[i] + (showSoluce ? 2 * soluc[i] : 0)
-    }
-    return a
-}
-
 function checkResult() {
     /* Check the result */
     var nb = 0
@@ -258,14 +249,9 @@ function checkResult() {
     }
 
     /* Check the soluce */
-    var nb2 = 0
-    soluc.forEach(function (entry) {
-        nb2 += entry
-    })
-    items.nbCelToWin = nb2
-
-    items.skyColor = Qt.rgba(0, (127 - 127 * (size * size - nb2) / (size * size)) / 255,
-                             (255 - 255 * (size * size - nb2) / (size * size)) / 255, 1)
+    items.nbCelToWin = nb
+    items.skyColor = Qt.rgba(0, (127 - 127 * (size * size - nb) / (size * size)) / 255,
+                             (255 - 255 * (size * size - nb) / (size * size)) / 255, 1)
 }
 
 function solve() {

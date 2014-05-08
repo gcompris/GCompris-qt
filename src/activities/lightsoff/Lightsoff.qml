@@ -78,7 +78,7 @@ ActivityBase {
         Image {
             id: sun
             source: Activity.url + "sun.svgz"
-            sourceSize.height: items.cellSize * 2
+            sourceSize.height: items.cellSize * 2 * items.nbCell / 5
             anchors {
                 left: parent.left
                 leftMargin: 100
@@ -95,7 +95,7 @@ ActivityBase {
             id: tux
             fillMode: Image.PreserveAspectFit
             source: Activity.url + "tux.svgz"
-            sourceSize.height: items.cellSize * 3
+            sourceSize.height: items.cellSize * 3 * items.nbCell / 5
             z: 3
             visible: true
             anchors {
@@ -144,23 +144,30 @@ ActivityBase {
                     height: items.cellSize
                     width: items.cellSize
                     border {
-                        color: value > 1 ? "red" : "transparent"
+                        color: soluce === 1 ? "red" : "transparent"
                         width: items.cellSize / 40
                     }
-                    radius: items.cellSize / 10
-                    BarButton {
-                        anchors.fill: parent
-                        fillMode: Image.PreserveAspectFit
-                        source: Activity.url + "off.svgz"
-                        sourceSize.height: items.cellSize
-                        visible: true
-                    }
+                    radius: items.cellSize / 10  
+
                     BarButton {
                         anchors.fill: parent
                         fillMode: Image.PreserveAspectFit
                         source: Activity.url + "../lightsoff.svgz"
+                        opacity: lighton === 1 ? 1 : 0
+                        z: lighton === 1 ? 11 : 10
                         sourceSize.height: items.cellSize
-                        opacity: value % 2 === 0 ? 0 : 1
+                        onClicked: { Activity.switchLight(index) }
+                        Behavior on opacity { PropertyAnimation { duration: 200 } }
+                        visible: true
+                    }
+
+                    BarButton {
+                        anchors.fill: parent
+                        fillMode: Image.PreserveAspectFit
+                        source: Activity.url + "off.svgz"
+                        opacity: lighton === 1 ? 0 : 1
+                        z: lighton === 1 ? 10 : 11
+                        sourceSize.height: items.cellSize
                         onClicked: { Activity.switchLight(index) }
                         Behavior on opacity { PropertyAnimation { duration: 200 } }
                         visible: true
