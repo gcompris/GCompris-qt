@@ -35,6 +35,7 @@ Item {
                 width: item.height
                 height: item.height
                 isClickable: authorizeClick
+                wantedColor: starsColor
             }
         }
     }
@@ -56,7 +57,6 @@ Item {
     }
 
     function moveStars(){
-        console.log("Move stars : " + nbStarsOn)
         for(var i=0;i<nbStarsOn;i++){
             repeaterStarsToMove.itemAt(i).x=targetX
             repeaterStarsToMove.itemAt(i).y=targetY

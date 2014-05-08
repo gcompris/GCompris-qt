@@ -155,13 +155,13 @@ Item {
         for(var i=0;i<nbStars1;i++){
             repeaterStars1.itemAt(i).anchors.centerIn=undefined
             repeaterStars1.itemAt(i).x=targetX + i*(hatItem.height/18 + 5)
-            repeaterStars1.itemAt(i).y=targetY
+            repeaterStars1.itemAt(i).y=targetY + offStar.height + 5
             repeaterStars1.itemAt(i).z+=2
         }
         for(var i=0;i<nbStars2;i++){
             repeaterStars2.itemAt(i).anchors.centerIn=undefined
             repeaterStars2.itemAt(i).x=targetX + i*(hatItem.height/18 + 5)
-            repeaterStars2.itemAt(i).y=targetY
+            repeaterStars2.itemAt(i).y=targetY + 2*offStar.height + 10
             repeaterStars2.itemAt(i).z+=2
         }
     }

@@ -7,6 +7,7 @@ Item {
     property string starState: "off"
     property bool isClickable: false
     property bool displayBounds: true
+    property string wantedColor: "yellow"
 
     width: 34
     height: 34
@@ -19,7 +20,7 @@ Item {
             if(starState=="on_yellow" || starState=="on_green" || starState=="on_blue") {
                  starState="off"
             }
-            else starState="on_yellow"
+            else starState="on_" + wantedColor
             Activity.verifyAnswer(starState)
         }
     }

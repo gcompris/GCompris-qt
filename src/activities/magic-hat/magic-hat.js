@@ -50,34 +50,57 @@ function initLevel() {
              break;
         case 1: number_of_stars[0]=getRandomInt(2,6)
              break;
-        case 2: number_of_stars[0]=getRandomInt(1,5)
-                number_of_stars[1]=getRandomInt(1,2)
+        case 2: number_of_stars[0]=getRandomInt(2,10)
+            break;
+        case 3: number_of_stars[0]=getRandomInt(2,5)
+                number_of_stars[1]=getRandomInt(2,5)
                 for(var i=0;i<3;i++){
                     items.repeatersList[i].itemAt(1).opacity = 1
                 }
             break;
-        case 3: number_of_stars[0]=getRandomInt(1,5)
-                number_of_stars[1]=getRandomInt(1,5)
+        case 4: number_of_stars[0]=getRandomInt(2,8)
+                number_of_stars[1]=getRandomInt(2,8)
                 for(var i=0;i<3;i++){
                     items.repeatersList[i].itemAt(1).opacity = 1
                 }
-            break;
-        case 4: number_of_stars[0]=getRandomInt(1,5)
-                number_of_stars[1]=getRandomInt(1,5)
-                number_of_stars[2]=getRandomInt(1,5)
+             break;
+        case 5: number_of_stars[0]=getRandomInt(2,10)
+                number_of_stars[1]=getRandomInt(2,10)
+                for(var i=0;i<3;i++){
+                    items.repeatersList[i].itemAt(1).opacity = 1
+                }
+             break;
+        case 6: number_of_stars[0]=getRandomInt(2,4)
+                number_of_stars[1]=getRandomInt(2,4)
+                number_of_stars[2]=getRandomInt(2,4)
                 for(var i=0;i<3;i++){
                     items.repeatersList[i].itemAt(1).opacity = 1
                     items.repeatersList[i].itemAt(2).opacity = 1
                 }
-             break;
-        case 5: number_of_stars[0]=getRandomInt(2,6)
-                number_of_stars[1]=0
-             break;
-        case 6: number_of_stars[0]=getRandomInt(1,5)
-                number_of_stars[1]=getRandomInt(1,2)
             break;
-        case 7: number_of_stars[0]=getRandomInt(1,5)
-                number_of_stars[1]=getRandomInt(1,5)
+        case 7: number_of_stars[0]=getRandomInt(2,6)
+                number_of_stars[1]=getRandomInt(2,6)
+                number_of_stars[2]=getRandomInt(2,6)
+                for(var i=0;i<3;i++){
+                    items.repeatersList[i].itemAt(1).opacity = 1
+                    items.repeatersList[i].itemAt(2).opacity = 1
+                }
+            break;
+        case 8: number_of_stars[0]=getRandomInt(2,8)
+                number_of_stars[1]=getRandomInt(2,8)
+                number_of_stars[2]=getRandomInt(2,8)
+                for(var i=0;i<3;i++){
+                    items.repeatersList[i].itemAt(1).opacity = 1
+                    items.repeatersList[i].itemAt(2).opacity = 1
+                }
+            break;
+        case 9: number_of_stars[0]=getRandomInt(2,10)
+                number_of_stars[1]=getRandomInt(2,10)
+                number_of_stars[2]=getRandomInt(2,10)
+                for(var i=0;i<3;i++){
+                    items.repeatersList[i].itemAt(1).opacity = 1
+                    items.repeatersList[i].itemAt(2).opacity = 1
+                }
             break;
     }
 
@@ -110,17 +133,14 @@ function verifyAnswer(starState) {
     if(starState=="on_yellow"){
         number_of_userStars[0]++
     }
-    else number_of_userStars[0]--
     if(starState=="on_green"){
         number_of_userStars[1]++
     }
-    else number_of_userStars[1]--
     if(starState=="on_blue"){
         number_of_userStars[2]++
     }
-    else number_of_userStars[2]--
 
-    if(number_of_userStars[0]==nbStarsToCount[0]){
+    if(number_of_userStars[0]==nbStarsToCount[0] && number_of_userStars[1]==nbStarsToCount[1] && number_of_userStars[2]==nbStarsToCount[2]){
         items.bonus.good("flower")
     }
 }
@@ -145,7 +165,7 @@ function moveStarsUnderHat(){
     for(var i=0;i<2;i++){
         for(var j=0;j<3;j++){
             items.repeatersList[i].itemAt(j).targetX=-items.background.width/3 + items.starsSize/1.4
-            items.repeatersList[i].itemAt(j).targetY=items.background.height/(2+(i*0.3)) + items.starsSize/4
+            items.repeatersList[i].itemAt(j).targetY=items.background.height/(2+(j*0.3)) + items.starsSize/4
             items.repeatersList[i].itemAt(j).moveStars()
         }
     }
