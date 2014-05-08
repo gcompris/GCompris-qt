@@ -36,37 +36,37 @@ function initLevel() {
     starsToCount=new Array()
     nbUserStars=0
     nbStarsUnderHat=0
-    var nbStars1
-    var nbStars2
+    var nbGreenStars
+    var nbBlueStars
     magicHat=createHat()
 
     switch(currentLevel){
-        case 1: nbStars1=getRandomInt(1,2)
-                nbStars2=getRandomInt(1,2)
+        case 1: nbGreenStars=getRandomInt(1,2)
+                nbBlueStars=getRandomInt(1,2)
              break;
-        case 2: nbStars1=getRandomInt(1,3)
-            nbStars2=getRandomInt(1,2)
+        case 2: nbGreenStars=getRandomInt(1,3)
+            nbBlueStars=getRandomInt(1,2)
              break;
-        case 3: nbStars1=getRandomInt(1,4)
-            nbStars2=getRandomInt(1,3)
+        case 3: nbGreenStars=getRandomInt(1,4)
+            nbBlueStars=getRandomInt(1,3)
             break;
-        case 4: nbStars1=getRandomInt(1,5)
-            nbStars2=getRandomInt(1,4)
+        case 4: nbGreenStars=getRandomInt(1,5)
+            nbBlueStars=getRandomInt(1,4)
             break;
-        case 5: nbStars1=getRandomInt(1,5)
-            nbStars2=getRandomInt(1,5)
+        case 5: nbGreenStars=getRandomInt(1,5)
+            nbBlueStars=getRandomInt(1,5)
             break;
-        case 6: nbStars1=getRandomInt(1,5)
-            nbStars2=getRandomInt(1,5)
+        case 6: nbGreenStars=getRandomInt(1,5)
+            nbBlueStars=getRandomInt(1,5)
             break;
-        case 7: nbStars1=getRandomInt(1,5)
-            nbStars2=getRandomInt(1,5)
+        case 7: nbGreenStars=getRandomInt(1,5)
+            nbBlueStars=getRandomInt(1,5)
             break;
-        case 8: nbStars1=getRandomInt(1,5)
-            nbStars2=getRandomInt(1,5)
+        case 8: nbGreenStars=getRandomInt(1,5)
+            nbBlueStars=getRandomInt(1,5)
             break;
-        case 9: nbStars1=getRandomInt(1,5)
-            nbStars2=getRandomInt(1,5)
+        case 9: nbGreenStars=getRandomInt(1,5)
+            nbBlueStars=getRandomInt(1,5)
             break;
     }
 

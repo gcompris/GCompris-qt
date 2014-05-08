@@ -106,24 +106,27 @@ function initLevel() {
 
     for(var i=0;i<3;i++){
         items.repeatersList[0].itemAt(i).nbStarsOn = number_of_stars[i]
-        if(mode=="minus")
-            nbStarsToAddOrRemove[i]=getRandomInt(1,number_of_stars[i]-1)
-        else nbStarsToAddOrRemove[i]=getRandomInt(1,10-number_of_stars[i])
+        if(number_of_stars[i]>0){
+            if(mode=="minus")
+                nbStarsToAddOrRemove[i]=getRandomInt(1,number_of_stars[i]-1)
+            else nbStarsToAddOrRemove[i]=getRandomInt(1,10-number_of_stars[i])
+        }
+        else nbStarsToAddOrRemove[i]=0
     }
 
     if(mode=="minus"){
-        items.hat.nbStars0=nbStarsToAddOrRemove[0]
-        items.hat.nbStars1=nbStarsToAddOrRemove[1]
-        items.hat.nbStars2=nbStarsToAddOrRemove[2]
+        items.hat.nbYellowStars=nbStarsToAddOrRemove[0]
+        items.hat.nbGreenStars=nbStarsToAddOrRemove[1]
+        items.hat.nbBlueStars=nbStarsToAddOrRemove[2]
         for(var i=0;i<3;i++){
             nbStarsToCount[i]=number_of_stars[i]-nbStarsToAddOrRemove[i]
             items.repeatersList[1].itemAt(i).nbStarsOn=0
         }
     }
     else {
-        items.hat.nbStars0=0
-        items.hat.nbStars1=0
-        items.hat.nbStars2=0
+        items.hat.nbYellowStars=0
+        items.hat.nbGreenStars=0
+        items.hat.nbBlueStars=0
         for(var i=0;i<3;i++){
             nbStarsToCount[i]=number_of_stars[i]+nbStarsToAddOrRemove[i]
             items.repeatersList[1].itemAt(i).nbStarsOn=nbStarsToAddOrRemove[i]
@@ -141,7 +144,6 @@ function verifyAnswer(starState) {
     if(starState=="on_blue"){
         number_of_userStars[2]++
     }
-
     if(number_of_userStars[0]==nbStarsToCount[0] && number_of_userStars[1]==nbStarsToCount[1] && number_of_userStars[2]==nbStarsToCount[2]){
         items.bonus.good("flower")
     }
@@ -164,20 +166,28 @@ function previousLevel() {
 function moveStarsUnderHat(){
     items.hat.targetX=items.background.width/2 + items.background.width/26
     items.hat.targetY=items.columnY + items.background.height/8
-    for(var i=0;i<2;i++){
         for(var j=0;j<3;j++){
-            items.repeatersList[i].itemAt(j).targetX=-items.background.width/3 + items.starsSize/1.4
-            items.repeatersList[i].itemAt(j).targetY=items.background.height/(2+(j*0.3)) + items.starsSize/4
-            items.repeatersList[i].itemAt(j).moveStars()
+            items.repeatersList[0].itemAt(j).targetX=-items.background.width/3 + items.starsSize/1.5
+            items.repeatersList[0].itemAt(j).targetY=items.background.height/(2+(j*0.3)) + items.starsSize/4
+            items.repeatersList[0].itemAt(j).moveStars()
         }
+}
+
+function movePlusStars(){
+    for(var j=0;j<3;j++){
+        items.repeatersList[1].itemAt(j).targetX=-items.background.width/3 + items.starsSize/1.5
+        items.repeatersList[1].itemAt(j).targetY=items.background.height/(4+(j*1.3)) - items.starsSize/5
+        items.repeatersList[1].itemAt(j).moveStars()
     }
 }
 
 //Function called everytime a star animation ends, it permits to change the hat state at the end of an animation for exemple
 function animationFinished(){
     count++
-    if(mode=="minus" && count==number_of_stars[0]+number_of_stars[1]+number_of_stars[2]){
-        items.hat.moveStars()
+    if(count==number_of_stars[0]+number_of_stars[1]+number_of_stars[2]){
+        if(mode=="minus")
+            items.hat.moveStars()
+        else movePlusStars()
     }
     if(count==number_of_stars[0]+number_of_stars[1]+number_of_stars[2]+nbStarsToAddOrRemove[0]+nbStarsToAddOrRemove[1]+nbStarsToAddOrRemove[2]){
         userGuessNumberState()
@@ -186,8 +196,9 @@ function animationFinished(){
 
 function userGuessNumberState(){
     for(var i=0;i<3;i++){
-        items.repeatersList[1].itemAt(i).nbStarsOn=nbStarsToAddOrRemove[i]
         items.repeatersList[2].itemAt(i).authorizeClick=true
+        if(mode=="minus")
+            items.repeatersList[1].itemAt(i).nbStarsOn=nbStarsToAddOrRemove[i]
     }
     magicHat.state="GuessNumber"
 }
