@@ -166,10 +166,10 @@ ActivityBase {
         }
     }
     Keys.onPressed: {
-        Activity.keyEvent(event.key, true)
+        numpad.updateAnswer(event.key,true);
     }
 
     Keys.onReleased: {
-        Activity.keyEvent(event.key, false)
+        numpad.updateAnswer(event.key, false);
     }
 }
