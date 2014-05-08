@@ -81,7 +81,7 @@ ActivityBase {
             sourceSize.height: items.cellSize * 2 * items.nbCell / 5
             anchors {
                 left: parent.left
-                leftMargin: 100
+                leftMargin: 10
                 bottom: parent.bottom
                 bottomMargin: parent.height / 3 + 2 / 3 * parent.height
                               * items.nbCelToWin / (items.nbCell * items.nbCell)
@@ -95,14 +95,14 @@ ActivityBase {
             id: tux
             fillMode: Image.PreserveAspectFit
             source: Activity.url + "tux.svgz"
-            sourceSize.height: items.cellSize * 3 * items.nbCell / 5
+            sourceSize.width: parent.width - grid.width < 200 ?
+                                  bar.height * 1.2 :
+                                  Math.min((parent.width - grid.width - 40) / 2, 150)
             z: 3
             visible: true
             anchors {
                 right: parent.right
                 rightMargin: 20
-                left: grid.right
-                leftMargin: 20
                 bottom: parent.bottom
                 bottomMargin: 20
             }
