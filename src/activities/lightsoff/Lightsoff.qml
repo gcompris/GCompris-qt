@@ -29,7 +29,6 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {
-
     }
 
     pageComponent: Rectangle {

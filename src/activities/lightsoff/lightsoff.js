@@ -176,6 +176,7 @@ function initLevel() {
         soluc = levels[currentLevel * 2 + 1].slice(0)
     }
     showSoluce = false
+    items.modelTable.clear()
     items.nbCell = size
     refreshModel()
     checkResult()
