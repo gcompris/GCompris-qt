@@ -95,10 +95,6 @@ void ApplicationInfo::setApplicationWidth(const int newWidth)
 
 QString ApplicationInfo::getAudioFilePath(const QString &file)
 {
-    /*
-     *  TODO See in storage (database, QSettings)
-     *  if the value exist and use it if exist
-     */
     QString localeShortName = localeShort();
 
     QString filename = file;

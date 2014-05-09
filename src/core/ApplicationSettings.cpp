@@ -68,8 +68,14 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
         m_config.setValue(ENABLE_EFFECTS_KEY, true);
         m_config.setValue(FULLSCREEN_KEY, true);
         m_config.setValue(ENABLE_AUDIO_KEY, true);
-         // Todo get locale, if "C", put default locale
-        m_config.setValue(LOCALE_KEY, GC_DEFAULT_LOCALE);
+        // Get locale, if "C", put default locale
+        QLocale systemLocale = QLocale::system();
+        if(systemLocale == QLocale::c()) {
+            m_config.setValue(LOCALE_KEY, GC_DEFAULT_LOCALE);
+        }
+        else {
+            m_config.setValue(LOCALE_KEY, systemLocale.name() + ".UTF-8");
+        }
         m_config.sync();
     }
 
