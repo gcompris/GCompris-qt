@@ -64,12 +64,12 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         /* Sounds */
-        Audio {
+        GCAudio {
             id: playFlip
             source: "qrc:/gcompris/src/core/resource/sounds/flip.wav"
         }
 
-        Audio {
+        GCAudio {
             id: playBrick
             source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
         }

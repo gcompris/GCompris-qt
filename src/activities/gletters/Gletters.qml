@@ -138,20 +138,14 @@ ActivityBase {
             onTriggered: Activity.dropWord();
         }
 
-        Audio {
+        GCAudio {
             id: flipAudio
             source: "qrc:/gcompris/src/core/resource/sounds/flip.wav";
-            
-            onErrorChanged: console.log("Gletters: flipAudio error: " +
-                    error + ": " + errorString + " (source: " + source + ")")
         }
 
-        Audio {
+        GCAudio {
             id: crashAudio
             source: "qrc:/gcompris/src/core/resource/sounds/crash.wav";
-            
-            onErrorChanged: console.log("Gletters: crashAudio error: " +
-                    error + ": " + errorString + " (source: " + source + ")")
         }
     }
 

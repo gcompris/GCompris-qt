@@ -207,9 +207,8 @@ ActivityBase {
                 }
             }
         }
-        Audio {
+        GCAudio {
             id: audio
-            onError: console.log("play error: " + errorString)
         }
 
         DialogHelp {

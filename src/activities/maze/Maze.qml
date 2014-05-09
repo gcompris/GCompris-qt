@@ -348,7 +348,7 @@ ActivityBase {
             text: qsTr("Look at your position, then switch back to invisible mode to continue your moves")
         }
 
-        Audio {
+        GCAudio {
             id: playBrick
             source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
         }

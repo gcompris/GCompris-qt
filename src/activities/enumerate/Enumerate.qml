@@ -137,7 +137,7 @@ ActivityBase {
             onHomeClicked: activity.home()
         }
 
-        Audio {
+        GCAudio {
             id: winAudio
             source: "qrc:/gcompris/src/core/resource/sounds/bonus.wav"
         }
