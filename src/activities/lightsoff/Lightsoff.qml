@@ -70,8 +70,9 @@ ActivityBase {
         /* The background picture */
         Image {
             source: Activity.url + "back.svgz"
-            fillMode: Image.Stretch
-            anchors.fill: parent
+            anchors.bottom: parent.bottom
+            fillMode: Image.TileHorizontally
+            sourceSize.height: (parent.height - (gridarea.y + gridarea.height)) * 1.2
             z: 2
         }
         Image {
@@ -80,6 +81,13 @@ ActivityBase {
             anchors.fill: gridarea
             anchors.margins: -3 * items.cellSize
             z: 2
+        }
+        Image {
+            source: Activity.url + "front.svgz"
+            anchors.bottom: parent.bottom
+            fillMode: Image.TileHorizontally
+            sourceSize.height: 20 + tux.height * 0.5
+            z: 999
         }
 
         /* The sun */
@@ -126,14 +134,8 @@ ActivityBase {
             id: gridarea
             anchors.fill: grid
             anchors.margins: items.cellSize / -10
-            color: "lightgrey"
-            opacity: 0.6
+            opacity: 0
             z: 4
-            border {
-                color: "black"
-                width: items.cellSize / 20
-            }
-            radius: items.cellSize / 10
         }
 
         Grid {
@@ -165,7 +167,7 @@ ActivityBase {
                     BarButton {
                         anchors.fill: parent
                         fillMode: Image.PreserveAspectFit
-                        source: Activity.url + "../lightsoff.svgz"
+                        source: Activity.url + "on.svgz"
                         opacity: lighton === 1 ? 1 : 0
                         z: lighton === 1 ? 11 : 10
                         sourceSize.height: items.cellSize
