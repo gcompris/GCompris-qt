@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
     // Apply translation
     app.installTranslator(&translator);
 
-    QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
+	QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
     QObject *topLevel = engine.rootObjects().value(0);
 
     QQuickWindow *window = qobject_cast<QQuickWindow *>(topLevel);

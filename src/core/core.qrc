@@ -1,14 +1,5 @@
 <RCC>
     <qresource prefix="/gcompris/src/core">
-        <file>ActivityInfo.cpp</file>
-        <file>ActivityInfoTree.cpp</file>
-        <file>main.cpp</file>
-        <file>ApplicationInfo.cpp</file>
-        <file>File.cpp</file>
-        <file>ActivityInfo.h</file>
-        <file>ActivityInfoTree.h</file>
-        <file>ApplicationInfo.h</file>
-        <file>File.h</file>
         <file>ActivityBase.qml</file>
         <file>AnswerButton.qml</file>
         <file>Balloon.qml</file>

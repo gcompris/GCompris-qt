@@ -18,16 +18,10 @@ set(gcompris_HEADERS
    File.h
 )
 
-set(gcompris_RCCS ${gcompris_RCCS} core.qrc CACHE STRING "resourceFile" FORCE)
-
 qt5_wrap_cpp(gcompris_MOC ${gcompris_SRCS} ${gcompris_HEADERS})
-qt5_add_resources(gcompris_RCC_SRCS ${gcompris_RCCS})
-set(gcompris_RCC_SRCS ${gcompris_RCC_SRCS})
-
-set_source_files_properties(${gcompris_RCC_SRCS} PROPERTIES GENERATED ON)
 
 if(NOT ANDROID)
-  add_executable(GCompris ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RCC_SRCS})
+  add_executable(GCompris ${gcompris_SRCS} ${gcompris_MOC})
   qt5_use_modules(GCompris Qml Quick Gui Multimedia Network XmlPatterns Svg Core)
   target_link_libraries(GCompris
     ${QT_LIBRARIES}
@@ -35,9 +29,11 @@ if(NOT ANDROID)
 endif(NOT ANDROID)
 
 if(ANDROID)
-  add_library(GCompris SHARED ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RCC_SRCS})
+  add_library(GCompris SHARED ${gcompris_SRCS} ${gcompris_MOC})
   qt5_use_modules(GCompris Qml Quick Gui Multimedia Core Svg XmlPatterns)
   target_link_libraries(GCompris
     ${QT_LIBRARIES}
   )
 endif(ANDROID)
+
+GCOMPRIS_ADD_RCC(core)

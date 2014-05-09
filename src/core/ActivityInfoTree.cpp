@@ -1,6 +1,8 @@
 #include <QtDebug>
 #include <QQmlProperty>
 #include <QQmlComponent>
+#include <QResource>
+#include <QCoreApplication>
 
 #include "ActivityInfoTree.h"
 
@@ -114,10 +116,16 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 		QString line = in.readLine();
 		if(!line.startsWith("#")) {
 			QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(line);
+
+			if(!QResource::registerResource(
+				   QCoreApplication::applicationDirPath() + "/" + line + ".rcc"))
+				qDebug() << "Failed to load the resource file " << line + ".rcc";
+
 			QQmlComponent componentRoot(engine,	QUrl(url));
 			QObject *objectRoot = componentRoot.create();
-			if(objectRoot)
+			if(objectRoot) {
 				menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(objectRoot));
+			}
 		}
 	}
 	file.close();
@@ -128,6 +136,12 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 
 void ActivityInfoTree::init()
 {
+	if(!QResource::registerResource(QCoreApplication::applicationDirPath() + "/core.rcc"))
+		qDebug() << "Failed to load the resource file core.rcc";
+
+	if(!QResource::registerResource(QCoreApplication::applicationDirPath() + "/menu.rcc"))
+		qDebug() << "Failed to load the resource file menu.rcc";
+
 	qmlRegisterSingletonType<QObject>("GCompris", 1, 0, "ActivityInfoTree", menuTreeProvider);
 	qmlRegisterType<ActivityInfo>("GCompris", 1, 0, "ActivityInfo");
 }

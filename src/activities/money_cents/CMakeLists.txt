@@ -1,2 +1,1 @@
- ### License ###
-set(gcompris_RCCS ${gcompris_RCCS} ${CMAKE_CURRENT_LIST_DIR}/money_cents.qrc CACHE STRING "resourceFile" FORCE)
+GCOMPRIS_ADD_RCC(money_cents)
