@@ -29,6 +29,7 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {
+
     }
 
     pageComponent: Rectangle {
@@ -73,6 +74,13 @@ ActivityBase {
             anchors.fill: parent
             z: 2
         }
+        Image {
+            source: Activity.url + "building.svgz"
+            fillMode: Image.PreserveAspectFit
+            anchors.fill: gridarea
+            anchors.margins: -3 * items.cellSize
+            z: 2
+        }
 
         /* The sun */
         Image {
@@ -81,13 +89,17 @@ ActivityBase {
             sourceSize.height: items.cellSize * 2 * items.nbCell / 5
             anchors {
                 left: parent.left
-                leftMargin: 100
+                leftMargin: 80
                 bottom: parent.bottom
                 bottomMargin: parent.height / 3 + 2 / 3 * parent.height
                               * items.nbCelToWin / (items.nbCell * items.nbCell)
             }
             z: 1
-            Behavior on anchors.bottomMargin { PropertyAnimation { duration: 1000 } }
+            Behavior on anchors.bottomMargin {
+                PropertyAnimation {
+                    duration: 1000
+                }
+            }
         }
 
         /* Tux */
@@ -111,6 +123,7 @@ ActivityBase {
 
         /* The grid */
         Rectangle {
+            id: gridarea
             anchors.fill: grid
             anchors.margins: items.cellSize / -10
             color: "lightgrey"
@@ -147,7 +160,7 @@ ActivityBase {
                         color: soluce === 1 ? "red" : "transparent"
                         width: items.cellSize / 40
                     }
-                    radius: items.cellSize / 10  
+                    radius: items.cellSize / 10
 
                     BarButton {
                         anchors.fill: parent
@@ -156,8 +169,14 @@ ActivityBase {
                         opacity: lighton === 1 ? 1 : 0
                         z: lighton === 1 ? 11 : 10
                         sourceSize.height: items.cellSize
-                        onClicked: { Activity.switchLight(index) }
-                        Behavior on opacity { PropertyAnimation { duration: 200 } }
+                        onClicked: {
+                            Activity.switchLight(index)
+                        }
+                        Behavior on opacity {
+                            PropertyAnimation {
+                                duration: 200
+                            }
+                        }
                         visible: true
                     }
 
@@ -168,8 +187,14 @@ ActivityBase {
                         opacity: lighton === 1 ? 0 : 1
                         z: lighton === 1 ? 10 : 11
                         sourceSize.height: items.cellSize
-                        onClicked: { Activity.switchLight(index) }
-                        Behavior on opacity { PropertyAnimation { duration: 200 } }
+                        onClicked: {
+                            Activity.switchLight(index)
+                        }
+                        Behavior on opacity {
+                            PropertyAnimation {
+                                duration: 200
+                            }
+                        }
                         visible: true
                     }
                 }

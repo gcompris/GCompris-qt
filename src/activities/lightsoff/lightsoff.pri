@@ -7,4 +7,5 @@ APP_FILES += \
         $$PWD/resource/off.svgz \
         $$PWD/resource/back.svgz \
         $$PWD/resource/tux.svgz \
-        $$PWD/resource/sun.svgz
+        $$PWD/resource/sun.svgz \
+        $$PWD/resource/building.svgz
