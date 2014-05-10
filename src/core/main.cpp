@@ -22,30 +22,32 @@ int main(int argc, char *argv[])
 	ActivityInfoTree::init();
 	File::init();
 
-    // Load translation
+    // Load configuration
     QString locale;
     // Getting fullscreen mode from config if exist, else true is default value
     bool isFullscreen = true;
     {
         // Local scope for config
-        QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/GCompris.conf",
+        QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
+                         "/gcompris/GCompris.conf",
                          QSettings::IniFormat);
         // Get locale
         if(config.contains("General/locale")) {
             locale = config.value("General/locale").toString();
             isFullscreen = config.value("General/fullscreen").toBool();
-        }
-        else {
+        } else {
             locale = "en_US.UTF-8";
         }
     }
 
+    // Load translation
     // Remove .UTF8
     locale.remove(".UTF-8");
     // Look for a translation using this
     QTranslator translator;
-    if(!translator.load("gcompris_" + locale)) {
-        qDebug() << "Unable to load translation, use en_US by default";
+    if(!translator.load("gcompris_" + locale, QCoreApplication::applicationDirPath())) {
+        qDebug() << "Unable to load translation for locale " <<
+                    locale << ", use en_US by default";
     }
 
     // Apply translation
