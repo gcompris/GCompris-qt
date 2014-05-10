@@ -87,7 +87,7 @@ public:
 									   QJSEngine *scriptEngine);
 
     static void setWindow(QQuickWindow *window);
-	static QString getFilePath(const QString &file);
+    static QString getFilePath(const QString &file);
 
 	int applicationWidth() const { return m_applicationWidth; }
 	void setApplicationWidth(const int newWidth);
@@ -118,7 +118,10 @@ public:
     void setLocale(const QString newLocale) {m_applicationSettings.setLocale(newLocale); emit localeChanged();}
 
     // Can't use left(2) because of Asturian where there are 3 chars
-    QString localeShort() const { return m_applicationSettings.locale().left(m_applicationSettings.locale().indexOf('_')); }
+    static QString localeShort(const QString &locale) {
+        return locale.left(locale.indexOf('_'));
+    }
+    QString localeShort() const { return localeShort(m_applicationSettings.locale()); }
 
 protected slots:
 	void notifyPortraitMode();

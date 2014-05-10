@@ -11,6 +11,29 @@
 #include "ActivityInfoTree.h"
 #include "File.h"
 
+bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
+{
+    QFile file("assets:/gcompris_" + locale + ".qm");
+
+    file.open(QIODevice::ReadOnly);
+    QDataStream in(&file);
+    uchar *data = (uchar*)malloc(file.size());
+
+    if(!file.exists())
+        qDebug() << "file assets:/" << locale << ".qm exists";
+
+    in.readRawData((char*)data, file.size());
+
+    if(!translator.load(data, file.size())) {
+        qDebug() << "Unable to load translation for locale " <<
+                    locale << ", use en_US by default";
+        free(data);
+        return false;
+    }
+    // Do not free data, it is still needed by translator
+    return true;
+}
+
 int main(int argc, char *argv[])
 {
 	QGuiApplication app(argc, argv);
@@ -45,10 +68,16 @@ int main(int argc, char *argv[])
     locale.remove(".UTF-8");
     // Look for a translation using this
     QTranslator translator;
+
+#if defined(Q_OS_ANDROID)
+    if(!loadAndroidTranslation(translator, locale))
+        loadAndroidTranslation(translator, ApplicationInfo::localeShort(locale));
+#else
     if(!translator.load("gcompris_" + locale, QCoreApplication::applicationDirPath())) {
         qDebug() << "Unable to load translation for locale " <<
                     locale << ", use en_US by default";
     }
+#endif
 
     // Apply translation
     app.installTranslator(&translator);
