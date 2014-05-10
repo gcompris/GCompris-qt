@@ -83,7 +83,7 @@ SET(TRANSLATIONS_FILES
 # Set the output dir for the translation files to /bin
 foreach(TsSource ${TRANSLATIONS_FILES})
   set_source_files_properties(${TsSource}
-	PROPERTIES OUTPUT_LOCATION ${GCOMPRIS_TRANSLATIONS_DIR})
+  PROPERTIES OUTPUT_LOCATION ${GCOMPRIS_TRANSLATIONS_DIR})
 endforeach()
 
 # FIXME On make clean the translations/*.ts files should not be removed
