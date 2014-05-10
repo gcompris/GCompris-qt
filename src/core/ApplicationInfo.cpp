@@ -96,19 +96,19 @@ void ApplicationInfo::setApplicationWidth(const int newWidth)
 QString ApplicationInfo::getFilePath(const QString &file)
 {
 #if defined(Q_OS_ANDROID)
-	return QString("assets:/%1").arg(file);
+    return QString("assets:/%1").arg(file);
 #else
-	return QString("file:///%1/%2").arg(QCoreApplication::applicationDirPath(), filename);
+    return QString("file:///%1/%2").arg(QCoreApplication::applicationDirPath(), file);
 #endif
 }
 
 QString ApplicationInfo::getAudioFilePath(const QString &file)
 {
-	QString localeShortName = localeShort();
+    QString localeShortName = localeShort();
 
     QString filename = file;
     filename.replace("$LOCALE", localeShortName);
-	return getFilePath(filename);
+    return getFilePath(filename);
 }
 
 void ApplicationInfo::notifyPortraitMode()
