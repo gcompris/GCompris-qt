@@ -98,7 +98,7 @@ QString ApplicationInfo::getFilePath(const QString &file)
 #if defined(Q_OS_ANDROID)
     return QString("assets:/%1").arg(file);
 #else
-    return QString("file:///%1/%2").arg(QCoreApplication::applicationDirPath(), file);
+    return QString("%1/%2").arg(QCoreApplication::applicationDirPath(), file);
 #endif
 }
 
