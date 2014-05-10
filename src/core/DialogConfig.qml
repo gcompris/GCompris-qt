@@ -43,7 +43,6 @@ Rectangle {
     visible: false
     title: qsTr("Configuration")
     property QtObject activityInfo: ActivityInfoTree.currentActivity
-    //subtitle: activityInfo.section
 
     Row {
         spacing: 2
@@ -53,46 +52,25 @@ Rectangle {
             spacing: 10
             anchors.top: parent.top
             Item { width: 1; height: 10 }
+
             Rectangle {
                 color: "#e6e6e6"
                 radius: 6.0
-                width: dialogConfig.width - 30
-                height: 52
+                width: parent.width
+                height: title.height * 1.2
                 border.color: "black"
                 border.width: 2
 
-                Item {
+                Text {
                     id: title
-                    width: parent.width
-                    height: 32
-                    Text {
-                        text: dialogConfig.title
-                        anchors.fill: parent
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        font.family: "Helvetica"
-                        color: "black"
-                        fontSizeMode: Text.Fit
-                        minimumPointSize: 8
-                        font.pointSize: 24
-                        font.weight: Font.DemiBold
-                    }
-                }
-                Item {
-                    width: parent.width
-                    height: 18
-                    anchors.top: title.bottom
-                    Text {
-                        text: dialogConfig.subtitle
-                        anchors.fill: parent
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        font.family: "Helvetica"
-                        color: "black"
-                        fontSizeMode: Text.Fit
-                        minimumPointSize: 7
-                        font.pointSize: 20
-                    }
+                    text: dialogConfig.title
+                    width: dialogConfig.width - 30
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Helvetica"
+                    color: "black"
+                    font.pointSize: 24
+                    font.weight: Font.DemiBold
                 }
             }
             Rectangle {
@@ -154,7 +132,7 @@ Rectangle {
                             id: languageBox
                             style: GCComboBoxStyle {}
                             model: languages
-                            width: 200
+                            width: 200 * ApplicationInfo.ratio
                         }
                     }
                 }

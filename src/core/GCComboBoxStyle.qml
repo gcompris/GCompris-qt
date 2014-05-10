@@ -1,11 +1,12 @@
 import QtQuick 2.1
 import QtQuick.Controls 1.1
 import QtQuick.Controls.Styles 1.1
+import GCompris 1.0
 
 ComboBoxStyle {
     background: Rectangle {
-        implicitWidth: 100
-        implicitHeight: 25
+        implicitWidth: 200
+        implicitHeight: 50 * ApplicationInfo.ratio
         border.width: control.activeFocus ? 4 : 2
         border.color: "black"
         radius: 10
