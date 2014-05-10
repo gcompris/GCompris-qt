@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 2.8.12)
 
 project(gcompris C CXX)
 
-include(cmake/rcc.cmake)
-
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${my_cxx_flags}")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${my_cxx_flags}")
 
@@ -33,8 +31,24 @@ find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED
 #    message("${_variableName}=${${_variableName}}")
 #endforeach()
 
-# To have src/core/*{.qml/.js} files and activities.txt in qtcreator project
-file(GLOB gcompris_SRCS src/core/*.qml src/core/*.js src/activities/*/*.qml
+# Set output directory
+if(ANDROID)
+  # Android .so output
+  set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android/libs/${ARM_TARGET}/)
+  set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/android/assets CACHE INTERNAL "" FORCE)
+  set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/android/assets CACHE INTERNAL "" FORCE)
+  add_subdirectory(android)
+else(ANDROID)
+  # Desktop build
+  set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+  set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/bin CACHE INTERNAL "" FORCE)
+  set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/bin CACHE INTERNAL "" FORCE)
+endif(ANDROID)
+
+include(cmake/rcc.cmake)
+
+# Files to translate
+file(GLOB ACTIVITY_SRCS src/core/*.qml src/core/*.js src/activities/*/*.qml
   src/activities/*/*.js src/activities/activities.txt)
 
 # Translations handling
@@ -69,22 +83,12 @@ SET(TRANSLATIONS_FILES
 # Set the output dir for the translation files to /bin
 foreach(TsSource ${TRANSLATIONS_FILES})
   set_source_files_properties(${TsSource}
-	PROPERTIES OUTPUT_LOCATION ${CMAKE_CURRENT_BINARY_DIR}/bin)
+	PROPERTIES OUTPUT_LOCATION ${GCOMPRIS_TRANSLATIONS_DIR})
 endforeach()
 
 # FIXME On make clean the translations/*.ts files should not be removed
-qt5_create_translation(QM_FILES ${gcompris_SRCS} ${TRANSLATIONS_FILES})
-add_custom_target(UpdateTranslations DEPENDS ${gcompris_SRCS} ${TRANSLATIONS_FILES})
+qt5_create_translation(QM_FILES ${ACTIVITY_SRCS} ${TRANSLATIONS_FILES})
+add_custom_target(UpdateTranslations DEPENDS ${ACTIVITY_SRCS} ${TRANSLATIONS_FILES})
 add_custom_target(BuildTranslations DEPENDS ${QM_FILES})
-
-# Set output directory
-if(ANDROID)
-  # Android .so output
-  set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android/libs/${ARM_TARGET}/)
-  add_subdirectory(android)
-else(ANDROID)
-  # Desktop build
-  set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-endif(ANDROID)
 
 add_subdirectory(src)

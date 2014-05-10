@@ -93,18 +93,22 @@ void ApplicationInfo::setApplicationWidth(const int newWidth)
     }
 }
 
+QString ApplicationInfo::getFilePath(const QString &file)
+{
+#if defined(Q_OS_ANDROID)
+	return QString("assets:/%1").arg(file);
+#else
+	return QString("file:///%1/%2").arg(QCoreApplication::applicationDirPath(), filename);
+#endif
+}
+
 QString ApplicationInfo::getAudioFilePath(const QString &file)
 {
-    QString localeShortName = localeShort();
+	QString localeShortName = localeShort();
 
     QString filename = file;
     filename.replace("$LOCALE", localeShortName);
-    QString("file:///%1/%2").arg(QCoreApplication::applicationDirPath(), filename);
-#if defined(Q_OS_ANDROID)
-    return QString("asset:/%1").arg(file);
-#else
-    return QString("file:///%1/%2").arg(QCoreApplication::applicationDirPath(), filename);
-#endif
+	return getFilePath(filename);
 }
 
 void ApplicationInfo::notifyPortraitMode()

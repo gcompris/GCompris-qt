@@ -1,16 +1,13 @@
 
 set(gcompris_SRCS
-  ${gcompris_SRCS}
    ActivityInfo.cpp
    ActivityInfoTree.cpp
    ApplicationInfo.cpp
    ApplicationSettings.cpp
    File.cpp
-   main.cpp
 )
 
 set(gcompris_HEADERS
-  ${gcompris_HEADERS}
    ActivityInfo.h
    ActivityInfoTree.h
    ApplicationInfo.h
@@ -19,6 +16,12 @@ set(gcompris_HEADERS
 )
 
 qt5_wrap_cpp(gcompris_MOC ${gcompris_SRCS} ${gcompris_HEADERS})
+
+# main.cpp needs not moc
+set(gcompris_SRCS
+   ${gcompris_SRCS}
+   main.cpp
+)
 
 if(NOT ANDROID)
   add_executable(GCompris ${gcompris_SRCS} ${gcompris_MOC})

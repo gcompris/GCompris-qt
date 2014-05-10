@@ -87,6 +87,7 @@ public:
 									   QJSEngine *scriptEngine);
 
     static void setWindow(QQuickWindow *window);
+	static QString getFilePath(const QString &file);
 
 	int applicationWidth() const { return m_applicationWidth; }
 	void setApplicationWidth(const int newWidth);
