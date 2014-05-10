@@ -137,7 +137,6 @@ Rectangle {
                             id: enableFullscreenBox
                             text: qsTr("Fullscreen")
                             checked: isFullscreen
-                            visible: !ApplicationInfo.isMobile
                             style: CheckBoxStyle {
                                 indicator: Image {
                                     sourceSize.height: 50 * ApplicationInfo.ratio
