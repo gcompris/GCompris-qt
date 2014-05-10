@@ -57,8 +57,7 @@ int main(int argc, char **argv) {
 
     // Create CMakeLists.txt file
     std::ofstream cmakeOutput("CMakeLists.txt", std::ios::out);
-    cmakeOutput << " ### License ###\n";
-    cmakeOutput << "set(gcompris_RCCS ${gcompris_RCCS} ${CMAKE_CURRENT_LIST_DIR}/" << basename + ".qrc" << " CACHE STRING \"resourceFile\" FORCE)\n";
+    cmakeOutput << "GCOMPRIS_ADD_RCC(" << basename << ")\n";
 
     return 0;
 }
