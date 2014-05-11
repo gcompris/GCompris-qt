@@ -531,15 +531,9 @@ Ur wech dizoloet ur c&apos;houblad kartennoù e vo tennet kuit. Ur wech tennet k
     </message>
     <message>
         <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="29"/>
-        <source>Press the two shift keys at the same time, to make the
-                       ball go in a straight line.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="33"/>
-        <source>Press the two shift keys at the same time,
-to make the ball go in a straight line.</source>
-        <translation type="unfinished"></translation>
+        <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="32"/>
+        <source>Press the two shift keys at the same time, to make the ball go in a straight line.</source>
+        <translation>Pouez war ar stokelloù « Shift » en hevelep mare evit lakaat ar vell da vont war-eeun.</translation>
     </message>
     <message>
         <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="9"/>
@@ -636,7 +630,7 @@ The following icons are displayed from right to left.
     Question Mark - Help
     Tool - The configuration menu
     Tux Plane - About GCompris
-    Quit - Quit GCompris (ctrl-x)
+    Quit - Quit GCompris (ctrl-q)
 The stars show suitable age groups for each game:
     1, 2 or 3 simple stars  - from 2 to 6 years old
     1, 2 or 3 complex stars - 7 years and up
@@ -644,7 +638,24 @@ Shortcuts:
     ctrl-b Show or Hide the control bar
     ctrl-f Toggle full screen
     ctrl-m Toggle mute for the background music</source>
-        <translation type="unfinished"></translation>
+        <translation>Ur c&apos;hlik eeun war un arlun az kaso davit un obererezh pe lañser un obererezh.
+E traoñ ar skramm emañ barrenn reoliñ GCompris.
+Skrammet eo an arlunioù da zont ag an tu dehou d&apos;an tu kleiz.
+(Skrammet e vez un arlun  mar bez hegerz en obererezhioù.
+    Degemer - Kuitaat un obererezh ha distreiñ d&apos;al lañser  (ctrl-w ha stokell esaouiñ)
+    Biz Meud - Mat eo, kadarnaat da respont
+    Biroù - Skrammañ al live bremanel. Klikañ warni evit diuzañ ul live all
+    Divweuz - Adlavarout ar goulenn
+    Pik goulenn - Skoazell
+    Benveg - Lañser ar c&apos;hefluniadur
+    Nijerez Tuks - Diwar-benn GCompris
+    Kuitaat - Kuitaat GCompris (ctrl-q)
+Spisaet e vez an oad dereatañ evit an obererezhioù gant ar steredennoù :
+    1, 2 pe 3 steredenn eeun - etre 2 ha 6 vloaz
+    1, 2 pe 3 steredenn gemplezh - 7 vloaz ha koshoc&apos;h.Berradennoù :
+    ctrl-b Diskouez pe guzhat ar varrenn reoliñ
+    ctrl-f Skrammad a-bezh pe get
+    ctrl-m Lazhañ ar sonerezh pe get</translation>
     </message>
     <message>
         <location filename="../src/activities/instruments/ActivityInfo.qml" line="9"/>
@@ -841,14 +852,20 @@ Ret e vo dit derc&apos;hel soñj e plas ar c&apos;hartennoù evit o c&apos;havou
     </message>
     <message>
         <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="13"/>
-        <source>The activity deals with mixing primary colors of light (additive mixing).
+        <source>
+The activity deals with mixing primary colors of light (additive mixing).
 
-In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.</source>
-        <translation type="unfinished"></translation>
+In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.
+        </source>
+        <translation>
+Un obererezh a-zivout kemmeskañ livoù ar gouloù (kemmeskañ azdodat).
+
+Evit ar gouloù ez eo an tu gin eus doare kemmeskañ ar pentoù ! Mar bez ouzhpennet muioc&apos;h a c&apos;houloù e vo skaeroc&apos;h al liv krouet. Al livioù ruz, glaz ha gwer eo al livioù kentael.
+        </translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="17"/>
-        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="16"/>
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="18"/>
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="18"/>
         <source>Images from http://openclipart.org</source>
         <translation type="unfinished"></translation>
     </message>
@@ -932,8 +949,13 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <source>
 The activity deals with mixing primary colors of paint (subtractive mixing).
 
-In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.</source>
-        <translation type="unfinished"></translation>
+In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.
+        </source>
+        <translation>
+Un obererezh a-zivout kemmeskañ livoù pentur kentael (kemmeskañ ezdodat).
+
+Evit ar penturioù e vez luget (&quot;lonket&quot;)  livioù disheñvel ar gouloù o kouezhañ warno gant an huzioù, oc&apos;h ezdodañ (dilemel) livioù zo ar gouloù diouzh ar pezh a welez. Mar bez ouzhpennet muioc&apos;h a huz e vo luget  muioc&apos;h a c&apos;houloù. Dre se e vo teñvaloc&apos;h al liv krouet. Kemmesket e vez livioù kentael a-benn krouiñ kalz livioù nevez. Siañ (un arliv eus ar glas), Majenta (un arliv eus ar ruz) ha Melen eo al livioù kentael.
+        </translation>
     </message>
     <message>
         <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="9"/>
@@ -1006,27 +1028,27 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="9"/>
         <source>Learning Clock</source>
-        <translation type="unfinished"></translation>
+        <translation>Horolajoù</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="10"/>
         <source>Learn how to tell the time</source>
-        <translation type="unfinished"></translation>
+        <translation>Deskiñ penaos lenn an eur war un horolaj dre vizied</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="11"/>
         <source>Distinguish between time-units (hour, minute and second). Set and display time on a clock.</source>
-        <translation type="unfinished"></translation>
+        <translation>Anaout an diforc&apos;hioù etre en eurioù, munutennoù hag eiladennoù. Reizhañ ha skrammañ an eur war un horolaj.</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="12"/>
         <source>The concept of time. Reading the time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Meizad an eurioù. Lenn an eurioù.</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="13"/>
         <source>Set the clock to the time given, in the time-units shown (hours:minutes or hours:minutes:seconds). Click on the different arrows, and move the mouse, to make the numbers go up or down.</source>
-        <translation type="unfinished"></translation>
+        <translation>Reizh an horolaj gant an eur roet, gant an unanennoù amzer diskouezet (eurioù:munutennoù:eiladennoù). Klik war ar bizied ha dilec&apos;h al logodenn a-benn lakaat an niveroù diskouezet da greskiñ pe da zigreskiñ.</translation>
     </message>
     <message>
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="9"/>
@@ -1037,7 +1059,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="10"/>
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="11"/>
         <source>The aim is to switch off all the lights.</source>
-        <translation type="unfinished"></translation>
+        <translation>Klask lazhañ an holl c&apos;houleier.</translation>
     </message>
     <message>
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="13"/>
@@ -1047,7 +1069,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="14"/>
         <source>The solver algorithm is described on Wikipedia. To know more about the Lights Off game: &amp;lt;http://en.wikipedia.org/wiki/Lights_Out_(game)&amp;gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>An algoritm diskoulmañ deskrivet war Wikipedia. A-benn gouzout hiroc&apos;h a-zivout ar c&apos;hoari Lazh ar gouleier : &amp;lt;http://en.wikipedia.org/wiki/Lights_Out_(game)&amp;gt;</translation>
     </message>
 </context>
 <context>
@@ -1176,167 +1198,194 @@ to make the ball go in a straight line.</source>
         <translation>Diwar-benn GCompris</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogAbout.qml" line="25"/>
         <source>GCompris Home Page: http://gcompris.net</source>
         <translation>Pajennad degemer GCompris : http://gcompris.net</translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="27"/>
-        <source>Here will be the name of the translators</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>DialogConfig</name>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="44"/>
+        <location filename="../src/core/DialogConfig.qml" line="43"/>
         <source>Configuration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="99"/>
+        <location filename="../src/core/DialogConfig.qml" line="98"/>
         <source>Enable audio</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="116"/>
+        <location filename="../src/core/DialogConfig.qml" line="115"/>
         <source>Fullscreen</source>
-        <translation type="unfinished"></translation>
+        <translation>Skrammad a-bezh</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="215"/>
+        <location filename="../src/core/DialogConfig.qml" line="214"/>
         <source>English (Great Britain)</source>
         <translation>Saozneg (Rouantelezh Unanet)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="216"/>
+        <location filename="../src/core/DialogConfig.qml" line="215"/>
         <source>English (United States)</source>
         <translation>Saozneg (Stadoù Unanet)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="217"/>
+        <location filename="../src/core/DialogConfig.qml" line="216"/>
         <source>Bulgarian</source>
         <translation>Bulgareg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="218"/>
+        <location filename="../src/core/DialogConfig.qml" line="217"/>
         <source>Breton</source>
         <translation>Brezhoneg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="219"/>
+        <location filename="../src/core/DialogConfig.qml" line="218"/>
         <source>Czech Republic</source>
         <translation>Republik Tchek</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="220"/>
+        <location filename="../src/core/DialogConfig.qml" line="219"/>
         <source>Danish</source>
         <translation>Daneg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="221"/>
+        <location filename="../src/core/DialogConfig.qml" line="220"/>
         <source>German</source>
         <translation>Alamaneg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="222"/>
+        <location filename="../src/core/DialogConfig.qml" line="221"/>
         <source>Greek</source>
         <translation>Gresianeg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="223"/>
+        <location filename="../src/core/DialogConfig.qml" line="222"/>
         <source>Spanish</source>
         <translation>Spagnoleg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="224"/>
+        <location filename="../src/core/DialogConfig.qml" line="223"/>
         <source>French</source>
         <translation>Galleg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="225"/>
+        <location filename="../src/core/DialogConfig.qml" line="224"/>
         <source>Scottish Gaelic</source>
         <translation>Skoseg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="226"/>
+        <location filename="../src/core/DialogConfig.qml" line="225"/>
         <source>Galician</source>
         <translation>Galisianeg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="227"/>
+        <location filename="../src/core/DialogConfig.qml" line="226"/>
         <source>Hungarian</source>
         <translation>Hungareg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="228"/>
+        <location filename="../src/core/DialogConfig.qml" line="227"/>
         <source>Lithuanian</source>
         <translation>Lituanieg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="229"/>
+        <location filename="../src/core/DialogConfig.qml" line="228"/>
         <source>Latvian</source>
         <translation>Latvieg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="230"/>
+        <location filename="../src/core/DialogConfig.qml" line="229"/>
         <source>Dutch</source>
         <translation>Nederlandeg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="231"/>
+        <location filename="../src/core/DialogConfig.qml" line="230"/>
         <source>Norwegian Nynorsk</source>
         <translation>Norvegieg Ninorsk</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="232"/>
+        <location filename="../src/core/DialogConfig.qml" line="231"/>
         <source>Polish</source>
         <translation>Polonieg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="233"/>
+        <location filename="../src/core/DialogConfig.qml" line="232"/>
         <source>Russian</source>
         <translation>Rusianeg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="234"/>
+        <location filename="../src/core/DialogConfig.qml" line="233"/>
         <source>Portuguese (Brazil)</source>
         <translation>Portugaleg (Brazil)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="235"/>
+        <location filename="../src/core/DialogConfig.qml" line="234"/>
         <source>Slovak</source>
         <translation>Sloveg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="236"/>
+        <location filename="../src/core/DialogConfig.qml" line="235"/>
         <source>Slovenian</source>
         <translation>Slovenieg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="237"/>
+        <location filename="../src/core/DialogConfig.qml" line="236"/>
         <source>Montenegrin</source>
         <translation>Montenegro</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="238"/>
+        <location filename="../src/core/DialogConfig.qml" line="237"/>
         <source>Swedish</source>
         <translation>Swedeneg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="239"/>
+        <location filename="../src/core/DialogConfig.qml" line="238"/>
         <source>Tamil</source>
         <translation>Tamouleg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="240"/>
+        <location filename="../src/core/DialogConfig.qml" line="239"/>
         <source>Thai</source>
         <translation>Taieg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="241"/>
+        <location filename="../src/core/DialogConfig.qml" line="240"/>
         <source>Chinese (Traditional)</source>
         <translation>Sinaeg (hengounel)</translation>
+    </message>
+</context>
+<context>
+    <name>DialogHelp</name>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="37"/>
+        <source>Author: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="42"/>
+        <source>Prerequisite: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="46"/>
+        <source>Goal: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="52"/>
+        <source>Manual: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="56"/>
+        <source>Credit: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="60"/>
+        <source>Section: </source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1361,21 +1410,6 @@ to make the ball go in a straight line.</source>
     </message>
 </context>
 <context>
-    <name>NumbersOddEven</name>
-    <message>
-        <location filename="../src/activities/numbers-odd-even/NumbersOddEven.qml" line="27"/>
-        <location filename="../src/activities/numbers-odd-even/NumbersOddEven.qml" line="35"/>
-        <source>0 2 4 6 8 10 12 14 16 18 20</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/activities/numbers-odd-even/NumbersOddEven.qml" line="31"/>
-        <location filename="../src/activities/numbers-odd-even/NumbersOddEven.qml" line="39"/>
-        <source>1 3 5 7 9 11 13 15 17 19 21</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>Penalty</name>
     <message>
         <location filename="../src/activities/penalty/Penalty.qml" line="215"/>
@@ -1387,8 +1421,27 @@ to make the ball go in a straight line.</source>
     <name>ReadyButton</name>
     <message>
         <location filename="../src/core/ReadyButton.qml" line="50"/>
-        <source>I am Ready!</source>
-        <translation type="unfinished"></translation>
+        <source>I am Ready</source>
+        <translation>Prest on</translation>
+    </message>
+</context>
+<context>
+    <name>S:</name>
+    <message>
+        <location filename="../src/core/DialogAbout.qml" line="26"/>
+        <source></source>
+        <comment>Replace this string with your names, one name per line.</comment>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogAbout.qml" line="27"/>
+        <source>translator-credits</source>
+        <translation>Alan Monfort &lt;alan.monfort@free.fr&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogAbout.qml" line="30"/>
+        <source>GCompris Home Page: http://gcompris.net</source>
+        <translation>Pajennad degemer GCompris : http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -1417,7 +1470,8 @@ to make the ball go in a straight line.</source>
         <location filename="../src/activities/money/money.js" line="659"/>
         <source>Tux just bought some items in your shop.
 He gives you $ %1, please give back his change.</source>
-        <translation type="unfinished"></translation>
+        <translation>Traoù en deus prenet Tuks ez stal.
+%1 € a ro-eñ dit, distro e voneiz dezhañ diwarni.</translation>
     </message>
 </context>
 </TS>

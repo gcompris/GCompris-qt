@@ -522,15 +522,9 @@ Nesse jogo, as cartas estão escondendo as duas partes de uma operação. Você 
     </message>
     <message>
         <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="29"/>
-        <source>Press the two shift keys at the same time, to make the
-                       ball go in a straight line.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="33"/>
-        <source>Press the two shift keys at the same time,
-to make the ball go in a straight line.</source>
-        <translation type="unfinished"></translation>
+        <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="32"/>
+        <source>Press the two shift keys at the same time, to make the ball go in a straight line.</source>
+        <translation>Aperte simultaneamente as duas teclas Shift para fazer a bola ir em uma linha reta.</translation>
     </message>
     <message>
         <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="9"/>
@@ -627,7 +621,7 @@ The following icons are displayed from right to left.
     Question Mark - Help
     Tool - The configuration menu
     Tux Plane - About GCompris
-    Quit - Quit GCompris (ctrl-x)
+    Quit - Quit GCompris (ctrl-q)
 The stars show suitable age groups for each game:
     1, 2 or 3 simple stars  - from 2 to 6 years old
     1, 2 or 3 complex stars - 7 years and up
@@ -635,7 +629,25 @@ Shortcuts:
     ctrl-b Show or Hide the control bar
     ctrl-f Toggle full screen
     ctrl-m Toggle mute for the background music</source>
-        <translation type="unfinished"></translation>
+        <translation>Um simples clique em um ícone leva você para uma atividade ou um menu de atividades.
+Na parte inferior da janela está a barra de controles do GCompris.
+Os seguintes ícones são mostrados, da direita para esquerda
+(note que cada ícone é mostrado somente se estiver disponível na atividade atual):
+    Casa - Sai da atividade, volta ao menu (CTRL+w e tecla Esc)
+    Polegar - Ok. Confirma sua resposta
+    Setas - Mostra o nível atual. Clique para selecionar outro nível
+    Boca - Repete a questão
+    Interrogação - Ajuda
+    Ferramenta - O menu de configuração
+    Avião do Tux - Sobre o GCompris
+    Desliga - Sai do GCompris
+As estrelas mostram os grupos etários sugeridos para cada jogo:
+    1, 2 ou 3 estrelas simples - de 2 a 6 anos de idade
+    1, 2 ou 3 estrelas complexas - a partir de 7 anos de idade
+Atalhos:
+    ctrl-b Exibe ou esconde a barra de controle
+    ctrl-f Alterna o modo de tela cheia
+    ctrl-m Liga/desliga a música de fundo</translation>
     </message>
     <message>
         <location filename="../src/activities/instruments/ActivityInfo.qml" line="9"/>
@@ -824,14 +836,20 @@ Shortcuts:
     </message>
     <message>
         <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="13"/>
-        <source>The activity deals with mixing primary colors of light (additive mixing).
+        <source>
+The activity deals with mixing primary colors of light (additive mixing).
 
-In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.</source>
-        <translation type="unfinished"></translation>
+In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.
+        </source>
+        <translation>
+Esta atividade trabalha com a mistura de luzes com cores primárias (mistura aditiva)
+
+O comportamento de luzes coloridas é o contrário da mistura de tintas. Quanto mais luz você adicionar, mais clara ficará a combinação de cores. As cores primárias aqui são vermelho, verde e azul.
+        </translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="17"/>
-        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="16"/>
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="18"/>
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="18"/>
         <source>Images from http://openclipart.org</source>
         <translation type="unfinished"></translation>
     </message>
@@ -915,8 +933,13 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <source>
 The activity deals with mixing primary colors of paint (subtractive mixing).
 
-In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.</source>
-        <translation type="unfinished"></translation>
+In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.
+        </source>
+        <translation>
+Esta atividade trabalha com a mistura de cores primárias em pintura (mistura subtrativa)
+
+No caso da pintura, as tintas absorvem as diferentes cores da luz que incide sobre ela, subtraindo-as da sua visão. Quanto mais tinta você acrescentar, mais luz será absorvida e mais escura ficará a combinação de cores. É possível misturar somente as três cores primárias para produzir novas cores. As cores primárias para pintura/tinta são: ciano (uma tonalidade especial de azul), magenta (uma tonalidade especial de rosa) e amarelo.
+        </translation>
     </message>
     <message>
         <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="9"/>
@@ -989,27 +1012,27 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="9"/>
         <source>Learning Clock</source>
-        <translation type="unfinished"></translation>
+        <translation>O relógio</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="10"/>
         <source>Learn how to tell the time</source>
-        <translation type="unfinished"></translation>
+        <translation>Aprenda como dizer as horas</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="11"/>
         <source>Distinguish between time-units (hour, minute and second). Set and display time on a clock.</source>
-        <translation type="unfinished"></translation>
+        <translation>Distingua diferenças entre horas, minutos e segundos. Acerte as horas no relógio.</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="12"/>
         <source>The concept of time. Reading the time.</source>
-        <translation type="unfinished"></translation>
+        <translation>O conceito de tempo. Ler as horas.</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="13"/>
         <source>Set the clock to the time given, in the time-units shown (hours:minutes or hours:minutes:seconds). Click on the different arrows, and move the mouse, to make the numbers go up or down.</source>
-        <translation type="unfinished"></translation>
+        <translation>Coloque os ponteiros na hora indicada pelos números (horas:minutos ou horas:minutos:segundos). Clique nos ponteiros e mova-os para o lugar correto.</translation>
     </message>
     <message>
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="9"/>
@@ -1020,7 +1043,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="10"/>
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="11"/>
         <source>The aim is to switch off all the lights.</source>
-        <translation type="unfinished"></translation>
+        <translation>O objetivo é apagar todas as luzes.</translation>
     </message>
     <message>
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="13"/>
@@ -1030,7 +1053,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="14"/>
         <source>The solver algorithm is described on Wikipedia. To know more about the Lights Off game: &amp;lt;http://en.wikipedia.org/wiki/Lights_Out_(game)&amp;gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>O algoritmo de solução está descrito na Wikipédia. Para saber mais sobre o jogo Apague as Luzes veja essa página da Wikipédia (em inglês): &amp;lt;http://en.wikipedia.org/wiki/Lights_Out_(game)&amp;gt;</translation>
     </message>
 </context>
 <context>
@@ -1159,167 +1182,194 @@ to make the ball go in a straight line.</source>
         <translation>Sobre o GCompris</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogAbout.qml" line="25"/>
         <source>GCompris Home Page: http://gcompris.net</source>
         <translation>Site do GCompris http://gcompris.net</translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="27"/>
-        <source>Here will be the name of the translators</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>DialogConfig</name>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="44"/>
+        <location filename="../src/core/DialogConfig.qml" line="43"/>
         <source>Configuration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="99"/>
+        <location filename="../src/core/DialogConfig.qml" line="98"/>
         <source>Enable audio</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="116"/>
+        <location filename="../src/core/DialogConfig.qml" line="115"/>
         <source>Fullscreen</source>
-        <translation type="unfinished"></translation>
+        <translation>Tela inteira</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="215"/>
+        <location filename="../src/core/DialogConfig.qml" line="214"/>
         <source>English (Great Britain)</source>
         <translation>Inglês (Grã-Bretanha)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="216"/>
+        <location filename="../src/core/DialogConfig.qml" line="215"/>
         <source>English (United States)</source>
         <translation>Inglês (Estados Unidos)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="217"/>
+        <location filename="../src/core/DialogConfig.qml" line="216"/>
         <source>Bulgarian</source>
         <translation>Búlgaro</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="218"/>
+        <location filename="../src/core/DialogConfig.qml" line="217"/>
         <source>Breton</source>
         <translation>Bretão</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="219"/>
+        <location filename="../src/core/DialogConfig.qml" line="218"/>
         <source>Czech Republic</source>
         <translation>República Tcheca</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="220"/>
+        <location filename="../src/core/DialogConfig.qml" line="219"/>
         <source>Danish</source>
         <translation>Dinamarquês</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="221"/>
+        <location filename="../src/core/DialogConfig.qml" line="220"/>
         <source>German</source>
         <translation>Alemão</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="222"/>
+        <location filename="../src/core/DialogConfig.qml" line="221"/>
         <source>Greek</source>
         <translation>Grego</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="223"/>
+        <location filename="../src/core/DialogConfig.qml" line="222"/>
         <source>Spanish</source>
         <translation>Espanhol</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="224"/>
+        <location filename="../src/core/DialogConfig.qml" line="223"/>
         <source>French</source>
         <translation>Francês</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="225"/>
+        <location filename="../src/core/DialogConfig.qml" line="224"/>
         <source>Scottish Gaelic</source>
         <translation>Gaélico Escocês</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="226"/>
+        <location filename="../src/core/DialogConfig.qml" line="225"/>
         <source>Galician</source>
         <translation>Galego</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="227"/>
+        <location filename="../src/core/DialogConfig.qml" line="226"/>
         <source>Hungarian</source>
         <translation>Húngaro</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="228"/>
+        <location filename="../src/core/DialogConfig.qml" line="227"/>
         <source>Lithuanian</source>
         <translation>Lituano</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="229"/>
+        <location filename="../src/core/DialogConfig.qml" line="228"/>
         <source>Latvian</source>
         <translation>Letão</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="230"/>
+        <location filename="../src/core/DialogConfig.qml" line="229"/>
         <source>Dutch</source>
         <translation>Holandês</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="231"/>
+        <location filename="../src/core/DialogConfig.qml" line="230"/>
         <source>Norwegian Nynorsk</source>
         <translation>Nynorsk norueguês</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="232"/>
+        <location filename="../src/core/DialogConfig.qml" line="231"/>
         <source>Polish</source>
         <translation>Polonês</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="233"/>
+        <location filename="../src/core/DialogConfig.qml" line="232"/>
         <source>Russian</source>
         <translation>Russo</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="234"/>
+        <location filename="../src/core/DialogConfig.qml" line="233"/>
         <source>Portuguese (Brazil)</source>
         <translation>Português (Brasil)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="235"/>
+        <location filename="../src/core/DialogConfig.qml" line="234"/>
         <source>Slovak</source>
         <translation>Eslovaco</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="236"/>
+        <location filename="../src/core/DialogConfig.qml" line="235"/>
         <source>Slovenian</source>
         <translation>Esloveno</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="237"/>
+        <location filename="../src/core/DialogConfig.qml" line="236"/>
         <source>Montenegrin</source>
         <translation>Montenegro</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="238"/>
+        <location filename="../src/core/DialogConfig.qml" line="237"/>
         <source>Swedish</source>
         <translation>Sueco</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="239"/>
+        <location filename="../src/core/DialogConfig.qml" line="238"/>
         <source>Tamil</source>
         <translation>Tâmil</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="240"/>
+        <location filename="../src/core/DialogConfig.qml" line="239"/>
         <source>Thai</source>
         <translation>Tailandês</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="241"/>
+        <location filename="../src/core/DialogConfig.qml" line="240"/>
         <source>Chinese (Traditional)</source>
         <translation>Chinês (tradicional)</translation>
+    </message>
+</context>
+<context>
+    <name>DialogHelp</name>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="37"/>
+        <source>Author: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="42"/>
+        <source>Prerequisite: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="46"/>
+        <source>Goal: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="52"/>
+        <source>Manual: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="56"/>
+        <source>Credit: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="60"/>
+        <source>Section: </source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1344,21 +1394,6 @@ to make the ball go in a straight line.</source>
     </message>
 </context>
 <context>
-    <name>NumbersOddEven</name>
-    <message>
-        <location filename="../src/activities/numbers-odd-even/NumbersOddEven.qml" line="27"/>
-        <location filename="../src/activities/numbers-odd-even/NumbersOddEven.qml" line="35"/>
-        <source>0 2 4 6 8 10 12 14 16 18 20</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/activities/numbers-odd-even/NumbersOddEven.qml" line="31"/>
-        <location filename="../src/activities/numbers-odd-even/NumbersOddEven.qml" line="39"/>
-        <source>1 3 5 7 9 11 13 15 17 19 21</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>Penalty</name>
     <message>
         <location filename="../src/activities/penalty/Penalty.qml" line="215"/>
@@ -1370,8 +1405,32 @@ to make the ball go in a straight line.</source>
     <name>ReadyButton</name>
     <message>
         <location filename="../src/core/ReadyButton.qml" line="50"/>
-        <source>I am Ready!</source>
-        <translation type="unfinished"></translation>
+        <source>I am Ready</source>
+        <translation>Eu estou pronto</translation>
+    </message>
+</context>
+<context>
+    <name>S:</name>
+    <message>
+        <location filename="../src/core/DialogAbout.qml" line="26"/>
+        <source></source>
+        <comment>Replace this string with your names, one name per line.</comment>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogAbout.qml" line="27"/>
+        <source>translator-credits</source>
+        <translation>Frederico Gonçalves Guimarães &lt;frederico@teia.bio.br&gt;
+Leonardo Ferreira Fontenelle &lt;leo.fontenelle@gmail.com&gt;
+Welther José O. Esteves &lt;weltherjoe@yahoo.com.br&gt;
+Viviani Ap. dos Santos &lt;vivi_olivetti@brfree.com.br&gt;
+Rodrigo Lima &lt;rdlima@terra.com.br&gt;
+Rafael Ferreira &lt;rafael.f.f1@gmail.com&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogAbout.qml" line="30"/>
+        <source>GCompris Home Page: http://gcompris.net</source>
+        <translation>Site do GCompris http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -1400,7 +1459,8 @@ to make the ball go in a straight line.</source>
         <location filename="../src/activities/money/money.js" line="659"/>
         <source>Tux just bought some items in your shop.
 He gives you $ %1, please give back his change.</source>
-        <translation type="unfinished"></translation>
+        <translation>O Tux acabou de comprar alguns itens na sua loja.
+Ele lhe deu $ %1, por favor, devolva-lhe o troco.</translation>
     </message>
 </context>
 </TS>

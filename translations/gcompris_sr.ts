@@ -522,15 +522,9 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     </message>
     <message>
         <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="29"/>
-        <source>Press the two shift keys at the same time, to make the
-                       ball go in a straight line.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="33"/>
-        <source>Press the two shift keys at the same time,
-to make the ball go in a straight line.</source>
-        <translation type="unfinished"></translation>
+        <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="32"/>
+        <source>Press the two shift keys at the same time, to make the ball go in a straight line.</source>
+        <translation>Притисните оба тастера „шифт“ у исто време да пошаљете лопту право напред.</translation>
     </message>
     <message>
         <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="9"/>
@@ -627,7 +621,7 @@ The following icons are displayed from right to left.
     Question Mark - Help
     Tool - The configuration menu
     Tux Plane - About GCompris
-    Quit - Quit GCompris (ctrl-x)
+    Quit - Quit GCompris (ctrl-q)
 The stars show suitable age groups for each game:
     1, 2 or 3 simple stars  - from 2 to 6 years old
     1, 2 or 3 complex stars - 7 years and up
@@ -635,7 +629,25 @@ Shortcuts:
     ctrl-b Show or Hide the control bar
     ctrl-f Toggle full screen
     ctrl-m Toggle mute for the background music</source>
-        <translation type="unfinished"></translation>
+        <translation>Клик на иконицу вам приказује вежбу или избор вежби.
+При дну екрана се налази управљачка линија ГКомприса.
+Следеће иконице су приказане са десна на лево.
+(обратите пажњу да се ове иконице приказују само ако су доступне у вежби)
+    Кућа — Излаз из вежбе, повратак на избор.
+    Палац — У реду. Потврда вашег одговора.
+    Коцкица — Приказује текући ниво. Кликните на њу да изаберете други ниво.
+    Усне — Понавља питање.
+    Знак питања — Помоћ.
+    Алат — Избор подешавања.
+    Тукс у лету — О програму.
+    Ноћ — Излаз из ГКомприса (ctrl-q)
+Звезде показују одговарајуће старосне групе за сваку игру:
+    1, 2 или 3 обичне звезде  — од 2 до 6 година старости
+    1, 2 или 3 сложене звезде — 7 година и више
+Пречице:
+    ctrl-b — Приказује или скрива управљачку линију
+    ctrl-f — Пребацује приказ преко целог екрана
+    ctrl-m — Пребацује чујност музике у позадини</translation>
     </message>
     <message>
         <location filename="../src/activities/instruments/ActivityInfo.qml" line="9"/>
@@ -824,14 +836,20 @@ Shortcuts:
     </message>
     <message>
         <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="13"/>
-        <source>The activity deals with mixing primary colors of light (additive mixing).
+        <source>
+The activity deals with mixing primary colors of light (additive mixing).
 
-In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.</source>
-        <translation type="unfinished"></translation>
+In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.
+        </source>
+        <translation>
+Вежба се бави мешањем основних боја светлости (додавајуће мешање).
+
+У случају светлости управо је супротно од мешања боја са фарбама! Што више светла додате добићете светлију боју. Основне боје светлости су црвена, зелена и плава.
+        </translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="17"/>
-        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="16"/>
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="18"/>
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="18"/>
         <source>Images from http://openclipart.org</source>
         <translation type="unfinished"></translation>
     </message>
@@ -915,8 +933,13 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <source>
 The activity deals with mixing primary colors of paint (subtractive mixing).
 
-In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.</source>
-        <translation type="unfinished"></translation>
+In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.
+        </source>
+        <translation>
+Вежба се бави мешањем основних боја фарбе (одузимајуће мешање).
+
+У случају фарбе мастила упијају различите боје светлости која пада на њих, одузимајући је од онога што видите. Што више мастила додате, више светлости се упија, а добија се тамнија мешана боја. Можемо да измешамо само три основне боје да бисмо добили много нових боја. Основне боје за фарбе/мастила су тиркизно-плава (Cyan — посебан облик плаве), пурпурно-црвена (Magenta — посебан облик љубичасте), и жута.
+        </translation>
     </message>
     <message>
         <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="9"/>
@@ -989,27 +1012,27 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="9"/>
         <source>Learning Clock</source>
-        <translation type="unfinished"></translation>
+        <translation>Читање времена</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="10"/>
         <source>Learn how to tell the time</source>
-        <translation type="unfinished"></translation>
+        <translation>Научите да гледате на сат</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="11"/>
         <source>Distinguish between time-units (hour, minute and second). Set and display time on a clock.</source>
-        <translation type="unfinished"></translation>
+        <translation>Разликујте јединице за време (часа, минут и секунда). Подесите и прикажите време на часовнику.</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="12"/>
         <source>The concept of time. Reading the time.</source>
-        <translation type="unfinished"></translation>
+        <translation>Појам времена. Читање времена.</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="13"/>
         <source>Set the clock to the time given, in the time-units shown (hours:minutes or hours:minutes:seconds). Click on the different arrows, and move the mouse, to make the numbers go up or down.</source>
-        <translation type="unfinished"></translation>
+        <translation>Наместите часовник на задато време у приказаним временским јединицама (сати:минути или сати:минути:секунде). Кликните на казаљке и померајте миша да би се бројеви померали горе или доле.</translation>
     </message>
     <message>
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="9"/>
@@ -1020,7 +1043,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="10"/>
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="11"/>
         <source>The aim is to switch off all the lights.</source>
-        <translation type="unfinished"></translation>
+        <translation>Циљ је гашење свих светла.</translation>
     </message>
     <message>
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="13"/>
@@ -1030,7 +1053,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="14"/>
         <source>The solver algorithm is described on Wikipedia. To know more about the Lights Off game: &amp;lt;http://en.wikipedia.org/wiki/Lights_Out_(game)&amp;gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Алгоритам решавача описан на „haar.clara.co.uk“ је меродаван ресурс да сазнате више о игри „Погаси светла“: &amp;lt;http://en.wikipedia.org/wiki/Lights_Out_(game)&amp;gt;</translation>
     </message>
 </context>
 <context>
@@ -1159,167 +1182,194 @@ to make the ball go in a straight line.</source>
         <translation>О ГКомпрису</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogAbout.qml" line="25"/>
         <source>GCompris Home Page: http://gcompris.net</source>
         <translation>Матична страница ГКомприса: http://gcompris.net</translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="27"/>
-        <source>Here will be the name of the translators</source>
-        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>DialogConfig</name>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="44"/>
+        <location filename="../src/core/DialogConfig.qml" line="43"/>
         <source>Configuration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="99"/>
+        <location filename="../src/core/DialogConfig.qml" line="98"/>
         <source>Enable audio</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="116"/>
+        <location filename="../src/core/DialogConfig.qml" line="115"/>
         <source>Fullscreen</source>
-        <translation type="unfinished"></translation>
+        <translation>Преко целог екрана</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="215"/>
+        <location filename="../src/core/DialogConfig.qml" line="214"/>
         <source>English (Great Britain)</source>
         <translation>Енглески (Велика Британија)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="216"/>
+        <location filename="../src/core/DialogConfig.qml" line="215"/>
         <source>English (United States)</source>
         <translation>Енглески (Сједињене Државе)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="217"/>
+        <location filename="../src/core/DialogConfig.qml" line="216"/>
         <source>Bulgarian</source>
         <translation>Бугарски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="218"/>
+        <location filename="../src/core/DialogConfig.qml" line="217"/>
         <source>Breton</source>
         <translation>Бретонски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="219"/>
+        <location filename="../src/core/DialogConfig.qml" line="218"/>
         <source>Czech Republic</source>
         <translation>Чешки</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="220"/>
+        <location filename="../src/core/DialogConfig.qml" line="219"/>
         <source>Danish</source>
         <translation>Дански</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="221"/>
+        <location filename="../src/core/DialogConfig.qml" line="220"/>
         <source>German</source>
         <translation>Немачки</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="222"/>
+        <location filename="../src/core/DialogConfig.qml" line="221"/>
         <source>Greek</source>
         <translation>Грчки</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="223"/>
+        <location filename="../src/core/DialogConfig.qml" line="222"/>
         <source>Spanish</source>
         <translation>Шпански</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="224"/>
+        <location filename="../src/core/DialogConfig.qml" line="223"/>
         <source>French</source>
         <translation>Француски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="225"/>
+        <location filename="../src/core/DialogConfig.qml" line="224"/>
         <source>Scottish Gaelic</source>
         <translation>Шкотски галски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="226"/>
+        <location filename="../src/core/DialogConfig.qml" line="225"/>
         <source>Galician</source>
         <translation>Галицијски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="227"/>
+        <location filename="../src/core/DialogConfig.qml" line="226"/>
         <source>Hungarian</source>
         <translation>Мађарски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="228"/>
+        <location filename="../src/core/DialogConfig.qml" line="227"/>
         <source>Lithuanian</source>
         <translation>Литвански</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="229"/>
+        <location filename="../src/core/DialogConfig.qml" line="228"/>
         <source>Latvian</source>
         <translation>Летонски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="230"/>
+        <location filename="../src/core/DialogConfig.qml" line="229"/>
         <source>Dutch</source>
         <translation>Холандски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="231"/>
+        <location filename="../src/core/DialogConfig.qml" line="230"/>
         <source>Norwegian Nynorsk</source>
         <translation>Норвешки Нинорск</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="232"/>
+        <location filename="../src/core/DialogConfig.qml" line="231"/>
         <source>Polish</source>
         <translation>Пољски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="233"/>
+        <location filename="../src/core/DialogConfig.qml" line="232"/>
         <source>Russian</source>
         <translation>Руски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="234"/>
+        <location filename="../src/core/DialogConfig.qml" line="233"/>
         <source>Portuguese (Brazil)</source>
         <translation>Португалски (Бразил)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="235"/>
+        <location filename="../src/core/DialogConfig.qml" line="234"/>
         <source>Slovak</source>
         <translation>Словачки</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="236"/>
+        <location filename="../src/core/DialogConfig.qml" line="235"/>
         <source>Slovenian</source>
         <translation>Словеначки</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="237"/>
+        <location filename="../src/core/DialogConfig.qml" line="236"/>
         <source>Montenegrin</source>
         <translation>Црногорски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="238"/>
+        <location filename="../src/core/DialogConfig.qml" line="237"/>
         <source>Swedish</source>
         <translation>Шведски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="239"/>
+        <location filename="../src/core/DialogConfig.qml" line="238"/>
         <source>Tamil</source>
         <translation>Тамилски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="240"/>
+        <location filename="../src/core/DialogConfig.qml" line="239"/>
         <source>Thai</source>
         <translation>Таи</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="241"/>
+        <location filename="../src/core/DialogConfig.qml" line="240"/>
         <source>Chinese (Traditional)</source>
         <translation>Кинески (традиционални)</translation>
+    </message>
+</context>
+<context>
+    <name>DialogHelp</name>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="37"/>
+        <source>Author: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="42"/>
+        <source>Prerequisite: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="46"/>
+        <source>Goal: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="52"/>
+        <source>Manual: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="56"/>
+        <source>Credit: </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogHelp.qml" line="60"/>
+        <source>Section: </source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1344,21 +1394,6 @@ to make the ball go in a straight line.</source>
     </message>
 </context>
 <context>
-    <name>NumbersOddEven</name>
-    <message>
-        <location filename="../src/activities/numbers-odd-even/NumbersOddEven.qml" line="27"/>
-        <location filename="../src/activities/numbers-odd-even/NumbersOddEven.qml" line="35"/>
-        <source>0 2 4 6 8 10 12 14 16 18 20</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../src/activities/numbers-odd-even/NumbersOddEven.qml" line="31"/>
-        <location filename="../src/activities/numbers-odd-even/NumbersOddEven.qml" line="39"/>
-        <source>1 3 5 7 9 11 13 15 17 19 21</source>
-        <translation type="unfinished"></translation>
-    </message>
-</context>
-<context>
     <name>Penalty</name>
     <message>
         <location filename="../src/activities/penalty/Penalty.qml" line="215"/>
@@ -1370,8 +1405,31 @@ to make the ball go in a straight line.</source>
     <name>ReadyButton</name>
     <message>
         <location filename="../src/core/ReadyButton.qml" line="50"/>
-        <source>I am Ready!</source>
-        <translation type="unfinished"></translation>
+        <source>I am Ready</source>
+        <translation>Спреман сам</translation>
+    </message>
+</context>
+<context>
+    <name>S:</name>
+    <message>
+        <location filename="../src/core/DialogAbout.qml" line="26"/>
+        <source></source>
+        <comment>Replace this string with your names, one name per line.</comment>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogAbout.qml" line="27"/>
+        <source>translator-credits</source>
+        <translation>Данило Шеган &lt;danilo@prevod.org&gt;
+Слободан Симић &lt;simicsl@verat.net&gt;
+Мирослав Николић &lt;miroslavnikolic@rocketmail.com&gt;
+
+Prevod.org — превод на српски језик</translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogAbout.qml" line="30"/>
+        <source>GCompris Home Page: http://gcompris.net</source>
+        <translation>Матична страница ГКомприса: http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -1400,7 +1458,8 @@ to make the ball go in a straight line.</source>
         <location filename="../src/activities/money/money.js" line="659"/>
         <source>Tux just bought some items in your shop.
 He gives you $ %1, please give back his change.</source>
-        <translation type="unfinished"></translation>
+        <translation>Пингослав је управо купио неке ситнице у вашој радњи.
+Колико треба да му вратите, ако вам је дао %1 дин.</translation>
     </message>
 </context>
 </TS>
