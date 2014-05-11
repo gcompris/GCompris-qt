@@ -32,7 +32,6 @@ Rectangle {
     z: 1000
     property bool isDialog: true
     property string title
-    property string subtitle
     property string content
     signal close
     signal start

@@ -26,8 +26,6 @@ DialogBackground {
     visible: false
     title: "Help"
     property QtObject activityInfo: ActivityInfoTree.currentActivity
-    subtitle: activityInfo.section
-
 
     function getContent() {
         var contentText = ""
@@ -36,25 +34,29 @@ DialogBackground {
         contentText += "<b>" + activityInfo.description + "</b>"
         contentText += "<br/><br/>"
         if(activityInfo.author) {
-            contentText += "<b>" + "Author: " + "</b>" + activityInfo.author
+            contentText += "<b>" + qsTr("Author: ") + "</b>" + activityInfo.author
             contentText += "<br/><br/>"
         }
         contentText += "<br/><br/>"
         if(activityInfo.prerequisite) {
-            contentText += "<b>" + "Prerequisite: " + "</b>" + activityInfo.prerequisite
+            contentText += "<b>" + qsTr("Prerequisite: ") + "</b>" + activityInfo.prerequisite
             contentText += "<br/><br/>"
         }
         if(activityInfo.goal) {
-            contentText += "<b>" + "Goal: " + "</b>" + activityInfo.goal
+            contentText += "<b>" + qsTr("Goal: ") + "</b>" + activityInfo.goal
             contentText += "<br/><br/>"
         }
         if(activityInfo.manual) {
             var manual = activityInfo.manual.replace(/^    (.*)$/gm,'<ul><li>$1</li></ul>')
-            contentText += "<b>" + "Manual: " + "</b>" + manual
+            contentText += "<b>" + qsTr("Manual: ") + "</b>" + manual
             contentText += "<br/><br/>"
         }
         if(activityInfo.credit) {
-            contentText += "<b>" + "Credit: " + "</b>" + activityInfo.credit
+            contentText += "<b>" + qsTr("Credit: ") + "</b>" + activityInfo.credit
+            contentText += "<br/><br/>"
+        }
+        if(activityInfo.section) {
+            contentText += "<b>" + qsTr("Section: ") + "</b>" + activityInfo.section
             contentText += "<br/><br/>"
         }
         return contentText
