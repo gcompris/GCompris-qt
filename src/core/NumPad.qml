@@ -80,10 +80,11 @@ Item {
                         leftPanel.children[index].border.width = 2
                     }
                 }
-
             }
+
         }
     }
+
 
     Column {
         id: rightPanel
@@ -162,7 +163,6 @@ Item {
                     backspaceButton.border.width = 2
                 }
             }
-
         }
     }
 
@@ -170,4 +170,88 @@ Item {
     {
         answer = ""
     }
+
+    function updateAnswer(key, isKeyPressed){
+        var keyValue;
+
+        switch(key)
+        {
+        case Qt.Key_0 :
+            keyValue = 0;
+            break;
+        case Qt.Key_1:
+            keyValue = 1;
+            break;
+        case Qt.Key_2:
+            keyValue = 2;
+            break;
+        case Qt.Key_3:
+            keyValue = 3;
+            break;
+        case Qt.Key_4:
+            keyValue = 4;
+            break;
+        case Qt.Key_5:
+            keyValue = 5;
+            break;
+        case Qt.Key_6:
+            keyValue = 6;
+            break;
+        case Qt.Key_7:
+            keyValue = 7;
+            break;
+        case Qt.Key_8:
+            keyValue = 8;
+            break;
+        case Qt.Key_9:
+            keyValue = 9;
+            break;
+        case Qt.Key_Backspace:
+            keyValue = 10;
+        }
+
+        if(isKeyPressed && !answerFlag)
+        {
+            if(keyValue < 5)
+            {
+
+                answer += keyValue;
+                leftPanel.children[keyValue].color = Qt.lighter(colours[keyValue])
+                leftPanel.children[keyValue].border.width = 5
+            }
+            else if(keyValue < 10)
+            {
+                answer += keyValue;
+                rightPanel.children[keyValue - 5].color = Qt.lighter(colours[keyValue - 5])
+                rightPanel.children[keyValue - 5].border.width = 5
+            }
+            else if(keyValue === 10)
+            {
+                answer = answer.substring(0,answer.length - 1);
+                backspaceButton.color = Qt.lighter("white")
+                backspaceButton.border.width = 5
+            }
+        }
+        else
+        {
+            if(keyValue < 5)
+            {
+                leftPanel.children[keyValue].color =  colours[keyValue]
+                leftPanel.children[keyValue].border.width = 2
+            }
+            else if(keyValue < 10)
+            {
+
+                rightPanel.children[keyValue - 5].color =  colours[keyValue - 5]
+                rightPanel.children[keyValue - 5].border.width = 2
+            }
+            else if(keyValue === 10)
+            {
+                backspaceButton.color = "white"
+                backspaceButton.border.width = 2
+            }
+        }
+
+    }
 }
+

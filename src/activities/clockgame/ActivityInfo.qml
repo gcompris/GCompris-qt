@@ -4,7 +4,7 @@ ActivityInfo {
   name: "clockgame/Clockgame.qml"
   difficulty: 2
   icon: "clockgame/clockgame.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Stephane Mankowski <stephane@mankowski.fr>"
   demo: false
   title: qsTr("Learning Clock")
   description: qsTr("Learn how to tell the time")
