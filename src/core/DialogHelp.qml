@@ -48,6 +48,7 @@ DialogBackground {
         }
         if(activityInfo.manual) {
             var manual = activityInfo.manual.replace(/^    (.*)$/gm,'<ul><li>$1</li></ul>')
+            manual = manual.replace(/\n/gm,'<br/>')
             contentText += "<b>" + qsTr("Manual: ") + "</b>" + manual
             contentText += "<br/><br/>"
         }

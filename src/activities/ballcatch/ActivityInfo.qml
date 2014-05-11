@@ -26,11 +26,9 @@ ActivityInfo {
     author: "Johnny Jazeix <jazeix@gmail.com>"
     demo: false
     title: qsTr("Make the ball go to Tux")
-    description: qsTr("Press the two shift keys at the same time, to make the
-                       ball go in a straight line.")
+    description: qsTr("Press the two shift keys at the same time, to make the ball go in a straight line.")
     goal: ""
     prerequisite: ""
-    manual: qsTr("Press the two shift keys at the same time,
-to make the ball go in a straight line.")
+    manual: qsTr("Press the two shift keys at the same time, to make the ball go in a straight line.")
     credit: ""
 }
