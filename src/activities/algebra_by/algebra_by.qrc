@@ -6,5 +6,6 @@
         <file>algebra.js</file>
         <file>algebra_by.svg</file>
         <file>resource/background.svgz</file>
+        <file>AlgebraText.qml</file>
     </qresource>
 </RCC>
