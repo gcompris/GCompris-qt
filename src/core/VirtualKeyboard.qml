@@ -21,8 +21,6 @@
 import QtQuick 2.0
 import GCompris 1.0
 
-import "../../core"
-
 /* ToDo:
  * - check for duplicate letters
  * - add support for shift key
