@@ -5,7 +5,7 @@
         <file>Word.qml</file>
         <file>gletters.js</file>
         <file>gletters.svg</file>
-        <file>resource/scenery_background.png</file>
+        <file>resource/background.svgz</file>
         <file>resource/default-ar.json</file>
         <file>resource/default-ast.json</file>
         <file>resource/default-bg.json</file>

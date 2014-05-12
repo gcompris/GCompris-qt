@@ -42,7 +42,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         source: (activity.mode == "letter" ? Activity.glettersUrl : Activity.wordsgameUrl)
-                 + "scenery_background.png"
+                 + "background.svgz"
         fillMode: Image.PreserveAspectCrop
 
         signal start
