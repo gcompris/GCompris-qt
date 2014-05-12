@@ -24,13 +24,11 @@ import GCompris 1.0
 
 DialogBackground {
     visible: false
-    title: "Help"
+    title: activityInfo.title
     property QtObject activityInfo: ActivityInfoTree.currentActivity
 
     function getContent() {
         var contentText = ""
-        contentText += "<center><b>" + activityInfo.title + "</b></center>"
-        contentText += "<br/><br/>"
         contentText += "<b>" + activityInfo.description + "</b>"
         contentText += "<br/><br/>"
         if(activityInfo.author) {
