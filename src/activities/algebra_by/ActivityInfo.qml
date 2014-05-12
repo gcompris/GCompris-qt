@@ -10,6 +10,6 @@ ActivityInfo {
   description: qsTr("Answer some algebra questions")
   goal: qsTr("In a limited time, give the product of two numbers")
   prerequisite: qsTr("Multiplication table")
-  manual: qsTr("A multiplication of two numbers is displayed. At the right of the equals sign, give the answer, the product. If the answer is correct, the next question will be displayed. If not, you can try again to give the correct answer. Use the backspace key to erase and change your answer.")
+  manual: qsTr("A multiplication of two numbers is displayed. At the right of the equals sign, give the answer, the product. Use the left and right arrows to modify your answer and press the Enter key to check if you've got it right. If not, just try again.")
   credit: ""
 }

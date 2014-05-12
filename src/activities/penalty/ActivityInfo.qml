@@ -6,10 +6,13 @@ ActivityInfo {
   icon: "penalty/penalty.svg"
   author: "Stephane Mankowski <stephane@mankowski.fr>"
   demo: false
-  title: qsTr("Try a penalty")
-  description: qsTr("Kick the ball and try to put the goal.")
-  goal: qsTr("")
-  prerequisite: qsTr("")
-  manual: qsTr("Double clic quickly with the mousse to kick the ball and put the goal.")
-  credit: qsTr("")
+  title: qsTr("Penalty kick")
+  description: qsTr("Double click the mouse on the ball to score a goal.")
+  goal: ""
+  prerequisite: ""
+  manual: qsTr("Double click the mouse on the ball to kick it. " +
+               "You can double click the left right or middle mouse button. " +
+               "If you lose, Tux catches the ball. You must click on it to " +
+               "bring it back to its former position")
+  credit: ""
 }

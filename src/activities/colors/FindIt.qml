@@ -92,8 +92,8 @@ ActivityBase {
             font.pointSize: 24
             font.weight: Font.DemiBold
             style: Text.Outline
-            styleColor: "black"
-            color: "white"
+            styleColor: "white"
+            color: "black"
 
             function initQuestion() {
                 text = Activity.getCurrentTextQuestion()

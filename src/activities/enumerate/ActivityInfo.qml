@@ -6,10 +6,10 @@ ActivityInfo {
     icon: "enumerate/enumerate.svg"
     author: "Thib ROMAIN <thibrom@gmail.com>"
     demo: false
-    title: qsTr("Enumerate")
-    description: qsTr("Count the elements")
-    goal: qsTr("Reflexion")
-    prerequisite: qsTr("Mouse-Manipulation")
-    manual: qsTr("Move the elements and arrange them in order to count them properly")
-    credit: qsTr("")
+    title: qsTr("Count the items")
+    description: qsTr("Place the items in the best way to count them")
+    goal: qsTr("Numeration training")
+    prerequisite: qsTr("Basic enumeration")
+    manual: qsTr("First, properly organize the items so that you can count them. Then, select the item you want to answer in the bottom right area. Enter the answer with the keyboard and press the OK button or the 'Enter' key.")
+    credit: ""
 }

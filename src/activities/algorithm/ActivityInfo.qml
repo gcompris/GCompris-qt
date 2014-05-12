@@ -6,10 +6,10 @@ ActivityInfo {
   icon: "algorithm/algorithm.svg"
   author: "Bharath M S <brat.197@gmail.com>"
   demo: false
-  title: qsTr("algorithm activity")
+  title: qsTr("algorithm")
   description: qsTr("Complete a list of symbols")
   goal: qsTr("Logic training activity")
   prerequisite: qsTr("Move and click the mouse")
-  manual: qsTr("Find the next symbol in the list")
-  credit: qsTr("")
+  manual: qsTr("Find the next symbol in a list.")
+  credit: ""
 }

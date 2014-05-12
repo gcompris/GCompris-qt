@@ -9,11 +9,11 @@ ActivityInfo {
   title: qsTr("Mixing color of paint")
   description: qsTr("To understand color mixing.")
   goal: qsTr("Mix the primary colors to match to the given color")
-  prerequisite: qsTr("")
+  prerequisite: ""
   manual: qsTr("
 The activity deals with mixing primary colors of paint (subtractive mixing).
 
 In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.
         ")
-  credit: qsTr("Images from http://openclipart.org")
+  credit: "Images from http://openclipart.org"
 }
