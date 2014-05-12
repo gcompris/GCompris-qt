@@ -1,6 +1,30 @@
+/* GCompris - erase.js
+ *
+ * Copyright (C) 2014 Bruno Coudoin
+ *
+ * Authors:
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
+
 .pragma library
 .import QtQuick 2.0 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
+
+var url = "qrc:/gcompris/src/activities/erase/resource/"
 
 var backgroundImages = [
     "Adelie_Penguin2.jpg",
@@ -61,9 +85,9 @@ var backgroundImages = [
 ]
 
 var blockImages = [
-    "qrc:/gcompris/src/activities/erase/resource/transparent_square.svgz",
-    "qrc:/gcompris/src/activities/erase/resource/transparent_square_yellow.svgz",
-    "qrc:/gcompris/src/activities/erase/resource/transparent_square_green.svgz"
+    url + "transparent_square.svgz",
+    url + "transparent_square_yellow.svgz",
+    url + "transparent_square_green.svgz"
 ]
 
 var currentLevel
@@ -79,6 +103,7 @@ var killedBlocks
 
 var nbLevel = 6
 var nbSubLevel = 8
+var imgIndex = 0
 
 function start(main_, items_, type_) {
     main = main_
@@ -93,12 +118,14 @@ function start(main_, items_, type_) {
 function stop() {
     destroyBlocks();
 }
-
+var nbx = (currentLevel % 2 * 3) + 5;
+var nby = (currentLevel % 2 * 3) + 5;
 function initLevel() {
     destroyBlocks();
+    items.blocks.clear()
+    imgIndex++
     items.bar.level = currentLevel + 1
-    items.background.source = "qrc:/gcompris/src/activities/erase/resource/" +
-            backgroundImages[currentImage++]
+    items.background.source = url + backgroundImages[currentImage++]
     if(currentImage >= backgroundImages.length) {
         currentImage = 0
     }
@@ -108,14 +135,15 @@ function initLevel() {
     var w = main.width / nbx
     var h = (main.height - items.bar.height) / nby
     var i = 0
+    var data
 
-    for(var imgIndex = 0; imgIndex <= Math.floor(currentLevel / 2) ; imgIndex++) {
         for(var x = 0;  x < nbx; ++x) {
             for(var y = 0;  y < nby; ++y) {
-             createdBlocks[i++] = createBlock(x, y, nbx, nby, blockImages[imgIndex])
+                data = {'nx': nbx, 'ny': nby, 'a':x, 'b':y, 'op': 1.0,'MAIN':main,'BAR':items.bar, 'img': blockImages[imgIndex % blockImages.length]}
+                items.blocks.append(data)
+                createdBlocks[i++] = "block"
             }
         }
-    }
 }
 
 function nextLevel() {
@@ -140,39 +168,10 @@ function previousLevel() {
     initLevel();
 }
 
-function createBlock(ix, iy, nbx, nby, img) {
-    var component = Qt.createComponent("qrc:/gcompris/src/activities/erase/Block.qml");
-    if (component.status === 1 /* Component.Ready */) {
-        var block = component.createObject(
-                    items.background,
-                    {
-                        "main": main,
-                        "bar": items.bar,
-                        "ix": ix,
-                        "iy": iy,
-                        "nbx": nbx,
-                        "nby": nby,
-                        "opacity": 0.0,
-                        "source": img,
-                        "type": type
-                    });
-        block.opacity = 1.0
-        if (block === null) {
-            // Error Handling
-            console.log("Error creating object Block.qml");
-            return block;
-        }
-    } else if (component.status === 3 /* Component.Error */) {
-        console.log("erase: error creating word component: " + component.errorString());
-    } else
-        console.log("erase: error creating word component: " + component.errorString());
-
-}
-
 function destroyBlocks() {
     if (createdBlocks) {
         for(var i = 0;  i < createdBlocks.length; ++i) {
-            createdBlocks[i].destroy()
+            createdBlocks.pop()
         }
         createdBlocks.length = 0
     }
