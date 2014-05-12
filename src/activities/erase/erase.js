@@ -1,5 +1,29 @@
+/* GCompris - erase.js
+ *
+ * Copyright (C) 2014 Bruno Coudoin
+ *
+ * Authors:
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
+
 .pragma library
 .import QtQuick 2.0 as Quick
+
+var url = "qrc:/gcompris/src/activities/erase/resource/"
 
 var backgroundImages = [
     "Adelie_Penguin2.jpg",
@@ -60,9 +84,9 @@ var backgroundImages = [
 ]
 
 var blockImages = [
-    "qrc:/gcompris/src/activities/erase/resource/transparent_square.svgz",
-    "qrc:/gcompris/src/activities/erase/resource/transparent_square_yellow.svgz",
-    "qrc:/gcompris/src/activities/erase/resource/transparent_square_green.svgz"
+    url + "transparent_square.svgz",
+    url + "transparent_square_yellow.svgz",
+    url + "transparent_square_green.svgz"
 ]
 
 var currentLevel
@@ -79,6 +103,7 @@ var killedBlocks
 var nbLevel = 6
 var nbSubLevel = 8
 var imgIndex = 0
+
 function start(main_, items_, type_) {
     main = main_
     items = items_
@@ -99,8 +124,7 @@ function initLevel() {
     items.blocks.clear()
     imgIndex++
     items.bar.level = currentLevel + 1
-    items.background.source = "qrc:/gcompris/src/activities/erase/resource/" +
-            backgroundImages[currentImage++]
+    items.background.source = url + backgroundImages[currentImage++]
     if(currentImage >= backgroundImages.length) {
         currentImage = 0
     }
@@ -114,7 +138,6 @@ function initLevel() {
 
         for(var x = 0;  x < nbx; ++x) {
             for(var y = 0;  y < nby; ++y) {
-//             createdBlocks[i++] = createBlock(x, y, nbx, nby, blockImages[imgIndex])
                 data = {'nx': nbx, 'ny': nby, 'a':x, 'b':y, 'op': 1.0,'MAIN':main,'BAR':items.bar, 'img': blockImages[imgIndex % blockImages.length]}
                 items.blocks.append(data)
                 createdBlocks[i++] = "block"
