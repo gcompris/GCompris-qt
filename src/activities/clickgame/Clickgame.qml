@@ -3,7 +3,7 @@ import QtQuick.Controls 1.0
 import QtQuick.Controls.Styles 1.0
 import QtMultimedia 5.0
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "clickgame.js" as Activity
 
 ActivityBase {

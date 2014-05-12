@@ -4,7 +4,7 @@ import QtQuick.Controls.Styles 1.0
 import QtMultimedia 5.0
 import GCompris 1.0
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "hexagon.js" as Activity
 
 ActivityBase {

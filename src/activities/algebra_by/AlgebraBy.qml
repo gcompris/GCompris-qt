@@ -22,7 +22,7 @@
 import QtQuick 2.1
 
 import "qrc:/gcompris/src/core"
-import "../algebra_by/"
+import "../algebra_by"
 
 
 Algebra{

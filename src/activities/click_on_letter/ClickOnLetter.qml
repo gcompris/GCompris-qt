@@ -25,7 +25,7 @@ import QtQuick 2.1
 import QtMultimedia 5.0
 import QtGraphicalEffects 1.0
 import GCompris 1.0
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "click_on_letter.js" as Activity
 
 ActivityBase {

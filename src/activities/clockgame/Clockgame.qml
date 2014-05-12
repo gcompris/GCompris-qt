@@ -21,7 +21,7 @@
 */
 import QtQuick 2.1
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "clockgame.js" as Activity
 
 ActivityBase {

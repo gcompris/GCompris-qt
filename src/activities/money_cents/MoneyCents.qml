@@ -20,7 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-import "qrc:/gcompris/src/activities/money"
+import "../money"
 
 MoneyCore {
 

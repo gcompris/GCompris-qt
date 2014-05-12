@@ -21,7 +21,7 @@
 import QtQuick 2.0
 import GCompris 1.0
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 
 /* ToDo:
  * - check for duplicate letters

@@ -3,8 +3,8 @@ import QtQuick.Controls 1.0
 import QtQuick.Controls.Styles 1.0
 import QtMultimedia 5.0
 
-import "qrc:/gcompris/src/core"
-import "qrc:/gcompris/src/activities/memory"
+import "../../core"
+import "../memory"
 import "memory.js" as Activity
 
 ActivityBase {

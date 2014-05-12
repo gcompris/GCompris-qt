@@ -18,7 +18,7 @@
 */
 
 import QtQuick 2.0
-import "qrc:/gcompris/src/activities/planegame"
+import "../planegame"
 
 Planegame {
     id: activity

@@ -23,7 +23,7 @@ import QtQuick 2.1
 import QtQuick.Particles 2.0
 import QtMultimedia 5.0
 import "erase.js" as Activity
-import "qrc:/gcompris/src/core"
+import "../../core"
 import GCompris 1.0
 
 Image {

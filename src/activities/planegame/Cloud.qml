@@ -20,7 +20,7 @@
 import QtQuick 2.2
 import QtMultimedia 5.0
 import "planegame.js" as Activity
-import "qrc:/gcompris/src/core"
+import "../../core"
 import GCompris 1.0
 
 Image {
