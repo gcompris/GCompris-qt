@@ -2,6 +2,7 @@ import QtQuick 2.1
 import QtQuick.Controls 1.0
 import QtQuick.Controls.Styles 1.0
 import QtMultimedia 5.0
+import GCompris 1.0
 
 import "qrc:/gcompris/src/core"
 import "erase.js" as Activity
@@ -29,6 +30,8 @@ ActivityBase {
         QtObject {
             id: items
             property alias background: background
+            property alias blocks: blocks
+//            property alias grid: grid
             property alias bar: bar
             property alias bonus: bonus
         }
@@ -53,6 +56,24 @@ ActivityBase {
                 }
             }
         }
+        ListModel{
+            id: blocks
+        }
+        Repeater{
+            model: blocks
+            Block{
+                id: modelData
+                nbx: nx
+                nby: ny
+                ix: a
+                iy: b
+                opacity: op
+                source: img
+                type: activity.type
+                main: MAIN
+                bar: BAR
+            }
+        }
 
         DialogHelp {
             id: dialogHelpLeftRight
@@ -75,5 +96,4 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextSubLevel)
         }
     }
-
 }

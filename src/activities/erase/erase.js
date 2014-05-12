@@ -78,7 +78,7 @@ var killedBlocks
 
 var nbLevel = 6
 var nbSubLevel = 8
-
+var imgIndex = 0
 function start(main_, items_, type_) {
     main = main_
     items = items_
@@ -92,9 +92,12 @@ function start(main_, items_, type_) {
 function stop() {
     destroyBlocks();
 }
-
+var nbx = (currentLevel % 2 * 3) + 5;
+var nby = (currentLevel % 2 * 3) + 5;
 function initLevel() {
     destroyBlocks();
+    items.blocks.clear()
+    imgIndex++
     items.bar.level = currentLevel + 1
     items.background.source = "qrc:/gcompris/src/activities/erase/resource/" +
             backgroundImages[currentImage++]
@@ -107,14 +110,16 @@ function initLevel() {
     var w = main.width / nbx
     var h = (main.height - items.bar.height) / nby
     var i = 0
+    var data
 
-    for(var imgIndex = 0; imgIndex <= Math.floor(currentLevel / 2) ; imgIndex++) {
         for(var x = 0;  x < nbx; ++x) {
             for(var y = 0;  y < nby; ++y) {
-             createdBlocks[i++] = createBlock(x, y, nbx, nby, blockImages[imgIndex])
+//             createdBlocks[i++] = createBlock(x, y, nbx, nby, blockImages[imgIndex])
+                data = {'nx': nbx, 'ny': nby, 'a':x, 'b':y, 'op': 1.0,'MAIN':main,'BAR':items.bar, 'img': blockImages[imgIndex % blockImages.length]}
+                items.blocks.append(data)
+                createdBlocks[i++] = "block"
             }
         }
-    }
 }
 
 function nextLevel() {
@@ -139,39 +144,10 @@ function previousLevel() {
     initLevel();
 }
 
-function createBlock(ix, iy, nbx, nby, img) {
-    var component = Qt.createComponent("qrc:/gcompris/src/activities/erase/Block.qml");
-    if (component.status === 1 /* Component.Ready */) {
-        var block = component.createObject(
-                    items.background,
-                    {
-                        "main": main,
-                        "bar": items.bar,
-                        "ix": ix,
-                        "iy": iy,
-                        "nbx": nbx,
-                        "nby": nby,
-                        "opacity": 0.0,
-                        "source": img,
-                        "type": type
-                    });
-        block.opacity = 1.0
-        if (block === null) {
-            // Error Handling
-            console.log("Error creating object Block.qml");
-            return block;
-        }
-    } else if (component.status === 3 /* Component.Error */) {
-        console.log("erase: error creating word component: " + component.errorString());
-    } else
-        console.log("erase: error creating word component: " + component.errorString());
-
-}
-
 function destroyBlocks() {
     if (createdBlocks) {
         for(var i = 0;  i < createdBlocks.length; ++i) {
-            createdBlocks[i].destroy()
+            createdBlocks.pop()
         }
         createdBlocks.length = 0
     }
@@ -193,4 +169,4 @@ function shuffle(o) {
     for(var j, x, i = o.length; i;
         j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
     return o;
-};
+}

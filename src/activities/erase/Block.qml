@@ -6,7 +6,6 @@ import GCompris 1.0
 
 Image {
     id: block
-    opacity: 0
     property Item main
     property Item bar
     property double ix
