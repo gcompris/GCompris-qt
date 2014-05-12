@@ -21,7 +21,7 @@
  */
 import QtQuick 2.1
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "money.js" as Activity
 
 ActivityBase {

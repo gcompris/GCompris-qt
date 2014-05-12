@@ -22,7 +22,7 @@
 import QtQuick 2.1
 import QtMultimedia 5.0
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "findit.js" as Activity
 
 ActivityBase {
