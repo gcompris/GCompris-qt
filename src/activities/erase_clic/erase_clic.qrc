@@ -1,7 +1,0 @@
-<RCC>
-    <qresource prefix="/gcompris/src/activities/erase_clic">
-        <file>ActivityInfo.qml</file>
-        <file>EraseClic.qml</file>
-        <file>erase_clic.svg</file>
-    </qresource>
-</RCC>

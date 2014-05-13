@@ -1,41 +1,32 @@
-function(GCOMPRIS_ADD_RCC activity )
 
-  set(infile ${CMAKE_CURRENT_LIST_DIR}/${activity}.qrc)
-  set(outfilename ${GCOMPRIS_RCC_DIR}/${activity}.rcc)
-  get_filename_component(rc_path ${infile} PATH)
+function(GCOMPRIS_ADD_RCC activity)
 
-  # Code taken from QT5_ADD_RESOURCES
-  # We extract the qrc content to add a dependancy on each file it contains
-  set(_RC_DEPENDS)
-  if(EXISTS "${infile}")
-	  #  parse file for dependencies
-	  #  all files are absolute paths or relative to the location of the qrc file
-	  file(READ "${infile}" _RC_FILE_CONTENTS)
-	  string(REGEX MATCHALL "<file[^<]+" _RC_FILES "${_RC_FILE_CONTENTS}")
-	  foreach(_RC_FILE ${_RC_FILES})
-		  string(REGEX REPLACE "^<file[^>]*>" "" _RC_FILE "${_RC_FILE}")
-		  if(NOT IS_ABSOLUTE "${_RC_FILE}")
-			  set(_RC_FILE "${rc_path}/${_RC_FILE}")
-		  endif()
-		  set(_RC_DEPENDS ${_RC_DEPENDS} "${_RC_FILE}")
-	  endforeach()
-	  # Since this cmake macro is doing the dependency scanning for these files,
-	  # let's make a configured file and add it as a dependency so cmake is run
-	  # again when dependencies need to be recomputed.
-	  qt5_make_output_file("${infile}" "" "qrc.depends" out_depends)
-	  configure_file("${infile}" "${out_depends}" COPY_ONLY)
-  endif()
+  # Create this QRC file
+  # (cannot create it in the build dir because rcc expect local files)
+  set(CREATED_QRC "${CMAKE_CURRENT_SOURCE_DIR}/${activity}.qrc")
 
-  add_custom_command(OUTPUT ${outfilename}
-					 COMMAND ${Qt5Core_RCC_EXECUTABLE} "-binary" -o ${outfilename} ${infile}
-					 MAIN_DEPENDENCY ${infile}
-					 DEPENDS ${_RC_DEPENDS} "${out_depends}" VERBATIM)
+  # With these files in it
+  file(GLOB QRC_CONTENTS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.svg *.js resource/*)
+  file(GLOB QRC_CONTENTS_ABS ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.svg *.js resource/*)
+
+  file(WRITE ${CREATED_QRC} "<RCC>\n\t<qresource prefix=\"/gcompris/src/activities/${activity}\">")
+  foreach(FILE ${QRC_CONTENTS})
+      file(APPEND ${CREATED_QRC} "\n\t\t<file>${FILE}</file>")
+  endforeach()
+  file(APPEND ${CREATED_QRC} "\n\t</qresource>\n</RCC>\n")
+  list(APPEND QRC_FILES ${CREATED_QRC})
+
+  set(CREATED_RCC ${GCOMPRIS_RCC_DIR}/${activity}.rcc)
+
+  add_custom_command(OUTPUT ${CREATED_RCC}
+                     COMMAND ${Qt5Core_RCC_EXECUTABLE} "-binary" -o ${CREATED_RCC} ${CREATED_QRC}
+                     DEPENDS ${QRC_CONTENTS_ABS} "${out_depends}" VERBATIM)
 
   add_custom_target(
 	rcc_${activity} ALL
-	DEPENDS ${outfilename}
+    DEPENDS ${CREATED_RCC}
 	COMMENT "Generate ${activity} RCC"
-	SOURCES ${_RC_DEPENDS}
+    SOURCES ${CREATED_QRC}
 	VERBATIM
   )
 

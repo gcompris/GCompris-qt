@@ -1,8 +1,0 @@
-<RCC>
-    <qresource prefix="/gcompris/src/activities/memory-math-mult">
-        <file>ActivityInfo.qml</file>
-        <file>Memory-math-mult.qml</file>
-        <file>memory-multdataset.js</file>
-        <file>memory-math-mult.svg</file>
-    </qresource>
-</RCC>

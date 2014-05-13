@@ -1,7 +1,0 @@
-<RCC>
-    <qresource prefix="/gcompris/src/activities/number-odd-even">
-        <file>ActivityInfo.qml</file>
-        <file>NumbersOddEven.qml</file>
-        <file>numbers-odd-even.svg</file>
-    </qresource>
-</RCC>

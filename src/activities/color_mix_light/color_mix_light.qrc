@@ -1,7 +1,0 @@
-<RCC>
-    <qresource prefix="/gcompris/src/activities/color_mix_light">
-        <file>ActivityInfo.qml</file>
-        <file>ColorMixLight.qml</file>
-        <file>colormixlight.svg</file>
-    </qresource>
-</RCC>
