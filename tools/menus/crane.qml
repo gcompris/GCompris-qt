@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Mouse manipulation")
   manual: qsTr("Move the items in the bottom left frame to copy their position in the top right model. Below the crane itself, you will find four arrows that let you move items. To select the item to move, just click on it. If you prefer, you can use the arrow keys and the space or tab key instead.")
   credit: ""
+  section: "/puzzle"
 }

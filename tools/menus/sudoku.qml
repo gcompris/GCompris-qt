@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Completing the puzzle requires patience and logical ability")
   manual: qsTr("For the first level with colored symbols, select a symbol on the left and click on its target position. For the higher levels, click on an empty square to give it the keyboard focus. Then enter a possible letter or number. GCompris will not let you enter invalid data.")
   credit: ""
+  section: "/puzzle"
 }

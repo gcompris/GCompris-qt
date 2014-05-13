@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: ""
   manual: qsTr("Use the arrow keys to navigate around the board and to avoid the Troggles. Press the spacebar to eat a number.")
   credit: ""
+  section: "/math/algebramenu/gnumchmenu"
 }

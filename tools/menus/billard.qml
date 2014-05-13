@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Mouse-manipulation")
   manual: qsTr("Point the mouse and click on the ball, to set the speed and direction of the ball. The closer you click to the center, the slower the ball moves.")
   credit: ""
+  section: "/fun"
 }

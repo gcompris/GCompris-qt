@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("mouse and keyboard manipulation")
   manual: qsTr("Use Tuxpaint to draw. When Tuxpaint is finished this board will end.")
   credit: ""
+  section: "/fun"
 }

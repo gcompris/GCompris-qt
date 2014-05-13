@@ -22,4 +22,5 @@ Have fun! :)")
   credit: qsTr("Thanks to the Tuxpaint team for providing the following sounds under GPL:
 - realrainbow.ogg - used when a new gold nugget appears
 - metalpaint.wav - remixed and used when a gold nugget is collected")
+  section: "/computer/mouse"
 }

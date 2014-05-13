@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Move and click the mouse")
   manual: qsTr("Find the next symbol in a list.")
   credit: ""
+  section: "/discovery/miscelaneous"
 }

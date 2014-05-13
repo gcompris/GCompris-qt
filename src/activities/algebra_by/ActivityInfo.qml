@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Multiplication table")
   manual: qsTr("A multiplication of two numbers is displayed. At the right of the equals sign, give the answer, the product. Use the left and right arrows to modify your answer and press the Enter key to check if you've got it right. If not, just try again.")
   credit: ""
+  section: "/math/algebramenu/algebra_group"
 }

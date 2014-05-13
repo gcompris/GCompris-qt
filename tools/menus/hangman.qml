@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Reading skill")
   manual: qsTr("You can enter the letters using the virtual keyboard on the screen or with the real keyboard.")
   credit: ""
+  section: "/reading"
 }

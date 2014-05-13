@@ -25,4 +25,5 @@ The following keyboard bindings work in this game:
 - space bar: play
 ")
   credit: ""
+  section: "/discovery/sound_group"
 }

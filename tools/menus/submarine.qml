@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Physics basics")
   manual: qsTr("Click on different active elements : engine, rudders and air tanks, in order to navigate to the required depth. There is a close gate on the right. After the first level, your have to catch the jewel to open it. Pass through it to reach the next level.")
   credit: ""
+  section: "/experience"
 }

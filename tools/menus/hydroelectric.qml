@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: ""
   manual: qsTr("Click on different active elements : sun, cloud, dam, solar array, wind farm and transformers, in order to reactivate the entire electrical system. When the system is back up and Tux is in his home, push the light button for him. To win you must switch on all the consumers while all the producers are up.")
   credit: qsTr("Drawing by Stephane Cabaraux.")
+  section: "/experience"
 }

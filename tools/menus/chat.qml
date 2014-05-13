@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: ""
   manual: qsTr("This chat activity will only work with other GCompris users on your local network, not on the Internet. To use it, just type in your message and hit Enter. Your message is then broadcast on the local network, and any GCompris program running the chat activity on that local network will receive and display your message.")
   credit: ""
+  section: "/fun"
 }

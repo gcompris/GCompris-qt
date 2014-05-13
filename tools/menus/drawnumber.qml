@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Can count from 1 to 50.")
   manual: qsTr("Draw the picture by clicking on each numbers in the right order.")
   credit: ""
+  section: "/math/numeration"
 }

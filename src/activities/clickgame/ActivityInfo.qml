@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Mouse-manipulation")
   manual: qsTr("Use the left mouse button to click on the moving fish. A level 5 and after, a double click is mandatory.")
   credit: qsTr("Fish are taken from the Unix utility xfishtank. All image credits belong to Guillaume Rousse.")
+  section: "/computer/mouse"
 }

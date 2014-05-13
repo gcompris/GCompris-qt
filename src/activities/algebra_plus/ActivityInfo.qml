@@ -15,4 +15,5 @@ ActivityInfo {
                "to modify your answer and press the Enter key to check if you've got it right. " +
                "If not, just try again.")
   credit: ""
+  section: "/math/algebramenu/algebra_group"
 }

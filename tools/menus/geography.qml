@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Mouse manipulation: movement, drag and drop")
   manual: ""
   credit: ""
+  section: "/discovery/miscelaneous"
 }

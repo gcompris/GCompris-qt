@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Can read")
   manual: qsTr("Click on the correct colored butterfly.")
   credit: ""
+  section: "/discovery/colors_group"
 }

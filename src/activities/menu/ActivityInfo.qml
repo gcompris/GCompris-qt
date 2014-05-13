@@ -26,4 +26,5 @@ Shortcuts:
     ctrl-f Toggle full screen
     ctrl-m Toggle mute for the background music")
   credit: ""
+  section: "/"
 }

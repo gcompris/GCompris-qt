@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Brain")
   manual: qsTr("Place balls in the holes. You win if the computer has to place the last ball. If you want Tux to begin, just click on him.")
   credit: ""
+  section: "/strategy"
 }

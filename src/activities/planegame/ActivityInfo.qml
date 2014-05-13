@@ -32,4 +32,5 @@ ActivityInfo {
     prerequisite: qsTr("Number")
     manual: qsTr("Catch the numbers in increasing order, using the up, down, right and left arrows on the keyboard to move the helicopter.")
     credit: ""
+  section: "/math/numeration"
 }

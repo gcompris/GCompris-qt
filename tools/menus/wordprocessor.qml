@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("The children can type their own text or copy one given by the teacher.")
   manual: qsTr("In this wordprocessor you can type the text you want, save and get it back later. You can add some style to your text by using the buttons on the left. The first 4 buttons let you select the style of the line on which your insert cursor is. The 2 others buttons with multiple choices let you select from a predefined document and color theme.")
   credit: ""
+  section: "/fun"
 }

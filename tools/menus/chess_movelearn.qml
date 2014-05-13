@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Mouse-manipulation")
   manual: ""
   credit: qsTr("The chess engine is from gnuchess.")
+  section: "/strategy/chess"
 }

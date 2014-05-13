@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Keyboard manipulation")
   manual: qsTr("Type the complete word as it falls, before it reaches the ground")
   credit: ""
+  section: "/computer/keyboard"
 }

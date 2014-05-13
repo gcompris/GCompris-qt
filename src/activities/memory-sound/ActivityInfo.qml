@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Mouse manipulation, Brain.")
   manual: qsTr("A set of violinist Tux is shown. Each Tux has an associated sound, and each sound has a twin exactly the same. Click on a Tux to see its hidden sound, and try to match the twins. You can only activate two Tux at once, so you need to remember where a sound is, while you listen to its twin. When you turn over the twins, they both disappear.")
   credit: ""
+  section: "/discovery/memory_group"
 }

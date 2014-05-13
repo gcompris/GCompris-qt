@@ -21,4 +21,5 @@ You can see whether this mode is enabled or not, by looking at Tux's feet: If Tu
 From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the \"barefoot / sportshoe\"-icon in the upper left corner of the screen to toggle the run-fast-mode.
 ")
   credit: ""
+  section: "/discovery/mazeMenu"
 }

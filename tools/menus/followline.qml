@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: ""
   manual: qsTr("Move the mouse over the red part of the hose-pipe. This will move it, bringing it, part by part, up to the flowers. Be careful, if you move off the hose, the red part will go back down.")
   credit: ""
+  section: "/computer/mouse"
 }

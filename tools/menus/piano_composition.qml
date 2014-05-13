@@ -46,4 +46,5 @@ Thank you to Federico Mena who inspired me with his wonderful enthusiasm for my 
 Thank you to all contributors of children's songs from around the world, especially the GNOME community. Learn more about these
 melodies and who contributed them here: https://live.gnome.org/GComprisMelodies
 ")
+  section: "/discovery/sound_group"
 }

@@ -18,4 +18,5 @@ Use the up/down keys to control the thrust and the right/left keys to control di
 The landing platform is green if your speed is fine for a safe landing.
         ")
   credit: ""
+  section: "/experience"
 }

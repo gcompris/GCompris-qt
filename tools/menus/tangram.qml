@@ -18,4 +18,5 @@ ActivityInfo {
   prerequisite: qsTr("Mouse-manipulation")
   manual: qsTr("Select the tangram to form. Move a piece by dragging it. Right-click on it to create a symmetrical item. Select an item and drag around it to show the rotation you want. Once you've shown what shape you want, the computer will create it. If you need help, click on the shape button, and the border of the shape will be drawn.")
   credit: qsTr("The original code was written by Philippe Banwarth in 1999. It was ported to GCompris by Yves Combe in 2005.")
+  section: "/puzzle"
 }

@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Reading")
   manual: qsTr("A word is shown at the top right of the board. A list of words will appear and disappear on the left. Does the given word belong to the list?")
   credit: ""
+  section: "/reading"
 }

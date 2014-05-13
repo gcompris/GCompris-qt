@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("The four arithmetic operations. Combine several arithmetic operations.")
   manual: qsTr("At the top of the board area, choose the numbers and arithmetic operators that give the specified result. You can deselect a number or operator by clicking on it again.")
   credit: qsTr("Animal pictures come from the Animal Photography Page of Ralf Schmode (http://schmode.net/). Ralf has kindly permitted GCompris to include his pictures. Thanks a lot, Ralf.")
+  section: "/math/algebramenu"
 }

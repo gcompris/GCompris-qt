@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: ""
   manual: qsTr("To balance the scales, move the masses on the left or the right side. Take care of the weight and the unit of the masses, remember that a kilogram (kg) is 1000 grams (g). They can be arranged in any order.")
   credit: qsTr("The painting is an original painting created by Virginie MOREAU (virginie.moreau@free.fr) in 2001. Its name is 'Spices Seller in Egypt'. It is released under the GPL license.")
+  section: "/math/algebramenu"
 }

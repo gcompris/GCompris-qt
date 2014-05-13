@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Basic counting skills")
   manual: qsTr("Drag and Drop each proposed item on its destination")
   credit: ""
+  section: "/discovery/miscelaneous"
 }

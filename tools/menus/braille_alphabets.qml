@@ -12,4 +12,6 @@ ActivityInfo {
   prerequisite: ""
   manual: qsTr("The screen has 3 sections: an interactive braille cell, an instruction telling you the letter to reproduce, and at the top the Braille letters to use as a reference. Each level teaches a set of 10 letters.")
   credit: ""
+  section: "/discovery/braille
+        <manual>The screen has 3 sections: an interactive braille cell, an instruction telling you the letter to reproduce, and at the top the Braille letters to use as a reference. Each level teaches a set of 10 letters.</manual>"
 }

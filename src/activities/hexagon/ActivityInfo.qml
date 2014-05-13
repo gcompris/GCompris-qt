@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Move and click the mouse")
   manual: qsTr("Try to find the strawberry under the blue fields. The fields become redder as you get closer.")
   credit: ""
+  section: "/fun"
 }

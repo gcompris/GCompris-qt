@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Needs to be capable of moving and clicking the mouse easily")
   manual: qsTr("Select a drawing tool on the left, and a color down the bottom, then click and drag in the white area to create a new shape. To save time, you can click with the middle mouse button to delete an object.")
   credit: ""
+  section: "/math/geometry"
 }

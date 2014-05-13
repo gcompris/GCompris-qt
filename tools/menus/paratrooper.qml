@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("This board is game-oriented. No specific skills are needed to play.")
   manual: qsTr("Hit any key or click on the plane to make Tux jump. Hit another key or click on Tux to open the parachute.")
   credit: ""
+  section: "/experience"
 }

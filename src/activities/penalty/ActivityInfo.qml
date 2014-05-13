@@ -15,4 +15,5 @@ ActivityInfo {
                "If you lose, Tux catches the ball. You must click on it to " +
                "bring it back to its former position")
   credit: ""
+  section: "/computer/mouse"
 }

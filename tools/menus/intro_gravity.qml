@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: ""
   manual: qsTr("Follow the instructions when you run the activity.")
   credit: ""
+  section: "/experience"
 }

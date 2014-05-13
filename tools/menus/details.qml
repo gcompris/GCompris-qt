@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Good mouse-control")
   manual: qsTr("Complete the puzzle by dragging each piece from the set of pieces on the left, to the matching space in the puzzle.")
   credit: qsTr("The images are from Wikimedia Commons.")
+  section: "/discovery/miscelaneous"
 }

@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: ""
   manual: qsTr("Click on the correct instrument.")
   credit: ""
+  section: "/discovery/sound_group"
 }

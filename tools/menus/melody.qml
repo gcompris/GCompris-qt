@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Move and click the mouse")
   manual: qsTr("Listen to the sound sequence played, and repeat it by clicking on the elements. You can listen again by clicking on the repeat button.")
   credit: ""
+  section: "/discovery/sound_group"
 }

@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Mouse manipulation, Brain.")
   manual: qsTr("You can see a set of cards that all look the same. Each card has a picture on the other side, and each picture has a twin somewhere in the set. You can only turn over two cards at once, so you need to remember where the pictures are until you can find the twin. When you turn over twins, they disappear! You take turns with Tux, and to win the game, you have to find more pairs of twins than he does.")
   credit: ""
+  section: "/discovery/memory_group"
 }

@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Keyboard manipulation")
   manual: qsTr("Type the falling letters before they reach the ground")
   credit: ""
+  section: "/computer/keyboard"
 }

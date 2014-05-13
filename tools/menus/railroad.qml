@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("None")
   manual: qsTr("A train - a locomotive and carriage(s) - is displayed at the top of the main area for a few seconds. Rebuild it at the top of the screen by selecting the appropriate carriages and locomotive. Deselect an item by clicking on it again. Check your construction by clicking on the hand at the bottom.")
   credit: ""
+  section: "/discovery/memory_group"
 }

@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: ""
   manual: qsTr("Read the history of Louis Braille, his biography and discovery of the Braille system. Click on the previous and next buttons to move to the respective story page. At the end, arrange the sequence in the chronological order.")
   credit: qsTr("Louis Braille Video: &lt; http://www.youtube.com/watch?v=9bdfC2j_4x4 &gt; ")
+  section: "/discovery/braille"
 }

@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: ""
   manual: qsTr("Rebuild the same mosaic on the right area")
   credit: ""
+  section: "/discovery/colors_group"
 }

@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Mouse-manipulation")
   manual: qsTr("Click the position in the line where you want to drop a piece. You can also use the arrow keys to move the piece left or right, and the down or space key to drop a piece.")
   credit: qsTr("The original code was written in 2005 by Laurent Lacheny. In 2006, Miguel de Izarra made the two players game. Images and Artificial Intelligence taken from project 4stattack by Jeroen Vloothuis. The original project can be found on &lt;http://forcedattack.sourceforge.net&gt;")
+  section: "/strategy"
 }

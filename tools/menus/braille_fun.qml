@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Braille Alphabet Codes")
   manual: qsTr("Enter the braille code in the tile for the corresponding falling letters. Check the braille chart by clicking on the toggle button for help.")
   credit: ""
+  section: "/discovery/braille"
 }

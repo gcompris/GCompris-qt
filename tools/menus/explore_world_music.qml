@@ -19,4 +19,5 @@ The second level is a matching game. You will hear a clip of music, and you must
 The third level is also a matching game. You must select the location that matches the text description on the screen. You win the level when you have correctly matched all text prompts.
 ")
   credit: qsTr("Images from http://commons.wikimedia.org/wiki, http://archive.org")
+  section: "/discovery/sound_group"
 }

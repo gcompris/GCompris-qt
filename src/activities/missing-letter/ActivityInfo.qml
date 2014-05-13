@@ -13,4 +13,5 @@ ActivityInfo
   prerequisite: qsTr("Word reading")
   manual: qsTr("An object is displayed in the main area, and an incomplete word is printed under the picture. Select the missing letter to complete the word.")
   credit: ""
+  section: "/reading"
 }

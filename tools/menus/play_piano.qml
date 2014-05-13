@@ -34,4 +34,5 @@ The following keyboard bindings work in this game:
   - F5: A# / Bb
 ")
   credit: qsTr("Bruno Coudoin for his mentorship.")
+  section: "/discovery/sound_group"
 }

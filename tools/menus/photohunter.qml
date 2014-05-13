@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: ""
   manual: qsTr("Observe the two pictures carefully. There are some slight differences. When you find a difference you must click on it.")
   credit: ""
+  section: "/puzzle"
 }

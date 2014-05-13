@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Can move the mouse.")
   manual: qsTr("Listen to the color and click on the matching duck.")
   credit: ""
+  section: "/discovery/colors_group"
 }

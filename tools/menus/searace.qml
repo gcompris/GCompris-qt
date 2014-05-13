@@ -17,4 +17,5 @@ For example:
 - forward 10: Go forward for 10 units (as displayed on the ruler).
 The goal is to reach the right of the screen (the red line). When done, you can try to improve your program and start a new race with the same weather conditions by using the retry button. You can click and drag your mouse anywhere on the map to get a measurement in distance and angle. Going to the next level will give you more complex weather conditions.")
   credit: ""
+  section: "/experience"
 }
