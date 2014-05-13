@@ -67,21 +67,27 @@ ActivityBase {
                 for(var i in touchPoints) {
                     var touch = touchPoints[i]
 
-                    var newBlock = background.childAt(touch.x, touch.y)
+                    var newBlock = rootItem.childAt(touch.x, touch.y)
                     if(newBlock)
                         newBlock.enter()
 
-                    var previousBlock = background.childAt(touch.previousX, touch.previousY)
+                    var previousBlock = rootItem.childAt(touch.previousX, touch.previousY)
                     if(previousBlock !== newBlock)
                         previousBlock.leave()
                 }
             }
         }
+
+        Item {
+            id: rootItem
+        }
+
         ListModel{
             id: blocks
         }
         Repeater{
             model: blocks
+            parent: rootItem
             Block{
                 id: modelData
                 nbx: nx
