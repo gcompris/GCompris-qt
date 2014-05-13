@@ -140,10 +140,13 @@ void ActivityInfoTree::init()
 	if(!QResource::registerResource(ApplicationInfo::getFilePath("core.rcc")))
 		qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("core.rcc");
 
-	if(!QResource::registerResource(ApplicationInfo::getFilePath("menu.rcc")))
-		qDebug() << "Failed to load the resource file menu.rcc";
+    if(!QResource::registerResource(ApplicationInfo::getFilePath("menu.rcc")))
+        qDebug() << "Failed to load the resource file menu.rcc";
 
-	qmlRegisterSingletonType<QObject>("GCompris", 1, 0, "ActivityInfoTree", menuTreeProvider);
+    if(!QResource::registerResource(ApplicationInfo::getFilePath("activities.rcc")))
+        qDebug() << "Failed to load the resource file activities.rcc";
+
+    qmlRegisterSingletonType<QObject>("GCompris", 1, 0, "ActivityInfoTree", menuTreeProvider);
 	qmlRegisterType<ActivityInfo>("GCompris", 1, 0, "ActivityInfo");
 }
 

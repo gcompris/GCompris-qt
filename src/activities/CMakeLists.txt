@@ -19,3 +19,5 @@ foreach(ACTIVITY ${ACTIVITIES})
     endif("USE_${ACTIVITY}")
   endif(${match})
 endforeach(ACTIVITY ${ACTIVITIES})
+
+GCOMPRIS_ADD_RCC(activities)
