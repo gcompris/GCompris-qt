@@ -46,6 +46,7 @@
 #include <QQmlEngine>
 
 #include "ApplicationSettings.h"
+#include "config.h"
 
 class QQuickWindow;
 
@@ -69,6 +70,7 @@ class ApplicationInfo : public QObject
     Q_PROPERTY(bool isFullscreen READ isFullscreen WRITE setFullscreen NOTIFY fullscreenChanged)
     Q_PROPERTY(QString locale READ locale WRITE setLocale NOTIFY localeChanged)
     Q_PROPERTY(QString localeShort READ localeShort)
+    Q_PROPERTY(QString GCVersion READ GCVersion CONSTANT)
 
 public:
 
@@ -122,6 +124,7 @@ public:
         return locale.left(locale.indexOf('_'));
     }
     QString localeShort() const { return localeShort(m_applicationSettings.locale()); }
+    static QString GCVersion() { return VERSION; }
 
 protected slots:
 	void notifyPortraitMode();

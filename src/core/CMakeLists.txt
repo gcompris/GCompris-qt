@@ -1,4 +1,6 @@
 
+configure_file(config.h.in "${CMAKE_CURRENT_BINARY_DIR}/config.h" @ONLY)
+
 set(gcompris_SRCS
    ActivityInfo.cpp
    ActivityInfoTree.cpp
@@ -21,6 +23,11 @@ qt5_wrap_cpp(gcompris_MOC ${gcompris_SRCS} ${gcompris_HEADERS})
 set(gcompris_SRCS
    ${gcompris_SRCS}
    main.cpp
+   config.h.in
+)
+
+include_directories(
+  "${CMAKE_CURRENT_BINARY_DIR}"   # to find config.h
 )
 
 if(NOT ANDROID)

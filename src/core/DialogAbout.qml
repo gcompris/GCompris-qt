@@ -19,13 +19,15 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
+import GCompris 1.0
+
 DialogBackground {
     visible: false
     title: qsTr("About GCompris")
 
     // TRANSLATORS: Replace this string with your names, one name per line.
     property string translators: qsTr("translator-credits")
-    property string version: "0.4"
+    property string version: ApplicationInfo.GCVersion
 
     content: "<center><b>" + qsTr("GCompris Home Page: http://gcompris.net") + "</b></center>" + "<br/>" +
              "<center><b>" + "GCompris Qt " + version + "</b></center>" + "<br/>" +
