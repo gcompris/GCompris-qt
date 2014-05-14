@@ -35,7 +35,7 @@ function(GCOMPRIS_ADD_RCC resource_path)
 
   add_custom_target(
     rcc_${activity} ALL
-    DEPENDS ${CREATED_RCC}
+    DEPENDS ${CREATED_RCC} ${CREATED_QRC}
     COMMENT "Generate ${activity} RCC"
     SOURCES ${CREATED_QRC}
     VERBATIM
