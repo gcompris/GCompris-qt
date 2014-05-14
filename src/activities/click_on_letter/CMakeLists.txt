@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(click_on_letter)
+GCOMPRIS_ADD_RCC(activities/click_on_letter *.qml *.svg *.svgz *.js resource/*)

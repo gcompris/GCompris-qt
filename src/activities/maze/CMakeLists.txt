@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(maze)
+GCOMPRIS_ADD_RCC(activities/maze *.qml *.svg *.svgz *.js resource/*)

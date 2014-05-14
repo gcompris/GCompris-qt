@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(erase_2clic)
+GCOMPRIS_ADD_RCC(activities/erase_2clic *.qml *.svg *.svgz *.js resource/*)

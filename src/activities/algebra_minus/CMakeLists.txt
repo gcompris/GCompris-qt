@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(algebra_minus)
+GCOMPRIS_ADD_RCC(activities/algebra_minus *.qml *.svg *.svgz *.js resource/*)

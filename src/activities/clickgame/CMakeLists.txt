@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(clickgame)
+GCOMPRIS_ADD_RCC(activities/clickgame *.qml *.svg *.svgz *.js resource/*)

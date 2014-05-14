@@ -43,4 +43,4 @@ if(ANDROID)
   )
 endif(ANDROID)
 
-GCOMPRIS_ADD_RCC(core)
+GCOMPRIS_ADD_RCC(core *.qml *.js resource/*)

@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(mosaic)
+GCOMPRIS_ADD_RCC(activities/mosaic *.qml *.svg *.svgz *.js resource/*)

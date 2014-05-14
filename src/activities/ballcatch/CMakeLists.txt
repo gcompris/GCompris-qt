@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(ballcatch)
+GCOMPRIS_ADD_RCC(activities/ballcatch *.qml *.svg *.svgz *.js resource/*)

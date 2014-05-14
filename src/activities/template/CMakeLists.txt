@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(template)
+GCOMPRIS_ADD_RCC(activities/template *.qml *.svg *.svgz *.js resource/*)

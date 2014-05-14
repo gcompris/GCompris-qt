@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(memory-math-minus)
+GCOMPRIS_ADD_RCC(activities/memory-math-minus *.qml *.svg *.svgz *.js resource/*)

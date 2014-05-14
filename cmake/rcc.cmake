@@ -1,28 +1,26 @@
 
-function(GCOMPRIS_ADD_RCC activity)
+#
+# GCOMPRIS_ADD_RCC(resource_path <file list>)
+#
+function(GCOMPRIS_ADD_RCC resource_path)
+
+  set(options)
+  set(oneValueArgs)
+  set(multiValueArgs)
+  cmake_parse_arguments(_RCC "${options}" "${oneValueArgs}" "${multiValueArgs}" ${ARGN})
+  set(rcc_files ${_RCC_UNPARSED_ARGUMENTS})
+
+  get_filename_component(activity "${resource_path}" NAME)
 
   # Create this QRC file
   # (cannot create it in the build dir because rcc expect local files)
   set(CREATED_QRC "${CMAKE_CURRENT_SOURCE_DIR}/${activity}.qrc")
 
-  set(ACTIVITY_PATH "/gcompris/src/activities")
-  if(${activity} STREQUAL "core")
-    set(ACTIVITY_PATH "/gcompris/src")
-    # With these files in it
-    file(GLOB QRC_CONTENTS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.svg *.svgz *.js resource/*)
-    file(GLOB QRC_CONTENTS_ABS ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.svg *.svgz *.js resource/*)
-  elseif(${activity} STREQUAL "activities")
-    set(ACTIVITY_PATH "/gcompris/src")
-    # With these files in it
-    file(GLOB QRC_CONTENTS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} activities.txt)
-    file(GLOB QRC_CONTENTS_ABS ${CMAKE_CURRENT_SOURCE_DIR} activities.txt)
-  else()
-    # With these files in it
-    file(GLOB QRC_CONTENTS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.svg *.svgz *.js resource/*)
-    file(GLOB QRC_CONTENTS_ABS ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.svg *.svgz *.js resource/*)
-  endif()
+  set(ACTIVITY_PATH "/gcompris/src/${resource_path}")
+  file(GLOB_RECURSE QRC_CONTENTS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ${rcc_files})
+  file(GLOB_RECURSE QRC_CONTENTS_ABS ${CMAKE_CURRENT_SOURCE_DIR} ${rcc_files})
 
-  file(WRITE ${CREATED_QRC} "<RCC>\n\t<qresource prefix=\"${ACTIVITY_PATH}/${activity}\">")
+  file(WRITE ${CREATED_QRC} "<RCC>\n\t<qresource prefix=\"${ACTIVITY_PATH}\">")
   foreach(FILE ${QRC_CONTENTS})
       file(APPEND ${CREATED_QRC} "\n\t\t<file>${FILE}</file>")
   endforeach()
@@ -36,11 +34,11 @@ function(GCOMPRIS_ADD_RCC activity)
                      DEPENDS ${QRC_CONTENTS_ABS} "${out_depends}" VERBATIM)
 
   add_custom_target(
-	rcc_${activity} ALL
+    rcc_${activity} ALL
     DEPENDS ${CREATED_RCC}
-	COMMENT "Generate ${activity} RCC"
+    COMMENT "Generate ${activity} RCC"
     SOURCES ${CREATED_QRC}
-	VERBATIM
+    VERBATIM
   )
 
 endfunction()

@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(colors)
+GCOMPRIS_ADD_RCC(activities/colors *.qml *.svg *.svgz *.js resource/*)

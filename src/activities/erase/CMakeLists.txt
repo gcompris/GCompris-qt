@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(erase)
+GCOMPRIS_ADD_RCC(activities/erase *.qml *.svg *.svgz *.js resource/*)
