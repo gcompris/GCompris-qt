@@ -17,8 +17,8 @@ function(GCOMPRIS_ADD_RCC resource_path)
   set(CREATED_QRC "${CMAKE_CURRENT_SOURCE_DIR}/${activity}.qrc")
 
   set(ACTIVITY_PATH "/gcompris/src/${resource_path}")
-  file(GLOB_RECURSE QRC_CONTENTS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ${rcc_files})
-  file(GLOB_RECURSE QRC_CONTENTS_ABS ${CMAKE_CURRENT_SOURCE_DIR} ${rcc_files})
+  file(GLOB QRC_CONTENTS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ${rcc_files})
+  file(GLOB QRC_CONTENTS_ABS ${CMAKE_CURRENT_SOURCE_DIR} ${rcc_files})
 
   file(WRITE ${CREATED_QRC} "<RCC>\n\t<qresource prefix=\"${ACTIVITY_PATH}\">")
   foreach(FILE ${QRC_CONTENTS})
