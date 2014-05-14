@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "memory-math-add-minus/Memory-math-add-minus.qml"
   difficulty: 1
-  icon: "memory-math-add-minus/memory-math-add-minus.svg"
+  icon: "memory-math-add-minus/memory-math-add-minus.svgz"
   author: "JB BUTET <ashashiwa@mgail.com>"
   demo: false
   title: qsTr("Addition and subtraction memory game")

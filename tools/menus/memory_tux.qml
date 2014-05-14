@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "memory_tux/MemoryTux.qml"
   difficulty: 2
-  icon: "memory_tux/memory_tux.svg"
+  icon: "memory_tux/memory_tux.svgz"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("Memory Game with images, against Tux")

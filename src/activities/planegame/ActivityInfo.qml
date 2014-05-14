@@ -23,7 +23,7 @@ import GCompris 1.0
 ActivityInfo {
     name: "planegame/Sequence.qml"
     difficulty: 2
-    icon: "planegame/planegame.svg"
+    icon: "planegame/planegame.svgz"
     author: "Johnny Jazeix <jazeix@gmail.com>"
     demo: false
     title: qsTr("Numbers in Order")

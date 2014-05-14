@@ -22,7 +22,7 @@ import GCompris 1.0
 ActivityInfo {
     name: "alphabet-sequence/AlphabetSequence.qml"
     difficulty: 2
-    icon: "alphabet-sequence/alphabet-sequence.svg"
+    icon: "alphabet-sequence/alphabet-sequence.svgz"
     author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
     demo: false
     title: qsTr("Alphabet sequence")

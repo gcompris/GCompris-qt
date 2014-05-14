@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "canal_lock/CanalLock.qml"
   difficulty: 2
-  icon: "canal_lock/canal_lock.svg"
+  icon: "canal_lock/canal_lock.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Operate a canal lock")

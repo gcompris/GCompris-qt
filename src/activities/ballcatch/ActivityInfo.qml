@@ -22,7 +22,7 @@ import GCompris 1.0
 ActivityInfo {
     name: "ballcatch/Ballcatch.qml"
     difficulty: 1
-    icon: "ballcatch/ballcatch.svg"
+    icon: "ballcatch/ballcatch.svgz"
     author: "Johnny Jazeix <jazeix@gmail.com>"
     demo: false
     title: qsTr("Make the ball go to Tux")

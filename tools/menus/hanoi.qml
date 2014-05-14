@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "hanoi/Hanoi.qml"
   difficulty: 2
-  icon: "hanoi/hanoi.svg"
+  icon: "hanoi/hanoi.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Simplified Tower of Hanoi")

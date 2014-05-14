@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "memory_add_tux/MemoryAddTux.qml"
   difficulty: 1
-  icon: "memory_add_tux/mem_tux_plus.svg"
+  icon: "memory_add_tux/mem_tux_plus.svgz"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("Addition memory game against Tux")

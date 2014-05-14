@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "tangram/Tangram.qml"
   difficulty: 1
-  icon: "tangram/tangram.svg"
+  icon: "tangram/tangram.svgz"
   author: "Yves Combe /  Philippe Banwarth"
   demo: true
   title: qsTr("The tangram puzzle game")

@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "electric/Electric.qml"
   difficulty: 5
-  icon: "electric/electric.svg"
+  icon: "electric/electric.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Electricity")

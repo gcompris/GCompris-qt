@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "awele/Awele.qml"
   difficulty: 2
-  icon: "awele/awele.svg"
+  icon: "awele/awele.svgz"
   author: "Frédéric Mazzarol"
   demo: true
   title: qsTr("Oware")

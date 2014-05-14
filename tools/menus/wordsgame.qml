@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "wordsgame/Wordsgame.qml"
   difficulty: 2
-  icon: "wordsgame/wordsgame.svg"
+  icon: "wordsgame/wordsgame.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Falling Words")

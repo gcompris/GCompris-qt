@@ -22,7 +22,7 @@ import GCompris 1.0
 ActivityInfo {
     name: "numbers-odd-even/NumbersOddEven.qml"
     difficulty: 2
-    icon: "numbers-odd-even/numbers-odd-even.svg"
+    icon: "numbers-odd-even/numbers-odd-even.svgz"
     author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
     demo: false
     title: qsTr("Even and Odd Numbers")

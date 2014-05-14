@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "gnumch-factors/Gnumch-factors.qml"
   difficulty: 5
-  icon: "gnumch-factors/gnumch-factors.svg"
+  icon: "gnumch-factors/gnumch-factors.svgz"
   author: "Joe Neeman <spuzzzzzzz@gmail.com>"
   demo: true
   title: qsTr("Factor Number Munchers")

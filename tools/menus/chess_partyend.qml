@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "chess_partyend/ChessPartyend.qml"
   difficulty: 2
-  icon: "chess_partyend/chess_partyend.svg"
+  icon: "chess_partyend/chess_partyend.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Learning chess")

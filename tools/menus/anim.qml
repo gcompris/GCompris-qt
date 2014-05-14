@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "anim/Anim.qml"
   difficulty: 3
-  icon: "anim/anim.svg"
+  icon: "anim/anim.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Create a drawing or an animation")

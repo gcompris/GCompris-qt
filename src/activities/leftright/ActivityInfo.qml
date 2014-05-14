@@ -4,7 +4,7 @@ ActivityInfo {
     name: "leftright/Leftright.qml"
     section: "/discovery/miscelaneous"
     difficulty: 1
-    icon: "leftright/leftright.svg"
+    icon: "leftright/leftright.svgz"
     author: "Pascal Georges (pascal.georges1@free.fr)"
     demo: true
     title: qsTr("Find your left and right hands")

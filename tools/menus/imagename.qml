@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "imagename/Imagename.qml"
   difficulty: 3
-  icon: "imagename/imagename.svg"
+  icon: "imagename/imagename.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Image Name")

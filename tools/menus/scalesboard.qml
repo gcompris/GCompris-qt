@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "scalesboard/Scalesboard.qml"
   difficulty: 2
-  icon: "scalesboard/scalesicon.svg"
+  icon: "scalesboard/scalesicon.svgz"
   author: "miguel DE IZARRA <miguel2i@free.fr>"
   demo: true
   title: qsTr("Balance the scales properly")

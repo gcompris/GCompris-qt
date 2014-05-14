@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "enumerate/Enumerate.qml"
   difficulty: 1
-  icon: "enumerate/enumerate.svg"
+  icon: "enumerate/enumerate.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Count the items")

@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "photohunter/Photohunter.qml"
   difficulty: 2
-  icon: "photohunter/photohunter.svg"
+  icon: "photohunter/photohunter.svgz"
   author: "Marc Le Douarain <http://membres.lycos.fr/mavati>"
   demo: true
   title: qsTr("Photo hunter")

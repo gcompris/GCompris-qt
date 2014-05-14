@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "memory-math-div/Memory-math-div.qml"
   difficulty: 1
-  icon: "memory-math-div/memory-math-div.svg"
+  icon: "memory-math-div/memory-math-div.svgz"
   author: "JB BUTET <ashashiwa@gmail.com>"
   demo: false
   title: qsTr("Division memory game")

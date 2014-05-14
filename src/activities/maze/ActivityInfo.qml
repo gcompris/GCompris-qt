@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "maze/Maze.qml"
   difficulty: 1
-  icon: "maze/maze.svg"
+  icon: "maze/maze.svgz"
   author: "Stephane Mankowski <stephane@mankowski.fr>"
   demo: false
   title: qsTr("Maze")

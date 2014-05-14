@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "note_names/NoteNames.qml"
   difficulty: 4
-  icon: "note_names/note_names.svg"
+  icon: "note_names/note_names.svgz"
   author: "Beth Hadley <bethmhadley@gmail.com>"
   demo: true
   title: qsTr("Name that Note!")

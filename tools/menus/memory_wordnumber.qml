@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "memory_wordnumber/MemoryWordnumber.qml"
   difficulty: 1
-  icon: "memory_wordnumber/memo_wordnumber.svg"
+  icon: "memory_wordnumber/memo_wordnumber.svgz"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("Wordnumber memory game")

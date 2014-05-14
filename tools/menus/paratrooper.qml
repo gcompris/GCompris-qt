@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "paratrooper/Paratrooper.qml"
   difficulty: 1
-  icon: "paratrooper/tuxpara.svg"
+  icon: "paratrooper/tuxpara.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Parachutist")

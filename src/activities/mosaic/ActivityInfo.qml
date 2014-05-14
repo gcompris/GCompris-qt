@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "mosaic/Mosaic.qml"
   difficulty: 1
-  icon: "mosaic/mosaic.svg"
+  icon: "mosaic/mosaic.svgz"
   author: "Bruno Coudoin <bruno.coudoin@free.fr>"
   demo: true
   title: qsTr("Rebuild the mosaic")

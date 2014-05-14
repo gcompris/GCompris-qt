@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "mining/Mining.qml"
   difficulty: 1
-  icon: "mining/mining.svg"
+  icon: "mining/mining.svgz"
   author: "Peter Albrecht <pa-dev@gmx.de>"
   demo: true
   title: qsTr("Mining for gold")

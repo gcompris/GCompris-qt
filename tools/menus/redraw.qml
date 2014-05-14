@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "redraw/Redraw.qml"
   difficulty: 3
-  icon: "redraw/redraw.svg"
+  icon: "redraw/redraw.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Redraw the given item")

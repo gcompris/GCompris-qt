@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "fifteen/Fifteen.qml"
   difficulty: 5
-  icon: "fifteen/fifteen.svg"
+  icon: "fifteen/fifteen.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("The fifteen game")

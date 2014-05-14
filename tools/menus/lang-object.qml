@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "lang-object/Lang-object.qml"
   difficulty: 4
-  icon: "lang-object/lang-object.svg"
+  icon: "lang-object/lang-object.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Enrich your vocabulary")

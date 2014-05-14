@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "submarine/Submarine.qml"
   difficulty: 5
-  icon: "submarine/submarine.svg"
+  icon: "submarine/submarine.svgz"
   author: "Pascal Georges <pascal.georges1@free.fr>"
   demo: true
   title: qsTr("Pilot a submarine")

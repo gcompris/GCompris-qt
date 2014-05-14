@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "braille_alphabets/BrailleAlphabets.qml"
   difficulty: 5
-  icon: "braille_alphabets/braille_alphabets.svg"
+  icon: "braille_alphabets/braille_alphabets.svgz"
   author: "Srishti Sethi <srishakatux@gmail.com>"
   demo: true
   title: qsTr("Discover the Braille system")

@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "geography/Geography.qml"
   difficulty: 2
-  icon: "geography/globe.svg"
+  icon: "geography/globe.svgz"
   author: "Jean-Philippe Ayanides <jp.ayanides@free.fr>"
   demo: true
   title: qsTr("Locate the countries")

@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "algebra_guesscount/AlgebraGuesscount.qml"
   difficulty: 3
-  icon: "algebra_guesscount/algebra_guesscount.svg"
+  icon: "algebra_guesscount/algebra_guesscount.svgz"
   author: "Pascal Georges <pascal.georges1@free.fr>"
   demo: true
   title: qsTr("Find the series of correct operations that matches the given answer")

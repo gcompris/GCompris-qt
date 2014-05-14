@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "paintings/Paintings.qml"
   difficulty: 1
-  icon: "paintings/shapegame.svg"
+  icon: "paintings/shapegame.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Assemble the puzzle")

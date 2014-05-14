@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "searace/Searace.qml"
   difficulty: 6
-  icon: "searace/searace.svg"
+  icon: "searace/searace.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Sea race (2 Players)")

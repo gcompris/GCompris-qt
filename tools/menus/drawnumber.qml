@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "drawnumber/Drawnumber.qml"
   difficulty: 4
-  icon: "drawnumber/drawnumber.svg"
+  icon: "drawnumber/drawnumber.svgz"
   author: "Olivier Ponchaut <opvg@edpnet.be>"
   demo: true
   title: qsTr("Draw Number")

@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "memory/Memory.qml"
   difficulty: 1
-  icon: "memory/memory.svg"
+  icon: "memory/memory.svgz"
   author: "JB BUTET <ashashiwa@gmail.com>"
   demo: false
   title: qsTr("Memory Game with images")

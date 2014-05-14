@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "traffic/Traffic.qml"
   difficulty: 2
-  icon: "traffic/traffic.svg"
+  icon: "traffic/traffic.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("A sliding-block puzzle game")

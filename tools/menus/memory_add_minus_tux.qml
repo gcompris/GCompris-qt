@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "memory_add_minus_tux/MemoryAddMinusTux.qml"
   difficulty: 1
-  icon: "memory_add_minus_tux/mem_tux_plus_minus.svg"
+  icon: "memory_add_minus_tux/mem_tux_plus_minus.svgz"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("Addition and subtraction memory game against Tux")

@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "clockgame/Clockgame.qml"
   difficulty: 2
-  icon: "clockgame/clockgame.svg"
+  icon: "clockgame/clockgame.svgz"
   author: "Stephane Mankowski <stephane@mankowski.fr>"
   demo: false
   title: qsTr("Learning Clock")

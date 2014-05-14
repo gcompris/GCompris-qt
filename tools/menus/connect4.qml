@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "connect4/Connect4.qml"
   difficulty: 2
-  icon: "connect4/connect4.svg"
+  icon: "connect4/connect4.svgz"
   author: "Laurent Lacheny <laurent.lacheny@wanadoo.fr>"
   demo: true
   title: qsTr("Connect 4")

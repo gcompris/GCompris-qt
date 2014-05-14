@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "gnumch-multiples/Gnumch-multiples.qml"
   difficulty: 3
-  icon: "gnumch-multiples/gnumch-multiples.svg"
+  icon: "gnumch-multiples/gnumch-multiples.svgz"
   author: "Joe Neeman <spuzzzzzzz@gmail.com>"
   demo: true
   title: qsTr("Multiple Number Munchers")

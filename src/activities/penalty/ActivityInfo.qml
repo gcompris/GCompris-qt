@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "penalty/Penalty.qml"
   difficulty: 1
-  icon: "penalty/penalty.svg"
+  icon: "penalty/penalty.svgz"
   author: "Stephane Mankowski <stephane@mankowski.fr>"
   demo: false
   title: qsTr("Penalty kick")

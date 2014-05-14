@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "bargame/Bargame.qml"
   difficulty: 2
-  icon: "bargame/bargame.svg"
+  icon: "bargame/bargame.svgz"
   author: "Yves Combe"
   demo: true
   title: qsTr("bar game")

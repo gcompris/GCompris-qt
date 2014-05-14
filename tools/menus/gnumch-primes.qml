@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "gnumch-primes/Gnumch-primes.qml"
   difficulty: 6
-  icon: "gnumch-primes/gnumch-primes.svg"
+  icon: "gnumch-primes/gnumch-primes.svgz"
   author: "Joe Neeman <spuzzzzzzz@gmail.com>"
   demo: true
   title: qsTr("Prime Number Munchers")

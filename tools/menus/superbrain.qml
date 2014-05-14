@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "superbrain/Superbrain.qml"
   difficulty: 2
-  icon: "superbrain/superbrain.svg"
+  icon: "superbrain/superbrain.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Super Brain")

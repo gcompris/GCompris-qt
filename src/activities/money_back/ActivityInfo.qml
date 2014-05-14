@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "money_back/MoneyBack.qml"
   difficulty: 3
-  icon: "money_back/money_back.svg"
+  icon: "money_back/money_back.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Give tux his change")

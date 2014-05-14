@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "algorithm/Algorithm.qml"
   difficulty: 2
-  icon: "algorithm/algorithm.svg"
+  icon: "algorithm/algorithm.svgz"
   author: "Bharath M S <brat.197@gmail.com>"
   demo: false
   title: qsTr("algorithm")

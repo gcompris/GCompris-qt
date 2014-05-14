@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "babymatch/Babymatch.qml"
   difficulty: 1
-  icon: "babymatch/babymatch.svg"
+  icon: "babymatch/babymatch.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Matching Items")

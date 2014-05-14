@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "algebra_minus/AlgebraMinus.qml"
   difficulty: 1
-  icon: "algebra_minus/algebra_minus.svg"
+  icon: "algebra_minus/algebra_minus.svgz"
   author: "Bruno Coudoin"
   demo: false
   title: qsTr("Practice the subtraction operation")

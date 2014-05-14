@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "guessnumber/Guessnumber.qml"
   difficulty: 3
-  icon: "guessnumber/guessnumber.svg"
+  icon: "guessnumber/guessnumber.svgz"
   author: "Clement Coudoin <clement.coudoin@free.fr>"
   demo: true
   title: qsTr("Guess a number")
