@@ -9,8 +9,8 @@ function(GCOMPRIS_ADD_RCC activity)
   if(${activity} STREQUAL "core")
     set(ACTIVITY_PATH "/gcompris/src")
     # With these files in it
-    file(GLOB QRC_CONTENTS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.svg *.js resource/*)
-    file(GLOB QRC_CONTENTS_ABS ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.svg *.js resource/*)
+    file(GLOB QRC_CONTENTS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.svg *.svgz *.js resource/*)
+    file(GLOB QRC_CONTENTS_ABS ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.svg *.svgz *.js resource/*)
   elseif(${activity} STREQUAL "activities")
     set(ACTIVITY_PATH "/gcompris/src")
     # With these files in it
@@ -18,8 +18,8 @@ function(GCOMPRIS_ADD_RCC activity)
     file(GLOB QRC_CONTENTS_ABS ${CMAKE_CURRENT_SOURCE_DIR} activities.txt)
   else()
     # With these files in it
-    file(GLOB QRC_CONTENTS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.svg *.js resource/*)
-    file(GLOB QRC_CONTENTS_ABS ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.svg *.js resource/*)
+    file(GLOB QRC_CONTENTS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.svg *.svgz *.js resource/*)
+    file(GLOB QRC_CONTENTS_ABS ${CMAKE_CURRENT_SOURCE_DIR} *.qml *.svg *.svgz *.js resource/*)
   endif()
 
   file(WRITE ${CREATED_QRC} "<RCC>\n\t<qresource prefix=\"${ACTIVITY_PATH}/${activity}\">")
