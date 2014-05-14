@@ -579,7 +579,7 @@ if( BUILD_WITH_ANDROID_NDK )
      if( __machine )
        set(ANDROID_NDK_HOST_SYSTEM_NAME ${NEW_ANDROID_NDK_HOST_SYSTEM_NAME})
      endif(__machine)
-   endif( not ${__machine} )
+   endif()
    
    if( __machine )
      string( REGEX MATCH "[0-9]+[.][0-9]+[.]*[0-9]*$" __version "${__toolchain}" )
