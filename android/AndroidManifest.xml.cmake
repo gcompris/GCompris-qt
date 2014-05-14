@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<manifest android:versionName="@GCOMPRIS_VERSION@" package="net.gcompris" android:installLocation="auto" xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="9">
+<manifest android:versionName="@GCOMPRIS_VERSION@" package="net.gcompris" android:installLocation="auto" xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="@GCOMPRIS_VERSION_CODE@">
 	<application android:label="GCompris" android:name="org.qtproject.qt5.android.bindings.QtApplication" android:icon="@drawable/icon">
 		<activity android:label="@string/app_name" android:name="org.qtproject.qt5.android.bindings.QtActivity" android:screenOrientation="unspecified" android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|locale|fontScale|keyboard|keyboardHidden|navigation">
 			<intent-filter>
@@ -28,6 +28,5 @@
 		</activity>
 	</application>
 	<supports-screens android:anyDensity="true" android:normalScreens="true" android:smallScreens="true" android:largeScreens="true"/>
-	<uses-sdk android:minSdkVersion="@ANDROID_API_LEVEL@"/>
-	<!--uses-sdk android:minSdkVersion="9" android:targetSdkVersion="19"/-->
+	<uses-sdk android:minSdkVersion="9" android:targetSdkVersion="19"/>
 </manifest>

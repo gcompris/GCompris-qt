@@ -11,6 +11,10 @@ set(GCOMPRIS_PATCH_VERSION 0)
 
 set(GCOMPRIS_VERSION ${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION})
 
+# An integer value that represents the version of the application
+# Increase it at each release
+set(GCOMPRIS_VERSION_CODE ${GCOMPRIS_MINOR_VERSION})
+
 # cmake modules setup
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/")
 
