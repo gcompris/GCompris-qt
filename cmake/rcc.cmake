@@ -31,13 +31,13 @@ function(GCOMPRIS_ADD_RCC resource_path)
 
   add_custom_command(OUTPUT ${CREATED_RCC}
                      COMMAND ${Qt5Core_RCC_EXECUTABLE} "-binary" -o ${CREATED_RCC} ${CREATED_QRC}
-                     DEPENDS ${QRC_CONTENTS_ABS} "${out_depends}" VERBATIM)
+                     DEPENDS ${QRC_CONTENTS} "${out_depends}" VERBATIM)
 
   add_custom_target(
     rcc_${activity} ALL
     DEPENDS ${CREATED_RCC} ${CREATED_QRC}
     COMMENT "Generate ${activity} RCC"
-    SOURCES ${CREATED_QRC}
+    SOURCES ${QRC_CONTENTS}
     VERBATIM
   )
 
