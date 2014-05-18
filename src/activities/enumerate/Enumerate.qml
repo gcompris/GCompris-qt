@@ -128,6 +128,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            anchors.bottom: keyboard.top
             content: BarEnumContent { value: help | home | previous | next }
             onHelpClicked: {
                 displayDialog(dialogHelp)
