@@ -111,6 +111,19 @@ QString ApplicationInfo::getAudioFilePath(const QString &file)
     return getFilePath(filename);
 }
 
+// Given a file name, if it contains $LOCALE it is replaced by
+// the current locale like 'en' while in the English locale.
+// e.g. qrc:/foo/bar_$LOCALE.json => qrc:/foo/bar_en.json
+// FIXME should check long locale first
+QString ApplicationInfo::getLocaleFilePath(const QString &file)
+{
+    QString localeShortName = localeShort();
+
+    QString filename = file;
+    filename.replace("$LOCALE", localeShortName);
+    return filename;
+}
+
 void ApplicationInfo::notifyPortraitMode()
 {
     int width = qApp->primaryScreen()->geometry().width();

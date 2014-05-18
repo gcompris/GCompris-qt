@@ -80,12 +80,9 @@ function parseLevels(json)
 function loadLevels()
 {
     var ret;    
-    // FIXME: this should be something like
-    // ApplicationInfo.getDataPath() + "click_on_letter" +
-    // "levels-" + ApplicationInfo.getCurrentLocale() + ".json" once it is there.
     var json = items.levelsFile.read(
-                GCompris.ApplicationInfo.getAudioFilePath(
-                    "click_on_letter/levels-$LOCALE.json"));
+                GCompris.ApplicationInfo.getLocaleFilePath(url +
+                                                           "levels-$LOCALE.json"))
     if (json == "" || !parseLevels(json)) {
         console.warn("Click_on_letter: Invalid levels file " +
                 items.levelsFile.name);

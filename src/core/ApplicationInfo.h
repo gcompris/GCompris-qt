@@ -130,6 +130,7 @@ protected slots:
 	void notifyPortraitMode();
 
     Q_INVOKABLE QString getAudioFilePath(const QString &file);
+    Q_INVOKABLE QString getLocaleFilePath(const QString &file);
 
     Q_INVOKABLE void notifyAudioEnabledChanged() {}
     Q_INVOKABLE void notifyEffectEnabledChanged() {}

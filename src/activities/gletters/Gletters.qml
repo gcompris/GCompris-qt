@@ -122,13 +122,8 @@ ActivityBase {
         Wordlist {
             id: wordlist
             defaultFilename: activity.dataSetUrl + "default-en.json"
-            // FIXME: this should be something like
-            // ApplicationInfo.getDataPath() + "gletters/" + "default-" + ApplicationInfo.getCurrentLocale() + ".json"
-            // once it is there.
-            filename: ApplicationInfo.getAudioFilePath(activity.mode == "letter" ?
-                        "gletters/default-en.json" :
-                        "wordsgame/default-en.json");
-
+            filename: ApplicationInfo.getLocaleFilePath(activity.dataSetUrl +
+                                                       "default-$LOCALE.json");
 
             onError: console.log("Gletters: Wordlist error: " + msg);
         }
