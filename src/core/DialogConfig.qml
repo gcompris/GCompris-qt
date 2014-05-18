@@ -192,7 +192,6 @@ Rectangle {
 
         // Set locale
         for(var i = 0 ; i < languages.count ; i ++) {
-            print(i + " " + languages.get(i).locale)
             if(languages.get(i).locale == ApplicationInfo.locale) {
                 languageBox.currentIndex = i;
                 break;
