@@ -30,4 +30,6 @@ Gletters {
     id: activity
     
     mode: "word"
+    dataSetUrl: "qrc:/gcompris/src/activities/wordsgame/resource/"
+
 }

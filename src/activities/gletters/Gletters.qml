@@ -29,6 +29,10 @@ import "gletters.js" as Activity
 
 ActivityBase {
     id: activity
+
+    // Overload this in your activity to change it
+    // Put you default-<locale>.json files in it
+    property string dataSetUrl: "qrc:/gcompris/src/activities/gletters/resource/"
     
     property bool uppercaseOnly: false;  // FIXME: this should go in activity settings
     /* mode of the activity, "letter" (gletters) or "word" (wordsgame):*/
@@ -41,8 +45,7 @@ ActivityBase {
     
     pageComponent: Image {
         id: background
-        source: (activity.mode == "letter" ? Activity.glettersUrl : Activity.wordsgameUrl)
-                 + "background.svgz"
+        source: activity.dataSetUrl + "background.svgz"
         fillMode: Image.PreserveAspectCrop
 
         signal start
@@ -118,9 +121,7 @@ ActivityBase {
         
         Wordlist {
             id: wordlist
-            defaultFilename: ( activity.mode == "letter" ?
-                               Activity.glettersUrl : Activity.wordsgameUrl )
-                               + "default-en.json"
+            defaultFilename: activity.dataSetUrl + "default-en.json"
             // FIXME: this should be something like
             // ApplicationInfo.getDataPath() + "gletters/" + "default-" + ApplicationInfo.getCurrentLocale() + ".json"
             // once it is there.
