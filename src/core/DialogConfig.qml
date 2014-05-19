@@ -127,6 +127,23 @@ Rectangle {
                             }
                         }
 
+                        CheckBox {
+                            id: enableVirtualKeyboardBox
+                            text: qsTr("Virtual Keyboard")
+                            checked: isVirtualKeyboard
+                            style: CheckBoxStyle {
+                                indicator: Image {
+                                    sourceSize.height: 50 * ApplicationInfo.ratio
+                                    source:
+                                        control.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
+                                                          "qrc:/gcompris/src/core/resource/cancel.svgz"
+                                }
+                            }
+                            onCheckedChanged: {
+                                isVirtualKeyboard = checked;
+                            }
+                        }
+
                         ComboBox {
                             id: languageBox
                             style: GCComboBoxStyle {}
@@ -181,6 +198,7 @@ Rectangle {
 
     property bool isAudioEnabled: ApplicationInfo.isAudioEnabled
     property bool isFullscreen: ApplicationInfo.isFullscreen
+    property bool isVirtualKeyboard: ApplicationInfo.isVirtualKeyboard
 
     onStart: {
         // Synchronize settings with data
@@ -189,6 +207,9 @@ Rectangle {
 
         isFullscreen = ApplicationInfo.isFullscreen
         enableFullscreenBox.checked = isFullscreen
+
+        isVirtualKeyboard = ApplicationInfo.isVirtualKeyboard
+        enableVirtualKeyboardBox.checked = isVirtualKeyboard
 
         // Set locale
         for(var i = 0 ; i < languages.count ; i ++) {
@@ -202,6 +223,7 @@ Rectangle {
     function save() {
         ApplicationInfo.isAudioEnabled = isAudioEnabled
         ApplicationInfo.isFullscreen = isFullscreen
+        ApplicationInfo.isVirtualKeyboard = isVirtualKeyboard
         ApplicationInfo.locale = languages.get(languageBox.currentIndex).locale
     }
 
@@ -243,6 +265,7 @@ Rectangle {
     function hasConfigChanged() {
         return (ApplicationInfo.locale != languages.get(languageBox.currentIndex).locale ||
                 (ApplicationInfo.isAudioEnabled != isAudioEnabled) ||
-                (ApplicationInfo.isFullscreen != isFullscreen));
+                (ApplicationInfo.isFullscreen != isFullscreen) ||
+                (ApplicationInfo.isVirtualKeyboard != isVirtualKeyboard));
     }
 }

@@ -68,7 +68,7 @@ ActivityBase {
         Column {
             anchors {
                 right: parent.right
-                bottom: ApplicationInfo.isMobile ? keyboard.top : parent.bottom
+                bottom: keyboard.top
                 margins: 10
             }
             spacing: 5
@@ -98,8 +98,6 @@ ActivityBase {
             id: keyboard
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
-            width: parent.width
-            visible: ApplicationInfo.isMobile
 
             keyHeight: 35 * ApplicationInfo.ratio
             equalKeyWidth: true

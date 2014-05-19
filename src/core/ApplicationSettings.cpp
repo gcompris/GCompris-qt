@@ -56,6 +56,7 @@ static const QString GENERAL_GROUP_KEY = "General";
 static const QString FULLSCREEN_KEY = "fullscreen";
 static const QString ENABLE_AUDIO_KEY = "enableSounds";
 static const QString ENABLE_EFFECTS_KEY = "enableEffects";
+static const QString VIRTUALKEYBOARD_KEY = "virtualKeyboard";
 static const QString LOCALE_KEY = "locale";
 
 ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
@@ -82,12 +83,14 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_isEffectEnabled = m_config.value(ENABLE_EFFECTS_KEY).toBool();
     m_isFullscreen = m_config.value(FULLSCREEN_KEY).toBool();
     m_isAudioEnabled = m_config.value(ENABLE_AUDIO_KEY).toBool();
+    m_isVirtualKeyboard = m_config.value(VIRTUALKEYBOARD_KEY).toBool();
     m_locale = m_config.value(LOCALE_KEY).toString();
 
     m_config.endGroup();
     connect(this, SIGNAL(audioEnabledChanged()), this, SLOT(notifyAudioEnabledChanged()));
     connect(this, SIGNAL(fullscreenChanged()), this, SLOT(notifyFullscreenChanged()));
     connect(this, SIGNAL(localeChanged()), this, SLOT(notifyLocaleChanged()));
+    connect(this, SIGNAL(virtualKeyboardChanged()), this, SLOT(notifyVirtualKeyboardChanged()));
 }
 
 void ApplicationSettings::notifyAudioEnabledChanged()
@@ -117,5 +120,15 @@ void ApplicationSettings::notifyFullscreenChanged()
     m_config.setValue(FULLSCREEN_KEY, m_isFullscreen);
     m_config.endGroup();
     qDebug() << "fullscreen set to: " << m_isFullscreen;
+    m_config.sync();
+}
+
+void ApplicationSettings::notifyVirtualKeyboardChanged()
+{
+    // Save in config
+    m_config.beginGroup(GENERAL_GROUP_KEY);
+    m_config.setValue(VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
+    m_config.endGroup();
+    qDebug() << "virtualkeyboard set to: " << m_isVirtualKeyboard;
     m_config.sync();
 }

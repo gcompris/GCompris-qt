@@ -68,6 +68,7 @@ class ApplicationInfo : public QObject
     Q_PROPERTY(bool isAudioEnabled READ isAudioEnabled WRITE setIsAudioEnabled NOTIFY audioEnabledChanged)
     Q_PROPERTY(bool isEffectEnabled READ isEffectEnabled WRITE setIsEffectEnabled NOTIFY effectEnabledChanged)
     Q_PROPERTY(bool isFullscreen READ isFullscreen WRITE setFullscreen NOTIFY fullscreenChanged)
+    Q_PROPERTY(bool isVirtualKeyboard READ isVirtualKeyboard WRITE setVirtualKeyboard NOTIFY virtualKeyboardChanged)
     Q_PROPERTY(QString locale READ locale WRITE setLocale NOTIFY localeChanged)
     Q_PROPERTY(QString localeShort READ localeShort)
     Q_PROPERTY(QString GCVersion READ GCVersion CONSTANT)
@@ -116,6 +117,9 @@ public:
     bool isFullscreen() const { return m_applicationSettings.isFullscreen(); }
     void setFullscreen(const bool newMode) {m_applicationSettings.setFullscreen(newMode); emit fullscreenChanged();}
 
+    bool isVirtualKeyboard() const { return m_applicationSettings.isVirtualKeyboard(); }
+    void setVirtualKeyboard(const bool newMode) {m_applicationSettings.setVirtualKeyboard(newMode); emit virtualKeyboardChanged();}
+
     QString locale() const { return m_applicationSettings.locale(); }
     void setLocale(const QString newLocale) {m_applicationSettings.setLocale(newLocale); emit localeChanged();}
 
@@ -135,6 +139,7 @@ protected slots:
     Q_INVOKABLE void notifyAudioEnabledChanged() {}
     Q_INVOKABLE void notifyEffectEnabledChanged() {}
     Q_INVOKABLE void notifyFullscreenChanged();
+    Q_INVOKABLE void notifyVirtualKeyboardChanged() {};
 
 
 protected:
@@ -150,6 +155,7 @@ signals:
     void audioEnabledChanged();
     void effectEnabledChanged();
     void fullscreenChanged();
+    void virtualKeyboardChanged();
     void localeChanged();
 
 

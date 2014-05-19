@@ -106,7 +106,6 @@ function initLevel() {
                 + " wordCount=" + level.words.length
                 + " speed=" + speed + " fallspeed=" + fallSpeed);*/
         
-        if (GCompris.ApplicationInfo.isMobile) 
         {
             /* populate VirtualKeyboard for mobile:
              * 1. for < 10 letters print them all in the same row
