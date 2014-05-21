@@ -60,6 +60,8 @@ static const QString ENABLE_EFFECTS_KEY = "enableEffects";
 static const QString VIRTUALKEYBOARD_KEY = "virtualKeyboard";
 static const QString LOCALE_KEY = "locale";
 
+ApplicationSettings *ApplicationSettings::m_instance = NULL;
+
 ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
      m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/GCompris.conf", QSettings::IniFormat)
 
@@ -93,6 +95,11 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, SIGNAL(fullscreenChanged()), this, SLOT(notifyFullscreenChanged()));
     connect(this, SIGNAL(localeChanged()), this, SLOT(notifyLocaleChanged()));
     connect(this, SIGNAL(virtualKeyboardChanged()), this, SLOT(notifyVirtualKeyboardChanged()));
+}
+
+ApplicationSettings::~ApplicationSettings()
+{
+    m_instance = NULL;
 }
 
 void ApplicationSettings::notifyAudioEnabledChanged()
@@ -133,4 +140,20 @@ void ApplicationSettings::notifyVirtualKeyboardChanged()
     m_config.endGroup();
     qDebug() << "virtualkeyboard set to: " << m_isVirtualKeyboard;
     m_config.sync();
+}
+
+QObject *ApplicationSettings::systeminfoProvider(QQmlEngine *engine,
+                                                 QJSEngine *scriptEngine)
+{
+    Q_UNUSED(engine)
+    Q_UNUSED(scriptEngine)
+
+    ApplicationSettings* appSettings = getInstance();
+    return appSettings;
+}
+
+void ApplicationSettings::init()
+{
+    qmlRegisterSingletonType<ApplicationSettings>("GCompris", 1, 0,
+                                                  "ApplicationSettings", systeminfoProvider);
 }

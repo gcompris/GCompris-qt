@@ -86,6 +86,11 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
         connect(qApp->primaryScreen(), SIGNAL(physicalSizeChanged(QSizeF)), this, SLOT(notifyPortraitMode()));
 }
 
+ApplicationInfo::~ApplicationInfo()
+{
+    m_instance = NULL;
+}
+
 void ApplicationInfo::setApplicationWidth(const int newWidth)
 {
     if (newWidth != m_applicationWidth) {
@@ -142,6 +147,19 @@ void ApplicationInfo::setIsPortraitMode(const bool newMode)
     }
 }
 
+void ApplicationInfo::setWindow(QQuickWindow *window)
+{
+    m_window = window;
+}
+
+void ApplicationInfo::notifyFullscreenChanged()
+{
+    if(m_applicationSettings.isFullscreen())
+        m_window->showFullScreen();
+    else
+        m_window->showNormal();
+}
+
 QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,
                                              QJSEngine *scriptEngine)
 {
@@ -155,19 +173,6 @@ QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,
     connect(&appInfo->m_applicationSettings, SIGNAL(fullscreenChanged()), appInfo,
             SLOT(notifyFullscreenChanged()));
     return appInfo;
-}
-
-void ApplicationInfo::setWindow(QQuickWindow *window)
-{
-    m_window = window;
-}
-
-void ApplicationInfo::notifyFullscreenChanged()
-{
-    if(m_applicationSettings.isFullscreen())
-        m_window->showFullScreen();
-    else
-        m_window->showNormal();
 }
 
 void ApplicationInfo::init()

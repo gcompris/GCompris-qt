@@ -43,6 +43,7 @@ int main(int argc, char *argv[])
 
     ApplicationInfo::init();
 	ActivityInfoTree::init();
+    ApplicationSettings::init();
 	File::init();
 
     // Load configuration

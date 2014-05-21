@@ -21,6 +21,19 @@ class ApplicationSettings : public QObject
 public:
 
     ApplicationSettings(QObject *parent = 0);
+    ~ApplicationSettings();
+    static void init();
+    // It is not recommended to create a singleton of Qml Singleton registered
+    // object but we could not found a better way to let us access ApplicationInfo
+    // on the C++ side. All our test shows that it works.
+    static ApplicationSettings *getInstance() {
+        if(!m_instance) {
+            m_instance = new ApplicationSettings();
+        }
+        return m_instance;
+    }
+    static QObject *systeminfoProvider(QQmlEngine *engine,
+                                       QJSEngine *scriptEngine);
 
     bool isAudioEnabled() const { return m_isAudioEnabled; }
     void setIsAudioEnabled(const bool newMode) {m_isAudioEnabled = newMode; emit audioEnabledChanged();}
@@ -54,6 +67,7 @@ signals:
     void localeChanged();
 
 private:
+    static ApplicationSettings *m_instance;
     bool m_isAudioEnabled;
     bool m_isEffectEnabled;
     bool m_isFullscreen;

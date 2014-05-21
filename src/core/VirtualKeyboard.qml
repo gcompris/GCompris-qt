@@ -80,7 +80,7 @@ Item {
     property int margin: 5 * ApplicationInfo.ratio
     opacity: 0.9
     
-    visible: ApplicationInfo.isVirtualKeyboard && priv.initialized
+    visible: ApplicationSettings.isVirtualKeyboard && priv.initialized
     enabled: visible
     
     signal keypress(string text);

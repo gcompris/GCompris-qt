@@ -198,7 +198,7 @@ Rectangle {
 
     property bool isAudioEnabled: ApplicationInfo.isAudioEnabled
     property bool isFullscreen: ApplicationInfo.isFullscreen
-    property bool isVirtualKeyboard: ApplicationInfo.isVirtualKeyboard
+    property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
 
     onStart: {
         // Synchronize settings with data
@@ -208,7 +208,7 @@ Rectangle {
         isFullscreen = ApplicationInfo.isFullscreen
         enableFullscreenBox.checked = isFullscreen
 
-        isVirtualKeyboard = ApplicationInfo.isVirtualKeyboard
+        isVirtualKeyboard = ApplicationSettings.isVirtualKeyboard
         enableVirtualKeyboardBox.checked = isVirtualKeyboard
 
         // Set locale
@@ -223,7 +223,7 @@ Rectangle {
     function save() {
         ApplicationInfo.isAudioEnabled = isAudioEnabled
         ApplicationInfo.isFullscreen = isFullscreen
-        ApplicationInfo.isVirtualKeyboard = isVirtualKeyboard
+        ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
         ApplicationInfo.locale = languages.get(languageBox.currentIndex).locale
     }
 
@@ -266,6 +266,6 @@ Rectangle {
         return (ApplicationInfo.locale != languages.get(languageBox.currentIndex).locale ||
                 (ApplicationInfo.isAudioEnabled != isAudioEnabled) ||
                 (ApplicationInfo.isFullscreen != isFullscreen) ||
-                (ApplicationInfo.isVirtualKeyboard != isVirtualKeyboard));
+                (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard));
     }
 }
