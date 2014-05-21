@@ -66,8 +66,7 @@ ActivityInfo *ActivityInfoTree::getParentActivity(ActivityInfo *root, ActivityIn
 
 void ActivityInfoTree::menuTreeAppend(ActivityInfo *menu)
 {
-	m_menuTree.append(menu);
-	emit menuTreeChanged();
+    m_menuTreeFull.append(menu);
 }
 
 void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
@@ -78,7 +77,7 @@ void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
 	QObject *object = component.create();
 	if(component.isReady()) {
 		if(QQmlProperty::read(object, "section").toString() == "/") {
-			menuTreeAppend(qobject_cast<ActivityInfo*>(object));
+            menuTreeAppend(qobject_cast<ActivityInfo*>(object));
 		}
 	} else {
 		qDebug() << menuFile << ": Failed to load";
@@ -88,11 +87,26 @@ void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
 void ActivityInfoTree::sortByDifficulty()
 {
 	qSort(m_menuTree.begin(), m_menuTree.end(), SortByDifficulty());
+    emit menuTreeChanged();
 }
 
 void ActivityInfoTree::sortByName()
 {
 	qSort(m_menuTree.begin(), m_menuTree.end(), SortByName());
+    emit menuTreeChanged();
+}
+
+// Filter the current activity list by the given tag
+// the tag 'all' means no filter
+void ActivityInfoTree::filterByTag(const QString &tag)
+{
+    m_menuTree.clear();
+    for(auto activity: m_menuTreeFull) {
+        if(activity->section().indexOf(tag) != -1 ||
+                tag == "all")
+            m_menuTree.push_back(activity);
+    }
+    emit menuTreeChanged();
 }
 
 QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
@@ -131,8 +145,9 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	}
 	file.close();
 
-	menuTree->sortByDifficulty();
-	return menuTree;
+    menuTree->filterByTag("all");
+    menuTree->sortByDifficulty();
+    return menuTree;
 }
 
 void ActivityInfoTree::init()
