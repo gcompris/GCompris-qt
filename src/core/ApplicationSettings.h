@@ -36,19 +36,34 @@ public:
                                        QJSEngine *scriptEngine);
 
     bool isAudioEnabled() const { return m_isAudioEnabled; }
-    void setIsAudioEnabled(const bool newMode) {m_isAudioEnabled = newMode; emit audioEnabledChanged();}
+    void setIsAudioEnabled(const bool newMode) {
+        m_isAudioEnabled = newMode;
+        emit audioEnabledChanged();
+    }
 
     bool isEffectEnabled() const { return m_isEffectEnabled; }
-    void setIsEffectEnabled(const bool newMode) {m_isEffectEnabled = newMode; emit effectEnabledChanged();}
+    void setIsEffectEnabled(const bool newMode) {
+        m_isEffectEnabled = newMode;
+        emit effectEnabledChanged();
+    }
 
     bool isFullscreen() const { return m_isFullscreen; }
-    void setFullscreen(const bool newMode) {m_isFullscreen = newMode; emit fullscreenChanged();}
+    void setFullscreen(const bool newMode) {
+        m_isFullscreen = newMode;
+        emit fullscreenChanged();
+    }
 
     bool isVirtualKeyboard() const { return m_isVirtualKeyboard; }
-    void setVirtualKeyboard(const bool newMode) {m_isVirtualKeyboard = newMode; emit virtualKeyboardChanged();}
+    void setVirtualKeyboard(const bool newMode) {
+        m_isVirtualKeyboard = newMode;
+        emit virtualKeyboardChanged();
+    }
 
     QString locale() const { return m_locale; }
-    void setLocale(const QString newLocale) {m_locale = newLocale; emit localeChanged();}
+    void setLocale(const QString newLocale) {
+        m_locale = newLocale;
+        emit localeChanged();
+    }
 
 protected slots:
     Q_INVOKABLE void notifyAudioEnabledChanged();

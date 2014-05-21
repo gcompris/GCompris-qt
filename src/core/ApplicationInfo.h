@@ -65,10 +65,6 @@ class ApplicationInfo : public QObject
 	Q_PROPERTY(qreal sliderHandleWidth READ sliderHandleWidth NOTIFY ratioChanged)
 	Q_PROPERTY(qreal sliderHandleHeight READ sliderHandleHeight NOTIFY ratioChanged)
 	Q_PROPERTY(qreal sliderGapWidth READ sliderGapWidth NOTIFY ratioChanged)
-    Q_PROPERTY(bool isAudioEnabled READ isAudioEnabled WRITE setIsAudioEnabled NOTIFY audioEnabledChanged)
-    Q_PROPERTY(bool isEffectEnabled READ isEffectEnabled WRITE setIsEffectEnabled NOTIFY effectEnabledChanged)
-    Q_PROPERTY(bool isFullscreen READ isFullscreen WRITE setFullscreen NOTIFY fullscreenChanged)
-    Q_PROPERTY(QString locale READ locale WRITE setLocale NOTIFY localeChanged)
     Q_PROPERTY(QString localeShort READ localeShort)
     Q_PROPERTY(QString GCVersion READ GCVersion CONSTANT)
 
@@ -117,23 +113,13 @@ public:
 	qreal sliderGapWidth()  { return m_sliderGapWidth; }
 	qreal sliderHandleWidth()  { return m_sliderHandleWidth; }
 
-    bool isAudioEnabled() const { return m_applicationSettings.isAudioEnabled(); }
-    void setIsAudioEnabled(const bool newMode) {m_applicationSettings.setIsAudioEnabled(newMode);emit audioEnabledChanged();}
-
-    bool isEffectEnabled() const { return m_applicationSettings.isEffectEnabled(); }
-    void setIsEffectEnabled(const bool newMode) {m_applicationSettings.setIsEffectEnabled(newMode); emit effectEnabledChanged();}
-
-    bool isFullscreen() const { return m_applicationSettings.isFullscreen(); }
-    void setFullscreen(const bool newMode) {m_applicationSettings.setFullscreen(newMode); emit fullscreenChanged();}
-
-    QString locale() const { return m_applicationSettings.locale(); }
-    void setLocale(const QString newLocale) {m_applicationSettings.setLocale(newLocale); emit localeChanged();}
-
     // Can't use left(2) because of Asturian where there are 3 chars
     static QString localeShort(const QString &locale) {
         return locale.left(locale.indexOf('_'));
     }
-    QString localeShort() const { return localeShort(m_applicationSettings.locale()); }
+    QString localeShort() const {
+        return localeShort( ApplicationSettings::getInstance()->locale() );
+    }
     static QString GCVersion() { return VERSION; }
 
 protected slots:
@@ -141,9 +127,6 @@ protected slots:
 
     Q_INVOKABLE QString getAudioFilePath(const QString &file);
     Q_INVOKABLE QString getLocaleFilePath(const QString &file);
-
-    Q_INVOKABLE void notifyAudioEnabledChanged() {}
-    Q_INVOKABLE void notifyEffectEnabledChanged() {}
     Q_INVOKABLE void notifyFullscreenChanged();
 
 
@@ -156,11 +139,7 @@ signals:
 	void hMarginChanged();
 	void ratioChanged();
     void applicationSettingsChanged();
-
-    void audioEnabledChanged();
-    void effectEnabledChanged();
     void fullscreenChanged();
-    void localeChanged();
 
 
 private:
@@ -173,8 +152,6 @@ private:
 	qreal m_ratio;
 	qreal m_hMargin;
 	qreal m_sliderHandleHeight, m_sliderHandleWidth, m_sliderGapWidth;
-
-    ApplicationSettings m_applicationSettings;
 
     static QQuickWindow *m_window;
 };

@@ -196,16 +196,16 @@ Rectangle {
         }
     }
 
-    property bool isAudioEnabled: ApplicationInfo.isAudioEnabled
-    property bool isFullscreen: ApplicationInfo.isFullscreen
+    property bool isAudioEnabled: ApplicationSettings.isAudioEnabled
+    property bool isFullscreen: ApplicationSettings.isFullscreen
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
 
     onStart: {
         // Synchronize settings with data
-        isAudioEnabled = ApplicationInfo.isAudioEnabled
+        isAudioEnabled = ApplicationSettings.isAudioEnabled
         enableAudioBox.checked = isAudioEnabled
 
-        isFullscreen = ApplicationInfo.isFullscreen
+        isFullscreen = ApplicationSettings.isFullscreen
         enableFullscreenBox.checked = isFullscreen
 
         isVirtualKeyboard = ApplicationSettings.isVirtualKeyboard
@@ -213,7 +213,7 @@ Rectangle {
 
         // Set locale
         for(var i = 0 ; i < languages.count ; i ++) {
-            if(languages.get(i).locale == ApplicationInfo.locale) {
+            if(languages.get(i).locale == ApplicationSettings.locale) {
                 languageBox.currentIndex = i;
                 break;
             }
@@ -221,10 +221,10 @@ Rectangle {
     }
 
     function save() {
-        ApplicationInfo.isAudioEnabled = isAudioEnabled
-        ApplicationInfo.isFullscreen = isFullscreen
+        ApplicationSettings.isAudioEnabled = isAudioEnabled
+        ApplicationSettings.isFullscreen = isFullscreen
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
-        ApplicationInfo.locale = languages.get(languageBox.currentIndex).locale
+        ApplicationSettings.locale = languages.get(languageBox.currentIndex).locale
     }
 
     ListModel {
@@ -263,9 +263,9 @@ Rectangle {
     }
 
     function hasConfigChanged() {
-        return (ApplicationInfo.locale != languages.get(languageBox.currentIndex).locale ||
-                (ApplicationInfo.isAudioEnabled != isAudioEnabled) ||
-                (ApplicationInfo.isFullscreen != isFullscreen) ||
+        return (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale ||
+                (ApplicationSettings.isAudioEnabled != isAudioEnabled) ||
+                (ApplicationSettings.isFullscreen != isFullscreen) ||
                 (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard));
     }
 }

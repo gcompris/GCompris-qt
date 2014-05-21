@@ -154,7 +154,7 @@ void ApplicationInfo::setWindow(QQuickWindow *window)
 
 void ApplicationInfo::notifyFullscreenChanged()
 {
-    if(m_applicationSettings.isFullscreen())
+    if(ApplicationSettings::getInstance()->isFullscreen())
         m_window->showFullScreen();
     else
         m_window->showNormal();
@@ -170,7 +170,7 @@ QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,
      * the QQuickWindow value
      */
     ApplicationInfo* appInfo = getInstance();
-    connect(&appInfo->m_applicationSettings, SIGNAL(fullscreenChanged()), appInfo,
+    connect(ApplicationSettings::getInstance(), SIGNAL(fullscreenChanged()), appInfo,
             SLOT(notifyFullscreenChanged()));
     return appInfo;
 }
