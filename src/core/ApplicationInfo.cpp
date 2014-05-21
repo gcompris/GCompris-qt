@@ -172,6 +172,6 @@ void ApplicationInfo::notifyFullscreenChanged()
 
 void ApplicationInfo::init()
 {
-    qmlRegisterSingletonType<ApplicationInfo>("GCompris", 1, 0, "ApplicationInfo", systeminfoProvider);
-    qmlRegisterType<ApplicationInfo>("GCompris", 1, 0, "ApplicationInfo");
+    qmlRegisterSingletonType<ApplicationInfo>("GCompris", 1, 0,
+                                              "ApplicationInfo", systeminfoProvider);
 }
