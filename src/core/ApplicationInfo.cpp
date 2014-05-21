@@ -162,16 +162,16 @@ void ApplicationInfo::setWindow(QQuickWindow *window)
     m_window = window;
 }
 
-void ApplicationInfo::init()
-{
-    qmlRegisterSingletonType<ApplicationInfo>("GCompris", 1, 0, "ApplicationInfo", systeminfoProvider);
-    qmlRegisterType<ApplicationInfo>("GCompris", 1, 0, "ApplicationInfo");
-}
-
 void ApplicationInfo::notifyFullscreenChanged()
 {
     if(m_applicationSettings.isFullscreen())
         m_window->showFullScreen();
     else
         m_window->showNormal();
+}
+
+void ApplicationInfo::init()
+{
+    qmlRegisterSingletonType<ApplicationInfo>("GCompris", 1, 0, "ApplicationInfo", systeminfoProvider);
+    qmlRegisterType<ApplicationInfo>("GCompris", 1, 0, "ApplicationInfo");
 }
