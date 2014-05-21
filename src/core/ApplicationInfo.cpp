@@ -49,6 +49,7 @@
 #include <QDebug>
 
 QQuickWindow *ApplicationInfo::m_window = NULL;
+ApplicationInfo *ApplicationInfo::m_instance = NULL;
 
 ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 {
@@ -150,7 +151,7 @@ QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,
      * Connect the fullscreen change signal to applicationInfo in order to change
      * the QQuickWindow value
      */
-    ApplicationInfo* appInfo = new ApplicationInfo();
+    ApplicationInfo* appInfo = getInstance();
     connect(&appInfo->m_applicationSettings, SIGNAL(fullscreenChanged()), appInfo,
             SLOT(notifyFullscreenChanged()));
     return appInfo;
