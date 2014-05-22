@@ -48,7 +48,7 @@ Item {
             bar.toggle()
         } else if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_F) {
-            ApplicationInfo.isFullscreen = !ApplicationInfo.isFullscreen
+            ApplicationSettings.isFullscreen = !ApplicationSettings.isFullscreen
         }
     }
     Keys.onReleased: {
