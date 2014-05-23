@@ -21,7 +21,7 @@
 */
 import QtQuick 2.1
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "clockgame.js" as Activity
 
 ActivityBase {
@@ -68,10 +68,11 @@ ActivityBase {
         /* Target text */
         Text {
             text: (Activity.currentTry + 1) + " / " + Activity.numberOfTry + "\n" + qsTr(
-                      "Set the clock to:") + "\n" + Activity.get2CharValue(
+                      "Set the watch to:") + " " +
+                  Activity.get2CharValue(
                       items.targetH) + ":" + Activity.get2CharValue(
                       items.targetM) + ":" + Activity.get2CharValue(
-                      items.targetS)
+                      items.targetS) + "\n"
             font.pointSize: 18
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap

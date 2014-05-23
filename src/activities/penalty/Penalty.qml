@@ -23,7 +23,7 @@ import QtQuick 2.1
 import QtMultimedia 5.0
 import GCompris 1.0
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "penalty.js" as Activity
 
 ActivityBase {
@@ -64,12 +64,12 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         /* Sounds */
-        Audio {
+        GCAudio {
             id: playFlip
             source: "qrc:/gcompris/src/core/resource/sounds/flip.wav"
         }
 
-        Audio {
+        GCAudio {
             id: playBrick
             source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
         }

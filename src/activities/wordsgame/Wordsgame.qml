@@ -23,11 +23,13 @@
 import QtQuick 2.1
 import GCompris 1.0
 
-import "qrc:/gcompris/src/core"
-import "qrc:/gcompris/src/activities/gletters"
+import "../../core"
+import "../gletters"
 
 Gletters {
     id: activity
     
     mode: "word"
+    dataSetUrl: "qrc:/gcompris/src/activities/wordsgame/resource/"
+
 }

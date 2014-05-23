@@ -1,7 +1,7 @@
 import QtQuick 2.1
 
-import "qrc:/gcompris/src/activities/memory"
-import "qrc:/gcompris/src/core"
+import "../memory"
+import "../../core"
 
 import "memorysounddataset.js" as Dataset
 

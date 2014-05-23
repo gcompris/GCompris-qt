@@ -4,13 +4,14 @@ ActivityInfo
 {
   name: "missing-letter/MissingLetter.qml"
   difficulty: 1
-  icon: "missing-letter/missing-letter.svg"
+  icon: "missing-letter/missing-letter.svgz"
   author: "Amit Tomar <a.tomar@outlook.com>"
   demo: false
-  title: qsTr("missing-letter activity")
-  description: qsTr("")
+  title: qsTr("Missing Letter")
+  description: ""
   goal: qsTr("Training reading skills")
-  prerequisite: qsTr("1. To move and click the mouse. 2. Word reading")
+  prerequisite: qsTr("Word reading")
   manual: qsTr("An object is displayed in the main area, and an incomplete word is printed under the picture. Select the missing letter to complete the word.")
-  credit: qsTr("")
+  credit: ""
+  section: "/reading"
 }

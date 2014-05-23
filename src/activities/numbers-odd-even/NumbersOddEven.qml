@@ -18,25 +18,25 @@
 */
 
 import QtQuick 2.0
-import "qrc:/gcompris/src/activities/planegame"
+import "../planegame"
 
 Planegame {
 
     dataset: [
         {
-            data: qsTr("0 2 4 6 8 10 12 14 16 18 20").split(" "),
+            data: "0 2 4 6 8 10 12 14 16 18 20".split(" "),
             showNext: true
         },
         {
-            data: qsTr("1 3 5 7 9 11 13 15 17 19 21").split(" "),
+            data: "1 3 5 7 9 11 13 15 17 19 21".split(" "),
             showNext: true
         },
         {
-            data: qsTr("0 2 4 6 8 10 12 14 16 18 20").split(" "),
+            data: "0 2 4 6 8 10 12 14 16 18 20".split(" "),
             showNext: false
         },
         {
-            data: qsTr("1 3 5 7 9 11 13 15 17 19 21").split(" "),
+            data: "1 3 5 7 9 11 13 15 17 19 21".split(" "),
             showNext: false
         }
     ]

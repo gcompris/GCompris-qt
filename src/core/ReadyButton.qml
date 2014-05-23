@@ -47,7 +47,7 @@ Rectangle {
         anchors.verticalCenter: parent.verticalCenter
         font.bold: true
         font.pointSize: 18
-        text: qsTr("I am Ready!")
+        text: qsTr("I am Ready")
         visible: iamReady.visible
     }
 

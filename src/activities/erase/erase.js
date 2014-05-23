@@ -22,6 +22,7 @@
 
 .pragma library
 .import QtQuick 2.0 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/erase/resource/"
 
@@ -96,7 +97,7 @@ var main
 var items
 var type
 
-// The array of created blocks object
+// The counter of created blocks object
 var createdBlocks
 var killedBlocks
 
@@ -115,12 +116,10 @@ function start(main_, items_, type_) {
 }
 
 function stop() {
-    destroyBlocks();
 }
 var nbx = (currentLevel % 2 * 3) + 5;
 var nby = (currentLevel % 2 * 3) + 5;
 function initLevel() {
-    destroyBlocks();
     items.blocks.clear()
     imgIndex++
     items.bar.level = currentLevel + 1
@@ -128,7 +127,8 @@ function initLevel() {
     if(currentImage >= backgroundImages.length) {
         currentImage = 0
     }
-    createdBlocks = new Array()
+    createdBlocks = 0
+    killedBlocks = 0
     var nbx = (currentLevel % 2 * 3) + 5;
     var nby = (currentLevel % 2 * 3) + 5;
     var w = main.width / nbx
@@ -140,7 +140,7 @@ function initLevel() {
             for(var y = 0;  y < nby; ++y) {
                 data = {'nx': nbx, 'ny': nby, 'a':x, 'b':y, 'op': 1.0,'MAIN':main,'BAR':items.bar, 'img': blockImages[imgIndex % blockImages.length]}
                 items.blocks.append(data)
-                createdBlocks[i++] = "block"
+                createdBlocks++
             }
         }
 }
@@ -167,29 +167,13 @@ function previousLevel() {
     initLevel();
 }
 
-function destroyBlocks() {
-    if (createdBlocks) {
-        for(var i = 0;  i < createdBlocks.length; ++i) {
-            createdBlocks.pop()
-        }
-        createdBlocks.length = 0
-    }
-    killedBlocks = 0
-}
-
 function blockKilled() {
-    if(++killedBlocks === createdBlocks.length) {
+    if(++killedBlocks === createdBlocks) {
         items.bonus.good("flower")
     }
 }
 
 function getFirstImage() {
-    backgroundImages = shuffle(backgroundImages)
+    backgroundImages = Core.shuffle(backgroundImages)
     return backgroundImages[0]
-}
-
-function shuffle(o) {
-    for(var j, x, i = o.length; i;
-        j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-    return o;
 }

@@ -24,8 +24,6 @@ import QtGraphicalEffects 1.0
 import QtQuick.Controls 1.1
 import QtQuick.Controls.Styles 1.1
 
-import "qrc:/gcompris/src/core"
-
 Item {
     id: virtualKey
     

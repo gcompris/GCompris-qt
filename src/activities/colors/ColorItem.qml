@@ -1,7 +1,7 @@
 import QtQuick 2.1
 import QtMultimedia 5.0
 import "findit.js" as Activity
-import "qrc:/gcompris/src/core"
+import "../../core"
 import GCompris 1.0
 
 Image {
@@ -11,7 +11,7 @@ Image {
     property string audioSrc
     property string question
 
-    Audio {
+    GCAudio {
         id: audio
         source: audioSrc
     }

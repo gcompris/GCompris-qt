@@ -23,6 +23,7 @@ import QtQuick 2.1
 import QtQuick.Particles 2.0
 import QtMultimedia 5.0
 import "erase.js" as Activity
+import "../../core"
 import GCompris 1.0
 
 Image {
@@ -101,7 +102,7 @@ Image {
         audioEraser.play()
     }
 
-    Audio {
+    GCAudio {
         id: audioEraser
         source: ix % 2 ? "qrc:/gcompris/src/activities/erase/resource/eraser1.wav" :
                          "qrc:/gcompris/src/activities/erase/resource/eraser2.wav"

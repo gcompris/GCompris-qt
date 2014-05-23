@@ -29,9 +29,6 @@
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 
-var glettersUrl = "qrc:/gcompris/src/activities/gletters/resource/"
-var wordsgameUrl = "qrc:/gcompris/src/activities/wordsgame/resource/"
-
 var currentLevel = 0;
 var currentSubLevel = 0;
 var level = null;
@@ -109,7 +106,6 @@ function initLevel() {
                 + " wordCount=" + level.words.length
                 + " speed=" + speed + " fallspeed=" + fallSpeed);*/
         
-        if (GCompris.ApplicationInfo.isMobile) 
         {
             /* populate VirtualKeyboard for mobile:
              * 1. for < 10 letters print them all in the same row

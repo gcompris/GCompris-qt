@@ -21,8 +21,6 @@
 import QtQuick 2.0
 import GCompris 1.0
 
-import "qrc:/gcompris/src/core"
-
 /* ToDo:
  * - check for duplicate letters
  * - add support for shift key
@@ -82,17 +80,16 @@ Item {
     property int margin: 5 * ApplicationInfo.ratio
     opacity: 0.9
     
-    visible: priv.initialized  // this should probably be readonly from outside
+    visible: ApplicationSettings.isVirtualKeyboard && priv.initialized
     enabled: visible
     
     signal keypress(string text);
     signal error(string msg);
 
     // internal:
-    state: "OPENED"
     z: 9999
     width: parent.width
-    height: priv.cHeight
+    height: visible ? priv.cHeight : 0
     anchors.bottom: parent.bottom
     anchors.horizontalCenter: parent.horizontalCenter
     
@@ -101,7 +98,7 @@ Item {
         id: priv
         
         readonly property int cHeight: numRows * keyboard.keyHeight +
-                                       (numRows - 1) * keyboard.rowSpacing //+ keyboard.margin * 2
+                                       (numRows + 1) * keyboard.rowSpacing
         property int numRows: 0
         property bool initialized: false
     }
@@ -145,7 +142,7 @@ Item {
                                   offset: offset,
                                   keys: a[i]});
         }
-        priv.numRows = i + 1;
+        priv.numRows = i;
         priv.initialized = (priv.numRows > 0);
     }
     
@@ -178,19 +175,6 @@ Item {
         }
     }
     
-    states: [
-             State {
-                 name: "OPENED"
-                 PropertyChanges { target: keyboard; height: priv.cHeight}
-                 PropertyChanges { target: arrowIcon; rotation: 0 }
-             },
-             State {
-                 name: "CLOSED"
-                 PropertyChanges { target: keyboard; height: keyboardDrawer.height}
-                 PropertyChanges { target: arrowIcon; rotation: 180 }
-             }
-         ]
-    
     Rectangle {
         id: background
         
@@ -199,94 +183,15 @@ Item {
         color: "#8C8F8C"
         opacity: keyboard.opacity
         
-        MultiPointTouchArea {
-            id: keyboardTouchArea
-            
-            anchors.fill: parent
-            // mutually exclusive with drawerMouseArea
-            enabled: ApplicationInfo.isMobile
-            touchPoints: [ TouchPoint { id: point1 } ]
-            
-            property bool inGesture: false
-                       
-            onGestureStarted: keyboardTouchArea.inGesture = true;
-            
-            onReleased: {
-                if (point1.y > 20 && keyboardTouchArea.inGesture &&
-                        keyboard.state != "CLOSED")
-                    keyboard.state = "CLOSED"; //slide down
-                else if (point1.y < 0 && keyboardTouchArea.inGesture &&
-                         keyboard.state != "OPENED")
-                    keyboard.state = "OPENED"; //slide up
-                else if (point1.y > 0 && point1.y <= keyboardDrawer.height) {
-                    // assume: click on drawer
-                    if (keyboard.state == "CLOSED")
-                        keyboard.state = "OPENED";
-                    else if (keyboard.state == "OPENED")
-                        keyboard.state = "CLOSED";
-                }
-                keyboardTouchArea.inGesture = false;
-            }
-        }
-        
-        Rectangle {
-            id: keyboardDrawer
-            height: 15 * ApplicationInfo.ratio;
-            width: parent.width
-            border.color : "#6A6D6A"
-            border.width: 1
-            z: 1
-
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#8C8F8C" }
-                GradientStop { position: 0.17; color: "#6A6D6A" }
-                GradientStop { position: 0.77; color: "#3F3F3F" }
-                GradientStop { position: 1.0; color: "#6A6D6A" }
-            }
-
-            Image {
-                id: arrowIcon
-                source: "qrc:/gcompris/src/core/resource/arrow.png"
-                anchors.centerIn: parent
-
-                Behavior {
-                    NumberAnimation {
-                        property: "rotation"
-                        easing.type: Easing.OutExpo
-                    }
-                }
-            }
-            
-            MouseArea {
-                id: drawerMouseArea
-                
-                anchors.fill: parent
-                hoverEnabled: true
-                // mutually exclusive with keyboardTouchArea
-                enabled: !ApplicationInfo.isMobile
-                
-                onEntered: parent.border.color = Qt.lighter("#6A6D6A")
-                
-                onExited: parent.border.color = "#6A6D6A"
-                    
-                onClicked: {
-                    if (keyboard.state == "CLOSED")
-                        keyboard.state = "OPENED";
-                    else if (keyboard.state == "OPENED")
-                        keyboard.state = "CLOSED";
-                }
-            }
-        }
-
         ListView {
             id: rowList
             
             anchors.top: parent.top
-            anchors.topMargin: keyboardDrawer.height + keyboard.margin
+            anchors.topMargin: keyboard.margin
             anchors.left: parent.left
             anchors.margins: keyboard.margin
             width: parent.width
-            height: parent.height - keyboard.margin * 2 - keyboardDrawer.height
+            height: parent.height - keyboard.margin * 2
             spacing: keyboard.rowSpacing
             orientation: Qt.Vertical
             verticalLayoutDirection: ListView.TopToBottom

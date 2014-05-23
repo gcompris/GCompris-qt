@@ -22,7 +22,7 @@
 import QtQuick 2.1
 import GCompris 1.0
 
-import "qrc:/gcompris/src/activities/colors"
+import "../colors"
 import "instruments.js" as Dataset
 
 FindIt {

@@ -24,8 +24,8 @@ import QtQuick 2.1
 import QtMultimedia 5.0
 import GCompris 1.0
 
-import "qrc:/gcompris/src/core"
-import "qrc:/gcompris/src/activities/click_on_letter"
+import "../../core"
+import "../click_on_letter"
 
 ClickOnLetter {
     id: activity

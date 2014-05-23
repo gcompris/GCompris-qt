@@ -21,6 +21,7 @@
 */
 .pragma library
 .import QtQuick 2.0 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/enumerate/resource/"
 var items
@@ -118,7 +119,7 @@ function initLevel() {
         numberOfItemMax = 10;
     }
 
-    itemIcons = shuffle(itemIcons)
+    itemIcons = Core.shuffle(itemIcons)
     var enumItems = new Array()
     var types = new Array()
 
@@ -169,12 +170,6 @@ function checkAnswers() {
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
-}
-
-function shuffle(o) {
-    for(var j, x, i = o.length; i;
-        j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-    return o;
 }
 
 var currentAnswerItem

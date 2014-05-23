@@ -21,192 +21,192 @@ var colors =
             [ // Level 1
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/clarinet.svgz",
-                "text": "Find the clarinet",
+                "text": qsTr("Find the clarinet"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/clarinet.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/flute_traversiere.svgz",
-                "text": "Find the transverse flute",
+                "text": qsTr("Find the transverse flute"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/flute_traversiere.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/guitar.svgz",
-                "text": "Find the guitar",
+                "text": qsTr("Find the guitar"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/guitar.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/harp.svgz",
-                "text": "Find the harp",
+                "text": qsTr("Find the harp"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/harp.ogg"
             }
             ],
             [ // Level 2
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/piano.svgz",
-                "text": "Find the piano",
+                "text": qsTr("Find the piano"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/piano.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/saxophone.svgz",
-                "text": "Find the saxophone",
+                "text": qsTr("Find the saxophone"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/saxophone.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/trombone.svgz",
-                "text": "Find the trombone",
+                "text": qsTr("Find the trombone"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/trombone.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/trumpet.svgz",
-                "text": "Find the trumpet",
+                "text": qsTr("Find the trumpet"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/trumpet.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/violin.svgz",
-                "text": "Find the violin",
+                "text": qsTr("Find the violin"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/violin.ogg"
             }
             ],
             [ // Level 3
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/clarinet.svgz",
-                "text": "Find the clarinet",
+                "text": qsTr("Find the clarinet"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/clarinet.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/flute_traversiere.svgz",
-                "text": "Find the flute traversiere",
+                "text": qsTr("Find the flute traversiere"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/flute_traversiere.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/guitar.svgz",
-                "text": "Find the guitar",
+                "text": qsTr("Find the guitar"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/guitar.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/harp.svgz",
-                "text": "Find the harp",
+                "text": qsTr("Find the harp"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/harp.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/piano.svgz",
-                "text": "Find the piano",
+                "text": qsTr("Find the piano"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/piano.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/saxophone.svgz",
-                "text": "Find the saxophone",
+                "text": qsTr("Find the saxophone"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/saxophone.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/trombone.svgz",
-                "text": "Find the trombone",
+                "text": qsTr("Find the trombone"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/trombone.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/trumpet.svgz",
-                "text": "Find the trumpet",
+                "text": qsTr("Find the trumpet"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/trumpet.ogg"
             }
             ],
             [ // Level 4
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/violin.svgz",
-                "text": "Find the violin",
+                "text": qsTr("Find the violin"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/violin.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/flute_traversiere.svgz",
-                "text": "Find the flute traversiere",
+                "text": qsTr("Find the flute traversiere"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/flute_traversiere.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/guitar.svgz",
-                "text": "Find the guitar",
+                "text": qsTr("Find the guitar"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/guitar.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/harp.svgz",
-                "text": "Find the harp",
+                "text": qsTr("Find the harp"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/harp.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/piano.svgz",
-                "text": "Find the piano",
+                "text": qsTr("Find the piano"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/piano.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/saxophone.svgz",
-                "text": "Find the saxophone",
+                "text": qsTr("Find the saxophone"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/saxophone.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/trombone.svgz",
-                "text": "Find the trombone",
+                "text": qsTr("Find the trombone"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/trombone.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/trumpet.svgz",
-                "text": "Find the trumpet",
+                "text": qsTr("Find the trumpet"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/trumpet.ogg"
             }
             ],
             [ // Level 5
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/drum_kit.svgz",
-                "text": "Find the drum kit",
+                "text": qsTr("Find the drum kit"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/drum_kit.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/accordion.svgz",
-                "text": "Find the accordion",
+                "text": qsTr("Find the accordion"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/accordion.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/banjo.svgz",
-                "text": "Find the banjo",
+                "text": qsTr("Find the banjo"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/banjo.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/bongo.svgz",
-                "text": "Find the bongo",
+                "text": qsTr("Find the bongo"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/bongo.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/electric_guitar.svgz",
-                "text": "Find the electric guitar",
+                "text": qsTr("Find the electric guitar"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/electric_guitar.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/castanets.svgz",
-                "text": "Find the castanets",
+                "text": qsTr("Find the castanets"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/castanets.ogg"
             }
             ],
             [ // Level 6
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/drum_kit.svgz",
-                "text": "Find the drum kit",
+                "text": qsTr("Find the drum kit"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/drum_kit.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/accordion.svgz",
-                "text": "Find the accordion",
+                "text": qsTr("Find the accordion"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/accordion.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/banjo.svgz",
-                "text": "Find the banjo",
+                "text": qsTr("Find the banjo"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/banjo.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/cymbal.svgz",
-                "text": "Find the cymbal",
+                "text": qsTr("Find the cymbal"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/cymbal.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/cello.svgz",
-                "text": "Find the cello",
+                "text": qsTr("Find the cello"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/cello.ogg"
             }
             ],
@@ -214,32 +214,32 @@ var colors =
 
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/bongo.svgz",
-                "text": "Find the bongo",
+                "text": qsTr("Find the bongo"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/bongo.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/electric_guitar.svgz",
-                "text": "Find the electric guitar",
+                "text": qsTr("Find the electric guitar"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/electric_guitar.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/harmonica.svgz",
-                "text": "Find the harmonica",
+                "text": qsTr("Find the harmonica"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/harmonica.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/horn.svgz",
-                "text": "Find the horn",
+                "text": qsTr("Find the horn"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/horn.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/maracas.svgz",
-                "text": "Find the maracas",
+                "text": qsTr("Find the maracas"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/maracas.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/organ.svgz",
-                "text": "Find the organ",
+                "text": qsTr("Find the organ"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/organ.ogg"
             }
             ],
@@ -247,32 +247,32 @@ var colors =
 
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/snare_drum.svgz",
-                "text": "Find the snare drum",
+                "text": qsTr("Find the snare drum"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/snare_drum.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/timpani.svgz",
-                "text": "Find the timpani",
+                "text": qsTr("Find the timpani"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/timpani.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/triangle.svgz",
-                "text": "Find the triangle",
+                "text": qsTr("Find the triangle"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/triangle.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/horn.svgz",
-                "text": "Find the horn",
+                "text": qsTr("Find the horn"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/horn.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/maracas.svgz",
-                "text": "Find the maracas",
+                "text": qsTr("Find the maracas"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/maracas.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/organ.svgz",
-                "text": "Find the organ",
+                "text": qsTr("Find the organ"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/organ.ogg"
             }
             ],
@@ -280,27 +280,27 @@ var colors =
 
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/snare_drum.svgz",
-                "text": "Find the snare drum",
+                "text": qsTr("Find the snare drum"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/snare_drum.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/timpani.svgz",
-                "text": "Find the timpani",
+                "text": qsTr("Find the timpani"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/timpani.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/triangle.svgz",
-                "text": "Find the triangle",
+                "text": qsTr("Find the triangle"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/triangle.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/tambourine.svgz",
-                "text": "Find the tambourine",
+                "text": qsTr("Find the tambourine"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/tambourine.ogg"
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/tuba.svgz",
-                "text": "Find the tuba",
+                "text": qsTr("Find the tuba"),
                 "audio": "qrc:/gcompris/src/activities/instruments/resource/tuba.ogg"
             }
             ]

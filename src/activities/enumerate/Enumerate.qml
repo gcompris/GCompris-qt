@@ -23,7 +23,7 @@ import QtQuick 2.1
 import GCompris 1.0
 import QtMultimedia 5.0
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "enumerate.js" as Activity
 
 ActivityBase {
@@ -68,7 +68,7 @@ ActivityBase {
         Column {
             anchors {
                 right: parent.right
-                bottom: ApplicationInfo.isMobile ? keyboard.top : parent.bottom
+                bottom: keyboard.top
                 margins: 10
             }
             spacing: 5
@@ -98,8 +98,6 @@ ActivityBase {
             id: keyboard
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
-            width: parent.width
-            visible: ApplicationInfo.isMobile
 
             keyHeight: 35 * ApplicationInfo.ratio
             equalKeyWidth: true
@@ -128,6 +126,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            anchors.bottom: keyboard.top
             content: BarEnumContent { value: help | home | previous | next }
             onHelpClicked: {
                 displayDialog(dialogHelp)
@@ -137,7 +136,7 @@ ActivityBase {
             onHomeClicked: activity.home()
         }
 
-        Audio {
+        GCAudio {
             id: winAudio
             source: "qrc:/gcompris/src/core/resource/sounds/bonus.wav"
         }

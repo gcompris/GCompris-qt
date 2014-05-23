@@ -23,7 +23,7 @@ import GCompris 1.0
 ActivityInfo {
     name: "planegame/Sequence.qml"
     difficulty: 2
-    icon: "planegame/planegame.svg"
+    icon: "planegame/planegame.svgz"
     author: "Johnny Jazeix <jazeix@gmail.com>"
     demo: false
     title: qsTr("Numbers in Order")
@@ -32,4 +32,5 @@ ActivityInfo {
     prerequisite: qsTr("Number")
     manual: qsTr("Catch the numbers in increasing order, using the up, down, right and left arrows on the keyboard to move the helicopter.")
     credit: ""
+  section: "/math/numeration"
 }

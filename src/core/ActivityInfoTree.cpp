@@ -1,8 +1,11 @@
 #include <QtDebug>
 #include <QQmlProperty>
 #include <QQmlComponent>
+#include <QResource>
+#include <QCoreApplication>
 
 #include "ActivityInfoTree.h"
+#include "ApplicationInfo.h"
 
 ActivityInfoTree::ActivityInfoTree(QObject *parent) : QObject(parent),
 	m_currentActivity(NULL)
@@ -63,8 +66,7 @@ ActivityInfo *ActivityInfoTree::getParentActivity(ActivityInfo *root, ActivityIn
 
 void ActivityInfoTree::menuTreeAppend(ActivityInfo *menu)
 {
-	m_menuTree.append(menu);
-	emit menuTreeChanged();
+    m_menuTreeFull.append(menu);
 }
 
 void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
@@ -75,7 +77,7 @@ void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
 	QObject *object = component.create();
 	if(component.isReady()) {
 		if(QQmlProperty::read(object, "section").toString() == "/") {
-			menuTreeAppend(qobject_cast<ActivityInfo*>(object));
+            menuTreeAppend(qobject_cast<ActivityInfo*>(object));
 		}
 	} else {
 		qDebug() << menuFile << ": Failed to load";
@@ -85,11 +87,26 @@ void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
 void ActivityInfoTree::sortByDifficulty()
 {
 	qSort(m_menuTree.begin(), m_menuTree.end(), SortByDifficulty());
+    emit menuTreeChanged();
 }
 
 void ActivityInfoTree::sortByName()
 {
 	qSort(m_menuTree.begin(), m_menuTree.end(), SortByName());
+    emit menuTreeChanged();
+}
+
+// Filter the current activity list by the given tag
+// the tag 'all' means no filter
+void ActivityInfoTree::filterByTag(const QString &tag)
+{
+    m_menuTree.clear();
+    for(auto activity: m_menuTreeFull) {
+        if(activity->section().indexOf(tag) != -1 ||
+                tag == "all")
+            m_menuTree.push_back(activity);
+    }
+    emit menuTreeChanged();
 }
 
 QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
@@ -114,21 +131,37 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 		QString line = in.readLine();
 		if(!line.startsWith("#")) {
 			QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(line);
+
+			if(!QResource::registerResource(
+				   ApplicationInfo::getFilePath(line + ".rcc")))
+				qDebug() << "Failed to load the resource file " << line + ".rcc";
+
 			QQmlComponent componentRoot(engine,	QUrl(url));
 			QObject *objectRoot = componentRoot.create();
-			if(objectRoot)
+			if(objectRoot) {
 				menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(objectRoot));
+			}
 		}
 	}
 	file.close();
 
-	menuTree->sortByDifficulty();
-	return menuTree;
+    menuTree->filterByTag("all");
+    menuTree->sortByDifficulty();
+    return menuTree;
 }
 
 void ActivityInfoTree::init()
 {
-	qmlRegisterSingletonType<QObject>("GCompris", 1, 0, "ActivityInfoTree", menuTreeProvider);
+	if(!QResource::registerResource(ApplicationInfo::getFilePath("core.rcc")))
+		qDebug() << "Failed to load the resource file " << ApplicationInfo::getFilePath("core.rcc");
+
+    if(!QResource::registerResource(ApplicationInfo::getFilePath("menu.rcc")))
+        qDebug() << "Failed to load the resource file menu.rcc";
+
+    if(!QResource::registerResource(ApplicationInfo::getFilePath("activities.rcc")))
+        qDebug() << "Failed to load the resource file activities.rcc";
+
+    qmlRegisterSingletonType<QObject>("GCompris", 1, 0, "ActivityInfoTree", menuTreeProvider);
 	qmlRegisterType<ActivityInfo>("GCompris", 1, 0, "ActivityInfo");
 }
 

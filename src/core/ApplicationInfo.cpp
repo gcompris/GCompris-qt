@@ -44,11 +44,12 @@
 #include <QtGui/QGuiApplication>
 #include <QtGui/QScreen>
 #include <QtCore/QLocale>
-
+#include <QtQuick/QQuickWindow>
 #include "ApplicationInfo.h"
 #include <QDebug>
 
-#define GC_DEFAULT_LOCALE "en_US.UTF-8"
+QQuickWindow *ApplicationInfo::m_window = NULL;
+ApplicationInfo *ApplicationInfo::m_instance = NULL;
 
 ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 {
@@ -85,6 +86,11 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
         connect(qApp->primaryScreen(), SIGNAL(physicalSizeChanged(QSizeF)), this, SLOT(notifyPortraitMode()));
 }
 
+ApplicationInfo::~ApplicationInfo()
+{
+    m_instance = NULL;
+}
+
 void ApplicationInfo::setApplicationWidth(const int newWidth)
 {
     if (newWidth != m_applicationWidth) {
@@ -93,26 +99,35 @@ void ApplicationInfo::setApplicationWidth(const int newWidth)
     }
 }
 
+QString ApplicationInfo::getFilePath(const QString &file)
+{
+#if defined(Q_OS_ANDROID)
+    return QString("assets:/%1").arg(file);
+#else
+    return QString("%1/%2").arg(QCoreApplication::applicationDirPath(), file);
+#endif
+}
+
 QString ApplicationInfo::getAudioFilePath(const QString &file)
 {
-    /*
-     *  TODO See in storage (database, QSettings)
-     *  if the value exist and use it if exist
-     */
-    QLocale locale = QLocale::system();
-    QString localeShortName = locale.name().split('_').at(0);
-    if(locale.language() == QLocale::C) {
-        localeShortName = "en";
-    }
+    QString localeShortName = localeShort();
 
     QString filename = file;
     filename.replace("$LOCALE", localeShortName);
-    QString("file:///%1/%2").arg(QCoreApplication::applicationDirPath(), filename);
-#if defined(Q_OS_ANDROID)
-    return QString("asset:/%1").arg(file);
-#else
-    return QString("file:///%1/%2").arg(QCoreApplication::applicationDirPath(), filename);
-#endif
+    return getFilePath(filename);
+}
+
+// Given a file name, if it contains $LOCALE it is replaced by
+// the current locale like 'en' while in the English locale.
+// e.g. qrc:/foo/bar_$LOCALE.json => qrc:/foo/bar_en.json
+// FIXME should check long locale first
+QString ApplicationInfo::getLocaleFilePath(const QString &file)
+{
+    QString localeShortName = localeShort();
+
+    QString filename = file;
+    filename.replace("$LOCALE", localeShortName);
+    return filename;
 }
 
 void ApplicationInfo::notifyPortraitMode()
@@ -132,16 +147,36 @@ void ApplicationInfo::setIsPortraitMode(const bool newMode)
     }
 }
 
+void ApplicationInfo::setWindow(QQuickWindow *window)
+{
+    m_window = window;
+}
+
+void ApplicationInfo::notifyFullscreenChanged()
+{
+    if(ApplicationSettings::getInstance()->isFullscreen())
+        m_window->showFullScreen();
+    else
+        m_window->showNormal();
+}
+
 QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,
                                              QJSEngine *scriptEngine)
 {
     Q_UNUSED(engine)
     Q_UNUSED(scriptEngine)
-    return new ApplicationInfo();
+    /*
+     * Connect the fullscreen change signal to applicationInfo in order to change
+     * the QQuickWindow value
+     */
+    ApplicationInfo* appInfo = getInstance();
+    connect(ApplicationSettings::getInstance(), SIGNAL(fullscreenChanged()), appInfo,
+            SLOT(notifyFullscreenChanged()));
+    return appInfo;
 }
 
 void ApplicationInfo::init()
 {
-    qmlRegisterSingletonType<ApplicationInfo>("GCompris", 1, 0, "ApplicationInfo", systeminfoProvider);
-    qmlRegisterType<ApplicationInfo>("GCompris", 1, 0, "ApplicationInfo");
+    qmlRegisterSingletonType<ApplicationInfo>("GCompris", 1, 0,
+                                              "ApplicationInfo", systeminfoProvider);
 }

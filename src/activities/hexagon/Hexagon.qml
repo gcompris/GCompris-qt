@@ -2,8 +2,9 @@ import QtQuick 2.1
 import QtQuick.Controls 1.0
 import QtQuick.Controls.Styles 1.0
 import QtMultimedia 5.0
+import GCompris 1.0
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "hexagon.js" as Activity
 
 ActivityBase {
@@ -11,9 +12,9 @@ ActivityBase {
     focus: true
 
     pageComponent: Image {
+        id: background
         source: "qrc:/gcompris/src/activities/menu/resource/background.svgz"
         fillMode: Image.PreserveAspectCrop
-        id: background
         signal start
         signal stop
         focus: true
@@ -28,13 +29,33 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias audioDrip: audioDrip
+            property alias hexagonModel: hexagonModel
         }
 
         onStart: Activity.start(main, items)
         onStop: Activity.stop()
 
+        ListModel {
+            id: hexagonModel
+        }
+
+        Repeater {
+            id: hexagons
+            model: hexagonModel
+
+            delegate: HexagonItem {
+                audioDrip: items.audioDrip
+                ix: m_ix
+                iy: m_iy
+                nbx: m_nbx
+                nby: m_nby
+                hasStrawberry: m_hasStrawberry
+                color: "rgba(0,153,255,0.85)"
+            }
+        }
+
         // For perf reason it is best not to put this in each HexagonItem
-        Audio {
+        GCAudio {
             id: audioDrip
             source: "qrc:/gcompris/src/activities/clickgame/resource/drip.wav"
         }

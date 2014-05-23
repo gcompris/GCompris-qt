@@ -4,7 +4,7 @@ ActivityInfo {
     name: "leftright/Leftright.qml"
     section: "/discovery/miscelaneous"
     difficulty: 1
-    icon: "leftright/leftright.svg"
+    icon: "leftright/leftright.svgz"
     author: "Pascal Georges (pascal.georges1@free.fr)"
     demo: true
     title: qsTr("Find your left and right hands")
@@ -13,4 +13,5 @@ ActivityInfo {
     prerequisite: ""
     manual: qsTr("You can see a hand: is it a left hand or a right hand? Click on the left button, or the right button depending on the displayed hand.")
     credit: ""
+  section: "/discovery/miscelaneous"
 }

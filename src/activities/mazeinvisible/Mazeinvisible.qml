@@ -20,7 +20,7 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 import QtQuick 2.1
-import "qrc:/gcompris/src/activities/maze"
+import "../maze"
 
 Maze {
     invisibleMode: true

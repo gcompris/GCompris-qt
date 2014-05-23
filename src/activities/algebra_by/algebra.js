@@ -18,6 +18,7 @@
 
 .pragma library
 .import QtQuick 2.0 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel
 var coreItems
@@ -45,7 +46,7 @@ function initLevel() {
     coreItems.bar.level = currentLevel + 1
     coreItems.score.visible = false
     coreItems.score.currentSubLevel = 1
-    operations = shuffle(operations)
+    operations = Core.shuffle(operations)
     calculateOperands()
 
     otheritems.iAmReady.visible = true
@@ -148,6 +149,7 @@ function questionsLeft() {
         }
     }
 }
+
 function shuffle(o) {
     for(var j, x, i = o.length; i;
         j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);

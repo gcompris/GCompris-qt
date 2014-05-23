@@ -21,7 +21,7 @@
  */
 import QtQuick 2.1
 import GCompris 1.0
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "leftright.js" as Activity
 
 ActivityBase {
