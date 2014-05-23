@@ -6,12 +6,12 @@ var currentLevel = 0
 var main
 var items
 
-// The array of created hexagon object
-var createdHexagon
-var killedHexagon
-var strawBerry
+// The size of the array
 var nbx
 var nby
+// The strawberry position
+var strawBerryX
+var strawBerryY
 
 function start(main_, items_) {
     main = main_
@@ -21,28 +21,28 @@ function start(main_, items_) {
 }
 
 function stop() {
-    destroyHexagon()
 }
 
 function initLevel() {
-    destroyHexagon();
+    items.hexagonModel.clear()
     items.bar.level = currentLevel + 1
-    createdHexagon = new Array()
     nbx = 10 + currentLevel
     nby = Math.floor(nbx * (main.height / main.width))
-    var i = 0
 
+    // Select a random place for the strawberry
+    strawBerryX = Math.floor(Math.random() * (nbx -1))
+    strawBerryY = Math.floor(Math.random() * nby)
+
+    var model = []
     for(var ix = 0;  ix < nbx; ++ix) {
         for(var iy = 0;  iy < nby; ++iy) {
             if( (iy % 2 && ix < nbx - 1) || iy % 2 == 0)
-                createdHexagon[i++] = createHexagon(ix, iy, nbx, nby)
+                items.hexagonModel.append( {
+                   "m_ix": ix, "m_iy": iy, "m_nbx": nbx, "m_nby": nby,
+                   "m_hasStrawberry":  (strawBerryX === ix && strawBerryY === iy) ? true : false
+                } )
         }
     }
-
-    // Select a random place for the strawberry
-    strawBerry = Math.floor(Math.random() * i)
-    createdHexagon[strawBerry].hasStrawberry = true
-
 }
 
 function nextLevel() {
@@ -59,45 +59,12 @@ function previousLevel() {
     initLevel();
 }
 
-function createHexagon(ix, iy, nbx, nby) {
-    var component = Qt.createComponent("qrc:/gcompris/src/activities/hexagon/HexagonItem.qml");
-    var hexagon = component.createObject(
-                items.background,
-                {
-                    "main": main,
-                    "audioDrip": items.audioDrip,
-                    "ix": ix,
-                    "iy": iy,
-                    "nbx": nbx,
-                    "nby": nby,
-                    "color": "rgba(0,153,255,0.85)"
-                });
-
-    if (hexagon === null) {
-        // Error Handling
-        console.log("Error creating object");
-    }
-    return hexagon;
-}
-
-function destroyHexagon() {
-    if (createdHexagon) {
-        for(var i = 0;  i < createdHexagon.length; ++i) {
-            createdHexagon[i].destroy()
-        }
-        createdHexagon.length = 0
-    }
-    killedHexagon = 0
-}
-
 function strawberryFound() {
     items.bonus.good("flower")
 }
 
 function getDistance(ix, iy) {
-    var jx = createdHexagon[strawBerry].ix
-    var jy = createdHexagon[strawBerry].iy
-    return Math.sqrt(Math.pow((ix - jx), 2) + Math.pow((iy - jy), 2))
+    return Math.sqrt(Math.pow((ix - strawBerryX), 2) + Math.pow((iy - strawBerryY), 2))
 }
 
 function getColor(dist) {

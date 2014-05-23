@@ -1,22 +1,22 @@
 import QtQuick 2.1
-import QtMultimedia 5.0
 import "hexagon.js" as Activity
 import "../../core"
 import GCompris 1.0
 
 Item {
     id: hexagon
-    property Item main
     property GCAudio audioDrip
+    property ParticleSystemStar particles
     property string color
     property bool hasStrawberry: false
     property double ix
     property double iy
     property int nbx
     property int nby
-    property double r: Math.min(main.width / nbx / 2, (main.height - 10) / nby / 2)
-    property double offsetX: (main.width % (width * nbx)) / 2
-    property double offsetY: (main.height % (height * nby)) / 2
+    // Warning testing parent here, just to avoid an error at deletion time
+    property double r: parent ? Math.min(parent.width / nbx / 2, (parent.height - 10) / nby / 2) : 0
+    property double offsetX: parent ? (parent.width % (width * nbx)) / 2 : 0
+    property double offsetY: parent ? (parent.height % (height * nby)) / 2 : 0
     x: (iy % 2 ? width * ix + width / 2 : width * ix) + offsetX
     y: height * iy - (Math.sin((Math.PI * 2) / 12) * r * 2 * iy) / 2 + offsetY
     width: Math.cos((Math.PI * 2) / 12) * r * 2
@@ -67,6 +67,22 @@ Item {
         canvas.requestPaint()
     }
 
+    // Create a particle only for the strawberry
+    Loader {
+        id: particleLoader
+        anchors.fill: parent
+        active: hasStrawberry
+        sourceComponent: particle
+    }
+
+    Component {
+        id: particle
+        ParticleSystemStar
+        {
+            id: particles
+            clip: false
+        }
+    }
 
     MouseArea {
         x: 0
@@ -81,7 +97,7 @@ Item {
                 strawberry.source = "qrc:/gcompris/src/activities/hexagon/resource/strawberry.svg"
                 audioDrip.play()
                 Activity.strawberryFound()
-                particles.emitter.burst(40)
+                particleLoader.item.emitter.burst(40)
             } else {
                 hexagon.color =
                         Activity.getColor(Activity.getDistance(hexagon.ix, hexagon.iy))
@@ -90,11 +106,4 @@ Item {
             }
         }
     }
-
-    ParticleSystemStar
-    {
-        id: particles
-        clip: false
-    }
-
 }
