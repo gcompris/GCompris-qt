@@ -72,7 +72,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
         m_config.setValue(ENABLE_EFFECTS_KEY, true);
         m_config.setValue(FULLSCREEN_KEY, true);
         m_config.setValue(ENABLE_AUDIO_KEY, true);
-        m_config.setValue(VIRTUALKEYBOARD_KEY, !ApplicationInfo::getInstance()->isMobile());
+        m_config.setValue(VIRTUALKEYBOARD_KEY, ApplicationInfo::getInstance()->isMobile());
         // Get locale, if "C", put default locale
         QLocale systemLocale = QLocale::system();
         if(systemLocale == QLocale::c()) {
