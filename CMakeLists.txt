@@ -29,6 +29,7 @@ set(GCOMPRIS_VERSION_CODE ${GCOMPRIS_MINOR_VERSION})
 
 # cmake modules setup
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/")
+set(CMAKE_PREFIX_PATH "${Qt5_DIR}/lib/cmake/Qt5")
 
 # prevent build in source directory
 if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
@@ -39,7 +40,7 @@ endif("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
 
 set(QT_REQUIRED_VERSION 5.2.0)
 
-find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED
+find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
             Qml Quick Gui Multimedia Core Svg XmlPatterns LinguistTools)
 
 #get_cmake_property(_variableNames VARIABLES)
