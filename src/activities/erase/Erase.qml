@@ -63,7 +63,6 @@ ActivityBase {
         MultiPointTouchArea {
             anchors.fill: parent
             onTouchUpdated: {
-
                 for(var i in touchPoints) {
                     var touch = touchPoints[i]
 
@@ -72,7 +71,7 @@ ActivityBase {
                         newBlock.enter()
 
                     var previousBlock = rootItem.childAt(touch.previousX, touch.previousY)
-                    if(previousBlock !== newBlock)
+                    if(previousBlock !== newBlock && previousBlock != repeater)
                         previousBlock.leave()
                 }
             }
@@ -86,6 +85,7 @@ ActivityBase {
             id: blocks
         }
         Repeater{
+            id: repeater
             model: blocks
             parent: rootItem
             Block{
