@@ -1,4 +1,26 @@
-import QtQuick 2.1
+/* GCompris - Hexagon.qml
+ *
+ * Copyright (C) 2014 Bruno Coudoin
+ *
+ * Authors:
+ *   Christof Petig and Ingo Konrad (GTK+ version)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
+
+import QtQuick 2.2
 import QtQuick.Controls 1.0
 import QtQuick.Controls.Styles 1.0
 import QtMultimedia 5.0
@@ -35,22 +57,42 @@ ActivityBase {
         onStart: Activity.start(main, items)
         onStop: Activity.stop()
 
+        function checkTouchPoint(touchPoints) {
+            for(var i in touchPoints) {
+                var touch = touchPoints[i]
+                var block = rootItem.childAt(touch.x, touch.y)
+                if(block)
+                    block.touched()
+            }
+        }
+
+        MultiPointTouchArea {
+            anchors.fill: parent
+            onPressed: checkTouchPoint(touchPoints)
+            onTouchUpdated: checkTouchPoint(touchPoints)
+        }
+
+        Item {
+            id: rootItem
+            anchors.fill: parent
+        }
+
         ListModel {
             id: hexagonModel
         }
 
         Repeater {
-            id: hexagons
             model: hexagonModel
+            parent: rootItem
 
-            delegate: HexagonItem {
+            HexagonItem {
                 audioDrip: items.audioDrip
                 ix: m_ix
                 iy: m_iy
                 nbx: m_nbx
                 nby: m_nby
                 hasStrawberry: m_hasStrawberry
-                color: "rgba(0,153,255,0.85)"
+                color: "#0099FF"
             }
         }
 
