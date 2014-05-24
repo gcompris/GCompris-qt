@@ -22,15 +22,12 @@
 var url = "qrc:/gcompris/src/activities/clockgame/resource/"
 var currentLevel = 0
 var numberOfLevel = 10
-var currentTry = 0
-var numberOfTry = 3
 var items
 var selectedArrow
 
 function start(items_) {
     items = items_
     currentLevel = 0
-    currentTry = 0
     initLevel()
 }
 
@@ -68,8 +65,8 @@ function initLevel() {
 }
 
 function nextTry() {
-    if (numberOfTry <= ++currentTry) {
-        currentTry = 0
+    if (items.numberOfTry <= ++items.currentTry) {
+        items.currentTry = 0
         nextLevel()
     } else {
         initLevel()
@@ -80,7 +77,7 @@ function nextLevel() {
     if (numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
-    currentTry = 0
+    items.currentTry = 0
     initLevel()
 }
 
@@ -88,7 +85,7 @@ function previousLevel() {
     if (--currentLevel < 0) {
         currentLevel = numberOfLevel - 1
     }
-    currentTry = 0
+    items.currentTry = 0
     initLevel()
 }
 

@@ -20,6 +20,7 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 import QtQuick 2.1
+import GCompris 1.0
 
 import "../../core"
 import "clockgame.js" as Activity
@@ -56,6 +57,8 @@ ActivityBase {
             property int currentH: 1
             property int currentM: 25
             property int currentS: 43
+            property int numberOfTry: 3
+            property int currentTry: 0
         }
 
         onStart: {
@@ -65,14 +68,26 @@ ActivityBase {
             Activity.stop()
         }
 
+        Score {
+            anchors {
+                top: parent.top
+                topMargin: 10 * ApplicationInfo.ratio
+                right: parent.right
+                rightMargin: 10 * ApplicationInfo.ratio
+                bottom: undefined
+                left: undefined
+            }
+            numberOfSubLevels: items.numberOfTry
+            currentSubLevel: items.currentTry + 1
+        }
+
         /* Target text */
         Text {
-            text: (Activity.currentTry + 1) + " / " + Activity.numberOfTry + "\n" + qsTr(
-                      "Set the watch to:") + " " +
+            text: qsTr("Set the watch to:") + " " +
                   Activity.get2CharValue(
                       items.targetH) + ":" + Activity.get2CharValue(
                       items.targetM) + ":" + Activity.get2CharValue(
-                      items.targetS) + "\n"
+                      items.targetS)
             font.pointSize: 18
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap
