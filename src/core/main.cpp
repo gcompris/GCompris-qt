@@ -93,6 +93,8 @@ int main(int argc, char *argv[])
 	}
     ApplicationInfo::setWindow(window);
 
+    window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));
+
     if(isFullscreen) {
         window->showFullScreen();
     }
