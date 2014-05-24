@@ -32,6 +32,11 @@ function(GCOMPRIS_ADD_RCC resource_path)
   add_custom_command(OUTPUT ${CREATED_RCC}
                      COMMAND ${Qt5Core_RCC_EXECUTABLE} "-binary" -o ${CREATED_RCC} ${CREATED_QRC}
                      DEPENDS ${QRC_CONTENTS} "${out_depends}" VERBATIM)
+  if(CMAKE_HOST_APPLE)
+    install(FILES ${CREATED_RCC} DESTINATION GCompris.app/Contents/MacOS)
+  else()
+    install(FILES ${CREATED_RCC} DESTINATION bin)
+  endif()
 
   add_custom_target(
     rcc_${activity} ALL
