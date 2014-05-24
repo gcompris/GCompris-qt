@@ -111,6 +111,8 @@ ActivityBase {
             fillMode: Image.PreserveAspectFit
             sourceSize.height: parent.height
 
+            property int radius: Math.min(main.width * 1.4, main.height)
+
             /* The yellow zones */
             Image {
                 id: zones
@@ -142,7 +144,7 @@ ActivityBase {
                     font {
                         pixelSize: Math.max(
                                        (index + 1) % 5
-                                       === 0 ? clock.height / 40 : clock.height / 45,
+                                       === 0 ? clock.radius / 40 : clock.radius / 45,
                                                1)
                         bold: items.currentM === ((index + 1) % 60) || (items.currentS === ((index + 1) % 60) && s.visible)
                         underline: items.currentM === ((index + 1) % 60) || (items.currentS === ((index + 1) % 60) && s.visible)
@@ -150,9 +152,9 @@ ActivityBase {
                     anchors {
                         verticalCenter: clock.verticalCenter
                         horizontalCenter: clock.horizontalCenter
-                        verticalCenterOffset: -clock.height * 0.33 * Math.cos(
+                        verticalCenterOffset: -clock.radius * 0.33 * Math.cos(
                                                   (index + 1) * 2 * Math.PI / 60)
-                        horizontalCenterOffset: clock.height * 0.33 * Math.sin(
+                        horizontalCenterOffset: clock.radius * 0.33 * Math.sin(
                                                     (index + 1) * 2 * Math.PI / 60)
                     }
                     z: 4
@@ -166,16 +168,16 @@ ActivityBase {
 
                 Rectangle {
                     color: "red"
-                    width: clock.height * 0.02
+                    width: clock.radius * 0.02
                     height: 2
                     rotation: 90 + (index + 1) * 360 / 60
                     radius: 1
                     anchors {
                         verticalCenter: clock.verticalCenter
                         horizontalCenter: clock.horizontalCenter
-                        verticalCenterOffset: -clock.height * 0.3 * Math.cos(
+                        verticalCenterOffset: -clock.radius * 0.3 * Math.cos(
                                                   (index + 1) * 2 * Math.PI / 60)
-                        horizontalCenterOffset: clock.height * 0.3 * Math.sin(
+                        horizontalCenterOffset: clock.radius * 0.3 * Math.sin(
                                                     (index + 1) * 2 * Math.PI / 60)
                     }
                     z: 4
@@ -189,16 +191,16 @@ ActivityBase {
                 Text {
                     text: index + 1
                     font {
-                        pixelSize: Math.max(clock.height / 30, 1)
+                        pixelSize: Math.max(clock.radius / 30, 1)
                         bold: items.currentH === ((index + 1) % 12)
                         underline: items.currentH === ((index + 1) % 12)
                     }
                     anchors {
                         verticalCenter: clock.verticalCenter
                         horizontalCenter: clock.horizontalCenter
-                        verticalCenterOffset: -clock.height * 0.26 * Math.cos(
+                        verticalCenterOffset: -clock.radius * 0.26 * Math.cos(
                                                   (index + 1) * 2 * Math.PI / 12)
-                        horizontalCenterOffset: clock.height * 0.26 * Math.sin(
+                        horizontalCenterOffset: clock.radius * 0.26 * Math.sin(
                                                     (index + 1) * 2 * Math.PI / 12)
                     }
                     z: 4
@@ -212,16 +214,16 @@ ActivityBase {
 
                 Rectangle {
                     color: "blue"
-                    width: clock.height * 0.03
+                    width: clock.radius * 0.03
                     height: 4
                     rotation: 90 + (index + 1) * 360 / 12
                     radius: 1
                     anchors {
                         verticalCenter: clock.verticalCenter
                         horizontalCenter: clock.horizontalCenter
-                        verticalCenterOffset: -clock.height * 0.3 * Math.cos(
+                        verticalCenterOffset: -clock.radius * 0.3 * Math.cos(
                                                   (index + 1) * 2 * Math.PI / 12)
-                        horizontalCenterOffset: clock.height * 0.3 * Math.sin(
+                        horizontalCenterOffset: clock.radius * 0.3 * Math.sin(
                                                     (index + 1) * 2 * Math.PI / 12)
                     }
                     z: 4
@@ -237,11 +239,11 @@ ActivityBase {
                           items.currentH) + ":" + Activity.get2CharValue(
                           items.currentM) + ":" + Activity.get2CharValue(
                           items.currentS)
-                font.pixelSize: Math.max(clock.height / 30, 1)
+                font.pixelSize: Math.max(clock.radius / 30, 1)
                 anchors {
                     verticalCenter: clock.verticalCenter
                     horizontalCenter: clock.horizontalCenter
-                    verticalCenterOffset: clock.height * 0.2
+                    verticalCenterOffset: clock.radius * 0.2
                 }
                 z: 4
                 color: "black"
@@ -252,7 +254,7 @@ ActivityBase {
             Rectangle {
                 id: h
                 property alias angle: roth.angle
-                height: clock.height * 0.2
+                height: clock.radius * 0.2
                 width: height / 10
                 radius: width / 2
                 color: "blue"
@@ -281,7 +283,7 @@ ActivityBase {
             Rectangle {
                 id: m
                 property alias angle: rotm.angle
-                height: clock.height * 0.28
+                height: clock.radius * 0.28
                 width: height / 20
                 radius: width / 2
                 color: "red"
@@ -310,7 +312,7 @@ ActivityBase {
             Rectangle {
                 id: s
                 property alias angle: rots.angle
-                height: clock.height * 0.32
+                height: clock.radius * 0.32
                 width: height / 30
                 radius: width / 2
                 color: "green"
@@ -340,7 +342,7 @@ ActivityBase {
             Rectangle {
                 id: center
                 color: "black"
-                height: clock.height / 25
+                height: clock.radius / 25
                 width: height
                 radius: width / 2
                 anchors.centerIn: clock
