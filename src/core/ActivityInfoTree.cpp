@@ -106,6 +106,7 @@ void ActivityInfoTree::filterByTag(const QString &tag)
                 tag == "all")
             m_menuTree.push_back(activity);
     }
+    sortByDifficulty();
     emit menuTreeChanged();
 }
 
@@ -146,7 +147,6 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	file.close();
 
     menuTree->filterByTag("all");
-    menuTree->sortByDifficulty();
     return menuTree;
 }
 
