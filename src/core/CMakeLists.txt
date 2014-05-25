@@ -106,6 +106,11 @@ foreach(_plugin ${_qml_plugins})
   list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
 endforeach()
 
+# Hack: do not fixup Qt and Qml plugins on Windows because fixup_bundle takes ages (cmake bug ?)
+if(CMAKE_HOST_WIN32)
+  set(GCOMPRIS_OTHER_LIBS "")
+endif()
+
 # install fixup_bundle script to resolve and fixup runtime dependencies
 configure_file(${CMAKE_MODULE_PATH}/FixBundle.cmake.in FixBundle.cmake)
 install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
