@@ -45,6 +45,11 @@
 #include <QtQml/QQmlPropertyMap>
 #include <QQmlEngine>
 
+#include "ApplicationSettings.h"
+#include "config.h"
+
+class QQuickWindow;
+
 class ApplicationInfo : public QObject
 {
 	Q_OBJECT
@@ -60,6 +65,8 @@ class ApplicationInfo : public QObject
 	Q_PROPERTY(qreal sliderHandleWidth READ sliderHandleWidth NOTIFY ratioChanged)
 	Q_PROPERTY(qreal sliderHandleHeight READ sliderHandleHeight NOTIFY ratioChanged)
 	Q_PROPERTY(qreal sliderGapWidth READ sliderGapWidth NOTIFY ratioChanged)
+    Q_PROPERTY(QString localeShort READ localeShort)
+    Q_PROPERTY(QString GCVersion READ GCVersion CONSTANT)
 
 public:
 
@@ -73,9 +80,22 @@ public:
     };
 
     ApplicationInfo(QObject *parent = 0);
-	static void init();
-	static QObject *systeminfoProvider(QQmlEngine *engine,
+    ~ApplicationInfo();
+    static void init();
+    // It is not recommended to create a singleton of Qml Singleton registered
+    // object but we could not found a better way to let us access ApplicationInfo
+    // on the C++ side. All our test shows that it works.
+    static ApplicationInfo *getInstance() {
+        if(!m_instance) {
+            m_instance = new ApplicationInfo();
+        }
+        return m_instance;
+    }
+    static QObject *systeminfoProvider(QQmlEngine *engine,
 									   QJSEngine *scriptEngine);
+
+    static void setWindow(QQuickWindow *window);
+    static QString getFilePath(const QString &file);
 
 	int applicationWidth() const { return m_applicationWidth; }
 	void setApplicationWidth(const int newWidth);
@@ -93,10 +113,22 @@ public:
 	qreal sliderGapWidth()  { return m_sliderGapWidth; }
 	qreal sliderHandleWidth()  { return m_sliderHandleWidth; }
 
+    // Can't use left(2) because of Asturian where there are 3 chars
+    static QString localeShort(const QString &locale) {
+        return locale.left(locale.indexOf('_'));
+    }
+    QString localeShort() const {
+        return localeShort( ApplicationSettings::getInstance()->locale() );
+    }
+    static QString GCVersion() { return VERSION; }
+
 protected slots:
 	void notifyPortraitMode();
 
     Q_INVOKABLE QString getAudioFilePath(const QString &file);
+    Q_INVOKABLE QString getLocaleFilePath(const QString &file);
+    Q_INVOKABLE void notifyFullscreenChanged();
+
 
 protected:
 	qreal getSizeWithRatio(const qreal height) { return ratio() * height; }
@@ -106,9 +138,13 @@ signals:
 	void portraitModeChanged();
 	void hMarginChanged();
 	void ratioChanged();
+    void applicationSettingsChanged();
+    void fullscreenChanged();
+
 
 private:
-	int m_applicationWidth;
+    static ApplicationInfo *m_instance;
+    int m_applicationWidth;
     Platform m_platform;
 	QQmlPropertyMap *m_constants;
 	bool m_isPortraitMode;
@@ -116,6 +152,8 @@ private:
 	qreal m_ratio;
 	qreal m_hMargin;
 	qreal m_sliderHandleHeight, m_sliderHandleWidth, m_sliderGapWidth;
+
+    static QQuickWindow *m_window;
 };
 
 #endif // APPLICATIONINFO_H

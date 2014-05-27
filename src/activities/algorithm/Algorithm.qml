@@ -22,7 +22,7 @@
 import QtQuick 2.2
 import QtMultimedia 5.0
 import GCompris 1.0
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "algorithm.js" as Activity
 
 ActivityBase {
@@ -207,9 +207,8 @@ ActivityBase {
                 }
             }
         }
-        Audio {
+        GCAudio {
             id: audio
-            onError: console.log("play error: " + errorString)
         }
 
         DialogHelp {

@@ -21,7 +21,7 @@
  */
 import QtQuick 2.1
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "money.js" as Activity
 
 ActivityBase {
@@ -179,7 +179,11 @@ ActivityBase {
                             source: Activity.url + modelData.img
                             sourceSize.height:  column.itemStoreHeight
                             Text {
-                                text: modelData.price + " €"
+                                // Set here the way to display money.
+                                // Change only the money sign, and it's place,
+                                // always keep %1, it will be replaced by the value
+                                // FIXME: How to get the double value be localized
+                                text: qsTr("$ %1").arg(modelData.price);
                                 font.pointSize: 20
                                 font.weight: Font.DemiBold
                                 style: Text.Outline

@@ -22,7 +22,7 @@
 import QtQuick 2.1
 import GCompris 1.0
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "colormix.js" as Activity
 
 ActivityBase {
@@ -187,35 +187,35 @@ ActivityBase {
                 if (activity.modeRGB) {
                     /* check RGB */
                     if (items.currentColor1 < items.targetColor1)
-                        message += qsTr("Not enough red.\n")
+                        message += qsTr("Not enough red") + "\n"
                     else if (items.currentColor1 > items.targetColor1)
-                        message += qsTr("Too much red.\n")
+                        message += qsTr("Too much red") + "\n"
 
                     if (items.currentColor2 < items.targetColor2)
-                        message += qsTr("Not enough green.\n")
+                        message += qsTr("Not enough green") + "\n"
                     else if (items.currentColor2 > items.targetColor2)
-                        message += qsTr("Too much green.\n")
+                        message += qsTr("Too much green") + "\n"
 
                     if (items.currentColor3 < items.targetColor3)
-                        message += qsTr("Not enough blue.\n")
+                        message += qsTr("Not enough blue") + "\n"
                     else if (items.currentColor3 > items.targetColor3)
-                        message += qsTr("Too much blue.\n")
+                        message += qsTr("Too much blue") + "\n"
                 } else {
                     /* check MCY */
                     if (items.currentColor1 < items.targetColor1)
-                        message += qsTr("Not enough magenta.\n")
+                        message += qsTr("Not enough magenta") + "\n"
                     else if (items.currentColor1 > items.targetColor1)
-                        message += qsTr("Too much magenta.\n")
+                        message += qsTr("Too much magenta") + "\n"
 
                     if (items.currentColor2 < items.targetColor2)
-                        message += qsTr("Not enough yellow.\n")
+                        message += qsTr("Not enough yellow") + "\n"
                     else if (items.currentColor2 > items.targetColor2)
-                        message += qsTr("Too much yellow.\n")
+                        message += qsTr("Too much yellow") + "\n"
 
                     if (items.currentColor3 < items.targetColor3)
-                        message += qsTr("Not enough cyan.\n")
+                        message += qsTr("Not enough cyan") + "\n"
                     else if (items.currentColor3 > items.targetColor3)
-                        message += qsTr("Too much cyan.\n")
+                        message += qsTr("Too much cyan") + "\n"
                 }
                 helpMessage.text = message
 

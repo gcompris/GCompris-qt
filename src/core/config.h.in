@@ -1,0 +1,3 @@
+/* Version number of package */
+#define VERSION "@GCOMPRIS_VERSION@"
+

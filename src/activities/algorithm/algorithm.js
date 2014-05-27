@@ -21,6 +21,7 @@
  */
 .pragma library
 .import QtQuick 2.0 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 /*
 
@@ -126,7 +127,7 @@ function getSetLength(list){
 // either the Sample algorithm or the Answer tray
 function getImages(number, level) {
     var setLength = getSetLength(sample[level][number])
-    var results = shuffle(images).slice(0, setLength)
+    var results = Core.shuffle(images).slice(0, setLength)
     // Repeat the set
     while(results.length < 8) {
         results = results.concat(results)
@@ -212,8 +213,3 @@ function previousLevel() {
     initLevel();
 }
 
-function shuffle(o) {
-    for(var j, x, i = o.length; i;
-        j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-    return o;
-}

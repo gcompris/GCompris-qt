@@ -24,6 +24,7 @@
 .pragma library
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/click_on_letter/resource/"
 var defaultLevelsFile = ":/gcompris/src/activities/click_on_letter/resource/levels-en.json";
@@ -79,12 +80,9 @@ function parseLevels(json)
 function loadLevels()
 {
     var ret;    
-    // FIXME: this should be something like
-    // ApplicationInfo.getDataPath() + "click_on_letter" +
-    // "levels-" + ApplicationInfo.getCurrentLocale() + ".json" once it is there.
     var json = items.levelsFile.read(
-                GCompris.ApplicationInfo.getAudioFilePath(
-                    "click_on_letter/levels-$LOCALE.json"));
+                GCompris.ApplicationInfo.getLocaleFilePath(url +
+                                                           "levels-$LOCALE.json"))
     if (json == "" || !parseLevels(json)) {
         console.warn("Click_on_letter: Invalid levels file " +
                 items.levelsFile.name);
@@ -153,7 +151,7 @@ function initLevel() {
         items.nextLevelAudio.stop();
         items.nextLevelAudio.play();
         items.letterAudio.source = GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
-                + getSoundFilenamForChar(currentLetter));
+                + Core.getSoundFilenamForChar(currentLetter));
         items.letterAudio.playDelayed(1500);
     }
     // FIXME once we have voices on mobile
@@ -201,25 +199,6 @@ function checkAnswer(index)
 
 
 //the following are probably candidates for refactoring out to core/
-
-// from soundutil.c
-/** return a string representing of a letter or a number audio file
- *  get alphabet sound file name
- *
- * the returned sound has the suffix .ogg
- *
- * \return a newly allocated string of the form U0033.ogg
- */
-function getSoundFilenamForChar(c)
-{
-    var result = "U";
-    var codeHex = c.toLowerCase().charCodeAt(0).toString(16).toUpperCase();
-    while (codeHex.length < 4) {
-        codeHex = "0" + codeHex;
-    }
-    result += codeHex + ".ogg";
-    return result;
-}
 
 /** Return settings value for passed key
  * 

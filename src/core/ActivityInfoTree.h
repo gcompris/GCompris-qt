@@ -11,7 +11,7 @@ class ActivityInfoTree : public QObject
 	Q_OBJECT
 	Q_PROPERTY(ActivityInfo* rootMenu READ getRootMenu CONSTANT)
 	Q_PROPERTY(QQmlListProperty<ActivityInfo> menuTree READ menuTree NOTIFY menuTreeChanged)
-	Q_PROPERTY(ActivityInfo* currentActivity READ getCurrentActivity WRITE setCurrentActivity NOTIFY currentActivityChanged)
+    Q_PROPERTY(ActivityInfo* currentActivity READ getCurrentActivity WRITE setCurrentActivity NOTIFY currentActivityChanged)
 public:
 	ActivityInfoTree(QObject *parent = 0);
 	QQmlListProperty<ActivityInfo> menuTree();
@@ -27,13 +27,20 @@ public:
 						const QDir &menuDir, const QString &menuFile);
 	void sortByDifficulty();
 	void sortByName();
+
+protected slots:
+    Q_INVOKABLE void filterByTag(const QString &tag);
+
 signals:
 	void menuTreeChanged();
 	void currentActivityChanged();
 
 private:
-	QList<ActivityInfo *> m_menuTree;
-	ActivityInfo *m_rootMenu;
+    // this is the full activity list, it never changes
+    QList<ActivityInfo *> m_menuTreeFull;
+    // represents the Menu view and can be filtered
+    QList<ActivityInfo *> m_menuTree;
+    ActivityInfo *m_rootMenu;
 	ActivityInfo *m_currentActivity;
 
 	struct SortByDifficulty

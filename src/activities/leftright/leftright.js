@@ -20,6 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 .import QtQuick 2.0 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentHands = []
 var levels = [
@@ -95,7 +96,7 @@ function initLevel() {
                 'rotation': level.rotations[r] }
         }
     }
-    currentHands = shuffle(currentHands)
+    currentHands = Core.shuffle(currentHands)
     displayHand()
 }
 
@@ -163,9 +164,3 @@ function leftClickPressed() {
 function rightClickPressed() {
     items.rightButton.pressed()
 }
-
-function shuffle(o) {
-    for(var j, x, i = o.length; i;
-        j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-    return o;
-};

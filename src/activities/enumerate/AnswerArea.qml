@@ -20,18 +20,25 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 import QtQuick 2.1
+import GCompris 1.0
 import "enumerate.js" as Activity
 
 Rectangle {
     id: answerBackground
-    width: 140
-    height: 70
+    width: 140 * ApplicationInfo.ratio
+    height: 70 * ApplicationInfo.ratio
     color: activeFocus ? "#ff07fff2" : "#cccccccc"
     radius: 10
     border {
         width: activeFocus ?  3 : 1
         color: "black"
     }
+
+    property string imgPath
+    // The backspace code comming from the vitual keyboard
+    property string backspaceCode
+
+    Component.onCompleted: Activity.registerAnswerItem(answerBackground)
 
     // A top gradient
     Rectangle {
@@ -45,41 +52,52 @@ Rectangle {
         }
     }
 
-
-    property string imgPath
-
     MouseArea {
         id: mouseArea
         anchors.fill: parent
-        onClicked: {
-            answerBackground.forceActiveFocus()
-        }
+        onClicked: Activity.registerAnswerItem(answerBackground)
+
     }
 
     Image {
         id: img
-        x: 10
-        anchors.verticalCenter: parent.verticalCenter
-        height: 52
-        width: 52
+        anchors {
+            left: parent.left
+            leftMargin: 10
+            verticalCenter: parent.verticalCenter
+        }
+        height: parent.height * 0.75
+        width: height
         source: imgPath
         fillMode: Image.PreserveAspectFit
     }
 
     Keys.onPressed: {
         if(event.key === Qt.Key_Backspace) {
-            userEntry.text = userEntry.text.slice(0, -1)
-            if(userEntry.text.length === 0) {
-                userEntry.text = "?"
-                Activity.setUserAnswer(imgPath, -1)
-                return
-            } else {
-                Activity.setUserAnswer(imgPath, parseInt(userEntry.text))
-                return
-            }
+            backspace()
+        }
+        appendText(event.text)
+    }
+
+    function backspace() {
+        userEntry.text = userEntry.text.slice(0, -1)
+        if(userEntry.text.length === 0) {
+            userEntry.text = "?"
+            Activity.setUserAnswer(imgPath, -1)
+            return
+        } else {
+            Activity.setUserAnswer(imgPath, parseInt(userEntry.text))
+            return
+        }
+    }
+
+    function appendText(text) {
+        if(text === answerBackground.backspaceCode) {
+            backspace()
+            return
         }
 
-        var number = parseInt(event.text)
+        var number = parseInt(text)
         if(isNaN(number))
             return
 
@@ -91,19 +109,21 @@ Rectangle {
             return
         }
 
-        userEntry.text += event.text
+        userEntry.text += text
         Activity.setUserAnswer(imgPath, parseInt(userEntry.text))
     }
 
     Text {
         id: userEntry
-        x: img.x + img.width + 15
-        anchors.verticalCenter: img.verticalCenter
+        anchors {
+            left: img.right
+            verticalCenter: img.verticalCenter
+            leftMargin: 10
+        }
         text: "?"
-        color: "white"
-        font.bold: true
-        font.pixelSize: 24
+        color: "black"
+        font.pointSize: 28
         style: Text.Outline
-        styleColor: "black"
+        styleColor: "white"
     }
 }

@@ -22,7 +22,7 @@
 import QtQuick 2.1
 import QtMultimedia 5.0
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "findit.js" as Activity
 
 ActivityBase {
@@ -80,7 +80,7 @@ ActivityBase {
             }
         }
 
-        Audio {
+        GCAudio {
             id: audioQuestion
         }
 
@@ -92,8 +92,8 @@ ActivityBase {
             font.pointSize: 24
             font.weight: Font.DemiBold
             style: Text.Outline
-            styleColor: "black"
-            color: "white"
+            styleColor: "white"
+            color: "black"
 
             function initQuestion() {
                 text = Activity.getCurrentTextQuestion()

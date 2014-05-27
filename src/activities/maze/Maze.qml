@@ -23,7 +23,7 @@ import QtQuick 2.1
 import GCompris 1.0
 import QtMultimedia 5.0
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "maze.js" as Activity
 
 ActivityBase {
@@ -348,7 +348,7 @@ ActivityBase {
             text: qsTr("Look at your position, then switch back to invisible mode to continue your moves")
         }
 
-        Audio {
+        GCAudio {
             id: playBrick
             source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
         }

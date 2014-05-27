@@ -65,7 +65,7 @@ Image {
            horizontalAlignment: Text.AlignHCenter
            verticalAlignment: Text.AlignVCenter
            color: "black"
-
+           visible: !isBack
        }
 
     states : [
@@ -76,7 +76,6 @@ Image {
         State {
             name:"returned"; when: isBack == true
             PropertyChanges { target: item; source:item.backPict }
-            PropertyChanges { target: text1; visible:!isBack }
         },
         State {
             name:"faced"; when: isBack==false

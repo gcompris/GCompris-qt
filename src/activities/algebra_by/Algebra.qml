@@ -19,7 +19,7 @@
 import QtQuick 2.1
 import GCompris 1.0
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "algebra.js" as Activity
 
 ActivityBase {
@@ -166,10 +166,10 @@ ActivityBase {
         }
     }
     Keys.onPressed: {
-        Activity.keyEvent(event.key, true)
+        numpad.updateAnswer(event.key,true);
     }
 
     Keys.onReleased: {
-        Activity.keyEvent(event.key, false)
+        numpad.updateAnswer(event.key, false);
     }
 }

@@ -20,29 +20,21 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 import QtQuick 2.0
+import GCompris 1.0
 import "enumerate.js" as Activity
 
-Item {
-    height: 100
-    width: 100
+Image {
+    height: Math.min(main.height / 10, main.width / 10) * (2 / Math.log(Activity.currentLevel + 3))
+    fillMode : Image.PreserveAspectFit
     z: 0
-    x: Activity.getRandomInt(10, main.width - 220)
-    y: Activity.getRandomInt(10, main.height - 150)
+    x: Activity.getRandomInt(10, main.width - 220 * ApplicationInfo.ratio)
+    y: Activity.getRandomInt(10, main.height - 150 * ApplicationInfo.ratio)
 
-    property string imgPath
-    property int type: 0
     property Item main
 
-    Image {
-        id: img
-        source: imgPath
-        width: Math.min(100, main.width / 6)
-        fillMode : Image.PreserveAspectFit
-    }
-
     Drag.active: dragArea.drag.active
-    Drag.hotSpot.x : 10
-    Drag.hotSpot.y : 10
+    Drag.hotSpot.x : width / 2
+    Drag.hotSpot.y : height / 2
 
     MouseArea {
         id: dragArea

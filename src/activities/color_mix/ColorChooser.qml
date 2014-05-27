@@ -29,7 +29,6 @@ import "colormix.js" as Activity
 Image {
     id: chooser
     source: Activity.url + (activity.modeRGB ? "flashlight.svgz" : "tube.svgz")
-    sourceSize.height: 100 * ApplicationInfo.ratio
     z: 1
 
     property int maxSteps: 10
@@ -38,17 +37,56 @@ Image {
 
     Image {
         id: intensity
-        source: Activity.url + (activity.modeRGB ? "flashlight2.svgz" : "brush.svgz")
+        source: Activity.url + "flashlight2.svgz"
         sourceSize.height: parent.sourceSize.height
-        anchors.fill: parent
         z: 2
+        visible: activity.modeRGB ? true : false
+
         Colorize {
             anchors.fill: parent
             source: parent
             hue: chooser.hue
-            lightness: activity.modeRGB ?
-                           -(maxSteps - currentStep) / maxSteps :
-                           (maxSteps - currentStep) / maxSteps
+            lightness: -(maxSteps - currentStep) / maxSteps
+            saturation: 1
+        }
+
+        Image {
+            source: Activity.url + "light.svgz"
+            sourceSize.height: parent.sourceSize.height / 2
+            anchors {
+                left: parent.right
+                leftMargin: -20 * ApplicationInfo.ratio
+                verticalCenter: parent.verticalCenter
+            }
+            opacity: currentStep / maxSteps
+
+            Colorize {
+                anchors.fill: parent
+                source: parent
+                hue: chooser.hue
+                lightness: -(maxSteps - currentStep) / maxSteps
+                saturation: 1
+            }
+        }
+    }
+
+    Image {
+        id: intensityBrush
+        source: Activity.url + "brush.svgz"
+        sourceSize.height: parent.sourceSize.height * 0.25 + currentStep / maxSteps * 15
+        z: 2
+        anchors {
+            left: parent.right
+            verticalCenter: parent.verticalCenter
+        }
+        visible: activity.modeRGB ? false : currentStep > 0
+        fillMode: Image.PreserveAspectFit
+
+        Colorize {
+            anchors.fill: parent
+            source: parent
+            hue: chooser.hue
+            lightness: 0
             saturation: 1
         }
     }
@@ -80,33 +118,4 @@ Image {
         }
         onClicked: currentStep = Math.max(currentStep - 1, 0)
     }
-
-//    Rectangle {
-//        id: down
-//        height: up.height
-//        width: height
-//        z: 3
-//        radius: width / 2
-//        border.color: "black"
-//        anchors {
-//            verticalCenter: parent.verticalCenter
-//            left: parent.left
-//            leftMargin: parent.width * 0.4
-//        }
-
-//        Text {
-//            id: downText
-//            anchors.centerIn: parent
-//            text: "-"
-//            horizontalAlignment: Text.AlignHCenter
-//            verticalAlignment: Text.AlignVCenter
-//            font.pointSize: upText.font.pointSize
-//        }
-
-//        MouseArea {
-//            anchors.centerIn: parent
-//            height: 2*parent.height
-//            width: 2*parent.width
-//        }
-//    }
 }

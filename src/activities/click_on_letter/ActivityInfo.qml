@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "click_on_letter/ClickOnLetter.qml"
   difficulty: 1
-  icon: "click_on_letter/click_on_letter.svg"
+  icon: "click_on_letter/click_on_letter.svgz"
   author: "Pascal Georges (pascal.georges1@free.fr), Qt Quick port by Holger Kaelberer <holger.k@elberer.de>"
   demo: true
   title: qsTr("Click on a lowercase letter")
@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("Visual letter-recognition. Can move the mouse.")
   manual: qsTr("A letter is spoken. Click on the matching letter in the main area. You can listen to the letter again, by clicking on the mouth icon in the bottom box.")
   credit: ""
+  section: "/reading"
 }

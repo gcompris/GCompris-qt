@@ -30,7 +30,6 @@ Rectangle {
     z: 1000
     property bool isDialog: true
     property string title
-    property string subtitle
     property string content
     signal close
     signal start
@@ -49,43 +48,21 @@ Rectangle {
             Rectangle {
                 color: "#e6e6e6"
                 radius: 6.0
-                width: dialogBackground.width - 30
-                height: 52
+                width: parent.width
+                height: title.height * 1.2
                 border.color: "black"
                 border.width: 2
 
-                Item {
+                Text {
                     id: title
-                    width: parent.width
-                    height: 32
-                    Text {
-                        text: dialogBackground.title
-                        anchors.fill: parent
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        font.family: "Helvetica"
-                        color: "black"
-                        fontSizeMode: Text.Fit
-                        minimumPointSize: 8
-                        font.pointSize: 24
-                        font.weight: Font.DemiBold
-                    }
-                }
-                Item {
-                    width: parent.width
-                    height: 18
-                    anchors.top: title.bottom
-                    Text {
-                        text: dialogBackground.subtitle
-                        anchors.fill: parent
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        font.family: "Helvetica"
-                        color: "black"
-                        fontSizeMode: Text.Fit
-                        minimumPointSize: 7
-                        font.pointSize: 20
-                    }
+                    text: dialogBackground.title
+                    width: dialogBackground.width - 30
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    font.family: "Helvetica"
+                    color: "black"
+                    font.pointSize: 24
+                    font.weight: Font.DemiBold
                 }
             }
             Rectangle {

@@ -1,22 +1,44 @@
+/* GCompris - Hexagon.qml
+ *
+ * Copyright (C) 2014 Bruno Coudoin
+ *
+ * Authors:
+ *   Christof Petig and Ingo Konrad (GTK+ version)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
 import QtQuick 2.1
-import QtMultimedia 5.0
+import QtGraphicalEffects 1.0
 import "hexagon.js" as Activity
-import "qrc:/gcompris/src/core"
+import "../../core"
 import GCompris 1.0
 
 Item {
     id: hexagon
-    property Item main
-    property Audio audioDrip
-    property string color
+    property GCAudio audioDrip
+    property ParticleSystemStar particles
+    property alias color: colorOverlay.color
     property bool hasStrawberry: false
     property double ix
     property double iy
     property int nbx
     property int nby
-    property double r: Math.min(main.width / nbx / 2, (main.height - 10) / nby / 2)
-    property double offsetX: (main.width % (width * nbx)) / 2
-    property double offsetY: (main.height % (height * nby)) / 2
+    // Warning testing parent here, just to avoid an error at deletion time
+    property double r: parent ? Math.min(parent.width / nbx / 2, (parent.height - 10) / nby / 2) : 0
+    property double offsetX: parent ? (parent.width % (width * nbx)) / 2 : 0
+    property double offsetY: parent ? (parent.height % (height * nby)) / 2 : 0
     x: (iy % 2 ? width * ix + width / 2 : width * ix) + offsetX
     y: height * iy - (Math.sin((Math.PI * 2) / 12) * r * 2 * iy) / 2 + offsetY
     width: Math.cos((Math.PI * 2) / 12) * r * 2
@@ -27,74 +49,63 @@ Item {
         anchors.fill: parent
     }
 
-    // Taken from
-    // http://www.storminthecastle.com/2013/07/24/how-you-can-draw-regular-polygons-with-the-html5-canvas-api/
-    function polygon(ctx, x, y, radius, sides, startAngle, anticlockwise) {
-      if (sides < 3) return;
-      var a = (Math.PI * 2)/sides;
-      a = anticlockwise?-a:a;
-      ctx.save();
-      ctx.translate(x,y);
-      ctx.rotate(startAngle);
-      ctx.moveTo(radius,0);
-      for (var i = 1; i < sides; i++) {
-        ctx.lineTo(radius*Math.cos(a*i),radius*Math.sin(a*i));
-      }
-      ctx.closePath();
-      ctx.restore();
-    }
 
-    Canvas {
-      id:canvas
-      width: hexagon.r * 2
-      height: hexagon.r * 2
-      antialiasing: true
-      onPaint:{
-          var ctx = canvas.getContext('2d');
-          ctx.beginPath();
-          polygon(ctx, r, r, r, 6, Math.PI / 2);
-          ctx.fillStyle = hexagon.color;
-          ctx.fill();
-          ctx.stroke()
-      }
+    Image {
+      id: border
+      anchors.fill: parent
+      source: Activity.url + "hexagon_border.svgz"
 
       onOpacityChanged: if(opacity == 0) Activity.strawberryFound()
 
       Behavior on opacity { PropertyAnimation { duration: 500 } }
     }
 
-    Component.onCompleted: {
-        canvas.requestPaint()
+    Image {
+      id: canvas
+      anchors.fill: parent
+      source: Activity.url + "hexagon.svgz"
+
+      onOpacityChanged: if(opacity == 0) Activity.strawberryFound()
+      opacity: 0.65
+
+      Behavior on opacity { PropertyAnimation { duration: 500 } }
+
+      ColorOverlay {
+          id: colorOverlay
+          anchors.fill: parent
+          source: canvas
+      }
     }
 
+    // Create a particle only for the strawberry
+    Loader {
+        id: particleLoader
+        anchors.fill: parent
+        active: hasStrawberry
+        sourceComponent: particle
+    }
 
-    MouseArea {
-        x: 0
-        y: r - Math.sin((Math.PI * 2) / 8) * r
-        width: parent.width
-        height: r * 2 - y
-        onClicked: {
-
-            if(hasStrawberry) {
-                canvas.opacity = 0
-                enabled = false
-                strawberry.source = "qrc:/gcompris/src/activities/hexagon/resource/strawberry.svg"
-                audioDrip.play()
-                Activity.strawberryFound()
-                particles.emitter.burst(40)
-            } else {
-                hexagon.color =
-                        Activity.getColor(Activity.getDistance(hexagon.ix, hexagon.iy))
-                enabled = false
-                canvas.requestPaint()
-            }
+    Component {
+        id: particle
+        ParticleSystemStar
+        {
+            id: particles
+            clip: false
         }
     }
 
-    ParticleSystemStar
-    {
-        id: particles
-        clip: false
+    property bool isTouched: false
+    function touched() {
+        if(hasStrawberry && !isTouched) {
+            canvas.opacity = 0
+            isTouched = true
+            strawberry.source = Activity.url + "strawberry.svgz"
+            audioDrip.play()
+            Activity.strawberryFound()
+            particleLoader.item.emitter.burst(40)
+        } else {
+            hexagon.color =
+                    Activity.getColor(Activity.getDistance(hexagon.ix, hexagon.iy))
+        }
     }
-
 }

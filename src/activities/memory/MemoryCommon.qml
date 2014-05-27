@@ -3,8 +3,8 @@ import QtQuick.Controls 1.0
 import QtQuick.Controls.Styles 1.0
 import QtMultimedia 5.0
 
-import "qrc:/gcompris/src/core"
-import "qrc:/gcompris/src/activities/memory"
+import "../../core"
+import "../memory"
 import "memory.js" as Activity
 
 ActivityBase {
@@ -21,7 +21,7 @@ ActivityBase {
     property string backgroundImg
     property string type  //define if it's a "picture" ou a "sound" memory
     property var dataset
-    property Audio sound1
+    property GCAudio sound1
 
     onStart: {}
     onStop: {}
@@ -35,7 +35,7 @@ ActivityBase {
     }
 
     // For perf reason it is best not to put this in each HexagonItem
-    Audio {
+    GCAudio {
         id: sound1
         source: ""
     }

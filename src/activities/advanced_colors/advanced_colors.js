@@ -21,682 +21,682 @@ var advanced_colors =
             [ // Level 1
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/coral_butterfly.svgz",
-                 "text": "Find the coral butterfly"
+                 "text": qsTr("Find the coral butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/claret_butterfly.svgz",
-                 "text": "Find the claret butterfly"
+                 "text": qsTr("Find the claret butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/navy_butterfly.svgz",
-                 "text": "Find the navy butterfly"
+                 "text": qsTr("Find the navy butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/corn_butterfly.svgz",
-                 "text": "Find the corn butterfly"
+                 "text": qsTr("Find the corn butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/cobalt_butterfly.svgz",
-                 "text": "Find the cobalt butterfly"
+                 "text": qsTr("Find the cobalt butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/cyan_butterfly.svgz",
-                 "text": "Find the cyan butterfly"
+                 "text": qsTr("Find the cyan butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/chestnut_butterfly.svgz",
-                 "text": "Find the chestnut butterfly"
+                 "text": qsTr("Find the chestnut butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/almond_butterfly.svgz",
-                 "text": "Find the almond butterfly"
+                 "text": qsTr("Find the almond butterfly")
              }
             ],
             [ // Level 2
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/claret_butterfly.svgz",
-                 "text": "Find the claret butterfly"
+                 "text": qsTr("Find the claret butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/sapphire_butterfly.svgz",
-                 "text": "Find the sapphire butterfly"
+                 "text": qsTr("Find the sapphire butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/corn_butterfly.svgz",
-                 "text": "Find the corn butterfly"
+                 "text": qsTr("Find the corn butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/cobalt_butterfly.svgz",
-                 "text": "Find the cobalt butterfly"
+                 "text": qsTr("Find the cobalt butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/cyan_butterfly.svgz",
-                 "text": "Find the cyan butterfly"
+                 "text": qsTr("Find the cyan butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/chestnut_butterfly.svgz",
-                 "text": "Find the chestnut butterfly"
+                 "text": qsTr("Find the chestnut butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/almond_butterfly.svgz",
-                 "text": "Find the almond butterfly"
+                 "text": qsTr("Find the almond butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/ruby_butterfly.svgz",
-                 "text": "Find the ruby butterfly"
+                 "text": qsTr("Find the ruby butterfly")
              }
             ],
             [ // Level 3
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/sienna_butterfly.svgz",
-                 "text": "Find the sienna butterfly"
+                 "text": qsTr("Find the sienna butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/sage_butterfly.svgz",
-                 "text": "Find the sage butterfly"
+                 "text": qsTr("Find the sage butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/salmon_butterfly.svgz",
-                 "text": "Find the salmon butterfly"
+                 "text": qsTr("Find the salmon butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/sepia_butterfly.svgz",
-                 "text": "Find the sepia butterfly"
+                 "text": qsTr("Find the sepia butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/sulphur_butterfly.svgz",
-                 "text": "Find the sulfur butterfly"
+                 "text": qsTr("Find the sulfur butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/tea_butterfly.svgz",
-                 "text": "Find the tea butterfly"
+                 "text": qsTr("Find the tea butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/lime_butterfly.svgz",
-                 "text": "Find the lime butterfly"
+                 "text": qsTr("Find the lime butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/turquoise_butterfly.svgz",
-                 "text": "Find the turquoise butterfly"
+                 "text": qsTr("Find the turquoise butterfly")
              }
             ],
             [ // Level 4
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/absinthe_butterfly.svgz",
-                 "text": "Find the absinthe butterfly"
+                 "text": qsTr("Find the absinthe butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/mahogany_butterfly.svgz",
-                 "text": "Find the mahogany butterfly"
+                 "text": qsTr("Find the mahogany butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/aquamarine_butterfly.svgz",
-                 "text": "Find the aquamarine butterfly"
+                 "text": qsTr("Find the aquamarine butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/alabaster_butterfly.svgz",
-                 "text": "Find the alabaster butterfly"
+                 "text": qsTr("Find the alabaster butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/amber_butterfly.svgz",
-                 "text": "Find the amber butterfly"
+                 "text": qsTr("Find the amber butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/amethyst_butterfly.svgz",
-                 "text": "Find the amethyst butterfly"
+                 "text": qsTr("Find the amethyst butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/anise_butterfly.svgz",
-                 "text": "Find the anise butterfly"
+                 "text": qsTr("Find the anise butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/vermilion_butterfly.svgz",
-                 "text": "Find the vermilion butterfly"
+                 "text": qsTr("Find the vermilion butterfly")
              }
             ],
             [ // Level 5
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/ceruse_butterfly.svgz",
-                 "text": "Find the ceruse butterfly"
+                 "text": qsTr("Find the ceruse butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/fawn_butterfly.svgz",
-                 "text": "Find the fawn butterfly"
+                 "text": qsTr("Find the fawn butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/chartreuse_butterfly.svgz",
-                 "text": "Find the chartreuse butterfly"
+                 "text": qsTr("Find the chartreuse butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/emerald_butterfly.svgz",
-                 "text": "Find the emerald butterfly"
+                 "text": qsTr("Find the emerald butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/aubergine_butterfly.svgz",
-                 "text": "Find the aubergine butterfly"
+                 "text": qsTr("Find the aubergine butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/fuchsia_butterfly.svgz",
-                 "text": "Find the fuchsia butterfly"
+                 "text": qsTr("Find the fuchsia butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/ruby_butterfly.svgz",
-                 "text": "Find the ruby butterfly"
+                 "text": qsTr("Find the ruby butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/glaucous_butterfly.svgz",
-                 "text": "Find the glaucous butterfly"
+                 "text": qsTr("Find the glaucous butterfly")
              }
             ],
             [ // Level 6
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/aubergine_butterfly.svgz",
-                 "text": "Find the aubergine butterfly"
+                 "text": qsTr("Find the aubergine butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/auburn_butterfly.svgz",
-                 "text": "Find the auburn butterfly"
+                 "text": qsTr("Find the auburn butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/azure_butterfly.svgz",
-                 "text": "Find the azure butterfly"
+                 "text": qsTr("Find the azure butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/greyish-brown_butterfly.svgz",
-                 "text": "Find the grayish brown butterfly"
+                 "text": qsTr("Find the grayish brown butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/bistre_butterfly.svgz",
-                 "text": "Find the bistre butterfly"
+                 "text": qsTr("Find the bistre butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/crimson_butterfly.svgz",
-                 "text": "Find the crimson butterfly"
+                 "text": qsTr("Find the crimson butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/celadon_butterfly.svgz",
-                 "text": "Find the celadon butterfly"
+                 "text": qsTr("Find the celadon butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/cerulean_butterfly.svgz",
-                 "text": "Find the cerulean butterfly"
+                 "text": qsTr("Find the cerulean butterfly")
              }
             ],
             [ // Level 7
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/dove_butterfly.svgz",
-                 "text": "Find the dove butterfly"
+                 "text": qsTr("Find the dove butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/garnet_butterfly.svgz",
-                 "text": "Find the garnet butterfly"
+                 "text": qsTr("Find the garnet butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/indigo_butterfly.svgz",
-                 "text": "Find the indigo butterfly"
+                 "text": qsTr("Find the indigo butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/ivory_butterfly.svgz",
-                 "text": "Find the ivory butterfly"
+                 "text": qsTr("Find the ivory butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/jade_butterfly.svgz",
-                 "text": "Find the jade butterfly"
+                 "text": qsTr("Find the jade butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/lavender_butterfly.svgz",
-                 "text": "Find the lavender butterfly"
+                 "text": qsTr("Find the lavender butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/lichen_butterfly.svgz",
-                 "text": "Find the lichen butterfly"
+                 "text": qsTr("Find the lichen butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/wine_butterfly.svgz",
-                 "text": "Find the wine butterfly"
+                 "text": qsTr("Find the wine butterfly")
              }
             ],
             [ // Level 8
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/lilac_butterfly.svgz",
-                 "text": "Find the lilac butterfly"
+                 "text": qsTr("Find the lilac butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/magenta_butterfly.svgz",
-                 "text": "Find the magenta butterfly"
+                 "text": qsTr("Find the magenta butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/malachite_butterfly.svgz",
-                 "text": "Find the malachite butterfly"
+                 "text": qsTr("Find the malachite butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/navy_butterfly.svgz",
-                 "text": "Find the navy butterfly"
+                 "text": qsTr("Find the navy butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/larch_butterfly.svgz",
-                 "text": "Find the larch butterfly"
+                 "text": qsTr("Find the larch butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/mimosa_butterfly.svgz",
-                 "text": "Find the mimosa butterfly"
+                 "text": qsTr("Find the mimosa butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/ochre_butterfly.svgz",
-                 "text": "Find the ochre butterfly"
+                 "text": qsTr("Find the ochre butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/olive_butterfly.svgz",
-                 "text": "Find the olive butterfly"
+                 "text": qsTr("Find the olive butterfly")
              }
             ],
             [ // Level 9
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/opaline_butterfly.svgz",
-                 "text": "Find the opaline butterfly"
+                 "text": qsTr("Find the opaline butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/vermilion_butterfly.svgz",
-                 "text": "Find the vermilion butterfly"
+                 "text": qsTr("Find the vermilion butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/ultramarine_butterfly.svgz",
-                 "text": "Find the ultramarine butterfly"
+                 "text": qsTr("Find the ultramarine butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/mauve_butterfly.svgz",
-                 "text": "Find the mauve butterfly"
+                 "text": qsTr("Find the mauve butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/greyish_blue_butterfly.svgz",
-                 "text": "Find the grayish blue butterfly"
+                 "text": qsTr("Find the grayish blue butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/pistachio_butterfly.svgz",
-                 "text": "Find the pistachio butterfly"
+                 "text": qsTr("Find the pistachio butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/platinum_butterfly.svgz",
-                 "text": "Find the platinum butterfly"
+                 "text": qsTr("Find the platinum butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/purple_butterfly.svgz",
-                 "text": "Find the purple butterfly"
+                 "text": qsTr("Find the purple butterfly")
              }
             ],
             [ // Level 10
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/plum_butterfly.svgz",
-                 "text": "Find the plum butterfly"
+                 "text": qsTr("Find the plum butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/prussian_blue_butterfly.svgz",
-                 "text": "Find the prussian blue butterfly"
+                 "text": qsTr("Find the prussian blue butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/rust_butterfly.svgz",
-                 "text": "Find the rust butterfly"
+                 "text": qsTr("Find the rust butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/saffron_butterfly.svgz",
-                 "text": "Find the saffron butterfly"
+                 "text": qsTr("Find the saffron butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/vanilla_butterfly.svgz",
-                 "text": "Find the vanilla butterfly"
+                 "text": qsTr("Find the vanilla butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/veronese_butterfly.svgz",
-                 "text": "Find the veronese butterfly"
+                 "text": qsTr("Find the veronese butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/verdigris_butterfly.svgz",
-                 "text": "Find the verdigris butterfly"
+                 "text": qsTr("Find the verdigris butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/dark_purple_butterfly.svgz",
-                 "text": "Find the dark purple butterfly"
+                 "text": qsTr("Find the dark purple butterfly")
              }
             ],
             [ // Level 11 Now all the colors have been seen, propose here
              // a new random set of them
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/olive_butterfly.svgz",
-                 "text": "Find the olive butterfly"
+                 "text": qsTr("Find the olive butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/auburn_butterfly.svgz",
-                 "text": "Find the auburn butterfly"
+                 "text": qsTr("Find the auburn butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/dark_purple_butterfly.svgz",
-                 "text": "Find the dark purple butterfly"
+                 "text": qsTr("Find the dark purple butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/mauve_butterfly.svgz",
-                 "text": "Find the mauve butterfly"
+                 "text": qsTr("Find the mauve butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/azure_butterfly.svgz",
-                 "text": "Find the azure butterfly"
+                 "text": qsTr("Find the azure butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/plum_butterfly.svgz",
-                 "text": "Find the plum butterfly"
+                 "text": qsTr("Find the plum butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/sepia_butterfly.svgz",
-                 "text": "Find the sepia butterfly"
+                 "text": qsTr("Find the sepia butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/aubergine_butterfly.svgz",
-                 "text": "Find the aubergine butterfly"
+                 "text": qsTr("Find the aubergine butterfly")
              }
             ],
             [ // Level 12
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/aubergine_butterfly.svgz",
-                 "text": "Find the aubergine butterfly"
+                 "text": qsTr("Find the aubergine butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/cyan_butterfly.svgz",
-                 "text": "Find the cyan butterfly"
+                 "text": qsTr("Find the cyan butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/fawn_butterfly.svgz",
-                 "text": "Find the fawn butterfly"
+                 "text": qsTr("Find the fawn butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/mimosa_butterfly.svgz",
-                 "text": "Find the mimosa butterfly"
+                 "text": qsTr("Find the mimosa butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/ochre_butterfly.svgz",
-                 "text": "Find the ochre butterfly"
+                 "text": qsTr("Find the ochre butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/prussian_blue_butterfly.svgz",
-                 "text": "Find the prussian blue butterfly"
+                 "text": qsTr("Find the prussian blue butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/rust_butterfly.svgz",
-                 "text": "Find the rust butterfly"
+                 "text": qsTr("Find the rust butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/salmon_butterfly.svgz",
-                 "text": "Find the salmon butterfly"
+                 "text": qsTr("Find the salmon butterfly")
              }
             ],
             [ // Level 13
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/alabaster_butterfly.svgz",
-                 "text": "Find the alabaster butterfly"
+                 "text": qsTr("Find the alabaster butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/chestnut_butterfly.svgz",
-                 "text": "Find the chestnut butterfly"
+                 "text": qsTr("Find the chestnut butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/coral_butterfly.svgz",
-                 "text": "Find the coral butterfly"
+                 "text": qsTr("Find the coral butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/ivory_butterfly.svgz",
-                 "text": "Find the ivory butterfly"
+                 "text": qsTr("Find the ivory butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/mauve_butterfly.svgz",
-                 "text": "Find the mauve butterfly"
+                 "text": qsTr("Find the mauve butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/plum_butterfly.svgz",
-                 "text": "Find the plum butterfly"
+                 "text": qsTr("Find the plum butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/rust_butterfly.svgz",
-                 "text": "Find the rust butterfly"
+                 "text": qsTr("Find the rust butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/vermilion_butterfly.svgz",
-                 "text": "Find the vermilion butterfly"
+                 "text": qsTr("Find the vermilion butterfly")
              }
             ],
             [ // Level 14
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/navy_butterfly.svgz",
-                 "text": "Find the navy butterfly"
+                 "text": qsTr("Find the navy butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/cerulean_butterfly.svgz",
-                 "text": "Find the cerulean butterfly"
+                 "text": qsTr("Find the cerulean butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/malachite_butterfly.svgz",
-                 "text": "Find the malachite butterfly"
+                 "text": qsTr("Find the malachite butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/opaline_butterfly.svgz",
-                 "text": "Find the opaline butterfly"
+                 "text": qsTr("Find the opaline butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/wine_butterfly.svgz",
-                 "text": "Find the wine butterfly"
+                 "text": qsTr("Find the wine butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/pistachio_butterfly.svgz",
-                 "text": "Find the pistachio butterfly"
+                 "text": qsTr("Find the pistachio butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/chestnut_butterfly.svgz",
-                 "text": "Find the chestnut butterfly"
+                 "text": qsTr("Find the chestnut butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/claret_butterfly.svgz",
-                 "text": "Find the claret butterfly"
+                 "text": qsTr("Find the claret butterfly")
              }
             ],
             [ // Level 15
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/chestnut_butterfly.svgz",
-                 "text": "Find the chestnut butterfly"
+                 "text": qsTr("Find the chestnut butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/dark_purple_butterfly.svgz",
-                 "text": "Find the dark purple butterfly"
+                 "text": qsTr("Find the dark purple butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/aubergine_butterfly.svgz",
-                 "text": "Find the aubergine butterfly"
+                 "text": qsTr("Find the aubergine butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/opaline_butterfly.svgz",
-                 "text": "Find the opaline butterfly"
+                 "text": qsTr("Find the opaline butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/wine_butterfly.svgz",
-                 "text": "Find the wine butterfly"
+                 "text": qsTr("Find the wine butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/fawn_butterfly.svgz",
-                 "text": "Find the fawn butterfly"
+                 "text": qsTr("Find the fawn butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/magenta_butterfly.svgz",
-                 "text": "Find the magenta butterfly"
+                 "text": qsTr("Find the magenta butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/anise_butterfly.svgz",
-                 "text": "Find the anise butterfly"
+                 "text": qsTr("Find the anise butterfly")
              }
             ],
             [ // Level 16
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/claret_butterfly.svgz",
-                 "text": "Find the claret butterfly"
+                 "text": qsTr("Find the claret butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/fawn_butterfly.svgz",
-                 "text": "Find the fawn butterfly"
+                 "text": qsTr("Find the fawn butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/platinum_butterfly.svgz",
-                 "text": "Find the platinum butterfly"
+                 "text": qsTr("Find the platinum butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/indigo_butterfly.svgz",
-                 "text": "Find the indigo butterfly"
+                 "text": qsTr("Find the indigo butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/dove_butterfly.svgz",
-                 "text": "Find the dove butterfly"
+                 "text": qsTr("Find the dove butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/crimson_butterfly.svgz",
-                 "text": "Find the crimson butterfly"
+                 "text": qsTr("Find the crimson butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/veronese_butterfly.svgz",
-                 "text": "Find the veronese butterfly"
+                 "text": qsTr("Find the veronese butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/greyish-brown_butterfly.svgz",
-                 "text": "Find the grayish brown butterfly"
+                 "text": qsTr("Find the grayish brown butterfly")
              }
             ],
             [ // Level 17
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/chestnut_butterfly.svgz",
-                 "text": "Find the chestnut butterfly"
+                 "text": qsTr("Find the chestnut butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/greyish_blue_butterfly.svgz",
-                 "text": "Find the grayish blue butterfly"
+                 "text": qsTr("Find the grayish blue butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/aubergine_butterfly.svgz",
-                 "text": "Find the aubergine butterfly"
+                 "text": qsTr("Find the aubergine butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/salmon_butterfly.svgz",
-                 "text": "Find the salmon butterfly"
+                 "text": qsTr("Find the salmon butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/amber_butterfly.svgz",
-                 "text": "Find the amber butterfly"
+                 "text": qsTr("Find the amber butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/chartreuse_butterfly.svgz",
-                 "text": "Find the chartreuse butterfly"
+                 "text": qsTr("Find the chartreuse butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/claret_butterfly.svgz",
-                 "text": "Find the claret butterfly"
+                 "text": qsTr("Find the claret butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/purple_butterfly.svgz",
-                 "text": "Find the purple butterfly"
+                 "text": qsTr("Find the purple butterfly")
              }
             ],
             [ // Level 18
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/plum_butterfly.svgz",
-                 "text": "Find the plum butterfly"
+                 "text": qsTr("Find the plum butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/claret_butterfly.svgz",
-                 "text": "Find the claret butterfly"
+                 "text": qsTr("Find the claret butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/ultramarine_butterfly.svgz",
-                 "text": "Find the ultramarine butterfly"
+                 "text": qsTr("Find the ultramarine butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/greyish_blue_butterfly.svgz",
-                 "text": "Find the grayish blue butterfly"
+                 "text": qsTr("Find the grayish blue butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/dark_purple_butterfly.svgz",
-                 "text": "Find the dark purple butterfly"
+                 "text": qsTr("Find the dark purple butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/lilac_butterfly.svgz",
-                 "text": "Find the lilac butterfly"
+                 "text": qsTr("Find the lilac butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/aquamarine_butterfly.svgz",
-                 "text": "Find the aquamarine butterfly"
+                 "text": qsTr("Find the aquamarine butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/magenta_butterfly.svgz",
-                 "text": "Find the magenta butterfly"
+                 "text": qsTr("Find the magenta butterfly")
              }
             ],
             [ // Level 19
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/anise_butterfly.svgz",
-                 "text": "Find the anise butterfly"
+                 "text": qsTr("Find the anise butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/cerulean_butterfly.svgz",
-                 "text": "Find the cerulean butterfly"
+                 "text": qsTr("Find the cerulean butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/ivory_butterfly.svgz",
-                 "text": "Find the ivory butterfly"
+                 "text": qsTr("Find the ivory butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/sepia_butterfly.svgz",
-                 "text": "Find the sepia butterfly"
+                 "text": qsTr("Find the sepia butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/verdigris_butterfly.svgz",
-                 "text": "Find the verdigris butterfly"
+                 "text": qsTr("Find the verdigris butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/fuchsia_butterfly.svgz",
-                 "text": "Find the fuchsia butterfly"
+                 "text": qsTr("Find the fuchsia butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/plum_butterfly.svgz",
-                 "text": "Find the plum butterfly"
+                 "text": qsTr("Find the plum butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/purple_butterfly.svgz",
-                 "text": "Find the purple butterfly"
+                 "text": qsTr("Find the purple butterfly")
              }
             ],
             [ // Level 20
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/tea_butterfly.svgz",
-                 "text": "Find the tea butterfly"
+                 "text": qsTr("Find the tea butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/dark_purple_butterfly.svgz",
-                 "text": "Find the dark purple butterfly"
+                 "text": qsTr("Find the dark purple butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/sienna_butterfly.svgz",
-                 "text": "Find the sienna butterfly"
+                 "text": qsTr("Find the sienna butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/aubergine_butterfly.svgz",
-                 "text": "Find the aubergine butterfly"
+                 "text": qsTr("Find the aubergine butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/rust_butterfly.svgz",
-                 "text": "Find the rust butterfly"
+                 "text": qsTr("Find the rust butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/pistachio_butterfly.svgz",
-                 "text": "Find the pistachio butterfly"
+                 "text": qsTr("Find the pistachio butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/sapphire_butterfly.svgz",
-                 "text": "Find the sapphire butterfly"
+                 "text": qsTr("Find the sapphire butterfly")
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/claret_butterfly.svgz",
-                 "text": "Find the claret butterfly"
+                 "text": qsTr("Find the claret butterfly")
              }
             ]
         ]

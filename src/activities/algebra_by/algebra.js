@@ -18,6 +18,7 @@
 
 .pragma library
 .import QtQuick 2.0 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel
 var coreItems
@@ -45,7 +46,7 @@ function initLevel() {
     coreItems.bar.level = currentLevel + 1
     coreItems.score.visible = false
     coreItems.score.currentSubLevel = 1
-    operations = shuffle(operations)
+    operations = Core.shuffle(operations)
     calculateOperands()
 
     otheritems.iAmReady.visible = true
@@ -94,30 +95,30 @@ function calculateOperands()
 function getAnswer() {
     switch(operand.text)
     {
-        case "x":
-            return (firstOperandVal * secondOperandVal)
+    case "x":
+        return (firstOperandVal * secondOperandVal)
 
-        case "+":
-           return (firstOperandVal + secondOperandVal)
+    case "+":
+        return (firstOperandVal + secondOperandVal)
 
-        case "-":
-            return (firstOperandVal - secondOperandVal)
+    case "-":
+        return (firstOperandVal - secondOperandVal)
     }
 }
 
 function validateAnswer(screenAnswer)
 {
-        switch(operand.text)
-        {
-            case "x":
-                return (getAnswer() === screenAnswer)
+    switch(operand.text)
+    {
+    case "x":
+        return (getAnswer() === screenAnswer)
 
-            case "+":
-               return (getAnswer() === screenAnswer)
+    case "+":
+        return (getAnswer() === screenAnswer)
 
-            case "-":
-                return (getAnswer() === screenAnswer)
-        }
+    case "-":
+        return (getAnswer() === screenAnswer)
+    }
 }
 
 function run() {
@@ -147,91 +148,6 @@ function questionsLeft() {
             coreItems.bonus.good("smiley");
         }
     }
-}
-
-function keyEvent(key, pressed)
-{
-    var keyValue;
-
-    switch(key)
-    {
-    case Qt.Key_0 :
-        keyValue = 0;
-        break;
-    case Qt.Key_1:
-        keyValue = 1;
-        break;
-    case Qt.Key_2:
-        keyValue = 2;
-        break;
-    case Qt.Key_3:
-        keyValue = 3;
-        break;
-    case Qt.Key_4:
-        keyValue = 4;
-        break;
-    case Qt.Key_5:
-        keyValue = 5;
-        break;
-    case Qt.Key_6:
-        keyValue = 6;
-        break;
-    case Qt.Key_7:
-        keyValue = 7;
-        break;
-    case Qt.Key_8:
-        keyValue = 8;
-        break;
-    case Qt.Key_9:
-        keyValue = 9;
-        break;
-    case Qt.Key_Backspace:
-        keyValue = 10;
-    }
-
-    if(pressed && !otheritems.numpad.answerFlag)
-    {
-        if(keyValue < 5 &&
-           otheritems.numpad.answer.length < otheritems.numpad.maxDigit)
-        {
-            otheritems.numpad.answer += keyValue;
-            otheritems.numpad.leftPanelComponent.children[keyValue].color = Qt.lighter(otheritems.numpad.colours[keyValue])
-            otheritems.numpad.leftPanelComponent.children[keyValue].border.width = 5
-        }
-        else if(keyValue < 10 &&
-            otheritems.numpad.answer.length < otheritems.numpad.maxDigit)
-        {
-            otheritems.numpad.answer += keyValue;
-            otheritems.numpad.rightPanelComponent.children[keyValue - 5].color = Qt.lighter(otheritems.numpad.colours[keyValue - 5])
-            otheritems.numpad.rightPanelComponent.children[keyValue - 5].border.width = 5
-        }
-        else if(keyValue === 10)
-        {
-            otheritems.numpad.answer = otheritems.numpad.answer.substring(0,otheritems.numpad.answer.length - 1)
-            otheritems.numpad.backspaceButtonComponent.color = Qt.lighter("white")
-            otheritems.numpad.backspaceButtonComponent.border.width = 5
-        }
-    }
-    else
-    {
-        if(keyValue < 5)
-        {
-            otheritems.numpad.leftPanelComponent.children[keyValue].color = otheritems.numpad.colours[keyValue]
-            otheritems.numpad.leftPanelComponent.children[keyValue].border.width = 2
-        }
-        else if(keyValue < 10)
-        {
-
-            otheritems.numpad.rightPanelComponent.children[keyValue - 5].color = otheritems.numpad.colours[keyValue - 5]
-            otheritems.numpad.rightPanelComponent.children[keyValue - 5].border.width = 2
-        }
-        else if(keyValue === 10)
-        {
-            otheritems.numpad.backspaceButtonComponent.color = "white"
-            otheritems.numpad.backspaceButtonComponent.border.width = 2
-        }
-    }
-
 }
 
 function shuffle(o) {
