@@ -49,11 +49,13 @@ install(TARGETS GCompris
   BUNDLE DESTINATION .)
 
 # Qt plugins to install
-set(_qt_plugins Qt5::QSvgPlugin Qt5::QJpegPlugin Qt5::QXcbIntegrationPlugin)
+set(_qt_plugins Qt5::QSvgPlugin Qt5::QJpegPlugin)
 if(CMAKE_HOST_APPLE)
   list(APPEND _qt_plugins Qt5::QTgaPlugin Qt5::QTiffPlugin Qt5::QCocoaIntegrationPlugin)
 elseif(CMAKE_HOST_WIN32)
   list(APPEND _qt_plugins Qt5::QWindowsIntegrationPlugin)
+elseif(CMAKE_HOST_LINUX)
+  list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin)
 endif()
 
 # Qml plugins to install
