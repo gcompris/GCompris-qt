@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 {
 	QGuiApplication app(argc, argv);
 	app.setOrganizationName("GCompris");
-	app.setApplicationName("GCompris");
+    app.setApplicationName("GCompris");
     app.setOrganizationDomain("kde.org");
 
     ApplicationInfo::init();
@@ -91,6 +91,9 @@ int main(int argc, char *argv[])
 		qWarning("Error: Your root item has to be a Window.");
 		return -1;
 	}
+
+    window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris_icon.png"))));
+
     ApplicationInfo::setWindow(window);
 
     window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));
