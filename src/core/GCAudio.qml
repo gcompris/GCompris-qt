@@ -15,6 +15,11 @@ Item {
         }
     }
 
+    function stop() {
+        if(audio.playbackState != Audio.StoppedState)
+            audio.stop()
+    }
+
     Audio {
         id: audio
         autoPlay: gcaudio.autoPlay && !gcaudio.muted
