@@ -1,6 +1,8 @@
 
 configure_file(config.h.in "${CMAKE_CURRENT_BINARY_DIR}/config.h" @ONLY)
 
+# Note: put .cpp files before .h files in the following or cmake messes up
+# moc generation -- WTF! 
 set(gcompris_SRCS
    ActivityInfo.cpp
    ActivityInfo.h
@@ -12,6 +14,8 @@ set(gcompris_SRCS
    ApplicationSettings.h
    File.cpp
    File.h
+   DownloadManager.cpp
+   DownloadManager.h
 )
 
 qt5_wrap_cpp(gcompris_MOC ${gcompris_SRCS})
