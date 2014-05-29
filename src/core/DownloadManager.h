@@ -99,15 +99,16 @@ public:
             QJSEngine *scriptEngine);
     static DownloadManager* getInstance();
 
-    QString getVoicesResourceForLocale(const QString& locale) const;
-    bool haveLocalResource(const QString& path) const;
+    Q_INVOKABLE QString getVoicesResourceForLocale(const QString& locale) const;
+    Q_INVOKABLE bool haveLocalResource(const QString& path) const;
 
 public slots:
-    bool updateResource(const QString& path);
-    bool downloadResource(const QString& path);
+    Q_INVOKABLE bool updateResource(const QString& path);
+    Q_INVOKABLE bool downloadResource(const QString& path);
+
 #if 0
-    bool checkForUpdates();  // might be helpful later with other use-cases!
-    void registerLocalResources();
+    Q_INVOKABLE bool checkForUpdates();  // might be helpful later with other use-cases!
+    Q_INVOKABLE void registerLocalResources();
 #endif
 
 signals:

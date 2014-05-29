@@ -87,8 +87,8 @@ int main(int argc, char *argv[])
 
     // Register voices-resources for current locale, updates/downloads only if
     // not prohibited by the settings
-    DownloadManager::getInstance()->updateResource(QString("data/voices/voices-%1.rcc")
-            .arg(ApplicationInfo::localeShort(locale)));
+    DownloadManager::getInstance()->updateResource(DownloadManager::getInstance()
+        ->getVoicesResourceForLocale(ApplicationInfo::localeShort(locale)));
 
 	QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
     QObject *topLevel = engine.rootObjects().value(0);

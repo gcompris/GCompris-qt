@@ -195,6 +195,60 @@ Rectangle {
             }
         }
     }
+ 
+    //function onDownloadProgress(bytesReceived, bytesTotal) {
+    //    console.log("progress: " + bytesReceived + "/" + bytesTotal);
+    //}
+    
+    function onDownloadFinished() {
+        DownloadManager.downloadFinished.disconnect(onDownloadFinished)
+        DownloadManager.error.disconnect(onDownloadError)
+    }
+    
+    function onDownloadError(error) {
+        errorDialog.text = error;
+        errorDialog.open();
+        onDownloadFinished();
+    }
+
+    MessageDialog {
+        id: errorDialog
+        
+        title: qsTr("Download Error")
+        icon: StandardIcon.Warning
+        standardButtons: StandardButton.Ignore
+        visible: false
+    }
+      
+    MessageDialog {
+        id: messageDialog
+        
+        title: qsTr("You selected a new locale")
+        text: qsTr("Do you want to download the corresponding sound files?")
+        icon: StandardIcon.Question
+        standardButtons: StandardButton.Yes | StandardButton.No
+        
+        visible: false
+        
+        property bool initialized: false  // workaround onYes handler triggered twice in Qt 5.3 (bug #35933)
+        
+        onYes: {
+            if (!messageDialog.initialized)
+                return;
+            messageDialog.initialized = false;
+            console.log("yes");
+            if (DownloadManager.downloadResource(DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort))
+) {
+                //DownloadManager.downloadProgress.connect(onDownloadProgress);
+                // note: for visualizing download progress probably need an
+                // own custom element. Android does not seem to allow changing
+                // contents of a message dialog dynamically 
+                DownloadManager.downloadFinished.connect(onDownloadFinished);
+                DownloadManager.error.connect(onDownloadError);
+            }
+            messageDialog.close()
+        }
+    }
 
     property bool isAudioEnabled: ApplicationSettings.isAudioEnabled
     property bool isFullscreen: ApplicationSettings.isFullscreen
@@ -224,7 +278,14 @@ Rectangle {
         ApplicationSettings.isAudioEnabled = isAudioEnabled
         ApplicationSettings.isFullscreen = isFullscreen
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
-        ApplicationSettings.locale = languages.get(languageBox.currentIndex).locale
+        if (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale) {
+            ApplicationSettings.locale = languages.get(languageBox.currentIndex).locale
+            if (!DownloadManager.haveLocalResource(DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort))) {
+                messageDialog.initialized = true
+                messageDialog.open()
+            } else
+                DownloadManager.updateResource(DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort))
+        }
     }
 
     ListModel {

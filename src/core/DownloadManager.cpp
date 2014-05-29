@@ -32,7 +32,6 @@
 #include <QtQml>
 /* TODO:
  * - adjust upstream URL?
- * - check download progress
  */
 
 #define SERVER_BASE_URL "http://www.math.uni-bielefeld.de/~hkaelber/gcompris"  //FIXME: make configurable
@@ -122,7 +121,7 @@ bool DownloadManager::updateResource(const QString& path)
  * @returns success*/
 bool DownloadManager::downloadResource(const QString& path)
 {
-    qDebug() << "Updating resource file" << path;
+    //qDebug() << "Downloading resource file" << path;
     DownloadJob* job = new DownloadJob(QUrl(serverUrl.toString() + "/" + path));
 
     {
@@ -406,7 +405,7 @@ bool DownloadManager::registerResource(const QString& filename)
         return false;
     } else {
         qDebug() << "Succesfully registered resource"
-                << QFileInfo(filename).fileName()
+                << filename
                 << "(rcRoot=" << getResourceRootForFilename(filename) << ")";
         registeredResources.append(filename);
         return false;
