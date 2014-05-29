@@ -147,15 +147,13 @@ function initLevel() {
     }
 
     currentLetter = questions.split("")[currentSubLevel];
-    if (getSetting("fx")) {
+    if (GCompris.ApplicationSettings.isAudioEnabled) {
         items.nextLevelAudio.stop();
         items.nextLevelAudio.play();
         items.letterAudio.source = GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
                 + Core.getSoundFilenamForChar(currentLetter));
         items.letterAudio.playDelayed(1500);
-    }
-    // FIXME once we have voices on mobile
-    if (!getSetting("fx") || GCompris.ApplicationInfo.isMobile) {
+    } else { 
         // no sound -> show question
         items.questionItem.visible = true;
         items.questionItem.text = currentLetter;
@@ -195,18 +193,4 @@ function checkAnswer(index)
     } else {
         return false
     }
-}
-
-
-//the following are probably candidates for refactoring out to core/
-
-/** Return settings value for passed key
- * 
- * @return: settings value for valid key, null for invalid key */
-function getSetting(key)
-{
-    if (key == "fx")
-        return false;
-    else
-        return null;
 }
