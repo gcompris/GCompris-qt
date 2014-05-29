@@ -125,6 +125,7 @@ public:
 protected slots:
 	void notifyPortraitMode();
 
+	QString getResourceDataPath();
     Q_INVOKABLE QString getAudioFilePath(const QString &file);
     Q_INVOKABLE QString getLocaleFilePath(const QString &file);
     Q_INVOKABLE void notifyFullscreenChanged();
