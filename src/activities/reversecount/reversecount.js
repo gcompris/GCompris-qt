@@ -31,7 +31,6 @@ var iceBlocksLayout = [[0, 0],[1, 0],[2, 0],[3, 0],[4, 0],
 var tuxIceBlockNumber = 0
 var tuxIceBlockNumberGoal = 0
 var tuxIsMoving = false;
-var debugtmp = ""
 var debuginttmp = 0
 var clockPos
 var placeFishToReachBool = false
@@ -178,15 +177,14 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    items.tux.rotation = -90
 
-    currentDice1Index = 0
-    currentDice2Index = 0
 
     level = levels[currentLevel];
     fishesPos = level.questions
 
 
+    currentDice1Index = 0
+    currentDice2Index = 0
     items.chooseDiceBar.currentDice1ImageName = dices[currentDice1Index]
     items.chooseDiceBar.currentDice2ImageName = dices[currentDice2Index]
 
@@ -195,7 +193,7 @@ function initLevel() {
     placeFishToReach(fishesPos[0])
     setClock()
     tuxIceBlockNumber = 0
-    moveTuxToIceBlock()
+    items.tux.init()
 }
 
 
@@ -212,11 +210,8 @@ function moveTux() {
             return
         }
     }
-    else {
-        if (currentDice1Index != 0 || currentDice2Index != 0 ) {
-            moveTuxToNextIceBlock()
-            tuxIsMoving = true;
-        }
+    else if (currentDice1Index != 0 || currentDice2Index != 0 ) {
+        moveTuxToNextIceBlock()
     }
 }
 
@@ -224,7 +219,7 @@ function moveTux() {
 function moveTuxToNextIceBlock() {
     tuxIsMoving = false;
     tuxIceBlockNumber++
-    tuxIceBlockNumber = tuxIceBlockNumber % 16
+    tuxIceBlockNumber = tuxIceBlockNumber % iceBlocksLayout.length
 
     if (tuxIceBlockNumber >= 0 && tuxIceBlockNumber <= 4)
         items.tux.rotation = -90
@@ -237,7 +232,7 @@ function moveTuxToNextIceBlock() {
 
     moveTuxToIceBlock()
 
-    fishPos = fishesPos[fishIndex] % 16
+    fishPos = fishesPos[fishIndex] % iceBlocksLayout.length
     //if tux reaches its position + dice number
     if (tuxIceBlockNumber == fishPos) {
         tuxIsMoving = false;
@@ -268,6 +263,7 @@ function moveTuxToNextIceBlock() {
         tuxIsMoving = false;
         return
     }
+    tuxIsMoving = true
 }
 
 
@@ -283,13 +279,8 @@ function moveTuxToIceBlock() {
 function tuxRunningChanged() {
 
     if (tuxIsMoving) {
-        if (currentDice1Index != 0 || currentDice2Index != 0)
-            moveTuxToNextIceBlock()
-        return;
-    }
-
-    if (!tuxIsMoving) {
-
+        moveTuxToNextIceBlock()
+    } else {
         if (placeFishToReachBool == true) {
             placeFishToReach(fishesPos[fishIndex])
             placeFishToReachBool = false
@@ -300,12 +291,12 @@ function tuxRunningChanged() {
 
 function calculateTuxIceBlockNextPos() {
     tuxIceBlockNumberGoal = tuxIceBlockNumber + currentDice1Index + currentDice2Index
-    tuxIceBlockNumberGoal = tuxIceBlockNumberGoal % 16
+    tuxIceBlockNumberGoal = tuxIceBlockNumberGoal % iceBlocksLayout.length
 }
 
 
 function placeFishToReach(fishIndex) {
-    fishIndex = fishIndex % fishes.length
+    fishIndex = fishIndex % iceBlocksLayout.length
     items.fishToReach.source = url + fishes[fishIndex]
     items.fishToReach.x = iceBlocksLayout[fishIndex][0] * items.background.width / 5
     items.fishToReach.y = iceBlocksLayout[fishIndex][1] * (items.background.height - items.background.height/5) / 5
@@ -314,7 +305,6 @@ function placeFishToReach(fishIndex) {
 
 
 function setClock() {
-    debugtmp = url + clocks[clockPos]
     items.clock.source = url + clocks[clockPos]
 }
 

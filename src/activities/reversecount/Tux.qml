@@ -29,12 +29,16 @@ Image {
 
     source: Activity.url + "tux_top_south.svgz"
     fillMode: Image.PreserveAspectFit
-
     z: 10
 
-    rotation: -90
-
     property bool trigger: false
+
+    signal init
+
+    onInit: {
+       tux.rotation = -90
+        Activity.moveTuxToIceBlock()
+    }
 
     Behavior on x {
         SmoothedAnimation {
