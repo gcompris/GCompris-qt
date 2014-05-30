@@ -38,6 +38,11 @@ endif()
 
 target_link_libraries(GCompris ${QT_LIBRARIES})
 
+GCOMPRIS_ADD_RCC(core *.qml *.js resource/*.* resource/bonus/* resource/sounds/*)
+
+# Installation
+# ============
+
 install(TARGETS GCompris
   ARCHIVE DESTINATION bin
   RUNTIME DESTINATION bin
@@ -50,7 +55,7 @@ if(CMAKE_HOST_APPLE)
   list(APPEND _qt_plugins Qt5::QTgaPlugin Qt5::QTiffPlugin Qt5::QCocoaIntegrationPlugin)
 elseif(CMAKE_HOST_WIN32)
   list(APPEND _qt_plugins Qt5::QWindowsIntegrationPlugin)
-elseif(CMAKE_HOST_LINUX)
+else()
   list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin)
 endif()
 
@@ -113,4 +118,15 @@ endif()
 configure_file(${CMAKE_MODULE_PATH}/FixBundle.cmake.in FixBundle.cmake)
 install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
 
-GCOMPRIS_ADD_RCC(core *.qml *.js resource/*.* resource/bonus/* resource/sounds/*)
+# Packaging
+# =========
+
+if(CMAKE_HOST_APPLE)
+  set(CPACK_GENERATOR "DragNDrop")
+elseif(CMAKE_HOST_WIN32)
+  set(CPACK_GENERATOR "NSIS")
+else()
+  set(CPACK_GENERATOR "DEB")
+  set(CPACK_DEBIAN_PACKAGE_MAINTAINER "Bruno Coudoin")
+endif()
+include(CPack)
