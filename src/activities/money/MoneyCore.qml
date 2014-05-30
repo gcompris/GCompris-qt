@@ -179,11 +179,7 @@ ActivityBase {
                             source: Activity.url + modelData.img
                             sourceSize.height:  column.itemStoreHeight
                             Text {
-                                // Set here the way to display money.
-                                // Change only the money sign, and it's place,
-                                // always keep %1, it will be replaced by the value
-                                // FIXME: How to get the double value be localized
-                                text: qsTr("$ %1").arg(modelData.price);
+                                text: modelData.price
                                 font.pointSize: 20
                                 font.weight: Font.DemiBold
                                 style: Text.Outline
@@ -215,6 +211,7 @@ ActivityBase {
                     horizontalAlignment: Text.AlignHCenter
                     width: column.width
                     wrapMode: Text.WordWrap
+                    font.pointSize: 16
                 }
             }
 
