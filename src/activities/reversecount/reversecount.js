@@ -35,8 +35,6 @@ var debugtmp = ""
 var debuginttmp = 0
 var clockPos
 var placeFishToReachBool = false
-var onWithChangingBool = false
-var onHeightChangingBool = false
 
 var level = null;
 
@@ -156,7 +154,7 @@ var fishPos = 0
 
 var currentDice1Index = 0
 var currentDice2Index = 0
-var fishIndex = 0
+var fishIndex = -1
 
 var currentLevel = 0
 var currentSubLevel = 0
@@ -175,6 +173,7 @@ function start(items_) {
 
 
 function stop() {
+    fishIndex = -1
 }
 
 function initLevel() {
@@ -216,6 +215,7 @@ function moveTux() {
     else {
         if (currentDice1Index != 0 || currentDice2Index != 0 ) {
             moveTuxToNextIceBlock()
+            tuxIsMoving = true;
         }
     }
 }
@@ -245,7 +245,7 @@ function moveTuxToNextIceBlock() {
         //if last fish reached
         if (fishIndex + 1 === level.questions.length) {
             won()
-            items.tux.showParticles()
+            items.fishToReach.showParticles()
             clockPos++
             setClock()
             return
@@ -272,36 +272,15 @@ function moveTuxToNextIceBlock() {
 
 
 function moveTuxToIceBlock() {
-    items.tux.x = (iceBlocksLayout[tuxIceBlockNumber][0] * items.background.width / 5).toFixed()
-    items.tux.y = iceBlocksLayout[tuxIceBlockNumber][1] * (items.background.height - items.background.height/5) / 5
-    tuxIsMoving = true;
+    items.tux.x = (iceBlocksLayout[tuxIceBlockNumber][0] *
+                   items.background.width / 5).toFixed()
+    items.tux.y = iceBlocksLayout[tuxIceBlockNumber][1] *
+            (items.background.height - items.background.height/5) / 5
 }
 
 
 
 function tuxRunningChanged() {
-
-    if (onWithChangingBool && tuxIsMoving) {
-        tuxIsMoving = false
-        return
-    }
-
-    if (onWithChangingBool && !tuxIsMoving) {
-        onWithChangingBool = false
-        onHeightChangingBool = false
-        return
-    }
-
-    if (onHeightChangingBool && tuxIsMoving) {
-        tuxIsMoving = false
-        return
-    }
-
-    if (onHeightChangingBool && !tuxIsMoving) {
-        onWithChangingBool = false
-        onHeightChangingBool = false
-        return
-    }
 
     if (tuxIsMoving) {
         if (currentDice1Index != 0 || currentDice2Index != 0)
@@ -326,11 +305,10 @@ function calculateTuxIceBlockNextPos() {
 
 
 function placeFishToReach(fishIndex) {
-   fishIndex = fishIndex % 16
-
-   items.fishToReach.source = url + fishes[fishIndex]
-   items.fishToReach.x = iceBlocksLayout[fishIndex][0] * items.background.width / 5
-   items.fishToReach.y = iceBlocksLayout[fishIndex][1] * (items.background.height - items.background.height/5) / 5
+    fishIndex = fishIndex % fishes.length
+    items.fishToReach.source = url + fishes[fishIndex]
+    items.fishToReach.x = iceBlocksLayout[fishIndex][0] * items.background.width / 5
+    items.fishToReach.y = iceBlocksLayout[fishIndex][1] * (items.background.height - items.background.height/5) / 5
 }
 
 

@@ -23,7 +23,7 @@ import QtQuick 2.1
 import GCompris 1.0
 import QtMultimedia 5.0
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "reversecount.js" as Activity
 
 
@@ -62,19 +62,19 @@ ActivityBase {
         onStop: { Activity.stop() }
 
 
-//        onWidthChanged: {
-//            Activity.placeFishToReach(Activity.fishesPos[Activity.fishIndex])
-//            Activity.onWithChangingBool = true
-//            Activity.tuxIsMoving = true
-//            Activity.moveTuxToIceBlock()
-//        }
+        onWidthChanged: {
+            if(Activity.fishIndex > 0) {
+                Activity.placeFishToReach(Activity.fishesPos[Activity.fishIndex])
+                Activity.moveTuxToIceBlock()
+            }
+        }
 
-//        onHeightChanged: {
-//            Activity.placeFishToReach(Activity.fishesPos[Activity.fishIndex])
-//            Activity.onHeightChangingBool = true
-//            Activity.tuxIsMoving = true
-//            Activity.moveTuxToIceBlock()
-//        }
+        onHeightChanged: {
+            if(Activity.fishIndex > 0) {
+                Activity.placeFishToReach(Activity.fishesPos[Activity.fishIndex])
+                Activity.moveTuxToIceBlock()
+            }
+        }
 
         // === The ice blocks ===
         Repeater {
@@ -94,7 +94,6 @@ ActivityBase {
             id: tux
             width: activity.width / 6
             height: activity.height / 6
-            background: background
         }
 
 
@@ -111,6 +110,16 @@ ActivityBase {
             width: activity.width / 6
             height: activity.height / 6
             z: 10
+
+            function showParticles() {
+                particles.emitter.burst(40)
+            }
+
+            ParticleSystemStar {
+                id: particles
+                clip: false
+            }
+
         }
 
 
@@ -148,11 +157,6 @@ ActivityBase {
             onDice1RightClicked: Activity.previousDice1()
             onDice2Clicked: Activity.nextDice2()
             onDice2RightClicked: Activity.previousDice2()
-        }
-
-        ParticleSystemStar {
-            id: particles
-            clip: false
         }
 
     }

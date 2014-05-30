@@ -27,8 +27,6 @@ import GCompris 1.0
 Image {
     id: tux
 
-    property Item background
-
     source: Activity.url + "tux_top_south.svgz"
     fillMode: Image.PreserveAspectFit
 
@@ -54,10 +52,6 @@ Image {
     }
     Behavior on rotation {
         RotationAnimation { duration: 300; direction: RotationAnimation.Shortest }
-    }
-
-    function showParticles() {
-        particles.emitter.burst(40)
     }
 
 }
