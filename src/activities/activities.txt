@@ -41,6 +41,7 @@ mosaic
 numbers-odd-even
 penalty
 planegame
+reversecount
 maze
 mazerelative
 mazeinvisible
