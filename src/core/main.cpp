@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
     if(!loadAndroidTranslation(translator, locale))
         loadAndroidTranslation(translator, ApplicationInfo::localeShort(locale));
 #else
-    if(!translator.load("gcompris_" + locale, QCoreApplication::applicationDirPath())) {
+    if(!translator.load("gcompris_" + locale, QCoreApplication::applicationDirPath() + "/translations/")) {
         qDebug() << "Unable to load translation for locale " <<
                     locale << ", use en_US by default";
     }
