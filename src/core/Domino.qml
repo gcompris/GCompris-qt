@@ -26,6 +26,7 @@ Flipable {
 
     property alias value1: number1.value
     property alias value2: number2.value
+    property int valueMax: 9
 
     // Domino style
     property color color: "white"
@@ -54,6 +55,7 @@ Flipable {
             borderColor: "black"
             borderWidth: 0
             radius: parent.height * 0.25
+            valueMax: flipable.valueMax
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
         }
 
@@ -75,6 +77,7 @@ Flipable {
             borderColor: "black"
             borderWidth: 0
             radius: parent.height * 0.25
+            valueMax: flipable.valueMax
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
         }
     }

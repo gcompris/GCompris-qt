@@ -24,6 +24,7 @@ import GCompris 1.0
 Item {
     id: item
     property int value
+    property int valueMax
     property color color
     property color borderColor
     property int borderWidth
@@ -94,13 +95,13 @@ Item {
         acceptedButtons: Qt.LeftButton | Qt.RightButton
         onClicked: {
             if (mouse.button == Qt.LeftButton) {
-                if(item.value == 9)
+                if(item.value == item.valueMax)
                     item.value = 0
                 else
                     item.value++
             } else {
                 if(item.value == 0)
-                    item.value = 9
+                    item.value = item.valueMax
                 else
                     item.value--
             }

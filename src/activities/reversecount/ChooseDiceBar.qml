@@ -31,6 +31,7 @@ Item {
 
     property alias value1: domino.value1
     property alias value2: domino.value2
+    property alias valueMax: domino.valueMax
 
     Row {
         id: barRow
@@ -52,8 +53,6 @@ Item {
 
         Domino {
             id: domino
-            value1: 0
-            value2: 1
             height: ok.height
             width: height * 2
         }
