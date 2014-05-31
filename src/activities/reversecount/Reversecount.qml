@@ -149,10 +149,9 @@ ActivityBase {
 
         ChooseDiceBar {
             id: chooseDiceBar
-            x: activity.width / 2 - chooseDiceBar.width/2
-            y: activity.height / 2 - chooseDiceBar.height
+            x: activity.width / 5 + 20
+            y: (activity.height - activity.height/5) * 3 / 5
         }
-
     }
 
 }

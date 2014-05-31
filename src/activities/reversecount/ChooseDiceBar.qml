@@ -27,61 +27,36 @@ import "reversecount.js" as Activity
 
 Item {
     id: chooseDiceBar
-    width: barRow.width
-    height: barRow.height - 30
     z: 1000
 
-    property int value1: 0
-    property int value2: 0
-
-    property real barZoom: 1.2 * ApplicationInfo.ratio
+    property alias value1: domino.value1
+    property alias value2: domino.value2
 
     Row {
         id: barRow
         spacing: 8
-        Item { width: 10; height: 1 }
-
-        Button {
+        BarButton {
+            id: ok
             source: "qrc:/gcompris/src/core/resource/bar_ok.svgz";
-            sourceSize.width: activity.width / 10
+            sourceSize.width: 75 * ApplicationInfo.ratio
+            visible: true
+            anchors {
+                right: undefined
+                rightMargin: undefined
+                top: undefined
+                topMargin: undefined
+            }
+
             onClicked: Activity.moveTux()
         }
-        Button {
-            id: dice1
-            source: Activity.url + "dice" + value1 + ".svgz"
-            sourceSize.width: activity.width / 10
-            onClicked: {
-                if (value1 >= 8)
-                    value1 = 0
-                else
-                    value1++
-            }
-            onRightClicked: {
-                if (value1 == 0)
-                    value1 = 8;
-                else
-                    value1--;
-            }
-       }
-        Button {
-            id: dice2
-            source: Activity.url + "dice" + value2 + ".svgz"
-            sourceSize.width: activity.width / 10
-            onClicked: {
-                if (value2 >= 8)
-                    value2 = 0;
-                else
-                    value2++
-            }
-            onRightClicked: {
-                if (value2 == 0)
-                    value2 = 8;
-                else
-                    value2--;
-            }
-       }
 
-        Item { width: 10; height: 1 }
+        Domino {
+            id: domino
+            value1: 0
+            value2: 1
+            height: ok.height
+            width: height * 2
+        }
     }
 
     Behavior on opacity { PropertyAnimation { duration: 500 } }
