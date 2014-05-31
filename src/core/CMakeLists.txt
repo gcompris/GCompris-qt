@@ -137,6 +137,11 @@ foreach(_plugin ${_qml_plugins})
   list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
 endforeach()
 
+# install QtGraphicalEffects (which is not a lib but only qml files)
+set(_qml_subdir QtGraphicalEffects)
+getQtQmlPath(_qt_qml_path)
+install(DIRECTORY ${_qt_qml_path}/QtGraphicalEffects DESTINATION ${_qt_qml_destdir})
+
 # Hack: do not fixup Qt and Qml plugins on Windows because fixup_bundle takes ages (cmake bug ?)
 if(CMAKE_HOST_WIN32)
   set(GCOMPRIS_OTHER_LIBS "")
