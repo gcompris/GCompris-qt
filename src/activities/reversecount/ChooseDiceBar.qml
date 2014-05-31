@@ -58,8 +58,5 @@ Item {
             width: height * 2
         }
     }
-
-    Behavior on opacity { PropertyAnimation { duration: 500 } }
-
 }
 

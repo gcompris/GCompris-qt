@@ -83,6 +83,8 @@ Item {
                 border.color: item.borderColor
                 radius: item.radius
                 opacity: isVisible(index)
+
+                Behavior on opacity { PropertyAnimation { duration: 200 } }
             }
         }
     }
