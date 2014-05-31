@@ -37,22 +37,6 @@ var placeFishToReachBool = false
 
 var level = null;
 
-
-var dices = [
-            "dice0.svgz",
-            "dice1.svgz",
-            "dice2.svgz",
-            "dice3.svgz",
-            "dice4.svgz",
-            "dice5.svgz",
-            "dice6.svgz",
-            "dice7.svgz",
-            "dice8.svgz",
-            "dice9.svgz"
-        ]
-
-
-
 var fishes = [
             "Anonymous_bofish.svgz",
             "Benzfish.svgz",
@@ -94,14 +78,12 @@ var clocks = [
 
 var levels = [
             {
-                "sublevels" : 6,
                 "questions" : [
                     2,
                     3
                 ]
             },
             {
-                "sublevels" : 6,
                 "questions" : [
                     2,
                     3,
@@ -113,7 +95,6 @@ var levels = [
                 ]
             },
             {
-                "sublevels" : 6,
                 "questions" : [
                     7,
                     10,
@@ -124,7 +105,6 @@ var levels = [
                 ]
             },
             {
-                "sublevels" : "6",
                 "questions" : [
                     10,
                     21,
@@ -135,7 +115,6 @@ var levels = [
                 ]
             },
             {
-                "sublevels" : 6,
                 "questions" : [
                     13,
                     19,
@@ -151,8 +130,6 @@ var levels = [
 var fishesPos = new Array();
 var fishPos = 0
 
-var currentDice1Index = 0
-var currentDice2Index = 0
 var fishIndex = -1
 
 var currentLevel = 0
@@ -183,10 +160,8 @@ function initLevel() {
     fishesPos = level.questions
 
 
-    currentDice1Index = 0
-    currentDice2Index = 0
-    items.chooseDiceBar.currentDice1ImageName = dices[currentDice1Index]
-    items.chooseDiceBar.currentDice2ImageName = dices[currentDice2Index]
+    items.chooseDiceBar.value1 = 0
+    items.chooseDiceBar.value2 = 0
 
     fishIndex = 0
     clockPos = 4
@@ -210,7 +185,7 @@ function moveTux() {
             return
         }
     }
-    else if (currentDice1Index != 0 || currentDice2Index != 0 ) {
+    else if (items.chooseDiceBar.value1 != 0 || items.chooseDiceBar.value2 != 0 ) {
         moveTuxToNextIceBlock()
     }
 }
@@ -290,7 +265,7 @@ function tuxRunningChanged() {
 
 
 function calculateTuxIceBlockNextPos() {
-    tuxIceBlockNumberGoal = tuxIceBlockNumber + currentDice1Index + currentDice2Index
+    tuxIceBlockNumberGoal = tuxIceBlockNumber + items.chooseDiceBar.value1 + items.chooseDiceBar.value2
     tuxIceBlockNumberGoal = tuxIceBlockNumberGoal % iceBlocksLayout.length
 }
 
@@ -308,35 +283,6 @@ function setClock() {
     items.clock.source = url + clocks[clockPos]
 }
 
-
-function nextDice1() {
-    currentDice1Index++;
-    if (currentDice1Index > 8)
-        currentDice1Index = 0;
-    items.chooseDiceBar.currentDice1ImageName = dices[currentDice1Index]
-}
-
-function previousDice1() {
-    currentDice1Index--;
-    if (currentDice1Index < 0)
-        currentDice1Index = 8;
-    items.chooseDiceBar.currentDice1ImageName = dices[currentDice1Index]
-}
-
-
-function nextDice2() {
-    currentDice2Index++;
-    if (currentDice2Index > 8)
-        currentDice2Index = 0;
-    items.chooseDiceBar.currentDice2ImageName = dices[currentDice2Index]
-}
-
-function previousDice2() {
-    currentDice2Index--;
-    if (currentDice2Index < 0)
-        currentDice2Index = 8;
-    items.chooseDiceBar.currentDice2ImageName = dices[currentDice2Index]
-}
 
 function nextLevel() {
     if(numberOfLevel <= ++currentLevel ) {

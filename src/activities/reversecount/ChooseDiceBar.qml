@@ -27,24 +27,14 @@ import "reversecount.js" as Activity
 
 Item {
     id: chooseDiceBar
-
-    property string currentDice1ImageName: "dice0.svgz"
-    property string currentDice2ImageName: "dice0.svgz"
-
     width: barRow.width
     height: barRow.height - 30
     z: 1000
-    property real barZoom: 1.2 * ApplicationInfo.ratio
-    property int level: 0
-    signal okClicked
-    signal dice1Clicked
-    signal dice1RightClicked
-    signal dice2Clicked
-    signal dice2RightClicked
 
-    function toggle() {
-        opacity = (opacity == 0 ? 1.0 : 0)
-    }
+    property int value1: 0
+    property int value2: 0
+
+    property real barZoom: 1.2 * ApplicationInfo.ratio
 
     Row {
         id: barRow
@@ -54,25 +44,47 @@ Item {
         Button {
             source: "qrc:/gcompris/src/core/resource/bar_ok.svgz";
             sourceSize.width: activity.width / 10
-            onClicked: chooseDiceBar.okClicked()
+            onClicked: Activity.moveTux()
         }
         Button {
             id: dice1
-            source: Activity.url + items.chooseDiceBar.currentDice1ImageName
+            source: Activity.url + "dice" + value1 + ".svgz"
             sourceSize.width: activity.width / 10
-            onClicked: chooseDiceBar.dice1Clicked()
-            onRightClicked: chooseDiceBar.dice1RightClicked()
+            onClicked: {
+                if (value1 >= 8)
+                    value1 = 0
+                else
+                    value1++
+            }
+            onRightClicked: {
+                if (value1 == 0)
+                    value1 = 8;
+                else
+                    value1--;
+            }
        }
         Button {
             id: dice2
-            source: Activity.url + items.chooseDiceBar.currentDice2ImageName
+            source: Activity.url + "dice" + value2 + ".svgz"
             sourceSize.width: activity.width / 10
-            onClicked: chooseDiceBar.dice2Clicked()
-            onRightClicked: chooseDiceBar.dice2RightClicked()
+            onClicked: {
+                if (value2 >= 8)
+                    value2 = 0;
+                else
+                    value2++
+            }
+            onRightClicked: {
+                if (value2 == 0)
+                    value2 = 8;
+                else
+                    value2--;
+            }
        }
 
         Item { width: 10; height: 1 }
     }
 
     Behavior on opacity { PropertyAnimation { duration: 500 } }
+
 }
+

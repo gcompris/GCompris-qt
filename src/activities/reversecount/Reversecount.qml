@@ -149,14 +149,8 @@ ActivityBase {
 
         ChooseDiceBar {
             id: chooseDiceBar
-
             x: activity.width / 2 - chooseDiceBar.width/2
             y: activity.height / 2 - chooseDiceBar.height
-            onOkClicked: Activity.moveTux()
-            onDice1Clicked: Activity.nextDice1()
-            onDice1RightClicked: Activity.previousDice1()
-            onDice2Clicked: Activity.nextDice2()
-            onDice2RightClicked: Activity.previousDice2()
         }
 
     }
