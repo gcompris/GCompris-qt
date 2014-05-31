@@ -102,15 +102,14 @@ ActivityBase {
 
         Tux {
             id: tux
-            width: activity.width / 6
-            height: activity.height / 6
+            sourceSize.width: Math.min(activity.width / 6, activity.height / 6)
+            z: 11
         }
 
 
         Image {
             id: fishToReach
-            width: activity.width / 6
-            height: activity.height / 6
+            sourceSize.width: Math.min(activity.width / 6, activity.height / 6)
             z: 10
 
             function showParticles() {

@@ -48,28 +48,18 @@ var placeFishToReachBool = false
 var level = null;
 
 var fishes = [
-            "Anonymous_bofish.svgz",
             "Benzfish.svgz",
             "blue-fish.svgz",
             "drunken_duck_cartoon_globefish_kugelfisch.svgz",
             "Fish02.svgz",
-            "fish-1.svgz",
-            "fish-carib.svgz",
-            "Gloss_Fish_1.svgz",
-            "Gloss_Fish_2.svgz",
             "molumen_Codfish.svgz",
             "mystica_Aquarium_fish_-_Amphiprion_percula.svgz",
-            "mystica_Aquarium_fish_-_Cirrhilabrus_jordani.svgz",
-            "mystica_Aquarium_fish_-_Xiphophorus_maculatus.svgz",
             "pepinux_Pez_dorado.svgz",
             "The_Whale-Fish.svgz",
-            "Anonymous_bofish.svgz",
             "Benzfish.svgz",
             "blue-fish.svgz",
             "drunken_duck_cartoon_globefish_kugelfisch.svgz",
-            "Fish02.svgz",
-            "fish-1.svgz",
-            "fish-carib.svgz",
+            "Fish02.svgz"
         ]
 
 var clocks = [
