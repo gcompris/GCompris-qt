@@ -137,8 +137,7 @@ var levels = [
 
         ]
 
-var fishesPos = new Array();
-var fishPos = 0
+var fishesPos
 
 var fishIndex = -1
 
@@ -177,7 +176,7 @@ function initLevel() {
     setClock()
     tuxIceBlockNumber = 0
     items.tux.init()
-    items.background.source = url + backgrounds[currentLevel % backgrounds.length]
+    items.backgroundImg.source = url + backgrounds[currentLevel % backgrounds.length]
 }
 
 
@@ -216,7 +215,7 @@ function moveTuxToNextIceBlock() {
 
     moveTuxToIceBlock()
 
-    fishPos = fishesPos[fishIndex] % iceBlocksLayout.length
+    var fishPos = fishesPos[fishIndex] % iceBlocksLayout.length
     //if tux reaches its position + dice number
     if (tuxIceBlockNumber == fishPos) {
         tuxIsMoving = false;

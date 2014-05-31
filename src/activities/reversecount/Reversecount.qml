@@ -33,11 +33,11 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Image {
+    pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        source: Activity.url + Activity.backgrounds[0]
-        fillMode: Image.PreserveAspectCrop
+        color: "#ff00a4b0"
+
         signal start
         signal stop
 
@@ -51,6 +51,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property alias backgroundImg: backgroundImg
             property alias bar: bar
             property alias bonus: bonus
             property alias chooseDiceBar: chooseDiceBar
@@ -77,6 +78,14 @@ ActivityBase {
             }
         }
 
+        Image {
+            id: backgroundImg
+            source: Activity.url + Activity.backgrounds[0]
+            sourceSize.height: parent.height * 0.5
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
+        }
+
         // === The ice blocks ===
         Repeater {
             model: Activity.iceBlocksLayout
@@ -97,14 +106,6 @@ ActivityBase {
             height: activity.height / 6
         }
 
-
-        Image {
-            id: clock
-            x: activity.width  - clock.width
-            y: activity.height - clock.height
-            width: activity.width / 8
-            height: activity.height / 6
-        }
 
         Image {
             id: fishToReach
@@ -138,6 +139,16 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+        }
+
+        Image {
+            id: clock
+            anchors {
+                left: bar.right
+                bottom: bar.bottom
+                bottomMargin: 10
+            }
+            sourceSize.width: 66 * bar.barZoom
         }
 
 
