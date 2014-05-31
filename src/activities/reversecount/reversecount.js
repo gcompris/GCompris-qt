@@ -62,19 +62,6 @@ var fishes = [
             "Fish02.svgz"
         ]
 
-var clocks = [
-            "clock1.png",  //not very elegant but it allows to have an index corresponding to the clock level
-            "clock1.png",
-            "clock2.png",
-            "clock3.png",
-            "clock4.png",
-            "clock5.png",
-            "clock6.png",
-            "clock7.png",
-            "clock8.png",
-            "clock9.png",
-            "clock10.png"
-        ]
 
 var levels = [
             {
@@ -283,7 +270,7 @@ function placeFishToReach(fishIndex) {
 
 
 function setClock() {
-    items.clock.source = url + clocks[clockPos]
+    items.clock.source = url + "clock" + clockPos + ".png"
 }
 
 
