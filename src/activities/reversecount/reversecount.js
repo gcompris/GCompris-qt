@@ -241,10 +241,12 @@ function moveTuxToNextIceBlock() {
 
 
 function moveTuxToIceBlock() {
-    items.tux.x = (iceBlocksLayout[tuxIceBlockNumber][0] *
-                   items.background.width / 5).toFixed()
+    items.tux.x = iceBlocksLayout[tuxIceBlockNumber][0] *
+            items.background.width / 5 +
+            (items.background.width / 5 - items.tux.width) / 2
     items.tux.y = iceBlocksLayout[tuxIceBlockNumber][1] *
-            (items.background.height - items.background.height/5) / 5
+            (items.background.height - items.background.height/5) / 5 +
+            (items.background.height / 5 - items.tux.height) / 2
 }
 
 
@@ -270,9 +272,12 @@ function calculateTuxIceBlockNextPos() {
 
 function placeFishToReach(fishIndex) {
     fishIndex = fishIndex % iceBlocksLayout.length
-    items.fishToReach.source = url + fishes[fishIndex]
-    items.fishToReach.x = iceBlocksLayout[fishIndex][0] * items.background.width / 5
-    items.fishToReach.y = iceBlocksLayout[fishIndex][1] * (items.background.height - items.background.height/5) / 5
+    items.fishToReach.source = url + fishes[fishIndex % fishes.length]
+    items.fishToReach.x = iceBlocksLayout[fishIndex][0] * items.background.width / 5 +
+            (items.background.width / 5 - items.tux.width) / 2
+    items.fishToReach.y = iceBlocksLayout[fishIndex][1] *
+            (items.background.height - items.background.height/5) / 5 +
+            (items.background.height / 5 - items.tux.height) / 2
 }
 
 
