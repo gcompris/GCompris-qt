@@ -28,6 +28,16 @@ var iceBlocksLayout = [[0, 0],[1, 0],[2, 0],[3, 0],[4, 0],
                        [2, 4],[1, 4],[0, 4],[0, 3],[0, 2],
                        [0, 1]]
 
+var backgrounds = [
+            "baleine.svgz",
+            "phoque.svgz",
+            "ourspolaire.svgz",
+            "morse.svgz",
+            "elephant_mer.svgz",
+            "epaulard.svgz",
+            "narval.svgz"
+        ]
+
 var tuxIceBlockNumber = 0
 var tuxIceBlockNumberGoal = 0
 var tuxIsMoving = false;
@@ -155,10 +165,8 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
 
-
     level = levels[currentLevel];
     fishesPos = level.questions
-
 
     items.chooseDiceBar.value1 = 0
     items.chooseDiceBar.value2 = 0
@@ -169,6 +177,7 @@ function initLevel() {
     setClock()
     tuxIceBlockNumber = 0
     items.tux.init()
+    items.background.source = url + backgrounds[currentLevel % backgrounds.length]
 }
 
 

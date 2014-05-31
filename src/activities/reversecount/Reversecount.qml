@@ -33,10 +33,11 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
         anchors.fill: parent
-        color: "#ABCDEF"
+        source: Activity.url + Activity.backgrounds[0]
+        fillMode: Image.PreserveAspectCrop
         signal start
         signal stop
 
@@ -127,7 +128,6 @@ ActivityBase {
             id: dialogHelp
             onClose: home()
         }
-
 
         Bar {
             id: bar
