@@ -225,10 +225,10 @@ function moveTuxToNextIceBlock() {
 
 
 function moveTuxToIceBlock() {
-    items.tux.x = iceBlocksLayout[tuxIceBlockNumber][0] *
+    items.tux.x = iceBlocksLayout[tuxIceBlockNumber % iceBlocksLayout.length][0] *
             items.background.width / 5 +
             (items.background.width / 5 - items.tux.width) / 2
-    items.tux.y = iceBlocksLayout[tuxIceBlockNumber][1] *
+    items.tux.y = iceBlocksLayout[tuxIceBlockNumber % iceBlocksLayout.length][1] *
             (items.background.height - items.background.height/5) / 5 +
             (items.background.height / 5 - items.tux.height) / 2
 }
@@ -251,7 +251,6 @@ function tuxRunningChanged() {
 function calculateTuxIceBlockNextPos() {
     tuxIceBlockNumberGoal = tuxIceBlockNumber +
             items.chooseDiceBar.value1 + items.chooseDiceBar.value2
-    tuxIceBlockNumberGoal = tuxIceBlockNumberGoal % iceBlocksLayout.length
     // Increase Tux's speed depending on the number of blocks to move
     items.tux.duration = 1000 -
             (items.chooseDiceBar.value1 + items.chooseDiceBar.value2) * 40
@@ -269,14 +268,14 @@ function calculateNextPlaceFishToReach() {
     previousFishIndex = newFishIndex
 
     fishIndex = tuxIceBlockNumber + newFishIndex
-    fishIndex = fishIndex % iceBlocksLayout.length
 }
 
 function placeFishToReach() {
     items.fishToReach.source = url + fishes[fishIndex % fishes.length]
-    items.fishToReach.x = iceBlocksLayout[fishIndex][0] * items.background.width / 5 +
+    items.fishToReach.x = iceBlocksLayout[fishIndex % iceBlocksLayout.length][0] *
+            items.background.width / 5 +
             (items.background.width / 5 - items.tux.width) / 2
-    items.fishToReach.y = iceBlocksLayout[fishIndex][1] *
+    items.fishToReach.y = iceBlocksLayout[fishIndex % iceBlocksLayout.length][1] *
             (items.background.height - items.background.height/5) / 5 +
             (items.background.height / 5 - items.tux.height) / 2
 }
