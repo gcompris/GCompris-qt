@@ -68,32 +68,19 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
 
 {
     m_config.beginGroup(GENERAL_GROUP_KEY);
-    // Default values if file does not exist
-    if(!m_config.contains(FULLSCREEN_KEY)) {
-        m_config.setValue(ENABLE_EFFECTS_KEY, true);
-        m_config.setValue(FULLSCREEN_KEY, true);
-        m_config.setValue(ENABLE_AUDIO_KEY, true);
-        m_config.setValue(VIRTUALKEYBOARD_KEY, ApplicationInfo::getInstance()->isMobile());
-        m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, !ApplicationInfo::getInstance()->isMobile());
-        // Get locale, if "C", put default locale
-        QLocale systemLocale = QLocale::system();
-        if(systemLocale == QLocale::c()) {
-            m_config.setValue(LOCALE_KEY, GC_DEFAULT_LOCALE);
-        }
-        else {
-            m_config.setValue(LOCALE_KEY, systemLocale.name() + ".UTF-8");
-        }
-        m_config.sync();
-    }
-
-    m_isEffectEnabled = m_config.value(ENABLE_EFFECTS_KEY).toBool();
-    m_isFullscreen = m_config.value(FULLSCREEN_KEY).toBool();
-    m_isAudioEnabled = m_config.value(ENABLE_AUDIO_KEY).toBool();
-    m_isVirtualKeyboard = m_config.value(VIRTUALKEYBOARD_KEY).toBool();
-    m_locale = m_config.value(LOCALE_KEY).toString();
-    m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS).toBool();
-
+    // initialize from settings file (or default)
+    m_isEffectEnabled = m_config.value(ENABLE_EFFECTS_KEY, true).toBool();
+    m_isFullscreen = m_config.value(FULLSCREEN_KEY, true).toBool();
+    m_isAudioEnabled = m_config.value(ENABLE_AUDIO_KEY, true).toBool();
+    m_isVirtualKeyboard = m_config.value(VIRTUALKEYBOARD_KEY,
+            ApplicationInfo::getInstance()->isMobile()).toBool();
+    m_locale = m_config.value(LOCALE_KEY,
+            QLocale::system() == QLocale::c() ? GC_DEFAULT_LOCALE : QString(QLocale::system().name() + ".UTF-8")).toString();
+    m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
+            !ApplicationInfo::getInstance()->isMobile()).toBool();
+    m_config.sync();  // make sure all defaults are written back
     m_config.endGroup();
+
     connect(this, SIGNAL(audioEnabledChanged()), this, SLOT(notifyAudioEnabledChanged()));
     connect(this, SIGNAL(fullscreenChanged()), this, SLOT(notifyFullscreenChanged()));
     connect(this, SIGNAL(localeChanged()), this, SLOT(notifyLocaleChanged()));
@@ -103,6 +90,16 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
 
 ApplicationSettings::~ApplicationSettings()
 {
+    // make sure settings file is up2date:
+    m_config.beginGroup(GENERAL_GROUP_KEY);
+    m_config.setValue(ENABLE_AUDIO_KEY, m_isAudioEnabled);
+    m_config.setValue(LOCALE_KEY, m_locale);
+    m_config.setValue(FULLSCREEN_KEY, m_isFullscreen);
+    m_config.setValue(VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
+    m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
+    m_config.endGroup();
+    m_config.sync();
+
     m_instance = NULL;
 }
 
