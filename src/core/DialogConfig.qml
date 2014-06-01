@@ -143,6 +143,23 @@ Rectangle {
                                 isVirtualKeyboard = checked;
                             }
                         }
+                        
+                        CheckBox {
+                            id: enableAutomaticDownloadsBox
+                            text: qsTr("Enable automatic downloads/updates of sound files")
+                            checked: isAutomaticDownloadsEnabled
+                            style: CheckBoxStyle {
+                                indicator: Image {
+                                    sourceSize.height: 50 * ApplicationInfo.ratio
+                                    source:
+                                        control.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
+                                                          "qrc:/gcompris/src/core/resource/cancel.svgz"
+                                }
+                            }
+                            onCheckedChanged: {
+                                isAutomaticDownloadsEnabled = checked;
+                            }
+                        }
 
                         ComboBox {
                             id: languageBox
@@ -253,6 +270,7 @@ Rectangle {
     property bool isAudioEnabled: ApplicationSettings.isAudioEnabled
     property bool isFullscreen: ApplicationSettings.isFullscreen
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
+    property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
 
     onStart: {
         // Synchronize settings with data
@@ -264,6 +282,9 @@ Rectangle {
 
         isVirtualKeyboard = ApplicationSettings.isVirtualKeyboard
         enableVirtualKeyboardBox.checked = isVirtualKeyboard
+
+        isAutomaticDownloadsEnabled = ApplicationSettings.isAutomaticDownloadsEnabled
+        enableAutomaticDownloadsBox.checked = isAutomaticDownloadsEnabled
 
         // Set locale
         for(var i = 0 ; i < languages.count ; i ++) {
@@ -278,6 +299,7 @@ Rectangle {
         ApplicationSettings.isAudioEnabled = isAudioEnabled
         ApplicationSettings.isFullscreen = isFullscreen
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
+        ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
         if (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale) {
             ApplicationSettings.locale = languages.get(languageBox.currentIndex).locale
             if (!DownloadManager.haveLocalResource(DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort))) {
@@ -327,6 +349,8 @@ Rectangle {
         return (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale ||
                 (ApplicationSettings.isAudioEnabled != isAudioEnabled) ||
                 (ApplicationSettings.isFullscreen != isFullscreen) ||
-                (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard));
+                (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard) ||
+                (ApplicationSettings.isAutomaticDownloadsEnabled != isAutomaticDownloadsEnabled)
+                );
     }
 }

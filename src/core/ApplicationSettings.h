@@ -17,6 +17,7 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(bool isFullscreen READ isFullscreen WRITE setFullscreen NOTIFY fullscreenChanged)
     Q_PROPERTY(bool isVirtualKeyboard READ isVirtualKeyboard WRITE setVirtualKeyboard NOTIFY virtualKeyboardChanged)
     Q_PROPERTY(QString locale READ locale WRITE setLocale NOTIFY localeChanged)
+    Q_PROPERTY(bool isAutomaticDownloadsEnabled READ isAutomaticDownloadsEnabled WRITE setIsAutomaticDownloadsEnabled NOTIFY automaticDownloadsEnabledChanged)
 
 public:
 
@@ -65,12 +66,19 @@ public:
         emit localeChanged();
     }
 
+    bool isAutomaticDownloadsEnabled() const { return m_isAutomaticDownloadsEnabled; }
+    void setIsAutomaticDownloadsEnabled(const bool newIsAutomaticDownloadsEnabled) {
+        m_isAutomaticDownloadsEnabled = newIsAutomaticDownloadsEnabled;
+        emit automaticDownloadsEnabledChanged();
+    }
+
 protected slots:
     Q_INVOKABLE void notifyAudioEnabledChanged();
     Q_INVOKABLE void notifyEffectEnabledChanged() {}
     Q_INVOKABLE void notifyFullscreenChanged();
     Q_INVOKABLE void notifyVirtualKeyboardChanged();
     Q_INVOKABLE void notifyLocaleChanged();
+    Q_INVOKABLE void notifyAutomaticDownloadsEnabledChanged();
 
 protected:
 
@@ -80,6 +88,7 @@ signals:
     void fullscreenChanged();
     void virtualKeyboardChanged();
     void localeChanged();
+    void automaticDownloadsEnabledChanged();
 
 private:
     static ApplicationSettings *m_instance;
@@ -87,6 +96,7 @@ private:
     bool m_isEffectEnabled;
     bool m_isFullscreen;
     bool m_isVirtualKeyboard;
+    bool m_isAutomaticDownloadsEnabled;
 
     QString m_locale;
 

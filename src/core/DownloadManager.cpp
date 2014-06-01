@@ -20,6 +20,7 @@
  */
 
 #include "DownloadManager.h"
+#include "ApplicationSettings.h"
 
 #include <QFile>
 #include <QDir>
@@ -121,7 +122,7 @@ bool DownloadManager::updateResource(const QString& path)
  * @returns success*/
 bool DownloadManager::downloadResource(const QString& path)
 {
-    //qDebug() << "Downloading resource file" << path;
+    qDebug() << "Downloading resource file" << path;
     DownloadJob* job = new DownloadJob(QUrl(serverUrl.toString() + "/" + path));
 
     {
@@ -297,16 +298,17 @@ QString  DownloadManager::getSystemResourcePath() const
 bool DownloadManager::checkDownloadRestriction() const
 {
 #if 0
-    // note: Bearer mgmt not yet implemented for android (cf. #30394)
+    // note: Something like the following can be used once bearer mgmt
+    // has been implemented for android (cf. Qt bug #30394)
     QNetworkConfiguration::BearerType conn = networkConfiguration.bearerType();
     qDebug() << "Bearer type: "<<  conn << ": "<< networkConfiguration.bearerTypeName();
-    if (!getSetting("MobileNetworkDownload") &&
+    if (!ApplicationSettings::getInstance()->isMobileNetworkDownloadsEnabled()) &&
         conn != QNetworkConfiguration::BearerEthernet &&
         conn != QNetworkConfiguration::QNetworkConfiguration::BearerWLAN)
         return false;
     return true;
 #endif
-    return true; // FIXME: use ApplicationSettings
+    return ApplicationSettings::getInstance()->isAutomaticDownloadsEnabled();
 }
 
 void DownloadManager::handleError(QNetworkReply::NetworkError code)

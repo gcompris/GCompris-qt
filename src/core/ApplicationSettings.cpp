@@ -59,6 +59,7 @@ static const QString ENABLE_AUDIO_KEY = "enableSounds";
 static const QString ENABLE_EFFECTS_KEY = "enableEffects";
 static const QString VIRTUALKEYBOARD_KEY = "virtualKeyboard";
 static const QString LOCALE_KEY = "locale";
+static const QString ENABLE_AUTOMATIC_DOWNLOADS = "enableAutomaticDownloads";
 
 ApplicationSettings *ApplicationSettings::m_instance = NULL;
 
@@ -73,6 +74,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
         m_config.setValue(FULLSCREEN_KEY, true);
         m_config.setValue(ENABLE_AUDIO_KEY, true);
         m_config.setValue(VIRTUALKEYBOARD_KEY, ApplicationInfo::getInstance()->isMobile());
+        m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, !ApplicationInfo::getInstance()->isMobile());
         // Get locale, if "C", put default locale
         QLocale systemLocale = QLocale::system();
         if(systemLocale == QLocale::c()) {
@@ -89,12 +91,14 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_isAudioEnabled = m_config.value(ENABLE_AUDIO_KEY).toBool();
     m_isVirtualKeyboard = m_config.value(VIRTUALKEYBOARD_KEY).toBool();
     m_locale = m_config.value(LOCALE_KEY).toString();
+    m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS).toBool();
 
     m_config.endGroup();
     connect(this, SIGNAL(audioEnabledChanged()), this, SLOT(notifyAudioEnabledChanged()));
     connect(this, SIGNAL(fullscreenChanged()), this, SLOT(notifyFullscreenChanged()));
     connect(this, SIGNAL(localeChanged()), this, SLOT(notifyLocaleChanged()));
     connect(this, SIGNAL(virtualKeyboardChanged()), this, SLOT(notifyVirtualKeyboardChanged()));
+    connect(this, SIGNAL(automaticDownloadsEnabledChanged()), this, SLOT(notifyAutomaticDownloadsEnabledChanged()));
 }
 
 ApplicationSettings::~ApplicationSettings()
@@ -139,6 +143,16 @@ void ApplicationSettings::notifyVirtualKeyboardChanged()
     m_config.setValue(VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
     m_config.endGroup();
     qDebug() << "virtualkeyboard set to: " << m_isVirtualKeyboard;
+    m_config.sync();
+}
+
+void ApplicationSettings::notifyAutomaticDownloadsEnabledChanged()
+{
+    // Save in config
+    m_config.beginGroup(GENERAL_GROUP_KEY);
+    m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
+    m_config.endGroup();
+    qDebug() << "enableAutomaticDownloads set to: " << m_isAutomaticDownloadsEnabled;
     m_config.sync();
 }
 
