@@ -19,6 +19,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.2
+import QtQuick.Controls 1.0
 import GCompris 1.0
 
 Item {
@@ -90,22 +91,60 @@ Item {
         }
     }
 
+    function up() {
+        if(item.value == item.valueMax)
+            item.value = 0
+        else
+            item.value++
+    }
+
+    function down() {
+        if(item.value == 0)
+            item.value = item.valueMax
+        else
+            item.value--
+    }
+
     MouseArea {
+        enabled: !ApplicationInfo.isMobile
         anchors.fill: parent
         acceptedButtons: Qt.LeftButton | Qt.RightButton
         onClicked: {
-            if (mouse.button == Qt.LeftButton) {
-                if(item.value == item.valueMax)
-                    item.value = 0
+            if (mouse.button == Qt.LeftButton)
+                up()
+            else
+                down()
+        }
+    }
+
+    property bool goUp
+    Timer {
+        id: timer
+        interval: 500
+        repeat: true
+        onTriggered: goUp ? up() : down()
+    }
+
+    MultiPointTouchArea
+    {
+        enabled: ApplicationInfo.isMobile
+        anchors.fill: parent
+        maximumTouchPoints: 1
+        onPressed: {
+            goUp = true
+            up()
+            timer.start()
+        }
+        onTouchUpdated: {
+            if(touchPoints.length) {
+                var touch = touchPoints[0]
+                if(touch.y < parent.y + parent.height)
+                    goUp = true
                 else
-                    item.value++
-            } else {
-                if(item.value == 0)
-                    item.value = item.valueMax
-                else
-                    item.value--
+                    goUp = false
             }
         }
+        onReleased: timer.stop()
     }
 
 }
