@@ -67,14 +67,14 @@ ActivityBase {
 
         onWidthChanged: {
             if(Activity.fishIndex > 0) {
-                Activity.placeFishToReach(Activity.fishesPos[Activity.fishIndex])
+                Activity.placeFishToReach(Activity.fishIndex)
                 Activity.moveTuxToIceBlock()
             }
         }
 
         onHeightChanged: {
             if(Activity.fishIndex > 0) {
-                Activity.placeFishToReach(Activity.fishesPos[Activity.fishIndex])
+                Activity.placeFishToReach(Activity.fishIndex)
                 Activity.moveTuxToIceBlock()
             }
         }

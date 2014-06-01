@@ -138,6 +138,9 @@ function initLevel() {
     setClock()
     tuxIceBlockNumber = 0
     items.tux.init()
+
+    fishIndex = tuxIceBlockNumber + Math.floor(Math.random() *
+                                               levels[currentLevel].maxNumber * 2) + 1
     placeFishToReach()
     items.backgroundImg.source = url + backgrounds[currentLevel % backgrounds.length]
 }
@@ -248,8 +251,6 @@ function calculateTuxIceBlockNextPos() {
 
 
 function placeFishToReach() {
-    fishIndex = tuxIceBlockNumber + Math.floor(Math.random() *
-                                               levels[currentLevel].maxNumber * 2) + 1
     fishIndex = fishIndex % iceBlocksLayout.length
     items.fishToReach.source = url + fishes[fishIndex % fishes.length]
     items.fishToReach.x = iceBlocksLayout[fishIndex][0] * items.background.width / 5 +
