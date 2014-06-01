@@ -27,7 +27,7 @@ ActivityBase {
         },
         {
             icon: menuActivity.url + "experience.svgz",
-            tag: "experience"
+            tag: "experiment"
         },
         {
             icon: menuActivity.url + "fun.svgz",
