@@ -5,6 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Emmanuel Charruau <echarruau@gmail.com> (Qt Quick port)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Major rework)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
