@@ -65,62 +65,49 @@ var fishes = [
 
 var levels = [
             {
-                "questions" : [
-                    2,
-                    3
-                ]
+                "maxNumber": 1,
+                "numberOfFish": 3
             },
             {
-                "questions" : [
-                    2,
-                    3,
-                    6,
-                    8,
-                    12,
-                    16,
-                    22
-                ]
+                "maxNumber": 2,
+                "numberOfFish": 4
             },
             {
-                "questions" : [
-                    7,
-                    10,
-                    15,
-                    21,
-                    22,
-                    31
-                ]
+                "maxNumber": 3,
+                "numberOfFish": 5
             },
             {
-                "questions" : [
-                    10,
-                    21,
-                    25,
-                    28,
-                    34,
-                    40
-                ]
+                "maxNumber": 4,
+                "numberOfFish": 5
             },
             {
-                "questions" : [
-                    13,
-                    19,
-                    31,
-                    42,
-                    51,
-                    56
-                ]
-            }
+                "maxNumber": 5,
+                "numberOfFish": 5
+            },
+            {
+                "maxNumber": 6,
+                "numberOfFish": 5
+            },
+            {
+                "maxNumber": 7,
+                "numberOfFish": 5
+            },
+            {
+                "maxNumber": 8,
+                "numberOfFish": 5
+            },
+            {
+                "maxNumber": 9,
+                "numberOfFish": 5
+            },
 
         ]
 
-var fishesPos
-
+var numberOfFish
 var fishIndex = -1
 
 var currentLevel = 0
-var currentSubLevel = 0
-var numberOfLevel = 4
+var numberOfLevel = levels.length
 var items
 
 var url = "qrc:/gcompris/src/activities/reversecount/resource/"
@@ -129,7 +116,6 @@ var url = "qrc:/gcompris/src/activities/reversecount/resource/"
 function start(items_) {
     items = items_
     currentLevel = 0
-    currentSubLevel = 0
     initLevel()
 }
 
@@ -141,18 +127,17 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
 
-    level = levels[currentLevel];
-    fishesPos = level.questions
-
     items.chooseDiceBar.value1 = 0
     items.chooseDiceBar.value2 = 0
+    items.chooseDiceBar.valueMax = levels[currentLevel].maxNumber
+    numberOfFish = levels[currentLevel].numberOfFish
 
     fishIndex = 0
     clockPos = 4
-    placeFishToReach(fishesPos[0])
     setClock()
     tuxIceBlockNumber = 0
     items.tux.init()
+    placeFishToReach()
     items.backgroundImg.source = url + backgrounds[currentLevel % backgrounds.length]
 }
 
@@ -160,7 +145,7 @@ function initLevel() {
 function moveTux() {
     calculateTuxIceBlockNextPos()
 
-    if (tuxIceBlockNumberGoal > fishesPos[fishIndex])
+    if (tuxIceBlockNumberGoal > fishIndex)
     {
         clockPos--
         setClock()
@@ -192,13 +177,13 @@ function moveTuxToNextIceBlock() {
 
     moveTuxToIceBlock()
 
-    var fishPos = fishesPos[fishIndex] % iceBlocksLayout.length
+    var fishPos = fishIndex % iceBlocksLayout.length
     //if tux reaches its position + dice number
     if (tuxIceBlockNumber == fishPos) {
         tuxIsMoving = false;
 
-        //if last fish reached
-        if (fishIndex + 1 === level.questions.length) {
+        // if last fish reached
+        if (--numberOfFish == 0) {
             won()
             items.fishToReach.showParticles()
             clockPos++
@@ -244,7 +229,7 @@ function tuxRunningChanged() {
         moveTuxToNextIceBlock()
     } else {
         if (placeFishToReachBool == true) {
-            placeFishToReach(fishesPos[fishIndex])
+            placeFishToReach(fishIndex)
             placeFishToReachBool = false
         }
     }
@@ -257,7 +242,9 @@ function calculateTuxIceBlockNextPos() {
 }
 
 
-function placeFishToReach(fishIndex) {
+function placeFishToReach() {
+    fishIndex = tuxIceBlockNumber + Math.floor(Math.random() *
+                                               levels[currentLevel].maxNumber * 2) + 1
     fishIndex = fishIndex % iceBlocksLayout.length
     items.fishToReach.source = url + fishes[fishIndex % fishes.length]
     items.fishToReach.x = iceBlocksLayout[fishIndex][0] * items.background.width / 5 +
