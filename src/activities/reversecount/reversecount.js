@@ -66,39 +66,48 @@ var fishes = [
 
 var levels = [
             {
-                "maxNumber": 1,
+                "maxNumber": 1, /* Max number on each domino side */
+                "minNumber": 1,
                 "numberOfFish": 3
             },
             {
                 "maxNumber": 2,
+                "minNumber": 1,
                 "numberOfFish": 4
             },
             {
                 "maxNumber": 3,
+                "minNumber": 1,
                 "numberOfFish": 5
             },
             {
                 "maxNumber": 4,
+                "minNumber": 1,
                 "numberOfFish": 5
             },
             {
                 "maxNumber": 5,
+                "minNumber": 2,
                 "numberOfFish": 5
             },
             {
                 "maxNumber": 6,
+                "minNumber": 3,
                 "numberOfFish": 5
             },
             {
                 "maxNumber": 7,
+                "minNumber": 4,
                 "numberOfFish": 5
             },
             {
                 "maxNumber": 8,
+                "minNumber": 4,
                 "numberOfFish": 5
             },
             {
                 "maxNumber": 9,
+                "minNumber": 5,
                 "numberOfFish": 5
             },
 
@@ -253,11 +262,14 @@ function calculateNextPlaceFishToReach() {
     var newFishIndex
     do {
         newFishIndex = Math.floor(Math.random() *
-                                  levels[currentLevel].maxNumber * 2) + 1
+                                  (levels[currentLevel].maxNumber * 2 -
+                                   levels[currentLevel].minNumber + 1)) +
+                levels[currentLevel].minNumber
     } while(previousFishIndex === newFishIndex)
+    previousFishIndex = newFishIndex
+
     fishIndex = tuxIceBlockNumber + newFishIndex
     fishIndex = fishIndex % iceBlocksLayout.length
-    previousFishIndex = newFishIndex
 }
 
 function placeFishToReach() {
