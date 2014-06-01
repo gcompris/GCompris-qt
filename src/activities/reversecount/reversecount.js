@@ -152,7 +152,7 @@ function moveTux() {
     {
         clockPos--
         setClock()
-        if (clockPos == 1) {
+        if (clockPos === 0) {
             lost()
             initLevel()
             return
@@ -203,7 +203,7 @@ function moveTuxToNextIceBlock() {
     if (tuxIceBlockNumber == tuxIceBlockNumberGoal) {
         clockPos--
         setClock()
-        if (clockPos == 1) {
+        if (clockPos === 0) {
             lost()
             initLevel()
             return
@@ -272,7 +272,7 @@ function placeFishToReach() {
 
 
 function setClock() {
-    items.clock.source = url + "clock" + clockPos + ".png"
+    items.clock.source = url + "flower" + clockPos + ".svgz"
 }
 
 
