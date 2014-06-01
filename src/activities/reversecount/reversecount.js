@@ -139,8 +139,7 @@ function initLevel() {
     tuxIceBlockNumber = 0
     items.tux.init()
 
-    fishIndex = tuxIceBlockNumber + Math.floor(Math.random() *
-                                               levels[currentLevel].maxNumber * 2) + 1
+    calculateNextPlaceFishToReach()
     placeFishToReach()
     items.backgroundImg.source = url + backgrounds[currentLevel % backgrounds.length]
 }
@@ -195,7 +194,7 @@ function moveTuxToNextIceBlock() {
             return
         }
 
-        fishIndex++
+        calculateNextPlaceFishToReach()
         placeFishToReachBool = true
         return
     }
@@ -249,9 +248,19 @@ function calculateTuxIceBlockNextPos() {
             (items.chooseDiceBar.value1 + items.chooseDiceBar.value2) * 40
 }
 
+var previousFishIndex = 0
+function calculateNextPlaceFishToReach() {
+    var newFishIndex
+    do {
+        newFishIndex = Math.floor(Math.random() *
+                                  levels[currentLevel].maxNumber * 2) + 1
+    } while(previousFishIndex === newFishIndex)
+    fishIndex = tuxIceBlockNumber + newFishIndex
+    fishIndex = fishIndex % iceBlocksLayout.length
+    previousFishIndex = newFishIndex
+}
 
 function placeFishToReach() {
-    fishIndex = fishIndex % iceBlocksLayout.length
     items.fishToReach.source = url + fishes[fishIndex % fishes.length]
     items.fishToReach.x = iceBlocksLayout[fishIndex][0] * items.background.width / 5 +
             (items.background.width / 5 - items.tux.width) / 2
