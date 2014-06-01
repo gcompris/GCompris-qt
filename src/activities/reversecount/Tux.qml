@@ -31,7 +31,7 @@ Image {
     fillMode: Image.PreserveAspectFit
     z: 10
 
-    property bool trigger: false
+    property int duration: 1000
 
     signal init
 
@@ -44,18 +44,21 @@ Image {
         SmoothedAnimation {
             reversingMode: SmoothedAnimation.Immediate
             onRunningChanged: Activity.tuxRunningChanged()
-            duration: 1000
+            duration: tux.duration
         }
     }
     Behavior on y {
         SmoothedAnimation {
             reversingMode: SmoothedAnimation.Immediate
             onRunningChanged: Activity.tuxRunningChanged()
-            duration: 1000
+            duration: tux.duration
         }
     }
     Behavior on rotation {
-        RotationAnimation { duration: 300; direction: RotationAnimation.Shortest }
+        RotationAnimation {
+            duration: tux.duration / 2
+            direction: RotationAnimation.Shortest
+        }
     }
 
 }

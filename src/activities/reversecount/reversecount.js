@@ -237,8 +237,12 @@ function tuxRunningChanged() {
 
 
 function calculateTuxIceBlockNextPos() {
-    tuxIceBlockNumberGoal = tuxIceBlockNumber + items.chooseDiceBar.value1 + items.chooseDiceBar.value2
+    tuxIceBlockNumberGoal = tuxIceBlockNumber +
+            items.chooseDiceBar.value1 + items.chooseDiceBar.value2
     tuxIceBlockNumberGoal = tuxIceBlockNumberGoal % iceBlocksLayout.length
+    // Increase Tux's speed depending on the number of blocks to move
+    items.tux.duration = 1000 -
+            (items.chooseDiceBar.value1 + items.chooseDiceBar.value2) * 40
 }
 
 
