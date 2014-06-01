@@ -31,11 +31,6 @@
 #include <QNetworkConfiguration>
 #include <QDirIterator>
 #include <QtQml>
-/* TODO:
- * - adjust upstream URL?
- */
-
-#define SERVER_BASE_URL "http://www.math.uni-bielefeld.de/~hkaelber/gcompris"  //FIXME: make configurable
 
 const QString DownloadManager::contentsFilename = QString("Contents");
 DownloadManager* DownloadManager::_instance = 0;
@@ -43,7 +38,7 @@ DownloadManager* DownloadManager::_instance = 0;
 /* Public interface: */
 
 DownloadManager::DownloadManager()
-  : accessManager(this), serverUrl(QUrl(SERVER_BASE_URL))
+  : accessManager(this), serverUrl(ApplicationSettings::getInstance()->downloadServerUrl())
 {
     connect(&accessManager, SIGNAL(finished(QNetworkReply*)),
             this, SLOT(downloadFinished(QNetworkReply*)));

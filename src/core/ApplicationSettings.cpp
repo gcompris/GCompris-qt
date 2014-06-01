@@ -54,6 +54,8 @@
 #define GC_DEFAULT_LOCALE "en_US.UTF-8"
 
 static const QString GENERAL_GROUP_KEY = "General";
+static const QString ADMIN_GROUP_KEY = "Admin";
+
 static const QString FULLSCREEN_KEY = "fullscreen";
 static const QString ENABLE_AUDIO_KEY = "enableSounds";
 static const QString ENABLE_EFFECTS_KEY = "enableEffects";
@@ -61,14 +63,18 @@ static const QString VIRTUALKEYBOARD_KEY = "virtualKeyboard";
 static const QString LOCALE_KEY = "locale";
 static const QString ENABLE_AUTOMATIC_DOWNLOADS = "enableAutomaticDownloads";
 
+static const QString DOWNLOAD_SERVER_URL_KEY = "downloadServerUrl";
+
 ApplicationSettings *ApplicationSettings::m_instance = NULL;
 
 ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
      m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/GCompris.conf", QSettings::IniFormat)
 
 {
+    // initialize from settings file or default
+
+    // general group
     m_config.beginGroup(GENERAL_GROUP_KEY);
-    // initialize from settings file (or default)
     m_isEffectEnabled = m_config.value(ENABLE_EFFECTS_KEY, true).toBool();
     m_isFullscreen = m_config.value(FULLSCREEN_KEY, true).toBool();
     m_isAudioEnabled = m_config.value(ENABLE_AUDIO_KEY, true).toBool();
@@ -81,16 +87,23 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_config.sync();  // make sure all defaults are written back
     m_config.endGroup();
 
+    // admin group
+    m_config.beginGroup(ADMIN_GROUP_KEY);
+    m_downloadServerUrl = m_config.value(DOWNLOAD_SERVER_URL_KEY, "http://gcompris.net").toString();
+    m_config.endGroup();
+
     connect(this, SIGNAL(audioEnabledChanged()), this, SLOT(notifyAudioEnabledChanged()));
     connect(this, SIGNAL(fullscreenChanged()), this, SLOT(notifyFullscreenChanged()));
     connect(this, SIGNAL(localeChanged()), this, SLOT(notifyLocaleChanged()));
     connect(this, SIGNAL(virtualKeyboardChanged()), this, SLOT(notifyVirtualKeyboardChanged()));
     connect(this, SIGNAL(automaticDownloadsEnabledChanged()), this, SLOT(notifyAutomaticDownloadsEnabledChanged()));
+    connect(this, SIGNAL(downloadServerUrlChanged()), this, SLOT(notifyDownloadServerUrlChanged()));
 }
 
 ApplicationSettings::~ApplicationSettings()
 {
     // make sure settings file is up2date:
+    // general group
     m_config.beginGroup(GENERAL_GROUP_KEY);
     m_config.setValue(ENABLE_AUDIO_KEY, m_isAudioEnabled);
     m_config.setValue(LOCALE_KEY, m_locale);
@@ -98,6 +111,12 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
     m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
     m_config.endGroup();
+
+    // admin group
+    m_config.beginGroup(ADMIN_GROUP_KEY);
+    m_config.setValue(DOWNLOAD_SERVER_URL_KEY, m_downloadServerUrl);
+    m_config.endGroup();
+
     m_config.sync();
 
     m_instance = NULL;
@@ -150,6 +169,16 @@ void ApplicationSettings::notifyAutomaticDownloadsEnabledChanged()
     m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
     m_config.endGroup();
     qDebug() << "enableAutomaticDownloads set to: " << m_isAutomaticDownloadsEnabled;
+    m_config.sync();
+}
+
+void ApplicationSettings::notifyDownloadServerUrlChanged()
+{
+    // Save in config
+    m_config.beginGroup(ADMIN_GROUP_KEY);
+    m_config.setValue(DOWNLOAD_SERVER_URL_KEY, m_downloadServerUrl);
+    m_config.endGroup();
+    qDebug() << "downloadServerUrl set to: " << m_downloadServerUrl;
     m_config.sync();
 }
 
