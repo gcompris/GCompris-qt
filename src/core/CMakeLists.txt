@@ -96,7 +96,7 @@ if(CMAKE_HOST_APPLE)
   set(_qtconf_destdir ${_app}/Contents/Resources)
   set(_qt_plugins_destdir ${_app}/Contents/plugins)
   set(_qt_qml_destdir ${_app}/Contents/qml)
-  set(GCOMPRIS_BUNDLE "${CMAKE_INSTALL_PREFIX}/${_app}")
+  set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/${_app}")
   set_target_properties(GCompris PROPERTIES
     MACOSX_BUNDLE_INFO_STRING "${GCOMPRIS_VERSION}, Copyright 2000-2014 Bruno Coudoin and Others"
     MACOSX_BUNDLE_ICON_FILE "${gcompris_icon}"
@@ -112,9 +112,9 @@ else()
   set(_qt_plugins_destdir bin/plugins)
   set(_qt_qml_destdir bin/qml)
   if(CMAKE_HOST_WIN32)
-    set(GCOMPRIS_BUNDLE "${CMAKE_INSTALL_PREFIX}/bin/GCompris.exe")
+    set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/GCompris.exe")
   else()
-    set(GCOMPRIS_BUNDLE "${CMAKE_INSTALL_PREFIX}/bin/GCompris")
+    set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/GCompris")
   endif()
 endif()
 
