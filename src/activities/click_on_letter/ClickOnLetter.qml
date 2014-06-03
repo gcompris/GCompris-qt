@@ -86,7 +86,7 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: home()
-            onRepeatClicked: if (Activity.getSetting("fx"))
+            onRepeatClicked: if (ApplicationSettings.isAudioEnabled)
                                 letterAudio.play();
         }
 

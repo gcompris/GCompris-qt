@@ -5,6 +5,7 @@
 #include <qqml.h>
 #include <QtCore/QObject>
 #include <QQmlEngine>
+#include <QUrl>
 
 #include <QSettings>
 
@@ -12,11 +13,16 @@ class ApplicationSettings : public QObject
 {
 	Q_OBJECT
 
+	// general group
     Q_PROPERTY(bool isAudioEnabled READ isAudioEnabled WRITE setIsAudioEnabled NOTIFY audioEnabledChanged)
     Q_PROPERTY(bool isEffectEnabled READ isEffectEnabled WRITE setIsEffectEnabled NOTIFY effectEnabledChanged)
     Q_PROPERTY(bool isFullscreen READ isFullscreen WRITE setFullscreen NOTIFY fullscreenChanged)
     Q_PROPERTY(bool isVirtualKeyboard READ isVirtualKeyboard WRITE setVirtualKeyboard NOTIFY virtualKeyboardChanged)
     Q_PROPERTY(QString locale READ locale WRITE setLocale NOTIFY localeChanged)
+    Q_PROPERTY(bool isAutomaticDownloadsEnabled READ isAutomaticDownloadsEnabled WRITE setIsAutomaticDownloadsEnabled NOTIFY automaticDownloadsEnabledChanged)
+
+    // admin group
+    Q_PROPERTY(QString downloadServerUrl READ downloadServerUrl WRITE setDownloadServerUrl NOTIFY downloadServerUrlChanged)
 
 public:
 
@@ -65,12 +71,27 @@ public:
         emit localeChanged();
     }
 
+    bool isAutomaticDownloadsEnabled() const { return m_isAutomaticDownloadsEnabled; }
+    void setIsAutomaticDownloadsEnabled(const bool newIsAutomaticDownloadsEnabled) {
+        m_isAutomaticDownloadsEnabled = newIsAutomaticDownloadsEnabled;
+        emit automaticDownloadsEnabledChanged();
+    }
+
+    QString downloadServerUrl() const { return m_downloadServerUrl; }
+    void setDownloadServerUrl(const QString newDownloadServerUrl) {
+        m_downloadServerUrl = newDownloadServerUrl;
+        emit downloadServerUrlChanged();
+    }
+
 protected slots:
     Q_INVOKABLE void notifyAudioEnabledChanged();
     Q_INVOKABLE void notifyEffectEnabledChanged() {}
     Q_INVOKABLE void notifyFullscreenChanged();
     Q_INVOKABLE void notifyVirtualKeyboardChanged();
     Q_INVOKABLE void notifyLocaleChanged();
+    Q_INVOKABLE void notifyAutomaticDownloadsEnabledChanged();
+
+    Q_INVOKABLE void notifyDownloadServerUrlChanged();
 
 protected:
 
@@ -80,6 +101,9 @@ signals:
     void fullscreenChanged();
     void virtualKeyboardChanged();
     void localeChanged();
+    void automaticDownloadsEnabledChanged();
+
+    void downloadServerUrlChanged();
 
 private:
     static ApplicationSettings *m_instance;
@@ -87,8 +111,10 @@ private:
     bool m_isEffectEnabled;
     bool m_isFullscreen;
     bool m_isVirtualKeyboard;
-
+    bool m_isAutomaticDownloadsEnabled;
     QString m_locale;
+
+    QString m_downloadServerUrl;
 
     QSettings m_config;
 };

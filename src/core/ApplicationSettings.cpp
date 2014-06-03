@@ -54,11 +54,16 @@
 #define GC_DEFAULT_LOCALE "en_US.UTF-8"
 
 static const QString GENERAL_GROUP_KEY = "General";
+static const QString ADMIN_GROUP_KEY = "Admin";
+
 static const QString FULLSCREEN_KEY = "fullscreen";
 static const QString ENABLE_AUDIO_KEY = "enableSounds";
 static const QString ENABLE_EFFECTS_KEY = "enableEffects";
 static const QString VIRTUALKEYBOARD_KEY = "virtualKeyboard";
 static const QString LOCALE_KEY = "locale";
+static const QString ENABLE_AUTOMATIC_DOWNLOADS = "enableAutomaticDownloads";
+
+static const QString DOWNLOAD_SERVER_URL_KEY = "downloadServerUrl";
 
 ApplicationSettings *ApplicationSettings::m_instance = NULL;
 
@@ -66,39 +71,54 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
      m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/GCompris.conf", QSettings::IniFormat)
 
 {
+    // initialize from settings file or default
+
+    // general group
     m_config.beginGroup(GENERAL_GROUP_KEY);
-    // Default values if file does not exist
-    if(!m_config.contains(FULLSCREEN_KEY)) {
-        m_config.setValue(ENABLE_EFFECTS_KEY, true);
-        m_config.setValue(FULLSCREEN_KEY, true);
-        m_config.setValue(ENABLE_AUDIO_KEY, true);
-        m_config.setValue(VIRTUALKEYBOARD_KEY, ApplicationInfo::getInstance()->isMobile());
-        // Get locale, if "C", put default locale
-        QLocale systemLocale = QLocale::system();
-        if(systemLocale == QLocale::c()) {
-            m_config.setValue(LOCALE_KEY, GC_DEFAULT_LOCALE);
-        }
-        else {
-            m_config.setValue(LOCALE_KEY, systemLocale.name() + ".UTF-8");
-        }
-        m_config.sync();
-    }
-
-    m_isEffectEnabled = m_config.value(ENABLE_EFFECTS_KEY).toBool();
-    m_isFullscreen = m_config.value(FULLSCREEN_KEY).toBool();
-    m_isAudioEnabled = m_config.value(ENABLE_AUDIO_KEY).toBool();
-    m_isVirtualKeyboard = m_config.value(VIRTUALKEYBOARD_KEY).toBool();
-    m_locale = m_config.value(LOCALE_KEY).toString();
-
+    m_isEffectEnabled = m_config.value(ENABLE_EFFECTS_KEY, true).toBool();
+    m_isFullscreen = m_config.value(FULLSCREEN_KEY, true).toBool();
+    m_isAudioEnabled = m_config.value(ENABLE_AUDIO_KEY, true).toBool();
+    m_isVirtualKeyboard = m_config.value(VIRTUALKEYBOARD_KEY,
+            ApplicationInfo::getInstance()->isMobile()).toBool();
+    m_locale = m_config.value(LOCALE_KEY,
+            QLocale::system() == QLocale::c() ? GC_DEFAULT_LOCALE : QString(QLocale::system().name() + ".UTF-8")).toString();
+    m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
+            !ApplicationInfo::getInstance()->isMobile()).toBool();
+    m_config.sync();  // make sure all defaults are written back
     m_config.endGroup();
+
+    // admin group
+    m_config.beginGroup(ADMIN_GROUP_KEY);
+    m_downloadServerUrl = m_config.value(DOWNLOAD_SERVER_URL_KEY, "http://gcompris.net").toString();
+    m_config.endGroup();
+
     connect(this, SIGNAL(audioEnabledChanged()), this, SLOT(notifyAudioEnabledChanged()));
     connect(this, SIGNAL(fullscreenChanged()), this, SLOT(notifyFullscreenChanged()));
     connect(this, SIGNAL(localeChanged()), this, SLOT(notifyLocaleChanged()));
     connect(this, SIGNAL(virtualKeyboardChanged()), this, SLOT(notifyVirtualKeyboardChanged()));
+    connect(this, SIGNAL(automaticDownloadsEnabledChanged()), this, SLOT(notifyAutomaticDownloadsEnabledChanged()));
+    connect(this, SIGNAL(downloadServerUrlChanged()), this, SLOT(notifyDownloadServerUrlChanged()));
 }
 
 ApplicationSettings::~ApplicationSettings()
 {
+    // make sure settings file is up2date:
+    // general group
+    m_config.beginGroup(GENERAL_GROUP_KEY);
+    m_config.setValue(ENABLE_AUDIO_KEY, m_isAudioEnabled);
+    m_config.setValue(LOCALE_KEY, m_locale);
+    m_config.setValue(FULLSCREEN_KEY, m_isFullscreen);
+    m_config.setValue(VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
+    m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
+    m_config.endGroup();
+
+    // admin group
+    m_config.beginGroup(ADMIN_GROUP_KEY);
+    m_config.setValue(DOWNLOAD_SERVER_URL_KEY, m_downloadServerUrl);
+    m_config.endGroup();
+
+    m_config.sync();
+
     m_instance = NULL;
 }
 
@@ -139,6 +159,26 @@ void ApplicationSettings::notifyVirtualKeyboardChanged()
     m_config.setValue(VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
     m_config.endGroup();
     qDebug() << "virtualkeyboard set to: " << m_isVirtualKeyboard;
+    m_config.sync();
+}
+
+void ApplicationSettings::notifyAutomaticDownloadsEnabledChanged()
+{
+    // Save in config
+    m_config.beginGroup(GENERAL_GROUP_KEY);
+    m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
+    m_config.endGroup();
+    qDebug() << "enableAutomaticDownloads set to: " << m_isAutomaticDownloadsEnabled;
+    m_config.sync();
+}
+
+void ApplicationSettings::notifyDownloadServerUrlChanged()
+{
+    // Save in config
+    m_config.beginGroup(ADMIN_GROUP_KEY);
+    m_config.setValue(DOWNLOAD_SERVER_URL_KEY, m_downloadServerUrl);
+    m_config.endGroup();
+    qDebug() << "downloadServerUrl set to: " << m_downloadServerUrl;
     m_config.sync();
 }
 

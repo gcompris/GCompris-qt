@@ -10,6 +10,7 @@
 #include "ApplicationInfo.h"
 #include "ActivityInfoTree.h"
 #include "File.h"
+#include "DownloadManager.h"
 
 bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
 {
@@ -38,13 +39,14 @@ int main(int argc, char *argv[])
 {
 	QGuiApplication app(argc, argv);
 	app.setOrganizationName("GCompris");
-	app.setApplicationName("GCompris");
+    app.setApplicationName("GCompris");
     app.setOrganizationDomain("kde.org");
 
     ApplicationInfo::init();
 	ActivityInfoTree::init();
     ApplicationSettings::init();
 	File::init();
+	DownloadManager::init();
 
     // Load configuration
     QString locale;
@@ -83,6 +85,11 @@ int main(int argc, char *argv[])
     // Apply translation
     app.installTranslator(&translator);
 
+    // Register voices-resources for current locale, updates/downloads only if
+    // not prohibited by the settings
+    DownloadManager::getInstance()->updateResource(DownloadManager::getInstance()
+        ->getVoicesResourceForLocale(ApplicationInfo::localeShort(locale)));
+
 	QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
     QObject *topLevel = engine.rootObjects().value(0);
 
@@ -91,6 +98,9 @@ int main(int argc, char *argv[])
 		qWarning("Error: Your root item has to be a Window.");
 		return -1;
 	}
+
+    window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris_icon.png"))));
+
     ApplicationInfo::setWindow(window);
 
     window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));
