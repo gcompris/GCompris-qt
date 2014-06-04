@@ -91,6 +91,9 @@ int main(int argc, char *argv[])
         ->getVoicesResourceForLocale(ApplicationInfo::localeShort(locale)));
 
 	QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
+	QObject::connect(&engine, SIGNAL(quit()), DownloadManager::getInstance(),
+	        SLOT(shutdown()));
+
     QObject *topLevel = engine.rootObjects().value(0);
 
     QQuickWindow *window = qobject_cast<QQuickWindow *>(topLevel);

@@ -46,6 +46,32 @@ DownloadManager::DownloadManager()
 
 DownloadManager::~DownloadManager()
 {
+    shutdown();
+    _instance = 0;
+}
+
+void DownloadManager::shutdown()
+{
+    qDebug() << "DownloadManager: shutting down," << activeJobs.size() << "active jobs";
+    disconnect(&accessManager, SIGNAL(finished(QNetworkReply*)),
+            this, SLOT(downloadFinished(QNetworkReply*)));
+    if (activeJobs.size() > 0) {
+        QMutexLocker locker(&jobsMutex);
+        QMutableListIterator<DownloadJob*> iter(activeJobs);
+        while (iter.hasNext()) {
+            DownloadJob *job = iter.next();
+            if (job->reply) {
+                if (job->reply->isRunning()) {
+                    qDebug() << "Aborting download job:" << job->url;
+                    job->reply->abort();
+                    job->file.close();
+                    job->file.remove();
+                }
+                delete job->reply;
+            }
+            iter.remove();
+        }
+    }
 }
 
 // It is not recommended to create a singleton of Qml Singleton registered

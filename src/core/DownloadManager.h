@@ -105,6 +105,7 @@ public:
 public slots:
     Q_INVOKABLE bool updateResource(const QString& path);
     Q_INVOKABLE bool downloadResource(const QString& path);
+    Q_INVOKABLE void shutdown();
 
 #if 0
     Q_INVOKABLE bool checkForUpdates();  // might be helpful later with other use-cases!
