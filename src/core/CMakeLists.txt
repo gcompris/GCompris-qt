@@ -64,7 +64,7 @@ install(TARGETS GCompris
   BUNDLE DESTINATION .)
 
 # Qt plugins to install
-set(_qt_plugins Qt5::QSvgPlugin Qt5::QJpegPlugin)
+set(_qt_plugins Qt5::QJpegPlugin)
 if(CMAKE_HOST_APPLE)
   list(APPEND _qt_plugins Qt5::QTgaPlugin Qt5::QTiffPlugin Qt5::QCocoaIntegrationPlugin)
 elseif(CMAKE_HOST_WIN32)
@@ -79,6 +79,8 @@ if(CMAKE_HOST_WIN32)
 else()
   set(_lib_prefix "lib")
 endif()
+
+set(_qt_plugins2 imageformats/${_lib_prefix}qsvg)
 
 set(_qml_plugins
   QtQuick/Controls/${_lib_prefix}qtquickcontrolsplugin
@@ -124,6 +126,10 @@ install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/qt.conf DESTINATION ${_qtconf_destdir}
 # install qt plugins
 foreach(_plugin ${_qt_plugins})
   installQtPlugin(${_plugin} ${_qt_plugins_destdir} _lib)
+  list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
+endforeach()
+foreach(_plugin ${_qt_plugins2})
+  installQtPlugin2(${_plugin} ${_qt_plugins_destdir} _lib)
   list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
 endforeach()
 
