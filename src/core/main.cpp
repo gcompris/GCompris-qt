@@ -102,8 +102,6 @@ int main(int argc, char *argv[])
 		return -1;
 	}
 
-    window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris_icon.png"))));
-
     ApplicationInfo::setWindow(window);
 
     window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris-icon.png"))));
