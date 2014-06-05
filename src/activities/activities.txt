@@ -18,6 +18,7 @@ enumerate
 erase
 erase_2clic
 erase_clic
+football
 gletters
 hexagon
 instruments
