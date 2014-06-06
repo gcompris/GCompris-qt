@@ -24,6 +24,8 @@ hexagon
 instruments
 leftright
 lightsoff
+magic-hat-minus
+magic-hat-plus
 memory
 memory-math-add
 memory-math-add-minus
