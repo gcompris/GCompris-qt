@@ -51,8 +51,7 @@ private:
         QMap<QString,QString> contents;  ///< checksum map for download verification
         QList<QUrl> knownContentsUrls;   ///< store already tried upstream Contents files (for infinite loop protection)
 
-        DownloadJob() : DownloadJob(QUrl()) {}
-        DownloadJob(QUrl u) : url(u), file(), reply(0),
+        DownloadJob(QUrl u = QUrl()) : url(u), file(), reply(0),
                 queue(QList<QUrl>()) {}
     } DownloadJob;
 
