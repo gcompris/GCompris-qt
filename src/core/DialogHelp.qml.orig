@@ -18,44 +18,47 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
+<<<<<<< HEAD
 import QtQuick 2.1
+=======
+import QtQuick 2.2
+>>>>>>> origin/master
 import QtQuick.Controls 1.1
 import GCompris 1.0
 
 DialogBackground {
     visible: false
-    title: activityInfo.title
+    title: "Help"
     property QtObject activityInfo: ActivityInfoTree.currentActivity
+    subtitle: activityInfo.section
+
 
     function getContent() {
         var contentText = ""
+        contentText += "<center><b>" + activityInfo.title + "</b></center>"
+        contentText += "<br/><br/>"
         contentText += "<b>" + activityInfo.description + "</b>"
         contentText += "<br/><br/>"
         if(activityInfo.author) {
-            contentText += "<b>" + qsTr("Author") + ": </b>" + activityInfo.author
+            contentText += "<b>" + "Author: " + "</b>" + activityInfo.author
             contentText += "<br/><br/>"
         }
         contentText += "<br/><br/>"
         if(activityInfo.prerequisite) {
-            contentText += "<b>" + qsTr("Prerequisite") + ": </b>" + activityInfo.prerequisite
+            contentText += "<b>" + "Prerequisite: " + "</b>" + activityInfo.prerequisite
             contentText += "<br/><br/>"
         }
         if(activityInfo.goal) {
-            contentText += "<b>" + qsTr("Goal") + ": </b>" + activityInfo.goal
+            contentText += "<b>" + "Goal: " + "</b>" + activityInfo.goal
             contentText += "<br/><br/>"
         }
         if(activityInfo.manual) {
             var manual = activityInfo.manual.replace(/^    (.*)$/gm,'<ul><li>$1</li></ul>')
-            manual = manual.replace(/\n/gm,'<br/>')
-            contentText += "<b>" + qsTr("Manual") + ": </b>" + manual
+            contentText += "<b>" + "Manual: " + "</b>" + manual
             contentText += "<br/><br/>"
         }
         if(activityInfo.credit) {
-            contentText += "<b>" + qsTr("Credit") + ": </b>" + activityInfo.credit
-            contentText += "<br/><br/>"
-        }
-        if(activityInfo.section) {
-            contentText += "<b>" + qsTr("Section: ") + "</b>" + activityInfo.section
+            contentText += "<b>" + "Credit: " + "</b>" + activityInfo.credit
             contentText += "<br/><br/>"
         }
         return contentText

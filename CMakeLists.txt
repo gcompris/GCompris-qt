@@ -29,6 +29,7 @@ set(GCOMPRIS_VERSION_CODE ${GCOMPRIS_MINOR_VERSION})
 
 # cmake modules setup
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/")
+set(CMAKE_PREFIX_PATH "${Qt5_DIR}/lib/cmake/Qt5")
 
 # prevent build in source directory
 if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
@@ -37,9 +38,9 @@ if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
             directory and create a build directory and call \"${CMAKE_COMMAND} <path to the sources>\".")
 endif("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
 
-set(QT_REQUIRED_VERSION 5.2.0)
+set(QT_REQUIRED_VERSION 5.3.0)
 
-find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED
+find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
             Qml Quick Gui Multimedia Core Svg XmlPatterns LinguistTools)
 
 #get_cmake_property(_variableNames VARIABLES)
@@ -48,17 +49,25 @@ find_package(Qt5 ${QT_REQUIRED_VERSION} CONFIG REQUIRED
 #endforeach()
 
 # Set output directory
+if(CMAKE_HOST_APPLE)
+  set(_bundle_bin GCompris.app/Contents/MacOS)
+  set(_dest_dir bin/${_bundle_bin})
+elseif(ANDROID)
+  set(_dest_dir android/assets)
+else()
+  set(_dest_dir bin)
+endif()
 if(ANDROID)
   # Android .so output
   set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android/libs/${ARM_TARGET}/)
-  set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/android/assets CACHE INTERNAL "" FORCE)
-  set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/android/assets CACHE INTERNAL "" FORCE)
+  set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/${_dest_dir} CACHE INTERNAL "" FORCE)
+  set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/${_dest_dir} CACHE INTERNAL "" FORCE)
   add_subdirectory(android)
 else(ANDROID)
   # Desktop build
   set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
-  set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/bin CACHE INTERNAL "" FORCE)
-  set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/bin CACHE INTERNAL "" FORCE)
+  set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/${_dest_dir}/translations CACHE INTERNAL "" FORCE)
+  set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/${_dest_dir}/rcc CACHE INTERNAL "" FORCE)
 endif(ANDROID)
 
 include(cmake/rcc.cmake)
@@ -106,5 +115,10 @@ endforeach()
 qt5_create_translation(QM_FILES ${ACTIVITY_SRCS} ${TRANSLATIONS_FILES})
 add_custom_target(UpdateTranslations DEPENDS ${ACTIVITY_SRCS} ${TRANSLATIONS_FILES})
 add_custom_target(BuildTranslations DEPENDS ${QM_FILES})
+if(CMAKE_HOST_APPLE)
+  install(FILES ${QM_FILES} DESTINATION ${_bundle_bin}/translations)
+else()
+  install(FILES ${QM_FILES} DESTINATION ${_dest_dir}/translations)
+endif()
 
 add_subdirectory(src)

@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
     if(!loadAndroidTranslation(translator, locale))
         loadAndroidTranslation(translator, ApplicationInfo::localeShort(locale));
 #else
-    if(!translator.load("gcompris_" + locale, QCoreApplication::applicationDirPath())) {
+    if(!translator.load("gcompris_" + locale, QCoreApplication::applicationDirPath() + "/translations/")) {
         qDebug() << "Unable to load translation for locale " <<
                     locale << ", use en_US by default";
     }
@@ -101,6 +101,8 @@ int main(int argc, char *argv[])
 		qWarning("Error: Your root item has to be a Window.");
 		return -1;
 	}
+
+    window->setIcon(QIcon(QPixmap(QString::fromUtf8(":/gcompris/src/core/resource/gcompris_icon.png"))));
 
     ApplicationInfo::setWindow(window);
 
