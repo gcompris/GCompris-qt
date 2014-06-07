@@ -2,3 +2,5 @@ CMakeLists.txt.user
 GCompris.pro.user
 .directory
 *.qrc
+build/*
+*.DS_Store

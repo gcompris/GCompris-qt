@@ -54,10 +54,17 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Text {
-            anchors.centerIn: parent
-            text: "guessnumber activity"
-            font.pointSize: 24
+        Image {
+            id: back
+            anchors.fill: parent
+            fillMode : Image.PreserveAspectFit
+            source: "resource/cave.png"
+        }
+
+        Image {
+            id: helico
+            y: back.height/2
+            source: "resource/tuxhelico.png"
         }
 
         DialogHelp {

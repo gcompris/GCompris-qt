@@ -29,6 +29,7 @@ gnumch-factors
 gnumch-inequality
 gnumch-multiples
 gnumch-primes
+guessnumber
 hexagon
 instruments
 leftright
