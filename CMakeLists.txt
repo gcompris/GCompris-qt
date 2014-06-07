@@ -38,7 +38,7 @@ if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
             directory and create a build directory and call \"${CMAKE_COMMAND} <path to the sources>\".")
 endif("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
 
-set(QT_REQUIRED_VERSION 5.2.0)
+set(QT_REQUIRED_VERSION 5.3.0)
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
             Qml Quick Gui Multimedia Core Svg XmlPatterns LinguistTools)
