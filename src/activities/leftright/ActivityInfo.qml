@@ -13,5 +13,4 @@ ActivityInfo {
     prerequisite: ""
     manual: qsTr("You can see a hand: is it a left hand or a right hand? Click on the left button, or the right button depending on the displayed hand.")
     credit: ""
-  section: "/discovery/miscelaneous"
 }

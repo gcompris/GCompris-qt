@@ -18,10 +18,13 @@ enumerate
 erase
 erase_2clic
 erase_clic
+football
 gletters
 hexagon
 instruments
 leftright
+magic-hat-minus
+magic-hat-plus
 memory
 memory-math-add
 memory-math-add-minus
@@ -40,6 +43,7 @@ mosaic
 numbers-odd-even
 penalty
 planegame
+reversecount
 maze
 mazerelative
 mazeinvisible

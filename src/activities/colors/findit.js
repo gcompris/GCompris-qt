@@ -20,7 +20,7 @@
 .import QtQuick 2.0 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
+var currentLevel
 var numberOfLevel
 var items
 var dataset
@@ -30,6 +30,7 @@ var currentQuestion
 function start(items_, dataset_) {
     items = items_
     dataset = dataset_
+    currentLevel = 0
     numberOfLevel = dataset.length
     initLevel()
 }

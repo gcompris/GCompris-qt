@@ -143,6 +143,23 @@ Rectangle {
                                 isVirtualKeyboard = checked;
                             }
                         }
+                        
+                        CheckBox {
+                            id: enableAutomaticDownloadsBox
+                            text: qsTr("Enable automatic downloads/updates of sound files")
+                            checked: isAutomaticDownloadsEnabled
+                            style: CheckBoxStyle {
+                                indicator: Image {
+                                    sourceSize.height: 50 * ApplicationInfo.ratio
+                                    source:
+                                        control.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
+                                                          "qrc:/gcompris/src/core/resource/cancel.svgz"
+                                }
+                            }
+                            onCheckedChanged: {
+                                isAutomaticDownloadsEnabled = checked;
+                            }
+                        }
 
                         ComboBox {
                             id: languageBox
@@ -195,10 +212,65 @@ Rectangle {
             }
         }
     }
+ 
+    //function onDownloadProgress(bytesReceived, bytesTotal) {
+    //    console.log("progress: " + bytesReceived + "/" + bytesTotal);
+    //}
+    
+    function onDownloadFinished() {
+        DownloadManager.downloadFinished.disconnect(onDownloadFinished)
+        DownloadManager.error.disconnect(onDownloadError)
+    }
+    
+    function onDownloadError(error) {
+        errorDialog.text = error;
+        errorDialog.open();
+        onDownloadFinished();
+    }
+
+    MessageDialog {
+        id: errorDialog
+        
+        title: qsTr("Download Error")
+        icon: StandardIcon.Warning
+        standardButtons: StandardButton.Ignore
+        visible: false
+    }
+      
+    MessageDialog {
+        id: messageDialog
+        
+        title: qsTr("You selected a new locale")
+        text: qsTr("Do you want to download the corresponding sound files?")
+        icon: StandardIcon.Question
+        standardButtons: StandardButton.Yes | StandardButton.No
+        
+        visible: false
+        
+        property bool initialized: false  // workaround onYes handler triggered twice in Qt 5.3 (bug #35933)
+        
+        onYes: {
+            if (!messageDialog.initialized)
+                return;
+            messageDialog.initialized = false;
+            console.log("yes");
+            if (DownloadManager.downloadResource(DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort))
+) {
+                //DownloadManager.downloadProgress.connect(onDownloadProgress);
+                // note: for visualizing download progress probably need an
+                // own custom element. Android does not seem to allow changing
+                // contents of a message dialog dynamically 
+                DownloadManager.downloadFinished.connect(onDownloadFinished);
+                DownloadManager.error.connect(onDownloadError);
+            }
+            messageDialog.close()
+        }
+    }
 
     property bool isAudioEnabled: ApplicationSettings.isAudioEnabled
     property bool isFullscreen: ApplicationSettings.isFullscreen
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
+    property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
 
     onStart: {
         // Synchronize settings with data
@@ -210,6 +282,9 @@ Rectangle {
 
         isVirtualKeyboard = ApplicationSettings.isVirtualKeyboard
         enableVirtualKeyboardBox.checked = isVirtualKeyboard
+
+        isAutomaticDownloadsEnabled = ApplicationSettings.isAutomaticDownloadsEnabled
+        enableAutomaticDownloadsBox.checked = isAutomaticDownloadsEnabled
 
         // Set locale
         for(var i = 0 ; i < languages.count ; i ++) {
@@ -224,7 +299,15 @@ Rectangle {
         ApplicationSettings.isAudioEnabled = isAudioEnabled
         ApplicationSettings.isFullscreen = isFullscreen
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
-        ApplicationSettings.locale = languages.get(languageBox.currentIndex).locale
+        ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
+        if (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale) {
+            ApplicationSettings.locale = languages.get(languageBox.currentIndex).locale
+            if (!DownloadManager.haveLocalResource(DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort))) {
+                messageDialog.initialized = true
+                messageDialog.open()
+            } else
+                DownloadManager.updateResource(DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort))
+        }
     }
 
     ListModel {
@@ -266,6 +349,8 @@ Rectangle {
         return (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale ||
                 (ApplicationSettings.isAudioEnabled != isAudioEnabled) ||
                 (ApplicationSettings.isFullscreen != isFullscreen) ||
-                (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard));
+                (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard) ||
+                (ApplicationSettings.isAutomaticDownloadsEnabled != isAutomaticDownloadsEnabled)
+                );
     }
 }

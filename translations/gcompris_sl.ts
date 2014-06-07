@@ -1062,6 +1062,27 @@ Od ravni 14 naprej je ta način omogočen privzeto. Za uporabo tega načina na n
         <source>First, properly organize the items so that you can count them. Then, select the item you want to answer in the bottom right area. Enter the answer with the keyboard and press the OK button or the 'Enter' key.</source>
         <translation>Uredi predmete tako, da jih bo mogoče enostavno prešteti. Nato spodaj desno izberi predmet na katerega želiš odgovoriti. Natipkaj odgovor s tipkovnico, nato pa pritisni gumb v redu ali vnosno tipko.</translation>
     </message>
+    <message>
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="9" />
+        <source>Practice subtraction with a fun game</source>
+        <translation>Vaja odštevanja z zabavno igro.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="11" />
+        <source>Tux is hungry. Help him find fish by counting to the correct ice spot.</source>
+        <translation>Ribarjenje s štetjem do prave ledene plošče.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="12" />
+        <source>Can move the mouse, can read numbers and subtract numbers up to 10 for the first level</source>
+        <translation>Otrok lahko premika miško, bere števila in odšteva števila do 10 za prvo raven</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="13" />
+        <source>Click on the dice to show how many ice spots there are between Tux and the fish. Click the dice with the right mouse button to count backwards. When done, click on the OK button or hit the Enter key.</source>
+        <translation>Najprej preštej koliko ledenik točk je med Pingom in ribo. Nato klikni na kocko, da izbereš pravo številko. Za štetje nazaj uporabi desnim gumbom miške. Ko končaš, pritisni gumb v redu ali vnosno tipko.</translation>
+    </message>
 </context>
 <context>
     <name>AlphabetSequence</name>
@@ -1089,7 +1110,7 @@ to make the ball go in a straight line.</source>
 <context>
     <name>Clockgame</name>
     <message>
-        <location filename="../src/activities/clockgame/Clockgame.qml" line="70" />
+        <location filename="../src/activities/clockgame/Clockgame.qml" line="86" />
         <source>Set the watch to:</source>
         <translation>Nastavi uro na:</translation>
     </message>
@@ -1165,7 +1186,7 @@ to make the ball go in a straight line.</source>
 <context>
     <name>DialogAbout</name>
     <message>
-        <location filename="../src/core/DialogAbout.qml" line="24" />
+        <location filename="../src/core/DialogAbout.qml" line="26" />
         <source>About GCompris</source>
         <translation>O programu</translation>
     </message>
@@ -1192,137 +1213,142 @@ to make the ball go in a straight line.</source>
         <translation>Celozaslonski način</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="214" />
+        <location filename="../src/core/DialogConfig.qml" line="132" />
+        <source>Virtual Keyboard</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/core/DialogConfig.qml" line="235" />
         <source>English (Great Britain)</source>
         <translation>angleški (Velika Britanija)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="215" />
+        <location filename="../src/core/DialogConfig.qml" line="236" />
         <source>English (United States)</source>
         <translation>angleški (ZDA)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="216" />
+        <location filename="../src/core/DialogConfig.qml" line="237" />
         <source>Bulgarian</source>
         <translation>bolgarski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="217" />
+        <location filename="../src/core/DialogConfig.qml" line="238" />
         <source>Breton</source>
         <translation>bretonski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="218" />
+        <location filename="../src/core/DialogConfig.qml" line="239" />
         <source>Czech Republic</source>
         <translation>češki</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="219" />
+        <location filename="../src/core/DialogConfig.qml" line="240" />
         <source>Danish</source>
         <translation>danski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="220" />
+        <location filename="../src/core/DialogConfig.qml" line="241" />
         <source>German</source>
         <translation>nemški</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="221" />
+        <location filename="../src/core/DialogConfig.qml" line="242" />
         <source>Greek</source>
         <translation>grški</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="222" />
+        <location filename="../src/core/DialogConfig.qml" line="243" />
         <source>Spanish</source>
         <translation>španski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="223" />
+        <location filename="../src/core/DialogConfig.qml" line="244" />
         <source>French</source>
         <translation>francoski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="224" />
+        <location filename="../src/core/DialogConfig.qml" line="245" />
         <source>Scottish Gaelic</source>
         <translation>škotski galski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="225" />
+        <location filename="../src/core/DialogConfig.qml" line="246" />
         <source>Galician</source>
         <translation>galicijski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="226" />
+        <location filename="../src/core/DialogConfig.qml" line="247" />
         <source>Hungarian</source>
         <translation>madžarski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="227" />
+        <location filename="../src/core/DialogConfig.qml" line="248" />
         <source>Lithuanian</source>
         <translation>litvanski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="228" />
+        <location filename="../src/core/DialogConfig.qml" line="249" />
         <source>Latvian</source>
         <translation>latvijski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="229" />
+        <location filename="../src/core/DialogConfig.qml" line="250" />
         <source>Dutch</source>
         <translation>nizozemski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="230" />
+        <location filename="../src/core/DialogConfig.qml" line="251" />
         <source>Norwegian Nynorsk</source>
         <translation>novonorveški</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="231" />
+        <location filename="../src/core/DialogConfig.qml" line="252" />
         <source>Polish</source>
         <translation>poljski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="232" />
+        <location filename="../src/core/DialogConfig.qml" line="253" />
         <source>Russian</source>
         <translation>ruski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="233" />
+        <location filename="../src/core/DialogConfig.qml" line="254" />
         <source>Portuguese (Brazil)</source>
         <translation>brazilsko portugalski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="234" />
+        <location filename="../src/core/DialogConfig.qml" line="255" />
         <source>Slovak</source>
         <translation>slovaški</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="235" />
+        <location filename="../src/core/DialogConfig.qml" line="256" />
         <source>Slovenian</source>
         <translation>slovenski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="236" />
+        <location filename="../src/core/DialogConfig.qml" line="257" />
         <source>Montenegrin</source>
         <translation>črnogorski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="237" />
+        <location filename="../src/core/DialogConfig.qml" line="258" />
         <source>Swedish</source>
         <translation>švedski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="238" />
+        <location filename="../src/core/DialogConfig.qml" line="259" />
         <source>Tamil</source>
         <translation>tamilski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="239" />
+        <location filename="../src/core/DialogConfig.qml" line="260" />
         <source>Thai</source>
         <translation>tajski</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="240" />
+        <location filename="../src/core/DialogConfig.qml" line="261" />
         <source>Chinese (Traditional)</source>
         <translation>tradicionalen kitajski</translation>
     </message>
@@ -1330,32 +1356,32 @@ to make the ball go in a straight line.</source>
 <context>
     <name>DialogHelp</name>
     <message>
-        <location filename="../src/core/DialogHelp.qml" line="37" />
+        <location filename="../src/core/DialogHelp.qml" line="35" />
         <source>Author</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogHelp.qml" line="42" />
+        <location filename="../src/core/DialogHelp.qml" line="40" />
         <source>Prerequisite</source>
         <translation>Predpogoj</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogHelp.qml" line="46" />
+        <location filename="../src/core/DialogHelp.qml" line="44" />
         <source>Goal</source>
         <translation>Cilj</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogHelp.qml" line="52" />
+        <location filename="../src/core/DialogHelp.qml" line="50" />
         <source>Manual</source>
         <translation>Navodila</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogHelp.qml" line="56" />
+        <location filename="../src/core/DialogHelp.qml" line="54" />
         <source>Credit</source>
         <translation>Zasluge</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogHelp.qml" line="60" />
+        <location filename="../src/core/DialogHelp.qml" line="58" />
         <source>Section: </source>
         <translation type="unfinished" />
     </message>
@@ -1379,14 +1405,6 @@ to make the ball go in a straight line.</source>
         <location filename="../src/activities/maze/Maze.qml" line="348" />
         <source>Look at your position, then switch back to invisible mode to continue your moves</source>
         <translation>Oglej si mesto nahajanja in nato preklopi v nevidni način za nadaljevanje.</translation>
-    </message>
-</context>
-<context>
-    <name>MoneyCore</name>
-    <message>
-        <location filename="../src/activities/money/MoneyCore.qml" line="186" />
-        <source>$ %1</source>
-        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -1414,7 +1432,7 @@ to make the ball go in a straight line.</source>
         <translation />
     </message>
     <message>
-        <location filename="../src/core/DialogAbout.qml" line="27" />
+        <location filename="../src/core/DialogAbout.qml" line="29" />
         <source>translator-credits</source>
         <translation>Damjan Kovač
 Andrej Žnidaršič
@@ -1422,7 +1440,7 @@ Martin Srebotnjak
 Matej Urbančič</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogAbout.qml" line="30" />
+        <location filename="../src/core/DialogAbout.qml" line="32" />
         <source>GCompris Home Page: http://gcompris.net</source>
         <translation>Domača stran GCompris: http://gcompris.net</translation>
     </message>
@@ -2102,15 +2120,20 @@ Matej Urbančič</translation>
 <context>
     <name>money</name>
     <message>
-        <location filename="../src/activities/money/money.js" line="655" />
+        <location filename="../src/activities/money/money.js" line="661" />
         <source>Click on the coins or paper money at the bottom of the screen to pay. If you want to remove a coin or note, click on it on the upper screen area.</source>
         <translation>Za plačilo klikni na bankovec ali kovanec na dnu zaslona. Če želiš kovanec ali bankovec odstraniti, klikni nanj v zgornjem delu zaslona.</translation>
     </message>
     <message>
-        <location filename="../src/activities/money/money.js" line="659" />
+        <location filename="../src/activities/money/money.js" line="671" />
+        <source>Tux just bought some items in your shop.
+He gives you %1, please give back his change.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <source>Tux just bought some items in your shop.
 He gives you $ %1, please give back his change.</source>
-        <translation>Pingo je v trgovini pravkar kupil nekaj predmetov.
+        <translation type="vanished">Pingo je v trgovini pravkar kupil nekaj predmetov.
 Dal ti je %1 €. Vrni mu drobiž.</translation>
     </message>
 </context>

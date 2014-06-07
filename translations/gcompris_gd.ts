@@ -1077,6 +1077,27 @@ O leibheil 14 a-mach, bidh am modh-ruith-gu-luath an comas gu fèin-obrachail. M
         <source>First, properly organize the items so that you can count them. Then, select the item you want to answer in the bottom right area. Enter the answer with the keyboard and press the OK button or the 'Enter' key.</source>
         <translation>An toiseach, cuir na nithean an òrdugh ach an urrainn dhut an cunntadh. An uair sin, tagh an nì a tha thu airson freagairt san raon taobh deas air a’ bhonn. Cuir an fhreagairt a-steach leis a’ mheur-chlàr is briog air a’ phutan “OK” no brùth air an iuchair “Enter”.</translation>
     </message>
+    <message>
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="9" />
+        <source>Practice subtraction with a fun game</source>
+        <translation>Cleachd toirt air falbh le geama tlachdmhor</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="11" />
+        <source>Tux is hungry. Help him find fish by counting to the correct ice spot.</source>
+        <translation>Tha an t-acras air Tux. Thoir cobhair dha gus èisg a lorg, a’ cunntadh gus an àite cheart a lorg air an deigh.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="12" />
+        <source>Can move the mouse, can read numbers and subtract numbers up to 10 for the first level</source>
+        <translation>Comas an luchag a ghluasad, comas leughaidh àireamhan is comasach air thoirt air falbh a dhèanamh le àireamhan suas gu 10 airson a’ chiad leibheil</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="13" />
+        <source>Click on the dice to show how many ice spots there are between Tux and the fish. Click the dice with the right mouse button to count backwards. When done, click on the OK button or hit the Enter key.</source>
+        <translation>Briog air an dìsinn gus sealltainn co mheud clàr-deighe a tha eadar Tux is an iasg. Briog air an dìsinn leis a’ phutan deas gus cunntadh sìos. Nuair a bhios tu deiseil, briog air a’ phutan “OK” no brùth air an iuchair “Enter”.</translation>
+    </message>
 </context>
 <context>
     <name>AlphabetSequence</name>
@@ -1104,7 +1125,7 @@ to make the ball go in a straight line.</source>
 <context>
     <name>Clockgame</name>
     <message>
-        <location filename="../src/activities/clockgame/Clockgame.qml" line="70" />
+        <location filename="../src/activities/clockgame/Clockgame.qml" line="86" />
         <source>Set the watch to:</source>
         <translation>Suidhich an t-uaireadair aig:</translation>
     </message>
@@ -1181,7 +1202,7 @@ aon dath</translation>
 <context>
     <name>DialogAbout</name>
     <message>
-        <location filename="../src/core/DialogAbout.qml" line="24" />
+        <location filename="../src/core/DialogAbout.qml" line="26" />
         <source>About GCompris</source>
         <translation>Mu GCompris</translation>
     </message>
@@ -1208,137 +1229,142 @@ aon dath</translation>
         <translation>Làn-sgrìn</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="214" />
+        <location filename="../src/core/DialogConfig.qml" line="132" />
+        <source>Virtual Keyboard</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/core/DialogConfig.qml" line="235" />
         <source>English (Great Britain)</source>
         <translation>Beurla (na Breatainne Mòire)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="215" />
+        <location filename="../src/core/DialogConfig.qml" line="236" />
         <source>English (United States)</source>
         <translation>Beurla (nan Stàitean Aonaichte)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="216" />
+        <location filename="../src/core/DialogConfig.qml" line="237" />
         <source>Bulgarian</source>
         <translation>Bulgairis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="217" />
+        <location filename="../src/core/DialogConfig.qml" line="238" />
         <source>Breton</source>
         <translation>Breatnais</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="218" />
+        <location filename="../src/core/DialogConfig.qml" line="239" />
         <source>Czech Republic</source>
         <translation>Poblachd na Seice</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="219" />
+        <location filename="../src/core/DialogConfig.qml" line="240" />
         <source>Danish</source>
         <translation>Danmhairgis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="220" />
+        <location filename="../src/core/DialogConfig.qml" line="241" />
         <source>German</source>
         <translation>Gearmailtis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="221" />
+        <location filename="../src/core/DialogConfig.qml" line="242" />
         <source>Greek</source>
         <translation>Greugais</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="222" />
+        <location filename="../src/core/DialogConfig.qml" line="243" />
         <source>Spanish</source>
         <translation>Spàinntis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="223" />
+        <location filename="../src/core/DialogConfig.qml" line="244" />
         <source>French</source>
         <translation>Fraingis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="224" />
+        <location filename="../src/core/DialogConfig.qml" line="245" />
         <source>Scottish Gaelic</source>
         <translation>Gàidhlig</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="225" />
+        <location filename="../src/core/DialogConfig.qml" line="246" />
         <source>Galician</source>
         <translation>Gailìsis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="226" />
+        <location filename="../src/core/DialogConfig.qml" line="247" />
         <source>Hungarian</source>
         <translation>Ungairis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="227" />
+        <location filename="../src/core/DialogConfig.qml" line="248" />
         <source>Lithuanian</source>
         <translation>Liotuainis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="228" />
+        <location filename="../src/core/DialogConfig.qml" line="249" />
         <source>Latvian</source>
         <translation>Laitbheis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="229" />
+        <location filename="../src/core/DialogConfig.qml" line="250" />
         <source>Dutch</source>
         <translation>Duitsis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="230" />
+        <location filename="../src/core/DialogConfig.qml" line="251" />
         <source>Norwegian Nynorsk</source>
         <translation>Nynorsk na Nirribhidh</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="231" />
+        <location filename="../src/core/DialogConfig.qml" line="252" />
         <source>Polish</source>
         <translation>Pòlainnis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="232" />
+        <location filename="../src/core/DialogConfig.qml" line="253" />
         <source>Russian</source>
         <translation>Ruisis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="233" />
+        <location filename="../src/core/DialogConfig.qml" line="254" />
         <source>Portuguese (Brazil)</source>
         <translation>Portagailis (Braisil)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="234" />
+        <location filename="../src/core/DialogConfig.qml" line="255" />
         <source>Slovak</source>
         <translation>Slòbhacais</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="235" />
+        <location filename="../src/core/DialogConfig.qml" line="256" />
         <source>Slovenian</source>
         <translation>Slòbhainis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="236" />
+        <location filename="../src/core/DialogConfig.qml" line="257" />
         <source>Montenegrin</source>
         <translation>Monadh Neagrach</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="237" />
+        <location filename="../src/core/DialogConfig.qml" line="258" />
         <source>Swedish</source>
         <translation>Suainis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="238" />
+        <location filename="../src/core/DialogConfig.qml" line="259" />
         <source>Tamil</source>
         <translation>Taimilis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="239" />
+        <location filename="../src/core/DialogConfig.qml" line="260" />
         <source>Thai</source>
         <translation>Cànan nan Tàidh</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="240" />
+        <location filename="../src/core/DialogConfig.qml" line="261" />
         <source>Chinese (Traditional)</source>
         <translation>Sìnis (Thradaiseanta)</translation>
     </message>
@@ -1346,32 +1372,32 @@ aon dath</translation>
 <context>
     <name>DialogHelp</name>
     <message>
-        <location filename="../src/core/DialogHelp.qml" line="37" />
+        <location filename="../src/core/DialogHelp.qml" line="35" />
         <source>Author</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogHelp.qml" line="42" />
+        <location filename="../src/core/DialogHelp.qml" line="40" />
         <source>Prerequisite</source>
         <translation>Ro-ghoireasan riatanach</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogHelp.qml" line="46" />
+        <location filename="../src/core/DialogHelp.qml" line="44" />
         <source>Goal</source>
         <translation>Amas</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogHelp.qml" line="52" />
+        <location filename="../src/core/DialogHelp.qml" line="50" />
         <source>Manual</source>
         <translation>Stiùireadh</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogHelp.qml" line="56" />
+        <location filename="../src/core/DialogHelp.qml" line="54" />
         <source>Credit</source>
         <translation>Cliù</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogHelp.qml" line="60" />
+        <location filename="../src/core/DialogHelp.qml" line="58" />
         <source>Section: </source>
         <translation type="unfinished" />
     </message>
@@ -1399,14 +1425,6 @@ gus leantainn air na gluasadan agad</translation>
     </message>
 </context>
 <context>
-    <name>MoneyCore</name>
-    <message>
-        <location filename="../src/activities/money/MoneyCore.qml" line="186" />
-        <source>$ %1</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
     <name>Penalty</name>
     <message>
         <location filename="../src/activities/penalty/Penalty.qml" line="215" />
@@ -1431,12 +1449,12 @@ gus leantainn air na gluasadan agad</translation>
         <translation />
     </message>
     <message>
-        <location filename="../src/core/DialogAbout.qml" line="27" />
+        <location filename="../src/core/DialogAbout.qml" line="29" />
         <source>translator-credits</source>
         <translation>Akerbeltz ⁊ GunChleoc</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogAbout.qml" line="30" />
+        <location filename="../src/core/DialogAbout.qml" line="32" />
         <source>GCompris Home Page: http://gcompris.net</source>
         <translation>Duilleag-dhachaigh GCompris: http://gcompris.net</translation>
     </message>
@@ -2116,15 +2134,20 @@ gus leantainn air na gluasadan agad</translation>
 <context>
     <name>money</name>
     <message>
-        <location filename="../src/activities/money/money.js" line="655" />
+        <location filename="../src/activities/money/money.js" line="661" />
         <source>Click on the coins or paper money at the bottom of the screen to pay. If you want to remove a coin or note, click on it on the upper screen area.</source>
         <translation>Briog air na buinn no air an airgead pàipeir aig bonn na sgrìn gus pàigheadh. Ma tha thu airson bonn no nòta a chur air falbh, briog air aig barr na sgrìn.</translation>
     </message>
     <message>
-        <location filename="../src/activities/money/money.js" line="659" />
+        <location filename="../src/activities/money/money.js" line="671" />
+        <source>Tux just bought some items in your shop.
+He gives you %1, please give back his change.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <source>Tux just bought some items in your shop.
 He gives you $ %1, please give back his change.</source>
-        <translation>Tha Tux air nithean a cheannach sa bhùth agad.
+        <translation type="vanished">Tha Tux air nithean a cheannach sa bhùth agad.
 Thug e £ %1 dhut, an toir thu iomlaid dha?</translation>
     </message>
 </context>

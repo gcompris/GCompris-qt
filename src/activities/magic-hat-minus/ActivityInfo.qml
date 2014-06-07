@@ -1,11 +1,11 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "magic_hat_minus/MagicHatMinus.qml"
-  difficulty: 2
-  icon: "magic_hat_minus/magic_hat_minus.svgz"
-  author: "Marc BRUN"
-  demo: true
+  name: "magic-hat-minus/MagicHat.qml"
+  difficulty: 1
+  icon: "magic-hat-minus/magic-hat-minus.svgz"
+  author: "Thibaut ROMAIN <thibrom@gmail.com>"
+  demo: false
   title: qsTr("The magician hat")
   description: qsTr("Count how many items are under the magic hat after some have got away")
   goal: qsTr("Learn subtraction")

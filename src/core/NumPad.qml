@@ -65,7 +65,7 @@ Item {
 
                 MouseArea{
                     anchors.fill:parent
-                    enabled: (ApplicationInfo.isMobile) ? true : false
+                    enabled: ApplicationSettings.isVirtualKeyboard
 
                     onClicked :{
                         if(answer.length < maxDigit)
@@ -113,7 +113,7 @@ Item {
                 }
                 MouseArea {
                     anchors.fill: parent
-                    enabled: (ApplicationInfo.isMobile) ? true : false
+                    enabled: ApplicationSettings.isVirtualKeyboard
 
                     onClicked: {
                         if(answer.length < maxDigit)
@@ -148,7 +148,7 @@ Item {
 
             MouseArea {
                 anchors.fill: parent
-                enabled: (ApplicationInfo.isMobile) ? true : false
+                enabled: ApplicationSettings.isVirtualKeyboard
 
                 onClicked: {
                     answer = answer.substring(0,answer.length - 1)

@@ -10,6 +10,7 @@
 #include "ApplicationInfo.h"
 #include "ActivityInfoTree.h"
 #include "File.h"
+#include "DownloadManager.h"
 
 bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
 {
@@ -45,6 +46,7 @@ int main(int argc, char *argv[])
 	ActivityInfoTree::init();
     ApplicationSettings::init();
 	File::init();
+	DownloadManager::init();
 
     // Load configuration
     QString locale;
@@ -83,7 +85,15 @@ int main(int argc, char *argv[])
     // Apply translation
     app.installTranslator(&translator);
 
+    // Register voices-resources for current locale, updates/downloads only if
+    // not prohibited by the settings
+    DownloadManager::getInstance()->updateResource(DownloadManager::getInstance()
+        ->getVoicesResourceForLocale(ApplicationInfo::localeShort(locale)));
+
 	QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
+	QObject::connect(&engine, SIGNAL(quit()), DownloadManager::getInstance(),
+	        SLOT(shutdown()));
+
     QObject *topLevel = engine.rootObjects().value(0);
 
     QQuickWindow *window = qobject_cast<QQuickWindow *>(topLevel);

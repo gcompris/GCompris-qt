@@ -106,6 +106,7 @@ void ActivityInfoTree::filterByTag(const QString &tag)
                 tag == "all")
             m_menuTree.push_back(activity);
     }
+    sortByDifficulty();
     emit menuTreeChanged();
 }
 
@@ -132,21 +133,22 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 		if(!line.startsWith("#")) {
 			QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(line);
 
-			if(!QResource::registerResource(
-				   ApplicationInfo::getFilePath(line + ".rcc")))
-				qDebug() << "Failed to load the resource file " << line + ".rcc";
+            if(!QResource::registerResource(
+                        ApplicationInfo::getFilePath(line + ".rcc")))
+                qDebug() << "Failed to load the resource file " << line + ".rcc";
 
-			QQmlComponent componentRoot(engine,	QUrl(url));
-			QObject *objectRoot = componentRoot.create();
-			if(objectRoot) {
-				menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(objectRoot));
-			}
-		}
+            QQmlComponent componentRoot(engine,	QUrl(url));
+            QObject *objectRoot = componentRoot.create();
+            if(objectRoot) {
+                menuTree->menuTreeAppend(qobject_cast<ActivityInfo*>(objectRoot));
+            } else {
+                qDebug() << "ERROR: failed to load " << line << " " << componentRoot.errors();
+            }
+        }
 	}
 	file.close();
 
     menuTree->filterByTag("all");
-    menuTree->sortByDifficulty();
     return menuTree;
 }
 

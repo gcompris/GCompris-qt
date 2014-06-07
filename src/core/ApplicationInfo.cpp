@@ -99,6 +99,11 @@ void ApplicationInfo::setApplicationWidth(const int newWidth)
     }
 }
 
+QString ApplicationInfo::getResourceDataPath()
+{
+    return QString("qrc:/gcompris/data");
+}
+
 QString ApplicationInfo::getFilePath(const QString &file)
 {
 #if defined(Q_OS_ANDROID)
@@ -114,7 +119,7 @@ QString ApplicationInfo::getAudioFilePath(const QString &file)
 
     QString filename = file;
     filename.replace("$LOCALE", localeShortName);
-    return getFilePath(filename);
+    return getResourceDataPath() + "/" + filename;
 }
 
 // Given a file name, if it contains $LOCALE it is replaced by
