@@ -23,7 +23,6 @@ gletters
 hexagon
 instruments
 leftright
-lightsoff
 magic-hat-minus
 magic-hat-plus
 memory

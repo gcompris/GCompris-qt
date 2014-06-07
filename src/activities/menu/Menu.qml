@@ -1,4 +1,4 @@
-import QtQuick 2.2
+import QtQuick 2.1
 import QtQuick.Controls 1.1
 import "../../core"
 import GCompris 1.0
