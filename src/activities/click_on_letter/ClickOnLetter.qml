@@ -236,7 +236,7 @@ ActivityBase {
 
         GCAudio {
             id: letterAudio
-            source: ""
+            onError: questionItem.visible = true
 
             function playDelayed(ms) {
                 if (letterAudioTimer.running)

@@ -7,7 +7,10 @@ Item {
     property bool muted: !ApplicationSettings.isAudioEnabled
 
     property alias source: audio.source
+    property alias errorString: audio.errorString
     property bool autoPlay
+
+    signal error
 
     function play() {
         if(!muted) {
@@ -23,6 +26,9 @@ Item {
     Audio {
         id: audio
         autoPlay: gcaudio.autoPlay && !gcaudio.muted
-        onError: console.log("error while playing: " + source + ": " + errorString)
+        onError: {
+            console.log("error while playing: " + source + ": " + errorString)
+            gcaudio.error()
+        }
     }
 }

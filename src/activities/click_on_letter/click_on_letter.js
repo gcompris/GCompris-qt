@@ -150,14 +150,16 @@ function initLevel() {
     if (GCompris.ApplicationSettings.isAudioEnabled) {
         items.nextLevelAudio.stop();
         items.nextLevelAudio.play();
+        items.questionItem.visible = false;
         items.letterAudio.source = GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
                 + Core.getSoundFilenamForChar(currentLetter));
         items.letterAudio.playDelayed(1500);
-    } else { 
+    } else {
         // no sound -> show question
         items.questionItem.visible = true;
-        items.questionItem.text = currentLetter;
     }
+    // Maybe we will display it if sound fails
+    items.questionItem.text = currentLetter;
 }
 
 function nextLevel() {
