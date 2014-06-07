@@ -3,10 +3,10 @@ import GCompris 1.0
 ActivityInfo {
   name: "guessnumber/Guessnumber.qml"
   difficulty: 1
-  icon: "guessnumber/guessnumber.svgz"
-  author: "Your Name <yy@zz.org>"
+  icon: "guessnumber/guessnumber.svg"
+  author: "Thibaut ROMAIN <thibrom@gmail.com>"
   demo: false
-  title: qsTr("guessnumber activity")
+  title: qsTr("Guessnumber activity")
   description: qsTr("")
   goal: qsTr("")
   prerequisite: qsTr("")
