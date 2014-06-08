@@ -447,6 +447,9 @@ void DownloadManager::downloadFinished(QNetworkReply* reply)
         job->file.flush();  // note: important, or checksums might be wrong!
         job->file.close();
     }
+    if (reply->error() && job->file.exists())
+        job->file.remove();  // remove incomplete files!
+
     QString targetFilename = getFilenameForUrl(job->url);
     if (job->url.fileName() == contentsFilename) {
         // Contents
