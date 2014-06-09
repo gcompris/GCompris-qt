@@ -232,6 +232,9 @@ ActivityBase {
         GCAudio {
             id: nextLevelAudio
             source: ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/click_on_letter.ogg")
+            onError: letterAudio.play()
+            // When this sound is complete, play the letter
+            onDone: letterAudio.playDelayed(100);
         }
 
         GCAudio {
