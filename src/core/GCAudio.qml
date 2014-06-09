@@ -11,6 +11,7 @@ Item {
     property bool autoPlay
 
     signal error
+    signal done
 
     function play() {
         if(!muted) {
@@ -30,5 +31,6 @@ Item {
             console.log("error while playing: " + source + ": " + errorString)
             gcaudio.error()
         }
+        onStopped: gcaudio.done()
     }
 }

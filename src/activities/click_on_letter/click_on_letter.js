@@ -153,7 +153,6 @@ function initLevel() {
         items.questionItem.visible = false;
         items.letterAudio.source = GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
                 + Core.getSoundFilenamForChar(currentLetter));
-        items.letterAudio.playDelayed(1500);
     } else {
         // no sound -> show question
         items.questionItem.visible = true;
