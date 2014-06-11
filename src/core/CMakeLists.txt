@@ -69,22 +69,22 @@ install(TARGETS GCompris
 
 # Qt plugins to install
 set(_qt_plugins Qt5::QJpegPlugin)
-if(CMAKE_HOST_APPLE)
+if(APPLE)
   list(APPEND _qt_plugins Qt5::QTgaPlugin Qt5::QTiffPlugin Qt5::QCocoaIntegrationPlugin)
-elseif(CMAKE_HOST_WIN32)
+elseif(WIN32)
   list(APPEND _qt_plugins Qt5::QWindowsIntegrationPlugin)
-else()
+elseif(LINUX)
   list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin)
 endif()
 
 # Qml plugins to install
-if(CMAKE_HOST_WIN32)
+if(WIN32)
   set(_lib_prefix "")
 else()
   set(_lib_prefix "lib")
 endif()
 
-set(_qt_plugins2 imageformats/${_lib_prefix}qsvg)
+set(_qt_plugins2 imageformats/${_lib_prefix}qsvg mediaservice/${_lib_prefix}qtmedia_audioengine)
 
 set(_qml_plugins
   QtQuick/Controls/${_lib_prefix}qtquickcontrolsplugin
@@ -97,7 +97,7 @@ set(_qml_plugins
 
 set(GCOMPRIS_OTHER_LIBS)
 
-if(CMAKE_HOST_APPLE)
+if(APPLE)
   set(_app GCompris.app)
   set(_qtconf_destdir ${_app}/Contents/Resources)
   set(_qt_plugins_destdir ${_app}/Contents/plugins)
@@ -149,7 +149,7 @@ getQtQmlPath(_qt_qml_path)
 install(DIRECTORY ${_qt_qml_path}/QtGraphicalEffects DESTINATION ${_qt_qml_destdir})
 
 # Hack: do not fixup Qt and Qml plugins on Windows because fixup_bundle takes ages (cmake bug ?)
-if(CMAKE_HOST_WIN32)
+if(WIN32)
   set(GCOMPRIS_OTHER_LIBS "")
 endif()
 
@@ -169,11 +169,11 @@ set(CPACK_PACKAGE_VERSION ${GCOMPRIS_VERSION})
 set(CPACK_RESOURCE_FILE_LICENSE "${PROJECT_SOURCE_DIR}/COPYING")
 set(CPACK_RESOURCE_FILE_README "${PROJECT_SOURCE_DIR}/README")
 
-if(CMAKE_HOST_APPLE)
+if(APPLE)
   set(CPACK_GENERATOR "DragNDrop")
   set(CPACK_DMG_DS_STORE "${GCOMPRIS_RESOURCES}/dmg_DS_Store")
   set(CPACK_DMG_BACKGROUND_IMAGE "${GCOMPRIS_RESOURCES}/dmg_background.png")
-elseif(CMAKE_HOST_WIN32)
+elseif(WIN32)
   set(CPACK_GENERATOR "NSIS")
 else()
   set(CPACK_GENERATOR "STGZ")
