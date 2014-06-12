@@ -85,12 +85,18 @@ private:
     QStringList getLocalResources();
 
 private slots:
-    void downloadFinished(QNetworkReply*);
+    void downloadFinished();
     void downloadReadyRead();
     void handleError(QNetworkReply::NetworkError code);
 
 public:
     // public interface:
+    enum DownloadFinishedCode {
+        Success = 0,  // download executed succesfully
+        Error   = 1,  // download error
+        NoChange = 2  // local files are up-to-date, no download was needed
+    };
+
     virtual ~DownloadManager();
 
     static void init();
@@ -100,11 +106,13 @@ public:
 
     Q_INVOKABLE QString getVoicesResourceForLocale(const QString& locale) const;
     Q_INVOKABLE bool haveLocalResource(const QString& path) const;
+    Q_INVOKABLE bool downloadIsRunning() const;
 
 public slots:
     Q_INVOKABLE bool updateResource(const QString& path);
     Q_INVOKABLE bool downloadResource(const QString& path);
     Q_INVOKABLE void shutdown();
+    Q_INVOKABLE void abortDownloads();
 
 #if 0
     Q_INVOKABLE bool checkForUpdates();  // might be helpful later with other use-cases!
@@ -112,9 +120,10 @@ public slots:
 #endif
 
 signals:
-    void error(const QString& msg);
+    void error(int code, const QString& msg); // note: code is actually a enum NetworkError, but this would not be exposed well to the QML layer
+    void downloadStarted(const QString& resource);
     void downloadProgress(qint64 bytesReceived, qint64 bytesTotal);
-    void downloadFinished();
+    void downloadFinished(int code); // note: when using DownloadFinishedCode instead of int the code will not be passed to the QML layer
 };
 
 #endif /* DOWNLOADMANAGER_H_ */

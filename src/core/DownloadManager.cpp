@@ -40,8 +40,6 @@ DownloadManager* DownloadManager::_instance = 0;
 DownloadManager::DownloadManager()
   : accessManager(this), serverUrl(ApplicationSettings::getInstance()->downloadServerUrl())
 {
-    connect(&accessManager, SIGNAL(finished(QNetworkReply*)),
-            this, SLOT(downloadFinished(QNetworkReply*)));
 }
 
 DownloadManager::~DownloadManager()
@@ -53,25 +51,7 @@ DownloadManager::~DownloadManager()
 void DownloadManager::shutdown()
 {
     qDebug() << "DownloadManager: shutting down," << activeJobs.size() << "active jobs";
-    disconnect(&accessManager, SIGNAL(finished(QNetworkReply*)),
-            this, SLOT(downloadFinished(QNetworkReply*)));
-    if (activeJobs.size() > 0) {
-        QMutexLocker locker(&jobsMutex);
-        QMutableListIterator<DownloadJob*> iter(activeJobs);
-        while (iter.hasNext()) {
-            DownloadJob *job = iter.next();
-            if (job->reply) {
-                if (job->reply->isRunning()) {
-                    qDebug() << "Aborting download job:" << job->url;
-                    job->reply->abort();
-                    job->file.close();
-                    job->file.remove();
-                }
-                delete job->reply;
-            }
-            iter.remove();
-        }
-    }
+    abortDownloads();
 }
 
 // It is not recommended to create a singleton of Qml Singleton registered
@@ -99,6 +79,33 @@ void DownloadManager::init()
     qmlRegisterSingletonType<DownloadManager>("GCompris", 1, 0,
             "DownloadManager",
             systeminfoProvider);
+}
+
+bool DownloadManager::downloadIsRunning() const
+{
+    return (activeJobs.size() > 0);
+}
+
+void DownloadManager::abortDownloads()
+{
+    if (activeJobs.size() > 0) {
+        QMutexLocker locker(&jobsMutex);
+        QMutableListIterator<DownloadJob*> iter(activeJobs);
+        while (iter.hasNext()) {
+            DownloadJob *job = iter.next();
+            if (job->reply) {
+                disconnect(job->reply, SIGNAL(finished()), this, SLOT(downloadFinished()));
+                if (job->reply->isRunning()) {
+                    qDebug() << "Aborting download job:" << job->url;
+                    job->reply->abort();
+                    job->file.close();
+                    job->file.remove();
+                }
+                delete job->reply;
+            }
+            iter.remove();
+        }
+    }
 }
 
 /** Helper generating a relative voices resources file-path for a given locale*/
@@ -241,14 +248,14 @@ bool DownloadManager::download(DownloadJob* job)
     QDir dir;
     if (!dir.exists(fi.path()) && !dir.mkpath(fi.path())) {
         qDebug() << "Could not create resource path " << fi.path();
-        emit error("Could not create resource path");
+        emit error(QNetworkReply::InternalServerError, "Could not create resource path");
         return false;
     }
 
     job->file.setFileName(fi.filePath());
     if (!job->file.open(QIODevice::WriteOnly)) {
-        emit error(QString("Could not open target file %1")
-                .arg(job->file.fileName()));
+        emit error(QNetworkReply::InternalServerError,
+                QString("Could not open target file %1").arg(job->file.fileName()));
         return false;
     }
 
@@ -257,12 +264,15 @@ bool DownloadManager::download(DownloadJob* job)
     //qDebug() << "Now downloading" << job->url << "to" << fi.filePath() << "...";
     QNetworkReply *reply = accessManager.get(request);
     job->reply = reply;
+    connect(reply, SIGNAL(finished()), this, SLOT(downloadFinished()));
     connect(reply, SIGNAL(readyRead()), this, SLOT(downloadReadyRead()));
     connect(reply, SIGNAL(error(QNetworkReply::NetworkError)),
             this, SLOT(handleError(QNetworkReply::NetworkError)));
-    if (job->url.fileName() != contentsFilename)
+    if (job->url.fileName() != contentsFilename) {
         connect(reply, SIGNAL(downloadProgress(qint64, qint64)),
                 this, SIGNAL(downloadProgress(qint64, qint64)));
+        emit downloadStarted(job->url.toString().remove(0, serverUrl.toString().length()));
+    }
 
     return true;
 }
@@ -336,7 +346,7 @@ void DownloadManager::handleError(QNetworkReply::NetworkError code)
 {
     Q_UNUSED(code);
     QNetworkReply *reply = dynamic_cast<QNetworkReply*>(sender());
-    emit error(reply->errorString());
+    emit error(reply->error(), reply->errorString());
 }
 
 /** Parse upstream Contents file and build checksum map
@@ -440,8 +450,10 @@ bool DownloadManager::registerResource(const QString& filename)
  * Called whenever a single download (sub-job) has finished. Responsible for
  * iterating over possibly remaining sub-jobs of our DownloadJob.
  */
-void DownloadManager::downloadFinished(QNetworkReply* reply)
+void DownloadManager::downloadFinished()
 {
+    QNetworkReply* reply = dynamic_cast<QNetworkReply*>(sender());
+    DownloadFinishedCode code = Success;
     DownloadJob *job = getJobByReply(reply);
     if (job->file.isOpen()) {
         job->file.flush();  // note: important, or checksums might be wrong!
@@ -456,12 +468,15 @@ void DownloadManager::downloadFinished(QNetworkReply* reply)
         if (reply->error()) {
             qWarning() << "Error downloading Contents from" << job->url
                     << ":" << reply->error() << ":" << reply->errorString();
+            // note: errorHandler() emit's error!
+            code = Error;
             goto outError;
         }
         //qDebug() << "Download of Contents finished successfully: " << job->url;
         if (!parseContents(job)) {
             qWarning() << "Invalid format of Contents file" << job->url;
-            emit error("Invalid format of Contents file");
+            emit error(QNetworkReply::UnknownContentError, "Invalid format of Contents file");
+            code = Error;
             goto outError;
         }
     } else {
@@ -469,15 +484,17 @@ void DownloadManager::downloadFinished(QNetworkReply* reply)
         if (reply->error()) {
             qWarning() << "Error downloading RCC file from " << job->url
                 << ":" << reply->error() << ":" << reply->errorString();
-            emit error(QString("Error downloading RCC file %1")
-                    .arg(job->url.fileName()));
+            // note: errorHandler() emit's error!
+            code = Error;
         } else {
             qDebug() << "Download of RCC file finished successfully: " << job->url;
             if (!checksumMatches(job, targetFilename)) {
                 qWarning() << "Checksum of downloaded file does not match: "
                         << targetFilename;
-                emit error(QString("Checksum of downloaded file does not match: %1")
-                        .arg(targetFilename));
+                emit error(QNetworkReply::UnknownContentError,
+                        QString("Checksum of downloaded file does not match: %1")
+                            .arg(targetFilename));
+                code = Error;
             } else
                 registerResource(targetFilename);
         }
@@ -500,10 +517,11 @@ void DownloadManager::downloadFinished(QNetworkReply* reply)
             qDebug() << "Local resource is up-to-date:"
                 << QFileInfo(filename).fileName();
             registerResource(filename);
+            code = NoChange;
     }
 
     // none left, DownloadJob finished
-    emit downloadFinished();
+    emit downloadFinished(code);
 
   outError:
     if (job->file.isOpen())
@@ -532,7 +550,8 @@ QStringList DownloadManager::getLocalResources()
     QDir dir(path);
     if (!dir.exists(path) && !dir.mkpath(path)) {
         qWarning() << "Could not create resource path " << path;
-        emit error(QString("Could not create resource path %1").arg(path));
+        emit error(QNetworkReply::InternalServerError,
+                QString("Could not create resource path %1").arg(path));
         return QStringList();
     }
 
