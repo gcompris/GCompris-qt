@@ -20,6 +20,7 @@
  */
 import QtQuick 2.2
 import GCompris 1.0
+import "qrc:/gcompris/src/core/core.js" as Core
 
 Item {
     id: bar
@@ -45,6 +46,14 @@ Item {
 
     function show(newContent) {
         content.value = newContent
+    }
+    
+    Connections {
+        target: DownloadManager
+        
+        onDownloadStarted: downloadImage.visible = true;
+        onDownloadFinished: downloadImage.visible = false;  
+        onError: downloadImage.visible = false;
     }
 
     Row {
@@ -116,6 +125,21 @@ Item {
             contentId: ApplicationInfo.isMobile ? content.disabled : content.home
             sourceSize.width: 66 * barZoom
             onClicked: bar.homeClicked()
+        }
+        AnimatedImage {
+            id: downloadImage
+            source: "qrc:/gcompris/src/core/resource/loader.gif"
+            anchors.bottom: parent.bottom
+            visible: false
+            
+            MouseArea {
+                id: mouseArea
+                anchors.fill: parent
+                hoverEnabled: true
+                onClicked: {
+                    var downloadDialog = Core.showDownloadDialog(bar, {});
+                }
+            }
         }
         Item { width: 10; height: 1 }
     }
