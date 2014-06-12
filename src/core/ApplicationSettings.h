@@ -6,6 +6,7 @@
 #include <QtCore/QObject>
 #include <QQmlEngine>
 #include <QUrl>
+#include <QtGlobal>
 
 #include <QSettings>
 
@@ -23,6 +24,9 @@ class ApplicationSettings : public QObject
 
     // admin group
     Q_PROPERTY(QString downloadServerUrl READ downloadServerUrl WRITE setDownloadServerUrl NOTIFY downloadServerUrlChanged)
+
+    // internale group
+    Q_PROPERTY(quint32 exeCount READ exeCount WRITE setExeCount NOTIFY exeCountChanged);
 
 public:
 
@@ -83,6 +87,12 @@ public:
         emit downloadServerUrlChanged();
     }
 
+    quint32 exeCount() const { return m_exeCount; }
+    void setExeCount(const quint32 newExeCount) {
+        m_exeCount = newExeCount;
+        emit exeCountChanged();
+    }
+
 protected slots:
     Q_INVOKABLE void notifyAudioEnabledChanged();
     Q_INVOKABLE void notifyEffectEnabledChanged() {}
@@ -92,6 +102,8 @@ protected slots:
     Q_INVOKABLE void notifyAutomaticDownloadsEnabledChanged();
 
     Q_INVOKABLE void notifyDownloadServerUrlChanged();
+
+    Q_INVOKABLE void notifyExeCountChanged();
 
 protected:
 
@@ -105,6 +117,8 @@ signals:
 
     void downloadServerUrlChanged();
 
+    void exeCountChanged();
+
 private:
     static ApplicationSettings *m_instance;
     bool m_isAudioEnabled;
@@ -115,6 +129,8 @@ private:
     QString m_locale;
 
     QString m_downloadServerUrl;
+
+    quint32 m_exeCount;
 
     QSettings m_config;
 };
