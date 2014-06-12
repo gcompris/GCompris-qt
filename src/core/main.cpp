@@ -85,6 +85,9 @@ int main(int argc, char *argv[])
     // Apply translation
     app.installTranslator(&translator);
 
+    // Update execution counter
+    ApplicationSettings::getInstance()->setExeCount(ApplicationSettings::getInstance()->exeCount() + 1);
+
     // Register voices-resources for current locale, updates/downloads only if
     // not prohibited by the settings
     DownloadManager::getInstance()->updateResource(DownloadManager::getInstance()
