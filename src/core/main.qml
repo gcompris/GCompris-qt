@@ -19,11 +19,13 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.2
-import QtQuick.Controls 1.1
-import QtQuick.Window 2.0
+import QtQuick.Controls 1.2
+import QtQuick.Window 2.1
 import QtMultimedia 5.0
+import QtQuick.Dialogs 1.1
 
 import GCompris 1.0
+import "qrc:/gcompris/src/core/core.js" as Core
 
 Window {
     id: main
@@ -32,11 +34,32 @@ Window {
     minimumWidth: 400
     minimumHeight: 400
     title: "GCompris"
-
+        
     GCAudio {
         id: audio
         source: "qrc:/gcompris/src/core/resource/intro.ogg"
         autoPlay: false
+    }
+        
+    Component.onCompleted: {
+        console.log("enter main.qml (run #" + ApplicationSettings.exeCount + ")")
+        if (ApplicationSettings.exeCount == 1) {
+            // first run
+            var buttonHandler = new Array();
+            var dialog;
+            buttonHandler[StandardButton.Ok] = function() {};
+            dialog = Core.showMessageDialog(main, qsTr("Welcome to GCompris!"),
+                    qsTr("You are running GCompris for the first time."),
+                    qsTr("You should verify that your application settings" +
+                    " especially your language is set correctly, and that all" +
+                    " language specific sound files are installed. You can do" +
+                    " this in the Preferences Dialog.<br/>Your current locale is "
+                    + "<b>" + ApplicationInfo.localeShort + "</b>"
+                    + ".<br/>Have Fun!"),
+                    StandardIcon.Information,
+                    buttonHandler
+            );
+        }
     }
 
     StackView {
