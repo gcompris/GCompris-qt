@@ -44,6 +44,8 @@ var clouds = new Array;
 var cloudsErased = new Array;
 
 function start(items_, dataset_) {
+    Core.checkForVoices(items_.bar);
+
     items = items_
     dataset = dataset_
     numberOfLevel = dataset.length
