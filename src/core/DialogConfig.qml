@@ -21,8 +21,10 @@
 import QtQuick 2.2
 import QtQuick.Controls 1.1
 import QtQuick.Controls.Styles 1.1
-import QtQuick.Dialogs 1.1
+import QtQuick.Dialogs 1.2
 import GCompris 1.0
+import QtQuick.Layouts 1.1
+import "qrc:/gcompris/src/core/core.js" as Core
 
 Rectangle {
     id: dialogConfig
@@ -166,6 +168,67 @@ Rectangle {
                             style: GCComboBoxStyle {}
                             model: languages
                             width: 200 * ApplicationInfo.ratio
+                            
+                            onCurrentIndexChanged: voicesRow.localeChanged();
+                        }
+                        
+                        Row {
+                            id: voicesRow
+                            height: voicesImage.height
+                            spacing: 5 * ApplicationInfo.ratio
+                            
+                            property bool haveLocalResource: false
+                            
+                            function localeChanged() {
+                                var localeShort = languages.get(languageBox.currentIndex).locale.substr(0, 2);
+                                var language = languages.get(languageBox.currentIndex).text;
+                                voicesText.text = language + " " + qsTr("sounds");
+                                voicesRow.haveLocalResource = DownloadManager.haveLocalResource(
+                                        DownloadManager.getVoicesResourceForLocale(localeShort));
+                            }
+                            
+                            Connections {
+                                target: DownloadManager
+                                
+                                onDownloadFinished: voicesRow.localeChanged()
+                            }
+                            
+                            Item {
+                                id: rowSpacer
+                                width: 20 * ApplicationInfo.ratio
+                                height: parent.height
+                            }
+                        
+                            Text {
+                                id: voicesText
+                                anchors.verticalCenter: parent.verticalCenter
+                                text: qsTr("Sounds")
+                            }
+                            
+                            Image {
+                                id: voicesImage
+                                sourceSize.height: 30// * ApplicationInfo.ratio
+                                source: voicesRow.haveLocalResource ? "qrc:/gcompris/src/core/resource/apply.svgz" :
+                                    "qrc:/gcompris/src/core/resource/cancel.svgz"
+                            }
+                            
+                            Button {
+                                id: voicesButton
+                                height: parent.height
+                                anchors.verticalCenter: parent.verticalCenter
+                                text: voicesRow.haveLocalResource ? qsTr("Check for updates") :
+                                    qsTr("Download")
+                                style: GCButtonStyle {}
+
+                                onClicked: {
+                                    if (DownloadManager.downloadResource(
+                                        DownloadManager.getVoicesResourceForLocale(
+                                                languages.get(languageBox.currentIndex).locale.substr(0, 2))))
+                                    {
+                                        var downloadDialog = Core.showDownloadDialog(dialogConfig, {});
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -213,60 +276,6 @@ Rectangle {
         }
     }
  
-    //function onDownloadProgress(bytesReceived, bytesTotal) {
-    //    console.log("progress: " + bytesReceived + "/" + bytesTotal);
-    //}
-    
-    function onDownloadFinished() {
-        DownloadManager.downloadFinished.disconnect(onDownloadFinished)
-        DownloadManager.error.disconnect(onDownloadError)
-    }
-    
-    function onDownloadError(error) {
-        errorDialog.text = error;
-        errorDialog.open();
-        onDownloadFinished();
-    }
-
-    MessageDialog {
-        id: errorDialog
-        
-        title: qsTr("Download Error")
-        icon: StandardIcon.Warning
-        standardButtons: StandardButton.Ignore
-        visible: false
-    }
-      
-    MessageDialog {
-        id: messageDialog
-        
-        title: qsTr("You selected a new locale")
-        text: qsTr("Do you want to download the corresponding sound files?")
-        icon: StandardIcon.Question
-        standardButtons: StandardButton.Yes | StandardButton.No
-        
-        visible: false
-        
-        property bool initialized: false  // workaround onYes handler triggered twice in Qt 5.3 (bug #35933)
-        
-        onYes: {
-            if (!messageDialog.initialized)
-                return;
-            messageDialog.initialized = false;
-            console.log("yes");
-            if (DownloadManager.downloadResource(DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort))
-) {
-                //DownloadManager.downloadProgress.connect(onDownloadProgress);
-                // note: for visualizing download progress probably need an
-                // own custom element. Android does not seem to allow changing
-                // contents of a message dialog dynamically 
-                DownloadManager.downloadFinished.connect(onDownloadFinished);
-                DownloadManager.error.connect(onDownloadError);
-            }
-            messageDialog.close()
-        }
-    }
-
     property bool isAudioEnabled: ApplicationSettings.isAudioEnabled
     property bool isFullscreen: ApplicationSettings.isFullscreen
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
@@ -302,10 +311,28 @@ Rectangle {
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
         if (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale) {
             ApplicationSettings.locale = languages.get(languageBox.currentIndex).locale
-            if (!DownloadManager.haveLocalResource(DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort))) {
-                messageDialog.initialized = true
-                messageDialog.open()
-            } else
+            if (!DownloadManager.haveLocalResource(
+                    DownloadManager.getVoicesResourceForLocale(
+                            ApplicationInfo.localeShort)))
+            {
+                // ask for downloading new voices
+                var buttonHandler = new Array();
+                var dialog;
+                buttonHandler[StandardButton.No] = function() {};
+                buttonHandler[StandardButton.Yes] = function() {
+                    // yes -> start download
+                    if (DownloadManager.downloadResource(
+                            DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort)))
+                        var downloadDialog = Core.showDownloadDialog(main, {});
+                };
+                dialog = Core.showMessageDialog(dialogConfig,
+                        qsTr("You selected a new locale"),
+                        qsTr("Do you want to download the corresponding sound files now?"),
+                        "",
+                        StandardIcon.Question,
+                        buttonHandler
+                );
+            } else // check for udpates or/and register new voices
                 DownloadManager.updateResource(DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort))
         }
     }
