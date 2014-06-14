@@ -44,6 +44,8 @@ var mode;
 
 function start(_items, _mode)
 {
+    Core.checkForVoices(_items.bar);
+
     items = _items;
     mode = _mode;
 
@@ -147,7 +149,10 @@ function initLevel() {
     }
 
     currentLetter = questions.split("")[currentSubLevel];
-    if (GCompris.ApplicationSettings.isAudioEnabled) {
+    if (GCompris.ApplicationSettings.isAudioEnabled &&
+        GCompris.DownloadManager.haveLocalResource(
+                GCompris.DownloadManager.getVoicesResourceForLocale(
+                        GCompris.ApplicationInfo.localeShort))) {
         items.nextLevelAudio.stop();
         items.nextLevelAudio.play();
         items.questionItem.visible = false;
