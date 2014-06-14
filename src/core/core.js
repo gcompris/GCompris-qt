@@ -28,6 +28,8 @@
 .pragma library
 .import QtQuick.Dialogs 1.2 as Dialog
 .import QtQml 2.2 as Qml
+.import GCompris 1.0 as GCompris
+
 /*
   function shuffle()
   Shuffle the array passed in parameter and returns it.
@@ -188,4 +190,20 @@ function showDownloadDialog(parent, properties) {
     }
     //console.log("created DownloadDialog " + dialog);
     return dialog;
+}
+
+function checkForVoices(parent)
+{
+    if (!GCompris.DownloadManager.haveLocalResource(
+            GCompris.DownloadManager.getVoicesResourceForLocale(
+                    GCompris.ApplicationInfo.localeShort))) {
+        var buttonHandler = new Array();
+        var dialog;
+        buttonHandler[Dialog.StandardButton.Ok] = function() {};
+        dialog = showMessageDialog(parent, qsTr("Missing sound files!"),
+                qsTr("This activity makes use of language specific sound files, that are not yet installed on your system."),
+                qsTr("For downloading the needed sound files go to the preferences dialog."),
+                Dialog.StandardIcon.Information,
+                buttonHandler);
+    }
 }
