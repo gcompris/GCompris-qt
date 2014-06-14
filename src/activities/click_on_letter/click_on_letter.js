@@ -45,6 +45,7 @@ var mode;
 function start(_items, _mode)
 {
     Core.checkForVoices(_items.bar);
+    _items.nextLevelAudio.source = GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/click_on_letter.ogg");
 
     items = _items;
     mode = _mode;
