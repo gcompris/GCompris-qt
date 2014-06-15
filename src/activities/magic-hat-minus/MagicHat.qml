@@ -32,83 +32,25 @@ ActivityBase {
 
     property string mode: "minus"
 
-    pageComponent: Image{
+    pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: mode == "minus" ?
-                    Activity.url + "magic_hat_minus_newbg.svgz" :
-                    Activity.url + "magic_hat_plus_newbg.svgz"
+        source: Activity.url + "background.svgz"
         fillMode: Image.PreserveAspectCrop
+        property int starSize: Math.min(rightLayout.width / 12,
+                                        background.height / 16)
         signal start
         signal stop
 
-        property var starColors : ["yellow","green","blue"]
+        property var starColors : ["yellow", "red", "blue"]
 
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
 
-        Column {
-            id: mainlayout
-            anchors.left: background.left
-            width: background.width/2
-            height:background.height
-            Hat{
-                    id: theHat
-            }
-        }
-        Grid {
-            anchors.right: background.right
-            anchors.rightMargin: -background.width/26
-            anchors.verticalCenter: background.verticalCenter
-            anchors.verticalCenterOffset: background.height/8
-            width: background.width/2
-            height:background.height
-            id: rightLayout
-            rows: 3
-            spacing: background.height/10
-            Column{
-                id: firstRow
-                spacing: 5
-                Repeater{
-                    id: repeaterFirstRow
-                    model: 3
-                    StarsBar{
-                        starsSize: background.height/18
-                        starsColor: starColors[index]
-                        opacity: index==0 ? 1.0 : 0.0
-                    }
-                }
-            }
-            Column{
-                id: secondRow
-                spacing: 5
-                Repeater{
-                    id: repeaterSecondRow
-                    model: 3
-                    StarsBar{
-                        starsSize: background.height/18
-                        starsColor: starColors[index]
-                        opacity: index==0 ? 1.0 : 0.0
-                    }
-                }
-            }
-            Column{
-                id: answerRow
-                spacing: 5
-                Repeater{
-                    id: repeaterAnswerRow
-                    model: 3
-                    StarsBar{
-                        starsSize: background.height/18
-                        starsColor: starColors[index]
-                        opacity: index==0 ? 1.0 : 0.0
-                        authorizeClick: false
-                    }
-                }
-            }
-        }
+        onStart: Activity.start(items, mode)
+        onStop: Activity.stop()
 
         // Add here the QML items you need to access in javascript
         QtObject {
@@ -118,13 +60,108 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias hat: theHat
-            property var repeatersList : [repeaterFirstRow,repeaterSecondRow,repeaterAnswerRow]
-            property int starsSize: background.height/18
-            property alias columnY : secondRow.y
+            property var repeatersList:
+                [repeaterFirstRow, repeaterSecondRow, repeaterAnswerRow]
         }
 
-        onStart: { Activity.start(items,mode) }
-        onStop: { Activity.stop() }
+        Item {
+            id: mainlayout
+            anchors.left: background.left
+            width: background.width * 0.4
+            height: background.height
+            z: 11
+            Hat {
+                id: theHat
+                starsSize: background.starSize
+            }
+            Text {
+                text: mode == "minus" ? "-" : "+"
+                anchors.right: mainlayout.right
+                y: background.starSize * 3
+                font.pointSize: 66
+                color: "white"
+            }
+        }
+
+        Grid {
+            id: rightLayout
+            anchors {
+                left: mainlayout.right
+                right: background.right
+                rightMargin: 10
+                verticalCenter: background.verticalCenter
+                verticalCenterOffset: background.height/8
+            }
+            height: background.height
+            columns: 1
+            Column {
+                id: firstRow
+                height: background.starSize * 4
+                spacing: 5
+                z: 10
+                Repeater {
+                    id: repeaterFirstRow
+                    model: 3
+                    StarsBar {
+                        barGroupIndex: 0
+                        barIndex: index
+                        width: rightLayout.width
+                        starsColor: starColors[index]
+                        theHat: items.hat
+                        starsSize: background.starSize
+                    }
+                }
+            }
+            Column {
+                id: secondRow
+                height: background.starSize * 4
+                spacing: 5
+                z: 9
+                Repeater {
+                    id: repeaterSecondRow
+                    model: 3
+                    StarsBar {
+                        barGroupIndex: 1
+                        barIndex: index
+                        width: rightLayout.width
+                        starsColor: starColors[index]
+                        theHat: items.hat
+                        starsSize: background.starSize
+                    }
+                }
+            }
+
+            Rectangle {
+                width: (background.starSize + 5) * 10 - 5
+                height: 3
+                color: "white"
+            }
+
+            Rectangle {
+                width: (background.starSize + 5) * 10 - 5
+                height: 10
+                opacity: 0
+            }
+
+            Column {
+                id: answerRow
+                height: background.starSize * 4
+                spacing: 5
+                Repeater {
+                    id: repeaterAnswerRow
+                    model: 3
+                    StarsBar {
+                        barGroupIndex: 2
+                        barIndex: index
+                        width: rightLayout.width
+                        starsColor: starColors[index]
+                        authorizeClick: false
+                        theHat: items.hat
+                        starsSize: background.starSize
+                    }
+                }
+            }
+        }
 
         DialogHelp {
             id: dialogHelp

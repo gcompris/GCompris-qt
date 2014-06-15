@@ -6,29 +6,29 @@ Item {
     width: parent.width
     height: parent.height
     property alias state: hatImg.state
-    property int targetX
-    property int targetY
-    property int nbYellowStars
-    property int nbGreenStars
-    property int nbBlueStars
-    property double starsOpacity : 1.0
+    property alias target: offStar
+    property int starsSize
+
+    function getTarget() {
+        return offStar
+    }
 
     Image {
         id: hatImg
-        width: hatItem.width/3
-        height: hatItem.height/2
         source: Activity.url + "hat.svgz"
+        sourceSize.width: hatItem.width / 3
         fillMode: Image.PreserveAspectFit
         anchors.centerIn: parent
         state: "NormalPosition"
-        transform: Rotation{
+
+        transform: Rotation {
             id: rotate
-            origin.x:hatImg.x - hatImg.width
-            origin.y:hatImg.y + hatImg.height/2
+            origin.x: 0
+            origin.y: hatImg.height
             axis.x: 0
             axis.y: 0
             axis.z: 1
-            Behavior on angle{
+            Behavior on angle {
                 animation: rotAnim
             }
         }
@@ -65,107 +65,34 @@ Item {
 
     RotationAnimation {
                 id: rotAnim
-                direction: if(hatImg.state=="Rotated"){
-                               RotationAnimation.Counterclockwise
-                           }
-                           else RotationAnimation.Clockwise
+                direction: hatImg.state == "Rotated" ?
+                               RotationAnimation.Counterclockwise :
+                               RotationAnimation.Clockwise
                 duration: 500
-                onRunningChanged: if(!rotAnim.running && hatImg.state=="Rotated"){
+                onRunningChanged: if(!rotAnim.running && hatImg.state == "Rotated") {
                                       Activity.moveStarsUnderHat()
                                   }
-
     }
 
     MouseArea {
         id: hatMouseArea
         anchors.fill:hatImg
         onClicked: {
-            if(hatImg.state=="NormalPosition")
-                hatImg.state="Rotated"
+            if(hatImg.state == "NormalPosition")
+                hatImg.state = "Rotated"
         }
     }
 
-    Repeater {
-        id: repeaterStars0
-        model: nbYellowStars
-        Star {
-            starState: "on_yellow"
-            height: hatItem.height/18
-            width: hatItem.height/18
-            anchors.centerIn: parent
-            anchors.verticalCenterOffset: hatImg.height/2 - hatImg.height/6
-            displayBounds: false
-            isClickable: false
-            z: hatImg.z - 1
-            opacity: 1
-        }
-    }
-
-    Repeater {
-        id: repeaterStars1
-        model: nbGreenStars
-        Star {
-            starState: "on_green"
-            height: hatItem.height/18
-            width: hatItem.height/18
-            anchors.centerIn: parent
-            anchors.verticalCenterOffset: hatImg.height/2 - hatImg.height/6
-            displayBounds: false
-            isClickable: false
-            z: hatImg.z - 1
-            opacity: 1
-        }
-    }
-
-    Repeater {
-        id: repeaterStars2
-        model: nbBlueStars
-        Star {
-            starState: "on_blue"
-            height: hatItem.height/18
-            width: hatItem.height/18
-            anchors.centerIn: parent
-            anchors.verticalCenterOffset: hatImg.height/2 - hatImg.height/6
-            displayBounds: false
-            isClickable: false
-            z: hatImg.z - 1
-            opacity: 1
-        }
-    }
-
-    Star{
+    // The target for the moving stars
+    Item {
         id: offStar
-        starState: "off"
-        height: hatItem.height/18
-        width: hatItem.height/18
-        anchors.centerIn: parent
-        anchors.verticalCenterOffset: hatImg.height/2 - hatImg.height/6
-        displayBounds: false
-        isClickable: false
-        z: hatImg.z - 1
-    }
+        height: hatItem.starsSize
+        width: hatItem.starsSize
+        y: hatImg.y + hatImg.paintedHeight - height
+        anchors {
+            horizontalCenter: parent.horizontalCenter
+        }
 
-    function moveStars() {
-        for(var i=0;i<nbYellowStars;i++){
-            repeaterStars0.itemAt(i).opacity=1
-            repeaterStars0.itemAt(i).anchors.centerIn=undefined
-            repeaterStars0.itemAt(i).x=targetX + i*(hatItem.height/18 + 5)
-            repeaterStars0.itemAt(i).y=targetY
-            repeaterStars0.itemAt(i).z+=2
-        }
-        for(var i=0;i<nbGreenStars;i++){
-            repeaterStars1.itemAt(i).opacity=1
-            repeaterStars1.itemAt(i).anchors.centerIn=undefined
-            repeaterStars1.itemAt(i).x=targetX + i*(hatItem.height/18 + 5)
-            repeaterStars1.itemAt(i).y=targetY + offStar.height + 5
-            repeaterStars1.itemAt(i).z+=2
-        }
-        for(var i=0;i<nbBlueStars;i++){
-            repeaterStars2.itemAt(i).opacity=1
-            repeaterStars2.itemAt(i).anchors.centerIn=undefined
-            repeaterStars2.itemAt(i).x=targetX + i*(hatItem.height/18 + 5)
-            repeaterStars2.itemAt(i).y=targetY + 2*offStar.height + 10
-            repeaterStars2.itemAt(i).z+=2
-        }
+        z: hatImg.z - 1
     }
 }

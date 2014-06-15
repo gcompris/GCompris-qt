@@ -2,73 +2,81 @@ import QtQuick 2.0
 import "magic-hat.js" as Activity
 
 Item {
+    id: item
+    height: starsSize
+    property int barGroupIndex
+    property int barIndex
     property int nbStarsOn: 0
     property bool authorizeClick: false
-    property int starsSize: 32
+    property int starsSize
     property string starsColor: "yellow"
-    property int targetX
-    property int targetY
-    id: item
-    width: starsSize
-    height: starsSize
+    property Item theHat
+    property alias repeaterStars: repeaterStars
 
     Row {
         id: rowlayout
         height: item.height
         spacing: 5
         Repeater {
-            id: repeaterStarsOn
-            model: nbStarsOn
-            Star {
-                starState: "on_" + starsColor
-                width: item.height
-                height: item.height
-                displayBounds: true
-                isClickable: authorizeClick
-            }
-        }
-        Repeater {
-            id: repeaterStarsOff
-            model: 10-nbStarsOn
-            Star {
-                starState: "off"
-                width: item.height
-                height: item.height
-                isClickable: authorizeClick
-                wantedColor: starsColor
-            }
-        }
-    }
-
-    Row{
-        spacing: 5
-        Repeater{
-            id: repeaterStarsToMove
-            model: nbStarsOn
-            Star {
-                starState: "on_" + starsColor
-                width: item.height
-                height: item.height
-                displayBounds: false
-                isClickable: authorizeClick
-                opacity: 1
+            id: repeaterStars
+            model: 10
+            Item {
+                id: star
+                width: item.starsSize
+                height: item.starsSize
+                property alias starFixed: starFixed
+                property alias starToMove: starToMove
+                Star {
+                    id: starFixed
+                    barGroupIndex: item.barGroupIndex
+                    barIndex: item.barIndex
+                    wantedColor: starsColor
+                    selected: index < nbStarsOn ? true : false
+                    width: item.starsSize
+                    height: item.starsSize
+                    displayBounds: true
+                    isClickable: item.authorizeClick
+                }
+                Star {
+                    id: starToMove
+                    barGroupIndex: item.barGroupIndex
+                    wantedColor: starsColor
+                    selected: index < nbStarsOn ? true : false
+                    width: item.starsSize
+                    height: item.starsSize
+                    displayBounds: false
+                    isClickable: false
+                    enabled: selected ? true : false
+                    initialParent: star
+                    theHat: item.theHat.target
+                }
             }
         }
     }
 
-    function moveStars(){
-        for(var i=0;i<nbStarsOn;i++){
-            repeaterStarsToMove.itemAt(i).x=targetX
-            repeaterStarsToMove.itemAt(i).y=targetY
-            repeaterStarsToMove.itemAt(i).z-=2
+    function moveStars() {
+        for(var i=0; i<nbStarsOn; i++) {
+            repeaterStars.itemAt(i).starToMove.state = "MoveUnderHat"
         }
     }
 
-   function resetStars(){
-       authorizeClick=false
-       nbStarsOn=0
-       for(var i=0;i<10-nbStarsOn;i++){
-           repeaterStarsOff.itemAt(i).starState="off"
-       }
-   }
+    function moveBackMinusStars(newRootItem, nbStars) {
+        for(var i=0; i<nbStars; i++) {
+            repeaterStars.itemAt(i).starToMove.newTarget =
+                    newRootItem.repeaterStars.itemAt(i)
+            repeaterStars.itemAt(i).starToMove.state = "MoveToTarget"
+        }
+    }
+
+    function initStars() {
+        for(var i=0; i<10; i++) {
+            repeaterStars.itemAt(i).starToMove.state = "Init"
+        }
+    }
+
+    function resetStars() {
+        for(var i=0; i<10; i++) {
+            repeaterStars.itemAt(i).starFixed.selected = i < nbStarsOn ? true : false
+        }
+    }
 }

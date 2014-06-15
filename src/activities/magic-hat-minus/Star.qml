@@ -1,27 +1,32 @@
 import QtQuick 2.1
+import QtGraphicalEffects 1.0
 import "magic-hat.js" as Activity
 
 
 Item {
     id: mainItem
-    property string starState: "off"
     property bool isClickable: false
     property bool displayBounds: true
-    property string wantedColor: "yellow"
+    property string wantedColor
+    property bool selected: false
+    property string disabledColor: "grey"
+    property Item initialParent
+    property Item theHat
+    property Item newTarget
+    property int barGroupIndex
+    property int barIndex
+    state: "Init"
 
     width: 34
     height: 34
 
     MouseArea {
-        id:mouseArea
-        anchors.fill:parent
+        id: mouseArea
+        anchors.fill: parent
         enabled: isClickable
         onClicked: {
-            if(starState=="on_yellow" || starState=="on_green" || starState=="on_blue") {
-                 starState="off"
-            }
-            else starState="on_" + wantedColor
-            Activity.verifyAnswer(starState,wantedColor)
+            mainItem.selected = !mainItem.selected
+            Activity.verifyAnswer(barIndex, mainItem.selected)
         }
     }
 
@@ -30,70 +35,99 @@ Item {
             width: parent.width
             height: parent.height
             color: "black"
-            opacity: displayBounds? 1.0:0.0
+            opacity: displayBounds ? 1.0 : 0.0
 
             Rectangle {
                 id: innerRect
                 width: contour.width - 2
                 height: contour.height - 2
                 anchors.centerIn: contour
-                color: "grey"
-                opacity: displayBounds? 1.0:0.0
+                color: mainItem.disabledColor
+                opacity: displayBounds? 1.0 : 0.0
             }
     }
 
     Image {
         id: starImg
+        source: Activity.url + "star-clear.svgz"
         width: innerRect.width - 4
         height: innerRect.height - 4
         anchors.centerIn: contour
-        state: starState
         fillMode: Image.PreserveAspectFit
         opacity: 1
-        states:[
-            State {
-                name: "on_yellow"
-                PropertyChanges {
-                    target: starImg
-                    source: Activity.url + "star1.svgz"
-                }
-            },
-            State {
-                name: "on_green"
-                PropertyChanges {
-                    target: starImg
-                    source: Activity.url + "star2.svgz"
-                }
-            },
-            State {
-                name: "on_blue"
-                PropertyChanges {
-                    target: starImg
-                    source: Activity.url + "star3.svgz"
-                }
-            },
-            State {
-                name: "off"
-                PropertyChanges {
-                    target: starImg
-                    source: Activity.url + "star-clear.svgz"
-                }
-            }
-        ]
+
+        ColorOverlay {
+            anchors.fill: starImg
+            source: starImg
+            color: mainItem.selected ?
+                       mainItem.wantedColor : mainItem.disabledColor
+        }
     }
 
+    states: [
+        State {
+            name: "Init"
+            ParentChange {
+                target: mainItem
+                parent: mainItem.initialParent
+                x: 0
+                y: 0
+                rotation: 0
+            }
+            PropertyChanges {
+                target: mainItem
+                opacity: mainItem.displayBounds ? 1 : 0
+            }
+        },
+        State {
+            name: "MoveUnderHat"
+            ParentChange {
+                target: mainItem
+                parent: mainItem.theHat
+                x: 0
+                y: 0
+                rotation: 180
+            }
+            PropertyChanges {
+                target: mainItem
+                opacity: 1
+            }
+        },
+        State {
+            name: "MoveToTarget"
+            ParentChange {
+                target: mainItem
+                parent: mainItem.newTarget
+                x: 0
+                y: 0
+                rotation: 0
+            }
+            PropertyChanges {
+                target: mainItem
+                opacity: 1
+            }
+        }
+    ]
+
     Behavior on x {
-        NumberAnimation {
-            id: movingAnimation
-            duration: 1000
-            onRunningChanged:
-                        if(!movingAnimation.running) {
-                             Activity.animationFinished()
-                             starImg.opacity=0.0
-                        }
+        PropertyAnimation {
+            easing.type: Easing.OutQuad
+            duration:  1000
+            onRunningChanged: {
+                if(!running) {
+                    if(mainItem.state == "MoveUnderHat")
+                        Activity.animation1Finished(mainItem.barGroupIndex)
+                    else if(mainItem.state == "MoveToTarget")
+                        Activity.animation2Finished()
+                }
+            }
         }
     }
     Behavior on y {
-        animation: movingAnimation
+        PropertyAnimation {easing.type: Easing.OutQuad; duration:  1000}
+    }
+
+    Behavior on rotation {
+        PropertyAnimation {easing.type: Easing.OutQuad; duration:  1000}
     }
 }
