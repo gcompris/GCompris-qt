@@ -264,11 +264,11 @@ function calculateNextPlaceFishToReach() {
                                   (levels[currentLevel].maxNumber * 2 -
                                    levels[currentLevel].minNumber + 1)) +
                 levels[currentLevel].minNumber
-    } while(previousFishIndex === newFishIndex)
+    } while((previousFishIndex === newFishIndex) || newFishIndex >= iceBlocksLayout.length)
     previousFishIndex = newFishIndex
 
     fishIndex = tuxIceBlockNumber + newFishIndex
-    if (fishIndex % iceBlocksLayout.length == 0) fishIndex++
+
 }
 
 function placeFishToReach() {
