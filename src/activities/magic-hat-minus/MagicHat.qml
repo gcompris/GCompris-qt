@@ -20,6 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import GCompris 1.0
 
 import "qrc:/gcompris/src/core"
 import "magic-hat.js" as Activity
@@ -133,13 +134,13 @@ ActivityBase {
 
             Rectangle {
                 width: (background.starSize + 5) * 10 - 5
-                height: 3
+                height: 5 * ApplicationInfo.ratio
                 color: "white"
             }
 
             Rectangle {
                 width: (background.starSize + 5) * 10 - 5
-                height: 10
+                height: 10 * ApplicationInfo.ratio
                 opacity: 0
             }
 
