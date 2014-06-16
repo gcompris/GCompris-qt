@@ -35,10 +35,12 @@ Item {
     /// index into text.split("") where next typed match should occur
     property int unmatchedIndex: 0;
     property alias text: wordText.text;
+    property bool wonState: false
 
     signal won
 
     onWon: {
+        wonState = true
         particle.emitter.burst(30)
         fadeout.restart();
     }
@@ -76,6 +78,10 @@ Item {
 
     function checkMatch(c)
     {
+        // We are in the ending animation
+        if (wonState)
+            return
+
         var chars = text.split("");
         if (chars[unmatchedIndex] == c) {
             unmatchedIndex++;

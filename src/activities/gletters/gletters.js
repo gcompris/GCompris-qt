@@ -172,6 +172,7 @@ function processKeyPress(text) {
         // win!
         items.flipAudio.play();
         currentWord.won();  // note: deleteWord() is triggered after fadeout
+        currentWord = null
         nextSubLevel();
     }
 }
