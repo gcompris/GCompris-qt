@@ -1,0 +1,1 @@
+GCOMPRIS_ADD_RCC(activities/gnumch-equality *.qml *.svg *.svgz *.js resource/*)

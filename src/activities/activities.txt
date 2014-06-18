@@ -21,6 +21,11 @@ erase_2clic
 erase_clic
 football
 gletters
+gnumch-equality
+gnumch-factors
+gnumch-inequality
+gnumch-multiples
+gnumch-primes
 hexagon
 instruments
 leftright
