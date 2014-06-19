@@ -2,12 +2,13 @@ import QtQuick 2.2
 import QtQuick.Controls 1.1
 import "../../core"
 import GCompris 1.0
+import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: menuActivity
     focus: true
 
-    onHome: pageView.depth === 1 ? Qt.quit() : pageView.pop()
+    onHome: pageView.depth === 1 ? Core.quit(menuActivity) : pageView.pop()
 
     onDisplayDialog: pageView.push(dialog)
 

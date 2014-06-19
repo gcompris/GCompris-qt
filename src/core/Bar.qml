@@ -66,7 +66,7 @@ Item {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svgz";
             contentId: ApplicationInfo.isMobile ? content.disabled : content.exit
             sourceSize.width: 66 * barZoom
-            onClicked: Qt.quit();
+            onClicked: Core.quit();
         }
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_about.svgz";

@@ -34,6 +34,8 @@ Window {
     minimumWidth: 400
     minimumHeight: 400
     title: "GCompris"
+
+    onClosing: Core.quit()
         
     GCAudio {
         id: audio

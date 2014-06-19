@@ -207,3 +207,20 @@ function checkForVoices(parent)
                 buttonHandler);
     }
 }
+
+function quit(parent)
+{
+    console.log("core.js: about to quit");
+    
+    if (GCompris.DownloadManager.downloadIsRunning()) {
+        var dialog = showDownloadDialog(parent, { 
+            text: qsTr("Download in progress.<br/>'Abort' it to quit immediately."),
+            autohide: true,
+            reportError: false,
+            reportSuccess: false,
+            backgroundButtonVisible: false
+        });
+        dialog.finished.connect(function() {Qt.quit();});
+    } else
+        Qt.quit();
+}
