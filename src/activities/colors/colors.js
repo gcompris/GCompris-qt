@@ -16,8 +16,8 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-var colors =
-        [
+function get() {
+    return [
             [ // Level 1
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/yellow_duck.svgz",
@@ -134,8 +134,5 @@ var colors =
                  "audio": ApplicationInfo.getAudioFilePath("voices/$LOCALE/colors/blue.ogg")
              }
             ]
-        ]
-
-function get() {
-    return colors
+        ];
 }

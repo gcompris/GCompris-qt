@@ -26,7 +26,8 @@ import "../colors"
 import "instruments.js" as Dataset
 
 FindIt {
-    dataset: Dataset.get()
+    mode: "Instruments"
+    dataset: Dataset
     backgroundImg: "qrc:/gcompris/src/activities/instruments/resource/background.svgz"
     itemWidth: 130 * ApplicationInfo.ratio
     itemHeight: 130 * ApplicationInfo.ratio

@@ -26,7 +26,8 @@ import "../colors"
 import "advanced_colors.js" as Dataset
 
 FindIt {
-    dataset: Dataset.get()
+    mode: "AdvancedColors"
+    dataset: Dataset
     backgroundImg: "qrc:/gcompris/src/activities/advanced_colors/resource/background.svgz"
     itemWidth: 130 * ApplicationInfo.ratio
     itemHeight: 130 * ApplicationInfo.ratio

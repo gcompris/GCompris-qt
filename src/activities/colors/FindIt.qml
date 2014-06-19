@@ -29,10 +29,12 @@ ActivityBase {
     id: activity
     focus: true
 
-    property variant dataset
+    property var dataset
     property string backgroundImg
     property int itemWidth
     property int itemHeight
+    
+    property string mode: ""
 
     pageComponent: Image {
         id: background
@@ -54,7 +56,7 @@ ActivityBase {
             property alias containerModel: containerModel
             property alias questionItem: questionItem
         }
-        onStart: { Activity.start(items, dataset) }
+        onStart: { Activity.start(items, dataset, mode) }
         onStop: { Activity.stop() }
 
         ListModel {

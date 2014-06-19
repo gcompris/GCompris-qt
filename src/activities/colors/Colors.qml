@@ -25,7 +25,8 @@ import GCompris 1.0
 import "colors.js" as Dataset
 
 FindIt {
-    dataset: Dataset.get()
+    mode: "Colors"
+    dataset: Dataset
     backgroundImg: "qrc:/gcompris/src/activities/colors/resource/background.svgz"
     itemWidth: 130 * ApplicationInfo.ratio
     itemHeight: 130 * ApplicationInfo.ratio
