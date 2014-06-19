@@ -36,6 +36,8 @@ Dialog {
     property bool reportSuccess: true;  ///< whether to report succesful  
     property bool reportError: true;
     property bool dynamic: false        ///< whether created dynamically
+    property alias backgroundButtonVisible: backgroundButton.visible
+    property alias abortButtonVisible: abortButton.visible
     
     signal finished;
     
@@ -140,16 +142,21 @@ Dialog {
             Layout.fillWidth: true
             
             Button {
+                id: backgroundButton
                 text: "Background"
                 style: GCButtonStyle {}
+                visible: true
                 onClicked: downloadDialog.shutdown();
             }
             Button {
+                id: abortButton
                 text: "Abort"
                 style: GCButtonStyle {}
+                visible: true
                 onClicked: {
                     if (DownloadManager.downloadIsRunning())
                         DownloadManager.abortDownloads();
+                    downloadDialog.finished();
                     downloadDialog.shutdown();
                 }
             }
