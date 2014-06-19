@@ -95,6 +95,8 @@ void DownloadManager::abortDownloads()
             DownloadJob *job = iter.next();
             if (job->reply) {
                 disconnect(job->reply, SIGNAL(finished()), this, SLOT(downloadFinished()));
+                disconnect(job->reply, SIGNAL(error(QNetworkReply::NetworkError)),
+                        this, SLOT(handleError(QNetworkReply::NetworkError)));
                 if (job->reply->isRunning()) {
                     qDebug() << "Aborting download job:" << job->url;
                     job->reply->abort();
@@ -105,6 +107,8 @@ void DownloadManager::abortDownloads()
             }
             iter.remove();
         }
+        locker.unlock();
+        emit error(QNetworkReply::OperationCanceledError, "Download cancelled by user");
     }
 }
 
@@ -521,7 +525,16 @@ void DownloadManager::downloadFinished()
     }
 
     // none left, DownloadJob finished
+    if (job->file.isOpen())
+        job->file.close();
+    { // note: must remove before signalling downloadFinished(), otherwise race condition for the Qt.quit() case
+        QMutexLocker locker(&jobsMutex);
+        activeJobs.removeOne(job);
+    }
     emit downloadFinished(code);
+    delete reply;
+    delete job;
+    return;
 
   outError:
     if (job->file.isOpen())
