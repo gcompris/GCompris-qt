@@ -5,6 +5,7 @@ algebra_by
 algebra_minus
 algebra_plus
 algorithm
+align4-2players
 alphabet-sequence
 ballcatch
 clickgame
