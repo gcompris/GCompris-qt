@@ -121,9 +121,10 @@ ActivityBase {
                 Component {
                     id: blueSquare
                     Rectangle {
-                        color: "grey";
+                        color: "#66666666";
                         width: background.width * 0.075;
                         height: background.height * 0.116
+                        border.color: "#aaaaaaaa"
                         Piece {
                             state: stateTemp
                             back: background

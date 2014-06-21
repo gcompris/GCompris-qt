@@ -38,7 +38,7 @@ bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
 int main(int argc, char *argv[])
 {
 	QGuiApplication app(argc, argv);
-	app.setOrganizationName("GCompris");
+    app.setOrganizationName("KDE");
     app.setApplicationName("GCompris");
     app.setOrganizationDomain("kde.org");
 
