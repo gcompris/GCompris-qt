@@ -164,6 +164,7 @@ function handleDrop(x, y) {
     }
 
     items.drop.to = destination
+    items.drop.duration = 1500 * ((7 - columnStatus[column]) / 6)
     currentPiece = (6 - columnStatus[column]) * 7 + column
     board[(6 - columnStatus[column])][column] = counter % 2 ? 1: 2
     console.log(board)
