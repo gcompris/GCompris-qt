@@ -38,6 +38,7 @@ if(CMAKE_HOST_WIN32)
   set(gcompris_icon GCompris.ico)
   set(gcompris_RES
     ${GCOMPRIS_RESOURCES}/${gcompris_icon}
+	GCompris.rc
   )
 elseif(CMAKE_HOST_APPLE)
   set(gcompris_icon GCompris.icns)
@@ -161,13 +162,22 @@ install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
 # =========
 
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "GCompris is a high quality educational software suite comprising of numerous activities for children aged 2 to 10.")
-set(CPACK_PACKAGE_ICON "${PROJECT_SOURCE_DIR}/GCompris64.png")
 set(CPACK_PACKAGE_VERSION_MAJOR ${GCOMPRIS_MAJOR_VERSION})
 set(CPACK_PACKAGE_VERSION_MINOR ${GCOMPRIS_MINOR_VERSION})
 set(CPACK_PACKAGE_VERSION_PATCH ${GCOMPRIS_PATCH_VERSION})
 set(CPACK_PACKAGE_VERSION ${GCOMPRIS_VERSION})
 set(CPACK_RESOURCE_FILE_LICENSE "${PROJECT_SOURCE_DIR}/COPYING")
 set(CPACK_RESOURCE_FILE_README "${PROJECT_SOURCE_DIR}/README")
+
+if(WIN32)
+  set(CPACK_PACKAGE_ICON "${PROJECT_SOURCE_DIR}/installer\\\\gcompris-header.bmp")
+  set(CPACK_NSIS_MUI_ICON "${PROJECT_SOURCE_DIR}/installer\\\\GCompris-install.ico")
+  set(CPACK_NSIS_MUI_UNIICON "${PROJECT_SOURCE_DIR}/installer\\\\GCompris-uninstall.ico")
+  set(CPACK_NSIS_EXECUTABLES_DIRECTORY "bin")
+  set(CPACK_PACKAGE_EXECUTABLES "GCompris" "GCompris")
+else(WIN32)
+  set(CPACK_PACKAGE_ICON "${PROJECT_SOURCE_DIR}/GCompris64.png")
+endif()
 
 if(APPLE)
   set(CPACK_GENERATOR "DragNDrop")
