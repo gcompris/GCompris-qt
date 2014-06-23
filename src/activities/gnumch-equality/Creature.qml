@@ -1,5 +1,5 @@
 import QtQuick 2.2
-import QtMultimedia 5.0
+import GCompris 1.0
 
 Item {
     id: creature
@@ -83,8 +83,6 @@ Item {
             eatSound.play()
         }
     }
-
-    onWidthChanged: updatePosition()
 
     AnimatedSprite {
         id: creatureImage

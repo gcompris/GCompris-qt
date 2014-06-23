@@ -52,6 +52,7 @@ ActivityBase {
             Activity.nextLevel()
             if (Activity._currentLevel == 7) {
                 operator = " - "
+                Activity._operator = operator
             }
 
             if (Activity._currentLevel == 0) {
@@ -98,8 +99,6 @@ ActivityBase {
             Activity.stop()
         }
 
-        onWidthChanged: muncher.updatePosition()
-
         Keys.onRightPressed: muncher.moveTo(0)
         Keys.onLeftPressed: muncher.moveTo(1)
         Keys.onDownPressed: muncher.moveTo(2)
@@ -116,6 +115,24 @@ ActivityBase {
         // Debug utility.
         Keys.onAsteriskPressed: {
             nextLevel()
+        }
+
+        onWidthChanged: {
+            positionTimer.restart()
+        }
+
+        Timer {
+            id: positionTimer
+
+            interval: 100
+
+            onTriggered: {
+                muncher.updatePosition()
+                var children = monsters.children
+                for (var it = 0; it < children.length; it++) {
+                    children[it].updatePosition()
+                }
+            }
         }
 
         Connections {

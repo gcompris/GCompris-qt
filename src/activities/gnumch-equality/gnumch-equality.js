@@ -161,7 +161,6 @@ function splitMinusNumber(term) {
 
     // Shift randomly the terms
     var shift = Math.floor((Math.random() * (term + 1)))
-//    shift = shift * Math.pow(-1, Math.floor(Math.random()*2))
     term1 += shift
     term2 += shift
 
