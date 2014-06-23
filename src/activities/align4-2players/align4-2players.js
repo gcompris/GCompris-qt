@@ -38,14 +38,12 @@ var board
 var score1 = 0, score2 = 0
 
 function start(items_) {
-    console.log("start")
     items = items_
     currentLevel = 0
     initLevel()
 }
 
 function stop() {
-    console.log("stop")
 }
 
 var flag = 0
@@ -122,7 +120,6 @@ function whichColumn(x,y) {
 
 /* To move the piece before a column is chosen */
 function setPieceLocation(x, y){
-    console.log(x, y)
     column = whichColumn(x, y)
     items.piece1.y = - items.background.height * 0.019
     switch(column) {
@@ -167,7 +164,6 @@ function handleDrop(x, y) {
     items.drop.duration = 1500 * ((7 - columnStatus[column]) / 6)
     currentPiece = (6 - columnStatus[column]) * 7 + column
     board[(6 - columnStatus[column])][column] = counter % 2 ? 1: 2
-    console.log(board)
     items.drop.start()
 }
 
@@ -185,8 +181,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
             possibleWinUpWards = false, possibleWinDownWards = false,
             possibleWinTopRightDiagonal = false, possibleWinBottomRightDiagonal = false,
             possibleWinTopLeftDiagonal = false, possibleWinBottomLeftDiagonal = false;
-
-    console.log("  ROW: " + currentPieceRow + "  COL: " + currentPieceColumn)
 
     if(currentPieceRow <=2){
 
@@ -258,8 +252,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
         edgePieceColumn = i;
         edgePieceRow = currentPieceRow;
 
-        console.log("L " + edgePieceRow + "  " + edgePieceColumn)
-
         //Check leftwards to determine if game won
         for(i=edgePieceColumn; i> edgePieceColumn - 4; i--){
             if(board[edgePieceRow][i] != currentPieceValue){
@@ -269,7 +261,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
         }
 
         if(gameWon){
-            console.log("Left");
             items.pieces.set(edgePieceRow * 7 + edgePieceColumn, {"stateTemp":"crossed"})
             items.pieces.set(edgePieceRow * 7 + edgePieceColumn - 1, {"stateTemp":"crossed"})
             items.pieces.set(edgePieceRow * 7 + edgePieceColumn - 2, {"stateTemp":"crossed"})
@@ -293,8 +284,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
         edgePieceColumn = i;
         edgePieceRow = currentPieceRow;
 
-        console.log(" R " + edgePieceRow + "  " + edgePieceColumn)
-
         //Check to see if game is won.
         for(i=edgePieceColumn; i< edgePieceColumn + 4; i++){
             if(board[edgePieceRow][i] != currentPieceValue){
@@ -306,7 +295,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
 
 
         if(gameWon){
-            console.log("Right");
             items.pieces.set(edgePieceRow * 7 + edgePieceColumn, {"stateTemp":"crossed"})
             items.pieces.set(edgePieceRow * 7 + edgePieceColumn + 1, {"stateTemp":"crossed"})
             items.pieces.set(edgePieceRow * 7 + edgePieceColumn + 2, {"stateTemp":"crossed"})
@@ -330,8 +318,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
         edgePieceRow = i;
         edgePieceColumn = currentPieceColumn;
 
-        console.log(" U " + edgePieceRow + "  " + edgePieceColumn)
-
         //Check upwards for win
         for(i=edgePieceRow; i> edgePieceRow - 4; i--){
             if(board[i][edgePieceColumn] != currentPieceValue){
@@ -341,7 +327,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
         }
 
         if(gameWon){
-            console.log("Up");
             items.pieces.set(edgePieceRow * 7 + edgePieceColumn, {"stateTemp":"crossed"})
             items.pieces.set(edgePieceRow * 7 + edgePieceColumn - 7, {"stateTemp":"crossed"})
             items.pieces.set(edgePieceRow * 7 + edgePieceColumn - 14, {"stateTemp":"crossed"})
@@ -366,8 +351,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
         edgePieceRow = i;
         edgePieceColumn = currentPieceColumn;
 
-        console.log(" D " + edgePieceRow + "  " + edgePieceColumn)
-
         //Check downwards for win.
         for(i=edgePieceRow; i < edgePieceRow + 4; i++){
             if(board[i][edgePieceColumn] != currentPieceValue){
@@ -377,7 +360,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
         }
 
         if(gameWon){
-            console.log("Down");
             items.pieces.set(edgePieceRow * 7 + edgePieceColumn, {"stateTemp":"crossed"})
             items.pieces.set(edgePieceRow * 7 + edgePieceColumn + 7, {"stateTemp":"crossed"})
             items.pieces.set(edgePieceRow * 7 + edgePieceColumn + 14, {"stateTemp":"crossed"})
@@ -403,8 +385,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
         edgePieceRow = i;
         edgePieceColumn = tempCurrentPieceColumn;
 
-        console.log(" BRD " +edgePieceRow + "  " + edgePieceColumn, currentPieceValue)
-
         //Check bottom right diagonal for a win.
         for(i=edgePieceRow ; i<edgePieceRow + 4;i++){
             if(board[i][edgePieceColumn] != currentPieceValue){
@@ -415,7 +395,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
         }
 
         if(gameWon){
-            console.log("Bottom right diagonal", edgePieceRow * 7 + edgePieceColumn);
             items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn, {"stateTemp":"crossed"})
             items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn + 7 + 1, {"stateTemp":"crossed"})
             items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn + 14 + 2, {"stateTemp":"crossed"})
@@ -442,8 +421,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
         edgePieceRow = i;
         edgePieceColumn = tempCurrentPieceColumn;
 
-        console.log(" BLD " +edgePieceRow + "  " + edgePieceColumn)
-
         //Check bottom left diagonal for a win
         for(i=edgePieceRow; i< edgePieceRow + 4;i++){
             if(board[i][edgePieceColumn] != currentPieceValue){
@@ -454,7 +431,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
         }
 
         if(gameWon){
-            console.log("Bottom left diagonal");
             items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn, {"stateTemp":"crossed"})
             items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn + 7 - 1, {"stateTemp":"crossed"})
             items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn + 14 - 2, {"stateTemp":"crossed"})
@@ -480,8 +456,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
         edgePieceRow = i;
         edgePieceColumn = tempCurrentPieceColumn;
 
-        console.log(" TLD " +edgePieceRow + "  " + edgePieceColumn)
-
         //Check top left diagonal for win.
         for(i=edgePieceRow; i>edgePieceRow - 4;i--){
             if(board[i][edgePieceColumn] != currentPieceValue){
@@ -492,7 +466,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
         }
 
         if(gameWon){
-            console.log("Top left diagonal");
             items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn, {"stateTemp":"crossed"})
             items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn - 7 - 1, {"stateTemp":"crossed"})
             items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn - 14 - 2, {"stateTemp":"crossed"})
@@ -518,8 +491,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
         edgePieceRow = i;
         edgePieceColumn = tempCurrentPieceColumn;
 
-        console.log(" TRD " + edgePieceRow + "  " + edgePieceColumn)
-
         //Check top right diagonal for win
         for(i=edgePieceRow; i>edgePieceRow - 4;i--){
             if(board[i][edgePieceColumn] != currentPieceValue){
@@ -530,7 +501,6 @@ function checkGameWon(currentPieceRow, currentPieceColumn){
         }
 
         if(gameWon){
-            console.log("Top right diagonal");
             items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn, {"stateTemp":"crossed"})
             items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn - 7 + 1, {"stateTemp":"crossed"})
             items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn - 14 + 2, {"stateTemp":"crossed"})
