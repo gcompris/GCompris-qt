@@ -9,6 +9,7 @@ Creature {
 
         caughted = true
 
+        opacity = 0
         warningRect.setFault(index)
         warningRect.opacity = 0.9
 

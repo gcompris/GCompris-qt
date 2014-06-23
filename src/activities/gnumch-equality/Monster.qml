@@ -11,7 +11,6 @@ Creature {
     function checkCell() {
         if (index == player.index) {
             player.getCaught(-1)
-            player.opacity = 0
             eating = true
         }
 
@@ -23,7 +22,6 @@ Creature {
     opacity: 0
 
     onMovingOnChanged: {
-        console.log("movingon change")
         if (movingOn == false) {
             checkCell()
         }
