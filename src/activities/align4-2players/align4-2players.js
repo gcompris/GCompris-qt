@@ -28,7 +28,6 @@ var items
 var url = "qrc:/gcompris/src/activities/align4-2players/resource/"
 var numberOfRows = 6
 var numberOfColumns = 7
-var columnStatus
 var currentPiece
 var counter
 var board
@@ -49,8 +48,6 @@ function stop() {
 function initLevel() {
 
     items.bar.level = currentLevel + 1
-    columnStatus = [0, 0, 0, 0, 0, 0, 0]
-
 
     board = [[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0],
              [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]
@@ -133,22 +130,37 @@ function setPieceLocation(x, y) {
     items.fallingPiece.state = counter % 2 ? "red": "green"
 }
 
+function isModelEmpty(model) {
+    var state = model.stateTemp
+    return (state == "red" || state == "green") ? false : true
+}
+
+function getPieceAt(col, row) {
+    return items.pieces.get(row * 7 + col)
+}
+
+function getNextFreeStop(col) {
+    for(var row = numberOfRows - 1; row >= 0; row--) {
+        if(isModelEmpty(getPieceAt(col, row)))
+            return row
+    }
+    // Full column
+    return -1
+}
+
 function handleDrop(x, y) {
 
     var singleDropSize = items.background.height * 0.1358
     var column = whichColumn(x, y)
-    columnStatus[column]++;
+    var nextFreeStop = getNextFreeStop(column)
+    if(nextFreeStop == -1)
+        return
     var destination = items.fallingPiece.y
-            + singleDropSize * (7 - columnStatus[column])
-    if(destination == items.fallingPiece.y) {
-        columnStatus[column]--;
-        return;
-    }
-
+            + singleDropSize * (nextFreeStop + 1)
     items.drop.to = destination
-    items.drop.duration = 1500 * ((7 - columnStatus[column]) / 6)
-    currentPiece = (6 - columnStatus[column]) * 7 + column
-    board[(6 - columnStatus[column])][column] = counter % 2 ? 1: 2
+    items.drop.duration = 1500 * ((nextFreeStop + 1) / 6)
+    currentPiece = nextFreeStop * 7 + column
+    board[nextFreeStop][column] = counter % 2 ? 1: 2
     items.drop.start()
 }
 
