@@ -43,8 +43,6 @@ function start(items_) {
 function stop() {
 }
 
-var flag = 0
-
 function initLevel() {
 
     items.bar.level = currentLevel + 1
@@ -55,22 +53,11 @@ function initLevel() {
              [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]
     counter = 0
 
-    var data
-    if(!flag) {
-        for(var y = 0;  y < numberOfRows; y++) {
-            for(var x = 0;  x < numberOfColumns; x++) {
-                data = {'stateTemp': "invisible"}
-                items.pieces.append(data)
-            }
-            flag = 1
-        }
-    } else {
-        var i = 0
-        for(var y = 0;  y < numberOfRows; y++) {
-            for(var x = 0;  x < numberOfColumns; x++) {
-                data = {'stateTemp': "invisible"}
-                items.pieces.set(i++, data)
-            }
+    items.pieces.clear()
+    for(var y = 0;  y < numberOfRows; y++) {
+        for(var x = 0;  x < numberOfColumns; x++) {
+            var data = {'stateTemp': "invisible"}
+            items.pieces.append(data)
         }
     }
 }
