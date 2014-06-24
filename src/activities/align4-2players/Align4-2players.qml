@@ -159,14 +159,13 @@ ActivityBase {
         MouseArea {
             id: dynamic
             anchors.fill: parent
-            hoverEnabled: true
+            hoverEnabled: !drop.running
             onPositionChanged: {
                 Activity.setPieceLocation(mouseX, mouseY)
             }
             onClicked: {
                 if(mouseX > background.width * 0.188 & mouseX < background.width * 0.8005) {
                     if(mouseY > background.height * 0.1 & mouseY < background.height * 0.935) {
-                        dynamic.hoverEnabled = false
                         Activity.handleDrop(mouseX, mouseY)
                     }
                 }

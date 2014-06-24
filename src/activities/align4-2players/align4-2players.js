@@ -155,7 +155,6 @@ function handleDrop(x, y) {
     columnStatus[column]++;
     var destination = items.piece1.y + singleDropSize * (7 - columnStatus[column])
     if(destination == items.piece1.y) {
-        items.dynamic.hoverEnabled = "true"
         columnStatus[column]--;
         return;
     }
@@ -261,7 +260,6 @@ function continueGame() {
     items.pieces.set(currentPiece, {"stateTemp": counter++ % 2? "red": "green"})
 
     items.piece1.state = "invisible"
-    items.dynamic.hoverEnabled = "true"
 
     setPieceLocation(items.piece1.x, items.piece1.y)
     /* Update score if game won */
