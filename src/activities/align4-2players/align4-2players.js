@@ -169,347 +169,91 @@ function handleDrop(x, y) {
 
 var currentPieceValue
 
-function checkGameWon(currentPieceRow, currentPieceColumn){
+function checkGameWon(currentPieceRow, currentPieceColumn) {
 
-    var gameWon = true;
-    var tempCurrentPieceColumn;
-    var edgePieceColumn, edgePieceRow;
-    var i;
-    currentPieceValue = board[currentPieceRow][currentPieceColumn];
+    currentPieceValue = board[currentPieceRow][currentPieceColumn]
 
-    var possibleWinRightWards = false, possibleWinLeftWards = false,
-            possibleWinUpWards = false, possibleWinDownWards = false,
-            possibleWinTopRightDiagonal = false, possibleWinBottomRightDiagonal = false,
-            possibleWinTopLeftDiagonal = false, possibleWinBottomLeftDiagonal = false;
-
-    if(currentPieceRow <=2){
-
-        switch(currentPieceColumn){
-        case 0:
-        case 1:
-        case 2:
-            possibleWinRightWards = true;
-            possibleWinDownWards = true;
-            possibleWinBottomRightDiagonal = true;
-            possibleWinBottomLeftDiagonal = true;
-            break;
-        case 3:
-            possibleWinRightWards = true;
-            possibleWinDownWards = true;
-            possibleWinLeftWards = true;
-            possibleWinBottomLeftDiagonal = true;
-            possibleWinBottomRightDiagonal = true;
-            break;
-        case 4:
-        case 5:
-        case 6:
-            possibleWinDownWards = true;
-            possibleWinLeftWards = true;
-            possibleWinBottomRightDiagonal = true;
-            possibleWinBottomLeftDiagonal = true;
-        }
-    }
-    else if(currentPieceRow >= 3){
-
-        switch(currentPieceColumn){
-        case 0:
-        case 1:
-        case 2:
-            possibleWinRightWards = true;
-            possibleWinUpWards = true;
-            possibleWinTopRightDiagonal = true;
-            possibleWinTopLeftDiagonal = true
-            break;
-        case 3:
-            possibleWinRightWards = true;
-            possibleWinUpWards = true;
-            possibleWinLeftWards = true;
-            possibleWinTopLeftDiagonal = true;
-            possibleWinTopRightDiagonal = true;
-            break;
-        case 4:
-        case 5:
-        case 6:
-            possibleWinUpWards = true;
-            possibleWinLeftWards = true;
-            possibleWinTopLeftDiagonal = true;
-            possibleWinTopRightDiagonal = true;
+    // Horizontal
+    var sameColor = 0
+    for(var col = 0; col < numberOfColumns; col++) {
+        if(board[currentPieceRow][col] === currentPieceValue) {
+            if(++sameColor == 4) {
+                items.pieces.set(currentPieceRow * 7 + col, {"stateTemp":"crossed"})
+                items.pieces.set(currentPieceRow * 7 + col - 1, {"stateTemp":"crossed"})
+                items.pieces.set(currentPieceRow * 7 + col - 2, {"stateTemp":"crossed"})
+                items.pieces.set(currentPieceRow * 7 + col - 3, {"stateTemp":"crossed"})
+                return true
+            }
+        } else {
+            sameColor = 0
         }
     }
 
-    if(possibleWinLeftWards){
-        gameWon = true;
-
-        //Check rightwards to determine the edge piece.
-        //Only check till column 0 - 5 because if column number is 6, that
-        //is automatically the edge piece.
-        for(i=currentPieceColumn; i< 6; i++){
-            if(board[currentPieceRow][i+1] != currentPieceValue){
-                break;
+    // Vertical
+    sameColor = 0
+    for(var row = 0; row < numberOfRows; row++) {
+        if(board[row][currentPieceColumn] === currentPieceValue) {
+            if(++sameColor == 4) {
+                items.pieces.set(row * 7 + currentPieceColumn, {"stateTemp":"crossed"})
+                items.pieces.set((row - 1) * 7 + currentPieceColumn, {"stateTemp":"crossed"})
+                items.pieces.set((row - 2) * 7 + currentPieceColumn, {"stateTemp":"crossed"})
+                items.pieces.set((row - 3) * 7 + currentPieceColumn, {"stateTemp":"crossed"})
+                return true
             }
-        }
-
-        edgePieceColumn = i;
-        edgePieceRow = currentPieceRow;
-
-        //Check leftwards to determine if game won
-        for(i=edgePieceColumn; i> edgePieceColumn - 4; i--){
-            if(board[edgePieceRow][i] != currentPieceValue){
-                gameWon = false;
-                break;
-            }
-        }
-
-        if(gameWon){
-            items.pieces.set(edgePieceRow * 7 + edgePieceColumn, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + edgePieceColumn - 1, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + edgePieceColumn - 2, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + edgePieceColumn - 3, {"stateTemp":"crossed"})
-            return gameWon
+        } else {
+            sameColor = 0
         }
     }
 
-    if(possibleWinRightWards){
-        gameWon = true;
+    // Diagonal top left / bottom right
+    sameColor = 0
+    var row = 0
+    for(var col = currentPieceColumn - currentPieceRow;
+        col < numberOfColumns; col++) {
+        row++
+        if(col < 0)
+            continue
 
-        //Check leftwards to determine the edge piece.
-        //Only check till column 1 because if column number is 0, that
-        //is automatically the edge piece.
-        for(i=currentPieceColumn; i > 0; i--){
-            if(board[currentPieceRow][i-1] != currentPieceValue){
-                break;
+        if(row > numberOfRows)
+            break
+
+        if(board[row-1][col] === currentPieceValue) {
+            if(++sameColor == 4) {
+                items.pieces.set((row - 1)  * 7 + col, {"stateTemp":"crossed"})
+                items.pieces.set((row - 2) * 7 + col - 1, {"stateTemp":"crossed"})
+                items.pieces.set((row - 3) * 7 + col - 2, {"stateTemp":"crossed"})
+                items.pieces.set((row - 4) * 7 + col - 3, {"stateTemp":"crossed"})
+                return true
             }
-        }
-
-        edgePieceColumn = i;
-        edgePieceRow = currentPieceRow;
-
-        //Check to see if game is won.
-        for(i=edgePieceColumn; i< edgePieceColumn + 4; i++){
-            if(board[edgePieceRow][i] != currentPieceValue){
-                gameWon = false;
-                break;
-            }
-        }
-
-
-
-        if(gameWon){
-            items.pieces.set(edgePieceRow * 7 + edgePieceColumn, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + edgePieceColumn + 1, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + edgePieceColumn + 2, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + edgePieceColumn + 3, {"stateTemp":"crossed"})
-            return gameWon
+        } else {
+            sameColor = 0
         }
     }
 
-    if(possibleWinUpWards){
-        gameWon = true;
+    // Diagonal top right / bottom left
+    sameColor = 0
+    var row = 0
+    for(var col = currentPieceColumn + currentPieceRow;
+        col >= 0; col--) {
+        row++
+        if(col >= numberOfColumns)
+            continue
 
-        //Check downwards to determine the edge piece.
-        //Only check till row 4 because if row number is 5, that
-        //is automatically the edge piece.
-        for(i=currentPieceRow; i < 5; i++){
-            if(board[i + 1][currentPieceColumn] != currentPieceValue){
-                break;
+        if(row > numberOfRows)
+            break
+
+        if(board[row-1][col] === currentPieceValue) {
+            if(++sameColor == 4) {
+                items.pieces.set((row - 1)  * 7 + col, {"stateTemp":"crossed"})
+                items.pieces.set((row - 2) * 7 + col + 1, {"stateTemp":"crossed"})
+                items.pieces.set((row - 3) * 7 + col + 2, {"stateTemp":"crossed"})
+                items.pieces.set((row - 4) * 7 + col + 3, {"stateTemp":"crossed"})
+                return true
             }
-        }
-
-        edgePieceRow = i;
-        edgePieceColumn = currentPieceColumn;
-
-        //Check upwards for win
-        for(i=edgePieceRow; i> edgePieceRow - 4; i--){
-            if(board[i][edgePieceColumn] != currentPieceValue){
-                gameWon = false;
-                break;
-            }
-        }
-
-        if(gameWon){
-            items.pieces.set(edgePieceRow * 7 + edgePieceColumn, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + edgePieceColumn - 7, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + edgePieceColumn - 14, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + edgePieceColumn - 21, {"stateTemp":"crossed"})
-            return gameWon
+        } else {
+            sameColor = 0
         }
     }
-
-
-    if(possibleWinDownWards){
-        gameWon = true;
-
-        //Check upwards to determine the edge piece.
-        //Only check till row 1 because if row number is 0, that
-        //is automatically the edge piece.
-        for(i=currentPieceRow; i > 0; i--){
-            if(board[i - 1][currentPieceColumn] != currentPieceValue){
-                break;
-            }
-        }
-
-        edgePieceRow = i;
-        edgePieceColumn = currentPieceColumn;
-
-        //Check downwards for win.
-        for(i=edgePieceRow; i < edgePieceRow + 4; i++){
-            if(board[i][edgePieceColumn] != currentPieceValue){
-                gameWon = false;
-                break;
-            }
-        }
-
-        if(gameWon){
-            items.pieces.set(edgePieceRow * 7 + edgePieceColumn, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + edgePieceColumn + 7, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + edgePieceColumn + 14, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + edgePieceColumn + 21, {"stateTemp":"crossed"})
-            return gameWon
-        }
-    }
-
-    if(possibleWinBottomRightDiagonal){
-        gameWon = true;
-        tempCurrentPieceColumn = currentPieceColumn;
-
-        //Check top left diagonal to determine the edge piece.
-        //Only check till row 1 because if row number is 0, that
-        //is automatically the edge piece.
-        for(i=currentPieceRow; i> 0;i--){
-            if(board[i - 1][tempCurrentPieceColumn - 1] != currentPieceValue){
-                break;
-            }
-            tempCurrentPieceColumn--;
-        }
-
-        edgePieceRow = i;
-        edgePieceColumn = tempCurrentPieceColumn;
-
-        //Check bottom right diagonal for a win.
-        for(i=edgePieceRow ; i<edgePieceRow + 4;i++){
-            if(board[i][edgePieceColumn] != currentPieceValue){
-                gameWon = false;
-                break;
-            }
-            edgePieceColumn++;
-        }
-
-        if(gameWon){
-            items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn + 7 + 1, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn + 14 + 2, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn + 21 + 3, {"stateTemp":"crossed"})
-            return gameWon
-        }
-    }
-
-
-    if(possibleWinBottomLeftDiagonal){
-        gameWon = true;
-        tempCurrentPieceColumn = currentPieceColumn;
-
-        //Check top right diagonal to determine the edge piece.
-        //Only check till row 1 because if row number is 0, that
-        //is automatically the edge piece.
-        for(i=currentPieceRow; i> 0;i--){
-            if(board[i - 1][tempCurrentPieceColumn + 1] != currentPieceValue){
-                break;
-            }
-            tempCurrentPieceColumn++;
-        }
-
-        edgePieceRow = i;
-        edgePieceColumn = tempCurrentPieceColumn;
-
-        //Check bottom left diagonal for a win
-        for(i=edgePieceRow; i< edgePieceRow + 4;i++){
-            if(board[i][edgePieceColumn] != currentPieceValue){
-                gameWon = false;
-                break;
-            }
-            edgePieceColumn--;
-        }
-
-        if(gameWon){
-            items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn + 7 - 1, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn + 14 - 2, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn + 21 - 3, {"stateTemp":"crossed"})
-            return gameWon
-        }
-    }
-
-    if(possibleWinTopLeftDiagonal){
-        gameWon = true;
-        tempCurrentPieceColumn = currentPieceColumn;
-
-        //Check bottom right diagonal to determine the edge piece.
-        //Only check till row 4 because if row number is 5, that
-        //is automatically the edge piece.
-        for(i=currentPieceRow; i<5;i++){
-            if(board[i + 1][edgePieceColumn + 1] != currentPieceValue){
-                break;
-            }
-            tempCurrentPieceColumn++;
-        }
-
-        edgePieceRow = i;
-        edgePieceColumn = tempCurrentPieceColumn;
-
-        //Check top left diagonal for win.
-        for(i=edgePieceRow; i>edgePieceRow - 4;i--){
-            if(board[i][edgePieceColumn] != currentPieceValue){
-                gameWon = false;
-                break;
-            }
-            edgePieceColumn--;
-        }
-
-        if(gameWon){
-            items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn - 7 - 1, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn - 14 - 2, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn - 21 - 3, {"stateTemp":"crossed"})
-            return gameWon
-        }
-    }
-
-    if(possibleWinTopRightDiagonal){
-        gameWon = true;
-        tempCurrentPieceColumn = currentPieceColumn;
-
-        //Check bottom left diagonal to determine the edge piece.
-        //Only check till row 4 because if row number is 5, that
-        //is automatically the edge piece.
-        for(i=currentPieceRow; i< 5;i++){
-            if(board[i + 1][tempCurrentPieceColumn - 1] != currentPieceValue){
-                break;
-            }
-            tempCurrentPieceColumn--;
-        }
-
-        edgePieceRow = i;
-        edgePieceColumn = tempCurrentPieceColumn;
-
-        //Check top right diagonal for win
-        for(i=edgePieceRow; i>edgePieceRow - 4;i--){
-            if(board[i][edgePieceColumn] != currentPieceValue){
-                gameWon = false;
-                break;
-            }
-            edgePieceColumn++;
-        }
-
-        if(gameWon){
-            items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn - 7 + 1, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn - 14 + 2, {"stateTemp":"crossed"})
-            items.pieces.set(edgePieceRow * 7 + tempCurrentPieceColumn - 21 + 3, {"stateTemp":"crossed"})
-            return gameWon
-        }
-    }
-
-    return false;
 }
 
 function continueGame() {
