@@ -44,7 +44,6 @@ ActivityBase {
             } else {
                 modelCells.get(muncher.index).show = false
                 muncher.getCaught(muncher.index)
-                muncher.init()
             }
         }
 
