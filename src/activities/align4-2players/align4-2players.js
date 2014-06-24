@@ -79,20 +79,27 @@ function previousLevel() {
     initLevel();
 }
 
-function whichColumn(x,y) {
-    if(x > items.background.width * 0.1865 && x < items.background.width * 0.274){//column 1
+function whichColumn(x, y) {
+    if(x > items.background.width * 0.1865 &&
+            x < items.background.width * 0.274){ //column 1
         return 0
-    } else if(x > items.background.width * 0.274 && x < items.background.width * 0.3615){//column 2
+    } else if(x > items.background.width * 0.274 &&
+              x < items.background.width * 0.3615){ //column 2
         return 1
-    } else if(x > items.background.width * 0.3615 && x < items.background.width * 0.449){//column 3
+    } else if(x > items.background.width * 0.3615 &&
+              x < items.background.width * 0.449){ //column 3
         return 2
-    } else if(x > items.background.width * 0.449 && x < items.background.width * 0.5365){//column 4
+    } else if(x > items.background.width * 0.449 &&
+              x < items.background.width * 0.5365){ //column 4
         return 3
-    } else if(x > items.background.width * 0.5365 && x < items.background.width * 0.624){//column 5
+    } else if(x > items.background.width * 0.5365 &&
+              x < items.background.width * 0.624){ //column 5
         return 4
-    } else if(x > items.background.width * 0.624 && x < items.background.width * 0.7115){//column 6
+    } else if(x > items.background.width * 0.624 &&
+              x < items.background.width * 0.7115){ //column 6
         return 5
-    } else if(x > items.background.width * 0.7115 && x < items.background.width * 0.799){//column 7
+    } else if(x > items.background.width * 0.7115 &&
+              x < items.background.width * 0.799){ //column 7
         return 6
     }
 }
@@ -132,7 +139,8 @@ function handleDrop(x, y) {
     var singleDropSize = items.background.height * 0.1358
     var column = whichColumn(x, y)
     columnStatus[column]++;
-    var destination = items.fallingPiece.y + singleDropSize * (7 - columnStatus[column])
+    var destination = items.fallingPiece.y
+            + singleDropSize * (7 - columnStatus[column])
     if(destination == items.fallingPiece.y) {
         columnStatus[column]--;
         return;
@@ -143,6 +151,10 @@ function handleDrop(x, y) {
     currentPiece = (6 - columnStatus[column]) * 7 + column
     board[(6 - columnStatus[column])][column] = counter % 2 ? 1: 2
     items.drop.start()
+}
+
+function setPieceState(col, row, state) {
+    items.pieces.set(row * 7 + col, {"stateTemp": state})
 }
 
 var currentPlayer
@@ -156,10 +168,10 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
     for(var col = 0; col < numberOfColumns; col++) {
         if(board[currentPieceRow][col] === currentPlayer) {
             if(++sameColor == 4) {
-                items.pieces.set(currentPieceRow * 7 + col, {"stateTemp":"crossed"})
-                items.pieces.set(currentPieceRow * 7 + col - 1, {"stateTemp":"crossed"})
-                items.pieces.set(currentPieceRow * 7 + col - 2, {"stateTemp":"crossed"})
-                items.pieces.set(currentPieceRow * 7 + col - 3, {"stateTemp":"crossed"})
+                setPieceState(col, currentPieceRow, "crossed")
+                setPieceState(col - 1, currentPieceRow, "crossed")
+                setPieceState(col - 2, currentPieceRow, "crossed")
+                setPieceState(col - 3, currentPieceRow, "crossed")
                 return true
             }
         } else {
@@ -172,10 +184,10 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
     for(var row = 0; row < numberOfRows; row++) {
         if(board[row][currentPieceColumn] === currentPlayer) {
             if(++sameColor == 4) {
-                items.pieces.set(row * 7 + currentPieceColumn, {"stateTemp":"crossed"})
-                items.pieces.set((row - 1) * 7 + currentPieceColumn, {"stateTemp":"crossed"})
-                items.pieces.set((row - 2) * 7 + currentPieceColumn, {"stateTemp":"crossed"})
-                items.pieces.set((row - 3) * 7 + currentPieceColumn, {"stateTemp":"crossed"})
+                setPieceState(currentPieceColumn, row, "crossed")
+                setPieceState(currentPieceColumn, row - 1, "crossed")
+                setPieceState(currentPieceColumn, row - 2, "crossed")
+                setPieceState(currentPieceColumn, row - 3, "crossed")
                 return true
             }
         } else {
@@ -197,10 +209,10 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
 
         if(board[row-1][col] === currentPlayer) {
             if(++sameColor == 4) {
-                items.pieces.set((row - 1)  * 7 + col, {"stateTemp":"crossed"})
-                items.pieces.set((row - 2) * 7 + col - 1, {"stateTemp":"crossed"})
-                items.pieces.set((row - 3) * 7 + col - 2, {"stateTemp":"crossed"})
-                items.pieces.set((row - 4) * 7 + col - 3, {"stateTemp":"crossed"})
+                setPieceState(col, row - 1, "crossed")
+                setPieceState(col - 1, row - 2, "crossed")
+                setPieceState(col - 2, row - 3, "crossed")
+                setPieceState(col - 3, row - 4, "crossed")
                 return true
             }
         } else {
@@ -222,10 +234,10 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
 
         if(board[row-1][col] === currentPlayer) {
             if(++sameColor == 4) {
-                items.pieces.set((row - 1)  * 7 + col, {"stateTemp":"crossed"})
-                items.pieces.set((row - 2) * 7 + col + 1, {"stateTemp":"crossed"})
-                items.pieces.set((row - 3) * 7 + col + 2, {"stateTemp":"crossed"})
-                items.pieces.set((row - 4) * 7 + col + 3, {"stateTemp":"crossed"})
+                setPieceState(col, row - 1, "crossed")
+                setPieceState(col + 1, row - 2, "crossed")
+                setPieceState(col + 2, row - 3, "crossed")
+                setPieceState(col + 3, row - 4, "crossed")
                 return true
             }
         } else {
