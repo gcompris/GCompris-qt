@@ -59,8 +59,7 @@ function initLevel() {
     items.pieces.clear()
     for(var y = 0;  y < numberOfRows; y++) {
         for(var x = 0;  x < numberOfColumns; x++) {
-            var data = {'stateTemp': "invisible"}
-            items.pieces.append(data)
+            items.pieces.append({'stateTemp': "invisible"})
         }
     }
 }
