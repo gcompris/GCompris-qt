@@ -28,15 +28,18 @@ var items
 var url = "qrc:/gcompris/src/activities/align4-2players/resource/"
 var numberOfRows = 6
 var numberOfColumns = 7
-var columnStatus = [0, 0, 0, 0, 0, 0, 0]
+var columnStatus
 var currentPiece
-var counter = 0
+var counter
 var board
-var score1 = 0, score2 = 0
+var score1
+var score2
 
 function start(items_) {
     items = items_
     currentLevel = 0
+    score1 = 0
+    score2 = 0
     initLevel()
 }
 
