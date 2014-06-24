@@ -27,11 +27,6 @@ import GCompris 1.0
 Image {
     id: piece
 
-    property Item back
-    property int index
-
-    width: back.width * 0.075
-    height: back.height * 0.116
     opacity: 1.0
 
     states: [

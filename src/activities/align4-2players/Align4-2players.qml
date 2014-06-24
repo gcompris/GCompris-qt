@@ -49,13 +49,11 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property alias piece1: piece1
+            property alias fallingPiece: fallingPiece
             property alias pieces: pieces
             property alias dynamic: dynamic
             property alias drop: drop
             property alias line: line
-            property alias player1: player1
-            property alias player2: player2
             property alias player1_score: player1_score
             property alias player2_score: player2_score
             property alias bar: bar
@@ -126,8 +124,8 @@ ActivityBase {
                         height: background.height * 0.116
                         border.color: "#aaaaaaaa"
                         Piece {
+                            anchors.fill: parent
                             state: stateTemp
-                            back: background
                         }
                     }
                 }
@@ -139,16 +137,17 @@ ActivityBase {
         }
 
         Piece {
-            id: piece1
+            id: fallingPiece
             x: background.width * 0.4505
             y: - background.height * 0.019
             state: Activity.counter % 2? "red": "green"
-            back: background
+            width: background.width * 0.075;
+            height: background.height * 0.116
         }
 
         PropertyAnimation {
             id: drop
-            target: piece1
+            target: fallingPiece
             properties: "y"
             duration: 1500
             onStopped: {
@@ -190,8 +189,6 @@ ActivityBase {
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
         }
 

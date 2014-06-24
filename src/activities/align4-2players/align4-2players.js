@@ -28,10 +28,7 @@ var items
 var url = "qrc:/gcompris/src/activities/align4-2players/resource/"
 var numberOfRows = 6
 var numberOfColumns = 7
-var rowStatus = [0, 0, 0, 0, 0, 0]
 var columnStatus = [0, 0, 0, 0, 0, 0, 0]
-var column
-var row
 var currentPiece
 var counter = 0
 var board
@@ -51,23 +48,14 @@ var flag = 0
 function initLevel() {
 
     items.bar.level = currentLevel + 1
-    rowStatus = [0, 0, 0, 0, 0, 0]
     columnStatus = [0, 0, 0, 0, 0, 0, 0]
 
-    var initialY = items.background.height * 0.12
-    var initialX = items.background.width * 0.188
-    var dx = items.background.width * 0.0875
-    var dy = items.background.height * 0.1358
-    var i = 0
-    var data
-    var tiles
-    var tempX
-    var tempY
 
     board = [[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0],
              [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]
     counter = 0
 
+    var data
     if(!flag) {
         for(var y = 0;  y < numberOfRows; y++) {
             for(var x = 0;  x < numberOfColumns; x++) {
@@ -77,6 +65,7 @@ function initLevel() {
             flag = 1
         }
     } else {
+        var i = 0
         for(var y = 0;  y < numberOfRows; y++) {
             for(var x = 0;  x < numberOfColumns; x++) {
                 data = {'stateTemp': "invisible"}
@@ -119,42 +108,42 @@ function whichColumn(x,y) {
 }
 
 /* To move the piece before a column is chosen */
-function setPieceLocation(x, y){
-    column = whichColumn(x, y)
-    items.piece1.y = - items.background.height * 0.019
+function setPieceLocation(x, y) {
+    var column = whichColumn(x, y)
+    items.fallingPiece.y = - items.background.height * 0.019
     switch(column) {
     case 0:
-        items.piece1.x = items.background.width * 0.1865
+        items.fallingPiece.x = items.background.width * 0.1865
         break;
     case 1:
-        items.piece1.x = items.background.width * 0.274
+        items.fallingPiece.x = items.background.width * 0.274
         break;
     case 2:
-        items.piece1.x = items.background.width * 0.3615
+        items.fallingPiece.x = items.background.width * 0.3615
         break;
     case 3:
-        items.piece1.x = items.background.width * 0.449
+        items.fallingPiece.x = items.background.width * 0.449
         break;
     case 4:
-        items.piece1.x = items.background.width * 0.5365
+        items.fallingPiece.x = items.background.width * 0.5365
         break;
     case 5:
-        items.piece1.x = items.background.width * 0.624
+        items.fallingPiece.x = items.background.width * 0.624
         break;
     case 6:
-        items.piece1.x = items.background.width * 0.7115
+        items.fallingPiece.x = items.background.width * 0.7115
         break;
     }
-    items.piece1.state = counter % 2 ? "red": "green"
+    items.fallingPiece.state = counter % 2 ? "red": "green"
 }
 
 function handleDrop(x, y) {
 
     var singleDropSize = items.background.height * 0.1358
-    column = whichColumn(x, y)
+    var column = whichColumn(x, y)
     columnStatus[column]++;
-    var destination = items.piece1.y + singleDropSize * (7 - columnStatus[column])
-    if(destination == items.piece1.y) {
+    var destination = items.fallingPiece.y + singleDropSize * (7 - columnStatus[column])
+    if(destination == items.fallingPiece.y) {
         columnStatus[column]--;
         return;
     }
@@ -166,16 +155,16 @@ function handleDrop(x, y) {
     items.drop.start()
 }
 
-var currentPieceValue
+var currentPlayer
 
 function checkGameWon(currentPieceRow, currentPieceColumn) {
 
-    currentPieceValue = board[currentPieceRow][currentPieceColumn]
+    currentPlayer = board[currentPieceRow][currentPieceColumn]
 
     // Horizontal
     var sameColor = 0
     for(var col = 0; col < numberOfColumns; col++) {
-        if(board[currentPieceRow][col] === currentPieceValue) {
+        if(board[currentPieceRow][col] === currentPlayer) {
             if(++sameColor == 4) {
                 items.pieces.set(currentPieceRow * 7 + col, {"stateTemp":"crossed"})
                 items.pieces.set(currentPieceRow * 7 + col - 1, {"stateTemp":"crossed"})
@@ -191,7 +180,7 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
     // Vertical
     sameColor = 0
     for(var row = 0; row < numberOfRows; row++) {
-        if(board[row][currentPieceColumn] === currentPieceValue) {
+        if(board[row][currentPieceColumn] === currentPlayer) {
             if(++sameColor == 4) {
                 items.pieces.set(row * 7 + currentPieceColumn, {"stateTemp":"crossed"})
                 items.pieces.set((row - 1) * 7 + currentPieceColumn, {"stateTemp":"crossed"})
@@ -216,7 +205,7 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
         if(row > numberOfRows)
             break
 
-        if(board[row-1][col] === currentPieceValue) {
+        if(board[row-1][col] === currentPlayer) {
             if(++sameColor == 4) {
                 items.pieces.set((row - 1)  * 7 + col, {"stateTemp":"crossed"})
                 items.pieces.set((row - 2) * 7 + col - 1, {"stateTemp":"crossed"})
@@ -241,7 +230,7 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
         if(row > numberOfRows)
             break
 
-        if(board[row-1][col] === currentPieceValue) {
+        if(board[row-1][col] === currentPlayer) {
             if(++sameColor == 4) {
                 items.pieces.set((row - 1)  * 7 + col, {"stateTemp":"crossed"})
                 items.pieces.set((row - 2) * 7 + col + 1, {"stateTemp":"crossed"})
@@ -257,17 +246,16 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
 
 function continueGame() {
 
-    items.pieces.set(currentPiece, {"stateTemp": counter++ % 2? "red": "green"})
+    items.pieces.set(currentPiece, {"stateTemp": counter++ % 2 ? "red": "green"})
 
-    items.piece1.state = "invisible"
+    setPieceLocation(items.fallingPiece.x, items.fallingPiece.y)
 
-    setPieceLocation(items.piece1.x, items.piece1.y)
     /* Update score if game won */
     if(checkGameWon(parseInt(currentPiece/7), parseInt(currentPiece % 7))) {
-        if(currentPieceValue === 2) {
+        if(currentPlayer === 2) {
             score1++
             items.player1_score.text = score1.toString()
-        } else if (currentPieceValue === 1){
+        } else if (currentPlayer === 1){
             score2++
             items.player2_score.text = score2.toString()
         }
