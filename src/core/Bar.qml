@@ -38,6 +38,7 @@ Item {
     signal nextLevelClicked
     signal previousLevelClicked
     signal repeatClicked
+    signal reloadClicked
     signal homeClicked
 
     function toggle() {
@@ -111,6 +112,13 @@ Item {
             sourceSize.width: 66 * barZoom
             contentId: content.repeat
             onClicked: bar.repeatClicked()
+        }
+        BarButton {
+            id: reloadButton
+            source: "qrc:/gcompris/src/core/resource/bar_reload.svgz";
+            contentId: content.reload
+            sourceSize.width: 66 * barZoom
+            onClicked: bar.reloadClicked()
         }
         BarButton {
             id: configButton
