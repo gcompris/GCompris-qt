@@ -85,6 +85,7 @@ ActivityBase {
             life.opacity = 1
             forceActiveFocus()
             operator = " + "
+            Activity._operator = operator
             Activity.fillAllGrid()
             topPanel.goal = Activity.getGoal()
             if (Activity._currentLevel % 6 == 1) {
@@ -96,6 +97,7 @@ ActivityBase {
         }
         onStop: {
             monsters.destroyAll()
+            muncher.init()
             Activity.stop()
         }
 
