@@ -121,7 +121,7 @@ Rectangle {
         width: parent.width - 5
         height: parent.height - 5
         anchors.horizontalCenter: parent.horizontalCenter
-        text: fault + "<br>" + qsTr("Press <Return> or click on me to continue.") + "</p>"
+        text: fault + "<br>" + qsTr("Press &lt;Return&gt; or click on me to continue.") + "</p>"
         font.pointSize: ApplicationInfo.ratio * 20
         wrapMode: Text.WordWrap
     }
