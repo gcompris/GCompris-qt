@@ -1,6 +1,6 @@
 /* GCompris - align4-2players.js
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 Bharath M S
  *
  * Authors:
  *   Laurent Lacheny <laurent.lacheny@wanadoo.fr> (GTK+ version)
