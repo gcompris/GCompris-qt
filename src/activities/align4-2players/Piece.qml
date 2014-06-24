@@ -39,7 +39,7 @@ Image {
 
         },
         State {
-            name: "red"
+            name: "2" // Player 2
             PropertyChanges{
                 target: piece
                 opacity: 1.0
@@ -47,7 +47,7 @@ Image {
             }
         },
         State {
-            name: "green"
+            name: "1" // Player 1
             PropertyChanges {
                 target: piece
                 opacity: 1.0

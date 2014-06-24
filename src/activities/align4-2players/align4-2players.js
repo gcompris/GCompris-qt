@@ -30,15 +30,13 @@ var numberOfRows = 6
 var numberOfColumns = 7
 var currentPiece
 var counter
-var board
-var score1
-var score2
+var currentPlayer
 
 function start(items_) {
     items = items_
     currentLevel = 0
-    score1 = 0
-    score2 = 0
+    items.player1_score = 0
+    items.player2_score = 0
     initLevel()
 }
 
@@ -49,8 +47,6 @@ function initLevel() {
 
     items.bar.level = currentLevel + 1
 
-    board = [[0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0],
-             [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0]]
     counter = 0
 
     items.pieces.clear()
@@ -127,12 +123,12 @@ function setPieceLocation(x, y) {
         items.fallingPiece.x = items.background.width * 0.7115
         break;
     }
-    items.fallingPiece.state = counter % 2 ? "red": "green"
+    items.fallingPiece.state = counter % 2 ? "2": "1"
 }
 
 function isModelEmpty(model) {
     var state = model.stateTemp
-    return (state == "red" || state == "green") ? false : true
+    return (state == "1" || state == "2") ? false : true
 }
 
 function getPieceAt(col, row) {
@@ -160,7 +156,6 @@ function handleDrop(x, y) {
     items.drop.to = destination
     items.drop.duration = 1500 * ((nextFreeStop + 1) / 6)
     currentPiece = nextFreeStop * 7 + column
-    board[nextFreeStop][column] = counter % 2 ? 1: 2
     items.drop.start()
 }
 
@@ -168,16 +163,18 @@ function setPieceState(col, row, state) {
     items.pieces.set(row * 7 + col, {"stateTemp": state})
 }
 
-var currentPlayer
+function getPieceState(col, row) {
+    return items.pieces.get(row * 7 + col).stateTemp
+}
 
 function checkGameWon(currentPieceRow, currentPieceColumn) {
 
-    currentPlayer = board[currentPieceRow][currentPieceColumn]
+    currentPlayer = getPieceState(currentPieceColumn, currentPieceRow)
 
     // Horizontal
     var sameColor = 0
     for(var col = 0; col < numberOfColumns; col++) {
-        if(board[currentPieceRow][col] === currentPlayer) {
+        if(getPieceState(col, currentPieceRow) === currentPlayer) {
             if(++sameColor == 4) {
                 setPieceState(col, currentPieceRow, "crossed")
                 setPieceState(col - 1, currentPieceRow, "crossed")
@@ -193,7 +190,7 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
     // Vertical
     sameColor = 0
     for(var row = 0; row < numberOfRows; row++) {
-        if(board[row][currentPieceColumn] === currentPlayer) {
+        if(getPieceState(currentPieceColumn, row) === currentPlayer) {
             if(++sameColor == 4) {
                 setPieceState(currentPieceColumn, row, "crossed")
                 setPieceState(currentPieceColumn, row - 1, "crossed")
@@ -218,7 +215,7 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
         if(row > numberOfRows)
             break
 
-        if(board[row-1][col] === currentPlayer) {
+        if(getPieceState(col, row-1) === currentPlayer) {
             if(++sameColor == 4) {
                 setPieceState(col, row - 1, "crossed")
                 setPieceState(col - 1, row - 2, "crossed")
@@ -243,7 +240,7 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
         if(row > numberOfRows)
             break
 
-        if(board[row-1][col] === currentPlayer) {
+        if(getPieceState(col, row-1) === currentPlayer) {
             if(++sameColor == 4) {
                 setPieceState(col, row - 1, "crossed")
                 setPieceState(col + 1, row - 2, "crossed")
@@ -259,18 +256,16 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
 
 function continueGame() {
 
-    items.pieces.set(currentPiece, {"stateTemp": counter++ % 2 ? "red": "green"})
+    items.pieces.set(currentPiece, {"stateTemp": counter++ % 2 ? "2": "1"})
 
     setPieceLocation(items.fallingPiece.x, items.fallingPiece.y)
 
     /* Update score if game won */
     if(checkGameWon(parseInt(currentPiece/7), parseInt(currentPiece % 7))) {
-        if(currentPlayer === 2) {
-            score1++
-            items.player1_score.text = score1.toString()
-        } else if (currentPlayer === 1){
-            score2++
-            items.player2_score.text = score2.toString()
+        if(currentPlayer === "1") {
+            items.player1_score++
+        } else {
+            items.player2_score++
         }
         items.bonus.good("flower")
     }

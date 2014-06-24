@@ -54,8 +54,8 @@ ActivityBase {
             property alias dynamic: dynamic
             property alias drop: drop
             property alias line: line
-            property alias player1_score: player1_score
-            property alias player2_score: player2_score
+            property alias player1_score: player1_score.text
+            property alias player2_score: player2_score.text
             property alias bar: bar
             property alias bonus: bonus
         }
@@ -76,7 +76,6 @@ ActivityBase {
 
             Text {
                 id: player1_score
-                text: "0"
                 x: parent.width / 2
                 y: - parent.height / 10
                 color: "white"
@@ -93,7 +92,6 @@ ActivityBase {
 
             Text {
                 id: player2_score
-                text: "0"
                 color: "white"
                 x: parent.width / 2
                 y: - parent.height / 10
