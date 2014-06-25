@@ -114,9 +114,9 @@ ActivityBase {
         }
 
         // Debug utility.
-        Keys.onAsteriskPressed: {
-            nextLevel()
-        }
+//        Keys.onAsteriskPressed: {
+//            nextLevel()
+//        }
 
         onWidthChanged: {
             positionTimer.restart()
