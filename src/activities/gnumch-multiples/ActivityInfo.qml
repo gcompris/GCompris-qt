@@ -10,7 +10,7 @@ ActivityInfo {
   description: qsTr("")
   goal: qsTr("")
   prerequisite: qsTr("")
-  manual: qsTr("")
+  manual: ApplicationInfo.isMobile ? qsTr("Use the arrow keys to navigate around the board and to avoid the Troggles. Press the space bar to eat the number") : qsTr("Touch cells to move around the board and to avoid the Troggles. Press the muncher to eat the number")
   credit: qsTr("")
   section: "/math/algebramenu"
 }
