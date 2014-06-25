@@ -60,7 +60,7 @@ ActivityBase {
             topPanel.goal = Activity.getGoal()
             monsters.destroyAll()
             Activity.fillAllGrid()
-            life.opacity = 1
+            topPanel.life.opacity = 1
             spawningMonsters.stop()
             timerActivateWarn.stop()
             if (Activity._currentLevel != 7) {
@@ -80,8 +80,8 @@ ActivityBase {
         }
 
         onStart: {
-            Activity.start(modelCells, bar, bonus, type, operator)
-            life.opacity = 1
+            Activity.start(modelCells, topPanel.bar, bonus, type, operator)
+            topPanel.life.opacity = 1
             forceActiveFocus()
             operator = " + "
             Activity._operator = operator
@@ -144,7 +144,7 @@ ActivityBase {
         Rectangle {
             id: gridPart
 
-            width: background.width - 180 * ApplicationInfo.ratio
+            width: background.width
             height: background.height / 7 * 6
             border.color: "black"
             border.width: 2
@@ -299,31 +299,6 @@ ActivityBase {
             goal: Activity.getGoal()
         }
 
-        Rectangle {
-            id: muncherLife
-
-            width: 120 * ApplicationInfo.ratio
-            height: life.height
-            anchors.left: parent.left
-            anchors.leftMargin: 10
-            anchors.top: parent.top
-            anchors.topMargin: 10
-
-            border.width: 2
-            radius: 5
-
-            Creature {
-                id: life
-
-                monsterType: "muncher"
-                width: parent.width
-                height: parent.width
-                frames: 1
-                frameW: 80
-                widthRatio: 1.35
-            }
-        }
-
         WarnMonster {
             id: warnMonsters
         }
@@ -335,20 +310,6 @@ ActivityBase {
 
         Warning {
             id: warningRect
-        }
-
-        Bar {
-            id: bar
-
-            content: BarEnumContent {
-                value: help | home
-            }
-            onHelpClicked: {
-                displayDialog(dialogHelp)
-            }
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
         }
 
         Bonus {
