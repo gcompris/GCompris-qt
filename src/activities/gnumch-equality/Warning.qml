@@ -37,7 +37,7 @@ Rectangle {
             }
         } else if (activity.type == "primes") {
             if (num1 == 1) {
-                fault += 1 + " " + qsTr("is not a prime number") + "."
+                fault += qsTr("1 is not a prime number.")
                 return
             }
 
@@ -47,7 +47,7 @@ Rectangle {
                     divisors.push(div)
             }
 
-            fault += num1 + " " + qsTr("is divisible by") + " " + divisors[0]
+            fault += qsTr("%1 is divisible by %2").arg(num1).arg(divisors[0])
 
             if (divisors.length > 2) {
                 for (var div = 1; div < divisors.length - 1; ++div) {
@@ -73,9 +73,9 @@ Rectangle {
                 }
             }
 
-            fault += " " + qsTr("and") + " " + multiples[multiples.length - 1] + " " + qsTr("are the multiples of") + " " + num1 + ","
+            fault += " " + qsTr("and %1 are the multiples of %2 ,").arg(multiples[multiples.length - 1]).arg(num1)
             fault += "<br>"
-            fault += qsTr("but") + " " + num1 + " " + qsTr("is not a multiple of") + " " + Activity.getGoal() + "."
+            fault += qsTr("but %1 is not a multiple of %2.").arg(num1).arg(Activity.getGoal())
         } else if (activity.type == "multiples") {
             // First we find divisors of the wrong number.
             var divisors = []
@@ -92,7 +92,7 @@ Rectangle {
                 }
             }
 
-            fault += " " + qsTr("and") + " " + divisors[divisors.length - 1]  + qsTr(" are the divisors of ") + num1 + "."
+            fault += " " + qsTr("and %1 are the divisors of %2.").arg(divisors[divisors.length - 1]).arg(num1)
         }
     }
 
