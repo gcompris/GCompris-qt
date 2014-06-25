@@ -13,8 +13,8 @@ Creature {
         warningRect.setFault(index)
         warningRect.opacity = 0.9
 
-        if (life.opacity == 1) {
-            life.opacity = 0
+        if (topPanel.life.opacity == 1) {
+            topPanel.life.opacity = 0
             spawningMonsters.stop()
             movable = false
             monsters.setMovable(false)
