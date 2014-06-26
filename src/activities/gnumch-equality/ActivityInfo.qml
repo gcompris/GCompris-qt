@@ -4,7 +4,7 @@ ActivityInfo {
   name: "gnumch-equality/Gnumch-equality.qml"
   difficulty: 3
   icon: "gnumch-equality/gnumch-equality.svg"
-  author: "Qt Quick port by Manuel Tondeur <manueltondeur@gmail.com>"
+  author: "Manuel Tondeur <manueltondeur@gmail.com>"
   demo: false
   title: qsTr("Gnumch Equality")
   description: qsTr("Guide the Number Muncher to the expressions that equal the number at the top of the screen.")

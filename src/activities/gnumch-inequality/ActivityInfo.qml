@@ -4,7 +4,7 @@ ActivityInfo {
   name: "gnumch-inequality/Gnumch-inequality.qml"
   difficulty: 3
   icon: "gnumch-inequality/gnumch-inequality.svg"
-  author: "Qt Quick port by Manuel Tondeur <manueltondeur@gmail.com>"
+  author: "Manuel Tondeur <manueltondeur@gmail.com>"
   demo: false
   title: qsTr("Gnumch Inequality")
   description: qsTr("Guide the Number Muncher to the all the expressions that do not equal the number at the top of the screen.")

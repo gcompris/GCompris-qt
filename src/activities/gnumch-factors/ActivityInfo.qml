@@ -10,7 +10,7 @@ ActivityInfo {
   name: "gnumch-factors/Gnumch-factors.qml"
   difficulty: 5
   icon: "gnumch-factors/gnumch-factors.svg"
-  author: "Qt Quick port by Manuel Tondeur <manueltondeur@gmail.com>"
+  author: "Manuel Tondeur <manueltondeur@gmail.com>"
   demo: false
   title: qsTr("Gnumch Factors")
   description: qsTr("Guide the Number Muncher to all the factors of the number at the top of the screen.")

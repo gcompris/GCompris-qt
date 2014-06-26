@@ -10,7 +10,7 @@ ActivityInfo {
   name: "gnumch-primes/Gnumch-primes.qml"
   difficulty: 6
   icon: "gnumch-primes/gnumch-primes.svg"
-  author: "Qt Quick port by Manuel Tondeur <manueltondeur@gmail.com>"
+  author: "Manuel Tondeur <manueltondeur@gmail.com>"
   demo: false
   title: qsTr("Gnumch Primes")
   description: qsTr("Guide the Number Muncher to all the prime numbers.")

@@ -10,7 +10,7 @@ ActivityInfo {
   name: "gnumch-multiples/Gnumch-multiples.qml"
   difficulty: 3
   icon: "gnumch-multiples/gnumch-multiples.svg"
-  author: "Qt Quick port by Manuel Tondeur <manueltondeur@gmail.com>"
+  author: "Manuel Tondeur <manueltondeur@gmail.com>"
   demo: false
   title: qsTr("Gnumch Multiples")
   description: qsTr("Guide the Number Muncher to all the multiples of the number at the top of the screen.")

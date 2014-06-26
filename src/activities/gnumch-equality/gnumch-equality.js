@@ -11,7 +11,6 @@ var _operator
 var _modelCells
 
 function start(modelCells, bar, bonus, type, operator) {
-    console.log("gnumch-equality activity: start")
     _bar = bar
     _bonus = bonus
     _currentLevel = 0
@@ -24,7 +23,6 @@ function start(modelCells, bar, bonus, type, operator) {
 }
 
 function stop() {
-    console.log("gnumch-equality activity: stop")
 }
 
 function nextLevel() {
