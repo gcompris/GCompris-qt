@@ -1,4 +1,5 @@
 import QtQuick 2.2
+import QtQuick.Controls 1.1
 import GCompris 1.0
 
 import "../../core"
@@ -38,11 +39,20 @@ Rectangle {
             }
         }
 
-        font.pointSize: parent.width > 440 * ApplicationInfo.ratio ? 30 * ApplicationInfo.ratio : 20 * ApplicationInfo.ratio
+        fontSizeMode: Text.Fit
+        minimumPointSize: 7
+        font.pointSize: 32
         font.weight: Font.DemiBold
-        anchors.left: muncherLife.right
-        anchors.leftMargin: ApplicationInfo.ratio*5
-        anchors.verticalCenter: parent.verticalCenter
+        maximumLineCount: 1
+        verticalAlignment: Text.AlignVCenter
+
+        anchors {
+            left: muncherLife.right
+            right: bar.left
+            leftMargin: ApplicationInfo.ratio*5
+            top: parent.top
+            bottom: parent.bottom
+        }
     }
 
     Rectangle {
@@ -72,9 +82,13 @@ Rectangle {
         id: bar
 
         barZoom: background.height < background.width ? parent.height / 85 : parent.width / 600
-        anchors.right: parent.right
-        anchors.rightMargin: ApplicationInfo.ratio*5
-        anchors.top: undefined
+        anchors {
+            right: parent.right
+            top: undefined
+            bottom: parent.bottom
+            left: undefined
+            rightMargin: ApplicationInfo.ratio * 5
+        }
 
         content: BarEnumContent {
             value: help | home

@@ -1,4 +1,5 @@
 import QtQuick 2.2
+import QtQuick.Controls 1.1
 import GCompris 1.0
 
 Item {
@@ -14,13 +15,11 @@ Item {
             property string operator: activity.operator
 
             function setText() {
-                numberText.font.pointSize = height/3
-                if (height*2 > width) {
-                    numberText.font.pointSize = width/4
-                }
                 if (activity.type == "equality" || activity.type == "inequality") {
 
-                } else if (activity.type == "primes" || activity.type == "factors"|| activity.type == "multiples") {
+                } else if (activity.type == "primes" ||
+                           activity.type == "factors"||
+                           activity.type == "multiples") {
                     num2 = ""
                     operator = ""
                 }
@@ -34,24 +33,23 @@ Item {
             color: "transparent"
             focus: false
             Component.onCompleted: setText()
-            onWidthChanged: {
-                if (height > 0) {
-                    numberText.font.pointSize = height/3
-                    if (height*2 > width) {
-                        numberText.font.pointSize = width/4
-                    }
-                }
-            }
 
             Text {
                 id: numberText
 
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.fill: parent
+                anchors.margins: ApplicationInfo.ratio * 5
 
-                style: Text.Sunken
-                styleColor: "green"
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                style: Text.Outline
+                styleColor: "white"
                 visible: show
+
+                fontSizeMode: Text.Fit
+                minimumPointSize: 7
+                font.pointSize: 28
+                maximumLineCount: 1
 
                 text: num1 + operator + num2
             }
