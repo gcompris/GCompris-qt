@@ -40,23 +40,23 @@ Rectangle {
     radius: 5
 
     onGoalChanged: {
-        goalText.text = goalText.setTextGoal() + " " + goal
+        goalText.text = goalText.setTextGoal(goal)
     }
 
     Text {
         id: goalText
 
-        function setTextGoal() {
+        function setTextGoal(goal) {
             if (activity.type === "equality") {
-                return qsTr("Equal to :")
+                return qsTr("Equal to %1").arg(goal)
             } else if (activity.type === "inequality") {
-                return qsTr("Different from :")
+                return qsTr("Not equal to %1").arg(goal)
             } else if (activity.type === "factors") {
-                return qsTr("Divisible by :")
+                return qsTr("Factor of %1").arg(goal)
             } else if (activity.type === "multiples") {
-                return qsTr("Multiple of :")
+                return qsTr("Multiple of %1").arg(goal)
             } else if (activity.type === "primes") {
-                return qsTr("Primes ≤ ")
+                return qsTr("Primes less than %1").arg(goal)
             }
         }
 

@@ -81,22 +81,20 @@ Rectangle {
         } else if (activity.type == "factors") {
             // First we find the multiples of the wrong number.
             var multiples = []
-            for (var mul = 1; mul < Activity.getGoal() * 3; ++mul) {
+            var mul = 0
+            do {
+                mul++
                 if ((mul / num1) % 1 == 0)
                     multiples.push(mul)
+            } while(multiples.length <= 3)
+
+            var solutions = multiples[1]
+            for (var mul = 2; mul < multiples.length; ++mul) {
+                solutions += ", " + multiples[mul]
             }
 
-            fault += multiples[0]
-
-            if (multiples.length > 2) {
-                for (var mul = 1; mul < multiples.length - 1; ++mul) {
-                    fault += ", " + multiples[mul]
-                }
-            }
-
-            fault += " " + qsTr("and %1 are the multiples of %2 ,").arg(multiples[multiples.length - 1]).arg(num1)
-            fault += "<br>"
-            fault += qsTr("but %1 is not a multiple of %2.").arg(num1).arg(Activity.getGoal())
+            fault += qsTr("Multiples of %1 include %2, ").arg(num1).arg(solutions)
+            fault += qsTr("but %1 is not a multiple of %2.").arg(Activity.getGoal()).arg(num1)
         } else if (activity.type == "multiples") {
             // First we find divisors of the wrong number.
             var divisors = []
