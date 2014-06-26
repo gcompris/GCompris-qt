@@ -74,7 +74,7 @@ if(APPLE)
   list(APPEND _qt_plugins Qt5::QTgaPlugin Qt5::QTiffPlugin Qt5::QCocoaIntegrationPlugin)
 elseif(WIN32)
   list(APPEND _qt_plugins Qt5::QWindowsIntegrationPlugin)
-elseif(UNIX)
+elseif(UNIX AND NOT ANDROID)
   list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin)
 endif()
 
