@@ -32,7 +32,7 @@ Creature {
 
         opacity = 0
         warningRect.setFault(index)
-        warningRect.opacity = 0.9
+        warningRect.opacity = 0.95
 
         if (topPanel.life.opacity == 1) {
             topPanel.life.opacity = 0
