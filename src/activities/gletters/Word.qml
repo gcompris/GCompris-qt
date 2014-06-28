@@ -106,6 +106,8 @@ Item {
 
     Image {
         id: wordImage
+        // FIXME, the size should be passed from the caller
+        sourceSize.height: 106 * ApplicationInfo.ratio
     }
 
     Text {
