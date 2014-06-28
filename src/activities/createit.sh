@@ -7,7 +7,8 @@ if [ -z $1 ]; then
 fi
 
 activity=$1
-Activity=${activity^}
+# Make it camel case
+Activity=$(echo ${activity^} | sed 's/-\(.\)/\u\1/g')
 activitydir=$1
 
 template=template
