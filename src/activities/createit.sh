@@ -33,5 +33,20 @@ sed -i s/$template/$activity/g *
 sed -i s/$Template/$Activity/g *
 cd ..
 
-# The list of activities
-echo $activity >> activities.txt
+#
+# The list of activities (keeping it sorted)
+#
+
+# Create the list without comments
+grep -v "^#" activities.txt > activities.txt.tmp
+echo $activity >> activities.txt.tmp
+
+# Save the comments
+grep "^#" activities.txt > activities.txt.tmp.comment
+
+# Concat both to form the new list
+mv activities.txt.tmp.comment activities.txt
+sort -u activities.txt.tmp >> activities.txt
+
+# Remove temp files
+rm activities.txt.tmp
