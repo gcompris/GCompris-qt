@@ -12,4 +12,5 @@ ActivityInfo {
   prerequisite: qsTr("")
   manual: qsTr("")
   credit: qsTr("")
+  section: ""
 }
