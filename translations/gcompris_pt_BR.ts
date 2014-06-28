@@ -275,7 +275,7 @@ Nesse jogo, as cartas estão escondendo as duas partes de uma operação. Você 
     <message>
         <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="28"/>
         <source>Even and Odd Numbers</source>
-        <translation type="unfinished"></translation>
+        <translation>Números Pares e Ímpares</translation>
     </message>
     <message>
         <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="29"/>
