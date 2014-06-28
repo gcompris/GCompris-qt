@@ -31,4 +31,5 @@ ActivityInfo {
     prerequisite: qsTr("Number")
     manual: qsTr("Catch the odd or even numbers, using the up, down, right and left arrows on the keyboard to move the helicopter.")
     credit: ""
+    section: "math numeration"
 }
