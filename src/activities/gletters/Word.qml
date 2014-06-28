@@ -29,12 +29,13 @@ import "gletters.js" as Activity
 Item {
     id: word
     
-    width: wordText.width
-    height: wordText.height
+    width: image ? wordImage.width : wordText.width
+    height: image ? wordImage.width : wordText.height
     
     /// index into text.split("") where next typed match should occur
     property int unmatchedIndex: 0;
     property alias text: wordText.text;
+    property alias image: wordImage.source;
     property bool wonState: false
 
     signal won
@@ -103,9 +104,14 @@ Item {
         return (unmatchedIndex === text.length);
     }
 
+    Image {
+        id: wordImage
+    }
+
     Text {
         id: wordText
         
+        visible: image == ""
         text: ""
         font.pointSize: 35
         font.bold: true

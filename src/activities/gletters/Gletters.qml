@@ -38,6 +38,11 @@ ActivityBase {
     /* mode of the activity, "letter" (gletters) or "word" (wordsgame):*/
     property string mode: "letter"
 
+    // Override if you want to replace texts by your image
+    function getImage(key) {
+        return ""
+    }
+
     onStart: focus = true
     onStop: {}
     
@@ -59,6 +64,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
+            property Item ourActivity: activity
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus

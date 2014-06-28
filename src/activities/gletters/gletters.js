@@ -90,6 +90,7 @@ function initLevel() {
         deleteWords();
         level = items.wordlist.getLevelWordList(currentLevel + 1);
         maxSubLevel = items.wordlist.getMaxSubLevel(currentLevel + 1);
+        console.log(maxSubLevel)
         if (maxSubLevel == 0) {
             // If level length is not set in wordlist, make sure the level doesn't get too long
             if (mode == "letter") {
@@ -150,7 +151,7 @@ function initLevel() {
 
 function processKeyPress(text) {
     var typedText = uppercaseOnly ? text.toLocaleUpperCase() : text;
-    
+
     if (currentWord !== null) {
         // check against a currently typed word
         if (!currentWord.checkMatch(typedText)) {
@@ -227,6 +228,7 @@ function createWord()
         var word = wordComponent.createObject( items.background, 
                 {
                     "text": text,
+                    "image": items.ourActivity.getImage(text),
                     // assume x=width-25px for now, Word auto-adjusts onCompleted():
                     "x": Math.random() * (items.main.width - 25),
                     "y": -25,
