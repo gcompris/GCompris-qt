@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "gnumch-equality/Gnumch-equality.qml"
+  name: "gnumch-equality/GnumchEquality.qml"
   difficulty: 3
   icon: "gnumch-equality/gnumch-equality.svg"
   author: "Manuel Tondeur <manueltondeur@gmail.com>"

@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "align4-2players/Align4-2players.qml"
+  name: "align4-2players/Align42players.qml"
   difficulty: 1
   icon: "align4-2players/align4-2players.svgz"
   author: "Bharath M S <brat.197@gmail.com>"

@@ -7,7 +7,7 @@ ActivityInfo {
          return out
    }
 
-  name: "gnumch-primes/Gnumch-primes.qml"
+  name: "gnumch-primes/GnumchPrimes.qml"
   difficulty: 6
   icon: "gnumch-primes/gnumch-primes.svg"
   author: "Manuel Tondeur <manueltondeur@gmail.com>"

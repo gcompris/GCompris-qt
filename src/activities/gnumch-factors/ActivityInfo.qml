@@ -7,7 +7,7 @@ ActivityInfo {
         return out
    }
 
-  name: "gnumch-factors/Gnumch-factors.qml"
+  name: "gnumch-factors/GnumchFactors.qml"
   difficulty: 5
   icon: "gnumch-factors/gnumch-factors.svg"
   author: "Manuel Tondeur <manueltondeur@gmail.com>"

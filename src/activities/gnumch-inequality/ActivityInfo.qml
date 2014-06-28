@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "gnumch-inequality/Gnumch-inequality.qml"
+  name: "gnumch-inequality/GnumchInequality.qml"
   difficulty: 3
   icon: "gnumch-inequality/gnumch-inequality.svg"
   author: "Manuel Tondeur <manueltondeur@gmail.com>"

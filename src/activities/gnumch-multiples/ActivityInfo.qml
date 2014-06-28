@@ -7,7 +7,7 @@ ActivityInfo {
         return out
    }
 
-  name: "gnumch-multiples/Gnumch-multiples.qml"
+  name: "gnumch-multiples/GnumchMultiples.qml"
   difficulty: 3
   icon: "gnumch-multiples/gnumch-multiples.svg"
   author: "Manuel Tondeur <manueltondeur@gmail.com>"
