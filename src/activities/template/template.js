@@ -27,18 +27,15 @@ var numberOfLevel = 4
 var items
 
 function start(items_) {
-    console.log("template activity: start")
     items = items_
     currentLevel = 0
     initLevel()
 }
 
 function stop() {
-    console.log("template activity: stop")
 }
 
 function initLevel() {
-    console.log("template activity: create some content in my activity")
     items.bar.level = currentLevel + 1
 }
 
