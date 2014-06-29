@@ -21,6 +21,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.0
+import QtGraphicalEffects 1.0
 import GCompris 1.0
 
 import "../../core"
@@ -43,6 +44,7 @@ Item {
     onWon: {
         wonState = true
         particle.emitter.burst(30)
+        dropShadow.opacity = 0
         fadeout.restart();
     }
     
@@ -118,7 +120,14 @@ Item {
         font.pointSize: 35
         font.bold: true
         color: "navy"
-            
+        style: Text.Outline
+        styleColor: "white"
+
+        ParticleSystemStar {
+            id: particle
+            clip: false
+        }
+
         Text {
             id: highlightedWordText
             
@@ -128,12 +137,21 @@ Item {
             font.pointSize: parent.font.pointSize
             font.bold: parent.font.pointSize
             color: "red"
+            style: Text.Outline
+            styleColor: "white"
         }
     }
     
-    ParticleSystemStar {
-        id: particle
-        clip: false
+    DropShadow {
+        id: dropShadow
+        anchors.fill: wordText
+        cached: true
+        horizontalOffset: 3
+        verticalOffset: 3
+        radius: 8.0
+        samples: 16
+        color: "#80000000"
+        source: wordText
     }
 
     NumberAnimation {
