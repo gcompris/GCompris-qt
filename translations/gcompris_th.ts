@@ -145,12 +145,12 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="10"/>
         <source>Arrange four coins in a row</source>
-        <translation type="unfinished"></translation>
+        <translation>จัดเรียงเหรียญสี่เหรียญให้ตรงแถว</translation>
     </message>
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="11"/>
         <source>Create a line of 4 pieces either horizontally (lying down), vertically (standing up) or diagonally.</source>
-        <translation type="unfinished"></translation>
+        <translation>ตั้งแถว 4 เหรียญในแนวนอนหรือแนวตั้งหรือแนวทแยง</translation>
     </message>
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="12"/>
@@ -166,7 +166,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="13"/>
         <source>Click the position in the line where you want to drop a piece. You can also use the arrow keys to move the piece left or right, and the down or space key to drop a piece.</source>
-        <translation type="unfinished"></translation>
+        <translation>คลิกที่ตำแหน่งใดๆ ในแถวที่คุณต้องการหย่อนเหรียญ หรืออีกวิธีหนึ่ง คุณสามารถใช้ปุ่มลูกศรเลื่อนเหรียญไปทางซ้ายหรือขวา แล้วใช้ปุ่มลูกศรลงหรือแคร่เว้นวรรคเพื่อหย่อนเหรียญลง</translation>
     </message>
     <message>
         <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="13"/>
@@ -1079,42 +1079,42 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="9"/>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="9"/>
         <source>The magician hat</source>
-        <translation type="unfinished"></translation>
+        <translation>หมวกวิเศษ</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="10"/>
         <source>Count how many items are under the magic hat after some have got away</source>
-        <translation type="unfinished"></translation>
+        <translation>นับจำนวนสิ่งของที่อยู่ใต้หมวกวิเศษหลังจากที่เอาออกไป</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="11"/>
         <source>Learn subtraction</source>
-        <translation type="unfinished"></translation>
+        <translation>เรียนรู้การลบ</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="12"/>
         <source>Subtraction</source>
-        <translation type="unfinished"></translation>
+        <translation>การลบ</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="13"/>
         <source>Look at the magician, he tells the number of stars that are under his magic hat. Then, click on the hat to open it. A few stars escape. Click again on the hat to close it. You have to count how many are still under the hat. Click on the bottom right area to answer.</source>
-        <translation type="unfinished"></translation>
+        <translation>ดูที่นักมายากลสิ เขาบอกจำนวนดาวที่อยู่ใต้หมวกวิเศษของเขา  จากนั้น คลิกที่หมวกเพื่อเปิดดู ปรากฏว่าดาวหลุดหายไป คลิกที่หมวกอีกครั้งเพื่อปิดหมวก คุณจะต้องนับว่าเหลือดาวกี่ดวงอยู่ใต้หมวก  คลิกที่บริเวณล่างขวาเพื่อป้อนคำตอบ</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="9"/>
         <source>The football game</source>
-        <translation type="unfinished"></translation>
+        <translation>เกมฟุตบอล</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="10"/>
         <source>Kick the ball into the goal</source>
-        <translation type="unfinished"></translation>
+        <translation>เตะลูกบอลเข้าประตู</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="11"/>
         <source>Kick the ball into the black hole on the right</source>
-        <translation type="unfinished"></translation>
+        <translation>เตะลูกบอลให้ลงหลุมสีดำด้านขวา</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="13"/>
@@ -1149,7 +1149,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the prime numbers.</source>
-        <translation type="unfinished"></translation>
+        <translation>พาตัวเขมือบตัวเลขไปกินจำนวนเฉพาะทั้งหมด</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="17"/>
@@ -1169,28 +1169,28 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the multiples of the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>พาตัวเขมือบตัวเลขไปกินตัวพหุคูณทั้งหมดของตัวเลขด้านบนสุดของจอภาพ</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="17"/>
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="17"/>
         <source>Learn about multiples and factors.</source>
-        <translation type="unfinished"></translation>
+        <translation>เรียนรู้เกี่ยวกับพหุคูณและตัวประกอบ</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="10"/>
         <source>Count how many items are under the magic hat</source>
-        <translation type="unfinished"></translation>
+        <translation>นับจำนวนสิ่งของในหมวกวิเศษ</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="11"/>
         <source>Learn addition</source>
-        <translation type="unfinished"></translation>
+        <translation>เรียนรู้การบวก</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="13"/>
         <source>Click on the hat to open or close it. Under the hat, how many stars can you see moving around? Count carefully. :) Click in the bottom-right area to input your answer.</source>
-        <translation type="unfinished"></translation>
+        <translation>คลิกที่หมวกเพื่อเปิดหรือปิดหมวก ถามว่า ที่ใต้หมวกมีดาววิ่งอยู่กี่ดวงที่คุณเห็น? นับดีๆ นะ :) คลิกที่บริเวณล่างขวาเพื่อป้อนคำตอบ</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="9"/>
@@ -1200,12 +1200,12 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="10"/>
         <source>Guide the Number Muncher to the expressions that equal the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>พาตัวเขมือบตัวเลขไปกินนิพจน์ที่มีค่าเท่ากับตัวเลขด้านบนสุดของจอภาพ</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="11"/>
         <source>Practice addition, multiplication, division and subtraction.</source>
-        <translation type="unfinished"></translation>
+        <translation>ฝึก บวก ลบ คูณ หาร</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="13"/>
@@ -1231,7 +1231,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the factors of the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>พาตัวเขมือบตัวเลขไปกินตัวประกอบทั้งหมดของตัวเลขด้านบนสุดของจอภาพ</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="9"/>
@@ -1241,12 +1241,46 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="10"/>
         <source>Guide the Number Muncher to the all the expressions that do not equal the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>พาตัวเขมือบตัวเลขไปกินนิพจน์ที่มีค่าไม่เท่ากับตัวเลขด้านบนสุดของจอภาพ</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="11"/>
         <source>Practice addition, subtraction, multiplication and division.</source>
-        <translation type="unfinished"></translation>
+        <translation>ฝึก บวก ลบ คูณ หาร</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="9"/>
+        <source>Numbers with pairs of dice</source>
+        <translation>ตัวเลขลูกเต๋าสองลูก</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="10"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="10"/>
+        <source>Count the number of dots on dice before they reach the ground</source>
+        <translation>นับจำนวนจุดบนลูกเต๋าก่อนที่มันจะตกถึงพื้น</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="11"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="11"/>
+        <source>In a limited time, count the number of dots</source>
+        <translation>นับจำนวนจุดบนลูกเต๋าในเวลาที่จำกัด </translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="12"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="12"/>
+        <source>Counting skills</source>
+        <translation>ทักษะการนับ</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="13"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="13"/>
+        <source>With the keyboard, type the number of dots you see on the falling dice.</source>
+        <translation>พิมพ์ตัวเลขจำนวนจุดที่คุณเห็นในลูกเต๋าที่กำลังหล่น โดยใช้แป้นพิมพ์</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="9"/>
+        <source>Numbers With Dice</source>
+        <translation>ตัวเลขกับลูกเต๋า</translation>
     </message>
 </context>
 <context>
@@ -1734,7 +1768,7 @@ to make the ball go in a straight line.</source>
     <message>
         <location filename="../src/activities/gnumch-equality/Warning.qml" line="62"/>
         <source>1 is not a prime number.</source>
-        <translation type="unfinished"></translation>
+        <translation>1 ไม่ใช่จำนวนเฉพาะ</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/Warning.qml" line="72"/>
@@ -2278,22 +2312,22 @@ to make the ball go in a straight line.</source>
 <context>
     <name>core</name>
     <message>
-        <location filename="../src/core/core.js" line="203"/>
+        <location filename="../src/core/core.js" line="204"/>
         <source>Missing sound files!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="204"/>
+        <location filename="../src/core/core.js" line="205"/>
         <source>This activity makes use of language specific sound files, that are not yet installed on your system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="205"/>
+        <location filename="../src/core/core.js" line="206"/>
         <source>For downloading the needed sound files go to the preferences dialog.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="217"/>
+        <location filename="../src/core/core.js" line="218"/>
         <source>Download in progress.&lt;br/&gt;&apos;Abort&apos; it to quit immediately.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2474,6 +2508,21 @@ to make the ball go in a straight line.</source>
         <source>You are running GCompris for the first time.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../src/core/main.qml" line="55"/>
+        <source>You should verify that your application settings especially your language is set correctly, and that all language specific sound files are installed. You can do this in the Preferences Dialog.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/main.qml" line="57"/>
+        <source>Your current locale is &apos;%1&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/main.qml" line="59"/>
+        <source>Have Fun!</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>money</name>
@@ -2483,7 +2532,7 @@ to make the ball go in a straight line.</source>
         <translation>คลิกที่เหรียญหรือธนบัตรที่ด้านล่างของหน้าจอเพื่อจ่ายเงิน ถ้าคุณต้องการเอาเหรียญหรือธนบัตรออก ให้คลิกที่เหรียญหรือธนบัตรนั้นที่บริเวณส่วนบนของหน้าจอ</translation>
     </message>
     <message>
-        <location filename="../src/activities/money/money.js" line="671"/>
+        <location filename="../src/activities/money/money.js" line="702"/>
         <source>Tux just bought some items in your shop.
 He gives you %1, please give back his change.</source>
         <translation type="unfinished"></translation>

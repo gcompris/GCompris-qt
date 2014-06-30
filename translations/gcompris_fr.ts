@@ -147,12 +147,12 @@ Dans ce jeu, les cartes cachent les deux parties d&apos;une opération. Tu dois 
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="10"/>
         <source>Arrange four coins in a row</source>
-        <translation type="unfinished"></translation>
+        <translation>Aligne quatre jetons verticalement, horizontalement ou en diagonale</translation>
     </message>
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="11"/>
         <source>Create a line of 4 pieces either horizontally (lying down), vertically (standing up) or diagonally.</source>
-        <translation type="unfinished"></translation>
+        <translation>Créer un alignement de 4 pièces en les disposant horizontalement (couchées), verticalement (debout) ou encore en diagonale (en travers).</translation>
     </message>
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="12"/>
@@ -168,7 +168,7 @@ Dans ce jeu, les cartes cachent les deux parties d&apos;une opération. Tu dois 
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="13"/>
         <source>Click the position in the line where you want to drop a piece. You can also use the arrow keys to move the piece left or right, and the down or space key to drop a piece.</source>
-        <translation type="unfinished"></translation>
+        <translation>Clique sur la colonne au fond de laquelle tu désires déposer un jeton. Le jeton tombe jusqu&apos;en bas ou s&apos;arrête au-dessus du dernier jeton. Tu peux aussi utiliser les touches flèches gauche et droite pour déplacer le jeton vers la gauche ou la droite, et la touche flèche bas ou la barre espace pour faire tomber le jeton.</translation>
     </message>
     <message>
         <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="13"/>
@@ -1117,47 +1117,47 @@ Pour savoir si ce mode est activé ou non, regarde les pieds de Tux : s&apos;il
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="9"/>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="9"/>
         <source>The magician hat</source>
-        <translation type="unfinished"></translation>
+        <translation>Le chapeau du magicien</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="10"/>
         <source>Count how many items are under the magic hat after some have got away</source>
-        <translation type="unfinished"></translation>
+        <translation>Compte les objets qui sont encore sous le chapeau magique après que certains en seront ressortis.</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="11"/>
         <source>Learn subtraction</source>
-        <translation type="unfinished"></translation>
+        <translation>Apprendre la soustraction</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="12"/>
         <source>Subtraction</source>
-        <translation type="unfinished"></translation>
+        <translation>Soustraction</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="13"/>
         <source>Look at the magician, he tells the number of stars that are under his magic hat. Then, click on the hat to open it. A few stars escape. Click again on the hat to close it. You have to count how many are still under the hat. Click on the bottom right area to answer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Clique sur le chapeau pour l&apos;ouvrir. Des étoiles y pénètrent. Ensuite, plusieurs étoiles s&apos;en échappent. Combien en reste-t-il ? Clique sur des étoiles de la zone pour représenter ta réponse.</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="9"/>
         <source>The football game</source>
-        <translation type="unfinished"></translation>
+        <translation>Jeu de football</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="10"/>
         <source>Kick the ball into the goal</source>
-        <translation type="unfinished"></translation>
+        <translation>Envoie le ballon dans les buts.</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="11"/>
         <source>Kick the ball into the black hole on the right</source>
-        <translation type="unfinished"></translation>
+        <translation>Envoyer le ballon dans la zone circulaire noire à droite.</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="13"/>
         <source>Point the mouse and click on the ball, to set the speed and direction of the ball. The closer you click to the center, the slower the ball moves.</source>
-        <translation type="unfinished"></translation>
+        <translation>Positionne le pointeur de la souris sur le ballon et clique pour communiquer une vitesse et une direction à celui-ci. Plus le pointeur est proche du centre du ballon, plus ce dernier sera lent.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="5"/>
@@ -1187,7 +1187,7 @@ Pour savoir si ce mode est activé ou non, regarde les pieds de Tux : s&apos;il
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the prime numbers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Guide le croqueur de nombres sur tous les nombres premiers.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="17"/>
@@ -1207,28 +1207,28 @@ Pour savoir si ce mode est activé ou non, regarde les pieds de Tux : s&apos;il
     <message>
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the multiples of the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Guide le croqueur de nombres sur tous les multiples du nombre présenté.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="17"/>
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="17"/>
         <source>Learn about multiples and factors.</source>
-        <translation type="unfinished"></translation>
+        <translation>Apprendre à reconnaître les multiples et les diviseurs.</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="10"/>
         <source>Count how many items are under the magic hat</source>
-        <translation type="unfinished"></translation>
+        <translation>Compte les objets qui pénètrent sous le chapeau magique</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="11"/>
         <source>Learn addition</source>
-        <translation type="unfinished"></translation>
+        <translation>Apprendre à additionner</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="13"/>
         <source>Click on the hat to open or close it. Under the hat, how many stars can you see moving around? Count carefully. :) Click in the bottom-right area to input your answer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Clique sur le chapeau pour l&apos;ouvrir. Des étoiles y pénètrent. En tout, combien d&apos;étoiles as-tu vu y entrer ? Compte attentivement :) Clique sur les étoiles dans la zone du bas pour représenter ta réponse.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="9"/>
@@ -1238,12 +1238,12 @@ Pour savoir si ce mode est activé ou non, regarde les pieds de Tux : s&apos;il
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="10"/>
         <source>Guide the Number Muncher to the expressions that equal the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Guide le croqueur de nombres sur les expressions qui sont égales au nombre présenté.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="11"/>
         <source>Practice addition, multiplication, division and subtraction.</source>
-        <translation type="unfinished"></translation>
+        <translation>Entraînement aux opérations d&apos;addition, de multiplication, de division et de soustraction.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="13"/>
@@ -1269,7 +1269,7 @@ Pour savoir si ce mode est activé ou non, regarde les pieds de Tux : s&apos;il
     <message>
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the factors of the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Guide le croqueur de nombres sur tous les diviseurs du nombre présenté.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="9"/>
@@ -1279,12 +1279,46 @@ Pour savoir si ce mode est activé ou non, regarde les pieds de Tux : s&apos;il
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="10"/>
         <source>Guide the Number Muncher to the all the expressions that do not equal the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Guide le croqueur de nombres sur toutes les expressions qui ne sont pas égales au nombre présenté.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="11"/>
         <source>Practice addition, subtraction, multiplication and division.</source>
-        <translation type="unfinished"></translation>
+        <translation>Entraînement aux opérations d&apos;addition, de soustraction, de multiplication et de division.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="9"/>
+        <source>Numbers with pairs of dice</source>
+        <translation>Les nombres avec une paire de dés</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="10"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="10"/>
+        <source>Count the number of dots on dice before they reach the ground</source>
+        <translation>Compte le nombre de points sur les dés avant qu&apos;ils ne touchent le sol.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="11"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="11"/>
+        <source>In a limited time, count the number of dots</source>
+        <translation>En temps limité, compte le nombre de points.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="12"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="12"/>
+        <source>Counting skills</source>
+        <translation>Savoir compter</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="13"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="13"/>
+        <source>With the keyboard, type the number of dots you see on the falling dice.</source>
+        <translation>Avec le clavier, tape le nombre correspondant au nombre de points indiqué par le dé qui tombe.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="9"/>
+        <source>Numbers With Dice</source>
+        <translation>Les nombres avec les dés</translation>
     </message>
 </context>
 <context>
@@ -1775,7 +1809,7 @@ Mickael Albertus &lt;mickael.albertus@gmail.com&gt;</translation>
     <message>
         <location filename="../src/activities/gnumch-equality/Warning.qml" line="62"/>
         <source>1 is not a prime number.</source>
-        <translation type="unfinished"></translation>
+        <translation>1 n&apos;est pas un nombre premier.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/Warning.qml" line="72"/>
@@ -2319,22 +2353,22 @@ Mickael Albertus &lt;mickael.albertus@gmail.com&gt;</translation>
 <context>
     <name>core</name>
     <message>
-        <location filename="../src/core/core.js" line="203"/>
+        <location filename="../src/core/core.js" line="204"/>
         <source>Missing sound files!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="204"/>
+        <location filename="../src/core/core.js" line="205"/>
         <source>This activity makes use of language specific sound files, that are not yet installed on your system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="205"/>
+        <location filename="../src/core/core.js" line="206"/>
         <source>For downloading the needed sound files go to the preferences dialog.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="217"/>
+        <location filename="../src/core/core.js" line="218"/>
         <source>Download in progress.&lt;br/&gt;&apos;Abort&apos; it to quit immediately.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2515,6 +2549,21 @@ Mickael Albertus &lt;mickael.albertus@gmail.com&gt;</translation>
         <source>You are running GCompris for the first time.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../src/core/main.qml" line="55"/>
+        <source>You should verify that your application settings especially your language is set correctly, and that all language specific sound files are installed. You can do this in the Preferences Dialog.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/main.qml" line="57"/>
+        <source>Your current locale is &apos;%1&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/main.qml" line="59"/>
+        <source>Have Fun!</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>money</name>
@@ -2524,7 +2573,7 @@ Mickael Albertus &lt;mickael.albertus@gmail.com&gt;</translation>
         <translation>Clique sur les pièces ou les billets en bas de l&apos;écran pour payer. Si tu désires retirer une pièce, clique dessus dans la zone du haut.</translation>
     </message>
     <message>
-        <location filename="../src/activities/money/money.js" line="671"/>
+        <location filename="../src/activities/money/money.js" line="702"/>
         <source>Tux just bought some items in your shop.
 He gives you %1, please give back his change.</source>
         <translation type="unfinished"></translation>

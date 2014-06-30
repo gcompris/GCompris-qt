@@ -145,12 +145,12 @@ En este juego, estas cartas están escondiendo dos partes de una operación. Nec
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="10"/>
         <source>Arrange four coins in a row</source>
-        <translation type="unfinished"></translation>
+        <translation>Ordena las cuatro monedas en una fila</translation>
     </message>
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="11"/>
         <source>Create a line of 4 pieces either horizontally (lying down), vertically (standing up) or diagonally.</source>
-        <translation type="unfinished"></translation>
+        <translation>Crea una línea de 4 piezas horizontal (tumbadas), vertical (de pie) o diagonalmente.</translation>
     </message>
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="12"/>
@@ -166,7 +166,7 @@ En este juego, estas cartas están escondiendo dos partes de una operación. Nec
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="13"/>
         <source>Click the position in the line where you want to drop a piece. You can also use the arrow keys to move the piece left or right, and the down or space key to drop a piece.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pulsa la posición en la línea donde quieres dejar una pieza. También puedesusar las teclas de flechas para mover la pieza a la izquierda o derecha y la tecla de flecha abajo o la tecla de espacio para dejar una pieza.</translation>
     </message>
     <message>
         <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="13"/>
@@ -1113,47 +1113,47 @@ A partir del nivel 14, el modo rápido estará activado automáticamente. Si qui
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="9"/>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="9"/>
         <source>The magician hat</source>
-        <translation type="unfinished"></translation>
+        <translation>El sombrero de mago</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="10"/>
         <source>Count how many items are under the magic hat after some have got away</source>
-        <translation type="unfinished"></translation>
+        <translation>Cuenta cuántos elementos hay bajo el sombrero mágico después de algunos hayan sido retirados</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="11"/>
         <source>Learn subtraction</source>
-        <translation type="unfinished"></translation>
+        <translation>Aprende la resta</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="12"/>
         <source>Subtraction</source>
-        <translation type="unfinished"></translation>
+        <translation>Resta</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="13"/>
         <source>Look at the magician, he tells the number of stars that are under his magic hat. Then, click on the hat to open it. A few stars escape. Click again on the hat to close it. You have to count how many are still under the hat. Click on the bottom right area to answer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mira al mago, él te cuenta el número de estrellas que hay debajo de su sombrero mágico. Después, pulsa sobre el sombrero para abrirlo. Unas pocas estrellas se escapan. Pulsa de nuevo sobre el sombrero para cerrarlo. Tienes que contar cuántas estrellas quedan todavía bajo el sombrero. Pulsa sobre el área abajo a la derecha para responder.</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="9"/>
         <source>The football game</source>
-        <translation type="unfinished"></translation>
+        <translation>El juego de fútbol</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="10"/>
         <source>Kick the ball into the goal</source>
-        <translation type="unfinished"></translation>
+        <translation>Mete la bola en la meta</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="11"/>
         <source>Kick the ball into the black hole on the right</source>
-        <translation type="unfinished"></translation>
+        <translation>Empuja la bola dentro del agujero negro de la derecha</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="13"/>
         <source>Point the mouse and click on the ball, to set the speed and direction of the ball. The closer you click to the center, the slower the ball moves.</source>
-        <translation type="unfinished"></translation>
+        <translation>Apunta y pulsa en la bola para establecer su velocidad y dirección. Cuanto más cerca del centro pulses, más lenta se moverá la bola.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="5"/>
@@ -1183,7 +1183,7 @@ A partir del nivel 14, el modo rápido estará activado automáticamente. Si qui
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the prime numbers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Guía al masticador de números a todos los números primos.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="17"/>
@@ -1203,28 +1203,28 @@ A partir del nivel 14, el modo rápido estará activado automáticamente. Si qui
     <message>
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the multiples of the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Guía al masticador de números a todos los múltiplos del número de la parte superior de la pantalla.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="17"/>
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="17"/>
         <source>Learn about multiples and factors.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aprende acerca de múltiplos y factores.</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="10"/>
         <source>Count how many items are under the magic hat</source>
-        <translation type="unfinished"></translation>
+        <translation>Cuenta cuántos elementos hay bajo el sombrero mágico</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="11"/>
         <source>Learn addition</source>
-        <translation type="unfinished"></translation>
+        <translation>Aprende la suma</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="13"/>
         <source>Click on the hat to open or close it. Under the hat, how many stars can you see moving around? Count carefully. :) Click in the bottom-right area to input your answer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pulsa sobre el sombrero para abrirlo o cerrarlo. Bajo el sombrero, ¿cuántas estrellas puedes ver moviéndose? Cuenta con cuidado. :) Pulsa en el área abajo a la derecha para poner tu respuesta.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="9"/>
@@ -1234,12 +1234,12 @@ A partir del nivel 14, el modo rápido estará activado automáticamente. Si qui
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="10"/>
         <source>Guide the Number Muncher to the expressions that equal the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Guía al masticador de números a las expresiones que sean iguales al número de la parte superior de la pantalla.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="11"/>
         <source>Practice addition, multiplication, division and subtraction.</source>
-        <translation type="unfinished"></translation>
+        <translation>Practica la adición, la multiplicación, la división y la substracción.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="13"/>
@@ -1265,7 +1265,7 @@ A partir del nivel 14, el modo rápido estará activado automáticamente. Si qui
     <message>
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the factors of the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Guía al masticador de números a todos los factores del número en la parte superior de la pantalla.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="9"/>
@@ -1275,12 +1275,46 @@ A partir del nivel 14, el modo rápido estará activado automáticamente. Si qui
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="10"/>
         <source>Guide the Number Muncher to the all the expressions that do not equal the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Guía al masticador de números a todas las expresiones que no sean iguales al número en la parte superior de la pantalla.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="11"/>
         <source>Practice addition, subtraction, multiplication and division.</source>
-        <translation type="unfinished"></translation>
+        <translation>Practica la adición, substracción, multiplicación y división.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="9"/>
+        <source>Numbers with pairs of dice</source>
+        <translation>Números con parejas de dados</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="10"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="10"/>
+        <source>Count the number of dots on dice before they reach the ground</source>
+        <translation>Cuenta el número de puntos en un dado antes de que llegue al suelo</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="11"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="11"/>
+        <source>In a limited time, count the number of dots</source>
+        <translation>En un tiempo limitado, cuenta la cantidad de puntos</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="12"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="12"/>
+        <source>Counting skills</source>
+        <translation>Habilidad de contar</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="13"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="13"/>
+        <source>With the keyboard, type the number of dots you see on the falling dice.</source>
+        <translation>Con el teclado, escribe el número de puntos en el dado que cae.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="9"/>
+        <source>Numbers With Dice</source>
+        <translation>Números con dados</translation>
     </message>
 </context>
 <context>
@@ -1770,7 +1804,7 @@ Pablo G. del Campo &lt;pablodc@bigfoot.com&gt;, 2003</translation>
     <message>
         <location filename="../src/activities/gnumch-equality/Warning.qml" line="62"/>
         <source>1 is not a prime number.</source>
-        <translation type="unfinished"></translation>
+        <translation>1 no es un número primo.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/Warning.qml" line="72"/>
@@ -2314,22 +2348,22 @@ Pablo G. del Campo &lt;pablodc@bigfoot.com&gt;, 2003</translation>
 <context>
     <name>core</name>
     <message>
-        <location filename="../src/core/core.js" line="203"/>
+        <location filename="../src/core/core.js" line="204"/>
         <source>Missing sound files!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="204"/>
+        <location filename="../src/core/core.js" line="205"/>
         <source>This activity makes use of language specific sound files, that are not yet installed on your system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="205"/>
+        <location filename="../src/core/core.js" line="206"/>
         <source>For downloading the needed sound files go to the preferences dialog.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="217"/>
+        <location filename="../src/core/core.js" line="218"/>
         <source>Download in progress.&lt;br/&gt;&apos;Abort&apos; it to quit immediately.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2510,6 +2544,21 @@ Pablo G. del Campo &lt;pablodc@bigfoot.com&gt;, 2003</translation>
         <source>You are running GCompris for the first time.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../src/core/main.qml" line="55"/>
+        <source>You should verify that your application settings especially your language is set correctly, and that all language specific sound files are installed. You can do this in the Preferences Dialog.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/main.qml" line="57"/>
+        <source>Your current locale is &apos;%1&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/main.qml" line="59"/>
+        <source>Have Fun!</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>money</name>
@@ -2519,7 +2568,7 @@ Pablo G. del Campo &lt;pablodc@bigfoot.com&gt;, 2003</translation>
         <translation>Pulsa en las monedas o los billetes en la parte de abajo de la pantalla para pagar. Si quieres quitar una moneda o billete, pulsa en ella en el área superior de la pantalla.</translation>
     </message>
     <message>
-        <location filename="../src/activities/money/money.js" line="671"/>
+        <location filename="../src/activities/money/money.js" line="702"/>
         <source>Tux just bought some items in your shop.
 He gives you %1, please give back his change.</source>
         <translation type="unfinished"></translation>

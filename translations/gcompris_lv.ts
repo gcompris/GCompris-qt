@@ -145,12 +145,12 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="10"/>
         <source>Arrange four coins in a row</source>
-        <translation type="unfinished"></translation>
+        <translation>Izkārto četras monētas vienā rindā</translation>
     </message>
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="11"/>
         <source>Create a line of 4 pieces either horizontally (lying down), vertically (standing up) or diagonally.</source>
-        <translation type="unfinished"></translation>
+        <translation>Izveido līniju no 4 monētām vai nu horizontāli (guļus), vertikāli (stāvus), vai pa diagonāli.</translation>
     </message>
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="12"/>
@@ -166,7 +166,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="13"/>
         <source>Click the position in the line where you want to drop a piece. You can also use the arrow keys to move the piece left or right, and the down or space key to drop a piece.</source>
-        <translation type="unfinished"></translation>
+        <translation>Noklikšķi vietā, kur vēlies novietot objektu. Tu vari izmantot arī virziena taustiņus, lai norādītu, kur novietot objektu. Uz leju un atstarpes (garais) taustiņš paredzēts objekta novietošanai.</translation>
     </message>
     <message>
         <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="13"/>
@@ -1087,47 +1087,47 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="9"/>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="9"/>
         <source>The magician hat</source>
-        <translation type="unfinished"></translation>
+        <translation>Burvju cepure</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="10"/>
         <source>Count how many items are under the magic hat after some have got away</source>
-        <translation type="unfinished"></translation>
+        <translation>Saskaiti cik priekšmetu ir zem burvju cepures pēc tam, kad daži no tās aizkļuva prom</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="11"/>
         <source>Learn subtraction</source>
-        <translation type="unfinished"></translation>
+        <translation>Apgūsti atņemšanu</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="12"/>
         <source>Subtraction</source>
-        <translation type="unfinished"></translation>
+        <translation>Atņemšana</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="13"/>
         <source>Look at the magician, he tells the number of stars that are under his magic hat. Then, click on the hat to open it. A few stars escape. Click again on the hat to close it. You have to count how many are still under the hat. Click on the bottom right area to answer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Paskaties uz burvju mākslinieku, viņš tev saka zvaigžņu skaitu kas ir zem viņa burvju cepures. Pēc tam klikšķini uz cepures, lai to atvērtu. Dažas zvaigznes izbēgs. Klikšķini vēlreiz uz cepures, lai to aizvērtu. Tev tagad ir jāsaskaita cik zvaigžņu vēl ir zem cepures. Klikšķini apakšā labajā pusē, lai uzzinātu atbildi.</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="9"/>
         <source>The football game</source>
-        <translation type="unfinished"></translation>
+        <translation>Futbola spēle</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="10"/>
         <source>Kick the ball into the goal</source>
-        <translation type="unfinished"></translation>
+        <translation>Iesper bumbu vārtos</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="11"/>
         <source>Kick the ball into the black hole on the right</source>
-        <translation type="unfinished"></translation>
+        <translation>Sper bumbu uz melno caurumu labajā pusē</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="13"/>
         <source>Point the mouse and click on the ball, to set the speed and direction of the ball. The closer you click to the center, the slower the ball moves.</source>
-        <translation type="unfinished"></translation>
+        <translation>Notēmē ar peli un noklikšķi uz bumbas, lai piešķirtu ātrumu un virzienu bumbai. Jo tuvāk bumbas centram klikšķināsi, jo lēnāk tā kustēsies.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="5"/>
@@ -1157,7 +1157,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the prime numbers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aizved skaitļu grauzēju pie visiem pirmskaitļiem.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="17"/>
@@ -1177,28 +1177,28 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the multiples of the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aizved skaitļu grauzēju pie visiem skaitļa, kas redzams ekrāna augšā, dalāmajiem.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="17"/>
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="17"/>
         <source>Learn about multiples and factors.</source>
-        <translation type="unfinished"></translation>
+        <translation>Uzzini par dalāmajiem un reizinātājiem.</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="10"/>
         <source>Count how many items are under the magic hat</source>
-        <translation type="unfinished"></translation>
+        <translation>Saskaiti, cik priekšmetu ir zem burvju cepures</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="11"/>
         <source>Learn addition</source>
-        <translation type="unfinished"></translation>
+        <translation>Mācies saskaitīšanu</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="13"/>
         <source>Click on the hat to open or close it. Under the hat, how many stars can you see moving around? Count carefully. :) Click in the bottom-right area to input your answer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Klikšķini uz cepures, lai to atvērtu, lai aizvērtu. Zem cepures, cik daudz zvaigžņu tu redzi kustamies apkārt? Skaiti uzmanīgi. :) Klikšķini apakšā labajā pusē, lai ievadītu tavu atbildi.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="9"/>
@@ -1208,12 +1208,12 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="10"/>
         <source>Guide the Number Muncher to the expressions that equal the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aizved skaitļu grauzēju pie izteiksmēm, kuru rezultāts ir skaitlis ekrāna augšpusē.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="11"/>
         <source>Practice addition, multiplication, division and subtraction.</source>
-        <translation type="unfinished"></translation>
+        <translation>Trenējies skaitīt, reizināt, dalīt un atņemt.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="13"/>
@@ -1239,7 +1239,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the factors of the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aizved skaitļu grauzēju pie visiem skaitļa, kurš ir ekrāna augšā, reizinātājiem.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="9"/>
@@ -1249,12 +1249,46 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="10"/>
         <source>Guide the Number Muncher to the all the expressions that do not equal the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Aizved skaitļu grauzēju pie visām tām izteiksmēm, kuras nav vienādas ar skaitli ekrāna augšā.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="11"/>
         <source>Practice addition, subtraction, multiplication and division.</source>
-        <translation type="unfinished"></translation>
+        <translation>Trenējies skaitīšanu, atņemšanu, reizināšanu un dalīšanu.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="9"/>
+        <source>Numbers with pairs of dice</source>
+        <translation>Skaitļi ar diviem metamajiem kauliņiem</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="10"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="10"/>
+        <source>Count the number of dots on dice before they reach the ground</source>
+        <translation>Saskaiti punktus uz kauliņiem, pirms tie sasniedz zemi</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="11"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="11"/>
+        <source>In a limited time, count the number of dots</source>
+        <translation>Ierobežotā laikā saskaiti punktus</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="12"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="12"/>
+        <source>Counting skills</source>
+        <translation>Skaitīšanas prasmes</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="13"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="13"/>
+        <source>With the keyboard, type the number of dots you see on the falling dice.</source>
+        <translation>Ar tastatūras palīdzību ievadi saskaitīto punktu daudzumu uz kauliņa.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="9"/>
+        <source>Numbers With Dice</source>
+        <translation>Skaitļi ar kauliņu</translation>
     </message>
 </context>
 <context>
@@ -1742,7 +1776,7 @@ Pēteris Krišjānis</translation>
     <message>
         <location filename="../src/activities/gnumch-equality/Warning.qml" line="62"/>
         <source>1 is not a prime number.</source>
-        <translation type="unfinished"></translation>
+        <translation>1 nav pirmskaitlis.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/Warning.qml" line="72"/>
@@ -2286,22 +2320,22 @@ Pēteris Krišjānis</translation>
 <context>
     <name>core</name>
     <message>
-        <location filename="../src/core/core.js" line="203"/>
+        <location filename="../src/core/core.js" line="204"/>
         <source>Missing sound files!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="204"/>
+        <location filename="../src/core/core.js" line="205"/>
         <source>This activity makes use of language specific sound files, that are not yet installed on your system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="205"/>
+        <location filename="../src/core/core.js" line="206"/>
         <source>For downloading the needed sound files go to the preferences dialog.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="217"/>
+        <location filename="../src/core/core.js" line="218"/>
         <source>Download in progress.&lt;br/&gt;&apos;Abort&apos; it to quit immediately.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2482,6 +2516,21 @@ Pēteris Krišjānis</translation>
         <source>You are running GCompris for the first time.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../src/core/main.qml" line="55"/>
+        <source>You should verify that your application settings especially your language is set correctly, and that all language specific sound files are installed. You can do this in the Preferences Dialog.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/main.qml" line="57"/>
+        <source>Your current locale is &apos;%1&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/main.qml" line="59"/>
+        <source>Have Fun!</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>money</name>
@@ -2491,7 +2540,7 @@ Pēteris Krišjānis</translation>
         <translation>Spied uz monētām vai papīra naudas ekrāna lejasdaļā, lai samaksātu. Ja tu vēlies aizvākt monētu vai banknoti, nospied uz tās augšējā ekrāna daļā.</translation>
     </message>
     <message>
-        <location filename="../src/activities/money/money.js" line="671"/>
+        <location filename="../src/activities/money/money.js" line="702"/>
         <source>Tux just bought some items in your shop.
 He gives you %1, please give back his change.</source>
         <translation type="unfinished"></translation>

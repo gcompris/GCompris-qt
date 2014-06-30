@@ -154,12 +154,12 @@ Ur wech dizoloet ur c&apos;houblad kartennoù e vo tennet kuit. Ur wech tennet k
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="10"/>
         <source>Arrange four coins in a row</source>
-        <translation type="unfinished"></translation>
+        <translation>Sav ur renkad 4 fezh a-serzh, a-zremm, a-veskell</translation>
     </message>
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="11"/>
         <source>Create a line of 4 pieces either horizontally (lying down), vertically (standing up) or diagonally.</source>
-        <translation type="unfinished"></translation>
+        <translation>Krouiñ ur renkad 4 fezh a-zremm, a-serzh pe a-veskell.</translation>
     </message>
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="12"/>
@@ -175,7 +175,11 @@ Ur wech dizoloet ur c&apos;houblad kartennoù e vo tennet kuit. Ur wech tennet k
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="13"/>
         <source>Click the position in the line where you want to drop a piece. You can also use the arrow keys to move the piece left or right, and the down or space key to drop a piece.</source>
-        <translation type="unfinished"></translation>
+        <translation>Klik war ar bann a fell dit lakaat da gouezhañ ur pezh en e foñs.
+
+Betek ar foñs ez ay ar pezh pe betek ur pezh bet lakaet a-raok.
+
+Gant ar biroù kleiz ha dehou e vez graet ivez evit dilec&apos;hiañ ar pezh hag ar stokell izel pe ar barrenn esaouiñ evit lakaat ar pezh da gouezhañ.</translation>
     </message>
     <message>
         <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="13"/>
@@ -1138,47 +1142,55 @@ Ur wech graet, klik war an afell Mat eo pe gra gant ar stokell &apos;Enankañ&ap
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="9"/>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="9"/>
         <source>The magician hat</source>
-        <translation type="unfinished"></translation>
+        <translation>Tog an hudour</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="10"/>
         <source>Count how many items are under the magic hat after some have got away</source>
-        <translation type="unfinished"></translation>
+        <translation>Kont pet elfennoù ez eus dindan an tok ur wech ma vo aet kuit un darn anezho.</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="11"/>
         <source>Learn subtraction</source>
-        <translation type="unfinished"></translation>
+        <translation>Deskiñ lemel</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="12"/>
         <source>Subtraction</source>
-        <translation type="unfinished"></translation>
+        <translation>Lamadur</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="13"/>
         <source>Look at the magician, he tells the number of stars that are under his magic hat. Then, click on the hat to open it. A few stars escape. Click again on the hat to close it. You have to count how many are still under the hat. Click on the bottom right area to answer.</source>
-        <translation type="unfinished"></translation>
+        <translation>An hudour a lavar pet steredenn ez eus dindan e dog.
+
+Klik war tog an hudour evit e zigeriñ.
+
+Steredennoù a ya kuit.
+
+Pet a chom en tog ?
+
+Klik war ar steredennoù en traoñ a-gleiz evit reiñ da respont.</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="9"/>
         <source>The football game</source>
-        <translation type="unfinished"></translation>
+        <translation>C&apos;hoari ar vell-droad</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="10"/>
         <source>Kick the ball into the goal</source>
-        <translation type="unfinished"></translation>
+        <translation>Kas ar vell er pal</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="11"/>
         <source>Kick the ball into the black hole on the right</source>
-        <translation type="unfinished"></translation>
+        <translation>Kas ar vell en toull du war an tu dehou</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="13"/>
         <source>Point the mouse and click on the ball, to set the speed and direction of the ball. The closer you click to the center, the slower the ball moves.</source>
-        <translation type="unfinished"></translation>
+        <translation>Laka reti al logodenn war ar vell ha klik warni evit reiñ dezhi an tizh hag ar roud. Tostoc&apos;h ouzh kreiz ar vell e vo ar reti, gorrekoc&apos;h e vo ar vell.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="5"/>
@@ -1208,7 +1220,7 @@ Ur wech graet, klik war an afell Mat eo pe gra gant ar stokell &apos;Enankañ&ap
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the prime numbers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Stur an Debrer niveroù war an holl niveroù kentañ.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="17"/>
@@ -1228,28 +1240,30 @@ Ur wech graet, klik war an afell Mat eo pe gra gant ar stokell &apos;Enankañ&ap
     <message>
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the multiples of the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Stur an Debrer niveroù davit holl lieskementoù an niver kinniget e krec&apos;h ar skramm.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="17"/>
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="17"/>
         <source>Learn about multiples and factors.</source>
-        <translation type="unfinished"></translation>
+        <translation>Deskiñ da anaout al lieskementoù hag ar rannerioù.</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="10"/>
         <source>Count how many items are under the magic hat</source>
-        <translation type="unfinished"></translation>
+        <translation>Kont pet elfenn ez eus dindan an tog hudus</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="11"/>
         <source>Learn addition</source>
-        <translation type="unfinished"></translation>
+        <translation>Deskiñ sammañ</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="13"/>
         <source>Click on the hat to open or close it. Under the hat, how many stars can you see moving around? Count carefully. :) Click in the bottom-right area to input your answer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Evit digeriñ an tog, klik warnañ. Dindan an tog, pet steredenn a welez o fiñval ?
+
+Kont aketus :) ha klik war ar steredennoù en traoñ a-gleiz evit reiñ da respont.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="9"/>
@@ -1259,12 +1273,12 @@ Ur wech graet, klik war an afell Mat eo pe gra gant ar stokell &apos;Enankañ&ap
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="10"/>
         <source>Guide the Number Muncher to the expressions that equal the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Stur an debrer niveroù davit ar riñvenn o vezañ par d&apos;an niver kinniget e krec&apos;h ar skramm.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="11"/>
         <source>Practice addition, multiplication, division and subtraction.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pleustriñ war ar sammadur, al liesadur, ar rannadur hag al lamadur.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="13"/>
@@ -1290,7 +1304,7 @@ Ur wech graet, klik war an afell Mat eo pe gra gant ar stokell &apos;Enankañ&ap
     <message>
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the factors of the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Stur an debrer niveroù davit holl rannerioù an niver kinniget e krec&apos;h ar skramm.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="9"/>
@@ -1300,12 +1314,46 @@ Ur wech graet, klik war an afell Mat eo pe gra gant ar stokell &apos;Enankañ&ap
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="10"/>
         <source>Guide the Number Muncher to the all the expressions that do not equal the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Stur an Debrer niveroù war an holl riñvennoù nad int ket par d&apos;an niver kinniget e krec&apos;h ar skramm.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="11"/>
         <source>Practice addition, subtraction, multiplication and division.</source>
-        <translation type="unfinished"></translation>
+        <translation>Pleustriñ war ar sammadur, al liesadur, ar rannadur hag al lamadur.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="9"/>
+        <source>Numbers with pairs of dice</source>
+        <translation>An niveroù gant daou ziñs</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="10"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="10"/>
+        <source>Count the number of dots on dice before they reach the ground</source>
+        <translation>Kont an niver a bikoù war an diñsoù kent ma tizhint an douar.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="11"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="11"/>
+        <source>In a limited time, count the number of dots</source>
+        <translation>En ur pad bevennet, kont an niver a bikoù.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="12"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="12"/>
+        <source>Counting skills</source>
+        <translation>Gouzout kontañ</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="13"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="13"/>
+        <source>With the keyboard, type the number of dots you see on the falling dice.</source>
+        <translation>Gant ar c&apos;hlavier, biziata an niver a bikoù a welez war an diñs o kouezhañ.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="9"/>
+        <source>Numbers With Dice</source>
+        <translation>An niveroù gant an diñsoù</translation>
     </message>
 </context>
 <context>
@@ -1790,7 +1838,7 @@ to make the ball go in a straight line.</source>
     <message>
         <location filename="../src/activities/gnumch-equality/Warning.qml" line="62"/>
         <source>1 is not a prime number.</source>
-        <translation type="unfinished"></translation>
+        <translation>1 n&apos;eo ket un niver kentañ.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/Warning.qml" line="72"/>
@@ -2334,22 +2382,22 @@ to make the ball go in a straight line.</source>
 <context>
     <name>core</name>
     <message>
-        <location filename="../src/core/core.js" line="203"/>
+        <location filename="../src/core/core.js" line="204"/>
         <source>Missing sound files!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="204"/>
+        <location filename="../src/core/core.js" line="205"/>
         <source>This activity makes use of language specific sound files, that are not yet installed on your system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="205"/>
+        <location filename="../src/core/core.js" line="206"/>
         <source>For downloading the needed sound files go to the preferences dialog.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="217"/>
+        <location filename="../src/core/core.js" line="218"/>
         <source>Download in progress.&lt;br/&gt;&apos;Abort&apos; it to quit immediately.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2530,6 +2578,21 @@ to make the ball go in a straight line.</source>
         <source>You are running GCompris for the first time.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../src/core/main.qml" line="55"/>
+        <source>You should verify that your application settings especially your language is set correctly, and that all language specific sound files are installed. You can do this in the Preferences Dialog.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/main.qml" line="57"/>
+        <source>Your current locale is &apos;%1&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/main.qml" line="59"/>
+        <source>Have Fun!</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>money</name>
@@ -2539,7 +2602,7 @@ to make the ball go in a straight line.</source>
         <translation>Klik war ar pezhioù hag ar bilhedoù e traoñ ar bajenn evit paeañ. Mar fell dit tennañ ur pezh kuit, klik warnañ war ar maez e krec&apos;h.</translation>
     </message>
     <message>
-        <location filename="../src/activities/money/money.js" line="671"/>
+        <location filename="../src/activities/money/money.js" line="702"/>
         <source>Tux just bought some items in your shop.
 He gives you %1, please give back his change.</source>
         <translation type="unfinished"></translation>

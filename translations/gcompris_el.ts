@@ -145,12 +145,12 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="10"/>
         <source>Arrange four coins in a row</source>
-        <translation type="unfinished"></translation>
+        <translation>Βάλε τις τέσσερις μπάλες σε μια γραμμή</translation>
     </message>
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="11"/>
         <source>Create a line of 4 pieces either horizontally (lying down), vertically (standing up) or diagonally.</source>
-        <translation type="unfinished"></translation>
+        <translation>Κατασκεύασε μια γραμμή με τέσσερα κομμάτια, είτε οριζόντια (ξαπλωμένη), κάθετη (όρθια) ή διαγώνια.</translation>
     </message>
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="12"/>
@@ -166,7 +166,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     <message>
         <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="13"/>
         <source>Click the position in the line where you want to drop a piece. You can also use the arrow keys to move the piece left or right, and the down or space key to drop a piece.</source>
-        <translation type="unfinished"></translation>
+        <translation>Κάνε κλικ στο σημείο της γραμμής που θέλεις να αφήσεις το κομμάτι. Μπορείς, επίσης, να χρησιμοποιήσεις τα κουμπιά με τα βελάκια για να μετακινήσεις ένα κομμάτι αριστερά ή δεξιά, και το κάτω κουμπί ή το κουμπί διαστήματος (space bar) για να αφήσεις το κομμάτι.</translation>
     </message>
     <message>
         <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="13"/>
@@ -1115,47 +1115,47 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="9"/>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="9"/>
         <source>The magician hat</source>
-        <translation type="unfinished"></translation>
+        <translation>Το καπέλο του μάγου</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="10"/>
         <source>Count how many items are under the magic hat after some have got away</source>
-        <translation type="unfinished"></translation>
+        <translation>Μέτρησε πόσα αντικείμενα είναι κάτω από το μαγικό καπέλο (αφαίρεση)</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="11"/>
         <source>Learn subtraction</source>
-        <translation type="unfinished"></translation>
+        <translation>Μαθαίνω αφαίρεση</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="12"/>
         <source>Subtraction</source>
-        <translation type="unfinished"></translation>
+        <translation>Αφαίρεση</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="13"/>
         <source>Look at the magician, he tells the number of stars that are under his magic hat. Then, click on the hat to open it. A few stars escape. Click again on the hat to close it. You have to count how many are still under the hat. Click on the bottom right area to answer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Κάνε κλικ στο καπέλο για να το ανοίξεις. Μέτρησε προσεκτικά τα αστεράκια που κινούνται και μπαίνουν κάτω από το καπέλο, αλλά και όσα βγαίνουν και τοποθετούνται στη δεύτερη γραμμή. Τη διαφορά των δύο αριθμών, επέλεξέ την με κλικ στα αστεράκια στην κάτω γραμμή δεξιά. Ανάλογα με το επίπεδο δυσκολίας, τα χρώματα των αστεριών μπορεί να είναι 1, 2 ή και 3, οπότε θα πρέπει να επιλέξεις από κάθε χρώμα, τόσα αστεράκια όσα αντιστοιχούν στη διαφορά των αστεριών κάθε χρώματος.</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="9"/>
         <source>The football game</source>
-        <translation type="unfinished"></translation>
+        <translation>Παιχνίδι ποδοσφαίρου</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="10"/>
         <source>Kick the ball into the goal</source>
-        <translation type="unfinished"></translation>
+        <translation>Κλώτσησε τη μπάλα για να μπει στο τέρμα</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="11"/>
         <source>Kick the ball into the black hole on the right</source>
-        <translation type="unfinished"></translation>
+        <translation>Κλώτσησε τη μπάλα για να μπει στη μαύρη τρύπα στα δεξιά</translation>
     </message>
     <message>
         <location filename="../src/activities/football/ActivityInfo.qml" line="13"/>
         <source>Point the mouse and click on the ball, to set the speed and direction of the ball. The closer you click to the center, the slower the ball moves.</source>
-        <translation type="unfinished"></translation>
+        <translation>Σημάδεψε και κάνε κλικ στη μπάλα για να δώσεις την ταχύτητα και την κατεύθυνση. Όσο πιο κοντά κάνεις κλικ στο κέντρο της μπάλας τόσο πιο αργά κινείται.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="5"/>
@@ -1185,7 +1185,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the prime numbers.</source>
-        <translation type="unfinished"></translation>
+        <translation>Οδήγησε τον Αριθμοφάγο σε όλους τους πρώτους αριθμούς.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="17"/>
@@ -1205,28 +1205,28 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the multiples of the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Οδήγησε τον Αριθμοφάγο σε όλα τα πολλαπλάσια του αριθμού που εμφανίζεται στο πάνω μέρος της οθόνης.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="17"/>
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="17"/>
         <source>Learn about multiples and factors.</source>
-        <translation type="unfinished"></translation>
+        <translation>Μάθε για τα πολλαπλάσια και τους διαιρέτες.</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="10"/>
         <source>Count how many items are under the magic hat</source>
-        <translation type="unfinished"></translation>
+        <translation>Μέτρησε πόσα αντικείμενα είναι κάτω από το μαγικό καπέλο (πρόσθεση)</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="11"/>
         <source>Learn addition</source>
-        <translation type="unfinished"></translation>
+        <translation>Μαθαίνω πρόσθεση</translation>
     </message>
     <message>
         <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="13"/>
         <source>Click on the hat to open or close it. Under the hat, how many stars can you see moving around? Count carefully. :) Click in the bottom-right area to input your answer.</source>
-        <translation type="unfinished"></translation>
+        <translation>Κάνε κλικ στο καπέλο για να το ανοίξεις. Μέτρησε προσεκτικά τα αστεράκια που κινούνται και μπαίνουν κάτω από το καπέλο. Με το ποντίκι κάνε κλικ σε τόσα αστεράκια, όσα μπήκαν κάτω από το καπέλο. Ανάλογα με το επίπεδο δυσκολίας, τα χρώματα των αστεριών μπορεί να είναι 1, 2 ή και 3, οπότε θα πρέπει να επιλέξεις από κάθε χρώμα, όσα αστεράκια μπήκαν κάτω από το καπέλο.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="9"/>
@@ -1236,12 +1236,12 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="10"/>
         <source>Guide the Number Muncher to the expressions that equal the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Οδήγησε τον Αριθμοφάγο στις αριθμητικές πράξεις των οποίων το αποτέλεσμα ισούται με τον αριθμό στο επάνω μέρος της οθόνης.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="11"/>
         <source>Practice addition, multiplication, division and subtraction.</source>
-        <translation type="unfinished"></translation>
+        <translation>Εξάσκηση στην πρόσθεση, αφαίρεση, διαίρεση και πολλαπλασιασμό.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="13"/>
@@ -1267,7 +1267,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="16"/>
         <source>Guide the Number Muncher to all the factors of the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Οδήγησε τον Αριθμοφάγο σε όλους τους διαιρέτες του αριθμού που εμφανίζεται στο επάνω μέρος της οθόνης.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="9"/>
@@ -1277,12 +1277,46 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="10"/>
         <source>Guide the Number Muncher to the all the expressions that do not equal the number at the top of the screen.</source>
-        <translation type="unfinished"></translation>
+        <translation>Οδήγησε τον Αριθμοφάγο σε όλες τις αριθμητικές παραστάσεις, το αποτέλεσμα των οποίων δεν ισούται με τον αριθμό που εμφανίζεται στο πάνω μέρος της οθόνης.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="11"/>
         <source>Practice addition, subtraction, multiplication and division.</source>
-        <translation type="unfinished"></translation>
+        <translation>Εξάσκηση στην πρόσθεση, αφαίρεση, διαίρεση και στον πολλαπλασιασμό.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="9"/>
+        <source>Numbers with pairs of dice</source>
+        <translation>Ζευγάρια ζαριών με αριθμούς</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="10"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="10"/>
+        <source>Count the number of dots on dice before they reach the ground</source>
+        <translation>Μέτρησε τις κουκίδες στα ζάρια πριν φτάσουν στο έδαφος</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="11"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="11"/>
+        <source>In a limited time, count the number of dots</source>
+        <translation>Σε περιορισμένο χρόνο, μέτρησε τον αριθμό των κουκκίδων</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="12"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="12"/>
+        <source>Counting skills</source>
+        <translation>Βασικές ικανότητες αρίθμησης</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="13"/>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="13"/>
+        <source>With the keyboard, type the number of dots you see on the falling dice.</source>
+        <translation>Πρόσθεσε τις κουκκίδες των δύο ζαριών που πέφτουν και πληκτρολόγησε το άθροισμα.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="9"/>
+        <source>Numbers With Dice</source>
+        <translation>Ζάρια με αριθμούς</translation>
     </message>
 </context>
 <context>
@@ -1771,7 +1805,7 @@ to make the ball go in a straight line.</source>
     <message>
         <location filename="../src/activities/gnumch-equality/Warning.qml" line="62"/>
         <source>1 is not a prime number.</source>
-        <translation type="unfinished"></translation>
+        <translation>Το 1 δεν είναι πρώτος αριθμός.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-equality/Warning.qml" line="72"/>
@@ -2315,22 +2349,22 @@ to make the ball go in a straight line.</source>
 <context>
     <name>core</name>
     <message>
-        <location filename="../src/core/core.js" line="203"/>
+        <location filename="../src/core/core.js" line="204"/>
         <source>Missing sound files!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="204"/>
+        <location filename="../src/core/core.js" line="205"/>
         <source>This activity makes use of language specific sound files, that are not yet installed on your system.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="205"/>
+        <location filename="../src/core/core.js" line="206"/>
         <source>For downloading the needed sound files go to the preferences dialog.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/core.js" line="217"/>
+        <location filename="../src/core/core.js" line="218"/>
         <source>Download in progress.&lt;br/&gt;&apos;Abort&apos; it to quit immediately.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2511,6 +2545,21 @@ to make the ball go in a straight line.</source>
         <source>You are running GCompris for the first time.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <location filename="../src/core/main.qml" line="55"/>
+        <source>You should verify that your application settings especially your language is set correctly, and that all language specific sound files are installed. You can do this in the Preferences Dialog.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/main.qml" line="57"/>
+        <source>Your current locale is &apos;%1&apos;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../src/core/main.qml" line="59"/>
+        <source>Have Fun!</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>money</name>
@@ -2520,7 +2569,7 @@ to make the ball go in a straight line.</source>
         <translation>Για να πληρώσεις κάνε κλικ στα κέρματα ή στα χαρτονομίσματα στο κάτω μέρος της οθόνης. Αν θες να πάρεις πίσω ένα κέρμα ή ένα χαρτονόμισμα, κάνε κλικ στο πάνω μέρος της οθόνης.</translation>
     </message>
     <message>
-        <location filename="../src/activities/money/money.js" line="671"/>
+        <location filename="../src/activities/money/money.js" line="702"/>
         <source>Tux just bought some items in your shop.
 He gives you %1, please give back his change.</source>
         <translation type="unfinished"></translation>
