@@ -113,7 +113,7 @@ ActivityBase {
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
-            anchors.bottom: parent.bottom
+            anchors.bottom: keyboard.top
         }
         
         VirtualKeyboard {
