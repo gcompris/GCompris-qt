@@ -29,14 +29,13 @@ import "gletters.js" as Activity
 
 Item {
     id: word
-    
-    width: image ? wordImage.width : wordText.width
-    height: image ? wordImage.width : wordText.height
-    
+
+    width: wordText.width
+    height: wordText.height
+
     /// index into text.split("") where next typed match should occur
     property int unmatchedIndex: 0;
     property alias text: wordText.text;
-    property alias image: wordImage.source;
     property bool wonState: false
 
     signal won
@@ -47,7 +46,7 @@ Item {
         dropShadow.opacity = 0
         fadeout.restart();
     }
-    
+
     Component.onCompleted: {
         // make sure our word is completely visible
         if (x + width > parent.width)
@@ -61,11 +60,11 @@ Item {
             highlightedWordText.text = wordText.text.substring(0, unmatchedIndex);
             /* Need to add the ZERO WIDTH JOINER to force joined char in Arabic and
              * Hangul: http://en.wikipedia.org/wiki/Zero-width_joiner
-             * 
+             *
              * FIXME: this works only on desktop systems, on android this
              * shifts the typed word a few pixels down. */
             if (!ApplicationInfo.isMobile)
-                highlightedWordText.text += "\u200C"; 
+                highlightedWordText.text += "\u200C";
         }
     }
 
@@ -75,7 +74,7 @@ Item {
         property: "opacity"
         to: 0
         duration: 1000
-        
+
         onStopped: Activity.deleteWord(word);
     }
 
@@ -94,28 +93,21 @@ Item {
             return false;
         }
     }
-    
+
     function startMoving(dur)
     {
         down.duration = dur;
         down.restart();
     }
-    
+
     function isCompleted()
     {
         return (unmatchedIndex === text.length);
     }
 
-    Image {
-        id: wordImage
-        // FIXME, the size should be passed from the caller
-        sourceSize.height: 106 * ApplicationInfo.ratio
-    }
-
     Text {
         id: wordText
-        
-        visible: image == ""
+
         text: ""
         font.pointSize: 35
         font.bold: true
@@ -130,9 +122,9 @@ Item {
 
         Text {
             id: highlightedWordText
-            
+
             anchors.fill: parent
-            
+
             text: ""
             font.pointSize: parent.font.pointSize
             font.bold: parent.font.pointSize
@@ -141,7 +133,7 @@ Item {
             styleColor: "white"
         }
     }
-    
+
     DropShadow {
         id: dropShadow
         anchors.fill: wordText
@@ -160,7 +152,7 @@ Item {
         property: "y"
         to: parent.height
         duration: 10000
-        
+
         onStopped: Activity.deleteWord(word);
     }
 }

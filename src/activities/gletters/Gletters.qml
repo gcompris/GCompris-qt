@@ -43,6 +43,11 @@ ActivityBase {
         return ""
     }
 
+    // Override if you want to replace texts by the domino
+    function getDominoValues(key) {
+        return []
+    }
+
     onStart: focus = true
     onStop: {}
     

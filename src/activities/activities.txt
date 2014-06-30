@@ -55,4 +55,5 @@ penalty
 planegame
 reversecount
 smallnumbers
+smallnumbers2
 wordsgame

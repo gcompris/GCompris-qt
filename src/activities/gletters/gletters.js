@@ -64,8 +64,6 @@ var currentWord = null;  // reference to the word currently typing, null if n/a
 var wordComponent = null;
 
 function start(items_, uppercaseOnly_,  _mode) {
-    console.log("Gletters activity: start in mode " + _mode);
-    
     items = items_;
     uppercaseOnly = uppercaseOnly_;
     mode = _mode;
@@ -77,8 +75,8 @@ function start(items_, uppercaseOnly_,  _mode) {
 }
 
 function stop() {
-    console.log("Gletters activity: stop");
     deleteWords();
+    wordComponent = null
     items.wordDropTimer.stop();
 }
 
@@ -90,7 +88,7 @@ function initLevel() {
         deleteWords();
         level = items.wordlist.getLevelWordList(currentLevel + 1);
         maxSubLevel = items.wordlist.getMaxSubLevel(currentLevel + 1);
-        console.log(maxSubLevel)
+
         if (maxSubLevel == 0) {
             // If level length is not set in wordlist, make sure the level doesn't get too long
             if (mode == "letter") {
@@ -225,7 +223,11 @@ function createWord()
         // if uppercaseOnly case does not matter otherwise it does
         if (uppercaseOnly)
             text = text.toLocaleUpperCase();
-        var word = wordComponent.createObject( items.background, 
+
+        var word
+
+        if(items.ourActivity.getImage(text)) {
+            word = wordComponent.createObject( items.background,
                 {
                     "text": text,
                     "image": items.ourActivity.getImage(text),
@@ -233,6 +235,25 @@ function createWord()
                     "x": Math.random() * (items.main.width - 25),
                     "y": -25,
                 });
+        } else if(items.ourActivity.getDominoValues(text)) {
+            word = wordComponent.createObject( items.background,
+                {
+                    "text": text,
+                    "dominoValues": items.ourActivity.getDominoValues(text),
+                    // assume x=width-25px for now, Word auto-adjusts onCompleted():
+                    "x": Math.random() * (items.main.width - 25),
+                    "y": -25,
+                });
+        } else {
+            word = wordComponent.createObject( items.background,
+                {
+                    "text": text,
+                    // assume x=width-25px for now, Word auto-adjusts onCompleted():
+                    "x": Math.random() * (items.main.width - 25),
+                    "y": -25,
+                });
+        }
+
         if (word === null)
             console.log("Gletters: Error creating word object");
         else {
@@ -255,7 +276,17 @@ function dropWord()
     if (wordComponent !== null)
         createWord();
     else {
-        wordComponent = Qt.createComponent("qrc:/gcompris/src/activities/gletters/Word.qml");
+        var text = items.wordlist.getRandomWord(currentLevel + 1);
+        var fallingItem
+        if(items.ourActivity.getImage(text))
+            fallingItem = "FallingImage.qml"
+        else if(items.ourActivity.getDominoValues(text).length)
+            fallingItem = "FallingDomino.qml"
+        else
+            fallingItem = "FallingWord.qml"
+
+
+        wordComponent = Qt.createComponent("qrc:/gcompris/src/activities/gletters/" + fallingItem);
         if (wordComponent.status == 1 /* Component.Ready */)
             createWord();
         else if (wordComponent.status == 3 /* Component.Error */) {
