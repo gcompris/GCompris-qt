@@ -125,6 +125,7 @@ function showMessageDialog(parent, title, text, informativeText, icon, buttonHan
         + '    title: "' + title +'"\n'
         + '    text: "' + text + '"\n'
         + '    informativeText: "' + informativeText + '"\n'
+        + '    icon: StandardIcon.Information\n'
         + ' }\n';
     //console.log("creating dialog " + qmlStr);
     
