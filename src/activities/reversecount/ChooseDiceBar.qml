@@ -56,6 +56,7 @@ Item {
             id: domino
             height: ok.height
             width: height * 2
+            isClickable: true
         }
     }
 }

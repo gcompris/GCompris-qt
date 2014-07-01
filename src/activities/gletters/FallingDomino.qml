@@ -97,6 +97,7 @@ Item {
         visible: dominoValues.length != 0
         value1: dominoValues[0]
         value2: dominoValues[1]
+        isClickable: false
 
         ParticleSystemStar {
             id: particle
