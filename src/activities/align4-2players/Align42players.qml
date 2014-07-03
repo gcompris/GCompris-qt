@@ -29,6 +29,8 @@ import GCompris 1.0
 ActivityBase {
     id: activity
 
+    property string mode: "2player"
+
     onStart: focus = true
     onStop: {}
 
@@ -60,7 +62,7 @@ ActivityBase {
             property alias bonus: bonus
         }
 
-        onStart: { Activity.start(items) }
+        onStart: { Activity.start(items, mode) }
         onStop: { Activity.stop() }
 
         ListModel {
@@ -138,7 +140,7 @@ ActivityBase {
             id: fallingPiece
             x: background.width * 0.4505
             y: - background.height * 0.019
-            state: Activity.counter % 2? "red": "green"
+            state: Activity.counter % 2? "2": "1"
             width: background.width * 0.075;
             height: background.height * 0.116
         }
