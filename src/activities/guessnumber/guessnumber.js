@@ -82,13 +82,14 @@ function setUserAnswer(value){
         return;
     }
     if(value==numberToGuess){
-        items.bonus.good("flower")
+        items.bonus.good("tux")
         items.helico.x=items.background.width
-        items.helico.y-=70
+        items.helico.y=items.background.height/2 - items.background.height/10
     }
     else {
         var diff=value/numberToGuess
         items.helico.x=items.background.width*diff
+        items.helico.y=items.background.height/2 - items.background.height/(50*diff)
     }
 }
 
