@@ -49,6 +49,8 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property alias helico: helico
+            property alias textzone: textarea
         }
 
         onStart: { Activity.start(items) }
@@ -65,6 +67,32 @@ ActivityBase {
             id: helico
             y: back.height/2
             source: "resource/tuxhelico.png"
+            Behavior on x {
+                PropertyAnimation {
+                    easing.type: Easing.OutQuad
+                    duration:  1000
+                }
+            }
+            Behavior on y {
+                PropertyAnimation {easing.type: Easing.OutQuad; duration:  1000}
+            }
+        }
+
+        AnswerArea{
+            anchors.right: back.right
+            anchors.top: back.top
+            id: answer
+        }
+
+        Text{
+            id: textarea
+            anchors.top: back.top
+            anchors.topMargin: 10
+            anchors.horizontalCenter: back.horizontalCenter
+            text: "Entrez un nombre"
+            color: "blue"
+            font.bold: true
+            font.pixelSize: 24
         }
 
         DialogHelp {

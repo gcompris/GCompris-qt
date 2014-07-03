@@ -25,6 +25,7 @@
 var currentLevel = 0
 var numberOfLevel = 4
 var items
+var numberToGuess=0
 
 function start(items_) {
     console.log("guessnumber activity: start")
@@ -40,6 +41,22 @@ function stop() {
 function initLevel() {
     console.log("guessnumber activity: create some content in my activity")
     items.bar.level = currentLevel + 1
+    items.helico.x = 0
+    items.helico.y = items.background.height/2
+    switch(currentLevel){
+    case 0: numberToGuess=getRandomInt(1,20)
+            items.textzone.text="Entrez un nombre entre 1 et 20"
+            break;
+    case 1: numberToGuess=getRandomInt(1,40)
+            items.textzone.text="Entrez un nombre entre 1 et 40"
+            break;
+    case 2:numberToGuess=getRandomInt(1,60)
+            items.textzone.text="Entrez un nombre entre 1 et 60"
+            break;
+    case 3:numberToGuess=getRandomInt(1,99)
+            items.textzone.text="Entrez un nombre entre 1 et 99"
+            break;
+    }
 }
 
 function nextLevel() {
@@ -54,4 +71,30 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
+}
+
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+function setUserAnswer(value){
+    if(value>numberToGuess){
+        return;
+    }
+    if(value==numberToGuess){
+        items.bonus.good("flower")
+        items.helico.x=items.background.width
+        items.helico.y-=70
+    }
+    else {
+        var diff=value/numberToGuess
+        items.helico.x=items.background.width*diff
+    }
+}
+
+var currentAnswerItem
+
+function registerAnswerItem(item) {
+    currentAnswerItem = item
+    item.forceActiveFocus()
 }
