@@ -150,6 +150,7 @@ ActivityBase {
             target: fallingPiece
             properties: "y"
             duration: 1500
+            alwaysRunToEnd: true
             onStopped: {
                 Activity.continueGame()
             }
@@ -185,7 +186,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home }
+            content: BarEnumContent { value: help | home | previous | next }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }

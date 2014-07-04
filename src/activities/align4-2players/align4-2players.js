@@ -32,6 +32,9 @@ var currentPiece
 var counter
 var currentPlayer
 var mode
+var weight = [[100, 50, 20, 100, 50, 20],
+              [110, 55, 20, 100, 50, 20],
+              [100, 50, 20, 110, 55, 20]];
 
 function start(items_, mode_) {
     items = items_
@@ -47,7 +50,13 @@ function stop() {
 
 function initLevel() {
 
+    if(mode === "1player") {
+        numberOfLevel = 3
+    }
+
     items.bar.level = currentLevel + 1
+
+    console.log("LEVEL --- ", items.bar.level)
 
     counter = 0
 
@@ -202,7 +211,7 @@ function alphabeta(depth, alpha, beta, player, board) {
     var value = evaluateBoard(player, player % 2? 2: 1, board)
 
 
-    if(depth === 0 || value > 5000 || value < -5000) {
+    if(depth === 0 || value === 100000 || value < -100000) {
         return value
     }
 
@@ -224,21 +233,21 @@ function alphabeta(depth, alpha, beta, player, board) {
 
             board[r][c] = "invisible"
             scores[c] = alpha;
+
+            if(beta <= alpha) break;
         }
 
-        if(depth === 2) {
+        if(depth === 4) {
             var max = -10000;
             for(var i = 0; i < scores.length; i++) {
                 if(scores[i] > max) {
                     max = scores[i]
                     nextColumn = i
-                } else if (scores[i] === max) {
-                    if(Math.random() < 0.25) { //Some random or it keeps choosing the same column
-                        nextColumn = i
-                    }
                 }
             }
         }
+
+        console.log("next column: ", nextColumn)
 
         return alpha;
 
@@ -255,14 +264,19 @@ function alphabeta(depth, alpha, beta, player, board) {
 
             board[r][c] = "invisible"
 
-            return beta;
+            if(beta <= alpha) break;
         }
+        return beta;
     }
 }
 
 function doMove(column) {
-    setPieceLocation(items.background.width * 0.1865 + column * (items.background.width * 0.0875), items.background.height * 0.5)
-    handleDrop(items.background.width * 0.1865 + column * (items.background.width * 0.0875), items.background.height * 0.5)
+    setPieceLocation(items.background.width * 0.1865 + 20 +
+                     column * (items.background.width * 0.0875),
+                     items.background.height * 0.5)
+    handleDrop(items.background.width * 0.1865 + 20 +
+               column * (items.background.width * 0.0875),
+               items.background.height * 0.5)
 }
 
 function checkLine() {
@@ -284,14 +298,18 @@ function checkLine() {
 
         if((count1 > 0) && (count2 === 0)) {
             if(count1 === 4) {
-                return 9999
+                return 10000
             }
-            score += (count1 / 3) * 1000 + (count1 / 2) * 100 + 1
+            score += ((count1 / 3) * weight[currentLevel][0] +
+                      (count1 / 2) * weight[currentLevel][1] +
+                      count1 * weight[currentLevel][2])
         } else if((count1 === 0) && (count2 > 0)) {
             if(count2 === 4) {
-                return -9999
+                return -10000
             }
-            score -= (count2 / 3) * 1000 + (count2 / 2) * 100 + 1
+            score -= ((count2 / 3) * weight[currentLevel][3] +
+                      (count2 / 2) * weight[currentLevel][4] +
+                      count2 * weight[currentLevel][5])
         }
     }
     return score
@@ -452,11 +470,11 @@ function continueGame() {
     if(counter % 2 && mode === "1player") {
         var board = getBoardFromModel()
 
-        alphabeta(2, -10000, 10000, 2, board)
+        alphabeta(4, -10000, 10000, 2, board)
         doMove(nextColumn)
     }
 
-    if(counter == 42) {
+    if(counter === 42) {
         items.bonus.bad("flower")
     }
 }
