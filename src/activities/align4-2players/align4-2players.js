@@ -160,7 +160,7 @@ function handleDrop(x, y) {
     var singleDropSize = items.background.height * 0.1358
     var column = whichColumn(x, y)
     var nextFreeStop = getNextFreeStop(column)
-    if(nextFreeStop == -1)
+    if(nextFreeStop === -1)
         return
     var destination = items.fallingPiece.y
             + singleDropSize * (nextFreeStop + 1)
@@ -270,7 +270,8 @@ function alphabeta(depth, alpha, beta, player, board) {
     }
 }
 
-function doMove(column) {
+function doMove(column, board) {
+    alphabeta(4, -10000, 10000, 2, board)
     setPieceLocation(items.background.width * 0.1865 + 20 +
                      column * (items.background.width * 0.0875),
                      items.background.height * 0.5)
@@ -458,20 +459,32 @@ function continueGame() {
     setPieceLocation(items.fallingPiece.x, items.fallingPiece.y)
 
     /* Update score if game won */
-    if(checkGameWon(parseInt(currentPiece/7), parseInt(currentPiece % 7))) {
-        if(currentPlayer === "1") {
-            items.player1_score++
-        } else {
-            items.player2_score++
+    if(mode === "2player") {
+        if(checkGameWon(parseInt(currentPiece/7), parseInt(currentPiece % 7))) {
+            if(currentPlayer === "1") {
+                items.player1_score++
+            } else {
+                items.player2_score++
+            }
+            items.bonus.good("flower")
         }
-        items.bonus.good("flower")
-    }
+    } else if(mode === "1player") {
+        if(checkGameWon(parseInt(currentPiece/7), parseInt(currentPiece % 7))) {
+            if(currentPlayer === "1") {
+                items.player1_score++
+                items.bonus.good("flower")
+            } else {
+                items.player2_score++
+                items.bonus.bad("flower")
+            }
+        }
 
-    if(counter % 2 && mode === "1player") {
-        var board = getBoardFromModel()
+        if(counter % 2) {
+            var board = getBoardFromModel()
 
-        alphabeta(4, -10000, 10000, 2, board)
-        doMove(nextColumn)
+//            alphabeta(4, -10000, 10000, 2, board)
+            doMove(nextColumn, board)
+        }
     }
 
     if(counter === 42) {

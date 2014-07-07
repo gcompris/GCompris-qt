@@ -160,6 +160,7 @@ ActivityBase {
             id: dynamic
             anchors.fill: parent
             hoverEnabled: !drop.running
+
             onPositionChanged: {
                 Activity.setPieceLocation(mouseX, mouseY)
             }
