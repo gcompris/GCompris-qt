@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg1"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   width="147.59149"
+   height="156.21884"
+   sodipodi:docbase="/home/bcoudoin/Projets/gcompris/gcompris-ressources"
+   sodipodi:docname="water_spot.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   version="1.0">
+  <defs
+     id="defs3">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective20" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.86831672"
+     inkscape:cx="160.88929"
+     inkscape:cy="-36.473643"
+     inkscape:window-width="641"
+     inkscape:window-height="719"
+     inkscape:window-x="399"
+     inkscape:window-y="25"
+     showgrid="false"
+     inkscape:current-layer="svg1" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g2393"
+     transform="matrix(0.266498,0,0,0.266498,-63.734524,-32.033353)">
+    <path
+       inkscape:export-ydpi="35.000000"
+       inkscape:export-xdpi="35.000000"
+       inkscape:export-filename="/home/bcoudoin/Projets/gcompris/gcompris/boards/images/water_spot.png"
+       sodipodi:nodetypes="ccccc"
+       id="path908"
+       d="M 693.87126,416.75979 C 693.87126,497.4344 619.05985,562.90946 526.88151,562.90946 C 434.70316,562.90946 359.89173,497.4344 359.89173,416.75979 C 359.89173,336.08516 462.53477,196.10243 524.35135,154.07245 C 591.22821,186.55016 693.87126,336.08516 693.87126,416.75979 z"
+       style="fill:#000fff;fill-opacity:0.8429119;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="35.000000"
+       inkscape:export-xdpi="35.000000"
+       inkscape:export-filename="/home/bcoudoin/Projets/gcompris/gcompris/boards/images/water_spot.png"
+       sodipodi:nodetypes="ccccc"
+       id="path1531"
+       d="M 453.71871,402.78633 C 453.71871,457.50172 521.57362,549.66973 467.42301,538.20701 C 410.74228,521.01293 369.80082,468.96442 369.80082,414.24906 C 369.80082,359.53368 427.856,262.68374 465.86721,234.17803 C 506.99,256.20517 453.71871,348.07096 453.71871,402.78633 z"
+       style="fill:#ffffff;fill-opacity:0.69731804;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="35.000000"
+       inkscape:export-xdpi="35.000000"
+       inkscape:export-filename="/home/bcoudoin/Projets/gcompris/gcompris/boards/images/water_spot.png"
+       sodipodi:nodetypes="ccccc"
+       id="path3400"
+       d="M 418.36987,634.20923 C 423.24324,668.3714 404.92247,700.37758 377.47529,705.65157 C 350.0281,710.92556 323.79692,687.48007 318.92354,653.3179 C 314.05018,619.15573 336.15729,554.00643 352.02497,532.67174 C 373.90024,542.59825 413.49649,600.04706 418.36987,634.20923 z"
+       style="fill:#250bfa;fill-opacity:0.69731804;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="35.000000"
+       inkscape:export-xdpi="35.000000"
+       inkscape:export-filename="/home/bcoudoin/Projets/gcompris/gcompris/boards/images/water_spot.png"
+       sodipodi:nodetypes="ccccc"
+       id="path3401"
+       d="M 346.01752,642.03244 C 349.32276,665.202 375.09501,700.34879 358.27861,698.59307 C 340.3626,694.55513 325.02766,674.85734 321.72241,651.68776 C 318.41719,628.5182 329.85333,584.18486 339.44963,569.93912 C 353.02503,576.9138 342.71228,618.86286 346.01752,642.03244 z"
+       style="fill:#ffffff;fill-opacity:0.69731804;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="35.000000"
+       inkscape:export-xdpi="35.000000"
+       inkscape:export-filename="/home/bcoudoin/Projets/gcompris/gcompris/boards/images/water_spot.png"
+       sodipodi:nodetypes="ccccc"
+       id="path3402"
+       d="M 788.3011,333.80192 C 799.40932,356.86078 790.03457,383.55218 767.3753,393.38095 C 744.71604,403.2097 717.31054,392.47222 706.20232,369.41337 C 695.0941,346.35451 701.05133,295.3993 710.45989,276.79471 C 731.37145,278.94674 777.19287,310.74306 788.3011,333.80192 z"
+       style="fill:#250bfa;fill-opacity:0.69731804;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="35.000000"
+       inkscape:export-xdpi="35.000000"
+       inkscape:export-filename="/home/bcoudoin/Projets/gcompris/gcompris/boards/images/water_spot.png"
+       sodipodi:nodetypes="ccccc"
+       id="path3403"
+       d="M 727.34282,355.41485 C 734.87666,371.0539 764.24751,390.16265 749.35791,392.66026 C 733.05718,393.7895 715.82631,383.27821 708.29245,367.63915 C 700.75861,352.00011 701.69429,318.12765 707.11319,305.92695 C 720.25495,307.83804 719.80896,339.77581 727.34282,355.41485 z"
+       style="fill:#ffffff;fill-opacity:0.69731804;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="35.000000"
+       inkscape:export-xdpi="35.000000"
+       inkscape:export-filename="/home/bcoudoin/Projets/gcompris/gcompris/boards/images/water_spot.png"
+       sodipodi:nodetypes="ccccc"
+       id="path3404"
+       d="M 427.51976,217.4766 C 415.54023,240.7463 384.71562,250.14087 358.71483,238.4466 C 332.71405,226.75233 321.33449,198.37577 333.31403,175.10607 C 345.29357,151.83637 395.03247,124.48177 418.71021,120.2011 C 432.7515,138.0533 439.4993,194.2069 427.51976,217.4766 z"
+       style="fill:#250bfa;fill-opacity:0.69731804;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="35.000000"
+       inkscape:export-xdpi="35.000000"
+       inkscape:export-filename="/home/bcoudoin/Projets/gcompris/gcompris/boards/images/water_spot.png"
+       sodipodi:nodetypes="ccccc"
+       id="path3405"
+       d="M 361.85479,182.97901 C 353.73,198.76103 359.18363,233.95434 345.61148,223.77821 C 332.17669,211.62792 328.35711,191.42104 336.48191,175.63899 C 344.6067,159.85696 375.36382,139.28688 390.31851,135.88704 C 398.64718,147.45757 369.97958,167.19696 361.85479,182.97901 z"
+       style="fill:#ffffff;fill-opacity:0.69731804;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="35.000000"
+       inkscape:export-xdpi="35.000000"
+       inkscape:export-filename="/home/bcoudoin/Projets/gcompris/gcompris/boards/images/water_spot.png"
+       sodipodi:nodetypes="ccccc"
+       id="path3406"
+       d="M 339.60146,413.86507 C 342.96067,444.88279 323.25593,472.71695 295.61766,475.99486 C 267.97939,479.27278 242.82202,456.75932 239.46281,425.7416 C 236.10359,394.72388 261.0508,337.25337 277.83547,318.89548 C 299.23981,329.0043 336.24225,382.84736 339.60146,413.86507 z"
+       style="fill:#250bfa;fill-opacity:0.69731804;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="35.000000"
+       inkscape:export-xdpi="35.000000"
+       inkscape:export-filename="/home/bcoudoin/Projets/gcompris/gcompris/boards/images/water_spot.png"
+       sodipodi:nodetypes="ccccc"
+       id="path3407"
+       d="M 267.01355,417.03255 C 269.29184,438.06947 293.47488,471.0932 276.76136,468.61166 C 259.05056,464.01649 244.60763,445.46083 242.32934,424.4239 C 240.05105,403.38698 253.42528,364.0857 263.6354,351.77415 C 276.88263,358.78077 264.73525,395.99562 267.01355,417.03255 z"
+       style="fill:#ffffff;fill-opacity:0.69731804;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="35.000000"
+       inkscape:export-xdpi="35.000000"
+       inkscape:export-filename="/home/bcoudoin/Projets/gcompris/gcompris/boards/images/water_spot.png"
+       sodipodi:nodetypes="ccccc"
+       id="path3408"
+       d="M 697.26081,650.59563 C 693.00507,681.50398 666.55415,703.31321 638.21856,699.27694 C 609.88298,695.24065 590.33992,666.87978 594.59567,635.97143 C 598.8514,605.06308 637.7882,555.92689 659.00774,542.53103 C 677.85239,557.90238 701.51656,619.68728 697.26081,650.59563 z"
+       style="fill:#250bfa;fill-opacity:0.69731804;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="35.000000"
+       inkscape:export-xdpi="35.000000"
+       inkscape:export-filename="/home/bcoudoin/Projets/gcompris/gcompris/boards/images/water_spot.png"
+       sodipodi:nodetypes="ccccc"
+       id="path3409"
+       d="M 624.17516,634.72635 C 621.28882,655.68909 637.28533,693.97204 621.24416,687.20928 C 604.72754,678.1399 594.88781,656.40617 597.77415,635.44341 C 600.66049,614.48066 623.61567,579.91726 636.80401,570.66048 C 648.28317,580.90027 627.06151,613.76359 624.17516,634.72635 z"
+       style="fill:#ffffff;fill-opacity:0.69731804;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="35.000000"
+       inkscape:export-xdpi="35.000000"
+       inkscape:export-filename="/home/bcoudoin/Projets/gcompris/gcompris/boards/images/water_spot.png"
+       sodipodi:nodetypes="ccccc"
+       id="path3410"
+       d="M 661.03654,143.25288 C 682.86551,156.617 689.44558,184.13099 675.72419,204.66805 C 662.00281,225.20508 633.15034,231.02659 611.32137,217.66247 C 589.49241,204.29835 566.89495,158.24103 564.72429,137.50604 C 583.46719,127.98616 639.20756,129.88876 661.03654,143.25288 z"
+       style="fill:#250bfa;fill-opacity:0.69731804;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+    <path
+       inkscape:export-ydpi="35.000000"
+       inkscape:export-xdpi="35.000000"
+       inkscape:export-filename="/home/bcoudoin/Projets/gcompris/gcompris/boards/images/water_spot.png"
+       sodipodi:nodetypes="ccccc"
+       id="path3411"
+       d="M 621.50722,194.44335 C 636.31212,203.50721 671.35165,203.6574 660.18938,213.82312 C 647.09969,223.60314 626.92196,224.10271 612.11704,215.03885 C 597.31215,205.975 579.74837,176.99685 577.69351,163.80598 C 589.77504,158.29284 606.70231,185.37951 621.50722,194.44335 z"
+       style="fill:#ffffff;fill-opacity:0.69731804;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1" />
+  </g>
+</svg>
