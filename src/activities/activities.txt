@@ -45,6 +45,7 @@ memory-math-minus
 memory-math-mult
 memory-math-mult-div
 memory-sound
+mining
 missing-letter
 money
 money_back
