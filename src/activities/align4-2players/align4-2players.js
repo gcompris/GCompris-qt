@@ -55,8 +55,7 @@ function initLevel() {
     }
 
     items.bar.level = currentLevel + 1
-
-    console.log("LEVEL --- ", items.bar.level)
+    items.dynamic.enabled = true
 
     counter = 0
 
@@ -66,6 +65,9 @@ function initLevel() {
             items.pieces.append({'stateTemp': "invisible"})
         }
     }
+
+    setPieceLocation(items.background.width * 0.4505, items.background.height * 0.5)
+    items.fallingPiece.opacity = 1
 }
 
 function nextLevel() {
@@ -80,6 +82,14 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
+}
+
+function reset() {
+    items.drop.stop()    // stop animation
+    items.pieces.clear() // Clear the board
+    items.fallingPiece.opacity = 0
+    currentLevel = (currentLevel + 1) % 3
+    initLevel()
 }
 
 function whichColumn(x, y) {
@@ -155,19 +165,31 @@ function getNextFreeStop(col) {
     return -1
 }
 
+var mutex = 1
+
 function handleDrop(x, y) {
 
-    var singleDropSize = items.background.height * 0.1358
-    var column = whichColumn(x, y)
-    var nextFreeStop = getNextFreeStop(column)
-    if(nextFreeStop === -1)
-        return
-    var destination = items.fallingPiece.y
-            + singleDropSize * (nextFreeStop + 1)
-    items.drop.to = destination
-    items.drop.duration = 1500 * ((nextFreeStop + 1) / 6)
-    currentPiece = nextFreeStop * 7 + column
-    items.drop.start()
+    if(mutex) {
+        items.dynamic.enabled = false
+
+        var singleDropSize = items.background.height * 0.1358
+        var column = whichColumn(x, y)
+        var nextFreeStop = getNextFreeStop(column)
+
+        if(nextFreeStop === -1) {
+            items.dynamic.enabled = true
+            return
+        }
+        var destination = items.fallingPiece.y
+                + singleDropSize * (nextFreeStop + 1)
+
+        items.drop.to = destination
+        items.drop.duration = 1500 * ((nextFreeStop + 1) / 6)
+        currentPiece = nextFreeStop * 7 + column
+        mutex = 0
+        items.drop.start()
+
+    }
 }
 
 function setPieceState(col, row, state) {
@@ -207,7 +229,7 @@ var nextColumn = 3
 
 
 function alphabeta(depth, alpha, beta, player, board) {
-    //var board = getBoardFromModel()
+
     var value = evaluateBoard(player, player % 2? 2: 1, board)
 
 
@@ -227,7 +249,6 @@ function alphabeta(depth, alpha, beta, player, board) {
 
 
             board[r][c] = "2"
-            //            setPieceState(c, r, player.toString())
 
             alpha = Math.max(alpha, alphabeta(depth - 1, alpha, beta, 1, board))
 
@@ -246,8 +267,6 @@ function alphabeta(depth, alpha, beta, player, board) {
                 }
             }
         }
-
-        console.log("next column: ", nextColumn)
 
         return alpha;
 
@@ -270,14 +289,18 @@ function alphabeta(depth, alpha, beta, player, board) {
     }
 }
 
-function doMove(column, board) {
+function doMove() {
+
+    var board = getBoardFromModel()
+
     alphabeta(4, -10000, 10000, 2, board)
+
     setPieceLocation(items.background.width * 0.1865 + 20 +
-                     column * (items.background.width * 0.0875),
-                     items.background.height * 0.5)
+                     nextColumn * (items.background.width * 0.0875),
+                     items.background.height * 0.2)
     handleDrop(items.background.width * 0.1865 + 20 +
-               column * (items.background.width * 0.0875),
-               items.background.height * 0.5)
+               nextColumn * (items.background.width * 0.0875),
+               items.background.height * 0.1)
 }
 
 function checkLine() {
@@ -456,37 +479,42 @@ function continueGame() {
 
     items.pieces.set(currentPiece, {"stateTemp": counter++ % 2 ? "2": "1"})
 
-    setPieceLocation(items.fallingPiece.x, items.fallingPiece.y)
-
     /* Update score if game won */
     if(mode === "2player") {
+        mutex = 1
+        items.dynamic.enabled = true
         if(checkGameWon(parseInt(currentPiece/7), parseInt(currentPiece % 7))) {
+            items.dynamic.enabled = false
+            items.fallingPiece.opacity = 0
             if(currentPlayer === "1") {
                 items.player1_score++
             } else {
                 items.player2_score++
             }
             items.bonus.good("flower")
+            items.bonus.isWin = false
         }
+
     } else if(mode === "1player") {
+        mutex = 1
+        items.dynamic.enabled = true
         if(checkGameWon(parseInt(currentPiece/7), parseInt(currentPiece % 7))) {
+            items.fallingPiece.opacity = 0
+            items.dynamic.enabled = false
             if(currentPlayer === "1") {
                 items.player1_score++
                 items.bonus.good("flower")
+                items.bonus.isWin = false
+                counter--
             } else {
                 items.player2_score++
                 items.bonus.bad("flower")
             }
         }
-
         if(counter % 2) {
-            var board = getBoardFromModel()
-
-//            alphabeta(4, -10000, 10000, 2, board)
-            doMove(nextColumn, board)
+            doMove()
         }
     }
-
     if(counter === 42) {
         items.bonus.bad("flower")
     }

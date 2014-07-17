@@ -3,8 +3,8 @@
  * Copyright (C) 2014 <YOUR NAME HERE>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   Laurent Lacheny <laurent.lacheny@wanadoo.fr> (GTK+ version)
+ *   Bharath M S <brat.197@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -26,5 +26,4 @@ import "../align4-2players"
 
 Align42players {
     mode: "1player"
-
 }

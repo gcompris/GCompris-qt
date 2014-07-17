@@ -55,7 +55,6 @@ ActivityBase {
             property alias pieces: pieces
             property alias dynamic: dynamic
             property alias drop: drop
-            property alias line: line
             property alias player1_score: player1_score.text
             property alias player2_score: player2_score.text
             property alias bar: bar
@@ -150,7 +149,6 @@ ActivityBase {
             target: fallingPiece
             properties: "y"
             duration: 1500
-            alwaysRunToEnd: true
             onStopped: {
                 Activity.continueGame()
             }
@@ -167,18 +165,13 @@ ActivityBase {
             onClicked: {
                 if(mouseX > background.width * 0.188 & mouseX < background.width * 0.8005) {
                     if(mouseY > background.height * 0.1 & mouseY < background.height * 0.935) {
+                        Activity.setPieceLocation(mouseX, mouseY)
                         Activity.handleDrop(mouseX, mouseY)
                     }
                 }
             }
         }
 
-        Rectangle {
-            id: line
-            opacity: 0.0
-            color: "red"
-            transformOrigin: Item.TopLeft
-        }
 
         DialogHelp {
             id: dialogHelp
@@ -187,11 +180,14 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | previous | next }
+            content: BarEnumContent { value: help | home | reload }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onHomeClicked: activity.home()
+            onReloadClicked: {
+                Activity.reset()
+            }
         }
 
         Bonus {
