@@ -57,7 +57,16 @@ function createLevel() {
         else
             miningItems[i] = getItem("")
     }
-    miningItems[(Math.floor(Math.random() * 12))] = getItem("sparkle")
+    // Place the sparkle
+    // The Grid is 4*4 but we skip the last line free for the bar
+    // The borders are harder to get so we allow them only on higher
+    // levels.
+    if(currentLevel < 2) {
+        var choices = [5, 6, 9, 10]
+        miningItems[choices[(Math.floor(Math.random() * 4))]] = getItem("sparkle")
+    } else {
+        miningItems[(Math.floor(Math.random() * 12))] = getItem("sparkle")
+    }
     items.mineModel = miningItems
 }
 

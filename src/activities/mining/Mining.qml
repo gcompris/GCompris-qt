@@ -61,19 +61,23 @@ ActivityBase {
         Image {
                 id: miningBg
                 source: Activity.url + "rockwall.svg"
-                sourceSize.width: parent.width * 3
-                width: parent.width * scaleFactor
-                height: parent.height * scaleFactor
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
+                // Should set a large value to load a larger svg and increase
+                // zoomed quality but it makes the image rendered black on android
+                sourceSize.width: parent.width
+                width: parent.width
+                height: parent.height
 
-                property real _MAX_SCALE: 2
-                property real scaleFactor: 1.0
+                property real _MAX_SCALE: 3
+                property real _MIN_SCALE: 1
 
                 property int level
                 property int maxLevel
 
                 Image {
                     source: Activity.url + "vertical_border.svg"
-                    sourceSize.height: parent.height * 3
+                    sourceSize.height: parent.height
                     width: parent.width * 0.05
                     anchors {
                         top: parent.top
@@ -84,7 +88,7 @@ ActivityBase {
 
                 Image {
                     source: Activity.url + "vertical_border.svg"
-                    sourceSize.height: parent.height * 3
+                    sourceSize.height: parent.height
                     width: parent.width * 0.05
                     anchors {
                         top: parent.top
@@ -95,7 +99,7 @@ ActivityBase {
 
                 Image {
                     source: Activity.url + "horizontal_border.svg"
-                    sourceSize.width: parent.width * 3
+                    sourceSize.width: parent.width
                     height: parent.height * 0.05
                     anchors {
                         top: parent.top
@@ -104,27 +108,43 @@ ActivityBase {
                     }
                 }
 
+                PinchArea {
+                    id: pinchy
+                    property real pinchscale
+                    enabled: true
+                    anchors.fill: parent
+                    onPinchStarted: pinchscale = pinch.scale
+                    onPinchUpdated: {
+                        miningBg.updateScale(pinch.scale - pinchy.pinchscale,
+                                             pinch.center.x, pinch.center.y)
+                        pinchy.pinchscale = pinch.scale
+                   }
+                }
+
                 GridView {
                     id: mineObjects
                     anchors.fill: parent
                     cellWidth: parent.width / 4
                     cellHeight: parent.height / 4
+                    interactive: false
 
                     delegate: Item {
                         width: mineObjects.cellWidth
                         height: mineObjects.cellHeight
                         Image {
                             source: Activity.url + "gold_nugget.svg"
-                            sourceSize.width: mineObjects.cellWidth * 0.2
+                            sourceSize.width: mineObjects.cellWidth * 3
+                            width: mineObjects.cellWidth * modelData.widthFactor
+                            height: mineObjects.cellHeight * modelData.widthFactor * 0.6
                             anchors.horizontalCenter: parent.horizontalCenter
                             anchors.verticalCenter: parent.verticalCenter
                             opacity: modelData.isTarget &&
-                                     miningBg.scaleFactor >= miningBg._MAX_SCALE &&
+                                     miningBg.scale === miningBg._MAX_SCALE &&
                                      !background.gotIt ? 1 : 0
                             MouseArea {
                                 anchors.fill: parent
                                 enabled: modelData.isTarget &&
-                                         miningBg.scaleFactor >= miningBg._MAX_SCALE
+                                         miningBg.scale === miningBg._MAX_SCALE
                                 onClicked: {
                                     audio.source = Activity.url + "pickaxe.ogg"
                                     audio.play()
@@ -137,7 +157,9 @@ ActivityBase {
                         Image {
                             id: cell
                             source: modelData.source
-                            sourceSize.width: mineObjects.cellWidth * modelData.widthFactor
+                            sourceSize.width: mineObjects.cellWidth * 3
+                            width: mineObjects.cellWidth * modelData.widthFactor
+                            height: mineObjects.cellHeight * modelData.widthFactor
                             anchors.horizontalCenter: parent.horizontalCenter
                             anchors.verticalCenter: parent.verticalCenter
                             rotation: modelData.rotation
@@ -179,61 +201,77 @@ ActivityBase {
                     }
                 }
 
-                MouseArea {
-                    anchors.fill: parent
-                    propagateComposedEvents: true
+                function updateOffset(x, y) {
 
-                    onWheel: {
+                    var offsetX = (miningBg.width * miningBg.scale - miningBg.width) *
+                            (miningBg.width / 2 - x) / (miningBg.width / 2)
+                    miningBg.anchors.horizontalCenterOffset = offsetX / 2
 
-                        if (wheel.angleDelta.y > 0 && parent.scaleFactor < miningBg._MAX_SCALE) {
-                            if(parent.scaleFactor <= 1) {
-                                if(wheel.x <= parent.width / 3) {
-                                    parent.anchors.left = background.left
-                                    parent.anchors.right = undefined
-                                    parent.anchors.horizontalCenter = undefined
-                                } else if(wheel.x > parent.width * 2 / 3) {
-                                    parent.anchors.left = undefined
-                                    parent.anchors.right = background.right
-                                    parent.anchors.horizontalCenter = undefined
-                                } else {
-                                    parent.anchors.left = undefined
-                                    parent.anchors.right = undefined
-                                    parent.anchors.horizontalCenter = background.horizontalCenter
-                                }
+                    var offsetY = (miningBg.height * miningBg.scale - miningBg.height) *
+                            (miningBg.height / 2 - y) / (miningBg.height / 2)
+                    miningBg.anchors.verticalCenterOffset = offsetY / 2
 
+                }
 
-                                if(wheel.y <= parent.height / 3) {
-                                    parent.anchors.top = background.top
-                                    parent.anchors.bottom = undefined
-                                    parent.anchors.verticalCenter = undefined
-                                } else if(wheel.y > parent.height * 2 / 3) {
-                                    parent.anchors.top = undefined
-                                    parent.anchors.bottom = background.bottom
-                                    parent.anchors.verticalCenter = undefined
-                                } else {
-                                    parent.anchors.top = undefined
-                                    parent.anchors.bottom = undefined
-                                    parent.anchors.verticalCenter = background.verticalCenter
-                                }
+                function updateScale(zoomDelta, x, y) {
 
+                    if (zoomDelta > 0 && miningBg.scale < miningBg._MAX_SCALE) {
+
+                        if(miningBg.scale < miningBg._MAX_SCALE - 0.1)
+                            miningBg.scale += 0.1;
+                        else
+                            miningBg.scale = miningBg._MAX_SCALE
+
+                        updateOffset(x, y)
+
+                    } else if (zoomDelta < 0) {
+                        if(miningBg.scale > miningBg._MIN_SCALE) {
+                            miningBg.scale -= 0.1;
+                            updateOffset(x, y)
+                        } else if (background.gotIt) {
+                            background.gotIt = false
+                            if(miningBg.level == miningBg.maxLevel)
+                                bonus.good("lion")
+                            else {
+                                miningBg.level++
+                                miningBg.scale = miningBg._MIN_SCALE
+                                Activity.createLevel()
                             }
-                            parent.scaleFactor += 0.2;
-                        } else if (wheel.angleDelta.y < 0) {
-                            if(parent.scaleFactor > 1) {
-                                parent.scaleFactor -= 0.2;
-                            } else if (gotIt) {
-                                gotIt = false
-                                if(miningBg.level == miningBg.maxLevel)
-                                    bonus.good("lion")
-                                else {
-                                    miningBg.level++
-                                    miningBg.scaleFactor = 1
-                                    Activity.createLevel()
-                                }
-                            }
-                        }                    
+                        }
                     }
                 }
+
+                MouseArea {
+                    anchors.fill: parent
+                    enabled: !ApplicationInfo.isMobile
+                    propagateComposedEvents: true
+
+                    onWheel: miningBg.updateScale(wheel.angleDelta.y, wheel.x, wheel.y)
+                }
+        }
+
+        Text {
+            id: instructions
+            anchors.fill: parent
+            horizontalAlignment:  Text.AlignHCenter
+            font.pointSize: 24
+            color: "white"
+            style: Text.Outline
+            styleColor: "black"
+            wrapMode: Text.WordWrap
+            maximumLineCount: 2
+
+            text: {
+                if(bar.level == 1) {
+                    if(miningBg.scale < miningBg._MAX_SCALE && !background.gotIt)
+                        return qsTr("Zoom in over the sparkle")
+                    else if(miningBg.scale == miningBg._MAX_SCALE && !background.gotIt)
+                        return qsTr("Click on the gold nugget")
+                    else if(background.gotIt)
+                        return qsTr("Zoom out")
+                }
+                return ""
+            }
         }
 
         Image {
@@ -277,8 +315,10 @@ ActivityBase {
             onHomeClicked: activity.home()
 
             onLevelChanged: {
-                miningBg.scaleFactor = 1.0
+                miningBg.scale = miningBg._MIN_SCALE
                 miningBg.level = 1
+                miningBg.anchors.horizontalCenterOffset = 0
+                miningBg.anchors.verticalCenterOffset = 0
                 switch(bar.level) {
                 case 1:
                     miningBg.maxLevel = 2
