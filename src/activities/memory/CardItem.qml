@@ -50,17 +50,18 @@ Item {
     }
 
 
-    Timer { id:timer
-            interval: 500; running: false; repeat: false
-            onTriggered: particles.emitter.burst(50)
-        }
+    Timer {
+        id:timer
+        interval: 500; running: false; repeat: false
+        onTriggered: particles.emitter.burst(50)
+    }
 
     onRotAngleChanged:  {
         if (rotAngle < 90) {
-                image.source = backPict
-            } else {
-                image.source = imagePath
-            }
+            image.source = backPict
+        } else {
+            image.source = imagePath
+        }
     }
 
     ParticleSystemStar {
@@ -68,10 +69,11 @@ Item {
         anchors.fill: parent
         clip: false
     }
-    Timer {id:animationTimer
-             interval: 750; running: false; repeat: false
-             onTriggered: theresAClick()
-         }
+    Timer {
+        id:animationTimer
+        interval: 750; running: false; repeat: false
+        onTriggered: theresAClick()
+    }
     Image {
         id: image
         width:item.width
@@ -82,23 +84,22 @@ Item {
         signal clicked()
         transform: [
             Scale {
-                    id: scaleTransform
-                    origin.x: item.width/2; origin.y: item.height/2
-                    xScale: mouseArea.containsMouse ? 1.05 : 1  // <-
-                    Behavior on xScale {  // for animation
-                        NumberAnimation { duration: 200 }
-                    }
+                id: scaleTransform
+                origin.x: item.width/2; origin.y: item.height/2
+                xScale: mouseArea.containsMouse ? 1.05 : 1  // <-
+                Behavior on xScale {  // for animation
+                    NumberAnimation { duration: 200 }
+                }
             },
             Rotation {
-                        id: rotation
-                        origin.x: item.width/2
-                        origin.y: item.height/2
-                        axis.x: 0; axis.y: 1; axis.z: 0     // set axis.y to 1 to rotate around y-axis
-                        angle: 0    // the default angle
-                        Behavior on angle {  // for animation
-                                            NumberAnimation { duration: 1000 }
-                                        }
-
+                id: rotation
+                origin.x: item.width/2
+                origin.y: item.height/2
+                axis.x: 0; axis.y: 1; axis.z: 0     // set axis.y to 1 to rotate around y-axis
+                angle: 0    // the default angle
+                Behavior on angle {  // for animation
+                    NumberAnimation { duration: 1000 }
+                }
             }
         ]
     }
@@ -107,7 +108,6 @@ Item {
         id:mouseArea
         anchors.fill: parent
         enabled: item.isBack
-
     }
 
 
@@ -132,31 +132,33 @@ Item {
     }
 
     Text {
-           id:text1
-           anchors.centerIn: parent
-           visible : rotAngle>Math.PI/2 ? true : false
-           font.family: "Helvetica"
-           font.pointSize: {Activity.column==5 ? 14 : 36/(Math.floor(Activity.column/3)+1)}/*,correction < 10 ? 10 : correction} *///awful hack to set a good font size
-           horizontalAlignment: Text.AlignHCenter
-           verticalAlignment: Text.AlignVCenter
-           color: "black"
-           property real rotAngle : image.rotAngle/180*Math.PI
-           text: textDisplayed
-           x: image.x + image.width/2 - image.width*Math.cos(rotAngle) * 0.5
-           transform: [
-               Scale {
-                    yScale: 1
-                    origin.x: 0; origin.y: 0
-                    xScale: Math.abs(Math.cos(text1.rotAngle))
-               }
-           ]
-       }
+        id:text1
+        anchors.centerIn: parent
+        visible : rotAngle>Math.PI/2 ? true : false
+        font.family: "Helvetica"
+        font.pointSize: {Activity.column==5 ? 14 : 36/(Math.floor(Activity.column/3)+1)}/*,correction < 10 ? 10 : correction} *///awful hack to set a good font size
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
+        color: "black"
+        property real rotAngle : image.rotAngle/180*Math.PI
+        text: textDisplayed
+        x: image.x + image.width/2 - image.width*Math.cos(rotAngle) * 0.5
+        transform: [
+            Scale {
+                yScale: 1
+                origin.x: 0; origin.y: 0
+                xScale: Math.abs(Math.cos(text1.rotAngle))
+            }
+        ]
+    }
 
     states : [
         State {
-          name: "hidden"; when: isFound == true
-          PropertyChanges { target: item; imageSource:item.imagePath; opacity:0 }
-          PropertyChanges { target: rotation; angle: 180 }
+            name: "hidden"; when: isFound == true
+            PropertyChanges { target: item
+                imageSource:item.imagePath
+                opacity:0 }
+            PropertyChanges { target: rotation; angle: 180 }
         },
         State {
             name:"back"; when: isBack == true
@@ -177,18 +179,22 @@ Item {
             SequentialAnimation {
                 id : hiddenAnimation
                 PauseAnimation { duration: 500 }
-                PropertyAction{
-                                    target:item; property:"transitionHiddenFinished"; value: "false"
-                                }
+                PropertyAction {
+                    target:item
+                    property:"transitionHiddenFinished"
+                    value: "false"
+                }
                 PropertyAnimation {
                     duration: 1000;
                     target: item;
                     property: "opacity";
                     to: 0
                 }
-                PropertyAction{
-                                    target:item; property:"transitionHiddenFinished"; value: "true"
-                                }
+                PropertyAction {
+                    target:item
+                    property:"transitionHiddenFinished"
+                    value: "true"
+                }
             }
         },
         Transition {
@@ -196,22 +202,24 @@ Item {
             SequentialAnimation {
                 id:returnedAnimation
 
-                PropertyAction{
-                                    target:item; property:"transitionReturnedFinished"; value: "false"
-                                }
+                PropertyAction {
+                    target:item
+                    property:"transitionReturnedFinished"
+                    value: "false"
+                }
                 PropertyAnimation {
-
                     duration: 300;
                     target: item;
                     property: "imageSource";
                     from: item.imagePath;
                     to: item.backPict;
-
+                }
+                PropertyAction {
+                    target:item
+                    property:"transitionReturnedFinished"
+                    value: "true"
+                }
             }
-                PropertyAction{
-                                    target:item; property:"transitionReturnedFinished"; value: "true"
-                                }
-        }
         },
         Transition {
             from: "back"; to : "faced" ;reversible: false
@@ -219,22 +227,24 @@ Item {
             SequentialAnimation {
                 id:facedAnimation
 
-                PropertyAction{
-                                    target:item; property:"transitionFacedFinished"; value: "false"
-                                }
+                PropertyAction {
+                    target:item
+                    property:"transitionFacedFinished"
+                    value: "false"
+                }
                 PropertyAnimation {
-
-                    duration: 300;
-                    target: item;
-                    property: "imageSource";
+                    duration: 300
+                    target: item
+                    property: "imageSource"
                     from: item.backPict
-                    to: item.imagePath;
+                    to: item.imagePath
 
                 }
-                PropertyAction{
-                                    target:item; property:"transitionFacedFinished"; value: "true"
-                                }
-
+                PropertyAction {
+                    target:item
+                    property:"transitionFacedFinished"
+                    value: "true"
+                }
             }
         }
     ]

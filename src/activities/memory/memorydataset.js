@@ -16,16 +16,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-//var memory_cards =
-//        ["01_cat.png","02_pig.png","03_bear.png",
-//         "04_hippopotamus.png","05_penguin.png",
-//         "06_cow.png", "07_sheep.png", "08_turtle.png",
-//         "09_panda.png", "10_chicken.png", "11_redbird.png",
-//         "12_wolf.png", "13_monkey.png", "14_fox.png",
-//         "15_bluebirds.png", "16_elephant.png", "17_lion.png",
-//         "18_gnu.png", "19_bluebaby.png", "20_greenbaby.png",
-//         "21_frog.png"]
-
 var memory_cards = [['01_cat.png', '01_cat.png'],
                     ['02_pig.png', '02_pig.png'],
                     ['03_bear.png', '03_bear.png'],

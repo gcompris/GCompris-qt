@@ -91,12 +91,11 @@ function start(main_,type_, background_, bar_, bonus_,
 
 
     imageList = dataset_ //could be a file list or a operation list. It's an array of array.
-    tux=tux_
-    if (tux==true){
-
-        additionnalPath=additionnalPath_
+    tux = tux_
+    if (tux == true) {
+        additionnalPath = additionnalPath_
     }
-    else{
+    else {
         additionnalPath=""
     }
 
@@ -142,23 +141,23 @@ function initLevel() {
     for(var ix = 0;  ix < nb_of_pair; ++ix){
         // select  a picture randomly from 21 pictures
 
-                var cardNb = Math.floor((imageList.length/10*(currentLevel+1)) * Math.random())
-                var card = imageList[cardNb][0] //Difficulty is define here. By construction of dataset
-                var cardAnswer = imageList[cardNb][1]
+        var cardNb = Math.floor((imageList.length/10*(currentLevel+1)) * Math.random())
+        var card = imageList[cardNb][0] //Difficulty is define here. By construction of dataset
+        var cardAnswer = imageList[cardNb][1]
 
-            if (cardList.length > 0){
-                while (cardList.indexOf(card) >= 0) {
-                                    var cardNb = Math.floor((imageList.length) * Math.random())
-                                    var card = additionnalPath+imageList[cardNb][0]
-                                    var cardAnswer = additionnalPath+imageList[cardNb][1]
+        if (cardList.length > 0){
+            while (cardList.indexOf(card) >= 0) {
+                var cardNb = Math.floor((imageList.length) * Math.random())
+                var card = additionnalPath+imageList[cardNb][0]
+                var cardAnswer = additionnalPath+imageList[cardNb][1]
 
             }
 
         }
 
-            console.log(ix)
-            cardList[ix]= [card, cardAnswer]
-            cardListAnswer[ix] = [cardAnswer, cardAnswer]
+        console.log(ix)
+        cardList[ix]= [card, cardAnswer]
+        cardListAnswer[ix] = [cardAnswer, cardAnswer]
 
     }
     console.log("card, cardAnswer ,cardList, carListaNswer,cardList[0], cardList.lentgh ", card, cardAnswer ,cardList, cardListAnswer, cardList[0], cardListAnswer[1], cardList.length )
@@ -174,31 +173,31 @@ function initLevel() {
 
     for(var i = 0;  i < cardListToShow.length; ++i) {
         if (type == "picture"){
-        containerModel.append({"back": "resource/backcard.png",
-                               "image": "resource/" + cardListToShow[i][0],
-                               "width_": main.width * displayWidthRatio / column,
-                               "height_": main.height * displayHeightRatio / line,
-                               "matchCode_": cardListToShow[i][1],
-                               "audioFile_": "",
-                               "text_": ""})
+            containerModel.append({"back": "resource/backcard.png",
+                                      "image": "resource/" + cardListToShow[i][0],
+                                      "width_": main.width * displayWidthRatio / column,
+                                      "height_": main.height * displayHeightRatio / line,
+                                      "matchCode_": cardListToShow[i][1],
+                                      "audioFile_": "",
+                                      "text_": ""})
         }
         else if (type == "sound") {
             containerModel.append({"back": "qrc:/gcompris/src/activities/memory-sound/resource/Tux_mute.png",
-                                   "image": "qrc:/gcompris/src/activities/memory-sound/resource/Tux_play.png", //it's a sound memory
-                                   "width_": main.width * displayWidthRatio / column,
-                                   "height_": main.height * displayHeightRatio / line,
-                                   "matchCode_": cardListToShow[i][1],
-                                   "audioFile_": cardListToShow[i][1],
-                                   "text_": ""})
+                                      "image": "qrc:/gcompris/src/activities/memory-sound/resource/Tux_play.png", //it's a sound memory
+                                      "width_": main.width * displayWidthRatio / column,
+                                      "height_": main.height * displayHeightRatio / line,
+                                      "matchCode_": cardListToShow[i][1],
+                                      "audioFile_": cardListToShow[i][1],
+                                      "text_": ""})
         }
         else if (type == "math") {
             containerModel.append({"back": "qrc:/gcompris/src/activities/memory/resource/backcard.png",
-                                   "image": "qrc:/gcompris/src/activities/memory/resource/emptycard.png",
-                                   "width_": main.width * displayWidthRatio / column,
-                                   "height_": main.height * displayHeightRatio / line,
-                                   "matchCode_": cardListToShow[i][1].toString(), // to change
-                                   "audioFile_": "",
-                                   "text_": cardListToShow[i][0].toString().replace("*","x").replace("/",String.fromCharCode(247))})
+                                      "image": "qrc:/gcompris/src/activities/memory/resource/emptycard.png",
+                                      "width_": main.width * displayWidthRatio / column,
+                                      "height_": main.height * displayHeightRatio / line,
+                                      "matchCode_": cardListToShow[i][1].toString(), // to change
+                                      "audioFile_": "",
+                                      "text_": cardListToShow[i][0].toString().replace("*","x").replace("/",String.fromCharCode(247))})
         }
     }
     if (tux) {
@@ -240,8 +239,7 @@ function isAnswer(text){
 function chooseCard(){
     var listCardNonReturned = []
     for(var i = 0;  i < cardList.length; ++i){
-//        if ((cardRepeater.itemAt(i).isBack==true) && (cardRepeater.itemAt(i).isFound==false) ){
-        if (cardRepeater.itemAt(i).isFound==false) {
+        if (cardRepeater.itemAt(i).isFound == false) {
             listCardNonReturned[i]=i
         }
     }
@@ -273,11 +271,6 @@ function cardClicked(cardObject) {
     nbCardClicked+=1 //count nb of clicks
     if (!firstPictureClicked) {//at first click
         firstPictureClicked = cardObject
-//        if(lastPics.length == 2) {
-//            lastPics[0].isBack = true
-//            lastPics[1].isBack = true
-//            lastPics = []
-//        }
     } else {
         // Check that the 2 pictures are the same
         if (firstPictureClicked.matchCode === cardObject.matchCode) {
@@ -293,7 +286,7 @@ function cardClicked(cardObject) {
                     cardLeft = cardLeft - 2
                     if (tux){
                         if (nbCardClicked==0){
-                           tuxPoints+=1
+                            tuxPoints+=1
                         } else {
                             playerPoints+=1
                         }
@@ -316,7 +309,7 @@ function cardClicked(cardObject) {
 
                     }
                 } else {  //two results or two formulas
-                        lastPics = [firstPictureClicked, cardObject]
+                    lastPics = [firstPictureClicked, cardObject]
                 }
 
             } else { //The same but not in a mathematical memory
@@ -327,7 +320,7 @@ function cardClicked(cardObject) {
                 cardLeft = cardLeft - 2
                 if (tux){
                     if (nbCardClicked==0){
-                       tuxPoints+=1
+                        tuxPoints+=1
                     } else {
                         playerPoints+=1
                     }

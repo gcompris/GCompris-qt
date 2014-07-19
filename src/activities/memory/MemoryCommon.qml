@@ -40,7 +40,7 @@ ActivityBase {
     property int rowsNb
     property int paired
     property string backgroundImg
-    property string type  //define if it's a "picture" ou a "sound" memory
+    property string type  //define if it's a "picture" or a "sound" memory
     property var dataset
     property Audio sound1
     property bool tux:false
@@ -83,10 +83,11 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
-        onStart: { Activity.start(main, type, background, bar, bonus,
-                                  containerModel, cardRepeater, grid,
-                                  dataset, displayWidthRatio, displayHeightRatio,
-                                  displayX, displayY,sound1,tux,additionnalPath) }
+        onStart: {
+            Activity.start(main, type, background, bar, bonus,
+                           containerModel, cardRepeater, grid,
+                           dataset, displayWidthRatio, displayHeightRatio,
+                           displayX, displayY,sound1,tux,additionnalPath) }
 
         onStop: { Activity.stop() }
 
@@ -113,7 +114,6 @@ ActivityBase {
                        matchCode: matchCode_
                        audioFile: audioFile_
                        textDisplayed : text_
-
                }
             }
 
