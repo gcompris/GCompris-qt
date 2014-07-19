@@ -24,8 +24,8 @@ import QtQuick.Controls 1.0
 import QtQuick.Controls.Styles 1.0
 import QtMultimedia 5.0
 
-import "../../core"
-import "../memory"
+import "qrc:/gcompris/src/core"
+import "qrc:/gcompris/src/activities/memory"
 import "memory.js" as Activity
 
 ActivityBase {
@@ -42,7 +42,9 @@ ActivityBase {
     property string backgroundImg
     property string type  //define if it's a "picture" ou a "sound" memory
     property var dataset
-    property GCAudio sound1
+    property Audio sound1
+    property bool tux:false
+    property string additionnalPath
 
     onStart: {}
     onStop: {}
@@ -55,11 +57,17 @@ ActivityBase {
 
     }
 
-    // For perf reason it is best not to put this in each HexagonItem
-    GCAudio {
+    // For perf reason it is best not to put this in each CardItem
+    Audio {
         id: sound1
         source: ""
     }
+
+    function home_(){
+        Activity.destroyTeacher()
+        home()
+    }
+
 
     pageComponent: Image {
         source: backgroundImg
@@ -78,7 +86,7 @@ ActivityBase {
         onStart: { Activity.start(main, type, background, bar, bonus,
                                   containerModel, cardRepeater, grid,
                                   dataset, displayWidthRatio, displayHeightRatio,
-                                  displayX, displayY,sound1) }
+                                  displayX, displayY,sound1,tux,additionnalPath) }
 
         onStop: { Activity.stop() }
 
@@ -95,8 +103,9 @@ ActivityBase {
                 id: cardRepeater
                 model: containerModel
                 delegate: CardItem {
-                       source: back  //first picture is the back
+                       imageSource: back  //first picture is the back
                        width: width_
+                       //actualWidth: width_
                        height: height_
                        backPict: back
                        isBack: true
@@ -114,7 +123,7 @@ ActivityBase {
 
         DialogHelp {
             id: dialogHelp
-            onClose: home()
+            onClose: home_()
         }
 
         Bar {
@@ -125,7 +134,7 @@ ActivityBase {
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: home()
+            onHomeClicked: home_()
         }
 
         Bonus {

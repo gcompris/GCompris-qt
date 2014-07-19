@@ -34,4 +34,5 @@ MemoryCommon {
     displayX:50
     displayY:50
     type:"picture"
+    additionnalPath:""
 }

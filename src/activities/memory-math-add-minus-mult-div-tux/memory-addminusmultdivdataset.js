@@ -312,7 +312,7 @@ var memory_addminusmultdiv = [
 ['88/11', 8],
 ['96/12', 8],
 ['104/13', 8]]
-   
+
 
 
 function get() {
