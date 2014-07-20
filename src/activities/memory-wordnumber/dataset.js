@@ -17,7 +17,6 @@
  */
 
 .import GCompris 1.0 as GCompris //for ApplicationInfo
-.import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
 
 var texts = [
             [qsTr("zero"), 0],
