@@ -31,6 +31,7 @@ Item {
     property variant pairData
     property bool isBack: true
     property bool isFound: false
+    property bool isShown: false
     property alias rotAngle: image.rotAngle
     property bool transitionFacedFinished
     property bool transitionReturnedFinished
@@ -115,8 +116,8 @@ Item {
     }
 
     function selectionReady() {
-
         Activity.cardClicked(item)
+        isShown = true
         if (item.pairData.sound) {
             sound.source = item.pairData.sound
             sound.play()

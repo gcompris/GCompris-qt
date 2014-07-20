@@ -111,13 +111,55 @@ function initLevel() {
     items.playerScore = 0
 }
 
+// Return a pair of cards that have already been shown
+function getShownPair() {
+
+    for(var i = 0;  i < nbOfPair * 2; ++i) {
+        var cardItem1 = items.cardRepeater.itemAt(i)
+        for(var j = 0;  j < nbOfPair * 2; ++j) {
+            var cardItem2 = items.cardRepeater.itemAt(j)
+            if(i != j &&
+                !cardItem1.isFound &&
+                cardItem1.isShown &&
+                !cardItem2.isFound &&
+                cardItem2.isShown &&
+                (cardItem1.pairData.matchCode ===
+                 cardItem2.pairData.matchCode) ) {
+                return [cardItem1, cardItem2]
+            }
+        }
+    }
+    return
+}
+
+// Calc randomly is Tux is a good player
+// Return true if Tux should play correctly
+function getRandomTuxIsGood() {
+    return Math.random() * numberOfLevel < currentLevel
+}
+
 function chooseCard() {
+
+    // Tux looks in the shown card to make his choice
+    if(getRandomTuxIsGood()) {
+        var shownPair = getShownPair()
+        if(shownPair) {
+            if(shownPair[0].isBack) {
+                return shownPair[0]
+            } else {
+                return shownPair[1]
+            }
+        }
+    }
+
+    // If no pairs shown select a random card
     var listCardNonReturned = []
     for(var i = 0;  i < cardList.length; ++i) {
         if (items.cardRepeater.itemAt(i).isFound == false &&
             items.cardRepeater.itemAt(i).isBack)
             listCardNonReturned.push(items.cardRepeater.itemAt(i))
     }
+
     //select randomly a card in it
     return listCardNonReturned[Math.floor(Math.random() * listCardNonReturned.length)]
 }
@@ -140,12 +182,10 @@ function tuxPlay() {
 
 function cardClicked(cardItem) {
     if (!firstPictureClicked) { // at first click
-        firstPictureClicked = cardItem
-
         if (items.withTux && items.tuxTurn) {
             chooseCard().selected()
         }
-
+        firstPictureClicked = cardItem
     } else if (firstPictureClicked.pairData.matchCode ===
                cardItem.pairData.matchCode) {
         // the 2 cards are the same
