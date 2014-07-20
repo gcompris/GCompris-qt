@@ -71,6 +71,8 @@ ActivityBase {
             property alias containerModel: containerModel
             property alias cardRepeater: cardRepeater
             property alias grid: grid
+            property int columns
+            property int rows
         }
 
         onStart: Activity.start(items)
@@ -84,6 +86,8 @@ ActivityBase {
         Grid {
             id: grid
             spacing: 5 * ApplicationInfo.ratio
+            columns: items.columns
+            rows: items.rows
             anchors {
                 left: background.left
                 right: background.rigth

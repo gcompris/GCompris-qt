@@ -60,8 +60,8 @@ function initLevel() {
     var images = items.dataset[currentLevel].images
     var sounds = items.dataset[currentLevel].sounds
     var texts = items.dataset[currentLevel].texts
-    items.grid.columns = columns
-    items.grid.rows = rows
+    items.columns = columns
+    items.rows = rows
     nbOfPair = rows * columns / 2
     cardLeft = nbOfPair * 2
 
