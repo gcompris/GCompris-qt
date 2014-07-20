@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory-math-minus-tux/Memory-math-minus-tux.qml"
+  name: "memory-math-minus-tux/MemoryMathMinusTux.qml"
   difficulty: 1
   icon: "memory-math-minus/memory-math-minus.svgz"
   author: "Yves Combe (yves@ycombe.net) ported by JB BUTET <ashashiwa@mgail.com>"

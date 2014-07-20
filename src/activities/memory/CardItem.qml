@@ -20,35 +20,29 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
-import QtMultimedia 5.0
-import "memory.js" as Activity
 import GCompris 1.0
-import "qrc:/gcompris/src/core"
+
+import "../../core"
+import "memory.js" as Activity
 
 Item {
     id: item
-    property Item main
-    property Item bar
-    property string audioSrc
-    property string backPict
-    property string imagePath
-    property string matchCode
+
+    property variant pairData
     property bool isBack: true
     property bool isFound: false
-    property string audioFile
-    property string textDisplayed
-    property string imageSource
     property alias rotAngle: image.rotAngle
     property bool transitionFacedFinished
     property bool transitionReturnedFinished
-
     property bool transitionHiddenFinished
 
+    property alias imageSource: image.source
+
+    property bool tuxTurn
 
     onIsFoundChanged: {
         timer.start()
     }
-
 
     Timer {
         id:timer
@@ -58,9 +52,9 @@ Item {
 
     onRotAngleChanged:  {
         if (rotAngle < 90) {
-            image.source = backPict
+            image.source = item.pairData.back
         } else {
-            image.source = imagePath
+            image.source = item.pairData.image
         }
     }
 
@@ -69,17 +63,19 @@ Item {
         anchors.fill: parent
         clip: false
     }
+
     Timer {
-        id:animationTimer
+        id: animationTimer
         interval: 750; running: false; repeat: false
-        onTriggered: theresAClick()
+        onTriggered: selectionReady()
     }
+
     Image {
         id: image
         width:item.width
         height: item.height
         fillMode: Image.PreserveAspectFit
-        source : backPict
+        source : pairData.back
         property real rotAngle: rotation.angle //in degrees
         signal clicked()
         transform: [
@@ -107,41 +103,40 @@ Item {
     MouseArea {
         id:mouseArea
         anchors.fill: parent
-        enabled: item.isBack
+        enabled: item.isBack && !item.tuxTurn
+        onClicked: selected()
     }
 
-
-    function doWithClick(){
+    function selected() {
         Activity.reverseCards()
-        isBack = false
+        item.isBack = false
         item.state = "faced"
         animationTimer.start()
     }
 
-    function theresAClick(){
+    function selectionReady() {
 
         Activity.cardClicked(item)
-        if (Activity.type == "sound"){
-            sound1.source = "qrc:/gcompris/src/activities/memory-sound/resource/"+ audioFile
-            sound1.play()
+        if (item.pairData.sound) {
+            sound.source = item.pairData.sound
+            sound.play()
         }
-    }
-
-    Component.onCompleted: {
-        mouseArea.onClicked.connect(doWithClick)
     }
 
     Text {
         id:text1
         anchors.centerIn: parent
-        visible : rotAngle>Math.PI/2 ? true : false
+        visible : rotAngle > Math.PI/2 ? true : false
         font.family: "Helvetica"
-        font.pointSize: {Activity.column==5 ? 14 : 36/(Math.floor(Activity.column/3)+1)}/*,correction < 10 ? 10 : correction} *///awful hack to set a good font size
+        font.pointSize: 24
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         color: "black"
+        font.bold: true
+        style: Text.Outline
+        styleColor: "white"
         property real rotAngle : image.rotAngle/180*Math.PI
-        text: textDisplayed
+        text: item.pairData.text
         x: image.x + image.width/2 - image.width*Math.cos(rotAngle) * 0.5
         transform: [
             Scale {
@@ -155,20 +150,28 @@ Item {
     states : [
         State {
             name: "hidden"; when: isFound == true
-            PropertyChanges { target: item
-                imageSource:item.imagePath
-                opacity:0 }
+            PropertyChanges {
+                target: item
+                imageSource: item.pairData.image
+                opacity: 0
+            }
             PropertyChanges { target: rotation; angle: 180 }
         },
         State {
             name:"back"; when: isBack == true
-            PropertyChanges { target: item; imageSource:item.backPict }
+            PropertyChanges {
+                target: item
+                imageSource: item.pairData.back
+            }
             PropertyChanges { target: rotation; angle: 0 }
 
         },
         State {
-            name:"faced"; when: isBack==false
-            PropertyChanges { target: item; imageSource:item.imagePath }
+            name:"faced"; when: isBack == false
+            PropertyChanges {
+                target: item
+                imageSource: item.pairData.image
+            }
             PropertyChanges { target: rotation; angle: 180 }
         }
     ]
@@ -200,10 +203,10 @@ Item {
         Transition {
             from: "faced"; to : "back" ;reversible: false
             SequentialAnimation {
-                id:returnedAnimation
+                id: returnedAnimation
 
                 PropertyAction {
-                    target:item
+                    target: item
                     property:"transitionReturnedFinished"
                     value: "false"
                 }
@@ -211,11 +214,11 @@ Item {
                     duration: 300;
                     target: item;
                     property: "imageSource";
-                    from: item.imagePath;
-                    to: item.backPict;
+                    from: item.pairData.image
+                    to: item.pairData.back;
                 }
                 PropertyAction {
-                    target:item
+                    target: item
                     property:"transitionReturnedFinished"
                     value: "true"
                 }
@@ -228,26 +231,24 @@ Item {
                 id:facedAnimation
 
                 PropertyAction {
-                    target:item
-                    property:"transitionFacedFinished"
+                    target: item
+                    property: "transitionFacedFinished"
                     value: "false"
                 }
                 PropertyAnimation {
                     duration: 300
                     target: item
                     property: "imageSource"
-                    from: item.backPict
-                    to: item.imagePath
+                    from: item.pairData.back
+                    to: item.pairData.image
 
                 }
                 PropertyAction {
-                    target:item
-                    property:"transitionFacedFinished"
+                    target: item
+                    property: "transitionFacedFinished"
                     value: "true"
                 }
             }
         }
     ]
 }
-
-

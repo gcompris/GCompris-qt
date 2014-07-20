@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory-math-mult-div-tux/Memory-math-mult-div-tux.qml"
+  name: "memory-math-mult-div-tux/MemoryMathMultDivTux.qml"
   difficulty: 1
   icon: "memory-math-mult-div-tux/memory-math-mult-div-tux.svgz"
   author: "JB BUTET <ashashiwa@gmail.com>"

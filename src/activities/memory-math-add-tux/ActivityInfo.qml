@@ -1,10 +1,10 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory-math-add-tux/Memory-math-add-tux.qml"
+  name: "memory-math-add-tux/MemoryMathAddTux.qml"
   difficulty: 1
   icon: "memory-math-add-tux/memory-math-add-tux.svgz"
-  author: "Yves Combe (yves@ycombe.net) ported by JB BUTET <ashashiwa@gmail.com>"
+  author: "JB BUTET <ashashiwa@gmail.com>"
   demo: false
   title: qsTr("Addition memory game against Tux")
   description: qsTr("Turn the cards over to find two numbers which add up the same, until all the cards are gone. Tux do the same. You have to beat it !")

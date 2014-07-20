@@ -20,76 +20,62 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
-import QtQuick.Controls 1.0
-import QtQuick.Controls.Styles 1.0
-import QtMultimedia 5.0
+import GCompris 1.0
 
-import "qrc:/gcompris/src/core"
-import "qrc:/gcompris/src/activities/memory"
+import "../../core"
 import "memory.js" as Activity
 
 ActivityBase {
     id: activity
     focus: true
-    property real displayWidthRatio
-    property real displayHeightRatio
-    property int displayX
-    property int displayY
-    property int itemWidth
-    property int itemHeight
-    property int rowsNb
-    property int paired
+
     property string backgroundImg
-    property string type  //define if it's a "picture" or a "sound" memory
     property var dataset
-    property Audio sound1
-    property bool tux:false
+    property bool withTux: false
     property string additionnalPath
 
     onStart: {}
     onStop: {}
-    paired:0
-
-    onPairedChanged: {
-        if (paired == 3){ //when 2 pictures are clicked and we click a third one
-          Activity.cardReturn()
-        }
-
-    }
 
     // For perf reason it is best not to put this in each CardItem
-    Audio {
-        id: sound1
+    GCAudio {
+        id: sound
         source: ""
     }
 
-    function home_(){
-        Activity.destroyTeacher()
-        home()
-    }
-
-
     pageComponent: Image {
-        source: backgroundImg
-        fillMode: Image.PreserveAspectCrop
         id: background
-        signal start
-        signal stop
+        source: activity.backgroundImg
+        fillMode: Image.PreserveAspectCrop
         focus: true
 
+        signal start
+        signal stop
+
+        property alias items: items
 
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
 
-        onStart: {
-            Activity.start(main, type, background, bar, bonus,
-                           containerModel, cardRepeater, grid,
-                           dataset, displayWidthRatio, displayHeightRatio,
-                           displayX, displayY,sound1,tux,additionnalPath) }
+        QtObject {
+            id: items
+            property alias bar: bar
+            property alias bonus: bonus
+            property bool withTux: activity.withTux
+            property bool tuxTurn: false
+            property int tuxScore: tuxScore.text
+            property int playerScore: playerScore.text
+            property variant dataset: activity.dataset
+            property alias containerModel: containerModel
+            property alias cardRepeater: cardRepeater
+            property alias grid: grid
+        }
 
-        onStop: { Activity.stop() }
+        onStart: Activity.start(items)
+
+        onStop: Activity.stop()
 
         ListModel {
             id: containerModel
@@ -97,33 +83,30 @@ ActivityBase {
 
         Grid {
             id: grid
-            x: displayX
-            y: displayY
-            spacing: 5
+            spacing: 5 * ApplicationInfo.ratio
+            anchors {
+                left: background.left
+                right: background.rigth
+                top: background.top
+                margins: 10 * ApplicationInfo.ratio
+            }
+
             Repeater {
                 id: cardRepeater
                 model: containerModel
+
                 delegate: CardItem {
-                       imageSource: back  //first picture is the back
-                       width: width_
-                       //actualWidth: width_
-                       height: height_
-                       backPict: back
-                       isBack: true
-                       imagePath: image
-                       matchCode: matchCode_
-                       audioFile: audioFile_
-                       textDisplayed : text_
+                    pairData: pairData_
+                    tuxTurn: background.items.tuxTurn
+                    width: (background.width - (grid.columns + 1) * grid.spacing) / grid.columns
+                    height: (background.height - (grid.rows + 1) * grid.spacing) / (grid.rows + 0.5)
                }
             }
-
         }
-
-
 
         DialogHelp {
             id: dialogHelp
-            onClose: home_()
+            onClose: home()
         }
 
         Bar {
@@ -134,7 +117,54 @@ ActivityBase {
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: home_()
+            onHomeClicked: home()
+        }
+
+        Image {
+            id: player
+            source: 'qrc:/gcompris/src/activities/memory/resource/children.svg'
+            anchors {
+                bottom: bar.bottom
+                left: bar.right
+            }
+            width: height * 0.83
+            height: bar.height * 2
+
+            Text {
+                id: playerScore
+                anchors.centerIn: parent
+                anchors.verticalCenterOffset: parent.height / 6
+                color: "black"
+                font.bold: true
+                font.pointSize: 24
+                style: Text.Outline
+                styleColor: "white"
+                text: items.playerScore
+            }
+        }
+
+        Image {
+            id: tux
+            visible: activity.withTux
+            source: 'qrc:/gcompris/src/activities/memory/resource/tux-teacher.png'
+            anchors {
+                bottom: bar.bottom
+                left: player.right
+            }
+            width: height * 0.83
+            height: bar.height * 2
+
+            Text {
+                id: tuxScore
+                anchors.centerIn: parent
+                anchors.verticalCenterOffset: parent.height / 6
+                color: "black"
+                font.bold: true
+                font.pointSize: 24
+                style: Text.Outline
+                styleColor: "white"
+                text: items.tuxScore
+            }
         }
 
         Bonus {

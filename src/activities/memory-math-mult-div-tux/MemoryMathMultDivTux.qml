@@ -1,4 +1,4 @@
-/* GCompris - Memory.qml
+/* gcompris
  *
  * Copyright (C) 2014 JB BUTET
  *
@@ -22,9 +22,10 @@
 import QtQuick 2.1
 
 import "../memory"
-import "memorydataset.js" as Dataset
+import "../memory-math-mult-div/memory-multdivdataset.js" as Dataset
 
 MemoryCommon {
     dataset: Dataset.get()
-    backgroundImg: Dataset.url + "scenery_background.png"
+    backgroundImg: "qrc:/gcompris/src/activities/memory/resource/scenery_background.png"
+    withTux: true
 }
