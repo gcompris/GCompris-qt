@@ -37,6 +37,7 @@ maze
 mazeinvisible
 mazerelative
 memory
+memory-enumerate
 memory-math-add
 memory-math-add-minus
 memory-math-add-minus-mult-div
