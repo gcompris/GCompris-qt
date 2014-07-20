@@ -52,6 +52,7 @@ memory-math-mult-div
 memory-math-mult-div-tux
 memory-math-mult-tux
 memory-sound
+memory-sound-tux
 memory-tux
 memory-wordnumber
 mining
