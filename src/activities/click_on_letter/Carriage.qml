@@ -63,7 +63,7 @@ Image {
         z: 11
 
         text: letter
-        font.pixelSize: Math.min(parent.width * 0.8, 80)
+        font.pixelSize: parent.width * 0.65
         font.bold: true
         style: Text.Outline
         styleColor: "black"
