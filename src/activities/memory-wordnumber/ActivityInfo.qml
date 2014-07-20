@@ -1,10 +1,10 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory_wordnumber/MemoryWordnumber.qml"
-  difficulty: 1
-  icon: "memory_wordnumber/memo_wordnumber.svgz"
-  author: "Yves Combe <yves@ycombe.net>"
+  name: "memory-wordnumber/MemoryWordnumber.qml"
+  difficulty: 3
+  icon: "memory-wordnumber/memory_wordnumber.svgz"
+  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: true
   title: qsTr("Wordnumber memory game")
   description: qsTr("Turn the cards over to match the number with the word matching it.")

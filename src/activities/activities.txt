@@ -53,6 +53,7 @@ memory-math-mult-div-tux
 memory-math-mult-tux
 memory-sound
 memory-tux
+memory-wordnumber
 mining
 missing-letter
 money
