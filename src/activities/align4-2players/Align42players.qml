@@ -82,6 +82,9 @@ ActivityBase {
                 anchors.leftMargin: background.width * 0.075 / 7
                 anchors.topMargin: background.height * 0.116 / 6
                 model: pieces
+                cellWidth: background.width * 0.075 + background.width * 0.075 / 6
+                cellHeight: background.height * 0.116 + background.height * 0.116 / 6
+                delegate: blueSquare
 
                 Component {
                     id: blueSquare
@@ -97,9 +100,6 @@ ActivityBase {
                     }
                 }
 
-                cellWidth: background.width * 0.075 + background.width * 0.075 / 6
-                cellHeight: background.height * 0.116 + background.height * 0.116 / 6
-                delegate: blueSquare
             }
         }
 
