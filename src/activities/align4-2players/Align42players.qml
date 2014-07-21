@@ -29,7 +29,7 @@ import GCompris 1.0
 ActivityBase {
     id: activity
 
-    property string mode: "2player"
+    property bool twoPlayer: true
 
     onStart: focus = true
     onStop: {}
@@ -61,7 +61,7 @@ ActivityBase {
             property alias bonus: bonus
         }
 
-        onStart: { Activity.start(items, mode) }
+        onStart: { Activity.start(items, twoPlayer) }
         onStop: { Activity.stop() }
 
         ListModel {

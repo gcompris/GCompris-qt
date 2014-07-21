@@ -25,5 +25,5 @@ import "../../core"
 import "../align4-2players"
 
 Align42players {
-    mode: "1player"
+    twoPlayer: false
 }

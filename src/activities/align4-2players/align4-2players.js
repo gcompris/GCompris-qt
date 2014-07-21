@@ -31,17 +31,17 @@ var numberOfColumns = 7
 var currentPiece
 var counter
 var currentPlayer
-var mode
+var twoPlayer
 var weight = [[100, 50, 20, 100, 50, 20],
               [110, 55, 20, 100, 50, 20],
               [100, 50, 20, 110, 55, 20]];
 
-function start(items_, mode_) {
+function start(items_, twoPlayer_) {
     items = items_
     currentLevel = 0
     items.player1_score = 0
     items.player2_score = 0
-    mode = mode_
+    twoPlayer = twoPlayer_
     initLevel()
 }
 
@@ -50,7 +50,7 @@ function stop() {
 
 function initLevel() {
 
-    if(mode === "1player") {
+    if(!twoPlayer) {
         numberOfLevel = 3
     }
 
@@ -480,7 +480,7 @@ function continueGame() {
     items.pieces.set(currentPiece, {"stateTemp": counter++ % 2 ? "2": "1"})
 
     /* Update score if game won */
-    if(mode === "2player") {
+    if(twoPlayer) {
         mutex = 1
         items.dynamic.enabled = true
         if(checkGameWon(parseInt(currentPiece/7), parseInt(currentPiece % 7))) {
@@ -495,7 +495,7 @@ function continueGame() {
             items.bonus.isWin = false
         }
 
-    } else if(mode === "1player") {
+    } else {
         mutex = 1
         items.dynamic.enabled = true
         if(checkGameWon(parseInt(currentPiece/7), parseInt(currentPiece % 7))) {
