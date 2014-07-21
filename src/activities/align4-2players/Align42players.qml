@@ -68,38 +68,6 @@ ActivityBase {
             id: pieces
         }
 
-        Image {
-            id: player1
-            source: Activity.url + "score_1.svg"
-            sourceSize.height: background.height * 0.12
-            x: background.width * 0.05
-            y: background.height * 0.3
-
-            Text {
-                id: player1_score
-                x: parent.width / 2
-                y: - parent.height / 10
-                color: "white"
-                font.pointSize: parent.height * 0.85
-            }
-        }
-
-        Image {
-            id: player2
-            source: Activity.url + "score_2.svg"
-            sourceSize.height: background.height * 0.12
-            x: background.width * 0.05
-            y: background.height * 0.6
-
-            Text {
-                id: player2_score
-                color: "white"
-                x: parent.width / 2
-                y: - parent.height / 10
-                font.pointSize: parent.height * 0.85
-            }
-        }
-
         Rectangle {
             id: board
             width: parent.width * 0.625
@@ -187,6 +155,45 @@ ActivityBase {
             onHomeClicked: activity.home()
             onReloadClicked: {
                 Activity.reset()
+            }
+        }
+
+        Image {
+            id: player1
+            source: Activity.url + "score_1.svg"
+            sourceSize.height: bar.height * 1.5
+            anchors {
+                bottom: bar.bottom
+                bottomMargin: 10
+                left: bar.right
+            }
+
+            Text {
+                id: player1_score
+                x: parent.width / 2
+                y: - parent.height / 10
+                color: "white"
+                font.pointSize: parent.height * 0.85
+            }
+        }
+
+        Image {
+            id: player2
+            source: Activity.url + "score_2.svg"
+            sourceSize.height: bar.height * 1.5
+            anchors {
+                bottom: bar.bottom
+                bottomMargin: 10
+                left: player1.right
+                leftMargin: 10 * ApplicationInfo.ratio
+            }
+
+            Text {
+                id: player2_score
+                color: "white"
+                x: parent.width / 2
+                y: - parent.height / 10
+                font.pointSize: parent.height * 0.85
             }
         }
 
