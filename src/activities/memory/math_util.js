@@ -35,9 +35,9 @@ function getAddTable(table) {
 function getMinusTable(table) {
     var result = []
     for(var i = 1; i <= 10; ++i) {
-        // The mathematical subtratction sign
-        result.push(["" + i + table + " " + qsTr("-") + " " + table,
-                      i - table])
+        // The mathematical substraction sign
+        result.push(["" + (i + table) + " " + qsTr("-") + " " + table,
+                      i])
     }
     return result
 }
