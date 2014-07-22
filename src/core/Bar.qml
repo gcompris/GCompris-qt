@@ -39,6 +39,7 @@ Item {
     signal previousLevelClicked
     signal repeatClicked
     signal homeClicked
+    signal reloadClicked
 
     function toggle() {
         opacity = (opacity == 0 ? 1.0 : 0)
@@ -126,6 +127,14 @@ Item {
             sourceSize.width: 66 * barZoom
             onClicked: bar.homeClicked()
         }
+        BarButton {
+            id: reloadButton
+            source: "qrc:/gcompris/src/core/resource/bar_reload.svgz";
+            contentId: content.reload
+            sourceSize.width: 66 * barZoom
+            onClicked: bar.reloadClicked()
+        }
+
         AnimatedImage {
             id: downloadImage
             source: "qrc:/gcompris/src/core/resource/loader.gif"

@@ -29,6 +29,8 @@ import GCompris 1.0
 ActivityBase {
     id: activity
 
+    property bool twoPlayer: true
+
     onStart: focus = true
     onStop: {}
 
@@ -53,94 +55,69 @@ ActivityBase {
             property alias pieces: pieces
             property alias dynamic: dynamic
             property alias drop: drop
-            property alias line: line
             property alias player1_score: player1_score.text
             property alias player2_score: player2_score.text
             property alias bar: bar
             property alias bonus: bonus
+            property alias repeater: repeater
+            property alias columns: grid.columns
+            property alias rows: grid.rows
+            property int cellSize: Math.min(background.width / (columns + 1),
+                                            background.height / (rows + 3))
+            property bool gameDone
+            property int counter
         }
 
-        onStart: { Activity.start(items) }
+        onStart: { Activity.start(items, twoPlayer) }
         onStop: { Activity.stop() }
 
         ListModel {
             id: pieces
         }
 
-        Image {
-            id: player1
-            source: Activity.url + "score_1.svg"
-            sourceSize.height: background.height * 0.12
-            x: background.width * 0.05
-            y: background.height * 0.3
-
-            Text {
-                id: player1_score
-                x: parent.width / 2
-                y: - parent.height / 10
-                color: "white"
-                font.pointSize: parent.height * 0.85
+        Grid {
+            id: grid
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors {
+                top: parent.top
+                topMargin: items.cellSize + 5 * ApplicationInfo.ratio
+                horizontalCenter: parent.horizontalCenter
             }
-        }
 
-        Image {
-            id: player2
-            source: Activity.url + "score_2.svg"
-            sourceSize.height: background.height * 0.12
-            x: background.width * 0.05
-            y: background.height * 0.6
+            spacing: 5
+            columns: 7
+            rows: 6
 
-            Text {
-                id: player2_score
-                color: "white"
-                x: parent.width / 2
-                y: - parent.height / 10
-                font.pointSize: parent.height * 0.85
-            }
-        }
-
-        Rectangle {
-            id: board
-            width: parent.width * 0.625
-            height: parent.height * 0.835
-            color: "transparent"
-            x: parent.width * 0.175
-            y: parent.height * 0.1
-
-            GridView {
-                id: grid
-                anchors.fill: parent
-                anchors.leftMargin: background.width * 0.075 / 7
-                anchors.topMargin: background.height * 0.116 / 6
+            Repeater {
+                id: repeater
                 model: pieces
+                delegate: blueSquare
 
                 Component {
                     id: blueSquare
                     Rectangle {
-                        color: "#66666666";
-                        width: background.width * 0.075;
-                        height: background.height * 0.116
-                        border.color: "#aaaaaaaa"
+                        color: "#DDAAAAAA";
+                        width: items.cellSize
+                        height: items.cellSize
+                        border.color: "#FFFFFFFF"
+                        border.width: 1
                         Piece {
                             anchors.fill: parent
                             state: stateTemp
                         }
                     }
                 }
-
-                cellWidth: background.width * 0.075 + background.width * 0.075 / 6
-                cellHeight: background.height * 0.116 + background.height * 0.116 / 6
-                delegate: blueSquare
             }
-        }
 
-        Piece {
-            id: fallingPiece
-            x: background.width * 0.4505
-            y: - background.height * 0.019
-            state: Activity.counter % 2? "red": "green"
-            width: background.width * 0.075;
-            height: background.height * 0.116
+            Piece {
+                id: fallingPiece
+                state: items.gameDone ? "invisible" : items.counter % 2 ? "2": "1"
+                width: items.cellSize
+                height: items.cellSize
+
+                Behavior on x { PropertyAnimation { duration: 200 } }
+            }
+
         }
 
         PropertyAnimation {
@@ -149,6 +126,7 @@ ActivityBase {
             properties: "y"
             duration: 1500
             onStopped: {
+                dynamic.display()
                 Activity.continueGame()
             }
         }
@@ -156,25 +134,22 @@ ActivityBase {
         MouseArea {
             id: dynamic
             anchors.fill: parent
-            hoverEnabled: !drop.running
-            onPositionChanged: {
-                Activity.setPieceLocation(mouseX, mouseY)
+            enabled: !drop.running && !items.gameDone
+            hoverEnabled: !drop.running && !items.gameDone
+
+            function display() {
+                var coord = grid.mapFromItem(background, mouseX, mouseY)
+                Activity.setPieceLocation(coord.x, coord.y)
             }
+
+            onPositionChanged: items.dynamic.enabled ? display() : ''
             onClicked: {
-                if(mouseX > background.width * 0.188 & mouseX < background.width * 0.8005) {
-                    if(mouseY > background.height * 0.1 & mouseY < background.height * 0.935) {
-                        Activity.handleDrop(mouseX, mouseY)
-                    }
-                }
+                display()
+                var coord = grid.mapFromItem(background, mouseX, mouseY)
+                Activity.handleDrop(coord.x, coord.y)
             }
         }
 
-        Rectangle {
-            id: line
-            opacity: 0.0
-            color: "red"
-            transformOrigin: Item.TopLeft
-        }
 
         DialogHelp {
             id: dialogHelp
@@ -183,11 +158,53 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home }
+            content: BarEnumContent { value: help | home | reload }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onHomeClicked: activity.home()
+            onReloadClicked: {
+                Activity.reset()
+            }
+        }
+
+        Image {
+            id: player1
+            source: Activity.url + "score_1.svg"
+            sourceSize.height: bar.height * 1.5
+            anchors {
+                bottom: bar.bottom
+                bottomMargin: 10
+                left: bar.right
+            }
+
+            Text {
+                id: player1_score
+                anchors.verticalCenter: parent.verticalCenter
+                x: parent.width / 2 + 5
+                color: "white"
+                font.pointSize: 24
+            }
+        }
+
+        Image {
+            id: player2
+            source: Activity.url + "score_2.svg"
+            sourceSize.height: bar.height * 1.5
+            anchors {
+                bottom: bar.bottom
+                bottomMargin: 10
+                left: player1.right
+                leftMargin: 10 * ApplicationInfo.ratio
+            }
+
+            Text {
+                id: player2_score
+                anchors.verticalCenter: parent.verticalCenter
+                color: "white"
+                x: parent.width / 2 + 5
+                font.pointSize: 24
+            }
         }
 
         Bonus {
