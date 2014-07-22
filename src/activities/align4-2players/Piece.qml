@@ -36,7 +36,6 @@ Image {
                 target: piece
                 opacity: 0
             }
-
         },
         State {
             name: "2" // Player 2

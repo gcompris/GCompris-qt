@@ -22,14 +22,11 @@
 .pragma library
 .import QtQuick 2.0 as Quick
 
-var currentLevel = 0
-var numberOfLevel = 1
+var currentLevel
+var numberOfLevel
 var items
 var url = "qrc:/gcompris/src/activities/align4-2players/resource/"
-var numberOfRows = 6
-var numberOfColumns = 7
 var currentPiece
-var counter
 var currentPlayer
 var twoPlayer
 var weight = [[100, 50, 20, 100, 50, 20],
@@ -50,24 +47,22 @@ function stop() {
 
 function initLevel() {
 
-    if(!twoPlayer) {
-        numberOfLevel = 3
-    }
+    numberOfLevel = twoPlayer ? 1 : 3
 
     items.bar.level = currentLevel + 1
-    items.dynamic.enabled = true
 
-    counter = 0
+    items.counter = 0
 
+    items.gameDone = false
     items.pieces.clear()
-    for(var y = 0;  y < numberOfRows; y++) {
-        for(var x = 0;  x < numberOfColumns; x++) {
+    for(var y = 0;  y < items.rows; y++) {
+        for(var x = 0;  x < items.columns; x++) {
             items.pieces.append({'stateTemp': "invisible"})
         }
     }
 
-    setPieceLocation(items.background.width * 0.4505, items.background.height * 0.5)
-    items.fallingPiece.opacity = 1
+    setPieceLocation(items.repeater.itemAt(3).x,
+                     items.repeater.itemAt(0).y)
 }
 
 function nextLevel() {
@@ -87,64 +82,24 @@ function previousLevel() {
 function reset() {
     items.drop.stop()    // stop animation
     items.pieces.clear() // Clear the board
-    items.fallingPiece.opacity = 0
     currentLevel = (currentLevel + 1) % 3
     initLevel()
 }
 
-function whichColumn(x, y) {
-    if(x >= items.background.width * 0.1865 &&
-            x < items.background.width * 0.274){ //column 1
-        return 0
-    } else if(x >= items.background.width * 0.274 &&
-              x < items.background.width * 0.3615){ //column 2
-        return 1
-    } else if(x >= items.background.width * 0.3615 &&
-              x < items.background.width * 0.449){ //column 3
-        return 2
-    } else if(x >= items.background.width * 0.449 &&
-              x < items.background.width * 0.5365){ //column 4
-        return 3
-    } else if(x >= items.background.width * 0.5365 &&
-              x < items.background.width * 0.624){ //column 5
-        return 4
-    } else if(x >= items.background.width * 0.624 &&
-              x < items.background.width * 0.7115){ //column 6
-        return 5
-    } else if(x >= items.background.width * 0.7115 &&
-              x < items.background.width * 0.799){ //column 7
-        return 6
+function whichColumn(mouseX, mouseY) {
+    for(var i = 0; i < items.columns - 1; i++) {
+        if(mouseX < items.repeater.itemAt(i + 1).x) {
+            return i
+        }
     }
+    return items.columns - 1
 }
 
 /* To move the piece before a column is chosen */
-function setPieceLocation(x, y) {
-    var column = whichColumn(x, y)
-    items.fallingPiece.y = - items.background.height * 0.019
-    switch(column) {
-    case 0:
-        items.fallingPiece.x = items.background.width * 0.1865
-        break;
-    case 1:
-        items.fallingPiece.x = items.background.width * 0.274
-        break;
-    case 2:
-        items.fallingPiece.x = items.background.width * 0.3615
-        break;
-    case 3:
-        items.fallingPiece.x = items.background.width * 0.449
-        break;
-    case 4:
-        items.fallingPiece.x = items.background.width * 0.5365
-        break;
-    case 5:
-        items.fallingPiece.x = items.background.width * 0.624
-        break;
-    case 6:
-        items.fallingPiece.x = items.background.width * 0.7115
-        break;
-    }
-    items.fallingPiece.state = counter % 2 ? "2": "1"
+function setPieceLocation(mouseX, mouseY) {
+    var column = whichColumn(mouseX, mouseY)
+    items.fallingPiece.y = items.repeater.itemAt(0).y - items.cellSize
+    items.fallingPiece.x = items.repeater.itemAt(column).x
 }
 
 function isModelEmpty(model) {
@@ -153,11 +108,11 @@ function isModelEmpty(model) {
 }
 
 function getPieceAt(col, row) {
-    return items.pieces.get(row * 7 + col)
+    return items.pieces.get(row * items.columns + col)
 }
 
 function getNextFreeStop(col) {
-    for(var row = numberOfRows - 1; row >= 0; row--) {
+    for(var row = items.rows - 1; row >= 0; row--) {
         if(isModelEmpty(getPieceAt(col, row)))
             return row
     }
@@ -165,48 +120,36 @@ function getNextFreeStop(col) {
     return -1
 }
 
-var mutex = 1
-
 function handleDrop(x, y) {
 
-    if(mutex) {
-        items.dynamic.enabled = false
+    var singleDropSize = items.cellSize
+    var column = whichColumn(x, y)
+    var nextFreeStop = getNextFreeStop(column)
 
-        var singleDropSize = items.background.height * 0.1358
-        var column = whichColumn(x, y)
-        var nextFreeStop = getNextFreeStop(column)
-
-        if(nextFreeStop === -1) {
-            items.dynamic.enabled = true
-            return
-        }
-        var destination = items.fallingPiece.y
-                + singleDropSize * (nextFreeStop + 1)
-
-        items.drop.to = destination
-        items.drop.duration = 1500 * ((nextFreeStop + 1) / 6)
-        currentPiece = nextFreeStop * 7 + column
-        mutex = 0
+    if(nextFreeStop >= 0) {
+        items.drop.to = items.repeater.itemAt(nextFreeStop * items.columns).y
+        items.drop.duration = 1500 * ((nextFreeStop + 1) / items.rows)
+        currentPiece = nextFreeStop * items.columns + column
         items.drop.start()
-
     }
+
 }
 
 function setPieceState(col, row, state) {
-    items.pieces.set(row * 7 + col, {"stateTemp": state})
+    items.pieces.set(row * items.columns + col, {"stateTemp": state})
 }
 
 function getPieceState(col, row) {
-    return items.pieces.get(row * 7 + col).stateTemp
+    return items.pieces.get(row * items.columns + col).stateTemp
 }
 
 function getBoardFromModel() {
-    var board = new Array()
-    var temp = new Array()
+    var board = []
+    var temp
 
-    for(var i = 0; i < numberOfRows; i++) {
+    for(var i = 0; i < items.rows; i++) {
         temp = []
-        for(var j = 0; j < numberOfColumns; j++) {
+        for(var j = 0; j < items.columns; j++) {
             temp.push(getPieceState(j, i))
         }
         board.push(temp)
@@ -217,7 +160,7 @@ function getBoardFromModel() {
 }
 
 function getFreeStopFromBoard(column, board) {
-    for(var row = numberOfRows-1; row > -1; row--) {
+    for(var row = items.rows-1; row > -1; row--) {
         if(board[row][column] === "invisible") {
             return row
         }
@@ -230,8 +173,7 @@ var nextColumn = 3
 
 function alphabeta(depth, alpha, beta, player, board) {
 
-    var value = evaluateBoard(player, player % 2? 2: 1, board)
-
+    var value = evaluateBoard(player, player % 2 ? 2 : 1, board)
 
     if(depth === 0 || value === 100000 || value < -100000) {
         return value
@@ -241,12 +183,10 @@ function alphabeta(depth, alpha, beta, player, board) {
 
         var scores = [];
 
-        for(var c = 0; c < numberOfColumns; c++) {
+        for(var c = 0; c < items.columns; c++) {
             var r = getFreeStopFromBoard(c, board)
 
             if(r === -1) continue;
-
-
 
             board[r][c] = "2"
 
@@ -271,7 +211,7 @@ function alphabeta(depth, alpha, beta, player, board) {
         return alpha;
 
     } else {
-        for(var c = 0; c < numberOfColumns; c++) {
+        for(var c = 0; c < items.columns; c++) {
 
             var r = getFreeStopFromBoard(c, board)
 
@@ -295,12 +235,11 @@ function doMove() {
 
     alphabeta(4, -10000, 10000, 2, board)
 
-    setPieceLocation(items.background.width * 0.1865 + 20 +
-                     nextColumn * (items.background.width * 0.0875),
-                     items.background.height * 0.2)
-    handleDrop(items.background.width * 0.1865 + 20 +
-               nextColumn * (items.background.width * 0.0875),
-               items.background.height * 0.1)
+    setPieceLocation(items.repeater.itemAt(nextColumn).x,
+                     items.repeater.itemAt(0).y)
+
+    handleDrop(items.repeater.itemAt(nextColumn).x,
+               items.repeater.itemAt(0).y)
 }
 
 function checkLine() {
@@ -343,14 +282,14 @@ function evaluateBoard(player1, player2, board) {
     var score = 0
 
     //Horizontal
-    for(var i = 0; i < numberOfRows; i++) {
+    for(var i = 0; i < items.rows; i++) {
         score += checkLine(player1, player2, board[i][0],
                            board[i][1], board[i][2], board[i][3],
                            board[i][4], board[i][5], board[i][6]);
     }
 
     //Vertical
-    for(var i = 0; i < numberOfColumns; i++) {
+    for(var i = 0; i < items.columns; i++) {
         score += checkLine(player1, player2, board[0][i],
                            board[1][i], board[2][i],
                            board[3][i], board[4][i], board[5][i])
@@ -394,7 +333,7 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
 
     // Horizontal
     var sameColor = 0
-    for(var col = 0; col < numberOfColumns; col++) {
+    for(var col = 0; col < items.columns; col++) {
         if(getPieceState(col, currentPieceRow) === currentPlayer) {
             if(++sameColor == 4) {
                 setPieceState(col, currentPieceRow, "crossed")
@@ -410,7 +349,7 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
 
     // Vertical
     sameColor = 0
-    for(var row = 0; row < numberOfRows; row++) {
+    for(var row = 0; row < items.rows; row++) {
         if(getPieceState(currentPieceColumn, row) === currentPlayer) {
             if(++sameColor == 4) {
                 setPieceState(currentPieceColumn, row, "crossed")
@@ -428,12 +367,12 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
     sameColor = 0
     var row = 0
     for(var col = currentPieceColumn - currentPieceRow;
-        col < numberOfColumns; col++) {
+        col < items.columns; col++) {
         row++
         if(col < 0)
             continue
 
-        if(row > numberOfRows)
+        if(row > items.rows)
             break
 
         if(getPieceState(col, row-1) === currentPlayer) {
@@ -455,10 +394,10 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
     for(var col = currentPieceColumn + currentPieceRow;
         col >= 0; col--) {
         row++
-        if(col >= numberOfColumns)
+        if(col >= items.columns)
             continue
 
-        if(row > numberOfRows)
+        if(row > items.rows)
             break
 
         if(getPieceState(col, row-1) === currentPlayer) {
@@ -477,15 +416,13 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
 
 function continueGame() {
 
-    items.pieces.set(currentPiece, {"stateTemp": counter++ % 2 ? "2": "1"})
+    items.pieces.set(currentPiece, {"stateTemp": items.counter++ % 2 ? "2": "1"})
 
     /* Update score if game won */
     if(twoPlayer) {
-        mutex = 1
-        items.dynamic.enabled = true
-        if(checkGameWon(parseInt(currentPiece/7), parseInt(currentPiece % 7))) {
-            items.dynamic.enabled = false
-            items.fallingPiece.opacity = 0
+        if(checkGameWon(parseInt(currentPiece / items.columns),
+                        parseInt(currentPiece % items.columns))) {
+            items.gameDone = true
             if(currentPlayer === "1") {
                 items.player1_score++
             } else {
@@ -496,26 +433,24 @@ function continueGame() {
         }
 
     } else {
-        mutex = 1
-        items.dynamic.enabled = true
-        if(checkGameWon(parseInt(currentPiece/7), parseInt(currentPiece % 7))) {
-            items.fallingPiece.opacity = 0
-            items.dynamic.enabled = false
+        if(checkGameWon(parseInt(currentPiece / items.columns),
+                        parseInt(currentPiece % items.columns))) {
+            items.gameDone = true
             if(currentPlayer === "1") {
                 items.player1_score++
                 items.bonus.good("flower")
                 items.bonus.isWin = false
-                counter--
+                items.counter--
             } else {
                 items.player2_score++
                 items.bonus.bad("flower")
             }
         }
-        if(counter % 2) {
+        if(items.counter % 2) {
             doMove()
         }
     }
-    if(counter === 42) {
+    if(items.counter === 42) {
         items.bonus.bad("flower")
     }
 }
