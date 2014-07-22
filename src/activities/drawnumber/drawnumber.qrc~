@@ -1,0 +1,8 @@
+<RCC>
+	<qresource prefix="/gcompris/src/activities/drawnumber">
+		<file>ActivityInfo.qml</file>
+		<file>Drawnumber.qml</file>
+		<file>drawnumber.svgz</file>
+		<file>drawnumber.js</file>
+	</qresource>
+</RCC>

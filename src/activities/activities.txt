@@ -15,6 +15,7 @@ clockgame
 color_mix
 color_mix_light
 colors
+drawnumber
 enumerate
 erase
 erase_2clic
