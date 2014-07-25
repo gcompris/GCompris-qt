@@ -67,10 +67,13 @@ private:
     QNetworkAccessManager accessManager;
     QUrl serverUrl;
 
-    QString getSystemResourcePath() const;
+    QString getSystemDownloadPath() const;
+    QStringList getSystemResourcePaths() const;
     QString getResourceRootForFilename(const QString& filename) const;
     QString getFilenameForUrl(const QUrl& url) const;
     QUrl getUrlForFilename(const QString& filename) const;
+    QString getAbsoluteResourcePath(const QString& path) const;
+    QString getRelativeResourcePath(const QString& path) const;
 
     bool checkDownloadRestriction() const;
     DownloadJob* getJobByReply(QNetworkReply *r);
