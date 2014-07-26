@@ -157,8 +157,6 @@ function initLevel() {
         items.nextLevelAudio.stop();
         items.nextLevelAudio.play();
         items.questionItem.visible = false;
-        items.letterAudio.source = GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
-                + Core.getSoundFilenamForChar(currentLetter));
     } else {
         // no sound -> show question
         items.questionItem.visible = true;
@@ -194,6 +192,7 @@ function nextSubLevel() {
 function checkAnswer(index)
 {
     var modelEntry = items.trainModel.get(index);
+    items.letterAudio.playLetterDelayed(modelEntry.letter, 0);
     if (modelEntry.letter == currentLetter) {
         items.bonus.good("flower");
         return true

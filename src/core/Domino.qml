@@ -39,6 +39,8 @@ Flipable {
     property bool flipEnabled: false
     property bool flipped: true
 
+    property bool isClickable: true
+
     front: Rectangle {
         anchors.fill: parent
         smooth: true;
@@ -57,6 +59,7 @@ Flipable {
             radius: parent.height * 0.25
             valueMax: flipable.valueMax
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
+            isClickable: flipable.isClickable
         }
 
         // Separation
@@ -79,6 +82,7 @@ Flipable {
             radius: parent.height * 0.25
             valueMax: flipable.valueMax
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
+            isClickable: flipable.isClickable
         }
     }
 

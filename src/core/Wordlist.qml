@@ -108,7 +108,8 @@ Item {
     function getMaxSubLevel(level) {
         if (level > maxLevel)
             return null;
-        return wordList.levels[level - 1].sublevel !== undefined ? wordList.levels[level - 1].sublevel : 0;//(wordList.levels[level - 1].sublevel !== undefined ? wordList.levels[level - 1].sublevel : wordList.levels[level - 1].words.length);
+        return wordList.levels[level - 1].sublevels !== undefined ?
+                    wordList.levels[level - 1].sublevels : 0;
     }
     
     function getRandomWord(level) {

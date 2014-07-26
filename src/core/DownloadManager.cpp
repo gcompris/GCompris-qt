@@ -118,10 +118,37 @@ QString DownloadManager::getVoicesResourceForLocale(const QString& locale) const
     return QString("data/voices/voices-%1.rcc").arg(locale);
 }
 
+/** Transform the passed relative path to an absolute resource path of an
+ * existing .rcc file, honouring the order of the systemResourcePaths
+ *
+ * @returns The absolute path of the .rcc file if it exists, QString() otherwise
+ */
+inline QString DownloadManager::getAbsoluteResourcePath(const QString& path) const
+{
+    foreach (const QString &base, getSystemResourcePaths()) {
+        if (QFile::exists(base + "/" + path))
+            return QString(base + "/" + path);
+    }
+    return QString();
+}
+
+/** Transform the passed absolute relative path to a relative resource path if possible
+ *
+ * @returns The relative path if it could be generated, QString() otherwise
+ */
+inline QString DownloadManager::getRelativeResourcePath(const QString& path) const
+{
+    QStringList parts = path.split("/", QString::SkipEmptyParts);
+    if (parts.size() < 3)
+        return QString();
+    return QString(parts[parts.size()-3] + "/" + parts[parts.size()-2]
+                   + "/" + parts[parts.size()-1]);
+}
+
 /** Check if the given relative resource path exists locally */
 bool DownloadManager::haveLocalResource(const QString& path) const
 {
-    return QFile::exists(getSystemResourcePath() + "/" + path);
+    return (getAbsoluteResourcePath(path) != QString());
 }
 
 /** Update resource from server if not prohibited by the settings and register
@@ -133,9 +160,10 @@ bool DownloadManager::updateResource(const QString& path)
     if (checkDownloadRestriction())
         return downloadResource(path);  // check for updates and register
     else {
+        QString absPath = getAbsoluteResourcePath(path);
         // automatic download prohibited -> register if available
-        if (haveLocalResource(path))
-            return registerResource(getSystemResourcePath() + "/" + path);
+        if (absPath != QString())
+            return registerResource(absPath);
         else {
             qDebug() << "No such local resource and download prohibited:"
                 << path;
@@ -281,7 +309,7 @@ bool DownloadManager::download(DownloadJob* job)
     return true;
 }
 
-DownloadManager::DownloadJob* DownloadManager::getJobByReply(QNetworkReply *r)
+inline DownloadManager::DownloadJob* DownloadManager::getJobByReply(QNetworkReply *r)
 {
     QMutexLocker locker(&jobsMutex);
     for (int i = 0; i < activeJobs.size(); i++)
@@ -297,37 +325,56 @@ void DownloadManager::downloadReadyRead()
     job->file.write(reply->readAll());
 }
 
-QString DownloadManager::getFilenameForUrl(const QUrl& url) const
+inline QString DownloadManager::getFilenameForUrl(const QUrl& url) const
 {
     QString relPart = url.toString().remove(0, serverUrl.toString().length());
-    return QString(getSystemResourcePath() + relPart);
+    return QString(getSystemDownloadPath() + relPart);
 }
 
-QUrl DownloadManager::getUrlForFilename(const QString& filename) const
+inline QUrl DownloadManager::getUrlForFilename(const QString& filename) const
 {
-    QString relPart(filename);
-    relPart.remove(0, getSystemResourcePath().length());
-    return QUrl(serverUrl.toString() + relPart);
+    return QUrl(serverUrl.toString() + "/" + getRelativeResourcePath(filename));
 }
 
-QString DownloadManager::getResourceRootForFilename(const QString& filename) const
+inline QString DownloadManager::getResourceRootForFilename(const QString& filename) const
 {
-    return QString("/gcompris") + QFileInfo(filename).path()
-            .remove(0, getSystemResourcePath().length());
+    QStringList parts = QFileInfo(filename).path().split("/", QString::SkipEmptyParts);
+    return QString("/gcompris") + "/" + parts[parts.size()-2] +
+            "/" + parts[parts.size()-1];
 }
 
-/** Get platform-specific path for storing resources
+/** Get platform-specific path storing downloaded resources
  *
- * For now uses QStandardPaths::writableLocation(QStandardPaths::DataLocation)
+ * Uses QStandardPaths::writableLocation(QStandardPaths::DataLocation)
  * which returns
- *   - on desktop $HOME/.local/share/GCompris/GCompris/
+ *   - on desktop $HOME/.local/share/KDE/GCompris/
  *   - on android /data/data/net.gcompris/files
  *
  */
-QString  DownloadManager::getSystemResourcePath() const
+inline QString  DownloadManager::getSystemDownloadPath() const
 {
-    QString path = QStandardPaths::writableLocation(QStandardPaths::DataLocation);
-    return path;
+    return QStandardPaths::writableLocation(QStandardPaths::DataLocation);
+}
+
+/** Get all paths that are used for storing resources
+ *
+ * The caller should keep list order when looking for resources.
+ *
+ * For now returns
+ * 1. getSystemdDownloadPath()
+ * 2. QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)/GCompris
+ *    which is
+ *    - $HOME/.local/share/GCompris (on linux desktop)
+ *    - /storage/sdcard0/GCompris (on android)
+ *
+ */
+inline QStringList DownloadManager::getSystemResourcePaths() const
+{
+    return QStringList({
+        getSystemDownloadPath(),
+        QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) +
+            "/GCompris"
+    });
 }
 
 bool DownloadManager::checkDownloadRestriction() const
@@ -426,7 +473,7 @@ void DownloadManager::unregisterResource_locked(const QString& filename)
     }
 }
 
-bool DownloadManager::isRegistered(const QString& filename) const
+inline bool DownloadManager::isRegistered(const QString& filename) const
 {
     return (registeredResources.indexOf(filename) != -1);
 }
@@ -507,21 +554,24 @@ void DownloadManager::downloadFinished()
     // try next:
     while (!job->queue.isEmpty()) {
         job->url = job->queue.takeFirst();
-        QString filename = getFilenameForUrl(job->url);
-        //qDebug() << "Trying next url " << job->url << " filename " << filename;
-        if (!QFile::exists(filename)
-            || !checksumMatches(job, filename)) {
-            // Note: we could only trigger a download() if the file is contained
-            // in the current Contents, for now try it anyway
+        QString relPath = getRelativeResourcePath(getFilenameForUrl(job->url));
+        // check in each resource-path for an up2date rcc file:
+        foreach (const QString &base, getSystemResourcePaths()) {
+            QString filename = base + "/" + relPath;
+            if (QFile::exists(filename)
+                && checksumMatches(job, filename))
+            {
+                // file is up2date, register! necessary:
+                qDebug() << "Local resource is up-to-date:"
+                        << QFileInfo(filename).fileName();
+                registerResource(filename);
+                code = NoChange;
+                break;
+            }
+        }
+        if (code != NoChange)  // nothing is up2date locally -> download it
             if (download(job))
                 goto outNext;
-            // else: iterate
-        } else
-            // file is up2date, register! necessary:
-            qDebug() << "Local resource is up-to-date:"
-                << QFileInfo(filename).fileName();
-            registerResource(filename);
-            code = NoChange;
     }
 
     // none left, DownloadJob finished
@@ -559,22 +609,21 @@ QStringList DownloadManager::getLocalResources()
 {
     QStringList result;
 
-    QString path = getSystemResourcePath();
-    QDir dir(path);
-    if (!dir.exists(path) && !dir.mkpath(path)) {
-        qWarning() << "Could not create resource path " << path;
-        emit error(QNetworkReply::InternalServerError,
-                QString("Could not create resource path %1").arg(path));
-        return QStringList();
-    }
+    foreach (const QString &path, getSystemResourcePaths()) {
+        QDir dir(path);
+        if (!dir.exists(path) && !dir.mkpath(path)) {
+            qWarning() << "Could not create resource path " << path;
+            continue;
+        }
 
-    QDirIterator it(dir, QDirIterator::Subdirectories);
-    while (it.hasNext()) {
-        QString filename = it.next();
-        QFileInfo fi = it.fileInfo();
-        if (fi.isFile() &&
-            (filename.endsWith(".rcc")))
-            result.append(filename);
+        QDirIterator it(dir, QDirIterator::Subdirectories);
+        while (it.hasNext()) {
+            QString filename = it.next();
+            QFileInfo fi = it.fileInfo();
+            if (fi.isFile() &&
+                    (filename.endsWith(".rcc")))
+                result.append(filename);
+        }
     }
     return result;
 }

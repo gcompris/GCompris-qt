@@ -661,17 +661,6 @@ function initLevel() {
                 qsTr("Click on the coins or paper money at the bottom of the screen to pay." +
                      " If you want to remove a coin or note, click on it on the upper screen area.")
     } else {
-        var priceText = Number(price).toLocaleCurrencyString(Qt.locale())
-        if(!centsMode) {
-            // Strip floating part
-            priceText = priceText.replace((/.00/), "")
-        }
-
-        /* The money sign is inserted based on the current locale */
-        items.instructions.text = qsTr("Tux just bought some items in your shop.\n" +
-                                       "He gives you %1, please give back his change.")
-                      .arg(priceText)
-
         var tuxMoney
         switch(data.paid) {
         case 5:
@@ -697,6 +686,23 @@ function initLevel() {
             break
         }
         items.tuxMoney.model = tuxMoney
+
+        var tuxTotal = 0
+        for(var i=0; i < tuxMoney.length; i++)
+            tuxTotal += tuxMoney[i].val
+
+        console.log(tuxTotal)
+        var priceText = Number(tuxTotal).toLocaleCurrencyString(Qt.locale())
+        if(!centsMode) {
+            // Strip floating part
+            priceText = priceText.replace((/.00/), "")
+        }
+
+        /* The money sign is inserted based on the current locale */
+        items.instructions.text = qsTr("Tux just bought some items in your shop.\n" +
+                                       "He gives you %1, please give back his change.")
+                      .arg(priceText)
+
     }
 }
 

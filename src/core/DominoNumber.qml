@@ -30,6 +30,7 @@ Item {
     property color borderColor
     property int borderWidth
     property int radius
+    property bool isClickable: true // Default value
 
     function isVisible(index) {
         var value = item.value
@@ -106,7 +107,7 @@ Item {
     }
 
     MouseArea {
-        enabled: !ApplicationInfo.isMobile
+        enabled: !ApplicationInfo.isMobile && item.isClickable
         anchors.fill: parent
         acceptedButtons: Qt.LeftButton | Qt.RightButton
         onClicked: {
@@ -127,7 +128,7 @@ Item {
 
     MultiPointTouchArea
     {
-        enabled: ApplicationInfo.isMobile
+        enabled: ApplicationInfo.isMobile && item.isClickable
         anchors.fill: parent
         maximumTouchPoints: 1
         onPressed: {

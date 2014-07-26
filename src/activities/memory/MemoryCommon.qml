@@ -1,65 +1,83 @@
+/* GCompris - MemoryCommon.qml
+ *
+ * Copyright (C) 2014 JB BUTET
+ *
+ * Authors:
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+ *   JB BUTET <ashashiwa@gmail.com> (Qt Quick port)
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
 import QtQuick 2.1
-import QtQuick.Controls 1.0
-import QtQuick.Controls.Styles 1.0
-import QtMultimedia 5.0
+import GCompris 1.0
 
 import "../../core"
-import "../memory"
 import "memory.js" as Activity
 
 ActivityBase {
     id: activity
     focus: true
-    property real displayWidthRatio
-    property real displayHeightRatio
-    property int displayX
-    property int displayY
-    property int itemWidth
-    property int itemHeight
-    property int rowsNb
-    property int paired
+
     property string backgroundImg
-    property string type  //define if it's a "picture" ou a "sound" memory
     property var dataset
-    property GCAudio sound1
+    property bool withTux: false
+    property string additionnalPath
 
     onStart: {}
     onStop: {}
-    paired:0
 
-    onPairedChanged: {
-        if (paired == 3){ //when 2 pictures are clicked and we click a third one
-          Activity.cardReturn()
-        }
-
-    }
-
-    // For perf reason it is best not to put this in each HexagonItem
+    // For perf reason it is best not to put this in each CardItem
     GCAudio {
-        id: sound1
+        id: sound
         source: ""
     }
 
     pageComponent: Image {
-        source: backgroundImg
-        fillMode: Image.PreserveAspectCrop
         id: background
-        signal start
-        signal stop
+        source: activity.backgroundImg
+        fillMode: Image.PreserveAspectCrop
         focus: true
 
+        signal start
+        signal stop
+
+        property alias items: items
 
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
 
-        onStart: { Activity.start(main, type, background, bar, bonus,
-                                  containerModel, cardRepeater, grid,
-                                  dataset, displayWidthRatio, displayHeightRatio,
-                                  displayX, displayY,sound1) }
+        QtObject {
+            id: items
+            property alias bar: bar
+            property alias bonus: bonus
+            property bool withTux: activity.withTux
+            property bool tuxTurn: false
+            property int tuxScore: tuxScore.text
+            property int playerScore: playerScore.text
+            property variant dataset: activity.dataset
+            property alias containerModel: containerModel
+            property alias cardRepeater: cardRepeater
+            property alias grid: grid
+            property int columns
+            property int rows
+        }
 
-        onStop: { Activity.stop() }
+        onStart: Activity.start(items)
+
+        onStop: Activity.stop()
 
         ListModel {
             id: containerModel
@@ -67,29 +85,28 @@ ActivityBase {
 
         Grid {
             id: grid
-            x: displayX
-            y: displayY
-            spacing: 5
+            spacing: 5 * ApplicationInfo.ratio
+            columns: items.columns
+            rows: items.rows
+            anchors {
+                left: background.left
+                right: background.rigth
+                top: background.top
+                margins: 10 * ApplicationInfo.ratio
+            }
+
             Repeater {
                 id: cardRepeater
                 model: containerModel
-                delegate: CardItem {
-                       source: back  //first picture is the back
-                       width: width_
-                       height: height_
-                       backPict: back
-                       isBack: true
-                       imagePath: image
-                       matchCode: matchCode_
-                       audioFile: audioFile_
-                       textDisplayed : text_
 
+                delegate: CardItem {
+                    pairData: pairData_
+                    tuxTurn: background.items.tuxTurn
+                    width: (background.width - (grid.columns + 1) * grid.spacing) / grid.columns
+                    height: (background.height - (grid.rows + 1) * grid.spacing) / (grid.rows + 0.5)
                }
             }
-
         }
-
-
 
         DialogHelp {
             id: dialogHelp
@@ -105,6 +122,53 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: home()
+        }
+
+        Image {
+            id: player
+            source: 'qrc:/gcompris/src/activities/memory/resource/children.svg'
+            anchors {
+                bottom: bar.bottom
+                left: bar.right
+            }
+            width: height * 0.83
+            height: bar.height * 2
+
+            Text {
+                id: playerScore
+                anchors.centerIn: parent
+                anchors.verticalCenterOffset: parent.height / 6
+                color: "black"
+                font.bold: true
+                font.pointSize: 24
+                style: Text.Outline
+                styleColor: "white"
+                text: items.playerScore
+            }
+        }
+
+        Image {
+            id: tux
+            visible: activity.withTux
+            source: 'qrc:/gcompris/src/activities/memory/resource/tux-teacher.png'
+            anchors {
+                bottom: bar.bottom
+                left: player.right
+            }
+            width: height * 0.83
+            height: bar.height * 2
+
+            Text {
+                id: tuxScore
+                anchors.centerIn: parent
+                anchors.verticalCenterOffset: parent.height / 6
+                color: "black"
+                font.bold: true
+                font.pointSize: 24
+                style: Text.Outline
+                styleColor: "white"
+                text: items.tuxScore
+            }
         }
 
         Bonus {

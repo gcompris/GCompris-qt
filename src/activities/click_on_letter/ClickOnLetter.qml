@@ -27,6 +27,7 @@ import QtGraphicalEffects 1.0
 import GCompris 1.0
 import "../../core"
 import "click_on_letter.js" as Activity
+import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -87,7 +88,7 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: home()
             onRepeatClicked: if (ApplicationSettings.isAudioEnabled)
-                                letterAudio.play();
+                                letterAudio.playLetterDelayed(Activity.currentLetter, 0);
         }
 
         Score {
@@ -234,25 +235,38 @@ ActivityBase {
             source: ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/click_on_letter.ogg")
             onError: letterAudio.play()
             // When this sound is complete, play the letter
-            onDone: letterAudio.playDelayed(100);
+            onDone: letterAudio.playLetterDelayed(Activity.currentLetter, 100);
         }
 
         GCAudio {
             id: letterAudio
             onError: questionItem.visible = true
 
-            function playDelayed(ms) {
+            function playLetterDelayed(letter, ms) {
+                console.log("Player letter " + letter);
                 if (letterAudioTimer.running)
                     letterAudioTimer.stop();
-                letterAudioTimer.interval = ms;
-                letterAudioTimer.start();
+                letterAudio.source = ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
+                        + Core.getSoundFilenamForChar(letter));
+                if (ms != 0) {
+                    letterAudioTimer.interval = ms;
+                    letterAudioTimer.start();
+                } else {
+                    if (letterAudio.playbackState != Audio.StoppedState)
+                        letterAudio.stop();
+                    letterAudio.play();
+                }
             }
         }
         
         Timer {
             id: letterAudioTimer
             repeat: false        
-            onTriggered: letterAudio.play();
+            onTriggered: {
+                if (letterAudio.playbackState != Audio.StoppedState)
+                    letterAudio.stop();
+                letterAudio.play();
+            }
         }
     }
 }

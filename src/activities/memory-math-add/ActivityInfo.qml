@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "memory-math-add/Memory-math-add.qml"
+  name: "memory-math-add/MemoryMathAdd.qml"
   difficulty: 1
   icon: "memory-math-add/memory-math-add.svgz"
   author: "JB BUTET <ashashiwa@gmail.com>"

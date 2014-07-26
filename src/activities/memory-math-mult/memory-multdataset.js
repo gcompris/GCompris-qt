@@ -16,21 +16,62 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-var memory_mult = [
-            "1*0", "2*0", "2*1", "3*0", "3*1", "3*2", "4*0", "4*1", "4*2", "4*3",
-            "1/1", "2/2", "3/3", "4/4", "5/5", "6/6", "7/7", "8/8", "9/9", "5/1", "10/10",
-            "6*5", "7*5", "7*6", "8*5", "8*6", "8*7", "9*5", "9*6", "9*7", "9*8",
+.import "qrc:/gcompris/src/activities/memory/math_util.js" as Memory
 
-            "11*10", "12*10", "12*11", "13*10", "13*11", "13*12", "14*10", "14*11", "14*12", "14*13",
-
-            "16*15", "17*15", "17*16", "18*15", "18*16", "18*17", "19*15", "19*16", "19*17", "19*18",
-
-            "21*20", "22*20", "22*21", "23*20", "23*21", "23*22", "24*20", "24*21", "24*22", "24*23",
-
-            "26*25", "27*25", "27*26", "28*25", "28*26", "28*27", "29*25", "29*26", "29*27", "29*28"
+var memory_cards = [
+            { // Level 1
+                columns: 5,
+                rows: 2,
+                texts: Memory.getMultTable(1)
+            },
+            { // Level 2
+                columns: 5,
+                rows: 2,
+                texts: Memory.getMultTable(2)
+            },
+            { // Level 3
+                columns: 5,
+                rows: 2,
+                texts: Memory.getMultTable(3)
+            },
+            { // Level 4
+                columns: 5,
+                rows: 2,
+                texts: Memory.getMultTable(4)
+            },
+            { // Level 5
+                columns: 5,
+                rows: 2,
+                texts: Memory.getMultTable(5)
+            },
+            { // Level 6
+                columns: 5,
+                rows: 2,
+                texts: Memory.getMultTable(6)
+            },
+            { // Level 7
+                columns: 5,
+                rows: 2,
+                texts: Memory.getMultTable(7)
+            },
+            { // Level 8
+                columns: 5,
+                rows: 2,
+                texts: Memory.getMultTable(8)
+            },
+            { // Level 9
+                columns: 5,
+                rows: 2,
+                texts: Memory.getMultTable(9)
+            },
+            { // Level 10
+                columns: 5,
+                rows: 2,
+                texts: Memory.getMultTable(10)
+            }
         ]
 
 
 function get() {
-    return memory_mult
+    return memory_cards
 }

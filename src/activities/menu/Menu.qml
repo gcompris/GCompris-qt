@@ -1,3 +1,23 @@
+/* GCompris - Menu.qml
+ *
+ * Copyright (C) 2014 Bruno Coudoin
+ *
+ * Authors:
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
 import QtQuick 2.2
 import QtQuick.Controls 1.1
 import "../../core"
@@ -65,6 +85,16 @@ ActivityBase {
             id: activityLoader
             asynchronous: true
             onStatusChanged: if (status == Loader.Ready) loadActivity()
+        }
+
+        function playIntroVoice(name) {
+            name = name.split("/")[0]
+            audio.source = ApplicationInfo.getAudioFilePath("voices/$LOCALE/intro/" + name + ".ogg")
+            audio.play()
+        }
+
+        GCAudio {
+            id: audio
         }
 
         // Filters
@@ -197,6 +227,7 @@ ActivityBase {
                         ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
                         activityLoader.source = "qrc:/gcompris/src/activities/" +
                                 ActivityInfoTree.menuTree[index].name
+                        playIntroVoice(ActivityInfoTree.menuTree[index].name)
                         if (activityLoader.status == Loader.Ready) loadActivity()
                     }
                 }
