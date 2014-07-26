@@ -38,6 +38,7 @@ Item {
     onHome: menu ? menu.home() : ""
     onDisplayDialog: menu ? menu.displayDialog(dialog) : ""
 
+    Keys.forwardTo: activity.children
     Keys.onEscapePressed: home()
     Keys.onPressed: {
         if (event.modifiers === Qt.ControlModifier &&
