@@ -78,9 +78,11 @@ Item {
     property int keySpacing: 3 * ApplicationInfo.ratio
     property int keyHeight: 35 * ApplicationInfo.ratio
     property int margin: 5 * ApplicationInfo.ratio
+    property bool hide
+
     opacity: 0.9
     
-    visible: ApplicationSettings.isVirtualKeyboard && priv.initialized
+    visible: !hide && ApplicationSettings.isVirtualKeyboard && priv.initialized
     enabled: visible
     
     signal keypress(string text);
@@ -167,9 +169,8 @@ Item {
          */
     }
     
-    transitions: Transition {
+    Behavior on height {
         NumberAnimation {
-            properties: "height"
             duration: 500
             easing.type: Easing.OutCubic
         }
