@@ -41,7 +41,7 @@ endif("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
 set(QT_REQUIRED_VERSION 5.3.0)
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
-            Qml Quick Gui Multimedia Core Svg XmlPatterns LinguistTools)
+            Qml Quick Gui Multimedia Core Svg Xml XmlPatterns LinguistTools)
 
 #get_cmake_property(_variableNames VARIABLES)
 #foreach (_variableName ${_variableNames})

@@ -49,10 +49,10 @@ endif()
 
 if(ANDROID)
   add_library(GCompris SHARED ${gcompris_SRCS} ${gcompris_MOC})
-  qt5_use_modules(GCompris Qml Quick Gui Multimedia Core Svg XmlPatterns)
+  qt5_use_modules(GCompris Qml Quick Gui Multimedia Core Svg Xml XmlPatterns)
 else()
   add_executable(GCompris MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
-  qt5_use_modules(GCompris Qml Quick Gui Multimedia Network XmlPatterns Svg Core)
+  qt5_use_modules(GCompris Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Core)
 endif()
 
 target_link_libraries(GCompris ${QT_LIBRARIES})
