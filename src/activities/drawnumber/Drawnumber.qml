@@ -32,12 +32,15 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image{
         id: background
         anchors.fill: parent
-        color: "#ABCDEF"
+     //   source: Activity.url + "de.svgz"
+        fillMode: Image.PreserveAspectFit
+
         signal start
         signal stop
+
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -51,7 +54,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property alias canvas: canvas
+            property alias canvasRepeater: canvasRepeater
             property alias pointImageRepeater: pointImageRepeater
             property alias pointNumberTextRepeater: pointNumberTextRepeater
         }
@@ -59,57 +62,61 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Canvas {
-               id: canvas
-               anchors {
-                   left: parent.left
-                   right: parent.right
-                   top: parent.top
-                   bottom: parent.bottom
-                   margins: 8
-               }
 
-               property color color: "black"
-               property var pointOrigin
-               property var pointToClick
 
-               onPaint: {
 
-                   var ctx = getContext('2d')
-                   ctx.lineWidth = 1.5
-                   ctx.strokeStyle = canvas.color
-                   ctx.beginPath()
-                   ctx.moveTo(pointOrigin[0],pointOrigin[1])
-                   ctx.lineTo(pointToClick[0],pointToClick[1])
-                   console.log("origin: " + pointOrigin)
-                   console.log("to click: " + pointToClick)
-                   ctx.stroke()
-               }
+        Repeater {
+            id: canvasRepeater
 
-               MouseArea {
-                   id: area
-                   anchors.fill: parent
-                   onClicked: {
-                       canvas.requestPaint()
+            Canvas {
+                   id: canvas
+                   anchors {
+                       left: parent.left
+                       right: parent.right
+                       top: parent.top
+                       bottom: parent.bottom
+                       margins: 8
                    }
-               }
+
+                   property color color: "black"
+                   property var pointOrigin
+                   property var pointToClick
+
+
+                   onPaint: {
+                       var ctx = getContext('2d')
+                       ctx.lineWidth = 1.5
+                       ctx.strokeStyle = canvas.color
+                       ctx.beginPath()
+                       ctx.moveTo(pointOrigin[0],pointOrigin[1])
+                       ctx.lineTo(pointToClick[0],pointToClick[1])
+                       ctx.stroke()
+                   }
+
+                   MouseArea {
+                       id: area
+                       anchors.fill: parent
+                       onClicked: {
+                           canvas.requestPaint()
+                       }
+                   }
+            }
         }
 
 
         Repeater {
             id: pointImageRepeater
-            model: Activity.pointPositions
-
-            Component.onCompleted: console.log("maison : " + Activity.pointPositions[0])
 
             Image {
                 id: pointImage
 
-                x: modelData[0]
-                y: modelData[1]
-          //      width: activity.width / 5
-          //      height: activity.height / 5
+            //    width: activity.width / 30
+            //    height: activity.width / 30
+
+                x: modelData[0] //- width/2
+                y: modelData[1] //- height/2
                 source: Activity.url + "bluepoint.svgz"
+
 
                 MouseArea {
                     anchors.fill: parent
@@ -121,15 +128,17 @@ ActivityBase {
             }
         }
 
-
         Repeater {
             id: pointNumberTextRepeater
-            model: Activity.pointPositions
 
             Text {
                 id: pointNumberText
                 text: index
-                x: modelData[0] + activity.width / 200
+
+                width: activity.width / 10
+                height: activity.width / 10
+
+                x: modelData[0]
                 y: modelData[1]
             }
         }
@@ -162,6 +171,7 @@ ActivityBase {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
+
     }
 
 }
