@@ -27,6 +27,10 @@ Item {
     property Item main: parent;
     property Component pageComponent
     property QtObject menu
+    property QtObject activityInfo: ActivityInfoTree.currentActivity
+    // The global audio item, append to it to play your sounds after the
+    // intro music
+    property GCAudio audio
     property bool isLocked: true
     signal home
     signal start

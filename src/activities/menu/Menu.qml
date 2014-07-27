@@ -87,16 +87,6 @@ ActivityBase {
             onStatusChanged: if (status == Loader.Ready) loadActivity()
         }
 
-        function playIntroVoice(name) {
-            name = name.split("/")[0]
-            audio.source = ApplicationInfo.getAudioFilePath("voices/$LOCALE/intro/" + name + ".ogg")
-            audio.play()
-        }
-
-        GCAudio {
-            id: audio
-        }
-
         // Filters
         property bool horizontal: main.width > main.height
         property int sectionIconWidth:
@@ -227,7 +217,6 @@ ActivityBase {
                         ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
                         activityLoader.source = "qrc:/gcompris/src/activities/" +
                                 ActivityInfoTree.menuTree[index].name
-                        playIntroVoice(ActivityInfoTree.menuTree[index].name)
                         if (activityLoader.status == Loader.Ready) loadActivity()
                     }
                 }

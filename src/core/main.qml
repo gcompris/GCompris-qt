@@ -35,6 +35,8 @@ Window {
     minimumHeight: 400
     title: "GCompris"
 
+    property QtObject currentActivity
+
     onClosing: Core.quit()
         
     GCAudio {
@@ -42,7 +44,12 @@ Window {
         source: "qrc:/gcompris/src/core/resource/intro.ogg"
         autoPlay: false
     }
-        
+
+    function playIntroVoice(name) {
+        name = name.split("/")[0]
+        audio.append(ApplicationInfo.getAudioFilePath("voices/$LOCALE/intro/" + name + ".ogg"))
+    }
+
     Component.onCompleted: {
         console.log("enter main.qml (run #" + ApplicationSettings.exeCount + ")")
         if (ApplicationSettings.exeCount == 1) {
@@ -73,6 +80,9 @@ Window {
             {
                 properties.exitItem.pause()
                 if(!properties.exitItem.isDialog) {
+                    playIntroVoice(properties.enterItem.activityInfo.name)
+                    currentActivity = properties.enterItem
+                    properties.enterItem.audio = audio
                     properties.enterItem.start()
                 }
 
@@ -96,6 +106,7 @@ Window {
             {
                 properties.exitItem.opacity = 1
                 properties.enterItem.play()
+                currentActivity = properties.enterItem
                 if(!properties.enterItem.isDialog) {
                     properties.exitItem.stop()
                 }
