@@ -47,7 +47,7 @@ Image {
                 if(audioSrc) {
                     audio.play()
                 }
-                Activity.lost()
+                crossAnim.start()
             }
         }
     }
@@ -74,4 +74,38 @@ Image {
         id: particles
         clip: false
     }
+
+    Image {
+        id: cross
+        source: Activity.url + "checkError.svg"
+        sourceSize.width: 128 * ApplicationInfo.ratio
+        anchors.centerIn: parent
+        width: 0
+        height: width
+        opacity: 1
+
+        property int size: Math.min(parent.width, parent.height)
+    }
+
+    SequentialAnimation {
+        id: crossAnim
+        PropertyAnimation {
+            target: cross
+            property: "width"
+            duration: 300
+            from: 0
+            to: cross.size
+            easing.type: Easing.InOutQuad
+        }
+        PauseAnimation { duration: 800 }
+        PropertyAnimation {
+            target: cross
+            property: "width"
+            duration: 300
+            from: cross.size
+            to: 0
+            easing.type: Easing.InOutQuad
+        }
+    }
+
 }
