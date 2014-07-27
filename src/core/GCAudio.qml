@@ -46,7 +46,6 @@ Item {
     }
 
     function append(file) {
-        console.log("append audio", file, audio.playbackState, Audio.StoppedState)
         if(audio.playbackState == Audio.StoppedState) {
             source = file
             play()
