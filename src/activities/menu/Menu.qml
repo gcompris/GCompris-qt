@@ -27,6 +27,7 @@ import "qrc:/gcompris/src/core/core.js" as Core
 ActivityBase {
     id: menuActivity
     focus: true
+    activityInfo: ActivityInfoTree.rootMenu
 
     onHome: pageView.depth === 1 ? Core.quit(menuActivity) : pageView.pop()
 
@@ -78,6 +79,7 @@ ActivityBase {
 
         function loadActivity() {
             activityLoader.item.menu = menuActivity
+            activityLoader.item.activityInfo = ActivityInfoTree.currentActivity
             pageView.push(activityLoader.item)
         }
 
