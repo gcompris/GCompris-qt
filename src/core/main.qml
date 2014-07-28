@@ -78,8 +78,10 @@ Window {
             {
                 properties.exitItem.pause()
                 if(!properties.exitItem.isDialog) {
-                    playIntroVoice(properties.enterItem.activityInfo.name)
-                    properties.enterItem.audio = audio
+                    if(!properties.enterItem.isDialog) {
+                        playIntroVoice(properties.enterItem.activityInfo.name)
+                        properties.enterItem.audio = audio
+                    }
                     properties.enterItem.start()
                 }
 
