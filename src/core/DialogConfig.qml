@@ -207,14 +207,14 @@ Rectangle {
                             
                             Image {
                                 id: voicesImage
-                                sourceSize.height: 30// * ApplicationInfo.ratio
+                                sourceSize.height: 30 * ApplicationInfo.ratio
                                 source: voicesRow.haveLocalResource ? "qrc:/gcompris/src/core/resource/apply.svgz" :
                                     "qrc:/gcompris/src/core/resource/cancel.svgz"
                             }
                             
                             Button {
                                 id: voicesButton
-                                height: parent.height
+                                height: parent.height * ApplicationInfo.ratio
                                 anchors.verticalCenter: parent.verticalCenter
                                 text: voicesRow.haveLocalResource ? qsTr("Check for updates") :
                                     qsTr("Download")
@@ -229,6 +229,117 @@ Rectangle {
                                     }
                                 }
                             }
+                        }
+
+                        Row {
+                            Text {
+                                text: qsTr("Difficulty filter:")
+                                verticalAlignment: Text.AlignVCenter
+                                height: 50 * ApplicationInfo.ratio
+                            }
+
+                            Image {
+                                source: "qrc:/gcompris/src/core/resource/bar_next.svgz"
+                                sourceSize.height: 50 * ApplicationInfo.ratio
+
+                                MouseArea {
+                                    anchors.fill: parent
+                                    onClicked: {
+                                        filterRepeater.setMin(filterRepeater.min + 1)
+                                    }
+                                }
+                            }
+
+                            // Padding
+                            Rectangle {
+                                height: 1
+                                width: 5 * ApplicationInfo.ratio
+                                opacity: 0
+                            }
+
+                            // Level filtering
+                            Repeater {
+                                id: filterRepeater
+                                model: 6
+
+                                property int min: ApplicationSettings.filterLevelMin
+                                property int max: ApplicationSettings.filterLevelMax
+
+                                function setMin(value) {
+                                    var newMin
+                                    if(min < 1)
+                                        newMin = 1
+                                    else if(min > 6)
+                                        newMin = 6
+                                    else if(max >= value)
+                                        newMin = value
+
+                                    if(newMin)
+                                        ApplicationSettings.filterLevelMin = newMin
+                                }
+
+                                function setMax(value) {
+                                    var newMax
+                                    if(max < 1)
+                                        newMax = 1
+                                    else if(max > 6)
+                                        newMax = 6
+                                    else if(min <= value)
+                                        newMax = value
+
+                                    if(newMax)
+                                        ApplicationSettings.filterLevelMax = newMax
+                                }
+
+                                Image {
+                                    source: "qrc:/gcompris/src/core/resource/difficulty" +
+                                            (modelData + 1) + ".svgz";
+                                    sourceSize.width: 50 * ApplicationInfo.ratio
+                                    opacity: modelData + 1 >= filterRepeater.min &&
+                                             modelData + 1 <= filterRepeater.max
+                                             ? 1 : 0.5
+
+                                    property int value: modelData + 1
+
+                                    MouseArea {
+                                        anchors.fill: parent
+                                        onClicked: {
+                                            if(parent.value < filterRepeater.max) {
+                                                if(parent.opacity == 1)
+                                                    filterRepeater.setMin(parent.value + 1)
+                                                else
+                                                    filterRepeater.setMin(parent.value)
+                                            } else if(parent.value > filterRepeater.min) {
+                                                if(parent.opacity == 1)
+                                                    filterRepeater.setMax(parent.value - 1)
+                                                else
+                                                    filterRepeater.setMax(parent.value)
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            // Padding
+                            Rectangle {
+                                height: 1
+                                width: 5 * ApplicationInfo.ratio
+                                opacity: 0
+                            }
+
+                            Image {
+                                source: "qrc:/gcompris/src/core/resource/bar_previous.svgz"
+                                sourceSize.height: 50 * ApplicationInfo.ratio
+
+                                MouseArea {
+                                    anchors.fill: parent
+                                    onClicked: {
+                                        filterRepeater.setMax(filterRepeater.max - 1)
+                                    }
+                                }
+                            }
+
+
                         }
                     }
                 }

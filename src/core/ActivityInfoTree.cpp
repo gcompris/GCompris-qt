@@ -118,13 +118,17 @@ void ActivityInfoTree::sortByName()
 
 // Filter the current activity list by the given tag
 // the tag 'all' means no filter
+// The level is also filtered based on the global property
 void ActivityInfoTree::filterByTag(const QString &tag)
 {
     m_menuTree.clear();
     for(auto activity: m_menuTreeFull) {
-        if(activity->section().indexOf(tag) != -1 ||
-                tag == "all")
+        if((activity->section().indexOf(tag) != -1 ||
+                tag == "all") &&
+            (activity->difficulty() >= ApplicationSettings::getInstance()->filterLevelMin() &&
+             activity->difficulty() <= ApplicationSettings::getInstance()->filterLevelMax())) {
             m_menuTree.push_back(activity);
+        }
     }
     sortByDifficulty();
     emit menuTreeChanged();

@@ -68,6 +68,9 @@ static const QString DOWNLOAD_SERVER_URL_KEY = "downloadServerUrl";
 
 static const QString EXE_COUNT_KEY = "exeCount";
 
+static const QString FILTER_LEVEL_MIN = "filterLevelMin";
+static const QString FILTER_LEVEL_MAX = "filterLevelMax";
+
 ApplicationSettings *ApplicationSettings::m_instance = NULL;
 
 ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
@@ -87,6 +90,8 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
             QLocale::system() == QLocale::c() ? GC_DEFAULT_LOCALE : QString(QLocale::system().name() + ".UTF-8")).toString();
     m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
             !ApplicationInfo::getInstance()->isMobile()).toBool();
+    m_filterLevelMin = m_config.value(FILTER_LEVEL_MIN, 1).toUInt();
+    m_filterLevelMax = m_config.value(FILTER_LEVEL_MAX, 6).toUInt();
     m_config.sync();  // make sure all defaults are written back
     m_config.endGroup();
 
@@ -105,6 +110,8 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, SIGNAL(localeChanged()), this, SLOT(notifyLocaleChanged()));
     connect(this, SIGNAL(virtualKeyboardChanged()), this, SLOT(notifyVirtualKeyboardChanged()));
     connect(this, SIGNAL(automaticDownloadsEnabledChanged()), this, SLOT(notifyAutomaticDownloadsEnabledChanged()));
+    connect(this, SIGNAL(filerMinChanged()), this, SLOT(notifyFilterLevelMinChanged()));
+    connect(this, SIGNAL(filerMaxChanged()), this, SLOT(notifyFilterLevelMaxChanged()));
     connect(this, SIGNAL(downloadServerUrlChanged()), this, SLOT(notifyDownloadServerUrlChanged()));
     connect(this, SIGNAL(exeCountChanged()), this, SLOT(notifyExeCountChanged()));
 }
@@ -119,6 +126,8 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(FULLSCREEN_KEY, m_isFullscreen);
     m_config.setValue(VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
     m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
+    m_config.setValue(FILTER_LEVEL_MIN, m_filterLevelMin);
+    m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
     m_config.endGroup();
 
     // admin group

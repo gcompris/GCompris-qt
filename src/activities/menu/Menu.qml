@@ -72,6 +72,7 @@ ActivityBase {
             tag: "strategy"
         },
     ]
+    property string currentTag: sections[0].tag
 
     pageComponent: Image {
         source: menuActivity.url + "background.svgz"
@@ -139,7 +140,7 @@ ActivityBase {
                         onClicked: {
                             particles.emitter.burst(10)
                             ActivityInfoTree.filterByTag(modelData.tag)
-                            onClicked: section.currentIndex = index
+                            menuActivity.currentTag = modelData.tag
                         }
                     }
                 }
@@ -254,6 +255,9 @@ ActivityBase {
 
     DialogConfig {
         id: dialogConfig
-        onClose: home()
+        onClose: {
+            ActivityInfoTree.filterByTag(menuActivity.currentTag)
+            home()
+        }
     }
 }
