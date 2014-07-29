@@ -2,7 +2,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "memory-math-mult/MemoryMathMult.qml"
-  difficulty: 1
+  difficulty: 5
   icon: "memory-math-mult/memory-math-mult.svgz"
   author: "JB BUTET <ashashiwa@gmail.com>"
   demo: false

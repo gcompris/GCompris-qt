@@ -2,7 +2,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "memory-math-add-tux/MemoryMathAddTux.qml"
-  difficulty: 1
+  difficulty: 3
   icon: "memory-math-add-tux/memory-math-add-tux.svgz"
   author: "JB BUTET <ashashiwa@gmail.com>"
   demo: false
