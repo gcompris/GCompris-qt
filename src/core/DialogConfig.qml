@@ -88,10 +88,9 @@ Rectangle {
                     id: flick
                     anchors.margins: 8
                     anchors.fill: parent
-                    // contentWidth: textContent.contentWidth
-                    // contentHeight: textContent.contentHeight
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
+                    contentHeight: contentItem.childrenRect.height
 
                     Column {
                         spacing: 10
@@ -145,6 +144,7 @@ Rectangle {
                         Row {
                             id: voicesRow
                             height: voicesImage.height
+                            width: parent.width
                             spacing: 5 * ApplicationInfo.ratio
                             
                             property bool haveLocalResource: false
@@ -202,15 +202,25 @@ Rectangle {
                         }
 
                         Row {
+                            width: parent.width
+
                             Text {
                                 text: qsTr("Difficulty filter:")
                                 verticalAlignment: Text.AlignVCenter
+                                font.pointSize: 16
                                 height: 50 * ApplicationInfo.ratio
+                            }
+
+                            // Padding
+                            Item {
+                                height: 1
+                                width: 10 * ApplicationInfo.ratio
                             }
 
                             Image {
                                 source: "qrc:/gcompris/src/core/resource/bar_next.svgz"
-                                sourceSize.height: 50 * ApplicationInfo.ratio
+                                anchors.verticalCenter: parent.verticalCenter
+                                sourceSize.height: Math.min(50 * ApplicationInfo.ratio, parent.width / 15)
 
                                 MouseArea {
                                     anchors.fill: parent
@@ -221,10 +231,9 @@ Rectangle {
                             }
 
                             // Padding
-                            Rectangle {
+                            Item {
                                 height: 1
                                 width: 5 * ApplicationInfo.ratio
-                                opacity: 0
                             }
 
                             // Level filtering
@@ -264,10 +273,11 @@ Rectangle {
                                 Image {
                                     source: "qrc:/gcompris/src/core/resource/difficulty" +
                                             (modelData + 1) + ".svgz";
-                                    sourceSize.width: 50 * ApplicationInfo.ratio
+                                    anchors.verticalCenter: parent.verticalCenter
+                                    sourceSize.width: Math.min(50 * ApplicationInfo.ratio, parent.width / 15)
                                     opacity: modelData + 1 >= filterRepeater.min &&
                                              modelData + 1 <= filterRepeater.max
-                                             ? 1 : 0.5
+                                             ? 1 : 0.4
 
                                     property int value: modelData + 1
 
@@ -291,15 +301,15 @@ Rectangle {
                             }
 
                             // Padding
-                            Rectangle {
+                            Item {
                                 height: 1
                                 width: 5 * ApplicationInfo.ratio
-                                opacity: 0
                             }
 
                             Image {
                                 source: "qrc:/gcompris/src/core/resource/bar_previous.svgz"
-                                sourceSize.height: 50 * ApplicationInfo.ratio
+                                sourceSize.height: Math.min(50 * ApplicationInfo.ratio, parent.width / 15)
+                                anchors.verticalCenter: parent.verticalCenter
 
                                 MouseArea {
                                     anchors.fill: parent
