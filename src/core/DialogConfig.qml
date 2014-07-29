@@ -24,7 +24,7 @@ import QtQuick.Controls.Styles 1.1
 import QtQuick.Dialogs 1.2
 import GCompris 1.0
 import QtQuick.Layouts 1.1
-import "qrc:/gcompris/src/core/core.js" as Core
+import "core.js" as Core
 
 Rectangle {
     id: dialogConfig
@@ -75,6 +75,7 @@ Rectangle {
                 }
             }
             Rectangle {
+                id: background
                 color: "#e6e6e6"
                 radius: 6.0
                 width: dialogConfig.width - 30
@@ -94,70 +95,39 @@ Rectangle {
 
                     Column {
                         spacing: 10
+                        width: parent.width
                         // Put configuration here
-                        CheckBox {
+                        GCDialogCheckBox {
                             id: enableAudioBox
                             text: qsTr("Enable audio")
                             checked: isAudioEnabled
-                            style: CheckBoxStyle {
-                                indicator: Image {
-                                    sourceSize.height: 50 * ApplicationInfo.ratio
-                                    source:
-                                        control.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
-                                                          "qrc:/gcompris/src/core/resource/cancel.svgz"
-                                }
-                            }
                             onCheckedChanged: {
                                 isAudioEnabled = checked;
                             }
                         }
 
-                        CheckBox {
+                        GCDialogCheckBox {
                             id: enableFullscreenBox
                             text: qsTr("Fullscreen")
                             checked: isFullscreen
-                            style: CheckBoxStyle {
-                                indicator: Image {
-                                    sourceSize.height: 50 * ApplicationInfo.ratio
-                                    source:
-                                        control.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
-                                                          "qrc:/gcompris/src/core/resource/cancel.svgz"
-                                }
-                            }
                             onCheckedChanged: {
                                 isFullscreen = checked;
                             }
                         }
 
-                        CheckBox {
+                        GCDialogCheckBox {
                             id: enableVirtualKeyboardBox
                             text: qsTr("Virtual Keyboard")
                             checked: isVirtualKeyboard
-                            style: CheckBoxStyle {
-                                indicator: Image {
-                                    sourceSize.height: 50 * ApplicationInfo.ratio
-                                    source:
-                                        control.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
-                                                          "qrc:/gcompris/src/core/resource/cancel.svgz"
-                                }
-                            }
                             onCheckedChanged: {
                                 isVirtualKeyboard = checked;
                             }
                         }
                         
-                        CheckBox {
+                        GCDialogCheckBox {
                             id: enableAutomaticDownloadsBox
-                            text: qsTr("Enable automatic downloads/updates of sound files")
                             checked: isAutomaticDownloadsEnabled
-                            style: CheckBoxStyle {
-                                indicator: Image {
-                                    sourceSize.height: 50 * ApplicationInfo.ratio
-                                    source:
-                                        control.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
-                                                          "qrc:/gcompris/src/core/resource/cancel.svgz"
-                                }
-                            }
+                            text: qsTr("Enable automatic downloads/updates of sound files")
                             onCheckedChanged: {
                                 isAutomaticDownloadsEnabled = checked;
                             }
