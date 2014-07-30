@@ -70,4 +70,5 @@ planegame
 reversecount
 smallnumbers
 smallnumbers2
+sudoku
 wordsgame
