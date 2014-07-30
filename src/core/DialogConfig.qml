@@ -24,7 +24,7 @@ import QtQuick.Controls.Styles 1.1
 import QtQuick.Dialogs 1.2
 import GCompris 1.0
 import QtQuick.Layouts 1.1
-import "qrc:/gcompris/src/core/core.js" as Core
+import "core.js" as Core
 
 Rectangle {
     id: dialogConfig
@@ -75,6 +75,7 @@ Rectangle {
                 }
             }
             Rectangle {
+                id: background
                 color: "#e6e6e6"
                 radius: 6.0
                 width: dialogConfig.width - 30
@@ -87,77 +88,45 @@ Rectangle {
                     id: flick
                     anchors.margins: 8
                     anchors.fill: parent
-                    // contentWidth: textContent.contentWidth
-                    // contentHeight: textContent.contentHeight
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
+                    contentHeight: contentItem.childrenRect.height
 
                     Column {
                         spacing: 10
+                        width: parent.width
                         // Put configuration here
-                        CheckBox {
+                        GCDialogCheckBox {
                             id: enableAudioBox
                             text: qsTr("Enable audio")
                             checked: isAudioEnabled
-                            style: CheckBoxStyle {
-                                indicator: Image {
-                                    sourceSize.height: 50 * ApplicationInfo.ratio
-                                    source:
-                                        control.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
-                                                          "qrc:/gcompris/src/core/resource/cancel.svgz"
-                                }
-                            }
                             onCheckedChanged: {
                                 isAudioEnabled = checked;
                             }
                         }
 
-                        CheckBox {
+                        GCDialogCheckBox {
                             id: enableFullscreenBox
                             text: qsTr("Fullscreen")
                             checked: isFullscreen
-                            style: CheckBoxStyle {
-                                indicator: Image {
-                                    sourceSize.height: 50 * ApplicationInfo.ratio
-                                    source:
-                                        control.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
-                                                          "qrc:/gcompris/src/core/resource/cancel.svgz"
-                                }
-                            }
                             onCheckedChanged: {
                                 isFullscreen = checked;
                             }
                         }
 
-                        CheckBox {
+                        GCDialogCheckBox {
                             id: enableVirtualKeyboardBox
                             text: qsTr("Virtual Keyboard")
                             checked: isVirtualKeyboard
-                            style: CheckBoxStyle {
-                                indicator: Image {
-                                    sourceSize.height: 50 * ApplicationInfo.ratio
-                                    source:
-                                        control.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
-                                                          "qrc:/gcompris/src/core/resource/cancel.svgz"
-                                }
-                            }
                             onCheckedChanged: {
                                 isVirtualKeyboard = checked;
                             }
                         }
                         
-                        CheckBox {
+                        GCDialogCheckBox {
                             id: enableAutomaticDownloadsBox
-                            text: qsTr("Enable automatic downloads/updates of sound files")
                             checked: isAutomaticDownloadsEnabled
-                            style: CheckBoxStyle {
-                                indicator: Image {
-                                    sourceSize.height: 50 * ApplicationInfo.ratio
-                                    source:
-                                        control.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
-                                                          "qrc:/gcompris/src/core/resource/cancel.svgz"
-                                }
-                            }
+                            text: qsTr("Enable automatic downloads/updates of sound files")
                             onCheckedChanged: {
                                 isAutomaticDownloadsEnabled = checked;
                             }
@@ -175,6 +144,7 @@ Rectangle {
                         Row {
                             id: voicesRow
                             height: voicesImage.height
+                            width: parent.width
                             spacing: 5 * ApplicationInfo.ratio
                             
                             property bool haveLocalResource: false
@@ -207,14 +177,14 @@ Rectangle {
                             
                             Image {
                                 id: voicesImage
-                                sourceSize.height: 30// * ApplicationInfo.ratio
+                                sourceSize.height: 30 * ApplicationInfo.ratio
                                 source: voicesRow.haveLocalResource ? "qrc:/gcompris/src/core/resource/apply.svgz" :
                                     "qrc:/gcompris/src/core/resource/cancel.svgz"
                             }
                             
                             Button {
                                 id: voicesButton
-                                height: parent.height
+                                height: parent.height * ApplicationInfo.ratio
                                 anchors.verticalCenter: parent.verticalCenter
                                 text: voicesRow.haveLocalResource ? qsTr("Check for updates") :
                                     qsTr("Download")
@@ -229,6 +199,127 @@ Rectangle {
                                     }
                                 }
                             }
+                        }
+
+                        Row {
+                            width: parent.width
+
+                            Text {
+                                text: qsTr("Difficulty filter:")
+                                verticalAlignment: Text.AlignVCenter
+                                font.pointSize: 16
+                                height: 50 * ApplicationInfo.ratio
+                            }
+
+                            // Padding
+                            Item {
+                                height: 1
+                                width: 10 * ApplicationInfo.ratio
+                            }
+
+                            Image {
+                                source: "qrc:/gcompris/src/core/resource/bar_next.svgz"
+                                anchors.verticalCenter: parent.verticalCenter
+                                sourceSize.height: Math.min(50 * ApplicationInfo.ratio, parent.width / 15)
+
+                                MouseArea {
+                                    anchors.fill: parent
+                                    onClicked: {
+                                        filterRepeater.setMin(filterRepeater.min + 1)
+                                    }
+                                }
+                            }
+
+                            // Padding
+                            Item {
+                                height: 1
+                                width: 5 * ApplicationInfo.ratio
+                            }
+
+                            // Level filtering
+                            Repeater {
+                                id: filterRepeater
+                                model: 6
+
+                                property int min: ApplicationSettings.filterLevelMin
+                                property int max: ApplicationSettings.filterLevelMax
+
+                                function setMin(value) {
+                                    var newMin
+                                    if(min < 1)
+                                        newMin = 1
+                                    else if(min > 6)
+                                        newMin = 6
+                                    else if(max >= value)
+                                        newMin = value
+
+                                    if(newMin)
+                                        ApplicationSettings.filterLevelMin = newMin
+                                }
+
+                                function setMax(value) {
+                                    var newMax
+                                    if(max < 1)
+                                        newMax = 1
+                                    else if(max > 6)
+                                        newMax = 6
+                                    else if(min <= value)
+                                        newMax = value
+
+                                    if(newMax)
+                                        ApplicationSettings.filterLevelMax = newMax
+                                }
+
+                                Image {
+                                    source: "qrc:/gcompris/src/core/resource/difficulty" +
+                                            (modelData + 1) + ".svgz";
+                                    anchors.verticalCenter: parent.verticalCenter
+                                    sourceSize.width: Math.min(50 * ApplicationInfo.ratio, parent.width / 15)
+                                    opacity: modelData + 1 >= filterRepeater.min &&
+                                             modelData + 1 <= filterRepeater.max
+                                             ? 1 : 0.4
+
+                                    property int value: modelData + 1
+
+                                    MouseArea {
+                                        anchors.fill: parent
+                                        onClicked: {
+                                            if(parent.value < filterRepeater.max) {
+                                                if(parent.opacity == 1)
+                                                    filterRepeater.setMin(parent.value + 1)
+                                                else
+                                                    filterRepeater.setMin(parent.value)
+                                            } else if(parent.value > filterRepeater.min) {
+                                                if(parent.opacity == 1)
+                                                    filterRepeater.setMax(parent.value - 1)
+                                                else
+                                                    filterRepeater.setMax(parent.value)
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            // Padding
+                            Item {
+                                height: 1
+                                width: 5 * ApplicationInfo.ratio
+                            }
+
+                            Image {
+                                source: "qrc:/gcompris/src/core/resource/bar_previous.svgz"
+                                sourceSize.height: Math.min(50 * ApplicationInfo.ratio, parent.width / 15)
+                                anchors.verticalCenter: parent.verticalCenter
+
+                                MouseArea {
+                                    anchors.fill: parent
+                                    onClicked: {
+                                        filterRepeater.setMax(filterRepeater.max - 1)
+                                    }
+                                }
+                            }
+
+
                         }
                     }
                 }

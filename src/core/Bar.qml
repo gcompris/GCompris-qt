@@ -65,7 +65,7 @@ Item {
         Item { width: 10; height: 1 }
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svgz";
-            contentId: ApplicationInfo.isMobile ? content.disabled : content.exit
+            contentId: content.exit
             sourceSize.width: 66 * barZoom
             onClicked: Core.quit();
         }
@@ -130,7 +130,7 @@ Item {
         BarButton {
             id: homeButton
             source: "qrc:/gcompris/src/core/resource/bar_home.svgz";
-            contentId: ApplicationInfo.isMobile ? content.disabled : content.home
+            contentId: content.home
             sourceSize.width: 66 * barZoom
             onClicked: bar.homeClicked()
         }

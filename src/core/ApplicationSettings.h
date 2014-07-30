@@ -60,6 +60,8 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(bool isVirtualKeyboard READ isVirtualKeyboard WRITE setVirtualKeyboard NOTIFY virtualKeyboardChanged)
     Q_PROPERTY(QString locale READ locale WRITE setLocale NOTIFY localeChanged)
     Q_PROPERTY(bool isAutomaticDownloadsEnabled READ isAutomaticDownloadsEnabled WRITE setIsAutomaticDownloadsEnabled NOTIFY automaticDownloadsEnabledChanged)
+    Q_PROPERTY(quint32 filterLevelMin READ filterLevelMin WRITE setFilterLevelMin NOTIFY filterLevelMinChanged);
+    Q_PROPERTY(quint32 filterLevelMax READ filterLevelMax WRITE setFilterLevelMax NOTIFY filterLevelMaxChanged);
 
     // admin group
     Q_PROPERTY(QString downloadServerUrl READ downloadServerUrl WRITE setDownloadServerUrl NOTIFY downloadServerUrlChanged)
@@ -120,6 +122,18 @@ public:
         emit automaticDownloadsEnabledChanged();
     }
 
+    quint32 filterLevelMin() const { return m_filterLevelMin; }
+    void setFilterLevelMin(const quint32 newFilterLevelMin) {
+        m_filterLevelMin = newFilterLevelMin;
+        emit filterLevelMinChanged();
+    }
+
+    quint32 filterLevelMax() const { return m_filterLevelMax; }
+    void setFilterLevelMax(const quint32 newFilterLevelMax) {
+        m_filterLevelMax = newFilterLevelMax;
+        emit filterLevelMaxChanged();
+    }
+
     QString downloadServerUrl() const { return m_downloadServerUrl; }
     void setDownloadServerUrl(const QString newDownloadServerUrl) {
         m_downloadServerUrl = newDownloadServerUrl;
@@ -153,6 +167,8 @@ signals:
     void virtualKeyboardChanged();
     void localeChanged();
     void automaticDownloadsEnabledChanged();
+    void filterLevelMinChanged();
+    void filterLevelMaxChanged();
 
     void downloadServerUrlChanged();
 
@@ -165,6 +181,8 @@ private:
     bool m_isFullscreen;
     bool m_isVirtualKeyboard;
     bool m_isAutomaticDownloadsEnabled;
+    quint32 m_filterLevelMin;
+    quint32 m_filterLevelMax;
     QString m_locale;
 
     QString m_downloadServerUrl;

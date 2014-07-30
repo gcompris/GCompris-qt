@@ -21,6 +21,7 @@
 
 import QtQuick 2.1
 import QtMultimedia 5.0
+import GCompris 1.0
 
 import "../../core"
 import "findit.js" as Activity
@@ -82,10 +83,6 @@ ActivityBase {
             }
         }
 
-        GCAudio {
-            id: audioQuestion
-        }
-
         Text {
             id: questionItem
             anchors.horizontalCenter: parent.horizontalCenter
@@ -100,8 +97,7 @@ ActivityBase {
             function initQuestion() {
                 text = Activity.getCurrentTextQuestion()
                 if(Activity.getCurrentAudioQuestion()) {
-                    audioQuestion.source = Activity.getCurrentAudioQuestion()
-                    audioQuestion.play()
+                    activity.audio.append(Activity.getCurrentAudioQuestion())
                 }
                 opacity = 1.0
             }
@@ -117,13 +113,15 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | previous | next }
+            content: BarEnumContent { value: help | home | previous | next | repeat }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onRepeatClicked: if (ApplicationSettings.isAudioEnabled)
+                                 questionItem.initQuestion()
         }
 
         Bonus {

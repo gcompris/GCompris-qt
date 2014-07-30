@@ -18,7 +18,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${my_cxx_flags}")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${my_cxx_flags}")
 
 set(GCOMPRIS_MAJOR_VERSION 0)
-set(GCOMPRIS_MINOR_VERSION 14)
+set(GCOMPRIS_MINOR_VERSION 15)
 set(GCOMPRIS_PATCH_VERSION 0)
 
 set(GCOMPRIS_VERSION ${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION})
@@ -41,7 +41,7 @@ endif("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
 set(QT_REQUIRED_VERSION 5.3.0)
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
-            Qml Quick Gui Multimedia Core Svg XmlPatterns LinguistTools)
+            Qml Quick Gui Multimedia Core Svg Xml XmlPatterns LinguistTools)
 
 #get_cmake_property(_variableNames VARIABLES)
 #foreach (_variableName ${_variableNames})

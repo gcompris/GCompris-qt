@@ -27,6 +27,7 @@ import "qrc:/gcompris/src/core/core.js" as Core
 ActivityBase {
     id: menuActivity
     focus: true
+    activityInfo: ActivityInfoTree.rootMenu
 
     onHome: pageView.depth === 1 ? Core.quit(menuActivity) : pageView.pop()
 
@@ -71,6 +72,7 @@ ActivityBase {
             tag: "strategy"
         },
     ]
+    property string currentTag: sections[0].tag
 
     pageComponent: Image {
         source: menuActivity.url + "background.svgz"
@@ -78,6 +80,7 @@ ActivityBase {
 
         function loadActivity() {
             activityLoader.item.menu = menuActivity
+            activityLoader.item.activityInfo = ActivityInfoTree.currentActivity
             pageView.push(activityLoader.item)
         }
 
@@ -85,16 +88,6 @@ ActivityBase {
             id: activityLoader
             asynchronous: true
             onStatusChanged: if (status == Loader.Ready) loadActivity()
-        }
-
-        function playIntroVoice(name) {
-            name = name.split("/")[0]
-            audio.source = ApplicationInfo.getAudioFilePath("voices/$LOCALE/intro/" + name + ".ogg")
-            audio.play()
-        }
-
-        GCAudio {
-            id: audio
         }
 
         // Filters
@@ -147,7 +140,7 @@ ActivityBase {
                         onClicked: {
                             particles.emitter.burst(10)
                             ActivityInfoTree.filterByTag(modelData.tag)
-                            onClicked: section.currentIndex = index
+                            menuActivity.currentTag = modelData.tag
                         }
                     }
                 }
@@ -227,7 +220,6 @@ ActivityBase {
                         ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
                         activityLoader.source = "qrc:/gcompris/src/activities/" +
                                 ActivityInfoTree.menuTree[index].name
-                        playIntroVoice(ActivityInfoTree.menuTree[index].name)
                         if (activityLoader.status == Loader.Ready) loadActivity()
                     }
                 }
@@ -263,6 +255,9 @@ ActivityBase {
 
     DialogConfig {
         id: dialogConfig
-        onClose: home()
+        onClose: {
+            ActivityInfoTree.filterByTag(menuActivity.currentTag)
+            home()
+        }
     }
 }

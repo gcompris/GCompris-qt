@@ -29,6 +29,7 @@ Item {
     property alias source: audio.source
     property alias errorString: audio.errorString
     property bool autoPlay
+    property var files: []
 
     signal error
     signal done
@@ -44,6 +45,16 @@ Item {
             audio.stop()
     }
 
+    function append(file) {
+        if(audio.playbackState == Audio.StoppedState) {
+            source = file
+            play()
+        } else {
+            files.push(file)
+        }
+
+    }
+
     Audio {
         id: audio
         autoPlay: gcaudio.autoPlay && !gcaudio.muted
@@ -51,6 +62,13 @@ Item {
             console.log("error while playing: " + source + ": " + errorString)
             gcaudio.error()
         }
-        onStopped: gcaudio.done()
+        onStopped: {
+            var nextFile = files.shift()
+            if(nextFile) {
+                source = nextFile
+                play()
+            } else
+                gcaudio.done()
+        }
     }
 }

@@ -27,6 +27,10 @@ Item {
     property Item main: parent;
     property Component pageComponent
     property QtObject menu
+    property QtObject activityInfo
+    // The global audio item, append to it to play your sounds after the
+    // intro music
+    property GCAudio audio
     property bool isLocked: true
     signal home
     signal start
@@ -38,6 +42,7 @@ Item {
     onHome: menu ? menu.home() : ""
     onDisplayDialog: menu ? menu.displayDialog(dialog) : ""
 
+    Keys.forwardTo: activity.children
     Keys.onEscapePressed: home()
     Keys.onPressed: {
         if (event.modifiers === Qt.ControlModifier &&

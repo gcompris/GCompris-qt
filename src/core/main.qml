@@ -42,7 +42,12 @@ Window {
         source: "qrc:/gcompris/src/core/resource/intro.ogg"
         autoPlay: false
     }
-        
+
+    function playIntroVoice(name) {
+        name = name.split("/")[0]
+        audio.append(ApplicationInfo.getAudioFilePath("voices/$LOCALE/intro/" + name + ".ogg"))
+    }
+
     Component.onCompleted: {
         console.log("enter main.qml (run #" + ApplicationSettings.exeCount + ")")
         if (ApplicationSettings.exeCount == 1) {
@@ -73,6 +78,10 @@ Window {
             {
                 properties.exitItem.pause()
                 if(!properties.exitItem.isDialog) {
+                    if(!properties.enterItem.isDialog) {
+                        playIntroVoice(properties.enterItem.activityInfo.name)
+                        properties.enterItem.audio = audio
+                    }
                     properties.enterItem.start()
                 }
 
