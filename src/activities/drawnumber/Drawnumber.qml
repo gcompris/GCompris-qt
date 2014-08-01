@@ -35,12 +35,10 @@ ActivityBase {
     pageComponent: Image{
         id: background
         anchors.fill: parent
-     //   source: Activity.url + "de.svgz"
         fillMode: Image.PreserveAspectFit
 
         signal start
         signal stop
-
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -54,19 +52,50 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property alias canvasRepeater: canvasRepeater
+        //    property alias canvasRepeater: canvasRepeater
             property alias pointImageRepeater: pointImageRepeater
             property alias pointNumberTextRepeater: pointNumberTextRepeater
+            property alias segmentsRepeater: segmentsRepeater
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
 
+  /*      Repeater {
+            id: canvasRepeater
+
+            Canvas {
+                   id: canvas
+                   anchors {
+                       left: parent.left
+                       right: parent.right
+                       top: parent.top
+                       bottom: parent.bottom
+                       margins: 8
+                   }
+
+                   property color color: "black"
+                   property var pointOrigin
+                   property var pointToClick
+
+                   onPaint: {
+                       var ctx = getContext('2d')
+                       ctx.lineWidth = 1.5
+                       ctx.strokeStyle = canvas.color
+                       ctx.beginPath()
+                       ctx.moveTo(pointOrigin[0],pointOrigin[1])
+                       ctx.lineTo(pointToClick[0],pointToClick[1])
+                       ctx.stroke()
+
+                       ctx.clearRect(0, 0, canvas.width, canvas.height);
+                   }
+            }
+        }*/
 
 
         Repeater {
-            id: canvasRepeater
+            id: segmentsRepeater
 
             Canvas {
                    id: canvas
@@ -84,24 +113,24 @@ ActivityBase {
 
 
                    onPaint: {
+                       console.log("model " + modelData)
+
                        var ctx = getContext('2d')
                        ctx.lineWidth = 1.5
                        ctx.strokeStyle = canvas.color
                        ctx.beginPath()
-                       ctx.moveTo(pointOrigin[0],pointOrigin[1])
-                       ctx.lineTo(pointToClick[0],pointToClick[1])
+                       console.log("canvas: " + index)
+                       console.log("ctx.moveTo(" + modelData[0] + " " + modelData[1])
+                       console.log("ctx.lineTo(" + model.get(index+1)[0] + " " + model[index+1][1])
+                       ctx.moveTo(modelData[0],modelData[1])
+                       ctx.lineTo(model[index][0],modelData[index+1][1])
                        ctx.stroke()
-                   }
 
-                   MouseArea {
-                       id: area
-                       anchors.fill: parent
-                       onClicked: {
-                           canvas.requestPaint()
-                       }
+                     //  ctx.clearRect(0, 0, canvas.width, canvas.height);
                    }
             }
         }
+
 
 
         Repeater {

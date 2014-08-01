@@ -126,6 +126,8 @@ function previousLevel() {
 
 function drawSegment(pointIndex) {
 
+    items.segmentsRepeater.canvas.requestPaint()
+
         if (pointIndex == 0) {
             pointPositions2.shift()
             items.pointImageRepeater.model = pointPositions2
@@ -135,17 +137,17 @@ function drawSegment(pointIndex) {
 
       //      console.log("pointClickedIndex: " + pointClickedIndex)
       //      console.log("points: " + pointPositions)
-            if (pointClickedIndex > 0) {
+      /*      if (pointClickedIndex > 0) {
                 items.canvasRepeater.itemAt(0).pointOrigin = pointPositions[pointClickedIndex-1]
                 console.log("pointOrigin: " + pointPositions[pointClickedIndex-1])
                 items.canvasRepeater.itemAt(0).pointToClick = pointPositions[pointClickedIndex]
                 console.log("pointToClick: " + pointPositions[pointClickedIndex])
                 items.canvasRepeater.itemAt(0).requestPaint()
-            }
+            }*/
 
         //    console.log("pointClickedIndex: " + pointClickedIndex + " - pointPositions.length: " + pointPositions.length)
 
-            if (pointClickedIndex == pointPositions.length-1)
+      /*     if (pointClickedIndex == pointPositions.length-1)
             {
                 won()
                 items.canvasRepeater.itemAt(0).requestPaint()
@@ -153,7 +155,7 @@ function drawSegment(pointIndex) {
             }
 
 
-            pointClickedIndex++
+            pointClickedIndex++*/
         }
 
 //                "coordinates": "[407,121];[489,369];[279,216];[537,214];[330,369];[407,121]"
@@ -185,7 +187,7 @@ function drawSegment(pointIndex) {
 
 function loadCoordinates() {
 
-    items.canvasRepeater.model = 1
+    //items.canvasRepeater.model = 1
 
     var str = figures[currentLevel].coordinates
     str = str.replace(/\[/g,"")
@@ -202,7 +204,8 @@ function loadCoordinates() {
     pointPositions2 = pointPositions.slice(0)
     items.pointImageRepeater.model = pointPositions
     items.pointImageRepeater.itemAt(0).z = 40    //set the first point on top of the last point
-    items.pointNumberTextRepeater.model = pointPositions
+    console.log("pointpositions :" + pointPositions)
+    items.segmentsRepeater.model = pointPositions
     pointClickedIndex = 0
 }
 
