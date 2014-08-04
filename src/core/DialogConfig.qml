@@ -45,6 +45,9 @@ Rectangle {
     title: qsTr("Configuration")
     property QtObject activityInfo: ActivityInfoTree.currentActivity
 
+    property alias teacherUuid: teacherUuid.text
+    property alias userName: userName.text
+
     Row {
         spacing: 2
         Item { width: 10; height: 1 }
@@ -321,6 +324,45 @@ Rectangle {
 
 
                         }
+
+                        Row {
+                            width: parent.width
+
+                            Text {
+                                text: "Teacher's UUID: "
+                                font.pointSize: 14
+                            }
+
+                            TextInput {
+                                id: teacherUuid
+                                width: parent.width
+                                height: 20
+                                font.pointSize: 14
+                                text: ""
+
+                                onTextChanged: getProfileFromNetwork()
+                            }
+                        }
+
+                        Row {
+                            width: parent.width
+
+                            Text {
+                                text: "User name: "
+                                font.pointSize: 14
+                            }
+
+                            TextInput {
+                                id: userName
+                                width: 100
+                                height: 20
+                                font.pointSize: 14
+                                text: ""
+
+                                onTextChanged: getProfileFromNetwork()
+                            }
+                        }
+
                     }
                 }
             }
@@ -393,6 +435,26 @@ Rectangle {
                 break;
             }
         }
+        getProfileFromNetwork()
+    }
+
+    function getProfileFromNetwork() {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.HEADERS_RECEIVED) {
+                print('HEADERS_RECEIVED');
+            } else if(xhr.readyState === XMLHttpRequest.DONE) {
+                print('DONE');
+                print(xhr.responseText);
+                var profile = JSON.parse(xhr.responseText);
+                console.log(profile.name)
+                ApplicationSettings.filterLevelMin = profile.level_min
+                ApplicationSettings.filterLevelMax = profile.level_max
+            }
+        }
+        xhr.open("GET", "http://gcompris.net:8000/schoolbus/getProfileByLogin/" +
+                 dialogConfig.teacherUuid + "/" + dialogConfig.userName);
+        xhr.send();
     }
 
     function save() {
