@@ -45,7 +45,7 @@ ActivityBase {
             focus = true
         }
 
-        property int nbRegions: 1;
+        property int nbRegions: 2;
 
         QtObject {
             id: items
@@ -54,7 +54,6 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias availablePiecesModel: availablePieces
-            property alias grid: sudoColumn
             property alias columns: sudoColumn.columns
             property alias rows: sudoColumn.rows
             property alias sudokuModel: sudokuModel
@@ -100,6 +99,7 @@ ActivityBase {
         }
 
         Grid {
+            z: 100
             x: 100
             //spacing: 2
 
@@ -125,6 +125,10 @@ ActivityBase {
                             y: Math.floor(index/sudoColumn.columns)*height
                             width: parent != null ? parent.width / sudoColumn.columns : 1
                             height: parent != null ? parent.height/ sudoColumn.columns : 1
+                            isInitial: initial
+                            text: textValue
+                            isError: error
+                            state: mState
                         }
 //                    }
                 }
@@ -135,11 +139,72 @@ ActivityBase {
             id: dynamic
             anchors.fill: sudoColumn
 
+            hoverEnabled: true
+
+            property int previousHoveredCase: -1
+            onPositionChanged: {
+                var x = Math.floor(sudoColumn.rows * mouseX / sudoColumn.width);
+                var y = Math.floor(sudoColumn.columns * mouseY / sudoColumn.height);
+                var id = x + y * sudoColumn.rows;
+
+                // Only color if we can modify the case
+                if(sudokuModel.get(id).mState == "default")
+                    sudokuModel.get(id).mState = "hovered";
+
+                // Restore previous case if different from the new one
+                if(previousHoveredCase != id) {
+                    if(previousHoveredCase != -1 && sudokuModel.get(previousHoveredCase).mState == "hovered")
+                        sudokuModel.get(previousHoveredCase).mState = "default"
+                    previousHoveredCase = id
+                }
+            }
+            onExited: {
+                if(previousHoveredCase != -1 && sudokuModel.get(previousHoveredCase).mState == "hovered")
+                    sudokuModel.get(previousHoveredCase).mState = "default"
+                previousHoveredCase = -1
+            }
+
             onClicked: {
                 var x = Math.floor(sudoColumn.rows * mouseX / sudoColumn.width);
                 var y = Math.floor(sudoColumn.columns * mouseY / sudoColumn.height);
                 Activity.clickOn(x, y)
             }
+        }
+
+        Grid {
+            z: 1001
+            id: regionGrid
+            columns: rows
+            rows: 8
+
+
+            anchors.fill: sudoColumn
+
+            Repeater {
+                id: regionRepeater
+
+                Rectangle {
+                    color: "transparent"
+                    border.color: "yellow"
+                    border.width: 6
+                    x: index+100
+                    y: index+100
+                    width: nbRegions * sudoColumn.width / sudoColumn.columns
+                    height: nbRegions * sudoColumn.height/ sudoColumn.columns
+                }
+            }
+        }
+
+        Rectangle {
+            z: 1001
+            color: "transparent"
+            border.color: "red"
+            border.width:6
+            x: 100
+            y: 0
+            width: nbRegions * sudoColumn.width / sudoColumn.columns
+            height: nbRegions * sudoColumn.height/ sudoColumn.columns
+
         }
     }
 }

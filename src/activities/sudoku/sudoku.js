@@ -286,7 +286,6 @@ var currentLevel = 0
 var numberOfLevel = levels.length
 var items
 var hoveredCase = {"x":-1, "y":-1}
-var sudokuCaseComponent = Qt.createComponent("qrc:/gcompris/src/activities/sudoku/SudokuCase.qml");
 
 var url = "qrc:/gcompris/src/activities/sudoku/resource/"
 
@@ -341,21 +340,19 @@ function initLevel() {
         var line = [];
         for(var j = 0 ; j < initialSudoku[i].length ; ++ j) {
             items.sudokuModel.append({
-                                         "background": items.background,
-                                         "text": initialSudoku[i][j],
-                                         "isInitial": initialSudoku[i][j] != ".",
-                                         "isError": false,
+                                         'textValue': initialSudoku[i][j],
+                                         'initial': initialSudoku[i][j] != ".",
+                                         'mState': initialSudoku[i][j] != "." ? "initial" : "default",
+                                         'error': false,
                                      })
         }
     }
 
-    print(items.sudokuModel.length + " " + initialSudoku.length)
     if(currentLevel < 9) { // Play with symbols
         // Randomize symbols
         for(var i = 0 ; i < symbols.length ; ++ i) {
             for(var line = 0 ; line < items.sudokuModel.count ; ++ line) {
-                print(items.sudokuModel.get(line).text);
-                if(items.sudokuModel.get(line).text == symbols[i].text) {
+                if(items.sudokuModel.get(line).textValue == symbols[i].text) {
                     items.availablePiecesModel.model.append(symbols[i]);
                     break; // break to pass to the next symbol
                 }
@@ -404,79 +401,11 @@ function incrementLevel() {
     initLevel();
 }
 
-function onPaint() {
-    // get context to draw with
-    if(items === undefined) {
-        return;
-    }
-
-    var ctx = items.canvas.getContext("2d")
-    ctx.clearRect(0, 0, items.canvas.square_width*items.rows, items.canvas.square_height*items.columns)
-    // setup the stroke
-    ctx.lineWidth = 3
-    ctx.strokeStyle = "black"
-    // begin a new path to draw
-    ctx.beginPath()
-
-    // Draw grid
-    for(var x = 0 ; x < items.rows ; ++ x) {
-        for(var y = 0 ; y < items.columns ; ++y) {
-            ctx.rect(items.canvas.x_init + items.canvas.square_width * x,
-                     items.canvas.y_init + items.canvas.square_height * y,
-                     items.canvas.square_width, items.canvas.square_height)
-        }
-    }
-
-    var initialSudoku = levels[currentLevel][items.score.currentSubLevel-1];
-
-    for(var i = 0 ; i < currentSudoku.length ; ++ i) {
-        for(var j = 0 ; j < currentSudoku.length ; ++ j) {
-//            print("("+i+","+j+"):"+currentSudoku[i][j])
-
-            if(initialSudoku[i][j] != ".") { // If fixed
-                ctx.fillStyle = items.canvas.fixed_square_color;
-            }
-            else if(i==hoveredCase.x && j==hoveredCase.y) { // Hovered case
-                ctx.fillStyle = items.canvas.highl_square_color;
-            }
-            else { // Default ones
-                ctx.fillStyle = items.canvas.normal_square_color;
-            }
-
-            ctx.fillRect(items.canvas.x_init + items.canvas.square_width * i,
-                         items.canvas.y_init + items.canvas.square_height * j,
-                         items.canvas.square_width, items.canvas.square_height
-                         );
-
-            if(currentSudoku[i][j] != ".") {
-                var imageName;
-                for(var s = 0 ; s < symbols.length ; ++ s) {
-                    if(symbols[s].text === currentSudoku[i][j]) {
-                        imageName = "qrc:/gcompris/src/activities/sudoku/resource/"+symbols[s].imgName+".png";
-                        continue;
-                    }
-                }
-//                print(items.model.model.get(i).imgName + " " + items.model.model.get(i).text)
-
-                ctx.drawImage(imageName,
-                              items.canvas.x_init + items.canvas.square_width * i,
-                              items.canvas.y_init + items.canvas.square_height * j,
-                              items.canvas.square_width, items.canvas.square_height
-                              );
-            }
-        }
-    }
-    // stroke using line width and stroke style
-    ctx.stroke()
-
-    //items.canvas.requestPaint()
-}
-
 function clickOn(caseX, caseY) {
     var initialSudoku = levels[currentLevel][items.score.currentSubLevel-1];
 
     var currentCase = caseX + caseY * initialSudoku.length;
-    print("Click on: " + caseX + " " + caseY + " (" + currentCase + ") " + items.sudokuModel.get(currentCase).text)
+    print("Click on: " + caseX + " " + caseY + " (" + currentCase + ") " + items.sudokuModel.get(currentCase).textValue)
 
     if(initialSudoku[caseY][caseX] == '.') { // Don't update fixed cases.
         var currentSymbol = items.availablePiecesModel.model.get(items.availablePiecesModel.view.currentIndex);
@@ -485,10 +414,10 @@ function clickOn(caseX, caseY) {
             If current case is empty, we look if it is legal and put the symbol.
             Else, we colorize the existing cases in conflict with the one pressed
         */
-        if(items.sudokuModel.get(currentCase).text == '.') {
+        if(items.sudokuModel.get(currentCase).textValue == '.') {
             if(isLegal(caseX, caseY, currentSymbol.text)) {
-                items.sudokuModel.get(currentCase).text = currentSymbol.text
-                print("Case " + currentCase + ":" + items.sudokuModel.get(currentCase).text)
+                items.sudokuModel.get(currentCase).textValue = currentSymbol.text
+                print("Case " + currentCase + ":" + items.sudokuModel.get(currentCase).textValue)
             }
             else {
                 // TODO Set error
@@ -496,7 +425,7 @@ function clickOn(caseX, caseY) {
         }
         else {
             // Already a symbol in this case, we remove it
-            items.sudokuModel.get(currentCase).text = '.'
+            items.sudokuModel.get(currentCase).textValue = '.'
         }
     }
 
@@ -533,8 +462,8 @@ function isLegal(posX, posY, value) {
 
         var rowValue = items.sudokuModel.get(x)
 
-        if(value == rowValue.text) {
-            items.sudokuModel.get(x).setError();
+        if(value == rowValue.textValue) {
+            items.sudokuModel.get(x).mState = "error";
             print("Impossible on x because: " + x)
             possible = false
         }
@@ -553,8 +482,8 @@ function isLegal(posX, posY, value) {
 
         var colValue = items.sudokuModel.get(y)
 
-        if(value == colValue.text) {
-            items.sudokuModel.get(y).setError();
+        if(value == colValue.textValue) {
+            items.sudokuModel.get(y).mState = "error";
             print("Impossible on y because: " + y)
             possible = false
         }
@@ -596,7 +525,7 @@ function isLegal(posX, posY, value) {
 */
 function isSolved() {
     for(var i = 0 ; i < items.sudokuModel.count ; ++ i) {
-        var value = items.sudokuModel.get(i).text
+        var value = items.sudokuModel.get(i).textValue
         if(value == '.')
             return false
     }
@@ -606,11 +535,8 @@ function isSolved() {
 function dataToImageSource(data) {
     var imageName = "";
 
-    print("dataToImageSource: " + data)
-
     for(var i = 0 ; i < symbols.length ; ++ i) {
         if(symbols[i].text == data) {
-            print("Image found: " + symbols[i].text)
             imageName = "qrc:/gcompris/src/activities/sudoku/resource/"+symbols[i].imgName+".png";
             break;
         }

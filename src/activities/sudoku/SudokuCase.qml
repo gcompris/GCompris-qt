@@ -24,15 +24,13 @@ import GCompris 1.0
 
 Rectangle {
     id: mCase
-    color: isInitial ? "lightblue" : "blue"
-    border.width: 3
+    border.width: 2
     border.color: "black"
 
     property string text
     property bool isError
     property bool isInitial
 
-    property int index
 
     Image {
         id: imageId
@@ -45,30 +43,45 @@ Rectangle {
 
     states: [
         State {
+            name: "default"
+            PropertyChanges {
+                target: mCase
+                color: "lightblue"
+            }
+        },
+        State {
             name: "error"
             PropertyChanges {
                 target: mCase
                 color: "red"
             }
             PropertyChanges {
-                target: colorTimer
+                target: restoreColorTimer
                 running: true
-            }
-
+           }
         },
         State {
-            name: "crossed"
+            name: "hovered"
             PropertyChanges {
                 target: mCase
-                opacity: 1.0
+                color: "orange"
+            }
+        },
+        State {
+            name: "initial"
+            PropertyChanges {
+                target: mCase
+                color: "gray"
             }
         }
     ]
 
     Timer {
-        id: colorTimer
+        id: restoreColorTimer
         interval: 1500
         repeat: false
-        onTriggered: { mCase.color = "blue"}
+        onTriggered: {
+            mCase.state = mCase.isInitial ? "initial" : "default"
+        }
     }
 }
