@@ -10,14 +10,14 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
-   id="svg3194"
+   width="70px"
+   height="82px"
+   id="svg3906"
    version="1.1"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="1.svg">
+   sodipodi:docname="2.svg">
   <defs
-     id="defs3196">
+     id="defs3908">
     <linearGradient
        id="linearGradient1556"
        y2="33.194"
@@ -67,7 +67,7 @@
        x1="-186.22"
        gradientTransform="matrix(0.66813,0,0,0.66813,172.36,31.338)"
        gradientUnits="userSpaceOnUse"
-       id="linearGradient3905"
+       id="linearGradient4217"
        xlink:href="#linearGradient3057"
        inkscape:collect="always" />
   </defs>
@@ -78,11 +78,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="372.14286"
-     inkscape:cy="420.07427"
-     inkscape:document-units="px"
+     inkscape:zoom="5.9485876"
+     inkscape:cx="33.967308"
+     inkscape:cy="40.305844"
      inkscape:current-layer="layer1"
+     inkscape:document-units="px"
      showgrid="false"
      inkscape:window-width="1600"
      inkscape:window-height="847"
@@ -90,23 +90,23 @@
      inkscape:window-y="31"
      inkscape:window-maximized="1" />
   <metadata
-     id="metadata3199">
+     id="metadata3911">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
+     id="layer1"
      inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1">
+     inkscape:groupmode="layer">
     <g
-       transform="matrix(8.589627,0,0,8.589627,-41.18234,141.80851)"
+       transform="translate(-14.381824,-2.6864258)"
        id="g2525">
       <path
          inkscape:connector-curvature="0"
@@ -131,7 +131,7 @@
       <path
          inkscape:connector-curvature="0"
          id="path1612"
-         style="fill:url(#linearGradient3905)"
+         style="fill:url(#linearGradient4217)"
          d="m 59.985,6.7215 c -2.277,-0.3843 -3.487,0.7317 -4.134,2.7978 -5.693,8.8457 -17.302,10.313 -26.872,10.753 -1.169,2.114 0.302,4.742 -0.083,7.057 h 22.486 v 51.676 h 15.973 v -72.2 C 64.898,6.9 62.441,6.6292 59.985,6.7218 z" />
     </g>
   </g>

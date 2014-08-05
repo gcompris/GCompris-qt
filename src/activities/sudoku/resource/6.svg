@@ -10,14 +10,14 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
-   id="svg3194"
+   width="70px"
+   height="82px"
+   id="svg3906"
    version="1.1"
    inkscape:version="0.48.5 r10040"
    sodipodi:docname="7.svg">
   <defs
-     id="defs3196">
+     id="defs3908">
     <linearGradient
        id="linearGradient1572"
        y2="171"
@@ -67,7 +67,7 @@
        x1="51.601002"
        gradientTransform="matrix(0.66813,0,0,0.66813,196.36,31.338)"
        gradientUnits="userSpaceOnUse"
-       id="linearGradient3479"
+       id="linearGradient4061"
        xlink:href="#linearGradient3057"
        inkscape:collect="always" />
   </defs>
@@ -78,19 +78,19 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="375"
-     inkscape:cy="520"
-     inkscape:document-units="px"
+     inkscape:zoom="6.1978022"
+     inkscape:cx="39.151597"
+     inkscape:cy="51.847024"
      inkscape:current-layer="layer1"
+     inkscape:document-units="px"
      showgrid="false"
-     inkscape:window-width="512"
-     inkscape:window-height="401"
-     inkscape:window-x="543"
-     inkscape:window-y="252"
-     inkscape:window-maximized="0" />
+     inkscape:window-width="1600"
+     inkscape:window-height="847"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1" />
   <metadata
-     id="metadata3199">
+     id="metadata3911">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -102,11 +102,11 @@
     </rdf:RDF>
   </metadata>
   <g
+     id="layer1"
      inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1">
+     inkscape:groupmode="layer">
     <g
-       transform="translate(147.245,393.2459)"
+       transform="translate(-193.22663,-97.614505)"
        id="g2578">
       <path
          inkscape:connector-curvature="0"
@@ -131,7 +131,7 @@
       <path
          inkscape:connector-curvature="0"
          id="path1592"
-         style="fill:url(#linearGradient3479)"
+         style="fill:url(#linearGradient4061)"
          d="m 227.63,99.884 c -13.29,-0.32 -26.83,8.436 -29.85,21.716 -3.39,12 -2.99,25.21 0.35,37.16 4.37,11.6 17.18,17.71 29.13,17.4 12.66,0.46 26.63,-6.47 29.73,-19.59 3.01,-10.9 -2.59,-24.05 -13.8,-27.46 -10.55,-4.16 -23.92,-2.39 -31.76,6.27 0,-8.53 0.14,-19.77 8.75,-24.28 6.71,-3.55 17.16,-2.76 20.82,4.69 4.82,-0.2 10.47,0.45 14.8,-0.31 -2.77,-12.16 -17.26,-16.081 -28.17,-15.596 z m 1.86,34.706 c 8.38,-0.38 15.98,7.01 15.26,15.47 0.01,9.14 -9.32,16.2 -18.16,14.65 -8.47,-0.7 -15.1,-9.41 -13.13,-17.81 1.14,-7.54 8.58,-12.76 16.03,-12.31 z" />
     </g>
   </g>

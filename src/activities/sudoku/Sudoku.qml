@@ -37,7 +37,7 @@ ActivityBase {
         signal start
         signal stop
 
-        source: "qrc:/gcompris/src/activities/sudoku/resource/background.jpg"
+        source: Activity.url+"background.jpg"
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -45,7 +45,7 @@ ActivityBase {
             focus = true
         }
 
-        property int nbRegions: 1
+        property int nbRegions
 
         QtObject {
             id: items
@@ -100,7 +100,7 @@ ActivityBase {
 
         Grid {
             z: 100
-            x: 100
+            anchors.left: availablePieces.right
 
             id: sudoColumn
             width: Math.min(background.width, background.height-2*bar.height)
@@ -113,23 +113,16 @@ ActivityBase {
 
                 Component {
                     id: blueSquare
-//                    Rectangle {
-//                        color: "#DDAAAAAA";
-//                        width: items.cellSize
-//                        height: items.cellSize
-//                        border.color: "#FFFFFFFF"
-//                        border.width: 1
-                        SudokuCase {
-                            x: (index%sudoColumn.columns)*width
-                            y: Math.floor(index/sudoColumn.columns)*height
-                            width: parent != null ? parent.width / sudoColumn.columns : 1
-                            height: parent != null ? parent.height/ sudoColumn.columns : 1
-                            isInitial: initial
-                            text: textValue
-                            isError: error
-                            state: mState
-                        }
-//                    }
+                    SudokuCase {
+                        x: (index%sudoColumn.columns)*width
+                        y: Math.floor(index/sudoColumn.columns)*height
+                        width: parent != null ? parent.width / sudoColumn.columns : 1
+                        height: parent != null ? parent.height/ sudoColumn.columns : 1
+                        isInitial: initial
+                        text: textValue
+                        isError: error
+                        state: mState
+                    }
                 }
             }
         }

@@ -1265,7 +1265,7 @@ function isLegal(posX, posY, value) {
 
                 if(value == checkedCaseValue.textValue) {
                     items.sudokuModel.get(checkedCase).mState = "error";
-                    print("Impossible on region because: " + checkedCaseValue)
+                    print("Impossible on region because: " + checkedCase)
                     possible = false
                 }
             }
@@ -1296,14 +1296,14 @@ function dataToImageSource(data) {
     if(currentLevel < symbolizeLevelMax) { // Play with symbols
     for(var i = 0 ; i < symbols.length ; ++ i) {
         if(symbols[i].text == data) {
-            imageName = "qrc:/gcompris/src/activities/sudoku/resource/"+symbols[i].imgName+symbols[i].extension;
+            imageName = url + symbols[i].imgName+symbols[i].extension;
             break;
         }
     }
     }
     else { // numbers
         if(data != ".") {
-            imageName = "qrc:/gcompris/src/activities/sudoku/resource/"+data+".svg";
+            imageName = url+data+".svg";
         }
     }
 

@@ -26,6 +26,9 @@ Item {
     property alias model: mymodel;
     property alias view: view;
 
+    width: view.width
+    height: view.height
+
     ListModel {
         id: mymodel
     }
@@ -53,7 +56,7 @@ Item {
         }
 
         clip: true
-        spacing: 20
+        spacing: 10
         model: mymodel
         delegate: contactsDelegate
     }

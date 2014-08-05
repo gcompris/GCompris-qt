@@ -30,6 +30,6 @@ ActivityInfo {
   goal: qsTr("The aim of the puzzle is to enter a symbol or numeral from 1 through 9 in each cell of a grid, most frequently a 9x9 grid made up of 3x3 subgrids (called 'regions'), starting with various symbols or numerals given in some cells (the 'givens'). Each row, column and region must contain only one instance of each symbol or numeral (Source &lt;http://en.wikipedia.org/wiki/Sudoku&gt;).")
   prerequisite: qsTr("Completing the puzzle requires patience and logical ability")
   manual: qsTr("For the first level with colored symbols, select a symbol on the left and click on its target position. For the higher levels, click on an empty square to give it the keyboard focus. Then enter a possible letter or number. GCompris will not let you enter invalid data.")
-  credit: ""
+  credit: "https://openclipart.org/detail/3149/game-marbles---digits-by-nicubunu"
   section: "/puzzle"
 }
