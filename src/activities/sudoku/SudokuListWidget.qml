@@ -42,8 +42,8 @@ Item {
                 sourceSize.height: 100 * ApplicationInfo.ratio
                 source: {
                     imgName == undefined ? "" :
-                    ListView.isCurrentItem ? "qrc:/gcompris/src/activities/sudoku/resource/"+imgName+".png"
-                                           : "qrc:/gcompris/src/activities/sudoku/resource/"+imgName+"_grey.png"
+                    ListView.isCurrentItem ? "qrc:/gcompris/src/activities/sudoku/resource/"+imgName+extension
+                                           : "qrc:/gcompris/src/activities/sudoku/resource/"+imgName+selectedColor+extension
                 }
                 MouseArea {
                     anchors.fill: parent

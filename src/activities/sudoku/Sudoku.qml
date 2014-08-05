@@ -45,7 +45,7 @@ ActivityBase {
             focus = true
         }
 
-        property int nbRegions: 2;
+        property int nbRegions: 1
 
         QtObject {
             id: items
@@ -101,7 +101,6 @@ ActivityBase {
         Grid {
             z: 100
             x: 100
-            //spacing: 2
 
             id: sudoColumn
             width: Math.min(background.width, background.height-2*bar.height)
@@ -175,36 +174,26 @@ ActivityBase {
             z: 1001
             id: regionGrid
             columns: rows
-            rows: 8
-
+            rows: nbRegions
+            visible: nbRegions > 1
 
             anchors.fill: sudoColumn
 
             Repeater {
                 id: regionRepeater
+                model: nbRegions*nbRegions
 
                 Rectangle {
+                    z: 1001
                     color: "transparent"
-                    border.color: "yellow"
-                    border.width: 6
-                    x: index+100
-                    y: index+100
+                    border.color: "red"
+                    border.width: 4
+                    x: index / nbRegions * sudoColumn.width
+                    y: (index % nbRegions) * sudoColumn.width
                     width: nbRegions * sudoColumn.width / sudoColumn.columns
                     height: nbRegions * sudoColumn.height/ sudoColumn.columns
                 }
             }
-        }
-
-        Rectangle {
-            z: 1001
-            color: "transparent"
-            border.color: "red"
-            border.width:6
-            x: 100
-            y: 0
-            width: nbRegions * sudoColumn.width / sudoColumn.columns
-            height: nbRegions * sudoColumn.height/ sudoColumn.columns
-
         }
     }
 }
