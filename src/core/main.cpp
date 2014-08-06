@@ -24,7 +24,7 @@
 #include <QtQml>
 #include <QObject>
 #include <QTranslator>
-
+#include <QCommandLineParser>
 #include <QSettings>
 
 #include "ApplicationInfo.h"
@@ -61,6 +61,16 @@ int main(int argc, char *argv[])
     app.setOrganizationName("KDE");
     app.setApplicationName("GCompris");
     app.setOrganizationDomain("kde.org");
+    app.setApplicationVersion(ApplicationInfo::GCVersion());
+
+    QCommandLineParser parser;
+    parser.setApplicationDescription("GCompris is an educational software for children 2 to 10");
+    parser.addHelpOption();
+    parser.addVersionOption();
+    QCommandLineOption exportActivitiesAsSQL("export-activities-as-sql", "Export activities as SQL");
+    parser.addOption(exportActivitiesAsSQL);
+    parser.process(app);
+
 
     ApplicationInfo::init();
 	ActivityInfoTree::init();
@@ -116,6 +126,12 @@ int main(int argc, char *argv[])
 	QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
 	QObject::connect(&engine, SIGNAL(quit()), DownloadManager::getInstance(),
 	        SLOT(shutdown()));
+
+    if(parser.isSet(exportActivitiesAsSQL)) {
+        ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree*>(ActivityInfoTree::menuTreeProvider(&engine, NULL)));
+        menuTree->exportAsSQL();
+        exit(0);
+    }
 
     QObject *topLevel = engine.rootObjects().value(0);
 

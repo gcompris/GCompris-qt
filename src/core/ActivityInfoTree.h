@@ -82,6 +82,7 @@ private:
 public:
 	static void init();
 	static QObject *menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine);
+    void exportAsSQL();
 
 };
 

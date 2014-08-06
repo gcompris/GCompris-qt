@@ -23,6 +23,7 @@
 #include <QQmlComponent>
 #include <QResource>
 #include <QCoreApplication>
+#include <QTextStream>
 
 #include "ActivityInfoTree.h"
 #include "ApplicationInfo.h"
@@ -132,6 +133,50 @@ void ActivityInfoTree::filterByTag(const QString &tag)
     }
     sortByDifficulty();
     emit menuTreeChanged();
+}
+
+void ActivityInfoTree::exportAsSQL()
+{
+    QTextStream cout(stdout);
+
+    ApplicationSettings::getInstance()->setFilterLevelMin(1);
+    ApplicationSettings::getInstance()->setFilterLevelMax(6);
+    filterByTag("all");
+
+    cout << "CREATE TABLE activities (" <<
+            "id INT UNIQUE, " <<
+            "name TEXT," <<
+            "section TEXT," <<
+            "author TEXT," <<
+            "difficulty INT," <<
+            "icon TEXT," <<
+            "title TEXT," <<
+            "description TEXT," <<
+            "prerequisite TEXT," <<
+            "goal TEXT," <<
+            "manual TEXT," <<
+            "credit TEXT," <<
+            "demo INT);" << endl;
+    cout << "DELETE FROM activities" << endl;
+
+    int i(0);
+    for(auto activity: m_menuTree) {
+        cout << "INSERT INTO activities VALUES(" <<
+                i++ << ", " <<
+                "'" << activity->name() << "', " <<
+                "'" << activity->section() << "', " <<
+                "'" << activity->author() << "', " <<
+                activity->difficulty() << ", " <<
+                "'" << activity->icon() << "', " <<
+                "\"" << activity->title() << "\", " <<
+                "\"" << activity->description() << "\", " <<
+                "\"" << activity->prerequisite() << "\", " <<
+                "\"" << activity->goal().toHtmlEscaped() << "\", " <<
+                "\"" << activity->manual().toHtmlEscaped() << "\", " <<
+                "\"" << activity->credit() << "\", " <<
+                activity->demo() <<
+                ");" << endl;
+    }
 }
 
 QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine)
