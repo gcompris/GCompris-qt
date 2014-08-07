@@ -28,9 +28,8 @@ Rectangle {
     border.color: "black"
 
     property string text
-    property bool isError
     property bool isInitial
-
+    property int gridIndex
 
     Image {
         id: imageId
@@ -81,7 +80,7 @@ Rectangle {
         interval: 1500
         repeat: false
         onTriggered: {
-            mCase.state = mCase.isInitial ? "initial" : "default"
+            Activity.restoreState(mCase)
         }
     }
 }

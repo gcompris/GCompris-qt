@@ -122,9 +122,9 @@ ActivityBase {
                         y: Math.floor(index/sudoColumn.columns)*height
                         width: parent != null ? parent.width / sudoColumn.columns : 1
                         height: parent != null ? parent.height/ sudoColumn.columns : 1
+                        gridIndex: index
                         isInitial: initial
                         text: textValue
-                        isError: error
                         state: mState
                     }
                 }

@@ -1109,7 +1109,6 @@ function initLevel() {
                                          'textValue': initialSudoku[i][j],
                                          'initial': initialSudoku[i][j] != ".",
                                          'mState': initialSudoku[i][j] != "." ? "initial" : "default",
-                                                                                'error': false,
                                      })
         }
     }
@@ -1177,13 +1176,14 @@ function clickOn(caseX, caseY) {
 
     if(initialSudoku[caseY][caseX] == '.') { // Don't update fixed cases.
         var currentSymbol = items.availablePiecesModel.model.get(items.availablePiecesModel.view.currentIndex);
-        print("isLegal : " + isLegal(caseX, caseY, currentSymbol.text))
+        var isGood = isLegal(caseX, caseY, currentSymbol.text);
+        print("isLegal : " + isGood)
         /*
             If current case is empty, we look if it is legal and put the symbol.
             Else, we colorize the existing cases in conflict with the one pressed
         */
         if(items.sudokuModel.get(currentCase).textValue == '.') {
-            if(isLegal(caseX, caseY, currentSymbol.text)) {
+            if(isGood) {
                 items.sudokuModel.get(currentCase).textValue = currentSymbol.text
             }
         }
@@ -1202,7 +1202,6 @@ function clickOn(caseX, caseY) {
 function isLegal(posX, posY, value) {
 
     var possible = true
-    var bad_square = []
 
     // Check this number is not already in a row
     var firstX = posY * items.columns;
@@ -1287,6 +1286,10 @@ function isSolved() {
             return false
     }
     return true
+}
+
+function restoreState(mCase) {
+    items.sudokuModel.get(mCase.gridIndex).mState = mCase.isInitial ? "initial" : "default"
 }
 
 function dataToImageSource(data) {

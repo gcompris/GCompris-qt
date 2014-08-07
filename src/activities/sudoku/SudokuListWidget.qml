@@ -20,6 +20,7 @@
 
 import QtQuick 2.1
 import GCompris 1.0
+import "sudoku.js" as Activity
 
 Item {
 
@@ -54,7 +55,7 @@ Item {
                     sourceSize.height: 100 * ApplicationInfo.ratio
                     source: {
                         imgName == undefined ? "" :
-                                               "qrc:/gcompris/src/activities/sudoku/resource/"+imgName+extension
+                                               Activity.url+imgName+extension
                     }
                     MouseArea {
                         anchors.fill: parent
