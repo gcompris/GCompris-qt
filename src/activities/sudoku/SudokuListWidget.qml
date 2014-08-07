@@ -40,17 +40,26 @@ Item {
 
         Component {
             id: contactsDelegate
-            Image {
-                id: icon
-                sourceSize.height: 100 * ApplicationInfo.ratio
-                source: {
-                    imgName == undefined ? "" :
-                    ListView.isCurrentItem ? "qrc:/gcompris/src/activities/sudoku/resource/"+imgName+extension
-                                           : "qrc:/gcompris/src/activities/sudoku/resource/"+imgName+selectedColor+extension
-                }
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: view.currentIndex = index
+            Rectangle {
+                color: "transparent"
+                border.color: ListView.isCurrentItem ? "red" : "transparent"
+                border.width: 3
+                radius: icon.width/4
+                width: 1.2*icon.width
+                height: 1.2*icon.height
+
+                Image {
+                    id: icon
+                    anchors.centerIn: parent
+                    sourceSize.height: 100 * ApplicationInfo.ratio
+                    source: {
+                        imgName == undefined ? "" :
+                                               "qrc:/gcompris/src/activities/sudoku/resource/"+imgName+extension
+                    }
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: view.currentIndex = index
+                    }
                 }
             }
         }

@@ -1051,11 +1051,11 @@ var symbolizeLevelMax = 7 // Last level in which we set symbols
 var url = "qrc:/gcompris/src/activities/sudoku/resource/"
 
 var symbols = [
-            {"imgName": "circle", "text": 'A', "extension": ".png", "selectedColor": "_grey"},
-            {"imgName": "rectangle", "text": 'B', "extension": ".png", "selectedColor": "_grey"},
-            {"imgName": "rhombus", "text": 'C', "extension": ".png", "selectedColor": "_grey"},
-            {"imgName": "star", "text": 'D', "extension": ".png", "selectedColor": "_grey"},
-            {"imgName": "triangle", "text": 'E', "extension": ".png", "selectedColor": "_grey"}
+            {"imgName": "circle", "text": 'A', "extension": ".png"},
+            {"imgName": "rectangle", "text": 'B', "extension": ".png"},
+            {"imgName": "rhombus", "text": 'C', "extension": ".png"},
+            {"imgName": "star", "text": 'D', "extension": ".png"},
+            {"imgName": "triangle", "text": 'E', "extension": ".png"}
         ]
 
 function start(items_) {
@@ -1129,8 +1129,7 @@ function initLevel() {
         for(var i = 1 ; i < items.columns+1 ; ++ i) {
             items.availablePiecesModel.model.append({"imgName": i.toString(),
                                                         "text": i.toString(),
-                                                        "extension": ".svg",
-                                                        "selectedColor": ""});
+                                                        "extension": ".svg"});
         }
     }
 }
@@ -1294,12 +1293,12 @@ function dataToImageSource(data) {
     var imageName = "";
 
     if(currentLevel < symbolizeLevelMax) { // Play with symbols
-    for(var i = 0 ; i < symbols.length ; ++ i) {
-        if(symbols[i].text == data) {
-            imageName = url + symbols[i].imgName+symbols[i].extension;
-            break;
+        for(var i = 0 ; i < symbols.length ; ++ i) {
+            if(symbols[i].text == data) {
+                imageName = url + symbols[i].imgName+symbols[i].extension;
+                break;
+            }
         }
-    }
     }
     else { // numbers
         if(data != ".") {
@@ -1308,4 +1307,42 @@ function dataToImageSource(data) {
     }
 
     return imageName;
+}
+
+function onKeyPressed(event) {
+    var keyValue = -1;
+    switch(event.key)
+    {
+    case Qt.Key_1:
+        keyValue = 0;
+        break;
+    case Qt.Key_2:
+        keyValue = 1;
+        break;
+    case Qt.Key_3:
+        keyValue = 2;
+        break;
+    case Qt.Key_4:
+        keyValue = 3;
+        break;
+    case Qt.Key_5:
+        keyValue = 4;
+        break;
+    case Qt.Key_6:
+        keyValue = 5;
+        break;
+    case Qt.Key_7:
+        keyValue = 6;
+        break;
+    case Qt.Key_8:
+        keyValue = 7;
+        break;
+    case Qt.Key_9:
+        keyValue = 8;
+        break;
+    }
+    if(keyValue >= 0 && keyValue < items.availablePiecesModel.model.count) {
+        items.availablePiecesModel.view.currentIndex = keyValue;
+        event.accepted=true;
+    }
 }

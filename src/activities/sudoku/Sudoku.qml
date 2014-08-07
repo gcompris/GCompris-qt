@@ -28,7 +28,7 @@ ActivityBase {
     id: activity
     focus: true
 
-    onStart: {}
+    onStart: {focus=true}
     onStop: {}
 
     pageComponent: Image {
@@ -88,6 +88,10 @@ ActivityBase {
             id: score
             anchors.bottom: background.bottom
             anchors.right: background.right
+        }
+
+        Keys.onPressed: {
+            Activity.onKeyPressed(event);
         }
 
         SudokuListWidget {
