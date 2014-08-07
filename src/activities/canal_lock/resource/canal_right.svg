@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="13"
+   height="590.30927"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.4 r9939"
+   version="1.0"
+   sodipodi:docname="canal_right.svg"
+   inkscape:output_extension="org.inkscape.output.svgz.inkscape"
+   inkscape:export-filename="/home/tef/Desktop/contrib.cyberground.org/preview/canal_lock.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   style="display:inline">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 260 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="800 : 260 : 1"
+       inkscape:persp3d-origin="400 : 173.33333 : 1"
+       id="perspective215" />
+    <linearGradient
+       id="linearGradient8693">
+      <stop
+         style="stop-color:#003fff;stop-opacity:1;"
+         offset="0"
+         id="stop8695" />
+      <stop
+         id="stop8703"
+         offset="0.29999998"
+         style="stop-color:#4c85ff;stop-opacity:1;" />
+      <stop
+         style="stop-color:#99ccff;stop-opacity:1;"
+         offset="1"
+         id="stop8697" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient8683">
+      <stop
+         style="stop-color:#000069;stop-opacity:1;"
+         offset="0"
+         id="stop8685" />
+      <stop
+         id="stop8691"
+         offset="0.29787233"
+         style="stop-color:#00007f;stop-opacity:1;" />
+      <stop
+         style="stop-color:#0000ff;stop-opacity:1;"
+         offset="1"
+         id="stop8687" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="104.37488"
+     inkscape:cy="220.59282"
+     inkscape:document-units="px"
+     inkscape:current-layer="BACKGROUND"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     borderlayer="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="BACKGROUND"
+     inkscape:label="BACKGROUND"
+     style="display:inline"
+     transform="translate(77.828423,58.93059)">
+    <path
+       style="fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1.02000010000000008;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
+       d="m -79.873753,202.00045 18.046723,-1.20113 -0.01046,198.86745 -18.101376,0 z"
+       id="rect5246"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+    <g
+       style="stroke:none;display:inline"
+       id="g8068"
+       transform="matrix(1.0047582,0,0,1.0047582,8.296667,40.54157)" />
+    <g
+       transform="translate(87.780878,94.819668)"
+       id="g8509">
+      <g
+         transform="translate(-9.5,-16)"
+         id="g8511" />
+    </g>
+    <path
+       style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:1.01999998;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       d="m -62.153306,189.60694 -17.488109,0 0,13.78447 17.488109,0 z"
+       id="rect5241"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="FRONT"
+     style="display:inline"
+     inkscape:label="FRONT"
+     transform="translate(77.828423,58.93059)" />
+</svg>

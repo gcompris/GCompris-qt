@@ -195,6 +195,26 @@ void ApplicationSettings::notifyAutomaticDownloadsEnabledChanged()
     m_config.sync();
 }
 
+void ApplicationSettings::notifyFilterLevelMinChanged()
+{
+    // Save in config
+    m_config.beginGroup(GENERAL_GROUP_KEY);
+    m_config.setValue(FILTER_LEVEL_MIN, m_filterLevelMin);
+    m_config.endGroup();
+    qDebug() << "filterLevelMin set to: " << m_filterLevelMin;
+    m_config.sync();
+}
+
+void ApplicationSettings::notifyFilterLevelMaxChanged()
+{
+    // Save in config
+    m_config.beginGroup(GENERAL_GROUP_KEY);
+    m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
+    m_config.endGroup();
+    qDebug() << "filterLevelMax set to: " << m_filterLevelMax;
+    m_config.sync();
+}
+
 void ApplicationSettings::notifyDownloadServerUrlChanged()
 {
     // Save in config

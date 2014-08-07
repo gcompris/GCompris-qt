@@ -153,6 +153,8 @@ protected slots:
     Q_INVOKABLE void notifyVirtualKeyboardChanged();
     Q_INVOKABLE void notifyLocaleChanged();
     Q_INVOKABLE void notifyAutomaticDownloadsEnabledChanged();
+    Q_INVOKABLE void notifyFilterLevelMinChanged();
+    Q_INVOKABLE void notifyFilterLevelMaxChanged();
 
     Q_INVOKABLE void notifyDownloadServerUrlChanged();
 

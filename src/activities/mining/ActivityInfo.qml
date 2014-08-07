@@ -7,7 +7,7 @@ ActivityInfo {
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: true
   title: qsTr("Mining for gold")
-  description: qsTr("Use the mousewheel to approach the rockwall an look for gold nuggets.")
+  description: qsTr("Use the mousewheel to approach the rockwall and look for gold nuggets.")
   goal: qsTr("Learn to use the mousewheel to zoom in and out.")
   prerequisite: qsTr("You should be familiar with moving the mouse and clicking.")
   manual: qsTr("Looking at the rockwall, you can see a sparkle somewhere. Move the mouse cursor next to this sparkle and use the mousewheel to zoom in. If you zoomed in at maximum, a gold nugget will appear at the position of the sparkle. Click on the gold nugget to collect it.
