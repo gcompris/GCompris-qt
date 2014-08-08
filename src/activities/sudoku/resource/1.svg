@@ -14,8 +14,8 @@
    height="82px"
    id="svg3906"
    version="1.1"
-   inkscape:version="0.48.5 r10040"
-   sodipodi:docname="2.svg">
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="1.svg">
   <defs
      id="defs3908">
     <linearGradient
@@ -78,16 +78,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.9485876"
-     inkscape:cx="33.967308"
-     inkscape:cy="40.305844"
-     inkscape:current-layer="layer1"
+     inkscape:zoom="2.1031433"
+     inkscape:cx="-23.681279"
+     inkscape:cy="50.474678"
+     inkscape:current-layer="g2525"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:window-width="1600"
-     inkscape:window-height="847"
-     inkscape:window-x="0"
-     inkscape:window-y="31"
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata3911">
@@ -97,7 +97,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -131,8 +131,9 @@
       <path
          inkscape:connector-curvature="0"
          id="path1612"
-         style="fill:url(#linearGradient4217)"
-         d="m 59.985,6.7215 c -2.277,-0.3843 -3.487,0.7317 -4.134,2.7978 -5.693,8.8457 -17.302,10.313 -26.872,10.753 -1.169,2.114 0.302,4.742 -0.083,7.057 h 22.486 v 51.676 h 15.973 v -72.2 C 64.898,6.9 62.441,6.6292 59.985,6.7218 z" />
+         style="fill:url(#linearGradient4217);stroke:#000000;stroke-width:2;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         d="m 58.219875,5.8809643 c -2.024839,0.035968 -2.058089,1.9925036 -2.705089,3.386175 -5.693,8.8456997 -17.470107,9.8927317 -27.040107,10.3327317 -1.169,2.114 -0.03421,5.91875 -0.419215,8.23375 l 22.822215,0.840536 0,51.171679 17.14975,0.168107 0.336214,-73.5448573 C 64.777921,6.5308781 61.137228,5.5223552 58.219875,5.8809643 z"
+         sodipodi:nodetypes="ccccccccc" />
     </g>
   </g>
 </svg>

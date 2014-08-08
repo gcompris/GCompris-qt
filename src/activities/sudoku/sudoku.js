@@ -1051,11 +1051,11 @@ var symbolizeLevelMax = 7 // Last level in which we set symbols
 var url = "qrc:/gcompris/src/activities/sudoku/resource/"
 
 var symbols = [
-            {"imgName": "circle", "text": 'A', "extension": ".png"},
-            {"imgName": "rectangle", "text": 'B', "extension": ".png"},
-            {"imgName": "rhombus", "text": 'C', "extension": ".png"},
-            {"imgName": "star", "text": 'D', "extension": ".png"},
-            {"imgName": "triangle", "text": 'E', "extension": ".png"}
+            {"imgName": "circle", "text": 'A', "extension": ".svg"},
+            {"imgName": "rectangle", "text": 'B', "extension": ".svg"},
+            {"imgName": "rhombus", "text": 'C', "extension": ".svg"},
+            {"imgName": "star", "text": 'D', "extension": ".svg"},
+            {"imgName": "triangle", "text": 'E', "extension": ".svg"}
         ]
 
 function start(items_) {

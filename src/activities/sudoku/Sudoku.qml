@@ -34,10 +34,11 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
+        source: Activity.url + "background.svg"
+        fillMode: Image.PreserveAspectCrop
+
         signal start
         signal stop
-
-        source: Activity.url+"background.jpg"
 
         Component.onCompleted: {
             activity.start.connect(start)

@@ -42,10 +42,10 @@ Item {
         Component {
             id: contactsDelegate
             Rectangle {
-                color: "transparent"
-                border.color: ListView.isCurrentItem ? "red" : "transparent"
+                color: ListView.isCurrentItem ? "#AA666666" : "transparent"
+                border.color: ListView.isCurrentItem ? "black" : "transparent"
                 border.width: 3
-                radius: icon.width/4
+                radius: icon.width / 10
                 width: 1.2*icon.width
                 height: 1.2*icon.height
 

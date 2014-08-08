@@ -45,14 +45,14 @@ Rectangle {
             name: "default"
             PropertyChanges {
                 target: mCase
-                color: "lightblue"
+                color: "#AA1111EE"
             }
         },
         State {
             name: "error"
             PropertyChanges {
                 target: mCase
-                color: "red"
+                color: "#AAEE1111"
             }
             PropertyChanges {
                 target: restoreColorTimer
@@ -63,14 +63,14 @@ Rectangle {
             name: "hovered"
             PropertyChanges {
                 target: mCase
-                color: "orange"
+                color: "#EE1111EE"
             }
         },
         State {
             name: "initial"
             PropertyChanges {
                 target: mCase
-                color: "gray"
+                color: "#AA996699"
             }
         }
     ]
