@@ -1,5 +1,4 @@
-/*
- gcompris - sudoku.js
+/* gcompris - sudoku.js
 
  Copyright (C)
  2003, 2014: Bruno Coudoin: initial version
@@ -1172,12 +1171,10 @@ function clickOn(caseX, caseY) {
     var initialSudoku = levels[currentLevel][items.score.currentSubLevel-1];
 
     var currentCase = caseX + caseY * initialSudoku.length;
-    print("Click on: " + caseX + " " + caseY + " (" + currentCase + ") " + items.sudokuModel.get(currentCase).textValue)
 
     if(initialSudoku[caseY][caseX] == '.') { // Don't update fixed cases.
         var currentSymbol = items.availablePiecesModel.model.get(items.availablePiecesModel.view.currentIndex);
         var isGood = isLegal(caseX, caseY, currentSymbol.text);
-        print("isLegal : " + isGood)
         /*
             If current case is empty, we look if it is legal and put the symbol.
             Else, we colorize the existing cases in conflict with the one pressed
@@ -1209,9 +1206,6 @@ function isLegal(posX, posY, value) {
 
     var clickedCase = posX + posY * items.columns;
 
-    print("pos x:" + posX + ", posY:" + posY)
-
-    print("First x:" + firstX + ", to lastX:" + lastX + ", we are:" + clickedCase)
     for (var x = firstX ; x <= lastX ; ++ x) {
         if (x == clickedCase)
             continue
@@ -1220,15 +1214,12 @@ function isLegal(posX, posY, value) {
 
         if(value == rowValue.textValue) {
             items.sudokuModel.get(x).mState = "error";
-            print("Impossible on x because: " + x)
             possible = false
         }
     }
 
     var firstY = posX;
     var lastY = items.sudokuModel.count - items.columns + firstY;
-
-    print("First y:" + firstY + ", to last y:" + lastY + ", we are:" + clickedCase)
 
     // Check this number is not already in a column
     for (var y = firstY ; y <= lastY ; y += items.columns) {
@@ -1240,7 +1231,6 @@ function isLegal(posX, posY, value) {
 
         if(value == colValue.textValue) {
             items.sudokuModel.get(y).mState = "error";
-            print("Impossible on y because: " + y)
             possible = false
         }
     }
@@ -1263,7 +1253,6 @@ function isLegal(posX, posY, value) {
 
                 if(value == checkedCaseValue.textValue) {
                     items.sudokuModel.get(checkedCase).mState = "error";
-                    print("Impossible on region because: " + checkedCase)
                     possible = false
                 }
             }
