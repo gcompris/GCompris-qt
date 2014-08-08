@@ -108,7 +108,8 @@ ActivityBase {
             anchors.left: availablePieces.right
 
             id: sudoColumn
-            width: Math.min(background.width, background.height-2*bar.height)
+            width:  Math.min(background.width - availablePieces.width - availablePieces.anchors.leftMargin,
+                             background.height - 2 * bar.height)
             height: width
 
             Repeater {

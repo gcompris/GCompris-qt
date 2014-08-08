@@ -24,11 +24,13 @@ import "sudoku.js" as Activity
 
 Item {
 
-    property alias model: mymodel;
-    property alias view: view;
-
     width: view.width
     height: view.height
+    anchors.left: parent.left
+    anchors.leftMargin: 2 * ApplicationInfo.ratio
+
+    property alias model: mymodel;
+    property alias view: view;
 
     ListModel {
         id: mymodel
@@ -36,8 +38,12 @@ Item {
 
     ListView {
         id: view
-        width: background.width/5
-        height: background.height- 2*bar.height
+        width: background.width / 5
+        height: background.height - 2 * bar.height
+        interactive: false
+
+        property int iconSize: Math.min(height / mymodel.count * 0.9,
+                                        view.width * 0.9)
 
         Component {
             id: contactsDelegate
@@ -45,17 +51,17 @@ Item {
                 color: ListView.isCurrentItem ? "#AA666666" : "transparent"
                 border.color: ListView.isCurrentItem ? "black" : "transparent"
                 border.width: 3
-                radius: icon.width / 10
-                width: 1.2*icon.width
-                height: 1.2*icon.height
+                radius: view.iconSize / 10
+                width: view.iconSize
+                height: view.iconSize
 
                 Image {
                     id: icon
                     anchors.centerIn: parent
-                    sourceSize.height: 100 * ApplicationInfo.ratio
+                    sourceSize.height: view.iconSize * 0.9
                     source: {
                         imgName == undefined ? "" :
-                                               Activity.url+imgName+extension
+                                               Activity.url + imgName + extension
                     }
                     MouseArea {
                         anchors.fill: parent
