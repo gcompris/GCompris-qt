@@ -105,10 +105,15 @@ ActivityBase {
 
         Grid {
             z: 100
-            anchors.left: availablePieces.right
+            anchors {
+                left: availablePieces.right
+                top: parent.top
+                topMargin: 2 * ApplicationInfo.ratio
+            }
 
             id: sudoColumn
-            width:  Math.min(background.width - availablePieces.width - availablePieces.anchors.leftMargin,
+            width:  Math.min(background.width - availablePieces.width -
+                             availablePieces.anchors.leftMargin,
                              background.height - 2 * bar.height)
             height: width
 
@@ -185,7 +190,7 @@ ActivityBase {
                 Rectangle {
                     z: 1001
                     color: "transparent"
-                    border.color: "red"
+                    border.color: "orange"
                     border.width: 4
                     x: index / nbRegions * sudoColumn.width
                     y: (index % nbRegions) * sudoColumn.width

@@ -26,8 +26,12 @@ Item {
 
     width: view.width
     height: view.height
-    anchors.left: parent.left
-    anchors.leftMargin: 2 * ApplicationInfo.ratio
+    anchors {
+        left: parent.left
+        leftMargin: 2 * ApplicationInfo.ratio
+        top: parent.top
+        topMargin: 2 * ApplicationInfo.ratio
+    }
 
     property alias model: mymodel;
     property alias view: view;
@@ -41,9 +45,13 @@ Item {
         width: background.width / 5
         height: background.height - 2 * bar.height
         interactive: false
+        spacing: 10
+        model: mymodel
+        delegate: contactsDelegate
 
-        property int iconSize: Math.min(height / mymodel.count * 0.9,
-                                        view.width * 0.9)
+        property int iconSize: Math.min((height - mymodel.count * spacing) /
+                                        mymodel.count,
+                                        view.width * 0.95)
 
         Component {
             id: contactsDelegate
@@ -70,10 +78,5 @@ Item {
                 }
             }
         }
-
-        clip: true
-        spacing: 10
-        model: mymodel
-        delegate: contactsDelegate
     }
 }
