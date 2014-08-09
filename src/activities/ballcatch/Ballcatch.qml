@@ -45,6 +45,7 @@ ActivityBase {
         focus: true
         fillMode: Image.PreserveAspectCrop
         source: "qrc:/gcompris/src/activities/ballcatch/resource/beach1.svgz"
+        sourceSize.width: parent.width
 
         Component.onCompleted: {
             activity.start.connect(start)

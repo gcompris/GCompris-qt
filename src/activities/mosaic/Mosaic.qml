@@ -33,6 +33,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         source: Activity.url + "background.svgz"
+        sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
         anchors.fill: parent
         signal start

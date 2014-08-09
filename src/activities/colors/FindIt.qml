@@ -43,6 +43,7 @@ ActivityBase {
         signal stop
         focus: true
         fillMode: Image.PreserveAspectCrop
+        sourceSize.width: parent.width
         source: backgroundImg
 
         Component.onCompleted: {

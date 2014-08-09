@@ -46,6 +46,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         source: activity.backgroundImg
+        sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
         focus: true
 

@@ -35,6 +35,7 @@ ActivityBase {
         id: background
         anchors.fill: parent
         source: Activity.url + "desert_scene.svgz"
+        sourceSize.width: parent.width
         signal start
         signal stop
 

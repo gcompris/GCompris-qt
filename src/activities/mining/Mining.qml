@@ -61,13 +61,11 @@ ActivityBase {
         Image {
                 id: miningBg
                 source: Activity.url + "rockwall.svg"
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
-                // Should set a large value to load a larger svg and increase
-                // zoomed quality but it makes the image rendered black on android
-                sourceSize.width: parent.width
-                width: parent.width
-                height: parent.height
+                anchors.fill: parent
+                sourceSize.width: parent.width * 3
+//                width: parent.width * 3
+//                height: parent.height * 3
+                scale: _MIN_SCALE
 
                 property real _MAX_SCALE: 3
                 property real _MIN_SCALE: 1
@@ -77,7 +75,7 @@ ActivityBase {
 
                 Image {
                     source: Activity.url + "vertical_border.svg"
-                    sourceSize.height: parent.height
+                    sourceSize.height: parent.height * 3
                     width: parent.width * 0.05
                     anchors {
                         top: parent.top
@@ -88,7 +86,7 @@ ActivityBase {
 
                 Image {
                     source: Activity.url + "vertical_border.svg"
-                    sourceSize.height: parent.height
+                    sourceSize.height: parent.height * 3
                     width: parent.width * 0.05
                     anchors {
                         top: parent.top
@@ -99,7 +97,7 @@ ActivityBase {
 
                 Image {
                     source: Activity.url + "horizontal_border.svg"
-                    sourceSize.width: parent.width
+                    sourceSize.width: parent.width * 3
                     height: parent.height * 0.05
                     anchors {
                         top: parent.top
@@ -108,34 +106,18 @@ ActivityBase {
                     }
                 }
 
-                PinchArea {
-                    id: pinchy
-                    property real pinchscale
-                    enabled: true
-                    anchors.fill: parent
-                    onPinchStarted: pinchscale = pinch.scale
-                    onPinchUpdated: {
-                        miningBg.updateScale(pinch.scale - pinchy.pinchscale,
-                                             pinch.center.x, pinch.center.y)
-                        pinchy.pinchscale = pinch.scale
-                   }
-                }
-
                 GridView {
                     id: mineObjects
                     anchors.fill: parent
                     cellWidth: parent.width / 4
                     cellHeight: parent.height / 4
-                    interactive: false
 
                     delegate: Item {
                         width: mineObjects.cellWidth
                         height: mineObjects.cellHeight
                         Image {
                             source: Activity.url + "gold_nugget.svg"
-                            sourceSize.width: mineObjects.cellWidth * 3
-                            width: mineObjects.cellWidth * modelData.widthFactor
-                            height: mineObjects.cellHeight * modelData.widthFactor * 0.6
+                            sourceSize.width: mineObjects.cellWidth * 0.2
                             anchors.horizontalCenter: parent.horizontalCenter
                             anchors.verticalCenter: parent.verticalCenter
                             opacity: modelData.isTarget &&
@@ -157,6 +139,7 @@ ActivityBase {
                         Image {
                             id: cell
                             source: modelData.source
+//                            sourceSize.width: mineObjects.cellWidth * modelData.widthFactor
                             sourceSize.width: mineObjects.cellWidth * 3
                             width: mineObjects.cellWidth * modelData.widthFactor
                             height: mineObjects.cellHeight * modelData.widthFactor
@@ -201,35 +184,50 @@ ActivityBase {
                     }
                 }
 
-                function updateOffset(x, y) {
-
-                    var offsetX = (miningBg.width * miningBg.scale - miningBg.width) *
-                            (miningBg.width / 2 - x) / (miningBg.width / 2)
-                    miningBg.anchors.horizontalCenterOffset = offsetX / 2
-
-                    var offsetY = (miningBg.height * miningBg.scale - miningBg.height) *
-                            (miningBg.height / 2 - y) / (miningBg.height / 2)
-                    miningBg.anchors.verticalCenterOffset = offsetY / 2
-
-                }
-
                 function updateScale(zoomDelta, x, y) {
 
+                    console.log(zoomDelta, miningBg.scale)
                     if (zoomDelta > 0 && miningBg.scale < miningBg._MAX_SCALE) {
+                        if(miningBg.scale < miningBg._MAX_SCALE) {
+//                            if(x <= miningBg.width / 3) {
+//                                miningBg.anchors.left = background.left
+//                                miningBg.anchors.right = undefined
+//                                miningBg.anchors.horizontalCenter = undefined
+//                            } else if(zoomDelta > parent.width * 2 / 3) {
+//                                miningBg.anchors.left = undefined
+//                                miningBg.anchors.right = background.right
+//                                miningBg.anchors.horizontalCenter = undefined
+//                            } else {
+//                                miningBg.anchors.left = undefined
+//                                miningBg.anchors.right = undefined
+//                                miningBg.anchors.horizontalCenter = background.horizontalCenter
+//                            }
 
+
+//                            if(y <= miningBg.height / 3) {
+//                                miningBg.anchors.top = background.top
+//                                miningBg.anchors.bottom = undefined
+//                                miningBg.anchors.verticalCenter = undefined
+//                            } else if(y > miningBg.height * 2 / 3) {
+//                                miningBg.anchors.top = undefined
+//                                miningBg.anchors.bottom = background.bottom
+//                                miningBg.anchors.verticalCenter = undefined
+//                            } else {
+//                                miningBg.anchors.top = undefined
+//                                miningBg.anchors.bottom = undefined
+//                                miningBg.anchors.verticalCenter = background.verticalCenter
+//                            }
+
+                        }
                         if(miningBg.scale < miningBg._MAX_SCALE - 0.1)
                             miningBg.scale += 0.1;
                         else
                             miningBg.scale = miningBg._MAX_SCALE
-
-                        updateOffset(x, y)
-
                     } else if (zoomDelta < 0) {
                         if(miningBg.scale > miningBg._MIN_SCALE) {
                             miningBg.scale -= 0.1;
-                            updateOffset(x, y)
-                        } else if (background.gotIt) {
-                            background.gotIt = false
+                        } else if (gotIt) {
+                            gotIt = false
                             if(miningBg.level == miningBg.maxLevel)
                                 bonus.good("lion")
                             else {
@@ -248,30 +246,52 @@ ActivityBase {
 
                     onWheel: miningBg.updateScale(wheel.angleDelta.y, wheel.x, wheel.y)
                 }
-        }
 
-        Text {
-            id: instructions
-            anchors.fill: parent
-            horizontalAlignment:  Text.AlignHCenter
-            font.pointSize: 24
-            color: "white"
-            style: Text.Outline
-            styleColor: "black"
-            wrapMode: Text.WordWrap
-            maximumLineCount: 2
+//                PinchArea {
+//                    id: pinchy
+//                    property int xpoint
+//                    property int ypoint
+//                    property int pinchscale
+//                    enabled: true
+//                    anchors.fill: parent
+//                    pinch.dragAxis: Pinch.XandYAxis
+//                    pinch.minimumX: - parent.width / 2
+//                    pinch.maximumX: parent.width / 2
+//                    pinch.minimumY: - parent.height / 2
+//                    pinch.maximumY: parent.height / 2
+//                    onPinchUpdated: {
+//                        xpoint = pinch.center.x;
+//                        ypoint = pinch.center.y;
+//                        pinchscale = pinch.scale
+//                        miningBg.scale = pinchscale + 1
+//                        console.log(xpoint, ypoint, pinchscale)
+//                    }
+//                }
 
-            text: {
-                if(bar.level == 1) {
-                    if(miningBg.scale < miningBg._MAX_SCALE && !background.gotIt)
-                        return qsTr("Zoom in over the sparkle")
-                    else if(miningBg.scale == miningBg._MAX_SCALE && !background.gotIt)
-                        return qsTr("Click on the gold nugget")
-                    else if(background.gotIt)
-                        return qsTr("Zoom out")
+                MultiPointTouchArea {
+                    anchors.fill: parent
+                    enabled: ApplicationInfo.isMobile
+                    mouseEnabled: false
+                    minimumTouchPoints: 2
+                    maximumTouchPoints: 2
+                    property int prevDist: -1
+                    touchPoints: [
+                               TouchPoint { id: point1 },
+                               TouchPoint { id: point2 }
+                           ]
+                    onTouchUpdated: {
+                        // Calc Distance
+                        var dist = Math.floor(Math.sqrt(Math.pow(point1.x - point2.x, 2),
+                                                        Math.pow(point1.y - point1.y, 2)) / 50)
+                        console.log("dist=", dist)
+
+                        if(prevDist > -1 && prevDist != dist)
+                            miningBg.updateScale(dist - prevDist,
+                                                 point1.x, point1.y)
+                        prevDist = dist
+
+                    }
                 }
-                return ""
-            }
         }
 
         Image {
@@ -317,8 +337,6 @@ ActivityBase {
             onLevelChanged: {
                 miningBg.scale = miningBg._MIN_SCALE
                 miningBg.level = 1
-                miningBg.anchors.horizontalCenterOffset = 0
-                miningBg.anchors.verticalCenterOffset = 0
                 switch(bar.level) {
                 case 1:
                     miningBg.maxLevel = 2

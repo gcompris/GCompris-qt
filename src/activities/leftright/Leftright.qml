@@ -34,6 +34,7 @@ ActivityBase {
 
     pageComponent: Image {
         source: "qrc:/gcompris/src/activities/leftright/resource/back.svgz"
+        sourceSize.width: parent.width
         focus: true
         signal start
         signal stop

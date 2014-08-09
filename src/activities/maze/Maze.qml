@@ -41,6 +41,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         source: Activity.url + "maze_bg.svgz"
+        sourceSize.width: parent.width
         anchors.fill: parent
         signal start
         signal stop

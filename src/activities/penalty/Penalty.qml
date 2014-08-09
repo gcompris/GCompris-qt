@@ -35,6 +35,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         source: Activity.url + "penalty_bg.svgz"
+        sourceSize.width: parent.width
         fillMode: Image.Stretch
         anchors.fill: parent
         signal start

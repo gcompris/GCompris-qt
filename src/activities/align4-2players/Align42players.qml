@@ -38,6 +38,7 @@ ActivityBase {
         id: background
         anchors.fill: parent
         source: Activity.url + "background.svg"
+        sourceSize.width: parent.width
         signal start
         signal stop
 

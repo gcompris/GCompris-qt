@@ -35,6 +35,7 @@ ActivityBase {
         id: background
         source: "qrc:/gcompris/src/activities/algebra_by/resource/background.svgz"
         fillMode: Image.PreserveAspectCrop
+        sourceSize.width: parent.width
         signal start
         signal stop
 

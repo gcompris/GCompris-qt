@@ -76,6 +76,7 @@ ActivityBase {
 
     pageComponent: Image {
         source: menuActivity.url + "background.svgz"
+        sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
 
         function loadActivity() {

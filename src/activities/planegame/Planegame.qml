@@ -57,6 +57,7 @@ ActivityBase {
         signal start
         signal stop
         source: "qrc:/gcompris/src/activities/planegame/resource/background.svgz"
+        sourceSize.width: parent.width
 
         Component.onCompleted: {
             activity.start.connect(start)

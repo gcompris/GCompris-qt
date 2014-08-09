@@ -38,6 +38,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         source: Activity.url + (modeRGB ? "background.svgz" : "background2.svgz")
+        sourceSize.width: parent.width
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
 

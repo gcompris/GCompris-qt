@@ -40,6 +40,7 @@ ActivityBase {
         signal stop
         fillMode: Image.PreserveAspectCrop
         source: Activity.url + "background.svgz"
+        sourceSize.width: parent.width
 
         Component.onCompleted: {
             activity.start.connect(start)
