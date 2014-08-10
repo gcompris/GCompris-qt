@@ -147,8 +147,8 @@ ActivityBase {
 
             property int previousHoveredCase: -1
             onPositionChanged: {
-                var x = Math.floor(sudoColumn.rows * mouseX / sudoColumn.width);
-                var y = Math.floor(sudoColumn.columns * mouseY / sudoColumn.height);
+                var x = Math.floor(sudoColumn.rows * mouseX / (sudoColumn.width+1));
+                var y = Math.floor(sudoColumn.columns * mouseY / (sudoColumn.height+1));
                 var id = x + y * sudoColumn.rows;
 
                 // Only color if we can modify the case
