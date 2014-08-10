@@ -263,9 +263,11 @@ ActivityBase {
         BarButton {
             id: switchMaze
             source: Activity.url + "maze-2d-bubble.svg"
-            anchors.left: bar.right
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: 10
+            anchors {
+                right: bar.left
+                bottom: bar.bottom
+                bottomMargin: 10
+            }
             sourceSize.width: 66 * bar.barZoom
             visible: invisibleMode
             onClicked: {
@@ -286,11 +288,11 @@ ActivityBase {
 
         BarButton {
             id: buttonright
-            anchors.bottom: bar.bottom
+            anchors.bottom: parent.bottom
             anchors.bottomMargin: 20 * ApplicationInfo.ratio
             anchors.right: parent.right
             anchors.rightMargin: 20 * ApplicationInfo.ratio
-            visible: ApplicationInfo.isMobile
+            visible: ApplicationInfo.isMobile && !message.visible
             source: relativeMode ? Activity.url + "button_rotate_right.svg" : "qrc:/gcompris/src/core/resource/bar_next.svgz"
             sourceSize.width: 45 * ApplicationInfo.ratio
             onClicked: Activity.clickRight()
@@ -298,11 +300,11 @@ ActivityBase {
 
         BarButton {
             id: buttonbottom
-            anchors.bottom: bar.bottom
+            anchors.bottom: parent.bottom
             anchors.bottomMargin: 20 * ApplicationInfo.ratio
             anchors.right: buttonright.left
             anchors.rightMargin: 20 * ApplicationInfo.ratio
-            visible: ApplicationInfo.isMobile
+            visible: ApplicationInfo.isMobile && !message.visible
             source: Activity.url + "button_down.svgz"
             sourceSize.height: 45 * ApplicationInfo.ratio
             onClicked: Activity.clickDown()
@@ -314,18 +316,18 @@ ActivityBase {
             anchors.bottomMargin: 20 * ApplicationInfo.ratio
             anchors.right: buttonright.left
             anchors.rightMargin: 20 * ApplicationInfo.ratio
-            visible: ApplicationInfo.isMobile
+            visible: ApplicationInfo.isMobile && !message.visible
             source: Activity.url + "button_up.svgz"
             sourceSize.height: 45 * ApplicationInfo.ratio
             onClicked: Activity.clickUp()
         }
         BarButton {
             id: buttonleft
-            anchors.bottom: bar.bottom
+            anchors.bottom: parent.bottom
             anchors.bottomMargin: 20 * ApplicationInfo.ratio
             anchors.right: buttonbottom.left
             anchors.rightMargin: 20 * ApplicationInfo.ratio
-            visible: ApplicationInfo.isMobile
+            visible: ApplicationInfo.isMobile && !message.visible
             source: relativeMode ? Activity.url + "button_rotate_left.svg" : "qrc:/gcompris/src/core/resource/bar_previous.svgz"
             sourceSize.width: 45 * ApplicationInfo.ratio
             onClicked: Activity.clickLeft()
@@ -334,10 +336,8 @@ ActivityBase {
         Text {
             id: message
             anchors {
-                top: activity.top
-                left: fastmode.right
-                right: activity.right
-                bottom: maze.top
+                left: parent.left
+                bottom: parent.bottom
                 margins: 20
             }
             width: activity.width - x - 20
@@ -361,6 +361,12 @@ ActivityBase {
 
         Bar {
             id: bar
+            anchors {
+                bottom: undefined 
+                top: parent.top
+                right: parent.right
+                topMargin: height + 10  // FIXME: fix this in the Bar
+            }
             content: BarEnumContent {
                 value: help | home | previous | next
             }
