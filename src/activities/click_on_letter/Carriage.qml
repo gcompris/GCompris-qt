@@ -33,7 +33,7 @@ Image {
     source: isCarriage ?
                 Activity.url + "carriage.svgz":
                 Activity.url + "cloud.svgz"
-
+    z: (state == 'scaled') ? 1 : -1
     property int nbCarriage
     property bool isCarriage: index <= nbCarriage
 
