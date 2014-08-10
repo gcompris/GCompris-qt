@@ -78,22 +78,18 @@ ActivityBase {
                        right: parent.right
                        top: parent.top
                        bottom: parent.bottom
-                       margins: 8
                    }
 
                    opacity: 0
-
                    property color color: "black"
-                   property var pointOrigin
-                   property var pointToClick
 
                    onPaint: {
                        var ctx = getContext('2d')
                        ctx.lineWidth = 1.5
                        ctx.strokeStyle = canvas.color
                        ctx.beginPath()
-                       ctx.moveTo(modelData[0][0]* items.background.width / 801,modelData[0][1]* items.background.height / 521)
-                       ctx.lineTo(modelData[1][0]* items.background.width / 801,modelData[1][1]* items.background.height / 521)
+                       ctx.moveTo(modelData[0][0]* items.background.width / 800,modelData[0][1]* items.background.height / 520)
+                       ctx.lineTo(modelData[1][0]* items.background.width / 800,modelData[1][1]* items.background.height / 520)
                        ctx.stroke()
                    }
             }
@@ -101,16 +97,16 @@ ActivityBase {
 
 
 
-        Repeater {
+       Repeater {
             id: pointImageRepeater
 
             Image {
                 id: pointImage
 
-                x: modelData[0] * items.background.width / 801
-                y: modelData[1] * items.background.height / 521
                 source: Activity.url + "bluepoint.svgz"
                 sourceSize.height: items.background.height / 15
+                x: modelData[0] * items.background.width / 801 - sourceSize.height/2
+                y: modelData[1] * items.background.height / 521 - sourceSize.height/2
 
 
                 MouseArea {
@@ -124,14 +120,10 @@ ActivityBase {
                 Text {
                     id: pointNumberText1
                     text: index
-                    anchors.top: parent.top
-                    anchors.left: parent.left
-
-                    width: pointImage.width
-                    height: pointImage.height
-
-                    x: modelData[0]
-                    y: modelData[1]
+                    //anchors.top: parent.horizontalCenter
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    font.pointSize: pointImage.sourceSize.height /2
                 }
             }
         }
@@ -141,6 +133,7 @@ ActivityBase {
             id: dialogHelp
             onClose: home()
         }
+
 
         Bar {
             id: bar
@@ -152,13 +145,13 @@ ActivityBase {
             x: parent.width - width
             anchors.topMargin: height + 10
 
+
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-
         }
 
         Bonus {
