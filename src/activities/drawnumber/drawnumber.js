@@ -28,6 +28,7 @@ var items
 
 var pointPositions = []
 var pointPositions2 = []
+var pairsOfPointPositionsArray = []
 var pointClickedIndex
 
 var pointIndexToClick
@@ -35,12 +36,13 @@ var pointIndexToClick
 var figures = [
             {
                 "imageName1": "dn_fond1.svgz",
-                "coordinates": "[407,121];[489,369];[279,216];[537,214];[330,369];[407,121]"
+                "imageName2": "dn_fond1.svgz",
+                "coordinates": "[407,121];[489,369];[279,216];[537,214];[330,369];[407,129]"
             },
             {
                 "imageName1": "de1.svgz",
                 "imageName2": "de2.svgz",
-                "coordinates": "[404,375];[406,271];[503,233];[588,278];[588,337];[611,311];[727,320];[728,424];[682,486];[560,474];[560,397];[495,423];[404,375]"
+                "coordinates": "[404,375];[406,271];[503,233];[588,278];[588,337];[611,311];[727,320];[728,424];[682,486];[560,474];[560,397];[495,423];[414,375]"
             },
             {
                 "imageName1": "house1.svgz",
@@ -50,7 +52,7 @@ var figures = [
             {
                 "imageName1": "sapin1.svgz",
                 "imageName2": "sapin2.svgz",
-                "coordinates": "[244,463];[341,361];[267,373];[361,238];[300,251];[377,127];[329,146];[399,52];[464,144];[416,128];[492,251];[435,239];[527,371];[458,362];[557,466];[422,453];[422,504];[374,504];[374,453];[244,463]"
+                "coordinates": "[244,463];[341,361];[267,373];[361,238];[300,251];[377,127];[329,146];[399,52];[464,144];[416,128];[492,251];[435,239];[527,371];[458,362];[557,466];[422,453];[422,504];[374,504];[374,453];[234,163]"
             },
             {
                 "imageName1": "epouvantail1.svgz",
@@ -125,69 +127,34 @@ function previousLevel() {
 
 
 function drawSegment(pointIndex) {
-
-    items.segmentsRepeater.canvas.requestPaint()
-
-        if (pointIndex == 0) {
-            pointPositions2.shift()
-            items.pointImageRepeater.model = pointPositions2
-
-            //items.pointImageRepeater.model = pointPositions
-      //      items.pointNumberTextRepeater.itemAt(0).text = pointPositions.length
-
-      //      console.log("pointClickedIndex: " + pointClickedIndex)
-      //      console.log("points: " + pointPositions)
-      /*      if (pointClickedIndex > 0) {
-                items.canvasRepeater.itemAt(0).pointOrigin = pointPositions[pointClickedIndex-1]
-                console.log("pointOrigin: " + pointPositions[pointClickedIndex-1])
-                items.canvasRepeater.itemAt(0).pointToClick = pointPositions[pointClickedIndex]
-                console.log("pointToClick: " + pointPositions[pointClickedIndex])
-                items.canvasRepeater.itemAt(0).requestPaint()
-            }*/
-
-        //    console.log("pointClickedIndex: " + pointClickedIndex + " - pointPositions.length: " + pointPositions.length)
-
-      /*     if (pointClickedIndex == pointPositions.length-1)
-            {
-                won()
-                items.canvasRepeater.itemAt(0).requestPaint()
-                //items.canvasRepeater.model = 0
-            }
-
-
-            pointClickedIndex++*/
+    if (pointIndex == pointIndexToClick)
+    {
+        if (pointIndex > 0) {
+            items.segmentsRepeater.itemAt(pointIndex-1).opacity = 0.5
         }
 
-//                "coordinates": "[407,121];[489,369];[279,216];[537,214];[330,369];[407,121]"
+        if (pointIndex == items.pointImageRepeater.count-1) {
+            console.log("currentLevel: " + currentLevel)
+            console.log("figures[0].imageName2 :" + figures[0].imageName2)
+            console.log("url + figures[currentLevel].imageName2 : " + url + figures[currentLevel].imageName2)
+            items.imageBack.source = url + figures[currentLevel].imageName2
+            won()
+        }
 
+        pointIndexToClick++
+    }
 
-        //if (pointIndex != 0) {
-     /*       items.canvas.pointOrigin = pointPositions[pointIndex-1]
-            items.canvas.pointToClick = pointPositions[pointIndex]
-            //pointPositions.shift()
+    if (pointIndex == items.pointImageRepeater.count-2) {
+        items.pointImageRepeater.itemAt(0).z = 0
+        items.pointImageRepeater.itemAt((items.pointImageRepeater.count)-1).z = 1
+    }
 
-            pointPositions2.shift()
-            items.pointImageRepeater.model = pointPositions2
-
-
-        //    items.pointImageRepeater.itemAt(pointIndex).source = url + "greenpoint.svgz"
-            items.canvas.requestPaint()*/
-       // }
-      //  pointIndexToClick++
-
-    // draw the last segment
- /*   if (pointIndex == 0 && pointIndexToClick == pointPositions.length) {
-        items.canvas.pointOrigin = pointPositions[pointPositions.length-1]
-        items.canvas.pointToClick = pointPositions[pointIndex]
-        items.canvas.requestPaint()
-        items.pointImageRepeater.itemAt(pointIndex).source = url + "greenpoint.svgz"
-    }*/
+    console.log("pointIndex : " + pointIndex)
+    console.log("items.pointImageRepeater.count-1 : " + ((items.pointImageRepeater.count)-1))
 }
 
 
 function loadCoordinates() {
-
-    //items.canvasRepeater.model = 1
 
     var str = figures[currentLevel].coordinates
     str = str.replace(/\[/g,"")
@@ -195,22 +162,49 @@ function loadCoordinates() {
     var coordinatesxy = str.split(";");
 
     pointPositions = []
+    pairsOfPointPositionsArray = []
     for (var i = 0; i < coordinatesxy.length; i++) {
-    //    console.log(i + ": " + coordinatesxy[i])
-        var coordinates = coordinatesxy[i].split(",")
-    //    console.log(coordinates)
-        pointPositions.push(coordinates)
+        var pointPositionsElement = coordinatesxy[i].split(",")
+        console.log("1- pointPositionsElement[0]: " + pointPositionsElement[0])
+        pointPositionsElement[0] = pointPositionsElement[0]// * items.background.width / 801
+
+        console.log("2- pairsOfPointPositionsElement[0]: " + pointPositionsElement[1])
+        pointPositionsElement[1] = pointPositionsElement[1]// * items.background.height / 521
+
+        pointPositions.push(pointPositionsElement)
+        if (i < coordinatesxy.length-1) {
+            var pairsOfPointPositions = []
+            var pairsOfPointPositionsElement = coordinatesxy[i].split(",")
+            console.log("1- pairsOfPointPositionsElement[0]: " + pairsOfPointPositionsElement[0])
+            pairsOfPointPositionsElement[0] = pairsOfPointPositionsElement[0]// * items.background.width / 801
+
+            console.log("2- pairsOfPointPositionsElement[0]: " + pairsOfPointPositionsElement[1])
+            pairsOfPointPositionsElement[1] = pairsOfPointPositionsElement[1]// * items.background.height / 521
+            pairsOfPointPositions.push(pairsOfPointPositionsElement)
+
+            pairsOfPointPositionsElement = coordinatesxy[i+1].split(",")
+            pairsOfPointPositionsElement[0] = pairsOfPointPositionsElement[0]// * items.background.width / 801
+            pairsOfPointPositionsElement[1] = pairsOfPointPositionsElement[1]// * items.background.height / 521
+
+
+            pairsOfPointPositions.push(pairsOfPointPositionsElement)
+            pairsOfPointPositionsArray.push(pairsOfPointPositions)
+        }
     }
+
     pointPositions2 = pointPositions.slice(0)
     items.pointImageRepeater.model = pointPositions
-    items.pointImageRepeater.itemAt(0).z = 40    //set the first point on top of the last point
-    console.log("pointpositions :" + pointPositions)
-    items.segmentsRepeater.model = pointPositions
+   // items.pointNumberTextRepeater.model = pointPositions
+    items.pointImageRepeater.itemAt(0).z = 100
+    items.pointImageRepeater.itemAt((items.pointImageRepeater.count)-1).z = 0
+
+    items.segmentsRepeater.model = pairsOfPointPositionsArray
     pointClickedIndex = 0
 }
 
 function loadBackgroundImage() {
-    items.background.source = url + figures[currentLevel].imageName1
+    console.log("url + figures[currentLevel].imageName1 : " + url + figures[currentLevel].imageName1)
+    items.imageBack.source = url + figures[currentLevel].imageName1
 }
 
 function won() {
