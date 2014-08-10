@@ -69,6 +69,7 @@ numbers-odd-even
 penalty
 planegame
 reversecount
+traffic
 smallnumbers
 smallnumbers2
 sudoku
