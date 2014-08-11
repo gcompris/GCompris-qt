@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
@@ -13,9 +14,8 @@
    height="520"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.45"
-   sodipodi:docbase="/home/franck/Dessins/Vectoriels/Scenes"
-   sodipodi:docname="traffic.svg"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="traffic_bg.svg"
    inkscape:export-filename="/home/franck/Dessins/GIMP/Gcompris/png/trafic-bg.png"
    inkscape:export-xdpi="72.000000"
    inkscape:export-ydpi="72.000000"
@@ -4252,11 +4252,13 @@
      inkscape:cx="312.18553"
      inkscape:cy="328.02961"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g1006"
      inkscape:window-width="822"
      inkscape:window-height="592"
      inkscape:window-x="9"
-     inkscape:window-y="75" />
+     inkscape:window-y="75"
+     showgrid="false"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -4867,14 +4869,6 @@
            d="M 573.7072,140.8807 C 562.4232,140.8807 553.3389,149.965 553.3389,161.2491 L 553.3389,242.7221 C 553.3389,254.0062 562.4232,263.0905 573.7072,263.0905 L 606.8055,263.0905 C 618.0896,263.0905 626.3253,254.0062 626.3253,242.7221 L 625.9009,211.3211 C 625.4766,205.679 619.2803,167.5946 616.1292,151.2889 C 614.6754,146.0162 606.5068,140.032 601.2891,140.8807 L 573.7072,140.8807 z "
            id="path868"
            sodipodi:nodetypes="cccccccccc" />
-        <text
-           style="font-size:52px;font-style:normal;font-weight:normal;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Captain Podd"
-           x="568.61505"
-           y="241.0248"
-           id="text872">
-          <tspan
-             id="tspan873">g</tspan>
-        </text>
         <g
            id="g957"
            transform="matrix(0.627799,0,0,0.619708,255.7527,63.89493)">
@@ -5219,23 +5213,6 @@
              x="-111.406"
              y="278.95929"
              ry="4.607048" />
-          <text
-             style="font-size:52px;font-style:normal;font-weight:normal;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Captain Podd"
-             x="-12.208138"
-             y="33.973186"
-             id="text1000"
-             transform="scale(3.753945,7.394324)">
-            <tspan
-               id="tspan1001">G</tspan>
-          </text>
-          <text
-             style="font-size:52px;font-style:normal;font-weight:normal;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;font-family:Captain Podd"
-             x="110.32831"
-             y="249.51166"
-             id="text1003">
-            <tspan
-               id="tspan1004">compris</tspan>
-          </text>
         </g>
         <g
            id="g1015"
