@@ -51,6 +51,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias helico: helico
             property alias textzone: textarea
+            property alias infoText: userInfo
         }
 
         onStart: { Activity.start(items) }
@@ -93,6 +94,17 @@ ActivityBase {
             color: "blue"
             font.bold: true
             font.pixelSize: 24
+        }
+
+        Text{
+            id: userInfo
+            anchors.top: back.top
+            anchors.topMargin: 40
+            anchors.horizontalCenter: back.horizontalCenter
+            text: ""
+            color: "red"
+            font.bold: true
+            font.pixelSize: 20
         }
 
         DialogHelp {

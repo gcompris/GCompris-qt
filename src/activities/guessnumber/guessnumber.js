@@ -78,8 +78,13 @@ function getRandomInt(min, max) {
 }
 
 function setUserAnswer(value){
-    if(value>numberToGuess){
+    if(value==0)
         return;
+    if(value>numberToGuess){
+        items.infoText.text="Nombre trop grand"
+    }
+    if(value<numberToGuess){
+        items.infoText.text="Nombre trop petit"
     }
     if(value==numberToGuess){
         items.bonus.good("tux")
@@ -88,7 +93,10 @@ function setUserAnswer(value){
     }
     else {
         var diff=value/numberToGuess
-        items.helico.x=items.background.width*diff
+        /*max_distance = max(self.max - self.solution, self.solution)
+        distance_x = self.target_x - abs(self.solution - number) * float(self.target_x - self.orig_x) / max_distance
+        distance_y = self.orig_y + float(((self.solution - number) * 170) / max_distance)*/
+        items.helico.x=(items.background.width-items.helico.width)*diff
         items.helico.y=items.background.height/2 - items.background.height/(50*diff)
     }
 }
