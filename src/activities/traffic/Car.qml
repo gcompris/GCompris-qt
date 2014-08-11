@@ -35,6 +35,8 @@ Item {
     property bool isHorizontal: false
     property alias color: carRect.color
     property real blockSize: ((parent.width-3) / 6)
+    property var xBounds: undefined
+    property var yBounds: undefined
 
     x: xPos * blockSize
     y: yPos * blockSize

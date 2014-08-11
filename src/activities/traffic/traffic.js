@@ -183,6 +183,8 @@ function stop() {
 
 function findYBounds(car)
 {
+    if (car.yBounds !== undefined)
+        return;
     var bounds = { "lower": 0, "upper": items.jamGrid.height };
     for (var i = 0; i < activeCars.length; i++) {
         if (activeCars[i] != car &&
@@ -199,11 +201,13 @@ function findYBounds(car)
                 bounds.upper = activeCars[i].y;
         }
     }
-    return bounds;
+    car.yBounds = bounds;
 }
 
 function findXBounds(car)
 {
+    if (car.xBounds !== undefined)
+        return;
     var bounds = { "lower": 0, "upper": items.jamGrid.width };
     for (var i = 0; i < activeCars.length; i++) {
         if (activeCars[i] != car &&
@@ -220,14 +224,14 @@ function findXBounds(car)
                 bounds.upper = activeCars[i].x;
         }
     }
-    return bounds;
+    car.xBounds = bounds;
 }
 
 function updateCarPosition(car, newX, newY)
 {
     if (car.isHorizontal) {
-        var xBounds = findXBounds(car);
-        car.x = Math.min(xBounds.upper-car.width, Math.max(xBounds.lower, newX));
+        findXBounds(car);
+        car.x = Math.min(car.xBounds.upper-car.width, Math.max(car.xBounds.lower, newX));
         newY = car.y;
         // check for reached goal:
         if (car.goal && car.x + car.width >= items.jamGrid.width) {
@@ -236,8 +240,8 @@ function updateCarPosition(car, newX, newY)
             return;
         }
     } else {
-        var yBounds = findYBounds(car);
-        car.y = Math.min(yBounds.upper-car.height, Math.max(yBounds.lower, newY));
+        findYBounds(car);
+        car.y = Math.min(car.yBounds.upper-car.height, Math.max(car.yBounds.lower, newY));
         newX = car.x;
     }
 }
@@ -251,6 +255,7 @@ function snapCarToGrid(car)
         car.yPos = Math.min(5, Math.max(0, Math.round(car.y / car.blockSize)));
         car.y = Qt.binding(function() { return car.yPos * car.blockSize; });
     }
+    car.xBounds = car.yBounds = undefined;
 }
 
 function drawCar(car)
