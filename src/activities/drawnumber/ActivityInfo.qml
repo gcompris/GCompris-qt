@@ -4,13 +4,15 @@ ActivityInfo {
   name: "drawnumber/Drawnumber.qml"
   difficulty: 1
   icon: "drawnumber/drawnumber.svgz"
-  author: "Your Name <yy@zz.org>"
+  author: "Olivier Ponchaut, Qt Quick port by Emmanuel Charruau <echarruau@gmail.com>"
   demo: false
   title: qsTr("drawnumber activity")
-  description: qsTr("")
-  goal: qsTr("")
+  description: qsTr("Click on numbers in the rigth order.")
+  goal: qsTr("Counting up to 50")
   prerequisite: qsTr("")
-  manual: qsTr("")
+  manual: qsTr("Numbers are shown, click in the right order to draw a figure.")
   credit: qsTr("")
   section: "/math/numeration"
 }
+
+

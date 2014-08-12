@@ -29,6 +29,8 @@ import GCompris 1.0
 ActivityBase {
     id: activity
 
+    property bool clickanddrawflag: false
+
     onStart: focus = true
     onStop: {}
 
@@ -56,7 +58,8 @@ ActivityBase {
             property alias imageBack: imageBack
         }
 
-        onStart: { Activity.start(items) }
+
+        onStart: { Activity.start(items, clickanddrawflag) }
         onStop: { Activity.stop() }
 
         Image {
@@ -88,8 +91,8 @@ ActivityBase {
                        ctx.lineWidth = 1.5
                        ctx.strokeStyle = canvas.color
                        ctx.beginPath()
-                       ctx.moveTo(modelData[0][0]* items.background.width / 800,modelData[0][1]* items.background.height / 520)
-                       ctx.lineTo(modelData[1][0]* items.background.width / 800,modelData[1][1]* items.background.height / 520)
+                       ctx.moveTo(modelData[0][0]* background.width / 800,modelData[0][1]* background.height / 520)
+                       ctx.lineTo(modelData[1][0]* background.width / 800,modelData[1][1]* background.height / 520)
                        ctx.stroke()
                    }
             }
@@ -104,9 +107,11 @@ ActivityBase {
                 id: pointImage
 
                 source: Activity.url + "bluepoint.svgz"
-                sourceSize.height: items.background.height / 15
-                x: modelData[0] * items.background.width / 801 - sourceSize.height/2
-                y: modelData[1] * items.background.height / 521 - sourceSize.height/2
+                sourceSize.height: background.height / 15
+                x: modelData[0] * background.width / 801 - sourceSize.height/2
+                y: modelData[1] * background.height / 521 - sourceSize.height/2
+                z: pointImageRepeater.count - index
+
 
 
                 MouseArea {
@@ -118,9 +123,11 @@ ActivityBase {
                 }
 
                 Text {
-                    id: pointNumberText1
+                    id: pointNumberText
+
+
+                    opacity: Activity.pointImageNumberOpacity
                     text: index
-                    //anchors.top: parent.horizontalCenter
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     font.pointSize: pointImage.sourceSize.height /2

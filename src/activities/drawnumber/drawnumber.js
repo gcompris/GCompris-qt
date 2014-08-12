@@ -23,12 +23,14 @@
 .import QtQuick 2.0 as Quick
 
 var currentLevel = 0
-//var numberOfLevel = 4
 var items
+var clickanddrawflag
 
 var pointPositions = []
 var pairsOfPointPositionsArray = []
 var pointIndexToClick
+var pointImageNumberOpacity
+
 
 var figures = [
             {
@@ -76,11 +78,11 @@ var figures = [
                 "imageName2": "bear2.svgz",
                 "coordinates": "[304,256];[262,240];[216,206];[192,174];[195,159];[216,154];[257,167];[300,188];[334,220];[352,206];[370,200];[342,185];[321,154];[319,117];[337,90];[320,76];[315,55];[335,38];[360,40];[376,52];[377,66];[400,59];[431,60];[450,66];[451,48];[468,37];[490,36];[507,48];[510,70];[501,82];[486,86];[502,110];[506,136];[499,164];[479,189];[458,200];[480,212];[522,180];[578,158];[611,154];[622,164];[618,184];[592,213];[550,236];[515,251];[529,286];[532,329];[526,364];[548,354];[566,360];[576,384];[571,417];[548,455];[520,470];[493,456];[490,419];[461,440];[414,453];[360,441];[330,422];[331,450];[317,471];[284,467];[255,434];[242,402];[248,366];[271,354];[296,364];[288,326];[292,282];[304,256]"
             },
-          /*  {
+            {
                 "imageName1": "hibou1.svgz",
                 "imageName2": "hibou2.svgz",
                 "coordinates": "[443,133];[423,11];[434,10];[472,56];[458,20];[467,19];[495,71];[491,30];[501,33];[522,116];[519,72];[529,75];[537,153];[539,119];[546,125];[547,159];[555,154];[556,208];[583,169];[724,98];[739,99];[703,137];[743,109];[742,121];[691,165];[742,143];[741,155];[654,200];[716,182];[713,195];[650,215];[689,212];[680,219];[615,235];[661,229];[653,238];[604,250];[622,250];[615,255];[582,260];[600,263];[590,268];[577,268];[606,300];[644,294];[643,302];[599,314];[625,311];[623,318];[593,323];[615,323];[611,327];[586,329];[599,332];[591,336];[553,335];[535,357];[534,377];[527,368];[511,367];[493,375];[501,366];[485,371];[493,363];[482,365];[492,355];[514,354];[532,332];[520,331];[505,317];[500,291];[501,303];[490,289];[486,297];[479,282];[473,287];[466,269];[448,252];[446,224];[460,201];[456,191];[459,182];[467,197];[479,196];[443,133]"
-            },*/
+            },
 
         ]
 
@@ -89,11 +91,19 @@ var url = "qrc:/gcompris/src/activities/drawnumber/resource/"
 var numberOfLevel = figures.length
 
 
-function start(items_) {
+function start(items_, clickanddrawflag_) {
     console.log("drawnumber activity: start")
     items = items_
+    clickanddrawflag = clickanddrawflag_
     currentLevel = 0
     initLevel()
+    if (clickanddrawflag) {
+        pointImageNumberOpacity = 0
+    }
+    else {
+        pointImageNumberOpacity = 100
+    }
+    console.log("pointImageNumberOpacity: " + pointImageNumberOpacity)
 }
 
 function stop() {
@@ -125,10 +135,22 @@ function previousLevel() {
 
 function drawSegment(pointIndex) {
 
+    console.log("pointIndex :"+ pointIndex)
+    console.log("pointIndexToClick :"+ pointIndexToClick)
+
     if (pointIndex == pointIndexToClick)
     {
 
         items.pointImageRepeater.itemAt(pointIndex).opacity = 0
+        items.pointImageRepeater.itemAt(pointIndex).z = 0
+
+        if (clickanddrawflag) {
+            if (pointIndex < items.pointImageRepeater.count-1) {
+                 items.pointImageRepeater.itemAt(pointIndex+1).source = url + "greenpoint.svgz"
+            }
+        }
+
+        console.log("clickanddrawflag : " + clickanddrawflag)
 
         if (pointIndex > 0) {
             items.segmentsRepeater.itemAt(pointIndex-1).opacity = 1
@@ -145,13 +167,6 @@ function drawSegment(pointIndex) {
         pointIndexToClick++
     }
 
-    if (pointIndex == items.pointImageRepeater.count-2) {
-        items.pointImageRepeater.itemAt(0).z = 0
-        items.pointImageRepeater.itemAt((items.pointImageRepeater.count)-1).z = 1
-    }
-
-    console.log("pointIndex : " + pointIndex)
-    console.log("items.pointImageRepeater.count-1 : " + ((items.pointImageRepeater.count)-1))
 }
 
 
@@ -193,10 +208,8 @@ function loadCoordinates() {
         }
     }
 
+   // items.pointImageRepeater.pointImage.pointNumberText.opacity = 0
     items.pointImageRepeater.model = pointPositions
-    items.pointImageRepeater.itemAt(0).z = 100
-    items.pointImageRepeater.itemAt((items.pointImageRepeater.count)-1).z = 0
-
     items.segmentsRepeater.model = pairsOfPointPositionsArray
 
 }
