@@ -121,7 +121,7 @@ function showMessageDialog(parent, title, text, informativeText, icon, buttonHan
         + 'import QtQuick.Dialogs 1.2\n'
         + 'MessageDialog {\n'
         + '    visible: false\n'
-        + '    modality: Qt.ApplicationModal\n'
+        + '    modality: Qt.WindowModal\n'
         + '    title: "' + title +'"\n'
         + '    text: "' + text + '"\n'
         + '    informativeText: "' + informativeText + '"\n'
