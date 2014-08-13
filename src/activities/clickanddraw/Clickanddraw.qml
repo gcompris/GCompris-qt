@@ -26,4 +26,5 @@ import "../drawnumber"
 
 Drawnumber {
     clickanddrawflag: true
+    pointImageOpacity: 0
 }

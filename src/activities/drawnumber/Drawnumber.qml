@@ -30,6 +30,7 @@ ActivityBase {
     id: activity
 
     property bool clickanddrawflag: false
+    property real pointImageOpacity: 100
 
     onStart: focus = true
     onStop: {}
@@ -126,7 +127,7 @@ ActivityBase {
                     id: pointNumberText
 
 
-                    opacity: Activity.pointImageNumberOpacity
+                    opacity: pointImageOpacity
                     text: index
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
