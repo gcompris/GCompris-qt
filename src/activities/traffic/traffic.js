@@ -155,6 +155,33 @@ var colorMap = {
     'R': "#00FFFF"    
 };
 
+var baseUrl="qrc:/gcompris/src/activities/traffic/resource/";
+
+var carList = [
+  baseUrl + "car1.svg",
+  baseUrl + "car2.svg",
+  baseUrl + "car3.svg",
+  baseUrl + "car4.svg",
+  baseUrl + "car5.svg",
+  baseUrl + "car6.svg",
+  baseUrl + "car7.svg",
+  baseUrl + "car8.svg",
+  baseUrl + "car9.svg",
+  baseUrl + "car10.svg",
+  baseUrl + "car11.svg",
+  baseUrl + "car12.svg",
+  baseUrl + "car13.svg",
+  baseUrl + "car14.svg",
+  baseUrl + "car15.svg"
+];
+
+var truckList = [
+  baseUrl + "truck1.svg",
+  baseUrl + "truck2.svg",
+  baseUrl + "truck3.svg",
+  baseUrl + "truck4.svg"
+];
+
 var currentLevel = 0;
 var currentSubLevel = 0;
 var level = null;
@@ -166,11 +193,13 @@ var numCars;
 var carComponent = null;
 var activeCars = new Array();
 var haveWon = false;
+var mode = null;
 
-function start(items_) {
+function start(items_, mode_) {
     console.log("Traffic activity: start");
     
     items = items_;
+    mode = mode_;
     currentLevel = 0;
     currentSubLevel = 0;
     initLevel();
@@ -186,6 +215,7 @@ function findYBounds(car)
     if (car.yBounds !== undefined)
         return;
     var bounds = { "lower": 0, "upper": items.jamGrid.height };
+
     for (var i = 0; i < activeCars.length; i++) {
         if (activeCars[i] != car &&
             ((activeCars[i].xPos == car.xPos)
@@ -193,12 +223,12 @@ function findYBounds(car)
                  && activeCars[i].xPos+activeCars[i].size > car.xPos)))
         {
             // y intersects
-            if (activeCars[i].y < car.y &&
-                activeCars[i].y + activeCars[i].height > bounds.lower) {
-                bounds.lower = activeCars[i].y + activeCars[i].height;
+            if (activeCars[i].effY < car.effY &&
+                activeCars[i].effY + activeCars[i].effHeight > bounds.lower) {
+                bounds.lower = activeCars[i].effY + activeCars[i].effHeight;
             }
-            else if (activeCars[i].y > car.y && activeCars[i].y < bounds.upper)
-                bounds.upper = activeCars[i].y;
+            else if (activeCars[i].effY > car.effY && activeCars[i].effY < bounds.upper)
+                bounds.upper = activeCars[i].effY;
         }
     }
     car.yBounds = bounds;
@@ -216,12 +246,12 @@ function findXBounds(car)
                  && activeCars[i].yPos+activeCars[i].size > car.yPos)))
         {
             // y intersects
-            if (activeCars[i].x < car.x &&
-                activeCars[i].x + activeCars[i].width > bounds.lower) {
-                bounds.lower = activeCars[i].x + activeCars[i].width;
+            if (activeCars[i].effX < car.effX &&
+                activeCars[i].effX + activeCars[i].effWidth > bounds.lower) {
+                bounds.lower = activeCars[i].effX + activeCars[i].effWidth;
             }
-            else if (activeCars[i].x > car.x && activeCars[i].x < bounds.upper)
-                bounds.upper = activeCars[i].x;
+            else if (activeCars[i].effX > car.effX && activeCars[i].effX < bounds.upper)
+                bounds.upper = activeCars[i].effX;
         }
     }
     car.xBounds = bounds;
@@ -231,18 +261,20 @@ function updateCarPosition(car, newX, newY)
 {
     if (car.isHorizontal) {
         findXBounds(car);
-        car.x = Math.min(car.xBounds.upper-car.width, Math.max(car.xBounds.lower, newX));
-        newY = car.y;
+        var deltaX = Math.min(car.xBounds.upper - car.effWidth, Math.max(car.xBounds.lower, newX)) - car.effX;
+        car.x += deltaX;
+        car.effX += deltaX;
         // check for reached goal:
-        if (car.goal && car.x + car.width >= items.jamGrid.width) {
+        if (car.goal && car.effX + car.width >= items.jamGrid.width) {
             haveWon = true;
             items.bonus.good("smiley");
             return;
         }
     } else {
-        findYBounds(car);
-        car.y = Math.min(car.yBounds.upper-car.height, Math.max(car.yBounds.lower, newY));
-        newX = car.x;
+        findYBounds(car)
+        var deltaY = Math.min(car.yBounds.upper - car.effHeight, Math.max(car.yBounds.lower, newY)) - car.effY;
+        car.y += deltaY;
+        car.effY += deltaY;
     }
 }
 
@@ -250,10 +282,10 @@ function snapCarToGrid(car)
 {
     if (car.isHorizontal) {
         car.xPos = Math.min(5, Math.max(0, Math.round(car.x / car.blockSize)));
-        car.x = Qt.binding(function() { return car.xPos * car.blockSize; });
+        car.x = car.effX = Qt.binding(function() { return car.xPos * car.blockSize; });
     } else {
         car.yPos = Math.min(5, Math.max(0, Math.round(car.y / car.blockSize)));
-        car.y = Qt.binding(function() { return car.yPos * car.blockSize; });
+        car.y = car.effY = Qt.binding(function() { return car.yPos * car.blockSize; });
     }
     car.xBounds = car.yBounds = undefined;
 }
@@ -279,11 +311,15 @@ function drawCar(car)
     yPos = y.charCodeAt(0) - '1'.charCodeAt(0);
     var isHorizontal = true;
     var size = 0;
+    var source;
     
-    if (id == 'O' || id == 'P' || id == 'Q' || id == 'R') 
+    if (id == 'O' || id == 'P' || id == 'Q' || id == 'R') { 
         size = 3;
-    else 
+        source = truckList[Math.floor(Math.random() * truckList.length)];
+    } else {
         size = 2;
+        source = carList[Math.floor(Math.random() * (carList.length-1)) + 1];
+    }
     
     if (x == 'A') xPos = 0;
     else if (x == 'B') xPos = 1;
@@ -304,7 +340,11 @@ function drawCar(car)
     }
     
     var color = colorMap[id];
-    var goal = (id == 'X');
+    var goal;
+    if (id == 'X') {
+        goal = 1;
+        source = carList[0];
+    }
 
     var carObject = carComponent.createObject( items.jamGrid, {
         "xPos": xPos,
@@ -312,6 +352,7 @@ function drawCar(car)
         "size": size,
         "goal": goal,
         "color": color,
+        "source": source,
         "isHorizontal": isHorizontal
     });
     if (carObject == null)

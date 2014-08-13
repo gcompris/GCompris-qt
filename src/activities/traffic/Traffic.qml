@@ -30,6 +30,9 @@ import "traffic.js" as Activity
 ActivityBase {
     id: activity
 
+    property string mode: "IMAGE" // allow to choose between "COLOR" and "IMAGE"
+                                  // mode, candidate for a config dialog
+    
     onStart: focus = true
     onStop: {}
     
@@ -58,7 +61,7 @@ ActivityBase {
             property alias jamGrid: jamGrid
         }
 
-        onStart: { Activity.start(items) }
+        onStart: { Activity.start(items, mode) }
         onStop: { Activity.stop() }
         
         Image {
