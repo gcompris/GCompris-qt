@@ -79,7 +79,7 @@ ActivityBase {
             source: Activity.url + "building.svgz"
             fillMode: Image.PreserveAspectFit
             anchors.fill: gridarea
-            anchors.margins: -3 * items.cellSize
+            anchors.margins: -1 * Math.ceil(items.nbCell / 2) * items.cellSize
             z: 2
         }
         Image {
