@@ -113,12 +113,11 @@ ActivityBase {
             interactive: false
             Component {
                 id: sectionDelegate
-                Image {
+                Item {
                     id: backgroundSection
                     width: sectionCellWidth
                     height: sectionCellHeight
-                    source: GridView.isCurrentItem ?
-                                "qrc:/gcompris/src/core/resource/button.svgz" : ""
+
                     Rectangle {
                         anchors.fill: parent
                         color: backgroundSection.GridView.isCurrentItem ?
@@ -142,11 +141,18 @@ ActivityBase {
                             particles.emitter.burst(10)
                             ActivityInfoTree.filterByTag(modelData.tag)
                             menuActivity.currentTag = modelData.tag
+                            section.currentIndex = index
                         }
                     }
                 }
             }
             delegate: sectionDelegate
+            highlight: Image {
+                width: sectionCellWidth
+                height: sectionCellHeight
+                source: "qrc:/gcompris/src/core/resource/button.svgz"
+            }
+            highlightMoveDuration: 300
             focus: true
         }
 
