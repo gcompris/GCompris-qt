@@ -78,10 +78,10 @@ ActivityBase {
             Canvas {
                    id: canvas
                    anchors {
-                       left: parent.left
-                       right: parent.right
-                       top: parent.top
-                       bottom: parent.bottom
+                       left: background.left
+                       right: background.right
+                       top: background.top
+                       bottom: background.bottom
                    }
 
                    opacity: 0

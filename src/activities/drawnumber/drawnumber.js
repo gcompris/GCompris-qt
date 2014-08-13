@@ -29,7 +29,6 @@ var clickanddrawflag
 var pointPositions = []
 var pairsOfPointPositionsArray = []
 var pointIndexToClick
-var pointImageNumberOpacity
 
 
 var figures = [
@@ -92,26 +91,17 @@ var numberOfLevel = figures.length
 
 
 function start(items_, clickanddrawflag_) {
-    console.log("drawnumber activity: start")
     items = items_
     clickanddrawflag = clickanddrawflag_
     currentLevel = 0
     initLevel()
-    if (clickanddrawflag) {
-        pointImageNumberOpacity = 0
-    }
-    else {
-        pointImageNumberOpacity = 100
-    }
-    console.log("pointImageNumberOpacity: " + pointImageNumberOpacity)
 }
 
 function stop() {
-    console.log("drawnumber activity: stop")
+
 }
 
 function initLevel() {
-    console.log("drawnumber activity: create some content in my activity")
     items.bar.level = currentLevel + 1
     pointIndexToClick = 0
     loadCoordinates()
@@ -135,12 +125,8 @@ function previousLevel() {
 
 function drawSegment(pointIndex) {
 
-    console.log("pointIndex :"+ pointIndex)
-    console.log("pointIndexToClick :"+ pointIndexToClick)
-
     if (pointIndex == pointIndexToClick)
     {
-
         items.pointImageRepeater.itemAt(pointIndex).opacity = 0
         items.pointImageRepeater.itemAt(pointIndex).z = 0
 
@@ -150,20 +136,14 @@ function drawSegment(pointIndex) {
             }
         }
 
-        console.log("clickanddrawflag : " + clickanddrawflag)
-
         if (pointIndex > 0) {
             items.segmentsRepeater.itemAt(pointIndex-1).opacity = 1
         }
 
         if (pointIndex == items.pointImageRepeater.count-1) {
-            console.log("currentLevel: " + currentLevel)
-            console.log("figures[0].imageName2 :" + figures[0].imageName2)
-            console.log("url + figures[currentLevel].imageName2 : " + url + figures[currentLevel].imageName2)
             items.imageBack.source = url + figures[currentLevel].imageName2
             won()
         }
-
         pointIndexToClick++
     }
 
@@ -181,41 +161,35 @@ function loadCoordinates() {
     pairsOfPointPositionsArray = []
     for (var i = 0; i < coordinatesxy.length; i++) {
         var pointPositionsElement = coordinatesxy[i].split(",")
-        console.log("1- pointPositionsElement[0]: " + pointPositionsElement[0])
-        pointPositionsElement[0] = pointPositionsElement[0]
-
-        console.log("2- pairsOfPointPositionsElement[0]: " + pointPositionsElement[1])
-        pointPositionsElement[1] = pointPositionsElement[1]
 
         pointPositions.push(pointPositionsElement)
         if (i < coordinatesxy.length-1) {
             var pairsOfPointPositions = []
             var pairsOfPointPositionsElement = coordinatesxy[i].split(",")
-            console.log("1- pairsOfPointPositionsElement[0]: " + pairsOfPointPositionsElement[0])
             pairsOfPointPositionsElement[0] = pairsOfPointPositionsElement[0]
 
-            console.log("2- pairsOfPointPositionsElement[0]: " + pairsOfPointPositionsElement[1])
             pairsOfPointPositionsElement[1] = pairsOfPointPositionsElement[1]
             pairsOfPointPositions.push(pairsOfPointPositionsElement)
 
             pairsOfPointPositionsElement = coordinatesxy[i+1].split(",")
             pairsOfPointPositionsElement[0] = pairsOfPointPositionsElement[0]
             pairsOfPointPositionsElement[1] = pairsOfPointPositionsElement[1]
-
-
             pairsOfPointPositions.push(pairsOfPointPositionsElement)
             pairsOfPointPositionsArray.push(pairsOfPointPositions)
         }
     }
 
-   // items.pointImageRepeater.pointImage.pointNumberText.opacity = 0
     items.pointImageRepeater.model = pointPositions
+
+    if (clickanddrawflag) {
+            items.pointImageRepeater.itemAt(0).source = url + "greenpoint.svgz"
+    }
+
     items.segmentsRepeater.model = pairsOfPointPositionsArray
 
 }
 
 function loadBackgroundImage() {
-    console.log("url + figures[currentLevel].imageName1 : " + url + figures[currentLevel].imageName1)
     items.imageBack.source = url + figures[currentLevel].imageName1
 }
 
