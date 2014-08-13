@@ -238,7 +238,7 @@ function findXBounds(car)
 {
     if (car.xBounds !== undefined)
         return;
-    var bounds = { "lower": 0, "upper": items.jamGrid.width };
+    var bounds = { "lower": 0, "upper": items.jamGrid.width + (car.goal ? car.blockSize : 0)};
     for (var i = 0; i < activeCars.length; i++) {
         if (activeCars[i] != car &&
             ((activeCars[i].yPos == car.yPos)
