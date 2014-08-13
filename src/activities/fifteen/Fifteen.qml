@@ -20,6 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import QtGraphicalEffects 1.0
 
 import "../../core"
 import "fifteen.js" as Activity
@@ -33,7 +34,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: Activity.url + "Fishing_Boat_Scene.svg"
+        source: Activity.url + "background.svg"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
 
@@ -53,10 +54,21 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias model: fifteenModel
+            property string scene: bar.level < 5 ? Activity.url + "Fishing_Boat_Scene.svg" :
+                                                   Activity.url + "Coastal_Path.svg"
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+
+        Image {
+            source: Activity.url + "goldframe.svg"
+            sourceSize.width: Math.min(background.width * 0.9,
+                                       (background.height - bar.height) * 0.9)
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.verticalCenterOffset: - bar.height
+        }
 
         Grid {
             anchors.horizontalCenter: parent.horizontalCenter
@@ -80,19 +92,40 @@ ActivityBase {
             Repeater {
                 id: repeater
                 model: fifteenModel
-                delegate: Rectangle {
-                    color: value ? fcolor : "transparent"
-                    border.color: "black"
-                    border.width: value ? 2 : 0
+                delegate: Item {
                     width: Math.min(background.width * 0.2,
                                     (background.height - bar.height) * 0.2)
                     height: width
+                    clip: true
+
+                    Image {
+                        id: image
+                        source: value ? items.scene : ""
+                        sourceSize.width: parent.width * 4
+                        fillMode: Image.Pad
+                        transform: Translate {
+                            x: - image.width / 4 * ((value - 1) % 4)
+                            y: - image.width / 4 * Math.floor((value - 1) / 4)
+                        }
+                    }
 
                     Text {
+                        id: text
                         anchors.horizontalCenter: parent.horizontalCenter
                         anchors.verticalCenter: parent.verticalCenter
-                        text: value ? value : ""
-                        font.pointSize: 24
+                        text: value && bar.level % 2 == 1 ? value : ""
+                        font.pointSize: 16
+                    }
+
+                    DropShadow {
+                        anchors.fill: text
+                        cached: true
+                        horizontalOffset: 3
+                        verticalOffset: 3
+                        radius: 8.0
+                        samples: 16
+                        color: "#80000000"
+                        source: text
                     }
 
                     MouseArea {
