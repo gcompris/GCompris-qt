@@ -61,6 +61,7 @@ ActivityBase {
         Grid {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
+            anchors.verticalCenterOffset: - bar.height
             columns: 4
             spacing: 0
 
@@ -83,8 +84,9 @@ ActivityBase {
                     color: value ? fcolor : "transparent"
                     border.color: "black"
                     border.width: value ? 2 : 0
-                    width: 50
-                    height: 50
+                    width: Math.min(background.width * 0.2,
+                                    (background.height - bar.height) * 0.2)
+                    height: width
 
                     Text {
                         anchors.horizontalCenter: parent.horizontalCenter
