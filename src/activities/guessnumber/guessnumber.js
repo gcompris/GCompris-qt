@@ -26,6 +26,7 @@ var currentLevel = 0
 var numberOfLevel = 4
 var items
 var numberToGuess=0
+var currentMax
 
 function start(items_) {
     console.log("guessnumber activity: start")
@@ -43,17 +44,22 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.helico.x = 0
     items.helico.y = items.background.height/2
+    items.helico.state="horizontal"
     switch(currentLevel){
-    case 0: numberToGuess=getRandomInt(1,20)
+    case 0: currentMax=20
+            numberToGuess=getRandomInt(1,currentMax)
             items.textzone.text="Entrez un nombre entre 1 et 20"
             break;
-    case 1: numberToGuess=getRandomInt(1,40)
+    case 1: currentMax=40
+            numberToGuess=getRandomInt(1,currentMax)
             items.textzone.text="Entrez un nombre entre 1 et 40"
             break;
-    case 2:numberToGuess=getRandomInt(1,60)
+    case 2: currentMax=60
+            numberToGuess=getRandomInt(1,currentMax)
             items.textzone.text="Entrez un nombre entre 1 et 60"
             break;
-    case 3:numberToGuess=getRandomInt(1,99)
+    case 3: currentMax=99
+            numberToGuess=getRandomInt(1,currentMax)
             items.textzone.text="Entrez un nombre entre 1 et 99"
             break;
     }
@@ -78,6 +84,7 @@ function getRandomInt(min, max) {
 }
 
 function setUserAnswer(value){
+    items.helico.state="advancing"
     if(value==0)
         return;
     if(value>numberToGuess){
@@ -87,17 +94,15 @@ function setUserAnswer(value){
         items.infoText.text="Nombre trop petit"
     }
     if(value==numberToGuess){
+        items.infoText.text="Nombre trouvé!"
         items.bonus.good("tux")
         items.helico.x=items.background.width
         items.helico.y=items.background.height/2 - items.background.height/10
     }
     else {
-        var diff=value/numberToGuess
-        /*max_distance = max(self.max - self.solution, self.solution)
-        distance_x = self.target_x - abs(self.solution - number) * float(self.target_x - self.orig_x) / max_distance
-        distance_y = self.orig_y + float(((self.solution - number) * 170) / max_distance)*/
-        items.helico.x=(items.background.width-items.helico.width)*diff
-        items.helico.y=items.background.height/2 - items.background.height/(50*diff)
+        var diff=Math.abs(numberToGuess-value)/currentMax
+        items.helico.x=(items.background.width-items.helico.width)-diff*items.background.width
+        items.helico.y=items.background.height/2 + ((numberToGuess-value)/currentMax)*(items.background.height/2) - items.helico.height/2
     }
 }
 
