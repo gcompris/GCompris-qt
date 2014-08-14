@@ -61,8 +61,8 @@ ActivityBase {
         Image {
             id: back
             anchors.fill: parent
-            fillMode : Image.PreserveAspectFit
-            source: "resource/cave.png"
+            fillMode : Image.PreserveAspectCrop
+            source: "resource/cave.svg"
         }
 
         Helico{
