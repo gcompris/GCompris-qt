@@ -691,7 +691,6 @@ function initLevel() {
         for(var i=0; i < tuxMoney.length; i++)
             tuxTotal += tuxMoney[i].val
 
-        console.log(tuxTotal)
         var priceText = Number(tuxTotal).toLocaleCurrencyString(Qt.locale())
         if(!centsMode) {
             // Strip floating part
