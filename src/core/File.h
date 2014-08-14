@@ -39,6 +39,7 @@ public:
 
     Q_INVOKABLE QString read(const QString& name = QString());
     Q_INVOKABLE bool write(const QString& data, const QString& name = QString());
+    Q_INVOKABLE static bool exists(const QString& path);
 
     static void init();
 
@@ -48,6 +49,8 @@ signals:
 
 private:
     QString m_name;
+
+    static QString sanitizeUrl(const QString& url);
 };
 
 #endif

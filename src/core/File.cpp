@@ -35,7 +35,7 @@ QString File::name() const
     return m_name;
 }
 
-void File::setName(const QString &str)
+QString File::sanitizeUrl(const QString &str)
 {
     QString target(str);
 
@@ -44,6 +44,13 @@ void File::setName(const QString &str)
         target.remove(0, 7);
     else if (target.startsWith("qrc:/"))
         target.remove(0, 3);
+
+    return target;
+}
+
+void File::setName(const QString &str)
+{
+    QString target = sanitizeUrl(str);
 
     if (target != m_name) {
         m_name = target;
@@ -110,4 +117,9 @@ bool File::write(const QString& data, const QString& name)
 void File::init()
 {
     qmlRegisterType<File>("GCompris", 1, 0, "File");
+}
+
+bool File::exists(const QString& path)
+{
+    return QFile::exists(sanitizeUrl(path));
 }
