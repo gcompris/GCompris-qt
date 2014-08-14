@@ -52,6 +52,7 @@ ActivityBase {
             property alias helico: helico
             property alias textzone: textarea
             property alias infoText: userInfo
+            property alias answerArea: answer
         }
 
         onStart: { Activity.start(items) }
@@ -64,19 +65,8 @@ ActivityBase {
             source: "resource/cave.png"
         }
 
-        Image {
+        Helico{
             id: helico
-            y: back.height/2
-            source: "resource/tuxhelico.png"
-            Behavior on x {
-                PropertyAnimation {
-                    easing.type: Easing.OutQuad
-                    duration:  1000
-                }
-            }
-            Behavior on y {
-                PropertyAnimation {easing.type: Easing.OutQuad; duration:  1000}
-            }
         }
 
         AnswerArea{
