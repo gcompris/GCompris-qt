@@ -84,15 +84,19 @@ function getRandomInt(min, max) {
 }
 
 function setUserAnswer(value){
-    items.helico.state="advancing"
     if(value==0)
         return;
+    if(value>currentMax){
+        items.infoText.text="Nombre trop grand"
+        return;
+    }
     if(value>numberToGuess){
         items.infoText.text="Nombre trop grand"
     }
     if(value<numberToGuess){
         items.infoText.text="Nombre trop petit"
     }
+    items.helico.state="advancing"
     if(value==numberToGuess){
         items.infoText.text="Nombre trouvé!"
         items.bonus.good("tux")
