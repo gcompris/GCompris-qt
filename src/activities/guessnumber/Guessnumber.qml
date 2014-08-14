@@ -1,10 +1,10 @@
 /* GCompris - guessnumber.qml
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 Thib ROMAIN <thibrom@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   Clement Coudoin <clement.coudoin@free.fr> (GTK+ version)
+ *   Thib ROMAIN <thibrom@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -80,7 +80,6 @@ ActivityBase {
             anchors.top: back.top
             anchors.topMargin: 10
             anchors.horizontalCenter: back.horizontalCenter
-            text: qsTr("Enter a number")
             color: "white"
             font.bold: true
             font.pixelSize: 24
@@ -91,7 +90,6 @@ ActivityBase {
             anchors.top: back.top
             anchors.topMargin: 40
             anchors.horizontalCenter: back.horizontalCenter
-            text: qsTr("")
             color: "cyan"
             font.bold: true
             font.pixelSize: 20

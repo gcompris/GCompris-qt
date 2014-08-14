@@ -1,10 +1,10 @@
 /* GCompris - guessnumber.js
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 Thib ROMAIN <thibrom@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *   Clement Coudoin <clement.coudoin@free.fr> (GTK+ version)
+ *   Thib ROMAIN <thibrom@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -29,18 +29,15 @@ var numberToGuess = 0
 var currentMax
 
 function start(items_) {
-    console.log("guessnumber activity: start")
     items = items_
     currentLevel = 0
     initLevel()
 }
 
 function stop() {
-    console.log("guessnumber activity: stop")
 }
 
 function initLevel() {
-    console.log("guessnumber activity: create some content in my activity")
     items.bar.level = currentLevel + 1
     items.helico.x = 0
     items.helico.y = items.background.height/2
