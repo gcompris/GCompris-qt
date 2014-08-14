@@ -25,7 +25,7 @@
 var currentLevel = 0
 var numberOfLevel = 4
 var items
-var numberToGuess=0
+var numberToGuess = 0
 var currentMax
 
 function start(items_) {
@@ -44,25 +44,23 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.helico.x = 0
     items.helico.y = items.background.height/2
-    items.helico.state="horizontal"
-    switch(currentLevel){
-    case 0: currentMax=20
-            numberToGuess=getRandomInt(1,currentMax)
-            items.textzone.text="Entrez un nombre entre 1 et 20"
+    items.helico.state = "horizontal"
+    items.infoText.text=qsTr("")
+    switch(currentLevel) {
+    case 0: currentMax = 20
+            numberToGuess = getRandomInt(1,currentMax)
             break;
-    case 1: currentMax=40
-            numberToGuess=getRandomInt(1,currentMax)
-            items.textzone.text="Entrez un nombre entre 1 et 40"
+    case 1: currentMax = 40
+            numberToGuess = getRandomInt(1,currentMax)
             break;
-    case 2: currentMax=60
-            numberToGuess=getRandomInt(1,currentMax)
-            items.textzone.text="Entrez un nombre entre 1 et 60"
+    case 2: currentMax = 60
+            numberToGuess = getRandomInt(1,currentMax)
             break;
-    case 3: currentMax=99
-            numberToGuess=getRandomInt(1,currentMax)
-            items.textzone.text="Entrez un nombre entre 1 et 99"
+    case 3: currentMax = 99
+            numberToGuess = getRandomInt(1,currentMax)
             break;
     }
+    items.textzone.text = qsTr("Guess a number between 1 and " + currentMax)
 }
 
 function nextLevel() {
@@ -87,26 +85,26 @@ function setUserAnswer(value){
     if(value==0)
         return;
     if(value>currentMax){
-        items.infoText.text="Nombre trop grand"
+        items.infoText.text = qsTr("Number too high")
         return;
     }
     if(value>numberToGuess){
-        items.infoText.text="Nombre trop grand"
+        items.infoText.text = qsTr("Number too high")
     }
     if(value<numberToGuess){
-        items.infoText.text="Nombre trop petit"
+        items.infoText.text = qsTr("Number too low")
     }
     items.helico.state="advancing"
     if(value==numberToGuess){
-        items.infoText.text="Nombre trouvé!"
+        items.infoText.text = qsTr("Number found!")
         items.bonus.good("tux")
-        items.helico.x=items.background.width
-        items.helico.y=items.background.height/2 - items.background.height/10
+        items.helico.x = items.background.width
+        items.helico.y = items.background.height/2 - items.background.height/10
     }
     else {
-        var diff=Math.abs(numberToGuess-value)/currentMax
-        items.helico.x=(items.background.width-items.helico.width)-diff*items.background.width
-        items.helico.y=items.background.height/2 + ((numberToGuess-value)/currentMax)*(items.background.height/2) - items.helico.height/2
+        var diff = Math.abs(numberToGuess-value)/currentMax
+        items.helico.x = (items.background.width-items.helico.width)-diff*items.background.width
+        items.helico.y = items.background.height/2 + ((numberToGuess-value)/currentMax)*(items.background.height/2) - items.helico.height/2
     }
 }
 

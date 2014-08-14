@@ -80,8 +80,8 @@ ActivityBase {
             anchors.top: back.top
             anchors.topMargin: 10
             anchors.horizontalCenter: back.horizontalCenter
-            text: "Entrez un nombre"
-            color: "blue"
+            text: qsTr("Enter a number")
+            color: "white"
             font.bold: true
             font.pixelSize: 24
         }
@@ -91,8 +91,8 @@ ActivityBase {
             anchors.top: back.top
             anchors.topMargin: 40
             anchors.horizontalCenter: back.horizontalCenter
-            text: ""
-            color: "red"
+            text: qsTr("")
+            color: "cyan"
             font.bold: true
             font.pixelSize: 20
         }
