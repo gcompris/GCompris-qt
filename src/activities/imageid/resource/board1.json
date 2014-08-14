@@ -1,0 +1,22 @@
+[
+  {
+    "image": "school_bag.png",
+  	"good": "bag",
+	"bad": [ "cheese", "house" ] 
+  },
+  {
+  	"image": "banana.png",
+  	"good": "banana",
+	"bad": [ "house", "book" ]
+  },
+  {
+  	"image": "house.png",
+  	"good": "house",
+	"bad": [ "book", "bag" ]
+  },
+  {
+  	"image": "apple.png",
+  	"good": "apple",
+	"bad": [ "pear", "cow" ] 
+  }
+]

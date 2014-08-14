@@ -1,0 +1,42 @@
+[
+  {
+  	"image": "bed.png",
+  	"good": "bed",
+	"bad": [ "bottle", "book", "back" ] 
+  },
+  {
+  	"image": "bottle.png",
+  	"good": "bottle",
+	"bad": [ "book", "back", "car" ] 
+  },
+  {
+  	"image": "cake.png",
+   	"good": "cake",
+	"bad": [ "car", "camel", "bottle" ] 
+  },
+  {
+  	"image": "ball.png",
+   	"good": "ball",
+	"bad": [ "boat", "bottle", "car", "fish" ] 
+  },
+  {
+  	"image": "car.png",
+   	"good": "car",
+	"bad": [ "boat", "catch", "cat" ]
+  },
+  {
+  	"image": "dog.png",
+    "good": "dog",
+	"bad": [ "cat", "bottle", "fish" ]
+  },
+  {
+  	"image": "fish.png",
+    "good": "fish",
+	"bad": [ "finish", "cat", "boat" ]
+  },
+  {
+  	"image": "plane.png",
+    "good": "plane",
+	"bad": [ "boat", "car", "bottle", "dog", "finish" ]
+  }
+]
