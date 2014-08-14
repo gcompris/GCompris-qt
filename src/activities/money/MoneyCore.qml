@@ -79,6 +79,7 @@ ActivityBase {
 
             // === The Answer Area ===
             Rectangle {
+                id: answerArea
                 height: (column.itemHeight + 10) * column.nbLines
                 width: column.width
                 color: "#55333333"
@@ -127,13 +128,17 @@ ActivityBase {
             }
 
             // === The Store Area ===
-            property int nbStoreColumns: 4
+            property int nbStoreColumns: activity.dataset === "BACK_WITHOUT_CENTS" ||
+                                         activity.dataset === "BACK_WITH_CENTS" ? store.model.length + 1 : store.model.length
             property int itemStoreWidth:
-                Math.min(width / nbStoreColumns - 10 - 10 / nbStoreColumns,
-                         parent.height * 0.18 - 10 - 10)
+                Math.min( (width - storeAreaFlow.anchors.leftMargin -
+                           storeAreaFlow.anchors.rightMargin -
+                           storeAreaFlow.spacing * nbStoreColumns - 1) / nbStoreColumns,
+                          (parent.height - answerArea.height - instructionsArea.realHeight - pocketArea.height - bar.height) / 2)
             property int itemStoreHeight: itemStoreWidth
 
             Rectangle {
+                id: storeArea
                 height: (column.itemStoreHeight + 10)
                 width: column.width
                 color: "#55333333"
@@ -142,6 +147,7 @@ ActivityBase {
                 radius: 5
 
                 Flow {
+                    id: storeAreaFlow
                     anchors.topMargin: 4
                     anchors.bottomMargin: 4
                     anchors.leftMargin: 20
@@ -196,6 +202,7 @@ ActivityBase {
 
             // == The instructions Area ==
             Rectangle {
+                id: instructionsArea
                 height: instructions.height
                 width: column.width
                 color: "#55333333"
@@ -207,6 +214,9 @@ ActivityBase {
                 anchors.leftMargin: 10
                 anchors.rightMargin: 10
                 visible: bar.level === 1
+
+                property int realHeight: bar.level === 1 ? height : 0
+
                 Text {
                     id: instructions
                     horizontalAlignment: Text.AlignHCenter
@@ -218,6 +228,7 @@ ActivityBase {
 
             // === The Pocket Area ===
             Rectangle {
+                id: pocketArea
                 height: (column.itemHeight + 10) * column.nbLines
                 width: column.width
                 color: "#661111AA"
