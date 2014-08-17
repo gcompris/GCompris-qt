@@ -51,16 +51,13 @@ Item {
     function loadFromFile(fname) {
         filename = fname;
         var from;
-        var json = file.read(filename);
-        var levels;
-        if (json == ""
-            || (null === (levels = parseWordlistFromJson(json)))) {
+        wordList = parser.parseFromUrl(filename, validateWordlist);
+        if (wordList == null) {
             error("Wordlist: Invalid wordlist file " + fname);
             if (useDefault) {
                 // fallback to default file:
-                json = file.read(defaultFilename);
-                if (json == ""
-                    || (null === (levels = parseWordlistFromJson(json)))) {
+                wordList = parser.parseFromUrl(defaultFilename, validateWordlist);
+                if (wordList == null) {
                     error("Wordlist: Invalid wordlist file " + defaultFilename);
                     return;
                 }
@@ -69,34 +66,26 @@ Item {
         } else
             from = "file " + fname;
         // at this point we have valid levels
-        wordList = levels;
         maxLevel = wordList.levels.length;
         console.log("Wordlist: loaded " + maxLevel + " levels from " + from);
         return wordList;
     }
 
     /* FIXME: this should be private! possible? */
-    function parseWordlistFromJson(json)
+    function validateWordlist(doc)
     {
-        var doc;
-        try {
-            doc = JSON.parse(json);
-            // minimal syntax check:
-            var i;
-            if (undefined === doc.levels)
-                return null;
-            for (i = 0; i < doc.levels.length; i++) {
-                // check mandatory level properties only (speed, fallspeed and sublevels are optional)
-                if (doc.levels[i].words.length < 1)
-                    return null;
-            }
-            if (i < 1)
-                return null;
-        } catch(e) {
-            console.error("Worlist: Error parsing JSON: " + e)
-            return null;
+        // minimal syntax check:
+        var i;
+        if (undefined === doc.levels)
+            return false;
+        for (i = 0; i < doc.levels.length; i++) {
+            // check mandatory level properties only (speed, fallspeed and sublevels are optional)
+            if (doc.levels[i].words.length < 1)
+                return false;
         }
-        return doc;
+        if (i < 1)
+            return false;
+        return true;
     }
 
     function getLevelWordList(level) {
@@ -118,9 +107,8 @@ Item {
         return wordList.levels[level - 1].words[Math.floor(Math.random() * (wordList.levels[level - 1].words.length))];
     }
     
-    File {
-        id: file
-        name: ""
+    JsonParser {
+        id: parser
 
         onError: wordlist.error(msg);
     }
