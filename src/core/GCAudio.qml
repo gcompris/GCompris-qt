@@ -28,6 +28,8 @@ Item {
 
     property alias source: audio.source
     property alias errorString: audio.errorString
+    property var playbackState: (audio.error == Audio.NoError) ? 
+                                    audio.playbackState : Audio.StoppedState;
     property bool autoPlay
     property var files: []
 
