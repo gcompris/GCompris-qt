@@ -54,6 +54,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+
             property alias pointImageRepeater: pointImageRepeater
             property alias segmentsRepeater: segmentsRepeater
             property alias imageBack: imageBack
@@ -72,30 +73,22 @@ ActivityBase {
         }
 
 
+
+
+
         Repeater {
             id: segmentsRepeater
 
-            Canvas {
-                   id: canvas
-                   anchors {
-                       left: background.left
-                       right: background.right
-                       top: background.top
-                       bottom: background.bottom
-                   }
-
-                   opacity: 0
-                   property color color: "black"
-
-                   onPaint: {
-                       var ctx = getContext('2d')
-                       ctx.lineWidth = 1.5
-                       ctx.strokeStyle = canvas.color
-                       ctx.beginPath()
-                       ctx.moveTo(modelData[0][0]* background.width / 800,modelData[0][1]* background.height / 520)
-                       ctx.lineTo(modelData[1][0]* background.width / 800,modelData[1][1]* background.height / 520)
-                       ctx.stroke()
-                   }
+            Rectangle {
+                id: line
+                opacity: 0.0
+                color: "black"
+                transformOrigin: Item.TopLeft
+                x: modelData[0]
+                y: modelData[1]
+                width: modelData[2]
+                height: modelData[3]
+                rotation: modelData[4]
             }
         }
 
@@ -166,6 +159,9 @@ ActivityBase {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
+
+
+
 
     }
 

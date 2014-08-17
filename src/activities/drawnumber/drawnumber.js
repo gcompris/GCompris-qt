@@ -28,6 +28,7 @@ var clickanddrawflag
 
 var pointPositions = []
 var pairsOfPointPositionsArray = []
+var linePropertiesArray = []
 var pointIndexToClick
 
 var figureTmp = [[255,449],[340,340],[340,224],[212,233],[208,168],[395,160],[368,135],[367,77],[340,79],[339,68],[363,65],[359,30],[460,30],[464,56],[488,54],[489,66],[463,68],[462,135],[434,161],[612,163],[607,223],[477,221],[477,337],[561,457],[507,487],[413,377],[309,491],[255,449],[404,375],[406,271],[503,233],[588,278],[588,337],[611,311],[727,320],[728,424],[682,486],[560,474],[560,397],[495,423],[404,375]]
@@ -211,6 +212,8 @@ function drawSegment(pointIndex) {
 
 function loadCoordinates() {
 
+    console.log("figure: " + figures[currentLevel].imageName1)
+
     // prepare points data
     pointPositions = figures[currentLevel].coordinates
     items.pointImageRepeater.model = pointPositions
@@ -221,13 +224,26 @@ function loadCoordinates() {
 
     // prepare segments data
     pairsOfPointPositionsArray = []
+
+    linePropertiesArray = []
     for (var i = 0; i < (pointPositions.length)-1; i++) {
         var pairsOfPointPositions = []
+        var lineProperties = []                   // properties are x,y,width,height,angle rotation
         pairsOfPointPositions[0] = pointPositions[i]
         pairsOfPointPositions[1] = pointPositions[i+1]
-        pairsOfPointPositionsArray.push(pairsOfPointPositions)
+        pairsOfPointPositionsArray[i] = pairsOfPointPositions
+        lineProperties[0] = pointPositions[i][0]                                        // x
+        lineProperties[1] = pointPositions[i][1]                                        // y
+        lineProperties[2] = Math.sqrt(Math.pow((pointPositions[i][0] - pointPositions[i+1][0]), 2) + Math.pow((pointPositions[i][1]- pointPositions[i+1][1]), 2));  // width
+        lineProperties[3] = 5                                                           // height
+        lineProperties[4] = getAngle(pointPositions[i][0], pointPositions[i][1], pointPositions[i+1][0], pointPositions[i+1][1]);
+        console.log("angle: " + lineProperties[4])
+        linePropertiesArray[i] = lineProperties
+
+
     }
-    items.segmentsRepeater.model = pairsOfPointPositionsArray
+    //items.segmentsRepeater.model = pairsOfPointPositionsArray
+    items.segmentsRepeater.model = linePropertiesArray
 
 }
 
@@ -238,4 +254,55 @@ function loadBackgroundImage() {
 function won() {
     items.bonus.good("flower")
 }
+
+/* Calculates the angle between the two points */
+function getAngle(sx1, sy1, sx2, sy2)
+{
+        var dy, slope, angle;
+        var dx = sx2 - sx1;
+        console.log("dx: " + dx)
+
+        if (dx === 0)
+        {
+            if (sy2 > sy1) {
+                return 90
+            }
+            else {
+                return -90
+            }
+        }
+
+        dy = sy2 - sy1;
+        console.log("dy: " + dy)
+
+        if (dy === 0)
+        {
+            if (sx2 > sx1) {
+                return 0
+            }
+            else {
+                return 180
+            }
+        }
+
+        slope = dy / dx;
+        angle = Math.atan(slope) * 180 / Math.PI;
+
+        if (dy < 0 && dx < 0){
+            return angle + 180
+        }
+        else if (dy >= 0 && dx >= 0){
+            return angle;
+        }
+        else if (dy < 0 && dx >= 0){
+            return angle;
+        }
+        else if (dy >= 0 && dx < 0){
+            return angle + 180
+        }
+        else
+            return 0;
+    }
+
+
 
