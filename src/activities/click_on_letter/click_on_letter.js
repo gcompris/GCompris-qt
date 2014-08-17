@@ -57,41 +57,32 @@ function start(_items, _mode)
     initLevel();
 }
 
-function parseLevels(json)
+function validateLevels(levels)
 {
-    try {
-        levels = JSON.parse(json);
-        // minimal syntax check:
-        var i;
-        for (i = 0; i < levels.length; i++) {
-            if (undefined === levels[i].questions
-                || typeof levels[i].questions != "string"
-                || levels[i].questions.length < 1
-                || typeof levels[i].answers != "string"
-                || levels[i].answers.length < 1)
-                return false;
-        }
-        if (i < 1)
+    var i;
+    for (i = 0; i < levels.length; i++) {
+        if (undefined === levels[i].questions
+            || typeof levels[i].questions != "string"
+            || levels[i].questions.length < 1
+            || typeof levels[i].answers != "string"
+            || levels[i].answers.length < 1)
             return false;
-    } catch(e) {
-        console.error("Click_on_letter: Error parsing JSON: " + e)
-        return false;
     }
+    if (i < 1)
+        return false;
     return true;
 }
 
 function loadLevels()
 {
-    var ret;    
-    var json = items.levelsFile.read(
-                GCompris.ApplicationInfo.getLocaleFilePath(url +
-                                                           "levels-$LOCALE.json"))
-    if (json == "" || !parseLevels(json)) {
-        console.warn("Click_on_letter: Invalid levels file " +
-                items.levelsFile.name);
+    var ret;
+    var filename = GCompris.ApplicationInfo.getLocaleFilePath(url + "levels-$LOCALE.json");
+    levels = items.parser.parseFromUrl(filename);
+    if (levels == null) {
+        console.warn("Click_on_letter: Invalid levels file " + filename);
         // fallback to default Latin (levels-en.json) file:
-        json = items.levelsFile.read(defaultLevelsFile);
-        if (json == "" || !parseLevels(json)) {
+        levels = items.parser.parseFromUrl(defaultLevelsFile);
+        if (levels == null) {
             console.error("Click_on_letter: Invalid default levels file "
                 + items.levelsFile.name + ". Can't continue!");
             // any way to error-exit here?

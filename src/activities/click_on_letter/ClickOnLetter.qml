@@ -56,7 +56,7 @@ ActivityBase {
             property alias bar: bar
             property alias trainModel: trainModel
             property alias nextLevelAudio: nextLevelAudio
-            property alias levelsFile: levelsFile
+            property alias parser: parser
             property alias letterAudio: letterAudio 
             property alias questionItem: questionItem
             property alias score: score
@@ -224,11 +224,10 @@ ActivityBase {
             }
         }
         
-        File {
-            id: levelsFile
-            name: ""
-                
-            onError: console.log("Click_on_letter: levelsFile error: " + msg);
+        JsonParser {
+            id: parser
+
+            onError: wordlist.error(msg);
         }
 
         GCAudio {
