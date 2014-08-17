@@ -63,7 +63,7 @@ ActivityBase {
             property alias bonus: bonus
         }
         
-        onStart: Activity.start(items, mode); 
+        onStart: Activity.start(items, mode, activity.audio); 
         
         onStop: Activity.stop()
 
@@ -227,7 +227,7 @@ ActivityBase {
         JsonParser {
             id: parser
 
-            onError: wordlist.error(msg);
+            onError: console.error("Click_on_letter: Error parsing JSON: " + msg);
         }
 
         GCAudio {
@@ -243,7 +243,6 @@ ActivityBase {
             onError: questionItem.visible = true
 
             function playLetterDelayed(letter, ms) {
-                console.log("Player letter " + letter);
                 if (letterAudioTimer.running)
                     letterAudioTimer.stop();
                 letterAudio.source = ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"

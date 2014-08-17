@@ -24,6 +24,7 @@
 .pragma library
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
+.import QtMultimedia 5.0 as Multimedia
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/click_on_letter/resource/"
@@ -41,14 +42,16 @@ var questions;
 var answers;
 var items;
 var mode;
+var mainAudio
 
-function start(_items, _mode)
+function start(_items, _mode, _mainAudio)
 {
     Core.checkForVoices(_items.bar);
     _items.nextLevelAudio.source = GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/click_on_letter.ogg");
 
     items = _items;
     mode = _mode;
+    mainAudio = _mainAudio;
 
     loadLevels();
     currentLevel = 0;
@@ -84,7 +87,7 @@ function loadLevels()
         levels = items.parser.parseFromUrl(defaultLevelsFile);
         if (levels == null) {
             console.error("Click_on_letter: Invalid default levels file "
-                + items.levelsFile.name + ". Can't continue!");
+                + defaultLevelsFile + ". Can't continue!");
             // any way to error-exit here?
             return;
         }
@@ -146,7 +149,13 @@ function initLevel() {
                 GCompris.DownloadManager.getVoicesResourceForLocale(
                         GCompris.ApplicationInfo.localeShort))) {
         items.nextLevelAudio.stop();
-        items.nextLevelAudio.play();
+        if (mainAudio.playbackState === Multimedia.Audio.PlayingState)
+            mainAudio.onDone.connect(function () {
+                items.nextLevelAudio.play();
+            });
+        else
+            items.nextLevelAudio.play();
+        
         items.questionItem.visible = false;
     } else {
         // no sound -> show question
