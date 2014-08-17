@@ -45,7 +45,7 @@ Rectangle {
             name: "default"
             PropertyChanges {
                 target: mCase
-                color: "#AA1111EE"
+                color: "#33333333"
             }
         },
         State {

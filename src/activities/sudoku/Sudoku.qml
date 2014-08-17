@@ -83,11 +83,13 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            z: 1002
             Component.onCompleted: win.connect(Activity.incrementLevel)
         }
 
         Score {
             id: score
+            z: 1003
             anchors.bottom: background.bottom
             anchors.right: background.right
         }
