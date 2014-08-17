@@ -31,7 +31,7 @@ Item {
         id: jsonfile
         name: ""
     
-        onError: wordlist.error(msg);
+        onError: jsonparser.error(msg);
     }
 
     /** public interface: */
@@ -74,7 +74,8 @@ Item {
     function parseFromUrl(url, validateFunc)
     {
         var json = "'";
-        if (url.substring(0,3) == "qrc" || url.substring(0,4) == "file") {
+        if (url.substring(0,3) == "qrc" || url.substring(0,4) == "file"
+            || url.substring(0,1) == ":") {
             json = jsonFile.read(url);
             if (json != "")
                 return parseString(json, validateFunc);              
