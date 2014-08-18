@@ -27,7 +27,6 @@ var items
 var clickanddrawflag
 
 var pointPositions = []
-var pairsOfPointPositionsArray = []
 var linePropertiesArray = []
 var pointIndexToClick
 
@@ -212,8 +211,6 @@ function drawSegment(pointIndex) {
 
 function loadCoordinates() {
 
-    console.log("figure: " + figures[currentLevel].imageName1)
-
     // prepare points data
     pointPositions = figures[currentLevel].coordinates
     items.pointImageRepeater.model = pointPositions
@@ -223,26 +220,16 @@ function loadCoordinates() {
     }
 
     // prepare segments data
-    pairsOfPointPositionsArray = []
-
     linePropertiesArray = []
     for (var i = 0; i < (pointPositions.length)-1; i++) {
-        var pairsOfPointPositions = []
-        var lineProperties = []                   // properties are x,y,width,height,angle rotation
-        pairsOfPointPositions[0] = pointPositions[i]
-        pairsOfPointPositions[1] = pointPositions[i+1]
-        pairsOfPointPositionsArray[i] = pairsOfPointPositions
-        lineProperties[0] = pointPositions[i][0]                                        // x
-        lineProperties[1] = pointPositions[i][1]                                        // y
-        lineProperties[2] = Math.sqrt(Math.pow((pointPositions[i][0] - pointPositions[i+1][0]), 2) + Math.pow((pointPositions[i][1]- pointPositions[i+1][1]), 2));  // width
-        lineProperties[3] = 5                                                           // height
+        var lineProperties = []                   // properties are x1,y1,x2,y,angle rotation
+        lineProperties[0] = pointPositions[i][0]                                       // x
+        lineProperties[1] = pointPositions[i][1]                                    // y
+        lineProperties[2] = pointPositions[i+1][0]
+        lineProperties[3] = pointPositions[i+1][1]
         lineProperties[4] = getAngle(pointPositions[i][0], pointPositions[i][1], pointPositions[i+1][0], pointPositions[i+1][1]);
-        console.log("angle: " + lineProperties[4])
         linePropertiesArray[i] = lineProperties
-
-
     }
-    //items.segmentsRepeater.model = pairsOfPointPositionsArray
     items.segmentsRepeater.model = linePropertiesArray
 
 }
@@ -260,7 +247,6 @@ function getAngle(sx1, sy1, sx2, sy2)
 {
         var dy, slope, angle;
         var dx = sx2 - sx1;
-        console.log("dx: " + dx)
 
         if (dx === 0)
         {
@@ -273,7 +259,6 @@ function getAngle(sx1, sy1, sx2, sy2)
         }
 
         dy = sy2 - sy1;
-        console.log("dy: " + dy)
 
         if (dy === 0)
         {

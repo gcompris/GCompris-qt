@@ -81,13 +81,16 @@ ActivityBase {
 
             Rectangle {
                 id: line
-                opacity: 0.0
+
+                opacity: 0
                 color: "black"
                 transformOrigin: Item.TopLeft
-                x: modelData[0]
-                y: modelData[1]
-                width: modelData[2]
-                height: modelData[3]
+                x: modelData[0] * background.width / 800
+                y: modelData[1] * background.height / 520
+                property var x2: modelData[2] * background.width / 800
+                property var y2: modelData[3] * background.height / 520
+                width: Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y- y2, 2))
+                height: 2
                 rotation: modelData[4]
             }
         }
