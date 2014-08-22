@@ -39,6 +39,7 @@ ActivityBase {
         anchors.fill: parent
         source: Activity.url + "background.svg"
         sourceSize.width: parent.width
+        fillMode: Image.PreserveAspectCrop
         signal start
         signal stop
 
@@ -101,7 +102,7 @@ ActivityBase {
                         width: items.cellSize
                         height: items.cellSize
                         border.color: "#FFFFFFFF"
-                        border.width: 1
+                        border.width: 1 * ApplicationInfo.ratio
                         Piece {
                             anchors.fill: parent
                             state: stateTemp
