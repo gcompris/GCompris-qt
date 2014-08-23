@@ -91,7 +91,8 @@ ActivityBase {
                 property var y2: modelData[3] * background.height / 520
                 width: Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y- y2, 2))
                 height: 2
-                rotation: modelData[4]
+                rotation: (Math.atan((y2 - y)/(x2-x)) * 180 / Math.PI) + (((y2-y) < 0 && (x2-x) < 0) * 180) + (((y2-y) >= 0 && (x2-x) < 0) * 180)
+
             }
         }
 
