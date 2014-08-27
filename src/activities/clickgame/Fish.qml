@@ -21,14 +21,13 @@
  */
 import QtQuick 2.1
 import QtQuick.Particles 2.0
-import QtMultimedia 5.0
 import "clickgame.js" as Activity
 import "../../core"
 import GCompris 1.0
 
 AnimatedSprite {
     id: fish
-    property Item main
+    property Item activity
     property Item bar
     property real targetX // The x target of the fish
     property int duration: 5000
@@ -36,13 +35,8 @@ AnimatedSprite {
     interpolate: true
 
     Component.onCompleted: {
-        targetX = main.width - fish.width
+        targetX = activity.width - fish.width
         x = targetX
-    }
-
-    GCAudio {
-        id: audioDrip
-        source: "qrc:/gcompris/src/activities/clickgame/resource/drip.wav"
     }
 
     transform: Rotation {
@@ -74,16 +68,16 @@ AnimatedSprite {
     }
 
     onXChanged: {
-        if( (x > main.width - fish.width && rotate.angle == 0) ||
+        if( (x > activity.width - fish.width && rotate.angle == 0) ||
             (x == targetX && rotate.angle == 0) ) {
             rotateLeftAnimation.start()
             targetX = 0
             x = targetX
-            y = Activity.currentLevel > 0 ? Math.random() * (main.height - bar.height - fish.height) : y
+            y = Activity.currentLevel > 0 ? Math.random() * (activity.height - bar.height - fish.height) : y
             bubbleEffect.restart()
         } else if(x == 0 && rotate.angle == 180) {
             rotateRightAnimation.start()
-            targetX = main.width - fish.width
+            targetX = activity.width - fish.width
             x = targetX
             bubbleEffect.restart()
         }
@@ -97,7 +91,7 @@ AnimatedSprite {
         onClicked: {
             parent.opacity = 0
             enabled = false
-            audioDrip.play()
+            activity.audioEffects.play("qrc:/gcompris/src/activities/clickgame/resource/drip.wav")
             Activity.fishKilled()
             particles.emitter.burst(40);
         }

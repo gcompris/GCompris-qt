@@ -70,7 +70,8 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias plane: plane
-            property alias audio: audio
+            property GCAudio audioVoices: activity.audioVoices
+            property GCAudio audioEffects: activity.audioEffects
             property alias movePlaneTimer: movePlaneTimer
             property alias cloudCreation: cloudCreation
         }
@@ -129,10 +130,6 @@ ActivityBase {
         Plane {
             id: plane
             background: background
-        }
-
-        GCAudio {
-            id: audio
         }
 
     }

@@ -58,8 +58,8 @@ static const QString ADMIN_GROUP_KEY = "Admin";
 static const QString INTERNAL_GROUP_KEY = "Internal";
 
 static const QString FULLSCREEN_KEY = "fullscreen";
-static const QString ENABLE_AUDIO_KEY = "enableSounds";
-static const QString ENABLE_EFFECTS_KEY = "enableEffects";
+static const QString ENABLE_AUDIO_VOICES_KEY = "enableAudioVoices";
+static const QString ENABLE_AUDIO_EFFECTS_KEY = "enableAudioEffects";
 static const QString VIRTUALKEYBOARD_KEY = "virtualKeyboard";
 static const QString LOCALE_KEY = "locale";
 static const QString ENABLE_AUTOMATIC_DOWNLOADS = "enableAutomaticDownloads";
@@ -81,9 +81,9 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
 
     // general group
     m_config.beginGroup(GENERAL_GROUP_KEY);
-    m_isEffectEnabled = m_config.value(ENABLE_EFFECTS_KEY, true).toBool();
+	m_isAudioEffectsEnabled = m_config.value(ENABLE_AUDIO_EFFECTS_KEY, true).toBool();
     m_isFullscreen = m_config.value(FULLSCREEN_KEY, true).toBool();
-    m_isAudioEnabled = m_config.value(ENABLE_AUDIO_KEY, true).toBool();
+	m_isAudioVoicesEnabled = m_config.value(ENABLE_AUDIO_VOICES_KEY, true).toBool();
     m_isVirtualKeyboard = m_config.value(VIRTUALKEYBOARD_KEY,
             ApplicationInfo::getInstance()->isMobile()).toBool();
     m_locale = m_config.value(LOCALE_KEY,
@@ -105,8 +105,9 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_exeCount = m_config.value(EXE_COUNT_KEY, 0).toUInt();
     m_config.endGroup();
 
-    connect(this, SIGNAL(audioEnabledChanged()), this, SLOT(notifyAudioEnabledChanged()));
-    connect(this, SIGNAL(fullscreenChanged()), this, SLOT(notifyFullscreenChanged()));
+	connect(this, SIGNAL(audioVoicesEnabledChanged()), this, SLOT(notifyAudioVoicesEnabledChanged()));
+	connect(this, SIGNAL(audioEffectsEnabledChanged()), this, SLOT(notifyAudioEffectsEnabledChanged()));
+	connect(this, SIGNAL(fullscreenChanged()), this, SLOT(notifyFullscreenChanged()));
     connect(this, SIGNAL(localeChanged()), this, SLOT(notifyLocaleChanged()));
     connect(this, SIGNAL(virtualKeyboardChanged()), this, SLOT(notifyVirtualKeyboardChanged()));
     connect(this, SIGNAL(automaticDownloadsEnabledChanged()), this, SLOT(notifyAutomaticDownloadsEnabledChanged()));
@@ -121,7 +122,7 @@ ApplicationSettings::~ApplicationSettings()
     // make sure settings file is up2date:
     // general group
     m_config.beginGroup(GENERAL_GROUP_KEY);
-    m_config.setValue(ENABLE_AUDIO_KEY, m_isAudioEnabled);
+	m_config.setValue(ENABLE_AUDIO_VOICES_KEY, m_isAudioVoicesEnabled);
     m_config.setValue(LOCALE_KEY, m_locale);
     m_config.setValue(FULLSCREEN_KEY, m_isFullscreen);
     m_config.setValue(VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
@@ -145,14 +146,24 @@ ApplicationSettings::~ApplicationSettings()
     m_instance = NULL;
 }
 
-void ApplicationSettings::notifyAudioEnabledChanged()
+void ApplicationSettings::notifyAudioVoicesEnabledChanged()
 {
-    // Save in config
-    m_config.beginGroup(GENERAL_GROUP_KEY);
-    m_config.setValue(ENABLE_AUDIO_KEY, m_isAudioEnabled);
-    m_config.endGroup();
-    qDebug() << "notifyAudio: " << m_isAudioEnabled;
-    m_config.sync();
+	// Save in config
+	m_config.beginGroup(GENERAL_GROUP_KEY);
+	m_config.setValue(ENABLE_AUDIO_VOICES_KEY, m_isAudioVoicesEnabled);
+	m_config.endGroup();
+	qDebug() << "notifyAudioVoices: " << m_isAudioVoicesEnabled;
+	m_config.sync();
+}
+
+void ApplicationSettings::notifyAudioEffectsEnabledChanged()
+{
+	// Save in config
+	m_config.beginGroup(GENERAL_GROUP_KEY);
+	m_config.setValue(ENABLE_AUDIO_EFFECTS_KEY, m_isAudioEffectsEnabled);
+	m_config.endGroup();
+	qDebug() << "notifyAudioEffects: " << m_isAudioEffectsEnabled;
+	m_config.sync();
 }
 
 void ApplicationSettings::notifyLocaleChanged()

@@ -28,9 +28,11 @@ Item {
     property Component pageComponent
     property QtObject menu
     property QtObject activityInfo
-    // The global audio item, append to it to play your sounds after the
+    // The global audio item, append to it to play your voices after the
     // intro music
-    property GCAudio audio
+    property GCAudio audioVoices
+    // The global audio effect, use it to play sound effects
+    property GCAudio audioEffects
     property bool isLocked: true
     signal home
     signal start

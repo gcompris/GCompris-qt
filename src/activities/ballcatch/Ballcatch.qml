@@ -230,31 +230,7 @@ to make the ball go in a straight line.")
         }
 
         function playSound(identifier) {
-
-            if(identifier == "tuxok") {
-                tuxok.play()
-            }
-            else if(identifier == "youcannot") {
-                youcannot.play()
-            }
-            else if(identifier == "brick") {
-                brick.play()
-            }
-        }
-
-        GCAudio {
-            id: brick
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/brick.wav"
-        }
-
-        GCAudio {
-            id: tuxok
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
-        }
-
-        GCAudio {
-            id: youcannot
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/youcannot.wav"
+            activity.audioEffects.play("qrc:/gcompris/src/activities/ballcatch/resource/"+ identifier + ".wav")
         }
 
         /* Timer starting when user first presses a first key.

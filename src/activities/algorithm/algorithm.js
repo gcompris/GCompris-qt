@@ -1,6 +1,6 @@
 /* GCompris - algorithm.js
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 Bharath M S" <brat.197@gmail.com>
  *
  * Authors:
  *   Christof Petig and Ingo Konrad (GTK+ version)
@@ -32,7 +32,6 @@ getSetLength() - returns the number of unique indices in the chosen sample
 getImages() - returns a random array of length 8 that is based on the chosen sample
 setQuestion() - the function is called to set questionTray
 setAnswer() - the function is called to set answerTray
-playSound() - the function used to play audio brick and bleep
 clickHandler() - called to handle click event
 
 variables :-
@@ -158,12 +157,6 @@ function setAnswer(indices){
 var choiceCount = 5 //game is won when choiceCount = 8
 var times = 0 // level increases when times = 3
 
-// The audio part does not work as expected
-
-function playSound(id) {
-    items.audio.source = "qrc:/gcompris/src/core/resource/sounds/" + id + ".wav"
-    items.audio.play()
-}
 
 function clickHandler(id){
     var tempIndex = []
@@ -171,7 +164,7 @@ function clickHandler(id){
     if(id === answerIndex[choiceCount]) { //correct answer
         tempIndex = items.answer.model
         choiceCount++;
-        playSound('bleep')
+        items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
 
         if(choiceCount < 8){
             tempIndex.push('question_mark')
@@ -193,7 +186,7 @@ function clickHandler(id){
         }
         return 1
     } else { // Wrong answer, try again
-        playSound('brick')
+        items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/brick.wav')
     }
 }
 

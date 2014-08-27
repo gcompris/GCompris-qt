@@ -54,8 +54,8 @@ class ApplicationSettings : public QObject
 	Q_OBJECT
 
 	// general group
-    Q_PROPERTY(bool isAudioEnabled READ isAudioEnabled WRITE setIsAudioEnabled NOTIFY audioEnabledChanged)
-    Q_PROPERTY(bool isEffectEnabled READ isEffectEnabled WRITE setIsEffectEnabled NOTIFY effectEnabledChanged)
+	Q_PROPERTY(bool isAudioVoicesEnabled READ isAudioVoicesEnabled WRITE setIsAudioVoicesEnabled NOTIFY audioVoicesEnabledChanged)
+	Q_PROPERTY(bool isAudioEffectsEnabled READ isAudioEffectsEnabled WRITE setIsAudioEffectsEnabled NOTIFY audioEffectsEnabledChanged)
     Q_PROPERTY(bool isFullscreen READ isFullscreen WRITE setFullscreen NOTIFY fullscreenChanged)
     Q_PROPERTY(bool isVirtualKeyboard READ isVirtualKeyboard WRITE setVirtualKeyboard NOTIFY virtualKeyboardChanged)
     Q_PROPERTY(QString locale READ locale WRITE setLocale NOTIFY localeChanged)
@@ -86,16 +86,16 @@ public:
     static QObject *systeminfoProvider(QQmlEngine *engine,
                                        QJSEngine *scriptEngine);
 
-    bool isAudioEnabled() const { return m_isAudioEnabled; }
-    void setIsAudioEnabled(const bool newMode) {
-        m_isAudioEnabled = newMode;
-        emit audioEnabledChanged();
+	bool isAudioVoicesEnabled() const { return m_isAudioVoicesEnabled; }
+	void setIsAudioVoicesEnabled(const bool newMode) {
+		m_isAudioVoicesEnabled = newMode;
+		emit audioVoicesEnabledChanged();
     }
 
-    bool isEffectEnabled() const { return m_isEffectEnabled; }
-    void setIsEffectEnabled(const bool newMode) {
-        m_isEffectEnabled = newMode;
-        emit effectEnabledChanged();
+	bool isAudioEffectsEnabled() const { return m_isAudioEffectsEnabled; }
+	void setIsAudioEffectsEnabled(const bool newMode) {
+		m_isAudioEffectsEnabled = newMode;
+		emit audioEffectsEnabledChanged();
     }
 
     bool isFullscreen() const { return m_isFullscreen; }
@@ -147,8 +147,8 @@ public:
     }
 
 protected slots:
-    Q_INVOKABLE void notifyAudioEnabledChanged();
-    Q_INVOKABLE void notifyEffectEnabledChanged() {}
+	Q_INVOKABLE void notifyAudioVoicesEnabledChanged();
+	Q_INVOKABLE void notifyAudioEffectsEnabledChanged();
     Q_INVOKABLE void notifyFullscreenChanged();
     Q_INVOKABLE void notifyVirtualKeyboardChanged();
     Q_INVOKABLE void notifyLocaleChanged();
@@ -163,8 +163,8 @@ protected slots:
 protected:
 
 signals:
-    void audioEnabledChanged();
-    void effectEnabledChanged();
+	void audioVoicesEnabledChanged();
+	void audioEffectsEnabledChanged();
     void fullscreenChanged();
     void virtualKeyboardChanged();
     void localeChanged();
@@ -178,8 +178,8 @@ signals:
 
 private:
     static ApplicationSettings *m_instance;
-    bool m_isAudioEnabled;
-    bool m_isEffectEnabled;
+	bool m_isAudioVoicesEnabled;
+	bool m_isAudioEffectsEnabled;
     bool m_isFullscreen;
     bool m_isVirtualKeyboard;
     bool m_isAutomaticDownloadsEnabled;

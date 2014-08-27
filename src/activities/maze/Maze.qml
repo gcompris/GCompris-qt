@@ -61,7 +61,7 @@ ActivityBase {
             property alias mazeRows: maze.rows
             property alias mazeColumns: maze.columns
             property alias mazeRepeater: mazeRepeater.model
-            property alias playBrick: playBrick
+            property GCAudio audioEffects: activity.audioEffects
             property alias message: message
             property int playerx: 0
             property int playery: 0
@@ -347,11 +347,6 @@ ActivityBase {
             visible: false
             wrapMode: Text.Wrap
             text: qsTr("Look at your position, then switch back to invisible mode to continue your moves")
-        }
-
-        GCAudio {
-            id: playBrick
-            source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
         }
 
         DialogHelp {

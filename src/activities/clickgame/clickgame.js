@@ -212,7 +212,7 @@ var levelProperty = [
         ]
 var currentImageId = 0
 var currentLevel = 0
-var main
+var activity
 var background
 var bar
 var bonus
@@ -221,8 +221,8 @@ var bonus
 var createdFishes
 var killedFishes
 
-function start(main_, background_, bar_, bonus_) {
-    main = main_
+function start(activity_, background_, bar_, bonus_) {
+    activity = activity_
     background = background_
     bar = bar_
     bonus = bonus_
@@ -265,10 +265,10 @@ function createFish(minDuration) {
     var fish = component.createObject(
                 background,
                 {
-                    "main": main,
+                    "activity": activity,
                     "bar": bar,
-                    "x": Math.random() * (main.width - fishSource.width),
-                    "y": Math.random() * (main.height - bar.height - fishSource.height),
+                    "x": Math.random() * (activity.width - fishSource.width),
+                    "y": Math.random() * (activity.height - bar.height - fishSource.height),
                     "width": fishSource.width * 1.1 * GCompris.ApplicationInfo.ratio,
                     "height": fishSource.height * 1.1 * GCompris.ApplicationInfo.ratio,
                     "source": "qrc:/gcompris/src/activities/clickgame/resource/" +

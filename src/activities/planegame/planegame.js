@@ -297,14 +297,14 @@ function handleCollisionsWithCloud() {
                     if(currentSubLevel === numberOfSubLevels) {
                         /* Try the next level */
                         nextLevel()
-                        playSound("qrc:/gcompris/src/core/resource/sounds/bonus.wav")
+                        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/bonus.wav")
                     } else {
                         items.score.message = dataset[currentLevel].data[currentSubLevel]
                     }
                 } else {
                     /* Touched the wrong cloud */
                     if(!cloud.touched)
-                        playSound("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
                     cloud.touch()
                 }
                 break;
@@ -320,15 +320,9 @@ function handleCollisionsWithCloud() {
     }
 }
 
-function playSound(sound) {
-    items.audio.source = sound
-    items.audio.play()
-}
-
 function playLetterSound(number) {
-    items.audio.source =
-            GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
-                            + Core.getSoundFilenamForChar(number))
-
-    items.audio.play()
+    items.audioVoices.play(
+                GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
+                                                          + Core.getSoundFilenamForChar(number))
+                )
 }

@@ -34,14 +34,9 @@ ActivityBase {
     onStart: {}
     onStop: {}
 
-    GCAudio {
-        id: audio
-        source: "qrc:/gcompris/src/activities/clickgame/resource/bubble.wav"
-    }
-
     Timer {
         interval: 5000; running: true; repeat: true
-        onTriggered: audio.play()
+        onTriggered: activity.audioEffects.play("qrc:/gcompris/src/activities/clickgame/resource/bubble.wav")
     }
 
     pageComponent: Image {
@@ -57,7 +52,7 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        onStart: { Activity.start(main, background, bar, bonus) }
+        onStart: { Activity.start(activity, background, bar, bonus) }
         onStop: { Activity.stop() }
 
         DialogHelp {

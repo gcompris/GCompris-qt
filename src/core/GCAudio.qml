@@ -36,7 +36,12 @@ Item {
     signal error
     signal done
 
-    function play() {
+    // @param file is optional
+    function play(file) {
+
+        if(file)
+            source = file
+
         if(!muted) {
             audio.play()
         }

@@ -20,7 +20,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.2
-import QtMultimedia 5.0
 import GCompris 1.0
 import "../../core"
 import "algorithm.js" as Activity
@@ -54,7 +53,7 @@ ActivityBase {
             property alias question: question
             property alias answer: answer
             property alias choice: choice
-            property alias audio: audio
+            property GCAudio audioEffects: activity.audioEffects
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
@@ -207,9 +206,6 @@ ActivityBase {
                     }
                 }
             }
-        }
-        GCAudio {
-            id: audio
         }
 
         DialogHelp {

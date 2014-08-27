@@ -97,11 +97,20 @@ Rectangle {
                         width: parent.width
                         // Put configuration here
                         GCDialogCheckBox {
-                            id: enableAudioBox
-                            text: qsTr("Enable audio")
-                            checked: isAudioEnabled
+                            id: enableAudioVoicesBox
+                            text: qsTr("Enable audio voices")
+                            checked: isAudioVoicesEnabled
                             onCheckedChanged: {
-                                isAudioEnabled = checked;
+                                isAudioVoicesEnabled = checked;
+                            }
+                        }
+
+                        GCDialogCheckBox {
+                            id: enableAudioEffectsBox
+                            text: qsTr("Enable audio effects")
+                            checked: isAudioEffectsEnabled
+                            onCheckedChanged: {
+                                isAudioEffectsEnabled = checked;
                             }
                         }
 
@@ -367,15 +376,19 @@ Rectangle {
         }
     }
  
-    property bool isAudioEnabled: ApplicationSettings.isAudioEnabled
+    property bool isAudioVoicesEnabled: ApplicationSettings.isAudioVoicesEnabled
+    property bool isAudioEffectsEnabled: ApplicationSettings.isAudioEffectsEnabled
     property bool isFullscreen: ApplicationSettings.isFullscreen
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
 
     onStart: {
         // Synchronize settings with data
-        isAudioEnabled = ApplicationSettings.isAudioEnabled
-        enableAudioBox.checked = isAudioEnabled
+        isAudioVoicesEnabled = ApplicationSettings.isAudioVoicesEnabled
+        enableAudioVoicesBox.checked = isAudioVoicesEnabled
+
+        isAudioEffectsEnabled = ApplicationSettings.isAudioEffectsEnabled
+        enableAudioEffectsBox.checked = isAudioEffectsEnabled
 
         isFullscreen = ApplicationSettings.isFullscreen
         enableFullscreenBox.checked = isFullscreen
@@ -396,7 +409,8 @@ Rectangle {
     }
 
     function save() {
-        ApplicationSettings.isAudioEnabled = isAudioEnabled
+        ApplicationSettings.isAudioVoicesEnabled = isAudioVoicesEnabled
+        ApplicationSettings.isAudioEffectsEnabled = isAudioEffectsEnabled
         ApplicationSettings.isFullscreen = isFullscreen
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
@@ -465,7 +479,7 @@ Rectangle {
 
     function hasConfigChanged() {
         return (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale ||
-                (ApplicationSettings.isAudioEnabled != isAudioEnabled) ||
+                (ApplicationSettings.isAudioEnabled != isAudioVoicesEnabled) ||
                 (ApplicationSettings.isFullscreen != isFullscreen) ||
                 (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard) ||
                 (ApplicationSettings.isAutomaticDownloadsEnabled != isAutomaticDownloadsEnabled)

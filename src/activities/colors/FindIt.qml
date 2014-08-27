@@ -98,7 +98,7 @@ ActivityBase {
             function initQuestion() {
                 text = Activity.getCurrentTextQuestion()
                 if(Activity.getCurrentAudioQuestion()) {
-                    activity.audio.append(Activity.getCurrentAudioQuestion())
+                    activity.audioVoices.append(Activity.getCurrentAudioQuestion())
                 }
                 opacity = 1.0
             }

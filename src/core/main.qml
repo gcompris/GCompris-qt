@@ -21,7 +21,6 @@
 import QtQuick 2.2
 import QtQuick.Controls 1.2
 import QtQuick.Window 2.1
-import QtMultimedia 5.0
 import QtQuick.Dialogs 1.1
 
 import GCompris 1.0
@@ -38,14 +37,22 @@ Window {
     onClosing: Core.quit()
         
     GCAudio {
-        id: audio
+        id: audioVoices
         source: "qrc:/gcompris/src/core/resource/intro.ogg"
+        muted: !ApplicationSettings.isAudioVoicesEnabled
+        autoPlay: false
+    }
+
+    GCAudio {
+        id: audioEffects
+        source: "qrc:/gcompris/src/core/resource/intro.ogg"
+        muted: !ApplicationSettings.isAudioEffectsEnabled
         autoPlay: false
     }
 
     function playIntroVoice(name) {
         name = name.split("/")[0]
-        audio.append(ApplicationInfo.getAudioFilePath("voices/$LOCALE/intro/" + name + ".ogg"))
+        audioVoices.append(ApplicationInfo.getAudioFilePath("voices/$LOCALE/intro/" + name + ".ogg"))
     }
 
     Component.onCompleted: {
@@ -80,7 +87,8 @@ Window {
                 if(!properties.exitItem.isDialog) {
                     if(!properties.enterItem.isDialog) {
                         playIntroVoice(properties.enterItem.activityInfo.name)
-                        properties.enterItem.audio = audio
+                        properties.enterItem.audioVoices = audioVoices
+                        properties.enterItem.audioEffects = audioEffects
                     }
                     properties.enterItem.start()
                 }
