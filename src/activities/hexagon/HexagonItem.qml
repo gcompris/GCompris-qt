@@ -27,7 +27,7 @@ import GCompris 1.0
 
 Item {
     id: hexagon
-    property GCAudio audioDrip
+    property GCAudio audioEffects
     property ParticleSystemStar particles
     property alias color: colorOverlay.color
     property bool hasStrawberry: false
@@ -100,7 +100,7 @@ Item {
             canvas.opacity = 0
             isTouched = true
             strawberry.source = Activity.url + "strawberry.svgz"
-            audioDrip.play()
+            audioEffects.play("qrc:/gcompris/src/activities/clickgame/resource/drip.wav")
             Activity.strawberryFound()
             particleLoader.item.emitter.burst(40)
         } else {

@@ -41,6 +41,8 @@ Item {
 
     property bool tuxTurn
 
+    property GCAudio audioVoices
+
     onIsFoundChanged: {
         timer.start()
     }
@@ -119,8 +121,7 @@ Item {
         Activity.cardClicked(item)
         isShown = true
         if (item.pairData.sound) {
-            sound.source = item.pairData.sound
-            sound.play()
+            audioVoices.play(item.pairData.sound)
         }
     }
 

@@ -128,8 +128,7 @@ ActivityBase {
                                 enabled: modelData.isTarget &&
                                          miningBg.scale === miningBg._MAX_SCALE
                                 onClicked: {
-                                    audio.source = Activity.url + "pickaxe.ogg"
-                                    audio.play()
+                                    activity.audioEffects.play(Activity.url + "pickaxe.ogg")
                                     background.gotIt = true
                                 }
                             }
@@ -149,8 +148,7 @@ ActivityBase {
                             opacity: !modelData.isTarget ? 1 : (background.gotIt ? 0 : 1)
 
                             Component.onCompleted: {
-                                audio.source = Activity.url + "realrainbow.ogg"
-                                audio.play()
+                                activity.audioEffects.play(Activity.url + "realrainbow.ogg")
                             }
 
                             ParallelAnimation {
@@ -186,39 +184,7 @@ ActivityBase {
 
                 function updateScale(zoomDelta, x, y) {
 
-                    console.log(zoomDelta, miningBg.scale)
                     if (zoomDelta > 0 && miningBg.scale < miningBg._MAX_SCALE) {
-                        if(miningBg.scale < miningBg._MAX_SCALE) {
-//                            if(x <= miningBg.width / 3) {
-//                                miningBg.anchors.left = background.left
-//                                miningBg.anchors.right = undefined
-//                                miningBg.anchors.horizontalCenter = undefined
-//                            } else if(zoomDelta > parent.width * 2 / 3) {
-//                                miningBg.anchors.left = undefined
-//                                miningBg.anchors.right = background.right
-//                                miningBg.anchors.horizontalCenter = undefined
-//                            } else {
-//                                miningBg.anchors.left = undefined
-//                                miningBg.anchors.right = undefined
-//                                miningBg.anchors.horizontalCenter = background.horizontalCenter
-//                            }
-
-
-//                            if(y <= miningBg.height / 3) {
-//                                miningBg.anchors.top = background.top
-//                                miningBg.anchors.bottom = undefined
-//                                miningBg.anchors.verticalCenter = undefined
-//                            } else if(y > miningBg.height * 2 / 3) {
-//                                miningBg.anchors.top = undefined
-//                                miningBg.anchors.bottom = background.bottom
-//                                miningBg.anchors.verticalCenter = undefined
-//                            } else {
-//                                miningBg.anchors.top = undefined
-//                                miningBg.anchors.bottom = undefined
-//                                miningBg.anchors.verticalCenter = background.verticalCenter
-//                            }
-
-                        }
                         if(miningBg.scale < miningBg._MAX_SCALE - 0.1)
                             miningBg.scale += 0.1;
                         else
@@ -357,9 +323,6 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
-        GCAudio {
-            id: audio
-        }
     }
 
 }

@@ -153,6 +153,9 @@ Item {
         to: parent.height
         duration: 10000
 
-        onStopped: Activity.deleteWord(word);
+        onStopped: {
+            Activity.audioCrashPlay();
+            Activity.deleteWord(word);
+        }
     }
 }

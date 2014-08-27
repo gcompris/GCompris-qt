@@ -37,16 +37,6 @@ ActivityBase {
     onStart: {}
     onStop: {}
 
-    GCAudio {
-        id: moveSound
-        source: "qrc:/gcompris/src/activities/gnumch-equality/resource/smudge.wav"
-    }
-
-    GCAudio {
-        id: eatSound
-        source: "qrc:/gcompris/src/activities/gnumch-equality/resource/eat.wav"
-    }
-
     pageComponent: Rectangle {
         id: background
 
@@ -185,6 +175,7 @@ ActivityBase {
 
             Muncher {
                 id: muncher
+                audioEffects: activity.audioEffects
             }
 
             Item {
@@ -248,6 +239,7 @@ ActivityBase {
                                                           grid.cellWidth,
                                                           grid.cellHeight)
                         var reggie = comp.createObject(monsters, {
+                                                           audioEffects: activity.audioEffects,
                                                            direction: direction,
                                                            player: muncher,
                                                            index: result[0],

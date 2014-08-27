@@ -24,7 +24,6 @@
 .pragma library
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
-.import QtMultimedia 5.0 as Multimedia
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/click_on_letter/resource/"

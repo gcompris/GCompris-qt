@@ -23,7 +23,6 @@
 import QtQuick 2.2
 import QtQuick.Controls 1.0
 import QtQuick.Controls.Styles 1.0
-import QtMultimedia 5.0
 import GCompris 1.0
 
 import "../../core"
@@ -51,7 +50,6 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property alias audioDrip: audioDrip
             property alias hexagonModel: hexagonModel
         }
 
@@ -87,7 +85,7 @@ ActivityBase {
             parent: rootItem
 
             HexagonItem {
-                audioDrip: items.audioDrip
+                audioEffects: activity.audioEffects
                 ix: m_ix
                 iy: m_iy
                 nbx: m_nbx
@@ -95,12 +93,6 @@ ActivityBase {
                 hasStrawberry: m_hasStrawberry
                 color: "#0099FF"
             }
-        }
-
-        // For perf reason it is best not to put this in each HexagonItem
-        GCAudio {
-            id: audioDrip
-            source: "qrc:/gcompris/src/activities/clickgame/resource/drip.wav"
         }
 
         DialogHelp {

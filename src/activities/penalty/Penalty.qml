@@ -20,7 +20,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
-import QtMultimedia 5.0
 import GCompris 1.0
 
 import "../../core"
@@ -63,17 +62,6 @@ ActivityBase {
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
-
-        /* Sounds */
-        GCAudio {
-            id: playFlip
-            source: "qrc:/gcompris/src/core/resource/sounds/flip.wav"
-        }
-
-        GCAudio {
-            id: playBrick
-            source: "qrc:/gcompris/src/core/resource/sounds/brick.wav"
-        }
 
         /* Instruction */
         Text {
@@ -318,7 +306,7 @@ ActivityBase {
                         progess.anim.running = false;
 
                         /* Play sound */
-                        playBrick.play()
+                        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
 
                         /* Success or not */
                         if(progess.ratio < 100) {
@@ -342,7 +330,7 @@ ActivityBase {
                         progess.anim.running = true;
 
                         /* Play sound */
-                        playFlip.play()
+                        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav")
                     }
                 }
             }

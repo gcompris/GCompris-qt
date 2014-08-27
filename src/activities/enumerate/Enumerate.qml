@@ -21,7 +21,6 @@
 */
 import QtQuick 2.1
 import GCompris 1.0
-import QtMultimedia 5.0
 
 import "../../core"
 import "enumerate.js" as Activity
@@ -137,16 +136,11 @@ ActivityBase {
             onHomeClicked: activity.home()
         }
 
-        GCAudio {
-            id: winAudio
-            source: "qrc:/gcompris/src/core/resource/sounds/bonus.wav"
-        }
-
         Bonus {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
             onWin: {
-                winAudio.play()
+                activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/bonus.wav")
             }
         }
     }

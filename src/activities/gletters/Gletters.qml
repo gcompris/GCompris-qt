@@ -22,7 +22,6 @@
 
 import QtQuick 2.1
 import GCompris 1.0
-import QtMultimedia 5.0
 
 import "../../core"
 import "gletters.js" as Activity
@@ -78,8 +77,7 @@ ActivityBase {
             property alias score: score
             property alias keyboard: keyboard
             property alias wordDropTimer: wordDropTimer
-            property alias flipAudio: flipAudio
-            property alias crashAudio: crashAudio
+            property GCAudio audioEffects: activity.audioEffects
         }
 
         onStart: { Activity.start(items, uppercaseOnly, mode) }
@@ -147,15 +145,6 @@ ActivityBase {
             onTriggered: Activity.dropWord();
         }
 
-        GCAudio {
-            id: flipAudio
-            source: "qrc:/gcompris/src/core/resource/sounds/flip.wav";
-        }
-
-        GCAudio {
-            id: crashAudio
-            source: "qrc:/gcompris/src/core/resource/sounds/crash.wav";
-        }
     }
 
 }

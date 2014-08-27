@@ -20,7 +20,6 @@
  */
 
 import QtQuick 2.1
-import QtMultimedia 5.0
 import GCompris 1.0
 
 import "../../core"
@@ -76,6 +75,7 @@ ActivityBase {
             cellWidth: itemHeight + 10
             cellHeight: itemWidth + 10
             delegate: ColorItem {
+                audioVoices: activity.audioVoices
                 source: image
                 audioSrc: audio
                 question: text

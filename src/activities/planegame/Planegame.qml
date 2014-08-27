@@ -19,7 +19,6 @@
 */
 
 import QtQuick 2.2
-import QtMultimedia 5.0
 import GCompris 1.0
 
 import "../../core"

@@ -169,7 +169,7 @@ function processKeyPress(text) {
 
     if (currentWord !== null && currentWord.isCompleted()) {
         // win!
-        items.flipAudio.play();
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav");
         currentWord.won();  // note: deleteWord() is triggered after fadeout
         currentWord = null
         nextSubLevel();
@@ -294,6 +294,10 @@ function dropWord()
         } else
             wordComponent.statusChanged.connect(createWord);
     }
+}
+
+function audioCrashPlay() {
+    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
 }
 
 function nextLevel() {

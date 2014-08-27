@@ -21,6 +21,7 @@
 */
 import QtQuick 2.2
 import GCompris 1.0
+import "../../core"
 
 Item {
     id: creature
@@ -33,6 +34,7 @@ Item {
     property int frames
     property int frameW
     property real widthRatio
+    property GCAudio audioEffects
 
     function moveTo(direction) {
         if (!movable)
@@ -101,7 +103,7 @@ Item {
         if (eating == true) {
             creatureImage.restart()
             creatureImage.resume()
-            eatSound.play()
+            creature.audioEffects.play("qrc:/gcompris/src/activities/gnumch-equality/resource/eat.wav")
         }
     }
 

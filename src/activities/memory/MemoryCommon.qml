@@ -37,12 +37,6 @@ ActivityBase {
     onStart: {}
     onStop: {}
 
-    // For perf reason it is best not to put this in each CardItem
-    GCAudio {
-        id: sound
-        source: ""
-    }
-
     pageComponent: Image {
         id: background
         source: activity.backgroundImg
@@ -105,6 +99,7 @@ ActivityBase {
                     tuxTurn: background.items.tuxTurn
                     width: (background.width - (grid.columns + 1) * grid.spacing) / grid.columns
                     height: (background.height - (grid.rows + 1) * grid.spacing) / (grid.rows + 0.5)
+                    audioVoices: activity.audioVoices
                }
             }
         }
