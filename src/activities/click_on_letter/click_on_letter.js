@@ -41,16 +41,13 @@ var questions;
 var answers;
 var items;
 var mode;
-var mainAudio
 
-function start(_items, _mode, _mainAudio)
+function start(_items, _mode)
 {
     Core.checkForVoices(_items.bar);
-    _items.nextLevelAudio.source = GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/click_on_letter.ogg");
 
     items = _items;
     mode = _mode;
-    mainAudio = _mainAudio;
 
     loadLevels();
     currentLevel = 0;
@@ -143,25 +140,25 @@ function initLevel() {
     }
 
     currentLetter = questions.split("")[currentSubLevel];
-    if (GCompris.ApplicationSettings.isAudioEnabled &&
-        GCompris.DownloadManager.haveLocalResource(
+    if (GCompris.ApplicationSettings.isAudioVoicesEnabled &&
+            GCompris.DownloadManager.haveLocalResource(
                 GCompris.DownloadManager.getVoicesResourceForLocale(
-                        GCompris.ApplicationInfo.localeShort))) {
-        items.nextLevelAudio.stop();
-        if (mainAudio.playbackState === Multimedia.Audio.PlayingState)
-            mainAudio.onDone.connect(function () {
-                items.nextLevelAudio.play();
-            });
-        else
-            items.nextLevelAudio.play();
-        
-        items.questionItem.visible = false;
+                    GCompris.ApplicationInfo.localeShort))) {
+        items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/click_on_letter.ogg"));
+        items.audioVoices.silence(100)
+        playLetter(currentLetter)
+        items.questionItem.visible = false
     } else {
         // no sound -> show question
         items.questionItem.visible = true;
     }
     // Maybe we will display it if sound fails
     items.questionItem.text = currentLetter;
+}
+
+function playLetter(letter) {
+    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
+                                                                       + Core.getSoundFilenamForChar(letter)))
 }
 
 function nextLevel() {
@@ -191,7 +188,7 @@ function nextSubLevel() {
 function checkAnswer(index)
 {
     var modelEntry = items.trainModel.get(index);
-    items.letterAudio.playLetterDelayed(modelEntry.letter, 0);
+    playLetter(modelEntry.letter);
     if (modelEntry.letter == currentLetter) {
         items.bonus.good("flower");
         return true

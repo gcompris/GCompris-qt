@@ -24,7 +24,7 @@ import GCompris 1.0
 
 Item {
     id: gcaudio
-    property bool muted: !ApplicationSettings.isAudioEnabled
+    property bool muted
 
     property alias source: audio.source
     property alias errorString: audio.errorString
@@ -62,20 +62,45 @@ Item {
 
     }
 
+    // Add the given duration in ms before the play of the next file
+    function silence(duration_ms) {
+        silenceTimer.interval = duration_ms
+    }
+
+    function _playNextFile() {
+        var nextFile = files.shift()
+        if(nextFile) {
+            audio.source = nextFile
+            audio.play()
+        } else
+            gcaudio.done()
+    }
+
     Audio {
         id: audio
         autoPlay: gcaudio.autoPlay && !gcaudio.muted
         onError: {
             console.log("error while playing: " + source + ": " + errorString)
-            gcaudio.error()
+            if(files.length)
+                _playNextFile()
+            else
+                gcaudio.error()
         }
         onStopped: {
-            var nextFile = files.shift()
-            if(nextFile) {
-                source = nextFile
-                play()
-            } else
-                gcaudio.done()
+            if(silenceTimer.interval)
+                silenceTimer.start()
+            else
+                _playNextFile()
         }
     }
+
+    Timer {
+        id: silenceTimer
+        repeat: false
+        onTriggered: {
+            interval = 0
+            _playNextFile()
+        }
+    }
+
 }

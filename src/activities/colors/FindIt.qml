@@ -121,7 +121,7 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onRepeatClicked: if (ApplicationSettings.isAudioEnabled)
+            onRepeatClicked: if (ApplicationSettings.isAudioVoicesEnabled)
                                  questionItem.initQuestion()
         }
 

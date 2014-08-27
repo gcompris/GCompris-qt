@@ -54,15 +54,14 @@ ActivityBase {
             id: items
             property alias bar: bar
             property alias trainModel: trainModel
-            property alias nextLevelAudio: nextLevelAudio
+            property GCAudio audioVoices: activity.audioVoices
             property alias parser: parser
-            property alias letterAudio: letterAudio 
             property alias questionItem: questionItem
             property alias score: score
             property alias bonus: bonus
         }
         
-        onStart: Activity.start(items, mode, activity.audio); 
+        onStart: Activity.start(items, mode);
         
         onStop: Activity.stop()
 
@@ -87,8 +86,8 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: home()
-            onRepeatClicked: if (ApplicationSettings.isAudioEnabled)
-                                letterAudio.playLetterDelayed(Activity.currentLetter, 0);
+            onRepeatClicked: if (ApplicationSettings.isAudioVoicesEnabled)
+                                Activity.playLetter(Activity.currentLetter);
         }
 
         Score {
@@ -229,42 +228,5 @@ ActivityBase {
             onError: console.error("Click_on_letter: Error parsing JSON: " + msg);
         }
 
-        GCAudio {
-            id: nextLevelAudio
-            source: ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/click_on_letter.ogg")
-            onError: letterAudio.play()
-            // When this sound is complete, play the letter
-            onDone: letterAudio.playLetterDelayed(Activity.currentLetter, 100);
-        }
-
-        GCAudio {
-            id: letterAudio
-            onError: questionItem.visible = true
-
-            function playLetterDelayed(letter, ms) {
-                if (letterAudioTimer.running)
-                    letterAudioTimer.stop();
-                letterAudio.source = ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
-                        + Core.getSoundFilenamForChar(letter));
-                if (ms != 0) {
-                    letterAudioTimer.interval = ms;
-                    letterAudioTimer.start();
-                } else {
-                    if (letterAudio.playbackState != Audio.StoppedState)
-                        letterAudio.stop();
-                    letterAudio.play();
-                }
-            }
-        }
-        
-        Timer {
-            id: letterAudioTimer
-            repeat: false        
-            onTriggered: {
-                if (letterAudio.playbackState != Audio.StoppedState)
-                    letterAudio.stop();
-                letterAudio.play();
-            }
-        }
     }
 }

@@ -479,7 +479,7 @@ Rectangle {
 
     function hasConfigChanged() {
         return (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale ||
-                (ApplicationSettings.isAudioEnabled != isAudioVoicesEnabled) ||
+                (ApplicationSettings.isAudioVoicesEnabled != isAudioVoicesEnabled) ||
                 (ApplicationSettings.isFullscreen != isFullscreen) ||
                 (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard) ||
                 (ApplicationSettings.isAutomaticDownloadsEnabled != isAutomaticDownloadsEnabled)
