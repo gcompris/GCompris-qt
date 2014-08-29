@@ -10,6 +10,7 @@ align4-2players
 alphabet-sequence
 ballcatch
 canal_lock
+clickanddraw
 clickgame
 click_on_letter
 click_on_letter_up
@@ -17,6 +18,7 @@ clockgame
 color_mix
 color_mix_light
 colors
+drawnumber
 enumerate
 erase
 erase_2clic
