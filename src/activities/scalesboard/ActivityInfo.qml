@@ -3,8 +3,8 @@ import GCompris 1.0
 ActivityInfo {
   name: "scalesboard/Scalesboard.qml"
   difficulty: 2
-  icon: "scalesboard/scalesicon.svgz"
-  author: "miguel DE IZARRA <miguel2i@free.fr>"
+  icon: "scalesboard/scalesboard.svgz"
+  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: true
   title: qsTr("Balance the scales properly")
   description: qsTr("Drag and Drop weights to balance the scales")

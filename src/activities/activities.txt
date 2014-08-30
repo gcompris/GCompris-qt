@@ -74,6 +74,8 @@ numbers-odd-even
 penalty
 planegame
 reversecount
+scalesboard
+scalesboard_weight
 smallnumbers
 smallnumbers2
 sudoku

@@ -4,7 +4,7 @@ ActivityInfo {
   name: "scalesboard_weight/ScalesboardWeight.qml"
   difficulty: 4
   icon: "scalesboard_weight/scalesboard_weight.svgz"
-  author: "Wolfram Sang <wolfram@iswi.org>"
+  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: true
   title: qsTr("Balance the scales properly")
   description: qsTr("Drag and Drop masses to balance the scales and calculate the weight")

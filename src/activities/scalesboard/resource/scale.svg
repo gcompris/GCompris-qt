@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg5507"
+   sodipodi:docname="scale.svg"
+   viewBox="0 0 383.42 187.7"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   width="100%"
+   height="100%">
+  <defs
+     id="defs26">
+    <linearGradient
+       id="linearGradient3771">
+      <stop
+         style="stop-color:#c26226;stop-opacity:1;"
+         offset="0"
+         id="stop3773" />
+      <stop
+         style="stop-color:#fff5ee;stop-opacity:1;"
+         offset="1"
+         id="stop3775" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3771"
+       id="linearGradient3793"
+       x1="212.99014"
+       y1="531.12665"
+       x2="209.3701"
+       y2="473.8381"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3771"
+       id="linearGradient3801"
+       x1="452.80276"
+       y1="543.47131"
+       x2="446.8075"
+       y2="458.87073"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3771"
+       id="linearGradient3839"
+       gradientUnits="userSpaceOnUse"
+       x1="452.80276"
+       y1="543.47131"
+       x2="446.8075"
+       y2="458.87073" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3771"
+       id="linearGradient3845"
+       gradientUnits="userSpaceOnUse"
+       x1="212.99014"
+       y1="531.12665"
+       x2="209.3701"
+       y2="473.8381" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3771"
+       id="linearGradient3866"
+       gradientUnits="userSpaceOnUse"
+       x1="452.80276"
+       y1="543.47131"
+       x2="446.8075"
+       y2="458.87073" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3771"
+       id="linearGradient3868"
+       gradientUnits="userSpaceOnUse"
+       x1="212.99014"
+       y1="531.12665"
+       x2="209.3701"
+       y2="473.8381" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3771"
+       id="linearGradient3894"
+       gradientUnits="userSpaceOnUse"
+       x1="269.61255"
+       y1="623.40887"
+       x2="254.2912"
+       y2="480.85355" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3771"
+       id="linearGradient3907"
+       gradientUnits="userSpaceOnUse"
+       x1="452.80276"
+       y1="543.47131"
+       x2="446.8075"
+       y2="458.87073" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3771"
+       id="linearGradient3913"
+       gradientUnits="userSpaceOnUse"
+       x1="212.99014"
+       y1="531.12665"
+       x2="209.3701"
+       y2="473.8381" />
+  </defs>
+  <title
+     id="title4744">Balance</title>
+  <sodipodi:namedview
+     id="base"
+     fit-margin-left="0"
+     inkscape:zoom="2"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="247.55369"
+     inkscape:cy="70.928432"
+     inkscape:window-maximized="1"
+     showgrid="false"
+     fit-margin-right="0"
+     inkscape:guide-bbox="true"
+     showguides="true"
+     bordercolor="#666666"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     pagecolor="#ffffff"
+     inkscape:document-units="px"
+     inkscape:window-height="721"
+     fit-margin-top="0" />
+  <g
+     id="layer1"
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     transform="translate(-157.7 -468.35)">
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#d3d3d3;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
+       d="m 349.45851,469.43839 c -6.92867,-0.0646 -14.2316,6.00994 -15.25852,12.25536 l -7.125,113.6875 44.0625,2.125 -7.40426,-115.75807 c -0.8887,-6.49078 -7.68976,-12.24842 -14.27472,-12.30979 z m 0.14865,10.91161 c 3.89394,0.0535 9.0509,4.27694 9.71783,8.8125 l 2.1875,26.71875 -24.65625,0 2,-25.78125 c 0.74694,-4.89355 5.51642,-9.82192 10.75092,-9.75 z"
+       id="path5517"
+       sodipodi:nodetypes="sccccssccccs" />
+    <path
+       id="path5515"
+       sodipodi:nodetypes="ccccccccccccc"
+       style="fill:url(#linearGradient3894);fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"
+       inkscape:connector-curvature="0"
+       d="m 210.71,591.23 -17.44,33.126 -11.585,6.6817 0.18037,24.1075 16.7895,-0.0417 10.488,-11.6265 277.91,-0.19601 9.4197,11.767 19.881,-0.0119 0.67997,-22.7425 -8.8791,-5.5492 -13.134,-34.597 z" />
+    <path
+       id="path4672"
+       style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       inkscape:connector-curvature="0"
+       d="m 183.19,632.03 333.7225,0.66615" />
+    <path
+       id="path4716"
+       sodipodi:rx="11.324486"
+       sodipodi:ry="10.991413"
+       style="fill:#dedec3;fill-opacity:1;stroke:#000000;stroke-width:3.87740946;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       sodipodi:type="arc"
+       d="m 361.7174,557.08246 c 0,6.07039 -5.07015,10.99141 -11.32449,10.99141 -6.25434,0 -11.32448,-4.92102 -11.32448,-10.99141 0,-6.07039 5.07014,-10.99141 11.32448,-10.99141 6.25434,0 11.32449,4.92102 11.32449,10.99141 z"
+       transform="matrix(0.25837994,0,0,0.25742926,258.57174,419.58581)"
+       sodipodi:cy="557.08246"
+       sodipodi:cx="350.39291" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.59091395;stroke-miterlimit:4;stroke-opacity:1"
+       d="m 349.4846,510.7029 c 1.28982,2.56441 2.14508,4.85949 2.14508,4.85949 l -4.51154,0 z"
+       id="rect3984"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.59091395;stroke-miterlimit:4;stroke-opacity:1"
+       d="m 349.4804,486.03408 c -1.28982,-2.56441 -2.14508,-4.85949 -2.14508,-4.85949 l 4.51154,0 z"
+       id="rect3984-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+  </g>
+  <metadata
+     id="metadata24">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Balance</dc:title>
+        <dc:date>2011-03-23T01:38:11</dc:date>
+        <dc:description>A line_art of a scale</dc:description>
+        <dc:source>https://openclipart.org/detail/128839/balance--scale-by-lmproulx</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>lmproulx</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>balance</rdf:li>
+            <rdf:li>graphic organizer</rdf:li>
+            <rdf:li>line art</rdf:li>
+            <rdf:li>scale</rdf:li>
+            <rdf:li>weight</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
