@@ -22,6 +22,7 @@
 #ifndef DOWNLOADMANAGER_H_
 #define DOWNLOADMANAGER_H_
 
+#include <QCryptographicHash>
 #include <QFile>
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
