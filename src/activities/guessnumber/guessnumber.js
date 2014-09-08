@@ -57,7 +57,7 @@ function initLevel() {
             numberToGuess = getRandomInt(1,currentMax)
             break;
     }
-    items.textzone.text = qsTr("Guess a number between 1 and " + currentMax)
+    items.textzone.text = qsTr("Guess a number between 1 and %1").arg(currentMax);
 }
 
 function nextLevel() {
