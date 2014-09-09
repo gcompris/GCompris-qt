@@ -122,7 +122,7 @@ ApplicationSettings::~ApplicationSettings()
     // make sure settings file is up2date:
     // general group
     m_config.beginGroup(GENERAL_GROUP_KEY);
-	m_config.setValue(ENABLE_AUDIO_VOICES_KEY, m_isAudioVoicesEnabled);
+    m_config.setValue(ENABLE_AUDIO_VOICES_KEY, m_isAudioVoicesEnabled);
     m_config.setValue(LOCALE_KEY, m_locale);
     m_config.setValue(FULLSCREEN_KEY, m_isFullscreen);
     m_config.setValue(VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
@@ -136,9 +136,9 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(DOWNLOAD_SERVER_URL_KEY, m_downloadServerUrl);
     m_config.endGroup();
 
-    // admin group
-    m_config.beginGroup(ADMIN_GROUP_KEY);
-    m_config.setValue(DOWNLOAD_SERVER_URL_KEY, m_downloadServerUrl);
+    // internal group
+    m_config.beginGroup(INTERNAL_GROUP_KEY);
+    m_config.setValue(EXE_COUNT_KEY, m_exeCount);
     m_config.endGroup();
 
     m_config.sync();
@@ -148,101 +148,70 @@ ApplicationSettings::~ApplicationSettings()
 
 void ApplicationSettings::notifyAudioVoicesEnabledChanged()
 {
-	// Save in config
-	m_config.beginGroup(GENERAL_GROUP_KEY);
-	m_config.setValue(ENABLE_AUDIO_VOICES_KEY, m_isAudioVoicesEnabled);
-	m_config.endGroup();
+    updateValueInConfig(GENERAL_GROUP_KEY, ENABLE_AUDIO_VOICES_KEY, m_isAudioVoicesEnabled);
 	qDebug() << "notifyAudioVoices: " << m_isAudioVoicesEnabled;
-	m_config.sync();
 }
 
 void ApplicationSettings::notifyAudioEffectsEnabledChanged()
 {
-	// Save in config
-	m_config.beginGroup(GENERAL_GROUP_KEY);
-	m_config.setValue(ENABLE_AUDIO_EFFECTS_KEY, m_isAudioEffectsEnabled);
-	m_config.endGroup();
+    updateValueInConfig(GENERAL_GROUP_KEY, ENABLE_AUDIO_EFFECTS_KEY, m_isAudioEffectsEnabled);
 	qDebug() << "notifyAudioEffects: " << m_isAudioEffectsEnabled;
-	m_config.sync();
 }
 
 void ApplicationSettings::notifyLocaleChanged()
 {
-    // Save in config
-    m_config.beginGroup(GENERAL_GROUP_KEY);
-    m_config.setValue(LOCALE_KEY, m_locale);
-    m_config.endGroup();
+    updateValueInConfig(GENERAL_GROUP_KEY, LOCALE_KEY, m_locale);
     qDebug() << "new locale: " << m_locale;
-    m_config.sync();
 }
 
 void ApplicationSettings::notifyFullscreenChanged()
 {
-    // Save in config
-    m_config.beginGroup(GENERAL_GROUP_KEY);
-    m_config.setValue(FULLSCREEN_KEY, m_isFullscreen);
-    m_config.endGroup();
+    updateValueInConfig(GENERAL_GROUP_KEY, FULLSCREEN_KEY, m_isFullscreen);
     qDebug() << "fullscreen set to: " << m_isFullscreen;
-    m_config.sync();
 }
 
 void ApplicationSettings::notifyVirtualKeyboardChanged()
 {
-    // Save in config
-    m_config.beginGroup(GENERAL_GROUP_KEY);
-    m_config.setValue(VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
-    m_config.endGroup();
+    updateValueInConfig(GENERAL_GROUP_KEY, VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
     qDebug() << "virtualkeyboard set to: " << m_isVirtualKeyboard;
-    m_config.sync();
 }
 
 void ApplicationSettings::notifyAutomaticDownloadsEnabledChanged()
 {
-    // Save in config
-    m_config.beginGroup(GENERAL_GROUP_KEY);
-    m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
-    m_config.endGroup();
+    updateValueInConfig(GENERAL_GROUP_KEY, ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
     qDebug() << "enableAutomaticDownloads set to: " << m_isAutomaticDownloadsEnabled;
-    m_config.sync();
 }
 
 void ApplicationSettings::notifyFilterLevelMinChanged()
 {
-    // Save in config
-    m_config.beginGroup(GENERAL_GROUP_KEY);
-    m_config.setValue(FILTER_LEVEL_MIN, m_filterLevelMin);
-    m_config.endGroup();
+    updateValueInConfig(GENERAL_GROUP_KEY, FILTER_LEVEL_MIN, m_filterLevelMin);
     qDebug() << "filterLevelMin set to: " << m_filterLevelMin;
-    m_config.sync();
 }
 
 void ApplicationSettings::notifyFilterLevelMaxChanged()
 {
-    // Save in config
-    m_config.beginGroup(GENERAL_GROUP_KEY);
-    m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
-    m_config.endGroup();
+    updateValueInConfig(GENERAL_GROUP_KEY, FILTER_LEVEL_MAX, m_filterLevelMax);
     qDebug() << "filterLevelMax set to: " << m_filterLevelMax;
-    m_config.sync();
 }
 
 void ApplicationSettings::notifyDownloadServerUrlChanged()
 {
-    // Save in config
-    m_config.beginGroup(ADMIN_GROUP_KEY);
-    m_config.setValue(DOWNLOAD_SERVER_URL_KEY, m_downloadServerUrl);
-    m_config.endGroup();
+    updateValueInConfig(ADMIN_GROUP_KEY, DOWNLOAD_SERVER_URL_KEY, m_downloadServerUrl);
     qDebug() << "downloadServerUrl set to: " << m_downloadServerUrl;
-    m_config.sync();
 }
 
 void ApplicationSettings::notifyExeCountChanged()
 {
-    // Save in config
-    m_config.beginGroup(INTERNAL_GROUP_KEY);
-    m_config.setValue(EXE_COUNT_KEY, m_exeCount);
-    m_config.endGroup();
+    updateValueInConfig(INTERNAL_GROUP_KEY, EXE_COUNT_KEY, m_exeCount);
     qDebug() << "exeCount set to: " << m_exeCount;
+}
+
+template<class T> void ApplicationSettings::updateValueInConfig(const QString& group,
+                                              const QString& key, const T& value)
+{
+    m_config.beginGroup(group);
+    m_config.setValue(key, value);
+    m_config.endGroup();
     m_config.sync();
 }
 
