@@ -30,10 +30,11 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
         anchors.fill: parent
-        color: "#ABCDEF"
+        source: Activity.url + "background.svg"
+        fillMode: Image.PreserveAspectCrop
         signal start
         signal stop
 
