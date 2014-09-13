@@ -3,7 +3,7 @@
  * Copyright (C) 2014 Emmanuel Charruau
  *
  * Authors:
- *   Olivier Ponchaut <opvg@edpnet.be> (GTK+ version)
+ *   Olivier Ponchaut <opvg@mailoo.org> (GTK+ version)
  *   Emmanuel Charruau <echarruau@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
