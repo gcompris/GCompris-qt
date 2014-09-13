@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "scalesboard/Scalesboard.qml"
+  name: "scalesboard/ScaleNumber.qml"
   difficulty: 2
   icon: "scalesboard/scalesboard.svgz"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"

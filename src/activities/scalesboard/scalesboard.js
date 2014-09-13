@@ -25,36 +25,9 @@
 
 var url = "qrc:/gcompris/src/activities/scalesboard/resource/"
 
-var dataset = [
-            {
-                "masses": [1, 2, 2, 5, 5, 10, 10],
-                "targets": [3, 4, 6, 7, 8, 9]
-            },
-            {
-                "masses": [1, 2, 2, 5, 5, 10, 10],
-                "targets": [12, 13, 14, 15, 16]
-            },
-            {
-                "masses": [2, 2, 5, 5, 5],
-                "targets": [8, 11, 13]
-            },
-            {
-                "masses": [2, 5, 10, 10],
-                "targets": [3, 8, 13]
-            },
-            {
-                "masses": [2, 4, 7, 10],
-                "targets": [3, 5, 8, 9]
-            },
-            {
-                "masses": [5, 8, 9, 10, 11, 12],
-                "targets": [6, 7, 13, 14, 15, 16, 17, 18]
-            }
-]
-
 var currentLevel = 0
 var currentSubLevel = 0
-var numberOfLevel = dataset.length
+var numberOfLevel
 var items
 var currentTargets = []
 var initCompleted = false
@@ -62,6 +35,7 @@ var initCompleted = false
 function start(items_) {
     items = items_
     currentLevel = 0
+    numberOfLevel = items.dataset.length
     initLevel()
 }
 
@@ -71,7 +45,7 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
     currentSubLevel = 0
-    currentTargets = Core.shuffle(dataset[currentLevel].targets)
+    currentTargets = Core.shuffle(items.dataset[currentLevel].targets)
     displayLevel()
 }
 
@@ -81,7 +55,7 @@ function displayLevel()
     items.masseAreaLeft.init()
     items.masseAreaRight.init()
     items.masseAreaCenter.init()
-    var data = dataset[currentLevel]
+    var data = items.dataset[currentLevel]
     for(var i=0; i < data.masses.length; i++)
         items.masseAreaCenter.addMasse("masse" + (i % 5 + 1) + ".svg",
                                        data.masses[i],

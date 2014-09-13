@@ -30,6 +30,7 @@ Rectangle {
     border.width: 2
     border.color: dropArea.containsDrag ? "#33666666" : "#00000000"
 
+    property alias dropEnabled: dropArea.enabled
     property int nbColumns
     property int nbLines: background.width > background.height ? 1 : 2
     property int itemWidth: (width - masseFlow.spacing * nbColumns) / nbColumns

@@ -27,6 +27,8 @@ import "scalesboard.js" as Activity
 ActivityBase {
     id: activity
 
+    property variant dataset
+
     onStart: focus = true
     onStop: {}
 
@@ -53,6 +55,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property variant dataset: activity.dataset
             property alias masseAreaCenter: masseAreaCenter
             property alias masseAreaLeft: masseAreaLeft
             property alias masseAreaRight: masseAreaRight
@@ -134,6 +137,7 @@ ActivityBase {
                 masseAreaLeft: masseAreaLeft
                 masseAreaRight: masseAreaRight
                 nbColumns: 4
+                dropEnabled: true
 
                 Behavior on anchors.verticalCenterOffset {
                     NumberAnimation {
@@ -180,6 +184,7 @@ ActivityBase {
                 masseAreaLeft: masseAreaLeft
                 masseAreaRight: masseAreaRight
                 nbColumns: 4
+                dropEnabled: items.dataset[bar.level - 1].rightDrop
 
                 Behavior on anchors.verticalCenterOffset {
                     NumberAnimation {
@@ -201,6 +206,7 @@ ActivityBase {
             masseAreaLeft: masseAreaLeft
             masseAreaRight: masseAreaRight
             nbColumns: masseModel.count / nbLines
+            dropEnabled: true
         }
 
         DialogHelp {
