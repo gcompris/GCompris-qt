@@ -33,7 +33,6 @@ Rectangle {
 
     property alias dropEnabled: dropArea.enabled
     property int nbColumns
-    property int nbLines: background.width > background.height ? 1 : 2
     property int itemWidth: (width - masseFlow.spacing * nbColumns) / nbColumns
     property int itemHeight: itemWidth * 1.2
 

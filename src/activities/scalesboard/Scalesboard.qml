@@ -128,18 +128,17 @@ ActivityBase {
             MasseArea {
                 id: masseAreaLeft
                 parent: scale
-                height: itemHeight
                 width: plateLeft.width
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                     horizontalCenterOffset: - parent.paintedWidth * 0.3
                     verticalCenter: parent.verticalCenter
-                    verticalCenterOffset: - parent.paintedHeight * 0.4 + background.scaleHeight
+                    verticalCenterOffset: - parent.paintedHeight * 0.44 + background.scaleHeight
                 }
                 masseAreaCenter: masseAreaCenter
                 masseAreaLeft: masseAreaLeft
                 masseAreaRight: masseAreaRight
-                nbColumns: 4
+                nbColumns: 3
                 dropEnabled: true
 
                 Behavior on anchors.verticalCenterOffset {
@@ -175,18 +174,17 @@ ActivityBase {
             MasseArea {
                 id: masseAreaRight
                 parent: scale
-                height: itemHeight
                 width: plateRight.width
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                     horizontalCenterOffset: parent.paintedWidth * 0.3
                     verticalCenter: parent.verticalCenter
-                    verticalCenterOffset: - parent.paintedHeight * 0.4 - background.scaleHeight
+                    verticalCenterOffset: - parent.paintedHeight * 0.44 - background.scaleHeight
                 }
                 masseAreaCenter: masseAreaCenter
                 masseAreaLeft: masseAreaLeft
                 masseAreaRight: masseAreaRight
-                nbColumns: 4
+                nbColumns: 3
                 dropEnabled: items.dataset[bar.level - 1].rightDrop
 
                 Behavior on anchors.verticalCenterOffset {
@@ -203,12 +201,12 @@ ActivityBase {
             id: masseAreaCenter
             parent: scale
             x: parent.width * 0.05
-            y: parent.height * 0.86 - height
+            y: parent.height * 0.84 - height
             width: parent.width
             masseAreaCenter: masseAreaCenter
             masseAreaLeft: masseAreaLeft
             masseAreaRight: masseAreaRight
-            nbColumns: masseModel.count / nbLines
+            nbColumns: masseModel.count
             dropEnabled: true
         }
 
