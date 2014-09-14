@@ -732,7 +732,7 @@
        xlink:href="#linearGradient9315"
        id="linearGradient4383"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(1.3788253,0,0,1.0064112,-112.51029,-2.0768244)"
+       gradientTransform="matrix(1.3854556,0,0,1.1156838,-115.70813,-94.222098)"
        x1="987.9989"
        y1="803.56128"
        x2="987.9989"
@@ -3860,11 +3860,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.59375"
-     inkscape:cx="139.71228"
-     inkscape:cy="347.17368"
+     inkscape:zoom="1.296875"
+     inkscape:cx="383.33983"
+     inkscape:cy="328.38041"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g7685"
      showgrid="false"
      inkscape:showpageshadow="true"
      inkscape:window-width="1366"
@@ -3899,42 +3899,8 @@
          d="m 29.089738,417.04758 1307.740362,0 0,133.18607 -1307.740362,0 z"
          style="fill:url(#linearGradient4380);fill-opacity:1;fill-rule:nonzero;stroke:none" />
       <path
-         inkscape:connector-curvature="0"
-         id="rect3835"
-         d="m 21.996569,234.76768 0,612.32641 14.335508,0 0,-161.2978 1300.629423,0 0,161.26754 14.3354,0 0,-612.29615 -14.3354,0 0,179.66699 -1300.629423,0 0,-179.66699 -14.335508,0 z m 14.335508,189.56275 1300.629423,0 0,120.83717 -1300.629423,0 0,-120.83717 z m 0,130.73293 1300.629423,0 0,120.83717 -1300.629423,0 0,-120.83717 z"
-         style="fill:#faffef;fill-opacity:1;fill-rule:nonzero;stroke:#dde9af;stroke-width:0.78774089;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      <g
-         transform="matrix(1.401708,0,0,0.96839207,-114.70116,2.6383588)"
-         id="g16300"
-         style="stroke:#000000;stroke-width:2.79278708;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none">
-        <path
-           style="fill:url(#linearGradient16312);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.79278708;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           d="m 106.6496,188.96973 925.3322,0 c 8.3944,0 15.1523,6.75792 15.1523,15.15229 l 0,32.70822 c 0,8.39437 -6.7579,15.15229 -15.1523,15.15229 l -925.3322,0 c -8.394358,0 -15.152286,-6.75792 -15.152286,-15.15229 l 0,-32.70822 c 0,-8.39437 6.757928,-15.15229 15.152286,-15.15229 z"
-           id="rect3831"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="sssssssss" />
-        <path
-           style="opacity:0.2;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.79278708;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           d="m 224.21074,188.96973 0,63 78.78125,0 0,-63 z m 86.875,0 0,63 18.1875,0 0,-63 z m 21.21875,0 0,63 18.18749,0 0,-63 z"
-           id="path3916"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="ccccccccccccccc" />
-        <path
-           style="fill:url(#linearGradient16314);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.79278708;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           d="m 85.775014,234.47056 967.081386,0 0,18.52216 -967.081385,0 z"
-           id="rect3862"
-           inkscape:connector-curvature="0"
-           sodipodi:nodetypes="ccccc" />
-        <path
-           sodipodi:nodetypes="ccccc"
-           inkscape:connector-curvature="0"
-           id="path3944"
-           d="m 85.77902,251.99272 0,1 967.07338,0 0,-1 z"
-           style="fill:#7c916f;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:2.79278708;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
-      </g>
-      <path
          style="fill:url(#linearGradient4383);fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:3.25381017;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-         d="m 29.633586,247.07036 1307.196614,0 0,599.51966 -1307.196614,0 z"
+         d="m 27.119257,181.97662 1313.482443,0 0,664.61344 -1313.482443,0 z"
          id="path4070"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccccc" />

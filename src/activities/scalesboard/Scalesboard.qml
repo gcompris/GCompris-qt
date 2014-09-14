@@ -20,6 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import GCompris 1.0
 
 import "../../core"
 import "scalesboard.js" as Activity
@@ -55,6 +56,8 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property int numberOfSubLevels
+            property int currentSubLevel
             property variant dataset: activity.dataset
             property alias masseAreaCenter: masseAreaCenter
             property alias masseAreaLeft: masseAreaLeft
@@ -209,6 +212,19 @@ ActivityBase {
             dropEnabled: true
         }
 
+
+        Message {
+            id: message
+            anchors {
+                top: parent.top
+                topMargin: 10
+                right: parent.right
+                rightMargin: 10
+                left: parent.left
+                leftMargin: 10
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -223,7 +239,18 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+
+            onLevelChanged: message.text = items.dataset[bar.level - 1].message ? items.dataset[bar.level - 1].message : ""
         }
+
+        Score {
+            id: score
+
+            numberOfSubLevels: items.numberOfSubLevels
+            currentSubLevel: items.currentSubLevel
+        }
+
+
 
         Bonus {
             id: bonus

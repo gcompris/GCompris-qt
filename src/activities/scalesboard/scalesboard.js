@@ -26,7 +26,6 @@
 var url = "qrc:/gcompris/src/activities/scalesboard/resource/"
 
 var currentLevel = 0
-var currentSubLevel = 0
 var numberOfLevel
 var items
 var currentTargets = []
@@ -44,13 +43,15 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    currentSubLevel = 0
     currentTargets = Core.shuffle(items.dataset[currentLevel].targets)
+    items.currentSubLevel = 1
+    items.numberOfSubLevels = currentTargets.length
     displayLevel()
 }
 
 function displayLevel()
 {
+
     initCompleted = false
     items.masseAreaLeft.init()
     items.masseAreaRight.init()
@@ -58,12 +59,14 @@ function displayLevel()
     var data = items.dataset[currentLevel]
     for(var i=0; i < data.masses.length; i++)
         items.masseAreaCenter.addMasse("masse" + (i % 5 + 1) + ".svg",
-                                       data.masses[i],
+                                       data.masses[i][0],
+                                       data.masses[i][1],
                                        i,
                                        /* dragEnabled */ true)
 
-    items.masseAreaRight.addMasse("masse" + 1 + ".svg",
-                                  currentTargets[currentSubLevel],
+    items.masseAreaRight.addMasse("gift.svg",
+                                  currentTargets[items.currentSubLevel - 1][0],
+                                  currentTargets[items.currentSubLevel - 1][1],
                                   0,
                                   /* dragEnabled */ false)
 
@@ -71,10 +74,10 @@ function displayLevel()
 }
 
 function nextSubLevel() {
-    if(currentTargets.length <= ++currentSubLevel ) {
-        displayLevel()
+    if(items.numberOfSubLevels < ++items.currentSubLevel ) {
+        nextLevel();
     }
-    nextLevel();
+    displayLevel()
 }
 
 function nextLevel() {

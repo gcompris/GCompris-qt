@@ -19,6 +19,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import QtGraphicalEffects 1.0
 
 import "../../core"
 import "scalesboard.js" as Activity
@@ -59,10 +60,14 @@ Rectangle {
         masseArea.masseModel.remove(index)
     }
 
-    function addMasse(img, weight, index, dragEnabled) {
+    /* weight is the absolute weight
+     * text is the text being displayed on the masseAreaCenter
+     */
+    function addMasse(img, weight, text, index, dragEnabled) {
         masseModel.append( {
                               img: img,
                               weight: weight,
+                              text: text,
                               masseIndex: index,
                               opacity: 1.0,
                               dragEnabled: dragEnabled
@@ -126,6 +131,7 @@ Rectangle {
                 property int masseIndex: model.masseIndex
                 property int modelIndex: index
                 property int weight: model.weight
+                property string text: model.text
                 property int masseOriginX
                 property int masseOriginY
                 property int originX
@@ -175,6 +181,7 @@ Rectangle {
                         }
                         masseArea.addMasse(parent.img,
                                            parent.weight,
+                                           parent.text,
                                            parent.masseIndex,
                                            /* dragEnabled */ true)
                         if(parent.currentMasseArea != masseAreaCenter) {
@@ -210,11 +217,29 @@ Rectangle {
                 }
                 
                 Text {
+                    id: text
                     anchors.fill: parent
-                    text: model.weight
-                    font.pointSize: 18
+                    text: model.text.replace(" ", "\n")
+                    color: "white"
+                    fontSizeMode: Text.Fit
+                    minimumPointSize: 10
+                    font.pointSize: 24
+                    font.bold : true
+                    style: Text.Outline
+                    styleColor: "black"
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
+                }
+
+                DropShadow {
+                    anchors.fill: text
+                    cached: true
+                    horizontalOffset: 3
+                    verticalOffset: 3
+                    radius: 8.0
+                    samples: 16
+                    color: "#80000000"
+                    source: text
                 }
             }
             
