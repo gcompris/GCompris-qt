@@ -4,7 +4,7 @@ ActivityInfo {
   name: "clickanddraw/Clickanddraw.qml"
   difficulty: 1
   icon: "clickanddraw/clickanddraw.svgz"
-  author: "Emmanuel Charruau <echarruau@gmail.com>"
+  author: "Olivier Ponchaut <opvg@mailoo.org>, Qt Quick port by Emmanuel Charruau <echarruau@gmail.com>"
   demo: false
   title: qsTr("Click and draw")
   description: qsTr("Draw the picture by clicking on the blue points.")
@@ -14,3 +14,7 @@ ActivityInfo {
   credit: qsTr("")
   section: "/computer/mouse"
 }
+
+
+
+
