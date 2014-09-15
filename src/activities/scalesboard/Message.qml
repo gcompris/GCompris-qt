@@ -25,7 +25,7 @@ Item {
 
     property alias text: messageText.text
     property bool displayed: messageText.text != "" ? true : false
-    onDisplayedChanged: console.log(displayed)
+
     Rectangle {
         id: messageBg
         x: messageText.x - 4
@@ -53,7 +53,7 @@ Item {
             left: parent.left
         }
         color: "black"
-        font.pointSize: 14
+        font.pointSize: 18
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         wrapMode: TextEdit.WordWrap

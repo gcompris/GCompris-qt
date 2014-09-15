@@ -53,6 +53,7 @@ function displayLevel()
 {
 
     initCompleted = false
+    items.question.init()
     items.masseAreaLeft.init()
     items.masseAreaRight.init()
     items.masseAreaCenter.init()
@@ -64,9 +65,10 @@ function displayLevel()
                                        i,
                                        /* dragEnabled */ true)
 
+    items.giftWeight = currentTargets[items.currentSubLevel - 1][0]
     items.masseAreaRight.addMasse("gift.svg",
                                   currentTargets[items.currentSubLevel - 1][0],
-                                  currentTargets[items.currentSubLevel - 1][1],
+                                  data.question ? "" : currentTargets[items.currentSubLevel - 1][1],
                                   0,
                                   /* dragEnabled */ false)
 

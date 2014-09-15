@@ -58,18 +58,21 @@ ActivityBase {
             property alias bonus: bonus
             property int numberOfSubLevels
             property int currentSubLevel
+            property int giftWeight
             property variant dataset: activity.dataset
             property alias masseAreaCenter: masseAreaCenter
             property alias masseAreaLeft: masseAreaLeft
             property alias masseAreaRight: masseAreaRight
             property alias masseCenterModel: masseAreaCenter.masseModel
             property alias masseRightModel: masseAreaRight.masseModel
+            property alias question: question
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        onScaleHeightChanged: Activity.initCompleted && scaleHeight == 0 ? bonus.good("flower") : null
+        onScaleHeightChanged: Activity.initCompleted && scaleHeight == 0 && question.hasText == "" ?
+                                  bonus.good("flower") : null
 
         Image {
             id: scale
@@ -221,6 +224,20 @@ ActivityBase {
                 left: parent.left
                 leftMargin: 10
             }
+        }
+
+        Question {
+            id: question
+            parent: scale
+            x: parent.x
+            y: parent.height * 0.45
+            z: 1000
+            width: parent.width - y
+            text: items.dataset[bar.level - 1].question && background.scaleHeight == 0 ?
+                      items.dataset[bar.level - 1].question : ""
+            answer: items.giftWeight
+
+            property bool hasText: items.dataset[bar.level - 1].question ? true : false
         }
 
         DialogHelp {
