@@ -30,10 +30,12 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
+        fillMode : Image.PreserveAspectCrop
+        source: "resource/cave.svg"
         anchors.fill: parent
-        color: "#ABCDEF"
+
         signal start
         signal stop
 
@@ -50,7 +52,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias helico: helico
-            property alias textzone: textarea
+            property alias textArea: textArea
             property alias infoText: userInfo
             property alias answerArea: answer
         }
@@ -58,41 +60,39 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Image {
-            id: back
-            anchors.fill: parent
-            fillMode : Image.PreserveAspectCrop
-            source: "resource/cave.svg"
-        }
-
-        Helico{
+        Helico {
             id: helico
         }
 
-        AnswerArea{
-            anchors.right: back.right
-            anchors.top: back.top
-            id: answer
-        }
-
-        Text{
-            id: textarea
-            anchors.top: back.top
+        Text {
+            id: textArea
+            anchors.top: parent.top
             anchors.topMargin: 10
-            anchors.horizontalCenter: back.horizontalCenter
+            anchors.left: parent.left
+            horizontalAlignment: Text.AlignHCenter
+            width: parent.width - answer.width - 10
+            wrapMode: TextEdit.WordWrap
             color: "white"
             font.bold: true
-            font.pixelSize: 24
+            font.pointSize: 20
         }
 
-        Text{
+        AnswerArea {
+            id: answer
+            anchors.right: parent.right
+            anchors.rightMargin: 10
+            anchors.top: parent.top
+            anchors.topMargin: 10
+        }
+
+        Text {
             id: userInfo
-            anchors.top: back.top
-            anchors.topMargin: 40
-            anchors.horizontalCenter: back.horizontalCenter
-            color: "cyan"
+            anchors.top: textArea.bottom
+            anchors.topMargin: 15
+            anchors.horizontalCenter: parent.horizontalCenter
+            color: "white"
             font.bold: true
-            font.pixelSize: 20
+            font.pointSize: 16
         }
 
         DialogHelp {

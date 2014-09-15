@@ -19,18 +19,25 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.0
+import GCompris 1.0
 
 Image {
     id: helico
-    y: back.height/2
-    source: "resource/tuxhelico.png"
+    source: "resource/tuxhelico.svg"
+    sourceSize.height: 120 * ApplicationInfo.ratio
+
+    function init() {
+        x = 2
+        y = parent.height / 2 - height / 2
+    }
+
     Behavior on x {
         PropertyAnimation {
             id: xAnim
             easing.type: Easing.OutQuad
             duration:  1000
-            onRunningChanged: if(!xAnim.running && helico.state=="advancing")
-                                  helico.state="horizontal"
+            onRunningChanged: if(!xAnim.running && helico.state == "advancing")
+                                  helico.state = "horizontal"
         }
     }
     Behavior on y {
@@ -39,8 +46,8 @@ Image {
 
     transform: Rotation {
             id: helicoRotation;
-            origin.x: helico.width/2;
-            origin.y: helico.height/2;
+            origin.x: helico.width / 2;
+            origin.y: helico.height / 2;
             axis { x: 0; y: 0; z: 1 }
             Behavior on angle {
                 animation: rotAnim

@@ -25,8 +25,8 @@ import "guessnumber.js" as Activity
 
 Rectangle {
     id: answerBackground
-    width: 140 * ApplicationInfo.ratio
-    height: 70 * ApplicationInfo.ratio
+    width: 100 * ApplicationInfo.ratio
+    height: 60 * ApplicationInfo.ratio
     color: activeFocus ? "#ff07fff2" : "#cccccccc"
     radius: 10
     border {
@@ -34,11 +34,8 @@ Rectangle {
         color: "black"
     }
 
-    property string imgPath
     // The backspace code comming from the vitual keyboard
     property string backspaceCode
-
-    Component.onCompleted: Activity.registerAnswerItem(answerBackground)
 
     // A top gradient
     Rectangle {
@@ -55,21 +52,8 @@ Rectangle {
     MouseArea {
         id: mouseArea
         anchors.fill: parent
-        onClicked: Activity.registerAnswerItem(answerBackground)
+        onClicked: parent.forceActiveFocus()
 
-    }
-
-    Image {
-        id: img
-        anchors {
-            left: parent.left
-            leftMargin: 10
-            verticalCenter: parent.verticalCenter
-        }
-        height: parent.height * 0.75
-        width: height
-        source: imgPath
-        fillMode: Image.PreserveAspectFit
     }
 
     Keys.onPressed: {
@@ -114,11 +98,9 @@ Rectangle {
 
     Text {
         id: userEntry
-        anchors {
-            left: img.right
-            verticalCenter: img.verticalCenter
-            leftMargin: 10
-        }
+        anchors.fill: parent
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
         text: "?"
         color: "black"
         font.pointSize: 28
