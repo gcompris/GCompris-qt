@@ -162,7 +162,7 @@ ActivityBase {
         property int cellWidth2:
             horizontal ? iconWidth+(main.width%iconWidth)/Math.round(main.width/iconWidth) :
                          iconWidth+((main.width - section.width)%iconWidth)/Math.round((main.width - section.width)/iconWidth)
-        property int cellHeight2: iconHeight * 1.35
+        property int cellHeight2: iconHeight * 1.5
 
         GridView {
             anchors {
