@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "money/Money.qml"
   difficulty: 2
-  icon: "money/money.svgz"
+  icon: "money/money.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Money")

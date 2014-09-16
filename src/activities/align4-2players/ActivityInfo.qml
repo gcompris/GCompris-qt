@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "align4-2players/Align42players.qml"
   difficulty: 1
-  icon: "align4-2players/align4-2players.svgz"
+  icon: "align4-2players/align4-2players.svg"
   author: "Bharath M S <brat.197@gmail.com>"
   demo: false
   title: qsTr("Align four (two players)")

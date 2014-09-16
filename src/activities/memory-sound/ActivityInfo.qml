@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "memory-sound/MemorySound.qml"
   difficulty: 2
-  icon: "memory-sound/memory-sound.svgz"
+  icon: "memory-sound/memory-sound.svg"
   author: "JB BUTET <ashashiwa@gmail.com>"
   demo: true
   title: qsTr("Audio memory game")

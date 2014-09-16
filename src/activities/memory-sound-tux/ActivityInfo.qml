@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "memory-sound-tux/MemorySoundTux.qml"
   difficulty: 2
-  icon: "memory-sound-tux/memory-sound-tux.svgz"
+  icon: "memory-sound-tux/memory-sound-tux.svg"
   author: "Yves Combe <yves@ycombe.net>"
   demo: true
   title: qsTr("Audio memory game against Tux")

@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(activities/mazerelative *.qml *.svg *.svgz *.js resource/*)
+GCOMPRIS_ADD_RCC(activities/mazerelative *.qml *.svg *.js resource/*)

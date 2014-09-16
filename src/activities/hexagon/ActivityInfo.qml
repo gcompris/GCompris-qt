@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "hexagon/Hexagon.qml"
   difficulty: 2
-  icon: "hexagon/hexagon.svgz"
+  icon: "hexagon/hexagon.svg"
   author: "Christof Petig and Ingo Konrad"
   demo: true
   title: qsTr("hexagon")

@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "algebra_by/AlgebraBy.qml"
   difficulty: 3
-  icon: "algebra_by/algebra_by.svgz"
+  icon: "algebra_by/algebra_by.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Practice the multiplication operation")

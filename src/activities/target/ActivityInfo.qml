@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "target/Target.qml"
   difficulty: 2
-  icon: "target/target.svgz"
+  icon: "target/target.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Practice addition with a target game")

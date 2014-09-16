@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "followline/Followline.qml"
   difficulty: 1
-  icon: "followline/followline.svgz"
+  icon: "followline/followline.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Control the hose-pipe")

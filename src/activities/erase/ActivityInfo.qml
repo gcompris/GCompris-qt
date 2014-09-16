@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "erase/Erase.qml"
   difficulty: 1
-  icon: "erase/erase.svgz"
+  icon: "erase/erase.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Move the mouse")

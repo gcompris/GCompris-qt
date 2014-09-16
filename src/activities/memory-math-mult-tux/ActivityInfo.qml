@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "memory-math-mult-tux/MemoryMathMultTux.qml"
   difficulty: 5
-  icon: "memory-math-mult-tux/memory-math-mult-tux.svgz"
+  icon: "memory-math-mult-tux/memory-math-mult-tux.svg"
   author: "JB BUTET <ashashiwa@gmail.com>"
   demo: false
   title: qsTr("Multiplication memory game against Tux")

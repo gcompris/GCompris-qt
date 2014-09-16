@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "colors/Colors.qml"
   difficulty: 1
-  icon: "colors/colors.svgz"
+  icon: "colors/colors.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: true
   title: qsTr("Colors")

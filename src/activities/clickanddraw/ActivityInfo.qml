@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "clickanddraw/Clickanddraw.qml"
   difficulty: 1
-  icon: "clickanddraw/clickanddraw.svgz"
+  icon: "clickanddraw/clickanddraw.svg"
   author: "Emmanuel Charruau <echarruau@gmail.com>"
   demo: false
   title: qsTr("Click and draw")

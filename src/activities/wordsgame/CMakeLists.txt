@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(activities/wordsgame *.qml *.svgz *.js resource/*)
+GCOMPRIS_ADD_RCC(activities/wordsgame *.qml *.svg *.js resource/*)

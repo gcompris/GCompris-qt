@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "align4/Align4.qml"
   difficulty: 2
-  icon: "align4/align4.svgz"
+  icon: "align4/align4.svg"
   author: "Bharath M S <brat.197@gmail.com>"
   demo: false
   title: qsTr("align4 activity")

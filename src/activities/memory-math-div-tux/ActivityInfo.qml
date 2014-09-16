@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "memory-math-div-tux/MemoryMathDivTux.qml"
   difficulty: 6
-  icon: "memory-math-div-tux/memory-math-div-tux.svgz"
+  icon: "memory-math-div-tux/memory-math-div-tux.svg"
   author: "JB BUTET <ashashiwa@gmail.com>"
   demo: false
   title: qsTr("Division memory game against Tux")

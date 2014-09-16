@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(activities/algorithm *.qml *.svg *.svgz *.js resource/*)
+GCOMPRIS_ADD_RCC(activities/algorithm *.qml *.svg *.js resource/*)

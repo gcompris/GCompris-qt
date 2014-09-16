@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(activities/color_mix_light *.qml *.svg *.svgz *.js resource/*)
+GCOMPRIS_ADD_RCC(activities/color_mix_light *.qml *.svg *.js resource/*)

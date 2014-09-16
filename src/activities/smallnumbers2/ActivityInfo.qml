@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "smallnumbers2/Smallnumbers2.qml"
   difficulty: 1
-  icon: "smallnumbers2/smallnumbers2.svgz"
+  icon: "smallnumbers2/smallnumbers2.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Numbers with pairs of dice")

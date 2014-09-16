@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "reversecount/Reversecount.qml"
   difficulty: 2
-  icon: "reversecount/reversecount.svgz"
+  icon: "reversecount/reversecount.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Practice subtraction with a fun game")

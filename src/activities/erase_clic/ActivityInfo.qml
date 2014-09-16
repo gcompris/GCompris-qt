@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "erase_clic/EraseClic.qml"
   difficulty: 1
-  icon: "erase_clic/erase_clic.svgz"
+  icon: "erase_clic/erase_clic.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Click the mouse")

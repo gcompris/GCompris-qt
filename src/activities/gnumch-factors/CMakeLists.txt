@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(activities/gnumch-factors *.qml *.svg *.svgz *.js resource/*)
+GCOMPRIS_ADD_RCC(activities/gnumch-factors *.qml *.svg *.js resource/*)

@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "memory-enumerate/MemoryEnumerate.qml"
   difficulty: 1
-  icon: "memory-enumerate/memory-enumerate.svgz"
+  icon: "memory-enumerate/memory-enumerate.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Enumeration memory game")

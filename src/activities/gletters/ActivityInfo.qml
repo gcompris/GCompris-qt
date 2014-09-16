@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "gletters/Gletters.qml"
   difficulty: 1
-  icon: "gletters/gletters.svgz"
+  icon: "gletters/gletters.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>, Qt Quick port by Holger Kaelberer <holger.k@elberer.de>"
   demo: true
   title: qsTr("Simple Letters")

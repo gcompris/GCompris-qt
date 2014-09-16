@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(activities/leftright *.qml *.svg *.svgz *.js resource/*)
+GCOMPRIS_ADD_RCC(activities/leftright *.qml *.svg *.js resource/*)

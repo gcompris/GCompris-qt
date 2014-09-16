@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "memory-math-add-minus-mult-div/MemoryMathAddMinusMultDiv.qml"
   difficulty: 6
-  icon: "memory-math-add-minus-mult-div/memory-math-add-minus-mult-div.svgz"
+  icon: "memory-math-add-minus-mult-div/memory-math-add-minus-mult-div.svg"
   author: "JB BUTET <ashashiwa@gmail.com>"
   demo: false
   title: qsTr("All operations memory game")

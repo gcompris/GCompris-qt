@@ -22,7 +22,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "sudoku/Sudoku.qml"
   difficulty: 4
-  icon: "sudoku/sudoku.svgz"
+  icon: "sudoku/sudoku.svg"
   author: "Johnny Jazeix <jazeix@gmail.com>"
   demo: false
   title: qsTr("Sudoku, place unique symbols in a square.")

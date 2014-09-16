@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "lightsoff/Lightsoff.qml"
   difficulty: 6
-  icon: "lightsoff/lightsoff.svgz"
+  icon: "lightsoff/lightsoff.svg"
   author: "Stephane Mankowski <stephane@mankowski.fr>"
   demo: false
   title: qsTr("Lights Off")

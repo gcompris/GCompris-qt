@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "magic-hat-minus/MagicHat.qml"
   difficulty: 2
-  icon: "magic-hat-minus/magic-hat-minus.svgz"
+  icon: "magic-hat-minus/magic-hat-minus.svg"
   author: "Thibaut ROMAIN <thibrom@gmail.com>"
   demo: false
   title: qsTr("The magician hat")

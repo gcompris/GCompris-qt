@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "template/Template.qml"
   difficulty: 1
-  icon: "template/template.svgz"
+  icon: "template/template.svg"
   author: "Your Name <yy@zz.org>"
   demo: false
   title: qsTr("template activity")

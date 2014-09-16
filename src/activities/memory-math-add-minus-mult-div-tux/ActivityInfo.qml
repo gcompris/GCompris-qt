@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "memory-math-add-minus-mult-div-tux/MemoryMathAddMinusMultDivTux.qml"
   difficulty: 6
-  icon: "memory-math-add-minus-mult-div-tux/memory-math-add-minus-mult-div-tux.svgz"
+  icon: "memory-math-add-minus-mult-div-tux/memory-math-add-minus-mult-div-tux.svg"
   author: "JB BUTET <ashashiwa@gmail.com>"
   demo: false
   title: qsTr("All operations memory game against Tux")

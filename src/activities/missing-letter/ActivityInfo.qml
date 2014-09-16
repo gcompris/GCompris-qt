@@ -4,7 +4,7 @@ ActivityInfo
 {
   name: "missing-letter/MissingLetter.qml"
   difficulty: 1
-  icon: "missing-letter/missing-letter.svgz"
+  icon: "missing-letter/missing-letter.svg"
   author: "Amit Tomar <a.tomar@outlook.com>"
   demo: false
   title: qsTr("Missing Letter")

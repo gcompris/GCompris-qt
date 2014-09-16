@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "click_on_letter_up/ClickOnLetterUp.qml"
   difficulty: 1
-  icon: "click_on_letter_up/click_on_letter_up.svgz"
+  icon: "click_on_letter_up/click_on_letter_up.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>, Qt Quick port by Holger Kaelberer <holger.k@elberer.de>"
   demo: false
   title: qsTr("Click on an uppercase letter")

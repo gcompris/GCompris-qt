@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "memory-math-add/MemoryMathAdd.qml"
   difficulty: 3
-  icon: "memory-math-add/memory-math-add.svgz"
+  icon: "memory-math-add/memory-math-add.svg"
   author: "JB BUTET <ashashiwa@gmail.com>"
   demo: false
   title: qsTr("Addition memory game")

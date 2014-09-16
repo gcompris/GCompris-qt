@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "clickgame/Clickgame.qml"
   difficulty: 1
-  icon: "clickgame/clickgame.svgz"
+  icon: "clickgame/clickgame.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Click On Me")

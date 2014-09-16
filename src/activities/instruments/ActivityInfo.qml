@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "instruments/Instruments.qml"
   difficulty: 4
-  icon: "instruments/instruments.svgz"
+  icon: "instruments/instruments.svg"
   author: "Sylvain Dechy <syl.1@free.fr>"
   demo: true
   title: qsTr("Music instruments")

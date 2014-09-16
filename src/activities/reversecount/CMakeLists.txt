@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(activities/reversecount *.qml *.svg *.svgz *.js resource/*)
+GCOMPRIS_ADD_RCC(activities/reversecount *.qml *.svg *.js resource/*)

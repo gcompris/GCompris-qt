@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "football/Football.qml"
   difficulty: 1
-  icon: "football/football.svgz"
+  icon: "football/football.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("The football game")
