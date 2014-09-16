@@ -76,6 +76,7 @@ planegame
 reversecount
 scalesboard
 scalesboard_weight
+scalesboard_weight_avoirdupois
 smallnumbers
 smallnumbers2
 sudoku
