@@ -64,7 +64,7 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         /* Instruction */
-        Text {
+        GCText {
             id: instruction
             y: parent.height * 0.65
             anchors.horizontalCenter: parent.horizontalCenter

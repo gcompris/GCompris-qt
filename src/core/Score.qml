@@ -50,7 +50,7 @@ Rectangle {
     onCurrentSubLevelChanged: message = currentSubLevel + "/" + numberOfSubLevels
     onNumberOfSubLevelsChanged: message = currentSubLevel + "/" + numberOfSubLevels
 
-    Text {
+    GCText {
         id: subLevelText
         anchors.centerIn: parent
         font.pointSize: 16

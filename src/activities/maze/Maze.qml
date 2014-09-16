@@ -333,7 +333,7 @@ ActivityBase {
             onClicked: Activity.clickLeft()
         }
 
-        Text {
+        GCText {
             id: message
             anchors {
                 left: parent.left

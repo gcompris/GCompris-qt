@@ -21,6 +21,7 @@
 */
 import QtQuick 2.1
 import GCompris 1.0
+import "../../core"
 import "guessnumber.js" as Activity
 
 Rectangle {
@@ -96,7 +97,7 @@ Rectangle {
         Activity.setUserAnswer(parseInt(userEntry.text))
     }
 
-    Text {
+    GCText {
         id: userEntry
         anchors.fill: parent
         horizontalAlignment: Text.AlignHCenter

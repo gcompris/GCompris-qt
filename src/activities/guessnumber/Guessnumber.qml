@@ -64,7 +64,7 @@ ActivityBase {
             id: helico
         }
 
-        Text {
+        GCText {
             id: textArea
             anchors.top: parent.top
             anchors.topMargin: 10
@@ -85,7 +85,7 @@ ActivityBase {
             anchors.topMargin: 10
         }
 
-        Text {
+        GCText {
             id: userInfo
             anchors.top: textArea.bottom
             anchors.topMargin: 15

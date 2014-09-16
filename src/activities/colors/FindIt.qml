@@ -84,7 +84,7 @@ ActivityBase {
             }
         }
 
-        Text {
+        GCText {
             id: questionItem
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top

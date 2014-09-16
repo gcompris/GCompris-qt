@@ -50,7 +50,7 @@ Item {
                 }
             }
             label: Item {
-                Text {
+                GCText {
                     //renderType: Text.NativeRendering
                     anchors.centerIn: parent
                     text: control.text

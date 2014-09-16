@@ -128,6 +128,7 @@ protected slots:
 	QString getResourceDataPath();
     Q_INVOKABLE QString getAudioFilePath(const QString &file);
     Q_INVOKABLE QString getLocaleFilePath(const QString &file);
+    Q_INVOKABLE QStringList getSystemExcludedFonts();
     Q_INVOKABLE void notifyFullscreenChanged();
 
 
@@ -153,6 +154,9 @@ private:
 	qreal m_ratio;
 	qreal m_hMargin;
 	qreal m_sliderHandleHeight, m_sliderHandleWidth, m_sliderGapWidth;
+
+    // Symbols fonts that user can't see
+    QStringList m_excludedFonts;
 
     static QQuickWindow *m_window;
 };

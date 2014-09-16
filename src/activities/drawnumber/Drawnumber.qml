@@ -115,7 +115,7 @@ ActivityBase {
                     }
                 }
 
-                Text {
+                GCText {
                     id: pointNumberText
 
                     opacity: pointImageOpacity

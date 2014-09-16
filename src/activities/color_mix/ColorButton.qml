@@ -20,6 +20,8 @@
 */
 import QtQuick 2.0
 
+import "../../core"
+
 Rectangle {
     id: button
     height: parent.height / 4
@@ -32,7 +34,7 @@ Rectangle {
 
     signal clicked
 
-    Text {
+    GCText {
         id: buttonText
         anchors.centerIn: parent
         horizontalAlignment: Text.AlignHCenter

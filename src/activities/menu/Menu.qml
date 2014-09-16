@@ -202,7 +202,7 @@ ActivityBase {
                         sourceSize.width: iconWidth * 0.15
                         x: 5
                     }
-                    Text {
+                    GCText {
                         anchors.top: parent.bottom
                         anchors.horizontalCenter: parent.horizontalCenter
                         horizontalAlignment: Text.AlignHCenter

@@ -116,7 +116,7 @@ Dialog {
     ColumnLayout {
         id: downloadColumn
         width: parent.width
-        Text {
+        GCText {
             id: downloadDialogText
             width: parent.width
             text: qsTr("Downloading ...")

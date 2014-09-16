@@ -185,7 +185,7 @@ ActivityBase {
                         Image {
                             source: Activity.url + modelData.img
                             sourceSize.height:  column.itemStoreHeight
-                            Text {
+                            GCText {
                                 text: modelData.price
                                 font.pointSize: 20
                                 font.weight: Font.DemiBold
@@ -217,7 +217,7 @@ ActivityBase {
 
                 property int realHeight: bar.level === 1 ? height : 0
 
-                Text {
+                GCText {
                     id: instructions
                     horizontalAlignment: Text.AlignHCenter
                     width: column.width

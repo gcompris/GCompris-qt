@@ -116,7 +116,7 @@ ActivityBase {
             }
         }
 
-        Text {
+        GCText {
             id: scoreItem
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
@@ -164,7 +164,7 @@ ActivityBase {
                 bonus.good("flower")
         }
 
-        Text {
+        GCText {
             id: userEntry
             anchors.top: scoreItem.bottom
             width: parent.width

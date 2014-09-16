@@ -125,7 +125,7 @@ Item {
         }
     }
 
-    Text {
+    GCText {
         id:text1
         anchors.centerIn: parent
         visible : rotAngle > Math.PI/2 ? true : false

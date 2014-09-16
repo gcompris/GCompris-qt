@@ -69,7 +69,7 @@ Item {
         height: sourceSize.height
         smooth: false
     }
-    Text {
+    GCText {
         id: label
         anchors.verticalCenter: parent.verticalCenter
         // We need to manually horizonally center the text, because in wrongAnswerAnimation,

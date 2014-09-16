@@ -23,6 +23,8 @@ import QtQuick 2.2
 import QtQuick.Controls 1.1
 import GCompris 1.0
 
+import "../../core"
+
 Item {
     property Component delegate: cellDelegate
 
@@ -55,7 +57,7 @@ Item {
             focus: false
             Component.onCompleted: setText()
 
-            Text {
+            GCText {
                 id: numberText
 
                 anchors.fill: parent

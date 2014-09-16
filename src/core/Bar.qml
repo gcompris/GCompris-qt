@@ -88,7 +88,7 @@ Item {
             sourceSize.width: 30 * barZoom
             onClicked: bar.previousLevelClicked()
         }
-        Text {
+        GCText {
             id: levelTextId
             text: "" + level
             font.family: "Helvetica"

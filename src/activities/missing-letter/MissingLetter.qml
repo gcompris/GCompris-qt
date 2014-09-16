@@ -144,8 +144,7 @@ ActivityBase
                 }
             }
 
-            Text
-            {
+            GCText {
                 id: questionText
                 anchors {
                     horizontalCenter: questionTextBg.horizontalCenter
@@ -198,8 +197,7 @@ ActivityBase
                 GradientStop { position: 1.0; color: "#f8d600" }
             }
 
-            Text
-            {
+            GCText {
                 id: currentQuestionNumberText
                 anchors.centerIn: parent
                 font.pointSize: 24

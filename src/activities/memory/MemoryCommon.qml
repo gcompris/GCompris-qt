@@ -130,7 +130,7 @@ ActivityBase {
             width: height * 0.83
             height: bar.height * 2
 
-            Text {
+            GCText {
                 id: playerScore
                 anchors.centerIn: parent
                 anchors.verticalCenterOffset: parent.height / 6
@@ -154,7 +154,7 @@ ActivityBase {
             width: height * 0.83
             height: bar.height * 2
 
-            Text {
+            GCText {
                 id: tuxScore
                 anchors.centerIn: parent
                 anchors.verticalCenterOffset: parent.height / 6

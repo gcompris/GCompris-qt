@@ -103,7 +103,7 @@ Item {
                 border.color: Qt.darker(color)
                 border.width:2
 
-                Text {
+                GCText {
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     text: numbers[index] + 5
@@ -138,7 +138,7 @@ Item {
             border.color: "black"
             border.width:2
 
-            Text {
+            GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 text: "←"

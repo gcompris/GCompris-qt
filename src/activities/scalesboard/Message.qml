@@ -20,6 +20,8 @@
  */
 import QtQuick 2.1
 
+import "../../core"
+
 Item {
     id: message
 
@@ -45,7 +47,7 @@ Item {
         Behavior on opacity { NumberAnimation { duration: 100 } }
     }
     
-    Text {
+    GCText {
         id: messageText
         anchors {
             top: parent.top

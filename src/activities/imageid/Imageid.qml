@@ -124,7 +124,7 @@ ActivityBase {
                     width: wordListView.width * 0.8
                     height: wordListView.buttonHeight
                     
-                    Text {
+                    GCText {
                         id: wordText
                         anchors.fill: parent
                         anchors.margins: 5

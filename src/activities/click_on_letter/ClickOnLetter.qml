@@ -142,7 +142,7 @@ ActivityBase {
                 radius: 10
             }
 
-            Text {
+            GCText {
                 id: questionText
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter

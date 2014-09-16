@@ -209,7 +209,7 @@ ActivityBase {
         }
 
         // Instructions
-        Text {
+        GCText {
             id: instructions
             text: ApplicationInfo.isMobile ?
                       qsTr("Tap both hands at the same time,

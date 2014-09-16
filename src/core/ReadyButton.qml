@@ -40,7 +40,7 @@ Rectangle {
 
     signal clicked
 
-    Text {
+    GCText {
         id: iamReadyText
 
         anchors.horizontalCenter: parent.horizontalCenter

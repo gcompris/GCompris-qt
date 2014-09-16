@@ -52,7 +52,7 @@ Image {
 
     }
 
-    Text {
+    GCText {
         id: text
         anchors.horizontalCenter: isCarriage ?
                                       carriageBg.horizontalCenter :

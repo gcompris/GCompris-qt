@@ -38,7 +38,7 @@ CheckBox {
                 control.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
                                   "qrc:/gcompris/src/core/resource/cancel.svgz"
         }
-        label: Text {
+        label: GCText {
             font.pointSize: 16
             text: control.text
             wrapMode: Text.WordWrap

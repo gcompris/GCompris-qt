@@ -59,6 +59,7 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(bool isFullscreen READ isFullscreen WRITE setFullscreen NOTIFY fullscreenChanged)
     Q_PROPERTY(bool isVirtualKeyboard READ isVirtualKeyboard WRITE setVirtualKeyboard NOTIFY virtualKeyboardChanged)
     Q_PROPERTY(QString locale READ locale WRITE setLocale NOTIFY localeChanged)
+    Q_PROPERTY(QString font READ font WRITE setFont NOTIFY fontChanged)
     Q_PROPERTY(bool isAutomaticDownloadsEnabled READ isAutomaticDownloadsEnabled WRITE setIsAutomaticDownloadsEnabled NOTIFY automaticDownloadsEnabledChanged)
     Q_PROPERTY(quint32 filterLevelMin READ filterLevelMin WRITE setFilterLevelMin NOTIFY filterLevelMinChanged)
     Q_PROPERTY(quint32 filterLevelMax READ filterLevelMax WRITE setFilterLevelMax NOTIFY filterLevelMaxChanged)
@@ -116,6 +117,12 @@ public:
         emit localeChanged();
     }
 
+    QString font() const { return m_font; }
+    void setFont(const QString newFont) {
+        m_font = newFont;
+        emit fontChanged();
+    }
+
     bool isAutomaticDownloadsEnabled() const { return m_isAutomaticDownloadsEnabled; }
     void setIsAutomaticDownloadsEnabled(const bool newIsAutomaticDownloadsEnabled) {
         m_isAutomaticDownloadsEnabled = newIsAutomaticDownloadsEnabled;
@@ -152,6 +159,7 @@ protected slots:
     Q_INVOKABLE void notifyFullscreenChanged();
     Q_INVOKABLE void notifyVirtualKeyboardChanged();
     Q_INVOKABLE void notifyLocaleChanged();
+    Q_INVOKABLE void notifyFontChanged();
     Q_INVOKABLE void notifyAutomaticDownloadsEnabledChanged();
     Q_INVOKABLE void notifyFilterLevelMinChanged();
     Q_INVOKABLE void notifyFilterLevelMaxChanged();
@@ -168,6 +176,7 @@ signals:
     void fullscreenChanged();
     void virtualKeyboardChanged();
     void localeChanged();
+    void fontChanged();
     void automaticDownloadsEnabledChanged();
     void filterLevelMinChanged();
     void filterLevelMaxChanged();
@@ -191,6 +200,7 @@ private:
     quint32 m_filterLevelMin;
     quint32 m_filterLevelMax;
     QString m_locale;
+    QString m_font;
 
     QString m_downloadServerUrl;
 

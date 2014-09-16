@@ -92,7 +92,7 @@ ActivityBase {
                                      items.targetColor3)
         }
 
-        Text {
+        GCText {
             text: qsTr("Match the color")
             font.pointSize: 18
             horizontalAlignment: Text.AlignRight
@@ -105,7 +105,7 @@ ActivityBase {
             }
         }
 
-        Text {
+        GCText {
             id: helpMessage
             text: ""
             font.pointSize: 16

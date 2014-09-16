@@ -105,7 +105,7 @@ Item {
         return (unmatchedIndex === text.length);
     }
 
-    Text {
+    GCText {
         id: wordText
 
         text: ""
@@ -120,7 +120,7 @@ Item {
             clip: false
         }
 
-        Text {
+        GCText {
             id: highlightedWordText
 
             anchors.fill: parent

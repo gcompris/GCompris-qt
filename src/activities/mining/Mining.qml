@@ -269,7 +269,7 @@ ActivityBase {
                 bottom: parent.bottom
             }
 
-            Text {
+            GCText {
                 id: score
                 anchors {
                     horizontalCenter: parent.horizontalCenter

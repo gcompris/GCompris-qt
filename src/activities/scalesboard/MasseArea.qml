@@ -215,7 +215,7 @@ Rectangle {
                     }
                 }
                 
-                Text {
+                GCText {
                     id: text
                     anchors.fill: parent
                     text: model.text.replace(" ", "\n")

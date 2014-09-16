@@ -82,7 +82,7 @@ ActivityBase {
         }
 
         /* Target text */
-        Text {
+        GCText {
             text: qsTr("Set the watch to:") + " " +
                   Activity.get2CharValue(
                       items.targetH) + ":" + Activity.get2CharValue(
@@ -139,7 +139,7 @@ ActivityBase {
             /* The minutes */
             Repeater {
                 model: 60
-                Text {
+                GCText {
                     text: index + 1
                     font {
                         pixelSize: Math.max(
@@ -188,7 +188,7 @@ ActivityBase {
             /* The hours */
             Repeater {
                 model: 12
-                Text {
+                GCText {
                     text: index + 1
                     font {
                         pixelSize: Math.max(clock.radius / 30, 1)
@@ -233,7 +233,7 @@ ActivityBase {
             }
 
             /* Help text */
-            Text {
+            GCText {
                 id: helper
                 text: Activity.get2CharValue(
                           items.currentH) + ":" + Activity.get2CharValue(

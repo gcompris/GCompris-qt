@@ -53,7 +53,7 @@ Image {
         state = "storm"
     }
 
-    Text {
+    GCText {
         id: number
         anchors.horizontalCenter: cloud.horizontalCenter
         anchors.verticalCenter: cloud.verticalCenter

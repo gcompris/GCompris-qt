@@ -48,6 +48,8 @@
 #include "ApplicationInfo.h"
 #include <QDebug>
 
+#include <QFontDatabase>
+
 QQuickWindow *ApplicationInfo::m_window = NULL;
 ApplicationInfo *ApplicationInfo::m_instance = NULL;
 
@@ -84,6 +86,10 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 
     if (m_isMobile)
         connect(qApp->primaryScreen(), SIGNAL(physicalSizeChanged(QSizeF)), this, SLOT(notifyPortraitMode()));
+
+    // Get all symbol fonts to remove them
+    QFontDatabase database;
+    m_excludedFonts = database.families(QFontDatabase::Symbol);
 }
 
 ApplicationInfo::~ApplicationInfo()
@@ -133,6 +139,11 @@ QString ApplicationInfo::getLocaleFilePath(const QString &file)
     QString filename = file;
     filename.replace("$LOCALE", localeShortName);
     return filename;
+}
+
+QStringList ApplicationInfo::getSystemExcludedFonts()
+{
+    return m_excludedFonts;
 }
 
 void ApplicationInfo::notifyPortraitMode()

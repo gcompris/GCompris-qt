@@ -1,6 +1,9 @@
-/* GCompris - Algebra.qml
+/* GCompris - GCText.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Johnny Jazeix
+ *
+ * Authors:
+ *   Johnny Jazeix <jazeix@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -15,35 +18,10 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.1
-import QtGraphicalEffects 1.0
+import QtQuick 2.0
+import QtMultimedia 5.0
+import GCompris 1.0
 
-import "../../core"
-
-Item {
-
-    width: text.width
-    height: text.height
-
-    property alias text: text.text
-
-    GCText {
-        id: text
-        font.pointSize: 32
-        font.bold: true
-        style: Text.Outline
-        styleColor: "white"
-        color: "black"
-    }
-
-    DropShadow {
-        anchors.fill: text
-        cached: true
-        horizontalOffset: 3
-        verticalOffset: 3
-        radius: 8.0
-        samples: 16
-        color: "#80000000"
-        source: text
-    }
+Text {
+    font.family: ApplicationSettings.font
 }

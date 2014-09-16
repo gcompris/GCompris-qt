@@ -109,7 +109,7 @@ ActivityBase {
                         }
                     }
 
-                    Text {
+                    GCText {
                         id: text
                         anchors.horizontalCenter: parent.horizontalCenter
                         anchors.verticalCenter: parent.verticalCenter

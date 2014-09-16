@@ -22,7 +22,7 @@
 import QtQuick 2.1
 import GCompris 1.0
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "magic-hat.js" as Activity
 
 ActivityBase {
@@ -76,7 +76,7 @@ ActivityBase {
                 id: theHat
                 starsSize: background.starSize
             }
-            Text {
+            GCText {
                 text: mode == "minus" ? "-" : "+"
                 anchors.right: mainlayout.right
                 y: background.starSize * 3

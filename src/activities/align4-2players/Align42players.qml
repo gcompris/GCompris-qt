@@ -180,7 +180,7 @@ ActivityBase {
                 left: bar.right
             }
 
-            Text {
+            GCText {
                 id: player1_score
                 anchors.verticalCenter: parent.verticalCenter
                 x: parent.width / 2 + 5
@@ -200,7 +200,7 @@ ActivityBase {
                 leftMargin: 10 * ApplicationInfo.ratio
             }
 
-            Text {
+            GCText {
                 id: player2_score
                 anchors.verticalCenter: parent.verticalCenter
                 color: "white"

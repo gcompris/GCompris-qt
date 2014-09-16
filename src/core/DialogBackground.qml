@@ -53,7 +53,7 @@ Rectangle {
                 border.color: "black"
                 border.width: 2
 
-                Text {
+                GCText {
                     id: title
                     text: dialogBackground.title
                     width: dialogBackground.width - 30
@@ -83,7 +83,7 @@ Rectangle {
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
 
-                    Text {
+                    GCText {
                         id: textContent
                         text: content
                         width: flick.width

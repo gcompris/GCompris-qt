@@ -23,6 +23,8 @@ import QtQuick 2.1
 import GCompris 1.0
 import "enumerate.js" as Activity
 
+import "../../core"
+
 Rectangle {
     id: answerBackground
     width: 140 * ApplicationInfo.ratio
@@ -113,7 +115,7 @@ Rectangle {
         Activity.setUserAnswer(imgPath, parseInt(userEntry.text))
     }
 
-    Text {
+    GCText {
         id: userEntry
         anchors {
             left: img.right

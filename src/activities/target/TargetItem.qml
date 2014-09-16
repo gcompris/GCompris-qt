@@ -151,7 +151,7 @@ Image {
             border.width: 1 * ApplicationInfo.ratio
             border.color: "black"
             
-            Text {
+            GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.bottom: parent.bottom
                 text: score

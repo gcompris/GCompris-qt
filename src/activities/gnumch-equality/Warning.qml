@@ -23,6 +23,7 @@ import QtQuick 2.2
 import QtQuick.Controls 1.1
 import GCompris 1.0
 
+import "../../core"
 import "gnumch-equality.js" as Activity
 
 Rectangle {
@@ -136,7 +137,7 @@ Rectangle {
 
     }
 
-    Text {
+    GCText {
         id: warning
         anchors.fill: parent
         horizontalAlignment: Text.AlignHCenter

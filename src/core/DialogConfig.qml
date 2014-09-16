@@ -62,7 +62,7 @@ Rectangle {
                 border.color: "black"
                 border.width: 2
 
-                Text {
+                GCText {
                     id: title
                     text: dialogConfig.title
                     width: dialogConfig.width - 30
@@ -131,7 +131,7 @@ Rectangle {
                                 isVirtualKeyboard = checked;
                             }
                         }
-                        
+
                         GCDialogCheckBox {
                             id: enableAutomaticDownloadsBox
                             checked: isAutomaticDownloadsEnabled
@@ -146,63 +146,71 @@ Rectangle {
                             style: GCComboBoxStyle {}
                             model: languages
                             width: 200 * ApplicationInfo.ratio
-                            
+
                             onCurrentIndexChanged: voicesRow.localeChanged();
                         }
-                        
+
+
+                        ComboBox {
+                            id: fontBox
+                            style: GCComboBoxStyle {}
+                            model: fonts
+                            width: 200 * ApplicationInfo.ratio
+                        }
+
                         Row {
                             id: voicesRow
                             height: voicesImage.height
                             width: parent.width
                             spacing: 5 * ApplicationInfo.ratio
-                            
+
                             property bool haveLocalResource: false
-                            
+
                             function localeChanged() {
                                 var localeShort = languages.get(languageBox.currentIndex).locale.substr(0, 2);
                                 var language = languages.get(languageBox.currentIndex).text;
                                 voicesText.text = language + " " + qsTr("sounds");
                                 voicesRow.haveLocalResource = DownloadManager.haveLocalResource(
-                                        DownloadManager.getVoicesResourceForLocale(localeShort));
+                                            DownloadManager.getVoicesResourceForLocale(localeShort));
                             }
-                            
+
                             Connections {
                                 target: DownloadManager
-                                
+
                                 onDownloadFinished: voicesRow.localeChanged()
                             }
-                            
+
                             Item {
                                 id: rowSpacer
                                 width: 20 * ApplicationInfo.ratio
                                 height: parent.height
                             }
-                        
-                            Text {
+
+                            GCText {
                                 id: voicesText
                                 anchors.verticalCenter: parent.verticalCenter
                                 text: qsTr("Sounds")
                             }
-                            
+
                             Image {
                                 id: voicesImage
                                 sourceSize.height: 30 * ApplicationInfo.ratio
                                 source: voicesRow.haveLocalResource ? "qrc:/gcompris/src/core/resource/apply.svgz" :
-                                    "qrc:/gcompris/src/core/resource/cancel.svgz"
+                                                                      "qrc:/gcompris/src/core/resource/cancel.svgz"
                             }
-                            
+
                             Button {
                                 id: voicesButton
                                 height: parent.height * ApplicationInfo.ratio
                                 anchors.verticalCenter: parent.verticalCenter
                                 text: voicesRow.haveLocalResource ? qsTr("Check for updates") :
-                                    qsTr("Download")
+                                                                    qsTr("Download")
                                 style: GCButtonStyle {}
 
                                 onClicked: {
                                     if (DownloadManager.downloadResource(
-                                        DownloadManager.getVoicesResourceForLocale(
-                                                languages.get(languageBox.currentIndex).locale.substr(0, 2))))
+                                                DownloadManager.getVoicesResourceForLocale(
+                                                    languages.get(languageBox.currentIndex).locale.substr(0, 2))))
                                     {
                                         var downloadDialog = Core.showDownloadDialog(dialogConfig, {});
                                     }
@@ -213,7 +221,7 @@ Rectangle {
                         Row {
                             width: parent.width
 
-                            Text {
+                            GCText {
                                 text: qsTr("Difficulty filter:")
                                 verticalAlignment: Text.AlignVCenter
                                 font.pointSize: 16
@@ -375,7 +383,7 @@ Rectangle {
             }
         }
     }
- 
+
     property bool isAudioVoicesEnabled: ApplicationSettings.isAudioVoicesEnabled
     property bool isAudioEffectsEnabled: ApplicationSettings.isAudioEffectsEnabled
     property bool isFullscreen: ApplicationSettings.isFullscreen
@@ -406,6 +414,14 @@ Rectangle {
                 break;
             }
         }
+
+        // Set font
+        for(var i = 0 ; i < fonts.count ; i ++) {
+            if(fonts.get(i).text == ApplicationSettings.font) {
+                fontBox.currentIndex = i;
+                break;
+            }
+        }
     }
 
     function save() {
@@ -414,10 +430,13 @@ Rectangle {
         ApplicationSettings.isFullscreen = isFullscreen
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
+
+        ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
+
         if (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale) {
             ApplicationSettings.locale = languages.get(languageBox.currentIndex).locale
             if (!DownloadManager.haveLocalResource(
-                    DownloadManager.getVoicesResourceForLocale(
+                        DownloadManager.getVoicesResourceForLocale(
                             ApplicationInfo.localeShort)))
             {
                 // ask for downloading new voices
@@ -427,16 +446,16 @@ Rectangle {
                 buttonHandler[StandardButton.Yes] = function() {
                     // yes -> start download
                     if (DownloadManager.downloadResource(
-                            DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort)))
+                                DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort)))
                         var downloadDialog = Core.showDownloadDialog(main, {});
                 };
                 dialog = Core.showMessageDialog(dialogConfig,
-                        qsTr("You selected a new locale"),
-                        qsTr("Do you want to download the corresponding sound files now?"),
-                        "",
-                        StandardIcon.Question,
-                        buttonHandler
-                );
+                                                qsTr("You selected a new locale"),
+                                                qsTr("Do you want to download the corresponding sound files now?"),
+                                                "",
+                                                StandardIcon.Question,
+                                                buttonHandler
+                                                );
             } else // check for udpates or/and register new voices
                 DownloadManager.updateResource(DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort))
         }
@@ -477,8 +496,32 @@ Rectangle {
         }
     }
 
+    ListModel {
+        id: fonts
+        Component.onCompleted: {
+            var systemFonts = Qt.fontFamilies();
+            var excludedFonts = ApplicationInfo.getSystemExcludedFonts();
+
+            // Remove symbol fonts
+            for(var i = 0 ; i < systemFonts.length ; ++ i) {
+                var isExcluded = false;
+                for(var j = 0 ; j < excludedFonts.length ; ++ j) {
+                    if(systemFonts[i] == excludedFonts[j]) {
+                        isExcluded = true;
+                        break;
+                    }
+                }
+
+                if(!isExcluded) {
+                    fonts.append({ "text": systemFonts[i], "isLocalResource": false });
+                }
+            }
+        }
+    }
+
     function hasConfigChanged() {
         return (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale ||
+                (ApplicationSettings.font != fonts.get(fontBox.currentIndex).text) ||
                 (ApplicationSettings.isAudioVoicesEnabled != isAudioVoicesEnabled) ||
                 (ApplicationSettings.isAudioEffectsEnabled != isAudioEffectsEnabled) ||
                 (ApplicationSettings.isFullscreen != isFullscreen) ||

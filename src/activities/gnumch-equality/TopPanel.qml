@@ -43,7 +43,7 @@ Rectangle {
         goalText.text = goalText.setTextGoal(goal)
     }
 
-    Text {
+    GCText {
         id: goalText
 
         function setTextGoal(goal) {
