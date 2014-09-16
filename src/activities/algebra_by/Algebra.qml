@@ -122,7 +122,7 @@ ActivityBase {
     NumPad {
         id: numpad
         onAnswerChanged: Activity.questionsLeft()
-        maxDigit: ('' + otherItems.result).length
+        maxDigit: ('' + otherItems.result).length + 1
     }
 
     ReadyButton {
