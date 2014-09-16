@@ -52,23 +52,18 @@ Scalesboard {
                 "message": qsTr('The "g" symbol at the end of a number means gram. One kilogram equals 1000 grams')
             },
             {
-                "masses": [[2, kg(2)], [2, kg(2)], [5, kg(5)], [5, kg(5)], [5, kg(5)]],
-                "targets": [[8, kg(8)], [11, kg(11)], [13, kg(13)]],
-                "rightDrop": true,
-                "message": qsTr("Take care, you can drop weights on both sides of the scale.")
-            },
-            {
                 "masses": [[100, g(100)], [200, g(200)], [200, g(200)], [500, g(500)],
                           [500, g(500)], [1000, kg(1)], [1000, kg(1)]],
                 "targets": [[1200, kg(1.2)], [1300, kg(1.3)], [1400, kg(1.4)],
                            [1500, kg(1.5)], [1600, kg(1.6)]],
                 "rightDrop": false,
-                "message": qsTr("Remember, one kilo ('kg') equals 1000 grams ('g').")
+                "message": qsTr('Remember, one kilo ("kg") equals 1000 grams ("g").')
             },
             {
                 "masses": [[200, g(200)], [500, g(500)], [1000, kg(1)], [1000, kg(1)], [1200, kg(1.2)]],
                 "targets": [[300, g(300)], [800, g(800)], [1300, kg(1.3)]],
-                "rightDrop": true
+                "rightDrop": true,
+                "message": qsTr("Take care, you can drop weights on both sides of the scale.")
             },
             {
                 "masses": [[200, g(200)], [400, g(400)], [700, g(700)], [1000, kg(1)], [1200, kg(1.2)]],
