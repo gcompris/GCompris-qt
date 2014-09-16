@@ -212,14 +212,14 @@ Item {
 
         if(isKeyPressed && !answerFlag)
         {
-            if(keyValue < 5)
+            if(keyValue < 5 && answer.length < maxDigit)
             {
 
                 answer += keyValue;
                 leftPanel.children[keyValue].color = Qt.lighter(colours[keyValue])
                 leftPanel.children[keyValue].border.width = 5
             }
-            else if(keyValue < 10)
+            else if(keyValue < 10 && answer.length < maxDigit)
             {
                 answer += keyValue;
                 rightPanel.children[keyValue - 5].color = Qt.lighter(colours[keyValue - 5])
