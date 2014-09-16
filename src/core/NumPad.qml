@@ -35,12 +35,13 @@ Item {
     property var rightPanelComponent: rightPanel
     property var backspaceButtonComponent:backspaceButton
     property int maxDigit: 2
+    property int columnWidth: 80
 
     signal answer
 
     Column {
         id: leftPanel
-        width: 120 * ApplicationInfo.ratio
+        width: columnWidth * ApplicationInfo.ratio
         height: parent.height - 90 * ApplicationInfo.ratio
         opacity: 0.8
 
@@ -63,8 +64,14 @@ Item {
 
                 }
 
-                MouseArea{
-                    anchors.fill:parent
+                MouseArea {
+                    // Create an bigger area than the top rectangle to suit fingers
+                    anchors {
+                        left: parent.left
+                        top: parent.top
+                        bottom: parent.bottom
+                    }
+                    width: parent.width * 2
                     enabled: ApplicationSettings.isVirtualKeyboard
 
                     onClicked :{
@@ -88,9 +95,9 @@ Item {
 
     Column {
         id: rightPanel
-        width: 120 * ApplicationInfo.ratio
+        width: columnWidth * ApplicationInfo.ratio
         height: parent.height - 90 * ApplicationInfo.ratio
-        x: parent.width - 120 * ApplicationInfo.ratio
+        x: parent.width - columnWidth * ApplicationInfo.ratio
         opacity: 0.8
 
         Repeater {
@@ -112,7 +119,13 @@ Item {
 
                 }
                 MouseArea {
-                    anchors.fill: parent
+                    // Create an bigger area than the top rectangle to suit fingers
+                    anchors {
+                        right: parent.right
+                        top: parent.top
+                        bottom: parent.bottom
+                    }
+                    width: parent.width * 2
                     enabled: ApplicationSettings.isVirtualKeyboard
 
                     onClicked: {
