@@ -28,17 +28,7 @@ Item {
     property string text
     property bool displayed: text != "" ? true : false
     property string answer
-
-    // The backspace code comming from the virtual keyboard
-    property string backspaceCode
     property string userEntry
-
-    property string questionMark: qsTr('?')
-
-    function init() {
-        forceActiveFocus()
-        userEntry = questionMark
-    }
 
     Rectangle {
         id: questionBg
@@ -74,46 +64,8 @@ Item {
 
     }
 
-    Keys.onPressed: {
-        if(event.key === Qt.Key_Backspace) {
-            backspace()
-        } else {
-            appendText(event.text)
-        }
-    }
-
-    function backspace() {
-        userEntry = userEntry.slice(0, -1)
-        if(userEntry.length === 0) {
-            userEntry = questionMark
-            return
-        } else {
-            return
-        }
-    }
-
-    function appendText(text) {
-        if(text === question.backspaceCode) {
-            backspace()
-            return
-        }
-
-        var number = parseInt(text)
-        if(isNaN(number)) {
-            return
-        }
-
-        if(userEntry === questionMark) {
-            userEntry = ""
-        }
-
-        if(userEntry.length >= question.answer.length + 1) {
-            return
-        }
-
-        userEntry += text
+    onUserEntryChanged: {
         if(userEntry === question.answer)
             bonus.good("flower")
     }
-
 }

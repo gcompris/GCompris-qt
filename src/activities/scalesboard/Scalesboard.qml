@@ -66,6 +66,7 @@ ActivityBase {
             property alias masseCenterModel: masseAreaCenter.masseModel
             property alias masseRightModel: masseAreaRight.masseModel
             property alias question: question
+            property alias numpad: numpad
         }
 
         onStart: { Activity.start(items) }
@@ -263,9 +264,23 @@ ActivityBase {
 
             numberOfSubLevels: items.numberOfSubLevels
             currentSubLevel: items.currentSubLevel
+            opacity: question.displayed ? 0 : 1
         }
 
+        NumPad {
+            id: numpad
+            onAnswerChanged: question.userEntry = answer
+            maxDigit: ('' + items.giftWeight).length + 1
+            opacity: question.displayed ? 1 : 0
+        }
 
+        Keys.onPressed: {
+            numpad.updateAnswer(event.key, true);
+        }
+
+        Keys.onReleased: {
+            numpad.updateAnswer(event.key, false);
+        }
 
         Bonus {
             id: bonus

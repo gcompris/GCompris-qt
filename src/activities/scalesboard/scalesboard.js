@@ -53,7 +53,7 @@ function displayLevel()
 {
 
     initCompleted = false
-    items.question.init()
+    items.numpad.answer = ""
     items.masseAreaLeft.init()
     items.masseAreaRight.init()
     items.masseAreaCenter.init()
