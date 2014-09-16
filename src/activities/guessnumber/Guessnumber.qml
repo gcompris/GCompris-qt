@@ -54,7 +54,8 @@ ActivityBase {
             property alias helico: helico
             property alias textArea: textArea
             property alias infoText: userInfo
-            property alias answerArea: answer
+            property alias answerArea: answerArea
+            property alias numpad: numpad
         }
 
         onStart: { Activity.start(items) }
@@ -70,7 +71,7 @@ ActivityBase {
             anchors.topMargin: 10
             anchors.left: parent.left
             horizontalAlignment: Text.AlignHCenter
-            width: parent.width - answer.width - 10
+            width: parent.width - answerArea.width - 10
             wrapMode: TextEdit.WordWrap
             color: "white"
             font.bold: true
@@ -78,9 +79,9 @@ ActivityBase {
         }
 
         AnswerArea {
-            id: answer
+            id: answerArea
             anchors.right: parent.right
-            anchors.rightMargin: 10
+            anchors.rightMargin: numpad.columnWidth + 10
             anchors.top: parent.top
             anchors.topMargin: 10
         }
@@ -93,6 +94,21 @@ ActivityBase {
             color: "white"
             font.bold: true
             font.pointSize: 16
+        }
+
+        NumPad {
+            id: numpad
+            onAnswerChanged: answerArea.userEntry = answer
+            maxDigit: 2
+            columnWidth: 60
+        }
+
+        Keys.onPressed: {
+            numpad.updateAnswer(event.key, true);
+        }
+
+        Keys.onReleased: {
+            numpad.updateAnswer(event.key, false);
         }
 
         DialogHelp {

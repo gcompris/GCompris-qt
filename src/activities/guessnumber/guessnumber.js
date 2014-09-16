@@ -42,6 +42,7 @@ function initLevel() {
     items.helico.init()
     items.helico.state = "horizontal"
     items.infoText.text = ""
+    items.numpad.resetText()
     switch(currentLevel) {
     case 0: currentMax = 20
             numberToGuess = getRandomInt(1,currentMax)
@@ -57,7 +58,6 @@ function initLevel() {
             break;
     }
     items.textArea.text = qsTr("Guess a number between 1 and %1").arg(currentMax);
-    items.answerArea.forceActiveFocus()
 }
 
 function nextLevel() {

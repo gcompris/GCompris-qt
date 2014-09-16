@@ -35,8 +35,7 @@ Rectangle {
         color: "black"
     }
 
-    // The backspace code comming from the vitual keyboard
-    property string backspaceCode
+    property string userEntry
 
     // A top gradient
     Rectangle {
@@ -50,62 +49,20 @@ Rectangle {
         }
     }
 
-    MouseArea {
-        id: mouseArea
-        anchors.fill: parent
-        onClicked: parent.forceActiveFocus()
-
-    }
-
-    Keys.onPressed: {
-        if(event.key === Qt.Key_Backspace) {
-            backspace()
-        }
-        appendText(event.text)
-    }
-
-    function backspace() {
-        userEntry.text = userEntry.text.slice(0, -1)
-        if(userEntry.text.length === 0) {
-            userEntry.text = "?"
-            return
-        } else {
-            //Activity.setUserAnswer(parseInt(userEntry.text))
-            return
-        }
-    }
-
-    function appendText(text) {
-        if(text === answerBackground.backspaceCode) {
-            backspace()
-            return
-        }
-
-        var number = parseInt(text)
-        if(isNaN(number))
-            return
-
-        if(userEntry.text === "?") {
-            userEntry.text = ""
-        }
-
-        if(userEntry.text.length >= 2) {
-            return
-        }
-
-        userEntry.text += text
-        Activity.setUserAnswer(parseInt(userEntry.text))
-    }
-
     GCText {
-        id: userEntry
+        id: userEntryText
         anchors.fill: parent
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        text: "?"
+        text: answerBackground.userEntry
         color: "black"
         font.pointSize: 28
         style: Text.Outline
         styleColor: "white"
+    }
+
+    onUserEntryChanged: {
+        if(userEntry != "")
+            Activity.setUserAnswer(parseInt(userEntry))
     }
 }
