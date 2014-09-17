@@ -141,21 +141,37 @@ Rectangle {
                             }
                         }
 
-                        ComboBox {
-                            id: languageBox
-                            style: GCComboBoxStyle {}
-                            model: languages
-                            width: 200 * ApplicationInfo.ratio
+                        Row {
+                            spacing: 5
+                            ComboBox {
+                                id: languageBox
+                                style: GCComboBoxStyle {}
+                                model: languages
+                                width: 200 * ApplicationInfo.ratio
 
-                            onCurrentIndexChanged: voicesRow.localeChanged();
+                                onCurrentIndexChanged: voicesRow.localeChanged();
+                            }
+                            GCText {
+                                text: qsTr("Language selector")
+                                font.pointSize: 16
+                                wrapMode: Text.WordWrap
+                            }
                         }
 
+                        Row {
+                            spacing: 5
 
-                        ComboBox {
-                            id: fontBox
-                            style: GCComboBoxStyle {}
-                            model: fonts
-                            width: 200 * ApplicationInfo.ratio
+                            ComboBox {
+                                id: fontBox
+                                style: GCComboBoxStyle {}
+                                model: fonts
+                                width: 200 * ApplicationInfo.ratio
+                            }
+                            GCText {
+                                text: qsTr("Font selector")
+                                font.pointSize: 16
+                                wrapMode: Text.WordWrap
+                            }
                         }
 
                         Row {
