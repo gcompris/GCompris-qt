@@ -220,6 +220,11 @@ ActivityBase {
             source: imageFrame
         }
             
+        DialogHelp {
+            id: dialogHelp
+            onClose: home()
+        }
+
         Bar {
             id: bar
                         

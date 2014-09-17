@@ -23,6 +23,7 @@
 .pragma library
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel = 0;
 var currentSubLevel = 0;
@@ -98,9 +99,11 @@ function initLevel() {
     // initialize sublevel
     items.score.currentSubLevel = currentSubLevel + 1;
     items.wordListModel.clear();
-    items.wordListModel.append( {"word": qsTr(dataset[currentSubLevel].good)} );
-    for (var i = 0; i < dataset[currentSubLevel].bad.length; i++)
-        items.wordListModel.append( {"word": qsTr(dataset[currentSubLevel].bad[i])} );
+    // shuffle the words in the list so it is not always the first word to be the good one
+    var allWords = dataset[currentSubLevel].bad.slice().concat(dataset[currentSubLevel].good);
+    Core.shuffle(allWords);
+    for (var i = 0; i < allWords.length; i++)
+        items.wordListModel.append( {"word": allWords[i] } );
     items.wordImage.source = baseUrl + "/" + dataset[currentSubLevel].image;
 }
 
