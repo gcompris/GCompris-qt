@@ -67,18 +67,18 @@ ActivityBase {
         GridView {
             id: container
             model: containerModel
-            x: main.width * 0.2
-            y: main.height * 0.2
-            width: main.width * 0.7
-            height: main.height * 0.6
+            x: background.width * 0.2
+            y: background.height * 0.2
+            width: background.width * 0.7
+            height: background.height * 0.6
             interactive: false
             cellWidth: itemHeight + 10
             cellHeight: itemWidth + 10
             delegate: ColorItem {
                 audioVoices: activity.audioVoices
-                source: image
-                audioSrc: audio
-                question: text
+                source: model.image
+                audioSrc: model.audio
+                question: model.text
                 sourceSize.height: itemHeight
                 sourceSize.width: itemWidth
             }
