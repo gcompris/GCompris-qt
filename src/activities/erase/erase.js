@@ -103,7 +103,7 @@ var killedBlocks
 
 var nbLevel = 6
 var nbSubLevel = 8
-var imgIndex = 0
+var imgIndex
 
 function start(main_, items_, type_) {
     main = main_
@@ -112,6 +112,7 @@ function start(main_, items_, type_) {
     currentLevel = 0
     currentSubLevel = 0
     currentImage = 0
+    imgIndex = 0
     initLevel()
 }
 
