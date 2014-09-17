@@ -37,7 +37,7 @@ var texts = [
             [qsTr("fifteen"), 15],
             [qsTr("sixteen"), 16],
             [qsTr("seventeen"), 17],
-            [qsTr("heighteen"), 18],
+            [qsTr("eighteen"), 18],
             [qsTr("nineteen"), 19],
             [qsTr("twenty"), 20]
         ]
