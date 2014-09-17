@@ -34,4 +34,8 @@ ButtonStyle {
             GradientStop { position: 1 ; color: control.pressed ? "#44ff00" : "#f8d600" }
         }
     }
+    label: GCText {
+        text: control.text
+        wrapMode: Text.WordWrap
+    }
 }

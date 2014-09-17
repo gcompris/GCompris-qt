@@ -35,4 +35,13 @@ ComboBoxStyle {
             GradientStop { position: 1 ; color: control.pressed ? "#44ff00" : "#f8d600" }
         }
     }
+    label: Item {
+        anchors.fill: parent
+        GCText {
+            text: control.currentText
+            wrapMode: Text.WordWrap
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.horizontalCenter: parent.horizontalCenter
+        }
+    }
 }
