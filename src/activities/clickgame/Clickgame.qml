@@ -33,11 +33,6 @@ ActivityBase {
     onStart: {}
     onStop: {}
 
-    Timer {
-        interval: 5000; running: true; repeat: true
-        onTriggered: activity.audioEffects.play("qrc:/gcompris/src/activities/clickgame/resource/bubble.wav")
-    }
-
     pageComponent: Image {
         id: background
         signal start
@@ -52,7 +47,16 @@ ActivityBase {
             activity.stop.connect(stop)
         }
         onStart: { Activity.start(activity, background, bar, bonus) }
-        onStop: { Activity.stop() }
+        onStop: {
+            Activity.stop()
+            timer.stop()
+        }
+
+        Timer {
+            id: timer
+            interval: 5000; running: true; repeat: true
+            onTriggered: activity.audioEffects.play("qrc:/gcompris/src/activities/clickgame/resource/bubble.wav")
+        }
 
         DialogHelp {
             id: dialogHelpLeftRight
