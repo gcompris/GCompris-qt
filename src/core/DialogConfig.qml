@@ -57,7 +57,7 @@ Rectangle {
             Rectangle {
                 color: "#e6e6e6"
                 radius: 6.0
-                width: parent.width
+                width: dialogConfig.width - 30
                 height: title.height * 1.2
                 border.color: "black"
                 border.width: 2
