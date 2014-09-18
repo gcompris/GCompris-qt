@@ -52,7 +52,7 @@
 #include <QDebug>
 
 #define GC_DEFAULT_LOCALE "en_US.UTF-8"
-#define GC_DEFAULT_FONT "Sans Serif"
+#define GC_DEFAULT_FONT "Andika-R.ttf"
 
 static const QString GENERAL_GROUP_KEY = "General";
 static const QString ADMIN_GROUP_KEY = "Admin";
@@ -64,6 +64,7 @@ static const QString ENABLE_AUDIO_EFFECTS_KEY = "enableAudioEffects";
 static const QString VIRTUALKEYBOARD_KEY = "virtualKeyboard";
 static const QString LOCALE_KEY = "locale";
 static const QString FONT_KEY = "font";
+static const QString IS_CURRENT_FONT_EMBEDDED = "isCurrentFontEmbedded";
 static const QString ENABLE_AUTOMATIC_DOWNLOADS = "enableAutomaticDownloads";
 
 static const QString DOWNLOAD_SERVER_URL_KEY = "downloadServerUrl";
@@ -91,6 +92,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_locale = m_config.value(LOCALE_KEY,
             QLocale::system() == QLocale::c() ? GC_DEFAULT_LOCALE : QString(QLocale::system().name() + ".UTF-8")).toString();
     m_font = m_config.value(FONT_KEY, GC_DEFAULT_FONT).toString();
+    m_isEmbeddedFont = m_config.value(IS_CURRENT_FONT_EMBEDDED, true).toBool();
 
     m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
             !ApplicationInfo::getInstance()->isMobile()).toBool();
@@ -130,6 +132,7 @@ ApplicationSettings::~ApplicationSettings()
 	m_config.setValue(ENABLE_AUDIO_VOICES_KEY, m_isAudioVoicesEnabled);
     m_config.setValue(LOCALE_KEY, m_locale);
     m_config.setValue(FONT_KEY, m_font);
+    m_config.setValue(IS_CURRENT_FONT_EMBEDDED, m_isEmbeddedFont);
     m_config.setValue(FULLSCREEN_KEY, m_isFullscreen);
     m_config.setValue(VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
     m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
@@ -174,6 +177,12 @@ void ApplicationSettings::notifyFontChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, FONT_KEY, m_font);
     qDebug() << "new font: " << m_font;
+}
+
+void ApplicationSettings::notifyEmbeddedFontChanged()
+{
+    updateValueInConfig(GENERAL_GROUP_KEY, IS_CURRENT_FONT_EMBEDDED, m_isEmbeddedFont);
+    qDebug() << "new font is embedded: " << m_isEmbeddedFont;
 }
 
 void ApplicationSettings::notifyFullscreenChanged()

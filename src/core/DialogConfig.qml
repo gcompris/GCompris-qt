@@ -186,7 +186,7 @@ Rectangle {
                                 var language = languages.get(languageBox.currentIndex).text;
                                 voicesText.text = language + " " + qsTr("sounds");
                                 voicesRow.haveLocalResource = DownloadManager.haveLocalResource(
-                                            DownloadManager.getVoicesResourceForLocale(localeShort));
+                                        DownloadManager.getVoicesResourceForLocale(localeShort));
                             }
 
                             Connections {
@@ -211,7 +211,7 @@ Rectangle {
                                 id: voicesImage
                                 sourceSize.height: 30 * ApplicationInfo.ratio
                                 source: voicesRow.haveLocalResource ? "qrc:/gcompris/src/core/resource/apply.svgz" :
-                                                                      "qrc:/gcompris/src/core/resource/cancel.svgz"
+                                    "qrc:/gcompris/src/core/resource/cancel.svgz"
                             }
 
                             Button {
@@ -219,13 +219,13 @@ Rectangle {
                                 height: parent.height * ApplicationInfo.ratio
                                 anchors.verticalCenter: parent.verticalCenter
                                 text: voicesRow.haveLocalResource ? qsTr("Check for updates") :
-                                                                    qsTr("Download")
+                                    qsTr("Download")
                                 style: GCButtonStyle {}
 
                                 onClicked: {
                                     if (DownloadManager.downloadResource(
-                                                DownloadManager.getVoicesResourceForLocale(
-                                                    languages.get(languageBox.currentIndex).locale.substr(0, 2))))
+                                        DownloadManager.getVoicesResourceForLocale(
+                                                languages.get(languageBox.currentIndex).locale.substr(0, 2))))
                                     {
                                         var downloadDialog = Core.showDownloadDialog(dialogConfig, {});
                                     }
@@ -446,12 +446,13 @@ Rectangle {
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
 
+        ApplicationSettings.isEmbeddedFont = fonts.get(fontBox.currentIndex).isLocalResource;
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
 
         if (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale) {
             ApplicationSettings.locale = languages.get(languageBox.currentIndex).locale
             if (!DownloadManager.haveLocalResource(
-                        DownloadManager.getVoicesResourceForLocale(
+                    DownloadManager.getVoicesResourceForLocale(
                             ApplicationInfo.localeShort)))
             {
                 // ask for downloading new voices
@@ -461,16 +462,16 @@ Rectangle {
                 buttonHandler[StandardButton.Yes] = function() {
                     // yes -> start download
                     if (DownloadManager.downloadResource(
-                                DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort)))
+                            DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort)))
                         var downloadDialog = Core.showDownloadDialog(main, {});
                 };
                 dialog = Core.showMessageDialog(dialogConfig,
-                                                qsTr("You selected a new locale"),
-                                                qsTr("Do you want to download the corresponding sound files now?"),
-                                                "",
-                                                StandardIcon.Question,
-                                                buttonHandler
-                                                );
+                        qsTr("You selected a new locale"),
+                        qsTr("Do you want to download the corresponding sound files now?"),
+                        "",
+                        StandardIcon.Question,
+                        buttonHandler
+                );
             } else // check for udpates or/and register new voices
                 DownloadManager.updateResource(DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort))
         }
@@ -525,18 +526,23 @@ Rectangle {
                         isExcluded = true;
                         break;
                     }
+                    // TODO Remove all *symbol* and *ding*
                 }
 
                 if(!isExcluded) {
                     fonts.append({ "text": systemFonts[i], "isLocalResource": false });
                 }
             }
+            // Append fonts from resources
+            fonts.append({ "text": "Andika-R.ttf", "isLocalResource": true });
+            fonts.append({ "text": "OpenDyslexic-Regular.otf", "isLocalResource": true });
         }
     }
 
     function hasConfigChanged() {
         return (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale ||
                 (ApplicationSettings.font != fonts.get(fontBox.currentIndex).text) ||
+                (ApplicationSettings.isEmbeddedFont != fonts.get(fontBox.currentIndex).isLocalResource) ||
                 (ApplicationSettings.isAudioVoicesEnabled != isAudioVoicesEnabled) ||
                 (ApplicationSettings.isAudioEffectsEnabled != isAudioEffectsEnabled) ||
                 (ApplicationSettings.isFullscreen != isFullscreen) ||

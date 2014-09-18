@@ -35,7 +35,7 @@ Window {
     title: "GCompris"
 
     onClosing: Core.quit()
-        
+
     GCAudio {
         id: audioVoices
         source: "qrc:/gcompris/src/core/resource/intro.ogg"
