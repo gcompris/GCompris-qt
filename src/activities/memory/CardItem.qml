@@ -129,7 +129,6 @@ Item {
         id:text1
         anchors.centerIn: parent
         visible : rotAngle > Math.PI/2 ? true : false
-        font.family: "Helvetica"
         font.pointSize: 24
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter

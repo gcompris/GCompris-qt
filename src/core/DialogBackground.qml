@@ -59,7 +59,6 @@ Rectangle {
                     width: dialogBackground.width - 30
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
-                    font.family: "Helvetica"
                     color: "black"
                     font.pointSize: 24
                     font.weight: Font.DemiBold

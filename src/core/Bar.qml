@@ -91,7 +91,6 @@ Item {
         GCText {
             id: levelTextId
             text: "" + level
-            font.family: "Helvetica"
             font.pointSize: 32
             font.weight: Font.DemiBold
             style: Text.Outline
