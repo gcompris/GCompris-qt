@@ -38,14 +38,17 @@ Window {
 
     GCAudio {
         id: audioVoices
-        source: "qrc:/gcompris/src/core/resource/intro.ogg"
         muted: !ApplicationSettings.isAudioVoicesEnabled
-        autoPlay: false
+        autoPlay: true
+
+        Component.onCompleted: {
+            append("qrc:/gcompris/src/core/resource/intro.ogg")
+            append(ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/welcome.ogg"))
+        }
     }
 
     GCAudio {
         id: audioEffects
-        source: "qrc:/gcompris/src/core/resource/intro.ogg"
         muted: !ApplicationSettings.isAudioEffectsEnabled
         autoPlay: false
     }
