@@ -8,6 +8,7 @@ ActivityInfo {
   demo: false
   title: qsTr("algorithm")
   description: qsTr("Complete a list of symbols")
+//  intro: "Click on the missing items on the table and follow the logical chain displayed above."
   goal: qsTr("Logic training activity")
   prerequisite: qsTr("Move and click the mouse")
   manual: qsTr("Find the next symbol in a list.")

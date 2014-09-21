@@ -8,6 +8,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Rebuild the mosaic")
   description: qsTr("Rebuild the mosaic")
+//  intro: "Click on the correct colors to build the same mosaic."
   goal: ""
   prerequisite: ""
   manual: qsTr("Rebuild the same mosaic on the right area")

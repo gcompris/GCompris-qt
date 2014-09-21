@@ -14,6 +14,7 @@ ActivityInfo {
   demo: false
   title: qsTr("Gnumch Multiples")
   description: qsTr("Guide the Number Muncher to all the multiples of the number at the top of the screen.")
+//  intro: "Guide the number eater with the arrow keys to the multiples of the displayed number and press space to swallow them."
   goal: qsTr("Learn about multiples and factors.")
   prerequisite: qsTr("")
   manual: genManual()

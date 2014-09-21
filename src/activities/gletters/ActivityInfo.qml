@@ -8,6 +8,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Simple Letters")
   description: qsTr("Type the falling letters before they reach the ground")
+//  intro: "Type the letters on your keyboard before they reach the ground."
   goal: qsTr("Letter association between the screen and the keyboard")
   prerequisite: qsTr("Keyboard manipulation")
   manual: qsTr("Type the falling letters before they reach the ground")

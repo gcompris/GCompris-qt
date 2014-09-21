@@ -8,6 +8,7 @@ ActivityInfo {
   demo: false
   title: qsTr("Subtraction memory game")
   description: qsTr("Turn the cards over to find two numbers which add or subtract the same, until all the cards are gone.")
+//  intro: "Turn over two cards to match the calculation with its answer."
   goal: qsTr("Practise substraction, until all the cards are gone.")
   prerequisite: qsTr("Substraction")
   manual: qsTr("You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.

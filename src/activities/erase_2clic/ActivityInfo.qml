@@ -8,6 +8,7 @@ ActivityInfo {
   demo: false
   title: qsTr("Double click the mouse")
   description: qsTr("Double click the mouse to erase the area and discover the background")
+//  intro: "Double click on the bricks to discover the hidden picture"
   goal: qsTr("Motor-coordination")
   prerequisite: qsTr("Mouse-manipulation")
   manual: qsTr("Double click the mouse on rectangles until all the blocks disappear.")

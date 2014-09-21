@@ -27,6 +27,7 @@ ActivityInfo {
     demo: false
     title: qsTr("Even and Odd Numbers")
     description: qsTr("Move the helicopter to catch the clouds having even or odd numbers")
+//  intro: "Move the helicopter to catch the clouds having even or odd numbers"
     goal: qsTr("Numeration training")
     prerequisite: qsTr("Number")
     manual: qsTr("Catch the odd or even numbers, using the up, down, right and left arrows on the keyboard to move the helicopter.")

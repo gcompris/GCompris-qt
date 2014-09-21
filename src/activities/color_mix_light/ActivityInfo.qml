@@ -8,6 +8,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Mixing colors of light")
   description: qsTr("Understanding mixing of colors of light.")
+//  intro: "Match the colour by moving the sliders on the torches"
   goal: qsTr("Mix the primary colors to match to the given color.")
   prerequisite: ""
   manual: qsTr("

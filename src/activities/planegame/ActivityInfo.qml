@@ -28,6 +28,7 @@ ActivityInfo {
     demo: false
     title: qsTr("Numbers in Order")
     description: qsTr("Move the helicopter to catch the clouds in the correct order")
+//  intro: "Move the helicopter with the arrow keys and catch the number in the clouds in numerical order."
     goal: qsTr("Numeration training")
     prerequisite: qsTr("Number")
     manual: qsTr("Catch the numbers in increasing order, using the up, down, right and left arrows on the keyboard to move the helicopter.")

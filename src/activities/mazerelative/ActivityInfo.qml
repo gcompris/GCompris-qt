@@ -8,6 +8,7 @@ ActivityInfo {
   demo: false
   title: qsTr("Relative Maze")
   description: qsTr("Find your way out of the maze (Move is relative)")
+//  intro: "Help Tux find his way out. Use the Up arrow to go forwards, the other arrows to turn."
   goal: qsTr("Help Tux get out of this maze.")
   prerequisite: qsTr("Can use the keyboard arrow to move an object.")
   manual: qsTr("Use the keyboard arrows to move Tux up to the door. In this maze, the move is relative (first person). Use the up arrow to go forward. The other arrows let you turn Tux in another direction.

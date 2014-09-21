@@ -8,6 +8,7 @@ ActivityInfo {
   demo: false
   title: qsTr("Numbers with pairs of dice")
   description: qsTr("Count the number of dots on dice before they reach the ground")
+//  intro: "Count the number of the points on the dice then type the result on your keyboard."
   goal: qsTr("In a limited time, count the number of dots")
   prerequisite: qsTr("Counting skills")
   manual: qsTr("With the keyboard, type the number of dots you see on the falling dice.")

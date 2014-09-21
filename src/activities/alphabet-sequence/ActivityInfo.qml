@@ -27,6 +27,7 @@ ActivityInfo {
     demo: false
     title: qsTr("Alphabet sequence")
     description: qsTr("Move the helicopter to catch the clouds following the order of the alphabet")
+//    intro: "Move the helicopter to catch the clouds following the order of the alphabet."
     goal: qsTr("Alphabet training")
     prerequisite: qsTr("Can decode letters")
     manual: qsTr("Catch the alphabet letters, using the up, down, right and left arrows on the keyboard to move the helicopter.")

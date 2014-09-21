@@ -8,6 +8,7 @@ ActivityInfo {
   demo: false
   title: qsTr("Penalty kick")
   description: qsTr("Double click the mouse on the ball to score a goal.")
+//  intro: "Double click on the ball to shoot it."
   goal: ""
   prerequisite: ""
   manual: qsTr("Double click the mouse on the ball to kick it. " +

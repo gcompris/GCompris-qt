@@ -9,6 +9,7 @@ ActivityInfo
   demo: false
   title: qsTr("Missing Letter")
   description: ""
+//  intro: "Find the missing letter and complete the word by clicking on one of the letters proposed on the side."
   goal: qsTr("Training reading skills")
   prerequisite: qsTr("Word reading")
   manual: qsTr("An object is displayed in the main area, and an incomplete word is printed under the picture. Select the missing letter to complete the word.")

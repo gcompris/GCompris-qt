@@ -8,6 +8,7 @@ ActivityInfo {
   demo: false
   title: qsTr("Practice the subtraction operation")
   description: qsTr("Answer some algebra questions")
+//  intro: "Subtract the two numbers and type in your answer before the balloon lands in the water"
   goal: qsTr("In a limited time, find the difference between two numbers")
   prerequisite: qsTr("Simple subtraction")
   manual: qsTr("A subtraction problem with two numbers is displayed. At the right of the equals sign, give the answer, the difference. Use the left and right arrows to modify your answer and press the Enter key to check if you've got it right. If not, just try again.")

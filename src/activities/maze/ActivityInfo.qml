@@ -8,6 +8,7 @@ ActivityInfo {
   demo: false
   title: qsTr("Maze")
   description: qsTr("Find your way out of the maze")
+//  intro: "Use the arrows on your keyboard to find your way out."
   goal: qsTr("Help Tux get out of this maze.")
   prerequisite: qsTr("Can use the keyboard arrow to move an object.")
   manual: qsTr("Use the keyboard arrows to move Tux up to the door.

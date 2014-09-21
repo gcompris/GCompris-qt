@@ -8,6 +8,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Advanced colors")
   description: qsTr("Click on the correct color")
+//  intro: "Click on the required colour"
   goal: qsTr("Learn to recognize unusual colors.")
   prerequisite: qsTr("Can read")
   manual: qsTr("Click on the correct colored butterfly.")

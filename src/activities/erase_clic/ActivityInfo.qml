@@ -8,6 +8,7 @@ ActivityInfo {
   demo: false
   title: qsTr("Click the mouse")
   description: qsTr("Click the mouse to erase the area and discover the background")
+//  intro: " Click on the transparent bricks and discover the hidden picture."
   goal: qsTr("Motor-coordination")
   prerequisite: qsTr("Mouse-manipulation")
   manual: qsTr("Click the mouse on rectangles until all the blocks disappear.")

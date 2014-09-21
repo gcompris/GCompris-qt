@@ -8,6 +8,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Music instruments")
   description: qsTr("Click on the correct musical instruments")
+//  intro: "Click on the correct musical instrument."
   goal: qsTr("Learn to recognize musical instruments.")
   prerequisite: ""
   manual: qsTr("Click on the correct instrument.")
