@@ -11,6 +11,6 @@ ActivityInfo {
   goal: qsTr("Motor-coordination")
   prerequisite: qsTr("Mouse-manipulation")
   manual: qsTr("Move the mouse until all the blocks disappear. You can add you own images under the directory '~/My GCompris/erase'.")
-  credit: qsTr("Animal pictures are taken from the Animal Photography Page of Ralf Schmode (&lt;http://schmode.net/&gt;) and from LE BERRE Daniel. These people kindly gave GCompris the authorization to include their pictures. Thanks a lot, both of you.")
+  credit: ""
   section: "/computer/mouse"
 }
