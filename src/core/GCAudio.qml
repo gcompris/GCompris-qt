@@ -53,13 +53,16 @@ Item {
     }
 
     function append(file) {
-        if(audio.playbackState == Audio.StoppedState) {
+        if(audio.playbackState !== Audio.PlayingState
+           || audio.status === Audio.EndOfMedia
+           || audio.status === Audio.InvalidMedia) {
+            // Setting the source to "" on Linux fix a case where the sound is no more played
+            source = ""
             source = file
             play()
         } else {
             files.push(file)
         }
-
     }
 
     // Add the given duration in ms before the play of the next file
@@ -72,15 +75,17 @@ Item {
         if(nextFile) {
             audio.source = nextFile
             audio.play()
-        } else
+        } else {
             gcaudio.done()
+        }
     }
 
     Audio {
         id: audio
         autoPlay: gcaudio.autoPlay && !gcaudio.muted
         onError: {
-            console.log("error while playing: " + source + ": " + errorString)
+            // This file cannot be played, remove it from the source asap
+            source = ""
             if(files.length)
                 _playNextFile()
             else
