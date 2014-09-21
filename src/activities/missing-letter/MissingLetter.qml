@@ -59,6 +59,7 @@ ActivityBase
             property alias questionText: questionText
             property alias answers: answers
             property alias currentQuestionNumberText : currentQuestionNumberText
+            property GCAudio audioVoices: activity.audioVoices
         }
 
         onStart: { Activity.start(items) }
@@ -87,7 +88,10 @@ ActivityBase
                     textLabel: modelData
                     isCorrectAnswer: modelData === Activity.getCorrectAnswer()
                     onCorrectlyPressed: Activity.answerPressed(modelData)
-                    onPressed: if(modelData === Activity.getCorrectAnswer()) Activity.showAnswer()
+                    onPressed: {
+                        Activity.playLetter(modelData)
+                        if(modelData === Activity.getCorrectAnswer()) Activity.showAnswer()
+                    }
                 }
             }
         }

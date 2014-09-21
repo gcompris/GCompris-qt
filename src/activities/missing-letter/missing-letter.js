@@ -22,6 +22,7 @@
 .pragma library
 .import QtQuick 2.0 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
+.import GCompris 1.0 as GCompris //for ApplicationInfo
 
 var url = "qrc:/gcompris/src/activities/missing-letter/resource/"
 
@@ -249,4 +250,9 @@ function createLastLevel()
 
     questions.push(lastData)
 
+}
+
+function playLetter(letter) {
+    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
+                                                                       + Core.getSoundFilenamForChar(letter)))
 }
