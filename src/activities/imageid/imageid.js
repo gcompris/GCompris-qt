@@ -69,17 +69,9 @@ function validateDataset(levels)
     return true;
 }
 
-function checkWord(index)
+function getCorrectAnswer()
 {
-    var modelEntry = items.wordListModel.get(index);
-    if (modelEntry.word == dataset[currentSubLevel].good) {
-        items.bonus.good("smiley");
-        return true
-    } else {
-        items.bonus.bad("smiley");
-        return false
-    }
-
+    return dataset[currentSubLevel].good;
 }
 
 function initLevel() {

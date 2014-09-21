@@ -111,69 +111,15 @@ ActivityBase {
         
                 model: wordListModel
     
-                delegate: Rectangle {
+                delegate: AnswerButton {
                     id: wordRectangle
-                    border.color: "#181c1e"
-                    radius: 5
-    
-                    gradient: Gradient {
-                        GradientStop { position: 0.0; color: "#fefefe" }
-                        GradientStop { position: 0.5; color: "#696da3" }
-                    }
-    
+
                     width: wordListView.width * 0.8
                     height: wordListView.buttonHeight
-                    
-                    GCText {
-                        id: wordText
-                        anchors.fill: parent
-                        anchors.margins: 5
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        horizontalAlignment: Text.AlignHCenter
-                        
-                        text: word
-                        
-                        font.pixelSize: parent.height * 0.55
-                        font.bold: true
-                        style: Text.Outline
-                        styleColor: "black"
-                        color: "white"
-                    }
-                    
-                    MouseArea {
-                        id: mouseArea
-                        anchors.fill: parent
-                        hoverEnabled: true
-                        onClicked: Activity.checkWord(index);
-                    }
-    
-                    states: [
-                        State {
-                            name: "notclicked"
-                            PropertyChanges {
-                                target: wordRectangle
-                                scale: 1.0
-                            }
-                        },
-                        State {
-                            name: "clicked"
-                            when: mouseArea.pressed
-                            PropertyChanges {
-                                target: wordRectangle
-                                scale: 0.95
-                            }
-                        },
-                        State {
-                            name: "hover"
-                            when: mouseArea.containsMouse
-                            PropertyChanges {
-                                target: wordRectangle
-                                scale: 1.05
-                            }
-                        }
-                    ]
-    
-                    Behavior on scale { NumberAnimation { duration: 70 } }
+
+                    textLabel: word
+                    isCorrectAnswer: word === Activity.getCorrectAnswer()
+                    onCorrectlyPressed: bonus.good("smiley");
                 }
             }
         }
@@ -227,7 +173,7 @@ ActivityBase {
 
         Bar {
             id: bar
-                        
+
             content: BarEnumContent { value: help | home | previous | next }
             onHelpClicked: {
                 displayDialog(dialogHelp)
