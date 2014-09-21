@@ -20,6 +20,7 @@
  */
 
 import QtQuick 2.1
+import QtGraphicalEffects 1.0
 import GCompris 1.0
 
 import "../../core"
@@ -77,7 +78,7 @@ ActivityBase {
             delegate: ColorItem {
                 audioVoices: activity.audioVoices
                 source: model.image
-                audioSrc: model.audio
+                audioSrc: model.audio ? model.audio : ""
                 question: model.text
                 sourceSize.height: itemHeight
                 sourceSize.width: itemWidth
@@ -92,8 +93,8 @@ ActivityBase {
             font.pointSize: 24
             font.weight: Font.DemiBold
             style: Text.Outline
-            styleColor: "white"
-            color: "black"
+            styleColor: "black"
+            color: "white"
 
             function initQuestion() {
                 text = Activity.getCurrentTextQuestion()
@@ -106,6 +107,18 @@ ActivityBase {
             onOpacityChanged: opacity == 0 ? initQuestion() : ""
             Behavior on opacity { PropertyAnimation { duration: 500 } }
         }
+
+        DropShadow {
+            anchors.fill: questionItem
+            cached: true
+            horizontalOffset: 3
+            verticalOffset: 3
+            radius: 8.0
+            samples: 16
+            color: "#80000000"
+            source: questionItem
+        }
+
 
         DialogHelp {
             id: dialogHelp
