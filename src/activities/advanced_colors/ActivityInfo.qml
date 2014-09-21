@@ -4,7 +4,7 @@ ActivityInfo {
   name: "advanced_colors/AdvancedColors.qml"
   difficulty: 6
   icon: "advanced_colors/advanced_colors.svg"
-  author: "Pascal Georges <pascal.georges1@free.fr>"
+  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: true
   title: qsTr("Advanced colors")
   description: qsTr("Click on the correct color")

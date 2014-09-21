@@ -4,7 +4,7 @@ ActivityInfo {
   name: "memory-math-minus-tux/MemoryMathMinusTux.qml"
   difficulty: 4
   icon: "memory-math-minus-tux/memory-math-minus-tux.svg"
-  author: "Yves Combe (yves@ycombe.net) ported by JB BUTET <ashashiwa@mgail.com>"
+  author: "JB BUTET <ashashiwa@mgail.com>"
   demo: false
   title: qsTr("Substraction memory game against Tux")
   description: qsTr("Turn the cards over to find two numbers which add or subtract the same, until all the cards are gone.")

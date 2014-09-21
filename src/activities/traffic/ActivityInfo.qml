@@ -4,7 +4,7 @@ ActivityInfo {
   name: "traffic/Traffic.qml"
   difficulty: 2
   icon: "traffic/traffic.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>, Qt Quick port by Holger Kaelberer <holger.k@elberer.de>"
+  author: "Holger Kaelberer <holger.k@elberer.de>"
   demo: true
   title: qsTr("A sliding-block puzzle game")
   description: qsTr("Remove the red car from the parking lot through the gate on the right")

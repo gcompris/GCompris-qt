@@ -4,7 +4,7 @@ ActivityInfo {
   name: "memory-sound-tux/MemorySoundTux.qml"
   difficulty: 2
   icon: "memory-sound-tux/memory-sound-tux.svg"
-  author: "Yves Combe <yves@ycombe.net>"
+  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: true
   title: qsTr("Audio memory game against Tux")
   description: qsTr("Play the audio memory game against Tux")

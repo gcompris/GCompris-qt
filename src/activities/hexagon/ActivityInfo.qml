@@ -4,7 +4,7 @@ ActivityInfo {
   name: "hexagon/Hexagon.qml"
   difficulty: 2
   icon: "hexagon/hexagon.svg"
-  author: "Christof Petig and Ingo Konrad"
+  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: true
   title: qsTr("hexagon")
   description: qsTr("Find the strawberry by clicking on the blue fields")
