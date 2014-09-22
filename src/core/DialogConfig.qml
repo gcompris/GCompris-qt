@@ -142,6 +142,22 @@ Rectangle {
 
                         Row {
                             spacing: 5
+
+                            ComboBox {
+                                id: fontBox
+                                style: GCComboBoxStyle {}
+                                model: fonts
+                                width: 200 * ApplicationInfo.ratio
+                            }
+                            GCText {
+                                text: qsTr("Font selector")
+                                font.pointSize: 16
+                                wrapMode: Text.WordWrap
+                            }
+                        }
+
+                        Row {
+                            spacing: 5
                             ComboBox {
                                 id: languageBox
                                 style: GCComboBoxStyle {}
@@ -152,22 +168,6 @@ Rectangle {
                             }
                             GCText {
                                 text: qsTr("Language selector")
-                                font.pointSize: 16
-                                wrapMode: Text.WordWrap
-                            }
-                        }
-
-                        Row {
-                            spacing: 5
-
-                            ComboBox {
-                                id: fontBox
-                                style: GCComboBoxStyle {}
-                                model: fonts
-                                width: 200 * ApplicationInfo.ratio
-                            }
-                            GCText {
-                                text: qsTr("Font selector")
                                 font.pointSize: 16
                                 wrapMode: Text.WordWrap
                             }
