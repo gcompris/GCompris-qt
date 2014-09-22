@@ -27,7 +27,7 @@ ActivityInfo {
   demo: false
   title: qsTr("Sudoku, place unique symbols in a square.")
   description: qsTr("Symbols must be unique in a row, in a column, and (if defined) each region.")
-  intro: "For the first levels, select a symbol and click its target area, for the following levels, type a number in each area. Eac//h symbol must appear only once in a row, in a column and in a subregion if any."
+//  intro: "For the first levels, select a symbol and click its target area, for the following levels, type a number in each area. Each symbol must appear only once in a row, in a column and in a subregion if any."
   goal: qsTr("The aim of the puzzle is to enter a symbol or numeral from 1 through 9 in each cell of a grid, most frequently a 9x9 grid made up of 3x3 subgrids (called 'regions'), starting with various symbols or numerals given in some cells (the 'givens'). Each row, column and region must contain only one instance of each symbol or numeral (Source &lt;http://en.wikipedia.org/wiki/Sudoku&gt;).")
   prerequisite: qsTr("Completing the puzzle requires patience and logical ability")
   manual: qsTr("For the first level with colored symbols, select a symbol on the left and click on its target position. For the higher levels, click on an empty square to give it the keyboard focus. Then enter a possible letter or number. GCompris will not let you enter invalid data.")
