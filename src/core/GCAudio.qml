@@ -74,9 +74,11 @@ Item {
     function _playNextFile() {
         var nextFile = files.shift()
         if(nextFile) {
+            audio.source = ""
             audio.source = nextFile
             audio.play()
         } else {
+            audio.source = ""
             gcaudio.done()
         }
     }
