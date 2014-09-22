@@ -91,11 +91,6 @@ var memory_cards = [
                 rows: 4,
                 sounds: memory_sounds
             },
-            { // Level 8
-                columns: 6,
-                rows: 6,
-                sounds: memory_sounds
-            }
         ]
 
 
