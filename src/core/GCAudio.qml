@@ -55,6 +55,7 @@ Item {
     function append(file) {
         if(audio.playbackState !== Audio.PlayingState
            || audio.status === Audio.EndOfMedia
+           || audio.status === Audio.NoMedia
            || audio.status === Audio.InvalidMedia) {
             // Setting the source to "" on Linux fix a case where the sound is no more played
             source = ""
