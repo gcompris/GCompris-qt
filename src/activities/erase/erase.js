@@ -85,9 +85,9 @@ var backgroundImages = [
 ]
 
 var blockImages = [
-    url + "transparent_square.svgz",
-    url + "transparent_square_yellow.svgz",
-    url + "transparent_square_green.svgz"
+    url + "transparent_square.svg",
+    url + "transparent_square_yellow.svg",
+    url + "transparent_square_green.svg"
 ]
 
 var currentLevel
