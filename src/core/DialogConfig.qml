@@ -519,13 +519,15 @@ Rectangle {
             var rccFonts = ApplicationInfo.getFontsFromRcc();
 
             // Remove explicitely all *symbol* and *ding* fonts
-            var excludedFonts = ApplicationInfo.getSystemExcludedFonts().concat("ding", "symbol");
+            var excludedFonts = ApplicationInfo.getSystemExcludedFonts();
+            excludedFonts.push("ding");
+            excludedFonts.push("symbol");
 
             for(var i = 0 ; i < systemFonts.length ; ++ i) {
                 var isExcluded = false;
                 // Remove symbol fonts
                 for(var j = 0 ; j < excludedFonts.length ; ++ j) {
-                    if(systemFonts[i] == excludedFonts[j]) {
+                    if(systemFonts[i].toLowerCase().indexOf(excludedFonts[j].toLowerCase()) != -1) {
                         isExcluded = true;
                         break;
                     }
