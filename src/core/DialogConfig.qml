@@ -516,26 +516,38 @@ Rectangle {
         id: fonts
         Component.onCompleted: {
             var systemFonts = Qt.fontFamilies();
-            var excludedFonts = ApplicationInfo.getSystemExcludedFonts();
+            var rccFonts = ApplicationInfo.getFontsFromRcc();
 
-            // Remove symbol fonts
+            // Remove explicitely all *symbol* and *ding* fonts
+            var excludedFonts = ApplicationInfo.getSystemExcludedFonts().concat("ding", "symbol");
+
             for(var i = 0 ; i < systemFonts.length ; ++ i) {
                 var isExcluded = false;
+                // Remove symbol fonts
                 for(var j = 0 ; j < excludedFonts.length ; ++ j) {
                     if(systemFonts[i] == excludedFonts[j]) {
                         isExcluded = true;
                         break;
                     }
-                    // TODO Remove all *symbol* and *ding*
                 }
 
+                // Remove fonts from rcc (if you have a default font from rcc, Qt will add it to systemFonts)
+                for(var j = 0 ; j < rccFonts.length ; ++ j) {
+                    if(rccFonts[j].toLowerCase().indexOf(systemFonts[i].toLowerCase()) != -1) {
+                        isExcluded = true;
+                        break;
+                    }
+                }
+
+                // Finally, we know if we add this font or not
                 if(!isExcluded) {
                     fonts.append({ "text": systemFonts[i], "isLocalResource": false });
                 }
             }
-            // Append fonts from resources
-            fonts.append({ "text": "Andika-R.ttf", "isLocalResource": true });
-            fonts.append({ "text": "OpenDyslexic-Regular.otf", "isLocalResource": true });
+            for(var i = 0 ; i < rccFonts.length ; ++ i) {
+                // Append fonts from resources
+                fonts.append({ "text": rccFonts[i], "isLocalResource": true });
+            }
         }
     }
 
