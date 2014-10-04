@@ -183,9 +183,7 @@ ActivityBase {
                 }
 
                 function updateScale(zoomDelta, x, y) {
-                    console.log("updateScale", zoomDelta, x, y)
                     var xx1 = background.mapFromItem(miningBg, x, y)
-                    console.log('xx1', xx1.x, xx1.y)
                     var previousScale = miningBg.scale
                     if (zoomDelta > 0 && miningBg.scale < miningBg._MAX_SCALE) {
                         if(miningBg.scale < miningBg._MAX_SCALE - 0.1)
@@ -211,10 +209,8 @@ ActivityBase {
                     }
                     if(previousScale != miningBg.scale) {
                         var xx2 = background.mapFromItem(miningBg, x, y)
-                        console.log('xx2', xx2.x, xx2.y)
                         miningBg.anchors.horizontalCenterOffset += xx1.x - xx2.x
                         miningBg.anchors.verticalCenterOffset += xx1.y - xx2.y
-                        console.log("verticalCenterOffset", miningBg.anchors.verticalCenterOffset)
                     }
                 }
 
