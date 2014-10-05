@@ -34,6 +34,7 @@ var flag = 0
 var friction = 0.995
 var velocityX
 var velocityY
+var tuxCollision
 
 function start(items_) {
     items = items_
@@ -50,6 +51,7 @@ function initLevel() {
     items.ball.y = items.border.height / 2 - items.ball.height / 2
     velocityX = 0
     velocityY = 0
+    tuxCollision = false
     /* Increase size of TUX for each level */
     items.tux.sourceSize.height = 10 * (5 + 2 * items.bar.level) * GCompris.ApplicationInfo.ratio
     moveTux(items.background.height)
@@ -76,6 +78,7 @@ function startMotion(x1, y1) {
     /* Modify speed of ball here */
     velocityX = velocity * x1 * 0.01 * -1 / 5
     velocityY = velocity * y1 * 0.01 * -1 / 5
+    tuxCollision = false
     items.timer.start()
 }
 
@@ -130,6 +133,7 @@ function ballMotion() {
     if(items.ball.y > (items.border.height - items.ball.height)) { //bottom
         velocityY *= -1
         items.ball.y = items.border.height - items.ball.height
+        tuxCollision = false
     } else if(items.ball.x > (items.border.width)) { //right ---- GOAL!
         velocityX *= 0
         velocityY *= 0
@@ -138,18 +142,21 @@ function ballMotion() {
     } else if(items.ball.x < 0) { // left
         velocityX *= -1
         items.ball.x = 0
+        tuxCollision = false
     } else if(items.ball.y < 0) { //top
         velocityY *= -1
         items.ball.y = 0
+        tuxCollision = false
     }
     /* Collision with TUX */
     else if(items.ball.y > items.tux.y &&
             items.ball.y <= items.tux.y + items.tux.height/2 &&
             items.ball.x > items.tux.x &&
-            items.ball.x <= items.tux.x + items.tux.width/2){
-        velocityY *= -1
-        velocityX *= -1
-        items.ball.x = items.ball.x - items.tux.width
+            items.ball.x <= items.tux.x + items.tux.width/2 &&
+            !tuxCollision) {
+        velocityY *= -2
+        velocityX *= -2
+        tuxCollision = true
     }
 
     // Friction
