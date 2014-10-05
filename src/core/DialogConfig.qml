@@ -142,12 +142,11 @@ Rectangle {
 
                         Row {
                             spacing: 5
-
                             ComboBox {
                                 id: fontBox
                                 style: GCComboBoxStyle {}
                                 model: fonts
-                                width: 200 * ApplicationInfo.ratio
+                                width: 250 * ApplicationInfo.ratio
                             }
                             GCText {
                                 text: qsTr("Font selector")
@@ -162,7 +161,7 @@ Rectangle {
                                 id: languageBox
                                 style: GCComboBoxStyle {}
                                 model: languages
-                                width: 200 * ApplicationInfo.ratio
+                                width: 250 * ApplicationInfo.ratio
 
                                 onCurrentIndexChanged: voicesRow.localeChanged();
                             }
@@ -175,7 +174,7 @@ Rectangle {
 
                         Row {
                             id: voicesRow
-                            height: voicesImage.height
+                            height: enableAudioVoicesBox.height
                             width: parent.width
                             spacing: 5 * ApplicationInfo.ratio
 
@@ -184,7 +183,7 @@ Rectangle {
                             function localeChanged() {
                                 var localeShort = languages.get(languageBox.currentIndex).locale.substr(0, 2);
                                 var language = languages.get(languageBox.currentIndex).text;
-                                voicesText.text = language + " " + qsTr("sounds");
+                                voicesText.text = language;
                                 voicesRow.haveLocalResource = DownloadManager.haveLocalResource(
                                         DownloadManager.getVoicesResourceForLocale(localeShort));
                             }
@@ -209,6 +208,7 @@ Rectangle {
 
                             Image {
                                 id: voicesImage
+                                anchors.verticalCenter: parent.verticalCenter
                                 sourceSize.height: 30 * ApplicationInfo.ratio
                                 source: voicesRow.haveLocalResource ? "qrc:/gcompris/src/core/resource/apply.svgz" :
                                     "qrc:/gcompris/src/core/resource/cancel.svgz"
@@ -216,7 +216,7 @@ Rectangle {
 
                             Button {
                                 id: voicesButton
-                                height: parent.height * ApplicationInfo.ratio
+                                height: parent.height
                                 anchors.verticalCenter: parent.verticalCenter
                                 text: voicesRow.haveLocalResource ? qsTr("Check for updates") :
                                     qsTr("Download")
@@ -235,6 +235,7 @@ Rectangle {
 
                         Row {
                             width: parent.width
+                            spacing: 5 * ApplicationInfo.ratio
 
                             GCText {
                                 text: qsTr("Difficulty filter:")
