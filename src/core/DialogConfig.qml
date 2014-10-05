@@ -363,7 +363,7 @@ Rectangle {
     // The cancel button
     Image {
         id: cancel
-        source: "qrc:/gcompris/src/core/resource/cancel.svgz";
+        source: "qrc:/gcompris/src/core/resource/apply.svgz";
         fillMode: Image.PreserveAspectFit
         anchors.right: parent.right
         anchors.top: parent.top
