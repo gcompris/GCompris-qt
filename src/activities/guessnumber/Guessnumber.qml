@@ -56,6 +56,7 @@ ActivityBase {
             property alias infoText: userInfo
             property alias answerArea: answerArea
             property alias numpad: numpad
+            property int currentMax: 0
         }
 
         onStart: { Activity.start(items) }
@@ -70,6 +71,8 @@ ActivityBase {
             anchors.top: parent.top
             anchors.topMargin: 10
             anchors.left: parent.left
+            anchors.leftMargin: numpad.columnWidth + 10
+            anchors.right: answerArea.left
             horizontalAlignment: Text.AlignHCenter
             width: parent.width - answerArea.width - 10
             wrapMode: TextEdit.WordWrap
@@ -88,8 +91,8 @@ ActivityBase {
 
         GCText {
             id: userInfo
-            anchors.top: textArea.bottom
-            anchors.topMargin: 15
+            anchors.top: textArea.top
+            anchors.topMargin: 15 + textArea.contentHeight
             anchors.horizontalCenter: parent.horizontalCenter
             color: "white"
             font.bold: true
@@ -99,7 +102,7 @@ ActivityBase {
         NumPad {
             id: numpad
             onAnswerChanged: answerArea.userEntry = answer
-            maxDigit: 2
+            maxDigit: ("" + items.currentMax).length
             columnWidth: 60
         }
 

@@ -23,10 +23,9 @@
 .import QtQuick 2.0 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 4
+var numberOfLevel = 6
 var items
 var numberToGuess = 0
-var currentMax
 
 function start(items_) {
     items = items_
@@ -44,20 +43,26 @@ function initLevel() {
     items.infoText.text = ""
     items.numpad.resetText()
     switch(currentLevel) {
-    case 0: currentMax = 20
-            numberToGuess = getRandomInt(1,currentMax)
+    case 0: items.currentMax = 20
+            numberToGuess = getRandomInt(1,items.currentMax)
             break;
-    case 1: currentMax = 40
-            numberToGuess = getRandomInt(1,currentMax)
+    case 1: items.currentMax = 40
+            numberToGuess = getRandomInt(1,items.currentMax)
             break;
-    case 2: currentMax = 60
-            numberToGuess = getRandomInt(1,currentMax)
+    case 2: items.currentMax = 60
+            numberToGuess = getRandomInt(1,items.currentMax)
             break;
-    case 3: currentMax = 99
-            numberToGuess = getRandomInt(1,currentMax)
+    case 3: items.currentMax = 100
+            numberToGuess = getRandomInt(1,items.currentMax)
+            break;
+    case 4: items.currentMax = 500
+            numberToGuess = getRandomInt(1,items.currentMax)
+            break;
+    case 5: items.currentMax = 1000
+            numberToGuess = getRandomInt(1,items.currentMax)
             break;
     }
-    items.textArea.text = qsTr("Guess a number between 1 and %1").arg(currentMax);
+    items.textArea.text = qsTr("Guess a number between 1 and %1").arg(items.currentMax);
 }
 
 function nextLevel() {
@@ -81,7 +86,7 @@ function getRandomInt(min, max) {
 function setUserAnswer(value){
     if(value === 0)
         return;
-    if(value > currentMax){
+    if(value > items.currentMax){
         items.infoText.text = qsTr("Number too high")
         return;
     }
@@ -98,9 +103,9 @@ function setUserAnswer(value){
         items.helico.x = items.background.width
         items.helico.y = items.background.height / 2 - items.helico.height / 2
     } else {
-        var diff = Math.abs(numberToGuess-value)/currentMax
+        var diff = Math.abs(numberToGuess-value)/items.currentMax
         items.helico.x = (items.background.width-items.helico.width) - diff * items.background.width
         items.helico.y = items.background.height / 2 +
-                ((numberToGuess-value) / currentMax) * (items.background.height/2) - items.helico.height / 2
+                ((numberToGuess-value) / items.currentMax) * (items.background.height/2) - items.helico.height / 2
     }
 }
