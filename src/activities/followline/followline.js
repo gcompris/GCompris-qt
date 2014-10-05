@@ -67,7 +67,6 @@ function initLevel() {
             direction = - directionStep
         else if(y < items.background.height * 0.4)
             direction = directionStep
-//        console.log("angle", angle, "direction", direction, "y", y, "items.background.height", items.background.height)
         createdLineParts[index] =
                 createLinePart(index, x, y, width, height,
                                getAngleOfLineBetweenTwoPoints(x, y, newx, newy) * (180 / Math.PI))
@@ -93,7 +92,6 @@ function previousLevel() {
 }
 
 function createLinePart(index, x, y, width, height, rotation) {
-//    console.log("createLinePart", x, y, width, rotation, items)
     var component = Qt.createComponent("qrc:/gcompris/src/activities/followline/LinePart.qml");
     var part = component.createObject(
                 items.background,
