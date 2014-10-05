@@ -79,7 +79,8 @@ ActivityBase {
             GCText {
                 text: mode == "minus" ? "-" : "+"
                 anchors.right: mainlayout.right
-                y: background.starSize * 3
+                anchors.rightMargin: 10
+                y: secondRow.y
                 font.pointSize: 66
                 color: "white"
             }
