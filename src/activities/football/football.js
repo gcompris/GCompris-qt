@@ -113,7 +113,6 @@ function drawLine(x1, y1, x2, y2){
     items.line.width = Math.sqrt(Math.pow((x1 - x2), 2) + Math.pow((y1- y2), 2));
     items.line.x = x2
     items.line.y = y2
-    items.line.opacity = 1.0
 }
 
 /* Tux moves up and down, called in initlevel() */
