@@ -162,6 +162,7 @@ function playLetter(letter) {
 }
 
 function nextLevel() {
+    items.audioVoices.clearQueue()
     if(maxLevel <= ++currentLevel ) {
         currentLevel = 0
     }
@@ -170,6 +171,7 @@ function nextLevel() {
 }
 
 function previousLevel() {
+    items.audioVoices.clearQueue()
     if(--currentLevel < 0) {
         currentLevel = maxLevel - 1
     }
