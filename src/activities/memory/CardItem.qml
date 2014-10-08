@@ -25,40 +25,29 @@ import GCompris 1.0
 import "../../core"
 import "memory.js" as Activity
 
-Item {
-    id: item
+Flipable {
+    id: card
 
     property variant pairData
     property bool isBack: true
-    property bool isFound: false
     property bool isShown: false
-    property alias rotAngle: image.rotAngle
-    property bool transitionFacedFinished
-    property bool transitionReturnedFinished
-    property bool transitionHiddenFinished
-
-    property alias imageSource: image.source
+    property bool isFound: false
 
     property bool tuxTurn
 
     property GCAudio audioVoices
 
     onIsFoundChanged: {
+        opacity = 0
         timer.start()
     }
 
     Timer {
-        id:timer
-        interval: 500; running: false; repeat: false
+        id: timer
+        interval: 100
+        running: false
+        repeat: false
         onTriggered: particles.emitter.burst(50)
-    }
-
-    onRotAngleChanged:  {
-        if (rotAngle < 90) {
-            image.source = item.pairData.back
-        } else {
-            image.source = item.pairData.image
-        }
     }
 
     ParticleSystemStar {
@@ -73,183 +62,79 @@ Item {
         onTriggered: selectionReady()
     }
 
-    Image {
-        id: image
-        width:item.width
-        height: item.height
+    back: Image {
+        source: card.pairData.emptyCard
+        width: parent.width
+        height: parent.height
         fillMode: Image.PreserveAspectFit
-        source : pairData.back
-        property real rotAngle: rotation.angle //in degrees
-        signal clicked()
-        transform: [
-            Scale {
-                id: scaleTransform
-                origin.x: item.width/2; origin.y: item.height/2
-                xScale: mouseArea.containsMouse ? 1.05 : 1  // <-
-                Behavior on xScale {  // for animation
-                    NumberAnimation { duration: 200 }
-                }
-            },
-            Rotation {
-                id: rotation
-                origin.x: item.width/2
-                origin.y: item.height/2
-                axis.x: 0; axis.y: 1; axis.z: 0     // set axis.y to 1 to rotate around y-axis
-                angle: 0    // the default angle
-                Behavior on angle {  // for animation
-                    NumberAnimation { duration: 1000 }
-                }
-            }
-        ]
+        anchors.centerIn: parent
+        Image {
+            source: card.pairData.image
+            anchors.centerIn: parent
+            fillMode: Image.PreserveAspectFit
+        }
+        GCText {
+            anchors.centerIn: parent
+            font.pointSize: 24
+            horizontalAlignment: Text.AlignHCenter
+            verticalAlignment: Text.AlignVCenter
+            color: "black"
+            font.bold: true
+            style: Text.Outline
+            styleColor: "white"
+            text: card.pairData.text
+        }
+    }
+
+    // Warning front and back property are reversed. Could not find
+    // a way to display back at start time without this trick
+    front: Image {
+        width: parent.width
+        height: parent.height
+        fillMode: Image.PreserveAspectFit
+        source: card.pairData.back
+        anchors.centerIn: parent
+    }
+
+    transform: Rotation {
+        id: rotation
+        origin.x: card.width / 2
+        origin.y: card.height / 2
+        axis.x: 0; axis.y: 1; axis.z: 0
+        angle: 0
+    }
+
+    transitions: Transition {
+        NumberAnimation { target: rotation; property: "angle"; duration: 750 }
     }
 
     MouseArea {
-        id:mouseArea
         anchors.fill: parent
-        enabled: item.isBack && !item.tuxTurn
+        enabled: card.isBack && !card.isFound && !card.tuxTurn
         onClicked: selected()
     }
 
     function selected() {
         Activity.reverseCards()
-        item.isBack = false
-        item.state = "faced"
+        card.isBack = false
+        card.isShown = true
         animationTimer.start()
     }
 
     function selectionReady() {
-        Activity.cardClicked(item)
-        isShown = true
-        if (item.pairData.sound) {
-            audioVoices.play(item.pairData.sound)
+        Activity.cardClicked(card)
+        if (card.pairData.sound) {
+            audioVoices.play(card.pairData.sound)
         }
     }
 
-    GCText {
-        id:text1
-        anchors.centerIn: parent
-        visible : rotAngle > Math.PI/2 ? true : false
-        font.pointSize: 24
-        horizontalAlignment: Text.AlignHCenter
-        verticalAlignment: Text.AlignVCenter
-        color: "black"
-        font.bold: true
-        style: Text.Outline
-        styleColor: "white"
-        property real rotAngle : image.rotAngle/180*Math.PI
-        text: item.pairData.text
-        x: image.x + image.width/2 - image.width*Math.cos(rotAngle) * 0.5
-        transform: [
-            Scale {
-                yScale: 1
-                origin.x: 0; origin.y: 0
-                xScale: Math.abs(Math.cos(text1.rotAngle))
-            }
-        ]
-    }
+    Behavior on opacity { NumberAnimation { duration: 1000 } }
 
     states : [
         State {
-            name: "hidden"; when: isFound == true
-            PropertyChanges {
-                target: item
-                imageSource: item.pairData.image
-                opacity: 0
-            }
+            name: "front"
             PropertyChanges { target: rotation; angle: 180 }
-        },
-        State {
-            name:"back"; when: isBack == true
-            PropertyChanges {
-                target: item
-                imageSource: item.pairData.back
-            }
-            PropertyChanges { target: rotation; angle: 0 }
-
-        },
-        State {
-            name:"faced"; when: isBack == false
-            PropertyChanges {
-                target: item
-                imageSource: item.pairData.image
-            }
-            PropertyChanges { target: rotation; angle: 180 }
-        }
-    ]
-
-    transitions: [
-        Transition {
-            from: "faced"; to: "hidden"; reversible: false
-            SequentialAnimation {
-                id : hiddenAnimation
-                PauseAnimation { duration: 500 }
-                PropertyAction {
-                    target:item
-                    property:"transitionHiddenFinished"
-                    value: "false"
-                }
-                PropertyAnimation {
-                    duration: 1000;
-                    target: item;
-                    property: "opacity";
-                    to: 0
-                }
-                PropertyAction {
-                    target:item
-                    property:"transitionHiddenFinished"
-                    value: "true"
-                }
-            }
-        },
-        Transition {
-            from: "faced"; to : "back" ;reversible: false
-            SequentialAnimation {
-                id: returnedAnimation
-
-                PropertyAction {
-                    target: item
-                    property:"transitionReturnedFinished"
-                    value: "false"
-                }
-                PropertyAnimation {
-                    duration: 300;
-                    target: item;
-                    property: "imageSource";
-                    from: item.pairData.image
-                    to: item.pairData.back;
-                }
-                PropertyAction {
-                    target: item
-                    property:"transitionReturnedFinished"
-                    value: "true"
-                }
-            }
-        },
-        Transition {
-            from: "back"; to : "faced" ;reversible: false
-
-            SequentialAnimation {
-                id:facedAnimation
-
-                PropertyAction {
-                    target: item
-                    property: "transitionFacedFinished"
-                    value: "false"
-                }
-                PropertyAnimation {
-                    duration: 300
-                    target: item
-                    property: "imageSource"
-                    from: item.pairData.back
-                    to: item.pairData.image
-
-                }
-                PropertyAction {
-                    target: item
-                    property: "transitionFacedFinished"
-                    value: "true"
-                }
-            }
+            when: !card.isBack
         }
     ]
 }
