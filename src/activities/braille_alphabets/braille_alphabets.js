@@ -1,10 +1,10 @@
-/* GCompris - brm.js
+/* GCompris - braille_alphabets.js
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 <Arkit Vora>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net>(GTK+ version)
+ *   Arkit Vora <arkitvora123@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -35,6 +35,28 @@ function start(items_, dataset_) {
     dataset=dataset_.get()
     currentLevel = 0
     numberOfLevel = dataset.length
+
+    items.mapContainerModel.clear()
+    for(var j = 0; j <4; j++ ){
+
+        for(var i = 0;  i < dataset[j].length; ++i) {
+            if(dataset[j][i].letter != "1") {
+                items.mapContainerModel.append( dataset[j][i] )
+            }
+            else {
+                break;
+            }
+
+        }
+    }
+    for(var j = 3; j <5; j++ ) {
+
+        for(var i = 0;  i < dataset[j].length; ++i) {
+
+            items.mapContainerModel2.append( dataset[j][i] )
+
+        }
+    }
     initLevel()
 
 }
@@ -46,34 +68,22 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.containerModel.clear()
     currentQuestion = 0
-    //dataset[currentLevel] = Core.shuffle(dataset[currentLevel])
 
     for(var i = 0;  i < dataset[currentLevel].length; ++i) {
+
         items.containerModel.append(dataset[currentLevel][i])
+
     }
 
     // Shuffle again not to ask the question in the model order
     dataset[currentLevel] = Core.shuffle(dataset[currentLevel])
     initQuestion()
 
-    if(currentLevel==0){
-        items.instructions.text=""
-    }
-    else if(currentLevel==1){
-        items.instructions.text="Look at the Braille character map and observe how similar the first and second line are."
-
-    }
-    else if(currentLevel==2){
-        items.instructions.text="Again, similar as the first line but take care, the 'W' letter was added afterwards."
-
-    }
-    else if(currentLevel==3){
-        items.instructions.text="This is easy, numbers are the same as letters from A to J."
-
-    }
-
+    instruction_text();
 
 }
+
+
 
 function nextLevel() {
     if(numberOfLevel <= ++currentLevel ) {
@@ -105,21 +115,25 @@ function nextQuestion() {
     }
 }
 
-function instruction_text(){
-    console.log (getCurrentLevel(),"dg");
-    if(currentLevel==0){
-        items.instructions.text=""
+function instruction_text() {
+
+    if(currentLevel==0) {
+        items.instructions.text = ""
     }
-    else if(currentLevel==1){
-        items.instructions.text="Look at the Braille character map and observe how similar the first and second line are."
+    else if(currentLevel==1) {
+        items.instructions.text = "Look at the Braille character map and observe how similar the first and second line are."
 
     }
-    else if(currentLevel==2){
-        items.instructions.text="Again, similar as the first line but take care, the 'W' letter was added afterwards."
+    else if(currentLevel==2) {
+        items.instructions.text = "Again, similar as the first line but take care, the 'W' letter was added afterwards."
 
     }
-    else if(currentLevel==3){
-        items.instructions.text="This is easy, numbers are the same as letters from A to J."
+    else if(currentLevel==3) {
+        items.instructions.text = "This is easy, numbers are the same as letters from A to J."
+
+    }
+    else {
+        items.instructions.text = " "
 
     }
 }
@@ -128,33 +142,11 @@ function getCurrentTextQuestion() {
     return dataset[currentLevel][currentQuestion].text
 }
 
-function getCurrentStateOne() {
-    return dataset[currentLevel][currentQuestion].one
-}
-
-function getCurrentStateTwo() {
-    return dataset[currentLevel][currentQuestion].two
-}
-
-function getCurrentStateThree() {
-    return dataset[currentLevel][currentQuestion].three
-}
-
-function getCurrentStateFour() {
-    return dataset[currentLevel][currentQuestion].four
-}
-
-function getCurrentStateFive() {
-    return dataset[currentLevel][currentQuestion].five
-}
-
-function getCurrentStateSix() {
-    return dataset[currentLevel][currentQuestion].six
-}
 function getCurrentAlphabet() {
     return dataset[currentLevel][currentQuestion].letter
 }
 
-function getCurrentLevel() {
-    return currentLevel
+function getCurrentArr() {
+    return dataset[currentLevel][currentQuestion].braille_letter
 }
+

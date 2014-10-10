@@ -23,6 +23,8 @@ import QtQuick 2.1
 import QtQuick.Layouts 1.1
 import "../../core"
 import "braille_alphabets.js" as Activity
+import "questions.js" as Dataset
+
 
 
 ActivityBase {
@@ -57,9 +59,12 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias containerModel: containerModel
+            property alias mapContainerModel: mapContainerModel
+            property alias mapContainerModel2: mapContainerModel2
             property alias questionItem: questionItem
             property alias instructions: instructions
             property alias ans: ans
+            property alias circles: circles
 
         }
 
@@ -71,175 +76,58 @@ ActivityBase {
             id: containerModel
         }
 
-        Item{
-            id:outer
-            x:parent.width/2
-            y:parent.height/15
-            width:parent.width/1.06
-            height: parent.height/3.7
+
+        ListModel {
+            id: mapContainerModel
+        }
+
+        ListModel {
+            id: mapContainerModel2
+        }
+
+        Item {
+            id: outer
+            x: parent.width / 2
+            y: parent.height / 15
+            width : parent.width / 1.06
+            height :  parent.height / 3.7
             anchors.horizontalCenter: parent.horizontalCenter
 
             Row {
-                spacing: 20
+                spacing: 17
                 anchors.centerIn: outer
 
                 Repeater {
                     id: cardRepeater
-                    model:containerModel
+                    model: containerModel
 
-                    Item{
-                        id:inner
-                        height:outer.height
-                        width:outer.width/12
+                    Item {
+                        id: inner
+                        height: outer.height
+                        width: outer.width / 12
 
                         Rectangle {
-                            id:rect1
-                            width: outer.width/12; height: outer.height/1.5
+                            id: rect1
+                            width:  outer.width / 13; height: outer.height / 1.5
                             border.width: 3
                             border.color: "black"
                             color: "white"
 
-                            Grid {
-                                spacing: 1
-                                id: grid
+
+                            BrailleChar {
+                                id: ins
+                                wid: rect1.height / 3.4
+                                hei: rect1.height / 3.4
                                 anchors.centerIn: rect1
-                                columns: 2
-                                rows: 3
-
-                                Rectangle {
-                                    id:circle1
-                                    border.width: 3
-
-                                    border.color: "black"
-                                    width: rect1.height/3.1; height: rect1.height/3.1
-                                    radius: width*0.5
-
-                                    function col(){
-                                        if(one=="on"){
-                                            color="red"
-                                        }
-                                        else{
-                                            color="white"
-                                        }
-                                    }
-                                    color: col()
-                                }
-
-
-                                Rectangle {
-                                    id:circle2
-                                    border.width:3
-
-                                    border.color: "black"
-                                    width: rect1.height/3.1; height: rect1.height/3.1
-                                    radius: width*0.5
-
-                                    function col(){
-                                        if(two=="on"){
-                                            color="red"
-                                        }
-                                        else{
-                                            color="white"
-                                        }
-                                    }
-                                    color: col()
-                                }
-
-
-
-                                Rectangle {
-                                    id:circle3
-                                    border.width:3
-
-                                    border.color: "black"
-                                    width: rect1.height/3.1; height: rect1.height/3.1
-                                    radius: width*0.5
-
-                                    function col(){
-                                        if(three=="on"){
-                                            color="red"
-                                        }
-                                        else{
-                                            color="white"
-                                        }
-                                    }
-                                    color: col()
-                                }
-
-
-
-                                Rectangle {
-                                    id:circle4
-                                    border.width:3
-
-                                    border.color: "black"
-                                    width: rect1.height/3.1; height: rect1.height/3.1
-                                    radius: width*0.5
-
-                                    function col(){
-                                        if(four=="on"){
-                                            color="red"
-                                        }
-                                        else{
-                                            color="white"
-                                        }
-                                    }
-                                    color: col()
-                                }
-
-
-
-
-                                Rectangle {
-                                    id:circle5
-                                    border.width:3
-
-                                    border.color: "black"
-                                    width: rect1.height/3.1; height: rect1.height/3.1
-                                    radius: width*0.5
-
-                                    function col(){
-                                        if(five=="on"){
-                                            color="red"
-                                        }
-                                        else{
-                                            color="white"
-                                        }
-                                    }
-                                    color: col()
-                                }
-
-
-
-
-                                Rectangle {
-                                    id:circle6
-                                    border.width:3
-
-                                    border.color: "black"
-                                    width: rect1.height/3.1; height: rect1.height/3.1
-                                    radius: width*0.5
-
-                                    function col(){
-                                        if(six=="on"){
-                                            color="red"
-                                        }
-                                        else{
-                                            color="white"
-                                        }
-                                    }
-                                    color: col()
-                                }
-
+                                clickable: false
                             }
                         }
 
-
-                        Text{
-                            text:letter
-                            scale: 2
-                            y:parent.height/1.3
-                            x:parent.width/2.2
+                        Text {
+                            text: letter
+                            scale:  2
+                            y: parent.height / 1.3
+                            x: parent.width / 2.2
 
                         }
                     }
@@ -248,45 +136,28 @@ ActivityBase {
             }
         }
 
+        Item {
+            id: box
+            height: parent.height / 3
+            width: parent.width / 3
+            x: parent.width / 9
+            y: parent.height / 1.9
 
-        Item{
-            id:newit
-            x:parent.width/5.4
-            y:parent.height/1.9
-            height:parent.height/3
-            width:parent.width/3
-            anchors.centerIn: parent.left
+            BrailleChar {
 
-
-            Item {
-                id:rect2
-                width: newit.width/2; height: newit.height
-
-                Grid {
-                    spacing: 5
-                    anchors.centerIn: parent
-                    id: gridthree
-
-                    columns: 2
-                    rows: 3
-
-                    Repeater{
-                        id:circles
-                        model:["1","4","2","5","3","6"]
-                        delegate: Braille_cell{
-
-                        }
-                    }
-                }
+                id: circles
+                clickable: true
+                anchors.centerIn: box.left
+                wid: parent.height / 3
+                hei: parent.height / 3
             }
+
         }
-
-
 
         Rectangle {
             id: instructionsArea
-            height: parent.height/16
-            width: parent.width/1.1
+            height: parent.height / 16
+            width: parent.width / 1.1
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: outer.bottom
             color: "#55333333"
@@ -299,19 +170,17 @@ ActivityBase {
 
             Text {
                 id: questionItem
-                anchors.top: outer.bottom
                 anchors.leftMargin: 10
-                x:parent.width/2
-                y:parent.height/7
+                x: parent.width / 2
+                y: parent.height / 7
                 anchors.centerIn: parent
-                font.pointSize: instructionsArea.height/3
+                font.pointSize: instructionsArea.height / 3
                 horizontalAlignment: Text.AlignHCenter
                 font.weight: Font.DemiBold
                 style: Text.Outline
                 styleColor: "white"
                 color: "black"
-                width:parent.width
-
+                width: parent.width
                 wrapMode: Text.WordWrap
 
                 function initQuestion() {
@@ -326,18 +195,18 @@ ActivityBase {
 
         }
 
-        Text{
-            id:instructions
+        Text {
+            id: instructions
             anchors.top: instructionsArea.bottom
             horizontalAlignment: Text.AlignHCenter
-            width:parent.width
+            width: parent.width
             wrapMode: Text.WordWrap
             color: "black"
             style: Text.Outline
             styleColor: "white"
             font.weight: Font.DemiBold
-            font.pointSize: instructionsArea.height/3
-            text:""
+            font.pointSize: instructionsArea.height / 3
+            text: ""
 
         }
 
@@ -347,111 +216,175 @@ ActivityBase {
         }
 
 
-        Image{
-            id:okbutton
-            x:parent.width/2
-            y:parent.height/1.5
-            width: parent.height/10
-            height: parent.height/10
+        Image {
+            id: okbutton
+            x: parent.width / 2
+            y: parent.height / 1.5
+            width: parent.height / 10
+            height: parent.height / 10
+            source: "qrc:/gcompris/src/core/resource/apply.svgz"
 
-            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/transparent.png"
+            MouseArea {
+                id: mou
 
+                function arraysEqual(a, b) {
+                    if (a === b) return true;
+                    if (a == null || b == null) return false;
+                    if (a.length != b.length) return false;
+                    for (var i = 0; i < a.length; ++i) {
+                        if (a[i] !== b[i]) return false;
+                    }
+                    return true;
+                }
 
+                function correct() {
 
-            MouseArea{
+                    var arr = [];
 
-                function correct(){
+                    for(var i  = 0; i <= 5; i++) {
+                        if(circles.circles.itemAt(i).state == "on") {
+                            arr.push((i+1));
+                        }
+                    }
 
-                    if(circles.itemAt(0).state==Activity.getCurrentStateOne()&&circles.itemAt(1).state==Activity.getCurrentStateTwo()&&circles.itemAt(2).state==Activity.getCurrentStateThree()&&circles.itemAt(3).state==Activity.getCurrentStateFour()&&circles.itemAt(4).state==Activity.getCurrentStateFive()&&circles.itemAt(5).state==Activity.getCurrentStateSix())
-                    {
+                    var ya  = [];
+                    ya  = Activity.getCurrentArr()
+                    var t;
+                    var answer  = [];
+                    for( t  = 0;t<ya.length;t++) {
+                        answer[t]  = ya[t].pos
+                    }
 
+                    if(arraysEqual(arr,answer )) {
                         particles.emitter.burst(100)
-                        wrong.opacity=0
-                        ans.opacity=1
-                        circles.itemAt(0).state="off"
-                        circles.itemAt(1).state="off"
-                        circles.itemAt(2).state="off"
-                        circles.itemAt(3).state="off"
-                        circles.itemAt(4).state="off"
-                        circles.itemAt(5).state="off"
-
-                        ans.text=Activity.getCurrentAlphabet()
+                        wrong.opacity  = 0
+                        ans.opacity  = 1
+                        circles.circles.itemAt(0).state  = "off"
+                        circles.circles.itemAt(1).state  = "off"
+                        circles.circles.itemAt(2).state  = "off"
+                        circles.circles.itemAt(3).state  = "off"
+                        circles.circles.itemAt(4).state  = "off"
+                        circles.circles.itemAt(5).state  = "off"
+                        ans.text  = Activity.getCurrentAlphabet()
                         Activity.nextQuestion()
 
                     }
-                    else{
-                        ans.opacity=0
-                        wrong.opacity=1
-                        wrong.visible=true
-
+                    else {
+                        ans.opacity  = 0
+                        wrong.opacity  = 1
+                        wrong.visible  = true
                     }
                 }
 
                 anchors.fill: parent
                 onClicked: correct()
-                onPressed: okbutton.opacity=0.4
-                onReleased: okbutton.opacity=1
+                onPressed: okbutton.opacity  = 0.4
+                onReleased: okbutton.opacity  = 1
             }
         }
 
-        Image{
-            id:wrong
-            x:parent.width/1.23
-            y:parent.height/1.70
-            width:parent.height/7
-            height:parent.height/7
-            source:"qrc:/gcompris/src/activities/braille_alphabets/resource/wrong.png"
+        Image {
+            id: wrong
+            x: parent.width / 1.23
+            y: parent.height / 1.70
+            width: parent.height / 7
+            height: parent.height / 7
+            source: "qrc:/gcompris/src/core/resource/cancel.svgz"
             visible: false
         }
 
-        Text{
-            id:ans
-            scale:2
-            x:parent.width/1.20
-            y:parent.height/1.63
-            font.pointSize: parent.height/20
+        Text {
+            id: ans
+            scale: 2
+            x: parent.width / 1.20
+            y: parent.height / 1.63
+            font.pointSize: parent.height / 20
             font.weight: Font.DemiBold
             style: Text.Outline
 
             Behavior on opacity { PropertyAnimation { duration: 1000} }
             styleColor: "white"
             color: "black"
-            text:""
+            text: ""
 
         }
 
-        Image{
-            id:first_screen
+        Image {
+            id: first_screen
             anchors.fill: parent
             fillMode: Image.PreserveAspectCrop
-            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/braille_tux.jpg"
+            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/braille_tux.svgz"
             sourceSize.width: parent.width
 
-            Rectangle{
-                id:tux_square
+            Text {
+                id: heading
+                text: "Braille : Unlocking the Code"
+                font.pointSize: parent.height / 24
+                horizontalAlignment: Text.AlignHCenter
+                font.weight: Font.DemiBold
+                anchors.centerIn: parent.Center
+                color: "black"
+                width: parent.width
+                wrapMode: Text.WordWrap
+
+            }
+
+            Text {
+                id: body_text1
+                text: "The Braille system is a method that is used by blind people to read and write.
+
+Each Braille character, or cell, is made up of six dot positions, arranged in a rectangle containing two columns of three dots each. As seen on the left, each dot is referenced by a number from 1 to 6."
+                font.pointSize:  parent.height / 40
+
+                font.weight: Font.DemiBold
+                x: parent.width / 2.7
+                y: parent.height / 2.5
+                color: "black"
+                width: parent.width / 2
+                wrapMode: Text.WordWrap
+
+            }
+
+
+            Text {
+                id: bottom_text
+                text: "When you are ready, click on
+me and try reproducing Braille characters."
+                font.pointSize:  parent.height / 45
+                font.weight: Font.DemiBold
+                x: parent.width / 2.7
+                y: parent.height / 1.15
+                color: "black"
+                width: parent.width / 2
+                wrapMode:  Text.WordWrap
+
+            }
+
+            Rectangle {
+                id: tux_square
                 anchors.bottom: parent.bottom
                 radius: 10
                 anchors.right: parent.right
-                color:"transparent"
-                width:parent.width/3
-                height: parent.width/3
+                color: "transparent"
+                width: parent.width / 3
+                height: parent.width / 3
 
 
-                MouseArea{
-                    id:tux_click
+                MouseArea {
+                    id: tux_click
                     anchors.fill: parent
 
-                    function tux_onClicked(){
-                        first_screen.visible=false
+                    function tux_onClicked() {
+                        first_screen.visible  = false
 
                     }
-                    function tux_onHover(){
-                        tux_square.color="#E41B2D"
-                        tux_square.opacity=0.3
+                    function tux_onHover() {
+                        tux_square.color  = "#E41B2D"
+                        tux_square.opacity  = 0.3
                     }
-                    function tux_onExit(){
-                        tux_square.color="transparent"
-                        tux_square.opacity=1
+                    function tux_onExit() {
+                        tux_square.color  = "transparent"
+                        tux_square.opacity  = 1
                     }
                     hoverEnabled: true
                     onClicked: tux_onClicked()
@@ -462,11 +395,17 @@ ActivityBase {
 
         }
 
-
         DialogHelp {
             id: dialogHelp
             onClose: home()
         }
+
+        BrailleMap {
+            id: dialogMap
+            onClose: home()
+        }
+
+
 
         Bar {
             id: bar
@@ -477,6 +416,21 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+        }
+
+        BarButton {
+            id: braille_map
+            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/target.svg"
+            anchors {
+                left: bar.right
+                bottom: parent.bottom
+
+            }
+            sourceSize.width: 66 * bar.barZoom
+            visible: true
+            onClicked: {
+               displayDialog(dialogMap)
+            }
         }
 
         Bonus {
