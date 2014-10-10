@@ -22,13 +22,8 @@ function get() {
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter A"),
-                 "letter":"A",
-                 "one":"on",
-                 "two":"off",
-                 "three":"off",
-                 "four":"off",
-                 "five":"off",
-                 "six":"off"
+                 "letter":"A",                 
+                 "braille_letter": [{"pos":1}]
 
 
              },
@@ -36,108 +31,64 @@ function get() {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter B"),
                  "letter":"B",
-                 "one":"on",
-                 "two":"off",
-                 "three":"on",
-                 "four":"off",
-                 "five":"off",
-                 "six":"off"
+                 "braille_letter": [{"pos":1},{"pos":2}]
+
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter C"),
                  "letter":"C",
-                 "one":"on",
-                 "two":"on",
-                 "three":"off",
-                 "four":"off",
-                 "five":"off",
-                 "six":"off"
+                 "braille_letter":[{"pos":1},{"pos":4}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter D"),
                  "letter":"D",
-                 "one":"on",
-                 "two":"on",
-                 "three":"off",
-                 "four":"on",
-                 "five":"off",
-                 "six":"off"
+                 "braille_letter":[{"pos":1},{"pos":4},{"pos":5}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter E"),
                  "letter":"E",
-                 "one":"on",
-                 "two":"off",
-                 "three":"off",
-                 "four":"on",
-                 "five":"off",
-                 "six":"off"
+                 "braille_letter":[{"pos":1},{"pos":5}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter F"),
                  "letter":"F",
-                 "one":"on",
-                 "two":"on",
-                 "three":"on",
-                 "four":"off",
-                 "five":"off",
-                 "six":"off"
+                 "braille_letter":[{"pos":1},{"pos":2},{"pos":4}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter G"),
                  "letter":"G",
-                 "one":"on",
-                 "two":"on",
-                 "three":"on",
-                 "four":"on",
-                 "five":"off",
-                 "six":"off"
+                 "braille_letter":[{"pos":1},{"pos":2},{"pos":4},{"pos":5}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter H"),
                  "letter":"H",
-                 "one":"on",
-                 "two":"off",
-                 "three":"on",
-                 "four":"on",
-                 "five":"off",
-                 "six":"off"
+                 "braille_letter":[{"pos":1},{"pos":2},{"pos":5}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter I"),
                  "letter":"I",
-                 "one":"off",
-                 "two":"on",
-                 "three":"on",
-                 "four":"off",
-                 "five":"off",
-                 "six":"off"
+                 "braille_letter":[{"pos":2},{"pos":4}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter J"),
                  "letter":"J",
-                 "one":"off",
-                 "two":"on",
-                 "three":"on",
-                 "four":"on",
-                 "five":"off",
-                 "six":"off"
+                 "braille_letter":[{"pos":2},{"pos":4},{"pos":5}]
 
              }
             ],
@@ -146,12 +97,7 @@ function get() {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter K"),
                  "letter":"K",
-                 "one":"on",
-                 "two":"off",
-                 "three":"off",
-                 "four":"off",
-                 "five":"on",
-                 "six":"off"
+                 "braille_letter":[{"pos":1},{"pos":3}]
 
 
              },
@@ -159,108 +105,63 @@ function get() {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter L"),
                  "letter":"L",
-                 "one":"on",
-                 "two":"off",
-                 "three":"on",
-                 "four":"off",
-                 "five":"on",
-                 "six":"off"
+                 "braille_letter":[{"pos":1},{"pos":2},{"pos":3}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter M"),
                  "letter":"M",
-                 "one":"on",
-                 "two":"on",
-                 "three":"off",
-                 "four":"off",
-                 "five":"on",
-                 "six":"off"
+                 "braille_letter":[{"pos":1},{"pos":3},{"pos":4}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter N"),
                  "letter":"N",
-                 "one":"on",
-                 "two":"on",
-                 "three":"off",
-                 "four":"on",
-                 "five":"on",
-                 "six":"off"
+                 "braille_letter":[{"pos":1},{"pos":3},{"pos":4},{"pos":5}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter O"),
                  "letter":"O",
-                 "one":"on",
-                 "two":"off",
-                 "three":"off",
-                 "four":"on",
-                 "five":"on",
-                 "six":"off"
+                 "braille_letter":[{"pos":1},{"pos":3},{"pos":5}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter P"),
                  "letter":"P",
-                 "one":"on",
-                 "two":"on",
-                 "three":"on",
-                 "four":"off",
-                 "five":"on",
-                 "six":"off"
+                 "braille_letter":[{"pos":1},{"pos":2},{"pos":3},{"pos":4}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter Q"),
                  "letter":"Q",
-                 "one":"on",
-                 "two":"on",
-                 "three":"on",
-                 "four":"on",
-                 "five":"on",
-                 "six":"off"
+                 "braille_letter":[{"pos":1},{"pos":2},{"pos":3},{"pos":4},{"pos":5}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter R"),
                  "letter":"R",
-                 "one":"on",
-                 "two":"off",
-                 "three":"on",
-                 "four":"on",
-                 "five":"on",
-                 "six":"off"
+                 "braille_letter":[{"pos":1},{"pos":2},{"pos":3},{"pos":5}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter S"),
                  "letter":"S",
-                 "one":"off",
-                 "two":"on",
-                 "three":"on",
-                 "four":"off",
-                 "five":"on",
-                 "six":"off"
+                 "braille_letter":[{"pos":2},{"pos":3},{"pos":4}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter T"),
                  "letter":"T",
-                 "one":"off",
-                 "two":"on",
-                 "three":"on",
-                 "four":"on",
-                 "five":"on",
-                 "six":"off"
+                 "braille_letter":[{"pos":2},{"pos":3},{"pos":4},{"pos":5}]
 
              }
             ],
@@ -269,12 +170,7 @@ function get() {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter U"),
                  "letter":"U",
-                 "one":"on",
-                 "two":"off",
-                 "three":"off",
-                 "four":"off",
-                 "five":"on",
-                 "six":"on"
+                 "braille_letter":[{"pos":1},{"pos":3},{"pos":6}]
 
 
              },
@@ -282,187 +178,151 @@ function get() {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter V"),
                  "letter":"V",
-                 "one":"on",
-                 "two":"off",
-                 "three":"on",
-                 "four":"off",
-                 "five":"on",
-                 "six":"on"
+                 "braille_letter":[{"pos":1},{"pos":2},{"pos":3},{"pos":6}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter X"),
                  "letter":"X",
-                 "one":"on",
-                 "two":"on",
-                 "three":"off",
-                 "four":"off",
-                 "five":"on",
-                 "six":"on"
+                 "braille_letter":[{"pos":1},{"pos":3},{"pos":4},{"pos":6}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter Y"),
                  "letter":"Y",
-                 "one":"on",
-                 "two":"on",
-                 "three":"off",
-                 "four":"on",
-                 "five":"on",
-                 "six":"on"
+                 "braille_letter":[{"pos":1},{"pos":3},{"pos":4},{"pos":5},{"pos":6}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter Z"),
                  "letter":"Z",
-                 "one":"on",
-                 "two":"off",
-                 "three":"off",
-                 "four":"on",
-                 "five":"on",
-                 "six":"on"
+                 "braille_letter":[{"pos":1},{"pos":3},{"pos":5},{"pos":6}]
 
              },
              {
 
                  "text": qsTr("Click on the dots in braille cell area to produce letter W"),
                  "letter":"W",
-                 "one":"off",
-                 "two":"on",
-                 "three":"on",
-                 "four":"on",
-                 "five":"off",
-                 "six":"on"
+                 "braille_letter":[{"pos":2},{"pos":4},{"pos":5},{"pos":6}]
 
              }
             ],
                 [ // Level 4
 
+
                  {
 
-                     "text": qsTr("Click on the dots in braille cell area to produce letter 0"),
-                     "letter":"0",
-                     "one":"off",
-                     "two":"off",
-                     "three":"off",
-                     "four":"on",
-                     "five":"on",
-                     "six":"on"
-
-                 },
-                 {
-
-                     "text": qsTr("Click on the dots in braille cell area to produce letter 1"),
+                     "text": qsTr("Click on the dots in braille cell area to produce number 1"),
                      "letter":"1",
-                     "one":"on",
-                     "two":"off",
-                     "three":"off",
-                     "four":"off",
-                     "five":"off",
-                     "six":"off"
+                     "braille_letter":[{"pos":1}]
 
 
                  },
                  {
 
-                     "text": qsTr("Click on the dots in braille cell area to produce letter 2"),
+                     "text": qsTr("Click on the dots in braille cell area to produce number 2"),
                      "letter":"2",
-                     "one":"on",
-                     "two":"off",
-                     "three":"on",
-                     "four":"off",
-                     "five":"off",
-                     "six":"off"
+                     "braille_letter":[{"pos":1},{"pos":2}]
 
                  },
                  {
 
-                     "text": qsTr("Click on the dots in braille cell area to produce letter 3"),
+                     "text": qsTr("Click on the dots in braille cell area to produce number 3"),
                      "letter":"3",
-                     "one":"on",
-                     "two":"on",
-                     "three":"off",
-                     "four":"off",
-                     "five":"off",
-                     "six":"off"
+                     "braille_letter":[{"pos":1},{"pos":4}]
 
                  },
                  {
 
-                     "text": qsTr("Click on the dots in braille cell area to produce letter 4"),
+                     "text": qsTr("Click on the dots in braille cell area to produce number 4"),
                      "letter":"4",
-                     "one":"on",
-                     "two":"on",
-                     "three":"off",
-                     "four":"on",
-                     "five":"off",
-                     "six":"off"
+                     "braille_letter":[{"pos":1},{"pos":4},{"pos":5}]
 
                  },
                  {
 
-                     "text": qsTr("Click on the dots in braille cell area to produce letter 5"),
+                     "text": qsTr("Click on the dots in braille cell area to produce number 5"),
                      "letter":"5",
-                     "one":"on",
-                     "two":"off",
-                     "three":"off",
-                     "four":"on",
-                     "five":"off",
-                     "six":"off"
+                     "braille_letter":[{"pos":1},{"pos":5}]
 
                  },
                  {
 
-                     "text": qsTr("Click on the dots in braille cell area to produce letter 6"),
+                     "text": qsTr("Click on the dots in braille cell area to produce number 6"),
                      "letter":"6",
-                     "one":"on",
-                     "two":"on",
-                     "three":"on",
-                     "four":"off",
-                     "five":"off",
-                     "six":"off"
+                     "braille_letter":[{"pos":1},{"pos":2},{"pos":4}]
 
                  },
                  {
 
-                     "text": qsTr("Click on the dots in braille cell area to produce letter 7"),
+                     "text": qsTr("Click on the dots in braille cell area to produce number 7"),
                      "letter":"7",
-                     "one":"on",
-                     "two":"on",
-                     "three":"on",
-                     "four":"on",
-                     "five":"off",
-                     "six":"off"
+                     "braille_letter":[{"pos":1},{"pos":2},{"pos":4},{"pos":5}]
 
                  },
                  {
 
-                     "text": qsTr("Click on the dots in braille cell area to produce letter 8"),
+                     "text": qsTr("Click on the dots in braille cell area to produce number 8"),
                      "letter":"8",
-                     "one":"on",
-                     "two":"off",
-                     "three":"on",
-                     "four":"on",
-                     "five":"off",
-                     "six":"off"
+                     "braille_letter":[{"pos":1},{"pos":2},{"pos":5}]
 
                  },
                  {
 
-                     "text": qsTr("Click on the dots in braille cell area to produce letter 9"),
+                     "text": qsTr("Click on the dots in braille cell area to produce number 9"),
                      "letter":"9",
-                     "one":"off",
-                     "two":"on",
-                     "three":"on",
-                     "four":"off",
-                     "five":"off",
-                     "six":"off"
+                     "braille_letter":[{"pos":2},{"pos":4}]
+
+                 },
+                 {
+
+                     "text": qsTr("Click on the dots in braille cell area to produce number 0"),
+                     "letter":"0",
+                     "braille_letter":[{"pos":3},{"pos":5},{"pos":6}]
 
                  }
 
+                ],
+                [ // Level 5
+                 {
+
+                     "text": qsTr("Click on the dots in braille cell area to produce symbol +"),
+                     "letter":"+",
+                     "braille_letter":[{"pos":3},{"pos":4},{"pos":6}]
+
+
+                 },
+                 {
+
+                     "text": qsTr("Click on the dots in braille cell area to produce symbol -"),
+                     "letter":"-",
+                     "braille_letter":[{"pos":3},{"pos":6}]
+
+                 },
+                 {
+
+                     "text": qsTr("Click on the dots in braille cell area to produce symbol *"),
+                     "letter":"*",
+                     "braille_letter":[{"pos":1},{"pos":6}]
+
+                 },
+                 {
+
+                     "text": qsTr("Click on the dots in braille cell area to produce symbol /"),
+                     "letter":"/",
+                     "braille_letter":[{"pos":3},{"pos":4}]
+
+                 },
+                 {
+
+                     "text": qsTr("Click on the dots in braille cell area to produce symbol #"),
+                     "letter":"#",
+                     "braille_letter":[{"pos":3},{"pos":4},{"pos":5},{"pos":6}]
+
+                 }
                 ]
         ];
 }
