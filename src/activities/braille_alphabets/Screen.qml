@@ -120,6 +120,7 @@ ActivityBase {
                                 hei: rect1.height / 3.4
                                 anchors.centerIn: rect1
                                 clickable: false
+
                             }
                         }
 
@@ -240,7 +241,6 @@ ActivityBase {
                 function correct() {
 
                     var arr = [];
-
                     for(var i  = 0; i <= 5; i++) {
                         if(circles.circles.itemAt(i).state == "on") {
                             arr.push((i+1));

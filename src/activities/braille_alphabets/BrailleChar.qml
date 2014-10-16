@@ -111,6 +111,12 @@ Item {
                             incircle1.state = "on"
                         }
                         incircle1.opacity = 1
+
+
+//                        Call the below function to print the current alphabet to the console
+//                        Activity.current_alphabet();
+
+
                     }
 
                     id : mouse1
