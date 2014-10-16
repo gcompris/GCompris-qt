@@ -61,6 +61,45 @@ function start(items_, dataset_) {
 
 }
 
+//  current_alphabet() prints current alphabet on the console
+
+function current_alphabet() {
+
+    var cur_alphabet = [];
+    var p=0;
+    for(var i  = 0; i <= 5; i++) {
+        if(items.circles.circles.itemAt(i).state == "on") {
+
+            cur_alphabet.push(({"pos":i+1}))
+            p++;
+
+        }
+    }
+
+    for(var j=0; j<3; j++ ) {
+
+        for(var i = 0;  i < dataset[j].length; ++i) {
+
+            if(dataset[j][i].braille_letter.length == cur_alphabet.length) {
+                var temp = [];
+                temp = dataset[j][i].braille_letter
+                var count1 = 0;
+                for(var t = 0; t < dataset[j][i].braille_letter.length; t++) {
+                    if(temp[t].pos == cur_alphabet[t].pos) {
+                        count1++;
+                    }
+                    else{
+                        break;
+                    }
+                }
+                if(count1 == dataset[j][i].braille_letter.length) {
+                    console.log(dataset[j][i].letter,"letter")
+                }
+           }
+        }
+    }
+}
+
 function stop() {
 }
 
