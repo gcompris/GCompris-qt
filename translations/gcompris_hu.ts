@@ -14,12 +14,12 @@
         <translation>Döntsd el, hogy egy kéz jobb vagy bal</translation>
     </message>
     <message>
-        <location filename="../src/activities/leftright/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/leftright/ActivityInfo.qml" line="13" />
         <source>Distinguish right and left hands from different points of view. Spatial representation</source>
         <translation>A jobb és bal kéz megkülönböztetése különböző nézőpontokból. Térbeli ábrázolás</translation>
     </message>
     <message>
-        <location filename="../src/activities/leftright/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/leftright/ActivityInfo.qml" line="15" />
         <source>You can see a hand: is it a left hand or a right hand? Click on the left button, or the right button depending on the displayed hand.</source>
         <translation>Egy kezet látsz: döntsd el, hogy ez egy jobb vagy bal kéz. Kattints a bal oldali vagy a jobb oldali gombra attól függően, hogy milyen kezet látsz.</translation>
     </message>
@@ -34,20 +34,20 @@
         <translation>Párosítsd azokat a kártyákat, amelyeken szereplő összeadás eredménye megegyezik, amíg az összes kártya el nem tűnik.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="12" />
         <source>Practise adding up, until all the cards are gone.</source>
         <translation>Gyakorold az összeadást, amíg az összes kártya el nem tűnik.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="13" />
         <source>Addition</source>
         <translation>Összeadás</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
 An adding-up sum looks like this: 2 + 2 = 4
 The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you'll be very good at adding-up!
@@ -71,18 +71,35 @@ Ebben a játékban a kártyák egy összeadás (összegnek is nevezett) eredmén
     </message>
     <message>
         <location filename="../src/activities/gletters/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/gletters/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/gletters/ActivityInfo.qml" line="14" />
         <source>Type the falling letters before they reach the ground</source>
         <translation>Nyomd meg a billentyűt, mielőtt a betű leérne a földre</translation>
     </message>
     <message>
-        <location filename="../src/activities/gletters/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/imageid/ActivityInfo.qml" line="9" />
+        <source>Reading practice</source>
+        <translation>Olvasógyakorlat</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/imageid/ActivityInfo.qml" line="10" />
+        <source>Practice reading by finding the word matching an image</source>
+        <translation>Gyakorold az olvasást, találd meg a képhez illő szót</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/imageid/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/traffic/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/gletters/ActivityInfo.qml" line="12" />
         <source>Letter association between the screen and the keyboard</source>
         <translation>Betűfelismerés a képernyő és a billentyűzet között</translation>
     </message>
     <message>
-        <location filename="../src/activities/gletters/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/imageid/ActivityInfo.qml" line="14" />
+        <source>Click on the word corresponding to the printed image.</source>
+        <translation>Kattints a megjelenő képnek megfelelő szóra.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/gletters/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="13" />
         <source>Keyboard manipulation</source>
         <translation>Billentyűzetkezelés</translation>
     </message>
@@ -103,12 +120,12 @@ Ebben a játékban a kártyák egy összeadás (összegnek is nevezett) eredmén
         <translation>Párosítsd azokat a kártyákat, amelyeken szereplő összeadás vagy kivonás eredménye megegyezik, amíg az összes kártya el nem tűnik.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="12" />
         <source>Practise substraction, until all the cards are gone.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="13" />
         <source>Substraction</source>
         <translation type="unfinished" />
     </message>
@@ -117,18 +134,18 @@ Ebben a játékban a kártyák egy összeadás (összegnek is nevezett) eredmén
         <translation type="vanished">Gyakorold a kivonást, amíg az összes kártya el nem tűnik.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="13" />
         <source>Addition and subtraction</source>
         <translation>Összeadás és kivonás</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found all the operations, you've won the game! :)</source>
@@ -147,9 +164,9 @@ Ebben a játékban feladatod a műveleteket párosítani az eredményeikkel. Meg
         <translation>Kattints az egérrel, hogy kitöröld a területet és felfedezd a hátteret</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/erase/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/erase/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="12" />
         <source>Motor-coordination</source>
         <translation>Mozgáskoordináció</translation>
     </message>
@@ -165,39 +182,55 @@ Ebben a játékban feladatod a műveleteket párosítani az eredményeikkel. Meg
         <translation>Rendezz négy érmét egy sorba</translation>
     </message>
     <message>
-        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/align4/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/align4/ActivityInfo.qml" line="12" />
         <source>Create a line of 4 pieces either horizontally (lying down), vertically (standing up) or diagonally.</source>
         <translation>Helyezz el négy azonos színű korongot egymás mellé vízszintesen (fektetve), függőlegesen (állítva) vagy átlósan.</translation>
     </message>
     <message>
-        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/erase/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/football/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/align4/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/fifteen/ActivityInfo.qml" line="9" />
+        <source>The fifteen game</source>
+        <translation>A tizenötös játék</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/fifteen/ActivityInfo.qml" line="10" />
+        <source>Move each item to make an increasing series: from the smallest to the largest</source>
+        <translation>Mozgasd úgy az egyes elemeket, hogy növekvő számsort kapj: a legkisebbtől a legnagyobbig</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/fifteen/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/align4/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/football/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="13" />
         <source>Mouse-manipulation</source>
         <translation>Egérkezelés</translation>
     </message>
     <message>
-        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/align4/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/fifteen/ActivityInfo.qml" line="14" />
+        <source>Click on any item that has a free block beside it, and it will be swapped with the empty block.</source>
+        <translation>Kattints egy elemre, amely mellett üres négyzet van, és szám fel lesz cserélve az üres négyzettel.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/align4/ActivityInfo.qml" line="14" />
         <source>Click the position in the line where you want to drop a piece. You can also use the arrow keys to move the piece left or right, and the down or space key to drop a piece.</source>
         <translation>Kattints a vonalon arra a helyre, ahova a következő darabot dobni akarod. Használhatod a nyilakat is a korong jobbra-balra mozgatásához, és a lefelé mutató nyilat vagy a szóközt a ledobásához.</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="14" />
         <source>Click the mouse on rectangles until all the blocks disappear.</source>
         <translation>Kattints a téglalapokra az egérrel, amíg mind el nem tűnik.</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="14" />
-        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="15" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="15" />
         <source>Animal pictures come from the Animal Photography Page of Ralf Schmode (http://schmode.net/). Ralf has kindly permitted GCompris to include his pictures. Thanks a lot, Ralf.</source>
         <translation>Az állatképek Ralf Schmode honlapjából származnak (http://schmode.net/). Ralf engedélyezte a GCompris számára a használatukat. Nagyon szépen köszönjük, Ralf!</translation>
     </message>
@@ -207,17 +240,17 @@ Ebben a játékban feladatod a műveleteket párosítani az eredményeikkel. Meg
         <translation>Hiányzó betűk</translation>
     </message>
     <message>
-        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="13" />
         <source>Training reading skills</source>
         <translation>Olvasási képességek fejlesztése</translation>
     </message>
     <message>
-        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="14" />
         <source>Word reading</source>
         <translation>Szavak olvasása</translation>
     </message>
     <message>
-        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="15" />
         <source>An object is displayed in the main area, and an incomplete word is printed under the picture. Select the missing letter to complete the word.</source>
         <translation>Egy tárgy képe jelenik meg a fő területen és alatta egy hiányos szó. Válaszd ki a hiányzó betűt a szó kiegészítéséhez.</translation>
     </message>
@@ -232,14 +265,13 @@ Ebben a játékban feladatod a műveleteket párosítani az eredményeikkel. Meg
         <translation>Mozgasd az egeret, hogy kiradírozd a mezőket és felfedezd a hátteret</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase/ActivityInfo.qml" line="14" />
         <source>Move the mouse until all the blocks disappear. You can add you own images under the directory '~/My GCompris/erase'.</source>
         <translation>Mozgasd az egeret, amíg az összes tégla el nem tűnik. Saját képeidet a „~/My GCompris/erase” könyvtárba helyezheted.</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase/ActivityInfo.qml" line="14" />
         <source>Animal pictures are taken from the Animal Photography Page of Ralf Schmode (&amp;lt;http://schmode.net/&amp;gt;) and from LE BERRE Daniel. These people kindly gave GCompris the authorization to include their pictures. Thanks a lot, both of you.</source>
-        <translation>Az állatképek Ralf Schmode honlapjából (&amp;lt;http://schmode.net/&amp;gt;) és LE BERRE Daniel-től származnak. Mindketten engedélyezték a gcompris számára a használatukat. Köszönet érte.</translation>
+        <translation type="vanished">Az állatképek Ralf Schmode honlapjából (&amp;lt;http://schmode.net/&amp;gt;) és LE BERRE Daniel-től származnak. Mindketten engedélyezték a gcompris számára a használatukat. Köszönet érte.</translation>
     </message>
     <message>
         <location filename="../src/activities/algorithm/ActivityInfo.qml" line="9" />
@@ -252,18 +284,18 @@ Ebben a játékban feladatod a műveleteket párosítani az eredményeikkel. Meg
         <translation>Egészítsd ki a szimbólumok listáját</translation>
     </message>
     <message>
-        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="12" />
         <source>Logic training activity</source>
         <translation>Logikai játék</translation>
     </message>
     <message>
-        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="13" />
         <source>Move and click the mouse</source>
         <translation>Mozgasd az egeret és kattints</translation>
     </message>
     <message>
-        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="14" />
         <source>Find the next symbol in a list.</source>
         <translation>Keresd meg a következő szimbólumot a listában.</translation>
     </message>
@@ -274,23 +306,23 @@ Ebben a játékban feladatod a műveleteket párosítani az eredményeikkel. Meg
     </message>
     <message>
         <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="10" />
         <source>Answer some algebra questions</source>
         <translation>Válaszolj néhány matematikai kérdésre</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="12" />
         <source>In a limited time, find the sum of of two numbers. Introduction to simple in-line addition.</source>
         <translation>Adott idő alatt találd meg két szám összegét. Bevezetés az egyszerű összeadásba.</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="13" />
         <source>Simple addition. Can recognize written numbers</source>
         <translation>Egyszerű összeadás. Képes felismerni írott számokat</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="14" />
         <source>An addition problem with two numbers is displayed. At the right of the equals sign, give the answer, the sum. Use the left and right arrows to modify your answer and press the Enter key to check if you've got it right. If not, just try again.</source>
         <translation>Két szám összeadása van felírva. Az egyenlőségjel jobb oldalán add meg a választ, az összeget. A válasz módosításához használd a jobbra és balra nyilakat. Ha kész vagy, nyomd meg az Entert a válaszod ellenőrzéséhez. Ha hibás, próbáld újra.</translation>
     </message>
@@ -305,20 +337,20 @@ Ebben a játékban feladatod a műveleteket párosítani az eredményeikkel. Meg
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="30" />
-        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/planegame/ActivityInfo.qml" line="31" />
+        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="31" />
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/planegame/ActivityInfo.qml" line="32" />
         <source>Numeration training</source>
         <translation>Számlálási gyakorlat</translation>
     </message>
     <message>
-        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="31" />
-        <location filename="../src/activities/planegame/ActivityInfo.qml" line="32" />
+        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="32" />
+        <location filename="../src/activities/planegame/ActivityInfo.qml" line="33" />
         <source>Number</source>
         <translation>Számok</translation>
     </message>
     <message>
-        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="32" />
+        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="33" />
         <source>Catch the odd or even numbers, using the up, down, right and left arrows on the keyboard to move the helicopter.</source>
         <translation type="unfinished" />
     </message>
@@ -333,17 +365,17 @@ Ebben a játékban feladatod a műveleteket párosítani az eredményeikkel. Meg
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="30" />
+        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="31" />
         <source>Alphabet training</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="31" />
+        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="32" />
         <source>Can decode letters</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="32" />
+        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="33" />
         <source>Catch the alphabet letters, using the up, down, right and left arrows on the keyboard to move the helicopter.</source>
         <translation type="unfinished" />
     </message>
@@ -358,25 +390,25 @@ Ebben a játékban feladatod a műveleteket párosítani az eredményeikkel. Meg
         <translation>Szorzási memóriajáték Tux ellen</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="10" />
         <source>Turn the cards over to find two numbers which multiply the same, until all the cards are gone.</source>
         <translation>Fordítsd meg a kártyákat és párosítsd azokat, amelyeken szereplő szorzások eredménye megegyezik, amíg az összes kártya el nem tűnik.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="12" />
         <source>Practise multiplication, until all the cards are gone.</source>
         <translation>Gyakorold a szorzást, amíg az összes kártya el nem tűnik.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="13" />
         <source>Multiplication</source>
         <translation>Szorzás</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more then Tux and you've won the game! :)</source>
@@ -394,13 +426,13 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Rakd ki a mozaikot</translation>
     </message>
     <message>
-        <location filename="../src/activities/mosaic/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/mosaic/ActivityInfo.qml" line="14" />
         <source>Rebuild the same mosaic on the right area</source>
         <translation>Rakd ki ugyanezt a mozaikot a jobb oldalon</translation>
     </message>
     <message>
-        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="9" />
         <location filename="../src/activities/money/ActivityInfo.qml" line="9" />
+        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="9" />
         <source>Money</source>
         <translation>Pénz</translation>
     </message>
@@ -410,24 +442,24 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Gyakorold a pénz használatát, az aprópénzzel együtt</translation>
     </message>
     <message>
-        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/money/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/money/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="12" />
         <source>You must buy the different items and give the exact price. At higher levels, several items are displayed, and you must first calculate the total price.</source>
         <translation>Ha meg akarod venni a különböző tárgyakat, a pontos árat kell adnod értük. Magasabb szinteken több tárgy jelenik meg, ekkor fizetés előtt ki kell számolnod az összesített árat.</translation>
     </message>
     <message>
-        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/money/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/money_back/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/money_back/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/money/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="13" />
         <source>Can count</source>
         <translation>Tud számolni</translation>
     </message>
     <message>
-        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/money/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/money_back/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/money_back/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/money/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="14" />
         <source>Click on the coins or paper money at the bottom of the screen to pay. If you want to remove a coin or note, click on it on the upper screen area.</source>
         <translation>Kattints a fém- vagy papírpénzekre a képernyő alján a fizetéshez. Ha el akarsz távolítani egy érmét vagy papírpénzt, akkor kattints rá a képernyő felső részén.</translation>
     </message>
@@ -443,20 +475,20 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Hallgasd meg a betűt, majd kattints rá</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="12" />
         <source>Letter-name recognition</source>
         <translation>Betű-név felismerés</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="13" />
         <source>Visual letter-recognition. Can move the mouse.</source>
         <translation>Leírt betűk felismerése. Tudja mozgatni az egeret.</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="14" />
         <source>A letter is spoken. Click on the matching letter in the main area. You can listen to the letter again, by clicking on the mouth icon in the bottom box.</source>
         <translation>Egy hangot hallasz. Kattints az ennek megfelelő betűre a fő területen. Ha a száj ikonra kattintasz, újra hallhatod a hangot.</translation>
     </message>
@@ -467,8 +499,8 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Fordítsd meg a kártyákat és találd meg a kivonásokat, amiknek ugyanaz az eredménye, amíg az összes kártya el nem tűnik.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="12" />
         <source>Practise addition, subtraction, until all the cards are gone.</source>
         <translation>Gyakorold az összeadást és kivonást, amíg a kártyák el nem fogynak.</translation>
     </message>
@@ -483,7 +515,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Mozgasd a helikoptert, hogy a helyes sorrendben repülhess át a felhőkön</translation>
     </message>
     <message>
-        <location filename="../src/activities/planegame/ActivityInfo.qml" line="33" />
+        <location filename="../src/activities/planegame/ActivityInfo.qml" line="34" />
         <source>Catch the numbers in increasing order, using the up, down, right and left arrows on the keyboard to move the helicopter.</source>
         <translation>Fogd el a számokat növekvő sorrendben a fel, le, jobbra és balra nyilak használatával a helikopter mozgatásához.</translation>
     </message>
@@ -499,8 +531,8 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Gyakorold a pénz használatát az apró visszaadásával Tuxnak</translation>
     </message>
     <message>
-        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/money_back/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/money_back/ActivityInfo.qml" line="12" />
         <source>Tux bought you different items and shows you his money. You must give him back his change. At higher levels, several items are displayed, and you must first calculate the total price.</source>
         <translation>Tux vett tőled néhány dolgot, de csak nagyobb címlettel tud fizetni. Add vissza neki a visszajárót. Magasabb szinteken több tárgy jelenik meg, ekkor fizetés előtt ki kell számolnod az összesített árat.</translation>
     </message>
@@ -515,7 +547,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Hogy gólt lőhess, kattints duplán a bal egérgombbal a labdára.</translation>
     </message>
     <message>
-        <location filename="../src/activities/penalty/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/penalty/ActivityInfo.qml" line="14" />
         <source>Double click the mouse on the ball to kick it. You can double click the left right or middle mouse button. If you lose, Tux catches the ball. You must click on it to bring it back to its former position</source>
         <translation>Kattints kétszer a labdára az elrúgásához. A bal, középső vagy jobb egérgombbal is kattinthatsz. Ha Tux elkapja a labdát, veszítesz. Kattints a labdára a kiinduló helyzetbe állításához.</translation>
     </message>
@@ -540,17 +572,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Kattints a megfelelő színre</translation>
     </message>
     <message>
-        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="12" />
         <source>Learn to recognize unusual colors.</source>
         <translation>Nem szokványos színek felismerésének megtanulása.</translation>
     </message>
     <message>
-        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="13" />
         <source>Can read</source>
         <translation>Tud olvasni</translation>
     </message>
     <message>
-        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="14" />
         <source>Click on the correct colored butterfly.</source>
         <translation>Kattints a megfelelő színű pillangóra.</translation>
     </message>
@@ -560,17 +592,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Gyakorold a szorzást</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="12" />
         <source>In a limited time, give the product of two numbers</source>
         <translation>Adott idő alatt add meg két szám szorzatát</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="13" />
         <source>Multiplication table</source>
         <translation>Szorzótábla</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="14" />
         <source>A multiplication of two numbers is displayed. At the right of the equals sign, give the answer, the product. Use the left and right arrows to modify your answer and press the Enter key to check if you've got it right. If not, just try again.</source>
         <translation>Két szám szorzása jelenik meg. Az egyenlőségjel jobb oldalán add meg az eredményt, a szorzatot. A válasz módosításához használd a jobbra és balra nyilakat. Ha kész vagy, nyomd meg az Entert a válaszod ellenőrzéséhez. Ha hibás, próbáld újra.</translation>
     </message>
@@ -581,7 +613,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     </message>
     <message>
         <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="29" />
-        <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="32" />
+        <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="33" />
         <source>Press the two shift keys at the same time, to make the ball go in a straight line.</source>
         <translation>Nyomd meg egyszerre a két shift gombot, hogy a labda egyenes vonalban haladjon.</translation>
     </message>
@@ -591,17 +623,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Gyakorold a kivonást</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="12" />
         <source>In a limited time, find the difference between two numbers</source>
         <translation>Adott idő alatt találd meg két szám különbségét</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="13" />
         <source>Simple subtraction</source>
         <translation>Egyszerű kivonás</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="14" />
         <source>A subtraction problem with two numbers is displayed. At the right of the equals sign, give the answer, the difference. Use the left and right arrows to modify your answer and press the Enter key to check if you've got it right. If not, just try again.</source>
         <translation>Két szám kivonása van felírva. Az egyenlőségjel jobb oldalán add meg a választ, a különbségüket. A válasz módosításához használd a jobbra és balra nyilakat. Ha kész vagy, nyomd meg az Entert a válaszod ellenőrzéséhez. Ha hibás, próbáld újra.</translation>
     </message>
@@ -611,24 +643,24 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Osztási memóriajáték</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="10" />
         <source>Turn the cards over to find a matching operation, until all the cards are gone.</source>
         <translation>Fordítsd meg a kártyákat és párosítsd a műveleteket az eredményekkel, amíg az összes kártya el nem tűnik.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="12" />
         <source>Practise division, until all the cards are gone.</source>
         <translation>Gyakorold az összeadást, amíg az összes kártya el nem tűnik.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="13" />
         <source>Division</source>
         <translation>Osztás</translation>
     </message>
@@ -643,12 +675,12 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Találd meg az epret a kék mezőkre kattintva</translation>
     </message>
     <message>
-        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="12" />
         <source>Logic-training activity</source>
         <translation>Logikai játék</translation>
     </message>
     <message>
-        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="14" />
         <source>Try to find the strawberry under the blue fields. The fields become redder as you get closer.</source>
         <translation>Próbáld megtalálni az epret a kék mezők alatt. A mezők annál pirosabbak lesznek, minél közelebb jutsz.</translation>
     </message>
@@ -724,12 +756,12 @@ Gyorsbillentyűk:
         <translation>Kattints a megfelelő hangszerre</translation>
     </message>
     <message>
-        <location filename="../src/activities/instruments/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/instruments/ActivityInfo.qml" line="12" />
         <source>Learn to recognize musical instruments.</source>
         <translation>Tanuld meg felismerni a hangszereket.</translation>
     </message>
     <message>
-        <location filename="../src/activities/instruments/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/instruments/ActivityInfo.qml" line="14" />
         <source>Click on the correct instrument.</source>
         <translation>Kattints a megfelelő hangszerre.</translation>
     </message>
@@ -744,19 +776,19 @@ Gyorsbillentyűk:
         <translation>Szorzási és osztási memóriajáték Tux ellen</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="12" />
         <source>Practise multiplication, division, until all the cards are gone.</source>
         <translation>Gyakorold a szorzást és osztást, amíg az összes kártya el nem tűnik.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="13" />
         <source>Multiplication, division</source>
         <translation>Szorzás, osztás</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more than Tux and you've won the game! :)</source>
@@ -773,17 +805,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Kattints a bal egérgombbal a halakra, mielőtt kiúsznának az akváriumból</translation>
     </message>
     <message>
-        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="12" />
         <source>Motor coordination: moving and clicking the mouse.</source>
         <translation>Mozgáskoordináció: egérmozgatás és kattintás.</translation>
     </message>
     <message>
-        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="14" />
         <source>Use the left mouse button to click on the moving fish. A level 5 and after, a double click is mandatory.</source>
         <translation>Kattints a bal egérgombbal a mozgó halra. Az 5-ös szinttől kezdve a dupla kattintás kötelező.</translation>
     </message>
     <message>
-        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="15" />
         <source>Fish are taken from the Unix utility xfishtank. All image credits belong to Guillaume Rousse.</source>
         <translation>A halakat ábrázoló képek az „xfishtank” nevű Unix alkalmazásból származnak, és Guillame Rousse-nak köszönhetők.</translation>
     </message>
@@ -798,7 +830,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Kattints duplán az egérrel, hogy kitöröld a területet és felfedezd a hátteret</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="14" />
         <source>Double click the mouse on rectangles until all the blocks disappear.</source>
         <translation>Kattints duplán a téglalapokra az egérrel, amíg mind el nem tűnik.</translation>
     </message>
@@ -823,20 +855,20 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Hangmemória-játék Tux ellen</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="12" />
         <source>Train your audio memory and remove all the violinists Tux.</source>
         <translation>Edzd a hangmemóriád, és távolítsd el az összes hegedűművész Tuxot.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="13" />
         <source>Mouse manipulation, Brain.</source>
         <translation>Egérkezelés, gondolkodás.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="14" />
         <source>A set of violinist Tux is shown. Each Tux has an associated sound, and each sound has a twin exactly the same. Click on a Tux to see its hidden sound, and try to match the twins. You can only activate two Tux at once, so you need to remember where a sound is, while you listen to its twin. When you turn over the twins, they both disappear.</source>
         <translation>Néhány hegedűművész Tux jelenik meg. Minden egyes Tuxhoz társítva van egy hang, és minden hangnak van egy teljesen azonos párja. Kattints egy Tuxra a rejtett hang meghallgatásához és próbáld megkeresni a párját. Egyszerre csak két Tuxot aktiválhatsz, így meg kell jegyezned a hangok helyét, míg a párját hallgatod. Ha a párokra kattintasz, akkor mindkettő eltűnik.</translation>
     </message>
@@ -856,19 +888,19 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Minden műveletet tartalmazó memóriajáték Tux ellen</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="12" />
         <source>Practise addition, subtraction, multiplication, division, until all the cards are gone.</source>
         <translation>Gyakorold az összeadást, kivonást, szorzást és osztást, amíg az összes kártya el nem tűnik.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="13" />
         <source>Addition, subtraction, multiplication, division</source>
         <translation>Összeadás, kivonás, szorzás, osztás</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more than Tux, you've won the game! :)</source>
@@ -885,17 +917,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Kattints a megfelelő színre</translation>
     </message>
     <message>
-        <location filename="../src/activities/colors/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/colors/ActivityInfo.qml" line="12" />
         <source>This board teaches you to recognize different colors. When you hear the name of the color, click on the duck wearing it.</source>
         <translation>Ez a tábla a különböző színek felismerésére tanít. Amikor a szín nevét hallod, kattints az adott színű kacsára.</translation>
     </message>
     <message>
-        <location filename="../src/activities/colors/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/colors/ActivityInfo.qml" line="13" />
         <source>Can move the mouse.</source>
         <translation>Mozgatni tudja az egeret.</translation>
     </message>
     <message>
-        <location filename="../src/activities/colors/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/colors/ActivityInfo.qml" line="14" />
         <source>Listen to the color and click on the matching duck.</source>
         <translation>Hallgasd meg a szín nevét, majd kattints a megfelelő kacsára.</translation>
     </message>
@@ -920,18 +952,18 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory/ActivityInfo.qml" line="12" />
         <source>Train your memory and remove all the cards</source>
         <translation>Edzd a memóriádat és távolítsd el az összes kártyát</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="14" />
         <source>A set of blank cards is shown. Each card has a picture on the other side, and each picture card has a twin exactly the same. Click on a card to see its hidden picture, and try to match the twins. You can only turn over two cards at once, so you need to remember where a picture is, while you look for its twin. When you turn over the twins, they both disappear. Tux teacher do the same.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory/ActivityInfo.qml" line="14" />
         <source>A set of blank cards is shown. Each card has a picture on the other side, and each picture card has a twin exactly the same. Click on a card to see its hidden picture, and try to match the twins. You can only turn over two cards at once, so you need to remember where a picture is, while you look for its twin. When you turn over the twins, they both disappear.</source>
         <translation>Néhány lefordított kártyát látsz. Minden kártya lefordított oldalán egy kép van, és minden képnek van egy párja. Egy kártya megfordításához kattints rá, és próbáld megtalálni a párját. Azonban egyszerre csak két kártyát fordíthatsz meg. Meg kell jegyezned a képek helyét, amíg a párját keresed. Ha egy kártyapár mindkét lapját megfordítod, mindkettő el fog tűnni.</translation>
     </message>
@@ -946,12 +978,12 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>A fény színeinek keverésének megértése.</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="12" />
         <source>Mix the primary colors to match to the given color.</source>
         <translation>Keverd össze az elsődleges színeket, hogy megkapd a megadott színt.</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="14" />
         <source>
 The activity deals with mixing primary colors of light (additive mixing).
 
@@ -974,21 +1006,21 @@ A fény esete a festékekkel való színkeverés ellentéte! Minél több fényt
         <translation>Találd meg a kijáratot a labirintusból</translation>
     </message>
     <message>
-        <location filename="../src/activities/maze/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="12" />
         <source>Help Tux get out of this maze.</source>
         <translation>Segíts Tuxnak, hogy kitaláljon a labirintusból.</translation>
     </message>
     <message>
-        <location filename="../src/activities/maze/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="13" />
         <source>Can use the keyboard arrow to move an object.</source>
         <translation>Kezelni tudja a billentyűzeten lévő nyilakat egy elem mozgatásához.</translation>
     </message>
     <message>
-        <location filename="../src/activities/maze/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="14" />
         <source>Use the keyboard arrows to move Tux up to the door.
 
 At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
@@ -1021,7 +1053,7 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <translation>Találd meg a kijáratot a labirintusból (a mozgás relatív)</translation>
     </message>
     <message>
-        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="14" />
         <source>Use the keyboard arrows to move Tux up to the door. In this maze, the move is relative (first person). Use the up arrow to go forward. The other arrows let you turn Tux in another direction.
 
 At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
@@ -1054,12 +1086,12 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <translation>Színkeverés megértése.</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="12" />
         <source>Mix the primary colors to match to the given color</source>
         <translation>Keverd össze az elsődleges színeket, hogy megkapd a megadott színt</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="14" />
         <source>
 The activity deals with mixing primary colors of paint (subtractive mixing).
 
@@ -1082,12 +1114,12 @@ Festékek esetén a tinta elnyeli a ráeső különböző színű fénysugarakat
         <translation>Gépeld be a leeső szavakat, mielőtt leérnének a földre</translation>
     </message>
     <message>
-        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="12" />
         <source>Keyboard training</source>
         <translation>Billentyűzetkezelés gyakorlása</translation>
     </message>
     <message>
-        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="14" />
         <source>Type the complete word as it falls, before it reaches the ground</source>
         <translation>Gépeld be a leeső teljes szót, mielőtt az leérne a földre</translation>
     </message>
@@ -1102,7 +1134,7 @@ Festékek esetén a tinta elnyeli a ráeső különböző színű fénysugarakat
         <translation>Találd meg a kijáratot a láthatatlan labirintusból</translation>
     </message>
     <message>
-        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="14" />
         <source>Use the keyboard arrows to move Tux up to the door. Use the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
 
 At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
@@ -1135,17 +1167,17 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <translation>Tanuld meg az órát olvasni</translation>
     </message>
     <message>
-        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="12" />
         <source>Distinguish between time-units (hour, minute and second). Set and display time on a clock.</source>
         <translation>Az óra, perc és másodperc megkülönböztetése. Az idő beállítása és megjelenítése egy órán.</translation>
     </message>
     <message>
-        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="13" />
         <source>The concept of time. Reading the time.</source>
         <translation>Időfogalom. Az idő olvasása.</translation>
     </message>
     <message>
-        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="14" />
         <source>Set the clock to the time given, in the time-units shown (hours:minutes or hours:minutes:seconds). Click on the different arrows, and move the mouse, to make the numbers go up or down.</source>
         <translation>Állítsd be az órát a megadott időre a megjelenített időegységekben (óra:perc vagy óra:perc:másodperc). Kattints a különböző nyilakra és mozgasd az egeret a számok növeléséhez és csökkentéséhez.</translation>
     </message>
@@ -1156,17 +1188,17 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
     </message>
     <message>
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="12" />
         <source>The aim is to switch off all the lights.</source>
         <translation>A cél az összes fény lekapcsolása.</translation>
     </message>
     <message>
-        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="14" />
         <source>The effect of pressing a button is to toggle the state of that button, and of its immediate vertical and horizontal neighbors. The sun and the color of the sky depend on the number of clicks needed to solve the puzzle. If you click on Tux, the solution is shown.</source>
         <translation>A gomb megnyomásának hatására a gomb állapota átvált, és a közvetlen vízszintes és függőleges szomszédaié is. A nap és az ég színe a feladvány megoldásához szükséges kattintások számától függ. Ha Tuxra kattintasz, megjelenik a megoldás.</translation>
     </message>
     <message>
-        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="15" />
         <source>The solver algorithm is described on Wikipedia. To know more about the Lights Off game: &amp;lt;http://en.wikipedia.org/wiki/Lights_Out_(game)&amp;gt;</source>
         <translation>A megoldó algoritmust a Wikipédia ismerteti. A Fények le játék alaposabb megismeréséhez keresd fel a &amp;lt;http://en.wikipedia.org/wiki/Lights_Out_(game)&amp;gt; oldalt.</translation>
     </message>
@@ -1181,12 +1213,12 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <translation>Helyezd el a tárgyakat úgy, hogy a legkönnyebb legyen őket megszámolni</translation>
     </message>
     <message>
-        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="13" />
         <source>Basic enumeration</source>
         <translation>Egyszerű számlálás</translation>
     </message>
     <message>
-        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="14" />
         <source>First, properly organize the items so that you can count them. Then, select the item you want to answer in the bottom right area. Enter the answer with the keyboard and press the OK button or the 'Enter' key.</source>
         <translation>Először rendezd a tárgyakat, így megszámolhatod őket. Aztán válaszd ki a jobb alsó területen, hogy melyik tárgy számát akarod megválaszolni. Írd be a válaszod, majd kattints az OK gombra, vagy nyomd meg az Entert.</translation>
     </message>
@@ -1197,17 +1229,17 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
     </message>
     <message>
         <location filename="../src/activities/reversecount/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="12" />
         <source>Tux is hungry. Help him find fish by counting to the correct ice spot.</source>
         <translation>Tux éhes. A megfelelő jégkockáig számolva segíthetsz neki halakat találni.</translation>
     </message>
     <message>
-        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="13" />
         <source>Can move the mouse, can read numbers and subtract numbers up to 10 for the first level</source>
         <translation>Mozgatni tudja az egeret, tudja olvasni a számokat és - az első szinthez - 10-ig ki tud vonni</translation>
     </message>
     <message>
-        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="14" />
         <source>Click on the dice to show how many ice spots there are between Tux and the fish. Click the dice with the right mouse button to count backwards. When done, click on the OK button or hit the Enter key.</source>
         <translation>A dobókockára kattintva mutasd meg, hogy hány jégkocka van Tux és a hal között. A jobb egérgombbal kattintva a kockára visszafelé számolhatsz. Ha kész vagy, kattints az OK gombra, vagy nyomd meg az Entert.</translation>
     </message>
@@ -1223,17 +1255,17 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <translation>Számold meg, hány elem marad a bűvös kalap alatt, miután néhány eltűnik</translation>
     </message>
     <message>
-        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="12" />
         <source>Learn subtraction</source>
         <translation>A kivonás tanulása</translation>
     </message>
     <message>
-        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="13" />
         <source>Subtraction</source>
         <translation>Kivonás</translation>
     </message>
     <message>
-        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="14" />
         <source>Look at the magician, he tells the number of stars that are under his magic hat. Then, click on the hat to open it. A few stars escape. Click again on the hat to close it. You have to count how many are still under the hat. Click on the bottom right area to answer.</source>
         <translation>A varázsló elárulja, hány csillag van mágikus kalapja alatt. Kattints a kalapra - ekkor az kicsit felemelkedik és néhány csillag megszökik. Kattints megint a kalapra, hogy bezáródjon a rés! Add meg a jobb alsó részen, hogy hány csillag maradt a kalap alatt!</translation>
     </message>
@@ -1248,14 +1280,18 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <translation>Lődd a labdát a célba</translation>
     </message>
     <message>
-        <location filename="../src/activities/football/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/football/ActivityInfo.qml" line="12" />
         <source>Kick the ball into the black hole on the right</source>
         <translation>Lődd a labdát a jobb oldali fekete lyukba</translation>
     </message>
     <message>
-        <location filename="../src/activities/football/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/football/ActivityInfo.qml" line="14" />
+        <source>Point the mouse and click on the ball, to set the speed and direction of the ball.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <source>Point the mouse and click on the ball, to set the speed and direction of the ball. The closer you click to the center, the slower the ball moves.</source>
-        <translation>Az irány és a sebesség megadásához mutass és kattints a labdára. Minél közelebb kattintasz a középponthoz, a labda annál lassabban mozog.</translation>
+        <translation type="vanished">Az irány és a sebesség megadásához mutass és kattints a labdára. Minél közelebb kattintasz a középponthoz, a labda annál lassabban mozog.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="5" />
@@ -1263,17 +1299,17 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="6" />
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="6" />
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="6" />
-        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="6" />
         <source>Use the arrow keys to navigate around the board and to avoid the Troggles. Press the space bar to eat the number</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="6" />
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="6" />
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="6" />
+        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="6" />
         <source>Touch cells to move around the board and to avoid the Troggles. Press the Muncher to eat the number</source>
         <translation type="unfinished" />
     </message>
@@ -1288,7 +1324,7 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <translation>Irányítsd a Számfalót a prímszámokra.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="17" />
+        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="18" />
         <source>Learn about prime numbers.</source>
         <translation type="unfinished" />
     </message>
@@ -1308,8 +1344,8 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <translation>Irányítsd a Számfalót a képernyő tetején látható szám többszöröseire.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="17" />
-        <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="17" />
+        <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="18" />
+        <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="18" />
         <source>Learn about multiples and factors.</source>
         <translation>Tanulj a többszörösökről és a osztókról.</translation>
     </message>
@@ -1319,12 +1355,12 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <translation>Számold meg, hány elem van a bűvös kalap alatt</translation>
     </message>
     <message>
-        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="12" />
         <source>Learn addition</source>
         <translation>Összeadás megtanulása</translation>
     </message>
     <message>
-        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="14" />
         <source>Click on the hat to open or close it. Under the hat, how many stars can you see moving around? Count carefully. :) Click in the bottom-right area to input your answer.</source>
         <translation>Kattints a kalapra a felnyitásához vagy lecsukásához. A kalap alatt hány csillagot látsz mozogni? Alaposan számold meg! :) A válaszod beírásához kattints a jobb alsó területre.</translation>
     </message>
@@ -1339,18 +1375,18 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <translation>Irányítsd a Számfalót a képernyő tetején látható számmal egyenlő kifejezésekre.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="12" />
         <source>Practice addition, multiplication, division and subtraction.</source>
         <translation>Gyakorold az összeadást, szorzást, osztást és kivonást.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="14" />
         <source>Use the arrow keys to navigate around the board and to avoid the Troggles. Press the space bar to eat a number</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="14" />
         <source>Touch cells to move around the board and to avoid the Troggles. Press the muncher to eat the number</source>
         <translation type="unfinished" />
     </message>
@@ -1380,7 +1416,7 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <translation>Irányítsd a Számfalót a képernyő tetején látható számmal nem egyező kifejezésekre.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="12" />
         <source>Practice addition, subtraction, multiplication and division.</source>
         <translation>Gyakorold az összeadást, kivonást, szorzást és osztást.</translation>
     </message>
@@ -1390,26 +1426,26 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <translation>Számok kockapárokkal</translation>
     </message>
     <message>
-        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="10" />
         <source>Count the number of dots on dice before they reach the ground</source>
         <translation>Számold meg a pontokat a dobókockán, mielőtt az leérne a földre</translation>
     </message>
     <message>
-        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="12" />
         <source>In a limited time, count the number of dots</source>
         <translation>Adott időn belül a pontok megszámolása</translation>
     </message>
     <message>
-        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="13" />
         <source>Counting skills</source>
         <translation>Számolási képesség</translation>
     </message>
     <message>
-        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="14" />
         <source>With the keyboard, type the number of dots you see on the falling dice.</source>
         <translation>A billentyűzeten írd be a leeső kockán lévő pontok számát.</translation>
     </message>
@@ -1429,17 +1465,17 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <translation>Párosítsd azokat a kártyákat, amelyeken a szám megfelel a leírt nevének.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="12" />
         <source>Reading numbers, memory.</source>
         <translation>Számok olvasása, memória.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="13" />
         <source>Reading</source>
         <translation>Olvasás</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding a number of number, or the word of the number.</source>
         <translation>Néhány lefordított kártyát látsz. Minden kártya másik oldalán egy számjegy, vagy egy betűvel leírt szám rejtőzik.</translation>
     </message>
@@ -1454,12 +1490,12 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <translation>Tuxnak meg kell öntöznie a virágokat, de a cső eldugult.</translation>
     </message>
     <message>
-        <location filename="../src/activities/followline/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/followline/ActivityInfo.qml" line="12" />
         <source>Fine motor coordination</source>
         <translation>Finommozgás-koordináció</translation>
     </message>
     <message>
-        <location filename="../src/activities/followline/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/followline/ActivityInfo.qml" line="14" />
         <source>Move the mouse over the red part of the hose-pipe. This will move it, bringing it, part by part, up to the flowers. Be careful, if you move off the hose, the red part will go back down.</source>
         <translation>Vidd az egeret a locsolócső piros része fölé. Ezzel mozgathatod és lépésről lépésre kiengedheted a vizet, egészen a virágokig. Légy óvatos, ha az egérmutató elhagyja a csövet, akkor a piros rész visszamegy.</translation>
     </message>
@@ -1469,17 +1505,17 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="12" />
         <source>Practise subtraction, until all the cards are gone. Tux do the same</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="13" />
         <source>subtraction</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more operations than Tux and you've won the game! :)</source>
@@ -1496,17 +1532,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Találd el a táblát és számold össze a pontjaid</translation>
     </message>
     <message>
-        <location filename="../src/activities/target/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/target/ActivityInfo.qml" line="12" />
         <source>Throw darts at a target and count your score.</source>
         <translation>Dobd a nyilakat a céltáblára, majd számold össze a pontjaidat.</translation>
     </message>
     <message>
-        <location filename="../src/activities/target/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/target/ActivityInfo.qml" line="13" />
         <source>Can move the mouse, can read numbers and count up to 15 for the first level</source>
         <translation>Kezelni tudja az egeret, számolni tud 15-ig (az első szinthez)</translation>
     </message>
     <message>
-        <location filename="../src/activities/target/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/target/ActivityInfo.qml" line="14" />
         <source>Check the wind speed and direction, and then click on the target to launch a dart. When you all your darts are thrown, a window appears asking you to count your score. Enter the score with the keyboard then press the Enter key or the OK button.</source>
         <translation>Elsőként ellenőrizd a szél irányát és erősségét, majd kattints a céltáblára egy nyíl elindításához. Ha minden nyilat ellőttél, megjelenik egy új ablak, ide írd be, hány pontot szereztél. Ha kész vagy, kattints az OK gombra, vagy nyomd meg az Entert.</translation>
     </message>
@@ -1516,22 +1552,26 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Aranyásás</translation>
     </message>
     <message>
-        <location filename="../src/activities/mining/ActivityInfo.qml" line="10" />
         <source>Use the mousewheel to approach the rockwall an look for gold nuggets.</source>
+        <translation type="vanished">Az egérgörgővel közelíts meg egy sziklafalat, és keress aranyrögöket.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/mining/ActivityInfo.qml" line="10" />
+        <source>Use the mousewheel to approach the rockwall and look for gold nuggets.</source>
         <translation>Az egérgörgővel közelíts meg egy sziklafalat, és keress aranyrögöket.</translation>
     </message>
     <message>
-        <location filename="../src/activities/mining/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/mining/ActivityInfo.qml" line="12" />
         <source>Learn to use the mousewheel to zoom in and out.</source>
         <translation>Az egérgörgő nagyításra való használatának megtanulása.</translation>
     </message>
     <message>
-        <location filename="../src/activities/mining/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/mining/ActivityInfo.qml" line="13" />
         <source>You should be familiar with moving the mouse and clicking.</source>
         <translation>Ismerned kell az egér mozgatását és a kattintást.</translation>
     </message>
     <message>
-        <location filename="../src/activities/mining/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/mining/ActivityInfo.qml" line="14" />
         <source>Looking at the rockwall, you can see a sparkle somewhere. Move the mouse cursor next to this sparkle and use the mousewheel to zoom in. If you zoomed in at maximum, a gold nugget will appear at the position of the sparkle. Click on the gold nugget to collect it.
 
 Having collected the nugget, use the mousewheel to zoom out again. If you zoomed out at maximum, another sparkle will appear, showing the next gold nugget to collect. Collect enough nuggets to complete the level.
@@ -1552,7 +1592,7 @@ Az ismertető indításához kattints Tux professzorra az első szinten, és fig
 Jó szórakozást! :)</translation>
     </message>
     <message>
-        <location filename="../src/activities/mining/ActivityInfo.qml" line="22" />
+        <location filename="../src/activities/mining/ActivityInfo.qml" line="23" />
         <source>Thanks to the Tuxpaint team for providing the following sounds under GPL:
 - realrainbow.ogg - used when a new gold nugget appears
 - metalpaint.wav - remixed and used when a gold nugget is collected</source>
@@ -1566,7 +1606,7 @@ Jó szórakozást! :)</translation>
         <translation>Összeadási és kivonási memóriajáték Tux ellen</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more than Tux,  and you've won the game! :)</source>
@@ -1583,12 +1623,12 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Párosítsd azokat a kártyákat, amelyeken a szám megegyezik a képen láthatóval.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="12" />
         <source>Numeration training, memory.</source>
         <translation>Számlálási gyakorlat, memória.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding a number of pictures, or the written number.</source>
         <translation>Néhány lefordított kártyát látsz. Minden kártya lefordított oldalán vagy a képek száma, vagy egy leírt szám látható.</translation>
     </message>
@@ -1603,7 +1643,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
 An adding-up sum looks like this: 2 + 2 = 4
 The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you'll be very good at adding-up!
@@ -1622,11 +1662,179 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation>Osztási memóriajáték Tux ellen</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more than TUX and you've won the game! :)</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/drawnumber/ActivityInfo.qml" line="9" />
+        <source>drawnumber activity</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/drawnumber/ActivityInfo.qml" line="10" />
+        <source>Click on numbers in the rigth order.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/drawnumber/ActivityInfo.qml" line="12" />
+        <source>Can count from 1 to 50.</source>
+        <translation>Számok ismerete 1-től 50-ig.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/drawnumber/ActivityInfo.qml" line="14" />
+        <source>Draw the picture by clicking on each numbers in the right order.</source>
+        <translation>A számokra sorrendben kattintva rajzold meg a képet.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ActivityInfo.qml" line="9" />
+        <location filename="../src/activities/scalesboard_weight/ActivityInfo.qml" line="9" />
+        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="9" />
+        <source>Balance the scales properly</source>
+        <translation>Tartsd egyensúlyban a mérleget</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ActivityInfo.qml" line="10" />
+        <source>Drag and Drop masses to balance the scales and calculate the weight in the avoirdupois unit</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/scalesboard_weight/ActivityInfo.qml" line="12" />
+        <source>Mental calculation, arithmetic equality, unit conversion</source>
+        <translation>Fejszámolás, aritmetikai egyenlőség, mértékegység-átváltás</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ActivityInfo.qml" line="14" />
+        <source>To balance the scales, move the masses on the left or the right side. Take care of the weight and the unit of the masses, remember that a pound (lb) is sixteen ounce (oz). They can be arranged in any order.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/traffic/ActivityInfo.qml" line="9" />
+        <source>A sliding-block puzzle game</source>
+        <translation>Egy tologatós kirakójáték</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/traffic/ActivityInfo.qml" line="10" />
+        <source>Remove the red car from the parking lot through the gate on the right</source>
+        <translation>Vezesd ki a piros autót a parkolóból a jobb oldali kapun keresztül</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/traffic/ActivityInfo.qml" line="14" />
+        <source>Each car can only move either horizontally or vertically. You must make some room in order to let the red car move through the gate on the right.</source>
+        <translation>Minden autó csak vízszintesen vagy függőlegesen mozoghat. Úgy kell elrendezned őket, hogy a piros autó ki tudjon menni a jobb oldali kapun.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/canal_lock/ActivityInfo.qml" line="9" />
+        <source>Operate a canal lock</source>
+        <translation>Üzemeltesd a zsilipet</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/canal_lock/ActivityInfo.qml" line="10" />
+        <source>Tux is in trouble, and needs to take his boat through a lock. Help Tux and find out how a canal lock works.</source>
+        <translation>Tux bajban van a hajóban, át kellene mennie a hajójával a zsilipen. Segíts Tuxnak és tanuld meg, hogyan működik egy zsilip.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/canal_lock/ActivityInfo.qml" line="14" />
+        <source>You are in charge of the canal lock. Open the gates and the locks in the right order, so Tux can travel through the gates in both directions.</source>
+        <translation>Te üzemelteted a zsilipet. Nyisd ki a különböző kapukat, majd zárd be őket jó sorrendben. Utaztasd Tuxot a zsilipen keresztül mindkét irányban.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/canal_lock/ActivityInfo.qml" line="15" />
+        <source>Drawing by Stephane Cabaraux.</source>
+        <translation>A rajzokat Stephane Cabaraux készítette.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/clickanddraw/ActivityInfo.qml" line="9" />
+        <source>Click and draw</source>
+        <translation>Kattints és rajzolj</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/clickanddraw/ActivityInfo.qml" line="10" />
+        <source>Draw the picture by clicking on the blue points.</source>
+        <translation>A kék pontokra kattintva rajzold meg a képet.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/clickanddraw/ActivityInfo.qml" line="14" />
+        <source>Draw the picture by clicking on each blue point in sequence.</source>
+        <translation>Kösd össze sorrendben a kék pontokat a rajz elkészítéséhez.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/ActivityInfo.qml" line="9" />
+        <source>Guess a number</source>
+        <translation>Találj ki egy számot</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/ActivityInfo.qml" line="10" />
+        <source>Help Tux escape the cave. Tux hides a number for you to find.</source>
+        <translation>Segíts Tuxnak kijutni a barlangból. Tux elrejtett egy számot, amit ki kell találnod.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/ActivityInfo.qml" line="13" />
+        <source>Numbers from 1 to 1000 for the last level.</source>
+        <translation>Az utolsó szinthez a számok 1-1000 között.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/ActivityInfo.qml" line="14" />
+        <source>Read the instructions that give you the range of the number to find. Enter a number in the top right blue entry box. Tux will tell you if your number is higher or lower. Then enter another number. The distance between Tux and the escape area on the right represents how far you are from the correct number. If Tux is over or under the escape area, it means your number is over or under the correct number.</source>
+        <translation>Olvasd el az útmutatásokat, amelyek megadják a keresendő szám tartományát. Írj be egy számot a jobb felső kék téglalapba. Tux megmondja, hogy a számod kisebb vagy nagyobb a keresett számnál. Ezután írj be egy másik számot. A távolság Tux és a kijárat között a helyes számtól való távolságot ábrázolja. Ha Tux a kijárat felett vagy alatt van, az azt jelzi, hogy a számod nagyobb kisebb a helyes számnál.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ActivityInfo.qml" line="10" />
+        <source>Drag and Drop masses to balance the scales and calculate the weight</source>
+        <translation>Találd meg a megfelelő súlyokat a mérleg kiegyensúlyozásához, és a súly kiszámításához</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ActivityInfo.qml" line="14" />
+        <source>To balance the scales, move the masses on the left or the right side. Take care of the weight and the unit of the masses, remember that a kilogram (kg) is 1000 grams (g). They can be arranged in any order.</source>
+        <translation>Egyensúlyozd ki a mérleget, tedd a súlyokat a bal vagy jobb oldali serpenyőbe. Vedd figyelembe a tömeget és a súlyok mértékegységét, ne feledd hogy egy kilogramm (kg) = 1000 gramm (g). A súlyokat tetszőleges sorrendben helyezheted el.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="10" />
+        <source>Drag and Drop weights to balance the scales</source>
+        <translation>Találd meg a megfelelő súlyokat, hogy egyensúlyban legyen a mérleg</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="12" />
+        <source>Mental calculation, arithmetic equality</source>
+        <translation>Fejszámolás, aritmetikai egyenlőség</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="14" />
+        <source>To balance the scales, move the weights on the left or the right side. The weights can be arranged in any order.</source>
+        <translation>Egyensúlyozd ki a mérleget, tedd a súlyokat a bal vagy jobb oldali serpenyőbe. A súlyokat tetszőleges sorrendben helyezheted el.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="15" />
+        <source>The painting is an original painting created by Virginie MOREAU (virginie.moreau@free.fr) in 2001. Its name is 'Spices Seller in Egypt'. It is released under the GPL license.</source>
+        <translation>A festményt Virginie MOREAU (virginie.moreau@free.fr) készítette 2001-ben, a címe „Fűszerárus Egyiptomban”. A GPL licenc alatt került kiadásra.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/sudoku/ActivityInfo.qml" line="28" />
+        <source>Sudoku, place unique symbols in a square.</source>
+        <translation>Sudoku, helyezz el egyedi számokat egy négyzetben.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/sudoku/ActivityInfo.qml" line="29" />
+        <source>Symbols must be unique in a row, in a column, and (if defined) each region.</source>
+        <translation>Minden szimbólumnak egyedinek kell lennie a soron, az oszlopon és (ha meg van adva) minden területen belül.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/sudoku/ActivityInfo.qml" line="31" />
+        <source>The aim of the puzzle is to enter a symbol or numeral from 1 through 9 in each cell of a grid, most frequently a 9x9 grid made up of 3x3 subgrids (called 'regions'), starting with various symbols or numerals given in some cells (the 'givens'). Each row, column and region must contain only one instance of each symbol or numeral (Source &amp;lt;http://en.wikipedia.org/wiki/Sudoku&amp;gt;).</source>
+        <translation>Ennek a kirakónak a célja egy rács celláinak feltöltése 1 és 9 közötti számokkal, ez leggyakrabban egy 9x9-es rács, amely 3x3-as („régióknak” nevezett) alrácsokból áll, induláskor néhány cellában különböző szimbólumok vagy számok találhatóak (a „megadottak”). Minden sor, oszlop és régió csak egyszer tartalmazhat minden egyes szimbólumot vagy számot. (Forrás: &amp;lt;http://en.wikipedia.org/wiki/Sudoku&amp;gt;)</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/sudoku/ActivityInfo.qml" line="32" />
+        <source>Completing the puzzle requires patience and logical ability</source>
+        <translation>A kirakó kitöltése türelmet és logikai tehetséget igényel</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/sudoku/ActivityInfo.qml" line="33" />
+        <source>For the first level with colored symbols, select a symbol on the left and click on its target position. For the higher levels, click on an empty square to give it the keyboard focus. Then enter a possible letter or number. GCompris will not let you enter invalid data.</source>
+        <translation>Az első szinten a színes szimbólumoknál, válassz egy szimbólumot a bal oldalon, és kattints a cél helyére. A magasabb szinteken kattints egy üres négyzetre, hogy tudj bele írni. Írj be egy lehetséges számot vagy betűt. A GCompris nem engedi, hogy érvénytelen adatot írj be.</translation>
     </message>
 </context>
 <context>
@@ -1663,67 +1871,67 @@ to make the ball go in a straight line.</source>
 <context>
     <name>ColorMix</name>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="95" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="96" />
         <source>Match the color</source>
         <translation>Keverd ki a színt</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="190" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="191" />
         <source>Not enough red</source>
         <translation>Nem elég a piros</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="192" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="193" />
         <source>Too much red</source>
         <translation>Túl sok a piros</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="195" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="196" />
         <source>Not enough green</source>
         <translation>Nem elég a zöld</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="197" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="198" />
         <source>Too much green</source>
         <translation>Túl sok a zöld</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="200" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="201" />
         <source>Not enough blue</source>
         <translation>Nem elég a kék</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="202" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="203" />
         <source>Too much blue</source>
         <translation>Túl sok a kék</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="206" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="207" />
         <source>Not enough magenta</source>
         <translation>Nem elég a bíborvörös</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="208" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="209" />
         <source>Too much magenta</source>
         <translation>Túl sok a bíborvörös</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="211" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="212" />
         <source>Not enough yellow</source>
         <translation>Nem elég a sárga</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="213" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="214" />
         <source>Too much yellow</source>
         <translation>Túl sok a sárga</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="216" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="217" />
         <source>Not enough cyan</source>
         <translation>Nem elég a ciánkék</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="218" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="219" />
         <source>Too much cyan</source>
         <translation>Túl sok a ciánkék</translation>
     </message>
@@ -1749,186 +1957,206 @@ to make the ball go in a straight line.</source>
     </message>
     <message>
         <location filename="../src/core/DialogConfig.qml" line="100" />
-        <source>Enable audio</source>
+        <source>Enable audio voices</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="117" />
+        <location filename="../src/core/DialogConfig.qml" line="109" />
+        <source>Enable audio effects</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/core/DialogConfig.qml" line="118" />
         <source>Fullscreen</source>
         <translation>Teljes képernyő</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="134" />
+        <location filename="../src/core/DialogConfig.qml" line="127" />
         <source>Virtual Keyboard</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="151" />
+        <location filename="../src/core/DialogConfig.qml" line="137" />
         <source>Enable automatic downloads/updates of sound files</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="185" />
+        <location filename="../src/core/DialogConfig.qml" line="153" />
+        <source>Font selector</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/core/DialogConfig.qml" line="170" />
+        <source>Language selector</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/core/DialogConfig.qml" line="187" />
         <source>sounds</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="205" />
+        <location filename="../src/core/DialogConfig.qml" line="207" />
         <source>Sounds</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="219" />
+        <location filename="../src/core/DialogConfig.qml" line="221" />
         <source>Check for updates</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="220" />
+        <location filename="../src/core/DialogConfig.qml" line="222" />
         <source>Download</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="329" />
+        <location filename="../src/core/DialogConfig.qml" line="240" />
+        <source>Difficulty filter:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/core/DialogConfig.qml" line="469" />
         <source>You selected a new locale</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="330" />
+        <location filename="../src/core/DialogConfig.qml" line="470" />
         <source>Do you want to download the corresponding sound files now?</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="345" />
+        <location filename="../src/core/DialogConfig.qml" line="485" />
         <source>English (Great Britain)</source>
         <translation>Angol (Brit)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="346" />
+        <location filename="../src/core/DialogConfig.qml" line="486" />
         <source>English (United States)</source>
         <translation>Angol (Egyesült Államok)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="347" />
+        <location filename="../src/core/DialogConfig.qml" line="487" />
         <source>Bulgarian</source>
         <translation>Bolgár</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="348" />
+        <location filename="../src/core/DialogConfig.qml" line="488" />
         <source>Breton</source>
         <translation>Breton</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="349" />
+        <location filename="../src/core/DialogConfig.qml" line="489" />
         <source>Czech Republic</source>
         <translation>Cseh Köztársaság</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="350" />
+        <location filename="../src/core/DialogConfig.qml" line="490" />
         <source>Danish</source>
         <translation>Dán</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="351" />
+        <location filename="../src/core/DialogConfig.qml" line="491" />
         <source>German</source>
         <translation>Német</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="352" />
+        <location filename="../src/core/DialogConfig.qml" line="492" />
         <source>Greek</source>
         <translation>Görög</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="353" />
+        <location filename="../src/core/DialogConfig.qml" line="493" />
         <source>Spanish</source>
         <translation>Spanyol</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="354" />
+        <location filename="../src/core/DialogConfig.qml" line="494" />
         <source>French</source>
         <translation>Francia</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="355" />
+        <location filename="../src/core/DialogConfig.qml" line="495" />
         <source>Scottish Gaelic</source>
         <translation>Skót kelta</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="356" />
+        <location filename="../src/core/DialogConfig.qml" line="496" />
         <source>Galician</source>
         <translation>Galíciai</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="357" />
+        <location filename="../src/core/DialogConfig.qml" line="497" />
         <source>Hungarian</source>
         <translation>Magyar</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="358" />
+        <location filename="../src/core/DialogConfig.qml" line="498" />
         <source>Lithuanian</source>
         <translation>Litván</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="359" />
+        <location filename="../src/core/DialogConfig.qml" line="499" />
         <source>Latvian</source>
         <translation>Lett</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="360" />
+        <location filename="../src/core/DialogConfig.qml" line="500" />
         <source>Dutch</source>
         <translation>Holland</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="361" />
+        <location filename="../src/core/DialogConfig.qml" line="501" />
         <source>Norwegian Nynorsk</source>
         <translation>Norvég Nynorsk</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="362" />
+        <location filename="../src/core/DialogConfig.qml" line="502" />
         <source>Polish</source>
         <translation>Lengyel</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="363" />
+        <location filename="../src/core/DialogConfig.qml" line="503" />
         <source>Russian</source>
         <translation>Orosz</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="364" />
+        <location filename="../src/core/DialogConfig.qml" line="504" />
         <source>Portuguese (Brazil)</source>
         <translation>Portugál (Brazil)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="365" />
+        <location filename="../src/core/DialogConfig.qml" line="505" />
         <source>Slovak</source>
         <translation>Szlovák</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="366" />
+        <location filename="../src/core/DialogConfig.qml" line="506" />
         <source>Slovenian</source>
         <translation>Szlovén</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="367" />
+        <location filename="../src/core/DialogConfig.qml" line="507" />
         <source>Montenegrin</source>
         <translation>Montenegrói</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="368" />
+        <location filename="../src/core/DialogConfig.qml" line="508" />
         <source>Swedish</source>
         <translation>Svéd</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="369" />
+        <location filename="../src/core/DialogConfig.qml" line="509" />
         <source>Tamil</source>
         <translation>Tamil</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="370" />
+        <location filename="../src/core/DialogConfig.qml" line="510" />
         <source>Thai</source>
         <translation>Thai</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="371" />
+        <location filename="../src/core/DialogConfig.qml" line="511" />
         <source>Chinese (Traditional)</source>
         <translation>Kínai (hagyományos)</translation>
     </message>
@@ -2005,14 +2233,21 @@ to make the ball go in a straight line.</source>
     </message>
 </context>
 <context>
+    <name>FindIt</name>
+    <message>
+        <source>Find the blue duck</source>
+        <translation type="obsolete">Találd meg a kék kacsát</translation>
+    </message>
+</context>
+<context>
     <name>Leftright</name>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="142" />
+        <location filename="../src/activities/leftright/Leftright.qml" line="143" />
         <source>Left hand</source>
         <translation>Bal kéz</translation>
     </message>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="153" />
+        <location filename="../src/activities/leftright/Leftright.qml" line="154" />
         <source>Right hand</source>
         <translation>Jobb kéz</translation>
     </message>
@@ -2020,33 +2255,15 @@ to make the ball go in a straight line.</source>
 <context>
     <name>Maze</name>
     <message>
-        <location filename="../src/activities/maze/Maze.qml" line="348" />
+        <location filename="../src/activities/maze/Maze.qml" line="349" />
         <source>Look at your position, then switch back to invisible mode to continue your moves</source>
         <translation>Nézd meg, hol állsz majd kapcsolj vissza láthatatlan módba a továbbhaladáshoz</translation>
     </message>
 </context>
 <context>
-    <name>Mining</name>
-    <message>
-        <location filename="../src/activities/mining/Mining.qml" line="267" />
-        <source>Zoom in over the sparkle</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/mining/Mining.qml" line="269" />
-        <source>Click on the gold nugget</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/mining/Mining.qml" line="271" />
-        <source>Zoom out</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
     <name>Penalty</name>
     <message>
-        <location filename="../src/activities/penalty/Penalty.qml" line="215" />
+        <location filename="../src/activities/penalty/Penalty.qml" line="204" />
         <source>Click twice on the ball to shoot it.</source>
         <translation>Kattints kétszer a labdára az elrúgáshoz.</translation>
     </message>
@@ -2082,6 +2299,128 @@ István Somlai &lt;somist at bg-bp dot sulinet dot hu&gt;</translation>
     </message>
 </context>
 <context>
+    <name>ScaleNumber</name>
+    <message>
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="44" />
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="73" />
+        <source>Take care, you can drop weights on both sides of the scale.</source>
+        <translation>A súlyokat a mérleg bármelyik oldalára teheted.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="66" />
+        <source>Now you have to guess the weight of the gift.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="67" />
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="74" />
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="80" />
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="86" />
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="93" />
+        <source>Enter the weight of the gift: %1</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>ScalesboardWeight</name>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="27" />
+        <source>%1 oz</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="32" />
+        <source>%1 lb</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="41" />
+        <source>The "lb" symbol at the end of a number means pound.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="42" />
+        <source>The pound is a unit of mass, a property which corresponds to the common perception of how "heavy” an object is. This unit is used in the USA.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="51" />
+        <source>The "oz" symbol at the end of a number means ounce. One pound equals sixteen ounces</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="59" />
+        <source>Remember, one pound ("lb") equals sixteen ounces ("oz").</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="66" />
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="82" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="66" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="100" />
+        <source>Take care, you can drop weights on both sides of the scale.</source>
+        <translation>A súlyokat a mérleg bármelyik oldalára teheted.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="74" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="85" />
+        <source>Now you have to guess the weight of the gift.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="75" />
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="83" />
+        <source>Enter the weight of the gift in ounce: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="28" />
+        <source>%1 g</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="33" />
+        <source>%1 kg</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="42" />
+        <source>The "kg" symbol at the end of a number means kilogram.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="43" />
+        <source>The kilogram is a unit of mass, a property which corresponds to the common perception of how "heavy” an object is.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="52" />
+        <source>The "g" symbol at the end of a number means gram. One kilogram equals 1000 grams</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="60" />
+        <source>Remember, one kilo ("kg") equals 1000 grams ("g").</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="86" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="94" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="101" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="110" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="116" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="122" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="130" />
+        <source>Enter the weight of the gift in gram: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="109" />
+        <source>Remember, one kilo ('kg') equals 1000 grams ('g').</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
     <name>TopPanel</name>
     <message>
         <location filename="../src/activities/gnumch-equality/TopPanel.qml" line="51" />
@@ -2112,7 +2451,7 @@ István Somlai &lt;somist at bg-bp dot sulinet dot hu&gt;</translation>
 <context>
     <name>WarnMonster</name>
     <message>
-        <location filename="../src/activities/gnumch-equality/WarnMonster.qml" line="39" />
+        <location filename="../src/activities/gnumch-equality/WarnMonster.qml" line="41" />
         <source>Be careful, a troggle !</source>
         <translation type="unfinished" />
     </message>
@@ -2120,47 +2459,47 @@ István Somlai &lt;somist at bg-bp dot sulinet dot hu&gt;</translation>
 <context>
     <name>Warning</name>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="47" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="48" />
         <source>You were eaten by a Troggle.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="51" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="52" />
         <source>You ate a wrong number.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="62" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="63" />
         <source>1 is not a prime number.</source>
         <translation>Az 1 nem prímszám.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="72" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="73" />
         <source>%1 is divisible by %2</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="80" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="81" />
         <source>and</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="97" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="98" />
         <source>Multiples of %1 include %2, </source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="98" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="99" />
         <source>but %1 is not a multiple of %2.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="115" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="116" />
         <source>and %1 are the divisors of %2.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="144" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="145" />
         <source>Press &amp;lt;Return&amp;gt; or click on me to continue.</source>
         <translation type="unfinished" />
     </message>
@@ -2790,7 +3129,7 @@ István Somlai &lt;somist at bg-bp dot sulinet dot hu&gt;</translation>
     </message>
     <message>
         <location filename="../src/activities/memory-wordnumber/dataset.js" line="40" />
-        <source>heighteen</source>
+        <source>eighteen</source>
         <translation type="unfinished" />
     </message>
     <message>
@@ -2801,6 +3140,37 @@ István Somlai &lt;somist at bg-bp dot sulinet dot hu&gt;</translation>
     <message>
         <location filename="../src/activities/memory-wordnumber/dataset.js" line="42" />
         <source>twenty</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>findit</name>
+    <message>
+        <source>Learning Clock</source>
+        <translation type="obsolete">Tanuld meg az órát</translation>
+    </message>
+</context>
+<context>
+    <name>guessnumber</name>
+    <message>
+        <location filename="../src/activities/guessnumber/guessnumber.js" line="60" />
+        <source>Guess a number between 1 and %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/guessnumber.js" line="85" />
+        <location filename="../src/activities/guessnumber/guessnumber.js" line="89" />
+        <source>Number too high</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/guessnumber.js" line="92" />
+        <source>Number too low</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/guessnumber.js" line="96" />
+        <source>Number found!</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -2971,27 +3341,27 @@ István Somlai &lt;somist at bg-bp dot sulinet dot hu&gt;</translation>
 <context>
     <name>main</name>
     <message>
-        <location filename="../src/core/main.qml" line="53" />
+        <location filename="../src/core/main.qml" line="68" />
         <source>Welcome to GCompris!</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/main.qml" line="54" />
+        <location filename="../src/core/main.qml" line="69" />
         <source>You are running GCompris for the first time.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/main.qml" line="55" />
+        <location filename="../src/core/main.qml" line="70" />
         <source>You should verify that your application settings especially your language is set correctly, and that all language specific sound files are installed. You can do this in the Preferences Dialog.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/main.qml" line="57" />
+        <location filename="../src/core/main.qml" line="72" />
         <source>Your current locale is '%1'</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/main.qml" line="59" />
+        <location filename="../src/core/main.qml" line="74" />
         <source>Have Fun!</source>
         <translation type="unfinished" />
     </message>
@@ -3029,7 +3399,7 @@ István Somlai &lt;somist at bg-bp dot sulinet dot hu&gt;</translation>
         <translation>Kattints a fém- vagy papírpénzekre a képernyő alján a fizetéshez. Ha el akarsz távolítani egy érmét vagy papírpénzt, akkor kattints rá a képernyő felső részén.</translation>
     </message>
     <message>
-        <location filename="../src/activities/money/money.js" line="702" />
+        <location filename="../src/activities/money/money.js" line="701" />
         <source>Tux just bought some items in your shop.
 He gives you %1, please give back his change.</source>
         <translation type="unfinished" />

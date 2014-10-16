@@ -97,11 +97,11 @@ ActivityBase {
                         anchors.fill: parent
                         touchPoints: [ TouchPoint { id: point1 }]
                         onReleased: {
-                            line.opacity = 0.0
+                            line.opacity = 0
                             Activity.startMotion(point1.x - ball.width / 2,
                                                  point1.y - ball.height / 2)
-
                         }
+                        onPressed: line.opacity = 1
                         onTouchUpdated: {
                             var point = ball.mapToItem(border, point1.x, point1.y)
                             Activity.drawLine(point.x, point.y, ball.x + ball.width/2, ball.y + ball.height/2)

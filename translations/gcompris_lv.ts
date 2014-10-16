@@ -14,12 +14,12 @@
         <translation>Nosaki, vai kora ir labā vai kreisā</translation>
     </message>
     <message>
-        <location filename="../src/activities/leftright/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/leftright/ActivityInfo.qml" line="13" />
         <source>Distinguish right and left hands from different points of view. Spatial representation</source>
         <translation>Atšķir labo un kreiso roku no dažādiem skatupunktiem. Telpisks attēlojums</translation>
     </message>
     <message>
-        <location filename="../src/activities/leftright/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/leftright/ActivityInfo.qml" line="15" />
         <source>You can see a hand: is it a left hand or a right hand? Click on the left button, or the right button depending on the displayed hand.</source>
         <translation type="unfinished" />
     </message>
@@ -34,20 +34,20 @@
         <translation>Apgriez kārtis, lai atrastu summu un tās vērtību, līdz visas kārtis pazūd.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="12" />
         <source>Practise adding up, until all the cards are gone.</source>
         <translation>Trenējies saskaitīšanā, līdz visas kārtis pazūd.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="13" />
         <source>Addition</source>
         <translation>Saskaitīšana</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
 An adding-up sum looks like this: 2 + 2 = 4
 The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you'll be very good at adding-up!
@@ -71,18 +71,35 @@ Skaitļiem vienā pusē vienādības zīmei (=) ir jābūt vienādiem ar skaitļ
     </message>
     <message>
         <location filename="../src/activities/gletters/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/gletters/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/gletters/ActivityInfo.qml" line="14" />
         <source>Type the falling letters before they reach the ground</source>
         <translation>Ieraksti krītošos burtus pirms tie sasniedz zemi</translation>
     </message>
     <message>
-        <location filename="../src/activities/gletters/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/imageid/ActivityInfo.qml" line="9" />
+        <source>Reading practice</source>
+        <translation>Lasīšanas praktizēšana</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/imageid/ActivityInfo.qml" line="10" />
+        <source>Practice reading by finding the word matching an image</source>
+        <translation>Praktizē lasīšanu, meklējot attēlā atbilstošus vārdus </translation>
+    </message>
+    <message>
+        <location filename="../src/activities/imageid/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/traffic/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/gletters/ActivityInfo.qml" line="12" />
         <source>Letter association between the screen and the keyboard</source>
         <translation>Burtu saistība ar ekrānu un klaviatūru</translation>
     </message>
     <message>
-        <location filename="../src/activities/gletters/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/imageid/ActivityInfo.qml" line="14" />
+        <source>Click on the word corresponding to the printed image.</source>
+        <translation>Nospied uz vārda, kurš atbilst parādītajam attēlam.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/gletters/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="13" />
         <source>Keyboard manipulation</source>
         <translation>Tastatūras manipulēšana</translation>
     </message>
@@ -103,12 +120,12 @@ Skaitļiem vienā pusē vienādības zīmei (=) ir jābūt vienādiem ar skaitļ
         <translation>Apgriez kārtis otrādi, lai atrastu saskaitīšanas un atņemšanas rezultātus, līdz visas kārtis pazūd.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="12" />
         <source>Practise substraction, until all the cards are gone.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="13" />
         <source>Substraction</source>
         <translation type="unfinished" />
     </message>
@@ -117,18 +134,18 @@ Skaitļiem vienā pusē vienādības zīmei (=) ir jābūt vienādiem ar skaitļ
         <translation type="vanished">Trenējies atņemšanā, līdz visas kārtis ir noņemtas.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="13" />
         <source>Addition and subtraction</source>
         <translation>Saskaitīšana un atņemšana</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found all the operations, you've won the game! :)</source>
@@ -147,9 +164,9 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Klikšķini peli, lai izdzēstu apgabalu un ieraudzītu fonu</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/erase/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/erase/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="12" />
         <source>Motor-coordination</source>
         <translation>Kustību koordinācija</translation>
     </message>
@@ -165,39 +182,55 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Izkārto četras monētas vienā rindā</translation>
     </message>
     <message>
-        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/align4/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/align4/ActivityInfo.qml" line="12" />
         <source>Create a line of 4 pieces either horizontally (lying down), vertically (standing up) or diagonally.</source>
         <translation>Izveido līniju no 4 monētām vai nu horizontāli (guļus), vertikāli (stāvus), vai pa diagonāli.</translation>
     </message>
     <message>
-        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/erase/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/football/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/align4/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/fifteen/ActivityInfo.qml" line="9" />
+        <source>The fifteen game</source>
+        <translation>Spēle "Piecpadsmit"</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/fifteen/ActivityInfo.qml" line="10" />
+        <source>Move each item to make an increasing series: from the smallest to the largest</source>
+        <translation>Pārvieto katru kauliņu, lai izveidotu augošu secību — no mazākā uz lielāko</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/fifteen/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/align4/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/football/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="13" />
         <source>Mouse-manipulation</source>
         <translation>Peles manipulācijas</translation>
     </message>
     <message>
-        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/align4/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/fifteen/ActivityInfo.qml" line="14" />
+        <source>Click on any item that has a free block beside it, and it will be swapped with the empty block.</source>
+        <translation>Spied uz jebkura kauliņa, pie kura ir tukšs lauciņš, un šis kauliņš tiks pārvietots tukšajā lauciņā.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/align4/ActivityInfo.qml" line="14" />
         <source>Click the position in the line where you want to drop a piece. You can also use the arrow keys to move the piece left or right, and the down or space key to drop a piece.</source>
         <translation>Noklikšķi vietā, kur vēlies novietot objektu. Tu vari izmantot arī virziena taustiņus, lai norādītu, kur novietot objektu. Uz leju un atstarpes (garais) taustiņš paredzēts objekta novietošanai.</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="14" />
         <source>Click the mouse on rectangles until all the blocks disappear.</source>
         <translation>Klikšķini peli uz taisnstūriem līdz visi bloki pazūd.</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="14" />
-        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="15" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="15" />
         <source>Animal pictures come from the Animal Photography Page of Ralf Schmode (http://schmode.net/). Ralf has kindly permitted GCompris to include his pictures. Thanks a lot, Ralf.</source>
         <translation>Dzīvnieku attēli iegūti no Ralf Schmode interneta vietnes (http://schmode.net/). Ralfs dāsni atļāvis GCompris izmantot viņa fotogrāfijas. Liels paldies Ralfam par to.</translation>
     </message>
@@ -207,17 +240,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Trūkstošais burts</translation>
     </message>
     <message>
-        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="13" />
         <source>Training reading skills</source>
         <translation>Lasīšanas prasmju trenēšana</translation>
     </message>
     <message>
-        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="14" />
         <source>Word reading</source>
         <translation>Vārdu lasīšana</translation>
     </message>
     <message>
-        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="15" />
         <source>An object is displayed in the main area, and an incomplete word is printed under the picture. Select the missing letter to complete the word.</source>
         <translation>Galvenajā reģionā tiek attēlots objekts, bet zem tā uzrakstīts nepabeigtais vārds. Izvēlies trūkstošo burtu, lai pabeigtu vārdu.</translation>
     </message>
@@ -232,14 +265,13 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Kustini peli, lai izdzēstu apgabalu un ieraudzītu fonu</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase/ActivityInfo.qml" line="14" />
         <source>Move the mouse until all the blocks disappear. You can add you own images under the directory '~/My GCompris/erase'.</source>
         <translation>Kustini peli līdz visi bloki pazūd. Tu vari pievienot pats savus attēlus, ieliekot tos direktorijā '~/My GCompris/erase'</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase/ActivityInfo.qml" line="14" />
         <source>Animal pictures are taken from the Animal Photography Page of Ralf Schmode (&amp;lt;http://schmode.net/&amp;gt;) and from LE BERRE Daniel. These people kindly gave GCompris the authorization to include their pictures. Thanks a lot, both of you.</source>
-        <translation>Dzīvnieku attēli ir ņemti no Dzīvnieku fotogrāfiju lapas Ralf Schmode tīmekļa vietnē (&amp;lt;http://schmode.net/&amp;gt;) un no LE BERRE Daniel. Šie cilvēki labprāt deva mums atļauju izmantot viņu attēlus. Liels paldies viņiem.</translation>
+        <translation type="vanished">Dzīvnieku attēli ir ņemti no Dzīvnieku fotogrāfiju lapas Ralf Schmode tīmekļa vietnē (&amp;lt;http://schmode.net/&amp;gt;) un no LE BERRE Daniel. Šie cilvēki labprāt deva mums atļauju izmantot viņu attēlus. Liels paldies viņiem.</translation>
     </message>
     <message>
         <location filename="../src/activities/algorithm/ActivityInfo.qml" line="9" />
@@ -252,18 +284,18 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Pabeidz simbolu sarakstu</translation>
     </message>
     <message>
-        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="12" />
         <source>Logic training activity</source>
         <translation>Loģikas attīstīšanas nodarbības</translation>
     </message>
     <message>
-        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="13" />
         <source>Move and click the mouse</source>
         <translation>Pārvieto un klikšķini peli</translation>
     </message>
     <message>
-        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="14" />
         <source>Find the next symbol in a list.</source>
         <translation>Atrodi sarakstā nākamo simbolu.</translation>
     </message>
@@ -274,23 +306,23 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     </message>
     <message>
         <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="10" />
         <source>Answer some algebra questions</source>
         <translation>Atbildi dažus algebras jautājumus</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="12" />
         <source>In a limited time, find the sum of of two numbers. Introduction to simple in-line addition.</source>
         <translation>Ierobežotā laikā atrodi divu skaitļu summu. Iepazīstināšana ar vienkāršu saskaitīšanu.</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="13" />
         <source>Simple addition. Can recognize written numbers</source>
         <translation>Vienkārša saskaitīšana. Rakstīto skaitļu atpazīšana.</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="14" />
         <source>An addition problem with two numbers is displayed. At the right of the equals sign, give the answer, the sum. Use the left and right arrows to modify your answer and press the Enter key to check if you've got it right. If not, just try again.</source>
         <translation>Redzams divu skaitļu saskaitīšanas uzdevums. Labajā pusē aiz vienādības zīmes ievadi atbildi — šo skaitļu summu. Izmanto labo un kreiso virzienu taustiņus, lai mainītu atbildi un nospied Enter, lai pārbaudītu izvēlētā varianta pareizību. Ja atbilde ir nepareiza, mēģini vēlreiz.</translation>
     </message>
@@ -305,20 +337,20 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="30" />
-        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/planegame/ActivityInfo.qml" line="31" />
+        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="31" />
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/planegame/ActivityInfo.qml" line="32" />
         <source>Numeration training</source>
         <translation>Skaitīšanas apmācība</translation>
     </message>
     <message>
-        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="31" />
-        <location filename="../src/activities/planegame/ActivityInfo.qml" line="32" />
+        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="32" />
+        <location filename="../src/activities/planegame/ActivityInfo.qml" line="33" />
         <source>Number</source>
         <translation>Skaitlis</translation>
     </message>
     <message>
-        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="32" />
+        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="33" />
         <source>Catch the odd or even numbers, using the up, down, right and left arrows on the keyboard to move the helicopter.</source>
         <translation type="unfinished" />
     </message>
@@ -333,17 +365,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="30" />
+        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="31" />
         <source>Alphabet training</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="31" />
+        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="32" />
         <source>Can decode letters</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="32" />
+        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="33" />
         <source>Catch the alphabet letters, using the up, down, right and left arrows on the keyboard to move the helicopter.</source>
         <translation type="unfinished" />
     </message>
@@ -358,25 +390,25 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Reizināšanas atmiņas spēle pret Tuksi</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="10" />
         <source>Turn the cards over to find two numbers which multiply the same, until all the cards are gone.</source>
         <translation>Apgriez kārtis otrādi, lai atrastu reizinājumu un tā vērtību, līdz visas kārtis ir noņemtas.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="12" />
         <source>Practise multiplication, until all the cards are gone.</source>
         <translation>Trenējies reizināšanā, līdz visas kārtis ir noņemtas.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="13" />
         <source>Multiplication</source>
         <translation>Reizināšana</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more then Tux and you've won the game! :)</source>
@@ -394,13 +426,13 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Atveido mozaīku</translation>
     </message>
     <message>
-        <location filename="../src/activities/mosaic/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/mosaic/ActivityInfo.qml" line="14" />
         <source>Rebuild the same mosaic on the right area</source>
         <translation>Atveido tādu pašu mozaīku labajā pusē</translation>
     </message>
     <message>
-        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="9" />
         <location filename="../src/activities/money/ActivityInfo.qml" line="9" />
+        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="9" />
         <source>Money</source>
         <translation>Nauda</translation>
     </message>
@@ -410,24 +442,24 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Trenējies naudas lietošanā, ieskaitot santīmus</translation>
     </message>
     <message>
-        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/money/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/money/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="12" />
         <source>You must buy the different items and give the exact price. At higher levels, several items are displayed, and you must first calculate the total price.</source>
         <translation>Tev jānopērk dažādi priekšmeti un jādod precīza nauda. Augstākos līmeņos tiks rādīti vairāki priekšmeti un būs jāaprēķina to kopējā cena.</translation>
     </message>
     <message>
-        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/money/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/money_back/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/money_back/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/money/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="13" />
         <source>Can count</source>
         <translation>Prot skaitīt</translation>
     </message>
     <message>
-        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/money/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/money_back/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/money_back/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/money/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="14" />
         <source>Click on the coins or paper money at the bottom of the screen to pay. If you want to remove a coin or note, click on it on the upper screen area.</source>
         <translation>Spied uz monētām vai papīra naudas ekrāna lejasdaļā, lai samaksātu. Ja tu vēlies aizvākt monētu vai banknoti, nospied uz tās augšējā ekrāna daļā.</translation>
     </message>
@@ -443,20 +475,20 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Noklausies burtu un izvēlies pareizo</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="12" />
         <source>Letter-name recognition</source>
         <translation>Burtu nosaukumu atpazīšana</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="13" />
         <source>Visual letter-recognition. Can move the mouse.</source>
         <translation>Vizuāla burtu atpazīšana. Var izmantot peli.</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="14" />
         <source>A letter is spoken. Click on the matching letter in the main area. You can listen to the letter again, by clicking on the mouth icon in the bottom box.</source>
         <translation>Burts tika izrunāts. Klikšķini pamata laukumā uz atbilstošā burta. Burta izrunāšanu var atkārtot, klikšķinot uz mutes ikonas apakšējā laukumā.</translation>
     </message>
@@ -467,8 +499,8 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Apgriez kārtis, lai atrastu skaitļu starpību, līdz visas kārtis ir noņemtas.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="12" />
         <source>Practise addition, subtraction, until all the cards are gone.</source>
         <translation>Trenējies saskaitīšanā un atņemšanā, līdz visas kārtis pazūd.</translation>
     </message>
@@ -483,7 +515,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Kustini helikopteri, lai noķertu mākoņus pareizā secībā</translation>
     </message>
     <message>
-        <location filename="../src/activities/planegame/ActivityInfo.qml" line="33" />
+        <location filename="../src/activities/planegame/ActivityInfo.qml" line="34" />
         <source>Catch the numbers in increasing order, using the up, down, right and left arrows on the keyboard to move the helicopter.</source>
         <translation>Noķer skaitļus augošā secībā, izmantojot tastatūras virziena taustiņus, lai kontrolētu helikopteri.</translation>
     </message>
@@ -499,8 +531,8 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Trenējies naudas lietošanā, dodot Tuksim viņa atlikumu</translation>
     </message>
     <message>
-        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/money_back/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/money_back/ActivityInfo.qml" line="12" />
         <source>Tux bought you different items and shows you his money. You must give him back his change. At higher levels, several items are displayed, and you must first calculate the total price.</source>
         <translation>Tuksis ir nopircis dažādus priekšmetus un iedevis tev savu naudu. Tev ir jāizdod viņa atlikums. Augstākos līmeņos tiks rādīti vairāki priekšmeti un no sākuma būs jāaprēķina to kopējā cena.</translation>
     </message>
@@ -515,7 +547,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Veic dubultklikšķi uz bumbas, lai gūtu vārtus.</translation>
     </message>
     <message>
-        <location filename="../src/activities/penalty/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/penalty/ActivityInfo.qml" line="14" />
         <source>Double click the mouse on the ball to kick it. You can double click the left right or middle mouse button. If you lose, Tux catches the ball. You must click on it to bring it back to its former position</source>
         <translation>Veic dubultklikšķi uz bumbas, lai tai iespertu. Tu vari klikšķināt kreiso, labo vai vidējo peles pogu. Ja tu zaudē, Tuksis noķer bumbu. Tev uz tās ir jānospiež, lai atgrieztu to iepriekšējā vietā</translation>
     </message>
@@ -540,17 +572,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Spiediet uz pareizās krāsas</translation>
     </message>
     <message>
-        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="12" />
         <source>Learn to recognize unusual colors.</source>
         <translation>Iemācies atpazīt neikdienišķas krāsas.</translation>
     </message>
     <message>
-        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="13" />
         <source>Can read</source>
         <translation>Lasīt</translation>
     </message>
     <message>
-        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="14" />
         <source>Click on the correct colored butterfly.</source>
         <translation>Spied uz pareizā izkrāsotā tauriņa.</translation>
     </message>
@@ -560,17 +592,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Trenējies reizināt</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="12" />
         <source>In a limited time, give the product of two numbers</source>
         <translation>Ierobežotā laikā atrodi divu skaitļu reizinājumu</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="13" />
         <source>Multiplication table</source>
         <translation>Reizināšanas tabula</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="14" />
         <source>A multiplication of two numbers is displayed. At the right of the equals sign, give the answer, the product. Use the left and right arrows to modify your answer and press the Enter key to check if you've got it right. If not, just try again.</source>
         <translation>Redzama divu skaitļu reizināšana. Labajā pusē aiz vienādības zīmes ievadi atbildi — šo skaitļu reizinājumu. Izmanto labo un kreiso virzienu taustiņus, lai mainītu atbildi un nospied Enter, lai pārbaudītu izvēlētā varianta pareizību. Ja atbilde ir nepareiza, mēģini vēlreiz.</translation>
     </message>
@@ -581,7 +613,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     </message>
     <message>
         <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="29" />
-        <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="32" />
+        <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="33" />
         <source>Press the two shift keys at the same time, to make the ball go in a straight line.</source>
         <translation>Nospied vienlaicīgi abus shift taustiņus, lai bumba ripotu taisni </translation>
     </message>
@@ -591,17 +623,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Trenējies atņemt</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="12" />
         <source>In a limited time, find the difference between two numbers</source>
         <translation>Ierobežotā laikā atrast divu skaitļu starpību</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="13" />
         <source>Simple subtraction</source>
         <translation>Vienkārša atņemšana</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="14" />
         <source>A subtraction problem with two numbers is displayed. At the right of the equals sign, give the answer, the difference. Use the left and right arrows to modify your answer and press the Enter key to check if you've got it right. If not, just try again.</source>
         <translation>Redzams divu skaitļu atņemšanas uzdevums. Labajā pusē aiz vienādības zīmes ievadi atbildi — šo skaitļu starpību. Izmanto labo un kreiso virzienu taustiņus, lai mainītu atbildi un nospied Enter, lai pārbaudītu izvēlētā varianta pareizību. Ja atbilde ir nepareiza, mēģini vēlreiz.</translation>
     </message>
@@ -611,24 +643,24 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Dalīšanas atmiņas spēle</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="10" />
         <source>Turn the cards over to find a matching operation, until all the cards are gone.</source>
         <translation>Apgriez kārtis, lai atrastu atbilstošu darbību, kamēr visas kārtis ir noņemtas.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="12" />
         <source>Practise division, until all the cards are gone.</source>
         <translation>Trenējies dalīšanā, līdz visas kārtis ir noņemtas.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="13" />
         <source>Division</source>
         <translation>Dalīšana</translation>
     </message>
@@ -643,12 +675,12 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Atrodi zemeni, spiežot uz zilajiem lauciņiem</translation>
     </message>
     <message>
-        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="12" />
         <source>Logic-training activity</source>
         <translation>Loģikas treniņa nodarbība</translation>
     </message>
     <message>
-        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="14" />
         <source>Try to find the strawberry under the blue fields. The fields become redder as you get closer.</source>
         <translation>Mēģini atrast zemeni zem zilajiem lauciņiem. Lauciņi kļūst sarkanāki, kolīdz tu esi tuvāk.</translation>
     </message>
@@ -724,12 +756,12 @@ Zvaigznes norāda uz spēlei piemēroto vecuma grupu:
         <translation>Spied uz pareizajiem mūzikas instrumentiem</translation>
     </message>
     <message>
-        <location filename="../src/activities/instruments/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/instruments/ActivityInfo.qml" line="12" />
         <source>Learn to recognize musical instruments.</source>
         <translation>Iemācies atpazīt mūzikas instrumentus.</translation>
     </message>
     <message>
-        <location filename="../src/activities/instruments/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/instruments/ActivityInfo.qml" line="14" />
         <source>Click on the correct instrument.</source>
         <translation>Spied uz pareizā mūzikas instrumenta.</translation>
     </message>
@@ -744,19 +776,19 @@ Zvaigznes norāda uz spēlei piemēroto vecuma grupu:
         <translation>Reizināšanas un dalīšanas atmiņas spēle pret Tuksi</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="12" />
         <source>Practise multiplication, division, until all the cards are gone.</source>
         <translation>Trenējies reizināšanā un dalīšanā, līdz visas kārtis ir noņemtas.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="13" />
         <source>Multiplication, division</source>
         <translation>Reizināšana, dalīšana</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more than Tux and you've won the game! :)</source>
@@ -773,17 +805,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Noklikšķini uz visām peldošajām zivīm, pirms tās aizpeld no akvārija.</translation>
     </message>
     <message>
-        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="12" />
         <source>Motor coordination: moving and clicking the mouse.</source>
         <translation>Kustību koordinācija — peles kustināšana un klikšķināšana.</translation>
     </message>
     <message>
-        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="14" />
         <source>Use the left mouse button to click on the moving fish. A level 5 and after, a double click is mandatory.</source>
         <translation>Izmanto kreiso peles klikšķi, lai nospiestu uz kustīgās zivs. Sākot ar 5. līmeni ir jāveic dubultklikšķis.</translation>
     </message>
     <message>
-        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="15" />
         <source>Fish are taken from the Unix utility xfishtank. All image credits belong to Guillaume Rousse.</source>
         <translation>Attēlus veidojis Guillaume Rousse. Zivs aizgūta no Unix utilītas xfishtank.</translation>
     </message>
@@ -798,7 +830,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Veic dubultklikšķi ar peli, lai izdzēstu apgabalu un ieraudzītu fonu</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="14" />
         <source>Double click the mouse on rectangles until all the blocks disappear.</source>
         <translation>Veic dubultklikšķus uz taisnstūriem, kamēr visi bloki pazūd.</translation>
     </message>
@@ -823,20 +855,20 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Spēlē audio atmiņas spēli pret Tuksi</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="12" />
         <source>Train your audio memory and remove all the violinists Tux.</source>
         <translation>Trenē savu audio atmiņu un aizvāc visus pingvīniņus.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="13" />
         <source>Mouse manipulation, Brain.</source>
         <translation>Peles lietošana, Prāts.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="14" />
         <source>A set of violinist Tux is shown. Each Tux has an associated sound, and each sound has a twin exactly the same. Click on a Tux to see its hidden sound, and try to match the twins. You can only activate two Tux at once, so you need to remember where a sound is, while you listen to its twin. When you turn over the twins, they both disappear.</source>
         <translation>Ir tabula ar pingvīniem-vijolniekiem. Katram ir piesaistīta skaņa, un katrai skaņai ir "dvīne", kas skan pilnīgi tāpat. Klikšķini uz pingvīniņa, lai klausītos tā slēpto skaņu, un mēģini atrast divas vienādas. Tu vari likt spēlēt tikai diviem pingvīniem vienlaicīgi, tāpēc tev jāatceras, kur tu dzirdēji skaņu, klausoties tās līdzinieci. Kad esi atradis abas "dvīņu" skaņas, tās tiek noņemtas.</translation>
     </message>
@@ -856,19 +888,19 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Visu aritmētisko darbību atmiņas spēles pret Tuksi</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="12" />
         <source>Practise addition, subtraction, multiplication, division, until all the cards are gone.</source>
         <translation>Trenējies saskaitīšanā, atņemšanā, reizināšanā, dalīšanā, kamēr visas kārtis ir noņemtas.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="13" />
         <source>Addition, subtraction, multiplication, division</source>
         <translation>Saskaitīšana, atņemšana, reizināšana, dalīšana</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more than Tux, you've won the game! :)</source>
@@ -885,17 +917,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Spiediet uz pareizās krāsas</translation>
     </message>
     <message>
-        <location filename="../src/activities/colors/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/colors/ActivityInfo.qml" line="12" />
         <source>This board teaches you to recognize different colors. When you hear the name of the color, click on the duck wearing it.</source>
         <translation>Šis galdiņš apmāca atšķirt dažādas krāsas. Ja dzirdi krāsas nosaukumu, tad klikšķi uz attiecīgo pīli, kas to valkā.</translation>
     </message>
     <message>
-        <location filename="../src/activities/colors/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/colors/ActivityInfo.qml" line="13" />
         <source>Can move the mouse.</source>
         <translation>Var pārvietot peli.</translation>
     </message>
     <message>
-        <location filename="../src/activities/colors/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/colors/ActivityInfo.qml" line="14" />
         <source>Listen to the color and click on the matching duck.</source>
         <translation>Noklausies izrunāto krāsu un nospied uz atbilstošās pīles.</translation>
     </message>
@@ -920,18 +952,18 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory/ActivityInfo.qml" line="12" />
         <source>Train your memory and remove all the cards</source>
         <translation>Trenē atmiņu, noņemot visas kārtis</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="14" />
         <source>A set of blank cards is shown. Each card has a picture on the other side, and each picture card has a twin exactly the same. Click on a card to see its hidden picture, and try to match the twins. You can only turn over two cards at once, so you need to remember where a picture is, while you look for its twin. When you turn over the twins, they both disappear. Tux teacher do the same.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory/ActivityInfo.qml" line="14" />
         <source>A set of blank cards is shown. Each card has a picture on the other side, and each picture card has a twin exactly the same. Click on a card to see its hidden picture, and try to match the twins. You can only turn over two cards at once, so you need to remember where a picture is, while you look for its twin. When you turn over the twins, they both disappear.</source>
         <translation>Tiek parādīts tukšu kāršu komplekts. Katrai kārtij otrā pusē ir attēls, un katrai kārtij ar attēlu ir savs “dvīnis”. Klikšķini uz kārts, lai redzētu apslēpto attēlu, un mēģini atrast tās dvīni.  Tu vari atklāt vienlaicīgi tikai divas kārtis, tāpēc tev ir jāatceras, kur katrs attēls atrodas, kamēr tu meklē tās līdzinieku. Kad tu apgriezīsi abas kārtis ar vienādiem attēliem, tās pazudīs. </translation>
     </message>
@@ -946,12 +978,12 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Gaismas krāsu jaukšanas izprašana.</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="12" />
         <source>Mix the primary colors to match to the given color.</source>
         <translation>Jaukt primārās krāsas, lai atbilstu dotajām krāsām.</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="14" />
         <source>
 The activity deals with mixing primary colors of light (additive mixing).
 
@@ -974,21 +1006,21 @@ Gaismas krāsas darbojas tieši pretēji tintes krāsām! Jo vairāk gaismas pie
         <translation>Atrodi izeju no labirinta</translation>
     </message>
     <message>
-        <location filename="../src/activities/maze/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="12" />
         <source>Help Tux get out of this maze.</source>
         <translation>Palīdzi Tuksim izkļūt no šī labirinta.</translation>
     </message>
     <message>
-        <location filename="../src/activities/maze/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="13" />
         <source>Can use the keyboard arrow to move an object.</source>
         <translation>Var izmantot tastatūras virzienu taustiņus, lai pārvietotu objektus.</translation>
     </message>
     <message>
-        <location filename="../src/activities/maze/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="14" />
         <source>Use the keyboard arrows to move Tux up to the door.
 
 At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
@@ -1012,7 +1044,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Atrodi izeju no labirinta (gājieni ir relatīvi)</translation>
     </message>
     <message>
-        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="14" />
         <source>Use the keyboard arrows to move Tux up to the door. In this maze, the move is relative (first person). Use the up arrow to go forward. The other arrows let you turn Tux in another direction.
 
 At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
@@ -1036,12 +1068,12 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Lai saprastu krāsu jaukšanu.</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="12" />
         <source>Mix the primary colors to match to the given color</source>
         <translation>Jaukt primārās krāsas, lai atbilstu dotajām krāsām</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="14" />
         <source>
 The activity deals with mixing primary colors of paint (subtractive mixing).
 
@@ -1064,12 +1096,12 @@ Krāsas gadījumā tinte absorbē dažādas gaismas krāsas, kas uz tās krīt, 
         <translation>Ievadi krītošos vārdus, pirms tie sasniedz zemi</translation>
     </message>
     <message>
-        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="12" />
         <source>Keyboard training</source>
         <translation>Tastatūras treniņš</translation>
     </message>
     <message>
-        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="14" />
         <source>Type the complete word as it falls, before it reaches the ground</source>
         <translation>Ieraksti pilnu krītošo vārdu, pirms tas sasniedz zemi</translation>
     </message>
@@ -1084,7 +1116,7 @@ Krāsas gadījumā tinte absorbē dažādas gaismas krāsas, kas uz tās krīt, 
         <translation>Atrodi izeju no neredzamā labirinta</translation>
     </message>
     <message>
-        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="14" />
         <source>Use the keyboard arrows to move Tux up to the door. Use the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
 
 At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
@@ -1108,17 +1140,17 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Iemācies noteikt laiku</translation>
     </message>
     <message>
-        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="12" />
         <source>Distinguish between time-units (hour, minute and second). Set and display time on a clock.</source>
         <translation>Atšķirība starp laika mērvienībām (stundām, minūtēm un sekundēm). Iestati displejā laiku un pulksteni.</translation>
     </message>
     <message>
-        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="13" />
         <source>The concept of time. Reading the time.</source>
         <translation>Laika pamati. Laika nolasīšana.</translation>
     </message>
     <message>
-        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="14" />
         <source>Set the clock to the time given, in the time-units shown (hours:minutes or hours:minutes:seconds). Click on the different arrows, and move the mouse, to make the numbers go up or down.</source>
         <translation>Iestatiet pulksteni dotajā laikā laika mērvienībās, kas tiek rādītas (stundas:minūtes vai stundas:minūtes:sekundes). Spiediet uz bultiņām un pārvietojiet peli, lai cipari mainītos.</translation>
     </message>
@@ -1129,17 +1161,17 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     </message>
     <message>
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="12" />
         <source>The aim is to switch off all the lights.</source>
         <translation>Mērķis ir izslēgt visas gaismas.</translation>
     </message>
     <message>
-        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="14" />
         <source>The effect of pressing a button is to toggle the state of that button, and of its immediate vertical and horizontal neighbors. The sun and the color of the sky depend on the number of clicks needed to solve the puzzle. If you click on Tux, the solution is shown.</source>
         <translation>Pogas piespiešanas rezultātā mainās gan aktīvās pogas stāvoklis, gan tās horizontālie un vertikālie kaimiņi Saule un debesu krāsa ir atkarīga no klikšķu skaita, kas ir nepieciešami mīklas atminēšanai. Ja uzspiedīsi uz Tukša, tiks parādīts risinājums.</translation>
     </message>
     <message>
-        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="15" />
         <source>The solver algorithm is described on Wikipedia. To know more about the Lights Off game: &amp;lt;http://en.wikipedia.org/wiki/Lights_Out_(game)&amp;gt;</source>
         <translation>Risinājuma algoritms, kas ir aprakstīts haar.clara.co.uk vietnē, ir vērtīgs resurss, kur uzzināt vairāk par spēli “Izslēgt gaismu” — &amp;lt;http://www.haar.clara.co.uk/Lights/solving.html&amp;gt;</translation>
     </message>
@@ -1154,12 +1186,12 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Sarindo objektus tā kā tos būtu vislabāk saskaitīt.</translation>
     </message>
     <message>
-        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="13" />
         <source>Basic enumeration</source>
         <translation>Pamata uzskaitījums</translation>
     </message>
     <message>
-        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="14" />
         <source>First, properly organize the items so that you can count them. Then, select the item you want to answer in the bottom right area. Enter the answer with the keyboard and press the OK button or the 'Enter' key.</source>
         <translation>Vispirms pareizi sakārto objektus, lai tos varētu saskaitīt. Tad izvēlies objektu, ar kuru atbildēt, apakšējā labajā laukumā. Ar klaviatūru ierakstiet atbildi un nospiediet Labi vai 'Enter' taustiņu.</translation>
     </message>
@@ -1170,17 +1202,17 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     </message>
     <message>
         <location filename="../src/activities/reversecount/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="12" />
         <source>Tux is hungry. Help him find fish by counting to the correct ice spot.</source>
         <translation>Tuksis ir izsalcis. Palīdzi viņam atrast zivis, saskaitot līdz pareizajam ledus laukumam.</translation>
     </message>
     <message>
-        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="13" />
         <source>Can move the mouse, can read numbers and subtract numbers up to 10 for the first level</source>
         <translation>Prot kustināt peli, lasīt skaitļus un atņemt skaitļus līdz pat 10 pirmajam līmenim</translation>
     </message>
     <message>
-        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="14" />
         <source>Click on the dice to show how many ice spots there are between Tux and the fish. Click the dice with the right mouse button to count backwards. When done, click on the OK button or hit the Enter key.</source>
         <translation>Nospied uz kauliņa, lai parādītu, cik ledus laukumi ir starp Tuksi un zivīm. Nospied uz kauliņa ar labo peles pogu, lai skaitītu atpakaļ. Kad esi pabeidzis, nospied OK pogu vai Enter taustiņu.</translation>
     </message>
@@ -1196,17 +1228,17 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Saskaiti cik priekšmetu ir zem burvju cepures pēc tam, kad daži no tās aizkļuva prom</translation>
     </message>
     <message>
-        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="12" />
         <source>Learn subtraction</source>
         <translation>Apgūsti atņemšanu</translation>
     </message>
     <message>
-        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="13" />
         <source>Subtraction</source>
         <translation>Atņemšana</translation>
     </message>
     <message>
-        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="14" />
         <source>Look at the magician, he tells the number of stars that are under his magic hat. Then, click on the hat to open it. A few stars escape. Click again on the hat to close it. You have to count how many are still under the hat. Click on the bottom right area to answer.</source>
         <translation>Paskaties uz burvju mākslinieku, viņš tev saka zvaigžņu skaitu kas ir zem viņa burvju cepures. Pēc tam klikšķini uz cepures, lai to atvērtu. Dažas zvaigznes izbēgs. Klikšķini vēlreiz uz cepures, lai to aizvērtu. Tev tagad ir jāsaskaita cik zvaigžņu vēl ir zem cepures. Klikšķini apakšā labajā pusē, lai uzzinātu atbildi.</translation>
     </message>
@@ -1221,14 +1253,18 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Iesper bumbu vārtos</translation>
     </message>
     <message>
-        <location filename="../src/activities/football/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/football/ActivityInfo.qml" line="12" />
         <source>Kick the ball into the black hole on the right</source>
         <translation>Sper bumbu uz melno caurumu labajā pusē</translation>
     </message>
     <message>
-        <location filename="../src/activities/football/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/football/ActivityInfo.qml" line="14" />
+        <source>Point the mouse and click on the ball, to set the speed and direction of the ball.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
         <source>Point the mouse and click on the ball, to set the speed and direction of the ball. The closer you click to the center, the slower the ball moves.</source>
-        <translation>Notēmē ar peli un noklikšķi uz bumbas, lai piešķirtu ātrumu un virzienu bumbai. Jo tuvāk bumbas centram klikšķināsi, jo lēnāk tā kustēsies.</translation>
+        <translation type="vanished">Notēmē ar peli un noklikšķi uz bumbas, lai piešķirtu ātrumu un virzienu bumbai. Jo tuvāk bumbas centram klikšķināsi, jo lēnāk tā kustēsies.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="5" />
@@ -1236,17 +1272,17 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="6" />
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="6" />
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="6" />
-        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="6" />
         <source>Use the arrow keys to navigate around the board and to avoid the Troggles. Press the space bar to eat the number</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="6" />
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="6" />
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="6" />
+        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="6" />
         <source>Touch cells to move around the board and to avoid the Troggles. Press the Muncher to eat the number</source>
         <translation type="unfinished" />
     </message>
@@ -1261,7 +1297,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Aizved skaitļu grauzēju pie visiem pirmskaitļiem.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="17" />
+        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="18" />
         <source>Learn about prime numbers.</source>
         <translation type="unfinished" />
     </message>
@@ -1281,8 +1317,8 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Aizved skaitļu grauzēju pie visiem skaitļa, kas redzams ekrāna augšā, dalāmajiem.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="17" />
-        <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="17" />
+        <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="18" />
+        <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="18" />
         <source>Learn about multiples and factors.</source>
         <translation>Uzzini par dalāmajiem un reizinātājiem.</translation>
     </message>
@@ -1292,12 +1328,12 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Saskaiti, cik priekšmetu ir zem burvju cepures</translation>
     </message>
     <message>
-        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="12" />
         <source>Learn addition</source>
         <translation>Mācies saskaitīšanu</translation>
     </message>
     <message>
-        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="14" />
         <source>Click on the hat to open or close it. Under the hat, how many stars can you see moving around? Count carefully. :) Click in the bottom-right area to input your answer.</source>
         <translation>Klikšķini uz cepures, lai to atvērtu, lai aizvērtu. Zem cepures, cik daudz zvaigžņu tu redzi kustamies apkārt? Skaiti uzmanīgi. :) Klikšķini apakšā labajā pusē, lai ievadītu tavu atbildi.</translation>
     </message>
@@ -1312,18 +1348,18 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Aizved skaitļu grauzēju pie izteiksmēm, kuru rezultāts ir skaitlis ekrāna augšpusē.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="12" />
         <source>Practice addition, multiplication, division and subtraction.</source>
         <translation>Trenējies skaitīt, reizināt, dalīt un atņemt.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="14" />
         <source>Use the arrow keys to navigate around the board and to avoid the Troggles. Press the space bar to eat a number</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="14" />
         <source>Touch cells to move around the board and to avoid the Troggles. Press the muncher to eat the number</source>
         <translation type="unfinished" />
     </message>
@@ -1353,7 +1389,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Aizved skaitļu grauzēju pie visām tām izteiksmēm, kuras nav vienādas ar skaitli ekrāna augšā.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="12" />
         <source>Practice addition, subtraction, multiplication and division.</source>
         <translation>Trenējies skaitīšanu, atņemšanu, reizināšanu un dalīšanu.</translation>
     </message>
@@ -1363,26 +1399,26 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Skaitļi ar diviem metamajiem kauliņiem</translation>
     </message>
     <message>
-        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="10" />
         <source>Count the number of dots on dice before they reach the ground</source>
         <translation>Saskaiti punktus uz kauliņiem, pirms tie sasniedz zemi</translation>
     </message>
     <message>
-        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="12" />
         <source>In a limited time, count the number of dots</source>
         <translation>Ierobežotā laikā saskaiti punktus</translation>
     </message>
     <message>
-        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="13" />
         <source>Counting skills</source>
         <translation>Skaitīšanas prasmes</translation>
     </message>
     <message>
-        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="14" />
         <source>With the keyboard, type the number of dots you see on the falling dice.</source>
         <translation>Ar tastatūras palīdzību ievadi saskaitīto punktu daudzumu uz kauliņa.</translation>
     </message>
@@ -1402,17 +1438,17 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Apgriez kārtis, lai sakristu skaitlis un tam atbilstošais vārds.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="12" />
         <source>Reading numbers, memory.</source>
         <translation>Skaitļu lasīšana, atmiņa.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="13" />
         <source>Reading</source>
         <translation>Lasīšana</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding a number of number, or the word of the number.</source>
         <translation>Tu redzi dažas kārtis, bet nezini, kas ir to otrā pusē. Katra kārts slēpj pašu skaitli vai skaitļa vārdu.</translation>
     </message>
@@ -1427,12 +1463,12 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Tuksim ir jāaplaista puķes, bet šļūtene ir bloķēta.</translation>
     </message>
     <message>
-        <location filename="../src/activities/followline/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/followline/ActivityInfo.qml" line="12" />
         <source>Fine motor coordination</source>
         <translation>Laba kustību koordinācija</translation>
     </message>
     <message>
-        <location filename="../src/activities/followline/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/followline/ActivityInfo.qml" line="14" />
         <source>Move the mouse over the red part of the hose-pipe. This will move it, bringing it, part by part, up to the flowers. Be careful, if you move off the hose, the red part will go back down.</source>
         <translation>Pārvieto peli virs sarkanās šļūtenes daļas. Tādējādi to pārvietojot un pievirzot, daļu pa daļai, tuvāk puķēm. Uzmanies, ja tu novirzīsies no šļūtenes, sarkanā daļa atgriezīsies atpakaļ.</translation>
     </message>
@@ -1442,17 +1478,17 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="12" />
         <source>Practise subtraction, until all the cards are gone. Tux do the same</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="13" />
         <source>subtraction</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more operations than Tux and you've won the game! :)</source>
@@ -1469,17 +1505,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Trāpi mērķī un skaiti savus punktus</translation>
     </message>
     <message>
-        <location filename="../src/activities/target/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/target/ActivityInfo.qml" line="12" />
         <source>Throw darts at a target and count your score.</source>
         <translation>Met šautriņas mērķī un skaiti savu rezultātu.</translation>
     </message>
     <message>
-        <location filename="../src/activities/target/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/target/ActivityInfo.qml" line="13" />
         <source>Can move the mouse, can read numbers and count up to 15 for the first level</source>
         <translation>Prot pārvietot peli, lasīt skaitļus un saskaitīt līdz 15 pirmajā līmenī</translation>
     </message>
     <message>
-        <location filename="../src/activities/target/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/target/ActivityInfo.qml" line="14" />
         <source>Check the wind speed and direction, and then click on the target to launch a dart. When you all your darts are thrown, a window appears asking you to count your score. Enter the score with the keyboard then press the Enter key or the OK button.</source>
         <translation>Pārbaudi vēja ātrumu un virzienu, un tad klikšķini uz mērķa, lai izmestu šautriņu. Kad visas tavas šautriņas būs izmestas, parādīsies logs, lai tu saskaitītu savu rezultātu. Ievadi rezultātu ar tastatūru un nospied Enter taustiņu, vai arī pogu Labi.</translation>
     </message>
@@ -1490,21 +1526,21 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     </message>
     <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="10" />
-        <source>Use the mousewheel to approach the rockwall an look for gold nuggets.</source>
-        <translation />
-    </message>
-    <message>
-        <location filename="../src/activities/mining/ActivityInfo.qml" line="11" />
-        <source>Learn to use the mousewheel to zoom in and out.</source>
+        <source>Use the mousewheel to approach the rockwall and look for gold nuggets.</source>
         <translation />
     </message>
     <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="12" />
-        <source>You should be familiar with moving the mouse and clicking.</source>
+        <source>Learn to use the mousewheel to zoom in and out.</source>
         <translation />
     </message>
     <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="13" />
+        <source>You should be familiar with moving the mouse and clicking.</source>
+        <translation />
+    </message>
+    <message>
+        <location filename="../src/activities/mining/ActivityInfo.qml" line="14" />
         <source>Looking at the rockwall, you can see a sparkle somewhere. Move the mouse cursor next to this sparkle and use the mousewheel to zoom in. If you zoomed in at maximum, a gold nugget will appear at the position of the sparkle. Click on the gold nugget to collect it.
 
 Having collected the nugget, use the mousewheel to zoom out again. If you zoomed out at maximum, another sparkle will appear, showing the next gold nugget to collect. Collect enough nuggets to complete the level.
@@ -1517,7 +1553,7 @@ Have fun! :)</source>
         <translation />
     </message>
     <message>
-        <location filename="../src/activities/mining/ActivityInfo.qml" line="22" />
+        <location filename="../src/activities/mining/ActivityInfo.qml" line="23" />
         <source>Thanks to the Tuxpaint team for providing the following sounds under GPL:
 - realrainbow.ogg - used when a new gold nugget appears
 - metalpaint.wav - remixed and used when a gold nugget is collected</source>
@@ -1529,7 +1565,7 @@ Have fun! :)</source>
         <translation>Saskaitīšanas un atņemšanas atmiņas spēle pret Tuksi</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more than Tux,  and you've won the game! :)</source>
@@ -1546,12 +1582,12 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Apgriez kārtis otrādi, lai sakristu skaitlis ar uzzīmēto bildi.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="12" />
         <source>Numeration training, memory.</source>
         <translation>Skaitīšanas treniņš, atmiņa.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding a number of pictures, or the written number.</source>
         <translation>Tu redzi dažas kārtis, bet nezini, kas ir to otrā pusē. Katrai kārti otrā pusē ir paslēpta bilde vai skaitlis.</translation>
     </message>
@@ -1566,7 +1602,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
 An adding-up sum looks like this: 2 + 2 = 4
 The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you'll be very good at adding-up!
@@ -1585,11 +1621,179 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation>Dalīšanas atmiņas spēle pret Tuksi</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more than TUX and you've won the game! :)</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/drawnumber/ActivityInfo.qml" line="9" />
+        <source>drawnumber activity</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/drawnumber/ActivityInfo.qml" line="10" />
+        <source>Click on numbers in the rigth order.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/drawnumber/ActivityInfo.qml" line="12" />
+        <source>Can count from 1 to 50.</source>
+        <translation>Prot skaitīt no 1 līdz 50</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/drawnumber/ActivityInfo.qml" line="14" />
+        <source>Draw the picture by clicking on each numbers in the right order.</source>
+        <translation>Zīmē attēlu, klikšķinot pareizā secībā uz skaitļiem.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ActivityInfo.qml" line="9" />
+        <location filename="../src/activities/scalesboard_weight/ActivityInfo.qml" line="9" />
+        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="9" />
+        <source>Balance the scales properly</source>
+        <translation>Līdzsvaro svarus pareizi</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ActivityInfo.qml" line="10" />
+        <source>Drag and Drop masses to balance the scales and calculate the weight in the avoirdupois unit</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/scalesboard_weight/ActivityInfo.qml" line="12" />
+        <source>Mental calculation, arithmetic equality, unit conversion</source>
+        <translation>Rēķināšana galvā, aritmētiskā vienlīdzība, mērvienību pārveidošana</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ActivityInfo.qml" line="14" />
+        <source>To balance the scales, move the masses on the left or the right side. Take care of the weight and the unit of the masses, remember that a pound (lb) is sixteen ounce (oz). They can be arranged in any order.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/traffic/ActivityInfo.qml" line="9" />
+        <source>A sliding-block puzzle game</source>
+        <translation>Slīdošo bloku spēle</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/traffic/ActivityInfo.qml" line="10" />
+        <source>Remove the red car from the parking lot through the gate on the right</source>
+        <translation>Pārvieto sarkano mašīnu no stāvvietas caur vārtiem labajā pusē</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/traffic/ActivityInfo.qml" line="14" />
+        <source>Each car can only move either horizontally or vertically. You must make some room in order to let the red car move through the gate on the right.</source>
+        <translation>Katra mašīna var tikt pārvietota vai nu horizontāli, vai vertikāli. Tev ir jāatbrīvo vieta, lai varētu pārvietot sarkano mašīnu uz vārtiem labajā pusē.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/canal_lock/ActivityInfo.qml" line="9" />
+        <source>Operate a canal lock</source>
+        <translation>Darbini kanāla slūžas</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/canal_lock/ActivityInfo.qml" line="10" />
+        <source>Tux is in trouble, and needs to take his boat through a lock. Help Tux and find out how a canal lock works.</source>
+        <translation>Tuksis ir nelaimē, viņa laiva ir jāizved caur slūžām. Palīdzi Tuksim uzzināt kā darbojas slūžas.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/canal_lock/ActivityInfo.qml" line="14" />
+        <source>You are in charge of the canal lock. Open the gates and the locks in the right order, so Tux can travel through the gates in both directions.</source>
+        <translation>Tu vadi kanāla slūžas. Atver vārtus un slūžas pareizā secībā, lai Tuksis var tikt cauri abos virzienos.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/canal_lock/ActivityInfo.qml" line="15" />
+        <source>Drawing by Stephane Cabaraux.</source>
+        <translation>Zīmējusi Stephane Cabaraux.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/clickanddraw/ActivityInfo.qml" line="9" />
+        <source>Click and draw</source>
+        <translation>Klikšķini un zīmē</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/clickanddraw/ActivityInfo.qml" line="10" />
+        <source>Draw the picture by clicking on the blue points.</source>
+        <translation>Zīmē, klikšķinot uz zilajiem punktiem.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/clickanddraw/ActivityInfo.qml" line="14" />
+        <source>Draw the picture by clicking on each blue point in sequence.</source>
+        <translation>Zīmē, klikšķinot uz visiem zilajiem punktiem secīgi.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/ActivityInfo.qml" line="9" />
+        <source>Guess a number</source>
+        <translation>Uzmini skaitli</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/ActivityInfo.qml" line="10" />
+        <source>Help Tux escape the cave. Tux hides a number for you to find.</source>
+        <translation>Palīdzi Tuksim izkļūt no alas. Tuksis paslēpis skaitli, kas tev jāatrod.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/ActivityInfo.qml" line="13" />
+        <source>Numbers from 1 to 1000 for the last level.</source>
+        <translation>Skaitļi no 1 līdz 1000 pēdējam līmenim.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/ActivityInfo.qml" line="14" />
+        <source>Read the instructions that give you the range of the number to find. Enter a number in the top right blue entry box. Tux will tell you if your number is higher or lower. Then enter another number. The distance between Tux and the escape area on the right represents how far you are from the correct number. If Tux is over or under the escape area, it means your number is over or under the correct number.</source>
+        <translation>Izlasi instrukciju, kurā norādīts apgabals, kādā skaitlis jāmeklē. Ievadi skaitli augšā pa labi zilajā ievades laukā. Tuksis tev pateiks, vai skaitlis ir par lielu vai par mazu. Tad ievadi citu skaitli. Attālums starp Tuksi un izejas laukumu pa labi parāda, cik tālu esi no pareizā skaitļa. Ja Tuksis ir virs vai zem izejas laukuma, tad tas nozīmē, ka piedāvātais skaitlis ir vai nu par lielu vai attiecīgi par mazu.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ActivityInfo.qml" line="10" />
+        <source>Drag and Drop masses to balance the scales and calculate the weight</source>
+        <translation>Pavelc un nomet atsvarus, lai līdzsvarotu svarus un aprēķinātu svaru</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ActivityInfo.qml" line="14" />
+        <source>To balance the scales, move the masses on the left or the right side. Take care of the weight and the unit of the masses, remember that a kilogram (kg) is 1000 grams (g). They can be arranged in any order.</source>
+        <translation>Lai līdzsvarotu svarus, pārbīdi atsvarus uz labo vai kreiso pusi. Pievērs uzmanību atsvara masai, atceries, ka kilograms (kg) ir 1000 grami (g). Tie var tikt salikti jebkādā secībā.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="10" />
+        <source>Drag and Drop weights to balance the scales</source>
+        <translation>Velc un nomet atsvarus, lai līdzsvarotu svarus</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="12" />
+        <source>Mental calculation, arithmetic equality</source>
+        <translation>Rēķināšana galvā, aritmētiskā vienlīdzība</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="14" />
+        <source>To balance the scales, move the weights on the left or the right side. The weights can be arranged in any order.</source>
+        <translation>Lai līdzsvarotu svarus, novieto atsvarus kreisajā vai labajā pusē. Atsvarus var salikt jebkādā secībā.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="15" />
+        <source>The painting is an original painting created by Virginie MOREAU (virginie.moreau@free.fr) in 2001. Its name is 'Spices Seller in Egypt'. It is released under the GPL license.</source>
+        <translation>Šo gleznu radīja Virginie Moreau (virginie.moreau@free.fr) 2001. gadā. Tās nosaukums ir 'Garšvielu tirgotājs Ēģiptē'. Tā ir izlaista ar GPL licenci.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/sudoku/ActivityInfo.qml" line="28" />
+        <source>Sudoku, place unique symbols in a square.</source>
+        <translation>Sudoku, izkārto unikālus simbolus kvadrātā.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/sudoku/ActivityInfo.qml" line="29" />
+        <source>Symbols must be unique in a row, in a column, and (if defined) each region.</source>
+        <translation>Simboliem jābūt unikāliem vienā rindā, kolonnā un (ja noteikts) katrā reģionā.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/sudoku/ActivityInfo.qml" line="31" />
+        <source>The aim of the puzzle is to enter a symbol or numeral from 1 through 9 in each cell of a grid, most frequently a 9x9 grid made up of 3x3 subgrids (called 'regions'), starting with various symbols or numerals given in some cells (the 'givens'). Each row, column and region must contain only one instance of each symbol or numeral (Source &amp;lt;http://en.wikipedia.org/wiki/Sudoku&amp;gt;).</source>
+        <translation>Mērķis ir ievadīt simbolu vai skaitli no 1 līdz 9 katrā lauka šūnā. Visbiežāk tas ir 9x9 laukums, veidots no 3x3 apakšlaukumiem (sauktiem par 'reģioniem'). Dažās šūnās jau no sākuma tiek ievadīti skaitļi vai simboli ('dotie'). Katrai rindai, kolonnai un reģionam jāsatur viens simbols vai skaitlis, un tie nedrīkst atkārtoties. (Avots &amp;lt;http://en.wikipedia.org/wiki/Sudoku&amp;gt;).</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/sudoku/ActivityInfo.qml" line="32" />
+        <source>Completing the puzzle requires patience and logical ability</source>
+        <translation>Nodarbība prasa pacietību un loģisko domāšanu</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/sudoku/ActivityInfo.qml" line="33" />
+        <source>For the first level with colored symbols, select a symbol on the left and click on its target position. For the higher levels, click on an empty square to give it the keyboard focus. Then enter a possible letter or number. GCompris will not let you enter invalid data.</source>
+        <translation>Pirmajam līmenim ar krāsainiem simboliem, izvēlies simbolu no kreisās puses un nospied uz tā mērķa atrašanās vietu. Augstākos līmeņos nospied uz tukšas šūnas, tad ar tastatūru ievadi nepieciešamos burtus vai skaitļus. GCompris neļaus ievadīt nederīgus datus.</translation>
     </message>
 </context>
 <context>
@@ -1626,67 +1830,67 @@ to make the ball go in a straight line.</source>
 <context>
     <name>ColorMix</name>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="95" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="96" />
         <source>Match the color</source>
         <translation>Saskaņot krāsu </translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="190" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="191" />
         <source>Not enough red</source>
         <translation>Nav pietiekami sarkans</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="192" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="193" />
         <source>Too much red</source>
         <translation>Pārāk sarkans</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="195" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="196" />
         <source>Not enough green</source>
         <translation>Nav pietiekami zaļš</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="197" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="198" />
         <source>Too much green</source>
         <translation>Pārāk zaļš</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="200" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="201" />
         <source>Not enough blue</source>
         <translation>Nav pietiekami zils</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="202" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="203" />
         <source>Too much blue</source>
         <translation>Pārāk zils</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="206" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="207" />
         <source>Not enough magenta</source>
         <translation>Nav pietiekami fuksīna</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="208" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="209" />
         <source>Too much magenta</source>
         <translation>Pārāk daudz fuksīna</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="211" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="212" />
         <source>Not enough yellow</source>
         <translation>Nav pietiekami dzeltens</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="213" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="214" />
         <source>Too much yellow</source>
         <translation>Pārāk dzeltens</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="216" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="217" />
         <source>Not enough cyan</source>
         <translation>Nav pietiekami ciāna</translation>
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="218" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="219" />
         <source>Too much cyan</source>
         <translation>Pārāk ciāna</translation>
     </message>
@@ -1712,186 +1916,206 @@ to make the ball go in a straight line.</source>
     </message>
     <message>
         <location filename="../src/core/DialogConfig.qml" line="100" />
-        <source>Enable audio</source>
+        <source>Enable audio voices</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="117" />
+        <location filename="../src/core/DialogConfig.qml" line="109" />
+        <source>Enable audio effects</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/core/DialogConfig.qml" line="118" />
         <source>Fullscreen</source>
         <translation>Pilnekrāns</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="134" />
+        <location filename="../src/core/DialogConfig.qml" line="127" />
         <source>Virtual Keyboard</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="151" />
+        <location filename="../src/core/DialogConfig.qml" line="137" />
         <source>Enable automatic downloads/updates of sound files</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="185" />
+        <location filename="../src/core/DialogConfig.qml" line="153" />
+        <source>Font selector</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/core/DialogConfig.qml" line="170" />
+        <source>Language selector</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/core/DialogConfig.qml" line="187" />
         <source>sounds</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="205" />
+        <location filename="../src/core/DialogConfig.qml" line="207" />
         <source>Sounds</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="219" />
+        <location filename="../src/core/DialogConfig.qml" line="221" />
         <source>Check for updates</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="220" />
+        <location filename="../src/core/DialogConfig.qml" line="222" />
         <source>Download</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="329" />
+        <location filename="../src/core/DialogConfig.qml" line="240" />
+        <source>Difficulty filter:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/core/DialogConfig.qml" line="469" />
         <source>You selected a new locale</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="330" />
+        <location filename="../src/core/DialogConfig.qml" line="470" />
         <source>Do you want to download the corresponding sound files now?</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="345" />
+        <location filename="../src/core/DialogConfig.qml" line="485" />
         <source>English (Great Britain)</source>
         <translation>Angļu (Lielbritānija)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="346" />
+        <location filename="../src/core/DialogConfig.qml" line="486" />
         <source>English (United States)</source>
         <translation>Angļu (ASV)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="347" />
+        <location filename="../src/core/DialogConfig.qml" line="487" />
         <source>Bulgarian</source>
         <translation>Bulgāru</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="348" />
+        <location filename="../src/core/DialogConfig.qml" line="488" />
         <source>Breton</source>
         <translation>Bretoņu</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="349" />
+        <location filename="../src/core/DialogConfig.qml" line="489" />
         <source>Czech Republic</source>
         <translation>Čehija</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="350" />
+        <location filename="../src/core/DialogConfig.qml" line="490" />
         <source>Danish</source>
         <translation>Dāņu</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="351" />
+        <location filename="../src/core/DialogConfig.qml" line="491" />
         <source>German</source>
         <translation>Vācu</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="352" />
+        <location filename="../src/core/DialogConfig.qml" line="492" />
         <source>Greek</source>
         <translation>Grieķu</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="353" />
+        <location filename="../src/core/DialogConfig.qml" line="493" />
         <source>Spanish</source>
         <translation>Spāņu</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="354" />
+        <location filename="../src/core/DialogConfig.qml" line="494" />
         <source>French</source>
         <translation>Franču</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="355" />
+        <location filename="../src/core/DialogConfig.qml" line="495" />
         <source>Scottish Gaelic</source>
         <translation>Skotu gēlu</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="356" />
+        <location filename="../src/core/DialogConfig.qml" line="496" />
         <source>Galician</source>
         <translation>Galisiešu</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="357" />
+        <location filename="../src/core/DialogConfig.qml" line="497" />
         <source>Hungarian</source>
         <translation>Ungāru</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="358" />
+        <location filename="../src/core/DialogConfig.qml" line="498" />
         <source>Lithuanian</source>
         <translation>Lietuviešu</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="359" />
+        <location filename="../src/core/DialogConfig.qml" line="499" />
         <source>Latvian</source>
         <translation>Latviešu</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="360" />
+        <location filename="../src/core/DialogConfig.qml" line="500" />
         <source>Dutch</source>
         <translation>Holandiešu</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="361" />
+        <location filename="../src/core/DialogConfig.qml" line="501" />
         <source>Norwegian Nynorsk</source>
         <translation>Jaunnorvēģu</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="362" />
+        <location filename="../src/core/DialogConfig.qml" line="502" />
         <source>Polish</source>
         <translation>Poļu</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="363" />
+        <location filename="../src/core/DialogConfig.qml" line="503" />
         <source>Russian</source>
         <translation>Krievu</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="364" />
+        <location filename="../src/core/DialogConfig.qml" line="504" />
         <source>Portuguese (Brazil)</source>
         <translation>Portugāļu (Brazīlija)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="365" />
+        <location filename="../src/core/DialogConfig.qml" line="505" />
         <source>Slovak</source>
         <translation>Slovāku</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="366" />
+        <location filename="../src/core/DialogConfig.qml" line="506" />
         <source>Slovenian</source>
         <translation>Slovēņu</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="367" />
+        <location filename="../src/core/DialogConfig.qml" line="507" />
         <source>Montenegrin</source>
         <translation>Melnkalnes</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="368" />
+        <location filename="../src/core/DialogConfig.qml" line="508" />
         <source>Swedish</source>
         <translation>Zviedru</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="369" />
+        <location filename="../src/core/DialogConfig.qml" line="509" />
         <source>Tamil</source>
         <translation>Tamilu</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="370" />
+        <location filename="../src/core/DialogConfig.qml" line="510" />
         <source>Thai</source>
         <translation>Taju</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="371" />
+        <location filename="../src/core/DialogConfig.qml" line="511" />
         <source>Chinese (Traditional)</source>
         <translation>Ķīniešu (tradicionālā)</translation>
     </message>
@@ -1968,14 +2192,21 @@ to make the ball go in a straight line.</source>
     </message>
 </context>
 <context>
+    <name>FindIt</name>
+    <message>
+        <source>Find the blue duck</source>
+        <translation type="obsolete">Atrodi zilu pīli</translation>
+    </message>
+</context>
+<context>
     <name>Leftright</name>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="142" />
+        <location filename="../src/activities/leftright/Leftright.qml" line="143" />
         <source>Left hand</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="153" />
+        <location filename="../src/activities/leftright/Leftright.qml" line="154" />
         <source>Right hand</source>
         <translation type="unfinished" />
     </message>
@@ -1983,33 +2214,15 @@ to make the ball go in a straight line.</source>
 <context>
     <name>Maze</name>
     <message>
-        <location filename="../src/activities/maze/Maze.qml" line="348" />
+        <location filename="../src/activities/maze/Maze.qml" line="349" />
         <source>Look at your position, then switch back to invisible mode to continue your moves</source>
         <translation>Apskati savu atrašanās vietu, tad pārslēdzies atpakaļ uz neredzamo režīmu, lai turpinātu savu kustību.</translation>
     </message>
 </context>
 <context>
-    <name>Mining</name>
-    <message>
-        <location filename="../src/activities/mining/Mining.qml" line="267" />
-        <source>Zoom in over the sparkle</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/mining/Mining.qml" line="269" />
-        <source>Click on the gold nugget</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/mining/Mining.qml" line="271" />
-        <source>Zoom out</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
     <name>Penalty</name>
     <message>
-        <location filename="../src/activities/penalty/Penalty.qml" line="215" />
+        <location filename="../src/activities/penalty/Penalty.qml" line="204" />
         <source>Click twice on the ball to shoot it.</source>
         <translation>Klikšķini uz bumbas divas reizes, lai to izšautu.</translation>
     </message>
@@ -2045,6 +2258,128 @@ Pēteris Krišjānis</translation>
     </message>
 </context>
 <context>
+    <name>ScaleNumber</name>
+    <message>
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="44" />
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="73" />
+        <source>Take care, you can drop weights on both sides of the scale.</source>
+        <translation>Ņem vērā, tu vari likt atsvarus abās svaru pusēs.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="66" />
+        <source>Now you have to guess the weight of the gift.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="67" />
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="74" />
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="80" />
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="86" />
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="93" />
+        <source>Enter the weight of the gift: %1</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>ScalesboardWeight</name>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="27" />
+        <source>%1 oz</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="32" />
+        <source>%1 lb</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="41" />
+        <source>The "lb" symbol at the end of a number means pound.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="42" />
+        <source>The pound is a unit of mass, a property which corresponds to the common perception of how "heavy” an object is. This unit is used in the USA.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="51" />
+        <source>The "oz" symbol at the end of a number means ounce. One pound equals sixteen ounces</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="59" />
+        <source>Remember, one pound ("lb") equals sixteen ounces ("oz").</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="66" />
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="82" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="66" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="100" />
+        <source>Take care, you can drop weights on both sides of the scale.</source>
+        <translation>Ņem vērā, tu vari likt atsvarus abās svaru pusēs.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="74" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="85" />
+        <source>Now you have to guess the weight of the gift.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="75" />
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="83" />
+        <source>Enter the weight of the gift in ounce: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="28" />
+        <source>%1 g</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="33" />
+        <source>%1 kg</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="42" />
+        <source>The "kg" symbol at the end of a number means kilogram.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="43" />
+        <source>The kilogram is a unit of mass, a property which corresponds to the common perception of how "heavy” an object is.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="52" />
+        <source>The "g" symbol at the end of a number means gram. One kilogram equals 1000 grams</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="60" />
+        <source>Remember, one kilo ("kg") equals 1000 grams ("g").</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="86" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="94" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="101" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="110" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="116" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="122" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="130" />
+        <source>Enter the weight of the gift in gram: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="109" />
+        <source>Remember, one kilo ('kg') equals 1000 grams ('g').</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
     <name>TopPanel</name>
     <message>
         <location filename="../src/activities/gnumch-equality/TopPanel.qml" line="51" />
@@ -2075,7 +2410,7 @@ Pēteris Krišjānis</translation>
 <context>
     <name>WarnMonster</name>
     <message>
-        <location filename="../src/activities/gnumch-equality/WarnMonster.qml" line="39" />
+        <location filename="../src/activities/gnumch-equality/WarnMonster.qml" line="41" />
         <source>Be careful, a troggle !</source>
         <translation type="unfinished" />
     </message>
@@ -2083,47 +2418,47 @@ Pēteris Krišjānis</translation>
 <context>
     <name>Warning</name>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="47" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="48" />
         <source>You were eaten by a Troggle.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="51" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="52" />
         <source>You ate a wrong number.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="62" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="63" />
         <source>1 is not a prime number.</source>
         <translation>1 nav pirmskaitlis.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="72" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="73" />
         <source>%1 is divisible by %2</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="80" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="81" />
         <source>and</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="97" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="98" />
         <source>Multiples of %1 include %2, </source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="98" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="99" />
         <source>but %1 is not a multiple of %2.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="115" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="116" />
         <source>and %1 are the divisors of %2.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="144" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="145" />
         <source>Press &amp;lt;Return&amp;gt; or click on me to continue.</source>
         <translation type="unfinished" />
     </message>
@@ -2753,7 +3088,7 @@ Pēteris Krišjānis</translation>
     </message>
     <message>
         <location filename="../src/activities/memory-wordnumber/dataset.js" line="40" />
-        <source>heighteen</source>
+        <source>eighteen</source>
         <translation type="unfinished" />
     </message>
     <message>
@@ -2764,6 +3099,37 @@ Pēteris Krišjānis</translation>
     <message>
         <location filename="../src/activities/memory-wordnumber/dataset.js" line="42" />
         <source>twenty</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>findit</name>
+    <message>
+        <source>Learning Clock</source>
+        <translation type="obsolete">Pulksteņa apguve</translation>
+    </message>
+</context>
+<context>
+    <name>guessnumber</name>
+    <message>
+        <location filename="../src/activities/guessnumber/guessnumber.js" line="60" />
+        <source>Guess a number between 1 and %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/guessnumber.js" line="85" />
+        <location filename="../src/activities/guessnumber/guessnumber.js" line="89" />
+        <source>Number too high</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/guessnumber.js" line="92" />
+        <source>Number too low</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/guessnumber.js" line="96" />
+        <source>Number found!</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -2934,27 +3300,27 @@ Pēteris Krišjānis</translation>
 <context>
     <name>main</name>
     <message>
-        <location filename="../src/core/main.qml" line="53" />
+        <location filename="../src/core/main.qml" line="68" />
         <source>Welcome to GCompris!</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/main.qml" line="54" />
+        <location filename="../src/core/main.qml" line="69" />
         <source>You are running GCompris for the first time.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/main.qml" line="55" />
+        <location filename="../src/core/main.qml" line="70" />
         <source>You should verify that your application settings especially your language is set correctly, and that all language specific sound files are installed. You can do this in the Preferences Dialog.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/main.qml" line="57" />
+        <location filename="../src/core/main.qml" line="72" />
         <source>Your current locale is '%1'</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/main.qml" line="59" />
+        <location filename="../src/core/main.qml" line="74" />
         <source>Have Fun!</source>
         <translation type="unfinished" />
     </message>
@@ -2992,7 +3358,7 @@ Pēteris Krišjānis</translation>
         <translation>Spied uz monētām vai papīra naudas ekrāna lejasdaļā, lai samaksātu. Ja tu vēlies aizvākt monētu vai banknoti, nospied uz tās augšējā ekrāna daļā.</translation>
     </message>
     <message>
-        <location filename="../src/activities/money/money.js" line="702" />
+        <location filename="../src/activities/money/money.js" line="701" />
         <source>Tux just bought some items in your shop.
 He gives you %1, please give back his change.</source>
         <translation type="unfinished" />

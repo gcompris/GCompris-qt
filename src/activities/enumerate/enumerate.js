@@ -29,14 +29,9 @@ var currentLevel = 0
 var numberOfLevel = 9
 var itemIcons = [
             url + "apple.svgz",
-            url + "baby_bottle.svgz",
             url + "balloon.svgz",
-            url + "banana.svgz",
-            url + "bottle.svgz",
             url + "bread_slice.svgz",
             url + "butter.svgz",
-            url + "carrot.svgz",
-            url + "cherry.svgz",
             url + "chocolate_cake.svgz",
             url + "chocolate.svgz",
             url + "cookie.svgz",
@@ -112,11 +107,11 @@ function initLevel() {
         break;
     case 8:
         numberOfItemType = 5;
-        numberOfItemMax  = 10;
+        numberOfItemMax  = 8;
         break;
     default:
         numberOfItemType = 5;
-        numberOfItemMax = 10;
+        numberOfItemMax = 8;
     }
 
     itemIcons = Core.shuffle(itemIcons)

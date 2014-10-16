@@ -87,6 +87,7 @@ Window {
             function getTransition(properties)
             {
                 properties.exitItem.pause()
+                audioVoices.clearQueue()
                 if(!properties.exitItem.isDialog) {
                     if(!properties.enterItem.isDialog) {
                         playIntroVoice(properties.enterItem.activityInfo.name)

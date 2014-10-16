@@ -14,12 +14,12 @@
         <translation>Определете дали ръката е лява или дясна</translation>
     </message>
     <message>
-        <location filename="../src/activities/leftright/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/leftright/ActivityInfo.qml" line="13" />
         <source>Distinguish right and left hands from different points of view. Spatial representation</source>
         <translation>Различаване на леви и десни ръце от различни гледни точки. Представа за пространство</translation>
     </message>
     <message>
-        <location filename="../src/activities/leftright/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/leftright/ActivityInfo.qml" line="15" />
         <source>You can see a hand: is it a left hand or a right hand? Click on the left button, or the right button depending on the displayed hand.</source>
         <translation type="unfinished" />
     </message>
@@ -34,20 +34,20 @@
         <translation>Обърнете картите, за да намерите две числа, които правят същия сбор, докато всички карти изчезнат.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="12" />
         <source>Practise adding up, until all the cards are gone.</source>
         <translation>Упражнения по събиране, докато всички карти свършат.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="13" />
         <source>Addition</source>
         <translation>Събиране</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
 An adding-up sum looks like this: 2 + 2 = 4
 The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you'll be very good at adding-up!
@@ -71,18 +71,35 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
     </message>
     <message>
         <location filename="../src/activities/gletters/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/gletters/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/gletters/ActivityInfo.qml" line="14" />
         <source>Type the falling letters before they reach the ground</source>
         <translation>Напишете падащите букви, преди да са достигнали земята</translation>
     </message>
     <message>
-        <location filename="../src/activities/gletters/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/imageid/ActivityInfo.qml" line="9" />
+        <source>Reading practice</source>
+        <translation>Упражнения по четене</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/imageid/ActivityInfo.qml" line="10" />
+        <source>Practice reading by finding the word matching an image</source>
+        <translation>Упражнение по четене чрез откриване на дума, съответстваща на изображение</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/imageid/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/traffic/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/gletters/ActivityInfo.qml" line="12" />
         <source>Letter association between the screen and the keyboard</source>
         <translation>Разпознаване на букви на екрана и клавиатурата</translation>
     </message>
     <message>
-        <location filename="../src/activities/gletters/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/imageid/ActivityInfo.qml" line="14" />
+        <source>Click on the word corresponding to the printed image.</source>
+        <translation>Натиснете думата, която съответства на показаното изображение.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/gletters/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="13" />
         <source>Keyboard manipulation</source>
         <translation>Операции с клавиатурата</translation>
     </message>
@@ -103,12 +120,12 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation>Обърнете картите, за да намерите две числа, които добавят или изваждат същото, докато всички карти изчезнат.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="12" />
         <source>Practise substraction, until all the cards are gone.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="13" />
         <source>Substraction</source>
         <translation type="unfinished" />
     </message>
@@ -117,18 +134,18 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation type="vanished">Упражнения по изваждане, докато всички карти свършат.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="13" />
         <source>Addition and subtraction</source>
         <translation>Събиране и изваждане</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found all the operations, you've won the game! :)</source>
@@ -147,9 +164,9 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Натиснете с мишката, за да изтриете зоната и разкриете фона</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/erase/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/erase/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="12" />
         <source>Motor-coordination</source>
         <translation>Двигателна координация</translation>
     </message>
@@ -165,39 +182,55 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Подредете четири пула в един ред</translation>
     </message>
     <message>
-        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/align4/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/align4/ActivityInfo.qml" line="12" />
         <source>Create a line of 4 pieces either horizontally (lying down), vertically (standing up) or diagonally.</source>
         <translation>Създайте поредица от 4 пула по хоризонтала (легнали), вертикала (изправени) или диагонално.</translation>
     </message>
     <message>
-        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/erase/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/football/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/align4/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/fifteen/ActivityInfo.qml" line="9" />
+        <source>The fifteen game</source>
+        <translation>Игра „Петнадесет“</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/fifteen/ActivityInfo.qml" line="10" />
+        <source>Move each item to make an increasing series: from the smallest to the largest</source>
+        <translation>Местете всеки обект, за да подредите всички в последователност от най-малкия към най-големия</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/fifteen/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/align4/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/football/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="13" />
         <source>Mouse-manipulation</source>
         <translation>Операции с мишката</translation>
     </message>
     <message>
-        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/align4/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/fifteen/ActivityInfo.qml" line="14" />
+        <source>Click on any item that has a free block beside it, and it will be swapped with the empty block.</source>
+        <translation>Натиснете който и да обект, имащ празна клетка до себе си. Той ще бъде заменен с нея.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/align4-2players/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/align4/ActivityInfo.qml" line="14" />
         <source>Click the position in the line where you want to drop a piece. You can also use the arrow keys to move the piece left or right, and the down or space key to drop a piece.</source>
         <translation>Натиснете върху колоната, където искате да пуснете пула. Може да използвате и стрелките на клавиатурата, за да го движите наляво или надясно, и долната стрелка или интервала, за да го пуснете.</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="14" />
         <source>Click the mouse on rectangles until all the blocks disappear.</source>
         <translation>Натискайте по правоъгълниците с мишката, докато всички плочки изчезнат.</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="14" />
-        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="15" />
+        <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="15" />
         <source>Animal pictures come from the Animal Photography Page of Ralf Schmode (http://schmode.net/). Ralf has kindly permitted GCompris to include his pictures. Thanks a lot, Ralf.</source>
         <translation>Снимките на животните са взети от страницата на Ралф Шмоде (http://schmode.net/). Ралф е дал разрешение да се използват в GCompris. Много благодарим, Ралф!</translation>
     </message>
@@ -207,17 +240,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Липсваща буква</translation>
     </message>
     <message>
-        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="13" />
         <source>Training reading skills</source>
         <translation>Упражнения по четене</translation>
     </message>
     <message>
-        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="14" />
         <source>Word reading</source>
         <translation>Четене на думи</translation>
     </message>
     <message>
-        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/missing-letter/ActivityInfo.qml" line="15" />
         <source>An object is displayed in the main area, and an incomplete word is printed under the picture. Select the missing letter to complete the word.</source>
         <translation>В главната зона е изобразен обект с незавършена дума под рисунката. Изберете липсващата буква, за да завършите думата.</translation>
     </message>
@@ -232,14 +265,13 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Движете мишката, за да изтриете зоната и разкриете фона</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase/ActivityInfo.qml" line="14" />
         <source>Move the mouse until all the blocks disappear. You can add you own images under the directory '~/My GCompris/erase'.</source>
         <translation>Движете мишката докато всички плочки изчезнат. Можете да добавите собствени изображения в папката „~/My GCompris/erase“.</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase/ActivityInfo.qml" line="14" />
         <source>Animal pictures are taken from the Animal Photography Page of Ralf Schmode (&amp;lt;http://schmode.net/&amp;gt;) and from LE BERRE Daniel. These people kindly gave GCompris the authorization to include their pictures. Thanks a lot, both of you.</source>
-        <translation>Снимките на животните са взети от страницата на Ралф Шмоде (&amp;lt;http://schmode.net&amp;g;) и от Даниел Льо Бер. Те са дали разрешение да се използват в GCompris. Благодарим много и на двамата.</translation>
+        <translation type="vanished">Снимките на животните са взети от страницата на Ралф Шмоде (&amp;lt;http://schmode.net&amp;g;) и от Даниел Льо Бер. Те са дали разрешение да се използват в GCompris. Благодарим много и на двамата.</translation>
     </message>
     <message>
         <location filename="../src/activities/algorithm/ActivityInfo.qml" line="9" />
@@ -252,18 +284,18 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Завършете списъка със знаци</translation>
     </message>
     <message>
-        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="12" />
         <source>Logic training activity</source>
         <translation>Упражнения за развиване на логиката</translation>
     </message>
     <message>
-        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="13" />
         <source>Move and click the mouse</source>
         <translation>Движение и натискане с мишката</translation>
     </message>
     <message>
-        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/algorithm/ActivityInfo.qml" line="14" />
         <source>Find the next symbol in a list.</source>
         <translation>Намерете следващия знак в списъка.</translation>
     </message>
@@ -274,23 +306,23 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     </message>
     <message>
         <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="10" />
         <source>Answer some algebra questions</source>
         <translation>Отговаряне на въпроси по алгебра</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="12" />
         <source>In a limited time, find the sum of of two numbers. Introduction to simple in-line addition.</source>
         <translation>Намерете сбора на двете числа в кратко време. Въведение в простото събиране.</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="13" />
         <source>Simple addition. Can recognize written numbers</source>
         <translation>Просто събиране. Умение да се разпознават числа.</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/algebra_plus/ActivityInfo.qml" line="14" />
         <source>An addition problem with two numbers is displayed. At the right of the equals sign, give the answer, the sum. Use the left and right arrows to modify your answer and press the Enter key to check if you've got it right. If not, just try again.</source>
         <translation>Показано е неправилно изваждане на две числа. Напишете резултата отдясно на знака за равенство. Използвайте лявата и дясната стрелка, за да го промените и натиснете „Enter“, за да проверите отговора. Ако сгрешите, опитайте отново.</translation>
     </message>
@@ -305,20 +337,20 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="30" />
-        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/planegame/ActivityInfo.qml" line="31" />
+        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="31" />
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/planegame/ActivityInfo.qml" line="32" />
         <source>Numeration training</source>
         <translation>Упражнения по броене</translation>
     </message>
     <message>
-        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="31" />
-        <location filename="../src/activities/planegame/ActivityInfo.qml" line="32" />
+        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="32" />
+        <location filename="../src/activities/planegame/ActivityInfo.qml" line="33" />
         <source>Number</source>
         <translation>Число</translation>
     </message>
     <message>
-        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="32" />
+        <location filename="../src/activities/numbers-odd-even/ActivityInfo.qml" line="33" />
         <source>Catch the odd or even numbers, using the up, down, right and left arrows on the keyboard to move the helicopter.</source>
         <translation type="unfinished" />
     </message>
@@ -333,17 +365,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="30" />
+        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="31" />
         <source>Alphabet training</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="31" />
+        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="32" />
         <source>Can decode letters</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="32" />
+        <location filename="../src/activities/alphabet-sequence/ActivityInfo.qml" line="33" />
         <source>Catch the alphabet letters, using the up, down, right and left arrows on the keyboard to move the helicopter.</source>
         <translation type="unfinished" />
     </message>
@@ -358,25 +390,25 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Игра на памет с умножение срещу Тъкс</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="10" />
         <source>Turn the cards over to find two numbers which multiply the same, until all the cards are gone.</source>
         <translation>Обърнете картите, за да намерите две числа, които са множители, докато всички карти изчезнат.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="12" />
         <source>Practise multiplication, until all the cards are gone.</source>
         <translation>Упражнения по умножение, докато всички карти свършат.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="13" />
         <source>Multiplication</source>
         <translation>Умножение</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more then Tux and you've won the game! :)</source>
@@ -394,13 +426,13 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Постройте наново мозайката</translation>
     </message>
     <message>
-        <location filename="../src/activities/mosaic/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/mosaic/ActivityInfo.qml" line="14" />
         <source>Rebuild the same mosaic on the right area</source>
         <translation>Постройте наново цялата мозайка в дясната част</translation>
     </message>
     <message>
-        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="9" />
         <location filename="../src/activities/money/ActivityInfo.qml" line="9" />
+        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="9" />
         <source>Money</source>
         <translation>Пари</translation>
     </message>
@@ -410,24 +442,24 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Упражнения за боравене с пари, включително стотинки</translation>
     </message>
     <message>
-        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/money/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/money/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="12" />
         <source>You must buy the different items and give the exact price. At higher levels, several items are displayed, and you must first calculate the total price.</source>
         <translation>Трябва да купите различни обекти и да платите точната цена. В по-горните нива са изобразени няколко обекта и първо трябва да я сметнете.</translation>
     </message>
     <message>
-        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/money/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/money_back/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/money_back/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/money/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="13" />
         <source>Can count</source>
         <translation>Можете да броите</translation>
     </message>
     <message>
-        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/money/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/money_back/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/money_back/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/money/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/money_cents/ActivityInfo.qml" line="14" />
         <source>Click on the coins or paper money at the bottom of the screen to pay. If you want to remove a coin or note, click on it on the upper screen area.</source>
         <translation>Натиснете монетите или банкнотите в долната част на екрана, за да платите. Ако искате да премахнете монета или банкнота, натиснете я в горната част на екрана.</translation>
     </message>
@@ -443,20 +475,20 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Чуйте буква и натиснете правилната</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="12" />
         <source>Letter-name recognition</source>
         <translation>Разпознаване на букви</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="13" />
         <source>Visual letter-recognition. Can move the mouse.</source>
         <translation>Зрително разпознаване на букви. Можете да движите мишката.</translation>
     </message>
     <message>
-        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/click_on_letter/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/click_on_letter_up/ActivityInfo.qml" line="14" />
         <source>A letter is spoken. Click on the matching letter in the main area. You can listen to the letter again, by clicking on the mouth icon in the bottom box.</source>
         <translation>Произнесена е буква. Натиснете съответстващата буква в основната зона. Можете да чуете буквата отново, ако натиснете иконата с устата в хоризонтална лента долу.</translation>
     </message>
@@ -467,8 +499,8 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Обърнете картите, за да намерите две числа, които изваждат същото, докато всички карти изчезнат.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="12" />
         <source>Practise addition, subtraction, until all the cards are gone.</source>
         <translation>Упражнения по събиране и изваждане, докато всички карти свършат.</translation>
     </message>
@@ -483,7 +515,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Преместете въртолета, за да хванете облаците в правилна последователност.</translation>
     </message>
     <message>
-        <location filename="../src/activities/planegame/ActivityInfo.qml" line="33" />
+        <location filename="../src/activities/planegame/ActivityInfo.qml" line="34" />
         <source>Catch the numbers in increasing order, using the up, down, right and left arrows on the keyboard to move the helicopter.</source>
         <translation>Хващайте числата във възходящ ред, като използвате стрелките на клавиатурата за управление на въртолета.</translation>
     </message>
@@ -499,8 +531,8 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Упражнения за боравене с пари като връщате рестото на Тъкс</translation>
     </message>
     <message>
-        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/money_back/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/money_back_cents/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/money_back/ActivityInfo.qml" line="12" />
         <source>Tux bought you different items and shows you his money. You must give him back his change. At higher levels, several items are displayed, and you must first calculate the total price.</source>
         <translation>Тъкс е купил разни неща и показва колко пари има. Трябва да му върнете рестото. В по-горните нива са изобразени няколко обекта и първо трябва да сметнете общата цена.</translation>
     </message>
@@ -515,7 +547,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Натиснете два пъти топката, за да отбележите гол.</translation>
     </message>
     <message>
-        <location filename="../src/activities/penalty/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/penalty/ActivityInfo.qml" line="14" />
         <source>Double click the mouse on the ball to kick it. You can double click the left right or middle mouse button. If you lose, Tux catches the ball. You must click on it to bring it back to its former position</source>
         <translation>Натиснете два пъти топката, за да я ритнете. Може да използвате левия, десния или средния бутон на мишката. Ако загубите, Тъкс ще хване топката. Трябва да я натиснете, за да я върнете в изходна позиция</translation>
     </message>
@@ -540,17 +572,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Натиснете върху правилния цвят</translation>
     </message>
     <message>
-        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="12" />
         <source>Learn to recognize unusual colors.</source>
         <translation>Научете се да разпознавате необичайни цветове.</translation>
     </message>
     <message>
-        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="13" />
         <source>Can read</source>
         <translation>Можете да четете</translation>
     </message>
     <message>
-        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/advanced_colors/ActivityInfo.qml" line="14" />
         <source>Click on the correct colored butterfly.</source>
         <translation type="unfinished" />
     </message>
@@ -560,17 +592,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Упражнения по умножение</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="12" />
         <source>In a limited time, give the product of two numbers</source>
         <translation>Намерете произведението от двете числа в кратко време.</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="13" />
         <source>Multiplication table</source>
         <translation>Таблица за умножение</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/algebra_by/ActivityInfo.qml" line="14" />
         <source>A multiplication of two numbers is displayed. At the right of the equals sign, give the answer, the product. Use the left and right arrows to modify your answer and press the Enter key to check if you've got it right. If not, just try again.</source>
         <translation>Показано е умножение на две числа. Напишете резултата отдясно на знака за равенство. Използвайте лявата и дясната стрелка, за да го промените и натиснете „Enter“, за да проверите отговора. Ако сгрешите, опитайте отново.</translation>
     </message>
@@ -581,7 +613,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     </message>
     <message>
         <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="29" />
-        <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="32" />
+        <location filename="../src/activities/ballcatch/ActivityInfo.qml" line="33" />
         <source>Press the two shift keys at the same time, to make the ball go in a straight line.</source>
         <translation>За да хвърлите топката, натиснете заедно двата клавиша „Shift“.</translation>
     </message>
@@ -591,17 +623,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Упражнения по изваждане</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="12" />
         <source>In a limited time, find the difference between two numbers</source>
         <translation>Намерете разликата от двете числа в кратко време</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="13" />
         <source>Simple subtraction</source>
         <translation>Просто изваждане</translation>
     </message>
     <message>
-        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/algebra_minus/ActivityInfo.qml" line="14" />
         <source>A subtraction problem with two numbers is displayed. At the right of the equals sign, give the answer, the difference. Use the left and right arrows to modify your answer and press the Enter key to check if you've got it right. If not, just try again.</source>
         <translation>Показано е неправилно изваждане на две числа. Напишете резултата отдясно на знака за равенство. Използвайте лявата и дясната стрелка, за да го промените и натиснете „Enter“, за да проверите отговора. Ако сгрешите, опитайте отново.</translation>
     </message>
@@ -611,24 +643,24 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Игра на памет с делене</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="10" />
         <source>Turn the cards over to find a matching operation, until all the cards are gone.</source>
         <translation>Обърнете картите, за да откриете съвпадащо действие, докато всички карти изчезнат.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="12" />
         <source>Practise division, until all the cards are gone.</source>
         <translation>Упражнения по делене, докато всички карти свършат.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="13" />
         <source>Division</source>
         <translation>Делене</translation>
     </message>
@@ -643,12 +675,12 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Открийте ягодката, натискайки по сините полета</translation>
     </message>
     <message>
-        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="12" />
         <source>Logic-training activity</source>
         <translation>Упражнения за развиване на логиката</translation>
     </message>
     <message>
-        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/hexagon/ActivityInfo.qml" line="14" />
         <source>Try to find the strawberry under the blue fields. The fields become redder as you get closer.</source>
         <translation>Опитайте се да намерите ягодката по сините полета. Колкото повече се доближавате, толкова по-червени стават полетата.</translation>
     </message>
@@ -724,12 +756,12 @@ Shortcuts:
         <translation>Натиснете върху правилния музикален инструмент</translation>
     </message>
     <message>
-        <location filename="../src/activities/instruments/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/instruments/ActivityInfo.qml" line="12" />
         <source>Learn to recognize musical instruments.</source>
         <translation>Научете се да разпознавате музикалните инструменти.</translation>
     </message>
     <message>
-        <location filename="../src/activities/instruments/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/instruments/ActivityInfo.qml" line="14" />
         <source>Click on the correct instrument.</source>
         <translation>Натиснете върху правилния инструмент.</translation>
     </message>
@@ -744,19 +776,19 @@ Shortcuts:
         <translation>Игра на памет с умножение и делене срещу Тъкс</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="12" />
         <source>Practise multiplication, division, until all the cards are gone.</source>
         <translation>Упражнения по умножение и делене, докато всички карти свършат.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="13" />
         <source>Multiplication, division</source>
         <translation>Умножение, делене</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more than Tux and you've won the game! :)</source>
@@ -773,17 +805,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Натиснете с левия бутон на мишката всички плуващи риби, преди да са напуснали аквариума.</translation>
     </message>
     <message>
-        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="12" />
         <source>Motor coordination: moving and clicking the mouse.</source>
         <translation>Двигателна координация: движение на мишката и натискане.</translation>
     </message>
     <message>
-        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="14" />
         <source>Use the left mouse button to click on the moving fish. A level 5 and after, a double click is mandatory.</source>
         <translation>Натиснете движещата се риба с левия бутон на мишката. От ниво 5 нагоре трябва да натискате двукратно върху рибата.</translation>
     </message>
     <message>
-        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/clickgame/ActivityInfo.qml" line="15" />
         <source>Fish are taken from the Unix utility xfishtank. All image credits belong to Guillaume Rousse.</source>
         <translation>Рибите са взети от програмата за „Юникс“ xfishtank. Приносът за изображенията е на Гийом Рус.</translation>
     </message>
@@ -798,7 +830,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Натиснете два пъти с мишката, за да изтриете зоната и разкриете фона</translation>
     </message>
     <message>
-        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/erase_2clic/ActivityInfo.qml" line="14" />
         <source>Double click the mouse on rectangles until all the blocks disappear.</source>
         <translation>Натискайте два пъти с мишката по правоъгълниците, докато всички плочки изчезнат.</translation>
     </message>
@@ -823,20 +855,20 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Игра на звукова памет срещу Тъкс</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="12" />
         <source>Train your audio memory and remove all the violinists Tux.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="13" />
         <source>Mouse manipulation, Brain.</source>
         <translation>Операции с мишката, мислене.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-sound/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/memory-sound-tux/ActivityInfo.qml" line="14" />
         <source>A set of violinist Tux is shown. Each Tux has an associated sound, and each sound has a twin exactly the same. Click on a Tux to see its hidden sound, and try to match the twins. You can only activate two Tux at once, so you need to remember where a sound is, while you listen to its twin. When you turn over the twins, they both disappear.</source>
         <translation>Показан е набор от Тъкс-цигулари. Всеки Тъкс има определен звук, и всеки звук има свой абсолютен близнак. Натиснете по Тъкс, за да чуете скрития звук и се опитайте да го намерите. Може да активирате само два цигуларя едновременно, така че трябва да запомните къде се намира звука, докато слушате неговия близнак. Когато обърнете близнаците, те изчезват.</translation>
     </message>
@@ -856,19 +888,19 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Игра на памет с всички действия срещу Тъкс</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="12" />
         <source>Practise addition, subtraction, multiplication, division, until all the cards are gone.</source>
         <translation>Упражнения по събиране, изваждане, умножение и делене, докато всички карти свършат.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="13" />
         <source>Addition, subtraction, multiplication, division</source>
         <translation>Събиране, изваждане, умножение и делене.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more than Tux, you've won the game! :)</source>
@@ -885,17 +917,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Натиснете правилния цвят</translation>
     </message>
     <message>
-        <location filename="../src/activities/colors/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/colors/ActivityInfo.qml" line="12" />
         <source>This board teaches you to recognize different colors. When you hear the name of the color, click on the duck wearing it.</source>
         <translation>Тази дъска учи да се разпознават цветове. Като чуете цвета, натиснете патенцето, което го носи.</translation>
     </message>
     <message>
-        <location filename="../src/activities/colors/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/colors/ActivityInfo.qml" line="13" />
         <source>Can move the mouse.</source>
         <translation>Можете да движите мишката.</translation>
     </message>
     <message>
-        <location filename="../src/activities/colors/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/colors/ActivityInfo.qml" line="14" />
         <source>Listen to the color and click on the matching duck.</source>
         <translation>Чуйте цвета и натиснете съответстващото патенце.</translation>
     </message>
@@ -920,18 +952,18 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/memory/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory/ActivityInfo.qml" line="12" />
         <source>Train your memory and remove all the cards</source>
         <translation>Упражнявайте паметта си и премахнете всички карти</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-tux/ActivityInfo.qml" line="14" />
         <source>A set of blank cards is shown. Each card has a picture on the other side, and each picture card has a twin exactly the same. Click on a card to see its hidden picture, and try to match the twins. You can only turn over two cards at once, so you need to remember where a picture is, while you look for its twin. When you turn over the twins, they both disappear. Tux teacher do the same.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory/ActivityInfo.qml" line="14" />
         <source>A set of blank cards is shown. Each card has a picture on the other side, and each picture card has a twin exactly the same. Click on a card to see its hidden picture, and try to match the twins. You can only turn over two cards at once, so you need to remember where a picture is, while you look for its twin. When you turn over the twins, they both disappear.</source>
         <translation>Показан е набор празни карти. Всяка двойка е свързана със същата картинка, но обърната наопаки. Натискайки една карта може да видите скритата картинка, но може да го направите само с две карти едновременно. Трябва да запомните местоположението на картинките и да ги свържете. За да премахнете двойка карти, разкрийте и двете.</translation>
     </message>
@@ -946,12 +978,12 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="12" />
         <source>Mix the primary colors to match to the given color.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="14" />
         <source>
 The activity deals with mixing primary colors of light (additive mixing).
 
@@ -970,21 +1002,21 @@ In case of light it is just the opposite of mixing color with paints! The more l
         <translation>Намерете изхода от лабиринта</translation>
     </message>
     <message>
-        <location filename="../src/activities/maze/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="12" />
         <source>Help Tux get out of this maze.</source>
         <translation>Помогнете на Тъкс да излезе от този лабиринт.</translation>
     </message>
     <message>
-        <location filename="../src/activities/maze/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="13" />
         <source>Can use the keyboard arrow to move an object.</source>
         <translation>Можете да използвате клавиатурата, за да движите обект.</translation>
     </message>
     <message>
-        <location filename="../src/activities/maze/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="14" />
         <source>Use the keyboard arrows to move Tux up to the door.
 
 At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
@@ -1008,7 +1040,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Намерете изход от лабиринта (движението е относително)</translation>
     </message>
     <message>
-        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="14" />
         <source>Use the keyboard arrows to move Tux up to the door. In this maze, the move is relative (first person). Use the up arrow to go forward. The other arrows let you turn Tux in another direction.
 
 At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
@@ -1032,12 +1064,12 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="12" />
         <source>Mix the primary colors to match to the given color</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/color_mix/ActivityInfo.qml" line="14" />
         <source>
 The activity deals with mixing primary colors of paint (subtractive mixing).
 
@@ -1056,12 +1088,12 @@ In case of paints the inks absorb different colors of light falling on it, subtr
         <translation>Напишете падащите думи преди да достигнат земята</translation>
     </message>
     <message>
-        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="12" />
         <source>Keyboard training</source>
         <translation>Упражнения с клавиатурата</translation>
     </message>
     <message>
-        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="14" />
         <source>Type the complete word as it falls, before it reaches the ground</source>
         <translation type="unfinished" />
     </message>
@@ -1076,7 +1108,7 @@ In case of paints the inks absorb different colors of light falling on it, subtr
         <translation>Намерете изхода от невидимия лабиринт</translation>
     </message>
     <message>
-        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="14" />
         <source>Use the keyboard arrows to move Tux up to the door. Use the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
 
 At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
@@ -1100,17 +1132,17 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Научете се да казвате часа</translation>
     </message>
     <message>
-        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="12" />
         <source>Distinguish between time-units (hour, minute and second). Set and display time on a clock.</source>
         <translation>Осъзнаване на разликите между час, минута и секунда. Показване и настройване на време в часовник.</translation>
     </message>
     <message>
-        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="13" />
         <source>The concept of time. Reading the time.</source>
         <translation>Понятие за време. Четене на времето.</translation>
     </message>
     <message>
-        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/clockgame/ActivityInfo.qml" line="14" />
         <source>Set the clock to the time given, in the time-units shown (hours:minutes or hours:minutes:seconds). Click on the different arrows, and move the mouse, to make the numbers go up or down.</source>
         <translation>Настройте стрелките, така че да показват даденото време (часове:минути или часове:минути:секунди). Може да променяте посоката на стрелката, като я изберете и я движите с мишката.</translation>
     </message>
@@ -1121,17 +1153,17 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     </message>
     <message>
         <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="12" />
         <source>The aim is to switch off all the lights.</source>
         <translation>Целта е да се загасят всички лампи.</translation>
     </message>
     <message>
-        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="14" />
         <source>The effect of pressing a button is to toggle the state of that button, and of its immediate vertical and horizontal neighbors. The sun and the color of the sky depend on the number of clicks needed to solve the puzzle. If you click on Tux, the solution is shown.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/lightsoff/ActivityInfo.qml" line="15" />
         <source>The solver algorithm is described on Wikipedia. To know more about the Lights Off game: &amp;lt;http://en.wikipedia.org/wiki/Lights_Out_(game)&amp;gt;</source>
         <translation>Алгоритъмът, разяснен на haar.clara.co.uk, е ценен ресурс за опознаване на играта „Гаси лампи“: &amp;lt;http://en.wikipedia.org/wiki/Lights_Out_(game)&amp;gt;</translation>
     </message>
@@ -1146,12 +1178,12 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Подредете обектите по възможно най-добрия начин, за да ги преброите</translation>
     </message>
     <message>
-        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="13" />
         <source>Basic enumeration</source>
         <translation>Основно пресмятане</translation>
     </message>
     <message>
-        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/enumerate/ActivityInfo.qml" line="14" />
         <source>First, properly organize the items so that you can count them. Then, select the item you want to answer in the bottom right area. Enter the answer with the keyboard and press the OK button or the 'Enter' key.</source>
         <translation>Подредете правилно обектите, за да може да ги преброите. После изберете обекта, за който искате да отговорите, в долната дясна зона. Въведете отговора с клавиатурата и натиснете бутона „Да“ или клавиша „Enter“.</translation>
     </message>
@@ -1162,17 +1194,17 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     </message>
     <message>
         <location filename="../src/activities/reversecount/ActivityInfo.qml" line="10" />
-        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="12" />
         <source>Tux is hungry. Help him find fish by counting to the correct ice spot.</source>
         <translation>Тъкс е гладен. Помогнете му да намери рибата, като броите до правилния леден блок.</translation>
     </message>
     <message>
-        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="13" />
         <source>Can move the mouse, can read numbers and subtract numbers up to 10 for the first level</source>
         <translation>Можете да движите мишката, да четете числа и да ги изваждате до 10 в първото ниво</translation>
     </message>
     <message>
-        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/reversecount/ActivityInfo.qml" line="14" />
         <source>Click on the dice to show how many ice spots there are between Tux and the fish. Click the dice with the right mouse button to count backwards. When done, click on the OK button or hit the Enter key.</source>
         <translation>Натиснете зара, за да видите колко ледени блока има между Тъкс и рибата. Натиснете зара с десния бутон на мишката, за да броите обратно. Когато сте готови, натиснете бутона „Да“ или клавиша „Enter“.</translation>
     </message>
@@ -1188,17 +1220,17 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Пребройте колко обекти са под магическата шапка, след като някои изчезнат</translation>
     </message>
     <message>
-        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="12" />
         <source>Learn subtraction</source>
         <translation>Учене на изваждане</translation>
     </message>
     <message>
-        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="13" />
         <source>Subtraction</source>
         <translation>Изваждане</translation>
     </message>
     <message>
-        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/magic-hat-minus/ActivityInfo.qml" line="14" />
         <source>Look at the magician, he tells the number of stars that are under his magic hat. Then, click on the hat to open it. A few stars escape. Click again on the hat to close it. You have to count how many are still under the hat. Click on the bottom right area to answer.</source>
         <translation>Погледнете магьосника, той казва броя на звездите, които са под магическата му шапка. След това натиснете шапката, за да я отворите. Няколко звезди бягат. Натиснете отново, за да я затворите. Трябва да преброите колко са все още под шапката. Натиснете долния десен ъгъл, за да отговорите.</translation>
     </message>
@@ -1213,13 +1245,13 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Вкарайте топката в целта</translation>
     </message>
     <message>
-        <location filename="../src/activities/football/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/football/ActivityInfo.qml" line="12" />
         <source>Kick the ball into the black hole on the right</source>
         <translation>Ритнете топката към черната дупка вдясно</translation>
     </message>
     <message>
-        <location filename="../src/activities/football/ActivityInfo.qml" line="13" />
-        <source>Point the mouse and click on the ball, to set the speed and direction of the ball. The closer you click to the center, the slower the ball moves.</source>
+        <location filename="../src/activities/football/ActivityInfo.qml" line="14" />
+        <source>Point the mouse and click on the ball, to set the speed and direction of the ball.</source>
         <translation type="unfinished" />
     </message>
     <message>
@@ -1228,17 +1260,17 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="6" />
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="6" />
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="6" />
-        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="6" />
         <source>Use the arrow keys to navigate around the board and to avoid the Troggles. Press the space bar to eat the number</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="6" />
         <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="6" />
         <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="6" />
+        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="6" />
         <source>Touch cells to move around the board and to avoid the Troggles. Press the Muncher to eat the number</source>
         <translation type="unfinished" />
     </message>
@@ -1253,7 +1285,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Насочвайте числояда към всички прости числа.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="17" />
+        <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="18" />
         <source>Learn about prime numbers.</source>
         <translation type="unfinished" />
     </message>
@@ -1273,8 +1305,8 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Насочвайте числояда към всички кратни на числото в горната част на екрана.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="17" />
-        <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="17" />
+        <location filename="../src/activities/gnumch-multiples/ActivityInfo.qml" line="18" />
+        <location filename="../src/activities/gnumch-factors/ActivityInfo.qml" line="18" />
         <source>Learn about multiples and factors.</source>
         <translation>Научете за кратно и делимо.</translation>
     </message>
@@ -1284,12 +1316,12 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Пребройте колко обекти има под магическата шапка</translation>
     </message>
     <message>
-        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="12" />
         <source>Learn addition</source>
         <translation>Учене на събиране</translation>
     </message>
     <message>
-        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/magic-hat-plus/ActivityInfo.qml" line="14" />
         <source>Click on the hat to open or close it. Under the hat, how many stars can you see moving around? Count carefully. :) Click in the bottom-right area to input your answer.</source>
         <translation>Натиснете шапката, за да я отворите или затворите. Колко звезди виждате под нея? Бройте внимателно. :-) Натиснете в долния десен ъгъл, за да въведете отговора.</translation>
     </message>
@@ -1304,18 +1336,18 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Насочвайте числояда към изрази, чието равенство е числото в горната част на екрана.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="12" />
         <source>Practice addition, multiplication, division and subtraction.</source>
         <translation>Упражнения по събиране, умножение, делене и изваждане.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="14" />
         <source>Use the arrow keys to navigate around the board and to avoid the Troggles. Press the space bar to eat a number</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/gnumch-equality/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="14" />
         <source>Touch cells to move around the board and to avoid the Troggles. Press the muncher to eat the number</source>
         <translation type="unfinished" />
     </message>
@@ -1345,7 +1377,7 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Насочвайте числояда към всички изрази, които не са равни на числото в горната част на екрана.</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/gnumch-inequality/ActivityInfo.qml" line="12" />
         <source>Practice addition, subtraction, multiplication and division.</source>
         <translation>Упражнения по събиране, изваждане, умножение и делене.</translation>
     </message>
@@ -1355,26 +1387,26 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Числа със зар</translation>
     </message>
     <message>
-        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="10" />
         <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="10" />
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="10" />
         <source>Count the number of dots on dice before they reach the ground</source>
         <translation>Пребройте колко точки има на зара преди да стигне земята.</translation>
     </message>
     <message>
-        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="11" />
-        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="12" />
         <source>In a limited time, count the number of dots</source>
         <translation>Пребройте точките в ограничено време</translation>
     </message>
     <message>
-        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="12" />
-        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="13" />
         <source>Counting skills</source>
         <translation>Умения по броене</translation>
     </message>
     <message>
-        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="13" />
-        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/smallnumbers/ActivityInfo.qml" line="14" />
+        <location filename="../src/activities/smallnumbers2/ActivityInfo.qml" line="14" />
         <source>With the keyboard, type the number of dots you see on the falling dice.</source>
         <translation>Напишете числото с клавиатурата, което съответства на броя на точките на падащия зар.</translation>
     </message>
@@ -1394,17 +1426,17 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Обърнете картите, за да намерите съвпадащите число с дума.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="12" />
         <source>Reading numbers, memory.</source>
         <translation>Четене на числа, памет.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="13" />
         <source>Reading</source>
         <translation>Четене</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-wordnumber/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding a number of number, or the word of the number.</source>
         <translation>Може да виждате някои карти, но не и какво има на обратната им страна.  Всяка карта крие число изразено като цифри или дума.</translation>
     </message>
@@ -1419,12 +1451,12 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation>Тъкс трябва да полее цветята, но маркучът е запушен</translation>
     </message>
     <message>
-        <location filename="../src/activities/followline/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/followline/ActivityInfo.qml" line="12" />
         <source>Fine motor coordination</source>
         <translation>Фина двигателна координация</translation>
     </message>
     <message>
-        <location filename="../src/activities/followline/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/followline/ActivityInfo.qml" line="14" />
         <source>Move the mouse over the red part of the hose-pipe. This will move it, bringing it, part by part, up to the flowers. Be careful, if you move off the hose, the red part will go back down.</source>
         <translation>Движете мишката по червената част на маркуча. Това ще го отпуши постепенно чак до цветята. Внимавайте, ако махнете курсора от маркуча, червената част ще се върне обратно.</translation>
     </message>
@@ -1434,17 +1466,17 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="12" />
         <source>Practise subtraction, until all the cards are gone. Tux do the same</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="13" />
         <source>subtraction</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more operations than Tux and you've won the game! :)</source>
@@ -1461,17 +1493,17 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Докоснете мишената и пресметнете точките</translation>
     </message>
     <message>
-        <location filename="../src/activities/target/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/target/ActivityInfo.qml" line="12" />
         <source>Throw darts at a target and count your score.</source>
         <translation>Хвърляйте стрелички по мишената и смятайте точките си</translation>
     </message>
     <message>
-        <location filename="../src/activities/target/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/target/ActivityInfo.qml" line="13" />
         <source>Can move the mouse, can read numbers and count up to 15 for the first level</source>
         <translation>Може да движите мишката, да четете числа и да броите до 15 на първото ниво.</translation>
     </message>
     <message>
-        <location filename="../src/activities/target/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/target/ActivityInfo.qml" line="14" />
         <source>Check the wind speed and direction, and then click on the target to launch a dart. When you all your darts are thrown, a window appears asking you to count your score. Enter the score with the keyboard then press the Enter key or the OK button.</source>
         <translation>Проверете скоростта и посоката на вятъра, след което натиснете мишената, за да хвърлите стреличка. Когато хвърлите всички стрелички се показва прозорец, приканвайки ви да преброите точките. Въведете точките с клавиатурата и натиснете клавиша „Enter“ или бутона „Да“.</translation>
     </message>
@@ -1482,21 +1514,21 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     </message>
     <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="10" />
-        <source>Use the mousewheel to approach the rockwall an look for gold nuggets.</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/mining/ActivityInfo.qml" line="11" />
-        <source>Learn to use the mousewheel to zoom in and out.</source>
+        <source>Use the mousewheel to approach the rockwall and look for gold nuggets.</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="12" />
-        <source>You should be familiar with moving the mouse and clicking.</source>
+        <source>Learn to use the mousewheel to zoom in and out.</source>
         <translation type="unfinished" />
     </message>
     <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="13" />
+        <source>You should be familiar with moving the mouse and clicking.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/mining/ActivityInfo.qml" line="14" />
         <source>Looking at the rockwall, you can see a sparkle somewhere. Move the mouse cursor next to this sparkle and use the mousewheel to zoom in. If you zoomed in at maximum, a gold nugget will appear at the position of the sparkle. Click on the gold nugget to collect it.
 
 Having collected the nugget, use the mousewheel to zoom out again. If you zoomed out at maximum, another sparkle will appear, showing the next gold nugget to collect. Collect enough nuggets to complete the level.
@@ -1509,7 +1541,7 @@ Have fun! :)</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/mining/ActivityInfo.qml" line="22" />
+        <location filename="../src/activities/mining/ActivityInfo.qml" line="23" />
         <source>Thanks to the Tuxpaint team for providing the following sounds under GPL:
 - realrainbow.ogg - used when a new gold nugget appears
 - metalpaint.wav - remixed and used when a gold nugget is collected</source>
@@ -1521,7 +1553,7 @@ Have fun! :)</source>
         <translation>Игра на памет със събиране и изваждане срещу Тъкс</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more than Tux,  and you've won the game! :)</source>
@@ -1538,12 +1570,12 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Обърнете картите, за да намерите съвпадащите чифтове — число с картинка.</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="11" />
+        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="12" />
         <source>Numeration training, memory.</source>
         <translation>Упражнения по броене и памет</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-enumerate/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding a number of pictures, or the written number.</source>
         <translation>Може да виждате някои карти, но не и какво има на обратната им страна. Всяка карта крие някакъв брой картинки или записаното число.</translation>
     </message>
@@ -1558,7 +1590,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-add-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
 An adding-up sum looks like this: 2 + 2 = 4
 The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you'll be very good at adding-up!
@@ -1577,11 +1609,179 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation>Игра на памет с делене срещу Тъкс</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="13" />
+        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="14" />
         <source>You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it's hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You're doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you've made them all disappear, found more than TUX and you've won the game! :)</source>
         <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/drawnumber/ActivityInfo.qml" line="9" />
+        <source>drawnumber activity</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/drawnumber/ActivityInfo.qml" line="10" />
+        <source>Click on numbers in the rigth order.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/drawnumber/ActivityInfo.qml" line="12" />
+        <source>Can count from 1 to 50.</source>
+        <translation>Можете да броите от 1 до 50.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/drawnumber/ActivityInfo.qml" line="14" />
+        <source>Draw the picture by clicking on each numbers in the right order.</source>
+        <translation>Нарисувайте картината като натискате всяко от числата в правилния ред.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ActivityInfo.qml" line="9" />
+        <location filename="../src/activities/scalesboard_weight/ActivityInfo.qml" line="9" />
+        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="9" />
+        <source>Balance the scales properly</source>
+        <translation>Добро уравновесяване на кантара</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ActivityInfo.qml" line="10" />
+        <source>Drag and Drop masses to balance the scales and calculate the weight in the avoirdupois unit</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ActivityInfo.qml" line="12" />
+        <location filename="../src/activities/scalesboard_weight/ActivityInfo.qml" line="12" />
+        <source>Mental calculation, arithmetic equality, unit conversion</source>
+        <translation>Смятане наум, аритметично равенство, преобразуване</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ActivityInfo.qml" line="14" />
+        <source>To balance the scales, move the masses on the left or the right side. Take care of the weight and the unit of the masses, remember that a pound (lb) is sixteen ounce (oz). They can be arranged in any order.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/traffic/ActivityInfo.qml" line="9" />
+        <source>A sliding-block puzzle game</source>
+        <translation>Пъзел с плъзгащи се блокове</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/traffic/ActivityInfo.qml" line="10" />
+        <source>Remove the red car from the parking lot through the gate on the right</source>
+        <translation>Махнете червената кола от мястото за паркиране, като използвате портата вдясно</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/traffic/ActivityInfo.qml" line="14" />
+        <source>Each car can only move either horizontally or vertically. You must make some room in order to let the red car move through the gate on the right.</source>
+        <translation>Всяка кола може да се движи или хоризонтално, или вертикално. Трябва да направите малко място, за да може червената кола да мине през портата вдясно.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/canal_lock/ActivityInfo.qml" line="9" />
+        <source>Operate a canal lock</source>
+        <translation>Управление на шлюз в канал</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/canal_lock/ActivityInfo.qml" line="10" />
+        <source>Tux is in trouble, and needs to take his boat through a lock. Help Tux and find out how a canal lock works.</source>
+        <translation>Тъкс е в беда и иска да преведете кораба му през шлюза. Помогнете на Тъкс и разберете как работи шлюзът в канал.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/canal_lock/ActivityInfo.qml" line="14" />
+        <source>You are in charge of the canal lock. Open the gates and the locks in the right order, so Tux can travel through the gates in both directions.</source>
+        <translation>Отговаряте за шлюз в канал. Отворете вратите и камерите в правилна последователност, така че Тъкс да може да се движи и в двете посоки.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/canal_lock/ActivityInfo.qml" line="15" />
+        <source>Drawing by Stephane Cabaraux.</source>
+        <translation>Рисунката е от Стефан Кабаро.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/clickanddraw/ActivityInfo.qml" line="9" />
+        <source>Click and draw</source>
+        <translation>Натиснете и рисувайте</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/clickanddraw/ActivityInfo.qml" line="10" />
+        <source>Draw the picture by clicking on the blue points.</source>
+        <translation>Нарисувайте рисунката като натискате сините точки.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/clickanddraw/ActivityInfo.qml" line="14" />
+        <source>Draw the picture by clicking on each blue point in sequence.</source>
+        <translation>Нарисувайте рисунката като натискате последователно всяка синя точка.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/ActivityInfo.qml" line="9" />
+        <source>Guess a number</source>
+        <translation>Познайте число</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/ActivityInfo.qml" line="10" />
+        <source>Help Tux escape the cave. Tux hides a number for you to find.</source>
+        <translation>Помогнете на Тъкс да избяга от пещерата. Тъкс е скрил число, което трябва да откриете.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/ActivityInfo.qml" line="13" />
+        <source>Numbers from 1 to 1000 for the last level.</source>
+        <translation>Числа от 1 до 1000 за последното ниво.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/ActivityInfo.qml" line="14" />
+        <source>Read the instructions that give you the range of the number to find. Enter a number in the top right blue entry box. Tux will tell you if your number is higher or lower. Then enter another number. The distance between Tux and the escape area on the right represents how far you are from the correct number. If Tux is over or under the escape area, it means your number is over or under the correct number.</source>
+        <translation>Прочетете инструкциите, които ви дават диапазона на търсеното число. Въведете число в синята кутийка в горния десен ъгъл. Тъкс ще ви каже дали числото е по-голямо или по-малко. След това въведете друго число. Разстоянието между Тъкс и спасителния изход показва колко далече сте от правилното число. Ако Тъкс е над или под спасителния изход, това означава, че числото ви е по-голямо или по-малко от правилното.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ActivityInfo.qml" line="10" />
+        <source>Drag and Drop masses to balance the scales and calculate the weight</source>
+        <translation>Влачете тежестите, за да уравновесите кантара и определите тежестта</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ActivityInfo.qml" line="14" />
+        <source>To balance the scales, move the masses on the left or the right side. Take care of the weight and the unit of the masses, remember that a kilogram (kg) is 1000 grams (g). They can be arranged in any order.</source>
+        <translation>За да уравновесите кантара, движете тежестите от лявата страна или дясната страна. Внимавайте с големината и мерните единици — 1 килограм е равен на 1000 грама. Тежестите могат да се подреждат във всякакъв ред.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="10" />
+        <source>Drag and Drop weights to balance the scales</source>
+        <translation>Поставете тежестите, за да уравновесите кантара</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="12" />
+        <source>Mental calculation, arithmetic equality</source>
+        <translation>Смятане наум, аритметично равенство</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="14" />
+        <source>To balance the scales, move the weights on the left or the right side. The weights can be arranged in any order.</source>
+        <translation>За да уравновесите кантара, поставяйте тежести от лявата или от дясната страна. Те могат да се подреждат във всякакъв ред.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="15" />
+        <source>The painting is an original painting created by Virginie MOREAU (virginie.moreau@free.fr) in 2001. Its name is 'Spices Seller in Egypt'. It is released under the GPL license.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/sudoku/ActivityInfo.qml" line="28" />
+        <source>Sudoku, place unique symbols in a square.</source>
+        <translation>Судоку, поставяне на уникални знаци в квадратче.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/sudoku/ActivityInfo.qml" line="29" />
+        <source>Symbols must be unique in a row, in a column, and (if defined) each region.</source>
+        <translation>Знаците трябва да са уникални във всеки ред, колона и (ако го има) район.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/sudoku/ActivityInfo.qml" line="31" />
+        <source>The aim of the puzzle is to enter a symbol or numeral from 1 through 9 in each cell of a grid, most frequently a 9x9 grid made up of 3x3 subgrids (called 'regions'), starting with various symbols or numerals given in some cells (the 'givens'). Each row, column and region must contain only one instance of each symbol or numeral (Source &amp;lt;http://en.wikipedia.org/wiki/Sudoku&amp;gt;).</source>
+        <translation>Целта на тази игра е да се въвеждат знак или число от 1 до 9 във всяка клетка от полета, най-често 9x9, направено от по-малки полета от 3x3 (наречени „райони“), започвайки с поставени различни знаци или числа в дадени клетки („дадени“). Всеки ред, колона и район трябва да съдържа само един от всеки знак или число (източник: &amp;lt;http://bg.wikipedia.org/wiki/Судоку&amp;gt;).</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/sudoku/ActivityInfo.qml" line="32" />
+        <source>Completing the puzzle requires patience and logical ability</source>
+        <translation>Завършването на играта изисква търпение и логическа мисъл</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/sudoku/ActivityInfo.qml" line="33" />
+        <source>For the first level with colored symbols, select a symbol on the left and click on its target position. For the higher levels, click on an empty square to give it the keyboard focus. Then enter a possible letter or number. GCompris will not let you enter invalid data.</source>
+        <translation>За първото ниво с цветни знаци, изберете символ вляво и натиснете върху крайната му позиция. За по-горните нива, натиснете празно квадратче, за да бъде на фокус. След това въведете буква или цифра. Играта няма да ви позволи въвеждането на неправилни данни.</translation>
     </message>
 </context>
 <context>
@@ -1618,67 +1818,67 @@ to make the ball go in a straight line.</source>
 <context>
     <name>ColorMix</name>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="95" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="96" />
         <source>Match the color</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="190" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="191" />
         <source>Not enough red</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="192" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="193" />
         <source>Too much red</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="195" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="196" />
         <source>Not enough green</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="197" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="198" />
         <source>Too much green</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="200" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="201" />
         <source>Not enough blue</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="202" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="203" />
         <source>Too much blue</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="206" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="207" />
         <source>Not enough magenta</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="208" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="209" />
         <source>Too much magenta</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="211" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="212" />
         <source>Not enough yellow</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="213" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="214" />
         <source>Too much yellow</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="216" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="217" />
         <source>Not enough cyan</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/color_mix/ColorMix.qml" line="218" />
+        <location filename="../src/activities/color_mix/ColorMix.qml" line="219" />
         <source>Too much cyan</source>
         <translation type="unfinished" />
     </message>
@@ -1704,186 +1904,206 @@ to make the ball go in a straight line.</source>
     </message>
     <message>
         <location filename="../src/core/DialogConfig.qml" line="100" />
-        <source>Enable audio</source>
+        <source>Enable audio voices</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="117" />
+        <location filename="../src/core/DialogConfig.qml" line="109" />
+        <source>Enable audio effects</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/core/DialogConfig.qml" line="118" />
         <source>Fullscreen</source>
         <translation>На цял екран</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="134" />
+        <location filename="../src/core/DialogConfig.qml" line="127" />
         <source>Virtual Keyboard</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="151" />
+        <location filename="../src/core/DialogConfig.qml" line="137" />
         <source>Enable automatic downloads/updates of sound files</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="185" />
+        <location filename="../src/core/DialogConfig.qml" line="153" />
+        <source>Font selector</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/core/DialogConfig.qml" line="170" />
+        <source>Language selector</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/core/DialogConfig.qml" line="187" />
         <source>sounds</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="205" />
+        <location filename="../src/core/DialogConfig.qml" line="207" />
         <source>Sounds</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="219" />
+        <location filename="../src/core/DialogConfig.qml" line="221" />
         <source>Check for updates</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="220" />
+        <location filename="../src/core/DialogConfig.qml" line="222" />
         <source>Download</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="329" />
+        <location filename="../src/core/DialogConfig.qml" line="240" />
+        <source>Difficulty filter:</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/core/DialogConfig.qml" line="469" />
         <source>You selected a new locale</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="330" />
+        <location filename="../src/core/DialogConfig.qml" line="470" />
         <source>Do you want to download the corresponding sound files now?</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="345" />
+        <location filename="../src/core/DialogConfig.qml" line="485" />
         <source>English (Great Britain)</source>
         <translation>британски английски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="346" />
+        <location filename="../src/core/DialogConfig.qml" line="486" />
         <source>English (United States)</source>
         <translation>американски английски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="347" />
+        <location filename="../src/core/DialogConfig.qml" line="487" />
         <source>Bulgarian</source>
         <translation>български</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="348" />
+        <location filename="../src/core/DialogConfig.qml" line="488" />
         <source>Breton</source>
         <translation>бретонски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="349" />
+        <location filename="../src/core/DialogConfig.qml" line="489" />
         <source>Czech Republic</source>
         <translation>Чешки</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="350" />
+        <location filename="../src/core/DialogConfig.qml" line="490" />
         <source>Danish</source>
         <translation>датски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="351" />
+        <location filename="../src/core/DialogConfig.qml" line="491" />
         <source>German</source>
         <translation>немски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="352" />
+        <location filename="../src/core/DialogConfig.qml" line="492" />
         <source>Greek</source>
         <translation>гръцки</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="353" />
+        <location filename="../src/core/DialogConfig.qml" line="493" />
         <source>Spanish</source>
         <translation>испански</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="354" />
+        <location filename="../src/core/DialogConfig.qml" line="494" />
         <source>French</source>
         <translation>френски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="355" />
+        <location filename="../src/core/DialogConfig.qml" line="495" />
         <source>Scottish Gaelic</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="356" />
+        <location filename="../src/core/DialogConfig.qml" line="496" />
         <source>Galician</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="357" />
+        <location filename="../src/core/DialogConfig.qml" line="497" />
         <source>Hungarian</source>
         <translation>унгарски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="358" />
+        <location filename="../src/core/DialogConfig.qml" line="498" />
         <source>Lithuanian</source>
         <translation>литовски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="359" />
+        <location filename="../src/core/DialogConfig.qml" line="499" />
         <source>Latvian</source>
         <translation>латвийски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="360" />
+        <location filename="../src/core/DialogConfig.qml" line="500" />
         <source>Dutch</source>
         <translation>холандски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="361" />
+        <location filename="../src/core/DialogConfig.qml" line="501" />
         <source>Norwegian Nynorsk</source>
         <translation>норвежки (ниношк)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="362" />
+        <location filename="../src/core/DialogConfig.qml" line="502" />
         <source>Polish</source>
         <translation>полски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="363" />
+        <location filename="../src/core/DialogConfig.qml" line="503" />
         <source>Russian</source>
         <translation>руски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="364" />
+        <location filename="../src/core/DialogConfig.qml" line="504" />
         <source>Portuguese (Brazil)</source>
         <translation>португалски (Бразилия)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="365" />
+        <location filename="../src/core/DialogConfig.qml" line="505" />
         <source>Slovak</source>
         <translation>словашки</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="366" />
+        <location filename="../src/core/DialogConfig.qml" line="506" />
         <source>Slovenian</source>
         <translation>словенски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="367" />
+        <location filename="../src/core/DialogConfig.qml" line="507" />
         <source>Montenegrin</source>
         <translation>черногорски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="368" />
+        <location filename="../src/core/DialogConfig.qml" line="508" />
         <source>Swedish</source>
         <translation>шведски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="369" />
+        <location filename="../src/core/DialogConfig.qml" line="509" />
         <source>Tamil</source>
         <translation>тамилски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="370" />
+        <location filename="../src/core/DialogConfig.qml" line="510" />
         <source>Thai</source>
         <translation>тайландски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="371" />
+        <location filename="../src/core/DialogConfig.qml" line="511" />
         <source>Chinese (Traditional)</source>
         <translation>китайски (традиционен)</translation>
     </message>
@@ -1962,12 +2182,12 @@ to make the ball go in a straight line.</source>
 <context>
     <name>Leftright</name>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="142" />
+        <location filename="../src/activities/leftright/Leftright.qml" line="143" />
         <source>Left hand</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="153" />
+        <location filename="../src/activities/leftright/Leftright.qml" line="154" />
         <source>Right hand</source>
         <translation type="unfinished" />
     </message>
@@ -1975,33 +2195,15 @@ to make the ball go in a straight line.</source>
 <context>
     <name>Maze</name>
     <message>
-        <location filename="../src/activities/maze/Maze.qml" line="348" />
+        <location filename="../src/activities/maze/Maze.qml" line="349" />
         <source>Look at your position, then switch back to invisible mode to continue your moves</source>
         <translation>Погледнете местоположението си и превключете обратно в невидим режим, за да се движите</translation>
     </message>
 </context>
 <context>
-    <name>Mining</name>
-    <message>
-        <location filename="../src/activities/mining/Mining.qml" line="267" />
-        <source>Zoom in over the sparkle</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/mining/Mining.qml" line="269" />
-        <source>Click on the gold nugget</source>
-        <translation type="unfinished" />
-    </message>
-    <message>
-        <location filename="../src/activities/mining/Mining.qml" line="271" />
-        <source>Zoom out</source>
-        <translation type="unfinished" />
-    </message>
-</context>
-<context>
     <name>Penalty</name>
     <message>
-        <location filename="../src/activities/penalty/Penalty.qml" line="215" />
+        <location filename="../src/activities/penalty/Penalty.qml" line="204" />
         <source>Click twice on the ball to shoot it.</source>
         <translation>Натиснете два пъти топката, за да я ритнете.</translation>
     </message>
@@ -2039,6 +2241,128 @@ to make the ball go in a straight line.</source>
     </message>
 </context>
 <context>
+    <name>ScaleNumber</name>
+    <message>
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="44" />
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="73" />
+        <source>Take care, you can drop weights on both sides of the scale.</source>
+        <translation>Забележете, че може да слагате тежести и на двете страни на кантара.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="66" />
+        <source>Now you have to guess the weight of the gift.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="67" />
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="74" />
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="80" />
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="86" />
+        <location filename="../src/activities/scalesboard/ScaleNumber.qml" line="93" />
+        <source>Enter the weight of the gift: %1</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>ScalesboardWeight</name>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="27" />
+        <source>%1 oz</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="32" />
+        <source>%1 lb</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="41" />
+        <source>The "lb" symbol at the end of a number means pound.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="42" />
+        <source>The pound is a unit of mass, a property which corresponds to the common perception of how "heavy” an object is. This unit is used in the USA.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="51" />
+        <source>The "oz" symbol at the end of a number means ounce. One pound equals sixteen ounces</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="59" />
+        <source>Remember, one pound ("lb") equals sixteen ounces ("oz").</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="66" />
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="82" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="66" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="100" />
+        <source>Take care, you can drop weights on both sides of the scale.</source>
+        <translation>Забележете, че може да слагате тежести и на двете страни на кантара.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="74" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="85" />
+        <source>Now you have to guess the weight of the gift.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="75" />
+        <location filename="../src/activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml" line="83" />
+        <source>Enter the weight of the gift in ounce: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="28" />
+        <source>%1 g</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="33" />
+        <source>%1 kg</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="42" />
+        <source>The "kg" symbol at the end of a number means kilogram.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="43" />
+        <source>The kilogram is a unit of mass, a property which corresponds to the common perception of how "heavy” an object is.</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="52" />
+        <source>The "g" symbol at the end of a number means gram. One kilogram equals 1000 grams</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="60" />
+        <source>Remember, one kilo ("kg") equals 1000 grams ("g").</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="86" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="94" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="101" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="110" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="116" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="122" />
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="130" />
+        <source>Enter the weight of the gift in gram: %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/scalesboard_weight/ScalesboardWeight.qml" line="109" />
+        <source>Remember, one kilo ('kg') equals 1000 grams ('g').</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
     <name>TopPanel</name>
     <message>
         <location filename="../src/activities/gnumch-equality/TopPanel.qml" line="51" />
@@ -2069,7 +2393,7 @@ to make the ball go in a straight line.</source>
 <context>
     <name>WarnMonster</name>
     <message>
-        <location filename="../src/activities/gnumch-equality/WarnMonster.qml" line="39" />
+        <location filename="../src/activities/gnumch-equality/WarnMonster.qml" line="41" />
         <source>Be careful, a troggle !</source>
         <translation type="unfinished" />
     </message>
@@ -2077,47 +2401,47 @@ to make the ball go in a straight line.</source>
 <context>
     <name>Warning</name>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="47" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="48" />
         <source>You were eaten by a Troggle.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="51" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="52" />
         <source>You ate a wrong number.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="62" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="63" />
         <source>1 is not a prime number.</source>
         <translation>1 не е просто число</translation>
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="72" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="73" />
         <source>%1 is divisible by %2</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="80" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="81" />
         <source>and</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="97" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="98" />
         <source>Multiples of %1 include %2, </source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="98" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="99" />
         <source>but %1 is not a multiple of %2.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="115" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="116" />
         <source>and %1 are the divisors of %2.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/activities/gnumch-equality/Warning.qml" line="144" />
+        <location filename="../src/activities/gnumch-equality/Warning.qml" line="145" />
         <source>Press &amp;lt;Return&amp;gt; or click on me to continue.</source>
         <translation type="unfinished" />
     </message>
@@ -2747,7 +3071,7 @@ to make the ball go in a straight line.</source>
     </message>
     <message>
         <location filename="../src/activities/memory-wordnumber/dataset.js" line="40" />
-        <source>heighteen</source>
+        <source>eighteen</source>
         <translation type="unfinished" />
     </message>
     <message>
@@ -2758,6 +3082,37 @@ to make the ball go in a straight line.</source>
     <message>
         <location filename="../src/activities/memory-wordnumber/dataset.js" line="42" />
         <source>twenty</source>
+        <translation type="unfinished" />
+    </message>
+</context>
+<context>
+    <name>findit</name>
+    <message>
+        <source>Learning Clock</source>
+        <translation type="obsolete">Научете часовника</translation>
+    </message>
+</context>
+<context>
+    <name>guessnumber</name>
+    <message>
+        <location filename="../src/activities/guessnumber/guessnumber.js" line="60" />
+        <source>Guess a number between 1 and %1</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/guessnumber.js" line="85" />
+        <location filename="../src/activities/guessnumber/guessnumber.js" line="89" />
+        <source>Number too high</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/guessnumber.js" line="92" />
+        <source>Number too low</source>
+        <translation type="unfinished" />
+    </message>
+    <message>
+        <location filename="../src/activities/guessnumber/guessnumber.js" line="96" />
+        <source>Number found!</source>
         <translation type="unfinished" />
     </message>
 </context>
@@ -2928,27 +3283,27 @@ to make the ball go in a straight line.</source>
 <context>
     <name>main</name>
     <message>
-        <location filename="../src/core/main.qml" line="53" />
+        <location filename="../src/core/main.qml" line="68" />
         <source>Welcome to GCompris!</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/main.qml" line="54" />
+        <location filename="../src/core/main.qml" line="69" />
         <source>You are running GCompris for the first time.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/main.qml" line="55" />
+        <location filename="../src/core/main.qml" line="70" />
         <source>You should verify that your application settings especially your language is set correctly, and that all language specific sound files are installed. You can do this in the Preferences Dialog.</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/main.qml" line="57" />
+        <location filename="../src/core/main.qml" line="72" />
         <source>Your current locale is '%1'</source>
         <translation type="unfinished" />
     </message>
     <message>
-        <location filename="../src/core/main.qml" line="59" />
+        <location filename="../src/core/main.qml" line="74" />
         <source>Have Fun!</source>
         <translation type="unfinished" />
     </message>
@@ -2986,7 +3341,7 @@ to make the ball go in a straight line.</source>
         <translation>Натиснете монетите или банкнотите в долната част на екрана, за да платите. Ако искате да премахнете монета или банкнота, натиснете я в горната част на екрана.</translation>
     </message>
     <message>
-        <location filename="../src/activities/money/money.js" line="702" />
+        <location filename="../src/activities/money/money.js" line="701" />
         <source>Tux just bought some items in your shop.
 He gives you %1, please give back his change.</source>
         <translation type="unfinished" />

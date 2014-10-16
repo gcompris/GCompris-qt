@@ -49,6 +49,7 @@
 #include <QDebug>
 
 #include <QFontDatabase>
+#include <QDir>
 
 QQuickWindow *ApplicationInfo::m_window = NULL;
 ApplicationInfo *ApplicationInfo::m_instance = NULL;
@@ -90,6 +91,10 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     // Get all symbol fonts to remove them
     QFontDatabase database;
     m_excludedFonts = database.families(QFontDatabase::Symbol);
+
+    // Get fonts from rcc
+    const QStringList fontFilters = {"*.otf", "*.ttf"};
+    m_fontsFromRcc = QDir(":/gcompris/src/core/resource/fonts").entryList(fontFilters);
 }
 
 ApplicationInfo::~ApplicationInfo()
@@ -144,6 +149,11 @@ QString ApplicationInfo::getLocaleFilePath(const QString &file)
 QStringList ApplicationInfo::getSystemExcludedFonts()
 {
     return m_excludedFonts;
+}
+
+QStringList ApplicationInfo::getFontsFromRcc()
+{
+    return m_fontsFromRcc;
 }
 
 void ApplicationInfo::notifyPortraitMode()

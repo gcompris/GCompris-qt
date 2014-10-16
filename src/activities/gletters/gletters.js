@@ -28,6 +28,7 @@
 .pragma library
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var currentLevel = 0;
 var currentSubLevel = 0;
@@ -149,6 +150,7 @@ function initLevel() {
 
 function processKeyPress(text) {
     var typedText = uppercaseOnly ? text.toLocaleUpperCase() : text;
+    playLetter(text)
 
     if (currentWord !== null) {
         // check against a currently typed word
@@ -169,7 +171,6 @@ function processKeyPress(text) {
 
     if (currentWord !== null && currentWord.isCompleted()) {
         // win!
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav");
         currentWord.won();  // note: deleteWord() is triggered after fadeout
         currentWord = null
         nextSubLevel();
@@ -322,4 +323,9 @@ function nextSubLevel() {
         items.bonus.good("lion");
     } else
         initLevel();
+}
+
+function playLetter(letter) {
+    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
+                                                                       + Core.getSoundFilenamForChar(letter)))
 }

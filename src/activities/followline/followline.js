@@ -21,12 +21,14 @@
  */
 .pragma library
 .import QtQuick 2.0 as Quick
+.import GCompris 1.0 as GCompris
 
 var url = "qrc:/gcompris/src/activities/followline/resource/"
 
 var currentLevel = 0
 var numberOfLevel = 8
 var items
+var createdLineParts
 
 function start(items_) {
     items = items_
@@ -35,11 +37,44 @@ function start(items_) {
 }
 
 function stop() {
+    destroyLineParts()
 }
 
 function initLevel() {
+    if(!items)
+        return
     items.bar.level = currentLevel + 1
     items.currentLock = 0
+    destroyLineParts()
+    createdLineParts = new Array()
+    var width = 40 * GCompris.ApplicationInfo.ratio
+    var height = 60 * GCompris.ApplicationInfo.ratio
+    var index = 0
+    var y = items.fireman.y
+    var x = items.fireman.x + items.fireman.width
+    var angle = 0
+    var directionStep = 0.01 * (currentLevel + 1)
+    var direction = directionStep
+    do {
+        var newy = y + Math.sin(angle) * width * 0.5
+        var newx = x + Math.cos(angle) * width * 0.5
+        angle += direction
+        if(angle > Math.PI / 4)
+            direction = - directionStep
+        else if(angle < - Math.PI / 4)
+            direction = directionStep
+        if(y > items.background.height * 0.6)
+            direction = - directionStep
+        else if(y < items.background.height * 0.4)
+            direction = directionStep
+        createdLineParts[index] =
+                createLinePart(index, x, y, width, height,
+                               getAngleOfLineBetweenTwoPoints(x, y, newx, newy) * (180 / Math.PI))
+        x = newx
+        y = newy
+        index++
+    } while(x < items.background.width * 0.9)
+    items.lastLock = index - 1
 }
 
 function nextLevel() {
@@ -54,4 +89,45 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
+}
+
+function createLinePart(index, x, y, width, height, rotation) {
+    var component = Qt.createComponent("qrc:/gcompris/src/activities/followline/LinePart.qml");
+    var part = component.createObject(
+                items.background,
+                {
+                    "x": x,
+                    "y": y,
+                    "width": width,
+                    "height": height,
+                    "rotation": rotation,
+                    "z": index,
+                    "items": items,
+                    "index": index
+                });
+
+    if (part === null) {
+        // Error Handling
+        console.log("Error creating LinePart object");
+    }
+    return part;
+}
+
+// Determines the angle of a straight line drawn between point one and two.
+// The number returned, which is a float in radian,
+// tells us how much we have to rotate a horizontal line clockwise
+// for it to match the line between the two points.
+function getAngleOfLineBetweenTwoPoints(x1, y1, x2, y2) {
+    var xDiff = x2 - x1;
+    var yDiff = y2 - y1;
+    return Math.atan2(yDiff, xDiff);
+}
+
+function destroyLineParts() {
+    if (createdLineParts) {
+        for(var i = 0;  i < createdLineParts.length; ++i) {
+            createdLineParts[i].destroy()
+        }
+        createdLineParts.length = 0
+    }
 }

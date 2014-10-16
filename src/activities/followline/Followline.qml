@@ -1,4 +1,4 @@
-/* GCompris - followline.qml
+/* GCompris - FollowLine.qml
  *
  * Copyright (C) 2014 Bruno Coudoin
  *
@@ -49,12 +49,15 @@ ActivityBase {
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
-            property Item main: activity.main
             property alias background: background
+            property alias fireman: fireman
             property alias bar: bar
             property alias bonus: bonus
-            property alias currentLock: hose.currentLock
+            property int currentLock: 0
+            property int lastLock: 0
         }
+
+        onHeightChanged: Activity.initLevel()
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
@@ -110,6 +113,32 @@ ActivityBase {
             onClose: home()
         }
 
+        function win() {
+            fireflame.opacity = 0
+            water.opacity = 1
+        }
+
+        MultiPointTouchArea {
+            anchors.fill: parent
+            enabled: ApplicationInfo.isMobile
+            maximumTouchPoints: 1
+            z: 1000
+            onTouchUpdated: {
+                for(var i in touchPoints) {
+                    var touch = touchPoints[i]
+                    var part = background.childAt(touch.x, touch.y)
+                    if(part) {
+                        if(items.currentLock == part.index) {
+                            items.currentLock++
+                            if(items.currentLock == items.lastLock) {
+                                background.win()
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         Bar {
             id: bar
             content: BarEnumContent { value: help | home | previous | next }
@@ -134,117 +163,10 @@ ActivityBase {
             anchors.fill: parent
             enabled: !ApplicationInfo.isMobile
             hoverEnabled: true
-            onPositionChanged: hose.currentLock > 0 && fireflame.opacity == 1 ?
-                                   hose.currentLock-- : false
+            onPositionChanged: items.currentLock > 0 && fireflame.opacity == 1 ?
+                                   items.currentLock-- : false
         }
 
-        function win() {
-            fireflame.opacity = 0
-            water.opacity = 1
-        }
-
-        MultiPointTouchArea {
-            anchors.fill: parent
-            enabled: ApplicationInfo.isMobile
-            maximumTouchPoints: 1
-            onTouchUpdated: {
-                for(var i in touchPoints) {
-                    var touch = touchPoints[i]
-                    var part = background.childAt(touch.x, touch.y)
-                    if(part) {
-                        if(part.i >= 0) {
-                            if(hose.currentLock == part.i)
-                                hose.currentLock++
-                            if(hose.itemAt(hose.currentLock).opacity == 0) {
-                                background.win()
-                            }
-                        } else {
-                            hose.currentLock > 0 && fireflame.opacity == 1 ?
-                                        hose.currentLock-- : false
-                        }
-                    }
-                }
-            }
-        }
-
-        Repeater {
-            id: hose
-            // We create more items than needed because
-            // we don't know how much we really need
-            model: Math.floor((activity.width - fireman.width - fire.width) / partWidth) * 4
-            anchors.left: fireman.right
-
-            property int partWidth: 50 * ApplicationInfo.ratio
-            property int period: 50 / 2
-            property int currentLock: 0
-            property double initX: fireman.x + fireman.width
-
-            Image {
-                source: index == hose.currentLock ?
-                            Activity.url + "hose_lock.svg" :
-                            index < hose.currentLock ?
-                                Activity.url + "hose_water.svg" :
-                                Activity.url + "hose_part.svg"
-                sourceSize.width: hose.partWidth
-                height: (50 + 5 * 8 / bar.level) * ApplicationInfo.ratio
-                // Do not display items when we reach the right target
-                opacity: x > fire.x ? 0 : 1
-
-                parent: background
-                x: getX()
-                y: getY()
-                z: index == hose.currentLock ? myparent.z + 1 : 100
-                transformOrigin: Item.Center
-                rotation: getAngleOfLineBetweenTwoPoints(myparent.x, myparent.y, x, y) *
-                          (180 / Math.PI)
-
-                property int i: index
-                property double rotationRadian: getAngleOfLineBetweenTwoPoints(myparent.x, myparent.y, x, y)
-                property Item myparent: (index > 0) ? hose.itemAt(index - 1) : hose
-
-                function getX() {
-                    if(index == 0) {
-                        return hose.initX
-                    }
-
-                    // 0.7 to have overlapping items
-                    return myparent.x + width * 0.7 * Math.cos(myparent.rotationRadian)
-                }
-
-                function getY() {
-                    var Y = fireman.y + height / 2 +
-                            Math.cos(((Math.PI * 2 * index) / hose.period)) *
-                            20 * ApplicationInfo.ratio * bar.level -
-                            20 * ApplicationInfo.ratio * bar.level
-                    return Y < 0 ? 0 : Y
-                }
-
-                // Determines the angle of a straight line drawn between point one and two.
-                // The number returned, which is a float in radian,
-                // tells us how much we have to rotate a horizontal line clockwise
-                // for it to match the line between the two points.
-                function getAngleOfLineBetweenTwoPoints(x1, y1, x2, y2) {
-                    if(index == 0)
-                        return 0
-                    var xDiff = x2 - x1;
-                    var yDiff = y2 - y1;
-                    return Math.atan2(yDiff, xDiff);
-                }
-
-                MouseArea {
-                    anchors.fill: parent
-                    enabled: !ApplicationInfo.isMobile
-                    hoverEnabled: true
-                    onEntered: {
-                        if(hose.currentLock == index) hose.currentLock++
-                        if(hose.itemAt(hose.currentLock).opacity == 0) {
-                            background.win()
-                        }
-                    }
-                }
-
-            }
-        }
     }
 
 }

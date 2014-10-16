@@ -95,7 +95,8 @@ function initLevel() {
                 sound: sounds ? sounds[shuffleIds[ix]][j] : "",
                 text: texts ? texts[shuffleIds[ix]][j] : "",
                 matchCode: ix,
-                back: url + "backcard.png"
+                back: url + "backcard.png",
+                emptyCard: url + "emptycard.png"
             } )
         }
     }

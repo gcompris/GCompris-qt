@@ -50,6 +50,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property alias miningBg: miningBg
             property alias bar: bar
             property alias bonus: bonus
             property alias mineModel: mineObjects.model
@@ -61,17 +62,17 @@ ActivityBase {
         Image {
                 id: miningBg
                 source: Activity.url + "rockwall.svg"
-                anchors.fill: parent
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
                 sourceSize.width: parent.width * 3
-//                width: parent.width * 3
-//                height: parent.height * 3
-                scale: _MIN_SCALE
+                width: parent.width
+                height: parent.height
+                scale: miningBg._MIN_SCALE
 
+                property int subLevel
+                property int maxSubLevel
                 property real _MAX_SCALE: 3
                 property real _MIN_SCALE: 1
-
-                property int level
-                property int maxLevel
 
                 Image {
                     source: Activity.url + "vertical_border.svg"
@@ -138,7 +139,6 @@ ActivityBase {
                         Image {
                             id: cell
                             source: modelData.source
-//                            sourceSize.width: mineObjects.cellWidth * modelData.widthFactor
                             sourceSize.width: mineObjects.cellWidth * 3
                             width: mineObjects.cellWidth * modelData.widthFactor
                             height: mineObjects.cellHeight * modelData.widthFactor
@@ -183,7 +183,8 @@ ActivityBase {
                 }
 
                 function updateScale(zoomDelta, x, y) {
-
+                    var xx1 = background.mapFromItem(miningBg, x, y)
+                    var previousScale = miningBg.scale
                     if (zoomDelta > 0 && miningBg.scale < miningBg._MAX_SCALE) {
                         if(miningBg.scale < miningBg._MAX_SCALE - 0.1)
                             miningBg.scale += 0.1;
@@ -194,68 +195,58 @@ ActivityBase {
                             miningBg.scale -= 0.1;
                         } else if (gotIt) {
                             gotIt = false
-                            if(miningBg.level == miningBg.maxLevel)
+                            if(miningBg.subLevel == miningBg.maxSubLevel) {
                                 bonus.good("lion")
-                            else {
-                                miningBg.level++
+                            } else {
+                                miningBg.subLevel++
                                 miningBg.scale = miningBg._MIN_SCALE
                                 Activity.createLevel()
                             }
+                        } else {
+                            miningBg.anchors.horizontalCenterOffset = 0
+                            miningBg.anchors.verticalCenterOffset = 0
                         }
+                    }
+                    if(previousScale != miningBg.scale) {
+                        var xx2 = background.mapFromItem(miningBg, x, y)
+                        miningBg.anchors.horizontalCenterOffset += xx1.x - xx2.x
+                        miningBg.anchors.verticalCenterOffset += xx1.y - xx2.y
                     }
                 }
 
                 MouseArea {
                     anchors.fill: parent
-                    enabled: !ApplicationInfo.isMobile
                     propagateComposedEvents: true
-
                     onWheel: miningBg.updateScale(wheel.angleDelta.y, wheel.x, wheel.y)
                 }
 
-//                PinchArea {
-//                    id: pinchy
-//                    property int xpoint
-//                    property int ypoint
-//                    property int pinchscale
-//                    enabled: true
-//                    anchors.fill: parent
-//                    pinch.dragAxis: Pinch.XandYAxis
-//                    pinch.minimumX: - parent.width / 2
-//                    pinch.maximumX: parent.width / 2
-//                    pinch.minimumY: - parent.height / 2
-//                    pinch.maximumY: parent.height / 2
-//                    onPinchUpdated: {
-//                        xpoint = pinch.center.x;
-//                        ypoint = pinch.center.y;
-//                        pinchscale = pinch.scale
-//                        miningBg.scale = pinchscale + 1
-//                        console.log(xpoint, ypoint, pinchscale)
-//                    }
-//                }
-
                 MultiPointTouchArea {
                     anchors.fill: parent
-                    enabled: ApplicationInfo.isMobile
                     mouseEnabled: false
                     minimumTouchPoints: 2
                     maximumTouchPoints: 2
-                    property int prevDist: -1
+                    // To determine if we zoom or unzoom
+                    property int prevDist: 0
+                    // To avoid having too many updates or the zoom flickers
+                     property date dateEvent: new Date()
                     touchPoints: [
                                TouchPoint { id: point1 },
                                TouchPoint { id: point2 }
                            ]
+                    onReleased: prevDist = 0
                     onTouchUpdated: {
                         // Calc Distance
-                        var dist = Math.floor(Math.sqrt(Math.pow(point1.x - point2.x, 2),
-                                                        Math.pow(point1.y - point1.y, 2)) / 50)
-                        console.log("dist=", dist)
-
-                        if(prevDist > -1 && prevDist != dist)
+                        var dist = Math.floor(Math.sqrt(Math.pow(point1.x - point2.x, 2) +
+                                                        Math.pow(point1.y - point2.y, 2)))
+                        var newDateEvent = new Date()
+                        if(prevDist != dist &&
+                                newDateEvent.getTime() - dateEvent.getTime() > 50) {
                             miningBg.updateScale(dist - prevDist,
-                                                 point1.x, point1.y)
+                                                 (point1.x + point2.x) / 2,
+                                                 (point1.y + point2.y) / 2)
+                            dateEvent = newDateEvent
+                        }
                         prevDist = dist
-
                     }
                 }
         }
@@ -276,7 +267,7 @@ ActivityBase {
                     verticalCenter: parent.verticalCenter
                     horizontalCenterOffset: parent.width / 10
                 }
-                text: miningBg.level + "/" + miningBg.maxLevel
+                text: miningBg.subLevel + "/" + miningBg.maxSubLevel
                 color: "white"
                 font.bold: true
                 style: Text.Outline
@@ -301,17 +292,20 @@ ActivityBase {
             onHomeClicked: activity.home()
 
             onLevelChanged: {
+                miningBg.subLevel = 1
+                miningBg.anchors.horizontalCenterOffset = 0
+                miningBg.anchors.verticalCenterOffset = 0
                 miningBg.scale = miningBg._MIN_SCALE
-                miningBg.level = 1
+
                 switch(bar.level) {
                 case 1:
-                    miningBg.maxLevel = 2
+                    miningBg.maxSubLevel = 2
                     break
                 case 2:
-                    miningBg.maxLevel = 4
+                    miningBg.maxSubLevel = 4
                     break
                 case 3:
-                    miningBg.maxLevel = 10
+                    miningBg.maxSubLevel = 10
                     break
                 }
 

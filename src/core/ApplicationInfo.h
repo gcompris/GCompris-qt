@@ -129,6 +129,7 @@ protected slots:
     Q_INVOKABLE QString getAudioFilePath(const QString &file);
     Q_INVOKABLE QString getLocaleFilePath(const QString &file);
     Q_INVOKABLE QStringList getSystemExcludedFonts();
+    Q_INVOKABLE QStringList getFontsFromRcc();
     Q_INVOKABLE void notifyFullscreenChanged();
 
 
@@ -157,6 +158,7 @@ private:
 
     // Symbols fonts that user can't see
     QStringList m_excludedFonts;
+    QStringList m_fontsFromRcc;
 
     static QQuickWindow *m_window;
 };

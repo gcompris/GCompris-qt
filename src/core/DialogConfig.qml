@@ -142,12 +142,11 @@ Rectangle {
 
                         Row {
                             spacing: 5
-
                             ComboBox {
                                 id: fontBox
                                 style: GCComboBoxStyle {}
                                 model: fonts
-                                width: 200 * ApplicationInfo.ratio
+                                width: 250 * ApplicationInfo.ratio
                             }
                             GCText {
                                 text: qsTr("Font selector")
@@ -162,7 +161,7 @@ Rectangle {
                                 id: languageBox
                                 style: GCComboBoxStyle {}
                                 model: languages
-                                width: 200 * ApplicationInfo.ratio
+                                width: 250 * ApplicationInfo.ratio
 
                                 onCurrentIndexChanged: voicesRow.localeChanged();
                             }
@@ -175,7 +174,7 @@ Rectangle {
 
                         Row {
                             id: voicesRow
-                            height: voicesImage.height
+                            height: enableAudioVoicesBox.height
                             width: parent.width
                             spacing: 5 * ApplicationInfo.ratio
 
@@ -184,7 +183,7 @@ Rectangle {
                             function localeChanged() {
                                 var localeShort = languages.get(languageBox.currentIndex).locale.substr(0, 2);
                                 var language = languages.get(languageBox.currentIndex).text;
-                                voicesText.text = language + " " + qsTr("sounds");
+                                voicesText.text = language;
                                 voicesRow.haveLocalResource = DownloadManager.haveLocalResource(
                                         DownloadManager.getVoicesResourceForLocale(localeShort));
                             }
@@ -209,6 +208,7 @@ Rectangle {
 
                             Image {
                                 id: voicesImage
+                                anchors.verticalCenter: parent.verticalCenter
                                 sourceSize.height: 30 * ApplicationInfo.ratio
                                 source: voicesRow.haveLocalResource ? "qrc:/gcompris/src/core/resource/apply.svgz" :
                                     "qrc:/gcompris/src/core/resource/cancel.svgz"
@@ -216,7 +216,7 @@ Rectangle {
 
                             Button {
                                 id: voicesButton
-                                height: parent.height * ApplicationInfo.ratio
+                                height: parent.height
                                 anchors.verticalCenter: parent.verticalCenter
                                 text: voicesRow.haveLocalResource ? qsTr("Check for updates") :
                                     qsTr("Download")
@@ -235,6 +235,7 @@ Rectangle {
 
                         Row {
                             width: parent.width
+                            spacing: 5 * ApplicationInfo.ratio
 
                             GCText {
                                 text: qsTr("Difficulty filter:")
@@ -363,7 +364,7 @@ Rectangle {
     // The cancel button
     Image {
         id: cancel
-        source: "qrc:/gcompris/src/core/resource/cancel.svgz";
+        source: "qrc:/gcompris/src/core/resource/apply.svgz";
         fillMode: Image.PreserveAspectFit
         anchors.right: parent.right
         anchors.top: parent.top
@@ -516,26 +517,40 @@ Rectangle {
         id: fonts
         Component.onCompleted: {
             var systemFonts = Qt.fontFamilies();
-            var excludedFonts = ApplicationInfo.getSystemExcludedFonts();
+            var rccFonts = ApplicationInfo.getFontsFromRcc();
 
-            // Remove symbol fonts
+            // Remove explicitely all *symbol* and *ding* fonts
+            var excludedFonts = ApplicationInfo.getSystemExcludedFonts();
+            excludedFonts.push("ding");
+            excludedFonts.push("symbol");
+
             for(var i = 0 ; i < systemFonts.length ; ++ i) {
                 var isExcluded = false;
+                // Remove symbol fonts
                 for(var j = 0 ; j < excludedFonts.length ; ++ j) {
-                    if(systemFonts[i] == excludedFonts[j]) {
+                    if(systemFonts[i].toLowerCase().indexOf(excludedFonts[j].toLowerCase()) != -1) {
                         isExcluded = true;
                         break;
                     }
-                    // TODO Remove all *symbol* and *ding*
                 }
 
+                // Remove fonts from rcc (if you have a default font from rcc, Qt will add it to systemFonts)
+                for(var j = 0 ; j < rccFonts.length ; ++ j) {
+                    if(rccFonts[j].toLowerCase().indexOf(systemFonts[i].toLowerCase()) != -1) {
+                        isExcluded = true;
+                        break;
+                    }
+                }
+
+                // Finally, we know if we add this font or not
                 if(!isExcluded) {
                     fonts.append({ "text": systemFonts[i], "isLocalResource": false });
                 }
             }
-            // Append fonts from resources
-            fonts.append({ "text": "Andika-R.ttf", "isLocalResource": true });
-            fonts.append({ "text": "OpenDyslexic-Regular.otf", "isLocalResource": true });
+            for(var i = 0 ; i < rccFonts.length ; ++ i) {
+                // Append fonts from resources
+                fonts.append({ "text": rccFonts[i], "isLocalResource": true });
+            }
         }
     }
 

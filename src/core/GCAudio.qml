@@ -71,6 +71,12 @@ Item {
         silenceTimer.interval = duration_ms
     }
 
+    function clearQueue() {
+        while(files.length > 0) {
+            files.pop();
+        }
+    }
+
     function _playNextFile() {
         var nextFile = files.shift()
         if(nextFile) {
