@@ -39,7 +39,6 @@ Window {
     GCAudio {
         id: audioVoices
         muted: !ApplicationSettings.isAudioVoicesEnabled
-        autoPlay: true
 
         Component.onCompleted: {
             append("qrc:/gcompris/src/core/resource/intro.ogg")
@@ -50,7 +49,6 @@ Window {
     GCAudio {
         id: audioEffects
         muted: !ApplicationSettings.isAudioEffectsEnabled
-        autoPlay: false
     }
 
     function playIntroVoice(name) {

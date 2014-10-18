@@ -30,7 +30,6 @@ Item {
     property alias errorString: audio.errorString
     property var playbackState: (audio.error == Audio.NoError) ? 
                                     audio.playbackState : Audio.StoppedState;
-    property bool autoPlay
     property var files: []
 
     signal error
@@ -53,6 +52,9 @@ Item {
     }
 
     function append(file) {
+        if(muted)
+            return
+
         if(audio.playbackState !== Audio.PlayingState
            || audio.status === Audio.EndOfMedia
            || audio.status === Audio.NoMedia
@@ -60,7 +62,7 @@ Item {
             // Setting the source to "" on Linux fix a case where the sound is no more played
             source = ""
             source = file
-            play()
+            audio.play()
         } else {
             files.push(file)
         }
@@ -79,19 +81,19 @@ Item {
 
     function _playNextFile() {
         var nextFile = files.shift()
-        if(nextFile) {
-            audio.source = ""
-            audio.source = nextFile
-            audio.play()
-        } else {
+        if(!nextFile || 0 === nextFile.length) {
             audio.source = ""
             gcaudio.done()
+        } else {
+            audio.source = ""
+            audio.source = nextFile
+            if(!muted)
+                audio.play()
         }
     }
 
     Audio {
         id: audio
-        autoPlay: gcaudio.autoPlay && !gcaudio.muted
         onError: {
             // This file cannot be played, remove it from the source asap
             source = ""
