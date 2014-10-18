@@ -72,7 +72,8 @@ Item {
                         bottom: parent.bottom
                     }
                     width: parent.width * 2
-                    enabled: ApplicationSettings.isVirtualKeyboard
+                    enabled: ApplicationSettings.isVirtualKeyboard &&
+                             containerPanel.opacity > 0
 
                     onClicked :{
                         if(answer.length < maxDigit)
@@ -126,7 +127,8 @@ Item {
                         bottom: parent.bottom
                     }
                     width: parent.width * 2
-                    enabled: ApplicationSettings.isVirtualKeyboard
+                    enabled: ApplicationSettings.isVirtualKeyboard &&
+                             containerPanel.opacity > 0
 
                     onClicked: {
                         if(answer.length < maxDigit)
@@ -161,7 +163,8 @@ Item {
 
             MouseArea {
                 anchors.fill: parent
-                enabled: ApplicationSettings.isVirtualKeyboard
+                enabled: ApplicationSettings.isVirtualKeyboard &&
+                         containerPanel.opacity > 0
 
                 onClicked: {
                     answer = answer.substring(0,answer.length - 1)
