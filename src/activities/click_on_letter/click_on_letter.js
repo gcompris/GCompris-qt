@@ -190,8 +190,8 @@ function nextSubLevel() {
 function checkAnswer(index)
 {
     var modelEntry = items.trainModel.get(index);
-    playLetter(modelEntry.letter);
     if (modelEntry.letter == currentLetter) {
+        playLetter(modelEntry.letter);
         items.bonus.good("flower");
         return true
     } else {
