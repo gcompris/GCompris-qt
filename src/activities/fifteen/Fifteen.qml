@@ -41,6 +41,8 @@ ActivityBase {
         signal start
         signal stop
 
+        Keys.onPressed: Activity.processPressedKey(event)
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
