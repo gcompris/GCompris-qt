@@ -41,7 +41,8 @@ Window {
         muted: !ApplicationSettings.isAudioVoicesEnabled
 
         Component.onCompleted: {
-            append("qrc:/gcompris/src/core/resource/intro.ogg")
+            if(ApplicationSettings.isAudioEffectsEnabled)
+                append("qrc:/gcompris/src/core/resource/intro.ogg")
             append(ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/welcome.ogg"))
         }
     }
