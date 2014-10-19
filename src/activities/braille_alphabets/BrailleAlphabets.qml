@@ -27,9 +27,6 @@ import GCompris 1.0
 
 import "questions.js" as Dataset
 
-
 Screen {
-
     dataset: Dataset
-
 }

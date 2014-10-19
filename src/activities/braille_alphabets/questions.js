@@ -1,4 +1,4 @@
-/* GCompris
+/* GCompris - questions.js
  *
  * Copyright (C) 2014 <Arkit Vora>
  *

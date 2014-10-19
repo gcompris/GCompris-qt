@@ -3,7 +3,7 @@
  * Copyright (C) 2014 <Arkit Vora>
  *
  * Authors:
- *   Bruno Coudoin <bruno.coudoin@gcompris.net>(GTK+ version)
+ *   Srishti Sethi <srishakatux@gmail.com> (GTK+ version)
  *   Arkit Vora <arkitvora123@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -32,7 +32,7 @@ var currentQuestion
 
 function start(items_, dataset_) {
     items = items_
-    dataset=dataset_.get()
+    dataset = dataset_.get()
     currentLevel = 0
     numberOfLevel = dataset.length
 
@@ -46,15 +46,12 @@ function start(items_, dataset_) {
             else {
                 break;
             }
-
         }
     }
+
     for(var j = 3; j <5; j++ ) {
-
         for(var i = 0;  i < dataset[j].length; ++i) {
-
             items.mapContainerModel2.append( dataset[j][i] )
-
         }
     }
     initLevel()
@@ -69,17 +66,13 @@ function current_alphabet() {
     var p=0;
     for(var i  = 0; i <= 5; i++) {
         if(items.circles.circles.itemAt(i).state == "on") {
-
             cur_alphabet.push(({"pos":i+1}))
             p++;
-
         }
     }
 
     for(var j=0; j<3; j++ ) {
-
         for(var i = 0;  i < dataset[j].length; ++i) {
-
             if(dataset[j][i].braille_letter.length == cur_alphabet.length) {
                 var temp = [];
                 temp = dataset[j][i].braille_letter
@@ -88,7 +81,7 @@ function current_alphabet() {
                     if(temp[t].pos == cur_alphabet[t].pos) {
                         count1++;
                     }
-                    else{
+                    else {
                         break;
                     }
                 }
@@ -109,9 +102,7 @@ function initLevel() {
     currentQuestion = 0
 
     for(var i = 0;  i < dataset[currentLevel].length; ++i) {
-
         items.containerModel.append(dataset[currentLevel][i])
-
     }
 
     // Shuffle again not to ask the question in the model order
@@ -125,9 +116,8 @@ function initLevel() {
 
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
-
     }
     initLevel();
 }
@@ -143,7 +133,6 @@ function initQuestion() {
     // We just set the opacity to 0, the questionItem will then grab
     // the new question by itself
     items.questionItem.opacity = 0
-
 }
 
 function nextQuestion() {
@@ -158,20 +147,16 @@ function instruction_text() {
 
     if(currentLevel==0) {
         items.instructions.text = ""
-    }
-    else if(currentLevel==1) {
+    } else if(currentLevel==1) {
         items.instructions.text = "Look at the Braille character map and observe how similar the first and second line are."
 
-    }
-    else if(currentLevel==2) {
+    } else if(currentLevel==2) {
         items.instructions.text = "Again, similar as the first line but take care, the 'W' letter was added afterwards."
 
-    }
-    else if(currentLevel==3) {
+    } else if(currentLevel==3) {
         items.instructions.text = "This is easy, numbers are the same as letters from A to J."
 
-    }
-    else {
+    } else {
         items.instructions.text = " "
 
     }
@@ -188,4 +173,3 @@ function getCurrentAlphabet() {
 function getCurrentArr() {
     return dataset[currentLevel][currentQuestion].braille_letter
 }
-

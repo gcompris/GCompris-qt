@@ -1,4 +1,4 @@
-/* GCompris - ColorItem.qml
+/* GCompris - BrailleChar.qml
  *
  * Copyright (C) 2014 <Arkit Vora>
  *
@@ -26,11 +26,8 @@ import "../../core"
 import "questions.js" as Data
 import GCompris 1.0
 
-
-
-
 Item {
-    id:newit
+    id: brailleChar
 
     property var wid
     property var hei
@@ -40,10 +37,9 @@ Item {
     height: parent.height / 1.1
     width: parent.width / 1.1
 
-
     Grid {
 
-        anchors.centerIn: newit
+        anchors.centerIn: brailleChar
         id: gridthree
         spacing: parent.height / 50
         columns: 2
@@ -55,13 +51,17 @@ Item {
             id: circles
             model: ["1","2","3","4","5","6"]
 
-
-
             Rectangle {
-                property bool on: (clickable) ? false : true
                 id: incircle1
                 border.width: parent.height / 30
                 color: click_on_off()
+                border.color: "black"
+                width: wid
+                height: hei
+                radius: width * 0.5
+
+                property bool on: (clickable) ? false : true
+
                 function click_on_off() {
                     if(clickable) {
                         incircle1.color  = "white"
@@ -81,7 +81,6 @@ Item {
 
                     }
                 }
-
 
                 Text {
                     id: numtext
@@ -111,12 +110,8 @@ Item {
                             incircle1.state = "on"
                         }
                         incircle1.opacity = 1
-
-
 //                        Call the below function to print the current alphabet to the console
 //                        Activity.current_alphabet();
-
-
                     }
 
                     id : mouse1
@@ -133,7 +128,6 @@ Item {
                               }
                     onClicked: abcd()
                 }
-
 
                 state: {
                     if(clickable) {
@@ -156,15 +150,7 @@ Item {
                         PropertyChanges { target: incircle1; on: false }
                     }
                 ]
-
-                border.color: "black"
-                width: wid; height:hei
-                radius: width*0.5
-
             }
         }
     }
 }
-
-
-

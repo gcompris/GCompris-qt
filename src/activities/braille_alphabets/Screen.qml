@@ -25,12 +25,8 @@ import "../../core"
 import "braille_alphabets.js" as Activity
 import "questions.js" as Dataset
 
-
-
 ActivityBase {
     id: activity
-
-
 
     onStart: focus = true
     onStop: {}
@@ -65,17 +61,15 @@ ActivityBase {
             property alias instructions: instructions
             property alias ans: ans
             property alias circles: circles
-
         }
 
-        onStart: { Activity.start(items,dataset) }
+        onStart: { Activity.start(items, dataset) }
         onStop: { Activity.stop() }
 
 
         ListModel {
             id: containerModel
         }
-
 
         ListModel {
             id: mapContainerModel
@@ -193,7 +187,6 @@ ActivityBase {
                 onOpacityChanged: opacity == 0 ? initQuestion() : ""
                 Behavior on opacity { PropertyAnimation { duration: 500 } }
             }
-
         }
 
         Text {
@@ -208,7 +201,6 @@ ActivityBase {
             font.weight: Font.DemiBold
             font.pointSize: instructionsArea.height / 3
             text: ""
-
         }
 
         ParticleSystemStar {
@@ -306,7 +298,6 @@ ActivityBase {
             styleColor: "white"
             color: "black"
             text: ""
-
         }
 
         Image {
@@ -344,7 +335,6 @@ Each Braille character, or cell, is made up of six dot positions, arranged in a 
                 wrapMode: Text.WordWrap
 
             }
-
 
             Text {
                 id: bottom_text
@@ -392,7 +382,6 @@ me and try reproducing Braille characters."
                     onExited: tux_onExit()
                 }
             }
-
         }
 
         DialogHelp {
@@ -404,8 +393,6 @@ me and try reproducing Braille characters."
             id: dialogMap
             onClose: home()
         }
-
-
 
         Bar {
             id: bar

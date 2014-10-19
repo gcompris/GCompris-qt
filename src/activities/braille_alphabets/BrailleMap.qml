@@ -1,4 +1,4 @@
-/* GCompris - dialogBackground.qml
+/* GCompris - BrailleMap.qml
  *
  * Copyright (C) 2014 <Arkit Vora>
  *
@@ -37,7 +37,6 @@ Rectangle {
     signal pause
     signal play
     signal stop
-
 
     Item {
         id: outer
@@ -146,8 +145,6 @@ Rectangle {
             }
         }
     }
-
-
 
     // The back button
     Image {
