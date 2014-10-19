@@ -20,7 +20,6 @@
  */
 import QtQuick 2.0
 import QtMultimedia 5.0
-import GCompris 1.0
 
 Item {
     id: gcaudio
