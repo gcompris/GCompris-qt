@@ -1,9 +1,10 @@
 /* GCompris - dialogBackground.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 <Arkit Vora>
  *
  * Authors:
- *   Bruno Coudoin <bruno.coudoin@gcompris.net>
+ *   Srishti Sethi <srishakatux@gmail.com> (GTK+ version)
+ *   Arkit Vora <arkitvora123@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by

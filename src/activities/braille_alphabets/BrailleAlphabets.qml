@@ -1,7 +1,10 @@
-/* GCompris - Colors.qml
+/* GCompris - Braille_alphabets.qml
  *
- * Original activity in the Gtk+ version of GCompris by
- * Pascal Georges <pascal.georges1@free.fr>
+ * Copyright (C) 2014 <Arkit Vora>
+ *
+ * Authors:
+ *   Srishti Sethi <srishakatux@gmail.com> (GTK+ version)
+ *   Arkit Vora <arkitvora123@gmail.com> (Qt Quick port)
  *
  * Copyright (C) 2014 Bruno Coudoin
  *
