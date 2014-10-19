@@ -21,6 +21,7 @@
  */
 import QtQuick 2.1
 import QtQuick.Layouts 1.1
+import GCompris 1.0
 import "../../core"
 import "braille_alphabets.js" as Activity
 import "questions.js" as Dataset
@@ -37,11 +38,10 @@ ActivityBase {
         id: background
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
-        source: "qrc:/gcompris/src/activities/braille_alphabets/resource/mosaic.svgz"
+        source: "qrc:/gcompris/src/activities/braille_alphabets/resource/background.svg"
         sourceSize.width: parent.width
         signal start
         signal stop
-
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -58,12 +58,14 @@ ActivityBase {
             property alias mapContainerModel: mapContainerModel
             property alias mapContainerModel2: mapContainerModel2
             property alias questionItem: questionItem
-            property alias instructions: instructions
-            property alias ans: ans
-            property alias circles: circles
+            property string instructions
+            property alias circles: playableChar
         }
 
-        onStart: { Activity.start(items, dataset) }
+        onStart: {
+            first_screen.visible = true
+            Activity.start(items, dataset)
+        }
         onStop: { Activity.stop() }
 
 
@@ -79,17 +81,20 @@ ActivityBase {
             id: mapContainerModel2
         }
 
-        Item {
-            id: outer
+        Image {
+            id: charList
             x: parent.width / 2
-            y: parent.height / 15
-            width : parent.width / 1.06
-            height :  parent.height / 3.7
+            y: 20 * ApplicationInfo.ratio
             anchors.horizontalCenter: parent.horizontalCenter
+            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/top_back.svg"
+            sourceSize.width: parent.width * 0.94
+            sourceSize.height: parent.height * 0.33
 
             Row {
-                spacing: 17
-                anchors.centerIn: outer
+                id: row
+                spacing: 10 * ApplicationInfo.ratio
+                anchors.centerIn: charList
+                anchors.horizontalCenterOffset: 5
 
                 Repeater {
                     id: cardRepeater
@@ -97,33 +102,38 @@ ActivityBase {
 
                     Item {
                         id: inner
-                        height: outer.height
-                        width: outer.width / 12
+                        height: charList.height * 0.9
+                        width: (charList.width - containerModel.count * row.spacing)/ containerModel.count
 
                         Rectangle {
                             id: rect1
-                            width:  outer.width / 13; height: outer.height / 1.5
+                            width:  charList.width / 13
+                            height: charList.height / 1.5
                             border.width: 3
                             border.color: "black"
                             color: "white"
 
-
                             BrailleChar {
                                 id: ins
-                                wid: rect1.height / 3.4
-                                hei: rect1.height / 3.4
+                                dotWidth: rect1.height / 3.4
+                                dotHeight: rect1.height / 3.4
                                 anchors.centerIn: rect1
                                 clickable: false
-
                             }
                         }
 
                         Text {
                             text: letter
-                            scale:  2
-                            y: parent.height / 1.3
-                            x: parent.width / 2.2
-
+                            font.weight: Font.DemiBold
+                            style: Text.Outline
+                            styleColor: "black"
+                            color: "white"
+                            font.pointSize: Math.max(parent.width * 0.2, 12)
+                            anchors {
+                                top: rect1.bottom
+                                topMargin: 6 * ApplicationInfo.ratio
+                                horizontalCenter: rect1.horizontalCenter
+                            }
                         }
                     }
 
@@ -131,30 +141,13 @@ ActivityBase {
             }
         }
 
-        Item {
-            id: box
-            height: parent.height / 3
-            width: parent.width / 3
-            x: parent.width / 9
-            y: parent.height / 1.9
-
-            BrailleChar {
-
-                id: circles
-                clickable: true
-                anchors.centerIn: box.left
-                wid: parent.height / 3
-                hei: parent.height / 3
-            }
-
-        }
-
         Rectangle {
             id: instructionsArea
-            height: parent.height / 16
+            height: questionItem.height * 1.1
             width: parent.width / 1.1
             anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: outer.bottom
+            anchors.top: charList.bottom
+            anchors.topMargin: 10 * ApplicationInfo.ratio
             color: "#55333333"
             border.color: "black"
             border.width: 2
@@ -162,25 +155,22 @@ ActivityBase {
             anchors.leftMargin: 10
             anchors.rightMargin: 10
 
-
             Text {
                 id: questionItem
-                anchors.leftMargin: 10
-                x: parent.width / 2
-                y: parent.height / 7
                 anchors.centerIn: parent
-                font.pointSize: instructionsArea.height / 3
+                font.pointSize: 14
                 horizontalAlignment: Text.AlignHCenter
                 font.weight: Font.DemiBold
                 style: Text.Outline
-                styleColor: "white"
-                color: "black"
-                width: parent.width
+                styleColor: "black"
+                color: "white"
+                width: parent.width * 0.94
                 wrapMode: Text.WordWrap
 
                 function initQuestion() {
                     text = Activity.getCurrentTextQuestion()
-
+                    if(items.instructions)
+                        text += "\n" + items.instructions
                     opacity = 1.0
                 }
 
@@ -189,36 +179,62 @@ ActivityBase {
             }
         }
 
-        Text {
-            id: instructions
-            anchors.top: instructionsArea.bottom
-            horizontalAlignment: Text.AlignHCenter
-            width: parent.width
-            wrapMode: Text.WordWrap
-            color: "black"
-            style: Text.Outline
-            styleColor: "white"
-            font.weight: Font.DemiBold
-            font.pointSize: instructionsArea.height / 3
-            text: ""
-        }
+        Image {
+            id: playableCharBg
+            anchors {
+                top: instructionsArea.bottom
+                topMargin: 10 * ApplicationInfo.ratio
+                bottom: bar.top
+                bottomMargin: 40 * ApplicationInfo.ratio
+            }
+            x: 10 * ApplicationInfo.ratio
+            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/char_background.svg"
+            sourceSize.width: height * 0.8
+            fillMode: Image.PreserveAspectFit
 
-        ParticleSystemStar {
-            id: particles
-            clip: false
-        }
+            BrailleChar {
+                id: playableChar
+                clickable: true
+                anchors.centerIn: parent
+                anchors.verticalCenterOffset: - 20 * ApplicationInfo.ratio
+                width: parent.width * 0.8
+                height: width * 0.5
+            }
 
+            Text {
+                id: playableCharDisplay
+                font.pointSize: Math.max(parent.width * 0.2, 12)
+                font.weight: Font.DemiBold
+                style: Text.Outline
+                styleColor: "black"
+                color: "white"
+                text: ""
+                anchors {
+                    top: playableChar.bottom
+                    topMargin: 6 * ApplicationInfo.ratio
+                    horizontalCenter: playableChar.horizontalCenter
+                }
+                Behavior on opacity { PropertyAnimation { duration: 100} }
+            }
+        }
 
         Image {
             id: okbutton
-            x: parent.width / 2
-            y: parent.height / 1.5
+            anchors {
+                left: playableCharBg.right
+                leftMargin: 10 * ApplicationInfo.ratio
+                top: playableCharBg.top
+            }
             width: parent.height / 10
             height: parent.height / 10
-            source: "qrc:/gcompris/src/core/resource/apply.svgz"
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svgz"
 
             MouseArea {
-                id: mou
+                id: mouseArea
+                anchors.fill: parent
+                onClicked: correct()
+                onPressed: okbutton.opacity  = 0.4
+                onReleased: okbutton.opacity  = 1
 
                 function arraysEqual(a, b) {
                     if (a === b) return true;
@@ -234,7 +250,7 @@ ActivityBase {
 
                     var arr = [];
                     for(var i  = 0; i <= 5; i++) {
-                        if(circles.circles.itemAt(i).state == "on") {
+                        if(playableChar.circles.itemAt(i).state == "on") {
                             arr.push((i+1));
                         }
                     }
@@ -249,137 +265,114 @@ ActivityBase {
 
                     if(arraysEqual(arr,answer )) {
                         particles.emitter.burst(100)
-                        wrong.opacity  = 0
-                        ans.opacity  = 1
-                        circles.circles.itemAt(0).state  = "off"
-                        circles.circles.itemAt(1).state  = "off"
-                        circles.circles.itemAt(2).state  = "off"
-                        circles.circles.itemAt(3).state  = "off"
-                        circles.circles.itemAt(4).state  = "off"
-                        circles.circles.itemAt(5).state  = "off"
-                        ans.text  = Activity.getCurrentAlphabet()
+                        for(var i  = 0; i <= 5; i++)
+                            playableChar.circles.itemAt(i).state  = "off"
+                        playableCharDisplay.text  = Activity.getCurrentAlphabet()
                         Activity.nextQuestion()
-
-                    }
-                    else {
-                        ans.opacity  = 0
-                        wrong.opacity  = 1
-                        wrong.visible  = true
                     }
                 }
-
-                anchors.fill: parent
-                onClicked: correct()
-                onPressed: okbutton.opacity  = 0.4
-                onReleased: okbutton.opacity  = 1
             }
         }
 
-        Image {
-            id: wrong
-            x: parent.width / 1.23
-            y: parent.height / 1.70
-            width: parent.height / 7
-            height: parent.height / 7
-            source: "qrc:/gcompris/src/core/resource/cancel.svgz"
-            visible: false
-        }
-
-        Text {
-            id: ans
-            scale: 2
-            x: parent.width / 1.20
-            y: parent.height / 1.63
-            font.pointSize: parent.height / 20
-            font.weight: Font.DemiBold
-            style: Text.Outline
-
-            Behavior on opacity { PropertyAnimation { duration: 1000} }
-            styleColor: "white"
-            color: "black"
-            text: ""
+        ParticleSystemStar {
+            id: particles
+            clip: false
         }
 
         Image {
             id: first_screen
             anchors.fill: parent
             fillMode: Image.PreserveAspectCrop
-            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/braille_tux.svgz"
+            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/intro_bg.svg"
             sourceSize.width: parent.width
 
             Text {
                 id: heading
                 text: "Braille : Unlocking the Code"
-                font.pointSize: parent.height / 24
+                font.pointSize: 24
                 horizontalAlignment: Text.AlignHCenter
                 font.weight: Font.DemiBold
                 anchors.centerIn: parent.Center
-                color: "black"
+                color: "white"
                 width: parent.width
                 wrapMode: Text.WordWrap
+            }
 
+            Image {
+                id: introChar
+                source: "qrc:/gcompris/src/activities/braille_alphabets/resource/intro_braille_char.svg"
+                sourceSize.width: parent.width * 0.25
+                fillMode: Image.PreserveAspectFit
+                anchors {
+                    top: heading.bottom
+                    topMargin: 30 * ApplicationInfo.ratio
+                    bottom: parent.bottom
+                    bottomMargin: 60 * ApplicationInfo.ratio
+                    left: parent.left
+                    leftMargin:  30 * ApplicationInfo.ratio
+                }
             }
 
             Text {
                 id: body_text1
-                text: "The Braille system is a method that is used by blind people to read and write.
-
-Each Braille character, or cell, is made up of six dot positions, arranged in a rectangle containing two columns of three dots each. As seen on the left, each dot is referenced by a number from 1 to 6."
-                font.pointSize:  parent.height / 40
-
+                text: qsTr('The Braille system is a method that is used by blind people to read and write.' +
+                           'Each Braille character, or cell, is made up of six dot positions, arranged in ' +
+                           'a rectangle containing two columns of three dots each. As seen on the left, each ' +
+                           'dot is referenced by a number from 1 to 6.')
+                font.pointSize:  14
                 font.weight: Font.DemiBold
-                x: parent.width / 2.7
-                y: parent.height / 2.5
-                color: "black"
+                horizontalAlignment: Text.AlignJustify
+                anchors {
+                    top: heading.bottom
+                    topMargin: 30 * ApplicationInfo.ratio
+                    right: parent.right
+                    rightMargin: 30 * ApplicationInfo.ratio
+                    left: introChar.right
+                    leftMargin: 30 * ApplicationInfo.ratio
+                }
+                color: "white"
                 width: parent.width / 2
                 wrapMode: Text.WordWrap
-
             }
 
             Text {
                 id: bottom_text
-                text: "When you are ready, click on
-me and try reproducing Braille characters."
-                font.pointSize:  parent.height / 45
+                text: qsTr("When you are ready, click on me and try reproducing Braille characters.")
+                font.pointSize:  12
                 font.weight: Font.DemiBold
-                x: parent.width / 2.7
-                y: parent.height / 1.15
-                color: "black"
-                width: parent.width / 2
+                width: parent.width * 0.3
+                color: "white"
+                horizontalAlignment: Text.AlignJustify
                 wrapMode:  Text.WordWrap
-
+                anchors {
+                    top: body_text1.bottom
+                    topMargin: 30 * ApplicationInfo.ratio
+                    left: introChar.right
+                    leftMargin: 30 * ApplicationInfo.ratio
+                }
             }
 
-            Rectangle {
-                id: tux_square
-                anchors.bottom: parent.bottom
-                radius: 10
-                anchors.right: parent.right
-                color: "transparent"
-                width: parent.width / 3
-                height: parent.width / 3
-
+            Image {
+                id: introTux
+                source: "qrc:/gcompris/src/activities/braille_alphabets/resource/tux_braille.svg"
+                fillMode: Image.PreserveAspectFit
+                sourceSize.width: parent.width * 0.2
+                anchors {
+                    top: bottom_text.top
+                    right: parent.right
+                    rightMargin: 30 * ApplicationInfo.ratio
+                    left: bottom_text.right
+                    leftMargin: 30 * ApplicationInfo.ratio
+                }
+                Behavior on scale { PropertyAnimation { duration: 100} }
 
                 MouseArea {
                     id: tux_click
                     anchors.fill: parent
-
-                    function tux_onClicked() {
-                        first_screen.visible  = false
-
-                    }
-                    function tux_onHover() {
-                        tux_square.color  = "#E41B2D"
-                        tux_square.opacity  = 0.3
-                    }
-                    function tux_onExit() {
-                        tux_square.color  = "transparent"
-                        tux_square.opacity  = 1
-                    }
                     hoverEnabled: true
-                    onClicked: tux_onClicked()
-                    onEntered: tux_onHover()
-                    onExited: tux_onExit()
+                    onClicked: first_screen.visible  = false
+                    onEntered: introTux.scale = 1.1
+                    onExited: introTux.scale = 1
                 }
             }
         }

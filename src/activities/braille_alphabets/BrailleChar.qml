@@ -29,13 +29,10 @@ import GCompris 1.0
 Item {
     id: brailleChar
 
-    property var wid
-    property var hei
+    property real dotWidth: width * 0.2
+    property real dotHeight: dotWidth
     property alias circles: circles
     property bool clickable
-
-    height: parent.height / 1.1
-    width: parent.width / 1.1
 
     Grid {
 
@@ -49,89 +46,59 @@ Item {
         Repeater {
 
             id: circles
-            model: ["1","2","3","4","5","6"]
+            model: ["1", "2", "3", "4", "5", "6"]
 
             Rectangle {
                 id: incircle1
-                border.width: parent.height / 30
-                color: click_on_off()
+                border.width: 2 * ApplicationInfo.ratio
+                color: on ? "red" : "white"
                 border.color: "black"
-                width: wid
-                height: hei
+                width: dotWidth
+                height: dotHeight
                 radius: width * 0.5
 
-                property bool on: (clickable) ? false : true
+                property bool on: clickable ? false : click_on_off()
 
                 function click_on_off() {
-                    if(clickable) {
-                        incircle1.color  = "white"
-                    }
-                    else {
-                        var t  = 0;
-                        var arr  = [];
-                        for( t  = 0; t < braille_letter.count; t++) {
-                            if(braille_letter.get(t).pos != 0) {
-                                arr.push(braille_letter.get(t).pos)
-                            }
+                    for( var i  = 0; i < braille_letter.count; i++) {
+                        if(braille_letter.get(i).pos === index + 1) {
+                            return true
                         }
-                        if(arr.indexOf((index + 1)) > -1)
-                            incircle1.color  = "red"
-                        else
-                            incircle1.color  = "white"
-
                     }
+                    return false
                 }
 
                 Text {
                     id: numtext
                     text: (clickable) ? modelData : ""
-                    scale: 3
+                    anchors.left: alignment()
+                    font.weight: Font.DemiBold
+                    font.pointSize: Math.min(20 * ApplicationInfo.ratio,
+                                             Math.max(parent.height, 10))
+                    anchors.margins: 10
 
                     function alignment() {
                         if(index < 3) {
                             anchors.right = incircle1.left
-                        }
-                        else
+                        } else {
                             anchors.left = incircle1.right
+                        }
                     }
-
-                    anchors.left: alignment()
-                    font.weight: Font.DemiBold
-                    anchors.margins: 10
                 }
 
                 MouseArea {
-
-                    function abcd() {
-                        if (incircle1.state == "on") {
-                            incircle1.state = "off"
-                        }
-                        else {
-                            incircle1.state = "on"
-                        }
-                        incircle1.opacity = 1
-//                        Call the below function to print the current alphabet to the console
-//                        Activity.current_alphabet();
-                    }
-
                     id : mouse1
-                    enabled: (clickable) ? true : false
+                    enabled:  clickable ? true : false
                     anchors.fill: parent
                     hoverEnabled: true
-                    onEntered: if(incircle1.state == "off") {
-                                   incircle1.color = "#E41B2D"
-                                   incircle1.opacity = 0.3
-                               }
-                    onExited :if(incircle1.opacity == 0.3) {
-                                  incircle1.color = "white"
-                                  incircle1.opacity = 1
-                              }
-                    onClicked: abcd()
-                }
-
-                state: {
-                    if(clickable) {
-                        state  = "off"
+                    onEntered: incircle1.border.width = 4 * ApplicationInfo.ratio
+                    onExited : incircle1.border.width = 2 * ApplicationInfo.ratio
+                    onClicked: {
+                        if (incircle1.state == "on") {
+                            incircle1.state = "off"
+                        } else {
+                            incircle1.state = "on"
+                        }
                     }
                 }
 
@@ -139,15 +106,19 @@ Item {
                     State {
                         name: "on"
 
-                        PropertyChanges { target: incircle1; color:"red" }
-                        PropertyChanges { target: incircle1; on: true }
+                        PropertyChanges {
+                            target: incircle1
+                            on: true
+                        }
 
                     },
                     State {
                         name: "off"
 
-                        PropertyChanges { target: incircle1; color:"white" }
-                        PropertyChanges { target: incircle1; on: false }
+                        PropertyChanges {
+                            target: incircle1
+                            on: false
+                        }
                     }
                 ]
             }

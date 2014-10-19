@@ -37,8 +37,7 @@ function start(items_, dataset_) {
     numberOfLevel = dataset.length
 
     items.mapContainerModel.clear()
-    for(var j = 0; j <4; j++ ){
-
+    for(var j = 0; j < 4; j++ ){
         for(var i = 0;  i < dataset[j].length; ++i) {
             if(dataset[j][i].letter != "1") {
                 items.mapContainerModel.append( dataset[j][i] )
@@ -55,7 +54,6 @@ function start(items_, dataset_) {
         }
     }
     initLevel()
-
 }
 
 //  current_alphabet() prints current alphabet on the console
@@ -110,10 +108,7 @@ function initLevel() {
     initQuestion()
 
     instruction_text();
-
 }
-
-
 
 function nextLevel() {
     if(numberOfLevel <= ++currentLevel) {
@@ -146,18 +141,18 @@ function nextQuestion() {
 function instruction_text() {
 
     if(currentLevel==0) {
-        items.instructions.text = ""
-    } else if(currentLevel==1) {
-        items.instructions.text = "Look at the Braille character map and observe how similar the first and second line are."
+        items.instructions = ""
+    } else if(currentLevel === 1) {
+        items.instructions = qsTr("Look at the Braille character map and observe how similar the first and second line are.")
 
-    } else if(currentLevel==2) {
-        items.instructions.text = "Again, similar as the first line but take care, the 'W' letter was added afterwards."
+    } else if(currentLevel === 2) {
+        items.instructions = qsTr("Again, similar as the first line but take care, the 'W' letter was added afterwards.")
 
-    } else if(currentLevel==3) {
-        items.instructions.text = "This is easy, numbers are the same as letters from A to J."
+    } else if(currentLevel === 3) {
+        items.instructions = qsTr("This is easy, numbers are the same as letters from A to J.")
 
     } else {
-        items.instructions.text = " "
+        items.instructions = ""
 
     }
 }

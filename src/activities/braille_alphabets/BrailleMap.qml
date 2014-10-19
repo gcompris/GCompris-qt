@@ -72,8 +72,8 @@ Rectangle {
 
                         BrailleChar {
                             id: ins
-                            wid: rect1.height / 3.4
-                            hei: rect1.height / 3.4
+                            dotWidth: rect1.height / 3.4
+                            dotHeight: rect1.height / 3.4
                             anchors.centerIn: rect1
                             clickable: false
                         }
@@ -81,9 +81,16 @@ Rectangle {
 
                     Text {
                         text: letter
-                        scale:  2
-                        anchors.top:inner.bottom
-                        anchors.horizontalCenter: inner.horizontalCenter
+                        font.weight: Font.DemiBold
+                        style: Text.Outline
+                        styleColor: "black"
+                        color: "white"
+                        font.pointSize: Math.max(parent.width * 0.2, 12)
+                        anchors {
+                            top: rect1.bottom
+                            topMargin: 6 * ApplicationInfo.ratio
+                            horizontalCenter: rect1.horizontalCenter
+                        }
                     }
                 }
 
@@ -126,8 +133,8 @@ Rectangle {
 
                         BrailleChar {
                             id: ins2
-                            wid: rect2.height / 3.4
-                            hei: rect2.height / 3.4
+                            dotWidth: rect2.height / 3.4
+                            dotHeight: rect2.height / 3.4
                             anchors.centerIn: rect2
                             clickable: false
                         }
@@ -135,10 +142,16 @@ Rectangle {
 
                     Text {
                         text: letter
-                        scale:  2
-                        anchors.top:inner2.bottom
-                        anchors.horizontalCenter: inner2.horizontalCenter
-
+                        font.weight: Font.DemiBold
+                        style: Text.Outline
+                        styleColor: "black"
+                        color: "white"
+                        font.pointSize: Math.max(parent.width * 0.2, 12)
+                        anchors {
+                            top: rect2.bottom
+                            topMargin: 6 * ApplicationInfo.ratio
+                            horizontalCenter: rect2.horizontalCenter
+                        }
                     }
                 }
 
