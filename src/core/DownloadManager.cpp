@@ -252,6 +252,17 @@ bool DownloadManager::checkForUpdates()
 
 /* Private: */
 
+inline QString DownloadManager::tempFilenameForFilename(const QString &filename) const
+{
+    return QString(filename).append("_");
+}
+
+inline QString DownloadManager::filenameForTempFilename(const QString &tempFilename) const
+{
+    if (tempFilename.endsWith("_"))
+        return tempFilename.left(tempFilename.length() - 1);
+    return tempFilename;
+}
 
 /** Start a new download specified by the passed DownloadJob */
 bool DownloadManager::download(DownloadJob* job)
@@ -283,7 +294,7 @@ bool DownloadManager::download(DownloadJob* job)
         return false;
     }
 
-    job->file.setFileName(fi.filePath());
+    job->file.setFileName(tempFilenameForFilename(fi.filePath()));
     if (!job->file.open(QIODevice::WriteOnly)) {
         emit error(QNetworkReply::InternalServerError,
                 QString("Could not open target file %1").arg(job->file.fileName()));
@@ -510,7 +521,15 @@ void DownloadManager::downloadFinished()
         job->file.close();
     }
     if (reply->error() && job->file.exists())
-        job->file.remove();  // remove incomplete files!
+        job->file.remove();
+    else {
+        // active temp file
+        QString tFilename = filenameForTempFilename(job->file.fileName());
+        if (QFile::exists(tFilename))
+            QFile::remove(tFilename);
+        if (!job->file.rename(tFilename))
+            qWarning() << "Could not rename temporary file to" << tFilename;
+    }
 
     QString targetFilename = getFilenameForUrl(job->url);
     if (job->url.fileName() == contentsFilename) {
@@ -536,6 +555,9 @@ void DownloadManager::downloadFinished()
                 << ":" << reply->error() << ":" << reply->errorString();
             // note: errorHandler() emit's error!
             code = Error;
+            // register already existing files:
+            if (QFile::exists(targetFilename))
+                registerResource(targetFilename);
         } else {
             qDebug() << "Download of RCC file finished successfully: " << job->url;
             if (!checksumMatches(job, targetFilename)) {
@@ -586,6 +608,21 @@ void DownloadManager::downloadFinished()
     return;
 
   outError:
+    if (job->url.fileName() == contentsFilename) {
+        // if we could not download the contents file register local existing
+        // files for outstanding jobs:
+        QUrl nUrl;
+        while (!job->queue.isEmpty()) {
+            nUrl = job->queue.takeFirst();
+            QString relPath = getRelativeResourcePath(getFilenameForUrl(nUrl));
+            foreach (const QString &base, getSystemResourcePaths()) {
+                QString filename = base + "/" + relPath;
+                if (QFile::exists(filename))
+                    registerResource(filename);
+                }
+        }
+    }
+
     if (job->file.isOpen())
         job->file.close();
 

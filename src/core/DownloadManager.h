@@ -75,6 +75,8 @@ private:
     QUrl getUrlForFilename(const QString& filename) const;
     QString getAbsoluteResourcePath(const QString& path) const;
     QString getRelativeResourcePath(const QString& path) const;
+    QString tempFilenameForFilename(const QString &filename) const;
+    QString filenameForTempFilename(const QString &tempFilename) const;
 
     bool checkDownloadRestriction() const;
     DownloadJob* getJobByReply(QNetworkReply *r);
