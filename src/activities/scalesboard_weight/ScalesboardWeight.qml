@@ -57,7 +57,7 @@ Scalesboard {
                 "targets": [[1200, kg(1.2)], [1300, kg(1.3)], [1400, kg(1.4)],
                            [1500, kg(1.5)], [1600, kg(1.6)]],
                 "rightDrop": false,
-                "message": qsTr('Remember, one kilo ("kg") equals 1000 grams ("g").')
+                "message": qsTr('Remember, one kilogram ("kg") equals 1000 grams ("g").')
             },
             {
                 "masses": [[200, g(200)], [500, g(500)], [1000, kg(1)], [1000, kg(1)], [1200, kg(1.2)]],
@@ -83,7 +83,7 @@ Scalesboard {
                 "targets": [[3, kg(3)], [4, kg(4)], [6, kg(6)], [7, kg(7)], [8, kg(8)], [9, kg(9)]],
                 "rightDrop": false,
                 "message": qsTr("Now you have to guess the weight of the gift."),
-                "question": QT_TR_NOOP("Enter the weight of the gift in gram: %1")
+                "question": QT_TR_NOOP("Enter the weight of the gift in kilogram: %1")
             },
             {
                 "masses": [[100, g(100)], [200, g(200)], [200, g(200)], [500, g(500)],
