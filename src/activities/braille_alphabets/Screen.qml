@@ -169,6 +169,8 @@ ActivityBase {
                 wrapMode: Text.WordWrap
 
                 function initQuestion() {
+                    playableChar.brailleChar = ""
+                    playableChar.updateDotsFromBrailleChar()
                     text = Activity.getCurrentTextQuestion()
                     if(items.instructions)
                         text += "\n" + items.instructions
@@ -176,7 +178,7 @@ ActivityBase {
                 }
 
                 onOpacityChanged: opacity == 0 ? initQuestion() : ""
-                Behavior on opacity { PropertyAnimation { duration: 500 } }
+                Behavior on opacity { PropertyAnimation { duration: 1000 } }
             }
         }
 
@@ -203,8 +205,8 @@ ActivityBase {
                 isLetter: items.isLetter
                 onBrailleCharChanged: {
                     if(brailleChar === Activity.getCurrentLetter()) {
-                        bonus.good("flower")
                         particles.emitter.burst(40)
+                        Activity.nextQuestion()
                     }
                 }
             }
@@ -222,7 +224,6 @@ ActivityBase {
                     topMargin: 6 * ApplicationInfo.ratio
                     horizontalCenter: playableChar.horizontalCenter
                 }
-                Behavior on opacity { PropertyAnimation { duration: 100} }
             }
         }
 

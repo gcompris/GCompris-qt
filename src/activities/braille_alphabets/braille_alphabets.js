@@ -70,12 +70,10 @@ function initLevel() {
         items.containerModel.append(dataset[currentLevel][i])
     }
     items.playableChar.isLetter = dataset[currentLevel][0].letter >= "A" && dataset[currentLevel][0].letter <= "Z"
-    items.playableChar.brailleChar = ""
-    items.playableChar.updateDotsFromBrailleChar()
 
     // Shuffle again not to ask the question in the model order
     dataset[currentLevel] = Core.shuffle(dataset[currentLevel])
-    initQuestion()
+    items.questionItem.opacity = 0
 
     instruction_text();
 }
@@ -94,17 +92,15 @@ function previousLevel() {
     initLevel();
 }
 
-function initQuestion() {
-    // We just set the opacity to 0, the questionItem will then grab
-    // the new question by itself
-    items.questionItem.opacity = 0
-}
-
 function nextQuestion() {
     if(dataset[currentLevel].length <= ++currentQuestion ) {
         items.bonus.good("flower")
     } else {
-        initQuestion()
+        // Let'not change the question immediately to let the
+        // children see his answer.
+        // We just set the opacity to 0, the questionItem will then grab
+        // the new question by itself
+        items.questionItem.opacity = 0
     }
 }
 
