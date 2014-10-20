@@ -34,7 +34,7 @@ Image {
     
     Text {
         id: heading
-        text: "Braille : Unlocking the Code"
+        text: qsTr("Braille : Unlocking the Code")
         font.pointSize: 24
         horizontalAlignment: Text.AlignHCenter
         font.weight: Font.DemiBold
