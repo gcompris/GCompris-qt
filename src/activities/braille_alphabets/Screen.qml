@@ -58,6 +58,7 @@ ActivityBase {
             property alias questionItem: questionItem
             property string instructions
             property alias playableChar: playableChar
+            property bool brailleCodeSeen
         }
 
         onStart: {
@@ -77,6 +78,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             source: Activity.url + "top_back.svg"
             sourceSize.width: parent.width * 0.94
+            visible: items.brailleCodeSeen
 
             Row {
                 id: row

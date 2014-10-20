@@ -29,14 +29,14 @@ var currentLevel
 var numberOfLevel
 var items
 var dataset
-
 var currentQuestion
+var currentDataSet
 
 function start(items_, dataset_) {
     items = items_
     dataset = dataset_.get()
     currentLevel = 0
-    numberOfLevel = dataset.length
+    numberOfLevel = dataset.length * 2
     initLevel()
 }
 
@@ -48,16 +48,68 @@ function initLevel() {
     items.containerModel.clear()
     currentQuestion = 0
 
-    for(var i = 0;  i < dataset[currentLevel].length; ++i) {
-        items.containerModel.append(dataset[currentLevel][i])
+    switch(currentLevel) {
+        case 0:
+            items.instructions = ""
+            items.brailleCodeSeen = true
+            currentDataSet = dataset[0]
+            break
+        case 1:
+            items.instructions = qsTr("Now it's a little bit harder without the braille map.")
+            items.brailleCodeSeen = false
+            currentDataSet = dataset[0]
+            break
+        case 2:
+            items.instructions = qsTr("Look at the Braille character map and observe how similar the first and second line are.")
+            items.brailleCodeSeen = true
+            currentDataSet = dataset[1]
+            break
+        case 3:
+            items.instructions = qsTr("Now it's a little bit harder without the braille map.")
+            items.brailleCodeSeen = false
+            currentDataSet = dataset[1]
+            break
+        case 4:
+            items.instructions = qsTr("Again, similar as the first line but take care, the 'W' letter was added afterwards.")
+            items.brailleCodeSeen = true
+            currentDataSet = dataset[2]
+            break
+        case 5:
+            items.instructions = qsTr("Now it's a little bit harder without the braille map.")
+            items.brailleCodeSeen = false
+            currentDataSet = dataset[2]
+            break
+        case 6:
+            items.instructions = qsTr("This is easy, numbers are the same as letters from A to J.")
+            items.brailleCodeSeen = true
+            currentDataSet = dataset[3]
+            break
+        case 7:
+            items.instructions = qsTr("Now it's a little bit harder without the braille map.")
+            items.brailleCodeSeen = false
+            currentDataSet = dataset[3]
+            break
+        case 8:
+            items.instructions = ""
+            items.brailleCodeSeen = true
+            currentDataSet = dataset[4]
+            break
+        case 9:
+            items.instructions = qsTr("Now it's a little bit harder without the braille map.")
+            items.brailleCodeSeen = false
+            currentDataSet = dataset[4]
+            break
     }
-    items.playableChar.isLetter = dataset[currentLevel][0].letter >= "A" && dataset[currentLevel][0].letter <= "Z"
 
-    // Shuffle again not to ask the question in the model order
-    dataset[currentLevel] = Core.shuffle(dataset[currentLevel])
+    // Shuffle not to ask the question in the model order
+    currentDataSet = Core.shuffle(currentDataSet)
+
+    for(var i = 0;  i < currentDataSet.length; ++i) {
+        items.containerModel.append(currentDataSet[i])
+    }
+    items.playableChar.isLetter = currentDataSet[0].letter >= "A" && currentDataSet[0].letter <= "Z"
+    // Trig the next question
     items.questionItem.opacity = 0
-
-    instruction_text();
 }
 
 function nextLevel() {
@@ -86,30 +138,11 @@ function nextQuestion() {
     }
 }
 
-function instruction_text() {
-
-    if(currentLevel==0) {
-        items.instructions = ""
-    } else if(currentLevel === 1) {
-        items.instructions = qsTr("Look at the Braille character map and observe how similar the first and second line are.")
-
-    } else if(currentLevel === 2) {
-        items.instructions = qsTr("Again, similar as the first line but take care, the 'W' letter was added afterwards.")
-
-    } else if(currentLevel === 3) {
-        items.instructions = qsTr("This is easy, numbers are the same as letters from A to J.")
-
-    } else {
-        items.instructions = ""
-
-    }
-}
-
 function getCurrentTextQuestion() {
-    return dataset[currentLevel][currentQuestion].text.arg(getCurrentLetter())
+    return currentDataSet[currentQuestion].text.arg(getCurrentLetter())
 }
 
 function getCurrentLetter() {
-    return dataset[currentLevel][currentQuestion].letter
+    return currentDataSet[currentQuestion].letter
 }
 
