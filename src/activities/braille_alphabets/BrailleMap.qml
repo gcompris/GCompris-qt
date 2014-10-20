@@ -76,6 +76,7 @@ Rectangle {
                             dotHeight: rect1.height / 3.4
                             anchors.centerIn: rect1
                             clickable: false
+                            brailleChar: letter
                         }
                     }
 
@@ -137,6 +138,7 @@ Rectangle {
                             dotHeight: rect2.height / 3.4
                             anchors.centerIn: rect2
                             clickable: false
+                            brailleChar: letter
                         }
                     }
 

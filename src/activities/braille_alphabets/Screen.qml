@@ -59,7 +59,7 @@ ActivityBase {
             property alias mapContainerModel2: mapContainerModel2
             property alias questionItem: questionItem
             property string instructions
-            property alias circles: playableChar
+            property alias playableChar: playableChar
         }
 
         onStart: {
@@ -119,6 +119,7 @@ ActivityBase {
                                 dotHeight: rect1.height / 3.4
                                 anchors.centerIn: rect1
                                 clickable: false
+                                brailleChar: letter
                             }
                         }
 
@@ -199,6 +200,7 @@ ActivityBase {
                 anchors.verticalCenterOffset: - 20 * ApplicationInfo.ratio
                 width: parent.width * 0.8
                 height: width * 0.5
+                isLetter: items.isLetter
             }
 
             Text {
@@ -208,69 +210,13 @@ ActivityBase {
                 style: Text.Outline
                 styleColor: "black"
                 color: "white"
-                text: ""
+                text: playableChar.brailleChar
                 anchors {
                     top: playableChar.bottom
                     topMargin: 6 * ApplicationInfo.ratio
                     horizontalCenter: playableChar.horizontalCenter
                 }
                 Behavior on opacity { PropertyAnimation { duration: 100} }
-            }
-        }
-
-        Image {
-            id: okbutton
-            anchors {
-                left: playableCharBg.right
-                leftMargin: 10 * ApplicationInfo.ratio
-                top: playableCharBg.top
-            }
-            width: parent.height / 10
-            height: parent.height / 10
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svgz"
-
-            MouseArea {
-                id: mouseArea
-                anchors.fill: parent
-                onClicked: correct()
-                onPressed: okbutton.opacity  = 0.4
-                onReleased: okbutton.opacity  = 1
-
-                function arraysEqual(a, b) {
-                    if (a === b) return true;
-                    if (a == null || b == null) return false;
-                    if (a.length != b.length) return false;
-                    for (var i = 0; i < a.length; ++i) {
-                        if (a[i] !== b[i]) return false;
-                    }
-                    return true;
-                }
-
-                function correct() {
-
-                    var arr = [];
-                    for(var i  = 0; i <= 5; i++) {
-                        if(playableChar.circles.itemAt(i).state == "on") {
-                            arr.push((i+1));
-                        }
-                    }
-
-                    var ya  = [];
-                    ya  = Activity.getCurrentArr()
-                    var t;
-                    var answer  = [];
-                    for( t  = 0;t<ya.length;t++) {
-                        answer[t]  = ya[t].pos
-                    }
-
-                    if(arraysEqual(arr,answer )) {
-                        particles.emitter.burst(100)
-                        for(var i  = 0; i <= 5; i++)
-                            playableChar.circles.itemAt(i).state  = "off"
-                        playableCharDisplay.text  = Activity.getCurrentAlphabet()
-                        Activity.nextQuestion()
-                    }
-                }
             }
         }
 

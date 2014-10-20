@@ -27,16 +27,69 @@ import "questions.js" as Data
 import GCompris 1.0
 
 Item {
-    id: brailleChar
+    id: brailleCharItem
 
+    property string brailleChar: ""
     property real dotWidth: width * 0.2
     property real dotHeight: dotWidth
     property alias circles: circles
     property bool clickable
+    property bool isLetter: brailleChar >= 'A' && brailleChar <= 'Z'
+    property variant brailleCodesLetter: {
+        // For ASCII each letter, this represent the active dots in Braille.
+        "A": [1], "B": [1, 2], "C": [1, 4], "D": [1, 4, 5], "E": [1, 5],
+        "F": [1, 2, 4], "G": [1, 2, 4, 5], "H": [1, 2, 5], "I": [2, 4],
+        "J": [2, 4, 5], "K": [1, 3], "L": [1, 2, 3], "M": [1, 3, 4],
+        "N": [1, 3, 4, 5], "O": [1, 3, 5], "P": [1, 2, 3, 4], "Q": [1, 2, 3, 4, 5],
+        "R": [1, 2, 3, 5], "S": [2, 3, 4], "T": [2, 3, 4, 5], "U": [1, 3, 6],
+        "V": [1, 2, 3, 6], "W": [2, 4, 5, 6], "X": [1, 3, 4, 6], "Y": [1, 3, 4, 5, 6],
+        "Z": [1, 3, 5, 6]
+    }
+    property variant brailleCodesNumber: {
+        // For ASCII each letter, this represent the active dots in Braille.
+        "+" : [3,4,6], "-": [3,6], "*" : [1,6], "/" : [3,4],
+        "#" : [3,4,5,6],1: [1],2 :[1, 2], "3" : [1, 4], "4": [1, 4, 5], "5" : [1, 5],
+        "6" : [1, 2, 4], "7" : [1, 2, 4, 5], "8" : [1, 2, 5], "9" : [2, 4], "0" :[3, 5, 6]
+    }
+    property variant brailleCodes: isLetter ? brailleCodesLetter : brailleCodesNumber
+
+    function updateDotsFromBrailleChar() {
+        var dots = []
+        for(var car in brailleCodes) {
+            if(car === brailleChar) {
+                dots = brailleCodes[car]
+            }
+        }
+
+        // Clear all the dots
+        for( var i = 0; i < 6; i++) {
+            circles.itemAt(i).state = "off"
+        }
+
+        for( var i in dots) {
+            circles.itemAt(i).state = "on"
+        }
+    }
+
+    function updateBrailleCharFromDots() {
+        var dots = []
+        for( var i = 0; i < 6; i++) {
+            if(circles.itemAt(i).state === "on")
+                dots.push(i + 1)
+        }
+
+        for(var car in brailleCodes) {
+            if(JSON.stringify(brailleCodes[car]) === JSON.stringify(dots)) {
+                brailleChar = car
+                return
+            }
+        }
+        brailleChar = ""
+    }
 
     Grid {
 
-        anchors.centerIn: brailleChar
+        anchors.centerIn: brailleCharItem
         id: gridthree
         spacing: parent.height / 50
         columns: 2
@@ -60,8 +113,10 @@ Item {
                 property bool on: clickable ? false : click_on_off()
 
                 function click_on_off() {
-                    for( var i  = 0; i < braille_letter.count; i++) {
-                        if(braille_letter.get(i).pos === index + 1) {
+                    if(!brailleCodes[brailleChar])
+                        return false
+                    for( var i  = 0; i < brailleCodes[brailleChar].length; i++) {
+                        if(brailleCodes[brailleChar][i] === index + 1) {
                             return true
                         }
                     }
@@ -99,6 +154,7 @@ Item {
                         } else {
                             incircle1.state = "on"
                         }
+                        brailleCharItem.updateBrailleCharFromDots()
                     }
                 }
 
