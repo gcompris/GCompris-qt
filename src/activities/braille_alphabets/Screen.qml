@@ -83,12 +83,10 @@ ActivityBase {
 
         Image {
             id: charList
-            x: parent.width / 2
             y: 20 * ApplicationInfo.ratio
             anchors.horizontalCenter: parent.horizontalCenter
             source: Activity.url + "top_back.svg"
             sourceSize.width: parent.width * 0.94
-            sourceSize.height: parent.height * 0.33
 
             Row {
                 id: row
@@ -108,16 +106,15 @@ ActivityBase {
                         Rectangle {
                             id: rect1
                             width:  charList.width / 13
-                            height: charList.height / 1.5
+                            height: width * 1.5
                             border.width: 3
                             border.color: "black"
                             color: "white"
 
                             BrailleChar {
                                 id: ins
-                                dotWidth: rect1.height / 3.4
-                                dotHeight: rect1.height / 3.4
-                                anchors.centerIn: rect1
+                                width: parent.width * 0.9
+                                anchors.centerIn: parent
                                 clickable: false
                                 brailleChar: letter
                             }
@@ -142,19 +139,71 @@ ActivityBase {
             }
         }
 
+        Image {
+            id: playableCharBg
+            anchors {
+                top: charList.bottom
+                topMargin: 10 * ApplicationInfo.ratio
+                bottom: bar.top
+                bottomMargin: 40 * ApplicationInfo.ratio
+            }
+            verticalAlignment: Image.AlignTop
+            x: 10 * ApplicationInfo.ratio
+            source: Activity.url + "char_background.svg"
+            sourceSize.width: Math.min(height * 0.8, parent.width / 2)
+            fillMode: Image.PreserveAspectFit
+
+            BrailleChar {
+                id: playableChar
+                clickable: true
+                anchors {
+                    horizontalCenter: parent.horizontalCenter
+                    top: parent.top
+                    topMargin: 20 * ApplicationInfo.ratio
+                }
+                width: parent.width * 0.5
+                height: width * 1.5
+                isLetter: items.isLetter
+                onBrailleCharChanged: {
+                    if(brailleChar === Activity.getCurrentLetter()) {
+                        particles.emitter.burst(40)
+                        Activity.nextQuestion()
+                    }
+                }
+            }
+
+            Text {
+                id: playableCharDisplay
+                font.pointSize: Math.max(parent.width * 0.2, 12)
+                font.weight: Font.DemiBold
+                style: Text.Outline
+                styleColor: "black"
+                color: "white"
+                text: playableChar.brailleChar
+                anchors {
+                    top: playableChar.bottom
+                    topMargin: 6 * ApplicationInfo.ratio
+                    horizontalCenter: parent.horizontalCenter
+                }
+            }
+        }
+
         Rectangle {
             id: instructionsArea
             height: questionItem.height * 1.1
             width: parent.width / 1.1
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: charList.bottom
-            anchors.topMargin: 10 * ApplicationInfo.ratio
+            anchors {
+                top: charList.bottom
+                topMargin: 10 * ApplicationInfo.ratio
+                left: playableCharBg.right
+                leftMargin: 10 * ApplicationInfo.ratio
+                right: parent.right
+                rightMargin: 10 * ApplicationInfo.ratio
+            }
             color: "#55333333"
             border.color: "black"
             border.width: 2
             radius: 5
-            anchors.leftMargin: 10
-            anchors.rightMargin: 10
 
             Text {
                 id: questionItem
@@ -182,51 +231,6 @@ ActivityBase {
             }
         }
 
-        Image {
-            id: playableCharBg
-            anchors {
-                top: instructionsArea.bottom
-                topMargin: 10 * ApplicationInfo.ratio
-                bottom: bar.top
-                bottomMargin: 40 * ApplicationInfo.ratio
-            }
-            x: 10 * ApplicationInfo.ratio
-            source: Activity.url + "char_background.svg"
-            sourceSize.width: height * 0.8
-            fillMode: Image.PreserveAspectFit
-
-            BrailleChar {
-                id: playableChar
-                clickable: true
-                anchors.centerIn: parent
-                anchors.verticalCenterOffset: - 20 * ApplicationInfo.ratio
-                width: parent.width * 0.8
-                height: width * 0.5
-                isLetter: items.isLetter
-                onBrailleCharChanged: {
-                    if(brailleChar === Activity.getCurrentLetter()) {
-                        particles.emitter.burst(40)
-                        Activity.nextQuestion()
-                    }
-                }
-            }
-
-            Text {
-                id: playableCharDisplay
-                font.pointSize: Math.max(parent.width * 0.2, 12)
-                font.weight: Font.DemiBold
-                style: Text.Outline
-                styleColor: "black"
-                color: "white"
-                text: playableChar.brailleChar
-                anchors {
-                    top: playableChar.bottom
-                    topMargin: 6 * ApplicationInfo.ratio
-                    horizontalCenter: playableChar.horizontalCenter
-                }
-            }
-        }
-
         ParticleSystemStar {
             id: particles
             clip: false
@@ -248,6 +252,9 @@ ActivityBase {
 
         Bar {
             id: bar
+            anchors {
+                right: parent.right
+            }
             content: BarEnumContent { value: help | home | previous | next }
             onHelpClicked: {
                 displayDialog(dialogHelp)
@@ -261,9 +268,8 @@ ActivityBase {
             id: braille_map
             source: Activity.url + "target.svg"
             anchors {
-                left: bar.right
+                right: bar.left
                 bottom: parent.bottom
-
             }
             sourceSize.width: 66 * bar.barZoom
             visible: true

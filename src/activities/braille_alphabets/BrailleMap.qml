@@ -65,7 +65,8 @@ Rectangle {
 
                     Rectangle {
                         id: rect1
-                        width:  outer.width / 13; height: outer.height / 1.1
+                        width:  outer.width / 13
+                        height: width * 1.5
                         border.width: 3
                         border.color: "black"
                         color: "white"
@@ -73,9 +74,8 @@ Rectangle {
 
                         BrailleChar {
                             id: ins
-                            dotWidth: rect1.height / 3.4
-                            dotHeight: rect1.height / 3.4
-                            anchors.centerIn: rect1
+                            width: parent.width * 0.9
+                            anchors.centerIn: parent
                             clickable: false
                             brailleChar: letter
                         }
@@ -90,7 +90,7 @@ Rectangle {
                         font.pointSize: Math.max(parent.width * 0.2, 12)
                         anchors {
                             top: rect1.bottom
-                            topMargin: 6 * ApplicationInfo.ratio
+                            topMargin: 3 * ApplicationInfo.ratio
                             horizontalCenter: rect1.horizontalCenter
                         }
                     }
@@ -127,7 +127,8 @@ Rectangle {
 
                     Rectangle {
                         id: rect2
-                        width:  outer2.width / 13; height: outer2.height / 1.1
+                        width:  outer2.width / 13
+                        height: width * 1.5
                         border.width: 3
                         border.color: "black"
                         color: "white"
@@ -135,9 +136,8 @@ Rectangle {
 
                         BrailleChar {
                             id: ins2
-                            dotWidth: rect2.height / 3.4
-                            dotHeight: rect2.height / 3.4
-                            anchors.centerIn: rect2
+                            width: parent.width * 0.9
+                            anchors.centerIn: parent
                             clickable: false
                             brailleChar: letter
                         }
@@ -152,7 +152,7 @@ Rectangle {
                         font.pointSize: Math.max(parent.width * 0.2, 12)
                         anchors {
                             top: rect2.bottom
-                            topMargin: 6 * ApplicationInfo.ratio
+                            topMargin: 3 * ApplicationInfo.ratio
                             horizontalCenter: rect2.horizontalCenter
                         }
                     }

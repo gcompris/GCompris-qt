@@ -30,7 +30,7 @@ Item {
     id: brailleCharItem
 
     property string brailleChar: ""
-    property real dotWidth: width * 0.2
+    property real dotWidth: width * 0.4
     property real dotHeight: dotWidth
     property alias circles: circles
     property bool clickable
@@ -91,7 +91,7 @@ Item {
 
         anchors.centerIn: brailleCharItem
         id: gridthree
-        spacing: parent.height / 50
+        spacing: (brailleCharItem.width - brailleCharItem.dotWidth * 2) / 2
         columns: 2
         rows: 3
         flow: Grid.TopToBottom

@@ -49,6 +49,7 @@ Image {
         source: Activity.url + "intro_braille_char.svg"
         sourceSize.width: parent.width * 0.25
         fillMode: Image.PreserveAspectFit
+        verticalAlignment: Image.AlignTop
         anchors {
             top: heading.bottom
             topMargin: 30 * ApplicationInfo.ratio
