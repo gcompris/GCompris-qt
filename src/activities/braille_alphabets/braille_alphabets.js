@@ -101,12 +101,13 @@ function initLevel() {
             break
     }
 
-    // Shuffle not to ask the question in the model order
-    currentDataSet = Core.shuffle(currentDataSet)
-
     for(var i = 0;  i < currentDataSet.length; ++i) {
         items.containerModel.append(currentDataSet[i])
     }
+
+    // Shuffle not to ask the question in the model order
+    currentDataSet = Core.shuffle(currentDataSet)
+
     items.playableChar.isLetter = currentDataSet[0].letter >= "A" && currentDataSet[0].letter <= "Z"
     // Trig the next question
     items.questionItem.opacity = 0
@@ -127,7 +128,7 @@ function previousLevel() {
 }
 
 function nextQuestion() {
-    if(dataset[currentLevel].length <= ++currentQuestion ) {
+    if(currentDataSet.length <= ++currentQuestion ) {
         items.bonus.good("flower")
     } else {
         // Let'not change the question immediately to let the
