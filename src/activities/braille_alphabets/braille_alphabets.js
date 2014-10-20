@@ -106,7 +106,7 @@ function instruction_text() {
 }
 
 function getCurrentTextQuestion() {
-    return dataset[currentLevel][currentQuestion].text
+    return dataset[currentLevel][currentQuestion].text.arg(getCurrentLetter())
 }
 
 function getCurrentLetter() {
