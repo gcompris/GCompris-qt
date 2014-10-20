@@ -128,8 +128,8 @@ Item {
                     text: (clickable) ? modelData : ""
                     anchors.left: alignment()
                     font.weight: Font.DemiBold
-                    font.pointSize: Math.min(20 * ApplicationInfo.ratio,
-                                             Math.max(parent.height, 10))
+                    font.pixelSize: Math.min(30 * ApplicationInfo.ratio,
+                                             Math.max(parent.height, 20))
                     anchors.margins: 10
 
                     function alignment() {
@@ -154,6 +154,8 @@ Item {
                         } else {
                             incircle1.state = "on"
                         }
+                        // On touch screens we don't get the exit event.
+                        incircle1.border.width = 2 * ApplicationInfo.ratio
                         brailleCharItem.updateBrailleCharFromDots()
                     }
                 }
