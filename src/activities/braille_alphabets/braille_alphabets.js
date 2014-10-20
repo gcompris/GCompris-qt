@@ -37,24 +37,6 @@ function start(items_, dataset_) {
     dataset = dataset_.get()
     currentLevel = 0
     numberOfLevel = dataset.length
-
-    items.mapContainerModel.clear()
-    for(var j = 0; j < 4; j++ ){
-        for(var i = 0;  i < dataset[j].length; ++i) {
-            if(dataset[j][i].letter != "1") {
-                items.mapContainerModel.append( dataset[j][i] )
-            }
-            else {
-                break;
-            }
-        }
-    }
-
-    for(var j = 3; j <5; j++ ) {
-        for(var i = 0;  i < dataset[j].length; ++i) {
-            items.mapContainerModel2.append( dataset[j][i] )
-        }
-    }
     initLevel()
 }
 

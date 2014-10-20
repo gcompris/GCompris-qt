@@ -39,161 +39,154 @@ Rectangle {
     signal play
     signal stop
 
-    Item {
-        id: outer
-        x: parent.width / 2
-        y: parent.height / 15
-        width : parent.width / 1.06
-        height :  parent.height / 6
-        anchors.horizontalCenter: parent.horizontalCenter
+    Flickable {
+        id: flick
+        anchors.fill: parent
+        contentWidth: parent.width
+        contentHeight: (grid1.width - grid1.spacing * 10) / 10 * 1.9 * 5
+        flickableDirection: Flickable.VerticalFlick
+        clip: true
 
-        Grid {
-            id: grid
-            spacing: 6
-            columns: 10
-            rows: 3
+        Flow {
+            id: grid1
+            width: parent.width * 0.9
+            anchors {
+                top: parent.top
+                topMargin: 10 * ApplicationInfo.ratio
+                horizontalCenter: parent.horizontalCenter
+            }
+            spacing: 5 * ApplicationInfo.ratio
 
             Repeater {
                 id: cardRepeater
-                model: mapContainerModel
+                model: [
+                    "A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
+                    "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
+                    "U", "V", "W", "X", "Y", "Z"
+                ]
 
                 Item {
-                    id: inner
-                    height: outer.height/1.05
-                    width: outer.width / 12
-                    scale: 0.7
+                    width:  (grid1.width - grid1.spacing * 10) / 10
+                    height: width * 1.9
 
                     Rectangle {
                         id: rect1
-                        width:  outer.width / 13
+                        width:  parent.width
                         height: width * 1.5
                         border.width: 3
                         border.color: "black"
                         color: "white"
-
 
                         BrailleChar {
                             id: ins
                             width: parent.width * 0.9
                             anchors.centerIn: parent
                             clickable: false
-                            brailleChar: letter
+                            brailleChar: modelData
                         }
                     }
-
                     Text {
-                        text: letter
+                        text: modelData
                         font.weight: Font.DemiBold
                         style: Text.Outline
                         styleColor: "black"
                         color: "white"
                         font.pointSize: Math.max(parent.width * 0.2, 12)
                         anchors {
-                            top: rect1.bottom
-                            topMargin: 3 * ApplicationInfo.ratio
-                            horizontalCenter: rect1.horizontalCenter
+                            bottom: parent.bottom
+                            horizontalCenter: parent.horizontalCenter
                         }
                     }
                 }
-
             }
         }
-    }
 
-    Item {
-        id: outer2
-        x: parent.width / 2
-        y: parent.height / 1.7
-        width : parent.width / 1.06
-        height :  parent.height / 6
-        anchors.horizontalCenter: parent.horizontalCenter
-
-
-        Grid {
+        Flow {
             id: grid2
+            width : parent.width * 0.9
+            height :  parent.height * 0.4
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+                top: grid1.bottom
+                topMargin: 10 * ApplicationInfo.ratio
+            }
             spacing: 6
-            columns: 10
-            rows: 2
 
             Repeater {
                 id: cardRepeater2
-                model: mapContainerModel2
+                model: [
+                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0",
+                    "+", "-", "*", "/", "#"
+                ]
 
                 Item {
-                    id: inner2
-                    height: outer2.height / 1.05
-                    width: outer2.width / 12
-                    scale: 0.7
+                    width:  (grid1.width - grid1.spacing * 10) / 10
+                    height: width * 1.9
 
                     Rectangle {
                         id: rect2
-                        width:  outer2.width / 13
+                        width:  parent.width
                         height: width * 1.5
                         border.width: 3
                         border.color: "black"
                         color: "white"
-
 
                         BrailleChar {
                             id: ins2
                             width: parent.width * 0.9
                             anchors.centerIn: parent
                             clickable: false
-                            brailleChar: letter
+                            brailleChar: modelData
                         }
                     }
-
                     Text {
-                        text: letter
+                        text: modelData
                         font.weight: Font.DemiBold
                         style: Text.Outline
                         styleColor: "black"
                         color: "white"
                         font.pointSize: Math.max(parent.width * 0.2, 12)
                         anchors {
-                            top: rect2.bottom
-                            topMargin: 3 * ApplicationInfo.ratio
-                            horizontalCenter: rect2.horizontalCenter
+                            bottom: parent.bottom
+                            horizontalCenter: parent.horizontalCenter
                         }
                     }
                 }
+            }
+        }
 
+        // The back button
+        Image {
+            id: cancel
+            source: Activity.url + "back.svg"
+            fillMode: Image.PreserveAspectFit
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+            smooth: true
+            sourceSize.width: 60 * ApplicationInfo.ratio
+            anchors.margins: 10
+            SequentialAnimation {
+                id: anim
+                running: true
+                loops: Animation.Infinite
+                NumberAnimation {
+                    target: cancel
+                    property: "rotation"
+                    from: -10; to: 10
+                    duration: 500
+                    easing.type: Easing.InOutQuad
+                }
+                NumberAnimation {
+                    target: cancel
+                    property: "rotation"
+                    from: 10; to: -10
+                    duration: 500
+                    easing.type: Easing.InOutQuad }
+            }
+            MouseArea {
+                anchors.fill: parent
+                onClicked: close()
             }
         }
     }
-
-    // The back button
-    Image {
-        id: cancel
-        source: Activity.url + "back.svg"
-        fillMode: Image.PreserveAspectFit
-        anchors.right: parent.right
-        anchors.top: parent.top
-        smooth: true
-        sourceSize.width: 60 * ApplicationInfo.ratio
-        anchors.margins: 10
-        SequentialAnimation {
-            id: anim
-            running: true
-            loops: Animation.Infinite
-            NumberAnimation {
-                target: cancel
-                property: "rotation"
-                from: -10; to: 10
-                duration: 500
-                easing.type: Easing.InOutQuad
-            }
-            NumberAnimation {
-                target: cancel
-                property: "rotation"
-                from: 10; to: -10
-                duration: 500
-                easing.type: Easing.InOutQuad }
-        }
-        MouseArea {
-            anchors.fill: parent
-            onClicked: close()
-        }
-    }
-
 }

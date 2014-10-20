@@ -55,8 +55,6 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias containerModel: containerModel
-            property alias mapContainerModel: mapContainerModel
-            property alias mapContainerModel2: mapContainerModel2
             property alias questionItem: questionItem
             property string instructions
             property alias playableChar: playableChar
@@ -71,14 +69,6 @@ ActivityBase {
 
         ListModel {
             id: containerModel
-        }
-
-        ListModel {
-            id: mapContainerModel
-        }
-
-        ListModel {
-            id: mapContainerModel2
         }
 
         Image {
@@ -247,6 +237,9 @@ ActivityBase {
 
         BrailleMap {
             id: dialogMap
+            // Make is non visible or we get some rendering artefacts before
+            // until it is created
+            visible: false
             onClose: home()
         }
 
@@ -274,7 +267,8 @@ ActivityBase {
             sourceSize.width: 66 * bar.barZoom
             visible: true
             onClicked: {
-               displayDialog(dialogMap)
+                dialogMap.visible = true
+                displayDialog(dialogMap)
             }
         }
 
