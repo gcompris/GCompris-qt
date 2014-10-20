@@ -201,6 +201,12 @@ ActivityBase {
                 width: parent.width * 0.8
                 height: width * 0.5
                 isLetter: items.isLetter
+                onBrailleCharChanged: {
+                    if(brailleChar === Activity.getCurrentLetter()) {
+                        bonus.good("flower")
+                        particles.emitter.burst(40)
+                    }
+                }
             }
 
             Text {

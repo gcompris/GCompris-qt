@@ -129,10 +129,7 @@ function getCurrentTextQuestion() {
     return dataset[currentLevel][currentQuestion].text
 }
 
-function getCurrentAlphabet() {
+function getCurrentLetter() {
     return dataset[currentLevel][currentQuestion].letter
 }
 
-function getCurrentArr() {
-    return dataset[currentLevel][currentQuestion].braille_letter
-}
