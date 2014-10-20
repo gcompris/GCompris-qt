@@ -23,6 +23,8 @@
 .import QtQuick 2.0 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
+var url = "qrc:/gcompris/src/activities/braille_alphabets/resource/"
+
 var currentLevel
 var numberOfLevel
 var items

@@ -38,7 +38,7 @@ ActivityBase {
         id: background
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
-        source: "qrc:/gcompris/src/activities/braille_alphabets/resource/background.svg"
+        source: Activity.url + "background.svg"
         sourceSize.width: parent.width
         signal start
         signal stop
@@ -86,7 +86,7 @@ ActivityBase {
             x: parent.width / 2
             y: 20 * ApplicationInfo.ratio
             anchors.horizontalCenter: parent.horizontalCenter
-            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/top_back.svg"
+            source: Activity.url + "top_back.svg"
             sourceSize.width: parent.width * 0.94
             sourceSize.height: parent.height * 0.33
 
@@ -189,7 +189,7 @@ ActivityBase {
                 bottomMargin: 40 * ApplicationInfo.ratio
             }
             x: 10 * ApplicationInfo.ratio
-            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/char_background.svg"
+            source: Activity.url + "char_background.svg"
             sourceSize.width: height * 0.8
             fillMode: Image.PreserveAspectFit
 
@@ -258,7 +258,7 @@ ActivityBase {
 
         BarButton {
             id: braille_map
-            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/target.svg"
+            source: Activity.url + "target.svg"
             anchors {
                 left: bar.right
                 bottom: parent.bottom

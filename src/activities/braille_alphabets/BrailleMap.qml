@@ -22,6 +22,7 @@
 import QtQuick 2.2
 import QtQuick.Controls 1.1
 import GCompris 1.0
+import "braille_alphabets.js" as Activity
 
 Rectangle {
     id: dialogBackground
@@ -164,7 +165,7 @@ Rectangle {
     // The back button
     Image {
         id: cancel
-        source: "qrc:/gcompris/src/activities/braille_alphabets/resource/back.svg"
+        source: Activity.url + "back.svg"
         fillMode: Image.PreserveAspectFit
         anchors.right: parent.right
         anchors.top: parent.top

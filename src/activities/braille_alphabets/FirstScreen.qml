@@ -23,12 +23,13 @@ import QtQuick 2.1
 import QtQuick.Layouts 1.1
 import GCompris 1.0
 import "../../core"
+import "braille_alphabets.js" as Activity
 
 Image {
     id: first_screen
     anchors.fill: parent
     fillMode: Image.PreserveAspectCrop
-    source: "qrc:/gcompris/src/activities/braille_alphabets/resource/intro_bg.svg"
+    source: Activity.url + "intro_bg.svg"
     sourceSize.width: parent.width
     
     Text {
@@ -45,7 +46,7 @@ Image {
     
     Image {
         id: introChar
-        source: "qrc:/gcompris/src/activities/braille_alphabets/resource/intro_braille_char.svg"
+        source: Activity.url + "intro_braille_char.svg"
         sourceSize.width: parent.width * 0.25
         fillMode: Image.PreserveAspectFit
         anchors {
@@ -99,7 +100,7 @@ Image {
     
     Image {
         id: introTux
-        source: "qrc:/gcompris/src/activities/braille_alphabets/resource/tux_braille.svg"
+        source: Activity.url + "tux_braille.svg"
         fillMode: Image.PreserveAspectFit
         sourceSize.width: parent.width * 0.2
         anchors {
