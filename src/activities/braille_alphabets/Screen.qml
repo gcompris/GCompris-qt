@@ -98,7 +98,7 @@ ActivityBase {
                         Rectangle {
                             id: rect1
                             width:  charList.width / 13
-                            height: width * 1.5
+                            height: ins.height
                             border.width: 3
                             border.color: "black"
                             color: "white"
@@ -116,12 +116,12 @@ ActivityBase {
                             text: letter
                             font.weight: Font.DemiBold
                             style: Text.Outline
-                            styleColor: "black"
-                            color: "white"
-                            font.pointSize: Math.max(parent.width * 0.2, 12)
+                            styleColor: "white"
+                            color: "black"
+                            font.pixelSize: Math.max(parent.width * 0.5, 24)
                             anchors {
                                 top: rect1.bottom
-                                topMargin: 6 * ApplicationInfo.ratio
+                                topMargin: 4 * ApplicationInfo.ratio
                                 horizontalCenter: rect1.horizontalCenter
                             }
                         }
@@ -136,14 +136,12 @@ ActivityBase {
             anchors {
                 top: charList.bottom
                 topMargin: 10 * ApplicationInfo.ratio
-                bottom: bar.top
-                bottomMargin: 40 * ApplicationInfo.ratio
             }
             verticalAlignment: Image.AlignTop
             x: 10 * ApplicationInfo.ratio
             source: Activity.url + "char_background.svg"
-            sourceSize.width: Math.min(height * 0.8, parent.width / 2)
-            fillMode: Image.PreserveAspectFit
+            sourceSize.width: playableChar.width * 1.8
+            height: (playableChar.height  + playableCharDisplay.height) * 1.2
 
             BrailleChar {
                 id: playableChar
@@ -153,8 +151,7 @@ ActivityBase {
                     top: parent.top
                     topMargin: 20 * ApplicationInfo.ratio
                 }
-                width: parent.width * 0.5
-                height: width * 1.5
+                width: Math.min(background.width * 0.18, background.height * 0.2)
                 isLetter: items.isLetter
                 onBrailleCharChanged: {
                     if(brailleChar === Activity.getCurrentLetter()) {
@@ -166,16 +163,16 @@ ActivityBase {
 
             Text {
                 id: playableCharDisplay
-                font.pointSize: Math.max(parent.width * 0.2, 12)
+                font.pixelSize: Math.max(playableChar.width * 0.4, 24)
                 font.weight: Font.DemiBold
                 style: Text.Outline
-                styleColor: "black"
-                color: "white"
+                styleColor: "white"
+                color: "black"
                 text: playableChar.brailleChar
                 anchors {
                     top: playableChar.bottom
-                    topMargin: 6 * ApplicationInfo.ratio
-                    horizontalCenter: parent.horizontalCenter
+                    topMargin: 4 * ApplicationInfo.ratio
+                    horizontalCenter: playableChar.horizontalCenter
                 }
             }
         }

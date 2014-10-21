@@ -43,7 +43,7 @@ Rectangle {
         id: flick
         anchors.fill: parent
         contentWidth: parent.width
-        contentHeight: (grid1.width - grid1.spacing * 10) / 10 * 1.9 * 5
+        contentHeight: (grid1.width - grid1.spacing * 10) / 10 * 1.9 * 6.5
         flickableDirection: Flickable.VerticalFlick
         clip: true
 
@@ -67,12 +67,12 @@ Rectangle {
 
                 Item {
                     width:  (grid1.width - grid1.spacing * 10) / 10
-                    height: width * 1.9
+                    height: (rect1.height + text1.height) * 1.2
 
                     Rectangle {
                         id: rect1
                         width:  parent.width
-                        height: width * 1.5
+                        height: ins.height
                         border.width: 3
                         border.color: "black"
                         color: "white"
@@ -86,6 +86,7 @@ Rectangle {
                         }
                     }
                     Text {
+                        id: text1
                         text: modelData
                         font.weight: Font.DemiBold
                         style: Text.Outline
@@ -93,7 +94,8 @@ Rectangle {
                         color: "white"
                         font.pointSize: Math.max(parent.width * 0.2, 12)
                         anchors {
-                            bottom: parent.bottom
+                            top: rect1.bottom
+                            topMargin: 4 * ApplicationInfo.ratio
                             horizontalCenter: parent.horizontalCenter
                         }
                     }
@@ -121,12 +123,12 @@ Rectangle {
 
                 Item {
                     width:  (grid1.width - grid1.spacing * 10) / 10
-                    height: width * 1.9
+                    height: (rect2.height + text2.height) * 1.2
 
                     Rectangle {
                         id: rect2
                         width:  parent.width
-                        height: width * 1.5
+                        height: ins2.height
                         border.width: 3
                         border.color: "black"
                         color: "white"
@@ -140,6 +142,7 @@ Rectangle {
                         }
                     }
                     Text {
+                        id: text2
                         text: modelData
                         font.weight: Font.DemiBold
                         style: Text.Outline
@@ -147,7 +150,8 @@ Rectangle {
                         color: "white"
                         font.pointSize: Math.max(parent.width * 0.2, 12)
                         anchors {
-                            bottom: parent.bottom
+                            top: rect2.bottom
+                            topMargin: 4 * ApplicationInfo.ratio
                             horizontalCenter: parent.horizontalCenter
                         }
                     }

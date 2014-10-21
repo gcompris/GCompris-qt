@@ -28,6 +28,7 @@ import GCompris 1.0
 
 Item {
     id: brailleCharItem
+    height: dotWidth * 3 + grid.spacing * 4
 
     property string brailleChar: ""
     property real dotWidth: width * 0.4
@@ -88,9 +89,8 @@ Item {
     }
 
     Grid {
-
+        id: grid
         anchors.centerIn: brailleCharItem
-        id: gridthree
         spacing: (brailleCharItem.width - brailleCharItem.dotWidth * 2) / 2
         columns: 2
         rows: 3
