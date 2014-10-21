@@ -268,7 +268,7 @@ function createFish(minDuration) {
                     "activity": activity,
                     "bar": bar,
                     "x": Math.random() * (activity.width - fishSource.width),
-                    "y": Math.random() * (activity.height - bar.height - fishSource.height),
+                    "y": bar.height + Math.random() * (activity.height - bar.height - fishSource.height),
                     "width": fishSource.width * 1.1 * GCompris.ApplicationInfo.ratio,
                     "height": fishSource.height * 1.1 * GCompris.ApplicationInfo.ratio,
                     "source": "qrc:/gcompris/src/activities/clickgame/resource/" +
