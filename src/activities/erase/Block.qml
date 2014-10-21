@@ -35,7 +35,7 @@ Image {
     property int nby
 
     x: ix * main.width / nbx
-    y: iy * (main.height - bar.height) / nby
+    y: bar.height + iy * (main.height - bar.height) / nby
     width: main.width / nbx
     height: (main.height - bar.height) / nby
 
