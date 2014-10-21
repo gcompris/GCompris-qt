@@ -143,11 +143,12 @@ ActivityBase {
             content: BarEnumContent { value: help | home | previous | next }
 
             // anchor in top right corner:
-            anchors.bottom: undefined
-            anchors.top: parent.top
+            anchors {
+                bottom: undefined
+                top: parent.top
+                topMargin: height + 10
+            }
             x: parent.width - width
-            anchors.topMargin: height + 10
-
 
             onHelpClicked: {
                 displayDialog(dialogHelp)
