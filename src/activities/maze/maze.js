@@ -247,7 +247,7 @@ function getMaze() {
 }
 
 function autoMove() {
-    if (items.fastMode) {
+    if (items && items.fastMode) {
         var number = 0
         var result = 0
         if (getPlayerRotation() !== 90 && !(maze[getId(
