@@ -48,7 +48,7 @@ Window {
             repeat: false
 
             onTriggered: {
-                DownloadManager.voicesRegistered.disconnect(playDelayed);
+                DownloadManager.voicesRegistered.disconnect(playWelcome);
             }
 
             function playWelcome() {
