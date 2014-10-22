@@ -21,6 +21,7 @@
 
 #include "DownloadManager.h"
 #include "ApplicationSettings.h"
+#include "ApplicationInfo.h"
 
 #include <QFile>
 #include <QDir>
@@ -502,8 +503,24 @@ bool DownloadManager::registerResource(const QString& filename)
                 << filename
                 << "(rcRoot=" << getResourceRootForFilename(filename) << ")";
         registeredResources.append(filename);
+
+        QString v = getVoicesResourceForLocale(
+                ApplicationInfo::getInstance()->localeShort());
+        QString relPath = getRelativeResourcePath(filename);
+        if (v == relPath)
+            emit voicesRegistered();
         return false;
     }
+}
+
+bool DownloadManager::areVoicesRegistered() const
+{
+    QString relFilename = getVoicesResourceForLocale(
+            ApplicationInfo::getInstance()->localeShort());
+    for (auto &base: getSystemResourcePaths())
+        if (isRegistered(base + "/" + relFilename))
+            return true;
+    return false;
 }
 
 /** Handle a finished download
