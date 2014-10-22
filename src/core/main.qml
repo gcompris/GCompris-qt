@@ -40,10 +40,33 @@ Window {
         id: audioVoices
         muted: !ApplicationSettings.isAudioVoicesEnabled
 
+        Timer {
+            id: delayedWelcomeTimer
+            interval: 10000 /* Make sure, that playing welcome.ogg if delayed
+                             * because of not yet registered voices, will only
+                             * happen max 10sec after startup */
+            repeat: false
+
+            onTriggered: {
+                DownloadManager.voicesRegistered.disconnect(playDelayed);
+            }
+
+            function playWelcome() {
+                audioVoices.append(ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/welcome.ogg"));
+            }
+        }
+
         Component.onCompleted: {
             if(ApplicationSettings.isAudioEffectsEnabled)
                 append("qrc:/gcompris/src/core/resource/intro.ogg")
-            append(ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/welcome.ogg"))
+
+            if (DownloadManager.areVoicesRegistered())
+                delayedWelcomeTimer.playWelcome();
+            else {
+                DownloadManager.voicesRegistered.connect(
+                        delayedWelcomeTimer.playWelcome);
+                delayedWelcomeTimer.start();
+            }
         }
     }
 
