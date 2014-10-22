@@ -72,53 +72,5 @@ endif(ANDROID)
 
 include(cmake/rcc.cmake)
 
-# Files to translate
-file(GLOB ACTIVITY_SRCS src/core/*.qml src/core/*.js src/activities/*/*.qml
-  src/activities/*/*.js src/activities/activities.txt)
-
-# Translations handling
-SET(TRANSLATIONS_FILES
-  translations/gcompris_bg.ts
-  translations/gcompris_br.ts
-  translations/gcompris_cs.ts
-  translations/gcompris_da.ts
-  translations/gcompris_de.ts
-  translations/gcompris_el.ts
-  translations/gcompris_es.ts
-  translations/gcompris_fr.ts
-  translations/gcompris_gd.ts
-  translations/gcompris_gl.ts
-  translations/gcompris_hu.ts
-  translations/gcompris_lt.ts
-  translations/gcompris_lv.ts
-  translations/gcompris_nl.ts
-  translations/gcompris_nn.ts
-  translations/gcompris_pl.ts
-  translations/gcompris_pt_BR.ts
-  translations/gcompris_ru.ts
-  translations/gcompris_sk.ts
-  translations/gcompris_sl.ts
-  translations/gcompris_sr.ts
-  translations/gcompris_sv.ts
-  translations/gcompris_ta.ts
-  translations/gcompris_th.ts
-  translations/gcompris_zh_TW.ts
-)
-
-# Set the output dir for the translation files to /bin
-foreach(TsSource ${TRANSLATIONS_FILES})
-  set_source_files_properties(${TsSource}
-  PROPERTIES OUTPUT_LOCATION ${GCOMPRIS_TRANSLATIONS_DIR})
-endforeach()
-
-# FIXME On make clean the translations/*.ts files should not be removed
-qt5_create_translation(QM_FILES ${ACTIVITY_SRCS} ${TRANSLATIONS_FILES})
-add_custom_target(UpdateTranslations DEPENDS ${ACTIVITY_SRCS} ${TRANSLATIONS_FILES})
-add_custom_target(BuildTranslations DEPENDS ${QM_FILES})
-if(CMAKE_HOST_APPLE)
-  install(FILES ${QM_FILES} DESTINATION ${_bundle_bin}/translations)
-else()
-  install(FILES ${QM_FILES} DESTINATION ${_dest_dir}/translations)
-endif()
-
 add_subdirectory(src)
+add_subdirectory(translations)
