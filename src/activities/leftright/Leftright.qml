@@ -67,7 +67,7 @@ ActivityBase {
             anchors.top: topBorder.bottom
             fillMode: Image.PreserveAspectFit
             sourceSize.width: Math.min(activity.width,
-                                       (main.height - bar.height - leftButton.height) * 1.3)
+                                       (main.height - leftButton.height) * 1.3)
             source: "qrc:/gcompris/src/activities/leftright/resource/blackboard.svgz"
 
             Image {
@@ -163,7 +163,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | previous | next }
+            content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelpLeftRight)
             }

@@ -34,7 +34,7 @@ Rectangle {
     width: gridPart.width
     height: background.height / 7 - 4
     anchors.right: parent.right
-    anchors.top: parent.top
+    anchors.bottom: parent.bottom
     border.color: "black"
     border.width: 2
     radius: 5
@@ -66,10 +66,12 @@ Rectangle {
         font.weight: Font.DemiBold
         maximumLineCount: 1
         verticalAlignment: Text.AlignVCenter
+        horizontalAlignment: Text.AlignHCenter
 
         anchors {
-            left: muncherLife.right
-            right: bar.left
+            right: muncherLife.left
+            rightMargin: ApplicationInfo.ratio*5
+            left: bar.right
             leftMargin: ApplicationInfo.ratio*5
             top: parent.top
             bottom: parent.bottom
@@ -81,10 +83,10 @@ Rectangle {
 
         width: height
         height: parent.height * 0.9
-        anchors.left: parent.left
+        anchors.right: parent.right
         anchors.verticalCenter: parent.verticalCenter
+        anchors.rightMargin: ApplicationInfo.ratio*5
         border.width: 2
-        anchors.leftMargin: ApplicationInfo.ratio*5
         radius: 5
 
         Creature {
@@ -102,21 +104,10 @@ Rectangle {
     Bar {
         id: bar
 
-        barZoom: background.height < background.width ? parent.height / 85 : parent.width / 600
-        anchors {
-            right: parent.right
-            top: undefined
-            bottom: parent.bottom
-            left: undefined
-            rightMargin: ApplicationInfo.ratio * 5
-        }
-
         content: BarEnumContent {
             value: help | home
         }
-        onHelpClicked: {
-            displayDialog(dialogHelp)
-        }
+        onHelpClicked: displayDialog(dialogHelp)
         onPreviousLevelClicked: Activity.previousLevel()
         onNextLevelClicked: Activity.nextLevel()
         onHomeClicked: activity.home()

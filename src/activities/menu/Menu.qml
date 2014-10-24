@@ -167,7 +167,7 @@ ActivityBase {
         GridView {
             anchors {
                 top: horizontal ? section.bottom : parent.top
-                bottom: bar.top
+                bottom: parent.bottom
                 left: horizontal ? parent.left : section.right
                 margins: 4
             }

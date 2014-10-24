@@ -141,7 +141,7 @@ ActivityBase {
         Grid {
             id: grid
             anchors.top: parent.top
-            anchors.topMargin: (parent.height - height - items.bar.height) / 2
+            anchors.topMargin: (parent.height - height) / 2
             anchors.horizontalCenter: parent.horizontalCenter
             rows: items.nbCell
             columns: items.nbCell
@@ -211,7 +211,7 @@ ActivityBase {
         Bar {
             id: bar
             content: BarEnumContent {
-                value: help | home | previous | next
+                value: help | home | level
             }
             onHelpClicked: {
                 displayDialog(dialogHelp)

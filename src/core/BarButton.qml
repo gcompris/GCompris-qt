@@ -24,9 +24,6 @@ import GCompris 1.0
 Image {
     id: button
     state: "notclicked"
-    visible: contentId & bar.content.value
-
-    property int contentId
 
     signal clicked
 
@@ -34,7 +31,7 @@ Image {
         id: mouseArea
         anchors.fill: parent
         hoverEnabled: true
-        onClicked: button.clicked();
+        onClicked: button.clicked()
     }
 
     states: [
@@ -64,5 +61,6 @@ Image {
     ]
 
     Behavior on scale { NumberAnimation { duration: 70 } }
+    Behavior on opacity { PropertyAnimation { duration: 200 } }
 
 }

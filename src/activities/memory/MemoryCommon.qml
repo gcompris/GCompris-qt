@@ -111,7 +111,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | previous | next }
+            content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -125,10 +125,11 @@ ActivityBase {
             source: 'qrc:/gcompris/src/activities/memory/resource/children.svg'
             anchors {
                 bottom: bar.bottom
-                left: bar.right
+                right: parent.right
+                rightMargin: 2 * ApplicationInfo.ratio
             }
             width: height * 0.83
-            height: bar.height * 2
+            height: bar.height * 1.2
 
             GCText {
                 id: playerScore
@@ -149,10 +150,11 @@ ActivityBase {
             source: 'qrc:/gcompris/src/activities/memory/resource/tux-teacher.png'
             anchors {
                 bottom: bar.bottom
-                left: player.right
+                right: player.left
+                rightMargin: 2 * ApplicationInfo.ratio
             }
             width: height * 0.83
-            height: bar.height * 2
+            height: bar.height * 1.2
 
             GCText {
                 id: tuxScore
