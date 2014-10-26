@@ -106,9 +106,9 @@ Item {
     Connections {
         target: DownloadManager
         
-        onDownloadStarted: downloadImage.visible = true;
-        onDownloadFinished: downloadImage.visible = false;  
-        onError: downloadImage.visible = false;
+        onDownloadStarted: content.value |= content.download
+        onDownloadFinished: content.value &= ~content.download
+        onError: content.value &= ~content.download
     }
 
     Image {
@@ -131,15 +131,23 @@ Item {
         }
     }
 
-    onContentChanged: {
-        if(buttonModel == undefined) {
-            buttonModel = new Array()
-        }
+    function updateContent() {
+        var newButtonModel = new Array()
         for(var def in buttonList) {
             if(content.value & buttonList[def].contentId) {
-                buttonModel.push(buttonList[def])
+                newButtonModel.push(buttonList[def])
             }
         }
+        buttonModel = newButtonModel
+    }
+
+    Connections {
+        target: content
+        onValueChanged: updateContent()
+    }
+
+    onContentChanged: {
+        updateContent()
     }
 
     Row {
@@ -291,9 +299,6 @@ Item {
         id: downloadImage
         AnimatedImage {
             source: "qrc:/gcompris/src/core/resource/loader.gif"
-            anchors.bottom: parent.bottom
-            visible: false
-
             MouseArea {
                 id: mouseArea
                 anchors.fill: parent
