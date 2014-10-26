@@ -1,6 +1,6 @@
 /* GCompris - hanoi_real.js
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 <Amit Tomar>
  *
  * Authors:
  *   <THE GTK VERSION AUTHOR> (GTK+ version)
