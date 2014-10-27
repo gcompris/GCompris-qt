@@ -155,8 +155,8 @@ Item {
         spacing: 5
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 10
-        anchors.left: parent.left
-        anchors.leftMargin: 100
+        anchors.left: openBar.right
+        anchors.leftMargin: 10 * ApplicationInfo.ratio
         Repeater {
             model: buttonModel
             Loader {
