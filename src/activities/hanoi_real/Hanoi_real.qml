@@ -19,7 +19,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.1
+import QtQuick 2.3
 
 import "../../core"
 import "hanoi_real.js" as Activity
@@ -50,25 +50,29 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias hanoiStage: hanoiStage
-            property alias disc1: disc1
-            property alias disc2: disc2
-            property alias disc3: disc3
-            property alias disc4: disc4
+            property alias discRepeater: discRepeater
             property alias tower1Image: tower1Image
             property alias tower2Image: tower2Image
             property alias tower3Image: tower3Image
-            property alias discOneMouse  : discOneMouse
-            property alias discTwoMouse  : discTwoMouse
-            property alias discThreeMouse: discThreeMouse
-            property alias discFourMouse : discFourMouse
-
+            property int maxDiscs     : 4
+            property int totalLevels  : 2
+            property int maxZ : 5
         }
 
-        onStart: { Activity.start(items) }
+        onStart: { Activity.start(items) ; Activity.placeDiscsAtOriginal() }
         onStop : { Activity.stop()       }
 
-        Rectangle
-        {
+        onWidthChanged: {
+            for( var i = 0 ; i < items.totalLevels + 2 ; ++i )
+                discRepeater.itemAt(i).reposition()
+        }
+
+        onHeightChanged: {
+            for( var i = 0 ; i < items.totalLevels + 2 ; ++i )
+                discRepeater.itemAt(i).reposition()
+        }
+
+        Rectangle {
             id: hanoiStage
             width: parent.width
             height: parent.height * .80
@@ -77,474 +81,181 @@ ActivityBase {
             property real currentX : 0.0
             property real currentY : 0.0
 
-            // Banner for rules
-            Rectangle
-            {
+            Rectangle {
                 width: parent.width
-                height: parent.height * .10
+                height: parent.height * .20
                 color: "#527BBD"
                 anchors { bottom: parent.bottom ; bottomMargin: 10 }
 
-                Text
-                {
+                Text {
                     id: name
                     text: qsTr("Move the entire stack to the right peg, one disc at a time.")
-                    font.pixelSize: 35
-                    color: "white"
+                    width: parent.width * .70
+                    font.pixelSize: name.width > 300 ? 25 : 20
+                    wrapMode: Text.WordWrap
+                    color: "white"                    
                     anchors.centerIn: parent
                 }
             }
 
-            Image
-            {
+            Repeater {
+                id: discRepeater
+                model : items.totalLevels + 2
+                x: 100
+                y: 100
+
+                Image {
+                    id: disc
+                    parent: hanoiStage
+
+                    property alias discX: disc.x
+                    property alias discY: disc.y
+
+                    property real discWidth : disc.width
+                    property real discHeight: disc.height
+
+                    property bool mouseEnabled : true
+
+                    signal reposition()
+
+                    onReposition: {
+                        var position;
+                        var newX;
+                        var newY;
+
+                         if( Activity.checkDiscInTower(index+1, Activity.tower1) ){
+
+                             newX = tower1Image.x
+                             newY = tower1Image.y
+                             position = Activity.getDiscPositionInTower( index+1, Activity.tower1 )
+                         }
+                         else if( Activity.checkDiscInTower(index+1, Activity.tower2) ){
+
+                             newX = tower2Image.x
+                             newY = tower2Image.y
+                             position = Activity.getDiscPositionInTower( index+1, Activity.tower2 )
+                         }
+                         else if( Activity.checkDiscInTower(index+1, Activity.tower3) ){
+
+                             newX = tower3Image.x
+                             newY = tower3Image.y
+                             position = Activity.getDiscPositionInTower( index+1, Activity.tower3 )
+                         }
+
+                         disc.x = newX - disc.width * .18
+                         disc.y = newY + tower1Image.height * .70 - ((position-1) *  disc.height)
+                    }
+
+                    x: 20 * index
+                    y: 20 * index
+                    z: tower1Image.z + 1
+
+                    opacity: index >= 3 ? 0 : 1
+
+                    source: if( 0 == index ) Activity.url + "disc1.png"
+                            else if ( 1 == index ) Activity.url + "disc2.png"
+                            else if ( 2 == index ) Activity.url + "disc3.png"
+                            else if ( 3 == index ) Activity.url + "disc4.png"
+
+                    MouseArea {
+                        enabled: parent.mouseEnabled
+                        anchors.fill: parent
+                        drag.target: parent
+                        drag.axis: Drag.XandYAxis
+
+                        drag.minimumX: 0
+                        drag.maximumX: hanoiStage.width - parent.width
+
+                        drag.minimumY: 0
+                        drag.maximumY: hanoiStage.height - parent.height
+
+                        onPressed: {
+                            hanoiStage.currentX = disc.x
+                            hanoiStage.currentY = disc.y
+                            disc.z ++
+
+                            disc.z = items.maxZ
+                            ++items.maxZ
+                        }
+
+                        onReleased: {
+                            if( Activity.getDiscOnTopOfTower(index+1,1) && !(0 != Activity.tower1.length && index+1 <= Activity.tower1[Activity.tower1.length-1]) ) {
+                                    disc.x = tower1Image.x - width * .18
+                                    disc.y = tower1Image.y + tower1Image.height * .70 - ( (Activity.tower1.length) *  disc.height)
+
+                                    Activity.popDisc(index+1)
+
+                                    Activity.tower1.push(index+1)
+                                    Activity.discs[index+1] = 1
+                            }
+
+                            else if( Activity.getDiscOnTopOfTower(index+1,2) && !( 0 != Activity.tower2.length && index+1 <= Activity.tower2[Activity.tower2.length-1] ) ) {
+                                    disc.x = tower2Image.x - width * .18
+                                    disc.y = tower2Image.y + tower2Image.height * .70 - ( (Activity.tower2.length) *  disc.height)
+
+                                    Activity.popDisc(index+1)
+
+                                    Activity.tower2.push(index+1)
+                                    Activity.discs[index+1] = 2
+                            }
+
+                            else if( Activity.getDiscOnTopOfTower(index+1,3) && !( 0 != Activity.tower3.length && index+1 <= Activity.tower3[Activity.tower3.length-1] ) ) {
+                                    disc.x = tower3Image.x - width * .18
+                                    disc.y = tower3Image.y + tower3Image.height * .70 - ( (Activity.tower3.length) *  disc.height)
+
+                                    Activity.popDisc(index+1)
+
+                                    Activity.tower3.push(index+1)
+                                    Activity.discs[index+1] = 3
+                            }
+
+                            else {
+                                disc.x = hanoiStage.currentX
+                                disc.y = hanoiStage.currentY
+                            }
+
+                            Activity.disableNonDraggablediscs()
+                            Activity.checkSolved()
+                        }
+                    }
+                }
+            }
+
+            property real spacing : (hanoiStage.width - 3 * tower1Image.width) / 4
+
+            Image {
                 id: tower1Image
-                x: parent.width / 5
-                y: parent.height / 4
+                x: parent.spacing
+                y: parent.spacing / 3
                 source: Activity.url + "disc_support.png"
             }
 
-            Image
-            {
+            Image {
                 id: tower2Image
                 anchors.left: tower1Image.right
                 anchors.top: tower1Image.top
-                anchors.leftMargin: parent.width / 5
+                anchors.leftMargin: parent.spacing
                 source: Activity.url + "disc_support.png"
             }
 
-            Image
-            {
+            Image {
                 id: tower3Image
                 anchors.left: tower2Image.right
                 anchors.top: tower2Image.top
-                anchors.leftMargin: parent.width / 5
+                anchors.leftMargin: parent.spacing
                 source: Activity.url + "disc_support.png"
 
-                Rectangle
-                {
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: Activity.placeDiscsAtOriginal()
+                }
+
+                Rectangle {
                     color: "pink"
                     radius: 25
                     opacity: .50
                     anchors{ left: parent.left ; right : parent.right ; bottom:  parent.bottom ; top: parent.top ; leftMargin: -25 ; rightMargin:  -25; topMargin:  -25 ; bottomMargin:  -25  }
                     z: -1
-                }
-            }
-
-            Image
-            {
-                id: disc1
-                x: tower1Image.x - width * .20
-                y: tower1Image.y + tower1Image.height * .70
-                source: Activity.url + "disc1.png"
-
-                MouseArea
-                {
-                    id: discOneMouse
-                    enabled: false
-                    anchors.fill: parent
-                    drag.target: parent
-                    drag.axis: Drag.XandYAxis
-
-                    drag.minimumX: 0
-                    drag.maximumX: hanoiStage.width - parent.width
-
-                    drag.minimumY: 0
-                    drag.maximumY: hanoiStage.height - parent.height
-
-                    onPressed:
-                    {
-                        hanoiStage.currentX = disc1.x
-                        hanoiStage.currentY = disc1.y
-                        disc1.z ++
-                    }
-
-                    onReleased:
-                    {
-                        // disc 1 is released over tower1Image
-                        if( Activity.checkdiscOverTower(1,1) )
-                        {
-                            if( (0 != Activity.tower1.length && 1 <= Activity.tower1[Activity.tower1.length-1]) )
-                            {
-                                disc1.x = hanoiStage.currentX
-                                disc1.y = hanoiStage.currentY
-                            }
-
-                            else
-                            {
-                                disc1.x = tower1Image.x - width * .20
-                                disc1.y = tower1Image.y + tower1Image.height * .70 - ( (Activity.tower1.length) *  disc1.height)
-
-                                Activity.popdisc(1)
-
-                                Activity.tower1.push(1)
-                                Activity.discs[1] = 1
-                            }
-                        }
-
-                        // disc 1 is released over tower2Image
-                        else if( Activity.checkdiscOverTower(1,2)  )
-                        {
-                            if( 0 != Activity.tower2.length && 1 <= Activity.tower2[Activity.tower2.length-1] )
-                            {
-                                disc1.x = hanoiStage.currentX
-                                disc1.y = hanoiStage.currentY
-                            }
-
-                            else
-                            {
-                                disc1.x = tower2Image.x - width * .20
-                                disc1.y = tower2Image.y + tower2Image.height * .70 - ( (Activity.tower2.length) *  disc1.height)
-
-                                Activity.popdisc(1)
-
-                                Activity.tower2.push(1)
-                                Activity.discs[1] = 2
-                            }
-                        }
-
-                        // disc 1 is released over tower3Image
-                        else if( Activity.checkdiscOverTower(1,3) )
-                        {
-                            if( 0 != Activity.tower3.length && 1 <= Activity.tower3[Activity.tower3.length-1] )
-                            {
-                                disc1.x = hanoiStage.currentX
-                                disc1.y = hanoiStage.currentY
-                            }
-
-                            else
-                            {
-                                disc1.x = tower3Image.x - width * .20
-                                disc1.y = tower3Image.y + tower3Image.height * .70 - ( (Activity.tower3.length) *  disc1.height)
-
-                                Activity.popdisc(1)
-
-                                Activity.tower3.push(1)
-                                Activity.discs[1] = 3
-                            }
-                        }
-
-                        else
-                        {
-                            disc1.x = hanoiStage.currentX
-                            disc1.y = hanoiStage.currentY
-                        }
-
-                        Activity.disableNonDraggablediscs()
-                        Activity.checkSolved()
-                    }
-                }
-            }
-
-            Image
-            {
-                id: disc2
-                x: tower1Image.x - width * .18
-                y: tower1Image.y + tower1Image.height * .70 - disc1.height
-                source: Activity.url + "disc2.png"
-
-                MouseArea
-                {
-                    id: discTwoMouse
-                    enabled: false
-                    anchors.fill: parent
-                    drag.target: parent
-                    drag.axis: Drag.XandYAxis
-
-                    drag.minimumX: 0
-                    drag.maximumX: hanoiStage.width - parent.width
-
-                    drag.minimumY: 0
-                    drag.maximumY: hanoiStage.height - parent.height
-
-                    onPressed:
-                    {
-                        hanoiStage.currentX = disc2.x
-                        hanoiStage.currentY = disc2.y
-                        disc2.z ++
-                    }
-
-                    onReleased:
-                    {
-                        // disc 2 is released over tower1Image
-                        if( Activity.checkdiscOverTower(2,1) )
-                        {
-                            if( (0 != Activity.tower1.length && 2 <= Activity.tower1[Activity.tower1.length-1]) )
-                            {
-                                disc2.x = hanoiStage.currentX
-                                disc2.y = hanoiStage.currentY
-                            }
-
-                            else
-                            {
-                                disc2.x = tower1Image.x - width * .18
-                                disc2.y = tower1Image.y + tower1Image.height * .70 - ( (Activity.tower1.length) *  disc1.height)
-
-                                Activity.popdisc(2)
-
-                                Activity.tower1.push(2)
-                                Activity.discs[2] = 1
-                            }
-                        }
-
-                        // disc 2 is released over tower2Image
-                        else if( Activity.checkdiscOverTower(2,2)  )
-                        {
-                            if( 0 != Activity.tower2.length && 2 <= Activity.tower2[Activity.tower2.length-1] )
-                            {
-                                disc2.x = hanoiStage.currentX
-                                disc2.y = hanoiStage.currentY
-                            }
-
-                            else
-                            {
-                                disc2.x = tower2Image.x - width * .18
-                                disc2.y = tower2Image.y + tower2Image.height * .70 - ( (Activity.tower2.length) *  disc1.height)
-
-                                Activity.popdisc(2)
-
-                                Activity.tower2.push(2)
-                                Activity.discs[2] = 2
-                            }
-                        }
-
-                        // disc 2 is released over tower3Image
-                        else if( Activity.checkdiscOverTower(2,3) )
-                        {
-                            if( 0 != Activity.tower3.length && 2 <= Activity.tower3[Activity.tower3.length-1] )
-                            {
-                                disc2.x = hanoiStage.currentX
-                                disc2.y = hanoiStage.currentY
-                            }
-
-                            else
-                            {
-                                disc2.x = tower3Image.x - width * .18
-                                disc2.y = tower3Image.y + tower3Image.height * .70 - ( (Activity.tower3.length) *  disc1.height)
-
-                                Activity.popdisc(2)
-
-                                Activity.tower3.push(2)
-                                Activity.discs[2] = 3
-                            }
-                        }
-
-                        else
-                        {
-                            disc2.x = hanoiStage.currentX
-                            disc2.y = hanoiStage.currentY
-                        }
-
-                        Activity.disableNonDraggablediscs()
-                        Activity.checkSolved()
-                    }
-                }
-            }
-
-            Image
-            {
-                id: disc3
-                x: tower1Image.x - width * .15
-                y: tower1Image.y + tower1Image.height * .70 - disc1.height - disc2.height
-                source: Activity.url + "disc3.png"
-
-                MouseArea
-                {
-                    id: discThreeMouse
-                    anchors.fill: parent
-                    drag.target: parent
-                    drag.axis: Drag.XandYAxis
-
-                    drag.minimumX: 0
-                    drag.maximumX: hanoiStage.width - parent.width
-
-                    drag.minimumY: 0
-                    drag.maximumY: hanoiStage.height - parent.height
-
-                    onPressed:
-                    {
-                        hanoiStage.currentX = disc3.x
-                        hanoiStage.currentY = disc3.y
-                        disc3.z ++
-                    }
-
-                    onReleased:
-                    {
-                        // disc 3 is released over tower1Image
-                        if( Activity.checkdiscOverTower(3,1) )
-                        {
-                            if( (0 != Activity.tower1.length && 3 <= Activity.tower1[Activity.tower1.length-1]) )
-                            {
-                                disc3.x = hanoiStage.currentX
-                                disc3.y = hanoiStage.currentY
-                            }
-
-                            else
-                            {
-                                disc3.x = tower1Image.x - width * .20
-                                disc3.y = tower1Image.y + tower1Image.height * .70 - ( (Activity.tower1.length) *  disc1.height)
-
-                                Activity.popdisc(3)
-
-                                Activity.tower1.push(3)
-                                Activity.discs[3] = 1
-                            }
-                        }
-
-                        // disc 3 is released over tower2Image
-                        else if( Activity.checkdiscOverTower(3,2)  )
-                        {
-                            if( 0 != Activity.tower2.length && 3 <= Activity.tower2[Activity.tower2.length-1] )
-                            {
-                                disc3.x = hanoiStage.currentX
-                                disc3.y = hanoiStage.currentY
-                            }
-
-                            else
-                            {
-                                disc3.x = tower2Image.x - width * .20
-                                disc3.y = tower2Image.y + tower2Image.height * .70 - ( (Activity.tower2.length) *  disc1.height)
-
-                                Activity.popdisc(3)
-
-                                Activity.tower2.push(3)
-                                Activity.discs[3] = 2
-                            }
-                        }
-
-                        // disc 3 is released over tower3Image
-                        else if( Activity.checkdiscOverTower(3,3) )
-                        {
-                            if( 0 != Activity.tower3.length && 3 <= Activity.tower3[Activity.tower3.length-1] )
-                            {
-                                disc3.x = hanoiStage.currentX
-                                disc3.y = hanoiStage.currentY
-                            }
-
-                            else
-                            {
-                                disc3.x = tower3Image.x - width * .20
-                                disc3.y = tower3Image.y + tower3Image.height * .70 - ( (Activity.tower3.length) *  disc1.height)
-
-                                Activity.popdisc(3)
-
-                                Activity.tower3.push(3)
-                                Activity.discs[3] = 3
-                            }
-                        }
-
-                        else
-                        {
-                            disc3.x = hanoiStage.currentX
-                            disc3.y = hanoiStage.currentY
-                        }
-
-                        Activity.disableNonDraggablediscs()
-                        Activity.checkSolved()
-                    }
-                }
-            }
-
-            Image
-            {
-                id: disc4
-                x: tower1Image.x - width * .15
-                y: tower1Image.y + tower1Image.height * .70 - disc1.height - disc2.height - disc3.height
-                source: Activity.url + "disc4.png"
-                height: 0
-
-                MouseArea
-                {
-                    id: discFourMouse
-                    anchors.fill: parent
-                    drag.target: parent
-                    drag.axis: Drag.XandYAxis
-
-                    drag.minimumX: 0
-                    drag.maximumX: hanoiStage.width - parent.width
-
-                    drag.minimumY: 0
-                    drag.maximumY: hanoiStage.height - parent.height
-
-                    onPressed:
-                    {
-                        hanoiStage.currentX = disc4.x
-                        hanoiStage.currentY = disc4.y
-                    }
-
-                    onReleased:
-                    {
-                        // disc 4 is released over tower1Image
-                        if( Activity.checkdiscOverTower(4,1) )
-                        {
-                            if( (0 != Activity.tower1.length && 4 <= Activity.tower1[Activity.tower1.length-1]) )
-                            {
-                                disc4.x = hanoiStage.currentX
-                                disc4.y = hanoiStage.currentY
-                            }
-
-                            else
-                            {
-                                disc4.x = tower1Image.x - width * .20
-                                disc4.y = tower1Image.y + tower1Image.height * .70 - ( (Activity.tower1.length) *  disc1.height)
-
-                                Activity.popdisc(4)
-
-                                Activity.tower1.push(4)
-                                Activity.discs[4] = 1
-                            }
-                        }
-
-                        // disc 4 is released over tower2Image
-                        else if( Activity.checkdiscOverTower(4,2)  )
-                        {
-                            if( 0 != Activity.tower2.length && 4 <= Activity.tower2[Activity.tower2.length-1] )
-                            {
-                                disc4.x = hanoiStage.currentX
-                                disc4.y = hanoiStage.currentY
-                            }
-
-                            else
-                            {
-                                disc4.x = tower2Image.x - width * .20
-                                disc4.y = tower2Image.y + tower2Image.height * .70 - ( (Activity.tower2.length) *  disc1.height)
-
-                                Activity.popdisc(4)
-
-                                Activity.tower2.push(4)
-                                Activity.discs[4] = 2
-                            }
-                        }
-
-                        // disc 4 is released over tower3Image
-                        else if( Activity.checkdiscOverTower(4,3) )
-                        {
-                            if( 0 != Activity.tower3.length && 4 <= Activity.tower3[Activity.tower3.length-1] )
-                            {
-                                disc4.x = hanoiStage.currentX
-                                disc4.y = hanoiStage.currentY
-                            }
-
-                            else
-                            {
-                                disc4.x = tower3Image.x - width * .20
-                                disc4.y = tower3Image.y + tower3Image.height * .70 - ( (Activity.tower3.length) *  disc1.height)
-
-                                Activity.popdisc(4)
-
-                                Activity.tower3.push(4)
-                                Activity.discs[4] = 3
-                            }
-                        }
-
-                        else
-                        {
-                            disc4.x = hanoiStage.currentX
-                            disc4.y = hanoiStage.currentY
-                        }
-
-                        Activity.disableNonDraggablediscs()
-                        Activity.checkSolved()
-                    }
                 }
             }
         }
@@ -569,6 +280,5 @@ ActivityBase {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
-    }
-
+    }    
 }
