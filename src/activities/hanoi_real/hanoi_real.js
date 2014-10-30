@@ -64,11 +64,11 @@ function nextLevel(){
 function previousLevel() {
     if(--currentLevel < 0) {
         currentLevel = numberOfLevel - 1
-        resetForLevelOne()
+        resetToGetLevel(2)
     }
 
     else{
-        resetForLevelTwo()
+        resetToGetLevel(1)
     }
 
     initLevel();
@@ -94,13 +94,16 @@ function placeDiscsAtOriginal()
 
 function disableNonDraggablediscs()
 {
-    for( var i = 1 ; i <= items.totalLevels + 2 ; ++ i ){
+    if( items ) {
 
-        if( (i == tower1[tower1.length-1]) || (i == tower2[tower2.length-1]) || (i == tower3[tower3.length-1]) )
-            items.discRepeater.itemAt(i-1).mouseEnabled = true
+        for( var i = 1 ; i <= items.totalLevels + 2 ; ++ i ){
 
-        else
-            items.discRepeater.itemAt(i-1).mouseEnabled = false       
+            if( (i == tower1[tower1.length-1]) || (i == tower2[tower2.length-1]) || (i == tower3[tower3.length-1]) )
+                items.discRepeater.itemAt(i-1).mouseEnabled = true
+
+            else
+                items.discRepeater.itemAt(i-1).mouseEnabled = false
+        }
     }
 }
 
