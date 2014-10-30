@@ -55,6 +55,9 @@ ActivityBase {
             property alias tower1Image: tower1Image
             property alias tower2Image: tower2Image
             property alias tower3Image: tower3Image
+            property alias tower1ImageHighlight: tower1ImageHighlight
+            property alias tower2ImageHighlight: tower2ImageHighlight
+            property alias tower3ImageHighlight: tower3ImageHighlight
             property int maxDiscs     : 4
             property int totalLevels  : 2
             property int maxZ : 5
@@ -66,11 +69,15 @@ ActivityBase {
         onWidthChanged: {
             for( var i = 0 ; i < items.totalLevels + 2 ; ++i )
                 discRepeater.itemAt(i).reposition()
+
+            Activity.deHighlightTowers()
         }
 
         onHeightChanged: {
             for( var i = 0 ; i < items.totalLevels + 2 ; ++i )
                 discRepeater.itemAt(i).reposition()
+
+            Activity.deHighlightTowers()
         }
 
         Rectangle {
@@ -123,6 +130,20 @@ ActivityBase {
 
                     signal reposition()
 
+                    onXChanged:
+                    {
+                        if( discMouseArea.pressed ) {
+
+                            Activity.deHighlightTowers()
+                            if( Activity.checkIfDiscOnTowerImage(index+1, 1) )
+                                Activity.highlightTower(1)
+                            if( Activity.checkIfDiscOnTowerImage(index+1, 2) )
+                                Activity.highlightTower(2)
+                            if( Activity.checkIfDiscOnTowerImage(index+1, 3) )
+                                Activity.highlightTower(3)
+                        }
+                    }
+
                     Behavior on y {
                              NumberAnimation {
                                  id: bouncebehavior
@@ -132,17 +153,6 @@ ActivityBase {
                                      period: 0.75
                                  }
                              }
-                    }
-
-                    Rectangle
-                    {
-                        anchors{ left: parent.left ; right: parent.right ; top: parent.top ; bottom: parent.bottom ; leftMargin: - 10; rightMargin:  - 10; topMargin:  - 10; bottomMargin:  - 10 }
-                        color: if( 0 == index ) "cyan"
-                               else if ( 1 == index ) "red"
-                               else if ( 2 == index ) "yellow"
-                               else if ( 3 == index ) "lightgreen"
-                        radius: 25
-                        opacity: discMouseArea.pressed ? .5 : 0
                     }
 
                     onReposition: {
@@ -208,7 +218,7 @@ ActivityBase {
                         }
 
                         onReleased: {
-                            if( Activity.getDiscOnTopOfTower(index+1,1) && !(0 != Activity.tower1.length && index+1 <= Activity.tower1[Activity.tower1.length-1]) ) {
+                            if( Activity.checkIfDiscOnTowerImage(index+1,1) && !(0 != Activity.tower1.length && index+1 <= Activity.tower1[Activity.tower1.length-1]) ) {
                                     disc.x = tower1Image.x - width * .18
                                     disc.y = tower1Image.y + tower1Image.height * .70 - ( (Activity.tower1.length) *  disc.height)
 
@@ -218,7 +228,7 @@ ActivityBase {
                                     Activity.discs[index+1] = 1
                             }
 
-                            else if( Activity.getDiscOnTopOfTower(index+1,2) && !( 0 != Activity.tower2.length && index+1 <= Activity.tower2[Activity.tower2.length-1] ) ) {
+                            else if( Activity.checkIfDiscOnTowerImage(index+1,2) && !( 0 != Activity.tower2.length && index+1 <= Activity.tower2[Activity.tower2.length-1] ) ) {
                                     disc.x = tower2Image.x - width * .18
                                     disc.y = tower2Image.y + tower2Image.height * .70 - ( (Activity.tower2.length) *  disc.height)
 
@@ -228,7 +238,7 @@ ActivityBase {
                                     Activity.discs[index+1] = 2
                             }
 
-                            else if( Activity.getDiscOnTopOfTower(index+1,3) && !( 0 != Activity.tower3.length && index+1 <= Activity.tower3[Activity.tower3.length-1] ) ) {
+                            else if( Activity.checkIfDiscOnTowerImage(index+1,3) && !( 0 != Activity.tower3.length && index+1 <= Activity.tower3[Activity.tower3.length-1] ) ) {
                                     disc.x = tower3Image.x - width * .18
                                     disc.y = tower3Image.y + tower3Image.height * .70 - ( (Activity.tower3.length) *  disc.height)
 
@@ -245,6 +255,7 @@ ActivityBase {
 
                             Activity.disableNonDraggablediscs()
                             Activity.checkSolved()
+                            Activity.deHighlightTowers()
                         }
                     }
                 }
@@ -257,6 +268,14 @@ ActivityBase {
                 x: parent.spacing
                 y: parent.spacing / 3
                 source: Activity.url + "disc_support.png"
+
+                Rectangle {
+                    id: tower1ImageHighlight
+                    anchors{ left: parent.left ; right: parent.right ; top: parent.top ; bottom: parent.bottom ; leftMargin: - 10; rightMargin:  - 10; topMargin:  - 10; bottomMargin:  - 10 }
+                    color: "#f1ce86"
+                    radius: 25
+                    opacity: 0
+                }
             }
 
             Image {
@@ -265,6 +284,14 @@ ActivityBase {
                 anchors.top: tower1Image.top
                 anchors.leftMargin: parent.spacing
                 source: Activity.url + "disc_support.png"
+
+                Rectangle {
+                    id: tower2ImageHighlight
+                    anchors{ left: parent.left ; right: parent.right ; top: parent.top ; bottom: parent.bottom ; leftMargin: - 10; rightMargin:  - 10; topMargin:  - 10; bottomMargin:  - 10 }
+                    color: "#f1ce86"
+                    radius: 25
+                    opacity: 0
+                }
             }
 
             Image {
@@ -273,6 +300,14 @@ ActivityBase {
                 anchors.top: tower2Image.top
                 anchors.leftMargin: parent.spacing
                 source: Activity.url + "disc_support.png"
+
+                Rectangle {
+                    id: tower3ImageHighlight
+                    anchors{ left: parent.left ; right: parent.right ; top: parent.top ; bottom: parent.bottom ; leftMargin: - 10; rightMargin:  - 10; topMargin:  - 10; bottomMargin:  - 10 }
+                    color: "#f1ce86"
+                    radius: 25
+                    opacity: 0
+                }
 
                 MouseArea {
                     anchors.fill: parent
