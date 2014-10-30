@@ -123,6 +123,28 @@ ActivityBase {
 
                     signal reposition()
 
+                    Behavior on y {
+                             NumberAnimation {
+                                 id: bouncebehavior
+                                 easing {
+                                     type: Easing.OutElastic
+                                     amplitude: 1.0
+                                     period: 0.75
+                                 }
+                             }
+                    }
+
+                    Rectangle
+                    {
+                        anchors{ left: parent.left ; right: parent.right ; top: parent.top ; bottom: parent.bottom ; leftMargin: - 10; rightMargin:  - 10; topMargin:  - 10; bottomMargin:  - 10 }
+                        color: if( 0 == index ) "cyan"
+                               else if ( 1 == index ) "red"
+                               else if ( 2 == index ) "yellow"
+                               else if ( 3 == index ) "lightgreen"
+                        radius: 25
+                        opacity: discMouseArea.pressed ? .5 : 0
+                    }
+
                     onReposition: {
                         var position;
                         var newX;
@@ -164,6 +186,7 @@ ActivityBase {
                             else if ( 3 == index ) Activity.url + "disc4.png"
 
                     MouseArea {
+                        id: discMouseArea
                         enabled: parent.mouseEnabled
                         anchors.fill: parent
                         drag.target: parent
