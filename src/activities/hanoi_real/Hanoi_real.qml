@@ -149,6 +149,7 @@ ActivityBase {
 
                          disc.x = newX - disc.width * .18
                          disc.y = newY + tower1Image.height * .70 - ((position-1) *  disc.height)
+                         Activity.disableNonDraggablediscs()
                     }
 
                     x: 20 * index
