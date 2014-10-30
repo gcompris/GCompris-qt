@@ -47,17 +47,15 @@ function initLevel() {
     items.bar.level = currentLevel + 1
 }
 
-function nextLevel()
-{
-    if(numberOfLevel <= ++currentLevel )
-    {
+function nextLevel(){
+
+    if(numberOfLevel <= ++currentLevel ){
         currentLevel = 0
-        resetForLevelTwo()
+        resetToGetLevel(1)
     }
 
-    else
-    {
-        resetForLevelOne()
+    else{
+        resetToGetLevel(2)
     }
 
     initLevel();
@@ -69,15 +67,14 @@ function previousLevel() {
         resetForLevelOne()
     }
 
-    else
-    {
+    else{
         resetForLevelTwo()
     }
 
     initLevel();
 }
 
-function popdisc(disc)
+function popDisc(disc)
 {
     if( 1 == discs[disc] )
         tower1.pop()
@@ -87,166 +84,105 @@ function popdisc(disc)
         tower3.pop()
 }
 
-function placediscsAtOriginal()
+function placeDiscsAtOriginal()
 {
-    items.disc1.x = items.tower1Image.x - items.disc1.width * .20
-    items.disc1.y = items.tower1Image.y + items.tower1Image.height * .70
-
-    items.disc2.x = items.tower1Image.x - items.disc2.width * .18
-    items.disc2.y = items.tower1Image.y + items.tower1Image.height * .70 - items.disc1.height
-
-    items.disc3.x = items.tower1Image.x - items.disc3.width * .15
-    items.disc3.y = items.tower1Image.y + items.tower1Image.height * .70 - items.disc1.height - items.disc2.height
-
-    items.disc4.x = items.tower1Image.x - items.disc4.width * .15
-    items.disc4.y = items.tower1Image.y + items.tower1Image.height * .70 - items.disc1.height - items.disc2.height - items.disc3.height
+    for( var i = 0 ; i < items.totalLevels + 2 ; ++i ){
+        items.discRepeater.itemAt(i).discX = items.tower1Image.x - items.discRepeater.itemAt(0).discWidth * (.20 - i * .04 )
+        items.discRepeater.itemAt(i).discY = items.tower1Image.y + items.tower1Image.height * .70 - ( i * items.discRepeater.itemAt(1).discHeight )
+    }
 }
 
-/*
-    Disables the mouse drags for discs which are not on top of towers
-*/
 function disableNonDraggablediscs()
 {
-    if( (1 == tower1[tower1.length-1]) || (1 == tower2[tower2.length-1]) || (1 == tower3[tower3.length-1]) )
-        items.discOneMouse.enabled = true
-    else
-        items.discOneMouse.enabled = false
+    for( var i = 1 ; i <= items.totalLevels + 2 ; ++ i ){
 
-    if( (2 == tower1[tower1.length-1]) || (2 == tower2[tower2.length-1]) || (2 == tower3[tower3.length-1]) )
-        items.discTwoMouse.enabled = true
-    else
-        items.discTwoMouse.enabled = false
+        if( (i == tower1[tower1.length-1]) || (i == tower2[tower2.length-1]) || (i == tower3[tower3.length-1]) )
+            items.discRepeater.itemAt(i-1).mouseEnabled = true
 
-    if( (3 == tower1[tower1.length-1]) || (3 == tower2[tower2.length-1]) || (3 == tower3[tower3.length-1]) )
-        items.discThreeMouse.enabled = true
-    else
-        items.discThreeMouse.enabled = false
-
-    if( (4 == tower1[tower1.length-1]) || (4 == tower2[tower2.length-1]) || (4 == tower3[tower3.length-1]) )
-        items.discFourMouse.enabled = true
-    else
-        items.discFourMouse.enabled = false
-}
-
-/*
-    Calculates if disc is present on the top of given tower
-*/
-function checkdiscOverTower(disc, tower)
-{
-    if( 1 === disc)
-    {
-        if( 1 == tower )
-        return !(( (items.disc1.x + items.disc1.width) < (items.tower1Image.x) ) || ( items.disc1.x > items.tower1Image.x + items.tower1Image.width ))
-
-        else if( 2 == tower )
-            return !(( (items.disc1.x + items.disc1.width) < (items.tower2Image.x) ) || ( items.disc1.x > items.tower2Image.x + items.tower2Image.width ))
-
-        else if( 3 == tower )
-            return !(( (items.disc1.x + items.disc1.width) < (items.tower3Image.x) ) || ( items.disc1.x > items.tower3Image.x + items.tower3Image.width ))
-    }
-
-    else if( 2 === disc)
-    {
-        if( 1 == tower )
-        return !(( (items.disc2.x + items.disc2.width) < (items.tower1Image.x) ) || ( items.disc2.x > items.tower1Image.x + items.tower1Image.width ))
-
-        else if( 2 == tower )
-            return !(( (items.disc2.x + items.disc2.width) < (items.tower2Image.x) ) || ( items.disc2.x > items.tower2Image.x + items.tower2Image.width ))
-
-        else if( 3 == tower )
-            return !(( (items.disc2.x + items.disc2.width) < (items.tower3Image.x) ) || ( items.disc2.x > items.tower3Image.x + items.tower3Image.width ))
-    }
-
-    else if( 3 === disc)
-    {
-        if( 1 == tower )
-        return !(( (items.disc3.x + items.disc3.width) < (items.tower1Image.x) ) || ( items.disc3.x > items.tower1Image.x + items.tower1Image.width ))
-
-        else if( 2 == tower )
-            return !(( (items.disc3.x + items.disc3.width) < (items.tower2Image.x) ) || ( items.disc3.x > items.tower2Image.x + items.tower2Image.width ))
-
-        else if( 3 == tower )
-            return !(( (items.disc3.x + items.disc3.width) < (items.tower3Image.x) ) || ( items.disc3.x > items.tower3Image.x + items.tower3Image.width ))
-    }
-
-    else if( 4 === disc && items.disc4.height != 0)
-    {
-        if( 1 == tower )
-        return !(( (items.disc4.x + items.disc4.width) < (items.tower1Image.x) ) || ( items.disc4.x > items.tower1Image.x + items.tower1Image.width ))
-
-        else if( 2 == tower )
-            return !(( (items.disc4.x + items.disc4.width) < (items.tower2Image.x) ) || ( items.disc4.x > items.tower2Image.x + items.tower2Image.width ))
-
-        else if( 3 == tower )
-            return !(( (items.disc4.x + items.disc4.width) < (items.tower3Image.x) ) || ( items.disc4.x > items.tower3Image.x + items.tower3Image.width ))
+        else
+            items.discRepeater.itemAt(i-1).mouseEnabled = false       
     }
 }
 
-function resetForLevelOne()
+function getDiscPositionInTower(disc, tower)
 {
-    placediscsAtOriginal()
+    for( var i = 0 ; i < tower.length ; ++i ){
+        if( tower[i] == disc )
+            return i+1;
+    }
 
-    items.disc4.height = items.disc3.height
+    return -1;
+}
+
+function checkDiscInTower(disc, tower)
+{
+    for( var i = 0 ; i < tower.length ; ++i ){
+        if( tower[i] == disc )
+            return true;
+    }
+
+    return false;
+}
+
+function getDiscOnTopOfTower(disc, tower)
+{
+    for( var i = 1 ; i <= items.totalLevels + 2 ; ++ i )
+    {
+        if( i === disc){
+            if( 1 == tower )
+                return !(( (items.discRepeater.itemAt(i-1).discX + items.discRepeater.itemAt(i-1).discWidth) < (items.tower1Image.x) ) || ( items.discRepeater.itemAt(i-1).discX > items.tower1Image.x + items.tower1Image.width ))
+
+            else if( 2 == tower )
+                return !(( (items.discRepeater.itemAt(i-1).discX + items.discRepeater.itemAt(i-1).discWidth) < (items.tower2Image.x) ) || ( items.discRepeater.itemAt(i-1).discX > items.tower2Image.x + items.tower2Image.width ))
+
+            else if( 3 == tower )
+                return !(( (items.discRepeater.itemAt(i-1).discX + items.discRepeater.itemAt(i-1).discWidth) < (items.tower3Image.x) ) || ( items.discRepeater.itemAt(i-1).discX > items.tower3Image.x + items.tower3Image.width ))
+        }
+    }
+}
+
+function resetToGetLevel(level){
+
+    placeDiscsAtOriginal()
+
+    for( var i = 0 ; i < level+1 ; ++i )
+        items.discRepeater.itemAt(i).opacity = 1    
+
+    for( i = level+1 ; i < items.totalLevels + 2 ; ++i )
+        items.discRepeater.itemAt(i).opacity = 0
+
+    items.discRepeater.itemAt(1+level).opacity = 1
+    items.discRepeater.itemAt(1+level).opacity = 1
 
     tower1 = []
     tower2 = []
     tower3 = []
+    discs  = []
 
-    tower1.push(1)
-    tower1.push(2)
-    tower1.push(3)
-    tower1.push(4)
-    disableNonDraggablediscs()
+    for( i = 1 ; i <= 2+level; ++ i ) {
+        tower1.push(i)
+        discs.push(1)
+    }
 
     discs.push(1)
-    discs[0] = discs[1] = discs[2] = discs[3] = discs[4] = 1
+    disableNonDraggablediscs()
 }
 
-function resetForLevelTwo()
-{
-    placediscsAtOriginal()
+function checkSolved() {
 
-    items.disc4.height = 0
+    if ( 0 == currentLevel ) {
 
-    tower1 = []
-    tower2 = []
-    tower3 = []
-
-    tower1.push(1)
-    tower1.push(2)
-    tower1.push(3)
-
-    disableNonDraggablediscs()
-
-    discs = []
-    discs.push(1)
-    discs.push(1)
-    discs.push(1)
-    discs.push(1)
-}
-
-function checkSolved()
-{
-    if ( 0 == currentLevel )
-    {
-        if( 3 == tower3.length && tower3[0] == 1 && tower3[1] == 2 && tower3[2] == 3 )
-        {
+        if( 3 == tower3.length && tower3[0] == 1 && tower3[1] == 2 && tower3[2] == 3 ) {
             items.bonus.good("flower")
-            resetForLevelOne()
+            resetToGetLevel(2)
         }
     }
 
-    else if ( 1 == currentLevel )
-    {
-        if( 4 == tower3.length && tower3[0] == 1 && tower3[1] == 2 && tower3[2] == 3 && tower3[3] == 4 )
-        {
-            items.bonus.good("flower")
-            resetForLevelTwo()
-        }
-    }
+    else if ( 1 == currentLevel ) {
 
-    else
-    {
-        console.log("Invalid level request")
+        if( 4 == tower3.length && tower3[0] == 1 && tower3[1] == 2 && tower3[2] == 3 && tower3[3] == 4 ) {
+            items.bonus.good("flower")
+            resetToGetLevel(1)
+        }
     }
 }
