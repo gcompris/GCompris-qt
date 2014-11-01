@@ -98,10 +98,10 @@ ActivityBase {
                 anchors { bottom: parent.bottom ; bottomMargin: parent.height * .065 }
 
                 Text {
-                    id: name
+                    id: description
                     text: qsTr("Move the entire stack to the right peg, one disc at a time.")
                     width: parent.width * .70
-                    font.pixelSize: name.width > 300 ? 25 : 20
+                    font.pixelSize: description.width > 300 ? 25 : 20
                     wrapMode: Text.WordWrap
                     color: "white"                    
                     anchors.centerIn: parent
@@ -186,7 +186,7 @@ ActivityBase {
                     y: 20 * index
                     z: tower1Image.z + 1
 
-                    //opacity: index >= 3 ? 0 : 1
+                    opacity: index >= 3 ? 0 : 1
 
                     source: if( 0 == index ) Activity.url + "disc1.png"
                             else if ( 1 == index ) Activity.url + "disc2.png"
@@ -267,12 +267,23 @@ ActivityBase {
                 y: parent.spacing / 3
                 source: Activity.url + "disc_support.png"
 
-                Rectangle {
+                Colorize {
                     id: tower1ImageHighlight
-                    anchors{ left: parent.left ; right: parent.right ; top: parent.top ; bottom: parent.bottom ; leftMargin: - 10; rightMargin:  - 10; topMargin:  - 10; bottomMargin:  - 10 }
-                    color: "#f1ce86"
-                    radius: 25
+                    anchors.fill: parent
+                    source: parent
+                    hue: 0.4
+                    saturation: 1
+                    lightness: .5
+                    cached: true
                     opacity: 0
+
+                        Behavior on opacity
+                        {
+                                 PropertyAnimation {
+                                            duration: 150
+                                     }
+                        }
+
                 }
             }
 
@@ -283,12 +294,23 @@ ActivityBase {
                 anchors.leftMargin: parent.spacing
                 source: Activity.url + "disc_support.png"
 
-                Rectangle {
+                Colorize {
                     id: tower2ImageHighlight
-                    anchors{ left: parent.left ; right: parent.right ; top: parent.top ; bottom: parent.bottom ; leftMargin: - 10; rightMargin:  - 10; topMargin:  - 10; bottomMargin:  - 10 }
-                    color: "#f1ce86"
-                    radius: 25
+                    anchors.fill: parent
+                    source: parent
+                    hue: 0.4
+                    saturation: 1
+                    lightness: .5
+                    cached: true
                     opacity: 0
+
+                        Behavior on opacity
+                        {
+                                 PropertyAnimation {
+                                            duration: 150
+                                     }
+                        }
+
                 }
             }
 
@@ -299,25 +321,38 @@ ActivityBase {
                 anchors.leftMargin: parent.spacing
                 source: Activity.url + "disc_support.png"
 
-                Rectangle {
+                Colorize {
                     id: tower3ImageHighlight
-                    anchors{ left: parent.left ; right: parent.right ; top: parent.top ; bottom: parent.bottom ; leftMargin: - 10; rightMargin:  - 10; topMargin:  - 10; bottomMargin:  - 10 }
-                    color: "#f1ce86"
-                    radius: 25
+                    anchors.fill: parent
+                    source: parent
+                    hue: 0.4
+                    saturation: 1
+                    lightness: .5
+                    cached: true
                     opacity: 0
+
+                        Behavior on opacity
+                        {
+                                 PropertyAnimation {
+                                            duration: 150
+                                     }
+                        }
+                }
+
+                Colorize {
+                    id: tower3ImageHighlightGlow
+                    anchors.fill: parent
+                    source: parent
+                    hue: 1.0
+                    saturation:  1
+                    lightness:   0
+                    cached: true
+                    opacity: tower3ImageHighlight.opacity == 0 ? .5 : 0
                 }
 
                 MouseArea {
                     anchors.fill: parent
                     onClicked: Activity.placeDiscsAtOriginal()
-                }
-
-                Rectangle {
-                    color: "pink"
-                    radius: 25
-                    opacity: .50
-                    anchors{ left: parent.left ; right : parent.right ; bottom:  parent.bottom ; top: parent.top ; leftMargin: -25 ; rightMargin:  -25; topMargin:  -25 ; bottomMargin:  -25  }
-                    z: -1
                 }
             }
         }
