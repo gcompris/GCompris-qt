@@ -105,11 +105,10 @@ ActivityBase {
                 }
             }
 
-            Repeater {
+            Repeater
+            {
                 id: discRepeater
                 model : items.totalLevels + 2
-                x: 100
-                y: 100
 
                 Image {
                     id: disc
@@ -125,8 +124,7 @@ ActivityBase {
 
                     signal reposition()
 
-                    onXChanged:
-                    {
+                    onXChanged: {
                         if( discMouseArea.pressed ) {
 
                             Activity.deHighlightTowers()
@@ -174,7 +172,7 @@ ActivityBase {
                              position = Activity.getDiscPositionInTower( index+1, Activity.tower3 )
                          }
 
-                         disc.x = newX - disc.width * .18
+                         disc.x = newX - items.discRepeater.itemAt(0).discWidth * (.22 - index * .05 )
                          disc.y = newY + tower1Image.height * .70 - ((position-1) *  disc.height)
                          Activity.disableNonDraggablediscs()
                     }
@@ -183,7 +181,7 @@ ActivityBase {
                     y: 20 * index
                     z: tower1Image.z + 1
 
-                    opacity: index >= 3 ? 0 : 1
+                    //opacity: index >= 3 ? 0 : 1
 
                     source: if( 0 == index ) Activity.url + "disc1.png"
                             else if ( 1 == index ) Activity.url + "disc2.png"
@@ -214,7 +212,7 @@ ActivityBase {
 
                         onReleased: {
                             if( Activity.checkIfDiscOnTowerImage(index+1,1) && !(0 != Activity.tower1.length && index+1 <= Activity.tower1[Activity.tower1.length-1]) ) {
-                                    disc.x = tower1Image.x - width * .18
+                                    disc.x = tower1Image.x - items.discRepeater.itemAt(0).discWidth * (.22 - index * .05 )
                                     disc.y = tower1Image.y + tower1Image.height * .70 - ( (Activity.tower1.length) *  disc.height)
 
                                     Activity.popDisc(index+1)
@@ -224,7 +222,7 @@ ActivityBase {
                             }
 
                             else if( Activity.checkIfDiscOnTowerImage(index+1,2) && !( 0 != Activity.tower2.length && index+1 <= Activity.tower2[Activity.tower2.length-1] ) ) {
-                                    disc.x = tower2Image.x - width * .18
+                                    disc.x = tower2Image.x - items.discRepeater.itemAt(0).discWidth * (.22 - index * .05 )
                                     disc.y = tower2Image.y + tower2Image.height * .70 - ( (Activity.tower2.length) *  disc.height)
 
                                     Activity.popDisc(index+1)
@@ -234,7 +232,7 @@ ActivityBase {
                             }
 
                             else if( Activity.checkIfDiscOnTowerImage(index+1,3) && !( 0 != Activity.tower3.length && index+1 <= Activity.tower3[Activity.tower3.length-1] ) ) {
-                                    disc.x = tower3Image.x - width * .18
+                                    disc.x = tower3Image.x - items.discRepeater.itemAt(0).discWidth * (.22 - index * .05 )
                                     disc.y = tower3Image.y + tower3Image.height * .70 - ( (Activity.tower3.length) *  disc.height)
 
                                     Activity.popDisc(index+1)
