@@ -85,8 +85,8 @@ function popDisc(disc) {
 
 function placeDiscsAtOriginal() {
     for( var i = 0 ; i < items.totalLevels + 2 ; ++i ){
-        items.discRepeater.itemAt(i).discX = items.tower1Image.x - items.discRepeater.itemAt(0).discWidth * (.20 - i * .04 )
-        items.discRepeater.itemAt(i).discY = items.tower1Image.y + items.tower1Image.height * .70 - ( i * items.discRepeater.itemAt(1).discHeight )
+        items.discRepeater.itemAt(i).discX = items.tower1Image.x - items.discRepeater.itemAt(0).discWidth * (.22 - i * .05 )
+        items.discRepeater.itemAt(i).discY = items.tower1Image.y + items.tower1Image.height * .70 - ( i * items.discRepeater.itemAt(3).discHeight )
     }
 }
 
