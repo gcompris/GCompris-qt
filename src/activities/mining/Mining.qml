@@ -131,7 +131,9 @@ ActivityBase {
                         Image {
                             id: nugget
                             source: Activity.url + "gold_nugget.svg"
-                            sourceSize.width: mineObjects.cellWidth * 0.2
+                            sourceSize.width: mineObjects.cellWidth * 3
+                            width: mineObjects.cellWidth * modelData.widthFactor / 2
+                            height: mineObjects.cellHeight * modelData.widthFactor / 2
                             anchors.horizontalCenter: parent.horizontalCenter
                             anchors.verticalCenter: parent.verticalCenter
                             opacity: modelData.isTarget &&
