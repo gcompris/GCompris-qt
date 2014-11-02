@@ -116,7 +116,20 @@ ActivityBase {
                     delegate: Item {
                         width: mineObjects.cellWidth
                         height: mineObjects.cellHeight
+                        signal hit(real x, real y)
+
+                        onHit: {
+                            if(!mouseArea.enabled)
+                                return
+
+                            var point = parent.mapToItem(nugget, x, y)
+                            if(point.x > 0 && point.x < nugget.width &&
+                               point.y > 0 && point.y < nugget.height)
+                                nugget.hit()
+                        }
+
                         Image {
+                            id: nugget
                             source: Activity.url + "gold_nugget.svg"
                             sourceSize.width: mineObjects.cellWidth * 0.2
                             anchors.horizontalCenter: parent.horizontalCenter
@@ -124,14 +137,19 @@ ActivityBase {
                             opacity: modelData.isTarget &&
                                      miningBg.scale === miningBg._MAX_SCALE &&
                                      !background.gotIt ? 1 : 0
+
+                            signal hit
+                            onHit: {
+                                activity.audioEffects.play(Activity.url + "pickaxe.ogg")
+                                background.gotIt = true
+                            }
+
                             MouseArea {
+                                id: mouseArea
                                 anchors.fill: parent
                                 enabled: modelData.isTarget &&
                                          miningBg.scale === miningBg._MAX_SCALE
-                                onClicked: {
-                                    activity.audioEffects.play(Activity.url + "pickaxe.ogg")
-                                    background.gotIt = true
-                                }
+                                onClicked: parent.hit()
                             }
 
                             Behavior on opacity { PropertyAnimation { duration: 1000 } }
@@ -223,7 +241,7 @@ ActivityBase {
                 MultiPointTouchArea {
                     anchors.fill: parent
                     mouseEnabled: false
-                    minimumTouchPoints: 2
+                    minimumTouchPoints: 1
                     maximumTouchPoints: 2
                     // To determine if we zoom or unzoom
                     property int prevDist: 0
@@ -235,6 +253,10 @@ ActivityBase {
                            ]
                     onReleased: prevDist = 0
                     onTouchUpdated: {
+                        if(!point2.pressed) {
+                            mineObjects.itemAt(point1.x, point1.y).hit(point1.x, point1.y)
+                            return
+                        }
                         // Calc Distance
                         var dist = Math.floor(Math.sqrt(Math.pow(point1.x - point2.x, 2) +
                                                         Math.pow(point1.y - point2.y, 2)))
