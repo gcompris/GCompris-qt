@@ -65,7 +65,7 @@ ActivityBase {
             property int maxZ : 5
         }
 
-        onStart: { Activity.start(items) ; Activity.placeDiscsAtOriginal() }
+        onStart: { Activity.start(items) ; Activity.resetToGetLevel(1) }
         onStop : { Activity.stop()       }
 
         onWidthChanged: {
@@ -118,6 +118,7 @@ ActivityBase {
                 Image {
                     id: disc
                     parent: hanoiStage
+                    opacity: index >= 3 ? 0 : 1
 
                     property alias discX: disc.x
                     property alias discY: disc.y
@@ -185,8 +186,6 @@ ActivityBase {
                     x: 20 * index
                     y: 20 * index
                     z: tower1Image.z + 1
-
-                    opacity: index >= 3 ? 0 : 1
 
                     source: if( 0 == index ) Activity.url + "disc1.png"
                             else if ( 1 == index ) Activity.url + "disc2.png"
