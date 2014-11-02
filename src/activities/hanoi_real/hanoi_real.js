@@ -84,7 +84,7 @@ function popDisc(disc) {
 }
 
 function placeDiscsAtOriginal() {
-    for( var i = 0 ; i < items.totalLevels + 2 ; ++i ){
+    for( var i = 0 ; i < numberOfLevel + 2 ; ++i ){
         items.discRepeater.itemAt(i).discX = items.tower1Image.x - items.discRepeater.itemAt(0).discWidth * (.22 - i * .05 )
         items.discRepeater.itemAt(i).discY = items.tower1Image.y + items.tower1Image.height * .70 - ( i * items.discRepeater.itemAt(3).discHeight )
     }
@@ -93,7 +93,7 @@ function placeDiscsAtOriginal() {
 function disableNonDraggablediscs() {
     if( items ) {
 
-        for( var i = 1 ; i <= items.totalLevels + 2 ; ++ i ){
+        for( var i = 1 ; i <= numberOfLevel + 2 ; ++ i ){
 
             if( (i == tower1[tower1.length-1]) || (i == tower2[tower2.length-1]) || (i == tower3[tower3.length-1]) )
                 items.discRepeater.itemAt(i-1).mouseEnabled = true
@@ -143,7 +143,7 @@ function checkIfDiscOnTowerImage(disc, tower) {
 
     if( items ) {
 
-        for( var i = 1 ; i <= items.totalLevels + 2 ; ++ i )
+        for( var i = 1 ; i <= numberOfLevel + 2 ; ++ i )
         {
             if( i === disc){
                 if( 1 == tower )
@@ -166,7 +166,7 @@ function resetToGetLevel(level){
     for( var i = 0 ; i < level+1 ; ++i )
         items.discRepeater.itemAt(i).opacity = 1    
 
-    for( i = level+1 ; i < items.totalLevels + 2 ; ++i )
+    for( i = level+1 ; i < numberOfLevel + 2 ; ++i )
         items.discRepeater.itemAt(i).opacity = 0
 
     items.discRepeater.itemAt(1+level).opacity = 1

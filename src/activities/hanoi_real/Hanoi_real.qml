@@ -61,7 +61,6 @@ ActivityBase {
             property alias tower2ImageHighlight: tower2ImageHighlight
             property alias tower3ImageHighlight: tower3ImageHighlight
             property int maxDiscs     : 4
-            property int totalLevels  : 2
             property int maxZ : 5
         }
 
@@ -69,14 +68,14 @@ ActivityBase {
         onStop : { Activity.stop()       }
 
         onWidthChanged: {
-            for( var i = 0 ; i < items.totalLevels + 2 ; ++i )
+            for( var i = 0 ; i < Activity.numberOfLevel + 2 ; ++i )
                 discRepeater.itemAt(i).reposition()
 
             Activity.deHighlightTowers()
         }
 
         onHeightChanged: {
-            for( var i = 0 ; i < items.totalLevels + 2 ; ++i )
+            for( var i = 0 ; i < Activity.numberOfLevel + 2 ; ++i )
                 discRepeater.itemAt(i).reposition()
 
             Activity.deHighlightTowers()
@@ -113,7 +112,7 @@ ActivityBase {
             Repeater
             {
                 id: discRepeater
-                model : items.totalLevels + 2
+                model : Activity.numberOfLevel + 2
 
                 Image {
                     id: disc
