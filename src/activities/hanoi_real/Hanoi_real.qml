@@ -133,12 +133,29 @@ ActivityBase {
                         if( discMouseArea.pressed ) {
 
                             Activity.deHighlightTowers()
-                            if( Activity.checkIfDiscOnTowerImage(index+1, 1) )
+
+                            var currentTower = 1
+
+                            if( Activity.getDiscPositionInTower(index+1, Activity.tower2) == Activity.tower2.length ) {
+                                currentTower = 2
+                            }
+
+                            else if( Activity.getDiscPositionInTower(index+1, Activity.tower3) == Activity.tower3.length ) {
+                                currentTower = 3
+                            }
+
+                            if( Activity.checkIfDiscOnTowerImage(index+1, 1)      && 1 != currentTower ) {
                                 Activity.highlightTower(1)
-                            if( Activity.checkIfDiscOnTowerImage(index+1, 2) )
+                            }
+                            else if( Activity.checkIfDiscOnTowerImage(index+1, 2) && 2 != currentTower ) {
                                 Activity.highlightTower(2)
-                            if( Activity.checkIfDiscOnTowerImage(index+1, 3) )
+                            }
+                            else if( Activity.checkIfDiscOnTowerImage(index+1, 3) && 3 != currentTower ) {
                                 Activity.highlightTower(3)
+                            }
+                            else {
+                                Activity.highlightTower(currentTower)
+                            }
                         }
                     }
 
