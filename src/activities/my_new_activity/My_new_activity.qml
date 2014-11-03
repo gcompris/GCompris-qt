@@ -55,6 +55,14 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         Text {
+            text: "<b>Press the arrow keys to move the rectangle</b>"
+            font.pointSize: 24
+            x: parent.width*0.3
+            y: parent.height*0.1
+            color: "#000000"
+        }
+
+        Text {
             anchors.centerIn: parent
             text: "Pikachu"
             font.pointSize: 24
@@ -62,24 +70,37 @@ ActivityBase {
         }
 
         Rectangle {
-//            anchors.centerIn: parent
+            id: rect
+            height: parent.height/13
+            width: parent.width/8
+            color: "lightgreen"
 
-            height:120
-            width: 200
-            color: "red"
+            x: parent.width*0.3
+            y: parent.height*0.5
 
-            x: 500
-            y:400
 
             radius: 20
             border.width: 10
+            border.color: "red"
+
+            Behavior on x { SmoothedAnimation { velocity: 200} }
+            Behavior on y { SmoothedAnimation { velocity: 200} }
         }
+
+
+
+         focus: true
+         Keys.onRightPressed: rect.x = rect.x + 100
+         Keys.onLeftPressed: rect.x = rect.x - 100
+         Keys.onUpPressed: rect.y = rect.y - 100
+         Keys.onDownPressed: rect.y = rect.y + 100
+
 
         Image {
             id: pikachu
             source: "qrc:/gcompris/src/activities/my_new_activity/resource/pikachu.jpg"
 
-            height: parent.height/9
+            height: parent.height/7
             width: parent.width/9
 
             x: parent.width*0.7
