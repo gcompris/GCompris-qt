@@ -74,6 +74,109 @@ function previousLevel() {
     initLevel();
 }
 
+function repositionDiscs(index)
+{
+    var position;
+    var newX;
+    var newY;
+
+     if( checkDiscInTower(index+1, tower1) ){
+
+         newX = items.tower1Image.x
+         newY = items.tower1Image.y
+         position = getDiscPositionInTower( index+1, tower1 )
+     }
+     else if( checkDiscInTower(index+1, tower2) ){
+
+         newX = items.tower2Image.x
+         newY = items.tower2Image.y
+         position = getDiscPositionInTower( index+1, tower2 )
+     }
+     else if( checkDiscInTower(index+1, tower3) ){
+
+         newX = items.tower3Image.x
+         newY = items.tower3Image.y
+         position = getDiscPositionInTower( index+1, tower3 )
+     }
+
+     items.discRepeater.itemAt(index).x = newX - items.discRepeater.itemAt(0).discWidth * (.22 - index * .05 )
+     items.discRepeater.itemAt(index).y = newY + items.tower1Image.height * .70 - ((position-1) *  items.discRepeater.itemAt(index).height)
+     disableNonDraggablediscs()
+}
+
+function discReleased(index)
+{
+    if( checkIfDiscOnTowerImage(index+1,1) && !(0 != tower1.length && index+1 <= tower1[tower1.length-1]) ) {
+            items.discRepeater.itemAt(index).x = items.tower1Image.x - items.discRepeater.itemAt(0).discWidth * (.22 - index * .05 )
+            items.discRepeater.itemAt(index).y = items.tower1Image.y + items.tower1Image.height * .70 - ( (tower1.length) *  items.discRepeater.itemAt(index).height)
+
+            popDisc(index+1)
+
+            tower1.push(index+1)
+            discs[index+1] = 1
+    }
+
+    else if( checkIfDiscOnTowerImage(index+1,2) && !( 0 != tower2.length && index+1 <= tower2[tower2.length-1] ) ) {
+            items.discRepeater.itemAt(index).x = items.tower2Image.x - items.discRepeater.itemAt(0).discWidth * (.22 - index * .05 )
+            items.discRepeater.itemAt(index).y = items.tower2Image.y + items.tower2Image.height * .70 - ( (tower2.length) *  items.discRepeater.itemAt(index).height)
+
+            popDisc(index+1)
+
+            tower2.push(index+1)
+            discs[index+1] = 2
+    }
+
+    else if( checkIfDiscOnTowerImage(index+1,3) && !( 0 != tower3.length && index+1 <= tower3[tower3.length-1] ) ) {
+            items.discRepeater.itemAt(index).x = items.tower3Image.x - items.discRepeater.itemAt(0).discWidth * (.22 - index * .05 )
+            items.discRepeater.itemAt(index).y = items.tower3Image.y + items.tower3Image.height * .70 - ( (tower3.length) *  items.discRepeater.itemAt(index).height)
+
+            popDisc(index+1)
+
+            tower3.push(index+1)
+            discs[index+1] = 3
+    }
+
+    else {
+        items.discRepeater.itemAt(index).x = items.hanoiStage.currentX
+        items.discRepeater.itemAt(index).y = items.hanoiStage.currentY
+    }
+
+    disableNonDraggablediscs()
+    checkSolved()
+    deHighlightTowers()
+}
+
+function performTowersHighlight(index)
+{
+    if( items && items.discRepeater.itemAt(index).discMouseArea.pressed ) {
+
+        deHighlightTowers()
+
+        var currentTower = 1
+
+        if( getDiscPositionInTower(index+1, tower2) == tower2.length ) {
+            currentTower = 2
+        }
+
+        else if( getDiscPositionInTower(index+1, tower3) == tower3.length ) {
+            currentTower = 3
+        }
+
+        if( checkIfDiscOnTowerImage(index+1, 1) && 1 != currentTower ) {
+            highlightTower(1)
+        }
+        else if( checkIfDiscOnTowerImage(index+1, 2) && 2 != currentTower ) {
+            highlightTower(2)
+        }
+        else if( checkIfDiscOnTowerImage(index+1, 3) && 3 != currentTower ) {
+            highlightTower(3)
+        }
+        else {
+            highlightTower(currentTower)
+        }
+    }
+}
+
 function popDisc(disc) {
     if( 1 == discs[disc] )
         tower1.pop()
@@ -81,6 +184,16 @@ function popDisc(disc) {
         tower2.pop()
     else if( 3 == discs[disc] )
         tower3.pop()
+}
+
+function sceneSizeChanged()
+{
+    if( items ) {
+        for( var i = 0 ; i < numberOfLevel + 2 ; ++i )
+            items.discRepeater.itemAt(i).reposition()
+
+        deHighlightTowers()
+    }
 }
 
 function placeDiscsAtOriginal() {
