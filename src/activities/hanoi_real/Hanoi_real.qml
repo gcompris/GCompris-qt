@@ -20,6 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.3
+import QtGraphicalEffects 1.0
 
 import "../../core"
 import "hanoi_real.js" as Activity
@@ -60,24 +61,14 @@ ActivityBase {
             property alias tower3ImageHighlight: tower3ImageHighlight
             property int maxDiscs     : 4
             property int maxZ : 5
+            property real sceneScale : (hanoiStage.width + hanoiStage.height) * .0009
         }
 
         onStart: { Activity.start(items) ; Activity.resetToGetLevel(1) }
         onStop : { Activity.stop()       }
 
-        onWidthChanged: {
-            for( var i = 0 ; i < Activity.numberOfLevel + 2 ; ++i )
-                discRepeater.itemAt(i).reposition()
-
-            Activity.deHighlightTowers()
-        }
-
-        onHeightChanged: {
-            for( var i = 0 ; i < Activity.numberOfLevel + 2 ; ++i )
-                discRepeater.itemAt(i).reposition()
-
-            Activity.deHighlightTowers()
-        }
+        onWidthChanged : Activity.sceneSizeChanged()
+        onHeightChanged: Activity.sceneSizeChanged()
 
         Rectangle {
             id: hanoiStage
@@ -92,15 +83,15 @@ ActivityBase {
 
             Rectangle {
                 width: parent.width
-                height: parent.height * .20
+                height: parent.height * .15
                 color: "#527BBD"
                 anchors { bottom: parent.bottom ; bottomMargin: parent.height * .065 }
 
                 Text {
                     id: description
                     text: qsTr("Move the entire stack to the right peg, one disc at a time.")
-                    width: parent.width * .70
-                    font.pixelSize: description.width > 300 ? 25 : 20
+                    width: parent.width
+                    font.pointSize: description.width > 300 ? 18 : 15
                     wrapMode: Text.WordWrap
                     color: "white"                    
                     anchors.centerIn: parent
@@ -117,47 +108,29 @@ ActivityBase {
                 Image {
                     id: disc
                     parent: hanoiStage
+                    x: 20 * index
+                    y: 20 * index
+                    z: tower1Image.z + 1
+
+                    source: if( 0 == index ) Activity.url + "disc1.png"
+                            else if ( 1 == index ) Activity.url + "disc2.png"
+                            else if ( 2 == index ) Activity.url + "disc3.png"
+                            else if ( 3 == index ) Activity.url + "disc4.png"
+
                     opacity: index >= 3 ? 0 : 1
+
+                    property bool mouseEnabled : true
 
                     property alias discX: disc.x
                     property alias discY: disc.y
+                    property alias discMouseArea: discMouseArea
 
                     property real discWidth : disc.width
                     property real discHeight: disc.height
 
-                    property bool mouseEnabled : true
-
                     signal reposition()
 
-                    onXChanged: {
-                        if( discMouseArea.pressed ) {
-
-                            Activity.deHighlightTowers()
-
-                            var currentTower = 1
-
-                            if( Activity.getDiscPositionInTower(index+1, Activity.tower2) == Activity.tower2.length ) {
-                                currentTower = 2
-                            }
-
-                            else if( Activity.getDiscPositionInTower(index+1, Activity.tower3) == Activity.tower3.length ) {
-                                currentTower = 3
-                            }
-
-                            if( Activity.checkIfDiscOnTowerImage(index+1, 1)      && 1 != currentTower ) {
-                                Activity.highlightTower(1)
-                            }
-                            else if( Activity.checkIfDiscOnTowerImage(index+1, 2) && 2 != currentTower ) {
-                                Activity.highlightTower(2)
-                            }
-                            else if( Activity.checkIfDiscOnTowerImage(index+1, 3) && 3 != currentTower ) {
-                                Activity.highlightTower(3)
-                            }
-                            else {
-                                Activity.highlightTower(currentTower)
-                            }
-                        }
-                    }
+                    onXChanged: Activity.performTowersHighlight(index)
 
                     Behavior on y {
                              NumberAnimation {
@@ -170,43 +143,7 @@ ActivityBase {
                              }
                     }
 
-                    onReposition: {
-                        var position;
-                        var newX;
-                        var newY;
-
-                         if( Activity.checkDiscInTower(index+1, Activity.tower1) ){
-
-                             newX = tower1Image.x
-                             newY = tower1Image.y
-                             position = Activity.getDiscPositionInTower( index+1, Activity.tower1 )
-                         }
-                         else if( Activity.checkDiscInTower(index+1, Activity.tower2) ){
-
-                             newX = tower2Image.x
-                             newY = tower2Image.y
-                             position = Activity.getDiscPositionInTower( index+1, Activity.tower2 )
-                         }
-                         else if( Activity.checkDiscInTower(index+1, Activity.tower3) ){
-
-                             newX = tower3Image.x
-                             newY = tower3Image.y
-                             position = Activity.getDiscPositionInTower( index+1, Activity.tower3 )
-                         }
-
-                         disc.x = newX - items.discRepeater.itemAt(0).discWidth * (.22 - index * .05 )
-                         disc.y = newY + tower1Image.height * .70 - ((position-1) *  disc.height)
-                         Activity.disableNonDraggablediscs()
-                    }
-
-                    x: 20 * index
-                    y: 20 * index
-                    z: tower1Image.z + 1
-
-                    source: if( 0 == index ) Activity.url + "disc1.png"
-                            else if ( 1 == index ) Activity.url + "disc2.png"
-                            else if ( 2 == index ) Activity.url + "disc3.png"
-                            else if ( 3 == index ) Activity.url + "disc4.png"
+                    onReposition: Activity.repositionDiscs(index)
 
                     MouseArea {
                         id: discMouseArea
@@ -230,75 +167,19 @@ ActivityBase {
                             ++items.maxZ
                         }
 
-                        onReleased: {
-                            if( Activity.checkIfDiscOnTowerImage(index+1,1) && !(0 != Activity.tower1.length && index+1 <= Activity.tower1[Activity.tower1.length-1]) ) {
-                                    disc.x = tower1Image.x - items.discRepeater.itemAt(0).discWidth * (.22 - index * .05 )
-                                    disc.y = tower1Image.y + tower1Image.height * .70 - ( (Activity.tower1.length) *  disc.height)
-
-                                    Activity.popDisc(index+1)
-
-                                    Activity.tower1.push(index+1)
-                                    Activity.discs[index+1] = 1
-                            }
-
-                            else if( Activity.checkIfDiscOnTowerImage(index+1,2) && !( 0 != Activity.tower2.length && index+1 <= Activity.tower2[Activity.tower2.length-1] ) ) {
-                                    disc.x = tower2Image.x - items.discRepeater.itemAt(0).discWidth * (.22 - index * .05 )
-                                    disc.y = tower2Image.y + tower2Image.height * .70 - ( (Activity.tower2.length) *  disc.height)
-
-                                    Activity.popDisc(index+1)
-
-                                    Activity.tower2.push(index+1)
-                                    Activity.discs[index+1] = 2
-                            }
-
-                            else if( Activity.checkIfDiscOnTowerImage(index+1,3) && !( 0 != Activity.tower3.length && index+1 <= Activity.tower3[Activity.tower3.length-1] ) ) {
-                                    disc.x = tower3Image.x - items.discRepeater.itemAt(0).discWidth * (.22 - index * .05 )
-                                    disc.y = tower3Image.y + tower3Image.height * .70 - ( (Activity.tower3.length) *  disc.height)
-
-                                    Activity.popDisc(index+1)
-
-                                    Activity.tower3.push(index+1)
-                                    Activity.discs[index+1] = 3
-                            }
-
-                            else {
-                                disc.x = hanoiStage.currentX
-                                disc.y = hanoiStage.currentY
-                            }
-
-                            Activity.disableNonDraggablediscs()
-                            Activity.checkSolved()
-                            Activity.deHighlightTowers()
-                        }
+                        onReleased: Activity.discReleased(index)
                     }
                 }
             }
 
-            property real spacing : (hanoiStage.width - 3 * tower1Image.width) / 4
-
             Image {
                 id: tower1Image
                 x: parent.spacing
-                y: parent.spacing / 3
+                y: parent.spacing / 1.5
                 source: Activity.url + "disc_support.png"
 
-                Colorize {
+                Highlight {
                     id: tower1ImageHighlight
-                    anchors.fill: parent
-                    source: parent
-                    hue: 0.4
-                    saturation: 1
-                    lightness: .5
-                    cached: true
-                    opacity: 0
-
-                        Behavior on opacity
-                        {
-                                 PropertyAnimation {
-                                            duration: 150
-                                     }
-                        }
-
                 }
             }
 
@@ -309,23 +190,8 @@ ActivityBase {
                 anchors.leftMargin: parent.spacing
                 source: Activity.url + "disc_support.png"
 
-                Colorize {
+                Highlight {
                     id: tower2ImageHighlight
-                    anchors.fill: parent
-                    source: parent
-                    hue: 0.4
-                    saturation: 1
-                    lightness: .5
-                    cached: true
-                    opacity: 0
-
-                        Behavior on opacity
-                        {
-                                 PropertyAnimation {
-                                            duration: 150
-                                     }
-                        }
-
                 }
             }
 
@@ -336,38 +202,20 @@ ActivityBase {
                 anchors.leftMargin: parent.spacing
                 source: Activity.url + "disc_support.png"
 
-                Colorize {
-                    id: tower3ImageHighlight
-                    anchors.fill: parent
-                    source: parent
-                    hue: 0.4
-                    saturation: 1
-                    lightness: .5
-                    cached: true
-                    opacity: 0
-
-                        Behavior on opacity
-                        {
-                                 PropertyAnimation {
-                                            duration: 150
-                                     }
-                        }
-                }
-
-                Colorize {
-                    id: tower3ImageHighlightGlow
-                    anchors.fill: parent
-                    source: parent
-                    hue: 1.0
-                    saturation:  1
-                    lightness:   0
-                    cached: true
-                    opacity: tower3ImageHighlight.opacity == 0 ? .5 : 0
-                }
-
                 MouseArea {
                     anchors.fill: parent
                     onClicked: Activity.placeDiscsAtOriginal()
+                }
+
+                Highlight {
+                    id: tower3ImageHighlight
+                }
+
+                Highlight {
+                    id: tower3ImageHighlightGlow
+                    hue: 1.0
+                    lightness:   0
+                    opacity: tower3ImageHighlight.opacity == 0 ? .5 : 0
                 }
             }
         }
