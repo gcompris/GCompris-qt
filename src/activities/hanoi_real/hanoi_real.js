@@ -305,7 +305,6 @@ function checkSolved() {
 
         if( 3 == tower3.length && tower3[0] == 1 && tower3[1] == 2 && tower3[2] == 3 ) {
             items.bonus.good("flower")
-            resetToGetLevel(2)
         }
     }
 
@@ -313,7 +312,6 @@ function checkSolved() {
 
         if( 4 == tower3.length && tower3[0] == 1 && tower3[1] == 2 && tower3[2] == 3 && tower3[3] == 4 ) {
             items.bonus.good("flower")
-            resetToGetLevel(1)
         }
     }
 }
