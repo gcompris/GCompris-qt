@@ -221,7 +221,7 @@ ActivityBase {
         }
 
         DialogHelp {
-            id: dialogHelp
+            id: dialogHelpLeftRight
             onClose: home()
         }
 
