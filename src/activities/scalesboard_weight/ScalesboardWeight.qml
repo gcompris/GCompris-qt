@@ -83,7 +83,7 @@ Scalesboard {
                 "targets": [[3, kg(3)], [4, kg(4)], [6, kg(6)], [7, kg(7)], [8, kg(8)], [9, kg(9)]],
                 "rightDrop": false,
                 "message": qsTr("Now you have to guess the weight of the gift."),
-                "question": QT_TR_NOOP("Enter the weight of the gift in kilogram: %1")
+                "question": qsTr("Enter the weight of the gift in kilogram: %1")
             },
             {
                 "masses": [[100, g(100)], [200, g(200)], [200, g(200)], [500, g(500)],
@@ -91,14 +91,14 @@ Scalesboard {
                 "targets": [[300, g(300)], [400, g(400)], [600, g(600)], [700, g(700)],
                            [800, g(800)], [900, g(900)]],
                 "rightDrop": false,
-                "question": QT_TR_NOOP("Enter the weight of the gift in gram: %1")
+                "question": qsTr("Enter the weight of the gift in gram: %1")
             },
             {
                 "masses": [[2, kg(2)], [2, kg(2)], [5, kg(5)], [5, kg(5)], [5, kg(5)]],
                 "targets": [[8, kg(8)], [11, kg(11)], [13, kg(13)]],
                 "rightDrop": true,
                 "message": qsTr("Take care, you can drop weights on both sides of the scale."),
-                "question": QT_TR_NOOP("Enter the weight of the gift in gram: %1")
+                "question": qsTr("Enter the weight of the gift in gram: %1")
             },
             {
                 "masses": [[100, g(100)], [200, g(200)], [200, g(200)], [500, g(500)],
@@ -107,19 +107,19 @@ Scalesboard {
                            [1500, kg(1.5)], [1600, kg(1.6)]],
                 "rightDrop": false,
                 "message": qsTr("Remember, one kilo ('kg') equals 1000 grams ('g')."),
-                "question": QT_TR_NOOP("Enter the weight of the gift in gram: %1")
+                "question": qsTr("Enter the weight of the gift in gram: %1")
             },
             {
                 "masses": [[200, g(200)], [500, g(500)], [1000, kg(1)], [1000, kg(1)], [1200, kg(1.2)]],
                 "targets": [[300, g(300)], [800, g(800)], [1300, kg(1.3)]],
                 "rightDrop": true,
-                "question": QT_TR_NOOP("Enter the weight of the gift in gram: %1")
+                "question": qsTr("Enter the weight of the gift in gram: %1")
             },
             {
                 "masses": [[200, g(200)], [400, g(400)], [700, g(700)], [1000, kg(1)], [1200, kg(1.2)]],
                 "targets": [[300, g(300)], [500, g(500)], [800, g(800)], [900, g(900)]],
                 "rightDrop": true,
-                "question": QT_TR_NOOP("Enter the weight of the gift in gram: %1")
+                "question": qsTr("Enter the weight of the gift in gram: %1")
             },
             {
                 "masses": [[500, g(500)], [800, g(800)], [900, g(900)], [1000, kg(1)],
@@ -127,7 +127,7 @@ Scalesboard {
                 "targets": [[600, g(600)], [700, g(700)], [1300, kg(1.3)], [1400, kg(1.4)],
                            [1500, kg(1.5)], [1600, kg(1.6)], [1700, kg(1.7)], [1800, kg(1.8)]],
                 "rightDrop": true,
-                "question": QT_TR_NOOP("Enter the weight of the gift in gram: %1")
+                "question": qsTr("Enter the weight of the gift in gram: %1")
             }
 ]
 
