@@ -395,7 +395,7 @@ bool DownloadManager::checkDownloadRestriction() const
     // has been implemented for android (cf. Qt bug #30394)
     QNetworkConfiguration::BearerType conn = networkConfiguration.bearerType();
     qDebug() << "Bearer type: "<<  conn << ": "<< networkConfiguration.bearerTypeName();
-    if (!ApplicationSettings::getInstance()->isMobileNetworkDownloadsEnabled()) &&
+	if (!ApplicationSettings::getInstance()->isMobileNetworkDownloadsEnabled() &&
         conn != QNetworkConfiguration::BearerEthernet &&
         conn != QNetworkConfiguration::QNetworkConfiguration::BearerWLAN)
         return false;
