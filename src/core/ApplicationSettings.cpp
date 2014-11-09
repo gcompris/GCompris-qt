@@ -116,6 +116,9 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_exeCount = m_config.value(EXE_COUNT_KEY, 0).toUInt();
     m_config.endGroup();
 
+    // no group
+    m_isBarHidden = false;
+
 	connect(this, SIGNAL(audioVoicesEnabledChanged()), this, SLOT(notifyAudioVoicesEnabledChanged()));
 	connect(this, SIGNAL(audioEffectsEnabledChanged()), this, SLOT(notifyAudioEffectsEnabledChanged()));
 	connect(this, SIGNAL(fullscreenChanged()), this, SLOT(notifyFullscreenChanged()));
@@ -127,6 +130,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, SIGNAL(filterLevelMaxChanged()), this, SLOT(notifyFilterLevelMaxChanged()));
     connect(this, SIGNAL(downloadServerUrlChanged()), this, SLOT(notifyDownloadServerUrlChanged()));
     connect(this, SIGNAL(exeCountChanged()), this, SLOT(notifyExeCountChanged()));
+    connect(this, SIGNAL(barHiddenChanged()), this, SLOT(notifyBarHiddenChanged()));
 }
 
 ApplicationSettings::~ApplicationSettings()
@@ -232,6 +236,11 @@ void ApplicationSettings::notifyExeCountChanged()
 {
     updateValueInConfig(INTERNAL_GROUP_KEY, EXE_COUNT_KEY, m_exeCount);
     qDebug() << "exeCount set to: " << m_exeCount;
+}
+
+void ApplicationSettings::notifyBarHiddenChanged()
+{
+    qDebug() << "is bar hidden: " << m_isBarHidden;
 }
 
 template<class T> void ApplicationSettings::updateValueInConfig(const QString& group,

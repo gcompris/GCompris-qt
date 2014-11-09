@@ -52,7 +52,7 @@ Item {
             Qt.quit()
         } else if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_B) {
-            bar.toggle()
+            ApplicationSettings.isBarHidden = !ApplicationSettings.isBarHidden;
         } else if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_F) {
             ApplicationSettings.isFullscreen = !ApplicationSettings.isFullscreen
