@@ -54,6 +54,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias mineModel: mineObjects.model
+            property Item nugget
         }
 
         onStart: { Activity.start(items) }
@@ -73,6 +74,8 @@ ActivityBase {
                 property int maxSubLevel
                 property real _MAX_SCALE: 3
                 property real _MIN_SCALE: 1
+
+                onScaleChanged: items.nugget.checkOnScreen()
 
                 Image {
                     source: Activity.url + "vertical_border.svg"
@@ -116,20 +119,45 @@ ActivityBase {
                     delegate: Item {
                         width: mineObjects.cellWidth
                         height: mineObjects.cellHeight
+                        // Calculated value true when the nugget is on the visible
+                        // part of the screen
+                        property bool onScreen: true
+                        property alias nuggetImg: nuggetImg
                         signal hit(real x, real y)
+                        signal checkOnScreen
 
                         onHit: {
                             if(!mouseArea.enabled)
                                 return
 
-                            var point = parent.mapToItem(nugget, x, y)
-                            if(point.x > 0 && point.x < nugget.width &&
-                               point.y > 0 && point.y < nugget.height)
-                                nugget.hit()
+                            var point = parent.mapToItem(nuggetImg, x, y)
+                            if(point.x > 0 && point.x < nuggetImg.width &&
+                               point.y > 0 && point.y < nuggetImg.height)
+                                nuggetImg.hit()
+                        }
+
+                        onCheckOnScreen: {
+                            // Calc if the nugget is visible or not
+                            var nuggetCoord1 =
+                                    background.mapFromItem(miningBg,
+                                                           items.nugget.x + items.nugget.nuggetImg.x,
+                                                           items.nugget.y + items.nugget.nuggetImg.y)
+                            var nuggetCoord2 =
+                                    background.mapFromItem(miningBg,
+                                                           items.nugget.x + items.nugget.nuggetImg.x + items.nugget.nuggetImg.width,
+                                                           items.nugget.y + items.nugget.nuggetImg.y + items.nugget.nuggetImg.height)
+
+                            if(nuggetCoord1.x > miningBg.width ||
+                                    nuggetCoord2.x < 0 ||
+                                    nuggetCoord1.y > miningBg.height ||
+                                    nuggetCoord2.y < 0)
+                                onScreen = false
+                            else
+                                onScreen = true
                         }
 
                         Image {
-                            id: nugget
+                            id: nuggetImg
                             source: Activity.url + "gold_nugget.svg"
                             sourceSize.width: mineObjects.cellWidth * 3
                             width: mineObjects.cellWidth * modelData.widthFactor / 2
@@ -144,6 +172,12 @@ ActivityBase {
                             onHit: {
                                 activity.audioEffects.play(Activity.url + "pickaxe.ogg")
                                 background.gotIt = true
+                                tuto.setState("Unzoom")
+                            }
+
+                            Component.onCompleted: {
+                                if(modelData.isTarget)
+                                    items.nugget = parent
                             }
 
                             MouseArea {
@@ -156,6 +190,7 @@ ActivityBase {
 
                             Behavior on opacity { PropertyAnimation { duration: 1000 } }
                         }
+
                         Image {
                             id: cell
                             source: modelData.source
@@ -210,9 +245,24 @@ ActivityBase {
                             miningBg.scale += 0.1;
                         else
                             miningBg.scale = miningBg._MAX_SCALE
+
+                        if(gotIt)
+                            tuto.setState("Unzoom")
+                        else if(miningBg.scale < miningBg._MAX_SCALE)
+                            tuto.setState(items.nugget.onScreen ? "ZoomOk" : "ZoomBad")
+                        else
+                            tuto.setState(items.nugget.onScreen ? "NuggetSeen" : "NuggetNotSeen")
+
                     } else if (zoomDelta < 0) {
                         if(miningBg.scale > miningBg._MIN_SCALE) {
                             miningBg.scale -= 0.1;
+
+                            if(gotIt)
+                                tuto.setState("Unzoom")
+                            else if(miningBg.scale > miningBg._MIN_SCALE)
+                                tuto.setState(items.nugget.onScreen ? "UnzoomOk" : "UnzoomBad")
+                            else
+                                tuto.setState("Started")
                         } else if (gotIt) {
                             gotIt = false
                             if(miningBg.subLevel == miningBg.maxSubLevel) {
@@ -222,9 +272,11 @@ ActivityBase {
                                 miningBg.scale = miningBg._MIN_SCALE
                                 Activity.createLevel()
                             }
+                            tuto.setState("Stopped")
                         } else {
                             miningBg.anchors.horizontalCenterOffset = 0
                             miningBg.anchors.verticalCenterOffset = 0
+                            tuto.setState("Started")
                         }
                     }
                     if(previousScale != miningBg.scale) {
@@ -300,6 +352,88 @@ ActivityBase {
             }
         }
 
+        GCText {
+            id: tuto
+            anchors {
+                left: parent.left
+                right: parent.right
+                top: parent.top
+                margins: 20
+            }
+            font.pointSize: 13
+            color: "white"
+            wrapMode: TextEdit.WordWrap
+            horizontalAlignment: TextEdit.AlignHCenter
+
+            property string newState
+
+            function setState(nextState) {
+                if(bar.level == 1) {
+                    if(newState != nextState) {
+                        newState = nextState
+                        anim.restart()
+                    }
+                } else {
+                    newState = "Stopped"
+                    anim.restart()
+                }
+            }
+
+            states: [
+                State {
+                    name: "Started"
+                    PropertyChanges {
+                        target: tuto;
+                        text: qsTr("Find the sparkle and zoom in around it. If you have a mouse, point the cursor on the sparkle then use the scroll wheel. If you have a trackpad, point the cursor on the sparkle then drag one finger on the right area or two fingers on the center. On a touch area, drag two fingers away from the sparkle, one in each direction.")
+                    }
+                },
+                State {
+                    name: "Stopped"
+                    PropertyChanges { target: tuto; text: qsTr("")}
+                },
+                State {
+                    name: "ZoomOk"
+                    PropertyChanges { target: tuto; text: qsTr("Perfect you are zooming. Continue until you see the nugget.")}
+                },
+                State {
+                    name: "ZoomBad"
+                    PropertyChanges { target: tuto; text: qsTr("Hum, take care, you are zooming too far from the sparkle.")}
+                },
+                State {
+                    name: "NuggetSeen"
+                    PropertyChanges { target: tuto; text: qsTr("Now you see the nugget, click on it to catch it.")}
+                },
+                State {
+                    name: "NuggetNotSeen"
+                    PropertyChanges { target: tuto; text: qsTr("Hum, you are too far from the nugget to see it. Unzoom then zoom again as close as you can from the sparkle.")}
+                },
+                State {
+                    name: "Unzoom"
+                    PropertyChanges { target: tuto; text: qsTr("Now unzoom and try to find another sparkle.")}
+                },
+                State {
+                    name: "UnzoomBad"
+                    PropertyChanges { target: tuto; text: qsTr("Continue to unzoom until you see the sparkle.")}
+                },
+                State {
+                    name: "UnzoomOk"
+                    PropertyChanges { target: tuto; text: qsTr("Now you see the sparkle, go ahead, you can zoom on it.")}
+                }
+            ]
+
+            SequentialAnimation {
+                id: anim
+                PropertyAnimation { target: tuto; property: "opacity"; easing.type: Easing.Linear; from: 1.0; to: 0; duration: 200 }
+                PropertyAction { target: tuto; property: "state"; value: tuto.newState }
+                PropertyAnimation { target: tuto; property: "opacity"; easing.type: Easing.Linear; from: 0; to: 1.0; duration: 200 }
+            }
+
+            Behavior on opacity { PropertyAnimation { duration: 100 } }
+            transitions: Transition {
+                    PropertyAnimation { target: tuto; property: "opacity"; to: 1.0 }
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -320,6 +454,7 @@ ActivityBase {
                 miningBg.anchors.horizontalCenterOffset = 0
                 miningBg.anchors.verticalCenterOffset = 0
                 miningBg.scale = miningBg._MIN_SCALE
+                tuto.setState("Started")
 
                 switch(bar.level) {
                 case 1:
