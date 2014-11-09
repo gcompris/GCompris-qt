@@ -71,7 +71,10 @@ int main(int argc, char *argv[])
     parser.addVersionOption();
     QCommandLineOption exportActivitiesAsSQL("export-activities-as-sql", "Export activities as SQL");
     parser.addOption(exportActivitiesAsSQL);
-    parser.process(app);
+	QCommandLineOption clDefaultCursor(QStringList() << "c" << "cursor",
+									   "run GCompris with the default system cursor.");
+	parser.addOption(clDefaultCursor);
+	parser.process(app);
 
 
     ApplicationInfo::init();
@@ -102,7 +105,7 @@ int main(int argc, char *argv[])
 		if(config.contains("General/defaultCursor")) {
 			defaultCursor = config.value("General/defaultCursor").toBool();
 		}
-		if(!defaultCursor)
+		if(!defaultCursor && !parser.isSet(clDefaultCursor))
 			QGuiApplication::setOverrideCursor(
 						QCursor(QPixmap(":/gcompris/src/core/resource/cursor.png"),
 								0, 0));
