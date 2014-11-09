@@ -49,13 +49,24 @@ Item {
     Keys.onPressed: {
         if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_Q) {
+            // Ctrl+Q exit the application
             Qt.quit()
         } else if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_B) {
+            // Ctrl+B toggle sthe bar
             ApplicationSettings.isBarHidden = !ApplicationSettings.isBarHidden;
         } else if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_F) {
+            // Ctrl+F toggle fullscreen
             ApplicationSettings.isFullscreen = !ApplicationSettings.isFullscreen
+        } else if (event.modifiers === Qt.ControlModifier &&
+                   event.key === Qt.Key_M) {
+            // Ctrl+M toggle sound
+            ApplicationSettings.isAudioEffectsEnabled = !ApplicationSettings.isAudioEffectsEnabled
+        } else if (event.modifiers === Qt.ControlModifier &&
+                   event.key === Qt.Key_W) {
+            // Ctrl+W exit the current activity
+            home()
         }
     }
     Keys.onReleased: {
