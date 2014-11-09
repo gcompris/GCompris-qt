@@ -25,6 +25,8 @@
 #include <QObject>
 #include <QTranslator>
 #include <QCommandLineParser>
+#include <QCursor>
+#include <QPixmap>
 #include <QSettings>
 
 #include "ApplicationInfo.h"
@@ -94,6 +96,16 @@ int main(int argc, char *argv[])
         } else {
             locale = "en_US.UTF-8";
         }
+
+		// Set the cursor
+		bool defaultCursor = false;
+		if(config.contains("General/defaultCursor")) {
+			defaultCursor = config.value("General/defaultCursor").toBool();
+		}
+		if(!defaultCursor)
+			QGuiApplication::setOverrideCursor(
+						QCursor(QPixmap(":/gcompris/src/core/resource/cursor.png"),
+								0, 0));
     }
 
     // Load translation

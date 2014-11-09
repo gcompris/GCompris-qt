@@ -209,7 +209,8 @@ private:
     bool m_isEmbeddedFont;
     quint32 m_filterLevelMin;
     quint32 m_filterLevelMax;
-    QString m_locale;
+	bool m_defaultCursor;
+	QString m_locale;
     QString m_font;
 
     QString m_downloadServerUrl;
