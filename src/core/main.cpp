@@ -74,6 +74,9 @@ int main(int argc, char *argv[])
 	QCommandLineOption clDefaultCursor(QStringList() << "c" << "cursor",
 									   "run GCompris with the default system cursor.");
 	parser.addOption(clDefaultCursor);
+	QCommandLineOption clNoCursor(QStringList() << "C" << "nocursor",
+									   "run GCompris without cursor (touch screen mode).");
+	parser.addOption(clNoCursor);
 	parser.process(app);
 
 
@@ -100,7 +103,7 @@ int main(int argc, char *argv[])
             locale = "en_US.UTF-8";
         }
 
-		// Set the cursor
+		// Set the cursor image
 		bool defaultCursor = false;
 		if(config.contains("General/defaultCursor")) {
 			defaultCursor = config.value("General/defaultCursor").toBool();
@@ -109,6 +112,14 @@ int main(int argc, char *argv[])
 			QGuiApplication::setOverrideCursor(
 						QCursor(QPixmap(":/gcompris/src/core/resource/cursor.png"),
 								0, 0));
+
+		// Hide the cursor
+		bool noCursor = false;
+		if(config.contains("General/noCursor")) {
+			noCursor = config.value("General/noCursor").toBool();
+		}
+		if(noCursor || parser.isSet(clNoCursor))
+			QGuiApplication::setOverrideCursor(QCursor(Qt::BlankCursor));
     }
 
     // Load translation

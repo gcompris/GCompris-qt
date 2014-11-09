@@ -75,6 +75,7 @@ static const QString FILTER_LEVEL_MIN = "filterLevelMin";
 static const QString FILTER_LEVEL_MAX = "filterLevelMax";
 
 static const QString DEFAULT_CURSOR = "defaultCursor";
+static const QString NO_CURSOR = "noCursor";
 
 ApplicationSettings *ApplicationSettings::m_instance = NULL;
 
@@ -101,7 +102,8 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_filterLevelMin = m_config.value(FILTER_LEVEL_MIN, 1).toUInt();
     m_filterLevelMax = m_config.value(FILTER_LEVEL_MAX, 6).toUInt();
 	m_defaultCursor = m_config.value(DEFAULT_CURSOR, false).toBool();
-    m_config.sync();  // make sure all defaults are written back
+	m_noCursor = m_config.value(NO_CURSOR, false).toBool();
+	m_config.sync();  // make sure all defaults are written back
     m_config.endGroup();
 
     // admin group
@@ -142,6 +144,7 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(FILTER_LEVEL_MIN, m_filterLevelMin);
 	m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
 	m_config.setValue(DEFAULT_CURSOR, m_defaultCursor);
+	m_config.setValue(NO_CURSOR, m_noCursor);
 	m_config.endGroup();
 
     // admin group

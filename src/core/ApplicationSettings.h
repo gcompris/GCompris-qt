@@ -210,6 +210,7 @@ private:
     quint32 m_filterLevelMin;
     quint32 m_filterLevelMax;
 	bool m_defaultCursor;
+	bool m_noCursor;
 	QString m_locale;
     QString m_font;
 
