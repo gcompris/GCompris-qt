@@ -12,6 +12,6 @@ ActivityInfo {
   goal: ""
   prerequisite: qsTr("Mouse-manipulation")
   manual: qsTr("Click on any item that has a free block beside it, and it will be swapped with the empty block.")
-  credit: qsTr("")
+  credit: ""
   section: "puzzle"
 }

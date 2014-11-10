@@ -16,8 +16,8 @@ ActivityInfo {
   description: qsTr("Guide the Number Muncher to all the prime numbers.")
 //  intro: "Guide the number eater with the arrow keys to the prime numbers and press space to swallow them."
   goal: qsTr("Learn about prime numbers.")
-  prerequisite: qsTr("")
+  prerequisite: ""
   manual: genManual()
-  credit: qsTr("")
+  credit: ""
   section: "/math/algebramenu"
 }

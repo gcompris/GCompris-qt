@@ -389,7 +389,7 @@ ActivityBase {
                 },
                 State {
                     name: "Stopped"
-                    PropertyChanges { target: tuto; text: qsTr("")}
+                    PropertyChanges { target: tuto; text: ""}
                 },
                 State {
                     name: "ZoomOk"

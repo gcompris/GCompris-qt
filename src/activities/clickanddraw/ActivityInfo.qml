@@ -9,9 +9,9 @@ ActivityInfo {
   title: qsTr("Click and draw")
   description: qsTr("Draw the picture by clicking on the blue points.")
 //  intro: "Click on the blue points and draw "
-  goal: qsTr("")
-  prerequisite: qsTr("")
+  goal: ""
+  prerequisite: ""
   manual: qsTr("Draw the picture by clicking on each blue point in sequence.")
-  credit: qsTr("")
+  credit: ""
   section: "/computer/mouse"
 }

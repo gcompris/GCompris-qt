@@ -12,6 +12,6 @@ ActivityInfo {
   goal: qsTr("Create a line of 4 pieces either horizontally (lying down), vertically (standing up) or diagonally.")
   prerequisite: qsTr("Mouse-manipulation")
   manual: qsTr("Click the position in the line where you want to drop a piece. You can also use the arrow keys to move the piece left or right, and the down or space key to drop a piece.")
-  credit: qsTr("")
+  credit: ""
   section: "/strategy"
 }
