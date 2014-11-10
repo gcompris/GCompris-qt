@@ -6,11 +6,11 @@ ActivityInfo {
   icon: "template/template.svg"
   author: "Your Name <yy@zz.org>"
   demo: false
-  title: qsTr("template activity")
-  description: qsTr("")
-  goal: qsTr("")
-  prerequisite: qsTr("")
-  manual: qsTr("")
-  credit: qsTr("")
+  title: "Template activity"
+  description: ""
+  goal: ""
+  prerequisite: ""
+  manual: ""
+  credit: ""
   section: ""
 }
