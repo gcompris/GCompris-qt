@@ -51,9 +51,16 @@
         <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
 An adding-up sum looks like this: 2 + 2 = 4
 The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you&apos;ll be very good at adding-up!
+In this game, these cards are hiding the two parts of an adding-up sum (also called an addition sum). You need to find the two parts of the sum, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole sum. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper sum. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the sums, you&apos;ve won the game! :)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
+An adding-up sum looks like this: 2 + 2 = 4
+The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you&apos;ll be very good at adding-up!
 
 In this game, these cards are hiding the two parts of an adding-up sum (also called an addition sum). You need to find the two parts of the sum, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole sum. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper sum. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the sums, you&apos;ve won the game! :)</source>
-        <translation>Néhány lefordított kártyát látsz. Minden kártya másik oldalán egy összeadás vagy egy összeadás eredménye rejtőzik.
+        <translation type="vanished">Néhány lefordított kártyát látsz. Minden kártya másik oldalán egy összeadás vagy egy összeadás eredménye rejtőzik.
  Egy összeadás például így nézhet ki: 2 + 2 = 4
 Az egyenlőségjel (=) két oldalán levő számnak meg kell egyezni. Hangosan is számolhatsz, és az ujjaidat is használhatod, mert minél többféleképpen csinálsz valamit, annál könnyebben jegyzed meg. Használhatsz akár számolópálcikát, babszemeket, vagy bármi mást, amit meg tudsz számolni. Énekelj gyakran számolós énekeket, számolj meg amit csak tudsz – gyakorlat teszi a mestert!
 
@@ -140,16 +147,10 @@ Ebben a játékban a kártyák egy összeadás (összegnek is nevezett) eredmén
         <translation>Összeadás és kivonás</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="14"/>
-        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="14"/>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="14"/>
-        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="14"/>
-        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="14"/>
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="14"/>
         <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the operations, you&apos;ve won the game! :)</source>
-        <translation>Néhány lefordított kártyát látsz. Minden kártya lefordított oldalán vagy egy művelet, vagy egy művelet eredménye látható. 
+        <translation type="vanished">Néhány lefordított kártyát látsz. Minden kártya lefordított oldalán vagy egy művelet, vagy egy művelet eredménye látható. 
 
 Ebben a játékban feladatod a műveleteket párosítani az eredményeikkel. Meg kell találnod, és össze kell párosítanod a művelet két részét. Egy kártya megfordításához kattints rá és próbáld megtalálni a párját! Egyszerre csak két kártyát fordíthatsz meg, így meg kell jegyezned a számok helyét, hogy párosítani tudd a másik felével, ha megtalálod azt. Az egyenlőségjel feladatát végzed, össze kell párosítanod a megfelelő egyenlőséget adó számokat. Ha ez sikerül, mindkét kártya eltűnik! Ha az összeset eltünteted, nyertél!</translation>
     </message>
@@ -390,6 +391,12 @@ Ebben a játékban feladatod a műveleteket párosítani az eredményeikkel. Meg
         <translation>Szorzási memóriajáték Tux ellen</translation>
     </message>
     <message>
+        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="14"/>
+        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
+In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more then Tux and you&apos;ve won the game! :)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="10"/>
         <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="10"/>
         <source>Turn the cards over to find two numbers which multiply the same, until all the cards are gone.</source>
@@ -408,10 +415,14 @@ Ebben a játékban feladatod a műveleteket párosítani az eredményeikkel. Meg
         <translation>Szorzás</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="14"/>
+        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="14"/>
+        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="14"/>
+        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="14"/>
+        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="14"/>
+        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="14"/>
+        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="14"/>
         <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
-In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more then Tux and you&apos;ve won the game! :)</source>
+In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the operations, you&apos;ve won the game! :)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -660,6 +671,12 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Osztás</translation>
     </message>
     <message>
+        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="14"/>
+        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
+In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more than TUX and you&apos;ve won the game! :)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/activities/hexagon/ActivityInfo.qml" line="9"/>
         <source>hexagon</source>
         <translation>Hatszög</translation>
@@ -771,6 +788,12 @@ Gyorsbillentyűk:
         <translation>Szorzási és osztási memóriajáték Tux ellen</translation>
     </message>
     <message>
+        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="14"/>
+        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
+In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more than Tux and you&apos;ve won the game! :)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="12"/>
         <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="12"/>
         <source>Practise multiplication, division, until all the cards are gone.</source>
@@ -781,13 +804,6 @@ Gyorsbillentyűk:
         <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="13"/>
         <source>Multiplication, division</source>
         <translation>Szorzás, osztás</translation>
-    </message>
-    <message>
-        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="14"/>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
-In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more than Tux and you&apos;ve won the game! :)</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/activities/clickgame/ActivityInfo.qml" line="9"/>
@@ -897,7 +913,6 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     <message>
         <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="14"/>
         <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more than Tux, you&apos;ve won the game! :)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -980,9 +995,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     <message>
         <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="14"/>
         <source>The activity deals with mixing primary colors of light (additive mixing).
-
-In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.
-        </source>
+In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1008,6 +1021,15 @@ A fény esete a festékekkel való színkeverés ellentéte! Minél több fényt
         <translation>Találd meg a kijáratot a labirintusból</translation>
     </message>
     <message>
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="14"/>
+        <source>Use the keyboard arrows to move Tux up to the door.
+At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
+For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
+You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
+From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="12"/>
         <location filename="../src/activities/maze/ActivityInfo.qml" line="12"/>
         <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="12"/>
@@ -1022,7 +1044,15 @@ A fény esete a festékekkel való színkeverés ellentéte! Minél több fényt
         <translation>Kezelni tudja a billentyűzeten lévő nyilakat egy elem mozgatásához.</translation>
     </message>
     <message>
-        <location filename="../src/activities/maze/ActivityInfo.qml" line="14"/>
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="14"/>
+        <source>Use the keyboard arrows to move Tux up to the door. Use the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
+At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
+For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
+You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
+From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Use the keyboard arrows to move Tux up to the door.
 
 At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
@@ -1033,7 +1063,7 @@ You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: 
 
 From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
 	</source>
-        <translation>A nyílbillentyűk használatával irányítsd el Tuxot az ajtóig.
+        <translation type="vanished">A nyílbillentyűk használatával irányítsd el Tuxot az ajtóig.
 
 Az első szinteken Tux kényelmesen sétál, minden billentyűlenyomásra egyet lép a labirintusban.
 
@@ -1057,6 +1087,14 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
     <message>
         <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="14"/>
         <source>Use the keyboard arrows to move Tux up to the door. In this maze, the move is relative (first person). Use the up arrow to go forward. The other arrows let you turn Tux in another direction.
+At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
+For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
+You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
+From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use the keyboard arrows to move Tux up to the door. In this maze, the move is relative (first person). Use the up arrow to go forward. The other arrows let you turn Tux in another direction.
 
 At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
 
@@ -1066,7 +1104,7 @@ You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: 
 
 From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
 </source>
-        <translation>A nyílbillentyűk használatával irányítsd el Tuxot az ajtóig. Ebben a labirintusban a mozgás relatív (mintha első személyben lennél ott). A felfelé nyíllal mehetsz előre, a többivel másik irányba fordíthatod Tuxot.
+        <translation type="vanished">A nyílbillentyűk használatával irányítsd el Tuxot az ajtóig. Ebben a labirintusban a mozgás relatív (mintha első személyben lennél ott). A felfelé nyíllal mehetsz előre, a többivel másik irányba fordíthatod Tuxot.
 
 Az első szinteken Tux kényelmesen sétál, minden billentyűlenyomásra egyet lép a labirintusban.
 
@@ -1095,9 +1133,7 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
     <message>
         <location filename="../src/activities/color_mix/ActivityInfo.qml" line="14"/>
         <source>The activity deals with mixing primary colors of paint (subtractive mixing).
-
-In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.
-        </source>
+In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1143,7 +1179,6 @@ Festékek esetén a tinta elnyeli a ráeső különböző színű fénysugarakat
         <translation>Találd meg a kijáratot a láthatatlan labirintusból</translation>
     </message>
     <message>
-        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="14"/>
         <source>Use the keyboard arrows to move Tux up to the door. Use the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
 
 At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
@@ -1154,7 +1189,7 @@ You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: 
 
 From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
 </source>
-        <translation>A nyílbillentyűk használatával irányítsd el Tuxot az ajtóig. A szóközzel válthatsz a láthatatlan és a látható módok között. A látható mód kijelzi a helyzetedet, mint egy térkép. Látható módban nem mozgathatod Tuxot.
+        <translation type="vanished">A nyílbillentyűk használatával irányítsd el Tuxot az ajtóig. A szóközzel válthatsz a láthatatlan és a látható módok között. A látható mód kijelzi a helyzetedet, mint egy térkép. Látható módban nem mozgathatod Tuxot.
 
 Az első szinteken Tux kényelmesen sétál, minden billentyűlenyomásra egyet lép a labirintusban.
 
@@ -1526,7 +1561,6 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
     <message>
         <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="14"/>
         <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more operations than Tux and you&apos;ve won the game! :)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1582,6 +1616,14 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="14"/>
         <source>Looking at the rockwall, you can see a sparkle somewhere. Move the mouse cursor next to this sparkle and use the mousewheel to zoom in. If you zoomed in at maximum, a gold nugget will appear at the position of the sparkle. Click on the gold nugget to collect it.
+Having collected the nugget, use the mousewheel to zoom out again. If you zoomed out at maximum, another sparkle will appear, showing the next gold nugget to collect. Collect enough nuggets to complete the level.
+The truck in the lower, right corner of the screen will tell you the number of already collected nuggets and the total number of nuggets to collect in this level.
+To start the tutorial, click on professor Tux (available at level 1) and let him show you, what to do next.
+Have fun! :)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Looking at the rockwall, you can see a sparkle somewhere. Move the mouse cursor next to this sparkle and use the mousewheel to zoom in. If you zoomed in at maximum, a gold nugget will appear at the position of the sparkle. Click on the gold nugget to collect it.
 
 Having collected the nugget, use the mousewheel to zoom out again. If you zoomed out at maximum, another sparkle will appear, showing the next gold nugget to collect. Collect enough nuggets to complete the level.
 
@@ -1590,7 +1632,7 @@ The truck in the lower, right corner of the screen will tell you the number of a
 To start the tutorial, click on professor Tux (available at level 1) and let him show you, what to do next.
 
 Have fun! :)</source>
-        <translation>A sziklafalat nézve itt-ott csillogást láthatsz. Vidd az egérmutatót a csillogás közelébe, és a görgővel közelíts rá. Ha teljesen ráközelítettél, megjelenik egy aranyrög a csillogás helyén. Kattints az aranyrögre a begyűjtéséhez.
+        <translation type="vanished">A sziklafalat nézve itt-ott csillogást láthatsz. Vidd az egérmutatót a csillogás közelébe, és a görgővel közelíts rá. Ha teljesen ráközelítettél, megjelenik egy aranyrög a csillogás helyén. Kattints az aranyrögre a begyűjtéséhez.
 
 Ha begyűjtötted az aranyrögöt, akkor az egérgörgővel távolodj el a faltól. Ha teljesen eltávolodtál, akkor újabb csillogás jelenik meg, amely a következő aranyrögöt jelzi. Gyűjtsd be a szint befejezéséhez szükséges mennyiségű aranyrögöt.
 
@@ -1601,7 +1643,7 @@ Az ismertető indításához kattints Tux professzorra az első szinten, és fig
 Jó szórakozást! :)</translation>
     </message>
     <message>
-        <location filename="../src/activities/mining/ActivityInfo.qml" line="23"/>
+        <location filename="../src/activities/mining/ActivityInfo.qml" line="19"/>
         <source>Thanks to the Tuxpaint team for providing the following sounds under GPL:
 - realrainbow.ogg - used when a new gold nugget appears
 - metalpaint.wav - remixed and used when a gold nugget is collected</source>
@@ -1617,7 +1659,6 @@ Jó szórakozást! :)</translation>
     <message>
         <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="14"/>
         <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more than Tux,  and you&apos;ve won the game! :)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1656,7 +1697,6 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
 An adding-up sum looks like this: 2 + 2 = 4
 The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you&apos;ll be very good at adding-up!
-
 In this game, these cards are hiding the two parts of an adding-up sum (also called an addition sum). You need to find the two parts of the sum, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole sum. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper sum. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more sums as Tux and you&apos;ve won the game! :)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1669,13 +1709,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="9"/>
         <source>Division memory game against Tux</source>
         <translation>Osztási memóriajáték Tux ellen</translation>
-    </message>
-    <message>
-        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="14"/>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
-In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more than TUX and you&apos;ve won the game! :)</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/activities/drawnumber/ActivityInfo.qml" line="9"/>
@@ -1816,9 +1849,8 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Egyensúlyozd ki a mérleget, tedd a súlyokat a bal vagy jobb oldali serpenyőbe. A súlyokat tetszőleges sorrendben helyezheted el.</translation>
     </message>
     <message>
-        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="15"/>
         <source>The painting is an original painting created by Virginie MOREAU (virginie.moreau@free.fr) in 2001. Its name is &apos;Spices Seller in Egypt&apos;. It is released under the GPL license.</source>
-        <translation>A festményt Virginie MOREAU (virginie.moreau@free.fr) készítette 2001-ben, a címe „Fűszerárus Egyiptomban”. A GPL licenc alatt került kiadásra.</translation>
+        <translation type="vanished">A festményt Virginie MOREAU (virginie.moreau@free.fr) készítette 2001-ben, a címe „Fűszerárus Egyiptomban”. A GPL licenc alatt került kiadásra.</translation>
     </message>
     <message>
         <location filename="../src/activities/sudoku/ActivityInfo.qml" line="28"/>
@@ -1847,24 +1879,23 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/ActivityInfo.qml" line="9"/>
-        <source>Discover the Braille System</source>
-        <translation type="unfinished"></translation>
+        <source>Discover the Braille system</source>
+        <translation>Fedezd fel a Braille írást</translation>
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/ActivityInfo.qml" line="10"/>
-        <source>Learn and memorize the Braille System</source>
+        <source>Learn and memorize the Braille system</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/ActivityInfo.qml" line="11"/>
         <source>Let kids discover the Braille system.</source>
-        <translation type="unfinished"></translation>
+        <translation>A gyerekek ismerjék meg a Braille írást.</translation>
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/ActivityInfo.qml" line="13"/>
-        <source>The screen has 3 sections: an interactive braille cell, an instruction telling you the letter to reproduce,
- and at the top the Braille letters to use as a reference. Each level teaches a set of 10 letters.</source>
-        <translation type="unfinished"></translation>
+        <source>The screen has 3 sections: an interactive braille cell, an instruction telling you the letter to reproduce, and at the top the Braille letters to use as a reference. Each level teaches a set of 10 letters.</source>
+        <translation>A képernyő 3 szakaszt tartalmaz: egy interaktív Braille cellát, az előállítandó betűt megadó utasítást, és felül a Braille betűket referenciaként. Minden szint 10 betűt tanít meg.</translation>
     </message>
 </context>
 <context>
@@ -2267,17 +2298,22 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     <message>
         <location filename="../src/activities/braille_alphabets/FirstScreen.qml" line="37"/>
         <source>Braille : Unlocking the Code</source>
-        <translation type="unfinished"></translation>
+        <translation>Braille : A kód megfejtése</translation>
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/FirstScreen.qml" line="65"/>
-        <source>The Braille system is a method that is used by blind people to read and write.Each Braille character, or cell, is made up of six dot positions, arranged in a rectangle containing two columns of three dots each. As seen on the left, each dot is referenced by a number from 1 to 6.</source>
-        <translation type="unfinished"></translation>
+        <source>The Braille system is a method that is used by blind people to read and write.</source>
+        <translation>A Braille írás egy vak emberek által írásra és olvasásra használt módszer.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/braille_alphabets/FirstScreen.qml" line="66"/>
+        <source>Each Braille character, or cell, is made up of six dot positions, arranged in a rectangle containing two columns of three dots each. As seen on the left, each dot is referenced by a number from 1 to 6.</source>
+        <translation>Minden Braille karakter vagy cella hat pontból áll, amelyek álló téglalap formában két oszlopba vannak rendezve, oszloponként három-három ponttal. A bal oldalon látható, hogy mindegyik pontra egy szám hivatkozik 1-6 között.</translation>
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/FirstScreen.qml" line="87"/>
         <source>When you are ready, click on me and try reproducing Braille characters.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ha elkészültél, kattints rám, és próbáld meg létrehozni a Braille betűket.</translation>
     </message>
 </context>
 <context>
@@ -3049,17 +3085,17 @@ István Somlai &lt;somist at bg-bp dot sulinet dot hu&gt;</translation>
     <message>
         <location filename="../src/activities/braille_alphabets/braille_alphabets.js" line="63"/>
         <source>Look at the Braille character map and observe how similar the first and second line are.</source>
-        <translation type="unfinished"></translation>
+        <translation>Nézd meg a Braille betűket, és figyeld meg, hogy mennyire hasonlít az első és a második vonal.</translation>
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/braille_alphabets.js" line="73"/>
         <source>Again, similar as the first line but take care, the &apos;W&apos; letter was added afterwards.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ismét hasonló, mint az első sor, de vigyázz: a „W” betűt később adták hozzá.</translation>
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/braille_alphabets.js" line="83"/>
         <source>This is easy, numbers are the same as letters from A to J.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ez könnyű, mert a számok megegyeznek a betűkkel A-tól J-ig.</translation>
     </message>
 </context>
 <context>
@@ -3555,8 +3591,8 @@ Ezekért %1 Ft-ot fizet, add vissza az aprót.</translation>
         <location filename="../src/activities/braille_alphabets/questions.js" line="119"/>
         <location filename="../src/activities/braille_alphabets/questions.js" line="123"/>
         <location filename="../src/activities/braille_alphabets/questions.js" line="127"/>
-        <source>Click on the dots in braille cell area to produce letter %1</source>
-        <translation type="unfinished"></translation>
+        <source>Click on the dots in braille cell area to produce the letter %1.</source>
+        <translation>A Braille cella területén a pontokra kattintva hozd létre ezt a betűt: %1.</translation>
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/questions.js" line="133"/>
@@ -3569,7 +3605,7 @@ Ezekért %1 Ft-ot fizet, add vissza az aprót.</translation>
         <location filename="../src/activities/braille_alphabets/questions.js" line="162"/>
         <location filename="../src/activities/braille_alphabets/questions.js" line="166"/>
         <location filename="../src/activities/braille_alphabets/questions.js" line="170"/>
-        <source>Click on the dots in braille cell area to produce number %1</source>
+        <source>Click on the dots in braille cell area to produce the number %1.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3578,7 +3614,7 @@ Ezekért %1 Ft-ot fizet, add vissza az aprót.</translation>
         <location filename="../src/activities/braille_alphabets/questions.js" line="184"/>
         <location filename="../src/activities/braille_alphabets/questions.js" line="188"/>
         <location filename="../src/activities/braille_alphabets/questions.js" line="192"/>
-        <source>Click on the dots in braille cell area to produce symbol %1</source>
+        <source>Click on the dots in braille cell area to produce the symbol %1.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

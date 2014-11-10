@@ -51,9 +51,16 @@
         <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
 An adding-up sum looks like this: 2 + 2 = 4
 The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you&apos;ll be very good at adding-up!
+In this game, these cards are hiding the two parts of an adding-up sum (also called an addition sum). You need to find the two parts of the sum, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole sum. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper sum. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the sums, you&apos;ve won the game! :)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
+An adding-up sum looks like this: 2 + 2 = 4
+The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you&apos;ll be very good at adding-up!
 
 In this game, these cards are hiding the two parts of an adding-up sum (also called an addition sum). You need to find the two parts of the sum, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole sum. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper sum. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the sums, you&apos;ve won the game! :)</source>
-        <translation>Você pode ver as cartas, mas não o que está do outro lado. Cada carta esconde uma adição ou a resposta de uma adição.
+        <translation type="vanished">Você pode ver as cartas, mas não o que está do outro lado. Cada carta esconde uma adição ou a resposta de uma adição.
 Uma adição se parece com isso: 2+2=4.
 Os números de um lado do sinal de igual (=) devem produzir o resultado que se encontra do outro lado. Assim 2 (1,2) e mais 2 (3,4) produzem 4. Conte alto e usando os seus dedos quando estiver trabalhando nisso, porque quanto mais maneiras diferentes você usar para fazer alguma coisa, melhor você se lembrará dela. Você também pode usar blocos ou botões ou qualquer coisa que possa contar. Se você tiver vários irmãos e irmãs você pode contar até eles! Ou os seus colegas de turma. Cante canções de contagem. Conte várias coisas, para praticar e você ficara muito bom em adições!
 
@@ -140,16 +147,10 @@ Nesse jogo, as cartas estão escondendo as duas partes da adição: uma carta po
         <translation>Adição e subtração</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="14"/>
-        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="14"/>
-        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="14"/>
-        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="14"/>
-        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="14"/>
-        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="14"/>
         <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
 
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the operations, you&apos;ve won the game! :)</source>
-        <translation>Você pode ver as cartas, mas não o que está do outro lado. Cada carta esconde uma operação ou a resposta de uma operação.
+        <translation type="vanished">Você pode ver as cartas, mas não o que está do outro lado. Cada carta esconde uma operação ou a resposta de uma operação.
 
 Nesse jogo, as cartas estão escondendo as duas partes de uma operação. Você precisa encontrar essas duas partes. Clique em uma carta para ver o que ela esconde e, então, tente encontrar a carta que complemente a operação. Você só pode virar duas cartas de cada vez, então você deverá lembrar onde a operação/resultado está, enquanto você procura pelo seu par. Você estará fazendo o papel dos sinais de igual e os números precisam de você para colocá-los juntos e fazer a operação correta. Quando você encontra o par, ambas as cartas desaparecem. Quando todas desaparecerem, você encontrou todas as operações e ganhou o jogo!</translation>
     </message>
@@ -390,6 +391,12 @@ Nesse jogo, as cartas estão escondendo as duas partes de uma operação. Você 
         <translation>Jogo da memória com multiplicações, contra o Tux</translation>
     </message>
     <message>
+        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="14"/>
+        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
+In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more then Tux and you&apos;ve won the game! :)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="10"/>
         <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="10"/>
         <source>Turn the cards over to find two numbers which multiply the same, until all the cards are gone.</source>
@@ -408,10 +415,14 @@ Nesse jogo, as cartas estão escondendo as duas partes de uma operação. Você 
         <translation>Multiplicação</translation>
     </message>
     <message>
-        <location filename="../src/activities/memory-math-mult-tux/ActivityInfo.qml" line="14"/>
+        <location filename="../src/activities/memory-math-mult/ActivityInfo.qml" line="14"/>
+        <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="14"/>
+        <location filename="../src/activities/memory-math-minus/ActivityInfo.qml" line="14"/>
+        <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="14"/>
+        <location filename="../src/activities/memory-math-add-minus-mult-div/ActivityInfo.qml" line="14"/>
+        <location filename="../src/activities/memory-math-div/ActivityInfo.qml" line="14"/>
         <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
-In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more then Tux and you&apos;ve won the game! :)</source>
+In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the operations, you&apos;ve won the game! :)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -660,6 +671,12 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Divisão</translation>
     </message>
     <message>
+        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="14"/>
+        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
+In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more than TUX and you&apos;ve won the game! :)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/activities/hexagon/ActivityInfo.qml" line="9"/>
         <source>hexagon</source>
         <translation>Hexágono</translation>
@@ -771,6 +788,12 @@ Atalhos:
         <translation>Jogo da memória com multiplicações e divisões, contra o Tux</translation>
     </message>
     <message>
+        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="14"/>
+        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
+In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more than Tux and you&apos;ve won the game! :)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/activities/memory-math-mult-div/ActivityInfo.qml" line="12"/>
         <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="12"/>
         <source>Practise multiplication, division, until all the cards are gone.</source>
@@ -781,13 +804,6 @@ Atalhos:
         <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="13"/>
         <source>Multiplication, division</source>
         <translation>Multiplicação, divisão</translation>
-    </message>
-    <message>
-        <location filename="../src/activities/memory-math-mult-div-tux/ActivityInfo.qml" line="14"/>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
-In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more than Tux and you&apos;ve won the game! :)</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/activities/clickgame/ActivityInfo.qml" line="9"/>
@@ -897,7 +913,6 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     <message>
         <location filename="../src/activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml" line="14"/>
         <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more than Tux, you&apos;ve won the game! :)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -980,9 +995,7 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     <message>
         <location filename="../src/activities/color_mix_light/ActivityInfo.qml" line="14"/>
         <source>The activity deals with mixing primary colors of light (additive mixing).
-
-In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.
-        </source>
+In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1008,6 +1021,15 @@ O comportamento de luzes coloridas é o contrário da mistura de tintas. Quanto 
         <translation>Encontre a saída do labirinto</translation>
     </message>
     <message>
+        <location filename="../src/activities/maze/ActivityInfo.qml" line="14"/>
+        <source>Use the keyboard arrows to move Tux up to the door.
+At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
+For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
+You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
+From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="12"/>
         <location filename="../src/activities/maze/ActivityInfo.qml" line="12"/>
         <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="12"/>
@@ -1022,7 +1044,15 @@ O comportamento de luzes coloridas é o contrário da mistura de tintas. Quanto 
         <translation>Saber usar as setas do teclado para movimentar um objeto.</translation>
     </message>
     <message>
-        <location filename="../src/activities/maze/ActivityInfo.qml" line="14"/>
+        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="14"/>
+        <source>Use the keyboard arrows to move Tux up to the door. Use the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
+At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
+For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
+You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
+From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Use the keyboard arrows to move Tux up to the door.
 
 At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
@@ -1033,7 +1063,7 @@ You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: 
 
 From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
 	</source>
-        <translation>Use as teclas de seta para mover o Tux até a porta.
+        <translation type="vanished">Use as teclas de seta para mover o Tux até a porta.
 
 Nos primeiros níveis, o Tux caminha devagar, um passo para cada vez que você pressionar a tecla.
 
@@ -1057,6 +1087,14 @@ A partir do nível 14, o modo de corrida estará habilitado automaticamente. Par
     <message>
         <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="14"/>
         <source>Use the keyboard arrows to move Tux up to the door. In this maze, the move is relative (first person). Use the up arrow to go forward. The other arrows let you turn Tux in another direction.
+At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
+For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
+You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
+From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Use the keyboard arrows to move Tux up to the door. In this maze, the move is relative (first person). Use the up arrow to go forward. The other arrows let you turn Tux in another direction.
 
 At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
 
@@ -1066,7 +1104,7 @@ You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: 
 
 From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
 </source>
-        <translation>Use as teclas de seta para mover o Tux até a porta. Neste labirinto, o movimento é relativo (primeira pessoa). Use a seta para cima para andar para frente. As outras setas viram o Tux para outra direção.
+        <translation type="vanished">Use as teclas de seta para mover o Tux até a porta. Neste labirinto, o movimento é relativo (primeira pessoa). Use a seta para cima para andar para frente. As outras setas viram o Tux para outra direção.
 
 Nos primeiros níveis, o Tux caminha devagar, um passo para cada vez que você pressionar a tecla.
 
@@ -1095,9 +1133,7 @@ A partir do nível 14, o modo de corrida estará habilitado automaticamente. Par
     <message>
         <location filename="../src/activities/color_mix/ActivityInfo.qml" line="14"/>
         <source>The activity deals with mixing primary colors of paint (subtractive mixing).
-
-In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.
-        </source>
+In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1143,7 +1179,6 @@ No caso da pintura, as tintas absorvem as diferentes cores da luz que incide sob
         <translation>Encontre a saída do labirinto invisível</translation>
     </message>
     <message>
-        <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="14"/>
         <source>Use the keyboard arrows to move Tux up to the door. Use the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
 
 At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
@@ -1154,7 +1189,7 @@ You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: 
 
 From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
 </source>
-        <translation>Use as teclas de seta para mover o Tux até a porta. Use a barra de espaço para alternar entre os modos visível e invisível. O modo visível apenas indica a sua posição, como um mapa. Você não pode mover o Tux nesse modo.
+        <translation type="vanished">Use as teclas de seta para mover o Tux até a porta. Use a barra de espaço para alternar entre os modos visível e invisível. O modo visível apenas indica a sua posição, como um mapa. Você não pode mover o Tux nesse modo.
 
 Nos primeiros níveis, o Tux caminha devagar, um passo para cada vez que você pressionar a tecla.
 
@@ -1526,7 +1561,6 @@ A partir do nível 14, o modo de corrida estará habilitado automaticamente. Par
     <message>
         <location filename="../src/activities/memory-math-minus-tux/ActivityInfo.qml" line="14"/>
         <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more operations than Tux and you&apos;ve won the game! :)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1582,6 +1616,14 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="14"/>
         <source>Looking at the rockwall, you can see a sparkle somewhere. Move the mouse cursor next to this sparkle and use the mousewheel to zoom in. If you zoomed in at maximum, a gold nugget will appear at the position of the sparkle. Click on the gold nugget to collect it.
+Having collected the nugget, use the mousewheel to zoom out again. If you zoomed out at maximum, another sparkle will appear, showing the next gold nugget to collect. Collect enough nuggets to complete the level.
+The truck in the lower, right corner of the screen will tell you the number of already collected nuggets and the total number of nuggets to collect in this level.
+To start the tutorial, click on professor Tux (available at level 1) and let him show you, what to do next.
+Have fun! :)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Looking at the rockwall, you can see a sparkle somewhere. Move the mouse cursor next to this sparkle and use the mousewheel to zoom in. If you zoomed in at maximum, a gold nugget will appear at the position of the sparkle. Click on the gold nugget to collect it.
 
 Having collected the nugget, use the mousewheel to zoom out again. If you zoomed out at maximum, another sparkle will appear, showing the next gold nugget to collect. Collect enough nuggets to complete the level.
 
@@ -1590,7 +1632,7 @@ The truck in the lower, right corner of the screen will tell you the number of a
 To start the tutorial, click on professor Tux (available at level 1) and let him show you, what to do next.
 
 Have fun! :)</source>
-        <translation>Olhando para a parede rochosa, você verá um brilho em algum lugar. Mova o cursor do mouse até esse brilho e use a roda do mouse para dar um zoom no local. Quando você chegar no zoom máximo, uma pepita de ouro aparecerá no local do brilho. Clique nessa pepita para coletá-la.
+        <translation type="vanished">Olhando para a parede rochosa, você verá um brilho em algum lugar. Mova o cursor do mouse até esse brilho e use a roda do mouse para dar um zoom no local. Quando você chegar no zoom máximo, uma pepita de ouro aparecerá no local do brilho. Clique nessa pepita para coletá-la.
 
 Após coletar a pepita, gire a roda do mouse no sentido contrário, para reduzir o zoom. Assim que você reduzi-lo ao mínimo, outro brilho aparecerá, indicando a posição da próxima pepita de ouro a ser coletada. Colete o número necessário de pepitas para completar o nível.
 
@@ -1601,7 +1643,7 @@ Para iniciar o tutorial, clique no professor Tux (disponível no nível 1) e dei
 Divirta-se!  :-)</translation>
     </message>
     <message>
-        <location filename="../src/activities/mining/ActivityInfo.qml" line="23"/>
+        <location filename="../src/activities/mining/ActivityInfo.qml" line="19"/>
         <source>Thanks to the Tuxpaint team for providing the following sounds under GPL:
 - realrainbow.ogg - used when a new gold nugget appears
 - metalpaint.wav - remixed and used when a gold nugget is collected</source>
@@ -1617,7 +1659,6 @@ Divirta-se!  :-)</translation>
     <message>
         <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="14"/>
         <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
 In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more than Tux,  and you&apos;ve won the game! :)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1656,7 +1697,6 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
 An adding-up sum looks like this: 2 + 2 = 4
 The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you&apos;ll be very good at adding-up!
-
 In this game, these cards are hiding the two parts of an adding-up sum (also called an addition sum). You need to find the two parts of the sum, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole sum. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper sum. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more sums as Tux and you&apos;ve won the game! :)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1669,13 +1709,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="9"/>
         <source>Division memory game against Tux</source>
         <translation>Jogo da memória com divisões, contra o Tux</translation>
-    </message>
-    <message>
-        <location filename="../src/activities/memory-math-div-tux/ActivityInfo.qml" line="14"/>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
-In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found more than TUX and you&apos;ve won the game! :)</source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/activities/drawnumber/ActivityInfo.qml" line="9"/>
@@ -1816,9 +1849,8 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Para equilibrar a balança, movimente os pesos à esquerda ou à direita. Eles podem ser colocados em qualquer ordem.</translation>
     </message>
     <message>
-        <location filename="../src/activities/scalesboard/ActivityInfo.qml" line="15"/>
         <source>The painting is an original painting created by Virginie MOREAU (virginie.moreau@free.fr) in 2001. Its name is &apos;Spices Seller in Egypt&apos;. It is released under the GPL license.</source>
-        <translation>A pintura foi originalmente produzida por Virginie MOREAU (virginie.moreau@free.fr) em 2001. Seu nome é &quot;Vendedor de Especiarias no Egito&quot;. Ela foi liberada sob a licença GPL.</translation>
+        <translation type="vanished">A pintura foi originalmente produzida por Virginie MOREAU (virginie.moreau@free.fr) em 2001. Seu nome é &quot;Vendedor de Especiarias no Egito&quot;. Ela foi liberada sob a licença GPL.</translation>
     </message>
     <message>
         <location filename="../src/activities/sudoku/ActivityInfo.qml" line="28"/>
@@ -1847,24 +1879,23 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/ActivityInfo.qml" line="9"/>
-        <source>Discover the Braille System</source>
-        <translation type="unfinished"></translation>
+        <source>Discover the Braille system</source>
+        <translation>O sistema Braille</translation>
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/ActivityInfo.qml" line="10"/>
-        <source>Learn and memorize the Braille System</source>
+        <source>Learn and memorize the Braille system</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/ActivityInfo.qml" line="11"/>
         <source>Let kids discover the Braille system.</source>
-        <translation type="unfinished"></translation>
+        <translation>Permitir às crianças descobrir o sistema Braille.</translation>
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/ActivityInfo.qml" line="13"/>
-        <source>The screen has 3 sections: an interactive braille cell, an instruction telling you the letter to reproduce,
- and at the top the Braille letters to use as a reference. Each level teaches a set of 10 letters.</source>
-        <translation type="unfinished"></translation>
+        <source>The screen has 3 sections: an interactive braille cell, an instruction telling you the letter to reproduce, and at the top the Braille letters to use as a reference. Each level teaches a set of 10 letters.</source>
+        <translation>Essa tela possui 3 seções: uma célula Braille interativa, uma instrução indicando a letra a ser reproduzida e, no alto, as letras em Braille para você usar como referência. Cada nível possui um conjunto de 10 letras.</translation>
     </message>
 </context>
 <context>
@@ -2267,17 +2298,22 @@ In this game, these cards are hiding the two parts of an operation. You need to 
     <message>
         <location filename="../src/activities/braille_alphabets/FirstScreen.qml" line="37"/>
         <source>Braille : Unlocking the Code</source>
-        <translation type="unfinished"></translation>
+        <translation>Braille: Destravando o código</translation>
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/FirstScreen.qml" line="65"/>
-        <source>The Braille system is a method that is used by blind people to read and write.Each Braille character, or cell, is made up of six dot positions, arranged in a rectangle containing two columns of three dots each. As seen on the left, each dot is referenced by a number from 1 to 6.</source>
-        <translation type="unfinished"></translation>
+        <source>The Braille system is a method that is used by blind people to read and write.</source>
+        <translation>O sistema Braille é um método que é usado por pessoas cegas para ler e escrever.</translation>
+    </message>
+    <message>
+        <location filename="../src/activities/braille_alphabets/FirstScreen.qml" line="66"/>
+        <source>Each Braille character, or cell, is made up of six dot positions, arranged in a rectangle containing two columns of three dots each. As seen on the left, each dot is referenced by a number from 1 to 6.</source>
+        <translation>Cada caractere Braille, ou célula, é constituído de pontos em seis posições, arranjados em um retângulo contendo duas colunas de três pontos cada. Como visto à esquerda, cada ponto é referenciado por um número, de 1 a 6.</translation>
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/FirstScreen.qml" line="87"/>
         <source>When you are ready, click on me and try reproducing Braille characters.</source>
-        <translation type="unfinished"></translation>
+        <translation>Quando estiver pronto, clique em mim e tente reproduzir os caracteres Braille.</translation>
     </message>
 </context>
 <context>
@@ -3051,17 +3087,17 @@ Rafael Ferreira &lt;rafael.f.f1@gmail.com&gt;</translation>
     <message>
         <location filename="../src/activities/braille_alphabets/braille_alphabets.js" line="63"/>
         <source>Look at the Braille character map and observe how similar the first and second line are.</source>
-        <translation type="unfinished"></translation>
+        <translation>Observe o mapa do caractere Braille e veja como a primeira e a segunda linha são similares.</translation>
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/braille_alphabets.js" line="73"/>
         <source>Again, similar as the first line but take care, the &apos;W&apos; letter was added afterwards.</source>
-        <translation type="unfinished"></translation>
+        <translation>Novamente, similar à primeira linha, mas tome cuidado, a letra &apos;W&apos; foi adicionada depois.</translation>
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/braille_alphabets.js" line="83"/>
         <source>This is easy, numbers are the same as letters from A to J.</source>
-        <translation type="unfinished"></translation>
+        <translation>Essa é fácil, os números são os mesmos que as letras de A a J.</translation>
     </message>
 </context>
 <context>
@@ -3557,8 +3593,8 @@ Ele lhe deu $ %1, por favor, devolva-lhe o troco.</translation>
         <location filename="../src/activities/braille_alphabets/questions.js" line="119"/>
         <location filename="../src/activities/braille_alphabets/questions.js" line="123"/>
         <location filename="../src/activities/braille_alphabets/questions.js" line="127"/>
-        <source>Click on the dots in braille cell area to produce letter %1</source>
-        <translation type="unfinished"></translation>
+        <source>Click on the dots in braille cell area to produce the letter %1.</source>
+        <translation>Clique nos pontos na área da célula Braille para produzir a letra %1.</translation>
     </message>
     <message>
         <location filename="../src/activities/braille_alphabets/questions.js" line="133"/>
@@ -3571,7 +3607,7 @@ Ele lhe deu $ %1, por favor, devolva-lhe o troco.</translation>
         <location filename="../src/activities/braille_alphabets/questions.js" line="162"/>
         <location filename="../src/activities/braille_alphabets/questions.js" line="166"/>
         <location filename="../src/activities/braille_alphabets/questions.js" line="170"/>
-        <source>Click on the dots in braille cell area to produce number %1</source>
+        <source>Click on the dots in braille cell area to produce the number %1.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3580,7 +3616,7 @@ Ele lhe deu $ %1, por favor, devolva-lhe o troco.</translation>
         <location filename="../src/activities/braille_alphabets/questions.js" line="184"/>
         <location filename="../src/activities/braille_alphabets/questions.js" line="188"/>
         <location filename="../src/activities/braille_alphabets/questions.js" line="192"/>
-        <source>Click on the dots in braille cell area to produce symbol %1</source>
+        <source>Click on the dots in braille cell area to produce the symbol %1.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
