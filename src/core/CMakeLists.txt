@@ -85,7 +85,15 @@ else()
   set(_lib_prefix "lib")
 endif()
 
-set(_qt_plugins2 imageformats/${_lib_prefix}qsvg mediaservice/${_lib_prefix}qtmedia_audioengine)
+set(_qt_plugins2 imageformats/${_lib_prefix}qsvg)
+if(ANDROID)
+  list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}qtmedia_audioengine)
+else()
+  list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}gstaudiodecoder
+    mediaservice/${_lib_prefix}gstcamerabin
+    mediaservice/${_lib_prefix}gstmediacapture
+    mediaservice/${_lib_prefix}gstmediaplayer)
+endif()
 
 set(_qml_plugins
   QtQuick/Controls/${_lib_prefix}qtquickcontrolsplugin
