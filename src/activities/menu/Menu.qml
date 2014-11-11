@@ -29,7 +29,16 @@ ActivityBase {
     focus: true
     activityInfo: ActivityInfoTree.rootMenu
 
-    onHome: pageView.depth === 1 ? Core.quit(menuActivity) : pageView.pop()
+    onHome: {
+        if(pageView.depth === 1) {
+            Core.quit(menuActivity);
+        }
+        else {
+            pageView.pop();
+            // Restore focus that has been taken by the loaded activity
+            focus = true;
+        }
+    }
 
     onDisplayDialog: pageView.push(dialog)
 
@@ -101,6 +110,16 @@ ActivityBase {
         property int sectionCellWidth: sectionIconWidth * 1.1
         property int sectionCellHeight: sectionIconHeight * 1.1
 
+        property var currentActiveGrid: activitiesGrid
+        Keys.onTabPressed: currentActiveGrid = ((currentActiveGrid == activitiesGrid) ?
+                                                    section : activitiesGrid);
+        Keys.onEnterPressed: currentActiveGrid.currentItem.selectCurrentItem();
+        Keys.onReturnPressed: currentActiveGrid.currentItem.selectCurrentItem();
+        Keys.onRightPressed: currentActiveGrid.moveCurrentIndexRight();
+        Keys.onLeftPressed: currentActiveGrid.moveCurrentIndexLeft();
+        Keys.onDownPressed: currentActiveGrid.moveCurrentIndexDown();
+        Keys.onUpPressed: currentActiveGrid.moveCurrentIndexUp();
+
         GridView {
             id: section
             model: sections
@@ -138,11 +157,15 @@ ActivityBase {
                     MouseArea {
                         anchors.fill: backgroundSection
                         onClicked: {
-                            particles.emitter.burst(10)
-                            ActivityInfoTree.filterByTag(modelData.tag)
-                            menuActivity.currentTag = modelData.tag
-                            section.currentIndex = index
+                            selectCurrentItem()
                         }
+                    }
+
+                    function selectCurrentItem() {
+                        particles.emitter.burst(10)
+                        ActivityInfoTree.filterByTag(modelData.tag)
+                        menuActivity.currentTag = modelData.tag
+                        section.currentIndex = index
                     }
                 }
             }
@@ -165,6 +188,7 @@ ActivityBase {
         property int cellHeight2: iconHeight * 1.5
 
         GridView {
+            id: activitiesGrid
             anchors {
                 top: horizontal ? section.bottom : parent.top
                 bottom: parent.bottom
@@ -177,7 +201,9 @@ ActivityBase {
             focus: true
             clip: true
             model: ActivityInfoTree.menuTree
+
             delegate: Item {
+                id: delegateItem
                 width: iconWidth+(main.width%iconWidth)/Math.round(main.width/iconWidth)
                 height: iconHeight
                 Rectangle {
@@ -186,8 +212,8 @@ ActivityBase {
                     height: cellHeight2 - 10
                     anchors.horizontalCenter: parent.horizontalCenter
                     opacity: 0.6
-                    border.width: 2
-                    border.color: "black"
+                    border.width: delegateItem.GridView.isCurrentItem ? 4 : 2
+                    border.color: delegateItem.GridView.isCurrentItem ? "red" : "black"
                 }
                 Image {
                     source: "qrc:/gcompris/src/activities/" + icon;
@@ -222,13 +248,19 @@ ActivityBase {
                 }
                 MouseArea {
                     anchors.fill: background
+                    hoverEnabled: true
                     onClicked: {
-                        particles.emitter.burst(50)
-                        ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
-                        activityLoader.source = "qrc:/gcompris/src/activities/" +
-                                ActivityInfoTree.menuTree[index].name
-                        if (activityLoader.status == Loader.Ready) loadActivity()
+                        selectCurrentItem()
                     }
+                    onEntered: activitiesGrid.currentIndex = index
+                }
+
+                function selectCurrentItem() {
+                    particles.emitter.burst(50)
+                    ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
+                    activityLoader.source = "qrc:/gcompris/src/activities/" +
+                            ActivityInfoTree.menuTree[index].name
+                    if (activityLoader.status == Loader.Ready) loadActivity()
                 }
             }
         }
