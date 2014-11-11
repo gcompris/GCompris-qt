@@ -53,7 +53,7 @@ Item {
             Qt.quit()
         } else if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_B) {
-            // Ctrl+B toggle sthe bar
+            // Ctrl+B toggle the bar
             ApplicationSettings.isBarHidden = !ApplicationSettings.isBarHidden;
         } else if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_F) {
