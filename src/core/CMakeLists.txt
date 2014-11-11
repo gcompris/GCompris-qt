@@ -86,9 +86,7 @@ else()
 endif()
 
 set(_qt_plugins2 imageformats/${_lib_prefix}qsvg)
-if(ANDROID)
-  list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}qtmedia_audioengine)
-else()
+if(UNIX AND NOT ANDROID)
   list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}gstaudiodecoder
     mediaservice/${_lib_prefix}gstcamerabin
     mediaservice/${_lib_prefix}gstmediacapture
