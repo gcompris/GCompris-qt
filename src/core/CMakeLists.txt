@@ -167,6 +167,11 @@ endif()
 configure_file(${CMAKE_MODULE_PATH}/FixBundle.cmake.in FixBundle.cmake)
 install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
 
+# install a startup script for linux bundle
+if(UNIX)
+  install(PROGRAMS ../../tools/gcompris.sh DESTINATION bin)
+endif()
+
 # Packaging
 # =========
 
