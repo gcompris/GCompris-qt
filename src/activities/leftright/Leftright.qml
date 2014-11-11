@@ -33,6 +33,7 @@ ActivityBase {
     Keys.onRightPressed: Activity.rightClickPressed()
 
     pageComponent: Image {
+        id: background
         source: "qrc:/gcompris/src/activities/leftright/resource/back.svgz"
         sourceSize.width: parent.width
         focus: true
@@ -58,7 +59,7 @@ ActivityBase {
 
         Item {
             id: topBorder
-            height: activity.height * 0.1
+            height: background.height * 0.1
         }
 
         Image {
@@ -66,8 +67,8 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: topBorder.bottom
             fillMode: Image.PreserveAspectFit
-            sourceSize.width: Math.min(activity.width,
-                                       (main.height - leftButton.height) * 1.3)
+            sourceSize.width: Math.min(background.width,
+                                       (background.height - leftButton.height) * 1.3)
             source: "qrc:/gcompris/src/activities/leftright/resource/blackboard.svgz"
 
             Image {
@@ -136,7 +137,7 @@ ActivityBase {
             AnswerButton {
                 id: leftButton
                 width: blackBoard.width * 0.45
-                height: activity.height * 0.15
+                height: background.height * 0.15
                 anchors.left: blackBoard.left
                 anchors.top: blackBoard.bottom
                 anchors.margins: 10
@@ -147,7 +148,7 @@ ActivityBase {
             AnswerButton {
                 id: rightButton
                 width: blackBoard.width * 0.45
-                height: activity.height * 0.15
+                height: background.height * 0.15
                 anchors.right: blackBoard.right
                 anchors.top: blackBoard.bottom
                 anchors.margins: 10

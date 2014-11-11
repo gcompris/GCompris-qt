@@ -28,6 +28,7 @@ import GCompris 1.0
 AnimatedSprite {
     id: fish
     property Item activity
+    property Item background
     property Item bar
     property real targetX // The x target of the fish
     property int duration: 5000
@@ -35,7 +36,7 @@ AnimatedSprite {
     interpolate: true
 
     Component.onCompleted: {
-        targetX = activity.width - fish.width
+        targetX = background.width - fish.width
         x = targetX
     }
 
@@ -68,18 +69,18 @@ AnimatedSprite {
     }
 
     onXChanged: {
-        if( (x > activity.width - fish.width && rotate.angle == 0) ||
+        if( (x > background.width - fish.width && rotate.angle == 0) ||
             (x == targetX && rotate.angle == 0) ) {
             rotateLeftAnimation.start()
             targetX = 0
             x = targetX
             y = Activity.currentLevel > 0
-                    ? bar.height + Math.random() * (activity.height - bar.height - fish.height)
+                    ? bar.height + Math.random() * (background.height - bar.height - fish.height)
                     : y
             bubbleEffect.restart()
         } else if(x == 0 && rotate.angle == 180) {
             rotateRightAnimation.start()
-            targetX = activity.width - fish.width
+            targetX = background.width - fish.width
             x = targetX
             bubbleEffect.restart()
         }
