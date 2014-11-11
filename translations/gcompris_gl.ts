@@ -55,18 +55,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
-An adding-up sum looks like this: 2 + 2 = 4
-The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you&apos;ll be very good at adding-up!
-
-In this game, these cards are hiding the two parts of an adding-up sum (also called an addition sum). You need to find the two parts of the sum, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole sum. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper sum. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the sums, you&apos;ve won the game! :)</source>
-        <translation type="vanished">Podes ver algunhas cartas, mais non podes ver o que hai no outro lado delas. Cada carta agocha unha suma ou a súa solución.
-Unha suma ten esta forma: 2 + 2 = 4
-Os números a un lado do signo igual (=) teñen que ser iguais ao número aos do outro lado. Así, 2 (1, 2) e 2 máis (3, 4) fan 4. Conta en voz alta para resolver a suma e conta cos teus dedos, porque de canto máis formas diferentes fas algo, mellor o lembrarás. Tamén podes usar bloques, botóns ou calquera cousa que poidas contar. Se tes moitos irmáns e irmás, tamén podes contalos! Ou os nenos e nenas da túa aula na escola. Conta cantando cancións ou conta moitas cousas, para practicar e serás moi bo sumando!
-
-Neste xogo, estas cartas agochan as dúas partes dunha suma. Tes que atopar as dúas partes da suma e xuntalas de novo. Preme nunha carta para ver que número agocha, logo busca a outra carta que vai con ela para facer unha suma completa. Só podes darlle a volta a dúas cartas cada vez, polo que terás que lembrar onde se agochan os números, de tal xeito que poderás facelos coincidir cando atopes a outra metade. Estás a facer o traballo do signo igual e os números precisan de ti para pórse xuntos e facer unha suma correcta. Cando fagas iso, ambas as dúas cartas desaparecerán! Cando fixeses desaparecer todas, isto é, cando atopases todas as sumas, gañarás o xogo! :)</translation>
-    </message>
-    <message>
         <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="18"/>
         <source></source>
         <translation></translation>
@@ -137,22 +125,10 @@ Neste xogo, estas cartas agochan as dúas partes dunha suma. Tes que atopar as d
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Practise subtraction, until all the cards are gone.</source>
-        <translation type="vanished">Practicar a resta ata que todas as tarxetas desaparezan.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13"/>
         <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="13"/>
         <source>Addition and subtraction</source>
         <translation>Suma e resta</translation>
-    </message>
-    <message>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
-In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the operations, you&apos;ve won the game! :)</source>
-        <translation type="vanished">Podes ver algunhas cartas mais non podes ver o que hai no outro lado delas. Cada carta agocha unha operación matemática ou a súa solución.
-
-Neste xogo, estas cartas agochan as dúas partes dunha operación. Tes que atopar as dúas partes da operación e poñelas xuntas de novo. Preme nunha carta para ver que número agocha, logo busca a outra carta que vai con ela para facer unha operación completa. Só lle podes dar a volta a dúas cartas cada vez, polo que terás que lembrar onde se agochan os números, de tal xeito que poderás facelos coincidir cando atopes a outra metade. Estás a facer o traballo do signo igual e os números precisan da túa axuda para pórse xuntos e faceren unha igualdade correcta. Cando fagas iso, ambas as dúas cartas desaparecerán! Cando fixeses desaparecer toda, isto é, cando atopases todas as operacións, gañarás o xogo! :)</translation>
     </message>
     <message>
         <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="9"/>
@@ -269,10 +245,6 @@ Neste xogo, estas cartas agochan as dúas partes dunha operación. Tes que atopa
         <location filename="../src/activities/erase/ActivityInfo.qml" line="14"/>
         <source>Move the mouse until all the blocks disappear. You can add you own images under the directory &apos;~/My GCompris/erase&apos;.</source>
         <translation>Move o rato até que desaparezan todos os bloques. Podes engadir as túas propias imaxes no directorio &apos;~/My GCompris/erase&apos;.</translation>
-    </message>
-    <message>
-        <source>Animal pictures are taken from the Animal Photography Page of Ralf Schmode (&amp;lt;http://schmode.net/&amp;gt;) and from LE BERRE Daniel. These people kindly gave GCompris the authorization to include their pictures. Thanks a lot, both of you.</source>
-        <translation type="vanished">As fotografías de animais tomáronse da páxina de fotografías de animais de Ralf Schmode (&amp;lt;http://schmode.net/&amp;gt;) e de Le Berre Daniel. Estas persoas permitíronnos amabelmente incluír as súas fotos en GCompris. Moitísimas grazas a ambos os dous.</translation>
     </message>
     <message>
         <location filename="../src/activities/algorithm/ActivityInfo.qml" line="9"/>
@@ -999,18 +971,6 @@ In case of light it is just the opposite of mixing color with paints! The more l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>
-The activity deals with mixing primary colors of light (additive mixing).
-
-In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.
-        </source>
-        <translation type="vanished">
-A actividade trata sobre a mestura das cores primarias da luz (mestura de adición).
-
-No caso da luz, esta funciona xusto do modo oposto ao das cores con pintura! Canta máis luz engadas, máis clara será a cor resultante que obterás. As cores primarias son o vermello, o verde e o azul.
-        </translation>
-    </message>
-    <message>
         <location filename="../src/activities/maze/ActivityInfo.qml" line="9"/>
         <source>Maze</source>
         <translation>Labirinto</translation>
@@ -1053,28 +1013,6 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Use the keyboard arrows to move Tux up to the door.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-	</source>
-        <translation type="vanished">Usa as frechas do teclado para mover a Tux cara a porta.
-
-Nos primeiros niveis Tux camiña tranquilamente (un paso con cada tecla) a través do labirinto.
-
-Nos labirintos máis longos hai un modo de camiñar especial, chamado «modo de carreira». Se este modo está activado, Tux percorrerá todo o camiño automaticamente ata que se encontre cunha bifurcación e decidas que camiño seguir.
-
-Podes ver se este modo está activado ou non ollando para os pés de Tux: se está descalzo este modo está desactivado; se leva unha zapatillas de deporte vermellas, significa que o modo de carreira está activado.
-
-A partir do nivel 14 este modo actívase automaticamente. Se queres utilizar esta funcionalidade nos primeiros niveis ou desactivala nos niveis avanzados, preme en Tux ou na icona Descalzo/Zapatillas que está no canto esquerdo superior da pantalla, para alternar o estado do modo de carreira.
-	</translation>
-    </message>
-    <message>
         <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="9"/>
         <source>Relative Maze</source>
         <translation type="unfinished"></translation>
@@ -1092,28 +1030,6 @@ For larger labyrinths, there is a special walking mode, called &quot;run-fast-mo
 You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
 From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Use the keyboard arrows to move Tux up to the door. In this maze, the move is relative (first person). Use the up arrow to go forward. The other arrows let you turn Tux in another direction.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-</source>
-        <translation type="vanished">Usa as frechas do teclado para mover a Tux cara a porta. Neste labirinto o movemento é relativo (primeira persoa). Usa a frecha Arriba para avanzar. As outras frechas permítenche dirixir a Tux noutra dirección.
-
-Nos primeiros niveis Tux camiña tranquilamente (un paso con cada tecla) a través do labirinto.
-
-Nos labirintos máis longos hai un modo de camiñar especial, chamado «modo de carreira». Se este modo está activado, Tux percorrerá todo o camiño automaticamente ata que se encontre cunha bifurcación e decidas que camiño seguir.
-
-Podes ver se este modo está activado ou non ollando para os pés de Tux: se está descalzo este modo está desactivado; se leva unha zapatillas de deporte vermellas, significa que o modo de carreira está activado.
-
-A partir do nivel 14 este modo actívase automaticamente. Se queres utilizar esta funcionalidade nos primeiros niveis ou desactivala nos niveis avanzados, preme en Tux ou na icona Descalzo/Zapatillas que está no canto esquerdo superior da pantalla, para alternar o estado do modo de carreira.
-</translation>
     </message>
     <message>
         <location filename="../src/activities/color_mix/ActivityInfo.qml" line="9"/>
@@ -1135,18 +1051,6 @@ A partir do nivel 14 este modo actívase automaticamente. Se queres utilizar est
         <source>The activity deals with mixing primary colors of paint (subtractive mixing).
 In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>
-The activity deals with mixing primary colors of paint (subtractive mixing).
-
-In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.
-        </source>
-        <translation type="vanished">
-A actividade trata sobre a mestura das cores primarias da pintura (mestura subtractiva).
-
-No caso de pinturas en que as tintas absorban diferentes cores da luz que incide nelas, faino subtraéndoo do que se observa. Canta máis tinta engadas, máis luz se absorbe e máis escura se torna a combinación de cor obtida. Podemos mesturar tres cores primarias para facer moitas cores novas.  As cores primarias para a pintura ou a tinta son o cian (un matiz do azul), o maxenta (un matiz do rosa) e o amarelo.
-        </translation>
     </message>
     <message>
         <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="9"/>
@@ -1177,28 +1081,6 @@ No caso de pinturas en que as tintas absorban diferentes cores da luz que incide
         <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="10"/>
         <source>Find your way out of the invisible maze</source>
         <translation>Busca a saída do labirinto invisíbel</translation>
-    </message>
-    <message>
-        <source>Use the keyboard arrows to move Tux up to the door. Use the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-</source>
-        <translation type="vanished">Usa as frechas do teclado para mover a Tux cara a porta. Usa a barra de espazo para cambiar entre o modo de invisibilidade e visibilidade. O modo de visibilidade só che indica a túa posición, como nun mapa. Non podes mover a Tux no modo de visibilidade.
-
-Nos primeiros niveis Tux camiña tranquilamente (un paso con cada tecla) a través do labirinto.
-
-Nos labirintos máis longos hai un modo de camiñar especial, chamado «modo de carreira». Se este modo está activado, Tux percorrerá todo o camiño automaticamente ata que se encontre cunha bifurcación e decidas que camiño seguir.
-
-Podes ver se este modo está activado ou non ollando para os pés de Tux: se está descalzo este modo está desactivado; se leva unha zapatillas de deporte vermellas, significa que o modo de carreira está activado.
-
-A partir do nivel 14 este modo actívase automaticamente. Se queres utilizar esta funcionalidade nos primeiros niveis ou desactivala nos niveis avanzados, preme en Tux ou na icona Descalzo/Zapatillas que está no canto esquerdo superior da pantalla, para alternar o estado do modo de carreira.
-</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="9"/>
@@ -1332,10 +1214,6 @@ A partir do nivel 14 este modo actívase automaticamente. Se queres utilizar est
         <location filename="../src/activities/football/ActivityInfo.qml" line="14"/>
         <source>Point the mouse and click on the ball, to set the speed and direction of the ball.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Point the mouse and click on the ball, to set the speed and direction of the ball. The closer you click to the center, the slower the ball moves.</source>
-        <translation type="vanished">Apunta co rato e preme na bóla para fixar a súa velocidade e a súa dirección. Canto máis preto do centro premas máis lento se moverá a bóla.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="5"/>
@@ -1595,10 +1473,6 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>A minería do ouro</translation>
     </message>
     <message>
-        <source>Use the mousewheel to approach the rockwall an look for gold nuggets.</source>
-        <translation type="vanished">Usa a roda do rato para achegarte ao muro de pedra e procurar pebidas de ouro.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="10"/>
         <source>Use the mousewheel to approach the rockwall and look for gold nuggets.</source>
         <translation>Usa a roda do rato para achegarte ao muro de pedra e procurar pebidas de ouro.</translation>
@@ -1621,26 +1495,6 @@ The truck in the lower, right corner of the screen will tell you the number of a
 To start the tutorial, click on professor Tux (available at level 1) and let him show you, what to do next.
 Have fun! :)</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Looking at the rockwall, you can see a sparkle somewhere. Move the mouse cursor next to this sparkle and use the mousewheel to zoom in. If you zoomed in at maximum, a gold nugget will appear at the position of the sparkle. Click on the gold nugget to collect it.
-
-Having collected the nugget, use the mousewheel to zoom out again. If you zoomed out at maximum, another sparkle will appear, showing the next gold nugget to collect. Collect enough nuggets to complete the level.
-
-The truck in the lower, right corner of the screen will tell you the number of already collected nuggets and the total number of nuggets to collect in this level.
-
-To start the tutorial, click on professor Tux (available at level 1) and let him show you, what to do next.
-
-Have fun! :)</source>
-        <translation type="vanished">Se observas o muro de pedra, poderás ver unha escintilación nalgún lugar. Move o cursor do rato preto desta escintilación e usa a roda do rato para ampliar o zoom. Se pos o zoom ao máximo, aparecerá unha pebida de ouro na posición en que está a escintilación. Preme na pebida de ouro para collela.
-
-Despois de coller a pebida, usa a roda do rato para reducir o zoom de novo. Se reduces o zoom ao máximo aparecerá outra escintilación, que mostra onde encontrar a seguinte pebida para coller. Faite coas suficientes pebidas para pasar ao seguinte nivel.
-
-O camión que está no canto inferior dereito da pantalla indicarache o número de pebidas recolleitas e o total de pebidas para recoller nese nivel.
-
-Para comezar coas instrucións, preme no profesor Tux (dispoñíbel no nivel 1) e permite que che mostre o que facer.
-
-Divírtete! :)</translation>
     </message>
     <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="19"/>
@@ -1849,10 +1703,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation>Para equilibrar a balanza move os pesos á dereita ou á esquerda. Os pesos poden colocarse en calquera orde.</translation>
     </message>
     <message>
-        <source>The painting is an original painting created by Virginie MOREAU (virginie.moreau@free.fr) in 2001. Its name is &apos;Spices Seller in Egypt&apos;. It is released under the GPL license.</source>
-        <translation type="vanished">O cadro é orixinal e creouno Virginie Moreau (virginie.moreau@free.fr) en 2001. O seu nome é «Vendedor de especias no Exipto». Está publicado baixo a licenza GPL.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/sudoku/ActivityInfo.qml" line="28"/>
         <source>Sudoku, place unique symbols in a square.</source>
         <translation>Sudoku: coloca símbolos non repetidos nun cadrado.</translation>
@@ -2003,8 +1853,17 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation>Sobre o GCompris</translation>
     </message>
     <message>
+        <location filename="../src/core/DialogAbout.qml" line="29"/>
+        <source>translator-credits</source>
+        <extracomment>Replace this string with your names, one name per line.</extracomment>
+        <translation type="unfinished">Ignacio Casal Quinteiro
+Paula Iglesias
+Gonçalo Cordeiro</translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogAbout.qml" line="33"/>
         <source>GCompris Home Page: http://gcompris.net</source>
-        <translation type="vanished">Páxina principal de GCompris: http://gcompris.net</translation>
+        <translation>Páxina principal de GCompris: http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -2015,202 +1874,202 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="100"/>
+        <location filename="../src/core/DialogConfig.qml" line="99"/>
         <source>Enable audio voices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="109"/>
+        <location filename="../src/core/DialogConfig.qml" line="108"/>
         <source>Enable audio effects</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="118"/>
+        <location filename="../src/core/DialogConfig.qml" line="117"/>
         <source>Fullscreen</source>
         <translation>Pantalla completa</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="127"/>
+        <location filename="../src/core/DialogConfig.qml" line="126"/>
         <source>Virtual Keyboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="137"/>
+        <location filename="../src/core/DialogConfig.qml" line="136"/>
         <source>Enable automatic downloads/updates of sound files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="152"/>
+        <location filename="../src/core/DialogConfig.qml" line="151"/>
         <source>Font selector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="169"/>
+        <location filename="../src/core/DialogConfig.qml" line="168"/>
         <source>Language selector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="206"/>
+        <location filename="../src/core/DialogConfig.qml" line="205"/>
         <source>Sounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="221"/>
+        <location filename="../src/core/DialogConfig.qml" line="220"/>
         <source>Check for updates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="222"/>
+        <location filename="../src/core/DialogConfig.qml" line="221"/>
         <source>Download</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="241"/>
+        <location filename="../src/core/DialogConfig.qml" line="240"/>
         <source>Difficulty filter:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="470"/>
+        <location filename="../src/core/DialogConfig.qml" line="469"/>
         <source>You selected a new locale</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="471"/>
+        <location filename="../src/core/DialogConfig.qml" line="470"/>
         <source>Do you want to download the corresponding sound files now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="486"/>
+        <location filename="../src/core/DialogConfig.qml" line="485"/>
         <source>English (Great Britain)</source>
         <translation>Inglés (Reino Unido)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="487"/>
+        <location filename="../src/core/DialogConfig.qml" line="486"/>
         <source>English (United States)</source>
         <translation>Inglés (Estados Unidos)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="488"/>
+        <location filename="../src/core/DialogConfig.qml" line="487"/>
         <source>Bulgarian</source>
         <translation>Búlgaro</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="489"/>
+        <location filename="../src/core/DialogConfig.qml" line="488"/>
         <source>Breton</source>
         <translation>Bretón</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="490"/>
+        <location filename="../src/core/DialogConfig.qml" line="489"/>
         <source>Czech Republic</source>
         <translation>República Checa</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="491"/>
+        <location filename="../src/core/DialogConfig.qml" line="490"/>
         <source>Danish</source>
         <translation>Danés</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="492"/>
+        <location filename="../src/core/DialogConfig.qml" line="491"/>
         <source>German</source>
         <translation>Alemán</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="493"/>
+        <location filename="../src/core/DialogConfig.qml" line="492"/>
         <source>Greek</source>
         <translation>Grego</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="494"/>
+        <location filename="../src/core/DialogConfig.qml" line="493"/>
         <source>Spanish</source>
         <translation>Español</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="495"/>
+        <location filename="../src/core/DialogConfig.qml" line="494"/>
         <source>French</source>
         <translation>Francés</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="496"/>
+        <location filename="../src/core/DialogConfig.qml" line="495"/>
         <source>Scottish Gaelic</source>
         <translation>Gaélico escocés</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="497"/>
+        <location filename="../src/core/DialogConfig.qml" line="496"/>
         <source>Galician</source>
         <translation>Galego</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="498"/>
+        <location filename="../src/core/DialogConfig.qml" line="497"/>
         <source>Hungarian</source>
         <translation>Húngaro</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="499"/>
+        <location filename="../src/core/DialogConfig.qml" line="498"/>
         <source>Lithuanian</source>
         <translation>Lituano</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="500"/>
+        <location filename="../src/core/DialogConfig.qml" line="499"/>
         <source>Latvian</source>
         <translation>Lituano</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="501"/>
+        <location filename="../src/core/DialogConfig.qml" line="500"/>
         <source>Dutch</source>
         <translation>Holandés</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="502"/>
+        <location filename="../src/core/DialogConfig.qml" line="501"/>
         <source>Norwegian Nynorsk</source>
         <translation>Noruegués Nynorsk</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="503"/>
+        <location filename="../src/core/DialogConfig.qml" line="502"/>
         <source>Polish</source>
         <translation>Polaco</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="504"/>
+        <location filename="../src/core/DialogConfig.qml" line="503"/>
         <source>Russian</source>
         <translation>Ruso</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="505"/>
+        <location filename="../src/core/DialogConfig.qml" line="504"/>
         <source>Portuguese (Brazil)</source>
         <translation>Portugués (Brasil)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="506"/>
+        <location filename="../src/core/DialogConfig.qml" line="505"/>
         <source>Slovak</source>
         <translation>Eslovaco</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="507"/>
+        <location filename="../src/core/DialogConfig.qml" line="506"/>
         <source>Slovenian</source>
         <translation>Esloveno</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="508"/>
+        <location filename="../src/core/DialogConfig.qml" line="507"/>
         <source>Montenegrin</source>
         <translation>Montenegrino</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="509"/>
+        <location filename="../src/core/DialogConfig.qml" line="508"/>
         <source>Swedish</source>
         <translation>Sueco</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="510"/>
+        <location filename="../src/core/DialogConfig.qml" line="509"/>
         <source>Tamil</source>
         <translation>Támil</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="511"/>
+        <location filename="../src/core/DialogConfig.qml" line="510"/>
         <source>Thai</source>
         <translation>Tailandés</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="512"/>
+        <location filename="../src/core/DialogConfig.qml" line="511"/>
         <source>Chinese (Traditional)</source>
         <translation>Chinés (tradicional)</translation>
     </message>
@@ -2287,13 +2146,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
     </message>
 </context>
 <context>
-    <name>FindIt</name>
-    <message>
-        <source>Find the blue duck</source>
-        <translation type="obsolete">Encontra o parrulo azul</translation>
-    </message>
-</context>
-<context>
     <name>FirstScreen</name>
     <message>
         <location filename="../src/activities/braille_alphabets/FirstScreen.qml" line="37"/>
@@ -2319,12 +2171,12 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
 <context>
     <name>Leftright</name>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="143"/>
+        <location filename="../src/activities/leftright/Leftright.qml" line="144"/>
         <source>Left hand</source>
         <translation>A man esquerda</translation>
     </message>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="154"/>
+        <location filename="../src/activities/leftright/Leftright.qml" line="155"/>
         <source>Right hand</source>
         <translation>A man dereita</translation>
     </message>
@@ -2403,18 +2255,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <source></source>
         <comment>Replace this string with your names, one name per line.</comment>
         <translation></translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="29"/>
-        <source>translator-credits</source>
-        <translation>Ignacio Casal Quinteiro
-Paula Iglesias
-Gonçalo Cordeiro</translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="33"/>
-        <source>GCompris Home Page: http://gcompris.net</source>
-        <translation>Páxina principal de GCompris: http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -3294,13 +3134,6 @@ Gonçalo Cordeiro</translation>
     </message>
 </context>
 <context>
-    <name>findit</name>
-    <message>
-        <source>Learning Clock</source>
-        <translation type="obsolete">A aprender o reloxo</translation>
-    </message>
-</context>
-<context>
     <name>guessnumber</name>
     <message>
         <location filename="../src/activities/guessnumber/guessnumber.js" line="65"/>
@@ -3553,12 +3386,6 @@ Gonçalo Cordeiro</translation>
         <source>Tux just bought some items in your shop.
 He gives you %1, please give back his change.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Tux just bought some items in your shop.
-He gives you $ %1, please give back his change.</source>
-        <translation type="vanished">Tux ven de mercar algúns artigos na túa tenda.
-El deuche %1€, devólvelle o cambio.</translation>
     </message>
 </context>
 <context>

@@ -55,18 +55,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
-An adding-up sum looks like this: 2 + 2 = 4
-The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you&apos;ll be very good at adding-up!
-
-In this game, these cards are hiding the two parts of an adding-up sum (also called an addition sum). You need to find the two parts of the sum, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole sum. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper sum. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the sums, you&apos;ve won the game! :)</source>
-        <translation type="vanished">Може да виждате някои карти, но не и какво има на обратната им страна. Всяка карта крие сбор от събираеми, или отговора на сбора.
-Сборът от събираеми изглежда така: 2 + 2 = 4
-Числата от едната страна на знака за равенство (=) трябва да бъдат същите като числото от другата страна. Така 2 (1, 2) и още 2 (3, 4) прави 4. Бройте на глас и на пръсти, защото по колкото повече начини правите нещо, толкова по-добре го запомняте. Може да използвате кубчета или копчета, или каквото и да е, стига да става за броене. Ако имате много братя и сестри, може да броите тях! Или децата от училищния ви клас. Пейте песнички за броене. Бройте много неща, за упражнение, и ще станете много добри в събирането!
-
-В тази игра картите крият двете части на сбора от събираеми (също наричан сума). Трябва да намерите двете части на сбора и да ги съберете заедно отново. Натиснете карта, за да видите какво число крие, след това се опитайте да намерите другата карта, която допълва сбора. Може да обръщате само по две карти на ход, така че трябва да запомняте къде се крият числата и да ги избирате, когато намерите другата им половина. Вършите работата на знака за равенство и сте необходими на числата, за да ги съберете заедно и да направите подходящ сбор. Когато успеете, двете карти изчезват! Когато направите, така че всички да изчезнат и намерите всички сборове, печелите играта! :-)</translation>
-    </message>
-    <message>
         <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="18"/>
         <source></source>
         <translation></translation>
@@ -137,22 +125,10 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Practise subtraction, until all the cards are gone.</source>
-        <translation type="vanished">Упражнения по изваждане, докато всички карти свършат.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13"/>
         <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="13"/>
         <source>Addition and subtraction</source>
         <translation>Събиране и изваждане</translation>
-    </message>
-    <message>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
-In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the operations, you&apos;ve won the game! :)</source>
-        <translation type="vanished">Може да виждате някои карти, но не и какво има на обратната им страна. Всяка карта крие действие, или отговора му.
-
-В тази игра, картите крият двете части на действието. Трябва да откриете двете части и да ги съберете отново. Натиснете карта, за да видите какво число крие, и се опитайте да намерите другата карта, за да съставите цялото действие. Може да обръщате само две карти на ход, така че трябва да запомняте къде се крият числата и да ги избирате, когато намерите другата половина. Вършите работата на знака за равенство и сте необходими на числата, за да ги съберете заедно и да направите подходящо уравнение. Когато успеете, двете карти изчезват! Когато направите, така че всички да изчезнат и намерите всички действия, печелите играта! :-)</translation>
     </message>
     <message>
         <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="9"/>
@@ -269,10 +245,6 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <location filename="../src/activities/erase/ActivityInfo.qml" line="14"/>
         <source>Move the mouse until all the blocks disappear. You can add you own images under the directory &apos;~/My GCompris/erase&apos;.</source>
         <translation>Движете мишката докато всички плочки изчезнат. Можете да добавите собствени изображения в папката „~/My GCompris/erase“.</translation>
-    </message>
-    <message>
-        <source>Animal pictures are taken from the Animal Photography Page of Ralf Schmode (&amp;lt;http://schmode.net/&amp;gt;) and from LE BERRE Daniel. These people kindly gave GCompris the authorization to include their pictures. Thanks a lot, both of you.</source>
-        <translation type="vanished">Снимките на животните са взети от страницата на Ралф Шмоде (&amp;lt;http://schmode.net&amp;g;) и от Даниел Льо Бер. Те са дали разрешение да се използват в GCompris. Благодарим много и на двамата.</translation>
     </message>
     <message>
         <location filename="../src/activities/algorithm/ActivityInfo.qml" line="9"/>
@@ -1879,8 +1851,20 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation>Относно GCompris</translation>
     </message>
     <message>
+        <location filename="../src/core/DialogAbout.qml" line="29"/>
+        <source>translator-credits</source>
+        <extracomment>Replace this string with your names, one name per line.</extracomment>
+        <translation type="unfinished">Явор Доганов &lt;yavor@gnu.org&gt;
+Александър Шопов &lt;ash@kambanaria.org&gt;
+
+Проектът за превод на GNOME има нужда от подкрепа.
+Научете повече за нас на &lt;a href=&quot;http://gnome.cult.bg&quot;&gt;http://gnome.cult.bg&lt;/a&gt;
+Докладвайте за грешки на &lt;a href=&quot;http://gnome.cult.bg/bugs&quot;&gt;http://gnome.cult.bg/bugs&lt;/a&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogAbout.qml" line="33"/>
         <source>GCompris Home Page: http://gcompris.net</source>
-        <translation type="vanished">Страница на GCompris: http://gcompris.net</translation>
+        <translation>Страница на GCompris: http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -1891,202 +1875,202 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="100"/>
+        <location filename="../src/core/DialogConfig.qml" line="99"/>
         <source>Enable audio voices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="109"/>
+        <location filename="../src/core/DialogConfig.qml" line="108"/>
         <source>Enable audio effects</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="118"/>
+        <location filename="../src/core/DialogConfig.qml" line="117"/>
         <source>Fullscreen</source>
         <translation>На цял екран</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="127"/>
+        <location filename="../src/core/DialogConfig.qml" line="126"/>
         <source>Virtual Keyboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="137"/>
+        <location filename="../src/core/DialogConfig.qml" line="136"/>
         <source>Enable automatic downloads/updates of sound files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="152"/>
+        <location filename="../src/core/DialogConfig.qml" line="151"/>
         <source>Font selector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="169"/>
+        <location filename="../src/core/DialogConfig.qml" line="168"/>
         <source>Language selector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="206"/>
+        <location filename="../src/core/DialogConfig.qml" line="205"/>
         <source>Sounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="221"/>
+        <location filename="../src/core/DialogConfig.qml" line="220"/>
         <source>Check for updates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="222"/>
+        <location filename="../src/core/DialogConfig.qml" line="221"/>
         <source>Download</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="241"/>
+        <location filename="../src/core/DialogConfig.qml" line="240"/>
         <source>Difficulty filter:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="470"/>
+        <location filename="../src/core/DialogConfig.qml" line="469"/>
         <source>You selected a new locale</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="471"/>
+        <location filename="../src/core/DialogConfig.qml" line="470"/>
         <source>Do you want to download the corresponding sound files now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="486"/>
+        <location filename="../src/core/DialogConfig.qml" line="485"/>
         <source>English (Great Britain)</source>
         <translation>британски английски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="487"/>
+        <location filename="../src/core/DialogConfig.qml" line="486"/>
         <source>English (United States)</source>
         <translation>американски английски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="488"/>
+        <location filename="../src/core/DialogConfig.qml" line="487"/>
         <source>Bulgarian</source>
         <translation>български</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="489"/>
+        <location filename="../src/core/DialogConfig.qml" line="488"/>
         <source>Breton</source>
         <translation>бретонски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="490"/>
+        <location filename="../src/core/DialogConfig.qml" line="489"/>
         <source>Czech Republic</source>
         <translation>Чешки</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="491"/>
+        <location filename="../src/core/DialogConfig.qml" line="490"/>
         <source>Danish</source>
         <translation>датски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="492"/>
+        <location filename="../src/core/DialogConfig.qml" line="491"/>
         <source>German</source>
         <translation>немски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="493"/>
+        <location filename="../src/core/DialogConfig.qml" line="492"/>
         <source>Greek</source>
         <translation>гръцки</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="494"/>
+        <location filename="../src/core/DialogConfig.qml" line="493"/>
         <source>Spanish</source>
         <translation>испански</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="495"/>
+        <location filename="../src/core/DialogConfig.qml" line="494"/>
         <source>French</source>
         <translation>френски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="496"/>
+        <location filename="../src/core/DialogConfig.qml" line="495"/>
         <source>Scottish Gaelic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="497"/>
+        <location filename="../src/core/DialogConfig.qml" line="496"/>
         <source>Galician</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="498"/>
+        <location filename="../src/core/DialogConfig.qml" line="497"/>
         <source>Hungarian</source>
         <translation>унгарски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="499"/>
+        <location filename="../src/core/DialogConfig.qml" line="498"/>
         <source>Lithuanian</source>
         <translation>литовски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="500"/>
+        <location filename="../src/core/DialogConfig.qml" line="499"/>
         <source>Latvian</source>
         <translation>латвийски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="501"/>
+        <location filename="../src/core/DialogConfig.qml" line="500"/>
         <source>Dutch</source>
         <translation>холандски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="502"/>
+        <location filename="../src/core/DialogConfig.qml" line="501"/>
         <source>Norwegian Nynorsk</source>
         <translation>норвежки (ниношк)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="503"/>
+        <location filename="../src/core/DialogConfig.qml" line="502"/>
         <source>Polish</source>
         <translation>полски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="504"/>
+        <location filename="../src/core/DialogConfig.qml" line="503"/>
         <source>Russian</source>
         <translation>руски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="505"/>
+        <location filename="../src/core/DialogConfig.qml" line="504"/>
         <source>Portuguese (Brazil)</source>
         <translation>португалски (Бразилия)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="506"/>
+        <location filename="../src/core/DialogConfig.qml" line="505"/>
         <source>Slovak</source>
         <translation>словашки</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="507"/>
+        <location filename="../src/core/DialogConfig.qml" line="506"/>
         <source>Slovenian</source>
         <translation>словенски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="508"/>
+        <location filename="../src/core/DialogConfig.qml" line="507"/>
         <source>Montenegrin</source>
         <translation>черногорски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="509"/>
+        <location filename="../src/core/DialogConfig.qml" line="508"/>
         <source>Swedish</source>
         <translation>шведски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="510"/>
+        <location filename="../src/core/DialogConfig.qml" line="509"/>
         <source>Tamil</source>
         <translation>тамилски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="511"/>
+        <location filename="../src/core/DialogConfig.qml" line="510"/>
         <source>Thai</source>
         <translation>тайландски</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="512"/>
+        <location filename="../src/core/DialogConfig.qml" line="511"/>
         <source>Chinese (Traditional)</source>
         <translation>китайски (традиционен)</translation>
     </message>
@@ -2188,12 +2172,12 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
 <context>
     <name>Leftright</name>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="143"/>
+        <location filename="../src/activities/leftright/Leftright.qml" line="144"/>
         <source>Left hand</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="154"/>
+        <location filename="../src/activities/leftright/Leftright.qml" line="155"/>
         <source>Right hand</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2272,21 +2256,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <source></source>
         <comment>Replace this string with your names, one name per line.</comment>
         <translation></translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="29"/>
-        <source>translator-credits</source>
-        <translation>Явор Доганов &lt;yavor@gnu.org&gt;
-Александър Шопов &lt;ash@kambanaria.org&gt;
-
-Проектът за превод на GNOME има нужда от подкрепа.
-Научете повече за нас на &lt;a href=&quot;http://gnome.cult.bg&quot;&gt;http://gnome.cult.bg&lt;/a&gt;
-Докладвайте за грешки на &lt;a href=&quot;http://gnome.cult.bg/bugs&quot;&gt;http://gnome.cult.bg/bugs&lt;/a&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="33"/>
-        <source>GCompris Home Page: http://gcompris.net</source>
-        <translation>Страница на GCompris: http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -3166,13 +3135,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
     </message>
 </context>
 <context>
-    <name>findit</name>
-    <message>
-        <source>Learning Clock</source>
-        <translation type="obsolete">Научете часовника</translation>
-    </message>
-</context>
-<context>
     <name>guessnumber</name>
     <message>
         <location filename="../src/activities/guessnumber/guessnumber.js" line="65"/>
@@ -3425,12 +3387,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <source>Tux just bought some items in your shop.
 He gives you %1, please give back his change.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Tux just bought some items in your shop.
-He gives you $ %1, please give back his change.</source>
-        <translation type="vanished">Тъкс е напазарувал няколко покупки от магазина ви.
-Той ви дава %1 лв. Върнете му правилното ресто, моля.</translation>
     </message>
 </context>
 <context>

@@ -55,18 +55,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
-An adding-up sum looks like this: 2 + 2 = 4
-The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you&apos;ll be very good at adding-up!
-
-In this game, these cards are hiding the two parts of an adding-up sum (also called an addition sum). You need to find the two parts of the sum, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole sum. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper sum. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the sums, you&apos;ve won the game! :)</source>
-        <translation type="vanished">சில அட்டைகளை பார்க்கலாம். ஆனால் அவற்றின் மறு பக்கம் என்ன இருக்கோ தெரியாது. ஒவ்வொரு அட்டையும் ஒரு கூட்டல் கணக்கையோ அல்லது கூட்டுத்தொகையையோ ஒளித்து உள்ளது. 
-ஒரு கூட்டல் கணக்கு இப்படி இருக்கும்.: 2 + 2 = 4
-சமக் குறிக்கு இரண்டு பக்கம் உள்ள எண்களின் மதிப்பு ஒண்ணேதான். ஆகவே 2 (1, 2) உம் மேலும் 2 (3, 4) மொத்தம் 4. எண்ணும் போது சத்தம் போட்டு விரல் விட்டு எண்ணுங்க. அதிகமான முறைல எண்ணினால் அவ்வளவு சுலபமாக ஞாபகம் இருக்கும். நீங்க பட்டன்களோ மரத்துண்டுகளோ எதை வேணுமானாலும் வச்சு எண்ணலாம். உங்களுக்கு நிறைய அண்ணா அக்கா இருந்தால் அவர்களை எண்ணலாம். அல்லது உங்க பள்ளியில உள்ள குழந்தைகள். எண்ணும் பாட்டுகள் பாடுங்க. பழக நிறைய கூட்டல் செய்யுங்க. சீக்கிரம் அதில் மேதாவி ஆகலாம்! 
-
-இந்த விளையாட்டுல அட்டைகள் ஒரு கூட்டல் கணக்கை ஒளிச்சு வைத்திருக்கு. நீங்க அந்த இரண்டு பகுதியையும் கண்டு பிடித்து ஒண்ணாக்கணும். ஒரு அட்டை ஒளிச்சு வச்ச எண்ணை கண்டுபிடிக்க அதன் மேல சொடுக்குங்க. பின் அதன் மறு அட்டையை கண்டு பிடிக்க பாருங்க. நீங்க ஒரு முறை இரண்டு அட்டைகளைதான் திருப்பலாம். அதனால எந்த அட்டை எங்க இருக்குன்னும் ஞாபகம் வச்சுக்கணும். அப்படி செய்தால் அதன் மறு பாதியை பாக்கும் போது அட்டைகளை ஜோடி சேர்க்கலாம். அப்படி செய்யும் போது இரண்டு அட்டைகளும் காணாமல் போகும். எல்லா அட்டைகளும் காணாமல் போகும் போது நீங்க எல்லா கணக்கையும் போட்டாச்சு. விளையாட்டுல ஜெயிச்சாச்சு! :)</translation>
-    </message>
-    <message>
         <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="18"/>
         <source></source>
         <translation></translation>
@@ -137,21 +125,10 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Practise subtraction, until all the cards are gone.</source>
-        <translation type="vanished">எல்லா அட்டைகளும் போகும் வரை கழித்தல் பழகுங்க.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13"/>
         <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="13"/>
         <source>Addition and subtraction</source>
         <translation>கூட்டல் மற்றும் கழித்தல் </translation>
-    </message>
-    <message>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
-In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the operations, you&apos;ve won the game! :)</source>
-        <translation type="vanished">சில அட்டைகளை பார்க்கலாம். ஆனால் அவற்றின் மறு பக்கம் என்ன இருக்கோ தெரியாது. ஒவ்வொரு அட்டையும் ஒரு கணக்கையோ அல்லது விடையையோ ஒளித்து உள்ளது. 
-இந்த விளையாட்டுல அட்டைகள் ஒரு கணக்கை ஒளிச்சு வைத்திருக்கு. நீங்க அந்த இரண்டு பகுதியையும் கண்டு பிடித்து ஒண்ணாக்கணும். ஒரு அட்டை ஒளிச்சு வச்ச எண்ணை கண்டுபிடிக்க அதன் மேல சொடுக்குங்க. பின் அதன் மறு அட்டையை கண்டு பிடிக்க பாருங்க. நீங்க ஒரு முறை இரண்டு அட்டைகளைதான் திருப்பலாம். அதனால எந்த அட்டை எங்க இருக்குன்னும் ஞாபகம் வச்சுக்கணும். அப்படி செய்தால் அதன் மறு பாதியை பாக்கும் போது அட்டைகளை ஜோடி சேர்க்கலாம். அப்படி செய்யும் போது இரண்டு அட்டைகளும் காணாமல் போகும். எல்லா அட்டைகளும் காணாமல் போகும் போது நீங்க எல்லா கணக்கையும் போட்டாச்சு. விளையாட்டுல ஜெயிச்சாச்சு! :)</translation>
     </message>
     <message>
         <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="9"/>
@@ -268,10 +245,6 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <location filename="../src/activities/erase/ActivityInfo.qml" line="14"/>
         <source>Move the mouse until all the blocks disappear. You can add you own images under the directory &apos;~/My GCompris/erase&apos;.</source>
         <translation>எல்லா தொகுதிகளும் காணாமல் போகும் வரை சொடுக்கியால் நகர்த்தவும். உங்களுடைஅய் பிம்பங்களை இந்த அடைவில் சேகரிக்கலாம்.  &apos;~/My GCompris/erase&apos;.</translation>
-    </message>
-    <message>
-        <source>Animal pictures are taken from the Animal Photography Page of Ralf Schmode (&amp;lt;http://schmode.net/&amp;gt;) and from LE BERRE Daniel. These people kindly gave GCompris the authorization to include their pictures. Thanks a lot, both of you.</source>
-        <translation type="vanished">மிருகங்களின் படங்கள் ரால்ஃப் மோட்டின் மிருக படப் பிடிப்பு பக்கத்திலிருந்து (&amp;lt;http://schmode.net/&amp;gt;) மற்றும் லெபெர்ரே டெனியல் இடமிருந்து. இவர்கள் அருள் கூர்ந்து அவர்களின் படங்களை பயன்படுத்த அனுமதி கொடுத்தார்கள். உங்கள் இருவருக்கும் மிக்க நன்றி!</translation>
     </message>
     <message>
         <location filename="../src/activities/algorithm/ActivityInfo.qml" line="9"/>
@@ -998,18 +971,6 @@ In case of light it is just the opposite of mixing color with paints! The more l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>
-The activity deals with mixing primary colors of light (additive mixing).
-
-In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.
-        </source>
-        <translation type="vanished">
-இந்த செயல்பாடு ஓலியின் முதன்மை நிறங்களை கலத்தலை (சேர்க்கை) குறித்தது.
-
-பெய்ன்ட்களுக்கு நேர் மாறானது இது! அதிக ஒளி சேர்த்தால் நிறம் மென்மையாகும்.  மூன்று முதன்மை நிறங்கள்:சிவப்பு, பச்சை, நீலம்
-  </translation>
-    </message>
-    <message>
         <location filename="../src/activities/maze/ActivityInfo.qml" line="9"/>
         <source>Maze</source>
         <translation>புதிர் நெறி</translation>
@@ -1052,28 +1013,6 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Use the keyboard arrows to move Tux up to the door.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-	</source>
-        <translation type="vanished">விசைப்பலகை அம்புக்குறிகள் மூலம் டக்ஸ் ஐ கதவருகில் அழைத்துச்செல்லவும்.  
-
-முதல் மட்டங்களில் டக்ஸ் அவசரமில்லாமல் ஒரு விசை அழுத்தலுக்கு ஒரு படியாக புதிர்நெறியில் நடக்கிறது. 
- 
-பெரிய புதிர்நெறிகளுக்கு விசேஷ நடப்பு பாங்கு உள்ளது. அதற்கு &quot;வேக ஓட்டம்&quot; என்று பெயர். இதை செயலாக்கினால் டக்ஸ் தானியங்கியாக ஒரு கிளை பாதை வரும் வரை முழு தூரமும் ஓடும்.  இந்த இடத்தில் எந்தப்பக்கம் போக வேன்டும் என்று நீங்கள்தான் முடிவு செய்ய வேண்டும். 
-
-எந்த பாங்கில் டக்ஸ் இருக்கிறது என்பதை அதன் கால்களை கண்டு அறியலாம். வெற்றுக்கால்களாக இருந்தால் &quot;வேக ஓட்டத்தில்&quot;  இல்லை. சிவப்பு விளையாட்டு காலணிகள் அணிந்து இருந்தால் &quot;வேக ஓட்டத்தில்&quot;  இருக்கிறது. 
-
-14 ஆம் மட்டத்தில் இருந்து வேக ஓட்டமே நடப்பில் இருக்கும். முந்தைய மட்டங்களில் இதை செயல் படுத்தவும், மேல் மட்டங்களில் செயல் நீக்கவும் திரையின்மேல் இடது மூலையில் டக்ஸ் இன் வெற்றுக்கால் / விளையாட்டு காலணி சின்னத்தின் மீது சொடுக்கவும். 
-	</translation>
-    </message>
-    <message>
         <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="9"/>
         <source>Relative Maze</source>
         <translation type="unfinished"></translation>
@@ -1114,18 +1053,6 @@ In case of paints the inks absorb different colors of light falling on it, subtr
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>
-The activity deals with mixing primary colors of paint (subtractive mixing).
-
-In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.
-        </source>
-        <translation type="vanished">
-இந்த செயல்பாட்டில் பெய்ன்டின் நிறங்களை கலத்தலை குறித்தது.
-
-பெய்ன்ட்களில் மசியானது மேலே விழும்  ஒளியிலிருந்து கொஞ்சம் நிறத்தை உள்வாங்கிவிடுகிறது. மீதியை நாம் பார்க்கிறோம். அதிக மசி இட்டால் அதிக நிறம் உள்வாங்கப்படும்; நிறம் ஆழந்த வண்ணமாகிவிடும்.புதிய நிறங்களை உருவாக்க நாம் மூன்று முதன்மை நிறங்களை கலந்தால் போதுமானது. அவை பெய்ன்ட் பொருத்தவரை சையான் (ஒரு குறிப்பிட்ட நீல நிறம்), மஜந்தா (குறிப்பிட்ட ரோஸ் நிறம்) மற்றும் மஞ்சள்.
-        </translation>
-    </message>
-    <message>
         <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="9"/>
         <source>Falling Words</source>
         <translation>விழும் வார்த்தைகள்</translation>
@@ -1154,28 +1081,6 @@ In case of paints the inks absorb different colors of light falling on it, subtr
         <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="10"/>
         <source>Find your way out of the invisible maze</source>
         <translation>காணமுடியாத புதிர்நெறியிலிருந்து வெளி செல்ல வழி கண்டு பிடியுங்க</translation>
-    </message>
-    <message>
-        <source>Use the keyboard arrows to move Tux up to the door. Use the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-</source>
-        <translation type="vanished">விசைப்பலகை அம்புக்குறிகள் மூலம் டக்ஸ் ஐ கதவருகில் அழைத்துச்செல்லவும். ஸ்பேஸ் விசையால் மறைந்த அல்லது மறையாத பாங்குகளில் மாறலாம். மறையாத பாங்கில் ஒரு வரை படம் போல உங்கள் இடம் காட்டப்படும். இந்த பாங்கில் டக்ஸ் ஐ நகர்த்த முடியாது. 
-
-முதல் மட்டங்களில் டக்ஸ் அவசரமில்லாமல் ஒரு விசை அழுத்தலுக்கு ஒரு படியாக புதிர்நெறியில் நடக்கிறது. 
- 
-பெரிய புதிர்நெறிகளுக்கு விசேஷ நடப்பு பாங்கு உள்ளது. அதற்கு &quot;வேக ஓட்டம்&quot; என்று பெயர். இதை செயலாக்கினால் டக்ஸ் தானியங்கியாக ஒரு கிளை பாதை வரும் வரை முழு தூரமும் ஓடும்.  இந்த இடத்தில் எந்தப்பக்கம் போக வேன்டும் என்று நீங்கள்தான் முடிவு செய்ய வேண்டும். 
-
-எந்த பாங்கில் டக்ஸ் இருக்கிறது என்பதை அதன் கால்களை கண்டு அறியலாம். வெற்றுக்கால்களாக இருந்தால் &quot;வேக ஓட்டத்தில்&quot; இல்லை. சிவப்பு விளையாட்டு காலணிகள் அணிந்து இருந்தால் &quot;வேக ஓட்டத்தில்&quot;  இருக்கிறது. 
-
-14 ஆம் மட்டத்தில் இருந்து வேக நடையே நடப்பில் இருக்கும். முந்தைய மட்டங்களில் இதை செயல் படுத்தவும், மேல் மட்டங்களில் செயல் நீக்கவும் திரையின்மேல் இடது மூலையில் டக்ஸ் இன் வெற்றுக்கால் / விளையாட்டு காலணி சின்னத்தின் மீது சொடுக்கவும். 
-</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="9"/>
@@ -1568,10 +1473,6 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>தங்க வேட்டை</translation>
     </message>
     <message>
-        <source>Use the mousewheel to approach the rockwall an look for gold nuggets.</source>
-        <translation type="vanished">சொடுக்கி சக்கரத்தை பயன்படுத்தி கல்சுவரை அணுகி தங்கக்கட்டியை தேடுங்கள்.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="10"/>
         <source>Use the mousewheel to approach the rockwall and look for gold nuggets.</source>
         <translation>சொடுக்கி சக்கரத்தை பயன்படுத்தி கல்சுவரை அணுகி தங்கக்கட்டியை தேடுங்கள்.</translation>
@@ -1952,8 +1853,15 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation>ஜிகாம்ப்ரி பற்றி</translation>
     </message>
     <message>
+        <location filename="../src/core/DialogAbout.qml" line="29"/>
+        <source>translator-credits</source>
+        <extracomment>Replace this string with your names, one name per line.</extracomment>
+        <translation type="unfinished">மொழி பெயர்ர்பாளர் நன்றி அறிதல்</translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogAbout.qml" line="33"/>
         <source>GCompris Home Page: http://gcompris.net</source>
-        <translation type="vanished">ஜிகாம்ப்ரி இல்ல பக்கம் http://gcompris.net</translation>
+        <translation>ஜிகாம்ப்ரி இல்ல பக்கம் http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -1964,202 +1872,202 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="100"/>
+        <location filename="../src/core/DialogConfig.qml" line="99"/>
         <source>Enable audio voices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="109"/>
+        <location filename="../src/core/DialogConfig.qml" line="108"/>
         <source>Enable audio effects</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="118"/>
+        <location filename="../src/core/DialogConfig.qml" line="117"/>
         <source>Fullscreen</source>
         <translation>முழுத்திரை</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="127"/>
+        <location filename="../src/core/DialogConfig.qml" line="126"/>
         <source>Virtual Keyboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="137"/>
+        <location filename="../src/core/DialogConfig.qml" line="136"/>
         <source>Enable automatic downloads/updates of sound files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="152"/>
+        <location filename="../src/core/DialogConfig.qml" line="151"/>
         <source>Font selector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="169"/>
+        <location filename="../src/core/DialogConfig.qml" line="168"/>
         <source>Language selector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="206"/>
+        <location filename="../src/core/DialogConfig.qml" line="205"/>
         <source>Sounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="221"/>
+        <location filename="../src/core/DialogConfig.qml" line="220"/>
         <source>Check for updates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="222"/>
+        <location filename="../src/core/DialogConfig.qml" line="221"/>
         <source>Download</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="241"/>
+        <location filename="../src/core/DialogConfig.qml" line="240"/>
         <source>Difficulty filter:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="470"/>
+        <location filename="../src/core/DialogConfig.qml" line="469"/>
         <source>You selected a new locale</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="471"/>
+        <location filename="../src/core/DialogConfig.qml" line="470"/>
         <source>Do you want to download the corresponding sound files now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="486"/>
+        <location filename="../src/core/DialogConfig.qml" line="485"/>
         <source>English (Great Britain)</source>
         <translation>ஆங்கிலம் (கிரேட் பிரிட்டன்)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="487"/>
+        <location filename="../src/core/DialogConfig.qml" line="486"/>
         <source>English (United States)</source>
         <translation>ஆங்கிலம் (அமெரிக்கா)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="488"/>
+        <location filename="../src/core/DialogConfig.qml" line="487"/>
         <source>Bulgarian</source>
         <translation>பல்கேரியன்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="489"/>
+        <location filename="../src/core/DialogConfig.qml" line="488"/>
         <source>Breton</source>
         <translation>ப்ரெடன்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="490"/>
+        <location filename="../src/core/DialogConfig.qml" line="489"/>
         <source>Czech Republic</source>
         <translation>செக் குடியரசு</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="491"/>
+        <location filename="../src/core/DialogConfig.qml" line="490"/>
         <source>Danish</source>
         <translation>டேனிஷ்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="492"/>
+        <location filename="../src/core/DialogConfig.qml" line="491"/>
         <source>German</source>
         <translation>ஜெர்மன்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="493"/>
+        <location filename="../src/core/DialogConfig.qml" line="492"/>
         <source>Greek</source>
         <translation>கிரீக்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="494"/>
+        <location filename="../src/core/DialogConfig.qml" line="493"/>
         <source>Spanish</source>
         <translation>ஸ்பானிஷ்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="495"/>
+        <location filename="../src/core/DialogConfig.qml" line="494"/>
         <source>French</source>
         <translation>பிரெஞ்சு</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="496"/>
+        <location filename="../src/core/DialogConfig.qml" line="495"/>
         <source>Scottish Gaelic</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="497"/>
+        <location filename="../src/core/DialogConfig.qml" line="496"/>
         <source>Galician</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="498"/>
+        <location filename="../src/core/DialogConfig.qml" line="497"/>
         <source>Hungarian</source>
         <translation>ஹங்கேரியன்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="499"/>
+        <location filename="../src/core/DialogConfig.qml" line="498"/>
         <source>Lithuanian</source>
         <translation>லித்துனியன்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="500"/>
+        <location filename="../src/core/DialogConfig.qml" line="499"/>
         <source>Latvian</source>
         <translation>லாட்வியன்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="501"/>
+        <location filename="../src/core/DialogConfig.qml" line="500"/>
         <source>Dutch</source>
         <translation>டச்சு</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="502"/>
+        <location filename="../src/core/DialogConfig.qml" line="501"/>
         <source>Norwegian Nynorsk</source>
         <translation>நார்விஜியன் நைநோர்ஸ்க்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="503"/>
+        <location filename="../src/core/DialogConfig.qml" line="502"/>
         <source>Polish</source>
         <translation>போலிஷ்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="504"/>
+        <location filename="../src/core/DialogConfig.qml" line="503"/>
         <source>Russian</source>
         <translation>ரஷ்யன்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="505"/>
+        <location filename="../src/core/DialogConfig.qml" line="504"/>
         <source>Portuguese (Brazil)</source>
         <translation>போர்ச்சுகீஸ் (பிரேசில்)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="506"/>
+        <location filename="../src/core/DialogConfig.qml" line="505"/>
         <source>Slovak</source>
         <translation>ஸ்லோவாக்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="507"/>
+        <location filename="../src/core/DialogConfig.qml" line="506"/>
         <source>Slovenian</source>
         <translation>ஸ்லோவேனியன்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="508"/>
+        <location filename="../src/core/DialogConfig.qml" line="507"/>
         <source>Montenegrin</source>
         <translation>செர்பியா மான்தெனெக்ரின்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="509"/>
+        <location filename="../src/core/DialogConfig.qml" line="508"/>
         <source>Swedish</source>
         <translation>ஸ்வீடிஷ்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="510"/>
+        <location filename="../src/core/DialogConfig.qml" line="509"/>
         <source>Tamil</source>
         <translation>தமிழ்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="511"/>
+        <location filename="../src/core/DialogConfig.qml" line="510"/>
         <source>Thai</source>
         <translation>தாய்</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="512"/>
+        <location filename="../src/core/DialogConfig.qml" line="511"/>
         <source>Chinese (Traditional)</source>
         <translation>சீனம் (பாரம்பரிய)</translation>
     </message>
@@ -2261,12 +2169,12 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
 <context>
     <name>Leftright</name>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="143"/>
+        <location filename="../src/activities/leftright/Leftright.qml" line="144"/>
         <source>Left hand</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="154"/>
+        <location filename="../src/activities/leftright/Leftright.qml" line="155"/>
         <source>Right hand</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2345,16 +2253,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <source></source>
         <comment>Replace this string with your names, one name per line.</comment>
         <translation></translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="29"/>
-        <source>translator-credits</source>
-        <translation>மொழி பெயர்ர்பாளர் நன்றி அறிதல்</translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="33"/>
-        <source>GCompris Home Page: http://gcompris.net</source>
-        <translation>ஜிகாம்ப்ரி இல்ல பக்கம் http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -3234,13 +3132,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
     </message>
 </context>
 <context>
-    <name>findit</name>
-    <message>
-        <source>Learning Clock</source>
-        <translation type="obsolete">கடிகாரத்தை அறிவோம்</translation>
-    </message>
-</context>
-<context>
     <name>guessnumber</name>
     <message>
         <location filename="../src/activities/guessnumber/guessnumber.js" line="65"/>
@@ -3493,12 +3384,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <source>Tux just bought some items in your shop.
 He gives you %1, please give back his change.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Tux just bought some items in your shop.
-He gives you $ %1, please give back his change.</source>
-        <translation type="vanished">டக்ஸ் சில உருப்படிகளை உங்கள் கடையில் வாங்கியது. 
-அது உங்களுக்கு %1 $ கொடுத்தது. மீதி சில்லரை கொடுக்கவும். </translation>
     </message>
 </context>
 <context>

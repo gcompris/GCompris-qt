@@ -55,18 +55,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
-An adding-up sum looks like this: 2 + 2 = 4
-The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you&apos;ll be very good at adding-up!
-
-In this game, these cards are hiding the two parts of an adding-up sum (also called an addition sum). You need to find the two parts of the sum, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole sum. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper sum. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the sums, you&apos;ve won the game! :)</source>
-        <translation type="vanished">Néhány lefordított kártyát látsz. Minden kártya másik oldalán egy összeadás vagy egy összeadás eredménye rejtőzik.
- Egy összeadás például így nézhet ki: 2 + 2 = 4
-Az egyenlőségjel (=) két oldalán levő számnak meg kell egyezni. Hangosan is számolhatsz, és az ujjaidat is használhatod, mert minél többféleképpen csinálsz valamit, annál könnyebben jegyzed meg. Használhatsz akár számolópálcikát, babszemeket, vagy bármi mást, amit meg tudsz számolni. Énekelj gyakran számolós énekeket, számolj meg amit csak tudsz – gyakorlat teszi a mestert!
-
-Ebben a játékban a kártyák egy összeadás (összegnek is nevezett) eredményének két részét tartalmazzák. Keresd meg az összeg két részét, és párosítsd őket. Kattints a kártyára a rajta levő szám megnézéséhez, majd próbáld megkeresni a hozzá illő kártyát, amivel összeadva kiadja az összeget. Egyszerre csak két kártyát fordíthatsz meg, így meg kell jegyezned a számok helyét, hogy párosítani tudd a másik felével, ha megtalálod azt. Az egyenlőségjel feladatát végzed, össze kell párosítanod a megfelelő összeget adó számokat. Ha ez sikerül, mindkét kártya eltűnik! Ha az összeset eltünteted, nyertél!</translation>
-    </message>
-    <message>
         <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="18"/>
         <source></source>
         <translation></translation>
@@ -137,22 +125,10 @@ Ebben a játékban a kártyák egy összeadás (összegnek is nevezett) eredmén
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Practise subtraction, until all the cards are gone.</source>
-        <translation type="vanished">Gyakorold a kivonást, amíg az összes kártya el nem tűnik.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13"/>
         <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="13"/>
         <source>Addition and subtraction</source>
         <translation>Összeadás és kivonás</translation>
-    </message>
-    <message>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
-In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the operations, you&apos;ve won the game! :)</source>
-        <translation type="vanished">Néhány lefordított kártyát látsz. Minden kártya lefordított oldalán vagy egy művelet, vagy egy művelet eredménye látható. 
-
-Ebben a játékban feladatod a műveleteket párosítani az eredményeikkel. Meg kell találnod, és össze kell párosítanod a művelet két részét. Egy kártya megfordításához kattints rá és próbáld megtalálni a párját! Egyszerre csak két kártyát fordíthatsz meg, így meg kell jegyezned a számok helyét, hogy párosítani tudd a másik felével, ha megtalálod azt. Az egyenlőségjel feladatát végzed, össze kell párosítanod a megfelelő egyenlőséget adó számokat. Ha ez sikerül, mindkét kártya eltűnik! Ha az összeset eltünteted, nyertél!</translation>
     </message>
     <message>
         <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="9"/>
@@ -269,10 +245,6 @@ Ebben a játékban feladatod a műveleteket párosítani az eredményeikkel. Meg
         <location filename="../src/activities/erase/ActivityInfo.qml" line="14"/>
         <source>Move the mouse until all the blocks disappear. You can add you own images under the directory &apos;~/My GCompris/erase&apos;.</source>
         <translation>Mozgasd az egeret, amíg az összes tégla el nem tűnik. Saját képeidet a „~/My GCompris/erase” könyvtárba helyezheted.</translation>
-    </message>
-    <message>
-        <source>Animal pictures are taken from the Animal Photography Page of Ralf Schmode (&amp;lt;http://schmode.net/&amp;gt;) and from LE BERRE Daniel. These people kindly gave GCompris the authorization to include their pictures. Thanks a lot, both of you.</source>
-        <translation type="vanished">Az állatképek Ralf Schmode honlapjából (&amp;lt;http://schmode.net/&amp;gt;) és LE BERRE Daniel-től származnak. Mindketten engedélyezték a gcompris számára a használatukat. Köszönet érte.</translation>
     </message>
     <message>
         <location filename="../src/activities/algorithm/ActivityInfo.qml" line="9"/>
@@ -999,18 +971,6 @@ In case of light it is just the opposite of mixing color with paints! The more l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>
-The activity deals with mixing primary colors of light (additive mixing).
-
-In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.
-        </source>
-        <translation type="vanished">
-A tevékenység a fény elsődleges színeinek keverésével (összeadó keverés) foglalkozik.
-
-A fény esete a festékekkel való színkeverés ellentéte! Minél több fényt adsz hozzá, a kapott szín annál világosabb lesz. A fény elsődleges színei a piros, zöld és kék.
- </translation>
-    </message>
-    <message>
         <location filename="../src/activities/maze/ActivityInfo.qml" line="9"/>
         <source>Maze</source>
         <translation>Labirintus</translation>
@@ -1053,28 +1013,6 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Use the keyboard arrows to move Tux up to the door.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-	</source>
-        <translation type="vanished">A nyílbillentyűk használatával irányítsd el Tuxot az ajtóig.
-
-Az első szinteken Tux kényelmesen sétál, minden billentyűlenyomásra egyet lép a labirintusban.
-
-Nagyobb labirintusok esetén van egy speciális, „futás” mód. Ha ez a futás mód be van kapcsolva, akkor Tux automatikusan fog futni egészen addig, amíg elágazáshoz nem ér és el kell döntened, hogy merre menjen tovább.
-
-Tux lábára nézve láthatod, hogy ez a mód be van-e kapcsolva: ha Tux mezítláb van, akkor a futás mód nincs bekapcsolva. Ha piros sportcipőt visel, akkor a futás mód be van kapcsolva.
-
-A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szinteken is be szeretnéd kapcsolni, vagy a magasabb szinteken ki szeretnéd kapcsolni, akkor kattints Tuxra, vagy a mezítláb/sportcipő ikonra a képernyő bal felső sarkában a futás mód átváltásához.
-	</translation>
-    </message>
-    <message>
         <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="9"/>
         <source>Relative Maze</source>
         <translation type="unfinished"></translation>
@@ -1092,28 +1030,6 @@ For larger labyrinths, there is a special walking mode, called &quot;run-fast-mo
 You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
 From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Use the keyboard arrows to move Tux up to the door. In this maze, the move is relative (first person). Use the up arrow to go forward. The other arrows let you turn Tux in another direction.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-</source>
-        <translation type="vanished">A nyílbillentyűk használatával irányítsd el Tuxot az ajtóig. Ebben a labirintusban a mozgás relatív (mintha első személyben lennél ott). A felfelé nyíllal mehetsz előre, a többivel másik irányba fordíthatod Tuxot.
-
-Az első szinteken Tux kényelmesen sétál, minden billentyűlenyomásra egyet lép a labirintusban.
-
-Nagyobb labirintusok esetén van egy speciális, „futás” mód. Ha ez a futás mód be van kapcsolva, akkor Tux automatikusan fog futni egészen addig, amíg elágazáshoz nem ér és el kell döntened, hogy merre menjen tovább.
-
-Tux lábára nézve láthatod, hogy ez a mód be van-e kapcsolva: ha Tux mezítláb van, akkor a futás mód nincs bekapcsolva. Ha piros sportcipőt visel, akkor a futás mód be van kapcsolva.
-
-A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szinteken is be szeretnéd kapcsolni, vagy a magasabb szinteken ki szeretnéd kapcsolni, akkor kattints Tuxra, vagy a mezítláb/sportcipő ikonra a képernyő bal felső sarkában a futás mód átváltásához.
-</translation>
     </message>
     <message>
         <location filename="../src/activities/color_mix/ActivityInfo.qml" line="9"/>
@@ -1135,18 +1051,6 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <source>The activity deals with mixing primary colors of paint (subtractive mixing).
 In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>
-The activity deals with mixing primary colors of paint (subtractive mixing).
-
-In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.
-        </source>
-        <translation type="vanished">
-A tevékenység festékek elsődleges színeinek keverésével (kivonó keverés) foglalkozik.
-
-Festékek esetén a tinta elnyeli a ráeső különböző színű fénysugarakat, kivonva azokat a látott képből. Minél több festéket adsz a képhez, annál sötétebb lesz az egyesített szín. Három szín keverésével előállítható bármely új szín. A festék alapszínei a cián (a kék egyik árnyalata), magenta (a rózsaszín egyik árnyalata) és sárga.
- </translation>
     </message>
     <message>
         <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="9"/>
@@ -1177,28 +1081,6 @@ Festékek esetén a tinta elnyeli a ráeső különböző színű fénysugarakat
         <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="10"/>
         <source>Find your way out of the invisible maze</source>
         <translation>Találd meg a kijáratot a láthatatlan labirintusból</translation>
-    </message>
-    <message>
-        <source>Use the keyboard arrows to move Tux up to the door. Use the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-</source>
-        <translation type="vanished">A nyílbillentyűk használatával irányítsd el Tuxot az ajtóig. A szóközzel válthatsz a láthatatlan és a látható módok között. A látható mód kijelzi a helyzetedet, mint egy térkép. Látható módban nem mozgathatod Tuxot.
-
-Az első szinteken Tux kényelmesen sétál, minden billentyűlenyomásra egyet lép a labirintusban.
-
-Nagyobb labirintusok esetén van egy speciális, „futás” mód. Ha ez a futás mód be van kapcsolva, akkor Tux automatikusan fog futni egészen addig, amíg elágazáshoz nem ér és el kell döntened, hogy merre menjen tovább.
-
-Tux lábára nézve láthatod, hogy ez a mód be van-e kapcsolva: ha Tux mezítláb van, akkor a futás mód nincs bekapcsolva. Ha piros sportcipőt visel, akkor a futás mód be van kapcsolva.
-
-A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szinteken is be szeretnéd kapcsolni, vagy a magasabb szinteken ki szeretnéd kapcsolni, akkor kattints Tuxra, vagy a mezítláb/sportcipő ikonra a képernyő bal felső sarkában a futás mód átváltásához.
-</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="9"/>
@@ -1332,10 +1214,6 @@ A 14. szinttől a futás mód automatikusan be lesz kapcsolva. Ha korábbi szint
         <location filename="../src/activities/football/ActivityInfo.qml" line="14"/>
         <source>Point the mouse and click on the ball, to set the speed and direction of the ball.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Point the mouse and click on the ball, to set the speed and direction of the ball. The closer you click to the center, the slower the ball moves.</source>
-        <translation type="vanished">Az irány és a sebesség megadásához mutass és kattints a labdára. Minél közelebb kattintasz a középponthoz, a labda annál lassabban mozog.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="5"/>
@@ -1595,10 +1473,6 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Aranyásás</translation>
     </message>
     <message>
-        <source>Use the mousewheel to approach the rockwall an look for gold nuggets.</source>
-        <translation type="vanished">Az egérgörgővel közelíts meg egy sziklafalat, és keress aranyrögöket.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="10"/>
         <source>Use the mousewheel to approach the rockwall and look for gold nuggets.</source>
         <translation>Az egérgörgővel közelíts meg egy sziklafalat, és keress aranyrögöket.</translation>
@@ -1621,26 +1495,6 @@ The truck in the lower, right corner of the screen will tell you the number of a
 To start the tutorial, click on professor Tux (available at level 1) and let him show you, what to do next.
 Have fun! :)</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Looking at the rockwall, you can see a sparkle somewhere. Move the mouse cursor next to this sparkle and use the mousewheel to zoom in. If you zoomed in at maximum, a gold nugget will appear at the position of the sparkle. Click on the gold nugget to collect it.
-
-Having collected the nugget, use the mousewheel to zoom out again. If you zoomed out at maximum, another sparkle will appear, showing the next gold nugget to collect. Collect enough nuggets to complete the level.
-
-The truck in the lower, right corner of the screen will tell you the number of already collected nuggets and the total number of nuggets to collect in this level.
-
-To start the tutorial, click on professor Tux (available at level 1) and let him show you, what to do next.
-
-Have fun! :)</source>
-        <translation type="vanished">A sziklafalat nézve itt-ott csillogást láthatsz. Vidd az egérmutatót a csillogás közelébe, és a görgővel közelíts rá. Ha teljesen ráközelítettél, megjelenik egy aranyrög a csillogás helyén. Kattints az aranyrögre a begyűjtéséhez.
-
-Ha begyűjtötted az aranyrögöt, akkor az egérgörgővel távolodj el a faltól. Ha teljesen eltávolodtál, akkor újabb csillogás jelenik meg, amely a következő aranyrögöt jelzi. Gyűjtsd be a szint befejezéséhez szükséges mennyiségű aranyrögöt.
-
-A képernyő jobb alsó sarkában lévő kamion megadja a szinten már begyűjtött és még begyűjtendő aranyrögök számát.
-
-Az ismertető indításához kattints Tux professzorra az első szinten, és figyelj az utasításaira.
-
-Jó szórakozást! :)</translation>
     </message>
     <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="19"/>
@@ -1849,10 +1703,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation>Egyensúlyozd ki a mérleget, tedd a súlyokat a bal vagy jobb oldali serpenyőbe. A súlyokat tetszőleges sorrendben helyezheted el.</translation>
     </message>
     <message>
-        <source>The painting is an original painting created by Virginie MOREAU (virginie.moreau@free.fr) in 2001. Its name is &apos;Spices Seller in Egypt&apos;. It is released under the GPL license.</source>
-        <translation type="vanished">A festményt Virginie MOREAU (virginie.moreau@free.fr) készítette 2001-ben, a címe „Fűszerárus Egyiptomban”. A GPL licenc alatt került kiadásra.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/sudoku/ActivityInfo.qml" line="28"/>
         <source>Sudoku, place unique symbols in a square.</source>
         <translation>Sudoku, helyezz el egyedi számokat egy négyzetben.</translation>
@@ -2003,8 +1853,18 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation>A GCompris névjegye</translation>
     </message>
     <message>
+        <location filename="../src/core/DialogAbout.qml" line="29"/>
+        <source>translator-credits</source>
+        <extracomment>Replace this string with your names, one name per line.</extracomment>
+        <translation type="unfinished">Hilzinger Marcel &lt;hili at suselinux dot hu&gt;
+Kelemen Gábor &lt;kelemeng at gnome dot hu&gt;
+Miklós Merényi &lt;mermik at freemail dot hu&gt;
+István Somlai &lt;somist at bg-bp dot sulinet dot hu&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogAbout.qml" line="33"/>
         <source>GCompris Home Page: http://gcompris.net</source>
-        <translation type="vanished">A GCompris honlapja: http://gcompris.net</translation>
+        <translation>A GCompris honlapja: http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -2015,202 +1875,202 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="100"/>
+        <location filename="../src/core/DialogConfig.qml" line="99"/>
         <source>Enable audio voices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="109"/>
+        <location filename="../src/core/DialogConfig.qml" line="108"/>
         <source>Enable audio effects</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="118"/>
+        <location filename="../src/core/DialogConfig.qml" line="117"/>
         <source>Fullscreen</source>
         <translation>Teljes képernyő</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="127"/>
+        <location filename="../src/core/DialogConfig.qml" line="126"/>
         <source>Virtual Keyboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="137"/>
+        <location filename="../src/core/DialogConfig.qml" line="136"/>
         <source>Enable automatic downloads/updates of sound files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="152"/>
+        <location filename="../src/core/DialogConfig.qml" line="151"/>
         <source>Font selector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="169"/>
+        <location filename="../src/core/DialogConfig.qml" line="168"/>
         <source>Language selector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="206"/>
+        <location filename="../src/core/DialogConfig.qml" line="205"/>
         <source>Sounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="221"/>
+        <location filename="../src/core/DialogConfig.qml" line="220"/>
         <source>Check for updates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="222"/>
+        <location filename="../src/core/DialogConfig.qml" line="221"/>
         <source>Download</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="241"/>
+        <location filename="../src/core/DialogConfig.qml" line="240"/>
         <source>Difficulty filter:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="470"/>
+        <location filename="../src/core/DialogConfig.qml" line="469"/>
         <source>You selected a new locale</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="471"/>
+        <location filename="../src/core/DialogConfig.qml" line="470"/>
         <source>Do you want to download the corresponding sound files now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="486"/>
+        <location filename="../src/core/DialogConfig.qml" line="485"/>
         <source>English (Great Britain)</source>
         <translation>Angol (Brit)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="487"/>
+        <location filename="../src/core/DialogConfig.qml" line="486"/>
         <source>English (United States)</source>
         <translation>Angol (Egyesült Államok)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="488"/>
+        <location filename="../src/core/DialogConfig.qml" line="487"/>
         <source>Bulgarian</source>
         <translation>Bolgár</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="489"/>
+        <location filename="../src/core/DialogConfig.qml" line="488"/>
         <source>Breton</source>
         <translation>Breton</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="490"/>
+        <location filename="../src/core/DialogConfig.qml" line="489"/>
         <source>Czech Republic</source>
         <translation>Cseh Köztársaság</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="491"/>
+        <location filename="../src/core/DialogConfig.qml" line="490"/>
         <source>Danish</source>
         <translation>Dán</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="492"/>
+        <location filename="../src/core/DialogConfig.qml" line="491"/>
         <source>German</source>
         <translation>Német</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="493"/>
+        <location filename="../src/core/DialogConfig.qml" line="492"/>
         <source>Greek</source>
         <translation>Görög</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="494"/>
+        <location filename="../src/core/DialogConfig.qml" line="493"/>
         <source>Spanish</source>
         <translation>Spanyol</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="495"/>
+        <location filename="../src/core/DialogConfig.qml" line="494"/>
         <source>French</source>
         <translation>Francia</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="496"/>
+        <location filename="../src/core/DialogConfig.qml" line="495"/>
         <source>Scottish Gaelic</source>
         <translation>Skót kelta</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="497"/>
+        <location filename="../src/core/DialogConfig.qml" line="496"/>
         <source>Galician</source>
         <translation>Galíciai</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="498"/>
+        <location filename="../src/core/DialogConfig.qml" line="497"/>
         <source>Hungarian</source>
         <translation>Magyar</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="499"/>
+        <location filename="../src/core/DialogConfig.qml" line="498"/>
         <source>Lithuanian</source>
         <translation>Litván</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="500"/>
+        <location filename="../src/core/DialogConfig.qml" line="499"/>
         <source>Latvian</source>
         <translation>Lett</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="501"/>
+        <location filename="../src/core/DialogConfig.qml" line="500"/>
         <source>Dutch</source>
         <translation>Holland</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="502"/>
+        <location filename="../src/core/DialogConfig.qml" line="501"/>
         <source>Norwegian Nynorsk</source>
         <translation>Norvég Nynorsk</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="503"/>
+        <location filename="../src/core/DialogConfig.qml" line="502"/>
         <source>Polish</source>
         <translation>Lengyel</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="504"/>
+        <location filename="../src/core/DialogConfig.qml" line="503"/>
         <source>Russian</source>
         <translation>Orosz</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="505"/>
+        <location filename="../src/core/DialogConfig.qml" line="504"/>
         <source>Portuguese (Brazil)</source>
         <translation>Portugál (Brazil)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="506"/>
+        <location filename="../src/core/DialogConfig.qml" line="505"/>
         <source>Slovak</source>
         <translation>Szlovák</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="507"/>
+        <location filename="../src/core/DialogConfig.qml" line="506"/>
         <source>Slovenian</source>
         <translation>Szlovén</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="508"/>
+        <location filename="../src/core/DialogConfig.qml" line="507"/>
         <source>Montenegrin</source>
         <translation>Montenegrói</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="509"/>
+        <location filename="../src/core/DialogConfig.qml" line="508"/>
         <source>Swedish</source>
         <translation>Svéd</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="510"/>
+        <location filename="../src/core/DialogConfig.qml" line="509"/>
         <source>Tamil</source>
         <translation>Tamil</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="511"/>
+        <location filename="../src/core/DialogConfig.qml" line="510"/>
         <source>Thai</source>
         <translation>Thai</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="512"/>
+        <location filename="../src/core/DialogConfig.qml" line="511"/>
         <source>Chinese (Traditional)</source>
         <translation>Kínai (hagyományos)</translation>
     </message>
@@ -2287,13 +2147,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
     </message>
 </context>
 <context>
-    <name>FindIt</name>
-    <message>
-        <source>Find the blue duck</source>
-        <translation type="obsolete">Találd meg a kék kacsát</translation>
-    </message>
-</context>
-<context>
     <name>FirstScreen</name>
     <message>
         <location filename="../src/activities/braille_alphabets/FirstScreen.qml" line="37"/>
@@ -2319,12 +2172,12 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
 <context>
     <name>Leftright</name>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="143"/>
+        <location filename="../src/activities/leftright/Leftright.qml" line="144"/>
         <source>Left hand</source>
         <translation>Bal kéz</translation>
     </message>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="154"/>
+        <location filename="../src/activities/leftright/Leftright.qml" line="155"/>
         <source>Right hand</source>
         <translation>Jobb kéz</translation>
     </message>
@@ -2403,19 +2256,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <source></source>
         <comment>Replace this string with your names, one name per line.</comment>
         <translation></translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="29"/>
-        <source>translator-credits</source>
-        <translation>Hilzinger Marcel &lt;hili at suselinux dot hu&gt;
-Kelemen Gábor &lt;kelemeng at gnome dot hu&gt;
-Miklós Merényi &lt;mermik at freemail dot hu&gt;
-István Somlai &lt;somist at bg-bp dot sulinet dot hu&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="33"/>
-        <source>GCompris Home Page: http://gcompris.net</source>
-        <translation>A GCompris honlapja: http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -3295,13 +3135,6 @@ István Somlai &lt;somist at bg-bp dot sulinet dot hu&gt;</translation>
     </message>
 </context>
 <context>
-    <name>findit</name>
-    <message>
-        <source>Learning Clock</source>
-        <translation type="obsolete">Tanuld meg az órát</translation>
-    </message>
-</context>
-<context>
     <name>guessnumber</name>
     <message>
         <location filename="../src/activities/guessnumber/guessnumber.js" line="65"/>
@@ -3554,12 +3387,6 @@ István Somlai &lt;somist at bg-bp dot sulinet dot hu&gt;</translation>
         <source>Tux just bought some items in your shop.
 He gives you %1, please give back his change.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Tux just bought some items in your shop.
-He gives you $ %1, please give back his change.</source>
-        <translation type="vanished">Tux vett néhány dolgot a boltodban.
-Ezekért %1 Ft-ot fizet, add vissza az aprót.</translation>
     </message>
 </context>
 <context>

@@ -56,20 +56,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
-An adding-up sum looks like this: 2 + 2 = 4
-The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you&apos;ll be very good at adding-up!
-
-In this game, these cards are hiding the two parts of an adding-up sum (also called an addition sum). You need to find the two parts of the sum, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole sum. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper sum. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the sums, you&apos;ve won the game! :)</source>
-        <translation type="vanished">Gwelet e vez meur a gartenn, ne vez ket gwelet o zu gin. Ur sammad pe disoc&apos;h ur sammad a vez kuzhet war bep kartenn.
-
-Heñvel ouzh an dra-se eo ur sammadur : 2 + 2 = 4 (daou mui daou zo pevar)
-
-Ar c&apos;hementad diskouezet gant an niveroù war bep tu eus an arouezenn &apos;par da&apos; (=) a rank bezañ heñvel. Neuze, 2 (kont 1 ha 2) mui 2 (kont 3 ha 4) zo 4. Kont a-vouezh uhel pa bleustri warni, kont gant da vizied rak dalc&apos;het e vez an traoù gwelloc&apos;h en e soñj pa vez kavet kalz doareoù d&apos;ober an traoù-mañ. Gra gant legoioù, nozellennoù pe forzh petra evit kontañ ! Kont izili da familh, pe skoliaded da glasad. Kan sonennoù da gontañ. Kont kalz traoù ha da varrek war ar &apos;hontañ ez i !
-
-Er c&apos;hoari-mañ e vez kuzhet an div lodenn eus ur sammadur. Ret eo dit kavout al lodennoù hag o lakaat daou ha daou. Dre glikañ war ur gartenn e weli he fas kuzh. Klask ar gartenn all o klokaat ar sammadur. Daou fas a vez dizoloet nemetken da bep taol. Ret e vo dit derc&apos;hel soñj e plas ar c&apos;hartennoù evit o c&apos;havout daou ha daou. Labour an arouezenn &apos;=&apos; a rez hag ezhomm ac&apos;hanout o deus an niveroù evit bezañ kevredet. Ur wech dizoloet ur c&apos;houblad kartennoù e vo tennet kuit. Ur wech tennet kuit an holl gartennoù e vo aet ar maout ganit ! :)</translation>
-    </message>
-    <message>
         <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="18"/>
         <source></source>
         <translation></translation>
@@ -140,28 +126,10 @@ Er c&apos;hoari-mañ e vez kuzhet an div lodenn eus ur sammadur. Ret eo dit kavo
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Practise subtraction, until all the cards are gone.</source>
-        <translation type="vanished">Pleustr war al lamadur ha lam kuit an holl gartennoù.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13"/>
         <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="13"/>
         <source>Addition and subtraction</source>
         <translation>Sammadurioù ha lamadurioù</translation>
-    </message>
-    <message>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
-In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the operations, you&apos;ve won the game! :)</source>
-        <translation type="vanished">Gwelet e vez meur a gartenn, ne vez ket gwelet o zu gin. Ur jedadur pe e zisoc&apos;h a vez kuzhet war bep kartenn.
-
-Er c&apos;hoari-mañ e vez kuzhet an div lodenn eus ur jedadur. Ret eo dit kavout lodennoù ar jedadur hag o lakaat daou ha daou. Dre glikañ war ur gartenn e weli he niver kuzh. Klask ar gartenn all o klokaat ar jedadur.
-
-Daou fas a vez dizoloet nemetken da bep taol. Ret e vo dit derc&apos;hel soñj e plas ar c&apos;hartennoù evit o c&apos;havout daou ha daou.
-
-Labour an arouezenn &apos;=&apos; a rez hag ezhomm ac&apos;hanout o deus an niveroù evit bezañ kevredet.
-
-Ur wech dizoloet ur c&apos;houblad kartennoù e vo tennet kuit. Ur wech tennet kuit an holl gartennoù ez eo aet ar maout ganit ! :)</translation>
     </message>
     <message>
         <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="9"/>
@@ -286,10 +254,6 @@ Gant ar biroù kleiz ha dehou e vez graet ivez evit dilec&apos;hiañ ar pezh hag
         <location filename="../src/activities/erase/ActivityInfo.qml" line="14"/>
         <source>Move the mouse until all the blocks disappear. You can add you own images under the directory &apos;~/My GCompris/erase&apos;.</source>
         <translation>Laka al logodenn da zilec&apos;hiañ betek ma vo diverket ar bloc&apos;hadoù. Da skeudenn dit-te a vez ouzhpennet er c&apos;havlec&apos;hiad &apos;~/My GCompris/erase&apos;.</translation>
-    </message>
-    <message>
-        <source>Animal pictures are taken from the Animal Photography Page of Ralf Schmode (&amp;lt;http://schmode.net/&amp;gt;) and from LE BERRE Daniel. These people kindly gave GCompris the authorization to include their pictures. Thanks a lot, both of you.</source>
-        <translation type="vanished">Eus ar bajennad a-fet luc&apos;hskeudennoù diwar-benn al loened, gant Ralf Schmode ha Daniel LE BERRE e teu skeudennoù al loened. Roet o deus an aotre da arverañ o skeudennoù da GCompris. Trugarez vras dezho o daou.</translation>
     </message>
     <message>
         <location filename="../src/activities/algorithm/ActivityInfo.qml" line="9"/>
@@ -1023,18 +987,6 @@ In case of light it is just the opposite of mixing color with paints! The more l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>
-The activity deals with mixing primary colors of light (additive mixing).
-
-In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.
-        </source>
-        <translation type="vanished">
-Un obererezh a-zivout kemmeskañ livoù ar gouloù (kemmeskañ azdodat).
-
-Evit ar gouloù ez eo an tu gin eus doare kemmeskañ ar pentoù ! Mar bez ouzhpennet muioc&apos;h a c&apos;houloù e vo skaeroc&apos;h al liv krouet. Al livioù ruz, glaz ha gwer eo al livioù kentael.
-        </translation>
-    </message>
-    <message>
         <location filename="../src/activities/maze/ActivityInfo.qml" line="9"/>
         <source>Maze</source>
         <translation>Milendall</translation>
@@ -1077,28 +1029,6 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Use the keyboard arrows to move Tux up to the door.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-	</source>
-        <translation type="vanished">Gra gant ar biroù da zilec&apos;hiañ Tuks betek an nor.
-
-Gant al live kentañ e kerzh Tuks gant un doare aes, ur pouez war ur stokel a dalv ur paz dre ar milendall.
-
-Evit ar milendalloù brasoc&apos;h ez eus ur mod arbennik anvet &quot;mod ar redek buan&quot;.  Mar bez gweredekaet ar mod-mañ e redo Tuks an hent a-bezh ent-emgefreek betek ma tizho ur c&apos;haol (ur forc&apos;h) ha dit-te da zibad da hent.
-
-Da welout mard eo bet gweredekaet ar mod-mañ, taol ur sell ouzh treid Tuks : e dreid divot a dalv ez eo bet diweredekaet &quot;mod ar redek buan&quot;. Mar bez botoù sport ruz e treid Tuks ez eo bet gweredekaet &quot;mod ar redek buan&quot;.
-
-Adalek al live 14 e vo gweredekaet &quot;mod ar redek buan&quot;. ent-emgefreek. Mar fell dit ober gant ar mod-mañ gant al live a-raok pe mar fell dit diweredekaat ar mod gant al live war-lerc&apos;h, klik war Tuks pe war an arlun  &quot;divot / botoù sport&quot; e korn uhel kleiz ar skramm.
-	</translation>
-    </message>
-    <message>
         <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="9"/>
         <source>Relative Maze</source>
         <translation type="unfinished"></translation>
@@ -1116,28 +1046,6 @@ For larger labyrinths, there is a special walking mode, called &quot;run-fast-mo
 You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
 From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Use the keyboard arrows to move Tux up to the door. In this maze, the move is relative (first person). Use the up arrow to go forward. The other arrows let you turn Tux in another direction.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-</source>
-        <translation type="vanished">Arver biroù ar c&apos;hlavier evit dilec&apos;hiañ Tuks betek an nor. Gant ar milendall-mañ ez eo daveel an dilec&apos;hiadur (e-barzh emaout). Arver ar bir &apos;sav&apos; evit mont war-raok. Troet e vez gant ar biroù all.
-
-Gant al live kentañ e kerzh Tuks gant un doare aes, ur pouez war ur stokel a dalv ur paz dre ar milendall.
-
-Evit ar milendalloù brasoc&apos;h ez eus ur mod arbennik anvet &quot;mod ar redek buan&quot;.  Mar bez gweredekaet ar mod-mañ e redo Tuks an hent a-bezh ent-emgefreek betek ma tizho ur c&apos;haol (ur forc&apos;h) ha dit-te da zibad da hent.
-
-Da welout mard eo bet gweredekaet ar mod-mañ, taol ur sell ouzh treid Tuks : e dreid divot a dalv ez eo bet diweredekaet &quot;mod ar redek buan&quot;. Mar bez botoù sport ruz e treid Tuks ez eo bet gweredekaet &quot;mod ar redek buan&quot;.
-
-Adalek al live 14 e vo gweredekaet &quot;mod ar redek buan&quot;. ent-emgefreek. Mar fell dit ober gant ar mod-mañ gant al live a-raok pe mar fell dit diweredekaat ar mod gant al live war-lerc&apos;h, klik war Tuks pe war an arlun  &quot;divot / botoù sport&quot; e korn uhel kleiz ar skramm.
-</translation>
     </message>
     <message>
         <location filename="../src/activities/color_mix/ActivityInfo.qml" line="9"/>
@@ -1159,18 +1067,6 @@ Adalek al live 14 e vo gweredekaet &quot;mod ar redek buan&quot;. ent-emgefreek.
         <source>The activity deals with mixing primary colors of paint (subtractive mixing).
 In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>
-The activity deals with mixing primary colors of paint (subtractive mixing).
-
-In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.
-        </source>
-        <translation type="vanished">
-Un obererezh a-zivout kemmeskañ livoù pentur kentael (kemmeskañ ezdodat).
-
-Evit ar penturioù e vez luget (&quot;lonket&quot;)  livioù disheñvel ar gouloù o kouezhañ warno gant an huzioù, oc&apos;h ezdodañ (dilemel) livioù zo ar gouloù diouzh ar pezh a welez. Mar bez ouzhpennet muioc&apos;h a huz e vo luget  muioc&apos;h a c&apos;houloù. Dre se e vo teñvaloc&apos;h al liv krouet. Kemmesket e vez livioù kentael a-benn krouiñ kalz livioù nevez. Siañ (un arliv eus ar glas), Majenta (un arliv eus ar ruz) ha Melen eo al livioù kentael.
-        </translation>
     </message>
     <message>
         <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="9"/>
@@ -1201,28 +1097,6 @@ Evit ar penturioù e vez luget (&quot;lonket&quot;)  livioù disheñvel ar goulo
         <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="10"/>
         <source>Find your way out of the invisible maze</source>
         <translation>Kav an hent evit mont er-maez eus ar milendall diwelus.</translation>
-    </message>
-    <message>
-        <source>Use the keyboard arrows to move Tux up to the door. Use the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-</source>
-        <translation type="vanished">Gra gant ar biroù da zilec&apos;hiañ Tuks betek an nor. Gra gant ar varrenn esoauiñ da drec&apos;haoliñ (enaouiñ/lazhañ) ar modoù hewelus ha diwelus. Meneget eo al lec&apos;h m&apos;emaout gant ar mod hewelus, evel ma vefe ur gartenn ganit. N&apos;hallez ket dilec&apos;hiañ Tuks gant ar mod hewelus.
-
-Gant al live kentañ e kerzh Tuks gant un doare aes, ur pouez war ur stokel a dalv ur paz dre ar milendall.
-
-Evit ar milendalloù brasoc&apos;h ez eus ur mod arbennik anvet &quot;mod ar redek buan&quot;.  Mar bez gweredekaet ar mod-mañ e redo Tuks an hent a-bezh ent-emgefreek betek ma tizho ur c&apos;haol (ur forc&apos;h) ha dit-te da zibad da hent.
-
-Da welout mard eo bet gweredekaet ar mod-mañ, taol ur sell ouzh treid Tuks : e dreid divot a dalv ez eo bet diweredekaet &quot;mod ar redek buan&quot;. Mar bez botoù sport ruz e treid Tuks ez eo bet gweredekaet &quot;mod ar redek buan&quot;.
-
-Adalek al live 14 e vo gweredekaet &quot;mod ar redek buan&quot;. ent-emgefreek. Mar fell dit ober gant ar mod-mañ gant al live a-raok pe mar fell dit diweredekaat ar mod gant al live war-lerc&apos;h, klik war Tuks pe war an arlun  &quot;divot / botoù sport&quot; e korn uhel kleiz ar skramm.
-</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="9"/>
@@ -1372,10 +1246,6 @@ Klik war ar steredennoù en traoñ a-gleiz evit reiñ da respont.</translation>
         <location filename="../src/activities/football/ActivityInfo.qml" line="14"/>
         <source>Point the mouse and click on the ball, to set the speed and direction of the ball.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Point the mouse and click on the ball, to set the speed and direction of the ball. The closer you click to the center, the slower the ball moves.</source>
-        <translation type="vanished">Laka reti al logodenn war ar vell ha klik warni evit reiñ dezhi an tizh hag ar roud. Tostoc&apos;h ouzh kreiz ar vell e vo ar reti, gorrekoc&apos;h e vo ar vell.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="5"/>
@@ -1642,10 +1512,6 @@ Skriv da eriñv gant ar c&apos;hlavier ha klik war &apos;Enankañ&apos; (enter) 
         <translation>Klask aour er mengleuz</translation>
     </message>
     <message>
-        <source>Use the mousewheel to approach the rockwall an look for gold nuggets.</source>
-        <translation type="vanished">Gra gant rod al logodenn da vont tostoc&apos;h ouzh ar voger roc&apos;h da glask malzennoù aour.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="10"/>
         <source>Use the mousewheel to approach the rockwall and look for gold nuggets.</source>
         <translation>Gra gant rod al logodenn da vont tostoc&apos;h ouzh ar voger roc&apos;h da glask malzennoù aour.</translation>
@@ -1668,24 +1534,6 @@ The truck in the lower, right corner of the screen will tell you the number of a
 To start the tutorial, click on professor Tux (available at level 1) and let him show you, what to do next.
 Have fun! :)</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Looking at the rockwall, you can see a sparkle somewhere. Move the mouse cursor next to this sparkle and use the mousewheel to zoom in. If you zoomed in at maximum, a gold nugget will appear at the position of the sparkle. Click on the gold nugget to collect it.
-
-Having collected the nugget, use the mousewheel to zoom out again. If you zoomed out at maximum, another sparkle will appear, showing the next gold nugget to collect. Collect enough nuggets to complete the level.
-
-The truck in the lower, right corner of the screen will tell you the number of already collected nuggets and the total number of nuggets to collect in this level.
-
-To start the tutorial, click on professor Tux (available at level 1) and let him show you, what to do next.
-
-Have fun! :)</source>
-        <translation type="vanished">Sell ouzh ar voger-roc&apos;h, ul luc&apos;hig a weli en ul lec&apos;h bennak. Dilec&apos;h biz al logodenn e-kichen al luc&apos;hig hag arver rod al logodenn da vrasaat al luc&apos;hig. Ur valzenn aour a yay war-wel e plas al luc&apos;hig mar bez zoumet betek e vrasañ. Klik war ar valzenn d&apos;he dastum.
-
-Ur wech tapet ar valzenn, gra gant ar zoum bihanaat betek e vihanañ. Ul luc&apos;hig all a yay war-wel o tiskouez ur valvenn aour all da dapout. Dastum malvennoù a-walc&apos;h da echuiñ al live.
-
-Gant ar garrigell e korn izel dehou ar skamm e vo diskouezet dit pet malvennoù az po dastumet ha pet a vo da zastum gant al live-se.
-
-Da loc&apos;hañ ar c&apos;helennskrid, klik war Ar c&apos;helenner Tuks (hegerz eo d&apos;al live 1) ha laosk eñ da ziskouez dit pezh a vo d&apos;ober war-lerc&apos;h.\nPlijadur dit ! :-)</translation>
     </message>
     <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="19"/>
@@ -1902,10 +1750,6 @@ Pa vez Tuks dindan pe a-us live an ezkerzh e talv neuze emañ da niver dindan pe
         <translation>Evit kempouezañ ar ventel, dilec&apos;h an tolzoù war ar pladoù kleiz pe zehou. N&apos;eo ket pouezhus urzh an tolzoù.</translation>
     </message>
     <message>
-        <source>The painting is an original painting created by Virginie MOREAU (virginie.moreau@free.fr) in 2001. Its name is &apos;Spices Seller in Egypt&apos;. It is released under the GPL license.</source>
-        <translation type="vanished">Livet eo bet an daolenn orin gant Virginie MOREAU (virginie.moreau@free.fr) e 2001. &apos;Gwerzhour ispisoù e Egipt&apos;.Emañ dindan lañvaz GPL.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/sudoku/ActivityInfo.qml" line="28"/>
         <source>Sudoku, place unique symbols in a square.</source>
         <translation>C&apos;hoari ar Sudoku</translation>
@@ -2064,8 +1908,15 @@ Ne vi ket laosket da skrivañ roadennoù didalvoudek gant GCompris.</translation
         <translation>Diwar-benn GCompris</translation>
     </message>
     <message>
+        <location filename="../src/core/DialogAbout.qml" line="29"/>
+        <source>translator-credits</source>
+        <extracomment>Replace this string with your names, one name per line.</extracomment>
+        <translation type="unfinished">Alan Monfort &lt;alan.monfort@free.fr&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogAbout.qml" line="33"/>
         <source>GCompris Home Page: http://gcompris.net</source>
-        <translation type="vanished">Pajennad degemer GCompris : http://gcompris.net</translation>
+        <translation>Pajennad degemer GCompris : http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -2076,202 +1927,202 @@ Ne vi ket laosket da skrivañ roadennoù didalvoudek gant GCompris.</translation
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="100"/>
+        <location filename="../src/core/DialogConfig.qml" line="99"/>
         <source>Enable audio voices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="109"/>
+        <location filename="../src/core/DialogConfig.qml" line="108"/>
         <source>Enable audio effects</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="118"/>
+        <location filename="../src/core/DialogConfig.qml" line="117"/>
         <source>Fullscreen</source>
         <translation>Skrammad a-bezh</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="127"/>
+        <location filename="../src/core/DialogConfig.qml" line="126"/>
         <source>Virtual Keyboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="137"/>
+        <location filename="../src/core/DialogConfig.qml" line="136"/>
         <source>Enable automatic downloads/updates of sound files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="152"/>
+        <location filename="../src/core/DialogConfig.qml" line="151"/>
         <source>Font selector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="169"/>
+        <location filename="../src/core/DialogConfig.qml" line="168"/>
         <source>Language selector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="206"/>
+        <location filename="../src/core/DialogConfig.qml" line="205"/>
         <source>Sounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="221"/>
+        <location filename="../src/core/DialogConfig.qml" line="220"/>
         <source>Check for updates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="222"/>
+        <location filename="../src/core/DialogConfig.qml" line="221"/>
         <source>Download</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="241"/>
+        <location filename="../src/core/DialogConfig.qml" line="240"/>
         <source>Difficulty filter:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="470"/>
+        <location filename="../src/core/DialogConfig.qml" line="469"/>
         <source>You selected a new locale</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="471"/>
+        <location filename="../src/core/DialogConfig.qml" line="470"/>
         <source>Do you want to download the corresponding sound files now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="486"/>
+        <location filename="../src/core/DialogConfig.qml" line="485"/>
         <source>English (Great Britain)</source>
         <translation>Saozneg (Rouantelezh Unanet)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="487"/>
+        <location filename="../src/core/DialogConfig.qml" line="486"/>
         <source>English (United States)</source>
         <translation>Saozneg (Stadoù Unanet)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="488"/>
+        <location filename="../src/core/DialogConfig.qml" line="487"/>
         <source>Bulgarian</source>
         <translation>Bulgareg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="489"/>
+        <location filename="../src/core/DialogConfig.qml" line="488"/>
         <source>Breton</source>
         <translation>Brezhoneg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="490"/>
+        <location filename="../src/core/DialogConfig.qml" line="489"/>
         <source>Czech Republic</source>
         <translation>Republik Tchek</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="491"/>
+        <location filename="../src/core/DialogConfig.qml" line="490"/>
         <source>Danish</source>
         <translation>Daneg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="492"/>
+        <location filename="../src/core/DialogConfig.qml" line="491"/>
         <source>German</source>
         <translation>Alamaneg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="493"/>
+        <location filename="../src/core/DialogConfig.qml" line="492"/>
         <source>Greek</source>
         <translation>Gresianeg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="494"/>
+        <location filename="../src/core/DialogConfig.qml" line="493"/>
         <source>Spanish</source>
         <translation>Spagnoleg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="495"/>
+        <location filename="../src/core/DialogConfig.qml" line="494"/>
         <source>French</source>
         <translation>Galleg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="496"/>
+        <location filename="../src/core/DialogConfig.qml" line="495"/>
         <source>Scottish Gaelic</source>
         <translation>Skoseg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="497"/>
+        <location filename="../src/core/DialogConfig.qml" line="496"/>
         <source>Galician</source>
         <translation>Galisianeg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="498"/>
+        <location filename="../src/core/DialogConfig.qml" line="497"/>
         <source>Hungarian</source>
         <translation>Hungareg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="499"/>
+        <location filename="../src/core/DialogConfig.qml" line="498"/>
         <source>Lithuanian</source>
         <translation>Lituanieg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="500"/>
+        <location filename="../src/core/DialogConfig.qml" line="499"/>
         <source>Latvian</source>
         <translation>Latvieg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="501"/>
+        <location filename="../src/core/DialogConfig.qml" line="500"/>
         <source>Dutch</source>
         <translation>Nederlandeg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="502"/>
+        <location filename="../src/core/DialogConfig.qml" line="501"/>
         <source>Norwegian Nynorsk</source>
         <translation>Norvegieg Ninorsk</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="503"/>
+        <location filename="../src/core/DialogConfig.qml" line="502"/>
         <source>Polish</source>
         <translation>Polonieg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="504"/>
+        <location filename="../src/core/DialogConfig.qml" line="503"/>
         <source>Russian</source>
         <translation>Rusianeg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="505"/>
+        <location filename="../src/core/DialogConfig.qml" line="504"/>
         <source>Portuguese (Brazil)</source>
         <translation>Portugaleg (Brazil)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="506"/>
+        <location filename="../src/core/DialogConfig.qml" line="505"/>
         <source>Slovak</source>
         <translation>Sloveg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="507"/>
+        <location filename="../src/core/DialogConfig.qml" line="506"/>
         <source>Slovenian</source>
         <translation>Slovenieg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="508"/>
+        <location filename="../src/core/DialogConfig.qml" line="507"/>
         <source>Montenegrin</source>
         <translation>Montenegro</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="509"/>
+        <location filename="../src/core/DialogConfig.qml" line="508"/>
         <source>Swedish</source>
         <translation>Swedeneg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="510"/>
+        <location filename="../src/core/DialogConfig.qml" line="509"/>
         <source>Tamil</source>
         <translation>Tamouleg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="511"/>
+        <location filename="../src/core/DialogConfig.qml" line="510"/>
         <source>Thai</source>
         <translation>Taieg</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="512"/>
+        <location filename="../src/core/DialogConfig.qml" line="511"/>
         <source>Chinese (Traditional)</source>
         <translation>Sinaeg (hengounel)</translation>
     </message>
@@ -2348,13 +2199,6 @@ Ne vi ket laosket da skrivañ roadennoù didalvoudek gant GCompris.</translation
     </message>
 </context>
 <context>
-    <name>FindIt</name>
-    <message>
-        <source>Find the blue duck</source>
-        <translation type="obsolete">Kav an houad glas</translation>
-    </message>
-</context>
-<context>
     <name>FirstScreen</name>
     <message>
         <location filename="../src/activities/braille_alphabets/FirstScreen.qml" line="37"/>
@@ -2380,12 +2224,12 @@ Ne vi ket laosket da skrivañ roadennoù didalvoudek gant GCompris.</translation
 <context>
     <name>Leftright</name>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="143"/>
+        <location filename="../src/activities/leftright/Leftright.qml" line="144"/>
         <source>Left hand</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="154"/>
+        <location filename="../src/activities/leftright/Leftright.qml" line="155"/>
         <source>Right hand</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2464,16 +2308,6 @@ Ne vi ket laosket da skrivañ roadennoù didalvoudek gant GCompris.</translation
         <source></source>
         <comment>Replace this string with your names, one name per line.</comment>
         <translation></translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="29"/>
-        <source>translator-credits</source>
-        <translation>Alan Monfort &lt;alan.monfort@free.fr&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="33"/>
-        <source>GCompris Home Page: http://gcompris.net</source>
-        <translation>Pajennad degemer GCompris : http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -3353,13 +3187,6 @@ Ne vi ket laosket da skrivañ roadennoù didalvoudek gant GCompris.</translation
     </message>
 </context>
 <context>
-    <name>findit</name>
-    <message>
-        <source>Learning Clock</source>
-        <translation type="obsolete">Horolajoù</translation>
-    </message>
-</context>
-<context>
     <name>guessnumber</name>
     <message>
         <location filename="../src/activities/guessnumber/guessnumber.js" line="65"/>
@@ -3612,12 +3439,6 @@ Ne vi ket laosket da skrivañ roadennoù didalvoudek gant GCompris.</translation
         <source>Tux just bought some items in your shop.
 He gives you %1, please give back his change.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Tux just bought some items in your shop.
-He gives you $ %1, please give back his change.</source>
-        <translation type="vanished">Traoù en deus prenet Tuks ez stal.
-%1 € a ro-eñ dit, distro e voneiz dezhañ diwarni.</translation>
     </message>
 </context>
 <context>

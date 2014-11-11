@@ -55,18 +55,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
-An adding-up sum looks like this: 2 + 2 = 4
-The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you&apos;ll be very good at adding-up!
-
-In this game, these cards are hiding the two parts of an adding-up sum (also called an addition sum). You need to find the two parts of the sum, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole sum. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper sum. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the sums, you&apos;ve won the game! :)</source>
-        <translation type="vanished">Chì thu cairtean ach chan fhaic thu na tha air an taobh eile dhiubh. Tha gach cairt a’ falach àireamhan airson cur ri chèile no an fhreagairt aig a’ chur ri chèile.
-Seo an coltas a bhios air àireamhan airson cur ri chèile: 2 + 2 = 4.
-Feumaidh na h-àireamhan air dàrna taobh dhen t-samhla co-ionnanachd (=) a bhith co-ionnann ris an àireamh air an taobh eile. Mar sin, ma chuireas tu 2 (cunnt 1, 2) is 2 a bharrachd (cunnt 3, 4) ri chèile, nì seo 4. Tog do ghuth fhad ’s a bhios tu a’ cunntadh gus seo obrachadh a-mach is cunnt air do chorragan cuideachd. Ma nì thu rud air iomadh dòigh, bidh e nas fhasa dhut cuimhneachadh air. Faodaidh tu blocaichean no putanan a chleachdadh cuideachd no rud sam bith eile a ghabhas cunntadh. Ma tha torr bhràithrean is pheathraichean agad, carson nach cunnt thu iadsan? No a’ chlann sa chlas agad aig an sgoil? Seinn òrain cunntaidh. Cunnt iomadh rud airson cleachdadh is fàsaidh tu uabhasach math air an cur ris!
-
-Sa gheama seo, tha na cairtean a’ falach an dà thaobh aig àireamhan air an cur ri chèile (ris an canar “suim cuir ris” cuideachd). Feumaidh tu an dà phàirt aig an t-suim a lorg ach am bi iad còmhla. Briog air cairt gus an àireamh a tha i a’ falach a shealltainn is feuch an lorg thu a’ chairt eile a bhuineas dhi gus suim a chur còmhla. Chan urrainn dhut car a thoirt ach air dà chairt aig an aon àm is mar sin, feumaidh tu cur nad chuimhne far a bheil na h-àireamhan gam falach. An uair sin, ’s urrainn dhut am maidseadh nuair a lorgas tu an dàrna leth. Tha thu a’ dèanamh an obair aig an t-samhla co-ionnanachd is feumaidh na h-àireamhan dol ri chèile ach an dèan iad suim mar bu chòir. Nuair a nì thu seo, thèid an dà chairt ud a-mach à sealladh! Nuair a bhios iad uile a-mach à sealladh is tu air a h-uile suim a lorg, buannaichidh tu an geama! :)</translation>
-    </message>
-    <message>
         <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="18"/>
         <source></source>
         <translation></translation>
@@ -143,22 +131,10 @@ Mur obraich sin, tadhail air www.iGaidhlig.net airson barrachd fiosrachaidh ’s
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Practise subtraction, until all the cards are gone.</source>
-        <translation type="vanished">Cleachd toirt air falbh gus am bi gach cairt air falbh.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13"/>
         <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="13"/>
         <source>Addition and subtraction</source>
         <translation>Cur ri chèile is toirt air falbh</translation>
-    </message>
-    <message>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
-In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the operations, you&apos;ve won the game! :)</source>
-        <translation type="vanished">Chì thu cairtean, ach chan fhaic thu na tha air an taobh eile dhiubh. Falaichidh gach cairt obrachadh no a fhreagairt.
-
-Sa gheama seo, ’s e an dà phàirt aig obrachadh a dh’fhalaicheas na cairtean. Feumaidh tu an dà phàirt aig obrachadh a lorg is an cur còmhla. Briog air cairt gus faighinn a-mach dè an àireamh a dh’fhalaicheas i is an uair sin feuch an lorg thu an cairt eile a fhreagras dhi gus obrachadh slàn a dhèanamh. Chan urrainn dhut car a thoirt ach air dà chairt aig an aon àm, mar sin feumaidh tu cur nad chuimhne far a bheil na h-àireamhan gam falach. An uair sin, ’s urrainn dhut an leth eile a lorg gus am maidseadh. Tha thu a’ dèanamh an obair aig an t-samhla co-ionnanachd is feumaidh tu na h-àireamhan a chur còmhla ach am bi an dà thaobh co-ionnan. Nuair a nì thu seo, thèid an dà chairt a-mach à sealladh! Nuair a bhios a h-uile cairt air dol a-mach à sealladh is tu air a h-uile obrachadh a lorg, buannaichidh tu an geama! :)</translation>
     </message>
     <message>
         <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="9"/>
@@ -275,10 +251,6 @@ Sa gheama seo, ’s e an dà phàirt aig obrachadh a dh’fhalaicheas na cairtea
         <location filename="../src/activities/erase/ActivityInfo.qml" line="14"/>
         <source>Move the mouse until all the blocks disappear. You can add you own images under the directory &apos;~/My GCompris/erase&apos;.</source>
         <translation>Gluais an luchag gus an tèid na h-uile bloca à sealladh. ’S urrainn dhut na dealbhan agad fhèin a cur ris fon phasgan “~/My GCompris/erase”.</translation>
-    </message>
-    <message>
-        <source>Animal pictures are taken from the Animal Photography Page of Ralf Schmode (&amp;lt;http://schmode.net/&amp;gt;) and from LE BERRE Daniel. These people kindly gave GCompris the authorization to include their pictures. Thanks a lot, both of you.</source>
-        <translation type="vanished">Thàinig dealbhan nam beathaichean o dhuilleag dealbhan bheathaichean aig Ralf Schmode (&amp;lt;http://schmode.net/&amp;gt;) agus o LE BERRE Daniel. Thug na daoine còir cead dha GCompris gus na dealbhan aca a chleachdadh. Tha sinn fada nur comain, an dithis agaibh.</translation>
     </message>
     <message>
         <location filename="../src/activities/algorithm/ActivityInfo.qml" line="9"/>
@@ -1011,17 +983,6 @@ In case of light it is just the opposite of mixing color with paints! The more l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>
-The activity deals with mixing primary colors of light (additive mixing).
-
-In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.
-        </source>
-        <translation type="vanished">
-Dèiligidh an cleas seo le measgadh prìomh dhathan solais (measgadh cuir ris).
-
-’S e an dearbh-chaochladh de mheasgadh dhathan le peant a tha sa mheasgadh solais! Mar as motha an solas a chuireas tu ris, ’s ann as soilleire a dh’fhàsas an dath a gheibh thu. Seo na prìomh-dhathan airson solais: dearg, uaine is gorm.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/maze/ActivityInfo.qml" line="9"/>
         <source>Maze</source>
         <translation>Cuartan</translation>
@@ -1064,28 +1025,6 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Use the keyboard arrows to move Tux up to the door.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-	</source>
-        <translation type="vanished">Cleachd na saighdean air a’ mheur-chlàr gus Tux a ghluasad dhan doras.
-
-Air na ciad leibheilean, coisichidh Tux gu socair tron chuartan is nì e ceum le gach brùthadh iuchrach.
-
-Sna cuartanan mòra, tha modh coiseachd sònraichte ann air a bheil “modh-ruith-gu-luath”. Nuair a bhios am modh-ruith-gu-luath seo an comas, ruithidh Tux gun stad gus an ruig e gobhal far am bi co-dhùnadh a dhìth ort càite an tèid e an uair sin.
-
-Chì thu cò dhiubh a bheil am modh seo air no nach eil ma sheallas tu air an dà chois Tux: Ma tha Tux casruisgte, tha am “modh-ruith-gu-luath” à comas. Ma tha brògan spòrs dearga air, tha am “modh-ruith-gu-luath” an comas.
-
-O leibheil 14 a-mach, bidh am modh-ruith-gu-luath an comas gu fèin-obrachail. Ma tha thu airson an fheart seo a chleachdadh air na leibheilean nas ìsle no ma tha thu airson a chur dheth air na leibheilean nas àirde, briog air Tux no air an ìomhaigheag “casruisgte / brògan spòrs” san oisean clì air barr na sgrìn gus am modh-ruith-gu-luath a thoglachadh.
-	</translation>
-    </message>
-    <message>
         <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="9"/>
         <source>Relative Maze</source>
         <translation type="unfinished"></translation>
@@ -1103,28 +1042,6 @@ For larger labyrinths, there is a special walking mode, called &quot;run-fast-mo
 You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
 From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Use the keyboard arrows to move Tux up to the door. In this maze, the move is relative (first person). Use the up arrow to go forward. The other arrows let you turn Tux in another direction.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-</source>
-        <translation type="vanished">Cleachd na saighdean air a’ mheur-chlàr gus Tux a ghluasad dhan doras. Sa chuartan seo, tha an gluasad dàimheach (chiad pearsa). Cleachd an t-saighead suas gus gluasad air adhart. Leigidh na saighdean eile leat Tux a thionndadh gu comhair eile.
-
-Air na ciad leibheilean, coisichidh Tux gu socair tron chuartan is nì e ceum le gach brùthadh iuchrach.
-
-Sna cuartanan mòra, tha modh coiseachd sònraichte ann air a bheil “modh-ruith-gu-luath”. Nuair a bhios am modh-ruith-gu-luath seo an comas, ruithidh Tux gun stad gus an ruig e gobhal far am bi co-dhùnadh a dhìth ort càite an tèid e an uair sin.
-
-Chì thu cò dhiubh a bheil am modh seo air no nach eil ma sheallas tu air an dà chois Tux: Ma tha Tux casruisgte, tha am “modh-ruith-gu-luath” à comas. Ma tha brògan spòrs dearga air, tha am “modh-ruith-gu-luath” an comas.
-
-O leibheil 14 a-mach, bidh am modh-ruith-gu-luath an comas gu fèin-obrachail. Ma tha thu airson an fheart seo a chleachdadh air na leibheilean nas ìsle no ma tha thu airson a chur dheth air na leibheilean nas àirde, briog air Tux no air an ìomhaigheag “casruisgte / brògan spòrs” san oisean clì air barr na sgrìn gus am modh-ruith-gu-luath a thoglachadh.
-</translation>
     </message>
     <message>
         <location filename="../src/activities/color_mix/ActivityInfo.qml" line="9"/>
@@ -1146,18 +1063,6 @@ O leibheil 14 a-mach, bidh am modh-ruith-gu-luath an comas gu fèin-obrachail. M
         <source>The activity deals with mixing primary colors of paint (subtractive mixing).
 In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>
-The activity deals with mixing primary colors of paint (subtractive mixing).
-
-In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.
-        </source>
-        <translation type="vanished">
-Dèiligidh an cleas seo le measgadh prìomh dhathan peant (measgadh toirt air falbh).
-
-Ma tha peant agad, sùighidh na h-incean dathan solais eadar-dhealaichte a thuiteas orra, gan toirt air falbh o na chì thu. Mar as motha an inc a chuireas tu ris, ’s ann as motha de sholas a thèid a shùigheadh is ’s ann as duirche a dh’fhàsas an dath co-mheasgaichte. Chan eil ach na trì prìomh-dhathan a dhìth oirnn gus a h-uile seòrsa de dhath ùr a dhèanamh. Seo na prìomh-dhathan airson peint/ince: saidhean (gorm sònraichte), magenta (bàn-dhearg sònraichte) is buidhe.
-        </translation>
     </message>
     <message>
         <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="9"/>
@@ -1188,28 +1093,6 @@ Ma tha peant agad, sùighidh na h-incean dathan solais eadar-dhealaichte a thuit
         <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="10"/>
         <source>Find your way out of the invisible maze</source>
         <translation>Faigh lorg air an t-slighe a-mach às a&apos; chuartan do-fhaicsinneach</translation>
-    </message>
-    <message>
-        <source>Use the keyboard arrows to move Tux up to the door. Use the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-</source>
-        <translation type="vanished">Cleachd na saighdean air a’ mheur-chlàr gus Tux a ghluasad dhan doras. Cleachd a’ spacebar gus leum a ghearradh eadar na modhan faicsinneach is do-fhaicsinneach. Cha dèan am modh faicsinneach ach sealladh far a bheil thu, mar mhapa. Chan urrainn dhut Tux a ghluasad sa modh fhaicsinneach.
-
-Air na ciad leibheilean, coisichidh Tux gu socair tron chuartan is nì e ceum le gach brùthadh iuchrach.
-
-Sna cuartanan mòra, tha modh coiseachd sònraichte ann air a bheil “modh-ruith-gu-luath”. Nuair a bhios am modh-ruith-gu-luath seo an comas, ruithidh Tux gun stad gus an ruig e gobhal far am bi co-dhùnadh a dhìth ort càite an tèid e an uair sin.
-
-Chì thu cò dhiubh a bheil am modh seo air no nach eil ma sheallas tu air an dà chois Tux: Ma tha Tux casruisgte, tha am “modh-ruith-gu-luath” à comas. Ma tha brògan spòrs dearga air, tha am “modh-ruith-gu-luath” an comas.
-
-O leibheil 14 a-mach, bidh am modh-ruith-gu-luath an comas gu fèin-obrachail. Ma tha thu airson an fheart seo a chleachdadh air na leibheilean nas ìsle no ma tha thu airson a chur dheth air na leibheilean nas àirde, briog air Tux no air an ìomhaigheag “casruisgte / brògan spòrs” san oisean clì air barr na sgrìn gus am modh-ruith-gu-luath a thoglachadh.
-</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="9"/>
@@ -1343,10 +1226,6 @@ O leibheil 14 a-mach, bidh am modh-ruith-gu-luath an comas gu fèin-obrachail. M
         <location filename="../src/activities/football/ActivityInfo.qml" line="14"/>
         <source>Point the mouse and click on the ball, to set the speed and direction of the ball.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Point the mouse and click on the ball, to set the speed and direction of the ball. The closer you click to the center, the slower the ball moves.</source>
-        <translation type="vanished">Tomh an luchag is briog air a’ bhàla gus astar is comhair a’ bhàla a shuidheachadh. Mar as fhaisge air a’ mheadhan a nì thu am briogadh ’s ann nas slaodaiche a ghluaiseas am bàla.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="5"/>
@@ -1606,10 +1485,6 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Tochail òr</translation>
     </message>
     <message>
-        <source>Use the mousewheel to approach the rockwall an look for gold nuggets.</source>
-        <translation type="vanished">Cleachd cuibhle na luchaige gus teannadh dhan bhalla cloiche is cnapan òir a lorg.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="10"/>
         <source>Use the mousewheel to approach the rockwall and look for gold nuggets.</source>
         <translation>Cleachd cuibhle na luchaige gus teannadh dhan bhalla cloiche is cnapan òir a lorg.</translation>
@@ -1632,26 +1507,6 @@ The truck in the lower, right corner of the screen will tell you the number of a
 To start the tutorial, click on professor Tux (available at level 1) and let him show you, what to do next.
 Have fun! :)</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Looking at the rockwall, you can see a sparkle somewhere. Move the mouse cursor next to this sparkle and use the mousewheel to zoom in. If you zoomed in at maximum, a gold nugget will appear at the position of the sparkle. Click on the gold nugget to collect it.
-
-Having collected the nugget, use the mousewheel to zoom out again. If you zoomed out at maximum, another sparkle will appear, showing the next gold nugget to collect. Collect enough nuggets to complete the level.
-
-The truck in the lower, right corner of the screen will tell you the number of already collected nuggets and the total number of nuggets to collect in this level.
-
-To start the tutorial, click on professor Tux (available at level 1) and let him show you, what to do next.
-
-Have fun! :)</source>
-        <translation type="vanished">Chì thu lainnir àiteigin air a’ bhalla cloiche. Gluais cùrsair na luchaige faisg oirre is cleachd cuibhle na luchaige gus sùmadh a-steach. Ma rinn tu an sùmadh as fhaisge, chì thu cnap òir far an robh an lainnir. Briog air a’ chnap gus a thogail.
-
-Nuair a bhios tu air an cnap a thogail, cleachd cuibhle na luchaige gus sùmadh a-mach a-rithist. Ma rinn thu an sùmadh as fharsainge, nochdaidh lainnir eile a sheallas dhut far a bheil cnap òir eile gus togail. Tog cnapan òir gu leòr gus an leibheil a choileanadh.
-
-Innsidh an truca oir deas aig bonn na sgrìn dhut co mheud cnap a thog thu gu ruige seo is na tha a dhìth gus an leibheil seo a choileanadh.
-
-Gus tòiseachadh air an oideachadh, briog air an t-ollamh Tux (ri làimh air leibheil 1) is seallaidh e dhut an ath nì a dh’fheumas tu dèanamh.
-
-Gabh tlachd! :)</translation>
     </message>
     <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="19"/>
@@ -1860,10 +1715,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation>Gus am meidh a dhèanamh cothromaichte, gluais na clachan-tomhais dhan taobh chlì no deas. Faodaidh tu òrdugh sam bith a chur air na clachan-tomhais.</translation>
     </message>
     <message>
-        <source>The painting is an original painting created by Virginie MOREAU (virginie.moreau@free.fr) in 2001. Its name is &apos;Spices Seller in Egypt&apos;. It is released under the GPL license.</source>
-        <translation type="vanished">Seo dealbh tùsail a chaidh a chruthachadh le Virginie MOREAU (virginie.moreau@free.fr) ann an 2001. Is “Reiceadair spìosraidhean san Èipheit” an t-ainm a th’ air. Chaidh fhoillseachadh fon cheadachas GPL.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/sudoku/ActivityInfo.qml" line="28"/>
         <source>Sudoku, place unique symbols in a square.</source>
         <translation>Sudoku, cuir samhlaidhean àraid ann an ceàrnag.</translation>
@@ -2015,8 +1866,15 @@ aon dath</translation>
         <translation>Mu GCompris</translation>
     </message>
     <message>
+        <location filename="../src/core/DialogAbout.qml" line="29"/>
+        <source>translator-credits</source>
+        <extracomment>Replace this string with your names, one name per line.</extracomment>
+        <translation type="unfinished">Akerbeltz ⁊ GunChleoc</translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogAbout.qml" line="33"/>
         <source>GCompris Home Page: http://gcompris.net</source>
-        <translation type="vanished">Duilleag-dhachaigh GCompris: http://gcompris.net</translation>
+        <translation>Duilleag-dhachaigh GCompris: http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -2027,202 +1885,202 @@ aon dath</translation>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="100"/>
+        <location filename="../src/core/DialogConfig.qml" line="99"/>
         <source>Enable audio voices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="109"/>
+        <location filename="../src/core/DialogConfig.qml" line="108"/>
         <source>Enable audio effects</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="118"/>
+        <location filename="../src/core/DialogConfig.qml" line="117"/>
         <source>Fullscreen</source>
         <translation>Làn-sgrìn</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="127"/>
+        <location filename="../src/core/DialogConfig.qml" line="126"/>
         <source>Virtual Keyboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="137"/>
+        <location filename="../src/core/DialogConfig.qml" line="136"/>
         <source>Enable automatic downloads/updates of sound files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="152"/>
+        <location filename="../src/core/DialogConfig.qml" line="151"/>
         <source>Font selector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="169"/>
+        <location filename="../src/core/DialogConfig.qml" line="168"/>
         <source>Language selector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="206"/>
+        <location filename="../src/core/DialogConfig.qml" line="205"/>
         <source>Sounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="221"/>
+        <location filename="../src/core/DialogConfig.qml" line="220"/>
         <source>Check for updates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="222"/>
+        <location filename="../src/core/DialogConfig.qml" line="221"/>
         <source>Download</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="241"/>
+        <location filename="../src/core/DialogConfig.qml" line="240"/>
         <source>Difficulty filter:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="470"/>
+        <location filename="../src/core/DialogConfig.qml" line="469"/>
         <source>You selected a new locale</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="471"/>
+        <location filename="../src/core/DialogConfig.qml" line="470"/>
         <source>Do you want to download the corresponding sound files now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="486"/>
+        <location filename="../src/core/DialogConfig.qml" line="485"/>
         <source>English (Great Britain)</source>
         <translation>Beurla (na Breatainne Mòire)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="487"/>
+        <location filename="../src/core/DialogConfig.qml" line="486"/>
         <source>English (United States)</source>
         <translation>Beurla (nan Stàitean Aonaichte)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="488"/>
+        <location filename="../src/core/DialogConfig.qml" line="487"/>
         <source>Bulgarian</source>
         <translation>Bulgairis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="489"/>
+        <location filename="../src/core/DialogConfig.qml" line="488"/>
         <source>Breton</source>
         <translation>Breatnais</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="490"/>
+        <location filename="../src/core/DialogConfig.qml" line="489"/>
         <source>Czech Republic</source>
         <translation>Poblachd na Seice</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="491"/>
+        <location filename="../src/core/DialogConfig.qml" line="490"/>
         <source>Danish</source>
         <translation>Danmhairgis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="492"/>
+        <location filename="../src/core/DialogConfig.qml" line="491"/>
         <source>German</source>
         <translation>Gearmailtis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="493"/>
+        <location filename="../src/core/DialogConfig.qml" line="492"/>
         <source>Greek</source>
         <translation>Greugais</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="494"/>
+        <location filename="../src/core/DialogConfig.qml" line="493"/>
         <source>Spanish</source>
         <translation>Spàinntis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="495"/>
+        <location filename="../src/core/DialogConfig.qml" line="494"/>
         <source>French</source>
         <translation>Fraingis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="496"/>
+        <location filename="../src/core/DialogConfig.qml" line="495"/>
         <source>Scottish Gaelic</source>
         <translation>Gàidhlig</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="497"/>
+        <location filename="../src/core/DialogConfig.qml" line="496"/>
         <source>Galician</source>
         <translation>Gailìsis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="498"/>
+        <location filename="../src/core/DialogConfig.qml" line="497"/>
         <source>Hungarian</source>
         <translation>Ungairis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="499"/>
+        <location filename="../src/core/DialogConfig.qml" line="498"/>
         <source>Lithuanian</source>
         <translation>Liotuainis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="500"/>
+        <location filename="../src/core/DialogConfig.qml" line="499"/>
         <source>Latvian</source>
         <translation>Laitbheis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="501"/>
+        <location filename="../src/core/DialogConfig.qml" line="500"/>
         <source>Dutch</source>
         <translation>Duitsis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="502"/>
+        <location filename="../src/core/DialogConfig.qml" line="501"/>
         <source>Norwegian Nynorsk</source>
         <translation>Nynorsk na Nirribhidh</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="503"/>
+        <location filename="../src/core/DialogConfig.qml" line="502"/>
         <source>Polish</source>
         <translation>Pòlainnis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="504"/>
+        <location filename="../src/core/DialogConfig.qml" line="503"/>
         <source>Russian</source>
         <translation>Ruisis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="505"/>
+        <location filename="../src/core/DialogConfig.qml" line="504"/>
         <source>Portuguese (Brazil)</source>
         <translation>Portagailis (Braisil)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="506"/>
+        <location filename="../src/core/DialogConfig.qml" line="505"/>
         <source>Slovak</source>
         <translation>Slòbhacais</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="507"/>
+        <location filename="../src/core/DialogConfig.qml" line="506"/>
         <source>Slovenian</source>
         <translation>Slòbhainis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="508"/>
+        <location filename="../src/core/DialogConfig.qml" line="507"/>
         <source>Montenegrin</source>
         <translation>Monadh Neagrach</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="509"/>
+        <location filename="../src/core/DialogConfig.qml" line="508"/>
         <source>Swedish</source>
         <translation>Suainis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="510"/>
+        <location filename="../src/core/DialogConfig.qml" line="509"/>
         <source>Tamil</source>
         <translation>Taimilis</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="511"/>
+        <location filename="../src/core/DialogConfig.qml" line="510"/>
         <source>Thai</source>
         <translation>Cànan nan Tàidh</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="512"/>
+        <location filename="../src/core/DialogConfig.qml" line="511"/>
         <source>Chinese (Traditional)</source>
         <translation>Sìnis (Thradaiseanta)</translation>
     </message>
@@ -2299,13 +2157,6 @@ aon dath</translation>
     </message>
 </context>
 <context>
-    <name>FindIt</name>
-    <message>
-        <source>Find the blue duck</source>
-        <translation type="obsolete">Lorg an tunnag ghorm</translation>
-    </message>
-</context>
-<context>
     <name>FirstScreen</name>
     <message>
         <location filename="../src/activities/braille_alphabets/FirstScreen.qml" line="37"/>
@@ -2331,12 +2182,12 @@ aon dath</translation>
 <context>
     <name>Leftright</name>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="143"/>
+        <location filename="../src/activities/leftright/Leftright.qml" line="144"/>
         <source>Left hand</source>
         <translation>An làmh chlì</translation>
     </message>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="154"/>
+        <location filename="../src/activities/leftright/Leftright.qml" line="155"/>
         <source>Right hand</source>
         <translation>An làmh dheas</translation>
     </message>
@@ -2416,16 +2267,6 @@ gus leantainn air na gluasadan agad</translation>
         <source></source>
         <comment>Replace this string with your names, one name per line.</comment>
         <translation></translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="29"/>
-        <source>translator-credits</source>
-        <translation>Akerbeltz ⁊ GunChleoc</translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="33"/>
-        <source>GCompris Home Page: http://gcompris.net</source>
-        <translation>Duilleag-dhachaigh GCompris: http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -3305,13 +3146,6 @@ gus leantainn air na gluasadan agad</translation>
     </message>
 </context>
 <context>
-    <name>findit</name>
-    <message>
-        <source>Learning Clock</source>
-        <translation type="obsolete">Ag ionnsachadh an uaireadair</translation>
-    </message>
-</context>
-<context>
     <name>guessnumber</name>
     <message>
         <location filename="../src/activities/guessnumber/guessnumber.js" line="65"/>
@@ -3564,12 +3398,6 @@ gus leantainn air na gluasadan agad</translation>
         <source>Tux just bought some items in your shop.
 He gives you %1, please give back his change.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Tux just bought some items in your shop.
-He gives you $ %1, please give back his change.</source>
-        <translation type="vanished">Tha Tux air nithean a cheannach sa bhùth agad.
-Thug e £ %1 dhut, an toir thu iomlaid dha?</translation>
     </message>
 </context>
 <context>

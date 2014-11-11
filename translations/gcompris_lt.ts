@@ -55,18 +55,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
-An adding-up sum looks like this: 2 + 2 = 4
-The numbers on one side of the equals sign (=) have to be the same as the number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud when you work this out, and count on your fingers, because the more ways you do something, the better you remember it. You can also use blocks, or buttons, or anything you can count. If you have lots of brothers and sisters, you can count them! Or the kids in your class at school. Sing counting songs. Count lots of things, for practice, and you&apos;ll be very good at adding-up!
-
-In this game, these cards are hiding the two parts of an adding-up sum (also called an addition sum). You need to find the two parts of the sum, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole sum. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper sum. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the sums, you&apos;ve won the game! :)</source>
-        <translation type="vanished">Gali matyti kai kurias kortas, bet jų antros pusės nematomos. Kiekviena korta slepia du sudedamus skaičius arba tokių skaičių sumą. 
-Sudedamų skaičių suma atrodo šitaip: 2 + 2 = 4
-Skaičių suma į kairę nuo lygybės ženklo (=) turi būti tokia pat kaip ir atsakymas kitoje lygybės ženklo pusėje. Šitaip, du (viens, du) ir du (trys, keturi) sudaro keturis. Spręsdamas skaičiuoki garsiai, skaičiuoki pirštais nes kuo daugiau būdų naudosi skaičiavimui, tuo geriau įsiminsi kaip reikia skaičiuoti. Gali perskaičiuoti blokelius, sagas ar kokius nors kitus turimus daiktus. Jei turi daugiau brolių ar seserų, gali suskaičiuoti ir juos. Arba suskaičiuoki kiek tavo grupėje ar klasėje yra vaikų. Mokykis skaičiuotes. Skaičiuok daug įvairių dalykų, pratinkis, ir labai gerai išmoksi sudėti!
-
-Šiame žaidime kortos slepia sudėties lygybių kairiąsias ir dešiniąsias puses. Tau reikia rasti atitinkamas kortas ir atversti jas vienu metu. Spausk pele ant kortos kad pamatytum kokius skaičius ji slepia, tada ieškok kitos kortos kuri turi teisingą atsakymą. Vienu ėjimu galima atversti dvi skirtingas kortas, ir jei vienoje jų atsakymas bus teisingas kitos kortos lygybės sprendimas, abi kortos dings. Tu laimėsi, kai visos kortos bus teisingai atverstos ir dings.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/memory-math-add/ActivityInfo.qml" line="18"/>
         <source></source>
         <translation></translation>
@@ -137,22 +125,10 @@ Skaičių suma į kairę nuo lygybės ženklo (=) turi būti tokia pat kaip ir a
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Practise subtraction, until all the cards are gone.</source>
-        <translation type="vanished">Mokykis atimties veiksmų, kol dings kortos.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/memory-math-add-minus/ActivityInfo.qml" line="13"/>
         <location filename="../src/activities/memory-math-add-minus-tux/ActivityInfo.qml" line="13"/>
         <source>Addition and subtraction</source>
         <translation>Sudėtis ir atimtis</translation>
-    </message>
-    <message>
-        <source>You can see some cards, but you can&apos;t see what&apos;s on the other side of them. Each card is hiding an operation, or the answer to it.
-
-In this game, these cards are hiding the two parts of an operation. You need to find the two parts of the operation, and bring them together again. Click on a card to see what number it&apos;s hiding, then try to find the other card that goes with it, to make a whole operation. You can only turn over two cards in one go, so you need to remember where the numbers are hiding, then you can match them when you find their other half. You&apos;re doing the job of the equals sign, and the numbers need you to put them together and make a proper equality. When you do that, both those cards disappear! When you&apos;ve made them all disappear, found all the operations, you&apos;ve won the game! :)</source>
-        <translation type="vanished">Šiame žaidime matysi kortas, bet jų antros pusės paprastai nematomos. Kiekviena korta slepia veiksmą arba atsakymą jam.
-
-Tau reikia rasti kortas su veiksmais ir teisingais jų atsakymais, ir atversti tokias kortų poras vienu metu. Tik dvi kortos gali būti atverstos vienu metu, tad tau teks atsiminti veiksmus ir atsakymus, kuriuos slepia kitos kortos, kad atverstum tinkamą porą. Tau tenka lygybės ženklo vaidmuo, ir reikia atversti kortas taip, kad skaičiai ir jų atsakymai sutaptų. Kai atversi dvi atitinkamas kortas, jos dings. Kai atversi visas tinkančias kortas ir jos dings, laimėsi žaidimą!</translation>
     </message>
     <message>
         <location filename="../src/activities/erase_clic/ActivityInfo.qml" line="9"/>
@@ -271,10 +247,6 @@ spausdinamas nebaigtas žodis. Žodžiui pabaigti pažymėkite trukstamą raidę
         <location filename="../src/activities/erase/ActivityInfo.qml" line="14"/>
         <source>Move the mouse until all the blocks disappear. You can add you own images under the directory &apos;~/My GCompris/erase&apos;.</source>
         <translation>Judinkit pelę kol blokai dings. Galite pridėti savo vaizdų į katalogą „~/My GCompris/erase“.</translation>
-    </message>
-    <message>
-        <source>Animal pictures are taken from the Animal Photography Page of Ralf Schmode (&amp;lt;http://schmode.net/&amp;gt;) and from LE BERRE Daniel. These people kindly gave GCompris the authorization to include their pictures. Thanks a lot, both of you.</source>
-        <translation type="vanished">Žvėrelių nuotraukos paimtos iš Ralfo Schmode žvėrelių fotografijų puslapio (http://schmode.net/) ir Danielio Le Berre. Šie žmonės leido žaidime naudoti jų nuotraukas. Labai jiems ačiū.</translation>
     </message>
     <message>
         <location filename="../src/activities/algorithm/ActivityInfo.qml" line="9"/>
@@ -1001,18 +973,6 @@ In case of light it is just the opposite of mixing color with paints! The more l
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>
-The activity deals with mixing primary colors of light (additive mixing).
-
-In case of light it is just the opposite of mixing color with paints! The more light you add the lighter the resultant color will get. Primary colors of light are red, green and blue.
-        </source>
-        <translation type="vanished">
-Veikla užsiima pirminių šviesos spalvų maišymų (maišymas pridedant).
-
-Šviesos atveju yra atvirkščiai nei tapyme! Kuo daugiau šviesos pridedama, tuo šviesesnis rezultatas. Pirminės spalvos yra raudona, žalia ir mėlyna.
-        </translation>
-    </message>
-    <message>
         <location filename="../src/activities/maze/ActivityInfo.qml" line="9"/>
         <source>Maze</source>
         <translation>Labirintas</translation>
@@ -1055,28 +1015,6 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Use the keyboard arrows to move Tux up to the door.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-	</source>
-        <translation type="vanished">Naudokite klaviatūros rodykles Tuxui išvesti pro duris.
-
-Pirmuose lygiuose Tuxas vaikšto patogiai po vieną žingsnį per labirintą kiekvienam paspaudimui.
-
-Didesniuose labirintuose yra speciali vaikščiojimo veiksena, vadinama „greito bėgimo veiksena“. Jei ši veiksena įjungta, Tuxas bėga automatiškai iki pasiekia išsišakojimą ir jūs turite nuspręsti, kuriuo keliu eiti toliau.
-
-Galite matyti, ar ši veiksena įjungta, pažiūrėję į Tuxo pėdas: jei Tuxas basas, „greito bėgimo veiksena“ išjungta. O jei jis avi raudonus sportbačius, „greito bėgimo veiksena“ yra įjungta.
-
-Nuo 14 lygio greito bėgimo veiksena yra įjungta automatiškai. Jei norite naudoti šią savybę ankstesniuose lygiuose arba norite išjungti ją vėlesniuose, paspauskite ant Tuxo arba „baso / sportbačio“ piktogramos viršutiniame kairiajame ekrano kampe greito bėgimo veiksenai perjungti.
-	</translation>
-    </message>
-    <message>
         <location filename="../src/activities/mazerelative/ActivityInfo.qml" line="9"/>
         <source>Relative Maze</source>
         <translation type="unfinished"></translation>
@@ -1094,28 +1032,6 @@ For larger labyrinths, there is a special walking mode, called &quot;run-fast-mo
 You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
 From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Use the keyboard arrows to move Tux up to the door. In this maze, the move is relative (first person). Use the up arrow to go forward. The other arrows let you turn Tux in another direction.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-</source>
-        <translation type="vanished">Naudokite klaviatūros rodykles Tuxui nuvesti iki durų. Šiame labirinte judėjimas yra santykinis (pirmam asmeniui). Naudokite rodyklę judėjimui pirmyn. Kitos rodyklės leidžia pasukti Tuxą į kitą kryptį.
-
-Pirmuose lygiuose Tuxas vaikšto patogiai, vieną žingsnį per labirintą kiekvienam paspaudimui.
-
-Didesniems labirintams yra speciali vaikščiojimo veiksena, vadinama „greito bėgimo veiksena“. Jei ši veiksena yra įjungta, Tuxas bėgs visą kelią automatiškai iki pasieks išsišakojimą ir jums reikįs nuspręsti, kuriuo keliu eiti toliau.
-
-Galite matyti, ar ši veiksena įjungta, pažiūrėję į Tuxo pėdą: Jei Tuxas yra basas, „greito bėgimo veiksena“ yra išjungta. O jei jis avi raudonus protbačius, „greito bėgimo veiksena“ yra įjungta.
-
-Nuo 14 lygio greito bėgimo veiksena bus automatiškai įjungta. Jei norite naudoti šią savybę ankstesniuose lygiuose ar norite ją išjungti aukštesniuose, spauskite ant Tuxo arba „baso / sportbačio“ piktogramos viršutiniame kairiajame ekrano kampe greito bėgimo veiksenai perjungti.
-</translation>
     </message>
     <message>
         <location filename="../src/activities/color_mix/ActivityInfo.qml" line="9"/>
@@ -1137,18 +1053,6 @@ Nuo 14 lygio greito bėgimo veiksena bus automatiškai įjungta. Jei norite naud
         <source>The activity deals with mixing primary colors of paint (subtractive mixing).
 In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>
-The activity deals with mixing primary colors of paint (subtractive mixing).
-
-In case of paints the inks absorb different colors of light falling on it, subtracting it from what you see. The more ink you add, the more light is absorbed, and the darker the combined color gets. We can mix just three primary colors to make many new colors. The primary colors for paint/ink are Cyan (a special shade of blue), Magenta (a special shade of pink), and Yellow.
-        </source>
-        <translation type="vanished">
-Veikla užsiima pirminių tapymo spalvų maišymu (maišymas atimant).
-
-Tapyboje rašalai sugeria skirtingas šviesos spalvas, pašalindami jas iš to, ką motote. Kuo daugiau rašalo pridedate, tuo daugiau šviesos sugeriama ir gaunama tamsesnė spalva. Galime maišyti tik tris pirmines spalvas naujoms spalvoms gauti. Pirminės spalvos yra žalsvai mėlyna, rausvai raudona ir geltona.
-        </translation>
     </message>
     <message>
         <location filename="../src/activities/wordsgame/ActivityInfo.qml" line="9"/>
@@ -1179,28 +1083,6 @@ Tapyboje rašalai sugeria skirtingas šviesos spalvas, pašalindami jas iš to, 
         <location filename="../src/activities/mazeinvisible/ActivityInfo.qml" line="10"/>
         <source>Find your way out of the invisible maze</source>
         <translation>Surask kelią iš nematomo labirinto</translation>
-    </message>
-    <message>
-        <source>Use the keyboard arrows to move Tux up to the door. Use the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
-
-At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
-
-For larger labyrinths, there is a special walking mode, called &quot;run-fast-mode&quot;. If this run-fast-mode is enabled, Tux will run all the way automatically until he reaches a fork and you have to decide which way to go further.
-
-You can see whether this mode is enabled or not, by looking at Tux&apos;s feet: If Tux is barefooted, &quot;run-fast-mode&quot; is disabled. And if he wears red sport shoes, &quot;run-fast-mode&quot; is enabled.
-
-From level 14 on, run-fast-mode will be enabled automatically. If you want to use this feature in earlier levels or want to disable it in advanced levels, click on Tux or the &quot;barefoot / sportshoe&quot;-icon in the upper left corner of the screen to toggle the run-fast-mode.
-</source>
-        <translation type="vanished">Naudokite klaviatūros rodykles Tuxui išvesti pro duris. Naudokite tarpą persijungimui tarp nematomos ir matomos veiksenos. Matoma veiksena tik parodo jums jūsų padėtį kaip žemėlapį. Negalite judinti Tuxo matomoje veiksenoje.
-
-Pirmuose lygiuose, Tuxas vaikšto patogiai, po vieną žingsnį per labirintą kiekvienam paspaudimui.
-
-Didesniems labirintams yra speciali ėjimo veiksena, vadinama „greito bėgimo veiksena“. Jei greito bėgimo veiksena yra įjungta, Tuxas bėga automatiškai iki  išsišakojimo ir jums reikia nuspręsti, kuriuo keliu eiti toliau.
-
-Jūs galite matyti, ar ši veiksena yra įjungta pažiūrėję į Tuxo pędas: jei Tuxas basas, „greito bėgimo veiksena“ yra išjungta. O jei jis avi raudonus sportbačius, „greito bėgimo veisena“ yra įjungta.
-
-Nuo 14 lygio greito bėgimo veiksena bus įjungta automatiškai. Jei norite naudoti šią savybę ankstesniuose lygiuose arba norite ją išjungti sudėtingesniuose lygiuose, spauskite ant Tuxo arba „baso / protbačio“ piktogramos viršutiniame kairiajame ekrano kampe greito bėgimo veiksenai perjungti.
-</translation>
     </message>
     <message>
         <location filename="../src/activities/clockgame/ActivityInfo.qml" line="9"/>
@@ -1334,10 +1216,6 @@ Nuo 14 lygio greito bėgimo veiksena bus įjungta automatiškai. Jei norite naud
         <location filename="../src/activities/football/ActivityInfo.qml" line="14"/>
         <source>Point the mouse and click on the ball, to set the speed and direction of the ball.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Point the mouse and click on the ball, to set the speed and direction of the ball. The closer you click to the center, the slower the ball moves.</source>
-        <translation type="vanished">Spustelėk ant norimo kamuoliuko ir nustatyk kamuoliuko greitį ir kryptį. Kuo arčiau centro spausi, tuo lėčiau kamuoliukas judės.</translation>
     </message>
     <message>
         <location filename="../src/activities/gnumch-primes/ActivityInfo.qml" line="5"/>
@@ -1597,10 +1475,6 @@ In this game, these cards are hiding the two parts of an operation. You need to 
         <translation>Aukso kasimas</translation>
     </message>
     <message>
-        <source>Use the mousewheel to approach the rockwall an look for gold nuggets.</source>
-        <translation type="vanished">Naudokite pelės ratuką priartėjimui prie akmenų sienos ir ieškokite aukso grynuolių.</translation>
-    </message>
-    <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="10"/>
         <source>Use the mousewheel to approach the rockwall and look for gold nuggets.</source>
         <translation>Naudokite pelės ratuką priartėjimui prie akmenų sienos ir ieškokite aukso grynuolių.</translation>
@@ -1623,26 +1497,6 @@ The truck in the lower, right corner of the screen will tell you the number of a
 To start the tutorial, click on professor Tux (available at level 1) and let him show you, what to do next.
 Have fun! :)</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Looking at the rockwall, you can see a sparkle somewhere. Move the mouse cursor next to this sparkle and use the mousewheel to zoom in. If you zoomed in at maximum, a gold nugget will appear at the position of the sparkle. Click on the gold nugget to collect it.
-
-Having collected the nugget, use the mousewheel to zoom out again. If you zoomed out at maximum, another sparkle will appear, showing the next gold nugget to collect. Collect enough nuggets to complete the level.
-
-The truck in the lower, right corner of the screen will tell you the number of already collected nuggets and the total number of nuggets to collect in this level.
-
-To start the tutorial, click on professor Tux (available at level 1) and let him show you, what to do next.
-
-Have fun! :)</source>
-        <translation type="vanished">Žiūrėdami į akmenų sieną galite kur nors pastebėti kibirkštį. Perkelkite pelės žymiklį prie kibirkšties ir naudokite pelės ratuką pritraukimui. Jei visiškai priartinote, aukso grynuolis pasirodys kibirkšties vietoje. Paspauskite ant aukso grynuolio jam paimti.
-
-Paėmę aukso grynuolį naudokite pelės ratuką atitolinimui. Kai visiškai atitolinsite, pasirodys kita kibirkštis, nurodanti kitą aukso grynuolį. Surinkite pakankamai aukso grynuolių lygiui užbaigti.
-
-Sunkvežimis apatiniame dešiniajame kampe jums nurodys jau surinktų grynuolių skaičių bei reikiamą surinktį skaičių šiame lygyje.
-
-Mokymuisi paleisti, spauskite ant profesoriaus Tuxo (galimas pirmame lygyje) ir leiskite jam jums parodyti, ką daryti toliau.
-
-Linksminkitės! :)</translation>
     </message>
     <message>
         <location filename="../src/activities/mining/ActivityInfo.qml" line="19"/>
@@ -1851,10 +1705,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation>Sulyginkite svarstykles, perkeldami svorius į kairę ar dešinę lėkštes. Svoriai gali būti sudėti bet kokia tvarka.</translation>
     </message>
     <message>
-        <source>The painting is an original painting created by Virginie MOREAU (virginie.moreau@free.fr) in 2001. Its name is &apos;Spices Seller in Egypt&apos;. It is released under the GPL license.</source>
-        <translation type="vanished">Orginalus paveikslas yra sukurtas Virginie MOREAU (virginie.moreau@free.fr) 2001 metais. Jo pavadinimas - „Prieskonių pardavėjas Egipte“. Jis gali būti platinamas naudojant GPL licenziją. </translation>
-    </message>
-    <message>
         <location filename="../src/activities/sudoku/ActivityInfo.qml" line="28"/>
         <source>Sudoku, place unique symbols in a square.</source>
         <translation>Sudoku. Sudėliok nesikartojančius simbolius laukeliuose.</translation>
@@ -2005,8 +1855,18 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation>Apie GCompris</translation>
     </message>
     <message>
+        <location filename="../src/core/DialogAbout.qml" line="29"/>
+        <source>translator-credits</source>
+        <extracomment>Replace this string with your names, one name per line.</extracomment>
+        <translation type="unfinished">Mantas Kriaučiūnas &lt;mantas@akl.lt&gt;
+Eglė Kriaučiūnienė &lt;egle@akl.lt&gt;
+Gintautas Miliauskas &lt;gintas@akl.lt&gt;
+Jurgis Pralgauskis &lt;jurgis@ljms.lt&gt;</translation>
+    </message>
+    <message>
+        <location filename="../src/core/DialogAbout.qml" line="33"/>
         <source>GCompris Home Page: http://gcompris.net</source>
-        <translation type="vanished">GCompris interneto svetainė: http://gcompris.net</translation>
+        <translation>GCompris interneto svetainė: http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -2017,202 +1877,202 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="100"/>
+        <location filename="../src/core/DialogConfig.qml" line="99"/>
         <source>Enable audio voices</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="109"/>
+        <location filename="../src/core/DialogConfig.qml" line="108"/>
         <source>Enable audio effects</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="118"/>
+        <location filename="../src/core/DialogConfig.qml" line="117"/>
         <source>Fullscreen</source>
         <translation>Visame ekrane</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="127"/>
+        <location filename="../src/core/DialogConfig.qml" line="126"/>
         <source>Virtual Keyboard</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="137"/>
+        <location filename="../src/core/DialogConfig.qml" line="136"/>
         <source>Enable automatic downloads/updates of sound files</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="152"/>
+        <location filename="../src/core/DialogConfig.qml" line="151"/>
         <source>Font selector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="169"/>
+        <location filename="../src/core/DialogConfig.qml" line="168"/>
         <source>Language selector</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="206"/>
+        <location filename="../src/core/DialogConfig.qml" line="205"/>
         <source>Sounds</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="221"/>
+        <location filename="../src/core/DialogConfig.qml" line="220"/>
         <source>Check for updates</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="222"/>
+        <location filename="../src/core/DialogConfig.qml" line="221"/>
         <source>Download</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="241"/>
+        <location filename="../src/core/DialogConfig.qml" line="240"/>
         <source>Difficulty filter:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="470"/>
+        <location filename="../src/core/DialogConfig.qml" line="469"/>
         <source>You selected a new locale</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="471"/>
+        <location filename="../src/core/DialogConfig.qml" line="470"/>
         <source>Do you want to download the corresponding sound files now?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="486"/>
+        <location filename="../src/core/DialogConfig.qml" line="485"/>
         <source>English (Great Britain)</source>
         <translation>Anglų (Didžioji Britanija)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="487"/>
+        <location filename="../src/core/DialogConfig.qml" line="486"/>
         <source>English (United States)</source>
         <translation>Anglų (JAV)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="488"/>
+        <location filename="../src/core/DialogConfig.qml" line="487"/>
         <source>Bulgarian</source>
         <translation>Bulgarų</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="489"/>
+        <location filename="../src/core/DialogConfig.qml" line="488"/>
         <source>Breton</source>
         <translation>Bretonų</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="490"/>
+        <location filename="../src/core/DialogConfig.qml" line="489"/>
         <source>Czech Republic</source>
         <translation>Čekija</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="491"/>
+        <location filename="../src/core/DialogConfig.qml" line="490"/>
         <source>Danish</source>
         <translation>Danų</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="492"/>
+        <location filename="../src/core/DialogConfig.qml" line="491"/>
         <source>German</source>
         <translation>Vokiečių</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="493"/>
+        <location filename="../src/core/DialogConfig.qml" line="492"/>
         <source>Greek</source>
         <translation>Graikų</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="494"/>
+        <location filename="../src/core/DialogConfig.qml" line="493"/>
         <source>Spanish</source>
         <translation>Ispanų</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="495"/>
+        <location filename="../src/core/DialogConfig.qml" line="494"/>
         <source>French</source>
         <translation>Prancūzų</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="496"/>
+        <location filename="../src/core/DialogConfig.qml" line="495"/>
         <source>Scottish Gaelic</source>
         <translation>Airių (galų)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="497"/>
+        <location filename="../src/core/DialogConfig.qml" line="496"/>
         <source>Galician</source>
         <translation>Galų</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="498"/>
+        <location filename="../src/core/DialogConfig.qml" line="497"/>
         <source>Hungarian</source>
         <translation>Vengrų</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="499"/>
+        <location filename="../src/core/DialogConfig.qml" line="498"/>
         <source>Lithuanian</source>
         <translation>Lietuvių</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="500"/>
+        <location filename="../src/core/DialogConfig.qml" line="499"/>
         <source>Latvian</source>
         <translation>Latvių</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="501"/>
+        <location filename="../src/core/DialogConfig.qml" line="500"/>
         <source>Dutch</source>
         <translation>Olandų</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="502"/>
+        <location filename="../src/core/DialogConfig.qml" line="501"/>
         <source>Norwegian Nynorsk</source>
         <translation>Norvegų Nynorsk</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="503"/>
+        <location filename="../src/core/DialogConfig.qml" line="502"/>
         <source>Polish</source>
         <translation>Lenkų</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="504"/>
+        <location filename="../src/core/DialogConfig.qml" line="503"/>
         <source>Russian</source>
         <translation>Rusų</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="505"/>
+        <location filename="../src/core/DialogConfig.qml" line="504"/>
         <source>Portuguese (Brazil)</source>
         <translation>Portugalų (Brazilų)</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="506"/>
+        <location filename="../src/core/DialogConfig.qml" line="505"/>
         <source>Slovak</source>
         <translation>Slovakų</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="507"/>
+        <location filename="../src/core/DialogConfig.qml" line="506"/>
         <source>Slovenian</source>
         <translation>Slovėnų</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="508"/>
+        <location filename="../src/core/DialogConfig.qml" line="507"/>
         <source>Montenegrin</source>
         <translation>Juodkalniečių</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="509"/>
+        <location filename="../src/core/DialogConfig.qml" line="508"/>
         <source>Swedish</source>
         <translation>Švedų</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="510"/>
+        <location filename="../src/core/DialogConfig.qml" line="509"/>
         <source>Tamil</source>
         <translation>Tamilų</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="511"/>
+        <location filename="../src/core/DialogConfig.qml" line="510"/>
         <source>Thai</source>
         <translation>Tajų</translation>
     </message>
     <message>
-        <location filename="../src/core/DialogConfig.qml" line="512"/>
+        <location filename="../src/core/DialogConfig.qml" line="511"/>
         <source>Chinese (Traditional)</source>
         <translation>Kinų (tradicinė)</translation>
     </message>
@@ -2289,13 +2149,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
     </message>
 </context>
 <context>
-    <name>FindIt</name>
-    <message>
-        <source>Find the blue duck</source>
-        <translation type="obsolete">Atraskite mėlyną antį</translation>
-    </message>
-</context>
-<context>
     <name>FirstScreen</name>
     <message>
         <location filename="../src/activities/braille_alphabets/FirstScreen.qml" line="37"/>
@@ -2321,12 +2174,12 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
 <context>
     <name>Leftright</name>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="143"/>
+        <location filename="../src/activities/leftright/Leftright.qml" line="144"/>
         <source>Left hand</source>
         <translation>Kairiarankis</translation>
     </message>
     <message>
-        <location filename="../src/activities/leftright/Leftright.qml" line="154"/>
+        <location filename="../src/activities/leftright/Leftright.qml" line="155"/>
         <source>Right hand</source>
         <translation>Dešiniarankis</translation>
     </message>
@@ -2405,19 +2258,6 @@ In this game, these cards are hiding the two parts of an adding-up sum (also cal
         <source></source>
         <comment>Replace this string with your names, one name per line.</comment>
         <translation></translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="29"/>
-        <source>translator-credits</source>
-        <translation>Mantas Kriaučiūnas &lt;mantas@akl.lt&gt;
-Eglė Kriaučiūnienė &lt;egle@akl.lt&gt;
-Gintautas Miliauskas &lt;gintas@akl.lt&gt;
-Jurgis Pralgauskis &lt;jurgis@ljms.lt&gt;</translation>
-    </message>
-    <message>
-        <location filename="../src/core/DialogAbout.qml" line="33"/>
-        <source>GCompris Home Page: http://gcompris.net</source>
-        <translation>GCompris interneto svetainė: http://gcompris.net</translation>
     </message>
 </context>
 <context>
@@ -3297,13 +3137,6 @@ Jurgis Pralgauskis &lt;jurgis@ljms.lt&gt;</translation>
     </message>
 </context>
 <context>
-    <name>findit</name>
-    <message>
-        <source>Learning Clock</source>
-        <translation type="obsolete">Mokomasis laikrodis</translation>
-    </message>
-</context>
-<context>
     <name>guessnumber</name>
     <message>
         <location filename="../src/activities/guessnumber/guessnumber.js" line="65"/>
@@ -3556,12 +3389,6 @@ Jurgis Pralgauskis &lt;jurgis@ljms.lt&gt;</translation>
         <source>Tux just bought some items in your shop.
 He gives you %1, please give back his change.</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Tux just bought some items in your shop.
-He gives you $ %1, please give back his change.</source>
-        <translation type="vanished">Tuxas ką tik nusipirko keletą daiktų parduotuvėje.
-Jis duoda $ %1, prašom atiduoti grąžą.</translation>
     </message>
 </context>
 <context>
