@@ -97,15 +97,13 @@ Item {
             // This file cannot be played, remove it from the source asap
             source = ""
             if(files.length)
-                _playNextFile()
+                silenceTimer.start()
             else
                 gcaudio.error()
         }
         onStopped: {
-            if(silenceTimer.interval)
+            if(files.length)
                 silenceTimer.start()
-            else
-                _playNextFile()
         }
     }
 
@@ -117,5 +115,4 @@ Item {
             _playNextFile()
         }
     }
-
 }
