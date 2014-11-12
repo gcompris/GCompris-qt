@@ -28,8 +28,15 @@ set(GCOMPRIS_VERSION ${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION})
 set(GCOMPRIS_VERSION_CODE ${GCOMPRIS_MINOR_VERSION})
 
 # cmake modules setup
-set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake/")
+find_package(ECM 1.4.0 REQUIRED NO_MODULE)
+set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR} ${CMAKE_SOURCE_DIR}/cmake/)
 set(CMAKE_PREFIX_PATH "${Qt5_DIR}/lib/cmake/Qt5")
+
+# KDE po to qm tools
+include(ECMPoQmTools)
+if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
+    ecm_install_po_files_as_qm(po)
+endif()
 
 # prevent build in source directory
 if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
@@ -74,3 +81,4 @@ include(cmake/rcc.cmake)
 
 add_subdirectory(src)
 add_subdirectory(translations)
+
