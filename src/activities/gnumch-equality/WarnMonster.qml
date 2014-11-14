@@ -39,7 +39,7 @@ Rectangle {
     GCText {
         id: warningText
         text: qsTr("Be careful, a troggle !")
-        font.pointSize: ApplicationInfo.ratio * 25
+        font.pointSize: 24
         wrapMode: Text.WordWrap
         horizontalAlignment: Text.AlignHCenter
         anchors.horizontalCenter: parent.horizontalCenter

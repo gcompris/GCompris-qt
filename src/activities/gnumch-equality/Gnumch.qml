@@ -160,7 +160,8 @@ ActivityBase {
             border.color: "black"
             border.width: 2
             anchors.right: parent.right
-            anchors.bottom: parent.bottom
+            anchors.top: parent.top
+            anchors.bottom: topPanel.top
             radius: 5
 
             function isLevelDone() {

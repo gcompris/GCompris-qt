@@ -35,9 +35,9 @@ Image {
     property int nby
 
     x: ix * main.width / nbx
-    y: iy * (main.height - bar.height) / nby
+    y: iy * (main.height - bar.height / 2) / nby
     width: main.width / nbx
-    height: (main.height - bar.height) / nby
+    height: (main.height - bar.height / 2) / nby
 
     signal enter
     signal leave

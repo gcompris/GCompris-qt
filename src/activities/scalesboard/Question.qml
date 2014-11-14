@@ -59,7 +59,7 @@ Item {
         verticalAlignment: Text.AlignVCenter
         wrapMode: TextEdit.WordWrap
         opacity: question.displayed ? 1 : 0
-        text: question.text != "" ? qsTr(question.text).arg(question.userEntry) : ""
+        text: question.text != "" ? question.text.arg(question.userEntry) : ""
         Behavior on opacity { NumberAnimation { duration: 100 } }
 
     }

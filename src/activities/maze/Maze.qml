@@ -340,7 +340,7 @@ ActivityBase {
                 bottom: parent.bottom
                 margins: 20
             }
-            width: activity.width - x - 20
+            width: background.width - x - 20
             font.pointSize: 18
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
@@ -356,18 +356,10 @@ ActivityBase {
 
         Bar {
             id: bar
-            anchors {
-                bottom: undefined 
-                top: parent.top
-                right: parent.right
-                topMargin: height + 10  // FIXME: fix this in the Bar
-            }
             content: BarEnumContent {
-                value: help | home | previous | next
+                value: help | home | level
             }
-            onHelpClicked: {
-                displayDialog(dialogHelp)
-            }
+            onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()

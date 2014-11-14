@@ -1,9 +1,10 @@
-/* GCompris - dialogBackground.qml
+/* GCompris - BrailleMap.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 <Arkit Vora>
  *
  * Authors:
- *   Bruno Coudoin <bruno.coudoin@gcompris.net>
+ *   Srishti Sethi <srishakatux@gmail.com> (GTK+ version)
+ *   Arkit Vora <arkitvora123@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,6 +22,7 @@
 import QtQuick 2.2
 import QtQuick.Controls 1.1
 import GCompris 1.0
+import "braille_alphabets.js" as Activity
 
 Rectangle {
     id: dialogBackground
@@ -37,149 +39,158 @@ Rectangle {
     signal play
     signal stop
 
+    Flickable {
+        id: flick
+        anchors.fill: parent
+        contentWidth: parent.width
+        contentHeight: (grid1.width - grid1.spacing * 10) / 10 * 1.9 * 6.5
+        flickableDirection: Flickable.VerticalFlick
+        clip: true
 
-    Item {
-        id: outer
-        x: parent.width / 2
-        y: parent.height / 15
-        width : parent.width / 1.06
-        height :  parent.height / 6
-        anchors.horizontalCenter: parent.horizontalCenter
-
-        Grid {
-            id: grid
-            spacing: 6
-            columns: 10
-            rows: 3
+        Flow {
+            id: grid1
+            width: parent.width * 0.9
+            anchors {
+                top: parent.top
+                topMargin: 10 * ApplicationInfo.ratio
+                horizontalCenter: parent.horizontalCenter
+            }
+            spacing: 5 * ApplicationInfo.ratio
 
             Repeater {
                 id: cardRepeater
-                model: mapContainerModel
+                model: [
+                    "A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
+                    "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
+                    "U", "V", "W", "X", "Y", "Z"
+                ]
 
                 Item {
-                    id: inner
-                    height: outer.height/1.05
-                    width: outer.width / 12
-                    scale: 0.7
+                    width:  (grid1.width - grid1.spacing * 10) / 10
+                    height: (rect1.height + text1.height) * 1.2
 
                     Rectangle {
                         id: rect1
-                        width:  outer.width / 13; height: outer.height / 1.1
+                        width:  parent.width
+                        height: ins.height
                         border.width: 3
                         border.color: "black"
                         color: "white"
-
 
                         BrailleChar {
                             id: ins
-                            wid: rect1.height / 3.4
-                            hei: rect1.height / 3.4
-                            anchors.centerIn: rect1
+                            width: parent.width * 0.9
+                            anchors.centerIn: parent
                             clickable: false
+                            brailleChar: modelData
                         }
                     }
-
                     Text {
-                        text: letter
-                        scale:  2
-                        anchors.top:inner.bottom
-                        anchors.horizontalCenter: inner.horizontalCenter
+                        id: text1
+                        text: modelData
+                        font.weight: Font.DemiBold
+                        style: Text.Outline
+                        styleColor: "black"
+                        color: "white"
+                        font.pointSize: Math.max(parent.width * 0.2, 12)
+                        anchors {
+                            top: rect1.bottom
+                            topMargin: 4 * ApplicationInfo.ratio
+                            horizontalCenter: parent.horizontalCenter
+                        }
                     }
                 }
-
             }
         }
-    }
 
-    Item {
-        id: outer2
-        x: parent.width / 2
-        y: parent.height / 1.7
-        width : parent.width / 1.06
-        height :  parent.height / 6
-        anchors.horizontalCenter: parent.horizontalCenter
-
-
-        Grid {
+        Flow {
             id: grid2
+            width : parent.width * 0.9
+            height :  parent.height * 0.4
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+                top: grid1.bottom
+                topMargin: 10 * ApplicationInfo.ratio
+            }
             spacing: 6
-            columns: 10
-            rows: 2
 
             Repeater {
                 id: cardRepeater2
-                model: mapContainerModel2
+                model: [
+                    "1", "2", "3", "4", "5", "6", "7", "8", "9", "0",
+                    "+", "-", "*", "/", "#"
+                ]
 
                 Item {
-                    id: inner2
-                    height: outer2.height / 1.05
-                    width: outer2.width / 12
-                    scale: 0.7
+                    width:  (grid1.width - grid1.spacing * 10) / 10
+                    height: (rect2.height + text2.height) * 1.2
 
                     Rectangle {
                         id: rect2
-                        width:  outer2.width / 13; height: outer2.height / 1.1
+                        width:  parent.width
+                        height: ins2.height
                         border.width: 3
                         border.color: "black"
                         color: "white"
 
-
                         BrailleChar {
                             id: ins2
-                            wid: rect2.height / 3.4
-                            hei: rect2.height / 3.4
-                            anchors.centerIn: rect2
+                            width: parent.width * 0.9
+                            anchors.centerIn: parent
                             clickable: false
+                            brailleChar: modelData
                         }
                     }
-
                     Text {
-                        text: letter
-                        scale:  2
-                        anchors.top:inner2.bottom
-                        anchors.horizontalCenter: inner2.horizontalCenter
-
+                        id: text2
+                        text: modelData
+                        font.weight: Font.DemiBold
+                        style: Text.Outline
+                        styleColor: "black"
+                        color: "white"
+                        font.pointSize: Math.max(parent.width * 0.2, 12)
+                        anchors {
+                            top: rect2.bottom
+                            topMargin: 4 * ApplicationInfo.ratio
+                            horizontalCenter: parent.horizontalCenter
+                        }
                     }
                 }
+            }
+        }
 
+        // The back button
+        Image {
+            id: cancel
+            source: Activity.url + "back.svg"
+            fillMode: Image.PreserveAspectFit
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+            smooth: true
+            sourceSize.width: 60 * ApplicationInfo.ratio
+            anchors.margins: 10
+            SequentialAnimation {
+                id: anim
+                running: true
+                loops: Animation.Infinite
+                NumberAnimation {
+                    target: cancel
+                    property: "rotation"
+                    from: -10; to: 10
+                    duration: 500
+                    easing.type: Easing.InOutQuad
+                }
+                NumberAnimation {
+                    target: cancel
+                    property: "rotation"
+                    from: 10; to: -10
+                    duration: 500
+                    easing.type: Easing.InOutQuad }
+            }
+            MouseArea {
+                anchors.fill: parent
+                onClicked: close()
             }
         }
     }
-
-
-
-    // The back button
-    Image {
-        id: cancel
-        source: "qrc:/gcompris/src/activities/braille_alphabets/resource/back.svg"
-        fillMode: Image.PreserveAspectFit
-        anchors.right: parent.right
-        anchors.top: parent.top
-        smooth: true
-        sourceSize.width: 60 * ApplicationInfo.ratio
-        anchors.margins: 10
-        SequentialAnimation {
-            id: anim
-            running: true
-            loops: Animation.Infinite
-            NumberAnimation {
-                target: cancel
-                property: "rotation"
-                from: -10; to: 10
-                duration: 500
-                easing.type: Easing.InOutQuad
-            }
-            NumberAnimation {
-                target: cancel
-                property: "rotation"
-                from: 10; to: -10
-                duration: 500
-                easing.type: Easing.InOutQuad }
-        }
-        MouseArea {
-            anchors.fill: parent
-            onClicked: close()
-        }
-    }
-
 }

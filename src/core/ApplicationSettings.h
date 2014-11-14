@@ -71,6 +71,9 @@ class ApplicationSettings : public QObject
     // internal group
     Q_PROPERTY(quint32 exeCount READ exeCount WRITE setExeCount NOTIFY exeCountChanged)
 
+    // no group
+    Q_PROPERTY(bool isBarHidden READ isBarHidden WRITE setBarHidden NOTIFY barHiddenChanged)
+
 public:
 
     ApplicationSettings(QObject *parent = 0);
@@ -160,6 +163,12 @@ public:
         emit exeCountChanged();
     }
 
+    bool isBarHidden() const { return m_isBarHidden; }
+    void setBarHidden(const bool newBarHidden) {
+        m_isBarHidden = newBarHidden;
+        emit barHiddenChanged();
+    }
+
 protected slots:
 	Q_INVOKABLE void notifyAudioVoicesEnabledChanged();
 	Q_INVOKABLE void notifyAudioEffectsEnabledChanged();
@@ -175,6 +184,8 @@ protected slots:
     Q_INVOKABLE void notifyDownloadServerUrlChanged();
 
     Q_INVOKABLE void notifyExeCountChanged();
+
+    Q_INVOKABLE void notifyBarHiddenChanged();
 
 protected:
 
@@ -194,6 +205,8 @@ signals:
 
     void exeCountChanged();
 
+    void barHiddenChanged();
+
 private:
 
     // Update in configuration the couple {key, value} in the group.
@@ -209,12 +222,16 @@ private:
     bool m_isEmbeddedFont;
     quint32 m_filterLevelMin;
     quint32 m_filterLevelMax;
+	bool m_defaultCursor;
+	bool m_noCursor;
     QString m_locale;
     QString m_font;
 
     QString m_downloadServerUrl;
 
     quint32 m_exeCount;
+
+    bool m_isBarHidden;
 
     QSettings m_config;
 };

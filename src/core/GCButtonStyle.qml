@@ -36,6 +36,8 @@ ButtonStyle {
     }
     label: GCText {
         text: control.text
+        horizontalAlignment: Text.AlignHCenter
+        verticalAlignment: Text.AlignVCenter
         wrapMode: Text.WordWrap
     }
 }

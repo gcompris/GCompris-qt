@@ -25,6 +25,10 @@
 			<meta-data android:name="android.app.ministro_not_found_msg" android:value="@string/ministro_not_found_msg"/>
 			<meta-data android:name="android.app.ministro_needed_msg" android:value="@string/ministro_needed_msg"/>
 			<meta-data android:name="android.app.fatal_error_msg" android:value="@string/fatal_error_msg"/>
+			
+			<!-- Splash screen -->
+            <meta-data android:name="android.app.splash_screen_drawable" android:resource="@drawable/splash"/>
+            <!-- Splash screen -->
 		</activity>
 	</application>
 	<supports-screens android:anyDensity="true" android:normalScreens="true" android:smallScreens="true" android:largeScreens="true"/>

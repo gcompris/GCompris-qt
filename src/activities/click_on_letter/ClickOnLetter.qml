@@ -72,14 +72,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            
-            // anchor in top right corner:
-            anchors.bottom: undefined 
-            anchors.top: parent.top
-            x: parent.width - width
-            anchors.topMargin: height + 10
-            
-            content: BarEnumContent { value: help | home | repeat | previous | next }
+            content: BarEnumContent { value: help | home | repeat | level }
             onHelpClicked: {
                 displayDialog(dialogHelpLeftRight)
             }
@@ -111,8 +104,8 @@ ActivityBase {
             source: Activity.url + "railway.svgz"
             fillMode: Image.PreserveAspectCrop
             anchors.bottom: parent.bottom
-            anchors.left: parent.left
-            width: parent.width
+            anchors.left: bar.right
+            anchors.right: parent.right
             height: 15 * ApplicationInfo.ratio
             sourceSize.width: parent.width
             anchors.bottomMargin: 13 * ApplicationInfo.ratio

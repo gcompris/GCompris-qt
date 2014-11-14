@@ -81,14 +81,14 @@ ActivityBase {
             id: rootItem
         }
 
-        ListModel{
+        ListModel {
             id: blocks
         }
-        Repeater{
+        Repeater {
             id: repeater
             model: blocks
             parent: rootItem
-            Block{
+            Block {
                 id: modelData
                 nbx: nx
                 nby: ny
@@ -109,7 +109,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | previous | next }
+            content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelpLeftRight)
             }

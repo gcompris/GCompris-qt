@@ -64,33 +64,33 @@ Scalesboard {
                 "targets": [[3, "3"], [4, "4"], [6, "6"], [7, "7"], [8, "8"], [9, "9"]],
                 "rightDrop": false,
                 "message": qsTr("Now you have to guess the weight of the gift."),
-                "question": QT_TR_NOOP("Enter the weight of the gift: %1")
+                "question": qsTr("Enter the weight of the gift: %1")
             },
             {
                 "masses": [[2, "2"], [2, "2"], [5, "5"], [5, "5"], [5, "5"]],
                 "targets": [[8, "8"], [11, "11"], [13, "13"]],
                 "rightDrop": true,
                 "message": qsTr("Take care, you can drop weights on both sides of the scale."),
-                "question": QT_TR_NOOP("Enter the weight of the gift: %1")
+                "question": qsTr("Enter the weight of the gift: %1")
             },
             {
                 "masses": [[2, "2"], [5, "5"], [10, "10"], [10, "10"], [12, "12"]],
                 "targets": [[3, "3"], [8, "8"], [13, "13"]],
                 "rightDrop": true,
-                "question": QT_TR_NOOP("Enter the weight of the gift: %1")
+                "question": qsTr("Enter the weight of the gift: %1")
             },
             {
                 "masses": [[2, "2"], [4, "4"], [7, "7"], [10, "10"], [12, "12"]],
                 "targets": [[3, "3"], [5, "5"], [8, "8"], [9, "9"]],
                 "rightDrop": true,
-                "question": QT_TR_NOOP("Enter the weight of the gift: %1")
+                "question": qsTr("Enter the weight of the gift: %1")
             },
             {
                 "masses": [[5, "5"], [8, "8"], [9, "9"], [10, "10"], [11, "11"], [12, "12"]],
                 "targets": [[6, "6"], [7, "7"], [13, "13"], [14, "14"], [15, "15"], [16, "16"],
                            [17, "17"], [18, "18"]],
                 "rightDrop": true,
-                "question": QT_TR_NOOP("Enter the weight of the gift: %1")
+                "question": qsTr("Enter the weight of the gift: %1")
             },
 ]
 

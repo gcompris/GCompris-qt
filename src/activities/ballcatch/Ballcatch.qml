@@ -89,7 +89,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | previous | next }
+            content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelpLeftRight)
             }
@@ -212,17 +212,17 @@ ActivityBase {
         GCText {
             id: instructions
             text: ApplicationInfo.isMobile ?
-                      qsTr("Tap both hands at the same time,
-to make the ball go in a straight line.") :
-                      qsTr("Press left and right arrow keys at the same time,
-to make the ball go in a straight line.")
+                      qsTr("Tap both hands at the same time, " +
+                           "to make the ball go in a straight line.") :
+                      qsTr("Press left and right arrow keys at the same time, " +
+                           "to make the ball go in a straight line.")
             x: 10.0
             y: tux.y
             width: tux.x - 10
             wrapMode: TextEdit.WordWrap
             horizontalAlignment: TextEdit.AlignHCenter
             verticalAlignment: TextEdit.AlignVCenter
-            font.pointSize: 16
+            font.pointSize: 14
             // Remove the text when both keys has been pressed
             visible: bar.level === 1 &&
                      !(items.leftPressed && items.rightPressed)

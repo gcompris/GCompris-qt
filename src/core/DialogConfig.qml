@@ -43,7 +43,6 @@ Rectangle {
 
     visible: false
     title: qsTr("Configuration")
-    property QtObject activityInfo: ActivityInfoTree.currentActivity
 
     Row {
         spacing: 2

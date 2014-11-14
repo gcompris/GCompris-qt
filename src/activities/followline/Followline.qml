@@ -79,7 +79,7 @@ ActivityBase {
             sourceSize.width: 126 * ApplicationInfo.ratio
             anchors {
                 right: parent.right
-                bottom: bar.top
+                bottom: parent.bottom
             }
 
             Image {
@@ -120,7 +120,6 @@ ActivityBase {
 
         MultiPointTouchArea {
             anchors.fill: parent
-            enabled: ApplicationInfo.isMobile
             maximumTouchPoints: 1
             z: 1000
             onTouchUpdated: {
@@ -141,10 +140,8 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | previous | next }
-            onHelpClicked: {
-                displayDialog(dialogHelp)
-            }
+            content: BarEnumContent { value: help | home | level }
+            onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()

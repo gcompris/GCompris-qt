@@ -1,10 +1,10 @@
-/* GCompris - ColorItem.qml
+/* GCompris - BrailleChar.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 <Arkit Vora>
  *
  * Authors:
- *   Pascal Georges <pascal.georges1@free.fr> (GTK+ version)
- *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
+ *   Srishti Sethi <srishakatux@gmail.com> (GTK+ version)
+ *   Arkit Vora <arkitvora123@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -26,26 +26,72 @@ import "../../core"
 import "questions.js" as Data
 import GCompris 1.0
 
-
-
-
 Item {
-    id:newit
+    id: brailleCharItem
+    height: dotWidth * 3 + grid.spacing * 4
 
-    property var wid
-    property var hei
+    property string brailleChar: ""
+    property real dotWidth: width * 0.4
+    property real dotHeight: dotWidth
     property alias circles: circles
     property bool clickable
+    property bool isLetter: brailleChar >= 'A' && brailleChar <= 'Z'
+    property variant brailleCodesLetter: {
+        // For ASCII each letter, this represent the active dots in Braille.
+        "A": [1], "B": [1, 2], "C": [1, 4], "D": [1, 4, 5], "E": [1, 5],
+        "F": [1, 2, 4], "G": [1, 2, 4, 5], "H": [1, 2, 5], "I": [2, 4],
+        "J": [2, 4, 5], "K": [1, 3], "L": [1, 2, 3], "M": [1, 3, 4],
+        "N": [1, 3, 4, 5], "O": [1, 3, 5], "P": [1, 2, 3, 4], "Q": [1, 2, 3, 4, 5],
+        "R": [1, 2, 3, 5], "S": [2, 3, 4], "T": [2, 3, 4, 5], "U": [1, 3, 6],
+        "V": [1, 2, 3, 6], "W": [2, 4, 5, 6], "X": [1, 3, 4, 6], "Y": [1, 3, 4, 5, 6],
+        "Z": [1, 3, 5, 6]
+    }
+    property variant brailleCodesNumber: {
+        // For ASCII each letter, this represent the active dots in Braille.
+        "+" : [3,4,6], "-": [3,6], "*" : [1,6], "/" : [3,4],
+        "#" : [3,4,5,6],1: [1],2 :[1, 2], "3" : [1, 4], "4": [1, 4, 5], "5" : [1, 5],
+        "6" : [1, 2, 4], "7" : [1, 2, 4, 5], "8" : [1, 2, 5], "9" : [2, 4], "0" :[3, 5, 6]
+    }
+    property variant brailleCodes: isLetter ? brailleCodesLetter : brailleCodesNumber
 
-    height: parent.height / 1.1
-    width: parent.width / 1.1
+    function updateDotsFromBrailleChar() {
+        var dots = []
+        for(var car in brailleCodes) {
+            if(car === brailleChar) {
+                dots = brailleCodes[car]
+            }
+        }
 
+        // Clear all the dots
+        for( var i = 0; i < 6; i++) {
+            circles.itemAt(i).state = "off"
+        }
+
+        for( var i in dots) {
+            circles.itemAt(i).state = "on"
+        }
+    }
+
+    function updateBrailleCharFromDots() {
+        var dots = []
+        for( var i = 0; i < 6; i++) {
+            if(circles.itemAt(i).state === "on")
+                dots.push(i + 1)
+        }
+
+        for(var car in brailleCodes) {
+            if(JSON.stringify(brailleCodes[car]) === JSON.stringify(dots)) {
+                brailleChar = car
+                return
+            }
+        }
+        brailleChar = ""
+    }
 
     Grid {
-
-        anchors.centerIn: newit
-        id: gridthree
-        spacing: parent.height / 50
+        id: grid
+        anchors.centerIn: brailleCharItem
+        spacing: (brailleCharItem.width - brailleCharItem.dotWidth * 2) / 2
         columns: 2
         rows: 3
         flow: Grid.TopToBottom
@@ -53,91 +99,64 @@ Item {
         Repeater {
 
             id: circles
-            model: ["1","2","3","4","5","6"]
-
-
+            model: ["1", "2", "3", "4", "5", "6"]
 
             Rectangle {
-                property bool on: (clickable) ? false : true
                 id: incircle1
-                border.width: parent.height / 30
-                color: click_on_off()
+                border.width: 2 * ApplicationInfo.ratio
+                color: on ? "red" : "white"
+                border.color: "black"
+                width: dotWidth
+                height: dotHeight
+                radius: width * 0.5
+
+                property bool on: clickable ? false : click_on_off()
+
                 function click_on_off() {
-                    if(clickable) {
-                        incircle1.color  = "white"
-                    }
-                    else {
-                        var t  = 0;
-                        var arr  = [];
-                        for( t  = 0; t < braille_letter.count; t++) {
-                            if(braille_letter.get(t).pos != 0) {
-                                arr.push(braille_letter.get(t).pos)
-                            }
+                    if(!brailleCodes[brailleChar])
+                        return false
+                    for( var i  = 0; i < brailleCodes[brailleChar].length; i++) {
+                        if(brailleCodes[brailleChar][i] === index + 1) {
+                            return true
                         }
-                        if(arr.indexOf((index + 1)) > -1)
-                            incircle1.color  = "red"
-                        else
-                            incircle1.color  = "white"
-
                     }
+                    return false
                 }
-
 
                 Text {
                     id: numtext
                     text: (clickable) ? modelData : ""
-                    scale: 3
+                    anchors.left: alignment()
+                    font.weight: Font.DemiBold
+                    font.pixelSize: Math.min(30 * ApplicationInfo.ratio,
+                                             Math.max(parent.height, 20))
+                    anchors.margins: 10
 
                     function alignment() {
                         if(index < 3) {
                             anchors.right = incircle1.left
-                        }
-                        else
+                        } else {
                             anchors.left = incircle1.right
+                        }
                     }
-
-                    anchors.left: alignment()
-                    font.weight: Font.DemiBold
-                    anchors.margins: 10
                 }
 
                 MouseArea {
-
-                    function abcd() {
-                        if (incircle1.state == "on") {
-                            incircle1.state = "off"
-                        }
-                        else {
-                            incircle1.state = "on"
-                        }
-                        incircle1.opacity = 1
-
-
-//                        Call the below function to print the current alphabet to the console
-//                        Activity.current_alphabet();
-
-
-                    }
-
                     id : mouse1
-                    enabled: (clickable) ? true : false
+                    enabled:  clickable ? true : false
                     anchors.fill: parent
                     hoverEnabled: true
-                    onEntered: if(incircle1.state == "off") {
-                                   incircle1.color = "#E41B2D"
-                                   incircle1.opacity = 0.3
-                               }
-                    onExited :if(incircle1.opacity == 0.3) {
-                                  incircle1.color = "white"
-                                  incircle1.opacity = 1
-                              }
-                    onClicked: abcd()
-                }
-
-
-                state: {
-                    if(clickable) {
-                        state  = "off"
+                    onEntered: incircle1.border.width = 4 * ApplicationInfo.ratio
+                    onExited : incircle1.border.width = 2 * ApplicationInfo.ratio
+                    onClicked: {
+                        if (incircle1.state == "on") {
+                            incircle1.state = "off"
+                        } else {
+                            incircle1.state = "on"
+                        }
+                        // On touch screens we don't get the exit event.
+                        incircle1.border.width = 2 * ApplicationInfo.ratio
+                        brailleCharItem.updateBrailleCharFromDots()
                     }
                 }
 
@@ -145,26 +164,22 @@ Item {
                     State {
                         name: "on"
 
-                        PropertyChanges { target: incircle1; color:"red" }
-                        PropertyChanges { target: incircle1; on: true }
+                        PropertyChanges {
+                            target: incircle1
+                            on: true
+                        }
 
                     },
                     State {
                         name: "off"
 
-                        PropertyChanges { target: incircle1; color:"white" }
-                        PropertyChanges { target: incircle1; on: false }
+                        PropertyChanges {
+                            target: incircle1
+                            on: false
+                        }
                     }
                 ]
-
-                border.color: "black"
-                width: wid; height:hei
-                radius: width*0.5
-
             }
         }
     }
 }
-
-
-

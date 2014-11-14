@@ -173,11 +173,12 @@ ActivityBase {
         Image {
             id: player1
             source: Activity.url + "score_1.svg"
-            sourceSize.height: bar.height * 1.5
+            sourceSize.height: bar.height * 1.2
             anchors {
                 bottom: bar.bottom
                 bottomMargin: 10
-                left: bar.right
+                right: parent.right
+                rightMargin: 2 * ApplicationInfo.ratio
             }
 
             GCText {
@@ -192,12 +193,12 @@ ActivityBase {
         Image {
             id: player2
             source: Activity.url + "score_2.svg"
-            sourceSize.height: bar.height * 1.5
+            sourceSize.height: bar.height * 1.2
             anchors {
                 bottom: bar.bottom
                 bottomMargin: 10
-                left: player1.right
-                leftMargin: 10 * ApplicationInfo.ratio
+                right: player1.left
+                rightMargin: 2 * ApplicationInfo.ratio
             }
 
             GCText {

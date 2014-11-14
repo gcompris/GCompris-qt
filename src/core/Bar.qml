@@ -26,12 +26,65 @@ Item {
     id: bar
     x: 0
     anchors.bottom: parent.bottom
-    width: barRow.width
-    height: barRow.height - 30
+    width: openBar.width
+    height: openBar.height
     z: 1000
     property real barZoom: 1.2 * ApplicationInfo.ratio
     property BarEnumContent content
+
+    // This is just a list of all our possible buttons.
+    // bid = Button ID. And references the Component object of the button
+    // This way we can have any visual object in the bar.
+    property variant buttonList: [
+        {
+            'bid': exit,
+            'contentId': content.exit
+        },
+        {
+            'bid': about,
+            'contentId': content.about
+        },
+        {
+            'bid': help,
+            'contentId': content.help
+        },
+        {
+            'bid': home,
+            'contentId': content.home
+        },
+        {
+            'bid': previous,
+            'contentId': content.level
+        },
+        {
+            'bid': levelText,
+            'contentId': content.level
+        },
+        {
+            'bid': next,
+            'contentId': content.level
+        },
+        {
+            'bid': repeat,
+            'contentId': content.repeat
+        },
+        {
+            'bid': reload,
+            'contentId': content.reload
+        },
+        {
+            'bid': config,
+            'contentId': content.config
+        },
+        {
+            'bid': downloadImage,
+            'contentId': content.download
+        }
+    ]
+
+    property var buttonModel
     property int level: 0
+
     signal aboutClicked
     signal helpClicked
     signal configClicked
@@ -41,20 +94,50 @@ Item {
     signal reloadClicked
     signal homeClicked
 
-    function toggle() {
-        opacity = (opacity == 0 ? 1.0 : 0)
-    }
-
     function show(newContent) {
         content.value = newContent
     }
-    
+
     Connections {
         target: DownloadManager
         
-        onDownloadStarted: downloadImage.visible = true;
-        onDownloadFinished: downloadImage.visible = false;  
-        onError: downloadImage.visible = false;
+        onDownloadStarted: content.value |= content.download
+        onDownloadFinished: content.value &= ~content.download
+        onError: content.value &= ~content.download
+    }
+
+    Image {
+        id: openBar
+        source: "qrc:/gcompris/src/core/resource/bar_open.svg";
+        anchors.bottom: parent.bottom
+        anchors.left: parent.left
+        sourceSize.width: 66 * barZoom
+        MouseArea {
+            anchors.fill: parent
+
+            onClicked: {
+                ApplicationSettings.isBarHidden = !ApplicationSettings.isBarHidden;
+            }
+        }
+    }
+
+    function updateContent() {
+        var newButtonModel = new Array()
+        for(var def in buttonList) {
+            if(content.value & buttonList[def].contentId) {
+                newButtonModel.push(buttonList[def])
+            }
+        }
+        buttonModel = newButtonModel
+    }
+
+    Connections {
+        target: content
+        onValueChanged: updateContent()
+    }
+
+    onContentChanged: {
+        updateContent()
     }
 
     Row {
@@ -62,32 +145,97 @@ Item {
         spacing: 5
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 10
-        Item { width: 10; height: 1 }
+        anchors.left: openBar.right
+        anchors.leftMargin: 10 * ApplicationInfo.ratio
+        Repeater {
+            model: buttonModel
+            Loader {
+                sourceComponent: modelData.bid
+            }
+        }
+
+        state: ApplicationSettings.isBarHidden ? "hidden" : "shown"
+
+        states: [
+            State {
+                name: "shown"
+
+                AnchorChanges {
+                    target: barRow
+                    anchors.top: undefined
+                    anchors.bottom: parent.bottom
+                }
+            },
+            State {
+                name: "hidden"
+
+                AnchorChanges {
+                    target: barRow
+                    anchors.bottom: undefined
+                    anchors.top: parent.bottom
+                }
+            }
+        ]
+
+        transitions: Transition {
+            AnchorAnimation { duration: 800; easing.type: Easing.OutBounce }
+        }
+        populate: Transition {
+            NumberAnimation {
+                properties: "x,y"; from: 200;
+                duration: 1500; easing.type: Easing.OutBounce
+            }
+        }
+        add: Transition {
+            NumberAnimation {
+                properties: "x,y"; from: 200;
+                duration: 1500; easing.type: Easing.OutBounce
+            }
+        }
+        move: Transition {
+            NumberAnimation {
+                properties: "x,y"
+                duration: 1500; easing.type: Easing.OutBounce
+            }
+        }
+    }
+
+    // All the possible bar buttons are defined here
+    // ---------------------------------------------
+    Component {
+        id: exit
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svgz";
-            contentId: content.exit
             sourceSize.width: 66 * barZoom
             onClicked: Core.quit();
         }
+    }
+    Component {
+        id: about
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_about.svgz";
-            contentId: content.about
             sourceSize.width: 66 * barZoom
             onClicked: bar.aboutClicked()
         }
+    }
+    Component {
+        id: help
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_help.svgz";
-            contentId: content.help
             sourceSize.width: 66 * barZoom
             onClicked: bar.helpClicked()
         }
+    }
+    Component {
+        id: previous
         BarButton {
-            id: previousButton
             source: "qrc:/gcompris/src/core/resource/bar_previous.svgz";
-            contentId: content.previous
             sourceSize.width: 30 * barZoom
             onClicked: bar.previousLevelClicked()
         }
+    }
+    Component {
+        id: levelText
         GCText {
             id: levelTextId
             text: "" + level
@@ -96,50 +244,53 @@ Item {
             style: Text.Outline
             styleColor: "black"
             color: "white"
-            visible: content.previous & content.value
+            visible: content.level & content.value
         }
+    }
+    Component {
+        id: next
         BarButton {
-            id: nextButton
             source: "qrc:/gcompris/src/core/resource/bar_next.svgz";
-            contentId: content.next
             sourceSize.width: 30 * barZoom
             onClicked: bar.nextLevelClicked()
         }
+    }
+    Component {
+        id: repeat
         BarButton {
-            id: repeatButton
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svgz";
             sourceSize.width: 66 * barZoom
-            contentId: content.repeat
             onClicked: bar.repeatClicked()
         }
+    }
+    Component {
+        id: reload
         BarButton {
-            id: reloadButton
             source: "qrc:/gcompris/src/core/resource/bar_reload.svgz";
-            contentId: content.reload
             sourceSize.width: 66 * barZoom
             onClicked: bar.reloadClicked()
         }
+    }
+    Component {
+        id: config
         BarButton {
-            id: configButton
             source: "qrc:/gcompris/src/core/resource/bar_config.svgz";
-            contentId: content.config
             sourceSize.width: 66 * barZoom
             onClicked: bar.configClicked()
         }
+    }
+    Component {
+        id: home
         BarButton {
-            id: homeButton
             source: "qrc:/gcompris/src/core/resource/bar_home.svgz";
-            contentId: content.home
             sourceSize.width: 66 * barZoom
             onClicked: bar.homeClicked()
         }
-
+    }
+    Component {
+        id: downloadImage
         AnimatedImage {
-            id: downloadImage
             source: "qrc:/gcompris/src/core/resource/loader.gif"
-            anchors.bottom: parent.bottom
-            visible: false
-            
             MouseArea {
                 id: mouseArea
                 anchors.fill: parent
@@ -149,8 +300,5 @@ Item {
                 }
             }
         }
-        Item { width: 10; height: 1 }
     }
-
-    Behavior on opacity { PropertyAnimation { duration: 500 } }
 }

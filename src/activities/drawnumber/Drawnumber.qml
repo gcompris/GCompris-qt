@@ -87,7 +87,7 @@ ActivityBase {
                 property var x2: modelData[2] * background.width / 800
                 property var y2: modelData[3] * background.height / 520
                 width: Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y- y2, 2))
-                height: 2 * ApplicationInfo.ratio
+                height: 3 * ApplicationInfo.ratio
                 rotation: (Math.atan((y2 - y)/(x2-x)) * 180 / Math.PI) + (((y2-y) < 0 && (x2-x) < 0) * 180) + (((y2-y) >= 0 && (x2-x) < 0) * 180)
 
             }
@@ -140,15 +140,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | previous | next }
-
-            // anchor in top right corner:
-            anchors.bottom: undefined
-            anchors.top: parent.top
-            x: parent.width - width
-            anchors.topMargin: height + 10
-
-
+            content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }

@@ -1,10 +1,10 @@
-/* GCompris - brm.qml
+/* GCompris - Screen.qml
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 <Arkit Vora>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   Srishti Sethi <srishakatux@gmail.com> (GTK+ version)
+ *   Arkit Vora <arkitvora123@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,16 +21,13 @@
  */
 import QtQuick 2.1
 import QtQuick.Layouts 1.1
+import GCompris 1.0
 import "../../core"
 import "braille_alphabets.js" as Activity
 import "questions.js" as Dataset
 
-
-
 ActivityBase {
     id: activity
-
-
 
     onStart: focus = true
     onStop: {}
@@ -41,11 +38,10 @@ ActivityBase {
         id: background
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
-        source: "qrc:/gcompris/src/activities/braille_alphabets/resource/mosaic.svgz"
+        source: Activity.url + "background.svg"
         sourceSize.width: parent.width
         signal start
         signal stop
-
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -59,16 +55,16 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias containerModel: containerModel
-            property alias mapContainerModel: mapContainerModel
-            property alias mapContainerModel2: mapContainerModel2
             property alias questionItem: questionItem
-            property alias instructions: instructions
-            property alias ans: ans
-            property alias circles: circles
-
+            property string instructions
+            property alias playableChar: playableChar
+            property bool brailleCodeSeen
         }
 
-        onStart: { Activity.start(items,dataset) }
+        onStart: {
+            first_screen.visible = true
+            Activity.start(items, dataset)
+        }
         onStop: { Activity.stop() }
 
 
@@ -76,26 +72,19 @@ ActivityBase {
             id: containerModel
         }
 
-
-        ListModel {
-            id: mapContainerModel
-        }
-
-        ListModel {
-            id: mapContainerModel2
-        }
-
-        Item {
-            id: outer
-            x: parent.width / 2
-            y: parent.height / 15
-            width : parent.width / 1.06
-            height :  parent.height / 3.7
+        Image {
+            id: charList
+            y: 20 * ApplicationInfo.ratio
             anchors.horizontalCenter: parent.horizontalCenter
+            source: Activity.url + "top_back.svg"
+            sourceSize.width: parent.width * 0.94
+            visible: items.brailleCodeSeen
 
             Row {
-                spacing: 17
-                anchors.centerIn: outer
+                id: row
+                spacing: 10 * ApplicationInfo.ratio
+                anchors.centerIn: charList
+                anchors.horizontalCenterOffset: 5
 
                 Repeater {
                     id: cardRepeater
@@ -103,33 +92,38 @@ ActivityBase {
 
                     Item {
                         id: inner
-                        height: outer.height
-                        width: outer.width / 12
+                        height: charList.height * 0.9
+                        width: (charList.width - containerModel.count * row.spacing)/ containerModel.count
 
                         Rectangle {
                             id: rect1
-                            width:  outer.width / 13; height: outer.height / 1.5
+                            width:  charList.width / 13
+                            height: ins.height
                             border.width: 3
                             border.color: "black"
                             color: "white"
 
-
                             BrailleChar {
                                 id: ins
-                                wid: rect1.height / 3.4
-                                hei: rect1.height / 3.4
-                                anchors.centerIn: rect1
+                                width: parent.width * 0.9
+                                anchors.centerIn: parent
                                 clickable: false
-
+                                brailleChar: letter
                             }
                         }
 
                         Text {
                             text: letter
-                            scale:  2
-                            y: parent.height / 1.3
-                            x: parent.width / 2.2
-
+                            font.weight: Font.DemiBold
+                            style: Text.Outline
+                            styleColor: "white"
+                            color: "black"
+                            font.pixelSize: Math.max(parent.width * 0.5, 24)
+                            anchors {
+                                top: rect1.bottom
+                                topMargin: 4 * ApplicationInfo.ratio
+                                horizontalCenter: rect1.horizontalCenter
+                            }
                         }
                     }
 
@@ -137,78 +131,93 @@ ActivityBase {
             }
         }
 
-        Item {
-            id: box
-            height: parent.height / 3
-            width: parent.width / 3
-            x: parent.width / 9
-            y: parent.height / 1.9
+        Image {
+            id: playableCharBg
+            anchors {
+                top: charList.bottom
+                topMargin: 10 * ApplicationInfo.ratio
+            }
+            verticalAlignment: Image.AlignTop
+            x: 10 * ApplicationInfo.ratio
+            source: Activity.url + "char_background.svg"
+            sourceSize.width: playableChar.width * 1.8
+            height: (playableChar.height  + playableCharDisplay.height) * 1.2
 
             BrailleChar {
-
-                id: circles
+                id: playableChar
                 clickable: true
-                anchors.centerIn: box.left
-                wid: parent.height / 3
-                hei: parent.height / 3
+                anchors {
+                    horizontalCenter: parent.horizontalCenter
+                    top: parent.top
+                    topMargin: 20 * ApplicationInfo.ratio
+                }
+                width: Math.min(background.width * 0.18, background.height * 0.2)
+                isLetter: items.isLetter
+                onBrailleCharChanged: {
+                    if(brailleChar === Activity.getCurrentLetter()) {
+                        particles.emitter.burst(40)
+                        Activity.nextQuestion()
+                    }
+                }
             }
 
-        }
-
-        Rectangle {
-            id: instructionsArea
-            height: parent.height / 16
-            width: parent.width / 1.1
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.top: outer.bottom
-            color: "#55333333"
-            border.color: "black"
-            border.width: 2
-            radius: 5
-            anchors.leftMargin: 10
-            anchors.rightMargin: 10
-
-
             Text {
-                id: questionItem
-                anchors.leftMargin: 10
-                x: parent.width / 2
-                y: parent.height / 7
-                anchors.centerIn: parent
-                font.pointSize: instructionsArea.height / 3
-                horizontalAlignment: Text.AlignHCenter
+                id: playableCharDisplay
+                font.pixelSize: Math.max(playableChar.width * 0.4, 24)
                 font.weight: Font.DemiBold
                 style: Text.Outline
                 styleColor: "white"
                 color: "black"
-                width: parent.width
+                text: playableChar.brailleChar
+                anchors {
+                    top: playableChar.bottom
+                    topMargin: 4 * ApplicationInfo.ratio
+                    horizontalCenter: playableChar.horizontalCenter
+                }
+            }
+        }
+
+        Rectangle {
+            id: instructionsArea
+            height: questionItem.height * 1.1
+            width: parent.width / 1.1
+            anchors {
+                top: charList.bottom
+                topMargin: 10 * ApplicationInfo.ratio
+                left: playableCharBg.right
+                leftMargin: 10 * ApplicationInfo.ratio
+                right: parent.right
+                rightMargin: 10 * ApplicationInfo.ratio
+            }
+            color: "#55333333"
+            border.color: "black"
+            border.width: 2
+            radius: 5
+
+            Text {
+                id: questionItem
+                anchors.centerIn: parent
+                font.pointSize: 14
+                horizontalAlignment: Text.AlignHCenter
+                font.weight: Font.DemiBold
+                style: Text.Outline
+                styleColor: "black"
+                color: "white"
+                width: parent.width * 0.94
                 wrapMode: Text.WordWrap
 
                 function initQuestion() {
+                    playableChar.brailleChar = ""
+                    playableChar.updateDotsFromBrailleChar()
                     text = Activity.getCurrentTextQuestion()
-
+                    if(items.instructions)
+                        text += "\n" + items.instructions
                     opacity = 1.0
                 }
 
                 onOpacityChanged: opacity == 0 ? initQuestion() : ""
-                Behavior on opacity { PropertyAnimation { duration: 500 } }
+                Behavior on opacity { PropertyAnimation { duration: 1000 } }
             }
-
-        }
-
-        Text {
-            id: instructions
-            anchors.top: instructionsArea.bottom
-            horizontalAlignment: Text.AlignHCenter
-            width: parent.width
-            wrapMode: Text.WordWrap
-            color: "black"
-            style: Text.Outline
-            styleColor: "white"
-            font.weight: Font.DemiBold
-            font.pointSize: instructionsArea.height / 3
-            text: ""
-
         }
 
         ParticleSystemStar {
@@ -216,183 +225,8 @@ ActivityBase {
             clip: false
         }
 
-
-        Image {
-            id: okbutton
-            x: parent.width / 2
-            y: parent.height / 1.5
-            width: parent.height / 10
-            height: parent.height / 10
-            source: "qrc:/gcompris/src/core/resource/apply.svgz"
-
-            MouseArea {
-                id: mou
-
-                function arraysEqual(a, b) {
-                    if (a === b) return true;
-                    if (a == null || b == null) return false;
-                    if (a.length != b.length) return false;
-                    for (var i = 0; i < a.length; ++i) {
-                        if (a[i] !== b[i]) return false;
-                    }
-                    return true;
-                }
-
-                function correct() {
-
-                    var arr = [];
-                    for(var i  = 0; i <= 5; i++) {
-                        if(circles.circles.itemAt(i).state == "on") {
-                            arr.push((i+1));
-                        }
-                    }
-
-                    var ya  = [];
-                    ya  = Activity.getCurrentArr()
-                    var t;
-                    var answer  = [];
-                    for( t  = 0;t<ya.length;t++) {
-                        answer[t]  = ya[t].pos
-                    }
-
-                    if(arraysEqual(arr,answer )) {
-                        particles.emitter.burst(100)
-                        wrong.opacity  = 0
-                        ans.opacity  = 1
-                        circles.circles.itemAt(0).state  = "off"
-                        circles.circles.itemAt(1).state  = "off"
-                        circles.circles.itemAt(2).state  = "off"
-                        circles.circles.itemAt(3).state  = "off"
-                        circles.circles.itemAt(4).state  = "off"
-                        circles.circles.itemAt(5).state  = "off"
-                        ans.text  = Activity.getCurrentAlphabet()
-                        Activity.nextQuestion()
-
-                    }
-                    else {
-                        ans.opacity  = 0
-                        wrong.opacity  = 1
-                        wrong.visible  = true
-                    }
-                }
-
-                anchors.fill: parent
-                onClicked: correct()
-                onPressed: okbutton.opacity  = 0.4
-                onReleased: okbutton.opacity  = 1
-            }
-        }
-
-        Image {
-            id: wrong
-            x: parent.width / 1.23
-            y: parent.height / 1.70
-            width: parent.height / 7
-            height: parent.height / 7
-            source: "qrc:/gcompris/src/core/resource/cancel.svgz"
-            visible: false
-        }
-
-        Text {
-            id: ans
-            scale: 2
-            x: parent.width / 1.20
-            y: parent.height / 1.63
-            font.pointSize: parent.height / 20
-            font.weight: Font.DemiBold
-            style: Text.Outline
-
-            Behavior on opacity { PropertyAnimation { duration: 1000} }
-            styleColor: "white"
-            color: "black"
-            text: ""
-
-        }
-
-        Image {
+        FirstScreen {
             id: first_screen
-            anchors.fill: parent
-            fillMode: Image.PreserveAspectCrop
-            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/braille_tux.svgz"
-            sourceSize.width: parent.width
-
-            Text {
-                id: heading
-                text: "Braille : Unlocking the Code"
-                font.pointSize: parent.height / 24
-                horizontalAlignment: Text.AlignHCenter
-                font.weight: Font.DemiBold
-                anchors.centerIn: parent.Center
-                color: "black"
-                width: parent.width
-                wrapMode: Text.WordWrap
-
-            }
-
-            Text {
-                id: body_text1
-                text: "The Braille system is a method that is used by blind people to read and write.
-
-Each Braille character, or cell, is made up of six dot positions, arranged in a rectangle containing two columns of three dots each. As seen on the left, each dot is referenced by a number from 1 to 6."
-                font.pointSize:  parent.height / 40
-
-                font.weight: Font.DemiBold
-                x: parent.width / 2.7
-                y: parent.height / 2.5
-                color: "black"
-                width: parent.width / 2
-                wrapMode: Text.WordWrap
-
-            }
-
-
-            Text {
-                id: bottom_text
-                text: "When you are ready, click on
-me and try reproducing Braille characters."
-                font.pointSize:  parent.height / 45
-                font.weight: Font.DemiBold
-                x: parent.width / 2.7
-                y: parent.height / 1.15
-                color: "black"
-                width: parent.width / 2
-                wrapMode:  Text.WordWrap
-
-            }
-
-            Rectangle {
-                id: tux_square
-                anchors.bottom: parent.bottom
-                radius: 10
-                anchors.right: parent.right
-                color: "transparent"
-                width: parent.width / 3
-                height: parent.width / 3
-
-
-                MouseArea {
-                    id: tux_click
-                    anchors.fill: parent
-
-                    function tux_onClicked() {
-                        first_screen.visible  = false
-
-                    }
-                    function tux_onHover() {
-                        tux_square.color  = "#E41B2D"
-                        tux_square.opacity  = 0.3
-                    }
-                    function tux_onExit() {
-                        tux_square.color  = "transparent"
-                        tux_square.opacity  = 1
-                    }
-                    hoverEnabled: true
-                    onClicked: tux_onClicked()
-                    onEntered: tux_onHover()
-                    onExited: tux_onExit()
-                }
-            }
-
         }
 
         DialogHelp {
@@ -402,14 +236,15 @@ me and try reproducing Braille characters."
 
         BrailleMap {
             id: dialogMap
+            // Make is non visible or we get some rendering artefacts before
+            // until it is created
+            visible: false
             onClose: home()
         }
 
-
-
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | previous | next }
+            content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -420,16 +255,16 @@ me and try reproducing Braille characters."
 
         BarButton {
             id: braille_map
-            source: "qrc:/gcompris/src/activities/braille_alphabets/resource/target.svg"
+            source: Activity.url + "target.svg"
             anchors {
-                left: bar.right
+                right: parent.right
                 bottom: parent.bottom
-
             }
             sourceSize.width: 66 * bar.barZoom
             visible: true
             onClicked: {
-               displayDialog(dialogMap)
+                dialogMap.visible = true
+                displayDialog(dialogMap)
             }
         }
 

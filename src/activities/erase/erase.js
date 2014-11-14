@@ -139,7 +139,11 @@ function initLevel() {
 
         for(var x = 0;  x < nbx; ++x) {
             for(var y = 0;  y < nby; ++y) {
-                data = {'nx': nbx, 'ny': nby, 'a':x, 'b':y, 'op': 1.0,'MAIN':main,'BAR':items.bar, 'img': blockImages[imgIndex % blockImages.length]}
+                data = {
+                    'nx': nbx, 'ny': nby, 'a': x, 'b': y,
+                    'op': 1.0, 'MAIN': main, 'BAR': items.bar,
+                    'img': blockImages[imgIndex % blockImages.length]
+                }
                 items.blocks.append(data)
                 createdBlocks++
             }

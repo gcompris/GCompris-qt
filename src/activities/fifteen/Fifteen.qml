@@ -41,6 +41,8 @@ ActivityBase {
         signal start
         signal stop
 
+        Keys.onPressed: Activity.processPressedKey(event)
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -64,16 +66,14 @@ ActivityBase {
         Image {
             source: Activity.url + "goldframe.svg"
             sourceSize.width: Math.min(background.width * 0.9,
-                                       (background.height - bar.height) * 0.9)
+                                       background.height * 0.9)
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
-            anchors.verticalCenterOffset: - bar.height
         }
 
         Grid {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
-            anchors.verticalCenterOffset: - bar.height
             columns: 4
             spacing: 0
 
@@ -94,7 +94,7 @@ ActivityBase {
                 model: fifteenModel
                 delegate: Item {
                     width: Math.min(background.width * 0.2,
-                                    (background.height - bar.height) * 0.2)
+                                    background.height * 0.2)
                     height: width
                     clip: true
 
@@ -147,7 +147,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | previous | next }
+            content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }

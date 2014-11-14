@@ -154,6 +154,53 @@ function onClick(value) {
             }
 }
 
+// Return the index in the model of the empty spot
+function getEmptySpot()
+{
+    for(var i=0; i < items.model.count; i++) {
+        if(items.model.get(i).value === 0)
+            return i
+    }
+}
+
+function processPressedKey(event) {
+    var emptySpot = getEmptySpot()
+
+    /* Move the player */
+    switch (event.key) {
+    case Qt.Key_Right:
+        if(emptySpot % 4 != 0) {
+            items.model.move(emptySpot - 1, emptySpot, 1)
+        }
+        event.accepted = true
+        break
+    case Qt.Key_Left:
+        if(emptySpot % 4 != 3) {
+            items.model.move(emptySpot + 1, emptySpot, 1)
+        }
+        event.accepted = true
+        break
+    case Qt.Key_Up:
+        if(emptySpot < items.model.count - 4) {
+            items.model.move(emptySpot + 4, emptySpot, 1)
+            items.model.move(emptySpot + 1, emptySpot + 4, 1)
+        }
+        event.accepted = true
+        break
+    case Qt.Key_Down:
+        if(emptySpot >= 4) {
+            items.model.move(emptySpot, emptySpot - 4, 1)
+            items.model.move(emptySpot - 3, emptySpot, 1)
+        }
+        event.accepted = true
+        break
+    }
+
+    /* Check if success */
+    if(checkAnswer())
+        items.bonus.good('flower')
+}
+
 function nextLevel() {
     if(numberOfLevel <= ++currentLevel ) {
         currentLevel = 0

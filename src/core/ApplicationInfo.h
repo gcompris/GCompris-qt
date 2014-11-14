@@ -67,6 +67,7 @@ class ApplicationInfo : public QObject
 	Q_PROPERTY(qreal sliderGapWidth READ sliderGapWidth NOTIFY ratioChanged)
     Q_PROPERTY(QString localeShort READ localeShort)
     Q_PROPERTY(QString GCVersion READ GCVersion CONSTANT)
+    Q_PROPERTY(QString QTVersion READ QTVersion CONSTANT)
 
 public:
 
@@ -121,6 +122,7 @@ public:
         return localeShort( ApplicationSettings::getInstance()->locale() );
     }
     static QString GCVersion() { return VERSION; }
+    static QString QTVersion() { return qVersion(); }
 
 protected slots:
 	void notifyPortraitMode();

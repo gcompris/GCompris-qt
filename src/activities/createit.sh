@@ -27,7 +27,7 @@ cp -r $templatedir $activitydir
 
 cd $activitydir
 mv $template.js $activity.js
-mv $template.svgz $activity.svgz
+mv $template.svg $activity.svg
 mv $Template.qml $Activity.qml
 sed -i s/$template/$activity/g *
 sed -i s/$Template/$Activity/g *
