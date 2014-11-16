@@ -84,6 +84,7 @@ ActivityBase {
     property string currentTag: sections[0].tag
 
     pageComponent: Image {
+        id: background
         source: menuActivity.url + "background.svgz"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
@@ -111,6 +112,11 @@ ActivityBase {
         property int sectionCellHeight: sectionIconHeight * 1.1
 
         property var currentActiveGrid: activitiesGrid
+        property bool keyboardMode: false
+        Keys.onReleased: {
+            keyboardMode = true
+            event.accepted = false
+        }
         Keys.onTabPressed: currentActiveGrid = ((currentActiveGrid == activitiesGrid) ?
                                                     section : activitiesGrid);
         Keys.onEnterPressed: currentActiveGrid.currentItem.selectCurrentItem();
@@ -207,17 +213,18 @@ ActivityBase {
                 width: iconWidth+(main.width%iconWidth)/Math.round(main.width/iconWidth)
                 height: iconHeight
                 Rectangle {
-                    id: background
+                    id: activityBackgroung
                     width: cellWidth2 - 10
                     height: cellHeight2 - 10
                     anchors.horizontalCenter: parent.horizontalCenter
                     opacity: 0.6
-                    border.width: delegateItem.GridView.isCurrentItem ? 6 : 2
+                    border.width: delegateItem.GridView.isCurrentItem &&
+                                  background.keyboardMode ? 6 : 2
                     border.color: "black"
                 }
                 Image {
                     source: "qrc:/gcompris/src/activities/" + icon;
-                    anchors.top: background.top
+                    anchors.top: activityBackgroung.top
                     anchors.horizontalCenter: parent.horizontalCenter
                     sourceSize.height: iconHeight
                     anchors.margins: 5
@@ -232,7 +239,7 @@ ActivityBase {
                         anchors.top: parent.bottom
                         anchors.horizontalCenter: parent.horizontalCenter
                         horizontalAlignment: Text.AlignHCenter
-                        width: background.width
+                        width: activityBackgroung.width
                         fontSizeMode: Text.Fit
                         minimumPointSize: 7
                         font.pointSize: 14
@@ -244,10 +251,10 @@ ActivityBase {
                 }
                 ParticleSystemStar {
                     id: particles
-                    anchors.fill: background
+                    anchors.fill: activityBackgroung
                 }
                 MouseArea {
-                    anchors.fill: background
+                    anchors.fill: activityBackgroung
                     hoverEnabled: true
                     onClicked: {
                         selectCurrentItem()
