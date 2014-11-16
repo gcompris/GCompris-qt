@@ -212,8 +212,8 @@ ActivityBase {
                     height: cellHeight2 - 10
                     anchors.horizontalCenter: parent.horizontalCenter
                     opacity: 0.6
-                    border.width: delegateItem.GridView.isCurrentItem ? 4 : 2
-                    border.color: delegateItem.GridView.isCurrentItem ? "red" : "black"
+                    border.width: delegateItem.GridView.isCurrentItem ? 6 : 2
+                    border.color: "black"
                 }
                 Image {
                     source: "qrc:/gcompris/src/activities/" + icon;
