@@ -37,6 +37,26 @@ add_custom_command (
   COMMAND ${CMAKE_COMMAND} -E rename ${CMAKE_CURRENT_BINARY_DIR}/bin/QtApp-release-unsigned.apk ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-${ANDROID_ABI}-${GCOMPRIS_VERSION}.apk
 )
 
+add_custom_command (
+  OUTPUT createApkSignedFromAndroidDeployQtRelease
+  DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-${ANDROID_ABI}-${GCOMPRIS_VERSION}.apk
+  COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-${ANDROID_ABI}-${GCOMPRIS_VERSION}.apk ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-signed-${ANDROID_ABI}-${GCOMPRIS_VERSION}.apk
+  COMMAND jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore $ENV{ANDROID_KEYSTORE} -storepass $ENV{ANDROID_KEYSTORE_PASSWD} ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-signed-${ANDROID_ABI}-${GCOMPRIS_VERSION}.apk gcompris
+)
+
+add_custom_command (
+  OUTPUT createApkSignedAlignedFromAndroidDeployQtRelease
+  DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-signed-${ANDROID_ABI}-${GCOMPRIS_VERSION}.apk
+  COMMAND ${CMAKE_COMMAND} -E remove ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-signed-aligned-${ANDROID_ABI}-${GCOMPRIS_VERSION}.apk
+  COMMAND ${ANDROID_SDK}/build-tools/20.0.0/zipalign -v 4 ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-signed-${ANDROID_ABI}-${GCOMPRIS_VERSION}.apk ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-signed-aligned-${ANDROID_ABI}-${GCOMPRIS_VERSION}.apk
+)
+
+add_custom_command (
+  OUTPUT apkInstall
+  DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-signed-aligned-${ANDROID_ABI}-${GCOMPRIS_VERSION}.apk
+  COMMAND ${ANDROID_SDK}/platform-tools/adb install -r ${CMAKE_CURRENT_BINARY_DIR}/bin/GCompris-Android-release-signed-aligned-${ANDROID_ABI}-${GCOMPRIS_VERSION}.apk
+)
+
 # Command to create apk from Makefile
 add_custom_target (apk_debug
    DEPENDS createApkFromAndroidDeployQtDebug
@@ -45,4 +65,19 @@ add_custom_target (apk_debug
 # Command to create apk from Makefile
 add_custom_target (apk_release
    DEPENDS createApkFromAndroidDeployQtRelease
+)
+
+# Command to create signed apk from Makefile
+add_custom_target (apk_signed
+   DEPENDS createApkSignedFromAndroidDeployQtRelease
+)
+
+# Command to create signed aligned apk from Makefile
+add_custom_target (apk_signed_aligned
+   DEPENDS createApkSignedAlignedFromAndroidDeployQtRelease
+)
+
+# Command to install the signed aligned apk through adb from Makefile
+add_custom_target (apk_install
+   DEPENDS apkInstall
 )
