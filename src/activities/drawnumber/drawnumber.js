@@ -28,7 +28,6 @@ var clickanddrawflag
 
 var pointPositions = []
 var linePropertiesArray = []
-var pointIndexToClick
 
 var dataset = [
             {
@@ -100,7 +99,7 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    pointIndexToClick = 0
+    items.pointIndexToClick = 0
     loadCoordinates()
     loadBackgroundImage()
 }
@@ -121,11 +120,9 @@ function previousLevel() {
 
 
 function drawSegment(pointIndex) {
-
-    if (pointIndex == pointIndexToClick)
+    if (pointIndex == items.pointIndexToClick)
     {
         items.pointImageRepeater.itemAt(pointIndex).opacity = 0
-        items.pointImageRepeater.itemAt(pointIndex).z = 0
 
         if (clickanddrawflag) {
             if (pointIndex < items.pointImageRepeater.count-1) {
@@ -133,6 +130,7 @@ function drawSegment(pointIndex) {
             }
         }
 
+        // Draw the line from pointIndex - 1 to pointIndex
         if (pointIndex > 0) {
             items.segmentsRepeater.itemAt(pointIndex-1).opacity = 1
         }
@@ -141,7 +139,7 @@ function drawSegment(pointIndex) {
             items.imageBack.source = url + dataset[currentLevel].imageName2
             won()
         }
-        pointIndexToClick++
+        items.pointIndexToClick++
     }
 
 }
