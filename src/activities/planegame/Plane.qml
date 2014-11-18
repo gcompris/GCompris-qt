@@ -28,7 +28,7 @@ Image {
     property real velocityX
     property real velocityY
 
-    source: "qrc:/gcompris/src/activities/planegame/resource/tuxhelico.svgz"
+    source: Activity.url + "resource/tuxhelico.svgz"
     fillMode: Image.PreserveAspectFit
 
     sourceSize.height: 80 * ApplicationInfo.ratio

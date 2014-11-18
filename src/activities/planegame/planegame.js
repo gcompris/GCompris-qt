@@ -25,6 +25,8 @@
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 .import "qrc:/gcompris/src/core/core.js" as Core
 
+var url = "qrc:/gcompris/src/activities/planegame/"
+
 var max_velocity = 500 * GCompris.ApplicationInfo.ratio
 var currentLevel
 var numberOfLevel
@@ -39,7 +41,7 @@ var rightPressed
 var items
 var dataset
 
-var cloudComponent = Qt.createComponent("qrc:/gcompris/src/activities/planegame/Cloud.qml");
+var cloudComponent = Qt.createComponent(url + "Cloud.qml");
 var clouds = new Array;
 var cloudsErased = new Array;
 

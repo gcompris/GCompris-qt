@@ -82,14 +82,14 @@ Image {
             name: "normal"
             PropertyChanges {
                 target: cloud
-                source: "qrc:/gcompris/src/activities/planegame/resource/cloud.svgz"
+                source: Activity.url + "resource/cloud.svgz"
             }
         },
         State {
             name: "storm"
             PropertyChanges {
                 target: cloud
-                source: "qrc:/gcompris/src/activities/planegame/resource/cloud_storm.svgz"
+                source: Activity.url + "resource/cloud_storm.svgz"
             }
             StateChangeScript {
                 script: stormy.start()
