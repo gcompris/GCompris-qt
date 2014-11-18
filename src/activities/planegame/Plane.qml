@@ -31,7 +31,7 @@ Image {
     source: "qrc:/gcompris/src/activities/planegame/resource/tuxhelico.svgz"
     fillMode: Image.PreserveAspectFit
 
-    sourceSize.height: 200 * ApplicationInfo.ratio
+    sourceSize.height: 80 * ApplicationInfo.ratio
 
     z: 10
 

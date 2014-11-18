@@ -55,7 +55,7 @@ ActivityBase {
         anchors.fill: parent
         signal start
         signal stop
-        source: "qrc:/gcompris/src/activities/planegame/resource/background.svgz"
+        source: "qrc:/gcompris/src/activities/planegame/resource/background.svg"
         sourceSize.width: parent.width
 
         Component.onCompleted: {

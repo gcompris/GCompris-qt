@@ -31,11 +31,10 @@ Image {
     /* An helper property to remember if a cloud has been wrongly touched */
     property bool touched: false
 
-    sourceSize.height: 100 * ApplicationInfo.ratio
+    sourceSize.height: 60 * ApplicationInfo.ratio
     height: sourceSize.height * heightRatio
 
     state: "normal"
-//    source: "qrc:/gcompris/src/activities/planegame/resource/cloud.svgz"
     fillMode: Image.PreserveAspectFit
 
     z: 5
