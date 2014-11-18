@@ -84,7 +84,6 @@ Item {
 
     property var buttonModel
     property int level: 0
-    property bool hidden: false
 
     signal aboutClicked
     signal helpClicked
@@ -94,10 +93,6 @@ Item {
     signal repeatClicked
     signal reloadClicked
     signal homeClicked
-
-    function toggle() {
-        opacity = (opacity == 0 ? 1.0 : 0)
-    }
 
     function show(newContent) {
         content.value = newContent
@@ -121,12 +116,7 @@ Item {
             anchors.fill: parent
 
             onClicked: {
-                if(!bar.hidden) {
-                    barRow.state = "hidden"
-                } else {
-                    barRow.state = "shown"
-                }
-                bar.hidden = !bar.hidden
+                ApplicationSettings.isBarHidden = !ApplicationSettings.isBarHidden;
             }
         }
     }
@@ -163,6 +153,8 @@ Item {
                 sourceComponent: modelData.bid
             }
         }
+
+        state: ApplicationSettings.isBarHidden ? "hidden" : "shown"
 
         states: [
             State {

@@ -340,7 +340,7 @@ ActivityBase {
                 bottom: parent.bottom
                 margins: 20
             }
-            width: activity.width - x - 20
+            width: background.width - x - 20
             font.pointSize: 18
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter

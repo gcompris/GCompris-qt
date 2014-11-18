@@ -257,7 +257,7 @@ ActivityBase {
             id: braille_map
             source: Activity.url + "target.svg"
             anchors {
-                right: bar.left
+                right: parent.right
                 bottom: parent.bottom
             }
             sourceSize.width: 66 * bar.barZoom

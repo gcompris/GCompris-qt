@@ -74,6 +74,9 @@ static const QString EXE_COUNT_KEY = "exeCount";
 static const QString FILTER_LEVEL_MIN = "filterLevelMin";
 static const QString FILTER_LEVEL_MAX = "filterLevelMax";
 
+static const QString DEFAULT_CURSOR = "defaultCursor";
+static const QString NO_CURSOR = "noCursor";
+
 ApplicationSettings *ApplicationSettings::m_instance = NULL;
 
 ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
@@ -98,7 +101,9 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
             !ApplicationInfo::getInstance()->isMobile()).toBool();
     m_filterLevelMin = m_config.value(FILTER_LEVEL_MIN, 1).toUInt();
     m_filterLevelMax = m_config.value(FILTER_LEVEL_MAX, 6).toUInt();
-    m_config.sync();  // make sure all defaults are written back
+	m_defaultCursor = m_config.value(DEFAULT_CURSOR, false).toBool();
+	m_noCursor = m_config.value(NO_CURSOR, false).toBool();
+	m_config.sync();  // make sure all defaults are written back
     m_config.endGroup();
 
     // admin group
@@ -111,6 +116,9 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_exeCount = m_config.value(EXE_COUNT_KEY, 0).toUInt();
     m_config.endGroup();
 
+    // no group
+    m_isBarHidden = false;
+
 	connect(this, SIGNAL(audioVoicesEnabledChanged()), this, SLOT(notifyAudioVoicesEnabledChanged()));
 	connect(this, SIGNAL(audioEffectsEnabledChanged()), this, SLOT(notifyAudioEffectsEnabledChanged()));
 	connect(this, SIGNAL(fullscreenChanged()), this, SLOT(notifyFullscreenChanged()));
@@ -122,6 +130,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, SIGNAL(filterLevelMaxChanged()), this, SLOT(notifyFilterLevelMaxChanged()));
     connect(this, SIGNAL(downloadServerUrlChanged()), this, SLOT(notifyDownloadServerUrlChanged()));
     connect(this, SIGNAL(exeCountChanged()), this, SLOT(notifyExeCountChanged()));
+    connect(this, SIGNAL(barHiddenChanged()), this, SLOT(notifyBarHiddenChanged()));
 }
 
 ApplicationSettings::~ApplicationSettings()
@@ -137,8 +146,10 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
     m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
     m_config.setValue(FILTER_LEVEL_MIN, m_filterLevelMin);
-    m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
-    m_config.endGroup();
+	m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
+	m_config.setValue(DEFAULT_CURSOR, m_defaultCursor);
+	m_config.setValue(NO_CURSOR, m_noCursor);
+	m_config.endGroup();
 
     // admin group
     m_config.beginGroup(ADMIN_GROUP_KEY);
@@ -225,6 +236,11 @@ void ApplicationSettings::notifyExeCountChanged()
 {
     updateValueInConfig(INTERNAL_GROUP_KEY, EXE_COUNT_KEY, m_exeCount);
     qDebug() << "exeCount set to: " << m_exeCount;
+}
+
+void ApplicationSettings::notifyBarHiddenChanged()
+{
+    qDebug() << "is bar hidden: " << m_isBarHidden;
 }
 
 template<class T> void ApplicationSettings::updateValueInConfig(const QString& group,

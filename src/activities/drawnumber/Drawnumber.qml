@@ -58,6 +58,7 @@ ActivityBase {
             property alias pointImageRepeater: pointImageRepeater
             property alias segmentsRepeater: segmentsRepeater
             property alias imageBack: imageBack
+            property int pointIndexToClick
         }
 
 
@@ -93,44 +94,70 @@ ActivityBase {
             }
         }
 
+        Item {
+            id: playArea
+            anchors.fill: parent
 
+            Repeater {
+                id: pointImageRepeater
 
-       Repeater {
-            id: pointImageRepeater
+                Image {
+                    id: pointImage
 
-            Image {
-                id: pointImage
+                    source: Activity.url + "bluepoint.svg"
+                    sourceSize.height: background.height / 15
+                    x: modelData[0] * background.width / 801 - sourceSize.height/2
+                    y: modelData[1] * background.height / 521 - sourceSize.height/2
+                    z: items.pointIndexToClick >= index ? 10 : 1
+                    visible: index == pointImageRepeater.count - 1 &&
+                             items.pointIndexToClick == 0 ? false : true
 
-                source: Activity.url + "bluepoint.svg"
-                sourceSize.height: background.height / 15
-                x: modelData[0] * background.width / 801 - sourceSize.height/2
-                y: modelData[1] * background.height / 521 - sourceSize.height/2
-                z: pointImageRepeater.count - index
-
-                MouseArea {
-                    anchors.fill: parent
-
-                    onClicked: {
+                    function drawSegment() {
                         Activity.drawSegment(index)
+                    }
+
+                    GCText {
+                        id: pointNumberText
+
+                        opacity: pointImageOpacity
+                        text: index
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.verticalCenter: parent.verticalCenter
+                        font.pointSize: 20
+                        font.weight: Font.DemiBold
+                        style: Text.Outline
+                        styleColor: "black"
+                        color: "white"
+                    }
+                }
+            }
+
+        }
+
+        MultiPointTouchArea {
+            anchors.fill: parent
+            minimumTouchPoints: 1
+            maximumTouchPoints: 1
+            z: 100
+
+            function checkPoints(touchPoints) {
+                for(var i in touchPoints) {
+                    var touch = touchPoints[i]
+                    var part = playArea.childAt(touch.x, touch.y)
+                    if(part) {
+                        part.drawSegment()
                     }
                 }
 
-                GCText {
-                    id: pointNumberText
+            }
 
-                    opacity: pointImageOpacity
-                    text: index
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.verticalCenter: parent.verticalCenter
-                    font.pointSize: 20
-                    font.weight: Font.DemiBold
-                    style: Text.Outline
-                    styleColor: "black"
-                    color: "white"
-                }
+            onPressed: {
+                checkPoints(touchPoints)
+            }
+            onTouchUpdated: {
+                checkPoints(touchPoints)
             }
         }
-
 
         DialogHelp {
             id: dialogHelp

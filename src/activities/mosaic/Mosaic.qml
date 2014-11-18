@@ -68,7 +68,7 @@ ActivityBase {
             width: parent.width * 0.9
 
             property int nbItems: 24
-            property bool horizontal: activity.width > activity.height
+            property bool horizontal: background.width > background.height
             property int nbColumns: Activity.questionLayout[nbItems][0]
             property int nbLines: Activity.questionLayout[nbItems][1]
             property int itemWidth: horizontal ?

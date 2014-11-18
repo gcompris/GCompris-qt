@@ -91,10 +91,10 @@ ActivityBase {
             model: Activity.iceBlocksLayout
 
             Image {
-                x: modelData[0] * activity.width / 5
-                y: modelData[1] * (activity.height- activity.height/5) / 5
-                width: activity.width / 5
-                height: activity.height / 5
+                x: modelData[0] * background.width / 5
+                y: modelData[1] * (background.height- background.height/5) / 5
+                width: background.width / 5
+                height: background.height / 5
                 source: Activity.url + "iceblock.svgz"
             }
         }
@@ -102,14 +102,14 @@ ActivityBase {
 
         Tux {
             id: tux
-            sourceSize.width: Math.min(activity.width / 6, activity.height / 6)
+            sourceSize.width: Math.min(background.width / 6, background.height / 6)
             z: 11
         }
 
 
         Image {
             id: fishToReach
-            sourceSize.width: Math.min(activity.width / 6, activity.height / 6)
+            sourceSize.width: Math.min(background.width / 6, background.height / 6)
             z: 10
 
             function showParticles() {
@@ -159,8 +159,8 @@ ActivityBase {
 
         ChooseDiceBar {
             id: chooseDiceBar
-            x: activity.width / 5 + 20
-            y: (activity.height - activity.height/5) * 3 / 5
+            x: background.width / 5 + 20
+            y: (background.height - background.height/5) * 3 / 5
         }
     }
 

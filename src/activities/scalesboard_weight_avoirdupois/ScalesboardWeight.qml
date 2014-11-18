@@ -72,7 +72,7 @@ Scalesboard {
                            [28, oz(28)]],
                 "rightDrop": false,
                 "message": qsTr("Now you have to guess the weight of the gift."),
-                "question": QT_TR_NOOP("Enter the weight of the gift in ounce: %1")
+                "question": qsTr("Enter the weight of the gift in ounce: %1")
             },
             {
                 "masses": [[1, oz(1)], [4, oz(4)], [6, oz(6)], [8, oz(8)],
@@ -80,7 +80,7 @@ Scalesboard {
                 "targets": [[3, oz(3)], [9, oz(9)], [11, oz(11)], [32, lb(32)]],
                 "rightDrop": true,
                 "message": qsTr("Take care, you can drop weights on both sides of the scale."),
-                "question": QT_TR_NOOP("Enter the weight of the gift in ounce: %1")
+                "question": qsTr("Enter the weight of the gift in ounce: %1")
             }
 ]
 

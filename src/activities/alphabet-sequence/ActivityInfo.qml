@@ -32,4 +32,5 @@ ActivityInfo {
     prerequisite: qsTr("Can decode letters")
     manual: qsTr("Catch the alphabet letters, using the up, down, right and left arrows on the keyboard to move the helicopter.")
     credit: ""
+    section: "reading"
 }

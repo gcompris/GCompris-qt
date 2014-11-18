@@ -85,7 +85,13 @@ else()
   set(_lib_prefix "lib")
 endif()
 
-set(_qt_plugins2 imageformats/${_lib_prefix}qsvg mediaservice/${_lib_prefix}qtmedia_audioengine)
+set(_qt_plugins2 imageformats/${_lib_prefix}qsvg)
+if(UNIX AND NOT ANDROID)
+  list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}gstaudiodecoder
+    mediaservice/${_lib_prefix}gstcamerabin
+    mediaservice/${_lib_prefix}gstmediacapture
+    mediaservice/${_lib_prefix}gstmediaplayer)
+endif()
 
 set(_qml_plugins
   QtQuick/Controls/${_lib_prefix}qtquickcontrolsplugin
@@ -94,6 +100,7 @@ set(_qml_plugins
   QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin
   QtQuick/Dialogs/${_lib_prefix}dialogplugin
   QtQuick.2/${_lib_prefix}qtquick2plugin
+  QtAudioEngine/${_lib_prefix}declarative_audioengine
   QtMultimedia/${_lib_prefix}declarative_multimedia)
 
 set(GCOMPRIS_OTHER_LIBS)
@@ -155,8 +162,13 @@ if(WIN32)
 endif()
 
 # install fixup_bundle script to resolve and fixup runtime dependencies
-configure_file(${CMAKE_MODULE_PATH}/FixBundle.cmake.in FixBundle.cmake)
+configure_file(${CMAKE_SOURCE_DIR}/cmake/FixBundle.cmake.in FixBundle.cmake)
 install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
+
+# install a startup script for linux bundle
+if(UNIX)
+  install(PROGRAMS ../../tools/gcompris.sh DESTINATION bin)
+endif()
 
 # Packaging
 # =========

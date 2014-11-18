@@ -25,6 +25,8 @@
 #include <QObject>
 #include <QTranslator>
 #include <QCommandLineParser>
+#include <QCursor>
+#include <QPixmap>
 #include <QSettings>
 
 #include "ApplicationInfo.h"
@@ -69,7 +71,13 @@ int main(int argc, char *argv[])
     parser.addVersionOption();
     QCommandLineOption exportActivitiesAsSQL("export-activities-as-sql", "Export activities as SQL");
     parser.addOption(exportActivitiesAsSQL);
-    parser.process(app);
+	QCommandLineOption clDefaultCursor(QStringList() << "c" << "cursor",
+									   "run GCompris with the default system cursor.");
+	parser.addOption(clDefaultCursor);
+	QCommandLineOption clNoCursor(QStringList() << "C" << "nocursor",
+									   "run GCompris without cursor (touch screen mode).");
+	parser.addOption(clNoCursor);
+	parser.process(app);
 
 
     ApplicationInfo::init();
@@ -94,6 +102,24 @@ int main(int argc, char *argv[])
         } else {
             locale = "en_US.UTF-8";
         }
+
+		// Set the cursor image
+		bool defaultCursor = false;
+		if(config.contains("General/defaultCursor")) {
+			defaultCursor = config.value("General/defaultCursor").toBool();
+		}
+		if(!defaultCursor && !parser.isSet(clDefaultCursor))
+			QGuiApplication::setOverrideCursor(
+						QCursor(QPixmap(":/gcompris/src/core/resource/cursor.png"),
+								0, 0));
+
+		// Hide the cursor
+		bool noCursor = false;
+		if(config.contains("General/noCursor")) {
+			noCursor = config.value("General/noCursor").toBool();
+		}
+		if(noCursor || parser.isSet(clNoCursor))
+			QGuiApplication::setOverrideCursor(QCursor(Qt::BlankCursor));
     }
 
     // Load translation

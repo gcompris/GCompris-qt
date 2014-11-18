@@ -62,8 +62,8 @@ Image {
     
     Text {
         id: body_text1
-        text: qsTr('The Braille system is a method that is used by blind people to read and write.' +
-                   'Each Braille character, or cell, is made up of six dot positions, arranged in ' +
+        text: qsTr('The Braille system is a method that is used by blind people to read and write.') + "\n" +
+              qsTr('Each Braille character, or cell, is made up of six dot positions, arranged in ' +
                    'a rectangle containing two columns of three dots each. As seen on the left, each ' +
                    'dot is referenced by a number from 1 to 6.')
         font.pointSize:  14

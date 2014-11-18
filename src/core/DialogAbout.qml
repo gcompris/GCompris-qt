@@ -25,7 +25,7 @@ DialogBackground {
     visible: false
     title: qsTr("About GCompris")
 
-    // TRANSLATORS: Replace this string with your names, one name per line.
+    //: Replace this string with your names, one name per line.
     property string translators: qsTr("translator-credits")
     property string gcVersion: ApplicationInfo.GCVersion
     property string qtVersion: ApplicationInfo.QTVersion
