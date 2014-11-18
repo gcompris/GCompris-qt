@@ -84,7 +84,7 @@ ActivityBase {
                 scale: plane_text.width / 250
                 anchors.top: parent.top
                 anchors.topMargin: plane_text.width / 10
-                source: "qrc:/gcompris/src/activities/braille_fun/resource/plane.svg"
+                source: Activity.url + "airplane.svg"
             }
 
             GCText {
@@ -92,7 +92,8 @@ ActivityBase {
                 anchors.right: plane_text.left
                 anchors.rightMargin: plane_text.width / 50
                 anchors.verticalCenter: plane_text.verticalCenter
-                font.pointSize: plane_text.width / 10
+                //font.pointSize: plane_text.width / 10
+                font.pixelSize: Math.max(parent.width * 0.1, 24)
                 font.weight: Font.DemiBold
                 style: Text.Outline
                 styleColor: "white"
@@ -131,7 +132,8 @@ ActivityBase {
             id: planeQuestion
             x: parent.width / 6
             y: 0
-            font.pointSize: plane_text.width / 10
+            //font.pointSize: plane_text.width / 10
+            font.pixelSize: Math.max(parent.width * 0.1, 24)
             font.weight: Font.DemiBold
             style: Text.Outline
             styleColor: "white"
@@ -210,6 +212,7 @@ ActivityBase {
                                     if(answerString === Activity.getCurrentLetter()) {
                                         particles.emitter.burst(40)
                                         items.check = 1;
+                                        animate_sad_tux.stop();
                                         score.currentSubLevel++
                                         Activity.nextQuestion()
                                     }
