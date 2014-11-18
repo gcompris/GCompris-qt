@@ -82,5 +82,4 @@ endif(ANDROID)
 include(cmake/rcc.cmake)
 
 add_subdirectory(src)
-add_subdirectory(translations)
 

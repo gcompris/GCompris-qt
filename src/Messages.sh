@@ -4,4 +4,3 @@
 # EXTRACT_TR_STRINGS extracts strings with lupdate and convert them to .pot with
 # lconvert.
 $EXTRACT_TR_STRINGS `find . -name \*.cpp -o -name \*.h -o -name \*.qml` -o $podir/gcompris_qt.pot
-echo $EXTRACT_TR_STRINGS
