@@ -22,7 +22,7 @@
  */
 import QtQuick 2.1
 
-import "qrc:/gcompris/src/core"
+import "../../core"
 import "football.js" as Activity
 
 import GCompris 1.0
