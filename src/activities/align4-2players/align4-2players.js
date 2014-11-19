@@ -28,6 +28,7 @@ var items
 var url = "qrc:/gcompris/src/activities/align4-2players/resource/"
 var currentPiece
 var currentPlayer
+var currentLocation
 var twoPlayer
 var weight = [[100, 50, 20, 100, 50, 20],
               [110, 55, 20, 100, 50, 20],
@@ -61,8 +62,7 @@ function initLevel() {
         }
     }
 
-    setPieceLocation(items.repeater.itemAt(3).x,
-                     items.repeater.itemAt(0).y)
+    setPieceLocationByIndex(3)
 }
 
 function nextLevel() {
@@ -97,9 +97,26 @@ function whichColumn(mouseX, mouseY) {
 
 /* To move the piece before a column is chosen */
 function setPieceLocation(mouseX, mouseY) {
-    var column = whichColumn(mouseX, mouseY)
+    currentLocation = whichColumn(mouseX, mouseY)
     items.fallingPiece.y = items.repeater.itemAt(0).y - items.cellSize
-    items.fallingPiece.x = items.repeater.itemAt(column).x
+    items.fallingPiece.x = items.repeater.itemAt(currentLocation).x
+}
+
+function setPieceLocationByIndex(index) {
+    setPieceLocation(items.repeater.itemAt(index).x,
+                     items.repeater.itemAt(0).y)
+}
+
+function moveCurrentIndexRight() {
+    if(currentLocation++ > items.columns)
+        currentLocation = 0
+    setPieceLocationByIndex(currentLocation)
+}
+
+function moveCurrentIndexLeft() {
+    if(currentLocation-- <= 0)
+        currentLocation = items.columns - 1
+    setPieceLocationByIndex(currentLocation)
 }
 
 function isModelEmpty(model) {
@@ -120,10 +137,9 @@ function getNextFreeStop(col) {
     return -1
 }
 
-function handleDrop(x, y) {
+function handleDrop(column) {
 
     var singleDropSize = items.cellSize
-    var column = whichColumn(x, y)
     var nextFreeStop = getNextFreeStop(column)
 
     if(nextFreeStop >= 0) {

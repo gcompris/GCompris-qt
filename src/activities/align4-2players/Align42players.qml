@@ -73,6 +73,11 @@ ActivityBase {
         onStart: { Activity.start(items, twoPlayer) }
         onStop: { Activity.stop() }
 
+        Keys.onRightPressed: Activity.moveCurrentIndexRight();
+        Keys.onLeftPressed: Activity.moveCurrentIndexLeft();
+        Keys.onDownPressed: Activity.handleDrop(Activity.currentLocation);
+        Keys.onSpacePressed: Activity.handleDrop(Activity.currentLocation);
+
         ListModel {
             id: pieces
         }
@@ -148,7 +153,8 @@ ActivityBase {
             onClicked: {
                 display()
                 var coord = grid.mapFromItem(background, mouseX, mouseY)
-                Activity.handleDrop(coord.x, coord.y)
+                var column = Activity.whichColumn(x, y)
+                Activity.handleDrop(column)
             }
         }
 
