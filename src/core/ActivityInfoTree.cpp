@@ -199,7 +199,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	while (!in.atEnd())
 	{
 		QString line = in.readLine();
-		if(!line.startsWith("#")) {
+		if(!line.startsWith(QLatin1String("#"))) {
 			QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(line);
 
             if(!QResource::registerResource(

@@ -260,7 +260,7 @@ inline QString DownloadManager::tempFilenameForFilename(const QString &filename)
 
 inline QString DownloadManager::filenameForTempFilename(const QString &tempFilename) const
 {
-    if (tempFilename.endsWith("_"))
+    if (tempFilename.endsWith(QLatin1String("_")))
         return tempFilename.left(tempFilename.length() - 1);
     return tempFilename;
 }
@@ -479,7 +479,7 @@ void DownloadManager::unregisterResource_locked(const QString& filename)
     if (!QResource::unregisterResource(filename, getResourceRootForFilename(filename)))
             qDebug() << "Error unregistering resource file" << filename;
     else {
-        qDebug() << "Succesfully unregistered resource file" << filename;
+        qDebug() << "Successfully unregistered resource file" << filename;
         registeredResources.removeOne(filename);
     }
 }
@@ -499,7 +499,7 @@ bool DownloadManager::registerResource(const QString& filename)
         qDebug() << "Error registering resource file" << filename;
         return false;
     } else {
-        qDebug() << "Succesfully registered resource"
+        qDebug() << "Successfully registered resource"
                 << filename
                 << "(rcRoot=" << getResourceRootForFilename(filename) << ")";
         registeredResources.append(filename);
@@ -674,7 +674,7 @@ QStringList DownloadManager::getLocalResources()
             QString filename = it.next();
             QFileInfo fi = it.fileInfo();
             if (fi.isFile() &&
-                    (filename.endsWith(".rcc")))
+                    (filename.endsWith(QLatin1String(".rcc"))))
                 result.append(filename);
         }
     }

@@ -230,7 +230,7 @@ endmacro()
 #     [+] support different build flags for Release and Debug configurations
 #     [~] by default compiler flags the same as used by ndk-build (but only
 #         where reasonable)
-#     [~] ANDROID_NDK_TOOLCHAIN_ROOT is splitted to ANDROID_STANDALONE_TOOLCHAIN
+#     [~] ANDROID_NDK_TOOLCHAIN_ROOT is split to ANDROID_STANDALONE_TOOLCHAIN
 #         and ANDROID_TOOLCHAIN_ROOT
 #     [~] ARM_TARGET is renamed to ANDROID_ABI
 #     [~] ARMEABI_NDK_NAME is renamed to ANDROID_NDK_ABI_NAME

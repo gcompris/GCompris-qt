@@ -144,7 +144,7 @@ ActivityBase {
             Image {
                 id: wordImage
                 
-                sourceSize.height: background.heigth / 1.7
+                sourceSize.height: background.height / 1.7
                 sourceSize.width: background.width / 1.7
                 
                 anchors {

@@ -33,7 +33,7 @@ Dialog {
 
     property alias text: downloadDialogText.text
     property bool autohide: false;      ///< whether to close the dialog automatically when download has finished
-    property bool reportSuccess: true;  ///< whether to report succesful  
+    property bool reportSuccess: true;  ///< whether to report successful
     property bool reportError: true;
     property bool dynamic: false        ///< whether created dynamically
     property alias backgroundButtonVisible: backgroundButton.visible

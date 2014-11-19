@@ -98,7 +98,7 @@ private slots:
 public:
     // public interface:
     enum DownloadFinishedCode {
-        Success = 0,  // download executed succesfully
+        Success = 0,  // download executed successfully
         Error   = 1,  // download error
         NoChange = 2  // local files are up-to-date, no download was needed
     };

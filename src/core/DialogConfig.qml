@@ -518,7 +518,7 @@ Rectangle {
             var systemFonts = Qt.fontFamilies();
             var rccFonts = ApplicationInfo.getFontsFromRcc();
 
-            // Remove explicitely all *symbol* and *ding* fonts
+            // Remove explicitly all *symbol* and *ding* fonts
             var excludedFonts = ApplicationInfo.getSystemExcludedFonts();
             excludedFonts.push("ding");
             excludedFonts.push("symbol");
