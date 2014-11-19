@@ -145,9 +145,9 @@ ActivityBase {
         Image {
             id: clock
             anchors {
-                left: bar.right
-                bottom: bar.bottom
-                bottomMargin: 10
+                right: parent.right
+                bottom: parent.bottom
+                margins: 10
             }
             sourceSize.width: 66 * bar.barZoom
         }
