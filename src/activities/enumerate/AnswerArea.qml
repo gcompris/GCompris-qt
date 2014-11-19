@@ -37,7 +37,7 @@ Rectangle {
     }
 
     property string imgPath
-    // The backspace code coming from the vitual keyboard
+    // The backspace code coming from the virtual keyboard
     property string backspaceCode
 
     Component.onCompleted: Activity.registerAnswerItem(answerBackground)
