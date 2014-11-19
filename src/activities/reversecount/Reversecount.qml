@@ -63,6 +63,8 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        Keys.onEnterPressed: Activity.moveTux()
+        Keys.onReturnPressed: Activity.moveTux()
 
         onWidthChanged: {
             if(Activity.fishIndex > 0) {
