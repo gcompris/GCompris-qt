@@ -12,6 +12,6 @@ ActivityInfo {
   goal: qsTr("Mental calculation, arithmetic equality")
   prerequisite: ""
   manual: qsTr("To balance the scales, move the weights on the left or the right side. The weights can be arranged in any order.")
-  credit: ""
-  section: "/math/algebramenu"
+  credit:""'
+  section: "math"
 }

@@ -9,9 +9,9 @@ ActivityInfo {
   title: qsTr("The football game")
   description: qsTr("Kick the ball into the goal")
 //  intro: "Drag a line from the ball to set the speed and direction of your kick."
-  goal: qsTr("Kick the ball into the black hole on the right")
-  prerequisite: qsTr("Mouse-manipulation")
-  manual: qsTr("Point the mouse and click on the ball, to set the speed and direction of the ball.")
+  goal: qsTr("Kick the ball behind the goal keeper on the right")
+  prerequisite: ""
+  manual: qsTr("Drag a line from the ball, to set its speed and direction.")
   credit: ""
-  section: "/fun"
+  section: "fun"
 }

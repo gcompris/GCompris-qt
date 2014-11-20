@@ -11,7 +11,7 @@ ActivityInfo {
 //  intro: "Drag the weights up to balance the scales."
   goal: qsTr("Mental calculation, arithmetic equality, unit conversion")
   prerequisite: ""
-  manual: qsTr("To balance the scales, move the masses on the left or the right side. Take care of the weight and the unit of the masses, remember that a pound (lb) is sixteen ounce (oz). They can be arranged in any order.")
+  manual: qsTr("To balance the scales, move the masses on the left or the right side. They can be arranged in any order. Take care of the weight and the unit of the masses, remember that a pound (lb) is sixteen ounce (oz).")
   credit: ""
-  section: "/math/algebramenu units"
+  section: "math"
 }

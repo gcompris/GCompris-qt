@@ -8,7 +8,7 @@ ActivityInfo {
   demo: false
   title: qsTr("Operate a canal lock")
   description: qsTr("Tux is in trouble, and needs to take his boat through a lock. Help Tux and find out how a canal lock works.")
-//  intro: "You are responsible for the lock and you must help Tux pass through. Click on the small valves to cause either a drop or an increase in the water level."
+  intro: "You are responsible for the lock and you must help Tux pass through. Click on the red valves to cause either a drop or an increase in the water level, and click on the green valves to open or close a path."
   goal: ""
   prerequisite: ""
   manual: qsTr("You are in charge of the canal lock. Open the gates and the locks in the right order, so Tux can travel through the gates in both directions.")

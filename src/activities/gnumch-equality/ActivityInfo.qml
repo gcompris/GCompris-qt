@@ -7,11 +7,11 @@ ActivityInfo {
   author: "Manuel Tondeur <manueltondeur@gmail.com>"
   demo: false
   title: qsTr("Gnumch Equality")
-  description: qsTr("Guide the Number Muncher to the expressions that equal the number at the top of the screen.")
+  description: qsTr("Guide the Number Muncher to the expressions that equal the number at the bottom of the screen.")
 //  intro: "Guide the number eater with the arrow keys to the required numbers and press the space bar to swallow them."
   goal: qsTr("Practice addition, multiplication, division and subtraction.")
   prerequisite: ""
-  manual: ApplicationInfo.isMobile ? qsTr("Use the arrow keys to navigate around the board and to avoid the Troggles. Press the space bar to eat a number") : qsTr("Touch cells to move around the board and to avoid the Troggles. Press the muncher to eat the number")
+  manual: qsTr("Guide the Number Muncher to the expressions that equal the number at the bottom of the screen. If you have a keyboard you can use the arrow keys. With a mouse you can click on the block next to your position to move and click again to catch the number. With a touch screen you can do like with a mouse or swipe anywhere in the direction you want to move and tap to catch the number. Take care to avoid the Troggles.")
   credit: ""
   section: "/math/algebramenu"
 }

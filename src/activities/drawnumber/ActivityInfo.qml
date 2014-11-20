@@ -4,14 +4,14 @@ ActivityInfo {
   name: "drawnumber/Drawnumber.qml"
   difficulty: 1
   icon: "drawnumber/drawnumber.svg"
-  author: "Olivier Ponchaut <opvg@mailoo.org>, Qt Quick port by Emmanuel Charruau <echarruau@gmail.com>"
+  author: "Emmanuel Charruau <echarruau@gmail.com>"
   demo: false
-  title: qsTr("drawnumber activity")
-  description: qsTr("Click on numbers in the right order.")
-//  intro: "Draw the picture by clicking on each number in the right order."
+  title: qsTr("Number sequence")
+  description: qsTr("Touch the numbers in the right sequence.")
+//  intro: "Draw the picture by touching each number in the right sequence."
   goal: qsTr("Can count from 1 to 50.")
   prerequisite: ""
-  manual: qsTr("Draw the picture by clicking on each numbers in the right order.")
+  manual: qsTr("Draw the picture by touching each number in the right sequence, or sliding your finger or dragging the mouse through the numbers in the correct sequence.")
   credit: ""
-  section: "/math/numeration"
+  section: "math numeration"
 }

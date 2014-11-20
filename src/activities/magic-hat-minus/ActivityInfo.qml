@@ -11,7 +11,7 @@ ActivityInfo {
 //  intro: "Click on the hat. How many stars are still hiding under the hat."
   goal: qsTr("Learn subtraction")
   prerequisite: qsTr("Subtraction")
-  manual: qsTr("Look at the magician, he tells the number of stars that are under his magic hat. Then, click on the hat to open it. A few stars escape. Click again on the hat to close it. You have to count how many are still under the hat. Click on the bottom right area to answer.")
+  manual: qsTr("Look at the magician, he tells the number of stars that are under his magic hat. Then, click on the hat to open it. A few stars escape. Click again on the hat to close it. You have to count how many are still under the hat. Click on the bottom area to answer.")
   credit: ""
-  section: "/math/numeration"
+  section: "math numeration"
 }

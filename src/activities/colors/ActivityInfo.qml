@@ -9,9 +9,9 @@ ActivityInfo {
   title: qsTr("Colors")
   description: qsTr("Click on the right color")
 //  intro: "Click on the right color"
-  goal: qsTr("This board teaches you to recognize different colors. When you hear the name of the color, click on the duck wearing it.")
-  prerequisite: qsTr("Can move the mouse.")
-  manual: qsTr("Listen to the color and click on the matching duck.")
+  goal: qsTr("This activity teaches you to recognize different colors. When you hear the name of the color, touch the duck wearing it.")
+  prerequisite: "Identifying colours"
+  manual: qsTr("Listen to the color and touch the matching duck.")
   credit: ""
-  section: "/discovery/colors_group"
+  section: "discovery color"
 }

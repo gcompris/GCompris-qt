@@ -7,7 +7,7 @@ ActivityInfo {
   author: "Stephane Mankowski <stephane@mankowski.fr>"
   demo: false
   title: qsTr("Penalty kick")
-  description: qsTr("Double click the mouse on the ball to score a goal.")
+  description: qsTr("Double click or double tap the screen on the ball to score a goal.")
 //  intro: "Double click on the ball to shoot it."
   goal: ""
   prerequisite: ""
@@ -16,5 +16,5 @@ ActivityInfo {
                "If you lose, Tux catches the ball. You must click on it to " +
                "bring it back to its former position")
   credit: ""
-  section: "/computer/mouse"
+  section: "computer mouse"
 }
