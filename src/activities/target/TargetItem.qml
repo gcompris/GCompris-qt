@@ -91,7 +91,6 @@ Image {
         console.log("dist", dist)
         var score = 0
         for(var i = targetModel.count - 1; i >= 0; --i) {
-            console.log("i=", i, targetModel.get(i).size)
             if(dist < targetModel.get(i).size) {
                 score = targetModel.get(i).score
                 break
