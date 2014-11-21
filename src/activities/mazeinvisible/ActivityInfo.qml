@@ -11,7 +11,7 @@ ActivityInfo {
 //  intro: "Use the arrow keys to guide Tux out. Use the space key to see the map."
   goal: qsTr("Help Tux get out of this maze.")
   prerequisite: ""
-  manual: qsTr("Use the arrow keys to move Tux up to the door. Use the spacebar ?? to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
+  manual: qsTr("Use the arrow keys to move Tux up to the door. Use the spacebar to switch between invisible and visible modes. Visible mode just gives you an indication of your position, like a map. You cannot move Tux in visible mode.
 
 At the first levels, Tux walks comfortably, one step on each keypress, through the labyrinth.
 
