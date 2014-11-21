@@ -2,7 +2,6 @@ import GCompris 1.0
 
 ActivityInfo {
     name: "leftright/Leftright.qml"
-    section: "/discovery/miscelaneous"
     difficulty: 1
     icon: "leftright/leftright.svg"
     author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
