@@ -31,7 +31,7 @@ ActivityInfo {
 //  intro: "Move the helicopter with the arrow keys and catch the number in the clouds in numerical order."
     goal: qsTr("Numeration training")
     prerequisite: ""
-    manual: qsTr("Catch the clouds in increasing order. With a keyboard use the arrow keys to move the helicopter. On a touch screen place a finger on the screen and quickly swipe it in the desired direction. To know which number you have to catch  you can either remember it or check the bottom right corner.")
+    manual: qsTr("Catch the clouds in increasing order. With a keyboard use the arrow keys to move the helicopter. On a touch screen place a finger on the screen and quickly swipe it in the desired direction. To know which number you have to catch you can either remember it or check the bottom right corner.")
     credit: ""
   section: "math numeration"
 }

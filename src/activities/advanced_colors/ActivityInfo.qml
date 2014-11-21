@@ -11,7 +11,7 @@ ActivityInfo {
   //intro: "find the dancing butterfly having the requested color"
   goal: qsTr("Learn to recognize unusual colors.")
   prerequisite: qsTr("Can read")
-  manual: qsTr("You will see dancing butterflies of different colors and a question. You have to find the correct butterly and touch it.")
+  manual: qsTr("You will see dancing butterflies of different colors and a question. You have to find the correct butterfly and touch it.")
   credit: ""
   section: "discovery colors"
 }

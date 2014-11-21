@@ -11,7 +11,7 @@ ActivityInfo {
 //  intro: "Add the two numbers together and type in your answer before the balloon landing"
   goal: qsTr("Learn to find the sum of two numbers within a limited period of time")
   prerequisite: qsTr("Simple addition. Can recognize written numbers")
-  manual: qsTr("Two numbers are displayed on the screen. Quickly find the difference between them and use your computer's keyboard or the on-screen keypad to type the product of the numbers. You have to be fast and submit the answer before the penguins land in their balloon!"
+  manual: qsTr("Two numbers are displayed on the screen. Quickly find the sum of them and use your computer's keyboard or the on-screen keypad to type it. You have to be fast and submit the answer before the penguins land in their balloon!"
   credit: ""
   section: "math addition"
 }

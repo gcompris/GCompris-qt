@@ -11,7 +11,7 @@ ActivityInfo {
 //  intro: "Put each item at the same place as in the given example."
   goal: ""
   prerequisite: ""
-  manual: qsTr("First select the item you want to put then click on a spot on the  empty area")
+  manual: qsTr("First select the item you want to put then click on a spot on the empty area")
   credit: ""
   section: "discovery"
 }
