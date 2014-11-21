@@ -33,3 +33,4 @@ ActivityInfo {
   manual: qsTr("Select a number of a symbol on the left and click on its target position. GCompris will not let you enter invalid data.")
   credit: ""
   section: "puzzle"
+}

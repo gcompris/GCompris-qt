@@ -1,6 +1,6 @@
 import GCompris 1.0
 
-Must be updated once GnumchEquality is reviewed
+// Must be updated once GnumchEquality is reviewed
 ActivityInfo {
   name: "gnumch-inequality/GnumchInequality.qml"
   difficulty: 3
