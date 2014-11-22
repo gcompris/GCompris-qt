@@ -53,7 +53,7 @@ function initQuestion() {
     items.animateX.restart();
     items.animateY.restart();
 
-    items.check = 0;
+
 
 }
 
@@ -76,22 +76,24 @@ function initLevel() {
     items.score.numberOfSubLevels = 26;
     items.score.currentSubLevel = "0";
     items.cardRepeater.model = currentLevel + 1 ;
+
     initQuestion()
+    items.animate_sad_tux.stop();
 
     switch(currentLevel) {
     case 0:
         for(var i = 0;  i < 26; i++) {
-            questionArray[i] = set[i];
+            questionArray[i] = set[i] + " ";
         }
         break
     case 1:
         for(var i = 0;  i < 26; i++) {
-            questionArray[i] = set[Math.floor(Math.random() * 26)] + set[Math.floor(Math.random() * 26)] ;
+            questionArray[i] = set[Math.floor(Math.random() * 26)] +" "+ set[Math.floor(Math.random() * 26)] + " " ;
         }
         break
     case 2:
         for(var i = 0;  i < 26; i++) {
-            questionArray[i] = set[Math.floor(Math.random() * 26)] + set[Math.floor(Math.random() * 26)] + set[Math.floor(Math.random() * 26)];
+            questionArray[i] = set[Math.floor(Math.random() * 26)] +" "+ set[Math.floor(Math.random() * 26)] +" "+ set[Math.floor(Math.random() * 26)] + " ";
         }
         break
     }

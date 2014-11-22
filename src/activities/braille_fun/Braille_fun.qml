@@ -62,7 +62,7 @@ ActivityBase {
             property alias cardRepeater: cardRepeater
             property alias animateX: animateX
             property alias animateY: animateY
-            property int check: 0
+            property alias animate_sad_tux: animate_sad_tux
         }
 
         onStart: { Activity.start(items) }
@@ -92,11 +92,8 @@ ActivityBase {
                 anchors.right: plane_text.left
                 anchors.rightMargin: plane_text.width / 50
                 anchors.verticalCenter: plane_text.verticalCenter
-                //font.pointSize: plane_text.width / 10
-                font.pixelSize: Math.max(parent.width * 0.1, 24)
+                font.pixelSize: Math.max(parent.width * 0.2, 24)
                 font.weight: Font.DemiBold
-                style: Text.Outline
-                styleColor: "white"
                 color: "black"
 
                 function initQuestion() {
@@ -121,8 +118,11 @@ ActivityBase {
                 from: parent.width / 9
                 to: parent.width
                 duration: 11000
-                onRunningChanged: {if(items.check == 0 && animateX.running == false) {
+                onRunningChanged: {if(plane_text.x == parent.width && animateX.running == false) {
                         animate_sad_tux.start()
+                        for(var i=0 ; i < Activity.currentLevel+1 ; i++) {
+                            cardRepeater.itemAt(i).ins.clickable = false
+                        }
                     }
                 }
             }
@@ -132,8 +132,7 @@ ActivityBase {
             id: planeQuestion
             x: parent.width / 6
             y: 0
-            //font.pointSize: plane_text.width / 10
-            font.pixelSize: Math.max(parent.width * 0.1, 24)
+            font.pixelSize: Math.max(plane_text.width * 0.2, 24)
             font.weight: Font.DemiBold
             style: Text.Outline
             styleColor: "white"
@@ -160,6 +159,26 @@ ActivityBase {
                 to: parent.height
                 duration: 12000
             }
+            PropertyAnimation {
+                id: animateColor
+                target: planeQuestion
+                properties: "color"
+                from: "blue"
+                to: "black"
+                duration: 1000
+                onRunningChanged: {
+                    if(animateColor.running == false) {
+                        score.currentSubLevel++;
+                        Activity.nextQuestion();
+                        for(var i=0 ; i < Activity.currentLevel+1 ; i++) {
+
+                            cardRepeater.itemAt(i).ins.brailleChar = ""
+                            cardRepeater.itemAt(i).clearDots();
+
+                        }
+                    }
+                }
+            }
         }
 
         Image {
@@ -170,12 +189,14 @@ ActivityBase {
             anchors.rightMargin: 40 * ApplicationInfo.ratio
             source: Activity.url + "top_back.svg"
             sourceSize.width: parent.width * 0.45
+            width:parent.width*0.45
             visible: true
 
             Row {
                 id: row
                 spacing: 5 * ApplicationInfo.ratio
-                anchors.centerIn: charBg
+                anchors.top: charBg.top
+                anchors.horizontalCenter: charBg.horizontalCenter
                 anchors.horizontalCenterOffset: 5
 
                 Repeater {
@@ -187,6 +208,12 @@ ActivityBase {
                         height: charBg.height * 0.9
                         width: (charBg.width - 3 * row.spacing) / 3
                         property string brailleChar: ins.brailleChar
+                        property alias ins: ins
+
+                        function clearDots() {
+                            ins.updateDotsFromBrailleChar();
+                        }
+
 
                         Rectangle {
                             id: rect1
@@ -207,14 +234,14 @@ ActivityBase {
                                     inner.brailleChar = ins.brailleChar
                                     var answerString = "" ;
                                     for(var i = 0 ; i < Activity.currentLevel + 1 ; i++ ) {
-                                        answerString = answerString + cardRepeater.itemAt(i).brailleChar;
+                                        answerString = answerString + cardRepeater.itemAt(i).brailleChar + " ";
                                     }
                                     if(answerString === Activity.getCurrentLetter()) {
                                         particles.emitter.burst(40)
-                                        items.check = 1;
-                                        animate_sad_tux.stop();
-                                        score.currentSubLevel++
-                                        Activity.nextQuestion()
+                                        sad_tux.opacity = 0
+                                        planeQuestion.color = "blue"
+                                        animateColor.start();
+
                                     }
                                 }
                             }
@@ -223,10 +250,8 @@ ActivityBase {
                         Text {
                             text: brailleChar
                             font.weight: Font.DemiBold
-                            style: Text.Outline
-                            styleColor: "white"
                             color: "black"
-                            font.pixelSize: Math.max(parent.width * 0.3 , 15)
+                            font.pixelSize: Math.max(parent.width * 0.25 , 15)
                             anchors {
                                 top: rect1.bottom
                                 topMargin: 4 * ApplicationInfo.ratio
@@ -253,6 +278,9 @@ ActivityBase {
                 duration: 1500
                 onRunningChanged: if(animate_sad_tux.running == false) {
                                       sad_tux.opacity = 0
+                                      for(var i=0 ; i < Activity.currentLevel+1 ; i++) {
+                                          cardRepeater.itemAt(i).ins.clickable = true
+                                      }
                                       animateX.restart()
                                       animateY.restart()
                                   }
@@ -302,7 +330,7 @@ ActivityBase {
             id: braille_map
             source: Activity.url + "target.svg"
             anchors {
-                right: bar.left
+                right: score.left
                 bottom: parent.bottom
             }
             sourceSize.width: 66 * bar.barZoom
