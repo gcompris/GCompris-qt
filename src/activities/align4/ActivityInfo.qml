@@ -11,6 +11,6 @@ ActivityInfo {
 //  intro: "Click on the column where you wish your token to fall and try to align of 4 tokens before Tux."
   goal: qsTr("Create a line of 4 tokens either horizontally (lying down), vertically (standing up) or diagonally.")
   manual: qsTr("Play with the computer. Take turns to click the line in which you want to drop a token. You can also use the arrow keys to move the token left or right, and the down or space key to drop a token. First player to create a line of 4 tokens wins")
-  credit: qsTr("")
+  credit: ""
   section: "strategy"
 }
