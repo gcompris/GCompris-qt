@@ -1,10 +1,10 @@
 /* GCompris - redraw.qml
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 Bruno Coudoin
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -68,6 +68,7 @@ ActivityBase {
             anchors.margins: 10
             spacing: 20
 
+            // The color selector
             Column {
                 Repeater {
                     model: [ "white", "red", "orange", "green", "blue" ]
@@ -88,7 +89,10 @@ ActivityBase {
                     }
                 }
             }
+
+            // The drawing area
             Grid {
+                id: drawingArea
                 width: parent.width * 0.4
                 columns: 4
                 Repeater {
@@ -107,6 +111,10 @@ ActivityBase {
                         border.width: 1
                         border.color: 'black'
 
+                        function paint() {
+                            color = items.colorSelector
+                        }
+
                         Behavior on color {
                             ColorAnimation {
                                 duration: 200
@@ -117,11 +125,13 @@ ActivityBase {
                         }
                         MouseArea {
                             anchors.fill: parent
-                            onClicked: parent.color = items.colorSelector
+                            onClicked: parent.paint()
                         }
                     }
                 }
             }
+
+            // The painting to reproduce
             Grid {
                 width: parent.width * 0.4
                 columns: 4
@@ -141,6 +151,23 @@ ActivityBase {
             }
         }
 
+        function checkTouchPoint(touchPoints) {
+            for(var i in touchPoints) {
+                var touch = touchPoints[i]
+                var block = drawingArea.childAt(touch.x, touch.y)
+                if(block)
+                    block.paint()
+            }
+        }
+
+        MultiPointTouchArea {
+            x: drawingArea.x
+            y: drawingArea.y
+            width: drawingArea.width
+            height: drawingArea.height
+            onPressed: checkTouchPoint(touchPoints)
+            onTouchUpdated: checkTouchPoint(touchPoints)
+        }
 
         DialogHelp {
             id: dialogHelp
