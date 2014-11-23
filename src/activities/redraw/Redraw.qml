@@ -52,13 +52,7 @@ ActivityBase {
             property string colorSelector
             property alias userModel: userModel
             property alias targetModel: targetModel
-            property variant targetModelData: [
-                        'white', 'white', 'white', 'white',
-                        'red',   'red',   'red',   'red',
-                        'white', 'blue',  'blue',  'white',
-                        'white', 'white', 'white', 'white',
-                        'white', 'white', 'white', 'white',
-                    ]
+            property variant targetModelData
         }
 
         onStart: { Activity.start(items) }

@@ -22,8 +22,32 @@
 .pragma library
 .import QtQuick 2.0 as Quick
 
+var dataset = [
+            [
+                'white', 'white', 'blue',  'white',
+                'red',   'red',   'red',   'red',
+                'white', 'blue',  'white', 'white',
+                'white', 'white', 'white', 'white',
+                'white', 'white', 'white', 'white',
+            ],
+            [
+                'white', 'white', 'white', 'white',
+                'red',   'red',   'red',   'red',
+                'white', 'blue',  'blue',  'white',
+                'white', 'red',   'red',   'red',
+                'white', 'white', 'white', 'white',
+            ],
+            [
+                'white', 'white', 'white', 'white',
+                'red',   'red',   'red',   'red',
+                'white', 'blue',  'white', 'white',
+                'white', 'white', 'blue',  'white',
+                'white', 'white', 'white', 'white',
+            ]
+        ]
+
 var currentLevel = 0
-var numberOfLevel = 4
+var numberOfLevel = dataset.length
 var items
 
 function start(items_) {
@@ -37,6 +61,7 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    items.targetModelData = dataset[currentLevel]
 }
 
 function nextLevel() {
