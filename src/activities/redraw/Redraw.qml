@@ -86,6 +86,12 @@ ActivityBase {
                 Repeater {
                     id: userModel
                     model: 20
+
+                    function reset() {
+                        for(var i=0; i < items.userModel.count; ++i)
+                            items.userModel.itemAt(i).color = "white"
+                    }
+
                     Rectangle {
                         color: 'white'
                         width: background.width * 0.10

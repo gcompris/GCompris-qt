@@ -62,6 +62,7 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.targetModelData = dataset[currentLevel]
+    items.userModel.reset()
 }
 
 function nextLevel() {
