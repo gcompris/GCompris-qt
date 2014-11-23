@@ -153,7 +153,7 @@ ActivityBase {
             onClicked: {
                 display()
                 var coord = grid.mapFromItem(background, mouseX, mouseY)
-                var column = Activity.whichColumn(x, y)
+                var column = Activity.whichColumn(coord.x, coord.y)
                 Activity.handleDrop(column)
             }
         }
