@@ -23,14 +23,23 @@
 .import QtQuick 2.0 as Quick
 
 var url = "qrc:/gcompris/src/activities/redraw/resource/"
+var colorShortcut = {
+    0: 'white',
+    1: 'red',
+    2: 'orange',
+    3: 'green',
+    4: 'blue',
+    5: 'yellow',
+    6: 'black'
+}
 var colors = {
-    "white": '#33FFFFFF',
-    "red": '#FFCC0000',
-    "orange": '#FFCE5C00',
-    "green": '#FF73D216',
-    "blue": '#FF3465A4',
-    "yellow": '#FFEDD400',
-    "black": '#FF2E3436'
+    0: '#33FFFFFF',
+    1: '#FFCC0000',
+    2: '#FFFCAE3D',
+    3: '#FF73D216',
+    4: '#FF3465A4',
+    5: '#FFEDD400',
+    6: '#FF2E3436'
 }
 
 
@@ -38,56 +47,188 @@ var dataset = [
             {
                 "columns": 4,
                 "image":
-                    [
-                    'white', 'white', 'blue',  'white',
-                    'red',   'red',   'red',   'red',
-                    'white', 'blue',  'white', 'white',
-                    'white', 'white', 'white', 'white',
-                    'white', 'white', 'white', 'white',
+                [
+                    0,0,0,0,
+                    0,1,0,0,
+                    0,0,1,0,
+                    0,1,0,0,
+                    0,0,0,0
                 ]
             },
             {
                 "columns": 4,
                 "image":
-                    [
-                    'white', 'white', 'white', 'white',
-                    'red',   'red',   'red',   'red',
-                    'white', 'blue',  'blue',  'white',
-                    'white', 'red',   'red',   'red',
-                    'white', 'white', 'white', 'white',
+                [
+                    1,1,0,0,
+                    0,2,2,0,
+                    0,0,1,1,
+                    0,2,2,0,
+                    1,1,0,0
                 ]
             },
             {
                 "columns": 4,
                 "image":
-                    [
-                    'white', 'white', 'white', 'white',
-                    'red',   'red',   'red',   'red',
-                    'white', 'blue',  'white', 'white',
-                    'white', 'white', 'blue',  'white',
-                    'white', 'white', 'white', 'white',
+                [
+                    1,0,0,0,
+                    0,1,0,0,
+                    0,0,2,3,
+                    0,1,0,0,
+                    1,0,0,0
                 ]
             },
             {
                 "columns": 4,
                 "image":
-                    [
-                    'orange', 'white', 'white', 'green',
-                    'red',    'red',   'red',   'red',
-                    'white',  'blue',  'blue',  'white',
-                    'white',  'blue',  'blue',  'white',
-                    'green',  'white', 'white', 'orange',
+                [
+                    4,4,4,4,
+                    0,2,2,2,
+                    0,3,3,0,
+                    2,2,2,0,
+                    4,4,4,4
                 ]
             },
             {
                 "columns": 5,
                 "image":
-                    [
-                    'orange', 'white', 'white', 'green',  'green',
-                    'red',    'red',   'red',   'red',    'green',
-                    'white',  'blue',  'blue',  'white',  'green',
-                    'white',  'blue',  'blue',  'white',  'green',
-                    'green',  'white', 'white', 'orange', 'green',
+                [
+                    0,1,1,1,0,
+                    1,0,0,0,1,
+                    1,0,0,0,1,
+                    1,2,2,2,1,
+                    1,0,0,0,1
+                ]
+            },
+            {
+                "columns": 5,
+                "image":
+                [
+                    3,4,4,2,0,
+                    3,0,0,0,1,
+                    3,4,4,4,0,
+                    3,0,0,0,1,
+                    3,4,4,2,0
+                ]
+            },
+            {
+                "columns": 5,
+                "image":
+                [
+                    0,1,1,1,0,
+                    3,0,0,0,0,
+                    3,0,0,0,0,
+                    3,0,0,0,0,
+                    0,2,2,2,0
+                ]
+            },
+            {
+                "columns": 5,
+                "image":
+                [
+                    1,3,3,3,0,
+                    1,0,0,0,4,
+                    1,0,0,0,4,
+                    1,0,0,0,4,
+                    1,2,2,2,0
+                ]
+            },
+            {
+                "columns": 6,
+                "image":
+                [
+                    1,1,1,1,1,1,
+                    1,2,0,0,0,1,
+                    1,0,2,3,0,1,
+                    1,0,2,3,0,1,
+                    1,2,0,0,0,1,
+                    1,1,1,1,1,1
+                ]
+            },
+            {
+                "columns": 6,
+                "image":
+                [
+                    1,2,2,2,2,2,
+                    3,1,0,0,0,2,
+                    3,0,1,4,0,2,
+                    3,0,4,1,0,2,
+                    3,0,0,0,1,2,
+                    3,3,3,3,3,1
+                ]
+            },
+            {
+                "columns": 6,
+                "image":
+                [
+                    1,2,2,2,2,3,
+                    4,0,0,0,0,4,
+                    4,0,0,0,0,4,
+                    4,0,0,0,0,4,
+                    4,0,0,0,0,4,
+                    3,2,2,2,2,1
+                ]
+            },
+            {
+                "columns": 6,
+                "image":
+                [
+                    1,1,1,1,1,1,
+                    2,0,0,0,0,0,
+                    2,3,3,3,3,0,
+                    2,3,3,3,3,0,
+                    2,0,0,0,0,0,
+                    1,1,1,1,1,1
+                ]
+            },
+            {
+                "columns": 6,
+                "image":
+                [
+                    1,1,1,1,1,1,
+                    1,1,1,1,1,1,
+                    2,2,0,0,0,0,
+                    2,2,3,3,3,3,
+                    2,2,3,3,3,3,
+                    2,2,0,0,0,0
+                ]
+            },
+            {
+                "columns": 7,
+                "image":
+                [
+                    0,1,1,1,1,1,0,
+                    2,0,0,0,0,0,0,
+                    2,0,0,0,0,0,0,
+                    2,0,0,0,0,0,0,
+                    2,0,0,0,5,5,4,
+                    2,0,0,0,0,0,4,
+                    0,3,3,3,3,3,0
+                ]
+            },
+            {
+                "columns": 7,
+                "image":
+                [
+                    0,1,1,1,1,1,0,
+                    1,0,0,0,0,0,1,
+                    1,0,3,0,2,0,1,
+                    1,0,0,0,0,0,1,
+                    1,0,2,1,3,0,1,
+                    1,0,0,0,0,0,1,
+                    0,1,1,1,1,1,0
+                ]
+            },
+            {
+                "columns": 7,
+                "image":
+                [
+                    1,0,1,0,1,0,1,
+                    0,2,0,2,0,2,0,
+                    3,0,3,0,3,0,3,
+                    0,4,0,4,0,4,0,
+                    5,0,5,0,5,0,5,
+                    0,6,0,6,0,6,0,
+                    1,0,1,0,1,0,1
                 ]
             }
         ]
@@ -109,6 +250,8 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.numberOfColumn = dataset[currentLevel].columns
     items.targetModelData = dataset[currentLevel].image
+    items.numberOfColor = getNumberOfColors(items.targetModelData)
+    items.colorSelector = 0
     items.userModel.reset()
 }
 
@@ -124,6 +267,14 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
+}
+
+function getNumberOfColors(model) {
+    var nbColor = 0
+    for(var i=0; i < model.length; ++i) {
+        nbColor = Math.max(nbColor, model[i])
+    }
+    return nbColor + 1
 }
 
 function checkModel() {

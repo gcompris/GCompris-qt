@@ -54,9 +54,10 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property string colorSelector: Activity.colors['white']
+            property int colorSelector: 0
             property alias userModel: userModel
             property int numberOfColumn
+            property int numberOfColor
             property int numberOfLine: targetModelData.length / numberOfColumn
             property alias targetModel: targetModel
             property variant targetModelData
@@ -73,20 +74,19 @@ ActivityBase {
             // The color selector
             Column {
                 Repeater {
-                    model: [ "white", "red", "orange", "green", "blue" ]
+                    model: items.numberOfColor
                     Image {
-                        source: Activity.url + modelData + ".svg"
-                        sourceSize.width: Math.min(background.width * 0.10, background.height * 0.15)
+                        source: Activity.url + Activity.colorShortcut[modelData] + ".svg"
+                        sourceSize.width: Math.min(background.width * 0.10,
+                                                   background.height * 0.8 / items.numberOfColor)
                         height: width
-                        scale: staticColor == items.colorSelector ? 1.3 : 1
-                        z: staticColor == items.colorSelector ? 10 : 1
-
-                        property string staticColor: Activity.colors[modelData]
+                        scale: modelData == items.colorSelector ? 1.3 : 1
+                        z: modelData == items.colorSelector ? 10 : 1
 
                         Behavior on scale { NumberAnimation { duration: 100 } }
                         MouseArea {
                             anchors.fill: parent
-                            onClicked: items.colorSelector = Activity.colors[modelData]
+                            onClicked: items.colorSelector = modelData
                         }
                     }
                 }
@@ -104,7 +104,7 @@ ActivityBase {
 
                     function reset() {
                         for(var i=0; i < items.userModel.count; ++i)
-                            userModel.itemAt(i).color = Activity.colors['white']
+                            userModel.itemAt(i).color = Activity.colors[0]
                     }
 
                     Rectangle {
@@ -116,7 +116,7 @@ ActivityBase {
                         border.color: 'black'
 
                         function paint() {
-                            color = items.colorSelector
+                            color = Activity.colors[items.colorSelector]
                         }
 
                         Behavior on color {
