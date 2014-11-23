@@ -35,34 +35,61 @@ var colors = {
 
 
 var dataset = [
-            [
-                'white', 'white', 'blue',  'white',
-                'red',   'red',   'red',   'red',
-                'white', 'blue',  'white', 'white',
-                'white', 'white', 'white', 'white',
-                'white', 'white', 'white', 'white',
-            ],
-            [
-                'white', 'white', 'white', 'white',
-                'red',   'red',   'red',   'red',
-                'white', 'blue',  'blue',  'white',
-                'white', 'red',   'red',   'red',
-                'white', 'white', 'white', 'white',
-            ],
-            [
-                'white', 'white', 'white', 'white',
-                'red',   'red',   'red',   'red',
-                'white', 'blue',  'white', 'white',
-                'white', 'white', 'blue',  'white',
-                'white', 'white', 'white', 'white',
-            ],
-            [
-                'orange', 'white', 'white', 'green',
-                'red',    'red',   'red',   'red',
-                'white',  'blue',  'blue',  'white',
-                'white',  'blue',  'blue',  'white',
-                'green',  'white', 'white', 'orange',
-            ]
+            {
+                "columns": 4,
+                "image":
+                    [
+                    'white', 'white', 'blue',  'white',
+                    'red',   'red',   'red',   'red',
+                    'white', 'blue',  'white', 'white',
+                    'white', 'white', 'white', 'white',
+                    'white', 'white', 'white', 'white',
+                ]
+            },
+            {
+                "columns": 4,
+                "image":
+                    [
+                    'white', 'white', 'white', 'white',
+                    'red',   'red',   'red',   'red',
+                    'white', 'blue',  'blue',  'white',
+                    'white', 'red',   'red',   'red',
+                    'white', 'white', 'white', 'white',
+                ]
+            },
+            {
+                "columns": 4,
+                "image":
+                    [
+                    'white', 'white', 'white', 'white',
+                    'red',   'red',   'red',   'red',
+                    'white', 'blue',  'white', 'white',
+                    'white', 'white', 'blue',  'white',
+                    'white', 'white', 'white', 'white',
+                ]
+            },
+            {
+                "columns": 4,
+                "image":
+                    [
+                    'orange', 'white', 'white', 'green',
+                    'red',    'red',   'red',   'red',
+                    'white',  'blue',  'blue',  'white',
+                    'white',  'blue',  'blue',  'white',
+                    'green',  'white', 'white', 'orange',
+                ]
+            },
+            {
+                "columns": 5,
+                "image":
+                    [
+                    'orange', 'white', 'white', 'green',  'green',
+                    'red',    'red',   'red',   'red',    'green',
+                    'white',  'blue',  'blue',  'white',  'green',
+                    'white',  'blue',  'blue',  'white',  'green',
+                    'green',  'white', 'white', 'orange', 'green',
+                ]
+            }
         ]
 
 var currentLevel = 0
@@ -80,7 +107,8 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    items.targetModelData = dataset[currentLevel]
+    items.numberOfColumn = dataset[currentLevel].columns
+    items.targetModelData = dataset[currentLevel].image
     items.userModel.reset()
 }
 

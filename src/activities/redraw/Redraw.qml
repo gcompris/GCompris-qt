@@ -56,6 +56,8 @@ ActivityBase {
             property alias bonus: bonus
             property string colorSelector: Activity.colors['white']
             property alias userModel: userModel
+            property int numberOfColumn
+            property int numberOfLine: targetModelData.length / numberOfColumn
             property alias targetModel: targetModel
             property variant targetModelData
         }
@@ -94,10 +96,11 @@ ActivityBase {
             Grid {
                 id: drawingArea
                 width: parent.width * 0.4
-                columns: 4
+                height: parent.height * 0.8
+                columns: items.numberOfColumn
                 Repeater {
                     id: userModel
-                    model: 20
+                    model: items.targetModelData.length
 
                     function reset() {
                         for(var i=0; i < items.userModel.count; ++i)
@@ -106,7 +109,8 @@ ActivityBase {
 
                     Rectangle {
                         id: userRect
-                        width: Math.min(background.width * 0.10, background.height * 0.15)
+                        width: Math.min(drawingArea.width / items.numberOfColumn,
+                                        drawingArea.height / items.numberOfLine)
                         height: width
                         border.width: 1
                         border.color: 'black'
@@ -133,8 +137,10 @@ ActivityBase {
 
             // The painting to reproduce
             Grid {
-                width: parent.width * 0.4
-                columns: 4
+                id: imageArea
+                width: drawingArea.width
+                height: drawingArea.height
+                columns: items.numberOfColumn
                 LayoutMirroring.enabled: activity.symmetry
                 LayoutMirroring.childrenInherit: true
                 Repeater {
@@ -142,7 +148,8 @@ ActivityBase {
                     model: items.targetModelData
                     Rectangle {
                         color: Activity.colors[modelData]
-                        width: Math.min(background.width * 0.10, background.height * 0.15)
+                        width: Math.min(imageArea.width / items.numberOfColumn,
+                                        imageArea.height / items.numberOfLine)
                         height: width
                         border.width: 1
                         border.color: 'black'
