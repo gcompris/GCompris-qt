@@ -49,6 +49,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property string colorSelector
         }
 
         onStart: { Activity.start(items) }
@@ -71,7 +72,7 @@ ActivityBase {
 
                         MouseArea {
                             anchors.fill: parent
-                            onClicked: console.log("clicked on", modelData)
+                            onClicked: items.colorSelector = modelData
                         }
                     }
                 }
@@ -87,6 +88,11 @@ ActivityBase {
                         height: width
                         border.width: 1
                         border.color: 'black'
+
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: parent.color = items.colorSelector
+                        }
                     }
                 }
             }
@@ -94,9 +100,15 @@ ActivityBase {
                 width: parent.width * 0.4
                 columns: 4
                 Repeater {
-                    model: 20
+                    model: [
+                        'white', 'white', 'white', 'white',
+                        'red',   'red',   'red',   'red',
+                        'white', 'blue',  'blue',  'white',
+                        'white', 'white', 'white', 'white',
+                        'white', 'white', 'white', 'white',
+                    ]
                     Rectangle {
-                        color: 'white'
+                        color: modelData
                         width: background.width * 0.10
                         height: width
                         border.width: 1
@@ -128,5 +140,4 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
-
 }
