@@ -1,4 +1,4 @@
-/* GCompris - align4-2players.js
+/* GCompris - align4.js
  *
  * Copyright (C) 2014 Bharath M S
  *

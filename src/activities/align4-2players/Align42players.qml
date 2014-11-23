@@ -22,7 +22,7 @@
 import QtQuick 2.1
 
 import "../../core"
-import "align4-2players.js" as Activity
+import "align4.js" as Activity
 
 import GCompris 1.0
 

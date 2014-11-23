@@ -20,7 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.0
-import "align4-2players.js" as Activity
+import "align4.js" as Activity
 
 import GCompris 1.0
 
