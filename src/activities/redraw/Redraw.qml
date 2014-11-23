@@ -49,7 +49,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property string colorSelector
+            property string colorSelector: 'white'
             property alias userModel: userModel
             property alias targetModel: targetModel
             property variant targetModelData
@@ -68,11 +68,16 @@ ActivityBase {
                     model: ["white", "red", "orange", "green", "blue"]
                     Rectangle {
                         color: modelData
-                        width: background.width * 0.10
+                        width: Math.min(background.width * 0.10, background.height * 0.15)
                         height: width
                         border.width: 1
+                        scale: staticColor == items.colorSelector ? 1.1 : 1
+                        z: staticColor == items.colorSelector ? 10 : 1
                         border.color: 'black'
 
+                        property string staticColor: modelData
+
+                        Behavior on scale { NumberAnimation { duration: 100 } }
                         MouseArea {
                             anchors.fill: parent
                             onClicked: items.colorSelector = modelData
@@ -89,23 +94,28 @@ ActivityBase {
 
                     function reset() {
                         for(var i=0; i < items.userModel.count; ++i)
-                            items.userModel.itemAt(i).color = "white"
+                            userModel.itemAt(i).color = "white"
                     }
 
                     Rectangle {
+                        id: userRect
                         color: 'white'
-                        width: background.width * 0.10
+                        width: Math.min(background.width * 0.10, background.height * 0.15)
                         height: width
                         border.width: 1
                         border.color: 'black'
 
+                        Behavior on color {
+                            ColorAnimation {
+                                duration: 200
+                                onRunningChanged: {
+                                    if(!running && Activity.checkModel()) bonus.good("flower")
+                                }
+                            }
+                        }
                         MouseArea {
                             anchors.fill: parent
-                            onClicked: {
-                                parent.color = items.colorSelector
-                                if(Activity.checkModel())
-                                    bonus.good("flower")
-                            }
+                            onClicked: parent.color = items.colorSelector
                         }
                     }
                 }
@@ -118,7 +128,7 @@ ActivityBase {
                     model: items.targetModelData
                     Rectangle {
                         color: modelData
-                        width: background.width * 0.10
+                        width: Math.min(background.width * 0.10, background.height * 0.15)
                         height: width
                         border.width: 1
                         border.color: 'black'
