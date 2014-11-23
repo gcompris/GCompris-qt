@@ -56,6 +56,9 @@ ActivityBase {
 
         Row {
             anchors.fill: parent
+            anchors.margins: 10
+            spacing: 20
+
             Column {
                 Repeater {
                     model: ["white", "red", "orange", "green", "blue"]
@@ -63,6 +66,8 @@ ActivityBase {
                         color: modelData
                         width: background.width * 0.10
                         height: width
+                        border.width: 1
+                        border.color: 'black'
 
                         MouseArea {
                             anchors.fill: parent
@@ -71,15 +76,33 @@ ActivityBase {
                     }
                 }
             }
-            Text {
+            Grid {
                 width: parent.width * 0.4
-                text: "B"
-                font.pointSize: 24
+                columns: 4
+                Repeater {
+                    model: 20
+                    Rectangle {
+                        color: 'white'
+                        width: background.width * 0.10
+                        height: width
+                        border.width: 1
+                        border.color: 'black'
+                    }
+                }
             }
-            Text {
+            Grid {
                 width: parent.width * 0.4
-                text: "C"
-                font.pointSize: 24
+                columns: 4
+                Repeater {
+                    model: 20
+                    Rectangle {
+                        color: 'white'
+                        width: background.width * 0.10
+                        height: width
+                        border.width: 1
+                        border.color: 'black'
+                    }
+                }
             }
         }
 
