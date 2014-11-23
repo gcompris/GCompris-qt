@@ -56,10 +56,20 @@ ActivityBase {
 
         Row {
             anchors.fill: parent
-            Text {
-                width: parent.width * 0.2
-                text: "A"
-                font.pointSize: 24
+            Column {
+                Repeater {
+                    model: ["white", "red", "orange", "green", "blue"]
+                    Rectangle {
+                        color: modelData
+                        width: background.width * 0.10
+                        height: width
+
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: console.log("clicked on", modelData)
+                        }
+                    }
+                }
             }
             Text {
                 width: parent.width * 0.4
