@@ -30,10 +30,13 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
         anchors.fill: parent
-        color: "#ABCDEF"
+        source: Activity.url + "background.svg"
+        fillMode: Image.PreserveAspectCrop
+        sourceSize.width: parent.width
+
         signal start
         signal stop
 
@@ -65,7 +68,7 @@ ActivityBase {
 
             Column {
                 Repeater {
-                    model: ["white", "red", "orange", "green", "blue"]
+                    model: [Activity.white, "red", "orange", "green", "blue"]
                     Rectangle {
                         color: modelData
                         width: Math.min(background.width * 0.10, background.height * 0.15)
@@ -94,12 +97,11 @@ ActivityBase {
 
                     function reset() {
                         for(var i=0; i < items.userModel.count; ++i)
-                            userModel.itemAt(i).color = "white"
+                            userModel.itemAt(i).color = Activity.white
                     }
 
                     Rectangle {
                         id: userRect
-                        color: 'white'
                         width: Math.min(background.width * 0.10, background.height * 0.15)
                         height: width
                         border.width: 1
