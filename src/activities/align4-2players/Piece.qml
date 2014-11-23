@@ -54,11 +54,19 @@ Image {
             }
         },
         State {
-            name: "crossed"
+            name: "crossed1"
             PropertyChanges {
                 target: piece
                 opacity: 1.0
-                source: Activity.url + "win.svg"
+                source: Activity.url + "win1.svg"
+            }
+        },
+        State {
+            name: "crossed2"
+            PropertyChanges {
+                target: piece
+                opacity: 1.0
+                source: Activity.url + "win2.svg"
             }
         }
     ]

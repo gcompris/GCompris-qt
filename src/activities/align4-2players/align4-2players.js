@@ -254,7 +254,7 @@ function doMove() {
                      items.repeater.itemAt(0).y)
 
     handleDrop(nextColumn)
-
+}
 
 function checkLine() {
     var score = 0
@@ -344,16 +344,17 @@ function evaluateBoard(player1, player2, board) {
 function checkGameWon(currentPieceRow, currentPieceColumn) {
 
     currentPlayer = getPieceState(currentPieceColumn, currentPieceRow)
+    var crossed = "crossed" + currentPlayer
 
     // Horizontal
     var sameColor = 0
     for(var col = 0; col < items.columns; col++) {
         if(getPieceState(col, currentPieceRow) === currentPlayer) {
             if(++sameColor == 4) {
-                setPieceState(col, currentPieceRow, "crossed")
-                setPieceState(col - 1, currentPieceRow, "crossed")
-                setPieceState(col - 2, currentPieceRow, "crossed")
-                setPieceState(col - 3, currentPieceRow, "crossed")
+                setPieceState(col, currentPieceRow, crossed)
+                setPieceState(col - 1, currentPieceRow, crossed)
+                setPieceState(col - 2, currentPieceRow, crossed)
+                setPieceState(col - 3, currentPieceRow, crossed)
                 return true
             }
         } else {
@@ -366,10 +367,10 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
     for(var row = 0; row < items.rows; row++) {
         if(getPieceState(currentPieceColumn, row) === currentPlayer) {
             if(++sameColor == 4) {
-                setPieceState(currentPieceColumn, row, "crossed")
-                setPieceState(currentPieceColumn, row - 1, "crossed")
-                setPieceState(currentPieceColumn, row - 2, "crossed")
-                setPieceState(currentPieceColumn, row - 3, "crossed")
+                setPieceState(currentPieceColumn, row, crossed)
+                setPieceState(currentPieceColumn, row - 1, crossed)
+                setPieceState(currentPieceColumn, row - 2, crossed)
+                setPieceState(currentPieceColumn, row - 3, crossed)
                 return true
             }
         } else {
@@ -391,10 +392,10 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
 
         if(getPieceState(col, row-1) === currentPlayer) {
             if(++sameColor == 4) {
-                setPieceState(col, row - 1, "crossed")
-                setPieceState(col - 1, row - 2, "crossed")
-                setPieceState(col - 2, row - 3, "crossed")
-                setPieceState(col - 3, row - 4, "crossed")
+                setPieceState(col, row - 1, crossed)
+                setPieceState(col - 1, row - 2, crossed)
+                setPieceState(col - 2, row - 3, crossed)
+                setPieceState(col - 3, row - 4, crossed)
                 return true
             }
         } else {
@@ -416,10 +417,10 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
 
         if(getPieceState(col, row-1) === currentPlayer) {
             if(++sameColor == 4) {
-                setPieceState(col, row - 1, "crossed")
-                setPieceState(col + 1, row - 2, "crossed")
-                setPieceState(col + 2, row - 3, "crossed")
-                setPieceState(col + 3, row - 4, "crossed")
+                setPieceState(col, row - 1, crossed)
+                setPieceState(col + 1, row - 2, crossed)
+                setPieceState(col + 2, row - 3, crossed)
+                setPieceState(col + 3, row - 4, crossed)
                 return true
             }
         } else {
