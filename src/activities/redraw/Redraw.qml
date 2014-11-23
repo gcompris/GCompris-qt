@@ -66,6 +66,11 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        Keys.onPressed: {
+            if(event.key >= Qt.Key_0 && event.key <= Qt.Key_0 + items.numberOfColor)
+                items.colorSelector = event.key - Qt.Key_0
+        }
+
         Row {
             anchors.fill: parent
             anchors.margins: 10
@@ -75,18 +80,33 @@ ActivityBase {
             Column {
                 Repeater {
                     model: items.numberOfColor
-                    Image {
-                        source: Activity.url + Activity.colorShortcut[modelData] + ".svg"
-                        sourceSize.width: Math.min(background.width * 0.10,
-                                                   background.height * 0.8 / items.numberOfColor)
+                    Item {
+                        width: Math.min(background.width * 0.10,
+                                        background.height * 0.8 / items.numberOfColor)
                         height: width
-                        scale: modelData == items.colorSelector ? 1.3 : 1
-                        z: modelData == items.colorSelector ? 10 : 1
+                        Image {
+                            id: img
+                            source: Activity.url + Activity.colorShortcut[modelData] + ".svg"
+                            sourceSize.width: parent.width
+                            height: width
+                            scale: modelData == items.colorSelector ? 1.3 : 1
+                            z: modelData == items.colorSelector ? 10 : 1
 
-                        Behavior on scale { NumberAnimation { duration: 100 } }
-                        MouseArea {
+                            Behavior on scale { NumberAnimation { duration: 100 } }
+                            MouseArea {
+                                anchors.fill: parent
+                                onClicked: items.colorSelector = modelData
+                            }
+                        }
+                        GCText {
                             anchors.fill: parent
-                            onClicked: items.colorSelector = modelData
+                            text: modelData
+                            font.pointSize: 14
+                            z: modelData == items.colorSelector ? 12 : 2
+                            font.bold: true
+                            style: Text.Outline
+                            styleColor: "black"
+                            color: "white"
                         }
                     }
                 }
@@ -104,32 +124,51 @@ ActivityBase {
 
                     function reset() {
                         for(var i=0; i < items.userModel.count; ++i)
-                            userModel.itemAt(i).color = Activity.colors[0]
+                            userModel.itemAt(i).paint(0)
                     }
 
-                    Rectangle {
-                        id: userRect
+                    Item {
+                        id: userItem
                         width: Math.min(drawingArea.width / items.numberOfColumn,
                                         drawingArea.height / items.numberOfLine)
                         height: width
-                        border.width: 1
-                        border.color: 'black'
+                        property color color: Activity.colors[colorIndex]
+                        property int colorIndex
 
                         function paint() {
-                            color = Activity.colors[items.colorSelector]
+                            colorIndex = items.colorSelector
                         }
 
-                        Behavior on color {
-                            ColorAnimation {
-                                duration: 200
-                                onRunningChanged: {
-                                    if(!running && Activity.checkModel()) bonus.good("flower")
+                        Rectangle {
+                            id: userRect
+                            anchors.fill: parent
+                            border.width: 1
+                            border.color: 'black'
+                            color: parent.color
+
+                            Behavior on color {
+                                ColorAnimation {
+                                    duration: 200
+                                    onRunningChanged: {
+                                        if(!running && Activity.checkModel()) bonus.good("flower")
+                                    }
                                 }
                             }
+                            MouseArea {
+                                anchors.fill: parent
+                                onClicked: userItem.paint()
+                            }
                         }
-                        MouseArea {
+                        GCText {
                             anchors.fill: parent
-                            onClicked: parent.paint()
+                            anchors.margins: 4
+                            text: parent.colorIndex == 0 ? "" : parent.colorIndex
+                            font.pointSize: 14
+                            z: modelData == items.colorSelector ? 12 : 2
+                            font.bold: true
+                            style: Text.Outline
+                            styleColor: "black"
+                            color: "white"
                         }
                     }
                 }
@@ -146,13 +185,30 @@ ActivityBase {
                 Repeater {
                     id: targetModel
                     model: items.targetModelData
-                    Rectangle {
-                        color: Activity.colors[modelData]
+                    Item {
                         width: Math.min(imageArea.width / items.numberOfColumn,
                                         imageArea.height / items.numberOfLine)
                         height: width
-                        border.width: 1
-                        border.color: 'black'
+                        property alias color: targetRect.color
+
+                        Rectangle {
+                            id: targetRect
+                            anchors.fill: parent
+                            color: Activity.colors[modelData]
+                            border.width: 1
+                            border.color: 'black'
+                        }
+                        GCText {
+                            anchors.fill: parent
+                            anchors.margins: 4
+                            text: modelData == 0 ? "" : modelData
+                            font.pointSize: 14
+                            z: modelData == items.colorSelector ? 12 : 2
+                            font.bold: true
+                            style: Text.Outline
+                            styleColor: "black"
+                            color: "white"
+                        }
                     }
                 }
             }
