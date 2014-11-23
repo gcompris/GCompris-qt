@@ -55,6 +55,13 @@ var dataset = [
                 'white', 'blue',  'white', 'white',
                 'white', 'white', 'blue',  'white',
                 'white', 'white', 'white', 'white',
+            ],
+            [
+                'orange', 'white', 'white', 'green',
+                'red',    'red',   'red',   'red',
+                'white',  'blue',  'blue',  'white',
+                'white',  'blue',  'blue',  'white',
+                'green',  'white', 'white', 'orange',
             ]
         ]
 

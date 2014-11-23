@@ -30,6 +30,8 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    property bool symmetry: true
+
     pageComponent: Image {
         id: background
         anchors.fill: parent
@@ -123,6 +125,8 @@ ActivityBase {
             Grid {
                 width: parent.width * 0.4
                 columns: 4
+                LayoutMirroring.enabled: activity.simmetry
+                LayoutMirroring.childrenInherit: true
                 Repeater {
                     id: targetModel
                     model: items.targetModelData
