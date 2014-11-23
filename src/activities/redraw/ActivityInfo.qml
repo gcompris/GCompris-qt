@@ -12,5 +12,5 @@ ActivityInfo {
   prerequisite: ""
   manual: qsTr("First, select the proper color from the toolbar. Then drag the mouse to paint.")
   credit: ""
-  section: "math geometry"
+  section: "math geometry puzzle"
 }
