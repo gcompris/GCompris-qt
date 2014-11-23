@@ -50,6 +50,15 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property string colorSelector
+            property alias userModel: userModel
+            property alias targetModel: targetModel
+            property variant targetModelData: [
+                        'white', 'white', 'white', 'white',
+                        'red',   'red',   'red',   'red',
+                        'white', 'blue',  'blue',  'white',
+                        'white', 'white', 'white', 'white',
+                        'white', 'white', 'white', 'white',
+                    ]
         }
 
         onStart: { Activity.start(items) }
@@ -81,6 +90,7 @@ ActivityBase {
                 width: parent.width * 0.4
                 columns: 4
                 Repeater {
+                    id: userModel
                     model: 20
                     Rectangle {
                         color: 'white'
@@ -91,7 +101,11 @@ ActivityBase {
 
                         MouseArea {
                             anchors.fill: parent
-                            onClicked: parent.color = items.colorSelector
+                            onClicked: {
+                                parent.color = items.colorSelector
+                                if(Activity.checkModel())
+                                    bonus.good("flower")
+                            }
                         }
                     }
                 }
@@ -100,13 +114,8 @@ ActivityBase {
                 width: parent.width * 0.4
                 columns: 4
                 Repeater {
-                    model: [
-                        'white', 'white', 'white', 'white',
-                        'red',   'red',   'red',   'red',
-                        'white', 'blue',  'blue',  'white',
-                        'white', 'white', 'white', 'white',
-                        'white', 'white', 'white', 'white',
-                    ]
+                    id: targetModel
+                    model: items.targetModelData
                     Rectangle {
                         color: modelData
                         width: background.width * 0.10

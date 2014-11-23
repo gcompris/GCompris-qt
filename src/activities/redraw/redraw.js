@@ -52,3 +52,11 @@ function previousLevel() {
     }
     initLevel();
 }
+
+function checkModel() {
+    for(var i=0; i < items.userModel.count; ++i) {
+        if(items.userModel.itemAt(i).color !== items.targetModel.itemAt(i).color)
+            return false
+    }
+    return true
+}
