@@ -138,7 +138,6 @@ function getNextFreeStop(col) {
 }
 
 function handleDrop(column) {
-
     var singleDropSize = items.cellSize
     var nextFreeStop = getNextFreeStop(column)
 
@@ -254,9 +253,8 @@ function doMove() {
     setPieceLocation(items.repeater.itemAt(nextColumn).x,
                      items.repeater.itemAt(0).y)
 
-    handleDrop(items.repeater.itemAt(nextColumn).x,
-               items.repeater.itemAt(0).y)
-}
+    handleDrop(nextColumn)
+
 
 function checkLine() {
     var score = 0

@@ -179,7 +179,7 @@ ActivityBase {
         Image {
             id: player1
             source: Activity.url + "score_1.svg"
-            sourceSize.height: bar.height * 1.2
+            sourceSize.height: bar.height * 1.1
             anchors {
                 bottom: bar.bottom
                 bottomMargin: 10
@@ -199,7 +199,7 @@ ActivityBase {
         Image {
             id: player2
             source: Activity.url + "score_2.svg"
-            sourceSize.height: bar.height * 1.2
+            sourceSize.height: bar.height * 1.1
             anchors {
                 bottom: bar.bottom
                 bottomMargin: 10
