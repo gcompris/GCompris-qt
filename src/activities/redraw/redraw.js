@@ -23,29 +23,38 @@
 .import QtQuick 2.0 as Quick
 
 var url = "qrc:/gcompris/src/activities/redraw/resource/"
-var white = '#33FFFFFF'
+var colors = {
+    "white": '#33FFFFFF',
+    "red": '#FFCC0000',
+    "orange": '#FFCE5C00',
+    "green": '#FF73D216',
+    "blue": '#FF3465A4',
+    "yellow": '#FFEDD400',
+    "black": '#FF2E3436'
+}
+
 
 var dataset = [
             [
-                white,   white,   'blue',  white,
+                'white', 'white', 'blue',  'white',
                 'red',   'red',   'red',   'red',
-                white,   'blue',  white,   white,
-                white,   white,   white,   white,
-                white,   white,   white,   white,
+                'white', 'blue',  'white', 'white',
+                'white', 'white', 'white', 'white',
+                'white', 'white', 'white', 'white',
             ],
             [
-                white,   white,   white,   white,
+                'white', 'white', 'white', 'white',
                 'red',   'red',   'red',   'red',
-                white,   'blue',  'blue',  white,
-                white,   'red',   'red',   'red',
-                white,   white,   white,   white,
+                'white', 'blue',  'blue',  'white',
+                'white', 'red',   'red',   'red',
+                'white', 'white', 'white', 'white',
             ],
             [
-                white,   white,   white,   white,
+                'white', 'white', 'white', 'white',
                 'red',   'red',   'red',   'red',
-                white,   'blue',  white,   white,
-                white,   white,   'blue',  white,
-                white,   white,   white,   white,
+                'white', 'blue',  'white', 'white',
+                'white', 'white', 'blue',  'white',
+                'white', 'white', 'white', 'white',
             ]
         ]
 
