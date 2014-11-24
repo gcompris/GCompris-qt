@@ -11,7 +11,7 @@ ActivityInfo {
 //  intro: "Match the numeric with the word."
   goal: qsTr("Reading numbers, memory.")
   prerequisite: qsTr("Reading")
-  manual: qsTr("You can see some cards, but you can't see what's on the other side of them. Each card is hiding a number of number, or the word of the number.")
+  manual: qsTr("You can see some cards, but you can't see what's on the other side of them. Each card is hiding the numeral form of a number, or the word to write it.")
   credit: ""
   section: "reading"
 }
