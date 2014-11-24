@@ -30,7 +30,7 @@ Rectangle {
         GradientStop { position: 1.0; color: "#AACECECE" }
     }
     width: subLevelText.width * 2
-    height: subLevelText.height * 2
+    height: subLevelText.height * 1.4
     radius: 10
     anchors.bottom: parent.bottom
     anchors.right: parent.right
