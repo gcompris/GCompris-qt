@@ -77,6 +77,16 @@ ActivityBase {
         onStart: Activity.start(items, dataset)
         onStop: Activity.stop();
 
+        MultiPointTouchArea {
+            anchors.fill: parent
+            touchPoints: [ TouchPoint { id: point1 } ]
+
+            onReleased: {
+                plane.x = point1.x - plane.width / 2
+                plane.y = point1.y - plane.height / 2
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
