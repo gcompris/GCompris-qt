@@ -70,6 +70,13 @@ ActivityBase {
             if(event.key >= Qt.Key_0 && event.key <= Qt.Key_0 + items.numberOfColor)
                 items.colorSelector = event.key - Qt.Key_0
         }
+        Keys.onEnterPressed: userModel.paintCurrentItem();
+        Keys.onReturnPressed: userModel.paintCurrentItem();
+        Keys.onSpacePressed: userModel.paintCurrentItem();
+        Keys.onRightPressed: userModel.moveCurrentIndexRight();
+        Keys.onLeftPressed: userModel.moveCurrentIndexLeft();
+        Keys.onDownPressed: userModel.moveCurrentIndexDown();
+        Keys.onUpPressed: userModel.moveCurrentIndexUp();
 
         Row {
             anchors.fill: parent
@@ -121,10 +128,44 @@ ActivityBase {
                 Repeater {
                     id: userModel
                     model: items.targetModelData.length
+                    property int currentItem: 0
+                    property bool keyNavigation: false
 
                     function reset() {
                         for(var i=0; i < items.userModel.count; ++i)
                             userModel.itemAt(i).paint(0)
+                        currentItem = 0
+                        keyNavigation = false
+                    }
+
+                    function paintCurrentItem() {
+                            userModel.itemAt(currentItem).paint(items.colorSelector)
+                    }
+
+                    function moveCurrentIndexRight() {
+                        keyNavigation = true
+                        if(currentItem++ >= items.targetModelData.length - 1)
+                            currentItem = 0
+                    }
+
+                    function moveCurrentIndexLeft() {
+                        keyNavigation = true
+                        if(currentItem-- <= 0)
+                            currentItem = items.targetModelData.length - 1
+                    }
+
+                    function moveCurrentIndexUp() {
+                        keyNavigation = true
+                        currentItem -= items.numberOfColumn
+                        if(currentItem < 0)
+                            currentItem += items.targetModelData.length
+                    }
+
+                    function moveCurrentIndexDown() {
+                        keyNavigation = true
+                        currentItem += items.numberOfColumn
+                        if(currentItem > items.targetModelData.length - 1)
+                            currentItem -= items.targetModelData.length
                     }
 
                     Item {
@@ -142,7 +183,7 @@ ActivityBase {
                         Rectangle {
                             id: userRect
                             anchors.fill: parent
-                            border.width: 1
+                            border.width: userModel.keyNavigation && userModel.currentItem == modelData ? 3 : 1
                             border.color: 'black'
                             color: parent.color
 
