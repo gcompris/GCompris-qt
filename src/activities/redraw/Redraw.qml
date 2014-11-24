@@ -67,7 +67,7 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         Keys.onPressed: {
-            if(event.key >= Qt.Key_0 && event.key <= Qt.Key_0 + items.numberOfColor)
+            if(event.key >= Qt.Key_0 && event.key < Qt.Key_0 + items.numberOfColor)
                 items.colorSelector = event.key - Qt.Key_0
         }
         Keys.onEnterPressed: userModel.paintCurrentItem();
