@@ -7,7 +7,7 @@ ActivityInfo {
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Mirror the given item")
-  description: qsTr("Copy the mirror image from the gid on the right into the grid on the left.")
+  description: qsTr("Copy the mirror image from the grid on the right into the grid on the left.")
   goal: ""
   prerequisite: ""
   manual: qsTr("First, select the proper color from the toolbar. Then drag the mouse to paint.")
