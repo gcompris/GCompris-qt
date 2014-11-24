@@ -41,6 +41,8 @@ Rectangle {
 
     z: 1000
 
+    property alias pointSize: subLevelText.font.pointSize
+
     /* Either fill in numberOfSubLevels and currentSubLevel
      * or directly the message you want to write */
     property int numberOfSubLevels

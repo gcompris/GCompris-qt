@@ -99,6 +99,7 @@ ActivityBase {
         Score {
             id: score
             visible: false
+            pointSize: 24
         }
 
         property int movePlaneTimerCounter: 0
