@@ -75,7 +75,6 @@ Rectangle {
         id: mouseArea
         anchors.fill: parent
         onClicked: Activity.registerAnswerItem(answerBackground)
-
     }
 
     Image {

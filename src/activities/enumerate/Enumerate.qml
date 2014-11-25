@@ -48,6 +48,17 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        Keys.onDownPressed: {
+            if(++answerColumn.currentIndex >= answerColumn.count)
+                answerColumn.currentIndex = 0
+            Activity.registerAnswerItem(answerColumn.itemAt(answerColumn.currentIndex))
+        }
+        Keys.onUpPressed: {
+            if(--answerColumn.currentIndex < 0)
+                answerColumn.currentIndex = answerColumn.count - 1
+            Activity.registerAnswerItem(answerColumn.itemAt(answerColumn.currentIndex))
+        }
+
         QtObject {
             id: items
             property alias background: background
@@ -76,6 +87,9 @@ ActivityBase {
             Repeater
             {
                 id: answerColumn
+                property int currentIndex
+
+                onModelChanged: currentIndex = count - 1
                 AnswerArea {
                     imgPath: modelData
                     focus: true
