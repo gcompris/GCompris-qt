@@ -25,6 +25,7 @@ import QtGraphicalEffects 1.0
 import GCompris 1.0
 
 import "colormix.js" as Activity
+import "."
 
 Image {
     id: chooser
@@ -106,7 +107,6 @@ Image {
             right: parent.right
             rightMargin: parent.width * 0.2
         }
-        onClicked: currentStep = Math.min(currentStep + 1, maxSteps)
     }
 
     ColorButton {
@@ -114,8 +114,31 @@ Image {
         anchors {
             verticalCenter: parent.verticalCenter
             left: parent.left
-            leftMargin: parent.width * 0.4
+            leftMargin: parent.width * 0.3
         }
-        onClicked: currentStep = Math.max(currentStep - 1, 0)
     }
+
+    MultiPointTouchArea {
+        anchors.fill: parent
+        touchPoints: [ TouchPoint { id: point1 } ]
+        z: 4
+        property real startX
+        property int initialStep: 0
+
+        onPressed: {
+            startX = point1.x
+            if(startX > parent.width / 2)
+                currentStep = Math.max(currentStep + 1, 0)
+            else
+                currentStep = Math.max(currentStep - 1, 0)
+            initialStep = currentStep
+        }
+
+        onTouchUpdated: {
+            currentStep = initialStep + (point1.x - startX) / (20 * ApplicationInfo.ratio)
+            currentStep = Math.min(currentStep, maxSteps)
+            currentStep = Math.max(currentStep, 0)
+        }
+    }
+
 }

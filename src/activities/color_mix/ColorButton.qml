@@ -48,7 +48,6 @@ Rectangle {
         height: 3 * parent.height
         width: 3 * parent.width
         hoverEnabled: true
-        onClicked: button.clicked()
     }
 
     states: [
