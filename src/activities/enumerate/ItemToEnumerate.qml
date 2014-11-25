@@ -24,7 +24,7 @@ import GCompris 1.0
 import "enumerate.js" as Activity
 
 Image {
-    height: Math.min(main.height / 10, main.width / 10)
+    sourceSize.width: 90 * ApplicationInfo.ratio
     fillMode : Image.PreserveAspectFit
     z: 0
     x: Activity.getRandomInt(10, main.width - 220 * ApplicationInfo.ratio)

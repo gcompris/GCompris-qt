@@ -28,22 +28,22 @@ var items
 var currentLevel = 0
 var numberOfLevel = 9
 var itemIcons = [
-            url + "apple.svgz",
-            url + "balloon.svgz",
-            url + "bread_slice.svgz",
-            url + "butter.svgz",
-            url + "chocolate_cake.svgz",
-            url + "chocolate.svgz",
-            url + "cookie.svgz",
-            url + "french_croissant.svgz",
-            url + "grapefruit.svgz",
-            url + "marmelade.svgz",
-            url + "milk_cup.svgz",
-            url + "orange.svgz",
-            url + "round_cookie.svgz",
-            url + "strawberry.svgz",
-            url + "sugar_box.svgz",
-            url + "yahourt.svgz"
+            url + "apple.svg",
+            url + "balloon.svg",
+            url + "bread_slice.svg",
+            url + "butter.svg",
+            url + "chocolate_cake.svg",
+            url + "chocolate.svg",
+            url + "cookie.svg",
+            url + "french_croissant.svg",
+            url + "grapefruit.svg",
+            url + "marmelade.svg",
+            url + "milk_cup.svg",
+            url + "orange.svg",
+            url + "round_cookie.svg",
+            url + "strawberry.svg",
+            url + "sugar_box.svg",
+            url + "yahourt.svg"
         ]
 var numberOfTypes = itemIcons.length
 var userAnswers = new Array()
@@ -83,7 +83,7 @@ function initLevel() {
         break;
     case 2:
         numberOfItemType = 3;
-        numberOfItemMax  = 5;
+        numberOfItemMax  = 4;
         break;
     case 3:
         numberOfItemType = 3;
@@ -98,20 +98,20 @@ function initLevel() {
         numberOfItemMax  = 6;
         break;
     case 6:
-        numberOfItemType = 4;
-        numberOfItemMax  = 7;
+        numberOfItemType = 5;
+        numberOfItemMax  = 5;
         break;
     case 7:
         numberOfItemType = 4;
-        numberOfItemMax  = 10;
+        numberOfItemMax  = 6;
         break;
     case 8:
-        numberOfItemType = 5;
+        numberOfItemType = 3;
         numberOfItemMax  = 8;
         break;
     default:
-        numberOfItemType = 5;
-        numberOfItemMax = 8;
+        numberOfItemType = 2;
+        numberOfItemMax  = 9;
     }
 
     itemIcons = Core.shuffle(itemIcons)
@@ -152,6 +152,7 @@ function cleanUp() {
 function setUserAnswer(imgPath, userValue) {
     userAnswers[imgPath] = userValue
     checkAnswers()
+    return userAnswers[imgPath] === answerToFind[imgPath]
 }
 
 function checkAnswers() {

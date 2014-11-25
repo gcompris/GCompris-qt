@@ -38,7 +38,7 @@ ActivityBase {
         signal start
         signal stop
         fillMode: Image.PreserveAspectCrop
-        source: Activity.url + "background.svgz"
+        source: Activity.url + "background.svg"
         sourceSize.width: parent.width
 
         Component.onCompleted: {
