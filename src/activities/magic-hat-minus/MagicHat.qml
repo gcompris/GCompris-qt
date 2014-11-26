@@ -77,7 +77,8 @@ ActivityBase {
                 starsSize: background.starSize
             }
             GCText {
-                text: mode == "minus" ? "-" : "+"
+                //: The math operation
+                text: mode == "minus" ? qsTr("-") : qsTr("+")
                 anchors.right: mainlayout.right
                 anchors.rightMargin: 10
                 y: secondRow.y
@@ -109,6 +110,7 @@ ActivityBase {
                         barGroupIndex: 0
                         barIndex: index
                         width: rightLayout.width
+                        backgroundColor: "grey"
                         starsColor: starColors[index]
                         theHat: items.hat
                         starsSize: background.starSize
@@ -127,6 +129,7 @@ ActivityBase {
                         barGroupIndex: 1
                         barIndex: index
                         width: rightLayout.width
+                        backgroundColor: "grey"
                         starsColor: starColors[index]
                         theHat: items.hat
                         starsSize: background.starSize
@@ -157,6 +160,7 @@ ActivityBase {
                         barGroupIndex: 2
                         barIndex: index
                         width: rightLayout.width
+                        backgroundColor: "#CCDDFFAA"
                         starsColor: starColors[index]
                         authorizeClick: false
                         theHat: items.hat

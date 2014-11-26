@@ -31,6 +31,7 @@ Item {
     property string wantedColor
     property bool selected: false
     property string disabledColor: "grey"
+    property string backgroundColor
     property Item initialParent
     property Item theHat
     property Item newTarget
@@ -45,6 +46,7 @@ Item {
         id: mouseArea
         anchors.fill: parent
         enabled: isClickable
+        hoverEnabled: true
         onClicked: {
             mainItem.selected = !mainItem.selected
             Activity.verifyAnswer(barIndex, mainItem.selected)
@@ -52,27 +54,19 @@ Item {
     }
 
     Rectangle {
-            id: contour
-            width: parent.width
-            height: parent.height
-            color: "black"
-            opacity: displayBounds ? 1.0 : 0.0
-
-            Rectangle {
-                id: innerRect
-                width: contour.width - 2
-                height: contour.height - 2
-                anchors.centerIn: contour
-                color: mainItem.disabledColor
-                opacity: displayBounds? 1.0 : 0.0
-            }
+        id: contour
+        anchors.fill: parent
+        border.color: "black"
+        border.width: mouseArea.containsMouse ? 2 : 1
+        opacity: displayBounds ? 1.0 : 0.0
+        color: mainItem.backgroundColor
     }
 
     Image {
         id: starImg
         source: Activity.url + "star-clear.svgz"
-        width: innerRect.width - 4
-        height: innerRect.height - 4
+        width: contour.width - 4
+        height: contour.height - 4
         anchors.centerIn: contour
         fillMode: Image.PreserveAspectFit
         opacity: 1
