@@ -83,11 +83,7 @@ Creature {
         id: muncherArea
 
         anchors.fill: parent
-        onClicked: {
-            if (ApplicationInfo.isMobile) {
-                background.checkAnswer()
-            }
-        }
+        onClicked: background.checkAnswer()
     }
 
     MouseArea {
@@ -98,11 +94,7 @@ Creature {
 
         anchors.right: parent.left
         anchors.verticalCenter: parent.verticalCenter
-        onClicked: {
-            if (ApplicationInfo.isMobile) {
-                moveTo(1)
-            }
-        }
+        onClicked: moveTo(1)
     }
 
     MouseArea {
@@ -113,11 +105,7 @@ Creature {
 
         anchors.left: parent.right
         anchors.verticalCenter: parent.verticalCenter
-        onClicked: {
-            if (ApplicationInfo.isMobile) {
-                moveTo(0)
-            }
-        }
+        onClicked: moveTo(0)
     }
 
     MouseArea {
@@ -128,11 +116,7 @@ Creature {
 
         anchors.top: parent.bottom
         anchors.horizontalCenter: parent.horizontalCenter
-        onClicked: {
-            if (ApplicationInfo.isMobile) {
-                moveTo(2)
-            }
-        }
+        onClicked: moveTo(2)
     }
 
 
@@ -144,10 +128,6 @@ Creature {
 
         anchors.bottom: parent.top
         anchors.horizontalCenter: parent.horizontalCenter
-        onClicked: {
-            if (ApplicationInfo.isMobile) {
-                moveTo(3)
-            }
-        }
+        onClicked: moveTo(3)
     }
 }

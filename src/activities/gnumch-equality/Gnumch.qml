@@ -174,6 +174,46 @@ ActivityBase {
                 return true
             }
 
+            MultiPointTouchArea {
+                anchors.fill: parent
+                touchPoints: [ TouchPoint { id: point1 } ]
+                mouseEnabled: true
+                property real startX
+                property real startY
+                // Workaround to avoid having 2 times the onReleased event
+                property bool started
+
+                onPressed: {
+                    startX = point1.x
+                    startY = point1.y
+                    started = true
+                }
+
+                onReleased: {
+                    if(!started)
+                        return false
+                    var moveX = point1.x - startX
+                    var moveY = point1.y - startY
+                    // Find the direction with the most move
+                    if(Math.abs(moveX) > Math.abs(moveY)) {
+                        if(moveX > 10 * ApplicationInfo.ratio)
+                            muncher.moveTo(0)
+                        else if(moveX < -10 * ApplicationInfo.ratio)
+                            muncher.moveTo(1)
+                        else
+                            background.checkAnswer()
+                    } else {
+                        if(moveY > 10 * ApplicationInfo.ratio)
+                            muncher.moveTo(2)
+                        else if(moveY < -10 * ApplicationInfo.ratio)
+                            muncher.moveTo(3)
+                        else
+                            background.checkAnswer()
+                    }
+                    started = false
+                }
+            }
+
             Muncher {
                 id: muncher
                 audioEffects: activity.audioEffects
@@ -232,7 +272,8 @@ ActivityBase {
                 onTriggered: {
                     interval = Activity.genTime()
                     timerActivateWarn.start()
-                    var comp = Qt.createComponent("qrc:/gcompris/src/activities/gnumch-equality/" + Activity.genMonster(
+                    var comp = Qt.createComponent("qrc:/gcompris/src/activities/gnumch-equality/" +
+                                                  Activity.genMonster(
                                                       ) + ".qml")
                     if (comp.status === Component.Ready) {
                         var direction = Math.floor(Math.random() * 4)
