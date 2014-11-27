@@ -118,9 +118,10 @@ ActivityBase {
                             sourceSize.height: column.itemHeight
                             height: column.itemHeight
 
-                            MouseArea {
+                            MultiPointTouchArea {
                                 anchors.fill: parent
-                                onClicked: Activity.unpay(index)
+                                mouseEnabled: true
+                                onReleased: Activity.unpay(index)
                             }
                         }
                     }
@@ -222,7 +223,7 @@ ActivityBase {
                     horizontalAlignment: Text.AlignHCenter
                     width: column.width
                     wrapMode: Text.WordWrap
-                    font.pointSize: 16
+                    font.pointSize: 14
                 }
             }
 
@@ -267,9 +268,10 @@ ActivityBase {
                             sourceSize.height:  column.itemHeight
                             height: column.itemHeight
 
-                            MouseArea {
+                            MultiPointTouchArea {
                                 anchors.fill: parent
-                                onClicked: Activity.pay(index)
+                                mouseEnabled: true
+                                onReleased: Activity.pay(index)
                             }
                         }
                     }
