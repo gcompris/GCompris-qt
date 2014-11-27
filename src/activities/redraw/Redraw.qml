@@ -20,6 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import GCompris 1.0
 
 import "../../core"
 import "redraw.js" as Activity
@@ -38,6 +39,8 @@ ActivityBase {
         source: Activity.url + "background.svg"
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: parent.width
+
+        property bool landscape: width > height
 
         signal start
         signal stop
@@ -88,8 +91,7 @@ ActivityBase {
                 Repeater {
                     model: items.numberOfColor
                     Item {
-                        width: Math.min(background.width * 0.10,
-                                        background.height * 0.8 / items.numberOfColor)
+                        width: 70 * ApplicationInfo.ratio
                         height: width
                         Image {
                             id: img
@@ -119,156 +121,164 @@ ActivityBase {
                 }
             }
 
-            // The drawing area
             Grid {
-                id: drawingArea
-                width: parent.width * 0.4
-                height: parent.height * 0.8
-                columns: items.numberOfColumn
-                Repeater {
-                    id: userModel
-                    model: items.targetModelData.length
-                    property int currentItem: 0
-                    property bool keyNavigation: false
+                id: drawAndExampleArea
+                columns: background.landscape ? 2 : 1
+                width: parent.width
+                height: parent.height
+                spacing: 10
 
-                    function reset() {
-                        for(var i=0; i < items.userModel.count; ++i)
-                            userModel.itemAt(i).paint(0)
-                        currentItem = 0
-                        keyNavigation = false
-                    }
+                // The drawing area
+                Grid {
+                    id: drawingArea
+                    width: background.landscape ? parent.width * 0.4 : parent.width * 0.8
+                    height: background.landscape ? parent.height * 0.8 : parent.height * 0.4
+                    columns: items.numberOfColumn
+                    Repeater {
+                        id: userModel
+                        model: items.targetModelData.length
+                        property int currentItem: 0
+                        property bool keyNavigation: false
 
-                    function paintCurrentItem() {
-                            userModel.itemAt(currentItem).paint(items.colorSelector)
-                    }
-
-                    function moveCurrentIndexRight() {
-                        keyNavigation = true
-                        if(currentItem++ >= items.targetModelData.length - 1)
+                        function reset() {
+                            for(var i=0; i < items.userModel.count; ++i)
+                                userModel.itemAt(i).paint(0)
                             currentItem = 0
-                    }
-
-                    function moveCurrentIndexLeft() {
-                        keyNavigation = true
-                        if(currentItem-- <= 0)
-                            currentItem = items.targetModelData.length - 1
-                    }
-
-                    function moveCurrentIndexUp() {
-                        keyNavigation = true
-                        currentItem -= items.numberOfColumn
-                        if(currentItem < 0)
-                            currentItem += items.targetModelData.length
-                    }
-
-                    function moveCurrentIndexDown() {
-                        keyNavigation = true
-                        currentItem += items.numberOfColumn
-                        if(currentItem > items.targetModelData.length - 1)
-                            currentItem -= items.targetModelData.length
-                    }
-
-                    Item {
-                        id: userItem
-                        width: Math.min(drawingArea.width / items.numberOfColumn,
-                                        drawingArea.height / items.numberOfLine)
-                        height: width
-                        property color color: Activity.colors[colorIndex]
-                        property int colorIndex
-
-                        function paint() {
-                            colorIndex = items.colorSelector
+                            keyNavigation = false
                         }
 
-                        Rectangle {
-                            id: userRect
-                            anchors.fill: parent
-                            border.width: userModel.keyNavigation && userModel.currentItem == modelData ? 3 : 1
-                            border.color: 'black'
-                            color: parent.color
+                        function paintCurrentItem() {
+                            userModel.itemAt(currentItem).paint(items.colorSelector)
+                        }
 
-                            Behavior on color {
-                                ColorAnimation {
-                                    duration: 200
-                                    onRunningChanged: {
-                                        if(!running && Activity.checkModel()) bonus.good("flower")
+                        function moveCurrentIndexRight() {
+                            keyNavigation = true
+                            if(currentItem++ >= items.targetModelData.length - 1)
+                                currentItem = 0
+                        }
+
+                        function moveCurrentIndexLeft() {
+                            keyNavigation = true
+                            if(currentItem-- <= 0)
+                                currentItem = items.targetModelData.length - 1
+                        }
+
+                        function moveCurrentIndexUp() {
+                            keyNavigation = true
+                            currentItem -= items.numberOfColumn
+                            if(currentItem < 0)
+                                currentItem += items.targetModelData.length
+                        }
+
+                        function moveCurrentIndexDown() {
+                            keyNavigation = true
+                            currentItem += items.numberOfColumn
+                            if(currentItem > items.targetModelData.length - 1)
+                                currentItem -= items.targetModelData.length
+                        }
+
+                        Item {
+                            id: userItem
+                            width: Math.min(drawingArea.width / items.numberOfColumn,
+                                            drawingArea.height / items.numberOfLine)
+                            height: width
+                            property color color: Activity.colors[colorIndex]
+                            property int colorIndex
+
+                            function paint() {
+                                colorIndex = items.colorSelector
+                            }
+
+                            Rectangle {
+                                id: userRect
+                                anchors.fill: parent
+                                border.width: userModel.keyNavigation && userModel.currentItem == modelData ? 3 : 1
+                                border.color: 'black'
+                                color: parent.color
+
+                                Behavior on color {
+                                    ColorAnimation {
+                                        duration: 200
+                                        onRunningChanged: {
+                                            if(!running && Activity.checkModel()) bonus.good("flower")
+                                        }
                                     }
                                 }
+                                MouseArea {
+                                    anchors.fill: parent
+                                    onClicked: userItem.paint()
+                                }
                             }
-                            MouseArea {
+                            GCText {
                                 anchors.fill: parent
-                                onClicked: userItem.paint()
+                                anchors.margins: 4
+                                text: parent.colorIndex == 0 ? "" : parent.colorIndex
+                                font.pointSize: 14
+                                font.bold: true
+                                style: Text.Outline
+                                styleColor: "black"
+                                color: "white"
                             }
                         }
-                        GCText {
-                            anchors.fill: parent
-                            anchors.margins: 4
-                            text: parent.colorIndex == 0 ? "" : parent.colorIndex
-                            font.pointSize: 14
-                            font.bold: true
-                            style: Text.Outline
-                            styleColor: "black"
-                            color: "white"
+                    }
+                }
+
+                // The painting to reproduce
+                Grid {
+                    id: imageArea
+                    width: drawingArea.width
+                    height: drawingArea.height
+                    columns: items.numberOfColumn
+                    LayoutMirroring.enabled: activity.symmetry
+                    LayoutMirroring.childrenInherit: true
+                    Repeater {
+                        id: targetModel
+                        model: items.targetModelData
+                        Item {
+                            width: Math.min(imageArea.width / items.numberOfColumn,
+                                            imageArea.height / items.numberOfLine)
+                            height: width
+                            property alias color: targetRect.color
+
+                            Rectangle {
+                                id: targetRect
+                                anchors.fill: parent
+                                color: Activity.colors[modelData]
+                                border.width: 1
+                                border.color: 'black'
+                            }
+                            GCText {
+                                anchors.fill: parent
+                                anchors.margins: 4
+                                text: modelData == 0 ? "" : modelData
+                                font.pointSize: 14
+                                font.bold: true
+                                style: Text.Outline
+                                styleColor: "black"
+                                color: "white"
+                            }
                         }
                     }
                 }
-            }
-
-            // The painting to reproduce
-            Grid {
-                id: imageArea
-                width: drawingArea.width
-                height: drawingArea.height
-                columns: items.numberOfColumn
-                LayoutMirroring.enabled: activity.symmetry
-                LayoutMirroring.childrenInherit: true
-                Repeater {
-                    id: targetModel
-                    model: items.targetModelData
-                    Item {
-                        width: Math.min(imageArea.width / items.numberOfColumn,
-                                        imageArea.height / items.numberOfLine)
-                        height: width
-                        property alias color: targetRect.color
-
-                        Rectangle {
-                            id: targetRect
-                            anchors.fill: parent
-                            color: Activity.colors[modelData]
-                            border.width: 1
-                            border.color: 'black'
-                        }
-                        GCText {
-                            anchors.fill: parent
-                            anchors.margins: 4
-                            text: modelData == 0 ? "" : modelData
-                            font.pointSize: 14
-                            font.bold: true
-                            style: Text.Outline
-                            styleColor: "black"
-                            color: "white"
-                        }
-                    }
-                }
-            }
-        }
-
-        function checkTouchPoint(touchPoints) {
-            for(var i in touchPoints) {
-                var touch = touchPoints[i]
-                var block = drawingArea.childAt(touch.x, touch.y)
-                if(block)
-                    block.paint()
             }
         }
 
         MultiPointTouchArea {
-            x: drawingArea.x
-            y: drawingArea.y
-            width: drawingArea.width
-            height: drawingArea.height
+            x: drawAndExampleArea.x
+            y: drawAndExampleArea.y
+            width: drawAndExampleArea.width
+            height: drawAndExampleArea.height
             onPressed: checkTouchPoint(touchPoints)
             onTouchUpdated: checkTouchPoint(touchPoints)
+
+            function checkTouchPoint(touchPoints) {
+                for(var i in touchPoints) {
+                    var touch = touchPoints[i]
+                    var block = drawingArea.childAt(touch.x, touch.y)
+                    if(block)
+                        block.paint()
+                }
+            }
         }
 
         DialogHelp {
