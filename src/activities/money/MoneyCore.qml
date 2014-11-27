@@ -35,7 +35,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: Activity.url + "/background.svgz"
+        source: Activity.url + "/background.svg"
         sourceSize.width: parent.width
         signal start
         signal stop
@@ -167,7 +167,7 @@ ActivityBase {
                         id: tux
                         visible: activity.dataset === "BACK_WITHOUT_CENTS" ||
                                  activity.dataset === "BACK_WITH_CENTS"
-                        source: Activity.url + "/tux.svgz"
+                        source: Activity.url + "/tux.svg"
                         sourceSize.height:  column.itemStoreHeight
                         Repeater {
                             id: tuxMoney
