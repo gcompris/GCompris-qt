@@ -10,7 +10,8 @@ ActivityInfo {
   description: qsTr("Draw perfectly the given image on the empty grid.")
   goal: ""
   prerequisite: ""
-  manual: qsTr("First, select the proper color from the toolbar. Then drag the mouse to paint.")
+  manual: qsTr("First, select the proper color from the toolbar. Then drag to paint.") + " " +
+          qsTr("At the first level a hint is provided to show that no symmetry is requested.")
   credit: ""
   section: "math geometry puzzle"
 }

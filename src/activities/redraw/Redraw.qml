@@ -142,7 +142,7 @@ ActivityBase {
 
                         function reset() {
                             for(var i=0; i < items.userModel.count; ++i)
-                                userModel.itemAt(i).paint(0)
+                                userModel.itemAt(i).paint(items.colorSelector)
                             currentItem = 0
                             keyNavigation = false
                         }
@@ -185,8 +185,8 @@ ActivityBase {
                             property color color: Activity.colors[colorIndex]
                             property int colorIndex
 
-                            function paint() {
-                                colorIndex = items.colorSelector
+                            function paint(color) {
+                                colorIndex = color
                             }
 
                             Rectangle {
@@ -206,7 +206,7 @@ ActivityBase {
                                 }
                                 MouseArea {
                                     anchors.fill: parent
-                                    onClicked: userItem.paint()
+                                    onClicked: userItem.paint(items.colorSelector)
                                 }
                             }
                             GCText {
@@ -276,7 +276,7 @@ ActivityBase {
                     var touch = touchPoints[i]
                     var block = drawingArea.childAt(touch.x, touch.y)
                     if(block)
-                        block.paint()
+                        block.paint(items.colorSelector)
                 }
             }
         }

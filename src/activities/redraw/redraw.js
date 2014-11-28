@@ -48,7 +48,7 @@ var dataset = [
                 "columns": 4,
                 "image":
                 [
-                    0,0,0,0,
+                    2,0,0,0,
                     0,1,0,0,
                     0,0,1,0,
                     0,1,0,0,
@@ -253,6 +253,11 @@ function initLevel() {
     items.numberOfColor = getNumberOfColors(items.targetModelData)
     items.colorSelector = 0
     items.userModel.reset()
+    if(currentLevel == 0) {
+        // To help determine the puzzle mirroring type set a color
+        // at first level
+        items.userModel.itemAt(0).paint(items.targetModelData[0])
+    }
 }
 
 function nextLevel() {
