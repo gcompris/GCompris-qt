@@ -70,6 +70,8 @@ function start(items_, uppercaseOnly_,  _mode) {
     mode = _mode;
     currentLevel = 0;
     currentSubLevel = 0;
+    items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
+            items.ourActivity.dataSetUrl + "default-$LOCALE.json"));
     maxLevel = items.wordlist.maxLevel;
     droppedWords = new Array();
     initLevel();

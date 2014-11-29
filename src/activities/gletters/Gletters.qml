@@ -134,8 +134,7 @@ ActivityBase {
         Wordlist {
             id: wordlist
             defaultFilename: activity.dataSetUrl + "default-en.json"
-            filename: ApplicationInfo.getLocaleFilePath(activity.dataSetUrl +
-                                                       "default-$LOCALE.json");
+            filename: ""
 
             onError: console.log("Gletters: Wordlist error: " + msg);
         }
