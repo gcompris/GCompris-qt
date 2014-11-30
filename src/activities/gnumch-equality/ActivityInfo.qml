@@ -17,5 +17,5 @@ ActivityInfo {
           "<br><br>" +
           qsTr("Take care to avoid the Troggles.")
   credit: ""
-  section: "/math/algebramenu"
+  section: "math"
 }
