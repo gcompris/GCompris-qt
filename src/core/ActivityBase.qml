@@ -19,7 +19,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.2
-import QtQuick.Controls 1.1
 import GCompris 1.0
 
 Item {
@@ -80,5 +79,12 @@ Item {
         id: activity
         sourceComponent: pageComponent
         anchors.fill: parent
+    }
+
+    Loader {
+        id: demoPageLoader
+        sourceComponent: BuyMeOverlay {}
+        anchors.fill: parent
+        active: !activityInfo.demo && ApplicationSettings.isDemoMode
     }
 }

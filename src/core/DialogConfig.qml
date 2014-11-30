@@ -101,7 +101,6 @@ Rectangle {
 
                             property bool checked: !isDemoMode
                             onCheckedChanged: {
-                                console.log("onCheckedChanged", checked)
                                 isDemoMode = !checked;
                             }
 
@@ -123,7 +122,7 @@ Rectangle {
                                 anchors.leftMargin: 10
                                 anchors.verticalCenter: parent.verticalCenter
                                 text: demoModeBox.checked ? qsTr("You have the full version") :
-                                                            qsTr("Buy the full version")
+                                                            qsTr("Buy the full version").toUpperCase()
                                 style: ButtonStyle {
                                     background: Rectangle {
                                         implicitWidth: 100
@@ -503,7 +502,6 @@ Rectangle {
 
     function save() {
         ApplicationSettings.isAudioVoicesEnabled = isAudioVoicesEnabled
-        console.log("isDemoMode", isDemoMode)
         ApplicationSettings.isDemoMode = isDemoMode
         ApplicationSettings.isAudioEffectsEnabled = isAudioEffectsEnabled
         ApplicationSettings.isFullscreen = isFullscreen
