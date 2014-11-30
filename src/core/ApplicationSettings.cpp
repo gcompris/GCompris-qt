@@ -76,6 +76,7 @@ static const QString FILTER_LEVEL_MAX = "filterLevelMax";
 
 static const QString DEFAULT_CURSOR = "defaultCursor";
 static const QString NO_CURSOR = "noCursor";
+static const QString DEMO_KEY = "demo";
 
 ApplicationSettings *ApplicationSettings::m_instance = NULL;
 
@@ -96,6 +97,14 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
             QLocale::system() == QLocale::c() ? GC_DEFAULT_LOCALE : QString(QLocale::system().name() + ".UTF-8")).toString();
     m_font = m_config.value(FONT_KEY, GC_DEFAULT_FONT).toString();
     m_isEmbeddedFont = m_config.value(IS_CURRENT_FONT_EMBEDDED, true).toBool();
+
+// The the default demo mode based on the platform
+#if defined(Q_OS_ANDROID) || defined(Q_OS_MAC) || defined(Q_OS_BLACKBERRY) || \
+	defined(Q_OS_WIN) || defined(Q_OS_WINRT)
+	m_isDemoMode = m_config.value(DEMO_KEY, true).toBool();
+#else
+	m_isDemoMode = m_config.value(DEMO_KEY, false).toBool();
+#endif
 
     m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
             !ApplicationInfo::getInstance()->isMobile()).toBool();
@@ -128,7 +137,8 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, SIGNAL(automaticDownloadsEnabledChanged()), this, SLOT(notifyAutomaticDownloadsEnabledChanged()));
     connect(this, SIGNAL(filterLevelMinChanged()), this, SLOT(notifyFilterLevelMinChanged()));
     connect(this, SIGNAL(filterLevelMaxChanged()), this, SLOT(notifyFilterLevelMaxChanged()));
-    connect(this, SIGNAL(downloadServerUrlChanged()), this, SLOT(notifyDownloadServerUrlChanged()));
+	connect(this, SIGNAL(demoModeChanged()), this, SLOT(notifyDemoModeChanged()));
+	connect(this, SIGNAL(downloadServerUrlChanged()), this, SLOT(notifyDownloadServerUrlChanged()));
     connect(this, SIGNAL(exeCountChanged()), this, SLOT(notifyExeCountChanged()));
     connect(this, SIGNAL(barHiddenChanged()), this, SLOT(notifyBarHiddenChanged()));
 }
@@ -147,6 +157,7 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
     m_config.setValue(FILTER_LEVEL_MIN, m_filterLevelMin);
 	m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
+	m_config.setValue(DEMO_KEY, m_isDemoMode);
 	m_config.setValue(DEFAULT_CURSOR, m_defaultCursor);
 	m_config.setValue(NO_CURSOR, m_noCursor);
 	m_config.endGroup();
@@ -224,6 +235,12 @@ void ApplicationSettings::notifyFilterLevelMaxChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, FILTER_LEVEL_MAX, m_filterLevelMax);
     qDebug() << "filterLevelMax set to: " << m_filterLevelMax;
+}
+
+void ApplicationSettings::notifyDemoModeChanged()
+{
+	updateValueInConfig(GENERAL_GROUP_KEY, DEMO_KEY, m_isDemoMode);
+	qDebug() << "notifyDemoMode: " << m_isDemoMode;
 }
 
 void ApplicationSettings::notifyDownloadServerUrlChanged()

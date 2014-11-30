@@ -94,6 +94,65 @@ Rectangle {
                         spacing: 10
                         width: parent.width
                         // Put configuration here
+                        Row {
+                            id: demoModeBox
+                            width: parent.width
+                            spacing: 10
+
+                            property bool checked: !isDemoMode
+                            onCheckedChanged: {
+                                console.log("onCheckedChanged", checked)
+                                isDemoMode = !checked;
+                            }
+
+                            Image {
+                                    sourceSize.height: 50 * ApplicationInfo.ratio
+                                    source:
+                                        demoModeBox.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
+                                                              "qrc:/gcompris/src/core/resource/cancel.svgz"
+                                    MouseArea {
+                                        anchors.fill: parent
+                                        onClicked: isDemoMode ? console.log("call buying api") : ""
+                                    }
+                                }
+
+                            Button {
+                                width: parent.parent.width - 50 * ApplicationInfo.ratio - 10 * 2
+                                height: parent.height
+                                enabled: isDemoMode
+                                anchors.leftMargin: 10
+                                anchors.verticalCenter: parent.verticalCenter
+                                text: demoModeBox.checked ? qsTr("You have the full version") :
+                                                            qsTr("Buy the full version")
+                                style: ButtonStyle {
+                                    background: Rectangle {
+                                        implicitWidth: 100
+                                        implicitHeight: 25
+                                        border.width: control.activeFocus ? 4 : 2
+                                        border.color: "black"
+                                        radius: 10
+                                        gradient: Gradient {
+                                            GradientStop { position: 0 ; color: control.pressed ? "#87ff5c" :
+                                                                                                  isDemoMode ? "#ffe85c" : "#EEEEEE"}
+                                            GradientStop { position: 1 ; color: control.pressed ? "#44ff00" :
+                                                                                                  isDemoMode ? "#f8d600" : "#AAAAAA"}
+                                        }
+                                    }
+                                    label: GCText {
+                                        text: control.text
+                                        horizontalAlignment: Text.AlignHCenter
+                                        verticalAlignment: Text.AlignVCenter
+                                        wrapMode: Text.WordWrap
+                                    }
+                                }
+
+                                onClicked: {
+                                    isDemoMode = !isDemoMode
+                                    console.log("call buying api")
+                                }
+                            }
+                        }
+
                         GCDialogCheckBox {
                             id: enableAudioVoicesBox
                             text: qsTr("Enable audio voices")
@@ -404,11 +463,14 @@ Rectangle {
     property bool isFullscreen: ApplicationSettings.isFullscreen
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
+    property bool isDemoMode
 
     onStart: {
         // Synchronize settings with data
         isAudioVoicesEnabled = ApplicationSettings.isAudioVoicesEnabled
         enableAudioVoicesBox.checked = isAudioVoicesEnabled
+
+        isDemoMode = ApplicationSettings.isDemoMode
 
         isAudioEffectsEnabled = ApplicationSettings.isAudioEffectsEnabled
         enableAudioEffectsBox.checked = isAudioEffectsEnabled
@@ -441,6 +503,8 @@ Rectangle {
 
     function save() {
         ApplicationSettings.isAudioVoicesEnabled = isAudioVoicesEnabled
+        console.log("isDemoMode", isDemoMode)
+        ApplicationSettings.isDemoMode = isDemoMode
         ApplicationSettings.isAudioEffectsEnabled = isAudioEffectsEnabled
         ApplicationSettings.isFullscreen = isFullscreen
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
@@ -555,6 +619,7 @@ Rectangle {
 
     function hasConfigChanged() {
         return (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale ||
+                (ApplicationSettings.isDemoMode != isDemoMode) ||
                 (ApplicationSettings.font != fonts.get(fontBox.currentIndex).text) ||
                 (ApplicationSettings.isEmbeddedFont != fonts.get(fontBox.currentIndex).isLocalResource) ||
                 (ApplicationSettings.isAudioVoicesEnabled != isAudioVoicesEnabled) ||

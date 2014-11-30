@@ -155,6 +155,7 @@ ActivityBase {
                         anchors.margins: 5
                         anchors.horizontalCenter: parent.horizontalCenter
                     }
+
                     ParticleSystemStar {
                         id: particles
                         anchors.fill: backgroundSection
@@ -234,6 +235,17 @@ ActivityBase {
                         anchors.top: parent.top
                         sourceSize.width: iconWidth * 0.15
                         x: 5
+                    }
+                    Image {
+                        anchors {
+                            right: parent.right
+                            top: parent.top
+                            rightMargin: 4
+                        }
+                        source: demo || !ApplicationSettings.isDemoMode
+                                ? "" :
+                                  "qrc:/gcompris/src/core/resource/cancel.svgz"
+                        sourceSize.width: 30 * ApplicationInfo.ratio
                     }
                     GCText {
                         anchors.top: parent.bottom

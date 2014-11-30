@@ -46,6 +46,7 @@
 #include <QQmlEngine>
 #include <QUrl>
 #include <QtGlobal>
+#include <QDebug>
 
 #include <QSettings>
 
@@ -64,6 +65,7 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(bool isAutomaticDownloadsEnabled READ isAutomaticDownloadsEnabled WRITE setIsAutomaticDownloadsEnabled NOTIFY automaticDownloadsEnabledChanged)
     Q_PROPERTY(quint32 filterLevelMin READ filterLevelMin WRITE setFilterLevelMin NOTIFY filterLevelMinChanged)
     Q_PROPERTY(quint32 filterLevelMax READ filterLevelMax WRITE setFilterLevelMax NOTIFY filterLevelMaxChanged)
+	Q_PROPERTY(bool isDemoMode READ isDemoMode WRITE setDemoMode NOTIFY demoModeChanged)
 
     // admin group
     Q_PROPERTY(QString downloadServerUrl READ downloadServerUrl WRITE setDownloadServerUrl NOTIFY downloadServerUrlChanged)
@@ -151,7 +153,14 @@ public:
         emit filterLevelMaxChanged();
     }
 
-    QString downloadServerUrl() const { return m_downloadServerUrl; }
+	bool isDemoMode() const { return m_isDemoMode; }
+	void setDemoMode(const bool newMode) {
+		qDebug() << "c++ setDemoMode=" << newMode;
+		m_isDemoMode = newMode;
+		emit demoModeChanged();
+	}
+
+	QString downloadServerUrl() const { return m_downloadServerUrl; }
     void setDownloadServerUrl(const QString newDownloadServerUrl) {
         m_downloadServerUrl = newDownloadServerUrl;
         emit downloadServerUrlChanged();
@@ -180,6 +189,7 @@ protected slots:
     Q_INVOKABLE void notifyAutomaticDownloadsEnabledChanged();
     Q_INVOKABLE void notifyFilterLevelMinChanged();
     Q_INVOKABLE void notifyFilterLevelMaxChanged();
+	Q_INVOKABLE void notifyDemoModeChanged();
 
     Q_INVOKABLE void notifyDownloadServerUrlChanged();
 
@@ -200,6 +210,7 @@ signals:
     void automaticDownloadsEnabledChanged();
     void filterLevelMinChanged();
     void filterLevelMaxChanged();
+	void demoModeChanged();
 
     void downloadServerUrlChanged();
 
@@ -226,6 +237,7 @@ private:
 	bool m_noCursor;
     QString m_locale;
     QString m_font;
+	bool m_isDemoMode;
 
     QString m_downloadServerUrl;
 
