@@ -205,6 +205,17 @@ ActivityBase {
             }
         }
 
+        // Show an hint to show that can move by swiping anywhere
+        Image {
+            anchors {
+                right: parent.right
+                bottom: parent.bottom
+                margins: 12
+            }
+            source: "qrc:/gcompris/src/core/resource/arrows_move.svg"
+            sourceSize.width: 140
+            opacity: bar.level == 1 && ApplicationInfo.isMobile ? 1 : 0
+        }
 
         Image {
             id: player
