@@ -195,17 +195,31 @@ ActivityBase {
                     var moveX = point1.x - startX
                     var moveY = point1.y - startY
                     // Find the direction with the most move
-                    if(Math.abs(moveX) > Math.abs(moveY)) {
+                    if(Math.abs(moveX) * ApplicationInfo.ratio > 10 &&
+                            Math.abs(moveX) > Math.abs(moveY)) {
                         if(moveX > 10 * ApplicationInfo.ratio)
                             muncher.moveTo(0)
                         else if(moveX < -10 * ApplicationInfo.ratio)
                             muncher.moveTo(1)
                         else
                             background.checkAnswer()
-                    } else {
+                    } else if(Math.abs(moveY) * ApplicationInfo.ratio > 10 &&
+                              Math.abs(moveX) < Math.abs(moveY)) {
                         if(moveY > 10 * ApplicationInfo.ratio)
                             muncher.moveTo(2)
                         else if(moveY < -10 * ApplicationInfo.ratio)
+                            muncher.moveTo(3)
+                        else
+                            background.checkAnswer()
+                    } else {
+                        // No move, just a tap or mouse click
+                        if(point1.x > muncher.x + muncher.width)
+                            muncher.moveTo(0)
+                        else if(point1.x < muncher.x)
+                            muncher.moveTo(1)
+                        else if(point1.y < muncher.y)
+                            muncher.moveTo(2)
+                        else if(point1.y > muncher.y + muncher.height)
                             muncher.moveTo(3)
                         else
                             background.checkAnswer()
