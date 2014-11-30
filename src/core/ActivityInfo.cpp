@@ -27,7 +27,8 @@
 
 ActivityInfo::ActivityInfo(QObject *parent):
 	QObject(parent),
-	m_dir("")
+	m_dir(""),
+	m_demo(true)
 {}
 
 QString ActivityInfo::name() const
