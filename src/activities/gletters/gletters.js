@@ -112,13 +112,23 @@ function initLevel() {
             /* populate VirtualKeyboard for mobile:
              * 1. for < 10 letters print them all in the same row
              * 2. for > 10 letters create 3 rows with equal amount of keys per row
-             *    if possible, otherwise more keys in the upper rows  */
+             *    if possible, otherwise more keys in the upper rows
+             * 3. if we have both upper- and lowercase letters activate the shift
+             *    key*/
             // first generate a map of needed letters
             var letters = new Array();
+            items.keyboard.shiftKey = false;
             for (var i = 0; i < level.words.length; i++) {
-                for (var j = 0; j < level.words[i].length; j++)
-                    if (letters.indexOf(level.words[i].charAt(j)) === -1)
+                for (var j = 0; j < level.words[i].length; j++) {
+                    var letter = level.words[i].charAt(j);
+                    var isUpper = (letter == letter.toLocaleUpperCase());
+                    if (isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1)
+                        items.keyboard.shiftKey = true;
+                    else if (!isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1)
+                        items.keyboard.shiftKey = true;
+                    else if (letters.indexOf(letter) === -1)
                         letters.push(level.words[i].charAt(j));
+                }
             }
             letters.sort();
             // generate layout from letter map
