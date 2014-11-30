@@ -276,6 +276,18 @@ ActivityBase {
                 }
             }
 
+            // Show an hint to show that can move by swiping anywhere
+            Image {
+                anchors {
+                    right: parent.right
+                    bottom: parent.bottom
+                    margins: 12
+                }
+                source: "qrc:/gcompris/src/core/resource/arrows_move.svg"
+                sourceSize.width: 140
+                opacity: topPanel.bar.level == 1 && ApplicationInfo.isMobile ? 0.8 : 0
+            }
+
             Timer {
                 id: spawningMonsters
 
