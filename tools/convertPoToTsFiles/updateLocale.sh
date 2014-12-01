@@ -1,41 +1,34 @@
 #!/bin/bash
 
 locale=$1
-gcomprisGtkSourceDir=$2
+gcomprisGtkPoFile=$2
 
-function usage {
-  echo "Usage: updateLocale.sh locale gcomprisGtkSourceDir"
+function usage { 
+  echo "This tool is used to update a local .ts translation " \
+       "from the string of the Gtk+ version"
+  echo "Put the input file in this directory under the name gcompris_input_[locale].ts"
+  echo "The resulting file is in gcompris_[locale].ts"
+  echo "Usage: updateLocale.sh locale gcomprisGtkPoFile"
 }
 
-if [ "$locale" == "" -o "$gcomprisGtkSourceDir" == "" ]
+if [ "$locale" == "" -o "$gcomprisGtkPoFile" == "" ]
 then
   usage
   exit 1
 fi
 
-if [ ! -f ../../src/gcompris_$locale.ts ]
+if [ ! -f gcompris_input_$locale.ts ]
 then
-    echo "Create first the gcompris_$locale.ts file with:"
-    cd ../../src
-    mkdir -p translations
-    lupdate `find . -name \*.cpp -o -name \*.h -o -name \*.qml` -ts translations/gcompris_kn.ts
-    if [ $? -ne 0 ]
-    then
-	echo "Failed to run lupdate"
-	cd -
-	exit 1
-    fi
-    cd -
+  echo "Put here the file gcompris_input_$locale.ts that you want to update"
+  exit 1
 fi
 
-echo "Processing $locale"
+
+echo "Processing gcompris_input_$locale.ts"
 # Remove some comment that breaks python polib
 poSource=$(mktemp posource_XXXXXXXXX)
-cat $gcomprisGtkSourceDir/$locale.po | grep -v "^#[\.\~]" > $poSource
-./convertPo.py $poSource ../../src/translations/gcompris_$locale.ts $locale
+cat $gcomprisGtkPoFile | grep -v "^#[\.\~]" > $poSource
+./convertPo.py $poSource gcompris_input_$locale.ts $locale
 rm $poSource
-# Move the merged translation to the original directory
-mv gcompris_$locale.ts ../../src/translations/gcompris_$locale.ts
-# Convert it to have the qm file ready
-lconvert ../../src/translations/gcompris_$locale.ts -o ../../src/translations/gcompris_$locale.qm
-echo "You must manually copy the file ../../src/translations/gcompris_$locale.qm in your build dir under bin/translations"
+echo "Updated file is in gcompris_$locale.ts"
+
