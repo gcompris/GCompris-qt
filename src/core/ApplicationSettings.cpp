@@ -81,7 +81,8 @@ static const QString DEMO_KEY = "demo";
 ApplicationSettings *ApplicationSettings::m_instance = NULL;
 
 ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
-     m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/GCompris.conf", QSettings::IniFormat)
+	 m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
+			  "/gcompris/gcompris-qt.conf", QSettings::IniFormat)
 
 {
     // initialize from settings file or default
