@@ -99,16 +99,16 @@ function repositionDiscs(index)
          position = getDiscPositionInTower( index+1, tower3 )
      }
 
-     items.discRepeater.itemAt(index).x = newX - items.discRepeater.itemAt(0).discWidth * (.22 - index * .05 )
-     items.discRepeater.itemAt(index).y = newY + items.tower1Image.height * .70 - ((position-1) *  items.discRepeater.itemAt(index).height)
+     items.discRepeater.itemAt(index).x = newX - items.discRepeater.itemAt(0).discWidth * (.20 - index * .05 )
+     items.discRepeater.itemAt(index).y = newY + items.tower1Image.height * .73 - ((position-1) *  items.discRepeater.itemAt(index).height)
      disableNonDraggablediscs()
 }
 
 function discReleased(index)
 {
     if( checkIfDiscOnTowerImage(index+1,1) && !(0 != tower1.length && index+1 <= tower1[tower1.length-1]) ) {
-            items.discRepeater.itemAt(index).x = items.tower1Image.x - items.discRepeater.itemAt(0).discWidth * (.22 - index * .05 )
-            items.discRepeater.itemAt(index).y = items.tower1Image.y + items.tower1Image.height * .70 - ( (tower1.length) *  items.discRepeater.itemAt(index).height)
+            items.discRepeater.itemAt(index).x = items.tower1Image.x - items.discRepeater.itemAt(0).discWidth * (.20 - index * .05 )
+            items.discRepeater.itemAt(index).y = items.tower1Image.y + items.tower1Image.height * .73 - ( (tower1.length) *  items.discRepeater.itemAt(index).height)
 
             popDisc(index+1)
 
@@ -117,8 +117,8 @@ function discReleased(index)
     }
 
     else if( checkIfDiscOnTowerImage(index+1,2) && !( 0 != tower2.length && index+1 <= tower2[tower2.length-1] ) ) {
-            items.discRepeater.itemAt(index).x = items.tower2Image.x - items.discRepeater.itemAt(0).discWidth * (.22 - index * .05 )
-            items.discRepeater.itemAt(index).y = items.tower2Image.y + items.tower2Image.height * .70 - ( (tower2.length) *  items.discRepeater.itemAt(index).height)
+            items.discRepeater.itemAt(index).x = items.tower2Image.x - items.discRepeater.itemAt(0).discWidth * (.20 - index * .05 )
+            items.discRepeater.itemAt(index).y = items.tower2Image.y + items.tower2Image.height * .73 - ( (tower2.length) *  items.discRepeater.itemAt(index).height)
 
             popDisc(index+1)
 
@@ -127,8 +127,8 @@ function discReleased(index)
     }
 
     else if( checkIfDiscOnTowerImage(index+1,3) && !( 0 != tower3.length && index+1 <= tower3[tower3.length-1] ) ) {
-            items.discRepeater.itemAt(index).x = items.tower3Image.x - items.discRepeater.itemAt(0).discWidth * (.22 - index * .05 )
-            items.discRepeater.itemAt(index).y = items.tower3Image.y + items.tower3Image.height * .70 - ( (tower3.length) *  items.discRepeater.itemAt(index).height)
+            items.discRepeater.itemAt(index).x = items.tower3Image.x - items.discRepeater.itemAt(0).discWidth * (.20 - index * .05 )
+            items.discRepeater.itemAt(index).y = items.tower3Image.y + items.tower3Image.height * .73 - ( (tower3.length) *  items.discRepeater.itemAt(index).height)
 
             popDisc(index+1)
 
@@ -198,8 +198,8 @@ function sceneSizeChanged()
 
 function placeDiscsAtOriginal() {
     for( var i = 0 ; i < numberOfLevel + 2 ; ++i ){
-        items.discRepeater.itemAt(i).discX = items.tower1Image.x - items.discRepeater.itemAt(0).discWidth * (.22 - i * .05 )
-        items.discRepeater.itemAt(i).discY = items.tower1Image.y + items.tower1Image.height * .70 - ( i * items.discRepeater.itemAt(3).discHeight )
+        items.discRepeater.itemAt(i).discX = items.tower1Image.x - items.discRepeater.itemAt(0).discWidth * (.20 - i * .05 )
+        items.discRepeater.itemAt(i).discY = items.tower1Image.y + items.tower1Image.height * .73 - ( i * items.discRepeater.itemAt(3).discHeight )
     }
 }
 
