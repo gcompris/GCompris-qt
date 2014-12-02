@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
     {
         // Local scope for config
         QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
-                         "/gcompris/GCompris.conf",
+                         "/gcompris/gcompris-qt.conf",
                          QSettings::IniFormat);
         // Get locale
         if(config.contains("General/locale")) {
