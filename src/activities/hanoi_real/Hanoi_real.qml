@@ -1,4 +1,4 @@
-/* GCompris - hanoi_real.qml
+ /* GCompris - hanoi_real.qml
  *
  * Copyright (C) 2014 <Amit Tomar>
  *
@@ -61,7 +61,6 @@ ActivityBase {
             property alias tower3ImageHighlight: tower3ImageHighlight
             property int maxDiscs     : 4
             property int maxZ : 5
-            property real sceneScale : (hanoiStage.width + hanoiStage.height) * .0009
         }
 
         onStart: { Activity.start(items) ; Activity.resetToGetLevel(1) }
@@ -75,7 +74,6 @@ ActivityBase {
             width: parent.width
             height: parent.height * .80
             color: "lightgrey"
-            scale: items.sceneScale >= 1 ? Math.sqrt( items.sceneScale ) : 1
 
             property real currentX : 0.0
             property real currentY : 0.0
@@ -85,7 +83,7 @@ ActivityBase {
                 width: parent.width
                 height: parent.height * .15
                 color: "#527BBD"
-                anchors { bottom: parent.bottom ; bottomMargin: parent.height * .065 }
+                anchors { bottom: parent.bottom ; bottomMargin: - parent.height * .025 }
 
                 Text {
                     id: description
@@ -111,6 +109,14 @@ ActivityBase {
                     x: 20 * index
                     y: 20 * index
                     z: tower1Image.z + 1
+
+                    sourceSize.width: if( 0 == index ) background.width / 3.5
+                                      else if ( 1 == index ) background.width / 4
+                                      else if ( 2 == index ) background.width / 4.5
+                                      else background.width / 5
+
+                    fillMode: Image.Stretch
+                    smooth: true
 
                     source: if( 0 == index ) Activity.url + "disc1.png"
                             else if ( 1 == index ) Activity.url + "disc2.png"
@@ -177,6 +183,8 @@ ActivityBase {
                 x: parent.spacing
                 y: parent.spacing / 1.5
                 source: Activity.url + "disc_support.png"
+                sourceSize.width: background.width / 5.5
+                fillMode: Image.Stretch
 
                 Highlight {
                     id: tower1ImageHighlight
@@ -189,6 +197,8 @@ ActivityBase {
                 anchors.top: tower1Image.top
                 anchors.leftMargin: parent.spacing
                 source: Activity.url + "disc_support.png"
+                sourceSize.width: background.width / 5.5
+                fillMode: Image.Stretch
 
                 Highlight {
                     id: tower2ImageHighlight
@@ -201,6 +211,8 @@ ActivityBase {
                 anchors.top: tower2Image.top
                 anchors.leftMargin: parent.spacing
                 source: Activity.url + "disc_support.png"
+                sourceSize.width: background.width / 5.5
+                fillMode: Image.Stretch
 
                 MouseArea {
                     anchors.fill: parent
