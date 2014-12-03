@@ -48,21 +48,21 @@ elseif(CMAKE_HOST_APPLE)
 endif()
 
 if(ANDROID)
-  add_library(GCompris SHARED ${gcompris_SRCS} ${gcompris_MOC})
-  qt5_use_modules(GCompris Qml Quick Gui Multimedia Core Svg Xml XmlPatterns)
+  add_library(gcompris-qt SHARED ${gcompris_SRCS} ${gcompris_MOC})
+  qt5_use_modules(gcompris-qt Qml Quick Gui Multimedia Core Svg Xml XmlPatterns)
 else()
-  add_executable(GCompris MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
-  qt5_use_modules(GCompris Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Core)
+  add_executable(gcompris-qt MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
+  qt5_use_modules(gcompris-qt Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Core)
 endif()
 
-target_link_libraries(GCompris ${QT_LIBRARIES})
+target_link_libraries(gcompris-qt ${QT_LIBRARIES})
 
 GCOMPRIS_ADD_RCC(core *.qml *.js resource/*.* resource/bonus/* resource/sounds/* resource/fonts/* qmldir)
 
 # Installation
 # ============
 
-install(TARGETS GCompris
+install(TARGETS gcompris-qt
   ARCHIVE DESTINATION bin
   RUNTIME DESTINATION bin
   LIBRARY DESTINATION lib
@@ -109,17 +109,17 @@ endif()
 set(GCOMPRIS_OTHER_LIBS)
 
 if(APPLE)
-  set(_app GCompris.app)
+  set(_app gcompris-qt.app)
   set(_qtconf_destdir ${_app}/Contents/Resources)
   set(_qt_plugins_destdir ${_app}/Contents/plugins)
   set(_qt_qml_destdir ${_app}/Contents/qml)
   set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/${_app}")
-  set_target_properties(GCompris PROPERTIES
+  set_target_properties(gcompris-qt PROPERTIES
     MACOSX_BUNDLE_INFO_STRING "${GCOMPRIS_VERSION}, Copyright 2000-2014 Bruno Coudoin and Others"
     MACOSX_BUNDLE_ICON_FILE "${gcompris_icon}"
     MACOSX_BUNDLE_GUI_IDENTIFIER "net.gcompris"
     MACOSX_BUNDLE_LONG_VERSION_STRING "${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION}.${GCOMPRIS_PATCH_VERSION}"
-    MACOSX_BUNDLE_BUNDLE_NAME "GCompris"
+    MACOSX_BUNDLE_BUNDLE_NAME "gcompris-qt"
     MACOSX_BUNDLE_SHORT_VERSION_STRING "${GCOMPRIS_VERSION}"
     MACOSX_BUNDLE_BUNDLE_VERSION "${GCOMPRIS_VERSION}"
     MACOSX_BUNDLE_COPYRIGHT "Copyright 2000-2014 Bruno Coudoin and Others.")
@@ -129,9 +129,9 @@ else()
   set(_qt_plugins_destdir bin/plugins)
   set(_qt_qml_destdir bin/qml)
   if(CMAKE_HOST_WIN32)
-    set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/GCompris.exe")
+    set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/gcompris-qt.exe")
   else()
-    set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/GCompris")
+    set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/gcompris-qt")
   endif()
 endif()
 
@@ -170,7 +170,7 @@ install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
 
 # install a startup script for linux bundle
 if(UNIX)
-  install(PROGRAMS ../../tools/gcompris.sh DESTINATION bin)
+  install(PROGRAMS ../../tools/gcompris-qt.sh DESTINATION bin)
 endif()
 
 # Packaging
@@ -189,7 +189,7 @@ if(WIN32)
   set(CPACK_NSIS_MUI_ICON "${PROJECT_SOURCE_DIR}/installer\\\\GCompris-install.ico")
   set(CPACK_NSIS_MUI_UNIICON "${PROJECT_SOURCE_DIR}/installer\\\\GCompris-uninstall.ico")
   set(CPACK_NSIS_EXECUTABLES_DIRECTORY "bin")
-  set(CPACK_PACKAGE_EXECUTABLES "GCompris" "GCompris")
+  set(CPACK_PACKAGE_EXECUTABLES "gcompris-qt" "gcompris-qt")
 else(WIN32)
   set(CPACK_PACKAGE_ICON "${PROJECT_SOURCE_DIR}/GCompris64.png")
 endif()

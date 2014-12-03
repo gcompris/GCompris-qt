@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 {
 	QGuiApplication app(argc, argv);
     app.setOrganizationName("KDE");
-    app.setApplicationName("GCompris");
+    app.setApplicationName("gcompris-qt");
     app.setOrganizationDomain("kde.org");
     app.setApplicationVersion(ApplicationInfo::GCVersion());
 

@@ -33,7 +33,7 @@ function(GCOMPRIS_ADD_RCC resource_path)
                      COMMAND ${Qt5Core_RCC_EXECUTABLE} "-binary" -o ${CREATED_RCC} ${CREATED_QRC}
                      DEPENDS ${QRC_CONTENTS} "${out_depends}" VERBATIM)
   if(CMAKE_HOST_APPLE)
-    install(FILES ${CREATED_RCC} DESTINATION GCompris.app/Contents/MacOS/rcc)
+    install(FILES ${CREATED_RCC} DESTINATION gcompris-qt.app/Contents/MacOS/rcc)
   else()
     install(FILES ${CREATED_RCC} DESTINATION share/gcompris-qt/rcc)
   endif()

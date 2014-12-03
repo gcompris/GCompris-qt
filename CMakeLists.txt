@@ -59,7 +59,7 @@ find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
 
 # Set output directory
 if(CMAKE_HOST_APPLE)
-  set(_bundle_bin GCompris.app/Contents/MacOS)
+  set(_bundle_bin gcompris-qt.app/Contents/MacOS)
   set(_data_dest_dir bin/${_bundle_bin})
 elseif(ANDROID)
   set(_data_dest_dir android/assets)

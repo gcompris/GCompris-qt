@@ -358,7 +358,7 @@ inline QString DownloadManager::getResourceRootForFilename(const QString& filena
  *
  * Uses QStandardPaths::writableLocation(QStandardPaths::DataLocation)
  * which returns
- *   - on desktop $HOME/.local/share/KDE/GCompris/
+ *   - on desktop $HOME/.local/share/KDE/gcompris-qt/
  *   - on android /data/data/net.gcompris/files
  *
  */
@@ -373,10 +373,10 @@ inline QString  DownloadManager::getSystemDownloadPath() const
  *
  * For now returns
  * 1. getSystemdDownloadPath()
- * 2. QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)/GCompris
+ * 2. QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)/gcompris-qt
  *    which is
- *    - $HOME/.local/share/GCompris (on linux desktop)
- *    - /storage/sdcard0/GCompris (on android)
+ *    - $HOME/.local/share/gcompris-qt (on linux desktop)
+ *    - /storage/sdcard0/gcompris-qt (on android)
  *
  */
 inline QStringList DownloadManager::getSystemResourcePaths() const
@@ -384,7 +384,7 @@ inline QStringList DownloadManager::getSystemResourcePaths() const
     return QStringList({
         getSystemDownloadPath(),
         QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) +
-            "/GCompris"
+            "/gcompris-qt"
     });
 }
 
