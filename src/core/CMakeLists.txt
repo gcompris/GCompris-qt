@@ -100,8 +100,11 @@ set(_qml_plugins
   QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin
   QtQuick/Dialogs/${_lib_prefix}dialogplugin
   QtQuick.2/${_lib_prefix}qtquick2plugin
-  QtAudioEngine/${_lib_prefix}declarative_audioengine
   QtMultimedia/${_lib_prefix}declarative_multimedia)
+
+if(NOT WIN32)
+  list(APPEND QtAudioEngine/${_lib_prefix}declarative_audioengine)
+endif()
 
 set(GCOMPRIS_OTHER_LIBS)
 
