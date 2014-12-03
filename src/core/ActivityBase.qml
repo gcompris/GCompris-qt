@@ -20,6 +20,7 @@
  */
 import QtQuick 2.2
 import GCompris 1.0
+import "qrc:/gcompris/src/core/core.js" as Core
 
 Item {
     id: page
@@ -49,7 +50,7 @@ Item {
         if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_Q) {
             // Ctrl+Q exit the application
-            Qt.quit()
+            Core.quit(page);
         } else if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_B) {
             // Ctrl+B toggle the bar

@@ -207,7 +207,7 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svgz";
             sourceSize.width: 66 * barZoom
-            onClicked: Core.quit();
+            onClicked: Core.quit(bar);
         }
     }
     Component {
