@@ -48,21 +48,21 @@ elseif(CMAKE_HOST_APPLE)
 endif()
 
 if(ANDROID)
-  add_library(gcompris-qt SHARED ${gcompris_SRCS} ${gcompris_MOC})
-  qt5_use_modules(gcompris-qt Qml Quick Gui Multimedia Core Svg Xml XmlPatterns)
+  add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS} ${gcompris_MOC})
+  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Core Svg Xml XmlPatterns)
 else()
-  add_executable(gcompris-qt MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
-  qt5_use_modules(gcompris-qt Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Core)
+  add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
+  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Core)
 endif()
 
-target_link_libraries(gcompris-qt ${QT_LIBRARIES})
+target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${QT_LIBRARIES})
 
 GCOMPRIS_ADD_RCC(core *.qml *.js resource/*.* resource/bonus/* resource/sounds/* resource/fonts/* qmldir)
 
 # Installation
 # ============
 
-install(TARGETS gcompris-qt
+install(TARGETS ${GCOMPRIS_EXECUTABLE_NAME}
   ARCHIVE DESTINATION bin
   RUNTIME DESTINATION bin
   LIBRARY DESTINATION lib
@@ -129,9 +129,9 @@ else()
   set(_qt_plugins_destdir bin/plugins)
   set(_qt_qml_destdir bin/qml)
   if(CMAKE_HOST_WIN32)
-    set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/gcompris-qt.exe")
+    set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/${GCOMPRIS_EXECUTABLE_NAME}.exe")
   else()
-    set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/gcompris-qt")
+    set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/${GCOMPRIS_EXECUTABLE_NAME}")
   endif()
 endif()
 
@@ -189,7 +189,7 @@ if(WIN32)
   set(CPACK_NSIS_MUI_ICON "${PROJECT_SOURCE_DIR}/installer\\\\GCompris-install.ico")
   set(CPACK_NSIS_MUI_UNIICON "${PROJECT_SOURCE_DIR}/installer\\\\GCompris-uninstall.ico")
   set(CPACK_NSIS_EXECUTABLES_DIRECTORY "bin")
-  set(CPACK_PACKAGE_EXECUTABLES "gcompris-qt" "gcompris-qt")
+  set(CPACK_PACKAGE_EXECUTABLES "${GCOMPRIS_EXECUTABLE_NAME}" "${GCOMPRIS_EXECUTABLE_NAME}")
 else(WIN32)
   set(CPACK_PACKAGE_ICON "${PROJECT_SOURCE_DIR}/GCompris64.png")
 endif()

@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 {
 	QGuiApplication app(argc, argv);
     app.setOrganizationName("KDE");
-    app.setApplicationName("gcompris-qt");
+    app.setApplicationName(GCOMPRIS_APPLICATION_NAME);
     app.setOrganizationDomain("kde.org");
     app.setApplicationVersion(ApplicationInfo::GCVersion());
 
@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
     {
         // Local scope for config
         QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
-                         "/gcompris/gcompris-qt.conf",
+                         "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf",
                          QSettings::IniFormat);
         // Get locale
         if(config.contains("General/locale")) {

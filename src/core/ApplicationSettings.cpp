@@ -82,7 +82,7 @@ ApplicationSettings *ApplicationSettings::m_instance = NULL;
 
 ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
 	 m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
-			  "/gcompris/gcompris-qt.conf", QSettings::IniFormat)
+			  "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf", QSettings::IniFormat)
 
 {
     // initialize from settings file or default

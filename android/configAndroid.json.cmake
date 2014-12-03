@@ -8,7 +8,7 @@
  "toolchain-version": "@ANDROID_COMPILER_VERSION@",
  "ndk-host": "@ANDROID_NDK_HOST_SYSTEM_NAME@",
  "target-architecture": "@ARM_TARGET@",
- "application-binary": "@CMAKE_LIBRARY_OUTPUT_DIRECTORY@libgcompris-qt.so",
+ "application-binary": "@CMAKE_LIBRARY_OUTPUT_DIRECTORY@libGCompris.so",
  "android-package-source-directory": "@PACKAGE_SOURCE_ANDROID@/",
  "android-package": "net.gcompris"
 }

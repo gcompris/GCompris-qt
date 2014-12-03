@@ -27,6 +27,13 @@ set(GCOMPRIS_VERSION ${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION})
 # Increase it at each release
 set(GCOMPRIS_VERSION_CODE ${GCOMPRIS_MINOR_VERSION})
 
+# Set executable filename
+if(ANDROID)
+  set(GCOMPRIS_EXECUTABLE_NAME GCompris)
+else()
+  set(GCOMPRIS_EXECUTABLE_NAME gcompris-qt)
+endif()
+
 # cmake modules setup
 find_package(ECM 1.4.0 QUIET NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR} ${CMAKE_SOURCE_DIR}/cmake/)
