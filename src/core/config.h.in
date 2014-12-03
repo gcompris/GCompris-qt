@@ -1,3 +1,4 @@
 /* Version number of package */
 #define VERSION "@GCOMPRIS_VERSION@"
 
+#define GCOMPRIS_DATA_FOLDER "../@_data_dest_dir@"
