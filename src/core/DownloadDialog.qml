@@ -29,7 +29,8 @@ Dialog {
     id: downloadDialog
 
     title: qsTr("Download in progress")
-    modality: Qt.ApplicationModal
+    modality: Qt.ApplicationModals
+    standardButtons: StandardButton.NoButton
 
     property alias text: downloadDialogText.text
     property bool autohide: false;      ///< whether to close the dialog automatically when download has finished
