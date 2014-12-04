@@ -29,7 +29,7 @@ Dialog {
     id: downloadDialog
 
     title: qsTr("Download in progress")
-    modality: Qt.ApplicationModals
+    modality: Qt.ApplicationModal
     standardButtons: StandardButton.NoButton
 
     property alias text: downloadDialogText.text
