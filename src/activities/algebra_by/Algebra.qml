@@ -88,7 +88,6 @@ ActivityBase {
         Balloon {
             id: balloon
             onTimeout: bonus.bad("smiley")
-            onReady: console.log("ready")
         }
 
         Bonus {
