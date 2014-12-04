@@ -165,8 +165,10 @@ if(WIN32)
 endif()
 
 # install fixup_bundle script to resolve and fixup runtime dependencies
-configure_file(${CMAKE_SOURCE_DIR}/cmake/FixBundle.cmake.in FixBundle.cmake)
-install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
+# FIXME commented as it breaks KDE jenkins, seems to be MacOSX specific
+# This should not be triggered at make install but only on make package
+#configure_file(${CMAKE_SOURCE_DIR}/cmake/FixBundle.cmake.in FixBundle.cmake)
+#install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
 
 # install a startup script for linux bundle
 if(UNIX)
