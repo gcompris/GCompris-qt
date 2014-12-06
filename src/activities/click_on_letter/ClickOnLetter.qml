@@ -35,15 +35,18 @@ ActivityBase {
     /* mode of the activity, either "lowercase" (click_on_letter)
      * or "uppercase" (click_on_letter_up): */
     property string mode: "lowercase"
-    
+
+
     pageComponent: Image {
         id: background
         source: Activity.url + "background.svgz"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
+        focus: true
+
         signal start
         signal stop
-        focus: true
+        signal voiceError
         
         Component.onCompleted: {
             activity.start.connect(start)
@@ -61,7 +64,12 @@ ActivityBase {
             property alias bonus: bonus
         }
         
-        onStart: Activity.start(items, mode);
+        onVoiceError: questionItem.visible = true
+
+        onStart: {
+            activity.audioVoices.error.connect(voiceError)
+            Activity.start(items, mode);
+        }
         
         onStop: Activity.stop()
 
