@@ -72,14 +72,20 @@ ActivityBase {
         Keys.onPressed: {
             if(event.key >= Qt.Key_0 && event.key < Qt.Key_0 + items.numberOfColor)
                 items.colorSelector = event.key - Qt.Key_0
+
+            if(event.key == Qt.Key_Backspace)
+                userModel.clearCurrentItem()
         }
-        Keys.onEnterPressed: userModel.paintCurrentItem();
-        Keys.onReturnPressed: userModel.paintCurrentItem();
-        Keys.onSpacePressed: userModel.paintCurrentItem();
-        Keys.onRightPressed: userModel.moveCurrentIndexRight();
-        Keys.onLeftPressed: userModel.moveCurrentIndexLeft();
-        Keys.onDownPressed: userModel.moveCurrentIndexDown();
-        Keys.onUpPressed: userModel.moveCurrentIndexUp();
+        Keys.onEnterPressed: userModel.paintCurrentItem()
+        Keys.onReturnPressed: userModel.paintCurrentItem()
+        Keys.onSpacePressed: userModel.paintCurrentItem()
+        Keys.onDeletePressed: userModel.clearCurrentItem()
+        Keys.onRightPressed: userModel.moveCurrentIndexRight()
+        Keys.onLeftPressed: userModel.moveCurrentIndexLeft()
+        Keys.onDownPressed: userModel.moveCurrentIndexDown()
+        Keys.onUpPressed: userModel.moveCurrentIndexUp()
+        // For creating new content, dump the drawing on the console
+        Keys.onTabPressed: Activity.dump()
 
         Row {
             anchors.fill: parent
@@ -145,6 +151,10 @@ ActivityBase {
                                 userModel.itemAt(i).paint(items.colorSelector)
                             currentItem = 0
                             keyNavigation = false
+                        }
+
+                        function clearCurrentItem() {
+                            userModel.itemAt(currentItem).paint(0)
                         }
 
                         function paintCurrentItem() {
