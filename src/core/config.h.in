@@ -7,4 +7,5 @@
 #define GCOMPRIS_DATA_FOLDER "../@_data_dest_dir@"
 #endif
 /* GCompris for android, gcompris-qt for others */
-#define GCOMPRIS_APPLICATION_NAME "@GCOMPRIS_EXECUTABLE_NAME@“
+#define GCOMPRIS_APPLICATION_NAME "@GCOMPRIS_EXECUTABLE_NAME@"
+
