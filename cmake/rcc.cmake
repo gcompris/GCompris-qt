@@ -40,7 +40,7 @@ function(GCOMPRIS_ADD_RCC resource_path)
 
   add_custom_target(
     rcc_${activity} ALL
-    DEPENDS ${CREATED_RCC} ${CREATED_QRC}
+    DEPENDS createShareFolders ${CREATED_RCC} ${CREATED_QRC}
     COMMENT "Generate ${activity} RCC"
     SOURCES ${QRC_CONTENTS}
     VERBATIM

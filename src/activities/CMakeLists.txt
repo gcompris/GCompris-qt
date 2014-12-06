@@ -13,10 +13,10 @@ foreach(ACTIVITY ${ACTIVITIES})
   if(${match})
     # Set activities as options (enabled by default)
     option("USE_${ACTIVITY}" "Enable ${ACTIVITY} activity" ON)
-    if("USE_${ACTIVITY}")
+    if(USE_${ACTIVITY})
       # Add the directory for compilation
       add_subdirectory(${ACTIVITY})
-    endif("USE_${ACTIVITY}")
+    endif(USE_${ACTIVITY})
   endif(${match})
 endforeach(ACTIVITY ${ACTIVITIES})
 

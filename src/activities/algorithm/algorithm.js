@@ -75,14 +75,12 @@ var images = ["apple",
 var url = "qrc:/gcompris/src/activities/algorithm/resource/"
 
 function start(items_) {
-    console.log("algorithm activity: start")
     items = items_
     currentLevel = 0
     initLevel()
 }
 
 function stop() {
-    console.log("algorithm activity: stop")
 }
 
 function initLevel() {
