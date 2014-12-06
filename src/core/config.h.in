@@ -1,7 +1,10 @@
 /* Version number of package */
 #define VERSION "@GCOMPRIS_VERSION@"
 /* Folder where rccs and translations are installed */
+#ifdef  Q_OS_MAC
+#define GCOMPRIS_DATA_FOLDER "."
+#else
 #define GCOMPRIS_DATA_FOLDER "../@_data_dest_dir@"
+#endif
 /* GCompris for android, gcompris-qt for others */
-#define GCOMPRIS_APPLICATION_NAME "@GCOMPRIS_EXECUTABLE_NAME@"
-
+#define GCOMPRIS_APPLICATION_NAME "@GCOMPRIS_EXECUTABLE_NAME@“
