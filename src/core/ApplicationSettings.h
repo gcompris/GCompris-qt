@@ -73,8 +73,8 @@ class ApplicationSettings : public QObject
     // internal group
     Q_PROPERTY(quint32 exeCount READ exeCount WRITE setExeCount NOTIFY exeCountChanged)
 
-    // no group
-    Q_PROPERTY(bool isBarHidden READ isBarHidden WRITE setBarHidden NOTIFY barHiddenChanged)
+	// no group
+	Q_PROPERTY(bool isBarHidden READ isBarHidden WRITE setBarHidden NOTIFY barHiddenChanged)
 
 public:
 
@@ -196,6 +196,10 @@ protected slots:
     Q_INVOKABLE void notifyExeCountChanged();
 
     Q_INVOKABLE void notifyBarHiddenChanged();
+
+public slots:
+	Q_INVOKABLE bool isFavorite(const QString &activity);
+	Q_INVOKABLE void setFavorite(const QString &activity, bool favorite);
 
 protected:
 

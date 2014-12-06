@@ -57,6 +57,7 @@
 static const QString GENERAL_GROUP_KEY = "General";
 static const QString ADMIN_GROUP_KEY = "Admin";
 static const QString INTERNAL_GROUP_KEY = "Internal";
+static const QString FAVORITE_GROUP_KEY = "Favorite";
 
 static const QString FULLSCREEN_KEY = "fullscreen";
 static const QString ENABLE_AUDIO_VOICES_KEY = "enableAudioVoices";
@@ -259,6 +260,19 @@ void ApplicationSettings::notifyExeCountChanged()
 void ApplicationSettings::notifyBarHiddenChanged()
 {
     qDebug() << "is bar hidden: " << m_isBarHidden;
+}
+
+void ApplicationSettings::setFavorite(const QString &activity, bool favorite)
+{
+	updateValueInConfig(FAVORITE_GROUP_KEY, activity, favorite);
+}
+
+bool ApplicationSettings::isFavorite(const QString &activity)
+{
+	m_config.beginGroup(FAVORITE_GROUP_KEY);
+	bool favorite = m_config.value(activity, false).toBool();
+	m_config.endGroup();
+	return favorite;
 }
 
 template<class T> void ApplicationSettings::updateValueInConfig(const QString& group,

@@ -40,6 +40,7 @@ class ActivityInfo : public QObject
 	Q_PROPERTY(QString prerequisite READ prerequisite WRITE setPrerequisite NOTIFY prerequisiteChanged)
 	Q_PROPERTY(QString manual READ manual WRITE setManual NOTIFY manualChanged)
 	Q_PROPERTY(QString credit READ credit WRITE setCredit NOTIFY creditChanged)
+	Q_PROPERTY(bool favorite READ favorite WRITE setFavorite NOTIFY favoriteChanged)
 
 
 public:
@@ -71,6 +72,8 @@ public:
 	void setManual(const QString &);
 	QString credit() const;
 	void setCredit(const QString &);
+	bool favorite() const;
+	void setFavorite(const bool);
 
 	QStringList getSectionPath();
 
@@ -89,6 +92,7 @@ signals:
 	void prerequisiteChanged();
 	void manualChanged();
 	void creditChanged();
+	void favoriteChanged();
 	
 private:
 	QString m_name;
@@ -105,8 +109,7 @@ private:
 	QString m_prerequisite;
 	QString m_manual;
 	QString m_credit;
-
-
+	bool m_favorite;
 };
 
 #endif // MENU_H

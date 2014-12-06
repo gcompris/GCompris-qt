@@ -46,7 +46,7 @@ ActivityBase {
     property variant sections: [
         {
             icon: menuActivity.url + "all.svgz",
-            tag: "all"
+            tag: "favorite"
         },
         {
             icon: menuActivity.url + "computer.svgz",
@@ -272,6 +272,19 @@ ActivityBase {
                         selectCurrentItem()
                     }
                     onEntered: activitiesGrid.currentIndex = index
+                }
+                Image {
+                    source: menuActivity.url + (favorite ? "all.svgz" : "all_disabled.svg");
+                    anchors {
+                        top: parent.top
+                        right: parent.right
+                        rightMargin: -width * 0.2
+                    }
+                    sourceSize.width: iconWidth * 0.25
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: favorite = !favorite
+                    }
                 }
 
                 function selectCurrentItem() {
