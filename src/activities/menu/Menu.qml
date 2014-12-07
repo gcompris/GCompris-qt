@@ -112,7 +112,17 @@ ActivityBase {
         property int sectionCellHeight: sectionIconHeight * 1.1
 
         property var currentActiveGrid: activitiesGrid
+        property bool sectionVisible: true
         property bool keyboardMode: false
+        Keys.onPressed: {
+            if (event.modifiers === Qt.ControlModifier &&
+                    event.key === Qt.Key_S) {
+                // Ctrl+S toggle show / hide section
+                section.x = sectionVisible ? -sectionCellWidth : section.initialX
+                section.y = sectionVisible ? -sectionCellHeight : section.initialY
+                sectionVisible = !sectionVisible
+            }
+        }
         Keys.onReleased: {
             keyboardMode = true
             event.accepted = false
@@ -131,11 +141,15 @@ ActivityBase {
             model: sections
             width: horizontal ? main.width : sectionCellWidth
             height: horizontal ? sectionCellHeight : main.height - bar.height
-            x: 4
-            y: 4
+            x: initialX
+            y: initialY
             cellWidth: sectionCellWidth
             cellHeight: sectionCellHeight
             interactive: false
+
+            property int initialX: 4
+            property int initialY: 4
+
             Component {
                 id: sectionDelegate
                 Item {
@@ -184,6 +198,11 @@ ActivityBase {
             }
             highlightMoveDuration: 300
             focus: true
+            Behavior on y { NumberAnimation {
+                    duration: 120
+                    easing.type: Easing.InOutQuad
+                }
+            }
         }
 
         // Activities
@@ -283,6 +302,7 @@ ActivityBase {
                     sourceSize.width: iconWidth * 0.25
                     MouseArea {
                         anchors.fill: parent
+                        enabled: background.sectionVisible
                         onClicked: favorite = !favorite
                     }
                 }
