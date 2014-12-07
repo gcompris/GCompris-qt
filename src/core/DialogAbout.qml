@@ -26,13 +26,17 @@ DialogBackground {
     title: qsTr("About GCompris")
 
     //: Replace this string with your names, one name per line.
-    property string translators: qsTr("translator-credits")
+    property string translators: qsTr("translator-credits") ===
+                                 "translator-credits" ? "" : qsTr("translator-credits") + "<br/>"
     property string gcVersion: ApplicationInfo.GCVersion
     property string qtVersion: ApplicationInfo.QTVersion
 
-    content: "<center><b>" + qsTr("GCompris Home Page: http://gcompris.net") + "</b></center>" + "<br/>" +
-             "<center><b>" + "GCompris Qt " + gcVersion + "</b></center>" + "<br/>" +
-             "<center>" + "Based on Qt " + qtVersion + "</center>" + "<br/>" +
-             translators + "<br/>" +
-             "<center><b>" + "Copyright 2000-2014 Bruno Coudoin and Others" + "</b></center>" + "<br/>"
+    content:
+        "<center><b>" + "<a href='http://gcompris.net'>" +
+        qsTr("GCompris Home Page: http://gcompris.net") + "</a>" +
+        "</b></center>" + "<br/>" +
+        "<center><b>" + "GCompris Qt " + gcVersion + "</b></center>" + "<br/>" +
+        "<center>" + "Based on Qt " + qtVersion + "</center>" + "<br/>" +
+        translators +
+        "<center><b>" + "Copyright 2000-2014 Bruno Coudoin and Others" + "</b></center>" + "<br/>"
 }

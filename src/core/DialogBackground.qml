@@ -90,6 +90,7 @@ Rectangle {
                         font.pointSize: 16
                         wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.RichText
+                        onLinkActivated: Qt.openUrlExternally(link)
                     }
                 }
             }
