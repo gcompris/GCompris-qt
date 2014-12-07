@@ -27,15 +27,21 @@ DialogBackground {
     title: activityInfo.title
     property QtObject activityInfo: ActivityInfoTree.currentActivity
 
+    function getIcon() {
+        if(activityInfo.icon) {
+            return "<img align='right' src='qrc:/gcompris/src/activities/" + activityInfo.icon + "'/>"
+        }
+        return ""
+    }
+
     function getContent() {
-        var contentText = ""
+        var contentText = getIcon()
         contentText += "<b>" + activityInfo.description + "</b>"
         contentText += "<br/><br/>"
         if(activityInfo.author) {
             contentText += "<b>" + qsTr("Author") + ": </b>" + activityInfo.author
             contentText += "<br/><br/>"
         }
-        contentText += "<br/><br/>"
         if(activityInfo.prerequisite) {
             contentText += "<b>" + qsTr("Prerequisite") + ": </b>" + activityInfo.prerequisite
             contentText += "<br/><br/>"
@@ -45,7 +51,7 @@ DialogBackground {
             contentText += "<br/><br/>"
         }
         if(activityInfo.manual) {
-            var manual = activityInfo.manual.replace(/^    (.*)$/gm,'<ul><li>$1</li></ul>')
+            var manual = activityInfo.manual.replace(/^    (.*)\n/gm,'<ul><li>$1</li></ul>')
             manual = manual.replace(/\n/gm,'<br/>')
             contentText += "<b>" + qsTr("Manual") + ": </b>" + manual
             contentText += "<br/><br/>"
@@ -58,6 +64,7 @@ DialogBackground {
             contentText += "<b>" + qsTr("Section: ") + "</b>" + activityInfo.section
             contentText += "<br/><br/>"
         }
+        console.log(contentText)
         return contentText
     }
 
