@@ -64,7 +64,6 @@ DialogBackground {
             contentText += "<b>" + qsTr("Section: ") + "</b>" + activityInfo.section
             contentText += "<br/><br/>"
         }
-        console.log(contentText)
         return contentText
     }
 
