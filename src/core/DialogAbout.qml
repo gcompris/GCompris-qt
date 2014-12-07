@@ -30,7 +30,7 @@ DialogBackground {
                                  "translator-credits" ? "" : qsTr("translator-credits") + "<br/>"
     // Let's try to maitain here the contributor list sorted by number of commits
     // git shortlog -se | sort -nr | cut -c8- | sed 's/ <.*>/,/' | xargs
-    property string developers: "Bruno Coudoin, Johnny Jazeix, Holger Kaelberer, Aruna Sankaranarayanan, Stephane Mankowski, Thibaut ROMAIN, Holger Kaelberer, Manuel Tondeur, Bharath M S, Yuri Chornoivan, JB BUTET, Emmanuel Charruau, Arkit Vora, Thib ROMAIN, Luigi Toscano, Bharath Brat, Amit Tomar"
+    property string developers: "Bruno Coudoin, Johnny Jazeix, Holger Kaelberer, Aruna Sankaranarayanan, Stephane Mankowski, Thibaut ROMAIN, Manuel Tondeur, Bharath M S, Yuri Chornoivan, JB BUTET, Emmanuel Charruau, Arkit Vora, Luigi Toscano, Amit Tomar"
     property string gcVersion: ApplicationInfo.GCVersion
     property string qtVersion: ApplicationInfo.QTVersion
     property string gcVersionTxt: qsTr("GCompris %1").arg(gcVersion)
@@ -42,7 +42,9 @@ DialogBackground {
         "</b></center>" +
         "<center>" + gcVersionTxt + " " + qtVersionTxt + "</center>" + "<br/>" +
 
-        qsTr("<b>GCompris</b> is a Free Software developed within the KDE network") +
+        "<img align='right' width='305' height='190' src='qrc:/gcompris/src/core/resource/gcompris.png'/>" +
+
+        qsTr("<b>GCompris</b> is a Free Software developed within the KDE network.") +
 
         "<br /> <br />" +
 
@@ -57,6 +59,8 @@ DialogBackground {
              "more information about the KDE community and the software we produce.")
         .arg("http://www.gnu.org/philosophy/free-sw.html")
         .arg("http://www.kde.org/") +
+
+        "<img align='right' src='qrc:/gcompris/src/core/resource/aboutkde.png'/>" +
 
         "<br /> <br />" +
 
@@ -106,7 +110,7 @@ DialogBackground {
 
         "<br /> <br />" +
 
-        qsTr("<b>A big thanks to the develoment team:</b> %1").arg(developers) +
+        qsTr("<b>A big thanks to the development team:</b> %1").arg(developers) +
 
         "<br /> <br />" +
 
