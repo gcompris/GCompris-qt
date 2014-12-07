@@ -60,8 +60,9 @@ Rectangle {
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     color: "black"
-                    font.pointSize: 24
+                    font.pointSize: 20
                     font.weight: Font.DemiBold
+                    wrapMode: Text.WordWrap
                 }
             }
             Rectangle {
@@ -87,7 +88,7 @@ Rectangle {
                         text: content
                         width: flick.width
                         height: flick.height
-                        font.pointSize: 16
+                        font.pointSize: 14
                         wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.RichText
                         onLinkActivated: Qt.openUrlExternally(link)
