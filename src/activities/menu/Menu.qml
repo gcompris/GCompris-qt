@@ -254,7 +254,7 @@ ActivityBase {
                     }
                     Image {
                         anchors {
-                            right: parent.right
+                            horizontalCenter: parent.horizontalCenter
                             top: parent.top
                             rightMargin: 4
                         }

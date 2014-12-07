@@ -28,7 +28,7 @@ Component {
         
         anchors {
             fill: parent
-            bottomMargin: bar.height
+            bottomMargin: bar.height * 1.2
         }
         Rectangle {
             anchors.fill: parent
