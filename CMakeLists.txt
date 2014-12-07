@@ -108,9 +108,9 @@ include(cmake/rcc.cmake)
     WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
     )
 # Install translations
-add_custom_target(BuildTranslations
+add_custom_target(getSvnTranslations
   DEPENDS retrievePoFilesFromSvn
-  COMMENT "Re-run cmake after this to be able to run UpdateTranslations with the latest files"
+  COMMENT "Re-run cmake after this to be able to run BuildTranslations with the latest files"
   )
 
 # Get all po files in po/. You can get them doing : python2 tools/l10n-fetch-po-files.py
@@ -134,9 +134,9 @@ foreach(PoSource ${TRANSLATIONS_FILES})
 endforeach()
 
 # Install translations
-add_custom_target(UpdateTranslations
+add_custom_target(BuildTranslations
   DEPENDS ${QM_FILES}
-  COMMENT "If you don't have the .po, you need to BuildTranslations and re-run cmake first"
+  COMMENT "If you don't have the .po, you need to run make getSvnTranslations first then re-run cmake"
   )
 
 if(CMAKE_HOST_APPLE)
