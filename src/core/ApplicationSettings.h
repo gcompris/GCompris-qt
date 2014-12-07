@@ -66,6 +66,7 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(quint32 filterLevelMin READ filterLevelMin WRITE setFilterLevelMin NOTIFY filterLevelMinChanged)
     Q_PROPERTY(quint32 filterLevelMax READ filterLevelMax WRITE setFilterLevelMax NOTIFY filterLevelMaxChanged)
 	Q_PROPERTY(bool isDemoMode READ isDemoMode WRITE setDemoMode NOTIFY demoModeChanged)
+	Q_PROPERTY(bool sectionVisible READ sectionVisible WRITE setSectionVisible NOTIFY sectionVisibleChanged)
 
     // admin group
     Q_PROPERTY(QString downloadServerUrl READ downloadServerUrl WRITE setDownloadServerUrl NOTIFY downloadServerUrlChanged)
@@ -160,6 +161,13 @@ public:
 		emit demoModeChanged();
 	}
 
+	bool sectionVisible() const { return m_sectionVisible; }
+	void setSectionVisible(const bool newMode) {
+		qDebug() << "c++ setSectionVisible=" << newMode;
+		m_sectionVisible = newMode;
+		emit sectionVisibleChanged();
+	}
+
 	QString downloadServerUrl() const { return m_downloadServerUrl; }
     void setDownloadServerUrl(const QString newDownloadServerUrl) {
         m_downloadServerUrl = newDownloadServerUrl;
@@ -190,6 +198,7 @@ protected slots:
     Q_INVOKABLE void notifyFilterLevelMinChanged();
     Q_INVOKABLE void notifyFilterLevelMaxChanged();
 	Q_INVOKABLE void notifyDemoModeChanged();
+	Q_INVOKABLE void notifySectionVisibleChanged();
 
     Q_INVOKABLE void notifyDownloadServerUrlChanged();
 
@@ -215,6 +224,7 @@ signals:
     void filterLevelMinChanged();
     void filterLevelMaxChanged();
 	void demoModeChanged();
+	void sectionVisibleChanged();
 
     void downloadServerUrlChanged();
 
@@ -242,6 +252,7 @@ private:
     QString m_locale;
     QString m_font;
 	bool m_isDemoMode;
+	bool m_sectionVisible;
 
     QString m_downloadServerUrl;
 

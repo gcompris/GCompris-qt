@@ -112,15 +112,12 @@ ActivityBase {
         property int sectionCellHeight: sectionIconHeight * 1.1
 
         property var currentActiveGrid: activitiesGrid
-        property bool sectionVisible: true
         property bool keyboardMode: false
         Keys.onPressed: {
             if (event.modifiers === Qt.ControlModifier &&
                     event.key === Qt.Key_S) {
                 // Ctrl+S toggle show / hide section
-                section.x = sectionVisible ? -sectionCellWidth : section.initialX
-                section.y = sectionVisible ? -sectionCellHeight : section.initialY
-                sectionVisible = !sectionVisible
+                ApplicationSettings.sectionVisible = !ApplicationSettings.sectionVisible
             }
         }
         Keys.onReleased: {
@@ -141,8 +138,8 @@ ActivityBase {
             model: sections
             width: horizontal ? main.width : sectionCellWidth
             height: horizontal ? sectionCellHeight : main.height - bar.height
-            x: initialX
-            y: initialY
+            x: ApplicationSettings.sectionVisible ? section.initialX : -sectionCellWidth
+            y: ApplicationSettings.sectionVisible ? section.initialY : -sectionCellHeight
             cellWidth: sectionCellWidth
             cellHeight: sectionCellHeight
             interactive: false
@@ -300,9 +297,9 @@ ActivityBase {
                         rightMargin: -width * 0.2
                     }
                     sourceSize.width: iconWidth * 0.25
+                    visible: ApplicationSettings.sectionVisible
                     MouseArea {
                         anchors.fill: parent
-                        enabled: background.sectionVisible
                         onClicked: favorite = !favorite
                     }
                 }

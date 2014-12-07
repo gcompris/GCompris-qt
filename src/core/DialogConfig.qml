@@ -197,6 +197,15 @@ Rectangle {
                             }
                         }
 
+                        GCDialogCheckBox {
+                            id: sectionVisibleBox
+                            checked: sectionVisible
+                            text: qsTr("The activity section menu is visible")
+                            onCheckedChanged: {
+                                sectionVisible = checked;
+                            }
+                        }
+
                         Row {
                             spacing: 5
                             ComboBox {
@@ -462,6 +471,7 @@ Rectangle {
     property bool isFullscreen: ApplicationSettings.isFullscreen
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
+    property bool sectionVisible: ApplicationSettings.sectionVisible
     property bool isDemoMode
 
     onStart: {
@@ -482,6 +492,9 @@ Rectangle {
 
         isAutomaticDownloadsEnabled = ApplicationSettings.isAutomaticDownloadsEnabled
         enableAutomaticDownloadsBox.checked = isAutomaticDownloadsEnabled
+
+        sectionVisible = ApplicationSettings.sectionVisible
+        sectionVisibleBox.checked = sectionVisible
 
         // Set locale
         for(var i = 0 ; i < languages.count ; i ++) {
@@ -507,6 +520,7 @@ Rectangle {
         ApplicationSettings.isFullscreen = isFullscreen
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
+        ApplicationSettings.sectionVisible = sectionVisible
 
         ApplicationSettings.isEmbeddedFont = fonts.get(fontBox.currentIndex).isLocalResource;
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
@@ -618,6 +632,7 @@ Rectangle {
     function hasConfigChanged() {
         return (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale ||
                 (ApplicationSettings.isDemoMode != isDemoMode) ||
+                (ApplicationSettings.sectionVisible != sectionVisible) ||
                 (ApplicationSettings.font != fonts.get(fontBox.currentIndex).text) ||
                 (ApplicationSettings.isEmbeddedFont != fonts.get(fontBox.currentIndex).isLocalResource) ||
                 (ApplicationSettings.isAudioVoicesEnabled != isAudioVoicesEnabled) ||

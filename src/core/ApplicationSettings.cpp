@@ -78,6 +78,7 @@ static const QString FILTER_LEVEL_MAX = "filterLevelMax";
 static const QString DEFAULT_CURSOR = "defaultCursor";
 static const QString NO_CURSOR = "noCursor";
 static const QString DEMO_KEY = "demo";
+static const QString SECTION_VISIBLE = "sectionVisible";
 
 ApplicationSettings *ApplicationSettings::m_instance = NULL;
 
@@ -108,7 +109,8 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
 	m_isDemoMode = m_config.value(DEMO_KEY, false).toBool();
 #endif
 
-    m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
+	m_sectionVisible = m_config.value(SECTION_VISIBLE, true).toBool();
+	m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
             !ApplicationInfo::getInstance()->isMobile()).toBool();
     m_filterLevelMin = m_config.value(FILTER_LEVEL_MIN, 1).toUInt();
     m_filterLevelMax = m_config.value(FILTER_LEVEL_MAX, 6).toUInt();
@@ -139,6 +141,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, SIGNAL(automaticDownloadsEnabledChanged()), this, SLOT(notifyAutomaticDownloadsEnabledChanged()));
     connect(this, SIGNAL(filterLevelMinChanged()), this, SLOT(notifyFilterLevelMinChanged()));
     connect(this, SIGNAL(filterLevelMaxChanged()), this, SLOT(notifyFilterLevelMaxChanged()));
+	connect(this, SIGNAL(sectionVisibleChanged()), this, SLOT(notifySectionVisibleChanged()));
 	connect(this, SIGNAL(demoModeChanged()), this, SLOT(notifyDemoModeChanged()));
 	connect(this, SIGNAL(downloadServerUrlChanged()), this, SLOT(notifyDownloadServerUrlChanged()));
     connect(this, SIGNAL(exeCountChanged()), this, SLOT(notifyExeCountChanged()));
@@ -160,6 +163,7 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(FILTER_LEVEL_MIN, m_filterLevelMin);
 	m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
 	m_config.setValue(DEMO_KEY, m_isDemoMode);
+	m_config.setValue(SECTION_VISIBLE, m_sectionVisible);
 	m_config.setValue(DEFAULT_CURSOR, m_defaultCursor);
 	m_config.setValue(NO_CURSOR, m_noCursor);
 	m_config.endGroup();
@@ -243,6 +247,12 @@ void ApplicationSettings::notifyDemoModeChanged()
 {
 	updateValueInConfig(GENERAL_GROUP_KEY, DEMO_KEY, m_isDemoMode);
 	qDebug() << "notifyDemoMode: " << m_isDemoMode;
+}
+
+void ApplicationSettings::notifySectionVisibleChanged()
+{
+	updateValueInConfig(GENERAL_GROUP_KEY, SECTION_VISIBLE, m_sectionVisible);
+	qDebug() << "notifySectionVisible: " << m_sectionVisible;
 }
 
 void ApplicationSettings::notifyDownloadServerUrlChanged()
