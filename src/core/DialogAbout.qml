@@ -44,7 +44,7 @@ DialogBackground {
 
         "<img align='right' width='305' height='190' src='qrc:/gcompris/src/core/resource/gcompris.png'/>" +
 
-        qsTr("<b>GCompris</b> is a Free Software developed within the KDE network.") +
+        qsTr("<b>GCompris</b> is a Free Software developed within the KDE community.") +
 
         "<br /> <br />" +
 
