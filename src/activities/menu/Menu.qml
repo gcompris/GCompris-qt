@@ -210,6 +210,48 @@ ActivityBase {
                          (background.width - section.width) / Math.floor((background.width - section.width) / iconWidth)
         property int activityCellHeight: iconHeight * 1.5
 
+        Loader {
+            id: warningOverlay
+            anchors {
+                top: horizontal ? section.bottom : parent.top
+                bottom: parent.bottom
+                left: horizontal ? parent.left : section.right
+                right: parent.right
+                margins: 4
+            }
+            active: ActivityInfoTree.menuTree.length === 0
+            sourceComponent: Item {
+                anchors.fill: parent
+                GCText {
+                    id: instructionTxt
+                    font.pointSize: 14
+                    y: height * 0.2
+                    x: (parent.width - width) / 2
+                    z: 2
+                    width: parent.width * 0.6
+                    horizontalAlignment: Text.AlignHCenter
+                    wrapMode: Text.WordWrap
+                    font.weight: Font.DemiBold
+                    color: 'white'
+                    text: qsTr("You can put your favorite activities here. " +
+                               "To do so, on your prefered activities select the star icon on it's right")
+                }
+                Rectangle {
+                    anchors.fill: instructionTxt
+                    z: 1
+                    opacity: 0.5
+                    radius: 10
+                    border.width: 2
+                    border.color: "black"
+                    gradient: Gradient {
+                        GradientStop { position: 0.0; color: "#000" }
+                        GradientStop { position: 0.9; color: "#666" }
+                        GradientStop { position: 1.0; color: "#AAA" }
+                    }
+                }
+            }
+        }
+
         GridView {
             id: activitiesGrid
             anchors {
