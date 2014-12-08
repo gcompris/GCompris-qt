@@ -155,10 +155,17 @@ public:
     }
 
 	bool isDemoMode() const { return m_isDemoMode; }
-	void setDemoMode(const bool newMode) {
-		qDebug() << "c++ setDemoMode=" << newMode;
-		m_isDemoMode = newMode;
-		emit demoModeChanged();
+    void setDemoMode(const bool newMode);
+
+    // Payment API
+    // Call a payment system to sync our demoMode state with it
+    void checkPayment();
+    // Called by the payment system
+    void bought(const bool isBought) {
+        if(m_isDemoMode != !isBought) {
+            m_isDemoMode = !isBought;
+            emit demoModeChanged();
+        }
 	}
 
 	bool sectionVisible() const { return m_sectionVisible; }

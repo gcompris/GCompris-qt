@@ -28,6 +28,12 @@ set(gcompris_SRCS
    config.h.in
 )
 
+if(ANDROID)
+  list(APPEND gcompris_SRCS ApplicationSettingsAndroid.cpp)
+else()
+  list(APPEND gcompris_SRCS ApplicationSettingsDefault.cpp)
+endif()
+
 include_directories(
   "${CMAKE_CURRENT_BINARY_DIR}"   # to find config.h
 )
@@ -49,7 +55,7 @@ endif()
 
 if(ANDROID)
   add_library(${GCOMPRIS_EXECUTABLE_NAME} SHARED ${gcompris_SRCS} ${gcompris_MOC})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Core Svg Xml XmlPatterns)
+  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Core Svg Xml XmlPatterns AndroidExtras)
 else()
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
   qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Core)

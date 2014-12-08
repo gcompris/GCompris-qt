@@ -99,10 +99,7 @@ Rectangle {
                             width: parent.width
                             spacing: 10
 
-                            property bool checked: !isDemoMode
-                            onCheckedChanged: {
-                                isDemoMode = !checked;
-                            }
+                            property bool checked: !ApplicationSettings.isDemoMode
 
                             Image {
                                     sourceSize.height: 50 * ApplicationInfo.ratio
@@ -111,14 +108,15 @@ Rectangle {
                                                               "qrc:/gcompris/src/core/resource/cancel.svgz"
                                     MouseArea {
                                         anchors.fill: parent
-                                        onClicked: isDemoMode ? console.log("call buying api") : ""
+                                        //onClicked: ApplicationSettings.isDemoMode ? console.log("call buying api") : ""
+                                        onClicked: ApplicationSettings.isDemoMode = !ApplicationSettings.isDemoMode
                                     }
-                                }
+                            }
 
                             Button {
                                 width: parent.parent.width - 50 * ApplicationInfo.ratio - 10 * 2
                                 height: parent.height
-                                enabled: isDemoMode
+                                enabled: ApplicationSettings.isDemoMode
                                 anchors.leftMargin: 10
                                 anchors.verticalCenter: parent.verticalCenter
                                 text: demoModeBox.checked ? qsTr("You have the full version") :
@@ -132,9 +130,9 @@ Rectangle {
                                         radius: 10
                                         gradient: Gradient {
                                             GradientStop { position: 0 ; color: control.pressed ? "#87ff5c" :
-                                                                                                  isDemoMode ? "#ffe85c" : "#EEEEEE"}
+                                                                                                  ApplicationSettings.isDemoMode ? "#ffe85c" : "#EEEEEE"}
                                             GradientStop { position: 1 ; color: control.pressed ? "#44ff00" :
-                                                                                                  isDemoMode ? "#f8d600" : "#AAAAAA"}
+                                                                                                  ApplicationSettings.isDemoMode ? "#f8d600" : "#AAAAAA"}
                                         }
                                     }
                                     label: GCText {
@@ -146,7 +144,7 @@ Rectangle {
                                 }
 
                                 onClicked: {
-                                    isDemoMode = !isDemoMode
+                                    ApplicationSettings.isDemoMode = !ApplicationSettings.isDemoMode
                                     console.log("call buying api")
                                 }
                             }
@@ -472,14 +470,11 @@ Rectangle {
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
     property bool sectionVisible: ApplicationSettings.sectionVisible
-    property bool isDemoMode
 
     onStart: {
         // Synchronize settings with data
         isAudioVoicesEnabled = ApplicationSettings.isAudioVoicesEnabled
         enableAudioVoicesBox.checked = isAudioVoicesEnabled
-
-        isDemoMode = ApplicationSettings.isDemoMode
 
         isAudioEffectsEnabled = ApplicationSettings.isAudioEffectsEnabled
         enableAudioEffectsBox.checked = isAudioEffectsEnabled
@@ -515,7 +510,6 @@ Rectangle {
 
     function save() {
         ApplicationSettings.isAudioVoicesEnabled = isAudioVoicesEnabled
-        ApplicationSettings.isDemoMode = isDemoMode
         ApplicationSettings.isAudioEffectsEnabled = isAudioEffectsEnabled
         ApplicationSettings.isFullscreen = isFullscreen
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
@@ -631,7 +625,6 @@ Rectangle {
 
     function hasConfigChanged() {
         return (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale ||
-                (ApplicationSettings.isDemoMode != isDemoMode) ||
                 (ApplicationSettings.sectionVisible != sectionVisible) ||
                 (ApplicationSettings.font != fonts.get(fontBox.currentIndex).text) ||
                 (ApplicationSettings.isEmbeddedFont != fonts.get(fontBox.currentIndex).isLocalResource) ||

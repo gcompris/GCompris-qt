@@ -306,6 +306,6 @@ QObject *ApplicationSettings::systeminfoProvider(QQmlEngine *engine,
 
 void ApplicationSettings::init()
 {
-    qmlRegisterSingletonType<ApplicationSettings>("GCompris", 1, 0,
-                                                  "ApplicationSettings", systeminfoProvider);
+	qmlRegisterSingletonType<ApplicationSettings>("GCompris", 1, 0,
+												  "ApplicationSettings", systeminfoProvider);
 }
