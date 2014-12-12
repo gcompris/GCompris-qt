@@ -145,6 +145,15 @@ else()
   install(DIRECTORY ${GCOMPRIS_TRANSLATIONS_DIR} DESTINATION ${_data_dest_dir})
 endif()
 
+# Build standalone package option -> if ON, we will copy the required Qt files in the build package.
+# If OFF, "make install" will not copy Qt files so only GCompris files will be packaged.
+# By default, it is true on Windows (as we deliver NSIS package), macOS (bundled), android (apk) and false on linux (to do make install)
+# If you want to create a STGZ package for linux (auto-extractible), override this variable by typing : cmake -DBUILD_STANDALONE=ON
+if(UNIX AND NOT ANDROID)
+  option(BUILD_STANDALONE "Build a standalone package when typing 'make package'" OFF)
+else()
+  option(BUILD_STANDALONE "Build a standalone package when typing 'make package'" ON)
+endif()
 
 add_subdirectory(src)
 

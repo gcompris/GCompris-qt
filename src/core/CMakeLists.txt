@@ -68,111 +68,111 @@ install(TARGETS ${GCOMPRIS_EXECUTABLE_NAME}
   LIBRARY DESTINATION lib
   BUNDLE DESTINATION .)
 
-# Qt plugins to install
-set(_qt_plugins Qt5::QJpegPlugin)
-if(APPLE)
-  list(APPEND _qt_plugins Qt5::QTgaPlugin Qt5::QTiffPlugin Qt5::QCocoaIntegrationPlugin)
-elseif(WIN32)
-  list(APPEND _qt_plugins Qt5::QWindowsIntegrationPlugin)
-elseif(UNIX AND NOT ANDROID)
-  list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin)
-endif()
-
-# Qml plugins to install
-if(WIN32)
-  set(_lib_prefix "")
-else()
-  set(_lib_prefix "lib")
-endif()
-
-set(_qt_plugins2 imageformats/${_lib_prefix}qsvg)
-if(UNIX AND NOT ANDROID)
-  list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}gstaudiodecoder
-    mediaservice/${_lib_prefix}gstcamerabin
-    mediaservice/${_lib_prefix}gstmediacapture
-    mediaservice/${_lib_prefix}gstmediaplayer)
-endif()
-
-set(_qml_plugins
-  QtQuick/Controls/${_lib_prefix}qtquickcontrolsplugin
-  QtQuick/Window.2/${_lib_prefix}windowplugin
-  QtQuick/Particles.2/${_lib_prefix}particlesplugin
-  QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin
-  QtQuick/Dialogs/${_lib_prefix}dialogplugin
-  QtQuick.2/${_lib_prefix}qtquick2plugin
-  QtMultimedia/${_lib_prefix}declarative_multimedia)
-
-if(NOT WIN32)
-  list(APPEND QtAudioEngine/${_lib_prefix}declarative_audioengine)
-endif()
-
-set(GCOMPRIS_OTHER_LIBS)
-
-if(APPLE)
-  set(_app gcompris-qt.app)
-  set(_qtconf_destdir ${_app}/Contents/Resources)
-  set(_qt_plugins_destdir ${_app}/Contents/plugins)
-  set(_qt_qml_destdir ${_app}/Contents/qml)
-  set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/${_app}")
-  set_target_properties(gcompris-qt PROPERTIES
-    MACOSX_BUNDLE_INFO_STRING "${GCOMPRIS_VERSION}, Copyright 2000-2014 Bruno Coudoin and Others"
-    MACOSX_BUNDLE_ICON_FILE "${gcompris_icon}"
-    MACOSX_BUNDLE_GUI_IDENTIFIER "net.gcompris"
-    MACOSX_BUNDLE_LONG_VERSION_STRING "${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION}.${GCOMPRIS_PATCH_VERSION}"
-    MACOSX_BUNDLE_BUNDLE_NAME "gcompris-qt"
-    MACOSX_BUNDLE_SHORT_VERSION_STRING "${GCOMPRIS_VERSION}"
-    MACOSX_BUNDLE_BUNDLE_VERSION "${GCOMPRIS_VERSION}"
-    MACOSX_BUNDLE_COPYRIGHT "Copyright 2000-2014 Bruno Coudoin and Others.")
-  set_source_files_properties(${GCOMPRIS_RESOURCES}/${gcompris_icon} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
-else()
-  set(_qtconf_destdir bin)
-  set(_qt_plugins_destdir bin/plugins)
-  set(_qt_qml_destdir bin/qml)
-  if(CMAKE_HOST_WIN32)
-    set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/${GCOMPRIS_EXECUTABLE_NAME}.exe")
-  else()
-    set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/${GCOMPRIS_EXECUTABLE_NAME}")
+if(BUILD_STANDALONE)
+  # Qt plugins to install
+  set(_qt_plugins Qt5::QJpegPlugin)
+  if(APPLE)
+    list(APPEND _qt_plugins Qt5::QTgaPlugin Qt5::QTiffPlugin Qt5::QCocoaIntegrationPlugin)
+  elseif(WIN32)
+    list(APPEND _qt_plugins Qt5::QWindowsIntegrationPlugin)
+  elseif(UNIX AND NOT ANDROID)
+    list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin)
   endif()
-endif()
 
-# install qt.conf file
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/qt.conf DESTINATION ${_qtconf_destdir})
+  # Qml plugins to install
+  if(WIN32)
+    set(_lib_prefix "")
+  else()
+    set(_lib_prefix "lib")
+  endif()
 
-# install qt plugins
-foreach(_plugin ${_qt_plugins})
-  installQtPlugin(${_plugin} ${_qt_plugins_destdir} _lib)
-  list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
-endforeach()
-foreach(_plugin ${_qt_plugins2})
-  installQtPlugin2(${_plugin} ${_qt_plugins_destdir} _lib)
-  list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
-endforeach()
+  set(_qt_plugins2 imageformats/${_lib_prefix}qsvg)
+  if(UNIX AND NOT ANDROID)
+    list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}gstaudiodecoder
+      mediaservice/${_lib_prefix}gstcamerabin
+      mediaservice/${_lib_prefix}gstmediacapture
+      mediaservice/${_lib_prefix}gstmediaplayer)
+  endif()
 
-# install qml plugins
-foreach(_plugin ${_qml_plugins})
-  installQmlPlugin(${_plugin} ${_qt_qml_destdir} _lib)
-  list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
-endforeach()
+  set(_qml_plugins
+    QtQuick/Controls/${_lib_prefix}qtquickcontrolsplugin
+    QtQuick/Window.2/${_lib_prefix}windowplugin
+    QtQuick/Particles.2/${_lib_prefix}particlesplugin
+    QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin
+    QtQuick/Dialogs/${_lib_prefix}dialogplugin
+    QtQuick.2/${_lib_prefix}qtquick2plugin
+    QtMultimedia/${_lib_prefix}declarative_multimedia)
 
-# install QtGraphicalEffects (which is not a lib but only qml files)
-set(_qml_subdir QtGraphicalEffects)
-getQtQmlPath(_qt_qml_path)
-install(DIRECTORY ${_qt_qml_path}/QtGraphicalEffects DESTINATION ${_qt_qml_destdir})
+  if(NOT WIN32)
+    list(APPEND QtAudioEngine/${_lib_prefix}declarative_audioengine)
+  endif()
 
-# Hack: do not fixup Qt and Qml plugins on Windows because fixup_bundle takes ages (cmake bug ?)
-if(WIN32)
-  set(GCOMPRIS_OTHER_LIBS "")
-endif()
+  set(GCOMPRIS_OTHER_LIBS)
+
+  if(APPLE)
+    set(_app gcompris-qt.app)
+    set(_qtconf_destdir ${_app}/Contents/Resources)
+    set(_qt_plugins_destdir ${_app}/Contents/plugins)
+    set(_qt_qml_destdir ${_app}/Contents/qml)
+    set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/${_app}")
+    set_target_properties(gcompris-qt PROPERTIES
+      MACOSX_BUNDLE_INFO_STRING "${GCOMPRIS_VERSION}, Copyright 2000-2014 Bruno Coudoin and Others"
+      MACOSX_BUNDLE_ICON_FILE "${gcompris_icon}"
+      MACOSX_BUNDLE_GUI_IDENTIFIER "net.gcompris"
+      MACOSX_BUNDLE_LONG_VERSION_STRING "${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION}.${GCOMPRIS_PATCH_VERSION}"
+      MACOSX_BUNDLE_BUNDLE_NAME "gcompris-qt"
+      MACOSX_BUNDLE_SHORT_VERSION_STRING "${GCOMPRIS_VERSION}"
+      MACOSX_BUNDLE_BUNDLE_VERSION "${GCOMPRIS_VERSION}"
+      MACOSX_BUNDLE_COPYRIGHT "Copyright 2000-2014 Bruno Coudoin and Others.")
+    set_source_files_properties(${GCOMPRIS_RESOURCES}/${gcompris_icon} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
+  else()
+    set(_qtconf_destdir bin)
+    set(_qt_plugins_destdir bin/plugins)
+    set(_qt_qml_destdir bin/qml)
+    if(CMAKE_HOST_WIN32)
+      set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/${GCOMPRIS_EXECUTABLE_NAME}.exe")
+    else()
+      set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/bin/${GCOMPRIS_EXECUTABLE_NAME}")
+    endif()
+  endif()
+
+  # install qt.conf file
+  install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/qt.conf DESTINATION ${_qtconf_destdir})
+
+  # install qt plugins
+  foreach(_plugin ${_qt_plugins})
+    installQtPlugin(${_plugin} ${_qt_plugins_destdir} _lib)
+    list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
+  endforeach()
+  foreach(_plugin ${_qt_plugins2})
+    installQtPlugin2(${_plugin} ${_qt_plugins_destdir} _lib)
+    list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
+  endforeach()
+
+  # install qml plugins
+  foreach(_plugin ${_qml_plugins})
+    installQmlPlugin(${_plugin} ${_qt_qml_destdir} _lib)
+    list(APPEND GCOMPRIS_OTHER_LIBS ${_lib})
+  endforeach()
+
+  # install QtGraphicalEffects (which is not a lib but only qml files)
+  set(_qml_subdir QtGraphicalEffects)
+  getQtQmlPath(_qt_qml_path)
+  install(DIRECTORY ${_qt_qml_path}/QtGraphicalEffects DESTINATION ${_qt_qml_destdir})
+endif(BUILD_STANDALONE)
+
+# Hack: do not fixup Qt and Qml plugins on Windows because fixup_bundle takes ages (cmake bug ?) -> Johnny : we need this even if it takes time because some required dependencies are pulled here
+#if(WIN32) set(GCOMPRIS_OTHER_LIBS "") endif()
 
 # install fixup_bundle script to resolve and fixup runtime dependencies
-# FIXME commented as it breaks KDE jenkins, seems to be MacOSX specific
-# This should not be triggered at make install but only on make package
-#configure_file(${CMAKE_SOURCE_DIR}/cmake/FixBundle.cmake.in FixBundle.cmake)
-#install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
+if(BUILD_STANDALONE)
+  configure_file(${CMAKE_SOURCE_DIR}/cmake/FixBundle.cmake.in FixBundle.cmake)
+  install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
 
-# install a startup script for linux bundle
-if(UNIX)
-  install(PROGRAMS ../../tools/gcompris-qt.sh DESTINATION bin)
+  # install a startup script for linux bundle
+  if(UNIX)
+    install(PROGRAMS ../../tools/gcompris-qt.sh DESTINATION bin)
+  endif()
 endif()
 
 # Packaging
