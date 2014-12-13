@@ -86,6 +86,10 @@ int main(int argc, char *argv[])
 	File::init();
 	DownloadManager::init();
 
+    // Must be done after ApplicationSettings is constructed because we get an
+    // async callback from the payment system
+    ApplicationSettings::getInstance()->checkPayment();
+
     // Load configuration
     QString locale;
     // Getting fullscreen mode from config if exist, else true is default value
