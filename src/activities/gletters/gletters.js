@@ -59,6 +59,7 @@ var wgDefaultFallSpeed = 8000;
 var wgDefaultSpeed = 170;
 var wgAddSpeed = 20;
 var wgAddFallSpeed = 1000;
+var wgMaxFallingItems;
 
 var droppedWords;
 var currentWord = null;  // reference to the word currently typing, null if n/a
@@ -85,6 +86,7 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1;
+    wgMaxFallingItems = 3
 
     if (currentSubLevel == 0) {
         // initialize level
@@ -286,6 +288,12 @@ function createWord()
 
 function dropWord()
 {
+    // Do not create too many falling items
+    if(droppedWords.length > wgMaxFallingItems) {
+        items.wordDropTimer.restart();
+        return
+    }
+
     if (wordComponent !== null)
         createWord();
     else {

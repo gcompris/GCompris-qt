@@ -162,7 +162,7 @@ ActivityBase {
         
         Timer {
             id: wordDropTimer
-            repeat: false        
+            repeat: false
             onTriggered: Activity.dropWord();
         }
 
