@@ -24,6 +24,7 @@
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/activities/imageid/lang_api.js" as Lang
 
 var currentLevel = 0;
 var currentSubLevel = 0;
@@ -33,19 +34,17 @@ var maxSubLevel = 0;
 var items;
 var baseUrl = "qrc:/gcompris/src/activities/imageid/resource/";
 var dataset = null;
+var lessons
+var goodWord
 
 function start(items_) {
     items = items_;
     currentLevel = 0;
     currentSubLevel = 0;
-    // determine maxLevel:
-    for (maxLevel = 0; items.file.exists(baseUrl + "/board" + (maxLevel + 1) + ".json")
-        ; maxLevel++);
-    if (maxLevel == 0) {
-        console.error("Imageid: No dataset found, can't continue!");
-        return;
-    } else
-        console.debug("Imageid: Found " + maxLevel + " levels");
+
+    dataset = Lang.load(items.parser, baseUrl + "words.json")
+    lessons = Lang.getAllLessons(dataset)
+    maxLevel = lessons.length
 
     initLevel();
 }
@@ -53,47 +52,43 @@ function start(items_) {
 function stop() {
 }
 
-function validateDataset(levels)
-{
-    if (levels.length < 1)
-        return false;
-    for (var i = 0; i < levels.length; i++) {
-        if (undefined === levels[i].image 
-            || undefined === levels[i].good
-            || undefined === levels[i].bad)
-            return false;
-    }
-    return true;
-}
-
 function getCorrectAnswer()
 {
-    return dataset[currentSubLevel].good;
+    return goodWord.translatedTxt
 }
 
 function initLevel() {
     items.bar.level = currentLevel + 1;
-    if (currentSubLevel == 0) {
-        // initialize level
-        var datasetUrl = baseUrl + "board" + (currentLevel + 1) + ".json";
-        dataset = items.parser.parseFromUrl(datasetUrl, validateDataset);
-        if (dataset == null) {
-            console.error("Imageid: Invalid dataset, can't continue: "
-                    + datasetUrl);
-            return;
-        }
-        maxSubLevel = dataset.length;
-        items.score.numberOfSubLevels = maxSubLevel;
-    }
+
+    var currentLesson = lessons[currentLevel]
+    var wordList = Lang.getLessonWords(dataset, currentLesson)
+
+    maxSubLevel = wordList.length;
+    items.score.numberOfSubLevels = maxSubLevel;
+
     // initialize sublevel
     items.score.currentSubLevel = currentSubLevel + 1;
+    goodWord = wordList[currentSubLevel]
+
+//    Core.shuffle(allWords);
+    var selectedWords = []
+    selectedWords.push(goodWord.translatedTxt)
+    for (var i = 0; i < wordList.length; i++) {
+        if(wordList[i].translatedTxt !== selectedWords[0])
+            selectedWords.push(wordList[i].translatedTxt)
+
+        if(selectedWords.length > 4)
+            break
+    }
+    // Push the result in the model
     items.wordListModel.clear();
-    // shuffle the words in the list so it is not always the first word to be the good one
-    var allWords = dataset[currentSubLevel].bad.slice().concat(dataset[currentSubLevel].good);
-    Core.shuffle(allWords);
-    for (var i = 0; i < allWords.length; i++)
-        items.wordListModel.append( {"word": allWords[i] } );
-    items.wordImage.source = baseUrl + "/" + dataset[currentSubLevel].image;
+    Core.shuffle(selectedWords);
+    for (var j = 0; j < selectedWords.length; j++) {
+        items.wordListModel.append({"word": selectedWords[j] })
+    }
+    items.wordImage.source = "qrc:/" + goodWord.image;
+    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath(goodWord.voice))
+
 }
 
 function nextLevel() {
