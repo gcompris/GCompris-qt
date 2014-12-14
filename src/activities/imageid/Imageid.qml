@@ -35,7 +35,7 @@ ActivityBase {
     
     pageComponent: Image {
         id: background
-        source: "qrc:/gcompris/src/activities/imageid/resource/imageid-bg.svgz"
+        source: "qrc:/gcompris/src/activities/imageid/resource/imageid-bg.svg"
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: parent.width
 
@@ -45,6 +45,8 @@ ActivityBase {
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
+
+            DownloadManager.updateResource("data/words/words.rcc")
         }
 
         QtObject {
@@ -57,7 +59,7 @@ ActivityBase {
             property alias wordImage: wordImage
             property alias wordListModel: wordListModel
             property alias parser: parser
-            property alias file: file
+            property GCAudio audioVoices: activity.audioVoices
         }
 
         onStart: { Activity.start(items) }
@@ -67,12 +69,6 @@ ActivityBase {
             id: parser
             
             onError: console.error("Imageid: Error parsing json: " + msg);
-        }
-        
-        File {
-            id: file
-            
-            onError: console.error("Imageid: File error: " + msg);
         }
         
         Item {
@@ -130,7 +126,7 @@ ActivityBase {
         
         Image {
             id: imageFrame
-            source: "qrc:/gcompris/src/activities/imageid/resource/imageid_frame.svgz"
+            source: "qrc:/gcompris/src/activities/imageid/resource/imageid_frame.svg"
             fillMode: Image.Stretch
             sourceSize.width: parent.width / 1.7
             z: 11
@@ -144,8 +140,8 @@ ActivityBase {
             Image {
                 id: wordImage
                 
-                sourceSize.height: background.height / 1.7
-                sourceSize.width: background.width / 1.7
+                sourceSize.height: parent.height / 1.7
+                sourceSize.width: parent.width / 1.7
                 
                 anchors {
                     centerIn: parent
