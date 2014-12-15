@@ -30,6 +30,7 @@ Image {
     property Item bar
     property string audioSrc
     property string question
+    property bool playAudioOnError: false
 
     MouseArea {
         anchors.fill: parent
@@ -38,7 +39,7 @@ Image {
                 particles.emitter.burst(40)
                 Activity.nextQuestion()
             } else {
-                if(audioSrc) {
+                if(audioSrc && item.playAudioOnError) {
                     item.audioVoices.play(audioSrc)
                 }
                 crossAnim.start()
