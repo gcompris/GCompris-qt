@@ -94,8 +94,11 @@ function initLevel() {
         items.wordListModel.append({"word": selectedWords[j] })
     }
     items.wordImage.source = "qrc:/" + goodWord.image;
-    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath(goodWord.voice))
+    playWord()
+}
 
+function playWord() {
+    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath(goodWord.voice))
 }
 
 function nextLevel() {

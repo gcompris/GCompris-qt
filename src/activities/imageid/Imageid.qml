@@ -5,6 +5,7 @@
  * Authors:
  *   Pascal Georges (pascal.georges1@free.fr) (GTK+ version)
  *   Holger Kaelberer <holger.k@elberer.de> (Qt Quick port)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Integration Lang dataset)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -45,7 +46,9 @@ ActivityBase {
 
         signal start
         signal stop
-        
+        signal voiceError
+        signal voiceDone
+
         Connections {
             target: DownloadManager
 
@@ -90,6 +93,9 @@ ActivityBase {
                 // Will register the resource file and call start() on callback
                 DownloadManager.updateResource("data/words/words.rcc")
             }
+            repeatItem.visible = false
+            activity.audioVoices.error.connect(voiceError)
+            activity.audioVoices.done.connect(voiceDone)
         }
 
         onStop: { Activity.stop() }
@@ -111,9 +117,8 @@ ActivityBase {
                 topMargin: 10
                 rightMargin: 10
                 bottomMargin: 10
-                leftMargin: 30
+                leftMargin: 10
             }
-            //width: parent.width * 0.4
             height: parent.height - bar.height - 2 * anchors.margins
         
             ListView {
@@ -157,7 +162,7 @@ ActivityBase {
             id: imageFrame
             source: "qrc:/gcompris/src/activities/imageid/resource/imageid_frame.svg"
             fillMode: Image.Stretch
-            sourceSize.width: parent.width / 1.7
+            sourceSize.width: parent.width * 0.5
             z: 11
             anchors {
                 verticalCenter: parent.verticalCenter
@@ -168,9 +173,7 @@ ActivityBase {
         
             Image {
                 id: wordImage
-                
-                sourceSize.height: parent.height / 1.7
-                sourceSize.width: parent.width / 1.7
+                sourceSize.width: parent.width * 0.6
                 
                 anchors {
                     centerIn: parent
@@ -191,6 +194,21 @@ ActivityBase {
             source: imageFrame
         }
             
+        onVoiceError: repeatItem.visible = false
+        onVoiceDone: repeatItem.visible = true
+
+        BarButton {
+            id: repeatItem
+            source: "qrc:/gcompris/src/core/resource/bar_repeat.svgz";
+            sourceSize.width: 80 * ApplicationInfo.ratio
+            anchors {
+                top: parent.top
+                right: parent.right
+                margins: 10
+            }
+            onClicked: Activity.playWord();
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
