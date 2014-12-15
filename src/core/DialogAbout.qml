@@ -42,7 +42,8 @@ DialogBackground {
         "</b></center>" +
         "<center>" + gcVersionTxt + " " + qtVersionTxt + "</center>" + "<br/>" +
 
-        "<img align='right' width='305' height='190' src='qrc:/gcompris/src/core/resource/gcompris.png'/>" +
+        "<img align='right' width='" + 305 * ApplicationInfo.ratio +
+        "' height='" + 190 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/core/resource/gcompris.png'/>" +
 
         qsTr("<b>GCompris</b> is a Free Software developed within the KDE community.") +
 
@@ -60,7 +61,8 @@ DialogBackground {
         .arg("http://www.gnu.org/philosophy/free-sw.html")
         .arg("http://www.kde.org/") +
 
-        "<img align='right' src='qrc:/gcompris/src/core/resource/aboutkde.png'/>" +
+        "<img align='right' width='" + 138 * ApplicationInfo.ratio +
+        "' height='" + 202 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/core/resource/aboutkde.png'/>" +
 
         "<br /> <br />" +
 
