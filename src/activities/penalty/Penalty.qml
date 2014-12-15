@@ -81,7 +81,7 @@ ActivityBase {
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                 }
-                font.pointSize: 16 * ApplicationInfo.ratio
+                font.pointSize: 16
                 color: "white"
                 style: Text.Outline
                 styleColor: "black"

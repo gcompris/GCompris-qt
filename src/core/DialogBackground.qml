@@ -88,7 +88,7 @@ Rectangle {
                         text: content
                         width: flick.width
                         height: flick.height
-                        font.pointSize: 14 * ApplicationInfo.ratio
+                        font.pointSize: 14
                         wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.RichText
                         onLinkActivated: Qt.openUrlExternally(link)

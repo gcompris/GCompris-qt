@@ -222,7 +222,7 @@ ActivityBase {
             wrapMode: TextEdit.WordWrap
             horizontalAlignment: TextEdit.AlignHCenter
             verticalAlignment: TextEdit.AlignVCenter
-            font.pointSize: 14 * ApplicationInfo.ratio
+            font.pointSize: 14
             // Remove the text when both keys has been pressed
             visible: bar.level === 1 &&
                      !(items.leftPressed && items.rightPressed)

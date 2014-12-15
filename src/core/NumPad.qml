@@ -59,7 +59,7 @@ Item {
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     text: numbers[index]
-                    font.pointSize: 28 * ApplicationInfo.ratio
+                    font.pointSize: 28
                     font.bold: true
 
                 }
