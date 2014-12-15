@@ -201,6 +201,7 @@ ActivityBase {
             id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svgz";
             sourceSize.width: 80 * ApplicationInfo.ratio
+            z: 12
             anchors {
                 top: parent.top
                 right: parent.right

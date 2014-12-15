@@ -50,6 +50,7 @@ function start() {
     currentSubLevel = 0;
 
     dataset = Lang.load(items.parser, baseUrl + "words.json")
+    Lang.getChapterModel(dataset)
     lessons = Lang.getAllLessons(dataset)
     maxLevel = lessons.length
 

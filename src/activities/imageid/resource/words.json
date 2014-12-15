@@ -4125,9 +4125,9 @@
         ]
     },
     {
-	"type": "chapter",
+        "type": "chapter",
         "name": "object",
-	"content": [
+        "content": [
             {
                 "type": "lesson",
                 "name": "construction",
