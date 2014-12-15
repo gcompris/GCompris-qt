@@ -81,7 +81,9 @@ Window {
     }
 
     Component.onCompleted: {
-        console.log("enter main.qml (run #" + ApplicationSettings.exeCount + ")")
+        console.log("enter main.qml (run #" + ApplicationSettings.exeCount
+                + ", ratio=" + ApplicationInfo.ratio
+                + ", dpi=" + Math.round(Screen.pixelDensity*25.4) + ")");
         if (ApplicationSettings.exeCount == 1) {
             // first run
             var buttonHandler = new Array();
