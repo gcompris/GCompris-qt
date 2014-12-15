@@ -41,7 +41,7 @@ Scalesboard {
                 "rightDrop": false,
                 "message": qsTr('The "kg" symbol at the end of a number means kilogram.') + " " +
                            qsTr('The kilogram is a unit of mass, a property which corresponds to the ' +
-                                'common perception of how "heavy” an object is.')
+                                'common perception of how "heavy" an object is.')
             },
             {
                 "masses": [[100, g(100)], [200, g(200)], [200, g(200)], [500, g(500)],
