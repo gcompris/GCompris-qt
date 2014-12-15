@@ -112,6 +112,8 @@ Item {
         onStopped: {
             if(files.length)
                 silenceTimer.start()
+            else
+                gcaudio.done()
         }
     }
 
