@@ -294,7 +294,7 @@ ActivityBase {
                     anchors {
                         top: parent.top
                         right: parent.right
-                        rightMargin: -width * 0.2
+                        rightMargin: 4 * ApplicationInfo.ratio
                     }
                     sourceSize.width: iconWidth * 0.25
                     visible: ApplicationSettings.sectionVisible
