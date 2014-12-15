@@ -127,15 +127,26 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | repeat }
+            content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onRepeatClicked: if (ApplicationSettings.isAudioVoicesEnabled)
-                                 questionItem.initQuestion()
+        }
+
+        BarButton {
+            source: "qrc:/gcompris/src/core/resource/bar_repeat.svgz";
+            sourceSize.width: 80 * ApplicationInfo.ratio
+            z: bar.z + 1
+            anchors {
+                bottom: parent.bottom
+                right: parent.right
+                margins: 10 * ApplicationInfo.ratio
+            }
+            onClicked: if (ApplicationSettings.isAudioVoicesEnabled)
+                           questionItem.initQuestion()
         }
 
         Bonus {
