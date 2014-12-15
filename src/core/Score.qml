@@ -55,7 +55,7 @@ Rectangle {
     GCText {
         id: subLevelText
         anchors.centerIn: parent
-        font.pointSize: 16
+        font.pointSize: 16 * ApplicationInfo.ratio
         font.bold: true
         color: "black"
         text: message

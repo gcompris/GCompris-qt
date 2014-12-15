@@ -239,7 +239,7 @@ Item {
         GCText {
             id: levelTextId
             text: "" + level
-            font.pointSize: 32
+            font.pointSize: 32 * ApplicationInfo.ratio
             font.weight: Font.DemiBold
             style: Text.Outline
             styleColor: "black"

@@ -88,7 +88,7 @@ ActivityBase {
                       items.targetH) + ":" + Activity.get2CharValue(
                       items.targetM) + ":" + Activity.get2CharValue(
                       items.targetS)
-            font.pointSize: 18
+            font.pointSize: 18 * ApplicationInfo.ratio
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap
             width: parent.width / 3

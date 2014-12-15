@@ -77,7 +77,7 @@ Item {
                     //renderType: Text.NativeRendering
                     anchors.centerIn: parent
                     text: control.text
-                    font.pointSize: 20
+                    font.pointSize: 20 * ApplicationInfo.ratio
                     font.bold: false
                     color: "black"
                     //antialiasing: true

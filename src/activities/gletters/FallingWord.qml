@@ -109,7 +109,7 @@ Item {
         id: wordText
 
         text: ""
-        font.pointSize: 35
+        font.pointSize: 35 * ApplicationInfo.ratio
         font.bold: true
         color: "navy"
         style: Text.Outline

@@ -360,7 +360,7 @@ ActivityBase {
                 top: parent.top
                 margins: 20
             }
-            font.pointSize: 13
+            font.pointSize: 13 * ApplicationInfo.ratio
             color: "white"
             wrapMode: TextEdit.WordWrap
             horizontalAlignment: TextEdit.AlignHCenter
