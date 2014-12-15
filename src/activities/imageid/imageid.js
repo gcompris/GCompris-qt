@@ -29,16 +29,23 @@
 var currentLevel = 0;
 var currentSubLevel = 0;
 var level = null;
-var maxLevel = 2;
-var maxSubLevel = 0;
+var maxLevel;
+var maxSubLevel;
 var items;
 var baseUrl = "qrc:/gcompris/src/activities/imageid/resource/";
 var dataset = null;
 var lessons
 var goodWord
 
-function start(items_) {
+function init(items_) {
     items = items_;
+    maxLevel = 0
+    maxSubLevel = 0
+    currentLevel = 0
+    currentSubLevel = 0
+}
+
+function start() {
     currentLevel = 0;
     currentSubLevel = 0;
 

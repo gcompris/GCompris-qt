@@ -23,9 +23,11 @@
 import QtQuick 2.1
 import GCompris 1.0
 import QtGraphicalEffects 1.0
+import QtQuick.Dialogs 1.1
 
 import "../../core"
 import "imageid.js" as Activity
+import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -39,14 +41,24 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: parent.width
 
+        property Item dialog
+
         signal start
         signal stop
         
+        Connections {
+            target: DownloadManager
+
+            onDownloadFinished: Activity.start(items)
+            onError: {
+                // Fixme display an error message
+                Core.destroyDialog(dialog)
+            }
+        }
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
-
-            DownloadManager.updateResource("data/words/words.rcc")
         }
 
         QtObject {
@@ -62,7 +74,24 @@ ActivityBase {
             property GCAudio audioVoices: activity.audioVoices
         }
 
-        onStart: { Activity.start(items) }
+        onStart: {
+            Activity.init(items)
+
+            if(!DownloadManager.haveLocalResource("data/words/words.rcc")) {
+                var buttonHandler = new Array();
+                buttonHandler[StandardButton.No] = function() {};
+                buttonHandler[StandardButton.Yes] = function() { DownloadManager.updateResource("data/words/words.rcc") };
+                dialog = Core.showMessageDialog(parent, qsTr("Download?"),
+                                                qsTr("Are you ok to download the images for this activity"),
+                                                "",
+                                                StandardIcon.Question,
+                                                buttonHandler);
+            } else {
+                // Will register the resource file and call start() on callback
+                DownloadManager.updateResource("data/words/words.rcc")
+            }
+        }
+
         onStop: { Activity.stop() }
         
         JsonParser {
