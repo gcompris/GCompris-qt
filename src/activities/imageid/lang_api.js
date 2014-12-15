@@ -60,6 +60,20 @@ function getChapter(dataset, chapter) {
     return dataset[chapter]
 }
 
+// Return a datamodel for the chapter suitable for creating a chapter selector
+function getChapterModel(dataset) {
+    var chapters = []
+    for (var c = 0; c < dataset.length; c++) {
+        console.log(dataset[c].content[0].content[0].image)
+        chapters.push(
+                    {'name': dataset[c].name,
+                     'image': dataset[c].content[0].content[0].image,
+                     'index': c
+                    })
+    }
+    return chapters
+}
+
 function getLesson(dataset, chapter, lesson) {
     return chapter.content[lesson]
 }
