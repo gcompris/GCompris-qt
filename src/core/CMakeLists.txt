@@ -2,6 +2,10 @@ include(qt_helper)
 
 configure_file(config.h.in "${CMAKE_CURRENT_BINARY_DIR}/config.h" @ONLY)
 
+if(WITH_ACTIVATION_CODE)
+  add_definitions(-DWITH_ACTIVATION_CODE)
+endif()
+
 # Note: put .cpp files before .h files in the following or cmake messes up
 # moc generation -- WTF! 
 set(gcompris_SRCS
@@ -28,7 +32,7 @@ set(gcompris_SRCS
    config.h.in
 )
 
-if(ANDROID)
+if(WITH_ACTIVATION_CODE AND ANDROID)
   list(APPEND gcompris_SRCS ApplicationSettingsAndroid.cpp)
 else()
   list(APPEND gcompris_SRCS ApplicationSettingsDefault.cpp)

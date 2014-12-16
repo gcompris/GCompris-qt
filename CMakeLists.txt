@@ -156,9 +156,6 @@ else()
 endif()
 
 option(WITH_ACTIVATION_CODE "Include the activation system" OFF)
-if(WITH_ACTIVATION_CODE)
-  message("ici")
-  add_definitions(-DWITH_ACTIVATION_CODE)
-endif()
+
 add_subdirectory(src)
 

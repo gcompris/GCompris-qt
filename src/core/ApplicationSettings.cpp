@@ -102,9 +102,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_isEmbeddedFont = m_config.value(IS_CURRENT_FONT_EMBEDDED, true).toBool();
 
 // The the default demo mode based on the platform
-#if defined(WITH_ACTIVATION_CODE) || \
-    defined(Q_OS_ANDROID) || defined(Q_OS_MAC) || defined(Q_OS_BLACKBERRY) || \
-	defined(Q_OS_WIN) || defined(Q_OS_WINRT)
+#if defined(WITH_ACTIVATION_CODE)
 	m_isDemoMode = m_config.value(DEMO_KEY, true).toBool();
 #else
 	m_isDemoMode = m_config.value(DEMO_KEY, false).toBool();
