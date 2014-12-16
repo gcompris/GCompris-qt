@@ -579,6 +579,7 @@ Rectangle {
             languages.append( { "text": "தமிழ்", "locale": "ta_IN.UTF-8" } )
             languages.append( { "text": "ไทย", "locale": "th_TH.UTF-8" } )
             languages.append( { "text": "український", "locale": "uk.UTF-8" } )
+            languages.append( { "text": "中文（简体）", "locale": "zh_CN.UTF-8" } )
             languages.append( { "text": "繁體中文", "locale": "zh_TW.UTF-8" } )
         }
     }
