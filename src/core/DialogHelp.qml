@@ -29,7 +29,8 @@ DialogBackground {
 
     function getIcon() {
         if(activityInfo.icon) {
-            return "<img align='right' src='qrc:/gcompris/src/activities/" + activityInfo.icon + "'/>"
+            return "<img align='right' width='" + 100 * ApplicationInfo.ratio +
+        "' height='" + 100 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/activities/" + activityInfo.icon + "'/>"
         }
         return ""
     }
