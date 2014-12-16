@@ -20,6 +20,7 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 import QtQuick 2.1
+import QtGraphicalEffects 1.0
 import GCompris 1.0
 
 import "../../core"
@@ -47,7 +48,6 @@ ActivityBase {
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
-            property Item main: activity.main
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
@@ -83,12 +83,14 @@ ActivityBase {
 
         /* Target text */
         GCText {
+            id: questionItem
             text: qsTr("Set the watch to:") + " " +
                   Activity.get2CharValue(
                       items.targetH) + ":" + Activity.get2CharValue(
                       items.targetM) + ":" + Activity.get2CharValue(
                       items.targetS)
             font.pointSize: 18
+            font.weight: Font.DemiBold
             horizontalAlignment: Text.AlignHCenter
             wrapMode: Text.WordWrap
             width: parent.width / 3
@@ -103,6 +105,17 @@ ActivityBase {
             }
         }
 
+        DropShadow {
+            anchors.fill: questionItem
+            cached: true
+            horizontalOffset: 1
+            verticalOffset: 1
+            radius: 8.0
+            samples: 16
+            color: "#80000000"
+            source: questionItem
+        }
+
         /* The clock */
         Image {
             id: clock
@@ -111,7 +124,7 @@ ActivityBase {
             fillMode: Image.PreserveAspectFit
             sourceSize.height: parent.height
 
-            property int radius: Math.min(main.width * 1.4, main.height)
+            property int radius: Math.min(background.width * 1.4, background.height)
 
             /* The yellow zones */
             Image {
