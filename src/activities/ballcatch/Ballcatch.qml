@@ -108,15 +108,15 @@ ActivityBase {
 
         Image {
             id: tux
-            x: main.width / 2 - width / 2
-            y: main.height / 3
+            x: background.width / 2 - width / 2
+            y: background.height / 3
             sourceSize.height: 100 * ApplicationInfo.ratio
             source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svgz"
         }
 
         Image {
             id: leftHand
-            y: main.height - 1.5 * height
+            y: background.height - 1.5 * height
             z: 5
             sourceSize.height: 150 * ApplicationInfo.ratio
             source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svgz"
@@ -124,7 +124,7 @@ ActivityBase {
             NumberAnimation {
                 id: leftHandAnimation
                 target: leftHand; property: "x";
-                to: main.width/2 - leftHand.width - 5;
+                to: background.width/2 - leftHand.width - 5;
                 duration: 1000; easing.type: Easing.InQuad
             }
 
@@ -134,7 +134,7 @@ ActivityBase {
             }
 
             function reinitPosition() {
-                leftHand.x = main.width / 2 - width * 2
+                leftHand.x = background.width / 2 - width * 2
             }
 
             MultiPointTouchArea {
@@ -154,7 +154,7 @@ ActivityBase {
         Image {
             id: rightHand
             mirror: true
-            y: main.height - 1.5 * height
+            y: background.height - 1.5 * height
             z: 5
             sourceSize.height: 150 * ApplicationInfo.ratio
             source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svgz"
@@ -165,13 +165,13 @@ ActivityBase {
             }
 
             function reinitPosition() {
-                rightHand.x = main.width / 2 + width
+                rightHand.x = background.width / 2 + width
             }
 
             NumberAnimation {
                 id: rightHandAnimation
                 target: rightHand; property: "x";
-                to: main.width / 2 + 5;
+                to: background.width / 2 + 5;
                 duration: 1000;
                 easing.type: Easing.InQuad
             }
@@ -201,7 +201,7 @@ ActivityBase {
         Image {
             id: rightShift
             mirror: true
-            x: main.width - width - 10
+            x: background.width - width - 10
             y: rightHand.y
             source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svgz"
             opacity: items.rightPressed ? 1 : 0.5
