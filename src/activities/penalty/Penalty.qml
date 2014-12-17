@@ -273,7 +273,7 @@ ActivityBase {
                     }
                     PropertyChanges {
                         target: instruction
-                        text: "Double click or double tap on the ball to kick it."
+                        text: qsTr("Double click or double tap on the ball to kick it.")
                     }
                 },
                 State {
@@ -309,7 +309,7 @@ ActivityBase {
                     }
                     PropertyChanges {
                         target: instruction
-                        text: "Click or tap the ball to bring it back to its former position"
+                        text: qsTr("Click or tap the ball to bring it back to its former position")
                     }
                 }
             ]
