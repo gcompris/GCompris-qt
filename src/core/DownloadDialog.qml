@@ -144,6 +144,7 @@ Dialog {
             
             Button {
                 id: backgroundButton
+                //: Run this task in background
                 text: qsTr("Background")
                 style: GCButtonStyle {}
                 visible: true
