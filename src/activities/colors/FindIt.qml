@@ -57,6 +57,8 @@ ActivityBase {
             property alias bonus: bonus
             property alias containerModel: containerModel
             property alias questionItem: questionItem
+            // On startup we want to queue the first sound but not after
+            property bool firstQuestion: true
         }
         onStart: { Activity.start(items, dataset, mode) }
         onStop: { Activity.stop() }
@@ -99,7 +101,11 @@ ActivityBase {
             function initQuestion() {
                 text = Activity.getCurrentTextQuestion()
                 if(Activity.getCurrentAudioQuestion()) {
-                    activity.audioVoices.append(Activity.getCurrentAudioQuestion())
+                    if(items.firstQuestion)
+                        activity.audioVoices.append(Activity.getCurrentAudioQuestion())
+                    else
+                        activity.audioVoices.play(Activity.getCurrentAudioQuestion())
+                    items.firstQuestion = false
                 }
                 opacity = 1.0
             }

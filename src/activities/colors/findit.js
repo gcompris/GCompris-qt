@@ -36,6 +36,7 @@ function start(items_, dataset_, mode_) {
     dataset = dataset_.get()
     currentLevel = 0
     numberOfLevel = dataset.length
+    items.firstQuestion = true
     initLevel()
 }
 
