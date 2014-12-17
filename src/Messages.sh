@@ -3,4 +3,4 @@
 # Extract strings from all source files.
 # EXTRACT_TR_STRINGS extracts strings with lupdate and convert them to .pot with
 # lconvert.
-$EXTRACT_TR_STRINGS `find . -name \*.cpp -o -name \*.h -o -name \*.qml` -o $podir/gcompris_qt.pot
+$EXTRACT_TR_STRINGS `find . -name \*.cpp -o -name \*.h -o -name \*.qml -o -name \*.js` -o $podir/gcompris_qt.pot

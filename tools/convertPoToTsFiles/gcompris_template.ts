@@ -1736,6 +1736,449 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     </message>
 </context>
 <context>
+    <name>advanced_colors</name>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="24"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="441"/>
+        <source>Find the coral butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="28"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="58"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="495"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="535"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="593"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="607"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="699"/>
+        <source>Find the claret butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="32"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="274"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="467"/>
+        <source>Find the navy butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="36"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="66"/>
+        <source>Find the corn butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="40"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="70"/>
+        <source>Find the cobalt butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="44"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="74"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="403"/>
+        <source>Find the cyan butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="48"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="78"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="437"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="491"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="501"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="569"/>
+        <source>Find the chestnut butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="52"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="82"/>
+        <source>Find the almond butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="62"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="695"/>
+        <source>Find the sapphire butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="86"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="184"/>
+        <source>Find the ruby butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="92"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="679"/>
+        <source>Find the sienna butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="96"/>
+        <source>Find the sage butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="100"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="427"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="581"/>
+        <source>Find the salmon butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="104"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="389"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="649"/>
+        <source>Find the sepia butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="108"/>
+        <source>Find the sulfur butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="112"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="671"/>
+        <source>Find the tea butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="116"/>
+        <source>Find the lime butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="120"/>
+        <source>Find the turquoise butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="126"/>
+        <source>Find the absinthe butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="130"/>
+        <source>Find the mahogany butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="134"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="627"/>
+        <source>Find the aquamarine butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="138"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="433"/>
+        <source>Find the alabaster butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="142"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="585"/>
+        <source>Find the amber butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="146"/>
+        <source>Find the amethyst butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="150"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="529"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="637"/>
+        <source>Find the anise butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="154"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="300"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="461"/>
+        <source>Find the vermilion butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="160"/>
+        <source>Find the ceruse butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="164"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="407"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="521"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="539"/>
+        <source>Find the fawn butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="168"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="589"/>
+        <source>Find the chartreuse butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="172"/>
+        <source>Find the emerald butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="176"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="194"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="393"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="399"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="509"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="577"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="683"/>
+        <source>Find the aubergine butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="180"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="657"/>
+        <source>Find the fuchsia butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="188"/>
+        <source>Find the glaucous butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="198"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="369"/>
+        <source>Find the auburn butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="202"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="381"/>
+        <source>Find the azure butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="206"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="563"/>
+        <source>Find the grayish brown butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="210"/>
+        <source>Find the bistre butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="214"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="555"/>
+        <source>Find the crimson butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="218"/>
+        <source>Find the celadon butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="222"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="471"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="641"/>
+        <source>Find the cerulean butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="228"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="551"/>
+        <source>Find the dove butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="232"/>
+        <source>Find the garnet butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="236"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="547"/>
+        <source>Find the indigo butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="240"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="445"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="645"/>
+        <source>Find the ivory butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="244"/>
+        <source>Find the jade butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="248"/>
+        <source>Find the lavender butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="252"/>
+        <source>Find the lichen butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="256"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="483"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="517"/>
+        <source>Find the wine butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="262"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="623"/>
+        <source>Find the lilac butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="266"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="525"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="631"/>
+        <source>Find the magenta butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="270"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="475"/>
+        <source>Find the malachite butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="278"/>
+        <source>Find the larch butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="282"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="411"/>
+        <source>Find the mimosa butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="286"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="415"/>
+        <source>Find the ochre butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="290"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="365"/>
+        <source>Find the olive butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="296"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="479"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="513"/>
+        <source>Find the opaline butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="304"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="611"/>
+        <source>Find the ultramarine butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="308"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="377"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="449"/>
+        <source>Find the mauve butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="312"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="573"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="615"/>
+        <source>Find the grayish blue butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="316"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="487"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="691"/>
+        <source>Find the pistachio butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="320"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="543"/>
+        <source>Find the platinum butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="324"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="597"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="665"/>
+        <source>Find the purple butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="330"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="385"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="453"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="603"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="661"/>
+        <source>Find the plum butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="334"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="419"/>
+        <source>Find the prussian blue butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="338"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="423"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="457"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="687"/>
+        <source>Find the rust butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="342"/>
+        <source>Find the saffron butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="346"/>
+        <source>Find the vanilla butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="350"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="559"/>
+        <source>Find the veronese butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="354"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="653"/>
+        <source>Find the verdigris butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="358"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="373"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="505"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="619"/>
+        <location filename="activities/advanced_colors/advanced_colors.js" line="675"/>
+        <source>Find the dark purple butterfly</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>AlphabetSequence</name>
     <message>
         <location filename="activities/alphabet-sequence/AlphabetSequence.qml" line="28"/>
@@ -1757,10 +2200,102 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     </message>
 </context>
 <context>
+    <name>braille_alphabets</name>
+    <message>
+        <location filename="activities/braille_alphabets/braille_alphabets.js" line="58"/>
+        <location filename="activities/braille_alphabets/braille_alphabets.js" line="68"/>
+        <location filename="activities/braille_alphabets/braille_alphabets.js" line="78"/>
+        <location filename="activities/braille_alphabets/braille_alphabets.js" line="88"/>
+        <location filename="activities/braille_alphabets/braille_alphabets.js" line="98"/>
+        <source>Now it&apos;s a little bit harder without the braille map.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/braille_alphabets/braille_alphabets.js" line="63"/>
+        <source>Look at the Braille character map and observe how similar the first and second line are.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/braille_alphabets/braille_alphabets.js" line="73"/>
+        <source>Again, similar as the first line but take care, the &apos;W&apos; letter was added afterwards.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/braille_alphabets/braille_alphabets.js" line="83"/>
+        <source>This is easy, numbers are the same as letters from A to J.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Clockgame</name>
     <message>
         <location filename="activities/clockgame/Clockgame.qml" line="86"/>
         <source>Set the watch to:</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>colors</name>
+    <message>
+        <location filename="activities/colors/colors.js" line="24"/>
+        <location filename="activities/colors/colors.js" line="56"/>
+        <location filename="activities/colors/colors.js" line="98"/>
+        <source>Find the yellow duck</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/colors/colors.js" line="29"/>
+        <location filename="activities/colors/colors.js" line="61"/>
+        <source>Find the black duck</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/colors/colors.js" line="34"/>
+        <location filename="activities/colors/colors.js" line="71"/>
+        <location filename="activities/colors/colors.js" line="108"/>
+        <source>Find the green duck</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/colors/colors.js" line="39"/>
+        <location filename="activities/colors/colors.js" line="128"/>
+        <source>Find the red duck</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/colors/colors.js" line="44"/>
+        <location filename="activities/colors/colors.js" line="91"/>
+        <source>Find the white duck</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/colors/colors.js" line="49"/>
+        <location filename="activities/colors/colors.js" line="133"/>
+        <source>Find the blue duck</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/colors/colors.js" line="66"/>
+        <location filename="activities/colors/colors.js" line="103"/>
+        <source>Find the brown duck</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/colors/colors.js" line="76"/>
+        <location filename="activities/colors/colors.js" line="113"/>
+        <source>Find the grey duck</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/colors/colors.js" line="81"/>
+        <location filename="activities/colors/colors.js" line="118"/>
+        <source>Find the orange duck</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/colors/colors.js" line="86"/>
+        <location filename="activities/colors/colors.js" line="123"/>
+        <source>Find the purple duck</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1829,6 +2364,114 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="activities/color_mix/ColorMix.qml" line="219"/>
         <source>Too much cyan</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>dataset</name>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="22"/>
+        <source>zero</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="23"/>
+        <source>one</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="24"/>
+        <source>two</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="25"/>
+        <source>three</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="26"/>
+        <source>four</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="27"/>
+        <source>five</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="28"/>
+        <source>six</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="29"/>
+        <source>seven</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="30"/>
+        <source>eight</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="31"/>
+        <source>nine</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="32"/>
+        <source>ten</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="33"/>
+        <source>eleven</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="34"/>
+        <source>twelve</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="35"/>
+        <source>thirteen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="36"/>
+        <source>fourteen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="37"/>
+        <source>fifteen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="38"/>
+        <source>sixteen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="39"/>
+        <source>seventeen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="40"/>
+        <source>eighteen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="41"/>
+        <source>nineteen</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory-wordnumber/dataset.js" line="42"/>
+        <source>twenty</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2154,6 +2797,194 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     </message>
 </context>
 <context>
+    <name>guessnumber</name>
+    <message>
+        <location filename="activities/guessnumber/guessnumber.js" line="65"/>
+        <source>Guess a number between 1 and %1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/guessnumber/guessnumber.js" line="90"/>
+        <location filename="activities/guessnumber/guessnumber.js" line="94"/>
+        <source>Number too high</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/guessnumber/guessnumber.js" line="97"/>
+        <source>Number too low</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/guessnumber/guessnumber.js" line="101"/>
+        <source>Number found!</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>instruments</name>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="24"/>
+        <location filename="activities/instruments/instruments.js" line="73"/>
+        <source>Find the clarinet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="29"/>
+        <source>Find the transverse flute</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="34"/>
+        <location filename="activities/instruments/instruments.js" line="83"/>
+        <location filename="activities/instruments/instruments.js" line="125"/>
+        <source>Find the guitar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="39"/>
+        <location filename="activities/instruments/instruments.js" line="88"/>
+        <location filename="activities/instruments/instruments.js" line="130"/>
+        <source>Find the harp</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="46"/>
+        <location filename="activities/instruments/instruments.js" line="93"/>
+        <location filename="activities/instruments/instruments.js" line="135"/>
+        <source>Find the piano</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="51"/>
+        <location filename="activities/instruments/instruments.js" line="98"/>
+        <location filename="activities/instruments/instruments.js" line="140"/>
+        <source>Find the saxophone</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="56"/>
+        <location filename="activities/instruments/instruments.js" line="103"/>
+        <location filename="activities/instruments/instruments.js" line="145"/>
+        <source>Find the trombone</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="61"/>
+        <location filename="activities/instruments/instruments.js" line="108"/>
+        <location filename="activities/instruments/instruments.js" line="150"/>
+        <source>Find the trumpet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="66"/>
+        <location filename="activities/instruments/instruments.js" line="115"/>
+        <source>Find the violin</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="78"/>
+        <location filename="activities/instruments/instruments.js" line="120"/>
+        <source>Find the flute traversiere</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="157"/>
+        <location filename="activities/instruments/instruments.js" line="189"/>
+        <source>Find the drum kit</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="162"/>
+        <location filename="activities/instruments/instruments.js" line="194"/>
+        <source>Find the accordion</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="167"/>
+        <location filename="activities/instruments/instruments.js" line="199"/>
+        <source>Find the banjo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="172"/>
+        <location filename="activities/instruments/instruments.js" line="217"/>
+        <source>Find the bongo</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="177"/>
+        <location filename="activities/instruments/instruments.js" line="222"/>
+        <source>Find the electric guitar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="182"/>
+        <source>Find the castanets</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="204"/>
+        <source>Find the cymbal</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="209"/>
+        <source>Find the cello</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="227"/>
+        <source>Find the harmonica</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="232"/>
+        <location filename="activities/instruments/instruments.js" line="265"/>
+        <source>Find the horn</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="237"/>
+        <location filename="activities/instruments/instruments.js" line="270"/>
+        <source>Find the maracas</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="242"/>
+        <location filename="activities/instruments/instruments.js" line="275"/>
+        <source>Find the organ</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="250"/>
+        <location filename="activities/instruments/instruments.js" line="283"/>
+        <source>Find the snare drum</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="255"/>
+        <location filename="activities/instruments/instruments.js" line="288"/>
+        <source>Find the timpani</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="260"/>
+        <location filename="activities/instruments/instruments.js" line="293"/>
+        <source>Find the triangle</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="298"/>
+        <source>Find the tambourine</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/instruments/instruments.js" line="303"/>
+        <source>Find the tuba</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Leftright</name>
     <message>
         <location filename="activities/leftright/Leftright.qml" line="144"/>
@@ -2163,6 +2994,31 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     <message>
         <location filename="activities/leftright/Leftright.qml" line="155"/>
         <source>Right hand</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>math_util</name>
+    <message>
+        <location filename="activities/memory/math_util.js" line="26"/>
+        <location filename="activities/memory/math_util.js" line="29"/>
+        <source>+</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory/math_util.js" line="39"/>
+        <source>-</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory/math_util.js" line="50"/>
+        <location filename="activities/memory/math_util.js" line="53"/>
+        <source>×</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/memory/math_util.js" line="63"/>
+        <source>÷</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2218,10 +3074,80 @@ From level 14 on, run-fast-mode will be enabled automatically. If you want to us
     </message>
 </context>
 <context>
+    <name>money</name>
+    <message>
+        <location filename="activities/money/money.js" line="661"/>
+        <source>Click on the coins or paper money at the bottom of the screen to pay. If you want to remove a coin or note, click on it on the upper screen area.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/money/money.js" line="701"/>
+        <source>Tux just bought some items in your shop.
+He gives you %1, please give back his change.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>Penalty</name>
     <message>
         <location filename="activities/penalty/Penalty.qml" line="204"/>
         <source>Click twice on the ball to shoot it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>questions</name>
+    <message>
+        <location filename="activities/braille_alphabets/questions.js" line="23"/>
+        <location filename="activities/braille_alphabets/questions.js" line="27"/>
+        <location filename="activities/braille_alphabets/questions.js" line="31"/>
+        <location filename="activities/braille_alphabets/questions.js" line="35"/>
+        <location filename="activities/braille_alphabets/questions.js" line="39"/>
+        <location filename="activities/braille_alphabets/questions.js" line="43"/>
+        <location filename="activities/braille_alphabets/questions.js" line="47"/>
+        <location filename="activities/braille_alphabets/questions.js" line="51"/>
+        <location filename="activities/braille_alphabets/questions.js" line="55"/>
+        <location filename="activities/braille_alphabets/questions.js" line="59"/>
+        <location filename="activities/braille_alphabets/questions.js" line="65"/>
+        <location filename="activities/braille_alphabets/questions.js" line="69"/>
+        <location filename="activities/braille_alphabets/questions.js" line="73"/>
+        <location filename="activities/braille_alphabets/questions.js" line="77"/>
+        <location filename="activities/braille_alphabets/questions.js" line="81"/>
+        <location filename="activities/braille_alphabets/questions.js" line="85"/>
+        <location filename="activities/braille_alphabets/questions.js" line="89"/>
+        <location filename="activities/braille_alphabets/questions.js" line="93"/>
+        <location filename="activities/braille_alphabets/questions.js" line="97"/>
+        <location filename="activities/braille_alphabets/questions.js" line="101"/>
+        <location filename="activities/braille_alphabets/questions.js" line="107"/>
+        <location filename="activities/braille_alphabets/questions.js" line="111"/>
+        <location filename="activities/braille_alphabets/questions.js" line="115"/>
+        <location filename="activities/braille_alphabets/questions.js" line="119"/>
+        <location filename="activities/braille_alphabets/questions.js" line="123"/>
+        <location filename="activities/braille_alphabets/questions.js" line="127"/>
+        <source>Click on the dots in braille cell area to produce the letter %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/braille_alphabets/questions.js" line="133"/>
+        <location filename="activities/braille_alphabets/questions.js" line="137"/>
+        <location filename="activities/braille_alphabets/questions.js" line="141"/>
+        <location filename="activities/braille_alphabets/questions.js" line="145"/>
+        <location filename="activities/braille_alphabets/questions.js" line="150"/>
+        <location filename="activities/braille_alphabets/questions.js" line="154"/>
+        <location filename="activities/braille_alphabets/questions.js" line="158"/>
+        <location filename="activities/braille_alphabets/questions.js" line="162"/>
+        <location filename="activities/braille_alphabets/questions.js" line="166"/>
+        <location filename="activities/braille_alphabets/questions.js" line="170"/>
+        <source>Click on the dots in braille cell area to produce the number %1.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="activities/braille_alphabets/questions.js" line="176"/>
+        <location filename="activities/braille_alphabets/questions.js" line="180"/>
+        <location filename="activities/braille_alphabets/questions.js" line="184"/>
+        <location filename="activities/braille_alphabets/questions.js" line="188"/>
+        <location filename="activities/braille_alphabets/questions.js" line="192"/>
+        <source>Click on the dots in braille cell area to produce the symbol %1.</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
