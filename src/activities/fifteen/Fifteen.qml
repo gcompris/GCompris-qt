@@ -72,10 +72,13 @@ ActivityBase {
         }
 
         Grid {
+            id: puzzleArea
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
             columns: 4
             spacing: 0
+
+            property alias trans: trans
 
             ListModel {
                 id: fifteenModel
@@ -83,6 +86,7 @@ ActivityBase {
 
 
             move: Transition {
+                id: trans
                 NumberAnimation {
                     properties: "x, y"
                     easing.type: Easing.InOutQuad
@@ -97,6 +101,7 @@ ActivityBase {
                                     background.height * 0.2)
                     height: width
                     clip: true
+                    property int val: value
 
                     Image {
                         id: image
@@ -127,14 +132,25 @@ ActivityBase {
                         color: "#80000000"
                         source: text
                     }
+                }
+            }
+        }
 
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            Activity.onClick(value)
-                            if(Activity.checkAnswer())
-                                bonus.good('flower')
-                        }
+        MultiPointTouchArea {
+            x: puzzleArea.x
+            y: puzzleArea.y
+            width: puzzleArea.width
+            height: puzzleArea.height
+            onPressed: checkTouchPoint(touchPoints)
+
+            function checkTouchPoint(touchPoints) {
+                for(var i in touchPoints) {
+                    var touch = touchPoints[i]
+                    var block = puzzleArea.childAt(touch.x, touch.y)
+                    if(!puzzleArea.trans.running && block) {
+                        Activity.onClick(block.val)
+                        if(Activity.checkAnswer())
+                            bonus.good('flower')
                     }
                 }
             }
