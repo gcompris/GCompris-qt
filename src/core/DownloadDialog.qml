@@ -144,14 +144,14 @@ Dialog {
             
             Button {
                 id: backgroundButton
-                text: "Background"
+                text: qsTr("Background")
                 style: GCButtonStyle {}
                 visible: true
                 onClicked: downloadDialog.shutdown();
             }
             Button {
                 id: abortButton
-                text: "Abort"
+                text: qsTr("Abort")
                 style: GCButtonStyle {}
                 visible: true
                 onClicked: {
