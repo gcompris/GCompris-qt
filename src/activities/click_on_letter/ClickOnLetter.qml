@@ -60,11 +60,15 @@ ActivityBase {
             property GCAudio audioVoices: activity.audioVoices
             property alias parser: parser
             property alias questionItem: questionItem
+            property alias repeatItem: repeatItem
             property alias score: score
             property alias bonus: bonus
         }
         
-        onVoiceError: questionItem.visible = true
+        onVoiceError: {
+            questionItem.visible = true
+            repeatItem.visible = false
+        }
 
         onStart: {
             activity.audioVoices.error.connect(voiceError)
@@ -106,6 +110,7 @@ ActivityBase {
         }
         
         BarButton {
+            id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svgz";
             sourceSize.width: 80 * ApplicationInfo.ratio
             anchors {
