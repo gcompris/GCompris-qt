@@ -21,6 +21,7 @@
  */
 import QtQuick 2.1
 import GCompris 1.0
+import QtGraphicalEffects 1.0
 
 import "../../core"
 import "redraw.js" as Activity
@@ -114,6 +115,7 @@ ActivityBase {
                             }
                         }
                         GCText {
+                            id: text
                             anchors.fill: parent
                             text: modelData
                             font.pointSize: 14
@@ -122,6 +124,16 @@ ActivityBase {
                             style: Text.Outline
                             styleColor: "black"
                             color: "white"
+                        }
+                        DropShadow {
+                            anchors.fill: text
+                            cached: true
+                            horizontalOffset: 1
+                            verticalOffset: 1
+                            radius: 8.0
+                            samples: 16
+                            color: "#80000000"
+                            source: text
                         }
                     }
                 }
@@ -220,6 +232,7 @@ ActivityBase {
                                 }
                             }
                             GCText {
+                                id: text
                                 anchors.fill: parent
                                 anchors.margins: 4
                                 text: parent.colorIndex == 0 ? "" : parent.colorIndex
@@ -228,6 +241,16 @@ ActivityBase {
                                 style: Text.Outline
                                 styleColor: "black"
                                 color: "white"
+                            }
+                            DropShadow {
+                                anchors.fill: text
+                                cached: true
+                                horizontalOffset: 1
+                                verticalOffset: 1
+                                radius: 8.0
+                                samples: 16
+                                color: "#80000000"
+                                source: text
                             }
                         }
                     }
@@ -258,6 +281,7 @@ ActivityBase {
                                 border.color: 'black'
                             }
                             GCText {
+                                id: text
                                 anchors.fill: parent
                                 anchors.margins: 4
                                 text: modelData == 0 ? "" : modelData
@@ -267,6 +291,17 @@ ActivityBase {
                                 styleColor: "black"
                                 color: "white"
                             }
+                            DropShadow {
+                                anchors.fill: text
+                                cached: true
+                                horizontalOffset: 1
+                                verticalOffset: 1
+                                radius: 8.0
+                                samples: 16
+                                color: "#80000000"
+                                source: text
+                            }
+
                         }
                     }
                 }
