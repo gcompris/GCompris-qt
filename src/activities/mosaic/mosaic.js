@@ -72,7 +72,6 @@ var selectorLayout = {
 var currentLevel = 0
 var numberOfLevel = 16
 var items
-var selectedItem
 
 function start(items_) {
     items = items_
@@ -108,7 +107,6 @@ function initLevel() {
         answerModel.push("die_0.svgz")
     items.answer.model = answerModel
 
-    selectedItem = undefined
 }
 
 function nextLevel() {
@@ -125,22 +123,11 @@ function previousLevel() {
     initLevel();
 }
 
-function select(selectedItem_) {
-    if(selectedItem) {
-        selectedItem.deselect()
-    }
-    selectedItem = selectedItem_
-    selectedItem.select()
-}
-
-function checkAnswer() {
-}
-
 function answerSelected(index) {
-    if(!selectedItem)
+    if(!items.selectedItem)
         return
 
-    answerModel[index] = selectedItem.basename
+    answerModel[index] = items.selectedItem
     items.answer.model = answerModel
 
     if(answerModel.toString() === questionModel.toString()) {
