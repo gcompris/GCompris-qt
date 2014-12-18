@@ -19,7 +19,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.2
-import QtQuick.Controls 1.1
 import "../../core"
 import GCompris 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
