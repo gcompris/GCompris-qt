@@ -104,13 +104,78 @@ ActivityBase {
                             id: img
                             source: Activity.url + Activity.colorShortcut[modelData] + ".svg"
                             sourceSize.width: parent.width
-                            height: width
-                            scale: modelData == items.colorSelector ? 1.3 : 1
-                            z: modelData == items.colorSelector ? 10 : 1
+                            z: iAmSelected ? 10 : 1
 
-                            Behavior on scale { NumberAnimation { duration: 100 } }
+                            property bool iAmSelected: modelData == items.colorSelector
+
+                            states: [
+                                State {
+                                    name: "notclicked"
+                                    when: !img.iAmSelected && !mouseArea.containsMouse
+                                    PropertyChanges {
+                                        target: img
+                                        scale: 0.8
+                                    }
+                                },
+                                State {
+                                    name: "clicked"
+                                    when: mouseArea.pressed
+                                    PropertyChanges {
+                                        target: img
+                                        scale: 0.7
+                                    }
+                                },
+                                State {
+                                    name: "hover"
+                                    when: mouseArea.containsMouse
+                                    PropertyChanges {
+                                        target: img
+                                        scale: 1.1
+                                    }
+                                },
+                                State {
+                                    name: "selected"
+                                    when: img.iAmSelected
+                                    PropertyChanges {
+                                        target: img
+                                        scale: 1
+                                    }
+                                }
+                            ]
+
+                            SequentialAnimation {
+                                id: anim
+                                running: img.iAmSelected
+                                loops: Animation.Infinite
+                                alwaysRunToEnd: true
+                                NumberAnimation {
+                                    target: img
+                                    property: "rotation"
+                                    from: 0; to: 10
+                                    duration: 200
+                                    easing.type: Easing.OutQuad
+                                }
+                                NumberAnimation {
+                                    target: img
+                                    property: "rotation"
+                                    from: 10; to: -10
+                                    duration: 400
+                                    easing.type: Easing.InOutQuad
+                                }
+                                NumberAnimation {
+                                    target: img
+                                    property: "rotation"
+                                    from: -10; to: 0
+                                    duration: 200
+                                    easing.type: Easing.InQuad
+                                }
+                            }
+
+                            Behavior on scale { NumberAnimation { duration: 70 } }
                             MouseArea {
+                                id: mouseArea
                                 anchors.fill: parent
+                                hoverEnabled: true
                                 onClicked: items.colorSelector = modelData
                             }
                         }
