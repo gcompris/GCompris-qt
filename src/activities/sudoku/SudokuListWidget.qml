@@ -55,24 +55,90 @@ Item {
 
         Component {
             id: contactsDelegate
-            Rectangle {
-                color: ListView.isCurrentItem ? "#AA666666" : "transparent"
-                border.color: ListView.isCurrentItem ? "black" : "transparent"
-                border.width: 3
-                radius: view.iconSize / 10
+
+            Item {
                 width: view.iconSize
                 height: view.iconSize
 
                 Image {
                     id: icon
                     anchors.centerIn: parent
-                    sourceSize.height: view.iconSize * 0.9
-                    source: {
-                        imgName == undefined ? "" :
-                                               Activity.url + imgName + extension
+                    sourceSize.height: view.iconSize
+                    source: model.imgName === undefined ? "" :
+                                                          Activity.url + model.imgName + extension
+                    z: iAmSelected ? 10 : 1
+
+                    property bool iAmSelected: view.currentIndex == index
+
+                    states: [
+                        State {
+                            name: "notclicked"
+                            when: !icon.iAmSelected && !mouseArea.containsMouse
+                            PropertyChanges {
+                                target: icon
+                                scale: 0.8
+                            }
+                        },
+                        State {
+                            name: "clicked"
+                            when: mouseArea.pressed
+                            PropertyChanges {
+                                target: icon
+                                scale: 0.7
+                            }
+                        },
+                        State {
+                            name: "hover"
+                            when: mouseArea.containsMouse
+                            PropertyChanges {
+                                target: icon
+                                scale: 1.1
+                            }
+                        },
+                        State {
+                            name: "selected"
+                            when: icon.iAmSelected
+                            PropertyChanges {
+                                target: icon
+                                scale: 1
+                            }
+                        }
+                    ]
+
+                    SequentialAnimation {
+                        id: anim
+                        running: icon.iAmSelected
+                        loops: Animation.Infinite
+                        alwaysRunToEnd: true
+                        NumberAnimation {
+                            target: icon
+                            property: "rotation"
+                            from: 0; to: 10
+                            duration: 200
+                            easing.type: Easing.OutQuad
+                        }
+                        NumberAnimation {
+                            target: icon
+                            property: "rotation"
+                            from: 10; to: -10
+                            duration: 400
+                            easing.type: Easing.InOutQuad
+                        }
+                        NumberAnimation {
+                            target: icon
+                            property: "rotation"
+                            from: -10; to: 0
+                            duration: 200
+                            easing.type: Easing.InQuad
+                        }
                     }
+
+                    Behavior on scale { NumberAnimation { duration: 70 } }
+
                     MouseArea {
-                        anchors.fill: parent
+                        id: mouseArea
+                        anchors.fill: icon
+                        hoverEnabled: true
                         onClicked: view.currentIndex = index
                     }
                 }
@@ -80,3 +146,4 @@ Item {
         }
     }
 }
+

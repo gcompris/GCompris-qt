@@ -23,6 +23,7 @@ import GCompris 1.0
 
 import "../../core"
 import "sudoku.js" as Activity
+import "."
 
 ActivityBase {
     id: activity
