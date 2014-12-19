@@ -75,7 +75,12 @@ ActivityBase {
             property alias wordImage: wordImage
             property alias wordListModel: wordListModel
             property alias parser: parser
-            property GCAudio audioVoices: activity.audioVoices
+            property variant goodWord
+
+            function playWord() {
+                activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice))
+            }
+            onGoodWordChanged: playWord()
         }
 
         onStart: {
@@ -84,8 +89,9 @@ ActivityBase {
             if(!DownloadManager.haveLocalResource("data/words/words.rcc")) {
                 var buttonHandler = new Array();
                 buttonHandler[StandardButton.No] = function() {};
-                buttonHandler[StandardButton.Yes] = function() { DownloadManager.updateResource("data/words/words.rcc") };
-                dialog = Core.showMessageDialog(parent, qsTr("Download?"),
+                buttonHandler[StandardButton.Yes] = function() {
+                    DownloadManager.updateResource("data/words/words.rcc") };
+                    dialog = Core.showMessageDialog(parent, qsTr("Download?"),
                                                 qsTr("Are you ok to download the images for this activity"),
                                                 "",
                                                 StandardIcon.Question,
@@ -119,8 +125,12 @@ ActivityBase {
             anchors.margins: 10 * ApplicationInfo.ratio
 
             Item {
-                width: background.horizontalLayout ? background.width * 0.45 : background.width - gridId.anchors.margins * 2
-                height: background.horizontalLayout ? background.height - bar.height : (background.height - bar.height) * 0.4
+                width: background.horizontalLayout
+                       ? background.width * 0.55
+                       : background.width - gridId.anchors.margins * 2
+                height: background.horizontalLayout
+                        ? background.height - bar.height
+                        : (background.height - bar.height) * 0.4
                 Image {
                     id: imageFrame
                     anchors {
@@ -145,8 +155,12 @@ ActivityBase {
             ListView {
                 id: wordListView
 
-                width: background.horizontalLayout ? background.width * 0.45 : background.width - gridId.anchors.margins * 2
-                height: background.horizontalLayout ? background.height - bar.height : (background.height - bar.height) * 0.40
+                width: background.horizontalLayout
+                       ? background.width * 0.40
+                       : background.width - gridId.anchors.margins * 2
+                height: background.horizontalLayout
+                        ? background.height - bar.height
+                        : (background.height - bar.height) * 0.40
                 spacing: 10 * ApplicationInfo.ratio
                 orientation: Qt.Vertical
                 verticalLayoutDirection: ListView.TopToBottom
@@ -163,37 +177,27 @@ ActivityBase {
                     height: wordListView.buttonHeight
 
                     textLabel: word
-                    isCorrectAnswer: word === Activity.getCorrectAnswer()
+                    isCorrectAnswer: word === items.goodWord.translatedTxt
                     onCorrectlyPressed: bonus.good("smiley");
                 }
             }
         }
 
-        DropShadow {
-            anchors.fill: imageFrame
-            cached: true
-            horizontalOffset: 12
-            verticalOffset: 12
-            radius: 8.0
-            samples: 16
-            color: "#ff292950"
-            source: imageFrame
-        }
-
-        onVoiceError: repeatItem.visible = false
         onVoiceDone: repeatItem.visible = true
+        onVoiceError: repeatItem.visible = false
 
         BarButton {
             id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svgz";
             sourceSize.width: 80 * ApplicationInfo.ratio
+
             z: 12
             anchors {
                 top: parent.top
-                right: parent.right
-                margins: 10
+                left: parent.left
+                margins: 10 * ApplicationInfo.ratio
             }
-            onClicked: Activity.playWord();
+            onClicked: items.playWord()
         }
 
         DialogHelp {

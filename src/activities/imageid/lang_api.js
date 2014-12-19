@@ -64,7 +64,6 @@ function getChapter(dataset, chapter) {
 function getChapterModel(dataset) {
     var chapters = []
     for (var c = 0; c < dataset.length; c++) {
-        console.log(dataset[c].content[0].content[0].image)
         chapters.push(
                     {'name': dataset[c].name,
                      'image': dataset[c].content[0].content[0].image,
