@@ -76,6 +76,7 @@ ActivityBase {
             property alias wordListModel: wordListModel
             property alias parser: parser
             property variant goodWord
+            property int goodWordIndex
 
             function playWord() {
                 activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice))
@@ -178,6 +179,7 @@ ActivityBase {
 
                     textLabel: word
                     isCorrectAnswer: word === items.goodWord.translatedTxt
+                    onIncorrectlyPressed: Activity.badWordSelected(items.goodWordIndex);
                     onCorrectlyPressed: Activity.nextSubLevel();
                 }
             }
