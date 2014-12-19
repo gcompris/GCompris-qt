@@ -142,6 +142,7 @@ ActivityBase {
             cellWidth: sectionCellWidth
             cellHeight: sectionCellHeight
             interactive: false
+            keyNavigationWraps: true
 
             property int initialX: 4
             property int initialY: 4
@@ -152,12 +153,6 @@ ActivityBase {
                     id: backgroundSection
                     width: sectionCellWidth
                     height: sectionCellHeight
-
-                    Rectangle {
-                        anchors.fill: parent
-                        color: backgroundSection.GridView.isCurrentItem ?
-                                   "#99FFFFFF" : "#00000000"
-                    }
 
                     Image {
                         source: modelData.icon
@@ -187,17 +182,21 @@ ActivityBase {
                 }
             }
             delegate: sectionDelegate
-            highlight: Image {
+            highlight: Item {
                 width: sectionCellWidth
                 height: sectionCellHeight
-                source: "qrc:/gcompris/src/core/resource/button.svgz"
-            }
-            highlightMoveDuration: 300
-            focus: true
-            Behavior on y { NumberAnimation {
-                    duration: 120
-                    easing.type: Easing.InOutQuad
+                visible: background.keyboardMode
+
+                Rectangle {
+                    anchors.fill: parent
+                    color:  "#99FFFFFF"
                 }
+                Image {
+                    source: "qrc:/gcompris/src/core/resource/button.svgz"
+                    anchors.fill: parent
+                }
+                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
+                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
         }
 
