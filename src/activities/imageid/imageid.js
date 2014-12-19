@@ -113,8 +113,7 @@ function previousLevel() {
 
 function nextSubLevel() {
     if( ++currentSubLevel >= maxSubLevel) {
-        currentSubLevel = 0;
-        nextLevel();
+        items.bonus.good("smiley")
     } else {
         initSubLevel();
     }
