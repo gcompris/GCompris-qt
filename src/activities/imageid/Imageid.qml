@@ -178,7 +178,7 @@ ActivityBase {
 
                     textLabel: word
                     isCorrectAnswer: word === items.goodWord.translatedTxt
-                    onCorrectlyPressed: bonus.good("smiley");
+                    onCorrectlyPressed: Activity.nextSubLevel();
                 }
             }
         }
@@ -219,7 +219,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            onWin: Activity.nextLevel()
         }
         
         Score {
