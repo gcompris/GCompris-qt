@@ -44,6 +44,7 @@ ActivityBase {
 
         property bool horizontalLayout: background.width > background.height
         property Item dialog
+        property bool keyNavigation: false
 
         signal start
         signal stop
@@ -102,12 +103,42 @@ ActivityBase {
                 DownloadManager.updateResource("data/words/words.rcc")
             }
             repeatItem.visible = false
+            keyNavigation = false
             activity.audioVoices.error.connect(voiceError)
             activity.audioVoices.done.connect(voiceDone)
         }
 
         onStop: { Activity.stop() }
         
+        Keys.onRightPressed: {
+            keyNavigation = true
+            wordListView.incrementCurrentIndex()
+        }
+        Keys.onLeftPressed:  {
+            keyNavigation = true
+            wordListView.decrementCurrentIndex()
+        }
+        Keys.onDownPressed:  {
+            keyNavigation = true
+            wordListView.incrementCurrentIndex()
+        }
+        Keys.onUpPressed:  {
+            keyNavigation = true
+            wordListView.decrementCurrentIndex()
+        }
+        Keys.onSpacePressed:  {
+            keyNavigation = true
+            wordListView.currentItem.pressed()
+        }
+        Keys.onEnterPressed:  {
+            keyNavigation = true
+            wordListView.currentItem.pressed()
+        }
+        Keys.onReturnPressed:  {
+            keyNavigation = true
+            wordListView.currentItem.pressed()
+        }
+
         JsonParser {
             id: parser
             
@@ -166,10 +197,27 @@ ActivityBase {
                 orientation: Qt.Vertical
                 verticalLayoutDirection: ListView.TopToBottom
                 interactive: false
+                model: wordListModel
+
+                highlight:  Rectangle {
+                    width: wordListView.width
+                    height: wordListView.buttonHeight
+                    color: "lightsteelblue"
+                    radius: 5
+                    visible: background.keyNavigation
+                    y: wordListView.currentItem.y
+                    Behavior on y {
+                        SpringAnimation {
+                            spring: 3
+                            damping: 0.2
+                        }
+                    }
+                }
+                highlightFollowsCurrentItem: false
+                focus: true
+                keyNavigationWraps: true
 
                 property int buttonHeight: height / wordListModel.count * 0.9
-
-                model: wordListModel
 
                 delegate: AnswerButton {
                     id: wordRectangle
