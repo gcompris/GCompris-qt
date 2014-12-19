@@ -36,6 +36,7 @@ var baseUrl = "qrc:/gcompris/src/activities/imageid/resource/";
 var dataset = null;
 var lessons
 var wordList
+var subLevelsLeft
 
 function init(items_) {
     items = items_;
@@ -68,14 +69,23 @@ function initLevel() {
 
     maxSubLevel = wordList.length;
     items.score.numberOfSubLevels = maxSubLevel;
+    items.score.visible = true
 
+    subLevelsLeft = []
+    for(var i in wordList)
+        subLevelsLeft.push(i)
     initSubLevel()
 }
 
 function initSubLevel() {
     // initialize sublevel
-    items.score.currentSubLevel = currentSubLevel + 1;
-    items.goodWord = wordList[currentSubLevel]
+    if(items.score.currentSubLevel < items.score.numberOfSubLevels)
+        items.score.currentSubLevel = currentSubLevel + 1;
+    else
+        items.score.visible = false
+
+    items.goodWordIndex = subLevelsLeft.pop()
+    items.goodWord = wordList[items.goodWordIndex]
 
     var selectedWords = []
     selectedWords.push(items.goodWord.translatedTxt)
@@ -112,9 +122,15 @@ function previousLevel() {
 }
 
 function nextSubLevel() {
-    if( ++currentSubLevel >= maxSubLevel) {
+    ++currentSubLevel
+    if(subLevelsLeft.length === 0) {
         items.bonus.good("smiley")
     } else {
         initSubLevel();
     }
+}
+
+// Append to the queue of words for the sublevel the error
+function badWordSelected(wordIndex) {
+    subLevelsLeft.unshift(wordIndex)
 }
