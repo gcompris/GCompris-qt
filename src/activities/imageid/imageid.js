@@ -35,7 +35,6 @@ var items;
 var baseUrl = "qrc:/gcompris/src/activities/imageid/resource/";
 var dataset = null;
 var lessons
-var goodWord
 
 function init(items_) {
     items = items_;
@@ -50,7 +49,6 @@ function start() {
     currentSubLevel = 0;
 
     dataset = Lang.load(items.parser, baseUrl + "words.json")
-    Lang.getChapterModel(dataset)
     lessons = Lang.getAllLessons(dataset)
     maxLevel = lessons.length
 
@@ -58,11 +56,6 @@ function start() {
 }
 
 function stop() {
-}
-
-function getCorrectAnswer()
-{
-    return goodWord.translatedTxt
 }
 
 function initLevel() {
@@ -76,11 +69,11 @@ function initLevel() {
 
     // initialize sublevel
     items.score.currentSubLevel = currentSubLevel + 1;
-    goodWord = wordList[currentSubLevel]
+    items.goodWord = wordList[currentSubLevel]
 
-//    Core.shuffle(allWords);
+    Core.shuffle(allWords);
     var selectedWords = []
-    selectedWords.push(goodWord.translatedTxt)
+    selectedWords.push(items.goodWord.translatedTxt)
     for (var i = 0; i < wordList.length; i++) {
         if(wordList[i].translatedTxt !== selectedWords[0])
             selectedWords.push(wordList[i].translatedTxt)
@@ -94,12 +87,7 @@ function initLevel() {
     for (var j = 0; j < selectedWords.length; j++) {
         items.wordListModel.append({"word": selectedWords[j] })
     }
-    items.wordImage.source = "qrc:/" + goodWord.image;
-    playWord()
-}
-
-function playWord() {
-    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath(goodWord.voice))
+    items.wordImage.source = "qrc:/" + items.goodWord.image;
 }
 
 function nextLevel() {
