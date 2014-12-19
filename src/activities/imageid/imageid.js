@@ -35,6 +35,7 @@ var items;
 var baseUrl = "qrc:/gcompris/src/activities/imageid/resource/";
 var dataset = null;
 var lessons
+var wordList
 
 function init(items_) {
     items = items_;
@@ -62,16 +63,20 @@ function initLevel() {
     items.bar.level = currentLevel + 1;
 
     var currentLesson = lessons[currentLevel]
-    var wordList = Lang.getLessonWords(dataset, currentLesson)
+    wordList = Lang.getLessonWords(dataset, currentLesson)
+    Core.shuffle(wordList);
 
     maxSubLevel = wordList.length;
     items.score.numberOfSubLevels = maxSubLevel;
 
+    initSubLevel()
+}
+
+function initSubLevel() {
     // initialize sublevel
     items.score.currentSubLevel = currentSubLevel + 1;
     items.goodWord = wordList[currentSubLevel]
 
-    Core.shuffle(allWords);
     var selectedWords = []
     selectedWords.push(items.goodWord.translatedTxt)
     for (var i = 0; i < wordList.length; i++) {
@@ -110,6 +115,7 @@ function nextSubLevel() {
     if( ++currentSubLevel >= maxSubLevel) {
         currentSubLevel = 0;
         nextLevel();
-    } else
-        initLevel();
+    } else {
+        initSubLevel();
+    }
 }
