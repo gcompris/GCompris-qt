@@ -42,6 +42,7 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: parent.width
 
+        property bool horizontalLayout: background.width > background.height
         property Item dialog
 
         signal start
@@ -105,46 +106,60 @@ ActivityBase {
             
             onError: console.error("Imageid: Error parsing json: " + msg);
         }
-        
-        Item {
-            id: wordListWrapper
 
-            anchors {
-                top: parent.top
-                bottom: bar.top
-                left: parent.left
-                right: imageFrame.left
-                topMargin: 10
-                rightMargin: 10
-                bottomMargin: 10
-                leftMargin: 10
+        ListModel {
+            id: wordListModel
+        }
+
+        Grid {
+            id: gridId
+            columns: horizontalLayout ? 2 : 1
+            spacing: 10 * ApplicationInfo.ratio
+            anchors.fill: parent
+            anchors.margins: 10 * ApplicationInfo.ratio
+
+            Item {
+                width: background.horizontalLayout ? background.width * 0.45 : background.width - gridId.anchors.margins * 2
+                height: background.horizontalLayout ? background.height - bar.height : (background.height - bar.height) * 0.4
+                Image {
+                    id: imageFrame
+                    anchors {
+                        horizontalCenter: parent.horizontalCenter
+                        verticalCenter: parent.verticalCenter
+                    }
+                    source: "qrc:/gcompris/src/activities/imageid/resource/imageid_frame.svg"
+                    sourceSize.width: background.horizontalLayout ? parent.width * 0.9 : parent.height * 1.2
+                    z: 11
+
+                    Image {
+                        id: wordImage
+                        sourceSize.width: parent.width * 0.6
+
+                        anchors {
+                            centerIn: parent
+                            margins: 0.05 + parent.width
+                        }
+                    }
+                }
             }
-            height: parent.height - bar.height - 2 * anchors.margins
-        
             ListView {
                 id: wordListView
-                
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                    verticalCenter: parent.verticalCenter
-                }
-            
-                width: parent.width - anchors.margins * 2
-                height: wordListModel.count * buttonHeight + 
-                    (wordListModel.count - 1) * spacing
-                spacing: 20 * ApplicationInfo.ratio
+
+                width: background.horizontalLayout ? background.width * 0.45 : background.width - gridId.anchors.margins * 2
+                height: background.horizontalLayout ? background.height - bar.height : (background.height - bar.height) * 0.40
+                spacing: 10 * ApplicationInfo.ratio
                 orientation: Qt.Vertical
                 verticalLayoutDirection: ListView.TopToBottom
                 interactive: false
-    
-                property int buttonHeight: parent.height / 10
-        
+
+                property int buttonHeight: height / wordListModel.count * 0.9
+
                 model: wordListModel
-    
+
                 delegate: AnswerButton {
                     id: wordRectangle
 
-                    width: wordListView.width * 0.8
+                    width: wordListView.width
                     height: wordListView.buttonHeight
 
                     textLabel: word
@@ -152,35 +167,6 @@ ActivityBase {
                     onCorrectlyPressed: bonus.good("smiley");
                 }
             }
-        }
-        
-        ListModel {
-            id: wordListModel
-        }
-        
-        Image {
-            id: imageFrame
-            source: "qrc:/gcompris/src/activities/imageid/resource/imageid_frame.svg"
-            fillMode: Image.Stretch
-            sourceSize.width: parent.width * 0.5
-            z: 11
-            anchors {
-                verticalCenter: parent.verticalCenter
-                right: parent.right
-                rightMargin: parent.width * 0.05
-            }
-
-        
-            Image {
-                id: wordImage
-                sourceSize.width: parent.width * 0.6
-                
-                anchors {
-                    centerIn: parent
-                    margins: 0.05 + parent.width
-                }
-            }
-            
         }
 
         DropShadow {
@@ -193,7 +179,7 @@ ActivityBase {
             color: "#ff292950"
             source: imageFrame
         }
-            
+
         onVoiceError: repeatItem.visible = false
         onVoiceDone: repeatItem.visible = true
 
