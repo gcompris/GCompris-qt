@@ -204,10 +204,10 @@ ActivityBase {
         property int iconWidth: 190 * ApplicationInfo.ratio
         property int iconHeight: 190 * ApplicationInfo.ratio
         property int activityCellWidth:
-            horizontal ? iconWidth+(main.width%iconWidth)/Math.round(main.width/iconWidth) :
-                         iconWidth+((main.width - section.width)%iconWidth)/Math.round((main.width - section.width)/iconWidth)
+            horizontal ? background.width / Math.floor(background.width / iconWidth) :
+                         (background.width - section.width) / Math.floor((background.width - section.width) / iconWidth)
         property int activityCellHeight: iconHeight * 1.5
-
+        onActivityCellWidthChanged: console.log(activityCellWidth, background.width, Math.floor(background.width / iconWidth))
         GridView {
             id: activitiesGrid
             anchors {
@@ -217,26 +217,27 @@ ActivityBase {
                 margins: 4
             }
             width: background.width
-            cellWidth: activityCellWidth + 10
-            cellHeight: activityCellHeight + 10
+            cellWidth: activityCellWidth
+            cellHeight: activityCellHeight
             clip: true
             model: ActivityInfoTree.menuTree
+            property int spacing: 10
 
             delegate: Item {
                 id: delegateItem
-                width: activityCellWidth
-                height: activityCellHeight
+                width: activityCellWidth - activitiesGrid.spacing
+                height: activityCellHeight - activitiesGrid.spacing
                 Rectangle {
-                    id: activityBackgroung
-                    width: activityCellWidth
-                    height: activityCellHeight
+                    id: activityBackground
+                    width: activityCellWidth - activitiesGrid.spacing
+                    height: activityCellHeight - activitiesGrid.spacing
                     anchors.horizontalCenter: parent.horizontalCenter
                     color: "white"
                     opacity: 0.5
                 }
                 Image {
                     source: "qrc:/gcompris/src/activities/" + icon;
-                    anchors.top: activityBackgroung.top
+                    anchors.top: activityBackground.top
                     anchors.horizontalCenter: parent.horizontalCenter
                     sourceSize.height: iconHeight
                     anchors.margins: 5
@@ -262,7 +263,7 @@ ActivityBase {
                         anchors.top: parent.bottom
                         anchors.horizontalCenter: parent.horizontalCenter
                         horizontalAlignment: Text.AlignHCenter
-                        width: activityBackgroung.width
+                        width: activityBackground.width
                         fontSizeMode: Text.Fit
                         minimumPointSize: 7
                         font.pointSize: 14
@@ -274,10 +275,10 @@ ActivityBase {
                 }
                 ParticleSystemStar {
                     id: particles
-                    anchors.fill: activityBackgroung
+                    anchors.fill: activityBackground
                 }
                 MouseArea {
-                    anchors.fill: activityBackgroung
+                    anchors.fill: activityBackground
                     onClicked: selectCurrentItem()
                 }
                 Image {
@@ -304,8 +305,8 @@ ActivityBase {
                 }
             }
             highlight: Rectangle {
-                width: activityCellWidth
-                height: activityCellHeight
+                width: activityCellWidth - activitiesGrid.spacing
+                height: activityCellHeight - activitiesGrid.spacing
                 color:  "#AAFFFFFF"
                 border.width: 3
                 border.color: "black"
