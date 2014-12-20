@@ -185,7 +185,6 @@ ActivityBase {
             highlight: Item {
                 width: sectionCellWidth
                 height: sectionCellHeight
-                visible: background.keyboardMode
 
                 Rectangle {
                     anchors.fill: parent
