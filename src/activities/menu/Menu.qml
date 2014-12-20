@@ -207,7 +207,7 @@ ActivityBase {
             horizontal ? background.width / Math.floor(background.width / iconWidth) :
                          (background.width - section.width) / Math.floor((background.width - section.width) / iconWidth)
         property int activityCellHeight: iconHeight * 1.5
-        onActivityCellWidthChanged: console.log(activityCellWidth, background.width, Math.floor(background.width / iconWidth))
+
         GridView {
             id: activitiesGrid
             anchors {
