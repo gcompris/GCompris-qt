@@ -144,17 +144,22 @@ ActivityBase {
             enabled: !drop.running && !items.gameDone
             hoverEnabled: !drop.running && !items.gameDone
 
+            property bool holdMode: true
             function display() {
                 var coord = grid.mapFromItem(background, mouseX, mouseY)
                 Activity.setPieceLocation(coord.x, coord.y)
             }
 
             onPositionChanged: items.dynamic.enabled ? display() : ''
+            onPressed: holdMode = false
+            onPressAndHold: holdMode = true
             onClicked: {
                 display()
-                var coord = grid.mapFromItem(background, mouseX, mouseY)
-                var column = Activity.whichColumn(coord.x, coord.y)
-                Activity.handleDrop(column)
+                if(!holdMode) {
+                    var coord = grid.mapFromItem(background, mouseX, mouseY)
+                    var column = Activity.whichColumn(coord.x, coord.y)
+                    Activity.handleDrop(column)
+                }
             }
         }
 
