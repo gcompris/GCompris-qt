@@ -185,7 +185,7 @@ ActivityBase {
                             height: column.itemHeight
                             z: iAmSelected ? 10 : 1
 
-                            property bool iAmSelected: imageId === items.selectedItem
+                            property bool iAmSelected: items.selectedItem === modelData
                             property string basename: modelData
 
                             states: [
