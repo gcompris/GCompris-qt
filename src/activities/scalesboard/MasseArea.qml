@@ -90,7 +90,12 @@ Rectangle {
 
     DropArea {
         id: dropArea
-        anchors.fill: parent
+        anchors {
+            left: parent.left
+            right: parent.right
+            verticalCenter: parent.verticalCenter
+        }
+        height: parent.height * 2
     }
     
     Flow {

@@ -78,7 +78,8 @@ ActivityBase {
         Image {
             id: scale
             source: Activity.url + "scale.svg"
-            sourceSize.width: parent.width * 0.8
+            sourceSize.width: Math.min(parent.width - 10 * ApplicationInfo.ratio,
+                                       (parent.height - bar.height - 10 * ApplicationInfo.ratio) * 2)
             anchors.centerIn: parent
         }
 
