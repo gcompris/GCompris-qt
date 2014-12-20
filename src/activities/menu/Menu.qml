@@ -203,10 +203,10 @@ ActivityBase {
         // Activities
         property int iconWidth: 190 * ApplicationInfo.ratio
         property int iconHeight: 190 * ApplicationInfo.ratio
-        property int cellWidth2:
+        property int activityCellWidth:
             horizontal ? iconWidth+(main.width%iconWidth)/Math.round(main.width/iconWidth) :
                          iconWidth+((main.width - section.width)%iconWidth)/Math.round((main.width - section.width)/iconWidth)
-        property int cellHeight2: iconHeight * 1.5
+        property int activityCellHeight: iconHeight * 1.5
 
         GridView {
             id: activitiesGrid
@@ -216,26 +216,23 @@ ActivityBase {
                 left: horizontal ? parent.left : section.right
                 margins: 4
             }
-            width: main.width
-            cellWidth: cellWidth2
-            cellHeight: cellHeight2
-            focus: true
+            width: background.width
+            cellWidth: activityCellWidth + 10
+            cellHeight: activityCellHeight + 10
             clip: true
             model: ActivityInfoTree.menuTree
 
             delegate: Item {
                 id: delegateItem
-                width: iconWidth+(main.width%iconWidth)/Math.round(main.width/iconWidth)
-                height: iconHeight
+                width: activityCellWidth
+                height: activityCellHeight
                 Rectangle {
                     id: activityBackgroung
-                    width: cellWidth2 - 10
-                    height: cellHeight2 - 10
+                    width: activityCellWidth
+                    height: activityCellHeight
                     anchors.horizontalCenter: parent.horizontalCenter
-                    opacity: 0.6
-                    border.width: delegateItem.GridView.isCurrentItem &&
-                                  background.keyboardMode ? 6 : 2
-                    border.color: "black"
+                    color: "white"
+                    opacity: 0.5
                 }
                 Image {
                     source: "qrc:/gcompris/src/activities/" + icon;
@@ -281,11 +278,7 @@ ActivityBase {
                 }
                 MouseArea {
                     anchors.fill: activityBackgroung
-                    hoverEnabled: true
-                    onClicked: {
-                        selectCurrentItem()
-                    }
-                    onEntered: activitiesGrid.currentIndex = index
+                    onClicked: selectCurrentItem()
                 }
                 Image {
                     source: menuActivity.url + (favorite ? "all.svgz" : "all_disabled.svg");
@@ -309,6 +302,16 @@ ActivityBase {
                             ActivityInfoTree.menuTree[index].name
                     if (activityLoader.status == Loader.Ready) loadActivity()
                 }
+            }
+            highlight: Rectangle {
+                width: activityCellWidth
+                height: activityCellHeight
+                color:  "#AAFFFFFF"
+                border.width: 3
+                border.color: "black"
+                visible: background.keyboardMode
+                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
+                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
         }
 
