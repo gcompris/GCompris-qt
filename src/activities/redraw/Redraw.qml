@@ -89,12 +89,18 @@ ActivityBase {
         Keys.onTabPressed: Activity.dump()
 
         Row {
-            anchors.fill: parent
+            anchors {
+                top: parent.top
+                right: parent.right
+                left: parent.left
+                bottom: bar.top
+            }
             anchors.margins: 10
             spacing: 20
 
             // The color selector
             Column {
+                id: colorSelector
                 Repeater {
                     model: items.numberOfColor
                     Item {
@@ -207,15 +213,17 @@ ActivityBase {
             Grid {
                 id: drawAndExampleArea
                 columns: background.landscape ? 2 : 1
-                width: parent.width
+                width: gridWidth
                 height: parent.height
                 spacing: 10
+
+                property int gridWidth: parent.width - colorSelector.width
 
                 // The drawing area
                 Grid {
                     id: drawingArea
-                    width: background.landscape ? parent.width * 0.4 : parent.width * 0.8
-                    height: background.landscape ? parent.height * 0.8 : parent.height * 0.4
+                    width: background.landscape ? parent.gridWidth / 2 - parent.spacing * 2 : parent.gridWidth
+                    height: background.landscape ? parent.height : parent.height / 2
                     columns: items.numberOfColumn
                     Repeater {
                         id: userModel
