@@ -21,11 +21,13 @@
 import QtQuick 2.2
 import QtQuick.Controls 1.1
 import QtQuick.Controls.Styles 1.0
+import GCompris 1.0
 
 ButtonStyle {
+    property int textWidth: 200
     background: Rectangle {
-        implicitWidth: 100
-        implicitHeight: 25
+        implicitWidth: textWidth // 10 * control.text.length
+        implicitHeight: 50 * ApplicationInfo.ratio
         border.width: control.activeFocus ? 4 : 2
         border.color: "black"
         radius: 10
@@ -34,10 +36,13 @@ ButtonStyle {
             GradientStop { position: 1 ; color: control.pressed ? "#44ff00" : "#f8d600" }
         }
     }
-    label: GCText {
-        text: control.text
-        horizontalAlignment: Text.AlignHCenter
-        verticalAlignment: Text.AlignVCenter
-        wrapMode: Text.WordWrap
+    label: Item {
+        anchors.fill: parent
+        GCText {
+            text: control.text
+            anchors.verticalCenter: parent.verticalCenter
+            anchors.horizontalCenter: parent.horizontalCenter
+            wrapMode: Text.WordWrap
+        }
     }
 }
