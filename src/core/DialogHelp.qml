@@ -24,6 +24,8 @@ import GCompris 1.0
 DialogBackground {
     visible: false
     title: activityInfo.title
+    titleIcon: "qrc:/gcompris/src/core/resource/difficulty" +
+               activityInfo.difficulty + ".svgz"
     property QtObject activityInfo: ActivityInfoTree.currentActivity
 
     function getIcon() {

@@ -30,6 +30,7 @@ Rectangle {
     z: 1000
     property bool isDialog: true
     property string title
+    property alias titleIcon: titleIcon.source
     property string content
     signal close
     signal start
@@ -52,6 +53,15 @@ Rectangle {
                 height: title.height * 1.2
                 border.color: "black"
                 border.width: 2
+
+                Image {
+                    id: titleIcon
+                    anchors {
+                        left: parent.left
+                        top: parent.top
+                        margins: 4 * ApplicationInfo.ratio
+                    }
+                }
 
                 GCText {
                     id: title
