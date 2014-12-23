@@ -38,7 +38,6 @@ var maxSubLevel = 0;
 var items;
 var uppercaseOnly;
 var mode;
-var defaultSubLevel = 8; // min. # of sublevels
 
 //speed calculations, common:
 var speed = 0;           // how fast letters fall
@@ -94,13 +93,8 @@ function initLevel() {
     maxSubLevel = items.wordlist.getMaxSubLevel(currentLevel + 1);
 
     if (maxSubLevel == 0) {
-        // If level length is not set in wordlist, make sure the level doesn't get too long
-        if (mode == "letter") {
-            var wordCount = level.words.length;
-            wordCount = Math.floor(wordCount / 3 + (currentLevel + 1) / 3);
-            maxSubLevel = (defaultSubLevel > wordCount ? defaultSubLevel : wordCount);
-        } else
-            maxSubLevel = 10 + currentLevel * 5;
+        // If "sublevels" length is not set in wordlist, use the words length
+        maxSubLevel = level.words.length
     }
     items.score.numberOfSubLevels = maxSubLevel;
     setSpeed();
