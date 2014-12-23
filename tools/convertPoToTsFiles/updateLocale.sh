@@ -17,7 +17,7 @@ function usage {
   echo "Example for the fr locale:"
   echo "  git clone git://anongit.kde.org/gcompris.git"
   echo "  cd gcompris/tools/convertPoToTsFiles"
-  echo "  cp ~/kde/gcompris_fr.po gcompris_fr_input.po"
+  echo "  cp ~/kde/gcompris_fr.po gcompris_input_fr.po"
   echo "  lupdate gcompris_fr_input.po -ts gcompris_fr_input.ts"
   echo "  ./updateLocale.sh fr ~/gcompris-gtk/po/fr.po"
   echo "  lconvert -i gcompris_fr.ts -o gcompris_fr.po"
