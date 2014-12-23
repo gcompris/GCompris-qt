@@ -20,6 +20,7 @@
  */
 import QtQuick 2.0
 import GCompris 1.0
+import "core.js" as Core
 
 /** Wordlist: Loads and maintains GCompris wordlists in json format
  * 
@@ -44,6 +45,7 @@ Item {
     property bool useDefault: true  ///< whether to automatically fallback to defaultFilename
     property string filename: ""
     property var wordList: ({})
+    property var randomWordList: []
     property int maxLevel: 0
 
     signal error(string msg);
@@ -101,10 +103,21 @@ Item {
                     wordList.levels[level - 1].sublevels : 0;
     }
     
-    function getRandomWord(level) {
-        if (level > maxLevel)
-            return null;
-        return wordList.levels[level - 1].words[Math.floor(Math.random() * (wordList.levels[level - 1].words.length))];
+    // We don't want to propose several time the same word. First call
+    // initRandomWord(level) to create the initial shuffled list of words.
+    // Then call getRandomWord() to get the words one at a time.
+    // If a word was not found by the child, add it again to the list
+    // with appendRandomWord(word)
+    function initRandomWord(level) {
+        randomWordList = Core.shuffle(wordList.levels[level - 1].words).slice(0)
+    }
+
+    function appendRandomWord(word) {
+        randomWordList.unshift(word)
+    }
+
+    function getRandomWord() {
+        return randomWordList.pop()
     }
     
     JsonParser {

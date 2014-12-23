@@ -88,68 +88,69 @@ function initLevel() {
     items.bar.level = currentLevel + 1;
     wgMaxFallingItems = 3
 
-    if (currentSubLevel == 0) {
-        // initialize level
-        deleteWords();
-        level = items.wordlist.getLevelWordList(currentLevel + 1);
-        maxSubLevel = items.wordlist.getMaxSubLevel(currentLevel + 1);
+    // initialize level
+    deleteWords();
+    level = items.wordlist.getLevelWordList(currentLevel + 1);
+    maxSubLevel = items.wordlist.getMaxSubLevel(currentLevel + 1);
 
-        if (maxSubLevel == 0) {
-            // If level length is not set in wordlist, make sure the level doesn't get too long
-            if (mode == "letter") {
-                var wordCount = level.words.length;
-                wordCount = Math.floor(wordCount / 3 + (currentLevel + 1) / 3);
-                maxSubLevel = (defaultSubLevel > wordCount ? defaultSubLevel : wordCount);
-            } else
-                maxSubLevel = 10 + currentLevel * 5;
-        }
-        items.score.numberOfSubLevels = maxSubLevel;
-        setSpeed();
-        /*console.log("Gletters: initializing level " + (currentLevel + 1) 
-                + " maxSubLvl=" + maxSubLevel 
+    if (maxSubLevel == 0) {
+        // If level length is not set in wordlist, make sure the level doesn't get too long
+        if (mode == "letter") {
+            var wordCount = level.words.length;
+            wordCount = Math.floor(wordCount / 3 + (currentLevel + 1) / 3);
+            maxSubLevel = (defaultSubLevel > wordCount ? defaultSubLevel : wordCount);
+        } else
+            maxSubLevel = 10 + currentLevel * 5;
+    }
+    items.score.numberOfSubLevels = maxSubLevel;
+    setSpeed();
+    /*console.log("Gletters: initializing level " + (currentLevel + 1)
+                + " maxSubLvl=" + maxSubLevel
                 + " wordCount=" + level.words.length
                 + " speed=" + speed + " fallspeed=" + fallSpeed);*/
-        
-        {
-            /* populate VirtualKeyboard for mobile:
+
+    {
+        /* populate VirtualKeyboard for mobile:
              * 1. for < 10 letters print them all in the same row
              * 2. for > 10 letters create 3 rows with equal amount of keys per row
              *    if possible, otherwise more keys in the upper rows
              * 3. if we have both upper- and lowercase letters activate the shift
              *    key*/
-            // first generate a map of needed letters
-            var letters = new Array();
-            items.keyboard.shiftKey = false;
-            for (var i = 0; i < level.words.length; i++) {
-                for (var j = 0; j < level.words[i].length; j++) {
-                    var letter = level.words[i].charAt(j);
-                    var isUpper = (letter == letter.toLocaleUpperCase());
-                    if (isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1)
-                        items.keyboard.shiftKey = true;
-                    else if (!isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1)
-                        items.keyboard.shiftKey = true;
-                    else if (letters.indexOf(letter) === -1)
-                        letters.push(level.words[i].charAt(j));
-                }
+        // first generate a map of needed letters
+        var letters = new Array();
+        items.keyboard.shiftKey = false;
+        for (var i = 0; i < level.words.length; i++) {
+            for (var j = 0; j < level.words[i].length; j++) {
+                var letter = level.words[i].charAt(j);
+                var isUpper = (letter == letter.toLocaleUpperCase());
+                if (isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1)
+                    items.keyboard.shiftKey = true;
+                else if (!isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1)
+                    items.keyboard.shiftKey = true;
+                else if (letters.indexOf(letter) === -1)
+                    letters.push(level.words[i].charAt(j));
             }
-            letters.sort();
-            // generate layout from letter map
-            var layout = new Array();
-            var row = 0;
-            var offset = 0;
-            while (offset < letters.length-1) {
-                var cols = letters.length <= 10 ? letters.length : (Math.ceil((letters.length-offset) / (3 - row)));
-                layout[row] = new Array();
-                for (var j = 0; j < cols; j++)
-                    layout[row][j] = { label: letters[j+offset] };
-                offset += j;
-                row++;
-            }
-            items.keyboard.layout = layout;
         }
+        letters.sort();
+        // generate layout from letter map
+        var layout = new Array();
+        var row = 0;
+        var offset = 0;
+        while (offset < letters.length-1) {
+            var cols = letters.length <= 10 ? letters.length : (Math.ceil((letters.length-offset) / (3 - row)));
+            layout[row] = new Array();
+            for (var j = 0; j < cols; j++)
+                layout[row][j] = { label: letters[j+offset] };
+            offset += j;
+            row++;
+        }
+        items.keyboard.layout = layout;
     }
-    
-    // initialize sublevel
+    items.wordlist.initRandomWord(currentLevel + 1)
+    initSubLevel()
+}
+
+function initSubLevel() {
     currentWord = null;
     if (currentSubLevel != 0) {
         // increase speed
@@ -234,7 +235,12 @@ function deleteWord(w)
 function createWord()
 {
     if (wordComponent.status == 1 /* Component.Ready */) {
-        var text = items.wordlist.getRandomWord(currentLevel + 1);
+        var text = items.wordlist.getRandomWord();
+        if(!text) {
+            items.wordDropTimer.restart();
+            return
+        }
+
         // if uppercaseOnly case does not matter otherwise it does
         if (uppercaseOnly)
             text = text.toLocaleUpperCase();
@@ -297,7 +303,8 @@ function dropWord()
     if (wordComponent !== null)
         createWord();
     else {
-        var text = items.wordlist.getRandomWord(currentLevel + 1);
+        var text = items.wordlist.getRandomWord();
+        items.wordlist.appendRandomWord(text)
         var fallingItem
         if(items.ourActivity.getImage(text))
             fallingItem = "FallingImage.qml"
@@ -315,6 +322,10 @@ function dropWord()
         } else
             wordComponent.statusChanged.connect(createWord);
     }
+}
+
+function appendRandomWord(word) {
+    items.wordlist.appendRandomWord(word)
 }
 
 function audioCrashPlay() {
@@ -342,7 +353,7 @@ function nextSubLevel() {
         currentSubLevel = 0
         items.bonus.good("lion");
     } else
-        initLevel();
+        initSubLevel();
 }
 
 function playLetter(letter) {
