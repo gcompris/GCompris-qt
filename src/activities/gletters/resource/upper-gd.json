@@ -1,7 +1,6 @@
 {
    "levels" : [
       {
-         "sublevels" : "5",
          "level" : "1",
          "words" : [
             "a",
@@ -12,7 +11,6 @@
          ]
       },
       {
-         "sublevels" : "10",
          "level" : "2",
          "words" : [
             "1",
@@ -47,7 +45,6 @@
          ]
       },
       {
-         "sublevels" : "12",
          "level" : "4",
          "words" : [
             "b",
@@ -114,7 +111,6 @@
          ]
       },
       {
-         "sublevels" : "5",
          "level" : "7",
          "words" : [
             "à",
@@ -125,7 +121,6 @@
          ]
       },
       {
-         "sublevels" : "12",
          "level" : "8",
          "words" : [
             "bh",

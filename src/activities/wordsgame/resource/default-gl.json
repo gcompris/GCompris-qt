@@ -2,10 +2,10 @@
    "levels" : [
       {
          "level" : "1",
+	 "sublevels" : "15",
          "words" : [
             "ama",
             "ano",
-            "año",
             "asa",
             "ave",
             "bar",
@@ -61,7 +61,6 @@
             "tea",
             "teu",
             "ton",
-            "uña",
             "uva",
             "val",
             "ver",
@@ -76,6 +75,7 @@
       },
       {
          "level" : "2",
+	 "sublevels" : "15",
          "words" : [
             "aire",
             "alga",
@@ -94,9 +94,10 @@
             "avoa",
             "azar",
             "azul",
+            "año",
             "baba",
-            "baño",
             "bata",
+            "baño",
             "belo",
             "bico",
             "boca",
@@ -160,8 +161,8 @@
             "lata",
             "lazo",
             "leña",
-            "liña",
             "lixo",
+            "liña",
             "lobo",
             "logo",
             "loro",
@@ -215,10 +216,10 @@
             "peto",
             "peza",
             "pico",
-            "piña",
             "pipa",
             "pita",
             "pito",
+            "piña",
             "plan",
             "pobo",
             "pola",
@@ -267,6 +268,7 @@
             "tres",
             "tubo",
             "unha",
+            "uña",
             "vaca",
             "vara",
             "vaso",
@@ -295,6 +297,7 @@
       },
       {
          "level" : "3",
+	 "sublevels" : "15",
          "words" : [
             "abril",
             "actor",
@@ -597,6 +600,7 @@
       },
       {
          "level" : "4",
+	 "sublevels" : "15",
          "words" : [
             "abella",
             "abrazo",
@@ -809,6 +813,7 @@
       },
       {
          "level" : "5",
+	 "sublevels" : "15",
          "words" : [
             "aburrido",
             "aburrimento",

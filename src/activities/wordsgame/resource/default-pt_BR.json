@@ -2,6 +2,7 @@
    "levels" : [
       {
          "level" : "1",
+	 "sublevels" : "15",
          "words" : [
             "amigo",
             "com",
@@ -34,6 +35,7 @@
       },
       {
          "level" : "2",
+	 "sublevels" : "15",
          "words" : [
             "atado",
             "farinha",
@@ -78,6 +80,7 @@
       },
       {
          "level" : "3",
+	 "sublevels" : "15",
          "words" : [
             "candeeiro",
             "aprender",
