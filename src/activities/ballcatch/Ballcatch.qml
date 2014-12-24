@@ -70,15 +70,15 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         onWidthChanged: {
-            ball.reinitBall();
             leftHand.reinitPosition();
             rightHand.reinitPosition();
+            ball.reinitBall();
         }
 
         onHeightChanged: {
-            ball.reinitBall();
             leftHand.reinitPosition();
             rightHand.reinitPosition();
+            ball.reinitBall();
         }
 
         DialogHelp {
@@ -134,6 +134,7 @@ ActivityBase {
 
             function reinitPosition() {
                 leftHand.x = background.width / 2 - width * 2
+                leftHand.y = background.height - 1.5 * height
             }
 
             MultiPointTouchArea {
@@ -165,6 +166,7 @@ ActivityBase {
 
             function reinitPosition() {
                 rightHand.x = background.width / 2 + width
+                rightHand.y = background.height - 1.5 * height
             }
 
             NumberAnimation {
