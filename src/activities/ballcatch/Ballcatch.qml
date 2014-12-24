@@ -208,23 +208,40 @@ ActivityBase {
         }
 
         // Instructions
-        GCText {
-            id: instructions
-            text: ApplicationInfo.isMobile ?
-                      qsTr("Tap both hands at the same time, " +
-                           "to make the ball go in a straight line.") :
-                      qsTr("Press left and right arrow keys at the same time, " +
-                           "to make the ball go in a straight line.")
+        BorderImage {
+            id: bubble
             x: 10.0
             y: tux.y
+            border.left: 3 * ApplicationInfo.ratio
+            border.top: 3 * ApplicationInfo.ratio
+            border.right: 20 * ApplicationInfo.ratio
+            border.bottom: 3 * ApplicationInfo.ratio
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/bubble.svg"
             width: tux.x - 10
-            wrapMode: TextEdit.WordWrap
-            horizontalAlignment: TextEdit.AlignHCenter
-            verticalAlignment: TextEdit.AlignVCenter
-            font.pointSize: 14
-            // Remove the text when both keys has been pressed
+            height: instructions.height + 20 * ApplicationInfo.ratio
+            // Remove the instructions when both keys has been pressed
             visible: bar.level === 1 &&
                      !(items.leftPressed && items.rightPressed)
+
+            GCText {
+                id: instructions
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    verticalCenter: parent.verticalCenter
+                    leftMargin: 10 * ApplicationInfo.ratio
+                    rightMargin: 20 * ApplicationInfo.ratio
+                }
+                text: ApplicationInfo.isMobile ?
+                          qsTr("Tap both hands at the same time, " +
+                               "to make the ball go in a straight line.") :
+                          qsTr("Press left and right arrow keys at the same time, " +
+                               "to make the ball go in a straight line.")
+                wrapMode: TextEdit.WordWrap
+                horizontalAlignment: TextEdit.AlignHCenter
+                verticalAlignment: TextEdit.AlignVCenter
+                font.pointSize: 14
+            }
         }
 
         function playSound(identifier) {
