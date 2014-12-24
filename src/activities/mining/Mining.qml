@@ -65,7 +65,7 @@ ActivityBase {
                 source: Activity.url + "rockwall.svg"
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
-                sourceSize.width: parent.width * 3
+                sourceSize.width: parent.width
                 width: parent.width
                 height: parent.height
                 scale: miningBg._MIN_SCALE
@@ -79,7 +79,7 @@ ActivityBase {
 
                 Image {
                     source: Activity.url + "vertical_border.svg"
-                    sourceSize.height: parent.height * 3
+                    sourceSize.height: parent.height
                     width: parent.width * 0.05
                     anchors {
                         top: parent.top
@@ -90,7 +90,7 @@ ActivityBase {
 
                 Image {
                     source: Activity.url + "vertical_border.svg"
-                    sourceSize.height: parent.height * 3
+                    sourceSize.height: parent.height
                     width: parent.width * 0.05
                     anchors {
                         top: parent.top
@@ -101,7 +101,7 @@ ActivityBase {
 
                 Image {
                     source: Activity.url + "horizontal_border.svg"
-                    sourceSize.width: parent.width * 3
+                    sourceSize.width: parent.width
                     height: parent.height * 0.05
                     anchors {
                         top: parent.top
