@@ -222,8 +222,9 @@ ActivityBase {
             width: tux.x - 10
             height: instructions.height + 20 * ApplicationInfo.ratio
             // Remove the instructions when both keys has been pressed
-            visible: bar.level === 1 &&
-                     !(items.leftPressed && items.rightPressed)
+            opacity: bar.level === 1 &&
+                     !(items.leftPressed && items.rightPressed) ? 1 : 0
+            Behavior on opacity { NumberAnimation { duration: 120 } }
 
             GCText {
                 id: instructions
