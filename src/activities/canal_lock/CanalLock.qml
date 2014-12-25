@@ -168,6 +168,8 @@ ActivityBase {
                             water.state = 'down'
                         } else if(lock1.state == 'open') {
                             lock1.state = 'close'
+                        } else {
+                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
                         }
                     }
                 }
@@ -197,6 +199,8 @@ ActivityBase {
                             water.state = 'up'
                         } else if(lock2.state == 'open') {
                             lock2.state = 'close'
+                        } else {
+                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
                         }
                     }
                 }
@@ -226,6 +230,8 @@ ActivityBase {
                         } else if(door1.state == 'open') {
                             door1.state = 'close'
                             leftLight.state = 'red'
+                        } else {
+                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
                         }
                     }
                 }
@@ -254,6 +260,8 @@ ActivityBase {
                         } else if(door2.state == 'open') {
                             door2.state = 'close'
                             rightLight.state = 'red'
+                        } else {
+                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
                         }
                     }
                 }
