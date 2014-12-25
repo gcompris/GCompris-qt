@@ -24,6 +24,7 @@ import GCompris 1.0
 
 import "../../core"
 import "magic-hat.js" as Activity
+import "."
 
 ActivityBase {
     id: activity
@@ -75,6 +76,7 @@ ActivityBase {
             Hat {
                 id: theHat
                 starsSize: background.starSize
+                audioEffects: activity.audioEffects
             }
             GCText {
                 //: The math operation
