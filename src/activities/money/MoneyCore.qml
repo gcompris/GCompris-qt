@@ -50,6 +50,7 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property GCAudio audioEffects: activity.audioEffects
             property alias answerModel: answerModel
             property alias pocketModel: pocketModel
             property alias store: store

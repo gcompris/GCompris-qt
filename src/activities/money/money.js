@@ -735,6 +735,7 @@ function checkAnswer() {
 }
 
 function pay(index) {
+    items.audioEffects.play(url + "money1.wav")
     // Add it to the anwser
     items.answerModel.append(items.pocketModel.get(index))
 
@@ -745,6 +746,7 @@ function pay(index) {
 }
 
 function unpay(index) {
+    items.audioEffects.play(url + "money2.wav")
     // Add it to the pocket
     items.pocketModel.append(items.answerModel.get(index))
 
