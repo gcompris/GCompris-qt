@@ -131,7 +131,7 @@ ActivityBase {
                             items.currentLock++
                             if(items.currentLock == items.lastLock) {
                                 background.win()
-                                activity.audioEffects.play("qrc:/gcompris/src/activities/canal_lock/resource/water.wav")
+                                activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/water.wav")
                             } else {
                                 activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/darken.wav")
                             }

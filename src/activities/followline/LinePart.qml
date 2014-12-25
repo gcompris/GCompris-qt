@@ -60,7 +60,7 @@ Item {
                 if(part.items.currentLock == part.index) {
                     part.items.currentLock++
                     if(part.items.currentLock >= part.items.lastLock) {
-                        audioEffects.play("qrc:/gcompris/src/activities/canal_lock/resource/water.wav")
+                        audioEffects.play("qrc:/gcompris/src/core/resource/sounds/water.wav")
                         items.background.win()
                     } else {
                         audioEffects.play("qrc:/gcompris/src/core/resource/sounds/darken.wav")

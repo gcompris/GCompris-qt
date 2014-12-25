@@ -126,7 +126,7 @@ ActivityBase {
                 onStateChanged: {
                     // When activity is first loaded audioEffects is not yet assigned
                     if(activity.audioEffects)
-                        activity.audioEffects.play(activity.url + 'water.wav')
+                        activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/water.wav')
                     if( water.state == 'up' && boat.state == 'middleDown')
                         boat.state = 'middleUp'
                     else if( water.state == 'down' && boat.state == 'middleUp')
