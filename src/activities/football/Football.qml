@@ -58,6 +58,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias timer: timer
+            property GCAudio audioEffects: activity.audioEffects
         }
 
         onStart: { Activity.start(items) }
@@ -100,6 +101,7 @@ ActivityBase {
                             line.opacity = 0
                             Activity.startMotion(point1.x - ball.width / 2,
                                                  point1.y - ball.height / 2)
+                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
                         }
                         onPressed: line.opacity = 1
                         onTouchUpdated: {
