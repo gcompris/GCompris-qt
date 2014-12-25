@@ -91,6 +91,7 @@ ActivityBase {
         function loadActivity() {
             activityLoader.item.menu = menuActivity
             activityLoader.item.activityInfo = ActivityInfoTree.currentActivity
+            console.log("loadActivity", menuActivity.audioVoices)
             pageView.push(activityLoader.item)
         }
 
@@ -298,8 +299,11 @@ ActivityBase {
                 function selectCurrentItem() {
                     particles.emitter.burst(50)
                     ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
-                    activityLoader.source = "qrc:/gcompris/src/activities/" +
-                            ActivityInfoTree.menuTree[index].name
+                    activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.menuTree[index].name,
+                                             {
+                                                 'audioVoices': audioVoices,
+                                                 'audioEffects': audioEffects
+                                             })
                     if (activityLoader.status == Loader.Ready) loadActivity()
                 }
             }
