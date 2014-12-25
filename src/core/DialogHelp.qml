@@ -64,6 +64,7 @@ DialogBackground {
         }
         if(activityInfo.section) {
             contentText += "<b>" + qsTr("Section: ") + "</b>" + activityInfo.section
+            contentText += " (" + activityInfo.name.split('/')[0] + ")"
             contentText += "<br/><br/>"
         }
         return contentText
