@@ -40,16 +40,24 @@ Item {
     property int wrongAnswerShakeAmplitudeMin: 45
     property int wrongAnswerShakeAmplitude: wrongAnswerShakeAmplitudeCalc < wrongAnswerShakeAmplitudeMin ? wrongAnswerShakeAmplitudeMin : wrongAnswerShakeAmplitudeCalc
 
+    // If you want the sound effects just pass the audioEffects
+    property GCAudio audioEffects
+
     signal correctlyPressed
     signal incorrectlyPressed
 
     signal pressed
     onPressed: {
         if (!blockClicks) {
-            if (isCorrectAnswer)
+            if (isCorrectAnswer) {
+                if(audioEffects)
+                    audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav")
                 correctAnswerAnimation.start();
-            else
+            } else {
+                if(audioEffects)
+                    audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
                 wrongAnswerAnimation.start();
+            }
         }
     }
 
