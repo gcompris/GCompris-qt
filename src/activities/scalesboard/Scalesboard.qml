@@ -24,6 +24,7 @@ import GCompris 1.0
 
 import "../../core"
 import "scalesboard.js" as Activity
+import "."
 
 ActivityBase {
     id: activity
@@ -73,7 +74,8 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         onScaleHeightChanged: Activity.initCompleted && scaleHeight == 0 && question.hasText == "" ?
-                                  bonus.good("flower") : null
+                                  bonus.good("flower") :
+                                  activity.audioEffects.play('qrc:/gcompris/src/activities/erase/resource/eraser2.wav')
 
         Image {
             id: scale
