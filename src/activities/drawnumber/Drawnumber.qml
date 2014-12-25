@@ -54,6 +54,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property GCAudio audioEffects: activity.audioEffects
 
             property alias pointImageRepeater: pointImageRepeater
             property alias segmentsRepeater: segmentsRepeater
@@ -178,6 +179,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            audioEffects: activity.audioEffects
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
