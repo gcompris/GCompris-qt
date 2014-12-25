@@ -37,6 +37,7 @@ function start(items_, dataset_, mode_) {
     currentLevel = 0
     numberOfLevel = dataset.length
     items.firstQuestion = true
+    items.audioOk = false
     initLevel()
 }
 

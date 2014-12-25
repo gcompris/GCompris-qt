@@ -39,12 +39,13 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        signal start
-        signal stop
         focus: true
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: parent.width
         source: backgroundImg
+
+        signal start
+        signal stop
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -59,9 +60,10 @@ ActivityBase {
             property alias questionItem: questionItem
             // On startup we want to queue the first sound but not after
             property bool firstQuestion: true
+            property bool audioOk: false
         }
-        onStart: { Activity.start(items, dataset, mode) }
-        onStop: { Activity.stop() }
+        onStart: Activity.start(items, dataset, mode)
+        onStop: Activity.stop()
 
         ListModel {
               id: containerModel
@@ -102,9 +104,9 @@ ActivityBase {
                 text = Activity.getCurrentTextQuestion()
                 if(Activity.getCurrentAudioQuestion()) {
                     if(items.firstQuestion)
-                        activity.audioVoices.append(Activity.getCurrentAudioQuestion())
+                        items.audioOk = activity.audioVoices.append(Activity.getCurrentAudioQuestion())
                     else
-                        activity.audioVoices.play(Activity.getCurrentAudioQuestion())
+                        items.audioOk = activity.audioVoices.play(Activity.getCurrentAudioQuestion())
                     items.firstQuestion = false
                 }
                 opacity = 1.0
@@ -143,9 +145,11 @@ ActivityBase {
         }
 
         BarButton {
+            id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svgz";
             sourceSize.width: 80 * ApplicationInfo.ratio
             z: bar.z + 1
+            visible: items.audioOk
             anchors {
                 bottom: parent.bottom
                 right: parent.right
