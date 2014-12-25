@@ -131,6 +131,7 @@ function getCurrentHandRotation() {
 
 function displayNextHand() {
     if(currentHands.length <= ++currentImageId ) {
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/bonus.wav")
         items.bonus.good("flower")
         nextLevel()
     }

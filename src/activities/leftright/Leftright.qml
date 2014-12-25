@@ -45,6 +45,7 @@ ActivityBase {
             id: items
             property alias bar: bar
             property alias bonus: bonus
+            property GCAudio audioEffects: activity.audioEffects
             property alias imageAnimOff: imageAnimOff
             property alias leftButton: leftButton
             property alias rightButton: rightButton
@@ -142,6 +143,7 @@ ActivityBase {
                 anchors.top: blackBoard.bottom
                 anchors.margins: 10
                 textLabel: qsTr("Left hand")
+                audioEffects: activity.audioEffects
                 onCorrectlyPressed: Activity.leftClick();
             }
 
@@ -152,6 +154,7 @@ ActivityBase {
                 anchors.right: blackBoard.right
                 anchors.top: blackBoard.bottom
                 anchors.margins: 10
+                audioEffects: activity.audioEffects
                 textLabel: qsTr("Right hand")
                 onCorrectlyPressed: Activity.rightClick();
             }
