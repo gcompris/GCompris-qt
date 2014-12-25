@@ -59,7 +59,7 @@ ActivityBase {
 
         Item {
             id: topBorder
-            height: background.height * 0.1
+            height: background.height * 0.08
         }
 
         Image {
@@ -68,7 +68,7 @@ ActivityBase {
             anchors.top: topBorder.bottom
             fillMode: Image.PreserveAspectFit
             sourceSize.width: Math.min(background.width,
-                                       (background.height - leftButton.height) * 1.3)
+                                       (background.height - leftButton.height - bar.height) * 1.3)
             source: "qrc:/gcompris/src/activities/leftright/resource/blackboard.svgz"
 
             Image {
