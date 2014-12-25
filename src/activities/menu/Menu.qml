@@ -91,7 +91,6 @@ ActivityBase {
         function loadActivity() {
             activityLoader.item.menu = menuActivity
             activityLoader.item.activityInfo = ActivityInfoTree.currentActivity
-            console.log("loadActivity", menuActivity.audioVoices)
             pageView.push(activityLoader.item)
         }
 
