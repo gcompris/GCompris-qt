@@ -159,6 +159,7 @@ ActivityBase {
                         Activity.nextQuestion()
                     }
                 }
+                audioEffects: activity.audioEffects
             }
 
             Text {

@@ -53,6 +53,7 @@ Item {
         "6" : [1, 2, 4], "7" : [1, 2, 4, 5], "8" : [1, 2, 5], "9" : [2, 4], "0" :[3, 5, 6]
     }
     property variant brailleCodes: isLetter ? brailleCodesLetter : brailleCodesNumber
+    property GCAudio audioEffects
 
     function updateDotsFromBrailleChar() {
         var dots = []
@@ -123,6 +124,12 @@ Item {
                     return false
                 }
 
+                Behavior on color {
+                    ColorAnimation {
+                        duration: 200
+                    }
+                }
+
                 Text {
                     id: numtext
                     text: (clickable) ? modelData : ""
@@ -154,6 +161,7 @@ Item {
                         } else {
                             incircle1.state = "on"
                         }
+                        activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
                         // On touch screens we don't get the exit event.
                         incircle1.border.width = 2 * ApplicationInfo.ratio
                         brailleCharItem.updateBrailleCharFromDots()
