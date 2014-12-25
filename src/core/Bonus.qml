@@ -34,8 +34,11 @@ Image {
     signal loose
 
     property bool isWin: false
+    property GCAudio audioEffects
 
     function good(name) {
+        if(audioEffects)
+            audioEffects.play("qrc:/gcompris/src/core/resource/sounds/bonus.wav")
         source = "qrc:/gcompris/src/core/resource/bonus/" + name + "_good.png"
         isWin = true;
         animation.start()
