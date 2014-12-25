@@ -362,119 +362,136 @@ ActivityBase {
             }
         }
 
-        GCText {
-            id: tuto
+        Rectangle {
+            id: tutoBackground
+            color: "#C0b7b353"
+            border.color: "black"
+            border.width: 2
+            radius: 10
             anchors {
                 left: parent.left
                 right: parent.right
                 top: parent.top
-                margins: 20
+                margins: 10
             }
-            font.pointSize: 13
-            color: "white"
-            wrapMode: TextEdit.WordWrap
-            horizontalAlignment: TextEdit.AlignHCenter
+            height: tuto.height + anchors.margins * 2
+            visible: tuto.state != "Stopped"
+            Behavior on height { PropertyAnimation { duration: 100 } }
 
-            property string newState
+            GCText {
+                id: tuto
+                font.pointSize: 13
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    top: parent.top
+                    margins: 10
+                }
+                color: "white"
+                wrapMode: TextEdit.WordWrap
+                horizontalAlignment: TextEdit.AlignHCenter
 
-            function setState(nextState) {
-                if(bar.level == 1) {
-                    if(newState != nextState) {
-                        newState = nextState
+                property string newState
+
+                function setState(nextState) {
+                    if(bar.level == 1) {
+                        if(newState != nextState) {
+                            newState = nextState
+                            anim.restart()
+                        }
+                    } else {
+                        newState = "Stopped"
                         anim.restart()
                     }
-                } else {
-                    newState = "Stopped"
-                    anim.restart()
                 }
-            }
 
-            states: [
-                State {
-                    name: "Started"
-                    PropertyChanges {
-                        target: tuto;
-                        text: qsTr("Find the sparkle and zoom in around it. If you have a mouse, point the cursor on the sparkle then use the scroll wheel. If you have a trackpad, point the cursor on the sparkle then drag one finger on the right area or two fingers on the center. On a touch area, drag two fingers away from the sparkle, one in each direction.")
+                states: [
+                    State {
+                        name: "Started"
+                        PropertyChanges {
+                            target: tuto;
+                            text: qsTr("Find the sparkle and zoom in around it. If you have a mouse, point the cursor on the sparkle then use the scroll wheel. If you have a trackpad, point the cursor on the sparkle then drag one finger on the right area or two fingers on the center. On a touch area, drag two fingers away from the sparkle, one in each direction.")
+                        }
+                    },
+                    State {
+                        name: "Stopped"
+                        PropertyChanges { target: tuto; text: ""}
+                    },
+                    State {
+                        name: "ZoomOk"
+                        PropertyChanges {
+                            target: tuto
+                            text: qsTr("Perfect you are zooming. Continue until you see the nugget.")}
+                    },
+                    State {
+                        name: "ZoomBad"
+                        PropertyChanges {
+                            target: tuto
+                            text: qsTr("Hum, take care, you are zooming too far from the sparkle.")}
+                    },
+                    State {
+                        name: "NuggetSeen"
+                        PropertyChanges {
+                            target: tuto
+                            text: qsTr("Now you see the nugget, click on it to catch it.")}
+                    },
+                    State {
+                        name: "NuggetNotSeen"
+                        PropertyChanges {
+                            target: tuto
+                            text: qsTr("Hum, you are too far from the nugget to see it. Unzoom then zoom again as close as you can from the sparkle.")}
+                    },
+                    State {
+                        name: "Unzoom"
+                        PropertyChanges {
+                            target: tuto
+                            text: qsTr("Now unzoom and try to find another sparkle.")}
+                    },
+                    State {
+                        name: "UnzoomBad"
+                        PropertyChanges {
+                            target: tuto
+                            text: qsTr("Continue to unzoom until you see the sparkle.")}
+                    },
+                    State {
+                        name: "UnzoomOk"
+                        PropertyChanges {
+                            target: tuto
+                            text: qsTr("Now you see the sparkle, go ahead, you can zoom on it.")}
                     }
-                },
-                State {
-                    name: "Stopped"
-                    PropertyChanges { target: tuto; text: ""}
-                },
-                State {
-                    name: "ZoomOk"
-                    PropertyChanges {
-                        target: tuto
-                        text: qsTr("Perfect you are zooming. Continue until you see the nugget.")}
-                },
-                State {
-                    name: "ZoomBad"
-                    PropertyChanges {
-                        target: tuto
-                        text: qsTr("Hum, take care, you are zooming too far from the sparkle.")}
-                },
-                State {
-                    name: "NuggetSeen"
-                    PropertyChanges {
-                        target: tuto
-                        text: qsTr("Now you see the nugget, click on it to catch it.")}
-                },
-                State {
-                    name: "NuggetNotSeen"
-                    PropertyChanges {
-                        target: tuto
-                        text: qsTr("Hum, you are too far from the nugget to see it. Unzoom then zoom again as close as you can from the sparkle.")}
-                },
-                State {
-                    name: "Unzoom"
-                    PropertyChanges {
-                        target: tuto
-                        text: qsTr("Now unzoom and try to find another sparkle.")}
-                },
-                State {
-                    name: "UnzoomBad"
-                    PropertyChanges {
-                        target: tuto
-                        text: qsTr("Continue to unzoom until you see the sparkle.")}
-                },
-                State {
-                    name: "UnzoomOk"
-                    PropertyChanges {
-                        target: tuto
-                        text: qsTr("Now you see the sparkle, go ahead, you can zoom on it.")}
-                }
-            ]
+                ]
 
-            SequentialAnimation {
-                id: anim
-                PropertyAnimation {
-                    target: tuto
-                    property: "opacity"
-                    easing.type: Easing.Linear
-                    from: 1.0; to: 0
-                    duration: 200
+                SequentialAnimation {
+                    id: anim
+                    PropertyAnimation {
+                        target: tuto
+                        property: "opacity"
+                        easing.type: Easing.Linear
+                        from: 1.0; to: 0
+                        duration: 200
+                    }
+                    PropertyAction {
+                        target: tuto
+                        property: "state"
+                        value: tuto.newState
+                    }
+                    PropertyAnimation {
+                        target: tuto
+                        property: "opacity"
+                        easing.type: Easing.Linear
+                        from: 0; to: 1.0
+                        duration: 200
+                    }
                 }
-                PropertyAction {
-                    target: tuto
-                    property: "state"
-                    value: tuto.newState
-                }
-                PropertyAnimation {
-                    target: tuto
-                    property: "opacity"
-                    easing.type: Easing.Linear
-                    from: 0; to: 1.0
-                    duration: 200
-                }
-            }
 
-            Behavior on opacity { PropertyAnimation { duration: 100 } }
-            transitions: Transition {
+                Behavior on opacity { PropertyAnimation { duration: 100 } }
+                transitions: Transition {
                     PropertyAnimation {
                         target: tuto
                         property: "opacity"
                         to: 1.0
                     }
+                }
             }
         }
 
