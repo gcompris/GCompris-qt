@@ -96,6 +96,7 @@ function createLinePart(index, x, y, width, height, rotation) {
     var part = component.createObject(
                 items.background,
                 {
+                    "audioEffects": items.audioEffects,
                     "x": x,
                     "y": y,
                     "width": width,
