@@ -212,23 +212,33 @@ ActivityBase {
                                 SequentialAnimation {
                                     loops: Animation.Infinite
                                     NumberAnimation {
-                                        target: cell; property: "rotation"; from: 0; to: 360; duration: 5000;
+                                        target: cell
+                                        property: "rotation"
+                                        from: 0; to: 360
+                                        duration: 5000;
                                         easing.type: Easing.InOutQuad
                                     }
                                     NumberAnimation {
-                                        target: cell; property: "rotation"; from: 360; to: 0; duration: 5000;
+                                        target: cell; property: "rotation"
+                                        from: 360; to: 0
+                                        duration: 5000;
                                         easing.type: Easing.InOutQuad
                                     }
                                 }
                                 SequentialAnimation {
                                     loops: Animation.Infinite
                                     NumberAnimation {
-                                        target: cell; property: "scale"; from: 0; to: 1; duration: 3000;
+                                        target: cell; property: "scale"
+                                        from: 0; to: 1
+                                        duration: 3000;
                                         easing.type: Easing.InOutQuad
                                     }
                                     PauseAnimation { duration: 300 + Math.random() * 300 }
                                     NumberAnimation {
-                                        target: cell; property: "scale"; from: 1; to: 0; duration: 1000;
+                                        target: cell
+                                        property: "scale"
+                                        from: 1; to: 0
+                                        duration: 1000;
                                         easing.type: Easing.InOutQuad
                                     }
                                 }
@@ -393,44 +403,78 @@ ActivityBase {
                 },
                 State {
                     name: "ZoomOk"
-                    PropertyChanges { target: tuto; text: qsTr("Perfect you are zooming. Continue until you see the nugget.")}
+                    PropertyChanges {
+                        target: tuto
+                        text: qsTr("Perfect you are zooming. Continue until you see the nugget.")}
                 },
                 State {
                     name: "ZoomBad"
-                    PropertyChanges { target: tuto; text: qsTr("Hum, take care, you are zooming too far from the sparkle.")}
+                    PropertyChanges {
+                        target: tuto
+                        text: qsTr("Hum, take care, you are zooming too far from the sparkle.")}
                 },
                 State {
                     name: "NuggetSeen"
-                    PropertyChanges { target: tuto; text: qsTr("Now you see the nugget, click on it to catch it.")}
+                    PropertyChanges {
+                        target: tuto
+                        text: qsTr("Now you see the nugget, click on it to catch it.")}
                 },
                 State {
                     name: "NuggetNotSeen"
-                    PropertyChanges { target: tuto; text: qsTr("Hum, you are too far from the nugget to see it. Unzoom then zoom again as close as you can from the sparkle.")}
+                    PropertyChanges {
+                        target: tuto
+                        text: qsTr("Hum, you are too far from the nugget to see it. Unzoom then zoom again as close as you can from the sparkle.")}
                 },
                 State {
                     name: "Unzoom"
-                    PropertyChanges { target: tuto; text: qsTr("Now unzoom and try to find another sparkle.")}
+                    PropertyChanges {
+                        target: tuto
+                        text: qsTr("Now unzoom and try to find another sparkle.")}
                 },
                 State {
                     name: "UnzoomBad"
-                    PropertyChanges { target: tuto; text: qsTr("Continue to unzoom until you see the sparkle.")}
+                    PropertyChanges {
+                        target: tuto
+                        text: qsTr("Continue to unzoom until you see the sparkle.")}
                 },
                 State {
                     name: "UnzoomOk"
-                    PropertyChanges { target: tuto; text: qsTr("Now you see the sparkle, go ahead, you can zoom on it.")}
+                    PropertyChanges {
+                        target: tuto
+                        text: qsTr("Now you see the sparkle, go ahead, you can zoom on it.")}
                 }
             ]
 
             SequentialAnimation {
                 id: anim
-                PropertyAnimation { target: tuto; property: "opacity"; easing.type: Easing.Linear; from: 1.0; to: 0; duration: 200 }
-                PropertyAction { target: tuto; property: "state"; value: tuto.newState }
-                PropertyAnimation { target: tuto; property: "opacity"; easing.type: Easing.Linear; from: 0; to: 1.0; duration: 200 }
+                PropertyAnimation {
+                    target: tuto
+                    property: "opacity"
+                    easing.type: Easing.Linear
+                    from: 1.0; to: 0
+                    duration: 200
+                }
+                PropertyAction {
+                    target: tuto
+                    property: "state"
+                    value: tuto.newState
+                }
+                PropertyAnimation {
+                    target: tuto
+                    property: "opacity"
+                    easing.type: Easing.Linear
+                    from: 0; to: 1.0
+                    duration: 200
+                }
             }
 
             Behavior on opacity { PropertyAnimation { duration: 100 } }
             transitions: Transition {
-                    PropertyAnimation { target: tuto; property: "opacity"; to: 1.0 }
+                    PropertyAnimation {
+                        target: tuto
+                        property: "opacity"
+                        to: 1.0
+                    }
             }
         }
 
