@@ -23,6 +23,7 @@ import QtQuick 2.1
 import GCompris 1.0
 
 import "../../core"
+import "."
 
 ActivityBase {
     id: activity
@@ -118,11 +119,14 @@ ActivityBase {
 
                 property int maxHeight: parent.paintedHeight * 0.33
                 property int minHeight: canal.paintedHeight * 0.15
-                property int duration: 2000
+                property int duration: 3500
 
                 Behavior on height { NumberAnimation { duration: water.duration } }
 
                 onStateChanged: {
+                    // When activity is first loaded audioEffects is not yet assigned
+                    if(activity.audioEffects)
+                        activity.audioEffects.play(activity.url + 'water.wav')
                     if( water.state == 'up' && boat.state == 'middleDown')
                         boat.state = 'middleUp'
                     else if( water.state == 'down' && boat.state == 'middleUp')
