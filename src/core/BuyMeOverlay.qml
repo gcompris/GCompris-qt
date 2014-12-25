@@ -20,12 +20,11 @@
  */
 import QtQuick 2.2
 import QtQuick.Controls 1.1
-import QtQuick.Controls.Styles 1.1
 import GCompris 1.0
 
 Component {
     Item {
-        
+
         anchors {
             fill: parent
             bottomMargin: bar.height * 1.2
@@ -68,24 +67,7 @@ Component {
                     topMargin: 10
                 }
                 text: qsTr("Buy the full version").toUpperCase()
-                style: ButtonStyle {
-                    background: Rectangle {
-                        implicitWidth: 100
-                        implicitHeight: 25
-                        border.width: control.activeFocus ? 4 : 2
-                        border.color: "black"
-                        radius: 10
-                        gradient: Gradient {
-                            GradientStop { position: 0 ; color: control.pressed ? "#87ff5c" : "#ffe85c"}
-                            GradientStop { position: 1 ; color: control.pressed ? "#44ff00" : "#f8d600"}
-                        }
-                    }
-                    label: GCText {
-                        text: control.text
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        wrapMode: Text.WordWrap
-                    }
+                style: GCButtonStyle {
                 }
                 
                 onClicked: {
@@ -112,6 +94,32 @@ Component {
         MultiPointTouchArea {
             // Just to catch mouse events
             anchors.fill: parent
+        }
+
+        Keys.onEscapePressed: home()
+        Keys.onPressed: {
+            event.accepted = true
+            if (event.modifiers === Qt.ControlModifier &&
+                    event.key === Qt.Key_Q) {
+                // Ctrl+Q exit the application
+                Core.quit(page);
+            } else if (event.modifiers === Qt.ControlModifier &&
+                    event.key === Qt.Key_B) {
+                // Ctrl+B toggle the bar
+                ApplicationSettings.isBarHidden = !ApplicationSettings.isBarHidden;
+            } else if (event.modifiers === Qt.ControlModifier &&
+                    event.key === Qt.Key_F) {
+                // Ctrl+F toggle fullscreen
+                ApplicationSettings.isFullscreen = !ApplicationSettings.isFullscreen
+            } else if (event.modifiers === Qt.ControlModifier &&
+                       event.key === Qt.Key_M) {
+                // Ctrl+M toggle sound
+                ApplicationSettings.isAudioEffectsEnabled = !ApplicationSettings.isAudioEffectsEnabled
+            } else if (event.modifiers === Qt.ControlModifier &&
+                       event.key === Qt.Key_W) {
+                // Ctrl+W exit the current activity
+                home()
+            }
         }
     }
 }
