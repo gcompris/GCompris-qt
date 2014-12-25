@@ -66,7 +66,7 @@ Creature {
 
     onIndexChanged: {
         audioEffects.stop()
-        audioEffects.play("qrc:/gcompris/src/activities/gnumch-equality/resource/smudge.wav")
+        audioEffects.play("qrc:/gcompris/src/core/resource/sounds/smudge.wav")
 
         if (monsters.isThereAMonster(index)) {
             getCaught(-1)
