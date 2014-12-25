@@ -21,6 +21,7 @@
 */
 import QtQuick 2.1
 import GCompris 1.0
+import "."
 
 import "../../core"
 import "enumerate.js" as Activity
@@ -94,6 +95,7 @@ ActivityBase {
                     imgPath: modelData
                     focus: true
                     backspaceCode: keyboard.backspace
+                    audioEffects: activity.audioEffects
                 }
             }
         }

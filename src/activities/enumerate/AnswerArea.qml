@@ -43,7 +43,11 @@ Rectangle {
     // True when the value is entered correctly
     property bool valid: false
 
+    property GCAudio audioEffects
+
     Component.onCompleted: Activity.registerAnswerItem(answerBackground)
+
+    onValidChanged: valid ? audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav") : null
 
     // A top gradient
     Rectangle {
@@ -145,4 +149,5 @@ Rectangle {
         style: Text.Outline
         styleColor: "white"
     }
+
 }
