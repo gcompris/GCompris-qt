@@ -298,8 +298,7 @@ function handleCollisionsWithCloud() {
 
                     if(currentSubLevel === numberOfSubLevels) {
                         /* Try the next level */
-                        nextLevel()
-                        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/bonus.wav")
+                        items.bonus.good("flower")
                     } else {
                         items.score.message = dataset[currentLevel].data[currentSubLevel]
                     }

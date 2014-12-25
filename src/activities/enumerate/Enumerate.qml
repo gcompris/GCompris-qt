@@ -154,10 +154,8 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            audioEffects: activity.audioEffects
             Component.onCompleted: win.connect(Activity.nextLevel)
-            onWin: {
-                activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/bonus.wav")
-            }
         }
     }
 }
