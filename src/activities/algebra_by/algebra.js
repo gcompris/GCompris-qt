@@ -140,6 +140,7 @@ function questionsLeft() {
         otheritems.numpad.answerFlag = true
 
         if(coreItems.score.currentSubLevel < 10) {
+            coreItems.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav")
             coreItems.score.currentSubLevel++
             coreItems.timer.start()
         } else if(coreItems.score.currentSubLevel >= 10) {
