@@ -53,12 +53,10 @@ Image {
             // We are done with the ballon move
             if(Activity.gameWon) {
                 // This is a win
-                background.playSound("tuxok")
                 bonus.good("tux")
             }
             else {
                 // This is a loose
-                background.playSound("youcannot")
                 bonus.bad("tux")
             }
         }
