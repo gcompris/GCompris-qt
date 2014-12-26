@@ -186,7 +186,7 @@ ActivityBase {
                             }
                         }
                         GCText {
-                            id: text
+                            id: text1
                             anchors.fill: parent
                             text: modelData
                             font.pointSize: 14
@@ -197,14 +197,14 @@ ActivityBase {
                             color: "white"
                         }
                         DropShadow {
-                            anchors.fill: text
+                            anchors.fill: text1
                             cached: true
                             horizontalOffset: 1
                             verticalOffset: 1
                             radius: 8.0
                             samples: 16
                             color: "#80000000"
-                            source: text
+                            source: text1
                         }
                     }
                 }
@@ -243,6 +243,7 @@ ActivityBase {
                         }
 
                         function paintCurrentItem() {
+                            userModel.itemAt(currentItem).playEffect(items.colorSelector)
                             userModel.itemAt(currentItem).paint(items.colorSelector)
                         }
 
@@ -284,6 +285,13 @@ ActivityBase {
                                 colorIndex = color
                             }
 
+                            function playEffect(color) {
+                                if(color === 0)
+                                    activity.audioEffects.play(Activity.url + 'eraser.wav')
+                                else
+                                    activity.audioEffects.play(Activity.url + 'brush.wav')
+                            }
+
                             Rectangle {
                                 id: userRect
                                 anchors.fill: parent
@@ -299,13 +307,9 @@ ActivityBase {
                                         }
                                     }
                                 }
-                                MouseArea {
-                                    anchors.fill: parent
-                                    onClicked: userItem.paint(items.colorSelector)
-                                }
                             }
                             GCText {
-                                id: text
+                                id: text2
                                 anchors.fill: parent
                                 anchors.margins: 4
                                 text: parent.colorIndex == 0 ? "" : parent.colorIndex
@@ -316,14 +320,14 @@ ActivityBase {
                                 color: "white"
                             }
                             DropShadow {
-                                anchors.fill: text
+                                anchors.fill: text2
                                 cached: true
                                 horizontalOffset: 1
                                 verticalOffset: 1
                                 radius: 8.0
                                 samples: 16
                                 color: "#80000000"
-                                source: text
+                                source: text2
                             }
                         }
                     }
@@ -354,7 +358,7 @@ ActivityBase {
                                 border.color: 'black'
                             }
                             GCText {
-                                id: text
+                                id: text3
                                 anchors.fill: parent
                                 anchors.margins: 4
                                 text: modelData == 0 ? "" : modelData
@@ -365,14 +369,14 @@ ActivityBase {
                                 color: "white"
                             }
                             DropShadow {
-                                anchors.fill: text
+                                anchors.fill: text3
                                 cached: true
                                 horizontalOffset: 1
                                 verticalOffset: 1
                                 radius: 8.0
                                 samples: 16
                                 color: "#80000000"
-                                source: text
+                                source: text3
                             }
 
                         }
@@ -393,8 +397,10 @@ ActivityBase {
                 for(var i in touchPoints) {
                     var touch = touchPoints[i]
                     var block = drawingArea.childAt(touch.x, touch.y)
-                    if(block)
+                    if(block) {
+                        block.playEffect(items.colorSelector)
                         block.paint(items.colorSelector)
+                    }
                 }
             }
         }
