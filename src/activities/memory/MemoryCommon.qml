@@ -58,6 +58,7 @@ ActivityBase {
             id: items
             property alias bar: bar
             property alias bonus: bonus
+            property GCAudio audioEffects: activity.audioEffects
             property bool withTux: activity.withTux
             property bool tuxTurn: false
             property int tuxScore: tuxScore.text
@@ -100,6 +101,7 @@ ActivityBase {
                     width: (background.width - (grid.columns + 1) * grid.spacing) / grid.columns
                     height: (background.height - (grid.rows + 1) * grid.spacing) / (grid.rows + 0.5)
                     audioVoices: activity.audioVoices
+                    audioEffects: activity.audioEffects
                }
             }
         }
@@ -171,6 +173,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            audioEffects: activity.audioEffects
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }

@@ -36,6 +36,7 @@ Flipable {
     property bool tuxTurn
 
     property GCAudio audioVoices
+    property GCAudio audioEffects
 
     onIsFoundChanged: {
         opacity = 0
@@ -119,6 +120,7 @@ Flipable {
         card.isBack = false
         card.isShown = true
         animationTimer.start()
+        audioEffects.play(Activity.url + "card_flip.wav")
     }
 
     function selectionReady() {

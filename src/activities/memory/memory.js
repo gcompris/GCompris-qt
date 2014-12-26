@@ -214,8 +214,12 @@ function cardClicked(cardItem) {
             } else {
                 youWon()
             }
-        } else if(items.withTux && items.tuxTurn) {
-            tuxPlay()
+        } else {
+            if(items.withTux && items.tuxTurn) {
+                tuxPlay()
+            } else {
+                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/win.wav')
+            }
         }
 
     } else {
