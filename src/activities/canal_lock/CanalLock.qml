@@ -124,9 +124,7 @@ ActivityBase {
                 Behavior on height { NumberAnimation { duration: water.duration } }
 
                 onStateChanged: {
-                    // When activity is first loaded audioEffects is not yet assigned
-                    if(activity.audioEffects)
-                        activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/water.wav')
+                    activity.audioEffects.append(activity.url + 'water_fill.wav')
                     if( water.state == 'up' && boat.state == 'middleDown')
                         boat.state = 'middleUp'
                     else if( water.state == 'down' && boat.state == 'middleUp')
@@ -153,7 +151,7 @@ ActivityBase {
                 anchors.horizontalCenterOffset: - parent.paintedWidth * 0.16
                 minHeight: canal.paintedHeight * 0.05
                 maxHeight: parent.paintedHeight * 0.18
-                duration: 400
+                duration: 0
 
                 MouseArea {
                     anchors.fill: parent
@@ -161,12 +159,15 @@ ActivityBase {
                     onClicked: {
                         if(background.running)
                             return
+                        lock1.duration = 400
                         if(lock1.state == 'close' &&
                                 door2.state == 'close' &&
                                 lock2.state == 'close') {
+                            activity.audioEffects.play(activity.url + 'lock.wav')
                             lock1.state = 'open'
                             water.state = 'down'
                         } else if(lock1.state == 'open') {
+                            activity.audioEffects.play(activity.url + 'lock.wav')
                             lock1.state = 'close'
                         } else {
                             activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
@@ -184,7 +185,7 @@ ActivityBase {
                 anchors.horizontalCenterOffset: parent.paintedWidth * 0.22
                 minHeight: canal.paintedHeight * 0.05
                 maxHeight: parent.paintedHeight * 0.18
-                duration: 400
+                duration: 0
 
                 MouseArea {
                     anchors.fill: parent
@@ -192,12 +193,15 @@ ActivityBase {
                     onClicked: {
                         if(background.running)
                             return
+                        lock2.duration = lock1.duration
                         if(lock2.state == 'close' &&
                                 door1.state == 'close' &&
                                 lock1.state == 'close') {
+                            activity.audioEffects.play(activity.url + 'lock.wav')
                             lock2.state = 'open'
                             water.state = 'up'
                         } else if(lock2.state == 'open') {
+                            activity.audioEffects.play(activity.url + 'lock.wav')
                             lock2.state = 'close'
                         } else {
                             activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
@@ -215,7 +219,7 @@ ActivityBase {
                 anchors.horizontalCenterOffset: - parent.paintedWidth * 0.07
                 minHeight: canal.paintedHeight * 0.05
                 maxHeight: canal.paintedHeight * 0.4
-                duration: 1000
+                duration: 0
 
                 MouseArea {
                     anchors.fill: parent
@@ -223,13 +227,16 @@ ActivityBase {
                     onClicked: {
                         if(background.running)
                             return
+                        door1.duration = water.duration
                         if(door1.state == 'close' &&
                                 water.state == 'down') {
                             door1.state = 'open'
                             leftLight.state = 'green'
+                            activity.audioEffects.play(activity.url + 'door_open.wav')
                         } else if(door1.state == 'open') {
                             door1.state = 'close'
                             leftLight.state = 'red'
+                            activity.audioEffects.play(activity.url + 'door_close.wav')
                         } else {
                             activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
                         }
@@ -245,7 +252,7 @@ ActivityBase {
                 anchors.horizontalCenterOffset: parent.paintedWidth * 0.14
                 minHeight: canal.paintedHeight * 0.15
                 maxHeight: canal.paintedHeight * 0.4
-                duration: 1000
+                duration: 0
 
                 MouseArea {
                     anchors.fill: parent
@@ -253,13 +260,16 @@ ActivityBase {
                     onClicked: {
                         if(background.running)
                             return
+                        door2.duration = water.duration
                         if(door2.state == 'close' &&
                                 water.state == 'up') {
                             door2.state = 'open'
                             rightLight.state = 'green'
+                            activity.audioEffects.play(activity.url + 'door_open.wav')
                         } else if(door2.state == 'open') {
                             door2.state = 'close'
                             rightLight.state = 'red'
+                            activity.audioEffects.play(activity.url + 'door_close.wav')
                         } else {
                             activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
                         }
@@ -352,7 +362,7 @@ ActivityBase {
                 property int rightPositionX: (parent.paintedWidth / 2) * 0.7
                 property int rightPositionY: (background.height - canal.paintedHeight) / 2 +
                                             canal.paintedHeight * 0.55 // > 0.5  < 0.6
-                property int duration: water.duration
+                property int duration: 0
 
                 Behavior on anchors.horizontalCenterOffset {
                     NumberAnimation {
@@ -372,6 +382,8 @@ ActivityBase {
                     onClicked: {
                         if(background.running)
                             return
+                        boat.duration = water.duration
+                        var prevState = boat.state
                         if(boat.state == "left" && door1.state == "open")
                             boat.state = "middleDown"
                         else if(boat.state == "middleUp" && door2.state == "open")
@@ -380,6 +392,10 @@ ActivityBase {
                             boat.state = "middleUp"
                         else if(boat.state == "middleDown" && door1.state == "open")
                             boat.state = "left"
+
+                        if(prevState !== boat.state)
+                            activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/water.wav')
+
                     }
                 }
 
