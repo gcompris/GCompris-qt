@@ -302,7 +302,7 @@ function previousLevel() {
 }
 
 function lost() {
-    items.bonus.bad("flower")
+    items.bonus.bad("tux")
 }
 
 function won() {

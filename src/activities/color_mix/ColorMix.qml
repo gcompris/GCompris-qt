@@ -221,7 +221,7 @@ ActivityBase {
                 helpMessage.text = message
 
                 if (message === "") {
-                    bonus.good("tux")
+                    bonus.good("gnu")
                     helpMessage.text = ""
                 }
             }

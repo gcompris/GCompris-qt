@@ -153,16 +153,18 @@ ActivityBase {
         }
 
 
-        Bonus {
-            id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
-        }
-
-
         ChooseDiceBar {
             id: chooseDiceBar
             x: background.width / 5 + 20
             y: (background.height - background.height/5) * 3 / 5
+        }
+
+        Bonus {
+            id: bonus
+            audioEffects: activity.audioEffects
+            winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
+            looseSound: "qrc:/gcompris/src/activities/ballcatch/resource/youcannot.wav"
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 

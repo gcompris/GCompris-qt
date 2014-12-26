@@ -170,7 +170,7 @@ ActivityBase {
                         return false
                     }
                 }
-                bonus.good("tux")
+                bonus.good("gnu")
                 return true
             }
 

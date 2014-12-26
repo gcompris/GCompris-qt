@@ -403,7 +403,7 @@ ActivityBase {
                     if (items.currentH === items.targetH
                             && items.currentM === items.targetM
                             && items.currentS === items.targetS) {
-                        items.bonus.good("tux")
+                        items.bonus.good("gnu")
                     }
                 }
 
