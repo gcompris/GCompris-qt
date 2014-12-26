@@ -108,6 +108,7 @@ ActivityBase {
             anchors.fill: parent
             enabled: items.currentArrow != items.nbArrow && !items.arrowFlying
             onClicked: {
+                activity.audioEffects.play(Activity.url + 'arrow.wav')
                 items.arrowFlying = true
                 if(items.currentArrow != items.nbArrow) {
                     arrowRepeater.itemAt(items.currentArrow).opacity = 1
