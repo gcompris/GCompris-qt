@@ -52,6 +52,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
+            property GCAudio audioEffects: activity.audioEffects
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
@@ -151,6 +152,8 @@ ActivityBase {
                         Activity.onClick(block.val)
                         if(Activity.checkAnswer())
                             bonus.good('flower')
+                        else
+                            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav")
                     }
                 }
             }
@@ -174,6 +177,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            audioEffects: activity.audioEffects
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }

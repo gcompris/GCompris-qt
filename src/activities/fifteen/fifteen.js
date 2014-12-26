@@ -171,34 +171,37 @@ function processPressedKey(event) {
     case Qt.Key_Right:
         if(emptySpot % 4 != 0) {
             items.model.move(emptySpot - 1, emptySpot, 1)
+            event.accepted = true
         }
-        event.accepted = true
         break
     case Qt.Key_Left:
         if(emptySpot % 4 != 3) {
             items.model.move(emptySpot + 1, emptySpot, 1)
+            event.accepted = true
         }
-        event.accepted = true
         break
     case Qt.Key_Up:
         if(emptySpot < items.model.count - 4) {
             items.model.move(emptySpot + 4, emptySpot, 1)
             items.model.move(emptySpot + 1, emptySpot + 4, 1)
+            event.accepted = true
         }
-        event.accepted = true
         break
     case Qt.Key_Down:
         if(emptySpot >= 4) {
             items.model.move(emptySpot, emptySpot - 4, 1)
             items.model.move(emptySpot - 3, emptySpot, 1)
+            event.accepted = true
         }
-        event.accepted = true
         break
     }
 
     /* Check if success */
     if(checkAnswer())
         items.bonus.good('flower')
+    else if(event.accepted)
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav")
+
 }
 
 function nextLevel() {
