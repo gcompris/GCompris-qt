@@ -47,7 +47,7 @@ Rectangle {
 
     Component.onCompleted: Activity.registerAnswerItem(answerBackground)
 
-    onValidChanged: valid ? audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav") : null
+    onValidChanged: valid ? audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav") : null
 
     // A top gradient
     Rectangle {

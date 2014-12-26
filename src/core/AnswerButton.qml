@@ -51,7 +51,7 @@ Item {
         if (!blockClicks) {
             if (isCorrectAnswer) {
                 if(audioEffects)
-                    audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav")
+                    audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
                 correctAnswerAnimation.start();
             } else {
                 if(audioEffects)
