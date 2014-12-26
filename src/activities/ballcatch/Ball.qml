@@ -68,7 +68,7 @@ Image {
         if(Activity.gameWon) {
             finishX = x
         }
-        else if(Activity.leftPressed) {
+        else if(Activity.items.leftPressed) {
             finishX = tux.x + tux.width * 2
         }
         else {
