@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 2
   icon: "clockgame/clockgame.svg"
   author: "Stephane Mankowski <stephane@mankowski.fr>"
-  demo: false
+  demo: true
   title: qsTr("Learning Clock")
   description: qsTr("Learn how to tell the time on an analog clock")
 //  intro: "Use the mouse to drag and drop the needles of the clock and display the required time"

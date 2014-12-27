@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 3
   icon: "mazerelative/maze.svg"
   author: "Stephane Mankowski <stephane@mankowski.fr>"
-  demo: false
+  demo: true
   title: qsTr("Relative Maze")
   description: qsTr("Help Tux get out of this maze (Move is relative)")
 //  intro: "Help Tux find his way out. Left and right are used to turn and up to go forward."

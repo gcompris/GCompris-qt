@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 6
   icon: "memory-math-div/memory-math-div.svg"
   author: "JB BUTET <ashashiwa@gmail.com>"
-  demo: false
+  demo: true
   title: qsTr("Division memory game")
   description: qsTr("Turn the cards over to find a matching operation, until all the cards are gone.")
 //  intro: "Turn over two cards to match the calculation with its answer."

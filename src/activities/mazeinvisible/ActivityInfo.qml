@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 4
   icon: "mazeinvisible/mazeinvisible.svg"
   author: "Stephane Mankowski <stephane@mankowski.fr>"
-  demo: false
+  demo: true
   title: qsTr("Invisible Maze")
   description: qsTr("Guide Tux out of the invisible maze")
 //  intro: "Use the arrow keys or swipe the touch screen to guide Tux out. Use the maze icon or the space key to see the map."

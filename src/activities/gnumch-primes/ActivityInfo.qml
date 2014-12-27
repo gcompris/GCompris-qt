@@ -6,7 +6,7 @@ ActivityInfo {
   difficulty: 6
   icon: "gnumch-primes/gnumch-primes.svg"
   author: "Manuel Tondeur <manueltondeur@gmail.com>"
-  demo: false
+  demo: true
   title: qsTr("Gnumch Primes")
   description: qsTr("Guide the Number Muncher to all the prime numbers.")
 //  intro: "Guide the number eater with the arrow keys to the prime numbers and press space to swallow them."

@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 1
   icon: "maze/maze.svg"
   author: "Stephane Mankowski <stephane@mankowski.fr>"
-  demo: false
+  demo: true
   title: qsTr("Maze")
   description: qsTr("Help Tux get out of this maze")
 //  intro: "Use the arrows keys or swipe the touch screen to help Tux find his way out."

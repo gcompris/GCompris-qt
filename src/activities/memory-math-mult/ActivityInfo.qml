@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 5
   icon: "memory-math-mult/memory-math-mult.svg"
   author: "JB BUTET <ashashiwa@gmail.com>"
-  demo: false
+  demo: true
   title: qsTr("Multiplication memory game")
   description: qsTr("Turn the cards over to find two numbers which multiply the same, until all the cards are gone.")
 //  intro: "Turn over two cards to match the calculation with its answer."

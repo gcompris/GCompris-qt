@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 2
   icon: "magic-hat-plus/magic-hat-plus.svg"
   author: "Thib ROMAIN <thibrom@gmail.com>"
-  demo: false
+  demo: true
   title: qsTr("The magician hat")
   description: qsTr("Count how many items are under the magic hat")
 //  intro: "Count the number of stars hidden under the hat and then click on the stars to indicate their number."

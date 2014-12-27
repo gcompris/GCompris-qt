@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 1
   icon: "mining/mining.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
-  demo: true
+  demo: false
   title: qsTr("Mining for gold")
   description: qsTr("Use the mousewheel to approach the rockwall and look for gold nuggets.")
   //intro: "Looking at the rockwall, you can see a sparkle somewhere. Move the mouse cursor next to this sparkle and use the mousewheel or the zoom gesture  to zoom in."

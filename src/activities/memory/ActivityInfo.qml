@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 1
   icon: "memory/memory.svg"
   author: "JB BUTET <ashashiwa@gmail.com>"
-  demo: false
+  demo: true
   title: qsTr("Memory Game with images")
   description: qsTr("Flip the cards to find the matching pairs")
 //  intro: "Click on a card and find its double."

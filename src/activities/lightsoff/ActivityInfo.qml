@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 6
   icon: "lightsoff/lightsoff.svg"
   author: "Stephane Mankowski <stephane@mankowski.fr>"
-  demo: false
+  demo: true
   title: qsTr("Lights Off")
   description: qsTr("The aim is to switch off all the lights.")
 //  intro: "Click on the lamps to turn them off."

@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 2
   icon: "memory-sound-tux/memory-sound-tux.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
-  demo: true
+  demo: false
   title: qsTr("Audio memory game against Tux")
   description: qsTr("Play the audio memory game against Tux")
 //  intro: "Take turns competing against Tux by clicking on a card and finding its double."

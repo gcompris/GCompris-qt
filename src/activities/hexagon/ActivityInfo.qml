@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 2
   icon: "hexagon/hexagon.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
-  demo: true
+  demo: false
   title: qsTr("hexagon")
   description: qsTr("Find the strawberry by clicking on the blue fields")
 //  intro: "Click on the hexagons to find the hidden object, the red zone indicates that you're close to it!"

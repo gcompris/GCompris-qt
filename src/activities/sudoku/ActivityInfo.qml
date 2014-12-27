@@ -24,7 +24,7 @@ ActivityInfo {
   difficulty: 4
   icon: "sudoku/sudoku.svg"
   author: "Johnny Jazeix <jazeix@gmail.com>"
-  demo: false
+  demo: true
   title: qsTr("Sudoku, place unique symbols in a grid.")
   description: qsTr("Symbols must be unique in a row, in a column, and (if defined) each region.")
 //  intro: "Select a number or a symbol and click its target area. Each symbol must appear only once in a row, in a column and in a subregion if any."

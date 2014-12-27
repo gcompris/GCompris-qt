@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 3
   icon: "memory-math-add/memory-math-add.svg"
   author: "JB BUTET <ashashiwa@gmail.com>"
-  demo: false
+  demo: true
   title: qsTr("Addition memory game")
   description: qsTr("Turn the cards over to find two numbers which add up the same, until all the cards are gone.")
 //  intro: "Turn over two cards to match the calculation with its answer."

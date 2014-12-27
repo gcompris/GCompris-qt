@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 1
   icon: "memory-tux/memory-tux.svg"
   author: "JB BUTET <ashashiwa@gmail.com>"
-  demo: false
+  demo: true
   title: qsTr("Memory Game with images against Tux")
   description: qsTr("Flip the cards to find the matching pairs against Tux")
 //  intro: "Take turns competing against Tux by clicking on a card and finding its double."

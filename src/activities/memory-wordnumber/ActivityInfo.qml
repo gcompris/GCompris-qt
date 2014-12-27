@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 3
   icon: "memory-wordnumber/memory_wordnumber.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
-  demo: true
+  demo: false
   title: qsTr("Wordnumber memory game")
   description: qsTr("Turn the cards over to match the number with the word matching it.")
 //  intro: "Match the numeric with the word."

@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 2
   icon: "scalesboard/scalesboard.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
-  demo: true
+  demo: false
   title: qsTr("Balance the scales properly")
   description: qsTr("Drag and Drop weights to balance the scales")
 //  intro: "Drag the weights up to balance the scales."

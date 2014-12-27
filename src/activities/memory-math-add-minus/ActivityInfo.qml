@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 4
   icon: "memory-math-add-minus/memory-math-add-minus.svg"
   author: "JB BUTET <ashashiwa@mgail.com>"
-  demo: false
+  demo: true
   title: qsTr("Addition and subtraction memory game")
   description: qsTr("Turn the cards over to find two numbers which subtract the same, until all the cards are gone.")
 //  intro: "Turn over two cards to match the calculation with its answer."

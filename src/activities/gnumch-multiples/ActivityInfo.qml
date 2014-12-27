@@ -6,7 +6,7 @@ ActivityInfo {
   difficulty: 3
   icon: "gnumch-multiples/gnumch-multiples.svg"
   author: "Manuel Tondeur <manueltondeur@gmail.com>"
-  demo: false
+  demo: true
   title: qsTr("Gnumch Multiples")
   description: qsTr("Guide the Number Muncher to all the multiples of the number at the top of the screen.")
 //  intro: "Guide the number eater to the required numbers and press on it to swallow them."

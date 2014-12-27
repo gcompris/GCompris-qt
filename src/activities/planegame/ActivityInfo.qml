@@ -25,7 +25,7 @@ ActivityInfo {
     difficulty: 2
     icon: "planegame/planegame.svg"
     author: "Johnny Jazeix <jazeix@gmail.com>"
-    demo: false
+    demo: true
     title: qsTr("Numbers in Order")
     description: qsTr("Move the helicopter to catch the clouds in the correct order")
 //  intro: "Move the helicopter with the arrow keys and catch the number in the clouds in numerical order."

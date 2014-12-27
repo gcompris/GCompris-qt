@@ -6,7 +6,7 @@ ActivityInfo {
   difficulty: 3
   icon: "gnumch-inequality/gnumch-inequality.svg"
   author: "Manuel Tondeur <manueltondeur@gmail.com>"
-  demo: false
+  demo: true
   title: qsTr("Gnumch Inequality")
   description: qsTr("Guide the Number Muncher to the all the expressions that do not equal the number at the top of the screen.")
 //  intro: "Guide the number eater to the required numbers and press on it to swallow them."

@@ -5,7 +5,7 @@ ActivityInfo {
     difficulty: 1
     icon: "enumerate/enumerate.svg"
     author: "Thib ROMAIN <thibrom@gmail.com>"
-    demo: false
+    demo: true
     title: qsTr("Count the items")
     description: qsTr("Place the items in the best way to count them")
 //  intro: "Count the elements by organising them then type the answer on your keyboard."

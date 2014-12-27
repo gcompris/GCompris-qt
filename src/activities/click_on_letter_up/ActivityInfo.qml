@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 1
   icon: "click_on_letter_up/click_on_letter_up.svg"
   author: "Holger Kaelberer <holger.k@elberer.de>"
-  demo: false
+  demo: true
   title: qsTr("Click on an uppercase letter")
   description: qsTr("Listen to a letter and click on the right one")
 //  intro: "Click on the required letter. You can listen to it again by clicking on the mouth."

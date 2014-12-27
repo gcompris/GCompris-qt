@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 6
   icon: "memory-math-add-minus-mult-div/memory-math-add-minus-mult-div.svg"
   author: "JB BUTET <ashashiwa@gmail.com>"
-  demo: false
+  demo: true
   title: qsTr("All operations memory game")
   description: qsTr("Turn the cards over to find a matching operation, until all the cards are gone.")
 //  intro: "Turn over two cards to match the calculation with its answer."

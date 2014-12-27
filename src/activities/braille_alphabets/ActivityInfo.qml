@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 1
   icon: "braille_alphabets/braille_alphabets.svg"
   author: "Arkit Vora <arkitvora123@gmail.com>"
-  demo: false
+  demo: true
   title: qsTr("Discover the Braille system")
   description: qsTr("Learn and memorize the Braille system")
   goal: qsTr("Let children discover the Braille system.")

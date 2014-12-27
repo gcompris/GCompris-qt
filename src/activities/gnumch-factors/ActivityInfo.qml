@@ -6,7 +6,7 @@ ActivityInfo {
   difficulty: 5
   icon: "gnumch-factors/gnumch-factors.svg"
   author: "Manuel Tondeur <manueltondeur@gmail.com>"
-  demo: false
+  demo: true
   title: qsTr("Gnumch Factors")
   description: qsTr("Guide the Number Muncher to all the factors of the number at the top of the screen.")
 //  intro: "Guide the number eater to the required numbers and press on it to swallow them."

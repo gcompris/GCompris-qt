@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 6
   icon: "advanced_colors/advanced_colors.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
-  demo: true
+  demo: false
   title: qsTr("Advanced colors")
   description: qsTr("Select the butterfly of the correct color")
   //intro: "find the dancing butterfly having the requested color"

@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 2
   icon: "algorithm/algorithm.svg"
   author: "Bharath M S <brat.197@gmail.com>"
-  demo: false
+  demo: true
   title: qsTr("Logical associations")
   description: qsTr("Complete the arrangement of fruits")
 //  intro: "Click on the missing items on the table and follow the logical sequence displayed above it."

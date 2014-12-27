@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 1
   icon: "penalty/penalty.svg"
   author: "Stephane Mankowski <stephane@mankowski.fr>"
-  demo: false
+  demo: true
   title: qsTr("Penalty kick")
   description: qsTr("Double click or double tap on the ball to score a goal.")
 //  intro: "Double click or double tap on the ball to score a goal."

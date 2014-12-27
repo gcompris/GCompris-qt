@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 3
   icon: "gnumch-equality/gnumch-equality.svg"
   author: "Manuel Tondeur <manueltondeur@gmail.com>"
-  demo: false
+  demo: true
   title: qsTr("Gnumch Equality")
   description: qsTr("Guide the Number Muncher to the expressions that equal the number at the bottom of the screen.")
 //  intro: "Guide the number eater to the required numbers and press on it to swallow them."
