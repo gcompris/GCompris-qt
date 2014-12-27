@@ -182,7 +182,10 @@ ActivityBase {
                                 id: mouseArea
                                 anchors.fill: parent
                                 hoverEnabled: true
-                                onClicked: items.colorSelector = modelData
+                                onClicked: {
+                                    activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+                                    items.colorSelector = modelData
+                                }
                             }
                         }
                         GCText {

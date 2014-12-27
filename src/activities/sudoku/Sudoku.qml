@@ -56,6 +56,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias score: score
+            property GCAudio audioEffects: activity.audioEffects
             property alias availablePiecesModel: availablePieces
             property alias columns: sudoColumn.columns
             property alias rows: sudoColumn.rows
@@ -101,6 +102,7 @@ ActivityBase {
 
         SudokuListWidget {
             id: availablePieces
+            audioEffects: activity.audioEffects
         }
 
         ListModel {

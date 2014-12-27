@@ -694,11 +694,15 @@ function clickOn(caseX, caseY) {
         */
         if(items.sudokuModel.get(currentCase).textValue == '.') {
             if(isGood) {
+                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/win.wav')
                 items.sudokuModel.get(currentCase).textValue = currentSymbol.text
+            } else {
+                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
             }
         }
         else {
             // Already a symbol in this case, we remove it
+            items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/darken.wav')
             items.sudokuModel.get(currentCase).textValue = '.'
         }
     }
