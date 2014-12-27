@@ -1,4 +1,4 @@
-/* GCompris - Domino.qml
+/* GCompris - DominoNumber.qml
  *
  * Copyright (C) 2014 Bruno Coudoin
  *

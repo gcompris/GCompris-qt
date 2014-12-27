@@ -1,4 +1,4 @@
-/* GCompris - Word.qml
+/* GCompris - FallingDomino.qml
  *
  * Copyright (C) 2014 Holger Kaelberer
  *

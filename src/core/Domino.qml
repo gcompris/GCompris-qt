@@ -61,7 +61,7 @@ Flipable {
             valueMax: flipable.valueMax
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
             isClickable: flipable.isClickable
-            audioEffects: activity.audioEffects
+            audioEffects: flipable.audioEffects
         }
 
         // Separation
@@ -85,7 +85,7 @@ Flipable {
             valueMax: flipable.valueMax
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
             isClickable: flipable.isClickable
-            audioEffects: activity.audioEffects
+            audioEffects: flipable.audioEffects
         }
     }
 
