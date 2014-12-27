@@ -138,7 +138,7 @@ Image {
             currentStep = initialStep + (point1.x - startX) / (20 * ApplicationInfo.ratio)
             currentStep = Math.min(currentStep, maxSteps)
             currentStep = Math.max(currentStep, 0)
-            activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+            activity.audioEffects.play('qrc:/gcompris/src/activities/redraw/resource/brush.wav')
         }
     }
 
