@@ -50,6 +50,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
+            property GCAudio audioEffects: activity.audioEffects
             property alias background: background
             property alias backgroundImg: backgroundImg
             property alias bar: bar
@@ -157,6 +158,7 @@ ActivityBase {
             id: chooseDiceBar
             x: background.width / 5 + 20
             y: (background.height - background.height/5) * 3 / 5
+            audioEffects: activity.audioEffects
         }
 
         Bonus {

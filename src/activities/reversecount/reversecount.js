@@ -203,11 +203,13 @@ function moveTuxToNextIceBlock() {
             return
         }
 
+        items.audioEffects.play('qrc:/gcompris/src/activities/gnumch-equality/resource/eat.wav')
         calculateNextPlaceFishToReach()
         placeFishToReachBool = true
         return
     }
 
+    items.audioEffects.play(url + 'icy_walk.wav')
     //if tux reaches its position + dice number before reaching the fish, calculation was wrong
     if (tuxIceBlockNumber == tuxIceBlockNumberGoal) {
         clockPos--
