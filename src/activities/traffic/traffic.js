@@ -350,7 +350,9 @@ function drawCar(car)
         "goal": goal,
         "color": color,
         "source": source,
-        "isHorizontal": isHorizontal
+        "isHorizontal": isHorizontal,
+        "audioEffects": items.audioEffects
+
     });
     if (carObject == null)
         console.error("traffic: Error creating Car object!");

@@ -49,6 +49,7 @@ Item {
     property real effY: car.yPos * car.blockSize
     property real effWidth: (Activity.mode == "COLOR" || car.isHorizontal) ? car.width : car.height
     property real effHeight: (Activity.mode == "COLOR" || car.isHorizontal) ? car.height : car.width
+    property GCAudio audioEffects
 
     width: (Activity.mode == "IMAGE" || isHorizontal) ? (size * blockSize) : blockSize
     height: (Activity.mode == "IMAGE" || isHorizontal) ? blockSize : (size * blockSize)
@@ -80,6 +81,7 @@ Item {
                 property real startY;
             
                 onPressed: {
+                    car.audioEffects.play(Activity.baseUrl + "car.wav")
                     rectTouch.startX = point1.x;
                     rectTouch.startY = point1.y;
                 }
@@ -119,6 +121,7 @@ Item {
                 property real startY;
             
                 onPressed: {
+                    car.audioEffects.play(Activity.baseUrl + "car.wav")
                     imageTouch.startX = imagePoint.x;
                     imageTouch.startY = imagePoint.y;
                 }
