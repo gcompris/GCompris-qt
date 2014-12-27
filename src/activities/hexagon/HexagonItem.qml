@@ -100,7 +100,7 @@ Item {
             canvas.opacity = 0
             isTouched = true
             strawberry.source = Activity.url + "strawberry.svgz"
-            audioEffects.play("qrc:/gcompris/src/activities/clickgame/resource/drip.wav")
+            audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
             Activity.strawberryFound()
             particleLoader.item.emitter.burst(40)
         } else {
