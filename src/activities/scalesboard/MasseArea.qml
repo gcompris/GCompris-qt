@@ -180,7 +180,6 @@ Rectangle {
                     }
 
                     function dropOnPlate(masseArea) {
-                        masseArea.audioEffects.play(Activity.url + 'metal_hit.wav')
                         parent.Drag.cancel()
                         if(parent.currentMasseArea == masseAreaCenter) {
                             masseArea.hideMasseInMasseArea(parent.masseIndex)
@@ -200,6 +199,8 @@ Rectangle {
                     }
 
                     onReleased: {
+                        if(masseArea.audioEffects)
+                            masseArea.audioEffects.play(Activity.url + 'metal_hit.wav')
                         if(masseAreaLeft.dropArea.containsDrag &&
                            parent.currentMasseArea != masseAreaLeft) {
                             dropOnPlate(masseAreaLeft)

@@ -217,6 +217,7 @@ ActivityBase {
             masseAreaRight: masseAreaRight
             nbColumns: masseModel.count
             dropEnabled: true
+            audioEffects: activity.audioEffects
         }
 
 
