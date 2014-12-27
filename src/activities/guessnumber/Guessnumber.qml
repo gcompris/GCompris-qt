@@ -20,6 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import GCompris 1.0
 
 import "../../core"
 import "guessnumber.js" as Activity
@@ -107,7 +108,7 @@ ActivityBase {
                 answerArea.userEntry = answer
             }
             maxDigit: ("" + items.currentMax).length
-            columnWidth: 60
+            columnWidth: 60 * ApplicationInfo.ratio
         }
 
         Keys.onPressed: {

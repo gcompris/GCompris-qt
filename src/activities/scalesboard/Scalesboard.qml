@@ -277,7 +277,7 @@ ActivityBase {
             onAnswerChanged: question.userEntry = answer
             maxDigit: ('' + items.giftWeight).length + 1
             opacity: question.displayed ? 1 : 0
-            columnWidth: 60
+            columnWidth: 60 * ApplicationInfo.ratio
         }
 
         Keys.onPressed: {
