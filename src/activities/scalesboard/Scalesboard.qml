@@ -147,6 +147,7 @@ ActivityBase {
                 masseAreaRight: masseAreaRight
                 nbColumns: 3
                 dropEnabled: true
+                audioEffects: activity.audioEffects
 
                 Behavior on anchors.verticalCenterOffset {
                     NumberAnimation {
@@ -193,6 +194,7 @@ ActivityBase {
                 masseAreaRight: masseAreaRight
                 nbColumns: 3
                 dropEnabled: items.dataset[bar.level - 1].rightDrop
+                audioEffects: activity.audioEffects
 
                 Behavior on anchors.verticalCenterOffset {
                     NumberAnimation {

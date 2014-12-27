@@ -45,6 +45,8 @@ Rectangle {
 
     property int weight: 0
 
+    property GCAudio audioEffects
+
     function init() {
         weight = 0
         masseModel.clear()
@@ -178,6 +180,7 @@ Rectangle {
                     }
 
                     function dropOnPlate(masseArea) {
+                        masseArea.audioEffects.play(Activity.url + 'metal_hit.wav')
                         parent.Drag.cancel()
                         if(parent.currentMasseArea == masseAreaCenter) {
                             masseArea.hideMasseInMasseArea(parent.masseIndex)
