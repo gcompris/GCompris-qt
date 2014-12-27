@@ -131,7 +131,8 @@ ActivityBase {
             id: drop
             target: fallingPiece
             properties: "y"
-            duration: 1500
+            duration: 720
+            onStarted: activity.audioEffects.play(Activity.url + 'slide.wav')
             onStopped: {
                 dynamic.display()
                 Activity.continueGame()
@@ -158,7 +159,6 @@ ActivityBase {
                 if(!holdMode) {
                     var coord = grid.mapFromItem(background, mouseX, mouseY)
                     var column = Activity.whichColumn(coord.x, coord.y)
-                    activity.audioEffects.play(Activity.url + 'slide.wav')
                     Activity.handleDrop(column)
                 }
             }

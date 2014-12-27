@@ -143,7 +143,6 @@ function handleDrop(column) {
 
     if(nextFreeStop >= 0) {
         items.drop.to = items.repeater.itemAt(nextFreeStop * items.columns).y
-        items.drop.duration = 1500 * ((nextFreeStop + 1) / items.rows)
         currentPiece = nextFreeStop * items.columns + column
         items.drop.start()
     }
