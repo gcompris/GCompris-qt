@@ -218,9 +218,9 @@ ActivityBase {
                         else if(point1.x < muncher.x)
                             muncher.moveTo(1)
                         else if(point1.y < muncher.y)
-                            muncher.moveTo(2)
-                        else if(point1.y > muncher.y + muncher.height)
                             muncher.moveTo(3)
+                        else if(point1.y > muncher.y + muncher.height)
+                            muncher.moveTo(2)
                         else
                             background.checkAnswer()
                     }
