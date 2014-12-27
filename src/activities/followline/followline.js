@@ -41,8 +41,12 @@ function stop() {
 }
 
 function initLevel() {
-    if(!items)
+    /* Check items.bar because when starting followline at least twice,
+     it is undefined (called by FollowLine.qml:onHeightChanged())
+    */
+    if(!items || !items.bar)
         return
+
     items.bar.level = currentLevel + 1
     items.currentLock = 0
     destroyLineParts()
