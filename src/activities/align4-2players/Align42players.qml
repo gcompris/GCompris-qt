@@ -158,6 +158,7 @@ ActivityBase {
                 if(!holdMode) {
                     var coord = grid.mapFromItem(background, mouseX, mouseY)
                     var column = Activity.whichColumn(coord.x, coord.y)
+                    activity.audioEffects.play(Activity.url + 'slide.wav')
                     Activity.handleDrop(column)
                 }
             }
