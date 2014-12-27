@@ -101,7 +101,11 @@ ActivityBase {
 
         NumPad {
             id: numpad
-            onAnswerChanged: answerArea.userEntry = answer
+            onAnswerChanged: {
+                if(answer && answerArea.userEntry != answer)
+                    activity.audioEffects.play('qrc:/gcompris/src/activities/guessnumber/resource/helicopter.wav')
+                answerArea.userEntry = answer
+            }
             maxDigit: ("" + items.currentMax).length
             columnWidth: 60
         }
