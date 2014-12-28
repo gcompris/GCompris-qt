@@ -61,6 +61,7 @@ class ApplicationInfo : public QObject
     Q_PROPERTY(bool isMobile READ isMobile CONSTANT)
     Q_PROPERTY(bool isPortraitMode READ isPortraitMode WRITE setIsPortraitMode NOTIFY portraitModeChanged)
 	Q_PROPERTY(qreal ratio READ ratio NOTIFY ratioChanged)
+    Q_PROPERTY(qreal fontRatio READ fontRatio NOTIFY fontRatioChanged)
 	Q_PROPERTY(qreal hMargin READ hMargin NOTIFY hMarginChanged)
 	Q_PROPERTY(qreal sliderHandleWidth READ sliderHandleWidth NOTIFY ratioChanged)
 	Q_PROPERTY(qreal sliderHandleHeight READ sliderHandleHeight NOTIFY ratioChanged)
@@ -110,6 +111,7 @@ public:
 
 	qreal hMargin() const { return m_hMargin; }
 	qreal ratio() const { return m_ratio; }
+    qreal fontRatio() const { return m_fontRatio; }
 	qreal sliderHandleHeight()  { return m_sliderHandleHeight; }
 	qreal sliderGapWidth()  { return m_sliderGapWidth; }
 	qreal sliderHandleWidth()  { return m_sliderHandleWidth; }
@@ -143,6 +145,7 @@ signals:
 	void portraitModeChanged();
 	void hMarginChanged();
 	void ratioChanged();
+    void fontRatioChanged();
     void applicationSettingsChanged();
     void fullscreenChanged();
 
@@ -155,6 +158,7 @@ private:
 	bool m_isPortraitMode;
 	bool m_isMobile;
 	qreal m_ratio;
+    qreal m_fontRatio;
 	qreal m_hMargin;
 	qreal m_sliderHandleHeight, m_sliderHandleWidth, m_sliderGapWidth;
 

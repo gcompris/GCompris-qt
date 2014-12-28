@@ -46,6 +46,8 @@
 #include <QtCore/QLocale>
 #include <QtQuick/QQuickWindow>
 #include "ApplicationInfo.h"
+
+#include <qmath.h>
 #include <QDebug>
 
 #include <QFontDatabase>
@@ -78,6 +80,15 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 
     QRect rect = qApp->primaryScreen()->geometry();
     m_ratio = m_isMobile ? qMin(qMax(rect.width(), rect.height())/800. , qMin(rect.width(), rect.height())/520.) : 1;
+    // calculate a factor for font-scaling, cf.
+    // http://doc.qt.io/qt-5/scalability.html#calculating-scaling-ratio
+    qreal refDpi = 216.;
+    qreal refHeight = 1776.;
+    qreal refWidth = 1080.;
+    qreal height = qMax(rect.width(), rect.height());
+    qreal width = qMin(rect.width(), rect.height());
+    qreal dpi = qApp->primaryScreen()->logicalDotsPerInch();
+    m_fontRatio = m_isMobile ? qMax(1.0, qMin(height*refDpi/(dpi*refHeight), width*refDpi/(dpi*refWidth))) : 1;
     m_sliderHandleWidth = getSizeWithRatio(70);
     m_sliderHandleHeight = getSizeWithRatio(87);
     m_sliderGapWidth = getSizeWithRatio(100);

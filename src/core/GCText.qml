@@ -26,5 +26,19 @@ import GCompris 1.0
 import "."
 
 Text {
+    // some constants for often used fontSize-s:
+    readonly property int tinySize:     10.0
+    readonly property int smallSize:    12.0
+    readonly property int regularSize:  14.0
+    readonly property int mediumSize:   16.0
+    readonly property int largeSize:    24.0
+    readonly property int hugeSize:     32.0
+
+    // font-size should only be specified using the fontSize property, which
+    // wraps font.pointSize to take the DPI of the display into account.
+    // If font.xxxSize is used directly text might appear to small on some devices
+    property int fontSize: 14
+
+    font.pointSize: fontSize * ApplicationInfo.fontRatio
     font.family: GCSingletonFontLoader.fontLoader.name
 }
