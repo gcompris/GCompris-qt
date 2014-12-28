@@ -23,7 +23,6 @@ import QtQuick 2.1
 import QtMultimedia 5.0
 import "braille_alphabets.js" as Activity
 import "../../core"
-import "questions.js" as Data
 import GCompris 1.0
 
 Item {
@@ -89,6 +88,10 @@ Item {
         brailleChar = ""
     }
 
+    function switchState(value) {
+        circles.itemAt(value-1).switchState()
+    }
+
     Grid {
         id: grid
         anchors.centerIn: brailleCharItem
@@ -124,6 +127,19 @@ Item {
                     return false
                 }
 
+                function switchState() {
+                    if (state == "on") {
+                        state = "off"
+                    } else {
+                        state = "on"
+                    }
+                    activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav")
+                    // On touch screens we don't get the exit event.
+                    border.width = 2 * ApplicationInfo.ratio
+                    brailleCharItem.updateBrailleCharFromDots()
+
+                }
+
                 Behavior on color {
                     ColorAnimation {
                         duration: 200
@@ -156,15 +172,7 @@ Item {
                     onEntered: incircle1.border.width = 4 * ApplicationInfo.ratio
                     onExited : incircle1.border.width = 2 * ApplicationInfo.ratio
                     onClicked: {
-                        if (incircle1.state == "on") {
-                            incircle1.state = "off"
-                        } else {
-                            incircle1.state = "on"
-                        }
-                        activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
-                        // On touch screens we don't get the exit event.
-                        incircle1.border.width = 2 * ApplicationInfo.ratio
-                        brailleCharItem.updateBrailleCharFromDots()
+                        incircle1.switchState();
                     }
                 }
 

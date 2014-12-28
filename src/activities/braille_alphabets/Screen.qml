@@ -24,7 +24,6 @@ import QtQuick.Layouts 1.1
 import GCompris 1.0
 import "../../core"
 import "braille_alphabets.js" as Activity
-import "questions.js" as Dataset
 
 ActivityBase {
     id: activity
@@ -45,6 +44,38 @@ ActivityBase {
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
+        }
+
+        Keys.onPressed: {
+            if(first_screen.visible) {
+                // If return, we hide the screen
+                first_screen.visible = false
+                return;
+            }
+            var keyValue;
+            switch(event.key)
+            {
+            case Qt.Key_1:
+                keyValue = 1;
+                break;
+            case Qt.Key_2:
+                keyValue = 2;
+                break;
+            case Qt.Key_3:
+                keyValue = 3;
+                break;
+            case Qt.Key_4:
+                keyValue = 4;
+                break;
+            case Qt.Key_5:
+                keyValue = 5;
+                break;
+            case Qt.Key_6:
+                keyValue = 6;
+                break;
+            }
+            if(keyValue)
+                playableChar.switchState(keyValue)
         }
 
         // Add here the QML items you need to access in javascript
