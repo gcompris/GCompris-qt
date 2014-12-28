@@ -269,7 +269,7 @@ ActivityBase {
                         width: activityBackground.width
                         fontSizeMode: Text.Fit
                         minimumPointSize: 7
-                        font.pointSize: 14
+                        fontSize: regularSize
                         elide: Text.ElideRight
                         maximumLineCount: 2
                         wrapMode: Text.WordWrap
