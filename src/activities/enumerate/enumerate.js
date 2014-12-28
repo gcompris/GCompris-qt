@@ -29,21 +29,16 @@ var currentLevel = 0
 var numberOfLevel = 9
 var itemIcons = [
             url + "apple.svg",
-            url + "balloon.svg",
-            url + "bread_slice.svg",
-            url + "butter.svg",
-            url + "chocolate_cake.svg",
-            url + "chocolate.svg",
-            url + "cookie.svg",
-            url + "french_croissant.svg",
+            url + "banana.svg",
+            url + "cabbage.svg",
             url + "grapefruit.svg",
-            url + "marmelade.svg",
-            url + "milk_cup.svg",
+            url + "grapes.svg",
+            url + "lemon.svg",
             url + "orange.svg",
-            url + "round_cookie.svg",
+            url + "peach.svg",
+            url + "red_pepper.svg",
             url + "strawberry.svg",
-            url + "sugar_box.svg",
-            url + "yahourt.svg"
+            url + "watermelon.svg",
         ]
 var numberOfTypes = itemIcons.length
 var userAnswers = new Array()
