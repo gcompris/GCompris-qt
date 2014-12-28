@@ -2,6 +2,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "menu/Menu.qml"
+  difficulty: 0
   title: qsTr("GCompris Main Menu")
   description: qsTr("Select an activity to run it.")
   goal: qsTr("GCompris is a high quality educational software suite comprising of numerous activities for children aged 2 to 10.")

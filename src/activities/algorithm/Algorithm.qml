@@ -57,6 +57,8 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property int nbSubLevel: 3
+            property int currentSubLevel: 0
         }
 
         onStart: { Activity.start(items) }
@@ -92,7 +94,7 @@ ActivityBase {
                         id: question
                         Image {
                             source: Activity.url + modelData + '.svgz'
-                            sourceSize.height: parent.height
+                            sourceSize.height: questionTray.height
                             width: column.itemWidth
                             height: column.itemHeight
                         }
@@ -120,7 +122,7 @@ ActivityBase {
                         Image {
                             source: "qrc:/gcompris/src/activities/algorithm/resource/" +
                                     modelData + '.svgz'
-                            sourceSize.height: parent.height
+                            sourceSize.height: answerTray.height
                             width: column.itemWidth
                             height: column.itemHeight
                         }
@@ -227,6 +229,19 @@ ActivityBase {
         Bonus {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
+        }
+
+        Score {
+            anchors {
+                bottom: parent.bottom
+                bottomMargin: 10 * ApplicationInfo.ratio
+                right: parent.right
+                rightMargin: 10 * ApplicationInfo.ratio
+                top: undefined
+                left: undefined
+            }
+            numberOfSubLevels: items.nbSubLevel
+            currentSubLevel: items.currentSubLevel + 1
         }
     }
 }
