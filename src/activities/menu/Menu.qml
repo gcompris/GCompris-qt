@@ -35,7 +35,8 @@ ActivityBase {
         else {
             pageView.pop();
             // Restore focus that has been taken by the loaded activity
-            focus = true;
+            if(pageView.currentItem == menuActivity)
+                focus = true;
         }
     }
 
