@@ -98,6 +98,10 @@ ActivityBase {
                     audioEffects: activity.audioEffects
                 }
             }
+
+            add: Transition {
+                NumberAnimation { properties: "x,y"; duration: 200 }
+            }
         }
 
         Repeater

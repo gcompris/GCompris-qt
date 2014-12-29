@@ -27,8 +27,14 @@ Image {
     sourceSize.width: 90 * ApplicationInfo.ratio
     fillMode : Image.PreserveAspectFit
     z: 0
-    x: Activity.getRandomInt(10, main.width - 220 * ApplicationInfo.ratio)
-    y: Activity.getRandomInt(10, main.height - 180 * ApplicationInfo.ratio)
+    // Let the items comes from random side of the screen
+    x: Math.random() > 0.5 ? - width : main.width
+    y: Math.random() > 0.5 ? - height : main.height
+
+    Component.onCompleted: {
+        x = Activity.getRandomInt(10, main.width - 220 * ApplicationInfo.ratio)
+        y = Activity.getRandomInt(10, main.height - 180 * ApplicationInfo.ratio)
+    }
 
     property Item main
 
@@ -44,5 +50,18 @@ Image {
             parent.z = ++Activity.globalZ
         }
         onReleased: parent.Drag.drop()
+    }
+
+    Behavior on x {
+        PropertyAnimation  {
+            duration: 2000
+            easing.type: Easing.InOutQuad
+        }
+    }
+    Behavior on y {
+        PropertyAnimation  {
+            duration: 2000
+            easing.type: Easing.InOutQuad
+        }
     }
 }
