@@ -114,6 +114,9 @@ ActivityBase {
             id: fishToReach
             sourceSize.width: Math.min(background.width / 6, background.height / 6)
             z: 10
+            property string nextSource
+            property int nextX
+            property int nextY
 
             function showParticles() {
                 particles.emitter.burst(40)
@@ -124,6 +127,14 @@ ActivityBase {
                 clip: false
             }
 
+            onOpacityChanged: opacity == 0 ? source = nextSource : null
+            onSourceChanged: {
+                x = nextX
+                y = nextY
+                opacity = 1
+            }
+
+            Behavior on opacity { NumberAnimation { duration: 500 } }
         }
 
 

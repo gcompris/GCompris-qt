@@ -273,11 +273,12 @@ function calculateNextPlaceFishToReach() {
 }
 
 function placeFishToReach() {
-    items.fishToReach.source = url + fishes[fishIndex % fishes.length]
-    items.fishToReach.x = iceBlocksLayout[fishIndex % iceBlocksLayout.length][0] *
+    items.fishToReach.opacity = 0
+    items.fishToReach.nextSource = url + fishes[fishIndex % fishes.length]
+    items.fishToReach.nextX = iceBlocksLayout[fishIndex % iceBlocksLayout.length][0] *
             items.background.width / 5 +
             (items.background.width / 5 - items.tux.width) / 2
-    items.fishToReach.y = iceBlocksLayout[fishIndex % iceBlocksLayout.length][1] *
+    items.fishToReach.nextY = iceBlocksLayout[fishIndex % iceBlocksLayout.length][1] *
             (items.background.height - items.background.height/5) / 5 +
             (items.background.height / 5 - items.tux.height) / 2
 }
