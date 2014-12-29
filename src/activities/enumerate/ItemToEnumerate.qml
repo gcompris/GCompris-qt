@@ -31,12 +31,22 @@ Image {
     x: Math.random() > 0.5 ? - width : main.width
     y: Math.random() > 0.5 ? - height : main.height
 
-    Component.onCompleted: {
-        x = Activity.getRandomInt(10, main.width - 220 * ApplicationInfo.ratio)
-        y = Activity.getRandomInt(10, main.height - 180 * ApplicationInfo.ratio)
+    property real xRatio
+    property real yRatio
+    property Item main
+
+    Component.onCompleted: {        
+        xRatio = Activity.getRandomInt(10, main.width - 220 * ApplicationInfo.ratio) /
+                (main.width  - 220 * ApplicationInfo.ratio)
+        yRatio = Activity.getRandomInt(10, main.height - 180 * ApplicationInfo.ratio) /
+                (main.height - 180 * ApplicationInfo.ratio)
+        positionMe()
     }
 
-    property Item main
+    function positionMe() {
+        x = (main.width - 220 * ApplicationInfo.ratio) * xRatio
+        y = (main.height- 180 * ApplicationInfo.ratio) * yRatio
+    }
 
     Drag.active: dragArea.drag.active
     Drag.hotSpot.x : width / 2
