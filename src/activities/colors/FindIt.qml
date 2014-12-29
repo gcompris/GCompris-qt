@@ -87,6 +87,9 @@ ActivityBase {
                 sourceSize.height: itemHeight
                 sourceSize.width: itemWidth
             }
+            add: Transition {
+                NumberAnimation { properties: "x,y"; duration: 600 }
+            }
         }
 
         GCText {
