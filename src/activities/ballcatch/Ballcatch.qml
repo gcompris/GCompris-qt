@@ -127,7 +127,8 @@ ActivityBase {
                 id: leftHandAnimation
                 target: leftHand; property: "x";
                 to: background.width/2 - leftHand.width - 5;
-                duration: 1000; easing.type: Easing.InQuad
+                duration: 1000
+                easing.type: Easing.InOutQuad
             }
 
             function animate(newTime) {
@@ -177,7 +178,7 @@ ActivityBase {
                 target: rightHand; property: "x";
                 to: background.width / 2 + 5;
                 duration: 1000;
-                easing.type: Easing.InQuad
+                easing.type: Easing.InOutQuad
             }
 
             MultiPointTouchArea {
