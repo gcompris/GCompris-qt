@@ -48,6 +48,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
+            property GCAudio audioEffects: activity.audioEffects
             property alias question: question
             property alias answer: answer
             property alias selector: selector
@@ -162,7 +163,7 @@ ActivityBase {
             Rectangle {
                 height: (column.itemWidth + 10) * column.nbSelectorLines
                 width: column.width + 10
-                color: "#55333333"
+                color: "#661111AA"
                 border.color: "black"
                 border.width: 2
                 radius: 5
@@ -256,7 +257,10 @@ ActivityBase {
                                 id: mouseArea
                                 anchors.fill: imageId
                                 hoverEnabled: true
-                                onClicked: items.selectedItem = modelData
+                                onClicked: {
+                                    items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav")
+                                    items.selectedItem = modelData
+                                }
                             }
                         }
                     }
