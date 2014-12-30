@@ -236,7 +236,7 @@ ActivityBase {
         Question {
             id: question
             parent: scale
-            x: parent.x
+            anchors.horizontalCenter: parent.horizontalCenter
             y: parent.height * 0.45
             z: 1000
             width: parent.width - y
