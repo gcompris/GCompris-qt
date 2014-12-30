@@ -192,7 +192,7 @@ ActivityBase {
                             id: text1
                             anchors.fill: parent
                             text: modelData
-                            font.pointSize: 14
+                            fontSize: regularSize
                             z: modelData == items.colorSelector ? 12 : 2
                             font.bold: true
                             style: Text.Outline
@@ -316,7 +316,7 @@ ActivityBase {
                                 anchors.fill: parent
                                 anchors.margins: 4
                                 text: parent.colorIndex == 0 ? "" : parent.colorIndex
-                                font.pointSize: 14
+                                fontSize: regularSize
                                 font.bold: true
                                 style: Text.Outline
                                 styleColor: "black"
@@ -365,7 +365,7 @@ ActivityBase {
                                 anchors.fill: parent
                                 anchors.margins: 4
                                 text: modelData == 0 ? "" : modelData
-                                font.pointSize: 14
+                                fontSize: regularSize
                                 font.bold: true
                                 style: Text.Outline
                                 styleColor: "black"

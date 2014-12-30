@@ -122,7 +122,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
             text: targetItem.scoreText
-            font.pointSize: 22
+            fontSize: 22
             font.bold: true
             style: Text.Outline
             styleColor: "black"
@@ -169,7 +169,7 @@ ActivityBase {
             id: userEntry
             anchors.top: scoreItem.bottom
             width: parent.width
-            font.pointSize: 22
+            fontSize: 22
             font.bold: true
             style: Text.Outline
             styleColor: "black"

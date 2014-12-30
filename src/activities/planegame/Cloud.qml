@@ -58,7 +58,7 @@ Image {
         anchors.verticalCenter: cloud.verticalCenter
         color: "black"
         font.bold: true
-        font.pointSize: 18
+        fontSize: 18
     }
 
     Component.onCompleted: {

@@ -358,7 +358,7 @@ ActivityBase {
                 font.bold: true
                 style: Text.Outline
                 styleColor: "black"
-                font.pointSize: 22
+                fontSize: 22
             }
         }
 
@@ -380,7 +380,7 @@ ActivityBase {
 
             GCText {
                 id: tuto
-                font.pointSize: 13
+                fontSize: 13
                 anchors {
                     left: parent.left
                     right: parent.right

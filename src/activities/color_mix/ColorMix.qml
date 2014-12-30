@@ -94,7 +94,7 @@ ActivityBase {
 
         GCText {
             text: qsTr("Match the color")
-            font.pointSize: 18
+            fontSize: 18
             horizontalAlignment: Text.AlignRight
             wrapMode: Text.WordWrap
             anchors {
@@ -108,7 +108,7 @@ ActivityBase {
         GCText {
             id: helpMessage
             text: ""
-            font.pointSize: 16
+            fontSize: mediumSize
             horizontalAlignment: Text.AlignLeft
             wrapMode: Text.WordWrap
             anchors {

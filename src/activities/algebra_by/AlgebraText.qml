@@ -29,7 +29,7 @@ Item {
 
     GCText {
         id: text
-        font.pointSize: 32
+        fontSize: hugeSize
         font.bold: true
         style: Text.Outline
         styleColor: "white"

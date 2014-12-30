@@ -231,7 +231,7 @@ Rectangle {
                     color: "white"
                     fontSizeMode: Text.Fit
                     minimumPointSize: 10
-                    font.pointSize: 24
+                    fontSize: largeSize
                     font.bold : true
                     style: Text.Outline
                     styleColor: "black"

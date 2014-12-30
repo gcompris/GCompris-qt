@@ -61,7 +61,7 @@ Rectangle {
 
         fontSizeMode: Text.Fit
         minimumPointSize: 7
-        font.pointSize: 32
+        fontSize: hugeSize
         font.weight: Font.DemiBold
         maximumLineCount: 1
         verticalAlignment: Text.AlignVCenter

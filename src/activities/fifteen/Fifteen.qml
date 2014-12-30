@@ -120,7 +120,7 @@ ActivityBase {
                         anchors.horizontalCenter: parent.horizontalCenter
                         anchors.verticalCenter: parent.verticalCenter
                         text: value && bar.level % 2 == 1 ? value : ""
-                        font.pointSize: 16
+                        fontSize: mediumSize
                     }
 
                     DropShadow {

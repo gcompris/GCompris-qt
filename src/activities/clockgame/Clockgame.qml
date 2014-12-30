@@ -105,7 +105,7 @@ ActivityBase {
                           items.targetH) + ":" + Activity.get2CharValue(
                           items.targetM) + ":" + Activity.get2CharValue(
                           items.targetS)
-                font.pointSize: 18
+                fontSize: 18
                 font.weight: Font.DemiBold
                 color: "white"
                 horizontalAlignment: Text.AlignHCenter

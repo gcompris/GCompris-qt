@@ -138,7 +138,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: 10
-            font.pointSize: 24
+            fontSize: largeSize
             font.weight: Font.DemiBold
             style: Text.Outline
             styleColor: "black"

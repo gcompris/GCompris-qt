@@ -189,7 +189,7 @@ ActivityBase {
                             sourceSize.height:  column.itemStoreHeight
                             GCText {
                                 text: modelData.price
-                                font.pointSize: 20
+                                fontSize: 20
                                 font.weight: Font.DemiBold
                                 style: Text.Outline
                                 styleColor: "black"
@@ -224,7 +224,7 @@ ActivityBase {
                     horizontalAlignment: Text.AlignHCenter
                     width: column.width
                     wrapMode: Text.WordWrap
-                    font.pointSize: 14
+                    fontSize: regularSize
                 }
             }
 

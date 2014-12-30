@@ -79,7 +79,7 @@ ActivityBase {
             wrapMode: TextEdit.WordWrap
             color: "white"
             font.bold: true
-            font.pointSize: 20
+            fontSize: 20
         }
 
         AnswerArea {
@@ -97,7 +97,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             color: "white"
             font.bold: true
-            font.pointSize: 16
+            fontSize: mediumSize
         }
 
         NumPad {

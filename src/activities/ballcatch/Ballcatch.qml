@@ -247,7 +247,7 @@ ActivityBase {
                 wrapMode: TextEdit.WordWrap
                 horizontalAlignment: TextEdit.AlignHCenter
                 verticalAlignment: TextEdit.AlignVCenter
-                font.pointSize: 14
+                fontSize: regularSize
             }
         }
 

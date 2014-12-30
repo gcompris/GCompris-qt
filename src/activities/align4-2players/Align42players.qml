@@ -198,7 +198,7 @@ ActivityBase {
                 anchors.verticalCenter: parent.verticalCenter
                 x: parent.width / 2 + 5
                 color: "white"
-                font.pointSize: 24
+                fontSize: largeSize
             }
         }
 
@@ -218,7 +218,7 @@ ActivityBase {
                 anchors.verticalCenter: parent.verticalCenter
                 color: "white"
                 x: parent.width / 2 + 5
-                font.pointSize: 24
+                fontSize: largeSize
             }
         }
 

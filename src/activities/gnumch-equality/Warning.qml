@@ -133,7 +133,7 @@ Rectangle {
         text: fault + "<br>" + qsTr("Press &lt;Return&gt; or click on me to continue.")
         fontSizeMode: Text.Fit
         minimumPointSize: 10
-        font.pointSize: 28
+        fontSize: 28
         wrapMode: Text.WordWrap
     }
 

@@ -164,7 +164,7 @@ ActivityBase {
                 opacity: 1.0
                 z:11            
                 text: ""
-                font.pointSize: 44
+                fontSize: 44
                 font.bold: true
                 style: Text.Outline
                 styleColor: "black"

@@ -70,7 +70,7 @@ Item {
 
                 fontSizeMode: Text.Fit
                 minimumPointSize: 7
-                font.pointSize: 28
+                fontSize: 28
                 maximumLineCount: 1
 
                 text: num1 + operator + num2

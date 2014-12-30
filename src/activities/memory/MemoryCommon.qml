@@ -151,7 +151,7 @@ ActivityBase {
                 anchors.verticalCenterOffset: parent.height / 6
                 color: "black"
                 font.bold: true
-                font.pointSize: 24
+                fontSize: largeSize
                 style: Text.Outline
                 styleColor: "white"
                 text: items.playerScore
@@ -176,7 +176,7 @@ ActivityBase {
                 anchors.verticalCenterOffset: parent.height / 6
                 color: "black"
                 font.bold: true
-                font.pointSize: 24
+                fontSize: largeSize
                 style: Text.Outline
                 styleColor: "white"
                 text: items.tuxScore

@@ -314,7 +314,7 @@ ActivityBase {
                 margins: 10
             }
             width: background.width - x - 20
-            font.pointSize: 14
+            fontSize: regularSize
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             visible: false

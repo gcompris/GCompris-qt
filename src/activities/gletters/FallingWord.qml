@@ -109,7 +109,7 @@ Item {
         id: wordText
 
         text: ""
-        font.pointSize: 35
+        fontSize: 35
         font.bold: true
         color: "navy"
         style: Text.Outline
@@ -126,8 +126,8 @@ Item {
             anchors.fill: parent
 
             text: ""
-            font.pointSize: parent.font.pointSize
-            font.bold: parent.font.pointSize
+            fontSize: parent.fontSize
+            font.bold: parent.font.bold
             color: "red"
             style: Text.Outline
             styleColor: "white"
