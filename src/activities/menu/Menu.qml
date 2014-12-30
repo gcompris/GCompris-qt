@@ -118,6 +118,8 @@ ActivityBase {
                     event.key === Qt.Key_S) {
                 // Ctrl+S toggle show / hide section
                 ApplicationSettings.sectionVisible = !ApplicationSettings.sectionVisible
+            } else if(event.key === Qt.Key_Space) {
+                currentActiveGrid.currentItem.selectCurrentItem()
             }
         }
         Keys.onReleased: {
@@ -221,6 +223,7 @@ ActivityBase {
             cellHeight: activityCellHeight
             clip: true
             model: ActivityInfoTree.menuTree
+            keyNavigationWraps: true
             property int spacing: 10
 
             delegate: Item {
