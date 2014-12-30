@@ -10,7 +10,7 @@ ActivityInfo {
   description: qsTr("Click on the right color")
 //  intro: "Click on the right color"
   goal: qsTr("This activity teaches you to recognize different colors. When you hear the name of the color, touch the duck wearing it.")
-  prerequisite: "Identifying colours"
+  prerequisite: qsTr("Identifying colours")
   manual: qsTr("Listen to the color and touch the matching duck.")
   credit: ""
   section: "discovery color"
