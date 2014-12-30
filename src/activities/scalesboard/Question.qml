@@ -50,10 +50,10 @@ Item {
         Behavior on opacity { NumberAnimation { duration: 100 } }
     }
     
-    Text {
+    GCText {
         id: questionText
         color: "black"
-        font.pointSize: 24
+        fontSize: largeSize
         width: parent.width
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
