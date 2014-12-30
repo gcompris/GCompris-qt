@@ -43,7 +43,7 @@ ActivityBase {
         sourceSize.width: parent.width
 
         property bool horizontalLayout: background.width > background.height
-        property Item dialog
+        property QtObject dialog
         property bool keyNavigation: false
 
         signal start
