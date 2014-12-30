@@ -22,6 +22,7 @@
 import QtQuick 2.1
 import GCompris 1.0
 
+import "."
 import "../../core"
 import "memory.js" as Activity
 
@@ -103,6 +104,17 @@ ActivityBase {
                     audioVoices: activity.audioVoices
                     audioEffects: activity.audioEffects
                }
+            }
+            add: Transition {
+                PathAnimation {
+                    path: Path {
+                        PathCurve { x: background.width / 3}
+                        PathCurve { y: background.height / 3}
+                        PathCurve {}
+                    }
+                    easing.type: Easing.InOutQuad
+                    duration: 2000
+                }
             }
         }
 
