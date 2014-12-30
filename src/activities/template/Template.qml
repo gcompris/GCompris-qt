@@ -54,10 +54,10 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Text {
+        GCText {
             anchors.centerIn: parent
             text: "template activity"
-            font.pointSize: 24
+            fontSize: largeSize
         }
 
         DialogHelp {
