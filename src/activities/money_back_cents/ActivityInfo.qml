@@ -6,7 +6,7 @@ ActivityInfo {
   icon: "money_back_cents/money_back_cents.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
-  title: qsTr("Give tux his change, including cents")
+  title: qsTr("Give Tux his change, including cents")
   description: qsTr("Practice money usage by giving Tux his change")
 //  intro: "Click on the money at the bottom of the screen to give Tux his change."
   goal: qsTr("Tux bought you different items and shows you his money. You must give him back his change. At higher levels, several items are displayed, and you must first calculate the total price.")
