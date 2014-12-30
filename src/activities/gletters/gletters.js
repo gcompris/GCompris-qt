@@ -159,22 +159,29 @@ function initSubLevel() {
 
 function processKeyPress(text) {
     var typedText = uppercaseOnly ? text.toLocaleUpperCase() : text;
-    playLetter(text)
 
     if (currentWord !== null) {
         // check against a currently typed word
         if (!currentWord.checkMatch(typedText)) {
             currentWord = null;
-            return;
+            audioCrashPlay()
+        } else {
+            playLetter(text)
         }
     } else {
         // no current word, check against all available words
+        var found = false
         for (var i = 0; i< droppedWords.length; i++) {
             if (droppedWords[i].checkMatch(typedText)) {
                 // typed correctly
                 currentWord = droppedWords[i];
+                playLetter(text)
+                found = true
                 break;
             }
+        }
+        if(!found) {
+            audioCrashPlay()
         }
     }
 
