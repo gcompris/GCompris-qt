@@ -194,7 +194,7 @@ ActivityBase {
                 audioEffects: activity.audioEffects
             }
 
-            Text {
+            GCText {
                 id: playableCharDisplay
                 font.pointSize: NaN  // need to clear font.pointSize explicitly
                 font.pixelSize: Math.max(playableChar.width * 0.4, 24)
