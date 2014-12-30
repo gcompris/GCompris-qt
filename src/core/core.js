@@ -227,7 +227,7 @@ function quit(parent)
         buttonHandler[Dialog.StandardButton.No] = function() {};
         buttonHandler[Dialog.StandardButton.Yes] = function() { Qt.quit(); };
         var dialog = showMessageDialog(parent, qsTr("Quit?"),
-                qsTr("Do you really want to quit Gcompris?"),
+                qsTr("Do you really want to quit GCompris?"),
                 "",
                 Dialog.StandardIcon.Question,
                 buttonHandler);
