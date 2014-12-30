@@ -54,11 +54,11 @@ Item {
                 border.color: Qt.darker(color)
                 border.width:2
 
-                Text{
+                GCText {
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     text: numbers[index]
-                    font.pointSize: 28
+                    fontSize: 28
                     font.bold: true
 
                 }
@@ -114,7 +114,7 @@ Item {
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     text: numbers[index] + 5
-                    font.pointSize: 28
+                    fontSize: 28
                     font.bold: true
 
                 }
@@ -156,7 +156,7 @@ Item {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 text: "←"
-                font.pointSize: 28
+                fontSize: 28
                 font.bold: true
             }
 
