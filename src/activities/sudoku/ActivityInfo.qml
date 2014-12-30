@@ -25,12 +25,12 @@ ActivityInfo {
   icon: "sudoku/sudoku.svg"
   author: "Johnny Jazeix <jazeix@gmail.com>"
   demo: true
-  title: qsTr("Sudoku, place unique symbols in a grid.")
+  title: qsTr("Sudoku, place unique symbols in a grid")
   description: qsTr("Symbols must be unique in a row, in a column, and (if defined) each region.")
 //  intro: "Select a number or a symbol and click its target area. Each symbol must appear only once in a row, in a column and in a subregion if any."
   goal: qsTr("The aim of the puzzle is to enter a symbol or numeral from 1 through 9 in each cell of a grid. In the official Sudoku the grid is 9x9 made up of 3x3 subgrids (called 'regions'). In GCompris we start at lower levels with a simpler version using symbols and with no regions. In all cases the grid is presented with various symbols or numerals given in some cells (the 'givens'). Each row, column and region must contain only one instance of each symbol or numeral (Source &lt;http://en.wikipedia.org/wiki/Sudoku&gt;).")
   prerequisite: qsTr("Completing the puzzle requires patience and logical ability")
-  manual: qsTr("Select a number of a symbol on the left and click on its target position. GCompris will not let you enter invalid data.")
+  manual: qsTr("Select a number or a symbol on the left and click on its target position. GCompris will not let you enter invalid data.")
   credit: ""
   section: "puzzle"
 }
