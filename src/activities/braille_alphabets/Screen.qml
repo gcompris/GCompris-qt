@@ -143,12 +143,13 @@ ActivityBase {
                             }
                         }
 
-                        Text {
+                        GCText {
                             text: letter
                             font.weight: Font.DemiBold
                             style: Text.Outline
                             styleColor: "white"
                             color: "black"
+                            font.pointSize: NaN  // need to clear font.pointSize explicitly
                             font.pixelSize: Math.max(parent.width * 0.5, 24)
                             anchors {
                                 top: rect1.bottom
@@ -195,6 +196,7 @@ ActivityBase {
 
             Text {
                 id: playableCharDisplay
+                font.pointSize: NaN  // need to clear font.pointSize explicitly
                 font.pixelSize: Math.max(playableChar.width * 0.4, 24)
                 font.weight: Font.DemiBold
                 style: Text.Outline
@@ -226,10 +228,10 @@ ActivityBase {
             border.width: 2
             radius: 5
 
-            Text {
+            GCText {
                 id: questionItem
                 anchors.centerIn: parent
-                font.pointSize: 14
+                fontSize: regularSize
                 horizontalAlignment: Text.AlignHCenter
                 font.weight: Font.DemiBold
                 style: Text.Outline

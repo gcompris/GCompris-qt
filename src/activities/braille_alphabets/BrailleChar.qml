@@ -146,11 +146,12 @@ Item {
                     }
                 }
 
-                Text {
+                GCText {
                     id: numtext
                     text: (clickable) ? modelData : ""
                     anchors.left: alignment()
                     font.weight: Font.DemiBold
+                    font.pointSize: NaN  // need to clear font.pointSize explicitly
                     font.pixelSize: Math.min(30 * ApplicationInfo.ratio,
                                              Math.max(parent.height, 20))
                     anchors.margins: 10
