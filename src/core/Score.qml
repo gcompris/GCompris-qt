@@ -41,7 +41,7 @@ Rectangle {
 
     z: 1000
 
-    property alias pointSize: subLevelText.font.pointSize
+    property alias fontSize: subLevelText.fontSize
 
     /* Either fill in numberOfSubLevels and currentSubLevel
      * or directly the message you want to write */
@@ -55,7 +55,7 @@ Rectangle {
     GCText {
         id: subLevelText
         anchors.centerIn: parent
-        font.pointSize: 16
+        fontSize: mediumSize
         font.bold: true
         color: "black"
         text: message

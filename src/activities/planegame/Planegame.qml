@@ -110,7 +110,7 @@ ActivityBase {
         Score {
             id: score
             visible: false
-            pointSize: 24
+            fontSize: 24
         }
 
         property int movePlaneTimerCounter: 0
