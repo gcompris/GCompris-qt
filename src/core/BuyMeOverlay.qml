@@ -47,7 +47,7 @@ Component {
             
             GCText {
                 id: instructionTxt
-                font.pointSize: 16
+                fontSize: mediumSize
                 color: "white"
                 style: Text.Outline
                 styleColor: "black"

@@ -68,7 +68,7 @@ Rectangle {
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     color: "black"
-                    font.pointSize: 24
+                    fontSize: largeSize
                     font.weight: Font.DemiBold
                 }
             }
@@ -214,7 +214,7 @@ Rectangle {
                             }
                             GCText {
                                 text: qsTr("Font selector")
-                                font.pointSize: 16
+                                fontSize: mediumSize
                                 wrapMode: Text.WordWrap
                             }
                         }
@@ -231,7 +231,7 @@ Rectangle {
                             }
                             GCText {
                                 text: qsTr("Language selector")
-                                font.pointSize: 16
+                                fontSize: mediumSize
                                 wrapMode: Text.WordWrap
                             }
                         }
@@ -304,7 +304,7 @@ Rectangle {
                             GCText {
                                 text: qsTr("Difficulty filter:")
                                 verticalAlignment: Text.AlignVCenter
-                                font.pointSize: 16
+                                fontSize: mediumSize
                                 height: 50 * ApplicationInfo.ratio
                             }
 
