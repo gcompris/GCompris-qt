@@ -111,7 +111,15 @@ ActivityBase {
                 sourceSize.width: itemWidth
             }
             add: Transition {
-                NumberAnimation { properties: "x,y"; duration: 600 }
+                PathAnimation {
+                    path: Path {
+                        PathCurve { x: background.width / 3}
+                        PathCurve { y: background.height / 3}
+                        PathCurve {}
+                    }
+                    easing.type: Easing.InOutQuad
+                    duration: 2000
+                }
             }
             highlight: Rectangle {
                 width: container.cellWidth - container.spacing
