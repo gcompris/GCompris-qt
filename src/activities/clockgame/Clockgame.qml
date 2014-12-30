@@ -157,6 +157,7 @@ ActivityBase {
                 GCText {
                     text: index + 1
                     font {
+                        pointSize: NaN  // need to clear font.pointSize explicitly
                         pixelSize: Math.max(
                                        (index + 1) % 5
                                        === 0 ? clock.radius / 40 : clock.radius / 45,
