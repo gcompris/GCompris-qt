@@ -26,7 +26,9 @@ import GCompris 1.0
 import "."
 
 Text {
-    // some constants for often used fontSizes:
+    // Some constants for often used fontSizes
+    // Note: these should be Enums actually, which by now can't be defined in
+    // QML (cf. QTBUG-14861)
     readonly property int tinySize:     10.0
     readonly property int smallSize:    12.0
     readonly property int regularSize:  14.0
