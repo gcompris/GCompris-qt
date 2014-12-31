@@ -29,8 +29,6 @@ var items
 var currentLevel
 var numberOfLevel
 var nbOfPair
-var firstPictureClicked
-var lastPics
 var cardLeft
 var cardList
 
@@ -50,9 +48,9 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.containerModel.clear()
-    lastPics = []
-    firstPictureClicked = null
+    items.playQueue = []
     items.tuxTurn = false
+    items.selectionCount = 0
 
     // compute the number of cards
     var columns = items.dataset[currentLevel].columns
@@ -165,78 +163,67 @@ function chooseCard() {
     return listCardNonReturned[Math.floor(Math.random() * listCardNonReturned.length)]
 }
 
-function reverseCards() {
-    if(lastPics.length == 2) {
-        lastPics[0].isBack = true
-        lastPics[1].isBack = true
-        lastPics = []
+function reverseCardsIfNeeded() {
+    if(items.playQueue.length >= 2) {
+        items.selectionCount = 0
+        var item1 = items.playQueue.shift()
+        var item2 = items.playQueue.shift()
+        var tuxTurn = item1.tuxTurn
+
+        if (item1.card.pairData.matchCode ===
+            item2.card.pairData.matchCode) {
+            // the 2 cards are the same
+            item1.card.isBack = false // stay faced
+            item1.card.isFound = true // signal for hidden state
+            item2.card.isBack = false
+            item2.card.isFound = true
+            cardLeft = cardLeft - 2
+
+            if (tuxTurn)
+                items.tuxScore++
+            else
+                items.playerScore++
+
+            if(cardLeft === 0) { // no more cards in the level
+                if(items.withTux) {
+                    if (items.tuxScore < items.playerScore) {
+                        youWon()
+                    } else {
+                        youLoose()
+                    }
+                } else {
+                    youWon()
+                }
+            } else {
+                if(items.withTux && items.tuxTurn) {
+                    tuxPlay()
+                } else {
+                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/win.wav')
+                }
+            }
+
+
+        } else {
+            // pictures clicked are not the same
+            item1.card.isBack = true
+            item2.card.isBack = true
+
+            if(items.withTux)
+                items.tuxTurn = !items.tuxTurn
+
+            // The user lost, it's Tux turn
+            if (items.withTux && items.tuxTurn) {
+                tuxPlay()
+            }
+        }
     }
 }
 
 function tuxPlay() {
-    // return all previous cards
-    reverseCards()
-
     // choose a card
     chooseCard().selected()
 }
 
-function cardClicked(cardItem) {
-    if (!firstPictureClicked) { // at first click
-        if (items.withTux && items.tuxTurn) {
-            chooseCard().selected()
-        }
-        firstPictureClicked = cardItem
-    } else if (firstPictureClicked.pairData.matchCode ===
-               cardItem.pairData.matchCode) {
-        // the 2 cards are the same
-        firstPictureClicked.isBack = false // stay faced
-        firstPictureClicked.isFound = true // signal for hidden state
-        cardItem.isBack = false
-        cardItem.isFound = true
-        cardLeft = cardLeft - 2
-
-        if (items.tuxTurn)
-            items.tuxScore++
-        else
-            items.playerScore++
-
-
-        firstPictureClicked = null
-
-        if(cardLeft == 0) { // no more cards in the level
-            if(items.withTux) {
-                if (items.tuxScore < items.playerScore) {
-                    youWon()
-                } else {
-                    youLoose()
-                }
-            } else {
-                youWon()
-            }
-        } else {
-            if(items.withTux && items.tuxTurn) {
-                tuxPlay()
-            } else {
-                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/win.wav')
-            }
-        }
-
-    } else {
-        // pictures clicked are not the same
-        if(items.withTux)
-            items.tuxTurn = !items.tuxTurn
-
-        // keep them to reverse them on next click
-        lastPics = [firstPictureClicked, cardItem]
-        firstPictureClicked = null
-
-        // The user lost, it's Tux turn
-        if (items.withTux && items.tuxTurn) {
-            tuxPlay()
-        }
-    }
-}
 
 function youWon() {
     items.bonus.good("flower")
@@ -263,4 +250,13 @@ function previousLevel() {
     initLevel();
 }
 
+function dumpPlayQueue() {
+    for(var i in items.playQueue)
+        console.log(items.playQueue[i].card, items.playQueue[i].tuxTurn)
+}
 
+// Return true is we have enough to make a pair
+function addPlayQueue(card) {
+    items.playQueue.push({'card': card, 'tuxTurn': items.tuxTurn})
+    return items.playQueue.length >= 2
+}

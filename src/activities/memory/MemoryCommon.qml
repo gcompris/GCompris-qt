@@ -62,6 +62,8 @@ ActivityBase {
             property GCAudio audioEffects: activity.audioEffects
             property bool withTux: activity.withTux
             property bool tuxTurn: false
+            property var playQueue
+            property int selectionCount
             property int tuxScore: tuxScore.text
             property int playerScore: playerScore.text
             property variant dataset: activity.dataset

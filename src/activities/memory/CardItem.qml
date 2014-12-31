@@ -59,7 +59,9 @@ Flipable {
 
     Timer {
         id: animationTimer
-        interval: 750; running: false; repeat: false
+        interval: items.tuxTurn ? 1500 : 750
+        running: false
+        repeat: false
         onTriggered: selectionReady()
     }
 
@@ -111,20 +113,24 @@ Flipable {
 
     MouseArea {
         anchors.fill: parent
-        enabled: card.isBack && !card.isFound && !card.tuxTurn
+        enabled: card.isBack && !card.isFound && !card.tuxTurn && items.selectionCount < 2
         onClicked: selected()
     }
 
     function selected() {
-        Activity.reverseCards()
         card.isBack = false
         card.isShown = true
+        items.selectionCount++
         animationTimer.start()
         audioEffects.play(Activity.url + "card_flip.wav")
     }
 
     function selectionReady() {
-        Activity.cardClicked(card)
+        var pairs = Activity.addPlayQueue(card)
+        var win = Activity.reverseCardsIfNeeded()
+        if(tuxTurn && win || tuxTurn && !pairs)
+            Activity.tuxPlay()
+
         if (card.pairData.sound) {
             audioVoices.play(card.pairData.sound)
         }
