@@ -119,8 +119,12 @@ public:
     }
 
     QString locale() const { return m_locale; }
+    // If newLocale is "" then the current system locale is used
     void setLocale(const QString newLocale) {
-        m_locale = newLocale;
+        if(newLocale == "")
+            m_locale = QString(QLocale::system().name() + ".UTF-8");
+        else
+            m_locale = newLocale;
         emit localeChanged();
     }
 
