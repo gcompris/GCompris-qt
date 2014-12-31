@@ -146,18 +146,15 @@ Dialog {
                 id: backgroundButton
                 //: Run this task in background
                 text: qsTr("Background")
-                style: GCButtonStyle {
-                    textWidth: downloadColumn.width/2
-                }
+                style: GCButtonStyle {}
                 visible: true
                 onClicked: downloadDialog.shutdown();
             }
             Button {
                 id: abortButton
+                width: downloadColumn.width/2
                 text: qsTr("Abort")
-                style: GCButtonStyle {
-                    textWidth: downloadColumn.width/2
-                }
+                style: GCButtonStyle {}
                 visible: true
                 onClicked: {
                     if (DownloadManager.downloadIsRunning())
