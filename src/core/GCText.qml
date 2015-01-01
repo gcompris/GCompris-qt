@@ -46,6 +46,6 @@ Text {
     // font.pointSize: NaN
     property int fontSize: 14
 
-    font.pointSize: fontSize * ApplicationInfo.fontRatio
+    font.pointSize: (ApplicationSettings.baseFontSize + fontSize) * ApplicationInfo.fontRatio
     font.family: GCSingletonFontLoader.fontLoader.name
 }

@@ -69,6 +69,10 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(quint32 filterLevelMax READ filterLevelMax WRITE setFilterLevelMax NOTIFY filterLevelMaxChanged)
 	Q_PROPERTY(bool isDemoMode READ isDemoMode WRITE setDemoMode NOTIFY demoModeChanged)
 	Q_PROPERTY(bool sectionVisible READ sectionVisible WRITE setSectionVisible NOTIFY sectionVisibleChanged)
+    Q_PROPERTY(int baseFontSize READ baseFontSize WRITE setBaseFontSize NOTIFY baseFontSizeChanged)
+    // constant min/max values for baseFontSize:
+    Q_PROPERTY(int baseFontSizeMin READ baseFontSizeMin CONSTANT)
+    Q_PROPERTY(int baseFontSizeMax READ baseFontSizeMax CONSTANT)
 
     // admin group
     Q_PROPERTY(QString downloadServerUrl READ downloadServerUrl WRITE setDownloadServerUrl NOTIFY downloadServerUrlChanged)
@@ -197,6 +201,15 @@ public:
         emit barHiddenChanged();
     }
 
+    int baseFontSize() const { return m_baseFontSize; }
+    void setBaseFontSize(const int newBaseFontSize) {
+        m_baseFontSize = qMax(qMin(newBaseFontSize, baseFontSizeMax()), baseFontSizeMin());
+        emit baseFontSizeChanged();
+    }
+
+    int baseFontSizeMin() const { return m_baseFontSizeMin; }
+    int baseFontSizeMax() const { return m_baseFontSizeMax; }
+
 protected slots:
 	Q_INVOKABLE void notifyAudioVoicesEnabledChanged();
 	Q_INVOKABLE void notifyAudioEffectsEnabledChanged();
@@ -220,6 +233,7 @@ protected slots:
 public slots:
 	Q_INVOKABLE bool isFavorite(const QString &activity);
 	Q_INVOKABLE void setFavorite(const QString &activity, bool favorite);
+    Q_INVOKABLE void saveBaseFontSize();
 
 protected:
 
@@ -236,6 +250,7 @@ signals:
     void filterLevelMaxChanged();
 	void demoModeChanged();
 	void sectionVisibleChanged();
+    void baseFontSizeChanged();
 
     void downloadServerUrlChanged();
 
@@ -264,6 +279,9 @@ private:
     QString m_font;
 	bool m_isDemoMode;
 	bool m_sectionVisible;
+	int m_baseFontSize;
+	const int m_baseFontSizeMin = -7;
+	const int m_baseFontSizeMax = 7;
 
     QString m_downloadServerUrl;
 

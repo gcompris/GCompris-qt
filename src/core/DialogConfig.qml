@@ -220,7 +220,35 @@ Rectangle {
                                 wrapMode: Text.WordWrap
                             }
                         }
-
+                        Row {
+                            spacing: 5
+                            Slider {
+                                id: baseFontSizeSlider
+                                anchors.verticalCenter: parent.verticalCenter
+                                width: 300 * ApplicationInfo.ratio
+                                maximumValue: ApplicationSettings.baseFontSizeMax
+                                minimumValue: ApplicationSettings.baseFontSizeMin
+                                stepSize: 1.0
+                                tickmarksEnabled: true
+                                updateValueWhileDragging: true
+                                value: baseFontSize
+                                onValueChanged: ApplicationSettings.baseFontSize = value;
+                            }
+                            GCText {
+                                id: baseFontSizeText
+                                anchors.verticalCenter: parent.verticalCenter
+                                text: qsTr("Font size")
+                                fontSize: mediumSize
+                                wrapMode: Text.WordWrap
+                            }
+                            Button {
+                                height: parent.height
+                                anchors.verticalCenter: parent.verticalCenter
+                                text: qsTr("Default");
+                                style: GCButtonStyle {}
+                                onClicked: baseFontSizeSlider.value = 0.0
+                            }
+                        }
                         Row {
                             spacing: 5
                             ComboBox {
@@ -462,7 +490,9 @@ Rectangle {
             anchors.fill: parent
             onClicked: {
                 if(hasConfigChanged())
-                    save()
+                    save();
+                //else
+                //    reset();
                 close()
             }
         }
@@ -474,6 +504,7 @@ Rectangle {
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
     property bool sectionVisible: ApplicationSettings.sectionVisible
+    property int baseFontSize: ApplicationSettings.baseFontSize
 
     onStart: {
         // Synchronize settings with data
@@ -494,6 +525,8 @@ Rectangle {
 
         sectionVisible = ApplicationSettings.sectionVisible
         sectionVisibleBox.checked = sectionVisible
+
+        baseFontSize = ApplicationSettings.baseFontSize;
 
         // Set locale
         for(var i = 0 ; i < languages.count ; i ++) {
@@ -523,6 +556,8 @@ Rectangle {
         ApplicationSettings.isEmbeddedFont = fonts.get(fontBox.currentIndex).isLocalResource;
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
 
+        ApplicationSettings.saveBaseFontSize();
+
         if (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale) {
             ApplicationSettings.locale = languages.get(languageBox.currentIndex).locale
             if (!DownloadManager.haveLocalResource(
@@ -549,6 +584,11 @@ Rectangle {
             } else // check for udpates or/and register new voices
                 DownloadManager.updateResource(DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort))
         }
+    }
+
+    function reset()
+    {
+        ApplicationSettings.baseFontSize = baseFontSize;
     }
 
     ListModel {
@@ -640,7 +680,8 @@ Rectangle {
                 (ApplicationSettings.isAudioEffectsEnabled != isAudioEffectsEnabled) ||
                 (ApplicationSettings.isFullscreen != isFullscreen) ||
                 (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard) ||
-                (ApplicationSettings.isAutomaticDownloadsEnabled != isAutomaticDownloadsEnabled)
+                (ApplicationSettings.isAutomaticDownloadsEnabled != isAutomaticDownloadsEnabled) ||
+                (ApplicationSettings.baseFontSize != baseFontSize)
                 );
     }
 }
