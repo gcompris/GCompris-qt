@@ -51,7 +51,6 @@
 #include "ApplicationInfo.h"
 #include <QDebug>
 
-#define GC_DEFAULT_LOCALE "en_US.UTF-8"
 #define GC_DEFAULT_FONT "Andika-R.ttf"
 
 static const QString GENERAL_GROUP_KEY = "General";
@@ -96,8 +95,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
 	m_isAudioVoicesEnabled = m_config.value(ENABLE_AUDIO_VOICES_KEY, true).toBool();
     m_isVirtualKeyboard = m_config.value(VIRTUALKEYBOARD_KEY,
             ApplicationInfo::getInstance()->isMobile()).toBool();
-    m_locale = m_config.value(LOCALE_KEY,
-            QLocale::system() == QLocale::c() ? GC_DEFAULT_LOCALE : QString(QLocale::system().name() + ".UTF-8")).toString();
+    m_locale = m_config.value(LOCALE_KEY, GC_DEFAULT_LOCALE).toString();
     m_font = m_config.value(FONT_KEY, GC_DEFAULT_FONT).toString();
     m_isEmbeddedFont = m_config.value(IS_CURRENT_FONT_EMBEDDED, true).toBool();
 

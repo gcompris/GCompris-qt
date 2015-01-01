@@ -50,6 +50,8 @@
 
 #include <QSettings>
 
+#define GC_DEFAULT_LOCALE "system"
+
 class ApplicationSettings : public QObject
 {
 	Q_OBJECT
@@ -118,13 +120,11 @@ public:
         emit virtualKeyboardChanged();
     }
 
-    QString locale() const { return m_locale; }
-    // If newLocale is "" then the current system locale is used
+    QString locale() const {
+        return m_locale;
+    }
     void setLocale(const QString newLocale) {
-        if(newLocale == "")
-            m_locale = QString(QLocale::system().name() + ".UTF-8");
-        else
-            m_locale = newLocale;
+        m_locale = newLocale;
         emit localeChanged();
     }
 

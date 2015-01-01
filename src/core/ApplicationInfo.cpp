@@ -197,6 +197,11 @@ void ApplicationInfo::notifyFullscreenChanged()
         m_window->showNormal();
 }
 
+// return the short locale name for the given locale
+QString ApplicationInfo::getLocaleShort(const QString &locale) {
+    return localeShort(locale);
+}
+
 QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,
                                              QJSEngine *scriptEngine)
 {

@@ -245,7 +245,8 @@ Rectangle {
                             property bool haveLocalResource: false
 
                             function localeChanged() {
-                                var localeShort = languages.get(languageBox.currentIndex).locale.substr(0, 2);
+                                var localeShort =
+                                        ApplicationInfo.getLocaleShort(languages.get(languageBox.currentIndex).locale);
                                 var language = languages.get(languageBox.currentIndex).text;
                                 voicesText.text = language;
                                 voicesRow.haveLocalResource = DownloadManager.haveLocalResource(
@@ -287,9 +288,11 @@ Rectangle {
                                 style: GCButtonStyle {}
 
                                 onClicked: {
+                                    var localeShort =
+                                            ApplicationInfo.getLocaleShort(languages.get(languageBox.currentIndex).locale);
                                     if (DownloadManager.downloadResource(
                                         DownloadManager.getVoicesResourceForLocale(
-                                                languages.get(languageBox.currentIndex).locale.substr(0, 2))))
+                                                    languages.get(localeShort))))
                                     {
                                         var downloadDialog = Core.showDownloadDialog(dialogConfig, {});
                                     }
@@ -553,7 +556,7 @@ Rectangle {
         // This is done this way for having the translations
         Component.onCompleted: {
             // FIXME: Add the first line for translation asap
-            languages.append( { "text": "Your system default", "locale": "" })
+            languages.append( { "text": "Your system default", "locale": "system" })
             languages.append( { "text": "UK English", "locale": "en_GB.UTF-8" })
             languages.append( { "text": "American English", "locale": "en_US.UTF-8" } )
             languages.append( { "text": "български", "locale": "bg_BG.UTF-8" } )

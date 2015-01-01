@@ -102,9 +102,14 @@ int main(int argc, char *argv[])
         // Get locale
         if(config.contains("General/locale")) {
             locale = config.value("General/locale").toString();
-            isFullscreen = config.value("General/fullscreen").toBool();
         } else {
-            locale = "en_US.UTF-8";
+            locale = GC_DEFAULT_LOCALE;
+        }
+        if(locale == GC_DEFAULT_LOCALE)
+            locale = QString(QLocale::system().name() + ".UTF-8");
+
+        if(config.contains("General/fullscreen")) {
+            isFullscreen = config.value("General/fullscreen").toBool();
         }
 
 		// Set the cursor image

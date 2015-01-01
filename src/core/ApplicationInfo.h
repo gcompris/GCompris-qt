@@ -116,10 +116,17 @@ public:
 	qreal sliderGapWidth()  { return m_sliderGapWidth; }
 	qreal sliderHandleWidth()  { return m_sliderHandleWidth; }
 
+    // return the short locale name for the given locale.
+    // If 'defaut' is passed then return the short locale for the system locale
     // Can't use left(2) because of Asturian where there are 3 chars
     static QString localeShort(const QString &locale) {
-        return locale.left(locale.indexOf('_'));
+        QString _locale = locale;
+        if(_locale == GC_DEFAULT_LOCALE) {
+            _locale = QLocale::system().name();
+        }
+        return _locale.left(_locale.indexOf('_'));
     }
+    // return the short locale name for the current config
     QString localeShort() const {
         return localeShort( ApplicationSettings::getInstance()->locale() );
     }
@@ -132,6 +139,7 @@ protected slots:
 	QString getResourceDataPath();
     Q_INVOKABLE QString getAudioFilePath(const QString &file);
     Q_INVOKABLE QString getLocaleFilePath(const QString &file);
+    Q_INVOKABLE QString getLocaleShort(const QString &locale);
     Q_INVOKABLE QStringList getSystemExcludedFonts();
     Q_INVOKABLE QStringList getFontsFromRcc();
     Q_INVOKABLE void notifyFullscreenChanged();
