@@ -74,6 +74,8 @@ static const QString EXE_COUNT_KEY = "exeCount";
 static const QString FILTER_LEVEL_MIN = "filterLevelMin";
 static const QString FILTER_LEVEL_MAX = "filterLevelMax";
 
+static const QString BASE_FONT_SIZE_KEY = "baseFontSize";
+
 static const QString DEFAULT_CURSOR = "defaultCursor";
 static const QString NO_CURSOR = "noCursor";
 static const QString DEMO_KEY = "demo";
@@ -113,6 +115,8 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_filterLevelMax = m_config.value(FILTER_LEVEL_MAX, 6).toUInt();
 	m_defaultCursor = m_config.value(DEFAULT_CURSOR, false).toBool();
 	m_noCursor = m_config.value(NO_CURSOR, false).toBool();
+    setBaseFontSize(m_config.value(BASE_FONT_SIZE_KEY, 0).toInt());
+
 	m_config.sync();  // make sure all defaults are written back
     m_config.endGroup();
 
@@ -163,6 +167,7 @@ ApplicationSettings::~ApplicationSettings()
 	m_config.setValue(SECTION_VISIBLE, m_sectionVisible);
 	m_config.setValue(DEFAULT_CURSOR, m_defaultCursor);
 	m_config.setValue(NO_CURSOR, m_noCursor);
+	m_config.setValue(BASE_FONT_SIZE_KEY, m_baseFontSize);
 	m_config.endGroup();
 
     // admin group
@@ -267,6 +272,11 @@ void ApplicationSettings::notifyExeCountChanged()
 void ApplicationSettings::notifyBarHiddenChanged()
 {
     qDebug() << "is bar hidden: " << m_isBarHidden;
+}
+
+void ApplicationSettings::saveBaseFontSize()
+{
+    updateValueInConfig(GENERAL_GROUP_KEY, BASE_FONT_SIZE_KEY, m_baseFontSize);
 }
 
 void ApplicationSettings::setFavorite(const QString &activity, bool favorite)
