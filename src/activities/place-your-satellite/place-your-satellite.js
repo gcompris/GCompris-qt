@@ -21,10 +21,11 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 
-var planetDataset = [['EARTH', 6e24, '12800000'], ['SATURN', 6e26, '116464000'], ['JUPITER', '2*10^27', '139822000'], ['SUN', '2*10^30', '1391684000'], ['67PComet', '1.0*10^13', '4000']]
+var planetDataset = [['EARTH', 6e24, '12800000'], ['SATURN', 6e26, '116464000'], ['JUPITER', 2e27, '139822000'], ['SUN', 2e30, '1391684000'], ['67PComet', 1e13, '4000']]
 //var satelliteDataset = [['SPOUTNIK','84' ], ['InternationalSpaceShip', '400000'], ['ROSETTA','3000' ]]
 
-var satelliteDataset = [['InternationalSpaceShip', '400000'], ['satellite', '3000']]
+var satelliteDataset = [['InternationalSpaceShip', '400000'], ['Rosetta', '3000'], ['Hubble','11000']]
+
 var url = "qrc:/gcompris/src/activities/place-your-satellite/"
 
 var currentLevel = 0
@@ -33,7 +34,6 @@ var items
 
 var massObjectName = planetDataset[0][0]
 var massObjectMass = planetDataset[0][1]
-
 
 var satObjectName = satelliteDataset[0][0]
 var satObjectMass = satelliteDataset[0][1]
@@ -46,7 +46,6 @@ var position, speed, points
 var t, dt, listT,a, listPoints, listPointsPix
 var y0=[]
 var x0=[]
-
 
 function start(items_) {
     items = items_
@@ -86,12 +85,14 @@ function massChanged(massNb) {
     massObjectName = planetDataset[massNb][0]
     massObjectMass = planetDataset[massNb][1]
     items.massObjectDiameter = planetDataset[massNb][2]
+
 }
 
 function calcparameters() {
     //distance in m
     distance = items.slidDistance.value
     pixPerMeter = items.objectDiameter.width/items.massObjectDiameter
+
 
     //X and Y speed conposantes
     speedX = items.slidSpeed.value*Math.cos(items.arrowSatAngle/180*Math.PI)

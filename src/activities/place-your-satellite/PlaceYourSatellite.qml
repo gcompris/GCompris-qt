@@ -39,9 +39,18 @@ ActivityBase {
 
         onMassNbChanged: {
             Activity.massChanged(massNb)
-            massInfo.text = Activity.massObjectName + '\n' + Activity.massObjectMass + " kg"
+            massInfo.text = Activity.massObjectName + '\n' + Activity.massObjectMass.toString().replace("e+","*10^") + " kg"
             massImage.source = Activity.url + "resource/" + Activity.massObjectName + ".png"
             diameterInfo.text = items.massObjectDiameter + " km"
+            slidDistance.value = 2*items.massObjectDiameter
+
+            //liberation speed -speed maximum to be satellized-
+            items.liberationSpeed = Math.sqrt(2*(6.67*Math.pow(10,-11))*Activity.massObjectMass/items.massObjectDiameter)
+            slidSpeed.maximumValue = 1.5 * items.liberationSpeed
+            slidSpeed.value = 0.33*slidSpeed.maximumValue
+            slidSpeed.minimumValue = 0.1*items.liberationSpeed
+
+            console.log(items.liberationSpeed)
         }
 
         onSatNbChanged: {
@@ -83,6 +92,7 @@ ActivityBase {
             property alias instructions : instructions
             property real period : period
             property bool isEllipse : isEllipse
+            property real liberationSpeed : liberationSpeed
         }
 
         onStart: {
@@ -99,7 +109,7 @@ ActivityBase {
             anchors.topMargin: 0.01*parent.height
             text: "<p><b>Launch your satellite !</b></p><p> Find good distance,  speed value and direction</p><p> to make satellite turn around the object</p>"
             horizontalAlignment: Text.AlignHCenter
-            font.pointSize: 24 * ApplicationInfo.ratio
+            font.pointSize: 24
             color: "#777"
         }
 
@@ -176,7 +186,7 @@ ActivityBase {
                     anchors.top: satImage.bottom
                     Text {
                         id: satInfo
-                        text: Activity.satObjectName + '\n' + Activity.satObjectMass + " kg"
+                        text: Activity.satObjectName + '\n' + Activity.satObjectMass.replace("e+","10^") + " kg"
                         anchors.horizontalCenter: parent.horizontalCenter
                         anchors.verticalCenter: parent.verticalCenter
 
@@ -284,6 +294,9 @@ ActivityBase {
                     ctx.save() //save with translation and styles 1
 
                     //console.log(distanceSatInPix)
+                    if (items.isEllipse){
+                        items.instructions.text = "Great !! Satellite is turning over Planet in " + items.period.toFixed(0) + " seconds or "+ (items.period/3600).toFixed(0) +" hours and " +60*((items.period/3600)-Math.floor(items.period/3600)).toFixed(0) +" minutes"
+                    }
 //                    if (Activity.listPointsPix.length > 100) {
                         //console.log
                         for (var j = 0; j < Activity.listPointsPix.length; j++) {
@@ -297,7 +310,7 @@ ActivityBase {
                                 var xx = Activity.listPointsPix[j-1][0]
                                 var yy = Activity.listPointsPix[j-1][1]
                                 ctx.drawImage(Activity.url + "resource/crash.png",xx+20, yy+20);
-//                                console.log('BIIIIIIIIIIIIM')
+
                                 ctx.restore()//restore with translation and styles 2
                                 items.instructions.text = "Great !! Satellite is turning over Planet !! But it crashes on its surface :("
 
@@ -317,13 +330,12 @@ ActivityBase {
 
                        // }
                     }
-                    if (items.isEllipse){
-                        items.instructions.text = "Great !! Satellite is turning over Planet in " + items.period.toFixed(0) + " seconds or "+ (items.period/3600).toFixed(0) +" hours and " +60*((items.period/3600)-Math.floor(items.period/3600)).toFixed(0) +" minutes"
-                    }
+
 
                     mouseareaCentral.hoverEnabled = true
                     ctx.restore()//restore with translation and styles 1
                     ctx.restore()//restaure with style 0
+                    //Activity.listPointsPix = []
 
 
 
@@ -355,6 +367,7 @@ ActivityBase {
                     hoverEnabled = false
                     instructions.text ="<p>Now Use sliders to choose</p><p> a speed and a position<p><p>Then LAUNCH it !!</p>"
                     buttonLaunch.visible = true
+
                 }
 
 //                  onEntered: console.log('Entree')
@@ -379,7 +392,7 @@ ActivityBase {
             anchors.bottomMargin: parent.height * 0.3
             Text {
                 id: massInfo
-                text: Activity.massObjectName + '\n' + Activity.massObjectMass + " kg"
+                text: Activity.massObjectName + '\n' + Activity.massObjectMass.toString().replace("e+","*10^") + " kg"
                 anchors.verticalCenter: parent.verticalCenter
                 anchors.horizontalCenter: parent.horizontalCenter
                 horizontalAlignment: Text.AlignHCenter
@@ -562,6 +575,7 @@ ActivityBase {
                 anchors.bottom:parent.top
                 anchors.horizontalCenter: parent.horizontalCenter
                 color:'white'
+                font.pointSize: 16
             }
 
             onValueChanged: {
@@ -590,6 +604,7 @@ ActivityBase {
             Text {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: "Distance (in km):" + (slidDistance.value/1000).toFixed(0)
+                font.pointSize: 16
                 anchors.bottom:parent.top
                 color:'white'
             }
@@ -613,8 +628,9 @@ ActivityBase {
             }
             Text {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: "Speed in m/s : "+slidSpeed.value.toFixed(0)
+                text: Math.round(slidSpeed.value)!=0 ? "Speed in m/s : " + slidSpeed.value.toFixed(0) : "Speed in m/s : " + slidSpeed.value.toFixed(2)
                 anchors.bottom:parent.top
+                font.pointSize: 16
                 color:'white'
             }
         }
