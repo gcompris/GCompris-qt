@@ -73,6 +73,7 @@ money_cents
 mosaic
 numbers-odd-even
 penalty
+place-your-satellite
 planegame
 redraw
 redraw_symmetrical
