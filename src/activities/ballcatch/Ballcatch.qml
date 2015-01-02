@@ -18,7 +18,6 @@
  along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 import QtQuick 2.1
-import QtQuick.Controls 1.0
 import GCompris 1.0
 
 import "../../core"
@@ -71,15 +70,15 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         onWidthChanged: {
-            ball.reinitBall();
             leftHand.reinitPosition();
             rightHand.reinitPosition();
+            ball.reinitBall();
         }
 
         onHeightChanged: {
-            ball.reinitBall();
             leftHand.reinitPosition();
             rightHand.reinitPosition();
+            ball.reinitBall();
         }
 
         DialogHelp {
@@ -100,6 +99,9 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            audioEffects: activity.audioEffects
+            winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
+            looseSound: "qrc:/gcompris/src/activities/ballcatch/resource/youcannot.wav"
             Component.onCompleted: {
                 win.connect(Activity.nextLevel)
                 loose.connect(Activity.restartLevel)
@@ -108,15 +110,15 @@ ActivityBase {
 
         Image {
             id: tux
-            x: main.width / 2 - width / 2
-            y: main.height / 3
+            x: background.width / 2 - width / 2
+            y: background.height / 3
             sourceSize.height: 100 * ApplicationInfo.ratio
             source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svgz"
         }
 
         Image {
             id: leftHand
-            y: main.height - 1.5 * height
+            y: background.height - 1.5 * height
             z: 5
             sourceSize.height: 150 * ApplicationInfo.ratio
             source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svgz"
@@ -124,8 +126,9 @@ ActivityBase {
             NumberAnimation {
                 id: leftHandAnimation
                 target: leftHand; property: "x";
-                to: main.width/2 - leftHand.width - 5;
-                duration: 1000; easing.type: Easing.InQuad
+                to: background.width/2 - leftHand.width - 5;
+                duration: 1000
+                easing.type: Easing.InOutQuad
             }
 
             function animate(newTime) {
@@ -134,7 +137,8 @@ ActivityBase {
             }
 
             function reinitPosition() {
-                leftHand.x = main.width / 2 - width * 2
+                leftHand.x = background.width / 2 - width * 2
+                leftHand.y = background.height - 1.5 * height
             }
 
             MultiPointTouchArea {
@@ -154,7 +158,7 @@ ActivityBase {
         Image {
             id: rightHand
             mirror: true
-            y: main.height - 1.5 * height
+            y: background.height - 1.5 * height
             z: 5
             sourceSize.height: 150 * ApplicationInfo.ratio
             source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svgz"
@@ -165,15 +169,16 @@ ActivityBase {
             }
 
             function reinitPosition() {
-                rightHand.x = main.width / 2 + width
+                rightHand.x = background.width / 2 + width
+                rightHand.y = background.height - 1.5 * height
             }
 
             NumberAnimation {
                 id: rightHandAnimation
                 target: rightHand; property: "x";
-                to: main.width / 2 + 5;
+                to: background.width / 2 + 5;
                 duration: 1000;
-                easing.type: Easing.InQuad
+                easing.type: Easing.InOutQuad
             }
 
             MultiPointTouchArea {
@@ -201,7 +206,7 @@ ActivityBase {
         Image {
             id: rightShift
             mirror: true
-            x: main.width - width - 10
+            x: background.width - width - 10
             y: rightHand.y
             source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svgz"
             opacity: items.rightPressed ? 1 : 0.5
@@ -209,23 +214,41 @@ ActivityBase {
         }
 
         // Instructions
-        GCText {
-            id: instructions
-            text: ApplicationInfo.isMobile ?
-                      qsTr("Tap both hands at the same time, " +
-                           "to make the ball go in a straight line.") :
-                      qsTr("Press left and right arrow keys at the same time, " +
-                           "to make the ball go in a straight line.")
+        BorderImage {
+            id: bubble
             x: 10.0
             y: tux.y
+            border.left: 3 * ApplicationInfo.ratio
+            border.top: 3 * ApplicationInfo.ratio
+            border.right: 20 * ApplicationInfo.ratio
+            border.bottom: 3 * ApplicationInfo.ratio
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/bubble.svg"
             width: tux.x - 10
-            wrapMode: TextEdit.WordWrap
-            horizontalAlignment: TextEdit.AlignHCenter
-            verticalAlignment: TextEdit.AlignVCenter
-            font.pointSize: 14
-            // Remove the text when both keys has been pressed
-            visible: bar.level === 1 &&
-                     !(items.leftPressed && items.rightPressed)
+            height: instructions.height + 20 * ApplicationInfo.ratio
+            // Remove the instructions when both keys has been pressed
+            opacity: bar.level === 1 &&
+                     !(items.leftPressed && items.rightPressed) ? 1 : 0
+            Behavior on opacity { NumberAnimation { duration: 120 } }
+
+            GCText {
+                id: instructions
+                anchors {
+                    left: parent.left
+                    right: parent.right
+                    verticalCenter: parent.verticalCenter
+                    leftMargin: 10 * ApplicationInfo.ratio
+                    rightMargin: 20 * ApplicationInfo.ratio
+                }
+                text: ApplicationInfo.isMobile ?
+                          qsTr("Tap both hands at the same time, " +
+                               "to make the ball go in a straight line.") :
+                          qsTr("Press left and right arrow keys at the same time, " +
+                               "to make the ball go in a straight line.")
+                wrapMode: TextEdit.WordWrap
+                horizontalAlignment: TextEdit.AlignHCenter
+                verticalAlignment: TextEdit.AlignVCenter
+                fontSize: regularSize
+            }
         }
 
         function playSound(identifier) {

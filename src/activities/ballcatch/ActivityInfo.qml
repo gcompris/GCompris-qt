@@ -24,13 +24,13 @@ ActivityInfo {
     difficulty: 1
     icon: "ballcatch/ballcatch.svg"
     author: "Johnny Jazeix <jazeix@gmail.com>"
-    demo: false
+    demo: true
     title: qsTr("Make the ball go to Tux")
-    description: qsTr("Press the two shift keys at the same time, to make the ball go in a straight line.")
-//    intro: "Press the two shift keys at the same time to send the ball straight on"
+    description: qsTr("Press the left and right arrow keys at the same time, to make the ball go in a straight line.")
+//    intro: "Press the left and right arrow key at the same time to send the ball straight on"
     goal: ""
     prerequisite: ""
-    manual: qsTr("Press the two shift keys at the same time, to make the ball go in a straight line.")
+    manual: qsTr("Press the left and right arrow at the same time, to make the ball go in a straight line. On a touch screen you have to hit the two hands at the same time.")
     credit: ""
-    section: "/computer/keyboard"
+    section: "computer keyboard"
 }

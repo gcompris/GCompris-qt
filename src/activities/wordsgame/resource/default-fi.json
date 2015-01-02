@@ -2,20 +2,17 @@
    "levels" : [
       {
          "level" : "1",
+	 "sublevels" : "15",
          "words" : [
             "talo",
-            "äiti",
             "peli",
-            "isä",
             "nopea",
             "auto",
-            "pyörä",
             "lintu",
             "tie",
             "minun",
             "lintu",
             "muki",
-            "lentää",
             "hauska",
             "koira",
             "kissa",
@@ -30,7 +27,6 @@
             "lamppu",
             "ikkuna",
             "kone",
-            "pöytä",
             "tuoli",
             "paperi",
             "takka",
@@ -42,22 +38,29 @@
       },
       {
          "level" : "2",
+	 "sublevels" : "15",
          "words" : [
             "aurinko",
-            "polkupyörä",
-            "opettaa",
-            "meri",
-            "vuoristo",
             "elefantti",
-            "tietokone",
+            "isä",
+            "lentää",
+            "meri",
             "musiikki",
-            "tervetuloa",
+            "opettaa",
             "painava",
-            "värittää"
+            "polkupyörä",
+            "pyörä",
+            "pöytä",
+            "tervetuloa",
+            "tietokone",
+            "vuoristo",
+            "värittää",
+            "äiti"
          ]
       },
       {
          "level" : "3",
+	 "sublevels" : "15",
          "words" : [
             "talo",
             "äiti",

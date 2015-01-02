@@ -20,8 +20,8 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.2
-import QtQuick.Controls 1.1
 import GCompris 1.0
+import "../../core"
 import "braille_alphabets.js" as Activity
 
 Rectangle {
@@ -85,14 +85,14 @@ Rectangle {
                             brailleChar: modelData
                         }
                     }
-                    Text {
+                    GCText {
                         id: text1
                         text: modelData
                         font.weight: Font.DemiBold
                         style: Text.Outline
                         styleColor: "black"
                         color: "white"
-                        font.pointSize: Math.max(parent.width * 0.2, 12)
+                        fontSize: Math.max(parent.width * 0.2, 12)
                         anchors {
                             top: rect1.bottom
                             topMargin: 4 * ApplicationInfo.ratio
@@ -141,14 +141,14 @@ Rectangle {
                             brailleChar: modelData
                         }
                     }
-                    Text {
+                    GCText {
                         id: text2
                         text: modelData
                         font.weight: Font.DemiBold
                         style: Text.Outline
                         styleColor: "black"
                         color: "white"
-                        font.pointSize: Math.max(parent.width * 0.2, 12)
+                        fontSize: Math.max(parent.width * 0.2, 12)
                         anchors {
                             top: rect2.bottom
                             topMargin: 4 * ApplicationInfo.ratio

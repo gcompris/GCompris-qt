@@ -2,6 +2,7 @@
    "levels" : [
       {
          "level" : "1",
+	 "sublevels" : "15",
          "words" : [
             "I",
             "a",
@@ -160,6 +161,7 @@
       },
       {
          "level" : "2",
+	 "sublevels" : "15",
          "words" : [
             "able",
             "also",
@@ -527,6 +529,7 @@
       },
       {
          "level" : "3",
+	 "sublevels" : "15",
          "words" : [
             "about",
             "above",
@@ -869,6 +872,7 @@
       },
       {
          "level" : "4",
+	 "sublevels" : "15",
          "words" : [
             "abroad",
             "accept",
@@ -1204,6 +1208,7 @@
       },
       {
          "level" : "5",
+	 "sublevels" : "15",
          "words" : [
             "absence",
             "absolute",

@@ -50,8 +50,6 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
     
-    Keys.onPressed: Activity.processKeyPress(event.text)
-    
     pageComponent: Image {
         id: background
         source: activity.dataSetUrl + "background.svgz"
@@ -81,8 +79,31 @@ ActivityBase {
             property GCAudio audioEffects: activity.audioEffects
         }
 
-        onStart: { Activity.start(items, uppercaseOnly, mode) }
+        onStart: {
+            Activity.start(items, uppercaseOnly, mode);
+            if (!ApplicationInfo.isMobile)
+                textinput.forceActiveFocus();
+        }
         onStop: { Activity.stop() }
+
+        TextInput {
+            // Helper element to capture composed key events like french ô which
+            // are not available via Keys.onPressed() on linux. Must be
+            // disabled on mobile!
+            id: textinput
+            anchors.centerIn: background
+            enabled: !ApplicationInfo.isMobile
+            focus: true
+            visible: false
+
+            onTextChanged: {
+                if (text != "") {
+                    Activity.processKeyPress(text);
+                    text = "";
+                }
+            }
+
+        }
 
         DialogHelp {
             id: dialogHelp
@@ -134,15 +155,14 @@ ActivityBase {
         Wordlist {
             id: wordlist
             defaultFilename: activity.dataSetUrl + "default-en.json"
-            filename: ApplicationInfo.getLocaleFilePath(activity.dataSetUrl +
-                                                       "default-$LOCALE.json");
+            filename: ""
 
             onError: console.log("Gletters: Wordlist error: " + msg);
         }
         
         Timer {
             id: wordDropTimer
-            repeat: false        
+            repeat: false
             onTriggered: Activity.dropWord();
         }
 

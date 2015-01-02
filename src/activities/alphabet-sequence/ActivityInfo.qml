@@ -28,9 +28,9 @@ ActivityInfo {
     title: qsTr("Alphabet sequence")
     description: qsTr("Move the helicopter to catch the clouds following the order of the alphabet")
 //    intro: "Move the helicopter to catch the clouds following the order of the alphabet."
-    goal: qsTr("Alphabet training")
+    goal: qsTr("Alphabet sequence")
     prerequisite: qsTr("Can decode letters")
-    manual: qsTr("Catch the alphabet letters, using the up, down, right and left arrows on the keyboard to move the helicopter.")
+    manual: qsTr("Catch the alphabet letters. With a keyboard use the arrow keys to move the helicopter. With a pointing device you just click or tap on the target location. To know which letter you have to catch you can either remember it or check the bottom right corner.")
     credit: ""
     section: "reading"
 }

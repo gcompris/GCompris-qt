@@ -66,7 +66,7 @@ Creature {
 
     onIndexChanged: {
         audioEffects.stop()
-        audioEffects.play("qrc:/gcompris/src/activities/gnumch-equality/resource/smudge.wav")
+        audioEffects.play("qrc:/gcompris/src/core/resource/sounds/smudge.wav")
 
         if (monsters.isThereAMonster(index)) {
             getCaught(-1)
@@ -76,78 +76,6 @@ Creature {
     onOpacityChanged: {
         if (opacity == 0) {
             init()
-        }
-    }
-
-    MouseArea {
-        id: muncherArea
-
-        anchors.fill: parent
-        onClicked: {
-            if (ApplicationInfo.isMobile) {
-                background.checkAnswer()
-            }
-        }
-    }
-
-    MouseArea {
-        id: left
-
-        width: parent.width
-        height: parent.height
-
-        anchors.right: parent.left
-        anchors.verticalCenter: parent.verticalCenter
-        onClicked: {
-            if (ApplicationInfo.isMobile) {
-                moveTo(1)
-            }
-        }
-    }
-
-    MouseArea {
-        id: right
-
-        width: parent.width
-        height: parent.height
-
-        anchors.left: parent.right
-        anchors.verticalCenter: parent.verticalCenter
-        onClicked: {
-            if (ApplicationInfo.isMobile) {
-                moveTo(0)
-            }
-        }
-    }
-
-    MouseArea {
-        id: bottom
-
-        width: parent.width
-        height: parent.height
-
-        anchors.top: parent.bottom
-        anchors.horizontalCenter: parent.horizontalCenter
-        onClicked: {
-            if (ApplicationInfo.isMobile) {
-                moveTo(2)
-            }
-        }
-    }
-
-
-    MouseArea {
-        id: top
-
-        width: parent.width
-        height: parent.height
-
-        anchors.bottom: parent.top
-        anchors.horizontalCenter: parent.horizontalCenter
-        onClicked: {
-            if (ApplicationInfo.isMobile) {
-                moveTo(3)
-            }
         }
     }
 }

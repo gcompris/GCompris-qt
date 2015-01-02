@@ -35,8 +35,6 @@ var baseUrl = "qrc:/gcompris/src/activities/imageid/resource/";
 var dataset = null;
 
 function start(items_) {
-    console.log("Imageid activity: start");
-    
     items = items_;
     currentLevel = 0;
     currentSubLevel = 0;
@@ -53,7 +51,6 @@ function start(items_) {
 }
 
 function stop() {
-    console.log("Imageid activity: stop");
 }
 
 function validateDataset(levels)

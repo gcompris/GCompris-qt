@@ -33,6 +33,7 @@ Item {
     property alias value1: domino.value1
     property alias value2: domino.value2
     property alias valueMax: domino.valueMax
+    property GCAudio audioEffects
 
     Row {
         id: barRow
@@ -57,6 +58,7 @@ Item {
             height: ok.height
             width: height * 2
             isClickable: true
+            audioEffects: activity.audioEffects
         }
     }
 }

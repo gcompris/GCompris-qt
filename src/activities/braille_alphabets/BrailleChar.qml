@@ -23,7 +23,6 @@ import QtQuick 2.1
 import QtMultimedia 5.0
 import "braille_alphabets.js" as Activity
 import "../../core"
-import "questions.js" as Data
 import GCompris 1.0
 
 Item {
@@ -53,6 +52,7 @@ Item {
         "6" : [1, 2, 4], "7" : [1, 2, 4, 5], "8" : [1, 2, 5], "9" : [2, 4], "0" :[3, 5, 6]
     }
     property variant brailleCodes: isLetter ? brailleCodesLetter : brailleCodesNumber
+    property GCAudio audioEffects
 
     function updateDotsFromBrailleChar() {
         var dots = []
@@ -86,6 +86,10 @@ Item {
             }
         }
         brailleChar = ""
+    }
+
+    function switchState(value) {
+        circles.itemAt(value-1).switchState()
     }
 
     Grid {
@@ -123,11 +127,31 @@ Item {
                     return false
                 }
 
-                Text {
+                function switchState() {
+                    if (state == "on") {
+                        state = "off"
+                    } else {
+                        state = "on"
+                    }
+                    activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav")
+                    // On touch screens we don't get the exit event.
+                    border.width = 2 * ApplicationInfo.ratio
+                    brailleCharItem.updateBrailleCharFromDots()
+
+                }
+
+                Behavior on color {
+                    ColorAnimation {
+                        duration: 200
+                    }
+                }
+
+                GCText {
                     id: numtext
                     text: (clickable) ? modelData : ""
                     anchors.left: alignment()
                     font.weight: Font.DemiBold
+                    font.pointSize: NaN  // need to clear font.pointSize explicitly
                     font.pixelSize: Math.min(30 * ApplicationInfo.ratio,
                                              Math.max(parent.height, 20))
                     anchors.margins: 10
@@ -149,14 +173,7 @@ Item {
                     onEntered: incircle1.border.width = 4 * ApplicationInfo.ratio
                     onExited : incircle1.border.width = 2 * ApplicationInfo.ratio
                     onClicked: {
-                        if (incircle1.state == "on") {
-                            incircle1.state = "off"
-                        } else {
-                            incircle1.state = "on"
-                        }
-                        // On touch screens we don't get the exit event.
-                        incircle1.border.width = 2 * ApplicationInfo.ratio
-                        brailleCharItem.updateBrailleCharFromDots()
+                        incircle1.switchState();
                     }
                 }
 

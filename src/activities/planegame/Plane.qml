@@ -28,10 +28,10 @@ Image {
     property real velocityX
     property real velocityY
 
-    source: "qrc:/gcompris/src/activities/planegame/resource/tuxhelico.svgz"
+    source: Activity.url + "resource/tuxhelico.svgz"
     fillMode: Image.PreserveAspectFit
 
-    sourceSize.height: 200 * ApplicationInfo.ratio
+    sourceSize.height: 80 * ApplicationInfo.ratio
 
     z: 10
 
@@ -74,15 +74,4 @@ Image {
     }
     Behavior on height { PropertyAnimation { duration: 100 } }
     Behavior on rotation { PropertyAnimation { duration: 100 } }
-
-    MultiPointTouchArea {
-        anchors.fill: parent
-        touchPoints: [ TouchPoint { id: point1 } ]
-
-        onReleased: {
-            var point = plane.mapToItem(null, point1.x, point1.y)
-            plane.x = point.x - plane.width / 2
-            plane.y = point.y - plane.height / 2
-        }
-    }
 }

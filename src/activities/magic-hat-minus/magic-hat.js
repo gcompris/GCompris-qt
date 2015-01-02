@@ -139,6 +139,8 @@ function verifyAnswer(barIndex, state) {
        numberOfUserStars[1] === nbStarsToCount[1] &&
        numberOfUserStars[2] === nbStarsToCount[2]) {
         items.bonus.good("flower")
+    } else {
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav")
     }
 }
 

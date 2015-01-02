@@ -29,8 +29,8 @@ ActivityInfo {
     description: qsTr("Move the helicopter to catch the clouds having even or odd numbers")
 //  intro: "Move the helicopter to catch the clouds having even or odd numbers"
     goal: qsTr("Numeration training")
-    prerequisite: qsTr("Number")
-    manual: qsTr("Catch the odd or even numbers, using the up, down, right and left arrows on the keyboard to move the helicopter.")
+    prerequisite: ""
+    manual: qsTr("Catch the odd or even number clouds. With a keyboard use the arrow keys to move the helicopter. With a pointing device you just click or tap on the target location. To know which number you have to catch you can either remember it or check the bottom right corner.")
     credit: ""
     section: "math numeration"
 }

@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 1
   icon: "template/template.svg"
   author: "Your Name <yy@zz.org>"
-  demo: false
+  demo: true
   title: "Template activity"
   description: ""
   goal: ""

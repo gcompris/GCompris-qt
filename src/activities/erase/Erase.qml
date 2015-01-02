@@ -21,8 +21,6 @@
  */
 
 import QtQuick 2.1
-import QtQuick.Controls 1.0
-import QtQuick.Controls.Styles 1.0
 import GCompris 1.0
 
 import "../../core"
@@ -55,6 +53,8 @@ ActivityBase {
             property alias blocks: blocks
             property alias bar: bar
             property alias bonus: bonus
+            property int nbSubLevel: 6
+            property int currentSubLevel: 0
         }
         onStart: Activity.start(main, items, type)
 
@@ -121,6 +121,19 @@ ActivityBase {
         Bonus {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextSubLevel)
+        }
+
+        Score {
+            anchors {
+                bottom: parent.bottom
+                bottomMargin: 10 * ApplicationInfo.ratio
+                right: parent.right
+                rightMargin: 10 * ApplicationInfo.ratio
+                top: undefined
+                left: undefined
+            }
+            numberOfSubLevels: items.nbSubLevel
+            currentSubLevel: items.currentSubLevel + 1
         }
     }
 }

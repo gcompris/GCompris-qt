@@ -230,7 +230,7 @@ endmacro()
 #     [+] support different build flags for Release and Debug configurations
 #     [~] by default compiler flags the same as used by ndk-build (but only
 #         where reasonable)
-#     [~] ANDROID_NDK_TOOLCHAIN_ROOT is splitted to ANDROID_STANDALONE_TOOLCHAIN
+#     [~] ANDROID_NDK_TOOLCHAIN_ROOT is split to ANDROID_STANDALONE_TOOLCHAIN
 #         and ANDROID_TOOLCHAIN_ROOT
 #     [~] ARM_TARGET is renamed to ANDROID_ABI
 #     [~] ARMEABI_NDK_NAME is renamed to ANDROID_NDK_ABI_NAME
@@ -463,7 +463,7 @@ if( NOT ANDROID_NDK )
  __INIT_VARIABLE( ANDROID_STANDALONE_TOOLCHAIN PATH ENV_ANDROID_STANDALONE_TOOLCHAIN OBSOLETE_ANDROID_NDK_TOOLCHAIN_ROOT OBSOLETE_ENV_ANDROID_NDK_TOOLCHAIN_ROOT )
 
  if( NOT ANDROID_STANDALONE_TOOLCHAIN )
-  #try to find Android NDK in one of the the default locations
+  #try to find Android NDK in one of the default locations
   set( __ndkSearchPaths )
   foreach( __ndkSearchPath ${ANDROID_NDK_SEARCH_PATHS} )
    foreach( suffix ${ANDROID_SUPPORTED_NDK_VERSIONS} )
@@ -477,7 +477,7 @@ if( NOT ANDROID_NDK )
    message( STATUS "Using default path for Android NDK: ${ANDROID_NDK}" )
    message( STATUS "  If you prefer to use a different location, please define a cmake or environment variable: ANDROID_NDK" )
   else()
-   #try to find Android standalone toolchain in one of the the default locations
+   #try to find Android standalone toolchain in one of the default locations
    __INIT_VARIABLE( ANDROID_STANDALONE_TOOLCHAIN PATH ANDROID_STANDALONE_TOOLCHAIN_SEARCH_PATH )
 
    if( ANDROID_STANDALONE_TOOLCHAIN )

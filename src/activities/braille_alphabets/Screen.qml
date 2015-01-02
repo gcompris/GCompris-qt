@@ -24,7 +24,6 @@ import QtQuick.Layouts 1.1
 import GCompris 1.0
 import "../../core"
 import "braille_alphabets.js" as Activity
-import "questions.js" as Dataset
 
 ActivityBase {
     id: activity
@@ -45,6 +44,38 @@ ActivityBase {
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
+        }
+
+        Keys.onPressed: {
+            if(first_screen.visible) {
+                // If return, we hide the screen
+                first_screen.visible = false
+                return;
+            }
+            var keyValue;
+            switch(event.key)
+            {
+            case Qt.Key_1:
+                keyValue = 1;
+                break;
+            case Qt.Key_2:
+                keyValue = 2;
+                break;
+            case Qt.Key_3:
+                keyValue = 3;
+                break;
+            case Qt.Key_4:
+                keyValue = 4;
+                break;
+            case Qt.Key_5:
+                keyValue = 5;
+                break;
+            case Qt.Key_6:
+                keyValue = 6;
+                break;
+            }
+            if(keyValue)
+                playableChar.switchState(keyValue)
         }
 
         // Add here the QML items you need to access in javascript
@@ -112,12 +143,13 @@ ActivityBase {
                             }
                         }
 
-                        Text {
+                        GCText {
                             text: letter
                             font.weight: Font.DemiBold
                             style: Text.Outline
                             styleColor: "white"
                             color: "black"
+                            font.pointSize: NaN  // need to clear font.pointSize explicitly
                             font.pixelSize: Math.max(parent.width * 0.5, 24)
                             anchors {
                                 top: rect1.bottom
@@ -159,10 +191,12 @@ ActivityBase {
                         Activity.nextQuestion()
                     }
                 }
+                audioEffects: activity.audioEffects
             }
 
-            Text {
+            GCText {
                 id: playableCharDisplay
+                font.pointSize: NaN  // need to clear font.pointSize explicitly
                 font.pixelSize: Math.max(playableChar.width * 0.4, 24)
                 font.weight: Font.DemiBold
                 style: Text.Outline
@@ -194,10 +228,10 @@ ActivityBase {
             border.width: 2
             radius: 5
 
-            Text {
+            GCText {
                 id: questionItem
                 anchors.centerIn: parent
-                font.pointSize: 14
+                fontSize: regularSize
                 horizontalAlignment: Text.AlignHCenter
                 font.weight: Font.DemiBold
                 style: Text.Outline

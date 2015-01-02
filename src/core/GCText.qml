@@ -26,5 +26,26 @@ import GCompris 1.0
 import "."
 
 Text {
+    // Some constants for often used fontSizes
+    // Note: these should be Enums actually, which by now can't be defined in
+    // QML (cf. QTBUG-14861)
+    readonly property int tinySize:     10.0
+    readonly property int smallSize:    12.0
+    readonly property int regularSize:  14.0
+    readonly property int mediumSize:   16.0
+    readonly property int largeSize:    24.0
+    readonly property int hugeSize:     32.0
+
+    // font-size are best specified using the fontSize property, which
+    // wraps font.pointSize to take the DPI of the display into account.
+    // If font.pointSize is used directly text might appear to small on some
+    // devices.
+    //
+    // If you really need to specify font.pixelSize instead of pointSize,
+    // you need to clear font.pointSize explicitly with NaN:
+    // font.pointSize: NaN
+    property int fontSize: 14
+
+    font.pointSize: fontSize * ApplicationInfo.fontRatio
     font.family: GCSingletonFontLoader.fontLoader.name
 }

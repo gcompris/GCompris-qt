@@ -207,7 +207,7 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svgz";
             sourceSize.width: 66 * barZoom
-            onClicked: Core.quit();
+            onClicked: Core.quit(bar);
         }
     }
     Component {
@@ -239,7 +239,7 @@ Item {
         GCText {
             id: levelTextId
             text: "" + level
-            font.pointSize: 32
+            fontSize: hugeSize
             font.weight: Font.DemiBold
             style: Text.Outline
             styleColor: "black"

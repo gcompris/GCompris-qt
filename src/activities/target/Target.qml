@@ -108,6 +108,7 @@ ActivityBase {
             anchors.fill: parent
             enabled: items.currentArrow != items.nbArrow && !items.arrowFlying
             onClicked: {
+                activity.audioEffects.play(Activity.url + 'arrow.wav')
                 items.arrowFlying = true
                 if(items.currentArrow != items.nbArrow) {
                     arrowRepeater.itemAt(items.currentArrow).opacity = 1
@@ -121,7 +122,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
             text: targetItem.scoreText
-            font.pointSize: 22
+            fontSize: 22
             font.bold: true
             style: Text.Outline
             styleColor: "black"
@@ -168,7 +169,7 @@ ActivityBase {
             id: userEntry
             anchors.top: scoreItem.bottom
             width: parent.width
-            font.pointSize: 22
+            fontSize: 22
             font.bold: true
             style: Text.Outline
             styleColor: "black"

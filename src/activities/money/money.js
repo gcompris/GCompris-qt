@@ -28,42 +28,42 @@ var url = "qrc:/gcompris/src/activities/money/resource/"
 // We create 3 prices categories to make the game more realistic.
 // List of images to use in the game (cheap objects)
 var cheapObjects = [
-            "apple.svgz",
-            "orange.svgz",
-            "banane.svgz",
-            "pamplemousse.svgz",
-            "carot.svgz",
-            "cerise.svgz",
-            "cake.svgz"
+            "apple.svg",
+            "orange.svg",
+            "banane.svg",
+            "pamplemousse.svg",
+            "carot.svg",
+            "cerise.svg",
+            "cake.svg"
         ]
 
 var normalObjects = [
-            "umbrella.svgz",
-            "pencil.svgz",
-            "bottle.svgz",
-            "light.svgz",
-            "eggpot.svgz"
+            "umbrella.svg",
+            "pencil.svg",
+            "bottle.svg",
+            "light.svg",
+            "eggpot.svg"
         ]
 
 var expensiveObjects = [
-            "lamp.svgz",
-            "football.svgz",
-            "bicycle.svgz"
+            "lamp.svg",
+            "football.svg",
+            "bicycle.svg"
         ]
 
 var moneyItems = {
-    MONEY_EURO_COIN_1C:   { img: "c1c.svgz",  val: 0.01 },
-    MONEY_EURO_COIN_2C:   { img: "c2c.svgz",  val: 0.02 },
-    MONEY_EURO_COIN_5C:   { img: "c5c.svgz",  val: 0.05 },
-    MONEY_EURO_COIN_10C:  { img: "c10c.svgz", val: 0.1  },
-    MONEY_EURO_COIN_20C:  { img: "c20c.svgz", val: 0.20 },
-    MONEY_EURO_COIN_50C:  { img: "c50c.svgz", val: 0.5  },
-    MONEY_EURO_COIN_1E:   { img: "c1e.svgz",  val: 1.0  },
-    MONEY_EURO_COIN_2E:   { img: "c2e.svgz",  val: 2.0  },
-    MONEY_EURO_PAPER_5E:  { img: "n5e.svgz",  val: 5.0  },
-    MONEY_EURO_PAPER_10E: { img: "n10e.svgz", val: 10.0 },
-    MONEY_EURO_PAPER_20E: { img: "n20e.svgz", val: 20.0 },
-    MONEY_EURO_PAPER_50E: { img: "n50e.svgz", val: 50.0 },
+    MONEY_EURO_COIN_1C:   { img: "c1c.svg",  val: 0.01 },
+    MONEY_EURO_COIN_2C:   { img: "c2c.svg",  val: 0.02 },
+    MONEY_EURO_COIN_5C:   { img: "c5c.svg",  val: 0.05 },
+    MONEY_EURO_COIN_10C:  { img: "c10c.svg", val: 0.1  },
+    MONEY_EURO_COIN_20C:  { img: "c20c.svg", val: 0.20 },
+    MONEY_EURO_COIN_50C:  { img: "c50c.svg", val: 0.5  },
+    MONEY_EURO_COIN_1E:   { img: "c1e.svg",  val: 1.0  },
+    MONEY_EURO_COIN_2E:   { img: "c2e.svg",  val: 2.0  },
+    MONEY_EURO_PAPER_5E:  { img: "n5e.svg",  val: 5.0  },
+    MONEY_EURO_PAPER_10E: { img: "n10e.svg", val: 10.0 },
+    MONEY_EURO_PAPER_20E: { img: "n20e.svg", val: 20.0 },
+    MONEY_EURO_PAPER_50E: { img: "n50e.svg", val: 50.0 },
 }
 
 var fullDataset = {
@@ -735,6 +735,7 @@ function checkAnswer() {
 }
 
 function pay(index) {
+    items.audioEffects.play(url + "money1.wav")
     // Add it to the anwser
     items.answerModel.append(items.pocketModel.get(index))
 
@@ -745,6 +746,7 @@ function pay(index) {
 }
 
 function unpay(index) {
+    items.audioEffects.play(url + "money2.wav")
     // Add it to the pocket
     items.pocketModel.append(items.answerModel.get(index))
 

@@ -81,7 +81,10 @@ Window {
     }
 
     Component.onCompleted: {
-        console.log("enter main.qml (run #" + ApplicationSettings.exeCount + ")")
+        console.log("enter main.qml (run #" + ApplicationSettings.exeCount
+                + ", ratio=" + ApplicationInfo.ratio
+                + ", fontRatio=" + ApplicationInfo.fontRatio
+                + ", dpi=" + Math.round(Screen.pixelDensity*25.4) + ")");
         if (ApplicationSettings.exeCount == 1) {
             // first run
             var buttonHandler = new Array();
@@ -103,7 +106,14 @@ Window {
     StackView {
         id: pageView
         anchors.fill: parent
-        initialItem: "qrc:/gcompris/src/activities/" + ActivityInfoTree.rootMenu.name
+        initialItem: {
+            "item": "qrc:/gcompris/src/activities/" + ActivityInfoTree.rootMenu.name,
+            "properties": {
+                'audioVoices': audioVoices,
+                'audioEffects': audioEffects
+            }
+        }
+
         delegate: StackViewDelegate {
             id: root
             function getTransition(properties)
@@ -113,8 +123,6 @@ Window {
                 if(!properties.exitItem.isDialog) {
                     if(!properties.enterItem.isDialog) {
                         playIntroVoice(properties.enterItem.activityInfo.name)
-                        properties.enterItem.audioVoices = audioVoices
-                        properties.enterItem.audioEffects = audioEffects
                     }
                     properties.enterItem.start()
                 }

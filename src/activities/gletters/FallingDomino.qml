@@ -1,4 +1,4 @@
-/* GCompris - Word.qml
+/* GCompris - FallingDomino.qml
  *
  * Copyright (C) 2014 Holger Kaelberer
  *
@@ -114,6 +114,7 @@ Item {
 
         onStopped: {
             Activity.audioCrashPlay();
+            Activity.appendRandomWord(word.text)
             Activity.deleteWord(word);
         }
     }

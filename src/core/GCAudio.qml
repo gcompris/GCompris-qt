@@ -20,6 +20,7 @@
  */
 import QtQuick 2.0
 import QtMultimedia 5.0
+import GCompris 1.0
 
 Item {
     id: gcaudio
@@ -35,7 +36,11 @@ Item {
     signal done
 
     // @param file is optional
+    // @return true or false if file does not exist or audio is muted
     function play(file) {
+
+        if(!fileId.exists(file) || muted)
+            return false
 
         if(file)
             source = file
@@ -43,6 +48,7 @@ Item {
         if(!muted) {
             audio.play()
         }
+        return true
     }
 
     function stop() {
@@ -50,9 +56,10 @@ Item {
             audio.stop()
     }
 
+    // @return true or false if file does not exist or audio is muted
     function append(file) {
-        if(muted)
-            return
+        if(!fileId.exists(file) || muted)
+            return false
 
         if(audio.playbackState !== Audio.PlayingState
            || audio.status === Audio.EndOfMedia
@@ -65,6 +72,7 @@ Item {
         } else {
             files.push(file)
         }
+        return true
     }
 
     // Add the given duration in ms before the play of the next file
@@ -114,5 +122,9 @@ Item {
             interval = 0
             _playNextFile()
         }
+    }
+
+    File {
+        id: fileId
     }
 }

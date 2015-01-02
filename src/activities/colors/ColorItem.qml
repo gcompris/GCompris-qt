@@ -30,20 +30,23 @@ Image {
     property Item bar
     property string audioSrc
     property string question
+    property bool playAudioOnError: false
+
+    function select() {
+        if(question === Activity.getCurrentTextQuestion()) {
+            particles.emitter.burst(40)
+            Activity.nextQuestion()
+        } else {
+            if(audioSrc && item.playAudioOnError) {
+                item.audioVoices.play(audioSrc)
+            }
+            crossAnim.start()
+        }
+    }
 
     MouseArea {
         anchors.fill: parent
-        onClicked: {
-            if(question === Activity.getCurrentTextQuestion()) {
-                particles.emitter.burst(40)
-                Activity.nextQuestion()
-            } else {
-                if(audioSrc) {
-                    item.audioVoices.play(audioSrc)
-                }
-                crossAnim.start()
-            }
-        }
+        onClicked: select()
     }
 
     SequentialAnimation {

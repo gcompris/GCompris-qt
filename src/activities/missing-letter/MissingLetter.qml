@@ -156,7 +156,7 @@ ActivityBase
                 }
                 style: Text.Outline; styleColor: "black"
                 color: "white"
-                font.pointSize: 24
+                fontSize: largeSize
 
                 states: [
                     State {
@@ -204,7 +204,7 @@ ActivityBase
             GCText {
                 id: currentQuestionNumberText
                 anchors.centerIn: parent
-                font.pointSize: 24
+                fontSize: largeSize
                 style: Text.Outline; styleColor: "white"
                 color: "black"
             }

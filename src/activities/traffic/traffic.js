@@ -196,8 +196,6 @@ var haveWon = false;
 var mode = null;
 
 function start(items_, mode_) {
-    console.log("Traffic activity: start");
-    
     items = items_;
     mode = mode_;
     currentLevel = 0;
@@ -207,7 +205,6 @@ function start(items_, mode_) {
 
 function stop() {
     cleanupActiveCars();
-    console.log("Traffic activity: stop");
 }
 
 function findYBounds(car)
@@ -353,7 +350,9 @@ function drawCar(car)
         "goal": goal,
         "color": color,
         "source": source,
-        "isHorizontal": isHorizontal
+        "isHorizontal": isHorizontal,
+        "audioEffects": items.audioEffects
+
     });
     if (carObject == null)
         console.error("traffic: Error creating Car object!");

@@ -55,7 +55,7 @@ Item {
             left: parent.left
         }
         color: "black"
-        font.pointSize: 18
+        fontSize: 18
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         wrapMode: TextEdit.WordWrap

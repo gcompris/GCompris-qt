@@ -46,6 +46,8 @@
 #include <QtCore/QLocale>
 #include <QtQuick/QQuickWindow>
 #include "ApplicationInfo.h"
+
+#include <qmath.h>
 #include <QDebug>
 
 #include <QFontDatabase>
@@ -78,6 +80,15 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 
     QRect rect = qApp->primaryScreen()->geometry();
     m_ratio = m_isMobile ? qMin(qMax(rect.width(), rect.height())/800. , qMin(rect.width(), rect.height())/520.) : 1;
+    // calculate a factor for font-scaling, cf.
+    // http://doc.qt.io/qt-5/scalability.html#calculating-scaling-ratio
+    qreal refDpi = 216.;
+    qreal refHeight = 1776.;
+    qreal refWidth = 1080.;
+    qreal height = qMax(rect.width(), rect.height());
+    qreal width = qMin(rect.width(), rect.height());
+    qreal dpi = qApp->primaryScreen()->logicalDotsPerInch();
+    m_fontRatio = m_isMobile ? qMax(1.0, qMin(height*refDpi/(dpi*refHeight), width*refDpi/(dpi*refWidth))) : 1;
     m_sliderHandleWidth = getSizeWithRatio(70);
     m_sliderHandleHeight = getSizeWithRatio(87);
     m_sliderGapWidth = getSizeWithRatio(100);
@@ -120,7 +131,7 @@ QString ApplicationInfo::getFilePath(const QString &file)
 #if defined(Q_OS_ANDROID)
     return QString("assets:/%1").arg(file);
 #else
-    return QString("%1/rcc/%2").arg(QCoreApplication::applicationDirPath(), file);
+    return QString("%1/%2/rcc/%3").arg(QCoreApplication::applicationDirPath(), GCOMPRIS_DATA_FOLDER, file);
 #endif
 }
 
@@ -184,6 +195,11 @@ void ApplicationInfo::notifyFullscreenChanged()
         m_window->showFullScreen();
     else
         m_window->showNormal();
+}
+
+// return the short locale name for the given locale
+QString ApplicationInfo::getLocaleShort(const QString &locale) {
+    return localeShort(locale);
 }
 
 QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,

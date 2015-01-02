@@ -37,10 +37,17 @@ Rectangle {
     }
 
     property string imgPath
-    // The backspace code comming from the vitual keyboard
+    // The backspace code coming from the virtual keyboard
     property string backspaceCode
 
+    // True when the value is entered correctly
+    property bool valid: false
+
+    property GCAudio audioEffects
+
     Component.onCompleted: Activity.registerAnswerItem(answerBackground)
+
+    onValidChanged: valid ? audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav") : null
 
     // A top gradient
     Rectangle {
@@ -48,17 +55,30 @@ Rectangle {
         anchors.margins: activeFocus ?  3 : 1
         radius: 10
         gradient: Gradient {
-            GradientStop { position: 0.0; color: "#CCFFFFFF" }
-            GradientStop { position: 0.5; color: "#80FFFFFF" }
-            GradientStop { position: 1.0; color: "#00000000" }
+            GradientStop { position: 0.0; color: valid ? "#CC00FF00" : "#CCFFFFFF" }
+            GradientStop { position: 0.5; color: valid ? "#8000FF00" : "#80FFFFFF" }
+            GradientStop { position: 1.0; color: valid ? "#8000F000" : "#00000000" }
         }
+    }
+
+    // The OK feedback
+    Image {
+        source: "qrc:/gcompris/src/core/resource/apply.svgz";
+        fillMode: Image.PreserveAspectFit
+        anchors {
+            right: parent.left
+            verticalCenter: parent.verticalCenter
+        }
+        sourceSize.height: parent.height * 0.8
+        anchors.margins: 10
+        opacity: valid ? 1.0 : 0.0
+        Behavior on opacity { NumberAnimation { duration: 200 } }
     }
 
     MouseArea {
         id: mouseArea
         anchors.fill: parent
         onClicked: Activity.registerAnswerItem(answerBackground)
-
     }
 
     Image {
@@ -85,10 +105,10 @@ Rectangle {
         userEntry.text = userEntry.text.slice(0, -1)
         if(userEntry.text.length === 0) {
             userEntry.text = "?"
-            Activity.setUserAnswer(imgPath, -1)
+            valid = Activity.setUserAnswer(imgPath, -1)
             return
         } else {
-            Activity.setUserAnswer(imgPath, parseInt(userEntry.text))
+            valid = Activity.setUserAnswer(imgPath, parseInt(userEntry.text))
             return
         }
     }
@@ -108,11 +128,12 @@ Rectangle {
         }
 
         if(userEntry.text.length >= 2) {
+            valid = false
             return
         }
 
         userEntry.text += text
-        Activity.setUserAnswer(imgPath, parseInt(userEntry.text))
+        valid = Activity.setUserAnswer(imgPath, parseInt(userEntry.text))
     }
 
     GCText {
@@ -124,8 +145,9 @@ Rectangle {
         }
         text: "?"
         color: "black"
-        font.pointSize: 28
+        fontSize: 28
         style: Text.Outline
         styleColor: "white"
     }
+
 }

@@ -35,15 +35,18 @@ ActivityBase {
     /* mode of the activity, either "lowercase" (click_on_letter)
      * or "uppercase" (click_on_letter_up): */
     property string mode: "lowercase"
-    
+
+
     pageComponent: Image {
         id: background
         source: Activity.url + "background.svgz"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
+        focus: true
+
         signal start
         signal stop
-        focus: true
+        signal voiceError
         
         Component.onCompleted: {
             activity.start.connect(start)
@@ -57,11 +60,20 @@ ActivityBase {
             property GCAudio audioVoices: activity.audioVoices
             property alias parser: parser
             property alias questionItem: questionItem
+            property alias repeatItem: repeatItem
             property alias score: score
             property alias bonus: bonus
         }
         
-        onStart: Activity.start(items, mode);
+        onVoiceError: {
+            questionItem.visible = true
+            repeatItem.visible = false
+        }
+
+        onStart: {
+            activity.audioVoices.error.connect(voiceError)
+            Activity.start(items, mode);
+        }
         
         onStop: Activity.stop()
 
@@ -72,15 +84,13 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | repeat | level }
+            content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelpLeftRight)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: home()
-            onRepeatClicked: if (ApplicationSettings.isAudioVoicesEnabled)
-                                Activity.playLetter(Activity.currentLetter);
         }
 
         Score {
@@ -99,12 +109,24 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextSubLevel)
         }
         
+        BarButton {
+            id: repeatItem
+            source: "qrc:/gcompris/src/core/resource/bar_repeat.svgz";
+            sourceSize.width: 80 * ApplicationInfo.ratio
+            anchors {
+                top: parent.top
+                right: parent.right
+                margins: 10
+            }
+            onClicked: Activity.playLetter(Activity.currentLetter);
+        }
+
         Image {
             id: railway
             source: Activity.url + "railway.svgz"
             fillMode: Image.PreserveAspectCrop
-            anchors.bottom: parent.bottom
-            anchors.left: bar.right
+            anchors.bottom: bar.top
+            anchors.left: parent.left
             anchors.right: parent.right
             height: 15 * ApplicationInfo.ratio
             sourceSize.width: parent.width
@@ -142,7 +164,7 @@ ActivityBase {
                 opacity: 1.0
                 z:11            
                 text: ""
-                font.pointSize: 44
+                fontSize: 44
                 font.bold: true
                 style: Text.Outline
                 styleColor: "black"

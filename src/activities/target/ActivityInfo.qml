@@ -11,7 +11,7 @@ ActivityInfo {
 //  intro: "Click on the target to launch darts, then count your score!"
   goal: qsTr("Throw darts at a target and count your score.")
   prerequisite: qsTr("Can move the mouse, can read numbers and count up to 15 for the first level")
-  manual: qsTr("Check the wind speed and direction, and then click on the target to launch a dart. When you all your darts are thrown, a window appears asking you to count your score. Enter the score with the keyboard then press the Enter key or the OK button.")
+  manual: qsTr("Check the speed and direction of the target, and then click on it to launch a dart. When all your darts are thrown, you are asked to count your score. Enter the score with the keyboard.")
   credit: ""
   section: "math addition"
 }

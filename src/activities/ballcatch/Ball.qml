@@ -41,24 +41,26 @@ Image {
         running: false
 
         NumberAnimation { target: ball; property: "x";
-                          to: finishX; duration: 1000 }
+                          to: finishX; duration: 1000
+                          easing.type: Easing.InOutQuad }
         NumberAnimation { target: ball; property: "y";
-                          to: finishY; duration: 1000 }
+                          to: finishY; duration: 1000
+                          easing.type: Easing.InOutQuad }
         NumberAnimation { target: ball; property: "scale";
-                          to: finishScale; duration: 1000 }
+                          to: finishScale; duration: 1000
+                          easing.type: Easing.InOutQuad }
         NumberAnimation { target: ball; property: "rotation";
-                          to: 360; duration: 1000 }
+                          to: 360; duration: 1000
+                          easing.type: Easing.InOutQuad }
 
         onStopped: {
             // We are done with the ballon move
             if(Activity.gameWon) {
                 // This is a win
-                background.playSound("tuxok")
                 bonus.good("tux")
             }
             else {
                 // This is a loose
-                background.playSound("youcannot")
                 bonus.bad("tux")
             }
         }
@@ -68,7 +70,7 @@ Image {
         if(Activity.gameWon) {
             finishX = x
         }
-        else if(Activity.leftPressed) {
+        else if(Activity.items.leftPressed) {
             finishX = tux.x + tux.width * 2
         }
         else {

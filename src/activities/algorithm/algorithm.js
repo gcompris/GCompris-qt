@@ -38,7 +38,6 @@ variables :-
 
 sample - this array has an array of arrays for each level
 choiceCount (int) - initialised with the value 5 and the game is won when choiceCount is 8
-times (int) - initialised with 0 level increases when times is 3
 
 Example 1:
 sample: [0,1,0,1,0,1,0,1]
@@ -75,14 +74,12 @@ var images = ["apple",
 var url = "qrc:/gcompris/src/activities/algorithm/resource/"
 
 function start(items_) {
-    console.log("algorithm activity: start")
     items = items_
     currentLevel = 0
     initLevel()
 }
 
 function stop() {
-    console.log("algorithm activity: stop")
 }
 
 function initLevel() {
@@ -155,8 +152,6 @@ function setAnswer(indices){
 
 
 var choiceCount = 5 //game is won when choiceCount = 8
-var times = 0 // level increases when times = 3
-
 
 function clickHandler(id){
     var tempIndex = []
@@ -175,8 +170,9 @@ function clickHandler(id){
 
         if(choiceCount == 8){
             choiceCount = 5
-            times++
-            if(times == 3) { // increment level after 3 successful games
+            items.currentSubLevel++
+            if(items.currentSubLevel == items.nbSubLevel) { // increment level after 3 successful games
+                items.currentSubLevel-- // Don't display 4/3
                 items.bonus.good("tux")
             } else {
                 items.bonus.good("flower")
@@ -191,10 +187,10 @@ function clickHandler(id){
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
-    times = 0;
+    items.currentSubLevel = 0;
     initLevel();
 }
 

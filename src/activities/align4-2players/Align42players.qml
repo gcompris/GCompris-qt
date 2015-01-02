@@ -22,7 +22,7 @@
 import QtQuick 2.1
 
 import "../../core"
-import "align4-2players.js" as Activity
+import "align4.js" as Activity
 
 import GCompris 1.0
 
@@ -72,6 +72,11 @@ ActivityBase {
 
         onStart: { Activity.start(items, twoPlayer) }
         onStop: { Activity.stop() }
+
+        Keys.onRightPressed: Activity.moveCurrentIndexRight();
+        Keys.onLeftPressed: Activity.moveCurrentIndexLeft();
+        Keys.onDownPressed: Activity.handleDrop(Activity.currentLocation);
+        Keys.onSpacePressed: Activity.handleDrop(Activity.currentLocation);
 
         ListModel {
             id: pieces
@@ -126,7 +131,8 @@ ActivityBase {
             id: drop
             target: fallingPiece
             properties: "y"
-            duration: 1500
+            duration: 720
+            onStarted: activity.audioEffects.play(Activity.url + 'slide.wav')
             onStopped: {
                 dynamic.display()
                 Activity.continueGame()
@@ -139,16 +145,22 @@ ActivityBase {
             enabled: !drop.running && !items.gameDone
             hoverEnabled: !drop.running && !items.gameDone
 
+            property bool holdMode: true
             function display() {
                 var coord = grid.mapFromItem(background, mouseX, mouseY)
                 Activity.setPieceLocation(coord.x, coord.y)
             }
 
             onPositionChanged: items.dynamic.enabled ? display() : ''
+            onPressed: holdMode = false
+            onPressAndHold: holdMode = true
             onClicked: {
                 display()
-                var coord = grid.mapFromItem(background, mouseX, mouseY)
-                Activity.handleDrop(coord.x, coord.y)
+                if(!holdMode) {
+                    var coord = grid.mapFromItem(background, mouseX, mouseY)
+                    var column = Activity.whichColumn(coord.x, coord.y)
+                    Activity.handleDrop(column)
+                }
             }
         }
 
@@ -173,7 +185,7 @@ ActivityBase {
         Image {
             id: player1
             source: Activity.url + "score_1.svg"
-            sourceSize.height: bar.height * 1.2
+            sourceSize.height: bar.height * 1.1
             anchors {
                 bottom: bar.bottom
                 bottomMargin: 10
@@ -186,14 +198,14 @@ ActivityBase {
                 anchors.verticalCenter: parent.verticalCenter
                 x: parent.width / 2 + 5
                 color: "white"
-                font.pointSize: 24
+                fontSize: largeSize
             }
         }
 
         Image {
             id: player2
             source: Activity.url + "score_2.svg"
-            sourceSize.height: bar.height * 1.2
+            sourceSize.height: bar.height * 1.1
             anchors {
                 bottom: bar.bottom
                 bottomMargin: 10
@@ -206,7 +218,7 @@ ActivityBase {
                 anchors.verticalCenter: parent.verticalCenter
                 color: "white"
                 x: parent.width / 2 + 5
-                font.pointSize: 24
+                fontSize: largeSize
             }
         }
 

@@ -37,14 +37,21 @@ ActivityBase {
     
     property string mode: ""
 
+    onStart: {
+        focus = true;
+    }
+
     pageComponent: Image {
         id: background
-        signal start
-        signal stop
         focus: true
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: parent.width
         source: backgroundImg
+
+        property bool keyboardMode: false
+
+        signal start
+        signal stop
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -57,9 +64,28 @@ ActivityBase {
             property alias bonus: bonus
             property alias containerModel: containerModel
             property alias questionItem: questionItem
+            // On startup we want to queue the first sound but not after
+            property bool firstQuestion: true
+            property bool audioOk: false
         }
-        onStart: { Activity.start(items, dataset, mode) }
-        onStop: { Activity.stop() }
+        onStart: Activity.start(items, dataset, mode)
+        onStop: Activity.stop()
+
+        Keys.onPressed: {
+            if(event.key === Qt.Key_Space) {
+                container.currentItem.select()
+            }
+        }
+        Keys.onReleased: {
+            keyboardMode = true
+            event.accepted = false
+        }
+        Keys.onEnterPressed: container.currentItem.select();
+        Keys.onReturnPressed: container.currentItem.select();
+        Keys.onRightPressed: container.moveCurrentIndexRight();
+        Keys.onLeftPressed: container.moveCurrentIndexLeft();
+        Keys.onDownPressed: container.moveCurrentIndexDown();
+        Keys.onUpPressed: container.moveCurrentIndexUp();
 
         ListModel {
               id: containerModel
@@ -75,6 +101,7 @@ ActivityBase {
             interactive: false
             cellWidth: itemHeight + 10
             cellHeight: itemWidth + 10
+            keyNavigationWraps: true
             delegate: ColorItem {
                 audioVoices: activity.audioVoices
                 source: model.image
@@ -83,6 +110,27 @@ ActivityBase {
                 sourceSize.height: itemHeight
                 sourceSize.width: itemWidth
             }
+            add: Transition {
+                PathAnimation {
+                    path: Path {
+                        PathCurve { x: background.width / 3}
+                        PathCurve { y: background.height / 3}
+                        PathCurve {}
+                    }
+                    easing.type: Easing.InOutQuad
+                    duration: 2000
+                }
+            }
+            highlight: Rectangle {
+                width: container.cellWidth - container.spacing
+                height: container.cellHeight - container.spacing
+                color:  "#AAFFFFFF"
+                border.width: 3
+                border.color: "black"
+                visible: background.keyboardMode
+                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
+                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
+            }
         }
 
         GCText {
@@ -90,7 +138,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
             anchors.topMargin: 10
-            font.pointSize: 24
+            fontSize: largeSize
             font.weight: Font.DemiBold
             style: Text.Outline
             styleColor: "black"
@@ -99,7 +147,11 @@ ActivityBase {
             function initQuestion() {
                 text = Activity.getCurrentTextQuestion()
                 if(Activity.getCurrentAudioQuestion()) {
-                    activity.audioVoices.append(Activity.getCurrentAudioQuestion())
+                    if(items.firstQuestion)
+                        items.audioOk = activity.audioVoices.append(Activity.getCurrentAudioQuestion())
+                    else
+                        items.audioOk = activity.audioVoices.play(Activity.getCurrentAudioQuestion())
+                    items.firstQuestion = false
                 }
                 opacity = 1.0
             }
@@ -127,15 +179,28 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | repeat }
+            content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onRepeatClicked: if (ApplicationSettings.isAudioVoicesEnabled)
-                                 questionItem.initQuestion()
+        }
+
+        BarButton {
+            id: repeatItem
+            source: "qrc:/gcompris/src/core/resource/bar_repeat.svgz";
+            sourceSize.width: 80 * ApplicationInfo.ratio
+            z: bar.z + 1
+            visible: items.audioOk
+            anchors {
+                bottom: parent.bottom
+                right: parent.right
+                margins: 10 * ApplicationInfo.ratio
+            }
+            onClicked: if (ApplicationSettings.isAudioVoicesEnabled)
+                           questionItem.initQuestion()
         }
 
         Bonus {

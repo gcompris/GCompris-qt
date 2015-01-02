@@ -45,6 +45,8 @@ Rectangle {
 
     property int weight: 0
 
+    property GCAudio audioEffects
+
     function init() {
         weight = 0
         masseModel.clear()
@@ -90,7 +92,12 @@ Rectangle {
 
     DropArea {
         id: dropArea
-        anchors.fill: parent
+        anchors {
+            left: parent.left
+            right: parent.right
+            verticalCenter: parent.verticalCenter
+        }
+        height: parent.height * 2
     }
     
     Flow {
@@ -192,6 +199,8 @@ Rectangle {
                     }
 
                     onReleased: {
+                        if(masseArea.audioEffects)
+                            masseArea.audioEffects.play(Activity.url + 'metal_hit.wav')
                         if(masseAreaLeft.dropArea.containsDrag &&
                            parent.currentMasseArea != masseAreaLeft) {
                             dropOnPlate(masseAreaLeft)
@@ -222,7 +231,7 @@ Rectangle {
                     color: "white"
                     fontSizeMode: Text.Fit
                     minimumPointSize: 10
-                    font.pointSize: 24
+                    fontSize: largeSize
                     font.bold : true
                     style: Text.Outline
                     styleColor: "black"

@@ -172,6 +172,7 @@ ActivityBase {
                         z: lighton === 1 ? 11 : 10
                         sourceSize.height: items.cellSize
                         onClicked: {
+                            activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
                             Activity.switchLight(index)
                         }
                         Behavior on opacity {
@@ -190,6 +191,7 @@ ActivityBase {
                         z: lighton === 1 ? 10 : 11
                         sourceSize.height: items.cellSize
                         onClicked: {
+                            activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
                             Activity.switchLight(index)
                         }
                         Behavior on opacity {
@@ -211,7 +213,7 @@ ActivityBase {
         Bar {
             id: bar
             content: BarEnumContent {
-                value: help | home | level
+                value: help | home | level | reload
             }
             onHelpClicked: {
                 displayDialog(dialogHelp)
@@ -219,6 +221,7 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onReloadClicked: Activity.initLevel()
         }
 
         Bonus {

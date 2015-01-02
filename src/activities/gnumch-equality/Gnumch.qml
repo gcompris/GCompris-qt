@@ -170,8 +170,62 @@ ActivityBase {
                         return false
                     }
                 }
-                bonus.good("tux")
+                bonus.good("gnu")
                 return true
+            }
+
+            MultiPointTouchArea {
+                anchors.fill: parent
+                touchPoints: [ TouchPoint { id: point1 } ]
+                mouseEnabled: true
+                property real startX
+                property real startY
+                // Workaround to avoid having 2 times the onReleased event
+                property bool started
+
+                onPressed: {
+                    startX = point1.x
+                    startY = point1.y
+                    started = true
+                }
+
+                onReleased: {
+                    if(!started)
+                        return false
+                    var moveX = point1.x - startX
+                    var moveY = point1.y - startY
+                    // Find the direction with the most move
+                    if(Math.abs(moveX) * ApplicationInfo.ratio > 10 &&
+                            Math.abs(moveX) > Math.abs(moveY)) {
+                        if(moveX > 10 * ApplicationInfo.ratio)
+                            muncher.moveTo(0)
+                        else if(moveX < -10 * ApplicationInfo.ratio)
+                            muncher.moveTo(1)
+                        else
+                            background.checkAnswer()
+                    } else if(Math.abs(moveY) * ApplicationInfo.ratio > 10 &&
+                              Math.abs(moveX) < Math.abs(moveY)) {
+                        if(moveY > 10 * ApplicationInfo.ratio)
+                            muncher.moveTo(2)
+                        else if(moveY < -10 * ApplicationInfo.ratio)
+                            muncher.moveTo(3)
+                        else
+                            background.checkAnswer()
+                    } else {
+                        // No move, just a tap or mouse click
+                        if(point1.x > muncher.x + muncher.width)
+                            muncher.moveTo(0)
+                        else if(point1.x < muncher.x)
+                            muncher.moveTo(1)
+                        else if(point1.y < muncher.y)
+                            muncher.moveTo(3)
+                        else if(point1.y > muncher.y + muncher.height)
+                            muncher.moveTo(2)
+                        else
+                            background.checkAnswer()
+                    }
+                    started = false
+                }
             }
 
             Muncher {
@@ -222,6 +276,18 @@ ActivityBase {
                 }
             }
 
+            // Show an hint to show that can move by swiping anywhere
+            Image {
+                anchors {
+                    right: parent.right
+                    bottom: parent.bottom
+                    margins: 12
+                }
+                source: "qrc:/gcompris/src/core/resource/arrows_move.svg"
+                sourceSize.width: 140
+                opacity: topPanel.bar.level == 1 && ApplicationInfo.isMobile ? 0.8 : 0
+            }
+
             Timer {
                 id: spawningMonsters
 
@@ -232,7 +298,8 @@ ActivityBase {
                 onTriggered: {
                     interval = Activity.genTime()
                     timerActivateWarn.start()
-                    var comp = Qt.createComponent("qrc:/gcompris/src/activities/gnumch-equality/" + Activity.genMonster(
+                    var comp = Qt.createComponent("qrc:/gcompris/src/activities/gnumch-equality/" +
+                                                  Activity.genMonster(
                                                       ) + ".qml")
                     if (comp.status === Component.Ready) {
                         var direction = Math.floor(Math.random() * 4)

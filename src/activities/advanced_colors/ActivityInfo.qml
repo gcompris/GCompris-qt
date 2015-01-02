@@ -5,13 +5,13 @@ ActivityInfo {
   difficulty: 6
   icon: "advanced_colors/advanced_colors.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
-  demo: true
+  demo: false
   title: qsTr("Advanced colors")
-  description: qsTr("Click on the correct color")
-//  intro: "Click on the required colour"
+  description: qsTr("Select the butterfly of the correct color")
+  //intro: "find the dancing butterfly having the requested color"
   goal: qsTr("Learn to recognize unusual colors.")
   prerequisite: qsTr("Can read")
-  manual: qsTr("Click on the correct colored butterfly.")
+  manual: qsTr("You will see dancing butterflies of different colors and a question. You have to find the correct butterfly and touch it.")
   credit: ""
-  section: "/discovery/colors_group"
+  section: "discovery colors"
 }

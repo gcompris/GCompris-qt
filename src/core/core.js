@@ -212,9 +212,8 @@ function checkForVoices(parent)
 function quit(parent)
 {
     console.log("core.js: about to quit");
-    
     if (GCompris.DownloadManager.downloadIsRunning()) {
-        var dialog = showDownloadDialog(parent, { 
+        var dialog = showDownloadDialog(parent, {
             text: qsTr("Download in progress.<br/>'Abort' it to quit immediately."),
             autohide: true,
             reportError: false,
@@ -222,6 +221,16 @@ function quit(parent)
             backgroundButtonVisible: false
         });
         dialog.finished.connect(function() {Qt.quit();});
+    } else if (GCompris.ApplicationInfo.isMobile) {
+        // prvent the user from quitting accidentially by clicking back too often:
+        var buttonHandler = new Array();
+        buttonHandler[Dialog.StandardButton.No] = function() {};
+        buttonHandler[Dialog.StandardButton.Yes] = function() { Qt.quit(); };
+        var dialog = showMessageDialog(parent, qsTr("Quit?"),
+                qsTr("Do you really want to quit Gcompris?"),
+                "",
+                Dialog.StandardIcon.Question,
+                buttonHandler);
     } else
         Qt.quit();
 }

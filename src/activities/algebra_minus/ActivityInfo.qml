@@ -6,12 +6,12 @@ ActivityInfo {
   icon: "algebra_minus/algebra_minus.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
-  title: qsTr("Practice the subtraction operation")
-  description: qsTr("Answer some algebra questions")
-//  intro: "Subtract the two numbers and type in your answer before the balloon lands in the water"
-  goal: qsTr("In a limited time, find the difference between two numbers")
-  prerequisite: qsTr("Simple subtraction")
-  manual: qsTr("A subtraction problem with two numbers is displayed. At the right of the equals sign, give the answer, the difference. Use the left and right arrows to modify your answer and press the Enter key to check if you've got it right. If not, just try again.")
+  title: qsTr("Subtraction of numbers")
+  description: qsTr("Practice the subtraction operation")
+//  intro: "Subtract the two numbers and type in your answer before the balloon landing"
+  goal: qsTr("Learn to find the difference between two numbers within a limited period of time")
+  prerequisite: qsTr("Subtraction of small numbers")
+  manual: qsTr("Two numbers are displayed on the screen. Quickly find the difference between them and use your computer's keyboard or the on-screen keypad to type it. You have to be fast and submit the answer before the penguins in their balloon land!")
   credit: ""
-  section: "/math/algebramenu/algebra_group"
+  section: "math subtraction"
 }

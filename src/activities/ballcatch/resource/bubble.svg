@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg3884"
+   sodipodi:docname="bubble.svg"
+   viewBox="0 0 190.04445 79.141804"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   width="100%"
+   height="100%">
+  <defs
+     id="defs3886">
+    <filter
+       id="filter3925"
+       width="1.2182"
+       y="-0.13332"
+       x="-0.1091"
+       height="1.2666"
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always">
+      <feGaussianBlur
+         id="feGaussianBlur3927"
+         stdDeviation="1.4546875"
+         inkscape:collect="always" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="-3"
+     pagecolor="#ffffff"
+     inkscape:window-height="748"
+     inkscape:window-maximized="1"
+     inkscape:zoom="11.2"
+     inkscape:window-x="-2"
+     showgrid="false"
+     borderopacity="1.0"
+     inkscape:current-layer="g3938"
+     inkscape:cx="184.05219"
+     inkscape:cy="55.832191"
+     inkscape:window-width="1366"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px"
+     borderlayer="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     id="layer1"
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     transform="translate(-266.54659,-433.91246)">
+    <g
+       id="g3938"
+       transform="matrix(3.8479,0,0,3.8479,-1177.6,-344.71)">
+      <g
+         id="g3935"
+         transform="matrix(0,0.63461015,2.2513963,0,-71.188205,-37.796182)">
+        <path
+           id="path3897"
+           style="fill:#ffffff;stroke:#000000;stroke-width:0.21741696;stroke-linecap:round;stroke-linejoin:round"
+           d="m 380.62,198.38 c -1.108,0 -2,-0.10055 -2,0.92035 l 0,18.6589 c 0,1.0208 1.71103,0.92035 2.81903,0.92035 l 6.92071,0 c 0.28606,0.36006 -0.30031,0.38064 -0.4153,1.31936 1.01164,-0.84411 2.50675,-1.12406 3.7903,-1.31936 l 0.0937,0 16.79176,0 c 1.108,0 2,0.10055 2,-0.92035 l 0,-18.6589 c 0,-1.0208 -0.892,-0.92035 -2,-0.92035 l -28,0 z"
+           inkscape:connector-curvature="0"
+           sodipodi:nodetypes="ssssccccsssscs" />
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Speech bubble</dc:title>
+        <dc:date>2010-04-06T21:01:40</dc:date>
+        <dc:description>Speech bubble</dc:description>
+        <dc:source>https://openclipart.org/detail/38605/speech-bubble-by-pascallapalme-38605</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>pascallapalme</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>cartoon</rdf:li>
+            <rdf:li>speech bubble</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

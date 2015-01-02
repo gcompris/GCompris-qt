@@ -30,7 +30,7 @@ Rectangle {
         GradientStop { position: 1.0; color: "#AACECECE" }
     }
     width: subLevelText.width * 2
-    height: subLevelText.height * 2
+    height: subLevelText.height * 1.4
     radius: 10
     anchors.bottom: parent.bottom
     anchors.right: parent.right
@@ -40,6 +40,8 @@ Rectangle {
     border.width: 2
 
     z: 1000
+
+    property alias fontSize: subLevelText.fontSize
 
     /* Either fill in numberOfSubLevels and currentSubLevel
      * or directly the message you want to write */
@@ -53,7 +55,7 @@ Rectangle {
     GCText {
         id: subLevelText
         anchors.centerIn: parent
-        font.pointSize: 16
+        fontSize: mediumSize
         font.bold: true
         color: "black"
         text: message

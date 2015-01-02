@@ -4,14 +4,14 @@ ActivityInfo {
   name: "mosaic/Mosaic.qml"
   difficulty: 1
   icon: "mosaic/mosaic.svg"
-  author: "Bruno Coudoin <bruno.coudoin@free.fr>"
-  demo: true
+  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  demo: false
   title: qsTr("Rebuild the mosaic")
   description: qsTr("Rebuild the mosaic")
-//  intro: "Click on the correct colors to build the same mosaic."
+//  intro: "Put each item at the same place as in the given example."
   goal: ""
   prerequisite: ""
-  manual: qsTr("Rebuild the same mosaic on the right area")
+  manual: qsTr("First select the item you want to put then click on a spot on the empty area")
   credit: ""
-  section: "/discovery/colors_group"
+  section: "discovery"
 }

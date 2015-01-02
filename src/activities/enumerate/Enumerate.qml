@@ -21,6 +21,7 @@
 */
 import QtQuick 2.1
 import GCompris 1.0
+import "."
 
 import "../../core"
 import "enumerate.js" as Activity
@@ -38,7 +39,7 @@ ActivityBase {
         signal start
         signal stop
         fillMode: Image.PreserveAspectCrop
-        source: Activity.url + "background.svgz"
+        source: Activity.url + "background.svg"
         sourceSize.width: parent.width
 
         Component.onCompleted: {
@@ -47,6 +48,17 @@ ActivityBase {
         }
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
+
+        Keys.onDownPressed: {
+            if(++answerColumn.currentIndex >= answerColumn.count)
+                answerColumn.currentIndex = 0
+            Activity.registerAnswerItem(answerColumn.itemAt(answerColumn.currentIndex))
+        }
+        Keys.onUpPressed: {
+            if(--answerColumn.currentIndex < 0)
+                answerColumn.currentIndex = answerColumn.count - 1
+            Activity.registerAnswerItem(answerColumn.itemAt(answerColumn.currentIndex))
+        }
 
         QtObject {
             id: items
@@ -66,6 +78,7 @@ ActivityBase {
         }
 
         Column {
+            id: answer
             anchors {
                 right: parent.right
                 bottom: keyboard.top
@@ -76,12 +89,31 @@ ActivityBase {
             Repeater
             {
                 id: answerColumn
+                property int currentIndex
+
+                onModelChanged: currentIndex = count - 1
                 AnswerArea {
                     imgPath: modelData
                     focus: true
                     backspaceCode: keyboard.backspace
+                    audioEffects: activity.audioEffects
                 }
             }
+
+            add: Transition {
+                NumberAnimation { properties: "x,y"; duration: 200 }
+            }
+        }
+
+        // Reposition the items to find when whidh or height changes
+        onWidthChanged: {
+            for(var i in itemList.model)
+                itemList.itemAt(i).positionMe()
+        }
+
+        onHeightChanged: {
+            for(var i in itemList.model)
+                itemList.itemAt(i).positionMe()
         }
 
         Repeater
@@ -138,10 +170,8 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            audioEffects: activity.audioEffects
             Component.onCompleted: win.connect(Activity.nextLevel)
-            onWin: {
-                activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/bonus.wav")
-            }
         }
     }
 }

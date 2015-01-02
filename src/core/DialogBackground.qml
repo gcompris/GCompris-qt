@@ -30,6 +30,7 @@ Rectangle {
     z: 1000
     property bool isDialog: true
     property string title
+    property alias titleIcon: titleIcon.source
     property string content
     signal close
     signal start
@@ -53,6 +54,15 @@ Rectangle {
                 border.color: "black"
                 border.width: 2
 
+                Image {
+                    id: titleIcon
+                    anchors {
+                        left: parent.left
+                        top: parent.top
+                        margins: 4 * ApplicationInfo.ratio
+                    }
+                }
+
                 GCText {
                     id: title
                     text: dialogBackground.title
@@ -60,8 +70,9 @@ Rectangle {
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     color: "black"
-                    font.pointSize: 24
+                    fontSize: 20
                     font.weight: Font.DemiBold
+                    wrapMode: Text.WordWrap
                 }
             }
             Rectangle {
@@ -87,9 +98,10 @@ Rectangle {
                         text: content
                         width: flick.width
                         height: flick.height
-                        font.pointSize: 16
+                        fontSize: regularSize
                         wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.RichText
+                        onLinkActivated: Qt.openUrlExternally(link)
                     }
                 }
             }

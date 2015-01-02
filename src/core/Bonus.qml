@@ -34,14 +34,21 @@ Image {
     signal loose
 
     property bool isWin: false
+    property GCAudio audioEffects
+    property string winSound: "qrc:/gcompris/src/core/resource/sounds/bonus.wav"
+    property string looseSound
 
     function good(name) {
+        if(audioEffects && winSound)
+            audioEffects.play(winSound)
         source = "qrc:/gcompris/src/core/resource/bonus/" + name + "_good.png"
         isWin = true;
         animation.start()
     }
 
     function bad(name) {
+        if(audioEffects && looseSound)
+            audioEffects.play(looseSound)
         source = "qrc:/gcompris/src/core/resource/bonus/" + name + "_bad.png"
         isWin = false;
         animation.start()
