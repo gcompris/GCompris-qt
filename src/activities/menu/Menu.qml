@@ -224,7 +224,7 @@ ActivityBase {
                 anchors.fill: parent
                 GCText {
                     id: instructionTxt
-                    font.pointSize: 14
+                    fontSize: smallSize
                     y: height * 0.2
                     x: (parent.width - width) / 2
                     z: 2
@@ -233,11 +233,12 @@ ActivityBase {
                     wrapMode: Text.WordWrap
                     font.weight: Font.DemiBold
                     color: 'white'
-                    text: qsTr("You can put your favorite activities here. " +
-                               "To do so, on your prefered activities select the star icon on it's right")
+                    text: qsTr("Put your favorite activities here by selecting the " +
+                               "star on each activity top right.")
                 }
                 Rectangle {
                     anchors.fill: instructionTxt
+                    anchors.margins: -6
                     z: 1
                     opacity: 0.5
                     radius: 10
