@@ -21,7 +21,7 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 
-var planetDataset = [['EARTH', 6e24, '12800'], ['SATURN', 6e26, '116464'], ['JUPITER', '2*10^27', '139822'], ['SUN', '2*10^30', '1391684'], ['67PComet', '1.0*10^13', '4']]
+var planetDataset = [['EARTH', 6e24, '12800000'], ['SATURN', 6e26, '116464000'], ['JUPITER', '2*10^27', '139822000'], ['SUN', '2*10^30', '1391684000'], ['67PComet', '1.0*10^13', '4000']]
 //var satelliteDataset = [['SPOUTNIK','84' ], ['InternationalSpaceShip', '400000'], ['ROSETTA','3000' ]]
 
 var satelliteDataset = [['InternationalSpaceShip', '400000'], ['satellite', '3000']]
@@ -33,13 +33,13 @@ var items
 
 var massObjectName = planetDataset[0][0]
 var massObjectMass = planetDataset[0][1]
-var massObjectDiameter = planetDataset[0][2]
+
 
 var satObjectName = satelliteDataset[0][0]
 var satObjectMass = satelliteDataset[0][1]
 var satObjectDiameter = satelliteDataset[0][2]
 
-var distance,G
+var distance,G, pixPerMeter
 var speedX
 var speedY, Ec_mass, Em_mass, Ep_mass
 var position, speed, points
@@ -57,8 +57,11 @@ function start(items_) {
 function stop() {}
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
 
+    items.bar.level = currentLevel + 1
+    items.satList.clear()
+    items.massList.clear()
+    items.massObjectDiameter = planetDataset[0][2]
     //feed left Menu : satellite Menu
     for (var i = 0; i < satelliteDataset.length; i++) {
 
@@ -82,12 +85,13 @@ function massChanged(massNb) {
 
     massObjectName = planetDataset[massNb][0]
     massObjectMass = planetDataset[massNb][1]
-    massObjectDiameter = planetDataset[massNb][2]
+    items.massObjectDiameter = planetDataset[massNb][2]
 }
 
 function calcparameters() {
     //distance in m
-    distance = items.slidDistance.value*1000
+    distance = items.slidDistance.value
+    pixPerMeter = items.objectDiameter.width/items.massObjectDiameter
 
     //X and Y speed conposantes
     speedX = items.slidSpeed.value*Math.cos(items.arrowSatAngle/180*Math.PI)
@@ -103,24 +107,28 @@ function calcparameters() {
     Em_mass=Ec_mass+Ep_mass
     if (Em_mass >= 0){
         //too much energy. It can't satelite
+        items.isEllipse=false
+       // console.log('too much energy')
 
-        console.log('too much energy')
-
+        items.instructions.text = "it's too fast !! Satellite won't never come back !!"
         t=2*Math.PI*Math.sqrt((Math.pow(distance,3)/massObjectMass/G))
 
-        dt = t/1000
+        dt = t/2000
+
 
     } else {
+        items.isEllipse=true
 
     //   Semi Major Axis "a" : Em = -k/2a with ellipse thus a = -k/2Em
          a = -massObjectMass*G/2/Em_mass
 
     //   Period with 3rd Kepler's Law  T²=4pi²/MG*a³
         t = 2*Math.PI*Math.sqrt((Math.pow(a,3)/massObjectMass/G))
+        items.period =t
+    //nb of point to calcul. 2000 seems good. 100 is not enough
+        dt = t/2000
 
-    //nb of point to calcul. 1000 seems good. 100 is not enough
-        dt = t/1000
-
+        items.instructions.text = "Great !! Satellite is turning over Planet !!"
     }
 
     position = [distance, 0, 0]  //x, y,z
@@ -211,7 +219,7 @@ function extractXY(yout){
     for (var j=0; j<points.length; j++){
         if(j%8==0){ //we draw only one point over 8
             listPoints[j/8] = points[j].slice(0,2)
-            listPointsPix[j/8] = [Math.round(150*listPoints[j/8][0]/a), Math.round(150*listPoints[j/8][1]/a)]
+            listPointsPix[j/8] = [pixPerMeter*listPoints[j/8][0], pixPerMeter*listPoints[j/8][1]]
         }
     }
     items.trajecCanvas.requestPaint()
@@ -221,7 +229,7 @@ function extractXY(yout){
 // Compute "points", list of 6-upplets.
 function calcul(){
     listT = []
-    for (var i=0;i<1000;i++){
+    for (var i=0;i<2000;i++){
         listT[i] = i*dt
     }
     y0=position.concat(speed)
