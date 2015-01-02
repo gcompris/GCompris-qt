@@ -39,8 +39,9 @@ Dialog {
     property bool dynamic: false        ///< whether created dynamically
     property alias backgroundButtonVisible: backgroundButton.visible
     property alias abortButtonVisible: abortButton.visible
-    
-    signal finished;
+    property int fixedFontSize: 14      ///< fixed font-size used in this dialog
+
+    signal finished
     
     function shutdown()
     {
@@ -124,6 +125,8 @@ Dialog {
             textFormat: Text.StyledText
             Layout.rowSpan: 1
             Layout.fillWidth: true
+            fixFontSize: true
+            fontSize: fixedFontSize
             wrapMode: Text.WordWrap
         }
         ProgressBar {
@@ -146,7 +149,9 @@ Dialog {
                 id: backgroundButton
                 //: Run this task in background
                 text: qsTr("Background")
-                style: GCButtonStyle {}
+                style: GCButtonStyle {
+                    fixedFontSize: downloadDialog.fixedFontSize
+                }
                 visible: true
                 onClicked: downloadDialog.shutdown();
             }
@@ -154,7 +159,9 @@ Dialog {
                 id: abortButton
                 width: downloadColumn.width/2
                 text: qsTr("Abort")
-                style: GCButtonStyle {}
+                style: GCButtonStyle {
+                    fixedFontSize: downloadDialog.fixedFontSize
+                }
                 visible: true
                 onClicked: {
                     if (DownloadManager.downloadIsRunning())
