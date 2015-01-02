@@ -73,6 +73,8 @@ Flipable {
         anchors.centerIn: parent
         Image {
             source: card.pairData.image
+            sourceSize.width: parent.width
+            sourceSize.height: parent.height
             anchors.centerIn: parent
             fillMode: Image.PreserveAspectFit
         }

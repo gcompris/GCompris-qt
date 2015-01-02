@@ -19,27 +19,27 @@
 var url = "qrc:/gcompris/src/activities/memory/resource/"
 
 var images = [
-                [url + '01_cat.png', url + '01_cat.png'],
-                [url + '02_pig.png', url + '02_pig.png'],
-                [url + '03_bear.png', url + '03_bear.png'],
-                [url + '04_hippopotamus.png', url + '04_hippopotamus.png'],
-                [url + '05_penguin.png', url + '05_penguin.png'],
-                [url + '06_cow.png', url + '06_cow.png'],
-                [url + '07_sheep.png', url + '07_sheep.png'],
-                [url + '08_turtle.png', url + '08_turtle.png'],
-                [url + '09_panda.png', url + '09_panda.png'],
-                [url + '10_chicken.png', url + '10_chicken.png'],
-                [url + '11_redbird.png', url + '11_redbird.png'],
-                [url + '12_wolf.png', url + '12_wolf.png'],
-                [url + '13_monkey.png', url + '13_monkey.png'],
-                [url + '14_fox.png', url + '14_fox.png'],
-                [url + '15_bluebirds.png', url + '15_bluebirds.png'],
-                [url + '16_elephant.png', url + '16_elephant.png'],
-                [url + '17_lion.png', url + '17_lion.png'],
-                [url + '18_gnu.png', url + '18_gnu.png'],
-                [url + '19_bluebaby.png', url + '19_bluebaby.png'],
-                [url + '20_greenbaby.png', url + '20_greenbaby.png'],
-                [url + '21_frog.png', url + '21_frog.png']
+                [url + '01_cat.svg', url + '01_cat.svg'],
+                [url + '02_pig.svg', url + '02_pig.svg'],
+                [url + '03_bear.svg', url + '03_bear.svg'],
+                [url + '04_hippopotamus.svg', url + '04_hippopotamus.svg'],
+                [url + '05_penguin.svg', url + '05_penguin.svg'],
+                [url + '06_cow.svg', url + '06_cow.svg'],
+                [url + '07_sheep.svg', url + '07_sheep.svg'],
+                [url + '08_turtle.svg', url + '08_turtle.svg'],
+                [url + '09_panda.svg', url + '09_panda.svg'],
+                [url + '10_chicken.svg', url + '10_chicken.svg'],
+                [url + '11_redbird.svg', url + '11_redbird.svg'],
+                [url + '12_wolf.svg', url + '12_wolf.svg'],
+                [url + '13_monkey.svg', url + '13_monkey.svg'],
+                [url + '14_fox.svg', url + '14_fox.svg'],
+                [url + '15_bluebirds.svg', url + '15_bluebirds.svg'],
+                [url + '16_elephant.svg', url + '16_elephant.svg'],
+                [url + '17_lion.svg', url + '17_lion.svg'],
+                [url + '18_gnu.svg', url + '18_gnu.svg'],
+                [url + '19_bluebaby.svg', url + '19_bluebaby.svg'],
+                [url + '20_greenbaby.svg', url + '20_greenbaby.svg'],
+                [url + '21_frog.svg', url + '21_frog.svg']
             ]
 
 var memory_cards = [
