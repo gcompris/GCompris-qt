@@ -40,6 +40,7 @@ imageid
 instruments
 leftright
 lightsoff
+louis_braille-activity
 magic-hat-minus
 magic-hat-plus
 maze
