@@ -29,12 +29,36 @@ ActivityBase {
         signal stop
         property int massNb: 0
         property int satNb: 0
+        property int tick: 0
         property real scaleGlob: 1.0
         property real arrowSatAngle
         property real widthActivity: width
         property real speed
+        property bool crash : false
 
         property real distanceSatInPix
+
+
+        Timer {
+            id:satTimer
+            interval: 10
+            running: false
+            repeat: true
+            onTriggered: {if ((tick>=Activity.listPointsPix.length)||crash){
+                    console.log('ggggg')
+                    satArrowleft.visible=true
+                    sat.x = centralItem.width/2 + distanceSatInPix-sat.width/2
+                    sat.y = centralItem.height/2-sat.height/2
+
+                        } else {
+
+                    satArrowleft.visible=false
+                    sat.x = centralItem.width/2 + Activity.listPointsPix[tick][0]-sat.width/2
+                    sat.y = centralItem.height/2+Activity.listPointsPix[tick][1]-sat.height/2
+                    tick++}
+
+        }
+        }
 
 
         onMassNbChanged: {
@@ -102,7 +126,7 @@ ActivityBase {
             Activity.stop()
         }
 
-        Text {
+        GCText {
             id: title
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
@@ -113,7 +137,7 @@ ActivityBase {
             color: "#777"
         }
 
-        Text {
+        GCText {
             id: instructions
             //anchors.horizontalCenter: parent.horizontalCenter
             width: 0.2 * parent.width
@@ -184,7 +208,7 @@ ActivityBase {
                     width: satInfo.paintedWidth + 30 * ApplicationInfo.ratio
                     height: satInfo.paintedHeight + 30 * ApplicationInfo.ratio
                     anchors.top: satImage.bottom
-                    Text {
+                    GCText {
                         id: satInfo
                         text: Activity.satObjectName + '\n' + Activity.satObjectMass.replace("e+","10^") + " kg"
                         anchors.horizontalCenter: parent.horizontalCenter
@@ -245,7 +269,7 @@ ActivityBase {
                     anchors.bottom: massImage.top
                     anchors.bottomMargin: 50 * ApplicationInfo.ratio
                     scale: scaleGlob
-                    Text {
+                    GCText {
                         id: diameterInfo
                         text: items.massObjectDiameter/1000 + " km"
                         anchors.verticalCenter: parent.verticalCenter
@@ -276,7 +300,8 @@ ActivityBase {
                     }
 
                 onPaint: {
-
+                    tick=0
+                    crash=false
                     var ctx = trajecCanvas.getContext('2d')
                     ctx.save()
                     ctx.setTransform(1, 0, 0, 1, 0, 0)
@@ -313,7 +338,9 @@ ActivityBase {
 
                                 ctx.restore()//restore with translation and styles 2
                                 items.instructions.text = "Great !! Satellite is turning over Planet !! But it crashes on its surface :("
-
+                                tick=0
+                                crash=true
+                                satTimer.stop()
 
                                 break
                             }
@@ -331,6 +358,8 @@ ActivityBase {
                        // }
                     }
 
+                    satTimer.repeat = true
+                    satTimer.start()
 
                     mouseareaCentral.hoverEnabled = true
                     ctx.restore()//restore with translation and styles 1
@@ -390,7 +419,7 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: parent.bottom
             anchors.bottomMargin: parent.height * 0.3
-            Text {
+            GCText {
                 id: massInfo
                 text: Activity.massObjectName + '\n' + Activity.massObjectMass.toString().replace("e+","*10^") + " kg"
                 anchors.verticalCenter: parent.verticalCenter
@@ -459,7 +488,7 @@ ActivityBase {
                                 anchors.verticalCenter: parent.verticalCenter
                                 source: Activity.url + "resource/" + name + ".png"
                             }
-                            Text {
+                            GCText {
                                 text: name
                                 anchors.horizontalCenter: parent.horizontalCenter
                                 font.pointSize: 24 * ApplicationInfo.ratio
@@ -525,7 +554,7 @@ ActivityBase {
                                 anchors.verticalCenter: parent.verticalCenter
                                 source: Activity.url + "resource/" + name + ".png"
                             }
-                            Text {
+                            GCText {
                                 text: name
                                 anchors.horizontalCenter: parent.horizontalCenter
                                 font.pointSize: 24 * ApplicationInfo.ratio
@@ -570,7 +599,7 @@ ActivityBase {
             value: 1
             updateValueWhileDragging: false
 
-            Text {
+            GCText {
                 text: "ZOOM In or Out"
                 anchors.bottom:parent.top
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -601,7 +630,7 @@ ActivityBase {
             onValueChanged: {
                 distanceSatInPix = objectDiameter.width / items.massObjectDiameter * slidDistance.value
             }
-            Text {
+            GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: "Distance (in km):" + (slidDistance.value/1000).toFixed(0)
                 font.pointSize: 16
@@ -626,7 +655,7 @@ ActivityBase {
             onValueChanged: {
                 speed = slidSpeed.value
             }
-            Text {
+            GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: Math.round(slidSpeed.value)!=0 ? "Speed in m/s : " + slidSpeed.value.toFixed(0) : "Speed in m/s : " + slidSpeed.value.toFixed(2)
                 anchors.bottom:parent.top
