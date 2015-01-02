@@ -176,8 +176,9 @@ function showDownloadDialog(parent, properties) {
         if (!downloadDialogComponent) {
             downloadDialogComponent = Qt.createComponent("qrc:/gcompris/src/core/DownloadDialog.qml");
             if (downloadDialogComponent.status != Qml.Component.Ready) {
+                throw new Error("Error creating DownloadDialog component: "
+                        + downloadDialogComponent.errorString());
                 downloadDialogComponent = null;
-                throw new Error("Error creating DownloadDialog component");
             }
         }
         properties.dynamic = true;
