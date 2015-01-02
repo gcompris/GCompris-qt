@@ -22,7 +22,6 @@
 */
 
 var planetDataset = [['EARTH', 6e24, '12800000'], ['SATURN', 6e26, '116464000'], ['JUPITER', 2e27, '139822000'], ['SUN', 2e30, '1391684000'], ['67PComet', 1e13, '4000']]
-//var satelliteDataset = [['SPOUTNIK','84' ], ['InternationalSpaceShip', '400000'], ['ROSETTA','3000' ]]
 
 var satelliteDataset = [['InternationalSpaceShip', '400000'], ['Rosetta', '3000'], ['Hubble','11000']]
 
@@ -107,15 +106,14 @@ function calcparameters() {
 
     Em_mass=Ec_mass+Ep_mass
     if (Em_mass >= 0){
-        //too much energy. It can't satelite
+
+        //too much energy. It can't satelize
         items.isEllipse=false
-       // console.log('too much energy')
 
         items.instructions.text = "it's too fast !! Satellite won't never come back !!"
         t=2*Math.PI*Math.sqrt((Math.pow(distance,3)/massObjectMass/G))
 
         dt = t/2000
-
 
     } else {
         items.isEllipse=true
@@ -126,6 +124,7 @@ function calcparameters() {
     //   Period with 3rd Kepler's Law  T²=4pi²/MG*a³
         t = 2*Math.PI*Math.sqrt((Math.pow(a,3)/massObjectMass/G))
         items.period =t
+
     //nb of point to calcul. 2000 seems good. 100 is not enough
         dt = t/2000
 

@@ -3,8 +3,8 @@
 * Copyright (C) 2014 Jean-Baptiste BUTET
 *
 * Authors:
-*   <THE GTK VERSION AUTHOR> (GTK+ version)
-*   YOUR NAME <YOUR EMAIL> (Qt Quick port)*/
+*   Matilda Bernard (seah4291@gmail.com) (GTK+ version)
+*   Jean-Baptiste BUTET <ashashiwa@gmail.com> (Qt Quick port and rewrite)*/
 
 import QtQuick 2.1
 import GCompris 1.0
@@ -45,7 +45,6 @@ ActivityBase {
             running: false
             repeat: true
             onTriggered: {if ((tick>=Activity.listPointsPix.length)||crash){
-                    console.log('ggggg')
                     satArrowleft.visible=true
                     sat.x = centralItem.width/2 + distanceSatInPix-sat.width/2
                     sat.y = centralItem.height/2-sat.height/2
@@ -86,8 +85,6 @@ ActivityBase {
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
-//            console.log('hhhhhhhhhhhhhhhhh',slidDistance.value,objectDiameter.width)
-
         }
 
 
@@ -139,7 +136,6 @@ ActivityBase {
 
         GCText {
             id: instructions
-            //anchors.horizontalCenter: parent.horizontalCenter
             width: 0.2 * parent.width
             anchors.top: parent.top
             anchors.right: parent.right
@@ -311,19 +307,13 @@ ActivityBase {
                     ctx.fillStyle = 'white'
                     ctx.strokeStyle = 'white'
                     ctx.save() //first save only styles.
-//                    ctx.fillStyle = 'rgba(225,225,225,0.5)';
-//                    ctx.fillRect(0,0,width,height)
-//                    ctx.fillStyle = 'white'
 
                     ctx.translate(width / 4, height / 4)
                     ctx.save() //save with translation and styles 1
 
-                    //console.log(distanceSatInPix)
                     if (items.isEllipse){
                         items.instructions.text = "Great !! Satellite is turning over Planet in " + items.period.toFixed(0) + " seconds or "+ (items.period/3600).toFixed(0) +" hours and " +60*((items.period/3600)-Math.floor(items.period/3600)).toFixed(0) +" minutes"
                     }
-//                    if (Activity.listPointsPix.length > 100) {
-                        //console.log
                         for (var j = 0; j < Activity.listPointsPix.length; j++) {
                             ctx.save() //save with translation and styles 2
                             var xs = Activity.listPointsPix[j][0]
@@ -354,8 +344,6 @@ ActivityBase {
                             ctx.lineTo(3, 0)
                             ctx.stroke()
                             ctx.restore()//restore with translation and styles 2
-
-                       // }
                     }
 
                     satTimer.repeat = true
@@ -364,9 +352,6 @@ ActivityBase {
                     mouseareaCentral.hoverEnabled = true
                     ctx.restore()//restore with translation and styles 1
                     ctx.restore()//restaure with style 0
-                    //Activity.listPointsPix = []
-
-
 
                 }
             }
@@ -398,9 +383,6 @@ ActivityBase {
                     buttonLaunch.visible = true
 
                 }
-
-//                  onEntered: console.log('Entree')
-//                  onExited: console.log('sortie')
             }
         }
 
@@ -543,8 +525,6 @@ ActivityBase {
                             id: wrapper
                             anchors.horizontalCenter: parent.horizontalCenter
                             color: "transparent"
-                            //border.width: 10
-                            //border.color: "blue"
                             height: 150 * ApplicationInfo.ratio
                             width: massMenu.width
 
@@ -567,7 +547,6 @@ ActivityBase {
                                 onClicked: {
                                     massNb = index
                                     massGrid.currentIndex = index
-                                    // Activity.calcparameters()
                                 }
                                 onEntered: planetPicture.source = Activity.url
                                            + "resource/" + name + "_scaled.png"
