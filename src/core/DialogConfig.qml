@@ -225,7 +225,8 @@ Rectangle {
                             Slider {
                                 id: baseFontSizeSlider
                                 anchors.verticalCenter: parent.verticalCenter
-                                width: 300 * ApplicationInfo.ratio
+                                width: 250 * ApplicationInfo.ratio
+                                style: GCSliderStyle {}
                                 maximumValue: ApplicationSettings.baseFontSizeMax
                                 minimumValue: ApplicationSettings.baseFontSizeMin
                                 stepSize: 1.0
