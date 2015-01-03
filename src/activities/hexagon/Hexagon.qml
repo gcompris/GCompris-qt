@@ -28,7 +28,8 @@ import "hexagon.js" as Activity
 
 ActivityBase {
     id: activity
-    focus: true
+
+    onStart: focus = true
 
     pageComponent: Image {
         id: background
