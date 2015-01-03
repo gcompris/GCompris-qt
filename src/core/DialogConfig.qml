@@ -291,8 +291,7 @@ Rectangle {
                                     var localeShort =
                                             ApplicationInfo.getLocaleShort(languages.get(languageBox.currentIndex).locale);
                                     if (DownloadManager.downloadResource(
-                                        DownloadManager.getVoicesResourceForLocale(
-                                                    languages.get(localeShort))))
+                                        DownloadManager.getVoicesResourceForLocale(localeShort)))
                                     {
                                         var downloadDialog = Core.showDownloadDialog(dialogConfig, {});
                                     }
