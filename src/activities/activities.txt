@@ -35,7 +35,6 @@ gnumch-multiples
 gnumch-primes
 guessnumber
 hexagon
-imageid
 instruments
 leftright
 lightsoff
@@ -65,7 +64,6 @@ memory-sound-tux
 memory-tux
 memory-wordnumber
 mining
-missing-letter
 money
 money_back
 money_back_cents
