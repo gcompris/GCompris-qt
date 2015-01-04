@@ -108,8 +108,10 @@ Rectangle {
                                                               "qrc:/gcompris/src/core/resource/cancel.svgz"
                                     MouseArea {
                                         anchors.fill: parent
-                                        //onClicked: ApplicationSettings.isDemoMode ? console.log("call buying api") : ""
-                                        onClicked: ApplicationSettings.isDemoMode = !ApplicationSettings.isDemoMode
+                                        onClicked: {
+                                            if(ApplicationSettings.isDemoMode)
+                                                ApplicationSettings.isDemoMode = false
+                                        }
                                     }
                             }
 
@@ -144,8 +146,8 @@ Rectangle {
                                 }
 
                                 onClicked: {
-                                    ApplicationSettings.isDemoMode = !ApplicationSettings.isDemoMode
-                                    console.log("call buying api")
+                                    if(ApplicationSettings.isDemoMode)
+                                        ApplicationSettings.isDemoMode = false
                                 }
                             }
                         }

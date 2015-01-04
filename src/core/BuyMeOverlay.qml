@@ -71,8 +71,8 @@ Component {
                 }
                 
                 onClicked: {
-                    ApplicationSettings.isDemoMode = !ApplicationSettings.isDemoMode
-                    console.log("call buying api")
+                    if(ApplicationSettings.isDemoMode)
+                        ApplicationSettings.isDemoMode = false
                 }
             }
             
