@@ -35,7 +35,7 @@ ActivityBase {
     property bool withTux: false
     property string additionnalPath
 
-    onStart: {}
+    onStart: focus = true
     onStop: {}
 
     pageComponent: Image {

@@ -36,6 +36,7 @@ ActivityBase {
      * or "uppercase" (click_on_letter_up): */
     property string mode: "lowercase"
 
+    onStart: focus = true
 
     pageComponent: Image {
         id: background
