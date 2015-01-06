@@ -20,6 +20,7 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 import QtQuick 2.2
+import QtQuick.Controls 1.1
 import GCompris 1.0
 
 import "../../core"
@@ -61,7 +62,7 @@ Rectangle {
 
         fontSizeMode: Text.Fit
         minimumPointSize: 7
-        fontSize: hugeSize
+        font.pointSize: 32
         font.weight: Font.DemiBold
         maximumLineCount: 1
         verticalAlignment: Text.AlignVCenter

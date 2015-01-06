@@ -36,6 +36,8 @@ Image {
             id: xAnim
             easing.type: Easing.OutQuad
             duration:  1000
+            onRunningChanged: if(!xAnim.running && helico.state == "advancing")
+                                  helico.state = "horizontal"
         }
     }
     Behavior on y {
@@ -75,8 +77,6 @@ Image {
                                RotationAnimation.Counterclockwise :
                                RotationAnimation.Clockwise
                 duration: 500
-                onRunningChanged: if(!rotAnim.running && helico.state == "advancing")
-                                      helico.state = "horizontal"
     }
 }
 

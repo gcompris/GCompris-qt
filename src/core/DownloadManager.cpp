@@ -260,7 +260,7 @@ inline QString DownloadManager::tempFilenameForFilename(const QString &filename)
 
 inline QString DownloadManager::filenameForTempFilename(const QString &tempFilename) const
 {
-    if (tempFilename.endsWith(QLatin1String("_")))
+    if (tempFilename.endsWith("_"))
         return tempFilename.left(tempFilename.length() - 1);
     return tempFilename;
 }
@@ -358,7 +358,7 @@ inline QString DownloadManager::getResourceRootForFilename(const QString& filena
  *
  * Uses QStandardPaths::writableLocation(QStandardPaths::DataLocation)
  * which returns
- *   - on desktop $HOME/.local/share/KDE/gcompris-qt/
+ *   - on desktop $HOME/.local/share/KDE/GCompris/
  *   - on android /data/data/net.gcompris/files
  *
  */
@@ -373,9 +373,9 @@ inline QString  DownloadManager::getSystemDownloadPath() const
  *
  * For now returns
  * 1. getSystemdDownloadPath()
- * 2. QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)/gcompris-qt
+ * 2. QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)/GCompris
  *    which is
- *    - $HOME/.local/share/gcompris-qt (on linux desktop)
+ *    - $HOME/.local/share/GCompris (on linux desktop)
  *    - /storage/sdcard0/GCompris (on android)
  *
  */
@@ -384,7 +384,7 @@ inline QStringList DownloadManager::getSystemResourcePaths() const
     return QStringList({
         getSystemDownloadPath(),
         QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) +
-            "/" + GCOMPRIS_APPLICATION_NAME
+            "/GCompris"
     });
 }
 
@@ -479,7 +479,7 @@ void DownloadManager::unregisterResource_locked(const QString& filename)
     if (!QResource::unregisterResource(filename, getResourceRootForFilename(filename)))
             qDebug() << "Error unregistering resource file" << filename;
     else {
-        qDebug() << "Successfully unregistered resource file" << filename;
+        qDebug() << "Succesfully unregistered resource file" << filename;
         registeredResources.removeOne(filename);
     }
 }
@@ -499,7 +499,7 @@ bool DownloadManager::registerResource(const QString& filename)
         qDebug() << "Error registering resource file" << filename;
         return false;
     } else {
-        qDebug() << "Successfully registered resource"
+        qDebug() << "Succesfully registered resource"
                 << filename
                 << "(rcRoot=" << getResourceRootForFilename(filename) << ")";
         registeredResources.append(filename);
@@ -674,7 +674,7 @@ QStringList DownloadManager::getLocalResources()
             QString filename = it.next();
             QFileInfo fi = it.fileInfo();
             if (fi.isFile() &&
-                    (filename.endsWith(QLatin1String(".rcc"))))
+                    (filename.endsWith(".rcc")))
                 result.append(filename);
         }
     }

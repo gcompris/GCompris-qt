@@ -109,7 +109,7 @@ Item {
         id: wordText
 
         text: ""
-        fontSize: 35
+        font.pointSize: 35
         font.bold: true
         color: "navy"
         style: Text.Outline
@@ -126,8 +126,8 @@ Item {
             anchors.fill: parent
 
             text: ""
-            fontSize: parent.fontSize
-            font.bold: parent.font.bold
+            font.pointSize: parent.font.pointSize
+            font.bold: parent.font.pointSize
             color: "red"
             style: Text.Outline
             styleColor: "white"
@@ -155,7 +155,6 @@ Item {
 
         onStopped: {
             Activity.audioCrashPlay();
-            Activity.appendRandomWord(word.text)
             Activity.deleteWord(word);
         }
     }

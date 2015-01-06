@@ -2,7 +2,6 @@
    "levels" : [
       {
          "level" : "1",
-	 "sublevels" : "15",
          "words" : [
             "ai",
             "ar",
@@ -46,7 +45,6 @@
       },
       {
          "level" : "2",
-	 "sublevels" : "15",
          "words" : [
             "abi",
             "Ada",
@@ -134,7 +132,6 @@
       },
       {
          "level" : "3",
-	 "sublevels" : "15",
          "words" : [
             "abiem",
             "abudu",
@@ -192,6 +189,7 @@
             "gylis",
             "Gytis",
             "gyvas",
+            "GNOME",
             "greit",
             "greta",
             "groja",

@@ -22,7 +22,6 @@
 import QtQuick 2.1
 import GCompris 1.0
 
-import "."
 import "../../core"
 import "memory.js" as Activity
 
@@ -59,11 +58,8 @@ ActivityBase {
             id: items
             property alias bar: bar
             property alias bonus: bonus
-            property GCAudio audioEffects: activity.audioEffects
             property bool withTux: activity.withTux
             property bool tuxTurn: false
-            property var playQueue
-            property int selectionCount
             property int tuxScore: tuxScore.text
             property int playerScore: playerScore.text
             property variant dataset: activity.dataset
@@ -104,19 +100,7 @@ ActivityBase {
                     width: (background.width - (grid.columns + 1) * grid.spacing) / grid.columns
                     height: (background.height - (grid.rows + 1) * grid.spacing) / (grid.rows + 0.5)
                     audioVoices: activity.audioVoices
-                    audioEffects: activity.audioEffects
                }
-            }
-            add: Transition {
-                PathAnimation {
-                    path: Path {
-                        PathCurve { x: background.width / 3}
-                        PathCurve { y: background.height / 3}
-                        PathCurve {}
-                    }
-                    easing.type: Easing.InOutQuad
-                    duration: 2000
-                }
             }
         }
 
@@ -153,7 +137,7 @@ ActivityBase {
                 anchors.verticalCenterOffset: parent.height / 6
                 color: "black"
                 font.bold: true
-                fontSize: largeSize
+                font.pointSize: 24
                 style: Text.Outline
                 styleColor: "white"
                 text: items.playerScore
@@ -178,7 +162,7 @@ ActivityBase {
                 anchors.verticalCenterOffset: parent.height / 6
                 color: "black"
                 font.bold: true
-                fontSize: largeSize
+                font.pointSize: 24
                 style: Text.Outline
                 styleColor: "white"
                 text: items.tuxScore
@@ -187,7 +171,6 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            audioEffects: activity.audioEffects
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }

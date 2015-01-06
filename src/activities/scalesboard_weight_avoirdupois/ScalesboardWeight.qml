@@ -40,7 +40,7 @@ Scalesboard {
                 "rightDrop": false,
                 "message": qsTr('The "lb" symbol at the end of a number means pound.') + " " +
                            qsTr('The pound is a unit of mass, a property which corresponds to the ' +
-                                'common perception of how "heavy" an object is. This unit is used in the USA.')
+                                'common perception of how "heavy” an object is. This unit is used in the USA.')
             },
             {
                 "masses": [[1, oz(1)], [2, oz(2)], [2, oz(2)], [4, oz(4)],

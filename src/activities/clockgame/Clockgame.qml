@@ -20,7 +20,6 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 import QtQuick 2.1
-import QtGraphicalEffects 1.0
 import GCompris 1.0
 
 import "../../core"
@@ -48,6 +47,7 @@ ActivityBase {
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
+            property Item main: activity.main
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
@@ -70,11 +70,11 @@ ActivityBase {
 
         Score {
             anchors {
-                bottom: parent.bottom
-                bottomMargin: 10 * ApplicationInfo.ratio
+                top: parent.top
+                topMargin: 10 * ApplicationInfo.ratio
                 right: parent.right
                 rightMargin: 10 * ApplicationInfo.ratio
-                top: undefined
+                bottom: undefined
                 left: undefined
             }
             numberOfSubLevels: items.numberOfTry
@@ -82,39 +82,24 @@ ActivityBase {
         }
 
         /* Target text */
-        Rectangle {
-            id: questionItemBackground
-            color: "#C0b7b353"
-            border.color: "black"
-            border.width: 2
-            radius: 10
+        GCText {
+            text: qsTr("Set the watch to:") + " " +
+                  Activity.get2CharValue(
+                      items.targetH) + ":" + Activity.get2CharValue(
+                      items.targetM) + ":" + Activity.get2CharValue(
+                      items.targetS)
+            font.pointSize: 18
+            horizontalAlignment: Text.AlignHCenter
+            wrapMode: Text.WordWrap
+            width: parent.width / 3
+            style: Text.Outline
+            styleColor: "white"
             z: 10
             anchors {
-                horizontalCenter: parent.horizontalCenter
-                top: parent.top
-                margins: 10
-            }
-            height: questionItem.height + anchors.margins * 2
-            width: questionItem.width + anchors.margins * 2
-            Behavior on height { PropertyAnimation { duration: 100 } }
-
-            GCText {
-                id: questionItem
-                text: qsTr("Set the watch to:") + " " +
-                      Activity.get2CharValue(
-                          items.targetH) + ":" + Activity.get2CharValue(
-                          items.targetM) + ":" + Activity.get2CharValue(
-                          items.targetS)
-                fontSize: 18
-                font.weight: Font.DemiBold
-                color: "white"
-                horizontalAlignment: Text.AlignHCenter
-                wrapMode: Text.WordWrap
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                    top: parent.top
-                    margins: 10
-                }
+                right: background.right
+                bottom: background.bottom
+                rightMargin: 20
+                bottomMargin: 20
             }
         }
 
@@ -126,7 +111,7 @@ ActivityBase {
             fillMode: Image.PreserveAspectFit
             sourceSize.height: parent.height
 
-            property int radius: Math.min(background.width * 1.4, background.height)
+            property int radius: Math.min(main.width * 1.4, main.height)
 
             /* The yellow zones */
             Image {
@@ -157,7 +142,6 @@ ActivityBase {
                 GCText {
                     text: index + 1
                     font {
-                        pointSize: NaN  // need to clear font.pointSize explicitly
                         pixelSize: Math.max(
                                        (index + 1) % 5
                                        === 0 ? clock.radius / 40 : clock.radius / 45,
@@ -404,7 +388,7 @@ ActivityBase {
                     if (items.currentH === items.targetH
                             && items.currentM === items.targetM
                             && items.currentS === items.targetS) {
-                        items.bonus.good("gnu")
+                        items.bonus.good("tux")
                     }
                 }
 

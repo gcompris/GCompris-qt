@@ -5,12 +5,13 @@ ActivityInfo {
   difficulty: 2
   icon: "algorithm/algorithm.svg"
   author: "Bharath M S <brat.197@gmail.com>"
-  demo: true
-  title: qsTr("Logical associations")
-  description: qsTr("Complete the arrangement of fruits")
-//  intro: "Click on the missing items on the table and follow the logical sequence displayed above it."
+  demo: false
+  title: qsTr("algorithm")
+  description: qsTr("Complete a list of symbols")
+//  intro: "Click on the missing items on the table and follow the logical chain displayed above."
   goal: qsTr("Logic training activity")
-  manual: qsTr("Look at the two sequences. Each fruit in the first sequence has been replaced by another fruit in the second sequence. Complete the second sequence by using the correct fruits, after studying this pattern.")
+  prerequisite: qsTr("Move and click the mouse")
+  manual: qsTr("Find the next symbol in a list.")
   credit: ""
-  section: "discovery"
+  section: "/discovery/miscelaneous"
 }

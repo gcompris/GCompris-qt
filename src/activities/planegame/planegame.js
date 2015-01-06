@@ -25,8 +25,6 @@
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var url = "qrc:/gcompris/src/activities/planegame/"
-
 var max_velocity = 500 * GCompris.ApplicationInfo.ratio
 var currentLevel
 var numberOfLevel
@@ -41,7 +39,7 @@ var rightPressed
 var items
 var dataset
 
-var cloudComponent = Qt.createComponent(url + "Cloud.qml");
+var cloudComponent = Qt.createComponent("qrc:/gcompris/src/activities/planegame/Cloud.qml");
 var clouds = new Array;
 var cloudsErased = new Array;
 
@@ -298,7 +296,8 @@ function handleCollisionsWithCloud() {
 
                     if(currentSubLevel === numberOfSubLevels) {
                         /* Try the next level */
-                        items.bonus.good("flower")
+                        nextLevel()
+                        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/bonus.wav")
                     } else {
                         items.score.message = dataset[currentLevel].data[currentSubLevel]
                     }
@@ -322,12 +321,8 @@ function handleCollisionsWithCloud() {
 }
 
 function playLetterSound(number) {
-    if(number < 10)
-        items.audioVoices.play(
-            GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
-                                                      + Core.getSoundFilenamForChar(number)))
-    else
-        items.audioVoices.play(GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
-                               + number + ".ogg"))
-
+    items.audioVoices.play(
+                GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
+                                                          + Core.getSoundFilenamForChar(number))
+                )
 }

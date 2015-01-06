@@ -65,7 +65,7 @@ ActivityBase {
                 source: Activity.url + "rockwall.svg"
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
-                sourceSize.width: parent.width
+                sourceSize.width: parent.width * 3
                 width: parent.width
                 height: parent.height
                 scale: miningBg._MIN_SCALE
@@ -79,7 +79,7 @@ ActivityBase {
 
                 Image {
                     source: Activity.url + "vertical_border.svg"
-                    sourceSize.height: parent.height
+                    sourceSize.height: parent.height * 3
                     width: parent.width * 0.05
                     anchors {
                         top: parent.top
@@ -90,7 +90,7 @@ ActivityBase {
 
                 Image {
                     source: Activity.url + "vertical_border.svg"
-                    sourceSize.height: parent.height
+                    sourceSize.height: parent.height * 3
                     width: parent.width * 0.05
                     anchors {
                         top: parent.top
@@ -101,7 +101,7 @@ ActivityBase {
 
                 Image {
                     source: Activity.url + "horizontal_border.svg"
-                    sourceSize.width: parent.width
+                    sourceSize.width: parent.width * 3
                     height: parent.height * 0.05
                     anchors {
                         top: parent.top
@@ -212,33 +212,23 @@ ActivityBase {
                                 SequentialAnimation {
                                     loops: Animation.Infinite
                                     NumberAnimation {
-                                        target: cell
-                                        property: "rotation"
-                                        from: 0; to: 360
-                                        duration: 5000;
+                                        target: cell; property: "rotation"; from: 0; to: 360; duration: 5000;
                                         easing.type: Easing.InOutQuad
                                     }
                                     NumberAnimation {
-                                        target: cell; property: "rotation"
-                                        from: 360; to: 0
-                                        duration: 5000;
+                                        target: cell; property: "rotation"; from: 360; to: 0; duration: 5000;
                                         easing.type: Easing.InOutQuad
                                     }
                                 }
                                 SequentialAnimation {
                                     loops: Animation.Infinite
                                     NumberAnimation {
-                                        target: cell; property: "scale"
-                                        from: 0; to: 1
-                                        duration: 3000;
+                                        target: cell; property: "scale"; from: 0; to: 1; duration: 3000;
                                         easing.type: Easing.InOutQuad
                                     }
                                     PauseAnimation { duration: 300 + Math.random() * 300 }
                                     NumberAnimation {
-                                        target: cell
-                                        property: "scale"
-                                        from: 1; to: 0
-                                        duration: 1000;
+                                        target: cell; property: "scale"; from: 1; to: 0; duration: 1000;
                                         easing.type: Easing.InOutQuad
                                     }
                                 }
@@ -358,140 +348,89 @@ ActivityBase {
                 font.bold: true
                 style: Text.Outline
                 styleColor: "black"
-                fontSize: 22
+                font.pointSize: 22
             }
         }
 
-        Rectangle {
-            id: tutoBackground
-            color: "#C0b7b353"
-            border.color: "black"
-            border.width: 2
-            radius: 10
+        GCText {
+            id: tuto
             anchors {
                 left: parent.left
                 right: parent.right
                 top: parent.top
-                margins: 10
+                margins: 20
             }
-            height: tuto.height + anchors.margins * 2
-            visible: tuto.state != "Stopped"
-            Behavior on height { PropertyAnimation { duration: 100 } }
+            font.pointSize: 13
+            color: "white"
+            wrapMode: TextEdit.WordWrap
+            horizontalAlignment: TextEdit.AlignHCenter
 
-            GCText {
-                id: tuto
-                fontSize: 13
-                anchors {
-                    left: parent.left
-                    right: parent.right
-                    top: parent.top
-                    margins: 10
-                }
-                color: "white"
-                wrapMode: TextEdit.WordWrap
-                horizontalAlignment: TextEdit.AlignHCenter
+            property string newState
 
-                property string newState
-
-                function setState(nextState) {
-                    if(bar.level == 1) {
-                        if(newState != nextState) {
-                            newState = nextState
-                            anim.restart()
-                        }
-                    } else {
-                        newState = "Stopped"
+            function setState(nextState) {
+                if(bar.level == 1) {
+                    if(newState != nextState) {
+                        newState = nextState
                         anim.restart()
                     }
+                } else {
+                    newState = "Stopped"
+                    anim.restart()
                 }
+            }
 
-                states: [
-                    State {
-                        name: "Started"
-                        PropertyChanges {
-                            target: tuto;
-                            text: qsTr("Find the sparkle and zoom in around it. If you have a mouse, point the cursor on the sparkle then use the scroll wheel. If you have a trackpad, point the cursor on the sparkle then drag one finger on the right area or two fingers on the center. On a touch area, drag two fingers away from the sparkle, one in each direction.")
-                        }
-                    },
-                    State {
-                        name: "Stopped"
-                        PropertyChanges { target: tuto; text: ""}
-                    },
-                    State {
-                        name: "ZoomOk"
-                        PropertyChanges {
-                            target: tuto
-                            text: qsTr("Perfect you are zooming. Continue until you see the nugget.")}
-                    },
-                    State {
-                        name: "ZoomBad"
-                        PropertyChanges {
-                            target: tuto
-                            text: qsTr("Hum, take care, you are zooming too far from the sparkle.")}
-                    },
-                    State {
-                        name: "NuggetSeen"
-                        PropertyChanges {
-                            target: tuto
-                            text: qsTr("Now you see the nugget, click on it to catch it.")}
-                    },
-                    State {
-                        name: "NuggetNotSeen"
-                        PropertyChanges {
-                            target: tuto
-                            text: qsTr("Hum, you are too far from the nugget to see it. Unzoom then zoom again as close as you can from the sparkle.")}
-                    },
-                    State {
-                        name: "Unzoom"
-                        PropertyChanges {
-                            target: tuto
-                            text: qsTr("Now unzoom and try to find another sparkle.")}
-                    },
-                    State {
-                        name: "UnzoomBad"
-                        PropertyChanges {
-                            target: tuto
-                            text: qsTr("Continue to unzoom until you see the sparkle.")}
-                    },
-                    State {
-                        name: "UnzoomOk"
-                        PropertyChanges {
-                            target: tuto
-                            text: qsTr("Now you see the sparkle, go ahead, you can zoom on it.")}
+            states: [
+                State {
+                    name: "Started"
+                    PropertyChanges {
+                        target: tuto;
+                        text: qsTr("Find the sparkle and zoom in around it. If you have a mouse, point the cursor on the sparkle then use the scroll wheel. If you have a trackpad, point the cursor on the sparkle then drag one finger on the right area or two fingers on the center. On a touch area, drag two fingers away from the sparkle, one in each direction.")
                     }
-                ]
-
-                SequentialAnimation {
-                    id: anim
-                    PropertyAnimation {
-                        target: tuto
-                        property: "opacity"
-                        easing.type: Easing.Linear
-                        from: 1.0; to: 0
-                        duration: 200
-                    }
-                    PropertyAction {
-                        target: tuto
-                        property: "state"
-                        value: tuto.newState
-                    }
-                    PropertyAnimation {
-                        target: tuto
-                        property: "opacity"
-                        easing.type: Easing.Linear
-                        from: 0; to: 1.0
-                        duration: 200
-                    }
+                },
+                State {
+                    name: "Stopped"
+                    PropertyChanges { target: tuto; text: ""}
+                },
+                State {
+                    name: "ZoomOk"
+                    PropertyChanges { target: tuto; text: qsTr("Perfect you are zooming. Continue until you see the nugget.")}
+                },
+                State {
+                    name: "ZoomBad"
+                    PropertyChanges { target: tuto; text: qsTr("Hum, take care, you are zooming too far from the sparkle.")}
+                },
+                State {
+                    name: "NuggetSeen"
+                    PropertyChanges { target: tuto; text: qsTr("Now you see the nugget, click on it to catch it.")}
+                },
+                State {
+                    name: "NuggetNotSeen"
+                    PropertyChanges { target: tuto; text: qsTr("Hum, you are too far from the nugget to see it. Unzoom then zoom again as close as you can from the sparkle.")}
+                },
+                State {
+                    name: "Unzoom"
+                    PropertyChanges { target: tuto; text: qsTr("Now unzoom and try to find another sparkle.")}
+                },
+                State {
+                    name: "UnzoomBad"
+                    PropertyChanges { target: tuto; text: qsTr("Continue to unzoom until you see the sparkle.")}
+                },
+                State {
+                    name: "UnzoomOk"
+                    PropertyChanges { target: tuto; text: qsTr("Now you see the sparkle, go ahead, you can zoom on it.")}
                 }
+            ]
 
-                Behavior on opacity { PropertyAnimation { duration: 100 } }
-                transitions: Transition {
-                    PropertyAnimation {
-                        target: tuto
-                        property: "opacity"
-                        to: 1.0
-                    }
-                }
+            SequentialAnimation {
+                id: anim
+                PropertyAnimation { target: tuto; property: "opacity"; easing.type: Easing.Linear; from: 1.0; to: 0; duration: 200 }
+                PropertyAction { target: tuto; property: "state"; value: tuto.newState }
+                PropertyAnimation { target: tuto; property: "opacity"; easing.type: Easing.Linear; from: 0; to: 1.0; duration: 200 }
+            }
+
+            Behavior on opacity { PropertyAnimation { duration: 100 } }
+            transitions: Transition {
+                    PropertyAnimation { target: tuto; property: "opacity"; to: 1.0 }
             }
         }
 

@@ -40,9 +40,9 @@ QString File::sanitizeUrl(const QString &str)
     QString target(str);
 
     // make sure we strip off invalid URL schemes:
-    if (target.startsWith(QLatin1String("file://")))
+    if (target.startsWith("file://"))
         target.remove(0, 7);
-    else if (target.startsWith(QLatin1String("qrc:/")))
+    else if (target.startsWith("qrc:/"))
         target.remove(0, 3);
 
     return target;

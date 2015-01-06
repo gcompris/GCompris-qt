@@ -29,58 +29,50 @@ Item {
     id: keyboard
     
     // public:
-    readonly property var qwertyLayout: // a default layout (qwerty)
-                      [  [ { label: "1", shiftLabel: "!" },
-                           { label: "2", shiftLabel: "@" },
-                           { label: "3", shiftLabel: "#" },
-                           { label: "4", shiftLabel: "$" },
-                           { label: "5", shiftLabel: "%" },
-                           { label: "6", shiftLabel: "^" },
-                           { label: "7", shiftLabel: "&" },
-                           { label: "8", shiftLabel: "*" },
-                           { label: "9", shiftLabel: "(" },
-                           { label: "0", shiftLabel: ")" },
-                           { label: "-", shiftLabel: "_" },
-                           { label: "=", shiftLabel: "+" } ],
+    property var qwertyLayout: // a default layout (qwerty)
+                      [/*[ { label: "1" },
+                           { label: "2" },
+                           { label: "3" },
+                           { label: "4" },
+                           { label: "5" },
+                           { label: "6" },
+                           { label: "7" },
+                           { label: "8" },
+                           { label: "9" },
+                           { label: "0" } ],*/
                          
-                         [ { label: "q", shiftLabel: "Q" },
-                           { label: "w", shiftLabel: "W" },
-                           { label: "e", shiftLabel: "E" },
-                           { label: "r", shiftLabel: "R" },
-                           { label: "t", shiftLabel: "T" },
-                           { label: "y", shiftLabel: "Y" },
-                           { label: "u", shiftLabel: "U" },
-                           { label: "i", shiftLabel: "I" },
-                           { label: "o", shiftLabel: "O" },
-                           { label: "p", shiftLabel: "P" } ],
+                         [ { label: "q" },
+                           { label: "w" },
+                           { label: "e" },
+                           { label: "r" },
+                           { label: "t" },
+                           { label: "y" },
+                           { label: "u" },
+                           { label: "i" },
+                           { label: "o" },
+                           { label: "p" } ],
                            
-                         [ { label: "a", shiftLabel: "A" },
-                           { label: "s", shiftLabel: "S" },
-                           { label: "d", shiftLabel: "D" },
-                           { label: "f", shiftLabel: "F" },
-                           { label: "g", shiftLabel: "G" },
-                           { label: "h", shiftLabel: "H" },
-                           { label: "j", shiftLabel: "J" },
-                           { label: "k", shiftLabel: "K" },
-                           { label: "l", shiftLabel: "L" } ],
+                         [ { label: "a" },
+                           { label: "s" },
+                           { label: "d" },
+                           { label: "f" },
+                           { label: "g" },
+                           { label: "h" },
+                           { label: "j" },
+                           { label: "k" },
+                           { label: "l" } ],
                            
-                         [ { label: "z", shiftLabel: "Z" },
-                           { label: "x", shiftLabel: "X" },
-                           { label: "c", shiftLabel: "C" },
-                           { label: "v", shiftLabel: "V" },
-                           { label: "b", shiftLabel: "B" },
-                           { label: "n", shiftLabel: "N" },
-                           { label: "m", shiftLabel: "M" } ]]
+                         [ { label: "z" },
+                           { label: "x" },
+                           { label: "c" },
+                           { label: "v" },
+                           { label: "b" },
+                           { label: "n" },
+                           { label: "m" } ]]
     
-    readonly property string backspace: "\u2190"
-    readonly property string shiftUpSymbol:   "\u21E7"
-    readonly property string shiftDownSymbol: "\u21E9"
-
+    property string backspace: "\u2190"
     property var layout: null
-    property bool shiftKey: false
-    // property bool ctrlKey: false;
-    // ...
-
+    //property bool shift: false  // FIXME: add support for shift-key
     property bool equalKeyWidth: true
     property int rowSpacing: 5 * ApplicationInfo.ratio
     property int keySpacing: 3 * ApplicationInfo.ratio
@@ -103,8 +95,6 @@ Item {
     anchors.bottom: parent.bottom
     anchors.horizontalCenter: parent.horizontalCenter
     
-    property int modifiers: Qt.NoModifier;  // currently active key modifiers, internal only
-
     // private properties:
     QtObject {
         id: priv
@@ -127,15 +117,7 @@ Item {
             return;
         }
         nRows = a.length;
-        // if we need special keys, put them in a seperate row at the bottom:
-        if (keyboard.shiftKey) {
-            a.push([ {
-                label     : keyboard.shiftUpSymbol + " Shift",
-                shiftLabel: keyboard.shiftDownSymbol + " Shift",
-                specialKeyValue: Qt.Key_Shift } ]);
-        }
         var i
-        var seenLabels = [];
         for (i = 0; i < a.length; i++) {
             if (!Array.isArray(a[i])) {
                 error("VirtualKeyboard: Invalid layout, expecting array of arrays of keys");
@@ -147,50 +129,23 @@ Item {
                 if (undefined === a[i][j].label) {
                     error("VirtualKeyboard: Invalid layout, invalid key object");
                     return;
-                }
-                if (undefined === a[i][j].specialKeyValue)
-                    a[i][j].specialKeyValue = 0;
-                var label = a[i][j].label;
-                // if we have a shift key lowercase all labels:
-                if (shiftKey && label == label.toLocaleUpperCase())
-                    label = label.toLocaleLowerCase();
-                // drop duplicates (this alters keyboard layout, though!):
-                if (seenLabels.indexOf(label) !=-1) {
-                    a[i].splice(j, 1);
-                    j--;
-                    continue;
-                }
-                a[i][j].label = label;
-                seenLabels.push(label);
-                if (keyboard.shiftKey && undefined === a[i][j].shiftLabel)
-                    a[i][j].shiftLabel = a[i][j].label.toLocaleUpperCase();
+                } 
             }
         }
         
         // populate
         for (i = 0; i < a.length; i++) {
-            var row = a[i];
-            var offset = 0;
-            if (!shiftKey || i < a.length-1)
-                    equalKeyWidth ? ((maxButtons - row.length) *
+            var offset =
+                    equalKeyWidth ? ((maxButtons - a[i].length) *
                                      (keyboard.width - maxButtons *
                                       keyboard.rowSpacing - keyboard.margin*2) /
                                      maxButtons) : 0;
             rowListModel.append({ rowNum: i,
                                   offset: offset,
-                                  keys: row});
+                                  keys: a[i]});
         }
         priv.numRows = i;
         priv.initialized = (priv.numRows > 0);
-    }
-    
-    function handleVirtualKeyPress(virtualKey) {
-        if (virtualKey.specialKey == Qt.Key_Shift)
-            keyboard.modifiers ^= Qt.ShiftModifier;
-//      else if (virtualKey.specialKey == Qt.Key_Alt)
-//          keyboard.modifiers ^= Qt.AltModifier;
-        else
-            keyboard.keypress(virtualKey.text);
     }
     
     onLayoutChanged: {
@@ -205,9 +160,8 @@ Item {
         /* Currently expects the following 
          * ListElement {
          *   rowNum: 1
-         *   keys: [ { label: "a", shiftLabel: "A" },
-         *           { label: "b", shiftLabel: "B" },
-         *           { label: "Shift", shiftLabel: "Shift", special },
+         *   keys: [ { label: "a" },
+         *           { label: "b", 
          *             ...}
          *         ]
          * }
@@ -298,13 +252,11 @@ Item {
                                         keyboardRow.spacing - offset - keyboard.margin*2) /
                                        keyboardRowRepeater.count
                                 height: keyboard.keyHeight
-                                modifiers: keyboard.modifiers
-                                specialKey: specialKeyValue
                             }
                             
-                            onItemAdded: item.pressed.connect(keyboard.handleVirtualKeyPress);
+                            onItemAdded: item.pressed.connect(keyboard.keypress);
                             
-                            onItemRemoved: item.pressed.disconnect(keyboard.handleVirtualKeyPress);
+                            onItemRemoved: item.pressed.disconnect(keyboard.keypress);
                         } // Repeater
                     } // Row
             } // Item

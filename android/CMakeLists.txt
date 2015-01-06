@@ -1,18 +1,7 @@
 #android build
 # copied/inspired from stellarium project (http://www.stellarium.org/wiki/index.php/Building_for_Android)
 
-LIST(APPEND JAVA_SRCS "src/com/android/vending/billing/IInAppBillingService.aidl" "src/net/gcompris/GComprisActivity.java")
-
-FOREACH(JavaSource ${JAVA_SRCS})
-  ADD_CUSTOM_COMMAND(
-    OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/${JavaSource}
-    COMMAND ${CMAKE_COMMAND} -E copy ${CMAKE_CURRENT_SOURCE_DIR}/${JavaSource} ${CMAKE_CURRENT_BINARY_DIR}/${JavaSource}
-    DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/${JavaSource}
-    )
-  LIST(APPEND TARGET_JAVA_FILES ${CMAKE_CURRENT_BINARY_DIR}/${JavaSource})
-ENDFOREACH()
-
-ADD_CUSTOM_TARGET (java_src DEPENDS ${TARGET_JAVA_FILES})
+file(GLOB SRC_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "src/*/*/*/*")
 
 find_program(ANDROID_DEPLOY_QT NAMES androiddeployqt PATHS ${_qt5Core_install_prefix}/bin/ )
 
@@ -70,22 +59,22 @@ add_custom_command (
 
 # Command to create apk from Makefile
 add_custom_target (apk_debug
-   DEPENDS createApkFromAndroidDeployQtDebug java_src
+   DEPENDS createApkFromAndroidDeployQtDebug
 )
 
 # Command to create apk from Makefile
 add_custom_target (apk_release
-   DEPENDS createApkFromAndroidDeployQtRelease java_src
+   DEPENDS createApkFromAndroidDeployQtRelease
 )
 
 # Command to create signed apk from Makefile
 add_custom_target (apk_signed
-   DEPENDS createApkSignedFromAndroidDeployQtRelease java_src
+   DEPENDS createApkSignedFromAndroidDeployQtRelease
 )
 
 # Command to create signed aligned apk from Makefile
 add_custom_target (apk_signed_aligned
-   DEPENDS createApkSignedAlignedFromAndroidDeployQtRelease java_src
+   DEPENDS createApkSignedAlignedFromAndroidDeployQtRelease
 )
 
 # Command to install the signed aligned apk through adb from Makefile

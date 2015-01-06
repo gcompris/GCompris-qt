@@ -20,6 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import QtQuick.Controls 1.0
 import GCompris 1.0
 
 import "../../core"
@@ -49,7 +50,6 @@ ActivityBase {
         QtObject {
             id: items
             property alias background: background
-            property GCAudio audioEffects: activity.audioEffects
             property alias fireman: fireman
             property alias bar: bar
             property alias bonus: bonus
@@ -131,9 +131,6 @@ ActivityBase {
                             items.currentLock++
                             if(items.currentLock == items.lastLock) {
                                 background.win()
-                                activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/water.wav")
-                            } else {
-                                activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/darken.wav")
                             }
                         }
                     }

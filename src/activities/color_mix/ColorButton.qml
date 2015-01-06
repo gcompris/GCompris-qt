@@ -39,7 +39,7 @@ Rectangle {
         anchors.centerIn: parent
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        fontSize: Math.max(parent.height * 0.8, 10)
+        font.pointSize: Math.max(parent.height * 0.8, 10)
     }
 
     MouseArea {
@@ -48,6 +48,7 @@ Rectangle {
         height: 3 * parent.height
         width: 3 * parent.width
         hoverEnabled: true
+        onClicked: button.clicked()
     }
 
     states: [

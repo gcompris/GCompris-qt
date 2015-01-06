@@ -35,7 +35,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: Activity.url + "/background.svg"
+        source: Activity.url + "/background.svgz"
         sourceSize.width: parent.width
         signal start
         signal stop
@@ -50,7 +50,6 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property GCAudio audioEffects: activity.audioEffects
             property alias answerModel: answerModel
             property alias pocketModel: pocketModel
             property alias store: store
@@ -119,10 +118,9 @@ ActivityBase {
                             sourceSize.height: column.itemHeight
                             height: column.itemHeight
 
-                            MultiPointTouchArea {
+                            MouseArea {
                                 anchors.fill: parent
-                                mouseEnabled: true
-                                onReleased: Activity.unpay(index)
+                                onClicked: Activity.unpay(index)
                             }
                         }
                     }
@@ -169,7 +167,7 @@ ActivityBase {
                         id: tux
                         visible: activity.dataset === "BACK_WITHOUT_CENTS" ||
                                  activity.dataset === "BACK_WITH_CENTS"
-                        source: Activity.url + "/tux.svg"
+                        source: Activity.url + "/tux.svgz"
                         sourceSize.height:  column.itemStoreHeight
                         Repeater {
                             id: tuxMoney
@@ -189,7 +187,7 @@ ActivityBase {
                             sourceSize.height:  column.itemStoreHeight
                             GCText {
                                 text: modelData.price
-                                fontSize: 20
+                                font.pointSize: 20
                                 font.weight: Font.DemiBold
                                 style: Text.Outline
                                 styleColor: "black"
@@ -224,7 +222,7 @@ ActivityBase {
                     horizontalAlignment: Text.AlignHCenter
                     width: column.width
                     wrapMode: Text.WordWrap
-                    fontSize: regularSize
+                    font.pointSize: 16
                 }
             }
 
@@ -269,10 +267,9 @@ ActivityBase {
                             sourceSize.height:  column.itemHeight
                             height: column.itemHeight
 
-                            MultiPointTouchArea {
+                            MouseArea {
                                 anchors.fill: parent
-                                mouseEnabled: true
-                                onReleased: Activity.pay(index)
+                                onClicked: Activity.pay(index)
                             }
                         }
                     }

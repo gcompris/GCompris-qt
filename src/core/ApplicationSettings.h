@@ -46,11 +46,8 @@
 #include <QQmlEngine>
 #include <QUrl>
 #include <QtGlobal>
-#include <QDebug>
 
 #include <QSettings>
-
-#define GC_DEFAULT_LOCALE "system"
 
 class ApplicationSettings : public QObject
 {
@@ -67,8 +64,6 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(bool isAutomaticDownloadsEnabled READ isAutomaticDownloadsEnabled WRITE setIsAutomaticDownloadsEnabled NOTIFY automaticDownloadsEnabledChanged)
     Q_PROPERTY(quint32 filterLevelMin READ filterLevelMin WRITE setFilterLevelMin NOTIFY filterLevelMinChanged)
     Q_PROPERTY(quint32 filterLevelMax READ filterLevelMax WRITE setFilterLevelMax NOTIFY filterLevelMaxChanged)
-	Q_PROPERTY(bool isDemoMode READ isDemoMode WRITE setDemoMode NOTIFY demoModeChanged)
-	Q_PROPERTY(bool sectionVisible READ sectionVisible WRITE setSectionVisible NOTIFY sectionVisibleChanged)
 
     // admin group
     Q_PROPERTY(QString downloadServerUrl READ downloadServerUrl WRITE setDownloadServerUrl NOTIFY downloadServerUrlChanged)
@@ -76,8 +71,8 @@ class ApplicationSettings : public QObject
     // internal group
     Q_PROPERTY(quint32 exeCount READ exeCount WRITE setExeCount NOTIFY exeCountChanged)
 
-	// no group
-	Q_PROPERTY(bool isBarHidden READ isBarHidden WRITE setBarHidden NOTIFY barHiddenChanged)
+    // no group
+    Q_PROPERTY(bool isBarHidden READ isBarHidden WRITE setBarHidden NOTIFY barHiddenChanged)
 
 public:
 
@@ -120,9 +115,7 @@ public:
         emit virtualKeyboardChanged();
     }
 
-    QString locale() const {
-        return m_locale;
-    }
+    QString locale() const { return m_locale; }
     void setLocale(const QString newLocale) {
         m_locale = newLocale;
         emit localeChanged();
@@ -158,28 +151,7 @@ public:
         emit filterLevelMaxChanged();
     }
 
-	bool isDemoMode() const { return m_isDemoMode; }
-    void setDemoMode(const bool newMode);
-
-    // Payment API
-    // Call a payment system to sync our demoMode state with it
-    void checkPayment();
-    // Called by the payment system
-    void bought(const bool isBought) {
-        if(m_isDemoMode != !isBought) {
-            m_isDemoMode = !isBought;
-            emit demoModeChanged();
-        }
-	}
-
-	bool sectionVisible() const { return m_sectionVisible; }
-	void setSectionVisible(const bool newMode) {
-		qDebug() << "c++ setSectionVisible=" << newMode;
-		m_sectionVisible = newMode;
-		emit sectionVisibleChanged();
-	}
-
-	QString downloadServerUrl() const { return m_downloadServerUrl; }
+    QString downloadServerUrl() const { return m_downloadServerUrl; }
     void setDownloadServerUrl(const QString newDownloadServerUrl) {
         m_downloadServerUrl = newDownloadServerUrl;
         emit downloadServerUrlChanged();
@@ -208,18 +180,12 @@ protected slots:
     Q_INVOKABLE void notifyAutomaticDownloadsEnabledChanged();
     Q_INVOKABLE void notifyFilterLevelMinChanged();
     Q_INVOKABLE void notifyFilterLevelMaxChanged();
-	Q_INVOKABLE void notifyDemoModeChanged();
-	Q_INVOKABLE void notifySectionVisibleChanged();
 
     Q_INVOKABLE void notifyDownloadServerUrlChanged();
 
     Q_INVOKABLE void notifyExeCountChanged();
 
     Q_INVOKABLE void notifyBarHiddenChanged();
-
-public slots:
-	Q_INVOKABLE bool isFavorite(const QString &activity);
-	Q_INVOKABLE void setFavorite(const QString &activity, bool favorite);
 
 protected:
 
@@ -234,8 +200,6 @@ signals:
     void automaticDownloadsEnabledChanged();
     void filterLevelMinChanged();
     void filterLevelMaxChanged();
-	void demoModeChanged();
-	void sectionVisibleChanged();
 
     void downloadServerUrlChanged();
 
@@ -262,8 +226,6 @@ private:
 	bool m_noCursor;
     QString m_locale;
     QString m_font;
-	bool m_isDemoMode;
-	bool m_sectionVisible;
 
     QString m_downloadServerUrl;
 

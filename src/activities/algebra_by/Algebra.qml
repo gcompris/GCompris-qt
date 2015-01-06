@@ -53,7 +53,6 @@ ActivityBase {
             property alias score: score
             property alias balloon: balloon
             property alias timer:timer
-            property GCAudio audioEffects: activity.audioEffects
         }
 
         onStart: Activity.start(coreItems, otherItems, operand)
@@ -89,6 +88,7 @@ ActivityBase {
         Balloon {
             id: balloon
             onTimeout: bonus.bad("smiley")
+            onReady: console.log("ready")
         }
 
         Bonus {

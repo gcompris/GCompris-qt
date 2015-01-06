@@ -157,7 +157,6 @@ function ballMotion() {
         velocityY *= -2
         velocityX *= -2
         tuxCollision = true
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
     }
 
     // Friction

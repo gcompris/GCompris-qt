@@ -9,11 +9,11 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="100"
+   width="67.216454"
    height="100"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.48.1 r9760"
    sodipodi:docname="instruments.svg">
   <title
      id="title4300">troubadour</title>
@@ -26,16 +26,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="36.722309"
-     inkscape:cy="50.262756"
+     inkscape:zoom="1.4"
+     inkscape:cx="6.2243438"
+     inkscape:cy="253.91511"
      inkscape:document-units="px"
      inkscape:current-layer="layer2"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="748"
-     inkscape:window-x="-2"
-     inkscape:window-y="-3"
+     inkscape:window-width="1680"
+     inkscape:window-height="1026"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
      inkscape:window-maximized="1"
      inkscape:object-paths="false"
      inkscape:object-nodes="true"
@@ -101,7 +101,7 @@
      transform="translate(-189.15753,-628.44235)">
     <g
        id="g3037"
-       transform="matrix(0.20756848,0,0,0.20756848,165.89439,577.24068)">
+       transform="matrix(0.20756848,0,0,0.20756848,149.89439,577.24068)">
       <path
          sodipodi:type="arc"
          style="fill:#6f918a;fill-opacity:1;stroke:none"
