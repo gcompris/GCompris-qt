@@ -147,7 +147,7 @@ ActivityBase {
         Image {
             id: tux
             visible: activity.withTux
-            source: 'qrc:/gcompris/src/activities/memory/resource/tux-teacher.png'
+            source: 'qrc:/gcompris/src/activities/memory/resource/tux-teacher.svg'
             anchors {
                 bottom: bar.bottom
                 right: player.left

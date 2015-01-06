@@ -45,12 +45,25 @@ ActivityInfo *ActivityInfoTree::getRootMenu() const
 
 QQmlListProperty<ActivityInfo> ActivityInfoTree::menuTree()
 {
-	return QQmlListProperty<ActivityInfo>(this, m_menuTree);
+	return QQmlListProperty<ActivityInfo>(this, NULL, &menuTreeCount, &menuTreeAt);
 }
 
-int ActivityInfoTree::menuTreeCount() const
+int ActivityInfoTree::menuTreeCount(QQmlListProperty<ActivityInfo> *property)
 {
-	return m_menuTree.count();
+	ActivityInfoTree *obj = qobject_cast<ActivityInfoTree*>(property->object);
+	if(obj)
+		return obj->m_menuTree.count();
+	else
+		return 0;
+}
+
+ActivityInfo *ActivityInfoTree::menuTreeAt(QQmlListProperty<ActivityInfo> *property, int index)
+{
+	ActivityInfoTree *obj = qobject_cast<ActivityInfoTree*>(property->object);
+	if(obj)
+		return obj->m_menuTree.at(index);
+	else
+		return 0;
 }
 
 ActivityInfo *ActivityInfoTree::menuTree(int index) const

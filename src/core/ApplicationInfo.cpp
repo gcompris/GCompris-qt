@@ -77,6 +77,8 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 #endif
 
     QRect rect = qApp->primaryScreen()->geometry();
+//    m_ratio = 2;
+//    m_ratio = 2.56;
     m_ratio = m_isMobile ? qMin(qMax(rect.width(), rect.height())/800. , qMin(rect.width(), rect.height())/520.) : 1;
     m_sliderHandleWidth = getSizeWithRatio(70);
     m_sliderHandleHeight = getSizeWithRatio(87);
@@ -176,6 +178,12 @@ void ApplicationInfo::setIsPortraitMode(const bool newMode)
 void ApplicationInfo::setWindow(QQuickWindow *window)
 {
     m_window = window;
+}
+
+void ApplicationInfo::screenshot(QString const &path)
+{
+    QImage img = m_window->grabWindow();
+    img.save(path);
 }
 
 void ApplicationInfo::notifyFullscreenChanged()

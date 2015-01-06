@@ -236,6 +236,7 @@ ActivityBase {
                         x: 5
                     }
                     GCText {
+                        id: title
                         anchors.top: parent.bottom
                         anchors.horizontalCenter: parent.horizontalCenter
                         horizontalAlignment: Text.AlignHCenter
@@ -247,6 +248,22 @@ ActivityBase {
                         maximumLineCount: 2
                         wrapMode: Text.WordWrap
                         text: ActivityInfoTree.menuTree[index].title
+                    }
+                    // If we have enough room at the bottom display the description
+                    GCText {
+                        id: description
+                        visible: delegateItem.height - (title.y + title.height) > description.height ? 1 : 0
+                        anchors.top: title.bottom
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        horizontalAlignment: Text.AlignHCenter
+                        width: activityBackground.width
+                        fontSizeMode: Text.Fit
+                        minimumPointSize: 7
+                        fontSize: regularSize
+                        elide: Text.ElideRight
+                        maximumLineCount: 3
+                        wrapMode: Text.WordWrap
+                        text: ActivityInfoTree.menuTree[index].description
                     }
                 }
                 ParticleSystemStar {

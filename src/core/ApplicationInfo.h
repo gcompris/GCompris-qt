@@ -133,6 +133,7 @@ protected slots:
     Q_INVOKABLE QStringList getSystemExcludedFonts();
     Q_INVOKABLE QStringList getFontsFromRcc();
     Q_INVOKABLE void notifyFullscreenChanged();
+    Q_INVOKABLE void screenshot(const QString &file);
 
 
 protected:

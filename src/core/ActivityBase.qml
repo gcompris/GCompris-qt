@@ -67,6 +67,10 @@ Item {
                    event.key === Qt.Key_W) {
             // Ctrl+W exit the current activity
             home()
+        } else if (event.modifiers === Qt.ControlModifier &&
+                   event.key === Qt.Key_P) {
+            // Ctrl+P Screenshot
+            ApplicationInfo.screenshot("/tmp/" + activityInfo.name.split('/')[0] + ".png")
         }
     }
     Keys.onReleased: {
