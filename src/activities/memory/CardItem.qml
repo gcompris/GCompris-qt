@@ -36,7 +36,6 @@ Flipable {
     property bool tuxTurn
 
     property GCAudio audioVoices
-    property GCAudio audioEffects
 
     onIsFoundChanged: {
         opacity = 0
@@ -59,9 +58,7 @@ Flipable {
 
     Timer {
         id: animationTimer
-        interval: items.tuxTurn ? 1500 : 750
-        running: false
-        repeat: false
+        interval: 750; running: false; repeat: false
         onTriggered: selectionReady()
     }
 
@@ -78,7 +75,7 @@ Flipable {
         }
         GCText {
             anchors.centerIn: parent
-            fontSize: largeSize
+            font.pointSize: 24
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             color: "black"
@@ -113,24 +110,19 @@ Flipable {
 
     MouseArea {
         anchors.fill: parent
-        enabled: card.isBack && !card.isFound && !card.tuxTurn && items.selectionCount < 2
+        enabled: card.isBack && !card.isFound && !card.tuxTurn
         onClicked: selected()
     }
 
     function selected() {
+        Activity.reverseCards()
         card.isBack = false
         card.isShown = true
-        items.selectionCount++
         animationTimer.start()
-        audioEffects.play(Activity.url + "card_flip.wav")
     }
 
     function selectionReady() {
-        var pairs = Activity.addPlayQueue(card)
-        var win = Activity.reverseCardsIfNeeded()
-        if(tuxTurn && win || tuxTurn && !pairs)
-            Activity.tuxPlay()
-
+        Activity.cardClicked(card)
         if (card.pairData.sound) {
             audioVoices.play(card.pairData.sound)
         }

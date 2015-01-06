@@ -19,8 +19,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
-
-import "../../core"
 import "magic-hat.js" as Activity
 
 Item {
@@ -30,7 +28,6 @@ Item {
     property alias state: hatImg.state
     property alias target: offStar
     property int starsSize
-    property GCAudio audioEffects
 
     function getTarget() {
         return offStar
@@ -93,8 +90,8 @@ Item {
                                RotationAnimation.Clockwise
                 duration: 500
                 onRunningChanged: if(!rotAnim.running && hatImg.state == "Rotated") {
-                        Activity.moveStarsUnderHat()
-                    }
+                                      Activity.moveStarsUnderHat()
+                                  }
     }
 
     MouseArea {

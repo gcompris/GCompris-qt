@@ -30,11 +30,10 @@ Dialog {
 
     title: qsTr("Download in progress")
     modality: Qt.ApplicationModal
-    standardButtons: StandardButton.NoButton
 
     property alias text: downloadDialogText.text
     property bool autohide: false;      ///< whether to close the dialog automatically when download has finished
-    property bool reportSuccess: true;  ///< whether to report successful
+    property bool reportSuccess: true;  ///< whether to report succesful  
     property bool reportError: true;
     property bool dynamic: false        ///< whether created dynamically
     property alias backgroundButtonVisible: backgroundButton.visible
@@ -144,16 +143,14 @@ Dialog {
             
             Button {
                 id: backgroundButton
-                //: Run this task in background
-                text: qsTr("Background")
+                text: "Background"
                 style: GCButtonStyle {}
                 visible: true
                 onClicked: downloadDialog.shutdown();
             }
             Button {
                 id: abortButton
-                width: downloadColumn.width/2
-                text: qsTr("Abort")
+                text: "Abort"
                 style: GCButtonStyle {}
                 visible: true
                 onClicked: {

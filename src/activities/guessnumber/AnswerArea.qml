@@ -56,7 +56,7 @@ Rectangle {
         verticalAlignment: Text.AlignVCenter
         text: answerBackground.userEntry
         color: "black"
-        fontSize: 28
+        font.pointSize: 28
         style: Text.Outline
         styleColor: "white"
     }

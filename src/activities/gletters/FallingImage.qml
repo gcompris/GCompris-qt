@@ -123,7 +123,6 @@ Item {
 
         onStopped: {
             Activity.audioCrashPlay();
-            Activity.appendRandomWord(word.text)
             Activity.deleteWord(word);
         }
     }

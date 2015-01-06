@@ -75,8 +75,6 @@ mosaic
 numbers-odd-even
 penalty
 planegame
-redraw
-redraw_symmetrical
 reversecount
 scalesboard
 scalesboard_weight

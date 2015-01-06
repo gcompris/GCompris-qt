@@ -41,12 +41,8 @@ function stop() {
 }
 
 function initLevel() {
-    /* Check items.bar because when starting followline at least twice,
-     it is undefined (called by FollowLine.qml:onHeightChanged())
-    */
-    if(!items || !items.bar)
+    if(!items)
         return
-
     items.bar.level = currentLevel + 1
     items.currentLock = 0
     destroyLineParts()
@@ -100,7 +96,6 @@ function createLinePart(index, x, y, width, height, rotation) {
     var part = component.createObject(
                 items.background,
                 {
-                    "audioEffects": items.audioEffects,
                     "x": x,
                     "y": y,
                     "width": width,

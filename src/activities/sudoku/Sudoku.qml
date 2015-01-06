@@ -21,9 +21,8 @@
 import QtQuick 2.2
 import GCompris 1.0
 
-import "../../core"
+import "qrc:/gcompris/src/core"
 import "sudoku.js" as Activity
-import "."
 
 ActivityBase {
     id: activity
@@ -56,7 +55,6 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias score: score
-            property GCAudio audioEffects: activity.audioEffects
             property alias availablePiecesModel: availablePieces
             property alias columns: sudoColumn.columns
             property alias rows: sudoColumn.rows
@@ -102,7 +100,6 @@ ActivityBase {
 
         SudokuListWidget {
             id: availablePieces
-            audioEffects: activity.audioEffects
         }
 
         ListModel {

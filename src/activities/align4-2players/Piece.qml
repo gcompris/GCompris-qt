@@ -20,7 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.0
-import "align4.js" as Activity
+import "align4-2players.js" as Activity
 
 import GCompris 1.0
 
@@ -54,19 +54,11 @@ Image {
             }
         },
         State {
-            name: "crossed1"
+            name: "crossed"
             PropertyChanges {
                 target: piece
                 opacity: 1.0
-                source: Activity.url + "win1.svg"
-            }
-        },
-        State {
-            name: "crossed2"
-            PropertyChanges {
-                target: piece
-                opacity: 1.0
-                source: Activity.url + "win2.svg"
+                source: Activity.url + "win.svg"
             }
         }
     ]

@@ -32,10 +32,10 @@ Image {
     source: Activity.url + "intro_bg.svg"
     sourceSize.width: parent.width
     
-    GCText {
+    Text {
         id: heading
         text: qsTr("Braille : Unlocking the Code")
-        fontSize: largeSize
+        font.pointSize: 24
         horizontalAlignment: Text.AlignHCenter
         font.weight: Font.DemiBold
         anchors.centerIn: parent.Center
@@ -60,13 +60,13 @@ Image {
         }
     }
     
-    GCText {
+    Text {
         id: body_text1
         text: qsTr('The Braille system is a method that is used by blind people to read and write.') + "\n" +
               qsTr('Each Braille character, or cell, is made up of six dot positions, arranged in ' +
                    'a rectangle containing two columns of three dots each. As seen on the left, each ' +
                    'dot is referenced by a number from 1 to 6.')
-        fontSize: regularSize
+        font.pointSize:  14
         font.weight: Font.DemiBold
         horizontalAlignment: Text.AlignJustify
         anchors {
@@ -82,10 +82,10 @@ Image {
         wrapMode: Text.WordWrap
     }
     
-    GCText {
+    Text {
         id: bottom_text
         text: qsTr("When you are ready, click on me and try reproducing Braille characters.")
-        fontSize: smallSize
+        font.pointSize:  12
         font.weight: Font.DemiBold
         width: parent.width * 0.3
         color: "white"

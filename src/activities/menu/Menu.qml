@@ -19,6 +19,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.2
+import QtQuick.Controls 1.1
 import "../../core"
 import GCompris 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
@@ -35,8 +36,7 @@ ActivityBase {
         else {
             pageView.pop();
             // Restore focus that has been taken by the loaded activity
-            if(pageView.currentItem == menuActivity)
-                focus = true;
+            focus = true;
         }
     }
 
@@ -46,7 +46,7 @@ ActivityBase {
     property variant sections: [
         {
             icon: menuActivity.url + "all.svgz",
-            tag: "favorite"
+            tag: "all"
         },
         {
             icon: menuActivity.url + "computer.svgz",
@@ -113,15 +113,6 @@ ActivityBase {
 
         property var currentActiveGrid: activitiesGrid
         property bool keyboardMode: false
-        Keys.onPressed: {
-            if (event.modifiers === Qt.ControlModifier &&
-                    event.key === Qt.Key_S) {
-                // Ctrl+S toggle show / hide section
-                ApplicationSettings.sectionVisible = !ApplicationSettings.sectionVisible
-            } else if(event.key === Qt.Key_Space) {
-                currentActiveGrid.currentItem.selectCurrentItem()
-            }
-        }
         Keys.onReleased: {
             keyboardMode = true
             event.accepted = false
@@ -140,16 +131,11 @@ ActivityBase {
             model: sections
             width: horizontal ? main.width : sectionCellWidth
             height: horizontal ? sectionCellHeight : main.height - bar.height
-            x: ApplicationSettings.sectionVisible ? section.initialX : -sectionCellWidth
-            y: ApplicationSettings.sectionVisible ? section.initialY : -sectionCellHeight
+            x: 4
+            y: 4
             cellWidth: sectionCellWidth
             cellHeight: sectionCellHeight
             interactive: false
-            keyNavigationWraps: true
-
-            property int initialX: 4
-            property int initialY: 4
-
             Component {
                 id: sectionDelegate
                 Item {
@@ -157,13 +143,18 @@ ActivityBase {
                     width: sectionCellWidth
                     height: sectionCellHeight
 
+                    Rectangle {
+                        anchors.fill: parent
+                        color: backgroundSection.GridView.isCurrentItem ?
+                                   "#99FFFFFF" : "#00000000"
+                    }
+
                     Image {
                         source: modelData.icon
                         sourceSize.height: sectionIconHeight
                         anchors.margins: 5
                         anchors.horizontalCenter: parent.horizontalCenter
                     }
-
                     ParticleSystemStar {
                         id: particles
                         anchors.fill: backgroundSection
@@ -185,30 +176,22 @@ ActivityBase {
                 }
             }
             delegate: sectionDelegate
-            highlight: Item {
+            highlight: Image {
                 width: sectionCellWidth
                 height: sectionCellHeight
-
-                Rectangle {
-                    anchors.fill: parent
-                    color:  "#99FFFFFF"
-                }
-                Image {
-                    source: "qrc:/gcompris/src/core/resource/button.svgz"
-                    anchors.fill: parent
-                }
-                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
-                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
+                source: "qrc:/gcompris/src/core/resource/button.svgz"
             }
+            highlightMoveDuration: 300
+            focus: true
         }
 
         // Activities
         property int iconWidth: 190 * ApplicationInfo.ratio
         property int iconHeight: 190 * ApplicationInfo.ratio
-        property int activityCellWidth:
-            horizontal ? background.width / Math.floor(background.width / iconWidth) :
-                         (background.width - section.width) / Math.floor((background.width - section.width) / iconWidth)
-        property int activityCellHeight: iconHeight * 1.5
+        property int cellWidth2:
+            horizontal ? iconWidth+(main.width%iconWidth)/Math.round(main.width/iconWidth) :
+                         iconWidth+((main.width - section.width)%iconWidth)/Math.round((main.width - section.width)/iconWidth)
+        property int cellHeight2: iconHeight * 1.5
 
         GridView {
             id: activitiesGrid
@@ -218,29 +201,30 @@ ActivityBase {
                 left: horizontal ? parent.left : section.right
                 margins: 4
             }
-            width: background.width
-            cellWidth: activityCellWidth
-            cellHeight: activityCellHeight
+            width: main.width
+            cellWidth: cellWidth2
+            cellHeight: cellHeight2
+            focus: true
             clip: true
             model: ActivityInfoTree.menuTree
-            keyNavigationWraps: true
-            property int spacing: 10
 
             delegate: Item {
                 id: delegateItem
-                width: activityCellWidth - activitiesGrid.spacing
-                height: activityCellHeight - activitiesGrid.spacing
+                width: iconWidth+(main.width%iconWidth)/Math.round(main.width/iconWidth)
+                height: iconHeight
                 Rectangle {
-                    id: activityBackground
-                    width: activityCellWidth - activitiesGrid.spacing
-                    height: activityCellHeight - activitiesGrid.spacing
+                    id: activityBackgroung
+                    width: cellWidth2 - 10
+                    height: cellHeight2 - 10
                     anchors.horizontalCenter: parent.horizontalCenter
-                    color: "white"
-                    opacity: 0.5
+                    opacity: 0.6
+                    border.width: delegateItem.GridView.isCurrentItem &&
+                                  background.keyboardMode ? 6 : 2
+                    border.color: "black"
                 }
                 Image {
                     source: "qrc:/gcompris/src/activities/" + icon;
-                    anchors.top: activityBackground.top
+                    anchors.top: activityBackgroung.top
                     anchors.horizontalCenter: parent.horizontalCenter
                     sourceSize.height: iconHeight
                     anchors.margins: 5
@@ -251,25 +235,14 @@ ActivityBase {
                         sourceSize.width: iconWidth * 0.15
                         x: 5
                     }
-                    Image {
-                        anchors {
-                            horizontalCenter: parent.horizontalCenter
-                            top: parent.top
-                            rightMargin: 4
-                        }
-                        source: demo || !ApplicationSettings.isDemoMode
-                                ? "" :
-                                  "qrc:/gcompris/src/core/resource/cancel.svgz"
-                        sourceSize.width: 30 * ApplicationInfo.ratio
-                    }
                     GCText {
                         anchors.top: parent.bottom
                         anchors.horizontalCenter: parent.horizontalCenter
                         horizontalAlignment: Text.AlignHCenter
-                        width: activityBackground.width
+                        width: activityBackgroung.width
                         fontSizeMode: Text.Fit
                         minimumPointSize: 7
-                        fontSize: regularSize
+                        font.pointSize: 14
                         elide: Text.ElideRight
                         maximumLineCount: 2
                         wrapMode: Text.WordWrap
@@ -278,47 +251,24 @@ ActivityBase {
                 }
                 ParticleSystemStar {
                     id: particles
-                    anchors.fill: activityBackground
+                    anchors.fill: activityBackgroung
                 }
                 MouseArea {
-                    anchors.fill: activityBackground
-                    onClicked: selectCurrentItem()
-                }
-                Image {
-                    source: menuActivity.url + (favorite ? "all.svgz" : "all_disabled.svg");
-                    anchors {
-                        top: parent.top
-                        right: parent.right
-                        rightMargin: 4 * ApplicationInfo.ratio
+                    anchors.fill: activityBackgroung
+                    hoverEnabled: true
+                    onClicked: {
+                        selectCurrentItem()
                     }
-                    sourceSize.width: iconWidth * 0.25
-                    visible: ApplicationSettings.sectionVisible
-                    MouseArea {
-                        anchors.fill: parent
-                        onClicked: favorite = !favorite
-                    }
+                    onEntered: activitiesGrid.currentIndex = index
                 }
 
                 function selectCurrentItem() {
                     particles.emitter.burst(50)
                     ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
-                    activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.menuTree[index].name,
-                                             {
-                                                 'audioVoices': audioVoices,
-                                                 'audioEffects': audioEffects
-                                             })
+                    activityLoader.source = "qrc:/gcompris/src/activities/" +
+                            ActivityInfoTree.menuTree[index].name
                     if (activityLoader.status == Loader.Ready) loadActivity()
                 }
-            }
-            highlight: Rectangle {
-                width: activityCellWidth - activitiesGrid.spacing
-                height: activityCellHeight - activitiesGrid.spacing
-                color:  "#AAFFFFFF"
-                border.width: 3
-                border.color: "black"
-                visible: background.keyboardMode
-                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
-                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
         }
 

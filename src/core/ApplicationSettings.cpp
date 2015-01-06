@@ -51,12 +51,12 @@
 #include "ApplicationInfo.h"
 #include <QDebug>
 
+#define GC_DEFAULT_LOCALE "en_US.UTF-8"
 #define GC_DEFAULT_FONT "Andika-R.ttf"
 
 static const QString GENERAL_GROUP_KEY = "General";
 static const QString ADMIN_GROUP_KEY = "Admin";
 static const QString INTERNAL_GROUP_KEY = "Internal";
-static const QString FAVORITE_GROUP_KEY = "Favorite";
 
 static const QString FULLSCREEN_KEY = "fullscreen";
 static const QString ENABLE_AUDIO_VOICES_KEY = "enableAudioVoices";
@@ -76,14 +76,11 @@ static const QString FILTER_LEVEL_MAX = "filterLevelMax";
 
 static const QString DEFAULT_CURSOR = "defaultCursor";
 static const QString NO_CURSOR = "noCursor";
-static const QString DEMO_KEY = "demo";
-static const QString SECTION_VISIBLE = "sectionVisible";
 
 ApplicationSettings *ApplicationSettings::m_instance = NULL;
 
 ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
-	 m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
-			  "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf", QSettings::IniFormat)
+     m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) + "/gcompris/GCompris.conf", QSettings::IniFormat)
 
 {
     // initialize from settings file or default
@@ -95,19 +92,12 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
 	m_isAudioVoicesEnabled = m_config.value(ENABLE_AUDIO_VOICES_KEY, true).toBool();
     m_isVirtualKeyboard = m_config.value(VIRTUALKEYBOARD_KEY,
             ApplicationInfo::getInstance()->isMobile()).toBool();
-    m_locale = m_config.value(LOCALE_KEY, GC_DEFAULT_LOCALE).toString();
+    m_locale = m_config.value(LOCALE_KEY,
+            QLocale::system() == QLocale::c() ? GC_DEFAULT_LOCALE : QString(QLocale::system().name() + ".UTF-8")).toString();
     m_font = m_config.value(FONT_KEY, GC_DEFAULT_FONT).toString();
     m_isEmbeddedFont = m_config.value(IS_CURRENT_FONT_EMBEDDED, true).toBool();
 
-// The default demo mode based on the platform
-#if defined(WITH_ACTIVATION_CODE)
-	m_isDemoMode = m_config.value(DEMO_KEY, true).toBool();
-#else
-	m_isDemoMode = m_config.value(DEMO_KEY, false).toBool();
-#endif
-
-	m_sectionVisible = m_config.value(SECTION_VISIBLE, true).toBool();
-	m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
+    m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
             !ApplicationInfo::getInstance()->isMobile()).toBool();
     m_filterLevelMin = m_config.value(FILTER_LEVEL_MIN, 1).toUInt();
     m_filterLevelMax = m_config.value(FILTER_LEVEL_MAX, 6).toUInt();
@@ -138,9 +128,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, SIGNAL(automaticDownloadsEnabledChanged()), this, SLOT(notifyAutomaticDownloadsEnabledChanged()));
     connect(this, SIGNAL(filterLevelMinChanged()), this, SLOT(notifyFilterLevelMinChanged()));
     connect(this, SIGNAL(filterLevelMaxChanged()), this, SLOT(notifyFilterLevelMaxChanged()));
-	connect(this, SIGNAL(sectionVisibleChanged()), this, SLOT(notifySectionVisibleChanged()));
-	connect(this, SIGNAL(demoModeChanged()), this, SLOT(notifyDemoModeChanged()));
-	connect(this, SIGNAL(downloadServerUrlChanged()), this, SLOT(notifyDownloadServerUrlChanged()));
+    connect(this, SIGNAL(downloadServerUrlChanged()), this, SLOT(notifyDownloadServerUrlChanged()));
     connect(this, SIGNAL(exeCountChanged()), this, SLOT(notifyExeCountChanged()));
     connect(this, SIGNAL(barHiddenChanged()), this, SLOT(notifyBarHiddenChanged()));
 }
@@ -159,8 +147,6 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
     m_config.setValue(FILTER_LEVEL_MIN, m_filterLevelMin);
 	m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
-	m_config.setValue(DEMO_KEY, m_isDemoMode);
-	m_config.setValue(SECTION_VISIBLE, m_sectionVisible);
 	m_config.setValue(DEFAULT_CURSOR, m_defaultCursor);
 	m_config.setValue(NO_CURSOR, m_noCursor);
 	m_config.endGroup();
@@ -240,18 +226,6 @@ void ApplicationSettings::notifyFilterLevelMaxChanged()
     qDebug() << "filterLevelMax set to: " << m_filterLevelMax;
 }
 
-void ApplicationSettings::notifyDemoModeChanged()
-{
-	updateValueInConfig(GENERAL_GROUP_KEY, DEMO_KEY, m_isDemoMode);
-	qDebug() << "notifyDemoMode: " << m_isDemoMode;
-}
-
-void ApplicationSettings::notifySectionVisibleChanged()
-{
-	updateValueInConfig(GENERAL_GROUP_KEY, SECTION_VISIBLE, m_sectionVisible);
-	qDebug() << "notifySectionVisible: " << m_sectionVisible;
-}
-
 void ApplicationSettings::notifyDownloadServerUrlChanged()
 {
     updateValueInConfig(ADMIN_GROUP_KEY, DOWNLOAD_SERVER_URL_KEY, m_downloadServerUrl);
@@ -267,19 +241,6 @@ void ApplicationSettings::notifyExeCountChanged()
 void ApplicationSettings::notifyBarHiddenChanged()
 {
     qDebug() << "is bar hidden: " << m_isBarHidden;
-}
-
-void ApplicationSettings::setFavorite(const QString &activity, bool favorite)
-{
-	updateValueInConfig(FAVORITE_GROUP_KEY, activity, favorite);
-}
-
-bool ApplicationSettings::isFavorite(const QString &activity)
-{
-	m_config.beginGroup(FAVORITE_GROUP_KEY);
-	bool favorite = m_config.value(activity, false).toBool();
-	m_config.endGroup();
-	return favorite;
 }
 
 template<class T> void ApplicationSettings::updateValueInConfig(const QString& group,
@@ -303,6 +264,6 @@ QObject *ApplicationSettings::systeminfoProvider(QQmlEngine *engine,
 
 void ApplicationSettings::init()
 {
-	qmlRegisterSingletonType<ApplicationSettings>("GCompris", 1, 0,
-												  "ApplicationSettings", systeminfoProvider);
+    qmlRegisterSingletonType<ApplicationSettings>("GCompris", 1, 0,
+                                                  "ApplicationSettings", systeminfoProvider);
 }

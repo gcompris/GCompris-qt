@@ -19,6 +19,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.2
+import QtQuick.Controls 1.1
 import GCompris 1.0
 
 Item {
@@ -34,13 +35,13 @@ Item {
     property var rightPanelComponent: rightPanel
     property var backspaceButtonComponent:backspaceButton
     property int maxDigit: 2
-    property int columnWidth: 80 * ApplicationInfo.ratio
+    property int columnWidth: 80
 
     signal answer
 
     Column {
         id: leftPanel
-        width: columnWidth
+        width: columnWidth * ApplicationInfo.ratio
         height: parent.height - 90 * ApplicationInfo.ratio
         opacity: 0.8
 
@@ -54,11 +55,11 @@ Item {
                 border.color: Qt.darker(color)
                 border.width:2
 
-                GCText {
+                Text{
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     text: numbers[index]
-                    fontSize: 28
+                    font.pointSize: 28
                     font.bold: true
 
                 }
@@ -95,9 +96,9 @@ Item {
 
     Column {
         id: rightPanel
-        width: columnWidth
+        width: columnWidth * ApplicationInfo.ratio
         height: parent.height - 90 * ApplicationInfo.ratio
-        x: parent.width - columnWidth
+        x: parent.width - columnWidth * ApplicationInfo.ratio
         opacity: 0.8
 
         Repeater {
@@ -114,7 +115,7 @@ Item {
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     text: numbers[index] + 5
-                    fontSize: 28
+                    font.pointSize: 28
                     font.bold: true
 
                 }
@@ -156,7 +157,7 @@ Item {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 text: "←"
-                fontSize: 28
+                font.pointSize: 28
                 font.bold: true
             }
 

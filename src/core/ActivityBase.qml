@@ -19,8 +19,8 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.2
+import QtQuick.Controls 1.1
 import GCompris 1.0
-import "qrc:/gcompris/src/core/core.js" as Core
 
 Item {
     id: page
@@ -50,7 +50,7 @@ Item {
         if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_Q) {
             // Ctrl+Q exit the application
-            Core.quit(page);
+            Qt.quit()
         } else if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_B) {
             // Ctrl+B toggle the bar
@@ -80,12 +80,5 @@ Item {
         id: activity
         sourceComponent: pageComponent
         anchors.fill: parent
-    }
-
-    Loader {
-        id: demoPageLoader
-        sourceComponent: BuyMeOverlay {}
-        anchors.fill: parent
-        active: !activityInfo.demo && ApplicationSettings.isDemoMode
     }
 }

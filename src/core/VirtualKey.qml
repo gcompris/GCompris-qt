@@ -29,24 +29,13 @@ Item {
     
     z: (button.pressed || (!ApplicationInfo.isMobile && button.hovered)) ? 1 : -1
 
-            
     property alias text: button.text
-    property var modifiers: 0   /* Supposed to hold any active key modifiers
-                                 * in a bitmask from the Qt namespace:
-                                 * Qt.ShiftModifier/MetaModifier/ControlModifier.
-                                 * 0 if none. */
-
-    property var specialKey: 0  /* Supposed to hold special key values from the
-                                 * Qt namespace like Qt.Key_Shift/Key_Control/
-                                 * Key_Alt if VirtualKey is a special key.
-                                 * 0 Otherwise */
-
-    signal pressed(var virtualKey);
+    signal pressed(string text);
     
     Button {
         id: button
-        text: ((modifiers & Qt.ShiftModifier) && (shiftLabel !== undefined)) ? shiftLabel : label
-
+        text: label
+            
         width: parent.width
         height: virtualKey.height
         
@@ -56,20 +45,8 @@ Item {
                 border.color: "black"
                 radius: 4
                 gradient: Gradient {
-                    GradientStop {
-                        position: 0;
-                        color: (control.pressed
-                                || ( virtualKey.specialKey == Qt.Key_Shift 
-                                     && virtualKey.modifiers & Qt.ShiftModifier))
-                               ? "#ccc" : "#eee";
-                    }
-                    GradientStop {
-                        position: 1;
-                        color: (control.pressed
-                                || ( virtualKey.specialKey == Qt.Key_Shift 
-                                        && virtualKey.modifiers & Qt.ShiftModifier))
-                               ? "#aaa" : "#ccc";
-                    }
+                    GradientStop { position: 0 ; color: control.pressed ? "#ccc" : "#eee" }
+                    GradientStop { position: 1 ; color: control.pressed ? "#aaa" : "#ccc" }
                 }
             }
             label: Item {
@@ -77,7 +54,7 @@ Item {
                     //renderType: Text.NativeRendering
                     anchors.centerIn: parent
                     text: control.text
-                    fontSize: 20
+                    font.pointSize: 20
                     font.bold: false
                     color: "black"
                     //antialiasing: true
@@ -95,10 +72,7 @@ Item {
         }
 
         onClicked: {
-            //console.log("### virtualKey.onClicked text=" + virtualKey.text 
-            //        + " specialKey="+ virtualKey.specialKey
-            //        + " modifiers= "+ virtualKey.modifiers);
-            virtualKey.pressed(virtualKey);
+            virtualKey.pressed(virtualKey.text);
             button.focus = false;
         }
     }
