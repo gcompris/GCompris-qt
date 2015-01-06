@@ -61,7 +61,6 @@ class ApplicationInfo : public QObject
     Q_PROPERTY(bool isMobile READ isMobile CONSTANT)
     Q_PROPERTY(bool isPortraitMode READ isPortraitMode WRITE setIsPortraitMode NOTIFY portraitModeChanged)
 	Q_PROPERTY(qreal ratio READ ratio NOTIFY ratioChanged)
-    Q_PROPERTY(qreal fontRatio READ fontRatio NOTIFY fontRatioChanged)
 	Q_PROPERTY(qreal hMargin READ hMargin NOTIFY hMarginChanged)
 	Q_PROPERTY(qreal sliderHandleWidth READ sliderHandleWidth NOTIFY ratioChanged)
 	Q_PROPERTY(qreal sliderHandleHeight READ sliderHandleHeight NOTIFY ratioChanged)
@@ -111,22 +110,14 @@ public:
 
 	qreal hMargin() const { return m_hMargin; }
 	qreal ratio() const { return m_ratio; }
-    qreal fontRatio() const { return m_fontRatio; }
 	qreal sliderHandleHeight()  { return m_sliderHandleHeight; }
 	qreal sliderGapWidth()  { return m_sliderGapWidth; }
 	qreal sliderHandleWidth()  { return m_sliderHandleWidth; }
 
-    // return the short locale name for the given locale.
-    // If 'defaut' is passed then return the short locale for the system locale
     // Can't use left(2) because of Asturian where there are 3 chars
     static QString localeShort(const QString &locale) {
-        QString _locale = locale;
-        if(_locale == GC_DEFAULT_LOCALE) {
-            _locale = QLocale::system().name();
-        }
-        return _locale.left(_locale.indexOf('_'));
+        return locale.left(locale.indexOf('_'));
     }
-    // return the short locale name for the current config
     QString localeShort() const {
         return localeShort( ApplicationSettings::getInstance()->locale() );
     }
@@ -139,7 +130,6 @@ protected slots:
 	QString getResourceDataPath();
     Q_INVOKABLE QString getAudioFilePath(const QString &file);
     Q_INVOKABLE QString getLocaleFilePath(const QString &file);
-    Q_INVOKABLE QString getLocaleShort(const QString &locale);
     Q_INVOKABLE QStringList getSystemExcludedFonts();
     Q_INVOKABLE QStringList getFontsFromRcc();
     Q_INVOKABLE void notifyFullscreenChanged();
@@ -154,7 +144,6 @@ signals:
 	void portraitModeChanged();
 	void hMarginChanged();
 	void ratioChanged();
-    void fontRatioChanged();
     void applicationSettingsChanged();
     void fullscreenChanged();
 
@@ -167,7 +156,6 @@ private:
 	bool m_isPortraitMode;
 	bool m_isMobile;
 	qreal m_ratio;
-    qreal m_fontRatio;
 	qreal m_hMargin;
 	qreal m_sliderHandleHeight, m_sliderHandleWidth, m_sliderGapWidth;
 

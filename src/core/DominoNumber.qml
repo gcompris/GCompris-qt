@@ -1,4 +1,4 @@
-/* GCompris - DominoNumber.qml
+/* GCompris - Domino.qml
  *
  * Copyright (C) 2014 Bruno Coudoin
  *
@@ -19,6 +19,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.2
+import QtQuick.Controls 1.0
 import GCompris 1.0
 
 Item {
@@ -30,7 +31,6 @@ Item {
     property int borderWidth
     property int radius
     property bool isClickable: true // Default value
-    property GCAudio audioEffects
 
     function isVisible(index) {
         var value = item.value
@@ -93,7 +93,6 @@ Item {
     }
 
     function up() {
-        audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
         if(item.value == item.valueMax)
             item.value = 0
         else
@@ -101,7 +100,6 @@ Item {
     }
 
     function down() {
-        audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
         if(item.value == 0)
             item.value = item.valueMax
         else

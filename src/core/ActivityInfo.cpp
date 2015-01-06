@@ -23,15 +23,12 @@
 #include <QQmlEngine>
 #include <QQmlComponent>
 
-#include "ActivityInfo.h"
-#include "ApplicationSettings.h"
+#include "ActivityInfoTree.h"
 
 ActivityInfo::ActivityInfo(QObject *parent):
 	QObject(parent),
-	m_dir(""),
-	m_demo(true)
-{
-}
+	m_dir("")
+{}
 
 QString ActivityInfo::name() const
 {
@@ -40,9 +37,6 @@ QString ActivityInfo::name() const
 void ActivityInfo::setName(const QString &name)
 {
 	m_name = name;
-	// Once we are given a name, we can get the favorite property
-	// from the persistant configuration
-	m_favorite = ApplicationSettings::getInstance()->isFavorite(m_name);
 	emit nameChanged();
 }
 
@@ -164,17 +158,6 @@ void ActivityInfo::setCredit(const QString &credit)
 {
   m_credit = credit;
   emit creditChanged();
-}
-
-bool ActivityInfo::favorite() const
-{
-  return m_favorite;
-}
-void ActivityInfo::setFavorite(const bool favorite)
-{
-  m_favorite = favorite;
-  ApplicationSettings::getInstance()->setFavorite(m_name, m_favorite);
-  emit favoriteChanged();
 }
 
 QStringList ActivityInfo::getSectionPath()

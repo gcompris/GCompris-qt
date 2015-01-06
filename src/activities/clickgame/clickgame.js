@@ -1,4 +1,4 @@
-/* GCompris - clickgame.js
+/* GCompris - clickgame.qml
  *
  * Copyright (C) 2014 Bruno Coudoin
  *

@@ -21,8 +21,9 @@
  */
 import QtQuick 2.2
 
-import "../../core"
-import "../gnumch-equality/"
+import "qrc:/gcompris/src/core"
+import "qrc:/gcompris/src/activities/gnumch-equality/"
+import "qrc:/gcompris/src/activities/gnumch-equality/gnumch-equality.js" as Activity
 
 Gnumch {
     type: "factors"

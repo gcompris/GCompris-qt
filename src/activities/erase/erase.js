@@ -91,6 +91,7 @@ var blockImages = [
 ]
 
 var currentLevel
+var currentSubLevel
 var currentImage
 var main
 var items
@@ -101,6 +102,7 @@ var createdBlocks
 var killedBlocks
 
 var nbLevel = 6
+var nbSubLevel = 8
 var imgIndex
 
 function start(main_, items_, type_) {
@@ -108,7 +110,7 @@ function start(main_, items_, type_) {
     items = items_
     type = type_
     currentLevel = 0
-    items_.currentSubLevel = 0
+    currentSubLevel = 0
     currentImage = 0
     imgIndex = 0
     initLevel()
@@ -156,8 +158,8 @@ function nextLevel() {
 }
 
 function nextSubLevel() {
-    if( ++items.currentSubLevel >= items.nbSubLevel) {
-        items.currentSubLevel = 0
+    if( ++currentSubLevel >= nbSubLevel) {
+        currentSubLevel = 0
         nextLevel()
     }
     initLevel();

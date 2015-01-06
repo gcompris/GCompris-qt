@@ -20,7 +20,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
-import GCompris 1.0
 
 import "../../core"
 import "guessnumber.js" as Activity
@@ -79,7 +78,7 @@ ActivityBase {
             wrapMode: TextEdit.WordWrap
             color: "white"
             font.bold: true
-            fontSize: 20
+            font.pointSize: 20
         }
 
         AnswerArea {
@@ -97,18 +96,14 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             color: "white"
             font.bold: true
-            fontSize: mediumSize
+            font.pointSize: 16
         }
 
         NumPad {
             id: numpad
-            onAnswerChanged: {
-                if(answer && answerArea.userEntry != answer)
-                    activity.audioEffects.play('qrc:/gcompris/src/activities/guessnumber/resource/helicopter.wav')
-                answerArea.userEntry = answer
-            }
+            onAnswerChanged: answerArea.userEntry = answer
             maxDigit: ("" + items.currentMax).length
-            columnWidth: 60 * ApplicationInfo.ratio
+            columnWidth: 60
         }
 
         Keys.onPressed: {

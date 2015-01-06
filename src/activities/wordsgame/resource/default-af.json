@@ -2,7 +2,6 @@
    "levels" : [
       {
          "level" : "1",
-	 "sublevels" : "15",
          "words" : [
             "af",
             "as",
@@ -97,7 +96,6 @@
       },
       {
          "level" : "2",
-	 "sublevels" : "15",
          "words" : [
             "aard",
             "adel",
@@ -274,7 +272,6 @@
       },
       {
          "level" : "3",
-	 "sublevels" : "15",
          "words" : [
             "aande",
             "aanry",
@@ -871,7 +868,6 @@
       },
       {
          "level" : "4",
-	 "sublevels" : "15",
          "words" : [
             "aalwyn",
             "aandag",
@@ -1288,7 +1284,6 @@
       },
       {
          "level" : "5",
-	 "sublevels" : "15",
          "words" : [
             "aantrek",
             "aartappel",

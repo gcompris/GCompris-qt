@@ -24,7 +24,6 @@ import GCompris 1.0
 
 import "../../core"
 import "magic-hat.js" as Activity
-import "."
 
 ActivityBase {
     id: activity
@@ -60,7 +59,6 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
-            property GCAudio audioEffects: activity.audioEffects
             property alias bar: bar
             property alias bonus: bonus
             property alias hat: theHat
@@ -77,15 +75,13 @@ ActivityBase {
             Hat {
                 id: theHat
                 starsSize: background.starSize
-                audioEffects: activity.audioEffects
             }
             GCText {
-                //: The math operation
-                text: mode == "minus" ? qsTr("-") : qsTr("+")
+                text: mode == "minus" ? "-" : "+"
                 anchors.right: mainlayout.right
                 anchors.rightMargin: 10
                 y: secondRow.y
-                fontSize: 66
+                font.pointSize: 66
                 color: "white"
             }
         }
@@ -113,7 +109,6 @@ ActivityBase {
                         barGroupIndex: 0
                         barIndex: index
                         width: rightLayout.width
-                        backgroundColor: "grey"
                         starsColor: starColors[index]
                         theHat: items.hat
                         starsSize: background.starSize
@@ -132,7 +127,6 @@ ActivityBase {
                         barGroupIndex: 1
                         barIndex: index
                         width: rightLayout.width
-                        backgroundColor: "grey"
                         starsColor: starColors[index]
                         theHat: items.hat
                         starsSize: background.starSize
@@ -163,7 +157,6 @@ ActivityBase {
                         barGroupIndex: 2
                         barIndex: index
                         width: rightLayout.width
-                        backgroundColor: "#CCDDFFAA"
                         starsColor: starColors[index]
                         authorizeClick: false
                         theHat: items.hat
@@ -191,7 +184,6 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            audioEffects: activity.audioEffects
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }

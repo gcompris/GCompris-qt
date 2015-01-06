@@ -40,24 +40,16 @@ Item {
     property int wrongAnswerShakeAmplitudeMin: 45
     property int wrongAnswerShakeAmplitude: wrongAnswerShakeAmplitudeCalc < wrongAnswerShakeAmplitudeMin ? wrongAnswerShakeAmplitudeMin : wrongAnswerShakeAmplitudeCalc
 
-    // If you want the sound effects just pass the audioEffects
-    property GCAudio audioEffects
-
     signal correctlyPressed
     signal incorrectlyPressed
 
     signal pressed
     onPressed: {
         if (!blockClicks) {
-            if (isCorrectAnswer) {
-                if(audioEffects)
-                    audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
+            if (isCorrectAnswer)
                 correctAnswerAnimation.start();
-            } else {
-                if(audioEffects)
-                    audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+            else
                 wrongAnswerAnimation.start();
-            }
         }
     }
 
@@ -84,7 +76,7 @@ Item {
         // the x of the text is changed, which would not work if we use an anchor layout.
         property int horizontallyCenteredX: (button.width - width) >> 1;
         x: horizontallyCenteredX;
-        fontSize: 18
+        font.pointSize: 18
         font.bold: true
         text: textLabel
     }

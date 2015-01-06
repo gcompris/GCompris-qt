@@ -55,7 +55,7 @@ ActivityBase {
         anchors.fill: parent
         signal start
         signal stop
-        source: Activity.url + "resource/background.svg"
+        source: "qrc:/gcompris/src/activities/planegame/resource/background.svgz"
         sourceSize.width: parent.width
 
         Component.onCompleted: {
@@ -77,16 +77,6 @@ ActivityBase {
         onStart: Activity.start(items, dataset)
         onStop: Activity.stop();
 
-        MultiPointTouchArea {
-            anchors.fill: parent
-            touchPoints: [ TouchPoint { id: point1 } ]
-
-            onReleased: {
-                plane.x = point1.x - plane.width / 2
-                plane.y = point1.y - plane.height / 2
-            }
-        }
-
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -103,14 +93,12 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            audioEffects: activity.audioEffects
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         Score {
             id: score
             visible: false
-            fontSize: 24
         }
 
         property int movePlaneTimerCounter: 0

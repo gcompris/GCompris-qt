@@ -10,6 +10,7 @@ align4-2players
 alphabet-sequence
 ballcatch
 braille_alphabets
+braille_fun
 canal_lock
 clickanddraw
 clickgame
@@ -38,6 +39,7 @@ hexagon
 instruments
 leftright
 lightsoff
+louis_braille-activity
 magic-hat-minus
 magic-hat-plus
 maze
@@ -72,8 +74,6 @@ mosaic
 numbers-odd-even
 penalty
 planegame
-redraw
-redraw_symmetrical
 reversecount
 scalesboard
 scalesboard_weight

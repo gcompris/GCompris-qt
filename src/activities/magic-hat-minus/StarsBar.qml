@@ -30,7 +30,6 @@ Item {
     property int nbStarsOn: 0
     property bool authorizeClick: false
     property int starsSize
-    property string backgroundColor
     property string starsColor: "yellow"
     property Item theHat
     property alias repeaterStars: repeaterStars
@@ -52,7 +51,6 @@ Item {
                     id: starFixed
                     barGroupIndex: item.barGroupIndex
                     barIndex: item.barIndex
-                    backgroundColor: item.backgroundColor
                     wantedColor: starsColor
                     selected: index < nbStarsOn ? true : false
                     width: item.starsSize
@@ -63,7 +61,6 @@ Item {
                 Star {
                     id: starToMove
                     barGroupIndex: item.barGroupIndex
-                    backgroundColor: item.backgroundColor
                     wantedColor: starsColor
                     selected: index < nbStarsOn ? true : false
                     width: item.starsSize
@@ -79,7 +76,6 @@ Item {
     }
 
     function moveStars() {
-        activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/smudge.wav")
         for(var i=0; i<nbStarsOn; i++) {
             repeaterStars.itemAt(i).starToMove.state = "MoveUnderHat"
         }

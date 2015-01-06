@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 {
 	QGuiApplication app(argc, argv);
     app.setOrganizationName("KDE");
-    app.setApplicationName(GCOMPRIS_APPLICATION_NAME);
+    app.setApplicationName("GCompris");
     app.setOrganizationDomain("kde.org");
     app.setApplicationVersion(ApplicationInfo::GCVersion());
 
@@ -86,10 +86,6 @@ int main(int argc, char *argv[])
 	File::init();
 	DownloadManager::init();
 
-    // Must be done after ApplicationSettings is constructed because we get an
-    // async callback from the payment system
-    ApplicationSettings::getInstance()->checkPayment();
-
     // Load configuration
     QString locale;
     // Getting fullscreen mode from config if exist, else true is default value
@@ -97,19 +93,14 @@ int main(int argc, char *argv[])
     {
         // Local scope for config
         QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
-                         "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf",
+                         "/gcompris/GCompris.conf",
                          QSettings::IniFormat);
         // Get locale
         if(config.contains("General/locale")) {
             locale = config.value("General/locale").toString();
-        } else {
-            locale = GC_DEFAULT_LOCALE;
-        }
-        if(locale == GC_DEFAULT_LOCALE)
-            locale = QString(QLocale::system().name() + ".UTF-8");
-
-        if(config.contains("General/fullscreen")) {
             isFullscreen = config.value("General/fullscreen").toBool();
+        } else {
+            locale = "en_US.UTF-8";
         }
 
 		// Set the cursor image
@@ -141,8 +132,7 @@ int main(int argc, char *argv[])
     if(!loadAndroidTranslation(translator, locale))
         loadAndroidTranslation(translator, ApplicationInfo::localeShort(locale));
 #else
-    
-    if(!translator.load("gcompris_" + locale, QString("%1/%2/translations").arg(QCoreApplication::applicationDirPath(), GCOMPRIS_DATA_FOLDER))) {
+    if(!translator.load("gcompris_" + locale, QCoreApplication::applicationDirPath() + "/translations/")) {
         qDebug() << "Unable to load translation for locale " <<
                     locale << ", use en_US by default";
     }

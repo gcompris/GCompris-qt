@@ -20,6 +20,7 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 import QtQuick 2.2
+import QtQuick.Controls 1.1
 import GCompris 1.0
 
 import "../../core"
@@ -133,7 +134,7 @@ Rectangle {
         text: fault + "<br>" + qsTr("Press &lt;Return&gt; or click on me to continue.")
         fontSizeMode: Text.Fit
         minimumPointSize: 10
-        fontSize: 28
+        font.pointSize: 28
         wrapMode: Text.WordWrap
     }
 

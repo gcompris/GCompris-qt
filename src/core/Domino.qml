@@ -40,7 +40,6 @@ Flipable {
     property bool flipped: true
 
     property bool isClickable: true
-    property GCAudio audioEffects
 
     front: Rectangle {
         anchors.fill: parent
@@ -61,7 +60,6 @@ Flipable {
             valueMax: flipable.valueMax
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
             isClickable: flipable.isClickable
-            audioEffects: flipable.audioEffects
         }
 
         // Separation
@@ -85,7 +83,6 @@ Flipable {
             valueMax: flipable.valueMax
             onValueChanged: if(flipEnabled) flipable.flipped = !flipable.flipped
             isClickable: flipable.isClickable
-            audioEffects: flipable.audioEffects
         }
     }
 

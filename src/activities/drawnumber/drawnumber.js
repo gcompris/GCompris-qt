@@ -122,7 +122,6 @@ function previousLevel() {
 function drawSegment(pointIndex) {
     if (pointIndex == items.pointIndexToClick)
     {
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav")
         items.pointImageRepeater.itemAt(pointIndex).opacity = 0
 
         if (clickanddrawflag) {

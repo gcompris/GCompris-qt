@@ -148,11 +148,9 @@ function initLevel() {
         items.audioVoices.silence(100)
         playLetter(currentLetter)
         items.questionItem.visible = false
-        items.repeatItem.visible = true
     } else {
         // no sound -> show question
         items.questionItem.visible = true;
-        items.repeatItem.visible = false
     }
     // Maybe we will display it if sound fails
     items.questionItem.text = currentLetter;

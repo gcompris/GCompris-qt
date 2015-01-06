@@ -2,22 +2,11 @@
    "levels" : [
       {
          "level" : "1",
-	 "sublevels" : "15",
          "words" : [
-            "azul",
-            "coche",
-            "color",
-            "comer",
             "dos",
-            "falda",
-            "fuego",
             "feo",
             "luz",
             "mar",
-            "mata",
-            "mesa",
-            "mono",
-            "moto",
             "ojo",
             "ola",
             "oro",
@@ -30,22 +19,20 @@
             "sol",
             "tia",
             "tio",
-            "tres",
             "uno",
+            "uña",
             "uva",
-            "vaca",
             "voz"
          ]
       },
       {
          "level" : "2",
-	 "sublevels" : "15",
          "words" : [
             "agua",
             "aire",
             "alga",
             "alto",
-            "uña",
+            "azul",
             "baño",
             "boca",
             "buey",
@@ -70,6 +57,10 @@
             "malo",
             "mama",
             "mano",
+            "mata",
+            "mesa",
+            "mono",
+            "moto",
             "nube",
             "ocho",
             "papa",
@@ -84,13 +75,14 @@
             "seis",
             "sofa",
             "toro",
+            "tres",
+            "vaca",
             "vaso",
             "vida"
          ]
       },
       {
          "level" : "3",
-	 "sublevels" : "15",
          "words" : [
             "abrir",
             "abuela",
@@ -117,6 +109,11 @@
             "cinco",
             "cisne",
             "clima",
+            "coche",
+            "color",
+            "comer",
+            "falda",
+            "fuego",
             "gallo",
             "ganar",
             "golpe",
@@ -157,7 +154,6 @@
       },
       {
          "level" : "4",
-	 "sublevels" : "15",
          "words" : [
             "abaco",
             "abajo",
@@ -238,7 +234,6 @@
       },
       {
          "level" : "5",
-	 "sublevels" : "15",
          "words" : [
             "abanico",
             "abdomen",

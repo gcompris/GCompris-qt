@@ -203,13 +203,11 @@ function moveTuxToNextIceBlock() {
             return
         }
 
-        items.audioEffects.play('qrc:/gcompris/src/activities/gnumch-equality/resource/eat.wav')
         calculateNextPlaceFishToReach()
         placeFishToReachBool = true
         return
     }
 
-    items.audioEffects.play(url + 'icy_walk.wav')
     //if tux reaches its position + dice number before reaching the fish, calculation was wrong
     if (tuxIceBlockNumber == tuxIceBlockNumberGoal) {
         clockPos--
@@ -273,12 +271,11 @@ function calculateNextPlaceFishToReach() {
 }
 
 function placeFishToReach() {
-    items.fishToReach.opacity = 0
-    items.fishToReach.nextSource = url + fishes[fishIndex % fishes.length]
-    items.fishToReach.nextX = iceBlocksLayout[fishIndex % iceBlocksLayout.length][0] *
+    items.fishToReach.source = url + fishes[fishIndex % fishes.length]
+    items.fishToReach.x = iceBlocksLayout[fishIndex % iceBlocksLayout.length][0] *
             items.background.width / 5 +
             (items.background.width / 5 - items.tux.width) / 2
-    items.fishToReach.nextY = iceBlocksLayout[fishIndex % iceBlocksLayout.length][1] *
+    items.fishToReach.y = iceBlocksLayout[fishIndex % iceBlocksLayout.length][1] *
             (items.background.height - items.background.height/5) / 5 +
             (items.background.height / 5 - items.tux.height) / 2
 }
@@ -305,7 +302,7 @@ function previousLevel() {
 }
 
 function lost() {
-    items.bonus.bad("tux")
+    items.bonus.bad("flower")
 }
 
 function won() {

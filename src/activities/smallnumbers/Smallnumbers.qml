@@ -32,6 +32,6 @@ Gletters {
     dataSetUrl: "qrc:/gcompris/src/activities/smallnumbers/resource/"
 
     function getImage(key) {
-        return dataSetUrl + "dice" + key + ".svg"
+        return dataSetUrl + "dice" + key + ".svgz"
     }
 }

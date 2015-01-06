@@ -31,10 +31,11 @@ Image {
     /* An helper property to remember if a cloud has been wrongly touched */
     property bool touched: false
 
-    sourceSize.height: 60 * ApplicationInfo.ratio
+    sourceSize.height: 100 * ApplicationInfo.ratio
     height: sourceSize.height * heightRatio
 
     state: "normal"
+//    source: "qrc:/gcompris/src/activities/planegame/resource/cloud.svgz"
     fillMode: Image.PreserveAspectFit
 
     z: 5
@@ -58,7 +59,7 @@ Image {
         anchors.verticalCenter: cloud.verticalCenter
         color: "black"
         font.bold: true
-        fontSize: 18
+        font.pointSize: 18
     }
 
     Component.onCompleted: {
@@ -82,14 +83,14 @@ Image {
             name: "normal"
             PropertyChanges {
                 target: cloud
-                source: Activity.url + "resource/cloud.svgz"
+                source: "qrc:/gcompris/src/activities/planegame/resource/cloud.svgz"
             }
         },
         State {
             name: "storm"
             PropertyChanges {
                 target: cloud
-                source: Activity.url + "resource/cloud_storm.svgz"
+                source: "qrc:/gcompris/src/activities/planegame/resource/cloud_storm.svgz"
             }
             StateChangeScript {
                 script: stormy.start()

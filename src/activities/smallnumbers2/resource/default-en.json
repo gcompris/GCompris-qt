@@ -1,6 +1,7 @@
 {
    "levels" : [
       {
+         "sublevels" : "10",
          "level" : "1",
          "words" : [
             "1",
@@ -11,6 +12,7 @@
          ]
       },
       {
+         "sublevels" : "10",
          "level" : "2",
          "words" : [
             "5",
@@ -21,6 +23,7 @@
          ]
       },
       {
+         "sublevels" : "20",
          "level" : "3",
          "words" : [
             "1",

@@ -19,13 +19,11 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.0
-import "../../core"
 
 Item {
     id: part
     property QtObject items
     property int index
-    property GCAudio audioEffects
 
     Rectangle {
         anchors.horizontalCenter: parent.horizontalCenter
@@ -57,14 +55,9 @@ Item {
             anchors.fill: parent
             hoverEnabled: true
             onEntered: {
-                if(part.items.currentLock == part.index) {
-                    part.items.currentLock++
-                    if(part.items.currentLock >= part.items.lastLock) {
-                        audioEffects.play("qrc:/gcompris/src/core/resource/sounds/water.wav")
-                        items.background.win()
-                    } else {
-                        audioEffects.play("qrc:/gcompris/src/core/resource/sounds/darken.wav")
-                    }
+                if(part.items.currentLock == part.index) part.items.currentLock++
+                if(part.items.currentLock >= part.items.lastLock) {
+                    items.background.win()
                 }
             }
         }

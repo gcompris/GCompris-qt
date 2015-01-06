@@ -39,7 +39,7 @@ CheckBox {
                                   "qrc:/gcompris/src/core/resource/cancel.svgz"
         }
         label: GCText {
-            fontSize: mediumSize
+            font.pointSize: 16
             text: control.text
             wrapMode: Text.WordWrap
             width: parent.parent.width - 50 * ApplicationInfo.ratio - 10 * 2

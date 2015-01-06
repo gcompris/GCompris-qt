@@ -28,17 +28,22 @@ var items
 var currentLevel = 0
 var numberOfLevel = 9
 var itemIcons = [
-            url + "apple.svg",
-            url + "banana.svg",
-            url + "cabbage.svg",
-            url + "grapefruit.svg",
-            url + "grapes.svg",
-            url + "lemon.svg",
-            url + "orange.svg",
-            url + "peach.svg",
-            url + "red_pepper.svg",
-            url + "strawberry.svg",
-            url + "watermelon.svg",
+            url + "apple.svgz",
+            url + "balloon.svgz",
+            url + "bread_slice.svgz",
+            url + "butter.svgz",
+            url + "chocolate_cake.svgz",
+            url + "chocolate.svgz",
+            url + "cookie.svgz",
+            url + "french_croissant.svgz",
+            url + "grapefruit.svgz",
+            url + "marmelade.svgz",
+            url + "milk_cup.svgz",
+            url + "orange.svgz",
+            url + "round_cookie.svgz",
+            url + "strawberry.svgz",
+            url + "sugar_box.svgz",
+            url + "yahourt.svgz"
         ]
 var numberOfTypes = itemIcons.length
 var userAnswers = new Array()
@@ -78,7 +83,7 @@ function initLevel() {
         break;
     case 2:
         numberOfItemType = 3;
-        numberOfItemMax  = 4;
+        numberOfItemMax  = 5;
         break;
     case 3:
         numberOfItemType = 3;
@@ -93,20 +98,20 @@ function initLevel() {
         numberOfItemMax  = 6;
         break;
     case 6:
-        numberOfItemType = 5;
-        numberOfItemMax  = 5;
+        numberOfItemType = 4;
+        numberOfItemMax  = 7;
         break;
     case 7:
         numberOfItemType = 4;
-        numberOfItemMax  = 6;
+        numberOfItemMax  = 10;
         break;
     case 8:
-        numberOfItemType = 3;
+        numberOfItemType = 5;
         numberOfItemMax  = 8;
         break;
     default:
-        numberOfItemType = 2;
-        numberOfItemMax  = 9;
+        numberOfItemType = 5;
+        numberOfItemMax = 8;
     }
 
     itemIcons = Core.shuffle(itemIcons)
@@ -147,7 +152,6 @@ function cleanUp() {
 function setUserAnswer(imgPath, userValue) {
     userAnswers[imgPath] = userValue
     checkAnswers()
-    return userAnswers[imgPath] === answerToFind[imgPath]
 }
 
 function checkAnswers() {

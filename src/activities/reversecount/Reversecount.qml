@@ -50,7 +50,6 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
-            property GCAudio audioEffects: activity.audioEffects
             property alias background: background
             property alias backgroundImg: backgroundImg
             property alias bar: bar
@@ -64,8 +63,6 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        Keys.onEnterPressed: Activity.moveTux()
-        Keys.onReturnPressed: Activity.moveTux()
 
         onWidthChanged: {
             if(Activity.fishIndex > 0) {
@@ -114,9 +111,6 @@ ActivityBase {
             id: fishToReach
             sourceSize.width: Math.min(background.width / 6, background.height / 6)
             z: 10
-            property string nextSource
-            property int nextX
-            property int nextY
 
             function showParticles() {
                 particles.emitter.burst(40)
@@ -127,14 +121,6 @@ ActivityBase {
                 clip: false
             }
 
-            onOpacityChanged: opacity == 0 ? source = nextSource : null
-            onSourceChanged: {
-                x = nextX
-                y = nextY
-                opacity = 1
-            }
-
-            Behavior on opacity { NumberAnimation { duration: 500 } }
         }
 
 
@@ -157,11 +143,17 @@ ActivityBase {
         Image {
             id: clock
             anchors {
-                right: parent.right
-                bottom: parent.bottom
-                margins: 10
+                left: bar.right
+                bottom: bar.bottom
+                bottomMargin: 10
             }
             sourceSize.width: 66 * bar.barZoom
+        }
+
+
+        Bonus {
+            id: bonus
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
 
@@ -169,15 +161,6 @@ ActivityBase {
             id: chooseDiceBar
             x: background.width / 5 + 20
             y: (background.height - background.height/5) * 3 / 5
-            audioEffects: activity.audioEffects
-        }
-
-        Bonus {
-            id: bonus
-            audioEffects: activity.audioEffects
-            winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
-            looseSound: "qrc:/gcompris/src/activities/ballcatch/resource/youcannot.wav"
-            Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 

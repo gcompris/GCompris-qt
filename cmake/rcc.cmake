@@ -30,17 +30,18 @@ function(GCOMPRIS_ADD_RCC resource_path)
   set(CREATED_RCC ${GCOMPRIS_RCC_DIR}/${activity}.rcc)
 
   add_custom_command(OUTPUT ${CREATED_RCC}
+                     COMMAND cmake -E make_directory ${GCOMPRIS_RCC_DIR}
                      COMMAND ${Qt5Core_RCC_EXECUTABLE} "-binary" -o ${CREATED_RCC} ${CREATED_QRC}
                      DEPENDS ${QRC_CONTENTS} "${out_depends}" VERBATIM)
   if(CMAKE_HOST_APPLE)
-    install(FILES ${CREATED_RCC} DESTINATION gcompris-qt.app/Contents/MacOS/rcc)
+    install(FILES ${CREATED_RCC} DESTINATION GCompris.app/Contents/MacOS/rcc)
   else()
-    install(FILES ${CREATED_RCC} DESTINATION share/gcompris-qt/rcc)
+    install(FILES ${CREATED_RCC} DESTINATION bin/rcc)
   endif()
 
   add_custom_target(
     rcc_${activity} ALL
-    DEPENDS createShareFolders ${CREATED_RCC} ${CREATED_QRC}
+    DEPENDS ${CREATED_RCC} ${CREATED_QRC}
     COMMENT "Generate ${activity} RCC"
     SOURCES ${QRC_CONTENTS}
     VERBATIM

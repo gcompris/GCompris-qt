@@ -94,7 +94,7 @@ ActivityBase {
 
         GCText {
             text: qsTr("Match the color")
-            fontSize: 18
+            font.pointSize: 18
             horizontalAlignment: Text.AlignRight
             wrapMode: Text.WordWrap
             anchors {
@@ -108,7 +108,7 @@ ActivityBase {
         GCText {
             id: helpMessage
             text: ""
-            fontSize: mediumSize
+            font.pointSize: 16
             horizontalAlignment: Text.AlignLeft
             wrapMode: Text.WordWrap
             anchors {
@@ -221,7 +221,7 @@ ActivityBase {
                 helpMessage.text = message
 
                 if (message === "") {
-                    bonus.good("gnu")
+                    bonus.good("tux")
                     helpMessage.text = ""
                 }
             }

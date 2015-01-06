@@ -54,7 +54,6 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property GCAudio audioEffects: activity.audioEffects
 
             property alias pointImageRepeater: pointImageRepeater
             property alias segmentsRepeater: segmentsRepeater
@@ -124,7 +123,7 @@ ActivityBase {
                         text: index
                         anchors.horizontalCenter: parent.horizontalCenter
                         anchors.verticalCenter: parent.verticalCenter
-                        fontSize: 18
+                        font.pointSize: 20
                         font.weight: Font.DemiBold
                         style: Text.Outline
                         styleColor: "black"
@@ -179,7 +178,6 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            audioEffects: activity.audioEffects
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
 

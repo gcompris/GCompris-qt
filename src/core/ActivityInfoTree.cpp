@@ -132,15 +132,13 @@ void ActivityInfoTree::sortByName()
 
 // Filter the current activity list by the given tag
 // the tag 'all' means no filter
-// the tag 'favorite' means only marked as favorite
 // The level is also filtered based on the global property
 void ActivityInfoTree::filterByTag(const QString &tag)
 {
     m_menuTree.clear();
     for(auto activity: m_menuTreeFull) {
         if((activity->section().indexOf(tag) != -1 ||
-			tag == "all" ||
-			tag == "favorite" && activity->favorite()) &&
+                tag == "all") &&
             (activity->difficulty() >= ApplicationSettings::getInstance()->filterLevelMin() &&
              activity->difficulty() <= ApplicationSettings::getInstance()->filterLevelMax())) {
             m_menuTree.push_back(activity);
@@ -214,7 +212,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	while (!in.atEnd())
 	{
 		QString line = in.readLine();
-		if(!line.startsWith(QLatin1String("#"))) {
+		if(!line.startsWith("#")) {
 			QString url = QString("qrc:/gcompris/src/activities/%1/ActivityInfo.qml").arg(line);
 
             if(!QResource::registerResource(
@@ -232,7 +230,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	}
 	file.close();
 
-	menuTree->filterByTag("favorite");
+    menuTree->filterByTag("all");
     return menuTree;
 }
 
