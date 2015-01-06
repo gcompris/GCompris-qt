@@ -68,7 +68,7 @@ Rectangle {
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     color: "black"
-                    font.pointSize: 24
+                    //fontSize: largeSize
                     font.weight: Font.DemiBold
                 }
             }
@@ -197,6 +197,15 @@ Rectangle {
                             }
                         }
 
+                        GCDialogCheckBox {
+                            id: sectionVisibleBox
+                            checked: sectionVisible
+                            text: qsTr("The activity section menu is visible")
+                            onCheckedChanged: {
+                                sectionVisible = checked;
+                            }
+                        }
+
                         Row {
                             spacing: 5
                             ComboBox {
@@ -207,7 +216,7 @@ Rectangle {
                             }
                             GCText {
                                 text: qsTr("Font selector")
-                                font.pointSize: 16
+                               // fontSize: mediumSize
                                 wrapMode: Text.WordWrap
                             }
                         }
@@ -224,7 +233,7 @@ Rectangle {
                             }
                             GCText {
                                 text: qsTr("Language selector")
-                                font.pointSize: 16
+                                //fontSize: mediumSize
                                 wrapMode: Text.WordWrap
                             }
                         }
@@ -238,7 +247,6 @@ Rectangle {
                             property bool haveLocalResource: false
 
                             function localeChanged() {
-                                var localeShort = languages.get(languageBox.currentIndex).locale.substr(0, 2);
                                 var localeShort =
                                         ApplicationInfo.getLocaleShort(languages.get(languageBox.currentIndex).locale);
                                 var language = languages.get(languageBox.currentIndex).text;
@@ -286,7 +294,6 @@ Rectangle {
                                             ApplicationInfo.getLocaleShort(languages.get(languageBox.currentIndex).locale);
                                     if (DownloadManager.downloadResource(
                                         DownloadManager.getVoicesResourceForLocale(localeShort)))
-                                                languages.get(languageBox.currentIndex).locale.substr(0, 2))))
                                     {
                                         var downloadDialog = Core.showDownloadDialog(dialogConfig, {});
                                     }
@@ -301,7 +308,7 @@ Rectangle {
                             GCText {
                                 text: qsTr("Difficulty filter:")
                                 verticalAlignment: Text.AlignVCenter
-                                font.pointSize: 16
+                                //fontSize: mediumSize
                                 height: 50 * ApplicationInfo.ratio
                             }
 
@@ -549,33 +556,6 @@ Rectangle {
 
         // This is done this way for having the translations
         Component.onCompleted: {
-            languages.append( { "text": qsTr("English (Great Britain)"), "locale": "en_GB.UTF-8" })
-            languages.append( { "text": qsTr("English (United States)"), "locale": "en_US.UTF-8" } )
-            languages.append( { "text": qsTr("Bulgarian"), "locale": "bg_BG.UTF-8" } )
-            languages.append( { "text": qsTr("Breton"), "locale": "br_FR.UTF-8" } )
-            languages.append( { "text": qsTr("Czech Republic"), "locale": "cs_CZ.UTF-8" } )
-            languages.append( { "text": qsTr("Danish"), "locale": "da_DK.UTF-8" } )
-            languages.append( { "text": qsTr("German"), "locale": "de_DE.UTF-8" } )
-            languages.append( { "text": qsTr("Greek"), "locale": "el_GR.UTF-8" } )
-            languages.append( { "text": qsTr("Spanish"), "locale": "es_ES.UTF-8" } )
-            languages.append( { "text": qsTr("French"), "locale": "fr_FR.UTF-8" } )
-            languages.append( { "text": qsTr("Scottish Gaelic"), "locale": "gd_GB.UTF-8" } )
-            languages.append( { "text": qsTr("Galician"), "locale": "gl_ES.UTF-8" } )
-            languages.append( { "text": qsTr("Hungarian"), "locale": "hu_HU.UTF-8" } )
-            languages.append( { "text": qsTr("Lithuanian"), "locale": "lt_LT.UTF-8" } )
-            languages.append( { "text": qsTr("Latvian"), "locale": "lv_LV.UTF-8" } )
-            languages.append( { "text": qsTr("Dutch"), "locale": "nl_NL.UTF-8" } )
-            languages.append( { "text": qsTr("Norwegian Nynorsk"), "locale": "nn_NO.UTF-8" } )
-            languages.append( { "text": qsTr("Polish"), "locale": "pl_PL.UTF-8" } )
-            languages.append( { "text": qsTr("Russian"), "locale": "ru_RU.UTF-8" } )
-            languages.append( { "text": qsTr("Portuguese (Brazil)"), "locale": "pt_BR.UTF-8" } )
-            languages.append( { "text": qsTr("Slovak"), "locale": "sk_SK.UTF-8" } )
-            languages.append( { "text": qsTr("Slovenian"), "locale": "sl_SI.UTF-8" } )
-            languages.append( { "text": qsTr("Montenegrin"), "locale": "sr_ME.UTF-8" } )
-            languages.append( { "text": qsTr("Swedish"), "locale": "sv_FI.UTF-8" } )
-            languages.append( { "text": qsTr("Tamil"), "locale": "ta_IN.UTF-8" } )
-            languages.append( { "text": qsTr("Thai"), "locale": "th_TH.UTF-8" } )
-            languages.append( { "text": qsTr("Chinese (Traditional)"), "locale": "zh_TW.UTF-8" } )
             // FIXME: Add the first line for translation asap
             languages.append( { "text": "Your system default", "locale": "system" })
             languages.append( { "text": "UK English", "locale": "en_GB.UTF-8" })
@@ -616,7 +596,7 @@ Rectangle {
             var systemFonts = Qt.fontFamilies();
             var rccFonts = ApplicationInfo.getFontsFromRcc();
 
-            // Remove explicitely all *symbol* and *ding* fonts
+            // Remove explicitly all *symbol* and *ding* fonts
             var excludedFonts = ApplicationInfo.getSystemExcludedFonts();
             excludedFonts.push("ding");
             excludedFonts.push("symbol");
