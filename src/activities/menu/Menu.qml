@@ -220,7 +220,7 @@ ActivityBase {
                 right: parent.right
                 margins: 4
             }
-            active: ActivityInfoTree.menuTree.length === 0
+            active: (ActivityInfoTree.menuTree.length === 0) && (currentTag === "favorite")
             sourceComponent: Item {
                 anchors.fill: parent
                 GCText {
