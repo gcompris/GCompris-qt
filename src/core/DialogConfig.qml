@@ -153,6 +153,16 @@ Rectangle {
                         }
 
                         GCDialogCheckBox {
+                            id: displayNonFreeActivitiesBox
+                            text: qsTr("Show non-free activities")
+                            visible: ApplicationSettings.isDemoMode
+                            checked: showNonFreeActivities
+                            onCheckedChanged: {
+                                showNonFreeActivities = checked;
+                            }
+                        }
+
+                        GCDialogCheckBox {
                             id: enableAudioVoicesBox
                             text: qsTr("Enable audio voices")
                             checked: isAudioVoicesEnabled
@@ -499,6 +509,7 @@ Rectangle {
         }
     }
 
+    property bool showNonFreeActivities: ApplicationSettings.showNonFreeActivities
     property bool isAudioVoicesEnabled: ApplicationSettings.isAudioVoicesEnabled
     property bool isAudioEffectsEnabled: ApplicationSettings.isAudioEffectsEnabled
     property bool isFullscreen: ApplicationSettings.isFullscreen
@@ -509,6 +520,7 @@ Rectangle {
 
     onStart: {
         // Synchronize settings with data
+        showNonFreeActivities = ApplicationSettings.showNonFreeActivities
         isAudioVoicesEnabled = ApplicationSettings.isAudioVoicesEnabled
         enableAudioVoicesBox.checked = isAudioVoicesEnabled
 
@@ -547,6 +559,7 @@ Rectangle {
     }
 
     function save() {
+        ApplicationSettings.showNonFreeActivities = showNonFreeActivities
         ApplicationSettings.isAudioVoicesEnabled = isAudioVoicesEnabled
         ApplicationSettings.isAudioEffectsEnabled = isAudioEffectsEnabled
         ApplicationSettings.isFullscreen = isFullscreen
@@ -682,7 +695,8 @@ Rectangle {
                 (ApplicationSettings.isFullscreen != isFullscreen) ||
                 (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard) ||
                 (ApplicationSettings.isAutomaticDownloadsEnabled != isAutomaticDownloadsEnabled) ||
-                (ApplicationSettings.baseFontSize != baseFontSize)
+                (ApplicationSettings.baseFontSize != baseFontSize) ||
+                (ApplicationSettings.showNonFreeActivities != showNonFreeActivities)
                 );
     }
 }

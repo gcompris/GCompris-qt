@@ -59,6 +59,7 @@ static const QString INTERNAL_GROUP_KEY = "Internal";
 static const QString FAVORITE_GROUP_KEY = "Favorite";
 
 static const QString FULLSCREEN_KEY = "fullscreen";
+static const QString SHOW_NONFREE_ACTIVITIES_KEY = "showNonFreeActivities";
 static const QString ENABLE_AUDIO_VOICES_KEY = "enableAudioVoices";
 static const QString ENABLE_AUDIO_EFFECTS_KEY = "enableAudioEffects";
 static const QString VIRTUALKEYBOARD_KEY = "virtualKeyboard";
@@ -92,7 +93,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
 
     // general group
     m_config.beginGroup(GENERAL_GROUP_KEY);
-	m_isAudioEffectsEnabled = m_config.value(ENABLE_AUDIO_EFFECTS_KEY, true).toBool();
+    m_isAudioEffectsEnabled = m_config.value(ENABLE_AUDIO_EFFECTS_KEY, true).toBool();
     m_isFullscreen = m_config.value(FULLSCREEN_KEY, true).toBool();
 	m_isAudioVoicesEnabled = m_config.value(ENABLE_AUDIO_VOICES_KEY, true).toBool();
     m_isVirtualKeyboard = m_config.value(VIRTUALKEYBOARD_KEY,
@@ -108,6 +109,8 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
 	m_isDemoMode = m_config.value(DEMO_KEY, false).toBool();
 #endif
 
+    // By default, show it if all the activities are non free
+    m_showNonFreeActivities = m_config.value(SHOW_NONFREE_ACTIVITIES_KEY, m_isDemoMode).toBool();
 	m_sectionVisible = m_config.value(SECTION_VISIBLE, true).toBool();
 	m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
             !ApplicationInfo::getInstance()->isMobile()).toBool();
@@ -133,6 +136,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     // no group
     m_isBarHidden = false;
 
+    connect(this, SIGNAL(showNonFreeActivitiesChanged()), this, SLOT(notifyShowNonFreeActivitiesChanged()));
 	connect(this, SIGNAL(audioVoicesEnabledChanged()), this, SLOT(notifyAudioVoicesEnabledChanged()));
 	connect(this, SIGNAL(audioEffectsEnabledChanged()), this, SLOT(notifyAudioEffectsEnabledChanged()));
 	connect(this, SIGNAL(fullscreenChanged()), this, SLOT(notifyFullscreenChanged()));
@@ -154,6 +158,7 @@ ApplicationSettings::~ApplicationSettings()
     // make sure settings file is up2date:
     // general group
     m_config.beginGroup(GENERAL_GROUP_KEY);
+    m_config.setValue(SHOW_NONFREE_ACTIVITIES_KEY, m_showNonFreeActivities);
 	m_config.setValue(ENABLE_AUDIO_VOICES_KEY, m_isAudioVoicesEnabled);
     m_config.setValue(LOCALE_KEY, m_locale);
     m_config.setValue(FONT_KEY, m_font);
@@ -183,6 +188,12 @@ ApplicationSettings::~ApplicationSettings()
     m_config.sync();
 
     m_instance = NULL;
+}
+
+void ApplicationSettings::notifyShowNonFreeActivitiesChanged()
+{
+    updateValueInConfig(GENERAL_GROUP_KEY, SHOW_NONFREE_ACTIVITIES_KEY, m_showNonFreeActivities);
+    qDebug() << "notifyShowNonFreeActivitiesChanged: " << m_showNonFreeActivities;
 }
 
 void ApplicationSettings::notifyAudioVoicesEnabledChanged()
