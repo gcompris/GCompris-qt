@@ -150,6 +150,20 @@ void ActivityInfoTree::filterByTag(const QString &tag)
     emit menuTreeChanged();
 }
 
+void ActivityInfoTree::filterNonFreeActivities()
+{
+    // If we have the full version or if we show all the activities, we don't need to do anything
+    if(!ApplicationSettings::getInstance()->isDemoMode() || ApplicationSettings::getInstance()->showNonFreeActivities())
+        return;
+    for(auto activity: m_menuTree) {
+        // Remove non free activities if needed. We need to already have a menuTree filled!
+        if(!activity->demo()) {
+            m_menuTree.removeOne(activity);
+        }
+    }
+    emit menuTreeChanged();
+}
+
 void ActivityInfoTree::exportAsSQL()
 {
     QTextStream cout(stdout);
