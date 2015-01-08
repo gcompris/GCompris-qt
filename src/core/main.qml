@@ -34,6 +34,15 @@ Window {
     minimumHeight: 400
     title: "GCompris"
 
+    property var applicationState: Qt.application.state
+
+    onApplicationStateChanged: {
+        if (ApplicationInfo.isMobile && applicationState != Qt.ApplicationActive) {
+            audioVoices.stop();
+            audioEffects.stop();
+        }
+    }
+
     onClosing: Core.quit()
 
     GCAudio {
