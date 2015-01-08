@@ -57,6 +57,7 @@ class ApplicationSettings : public QObject
 	Q_OBJECT
 
 	// general group
+    Q_PROPERTY(bool showNonFreeActivities READ showNonFreeActivities WRITE setShowNonFreeActivities NOTIFY showNonFreeActivitiesChanged)
 	Q_PROPERTY(bool isAudioVoicesEnabled READ isAudioVoicesEnabled WRITE setIsAudioVoicesEnabled NOTIFY audioVoicesEnabledChanged)
 	Q_PROPERTY(bool isAudioEffectsEnabled READ isAudioEffectsEnabled WRITE setIsAudioEffectsEnabled NOTIFY audioEffectsEnabledChanged)
     Q_PROPERTY(bool isFullscreen READ isFullscreen WRITE setFullscreen NOTIFY fullscreenChanged)
@@ -100,10 +101,16 @@ public:
     static QObject *systeminfoProvider(QQmlEngine *engine,
                                        QJSEngine *scriptEngine);
 
-	bool isAudioVoicesEnabled() const { return m_isAudioVoicesEnabled; }
-	void setIsAudioVoicesEnabled(const bool newMode) {
-		m_isAudioVoicesEnabled = newMode;
-		emit audioVoicesEnabledChanged();
+    bool showNonFreeActivities() const { return m_showNonFreeActivities; }
+    void setShowNonFreeActivities(const bool newMode) {
+        m_showNonFreeActivities = newMode;
+        emit showNonFreeActivitiesChanged();
+    }
+
+    bool isAudioVoicesEnabled() const { return m_isAudioVoicesEnabled; }
+    void setIsAudioVoicesEnabled(const bool newMode) {
+        m_isAudioVoicesEnabled = newMode;
+        emit audioVoicesEnabledChanged();
     }
 
 	bool isAudioEffectsEnabled() const { return m_isAudioEffectsEnabled; }
@@ -211,6 +218,8 @@ public:
     int baseFontSizeMax() const { return m_baseFontSizeMax; }
 
 protected slots:
+
+    Q_INVOKABLE void notifyShowNonFreeActivitiesChanged();
 	Q_INVOKABLE void notifyAudioVoicesEnabledChanged();
 	Q_INVOKABLE void notifyAudioEffectsEnabledChanged();
     Q_INVOKABLE void notifyFullscreenChanged();
@@ -238,6 +247,7 @@ public slots:
 protected:
 
 signals:
+    void showNonFreeActivitiesChanged();
 	void audioVoicesEnabledChanged();
 	void audioEffectsEnabledChanged();
     void fullscreenChanged();
@@ -265,7 +275,9 @@ private:
                                          const QString& key, const T& value);
 
     static ApplicationSettings *m_instance;
-	bool m_isAudioVoicesEnabled;
+
+    bool m_showNonFreeActivities;
+    bool m_isAudioVoicesEnabled;
 	bool m_isAudioEffectsEnabled;
     bool m_isFullscreen;
     bool m_isVirtualKeyboard;
