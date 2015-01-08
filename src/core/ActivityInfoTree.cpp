@@ -247,6 +247,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	file.close();
 
 	menuTree->filterByTag("favorite");
+    menuTree->filterNonFreeActivities();
     return menuTree;
 }
 
