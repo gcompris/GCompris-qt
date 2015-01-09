@@ -303,7 +303,7 @@ ActivityBase {
                         }
                         source: demo || !ApplicationSettings.isDemoMode
                                 ? "" :
-                                  "qrc:/gcompris/src/core/resource/cancel.svgz"
+                                  menuActivity.url + "lock.svg"
                         sourceSize.width: 30 * ApplicationInfo.ratio
                     }
                     GCText {
