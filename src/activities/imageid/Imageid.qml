@@ -181,6 +181,32 @@ ActivityBase {
                             centerIn: parent
                             margins: 0.05 + parent.width
                         }
+                        property string nextSource
+                        function changeSource(nextSource_) {
+                            nextSource = nextSource_
+                            animImage.start()
+                        }
+
+                        SequentialAnimation {
+                            id: animImage
+                            PropertyAnimation {
+                                target: wordImage
+                                property: "opacity"
+                                to: 0
+                                duration: 100
+                            }
+                            PropertyAction {
+                                target: wordImage
+                                property: "source"
+                                value: wordImage.nextSource
+                            }
+                            PropertyAnimation {
+                                target: wordImage
+                                property: "opacity"
+                                to: 1
+                                duration: 100
+                            }
+                        }
                     }
                 }
             }
