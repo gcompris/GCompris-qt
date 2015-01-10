@@ -102,7 +102,7 @@ function initSubLevel() {
     for (var j = 0; j < selectedWords.length; j++) {
         items.wordListModel.append({"word": selectedWords[j] })
     }
-    items.wordImage.source = "qrc:/" + items.goodWord.image;
+    items.wordImage.changeSource("qrc:/" + items.goodWord.image)
 }
 
 function nextLevel() {
