@@ -55,41 +55,51 @@ var memory_sounds =
             [ url + 'LRWeird_6_LA.ogg', url + 'LRWeird_6_LA.ogg']
         ]
 
+
+var images = []
+
 var memory_cards = [
             { // Level 1
                 columns: 3,
                 rows: 2,
-                sounds: memory_sounds
+                sounds: memory_sounds,
+                images: images
             },
             { // Level 2
                 columns: 4,
                 rows: 2,
-                sounds: memory_sounds
+                sounds: memory_sounds,
+                images: images
             },
             { // Level 3
                 columns: 5,
                 rows: 2,
-                sounds: memory_sounds
+                sounds: memory_sounds,
+                images: images
             },
             { // Level 4
                 columns: 4,
                 rows: 3,
-                sounds: memory_sounds
+                sounds: memory_sounds,
+                images: images
             },
             { // Level 5
                 columns: 5,
                 rows: 6,
-                sounds: memory_sounds
+                sounds: memory_sounds,
+                images: images
             },
             { // Level 6
                 columns: 5,
                 rows: 4,
-                sounds: memory_sounds
+                sounds: memory_sounds,
+                images: images
             },
             { // Level 7
                 columns: 6,
                 rows: 4,
-                sounds: memory_sounds
+                sounds: memory_sounds,
+                images: images
             },
         ]
 
@@ -97,5 +107,9 @@ var memory_cards = [
 
 
 function get() {
+    // Images are the same, create a list as large as memory_sounds
+    for(var i in memory_sounds)
+        images.push([url + 'Tux_play.png', url + 'Tux_play.png'])
+
     return memory_cards
 }
