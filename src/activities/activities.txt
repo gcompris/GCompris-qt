@@ -35,6 +35,7 @@ gnumch-multiples
 gnumch-primes
 guessnumber
 hexagon
+imageid
 instruments
 leftright
 lightsoff
