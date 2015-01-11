@@ -1,5 +1,5 @@
 README
-Andika 
+Andika
 =========================================
 
 Thank you for your interest in Andika ("Write!" in Swahili), a
@@ -21,6 +21,16 @@ asked questions and their answers.
 See the SIL Unicode Roman FAQ (http://scripts.sil.org/ComplexRomanFontFAQ)
 for frequently asked questions and their answers regarding SIL's Roman fonts.
 
+TYPETUNER
+2015-01-11
+=========
+
+This package contains a TypeTuned version of the Andika font.
+
+The TypeTuner settings file used to generate the enclosed font
+is included in the package as Andika-feat_set_tuned.xml.
+By inspecting this file with a text editor you can determine 
+which alternate behaviors have been enabled.
 
 TIPS
 ====
@@ -82,5 +92,5 @@ For more information please visit the Andika page on SIL International's
 Computers and Writing systems website:
 http://scripts.sil.org/andika
 
-Or send an email to andika@sil.org
+Support through the website: http://scripts.sil.org/Support
 
