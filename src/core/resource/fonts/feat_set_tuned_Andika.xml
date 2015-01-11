@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE features_set SYSTEM "feat_set.dtd">
+<features_set version="1.0">
+	<feature name="Small Caps" value="False">
+		<value name="False"/>
+		<value name="True"/>
+	</feature>
+	<feature name="Literacy alternates" value="True">
+		<value name="False"/>
+		<value name="True"/>
+	</feature>
+	<feature name="Slant italic specials" value="False">
+		<value name="False"/>
+		<value name="True"/>
+	</feature>
+	<feature name="Barred-bowl forms" value="False">
+		<value name="False"/>
+		<value name="Barred-bowl"/>
+	</feature>
+	<feature name="Tone numbers" value="Bars">
+		<value name="Bars"/>
+		<value name="Numbers"/>
+	</feature>
+	<feature name="Hide tone contour staves" value="False">
+		<value name="False"/>
+		<value name="True"/>
+	</feature>
+	<feature name="9-level pitches" value="No tramlines">
+		<value name="No tramlines"/>
+		<value name="Tramlines"/>
+		<value name="Non-ligated with no tramlines"/>
+		<value name="Non-ligated with tramlines"/>
+	</feature>
+	<feature name="Vietnamese-style diacritics" value="False">
+		<value name="False"/>
+		<value name="Vietnamese-style"/>
+	</feature>
+	<feature name="Chinantec tones" value="False">
+		<value name="False"/>
+		<value name="Chinantec-style"/>
+	</feature>
+	<feature name="Bridging diacritics" value="False">
+		<value name="False"/>
+		<value name="True"/>
+	</feature>
+	<feature name="Serbian-style alternates" value="False">
+		<value name="False"/>
+		<value name="True"/>
+	</feature>
+	<feature name="Uppercase Eng alternates" value="Large eng with descender">
+		<value name="Large eng with descender"/>
+		<value name="Large eng on baseline"/>
+		<value name="Capital N with tail"/>
+		<value name="Large eng with short stem"/>
+	</feature>
+	<feature name="Rams horn alternates" value="Small bowl">
+		<value name="Small bowl"/>
+		<value name="Large bowl"/>
+		<value name="Small gamma"/>
+	</feature>
+	<feature name="Ogonek alternate" value="Curved">
+		<value name="Curved"/>
+		<value name="Straight"/>
+	</feature>
+	<feature name="Capital B-hook alternate" value="Uppercase style">
+		<value name="Uppercase style"/>
+		<value name="Lowercase style"/>
+	</feature>
+	<feature name="Capital D-hook alternate" value="Uppercase style">
+		<value name="Uppercase style"/>
+		<value name="Lowercase style"/>
+	</feature>
+	<feature name="Capital H-stroke alternate" value="False">
+		<value name="False"/>
+		<value name="Vertical-stroke"/>
+	</feature>
+	<feature name="J-stroke hook alternate" value="No top serif">
+		<value name="No top serif"/>
+		<value name="Top serif"/>
+	</feature>
+	<feature name="Capital N-left-hook alternate" value="Uppercase style">
+		<value name="Uppercase style"/>
+		<value name="Lowercase style"/>
+	</feature>
+	<feature name="Open-O alternate" value="Bottom serif">
+		<value name="Bottom serif"/>
+		<value name="Top serif"/>
+	</feature>
+	<feature name="Small p-hook alternate" value="Left hook">
+		<value name="Left hook"/>
+		<value name="Right hook"/>
+	</feature>
+	<feature name="Capital R-tail alternate" value="Uppercase style">
+		<value name="Uppercase style"/>
+		<value name="Lowercase style"/>
+	</feature>
+	<feature name="Capital T-hook alternate" value="Left hook">
+		<value name="Left hook"/>
+		<value name="Right hook"/>
+	</feature>
+	<feature name="V-hook alternates" value="Curved">
+		<value name="Curved"/>
+		<value name="Straight with low hook"/>
+		<value name="Straight with high hook"/>
+	</feature>
+	<feature name="Capital Y-hook alternate" value="Right hook">
+		<value name="Left hook"/>
+		<value name="Right hook"/>
+	</feature>
+	<feature name="Small ezh-curl alternate" value="Small bowl">
+		<value name="Small bowl"/>
+		<value name="Large bowl"/>
+	</feature>
+	<feature name="Capital Ezh alternates" value="Normal">
+		<value name="Normal"/>
+		<value name="Reversed sigma"/>
+	</feature>
+	<feature name="OU alternates" value="Closed">
+		<value name="Closed"/>
+		<value name="Open"/>
+	</feature>
+	<feature name="Mongolian-style Cyrillic E" value="False">
+		<value name="False"/>
+		<value name="Mongolian-style"/>
+	</feature>
+	<feature name="Combining breve Cyrillic form" value="False">
+		<value name="False"/>
+		<value name="Cyrillic-style"/>
+	</feature>
+	<feature name="Cyrillic shha alternate" value="False">
+		<value name="False"/>
+		<value name="Uppercase style"/>
+	</feature>
+	<feature name="Modifier apostrophe alternates" value="Small">
+		<value name="Small"/>
+		<value name="Large"/>
+	</feature>
+	<feature name="Modifier colon alternate" value="Tight">
+		<value name="Tight"/>
+		<value name="Expanded"/>
+	</feature>
+	<feature name="Non-European caron alternates" value="European style">
+		<value name="European style"/>
+		<value name="Non-European style"/>
+	</feature>
+	<feature name="Empty set alternates" value="Circle">
+		<value name="Circle"/>
+		<value name="Zero"/>
+	</feature>
+	<feature name="Digit Zero with slash" value="No slash">
+		<value name="No slash"/>
+		<value name="Slash"/>
+	</feature>
+	<feature name="Digit One without base" value="Base">
+		<value name="Base"/>
+		<value name="No base"/>
+	</feature>
+	<feature name="Digit Four with open top" value="Closed">
+		<value name="Closed"/>
+		<value name="Open"/>
+	</feature>
+	<feature name="Digit Six and Nine alternates" value="Curved stem">
+		<value name="Curved stem"/>
+		<value name="Diagonal stem"/>
+	</feature>
+	<feature name="Digit Seven with bar" value="No bar">
+		<value name="No bar"/>
+		<value name="Bar"/>
+	</feature>
+	<feature name="Small i-tail alternate" value="Straight">
+		<value name="Straight"/>
+		<value name="Curved tail"/>
+	</feature>
+	<feature name="Small j-serif alternate" value="No top serif">
+		<value name="No top serif"/>
+		<value name="Top serif"/>
+	</feature>
+	<feature name="Small l-tail alternate" value="Curved tail">
+		<value name="Straight"/>
+		<value name="Curved tail"/>
+	</feature>
+	<feature name="Capital Q alternate" value="Tail">
+		<value name="Tail"/>
+		<value name="Tail across"/>
+	</feature>
+	<feature name="Small q-tail alternate" value="Straight">
+		<value name="Straight"/>
+		<value name="Point"/>
+	</feature>
+	<feature name="Small t-tail alternate" value="Curved tail">
+		<value name="Curved tail"/>
+		<value name="Straight"/>
+	</feature>
+	<feature name="Small y-tail alternate" value="Curved tail">
+		<value name="Curved tail"/>
+		<value name="Straight"/>
+	</feature>
+	<feature name="Show invisible characters" value="False">
+		<value name="False"/>
+		<value name="True"/>
+	</feature>
+	<feature name="Romanian-style diacritics" value="False">
+		<value name="False"/>
+		<value name="True"/>
+	</feature>
+	<feature name="Show deprecated PUA" value="None">
+		<value name="None"/>
+		<value name="Through Unicode 4.0"/>
+		<value name="Through Unicode 4.1"/>
+		<value name="Through Unicode 5.0"/>
+		<value name="Through Unicode 5.1"/>
+	</feature>
+	<feature name="Line spacing" value="Normal">
+		<value name="Normal"/>
+		<value name="Tight"/>
+		<value name="Loose"/>
+		<value name="Imported"/>
+	</feature>
+</features_set>
