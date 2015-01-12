@@ -32,6 +32,29 @@ configure_file(${CMAKE_CURRENT_SOURCE_DIR}/AndroidManifest.xml.cmake ${PACKAGE_S
 set(ANDROID_SDK $ENV{ANDROID_SDK})
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/configAndroid.json.cmake ${PACKAGE_SOURCE_ANDROID}/configAndroid.json @ONLY)
 
+# Get all po files in po/ to create the values-{locale} in order to have the locales available in android
+file(GLOB TRANSLATIONS_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "../po/*.po")
+foreach(PoSource ${TRANSLATIONS_FILES})
+  # Remove suffix ".po"
+  string(REPLACE ".po" "" PoSource ${PoSource})
+  # Remove prefix "../po/gcompris_"
+  string(REPLACE "../po/gcompris_" "" locale ${PoSource})
+  # replace _ par -r for locales with country
+  string(REPLACE "_" "-r" locale ${locale})
+
+  # particular case
+  string(COMPARE EQUAL ${locale} "x-test" IS_X_TEST)
+
+  if(NOT IS_X_TEST)
+    add_custom_command(
+      OUTPUT ${locale}
+      COMMAND cmake -E make_directory ${GCOMPRIS_TRANSLATIONS_DIR}
+      COMMAND cmake -E make_directory ${CMAKE_BINARY_DIR}/android/res/values-${locale}
+      COMMAND cmake -E copy ${CMAKE_SOURCE_DIR}/android/strings.xml ${CMAKE_BINARY_DIR}/android/res/values-${locale}/strings.xml
+      )
+    list(APPEND ALL_LOCALES ${locale})
+  endif(NOT IS_X_TEST)
+endforeach()
 add_custom_command (
   OUTPUT createApkFromAndroidDeployQtDebug
   DEPENDS ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml
@@ -70,22 +93,22 @@ add_custom_command (
 
 # Command to create apk from Makefile
 add_custom_target (apk_debug
-   DEPENDS createApkFromAndroidDeployQtDebug java_src
+   DEPENDS ${ALL_LOCALES} createApkFromAndroidDeployQtDebug java_src
 )
 
 # Command to create apk from Makefile
 add_custom_target (apk_release
-   DEPENDS createApkFromAndroidDeployQtRelease java_src
+   DEPENDS ${ALL_LOCALES} createApkFromAndroidDeployQtRelease java_src
 )
 
 # Command to create signed apk from Makefile
 add_custom_target (apk_signed
-   DEPENDS createApkSignedFromAndroidDeployQtRelease java_src
+   DEPENDS ${ALL_LOCALES} createApkSignedFromAndroidDeployQtRelease java_src
 )
 
 # Command to create signed aligned apk from Makefile
 add_custom_target (apk_signed_aligned
-   DEPENDS createApkSignedAlignedFromAndroidDeployQtRelease java_src
+   DEPENDS ${ALL_LOCALES} createApkSignedAlignedFromAndroidDeployQtRelease java_src
 )
 
 # Command to install the signed aligned apk through adb from Makefile
