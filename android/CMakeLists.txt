@@ -41,20 +41,16 @@ foreach(PoSource ${TRANSLATIONS_FILES})
   string(REPLACE "../po/gcompris_" "" locale ${PoSource})
   # replace _ par -r for locales with country
   string(REPLACE "_" "-r" locale ${locale})
-
-  # particular case
-  string(COMPARE EQUAL ${locale} "x-test" IS_X_TEST)
-
-  if(NOT IS_X_TEST)
-    add_custom_command(
-      OUTPUT ${locale}
-      COMMAND cmake -E make_directory ${GCOMPRIS_TRANSLATIONS_DIR}
-      COMMAND cmake -E make_directory ${CMAKE_BINARY_DIR}/android/res/values-${locale}
-      COMMAND cmake -E copy ${CMAKE_SOURCE_DIR}/android/strings.xml ${CMAKE_BINARY_DIR}/android/res/values-${locale}/strings.xml
-      )
-    list(APPEND ALL_LOCALES ${locale})
-  endif(NOT IS_X_TEST)
+  
+  add_custom_command(
+    OUTPUT ${locale}
+    COMMAND cmake -E make_directory ${GCOMPRIS_TRANSLATIONS_DIR}
+    COMMAND cmake -E make_directory ${CMAKE_BINARY_DIR}/android/res/values-${locale}
+    COMMAND cmake -E copy ${CMAKE_SOURCE_DIR}/android/strings.xml ${CMAKE_BINARY_DIR}/android/res/values-${locale}/strings.xml
+    )
+  list(APPEND ALL_LOCALES ${locale})
 endforeach()
+
 add_custom_command (
   OUTPUT createApkFromAndroidDeployQtDebug
   DEPENDS ${PACKAGE_SOURCE_ANDROID}/AndroidManifest.xml
