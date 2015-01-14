@@ -26,6 +26,7 @@ all_languages = subprocess.check_output(['svn', 'cat', SVN_PATH + 'subdirs'],
                                        stderr=subprocess.STDOUT)
 
 all_languages = [x.strip() for x in all_languages.split("\n") if len(x)]
+all_languages.remove("x-test")
 for lang in all_languages:
     try:
         raw_data = subprocess.check_output(['svn', 'cat', SVN_PATH + lang + SOURCE_PO_PATH],

@@ -124,11 +124,17 @@ foreach(PoSource ${TRANSLATIONS_FILES})
   # qm filename
   string(REPLACE ".ts" ".qm" QmOutput ${TsSource})
 
+  set(OutTsFile ${CMAKE_BINARY_DIR}/tmp/${TsSource})
   add_custom_command(
     OUTPUT ${QmOutput}
     COMMAND cmake -E make_directory ${GCOMPRIS_TRANSLATIONS_DIR}
     COMMAND cmake -E make_directory ${CMAKE_BINARY_DIR}/tmp
-    COMMAND lconvert -if po -of qm -i ${CMAKE_SOURCE_DIR}/${PoSource} -o ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
+    # Remove the obsolete translations and set po in the ts output file
+    COMMAND msgattrib --no-obsolete  ${CMAKE_CURRENT_SOURCE_DIR}/${PoSource} -o ${OutTsFile}
+    # Convert the po into ts
+    COMMAND lconvert -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
+    # Convert the ts in qm removing non finished translations
+    COMMAND lrelease -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
     )
   list(APPEND QM_FILES ${QmOutput})
 endforeach()
