@@ -43,23 +43,13 @@ ActivityBase {
         sourceSize.width: parent.width
 
         property bool horizontalLayout: background.width > background.height
-        property QtObject dialog
         property bool keyNavigation: false
+        readonly property string wordsResource: "data/words/words.rcc"
 
         signal start
         signal stop
         signal voiceError
         signal voiceDone
-
-        Connections {
-            target: DownloadManager
-
-            onDownloadFinished: Activity.start(items)
-            onError: {
-                // Fixme display an error message
-                Core.destroyDialog(dialog)
-            }
-        }
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -85,30 +75,49 @@ ActivityBase {
             onGoodWordChanged: playWord()
         }
 
+        function handleResourceRegistered(resource)
+        {
+            if (resource == wordsResource)
+                Activity.start(items);
+        }
+
         onStart: {
             Activity.init(items)
 
-            if(!DownloadManager.haveLocalResource("data/words/words.rcc")) {
-                var buttonHandler = new Array();
-                buttonHandler[StandardButton.No] = function() {};
-                buttonHandler[StandardButton.Yes] = function() {
-                    DownloadManager.updateResource("data/words/words.rcc") };
-                    dialog = Core.showMessageDialog(parent, qsTr("Download?"),
-                                                qsTr("Are you ok to download the images for this activity"),
-                                                "",
-                                                StandardIcon.Question,
-                                                buttonHandler);
-            } else {
-                // Will register the resource file and call start() on callback
-                DownloadManager.updateResource("data/words/words.rcc")
-            }
             repeatItem.visible = false
             keyNavigation = false
             activity.audioVoices.error.connect(voiceError)
             activity.audioVoices.done.connect(voiceDone)
+
+            // check for words.rcc:
+            if (DownloadManager.isResourceRegistered(wordsResource)) {
+                // words.rcc is already registered -> start right away
+                Activity.start(items);
+            } else if(DownloadManager.haveLocalResource(wordsResource)) {
+                // words.rcc is there, but not yet registered -> updateResource
+                DownloadManager.resourceRegistered.connect(handleResourceRegistered);
+                DownloadManager.updateResource(wordsResource);
+            } else {
+                // words.rcc has not been downloaded yet -> ask for download
+                var buttonHandler = new Array();
+                buttonHandler[StandardButton.No] = function() {};
+                buttonHandler[StandardButton.Yes] = function() {
+                    DownloadManager.resourceRegistered.connect(handleResourceRegistered);
+                    DownloadManager.downloadResource(wordsResource)
+                    var downloadDialog = Core.showDownloadDialog(activity, {});
+                };
+                var dialog = Core.showMessageDialog(parent, qsTr("Download?"),
+                        qsTr("Are you ok to download the images for this activity"),
+                        "",
+                        StandardIcon.Question,
+                        buttonHandler);
+            }
         }
 
-        onStop: { Activity.stop() }
+        onStop: {
+            DownloadManager.resourceRegistered.disconnect(handleResourceRegistered);
+            Activity.stop()
+        }
         
         Keys.onRightPressed: {
             keyNavigation = true
