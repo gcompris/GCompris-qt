@@ -504,23 +504,30 @@ bool DownloadManager::registerResource(const QString& filename)
                 << "(rcRoot=" << getResourceRootForFilename(filename) << ")";
         registeredResources.append(filename);
 
+        QString relPath = getRelativeResourcePath(filename);
+        emit resourceRegistered(relPath);
+
         QString v = getVoicesResourceForLocale(
                 ApplicationInfo::getInstance()->localeShort());
-        QString relPath = getRelativeResourcePath(filename);
         if (v == relPath)
             emit voicesRegistered();
         return false;
     }
 }
 
+bool DownloadManager::isResourceRegistered(const QString& resource) const
+{
+    for (auto &base: getSystemResourcePaths())
+        if (isRegistered(base + "/" + resource))
+            return true;
+    return false;
+}
+
 bool DownloadManager::areVoicesRegistered() const
 {
     QString relFilename = getVoicesResourceForLocale(
             ApplicationInfo::getInstance()->localeShort());
-    for (auto &base: getSystemResourcePaths())
-        if (isRegistered(base + "/" + relFilename))
-            return true;
-    return false;
+    return isResourceRegistered(relFilename);
 }
 
 /** Handle a finished download
