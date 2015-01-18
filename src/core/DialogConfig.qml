@@ -43,6 +43,39 @@ Rectangle {
 
     visible: false
     title: qsTr("Configuration")
+    // Put here the locales for which we have a good enough translation
+    property var languages: [
+            { "text": qsTr("Your system default"), "locale": "system" },
+            { "text": "UK English", "locale": "en_GB.UTF-8" },
+            { "text": "American English", "locale": "en_US.UTF-8" },
+            { "text": "български", "locale": "bg_BG.UTF-8" },
+            { "text": "Brezhoneg", "locale": "br_FR.UTF-8" },
+            { "text": "Česká", "locale": "cs_CZ.UTF-8" },
+            { "text": "Dansk", "locale": "da_DK.UTF-8" },
+            { "text": "Deutsch", "locale": "de_DE.UTF-8" },
+            { "text": "Ελληνικά", "locale": "el_GR.UTF-8" },
+            { "text": "Español", "locale": "es_ES.UTF-8" },
+            { "text": "Français", "locale": "fr_FR.UTF-8" },
+            { "text": "Gàidhlig", "locale": "gd_GB.UTF-8" },
+            { "text": "Galego", "locale": "gl_ES.UTF-8" },
+            { "text": "Magyar", "locale": "hu_HU.UTF-8" },
+            { "text": "Lietuvių", "locale": "lt_LT.UTF-8" },
+            { "text": "Latviešu", "locale": "lv_LV.UTF-8" },
+            { "text": "Nederlands", "locale": "nl_NL.UTF-8" },
+            { "text": "Norsk (nynorsk)", "locale": "nn_NO.UTF-8" },
+            { "text": "Polski", "locale": "pl_PL.UTF-8" },
+            { "text": "Русский", "locale": "ru_RU.UTF-8" },
+            { "text": "Português do Brasil", "locale": "pt_BR.UTF-8" },
+            { "text": "Slovenský", "locale": "sk_SK.UTF-8" },
+            { "text": "Slovenski", "locale": "sl_SI.UTF-8" },
+            { "text": "црногорски jeзик", "locale": "sr_ME.UTF-8" },
+            { "text": "Svenska", "locale": "sv_FI.UTF-8" },
+            { "text": "தமிழ்", "locale": "ta_IN.UTF-8" },
+            { "text": "ไทย", "locale": "th_TH.UTF-8" },
+            { "text": "український", "locale": "uk.UTF-8" },
+            { "text": "中文（简体）", "locale": "zh_CN.UTF-8" },
+            { "text": "繁體中文", "locale": "zh_TW.UTF-8" }
+        ]
 
     Row {
         spacing: 2
@@ -265,7 +298,7 @@ Rectangle {
                             ComboBox {
                                 id: languageBox
                                 style: GCComboBoxStyle {}
-                                model: languages
+                                model: dialogConfig.languages
                                 width: 250 * ApplicationInfo.ratio
 
                                 onCurrentIndexChanged: voicesRow.localeChanged();
@@ -287,8 +320,8 @@ Rectangle {
 
                             function localeChanged() {
                                 var localeShort =
-                                        ApplicationInfo.getLocaleShort(languages.get(languageBox.currentIndex).locale);
-                                var language = languages.get(languageBox.currentIndex).text;
+                                        ApplicationInfo.getLocaleShort(dialogConfig.languages[languageBox.currentIndex].locale);
+                                var language = dialogConfig.languages[languageBox.currentIndex].text;
                                 voicesText.text = language;
                                 voicesRow.haveLocalResource = DownloadManager.haveLocalResource(
                                         DownloadManager.getVoicesResourceForLocale(localeShort));
@@ -330,7 +363,7 @@ Rectangle {
 
                                 onClicked: {
                                     var localeShort =
-                                            ApplicationInfo.getLocaleShort(languages.get(languageBox.currentIndex).locale);
+                                            ApplicationInfo.getLocaleShort(dialogConfig.languages[languageBox.currentIndex].locale);
                                     if (DownloadManager.downloadResource(
                                         DownloadManager.getVoicesResourceForLocale(localeShort)))
                                     {
@@ -542,8 +575,8 @@ Rectangle {
         baseFontSize = ApplicationSettings.baseFontSize;
 
         // Set locale
-        for(var i = 0 ; i < languages.count ; i ++) {
-            if(languages.get(i).locale == ApplicationSettings.locale) {
+        for(var i = 0 ; i < dialogConfig.languages.length ; i ++) {
+            if(dialogConfig.languages[i].locale === ApplicationSettings.locale) {
                 languageBox.currentIndex = i;
                 break;
             }
@@ -572,8 +605,8 @@ Rectangle {
 
         ApplicationSettings.saveBaseFontSize();
 
-        if (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale) {
-            ApplicationSettings.locale = languages.get(languageBox.currentIndex).locale
+        if (ApplicationSettings.locale != dialogConfig.languages[languageBox.currentIndex].locale) {
+            ApplicationSettings.locale = dialogConfig.languages[languageBox.currentIndex].locale
             if (!DownloadManager.haveLocalResource(
                     DownloadManager.getVoicesResourceForLocale(
                             ApplicationInfo.localeShort)))
@@ -603,44 +636,6 @@ Rectangle {
     function reset()
     {
         ApplicationSettings.baseFontSize = baseFontSize;
-    }
-
-    ListModel {
-        id: languages
-
-        // This is done this way for having the translations
-        Component.onCompleted: {
-            languages.append( { "text": qsTr("Your system default"), "locale": "system" })
-            languages.append( { "text": "UK English", "locale": "en_GB.UTF-8" })
-            languages.append( { "text": "American English", "locale": "en_US.UTF-8" } )
-            languages.append( { "text": "български", "locale": "bg_BG.UTF-8" } )
-            languages.append( { "text": "Brezhoneg", "locale": "br_FR.UTF-8" } )
-            languages.append( { "text": "Česká", "locale": "cs_CZ.UTF-8" } )
-            languages.append( { "text": "Dansk", "locale": "da_DK.UTF-8" } )
-            languages.append( { "text": "Deutsch", "locale": "de_DE.UTF-8" } )
-            languages.append( { "text": "Ελληνικά", "locale": "el_GR.UTF-8" } )
-            languages.append( { "text": "Español", "locale": "es_ES.UTF-8" } )
-            languages.append( { "text": "Français", "locale": "fr_FR.UTF-8" } )
-            languages.append( { "text": "Gàidhlig", "locale": "gd_GB.UTF-8" } )
-            languages.append( { "text": "Galego", "locale": "gl_ES.UTF-8" } )
-            languages.append( { "text": "Magyar", "locale": "hu_HU.UTF-8" } )
-            languages.append( { "text": "Lietuvių", "locale": "lt_LT.UTF-8" } )
-            languages.append( { "text": "Latviešu", "locale": "lv_LV.UTF-8" } )
-            languages.append( { "text": "Nederlands", "locale": "nl_NL.UTF-8" } )
-            languages.append( { "text": "Norsk (nynorsk)", "locale": "nn_NO.UTF-8" } )
-            languages.append( { "text": "Polski", "locale": "pl_PL.UTF-8" } )
-            languages.append( { "text": "Русский", "locale": "ru_RU.UTF-8" } )
-            languages.append( { "text": "Português do Brasil", "locale": "pt_BR.UTF-8" } )
-            languages.append( { "text": "Slovenský", "locale": "sk_SK.UTF-8" } )
-            languages.append( { "text": "Slovenski", "locale": "sl_SI.UTF-8" } )
-            languages.append( { "text": "црногорски jeзик", "locale": "sr_ME.UTF-8" } )
-            languages.append( { "text": "Svenska", "locale": "sv_FI.UTF-8" } )
-            languages.append( { "text": "தமிழ்", "locale": "ta_IN.UTF-8" } )
-            languages.append( { "text": "ไทย", "locale": "th_TH.UTF-8" } )
-            languages.append( { "text": "український", "locale": "uk.UTF-8" } )
-            languages.append( { "text": "中文（简体）", "locale": "zh_CN.UTF-8" } )
-            languages.append( { "text": "繁體中文", "locale": "zh_TW.UTF-8" } )
-        }
     }
 
     ListModel {
@@ -685,7 +680,7 @@ Rectangle {
     }
 
     function hasConfigChanged() {
-        return (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale ||
+        return (ApplicationSettings.locale !== dialogConfig.languages[languageBox.currentIndex].locale ||
                 (ApplicationSettings.sectionVisible != sectionVisible) ||
                 (ApplicationSettings.font != fonts.get(fontBox.currentIndex).text) ||
                 (ApplicationSettings.isEmbeddedFont != fonts.get(fontBox.currentIndex).isLocalResource) ||
