@@ -610,8 +610,7 @@ Rectangle {
 
         // This is done this way for having the translations
         Component.onCompleted: {
-            // FIXME: Add the first line for translation asap
-            languages.append( { "text": "Your system default", "locale": "system" })
+            languages.append( { "text": qsTr("Your system default"), "locale": "system" })
             languages.append( { "text": "UK English", "locale": "en_GB.UTF-8" })
             languages.append( { "text": "American English", "locale": "en_US.UTF-8" } )
             languages.append( { "text": "български", "locale": "bg_BG.UTF-8" } )
