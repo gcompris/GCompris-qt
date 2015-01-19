@@ -30,17 +30,17 @@ function validateDataset(levels)
     return true;
 }
 
-function load(parser, datasetUrl) {
+function load(parser, baseUrl, datasetFilename, translationFilename) {
 
+    var datasetUrl = baseUrl + "/" + datasetFilename;
     var dataset = parser.parseFromUrl(datasetUrl, validateDataset);
     if (dataset === null) {
         console.error("Lang: Invalid dataset, can't continue: "
                       + datasetUrl);
         return;
     }
-
     dataset['contentText'] = loadContent(parser,
-       GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/words/content.json"))
+       GCompris.ApplicationInfo.getLocaleFilePath(baseUrl + "/" + translationFilename))
 
     return dataset
 }
