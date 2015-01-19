@@ -132,5 +132,6 @@ function nextSubLevel() {
 
 // Append to the queue of words for the sublevel the error
 function badWordSelected(wordIndex) {
-    subLevelsLeft.unshift(wordIndex);
+    if (subLevelsLeft[0] != wordIndex)
+        subLevelsLeft.unshift(wordIndex);
 }
