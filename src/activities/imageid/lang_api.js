@@ -42,6 +42,10 @@ function load(parser, baseUrl, datasetFilename, translationFilename) {
     dataset['contentText'] = loadContent(parser,
        GCompris.ApplicationInfo.getLocaleFilePath(baseUrl + "/" + translationFilename))
 
+    if(!dataset['contentText']) {
+        return null
+    }
+
     return dataset
 }
 

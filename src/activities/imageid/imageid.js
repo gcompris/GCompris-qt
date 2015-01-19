@@ -51,6 +51,11 @@ function start() {
     currentSubLevel = 0;
 
     dataset = Lang.load(items.parser, baseUrl, "words.json", "content-$LOCALE.json")
+    if(!dataset) {
+        // English fallback
+        dataset = Lang.load(items.parser, baseUrl, "words.json", "content-en.json")
+    }
+
     lessons = Lang.getAllLessons(dataset)
     maxLevel = lessons.length
 
