@@ -53,7 +53,10 @@ function start() {
     dataset = Lang.load(items.parser, baseUrl, "words.json", "content-$LOCALE.json")
     if(!dataset) {
         // English fallback
+        items.background.englishFallback = true
         dataset = Lang.load(items.parser, baseUrl, "words.json", "content-en.json")
+    } else {
+        items.background.englishFallback = false
     }
 
     lessons = Lang.getAllLessons(dataset)
