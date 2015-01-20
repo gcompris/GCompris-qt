@@ -502,43 +502,11 @@ Rectangle {
     }
 
     // The cancel button
-    Image {
-        id: cancel
-        source: "qrc:/gcompris/src/core/resource/apply.svgz";
-        fillMode: Image.PreserveAspectFit
-        anchors.right: parent.right
-        anchors.top: parent.top
-        smooth: true
-        sourceSize.width: 60 * ApplicationInfo.ratio
-        anchors.margins: 10
-        SequentialAnimation {
-            id: anim
-            running: true
-            loops: Animation.Infinite
-            NumberAnimation {
-                target: cancel
-                property: "rotation"
-                from: -10; to: 10
-                duration: 500
-                easing.type: Easing.InOutQuad
-            }
-            NumberAnimation {
-                target: cancel
-                property: "rotation"
-                from: 10; to: -10
-                duration: 500
-                easing.type: Easing.InOutQuad
-            }
-        }
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
-                if(hasConfigChanged())
-                    save();
-                //else
-                //    reset();
-                close()
-            }
+    GCButtonCancel {
+        onClose: {
+            if(hasConfigChanged())
+                save();
+            parent.close()
         }
     }
 
