@@ -70,7 +70,8 @@ ActivityBase {
             property int goodWordIndex
 
             function playWord() {
-                activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice))
+                if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
+                    voiceError();
             }
             onGoodWordChanged: playWord()
         }
