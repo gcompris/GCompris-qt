@@ -45,6 +45,7 @@ ActivityBase {
         property bool horizontalLayout: background.width > background.height
         property bool keyNavigation: false
         readonly property string wordsResource: "data/words/words.rcc"
+        property bool englishFallback: false
 
         signal start
         signal stop
@@ -68,6 +69,7 @@ ActivityBase {
             property alias parser: parser
             property variant goodWord
             property int goodWordIndex
+            property alias englishFallbackDialog: englishFallbackDialog
 
             function playWord() {
                 if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
@@ -307,7 +309,22 @@ ActivityBase {
             id: bonus
             onWin: Activity.nextLevel()
         }
-        
+
+        Loader {
+            id: englishFallbackDialog
+            sourceComponent: GCDialog {
+                message: qsTr("We are sorry, we don't have yet a translation for your language.") + " " +
+                         qsTr("GCompris is developed by the KDE community, you can translate GCompris by joining a translation team on <a href=\"%2\">%2</a>").arg("http://l10n.kde.org/") +
+                         "<br /> <br />" +
+                         qsTr("We switched to English for this activity but you can select another language in the configuration dialog.")
+                onClose: englishFallbackDialog.active = false
+            }
+            anchors.fill: parent
+            focus: true
+            active: background.englishFallback
+            onStatusChanged: if (status == Loader.Ready) item.start()
+        }
+
         Score {
             id: score
 
