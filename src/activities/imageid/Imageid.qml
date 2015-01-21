@@ -46,6 +46,7 @@ ActivityBase {
         property bool keyNavigation: false
         readonly property string wordsResource: "data/words/words.rcc"
         property bool englishFallback: false
+        property bool downloadWordsNeeded: false
 
         signal start
         signal stop
@@ -102,18 +103,7 @@ ActivityBase {
                 DownloadManager.updateResource(wordsResource);
             } else {
                 // words.rcc has not been downloaded yet -> ask for download
-                var buttonHandler = new Array();
-                buttonHandler[StandardButton.No] = function() {};
-                buttonHandler[StandardButton.Yes] = function() {
-                    DownloadManager.resourceRegistered.connect(handleResourceRegistered);
-                    DownloadManager.downloadResource(wordsResource)
-                    var downloadDialog = Core.showDownloadDialog(activity, {});
-                };
-                var dialog = Core.showMessageDialog(parent, qsTr("Download?"),
-                        qsTr("Are you ok to download the images for this activity"),
-                        "",
-                        StandardIcon.Question,
-                        buttonHandler);
+                downloadWordsNeeded = true
             }
         }
 
@@ -317,11 +307,29 @@ ActivityBase {
                          qsTr("GCompris is developed by the KDE community, you can translate GCompris by joining a translation team on <a href=\"%2\">%2</a>").arg("http://l10n.kde.org/") +
                          "<br /> <br />" +
                          qsTr("We switched to English for this activity but you can select another language in the configuration dialog.")
-                onClose: englishFallbackDialog.active = false
+                onClose: background.englishFallback = false
             }
             anchors.fill: parent
             focus: true
             active: background.englishFallback
+            onStatusChanged: if (status == Loader.Ready) item.start()
+        }
+
+        Loader {
+            id: downloadWordsDialog
+            sourceComponent: GCDialog {
+                message: qsTr("The images for this activity are not yet installed.")
+                buttonText: qsTr("Download the images")
+                onClose: background.downloadWordsNeeded = false
+                onButtonHit: {
+                    DownloadManager.resourceRegistered.connect(handleResourceRegistered);
+                    DownloadManager.downloadResource(wordsResource)
+                    var downloadDialog = Core.showDownloadDialog(activity, {});
+                }
+            }
+            anchors.fill: parent
+            focus: true
+            active: background.downloadWordsNeeded
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
 

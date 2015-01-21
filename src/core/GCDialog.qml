@@ -32,6 +32,7 @@ Item {
     }
 
     property alias message: instructionTxt.text
+    property alias buttonText: button.text
 
     // start and stop trigs the animation
     signal start
@@ -39,6 +40,8 @@ Item {
 
     // emited at stop animation end
     signal close
+    // emited when the optional button is hit
+    signal buttonHit
 
     onStart: opacity = 1
     onStop: opacity = 0
@@ -50,6 +53,11 @@ Item {
         anchors.fill: parent
         opacity: 0.6
         color: "grey"
+    }
+
+    MultiPointTouchArea {
+        // Just to catch mouse events
+        anchors.fill: parent
     }
 
     /* Message */
@@ -86,12 +94,26 @@ Item {
                 GradientStop { position: 1.0; color: "#ddd" }
             }
         }
+
+        Button {
+            id: button
+            width: parent.width
+            height: 60 * ApplicationInfo.ratio
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+                top: instructionTxt.bottom
+                topMargin: 10
+            }
+            style: GCButtonStyle {
+            }
+            enabled: text != ""
+            onClicked: {
+                gcdialog.buttonHit()
+                gcdialog.stop()
+            }
+        }
     }
 
-    MultiPointTouchArea {
-        // Just to catch mouse events
-        anchors.fill: parent
-    }
 
     // Fixme not working, need to properly get the focus on this dialog
     Keys.onEscapePressed: {
