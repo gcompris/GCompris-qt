@@ -115,7 +115,7 @@ Item {
         style: Text.Outline
         styleColor: "white"
 
-        ParticleSystemStar {
+        ParticleSystemStarLoader {
             id: particle
             clip: false
         }

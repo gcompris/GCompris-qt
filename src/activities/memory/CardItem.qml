@@ -48,12 +48,11 @@ Flipable {
         interval: 100
         running: false
         repeat: false
-        onTriggered: particles.emitter.burst(50)
+        onTriggered: particles.burst(50)
     }
 
-    ParticleSystemStar {
+    ParticleSystemStarLoader {
         id: particles
-        anchors.fill: parent
         clip: false
     }
 

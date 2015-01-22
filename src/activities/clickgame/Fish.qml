@@ -96,44 +96,52 @@ AnimatedSprite {
             enabled = false
             activity.audioEffects.play("qrc:/gcompris/src/activities/clickgame/resource/drip.wav")
             Activity.fishKilled()
-            particles.emitter.burst(40);
+            particles.burst(40);
         }
     }
 
-    ParticleSystem
-    {
+    Loader {
         id: bubbleEffect
         anchors.fill: parent
-        Emitter {
-            x: parent.x + parent.width * 0.8
-            y: parent.y + parent.height / 2
-            width: 1
-            height: 1
-            emitRate: 0.5
-            lifeSpan: 1000
-            lifeSpanVariation: 2500
-            acceleration: PointDirection {
-                x: -10
-                xVariation: 10
-                y: -20
-                yVariation: 10
-            }
-            velocity: PointDirection {
-                x: -20
-                xVariation: 10
-                y: -20
-                yVariation: 10
-            }
-            size: 12
-            sizeVariation: 8
+        active: ApplicationInfo.hasShader
+        function restart() {
+            if(active)
+                item.restart()
         }
+        sourceComponent: ParticleSystem {
+            anchors.fill: parent
+            Emitter {
+                x: parent.x + parent.width * 0.8
+                y: parent.y + parent.height / 2
+                width: 1
+                height: 1
+                emitRate: 0.5
+                lifeSpan: 1000
+                lifeSpanVariation: 2500
+                acceleration: PointDirection {
+                    x: -10
+                    xVariation: 10
+                    y: -20
+                    yVariation: 10
+                }
+                velocity: PointDirection {
+                    x: -20
+                    xVariation: 10
+                    y: -20
+                    yVariation: 10
+                }
+                size: 12
+                sizeVariation: 8
+            }
 
         ImageParticle {
             source: "qrc:/gcompris/src/activities/clickgame/resource/bubble.png"
         }
     }
+}
 
-    ParticleSystemStar {
+
+    ParticleSystemStarLoader {
         id: particles
         clip: false
     }

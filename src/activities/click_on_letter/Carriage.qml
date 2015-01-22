@@ -90,14 +90,14 @@ Image {
         onClicked: {
             if (Activity.checkAnswer(index)) {
                 successAnimation.restart();
-                particle.emitter.burst(30)
+                particle.burst(30)
             } else {
                 failureAnimation.restart()
             }
         }
     }
 
-    ParticleSystemStar {
+    ParticleSystemStarLoader {
         id: particle
         clip: false
     }

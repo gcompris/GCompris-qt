@@ -34,7 +34,7 @@ Image {
 
     function select() {
         if(question === Activity.getCurrentTextQuestion()) {
-            particles.emitter.burst(40)
+            particles.burst(40)
             Activity.nextQuestion()
         } else {
             if(audioSrc && item.playAudioOnError) {
@@ -67,7 +67,7 @@ Image {
               duration: 400 + Math.floor(Math.random() * 400)
               easing.type: Easing.InOutQuad }
     }
-    ParticleSystemStar {
+    ParticleSystemStarLoader {
         id: particles
         clip: false
     }

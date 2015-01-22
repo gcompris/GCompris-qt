@@ -187,7 +187,7 @@ ActivityBase {
                 isLetter: items.isLetter
                 onBrailleCharChanged: {
                     if(brailleChar === Activity.getCurrentLetter()) {
-                        particles.emitter.burst(40)
+                        particles.burst(40)
                         Activity.nextQuestion()
                     }
                 }
@@ -254,7 +254,7 @@ ActivityBase {
             }
         }
 
-        ParticleSystemStar {
+        ParticleSystemStarLoader {
             id: particles
             clip: false
         }

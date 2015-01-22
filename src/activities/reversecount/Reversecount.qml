@@ -119,10 +119,10 @@ ActivityBase {
             property int nextY
 
             function showParticles() {
-                particles.emitter.burst(40)
+                particles.burst(40)
             }
 
-            ParticleSystemStar {
+            ParticleSystemStarLoader {
                 id: particles
                 clip: false
             }
