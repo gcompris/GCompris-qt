@@ -96,7 +96,7 @@ Item {
         // FIXME, the size should be passed from the caller
         sourceSize.height: 106 * ApplicationInfo.ratio
 
-        ParticleSystemStar {
+        ParticleSystemStarLoader {
             id: particle
             clip: false
         }

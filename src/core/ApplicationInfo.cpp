@@ -108,6 +108,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     // Get fonts from rcc
     const QStringList fontFilters = {"*.otf", "*.ttf"};
     m_fontsFromRcc = QDir(":/gcompris/src/core/resource/fonts").entryList(fontFilters);
+
 }
 
 ApplicationInfo::~ApplicationInfo()

@@ -59,6 +59,7 @@ class ApplicationInfo : public QObject
 	Q_PROPERTY(int applicationWidth READ applicationWidth WRITE setApplicationWidth NOTIFY applicationWidthChanged)
     Q_PROPERTY(Platform platform READ platform CONSTANT)
     Q_PROPERTY(bool isMobile READ isMobile CONSTANT)
+    Q_PROPERTY(bool hasShader READ hasShader CONSTANT)
     Q_PROPERTY(bool isPortraitMode READ isPortraitMode WRITE setIsPortraitMode NOTIFY portraitModeChanged)
 	Q_PROPERTY(qreal ratio READ ratio NOTIFY ratioChanged)
     Q_PROPERTY(qreal fontRatio READ fontRatio NOTIFY fontRatioChanged)
@@ -107,7 +108,12 @@ public:
 	bool isPortraitMode() const { return m_isPortraitMode; }
 	void setIsPortraitMode(const bool newMode);
 
-	bool isMobile() const { return m_isMobile; }
+    bool isMobile() const { return m_isMobile; }
+
+    // On some platforms shader crashes, let's put them back when we
+    // know how to detect the platforms that support it
+    // https://bugreports.qt.io/browse/QTBUG-44194
+    bool hasShader() const { return false; }
 
 	qreal hMargin() const { return m_hMargin; }
 	qreal ratio() const { return m_ratio; }

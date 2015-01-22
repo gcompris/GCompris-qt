@@ -99,7 +99,7 @@ Item {
         value2: dominoValues[1]
         isClickable: false
 
-        ParticleSystemStar {
+        ParticleSystemStarLoader {
             id: particle
             clip: false
         }
