@@ -106,7 +106,7 @@ Item {
             }
             style: GCButtonStyle {
             }
-            enabled: text != ""
+            visible: text != ""
             onClicked: {
                 gcdialog.buttonHit()
                 gcdialog.stop()
