@@ -88,7 +88,7 @@ Item {
 
     Loader {
         id: demoPageLoader
-        sourceComponent: BuyMeOverlay {}
+        source: "BuyMeOverlay.qml"
         anchors.fill: parent
         active: !activityInfo.demo && ApplicationSettings.isDemoMode
     }

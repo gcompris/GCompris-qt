@@ -22,104 +22,102 @@ import QtQuick 2.2
 import QtQuick.Controls 1.1
 import GCompris 1.0
 
-Component {
-    Item {
+Item {
 
+    anchors {
+        fill: parent
+        bottomMargin: bar.height * 1.2
+    }
+    Rectangle {
+        anchors.fill: parent
+        opacity: 0.5
+        color: "grey"
+    }
+    /* Activation Instruction */
+    Item {
+        id: instruction
+        z: 99
         anchors {
-            fill: parent
-            bottomMargin: bar.height * 1.2
+            horizontalCenter: parent.horizontalCenter
+            top: parent.top
+            topMargin: 40
         }
-        Rectangle {
-            anchors.fill: parent
-            opacity: 0.5
-            color: "grey"
+        width: parent.width * 0.9
+
+        GCText {
+            id: instructionTxt
+            fontSize: mediumSize
+            color: "white"
+            style: Text.Outline
+            styleColor: "black"
+            horizontalAlignment: Text.AlignHCenter
+            width: parent.width
+            wrapMode: TextEdit.WordWrap
+            z: 2
+            text: qsTr("This activity is only available in the full version of GCompris.")
         }
-        /* Activation Instruction */
-        Item {
-            id: instruction
-            z: 99
+
+        Button {
+            width: parent.width * 0.8
+            height: 60 * ApplicationInfo.ratio
             anchors {
                 horizontalCenter: parent.horizontalCenter
-                top: parent.top
-                topMargin: 40
+                top: instructionTxt.bottom
+                topMargin: 10
             }
-            width: parent.width * 0.9
-            
-            GCText {
-                id: instructionTxt
-                fontSize: mediumSize
-                color: "white"
-                style: Text.Outline
-                styleColor: "black"
-                horizontalAlignment: Text.AlignHCenter
-                width: parent.width
-                wrapMode: TextEdit.WordWrap
-                z: 2
-                text: qsTr("This activity is only available in the full version of GCompris.")
+            text: qsTr("Buy the full version").toUpperCase()
+            style: GCButtonStyle {
             }
-            
-            Button {
-                width: parent.width * 0.8
-                height: 60 * ApplicationInfo.ratio
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                    top: instructionTxt.bottom
-                    topMargin: 10
-                }
-                text: qsTr("Buy the full version").toUpperCase()
-                style: GCButtonStyle {
-                }
-                
-                onClicked: {
-                    if(ApplicationSettings.isDemoMode)
-                        ApplicationSettings.isDemoMode = false
-                }
+
+            onClicked: {
+                if(ApplicationSettings.isDemoMode)
+                    ApplicationSettings.isDemoMode = false
             }
-            
-            Rectangle {
-                anchors.fill: instructionTxt
-                z: 1
-                opacity: 0.8
-                radius: 10
-                border.width: 2
-                border.color: "black"
-                gradient: Gradient {
-                    GradientStop { position: 0.0; color: "#000" }
-                    GradientStop { position: 0.9; color: "#666" }
-                    GradientStop { position: 1.0; color: "#AAA" }
-                }
-            }
-        }
-        
-        MultiPointTouchArea {
-            // Just to catch mouse events
-            anchors.fill: parent
         }
 
-        Keys.onEscapePressed: home()
-        Keys.onPressed: {
-            event.accepted = true
-            if (event.modifiers === Qt.ControlModifier &&
-                    event.key === Qt.Key_Q) {
-                // Ctrl+Q exit the application
-                Core.quit(page);
-            } else if (event.modifiers === Qt.ControlModifier &&
-                    event.key === Qt.Key_B) {
-                // Ctrl+B toggle the bar
-                ApplicationSettings.isBarHidden = !ApplicationSettings.isBarHidden;
-            } else if (event.modifiers === Qt.ControlModifier &&
-                    event.key === Qt.Key_F) {
-                // Ctrl+F toggle fullscreen
-                ApplicationSettings.isFullscreen = !ApplicationSettings.isFullscreen
-            } else if (event.modifiers === Qt.ControlModifier &&
-                       event.key === Qt.Key_M) {
-                // Ctrl+M toggle sound
-                ApplicationSettings.isAudioEffectsEnabled = !ApplicationSettings.isAudioEffectsEnabled
-            } else if (event.modifiers === Qt.ControlModifier &&
-                       event.key === Qt.Key_W) {
-                // Ctrl+W exit the current activity
-                home()
+        Rectangle {
+            anchors.fill: instructionTxt
+            z: 1
+            opacity: 0.8
+            radius: 10
+            border.width: 2
+            border.color: "black"
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "#000" }
+                GradientStop { position: 0.9; color: "#666" }
+                GradientStop { position: 1.0; color: "#AAA" }
             }
+        }
+    }
+
+    MultiPointTouchArea {
+        // Just to catch mouse events
+        anchors.fill: parent
+    }
+
+    Keys.onEscapePressed: home()
+    Keys.onPressed: {
+        event.accepted = true
+        if (event.modifiers === Qt.ControlModifier &&
+                event.key === Qt.Key_Q) {
+            // Ctrl+Q exit the application
+            Core.quit(page);
+        } else if (event.modifiers === Qt.ControlModifier &&
+                   event.key === Qt.Key_B) {
+            // Ctrl+B toggle the bar
+            ApplicationSettings.isBarHidden = !ApplicationSettings.isBarHidden;
+        } else if (event.modifiers === Qt.ControlModifier &&
+                   event.key === Qt.Key_F) {
+            // Ctrl+F toggle fullscreen
+            ApplicationSettings.isFullscreen = !ApplicationSettings.isFullscreen
+        } else if (event.modifiers === Qt.ControlModifier &&
+                   event.key === Qt.Key_M) {
+            // Ctrl+M toggle sound
+            ApplicationSettings.isAudioEffectsEnabled = !ApplicationSettings.isAudioEffectsEnabled
+        } else if (event.modifiers === Qt.ControlModifier &&
+                   event.key === Qt.Key_W) {
+            // Ctrl+W exit the current activity
+            home()
         }
     }
 }
