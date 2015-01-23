@@ -98,7 +98,7 @@ ActivityBase {
             horizontalAlignment: Text.AlignRight
             wrapMode: Text.WordWrap
             anchors {
-                verticalCenter: target.verticalCenter
+                top: target.top
                 right: target.left
                 left: parent.left
                 rightMargin: items.margins
