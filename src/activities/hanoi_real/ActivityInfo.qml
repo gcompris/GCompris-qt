@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "hanoi_real/Hanoi_real.qml"
+  name: "hanoi_real/HanoiReal.qml"
   difficulty: 5
   icon: "hanoi_real/hanoi_real.svg"
   author: "Amit Tomar <a.tomar@outlook.com>"
