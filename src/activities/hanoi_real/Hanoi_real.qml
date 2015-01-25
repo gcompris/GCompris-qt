@@ -59,14 +59,14 @@ ActivityBase {
             property alias tower1ImageHighlight: tower1ImageHighlight
             property alias tower2ImageHighlight: tower2ImageHighlight
             property alias tower3ImageHighlight: tower3ImageHighlight
-            property int maxDiscs     : 4
-            property int maxZ : 5
+            property int maxDiscs: 4
+            property int maxZ: 5
         }
 
         onStart: { Activity.start(items) ; Activity.resetToGetLevel(1) }
-        onStop : { Activity.stop()       }
+        onStop : { Activity.stop() }
 
-        onWidthChanged : Activity.sceneSizeChanged()
+        onWidthChanged: Activity.sceneSizeChanged()
         onHeightChanged: Activity.sceneSizeChanged()
 
         Rectangle {
@@ -75,15 +75,19 @@ ActivityBase {
             height: parent.height * .80
             color: "lightgrey"
 
-            property real currentX : 0.0
-            property real currentY : 0.0
-            property real spacing : (hanoiStage.width - 3 * tower1Image.width) / 4
+            property real currentX: 0.0
+            property real currentY: 0.0
+            property real spacing: (hanoiStage.width - 3 * tower1Image.width) / 4
 
             Rectangle {
                 width: parent.width
                 height: parent.height * .15
                 color: "#527BBD"
-                anchors { bottom: parent.bottom ; bottomMargin: - parent.height * .025 }
+                anchors {
+                    bottom: parent.bottom
+                    bottomMargin: - parent.height * .025
+                }
+                visible: bar.level == 1
 
                 Text {
                     id: description
@@ -105,24 +109,15 @@ ActivityBase {
 
                 Image {
                     id: disc
-                    parent: hanoiStage
-                    x: 20 * index
-                    y: 20 * index
+                    parent: tower1Image
                     z: tower1Image.z + 1
 
-                    sourceSize.width: if( 0 == index ) background.width / 3.5
-                                      else if ( 1 == index ) background.width / 4
-                                      else if ( 2 == index ) background.width / 4.5
-                                      else background.width / 5
-
-                    fillMode: Image.Stretch
-                    smooth: true
-
-                    source: if( 0 == index ) Activity.url + "disc1.svg"
-                            else if ( 1 == index ) Activity.url + "disc2.svg"
-                            else if ( 2 == index ) Activity.url + "disc3.svg"
-                            else if ( 3 == index ) Activity.url + "disc4.svg"
-
+                    sourceSize.width: if( 0 == index ) tower1Image.width * 1.6
+                                      else if ( 1 == index ) tower1Image.width * 1.3
+                                      else if ( 2 == index ) tower1Image.width * 1
+                                      else tower1Image.width * 0.7
+                    height: tower1Image.height * 0.1
+                    source: Activity.url + "disc" + (index + 1) + ".svg"
                     opacity: index >= 3 ? 0 : 1
 
                     property bool mouseEnabled : true
@@ -216,7 +211,7 @@ ActivityBase {
 
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: Activity.placeDiscsAtOriginal()
+                    onClicked: Activity.placeDiscsAtOrigine()
                 }
 
                 Highlight {
