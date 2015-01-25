@@ -3,7 +3,7 @@
  * Copyright (C) 2014 <Amit Tomar>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Amit Tomar <a.tomar@outlook.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
