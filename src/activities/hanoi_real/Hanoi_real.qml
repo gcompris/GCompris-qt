@@ -118,10 +118,10 @@ ActivityBase {
                     fillMode: Image.Stretch
                     smooth: true
 
-                    source: if( 0 == index ) Activity.url + "disc1.png"
-                            else if ( 1 == index ) Activity.url + "disc2.png"
-                            else if ( 2 == index ) Activity.url + "disc3.png"
-                            else if ( 3 == index ) Activity.url + "disc4.png"
+                    source: if( 0 == index ) Activity.url + "disc1.svg"
+                            else if ( 1 == index ) Activity.url + "disc2.svg"
+                            else if ( 2 == index ) Activity.url + "disc3.svg"
+                            else if ( 3 == index ) Activity.url + "disc4.svg"
 
                     opacity: index >= 3 ? 0 : 1
 
@@ -182,7 +182,7 @@ ActivityBase {
                 id: tower1Image
                 x: parent.spacing
                 y: parent.spacing / 1.5
-                source: Activity.url + "disc_support.png"
+                source: Activity.url + "disc_support.svg"
                 sourceSize.width: background.width / 5.5
                 fillMode: Image.Stretch
 
@@ -196,7 +196,7 @@ ActivityBase {
                 anchors.left: tower1Image.right
                 anchors.top: tower1Image.top
                 anchors.leftMargin: parent.spacing
-                source: Activity.url + "disc_support.png"
+                source: Activity.url + "disc_support.svg"
                 sourceSize.width: background.width / 5.5
                 fillMode: Image.Stretch
 
@@ -210,7 +210,7 @@ ActivityBase {
                 anchors.left: tower2Image.right
                 anchors.top: tower2Image.top
                 anchors.leftMargin: parent.spacing
-                source: Activity.url + "disc_support.png"
+                source: Activity.url + "disc_support.svg"
                 sourceSize.width: background.width / 5.5
                 fillMode: Image.Stretch
 
