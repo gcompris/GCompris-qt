@@ -105,7 +105,6 @@ ActivityBase {
             Repeater
             {
                 id: discRepeater
-                model : Activity.numberOfLevel + 2
 
                 Image {
                     id: disc

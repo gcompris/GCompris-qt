@@ -40,6 +40,7 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.numberOfDisc = currentLevel + 3
+    items.discRepeater.model = items.numberOfDisc
 
     placeDiscsAtOrigin()
     disableNonDraggablediscs()
@@ -70,9 +71,8 @@ function placeDisc(disc, towerImage)
 }
 
 function placeDiscsAtOrigin() {
-    for( var i = 0 ; i < items.numberOfDisc ; ++i ) {
-        items.discRepeater.itemAt(i).towerImage = null
-    }
+    // Reset the model to get the initial animation
+    items.discRepeater.model = items.numberOfDisc
 
     for( var i = 0 ; i < items.numberOfDisc ; ++i ) {
         placeDisc(items.discRepeater.itemAt(i), items.tower1Image)
