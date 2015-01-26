@@ -25,7 +25,7 @@
 var url = "qrc:/gcompris/src/activities/hanoi_real/resource/"
 
 var currentLevel  = 0
-var numberOfLevel = 2
+var numberOfLevel = 3
 var items
 
 function start(items_) {
@@ -124,7 +124,7 @@ function sceneSizeChanged()
         return
 
     for( var i = 0 ; i < items.numberOfDisc ; ++i )
-        placeDisc(items.discRepeater.itemAt(index), items.discRepeater.itemAt(index).towerImage)
+        placeDisc(items.discRepeater.itemAt(i), items.discRepeater.itemAt(i).towerImage)
 
     disableNonDraggablediscs()
     deHighlightTowers()

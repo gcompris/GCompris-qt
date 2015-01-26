@@ -115,7 +115,8 @@ ActivityBase {
                     sourceSize.width: if( 0 == index ) tower1Image.width * 1.6
                                       else if ( 1 == index ) tower1Image.width * 1.3
                                       else if ( 2 == index ) tower1Image.width * 1
-                                      else tower1Image.width * 0.7
+                                      else if ( 3 == index ) tower1Image.width * 0.7
+                                      else tower1Image.width * 0.5
                     height: tower1Image.height * 0.1
                     source: Activity.url + "disc" + (index + 1) + ".svg"
                     opacity: index < items.numberOfDisc ? 1 : 0
