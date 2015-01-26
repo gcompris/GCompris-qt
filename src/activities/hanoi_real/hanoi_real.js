@@ -64,8 +64,9 @@ function previousLevel()
 function placeDisc(disc, towerImage)
 {
     disc.towerImage = towerImage
+    disc.position = getNumberOfDiscOnTower(towerImage)
     disc.x = towerImage.x + towerImage.width / 2 - disc.width / 2
-    disc.y = towerImage.y + towerImage.height - (getNumberOfDiscOnTower(towerImage) + 1) * disc.height
+    disc.y = towerImage.y + towerImage.height - (disc.position + 1) * disc.height
 }
 
 function placeDiscsAtOrigin() {
@@ -123,8 +124,12 @@ function sceneSizeChanged()
     if(!items)
         return
 
-    for( var i = 0 ; i < items.numberOfDisc ; ++i )
-        placeDisc(items.discRepeater.itemAt(i), items.discRepeater.itemAt(i).towerImage)
+    for( var i = 0 ; i < items.numberOfDisc ; ++i ) {
+        var disc = items.discRepeater.itemAt(i)
+        var towerImage = items.discRepeater.itemAt(i).towerImage
+        disc.x = towerImage.x + towerImage.width / 2 - disc.width / 2
+        disc.y = towerImage.y + towerImage.height - (disc.position + 1) * disc.height
+    }
 
     disableNonDraggablediscs()
     deHighlightTowers()

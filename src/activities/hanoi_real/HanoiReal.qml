@@ -124,6 +124,7 @@ ActivityBase {
                     property bool mouseEnabled : true
                     property alias discMouseArea: discMouseArea
                     property Item towerImage
+                    property int position // The position index on the tower
 
                     onXChanged: Activity.performTowersHighlight(disc, x)
 
