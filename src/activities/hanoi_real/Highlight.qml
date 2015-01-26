@@ -10,5 +10,8 @@ Colorize {
     cached: true
     opacity: 0
 
+    property bool highlight: false
+    onHighlightChanged: highlight ? opacity = 0.75 : opacity = 0
+
     Behavior on opacity { PropertyAnimation { duration: 150 } }
 }

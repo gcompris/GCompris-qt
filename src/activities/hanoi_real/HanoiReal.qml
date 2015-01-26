@@ -59,11 +59,11 @@ ActivityBase {
             property alias tower1ImageHighlight: tower1ImageHighlight
             property alias tower2ImageHighlight: tower2ImageHighlight
             property alias tower3ImageHighlight: tower3ImageHighlight
-            property int maxDiscs: 4
+            property int numberOfDisc
             property int maxZ: 5
         }
 
-        onStart: { Activity.start(items) ; Activity.resetToGetLevel(1) }
+        onStart: { Activity.start(items) }
         onStop : { Activity.stop() }
 
         onWidthChanged: Activity.sceneSizeChanged()
@@ -118,20 +118,13 @@ ActivityBase {
                                       else tower1Image.width * 0.7
                     height: tower1Image.height * 0.1
                     source: Activity.url + "disc" + (index + 1) + ".svg"
-                    opacity: index >= 3 ? 0 : 1
+                    opacity: index < items.numberOfDisc ? 1 : 0
 
                     property bool mouseEnabled : true
-
-                    property alias discX: disc.x
-                    property alias discY: disc.y
                     property alias discMouseArea: discMouseArea
+                    property Item towerImage
 
-                    property real discWidth : disc.width
-                    property real discHeight: disc.height
-
-                    signal reposition()
-
-                    onXChanged: Activity.performTowersHighlight(index)
+                    onXChanged: Activity.performTowersHighlight(disc, x)
 
                     Behavior on y {
                              NumberAnimation {
@@ -143,8 +136,6 @@ ActivityBase {
                                  }
                              }
                     }
-
-                    onReposition: Activity.repositionDiscs(index)
 
                     MouseArea {
                         id: discMouseArea
@@ -181,6 +172,8 @@ ActivityBase {
                 sourceSize.width: background.width / 5.5
                 fillMode: Image.Stretch
 
+                property alias highlight: tower1ImageHighlight.highlight
+
                 Highlight {
                     id: tower1ImageHighlight
                 }
@@ -194,6 +187,8 @@ ActivityBase {
                 source: Activity.url + "disc_support.svg"
                 sourceSize.width: background.width / 5.5
                 fillMode: Image.Stretch
+
+                property alias highlight: tower2ImageHighlight.highlight
 
                 Highlight {
                     id: tower2ImageHighlight
@@ -209,10 +204,7 @@ ActivityBase {
                 sourceSize.width: background.width / 5.5
                 fillMode: Image.Stretch
 
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: Activity.placeDiscsAtOrigine()
-                }
+                property alias highlight: tower3ImageHighlight.highlight
 
                 Highlight {
                     id: tower3ImageHighlight

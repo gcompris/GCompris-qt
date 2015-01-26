@@ -24,12 +24,6 @@
 
 var url = "qrc:/gcompris/src/activities/hanoi_real/resource/"
 
-var tower1 = [1,2,3]
-var tower2 = []
-var tower3 = []
-
-var discs = [1,1,1,1]
-
 var currentLevel  = 0
 var numberOfLevel = 2
 var items
@@ -45,282 +39,141 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    items.numberOfDisc = currentLevel + 3
+
+    placeDiscsAtOrigin()
+    disableNonDraggablediscs()
 }
 
-function nextLevel(){
-
-    if(numberOfLevel <= ++currentLevel ){
+function nextLevel()
+{
+    if(numberOfLevel <= ++currentLevel ) {
         currentLevel = 0
-        resetToGetLevel(1)
     }
-
-    else{
-        resetToGetLevel(2)
-    }
-
     initLevel();
 }
 
-function previousLevel() {
+function previousLevel()
+{
     if(--currentLevel < 0) {
         currentLevel = numberOfLevel - 1
-        resetToGetLevel(2)
     }
-
-    else{
-        resetToGetLevel(1)
-    }
-
     initLevel();
 }
 
-function repositionDiscs(index)
+function placeDisc(disc, towerImage)
 {
-    var position;
-    var newX;
-    var newY;
-
-     if( checkDiscInTower(index+1, tower1) ){
-
-         newX = items.tower1Image.x
-         newY = items.tower1Image.y
-         position = getDiscPositionInTower( index+1, tower1 )
-     }
-     else if( checkDiscInTower(index+1, tower2) ){
-
-         newX = items.tower2Image.x
-         newY = items.tower2Image.y
-         position = getDiscPositionInTower( index+1, tower2 )
-     }
-     else if( checkDiscInTower(index+1, tower3) ){
-
-         newX = items.tower3Image.x
-         newY = items.tower3Image.y
-         position = getDiscPositionInTower( index+1, tower3 )
-     }
-
-     items.discRepeater.itemAt(index).x =
-             newX - items.discRepeater.itemAt(0).discWidth * (.20 - index * .05 )
-     items.discRepeater.itemAt(index).y =
-             newY + items.tower1Image.height * .73 - ((position-1) *  items.discRepeater.itemAt(index).height)
-     disableNonDraggablediscs()
+    disc.towerImage = towerImage
+    disc.x = towerImage.x + towerImage.width / 2 - disc.width / 2
+    disc.y = towerImage.y + towerImage.height - (getNumberOfDiscOnTower(towerImage) + 1) * disc.height
 }
 
-function placeDisc(tower, towerImage, index)
-{
-    items.discRepeater.itemAt(index).x =
-            towerImage.x + towerImage.width / 2 -
-            items.discRepeater.itemAt(index).discWidth / 2
-    items.discRepeater.itemAt(index).discY =
-            towerImage.y + towerImage.height -
-            (tower.length + 2) * items.discRepeater.itemAt(0).discHeight
+function placeDiscsAtOrigin() {
+    for( var i = 0 ; i < items.numberOfDisc ; ++i ) {
+        items.discRepeater.itemAt(i).towerImage = null
+    }
+
+    for( var i = 0 ; i < items.numberOfDisc ; ++i ) {
+        placeDisc(items.discRepeater.itemAt(i), items.tower1Image)
+    }
 }
 
 function discReleased(index)
 {
-    if( checkIfDiscOnTowerImage(index+1, 1) &&
-            !(0 != tower1.length &&
-              index+1 <= tower1[tower1.length-1]) ) {
-        placeDisc(tower1, items.tower1Image, index)
-        popDisc(index+1)
-
-        tower1.push(index+1)
-        discs[index+1] = 1
-    } else if( checkIfDiscOnTowerImage(index+1, 2) &&
-              !( 0 != tower2.length && index+1 <= tower2[tower2.length-1] ) ) {
-        placeDisc(tower2, items.tower2Image, index)
-        popDisc(index+1)
-
-        tower2.push(index+1)
-        discs[index+1] = 2
-    } else if( checkIfDiscOnTowerImage(index+1, 3) &&
-              !( 0 != tower3.length && index+1 <= tower3[tower3.length-1] ) ) {
-        placeDisc(tower3, items.tower3Image, index)
-        popDisc(index+1)
-
-        tower3.push(index+1)
-        discs[index+1] = 3
+    var disc = items.discRepeater.itemAt(index)
+    if( checkIfDiscOnTowerImage(disc, items.tower1Image) &&
+            getNumberOfDiscOnTower(items.tower1Image) < items.numberOfDisc &&
+            getHigherfDiscOnTower(items.tower1Image) <= index) {
+        placeDisc(disc, items.tower1Image)
+    } else if(checkIfDiscOnTowerImage(disc, items.tower2Image) &&
+            getNumberOfDiscOnTower(items.tower2Image) < items.numberOfDisc &&
+            getHigherfDiscOnTower(items.tower2Image) <= index) {
+        placeDisc(disc, items.tower2Image)
+    } else if(checkIfDiscOnTowerImage(disc, items.tower3Image) &&
+            getNumberOfDiscOnTower(items.tower3Image) < items.numberOfDisc &&
+            getHigherfDiscOnTower(items.tower3Image) <= index) {
+        placeDisc(disc, items.tower3Image)
     } else {
         // Cancel the drop
-        items.discRepeater.itemAt(index).x = items.hanoiStage.currentX
-        items.discRepeater.itemAt(index).y = items.hanoiStage.currentY
+        disc.x = items.hanoiStage.currentX
+        disc.y = items.hanoiStage.currentY
     }
 
     disableNonDraggablediscs()
-    checkSolved()
     deHighlightTowers()
 }
 
-function performTowersHighlight(index)
+function performTowersHighlight(disc, x)
 {
-    if( items && items.discRepeater.itemAt(index).discMouseArea.pressed ) {
+    deHighlightTowers()
 
-        deHighlightTowers()
-
-        var currentTower = 1
-
-        if( getDiscPositionInTower(index+1, tower2) == tower2.length ) {
-            currentTower = 2
-        }
-
-        else if( getDiscPositionInTower(index+1, tower3) == tower3.length ) {
-            currentTower = 3
-        }
-
-        if( checkIfDiscOnTowerImage(index+1, 1) && 1 != currentTower ) {
-            highlightTower(1)
-        }
-        else if( checkIfDiscOnTowerImage(index+1, 2) && 2 != currentTower ) {
-            highlightTower(2)
-        }
-        else if( checkIfDiscOnTowerImage(index+1, 3) && 3 != currentTower ) {
-            highlightTower(3)
-        }
-        else {
-            highlightTower(currentTower)
-        }
+    if( checkIfDiscOnTowerImage(disc, items.tower1Image) ) {
+        items.tower1Image.highlight = true
+    } else if( checkIfDiscOnTowerImage(disc, items.tower2Image) ) {
+        items.tower2Image.highlight = true
+    } else if( checkIfDiscOnTowerImage(disc, items.tower3Image) ) {
+        items.tower3Image.highlight = true
+    } else {
+        disc.towerImage.highlight = true
     }
-}
-
-function popDisc(disc) {
-    if( 1 == discs[disc] )
-        tower1.pop()
-    else if( 2 == discs[disc] )
-        tower2.pop()
-    else if( 3 == discs[disc] )
-        tower3.pop()
 }
 
 function sceneSizeChanged()
 {
-    if( items ) {
-        for( var i = 0 ; i < numberOfLevel + 2 ; ++i )
-            items.discRepeater.itemAt(i).reposition()
+    if(!items)
+        return
 
-        deHighlightTowers()
-    }
-}
+    for( var i = 0 ; i < items.numberOfDisc ; ++i )
+        placeDisc(items.discRepeater.itemAt(index), items.discRepeater.itemAt(index).towerImage)
 
-function placeDiscsAtOrigine() {
-    for( var i = 0 ; i < numberOfLevel + 2 ; ++i ){
-        items.discRepeater.itemAt(i).discX =
-                items.tower1Image.x + items.tower1Image.width / 2 -
-                items.discRepeater.itemAt(i).discWidth / 2
-
-        items.discRepeater.itemAt(i).discY =
-                items.tower1Image.y + items.tower1Image.height -
-                (i + 2) * items.discRepeater.itemAt(0).discHeight
-    }
-}
-
-function disableNonDraggablediscs() {
-    if( items ) {
-        for( var i = 1 ; i <= numberOfLevel + 2 ; ++ i ){
-            if( (i === tower1[tower1.length-1]) ||
-                (i === tower2[tower2.length-1]) ||
-                (i === tower3[tower3.length-1]) )
-                items.discRepeater.itemAt(i-1).mouseEnabled = true
-            else
-                items.discRepeater.itemAt(i-1).mouseEnabled = false
-        }
-    }
-}
-
-function getDiscPositionInTower(disc, tower) {
-    for( var i = 0 ; i < tower.length ; ++i ){
-        if( tower[i] == disc )
-            return i+1;
-    }
-
-    return -1;
-}
-
-function checkDiscInTower(disc, tower) {
-    for( var i = 0 ; i < tower.length ; ++i ){
-        if( tower[i] == disc )
-            return true;
-    }
-
-    return false;
-}
-
-function highlightTower(tower) {
-    if( 1 == tower )
-        items.tower1ImageHighlight.opacity = .75
-    if( 2 == tower )
-        items.tower2ImageHighlight.opacity = .75
-    if( 3 == tower )
-        items.tower3ImageHighlight.opacity = .75
-}
-
-function deHighlightTowers() {
-        if( items ) {
-            items.tower1ImageHighlight.opacity = 0
-            items.tower2ImageHighlight.opacity = 0
-            items.tower3ImageHighlight.opacity = 0
-        }
-}
-
-function checkIfDiscOnTowerImage(disc, tower) {
-
-    if( items ) {
-
-        for( var i = 1 ; i <= numberOfLevel + 2 ; ++ i )
-        {
-            if( i === disc){
-                if( 1 == tower )
-                    return !(( (items.discRepeater.itemAt(i-1).discX + items.discRepeater.itemAt(i-1).discWidth) < (items.tower1Image.x) ) || ( items.discRepeater.itemAt(i-1).discX > items.tower1Image.x + items.tower1Image.width ))
-
-                else if( 2 == tower )
-                    return !(( (items.discRepeater.itemAt(i-1).discX + items.discRepeater.itemAt(i-1).discWidth) < (items.tower2Image.x) ) || ( items.discRepeater.itemAt(i-1).discX > items.tower2Image.x + items.tower2Image.width ))
-
-                else if( 3 == tower )
-                    return !(( (items.discRepeater.itemAt(i-1).discX + items.discRepeater.itemAt(i-1).discWidth) < (items.tower3Image.x) ) || ( items.discRepeater.itemAt(i-1).discX > items.tower3Image.x + items.tower3Image.width ))
-            }
-        }
-    }
-}
-
-function resetToGetLevel(level){
-
-    placeDiscsAtOrigine()
-
-    for( var i = 0 ; i < level+1 ; ++i )
-        items.discRepeater.itemAt(i).opacity = 1    
-
-    for( i = level+1 ; i < numberOfLevel + 2 ; ++i )
-        items.discRepeater.itemAt(i).opacity = 0
-
-    items.discRepeater.itemAt(1+level).opacity = 1
-    items.discRepeater.itemAt(1+level).opacity = 1
-
-    tower1 = []
-    tower2 = []
-    tower3 = []
-    discs  = []
-
-    for( i = 1 ; i <= 2+level; ++ i ) {
-        tower1.push(i)
-        discs.push(1)
-    }
-
-    discs.push(1)
     disableNonDraggablediscs()
+    deHighlightTowers()
+}
+
+function disableNonDraggablediscs()
+ {
+    for( var i = 0 ; i < items.numberOfDisc ; ++i ) {
+        if(getHigherfDiscOnTower(items.discRepeater.itemAt(i).towerImage) > i)
+            items.discRepeater.itemAt(i).mouseEnabled = false
+        else
+            items.discRepeater.itemAt(i).mouseEnabled = true
+    }
+}
+
+function deHighlightTowers()
+ {
+    items.tower1Image.highlight = false
+    items.tower2Image.highlight = false
+    items.tower3Image.highlight = false
+}
+
+function checkIfDiscOnTowerImage(disc, towerImage)
+{
+    return ((disc.x + disc.width / 2) > towerImage.x &&
+            (disc.x + disc.width / 2) < towerImage.x + towerImage.width)
+}
+
+function getHigherfDiscOnTower(towerImage) {
+    var higher = 0
+    for( var i = 0 ; i < items.numberOfDisc ; ++i )
+    {
+        if(items.discRepeater.itemAt(i).towerImage === towerImage)
+            higher = i
+    }
+    return higher
+}
+
+function getNumberOfDiscOnTower(towerImage) {
+    var count = 0
+    for( var i = 0 ; i < items.numberOfDisc ; ++i )
+    {
+        if(items.discRepeater.itemAt(i).towerImage === towerImage)
+            count++
+    }
+    return count
 }
 
 function checkSolved() {
-
-    if ( 0 == currentLevel ) {
-
-        if( 3 == tower3.length && tower3[0] == 1 && tower3[1] == 2 && tower3[2] == 3 ) {
-            items.bonus.good("flower")
-        }
-    }
-
-    else if ( 1 == currentLevel ) {
-
-        if( 4 == tower3.length && tower3[0] == 1 && tower3[1] == 2 && tower3[2] == 3 && tower3[3] == 4 ) {
-            items.bonus.good("flower")
-        }
-    }
+    if(getNumberOfDiscOnTower(items.tower3Image) === items.numberOfDisc)
+        items.bonus.good("flower")
 }
