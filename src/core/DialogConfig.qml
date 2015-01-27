@@ -517,7 +517,8 @@ Rectangle {
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
     property bool sectionVisible: ApplicationSettings.sectionVisible
-    property int baseFontSize: ApplicationSettings.baseFontSize
+    property int baseFontSize  // don't bind to ApplicationSettings.baseFontSize
+                               // or we get a binding loop warning
 
     onStart: {
         // Synchronize settings with data
