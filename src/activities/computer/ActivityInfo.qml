@@ -11,7 +11,7 @@ ActivityInfo {
 //  intro: "Know about computer peripherals"
   goal: qsTr("This activity helps you to know about the computer peripherals and their functionalities")
   prerequisite: qsTr("Identifying parts")
-  manual: qsTr("Hover on the part to know its description and click on the part to know its functions")
+  manual: qsTr("Click on the part to know its description and to know its functions")
   credit: ""
   section: "experiment"
 }

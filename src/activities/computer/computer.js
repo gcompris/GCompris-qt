@@ -24,6 +24,7 @@ var currentLevel = 0
 var items
 var number = 10
 
+
 function start(items_) {
     items = items_
     currentLevel = 0

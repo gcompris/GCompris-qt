@@ -21,11 +21,12 @@ Rectangle {
              MouseArea {
              anchors.fill: parent
              hoverEnabled: true
-             onEntered: {
+             onClicked: {
                  d.x = 450
                  d.y = 200
                  d.visible = true
-                 des.text = "I am a CD Writer.I am used for reading CDs and DVDs."
+                 des.text = "I am a CD Writer.
+                             I am used for reading CDs and DVDs."
              }
              onExited: d.visible = false
           }
@@ -43,11 +44,13 @@ Rectangle {
              MouseArea {
              anchors.fill: parent
              hoverEnabled: true
-             onEntered: {
+             onClicked: {
                  d.x = 780
                  d.y = 500
                  d.visible = true
-                 des.text = "I am a Pen Drive.I am thin,small and rectangular in shape.I store data inside me."
+                 des.text = "I am a Pen Drive.
+                             I am thin,small and rectangular in shape.
+                             I store data inside me."
              }
              onExited: d.visible = false
           }
@@ -69,12 +72,14 @@ Rectangle {
              MouseArea {
              anchors.fill: parent
              hoverEnabled: true
-             onClicked: cdSound.play()
-             onEntered: {
+             onClicked:{
+                 cdSound.play()
+
                  d.x = 500
                  d.y = 500
                  d.visible = true
-                 des.text = "I am a Compact Disk(CD).I am round in shape and store data."
+                 des.text = "I am a Compact Disk(CD).
+                             I am round in shape and store data."
              }
              onExited: d.visible = false
           }
@@ -92,11 +97,13 @@ Rectangle {
              MouseArea {
              anchors.fill: parent
              hoverEnabled: true
-             onEntered: {
+             onClicked: {
                  d.x = 850
                  d.y = 200
                  d.visible = true
-                 des.text = "I am a floppy.I am thin and rectangular in shape.I store data in me."
+                 des.text = "I am a floppy.
+                             I am thin and rectangular in shape.
+                             I store data in me."
              }
              onExited: d.visible = false
           }
@@ -118,12 +125,13 @@ Rectangle {
              MouseArea {
              anchors.fill: parent
              hoverEnabled: true
-             onClicked: diskSound.play()
-             onEntered: {
+             onClicked: {
+                 diskSound.play()
                  d.x = 600
                  d.y = 80
                  d.visible = true
-                 des.text = "I am a Hard Disk.I am used for storing data."
+                 des.text = "I am a Hard Disk.
+                             I am used for storing data."
              }
              onExited: d.visible = false
           }

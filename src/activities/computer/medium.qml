@@ -32,12 +32,13 @@ Rectangle {
          MouseArea {
          anchors.fill: parent
          hoverEnabled: true
-         onClicked: monitorSound.play()
-         onEntered: {
+         onClicked: {
+             monitorSound.play()
              d.x = 600
              d.y = 80
              d.visible = true
-             des.text = "I am a monitor.I am used to display things."
+             des.text = "I am a monitor.
+                         I am used to display things."
          }
          onExited: d.visible = false
          }
@@ -66,15 +67,15 @@ Rectangle {
          MouseArea {
          anchors.fill: parent
          hoverEnabled: true
-         onEntered: {
-             d.x = 780
-             d.y = 500
-             d.visible = true
-             des.text = "I am a mouse.I am used for pointing things."
-         }
          onExited: d.visible = false
          onClicked :
          {
+             d.x = 780
+             d.y = 500
+             d.visible = true
+             des.text = "I am a mouse.
+                         I am used for pointing things."
+
              mouseSound.play()
              bird.visible = false
              image.visible = false
@@ -99,14 +100,15 @@ Rectangle {
              id : mouseArea
              anchors.fill: parent
              hoverEnabled : true
-             onEntered: {
+             onExited: d.visible = false
+             onClicked : {
+
                  d.x = 500
                  d.y = 500
                  d.visible = true
-                 des.text = "I am a keyboard.I am used for typing things on screen."
-             }
-             onExited: d.visible = false
-             onClicked : {
+                 des.text = "I am a keyboard.
+                             I am used for typing things on screen."
+
                  bird.visible = false
                  image.visible = false
                  keyboardSound.play()
@@ -290,14 +292,15 @@ Image {
          MouseArea {
          anchors.fill: parent
          hoverEnabled: true
-         onEntered: {
+         onExited: d.visible = false
+         onClicked: {
+
              d.x = 450
              d.y = 220
              d.visible = true
-             des.text = "I am a printer.I am used to print things."
-         }
-         onExited: d.visible = false
-         onClicked: {
+             des.text = "I am a printer.
+                         I am used to print things."
+
              printerSound.play()
              paper.visible = true
              bird.visible = false
@@ -322,14 +325,14 @@ Image {
          MouseArea {
          anchors.fill: parent
          hoverEnabled: true
-         onEntered: {
+         onExited: d.visible = false
+         onClicked:{
              d.x = 850
              d.y = 200
              d.visible = true
-             des.text = "I am a scanner.I am used to scan things and display them on screen."
-         }
-         onExited: d.visible = false
-         onClicked:{
+             des.text = "I am a scanner.
+                         I am used to scan things and display them on screen."
+
              scannerSound.play()
              paper.visible = false
              image.visible = false

@@ -29,12 +29,13 @@ Rectangle {
      MouseArea {
      anchors.fill: parent
      hoverEnabled: true
-     onClicked: monitorSound.play()
-     onEntered: {
+     onClicked: {
+         monitorSound.play()
          d.x = 600
          d.y = 80
          d.visible = true
-         des.text = "I am a monitor.I am used for displaying things."
+         des.text = "I am a monitor.
+                     I am used for displaying things."
      }
      onExited: d.visible = false
      }
@@ -54,16 +55,15 @@ Image {
      }
      MouseArea {
      anchors.fill: parent
-     hoverEnabled: true 
-     onEntered: {
-         d.x = 780
-         d.y = 500
-         d.visible = true
-         des.text = "I am a mouse.I am used for pointing things."
-     }
+     hoverEnabled: true
      onExited: d.visible = false
      onClicked :
      {
+         d.x = 780
+         d.y = 500
+         d.visible = true
+         des.text = "I am a mouse.
+                     I am used for pointing things."
          mouseSound.play()
          t1.text = "I"
      }
@@ -86,14 +86,16 @@ Image {
          id : mouseArea
          anchors.fill: parent
          hoverEnabled : true
-         onEntered: {
+         onExited: d.visible = false
+         onClicked : {
+
+
              d.x = 500
              d.y = 500
              d.visible = true
-             des.text = "I am a keyboard.I am used for typing things on the screen."
-         }
-         onExited: d.visible = false
-         onClicked : {
+             des.text = "I am a keyboard.
+                         I am used for typing things on the screen."
+
              keyboardSound.play()
           if(mouseArea.mouseX >=0 && mouseArea.mouseX <=14 && mouseArea.mouseY >=10 && mouseArea.mouseY <=20)
               t1.text = "~,`"
@@ -235,11 +237,12 @@ Image {
          MouseArea {
          anchors.fill: parent
          hoverEnabled: true
-         onEntered: {
+         onClicked: {
              d.x = 450
              d.y = 200
              d.visible = true
-             des.text = "I am a Uniterruptible Power Supply(UPS).I am used to provide emergency power when main power fails."
+             des.text = "I am a Uniterruptible Power Supply(UPS).
+                         I am used to provide emergency power when main power fails."
          }
          onExited: d.visible = false
          }
@@ -257,11 +260,13 @@ Image {
      MouseArea {
      anchors.fill: parent
      hoverEnabled: true
-     onEntered: {
+     onClicked: {
          d.x = 850
          d.y = 200
          d.visible = true
-         des.text = "I am a Central Processing Unit.I am called the BRAIN of the computer.I am used to carry out various instructions such as +,-,*,/ "
+         des.text = "I am a Central Processing Unit.
+                     I am called the BRAIN of the computer.
+                     I am used to carry out various instructions such as +,-,*,/ "
      }
      onExited: d.visible = false
      }

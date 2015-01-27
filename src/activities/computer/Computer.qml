@@ -28,7 +28,6 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-
             property bool hoverEnabled : false
           }
 
@@ -41,6 +40,7 @@ ActivityBase {
             anchors.centerIn: parent
             spacing : 5
             Repeater{
+                id : repeater
                 model : ["easy","medium","hard","difficult"]
                 Rectangle{
                     height : 50

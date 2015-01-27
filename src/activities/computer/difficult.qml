@@ -21,11 +21,12 @@ Rectangle {
              MouseArea {
              anchors.fill: parent
              hoverEnabled: true
-             onEntered: {
+             onClicked: {
                  d.x = 450
                  d.y = 200
                  d.visible = true
-                 des.text = "I am a Random Access Memory.I allow data items to be read and written."
+                 des.text = "I am a Random Access Memory.
+                             I allow data items to be read and written."
              }
              onExited: d.visible = false
           }
@@ -42,11 +43,12 @@ Rectangle {
              MouseArea {
              anchors.fill: parent
              hoverEnabled: true
-             onEntered: {
+             onClicked: {
                  d.x = 800
                  d.y = 200
                  d.visible = true
-                 des.text = "I am a Network Interface Card.I am used to connect computer to computer network."
+                 des.text = "I am a Network Interface Card.
+                             I am used to connect computer to computer network."
              }
              onExited: d.visible = false
           }
@@ -64,11 +66,12 @@ Rectangle {
              MouseArea {
              anchors.fill: parent
              hoverEnabled: true
-             onEntered: {
+             onClicked:  {
                  d.x = 600
                  d.y = 80
                  d.visible = true
-                 des.text = "I am a motherboard.I contain computer's circuits and components."
+                 des.text = "I am a motherboard.
+                             I contain computer's circuits and components."
              }
              onExited: d.visible = false
           }
@@ -88,17 +91,14 @@ Rectangle {
          }
              MouseArea {
              anchors.fill: parent
-             onClicked:
-             {
-                 playSound.play()
-                 //musicalnote.visible = true
-             }
              hoverEnabled: true
-             onEntered: {
+             onClicked: {
+                 playSound.play()
                  d.x = 500
                  d.y = 350
                  d.visible = true
-                 des.text = "I am a speaker.I am used for playing sounds."
+                 des.text = "I am a speaker.
+                             I am used for playing sounds."
              }
              onExited: d.visible = false
           }
@@ -119,12 +119,13 @@ Rectangle {
              MouseArea {
              anchors.fill: parent
              hoverEnabled: true
-             onClicked: headsetSound.play()
-             onEntered: {
+             onClicked: {
+                 headsetSound.play()
                  d.x = 830
                  d.y = 350
                  d.visible = true
-                 des.text = "I am a Head Set.I am used for listening things."
+                 des.text = "I am a Head Set.
+                             I am used for listening things."
              }
              onExited: d.visible = false
           }
@@ -145,12 +146,13 @@ Rectangle {
              MouseArea {
              anchors.fill: parent
              hoverEnabled: true
-             onClicked: microphoneSound.play()
-             onEntered: {
+             onClicked: {
+                 microphoneSound.play()
                  d.x = 650
                  d.y = 550
                  d.visible = true
-                 des.text = "I am a microphone.I am used for speaking things."
+                 des.text = "I am a microphone.
+                             I am used for speaking things."
              }
              onExited: d.visible = false
           }
