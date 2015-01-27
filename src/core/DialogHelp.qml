@@ -36,6 +36,12 @@ DialogBackground {
         return ""
     }
 
+    function reformat(string) {
+        var text = string.replace(/^    (.*)\n/gm,'<ul><li>$1</li></ul>')
+        text = text.replace(/\n/gm,'<br/>')
+        return text
+    }
+
     function getContent() {
         var contentText = getIcon()
         contentText += "<b>" + activityInfo.description + "</b>"
@@ -49,12 +55,12 @@ DialogBackground {
             contentText += "<br/><br/>"
         }
         if(activityInfo.goal) {
-            contentText += "<b>" + qsTr("Goal") + ": </b>" + activityInfo.goal
+            var goal = reformat(activityInfo.goal)
+            contentText += "<b>" + qsTr("Goal") + ": </b>" + goal
             contentText += "<br/><br/>"
         }
         if(activityInfo.manual) {
-            var manual = activityInfo.manual.replace(/^    (.*)\n/gm,'<ul><li>$1</li></ul>')
-            manual = manual.replace(/\n/gm,'<br/>')
+            var manual = reformat(activityInfo.manual)
             contentText += "<b>" + qsTr("Manual") + ": </b>" + manual
             contentText += "<br/><br/>"
         }
