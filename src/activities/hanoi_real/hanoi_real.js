@@ -96,8 +96,8 @@ function discReleased(index)
         placeDisc(disc, items.tower3Image)
     } else {
         // Cancel the drop
-        disc.x = items.hanoiStage.currentX
-        disc.y = items.hanoiStage.currentY
+        disc.x = items.background.currentX
+        disc.y = items.background.currentY
     }
 
     disableNonDraggablediscs()
