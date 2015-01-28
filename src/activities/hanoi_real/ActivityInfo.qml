@@ -5,7 +5,7 @@ ActivityInfo {
   difficulty: 5
   icon: "hanoi_real/hanoi_real.svg"
   author: "Amit Tomar <a.tomar@outlook.com>"
-  demo: false
+  demo: true
   title: qsTr("The Tower of Hanoi")
   description: qsTr("Reproduce the tower on the right side")
   goal: qsTr("The object of the game is to move the entire stack to another peg, obeying the following rules:
