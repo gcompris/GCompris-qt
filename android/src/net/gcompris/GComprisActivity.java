@@ -72,7 +72,9 @@ public class GComprisActivity extends QtActivity
        @Override
        public void onServiceConnected(ComponentName name, IBinder service)
        {
-           m_service = IInAppBillingService.Stub.asInterface(service);
+           if(service.isBinderAlive()) {
+               m_service = IInAppBillingService.Stub.asInterface(service);
+           }
        }
     };
 
@@ -171,7 +173,7 @@ public class GComprisActivity extends QtActivity
 								  "inapp", null);
             int responseCode = ownedItems.getInt("RESPONSE_CODE");
             if (responseCode == 0) {
-		ArrayList ownedSkus = ownedItems.getStringArrayList("INAPP_PURCHASE_ITEM_LIST");
+                ArrayList ownedSkus = ownedItems.getStringArrayList("INAPP_PURCHASE_ITEM_LIST");
                 ArrayList purchaseDataList = ownedItems.getStringArrayList("INAPP_PURCHASE_DATA_LIST");
                 for(int i=0; i<purchaseDataList.size(); ++i)
                 {
