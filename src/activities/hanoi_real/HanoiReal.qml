@@ -108,11 +108,7 @@ ActivityBase {
                 parent: tower1Image
                 z: tower1Image.z + 1
 
-                sourceSize.width: if( 0 == index ) tower1Image.width * 1.6
-                                  else if ( 1 == index ) tower1Image.width * 1.3
-                                  else if ( 2 == index ) tower1Image.width * 1
-                                  else if ( 3 == index ) tower1Image.width * 0.7
-                                  else tower1Image.width * 0.5
+                sourceSize.width: Activity.getDiscWidth(index)
                 height: tower1Image.height * 0.1
                 source: Activity.url + "disc" + (index + 1) + ".svg"
                 opacity: index < items.numberOfDisc ? 1 : 0
@@ -138,15 +134,11 @@ ActivityBase {
                 MouseArea {
                     id: discMouseArea
                     enabled: parent.mouseEnabled
-                    anchors.fill: parent
+                    anchors.centerIn: parent
+                    width: Activity.getDiscWidth(0)
+                    height: background.height
                     drag.target: parent
                     drag.axis: Drag.XandYAxis
-
-                    drag.minimumX: 0
-                    drag.maximumX: background.width - parent.width
-
-                    drag.minimumY: 0
-                    drag.maximumY: background.height - parent.height
 
                     onPressed: {
                         background.currentX = disc.x

@@ -182,3 +182,12 @@ function checkSolved() {
     if(getNumberOfDiscOnTower(items.tower3Image) === items.numberOfDisc)
         items.bonus.good("flower")
 }
+
+function getDiscWidth(index)
+{
+    if( 0 === index ) return items.tower1Image.width * 1.6
+    else if ( 1 === index ) return items.tower1Image.width * 1.3
+    else if ( 2 === index ) return items.tower1Image.width * 1
+    else if ( 3 === index ) return items.tower1Image.width * 0.7
+    else return items.tower1Image.width * 0.5
+}
