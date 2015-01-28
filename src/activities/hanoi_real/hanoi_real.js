@@ -102,6 +102,7 @@ function discReleased(index)
 
     disableNonDraggablediscs()
     deHighlightTowers()
+    checkSolved()
 }
 
 function performTowersHighlight(disc, x)
