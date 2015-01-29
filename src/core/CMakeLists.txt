@@ -6,6 +6,10 @@ if(WITH_ACTIVATION_CODE)
   add_definitions(-DWITH_ACTIVATION_CODE)
 endif()
 
+if(WITH_KIOSK_MODE)
+  add_definitions(-DWITH_KIOSK_MODE)
+endif()
+
 # Note: put .cpp files before .h files in the following or cmake messes up
 # moc generation -- WTF! 
 set(gcompris_SRCS
