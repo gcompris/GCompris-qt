@@ -383,6 +383,9 @@ inline QStringList DownloadManager::getSystemResourcePaths() const
 {
     return QStringList({
         getSystemDownloadPath(),
+#if defined(Q_OS_ANDROID)
+        "assets:",
+#endif
         QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) +
             "/" + GCOMPRIS_APPLICATION_NAME
     });
