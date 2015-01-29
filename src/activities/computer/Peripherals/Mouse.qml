@@ -20,7 +20,7 @@ Image {
      anchors.fill: parent
      hoverEnabled: true
      onExited: d.visible = false
-     onClicked :
+    /* onClicked :
      {
          d.x = 780
          d.y = 500
@@ -29,7 +29,7 @@ Image {
                      I am used for pointing things."
          mouseSound.play()
          t1.text = "I"
-     }
+     }*/
      }
     }
 

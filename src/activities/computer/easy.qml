@@ -1,26 +1,13 @@
 import QtQuick 2.1
 import GCompris 1.0
 import QtMultimedia 5.4
-import "Peripherals"
 
 Rectangle {
     id : root
     height:parent
     width : parent
 
-Monitor{
-  id : monitor
-}
-
-Keyboard{
-    id : keyboard
-}
-Mouse
-{
-    id : mouse
-}
-
-/*Rectangle {
+Rectangle {
     id : monitor
     x : 600
     y : 150
@@ -236,7 +223,7 @@ Image {
               t1.text = "Ctrl"
      }
    }
- }*/
+ }
 
 
 Image {
