@@ -105,25 +105,23 @@ public class GComprisActivity extends QtActivity
     {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == 1001) {
+        if (resultCode == RESULT_OK && data != null && requestCode == 1001) {
             int responseCode = data.getIntExtra("RESPONSE_CODE", -1);
             String purchaseData = data.getStringExtra("INAPP_PURCHASE_DATA");
 
-             if (resultCode == RESULT_OK) {
-                try {
-                    JSONObject jo = new JSONObject(purchaseData);
-                    String sku = jo.getString("productId");
-                    int purchaseState = jo.getInt("purchaseState");
-                    String payload = jo.getString("developerPayload");
-                    String purchaseToken = jo.getString("purchaseToken");
-                    if (sku.equals(SKU_NAME) && purchaseState == 0) {
-                        bought(true);
-                        return;
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
+            try {
+                JSONObject jo = new JSONObject(purchaseData);
+                String sku = jo.getString("productId");
+                int purchaseState = jo.getInt("purchaseState");
+                String payload = jo.getString("developerPayload");
+                String purchaseToken = jo.getString("purchaseToken");
+                if (sku.equals(SKU_NAME) && purchaseState == 0) {
+                    bought(true);
+                    return;
                 }
-             }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
              Log.e(QtApplication.QtTAG, "Buying full version failed: Result code == " + resultCode);
         }
