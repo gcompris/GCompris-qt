@@ -38,47 +38,58 @@ Item {
     property variant buttonList: [
         {
             'bid': exit,
-            'contentId': content.exit
+            'contentId': content.exit,
+            'allowed': true
         },
         {
             'bid': about,
-            'contentId': content.about
+            'contentId': content.about,
+            'allowed': true
         },
         {
             'bid': help,
-            'contentId': content.help
+            'contentId': content.help,
+            'allowed': true
         },
         {
             'bid': home,
-            'contentId': content.home
+            'contentId': content.home,
+            'allowed': true
         },
         {
             'bid': previous,
-            'contentId': content.level
+            'contentId': content.level,
+            'allowed': true
         },
         {
             'bid': levelText,
-            'contentId': content.level
+            'contentId': content.level,
+            'allowed': true
         },
         {
             'bid': next,
-            'contentId': content.level
+            'contentId': content.level,
+            'allowed': true
         },
         {
             'bid': repeat,
-            'contentId': content.repeat
+            'contentId': content.repeat,
+            'allowed': true
         },
         {
             'bid': reload,
-            'contentId': content.reload
+            'contentId': content.reload,
+            'allowed': true
         },
         {
             'bid': config,
-            'contentId': content.config
+            'contentId': content.config,
+            'allowed': !ApplicationSettings.isKioskMode
         },
         {
             'bid': downloadImage,
-            'contentId': content.download
+            'contentId': content.download,
+            'allowed': true
         }
     ]
 
@@ -124,7 +135,8 @@ Item {
     function updateContent() {
         var newButtonModel = new Array()
         for(var def in buttonList) {
-            if(content.value & buttonList[def].contentId) {
+            if((content.value & buttonList[def].contentId) &&
+               buttonList[def].allowed) {
                 newButtonModel.push(buttonList[def])
             }
         }

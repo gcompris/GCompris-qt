@@ -68,8 +68,9 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(bool isAutomaticDownloadsEnabled READ isAutomaticDownloadsEnabled WRITE setIsAutomaticDownloadsEnabled NOTIFY automaticDownloadsEnabledChanged)
     Q_PROPERTY(quint32 filterLevelMin READ filterLevelMin WRITE setFilterLevelMin NOTIFY filterLevelMinChanged)
     Q_PROPERTY(quint32 filterLevelMax READ filterLevelMax WRITE setFilterLevelMax NOTIFY filterLevelMaxChanged)
-	Q_PROPERTY(bool isDemoMode READ isDemoMode WRITE setDemoMode NOTIFY demoModeChanged)
-	Q_PROPERTY(bool sectionVisible READ sectionVisible WRITE setSectionVisible NOTIFY sectionVisibleChanged)
+    Q_PROPERTY(bool isDemoMode READ isDemoMode WRITE setDemoMode NOTIFY demoModeChanged)
+    Q_PROPERTY(bool isKioskMode READ isKioskMode WRITE setKioskMode NOTIFY kioskModeChanged)
+    Q_PROPERTY(bool sectionVisible READ sectionVisible WRITE setSectionVisible NOTIFY sectionVisibleChanged)
     Q_PROPERTY(int baseFontSize READ baseFontSize WRITE setBaseFontSize NOTIFY baseFontSizeChanged)
     // constant min/max values for baseFontSize:
     Q_PROPERTY(int baseFontSizeMin READ baseFontSizeMin CONSTANT)
@@ -169,8 +170,14 @@ public:
         emit filterLevelMaxChanged();
     }
 
-	bool isDemoMode() const { return m_isDemoMode; }
+    bool isDemoMode() const { return m_isDemoMode; }
     void setDemoMode(const bool newMode);
+
+    bool isKioskMode() const { return m_isKioskMode; }
+    void setKioskMode(const bool newMode) {
+        m_isKioskMode = newMode;
+        emit kioskModeChanged();
+    }
 
     // Payment API
     // Call a payment system to sync our demoMode state with it
@@ -230,8 +237,9 @@ protected slots:
     Q_INVOKABLE void notifyAutomaticDownloadsEnabledChanged();
     Q_INVOKABLE void notifyFilterLevelMinChanged();
     Q_INVOKABLE void notifyFilterLevelMaxChanged();
-	Q_INVOKABLE void notifyDemoModeChanged();
-	Q_INVOKABLE void notifySectionVisibleChanged();
+    Q_INVOKABLE void notifyDemoModeChanged();
+    Q_INVOKABLE void notifyKioskModeChanged();
+    Q_INVOKABLE void notifySectionVisibleChanged();
 
     Q_INVOKABLE void notifyDownloadServerUrlChanged();
 
@@ -258,8 +266,9 @@ signals:
     void automaticDownloadsEnabledChanged();
     void filterLevelMinChanged();
     void filterLevelMaxChanged();
-	void demoModeChanged();
-	void sectionVisibleChanged();
+    void demoModeChanged();
+    void kioskModeChanged();
+    void sectionVisibleChanged();
     void baseFontSizeChanged();
 
     void downloadServerUrlChanged();
@@ -289,8 +298,9 @@ private:
 	bool m_noCursor;
     QString m_locale;
     QString m_font;
-	bool m_isDemoMode;
-	bool m_sectionVisible;
+    bool m_isDemoMode;
+    bool m_isKioskMode;
+    bool m_sectionVisible;
 	int m_baseFontSize;
 	const int m_baseFontSizeMin = -7;
 	const int m_baseFontSizeMax = 7;
