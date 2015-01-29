@@ -1,26 +1,10 @@
 import QtQuick 2.1
 import GCompris 1.0
 import QtMultimedia 5.4
-import "Peripherals"
+
 
 Rectangle {
-    id : root
-    height:parent
-    width : parent
-
-Monitor{
-  id : monitor
-}
-
-Keyboard{
-    id : keyboard
-}
-Mouse
-{
-    id : mouse
-}
-
-/*Rectangle {
+property alias mouse = mouseArea.onClicked()
     id : monitor
     x : 600
     y : 150
@@ -40,6 +24,7 @@ Mouse
         source: "qrc:/gcompris/src/activities/computer/resource/start.wav"
     }
      MouseArea {
+     id : mouseArea
      anchors.fill: parent
      hoverEnabled: true
      onClicked: {
@@ -236,88 +221,5 @@ Image {
               t1.text = "Ctrl"
      }
    }
- }*/
-
-
-Image {
-     id: ups
-     x: 450
-     y: 250
-     sourceSize.width: 100
-     sourceSize.height: 100
-     source: "qrc:/gcompris/src/activities/computer/resource/ups.svgz"
-     signal clicked
-         MouseArea {
-         anchors.fill: parent
-         hoverEnabled: true
-         onClicked: {
-             d.x = 450
-             d.y = 200
-             d.visible = true
-             des.text = "I am a Uniterruptible Power Supply(UPS).
-                         I am used to provide emergency power when main power fails."
-         }
-         onExited: d.visible = false
-         }
-    }
-
-
-Image {
-     id: cpu
-     x: 850
-     y: 250
-     sourceSize.width: 100
-     sourceSize.height: 100
-     source: "qrc:/gcompris/src/activities/computer/resource/cpu.svgz"
-     signal clicked
-     MouseArea {
-     anchors.fill: parent
-     hoverEnabled: true
-     onClicked: {
-         d.x = 850
-         d.y = 200
-         d.visible = true
-         des.text = "I am a Central Processing Unit.
-                     I am called the BRAIN of the computer.
-                     I am used to carry out various instructions such as +,-,*,/ "
-     }
-     onExited: d.visible = false
-     }
-}
-
-Rectangle
-     {
-         id : d
-         visible: false
-         radius: 3
-         color : "white"
-         Text {
-             id : des
-
-         }
-     }
-
-Image{
-    id : button
-    x : 650
-    y : 600
-    height: 50
-    width : 50
-    source : "qrc:/gcompris/src/activities/computer/resource/back.svgz"
-    Text
-    {
-        anchors.centerIn: parent
-        text : "Back"
-    }
-
-    MouseArea{
-        anchors.fill: parent
-        onClicked:
-        {
-            root.visible = false
-            column.visible = true
-    }
-}
-}
-}
+ }
 
