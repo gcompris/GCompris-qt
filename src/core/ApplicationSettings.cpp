@@ -80,6 +80,7 @@ static const QString BASE_FONT_SIZE_KEY = "baseFontSize";
 static const QString DEFAULT_CURSOR = "defaultCursor";
 static const QString NO_CURSOR = "noCursor";
 static const QString DEMO_KEY = "demo";
+static const QString KIOSK_KEY = "kiosk";
 static const QString SECTION_VISIBLE = "sectionVisible";
 
 ApplicationSettings *ApplicationSettings::m_instance = NULL;
@@ -104,9 +105,15 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
 
 // The default demo mode based on the platform
 #if defined(WITH_ACTIVATION_CODE)
-	m_isDemoMode = m_config.value(DEMO_KEY, true).toBool();
+    m_isDemoMode = m_config.value(DEMO_KEY, true).toBool();
 #else
-	m_isDemoMode = m_config.value(DEMO_KEY, false).toBool();
+    m_isDemoMode = m_config.value(DEMO_KEY, false).toBool();
+#endif
+
+#if defined(WITH_KIOSK_MODE)
+    m_isKioskMode = m_config.value(KIOSK_KEY, true).toBool();
+#else
+    m_isKioskMode = m_config.value(KIOSK_KEY, false).toBool();
 #endif
 
     // By default, show it if all the activities are non free
@@ -147,8 +154,9 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, SIGNAL(filterLevelMinChanged()), this, SLOT(notifyFilterLevelMinChanged()));
     connect(this, SIGNAL(filterLevelMaxChanged()), this, SLOT(notifyFilterLevelMaxChanged()));
 	connect(this, SIGNAL(sectionVisibleChanged()), this, SLOT(notifySectionVisibleChanged()));
-	connect(this, SIGNAL(demoModeChanged()), this, SLOT(notifyDemoModeChanged()));
-	connect(this, SIGNAL(downloadServerUrlChanged()), this, SLOT(notifyDownloadServerUrlChanged()));
+    connect(this, SIGNAL(demoModeChanged()), this, SLOT(notifyDemoModeChanged()));
+    connect(this, SIGNAL(kioskModeChanged()), this, SLOT(notifyKioskModeChanged()));
+    connect(this, SIGNAL(downloadServerUrlChanged()), this, SLOT(notifyDownloadServerUrlChanged()));
     connect(this, SIGNAL(exeCountChanged()), this, SLOT(notifyExeCountChanged()));
     connect(this, SIGNAL(barHiddenChanged()), this, SLOT(notifyBarHiddenChanged()));
 }
@@ -168,8 +176,9 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
     m_config.setValue(FILTER_LEVEL_MIN, m_filterLevelMin);
 	m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
-	m_config.setValue(DEMO_KEY, m_isDemoMode);
-	m_config.setValue(SECTION_VISIBLE, m_sectionVisible);
+    m_config.setValue(DEMO_KEY, m_isDemoMode);
+    m_config.setValue(KIOSK_KEY, m_isKioskMode);
+    m_config.setValue(SECTION_VISIBLE, m_sectionVisible);
 	m_config.setValue(DEFAULT_CURSOR, m_defaultCursor);
 	m_config.setValue(NO_CURSOR, m_noCursor);
 	m_config.setValue(BASE_FONT_SIZE_KEY, m_baseFontSize);
@@ -258,8 +267,14 @@ void ApplicationSettings::notifyFilterLevelMaxChanged()
 
 void ApplicationSettings::notifyDemoModeChanged()
 {
-	updateValueInConfig(GENERAL_GROUP_KEY, DEMO_KEY, m_isDemoMode);
-	qDebug() << "notifyDemoMode: " << m_isDemoMode;
+    updateValueInConfig(GENERAL_GROUP_KEY, DEMO_KEY, m_isDemoMode);
+    qDebug() << "notifyDemoMode: " << m_isDemoMode;
+}
+
+void ApplicationSettings::notifyKioskModeChanged()
+{
+    updateValueInConfig(GENERAL_GROUP_KEY, KIOSK_KEY, m_isKioskMode);
+    qDebug() << "notifyKioskMode: " << m_isKioskMode;
 }
 
 void ApplicationSettings::notifySectionVisibleChanged()

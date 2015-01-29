@@ -29,7 +29,8 @@
 ActivityInfo::ActivityInfo(QObject *parent):
 	QObject(parent),
 	m_dir(""),
-	m_demo(true)
+    m_demo(true),
+    m_favorite(false)
 {
 }
 
@@ -42,7 +43,8 @@ void ActivityInfo::setName(const QString &name)
 	m_name = name;
 	// Once we are given a name, we can get the favorite property
 	// from the persistant configuration
-	m_favorite = ApplicationSettings::getInstance()->isFavorite(m_name);
+    if(!ApplicationSettings::getInstance()->isKioskMode())
+        m_favorite = ApplicationSettings::getInstance()->isFavorite(m_name);
 	emit nameChanged();
 }
 
