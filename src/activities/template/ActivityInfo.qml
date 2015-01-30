@@ -12,5 +12,5 @@ ActivityInfo {
   prerequisite: ""
   manual: ""
   credit: ""
-  section: ""
+  section: "fun"
 }
