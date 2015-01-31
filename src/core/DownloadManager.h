@@ -132,7 +132,7 @@ signals:
     void downloadStarted(const QString& resource);
     void downloadProgress(qint64 bytesReceived, qint64 bytesTotal);
     void downloadFinished(int code); // note: when using DownloadFinishedCode instead of int the code will not be passed to the QML layer
-    void resourceRegistered(const QString& resource);  // emitted when a ressource is registered
+    void resourceRegistered(const QString& resource);  // emitted when a resource is registered
     void voicesRegistered(); // special case of the former: emitted when voices for current locale have been registered
 };
 

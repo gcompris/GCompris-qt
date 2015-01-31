@@ -38,9 +38,9 @@ Item {
     signal start
     signal stop
 
-    // emited at stop animation end
+    // emitted at stop animation end
     signal close
-    // emited when the optional button is hit
+    // emitted when the optional button is hit
     signal buttonHit
 
     onStart: opacity = 1

@@ -127,7 +127,7 @@ Item {
             return;
         }
         nRows = a.length;
-        // if we need special keys, put them in a seperate row at the bottom:
+        // if we need special keys, put them in a separate row at the bottom:
         if (keyboard.shiftKey) {
             a.push([ {
                 label     : keyboard.shiftUpSymbol + " Shift",
