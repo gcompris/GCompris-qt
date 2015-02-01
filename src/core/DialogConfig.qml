@@ -50,6 +50,7 @@ Rectangle {
             { "text": "American English", "locale": "en_US.UTF-8" },
             { "text": "български", "locale": "bg_BG.UTF-8" },
             { "text": "Brezhoneg", "locale": "br_FR.UTF-8" },
+            { "text": "Català", "locale": "ca.UTF-8" },
             { "text": "Česká", "locale": "cs_CZ.UTF-8" },
             { "text": "Dansk", "locale": "da_DK.UTF-8" },
             { "text": "Deutsch", "locale": "de_DE.UTF-8" },
