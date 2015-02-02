@@ -2,7 +2,11 @@ This is a README file.
 The images used in the project are taken from "https://openclipart.org/".
 
 Computer
-	resource : contains all the images that are used in the project
-	Peripherals : contains the .qml file of components that are used again and again in the project.	
-	Others are qml files of different levels.
+	Resource : Contains all the images that are used in the project.
+		   The images used are in .svgz format and the sound files used are in .wav format.
+		   These files are used inside the source code of each component.
+
+	Peripherals : Contains the .qml file of components that are used again and again in the project.
+	
+	Others are qml files of different levels such as easy.qml,medium.qml,hard.qml and difficult.qml.
 	
