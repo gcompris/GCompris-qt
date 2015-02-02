@@ -8,5 +8,6 @@ Computer
 
 	Peripherals : Contains the .qml file of components that are used again and again in the project.
 	
-	Others are qml files of different levels such as easy.qml,medium.qml,hard.qml and difficult.qml.
+	Others are qml files of different levels such as easy.qml,medium.qml,hard.qml and difficult.qml which 
+	defines different levels in project.
 	
