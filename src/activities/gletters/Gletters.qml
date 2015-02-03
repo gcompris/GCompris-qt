@@ -144,7 +144,6 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
 
-            keyHeight: 35 * ApplicationInfo.ratio
             equalKeyWidth: true
             
             onKeypress: Activity.processKeyPress(text)

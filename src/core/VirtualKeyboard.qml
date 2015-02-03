@@ -84,7 +84,7 @@ Item {
     property bool equalKeyWidth: true
     property int rowSpacing: 5 * ApplicationInfo.ratio
     property int keySpacing: 3 * ApplicationInfo.ratio
-    property int keyHeight: 35 * ApplicationInfo.ratio
+    property int keyHeight: 45 * ApplicationInfo.ratio
     property int margin: 5 * ApplicationInfo.ratio
     property bool hide
 
