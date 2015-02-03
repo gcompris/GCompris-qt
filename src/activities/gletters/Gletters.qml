@@ -144,8 +144,6 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
 
-            equalKeyWidth: true
-            
             onKeypress: Activity.processKeyPress(text)
             
             onError: console.log("VirtualKeyboard error: " + msg);

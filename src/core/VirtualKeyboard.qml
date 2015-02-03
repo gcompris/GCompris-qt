@@ -81,7 +81,6 @@ Item {
     // property bool ctrlKey: false;
     // ...
 
-    property bool equalKeyWidth: true
     property int rowSpacing: 5 * ApplicationInfo.ratio
     property int keySpacing: 3 * ApplicationInfo.ratio
     property int keyHeight: 45 * ApplicationInfo.ratio
@@ -171,11 +170,6 @@ Item {
         for (i = 0; i < a.length; i++) {
             var row = a[i];
             var offset = 0;
-            if (!shiftKey || i < a.length-1)
-                    equalKeyWidth ? ((maxButtons - row.length) *
-                                     (keyboard.width - maxButtons *
-                                      keyboard.rowSpacing - keyboard.margin*2) /
-                                     maxButtons) : 0;
             rowListModel.append({ rowNum: i,
                                   offset: offset,
                                   keys: row});
@@ -281,7 +275,6 @@ Item {
                         z: rowListDelegate.ListView.isCurrentItem ? 1 : -1
                             
                         Item {
-                            // Spacer used for equalKeyWidth
                             id: keyboardRowSpacing
                             width: offset / 2;
                             height: keyboard.keyHeight
