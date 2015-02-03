@@ -179,7 +179,7 @@ ActivityBase {
                     function selectCurrentItem() {
                         particles.burst(10)
                         ActivityInfoTree.filterByTag(modelData.tag)
-                        ActivityInfoTree.filterNonFreeActivities()
+                        ActivityInfoTree.filterLockedActivities()
                         menuActivity.currentTag = modelData.tag
                         section.currentIndex = index
                     }
@@ -414,7 +414,7 @@ ActivityBase {
         id: dialogConfig
         onClose: {
             ActivityInfoTree.filterByTag(menuActivity.currentTag)
-            ActivityInfoTree.filterNonFreeActivities()
+            ActivityInfoTree.filterLockedActivities()
             home()
         }
     }

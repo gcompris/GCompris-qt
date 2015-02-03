@@ -57,7 +57,7 @@ class ApplicationSettings : public QObject
 	Q_OBJECT
 
 	// general group
-    Q_PROPERTY(bool showNonFreeActivities READ showNonFreeActivities WRITE setShowNonFreeActivities NOTIFY showNonFreeActivitiesChanged)
+    Q_PROPERTY(bool showLockedActivities READ showLockedActivities WRITE setShowLockedActivities NOTIFY showLockedActivitiesChanged)
 	Q_PROPERTY(bool isAudioVoicesEnabled READ isAudioVoicesEnabled WRITE setIsAudioVoicesEnabled NOTIFY audioVoicesEnabledChanged)
 	Q_PROPERTY(bool isAudioEffectsEnabled READ isAudioEffectsEnabled WRITE setIsAudioEffectsEnabled NOTIFY audioEffectsEnabledChanged)
     Q_PROPERTY(bool isFullscreen READ isFullscreen WRITE setFullscreen NOTIFY fullscreenChanged)
@@ -102,10 +102,10 @@ public:
     static QObject *systeminfoProvider(QQmlEngine *engine,
                                        QJSEngine *scriptEngine);
 
-    bool showNonFreeActivities() const { return m_showNonFreeActivities; }
-    void setShowNonFreeActivities(const bool newMode) {
-        m_showNonFreeActivities = newMode;
-        emit showNonFreeActivitiesChanged();
+    bool showLockedActivities() const { return m_showLockedActivities; }
+    void setShowLockedActivities(const bool newMode) {
+        m_showLockedActivities = newMode;
+        emit showLockedActivitiesChanged();
     }
 
     bool isAudioVoicesEnabled() const { return m_isAudioVoicesEnabled; }
@@ -226,7 +226,7 @@ public:
 
 protected slots:
 
-    Q_INVOKABLE void notifyShowNonFreeActivitiesChanged();
+    Q_INVOKABLE void notifyShowLockedActivitiesChanged();
 	Q_INVOKABLE void notifyAudioVoicesEnabledChanged();
 	Q_INVOKABLE void notifyAudioEffectsEnabledChanged();
     Q_INVOKABLE void notifyFullscreenChanged();
@@ -255,7 +255,7 @@ public slots:
 protected:
 
 signals:
-    void showNonFreeActivitiesChanged();
+    void showLockedActivitiesChanged();
 	void audioVoicesEnabledChanged();
 	void audioEffectsEnabledChanged();
     void fullscreenChanged();
@@ -285,7 +285,7 @@ private:
 
     static ApplicationSettings *m_instance;
 
-    bool m_showNonFreeActivities;
+    bool m_showLockedActivities;
     bool m_isAudioVoicesEnabled;
 	bool m_isAudioEffectsEnabled;
     bool m_isFullscreen;
