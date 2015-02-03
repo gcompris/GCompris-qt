@@ -2,7 +2,7 @@ import GCompris 1.0
 
 ActivityInfo {
     name: "enumerate/Enumerate.qml"
-    difficulty: 1
+    difficulty: 2
     icon: "enumerate/enumerate.svg"
     author: "Thib ROMAIN <thibrom@gmail.com>"
     demo: true

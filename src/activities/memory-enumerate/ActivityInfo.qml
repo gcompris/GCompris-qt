@@ -2,7 +2,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "memory-enumerate/MemoryEnumerate.qml"
-  difficulty: 1
+  difficulty: 2
   icon: "memory-enumerate/memory-enumerate.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false

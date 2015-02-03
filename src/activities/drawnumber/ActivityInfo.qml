@@ -2,7 +2,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "drawnumber/Drawnumber.qml"
-  difficulty: 1
+  difficulty: 2
   icon: "drawnumber/drawnumber.svg"
   author: "Emmanuel Charruau <echarruau@gmail.com>"
   demo: true
