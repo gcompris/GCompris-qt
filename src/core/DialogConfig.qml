@@ -187,12 +187,12 @@ Rectangle {
                         }
 
                         GCDialogCheckBox {
-                            id: displayNonFreeActivitiesBox
-                            text: qsTr("Show non-free activities")
+                            id: displayLockedActivitiesBox
+                            text: qsTr("Show locked activities")
                             visible: ApplicationSettings.isDemoMode
-                            checked: showNonFreeActivities
+                            checked: showLockedActivities
                             onCheckedChanged: {
-                                showNonFreeActivities = checked;
+                                showLockedActivities = checked;
                             }
                         }
 
@@ -511,7 +511,7 @@ Rectangle {
         }
     }
 
-    property bool showNonFreeActivities: ApplicationSettings.showNonFreeActivities
+    property bool showLockedActivities: ApplicationSettings.showLockedActivities
     property bool isAudioVoicesEnabled: ApplicationSettings.isAudioVoicesEnabled
     property bool isAudioEffectsEnabled: ApplicationSettings.isAudioEffectsEnabled
     property bool isFullscreen: ApplicationSettings.isFullscreen
@@ -523,7 +523,7 @@ Rectangle {
 
     onStart: {
         // Synchronize settings with data
-        showNonFreeActivities = ApplicationSettings.showNonFreeActivities
+        showLockedActivities = ApplicationSettings.showLockedActivities
         isAudioVoicesEnabled = ApplicationSettings.isAudioVoicesEnabled
         enableAudioVoicesBox.checked = isAudioVoicesEnabled
 
@@ -562,7 +562,7 @@ Rectangle {
     }
 
     function save() {
-        ApplicationSettings.showNonFreeActivities = showNonFreeActivities
+        ApplicationSettings.showLockedActivities = showLockedActivities
         ApplicationSettings.isAudioVoicesEnabled = isAudioVoicesEnabled
         ApplicationSettings.isAudioEffectsEnabled = isAudioEffectsEnabled
         ApplicationSettings.isFullscreen = isFullscreen
@@ -660,7 +660,7 @@ Rectangle {
                 (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard) ||
                 (ApplicationSettings.isAutomaticDownloadsEnabled != isAutomaticDownloadsEnabled) ||
                 (ApplicationSettings.baseFontSize != baseFontSize) ||
-                (ApplicationSettings.showNonFreeActivities != showNonFreeActivities)
+                (ApplicationSettings.showLockedActivities != showLockedActivities)
                 );
     }
 }

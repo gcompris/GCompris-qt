@@ -150,10 +150,10 @@ void ActivityInfoTree::filterByTag(const QString &tag)
     emit menuTreeChanged();
 }
 
-void ActivityInfoTree::filterNonFreeActivities()
+void ActivityInfoTree::filterLockedActivities()
 {
     // If we have the full version or if we show all the activities, we don't need to do anything
-    if(!ApplicationSettings::getInstance()->isDemoMode() || ApplicationSettings::getInstance()->showNonFreeActivities())
+    if(!ApplicationSettings::getInstance()->isDemoMode() || ApplicationSettings::getInstance()->showLockedActivities())
         return;
     for(auto activity: m_menuTree) {
         // Remove non free activities if needed. We need to already have a menuTree filled!
@@ -247,7 +247,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	file.close();
 
 	menuTree->filterByTag("favorite");
-    menuTree->filterNonFreeActivities();
+    menuTree->filterLockedActivities();
     return menuTree;
 }
 
