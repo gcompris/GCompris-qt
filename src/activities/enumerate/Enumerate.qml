@@ -131,7 +131,6 @@ ActivityBase {
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
 
-            equalKeyWidth: true
             layout: [ [
                     { label: "0" },
                     { label: "1" },
