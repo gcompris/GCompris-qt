@@ -2,7 +2,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "click_on_letter/ClickOnLetter.qml"
-  difficulty: 1
+  difficulty: 2
   icon: "click_on_letter/click_on_letter.svg"
   author: "Holger Kaelberer <holger.k@elberer.de>"
   demo: true
