@@ -140,10 +140,10 @@ QString ApplicationInfo::getFilePath(const QString &file)
 
 QString ApplicationInfo::getAudioFilePath(const QString &file)
 {
-    QString localeShortName = localeShort();
+    QString localeName = getVoicesLocale(ApplicationSettings::getInstance()->locale());
 
     QString filename = file;
-    filename.replace("$LOCALE", localeShortName);
+    filename.replace("$LOCALE", localeName);
     return getResourceDataPath() + "/" + filename;
 }
 
@@ -206,9 +206,19 @@ void ApplicationInfo::notifyFullscreenChanged()
         m_window->showNormal();
 }
 
-// return the short locale name for the given locale
-QString ApplicationInfo::getLocaleShort(const QString &locale) {
-    return localeShort(locale);
+// return the shortest possible locale name for the given locale, describing
+// a unique voices dataset
+QString ApplicationInfo::getVoicesLocale(const QString &locale)
+{
+    QString _locale = locale;
+    if(_locale == GC_DEFAULT_LOCALE) {
+        _locale = QLocale::system().name();
+    }
+    // locales we have country-specific voices for:
+    if (_locale.startsWith("pt_BR") || _locale.startsWith("zh_CN"))
+        return QLocale(_locale).name();
+    // short locale for all the rest:
+    return localeShort(_locale);
 }
 
 QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,

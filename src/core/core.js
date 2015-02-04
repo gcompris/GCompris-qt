@@ -198,7 +198,7 @@ function checkForVoices(parent)
 {
     if (!GCompris.DownloadManager.haveLocalResource(
             GCompris.DownloadManager.getVoicesResourceForLocale(
-                    GCompris.ApplicationInfo.localeShort))) {
+                    GCompris.ApplicationSettings.locale))) {
         var buttonHandler = new Array();
         var dialog;
         buttonHandler[Dialog.StandardButton.Ok] = function() {};

@@ -102,7 +102,7 @@ Window {
             buttonHandler[StandardButton.Yes] = function() {
                 // yes -> start download
                 if (DownloadManager.downloadResource(
-                        DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort)))
+                        DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
                     var downloadDialog = Core.showDownloadDialog(main, {});
             };
             buttonHandler[StandardButton.No] = function() {};
@@ -113,8 +113,8 @@ Window {
                     qsTr("Have Fun!") +
                     "\n" +
                     qsTr("Your current language is %1 (%2).")
-                        .arg(Qt.locale(ApplicationInfo.localeShort).nativeLanguageName)
-                        .arg(ApplicationInfo.localeShort) +
+                        .arg(Qt.locale(ApplicationSettings.locale).nativeLanguageName)
+                        .arg(ApplicationSettings.locale) +
                     "\n" +
                     qsTr("Do you want to download the corresponding sound files now?"),
                     StandardIcon.Information,

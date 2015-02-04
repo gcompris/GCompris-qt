@@ -321,12 +321,11 @@ Rectangle {
                             property bool haveLocalResource: false
 
                             function localeChanged() {
-                                var localeShort =
-                                        ApplicationInfo.getLocaleShort(dialogConfig.languages[languageBox.currentIndex].locale);
                                 var language = dialogConfig.languages[languageBox.currentIndex].text;
                                 voicesText.text = language;
                                 voicesRow.haveLocalResource = DownloadManager.haveLocalResource(
-                                        DownloadManager.getVoicesResourceForLocale(localeShort));
+                                        DownloadManager.getVoicesResourceForLocale(
+                                                dialogConfig.languages[languageBox.currentIndex].locale));
                             }
 
                             Connections {
@@ -364,10 +363,8 @@ Rectangle {
                                 style: GCButtonStyle {}
 
                                 onClicked: {
-                                    var localeShort =
-                                            ApplicationInfo.getLocaleShort(dialogConfig.languages[languageBox.currentIndex].locale);
                                     if (DownloadManager.downloadResource(
-                                        DownloadManager.getVoicesResourceForLocale(localeShort)))
+                                        DownloadManager.getVoicesResourceForLocale(dialogConfig.languages[languageBox.currentIndex].locale)))
                                     {
                                         var downloadDialog = Core.showDownloadDialog(dialogConfig, {});
                                     }
@@ -579,8 +576,7 @@ Rectangle {
         if (ApplicationSettings.locale != dialogConfig.languages[languageBox.currentIndex].locale) {
             ApplicationSettings.locale = dialogConfig.languages[languageBox.currentIndex].locale
             if (!DownloadManager.haveLocalResource(
-                    DownloadManager.getVoicesResourceForLocale(
-                            ApplicationInfo.localeShort)))
+                    DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
             {
                 // ask for downloading new voices
                 var buttonHandler = new Array();
@@ -589,7 +585,7 @@ Rectangle {
                 buttonHandler[StandardButton.Yes] = function() {
                     // yes -> start download
                     if (DownloadManager.downloadResource(
-                            DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort)))
+                            DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
                         var downloadDialog = Core.showDownloadDialog(main, {});
                 };
                 dialog = Core.showMessageDialog(dialogConfig,
@@ -600,7 +596,8 @@ Rectangle {
                         buttonHandler
                 );
             } else // check for udpates or/and register new voices
-                DownloadManager.updateResource(DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort))
+                DownloadManager.updateResource(
+                        DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale))
         }
     }
 
