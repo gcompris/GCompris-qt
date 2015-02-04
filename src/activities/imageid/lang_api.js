@@ -108,11 +108,5 @@ function getLessonWords(dataset, lesson) {
 
 function getTextByAudio(contentText, audio) {
     audio += ".ogg"
-    for (var i in contentText) {
-        for (var key in contentText[i]) {
-            if(key === audio)
-                return contentText[i][key]
-        }
-    }
-
+    return contentText[audio]
 }
