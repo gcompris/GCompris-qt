@@ -33,6 +33,17 @@ json_data = open(dataset)
 data = json.load(json_data)
 json_data.close()
 
+# Header
+print 'msgid ""'
+print 'msgstr ""'
+print '"Project-Id-Version: GCompris"'
+print '"POT-Creation-Date: 2015-02-04 21:52+0100"'
+print '"Language-Team: "'
+print '"MIME-Version: 1.0"'
+print '"Content-Type: text/plain; charset=UTF-8"'
+print '"Content-Transfer-Encoding: 8bit"'
+print ''
+
 for chapter in data:
     for lesson in chapter['content']:
         for word in lesson['content']:
@@ -43,6 +54,7 @@ for chapter in data:
                 word['image'].split('/')[-1].split(".")[0]
             print "#: " + "http://gcompris.net/incoming/lang/words.html#" + \
                 word['image'].split('/')[-1].split(".")[0]
+            print 'msgctxt "LangWords|"'
             print 'msgid "' + word['description'] + '"'
             print 'msgstr "' + getManualTranslation(manualData, word['voice']).encode('utf-8') + '"'
             print ""
