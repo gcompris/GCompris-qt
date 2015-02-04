@@ -43,7 +43,7 @@ Item {
 
     onWon: {
         wonState = true
-        particle.emitter.burst(30)
+        particle.burst(30)
         dropShadow.opacity = 0
         fadeout.restart();
     }
