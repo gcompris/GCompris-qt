@@ -50,7 +50,7 @@ Rectangle {
             { "text": "American English", "locale": "en_US.UTF-8" },
             { "text": "български", "locale": "bg_BG.UTF-8" },
             { "text": "Brezhoneg", "locale": "br_FR.UTF-8" },
-            { "text": "Català", "locale": "ca.UTF-8" },
+            { "text": "Català", "locale": "ca_ES.UTF-8" },
             { "text": "Česká", "locale": "cs_CZ.UTF-8" },
             { "text": "Dansk", "locale": "da_DK.UTF-8" },
             { "text": "Deutsch", "locale": "de_DE.UTF-8" },
@@ -76,7 +76,7 @@ Rectangle {
             { "text": "Svenska", "locale": "sv_FI.UTF-8" },
             { "text": "தமிழ்", "locale": "ta_IN.UTF-8" },
             { "text": "ไทย", "locale": "th_TH.UTF-8" },
-            { "text": "український", "locale": "uk.UTF-8" },
+            { "text": "український", "locale": "uk_UA.UTF-8" },
             { "text": "中文（简体）", "locale": "zh_CN.UTF-8" },
             { "text": "繁體中文", "locale": "zh_TW.UTF-8" }
         ]
