@@ -16,7 +16,7 @@ def loadManualFile(manual):
     
 def getManualTranslation(manualData, key):
     if not manualData:
-        return
+        return ""
     key = key.split("/")[-1]
     try:
         return manualData[key]
