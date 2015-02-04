@@ -139,13 +139,14 @@ public:
     static QString GCVersion() { return VERSION; }
     static QString QTVersion() { return qVersion(); }
 
+    Q_INVOKABLE QString getVoicesLocale(const QString &locale);
+
 protected slots:
 	void notifyPortraitMode();
 
 	QString getResourceDataPath();
     Q_INVOKABLE QString getAudioFilePath(const QString &file);
     Q_INVOKABLE QString getLocaleFilePath(const QString &file);
-    Q_INVOKABLE QString getLocaleShort(const QString &locale);
     Q_INVOKABLE QStringList getSystemExcludedFonts();
     Q_INVOKABLE QStringList getFontsFromRcc();
     Q_INVOKABLE void notifyFullscreenChanged();
