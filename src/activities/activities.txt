@@ -10,6 +10,7 @@ align4-2players
 alphabet-sequence
 ballcatch
 braille_alphabets
+braille_fun
 canal_lock
 clickanddraw
 clickgame
