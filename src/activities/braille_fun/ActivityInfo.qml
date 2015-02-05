@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "braille_fun/Braille_fun.qml"
+  name: "braille_fun/BrailleFun.qml"
   difficulty: 6
   icon: "braille_fun/braille_fun.svg"
   author: "Arkit Vora <arkitvora123@gmail.com>"
