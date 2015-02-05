@@ -78,7 +78,7 @@ function initLevel() {
     items.cardRepeater.model = currentLevel + 1 ;
 
     initQuestion()
-    items.animate_sad_tux.stop();
+    items.animateSadTux.stop();
 
     switch(currentLevel) {
     case 0:

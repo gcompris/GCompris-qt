@@ -62,7 +62,7 @@ ActivityBase {
             property alias cardRepeater: cardRepeater
             property alias animateX: animateX
             property alias animateY: animateY
-            property alias animate_sad_tux: animate_sad_tux
+            property alias animateSadTux: animateSadTux
         }
 
         onStart: { Activity.start(items) }
@@ -72,7 +72,7 @@ ActivityBase {
 
         Item {
 
-            id: plane_text
+            id: planeText
             width: parent.width * 0.25
             height: parent.height * 0.25
             x: parent.width / 3
@@ -80,18 +80,18 @@ ActivityBase {
 
             Image {
                 id: plane
-                anchors.centerIn: plane_text
-                scale: plane_text.width / 250
+                anchors.centerIn: planeText
+                scale: planeText.width / 250
                 anchors.top: parent.top
-                anchors.topMargin: plane_text.width / 10
+                anchors.topMargin: planeText.width / 10
                 source: Activity.url + "plane.svg"
             }
 
             GCText {
                 id: questionItem
-                anchors.right: plane_text.left
-                anchors.rightMargin: plane_text.width / 50
-                anchors.verticalCenter: plane_text.verticalCenter
+                anchors.right: planeText.left
+                anchors.rightMargin: planeText.width / 50
+                anchors.verticalCenter: planeText.verticalCenter
                 font.pixelSize: Math.max(parent.width * 0.2, 24)
                 font.weight: Font.DemiBold
                 color: "black"
@@ -113,13 +113,13 @@ ActivityBase {
 
             PropertyAnimation {
                 id: animateX
-                target: plane_text
+                target: planeText
                 properties: "x"
                 from: parent.width / 9
                 to: parent.width
                 duration: 11000
-                onRunningChanged: {if(plane_text.x == parent.width && animateX.running == false) {
-                        animate_sad_tux.start()
+                onRunningChanged: {if(planeText.x == parent.width && animateX.running == false) {
+                        animateSadTux.start()
                         for(var i=0 ; i < Activity.currentLevel+1 ; i++) {
                             cardRepeater.itemAt(i).ins.clickable = false
                         }
@@ -132,7 +132,7 @@ ActivityBase {
             id: planeQuestion
             x: parent.width / 6
             y: 0
-            font.pixelSize: Math.max(plane_text.width * 0.2, 24)
+            font.pixelSize: Math.max(planeText.width * 0.2, 24)
             font.weight: Font.DemiBold
             style: Text.Outline
             styleColor: "white"
@@ -238,7 +238,7 @@ ActivityBase {
                                     }
                                     if(answerString === Activity.getCurrentLetter()) {
                                         particles.emitter.burst(40)
-                                        sad_tux.opacity = 0
+                                        sadTux.opacity = 0
                                         planeQuestion.color = "blue"
                                         animateColor.start();
 
@@ -265,19 +265,20 @@ ActivityBase {
         }
 
         Image {
-            id: sad_tux
+            id: sadTux
             anchors.centerIn: parent
             scale: 0.5 * ApplicationInfo.ratio
             source: Activity.url + "tux_bad.svg"
             opacity: 0
-            PropertyAnimation {id: animate_sad_tux
-                target: sad_tux
+            PropertyAnimation {
+                id: animateSadTux
+                target: sadTux
                 properties: "opacity"
                 from: 0
                 to: 1
                 duration: 1500
-                onRunningChanged: if(animate_sad_tux.running == false) {
-                                      sad_tux.opacity = 0
+                onRunningChanged: if(animateSadTux.running == false) {
+                                      sadTux.opacity = 0
                                       for(var i=0 ; i < Activity.currentLevel+1 ; i++) {
                                           cardRepeater.itemAt(i).ins.clickable = true
                                       }
@@ -327,7 +328,7 @@ ActivityBase {
         }
 
         BarButton {
-            id: braille_map
+            id: brailleMap
             source: Activity.url + "target.svg"
             anchors {
                 right: score.left
