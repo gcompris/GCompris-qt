@@ -71,29 +71,28 @@ ActivityBase {
 
 
         Item {
-
             id: planeText
-            width: parent.width * 0.25
-            height: parent.height * 0.25
-            x: parent.width / 3
-
+            width: plane.width
+            height: plane.height
 
             Image {
                 id: plane
                 anchors.centerIn: planeText
-                scale: planeText.width / 250
                 anchors.top: parent.top
-                anchors.topMargin: planeText.width / 10
+                anchors.topMargin: 20 * ApplicationInfo.ratio
                 source: Activity.url + "plane.svg"
+                sourceSize.height: 90 * ApplicationInfo.ratio
             }
 
             GCText {
                 id: questionItem
-                anchors.right: planeText.left
-                anchors.rightMargin: planeText.width / 50
+                anchors.left: planeText.left
+                anchors.leftMargin: 10 *ApplicationInfo.ratio
                 anchors.verticalCenter: planeText.verticalCenter
-                font.pixelSize: Math.max(parent.width * 0.2, 24)
+                fontSize: hugeSize
                 font.weight: Font.DemiBold
+                style: Text.Outline
+                styleColor: "white"
                 color: "black"
 
                 function initQuestion() {
@@ -118,7 +117,8 @@ ActivityBase {
                 from: parent.width / 9
                 to: parent.width
                 duration: 11000
-                onRunningChanged: {if(planeText.x == parent.width && animateX.running == false) {
+                onRunningChanged: {
+                    if(planeText.x == parent.width && animateX.running == false) {
                         animateSadTux.start()
                         for(var i=0 ; i < Activity.currentLevel+1 ; i++) {
                             cardRepeater.itemAt(i).ins.clickable = false
@@ -132,7 +132,7 @@ ActivityBase {
             id: planeQuestion
             x: parent.width / 6
             y: 0
-            font.pixelSize: Math.max(planeText.width * 0.2, 24)
+            fontSize: hugeSize
             font.weight: Font.DemiBold
             style: Text.Outline
             styleColor: "white"
