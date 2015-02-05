@@ -103,7 +103,7 @@ Item {
         Repeater {
 
             id: circles
-            model: ["1", "2", "3", "4", "5", "6"]
+            model: 6
 
             Rectangle {
                 id: incircle1
