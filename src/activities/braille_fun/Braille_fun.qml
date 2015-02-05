@@ -181,32 +181,30 @@ ActivityBase {
             }
         }
 
-        Image {
+        Rectangle {
             id: charBg
-            y: 20 * ApplicationInfo.ratio
             anchors.right: parent.right
             anchors.verticalCenter: parent.verticalCenter
-            anchors.rightMargin: 40 * ApplicationInfo.ratio
-            source: Activity.url + "top_back.svg"
-            sourceSize.width: parent.width * 0.45
-            width:parent.width*0.45
-            visible: true
+            anchors.rightMargin: 20 * ApplicationInfo.ratio
+            width: charWidth * cardRepeater.model
+            height: charWidth * 1.2
+            color: "#80CCCCCC"
+            border.color: "#80666666"
 
+            property int charWidth: Math.min(120 * ApplicationInfo.ratio,
+                            parent.width * 0.3)
             Row {
                 id: row
                 spacing: 5 * ApplicationInfo.ratio
-                anchors.top: charBg.top
-                anchors.horizontalCenter: charBg.horizontalCenter
-                anchors.horizontalCenterOffset: 5
+                anchors.centerIn: parent
 
                 Repeater {
                     id: cardRepeater
-                    model: 3
 
                     Item {
                         id: inner
                         height: charBg.height * 0.9
-                        width: (charBg.width - 3 * row.spacing) / 3
+                        width: charBg.charWidth
                         property string brailleChar: ins.brailleChar
                         property alias ins: ins
 
@@ -217,7 +215,7 @@ ActivityBase {
 
                         Rectangle {
                             id: rect1
-                            width:  charBg.width / 5
+                            width:  charBg.charWidth * 0.6
                             height: ins.height
                             anchors.horizontalCenter: inner.horizontalCenter
                             border.width: 3
