@@ -52,14 +52,11 @@ function initQuestion() {
 
     items.animateX.restart();
     items.animateY.restart();
-
-
-
 }
 
 function nextQuestion() {
 
-    if(++currentQuestion == 26 ) {
+    if(++currentQuestion == set.length ) {
         while(questionArray.length > 0) {
             questionArray.pop();
         }
@@ -73,7 +70,7 @@ function nextQuestion() {
 function initLevel() {
     items.bar.level = currentLevel + 1
     currentQuestion = 0
-    items.score.numberOfSubLevels = 26;
+    items.score.numberOfSubLevels = set.length;
     items.score.currentSubLevel = "0";
     items.cardRepeater.model = currentLevel + 1 ;
 
@@ -82,18 +79,21 @@ function initLevel() {
 
     switch(currentLevel) {
     case 0:
-        for(var i = 0;  i < 26; i++) {
-            questionArray[i] = set[i] + " ";
+        for(var i = 0;  i < set.length; i++) {
+            questionArray[i] = set[i];
         }
         break
     case 1:
-        for(var i = 0;  i < 26; i++) {
-            questionArray[i] = set[Math.floor(Math.random() * 26)] +" "+ set[Math.floor(Math.random() * 26)] + " " ;
+        for(var i = 0;  i < set.length; i++) {
+            questionArray[i] = set[i] + " " +
+                    set[Math.floor(Math.random() * set.length)];
         }
         break
     case 2:
-        for(var i = 0;  i < 26; i++) {
-            questionArray[i] = set[Math.floor(Math.random() * 26)] +" "+ set[Math.floor(Math.random() * 26)] +" "+ set[Math.floor(Math.random() * 26)] + " ";
+        for(var i = 0;  i < set.length; i++) {
+            questionArray[i] = set[i] + " " +
+                    set[Math.floor(Math.random() * set.length)] + " " +
+                    set[Math.floor(Math.random() * set.length)];
         }
         break
     }
@@ -117,4 +117,3 @@ function previousLevel() {
 function getCurrentLetter() {
     return questionArray[currentQuestion];
 }
-

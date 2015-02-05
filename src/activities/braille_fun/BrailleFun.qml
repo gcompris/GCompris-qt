@@ -74,12 +74,13 @@ ActivityBase {
             id: planeText
             width: plane.width
             height: plane.height
+            anchors.top: parent.top
+            anchors.topMargin: 20 * ApplicationInfo.ratio
 
             Image {
                 id: plane
                 anchors.centerIn: planeText
                 anchors.top: parent.top
-                anchors.topMargin: 20 * ApplicationInfo.ratio
                 source: Activity.url + "plane.svg"
                 sourceSize.height: 90 * ApplicationInfo.ratio
             }
@@ -232,7 +233,8 @@ ActivityBase {
                                     inner.brailleChar = ins.brailleChar
                                     var answerString = "" ;
                                     for(var i = 0 ; i < Activity.currentLevel + 1 ; i++ ) {
-                                        answerString = answerString + cardRepeater.itemAt(i).brailleChar + " ";
+                                        if(i > 0) answerString += " "
+                                        answerString = answerString + cardRepeater.itemAt(i).brailleChar;
                                     }
                                     if(answerString === Activity.getCurrentLetter()) {
                                         particles.emitter.burst(40)
@@ -275,14 +277,15 @@ ActivityBase {
                 from: 0
                 to: 1
                 duration: 1500
-                onRunningChanged: if(animateSadTux.running == false) {
-                                      sadTux.opacity = 0
-                                      for(var i=0 ; i < Activity.currentLevel+1 ; i++) {
-                                          cardRepeater.itemAt(i).ins.clickable = true
-                                      }
-                                      animateX.restart()
-                                      animateY.restart()
-                                  }
+                onRunningChanged:
+                    if(animateSadTux.running == false) {
+                        sadTux.opacity = 0
+                        for(var i=0 ; i < Activity.currentLevel+1 ; i++) {
+                            cardRepeater.itemAt(i).ins.clickable = true
+                        }
+                        animateX.restart()
+                        animateY.restart()
+                    }
             }
         }
 
