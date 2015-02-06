@@ -29,7 +29,8 @@ var items
 var currentQuestion
 var currentSubLevel ;
 var maxSubLevel;
-var set = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+//var set = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+var set = ["A","B"];
 var questionArray = [];
 
 var url = "qrc:/gcompris/src/activities/braille_fun/resource/"
@@ -45,23 +46,15 @@ function stop() {
 }
 
 function initQuestion() {
-    // We just set the opacity to 0, the questionItem will then grab
-    // the new question by itself
-    items.questionItem.opacity = 0
-    items.planeQuestion.opacity = 0
-
-    items.animateX.restart();
-    items.animateY.restart();
+    items.question = questionArray[currentQuestion]
+    items.charBg.clickable(true)
+    items.animateX.restart()
 }
 
 function nextQuestion() {
 
     if(++currentQuestion == set.length ) {
-        while(questionArray.length > 0) {
-            questionArray.pop();
-        }
-
-        items.bonus.good("flower")
+        nextLevel()
     } else {
         initQuestion()
     }
@@ -72,10 +65,7 @@ function initLevel() {
     currentQuestion = 0
     items.score.numberOfSubLevels = set.length;
     items.score.currentSubLevel = "0";
-    items.cardRepeater.model = currentLevel + 1 ;
-
-    initQuestion()
-    items.animateSadTux.stop();
+    questionArray = []
 
     switch(currentLevel) {
     case 0:
@@ -85,18 +75,21 @@ function initLevel() {
         break
     case 1:
         for(var i = 0;  i < set.length; i++) {
-            questionArray[i] = set[i] + " " +
+            questionArray[i] = set[i] +
                     set[Math.floor(Math.random() * set.length)];
         }
         break
     case 2:
         for(var i = 0;  i < set.length; i++) {
-            questionArray[i] = set[i] + " " +
-                    set[Math.floor(Math.random() * set.length)] + " " +
+            questionArray[i] = set[i] +
+                    set[Math.floor(Math.random() * set.length)] +
                     set[Math.floor(Math.random() * set.length)];
         }
         break
     }
+
+    initQuestion()
+    items.cardRepeater.model = currentLevel + 1 ;
 }
 
 function nextLevel() {
@@ -111,9 +104,4 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
-}
-
-
-function getCurrentLetter() {
-    return questionArray[currentQuestion];
 }

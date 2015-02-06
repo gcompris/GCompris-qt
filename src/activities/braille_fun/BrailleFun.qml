@@ -57,23 +57,23 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias questionItem: questionItem
-            property alias planeQuestion: planeQuestion
             property alias score: score
             property alias cardRepeater: cardRepeater
             property alias animateX: animateX
-            property alias animateY: animateY
-            property alias animateSadTux: animateSadTux
+            property alias charBg: charBg
+            property string question
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-
+//        onWidthChanged: animateX.restart()
 
         Item {
             id: planeText
             width: plane.width
             height: plane.height
+            x: - width
             anchors.top: parent.top
             anchors.topMargin: 20 * ApplicationInfo.ratio
 
@@ -87,96 +87,30 @@ ActivityBase {
 
             GCText {
                 id: questionItem
-                anchors.left: planeText.left
-                anchors.leftMargin: 10 *ApplicationInfo.ratio
+                anchors.right: planeText.right
+                anchors.rightMargin: plane.width / 2
                 anchors.verticalCenter: planeText.verticalCenter
                 fontSize: hugeSize
                 font.weight: Font.DemiBold
                 style: Text.Outline
                 styleColor: "white"
                 color: "black"
-
-                function initQuestion() {
-                    text = Activity.getCurrentLetter()
-                    animateX.start()
-                    opacity = 1.0
-                }
-
-                onOpacityChanged: opacity == 0 ? initQuestion() : ""
-                Behavior on opacity { PropertyAnimation { duration: 5 } }
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: Activity.nextQuestion()
-                }
-
+                text: items.question
             }
 
             PropertyAnimation {
                 id: animateX
                 target: planeText
                 properties: "x"
-                from: parent.width / 9
-                to: parent.width
+                from: - planeText.width
+                to: background.width
                 duration: 11000
+                easing.type: Easing.OutInCirc
                 onRunningChanged: {
-                    if(planeText.x == parent.width && animateX.running == false) {
-                        animateSadTux.start()
-                        for(var i=0 ; i < Activity.currentLevel+1 ; i++) {
-                            cardRepeater.itemAt(i).ins.clickable = false
-                        }
-                    }
-                }
-            }
-        }
-
-        GCText {
-            id: planeQuestion
-            x: parent.width / 6
-            y: 0
-            fontSize: hugeSize
-            font.weight: Font.DemiBold
-            style: Text.Outline
-            styleColor: "white"
-            color: "black"
-
-            function initQuestion() {
-                text = questionItem.text
-                animateY.start()
-                opacity = 1.0
-            }
-
-            onOpacityChanged: opacity == 0 ? initQuestion() : ""
-            Behavior on opacity { PropertyAnimation { duration: 5 } }
-            MouseArea {
-                anchors.fill: parent
-                onClicked: Activity.nextQuestion()
-            }
-
-            PropertyAnimation {
-                id: animateY
-                target: planeQuestion
-                properties: "y"
-                from: parent.height / 6
-                to: parent.height
-                duration: 12000
-            }
-            PropertyAnimation {
-                id: animateColor
-                target: planeQuestion
-                properties: "color"
-                from: "blue"
-                to: "black"
-                duration: 1000
-                onRunningChanged: {
-                    if(animateColor.running == false) {
-                        score.currentSubLevel++;
-                        Activity.nextQuestion();
-                        for(var i=0 ; i < Activity.currentLevel+1 ; i++) {
-
-                            cardRepeater.itemAt(i).ins.brailleChar = ""
-                            cardRepeater.itemAt(i).clearDots();
-
-                        }
+                    // @FIXME, in some case we are stopped before the end
+                    if(planeText.x >= background.width / 2 && running == false) {
+                        bonus.bad("tux")
+                        charBg.clickable(false)
                     }
                 }
             }
@@ -184,16 +118,25 @@ ActivityBase {
 
         Rectangle {
             id: charBg
-            anchors.right: parent.right
-            anchors.verticalCenter: parent.verticalCenter
-            anchors.rightMargin: 20 * ApplicationInfo.ratio
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+                verticalCenter: parent.verticalCenter
+                rightMargin: 20 * ApplicationInfo.ratio
+            }
             width: charWidth * cardRepeater.model
-            height: charWidth * 1.2
-            color: "#80CCCCCC"
+            height: charWidth * 1.5
+            color: "#C0CCCCCC"
             border.color: "#80666666"
 
             property int charWidth: Math.min(120 * ApplicationInfo.ratio,
                             parent.width * 0.3)
+
+            function clickable(status) {
+                for(var i=0 ; i < cardRepeater.model ; i++) {
+                    cardRepeater.itemAt(i).ins.clickable = status
+                }
+            }
+
             Row {
                 id: row
                 spacing: 5 * ApplicationInfo.ratio
@@ -221,7 +164,7 @@ ActivityBase {
                             anchors.horizontalCenter: inner.horizontalCenter
                             border.width: 3
                             border.color: "black"
-                            color: "white"
+                            color: ins.found ? '#FFa3f9a3' : "#ffef6949"
 
                             BrailleChar {
                                 id: ins
@@ -233,25 +176,23 @@ ActivityBase {
                                     inner.brailleChar = ins.brailleChar
                                     var answerString = "" ;
                                     for(var i = 0 ; i < Activity.currentLevel + 1 ; i++ ) {
-                                        if(i > 0) answerString += " "
                                         answerString = answerString + cardRepeater.itemAt(i).brailleChar;
                                     }
-                                    if(answerString === Activity.getCurrentLetter()) {
-                                        particles.emitter.burst(40)
-                                        sadTux.opacity = 0
-                                        planeQuestion.color = "blue"
-                                        animateColor.start();
-
+                                    if(answerString === items.question) {
+                                        charBg.clickable(false)
+                                        bonus.good("tux")
                                     }
                                 }
+                                property string question: items.question[modelData]
+                                property bool found: question === brailleChar
                             }
                         }
 
-                        Text {
+                        GCText {
                             text: brailleChar
                             font.weight: Font.DemiBold
                             color: "black"
-                            font.pixelSize: Math.max(parent.width * 0.25 , 15)
+                            fontSize: hugeSize
                             anchors {
                                 top: rect1.bottom
                                 topMargin: 4 * ApplicationInfo.ratio
@@ -264,45 +205,16 @@ ActivityBase {
             }
         }
 
-        Image {
-            id: sadTux
-            anchors.centerIn: parent
-            scale: 0.5 * ApplicationInfo.ratio
-            source: Activity.url + "tux_bad.svg"
-            opacity: 0
-            PropertyAnimation {
-                id: animateSadTux
-                target: sadTux
-                properties: "opacity"
-                from: 0
-                to: 1
-                duration: 1500
-                onRunningChanged:
-                    if(animateSadTux.running == false) {
-                        sadTux.opacity = 0
-                        for(var i=0 ; i < Activity.currentLevel+1 ; i++) {
-                            cardRepeater.itemAt(i).ins.clickable = true
-                        }
-                        animateX.restart()
-                        animateY.restart()
-                    }
-            }
-        }
-
-
         Score {
             id: score
-            anchors.bottom: parent.bottom
+            // @FIXME We have no way to get the real bar width, that would make this
+            // calculation formal
+            anchors.bottom: parent.width - bar.width * 6 > width ? parent.bottom : bar.top
             anchors.bottomMargin: 10 * ApplicationInfo.ratio
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right
         }
 
-
-        ParticleSystemStar {
-            id: particles
-            clip: false
-        }
 
         DialogHelp {
             id: dialogHelp
@@ -311,9 +223,6 @@ ActivityBase {
 
         BrailleMap {
             id: dialogMap
-            // Make is non visible or we get some rendering artefacts before
-            // until it is created
-            visible: true
             onClose: home()
         }
 
@@ -333,7 +242,7 @@ ActivityBase {
             source: Activity.url + "target.svg"
             anchors {
                 right: score.left
-                bottom: parent.bottom
+                bottom: score.bottom
             }
             sourceSize.width: 66 * bar.barZoom
             visible: true
@@ -345,7 +254,10 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: {
+                win.connect(Activity.nextQuestion)
+                loose.connect(Activity.initQuestion)
+            }
         }
     }
 
