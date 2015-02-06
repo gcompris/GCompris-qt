@@ -41,6 +41,7 @@ imageid
 instruments
 leftright
 lightsoff
+louis-braille
 magic-hat-minus
 magic-hat-plus
 maze
