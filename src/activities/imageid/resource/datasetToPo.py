@@ -43,7 +43,7 @@ modtime_utc_string = modtime_utc.strftime('%Y-%m-%d %H:%M') + '+0000'
 # Header
 print 'msgid ""'
 print 'msgstr ""'
-print '"Project-Id-Version: GCompris"'
+print '"Project-Id-Version: gcompris_qt"'
 print '"POT-Creation-Date: ' + modtime_utc_string + '"'
 print '"MIME-Version: 1.0"'
 print '"Content-Type: text/plain; charset=UTF-8"'
