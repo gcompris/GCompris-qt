@@ -2,6 +2,8 @@
 
 import sys
 import json
+import os
+import datetime
 
 if(len(sys.argv) < 2):
     print "Usage: dataSetToPo.py dataset.json [content-fr.json]"
@@ -33,12 +35,16 @@ json_data = open(dataset)
 data = json.load(json_data)
 json_data.close()
 
+# Get last modification time of data set
+modtime = os.path.getmtime(dataset)
+modtime_utc = datetime.datetime.utcfromtimestamp(modtime)
+modtime_utc_string = modtime_utc.strftime('%Y-%m-%d %H:%M') + '+0000'
+
 # Header
 print 'msgid ""'
 print 'msgstr ""'
 print '"Project-Id-Version: GCompris"'
-print '"POT-Creation-Date: 2015-02-04 21:52+0100"'
-print '"Language-Team: "'
+print '"POT-Creation-Date: ' + modtime_utc_string + '"'
 print '"MIME-Version: 1.0"'
 print '"Content-Type: text/plain; charset=UTF-8"'
 print '"Content-Transfer-Encoding: 8bit"'
