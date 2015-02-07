@@ -29,58 +29,23 @@ import "."
 
 Image {
     id: chooser
-    source: Activity.url + (activity.modeRGB ? "flashlight.svgz" : "tube.svgz")
     z: 1
 
     property int maxSteps: 10
     property int currentStep: 0
-    property alias hue: color.hue
-
-    Image {
-        id: intensity
-        source: Activity.url + "flashlight2.svgz"
-        sourceSize.height: parent.sourceSize.height
-        z: 2
-        visible: activity.modeRGB ? true : false
-
-        Colorize {
-            anchors.fill: parent
-            source: parent
-            hue: chooser.hue
-            lightness: -(maxSteps - currentStep) / maxSteps
-            saturation: 1
-        }
-
-        Image {
-            source: Activity.url + "light.svgz"
-            sourceSize.height: parent.sourceSize.height / 2
-            anchors {
-                left: parent.right
-                leftMargin: -20 * ApplicationInfo.ratio
-                verticalCenter: parent.verticalCenter
-            }
-            opacity: currentStep / maxSteps
-
-            Colorize {
-                anchors.fill: parent
-                source: parent
-                hue: chooser.hue
-                lightness: -(maxSteps - currentStep) / maxSteps
-                saturation: 1
-            }
-        }
-    }
+    property double hue
 
     Image {
         id: intensityBrush
-        source: Activity.url + "brush.svgz"
+        source: Activity.url + (activity.modeRGB ? "light.svg" : "brush.svg")
         sourceSize.height: parent.sourceSize.height * 0.25 + currentStep / maxSteps * 15
         z: 2
         anchors {
             left: parent.right
+            leftMargin: activity.modeRGB ? -20 * ApplicationInfo.ratio : 0
             verticalCenter: parent.verticalCenter
         }
-        visible: activity.modeRGB ? false : currentStep > 0
+        visible: currentStep > 0
         fillMode: Image.PreserveAspectFit
 
         Colorize {
@@ -90,14 +55,6 @@ Image {
             lightness: 0
             saturation: 1
         }
-    }
-
-    Colorize {
-        id: color
-        anchors.fill: parent
-        source: parent
-        hue: 0.0
-        saturation: 1
     }
 
     ColorButton {
