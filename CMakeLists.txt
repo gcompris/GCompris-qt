@@ -73,7 +73,7 @@ else()
 endif()
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
-            Qml Quick Gui Multimedia Core Svg Xml XmlPatterns LinguistTools)
+            Qml Quick Gui Multimedia Core Svg Xml XmlPatterns LinguistTools Sensors)
 
 find_package (KF5 QUIET COMPONENTS
     DocTools
