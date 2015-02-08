@@ -37,6 +37,10 @@
 
 #include <QFontDatabase>
 #include <QDir>
+#ifdef Q_OS_ANDROID
+#   include <QtAndroidExtras/QAndroidJniObject>
+#   include <QtAndroid>
+#endif
 
 QQuickWindow *ApplicationInfo::m_window = NULL;
 ApplicationInfo *ApplicationInfo::m_instance = NULL;
@@ -96,6 +100,26 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 ApplicationInfo::~ApplicationInfo()
 {
     m_instance = NULL;
+}
+
+void ApplicationInfo::setRequestedOrientation(int orientation)
+{
+#ifdef Q_OS_ANDROID
+    QAndroidJniObject activity = QtAndroid::androidActivity();
+    activity.callMethod<void>("setRequestedOrientation", "(I)V", orientation);
+#endif
+}
+
+int ApplicationInfo::getRequestedOrientation()
+{
+#ifdef Q_OS_ANDROID
+    QAndroidJniObject activity = QtAndroid::androidActivity();
+    jint orientation = activity.callMethod<jint>("getRequestedOrientation");
+    qDebug() << "VVV orient=" << orientation << "platform="<< platform() << "mobile=" << isMobile();
+    qDebug() << "VVV orient=" << orientation << "platform="<< platform() << "mobile=" << isMobile();
+    return orientation;
+#endif
+    return -1;
 }
 
 void ApplicationInfo::setApplicationWidth(const int newWidth)

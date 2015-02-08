@@ -31,6 +31,7 @@
 #include <QtCore/QObject>
 #include <QtQml/QQmlPropertyMap>
 #include <QQmlEngine>
+#include <QtGlobal>
 
 class QQuickWindow;
 
@@ -304,6 +305,11 @@ protected slots:
 
     void notifyPortraitMode();
     Q_INVOKABLE void notifyFullscreenChanged();
+
+//#ifdef Q_OS_ANDROID
+    Q_INVOKABLE void setRequestedOrientation(int orientation);
+    Q_INVOKABLE int getRequestedOrientation();
+//#endif
 
 protected:
 	qreal getSizeWithRatio(const qreal height) { return ratio() * height; }
