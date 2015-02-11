@@ -168,8 +168,12 @@ function checkForVoices(parent)
     }
 }
 
+var aboutToQuit = false;
 function quit(parent)
 {
+    if (aboutToQuit)  // don't execute concurrently
+        return;
+    aboutToQuit = true;
     if (GCompris.DownloadManager.downloadIsRunning()) {
         var dialog = showDownloadDialog(parent, {
             text: qsTr("Download in progress")
@@ -188,8 +192,8 @@ function quit(parent)
                 '\n' +
                 qsTr("Do you really want to quit GCompris?"),
                 "YES", function() { Qt.quit(); },
-                "NO", null,
-                null );
+                "NO", function() { aboutToQuit = false; },
+                function() { aboutToQuit = false; } );
     } else
         Qt.quit();
 }
