@@ -44,7 +44,7 @@ var mode;
 
 function start(_items, _mode)
 {
-    Core.checkForVoices(_items.bar);
+    Core.checkForVoices(_items.main);
 
     items = _items;
     mode = _mode;
