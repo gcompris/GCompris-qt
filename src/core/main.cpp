@@ -161,7 +161,7 @@ int main(int argc, char *argv[])
 
 	QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
 	QObject::connect(&engine, SIGNAL(quit()), DownloadManager::getInstance(),
-	        SLOT(shutdown()));
+            SLOT(shutdown()));
 
     if(parser.isSet(exportActivitiesAsSQL)) {
         ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree*>(ActivityInfoTree::menuTreeProvider(&engine, NULL)));

@@ -219,7 +219,7 @@ Item {
         BarButton {
             source: "qrc:/gcompris/src/core/resource/bar_exit.svgz";
             sourceSize.width: 66 * barZoom
-            onClicked: Core.quit(bar);
+            onClicked: Core.quit(bar.parent.parent);
         }
     }
     Component {
@@ -308,7 +308,7 @@ Item {
                 anchors.fill: parent
                 hoverEnabled: true
                 onClicked: {
-                    var downloadDialog = Core.showDownloadDialog(bar, {});
+                    var downloadDialog = Core.showDownloadDialog(bar.parent, {});
                 }
             }
         }

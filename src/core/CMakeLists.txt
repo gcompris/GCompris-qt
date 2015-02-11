@@ -113,7 +113,6 @@ if(BUILD_STANDALONE)
     QtQuick/Window.2/${_lib_prefix}windowplugin
     QtQuick/Particles.2/${_lib_prefix}particlesplugin
     QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin
-    QtQuick/Dialogs/${_lib_prefix}dialogplugin
     QtQuick.2/${_lib_prefix}qtquick2plugin
     QtMultimedia/${_lib_prefix}declarative_multimedia)
 

@@ -30,7 +30,7 @@ ActivityBase {
 
     onHome: {
         if(pageView.depth === 1) {
-            Core.quit(menuActivity);
+            Core.quit(main);
         }
         else {
             pageView.pop();
@@ -412,6 +412,7 @@ ActivityBase {
 
     DialogConfig {
         id: dialogConfig
+        main: menuActivity.main
         onClose: {
             ActivityInfoTree.filterByTag(menuActivity.currentTag)
             ActivityInfoTree.filterLockedActivities()
