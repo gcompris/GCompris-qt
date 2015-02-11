@@ -35,6 +35,7 @@ Image {
     function select() {
         if(question === Activity.getCurrentTextQuestion()) {
             particles.burst(40)
+            animWin.start()
             Activity.nextQuestion()
         } else {
             if(audioSrc && item.playAudioOnError) {
@@ -67,6 +68,20 @@ Image {
               duration: 400 + Math.floor(Math.random() * 400)
               easing.type: Easing.InOutQuad }
     }
+
+    SequentialAnimation {
+          id: animWin
+          running: false
+          loops: 1
+          NumberAnimation {
+              target: item
+              property: "rotation"
+              from: 0; to: 360
+              duration: 600
+              easing.type: Easing.InOutQuad
+          }
+    }
+
     ParticleSystemStarLoader {
         id: particles
         clip: false
