@@ -21,7 +21,6 @@
 import QtQuick 2.2
 import QtQuick.Controls 1.1
 import QtQuick.Controls.Styles 1.1
-import QtQuick.Dialogs 1.2
 import GCompris 1.0
 import QtQuick.Layouts 1.1
 import "core.js" as Core
@@ -32,6 +31,7 @@ Rectangle {
     border.color: "black"
     border.width: 1
     z: 1000
+    property QtObject main
     property bool isDialog: true
     property string title
     property string content
@@ -581,21 +581,18 @@ Rectangle {
                     DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
             {
                 // ask for downloading new voices
-                var buttonHandler = new Array();
-                var dialog;
-                buttonHandler[StandardButton.No] = function() {};
-                buttonHandler[StandardButton.Yes] = function() {
-                    // yes -> start download
-                    if (DownloadManager.downloadResource(
-                            DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
-                        var downloadDialog = Core.showDownloadDialog(main, {});
-                };
-                dialog = Core.showMessageDialog(dialogConfig,
-                        qsTr("You selected a new locale"),
-                        qsTr("Do you want to download the corresponding sound files now?"),
-                        "",
-                        StandardIcon.Question,
-                        buttonHandler
+                console.log("main", main)
+                Core.showMessageDialog(main,
+                        qsTr("You selected a new locale") + '\n'
+                        + qsTr("Do you want to download the corresponding sound files now?"),
+                        "YES", function() {
+                            // yes -> start download
+                            if (DownloadManager.downloadResource(
+                                        DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
+                                var downloadDialog = Core.showDownloadDialog(main, {});
+                        },
+                        "NO", null,
+                        null
                 );
             } else // check for udpates or/and register new voices
                 DownloadManager.updateResource(

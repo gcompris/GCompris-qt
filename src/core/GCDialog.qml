@@ -32,7 +32,8 @@ Item {
     }
 
     property alias message: instructionTxt.text
-    property alias buttonText: button.text
+    property alias button1Text: button1.text
+    property alias button2Text: button2.text
 
     // start and stop trigs the animation
     signal start
@@ -41,17 +42,19 @@ Item {
     // emitted at stop animation end
     signal close
     // emitted when the optional button is hit
-    signal buttonHit
+    signal button1Hit
+    signal button2Hit
 
     onStart: opacity = 1
     onStop: opacity = 0
+    onClose: destroy()
 
     Behavior on opacity { NumberAnimation { duration: 200 } }
     onOpacityChanged: opacity === 0 ? close() : null
 
     Rectangle {
         anchors.fill: parent
-        opacity: 0.6
+        opacity: 0.8
         color: "grey"
     }
 
@@ -70,20 +73,12 @@ Item {
         }
         width: parent.width * 0.8
 
-        GCText {
-            id: instructionTxt
-            fontSize: mediumSize
-            color: "black"
-            horizontalAlignment: Text.AlignHCenter
-            width: parent.width
-            wrapMode: TextEdit.WordWrap
-            z: 2
-            onLinkActivated: Qt.openUrlExternally(link)
-        }
-
         Rectangle {
-            anchors.fill: instructionTxt
+            id: instructionTxtBg
+            anchors.top: instruction.top
             z: 1
+            width: parent.width
+            height: gcdialog.height - button1.height * 5
             opacity: 0.9
             radius: 10
             border.width: 2
@@ -93,22 +88,62 @@ Item {
                 GradientStop { position: 0.9; color: "#fff" }
                 GradientStop { position: 1.0; color: "#ddd" }
             }
+
+            Flickable {
+                id: flick
+                anchors.margins: 8
+                anchors.fill: parent
+                contentWidth: instructionTxt.contentWidth
+                contentHeight: instructionTxt.contentHeight
+                flickableDirection: Flickable.VerticalFlick
+                clip: true
+
+                GCText {
+                    id: instructionTxt
+                    fontSize: regularSize
+                    color: "black"
+                    // @FIXME This property breaks the wrapping
+//                    horizontalAlignment: Text.AlignHCenter
+                    width: instruction.width
+                    wrapMode: TextEdit.WordWrap
+                    z: 2
+                    onLinkActivated: Qt.openUrlExternally(link)
+                }
+            }
         }
 
         Button {
-            id: button
+            id: button1
             width: parent.width
             height: 60 * ApplicationInfo.ratio
             anchors {
                 horizontalCenter: parent.horizontalCenter
-                top: instructionTxt.bottom
+                top: instructionTxtBg.bottom
                 topMargin: 10
             }
             style: GCButtonStyle {
             }
             visible: text != ""
             onClicked: {
-                gcdialog.buttonHit()
+                gcdialog.button1Hit()
+                gcdialog.stop()
+            }
+        }
+
+        Button {
+            id: button2
+            width: parent.width
+            height: 60 * ApplicationInfo.ratio
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+                top: button1.bottom
+                topMargin: 10
+            }
+            style: GCButtonStyle {
+            }
+            visible: text != ""
+            onClicked: {
+                gcdialog.button2Hit()
                 gcdialog.stop()
             }
         }

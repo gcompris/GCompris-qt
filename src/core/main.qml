@@ -21,7 +21,6 @@
 import QtQuick 2.2
 import QtQuick.Controls 1.2
 import QtQuick.Window 2.1
-import QtQuick.Dialogs 1.1
 import QtQml 2.2
 
 import GCompris 1.0
@@ -97,28 +96,28 @@ Window {
                 + ", dpi=" + Math.round(Screen.pixelDensity*25.4) + ")");
         if (ApplicationSettings.exeCount == 1 && !ApplicationSettings.isKioskMode) {
             // first run
-            var buttonHandler = new Array();
             var dialog;
-            buttonHandler[StandardButton.Yes] = function() {
-                // yes -> start download
-                if (DownloadManager.downloadResource(
-                        DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
-                    var downloadDialog = Core.showDownloadDialog(main, {});
-            };
-            buttonHandler[StandardButton.No] = function() {};
-            dialog = Core.showMessageDialog(main, qsTr("Welcome to GCompris!"),
-                    qsTr("You are running GCompris for the first time."),
-                    qsTr("You should verify that your application settings especially your language is set correctly, and that all language specific sound files are installed. You can do this in the Preferences Dialog.") +
-                    "\n" +
-                    qsTr("Have Fun!") +
-                    "\n" +
-                    qsTr("Your current language is %1 (%2).")
-                        .arg(Qt.locale(ApplicationSettings.locale).nativeLanguageName)
-                        .arg(ApplicationSettings.locale) +
-                    "\n" +
-                    qsTr("Do you want to download the corresponding sound files now?"),
-                    StandardIcon.Information,
-                    buttonHandler
+            dialog = Core.showMessageDialog(
+                        main,
+                        qsTr("Welcome to GCompris!") + '\n'
+                        + qsTr("You are running GCompris for the first time.") + '\n'
+                        + qsTr("You should verify that your application settings especially your language is set correctly, and that all language specific sound files are installed. You can do this in the Preferences Dialog.")
+                        + "\n"
+                        + qsTr("Have Fun!")
+                        + "\n"
+                        + qsTr("Your current language is %1 (%2).")
+                          .arg(Qt.locale(ApplicationSettings.locale).nativeLanguageName)
+                          .arg(ApplicationSettings.locale)
+                        + "\n"
+                        + qsTr("Do you want to download the corresponding sound files now?"),
+                        "YES",
+                        function() {
+                            if (DownloadManager.downloadResource(
+                                        DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
+                                var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
+                        },
+                        "NO", null,
+                        function() { pageView.currentItem.focus = true }
             );
         }
     }

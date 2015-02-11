@@ -24,7 +24,6 @@
 import QtQuick 2.1
 import GCompris 1.0
 import QtGraphicalEffects 1.0
-import QtQuick.Dialogs 1.1
 
 import "../../core"
 import "imageid.js" as Activity
@@ -319,9 +318,9 @@ ActivityBase {
             id: downloadWordsDialog
             sourceComponent: GCDialog {
                 message: qsTr("The images for this activity are not yet installed.")
-                buttonText: qsTr("Download the images")
+                button1Text: qsTr("Download the images")
                 onClose: background.downloadWordsNeeded = false
-                onButtonHit: {
+                onButton1Hit: {
                     DownloadManager.resourceRegistered.connect(handleResourceRegistered);
                     DownloadManager.downloadResource(wordsResource)
                     var downloadDialog = Core.showDownloadDialog(activity, {});

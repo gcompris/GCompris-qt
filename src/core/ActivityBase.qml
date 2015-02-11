@@ -50,7 +50,7 @@ Item {
         if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_Q) {
             // Ctrl+Q exit the application
-            Core.quit(page);
+            Core.quit(main);
         } else if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_B) {
             // Ctrl+B toggle the bar
