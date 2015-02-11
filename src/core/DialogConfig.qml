@@ -581,7 +581,6 @@ Rectangle {
                     DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
             {
                 // ask for downloading new voices
-                console.log("main", main)
                 Core.showMessageDialog(main,
                         qsTr("You selected a new locale") + '\n'
                         + qsTr("Do you want to download the corresponding sound files now?"),
