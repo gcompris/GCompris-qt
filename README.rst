@@ -31,10 +31,10 @@ About You
  
 You can help by:
 
-#. Creating new activities.
-#. Providing fancy graphics to incorporate as icons or backgrounds.
-#. Translating GCompris.
-#. Just giving your ideas.
+* Creating new activities.
+* Providing fancy graphics to incorporate as icons or backgrounds.
+* Translating GCompris.
+* Just giving your ideas.
 
 Get more information on our `developer's wiki <http://gcompris.net/wiki/Developer%27s_corner>`_.
 
