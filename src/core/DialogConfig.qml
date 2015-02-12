@@ -125,7 +125,8 @@ Rectangle {
                     anchors.fill: parent
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
-                    contentHeight: contentItem.childrenRect.height
+                    // On mobile we miss some room at the bottom, arbitrary add some
+                    contentHeight: contentItem.childrenRect.height + 40 * ApplicationInfo.ratio
 
                     Column {
                         spacing: 10
@@ -253,8 +254,9 @@ Rectangle {
                             }
                         }
 
-                        Row {
+                        Flow {
                             spacing: 5
+                            width: parent.width
                             ComboBox {
                                 id: fontBox
                                 style: GCComboBoxStyle {}
@@ -267,11 +269,11 @@ Rectangle {
                                 wrapMode: Text.WordWrap
                             }
                         }
-                        Row {
+                        Flow {
                             spacing: 5
+                            width: parent.width
                             Slider {
                                 id: baseFontSizeSlider
-                                anchors.verticalCenter: parent.verticalCenter
                                 width: 250 * ApplicationInfo.ratio
                                 style: GCSliderStyle {}
                                 maximumValue: ApplicationSettings.baseFontSizeMax
@@ -284,26 +286,25 @@ Rectangle {
                             }
                             GCText {
                                 id: baseFontSizeText
-                                anchors.verticalCenter: parent.verticalCenter
                                 text: qsTr("Font size")
                                 fontSize: mediumSize
                                 wrapMode: Text.WordWrap
                             }
                             Button {
-                                height: parent.height
-                                anchors.verticalCenter: parent.verticalCenter
+                                height: 30 * ApplicationInfo.ratio
                                 text: qsTr("Default");
                                 style: GCButtonStyle {}
                                 onClicked: baseFontSizeSlider.value = 0.0
                             }
                         }
-                        Row {
+                        Flow {
                             spacing: 5
+                            width: parent.width
                             ComboBox {
                                 id: languageBox
                                 style: GCComboBoxStyle {}
                                 model: dialogConfig.languages
-                                width: 250 * ApplicationInfo.ratio
+                                width: 300 * ApplicationInfo.ratio
 
                                 onCurrentIndexChanged: voicesRow.localeChanged();
                             }
@@ -314,9 +315,8 @@ Rectangle {
                             }
                         }
 
-                        Row {
+                        Flow {
                             id: voicesRow
-                            height: enableAudioVoicesBox.height
                             width: parent.width
                             spacing: 5 * ApplicationInfo.ratio
 
@@ -336,21 +336,13 @@ Rectangle {
                                 onDownloadFinished: voicesRow.localeChanged()
                             }
 
-                            Item {
-                                id: rowSpacer
-                                width: 20 * ApplicationInfo.ratio
-                                height: parent.height
-                            }
-
                             GCText {
                                 id: voicesText
-                                anchors.verticalCenter: parent.verticalCenter
                                 text: qsTr("Sounds")
                             }
 
                             Image {
                                 id: voicesImage
-                                anchors.verticalCenter: parent.verticalCenter
                                 sourceSize.height: 30 * ApplicationInfo.ratio
                                 source: voicesRow.haveLocalResource ? "qrc:/gcompris/src/core/resource/apply.svgz" :
                                     "qrc:/gcompris/src/core/resource/cancel.svgz"
@@ -358,8 +350,7 @@ Rectangle {
 
                             Button {
                                 id: voicesButton
-                                height: parent.height
-                                anchors.verticalCenter: parent.verticalCenter
+                                height: 30 * ApplicationInfo.ratio
                                 text: voicesRow.haveLocalResource ? qsTr("Check for updates") :
                                     qsTr("Download")
                                 style: GCButtonStyle {}
@@ -374,13 +365,12 @@ Rectangle {
                             }
                         }
 
-                        Row {
+                        Flow {
                             width: parent.width
                             spacing: 5 * ApplicationInfo.ratio
 
                             GCText {
                                 text: qsTr("Difficulty filter:")
-                                verticalAlignment: Text.AlignVCenter
                                 fontSize: mediumSize
                                 height: 50 * ApplicationInfo.ratio
                             }
@@ -393,8 +383,7 @@ Rectangle {
 
                             Image {
                                 source: "qrc:/gcompris/src/core/resource/bar_next.svgz"
-                                anchors.verticalCenter: parent.verticalCenter
-                                sourceSize.height: Math.min(50 * ApplicationInfo.ratio, parent.width / 15)
+                                sourceSize.height: Math.min(50 * ApplicationInfo.ratio, parent.width / 8)
 
                                 MouseArea {
                                     anchors.fill: parent
@@ -447,8 +436,7 @@ Rectangle {
                                 Image {
                                     source: "qrc:/gcompris/src/core/resource/difficulty" +
                                             (modelData + 1) + ".svgz";
-                                    anchors.verticalCenter: parent.verticalCenter
-                                    sourceSize.width: Math.min(50 * ApplicationInfo.ratio, parent.width / 15)
+                                    sourceSize.width: Math.min(50 * ApplicationInfo.ratio, parent.width / 8)
                                     opacity: modelData + 1 >= filterRepeater.min &&
                                              modelData + 1 <= filterRepeater.max
                                              ? 1 : 0.4
@@ -482,8 +470,7 @@ Rectangle {
 
                             Image {
                                 source: "qrc:/gcompris/src/core/resource/bar_previous.svgz"
-                                sourceSize.height: Math.min(50 * ApplicationInfo.ratio, parent.width / 15)
-                                anchors.verticalCenter: parent.verticalCenter
+                                sourceSize.height: Math.min(50 * ApplicationInfo.ratio, parent.width / 8)
 
                                 MouseArea {
                                     anchors.fill: parent
