@@ -99,7 +99,7 @@ function initLevel() {
         // If "sublevels" length is not set in wordlist, use the words length
         maxSubLevel = level.words.length
     }
-    items.score.numberOfSubLevels = maxSubLevel;
+    items.score.numberOfSubLevels = maxSubLevel + 1;
     setSpeed();
     /*console.log("Gletters: initializing level " + (currentLevel + 1)
                 + " maxSubLvl=" + maxSubLevel
