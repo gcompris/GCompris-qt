@@ -33,7 +33,6 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    property var dataset: Dataset
 
     pageComponent: Rectangle {
         id: background
@@ -59,9 +58,10 @@ ActivityBase {
             property alias year: year
             property alias info: info
             property alias containerModel: containerModel
+            property var dataset: Dataset.dataset
         }
 
-        onStart: { Activity.start(items,dataset) }
+        onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
         ListModel {
@@ -143,6 +143,8 @@ ActivityBase {
                 onExited: previous.scale = 1
                 onClicked:{
                     items.count--
+                    if(items.count < 0)
+                        items.count = items.dataset.length - 1
                     Activity.imgSelect(items.count)
                 }
             }
@@ -173,15 +175,15 @@ ActivityBase {
                 onExited: next.scale = 1
                 onClicked:{
                     items.count++
-                    if(items.count == 11){
-                        var dataitems = dataset.get()
+                    if(items.count == items.dataset.length) {
+                        var dataitems = items.dataset
                         dataitems = Core.shuffle(dataitems)
                         for(var i = 0 ; i < dataitems.length ; i++) {
                             containerModel.append(dataitems[i]);
                         }
                         list.visible = true
-                    }
-                    else {
+                    } else {
+                        console.log(items.count)
                         Activity.imgSelect(items.count)
                     }
                 }

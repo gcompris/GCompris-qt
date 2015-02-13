@@ -18,10 +18,8 @@
 
 var baseUrl = "qrc:/gcompris/src/activities/louis-braille/resource/"
 
-function get() {
-    return [
-
-             {
+var dataset = [
+            {
                  "text": qsTr("Born on January 4th in Coupvary near Paris in France."),
                  "year": "1809",
                  "number": "1",
@@ -87,6 +85,4 @@ function get() {
                  "number": "11",
                  "img": baseUrl + "braille_ball.jpg"
              }
-
         ];
-} 
