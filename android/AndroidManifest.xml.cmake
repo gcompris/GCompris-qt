@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<manifest android:versionName="@GCOMPRIS_VERSION@" package="net.gcompris" android:installLocation="auto" xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="@GCOMPRIS_VERSION_CODE@">
+<manifest android:versionName="@GCOMPRIS_VERSION@" package="@ANDROID_PACKAGE@" android:installLocation="auto" xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="@GCOMPRIS_VERSION_CODE@">
 	<application android:label="GCompris" android:name="org.qtproject.qt5.android.bindings.QtApplication" android:icon="@drawable/icon">
 		<activity android:label="@string/app_name" android:name="net.gcompris.GComprisActivity" android:screenOrientation="unspecified" android:configChanges="orientation|uiMode|screenLayout|screenSize|smallestScreenSize|locale|fontScale|keyboard|keyboardHidden|navigation">
 			<intent-filter>
@@ -35,5 +35,5 @@
 	<uses-sdk android:minSdkVersion="9" android:targetSdkVersion="19"/>
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-	<uses-permission android:name="com.android.vending.BILLING"/>
+	@ANDROID_BILLING_PERMISSION@
 </manifest>
