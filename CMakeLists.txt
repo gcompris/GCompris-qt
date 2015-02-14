@@ -65,6 +65,7 @@ find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
 #endforeach()
 
 option(WITH_ACTIVATION_CODE "Include the activation system" OFF)
+option(WITH_DEMO_ONLY "Include only demo activities" OFF)
 
 # Set output directory
 if(CMAKE_HOST_APPLE)
