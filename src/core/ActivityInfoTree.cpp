@@ -220,7 +220,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	menuTree->setRootMenu(qobject_cast<ActivityInfo*>(objectRoot));
 
 
-    QFile file(":/gcompris/src/activities/activities.txt");
+    QFile file(":/gcompris/src/activities/activities_out.txt");
 	if(!file.open(QFile::ReadOnly)) {
 		qDebug() << "Failed to load the activity list";
 	}

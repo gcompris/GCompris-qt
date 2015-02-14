@@ -4,3 +4,5 @@ GCompris.pro.user
 *.qrc
 build/*
 *.DS_Store
+src/activities/activities_out.txt
+po
