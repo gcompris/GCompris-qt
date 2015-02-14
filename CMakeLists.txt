@@ -18,7 +18,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${my_cxx_flags}")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${my_cxx_flags}")
 
 set(GCOMPRIS_MAJOR_VERSION 0)
-set(GCOMPRIS_MINOR_VERSION 27)
+set(GCOMPRIS_MINOR_VERSION 30)
 set(GCOMPRIS_PATCH_VERSION 0)
 
 set(GCOMPRIS_VERSION ${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION})
@@ -64,6 +64,8 @@ find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
 #    message("${_variableName}=${${_variableName}}")
 #endforeach()
 
+option(WITH_ACTIVATION_CODE "Include the activation system" OFF)
+
 # Set output directory
 if(CMAKE_HOST_APPLE)
   set(_bundle_bin gcompris-qt.app/Contents/MacOS)
@@ -78,6 +80,12 @@ if(ANDROID)
   set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android/libs/${ARM_TARGET}/)
   set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir} CACHE INTERNAL "" FORCE)
   set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir} CACHE INTERNAL "" FORCE)
+  if(WITH_ACTIVATION_CODE)
+    set(ANDROID_BILLING_PERMISSION '<uses-permission android:name="com.android.vending.BILLING"/>')
+    set(ANDROID_PACKAGE "net.gcompris")
+  else(WITH_ACTIVATION_CODE)
+    set(ANDROID_PACKAGE "net.gcompris.full")
+  endif()
   add_subdirectory(android)
 else(ANDROID)
   # Desktop build
@@ -161,7 +169,6 @@ else()
   option(BUILD_STANDALONE "Build a standalone package when typing 'make package'" ON)
 endif()
 
-option(WITH_ACTIVATION_CODE "Include the activation system" OFF)
 option(WITH_KIOSK_MODE "Set the kiosk mode by default" OFF)
 
 add_subdirectory(src)
