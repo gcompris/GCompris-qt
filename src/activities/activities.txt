@@ -36,6 +36,7 @@ gnumch-primes
 guessnumber
 hexagon
 instruments
+intro_gravity
 leftright
 lightsoff
 magic-hat-minus
