@@ -105,6 +105,7 @@ function previousLevel() {
 
 // functions to handle asteroids
 var asteroidCounter = 1
+
 function createAsteroid() {
 
     // to take a random asteroid from all
@@ -113,9 +114,10 @@ function createAsteroid() {
     var asteroid = asteroidComponent.createObject(
                 items.background, {
                     "background": items.background,
-                    "x": items.background.width,
+                    "x": (Math.random()*100)/items.background.width,
                     "source" : ImageUrl
                 });
+    console.log(asteroid);
 
     asteroids.push(asteroid);
 }
