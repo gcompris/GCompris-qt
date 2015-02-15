@@ -13,7 +13,8 @@ Image {
     fillMode: Image.PreserveAspectFit
 
     sourceSize.height: 60 * ApplicationInfo.ratio
-
+    x: 0
+    y: 0
     z: 5
 
     signal done
