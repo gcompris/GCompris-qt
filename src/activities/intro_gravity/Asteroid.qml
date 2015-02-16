@@ -17,6 +17,7 @@ Image {
     y: 0
     z: 5
 
+
     signal done
 
     Component.onCompleted: {

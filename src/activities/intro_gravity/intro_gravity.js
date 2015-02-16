@@ -45,19 +45,26 @@ var collision
 var right_force_intensity
 var left_force_intensity
 var url = "qrc:/gcompris/src/activities/intro_gravity/resource/"
-var dataset
 
 //array of created asteroids
-var asteroidComponent = Qt.createComponent("qrc:/gcompris/src/activities/intro_gravity/Asteroid.qml");
 var asteroids = new Array;
 var asteroidsErased = new Array;
 
-function start(items_,dataset_) {
+var activity
+var background
+var bar
+var bonus
+
+function start(items_,activity_, background_, bar_, bonus_) {
     items = items_
-    dataset = dataset_
+    activity = activity_
+    background = background_
+    bar = bar_
+    bonus = bonus_
     currentLevel = 0
     initLevel()
 }
+
 
 function stop() {
     destroyAsteroids(asteroids)
@@ -85,7 +92,10 @@ function initLevel() {
     items.timer.start()
     items.asteroidCreation.start()
 
-    createAsteroid()
+    for(var i =0 ;i < 5 ; ++i){
+        asteroids[i] = createAsteroid(i)
+    }
+
 }
 
 function nextLevel() {
@@ -108,18 +118,29 @@ var asteroidCounter = 1
 
 function createAsteroid() {
 
-    // to take a random asteroid from all
-    currentImageId = Math.floor( (Math.random()*100) %5 )
-    var ImageUrl = url + "asteroid" +currentImageId+ ".jpg"
+    var asteroidComponent = Qt.createComponent("qrc:/gcompris/src/activities/intro_gravity/Asteroid.qml");
+    currentImageId = Math.floor( Math.random()*5  )
+    console.log(currentImageId)
+    var ImageUrl = url+"asteroid"+currentImageId+".jpg"
     var asteroid = asteroidComponent.createObject(
-                items.background, {
-                    "background": items.background,
-                    "x": (Math.random()*100)/items.background.width,
-                    "source" : ImageUrl
+                items.background,
+                {
+                    "activity": activity,
+                    "background": background,
+                    "bar": bar,
+                    "source" : ImageUrl,
+                    "x": Math.random() * items.background.width,
+                    "y": 0,
                 });
     console.log(asteroid);
 
-    asteroids.push(asteroid);
+    if(asteroid== null){
+        console.log("error creating asteroid object")
+    }
+    else{
+        console.log("successfully created asteroid")
+    }
+        asteroids.push(asteroid);
 }
 
 function destroyAsteroids(asteroids) {
@@ -179,7 +200,7 @@ function moveShuttle(){
 
 function moveAsteroid(){
         if(asteroids !== undefined){
-         for(var i = asteroids.length ; i>0 ; --i){
+         for(var i = asteroids.length -1 ; i>0 ; --i){
              var asteroid = asteroids[i];
              var x = asteroid.x
              var y = asteroid.y
