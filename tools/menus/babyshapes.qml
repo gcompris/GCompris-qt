@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "babyshapes/Babyshapes.qml"
   difficulty: 1
-  icon: "babyshapes/babyshapes.svgz"
+  icon: "babyshapes/babyshapes.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net> / Andre Connes <andre.connes@toulouse.iufm.fr>"
   demo: false
   title: qsTr("Complete the puzzle")

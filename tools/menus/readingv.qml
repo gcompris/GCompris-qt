@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "readingv/Readingv.qml"
   difficulty: 2
-  icon: "readingv/reading.svgz"
+  icon: "readingv/reading.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Vertical-reading practice")

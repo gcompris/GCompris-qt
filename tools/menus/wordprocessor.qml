@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "wordprocessor/Wordprocessor.qml"
   difficulty: 2
-  icon: "wordprocessor/wordprocessor.svgz"
+  icon: "wordprocessor/wordprocessor.svg"
   author: "Bruno coudoin"
   demo: false
   title: qsTr("Your word processor")

@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "details/Details.qml"
   difficulty: 2
-  icon: "details/details.svgz"
+  icon: "details/details.svg"
   author: "Marc Levivier <malev@free.fr>"
   demo: true
   title: qsTr("Find the details")

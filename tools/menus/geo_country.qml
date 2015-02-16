@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "geo_country/GeoCountry.qml"
   difficulty: 2
-  icon: "geo_country/france_region.svgz"
+  icon: "geo_country/france_region.svg"
   author: "Jean-Philippe Ayanides <jp.ayanides@free.fr>"
   demo: true
   title: qsTr("Locate the region")

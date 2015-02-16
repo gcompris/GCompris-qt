@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "braille_lotto/BrailleLotto.qml"
   difficulty: 6
-  icon: "braille_lotto/braille_lotto.svgz"
+  icon: "braille_lotto/braille_lotto.svg"
   author: "Srishti Sethi <srishakatux@gmail.com>"
   demo: true
   title: qsTr("Braille Lotto")

@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "explore_world_music/ExploreWorldMusic.qml"
   difficulty: 4
-  icon: "explore_world_music/explore_world_music.svgz"
+  icon: "explore_world_music/explore_world_music.svg"
   author: "Beth Hadley <bethmhadley@gmail.com>"
   demo: true
   title: qsTr("Explore World Music")

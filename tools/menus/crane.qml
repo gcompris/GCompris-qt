@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "crane/Crane.qml"
   difficulty: 2
-  icon: "crane/crane.svgz"
+  icon: "crane/crane.svg"
   author: "Marc BRUN"
   demo: true
   title: qsTr("Build the same model")

@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "play_rhythm/PlayRhythm.qml"
   difficulty: 3
-  icon: "play_rhythm/play_rhythm.svgz"
+  icon: "play_rhythm/play_rhythm.svg"
   author: "Beth Hadley <bethmhadley@gmail.com>"
   demo: true
   title: qsTr("Play Rhythm")

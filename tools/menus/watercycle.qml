@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "watercycle/Watercycle.qml"
   difficulty: 3
-  icon: "watercycle/watercycle.svgz"
+  icon: "watercycle/watercycle.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Learn about the water cycle")

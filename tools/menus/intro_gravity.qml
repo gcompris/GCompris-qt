@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "intro_gravity/IntroGravity.qml"
   difficulty: 4
-  icon: "intro_gravity/intro_gravity.svgz"
+  icon: "intro_gravity/intro_gravity.svg"
   author: "Matilda Bernard <seah4291@gmail.com>"
   demo: true
   title: qsTr("Intro gravity")

@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "railroad/Railroad.qml"
   difficulty: 1
-  icon: "railroad/railroad.svgz"
+  icon: "railroad/railroad.svg"
   author: "Pascal Georges <pascal.georges1@free.fr>"
   demo: true
   title: qsTr("Railway")

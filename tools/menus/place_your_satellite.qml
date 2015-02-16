@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "place_your_satellite/PlaceYourSatellite.qml"
   difficulty: 4
-  icon: "place_your_satellite/place_your_satellite.svgz"
+  icon: "place_your_satellite/place_your_satellite.svg"
   author: "Matilda Bernard <seah4291@gmail.com>"
   demo: true
   title: qsTr("Place your satellite")

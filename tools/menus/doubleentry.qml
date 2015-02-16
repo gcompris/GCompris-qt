@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "doubleentry/Doubleentry.qml"
   difficulty: 2
-  icon: "doubleentry/doubleentry.svgz"
+  icon: "doubleentry/doubleentry.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Double-entry table")

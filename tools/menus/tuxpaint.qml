@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "tuxpaint/Tuxpaint.qml"
   difficulty: 1
-  icon: "tuxpaint/tuxpaint.svgz"
+  icon: "tuxpaint/tuxpaint.svg"
   author: "Bill Kendrick <Tuxpaint>"
   demo: true
   title: qsTr("Tuxpaint")

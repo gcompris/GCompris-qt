@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "draw/Draw.qml"
   difficulty: 2
-  icon: "draw/draw.svgz"
+  icon: "draw/draw.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("A simple vector-drawing tool")

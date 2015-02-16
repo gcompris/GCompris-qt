@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "hydroelectric/Hydroelectric.qml"
   difficulty: 4
-  icon: "hydroelectric/hydroelectric.svgz"
+  icon: "hydroelectric/hydroelectric.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Learn about an electrical system based on renewable energy")

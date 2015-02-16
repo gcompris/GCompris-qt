@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "chat/Chat.qml"
   difficulty: 3
-  icon: "chat/chat.svgz"
+  icon: "chat/chat.svg"
   author: "Bruno coudoin <bruno.coudoin@gcompris.net>"
   demo: false
   title: qsTr("Chat and draw with your friends")

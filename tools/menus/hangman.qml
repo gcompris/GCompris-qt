@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "hangman/Hangman.qml"
   difficulty: 5
-  icon: "hangman/hangman.svgz"
+  icon: "hangman/hangman.svg"
   author: "Bruno Coudoin"
   demo: false
   title: qsTr("The classic hangman game")

@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "explore_farm_animals/ExploreFarmAnimals.qml"
   difficulty: 2
-  icon: "explore_farm_animals/explore_farm_animals.svgz"
+  icon: "explore_farm_animals/explore_farm_animals.svg"
   author: "Beth Hadley <bethmhadley@gmail.com>"
   demo: true
   title: qsTr("Explore Farm Animals")

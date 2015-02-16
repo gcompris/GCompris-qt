@@ -3,7 +3,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "maze3D/Maze3D.qml"
   difficulty: 2
-  icon: "maze3D/maze3D.svgz"
+  icon: "maze3D/maze3D.svg"
   author: "Christof Petig <christof@petig-baender.de>"
   demo: true
   title: qsTr("3D Maze")
