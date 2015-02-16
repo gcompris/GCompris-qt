@@ -21,8 +21,8 @@ Image {
     signal done
 
     Component.onCompleted: {
-        x= -asteroid.width - 1
-        y= -asteroid.height - 1
+        x =  Math.floor(Math.random() * items.background.width)
+        y =  0
     }
 
     onDone: {
