@@ -8,26 +8,40 @@ Image {
     id: asteroid
 
     property Item background
+    property Item items
 //    property real velocityAsteroid
 
     fillMode: Image.PreserveAspectFit
 
     sourceSize.height: 60 * ApplicationInfo.ratio
     x: 0
-    y: 0
+    y: 5
     z: 5
 
 
     signal done
 
     Component.onCompleted: {
-        x =  Math.floor(Math.random() * items.background.width)
-        y =  0
+        x =  Math.floor(Math.random() * background.width )
+        y =  5
     }
 
     onDone: {
         Activity.crash()
     }
 
-    Behavior on y { PropertyAnimation{ duration: 1000 } }
+    function startMoving(dur){
+        down.duration = dur
+        down.restart()
+    }
+
+
+    NumberAnimation {
+        id: down
+        target: asteroid
+        property: "y"
+        to: parent.height
+        duration: 10000
+
+    }
 }
