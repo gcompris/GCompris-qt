@@ -20,7 +20,7 @@ var baseUrl = "qrc:/gcompris/src/activities/louis-braille/resource/"
 
 var dataset = [
             {
-                 "text": qsTr("Born on January 4th in Coupvary near Paris in France."),
+                 "text": qsTr("Born on January 4th 1809 in Coupvary near Paris in France."),
                  "year": "1809",
                  "number": "1",
                  "img": baseUrl + "louis.png"

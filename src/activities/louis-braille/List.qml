@@ -31,29 +31,31 @@ Rectangle {
     id: wholeBody
     width: parent.width
     height: parent.height
-    color: "#ABCDEF"
+    color: "#ff55afad"
 
-    property color goodColor: colorMode ?  "#398414" : "#FFF"
-    property color badColor: colorMode ?  "#E13B3B" : "#FFF"
+    property color goodColor: colorMode ?  "#ffc1ffb4" : "#FFF"
+    property color badColor: colorMode ?  "#ffff9a82" : "#FFF"
     property bool colorMode: false
+    property Item bonus
 
     Component {
         id: listElement
 
         Rectangle {
             id: listRect
-            border.color: "black"
-            color: (colorMode && number == index + 1) ? goodColor : badColor
-            border.width: list.currentIndex == index ? 3 : 1
-            radius: 5
+            color: placed ? goodColor : badColor
+            border.width: list.currentIndex == index ? 5 : 1
+            border.color: "#ff525c5c"
+            radius: 3
             width: list.width
-            height: textinfo.height * 1.3
+            height: Math.max(textinfo.height * 1.3, 50 * ApplicationInfo.ratio)
 
             property int index: model.index
+            property bool placed: number == index + 1
 
             Text {
                 id: textinfo
-                text: model.text + " " + index
+                text: model.text
                 anchors.centerIn: parent
                 horizontalAlignment: Text.AlignHCenter
                 width: parent.width * 0.94
@@ -66,27 +68,16 @@ Rectangle {
                 anchors.fill: parent
                 property bool held: false
                 drag.axis: Drag.YAxis
-                onPressed: list.currentIndex = index
-                onPressAndHold: {
-                    listRect.z = 2
-                    dragArea.drag.target = listRect
-                    list.interactive = false
-                    held = true
-                    drag.maximumY = list.contentItem.height
-                    drag.minimumY = -10
-                }
-                onPositionChanged: {
-                    var underItem = list.contentItem.childAt(listRect.x + 1, listRect.y - 1)
-                    if(underItem) {
-                        console.log("move", underItem, underItem.index, listRect.index)
-//                        containerModel.move(underItem.index, listRect.index, 1)
+                onPressed: {
+                    if(list.currentIndex == index) {
+                        list.currentIndex = -1
+                    } else if(list.currentIndex == -1) {
+                        list.currentIndex = index
+                    } else {
+                        containerModel.move(list.currentIndex, index, 1)
+                        containerModel.move(index, list.currentIndex, 1)
+                        list.currentIndex = -1
                     }
-                }
-                onReleased: {
-                    listRect.z = 1
-                    list.interactive = true
-                    dragArea.drag.target = null
-                    held = false
                 }
             }
         }
@@ -96,42 +87,25 @@ Rectangle {
         spacing: 10
         anchors {
             top: parent.top
+            topMargin: 10
             left: list.right
             leftMargin: 10
         }
         width: parent.width * 0.2
 
-        GCText {
-            id:heading
-            text: "Arrange the events in the order in which they happened"
+
+        Rectangle {
             width: parent.width
-            wrapMode: Text.WordWrap
-            fontSize: smallSize
-        }
+            height: heading.height + 2
+            color: "#cceaeaea"
 
-        Button {
-            width: parent.width
-            height: 60 * ApplicationInfo.ratio
-            text: qsTr("UP")
-            style: GCButtonStyle {
-            }
-
-            onClicked: {
-                containerModel.move(list.currentIndex, list.currentIndex - 1, 1)
-                list.currentIndex--
-            }
-        }
-
-        Button {
-            width: parent.width
-            height: 60 * ApplicationInfo.ratio
-            text: qsTr("DOWN")
-            style: GCButtonStyle {
-            }
-
-            onClicked: {
-                containerModel.move(list.currentIndex, list.currentIndex + 1, 1)
-                list.currentIndex++
+            GCText {
+                id:heading
+                text: qsTr("Arrange the events in the order in which they happened. " +
+                           "Select the line to move and touch it's target position")
+                width: parent.width - 4
+                wrapMode: Text.WordWrap
+                fontSize: smallSize
             }
         }
 
@@ -169,6 +143,22 @@ Rectangle {
         spacing: 5 * ApplicationInfo.ratio
         delegate: listElement
         interactive: true
+
+        onCurrentIndexChanged: {
+            var win = true
+            for(var i = 0; i < count; i++) {
+                if(!list.contentItem.children[i].placed)
+                    win = false
+            }
+            if(win)
+                bonus.good("tux")
+        }
+        displaced: Transition {
+            NumberAnimation { properties: "y"; duration: 500 }
+        }
+        move: Transition {
+            NumberAnimation { properties: "y"; duration: 500 }
+        }
     }
 
 }

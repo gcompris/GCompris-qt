@@ -236,6 +236,7 @@ ActivityBase {
         List {
             id:list
             visible: false
+            bonus: bonus
         }
 
         DialogHelp {
