@@ -80,46 +80,34 @@ Rectangle {
         }
     }
 
-    Column {
-        spacing: 10
-        anchors {
-            top: parent.top
-            topMargin: 10
-            left: list.right
-            leftMargin: 10
-        }
-        width: parent.width * 0.2
-
-
-        Rectangle {
-            width: parent.width
-            height: heading.height + 2
-            color: "#cceaeaea"
-
-            GCText {
-                id:heading
-                text: qsTr("Arrange the events in the order in which they happened. " +
-                           "Select the line to move then touch it's target position")
-                width: parent.width - 4
-                wrapMode: Text.WordWrap
-                fontSize: smallSize
-            }
-        }
-    }
-
     ListView {
         id: list
-        anchors.left: parent.left
-        anchors.top: parent.top
-        anchors.bottom: parent.bottom
-        anchors.bottomMargin: bar.height
-        anchors.leftMargin: 30 * ApplicationInfo.ratio
-        anchors.topMargin: 10 * ApplicationInfo.ratio
+        anchors {
+            fill: parent
+            bottomMargin: bar.height
+            leftMargin: 30 * ApplicationInfo.ratio
+            rightMargin: 30 * ApplicationInfo.ratio
+            topMargin: 10 * ApplicationInfo.ratio
+        }
         width: parent.width * 0.7
         model: containerModel
         spacing: 5 * ApplicationInfo.ratio
         delegate: listElement
         interactive: true
+
+        header: Rectangle {
+            width: parent.width
+            height: heading.height + 10
+            color: "#cceaeaea"
+            GCText {
+                id: heading
+                text: qsTr("Arrange the events in the order in which they happened. " +
+                           "Select the line to move then touch it's target position.")
+                width: parent.width - 4
+                wrapMode: Text.WordWrap
+                fontSize: smallSize
+            }
+        }
 
         onCurrentIndexChanged: {
             var win = true

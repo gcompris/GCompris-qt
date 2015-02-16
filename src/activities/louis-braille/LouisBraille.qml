@@ -128,6 +128,25 @@ ActivityBase {
             }
         }
 
+        Keys.onRightPressed: background.next()
+        Keys.onLeftPressed: background.previous()
+
+        function previous() {
+            items.count--
+            if(items.count < 0)
+                items.count = items.dataset.length - 1
+            Activity.imgSelect(items.count)
+        }
+
+        function next() {
+            items.count++
+            if(items.count == items.dataset.length) {
+                list.shuffle()
+                list.visible = true
+            } else {
+                Activity.imgSelect(items.count)
+            }
+        }
 
         Image {
             id: previous
@@ -141,12 +160,7 @@ ActivityBase {
                 hoverEnabled: true
                 onEntered: previous.scale = 1.1
                 onExited: previous.scale = 1
-                onClicked:{
-                    items.count--
-                    if(items.count < 0)
-                        items.count = items.dataset.length - 1
-                    Activity.imgSelect(items.count)
-                }
+                onClicked: background.previous()
             }
         }
 
@@ -155,9 +169,29 @@ ActivityBase {
             anchors.top: charList.bottom
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.horizontalCenter: parent.horizontalCenter
-            source: Activity.url + "louis.png"
             sourceSize.width: parent.width * 0.30
-            scale: 1 * ApplicationInfo.ratio
+
+            Rectangle {
+                id: year_rect
+                border.color: "black"
+                border.width: 1
+                color: "white"
+                width: year.width * 1.1
+                height: year.height * 1.1
+                anchors {
+                    bottom: img.bottom
+                    horizontalCenter: img.horizontalCenter
+                    bottomMargin: 5 * ApplicationInfo.ratio
+                }
+                Text {
+                    id: year
+                    color: "black"
+                    font.pixelSize: Math.max(parent.width * 0.1, 20)
+                    text: "1809"
+                    anchors.centerIn: year_rect
+                }
+            }
+
         }
 
         Image {
@@ -173,50 +207,18 @@ ActivityBase {
                 hoverEnabled: true
                 onEntered: next.scale = 1.1
                 onExited: next.scale = 1
-                onClicked:{
-                    items.count++
-                    if(items.count == items.dataset.length) {
-                        var dataitems = items.dataset
-                        dataitems = Core.shuffle(dataitems)
-                        for(var i = 0 ; i < dataitems.length ; i++) {
-                            containerModel.append(dataitems[i]);
-                        }
-                        list.visible = true
-                    } else {
-                        Activity.imgSelect(items.count)
-                    }
-                }
-            }
-        }
-
-        Rectangle {
-            id: year_rect
-            border.color: "yellow"
-            border.width: 5 *ApplicationInfo.ratio
-            color: "white"
-            width: year.width * 1.1
-            height: year.height * 1.1
-            anchors.top: img.bottom
-            anchors.horizontalCenter: img.horizontalCenter
-            anchors.topMargin: 5 * ApplicationInfo.ratio
-
-            Text {
-                id:year
-                color: "black"
-                font.pixelSize: Math.max(parent.width * 0.1, 20)
-                text: "1809"
-                anchors.centerIn: year_rect
+                onClicked: background.next()
             }
         }
 
         Rectangle {
             id: info_rect
-            border.color: "yellow"
-            border.width: 5 * ApplicationInfo.ratio
+            border.color: "black"
+            border.width: 1 * ApplicationInfo.ratio
             color: "white"
             width: parent.width * 0.9
             height:info.height * 1.3
-            anchors.top: year_rect.bottom
+            anchors.top: img.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.topMargin: 5 * ApplicationInfo.ratio
 
@@ -228,14 +230,21 @@ ActivityBase {
                 horizontalAlignment: Text.AlignHCenter
                 width: parent.width * 0.94
                 wrapMode: Text.WordWrap
-                text: "Born on January 4th in Coupvary near Paris in France."
             }
         }
 
         ReorderList {
-            id:list
+            id: list
             visible: false
             bonus: bonus
+
+            function shuffle() {
+                var dataitems = items.dataset
+                dataitems = Core.shuffle(dataitems)
+                for(var i = 0 ; i < dataitems.length ; i++) {
+                    containerModel.append(dataitems[i]);
+                }
+            }
         }
 
         DialogHelp {

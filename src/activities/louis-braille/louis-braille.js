@@ -48,6 +48,7 @@ function imgSelect(count) {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    imgSelect(0)
 }
 
 function nextLevel() {
