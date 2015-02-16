@@ -232,7 +232,7 @@ ActivityBase {
             }
         }
 
-        List {
+        ReorderList {
             id:list
             visible: false
             bonus: bonus

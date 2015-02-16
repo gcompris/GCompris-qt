@@ -34,8 +34,8 @@ Rectangle {
     color: "#ff55afad"
 
     property color goodColor: colorMode ?  "#ffc1ffb4" : "#FFF"
-    property color badColor: colorMode ?  "#ffff9a82" : "#FFF"
-    property bool colorMode: false
+    property color badColor: colorMode ?  "#FFF" : "#FFF"
+    property bool colorMode: true
     property Item bonus
 
     Component {
@@ -66,8 +66,6 @@ Rectangle {
             MouseArea {
                 id: dragArea
                 anchors.fill: parent
-                property bool held: false
-                drag.axis: Drag.YAxis
                 onPressed: {
                     if(list.currentIndex == index) {
                         list.currentIndex = -1
@@ -101,31 +99,11 @@ Rectangle {
             GCText {
                 id:heading
                 text: qsTr("Arrange the events in the order in which they happened. " +
-                           "Select the line to move and touch it's target position")
+                           "Select the line to move then touch it's target position")
                 width: parent.width - 4
                 wrapMode: Text.WordWrap
                 fontSize: smallSize
             }
-        }
-
-        Button {
-            width: parent.width
-            height: 60 * ApplicationInfo.ratio
-            text: qsTr("OK")
-            style: GCButtonStyle {
-            }
-
-            onClicked: wholeBody.colorMode = true
-        }
-
-        Button {
-            width: parent.width
-            height: 60 * ApplicationInfo.ratio
-            text: qsTr("CANCEL")
-            style: GCButtonStyle {
-            }
-
-            onClicked: wholeBody.colorMode = false
         }
     }
 
@@ -158,6 +136,7 @@ Rectangle {
         move: Transition {
             NumberAnimation { properties: "y"; duration: 500 }
         }
+        Component.onCompleted: currentIndex = -1
     }
 
 }
