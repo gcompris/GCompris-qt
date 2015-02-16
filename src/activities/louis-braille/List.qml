@@ -75,7 +75,6 @@ Rectangle {
                         list.currentIndex = index
                     } else {
                         containerModel.move(list.currentIndex, index, 1)
-                        containerModel.move(index, list.currentIndex, 1)
                         list.currentIndex = -1
                     }
                 }

@@ -183,7 +183,6 @@ ActivityBase {
                         }
                         list.visible = true
                     } else {
-                        console.log(items.count)
                         Activity.imgSelect(items.count)
                     }
                 }
