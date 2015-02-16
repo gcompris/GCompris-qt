@@ -22,7 +22,7 @@ Image {
     signal done
 
     Component.onCompleted: {
-        x =  Math.floor(Math.random() * background.width )
+        x =  Math.floor(Math.random() * (background.width-200) )
         y =  5
     }
 

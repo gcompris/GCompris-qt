@@ -71,23 +71,6 @@ ActivityBase {
         onStart: { Activity.start(items,dataset) }
         onStop: { Activity.stop() }
 
-
-        Timer{
-            id: timer
-            interval: 16
-            running: false
-            repeat: true
-            onTriggered: Activity.moveShuttle()
-        }
-
-        Timer{
-            id: asteroidTimer
-            interval: 48
-            running: false
-            repeat: true
-            onTriggered: Activity.moveAsteroid()
-        }
-
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -194,6 +177,22 @@ ActivityBase {
             x: shuttle.x - shuttle.width ; y: shuttle.y -80
             width: 20; height: 10
             source: Activity.url +"arrowright.svg"
+        }
+
+        Timer{
+            id: timer
+            interval: 16
+            running: false
+            repeat: true
+            onTriggered: Activity.moveShuttle()
+        }
+
+        Timer{
+            id: asteroidTimer
+            interval: 16
+            running: false
+            repeat: true
+            onTriggered: Activity.moveAsteroid()
         }
 
         Timer{
