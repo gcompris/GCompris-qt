@@ -50,7 +50,7 @@ var url = "qrc:/gcompris/src/activities/intro_gravity/resource/"
 var asteroids = new Array;
 var asteroidsErased = new Array;
 var fallDuration
-var minDuration = 8000
+var minDuration = 10000
 
 var activity
 var background
@@ -121,7 +121,7 @@ function createAsteroid() {
     currentImageId = Math.floor( Math.random()*5  )
     console.log(currentImageId)
     var ImageUrl = url+"asteroid"+currentImageId+".jpg"
-    fallDuration = minDuration + Math.floor(Math.random()* 5000 * (currentLevel + 1))
+    fallDuration = minDuration + Math.floor(Math.random()* 10000 *(currentLevel + 1))
     var asteroid = asteroidComponent.createObject(
                 items.background,
                 {
@@ -129,7 +129,7 @@ function createAsteroid() {
                     "background": items.background,
                     "bar": bar,
                     "source" : ImageUrl,
-                    "x": Math.floor(Math.random() * (items.background.width - 50)),
+                    "x": Math.floor(Math.random() * (items.background.width -150)),
                     "y": 0,
                     "fallDuration": fallDuration
                 });
@@ -201,20 +201,23 @@ function moveShuttle(){
 
 function moveAsteroid(){
         if(asteroids !== undefined){
-         for(var i = asteroids.length -1 ; i>0 ; --i){
+         for(var i = asteroids.length -1 ; i>=0 ; --i){
              var asteroid = asteroids[i];
              var x = asteroid.x
              var y = asteroid.y
+             if(x<150){
+                x = x+ 100
+             }
 
              asteroid.startMoving(fallDuration)
-             console.log(fallDuration)
 
              if(y > items.background.height- asteroid.height){
                      asteroid.destroy()
                      asteroids.splice(i,1)
                     asteroidCounter++
                  }
-             else if(y == items.shuttle.y && x == items.shuttle.x){
+             else if(y > items.shuttle.y -80 && y < items.shuttle.y +40
+                     && x>items.shuttle.x -40 && x< items.shuttle.x + 80 ){
                      asteroid.done()
                      asteroidsErased.push(asteroid)
                      asteroid.splice(i,1)
@@ -222,6 +225,7 @@ function moveAsteroid(){
              }
 
              if(asteroidCounter == 5) {
+                 items.asteroidCreation.stop()
                  items.bonus.good("flower")
              }
          }
@@ -249,6 +253,7 @@ function crash(){
         collision = true
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
         items.shuttle.source = "qrc:/gcompris/src/activities/intro_gravity/resource/crash.png"
-        items.timer.stop()
         items.asteroidCreation.stop()
+        items.asteroidTimer.stop()
+        items.timer.stop()
 }
