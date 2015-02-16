@@ -31,8 +31,8 @@ Image {
     id: carriageImage
     fillMode: Image.PreserveAspectFit
     source: isCarriage ?
-                Activity.url + "carriage.svgz":
-                Activity.url + "cloud.svgz"
+                Activity.url + "carriage.svg":
+                Activity.url + "cloud.svg"
     z: (state == 'scaled') ? 1 : -1
     property int nbCarriage
     property bool isCarriage: index <= nbCarriage

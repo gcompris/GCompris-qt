@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="75.147919"
+   height="88.927628"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="on.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="713"
+     id="namedview4186"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="5.3076869"
+     inkscape:cx="75.095652"
+     inkscape:cy="41.542349"
+     inkscape:window-x="-2"
+     inkscape:window-y="-3"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g6342" />
+  <title
+     id="title2868">Ampoule</title>
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient6367">
+      <stop
+         offset="0"
+         stop-color="#ffe778"
+         id="stop6369"
+         style="stop-color:#fff778;stop-opacity:1;" />
+      <stop
+         offset="1"
+         stop-color="#fff"
+         id="stop6371" />
+      <stop
+         offset="1"
+         stop-opacity="0"
+         stop-color="#008cff"
+         id="stop6373"
+         style="stop-color:#f0f603;stop-opacity:0;" />
+    </linearGradient>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Ampoule</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:date>2009-12-09</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Jean-Victor Balin</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:publisher>
+          <cc:Agent>
+            <dc:title>openclipart.org</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:language>fr-FR</dc:language>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>idea</rdf:li>
+            <rdf:li>bulb</rdf:li>
+            <rdf:li>light</rdf:li>
+            <rdf:li>electric</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>jean.victor.balin@gmail.com</dc:description>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="g6342">
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path2387-1"
+       d="M 8.9572861,6.7757412 8.9583511,83.051595 60.186645,82.980807 60.127093,6.4530582 z"
+       inkscape:connector-curvature="0"
+       style="fill:#ececec;fill-opacity:1;fill-rule:evenodd;stroke:#668181;stroke-opacity:1" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path3166-8"
+       d="m 11.179186,33.159455 -0.157436,47.478309 23.885209,0 -0.131809,-47.478309 z"
+       style="fill:#fff778;fill-rule:evenodd;fill-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path3170-5"
+       d="m 11.02175,30.348926 46.53628,0.199351 0,-20.58998 -46.53628,0.530338 z"
+       style="fill:#fff778;fill-rule:evenodd;fill-opacity:1"
+       inkscape:connector-curvature="0" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path3172-3"
+       d="m 36.644965,33.347861 20.913065,-0.188406 0,47.478309 -20.913065,0 z"
+       style="fill:#fff778;fill-rule:evenodd;fill-opacity:1"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

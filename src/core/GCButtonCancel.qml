@@ -24,7 +24,7 @@ import GCompris 1.0
 
 Image {
     id: cancel
-    source: "qrc:/gcompris/src/core/resource/cancel.svgz";
+    source: "qrc:/gcompris/src/core/resource/cancel.svg";
     fillMode: Image.PreserveAspectFit
     anchors.right: parent.right
     anchors.top: parent.top

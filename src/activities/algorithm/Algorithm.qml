@@ -33,7 +33,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: Activity.url + "desert_scene.svgz"
+        source: Activity.url + "desert_scene.svg"
         sourceSize.width: parent.width
         signal start
         signal stop
@@ -93,7 +93,7 @@ ActivityBase {
                     Repeater {
                         id: question
                         Image {
-                            source: Activity.url + modelData + '.svgz'
+                            source: Activity.url + modelData + '.svg'
                             sourceSize.height: questionTray.height
                             width: column.itemWidth
                             height: column.itemHeight
@@ -121,7 +121,7 @@ ActivityBase {
                         id: answer
                         Image {
                             source: "qrc:/gcompris/src/activities/algorithm/resource/" +
-                                    modelData + '.svgz'
+                                    modelData + '.svg'
                             sourceSize.height: answerTray.height
                             width: column.itemWidth
                             height: column.itemHeight
@@ -156,7 +156,7 @@ ActivityBase {
                         model: Activity.images
                         Image {
                             id: img
-                            source: Activity.url + modelData + '.svgz'
+                            source: Activity.url + modelData + '.svg'
                             sourceSize.height: parent.height
                             width: column.itemWidth
                             height: column.itemHeight

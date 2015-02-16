@@ -35,7 +35,7 @@ ActivityBase
     pageComponent: Image
     {
         id: background
-        source: Activity.url + "background.svgz"
+        source: Activity.url + "background.svg"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
 

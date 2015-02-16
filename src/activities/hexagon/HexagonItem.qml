@@ -53,7 +53,7 @@ Item {
     Image {
       id: border
       anchors.fill: parent
-      source: Activity.url + "hexagon_border.svgz"
+      source: Activity.url + "hexagon_border.svg"
 
       onOpacityChanged: if(opacity == 0) Activity.strawberryFound()
 
@@ -63,7 +63,7 @@ Item {
     Image {
       id: canvas
       anchors.fill: parent
-      source: Activity.url + "hexagon.svgz"
+      source: Activity.url + "hexagon.svg"
 
       onOpacityChanged: if(opacity == 0) Activity.strawberryFound()
       opacity: 0.65
@@ -99,7 +99,7 @@ Item {
         if(hasStrawberry && !isTouched) {
             canvas.opacity = 0
             isTouched = true
-            strawberry.source = Activity.url + "strawberry.svgz"
+            strawberry.source = Activity.url + "strawberry.svg"
             audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
             Activity.strawberryFound()
             particleLoader.item.burst(40)

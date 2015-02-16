@@ -24,30 +24,30 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var images = [
-            "aquarela_colors.svgz",
-            "giraffe.svgz",
-            "pencil.svgz",
-            "mouse_on_cheese.svgz",
-            "mushroom_house.svgz",
-            "pencils_paper.svgz",
-            "pencils.svgz",
-            "white_cake.svgz",
-            "die_1.svgz",
-            "die_2.svgz",
-            "die_3.svgz",
-            "die_4.svgz",
-            "die_5.svgz",
-            "die_6.svgz",
-            "die_7.svgz",
-            "die_0.svgz",
-            "digital_die0.svgz",
-            "digital_die1.svgz",
-            "digital_die2.svgz",
-            "digital_die3.svgz",
-            "digital_die4.svgz",
-            "digital_die5.svgz",
-            "digital_die6.svgz",
-            "digital_die7.svgz"
+            "aquarela_colors.svg",
+            "giraffe.svg",
+            "pencil.svg",
+            "mouse_on_cheese.svg",
+            "mushroom_house.svg",
+            "pencils_paper.svg",
+            "pencils.svg",
+            "white_cake.svg",
+            "die_1.svg",
+            "die_2.svg",
+            "die_3.svg",
+            "die_4.svg",
+            "die_5.svg",
+            "die_6.svg",
+            "die_7.svg",
+            "die_0.svg",
+            "digital_die0.svg",
+            "digital_die1.svg",
+            "digital_die2.svg",
+            "digital_die3.svg",
+            "digital_die4.svg",
+            "digital_die5.svg",
+            "digital_die6.svg",
+            "digital_die7.svg"
         ]
 
 var questionModel
@@ -104,7 +104,7 @@ function initLevel() {
 
     answerModel = new Array()
     for(var i=0; i < questionModel.length; i++)
-        answerModel.push("die_0.svgz")
+        answerModel.push("die_0.svg")
     items.answer.model = answerModel
 
 }

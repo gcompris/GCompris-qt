@@ -34,7 +34,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: "qrc:/gcompris/src/activities/leftright/resource/back.svgz"
+        source: "qrc:/gcompris/src/activities/leftright/resource/back.svg"
         sourceSize.width: parent.width
         focus: true
         signal start
@@ -70,7 +70,7 @@ ActivityBase {
             fillMode: Image.PreserveAspectFit
             sourceSize.width: Math.min(background.width,
                                        (background.height - leftButton.height - bar.height) * 1.3)
-            source: "qrc:/gcompris/src/activities/leftright/resource/blackboard.svgz"
+            source: "qrc:/gcompris/src/activities/leftright/resource/blackboard.svg"
 
             Image {
                 id: handImage
@@ -83,7 +83,7 @@ ActivityBase {
 
             Image {
                 id: lightImage
-                source: "qrc:/gcompris/src/activities/leftright/resource/light.svgz"
+                source: "qrc:/gcompris/src/activities/leftright/resource/light.svg"
                 sourceSize.width: parent.width
                 sourceSize.height: parent.height
                 anchors.horizontalCenter: parent.horizontalCenter

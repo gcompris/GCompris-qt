@@ -71,7 +71,7 @@ Item {
         id: particles
     }
     Image {
-        source: "qrc:/gcompris/src/core/resource/button.svgz"
+        source: "qrc:/gcompris/src/core/resource/button.svg"
         sourceSize { height: parent.height; width: parent.width }
         width: sourceSize.width
         height: sourceSize.height

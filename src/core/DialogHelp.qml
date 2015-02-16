@@ -25,7 +25,7 @@ DialogBackground {
     visible: false
     title: activityInfo.title
     titleIcon: activityInfo.difficulty != 0 ? "qrc:/gcompris/src/core/resource/difficulty" +
-               activityInfo.difficulty + ".svgz" : ""
+               activityInfo.difficulty + ".svg" : ""
     property QtObject activityInfo: ActivityInfoTree.currentActivity
 
     function getIcon() {

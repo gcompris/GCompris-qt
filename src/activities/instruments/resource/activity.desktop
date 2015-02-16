@@ -19,7 +19,7 @@ questionFont=gcompris/board/title bold
 #textColor=0xFFFFFFFF
 #textFont=gcompris/board/big bold
 
-background=background.svgz
+background=background.svg
 
 questionPosition=400,30
 

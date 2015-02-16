@@ -217,7 +217,7 @@ Item {
     Component {
         id: exit
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_exit.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_exit.svg";
             sourceSize.width: 66 * barZoom
             onClicked: Core.quit(bar.parent.parent);
         }
@@ -225,7 +225,7 @@ Item {
     Component {
         id: about
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_about.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_about.svg";
             sourceSize.width: 66 * barZoom
             onClicked: bar.aboutClicked()
         }
@@ -233,7 +233,7 @@ Item {
     Component {
         id: help
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_help.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_help.svg";
             sourceSize.width: 66 * barZoom
             onClicked: bar.helpClicked()
         }
@@ -241,7 +241,7 @@ Item {
     Component {
         id: previous
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_previous.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
             sourceSize.width: 30 * barZoom
             onClicked: bar.previousLevelClicked()
         }
@@ -262,7 +262,7 @@ Item {
     Component {
         id: next
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_next.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_next.svg";
             sourceSize.width: 30 * barZoom
             onClicked: bar.nextLevelClicked()
         }
@@ -270,7 +270,7 @@ Item {
     Component {
         id: repeat
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
             sourceSize.width: 66 * barZoom
             onClicked: bar.repeatClicked()
         }
@@ -278,7 +278,7 @@ Item {
     Component {
         id: reload
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_reload.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_reload.svg";
             sourceSize.width: 66 * barZoom
             onClicked: bar.reloadClicked()
         }
@@ -286,7 +286,7 @@ Item {
     Component {
         id: config
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_config.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_config.svg";
             sourceSize.width: 66 * barZoom
             onClicked: bar.configClicked()
         }
@@ -294,7 +294,7 @@ Item {
     Component {
         id: home
         BarButton {
-            source: "qrc:/gcompris/src/core/resource/bar_home.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_home.svg";
             sourceSize.width: 66 * barZoom
             onClicked: bar.homeClicked()
         }

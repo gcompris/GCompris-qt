@@ -42,7 +42,7 @@ ActivityBase {
         signal stop
         focus: true
         fillMode: Image.PreserveAspectCrop
-        source: "qrc:/gcompris/src/activities/ballcatch/resource/beach1.svgz"
+        source: "qrc:/gcompris/src/activities/ballcatch/resource/beach1.svg"
         sourceSize.width: parent.width
 
         Component.onCompleted: {
@@ -112,7 +112,7 @@ ActivityBase {
             x: background.width / 2 - width / 2
             y: background.height / 3
             sourceSize.height: 100 * ApplicationInfo.ratio
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svgz"
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg"
         }
 
         Image {
@@ -120,7 +120,7 @@ ActivityBase {
             y: background.height - 1.5 * height
             z: 5
             sourceSize.height: 150 * ApplicationInfo.ratio
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svgz"
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svg"
 
             NumberAnimation {
                 id: leftHandAnimation
@@ -160,7 +160,7 @@ ActivityBase {
             y: background.height - 1.5 * height
             z: 5
             sourceSize.height: 150 * ApplicationInfo.ratio
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svgz"
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svg"
 
             function animate(newTime) {
                 rightHandAnimation.duration = newTime
@@ -197,7 +197,7 @@ ActivityBase {
             id: leftShift
             x: 10
             y: rightHand.y
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svgz"
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svg"
             opacity: items.leftPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
         }
@@ -207,7 +207,7 @@ ActivityBase {
             mirror: true
             x: background.width - width - 10
             y: rightHand.y
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svgz"
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svg"
             opacity: items.rightPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
         }

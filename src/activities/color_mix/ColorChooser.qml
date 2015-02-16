@@ -29,15 +29,51 @@ import "."
 
 Image {
     id: chooser
+    source: Activity.url + (activity.modeRGB ? "flashlight.svg" : "tube.svg")
     z: 1
 
     property int maxSteps: 10
     property int currentStep: 0
-    property double hue
+    property alias hue: color.hue
+
+    Image {
+        id: intensity
+        source: Activity.url + "flashlight2.svg"
+        sourceSize.height: parent.sourceSize.height
+        z: 2
+        visible: activity.modeRGB ? true : false
+
+        Colorize {
+            anchors.fill: parent
+            source: parent
+            hue: chooser.hue
+            lightness: -(maxSteps - currentStep) / maxSteps
+            saturation: 1
+        }
+
+        Image {
+            source: Activity.url + "light.svg"
+            sourceSize.height: parent.sourceSize.height / 2
+            anchors {
+                left: parent.right
+                leftMargin: -20 * ApplicationInfo.ratio
+                verticalCenter: parent.verticalCenter
+            }
+            opacity: currentStep / maxSteps
+
+            Colorize {
+                anchors.fill: parent
+                source: parent
+                hue: chooser.hue
+                lightness: -(maxSteps - currentStep) / maxSteps
+                saturation: 1
+            }
+        }
+    }
 
     Image {
         id: intensityBrush
-        source: Activity.url + (activity.modeRGB ? "light.svg" : "brush.svg")
+        source: Activity.url + "brush.svg"
         sourceSize.height: parent.sourceSize.height * 0.25 + currentStep / maxSteps * 15
         z: 2
         anchors {

@@ -134,7 +134,7 @@ ActivityBase {
             anchors.right: img.left
             anchors.rightMargin: 20 * ApplicationInfo.ratio
             anchors.verticalCenter: img.verticalCenter
-            source: "qrc:/gcompris/src/core/resource/bar_previous.svgz"
+            source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
             Behavior on scale { PropertyAnimation { duration: 100} }
             MouseArea {
                 anchors.fill: parent
@@ -165,7 +165,7 @@ ActivityBase {
             anchors.left: img.right
             anchors.leftMargin: 20 * ApplicationInfo.ratio
             anchors.verticalCenter: img.verticalCenter
-            source: "qrc:/gcompris/src/core/resource/bar_next.svgz"
+            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
             Behavior on scale { PropertyAnimation { duration: 100} }
 
             MouseArea {

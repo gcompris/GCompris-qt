@@ -33,7 +33,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: Activity.url + "penalty_bg.svgz"
+        source: Activity.url + "penalty_bg.svg"
         sourceSize.width: parent.width
         fillMode: Image.Stretch
         anchors.fill: parent
@@ -223,7 +223,7 @@ ActivityBase {
         /* The player */
         Image {
             id: player
-            source: Activity.url + "penalty_player.svgz"
+            source: Activity.url + "penalty_player.svg"
             fillMode: Image.PreserveAspectFit
             anchors.verticalCenter: parent.verticalCenter
             sourceSize.width: 154 * ApplicationInfo.ratio
@@ -232,7 +232,7 @@ ActivityBase {
 
         /* The 2 click icon */
         Image {
-            source: Activity.url + "click_icon.svgz"
+            source: Activity.url + "click_icon.svg"
             sourceSize.width: 90 * ApplicationInfo.ratio
             anchors.bottomMargin: 10
             anchors.rightMargin: 10
@@ -255,7 +255,7 @@ ActivityBase {
         /* The ball */
         Image {
             id: ball
-            source: Activity.url + "penalty_ball.svgz"
+            source: Activity.url + "penalty_ball.svg"
             fillMode: Image.PreserveAspectFit
             sourceSize.width: 62 * ApplicationInfo.ratio
 

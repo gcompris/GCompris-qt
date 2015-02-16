@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="100"
+   height="100"
+   id="svg1902"
+   sodipodi:version="0.32"
+   inkscape:version="0.48.4 r9939"
+   version="1.0"
+   sodipodi:docname="hexagon_border.svg">
+  <defs
+     id="defs1904" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4.1324561"
+     inkscape:cx="14.499877"
+     inkscape:cy="55.190973"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     height="100px"
+     width="100px"
+     inkscape:window-width="1005"
+     inkscape:window-height="706"
+     inkscape:window-x="75"
+     inkscape:window-y="0"
+     showgrid="false"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata1907">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none"
+       d="M 51.5 -0.15625 L 26.0625 11.125 L -0.1875 22.59375 L 0.25 48.53125 L -0.15625 74.4375 L 27.25 91.09375 L 50.75 100.875 L 71.4375 90.71875 L 100.15625 79.875 L 100.75 43.9375 L 100 19.625 L 75.75 8.90625 L 51.5 -0.15625 z M 50.78125 4.71875 L 68.90625 14.28125 L 96.9375 23.875 L 96.59375 54.78125 L 94.8125 75.5 L 72.8125 84.75 L 50.78125 94 L 27.71875 82.84375 L 3.21875 72.96875 L 4.28125 50.65625 L 3.9375 28.3125 L 28.78125 13.96875 L 50.78125 4.71875 z "
+       id="path9655" />
+  </g>
+</svg>

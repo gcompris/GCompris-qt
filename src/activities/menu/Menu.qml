@@ -45,39 +45,39 @@ ActivityBase {
     property string url: "qrc:/gcompris/src/activities/menu/resource/"
     property variant sections: [
         {
-            icon: menuActivity.url + "all.svgz",
+            icon: menuActivity.url + "all.svg",
             tag: "favorite"
         },
         {
-            icon: menuActivity.url + "computer.svgz",
+            icon: menuActivity.url + "computer.svg",
             tag: "computer"
         },
         {
-            icon: menuActivity.url + "discovery.svgz",
+            icon: menuActivity.url + "discovery.svg",
             tag: "discovery"
         },
         {
-            icon: menuActivity.url + "experience.svgz",
+            icon: menuActivity.url + "experience.svg",
             tag: "experiment"
         },
         {
-            icon: menuActivity.url + "fun.svgz",
+            icon: menuActivity.url + "fun.svg",
             tag: "fun"
         },
         {
-            icon: menuActivity.url + "math.svgz",
+            icon: menuActivity.url + "math.svg",
             tag: "math"
         },
         {
-            icon: menuActivity.url + "puzzle.svgz",
+            icon: menuActivity.url + "puzzle.svg",
             tag: "puzzle"
         },
         {
-            icon: menuActivity.url + "reading.svgz",
+            icon: menuActivity.url + "reading.svg",
             tag: "reading"
         },
         {
-            icon: menuActivity.url + "strategy.svgz",
+            icon: menuActivity.url + "strategy.svg",
             tag: "strategy"
         },
     ]
@@ -85,7 +85,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: menuActivity.url + "background.svgz"
+        source: menuActivity.url + "background.svg"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
 
@@ -195,7 +195,7 @@ ActivityBase {
                     color:  "#99FFFFFF"
                 }
                 Image {
-                    source: "qrc:/gcompris/src/core/resource/button.svgz"
+                    source: "qrc:/gcompris/src/core/resource/button.svg"
                     anchors.fill: parent
                 }
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
@@ -290,7 +290,7 @@ ActivityBase {
                     anchors.margins: 5
                     Image {
                         source: "qrc:/gcompris/src/core/resource/difficulty" +
-                                ActivityInfoTree.menuTree[index].difficulty + ".svgz";
+                                ActivityInfoTree.menuTree[index].difficulty + ".svg";
                         anchors.top: parent.top
                         sourceSize.width: iconWidth * 0.15
                         x: 5
@@ -346,7 +346,7 @@ ActivityBase {
                     onClicked: selectCurrentItem()
                 }
                 Image {
-                    source: menuActivity.url + (favorite ? "all.svgz" : "all_disabled.svg");
+                    source: menuActivity.url + (favorite ? "all.svg" : "all_disabled.svg");
                     anchors {
                         top: parent.top
                         right: parent.right

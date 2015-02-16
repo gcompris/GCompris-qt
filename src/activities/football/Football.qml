@@ -72,7 +72,7 @@ ActivityBase {
 
         Image {
             id: field
-            source: Activity.url + "background.svgz"
+            source: Activity.url + "background.svg"
             anchors.fill: parent
             Rectangle {
                 id: border
@@ -89,7 +89,7 @@ ActivityBase {
                 }
                 Image {
                     id: ball
-                    source: Activity.url + "ball.svgz"
+                    source: Activity.url + "ball.svg"
                     sourceSize.height: 50 * ApplicationInfo.ratio
                     property real change
                     z: 10
@@ -112,7 +112,7 @@ ActivityBase {
                 }
                 Image {
                     id: tux
-                    source: Activity.url+"tux_top.svgz"
+                    source: Activity.url+"tux_top.svg"
                     sourceSize.height: 80 * ApplicationInfo.ratio
                     x: border.width - tux.width
                     y: border.height / 2

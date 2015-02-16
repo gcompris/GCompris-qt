@@ -28,7 +28,7 @@ import "instruments.js" as Dataset
 FindIt {
     mode: "Instruments"
     dataset: Dataset
-    backgroundImg: "qrc:/gcompris/src/activities/instruments/resource/background.svgz"
+    backgroundImg: "qrc:/gcompris/src/activities/instruments/resource/background.svg"
     itemWidth: 130 * ApplicationInfo.ratio
     itemHeight: 130 * ApplicationInfo.ratio
 }

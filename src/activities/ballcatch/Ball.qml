@@ -23,7 +23,7 @@ import GCompris 1.0
 
 Image {
     id: ball
-    source: "qrc:/gcompris/src/activities/ballcatch/resource/ball.svgz"
+    source: "qrc:/gcompris/src/activities/ballcatch/resource/ball.svg"
     sourceSize.height: 100 * ApplicationInfo.ratio
     z: 3
 

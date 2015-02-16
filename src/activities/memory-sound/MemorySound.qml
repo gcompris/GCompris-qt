@@ -26,5 +26,5 @@ import "memorysounddataset.js" as Dataset
 
 MemoryCommon {
     dataset: Dataset.get()
-    backgroundImg: "qrc:/gcompris/src/activities/memory-sound/resource/gcompris_band.svgz"
+    backgroundImg: "qrc:/gcompris/src/activities/memory-sound/resource/gcompris_band.svg"
 }

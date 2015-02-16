@@ -33,7 +33,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: "qrc:/gcompris/src/activities/algebra_by/resource/background.svgz"
+        source: "qrc:/gcompris/src/activities/algebra_by/resource/background.svg"
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: parent.width
         signal start

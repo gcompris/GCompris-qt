@@ -38,7 +38,7 @@ Item {
 
     Image {
         id: hatImg
-        source: Activity.url + "hat.svgz"
+        source: Activity.url + "hat.svg"
         sourceSize.width: hatItem.width / 3
         fillMode: Image.PreserveAspectFit
         anchors.centerIn: parent
@@ -75,7 +75,7 @@ Item {
                 name: "GuessNumber"
                 PropertyChanges{
                     target: hatImg
-                    source: Activity.url + "hat-point.svgz"
+                    source: Activity.url + "hat-point.svg"
                 }
                 PropertyChanges {
                     target: rotate

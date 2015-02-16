@@ -121,7 +121,7 @@ ActivityBase {
         /* The clock */
         Image {
             id: clock
-            source: Activity.url + "clock_bg.svgz"
+            source: Activity.url + "clock_bg.svg"
             anchors.centerIn: parent
             fillMode: Image.PreserveAspectFit
             sourceSize.height: parent.height
@@ -131,7 +131,7 @@ ActivityBase {
             /* The yellow zones */
             Image {
                 id: zones
-                source: Activity.url + "clock_zones.svgz"
+                source: Activity.url + "clock_zones.svg"
                 anchors.centerIn: parent
                 fillMode: Image.PreserveAspectFit
                 sourceSize.height: parent.height * 0.7
@@ -142,7 +142,7 @@ ActivityBase {
             /* The setter */
             Image {
                 id: setter
-                source: Activity.url + "clock_setter.svgz"
+                source: Activity.url + "clock_setter.svg"
                 anchors {
                     verticalCenter: parent.verticalCenter
                     left: parent.right

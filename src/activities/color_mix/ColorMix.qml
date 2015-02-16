@@ -177,7 +177,7 @@ ActivityBase {
 
         BarButton {
             id: validate
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svgz"
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
             sourceSize.width: 66 * bar.barZoom
             visible: true
             anchors {

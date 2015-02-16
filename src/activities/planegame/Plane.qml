@@ -28,7 +28,7 @@ Image {
     property real velocityX
     property real velocityY
 
-    source: Activity.url + "resource/tuxhelico.svgz"
+    source: Activity.url + "resource/tuxhelico.svg"
     fillMode: Image.PreserveAspectFit
 
     sourceSize.height: 80 * ApplicationInfo.ratio

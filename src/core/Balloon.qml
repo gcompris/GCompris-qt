@@ -25,7 +25,7 @@ import GCompris 1.0
 
 Image {
     id: balloon
-    source: "qrc:/gcompris/src/core/resource/tuxballoon.svgz";
+    source: "qrc:/gcompris/src/core/resource/tuxballoon.svg";
     sourceSize.width: parent.width * 0.4
     scale: 0.8
     x: parent.width / 2

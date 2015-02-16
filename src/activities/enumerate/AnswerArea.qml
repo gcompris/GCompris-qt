@@ -63,7 +63,7 @@ Rectangle {
 
     // The OK feedback
     Image {
-        source: "qrc:/gcompris/src/core/resource/apply.svgz";
+        source: "qrc:/gcompris/src/core/resource/apply.svg";
         fillMode: Image.PreserveAspectFit
         anchors {
             right: parent.left
