@@ -91,10 +91,7 @@ function initLevel() {
 
     items.timer.start()
     items.asteroidCreation.start()
-
-    for(var i =0 ;i < 5 ; ++i){
-        asteroids[i] = createAsteroid(i)
-    }
+    items.asteroidTimer.start()
 
 }
 
@@ -129,10 +126,9 @@ function createAsteroid() {
                     "background": background,
                     "bar": bar,
                     "source" : ImageUrl,
-                    "x": Math.random() * items.background.width,
+                    "x": Math.floor(Math.random() * items.background.width),
                     "y": 0,
                 });
-    console.log(asteroid);
 
     if(asteroid== null){
         console.log("error creating asteroid object")
@@ -140,7 +136,8 @@ function createAsteroid() {
     else{
         console.log("successfully created asteroid")
     }
-        asteroids.push(asteroid);
+
+    asteroids.push(asteroid);
 }
 
 function destroyAsteroids(asteroids) {
@@ -204,15 +201,18 @@ function moveAsteroid(){
              var asteroid = asteroids[i];
              var x = asteroid.x
              var y = asteroid.y
-             if(y > items.background.width- asteroid.width){
+             y = y+ 5
+             console.log(y)
+             if(y > items.background.height- asteroid.height){
                      asteroid.destroy()
                      asteroids.splice(i,1)
+                    asteroidCounter++
                  }
              else if(y == items.shuttle.y && x == items.shuttle.x){
                      asteroid.done()
                      asteroidsErased.push(asteroid)
                      asteroid.splice(i,1)
-                     asteroidCounter++
+                    crash()
              }
 
              if(asteroidCounter == 5) {
@@ -244,4 +244,5 @@ function crash(){
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
         items.shuttle.source = "qrc:/gcompris/src/activities/intro_gravity/resource/crash.png"
         items.timer.stop()
+        items.asteroidCreation.stop()
 }

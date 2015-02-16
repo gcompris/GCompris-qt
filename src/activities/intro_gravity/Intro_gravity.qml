@@ -63,6 +63,7 @@ ActivityBase {
             property alias timer: timer
             property alias arrow: arrow
             property alias asteroidCreation: asteroidCreation
+            property alias asteroidTimer:asteroidTimer
             property GCAudio audioEffects: activity.audioEffects
 
         }
@@ -76,10 +77,15 @@ ActivityBase {
             interval: 16
             running: false
             repeat: true
-            onTriggered: {
-                Activity.moveShuttle()
-                Activity.moveAsteroid()
-            }
+            onTriggered: Activity.moveShuttle()
+        }
+
+        Timer{
+            id: asteroidTimer
+            interval: 48
+            running: false
+            repeat: true
+            onTriggered: Activity.moveAsteroid()
         }
 
         DialogHelp {
