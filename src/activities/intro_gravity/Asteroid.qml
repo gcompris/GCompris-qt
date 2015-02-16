@@ -9,7 +9,7 @@ Image {
 
     property Item background
     property Item items
-//    property real velocityAsteroid
+    property real fallDuration
 
     fillMode: Image.PreserveAspectFit
 

@@ -49,9 +49,8 @@ var url = "qrc:/gcompris/src/activities/intro_gravity/resource/"
 //array of created asteroids
 var asteroids = new Array;
 var asteroidsErased = new Array;
-var speedAsteroid
-var fallRateBase = 40
-var fallRateMult = 80
+var fallDuration
+var minDuration = 8000
 
 var activity
 var background
@@ -88,8 +87,7 @@ function initLevel() {
     y = items.shuttle.y;
     collision = false
     move = 0
-    speedAsteroid = fallRateBase + Math.floor(fallRateMult / (currentLevel + 1))
-
+    fallDuration = minDuration
     destroyAsteroids(asteroids)
     destroyAsteroids(asteroidsErased)
 
@@ -123,6 +121,7 @@ function createAsteroid() {
     currentImageId = Math.floor( Math.random()*5  )
     console.log(currentImageId)
     var ImageUrl = url+"asteroid"+currentImageId+".jpg"
+    fallDuration = minDuration + Math.floor(Math.random()* 5000 * (currentLevel + 1))
     var asteroid = asteroidComponent.createObject(
                 items.background,
                 {
@@ -131,7 +130,8 @@ function createAsteroid() {
                     "bar": bar,
                     "source" : ImageUrl,
                     "x": Math.floor(Math.random() * (items.background.width - 50)),
-                    "y": 0
+                    "y": 0,
+                    "fallDuration": fallDuration
                 });
 
     if(asteroid== null){
@@ -205,8 +205,9 @@ function moveAsteroid(){
              var asteroid = asteroids[i];
              var x = asteroid.x
              var y = asteroid.y
-             asteroid.startMoving(speedAsteroid)
-             console.log(y)
+
+             asteroid.startMoving(fallDuration)
+             console.log(fallDuration)
 
              if(y > items.background.height- asteroid.height){
                      asteroid.destroy()
