@@ -1,24 +1,24 @@
 /* GCompris - intro_gravity.js
- *
- * Copyright (C) 2014 <YOUR NAME HERE>
- *
- * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 3 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
- */
+*
+* Copyright (C) 2015 Siddhesh suthar <siddhesh.it@gmail.com>
+*
+* Authors:
+*   Bruno Coudoin <bruno.coudoin@gcompris.net> and Matilda Bernard (GTK+ version)
+*   Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
+*
+*   This program is free software; you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation; either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/
 .pragma library
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
@@ -41,7 +41,6 @@ var forceRight
 var x
 var y
 var move
-var collision
 var right_force_intensity
 var left_force_intensity
 var url = "qrc:/gcompris/src/activities/intro_gravity/resource/"
@@ -49,8 +48,10 @@ var url = "qrc:/gcompris/src/activities/intro_gravity/resource/"
 //array of created asteroids
 var asteroids = new Array;
 var asteroidsErased = new Array;
+
 var fallDuration
-var minDuration = 10000
+var minDuration = 2000
+var asteroidCounter = 1
 
 var activity
 var background
@@ -80,20 +81,20 @@ function initLevel() {
 
     items.timer.stop()
     items.asteroidCreation.stop()
+    items.scaleLeft = 1.5 ; items.scaleRight = 1.5
 
     items.shuttle.x = items.background.width/2
 
     x = items.shuttle.x;
     y = items.shuttle.y;
-    collision = false
     move = 0
     fallDuration = minDuration
+    asteroidCounter = 1
     destroyAsteroids(asteroids)
     destroyAsteroids(asteroidsErased)
 
     items.timer.start()
     items.asteroidCreation.start()
-    items.asteroidTimer.start()
 
 }
 
@@ -113,7 +114,7 @@ function previousLevel() {
 
 
 // functions to handle asteroids
-var asteroidCounter = 1
+
 
 function createAsteroid() {
 
@@ -179,7 +180,7 @@ function moveShuttle(){
       else
         right_force_intensity = 6
 
-      drawArrow(items.shuttle.x + items.shuttle.width-10 ,items.shuttle.y ,move,"right")
+      drawArrow(items.shuttle.x + items.shuttle.width-10 ,items.shuttle.y ,right_force_intensity,"right")
      }
     else{
       if (forceLeft < 3)
@@ -187,7 +188,7 @@ function moveShuttle(){
       else
         left_force_intensity = 6
 
-      drawArrow(items.shuttle.x+10 ,items.shuttle.y ,move,"left")
+      drawArrow(items.shuttle.x+10 ,items.shuttle.y ,left_force_intensity,"left")
     }
 
 // Manage the crash case
@@ -218,9 +219,9 @@ function moveAsteroid(){
                  }
              else if(y > items.shuttle.y -80 && y < items.shuttle.y +40
                      && x>items.shuttle.x -40 && x< items.shuttle.x + 80 ){
-                     asteroid.done()
+                     asteroids.splice(i,1)
                      asteroidsErased.push(asteroid)
-                     asteroid.splice(i,1)
+
                     crash()
              }
 
@@ -233,7 +234,6 @@ function moveAsteroid(){
 
 }
 
-//to draw the line and set width according to intensity of force
 
 function drawArrow(x1,y1,scaling,direction){
     if(direction=="left"){
@@ -245,15 +245,14 @@ function drawArrow(x1,y1,scaling,direction){
         items.arrow.source = url + "arrowright.svg"
     }
     items.arrow.y = y1-20
-    items.arrow.scale += (0.01*scaling)
+    items.arrow.scale += (0.0005*scaling)
 }
 
 
 function crash(){
-        collision = true
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
         items.shuttle.source = "qrc:/gcompris/src/activities/intro_gravity/resource/crash.png"
         items.asteroidCreation.stop()
-        items.asteroidTimer.stop()
+//        items.asteroidTimer.stop()
         items.timer.stop()
 }
