@@ -37,36 +37,68 @@ Rectangle {
     property color badColor: colorMode ?  "#FFF" : "#FFF"
     property bool colorMode: true
     property Item bonus
+    property int selectedIndex: -1
+
+    signal up
+    signal down
+    signal space
+
+    onUp: list.decrementCurrentIndex()
+    onDown: list.incrementCurrentIndex()
+    onSpace: {
+        if(list.currentIndex == selectedIndex) {
+            selectedIndex = -1
+        } else if(selectedIndex != -1) {
+            containerModel.move(selectedIndex, list.currentIndex, 1)
+            list.currentIndex -= 1
+            selectedIndex = -1
+        } else {
+            selectedIndex = list.currentIndex
+        }
+    }
+
+    function checkWin() {
+        var win = true
+        // The shifted numbering comes from the header in the List
+        for(var i = 1; i < list.count + 1; i++) {
+            if(list.contentItem.children[i].placed === false)
+                win = false
+        }
+        if(win)
+            bonus.good("tux")
+    }
 
     Component {
         id: listElement
 
         Rectangle {
             id: listRect
-            color: placed ? goodColor : badColor
+            color: wholeBody.selectedIndex == index ? "#b5b9ff" : (placed ? goodColor : badColor)
             border.width: list.currentIndex == index ? 5 : 1
             border.color: "#ff525c5c"
             radius: 3
             width: list.width
             height: Math.max(textinfo.height * 1.3, 50 * ApplicationInfo.ratio)
 
-            property int index: model.index
-            property bool placed: number == index + 1
+            property int sequence: model.sequence
+            property bool placed: model.sequence === index
+            property string text: model.text
 
-            Text {
+            GCText {
                 id: textinfo
-                text: model.text
+                text: listRect.text + " " + model.sequence
                 anchors.centerIn: parent
                 horizontalAlignment: Text.AlignHCenter
                 width: parent.width * 0.94
                 wrapMode: Text.WordWrap
-                font.pixelSize: Math.max(parent.width * 0.023, 12)
+                fontSize: regularSize
             }
 
             MouseArea {
                 id: dragArea
                 anchors.fill: parent
                 onPressed: {
+                    wholeBody.selectedIndex = -1
                     if(list.currentIndex == index) {
                         list.currentIndex = -1
                     } else if(list.currentIndex == -1) {
@@ -77,6 +109,13 @@ Rectangle {
                     }
                 }
             }
+
+            Behavior on color {
+                ColorAnimation {
+                    duration: 200
+                }
+            }
+
         }
     }
 
@@ -105,19 +144,10 @@ Rectangle {
                            "Select the line to move then touch it's target position.")
                 width: parent.width - 4
                 wrapMode: Text.WordWrap
-                fontSize: smallSize
+                fontSize: regularSize
             }
         }
-
-        onCurrentIndexChanged: {
-            var win = true
-            for(var i = 0; i < count; i++) {
-                if(!list.contentItem.children[i].placed)
-                    win = false
-            }
-            if(win)
-                bonus.good("tux")
-        }
+        onCurrentIndexChanged: timer.restart()
         displaced: Transition {
             NumberAnimation { properties: "y"; duration: 500 }
         }
@@ -127,4 +157,11 @@ Rectangle {
         Component.onCompleted: currentIndex = -1
     }
 
+    Timer {
+        id: timer
+        interval: 1000
+        running: false
+        repeat: false
+        onTriggered: wholeBody.checkWin()
+    }
 }

@@ -38,8 +38,6 @@ function start(items_) {
 function stop() {
 }
 
-
-
 function imgSelect(count) {
     items.img.source = items.dataset[count].img
     items.year.text = items.dataset[count].year
@@ -48,6 +46,9 @@ function imgSelect(count) {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    // Write the sequence in the dataset
+    for(var i = 0 ; i < items.dataset.length ; i++)
+        items.dataset[i].sequence = i
     imgSelect(0)
 }
 

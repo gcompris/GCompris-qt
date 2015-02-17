@@ -110,13 +110,13 @@ ActivityBase {
                             }
                         }
 
-                        Text {
+                        GCText {
                             text: modelData
                             font.weight: Font.DemiBold
                             style: Text.Outline
                             styleColor: "white"
                             color: "black"
-                            font.pixelSize: Math.max(parent.width * 0.5, 24)
+                            fontSize: regularSize
                             anchors {
                                 top: rect1.bottom
                                 topMargin: 4 * ApplicationInfo.ratio
@@ -132,16 +132,15 @@ ActivityBase {
         Keys.onLeftPressed: background.previous()
 
         function previous() {
-            items.count--
-            if(items.count < 0)
+            if(--items.count < 0)
                 items.count = items.dataset.length - 1
             Activity.imgSelect(items.count)
         }
 
         function next() {
-            items.count++
-            if(items.count == items.dataset.length) {
+            if(++items.count == items.dataset.length) {
                 list.shuffle()
+                items.count = 0
                 list.visible = true
             } else {
                 Activity.imgSelect(items.count)
@@ -164,12 +163,37 @@ ActivityBase {
             }
         }
 
+        // The image description
+        Rectangle {
+            id: info_rect
+            border.color: "black"
+            border.width: 1 * ApplicationInfo.ratio
+            color: "white"
+            width: parent.width * 0.9
+            height:info.height * 1.3
+            anchors.top: charList.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.topMargin: 5 * ApplicationInfo.ratio
+
+            GCText {
+                id:info
+                color: "black"
+                font.pixelSize: Math.max(parent.width * 0.01, 20)
+                anchors.centerIn: parent
+                horizontalAlignment: Text.AlignHCenter
+                width: parent.width * 0.94
+                wrapMode: Text.WordWrap
+                fontSize: regularSize
+            }
+        }
+
+        // Image and date
         Image {
             id: img
-            anchors.top: charList.bottom
+            anchors.top: info_rect.bottom
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.horizontalCenter: parent.horizontalCenter
-            sourceSize.width: parent.width * 0.30
+            sourceSize.height: parent.height - (charList.height + info_rect.height + bar.height)
 
             Rectangle {
                 id: year_rect
@@ -183,10 +207,10 @@ ActivityBase {
                     horizontalCenter: img.horizontalCenter
                     bottomMargin: 5 * ApplicationInfo.ratio
                 }
-                Text {
+                GCText {
                     id: year
                     color: "black"
-                    font.pixelSize: Math.max(parent.width * 0.1, 20)
+                    fontSize: regularSize
                     text: "1809"
                     anchors.centerIn: year_rect
                 }
@@ -211,34 +235,21 @@ ActivityBase {
             }
         }
 
-        Rectangle {
-            id: info_rect
-            border.color: "black"
-            border.width: 1 * ApplicationInfo.ratio
-            color: "white"
-            width: parent.width * 0.9
-            height:info.height * 1.3
-            anchors.top: img.bottom
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.topMargin: 5 * ApplicationInfo.ratio
-
-            Text {
-                id:info
-                color: "black"
-                font.pixelSize: Math.max(parent.width * 0.01, 20)
-                anchors.centerIn: parent
-                horizontalAlignment: Text.AlignHCenter
-                width: parent.width * 0.94
-                wrapMode: Text.WordWrap
-            }
-        }
+        Keys.onUpPressed: list.up()
+        Keys.onDownPressed: list.down()
+        Keys.onEnterPressed: list.space()
+        Keys.onReturnPressed: list.space()
+        Keys.onSpacePressed: list.space()
 
         ReorderList {
             id: list
             visible: false
             bonus: bonus
 
-            function shuffle() {
+            signal shuffle
+
+            onShuffle: {
+                containerModel.clear()
                 var dataitems = items.dataset
                 dataitems = Core.shuffle(dataitems)
                 for(var i = 0 ; i < dataitems.length ; i++) {
@@ -265,7 +276,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(list.shuffle)
         }
     }
 
