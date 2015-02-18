@@ -40,8 +40,7 @@ Image {
     z: 5
 
     Component.onCompleted: {
-        x =  Math.floor(Math.random() * (background.width-200) )
-        x = x<150 ? x-150 : x
+        x =  Activity.randomX
         y =  5
     }
 

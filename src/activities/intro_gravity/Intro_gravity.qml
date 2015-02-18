@@ -95,7 +95,7 @@ ActivityBase {
             id: message
             anchors {
                 top: parent.top
-                topMargin: shuttle.y + shuttle.height + 40
+                topMargin: shuttle.y + shuttle.height + 20
                 right: parent.right
                 rightMargin: 200
                 left: parent.left
@@ -174,8 +174,12 @@ ActivityBase {
         Image{
             id: arrow
             x: shuttle.x - shuttle.width ; y: shuttle.y -80
-            width: 20; height: 10
+            width: 50; height: 20
+            scale : 1
             source: Activity.url +"arrowright.svg"
+            Behavior on scale {
+                NumberAnimation{ duration: 48 }
+            }
         }
 
         Timer{
@@ -196,9 +200,6 @@ ActivityBase {
             interval: 10200 - (bar.level * 200)
             onTriggered: Activity.createAsteroid()
             }
-
-
-
 
     }
 }
