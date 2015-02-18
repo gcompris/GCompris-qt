@@ -50,8 +50,9 @@ var asteroids = new Array;
 var asteroidsErased = new Array;
 
 var fallDuration
-var minDuration = 2000
+var minDuration = 10000
 var asteroidCounter = 1
+var randomX
 
 var activity
 var background
@@ -84,6 +85,7 @@ function initLevel() {
     items.scaleLeft = 1.5 ; items.scaleRight = 1.5
 
     items.shuttle.x = items.background.width/2
+    items.arrow.scale = 1
 
     x = items.shuttle.x;
     y = items.shuttle.y;
@@ -93,8 +95,10 @@ function initLevel() {
     destroyAsteroids(asteroids)
     destroyAsteroids(asteroidsErased)
 
-    items.timer.start()
-    items.asteroidCreation.start()
+    if(items.bar.level !==1){    // no instructions on these levels directly start the game
+            items.timer.start()
+            items.asteroidCreation.start()
+    }
 
 }
 
@@ -122,7 +126,15 @@ function createAsteroid() {
     currentImageId = Math.floor( Math.random()*5  )
     console.log(currentImageId)
     var ImageUrl = url+"asteroid"+currentImageId+".jpg"
-    fallDuration = minDuration + Math.floor(Math.random()* 10000 *(currentLevel + 1))
+
+    randomX = Math.floor(Math.random() * (items.background.width-200))
+    console.log(randomX)
+    if(randomX < 200){
+        randomX += 200
+    }
+    console.log("change happens"+randomX)
+
+    fallDuration = minDuration + Math.floor(Math.random()* 10000 /(currentLevel + 1))
     var asteroid = asteroidComponent.createObject(
                 items.background,
                 {
@@ -130,7 +142,7 @@ function createAsteroid() {
                     "background": items.background,
                     "bar": bar,
                     "source" : ImageUrl,
-                    "x": Math.floor(Math.random() * (items.background.width -150)),
+                    "x": randomX,
                     "y": 0,
                     "fallDuration": fallDuration
                 });
@@ -206,12 +218,8 @@ function moveAsteroid(){
              var asteroid = asteroids[i];
              var x = asteroid.x
              var y = asteroid.y
-             if(x<150){
-                x = x+ 100
-             }
 
-             asteroid.startMoving(fallDuration)
-
+             asteroid.startMoving(asteroid.fallDuration)
              if(y > items.background.height- asteroid.height){
                      asteroid.destroy()
                      asteroids.splice(i,1)
@@ -245,14 +253,12 @@ function drawArrow(x1,y1,scaling,direction){
         items.arrow.source = url + "arrowright.svg"
     }
     items.arrow.y = y1-20
-    items.arrow.scale += (0.0005*scaling)
+    items.arrow.scale = scaling * 1.2
 }
 
 
 function crash(){
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
         items.shuttle.source = "qrc:/gcompris/src/activities/intro_gravity/resource/crash.png"
-        items.asteroidCreation.stop()
-//        items.asteroidTimer.stop()
-        items.timer.stop()
+        stop()
 }
