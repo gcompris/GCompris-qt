@@ -15,7 +15,7 @@ Source code from GitHub
 -----------------------
 Checkout the source code by cloning it from GitHub
 
-    git clone git://github.com/boin/gcompris-qt.git
+    git clone git://github.com/bdoin/gcompris-qt.git
 
 If you want to have a personal fork, in order to commit occasional patches,
 fork it on GitHub then clone your fork
