@@ -119,6 +119,8 @@ ActivityBase {
             x: 20
 //            y: planetLeft.y  //removed what could have caused cyclic dependency
             y: background.height/2 - sliderLeft.height
+            width: 10
+            height: planetLeft.height
             activeFocusOnPress: true
             orientation: Qt.Vertical
             value: 1.5
@@ -146,6 +148,8 @@ ActivityBase {
             x: planetRight.x + planetRight.width + 20
 //            y: planetRight.y
             y: background.height/2 - sliderRight.height
+            width: 10
+            height: planetRight.height
             activeFocusOnPress: true
             orientation: Qt.Vertical
             value: 1.5
@@ -169,7 +173,7 @@ ActivityBase {
         Image{
             id: arrow
             x: shuttle.x - shuttle.width ; y: shuttle.y -80
-            width: 50; height: 20
+            width: parent.width/30; height: parent.height/60
             scale : 1
             source: Activity.url +"arrowright.svg"
             Behavior on scale {
