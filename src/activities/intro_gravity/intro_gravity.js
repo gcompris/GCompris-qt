@@ -135,7 +135,7 @@ function createAsteroid() {
     }
     console.log("change happens"+randomX)
 
-    fallDuration = minDuration + Math.floor(Math.random()* 10000 * (currentLevel + 1))
+    fallDuration = minDuration + Math.floor(Math.random()* 10000 / (currentLevel + 1))
     console.log(currentLevel+ fallDuration)
     var asteroid = asteroidComponent.createObject(
                 items.background,
@@ -255,7 +255,7 @@ function drawArrow(x1,y1,scaling,direction){
         items.arrow.source = url + "arrowright.svg"
     }
     items.arrow.y = y1-20
-    items.arrow.scale = scaling *(background.width/2)
+    items.arrow.scale = scaling
 }
 
 
