@@ -20,7 +20,7 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 import QtQuick 2.2
-import QtQuick.Controls 1.3
+import QtQuick.Controls 1.2
 import GCompris 1.0
 
 import "../../core"
@@ -37,9 +37,10 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: Activity.url+"background.png"
+        source: Activity.url+"background.svg"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
+
         signal start
         signal stop
 
@@ -95,11 +96,11 @@ ActivityBase {
             id: message
             anchors {
                 top: parent.top
-                topMargin: shuttle.y + shuttle.height + 20
+                topMargin: shuttle.y + shuttle.height
                 right: parent.right
-                rightMargin: 200
+                rightMargin: 5
                 left: parent.left
-                leftMargin: 200
+                leftMargin: 5
             }
         }
 
@@ -107,8 +108,7 @@ ActivityBase {
             id: planetLeft
             source: Activity.url+"saturn.png"
             x: 70
-            y: parent.height/2 - height
-
+            y: parent.height/2 - 80
             Behavior on scale{
                 NumberAnimation{ duration: 100 }
             }
@@ -117,15 +117,13 @@ ActivityBase {
         Slider{
             id: sliderLeft
             x: 20
-            y: planetLeft.y
+//            y: planetLeft.y  //removed what could have caused cyclic dependency
+            y: background.height/2 - sliderLeft.height
             activeFocusOnPress: true
             orientation: Qt.Vertical
             value: 1.5
-            stepSize: 0.1
-            updateValueWhileDragging: true
             maximumValue: 2.0
             minimumValue: 1.0
-            tickmarksEnabled: true
             onValueChanged:{
                 planetLeft.scale = value
             }
@@ -136,8 +134,7 @@ ActivityBase {
             id: planetRight
             source: Activity.url+"neptune.png"
             x: parent.width - 130
-            y: parent.height/2 - height
-
+            y: parent.height/2 - 80
             Behavior on scale{
                 NumberAnimation{ duration: 100 }
             }
@@ -147,15 +144,13 @@ ActivityBase {
         Slider{
             id: sliderRight
             x: planetRight.x + planetRight.width + 20
-            y: planetRight.y
+//            y: planetRight.y
+            y: background.height/2 - sliderRight.height
             activeFocusOnPress: true
             orientation: Qt.Vertical
             value: 1.5
-            stepSize: 0.1
-            updateValueWhileDragging: true
             maximumValue: 2.0
             minimumValue: 1.0
-            tickmarksEnabled: true
             onValueChanged:{
                 planetRight.scale = value
             }
