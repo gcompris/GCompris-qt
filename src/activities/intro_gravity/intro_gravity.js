@@ -26,9 +26,6 @@
 
 var currentLevel = 0;
 var numberOfLevel = 4;
-var items;
-var currentImageId = 0
-
 
 //variables for calculating the crash and safe travel
 var distLeft
@@ -50,10 +47,12 @@ var asteroids = new Array;
 var asteroidsErased = new Array;
 
 var fallDuration
-var minDuration = 10000
+var minDuration = 2000
 var asteroidCounter = 1
 var randomX
+var currentImageId = 0
 
+var items;
 var activity
 var background
 var bar
@@ -82,18 +81,21 @@ function initLevel() {
 
     items.timer.stop()
     items.asteroidCreation.stop()
-    items.scaleLeft = 1.5 ; items.scaleRight = 1.5
 
+    items.scaleLeft = 1.5 ; items.scaleRight = 1.5
     items.shuttle.x = items.background.width/2
     items.arrow.scale = 1
 
     x = items.shuttle.x;
     y = items.shuttle.y;
     move = 0
+
     fallDuration = minDuration
     asteroidCounter = 1
     destroyAsteroids(asteroids)
     destroyAsteroids(asteroidsErased)
+
+    items.shuttle.source = url + "tux_spaceship.png"
 
     if(items.bar.level !==1){    // no instructions on these levels directly start the game
             items.timer.start()
@@ -117,8 +119,7 @@ function previousLevel() {
 }
 
 
-// functions to handle asteroids
-
+// functions to create and handle asteroids
 
 function createAsteroid() {
 
@@ -134,7 +135,8 @@ function createAsteroid() {
     }
     console.log("change happens"+randomX)
 
-    fallDuration = minDuration + Math.floor(Math.random()* 10000 /(currentLevel + 1))
+    fallDuration = minDuration + Math.floor(Math.random()* 10000 * (currentLevel + 1))
+    console.log(currentLevel+ fallDuration)
     var asteroid = asteroidComponent.createObject(
                 items.background,
                 {
@@ -220,7 +222,7 @@ function moveAsteroid(){
              var y = asteroid.y
 
              asteroid.startMoving(asteroid.fallDuration)
-             if(y > items.background.height- asteroid.height){
+             if(y > items.background.height + asteroid.height){
                      asteroid.destroy()
                      asteroids.splice(i,1)
                     asteroidCounter++
@@ -253,7 +255,7 @@ function drawArrow(x1,y1,scaling,direction){
         items.arrow.source = url + "arrowright.svg"
     }
     items.arrow.y = y1-20
-    items.arrow.scale = scaling * 1.2
+    items.arrow.scale = scaling *(background.width/2)
 }
 
 
