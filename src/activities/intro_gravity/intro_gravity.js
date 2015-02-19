@@ -47,7 +47,7 @@ var asteroids = new Array;
 var asteroidsErased = new Array;
 
 var fallDuration
-var minDuration = 2000
+var minDuration = 8000
 var asteroidCounter = 1
 var randomX
 var currentImageId = 0
@@ -134,9 +134,9 @@ function createAsteroid() {
         randomX += 200
     }
     console.log("change happens"+randomX)
+    fallDuration = minDuration - Math.floor(Math.random()* 1000 *(currentLevel+1))
 
-    fallDuration = minDuration + Math.floor(Math.random()* 10000 / (currentLevel + 1))
-    console.log(currentLevel+ fallDuration)
+    console.log(currentLevel+" and falling"+fallDuration)
     var asteroid = asteroidComponent.createObject(
                 items.background,
                 {
