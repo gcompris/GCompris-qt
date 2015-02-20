@@ -37,7 +37,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: Activity.url+"background.svg"
+        source: Activity.url+"drawing.svg"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
 
@@ -48,6 +48,22 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
+
+//        property int oldWidth: width
+//        onWidthChanged: {
+//            // Reposition helico and clouds, same for height
+//            Activity.repositionObjectsOnWidthChanged(width / oldWidth)
+//            oldWidth = width
+//        }
+
+//        property int oldHeight: height
+//        onHeightChanged: {
+//            // Reposition helico and clouds, same for height
+//            Activity.repositionObjectsOnHeightChanged(height / oldHeight)
+//            oldHeight = height
+//        }
+
+
 
         // Add here the QML items you need to access in javascript
         QtObject {
@@ -78,13 +94,14 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | reload }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onReloadClicked:Activity.initLevel()
         }
 
         Bonus {
@@ -188,7 +205,7 @@ ActivityBase {
             repeat: true
             onTriggered: {
                 Activity.moveShuttle()
-                Activity.moveAsteroid()
+                Activity.handleCollisionWithAsteroid()
             }
         }
 

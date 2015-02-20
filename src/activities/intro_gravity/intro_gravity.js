@@ -47,7 +47,7 @@ var asteroids = new Array;
 var asteroidsErased = new Array;
 
 var fallDuration
-var minDuration = 8000
+var minDuration = 6000
 var asteroidCounter = 1
 var randomX
 var currentImageId = 0
@@ -65,6 +65,7 @@ function start(items_,activity_, background_, bar_, bonus_) {
     bar = bar_
     bonus = bonus_
     currentLevel = 0
+    asteroidCounter =1
     initLevel()
 }
 
@@ -90,16 +91,16 @@ function initLevel() {
     y = items.shuttle.y;
     move = 0
 
-    fallDuration = minDuration
     asteroidCounter = 1
+    fallDuration = minDuration
     destroyAsteroids(asteroids)
     destroyAsteroids(asteroidsErased)
 
     items.shuttle.source = url + "tux_spaceship.png"
 
-    if(items.bar.level !==1){    // no instructions on these levels directly start the game
-            items.timer.start()
-            items.asteroidCreation.start()
+    if(currentLevel != 0 || (currentLevel == 0 && items.bar.content.reload )){
+        items.timer.start()
+        items.asteroidCreation.start()
     }
 
 }
@@ -120,23 +121,22 @@ function previousLevel() {
 
 
 // functions to create and handle asteroids
-
+asteroidCounter =1
 function createAsteroid() {
 
     var asteroidComponent = Qt.createComponent("qrc:/gcompris/src/activities/intro_gravity/Asteroid.qml");
     currentImageId = Math.floor( Math.random()*5  )
-    console.log(currentImageId)
     var ImageUrl = url+"asteroid"+currentImageId+".jpg"
 
     randomX = Math.floor(Math.random() * (items.background.width-200))
-    console.log(randomX)
+
     if(randomX < 200){
         randomX += 200
     }
-    console.log("change happens"+randomX)
+
     fallDuration = minDuration - Math.floor(Math.random()* 1000 *(currentLevel+1))
 
-    console.log(currentLevel+" and falling"+fallDuration)
+    console.log(currentLevel+" and falling " +fallDuration)
     var asteroid = asteroidComponent.createObject(
                 items.background,
                 {
@@ -152,11 +152,12 @@ function createAsteroid() {
     if(asteroid== null){
         console.log("error creating asteroid object")
     }
-    else{
-        console.log("successfully created asteroid")
-    }
 
     asteroids.push(asteroid);
+    asteroid.startMoving(fallDuration)
+    asteroidCounter++
+    console.log(asteroidCounter)
+
 }
 
 function destroyAsteroids(asteroids) {
@@ -186,8 +187,6 @@ function moveShuttle(){
     forceLeft = (scaleLeft / Math.pow(distLeft,2) ) * Math.pow(10,5)
     forceRight = (scaleRight / Math.pow(distRight,2) ) * Math.pow(10,5)
 
-//    Manage force direction and intensity and show line
-
     if (forceRight > forceLeft){
       if (forceRight < 3)
         right_force_intensity = forceRight *2
@@ -214,27 +213,23 @@ function moveShuttle(){
 
 }
 
-function moveAsteroid(){
+function handleCollisionWithAsteroid(){
         if(asteroids !== undefined){
          for(var i = asteroids.length -1 ; i>=0 ; --i){
              var asteroid = asteroids[i];
              var x = asteroid.x
              var y = asteroid.y
 
-             asteroid.startMoving(asteroid.fallDuration)
-             if(y > items.background.height + asteroid.height){
+             if(y > items.background.height ){
                      asteroid.destroy()
                      asteroids.splice(i,1)
-                    asteroidCounter++
                  }
              else if(y > items.shuttle.y -80 && y < items.shuttle.y +40
                      && x>items.shuttle.x -40 && x< items.shuttle.x + 80 ){
-                     asteroids.splice(i,1)
-                     asteroidsErased.push(asteroid)
-
+                    asteroid.destroy()
+                    asteroids.splice(i,1)
                     crash()
              }
-
              if(asteroidCounter == 5) {
                  items.asteroidCreation.stop()
                  items.bonus.good("flower")
