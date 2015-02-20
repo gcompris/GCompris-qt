@@ -32,7 +32,20 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    property variant dataset
+    property int oldWidth: width
+    onWidthChanged: {
+        // Reposition planets and asteroids, same for height
+        Activity.repositionObjectsOnWidthChanged(width / oldWidth)
+        oldWidth = width
+    }
+
+    property int oldHeight: height
+    onHeightChanged: {
+        // Reposition planets and asteroids, same for height
+        Activity.repositionObjectsOnHeightChanged(height / oldHeight)
+        oldHeight = height
+    }
+
 
     pageComponent: Image {
         id: background
@@ -48,22 +61,6 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-
-//        property int oldWidth: width
-//        onWidthChanged: {
-//            // Reposition helico and clouds, same for height
-//            Activity.repositionObjectsOnWidthChanged(width / oldWidth)
-//            oldWidth = width
-//        }
-
-//        property int oldHeight: height
-//        onHeightChanged: {
-//            // Reposition helico and clouds, same for height
-//            Activity.repositionObjectsOnHeightChanged(height / oldHeight)
-//            oldHeight = height
-//        }
-
-
 
         // Add here the QML items you need to access in javascript
         QtObject {
@@ -84,7 +81,7 @@ ActivityBase {
 
         }
 
-        onStart: { Activity.start(items,dataset) }
+        onStart: { Activity.start(items,message) }
         onStop: { Activity.stop() }
 
         DialogHelp {
@@ -101,8 +98,8 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onReloadClicked:Activity.initLevel()
-        }
+            onReloadClicked: Activity.initLevel()
+         }
 
         Bonus {
             id: bonus

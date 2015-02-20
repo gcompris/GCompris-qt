@@ -47,25 +47,19 @@ var asteroids = new Array;
 var asteroidsErased = new Array;
 
 var fallDuration
-var minDuration = 6000
+var minDuration = 12000
 var asteroidCounter = 1
 var randomX
 var currentImageId = 0
 
 var items;
-var activity
-var background
-var bar
-var bonus
+var message;
 
-function start(items_,activity_, background_, bar_, bonus_) {
+function start(items_,message_) {
     items = items_
-    activity = activity_
-    background = background_
-    bar = bar_
-    bonus = bonus_
     currentLevel = 0
     asteroidCounter =1
+    message = message_
     initLevel()
 }
 
@@ -85,7 +79,9 @@ function initLevel() {
 
     items.scaleLeft = 1.5 ; items.scaleRight = 1.5
     items.shuttle.x = items.background.width/2
+
     items.arrow.scale = 1
+    items.arrow.x = items.shuttle.x - items.shuttle.width ;
 
     x = items.shuttle.x;
     y = items.shuttle.y;
@@ -98,9 +94,15 @@ function initLevel() {
 
     items.shuttle.source = url + "tux_spaceship.png"
 
-    if(currentLevel != 0 || (currentLevel == 0 && items.bar.content.reload )){
+    if(items.bar.level != 1 ){
         items.timer.start()
         items.asteroidCreation.start()
+    }
+    else{
+        message.clickCount =0
+        message.text = message.intro1
+        message.button.opacity = 1
+        message.skipButton.opacity = 1
     }
 
 }
@@ -117,6 +119,25 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
+}
+
+
+function repositionObjectsOnWidthChanged(factor) {
+    if(items) {
+        initLevel()
+    }
+    for(var i = asteroids.length - 1; i >= 0 ; --i) {
+        var asteroid = asteroids[i];
+    }
+}
+
+function repositionObjectsOnHeightChanged(factor) {
+    if(items ) {
+        initLevel()
+    }
+    for(var i = asteroids.length - 1; i >= 0 ; --i) {
+        var asteroid = asteroids[i];
+    }
 }
 
 
@@ -140,9 +161,9 @@ function createAsteroid() {
     var asteroid = asteroidComponent.createObject(
                 items.background,
                 {
-                    "activity": activity,
+                    "activity": items.activity,
                     "background": items.background,
-                    "bar": bar,
+                    "bar": items.bar,
                     "source" : ImageUrl,
                     "x": randomX,
                     "y": 0,
