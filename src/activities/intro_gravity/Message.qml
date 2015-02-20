@@ -24,13 +24,17 @@
 import QtQuick 2.1
 import "../../core"
 import GCompris 1.0
+import "intro_gravity.js" as Activity
 
 Item{
     id: message    
 
     property alias text: intro_text.text
     property bool displayed: intro_text.text != "" ? true : false
+
     property int clickCount: 0
+    property alias button: button
+    property alias skipButton: skipButton
 
     property string intro1: qsTr("Gravity is universal and Newton's law of universal gravitation extends gravity"
                                  +"\n"+" beyond earth. This force of gravitational attraction is directly dependent"
@@ -95,13 +99,19 @@ Item{
             width: 160; height: 40
             x: intro_textbg.x + (intro_textbg.width/2) - button.width/2
             y: intro_textbg.y + intro_textbg.height - button.height - 5
-            color: "#ffff30"
+            gradient: Gradient {
+                        GradientStop { position: 0.0; color: "#ffff30" }
+                        GradientStop { position: 1.0; color: "#CCCC29" }
+                    }
             border.color: "#7AA3CC"
             border.width: 3
             radius: 8
+            opacity: 1
+            z: 5
 
             anchors.top : intro_textbg.bottom
             anchors.topMargin: 10
+            anchors.right: message.right
 
             GCText {
                 anchors.centerIn: button
@@ -123,6 +133,8 @@ Item{
                     }else if(clickCount == 4){
                         message.text = qsTr("")
                         button.opacity = 0
+                        skipButton.opacity = 0
+//                        Activity.initLevel()
                         items.timer.start()
                         items.asteroidCreation.start()
                     }
@@ -130,6 +142,47 @@ Item{
                 }
             }
     }
+
+    Rectangle { // our inlined button ui
+            id: skipButton
+            width: 160; height: 40
+            x: intro_textbg.x + (intro_textbg.width/2) - button.width/2 - skipButton.width/2
+            y: intro_textbg.y + intro_textbg.height - skipButton.height - 5
+            gradient: Gradient {
+                        GradientStop { position: 0.0; color: "#ffff30" }
+                        GradientStop { position: 1.0; color: "#CCCC29" }
+                    }
+            border.color: "#7AA3CC"
+            border.width: 3
+            radius: 8
+            opacity: 1
+            z: 5
+
+            anchors.top : intro_textbg.bottom
+            anchors.topMargin: 10
+            anchors.right: message.right
+            anchors.rightMargin: 10 + button.width
+
+            GCText {
+                anchors.centerIn: skipButton
+                text: "Skip Instruction"
+                color: "#800000"
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                        message.text = qsTr("")
+                        button.opacity = 0
+                        skipButton.opacity = 0
+//                        Activity.initLevel()
+                        items.timer.start()
+                        items.asteroidCreation.start()
+
+                    }
+                }
+            }
+
 
 }
 
