@@ -53,10 +53,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property alias img: img
             property int count: 0
-            property alias year: year
-            property alias info: info
             property alias containerModel: containerModel
             property var dataset: Dataset.dataset
         }
@@ -132,18 +129,19 @@ ActivityBase {
         Keys.onLeftPressed: background.previous()
 
         function previous() {
-            if(--items.count < 0)
+            if(items.count == 0)
                 items.count = items.dataset.length - 1
-            Activity.imgSelect(items.count)
+            else
+                items.count--
         }
 
         function next() {
-            if(++items.count == items.dataset.length) {
+            if(items.count == items.dataset.length - 1) {
                 list.shuffle()
                 items.count = 0
                 list.visible = true
             } else {
-                Activity.imgSelect(items.count)
+                items.count++
             }
         }
 
@@ -184,6 +182,7 @@ ActivityBase {
                 width: parent.width * 0.94
                 wrapMode: Text.WordWrap
                 fontSize: regularSize
+                text: items.dataset[items.count].text
             }
         }
 
@@ -194,6 +193,7 @@ ActivityBase {
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.horizontalCenter: parent.horizontalCenter
             sourceSize.height: parent.height - (charList.height + info_rect.height + bar.height)
+            source: items.dataset[items.count].img
 
             Rectangle {
                 id: year_rect
@@ -211,8 +211,8 @@ ActivityBase {
                     id: year
                     color: "black"
                     fontSize: regularSize
-                    text: "1809"
                     anchors.centerIn: year_rect
+                    text: items.dataset[items.count].year
                 }
             }
 
