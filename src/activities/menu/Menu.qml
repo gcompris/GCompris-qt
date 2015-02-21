@@ -361,6 +361,8 @@ ActivityBase {
                 }
 
                 function selectCurrentItem() {
+                    if(pageView.busy)
+                        return
                     particles.burst(50)
                     ActivityInfoTree.currentActivity = ActivityInfoTree.menuTree[index]
                     activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.menuTree[index].name,
