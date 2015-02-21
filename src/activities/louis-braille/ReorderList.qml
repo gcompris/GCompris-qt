@@ -108,7 +108,7 @@ Rectangle {
 
             GCText {
                 id: textinfo
-                text: listRect.text + " " + model.sequence
+                text: listRect.text
                 anchors.centerIn: parent
                 horizontalAlignment: Text.AlignHCenter
                 width: parent.width * 0.94
