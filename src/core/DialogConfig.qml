@@ -73,7 +73,7 @@ Rectangle {
             { "text": "Slovenský", "locale": "sk_SK.UTF-8" },
             { "text": "Slovenski", "locale": "sl_SI.UTF-8" },
             { "text": "црногорски jeзик", "locale": "sr_ME.UTF-8" },
-            { "text": "Svenska", "locale": "sv_FI.UTF-8" },
+            { "text": "Svenska", "locale": "sv_SE.UTF-8" },
             { "text": "தமிழ்", "locale": "ta_IN.UTF-8" },
             { "text": "ไทย", "locale": "th_TH.UTF-8" },
             { "text": "український", "locale": "uk_UA.UTF-8" },
