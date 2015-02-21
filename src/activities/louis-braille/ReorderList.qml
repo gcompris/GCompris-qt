@@ -91,8 +91,18 @@ Rectangle {
                 id: borderAnim
                 running: list.currentIndex == index
                 loops: Animation.Infinite
-                NumberAnimation { target: listRect; property: "border.width"; to: 5; duration: 500; easing.type: Easing.InOutQuad }
-                NumberAnimation { target: listRect; property: "border.width"; to: 0; duration: 500; easing.type: Easing.InOutQuad }
+                NumberAnimation {
+                    target: listRect
+                    property: "border.width"
+                    to: 5; duration: 500
+                    easing.type: Easing.InOutQuad
+                }
+                NumberAnimation {
+                    target: listRect
+                    property: "border.width"
+                    to: 0; duration: 500
+                    easing.type: Easing.InOutQuad
+                }
             }
 
             GCText {
