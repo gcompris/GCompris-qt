@@ -61,11 +61,14 @@ Rectangle {
         var win = true
         // The shifted numbering comes from the header in the List
         for(var i = 1; i < list.count + 1; i++) {
-            if(list.contentItem.children[i].placed === false)
+            if(!list.contentItem.children[i] ||
+                list.contentItem.children[i].placed === false)
                 win = false
         }
-        if(win)
+        if(win) {
+            list.currentIndex = -1
             bonus.good("tux")
+        }
     }
 
     Component {
@@ -74,7 +77,7 @@ Rectangle {
         Rectangle {
             id: listRect
             color: wholeBody.selectedIndex == index ? "#b5b9ff" : (placed ? goodColor : badColor)
-            border.width: list.currentIndex == index ? 5 : 1
+            border.width: list.currentIndex == index ? 0 : 1
             border.color: "#ff525c5c"
             radius: 3
             width: list.width
@@ -83,6 +86,14 @@ Rectangle {
             property int sequence: model.sequence
             property bool placed: model.sequence === index
             property string text: model.text
+
+            SequentialAnimation {
+                id: borderAnim
+                running: list.currentIndex == index
+                loops: Animation.Infinite
+                NumberAnimation { target: listRect; property: "border.width"; to: 5; duration: 500; easing.type: Easing.InOutQuad }
+                NumberAnimation { target: listRect; property: "border.width"; to: 0; duration: 500; easing.type: Easing.InOutQuad }
+            }
 
             GCText {
                 id: textinfo
