@@ -54,16 +54,11 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property int count: 0
-            property alias containerModel: containerModel
             property var dataset: Dataset.dataset
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
-
-        ListModel {
-            id: containerModel
-        }
 
         Image {
             id: charList

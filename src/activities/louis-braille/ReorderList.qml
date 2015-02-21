@@ -38,6 +38,7 @@ Rectangle {
     property bool colorMode: true
     property Item bonus
     property int selectedIndex: -1
+    property alias containerModel: list.model
 
     signal up
     signal down
@@ -138,6 +139,10 @@ Rectangle {
             }
 
         }
+    }
+
+    ListModel {
+        id: containerModel
     }
 
     ListView {
