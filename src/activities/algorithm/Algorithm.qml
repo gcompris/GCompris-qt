@@ -168,7 +168,7 @@ ActivityBase {
                                 anchors.fill: parent
                                 onClicked: {
                                     if(Activity.clickHandler(modelData)) {
-                                        particle.emitter.burst(20)
+                                        particle.burst(20)
                                     }
                                 }
                             }
@@ -200,7 +200,7 @@ ActivityBase {
 
                             Behavior on scale { NumberAnimation { duration: 70 } }
 
-                            ParticleSystemStar {
+                            ParticleSystemStarLoader {
                                 id: particle
                                 clip: false
                             }

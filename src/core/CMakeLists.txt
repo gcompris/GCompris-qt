@@ -6,6 +6,10 @@ if(WITH_ACTIVATION_CODE)
   add_definitions(-DWITH_ACTIVATION_CODE)
 endif()
 
+if(WITH_KIOSK_MODE)
+  add_definitions(-DWITH_KIOSK_MODE)
+endif()
+
 # Note: put .cpp files before .h files in the following or cmake messes up
 # moc generation -- WTF! 
 set(gcompris_SRCS
@@ -109,7 +113,6 @@ if(BUILD_STANDALONE)
     QtQuick/Window.2/${_lib_prefix}windowplugin
     QtQuick/Particles.2/${_lib_prefix}particlesplugin
     QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin
-    QtQuick/Dialogs/${_lib_prefix}dialogplugin
     QtQuick.2/${_lib_prefix}qtquick2plugin
     QtMultimedia/${_lib_prefix}declarative_multimedia)
 

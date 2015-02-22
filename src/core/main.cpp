@@ -141,7 +141,7 @@ int main(int argc, char *argv[])
     if(!loadAndroidTranslation(translator, locale))
         loadAndroidTranslation(translator, ApplicationInfo::localeShort(locale));
 #else
-    
+
     if(!translator.load("gcompris_" + locale, QString("%1/%2/translations").arg(QCoreApplication::applicationDirPath(), GCOMPRIS_DATA_FOLDER))) {
         qDebug() << "Unable to load translation for locale " <<
                     locale << ", use en_US by default";
@@ -157,11 +157,11 @@ int main(int argc, char *argv[])
     // Register voices-resources for current locale, updates/downloads only if
     // not prohibited by the settings
     DownloadManager::getInstance()->updateResource(DownloadManager::getInstance()
-        ->getVoicesResourceForLocale(ApplicationInfo::localeShort(locale)));
+        ->getVoicesResourceForLocale(locale));
 
 	QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
 	QObject::connect(&engine, SIGNAL(quit()), DownloadManager::getInstance(),
-	        SLOT(shutdown()));
+            SLOT(shutdown()));
 
     if(parser.isSet(exportActivitiesAsSQL)) {
         ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree*>(ActivityInfoTree::menuTreeProvider(&engine, NULL)));

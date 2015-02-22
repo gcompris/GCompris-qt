@@ -56,6 +56,7 @@ ActivityBase {
         
         QtObject {
             id: items
+            property Item main: activity.main
             property alias bar: bar
             property alias trainModel: trainModel
             property GCAudio audioVoices: activity.audioVoices

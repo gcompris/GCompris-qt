@@ -11,7 +11,7 @@ ActivityInfo {
 //  intro: "Count the number of stars hidden under the hat and then click on the stars to indicate their number."
   goal: qsTr("Learn addition")
   prerequisite: qsTr("Addition")
-  manual: qsTr("Click on the hat to open or close it. Under the hat, how many stars can you see moving around? Count carefully. :) Click in the bottom-right area to input your answer.")
+  manual: qsTr("Click on the hat to open or close it. Under the hat, how many stars can you see moving around? Count carefully. Click in the bottom-right area to input your answer.")
   credit: ""
   section: "math numeration"
 }

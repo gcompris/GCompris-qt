@@ -21,7 +21,6 @@
 import QtQuick 2.2
 import QtQuick.Controls 1.1
 import QtQuick.Controls.Styles 1.1
-import QtQuick.Dialogs 1.2
 import GCompris 1.0
 import QtQuick.Layouts 1.1
 import "core.js" as Core
@@ -32,6 +31,7 @@ Rectangle {
     border.color: "black"
     border.width: 1
     z: 1000
+    property QtObject main
     property bool isDialog: true
     property string title
     property string content
@@ -43,6 +43,43 @@ Rectangle {
 
     visible: false
     title: qsTr("Configuration")
+    // Put here the locales for which we have a good enough translation
+    property var languages: [
+            { "text": qsTr("Your system default"), "locale": "system" },
+            { "text": "UK English", "locale": "en_GB.UTF-8" },
+            { "text": "American English", "locale": "en_US.UTF-8" },
+            { "text": "български", "locale": "bg_BG.UTF-8" },
+            { "text": "Brezhoneg", "locale": "br_FR.UTF-8" },
+            { "text": "Català", "locale": "ca_ES.UTF-8" },
+            { "text": "Česká", "locale": "cs_CZ.UTF-8" },
+            { "text": "Dansk", "locale": "da_DK.UTF-8" },
+            { "text": "Deutsch", "locale": "de_DE.UTF-8" },
+            { "text": "Ελληνικά", "locale": "el_GR.UTF-8" },
+            { "text": "Español", "locale": "es_ES.UTF-8" },
+            { "text": "Suomi", "locale": "fi_FI.UTF-8" },
+            { "text": "Français", "locale": "fr_FR.UTF-8" },
+            { "text": "Gàidhlig", "locale": "gd_GB.UTF-8" },
+            { "text": "Galego", "locale": "gl_ES.UTF-8" },
+            { "text": "Magyar", "locale": "hu_HU.UTF-8" },
+            { "text": "Italiano", "locale": "it_IT.UTF-8" },
+            { "text": "Lietuvių", "locale": "lt_LT.UTF-8" },
+            { "text": "Latviešu", "locale": "lv_LV.UTF-8" },
+            { "text": "Nederlands", "locale": "nl_NL.UTF-8" },
+            { "text": "Norsk (nynorsk)", "locale": "nn_NO.UTF-8" },
+            { "text": "Polski", "locale": "pl_PL.UTF-8" },
+            { "text": "Português", "locale": "pt_PT.UTF-8" },
+            { "text": "Português do Brasil", "locale": "pt_BR.UTF-8" },
+            { "text": "Русский", "locale": "ru_RU.UTF-8" },
+            { "text": "Slovenský", "locale": "sk_SK.UTF-8" },
+            { "text": "Slovenski", "locale": "sl_SI.UTF-8" },
+            { "text": "црногорски jeзик", "locale": "sr_ME.UTF-8" },
+            { "text": "Svenska", "locale": "sv_SE.UTF-8" },
+            { "text": "தமிழ்", "locale": "ta_IN.UTF-8" },
+            { "text": "ไทย", "locale": "th_TH.UTF-8" },
+            { "text": "український", "locale": "uk_UA.UTF-8" },
+            { "text": "中文（简体）", "locale": "zh_CN.UTF-8" },
+            { "text": "繁體中文", "locale": "zh_TW.UTF-8" }
+        ]
 
     Row {
         spacing: 2
@@ -88,7 +125,8 @@ Rectangle {
                     anchors.fill: parent
                     flickableDirection: Flickable.VerticalFlick
                     clip: true
-                    contentHeight: contentItem.childrenRect.height
+                    // On mobile we miss some room at the bottom, arbitrary add some
+                    contentHeight: contentItem.childrenRect.height + 40 * ApplicationInfo.ratio
 
                     Column {
                         spacing: 10
@@ -153,6 +191,16 @@ Rectangle {
                         }
 
                         GCDialogCheckBox {
+                            id: displayLockedActivitiesBox
+                            text: qsTr("Show locked activities")
+                            visible: ApplicationSettings.isDemoMode
+                            checked: showLockedActivities
+                            onCheckedChanged: {
+                                showLockedActivities = checked;
+                            }
+                        }
+
+                        GCDialogCheckBox {
                             id: enableAudioVoicesBox
                             text: qsTr("Enable audio voices")
                             checked: isAudioVoicesEnabled
@@ -206,8 +254,9 @@ Rectangle {
                             }
                         }
 
-                        Row {
+                        Flow {
                             spacing: 5
+                            width: parent.width
                             ComboBox {
                                 id: fontBox
                                 style: GCComboBoxStyle {}
@@ -220,14 +269,42 @@ Rectangle {
                                 wrapMode: Text.WordWrap
                             }
                         }
-
-                        Row {
+                        Flow {
                             spacing: 5
+                            width: parent.width
+                            Slider {
+                                id: baseFontSizeSlider
+                                width: 250 * ApplicationInfo.ratio
+                                style: GCSliderStyle {}
+                                maximumValue: ApplicationSettings.baseFontSizeMax
+                                minimumValue: ApplicationSettings.baseFontSizeMin
+                                stepSize: 1.0
+                                tickmarksEnabled: true
+                                updateValueWhileDragging: true
+                                value: baseFontSize
+                                onValueChanged: ApplicationSettings.baseFontSize = value;
+                            }
+                            GCText {
+                                id: baseFontSizeText
+                                text: qsTr("Font size")
+                                fontSize: mediumSize
+                                wrapMode: Text.WordWrap
+                            }
+                            Button {
+                                height: 30 * ApplicationInfo.ratio
+                                text: qsTr("Default");
+                                style: GCButtonStyle {}
+                                onClicked: baseFontSizeSlider.value = 0.0
+                            }
+                        }
+                        Flow {
+                            spacing: 5
+                            width: parent.width
                             ComboBox {
                                 id: languageBox
                                 style: GCComboBoxStyle {}
-                                model: languages
-                                width: 250 * ApplicationInfo.ratio
+                                model: dialogConfig.languages
+                                width: 300 * ApplicationInfo.ratio
 
                                 onCurrentIndexChanged: voicesRow.localeChanged();
                             }
@@ -238,21 +315,19 @@ Rectangle {
                             }
                         }
 
-                        Row {
+                        Flow {
                             id: voicesRow
-                            height: enableAudioVoicesBox.height
                             width: parent.width
                             spacing: 5 * ApplicationInfo.ratio
 
                             property bool haveLocalResource: false
 
                             function localeChanged() {
-                                var localeShort =
-                                        ApplicationInfo.getLocaleShort(languages.get(languageBox.currentIndex).locale);
-                                var language = languages.get(languageBox.currentIndex).text;
+                                var language = dialogConfig.languages[languageBox.currentIndex].text;
                                 voicesText.text = language;
                                 voicesRow.haveLocalResource = DownloadManager.haveLocalResource(
-                                        DownloadManager.getVoicesResourceForLocale(localeShort));
+                                        DownloadManager.getVoicesResourceForLocale(
+                                                dialogConfig.languages[languageBox.currentIndex].locale));
                             }
 
                             Connections {
@@ -261,21 +336,13 @@ Rectangle {
                                 onDownloadFinished: voicesRow.localeChanged()
                             }
 
-                            Item {
-                                id: rowSpacer
-                                width: 20 * ApplicationInfo.ratio
-                                height: parent.height
-                            }
-
                             GCText {
                                 id: voicesText
-                                anchors.verticalCenter: parent.verticalCenter
                                 text: qsTr("Sounds")
                             }
 
                             Image {
                                 id: voicesImage
-                                anchors.verticalCenter: parent.verticalCenter
                                 sourceSize.height: 30 * ApplicationInfo.ratio
                                 source: voicesRow.haveLocalResource ? "qrc:/gcompris/src/core/resource/apply.svgz" :
                                     "qrc:/gcompris/src/core/resource/cancel.svgz"
@@ -283,17 +350,14 @@ Rectangle {
 
                             Button {
                                 id: voicesButton
-                                height: parent.height
-                                anchors.verticalCenter: parent.verticalCenter
+                                height: 30 * ApplicationInfo.ratio
                                 text: voicesRow.haveLocalResource ? qsTr("Check for updates") :
                                     qsTr("Download")
                                 style: GCButtonStyle {}
 
                                 onClicked: {
-                                    var localeShort =
-                                            ApplicationInfo.getLocaleShort(languages.get(languageBox.currentIndex).locale);
                                     if (DownloadManager.downloadResource(
-                                        DownloadManager.getVoicesResourceForLocale(localeShort)))
+                                        DownloadManager.getVoicesResourceForLocale(dialogConfig.languages[languageBox.currentIndex].locale)))
                                     {
                                         var downloadDialog = Core.showDownloadDialog(dialogConfig, {});
                                     }
@@ -301,13 +365,12 @@ Rectangle {
                             }
                         }
 
-                        Row {
+                        Flow {
                             width: parent.width
                             spacing: 5 * ApplicationInfo.ratio
 
                             GCText {
                                 text: qsTr("Difficulty filter:")
-                                verticalAlignment: Text.AlignVCenter
                                 fontSize: mediumSize
                                 height: 50 * ApplicationInfo.ratio
                             }
@@ -320,8 +383,7 @@ Rectangle {
 
                             Image {
                                 source: "qrc:/gcompris/src/core/resource/bar_next.svgz"
-                                anchors.verticalCenter: parent.verticalCenter
-                                sourceSize.height: Math.min(50 * ApplicationInfo.ratio, parent.width / 15)
+                                sourceSize.height: Math.min(50 * ApplicationInfo.ratio, parent.width / 8)
 
                                 MouseArea {
                                     anchors.fill: parent
@@ -374,8 +436,7 @@ Rectangle {
                                 Image {
                                     source: "qrc:/gcompris/src/core/resource/difficulty" +
                                             (modelData + 1) + ".svgz";
-                                    anchors.verticalCenter: parent.verticalCenter
-                                    sourceSize.width: Math.min(50 * ApplicationInfo.ratio, parent.width / 15)
+                                    sourceSize.width: Math.min(50 * ApplicationInfo.ratio, parent.width / 8)
                                     opacity: modelData + 1 >= filterRepeater.min &&
                                              modelData + 1 <= filterRepeater.max
                                              ? 1 : 0.4
@@ -409,8 +470,7 @@ Rectangle {
 
                             Image {
                                 source: "qrc:/gcompris/src/core/resource/bar_previous.svgz"
-                                sourceSize.height: Math.min(50 * ApplicationInfo.ratio, parent.width / 15)
-                                anchors.verticalCenter: parent.verticalCenter
+                                sourceSize.height: Math.min(50 * ApplicationInfo.ratio, parent.width / 8)
 
                                 MouseArea {
                                     anchors.fill: parent
@@ -430,53 +490,27 @@ Rectangle {
     }
 
     // The cancel button
-    Image {
-        id: cancel
-        source: "qrc:/gcompris/src/core/resource/apply.svgz";
-        fillMode: Image.PreserveAspectFit
-        anchors.right: parent.right
-        anchors.top: parent.top
-        smooth: true
-        sourceSize.width: 60 * ApplicationInfo.ratio
-        anchors.margins: 10
-        SequentialAnimation {
-            id: anim
-            running: true
-            loops: Animation.Infinite
-            NumberAnimation {
-                target: cancel
-                property: "rotation"
-                from: -10; to: 10
-                duration: 500
-                easing.type: Easing.InOutQuad
-            }
-            NumberAnimation {
-                target: cancel
-                property: "rotation"
-                from: 10; to: -10
-                duration: 500
-                easing.type: Easing.InOutQuad
-            }
-        }
-        MouseArea {
-            anchors.fill: parent
-            onClicked: {
-                if(hasConfigChanged())
-                    save()
-                close()
-            }
+    GCButtonCancel {
+        onClose: {
+            if(hasConfigChanged())
+                save();
+            parent.close()
         }
     }
 
+    property bool showLockedActivities: ApplicationSettings.showLockedActivities
     property bool isAudioVoicesEnabled: ApplicationSettings.isAudioVoicesEnabled
     property bool isAudioEffectsEnabled: ApplicationSettings.isAudioEffectsEnabled
     property bool isFullscreen: ApplicationSettings.isFullscreen
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
     property bool sectionVisible: ApplicationSettings.sectionVisible
+    property int baseFontSize  // don't bind to ApplicationSettings.baseFontSize
+                               // or we get a binding loop warning
 
     onStart: {
         // Synchronize settings with data
+        showLockedActivities = ApplicationSettings.showLockedActivities
         isAudioVoicesEnabled = ApplicationSettings.isAudioVoicesEnabled
         enableAudioVoicesBox.checked = isAudioVoicesEnabled
 
@@ -495,9 +529,11 @@ Rectangle {
         sectionVisible = ApplicationSettings.sectionVisible
         sectionVisibleBox.checked = sectionVisible
 
+        baseFontSize = ApplicationSettings.baseFontSize;
+
         // Set locale
-        for(var i = 0 ; i < languages.count ; i ++) {
-            if(languages.get(i).locale == ApplicationSettings.locale) {
+        for(var i = 0 ; i < dialogConfig.languages.length ; i ++) {
+            if(dialogConfig.languages[i].locale === ApplicationSettings.locale) {
                 languageBox.currentIndex = i;
                 break;
             }
@@ -513,6 +549,7 @@ Rectangle {
     }
 
     function save() {
+        ApplicationSettings.showLockedActivities = showLockedActivities
         ApplicationSettings.isAudioVoicesEnabled = isAudioVoicesEnabled
         ApplicationSettings.isAudioEffectsEnabled = isAudioEffectsEnabled
         ApplicationSettings.isFullscreen = isFullscreen
@@ -523,71 +560,35 @@ Rectangle {
         ApplicationSettings.isEmbeddedFont = fonts.get(fontBox.currentIndex).isLocalResource;
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
 
-        if (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale) {
-            ApplicationSettings.locale = languages.get(languageBox.currentIndex).locale
+        ApplicationSettings.saveBaseFontSize();
+
+        if (ApplicationSettings.locale != dialogConfig.languages[languageBox.currentIndex].locale) {
+            ApplicationSettings.locale = dialogConfig.languages[languageBox.currentIndex].locale
             if (!DownloadManager.haveLocalResource(
-                    DownloadManager.getVoicesResourceForLocale(
-                            ApplicationInfo.localeShort)))
+                    DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
             {
                 // ask for downloading new voices
-                var buttonHandler = new Array();
-                var dialog;
-                buttonHandler[StandardButton.No] = function() {};
-                buttonHandler[StandardButton.Yes] = function() {
-                    // yes -> start download
-                    if (DownloadManager.downloadResource(
-                            DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort)))
-                        var downloadDialog = Core.showDownloadDialog(main, {});
-                };
-                dialog = Core.showMessageDialog(dialogConfig,
-                        qsTr("You selected a new locale"),
-                        qsTr("Do you want to download the corresponding sound files now?"),
-                        "",
-                        StandardIcon.Question,
-                        buttonHandler
+                Core.showMessageDialog(main,
+                        qsTr("You selected a new locale") + '\n'
+                        + qsTr("Do you want to download the corresponding sound files now?"),
+                        "YES", function() {
+                            // yes -> start download
+                            if (DownloadManager.downloadResource(
+                                        DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
+                                var downloadDialog = Core.showDownloadDialog(main, {});
+                        },
+                        "NO", null,
+                        null
                 );
             } else // check for udpates or/and register new voices
-                DownloadManager.updateResource(DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort))
+                DownloadManager.updateResource(
+                        DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale))
         }
     }
 
-    ListModel {
-        id: languages
-
-        // This is done this way for having the translations
-        Component.onCompleted: {
-            // FIXME: Add the first line for translation asap
-            languages.append( { "text": "Your system default", "locale": "system" })
-            languages.append( { "text": "UK English", "locale": "en_GB.UTF-8" })
-            languages.append( { "text": "American English", "locale": "en_US.UTF-8" } )
-            languages.append( { "text": "български", "locale": "bg_BG.UTF-8" } )
-            languages.append( { "text": "Brezhoneg", "locale": "br_FR.UTF-8" } )
-            languages.append( { "text": "Česká republika", "locale": "cs_CZ.UTF-8" } )
-            languages.append( { "text": "Dansk", "locale": "da_DK.UTF-8" } )
-            languages.append( { "text": "Deutsch", "locale": "de_DE.UTF-8" } )
-            languages.append( { "text": "Ελληνικά", "locale": "el_GR.UTF-8" } )
-            languages.append( { "text": "Español", "locale": "es_ES.UTF-8" } )
-            languages.append( { "text": "Français", "locale": "fr_FR.UTF-8" } )
-            languages.append( { "text": "Gàidhlig", "locale": "gd_GB.UTF-8" } )
-            languages.append( { "text": "Galego", "locale": "gl_ES.UTF-8" } )
-            languages.append( { "text": "Magyar", "locale": "hu_HU.UTF-8" } )
-            languages.append( { "text": "Lietuvių", "locale": "lt_LT.UTF-8" } )
-            languages.append( { "text": "Latviešu", "locale": "lv_LV.UTF-8" } )
-            languages.append( { "text": "Nederlands", "locale": "nl_NL.UTF-8" } )
-            languages.append( { "text": "Norsk (nynorsk)", "locale": "nn_NO.UTF-8" } )
-            languages.append( { "text": "Polski", "locale": "pl_PL.UTF-8" } )
-            languages.append( { "text": "Русский", "locale": "ru_RU.UTF-8" } )
-            languages.append( { "text": "Português do Brasil", "locale": "pt_BR.UTF-8" } )
-            languages.append( { "text": "Slovenský", "locale": "sk_SK.UTF-8" } )
-            languages.append( { "text": "Slovenski", "locale": "sl_SI.UTF-8" } )
-            languages.append( { "text": "црногорски jeзик", "locale": "sr_ME.UTF-8" } )
-            languages.append( { "text": "Svenska", "locale": "sv_FI.UTF-8" } )
-            languages.append( { "text": "தமிழ்", "locale": "ta_IN.UTF-8" } )
-            languages.append( { "text": "ไทย", "locale": "th_TH.UTF-8" } )
-            languages.append( { "text": "український", "locale": "uk.UTF-8" } )
-            languages.append( { "text": "中文（简体）", "locale": "zh_CN.UTF-8" } )
-            languages.append( { "text": "繁體中文", "locale": "zh_TW.UTF-8" } )
-        }
+    function reset()
+    {
+        ApplicationSettings.baseFontSize = baseFontSize;
     }
 
     ListModel {
@@ -632,7 +633,7 @@ Rectangle {
     }
 
     function hasConfigChanged() {
-        return (ApplicationSettings.locale != languages.get(languageBox.currentIndex).locale ||
+        return (ApplicationSettings.locale !== dialogConfig.languages[languageBox.currentIndex].locale ||
                 (ApplicationSettings.sectionVisible != sectionVisible) ||
                 (ApplicationSettings.font != fonts.get(fontBox.currentIndex).text) ||
                 (ApplicationSettings.isEmbeddedFont != fonts.get(fontBox.currentIndex).isLocalResource) ||
@@ -640,7 +641,9 @@ Rectangle {
                 (ApplicationSettings.isAudioEffectsEnabled != isAudioEffectsEnabled) ||
                 (ApplicationSettings.isFullscreen != isFullscreen) ||
                 (ApplicationSettings.isVirtualKeyboard != isVirtualKeyboard) ||
-                (ApplicationSettings.isAutomaticDownloadsEnabled != isAutomaticDownloadsEnabled)
+                (ApplicationSettings.isAutomaticDownloadsEnabled != isAutomaticDownloadsEnabled) ||
+                (ApplicationSettings.baseFontSize != baseFontSize) ||
+                (ApplicationSettings.showLockedActivities != showLockedActivities)
                 );
     }
 }

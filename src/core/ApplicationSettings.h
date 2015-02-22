@@ -57,6 +57,7 @@ class ApplicationSettings : public QObject
 	Q_OBJECT
 
 	// general group
+    Q_PROPERTY(bool showLockedActivities READ showLockedActivities WRITE setShowLockedActivities NOTIFY showLockedActivitiesChanged)
 	Q_PROPERTY(bool isAudioVoicesEnabled READ isAudioVoicesEnabled WRITE setIsAudioVoicesEnabled NOTIFY audioVoicesEnabledChanged)
 	Q_PROPERTY(bool isAudioEffectsEnabled READ isAudioEffectsEnabled WRITE setIsAudioEffectsEnabled NOTIFY audioEffectsEnabledChanged)
     Q_PROPERTY(bool isFullscreen READ isFullscreen WRITE setFullscreen NOTIFY fullscreenChanged)
@@ -67,8 +68,13 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(bool isAutomaticDownloadsEnabled READ isAutomaticDownloadsEnabled WRITE setIsAutomaticDownloadsEnabled NOTIFY automaticDownloadsEnabledChanged)
     Q_PROPERTY(quint32 filterLevelMin READ filterLevelMin WRITE setFilterLevelMin NOTIFY filterLevelMinChanged)
     Q_PROPERTY(quint32 filterLevelMax READ filterLevelMax WRITE setFilterLevelMax NOTIFY filterLevelMaxChanged)
-	Q_PROPERTY(bool isDemoMode READ isDemoMode WRITE setDemoMode NOTIFY demoModeChanged)
-	Q_PROPERTY(bool sectionVisible READ sectionVisible WRITE setSectionVisible NOTIFY sectionVisibleChanged)
+    Q_PROPERTY(bool isDemoMode READ isDemoMode WRITE setDemoMode NOTIFY demoModeChanged)
+    Q_PROPERTY(bool isKioskMode READ isKioskMode WRITE setKioskMode NOTIFY kioskModeChanged)
+    Q_PROPERTY(bool sectionVisible READ sectionVisible WRITE setSectionVisible NOTIFY sectionVisibleChanged)
+    Q_PROPERTY(int baseFontSize READ baseFontSize WRITE setBaseFontSize NOTIFY baseFontSizeChanged)
+    // constant min/max values for baseFontSize:
+    Q_PROPERTY(int baseFontSizeMin READ baseFontSizeMin CONSTANT)
+    Q_PROPERTY(int baseFontSizeMax READ baseFontSizeMax CONSTANT)
 
     // admin group
     Q_PROPERTY(QString downloadServerUrl READ downloadServerUrl WRITE setDownloadServerUrl NOTIFY downloadServerUrlChanged)
@@ -96,10 +102,16 @@ public:
     static QObject *systeminfoProvider(QQmlEngine *engine,
                                        QJSEngine *scriptEngine);
 
-	bool isAudioVoicesEnabled() const { return m_isAudioVoicesEnabled; }
-	void setIsAudioVoicesEnabled(const bool newMode) {
-		m_isAudioVoicesEnabled = newMode;
-		emit audioVoicesEnabledChanged();
+    bool showLockedActivities() const { return m_showLockedActivities; }
+    void setShowLockedActivities(const bool newMode) {
+        m_showLockedActivities = newMode;
+        emit showLockedActivitiesChanged();
+    }
+
+    bool isAudioVoicesEnabled() const { return m_isAudioVoicesEnabled; }
+    void setIsAudioVoicesEnabled(const bool newMode) {
+        m_isAudioVoicesEnabled = newMode;
+        emit audioVoicesEnabledChanged();
     }
 
 	bool isAudioEffectsEnabled() const { return m_isAudioEffectsEnabled; }
@@ -158,8 +170,14 @@ public:
         emit filterLevelMaxChanged();
     }
 
-	bool isDemoMode() const { return m_isDemoMode; }
+    bool isDemoMode() const { return m_isDemoMode; }
     void setDemoMode(const bool newMode);
+
+    bool isKioskMode() const { return m_isKioskMode; }
+    void setKioskMode(const bool newMode) {
+        m_isKioskMode = newMode;
+        emit kioskModeChanged();
+    }
 
     // Payment API
     // Call a payment system to sync our demoMode state with it
@@ -197,7 +215,18 @@ public:
         emit barHiddenChanged();
     }
 
+    int baseFontSize() const { return m_baseFontSize; }
+    void setBaseFontSize(const int newBaseFontSize) {
+        m_baseFontSize = qMax(qMin(newBaseFontSize, baseFontSizeMax()), baseFontSizeMin());
+        emit baseFontSizeChanged();
+    }
+
+    int baseFontSizeMin() const { return m_baseFontSizeMin; }
+    int baseFontSizeMax() const { return m_baseFontSizeMax; }
+
 protected slots:
+
+    Q_INVOKABLE void notifyShowLockedActivitiesChanged();
 	Q_INVOKABLE void notifyAudioVoicesEnabledChanged();
 	Q_INVOKABLE void notifyAudioEffectsEnabledChanged();
     Q_INVOKABLE void notifyFullscreenChanged();
@@ -208,8 +237,9 @@ protected slots:
     Q_INVOKABLE void notifyAutomaticDownloadsEnabledChanged();
     Q_INVOKABLE void notifyFilterLevelMinChanged();
     Q_INVOKABLE void notifyFilterLevelMaxChanged();
-	Q_INVOKABLE void notifyDemoModeChanged();
-	Q_INVOKABLE void notifySectionVisibleChanged();
+    Q_INVOKABLE void notifyDemoModeChanged();
+    Q_INVOKABLE void notifyKioskModeChanged();
+    Q_INVOKABLE void notifySectionVisibleChanged();
 
     Q_INVOKABLE void notifyDownloadServerUrlChanged();
 
@@ -220,10 +250,12 @@ protected slots:
 public slots:
 	Q_INVOKABLE bool isFavorite(const QString &activity);
 	Q_INVOKABLE void setFavorite(const QString &activity, bool favorite);
+    Q_INVOKABLE void saveBaseFontSize();
 
 protected:
 
 signals:
+    void showLockedActivitiesChanged();
 	void audioVoicesEnabledChanged();
 	void audioEffectsEnabledChanged();
     void fullscreenChanged();
@@ -234,8 +266,10 @@ signals:
     void automaticDownloadsEnabledChanged();
     void filterLevelMinChanged();
     void filterLevelMaxChanged();
-	void demoModeChanged();
-	void sectionVisibleChanged();
+    void demoModeChanged();
+    void kioskModeChanged();
+    void sectionVisibleChanged();
+    void baseFontSizeChanged();
 
     void downloadServerUrlChanged();
 
@@ -250,7 +284,9 @@ private:
                                          const QString& key, const T& value);
 
     static ApplicationSettings *m_instance;
-	bool m_isAudioVoicesEnabled;
+
+    bool m_showLockedActivities;
+    bool m_isAudioVoicesEnabled;
 	bool m_isAudioEffectsEnabled;
     bool m_isFullscreen;
     bool m_isVirtualKeyboard;
@@ -262,8 +298,12 @@ private:
 	bool m_noCursor;
     QString m_locale;
     QString m_font;
-	bool m_isDemoMode;
-	bool m_sectionVisible;
+    bool m_isDemoMode;
+    bool m_isKioskMode;
+    bool m_sectionVisible;
+	int m_baseFontSize;
+	const int m_baseFontSizeMin = -7;
+	const int m_baseFontSizeMax = 7;
 
     QString m_downloadServerUrl;
 

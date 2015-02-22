@@ -44,7 +44,7 @@ var mode;
 
 function start(_items, _mode)
 {
-    Core.checkForVoices(_items.bar);
+    Core.checkForVoices(_items.main);
 
     items = _items;
     mode = _mode;
@@ -143,7 +143,7 @@ function initLevel() {
     if (GCompris.ApplicationSettings.isAudioVoicesEnabled &&
             GCompris.DownloadManager.haveLocalResource(
                 GCompris.DownloadManager.getVoicesResourceForLocale(
-                    GCompris.ApplicationInfo.localeShort))) {
+                    GCompris.ApplicationSettings.locale))) {
         items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/click_on_letter.ogg"));
         items.audioVoices.silence(100)
         playLetter(currentLetter)

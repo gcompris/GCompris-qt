@@ -119,10 +119,10 @@ ActivityBase {
             property int nextY
 
             function showParticles() {
-                particles.emitter.burst(40)
+                particles.burst(40)
             }
 
-            ParticleSystemStar {
+            ParticleSystemStarLoader {
                 id: particles
                 clip: false
             }
@@ -174,7 +174,6 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            audioEffects: activity.audioEffects
             winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
             looseSound: "qrc:/gcompris/src/activities/ballcatch/resource/youcannot.wav"
             Component.onCompleted: win.connect(Activity.nextLevel)

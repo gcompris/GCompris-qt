@@ -1,0 +1,71 @@
+                        GCompris HACKING
+
+Official repository
+-------------------
+The official repository requires a KDE developer account, we will ask regular
+contributors to get an account and work on the KDE repository.
+
+    http://quickgit.kde.org/?p=gcompris.git
+
+For new developers and those interested only in smaller contributions use the
+GitHub repository.
+
+
+Source code from GitHub
+-----------------------
+Checkout the source code by cloning it from GitHub
+
+    git clone git://github.com/bdoin/gcompris-qt.git
+
+If you want to have a personal fork, in order to commit occasional patches,
+fork it on GitHub then clone your fork
+
+    git clone git@github.com:<username>/gcompris-qt.git
+
+When asking for a pull request, create a new topic branch and commit your
+changes there then open a pull request to gcompris-qt repository on GitHub.
+
+See GitHub's documentation for more information.
+
+    https://help.github.com/categories/collaborating/
+
+
+Dependencies
+------------
+In order to be able to compile GCompris the following Qt5 dependencies need to
+be installed
+
+    Qt 5 Development Defaults
+    Qt 5 qmake
+    Qt Creator
+    Qt Linguist Tools
+
+    Qt Core
+    Qt Graphical Effects QML Module
+    Qt Gui
+    Qt Multimedia
+    Qt Multimedia QML Module
+    Qt Network
+    Qt Qml
+    Qt Quick
+    Qt Svg
+    Qt Xml
+    Qt XmlPatterns
+
+Installing dependencies on a Debian based systems can be done like this:
+
+    sudo aptitude install libqt5svg5-dev libqt5xmlpatterns5-dev \
+                          qml-module-qtmultimedia qt5-default \
+                          qml-module-qtgraphicaleffects qt5-qmake qtcreator \
+                          qtdeclarative5-dev qtdeclarative5-dev \
+                          qtmultimedia5-dev qtquick1-5-dev qttools5-dev
+
+To build for Android, Qt 5 AndroidExtra also needs to be installed.
+
+
+Build
+-----
+Start QtCreator and select Open Project and open CMakeLists.txt in the
+gcompris-qt root directory. Follow the wizard instructions.
+
+Use the buttons on the lower left side to build, run, and debug GCompris.

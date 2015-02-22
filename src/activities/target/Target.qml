@@ -184,8 +184,6 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             hide: items.currentArrow == items.nbArrow ? false : true
 
-            keyHeight: 35 * ApplicationInfo.ratio
-            equalKeyWidth: true
             layout: [ [
                     { label: "0" },
                     { label: "1" },

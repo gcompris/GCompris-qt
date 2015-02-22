@@ -10,7 +10,7 @@ Run me from GCompris's top-level directory.
 
 
 SVN_PATH = "svn://anonsvn.kde.org/home/kde/trunk/l10n-kf5/"
-SOURCE_PO_PATH = "/messages/playground-edu/gcompris_qt.po"
+SOURCE_PO_PATH = "/messages/kdereview/gcompris_qt.po"
 OUTPUT_PO_PATH = "./po/"
 OUTPUT_PO_PATTERN = "gcompris_%s.po"
 
@@ -26,6 +26,7 @@ all_languages = subprocess.check_output(['svn', 'cat', SVN_PATH + 'subdirs'],
                                        stderr=subprocess.STDOUT)
 
 all_languages = [x.strip() for x in all_languages.split("\n") if len(x)]
+all_languages.remove("x-test")
 for lang in all_languages:
     try:
         raw_data = subprocess.check_output(['svn', 'cat', SVN_PATH + lang + SOURCE_PO_PATH],

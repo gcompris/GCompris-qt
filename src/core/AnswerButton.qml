@@ -67,7 +67,7 @@ Item {
         color: normalStateColor
         opacity: 0.5
     }
-    ParticleSystemStar {
+    ParticleSystemStarLoader {
         id: particles
     }
     Image {
@@ -103,7 +103,7 @@ Item {
                     feedback.playCorrectSound();
                 blockClicks = true;
                 if (typeof(particles) === "object")
-                    particles.emitter.burst(40);
+                    particles.burst(40);
             }
         }
         PropertyAction {

@@ -18,7 +18,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${my_cxx_flags}")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${my_cxx_flags}")
 
 set(GCOMPRIS_MAJOR_VERSION 0)
-set(GCOMPRIS_MINOR_VERSION 26)
+set(GCOMPRIS_MINOR_VERSION 30)
 set(GCOMPRIS_PATCH_VERSION 0)
 
 set(GCOMPRIS_VERSION ${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION})
@@ -64,6 +64,9 @@ find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
 #    message("${_variableName}=${${_variableName}}")
 #endforeach()
 
+option(WITH_ACTIVATION_CODE "Include the activation system" OFF)
+option(WITH_DEMO_ONLY "Include only demo activities" OFF)
+
 # Set output directory
 if(CMAKE_HOST_APPLE)
   set(_bundle_bin gcompris-qt.app/Contents/MacOS)
@@ -78,6 +81,12 @@ if(ANDROID)
   set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android/libs/${ARM_TARGET}/)
   set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir} CACHE INTERNAL "" FORCE)
   set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir} CACHE INTERNAL "" FORCE)
+  if(WITH_ACTIVATION_CODE)
+    set(ANDROID_BILLING_PERMISSION '<uses-permission android:name="com.android.vending.BILLING"/>')
+    set(ANDROID_PACKAGE "net.gcompris")
+  else(WITH_ACTIVATION_CODE)
+    set(ANDROID_PACKAGE "net.gcompris.full")
+  endif()
   add_subdirectory(android)
 else(ANDROID)
   # Desktop build
@@ -124,11 +133,17 @@ foreach(PoSource ${TRANSLATIONS_FILES})
   # qm filename
   string(REPLACE ".ts" ".qm" QmOutput ${TsSource})
 
+  set(OutTsFile ${CMAKE_BINARY_DIR}/tmp/${TsSource})
   add_custom_command(
     OUTPUT ${QmOutput}
     COMMAND cmake -E make_directory ${GCOMPRIS_TRANSLATIONS_DIR}
     COMMAND cmake -E make_directory ${CMAKE_BINARY_DIR}/tmp
-    COMMAND lconvert -if po -of qm -i ${CMAKE_SOURCE_DIR}/${PoSource} -o ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
+    # Remove the obsolete translations and set po in the ts output file
+    COMMAND msgattrib --no-obsolete  ${CMAKE_CURRENT_SOURCE_DIR}/${PoSource} -o ${OutTsFile}
+    # Convert the po into ts
+    COMMAND lconvert -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
+    # Convert the ts in qm removing non finished translations
+    COMMAND lrelease -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
     )
   list(APPEND QM_FILES ${QmOutput})
 endforeach()
@@ -155,7 +170,7 @@ else()
   option(BUILD_STANDALONE "Build a standalone package when typing 'make package'" ON)
 endif()
 
-option(WITH_ACTIVATION_CODE "Include the activation system" OFF)
+option(WITH_KIOSK_MODE "Set the kiosk mode by default" OFF)
 
 add_subdirectory(src)
 

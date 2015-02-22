@@ -2,7 +2,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "smallnumbers/Smallnumbers.qml"
-  difficulty: 1
+  difficulty: 2
   icon: "smallnumbers/smallnumbers.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false

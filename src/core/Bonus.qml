@@ -21,6 +21,9 @@
 import QtQuick 2.2
 import GCompris 1.0
 
+// Requires the global property in the scope:
+// property GCAudio audioEffects
+
 Image {
     id: bonus
     visible: true
@@ -33,23 +36,46 @@ Image {
     signal win
     signal loose
 
+    property string url: "qrc:/gcompris/src/core/resource/"
     property bool isWin: false
-    property GCAudio audioEffects
-    property string winSound: "qrc:/gcompris/src/core/resource/sounds/bonus.wav"
+    property string winSound: url + "sounds/bonus.wav"
     property string looseSound
+    property var winVoices: [
+        "voices/$LOCALE/misc/congratulation.ogg",
+        "voices/$LOCALE/misc/great.ogg",
+        "voices/$LOCALE/misc/good.ogg",
+        "voices/$LOCALE/misc/awesome.ogg",
+        "voices/$LOCALE/misc/fantastic.ogg",
+        "voices/$LOCALE/misc/waytogo.ogg",
+        "voices/$LOCALE/misc/super.ogg",
+        "voices/$LOCALE/misc/perfect.ogg"
+    ]
+    property var looseVoices: [
+        "voices/$LOCALE/misc/check_answer.ogg"
+    ]
 
+    // For good() and bad(), name can be one of
+    // flower, gnu, lion, note, smiley, tux
     function good(name) {
-        if(audioEffects && winSound)
-            audioEffects.play(winSound)
-        source = "qrc:/gcompris/src/core/resource/bonus/" + name + "_good.png"
+        // Try to play a voice, if not found fallback on the winSound
+        if(!audioEffects.play(
+                    ApplicationInfo.getAudioFilePath(
+                        winVoices[Math.floor(Math.random()*winVoices.length)])))
+            if(winSound)
+                audioEffects.play(winSound)
+        source = url + "bonus/" + name + "_good.png"
         isWin = true;
         animation.start()
     }
 
     function bad(name) {
-        if(audioEffects && looseSound)
-            audioEffects.play(looseSound)
-        source = "qrc:/gcompris/src/core/resource/bonus/" + name + "_bad.png"
+        // Try to play a voice, if not found fallback on the looseSound
+        if(!audioEffects.play(
+                    ApplicationInfo.getAudioFilePath(
+                        looseVoices[Math.floor(Math.random()*looseVoices.length)])))
+            if(looseSound)
+                audioEffects.play(looseSound)
+        source = url + "bonus/" + name + "_bad.png"
         isWin = false;
         animation.start()
     }

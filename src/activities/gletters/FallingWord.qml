@@ -42,7 +42,7 @@ Item {
 
     onWon: {
         wonState = true
-        particle.emitter.burst(30)
+        particle.burst(30)
         dropShadow.opacity = 0
         fadeout.restart();
     }
@@ -115,7 +115,7 @@ Item {
         style: Text.Outline
         styleColor: "white"
 
-        ParticleSystemStar {
+        ParticleSystemStarLoader {
             id: particle
             clip: false
         }

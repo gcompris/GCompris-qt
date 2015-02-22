@@ -72,7 +72,9 @@ public class GComprisActivity extends QtActivity
        @Override
        public void onServiceConnected(ComponentName name, IBinder service)
        {
-           m_service = IInAppBillingService.Stub.asInterface(service);
+           if(service.isBinderAlive()) {
+               m_service = IInAppBillingService.Stub.asInterface(service);
+           }
        }
     };
 
@@ -103,25 +105,23 @@ public class GComprisActivity extends QtActivity
     {
         super.onActivityResult(requestCode, resultCode, data);
 
-        if (requestCode == 1001) {
+        if (resultCode == RESULT_OK && data != null && requestCode == 1001) {
             int responseCode = data.getIntExtra("RESPONSE_CODE", -1);
             String purchaseData = data.getStringExtra("INAPP_PURCHASE_DATA");
 
-             if (resultCode == RESULT_OK) {
-                try {
-                    JSONObject jo = new JSONObject(purchaseData);
-                    String sku = jo.getString("productId");
-                    int purchaseState = jo.getInt("purchaseState");
-                    String payload = jo.getString("developerPayload");
-                    String purchaseToken = jo.getString("purchaseToken");
-                    if (sku.equals(SKU_NAME) && purchaseState == 0) {
-                        bought(true);
-                        return;
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
+            try {
+                JSONObject jo = new JSONObject(purchaseData);
+                String sku = jo.getString("productId");
+                int purchaseState = jo.getInt("purchaseState");
+                String payload = jo.getString("developerPayload");
+                String purchaseToken = jo.getString("purchaseToken");
+                if (sku.equals(SKU_NAME) && purchaseState == 0) {
+                    bought(true);
+                    return;
                 }
-             }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
 
              Log.e(QtApplication.QtTAG, "Buying full version failed: Result code == " + resultCode);
         }
@@ -171,7 +171,7 @@ public class GComprisActivity extends QtActivity
 								  "inapp", null);
             int responseCode = ownedItems.getInt("RESPONSE_CODE");
             if (responseCode == 0) {
-		ArrayList ownedSkus = ownedItems.getStringArrayList("INAPP_PURCHASE_ITEM_LIST");
+                ArrayList ownedSkus = ownedItems.getStringArrayList("INAPP_PURCHASE_ITEM_LIST");
                 ArrayList purchaseDataList = ownedItems.getStringArrayList("INAPP_PURCHASE_DATA_LIST");
                 for(int i=0; i<purchaseDataList.size(); ++i)
                 {

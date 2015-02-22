@@ -150,6 +150,20 @@ void ActivityInfoTree::filterByTag(const QString &tag)
     emit menuTreeChanged();
 }
 
+void ActivityInfoTree::filterLockedActivities()
+{
+    // If we have the full version or if we show all the activities, we don't need to do anything
+    if(!ApplicationSettings::getInstance()->isDemoMode() || ApplicationSettings::getInstance()->showLockedActivities())
+        return;
+    for(auto activity: m_menuTree) {
+        // Remove non free activities if needed. We need to already have a menuTree filled!
+        if(!activity->demo()) {
+            m_menuTree.removeOne(activity);
+        }
+    }
+    emit menuTreeChanged();
+}
+
 void ActivityInfoTree::exportAsSQL()
 {
     QTextStream cout(stdout);
@@ -206,7 +220,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	menuTree->setRootMenu(qobject_cast<ActivityInfo*>(objectRoot));
 
 
-    QFile file(":/gcompris/src/activities/activities.txt");
+    QFile file(":/gcompris/src/activities/activities_out.txt");
 	if(!file.open(QFile::ReadOnly)) {
 		qDebug() << "Failed to load the activity list";
 	}
@@ -233,6 +247,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 	file.close();
 
 	menuTree->filterByTag("favorite");
+    menuTree->filterLockedActivities();
     return menuTree;
 }
 

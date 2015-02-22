@@ -2,7 +2,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "gletters/Gletters.qml"
-  difficulty: 1
+  difficulty: 2
   icon: "gletters/gletters.svg"
   author: "Holger Kaelberer <holger.k@elberer.de>"
   demo: true

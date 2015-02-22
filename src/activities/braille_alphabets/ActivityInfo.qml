@@ -2,7 +2,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "braille_alphabets/BrailleAlphabets.qml"
-  difficulty: 1
+  difficulty: 5
   icon: "braille_alphabets/braille_alphabets.svg"
   author: "Arkit Vora <arkitvora123@gmail.com>"
   demo: true

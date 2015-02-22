@@ -2,7 +2,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "algebra_minus/AlgebraMinus.qml"
-  difficulty: 1
+  difficulty: 4
   icon: "algebra_minus/algebra_minus.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false

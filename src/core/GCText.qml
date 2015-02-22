@@ -36,6 +36,8 @@ Text {
     readonly property int largeSize:    24.0
     readonly property int hugeSize:     32.0
 
+    property bool fixFontSize: false  // set to true for not applying baseFontSize
+
     // font-size are best specified using the fontSize property, which
     // wraps font.pointSize to take the DPI of the display into account.
     // If font.pointSize is used directly text might appear to small on some
@@ -46,6 +48,7 @@ Text {
     // font.pointSize: NaN
     property int fontSize: 14
 
-    font.pointSize: fontSize * ApplicationInfo.fontRatio
+    font.pointSize: ((fixFontSize ? 0 : ApplicationSettings.baseFontSize)
+                      + fontSize) * ApplicationInfo.fontRatio
     font.family: GCSingletonFontLoader.fontLoader.name
 }

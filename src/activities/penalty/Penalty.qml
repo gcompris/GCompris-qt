@@ -398,7 +398,6 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            audioEffects: activity.audioEffects
             winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
             looseSound: "qrc:/gcompris/src/activities/ballcatch/resource/youcannot.wav"
             Component.onCompleted: {

@@ -64,6 +64,8 @@ var droppedWords;
 var currentWord = null;  // reference to the word currently typing, null if n/a
 var wordComponent = null;
 
+var successRate // Falling speed depends on it
+
 function start(items_, uppercaseOnly_,  _mode) {
     items = items_;
     uppercaseOnly = uppercaseOnly_;
@@ -86,6 +88,7 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1;
     wgMaxFallingItems = 3
+    successRate = 1.0
 
     // initialize level
     deleteWords();
@@ -188,6 +191,7 @@ function processKeyPress(text) {
     if (currentWord !== null && currentWord.isCompleted()) {
         // win!
         currentWord.won();  // note: deleteWord() is triggered after fadeout
+        successRate += 0.1
         currentWord = null
         nextSubLevel();
     }
@@ -281,7 +285,7 @@ function createWord()
         else {
             droppedWords[droppedWords.length] = word;
             // speed to duration:
-            var duration = (items.main.height / 2) * speed;
+            var duration = (items.main.height / 2) * speed / successRate;
             /* console.debug("Gletters: dropping new word " + word.text
                     + " duration=" + duration + " (speed=" + speed + ")"  
                     + " num=" + droppedWords.length);*/
@@ -330,6 +334,8 @@ function appendRandomWord(word) {
 }
 
 function audioCrashPlay() {
+    if(successRate > 0.5)
+        successRate -= 0.1
     items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
 }
 

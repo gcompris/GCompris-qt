@@ -26,7 +26,6 @@
   */
 
 .pragma library
-.import QtQuick.Dialogs 1.2 as Dialog
 .import QtQml 2.2 as Qml
 .import GCompris 1.0 as GCompris
 
@@ -59,46 +58,6 @@ function getSoundFilenamForChar(c)
     return result;
 }
 
-/* Helper funciton to workaround dialog-handler being triggered twice in
- * Qt 5.3 (bug #35933) */
-function callMeOnce(_dialog, _func)
-{
-    var called = false;
-    var dialog = _dialog;
-    var func = _func;
-    return function() {
-        if (!called) {
-            func();
-            called = true;
-            destroyDialog(dialog);
-        }
-    }
-}
-
-function populateDialogButtons(dialog, buttonHandler)
-{
-    for(var button in buttonHandler) {
-        // AcceptRole:
-        if (button == Dialog.StandardButton.Ok ||
-            button == Dialog.StandardButton.Ignore)
-            dialog.onAccepted.connect(callMeOnce(dialog, buttonHandler[button]));
-        // RejectRole:
-        else if (button == Dialog.StandardButton.Cancel ||
-                button == Dialog.StandardButton.Abort)
-            dialog.onRejected.connect(callMeOnce(dialog, buttonHandler[button]));
-        // YesRole:
-        else if (button == Dialog.StandardButton.Yes)
-            dialog.onYes.connect(callMeOnce(dialog, buttonHandler[button]));
-        // NoRole:
-        else if (button == Dialog.StandardButton.No)
-            dialog.onNo.connect(callMeOnce(dialog, buttonHandler[button]));
-        else {
-            throw new Error("Invalid standardButton: " + button);
-        }
-        dialog.standardButtons |= button;
-    }
-}
-
 /** Create and present a MessageDialog with the given parameters
  * 
  * Instantiates a Messagedialog object dynamically as child of the  passed
@@ -106,43 +65,42 @@ function populateDialogButtons(dialog, buttonHandler)
  * has been pressed the dialog will be closed and destroyed automatically.
  * 
  * @param parent QML parent object
- * @param title Title
- * @param text  Text
  * @param informativeText  Informative text
- * @param icon A QQuickStandardIcon::Icon
- * @param buttonHandler Object defining a Standardbutton-to-signalhandler
- *                      mapping. Note that max. one button of each
- *                      QMessageBox::ButtonRole are allowed as keys.
- * @returns The MessageDialog object upon success, null otherwise 
+ * @param button1Text the text of the first button
+ * @param button1Callback the callback of the first button
+ * @param button2Text the text of the second button
+ * @param button2Callback the callback of the second button
+ * @param closeCallback the callback of the close button
+ * @returns The MessageDialog object upon success, null otherwise
  */
-function showMessageDialog(parent, title, text, informativeText, icon, buttonHandler) {
-    var qmlStr = 
+function showMessageDialog(parent, informativeText,
+                           button1Text, button1Callback,
+                           button2Text, button2Callback,
+                           closeCallback) {
+    var qmlStr =
           'import QtQuick 2.0\n'
-        + 'import QtQuick.Dialogs 1.2\n'
-        + 'MessageDialog {\n'
-        + '    visible: false\n'
-        + '    modality: Qt.WindowModal\n'
-        + '    title: "' + title +'"\n'
-        + '    text: "' + text + '"\n'
-        + '    informativeText: "' + informativeText + '"\n'
-        + '    icon: StandardIcon.Information\n'
+        + 'GCDialog {\n'
+        + '    message: "' + informativeText + '"\n'
+        + '    button1Text: "' + button1Text + '"\n'
+        + '    button2Text: "' + button2Text + '"\n'
         + ' }\n';
-    //console.log("creating dialog " + qmlStr);
     
     var dialog = null;
     try {
         dialog = Qt.createQmlObject(qmlStr, parent);
-        dialog.icon = icon;
-        dialog.standardButtons = 0;
-        populateDialogButtons(dialog, buttonHandler);
-        dialog.open();
+        if(button1Callback)
+            dialog.button1Hit.connect(button1Callback);
+        if(button2Callback)
+            dialog.button2Hit.connect(button2Callback);
+        if(closeCallback)
+            dialog.close.connect(closeCallback);
+        dialog.start();
     } catch (e) {
         console.error("core.js: Error creating a MessageDialog: " + e);
         if (dialog)
             dialog.destroy();
         return null;
     }
-    //console.log("created MessageDialog " + dialog);
     return dialog;
 }
 
@@ -151,9 +109,8 @@ function showMessageDialog(parent, title, text, informativeText, icon, buttonHan
  * @param dialog A dynamically created MessageDialog or DownloadDialog
  */
 function destroyDialog(dialog) {
-    //console.log("destroying dialog " + dialog);
     if (dialog) {
-        dialog.close();
+        dialog.stop();
         dialog.destroy();
     }
 }
@@ -176,13 +133,15 @@ function showDownloadDialog(parent, properties) {
         if (!downloadDialogComponent) {
             downloadDialogComponent = Qt.createComponent("qrc:/gcompris/src/core/DownloadDialog.qml");
             if (downloadDialogComponent.status != Qml.Component.Ready) {
+                throw new Error("Error creating DownloadDialog component: "
+                        + downloadDialogComponent.errorString());
                 downloadDialogComponent = null;
-                throw new Error("Error creating DownloadDialog component");
             }
         }
         properties.dynamic = true;
         dialog = downloadDialogComponent.createObject( parent, properties);
-        dialog.open();
+        dialog.main = parent
+        dialog.start();
     } catch (e) {
         console.error("core.js: Error creating a DownloadDialog: " + e);
         if (dialog)
@@ -197,24 +156,29 @@ function checkForVoices(parent)
 {
     if (!GCompris.DownloadManager.haveLocalResource(
             GCompris.DownloadManager.getVoicesResourceForLocale(
-                    GCompris.ApplicationInfo.localeShort))) {
-        var buttonHandler = new Array();
-        var dialog;
-        buttonHandler[Dialog.StandardButton.Ok] = function() {};
-        dialog = showMessageDialog(parent, qsTr("Missing sound files!"),
-                qsTr("This activity makes use of language specific sound files, that are not yet installed on your system."),
-                qsTr("For downloading the needed sound files go to the preferences dialog."),
-                Dialog.StandardIcon.Information,
-                buttonHandler);
+                    GCompris.ApplicationSettings.locale))) {
+        showMessageDialog(parent,
+                qsTr("Missing sound files!") + '\n'
+                + qsTr("This activity makes use of language specific sound files, that are not yet installed on your system.")
+                + '\n'
+                + qsTr("For downloading the needed sound files go to the preferences dialog."),
+                "", null,
+                "", null,
+                null);
     }
 }
 
+var aboutToQuit = false;
 function quit(parent)
 {
-    console.log("core.js: about to quit");
+    if (aboutToQuit)  // don't execute concurrently
+        return;
+    aboutToQuit = true;
     if (GCompris.DownloadManager.downloadIsRunning()) {
         var dialog = showDownloadDialog(parent, {
-            text: qsTr("Download in progress.<br/>'Abort' it to quit immediately."),
+            text: qsTr("Download in progress")
+                  + '\n'
+                  + qsTr("Download in progress.<br/>'Abort' it to quit immediately."),
             autohide: true,
             reportError: false,
             reportSuccess: false,
@@ -222,15 +186,14 @@ function quit(parent)
         });
         dialog.finished.connect(function() {Qt.quit();});
     } else if (GCompris.ApplicationInfo.isMobile) {
-        // prvent the user from quitting accidentially by clicking back too often:
-        var buttonHandler = new Array();
-        buttonHandler[Dialog.StandardButton.No] = function() {};
-        buttonHandler[Dialog.StandardButton.Yes] = function() { Qt.quit(); };
-        var dialog = showMessageDialog(parent, qsTr("Quit?"),
-                qsTr("Do you really want to quit Gcompris?"),
-                "",
-                Dialog.StandardIcon.Question,
-                buttonHandler);
+        // prevent the user from quitting accidentially by clicking back too often:
+        showMessageDialog(parent,
+                qsTr("Quit?") +
+                '\n' +
+                qsTr("Do you really want to quit GCompris?"),
+                "YES", function() { Qt.quit(); },
+                "NO", function() { aboutToQuit = false; },
+                function() { aboutToQuit = false; } );
     } else
         Qt.quit();
 }

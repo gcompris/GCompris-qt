@@ -10,7 +10,7 @@ ActivityInfo {
   description: qsTr("Practice reading by finding the word matching an image")
 //  intro: "Click on the word matching the picture."
   goal: qsTr("Letter association between the screen and the keyboard")
-  prerequisite: "Reading"
+  prerequisite: qsTr("Reading")
   manual: qsTr("Click on the word corresponding to the printed image.")
   credit: ""
   section: "reading"

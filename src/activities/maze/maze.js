@@ -343,9 +343,6 @@ function processPressedKey(event) {
         event.accepted = true
         break
     }
-
-    /* Check if success */
-    checkSuccess()
 }
 
 function clickRight() {

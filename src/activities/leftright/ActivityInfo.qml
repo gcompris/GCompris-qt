@@ -2,7 +2,7 @@ import GCompris 1.0
 
 ActivityInfo {
     name: "leftright/Leftright.qml"
-    difficulty: 1
+    difficulty: 2
     icon: "leftright/leftright.svg"
     author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
     demo: false
