@@ -94,7 +94,6 @@ function initLevel() {
     destroyAsteroids(asteroids)
     destroyAsteroids(asteroidsErased)
 
-    items.spaceship.source = url + "tux_spaceship.png"
     items.shuttle.y = items.background.height + items.shuttle.height
 
     if(items.bar.level != 1 ) {

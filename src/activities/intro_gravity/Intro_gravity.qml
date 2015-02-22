@@ -182,7 +182,8 @@ ActivityBase {
 
         Image {
             id: spaceship
-            source: Activity.url +"tux_spaceship.png"
+            source: Activity.url +"tux_spaceship.svg"
+            sourceSize.width: 120 * ApplicationInfo.ratio
             x: parent.width/2
             y: parent.height/2 - height +10
 
