@@ -96,8 +96,9 @@ Item{
 
     Rectangle { // our inlined button ui
             id: button
+            property alias buttonText: buttonText.text
             width: 160; height: 40
-            x: intro_textbg.x + (intro_textbg.width/2) - button.width/2
+            x: intro_textbg.x + (intro_textbg.width/2) + 20
             y: intro_textbg.y + intro_textbg.height - button.height - 5
             gradient: Gradient {
                         GradientStop { position: 0.0; color: "#ffff30" }
@@ -108,14 +109,15 @@ Item{
             radius: 8
             opacity: 1
             z: 5
+            Behavior on opacity { NumberAnimation {duration: 100 } }
 
             anchors.top : intro_textbg.bottom
             anchors.topMargin: 10
-            anchors.right: message.right
 
-            GCText {
+            Text {
+                id: buttonText
                 anchors.centerIn: button
-                text: "Let's Go"
+                text: "Next"
                 color: "#800000"
             }
 
@@ -130,13 +132,14 @@ Item{
                         message.text = intro4
                     }else if(clickCount == 3){
                         message.text = intro5
+                        button.buttonText = "Let's Go"
                     }else if(clickCount == 4){
                         message.text = qsTr("")
                         button.opacity = 0
                         skipButton.opacity = 0
-//                        Activity.initLevel()
                         items.timer.start()
                         items.asteroidCreation.start()
+                        items.shuttleMotion.restart()
                     }
                     clickCount++;
                 }
@@ -146,7 +149,7 @@ Item{
     Rectangle { // our inlined button ui
             id: skipButton
             width: 160; height: 40
-            x: intro_textbg.x + (intro_textbg.width/2) - button.width/2 - skipButton.width/2
+            x: intro_textbg.x + (intro_textbg.width/2) -20- skipButton.width
             y: intro_textbg.y + intro_textbg.height - skipButton.height - 5
             gradient: Gradient {
                         GradientStop { position: 0.0; color: "#ffff30" }
@@ -157,12 +160,10 @@ Item{
             radius: 8
             opacity: 1
             z: 5
+            Behavior on opacity { NumberAnimation {duration: 100 } }
 
             anchors.top : intro_textbg.bottom
             anchors.topMargin: 10
-            anchors.right: message.right
-            anchors.rightMargin: 10 + button.width
-
             GCText {
                 anchors.centerIn: skipButton
                 text: "Skip Instruction"
@@ -175,14 +176,11 @@ Item{
                         message.text = qsTr("")
                         button.opacity = 0
                         skipButton.opacity = 0
-//                        Activity.initLevel()
                         items.timer.start()
                         items.asteroidCreation.start()
-
+                        items.shuttleMotion.restart()
                     }
                 }
             }
-
-
 }
 
