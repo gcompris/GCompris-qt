@@ -122,7 +122,7 @@ ActivityBase {
 
         Image {
             id: planetLeft
-            source: Activity.url+"saturn.png"
+            source: Activity.url + "saturn.svg"
             x: 70
             y: parent.height/2 - 80
             Behavior on scale{
@@ -149,7 +149,7 @@ ActivityBase {
 
         Image {
             id: planetRight
-            source: Activity.url+"neptune.png"
+            source: Activity.url + "neptune.svg"
             x: parent.width - 130
             y: parent.height/2 - 80
             Behavior on scale{
