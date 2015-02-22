@@ -50,7 +50,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: Activity.url+"drawing.svg"
+        source: Activity.url+"background.svg"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
 
