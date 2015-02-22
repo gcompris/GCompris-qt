@@ -37,6 +37,7 @@ guessnumber
 hexagon
 imageid
 instruments
+intro_gravity
 leftright
 lightsoff
 magic-hat-minus
