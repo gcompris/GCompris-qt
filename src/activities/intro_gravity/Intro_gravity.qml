@@ -83,8 +83,8 @@ ActivityBase {
 
         }
 
-        onStart: { Activity.start(items,message) }
-        onStop: { Activity.stop() }
+        onStart: Activity.start(items,message)
+        onStop: Activity.stop()
 
         DialogHelp {
             id: dialogHelp
@@ -108,7 +108,7 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
-        Message{
+        Message {
             id: message
             anchors {
                 top: parent.top
@@ -130,10 +130,9 @@ ActivityBase {
             }
         }
 
-        Slider{
+        Slider {
             id: sliderLeft
             x: 20
-//            y: planetLeft.y  //removed what could have caused cyclic dependency
             y: background.height/2 - sliderLeft.height
             width: 10
             height: planetLeft.height
@@ -148,7 +147,7 @@ ActivityBase {
 
         }
 
-        Image{
+        Image {
             id: planetRight
             source: Activity.url+"neptune.png"
             x: parent.width - 130
@@ -162,7 +161,6 @@ ActivityBase {
         Slider{
             id: sliderRight
             x: planetRight.x + planetRight.width + 20
-//            y: planetRight.y
             y: background.height/2 - sliderRight.height
             width: 10
             height: planetRight.height
@@ -174,10 +172,9 @@ ActivityBase {
             onValueChanged:{
                 planetRight.scale = value
             }
-
         }
 
-        Image{
+        Image {
             id: spaceship
             source: Activity.url +"tux_spaceship.png"
             x: parent.width/2
@@ -186,7 +183,7 @@ ActivityBase {
         }
 
         //for drawing the line to show force magnitude and direction
-        Image{
+        Image {
             id: arrow
             x: spaceship.x - spaceship.width ; y: spaceship.y -80
             width: parent.width/30; height: parent.height/60
@@ -197,7 +194,7 @@ ActivityBase {
             }
         }
 
-        Image{
+        Image {
             id: shuttle
             x:  background.width/2 - shuttle.width - spaceship.width -10
 
@@ -214,7 +211,7 @@ ActivityBase {
             }
         }
 
-        Timer{
+        Timer {
             id: timer
             interval: 16
             running: false
@@ -225,13 +222,13 @@ ActivityBase {
             }
         }
 
-        Timer{
+        Timer {
             id: asteroidCreation
             running: false
             repeat: true
             interval: 10200 - (bar.level * 200)
             onTriggered: Activity.createAsteroid()
-            }
+        }
 
     }
 }

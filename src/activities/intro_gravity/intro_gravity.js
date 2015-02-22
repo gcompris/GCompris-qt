@@ -48,7 +48,7 @@ var asteroidsErased = new Array;
 
 var fallDuration
 var minDuration = 14000
-var asteroidCounter = 1
+var asteroidCounter
 var randomX
 var currentImageId = 0
 
@@ -97,12 +97,11 @@ function initLevel() {
     items.spaceship.source = url + "tux_spaceship.png"
     items.shuttle.y = items.background.height + items.shuttle.height
 
-    if(items.bar.level != 1 ){
+    if(items.bar.level != 1 ) {
         items.timer.start()
         items.asteroidCreation.start()
         items.shuttleMotion.restart()
-    }
-    else{
+    } else {
         message.clickCount =0
         message.text = message.intro1
         message.button.opacity = 1
@@ -146,7 +145,6 @@ function repositionObjectsOnHeightChanged(factor) {
 
 
 // functions to create and handle asteroids
-asteroidCounter =1
 function createAsteroid() {
 
     var asteroidComponent = Qt.createComponent("qrc:/gcompris/src/activities/intro_gravity/Asteroid.qml");
@@ -155,13 +153,12 @@ function createAsteroid() {
 
     randomX = Math.floor(Math.random() * (items.background.width-200))
 
-    if(randomX < 200){
+    if(randomX < 200) {
         randomX += 200
     }
 
     fallDuration = minDuration - Math.floor(Math.random()* 1000 *(currentLevel+1))
 
-    console.log(currentLevel+" and falling " +fallDuration)
     var asteroid = asteroidComponent.createObject(
                 items.background,
                 {
@@ -174,15 +171,13 @@ function createAsteroid() {
                     "fallDuration": fallDuration
                 });
 
-    if(asteroid== null){
-        console.log("error creating asteroid object")
+    if(asteroid === null) {
+        console.log("error in creating the asteroid object")
     }
 
     asteroids.push(asteroid);
     asteroid.startMoving(fallDuration)
     asteroidCounter++
-    console.log(asteroidCounter)
-
 }
 
 function destroyAsteroids(asteroids) {
@@ -243,19 +238,19 @@ function movespaceship(){
 
 }
 
-function handleCollisionWithAsteroid(){
+function handleCollisionWithAsteroid()
+{
         if(asteroids !== undefined){
-         for(var i = asteroids.length -1 ; i>=0 ; --i){
+         for(var i = asteroids.length -1 ; i>=0 ; --i) {
              var asteroid = asteroids[i];
              var x = asteroid.x
              var y = asteroid.y
 
-             if(y > items.background.height ){
+             if(y > items.background.height ) {
                      asteroid.destroy()
                      asteroids.splice(i,1)
-                 }
-             else if(y > items.spaceship.y -80 && y < items.spaceship.y +40
-                     && x>items.spaceship.x -40 && x< items.spaceship.x + 80 ){
+             } else if(y > items.spaceship.y -80 && y < items.spaceship.y +40
+                     && x>items.spaceship.x -40 && x< items.spaceship.x + 80 ) {
                     asteroid.destroy()
                     asteroids.splice(i,1)
                     crash()
@@ -271,12 +266,11 @@ function handleCollisionWithAsteroid(){
 }
 
 
-function drawArrow(x1,y1,scaling,direction){
-    if(direction=="left"){
+function drawArrow(x1,y1,scaling,direction) {
+    if(direction=="left") {
         items.arrow.x = x1 - 20
         items.arrow.source = url + "arrowleft.svg"
-    }
-    else{
+    } else {
         items.arrow.x = x1
         items.arrow.source = url + "arrowright.svg"
     }
@@ -285,7 +279,7 @@ function drawArrow(x1,y1,scaling,direction){
 }
 
 
-function crash(){
+function crash() {
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
         items.spaceship.source = "qrc:/gcompris/src/activities/intro_gravity/resource/crash.png"
         stop()

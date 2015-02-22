@@ -36,25 +36,30 @@ Item{
     property alias button: button
     property alias skipButton: skipButton
 
-    property string intro1: qsTr("Gravity is universal and Newton's law of universal gravitation extends gravity"
-                                 +"\n"+" beyond earth. This force of gravitational attraction is directly dependent"
-                                 +"\n"+" upon the masses of both objects and inversely proportional to "
-                                 +"\n"+"the square of the distance that separates their centers.")
-    property string intro2: qsTr("Since the gravitational force is directly proportional to the mass of both interacting"
-                                 +"\n"+"objects, more massive objects will attract each other with a greater gravitational"
-                                 +"\n"+"force.So as the mass of either object increases, the force of gravitational"
-                                 +"\n"+" attraction between them also increases")
-    property string intro3: qsTr(" but this force is inversely proportional to the square of the separation distance"
-                                 +"\n"+" between the two interacting objects, more separation distance will "
-                                 +"\n"+"result in weaker gravitational forces.")
-    property string intro4: qsTr("Your goal is to let Tux's spaceship move by changing the mass"
-                                 +"\n"+" of its surrounding planets. Don't get too close to the planets"
-                                 +"\n"+" or you will crash on them."
-                                 +"\n"+" The arrow indicates the direction of the force on your ship.")
-    property string intro5: qsTr("Avoid the asteroid and join the space"
-                           +"\n"+" shuttle to win.")
+    property string intro1:
+        qsTr("Gravity is universal and Newton's law of universal gravitation extends gravity"
+             +"\n"+" beyond earth. This force of gravitational attraction is directly dependent"
+             +"\n"+" upon the masses of both objects and inversely proportional to "
+             +"\n"+"the square of the distance that separates their centers.")
+    property string intro2:
+        qsTr("Since the gravitational force is directly proportional to the mass of both interacting"
+             +"\n"+"objects, more massive objects will attract each other with a greater gravitational"
+             +"\n"+"force.So as the mass of either object increases, the force of gravitational"
+             +"\n"+" attraction between them also increases")
+    property string intro3:
+        qsTr(" but this force is inversely proportional to the square of the separation distance"
+             +"\n"+" between the two interacting objects, more separation distance will "
+             +"\n"+"result in weaker gravitational forces.")
+    property string intro4:
+        qsTr("Your goal is to let Tux's spaceship move by changing the mass"
+             +"\n"+" of its surrounding planets. Don't get too close to the planets"
+             +"\n"+" or you will crash on them."
+             +"\n"+" The arrow indicates the direction of the force on your ship.")
+    property string intro5:
+        qsTr("Avoid the asteroid and join the space"
+             +"\n"+" shuttle to win.")
 
-    Rectangle{
+    Rectangle {
         id: intro_textbg
         x: intro_text.x -4
         y: intro_text.y -4
@@ -69,7 +74,7 @@ Item{
 
     }
 
-    GCText{
+    GCText {
         id: intro_text
         text: qsTr("Gravity is universal and Newton's law of universal gravitation extends gravity"
                        +"\n"+" beyond earth. This force of gravitational attraction is directly dependent"
@@ -78,7 +83,6 @@ Item{
         fontSize: regularSize
         font.weight: Font.DemiBold
         horizontalAlignment: Text.AlignHCenter
-//        verticalAlignment: Text.AlignVCenter
         anchors {
             top: parent.top
             topMargin: 10 *ApplicationInfo.ratio
@@ -124,16 +128,16 @@ Item{
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    if( clickCount == 0){
+                    if( clickCount == 0) {
                         message.text = intro2
-                    }else if(clickCount == 1){
+                    } else if(clickCount == 1) {
                         message.text = intro3
-                    }else if(clickCount == 2){
+                    } else if(clickCount == 2) {
                         message.text = intro4
-                    }else if(clickCount == 3){
+                    } else if(clickCount == 3) {
                         message.text = intro5
                         button.buttonText = "Let's Go"
-                    }else if(clickCount == 4){
+                    } else if(clickCount == 4) {
                         message.text = qsTr("")
                         button.opacity = 0
                         skipButton.opacity = 0
@@ -173,14 +177,14 @@ Item{
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                        message.text = qsTr("")
-                        button.opacity = 0
-                        skipButton.opacity = 0
-                        items.timer.start()
-                        items.asteroidCreation.start()
-                        items.shuttleMotion.restart()
-                    }
+                    message.text = qsTr("")
+                    button.opacity = 0
+                    skipButton.opacity = 0
+                    items.timer.start()
+                    items.asteroidCreation.start()
+                    items.shuttleMotion.restart()
                 }
             }
+    }
 }
 
