@@ -1,7 +1,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "intro_gravity/Intro_gravity.qml"
+  name: "intro_gravity/IntroGravity.qml"
   difficulty: 4
   icon: "intro_gravity/intro_gravity.svg"
   author: "Siddhesh suthar<siddhesh.it@gmail.com>"
