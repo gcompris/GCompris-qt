@@ -76,10 +76,6 @@ Item{
 
     GCText {
         id: intro_text
-        text: qsTr("Gravity is universal and Newton's law of universal gravitation extends gravity"
-                       +"\n"+" beyond earth. This force of gravitational attraction is directly dependent"
-                       +"\n"+" upon the masses of both objects and inversely proportional to "
-                       +"\n"+"the square of the distance that separates their centers.")
         fontSize: regularSize
         font.weight: Font.DemiBold
         horizontalAlignment: Text.AlignHCenter
@@ -91,7 +87,6 @@ Item{
             left: parent.left
             leftMargin: 5 * ApplicationInfo.ratio
         }
-        color: "#800000"
         width: parent.width
         wrapMode: Text.WordWrap
         opacity: message.displayed ? 1 : 0
@@ -100,8 +95,9 @@ Item{
 
     Rectangle { // our inlined button ui
             id: button
-            property alias buttonText: buttonText.text
-            width: 160; height: 40
+            property alias buttonText: nextText.text
+            width: Math.max(skipText.width, nextText.width) * 1.2
+            height: Math.max(skipText.height, nextText.height) * 1.4
             x: intro_textbg.x + (intro_textbg.width/2) + 20
             y: intro_textbg.y + intro_textbg.height - button.height - 5
             gradient: Gradient {
@@ -118,11 +114,10 @@ Item{
             anchors.top : intro_textbg.bottom
             anchors.topMargin: 10
 
-            Text {
-                id: buttonText
-                anchors.centerIn: button
-                text: "Next"
-                color: "#800000"
+            GCText {
+                id: nextText
+                anchors.centerIn: parent
+                text: qsTr("Next")
             }
 
             MouseArea {
@@ -136,9 +131,9 @@ Item{
                         message.text = intro4
                     } else if(clickCount == 3) {
                         message.text = intro5
-                        button.buttonText = "Let's Go"
+                        button.buttonText = qsTr("Let's Go")
                     } else if(clickCount == 4) {
-                        message.text = qsTr("")
+                        message.text = ""
                         button.opacity = 0
                         skipButton.opacity = 0
                         items.timer.start()
@@ -152,7 +147,8 @@ Item{
 
     Rectangle { // our inlined button ui
             id: skipButton
-            width: 160; height: 40
+            width: button.width
+            height: button.height
             x: intro_textbg.x + (intro_textbg.width/2) -20- skipButton.width
             y: intro_textbg.y + intro_textbg.height - skipButton.height - 5
             gradient: Gradient {
@@ -169,15 +165,15 @@ Item{
             anchors.top : intro_textbg.bottom
             anchors.topMargin: 10
             GCText {
-                anchors.centerIn: skipButton
-                text: "Skip Instruction"
-                color: "#800000"
+                id: skipText
+                anchors.centerIn: parent
+                text: qsTr("Skip Instruction")
             }
 
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    message.text = qsTr("")
+                    message.text = ""
                     button.opacity = 0
                     skipButton.opacity = 0
                     items.timer.start()
