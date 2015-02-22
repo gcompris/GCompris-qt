@@ -47,7 +47,7 @@ var asteroids = new Array;
 var asteroidsErased = new Array;
 
 var fallDuration
-var minDuration = 12000
+var minDuration = 14000
 var asteroidCounter = 1
 var randomX
 var currentImageId = 0
@@ -69,6 +69,7 @@ function stop() {
     destroyAsteroids(asteroidsErased)
     items.timer.stop()
     items.asteroidCreation.stop()
+    items.shuttleMotion.stop()
 }
 
 function initLevel() {
@@ -76,15 +77,16 @@ function initLevel() {
 
     items.timer.stop()
     items.asteroidCreation.stop()
+    items.shuttleMotion.stop()
 
     items.scaleLeft = 1.5 ; items.scaleRight = 1.5
-    items.shuttle.x = items.background.width/2
+    items.spaceship.x = items.background.width/2
 
     items.arrow.scale = 1
-    items.arrow.x = items.shuttle.x - items.shuttle.width ;
+    items.arrow.x = items.spaceship.x - items.spaceship.width ;
 
-    x = items.shuttle.x;
-    y = items.shuttle.y;
+    x = items.spaceship.x;
+    y = items.spaceship.y;
     move = 0
 
     asteroidCounter = 1
@@ -92,11 +94,13 @@ function initLevel() {
     destroyAsteroids(asteroids)
     destroyAsteroids(asteroidsErased)
 
-    items.shuttle.source = url + "tux_spaceship.png"
+    items.spaceship.source = url + "tux_spaceship.png"
+    items.shuttle.y = items.background.height + items.shuttle.height
 
     if(items.bar.level != 1 ){
         items.timer.start()
         items.asteroidCreation.start()
+        items.shuttleMotion.restart()
     }
     else{
         message.clickCount =0
@@ -192,7 +196,7 @@ function destroyAsteroids(asteroids) {
 }
 
 
-function moveShuttle(){
+function movespaceship(){
     scaleLeft = items.scaleLeft;
     scaleRight = items.scaleRight;
 
@@ -203,7 +207,7 @@ function moveShuttle(){
                     ( scaleLeft / Math.pow(distLeft,2) ) ) * 200.0 * items.bar.level
 
 
-    items.shuttle.x += move
+    items.spaceship.x += move
 
     forceLeft = (scaleLeft / Math.pow(distLeft,2) ) * Math.pow(10,5)
     forceRight = (scaleRight / Math.pow(distRight,2) ) * Math.pow(10,5)
@@ -214,7 +218,7 @@ function moveShuttle(){
       else
         right_force_intensity = 6
 
-      drawArrow(items.shuttle.x + items.shuttle.width-10 ,items.shuttle.y ,right_force_intensity,"right")
+      drawArrow(items.spaceship.x + items.spaceship.width-10 ,items.spaceship.y ,right_force_intensity,"right")
      }
     else{
       if (forceLeft < 3)
@@ -222,15 +226,20 @@ function moveShuttle(){
       else
         left_force_intensity = 6
 
-      drawArrow(items.shuttle.x+10 ,items.shuttle.y ,left_force_intensity,"left")
+      drawArrow(items.spaceship.x+10 ,items.spaceship.y ,left_force_intensity,"left")
     }
 
 // Manage the crash case
 
-    if(items.shuttle.x-items.planetLeft.x < 50)
+    if(items.spaceship.x-items.planetLeft.x < 50)
             crash()
-    else if(items.planetRight.x - items.shuttle.x < 50)
+    else if(items.planetRight.x - items.spaceship.x < 50)
             crash()
+// Manage to get into shuttle
+
+    if(items.shuttle.y > items.spaceship.y -80 && items.shuttle.y < items.spaceship.y +40
+            && items.shuttle.x>items.spaceship.x -40 && items.shuttle.x< items.spaceship.x + 80)
+            items.bonus.good("flower")
 
 }
 
@@ -245,8 +254,8 @@ function handleCollisionWithAsteroid(){
                      asteroid.destroy()
                      asteroids.splice(i,1)
                  }
-             else if(y > items.shuttle.y -80 && y < items.shuttle.y +40
-                     && x>items.shuttle.x -40 && x< items.shuttle.x + 80 ){
+             else if(y > items.spaceship.y -80 && y < items.spaceship.y +40
+                     && x>items.spaceship.x -40 && x< items.spaceship.x + 80 ){
                     asteroid.destroy()
                     asteroids.splice(i,1)
                     crash()
@@ -255,6 +264,7 @@ function handleCollisionWithAsteroid(){
                  items.asteroidCreation.stop()
                  items.bonus.good("flower")
              }
+
          }
      }
 
@@ -277,6 +287,6 @@ function drawArrow(x1,y1,scaling,direction){
 
 function crash(){
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
-        items.shuttle.source = "qrc:/gcompris/src/activities/intro_gravity/resource/crash.png"
+        items.spaceship.source = "qrc:/gcompris/src/activities/intro_gravity/resource/crash.png"
         stop()
 }

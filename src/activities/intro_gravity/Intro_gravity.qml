@@ -73,7 +73,9 @@ ActivityBase {
             property alias planetRight: planetRight
             property alias scaleLeft: sliderLeft.value
             property alias scaleRight: sliderRight.value
+            property alias spaceship: spaceship
             property alias shuttle: shuttle
+            property alias shuttleMotion: shuttleMotion
             property alias timer: timer
             property alias arrow: arrow
             property alias asteroidCreation: asteroidCreation
@@ -110,7 +112,7 @@ ActivityBase {
             id: message
             anchors {
                 top: parent.top
-                topMargin: shuttle.y + shuttle.height
+                topMargin: 10
                 right: parent.right
                 rightMargin: 5
                 left: parent.left
@@ -176,7 +178,7 @@ ActivityBase {
         }
 
         Image{
-            id: shuttle
+            id: spaceship
             source: Activity.url +"tux_spaceship.png"
             x: parent.width/2
             y: parent.height/2 - height +10
@@ -186,12 +188,29 @@ ActivityBase {
         //for drawing the line to show force magnitude and direction
         Image{
             id: arrow
-            x: shuttle.x - shuttle.width ; y: shuttle.y -80
+            x: spaceship.x - spaceship.width ; y: spaceship.y -80
             width: parent.width/30; height: parent.height/60
             scale : 1
             source: Activity.url +"arrowright.svg"
             Behavior on scale {
                 NumberAnimation{ duration: 48 }
+            }
+        }
+
+        Image{
+            id: shuttle
+            x:  background.width/2 - shuttle.width - spaceship.width -10
+
+            y: background.height + shuttle.height
+            source: Activity.url + "space_shuttle.svg"
+            z: 10
+
+            NumberAnimation {
+                id: shuttleMotion
+                target: shuttle
+                property: "y"
+                to: 0 - shuttle.height
+                duration: 40000 / (Activity.currentLevel+1)
             }
         }
 
@@ -201,7 +220,7 @@ ActivityBase {
             running: false
             repeat: true
             onTriggered: {
-                Activity.moveShuttle()
+                Activity.movespaceship()
                 Activity.handleCollisionWithAsteroid()
             }
         }
