@@ -28,13 +28,12 @@ import "intro_gravity.js" as Activity
 
 Item{
     id: message    
+    opacity: message.displayed ? 1 : 0
 
     property alias text: intro_text.text
     property bool displayed: intro_text.text != "" ? true : false
 
     property int clickCount: 0
-    property alias button: button
-    property alias skipButton: skipButton
 
     property string intro1:
         qsTr("Gravity is universal and Newton's law of universal gravitation extends gravity"
@@ -59,6 +58,9 @@ Item{
         qsTr("Avoid the asteroid and join the space"
              +"\n"+" shuttle to win.")
 
+    Behavior on opacity { NumberAnimation {duration: 100 } }
+    onOpacityChanged: opacity == 1 ? clickCount = 0 : null
+
     Rectangle {
         id: intro_textbg
         x: intro_text.x -4
@@ -69,9 +71,6 @@ Item{
         border.color: "#7AA3CC"
         border.width: 2
         radius: 8
-        opacity: message.displayed ? 1 : 0
-        Behavior on opacity { NumberAnimation {duration: 100 } }
-
     }
 
     GCText {
@@ -89,98 +88,88 @@ Item{
         }
         width: parent.width
         wrapMode: Text.WordWrap
-        opacity: message.displayed ? 1 : 0
-        Behavior on opacity {  NumberAnimation { duration: 100} }
     }
 
     Rectangle { // our inlined button ui
-            id: button
-            property alias buttonText: nextText.text
-            width: Math.max(skipText.width, nextText.width) * 1.2
-            height: Math.max(skipText.height, nextText.height) * 1.4
-            x: intro_textbg.x + (intro_textbg.width/2) + 20
-            y: intro_textbg.y + intro_textbg.height - button.height - 5
-            gradient: Gradient {
-                        GradientStop { position: 0.0; color: "#ffff30" }
-                        GradientStop { position: 1.0; color: "#CCCC29" }
-                    }
-            border.color: "#7AA3CC"
-            border.width: 3
-            radius: 8
-            opacity: 1
-            z: 5
-            Behavior on opacity { NumberAnimation {duration: 100 } }
+        id: button
+        property alias buttonText: nextText.text
+        width: Math.max(skipText.width, nextText.width) * 1.2
+        height: Math.max(skipText.height, nextText.height) * 1.4
+        x: intro_textbg.x + (intro_textbg.width/2) + 20
+        y: intro_textbg.y + intro_textbg.height - button.height - 5
+        gradient: Gradient {
+            GradientStop { position: 0.0; color: "#ffff30" }
+            GradientStop { position: 1.0; color: "#CCCC29" }
+        }
+        border.color: "#7AA3CC"
+        border.width: 3
+        radius: 8
+        visible: parent.text != ""
+        z: 5
 
-            anchors.top : intro_textbg.bottom
-            anchors.topMargin: 10
+        anchors.top : intro_textbg.bottom
+        anchors.topMargin: 10
 
-            GCText {
-                id: nextText
-                anchors.centerIn: parent
-                text: qsTr("Next")
-            }
+        GCText {
+            id: nextText
+            anchors.centerIn: parent
+            text: qsTr("Next")
+        }
 
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    if( clickCount == 0) {
-                        message.text = intro2
-                    } else if(clickCount == 1) {
-                        message.text = intro3
-                    } else if(clickCount == 2) {
-                        message.text = intro4
-                    } else if(clickCount == 3) {
-                        message.text = intro5
-                        button.buttonText = qsTr("Let's Go")
-                    } else if(clickCount == 4) {
-                        message.text = ""
-                        button.opacity = 0
-                        skipButton.opacity = 0
-                        items.timer.start()
-                        items.asteroidCreation.start()
-                        items.shuttleMotion.restart()
-                    }
-                    clickCount++;
-                }
-            }
-    }
-
-    Rectangle { // our inlined button ui
-            id: skipButton
-            width: button.width
-            height: button.height
-            x: intro_textbg.x + (intro_textbg.width/2) -20- skipButton.width
-            y: intro_textbg.y + intro_textbg.height - skipButton.height - 5
-            gradient: Gradient {
-                        GradientStop { position: 0.0; color: "#ffff30" }
-                        GradientStop { position: 1.0; color: "#CCCC29" }
-                    }
-            border.color: "#7AA3CC"
-            border.width: 3
-            radius: 8
-            opacity: 1
-            z: 5
-            Behavior on opacity { NumberAnimation {duration: 100 } }
-
-            anchors.top : intro_textbg.bottom
-            anchors.topMargin: 10
-            GCText {
-                id: skipText
-                anchors.centerIn: parent
-                text: qsTr("Skip Instruction")
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                if( clickCount == 0) {
+                    message.text = intro2
+                } else if(clickCount == 1) {
+                    message.text = intro3
+                } else if(clickCount == 2) {
+                    message.text = intro4
+                } else if(clickCount == 3) {
+                    message.text = intro5
+                    button.buttonText = qsTr("Let's Go")
+                } else if(clickCount == 4) {
                     message.text = ""
-                    button.opacity = 0
-                    skipButton.opacity = 0
                     items.timer.start()
                     items.asteroidCreation.start()
                     items.shuttleMotion.restart()
                 }
+                clickCount++;
             }
+        }
+    }
+
+    Rectangle { // our inlined button ui
+        id: skipButton
+        width: button.width
+        height: button.height
+        x: intro_textbg.x + (intro_textbg.width/2) -20- skipButton.width
+        y: intro_textbg.y + intro_textbg.height - skipButton.height - 5
+        gradient: Gradient {
+            GradientStop { position: 0.0; color: "#ffff30" }
+            GradientStop { position: 1.0; color: "#CCCC29" }
+        }
+        border.color: "#7AA3CC"
+        border.width: 3
+        radius: 8
+        z: 5
+
+        anchors.top : intro_textbg.bottom
+        anchors.topMargin: 10
+        GCText {
+            id: skipText
+            anchors.centerIn: parent
+            text: qsTr("Skip Instruction")
+        }
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                message.text = ""
+                items.timer.start()
+                items.asteroidCreation.start()
+                items.shuttleMotion.restart()
+            }
+        }
     }
 }
-

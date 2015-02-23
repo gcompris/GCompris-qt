@@ -80,7 +80,11 @@ ActivityBase {
             property alias arrow: arrow
             property alias asteroidCreation: asteroidCreation
             property GCAudio audioEffects: activity.audioEffects
-
+            property double distLeft: Math.abs(spaceshipX - sliderLeft.x)
+            property double distRight: Math.abs(sliderRight.x  - spaceshipX)
+            property double forceLeft: (Math.pow(scaleLeft, 2) / Math.pow(distLeft, 2))
+            property double forceRight: (Math.pow(scaleRight, 2) / Math.pow(distRight, 2))
+            property double spaceshipX
         }
 
         onStart: Activity.start(items,message)
@@ -128,7 +132,7 @@ ActivityBase {
             height: 72
             x: 70
             y: parent.height/2 - 80
-            Behavior on scale{
+            Behavior on scale {
                 NumberAnimation{ duration: 100 }
             }
         }
@@ -142,12 +146,9 @@ ActivityBase {
             activeFocusOnPress: true
             orientation: Qt.Vertical
             value: 1.5
-            maximumValue: 2.0
-            minimumValue: 1.0
-            onValueChanged:{
-                planetLeft.scale = value
-            }
-
+            minimumValue: 0.8
+            maximumValue: 2.5
+            onValueChanged: planetLeft.scale = value
         }
 
         Image {
@@ -158,13 +159,13 @@ ActivityBase {
             height: 92
             x: parent.width - 130
             y: parent.height/2 - 80
-            Behavior on scale{
+            Behavior on scale {
                 NumberAnimation{ duration: 100 }
             }
         }
 
 
-        Slider{
+        Slider {
             id: sliderRight
             x: planetRight.x + planetRight.width + 20
             y: background.height/2 - sliderRight.height
@@ -173,40 +174,44 @@ ActivityBase {
             activeFocusOnPress: true
             orientation: Qt.Vertical
             value: 1.5
-            maximumValue: 2.0
-            minimumValue: 1.0
-            onValueChanged:{
-                planetRight.scale = value
-            }
+            minimumValue: sliderLeft.minimumValue
+            maximumValue: sliderLeft.maximumValue
+            onValueChanged: planetRight.scale = value
         }
 
         Image {
             id: spaceship
-            source: Activity.url +"tux_spaceship.svg"
+            source: Activity.url + "tux_spaceship.svg"
             sourceSize.width: 120 * ApplicationInfo.ratio
-            x: parent.width/2
-            y: parent.height/2 - height +10
-
+            x: items.spaceshipX - width / 2
+            y: parent.height / 2 - height + 10
         }
 
-        //for drawing the line to show force magnitude and direction
+        // line to show force magnitude and direction
         Image {
             id: arrow
-            x: spaceship.x - spaceship.width ; y: spaceship.y -80
-            width: parent.width/30; height: parent.height/60
-            scale : 1
-            source: Activity.url +"arrowright.svg"
-            Behavior on scale {
-                NumberAnimation{ duration: 48 }
+            visible: !message.displayed && width > 10 && timer.running
+            x: items.forceLeft < items.forceRight ?
+                   items.spaceshipX : items.spaceshipX - width
+            y: spaceship.y - 80
+            z: 11
+            sourceSize.width: 120 * 10 * ApplicationInfo.ratio
+            width: 10 *  Math.min(10, Math.abs(items.forceLeft - items.forceRight) * Math.pow(10, 6))
+            height: 40 * ApplicationInfo.ratio
+            source: Activity.url +"arrow.svg"
+            rotation: items.forceLeft > items.forceRight ? 0 : 180
+            Behavior on rotation {
+                NumberAnimation{ duration: 100 }
+            }
+            Behavior on width {
+                NumberAnimation{ duration: 100 }
             }
         }
 
         Image {
             id: shuttle
-            x:  background.width/2 - shuttle.width - spaceship.width -10
-
-            y: background.height + shuttle.height
             source: Activity.url + "space_shuttle.svg"
+            sourceSize.width: 80 * ApplicationInfo.ratio
             z: 10
 
             NumberAnimation {

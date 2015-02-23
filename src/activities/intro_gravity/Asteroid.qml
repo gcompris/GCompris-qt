@@ -27,25 +27,13 @@ import GCompris 1.0
 
 Image {
     id: asteroid
-
-    property Item background
-    property Item items
-    property real fallDuration
-
     fillMode: Image.PreserveAspectFit
-
     sourceSize.height: 60 * ApplicationInfo.ratio
-    x: 0
-    y: 5
     z: 5
 
-    Component.onCompleted: {
-        x =  Activity.randomX
-        y =  5
-    }
+    property alias fallDuration: down.duration
 
-    function startMoving(dur){
-        down.duration = dur
+    function startMoving() {
         down.restart()
     }
 
@@ -55,7 +43,5 @@ Image {
         target: asteroid
         property: "y"
         to: parent.height
-        duration: 10000
-
     }
 }
