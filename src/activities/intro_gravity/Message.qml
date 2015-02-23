@@ -113,7 +113,7 @@ Item{
         GCText {
             id: nextText
             anchors.centerIn: parent
-            text: qsTr("Next")
+            text: clickCount != 4 ? qsTr("Next") : qsTr("Let's Go")
         }
 
         MouseArea {
@@ -127,7 +127,6 @@ Item{
                     message.text = intro4
                 } else if(clickCount == 3) {
                     message.text = intro5
-                    button.buttonText = qsTr("Let's Go")
                 } else if(clickCount == 4) {
                     message.text = ""
                     items.timer.start()
