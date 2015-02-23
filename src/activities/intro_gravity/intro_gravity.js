@@ -79,10 +79,9 @@ function initLevel() {
         items.timer.start()
         items.asteroidCreation.start()
         items.shuttleMotion.restart()
-        message.text = ""
+        message.index = 0
     } else {
-        message.clickCount =0
-        message.text = message.intro1
+        message.index = 1
     }
 }
 
