@@ -150,9 +150,12 @@ function disableNonDraggablediscs()
 
 function deHighlightTowers()
  {
-    items.tower1Image.highlight = false
-    items.tower2Image.highlight = false
-    items.tower3Image.highlight = false
+    if(items.tower1Image)
+        items.tower1Image.highlight = false
+    if(items.tower2Image)
+        items.tower2Image.highlight = false
+    if(items.tower3Image)
+        items.tower3Image.highlight = false
 }
 
 function checkIfDiscOnTowerImage(disc, towerImage)
