@@ -72,6 +72,8 @@ function placeDisc(disc, towerImage)
 
 function placeDiscsAtOrigin() {
     // Reset the model to get the initial animation
+    if(items.discRepeater.model === items.numberOfDisc)
+        items.discRepeater.model = 0
     items.discRepeater.model = items.numberOfDisc
 
     for( var i = 0 ; i < items.numberOfDisc ; ++i ) {
