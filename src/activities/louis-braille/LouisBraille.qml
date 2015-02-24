@@ -245,7 +245,7 @@ ActivityBase {
 
             onShuffle: {
                 containerModel.clear()
-                var dataitems = items.dataset
+                var dataitems = Object.create(items.dataset)
                 dataitems = Core.shuffle(dataitems)
                 for(var i = 0 ; i < dataitems.length ; i++) {
                     containerModel.append(dataitems[i]);
@@ -260,13 +260,17 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home }
+            content: BarEnumContent { value: help | home | reload }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onReloadClicked: {
+                items.count = 0
+                list.visible = false
+            }
         }
 
         Bonus {

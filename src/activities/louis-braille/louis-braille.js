@@ -23,15 +23,12 @@
 .import QtQuick 2.0 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
-var numberOfLevel = 4
 var items
 
 var url = "qrc:/gcompris/src/activities/louis-braille/resource/"
 
 function start(items_) {
     items = items_
-    currentLevel = 0
     initLevel()
 }
 
@@ -39,23 +36,8 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
     // Write the sequence in the dataset
     for(var i = 0 ; i < items.dataset.length ; i++)
         items.dataset[i].sequence = i
     items.count = 0
-}
-
-function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
-    initLevel();
-}
-
-function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
-    initLevel();
 }
