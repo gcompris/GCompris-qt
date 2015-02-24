@@ -80,11 +80,13 @@ ActivityBase {
             property alias arrow: arrow
             property alias asteroidCreation: asteroidCreation
             property GCAudio audioEffects: activity.audioEffects
-            property double distLeft: Math.abs(spaceshipX - sliderLeft.x)
-            property double distRight: Math.abs(sliderRight.x  - spaceshipX)
-            property double forceLeft: (Math.pow(scaleLeft, 2) / Math.pow(distLeft, 2))
-            property double forceRight: (Math.pow(scaleRight, 2) / Math.pow(distRight, 2))
+            property double distLeft: Math.abs(spaceshipX)
+            property double distRight: Math.abs(background.width - spaceshipX)
+            property double forceLeft: (Math.pow(scaleLeft, 2) / Math.pow(distLeft, 2)) * Math.pow(10, 6)
+            property double forceRight: (Math.pow(scaleRight, 2) / Math.pow(distRight, 2)) * Math.pow(10, 6)
+            // the center value for the spaceship
             property double spaceshipX
+            property double spaceshipY: sliderLeft.y + sliderLeft.height / 2
         }
 
         onStart: Activity.start(items,message)
@@ -114,6 +116,7 @@ ActivityBase {
 
         Message {
             id: message
+            z: 20
             anchors {
                 top: parent.top
                 topMargin: 10
@@ -184,19 +187,19 @@ ActivityBase {
             source: Activity.url + "tux_spaceship.svg"
             sourceSize.width: 120 * ApplicationInfo.ratio
             x: items.spaceshipX - width / 2
-            y: parent.height / 2 - height + 10
+            y: items.spaceshipY - height / 2
         }
 
         // line to show force magnitude and direction
         Image {
             id: arrow
-            visible: !message.displayed && width > 10 && timer.running
+            visible: !message.displayed && width > 6 && timer.running
             x: items.forceLeft < items.forceRight ?
                    items.spaceshipX : items.spaceshipX - width
             y: spaceship.y - 80
             z: 11
             sourceSize.width: 120 * 10 * ApplicationInfo.ratio
-            width: 10 *  Math.min(10, Math.abs(items.forceLeft - items.forceRight) * Math.pow(10, 6))
+            width: Math.min(background.width / 4, Math.abs(items.forceLeft - items.forceRight) * 6)
             height: 40 * ApplicationInfo.ratio
             source: Activity.url +"arrow.svg"
             rotation: items.forceLeft > items.forceRight ? 0 : 180

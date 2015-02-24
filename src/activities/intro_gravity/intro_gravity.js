@@ -29,7 +29,7 @@ var url = "qrc:/gcompris/src/activities/intro_gravity/resource/"
 var currentLevel = 0;
 var numberOfLevel = 4;
 
-//variables for calculating the crash and safe travel
+// delta move
 var move
 
 //array of created asteroids
@@ -64,8 +64,8 @@ function initLevel() {
 
     stop()
 
-    items.scaleLeft = 1.5
-    items.scaleRight = 1.5
+    items.scaleLeft = 0.8 + 0.2 * currentLevel
+    items.scaleRight = 0.8 + 0.2 * currentLevel
     items.spaceship.source = url + "tux_spaceship.svg"
     items.spaceshipX = items.background.width / 2
 
@@ -160,18 +160,22 @@ function destroyAsteroids(asteroids) {
 
 
 function movespaceship(){
-    move += ( items.forceRight - items.forceLeft) * 100.0 * items.bar.level
+    move += ( items.forceRight - items.forceLeft) / 10000 * items.bar.level
     items.spaceshipX += move
 
     // Manage the crash case
-    if(items.spaceshipX - items.planetLeft.x < 50)
+    if(items.spaceshipX - (items.planetLeft.x + items.planetLeft.width / 2) < 50)
         crash()
-    else if(items.planetRight.x - items.spaceshipX < 50)
+    else if(items.planetRight.x + items.planetRight.width / 2 - items.spaceshipX < 50)
         crash()
 
     // Manage to get into shuttle
-    if(items.shuttle.y > items.spaceship.y - 80 && items.shuttle.y < items.spaceship.y + 40
-            && items.shuttle.x > items.spaceshipX -40 && items.shuttle.x < items.spaceshipX + 80) {
+    var shuttleY = items.shuttle.y + items.shuttle.height / 2
+    var shuttleX = items.shuttle.x + items.shuttle.width / 2
+    if(shuttleY > items.spaceshipY - items.spaceship.height / 2 &&
+            shuttleY < items.spaceshipY + items.spaceship.height / 2 &&
+            shuttleX > items.spaceshipX -items.spaceship.width / 2 &&
+            shuttleX < items.spaceshipX + items.spaceship.width / 2) {
         items.bonus.good("flower")
         items.spaceship.source = ""
         stop()
@@ -183,14 +187,16 @@ function handleCollisionWithAsteroid()
     if(asteroids !== undefined){
         for(var i = asteroids.length -1 ; i >= 0 ; --i) {
             var asteroid = asteroids[i];
-            var x = asteroid.x
-            var y = asteroid.y
+            var x = asteroid.x + asteroid.width / 2
+            var y = asteroid.y + asteroid.height / 2
 
             if(y > items.background.height) {
                 asteroid.destroy()
                 asteroids.splice(i,1)
-            } else if(y > items.spaceship.y -80 && y < items.spaceship.y +40
-                      && x>items.spaceshipX -40 && x< items.spaceshipX + 80 ) {
+            } else if(y > items.spaceshipY - items.spaceship.height / 2 &&
+                      y < items.spaceshipY + items.spaceship.height / 2 &&
+                      x > items.spaceshipX - items.spaceship.width / 2 &&
+                      x < items.spaceshipX + items.spaceship.width / 2 ) {
                 asteroid.destroy()
                 asteroids.splice(i,1)
                 crash()
