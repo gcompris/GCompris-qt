@@ -199,6 +199,7 @@ function previousLevel() {
     if(--currentLevel < 0) {
         currentLevel = numberOfLevel - 1
     }
+    items.currentSubLevel = 0;
     initLevel();
 }
 
