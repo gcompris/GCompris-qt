@@ -130,10 +130,8 @@ ActivityBase {
         Image {
             id: planetLeft
             source: Activity.url + "saturn.svg"
-            sourceSize.width: 240
-            width: 120
-            height: 72
-            x: 70
+            sourceSize.width: 240 * ApplicationInfo.ratio
+            x: sliderLeft.x + sliderLeft.width + 20 * ApplicationInfo.ratio
             y: parent.height/2 - 80
             Behavior on scale {
                 NumberAnimation{ duration: 100 }
@@ -143,13 +141,12 @@ ActivityBase {
         Slider {
             id: sliderLeft
             style: GCSliderStyle {}
-            x: 20
-            y: background.height/2 - sliderLeft.height
-            width: 10
-            height: planetLeft.height
+            x: 20 * ApplicationInfo.ratio
+            y: background.height/2 - sliderLeft.height / 2
+            width: 10 * ApplicationInfo.ratio
+            height: 140 * ApplicationInfo.ratio
             activeFocusOnPress: true
             orientation: Qt.Vertical
-            value: 1.5
             minimumValue: 0.8
             maximumValue: 2.5
             onValueChanged: planetLeft.scale = value
@@ -158,10 +155,8 @@ ActivityBase {
         Image {
             id: planetRight
             source: Activity.url + "neptune.svg"
-            sourceSize.width: 184
-            width: 92
-            height: 92
-            x: parent.width - 130
+            sourceSize.width: 184 * ApplicationInfo.ratio
+            x: sliderRight.x - sourceSize.width - 20 * ApplicationInfo.ratio
             y: parent.height/2 - 80
             Behavior on scale {
                 NumberAnimation{ duration: 100 }
@@ -172,13 +167,12 @@ ActivityBase {
         Slider {
             id: sliderRight
             style: GCSliderStyle {}
-            x: planetRight.x + planetRight.width + 20
-            y: background.height/2 - sliderRight.height
-            width: 10
-            height: planetRight.height
+            x: parent.width - sliderRight.width - 20 * ApplicationInfo.ratio
+            y: background.height/2 - sliderRight.height / 2
+            width: 10 * ApplicationInfo.ratio
+            height: 140 * ApplicationInfo.ratio
             activeFocusOnPress: true
             orientation: Qt.Vertical
-            value: 1.5
             minimumValue: sliderLeft.minimumValue
             maximumValue: sliderLeft.maximumValue
             onValueChanged: planetRight.scale = value
