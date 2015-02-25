@@ -142,6 +142,7 @@ ActivityBase {
 
         Slider {
             id: sliderLeft
+            style: GCSliderStyle {}
             x: 20
             y: background.height/2 - sliderLeft.height
             width: 10
@@ -170,6 +171,7 @@ ActivityBase {
 
         Slider {
             id: sliderRight
+            style: GCSliderStyle {}
             x: planetRight.x + planetRight.width + 20
             y: background.height/2 - sliderRight.height
             width: 10
