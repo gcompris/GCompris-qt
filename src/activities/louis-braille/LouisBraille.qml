@@ -146,6 +146,7 @@ ActivityBase {
             anchors.rightMargin: 20 * ApplicationInfo.ratio
             anchors.verticalCenter: img.verticalCenter
             source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
+            sourceSize.height: 80 * ApplicationInfo.ratio
             Behavior on scale { PropertyAnimation { duration: 100} }
             MouseArea {
                 anchors.fill: parent
@@ -171,7 +172,6 @@ ActivityBase {
             GCText {
                 id:info
                 color: "black"
-                font.pixelSize: Math.max(parent.width * 0.01, 20)
                 anchors.centerIn: parent
                 horizontalAlignment: Text.AlignHCenter
                 width: parent.width * 0.94
@@ -188,7 +188,10 @@ ActivityBase {
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.horizontalCenter: parent.horizontalCenter
             sourceSize.height: parent.height - (charList.height + info_rect.height + bar.height)
+            height: (parent.height - (charList.height + info_rect.height + bar.height)) * 0.8
+            width: parent.width * 0.7
             source: items.dataset[items.count].img
+            fillMode: Image.PreserveAspectFit
 
             Rectangle {
                 id: year_rect
@@ -219,6 +222,7 @@ ActivityBase {
             anchors.leftMargin: 20 * ApplicationInfo.ratio
             anchors.verticalCenter: img.verticalCenter
             source: "qrc:/gcompris/src/core/resource/bar_next.svg"
+            sourceSize.height: 80 * ApplicationInfo.ratio
             Behavior on scale { PropertyAnimation { duration: 100} }
 
             MouseArea {
