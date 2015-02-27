@@ -241,8 +241,7 @@ ActivityBase {
                 wrapMode: Text.WordWrap
 
                 function initQuestion() {
-                    playableChar.brailleChar = ""
-                    playableChar.updateDotsFromBrailleChar()
+                    playableChar.clearLetter()
                     text = Activity.getCurrentTextQuestion()
                     if(items.instructions)
                         text += "\n" + items.instructions

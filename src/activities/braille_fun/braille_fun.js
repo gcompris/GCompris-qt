@@ -27,10 +27,8 @@ var currentLevel = 0
 var numberOfLevel = 3
 var items
 var currentQuestion
-var currentSubLevel ;
 var maxSubLevel;
-//var set = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-var set = ["A","B"];
+var set = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 var questionArray = [];
 
 var url = "qrc:/gcompris/src/activities/braille_fun/resource/"
@@ -38,7 +36,6 @@ var url = "qrc:/gcompris/src/activities/braille_fun/resource/"
 function start(items_ ) {
     items = items_
     currentLevel = 0
-    currentSubLevel = 0;
     initLevel()
 }
 
@@ -48,12 +45,12 @@ function stop() {
 function initQuestion() {
     items.question = questionArray[currentQuestion]
     items.charBg.clickable(true)
+    items.charBg.clearAllLetters()
     items.animateX.restart()
 }
 
 function nextQuestion() {
-
-    if(++currentQuestion == set.length ) {
+    if(++currentQuestion == set.length) {
         nextLevel()
     } else {
         initQuestion()
@@ -64,7 +61,7 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     currentQuestion = 0
     items.score.numberOfSubLevels = set.length;
-    items.score.currentSubLevel = "0";
+    items.score.currentSubLevel = 0;
     questionArray = []
 
     switch(currentLevel) {
@@ -89,7 +86,7 @@ function initLevel() {
     }
 
     initQuestion()
-    items.cardRepeater.model = currentLevel + 1 ;
+    items.cardRepeater.model = currentLevel + 1;
 }
 
 function nextLevel() {

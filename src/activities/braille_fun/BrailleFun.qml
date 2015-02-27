@@ -67,8 +67,6 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-//        onWidthChanged: animateX.restart()
-
         Item {
             id: planeText
             width: plane.width
@@ -137,6 +135,12 @@ ActivityBase {
                 }
             }
 
+            function clearAllLetters() {
+                for(var i=0 ; i < cardRepeater.model ; i++) {
+                    cardRepeater.itemAt(i).ins.clearLetter()
+                }
+            }
+
             Row {
                 id: row
                 spacing: 5 * ApplicationInfo.ratio
@@ -151,11 +155,6 @@ ActivityBase {
                         width: charBg.charWidth
                         property string brailleChar: ins.brailleChar
                         property alias ins: ins
-
-                        function clearDots() {
-                            ins.updateDotsFromBrailleChar();
-                        }
-
 
                         Rectangle {
                             id: rect1
@@ -181,6 +180,7 @@ ActivityBase {
                                     if(answerString === items.question) {
                                         charBg.clickable(false)
                                         bonus.good("tux")
+                                        score.currentSubLevel ++;
                                     }
                                 }
                                 property string question: items.question[modelData]

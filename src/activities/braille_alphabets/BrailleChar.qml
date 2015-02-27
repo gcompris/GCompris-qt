@@ -88,6 +88,11 @@ Item {
         brailleChar = ""
     }
 
+    function clearLetter() {
+        brailleChar = ""
+        updateDotsFromBrailleChar()
+    }
+
     function switchState(value) {
         circles.itemAt(value-1).switchState()
     }
