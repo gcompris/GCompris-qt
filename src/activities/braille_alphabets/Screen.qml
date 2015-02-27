@@ -89,6 +89,7 @@ ActivityBase {
             property alias questionItem: questionItem
             property string instructions
             property alias playableChar: playableChar
+            property alias score: score
             property bool brailleCodeSeen
         }
 
@@ -260,6 +261,13 @@ ActivityBase {
 
         FirstScreen {
             id: first_screen
+        }
+
+        Score {
+            id: score
+            anchors.bottom: background.bottom
+            anchors.right: braille_map.left
+            visible: !(dialogMap.visible || first_screen.visible)
         }
 
         DialogHelp {
