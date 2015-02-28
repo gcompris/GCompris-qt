@@ -20,7 +20,6 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 import QtQuick 2.2
-import QtQuick.Controls 1.2
 import GCompris 1.0
 
 import "../../core"
@@ -71,8 +70,8 @@ ActivityBase {
             property alias bonus: bonus
             property alias planetLeft: planetLeft
             property alias planetRight: planetRight
-            property alias scaleLeft: sliderLeft.value
-            property alias scaleRight: sliderRight.value
+            property alias scaleLeft: planetLeft.value
+            property alias scaleRight: planetRight.value
             property alias spaceship: spaceship
             property alias shuttle: shuttle
             property alias shuttleMotion: shuttleMotion
@@ -86,7 +85,7 @@ ActivityBase {
             property double forceRight: (Math.pow(scaleRight, 2) / Math.pow(distRight, 2)) * Math.pow(10, 6)
             // the center value for the spaceship
             property double spaceshipX
-            property double spaceshipY: sliderLeft.y + sliderLeft.height / 2
+            property double spaceshipY: parent.height / 2
         }
 
         onStart: Activity.start(items,message)
@@ -127,56 +126,26 @@ ActivityBase {
             }
         }
 
-        Image {
+        Planet {
             id: planetLeft
-            source: Activity.url + "saturn.svg"
-            sourceSize.width: 240 * ApplicationInfo.ratio
-            x: sliderLeft.x + sliderLeft.width + 20 * ApplicationInfo.ratio
-            y: parent.height/2 - 80
-            Behavior on scale {
-                NumberAnimation{ duration: 100 }
-            }
+            x: 0
+            width: parent.width * 0.5
+            height: parent.height
+            planetSource: Activity.url + "saturn.svg"
+            planetWidth: 240 * ApplicationInfo.ratio
+            isLeft: true
         }
 
-        Slider {
-            id: sliderLeft
-            style: GCSliderStyle {}
-            x: 20 * ApplicationInfo.ratio
-            y: background.height/2 - sliderLeft.height / 2
-            width: 10 * ApplicationInfo.ratio
-            height: 140 * ApplicationInfo.ratio
-            activeFocusOnPress: true
-            orientation: Qt.Vertical
-            minimumValue: 0.8
-            maximumValue: 2.5
-            onValueChanged: planetLeft.scale = value
-        }
-
-        Image {
+        Planet {
             id: planetRight
-            source: Activity.url + "neptune.svg"
-            sourceSize.width: 184 * ApplicationInfo.ratio
-            x: sliderRight.x - sourceSize.width - 20 * ApplicationInfo.ratio
-            y: parent.height/2 - 80
-            Behavior on scale {
-                NumberAnimation{ duration: 100 }
-            }
+            x: parent.width / 2
+            width: parent.width * 0.5
+            height: parent.height
+            planetSource: Activity.url + "neptune.svg"
+            planetWidth: 184 * ApplicationInfo.ratio
+            isLeft: false
         }
 
-
-        Slider {
-            id: sliderRight
-            style: GCSliderStyle {}
-            x: parent.width - sliderRight.width - 20 * ApplicationInfo.ratio
-            y: background.height/2 - sliderRight.height / 2
-            width: 10 * ApplicationInfo.ratio
-            height: 140 * ApplicationInfo.ratio
-            activeFocusOnPress: true
-            orientation: Qt.Vertical
-            minimumValue: sliderLeft.minimumValue
-            maximumValue: sliderLeft.maximumValue
-            onValueChanged: planetRight.scale = value
-        }
 
         Image {
             id: spaceship

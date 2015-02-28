@@ -27,8 +27,7 @@ import GCompris 1.0
 
 Image {
     id: asteroid
-    fillMode: Image.PreserveAspectFit
-    sourceSize.height: 60 * ApplicationInfo.ratio
+    sourceSize.height: 100 * ApplicationInfo.ratio
     z: 5
 
     property alias fallDuration: down.duration

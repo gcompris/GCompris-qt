@@ -36,7 +36,7 @@ var move
 var asteroids = new Array;
 var asteroidsErased = new Array;
 
-var minDuration = 14000
+var minDuration = 20000
 var asteroidCounter
 
 var items;
@@ -64,8 +64,8 @@ function initLevel() {
 
     stop()
 
-    items.scaleLeft = 0.8 + 0.2 * currentLevel
-    items.scaleRight = 0.8 + 0.2 * currentLevel
+    items.scaleLeft = items.planetLeft.minimumValue + 0.2 * currentLevel
+    items.scaleRight = items.planetRight.minimumValue + 0.2 * currentLevel
     items.spaceship.source = url + "tux_spaceship.svg"
     items.spaceshipX = items.background.width / 2
 
@@ -164,9 +164,9 @@ function movespaceship(){
     items.spaceshipX += move
 
     // Manage the crash case
-    if(items.spaceshipX - (items.planetLeft.x + items.planetLeft.width / 2) < 50)
+    if(items.spaceshipX < 200 * GCompris.ApplicationInfo.ratio)
         crash()
-    else if(items.planetRight.x + items.planetRight.width / 2 - items.spaceshipX < 50)
+    else if(items.spaceshipX > items.background.width - 200 * GCompris.ApplicationInfo.ratio)
         crash()
 
     // Manage to get into shuttle
