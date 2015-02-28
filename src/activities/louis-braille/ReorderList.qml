@@ -119,7 +119,7 @@ Rectangle {
             MouseArea {
                 id: dragArea
                 anchors.fill: parent
-                onPressed: {
+                onClicked: {
                     wholeBody.selectedIndex = -1
                     if(list.currentIndex == index) {
                         list.currentIndex = -1
