@@ -213,7 +213,10 @@ ActivityBase {
                     text: items.dataset[items.count].year
                 }
             }
-
+            MouseArea {
+                anchors.fill: parent
+                onClicked: background.next()
+            }
         }
 
         Image {
