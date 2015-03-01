@@ -159,7 +159,7 @@ function checkForVoices(parent)
                     GCompris.ApplicationSettings.locale))) {
         showMessageDialog(parent,
                 qsTr("Missing sound files!") + '\n'
-                + qsTr("This activity makes use of language specific sound files, that are not yet installed on your system.")
+                + qsTr("This activity uses language sound files, that are not yet installed on your system.")
                 + '\n'
                 + qsTr("For downloading the needed sound files go to the preferences dialog."),
                 "", null,
