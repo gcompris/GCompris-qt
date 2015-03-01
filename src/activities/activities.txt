@@ -11,10 +11,10 @@ alphabet-sequence
 ballcatch
 braille_alphabets
 canal_lock
-click_on_letter
-click_on_letter_up
 clickanddraw
 clickgame
+click_on_letter
+click_on_letter_up
 clockgame
 color_mix
 color_mix_light
@@ -74,6 +74,7 @@ mosaic
 numbers-odd-even
 penalty
 planegame
+pulkit
 redraw
 redraw_symmetrical
 reversecount
