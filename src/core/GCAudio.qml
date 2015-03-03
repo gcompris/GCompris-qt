@@ -35,10 +35,18 @@ Item {
     signal error
     signal done
 
+    function normalize(file) {
+        if(ApplicationInfo.CompressedAudio === "ogg")
+            return file
+
+        return file.substr(0, file.lastIndexOf(".")) + "." + ApplicationInfo.CompressedAudio;
+    }
+
     // @param file is optional
     // @return true or false if file does not exist or audio is muted
     function play(file) {
 
+        file = normalize(file)
         if(!fileId.exists(file) || muted)
             return false
 
@@ -58,6 +66,7 @@ Item {
 
     // @return true or false if file does not exist or audio is muted
     function append(file) {
+        file = normalize(file)
         if(!fileId.exists(file) || muted)
             return false
 

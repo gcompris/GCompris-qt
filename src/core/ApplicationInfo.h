@@ -70,6 +70,7 @@ class ApplicationInfo : public QObject
     Q_PROPERTY(QString localeShort READ localeShort)
     Q_PROPERTY(QString GCVersion READ GCVersion CONSTANT)
     Q_PROPERTY(QString QTVersion READ QTVersion CONSTANT)
+    Q_PROPERTY(QString CompressedAudio READ CompressedAudio CONSTANT)
 
 public:
 
@@ -138,6 +139,7 @@ public:
     }
     static QString GCVersion() { return VERSION; }
     static QString QTVersion() { return qVersion(); }
+    static QString CompressedAudio() { return COMPRESSED_AUDIO; }
 
     Q_INVOKABLE QString getVoicesLocale(const QString &locale);
 

@@ -117,8 +117,7 @@ void DownloadManager::abortDownloads()
  * @param locale  Locale name string of the form <language>_<country>. */
 QString DownloadManager::getVoicesResourceForLocale(const QString& locale) const
 {
-    return QString("data/voices/voices-%1.rcc").arg(
-            ApplicationInfo::getInstance()->getVoicesLocale(locale));
+    return QString("data/voices-" COMPRESSED_AUDIO "/voices-%1.rcc").arg(locale);
 }
 
 /** Transform the passed relative path to an absolute resource path of an

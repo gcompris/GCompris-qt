@@ -8,3 +8,5 @@
 #endif
 /* GCompris for android, gcompris-qt for others */
 #define GCOMPRIS_APPLICATION_NAME "@GCOMPRIS_EXECUTABLE_NAME@"
+/* Compressed audio format */
+#define COMPRESSED_AUDIO "@COMPRESSED_AUDIO@"
