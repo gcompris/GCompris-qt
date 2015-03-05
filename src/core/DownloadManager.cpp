@@ -351,7 +351,9 @@ inline QUrl DownloadManager::getUrlForFilename(const QString& filename) const
 
 inline QString DownloadManager::getResourceRootForFilename(const QString& filename) const
 {
-    QStringList parts = QFileInfo(filename).path().split("/", QString::SkipEmptyParts);
+    QStringList parts = QFileInfo(filename).path()
+            .replace("-" COMPRESSED_AUDIO, "")
+            .split("/", QString::SkipEmptyParts);
     return QString("/gcompris") + "/" + parts[parts.size()-2] +
             "/" + parts[parts.size()-1];
 }

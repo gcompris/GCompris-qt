@@ -39,7 +39,7 @@ Item {
         if(ApplicationInfo.CompressedAudio === "ogg")
             return file
 
-        return file.substr(0, file.lastIndexOf(".")) + "." + ApplicationInfo.CompressedAudio;
+        return file.replace('.ogg', "." + ApplicationInfo.CompressedAudio)
     }
 
     // @param file is optional
