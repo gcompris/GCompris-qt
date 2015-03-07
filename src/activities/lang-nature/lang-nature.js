@@ -1,10 +1,11 @@
 /* GCompris - lang-nature.js
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 <Siddhesh suthar>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *   Pascal Georges (pascal.georges1@free.fr) (GTK+ version)
+ *   Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Integration Lang dataset)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -18,8 +19,7 @@
  *
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
- */
-.pragma library
+ */.pragma library
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
