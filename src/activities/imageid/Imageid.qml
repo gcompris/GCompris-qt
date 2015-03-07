@@ -143,7 +143,7 @@ ActivityBase {
         JsonParser {
             id: parser
             
-            onError: console.error("Lang-nature: Error parsing json: " + msg);
+            onError: console.error("Imageid: Error parsing json: " + msg);
         }
 
         ListModel {
