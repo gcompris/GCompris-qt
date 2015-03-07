@@ -1,11 +1,10 @@
-/* GCompris - Imageid.qml
+/* GCompris - lang-nature.qml
  *
- * Copyright (C) 2014 Holger Kaelberer
+ * Copyright (C) 2014 <YOUR NAME HERE>
  *
  * Authors:
- *   Pascal Georges (pascal.georges1@free.fr) (GTK+ version)
- *   Holger Kaelberer <holger.k@elberer.de> (Qt Quick port)
- *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Integration Lang dataset)
+ *   <THE GTK VERSION AUTHOR> (GTK+ version)
+ *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -20,13 +19,12 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-
 import QtQuick 2.1
 import GCompris 1.0
 import QtGraphicalEffects 1.0
 
 import "../../core"
-import "imageid.js" as Activity
+import "lang-nature.js" as Activity
 import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
@@ -34,7 +32,7 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {}
-    
+
     pageComponent: Image {
         id: background
         source: "qrc:/gcompris/src/activities/imageid/resource/imageid-bg.svg"
@@ -57,6 +55,7 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
+        // Add here the QML items you need to access in javascript
         QtObject {
             id: items
             property Item main: activity.main
@@ -65,6 +64,8 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias wordImage: wordImage
+            property alias wordText: wordText
+            property alias categoryText: categoryText
             property alias wordListModel: wordListModel
             property alias parser: parser
             property variant goodWord
@@ -76,6 +77,7 @@ ActivityBase {
                     voiceError();
             }
             onGoodWordChanged: playWord()
+
         }
 
         function handleResourceRegistered(resource)
@@ -86,7 +88,6 @@ ActivityBase {
 
         onStart: {
             Activity.init(items)
-
             repeatItem.visible = false
             keyNavigation = false
             activity.audioVoices.error.connect(voiceError)
@@ -105,159 +106,219 @@ ActivityBase {
                 downloadWordsNeeded = true
             }
         }
-
         onStop: {
             DownloadManager.resourceRegistered.disconnect(handleResourceRegistered);
             Activity.stop()
         }
-        
-        Keys.onRightPressed: {
-            keyNavigation = true
-            wordListView.incrementCurrentIndex()
-        }
-        Keys.onLeftPressed:  {
-            keyNavigation = true
-            wordListView.decrementCurrentIndex()
-        }
-        Keys.onDownPressed:  {
-            keyNavigation = true
-            wordListView.incrementCurrentIndex()
-        }
-        Keys.onUpPressed:  {
-            keyNavigation = true
-            wordListView.decrementCurrentIndex()
-        }
-        Keys.onSpacePressed:  {
-            keyNavigation = true
-            wordListView.currentItem.pressed()
-        }
-        Keys.onEnterPressed:  {
-            keyNavigation = true
-            wordListView.currentItem.pressed()
-        }
-        Keys.onReturnPressed:  {
-            keyNavigation = true
-            wordListView.currentItem.pressed()
-        }
 
         JsonParser {
             id: parser
-            
-            onError: console.error("Lang-nature: Error parsing json: " + msg);
+
+            onError: console.error("Imageid: Error parsing json: " + msg);
         }
 
         ListModel {
             id: wordListModel
         }
 
-        Grid {
-            id: gridId
-            columns: horizontalLayout ? 2 : 1
-            spacing: 10 * ApplicationInfo.ratio
-            anchors.fill: parent
-            anchors.margins: 10 * ApplicationInfo.ratio
+        Rectangle{
+                id: categoryTextbg
+                x: categoryText.x -4
+                y: categoryText.y -4
+                width: imageFrame.width
+                height: categoryText.height +4
+                color: "#5090ff"
+                border.color: "#000000"
+                border.width: 2
+                radius: 16
+                anchors.bottom: imageFrame.top
+                anchors.left: imageFrame.left
+                anchors.bottomMargin: 20
 
-            Item {
-                width: background.horizontalLayout
-                       ? background.width * 0.55
-                       : background.width - gridId.anchors.margins * 2
-                height: background.horizontalLayout
-                        ? background.height - bar.height
-                        : (background.height - bar.height) * 0.4
-                Image {
-                    id: imageFrame
-                    anchors {
-                        horizontalCenter: parent.horizontalCenter
-                        verticalCenter: parent.verticalCenter
-                    }
-                    source: "qrc:/gcompris/src/activities/imageid/resource/imageid_frame.svg"
-                    sourceSize.width: background.horizontalLayout ? parent.width * 0.9 : parent.height * 1.2
-                    z: 11
 
-                    Image {
-                        id: wordImage
-                        sourceSize.width: parent.width * 0.6
+                GCText{
+                        id: categoryText
+                        text: ""
+                        fontSize: largeSize
+                        font.weight: Font.DemiBold
+                        width: parent.width
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        color: "white"
+                        wrapMode: Text.WordWrap
 
-                        anchors {
-                            centerIn: parent
-                            margins: 0.05 + parent.width
-                        }
-                        property string nextSource
-                        function changeSource(nextSource_) {
-                            nextSource = nextSource_
-                            animImage.start()
+                        property string nextCategory
+                        function changeCategory(nextCategory_) {
+                            nextCategory = nextCategory_
+                            animCategory.start()
                         }
 
                         SequentialAnimation {
-                            id: animImage
+                            id: animCategory
                             PropertyAnimation {
-                                target: wordImage
+                                target: categoryText
                                 property: "opacity"
                                 to: 0
                                 duration: 100
                             }
                             PropertyAction {
-                                target: wordImage
-                                property: "source"
-                                value: wordImage.nextSource
+                                target: categoryText
+                                property: "text"
+                                value: "Category: "+ categoryText.nextCategory
                             }
                             PropertyAnimation {
-                                target: wordImage
+                                target: categoryText
                                 property: "opacity"
                                 to: 1
                                 duration: 100
                             }
                         }
+
+                    }
+        }
+
+        Image {
+            id: imageFrame
+            width:  background.width * 0.55
+            height: background.horizontalLayout
+                    ? (background.height - bar.height)* 0.7
+                    : (background.height - bar.height) * 0.4
+
+            anchors {
+                horizontalCenter: background.horizontalCenter
+                top: background.top
+                topMargin: (background.height - bar.height) * 0.15
+            }
+            source: "qrc:/gcompris/src/activities/imageid/resource/imageid_frame.svg"
+            sourceSize.width: background.horizontalLayout ? parent.width * 0.9 : parent.height * 1.2
+            z: 11
+
+            Image {
+                id: wordImage
+                sourceSize.width: parent.width * 0.6
+
+                anchors {
+                    centerIn: parent
+                    margins: 0.05 + parent.width
+                }
+                property string nextSource
+                function changeSource(nextSource_) {
+                    nextSource = nextSource_
+                    animImage.start()
+                }
+
+                SequentialAnimation {
+                    id: animImage
+                    PropertyAnimation {
+                        target: wordImage
+                        property: "opacity"
+                        to: 0
+                        duration: 100
+                    }
+                    PropertyAction {
+                        target: wordImage
+                        property: "source"
+                        value: wordImage.nextSource
+                    }
+                    PropertyAnimation {
+                        target: wordImage
+                        property: "opacity"
+                        to: 1
+                        duration: 100
                     }
                 }
             }
-            ListView {
-                id: wordListView
 
-                width: background.horizontalLayout
-                       ? background.width * 0.40
-                       : background.width - gridId.anchors.margins * 2
-                height: background.horizontalLayout
-                        ? background.height - bar.height
-                        : (background.height - bar.height) * 0.40
-                spacing: 10 * ApplicationInfo.ratio
-                orientation: Qt.Vertical
-                verticalLayoutDirection: ListView.TopToBottom
-                interactive: false
-                model: wordListModel
+            Image{
+                id: previousWordButton
+                source: "qrc:/gcompris/src/core/resource/bar_previous.svgz";
+                sourceSize.width: 30 * 1.2 * ApplicationInfo.ratio
+                anchors{
+                    right: parent.left
+                    rightMargin: 30
+                    top: parent.top
+                    topMargin: parent.height/2 - previousWordButton.height/2
+                }
+                MouseArea{
+                    id: previousWordButtonArea
+                    anchors.fill: parent
+                    onClicked: Activity.prevSubLevel()
+                }
+            }
 
-                highlight:  Rectangle {
-                    width: wordListView.width
-                    height: wordListView.buttonHeight
-                    color: "lightsteelblue"
-                    radius: 5
-                    visible: background.keyNavigation
-                    y: wordListView.currentItem.y
-                    Behavior on y {
-                        SpringAnimation {
-                            spring: 3
-                            damping: 0.2
+            Image{
+                id: nextWordButton
+                source: "qrc:/gcompris/src/core/resource/bar_next.svgz";
+                sourceSize.width: 30 * 1.2 * ApplicationInfo.ratio
+                anchors{
+                    left: parent.right
+                    leftMargin: 30
+                    top: parent.top
+                    topMargin: parent.height/2 - previousWordButton.height/2
+                }
+                MouseArea{
+                    id: nextWordButtonArea
+                    anchors.fill: parent
+                    onClicked: Activity.nextSubLevel();
+                }
+            }
+        }
+
+        Rectangle{
+                id: wordTextbg
+                x: wordText.x -4
+                y: wordText.y -4
+                width: imageFrame.width
+                height: wordText.height +4
+                color: "#5090ff"
+                border.color: "#000000"
+                border.width: 2
+                radius: 16
+                anchors.top: imageFrame.bottom
+                anchors.left: imageFrame.left
+                anchors.topMargin: 20
+
+
+                GCText{
+                        id: wordText
+                        text: ""
+                        fontSize: largeSize
+                        font.weight: Font.DemiBold
+                        width: parent.width
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        color: "white"
+                        wrapMode: Text.WordWrap
+
+                        property string nextWord
+                        function changeText(nextWord_) {
+                            nextWord = nextWord_
+                            animWord.start()
                         }
+
+                        SequentialAnimation {
+                            id: animWord
+                            PropertyAnimation {
+                                target: wordText
+                                property: "opacity"
+                                to: 0
+                                duration: 100
+                            }
+                            PropertyAction {
+                                target: wordText
+                                property: "text"
+                                value: wordText.nextWord
+                            }
+                            PropertyAnimation {
+                                target: wordText
+                                property: "opacity"
+                                to: 1
+                                duration: 100
+                            }
+                        }
+
                     }
-                }
-                highlightFollowsCurrentItem: false
-                focus: true
-                keyNavigationWraps: true
 
-                property int buttonHeight: height / wordListModel.count * 0.9
-
-                delegate: AnswerButton {
-                    id: wordRectangle
-
-                    width: wordListView.width
-                    height: wordListView.buttonHeight
-
-                    textLabel: word
-                    isCorrectAnswer: word === items.goodWord.translatedTxt
-                    onIncorrectlyPressed: Activity.badWordSelected(items.goodWordIndex);
-                    onCorrectlyPressed: Activity.nextSubLevel();
-                }
-            }
         }
 
         onVoiceDone: repeatItem.visible = true
@@ -284,7 +345,6 @@ ActivityBase {
 
         Bar {
             id: bar
-
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
@@ -296,7 +356,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            onWin: Activity.nextLevel()
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
         Loader {
@@ -343,6 +403,7 @@ ActivityBase {
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.top: undefined
         }
-        
+
     }
+
 }
