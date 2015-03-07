@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:docname="cross2.svg"
+   inkscape:export-filename="/datas/wiki/cross.png"
+   viewBox="0 0 90 90"
+   sodipodi:version="0.32"
+   inkscape:export-xdpi="90.000000"
+   version="1.0"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-ydpi="90.000000"
+   inkscape:version="0.91 r13725"
+   width="90"
+   height="90">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient1483"
+       y2="48.977001"
+       gradientUnits="userSpaceOnUse"
+       x2="40.305"
+       gradientTransform="matrix(0.88931998,0,0,0.88931998,-11.458404,-67.458397)"
+       y1="13.746"
+       x1="20.153"
+       inkscape:collect="always">
+      <stop
+         id="stop1354"
+         style="stop-color:#982007"
+         offset="0" />
+      <stop
+         id="stop1356"
+         style="stop-color:#510f02"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1485"
+       y2="46.762001"
+       gradientUnits="userSpaceOnUse"
+       x2="47.844002"
+       gradientTransform="matrix(0.88931998,0,0,0.88931998,-11.455006,-67.445295)"
+       y1="17.421"
+       x1="18.504999"
+       inkscape:collect="always">
+      <stop
+         id="stop1367"
+         style="stop-color:#f1140c"
+         offset="0" />
+      <stop
+         id="stop1370"
+         style="stop-color:#8d1a02"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient1487"
+       y2="46.762001"
+       gradientUnits="userSpaceOnUse"
+       x2="47.844002"
+       gradientTransform="matrix(0.88931998,0,0,0.88931998,-11.458399,-67.458397)"
+       y1="17.421"
+       x1="18.504999"
+       inkscape:collect="always">
+      <stop
+         id="stop1380"
+         style="stop-color:#ff8b8e"
+         offset="0" />
+      <stop
+         id="stop1382"
+         style="stop-color:#b42314;stop-opacity:.72241"
+         offset="1" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:grid-points="true"
+     inkscape:pageshadow="2"
+     inkscape:window-y="-4"
+     pagecolor="#ffffff"
+     inkscape:window-height="768"
+     inkscape:grid-bbox="true"
+     inkscape:zoom="2.8784723"
+     inkscape:window-x="-4"
+     showgrid="false"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="-51.687787"
+     inkscape:cy="12.229851"
+     showguides="false"
+     inkscape:window-width="1366"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px"
+     inkscape:window-maximized="0" />
+  <g
+     id="layer1"
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     transform="translate(0,56)">
+    <path
+       inkscape:connector-curvature="0"
+       d="m 3.8629891,-39.507283 c -0.9613814,1.160817 -0.874448,2.863689 0.2019924,3.919675 L 27.731328,-11.92126 4.0649815,11.745086 c -0.5497261,0.544612 -0.8591068,1.286103 -0.8591068,2.060834 0,0.772173 0.3093807,1.513664 0.8591068,2.058276 L 16.926014,28.727787 c 0.544613,0.549726 1.288661,0.859107 2.060834,0.859107 0.77473,0 1.516221,-0.309381 2.060834,-0.859107 L 44.714029,5.0614393 68.380376,28.727787 c 0.544612,0.549726 1.286103,0.859107 2.058277,0.859107 0.77473,0 1.516221,-0.309381 2.060833,-0.859107 l 12.86359,-12.863591 c 0.549727,-0.544612 0.859107,-1.286103 0.859107,-2.058276 0,-0.774731 -0.30938,-1.516222 -0.859107,-2.060834 L 61.696729,-11.92126 85.363076,-35.587608 c 0.549727,-0.544612 0.859107,-1.286103 0.859107,-2.060834 0,-0.772173 -0.30938,-1.513664 -0.859107,-2.058276 l -12.86359,-12.863591 c -0.544612,-0.549726 -1.286103,-0.859107 -2.060833,-0.859107 -0.772174,0 -1.513665,0.309381 -2.058277,0.859107 L 44.714029,-28.903962 21.047682,-52.570309 c -0.544613,-0.549726 -1.286104,-0.859107 -2.060834,-0.859107 -0.772173,0 -1.516221,0.309381 -2.060834,0.859107 L 4.0649815,-39.706718 c -0.071592,0.06392 -0.1380707,0.1304 -0.2019924,0.199435 z"
+       style="fill:url(#linearGradient1483)"
+       id="path1349" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 18.769184,-50.062299 c -0.46023,0.118549 -0.87445,0.365733 -1.19917,0.708765 l -10.3067204,10.16737 c -0.96394,0.960995 -0.96394,2.509684 0,3.468156 L 31.233906,-12.071495 7.2632936,11.575018 c -0.96394,0.960995 -0.96394,2.509682 0,3.468156 l 10.3067204,10.16989 c 0.97417,0.950907 2.54408,0.950907 3.51569,0 L 45.056832,1.5640306 69.027446,25.213064 c 0.973654,0.950907 2.542291,0.950907 3.51569,0 l 10.30877,-10.16989 c 0.963939,-0.958474 0.963939,-2.507161 0,-3.468156 L 58.880014,-12.071495 82.851906,-35.718008 c 0.963939,-0.958472 0.963939,-2.507161 0,-3.468156 l -10.30877,-10.16737 c -0.973399,-0.950905 -2.542036,-0.950905 -3.51569,0 L 45.056832,-25.707021 21.085704,-49.353534 c -0.59575,-0.61544 -1.47275,-0.882803 -2.31652,-0.708765 z"
+       style="fill:url(#linearGradient1485)"
+       id="path1468" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 19.088799,-48.59694 c -0.0921,0.0358 -0.17387,0.08949 -0.24035,0.161083 L 8.5417308,-38.129132 c -0.0818,0.08949 -0.13807,0.199435 -0.16109,0.319608 -0.0409,0.1304 -0.0409,0.268471 0,0.398871 0.0358,0.09205 0.0895,0.173867 0.16109,0.240345 l 24.4487382,24.451305 c 0.22501,0.21222 0.40143,0.506259 0.40143,0.797742 0,0.291483 -0.17642,0.585522 -0.40143,0.797742 L 8.5417308,13.327787 c -0.0818,0.08949 -0.13807,0.199435 -0.16109,0.319608 -0.0409,0.1304 -0.0409,0.268471 0,0.398871 0.0358,0.09205 0.0895,0.173867 0.16109,0.240345 L 18.848449,24.593335 c 0.0895,0.08182 0.19944,0.138071 0.31961,0.161083 0.1304,0.04091 0.26847,0.04091 0.39887,0 0.0921,-0.0358 0.17387,-0.08949 0.24035,-0.161083 l 24.4513,-24.44874728 c 0.21222,-0.2250041 0.50626,-0.4014278 0.79774,-0.4014278 0.29149,0 0.58552,0.1764237 0.79774,0.4014278 L 70.305369,24.593335 c 0.08949,0.08182 0.199435,0.138071 0.319608,0.161083 0.1304,0.04091 0.268471,0.04091 0.398871,0 0.09205,-0.0358 0.173867,-0.08949 0.240345,-0.161083 L 81.570918,14.286611 c 0.08182,-0.08949 0.138071,-0.199435 0.161083,-0.319608 0.04091,-0.1304 0.04091,-0.268471 0,-0.398871 -0.0358,-0.09205 -0.08949,-0.173867 -0.161083,-0.240345 L 57.122169,-11.123519 c -0.225,-0.21222 -0.40143,-0.506259 -0.40143,-0.797742 0,-0.291483 0.17643,-0.585522 0.40143,-0.797742 l 24.448749,-24.451305 c 0.08182,-0.08949 0.138071,-0.199435 0.161083,-0.319608 0.04091,-0.1304 0.04091,-0.268471 0,-0.398871 -0.0358,-0.09205 -0.08949,-0.173867 -0.161083,-0.240345 L 71.264193,-48.435857 c -0.08949,-0.08182 -0.199435,-0.138071 -0.319608,-0.161083 -0.1304,-0.04091 -0.268471,-0.04091 -0.398871,0 -0.09205,0.0358 -0.173867,0.08949 -0.240345,0.161083 l -24.45131,24.448748 c -0.21222,0.225004 -0.50625,0.401428 -0.79774,0.401428 -0.29148,0 -0.58552,-0.176424 -0.79774,-0.401428 l -24.4513,-24.448748 c -0.0895,-0.08182 -0.19944,-0.138071 -0.31961,-0.161083 -0.1304,-0.04091 -0.26847,-0.04091 -0.39887,0 z"
+       style="fill:url(#linearGradient1487)"
+       id="path1472" />
+  </g>
+  <metadata
+     id="metadata11550">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:date>2008-05-26T11:40:39</dc:date>
+        <dc:description />
+        <dc:source>https://openclipart.org/detail/16982/cross-by-jean_victor_balin</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>jean_victor_balin</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>cancel</rdf:li>
+            <rdf:li>delete</rdf:li>
+            <rdf:li>icon</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
