@@ -88,5 +88,7 @@ smallnumbers
 smallnumbers2
 sudoku
 target
+tic_tac_toe
+tic_tac_toe_2players
 traffic
 wordsgame
