@@ -53,6 +53,7 @@ Item {
     function loadFromFile(fname) {
         filename = fname;
         var from;
+        maxLevel = 0
         wordList = parser.parseFromUrl(filename, validateWordlist);
         if (wordList == null) {
             error("Wordlist: Invalid wordlist file " + fname);
@@ -65,8 +66,13 @@ Item {
                 }
                 from = "default-file " + defaultFilename;
             }
-        } else
+            else {
+                error("Wordlist: do not use default list, no list loaded");
+                return;
+            }
+        } else {
             from = "file " + fname;
+        }
         // at this point we have valid levels
         maxLevel = wordList.levels.length;
         console.log("Wordlist: loaded " + maxLevel + " levels from " + from);

@@ -21,6 +21,7 @@
  */
 
 import QtQuick 2.1
+import QtQuick.Controls 1.1
 import GCompris 1.0
 
 import "../../core"
@@ -28,9 +29,6 @@ import "traffic.js" as Activity
 
 ActivityBase {
     id: activity
-
-    property string mode: "IMAGE" // allow to choose between "COLOR" and "IMAGE"
-                                  // mode, candidate for a config dialog
     
     onStart: focus = true
     onStop: {}
@@ -43,8 +41,12 @@ ActivityBase {
 
         signal start
         signal stop
+
+        property string mode: "IMAGE" // allow to choose between "COLOR" and "IMAGE"
+                                  // mode, candidate for a config dialog
         
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -83,7 +85,8 @@ ActivityBase {
                 columns: 6
                 rows: 6
                 spacing: 0
-                
+                // Add an alias to mode so it can be used on Car items
+                property alias mode: background.mode
                 Repeater {
                     id: gridRepeater
                     model: jamGrid.columns * jamGrid.rows
@@ -105,16 +108,75 @@ ActivityBase {
             onClose: home()
         }
         
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            content: Component {
+                Item {
+                    property alias modeBox: modeBox
+
+                    property var availableModes: [
+                    { "text": qsTr("Colors"), "value": "COLOR" },
+                    { "text": qsTr("Images"), "value": "IMAGE" }
+                    ]
+
+                    Flow {
+                        id: flow
+                        spacing: 5
+                        width: dialogActivityConfig.width
+                        ComboBox {
+                            id: modeBox
+                            style: GCComboBoxStyle {}
+                            model: availableModes
+                            width: 250 * ApplicationInfo.ratio
+                        }
+                        GCText {
+                            text: qsTr("Select your mode")
+                            fontSize: mediumSize
+                            wrapMode: Text.WordWrap
+                        }
+                    }
+                }
+            }
+            onClose: home()
+            onLoadData: {
+                if(dataToSave && dataToSave["mode"]) {
+                    mode = dataToSave["mode"];
+                    Activity.mode = dataToSave["mode"];
+                }
+            }
+
+            onSaveData: {
+                mode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
+                dataToSave = {"mode": mode}
+                Activity.mode = mode;
+            }
+
+            function setDefaultValues() {
+                for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i ++) {
+                    if(dialogActivityConfig.configItem.availableModes[i].value === mode) {
+                        dialogActivityConfig.configItem.modeBox.currentIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
+
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | reload}
+            content: BarEnumContent { value: help | home | level | reload | config }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onReloadClicked: Activity.initLevel();
+            onReloadClicked: Activity.initLevel()
+            onConfigClicked: {
+                dialogActivityConfig.active = true
+                // Set default values
+                dialogActivityConfig.setDefaultValues();
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {

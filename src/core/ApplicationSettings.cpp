@@ -306,6 +306,29 @@ void ApplicationSettings::saveBaseFontSize()
     updateValueInConfig(GENERAL_GROUP_KEY, BASE_FONT_SIZE_KEY, m_baseFontSize);
 }
 
+void ApplicationSettings::saveActivityConfiguration(const QString &activity, const QVariantMap &datas)
+{
+    qDebug() << "save configuration for:" << activity;
+    QMapIterator<QString, QVariant> i(datas);
+    while (i.hasNext()) {
+        i.next();
+        updateValueInConfig(activity, i.key(), i.value());
+    }
+}
+
+QVariantMap ApplicationSettings::loadActivityConfiguration(const QString &activity)
+{
+    qDebug() << "load configuration for:" << activity;
+    m_config.beginGroup(activity);
+    QStringList keys = m_config.childKeys();
+    QVariantMap datas;
+    foreach(QString key, keys) {
+        datas[key] = m_config.value(key);
+    }
+    m_config.endGroup();
+    return datas;
+}
+
 void ApplicationSettings::setFavorite(const QString &activity, bool favorite)
 {
 	updateValueInConfig(FAVORITE_GROUP_KEY, activity, favorite);

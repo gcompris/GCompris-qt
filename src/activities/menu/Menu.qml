@@ -397,7 +397,9 @@ ActivityBase {
             }
 
             onConfigClicked: {
-                displayDialog(dialogConfig)
+                dialogActivityConfig.active = true
+                dialogActivityConfig.loader.item.loadFromConfig()
+                displayDialog(dialogActivityConfig)
             }
         }
     }
@@ -412,9 +414,18 @@ ActivityBase {
         activityInfo: ActivityInfoTree.rootMenu
     }
 
-    DialogConfig {
-        id: dialogConfig
-        main: menuActivity.main
+    DialogActivityConfig {
+        id: dialogActivityConfig
+        content: Component {
+            ConfigurationItem {
+                id: configItem
+                width: dialogActivityConfig.width - 50 * ApplicationInfo.ratio
+            }
+        }
+
+        onSaveData: {
+            dialogActivityConfig.configItem.save();
+        }
         onClose: {
             ActivityInfoTree.filterByTag(menuActivity.currentTag)
             ActivityInfoTree.filterLockedActivities()

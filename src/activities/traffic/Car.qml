@@ -41,18 +41,32 @@ Item {
     property var xBounds: undefined
     property var yBounds: undefined
 
-    x: (Activity.mode == "COLOR" || car.isHorizontal) ? (xPos * blockSize) : ((xPos+1) * blockSize)
-    y: (Activity.mode == "COLOR" || car.isHorizontal) ? (yPos * blockSize) : ((yPos) * blockSize)
+    property string mode
+
+    Component.onCompleted: {
+        mode = parent.mode
+        connection.target = parent
+    }
+    // Connect the jamGrid.mode to car.mode to automatically change the wrapped object
+    Connections {
+        id: connection
+        onModeChanged: {
+            car.mode = parent.mode;
+        }
+    }
+
+    x: (mode == "COLOR" || car.isHorizontal) ? (xPos * blockSize) : ((xPos+1) * blockSize)
+    y: (mode == "COLOR" || car.isHorizontal) ? (yPos * blockSize) : ((yPos) * blockSize)
 
     // track effective coordinates (needed for transformed image):
     property real effX: car.xPos * car.blockSize
     property real effY: car.yPos * car.blockSize
-    property real effWidth: (Activity.mode == "COLOR" || car.isHorizontal) ? car.width : car.height
-    property real effHeight: (Activity.mode == "COLOR" || car.isHorizontal) ? car.height : car.width
+    property real effWidth: (mode == "COLOR" || car.isHorizontal) ? car.width : car.height
+    property real effHeight: (mode == "COLOR" || car.isHorizontal) ? car.height : car.width
     property GCAudio audioEffects
 
-    width: (Activity.mode == "IMAGE" || isHorizontal) ? (size * blockSize) : blockSize
-    height: (Activity.mode == "IMAGE" || isHorizontal) ? blockSize : (size * blockSize)
+    width: (mode == "IMAGE" || isHorizontal) ? (size * blockSize) : blockSize
+    height: (mode == "IMAGE" || isHorizontal) ? blockSize : (size * blockSize)
 
     Item {
         id: carWrapper
@@ -63,7 +77,7 @@ Item {
         
         Rectangle {
             id: carRect
-            visible: (Activity.mode == "COLOR")
+            visible: (mode == "COLOR")
             
             z: 11
             anchors.fill: parent
@@ -103,7 +117,7 @@ Item {
         
         Image {
             id: carImage
-            visible: (Activity.mode == "IMAGE")
+            visible: (mode == "IMAGE")
             
             fillMode: Image.PreserveAspectFit
             anchors.fill: parent

@@ -251,6 +251,8 @@ public slots:
 	Q_INVOKABLE bool isFavorite(const QString &activity);
 	Q_INVOKABLE void setFavorite(const QString &activity, bool favorite);
     Q_INVOKABLE void saveBaseFontSize();
+    Q_INVOKABLE void saveActivityConfiguration(const QString &activity, const QVariantMap &datas);
+    Q_INVOKABLE QVariantMap loadActivityConfiguration(const QString &activity);
 
 protected:
 

@@ -21,6 +21,7 @@
  */
 
 import QtQuick 2.1
+import QtQuick.Controls 1.1
 import GCompris 1.0
 
 import "../../core"
@@ -58,8 +59,11 @@ ActivityBase {
 
         signal start
         signal stop
+
+        property string locale: "$LOCALE"
         
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -77,6 +81,7 @@ ActivityBase {
             property alias keyboard: keyboard
             property alias wordDropTimer: wordDropTimer
             property GCAudio audioEffects: activity.audioEffects
+            property alias locale: background.locale
         }
 
         onStart: {
@@ -105,6 +110,86 @@ ActivityBase {
 
         }
 
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            content: Component {
+                Item {
+                    property alias localeBox: localeBox
+                    height: column.height
+
+                    property alias availableLangs: langs.languages
+                    LanguageList {
+                        id: langs
+                    }
+
+                    Column {
+                        id: column
+                        spacing: 10
+                        width: parent.width
+
+                        Flow {
+                            spacing: 5
+                            width: dialogActivityConfig.width
+                            ComboBox {
+                                id: localeBox
+                                style: GCComboBoxStyle {}
+                                model: langs.languages
+                                width: 250 * ApplicationInfo.ratio
+                            }
+                            GCText {
+                                text: qsTr("Select your locale")
+                                fontSize: mediumSize
+                                wrapMode: Text.WordWrap
+                            }
+                        }
+/* TODO handle this:
+                        GCDialogCheckBox {
+                            id: uppercaseBox
+                            width: 250 * ApplicationInfo.ratio
+                            text: qsTr("Uppercase only mode")
+                            checked: true
+                            onCheckedChanged: {
+                                print("uppercase changed")
+                            }
+                        }
+*/
+                    }
+                }
+            }
+
+            onClose: home()
+            onLoadData: {
+                if(dataToSave && dataToSave["locale"]) {
+                    background.locale = dataToSave["locale"];
+                }
+            }
+            onSaveData: {
+                var oldLocale = background.locale;
+                var newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
+                // Remove .UTF-8
+                newLocale = newLocale.substring(0, newLocale.indexOf('.'))
+                dataToSave = {"locale": newLocale}
+                background.locale = newLocale;
+
+                // Restart the activity with new informations
+                if(oldLocale !== newLocale) {
+                    background.stop();
+                    background.start();
+                }
+            }
+
+
+            function setDefaultValues() {
+                var localeUtf8 = background.locale + ".UTF-8";
+                for(var i = 0 ; i < dialogActivityConfig.configItem.availableLangs.length ; i ++) {
+                    if(dialogActivityConfig.configItem.availableLangs[i].locale === localeUtf8) {
+                        dialogActivityConfig.loader.item.localeBox.currentIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -113,13 +198,18 @@ ActivityBase {
         Bar {
             id: bar
             anchors.bottom: keyboard.top
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | config }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onConfigClicked: {
+                dialogActivityConfig.active = true
+                dialogActivityConfig.setDefaultValues()
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {
@@ -152,6 +242,9 @@ ActivityBase {
         Wordlist {
             id: wordlist
             defaultFilename: activity.dataSetUrl + "default-en.json"
+            // To switch between locales: xx_XX stored in configuration and
+            // possibly correct xx if available (ie fr_FR for french but dataset is fr.)
+            useDefault: false
             filename: ""
 
             onError: console.log("Gletters: Wordlist error: " + msg);
