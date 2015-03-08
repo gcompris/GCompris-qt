@@ -52,8 +52,8 @@ Item {
             Image {
                 sourceSize.height: 50 * ApplicationInfo.ratio
                 source:
-                demoModeBox.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
-                "qrc:/gcompris/src/core/resource/cancel.svgz"
+                demoModeBox.checked ? "qrc:/gcompris/src/core/resource/apply.svg" :
+                "qrc:/gcompris/src/core/resource/cancel.svg"
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
@@ -254,8 +254,8 @@ Item {
             Image {
                 id: voicesImage
                 sourceSize.height: 30 * ApplicationInfo.ratio
-                source: voicesRow.haveLocalResource ? "qrc:/gcompris/src/core/resource/apply.svgz" :
-                "qrc:/gcompris/src/core/resource/cancel.svgz"
+                source: voicesRow.haveLocalResource ? "qrc:/gcompris/src/core/resource/apply.svg" :
+                "qrc:/gcompris/src/core/resource/cancel.svg"
             }
 
             Button {
@@ -292,7 +292,7 @@ Item {
             }
 
             Image {
-                source: "qrc:/gcompris/src/core/resource/bar_next.svgz"
+                source: "qrc:/gcompris/src/core/resource/bar_next.svg"
                 sourceSize.height: Math.min(50 * ApplicationInfo.ratio, parent.width / 8)
 
                 MouseArea {
@@ -345,7 +345,7 @@ Item {
 
                 Image {
                     source: "qrc:/gcompris/src/core/resource/difficulty" +
-                    (modelData + 1) + ".svgz";
+                    (modelData + 1) + ".svg";
                     sourceSize.width: Math.min(50 * ApplicationInfo.ratio, parent.width / 8)
                     opacity: modelData + 1 >= filterRepeater.min &&
                     modelData + 1 <= filterRepeater.max
@@ -379,7 +379,7 @@ Item {
             }
 
             Image {
-                source: "qrc:/gcompris/src/core/resource/bar_previous.svgz"
+                source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
                 sourceSize.height: Math.min(50 * ApplicationInfo.ratio, parent.width / 8)
 
                 MouseArea {
