@@ -8,7 +8,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Tic Tac Toe")
   description: qsTr("Place three marks in a row")
-//  intro: "Click on the square which you wish to mark and try to mark 3 consecutivr squares before Tux."
+//  intro: "Click on the square which you wish to mark and try to mark 3 consecutive squares before Tux."
   goal: qsTr("Place three respective marks in any horizontal, vertical, or diagonal row to win the game")
   prerequisite: ""
   manual: qsTr("Play with the computer. Take turns to click on the square which you want to mark. First player to create a line of 3 marks wins")

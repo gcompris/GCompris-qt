@@ -15,7 +15,7 @@
    inkscape:version="0.91 r13725"
    width="109.99999"
    height="80"
-   sodipodi:docname="score_2.svg">
+   sodipodi:docname="score_21.svg">
   <metadata
      id="metadata2993">
     <rdf:RDF>
@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -141,82 +141,6 @@
        id="linearGradient5055"
        xlink:href="#linearGradient1702-3"
        inkscape:collect="always" />
-    <radialGradient
-       id="radialGradient3157"
-       gradientUnits="userSpaceOnUse"
-       cy="264.19"
-       cx="204.50999"
-       gradientTransform="matrix(1,0,0,0.92911,0,18.729)"
-       r="56.124001"
-       inkscape:collect="always">
-      <stop
-         id="stop3153"
-         style="stop-color:#ffffff"
-         offset="0" />
-      <stop
-         id="stop3155"
-         style="stop-color:#ffffff;stop-opacity:0"
-         offset="1" />
-    </radialGradient>
-    <radialGradient
-       id="radialGradient3141"
-       gradientUnits="userSpaceOnUse"
-       cy="264.19"
-       cx="204.50999"
-       gradientTransform="matrix(0.38806,0.10448,-0.24057,0.89355,188.7,6.7552)"
-       r="53.316002"
-       inkscape:collect="always">
-      <stop
-         id="stop3137"
-         style="stop-color:#000000"
-         offset="0" />
-      <stop
-         id="stop3139"
-         style="stop-color:#000000;stop-opacity:0"
-         offset="1" />
-    </radialGradient>
-    <filter
-       id="filter3202"
-       height="1.5516"
-       width="1.5879"
-       y="-0.27581"
-       x="-0.29394001"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur3204"
-         stdDeviation="16.425908"
-         inkscape:collect="always" />
-    </filter>
-    <linearGradient
-       id="linearGradient3169"
-       y2="121.75"
-       gradientUnits="userSpaceOnUse"
-       x2="134.37"
-       gradientTransform="translate(-121.20452,-106.56212)"
-       y1="34.521999"
-       x1="110.65"
-       inkscape:collect="always">
-      <stop
-         id="stop3163"
-         style="stop-color:#ffffff"
-         offset="0" />
-      <stop
-         id="stop3165"
-         style="stop-color:#ffffff;stop-opacity:0"
-         offset="1" />
-    </linearGradient>
-    <filter
-       id="filter3182"
-       height="1.5297"
-       width="1.2804"
-       y="-0.26486999"
-       x="-0.14018001"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur3184"
-         stdDeviation="13.951612"
-         inkscape:collect="always" />
-    </filter>
   </defs>
   <sodipodi:namedview
      pagecolor="#ffffff"
@@ -232,8 +156,8 @@
      id="namedview2989"
      showgrid="false"
      inkscape:zoom="2.38396"
-     inkscape:cx="-24.796892"
-     inkscape:cy="92.602674"
+     inkscape:cx="-73.209633"
+     inkscape:cy="42.266259"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -257,40 +181,4 @@
      d="M 106.61629,28.298373 C 106.70517,21.636833 107.7517,7.2475057 104.00555,5.0285687 101.05121,2.1463502 17.132662,4.3440338 7.9614696,4.2459808 2.0748296,3.5633272 3.8874768,22.684642 3.8379928,27.426219 25.814389,21.636703 48.310059,21.116809 65.483028,26.2697 c 24.336165,6.045087 31.53911,4.599658 41.133262,2.028673 z"
      inkscape:connector-curvature="0"
      inkscape:transform-center-x="13.709435" />
-  <ellipse
-     ry="24.866116"
-     rx="25.879467"
-     cy="40.615986"
-     cx="34.575912"
-     id="path2160"
-     style="fill:#0f04b4" />
-  <ellipse
-     ry="24.866116"
-     rx="25.879467"
-     cy="40.615986"
-     cx="34.575912"
-     id="path3189"
-     style="opacity:0.03222201;fill:#2400ff;stroke:#060000;stroke-width:1.10045373;stroke-linecap:round;stroke-linejoin:round" />
-  <ellipse
-     ry="49.336868"
-     rx="53.315651"
-     cy="264.19098"
-     cx="204.50928"
-     id="path3133"
-     style="fill:url(#radialGradient3157);stroke:url(#radialGradient3141);stroke-width:5.6170001;stroke-linecap:round;stroke-linejoin:round;filter:url(#filter3202)"
-     transform="matrix(0.24488777,-0.07406813,0.06090444,0.10285988,-26.544359,43.310549)" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path3159"
-     sodipodi:nodetypes="cccc"
-     style="fill:url(#linearGradient3169);fill-rule:evenodd;filter:url(#filter3182)"
-     d="m -11.386623,-68.365721 c -39.250996,10.212 -78.391996,54.952 -83.595996,71.3059964 -26.616001,74.1299996 269.319999,-4.279996 180.759996,-56.6989964 -24.18,-18.918 -67.35,-21.931 -97.16,-14.607 z"
-     transform="matrix(0.18459806,0,0,0.18459806,31.802767,32.182928)" />
-  <ellipse
-     style="opacity:1;fill:#f9f9f9;fill-opacity:0.95294118;fill-rule:evenodd;stroke:#17b5ed;stroke-width:0.28843421;stroke-opacity:0"
-     id="path3361"
-     cx="34.653851"
-     cy="40.771881"
-     rx="19.67514"
-     ry="19.519243" />
 </svg>

@@ -3,7 +3,7 @@
  * Copyright (C) 2014 Pulkit Gupta
  *
  * Authors:
- *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Pulkit Gupta <pulkitgenius@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -63,14 +63,14 @@ function initLevel() {
         }
     }
     if(twoPlayer) {
-		items.instructionTxt.text = qsTr("Its Player 1 turn")
+		initiatePlayer1()
 		items.playButton.visible = false
 	}
 	else {
-		if (items.playSecond)
-			items.instructionTxt.text = qsTr("Its Computer's turn")
-		else
-			items.instructionTxt.text = qsTr("Its Your Turn")
+		if (items.playSecond) 
+			initiatePlayer2()
+		else 
+			initiatePlayer1()
 	}
 	stopper = 0
 	if (items.playSecond)
@@ -95,31 +95,69 @@ function reset() {
 	stopper = 1
 	hx = items.repeater.itemAt(1).x		
 	vy = items.repeater.itemAt(3).y
-	items.magnify.stop()    // stop animation
+	stopAnimations()
+	items.player1image.rotation = 0
+	items.player1image.rotation = 0
     items.pieces.clear() // Clear the board
     initLevel()
-    
 }
 
-function changeText() {
-	if(twoPlayer)
-		items.instructionTxt.text = qsTr("Its Player " + ((items.counter + 1)%2 + 1) + " turn")
+function stopAnimations()
+{
+	items.magnify.stop()
+	items.player1turn.stop()
+	items.player2turn.stop()
+	items.player1shrink.stop()
+	items.player2shrink.stop()
+	items.rotateCat.stop()
+	items.rotateTrux.stop()
+}
+
+//Initial values at the start of game when its player 1 turn
+function initiatePlayer1()
+{
+	items.changeScalePlayer1.scale = 1.4
+	items.changeScalePlayer2.scale = 1.0
+	items.player1.state = "first"
+	items.player2.state = "second"
+	items.rotateCat.start()
+}
+
+//Initial values at the start of game when its player 1 turn
+function initiatePlayer2()
+{
+	items.changeScalePlayer1.scale = 1.0
+	items.changeScalePlayer2.scale = 1.4
+	items.player1.state = "second"
+	items.player2.state = "first"
+	items.rotateTrux.start()
+}
+
+//Change scale of score boxes according to turns
+function changeScale() {
+	if(twoPlayer) {
+		if (items.counter%2) 
+			items.player2turn.start()
+		else
+			items.player1turn.start()
+	}
 	else {
 		if (items.playSecond) {
-			if (items.counter%2 == 1)
-				items.instructionTxt.text = qsTr("Its Computer's turn")
+			if (items.counter%2 == 0)
+				items.player2turn.start()
 			else
-				items.instructionTxt.text = qsTr("Its Your Turn")
+				items.player1turn.start()
 		}
 		else {
-			if (items.counter%2 == 1)
-				items.instructionTxt.text = qsTr("Its Your turn")
+			if (items.counter%2 == 0)
+				items.player1turn.start()
 			else
-				items.instructionTxt.text = qsTr("Its Computer's Turn")
+				items.player2turn.start()
 		}
 	}
 }
 
+//Changing play to second in single player mode
 function changePlayToSecond() {
 	if (items.playSecond == 0) {
 		items.playSecond = 1
@@ -138,11 +176,13 @@ function changePlayToSecond() {
     items.magnify.start()
 }
 
+//Changing play to second in single player mode
 function changePlayToFirst() {
 	items.playSecond = 0
 	reset()
 }
 
+//Get row of the corresponding square box (square boxes are defined in repeater)
 function getrowno(parentY) {
     for(var i = 0; i < items.rows - 1; i++) {
 	if(parentY == items.repeater.itemAt(i*3).y) {
@@ -152,6 +192,7 @@ function getrowno(parentY) {
     return items.rows - 1
 }
 
+//Get column of the corresponding square box (square boxes are defined in repeater)
 function getcolno(parentX) {
     for(var i = 0; i < items.columns - 1; i++) {
         if(parentX == items.repeater.itemAt(i).x) {
@@ -161,6 +202,7 @@ function getcolno(parentX) {
     return items.columns - 1
 }
 
+//Create the piece (cross or circle) at given position
 function handleCreate(parent) {
 	parent.state = "DONE"
 	var rowno = getrowno(parent.y)
@@ -173,12 +215,31 @@ function handleCreate(parent) {
     items.magnify.start()
 }
 
+//Return the state of piece (1 or 2), 1 and 2 corresponds to Player 1 and Player 2 respectively
 function getPieceState(col, row) {
     return items.pieces.get(row * items.columns + col).stateTemp
 }
 
+/* setmove() decides the move which is to be played by computer. It decides according to the current level of player:
+ * At level 0 -> No if statements are parsed, and in the end, a random empty location is given
+ * At level 1 -> Only first 'if' statement is parsed, evaluateBoard(computerState) is called which checks if computer can 
+ * 				 win in this turn, if there is an empty location in which computer can get three consecutive marks, then
+ * 				 computer will play there, else computer will play on a random empty location. At level 1, computer will 
+ * 				 not check if player can win in next turn or not, this increases the winning chance of player at level 1.
+ * At level 2 -> First two 'if' statements are parsed, hence computer will first check if it can win in this turn by executing
+ * 				 evaluateBoard(computerState). If not, then it will execute evaluateBoard(playerState) which will check if
+ * 				 player can win in next turn or not, if player can win, then computer will play at that location to stop
+ * 				 the player from winning. Else computer will play randomly. Therefore player can not win, unless he uses
+ * 				 a double trick (Having two positions from where you can win).
+ * At level 3 -> Same as level 2
+ * At level 4 -> Along with evaluateBoard(computerState) and evaluateBoard(playerState), applyLogic(playerState) is called 
+ * 				 which counters all the possibilities of double trick. Hence at level 4, player can not win, it will either
+ * 				 be a draw or the player will lose.
+ * setmove() returns the position where computer has to play its turn
+*/
 function setmove() {
 
+	//Assigning States -> Which state "1" or "2" is used for identifying player and computer  
 	var playerState = items.playSecond ? "2" : "1"
 	var computerState = items.playSecond ? "1" : "2"
 
@@ -209,6 +270,56 @@ function setmove() {
 	return randno
 }
 
+//Returns the position after analyzing such that no double trick is possible
+function applyLogic( player ) {
+	
+	if (items.pieces.get(4).stateTemp == "invisible")
+		return 4
+	if (!items.playSecond) {	
+		if (items.counter == 1 && track[0] == 4) {
+			var temp = [0,2,6,8]
+			var randno = Math.floor((Math.random() * 4));
+			return temp[randno]
+		}
+		if (items.counter == 3 && track[0] == 4) {
+			var temp = [0,2,6,8]
+			var found = false
+			while (!found) {
+				var randno = Math.floor((Math.random() * 4));
+				if (items.pieces.get(temp[randno]).stateTemp == "invisible")
+					found = true
+			}
+			return temp[randno]
+		}
+		var value = giveNearest()
+		if (value != -1)
+			return value
+		return -1
+	}
+	else {
+		if (items.counter == 2 && track[1] == 4) {
+			var temp = [0,2,6,8]
+			var found = false
+			while (!found) {
+				var randno = Math.floor((Math.random() * 4));
+				if (items.pieces.get(temp[randno]).stateTemp == "invisible")
+					found = true
+			}
+		}
+		else {
+			var value = giveNearest()
+			if (value != -1)
+				return value
+			return -1
+		}
+	}
+}
+
+/* One of the function used by applyLogic, giveNearest() returns the immediate empty position (up, down, left or right) to the 
+ * position at which player played his turn. The logic is, that in most cases if computer plays just immediate to where the 
+ * player has played, then player wont be able to get three consecutive marks. 
+ * Returns -1 if no immediate empty position is found
+*/
 function giveNearest() {
 	
 	var currentRow = parseInt(currentPiece / items.columns)
@@ -239,45 +350,15 @@ function giveNearest() {
 	return -1
 }
 
-function applyLogic( player ) {
-	
-	if (items.pieces.get(4).stateTemp == "invisible")
-		return 4
-	if (!items.playSecond) {	
-		if (items.counter == 1 && track[0] == 4) {
-			var temp = [0,2,6,8]
-			var randno = Math.floor((Math.random() * 4));
-			return temp[randno]
-		}
-		if (items.counter == 3 && track[0] == 4) {
-			var temp = [0,2,6,8]
-			var found = false
-			while (!found) {
-				var randno = Math.floor((Math.random() * 4));
-				if (items.pieces.get(temp[randno]).stateTemp == "invisible")
-					found = true
-			}
-			return temp[randno]
-		}
-		var value = giveNearest()
-		if (value != -1)
-			return value
-		return -1
-	}
-	else {
-		var value = giveNearest()
-		if (value != -1)
-			return value
-		return -1
-	}
-}
-
+//Starts the process of computer turn
 function doMove() {
-	
 	var pos = setmove ()
     handleCreate(items.repeater.itemAt(pos))
 }
 
+/* evaluateBoard(player) checks if the player has marked two consecutive places and if third place is empty or not, if found
+ * such a place, then return that place, else return -1
+*/
 function evaluateBoard(player) {
 	
 	var countp, counti, invisibleX, invisibleY
@@ -352,6 +433,7 @@ function evaluateBoard(player) {
 	return -1
 }
 
+//Checks the condition if game is won or not
 function checkGameWon(currentPieceRow, currentPieceColumn) {
 
     currentPlayer = getPieceState(currentPieceColumn, currentPieceRow)
@@ -418,9 +500,21 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
     return false
 }
 
+//Checks if its Computer's turn or not, if its Computer's turn, then call doMove()
+function shouldComputerPlay() {
+	if(!twoPlayer) {
+		if(items.counter % 2 && items.playSecond == false && stopper == 0) {
+				doMove()
+		}
+		else if((items.counter % 2 == 0) && items.playSecond == true && stopper == 0) {
+			doMove()
+		}
+	}
+}
+
+//This function is called after every turn to proceed the game
 function continueGame() {
-	
-    items.createPiece.opacity = 0
+	items.createPiece.opacity = 0
     if (!items.playSecond)
 		items.pieces.set(currentPiece, {"stateTemp": items.counter++ % 2 ? "2": "1"})
 	else {
@@ -437,41 +531,57 @@ function continueGame() {
                         parseInt(currentPiece % items.columns))) {
             items.gameDone = true
             if(currentPlayer === "1") {
-                items.instructionTxt.text = qsTr("Congratulation Player 1! You won")
+                items.player1.state = "win"
                 items.player1_score++
             } 
             else {
-				items.instructionTxt.text = qsTr("Congratulation Player 2! You won")
+				items.player2.state = "win"
                 items.player2_score++
             }
             items.bonus.good("flower")
             items.bonus.isWin = false
         }
-
+        else if(items.counter == 9) {
+			items.rotateCat.stop()
+			items.rotateTrux.stop()
+			items.player2image.rotation = 0
+			items.player1image.rotation = 0
+			items.changeScalePlayer1.scale = 1.0
+			items.changeScalePlayer2.scale = 1.0
+			items.player1.state = "second"
+			items.player2.state = "second"
+			items.bonus.bad("tux")
+		}
+		else
+			changeScale()
     } 
     else {
 		if(checkGameWon(parseInt(currentPiece / items.columns),
                         parseInt(currentPiece % items.columns))) {
-            items.gameDone = true
+			items.gameDone = true
             if(currentPlayer == "1") {
-				items.instructionTxt.text = qsTr("Congratulation! You won")
-                items.player1_score++
+				items.player1_score++
+                items.player1.state = "win"
                 items.bonus.good("flower")
             } 
             else {
-				items.instructionTxt.text = qsTr("You lost! Click on reload button to try again")
-                items.player2_score++
+				items.player2_score++
+                items.player2.state = "win"
                 items.bonus.bad("tux")
             }
         }
-        else if(items.counter % 2 && items.counter != 9 && items.playSecond == false && stopper == 0) {
-            doMove()
-        }
-        else if((items.counter % 2 == 0) && items.counter != 9 && items.playSecond == true && stopper == 0) {
-            doMove()
-        }
-    }
-    if(items.counter == 9 && items.gameDone != true) {
-		items.instructionTxt.text = qsTr("Its a Draw! Click on reload button to try again")
+        else if(items.counter == 9) {
+			items.rotateCat.stop()
+			items.rotateTrux.stop()
+			items.player2image.rotation = 0
+			items.player1image.rotation = 0
+			items.changeScalePlayer1.scale = 1.0
+			items.changeScalePlayer2.scale = 1.0
+			items.player1.state = "second"
+			items.player2.state = "second"
+			items.bonus.bad("tux")
+		}
+        else 
+			changeScale()
     }
 }
