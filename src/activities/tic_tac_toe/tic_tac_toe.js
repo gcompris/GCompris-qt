@@ -3,20 +3,20 @@
  * Copyright (C) 2014 Pulkit Gupta
  *
  * Authors:
- *   Pulkit Gupta <pulkitgenius@gmail.com>
+ *	 Pulkit Gupta <pulkitgenius@gmail.com>
  *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 3 of the License, or
- *   (at your option) any later version.
+ *	 This program is free software; you can redistribute it and/or modify
+ *	 it under the terms of the GNU General Public License as published by
+ *	 the Free Software Foundation; either version 3 of the License, or
+ *	 (at your option) any later version.
  *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
+ *	 This program is distributed in the hope that it will be useful,
+ *	 but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *	 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *	 GNU General Public License for more details.
  *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ *	 You should have received a copy of the GNU General Public License
+ *	 along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 .pragma library
 .import QtQuick 2.0 as Quick
@@ -37,14 +37,14 @@ var vy		//y co-ordinate needed for creating first image when playSecond is enabl
 var stopper		//For stopping game when doing reset
 
 function start(items_, twoPlayer_) {
-    items = items_
-    currentLevel = 0
-    currentPlayer = 1
-    items.player1_score = 0
-    items.player2_score = 0
-    twoPlayer = twoPlayer_
-    numberOfLevel = twoPlayer ? 1 : 5
-    items.playSecond = 0
+	items = items_
+	currentLevel = 0
+	currentPlayer = 1
+	items.player1_score = 0
+	items.player2_score = 0
+	twoPlayer = twoPlayer_
+	numberOfLevel = twoPlayer ? 1 : 5
+	items.playSecond = 0
 	initLevel()
 }
 
@@ -53,16 +53,16 @@ function stop() {
 
 function initLevel() {
 	items.bar.level = currentLevel
-    items.counter = 0
+	items.counter = 0
 	items.gameDone = false
-    items.pieces.clear()
-    track = []
-    for(var y = 0;  y < items.rows; y++) {
-        for(var x = 0;  x < items.columns; x++) {
-            items.pieces.append({'stateTemp': "invisible"})
-        }
-    }
-    if(twoPlayer) {
+	items.pieces.clear()
+	track = []
+	for(var y = 0;	y < items.rows; y++) {
+		for(var x = 0;	x < items.columns; x++) {
+			items.pieces.append({'stateTemp': "invisible"})
+		}
+	}
+	if(twoPlayer) {
 		initiatePlayer1()
 		items.playButton.visible = false
 	}
@@ -79,16 +79,16 @@ function initLevel() {
 
 function nextLevel() {
 	if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
-    reset();
+		currentLevel = 0
+	}
+	reset();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
-    }
-    reset();
+	if(--currentLevel < 0) {
+		currentLevel = numberOfLevel - 1
+	}
+	reset();
 }
 
 function reset() {
@@ -98,8 +98,8 @@ function reset() {
 	stopAnimations()
 	items.player1image.rotation = 0
 	items.player1image.rotation = 0
-    items.pieces.clear() // Clear the board
-    initLevel()
+	items.pieces.clear() // Clear the board
+	initLevel()
 }
 
 function stopAnimations()
@@ -169,11 +169,11 @@ function changePlayToSecond() {
 	var x = parseInt(rand%3) * hx
 	items.repeater.itemAt(rand).state = "DONE"
 	currentPiece = rand
-    items.createPiece.x=x
-    items.createPiece.y=y
-    items.demagnify.start()
-    items.createPiece.opacity = 1
-    items.magnify.start()
+	items.createPiece.x=x
+	items.createPiece.y=y
+	items.demagnify.start()
+	items.createPiece.opacity = 1
+	items.magnify.start()
 }
 
 //Changing play to second in single player mode
@@ -184,57 +184,57 @@ function changePlayToFirst() {
 
 //Get row of the corresponding square box (square boxes are defined in repeater)
 function getrowno(parentY) {
-    for(var i = 0; i < items.rows - 1; i++) {
+	for(var i = 0; i < items.rows - 1; i++) {
 	if(parentY == items.repeater.itemAt(i*3).y) {
-            return i
-        }
-    }
-    return items.rows - 1
+			return i
+		}
+	}
+	return items.rows - 1
 }
 
 //Get column of the corresponding square box (square boxes are defined in repeater)
 function getcolno(parentX) {
-    for(var i = 0; i < items.columns - 1; i++) {
-        if(parentX == items.repeater.itemAt(i).x) {
-            return i
-        }
-    }
-    return items.columns - 1
+	for(var i = 0; i < items.columns - 1; i++) {
+		if(parentX == items.repeater.itemAt(i).x) {
+			return i
+		}
+	}
+	return items.columns - 1
 }
 
 //Create the piece (cross or circle) at given position
 function handleCreate(parent) {
 	parent.state = "DONE"
 	var rowno = getrowno(parent.y)
-    var colno = getcolno(parent.x)
-    currentPiece = (rowno * items.columns) + colno
-    items.createPiece.x=parent.x
-    items.createPiece.y=parent.y
-    items.demagnify.start()
-    items.createPiece.opacity = 1
-    items.magnify.start()
+	var colno = getcolno(parent.x)
+	currentPiece = (rowno * items.columns) + colno
+	items.createPiece.x=parent.x
+	items.createPiece.y=parent.y
+	items.demagnify.start()
+	items.createPiece.opacity = 1
+	items.magnify.start()
 }
 
 //Return the state of piece (1 or 2), 1 and 2 corresponds to Player 1 and Player 2 respectively
 function getPieceState(col, row) {
-    return items.pieces.get(row * items.columns + col).stateTemp
+	return items.pieces.get(row * items.columns + col).stateTemp
 }
 
 /* setmove() decides the move which is to be played by computer. It decides according to the current level of player:
  * At level 0 -> No if statements are parsed, and in the end, a random empty location is given
  * At level 1 -> Only first 'if' statement is parsed, evaluateBoard(computerState) is called which checks if computer can 
- * 				 win in this turn, if there is an empty location in which computer can get three consecutive marks, then
- * 				 computer will play there, else computer will play on a random empty location. At level 1, computer will 
- * 				 not check if player can win in next turn or not, this increases the winning chance of player at level 1.
+ *				 win in this turn, if there is an empty location in which computer can get three consecutive marks, then
+ *				 computer will play there, else computer will play on a random empty location. At level 1, computer will 
+ *				 not check if player can win in next turn or not, this increases the winning chance of player at level 1.
  * At level 2 -> First two 'if' statements are parsed, hence computer will first check if it can win in this turn by executing
- * 				 evaluateBoard(computerState). If not, then it will execute evaluateBoard(playerState) which will check if
- * 				 player can win in next turn or not, if player can win, then computer will play at that location to stop
- * 				 the player from winning. Else computer will play randomly. Therefore player can not win, unless he uses
- * 				 a double trick (Having two positions from where you can win).
+ *				 evaluateBoard(computerState). If not, then it will execute evaluateBoard(playerState) which will check if
+ *				 player can win in next turn or not, if player can win, then computer will play at that location to stop
+ *				 the player from winning. Else computer will play randomly. Therefore player can not win, unless he uses
+ *				 a double trick (Having two positions from where you can win).
  * At level 3 -> Same as level 2
  * At level 4 -> Along with evaluateBoard(computerState) and evaluateBoard(playerState), applyLogic(playerState) is called 
- * 				 which counters all the possibilities of double trick. Hence at level 4, player can not win, it will either
- * 				 be a draw or the player will lose.
+ *				 which counters all the possibilities of double trick. Hence at level 4, player can not win, it will either
+ *				 be a draw or the player will lose.
  * setmove() returns the position where computer has to play its turn
 */
 function setmove() {
@@ -353,7 +353,7 @@ function giveNearest() {
 //Starts the process of computer turn
 function doMove() {
 	var pos = setmove ()
-    handleCreate(items.repeater.itemAt(pos))
+	handleCreate(items.repeater.itemAt(pos))
 }
 
 /* evaluateBoard(player) checks if the player has marked two consecutive places and if third place is empty or not, if found
@@ -362,8 +362,8 @@ function doMove() {
 function evaluateBoard(player) {
 	
 	var countp, counti, invisibleX, invisibleY
-    //Horizontal
-    for(var i = 0; i < 3; i++) {
+	//Horizontal
+	for(var i = 0; i < 3; i++) {
 		countp=0
 		counti=0
 		for(var j=0; j<3; j++) {
@@ -378,9 +378,9 @@ function evaluateBoard(player) {
 		if(countp==2 && counti==1) {
 			return (invisibleX * items.columns + invisibleY)
 		}
-    }
+	}
 	//Vertical
-    for(var i = 0; i < 3; i++) {
+	for(var i = 0; i < 3; i++) {
 		countp=0
 		counti=0
 		for(var j=0; j<3; j++) {
@@ -395,10 +395,10 @@ function evaluateBoard(player) {
 		if(countp==2 && counti==1) {
 			return (invisibleX * items.columns + invisibleY)
 		}
-    }
+	}
 
-    // Diagonal top left / bottom right
-    countp=0
+	// Diagonal top left / bottom right
+	countp=0
 	counti=0
 	for(var i=0; i<3; i++) {
 		if(getPieceState(i,i) == player)
@@ -413,8 +413,8 @@ function evaluateBoard(player) {
 		return (invisibleX * items.columns + invisibleY)
 	}
 
-    // Diagonal top right / bottom left
-    countp=0
+	// Diagonal top right / bottom left
+	countp=0
 	counti=0
 	var j=2
 	for(var i=0; i<3; i++) {
@@ -436,68 +436,68 @@ function evaluateBoard(player) {
 //Checks the condition if game is won or not
 function checkGameWon(currentPieceRow, currentPieceColumn) {
 
-    currentPlayer = getPieceState(currentPieceColumn, currentPieceRow)
-    
-    // Horizontal
-    var sameColor = 0
-    for(var col = 0; col < items.columns; col++) {
-        if(getPieceState(col, currentPieceRow) === currentPlayer) {
+	currentPlayer = getPieceState(currentPieceColumn, currentPieceRow)
+	
+	// Horizontal
+	var sameColor = 0
+	for(var col = 0; col < items.columns; col++) {
+		if(getPieceState(col, currentPieceRow) === currentPlayer) {
 			if(++sameColor == 3) {
 				items.repeater.itemAt(currentPieceRow * items.columns + col).visible = true
-                items.repeater.itemAt(currentPieceRow * items.columns + col -1).visible = true
-                items.repeater.itemAt(currentPieceRow * items.columns + col -2).visible = true
-                items.repeater.itemAt(currentPieceRow * items.columns + col).border.color = "green"
-                items.repeater.itemAt(currentPieceRow * items.columns + col - 1).border.color = "green"
-                items.repeater.itemAt(currentPieceRow * items.columns + col - 2).border.color = "green"
-                return true
-            }
-        } 
-        else {
-            sameColor = 0
-        }
-    }
+				items.repeater.itemAt(currentPieceRow * items.columns + col -1).visible = true
+				items.repeater.itemAt(currentPieceRow * items.columns + col -2).visible = true
+				items.repeater.itemAt(currentPieceRow * items.columns + col).border.color = "green"
+				items.repeater.itemAt(currentPieceRow * items.columns + col - 1).border.color = "green"
+				items.repeater.itemAt(currentPieceRow * items.columns + col - 2).border.color = "green"
+				return true
+			}
+		} 
+		else {
+			sameColor = 0
+		}
+	}
 
-    // Vertical
-    sameColor = 0
-    for(var row = 0; row < items.rows; row++) {
-        if(getPieceState(currentPieceColumn, row) === currentPlayer) {
-            if(++sameColor == 3) {
+	// Vertical
+	sameColor = 0
+	for(var row = 0; row < items.rows; row++) {
+		if(getPieceState(currentPieceColumn, row) === currentPlayer) {
+			if(++sameColor == 3) {
 				items.repeater.itemAt(row * items.columns + currentPieceColumn).visible = true
-                items.repeater.itemAt((row - 1) * items.columns + currentPieceColumn).visible = true
-                items.repeater.itemAt((row -2) * items.columns + currentPieceColumn).visible = true
-                items.repeater.itemAt(row * items.columns + currentPieceColumn).border.color = "green"
-                items.repeater.itemAt((row -1) * items.columns + currentPieceColumn).border.color = "green"
-                items.repeater.itemAt((row -2) * items.columns + currentPieceColumn).border.color = "green"
-                return true
-            }
-        } 
-        else {
-            sameColor = 0
-        }
-    }
+				items.repeater.itemAt((row - 1) * items.columns + currentPieceColumn).visible = true
+				items.repeater.itemAt((row -2) * items.columns + currentPieceColumn).visible = true
+				items.repeater.itemAt(row * items.columns + currentPieceColumn).border.color = "green"
+				items.repeater.itemAt((row -1) * items.columns + currentPieceColumn).border.color = "green"
+				items.repeater.itemAt((row -2) * items.columns + currentPieceColumn).border.color = "green"
+				return true
+			}
+		} 
+		else {
+			sameColor = 0
+		}
+	}
 
-    // Diagonal top left / bottom right
-    if(getPieceState(0,0) === currentPlayer && getPieceState(1,1) === currentPlayer && getPieceState(2,2) === currentPlayer) {
-        items.repeater.itemAt(0).visible = true
-        items.repeater.itemAt(4).visible = true
-        items.repeater.itemAt(8).visible = true
-        items.repeater.itemAt(0).border.color = "green"
-        items.repeater.itemAt(4).border.color = "green"
-        items.repeater.itemAt(8).border.color = "green"
-        return true
-    }
+	// Diagonal top left / bottom right
+	if(getPieceState(0,0) === currentPlayer && getPieceState(1,1) === currentPlayer && getPieceState(2,2) === currentPlayer) {
+		items.repeater.itemAt(0).visible = true
+		items.repeater.itemAt(4).visible = true
+		items.repeater.itemAt(8).visible = true
+		items.repeater.itemAt(0).border.color = "green"
+		items.repeater.itemAt(4).border.color = "green"
+		items.repeater.itemAt(8).border.color = "green"
+		return true
+	}
 
-    // Diagonal top right / bottom left
-    if(getPieceState(2,0) === currentPlayer && getPieceState(1,1) === currentPlayer && getPieceState(0,2) === currentPlayer) {
-        items.repeater.itemAt(2).visible = true
-        items.repeater.itemAt(4).visible = true
-        items.repeater.itemAt(6).visible = true
-        items.repeater.itemAt(2).border.color = "green"
-        items.repeater.itemAt(4).border.color = "green"
-        items.repeater.itemAt(6).border.color = "green"
-        return true
-    }
-    return false
+	// Diagonal top right / bottom left
+	if(getPieceState(2,0) === currentPlayer && getPieceState(1,1) === currentPlayer && getPieceState(0,2) === currentPlayer) {
+		items.repeater.itemAt(2).visible = true
+		items.repeater.itemAt(4).visible = true
+		items.repeater.itemAt(6).visible = true
+		items.repeater.itemAt(2).border.color = "green"
+		items.repeater.itemAt(4).border.color = "green"
+		items.repeater.itemAt(6).border.color = "green"
+		return true
+	}
+	return false
 }
 
 //Checks if its Computer's turn or not, if its Computer's turn, then call doMove()
@@ -515,7 +515,7 @@ function shouldComputerPlay() {
 //This function is called after every turn to proceed the game
 function continueGame() {
 	items.createPiece.opacity = 0
-    if (!items.playSecond)
+	if (!items.playSecond)
 		items.pieces.set(currentPiece, {"stateTemp": items.counter++ % 2 ? "2": "1"})
 	else {
 		if (items.counter++ % 2 == 0)
@@ -523,25 +523,25 @@ function continueGame() {
 		else
 			items.pieces.set(currentPiece, {"stateTemp": "1"})
 	}
-    track.push(currentPiece)
-    
-    /* Update score if game won */
-    if(twoPlayer) {
-        if(checkGameWon(parseInt(currentPiece / items.columns),
-                        parseInt(currentPiece % items.columns))) {
-            items.gameDone = true
-            if(currentPlayer === "1") {
-                items.player1.state = "win"
-                items.player1_score++
-            } 
-            else {
+	track.push(currentPiece)
+	
+	/* Update score if game won */
+	if(twoPlayer) {
+		if(checkGameWon(parseInt(currentPiece / items.columns),
+						parseInt(currentPiece % items.columns))) {
+			items.gameDone = true
+			if(currentPlayer === "1") {
+				items.player1.state = "win"
+				items.player1_score++
+			} 
+			else {
 				items.player2.state = "win"
-                items.player2_score++
-            }
-            items.bonus.good("flower")
-            items.bonus.isWin = false
-        }
-        else if(items.counter == 9) {
+				items.player2_score++
+			}
+			items.bonus.good("flower")
+			items.bonus.isWin = false
+		}
+		else if(items.counter == 9) {
 			items.rotateCat.stop()
 			items.rotateTrux.stop()
 			items.player2image.rotation = 0
@@ -554,23 +554,23 @@ function continueGame() {
 		}
 		else
 			changeScale()
-    } 
-    else {
+	} 
+	else {
 		if(checkGameWon(parseInt(currentPiece / items.columns),
-                        parseInt(currentPiece % items.columns))) {
+						parseInt(currentPiece % items.columns))) {
 			items.gameDone = true
-            if(currentPlayer == "1") {
+			if(currentPlayer == "1") {
 				items.player1_score++
-                items.player1.state = "win"
-                items.bonus.good("flower")
-            } 
-            else {
+				items.player1.state = "win"
+				items.bonus.good("flower")
+			} 
+			else {
 				items.player2_score++
-                items.player2.state = "win"
-                items.bonus.bad("tux")
-            }
-        }
-        else if(items.counter == 9) {
+				items.player2.state = "win"
+				items.bonus.bad("tux")
+			}
+		}
+		else if(items.counter == 9) {
 			items.rotateCat.stop()
 			items.rotateTrux.stop()
 			items.player2image.rotation = 0
@@ -581,7 +581,7 @@ function continueGame() {
 			items.player2.state = "second"
 			items.bonus.bad("tux")
 		}
-        else 
+		else 
 			changeScale()
-    }
+	}
 }
