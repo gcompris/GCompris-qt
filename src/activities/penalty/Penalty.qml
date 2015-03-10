@@ -326,26 +326,26 @@ ActivityBase {
                     }
 
                     /* This is a shoot */
-                    var progess = progressTop
+                    var progress = progressTop
                     if (mouse.button == Qt.LeftButton) {
-                        progess = progressLeft
+                        progress = progressLeft
                     } else if (mouse.button == Qt.RightButton) {
-                        progess = progressRight
+                        progress = progressRight
                     }
 
-                    if(progess.ratio > 0) {
+                    if(progress.ratio > 0) {
                         /* Second click, stop animation */
-                        progess.anim.running = false;
+                        progress.anim.running = false;
 
                         /* Play sound */
                         activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
 
                         /* Success or not */
-                        if(progess.ratio < 100) {
+                        if(progress.ratio < 100) {
                             /* Success */
-                            if(progess === progressLeft) {
+                            if(progress === progressLeft) {
                                 ball.state = "LEFT"
-                            } else if(progess === progressRight) {
+                            } else if(progress === progressRight) {
                                 ball.state = "RIGHT"
                             } else {
                                 ball.state = "CENTER"
@@ -359,7 +359,7 @@ ActivityBase {
                         }
                     } else {
                         /* First click, start animation*/
-                        progess.anim.running = true;
+                        progress.anim.running = true;
 
                         /* Play sound */
                         activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/flip.wav")
