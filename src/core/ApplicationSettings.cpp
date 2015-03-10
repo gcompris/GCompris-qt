@@ -38,6 +38,9 @@
 **
 ****************************************************************************/
 
+#include "ApplicationSettings.h"
+#include "ApplicationInfo.h"
+
 #include <QtCore/qmath.h>
 #include <QtCore/QUrl>
 #include <QtCore/QUrlQuery>
@@ -47,8 +50,6 @@
 
 #include <QSettings>
 #include <QStandardPaths>
-#include "ApplicationSettings.h"
-#include "ApplicationInfo.h"
 #include <QDebug>
 
 #define GC_DEFAULT_FONT "Andika-R.ttf"
@@ -306,10 +307,10 @@ void ApplicationSettings::saveBaseFontSize()
     updateValueInConfig(GENERAL_GROUP_KEY, BASE_FONT_SIZE_KEY, m_baseFontSize);
 }
 
-void ApplicationSettings::saveActivityConfiguration(const QString &activity, const QVariantMap &datas)
+void ApplicationSettings::saveActivityConfiguration(const QString &activity, const QVariantMap &data)
 {
     qDebug() << "save configuration for:" << activity;
-    QMapIterator<QString, QVariant> i(datas);
+    QMapIterator<QString, QVariant> i(data);
     while (i.hasNext()) {
         i.next();
         updateValueInConfig(activity, i.key(), i.value());
@@ -321,12 +322,12 @@ QVariantMap ApplicationSettings::loadActivityConfiguration(const QString &activi
     qDebug() << "load configuration for:" << activity;
     m_config.beginGroup(activity);
     QStringList keys = m_config.childKeys();
-    QVariantMap datas;
-    foreach(QString key, keys) {
-        datas[key] = m_config.value(key);
+    QVariantMap data;
+    foreach(const QString &key, keys) {
+        data[key] = m_config.value(key);
     }
     m_config.endGroup();
-    return datas;
+    return data;
 }
 
 void ApplicationSettings::setFavorite(const QString &activity, bool favorite)

@@ -18,8 +18,8 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef MENUTREE_H
-#define MENUTREE_H
+#ifndef ACTIVITYINFOTREE_H
+#define ACTIVITYINFOTREE_H
 
 #include <qqml.h>
 #include "ActivityInfo.h"
@@ -32,8 +32,9 @@ class ActivityInfoTree : public QObject
 	Q_PROPERTY(ActivityInfo* rootMenu READ getRootMenu CONSTANT)
 	Q_PROPERTY(QQmlListProperty<ActivityInfo> menuTree READ menuTree NOTIFY menuTreeChanged)
     Q_PROPERTY(ActivityInfo* currentActivity READ getCurrentActivity WRITE setCurrentActivity NOTIFY currentActivityChanged)
+
 public:
-	ActivityInfoTree(QObject *parent = 0);
+	explicit ActivityInfoTree(QObject *parent = 0);
 	QQmlListProperty<ActivityInfo> menuTree();
 	ActivityInfo *getRootMenu() const;
 	void setRootMenu(ActivityInfo *rootMenu);
@@ -88,4 +89,4 @@ public:
 
 };
 
-#endif // MENUTREE_H
+#endif // ACTIVITYINFOTREE_H

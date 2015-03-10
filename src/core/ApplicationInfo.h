@@ -83,7 +83,7 @@ public:
         Blackberry
     };
 
-    ApplicationInfo(QObject *parent = 0);
+    explicit ApplicationInfo(QObject *parent = 0);
     ~ApplicationInfo();
     static void init();
     // It is not recommended to create a singleton of Qml Singleton registered

@@ -18,15 +18,15 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
+#include "ActivityInfoTree.h"
+#include "ApplicationInfo.h"
+
 #include <QtDebug>
 #include <QQmlProperty>
 #include <QQmlComponent>
 #include <QResource>
 #include <QCoreApplication>
 #include <QTextStream>
-
-#include "ActivityInfoTree.h"
-#include "ApplicationInfo.h"
 
 ActivityInfoTree::ActivityInfoTree(QObject *parent) : QObject(parent),
 	m_currentActivity(NULL)
@@ -107,7 +107,7 @@ void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
 									  const QDir &menuDir, const QString &menuFile)
 {
 	QQmlComponent component(engine,
-							QUrl::fromLocalFile(menuDir.absolutePath() + "/" + menuFile));
+							QUrl::fromLocalFile(menuDir.absolutePath() + '/' + menuFile));
 	QObject *object = component.create();
 	if(component.isReady()) {
 		if(QQmlProperty::read(object, "section").toString() == "/") {

@@ -18,8 +18,8 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef MENU_H
-#define MENU_H
+#ifndef ACTIVITYINFO_H
+#define ACTIVITYINFO_H
 
 #include <qqml.h>
 
@@ -44,7 +44,7 @@ class ActivityInfo : public QObject
 
 
 public:
-	ActivityInfo(QObject *parent = 0);
+	explicit ActivityInfo(QObject *parent = 0);
 
 	QString name() const;
 	void setName(const QString &);
@@ -112,4 +112,4 @@ private:
 	bool m_favorite;
 };
 
-#endif // MENU_H
+#endif // ACTIVITYINFO_H

@@ -38,6 +38,8 @@
 **
 ****************************************************************************/
 
+#include "ApplicationInfo.h"
+
 #include <QtCore/QtMath>
 #include <QtCore/QUrl>
 #include <QtCore/QUrlQuery>
@@ -45,7 +47,6 @@
 #include <QtGui/QScreen>
 #include <QtCore/QLocale>
 #include <QtQuick/QQuickWindow>
-#include "ApplicationInfo.h"
 
 #include <qmath.h>
 #include <QDebug>
@@ -144,7 +145,7 @@ QString ApplicationInfo::getAudioFilePath(const QString &file)
 
     QString filename = file;
     filename.replace("$LOCALE", localeName);
-    return getResourceDataPath() + "/" + filename;
+    return getResourceDataPath() + '/' + filename;
 }
 
 // Given a file name, if it contains $LOCALE it is replaced by
@@ -215,7 +216,7 @@ QString ApplicationInfo::getVoicesLocale(const QString &locale)
         _locale = QLocale::system().name();
     }
     // locales we have country-specific voices for:
-    if (_locale.startsWith("pt_BR") || _locale.startsWith("zh_CN"))
+    if (_locale.startsWith(QLatin1String("pt_BR")) || _locale.startsWith(QLatin1String("zh_CN")))
         return QLocale(_locale).name();
     // short locale for all the rest:
     return localeShort(_locale);

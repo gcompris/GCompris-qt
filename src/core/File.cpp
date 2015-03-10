@@ -60,7 +60,7 @@ void File::setName(const QString &str)
 
 QString File::read(const QString& name)
 {
-    if (name != QString())
+    if (!name.isEmpty())
         setName(name);
 
     if (m_name.isEmpty()){
@@ -92,7 +92,7 @@ QString File::read(const QString& name)
 
 bool File::write(const QString& data, const QString& name)
 {
-    if (name != QString())
+    if (!name.isEmpty())
         setName(name);
 
     if (m_name.isEmpty()) {

@@ -18,12 +18,13 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
+#include "ActivityInfo.h"
+
 #include <QtDebug>
 #include <QQmlProperty>
 #include <QQmlEngine>
 #include <QQmlComponent>
 
-#include "ActivityInfo.h"
 #include "ApplicationSettings.h"
 
 ActivityInfo::ActivityInfo(QObject *parent):

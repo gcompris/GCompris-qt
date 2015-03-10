@@ -21,7 +21,8 @@
 #include <QtDebug>
 #include <QtGui/QGuiApplication>
 #include <QtQuick/QQuickWindow>
-#include <QtQml>
+#include <QQmlApplicationEngine>
+#include <QStandardPaths>
 #include <QObject>
 #include <QTranslator>
 #include <QCommandLineParser>

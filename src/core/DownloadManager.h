@@ -19,8 +19,8 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-#ifndef DOWNLOADMANAGER_H_
-#define DOWNLOADMANAGER_H_
+#ifndef DOWNLOADMANAGER_H
+#define DOWNLOADMANAGER_H
 
 #include <QCryptographicHash>
 #include <QFile>
@@ -136,4 +136,4 @@ signals:
     void voicesRegistered(); // special case of the former: emitted when voices for current locale have been registered
 };
 
-#endif /* DOWNLOADMANAGER_H_ */
+#endif /* DOWNLOADMANAGER_H */

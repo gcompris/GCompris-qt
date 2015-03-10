@@ -87,7 +87,7 @@ class ApplicationSettings : public QObject
 
 public:
 
-    ApplicationSettings(QObject *parent = 0);
+    explicit ApplicationSettings(QObject *parent = 0);
     ~ApplicationSettings();
     static void init();
     // It is not recommended to create a singleton of Qml Singleton registered
@@ -251,7 +251,7 @@ public slots:
 	Q_INVOKABLE bool isFavorite(const QString &activity);
 	Q_INVOKABLE void setFavorite(const QString &activity, bool favorite);
     Q_INVOKABLE void saveBaseFontSize();
-    Q_INVOKABLE void saveActivityConfiguration(const QString &activity, const QVariantMap &datas);
+    Q_INVOKABLE void saveActivityConfiguration(const QString &activity, const QVariantMap &data);
     Q_INVOKABLE QVariantMap loadActivityConfiguration(const QString &activity);
 
 protected:
