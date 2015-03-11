@@ -171,7 +171,7 @@ ActivityBase {
                 dataToSave = {"locale": newLocale}
                 background.locale = newLocale;
 
-                // Restart the activity with new informations
+                // Restart the activity with new information
                 if(oldLocale !== newLocale) {
                     background.stop();
                     background.start();
