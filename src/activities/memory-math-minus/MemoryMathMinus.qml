@@ -1,6 +1,6 @@
 /* gcompris - MemoryMathMinus.qml
  *
- * Copyright (C) 2014 JB BUTET
+ * Copyright (C) 2014 JB BUTET <ashashiwa@gmail.com>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)

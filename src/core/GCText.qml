@@ -1,6 +1,6 @@
 /* GCompris - GCText.qml
  *
- * Copyright (C) 2014 Johnny Jazeix
+ * Copyright (C) 2014 Johnny Jazeix <jazeix@gmail.com>
  *
  * Authors:
  *   Johnny Jazeix <jazeix@gmail.com>

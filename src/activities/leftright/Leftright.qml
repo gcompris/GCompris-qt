@@ -1,6 +1,6 @@
 /* GCompris - Leftright.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Pascal Georges <pascal.georges1@free.fr> (GTK+ version)

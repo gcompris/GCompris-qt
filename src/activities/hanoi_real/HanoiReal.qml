@@ -1,6 +1,6 @@
  /* GCompris - hanoi_real.qml
  *
- * Copyright (C) 2014 <Amit Tomar>
+ * Copyright (C) 2014 Amit Tomar <a.tomar@outlook.com>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)

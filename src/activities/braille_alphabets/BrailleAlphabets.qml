@@ -1,12 +1,10 @@
 /* GCompris - Braille_alphabets.qml
  *
- * Copyright (C) 2014 <Arkit Vora>
+ * Copyright (C) 2014 Arkit Vora <arkitvora123@gmail.com>
  *
  * Authors:
  *   Srishti Sethi <srishakatux@gmail.com> (GTK+ version)
  *   Arkit Vora <arkitvora123@gmail.com> (Qt Quick port)
- *
- * Copyright (C) 2014 Bruno Coudoin
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by

@@ -1,6 +1,6 @@
 /* GCompris - algorithm.qml
  *
- * Copyright (C) 2014 Bharath M S
+ * Copyright (C) 2014 Bharath M S <brat.197@gmail.com>
  *
  * Authors:
  *   Christof Petig and Ingo Konrad (GTK+ version)

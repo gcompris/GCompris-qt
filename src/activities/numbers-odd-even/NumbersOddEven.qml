@@ -1,7 +1,6 @@
 /* gcompris - NumberOddEven.qml
 
- Copyright (C)
- 2014 Bruno Coudoin: initial version
+ Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by

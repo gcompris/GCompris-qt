@@ -1,6 +1,6 @@
 /* GCompris - align4-2players.qml
  *
- * Copyright (C) 2014 Bharath M S
+ * Copyright (C) 2014 Bharath M S <brat.197@gmail.com>
  *
  * Authors:
  *   Laurent Lacheny <laurent.lacheny@wanadoo.fr> (GTK+ version)

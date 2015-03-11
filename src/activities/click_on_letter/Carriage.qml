@@ -1,6 +1,6 @@
 /* GCompris - Carriage.qml
  *
- * Copyright (C) 2014 Holger Kaelberer 
+ * Copyright (C) 2014 Holger Kaelberer  <holger.k@elberer.de>
  * 
  * Authors:
  *   Pascal Georges <pascal.georges1@free.fr> (GTK+ version)

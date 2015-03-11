@@ -1,6 +1,6 @@
 /* GCompris - AlgebraPlus.qml
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   <THE GTK VERSION AUTHOR> (GTK+ version)

@@ -1,6 +1,6 @@
 /* GCompris - Balloon.qml
  *
- * Copyright (C) 2014 Aruna Sankaranarayanan and Bruno Coudoin
+ * Copyright (C) 2014 Aruna Sankaranarayanan <arunasank@src.gnome.org>
  *
  * Authors:
  *   Aruna Sankaranarayanan <arunasank@src.gnome.org>

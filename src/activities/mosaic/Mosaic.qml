@@ -1,6 +1,6 @@
 /* GCompris - mosaic.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Clement coudoin <clement.coudoin@free.fr> (GTK+ version)

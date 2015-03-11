@@ -1,5 +1,4 @@
 /*GCompris-Qt Message.qml
-
 *
 * Copyright (C) 2015 Siddhesh suthar <siddhesh.it@gmail.com>
 *
