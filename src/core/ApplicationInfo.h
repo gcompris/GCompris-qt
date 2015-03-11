@@ -40,13 +40,13 @@
 #ifndef APPLICATIONINFO_H
 #define APPLICATIONINFO_H
 
+#include <config.h>
+#include "ApplicationSettings.h"
+
 #include <qqml.h>
 #include <QtCore/QObject>
 #include <QtQml/QQmlPropertyMap>
 #include <QQmlEngine>
-
-#include "ApplicationSettings.h"
-#include "config.h"
 
 class QQuickWindow;
 
