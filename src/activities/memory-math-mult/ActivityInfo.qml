@@ -26,7 +26,7 @@ ActivityInfo {
   title: qsTr("Multiplication memory game")
   description: qsTr("Turn the cards over to find two numbers which multiply the same, until all the cards are gone.")
 //  intro: "Turn over two cards to match the calculation with its answer."
-  goal: qsTr("Practise multiplication, until all the cards are gone.")
+  goal: qsTr("Practice multiplication, until all the cards are gone.")
   prerequisite: qsTr("Multiplication")
   manual: qsTr("You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 

@@ -26,7 +26,7 @@ ActivityInfo {
   title: qsTr("Subtraction memory game against Tux")
   description: qsTr("Turn the cards over to find two numbers which add or subtract the same, until all the cards are gone.")
 //  intro: "Turn over two cards to match the calculation with its answer."
-  goal: qsTr("Practise subtraction, until all the cards are gone. Tux do the same")
+  goal: qsTr("Practice subtraction, until all the cards are gone. Tux do the same")
   prerequisite: qsTr("subtraction")
   manual: qsTr("You can see some cards, but you can't see what's on the other side of them. Each card is hiding an operation, or the answer to it.
 

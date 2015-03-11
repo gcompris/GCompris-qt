@@ -26,7 +26,7 @@ ActivityInfo {
   title: qsTr("Addition memory game")
   description: qsTr("Turn the cards over to find two numbers which add up the same, until all the cards are gone.")
 //  intro: "Turn over two cards to match the calculation with its answer."
-  goal: qsTr("Practise adding up, until all the cards are gone.")
+  goal: qsTr("Practice adding up, until all the cards are gone.")
   prerequisite: qsTr("Addition")
   manual: qsTr("You can see some cards, but you can't see what's on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
 An adding-up sum looks like this: 2 + 2 = 4
