@@ -313,8 +313,8 @@ bool DownloadManager::download(DownloadJob* job)
     connect(reply, SIGNAL(error(QNetworkReply::NetworkError)),
             this, SLOT(handleError(QNetworkReply::NetworkError)));
     if (job->url.fileName() != contentsFilename) {
-        connect(reply, SIGNAL(downloadProgress(qint64, qint64)),
-                this, SIGNAL(downloadProgress(qint64, qint64)));
+        connect(reply, SIGNAL(downloadProgress(qint64,qint64)),
+                this, SIGNAL(downloadProgress(qint64,qint64)));
         emit downloadStarted(job->url.toString().remove(0, serverUrl.toString().length()));
     }
 
