@@ -1,6 +1,6 @@
 /* GCompris - tic_tac_toe_2players.qml
  *
- * Copyright (C) 2014 Pulkit Gupta
+ * Copyright (C) 2014 Pulkit Gupta <pulkitgenius@gmail.com>
  *
  * Authors:
  *   Pulkit Gupta <pulkitgenius@gmail.com>

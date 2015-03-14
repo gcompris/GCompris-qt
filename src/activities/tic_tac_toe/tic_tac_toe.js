@@ -1,6 +1,6 @@
 /* GCompris - TicTacToe.js
  *
- * Copyright (C) 2014 Pulkit Gupta
+ * Copyright (C) 2014 Pulkit Gupta <pulkitgenius@gmail.com>
  *
  * Authors:
  *   Pulkit Gupta <pulkitgenius@gmail.com>
