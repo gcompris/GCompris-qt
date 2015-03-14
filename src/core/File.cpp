@@ -24,7 +24,7 @@
 #include <QFile>
 #include <QString>
 #include <QTextStream>
-#include <QtQml>
+#include <QQmlComponent>
 
 File::File(QObject *parent) : QObject(parent)
 {
