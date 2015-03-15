@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=GCompris Educational Game
+GenericName=Educational game
+Comment=Multi-Activity Educational game for children 2 to 10
+Exec=gcompris-qt
+Icon=gcompris-qt
+Terminal=false
+Type=Application
+Categories=Education;Game;KidsGame;
+StartupNotify=true
+X-DocPath=gcompris/index.html

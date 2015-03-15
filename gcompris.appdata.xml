@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <id type="desktop">gcompris.desktop</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0+</project_license>
+  <name>GCompris Educational Game</name>
+  <summary>Multi-Activity Educational game for children 2 to 10</summary>
+  <description>
+    <p>GCompris is an educational software suite comprising of
+    numerous activities for children aged 2 to 10.</p>
+    <p>Some of the activities are game orientated, but nonetheless
+    still educational.</p>
+    <p>Below you can find a list of categories with some of the
+    activities available in that category.</p>
+    <ul>
+    <li>computer discovery: keyboard, mouse, different mouse gestures, ...</li>
+    <li>arithmetic: table memory, enumeration, mirror image, balance
+    the scale, change giving, ...</li>
+    <li>science: the canal lock, color mixing, gravity concept, ...</li>
+    <li>games: memory, connect 4, tic tac toe, sudoku, hanoi tower, ...</li>
+    <li>reading: reading practice, ...</li>
+    <li>other: learn to tell time, the braille system, maze, music
+    instruments, ...</li>
+    </ul>
+    <p>Currently GCompris offers in excess of 100 activities and more
+    are being developed. GCompris is free software, that means that
+    you can adapt it to your own needs, improve it and, most
+    importantly, share it with children everywhere.</p>
+  </description>
+  <screenshots>
+    <screenshot width="1080" height="720" type="default">http://gcompris.net/screenshots-qt/middle/canal_lock.png</screenshot>
+    <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/</screenshot>
+    <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/click_on_letter_up.png</screenshot>
+    <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/clockgame.png</screenshot>
+    <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/color_mix.png</screenshot>
+    <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/colors.png</screenshot>
+    <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/enumerate.png</screenshot>
+    <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/fifteen.png</screenshot>
+    <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/hexagon.png</screenshot>
+    <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/redraw_symmetrical.png</screenshot>
+    <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/scalesboard.png</screenshot>
+    <screenshot width="1080" height="720">http://gcompris.net/screenshots-qt/middle/traffic.png</screenshot>
+  </screenshots>
+  <url type="homepage">http://gcompris.net/</url>
+  <url type="bugtracker">https://bugs.kde.org/enter_bug.cgi?format=guided&amp;product=gcompris</url>
+  <updatecontact>bruno.coudoin@gcompris.net</updatecontact>
+</application>
