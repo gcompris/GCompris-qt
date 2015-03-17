@@ -22,6 +22,7 @@ import QtQuick 2.2
 import "../../core"
 import GCompris 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
+import QtGraphicalEffects 1.0
 
 ActivityBase {
     id: menuActivity
@@ -256,9 +257,10 @@ ActivityBase {
 
         GridView {
             id: activitiesGrid
+            layer.enabled: true
             anchors {
                 top: horizontal ? section.bottom : parent.top
-                bottom: parent.bottom
+                bottom: bar.top
                 left: horizontal ? parent.left : section.right
                 margins: 4
             }
@@ -383,6 +385,25 @@ ActivityBase {
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
+       
+            Rectangle{
+                id: activitiesMask
+                visible: false
+                anchors.fill: activitiesGrid
+                gradient: Gradient {
+                  GradientStop { position: 0.0; color: "#FFFFFFFF" }
+                  GradientStop { position: 0.9; color: "#FFFFFFFF" }
+                  GradientStop { position: 0.95; color: "#00FFFFFF"}
+                }
+            }
+       
+            layer.effect: OpacityMask {
+                id: activitiesOpacity
+                source: activitiesGrid
+                maskSource: activitiesMask
+                anchors.fill: activitiesGrid
+            }
+
         }
 
         Bar {
