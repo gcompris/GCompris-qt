@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="31.054983"
+   height="30.383554"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="prism.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="-87.001204"
+     inkscape:cy="14.917086"
+     inkscape:document-units="px"
+     inkscape:current-layer="g2991"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1311"
+     inkscape:window-height="744"
+     inkscape:window-x="55"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-209.10112,-486.33856)">
+    <g
+       id="layer1-4"
+       inkscape:label="Calque 1"
+       transform="translate(-128.20855,288.5724)" />
+    <g
+       id="g2991"
+       transform="matrix(2.0275906,0,0,1.9676569,38.515187,282.29718)">
+      <path
+         style="fill:#ffb800;fill-opacity:1"
+         id="path15-1"
+         d="m 91.417515,104.67473 c -0.13008,0.18535 -0.27962,0.35305 -0.41589,0.53398 l -0.0204,-0.0468 -0.82381,0.99384 c -0.88487,1.06973 -1.88123,2.09975 -2.91033,3.03798 -0.52827,0.47309 -1.03353,0.97707 -1.59365,1.40955 -0.18759,0.14299 -0.36368,0.3001 -0.55392,0.44131 l -0.96718,0.70787 15.3162,7.38667 -7.3276,-15.44149 -0.70346,0.97706 z"
+         inkscape:connector-curvature="0" />
+    </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3042"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       transform="translate(-135.17914,254.60444)"><flowRegion
+         id="flowRegion3044"><rect
+           id="rect3046"
+           width="66.670067"
+           height="47.477169"
+           x="290.92392"
+           y="67.611771" /></flowRegion><flowPara
+         id="flowPara3048">SUnS</flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="521.42004"
+       y="686.88129"
+       id="text3066"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3068"
+         x="521.42004"
+         y="686.88129" /></text>
+  </g>
+</svg>
