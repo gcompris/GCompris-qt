@@ -29,7 +29,6 @@
 
 ActivityInfo::ActivityInfo(QObject *parent):
 	QObject(parent),
-	m_dir(""),
     m_demo(true),
     m_favorite(false)
 {
@@ -47,16 +46,6 @@ void ActivityInfo::setName(const QString &name)
     if(!ApplicationSettings::getInstance()->isKioskMode())
         m_favorite = ApplicationSettings::getInstance()->isFavorite(m_name);
 	emit nameChanged();
-}
-
-QString ActivityInfo::dir() const
-{
-	return m_dir;
-}
-void ActivityInfo::setDir(const QString &dir)
-{
-	m_dir = dir;
-	emit dirChanged();
 }
 
 QString ActivityInfo::section() const

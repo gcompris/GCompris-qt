@@ -45,9 +45,6 @@ class ActivityInfo : public QObject
 	 */
 	Q_PROPERTY(QString name READ name WRITE setName NOTIFY nameChanged)
 
-	/* FIXME: what's this? */
-	Q_PROPERTY(QString dir READ dir WRITE setDir NOTIFY dirChanged)
-
     /**
      * Section(s) this activity belongs to.
      *
@@ -121,8 +118,6 @@ public:
 
 	QString name() const;
 	void setName(const QString &);
-	QString dir() const;
-	void setDir(const QString &);
 	QString section() const;
 	void setSection(const QString &);
 	int difficulty() const;
@@ -153,7 +148,6 @@ public:
 signals:
 	void nameChanged();
 	void typeChanged();
-	void dirChanged();
 	void sectionChanged();
 	void difficultyChanged();
 	void iconChanged();
@@ -171,7 +165,6 @@ signals:
 private:
 	QString m_name;
 	QString m_type;
-	QString m_dir;
 	QString m_section;
 	int m_difficulty;
 	QString m_icon;
