@@ -113,9 +113,6 @@ Item {
      */
     property GCAudio audioEffects
 
-    /* FIXME: What is this? Still needed? */
-    property bool isLocked: true
-
     /**
      * Emitted when the user wants to return to the Home/Menu screen.
      */
