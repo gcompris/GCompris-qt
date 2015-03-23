@@ -92,7 +92,7 @@ graphic interfaces which vary widely in quality.</para>
 <para>The software is delivered under several forms. Follow the process according to your case. </para>
 <itemizedlist>
 <listitem><para>&GNU;/&Linux; : Use the packages delivered by your &GNU;/&Linux; distribution. You may have to install 
-the package gcompris-sound-en to have the english voices. If &gcompris; is not packaged in your &Linux; distribution, 
+the package gcompris-sound-en to have the English voices. If &gcompris; is not packaged in your &Linux; distribution, 
 please contact them to ask for the inclusion of &gcompris; in your &Linux; distribution.</para></listitem>
 <listitem><para>&Windows; : Delivered under a classic installer for &Windows;. This version requires an activation code. </para></listitem>
 <listitem><para>MacOSX : Delivered under a classic installer. This version requires an activation code.</para></listitem>
@@ -156,7 +156,7 @@ In &gcompris;, it is possible to go to the next level without having completed t
 </inlinemediaobject> Question mark - Display the help dialog box. Sometimes, an activity can be too complex 
 to be described easily in the description area. In this case, this function gives access to additional information.</para></listitem> 
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="32px-Config.png" format="PNG"/></imageobject>
-</inlinemediaobject> Tool box - Configuration menu. The configuration is saved in the user repository(Folder) 
+</inlinemediaobject> Tool box - Configuration menu. The configuration is saved in the user repository (folder) 
 under the name <filename>.config/gcompris/gcompris.conf</filename>. This is a text file which can be edited manually.</para></listitem> 
 <listitem><para><inlinemediaobject><imageobject><imagedata fileref="32px-About.png" format="PNG"/></imageobject>
 </inlinemediaobject> Tux and his plane - Information box on &gcompris;, presents the main contributors and the version of the software.</para></listitem> 
@@ -304,8 +304,8 @@ loosing time doing activities which may be too complex for them.</para>
     </textobject>
   </mediaobject>
 </screenshot>
-<para>By levels or intervals of levels. In this case, you use &gcompris;'levels (1 to 6 stars), 
-You can choose a specific level such as 1 star, or an interval of levels - from 2 to 4 stars -.</para></listitem>  
+<para>By levels or intervals of levels. In this case, you use &gcompris;' levels (1 to 6 stars). 
+You can choose a specific level such as 1 star, or an interval of levels - from 2 to 4 stars.</para></listitem>  
 <listitem>
 <screenshot>
 <screeninfo>Select Activities</screeninfo>
@@ -363,7 +363,7 @@ of each one whenever it is possible within the activity.</para>
 <para>The activities marked with an icon <inlinemediaobject><imageobject>
 <imagedata fileref="Stock_preferences_24.png" format="PNG"/></imageobject>
 </inlinemediaobject> can be directly configured in the administration module. 
-For example, You can configure some activities to function in English.</para>
+For example, you can configure some activities to function in English.</para>
 </sect2>
 
 <sect2 id="user-class-creation">
@@ -461,7 +461,7 @@ screen will appear.</para>
 <sect2 id="networking-ultiple-sers">
 <title>Networking / Multiple Users</title>
 <para>If you administer a school network, you can overwrite the configuration options of your users with 
-your own configuration. The instructions bellows apply to a single system on which you want to share the 
+your own configuration. The instructions below apply to a single system on which you want to share the 
 configuration between several users or for different users on multiple computers. In the last case, you 
 need to put the configuration files on a networked partition.</para> 
 <para>&gcompris; uses 2 distinct files for its configuration:</para> 
@@ -555,7 +555,7 @@ file. This way, all users on this PC won't have to activate &gcompris;.</para>
 <para>On school networks, you can simply copy this file using your deployment system.</para> 
 <para>Finally, the last step is to move the <guiicon>Gcompris Admin</guiicon> desktop icon from the 
 <filename class="directory">All Users</filename> or <filename class="directory">Public</filename> desktop 
-folder to the user's desktop folder that will be administering Gcompris. Make sure this user has &Windows; admin rights.</para>
+folder to the user's desktop folder that will be administering &gcompris;. Make sure this user has &Windows; admin rights.</para>
 </sect3>
 
 </sect2>
@@ -568,7 +568,7 @@ The concept of carrying one's favored applications, utilities, and files on a po
 use on any computer is one which has evolved considerably in recent years.</para> 
 <para>&gcompris; can be made portable very easily by installing it on the target thumb drive and adding 
 in its directory a <filename>gcompris.conf</filename> configuration file which includes a local user and configuration 
-directory. The directory are specified as relative to the gcompris.exe binary. </para>
+directory. The directories are specified as relative to the gcompris.exe binary. </para>
 <para>Configuration file example:</para>
 <screen>
 user_dir="../My &gcompris;"
@@ -622,8 +622,8 @@ key="your 6 digit key if you have it"</screen>
 </row>
 <row>
 <entry>-l, --root-menu</entry>
-<entry>Run &gcompris; with local menu (e.g -l /reading will let you play only activities in the reading directory, 
--l /strategy/connect4 only the connect4 activity). Use '-l list' to list all the available activities and their descriptions</entry>
+<entry>Run &gcompris; with local menu (&eg; -l /reading will let you play only activities in the reading directory, 
+-l /strategy/connect4 only the connect4 activity). Use '-l list' to list all the available activities and their descriptions.</entry>
 </row>
 <row>
 <entry>-A, --package_data_dir</entry>
