@@ -92,11 +92,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     qreal width = qMin(rect.width(), rect.height());
     qreal dpi = qApp->primaryScreen()->logicalDotsPerInch();
     m_fontRatio = m_isMobile ? qMax(qreal(1.0), qMin(height*refDpi/(dpi*refHeight), width*refDpi/(dpi*refWidth))) : 1;
-    m_sliderHandleWidth = getSizeWithRatio(70);
-    m_sliderHandleHeight = getSizeWithRatio(87);
-    m_sliderGapWidth = getSizeWithRatio(100);
     m_isPortraitMode = m_isMobile ? rect.height() > rect.width() : false;
-    m_hMargin =  m_isPortraitMode ? 20 * ratio() : 50 * ratio();
     m_applicationWidth = m_isMobile ? rect.width() : 1120;
 
     if (m_isMobile)
@@ -178,9 +174,7 @@ void ApplicationInfo::setIsPortraitMode(const bool newMode)
 {
     if (m_isPortraitMode != newMode) {
         m_isPortraitMode = newMode;
-        m_hMargin = m_isPortraitMode ? 20 * ratio() : 50 * ratio();
         emit portraitModeChanged();
-        emit hMarginChanged();
     }
 }
 

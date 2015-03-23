@@ -121,18 +121,6 @@ class ApplicationInfo : public QObject
      */
 	Q_PROPERTY(qreal fontRatio READ fontRatio NOTIFY fontRatioChanged)
 
-	// FIXME: still needed?
-	Q_PROPERTY(qreal hMargin READ hMargin NOTIFY hMarginChanged)
-
-    // FIXME: still needed?
-	Q_PROPERTY(qreal sliderHandleWidth READ sliderHandleWidth NOTIFY ratioChanged)
-
-    // FIXME: still needed?
-	Q_PROPERTY(qreal sliderHandleHeight READ sliderHandleHeight NOTIFY ratioChanged)
-
-    // FIXME: still needed?
-	Q_PROPERTY(qreal sliderGapWidth READ sliderGapWidth NOTIFY ratioChanged)
-
 	/**
 	 * Short (2-letter) locale string of the currently active language.
 	 */
@@ -233,12 +221,8 @@ public:
 	void setIsPortraitMode(const bool newMode);
     bool isMobile() const { return m_isMobile; }
     bool hasShader() const { return false; }
-	qreal hMargin() const { return m_hMargin; }
 	qreal ratio() const { return m_ratio; }
     qreal fontRatio() const { return m_fontRatio; }
-	qreal sliderHandleHeight()  { return m_sliderHandleHeight; }
-	qreal sliderGapWidth()  { return m_sliderGapWidth; }
-	qreal sliderHandleWidth()  { return m_sliderHandleWidth; }
     QString localeShort() const {
         return localeShort( ApplicationSettings::getInstance()->locale() );
     }
@@ -300,7 +284,6 @@ protected:
 signals:
 	void applicationWidthChanged();
 	void portraitModeChanged();
-	void hMarginChanged();
 	void ratioChanged();
     void fontRatioChanged();
     void applicationSettingsChanged();
@@ -315,8 +298,6 @@ private:
 	bool m_isMobile;
 	qreal m_ratio;
     qreal m_fontRatio;
-	qreal m_hMargin;
-	qreal m_sliderHandleHeight, m_sliderHandleWidth, m_sliderGapWidth;
 
     // Symbols fonts that user can't see
     QStringList m_excludedFonts;
