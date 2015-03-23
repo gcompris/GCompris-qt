@@ -23,6 +23,12 @@ import QtQuick.Controls 1.1
 import QtQuick.Controls.Styles 1.1
 import GCompris 1.0
 
+/**
+ * Provides styling for GCompris ComboBoxes.
+ * @ingroup components
+ *
+ * @inherit QtQuick.Controls.Styles.ComboBoxStyle
+ */
 ComboBoxStyle {
     background: Rectangle {
         implicitWidth: 200

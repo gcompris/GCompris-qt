@@ -22,31 +22,47 @@
 import QtQuick 2.0
 import GCompris 1.0
 
+/**
+ * A QML helper component for loading and validating JSON data.
+ * @ingroup components
+ *
+ * @inherit QtQuick.Item
+ */
 Item {
     id: jsonparser
-    
-    signal error(string msg);
 
+    /**
+     * type:File
+     * File with json content to parse.
+     */
     property File jsonFile: File {
         id: jsonfile
         name: ""
-    
+
         onError: jsonparser.error(msg);
     }
 
-    /** public interface: */
-    
-    /** Parse the passed json string and return a corresponding
-     * object.
-     * 
-     *  @param url  Source URL for the json file to parse. Supported URL-schemes:
-     *             file://, qrc://. In future also http://
-     * @param validateFunc  function used to semantically validate the parsed
-     *                      json. Optional. Signature:
-     *                      bool validateFunc(jsonString);
-     *                      Should return true if json string is semantically
-     *                      valid, false otherwise.
-     * @returns  object
+    /**
+     * Emitted upon error.
+     *
+     * @param msg Error message.
+     */
+    signal error(string msg);
+
+    /* public interface: */
+
+    /**
+     * Parse the passed json string and return a corresponding object.
+     *
+     * @param json          JSON string to parse.
+     * @param validateFunc  Function used to semantically validate the parsed
+     *                      json [optional].
+     *                      The function must have the signature
+     *                      <tt>bool validateFunc(jsonString)</tt>
+     *                      and return @c true if json string is semantically
+     *                      valid, @c false otherwise.
+     * @returns The object parsed from json if valid, @cnull if json is
+     *          syntactically or semantically invalid.
      */
     function parseString(json, validateFunc)
     {
@@ -66,11 +82,15 @@ Item {
         return doc;
     }
 
-    /** Parse a json string from the given url and return a corresponding
+    /**
+     * Parse a json string from the given url and return a corresponding
      * object.
-     * 
-     * For details cf. parseFromUrl()
-     */ 
+     *
+     * @param url  Source URL for the json file to parse. Supported URL-schemes:
+     *             file://, qrc://.
+     * @param validateFunc  cf. @ref parseString
+     * @returns             cf. @ref parseString
+     */
     function parseFromUrl(url, validateFunc)
     {
         var json = "'";
@@ -78,9 +98,9 @@ Item {
             || url.substring(0,1) == ":") {
             json = jsonFile.read(url);
             if (json != "")
-                return parseString(json, validateFunc);              
+                return parseString(json, validateFunc);
         } else if (url.substring(0,4) == "http")
-            error("HTTP scheme not yet implemented");
+            error("http:// scheme not yet implemented");
         else // unknown url scheme
             error("Unknown url scheme in url parameter");
         return null;

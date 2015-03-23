@@ -21,8 +21,52 @@
 import QtQuick 2.2
 import GCompris 1.0
 
+/**
+ * A QML component to visualize sub-level progress.
+ * @ingroup components
+ *
+ * Score usually consists of current-level (@ref currentSubLevel)
+ * and the max number of levels (@ref numberOfSubLevels).
+ *
+ * For other cases an activity can also directly define the whole message
+ * it wants to be shown (@ref message).
+ *
+ * @inherit QtQuick.Rectangle
+ */
 Rectangle {
     id: score
+
+    /**
+     * type:int
+     * Size of the font used in pt.
+     *
+     * @sa GCFont.fontSize.
+     */
+    property alias fontSize: subLevelText.fontSize
+
+    /**
+     * type:int
+     * Total number of sub-levels to show.
+     *
+     * @sa currentSubLevel
+     */
+    property int numberOfSubLevels
+
+    /**
+     * type:int
+     * Current sub-level to show.
+     *
+     * @sa numberOfSubLevels
+     */
+    property int currentSubLevel
+
+    /**
+     * type:string
+     * Complete message string to to show.
+     *
+     * Mutually exclusive with currentSubLevel and numberOfSubLevels
+     */
+    property string message
 
     gradient: Gradient {
         GradientStop { position: 0.0; color: "#AAFFFFFF" }
@@ -40,14 +84,6 @@ Rectangle {
     border.width: 2
 
     z: 1000
-
-    property alias fontSize: subLevelText.fontSize
-
-    /* Either fill in numberOfSubLevels and currentSubLevel
-     * or directly the message you want to write */
-    property int numberOfSubLevels
-    property int currentSubLevel
-    property string message
 
     onCurrentSubLevelChanged: message = currentSubLevel + "/" + numberOfSubLevels
     onNumberOfSubLevelsChanged: message = currentSubLevel + "/" + numberOfSubLevels

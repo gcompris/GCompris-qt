@@ -21,6 +21,12 @@
 
 import GCompris 1.0
 
+/**
+ * GCompris' full screen about dialog.
+ * @ingroup infrastructure
+ *
+ * @sa DialogBackground
+ */
 DialogBackground {
     visible: false
     title: qsTr("About GCompris")

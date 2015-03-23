@@ -21,6 +21,14 @@
 import QtQuick 2.1
 import GCompris 1.0
 
+/**
+ * Helper QML component for a button shown on the Bar.
+ * @ingroup components
+ *
+ * Used internally by the Bar component.
+ *
+ * @sa Bar
+ */
 Image {
     id: button
     state: "notclicked"

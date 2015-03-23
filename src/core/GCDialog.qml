@@ -22,28 +22,81 @@ import QtQuick 2.2
 import QtQuick.Controls 1.1
 import GCompris 1.0
 
+/**
+ * A QML component for GCompris dialogs.
+ * @ingroup components
+ *
+ * Contains the following basic layout elements: Title (message), a GCompris
+ * cancel button (GCButtonCancel) at the top right and two optional buttons.
+ *
+ * Can be conveniently instantiated dynamically in conjunction with
+ * showMessageDialog from core.js.
+ *
+ * GCDialog should now be used wherever you'd use a QtQuick dialog. It has
+ * been decided to implement dialogs ourselves in GCompris because of
+ * missing translations of labels of Qt's standard buttons for some language
+ * supported by GCompris, as well as integration problems on some OSes
+ * (Sailfish OS).
+ *
+ * @inherit QtQuick.Item
+ * @sa showMessageDialog
+ */
 Item {
     id: gcdialog
+
+    /**
+     * type:string
+     * Heading instruction text.
+     */
+    property alias message: instructionTxt.text
+
+    /**
+     * type:string
+     * Label of the first button.
+     */
+    property alias button1Text: button1.text
+
+    /**
+     * type:string
+     * Label of the second button.
+     */
+    property alias button2Text: button2.text
+
+    /**
+     * Emitted when the dialog should be started.
+     *
+     * Triggers fading in.
+     */
+    signal start
+
+    /**
+     * Emitted when the dialog should be stopped.
+     *
+     * Triggers fading out.
+     */
+    signal stop
+
+    /**
+     * Emitted when the dialog has stopped.
+     */
+    signal close
+
+    /**
+     * Emitted when the first button has been clicked.
+     */
+    signal button1Hit
+
+    /**
+     * Emitted when the second button has been clicked.
+     */
+    signal button2Hit
+
     focus: true
     opacity: 0
 
     anchors {
         fill: parent
     }
-
-    property alias message: instructionTxt.text
-    property alias button1Text: button1.text
-    property alias button2Text: button2.text
-
-    // start and stop trigs the animation
-    signal start
-    signal stop
-
-    // emitted at stop animation end
-    signal close
-    // emitted when the optional button is hit
-    signal button1Hit
-    signal button2Hit
 
     onStart: opacity = 1
     onStop: opacity = 0

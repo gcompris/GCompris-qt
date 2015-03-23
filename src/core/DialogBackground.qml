@@ -22,6 +22,19 @@ import QtQuick 2.2
 import QtQuick.Controls 1.1
 import GCompris 1.0
 
+/**
+ * Base QML component for all full screen dialog screens.
+ * @ingroup components
+ *
+ * Defines the general screen layout used by the following full screen
+ * dialog elements:
+ *
+ * DialogAbout, DialogHelp.
+ *
+ * For a general purpose dialog cf. GCDialog.
+ *
+ * @inherit QtQuick.Rectangle
+ */
 Rectangle {
     id: dialogBackground
     color: "#696da3"

@@ -24,22 +24,52 @@ import GCompris 1.0
 // Requires the global property in the scope:
 // property GCAudio audioEffects
 
+/**
+ * A QML component providing user feedback upon winning/loosing.
+ * @ingroup components
+ *
+ * Usually triggered by an activity when a user has won/lost a level via the
+ * @ref good / @ref bad methods. Bonus then provides visual and auditive
+ * feedback to the user and emits the @ref win / @ref loose signals when
+ * finished.
+ *
+ * Maintains a list of possible audio voice resources to be playebd back
+ * upon winning/loosing events, and selects randomly from them when triggered.
+ *
+ * @inherit QtQuick.Image
+ */
 Image {
     id: bonus
-    visible: true
-    opacity: 0
-    anchors.fill: parent
-    fillMode: Image.Pad
-    z: 1000
-    scale: ApplicationInfo.ratio
 
+    /**
+     * type:string
+     * Url of the audio resource to be used as winning sound.
+     */
+    property string winSound: url + "sounds/bonus.wav"
+
+    /**
+     * type:string
+     * Url of the audio resource to be used as loosing sound.
+     */
+    property string looseSound
+
+    /**
+     * Emitted when the win event is over.
+     *
+     * After the animation has finished.
+     */
     signal win
+
+    /**
+     * Emitted when the loose event is over.
+     *
+     * After the animation has finished.
+     */
     signal loose
 
+    /// @cond INTERNAL_DOCS
     property string url: "qrc:/gcompris/src/core/resource/"
     property bool isWin: false
-    property string winSound: url + "sounds/bonus.wav"
-    property string looseSound
     property var winVoices: [
         "voices/$LOCALE/misc/congratulation.ogg",
         "voices/$LOCALE/misc/great.ogg",
@@ -53,11 +83,25 @@ Image {
     property var looseVoices: [
         "voices/$LOCALE/misc/check_answer.ogg"
     ]
+    /// @endcond
 
-    // For good() and bad(), name can be one of
-    // flower, gnu, lion, note, smiley, tux
+    visible: true
+    opacity: 0
+    anchors.fill: parent
+    fillMode: Image.Pad
+    z: 1000
+    scale: ApplicationInfo.ratio
+
+    /**
+     * Triggers win feedback.
+     *
+     * Tries to play back a voice resource for winning, if not found fall back
+     * to the winSound.
+     *
+     * @param name Type of win image to show.
+     * Possible values are "flower", "gnu", "lion", "note", "smiley", "tux"
+     */
     function good(name) {
-        // Try to play a voice, if not found fallback on the winSound
         if(!audioEffects.play(
                     ApplicationInfo.getAudioFilePath(
                         winVoices[Math.floor(Math.random()*winVoices.length)])))
@@ -68,8 +112,16 @@ Image {
         animation.start()
     }
 
+    /**
+     * Triggers loose feedback.
+     *
+     * Tries to play back a voice resource for loosing, if not found fall back
+     * to the looseSound.
+     *
+     * @param name Type of win image to show.
+     * Possible values are "flower", "gnu", "lion", "note", "smiley", "tux"
+     */
     function bad(name) {
-        // Try to play a voice, if not found fallback on the looseSound
         if(!audioEffects.play(
                     ApplicationInfo.getAudioFilePath(
                         looseVoices[Math.floor(Math.random()*looseVoices.length)])))

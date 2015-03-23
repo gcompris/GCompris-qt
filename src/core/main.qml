@@ -26,6 +26,21 @@ import QtQml 2.2
 import GCompris 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
 
+/**
+ * GCompris' main QML file defining the top level window.
+ * @ingroup infrastructure
+ *
+ * Handles application start (Component.onCompleted) and shutdown (onClosing)
+ * on the QML layer.
+ *
+ * Contains the central GCAudio objects audio effects and audio voices.
+ *
+ * Contains the top level StackView presenting and animating GCompris'
+ * full screen views.
+ *
+ * @sa BarButton, BarEnumContent
+ * @inherit QtQuick.Window
+ */
 Window {
     id: main
     width: 800

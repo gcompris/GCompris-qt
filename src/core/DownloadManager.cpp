@@ -111,19 +111,11 @@ void DownloadManager::abortDownloads()
     }
 }
 
-/** Helper generating a relative voices resources file-path for a given locale
- *
- * @param locale  Locale name string of the form <language>_<country>. */
 QString DownloadManager::getVoicesResourceForLocale(const QString& locale) const
 {
     return QString("data/voices-" COMPRESSED_AUDIO "/voices-%1.rcc").arg(locale);
 }
 
-/** Transform the passed relative path to an absolute resource path of an
- * existing .rcc file, honouring the order of the systemResourcePaths
- *
- * @returns The absolute path of the .rcc file if it exists, QString() otherwise
- */
 inline QString DownloadManager::getAbsoluteResourcePath(const QString& path) const
 {
     foreach (const QString &base, getSystemResourcePaths()) {
@@ -133,10 +125,6 @@ inline QString DownloadManager::getAbsoluteResourcePath(const QString& path) con
     return QString();
 }
 
-/** Transform the passed absolute relative path to a relative resource path if possible
- *
- * @returns The relative path if it could be generated, QString() otherwise
- */
 inline QString DownloadManager::getRelativeResourcePath(const QString& path) const
 {
     QStringList parts = path.split('/', QString::SkipEmptyParts);
@@ -146,16 +134,11 @@ inline QString DownloadManager::getRelativeResourcePath(const QString& path) con
                    + '/' + parts[parts.size()-1]);
 }
 
-/** Check if the given relative resource path exists locally */
 bool DownloadManager::haveLocalResource(const QString& path) const
 {
     return (!getAbsoluteResourcePath(path).isEmpty());
 }
 
-/** Update resource from server if not prohibited by the settings and register
- * it if possible
- *
- * @returns success*/
 bool DownloadManager::updateResource(const QString& path)
 {
     if (checkDownloadRestriction())
@@ -173,14 +156,6 @@ bool DownloadManager::updateResource(const QString& path)
     }
 }
 
-/** Download a resource based on the passed relative resource path and register
- * it if possible
- *
- * If a corresponding local resource exists, an update will only be downloaded
- * if it is not up2date according to checksum comparison. Whenever at the end
- * we have a valid .rcc file it will be registered.
- *
- * @returns success*/
 bool DownloadManager::downloadResource(const QString& path)
 {
     qDebug() << "Downloading resource file" << path;
@@ -266,7 +241,6 @@ inline QString DownloadManager::filenameForTempFilename(const QString &tempFilen
     return tempFilename;
 }
 
-/** Start a new download specified by the passed DownloadJob */
 bool DownloadManager::download(DownloadJob* job)
 {
     QNetworkRequest request;
@@ -357,31 +331,11 @@ inline QString DownloadManager::getResourceRootForFilename(const QString& filena
             '/' + parts[parts.size()-1];
 }
 
-/** Get platform-specific path storing downloaded resources
- *
- * Uses QStandardPaths::writableLocation(QStandardPaths::DataLocation)
- * which returns
- *   - on desktop $HOME/.local/share/KDE/gcompris-qt/
- *   - on android /data/data/net.gcompris/files
- *
- */
 inline QString  DownloadManager::getSystemDownloadPath() const
 {
     return QStandardPaths::writableLocation(QStandardPaths::DataLocation);
 }
 
-/** Get all paths that are used for storing resources
- *
- * The caller should keep list order when looking for resources.
- *
- * For now returns
- * 1. getSystemdDownloadPath()
- * 2. QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)/gcompris-qt
- *    which is
- *    - $HOME/.local/share/gcompris-qt (on linux desktop)
- *    - /storage/sdcard0/GCompris (on android)
- *
- */
 inline QStringList DownloadManager::getSystemResourcePaths() const
 {
     return QStringList({
@@ -417,13 +371,6 @@ void DownloadManager::handleError(QNetworkReply::NetworkError code)
     emit error(reply->error(), reply->errorString());
 }
 
-/** Parse upstream Contents file and build checksum map
- *
- * We expect the line-syntax, that md5sum and colleagues creates:
- *
- * <MD5SUM>  <FILENAME>
- * 53f0a3eb206b3028500ca039615c5f84  voices-en.rcc
- */
 bool DownloadManager::parseContents(DownloadJob *job)
 {
     if (job->file.isOpen())
@@ -434,6 +381,11 @@ bool DownloadManager::parseContents(DownloadJob *job)
         return false;
     }
 
+    /*
+     * We expect the line-syntax, that md5sum and colleagues creates:
+     * <MD5SUM>  <FILENAME>
+     * 53f0a3eb206b3028500ca039615c5f84  voices-en.rcc
+     */
     QTextStream in(&job->file);
     while (!in.atEnd()) {
         QString line = in.readLine();
@@ -449,8 +401,6 @@ bool DownloadManager::parseContents(DownloadJob *job)
     return true;
 }
 
-/** Compares the checksum of the file in filename with the contents map in the
- * passed DownloadJob */
 bool DownloadManager::checksumMatches(DownloadJob *job, const QString& filename) const
 {
     Q_ASSERT(job->contents != (QMap<QString, QString>()));
@@ -476,10 +426,6 @@ bool DownloadManager::checksumMatches(DownloadJob *job, const QString& filename)
     return (fileHash == job->contents[basename]);
 }
 
-/** Unregister the passed resource
- *
- * Caller must lock rcMutex
- */
 void DownloadManager::unregisterResource_locked(const QString& filename)
 {
     if (!QResource::unregisterResource(filename, getResourceRootForFilename(filename)))
@@ -536,11 +482,6 @@ bool DownloadManager::areVoicesRegistered() const
     return isResourceRegistered(relFilename);
 }
 
-/** Handle a finished download
- *
- * Called whenever a single download (sub-job) has finished. Responsible for
- * iterating over possibly remaining sub-jobs of our DownloadJob.
- */
 void DownloadManager::downloadFinished()
 {
     QNetworkReply* reply = dynamic_cast<QNetworkReply*>(sender());

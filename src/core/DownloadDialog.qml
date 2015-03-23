@@ -24,6 +24,19 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls 1.2
 import "qrc:/gcompris/src/core/core.js" as Core
 
+/**
+ * A QML component visualizing download progress.
+ * @ingroup infrastructure
+ *
+ * A GCDialog style dialog providing visual feedback for download progress.
+ * Uses DownloadManager for download control.
+ *
+ * Can be conveniently instantiated dynamically using showDownloadDialog
+ * from core.js.
+ *
+ * @inherit QtQuick.Item
+ * @sa DownloadManager, showDownloadDialog
+ */
 Item {
     id: downloadDialog
     opacity: 0
@@ -32,16 +45,69 @@ Item {
         fill: parent
     }
 
+    /**
+     * type:Item
+     * Parent object for the dialog in the qml hierarchy.
+     */
     property Item main
-    property bool autohide: false;      ///< whether to close the dialog automatically when download has finished
-    property bool reportSuccess: true;  ///< whether to report successful
-    property bool reportError: true;
-    property bool dynamic: false        ///< whether created dynamically
-    property alias backgroundButtonVisible: backgroundButton.visible
-    property alias abortButtonVisible: abortButton.visible
-    property int fixedFontSize: 14      ///< fixed font-size used in this dialog
 
-    // start and stop trigs the animation
+    /**
+     * type:bool
+     * Whether to close the dialog automatically when download has finished.
+     * Default is false.
+     */
+    property bool autohide: false;
+
+    /**
+     * type:bool
+     * Whether to report download success in a Dialog.
+     * Default is true.
+     */
+    property bool reportSuccess: true;
+
+    /**
+     * type:bool
+     * Whether to report download errors in a Dialog.
+     * Default is true.
+     */
+    property bool reportError: true;
+
+    /**
+     * type:bool
+     * Whether the dialog has been created dynamically. If set to true, the
+     * component takes care of destroying itself after finished.
+     * Default is false.
+     *
+     * @sa Core.destroyDialog
+     */
+    property bool dynamic: false
+
+    /**
+     * type:bool
+     * Whether the 'Background' button should be visible.
+     * Default is true.
+     */
+    property alias backgroundButtonVisible: backgroundButton.visible
+
+    /**
+     * type:bool
+     * Whether the 'Abort' button should be visible.
+     * Default is true.
+     */
+    property alias abortButtonVisible: abortButton.visible
+
+    /**
+     * type:bool
+     * Fixed font size used in this dialog. Note, fixed font-sizes should be
+     * used in dialog components, to make sure they stay within bounds when
+     * user increases font size.
+     * Default is 14.
+     */
+    property int fixedFontSize: 14
+
+    /// @cond INTERNAL_DOCS
+
+    // start and stop trigs the animation FIXME: need to document?
     signal start
     signal stop
 
@@ -64,6 +130,8 @@ Item {
         else
             downloadDialog.close();
     }
+
+    /// @endcond
 
     Rectangle {
         anchors.fill: parent

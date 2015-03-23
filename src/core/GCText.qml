@@ -4,6 +4,7 @@
  *
  * Authors:
  *   Johnny Jazeix <jazeix@gmail.com>
+ *   Holger Kaelberer <holger.k@elberer.de>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -20,32 +21,101 @@
  */
 import QtQuick 2.0
 import GCompris 1.0
-
-// QTBUG-34418, singletons require explicit import to load qmldir file
-// https://qt-project.org/wiki/QmlStyling#6b81104b320e452a59cc3bf6857115ab
 import "."
 
+/**
+ * A QML component unifying text presentation in GCompris.
+ * @ingroup components
+ *
+ * GCText wraps QtQuick's Text to provide
+ *
+ * (1) a uniform font-family,<br/>
+ * (2) DPI based automatic font-scaling and<br/>
+ * (3) application-wide manual font-sizing.<br/>
+ *
+ * Activities should almost always use the @ref fontSize property to
+ * define font sizes, it implements both (2) and (3). <b>Do not</b> set
+ * @c font.pointSize directly, or GCText's automatic scaling will be
+ * deactivated. If you really need to enforce a fixed font size (which
+ * might be the case for dialogs) use the fixFontSize property.
+ *
+ * The xxxSize properties are meant to be enum-like values for often needed
+ * font sizes. (QtQuick does not support enum definitions on QML layer, cf.
+ * Qt issue #14861.)
+ *
+ * @inherit QtQuick.Text
+ * @sa GCSingletonFontLoader
+ */
 Text {
-    // Some constants for often used fontSizes
-    // Note: these should be Enums actually, which by now can't be defined in
-    // QML (cf. QTBUG-14861)
+    /**
+     * type:int
+     * Tiny font-size.
+     * Value: 10
+     */
     readonly property int tinySize:     10.0
+
+    /**
+     * type:int
+     * Small font-size.
+     * Value: 12
+     */
     readonly property int smallSize:    12.0
+
+    /**
+     * type:int
+     * Regular font-size.
+     * Value: 14
+     */
     readonly property int regularSize:  14.0
+
+    /**
+     * type:int
+     * Medium font-size.
+     * Value: 16
+     */
     readonly property int mediumSize:   16.0
+
+    /**
+     * type:int
+     * Large font-size.
+     * Value: 24
+     */
     readonly property int largeSize:    24.0
+
+    /**
+     * type:int
+     * Huge font-size.
+     * Value: 32
+     */
     readonly property int hugeSize:     32.0
 
-    property bool fixFontSize: false  // set to true for not applying baseFontSize
+    /**
+     * type:bool
+     * Whether to not apply ApplicationSettings.baseFontSize.
+     *
+     * Set to true if you don't want to scale fonts. Used in some rare cases
+     * like for dialogs.
+     */
+    property bool fixFontSize: false
 
-    // font-size are best specified using the fontSize property, which
-    // wraps font.pointSize to take the DPI of the display into account.
-    // If font.pointSize is used directly text might appear to small on some
-    // devices.
-    //
-    // If you really need to specify font.pixelSize instead of pointSize,
-    // you need to clear font.pointSize explicitly with NaN:
-    // font.pointSize: NaN
+    /**
+     * type:int
+     * Font size wrapping font.pointSize and applying font-scaling.
+     *
+     * Font-sizes are best specified using the fontSize property, which
+     * wraps font.pointSize to take the DPI of the display into account.
+     * If font.pointSize is used directly text might appear to small on some
+     * devices.
+     *
+     * If you really need to specify font.pixelSize instead of pointSize,
+     * you need to clear font.pointSize explicitly with NaN:
+     *
+     * @code
+     * font.pointSize: NaN
+     * @endcode
+     *
+     * Default is 14.
+     */
     property int fontSize: 14
 
     font.pointSize: ((fixFontSize ? 0 : ApplicationSettings.baseFontSize)

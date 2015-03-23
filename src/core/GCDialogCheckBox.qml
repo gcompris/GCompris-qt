@@ -24,6 +24,12 @@ import QtQuick.Controls.Styles 1.1
 import GCompris 1.0
 import QtQuick.Layouts 1.1
 
+/**
+ * GCompris' CheckBox component.
+ * @ingroup components
+ *
+ * @inherit QtQuick.Controls.CheckBox
+ */
 CheckBox {
     id: checkBox
     width: parent.width

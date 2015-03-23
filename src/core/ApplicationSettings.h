@@ -36,7 +36,7 @@
 **
 ** $QT_END_LICENSE$
 **
-****************************************************************************/
+***************************************************************************/
 
 #ifndef APPLICATIONSETTINGS_H
 #define APPLICATIONSETTINGS_H
@@ -52,31 +52,151 @@
 
 #define GC_DEFAULT_LOCALE "system"
 
+/**
+ * @class ApplicationSettings
+ * @short Singleton that contains GCompris' persistent settings.
+ * @ingroup infrastructure
+ *
+ * Settings are persisted using QSettings, which stores them in platform
+ * specific locations.
+ *
+ * The settings are subdivided in different groups of settings.
+ *
+ * <em>[General]</em> settings are mostly changeable by users in the DialogConfig
+ * dialog.
+ *
+ * <em>[Admin]</em> and <em>[Internal]</em> settings are not changeable by the
+ * user and used for internal purposes. Should only be changed if you really know
+ * what you are doing.
+ *
+ * The <em>[Favorite]</em> group is auto-generated from the favorite activities
+ * selected by a user.
+ *
+ * Besides these global settings there is one group for each activity that
+ * stores persistent settings.
+ *
+ * Settings defaults are defined in the source code.
+ *
+ * @sa DialogActivityConfig
+ */
 class ApplicationSettings : public QObject
 {
 	Q_OBJECT
 
-	// general group
+	/* General group */
+
+	/**
+	 * Whether to show locked activities.
+	 * False if in Demo mode, true otherwise.
+	 */
     Q_PROPERTY(bool showLockedActivities READ showLockedActivities WRITE setShowLockedActivities NOTIFY showLockedActivitiesChanged)
+
+    /**
+     * Whether audio voices/speech should be enabled.
+     */
 	Q_PROPERTY(bool isAudioVoicesEnabled READ isAudioVoicesEnabled WRITE setIsAudioVoicesEnabled NOTIFY audioVoicesEnabledChanged)
+
+    /**
+     * Whether audio effects should be enabled.
+     */
 	Q_PROPERTY(bool isAudioEffectsEnabled READ isAudioEffectsEnabled WRITE setIsAudioEffectsEnabled NOTIFY audioEffectsEnabledChanged)
+
+	/**
+	 * Whether GCompris should run in fullscreen mode.
+	 */
     Q_PROPERTY(bool isFullscreen READ isFullscreen WRITE setFullscreen NOTIFY fullscreenChanged)
+
+    /**
+     * Whether on-screen keyboard should be enabled per default in activities
+     * that use it.
+     */
     Q_PROPERTY(bool isVirtualKeyboard READ isVirtualKeyboard WRITE setVirtualKeyboard NOTIFY virtualKeyboardChanged)
+
+    /**
+     * Locale string for currently active language.
+     */
     Q_PROPERTY(QString locale READ locale WRITE setLocale NOTIFY localeChanged)
+
+    /**
+     * Currently selected font.
+     */
     Q_PROPERTY(QString font READ font WRITE setFont NOTIFY fontChanged)
+
+    /**
+     * Whether currently active font is a shipped font (or a system font).
+     *
+     * Updated automatically.
+     * @sa font
+     */
     Q_PROPERTY(bool isEmbeddedFont READ isEmbeddedFont WRITE setIsEmbeddedFont NOTIFY embeddedFontChanged)
+
+    /**
+     * Whether downloads/updates of resource files should be done automatically,
+     * without user-interaction.
+     *
+     * Note, that on Android GCompris currently can't distinguish Wifi
+     * from mobile data connections (cf. Qt ticket #30394).
+     */
     Q_PROPERTY(bool isAutomaticDownloadsEnabled READ isAutomaticDownloadsEnabled WRITE setIsAutomaticDownloadsEnabled NOTIFY automaticDownloadsEnabledChanged)
+
+    /**
+     * Minimum value for difficulty level filter.
+     */
     Q_PROPERTY(quint32 filterLevelMin READ filterLevelMin WRITE setFilterLevelMin NOTIFY filterLevelMinChanged)
+
+    /**
+     * Maximum value for difficulty level filter.
+     */
     Q_PROPERTY(quint32 filterLevelMax READ filterLevelMax WRITE setFilterLevelMax NOTIFY filterLevelMaxChanged)
+
+    /**
+     * Whether in demo mode.
+     */
     Q_PROPERTY(bool isDemoMode READ isDemoMode WRITE setDemoMode NOTIFY demoModeChanged)
+
+    /**
+     * Whether kiosk mode is currently active.
+     */
     Q_PROPERTY(bool isKioskMode READ isKioskMode WRITE setKioskMode NOTIFY kioskModeChanged)
+
+    /**
+     * Whether the section selection row is visible in the menu view.
+     */
     Q_PROPERTY(bool sectionVisible READ sectionVisible WRITE setSectionVisible NOTIFY sectionVisibleChanged)
+
+    /**
+     * Current base font-size used for font scaling.
+     *
+     * This setting is the basis for application-wide font-scaling. A value
+     * of 0 means to use the font-size as set by the application. Other values
+     * between @ref baseFontSizeMin and @ref baseFontSizeMax enforce
+     * font-scaling.
+     *
+     * @sa GCText.fontSize baseFontSizeMin baseFontSizeMax
+     */
     Q_PROPERTY(int baseFontSize READ baseFontSize WRITE setBaseFontSize NOTIFY baseFontSizeChanged)
-    // constant min/max values for baseFontSize:
+
+    /**
+     * Minimum allowed value for font-scaling.
+     *
+     * Constant value: -7
+     */
     Q_PROPERTY(int baseFontSizeMin READ baseFontSizeMin CONSTANT)
+
+    /**
+     * Maximum allowed value for font-scaling.
+     *
+     * Constant value: +7
+     */
     Q_PROPERTY(int baseFontSizeMax READ baseFontSizeMax CONSTANT)
 
     // admin group
+
+    /**
+     * Base-URL for resource downloads.
+     *
+     * @sa DownloadManager
+     */
     Q_PROPERTY(QString downloadServerUrl READ downloadServerUrl WRITE setDownloadServerUrl NOTIFY downloadServerUrlChanged)
 
     // internal group
@@ -86,7 +206,7 @@ class ApplicationSettings : public QObject
 	Q_PROPERTY(bool isBarHidden READ isBarHidden WRITE setBarHidden NOTIFY barHiddenChanged)
 
 public:
-
+	/// @cond INTERNAL_DOCS
     explicit ApplicationSettings(QObject *parent = 0);
     ~ApplicationSettings();
     static void init();
@@ -251,10 +371,23 @@ public slots:
 	Q_INVOKABLE bool isFavorite(const QString &activity);
 	Q_INVOKABLE void setFavorite(const QString &activity, bool favorite);
     Q_INVOKABLE void saveBaseFontSize();
-    Q_INVOKABLE void saveActivityConfiguration(const QString &activity, const QVariantMap &data);
-    Q_INVOKABLE QVariantMap loadActivityConfiguration(const QString &activity);
+    /// @endcond
 
-protected:
+    /**
+     * Stores per-activity configuration @p data for @p activity.
+     *
+     * @param activity Name of the activity that wants to persist settings.
+     * @param data Map of configuration data so save.
+     */
+    Q_INVOKABLE void saveActivityConfiguration(const QString &activity, const QVariantMap &data);
+
+    /**
+     * Loads per-activity configuration data for @p activity.
+     *
+     * @param activity Name of the activity that wants to persist settings.
+     * @returns Map of configuration items.
+     */
+    Q_INVOKABLE QVariantMap loadActivityConfiguration(const QString &activity);
 
 signals:
     void showLockedActivitiesChanged();

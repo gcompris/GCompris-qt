@@ -22,23 +22,133 @@ import QtQuick 2.2
 import GCompris 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
 
+/**
+ * The base QML component for activities in GCompris.
+ * @ingroup components
+ *
+ * Each activity should be derived from this component. It is responsible for
+ *
+ * * basic common key handling,
+ * * unified audio handling,
+ * * screen switching dynamics (from/to Menu/DialogHelp/etc.)
+ *
+ * The following common keys are handled so far:
+ *
+ * * @c Ctrl+q: Exit the application.
+ * * @c Ctrl+b: Toggle the bar.
+ * * @c Ctrl+f: Toggle fullscreen.
+ * * @c Ctrl+m: Toggle audio effects.
+ * * @c Ctrl+w: Exit the current activity and return to the menu.
+ * * @c Ctrl+p: Make a screenshot.
+ * * @c Back:   Return to the home screen (corresponds to the 'Back' button on
+ *              Android).
+ *
+ * Cf. Template.qml for a sample skeleton activity.
+ *
+ * Cf.
+ * [the wiki](http://gcompris.net/wiki/Qt_Quick_development_process#Adding_a_new_activity)
+ * for further information about creating a new activity.
+ *
+ * @inherit QtQuick.Item
+ */
 Item {
     id: page
+
+    /**
+     * type:Item
+     * Parent object.
+     */
     property Item main: parent;
+
+    /**
+     * type:Component
+     * The top-level component containing the visible viewport of an activity.
+     *
+     * Put all you want to present the user into this container. Mostly
+     * implemented using a Rectangle or Image component, itself
+     * containing further graphical elements. You are pretty free of doing
+     * whatever you want inside this component.
+     *
+     * Also common elements as Bar, Score, DialogHelp, etc. should be placed
+     * inside this element.
+     */
     property Component pageComponent
+
+    /**
+     * type:QtObject
+     * Reference to the menu activity.
+     *
+     * Populated automatically during activity-loading.
+     */
     property QtObject menu
+
+    /**
+     * type:QtObject
+     * Reference to the ActivityInfo object of the activity.
+     *
+     * Populated automatically during activity-loading.
+     */
     property QtObject activityInfo
-    // The global audio item, append to it to play your voices after the
-    // intro music
+
+    /**
+     * type:GCAudio
+     * The global audio item for voices.
+     *
+     * Because of problems synchronizing multiple Audio objects between
+     * global/menu/main and individual activities, activities should refrain
+     * from implementing additional Audio elements.
+     *
+     * Instead append to this global object to play your voices after the
+     * intro music.
+     * @sa GCAudio audioEffects
+     */
     property GCAudio audioVoices
-    // The global audio effect, use it to play sound effects
+
+    /**
+     * type:GCAudio
+     * The global audio item for audio effects.
+     *
+     * Append to it to play your effects.
+     * @sa GCAudio audioEffects
+     */
     property GCAudio audioEffects
+
+    /* FIXME: What is this? Still needed? */
     property bool isLocked: true
+
+    /**
+     * Emitted when the user wants to return to the Home/Menu screen.
+     */
     signal home
+
+    /**
+     * Emitted every time the activity has been started.
+     *
+     * Initialize your activity upon this signal.
+     */
     signal start
+
+    /* FIXME: is this used? */
     signal pause
+
+    /* FIXME: is this used? */
     signal play
+
+    /**
+     * Emitted when the activity is about to stop
+     *
+     * Shutdown whatever you need to upon this signal.
+     */
     signal stop
+
+    /**
+     * Emitted when dialog @p dialog should be shown
+     *
+     * Emit this signal when you want to show another dialog, e.g. on
+     * Bar.onHelpClicked
+     *
+     * @param dialog Dialog to show.
+     */
     signal displayDialog(Item dialog)
 
     onHome: menu ? menu.home() : ""

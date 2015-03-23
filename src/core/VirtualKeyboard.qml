@@ -21,15 +21,30 @@
 import QtQuick 2.0
 import GCompris 1.0
 
-/* ToDo:
- * - check for duplicate letters
- * - add support for shift key
+/**
+ * A QML component providing an on screen keyboard.
+ * @ingroup components
+ *
+ * VirtualKeyboard displays a virtual on screen keyboard that can be used
+ * in applications that need keyboard support, especially on mobile devices.
+ *
+ * The component itself does not provide builtin localized keyboard layouts,
+ * the user has to define the keyboard-layout dynamically.
+ *
+ * @inherit QtQuick.Item
  */
 Item {
     id: keyboard
-    
-    // public:
-    readonly property var qwertyLayout: // a default layout (qwerty)
+
+    /* Public interface: */
+
+    /**
+     * type:list
+     *
+     * Default basic qwerty-layout used unless the user provides another.
+     * @sa layout.
+     */
+    readonly property var qwertyLayout:
                       [  [ { label: "1", shiftLabel: "!" },
                            { label: "2", shiftLabel: "@" },
                            { label: "3", shiftLabel: "#" },
@@ -42,7 +57,7 @@ Item {
                            { label: "0", shiftLabel: ")" },
                            { label: "-", shiftLabel: "_" },
                            { label: "=", shiftLabel: "+" } ],
-                         
+
                          [ { label: "q", shiftLabel: "Q" },
                            { label: "w", shiftLabel: "W" },
                            { label: "e", shiftLabel: "E" },
@@ -53,7 +68,7 @@ Item {
                            { label: "i", shiftLabel: "I" },
                            { label: "o", shiftLabel: "O" },
                            { label: "p", shiftLabel: "P" } ],
-                           
+
                          [ { label: "a", shiftLabel: "A" },
                            { label: "s", shiftLabel: "S" },
                            { label: "d", shiftLabel: "D" },
@@ -63,7 +78,7 @@ Item {
                            { label: "j", shiftLabel: "J" },
                            { label: "k", shiftLabel: "K" },
                            { label: "l", shiftLabel: "L" } ],
-                           
+
                          [ { label: "z", shiftLabel: "Z" },
                            { label: "x", shiftLabel: "X" },
                            { label: "c", shiftLabel: "C" },
@@ -71,55 +86,158 @@ Item {
                            { label: "b", shiftLabel: "B" },
                            { label: "n", shiftLabel: "N" },
                            { label: "m", shiftLabel: "M" } ]]
-    
+
+    /**
+     * type:string
+     * Symbol that can be used for the backspace key.
+     */
     readonly property string backspace: "\u2190"
+
+    /**
+     * type:string
+     * Symbol for the shift-up key.
+     */
     readonly property string shiftUpSymbol:   "\u21E7"
+
+    /**
+     * type:string
+     * Symbol for the shift-down key.
+     */
     readonly property string shiftDownSymbol: "\u21E9"
 
+    /**
+     * type:list
+     * Keyboard layout.
+     *
+     * The layout should be provided by the user. It can contain
+     * unicode characters, and can be set dynamically also on a per-level
+     * basis.
+     *
+     * The expected format of the @ref layout property is a list of row lists.
+     * Example:
+     *
+     * @code
+     * [
+     *    [                                    <-- start of the first row
+     *      { label: "1", shiftLabel: "!" },   <-- first key of the first row
+     *      { label: "2", shiftLabel: "@" },
+     *      ...
+     *    ],
+     *    [
+     *      { label: "q", shiftLabel: "Q" },
+     *      { label: "w", shiftLabel: "W" },
+     *      ...
+     *    ],
+     *    ...
+     * ]
+     * @endcode
+     *
+     * The order passed in layout will not be altered.
+     *
+     * Use the @ref shiftKey property to activate a shift button which allows
+     * to assign 2 letters on one key. You can define an additional shiftLabel
+     * per key, or leave it undefined, in which case VirtualKeyboard
+     * automatically defines the shift-label (using
+     * String.toLocaleUpperCase()).
+     *
+     * Default is to use the qwertyLayout.
+     *
+     * @sa qwertyLayout shiftKey
+     */
     property var layout: null
+
+    /**
+     * type:bool
+     * Whether a shift key should be used.
+     */
     property bool shiftKey: false
+
     // property bool ctrlKey: false;
     // ...
 
+    /**
+     * type:int
+     * Vertical spacing between rows in pixel.
+     * Default: 5 * ApplicationInfo.ratio
+     */
     property int rowSpacing: 5 * ApplicationInfo.ratio
+
+    /**
+     * type:int
+     * Horizontal spacing between keys in pixel.
+     * Default: 3 * ApplicationInfo.ratio
+     */
     property int keySpacing: 3 * ApplicationInfo.ratio
+
+    /**
+     * type:int
+     * Height of the keys in pixel.
+     * Default: 45 * ApplicationInfo.ratio
+     */
     property int keyHeight: 45 * ApplicationInfo.ratio
+
+    /**
+     * type:int
+     * Margin around the keyboard in pixel.
+     * Default: 5 * ApplicationInfo.ratio
+     */
     property int margin: 5 * ApplicationInfo.ratio
+
+    /**
+     * type:bool
+     * Whether the keyboard should be hidden.
+     *
+     * Besides this property the visibility of the virtual keyboard also
+     * depends on the setting ApplicationSettings.isVirtualKeyboard and
+     * its successful initialization.
+     */
     property bool hide
 
+    /**
+     * Emitted for every keypress.
+     *
+     * @param text The label of the pressed key.
+     */
+    signal keypress(string text)
+
+    /**
+     * Emitted upon error.
+     *
+     * @param msg Error message.
+     */
+    signal error(string msg)
+
+    /// @cond INTERNAL_DOCS
+
     opacity: 0.9
-    
+
     visible: !hide && ApplicationSettings.isVirtualKeyboard && priv.initialized
     enabled: visible
-    
-    signal keypress(string text);
-    signal error(string msg);
 
-    // internal:
     z: 9999
     width: parent.width
     height: visible ? priv.cHeight : 0
     anchors.bottom: parent.bottom
     anchors.horizontalCenter: parent.horizontalCenter
-    
+
     property int modifiers: Qt.NoModifier;  // currently active key modifiers, internal only
 
     // private properties:
     QtObject {
         id: priv
-        
+
         readonly property int cHeight: numRows * keyboard.keyHeight +
                                        (numRows + 1) * keyboard.rowSpacing
         property int numRows: 0
         property bool initialized: false
     }
 
-    
+
     function populateKeyboard(a)
     {
         var nRows;
         var maxButtons = 0;
-        
+
         // validate layout syntax:
         if (!Array.isArray(a) || a.length < 1) {
             error("VirtualKeyboard: Invalid layout, array of length > 0");
@@ -165,7 +283,7 @@ Item {
                     a[i][j].shiftLabel = a[i][j].label.toLocaleUpperCase();
             }
         }
-        
+
         // populate
         for (i = 0; i < a.length; i++) {
             var row = a[i];
@@ -177,7 +295,7 @@ Item {
         priv.numRows = i;
         priv.initialized = (priv.numRows > 0);
     }
-    
+
     function handleVirtualKeyPress(virtualKey) {
         if (virtualKey.specialKey == Qt.Key_Shift)
             keyboard.modifiers ^= Qt.ShiftModifier;
@@ -186,17 +304,17 @@ Item {
         else
             keyboard.keypress(virtualKey.text);
     }
-    
+
     onLayoutChanged: {
         rowListModel.clear();
         priv.initialized = false;
         if (layout != null)
             populateKeyboard(layout);
     }
-    
+
     ListModel {
         id: rowListModel
-        /* Currently expects the following 
+        /* Currently expects the following
          * ListElement {
          *   rowNum: 1
          *   keys: [ { label: "a", shiftLabel: "A" },
@@ -205,28 +323,27 @@ Item {
          *             ...}
          *         ]
          * }
-         * FIXME: probably should distinguish label and value!
          */
     }
-    
+
     Behavior on height {
         NumberAnimation {
             duration: 500
             easing.type: Easing.OutCubic
         }
     }
-    
+
     Rectangle {
         id: background
-        
+
         width: parent.width
         height: keyboard.height
         color: "#8C8F8C"
         opacity: keyboard.opacity
-        
+
         ListView {
             id: rowList
-            
+
             anchors.top: parent.top
             anchors.topMargin: keyboard.margin
             anchors.left: parent.left
@@ -237,13 +354,13 @@ Item {
             orientation: Qt.Vertical
             verticalLayoutDirection: ListView.TopToBottom
             interactive: false
-    
+
             model: rowListModel
 
             delegate:
                 Item {
                     /* Wrap keyboardRow for attaching a MouseArea. Not possible
-                     * in Row-s directly */ 
+                     * in Row-s directly */
                     id: rowListDelegate
                     width: rowList.width
                     height: keyboardRow.height
@@ -255,10 +372,10 @@ Item {
                         anchors.fill: parent
                         hoverEnabled: true
                         propagateComposedEvents: true
-                        
+
                         // update index to allow for updating z value of the rows
                         onEntered: rowList.currentIndex = index;
-                        
+
                         onPressed: {
                             // same onPress for mobile
                             rowList.currentIndex = index;
@@ -266,14 +383,14 @@ Item {
                             mouse.accepted = false;
                         }
                     }
-                    
-                    Row { 
+
+                    Row {
                         id: keyboardRow
                         spacing: keyboard.keySpacing
                         width: parent.width
-                        
+
                         z: rowListDelegate.ListView.isCurrentItem ? 1 : -1
-                            
+
                         Item {
                             id: keyboardRowSpacing
                             width: offset / 2;
@@ -282,9 +399,9 @@ Item {
 
                         Repeater {
                             id: keyboardRowRepeater
-        
+
                             z: rowListDelegate.ListView.isCurrentItem ? 1 : -1
-        
+
                             model: keys
                             delegate: VirtualKey {
                                 width: (keyboard.width - keyboardRowRepeater.count *
@@ -294,13 +411,15 @@ Item {
                                 modifiers: keyboard.modifiers
                                 specialKey: specialKeyValue
                             }
-                            
+
                             onItemAdded: item.pressed.connect(keyboard.handleVirtualKeyPress);
-                            
+
                             onItemRemoved: item.pressed.disconnect(keyboard.handleVirtualKeyPress);
                         } // Repeater
                     } // Row
             } // Item
         } // ListView
     } // background
+
+    /// @endcond
 }

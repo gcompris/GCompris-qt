@@ -21,6 +21,19 @@
 import QtQuick 2.2
 import GCompris 1.0
 
+/**
+ * GCompris' full screen help dialog.
+ * @ingroup infrastructure
+ *
+ * Used in Menu.qml as well as all activities to show more detailed
+ * information like author, manual, difficulty etc. as defined in each
+ * activities ActivityInfo.qml
+ *
+ * The help screens for the activities are generated automatically by
+ * the core and are started via the 'help' button on the Bar.
+ *
+ * @sa Bar.helpClicked, BarEnumContent.help, DialogBackground, ActivityInfo
+ */
 DialogBackground {
     visible: false
     title: activityInfo.title

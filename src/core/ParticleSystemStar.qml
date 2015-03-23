@@ -22,6 +22,18 @@ import QtQuick 2.2
 import QtQuick.Particles 2.0
 import GCompris 1.0
 
+/**
+ * A ParticleSystem component using star image particles.
+ * @ingroup components
+ *
+ * Used for click effects.
+ *
+ * Because of problems on some Android devices leading to crashes must be
+ * used via the wrapper @ref ParticleSystemStarLoader.
+ *
+ * @inherit QtQuick.ParticleSystem
+ * @sa ParticleSystemStarLoader
+ */
 ParticleSystem {
     id: particles
     anchors.fill: parent

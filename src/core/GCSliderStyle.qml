@@ -23,6 +23,12 @@ import QtQuick.Controls 1.1
 import QtQuick.Controls.Styles 1.0
 import GCompris 1.0
 
+/**
+ * Provides styling for GCompris sliders.
+ * @ingroup components
+ *
+ * @inherit QtQuick.Controls.Styles.SliderStyle
+ */
 SliderStyle {
     groove: Item {
         anchors.verticalCenter: parent.verticalCenter

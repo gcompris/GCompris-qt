@@ -24,6 +24,23 @@ import GCompris 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
 import QtGraphicalEffects 1.0
 
+/**
+ * GCompris' top level menu screen.
+ *
+ * Displays a grid of available activities divided subdivided in activity
+ * categories/sections.
+ *
+ * The visibility of the section row is toggled by the setting
+ * ApplicationSettings.sectionVisible.
+ *
+ * The list of available activities depends on the following settings:
+ *
+ * * ApplicationSettings.showLockedActivities
+ * * ApplicationSettings.filterLevelMin
+ * * ApplicationSettings.filterLevelMax
+ *
+ * @inherit QtQuick.Item
+ */
 ActivityBase {
     id: menuActivity
     focus: true
@@ -43,6 +60,7 @@ ActivityBase {
 
     onDisplayDialog: pageView.push(dialog)
 
+    // @cond INTERNAL_DOCS
     property string url: "qrc:/gcompris/src/activities/menu/resource/"
     property variant sections: [
         {
@@ -83,6 +101,7 @@ ActivityBase {
         },
     ]
     property string currentTag: sections[0].tag
+    /// @endcond
 
     pageComponent: Image {
         id: background

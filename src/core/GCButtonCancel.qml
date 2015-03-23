@@ -22,6 +22,12 @@ import QtQuick 2.2
 import QtQuick.Controls 1.1
 import GCompris 1.0
 
+/**
+ * A QML component representing GCompris' cancel button.
+ * @ingroup components
+ *
+ * @inherit QtQuick.Image
+ */
 Image {
     id: cancel
     source: "qrc:/gcompris/src/core/resource/cancel.svg";
