@@ -35,6 +35,12 @@ import GCompris 1.0
 Loader {
     anchors.fill: parent
     active: ApplicationInfo.hasShader
+
+    /**
+     * Emits count particles from the particle emitter immediately.
+     *
+     * Cf. Emitter.burst
+     */
     function burst(val) {
         if(active)
             item.emitter.burst(val)

@@ -49,6 +49,8 @@ Window {
     minimumHeight: 400
     title: "GCompris"
 
+    /// @cond INTERNAL_DOCS
+
     property var applicationState: Qt.application.state
 
     onApplicationStateChanged: {
@@ -263,4 +265,6 @@ Window {
             property Component replaceTransition: pushHTransition
         }
     }
+
+    /// @endcond
 }

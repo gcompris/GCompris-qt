@@ -84,13 +84,16 @@ Item {
      */
     property var wordList: ({})
 
-    // private?
+    /// @cond INTERNAL_DOCS
+
     property var randomWordList: []
     property int maxLevel: 0
 
+    /// @endcond
+
     /**
      * Emitted if an error occurs.
-     * @param type:string msg Error message.
+     * @param msg Error message.
      */
     signal error(string msg);
 
@@ -126,23 +129,6 @@ Item {
         maxLevel = wordList.levels.length;
         console.log("Wordlist: loaded " + maxLevel + " levels from " + from);
         return wordList;
-    }
-
-    /* FIXME: this should be private! possible? */
-    function validateWordlist(doc)
-    {
-        // minimal syntax check:
-        var i;
-        if (undefined === doc.levels)
-            return false;
-        for (i = 0; i < doc.levels.length; i++) {
-            // check mandatory level properties only (speed, fallspeed and sublevels are optional)
-            if (doc.levels[i].words.length < 1)
-                return false;
-        }
-        if (i < 1)
-            return false;
-        return true;
     }
 
     /**
@@ -203,6 +189,26 @@ Item {
     function getRandomWord() {
         return randomWordList.pop()
     }
+
+    /// @cond INTERNAL_DOCS
+
+    function validateWordlist(doc)
+    {
+        // minimal syntax check:
+        var i;
+        if (undefined === doc.levels)
+            return false;
+        for (i = 0; i < doc.levels.length; i++) {
+            // check mandatory level properties only (speed, fallspeed and sublevels are optional)
+            if (doc.levels[i].words.length < 1)
+                return false;
+        }
+        if (i < 1)
+            return false;
+        return true;
+    }
+
+    /// @endcond
 
     JsonParser {
         id: parser

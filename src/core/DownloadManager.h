@@ -347,8 +347,6 @@ signals:
      *
      * Convenience signal and special case of resourceRegistered.
      *
-     * @param resource Relative resource path of the registered resource.
-     *
      * @sa resourceRegistered
      */
     void voicesRegistered();

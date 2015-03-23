@@ -46,7 +46,6 @@ Among the more important classes are the following:
     of GCompris.
   </li>
 </ul>
-@endgroup
 */
 
 /**
@@ -74,5 +73,4 @@ Cf. Template.qml for a skeleton that can also be used as a starting point for
 developing new activities.
 
 Last but not least have a look at the existing activities to learn by example.
-@endgroup
 */

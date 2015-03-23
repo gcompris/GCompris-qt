@@ -87,7 +87,7 @@ Item {
     /**
      * Helper to normalize audio filename extensions.
      *
-     * @param file Audio source url.
+     * @param type:string file Audio source url.
      * @returns Url to the passed file with the extension adjusted to what is
      *          set in ApplicationInfo.CompressedAudio
      * @sa ApplicationInfo.CompressedAudio
@@ -102,7 +102,7 @@ Item {
     /**
      * Plays back the audio resource @p file.
      *
-     * @param file [optional] URL to an audio source.
+     * @param type:string file [optional] URL to an audio source.
      * @returns @c true if playback has been started, @c false if file does not
      *          exist or audio is muted
      */
@@ -136,7 +136,7 @@ Item {
      * played back immediately. Otherwise it is appended to the file queue of
      * sources.
      *
-     * @param url to the audio file to be played back.
+     * @param type:string file File to the audio file to be played back.
      * @returns @c true upon success, or @c false if @p file does not exist or
      *             audio is muted
      */
@@ -162,7 +162,7 @@ Item {
     /**
      * Adds a pause of the given duration in ms before playing of the next file.
      *
-     * @param duration_ms Pause in milliseconds.
+     * @param type:int duration_ms Pause in milliseconds.
      */
     function silence(duration_ms) {
         silenceTimer.interval = duration_ms

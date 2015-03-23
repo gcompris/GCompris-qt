@@ -54,14 +54,14 @@ Item {
     /**
      * Parse the passed json string and return a corresponding object.
      *
-     * @param json          JSON string to parse.
-     * @param validateFunc  Function used to semantically validate the parsed
-     *                      json [optional].
-     *                      The function must have the signature
-     *                      <tt>bool validateFunc(jsonString)</tt>
-     *                      and return @c true if json string is semantically
-     *                      valid, @c false otherwise.
-     * @returns The object parsed from json if valid, @cnull if json is
+     * @param type:string json JSON string to parse.
+     * @param type:function validateFunc Function used to semantically validate
+     *      the parsed json [optional].
+     *      The function must have the signature
+     *      <tt>bool validateFunc(jsonString)</tt>
+     *      and return @c true if json string is semantically
+     *      valid, @c false otherwise.
+     * @returns The object parsed from json if valid, @c null if json is
      *          syntactically or semantically invalid.
      */
     function parseString(json, validateFunc)
@@ -86,10 +86,10 @@ Item {
      * Parse a json string from the given url and return a corresponding
      * object.
      *
-     * @param url  Source URL for the json file to parse. Supported URL-schemes:
-     *             file://, qrc://.
-     * @param validateFunc  cf. @ref parseString
-     * @returns             cf. @ref parseString
+     * @param type:string url Source URL for the json file to parse.
+     *        Supported URL-schemes: file://, qrc://.
+     * @param type:functions validateFunc cf. @ref parseString
+     * @returns cf. @ref parseString
      */
     function parseFromUrl(url, validateFunc)
     {
