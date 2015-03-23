@@ -125,12 +125,6 @@ Item {
      */
     signal start
 
-    /* FIXME: is this used? */
-    signal pause
-
-    /* FIXME: is this used? */
-    signal play
-
     /**
      * Emitted when the activity is about to stop
      *

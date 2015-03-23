@@ -152,7 +152,6 @@ Window {
             id: root
             function getTransition(properties)
             {
-                properties.exitItem.pause()
                 audioVoices.clearQueue()
                 if(!properties.exitItem.isDialog) {
                     if(!properties.enterItem.isDialog) {
@@ -180,7 +179,6 @@ Window {
             function transitionFinished(properties)
             {
                 properties.exitItem.opacity = 1
-                properties.enterItem.play()
                 if(!properties.enterItem.isDialog) {
                     properties.exitItem.stop()
                 }
