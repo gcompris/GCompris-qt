@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="615" xmlns="http://www.w3.org/2000/svg" height="480.32">
+ <g stroke-linejoin="bevel" stroke-width="15" stroke-linecap="round">
+  <g stroke="#000">
+   <path id="rect3196" fill="#ff7f00" d="m70.062 346.53l-62.562 80h600l-62.562-80h-474.88z"/>
+   <rect id="rect3134" rx="44.755" ry="6.7316" height="52.592" width="600" y="420.23" x="7.5045" fill="#7f7f7f"/>
+   <rect id="rect2160" rx="35.823" ry="43.271" height="338.06" width="480.26" y="7.5" x="67.374" fill="#ff7f00"/>
+   <rect id="rect3136" rx="28.799" ry="34.685" height="270.98" width="386.1" y="41.037" x="114.45" fill="#efe6e6"/>
+  </g>
+  <path id="path3205" d="m574.65 447.96a14.286 14.286 0 1 1 -28.571 0 14.286 14.286 0 1 1 28.571 0z"/>
+ </g>
+</svg>

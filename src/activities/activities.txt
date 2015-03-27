@@ -8,6 +8,7 @@ algorithm
 align4
 align4-2players
 alphabet-sequence
+aviActivi
 ballcatch
 braille_alphabets
 canal_lock
