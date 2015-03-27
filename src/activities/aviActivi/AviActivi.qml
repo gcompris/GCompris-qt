@@ -1,9 +1,8 @@
 /* GCompris - aviActivi.qml
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 <Avi Illouz>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
  *   Avi Illouz <avi.illouz@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
