@@ -25,8 +25,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="7.9195959"
-     inkscape:cx="-2.7782725"
-     inkscape:cy="30.208529"
+     inkscape:cx="-3.6621556"
+     inkscape:cy="25.662842"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -56,17 +56,12 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-541.69224,-591.06935)">
-    <g
-       style="display:inline;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
-       id="CONFIG"
-       transform="translate(96.81724,240.2881)">
-      <path
-         id="path5756"
-         d="m 477.88235,351.7862 c -17.664,0 -32,14.33603 -32,32 0,17.66398 14.3361,32.00001 32,32 17.664,0 32,-14.33601 32,-32 0,-17.66398 -14.336,-32 -32,-32 z"
-         style="fill:#ffffff;fill-opacity:0.24705882;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="sssss" />
-    </g>
+    <path
+       sodipodi:nodetypes="sssss"
+       inkscape:connector-curvature="0"
+       style="fill:#669ab2;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 574.69959,592.0743 c -17.664,0 -32,14.33603 -32,32 0,17.66398 14.3361,32.00001 32,32 17.664,0 32,-14.33601 32,-32 0,-17.66398 -14.336,-32 -32,-32 z"
+       id="path5756" />
     <g
        style="display:inline;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none"
        id="CONFIG-3"

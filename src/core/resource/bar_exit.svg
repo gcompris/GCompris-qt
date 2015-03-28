@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="-72.865311"
-     inkscape:cy="46.552179"
+     inkscape:zoom="7.919596"
+     inkscape:cx="42.797155"
+     inkscape:cy="25.591514"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -57,7 +57,7 @@
      id="layer1"
      transform="translate(-528.9853,-678.0743)">
     <g
-       style="stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;display:inline;stroke:#ffffff;stroke-opacity:1;fill:#ffffff;fill-opacity:0.24651162"
+       style="stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;display:inline;stroke:#ffffff;stroke-opacity:1;fill:#df543d;fill-opacity:1"
        id="EXIT"
        transform="translate(84.1103,557.5118)">
       <path
@@ -68,7 +68,7 @@
          sodipodi:cy="322.08786"
          sodipodi:cx="-325.76718"
          id="path16212"
-         style="fill:#ffffff;fill-opacity:0.24651162;stroke-width:10.87713146;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1"
+         style="fill:#df543d;fill-opacity:1;stroke-width:10.87713146;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke:#ffffff;stroke-opacity:1"
          sodipodi:type="arc" />
     </g>
     <path

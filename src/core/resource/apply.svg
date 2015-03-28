@@ -79,8 +79,8 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="10.348485"
-     inkscape:cx="11.257687"
-     inkscape:cy="33.81254"
+     inkscape:cx="18.601757"
+     inkscape:cy="28.40112"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -110,17 +110,12 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-342.68073,-498.66483)">
-    <g
-       style="display:inline"
-       id="CHECKED"
-       transform="matrix(1.609767,0,0,1.6033967,-789.60677,-33.95082)">
-      <path
-         id="path3728"
-         d="m 723.88395,332.84237 c -11.0398,0 -19.998,8.9582 -19.998,19.99803 0,11.03982 8.9582,20.00185 19.998,20.00185 11.0398,0 20.0018,-8.96203 20.0018,-20.00185 0,-11.03982 -8.962,-19.99803 -20.0018,-19.99803 z"
-         style="fill:#ffffff;fill-opacity:0.25581396;stroke:#ffffff;stroke-width:1.24488144;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         inkscape:connector-curvature="0"
-         sodipodi:nodetypes="sssss" />
-    </g>
+    <path
+       sodipodi:nodetypes="sssss"
+       inkscape:connector-curvature="0"
+       style="fill:#5cc854;fill-opacity:1;stroke:#ffffff;stroke-width:1.99999988;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 375.67772,499.72754 c -17.7715,0 -32.19212,14.36355 -32.19212,32.06477 0,17.70121 14.42062,32.0709 32.19212,32.0709 17.77151,0 32.19824,-14.36969 32.19824,-32.0709 0,-17.70121 -14.42673,-32.06477 -32.19824,-32.06477 z"
+       id="path3728" />
     <g
        style="display:inline"
        id="CHECKED-3"

@@ -25,10 +25,10 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="7.9195959"
-     inkscape:cx="9.2674825"
-     inkscape:cy="20.919648"
+     inkscape:cx="26.135927"
+     inkscape:cy="23.238678"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="ABOUT"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -62,11 +62,11 @@
        transform="translate(83.37531,118.24452)">
       <g
          id="g8406"
-         style="fill:#ffffff;fill-opacity:0.42790701;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
+         style="fill:#e77936;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">
         <path
            id="path2054-3-9"
            d="m 477.90321,275.1067 c -17.66397,-10e-6 -32.00001,14.33602 -32,32 10e-6,17.66397 14.33603,32 32,32 17.66399,-10e-6 32,-14.33602 32,-32 10e-6,-17.66399 -14.33601,-32 -32,-32 z"
-           style="display:inline;fill:#ffffff;fill-opacity:0.24705882;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="display:inline;fill:#e77936;fill-opacity:1;stroke:#ffffff;stroke-width:2;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            inkscape:connector-curvature="0"
            sodipodi:nodetypes="sssss" />
       </g>
