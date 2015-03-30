@@ -24,7 +24,7 @@ import GCompris 1.0
 Image {
     id: ball
     source: "qrc:/gcompris/src/activities/ballcatch/resource/ball.svg"
-    sourceSize.height: 100 * ApplicationInfo.ratio
+    sourceSize.height: 200 * ApplicationInfo.ratio
     z: 3
 
     readonly property real initScale: 1.0
@@ -84,7 +84,7 @@ Image {
 
     function reinitBall() {
         x = background.width / 2 - width / 2;
-        y = leftHand.y + 10;
+        y = leftHand.y - height / 3;
         ball.scale = initScale;
         ball.rotation = 0;
     }

@@ -110,8 +110,8 @@ ActivityBase {
         Image {
             id: tux
             x: background.width / 2 - width / 2
-            y: background.height / 3
-            sourceSize.height: 100 * ApplicationInfo.ratio
+            y: background.height / 2 - height / 4
+            sourceSize.height: 200 * ApplicationInfo.ratio
             source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg"
         }
 
@@ -195,8 +195,8 @@ ActivityBase {
 
         Image {
             id: leftShift
-            x: 10
-            y: rightHand.y
+            x: background.width / 4 - width 
+            y: rightHand.y - height / 2
             source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svg"
             opacity: items.leftPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
@@ -205,8 +205,8 @@ ActivityBase {
         Image {
             id: rightShift
             mirror: true
-            x: background.width - width - 10
-            y: rightHand.y
+            x: background.width - background.width / 4
+            y: rightHand.y - height / 2
             source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svg"
             opacity: items.rightPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
