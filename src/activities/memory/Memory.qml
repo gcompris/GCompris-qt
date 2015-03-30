@@ -26,5 +26,5 @@ import "memorydataset.js" as Dataset
 
 MemoryCommon {
     dataset: Dataset.get()
-    backgroundImg: Dataset.url + "scenery_background.png"
+    backgroundImg: Dataset.url + "background.svg"
 }

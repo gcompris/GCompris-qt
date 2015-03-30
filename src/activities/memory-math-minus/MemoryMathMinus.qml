@@ -26,5 +26,5 @@ import "memory-minusdataset.js" as Dataset
 
 MemoryCommon {
     dataset: Dataset.get()
-    backgroundImg: "qrc:/gcompris/src/activities/memory/resource/scenery_background.png"
+    backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
 }
