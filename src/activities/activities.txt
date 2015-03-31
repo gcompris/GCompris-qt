@@ -2,6 +2,7 @@
 # Keep it sorted
 advanced_colors
 algebra_by
+algebra_div
 algebra_minus
 algebra_plus
 algorithm
