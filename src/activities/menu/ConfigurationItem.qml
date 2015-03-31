@@ -468,13 +468,13 @@ Item {
                 Core.showMessageDialog(main,
                 qsTr("You selected a new locale") + '\n'
                 + qsTr("Do you want to download the corresponding sound files now?"),
-                "YES", function() {
+                qsTr("Yes"), function() {
                     // yes -> start download
                     if (DownloadManager.downloadResource(
                     DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
                     var downloadDialog = Core.showDownloadDialog(main, {});
                 },
-                "NO", null,
+                qsTr("No"), null,
                 null
                 );
             } else // check for udpates or/and register new voices
