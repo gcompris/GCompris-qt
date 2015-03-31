@@ -242,12 +242,12 @@ ActivityBase {
 
         /* The spot under the ball */
         Rectangle {
-            radius: ball.width / 2
+            radius: 100 * ApplicationInfo.ratio
             color: "white"
-            width: ball.width / 2
-            height: ball.height / 3
+            width: 50 * ApplicationInfo.ratio
+            height: 33 * ApplicationInfo.ratio
             x: parent.width / 2 - width / 2
-            y: parent.height * 0.77 + ball.height / 2 - height / 2
+            y: parent.height * 0.77 + width - height / 2
             border.width: 1
             border.color: "#b4b4b4"
         }
@@ -257,10 +257,11 @@ ActivityBase {
             id: ball
             source: Activity.url + "penalty_ball.svg"
             fillMode: Image.PreserveAspectFit
-            sourceSize.width: 62 * ApplicationInfo.ratio
+            sourceSize.width: 100 * ApplicationInfo.ratio
 
             Behavior on x { PropertyAnimation {easing.type: Easing.OutQuad; duration:  1000} }
             Behavior on y { PropertyAnimation {easing.type: Easing.OutQuad; duration:  1000} }
+            Behavior on sourceSize.width { PropertyAnimation {easing.type: Easing.OutQuad; duration: 1000} }
 
             state: "INITIAL"
             states: [
@@ -268,6 +269,7 @@ ActivityBase {
                     name: "INITIAL"
                     PropertyChanges {
                         target: ball;
+                        sourceSize.width: 100 * ApplicationInfo.ratio
                         x: parent.width/2 - width/2;
                         y: parent.height*0.77 - height/2
                     }
@@ -280,6 +282,7 @@ ActivityBase {
                     name: "RIGHT"
                     PropertyChanges {
                         target: ball;
+                        sourceSize.width: 75 * ApplicationInfo.ratio
                         x: background.width * 0.8;
                         y: background.height * 0.3
                     }
@@ -288,6 +291,7 @@ ActivityBase {
                     name: "LEFT"
                     PropertyChanges {
                         target: ball;
+                        sourceSize.width: 75 * ApplicationInfo.ratio
                         x: background.width * 0.2;
                         y: background.height * 0.3
                     }
@@ -296,6 +300,7 @@ ActivityBase {
                     name: "CENTER"
                     PropertyChanges {
                         target: ball;
+                        sourceSize.width: 75 * ApplicationInfo.ratio
                         x: parent.width/2 - width/2;
                         y: background.height * 0.1
                     }
@@ -304,6 +309,7 @@ ActivityBase {
                     name: "FAIL"
                     PropertyChanges {
                         target: ball;
+                        sourceSize.width: 75 * ApplicationInfo.ratio
                         x: parent.width/2 - width/2;
                         y: player.y + player.height / 2
                     }
