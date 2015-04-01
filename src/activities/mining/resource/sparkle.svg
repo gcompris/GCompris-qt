@@ -13,19 +13,19 @@
    height="188.20827"
    id="svg3300"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="Nouveau document 2">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="sparkle.svg">
   <defs
      id="defs3302" />
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#707070"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="101.71218"
+     inkscape:cx="10.293375"
      inkscape:cy="135.64977"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -34,8 +34,8 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1366"
-     inkscape:window-height="713"
+     inkscape:window-width="1880"
+     inkscape:window-height="1060"
      inkscape:window-x="-2"
      inkscape:window-y="-3"
      inkscape:window-maximized="1" />
@@ -58,11 +58,8 @@
      transform="translate(-117.27081,-389.68413)">
     <path
        style="fill:#ffe25a;fill-opacity:1;stroke:#ffffff;stroke-width:3.19761252;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline"
-       d="m 253.70117,391.28595 -0.6244,83.5682 -134.2137,14.7544 134.90271,-2.2041 9.25699,88.89111 1.8843,-89.30811 119.087,-11.6816 -118.3333,-0.7536 z"
-       id="SPARK"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="ccccccccc"
-       inkscape:export-xdpi="15.65"
-       inkscape:export-ydpi="15.65" />
+       d="M 136.42969 1.6015625 L 135.85352 78.873047 L 100.26953 52.226562 L 133.02344 85.476562 L 1.5917969 99.923828 L 129.61133 97.833984 L 84.271484 154.37305 L 136.74805 100.1543 L 145.75195 186.61133 L 147.61133 98.529297 L 185.4043 129.19531 L 154.21289 96.658203 L 266.72266 85.621094 L 150.6875 84.880859 L 194.1582 31.955078 L 147.41797 78.101562 L 136.42969 1.6015625 z "
+       transform="translate(117.27081,389.68413)"
+       id="SPARK" />
   </g>
 </svg>
