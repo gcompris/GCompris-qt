@@ -107,7 +107,7 @@ Image {
                         winVoices[Math.floor(Math.random()*winVoices.length)])))
             if(winSound)
                 audioEffects.play(winSound)
-        source = url + "bonus/" + name + "_good.png"
+        source = url + "bonus/" + name + "_good.svg"
         isWin = true;
         animation.start()
     }
@@ -127,7 +127,7 @@ Image {
                         looseVoices[Math.floor(Math.random()*looseVoices.length)])))
             if(looseSound)
                 audioEffects.play(looseSound)
-        source = url + "bonus/" + name + "_bad.png"
+        source = url + "bonus/" + name + "_bad.svg"
         isWin = false;
         animation.start()
     }
