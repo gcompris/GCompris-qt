@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(activities/algebra_div *.qml *.svg *.js resource/*)
+GCOMPRIS_ADD_RCC(activities/algebra_div *.qml *.svg)

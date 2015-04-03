@@ -19,16 +19,16 @@ import GCompris 1.0
 
 ActivityInfo {
       name: "algebra_div/AlgebraDiv.qml"
-      difficulty: 4
+      difficulty: 6
       icon: "algebra_div/algebra_div.svg"
       author: "Sayan Biswas <techsayan01@gmail.com>"
       demo: false
       title: qsTr("Division of numbers")
       description: qsTr("Practice the division operation")
-    //  intro: "Subtract the two numbers and type in your answer before the balloon landing"
-      goal: qsTr("Learn to find the difference between two numbers within a limited period of time")
+    //  intro: "Find the result of the division and type in your answer before the balloon landing"
+      goal: qsTr("Find the result of the division within a limited period of time")
       prerequisite: qsTr("Division of small numbers")
-      manual: qsTr("Two numbers are displayed on the screen. Quickly find the division between them and use your computer's keyboard or the on-screen keypad to type it (ignore the decimal part). You have to be fast and submit the answer before the penguins in their balloon land!")
+      manual: qsTr("Two numbers are displayed on the screen. Quickly find the result of the division and use your computer's keyboard or the on-screen keypad to type it. You have to be fast and submit the answer before the penguins in their balloon land!")
       credit: ""
       section: "math division"
     }
