@@ -127,13 +127,13 @@ Window {
                           .arg(ApplicationSettings.locale)
                         + "\n"
                         + qsTr("Do you want to download the corresponding sound files now?"),
-                        "YES",
+                        qsTr("Yes"),
                         function() {
                             if (DownloadManager.downloadResource(
                                         DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
                                 var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                         },
-                        "NO", null,
+                        qsTr("No"), null,
                         function() { pageView.currentItem.focus = true }
             );
         }
