@@ -71,17 +71,17 @@ Image {
     property string url: "qrc:/gcompris/src/core/resource/"
     property bool isWin: false
     property var winVoices: [
-        "voices/$LOCALE/misc/congratulation.ogg",
-        "voices/$LOCALE/misc/great.ogg",
-        "voices/$LOCALE/misc/good.ogg",
-        "voices/$LOCALE/misc/awesome.ogg",
-        "voices/$LOCALE/misc/fantastic.ogg",
-        "voices/$LOCALE/misc/waytogo.ogg",
-        "voices/$LOCALE/misc/super.ogg",
-        "voices/$LOCALE/misc/perfect.ogg"
+        "voices-ogg/$LOCALE/misc/congratulation.ogg",
+        "voices-ogg/$LOCALE/misc/great.ogg",
+        "voices-ogg/$LOCALE/misc/good.ogg",
+        "voices-ogg/$LOCALE/misc/awesome.ogg",
+        "voices-ogg/$LOCALE/misc/fantastic.ogg",
+        "voices-ogg/$LOCALE/misc/waytogo.ogg",
+        "voices-ogg/$LOCALE/misc/super.ogg",
+        "voices-ogg/$LOCALE/misc/perfect.ogg"
     ]
     property var looseVoices: [
-        "voices/$LOCALE/misc/check_answer.ogg"
+        "voices-ogg/$LOCALE/misc/check_answer.ogg"
     ]
     /// @endcond
 

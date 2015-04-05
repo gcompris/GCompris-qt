@@ -60,7 +60,7 @@
  * path</em>
  *
  * <tt>\<path/to/my/resource.rcc\></tt>
- * (e.g. <tt>data/voices/voices-en.rcc></tt>)
+ * (e.g. <tt>data2/voices-ogg/voices-en.rcc></tt>)
  *
  * Downloading and verification of local files is controlled by MD5
  * checksums that are expected to be stored in @c Contents files in each
@@ -69,6 +69,11 @@
  * up-to-date (to avoid unnecesary rcc downloads) and to verify that the
  * transfer was complete. Only valid rcc files (with correct checksums)
  * are registered.
+ *
+ * A resource file must reference the "/gcompris/data" prefix with
+ * \<qresource prefix="/gcompris/data"\>. All data are loaded and referenced
+ * from this prefix. It is possible to check if a data is registered with
+ * isDataRegistered.
  *
  * @sa DownloadDialog, ApplicationSettings.downloadServerUrl,
  *     ApplicationSettings.isAutomaticDownloadsEnabled
@@ -234,19 +239,23 @@ public:
     Q_INVOKABLE bool downloadIsRunning() const;
 
     /**
-     * Whether the passed relative @p resource is registered.
+     * Whether the passed relative @p data is registered.
      *
-     * @param resource Relative resource path.
+     * For example, if you have a resource file which loads files under the
+     * 'words' path like 'words/one.png'. You can call this method with 'words/one.png'
+     * or with 'words'.
+     *
+     * @param data Relative resource path (file or directory).
      *
      * @sa areVoicesRegistered
      */
-    Q_INVOKABLE bool isResourceRegistered(const QString& resource) const;
+    Q_INVOKABLE bool isDataRegistered(const QString& data) const;
 
 
     /**
      * Whether voices for the currently active locale are registered.
      *
-     * @sa isResourceRegistered
+     * @sa isDataRegistered
      */
     Q_INVOKABLE bool areVoicesRegistered() const;
 

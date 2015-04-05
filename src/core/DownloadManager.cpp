@@ -113,7 +113,8 @@ void DownloadManager::abortDownloads()
 
 QString DownloadManager::getVoicesResourceForLocale(const QString& locale) const
 {
-    return QString("data/voices-" COMPRESSED_AUDIO "/voices-%1.rcc").arg(locale);
+    return QString("data2/voices-" COMPRESSED_AUDIO "/voices-%1.rcc")
+            .arg(ApplicationInfo::getInstance()->getVoicesLocale(locale));
 }
 
 inline QString DownloadManager::getAbsoluteResourcePath(const QString& path) const
@@ -467,19 +468,19 @@ bool DownloadManager::registerResource(const QString& filename)
     }
 }
 
-bool DownloadManager::isResourceRegistered(const QString& resource) const
+bool DownloadManager::isDataRegistered(const QString& data) const
 {
-    for (auto &base: getSystemResourcePaths())
-        if (isRegistered(base + '/' + resource))
-            return true;
-    return false;
+    QString res = QString(":/gcompris/data/%1").arg(data);
+
+    return !QDir(res).entryList().empty();
 }
 
 bool DownloadManager::areVoicesRegistered() const
 {
-    QString relFilename = getVoicesResourceForLocale(
-            ApplicationSettings::getInstance()->locale());
-    return isResourceRegistered(relFilename);
+    QString resource = QString("voices-" COMPRESSED_AUDIO "/%1").
+            arg(ApplicationInfo::getInstance()->getVoicesLocale(ApplicationSettings::getInstance()->locale()));
+
+    return isDataRegistered(resource);
 }
 
 void DownloadManager::downloadFinished()

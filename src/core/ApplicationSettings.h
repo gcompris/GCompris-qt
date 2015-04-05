@@ -92,7 +92,7 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(bool showLockedActivities READ showLockedActivities WRITE setShowLockedActivities NOTIFY showLockedActivitiesChanged)
 
     /**
-     * Whether audio voices/speech should be enabled.
+     * Whether audio voices-ogg/speech should be enabled.
      */
 	Q_PROPERTY(bool isAudioVoicesEnabled READ isAudioVoicesEnabled WRITE setIsAudioVoicesEnabled NOTIFY audioVoicesEnabledChanged)
 

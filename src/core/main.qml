@@ -78,7 +78,7 @@ Window {
             }
 
             function playWelcome() {
-                audioVoices.append(ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/welcome.ogg"));
+                audioVoices.append(ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/misc/welcome.ogg"));
             }
         }
 
@@ -103,7 +103,7 @@ Window {
 
     function playIntroVoice(name) {
         name = name.split("/")[0]
-        audioVoices.append(ApplicationInfo.getAudioFilePath("voices/$LOCALE/intro/" + name + ".ogg"))
+        audioVoices.append(ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/intro/" + name + ".ogg"))
     }
 
     Component.onCompleted: {

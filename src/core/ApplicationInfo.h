@@ -244,7 +244,7 @@ protected slots:
 	 * @param file A templated relative path to a language specific file. Any
 	 *             occurence of the '$LOCALE' placeholder will be replaced by
 	 *             the currently active locale string.
-	 *             Example: 'voices/$LOCALE/misc/click_on_letter.ogg'
+     *             Example: 'voices-ogg/$LOCALE/misc/click_on_letter.ogg'
 	 * @returns An absolute path to the corresponding resource file.
 	 */
     Q_INVOKABLE QString getAudioFilePath(const QString &file);

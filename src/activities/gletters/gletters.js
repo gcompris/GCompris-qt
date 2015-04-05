@@ -379,6 +379,6 @@ function nextSubLevel() {
 
 function playLetter(letter) {
     var locale = items.locale == "system" ? "$LOCALE" : items.locale
-    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices/"+locale+"/alphabet/"
+    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/"+locale+"/alphabet/"
                                                                        + Core.getSoundFilenamForChar(letter)))
 }

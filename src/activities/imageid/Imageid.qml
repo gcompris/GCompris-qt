@@ -43,7 +43,7 @@ ActivityBase {
 
         property bool horizontalLayout: background.width > background.height
         property bool keyNavigation: false
-        readonly property string wordsResource: "data/words/words.rcc"
+        readonly property string wordsResource: "data2/words/words.rcc"
         property bool englishFallback: false
         property bool downloadWordsNeeded: false
 
@@ -93,7 +93,7 @@ ActivityBase {
             activity.audioVoices.done.connect(voiceDone)
 
             // check for words.rcc:
-            if (DownloadManager.isResourceRegistered(wordsResource)) {
+            if (DownloadManager.isDataRegistered("words")) {
                 // words.rcc is already registered -> start right away
                 Activity.start(items);
             } else if(DownloadManager.haveLocalResource(wordsResource)) {

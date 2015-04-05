@@ -96,7 +96,8 @@ Item {
         if(ApplicationInfo.CompressedAudio === "ogg")
             return file
 
-        return file.replace('.ogg', "." + ApplicationInfo.CompressedAudio)
+        return file.replace('-ogg', "-" + ApplicationInfo.CompressedAudio).
+               replace('.ogg', "." + ApplicationInfo.CompressedAudio)
     }
 
     /**
