@@ -123,14 +123,14 @@ Window {
                         + qsTr("Have Fun!")
                         + "\n"
                         + qsTr("Your current language is %1 (%2).")
-                          .arg(Qt.locale(ApplicationSettings.locale).nativeLanguageName)
-                          .arg(ApplicationSettings.locale)
+                          .arg(Qt.locale(ApplicationInfo.localeShort).nativeLanguageName)
+                          .arg(ApplicationInfo.localeShort)
                         + "\n"
                         + qsTr("Do you want to download the corresponding sound files now?"),
                         qsTr("Yes"),
                         function() {
                             if (DownloadManager.downloadResource(
-                                        DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
+                                        DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort)))
                                 var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                         },
                         qsTr("No"), null,
