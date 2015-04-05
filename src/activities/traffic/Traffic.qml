@@ -110,6 +110,7 @@ ActivityBase {
         
         DialogActivityConfig {
             id: dialogActivityConfig
+            currentActivity: activity
             content: Component {
                 Item {
                     property alias modeBox: modeBox
@@ -123,16 +124,12 @@ ActivityBase {
                         id: flow
                         spacing: 5
                         width: dialogActivityConfig.width
-                        ComboBox {
+                        GCComboBox {
                             id: modeBox
-                            style: GCComboBoxStyle {}
                             model: availableModes
                             width: 250 * ApplicationInfo.ratio
-                        }
-                        GCText {
-                            text: qsTr("Select your mode")
-                            fontSize: mediumSize
-                            wrapMode: Text.WordWrap
+                            background: dialogActivityConfig
+                            label: qsTr("Select your mode")
                         }
                     }
                 }

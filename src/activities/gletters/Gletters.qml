@@ -60,7 +60,8 @@ ActivityBase {
         signal start
         signal stop
 
-        property string locale: "$LOCALE"
+        // system locale by default
+        property string locale: "system"
         
         Component.onCompleted: {
             dialogActivityConfig.getInitialConfiguration()
@@ -112,6 +113,7 @@ ActivityBase {
 
         DialogActivityConfig {
             id: dialogActivityConfig
+            currentActivity: activity
             content: Component {
                 Item {
                     property alias localeBox: localeBox
@@ -130,16 +132,12 @@ ActivityBase {
                         Flow {
                             spacing: 5
                             width: dialogActivityConfig.width
-                            ComboBox {
+                            GCComboBox {
                                 id: localeBox
-                                style: GCComboBoxStyle {}
                                 model: langs.languages
+                                background: dialogActivityConfig
                                 width: 250 * ApplicationInfo.ratio
-                            }
-                            GCText {
-                                text: qsTr("Select your locale")
-                                fontSize: mediumSize
-                                wrapMode: Text.WordWrap
+                                label: qsTr("Select your locale")
                             }
                         }
 /* TODO handle this:
@@ -167,8 +165,11 @@ ActivityBase {
                 var oldLocale = background.locale;
                 var newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
                 // Remove .UTF-8
-                newLocale = newLocale.substring(0, newLocale.indexOf('.'))
+                if(newLocale.indexOf('.') != -1) {
+                    newLocale = newLocale.substring(0, newLocale.indexOf('.'))
+                }
                 dataToSave = {"locale": newLocale}
+
                 background.locale = newLocale;
 
                 // Restart the activity with new information
@@ -180,7 +181,11 @@ ActivityBase {
 
 
             function setDefaultValues() {
-                var localeUtf8 = background.locale + ".UTF-8";
+                var localeUtf8 = background.locale;
+                if(background.locale != "system") {
+                    localeUtf8 += ".UTF-8";
+                }
+
                 for(var i = 0 ; i < dialogActivityConfig.configItem.availableLangs.length ; i ++) {
                     if(dialogActivityConfig.configItem.availableLangs[i].locale === localeUtf8) {
                         dialogActivityConfig.loader.item.localeBox.currentIndex = i;

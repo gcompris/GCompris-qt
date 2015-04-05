@@ -78,19 +78,25 @@ Rectangle {
 
     /// @cond INTERNAL_DOCS
 
-    /* FIXME: still needed?: */
     property bool isDialog: true
-    /* readonly? */
-    property string title: {
-        if(activityInfo)
+
+    /**
+     * type:string
+     * Title of the configuration dialog.
+     * Global configuration name is "Configuration".
+     * For activities, it is "activity name configuration".
+    */
+    readonly property string title: {
+        if(activityName != "")
         qsTr("%1 configuration").arg(activityInfo.title)
         else
         qsTr("Configuration")
     }
-    property alias titleIcon: titleIcon.source
     property alias active: loader.active
     property alias loader: loader
     property QtObject activityInfo: ActivityInfoTree.currentActivity
+
+    property ActivityBase currentActivity
 
     /// @endcond
 
@@ -102,6 +108,7 @@ Rectangle {
     /**
      * Emitted when the config dialog has been started.
      */
+    signal start
 
     /**
      * Emitted when the settings are to be saved.
@@ -117,9 +124,6 @@ Rectangle {
      */
     signal loadData
 
-    signal start
-    signal pause
-    signal play
     signal stop
 
 

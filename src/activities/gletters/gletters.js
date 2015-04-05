@@ -72,15 +72,16 @@ function start(items_, uppercaseOnly_,  _mode) {
     mode = _mode;
     currentLevel = 0;
     currentSubLevel = 0;
+
     var locale = items.locale == "system" ? "$LOCALE" : items.locale
 
     items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
-            items.ourActivity.dataSetUrl + "default-"+items.locale+".json"));
+            items.ourActivity.dataSetUrl + "default-"+locale+".json"));
     // If wordlist is empty, we try to load from short locale and if not present again, we switch to default one
-    var localeUnderscoreIndex = items.locale.indexOf('_')
+    var localeUnderscoreIndex = locale.indexOf('_')
     // probably exist a better way to see if the list is empty
     if(items.wordlist.maxLevel == 0 && localeUnderscoreIndex > 0) {
-        var localeShort = items.locale.substring(0, localeUnderscoreIndex)
+        var localeShort = locale.substring(0, localeUnderscoreIndex)
         items.wordlist.useDefault = true
         items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
         items.ourActivity.dataSetUrl + "default-"+localeShort+".json"));
@@ -377,6 +378,7 @@ function nextSubLevel() {
 }
 
 function playLetter(letter) {
-    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices/"+items.locale+"/alphabet/"
+    var locale = items.locale == "system" ? "$LOCALE" : items.locale
+    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices/"+locale+"/alphabet/"
                                                                        + Core.getSoundFilenamForChar(letter)))
 }

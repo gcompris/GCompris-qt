@@ -456,6 +456,8 @@ ActivityBase {
 
     DialogActivityConfig {
         id: dialogActivityConfig
+        currentActivity: menuActivity
+
         content: Component {
             ConfigurationItem {
                 id: configItem

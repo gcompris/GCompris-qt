@@ -167,16 +167,12 @@ Item {
         Flow {
             spacing: 5
             width: parent.width
-            ComboBox {
+            GCComboBox {
                 id: fontBox
-                style: GCComboBoxStyle {}
                 model: fonts
                 width: 250 * ApplicationInfo.ratio
-            }
-            GCText {
-                text: qsTr("Font selector")
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
+                background: dialogActivityConfig
+                label: qsTr("Font selector")
             }
         }
         Flow {
@@ -210,18 +206,13 @@ Item {
         Flow {
             spacing: 5
             width: parent.width
-            ComboBox {
+            GCComboBox {
                 id: languageBox
-                style: GCComboBoxStyle {}
                 model: dialogConfig.languages
                 width: 300 * ApplicationInfo.ratio
-
+                background: dialogActivityConfig
                 onCurrentIndexChanged: voicesRow.localeChanged();
-            }
-            GCText {
-                text: qsTr("Language selector")
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
+                label: qsTr("Language selector")
             }
         }
 
@@ -462,7 +453,7 @@ Item {
         if (ApplicationSettings.locale != dialogConfig.languages[languageBox.currentIndex].locale) {
             ApplicationSettings.locale = dialogConfig.languages[languageBox.currentIndex].locale
             if (!DownloadManager.haveLocalResource(
-            DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
+            DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort)))
             {
                 // ask for downloading new voices
                 Core.showMessageDialog(main,
@@ -471,13 +462,13 @@ Item {
                 qsTr("Yes"), function() {
                     // yes -> start download
                     if (DownloadManager.downloadResource(
-                    DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
+                    DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort)))
                     var downloadDialog = Core.showDownloadDialog(main, {});
                 },
                 qsTr("No"), null,
                 null
                 );
-            } else // check for udpates or/and register new voices
+            } else // check for updates or/and register new voices
             DownloadManager.updateResource(
             DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale))
         }
