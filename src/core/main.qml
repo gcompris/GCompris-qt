@@ -150,6 +150,7 @@ Window {
             }
         }
 
+        focus: true
         delegate: StackViewDelegate {
             id: root
             function getTransition(properties)
