@@ -1,6 +1,5 @@
 /* GCompris - Instruments.qml
  *
- *
  * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Original activity in the Gtk+ version of GCompris by

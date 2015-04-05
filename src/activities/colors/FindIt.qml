@@ -1,6 +1,6 @@
-/* GCompris - Colors.qml
+/* GCompris - FindIt.qml
  *
- * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ * Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Original activity in the Gtk+ version of GCompris by
  * Pascal Georges (pascal.georges1@free.fr)
