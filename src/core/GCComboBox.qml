@@ -230,6 +230,12 @@ Item {
                     wrapMode: Text.WordWrap
                     anchors.horizontalCenter: parent.horizontalCenter
                 }
+                GCButtonCancel {
+                    id: discardIcon
+                    anchors.right: headerDescription.right
+                    anchors.verticalCenter: parent.verticalCenter
+                }
+
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
