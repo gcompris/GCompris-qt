@@ -22,6 +22,23 @@ import QtQuick 2.2
 import QtQuick.Controls 1.1
 import GCompris 1.0
 
+/**
+ * A QML component unifying comboboxes in GCompris.
+ * @ingroup components
+ *
+ * GCComboBox contains a combobox and a label.
+ * When the combobox isn't active, it is displayed as a button containing the current value
+ * and the combobox label (its description).
+ * Once the button is clicked, the list of all available choices is displayed.
+ * Also, above the list is the combobox label.
+ *
+ * Navigation can be done with keys and mouse/gestures.
+ * As Qt comboboxes, you can either have a js Array or a Qml model as model.
+
+ * GCComboBox should now be used wherever you'd use a QtQuick combobox. It has
+ * been decided to implement comboboxes ourselves in GCompris because of
+ * some integration problems on some OSes (native dialogs unavailable).
+ */
 Item {
     id: gccombobox
     focus: true
@@ -29,18 +46,44 @@ Item {
     width: button.width
     height: button.height
 
+    /**
+     * type:Item
+     * Where the list containing all choices will be displayed.
+     * Should be the dialogActivityConfig item if used on config.
+     */
     property Item background
+
+    /**
+     * type:int
+     * Current index of the combobox.
+     */
     property int currentIndex: -1
-    // The current text displayed in the combobox
+
+    /**
+     * type:string
+     * Current text displayed in the combobox when inactive.
+     */
     property string currentText
 
+
+    /**
+     * type:alias
+     * Model for the list (user has to specify one).
+     */
     property alias model: listview.model
 
-    // Text besides the combobox, used to describe what the combobox is for
+    /**
+     * type:string
+     * Text besides the combobox, used to describe what the combobox is for.
+     */
     property string label
     
-    // If model is an (js) Array, we access data using modelData and [] else qml Model, we need to use model and get().
-    property bool isModelArray: model.constructor === Array
+    /**
+     * type:bool
+     * Internal value.
+     * If model is an js Array, we access data using modelData and [] else qml Model, we need to use model and get().
+     */
+    readonly property bool isModelArray: model.constructor === Array
 
     // start and stop trigs the animation
     signal start
@@ -53,6 +96,10 @@ Item {
         currentText = isModelArray ? model[currentIndex].text : (model && model.get(currentIndex) ? model.get(currentIndex).text : "")
     }
 
+    /**
+     * type:Flow
+     * Combobox display when inactive: the button with current choice  and its label besides.
+     */
     Flow {
         width: button.width+labelText.width+10
         spacing: 5 * ApplicationInfo.ratio
@@ -94,7 +141,10 @@ Item {
         }
     }
  
-    /* List */
+     /**
+     * type:Item
+     * Combobox display when active: header with the description and the listView containing all the available choices.
+     */
     Item {
         id: popup
         visible: false
