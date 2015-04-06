@@ -277,11 +277,11 @@ Item {
                 downloadDialog.stop();
                 var infText = "";
                 if (code == 0) {  // Success
-                    infText = qsTr("Your download finished successfully. The sound files are now available.")
+                    infText = qsTr("Your download finished successfully. The data files are now available.")
                             + '\n'
                             + qsTr("Restart any currently active activity.");
                 } else if (code == 2)  // NoChange
-                    infText = qsTr("Your local sound files are up-to-date.")
+                    infText = qsTr("Your local data files are up-to-date.")
 
                 var messageDialog = Core.showMessageDialog(main,
                                                            infText,
