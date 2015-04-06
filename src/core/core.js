@@ -60,7 +60,7 @@ function getSoundFilenamForChar(c)
     while (codeHex.length < 4) {
         codeHex = "0" + codeHex;
     }
-    result += codeHex + ".ogg";
+    result += codeHex + ".$CA";
     return result;
 }
 

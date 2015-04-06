@@ -170,7 +170,7 @@ ActivityBase {
 
                             signal hit
                             onHit: {
-                                activity.audioEffects.play(Activity.url + "pickaxe.ogg")
+                                activity.audioEffects.play(Activity.url + "pickaxe.$CA")
                                 background.gotIt = true
                                 tuto.setState("Unzoom")
                             }
@@ -203,7 +203,7 @@ ActivityBase {
                             opacity: !modelData.isTarget ? 1 : (background.gotIt ? 0 : 1)
 
                             Component.onCompleted: {
-                                activity.audioEffects.play(Activity.url + "realrainbow.ogg")
+                                activity.audioEffects.play(Activity.url + "realrainbow.$CA")
                             }
 
                             ParallelAnimation {

@@ -78,13 +78,13 @@ Window {
             }
 
             function playWelcome() {
-                audioVoices.append(ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/misc/welcome.ogg"));
+                audioVoices.append(ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/misc/welcome.$CA"));
             }
         }
 
         Component.onCompleted: {
             if(ApplicationSettings.isAudioEffectsEnabled)
-                append("qrc:/gcompris/src/core/resource/intro.ogg")
+                append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
 
             if (DownloadManager.areVoicesRegistered())
                 delayedWelcomeTimer.playWelcome();
@@ -103,7 +103,7 @@ Window {
 
     function playIntroVoice(name) {
         name = name.split("/")[0]
-        audioVoices.append(ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/intro/" + name + ".ogg"))
+        audioVoices.append(ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/intro/" + name + ".$CA"))
     }
 
     Component.onCompleted: {

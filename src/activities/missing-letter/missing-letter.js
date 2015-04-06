@@ -253,6 +253,6 @@ function createLastLevel()
 }
 
 function playLetter(letter) {
-    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/alphabet/"
+    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/"
                                                                        + Core.getSoundFilenamForChar(letter)))
 }

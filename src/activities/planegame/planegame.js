@@ -324,10 +324,10 @@ function handleCollisionsWithCloud() {
 function playLetterSound(number) {
     if(number < 10)
         items.audioVoices.play(
-            GCompris.ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/alphabet/"
+            GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/"
                                                       + Core.getSoundFilenamForChar(number)))
     else
-        items.audioVoices.play(GCompris.ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/alphabet/"
-                               + number + ".ogg"))
+        items.audioVoices.play(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/"
+                               + number + ".$CA"))
 
 }

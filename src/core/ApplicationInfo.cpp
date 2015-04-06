@@ -141,7 +141,12 @@ QString ApplicationInfo::getAudioFilePath(const QString &file)
 
     QString filename = file;
     filename.replace("$LOCALE", localeName);
-    return getResourceDataPath() + '/' + filename;
+    filename.replace("$CA", COMPRESSED_AUDIO);
+
+    if(file.startsWith("/") || file.startsWith("qrc:") || file.startsWith(":"))
+        return filename;
+    else
+        return getResourceDataPath() + '/' + filename;
 }
 
 QString ApplicationInfo::getLocaleFilePath(const QString &file)

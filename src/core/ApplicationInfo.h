@@ -239,12 +239,15 @@ protected slots:
 	QString getResourceDataPath();
 
 	/**
-	 * Returns an absolute path to a langauge specific sound/voices file.
+     * Returns an absolute path to a language specific sound/voices file. If
+     * the file is already absolute only the token replacement is applied.
 	 *
 	 * @param file A templated relative path to a language specific file. Any
 	 *             occurence of the '$LOCALE' placeholder will be replaced by
 	 *             the currently active locale string.
-     *             Example: 'voices-ogg/$LOCALE/misc/click_on_letter.ogg'
+     *             Any occurence of '$CA' placeholder will be replaced by
+     *             the current compressed audio format ('ogg' or 'aac).
+     *             Example: 'voices-$CA/$LOCALE/misc/click_on_letter.$CA'
 	 * @returns An absolute path to the corresponding resource file.
 	 */
     Q_INVOKABLE QString getAudioFilePath(const QString &file);

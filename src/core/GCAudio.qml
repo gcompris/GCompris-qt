@@ -33,8 +33,12 @@ import GCompris 1.0
  * sequentially, to which the user can enqueue files that should be scheduled
  * for playback.
  *
- * It makes sure that all audio sources are normalized with respect to
- * ApplicationInfo.CompressedAudio.
+ * To make sure an audio voice will be localized, replace the locale part
+ * of the file by '$LOCALE'.
+ *
+ * To makes sure that all audio sources are normalized with respect to
+ * ApplicationInfo.CompressedAudio replace the 'ogg' part of the file by
+ * '$CA'.
  *
  * @inherit QtQuick.Item
  */
@@ -85,22 +89,6 @@ Item {
     signal done
 
     /**
-     * Helper to normalize audio filename extensions.
-     *
-     * @param type:string file Audio source url.
-     * @returns Url to the passed file with the extension adjusted to what is
-     *          set in ApplicationInfo.CompressedAudio
-     * @sa ApplicationInfo.CompressedAudio
-     */
-    function normalize(file) {
-        if(ApplicationInfo.CompressedAudio === "ogg")
-            return file
-
-        return file.replace('-ogg', "-" + ApplicationInfo.CompressedAudio).
-               replace('.ogg', "." + ApplicationInfo.CompressedAudio)
-    }
-
-    /**
      * Plays back the audio resource @p file.
      *
      * @param type:string file [optional] URL to an audio source.
@@ -108,8 +96,7 @@ Item {
      *          exist or audio is muted
      */
     function play(file) {
-
-        file = normalize(file)
+        console.log("play ", file)
         if(!fileId.exists(file) || muted)
             return false
 
@@ -142,7 +129,7 @@ Item {
      *             audio is muted
      */
     function append(file) {
-        file = normalize(file)
+        console.log("append ", file)
         if(!fileId.exists(file) || muted)
             return false
 

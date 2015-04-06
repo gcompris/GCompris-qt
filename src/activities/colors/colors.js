@@ -22,116 +22,116 @@ function get() {
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/yellow_duck.svg",
                  "text": qsTr("Find the yellow duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/yellow.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/yellow.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/black_duck.svg",
                  "text": qsTr("Find the black duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/black.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/black.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/green_duck.svg",
                  "text": qsTr("Find the green duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/green.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/green.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/red_duck.svg",
                  "text": qsTr("Find the red duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/red.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/red.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/white_duck.svg",
                  "text": qsTr("Find the white duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/white.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/white.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/blue_duck.svg",
                  "text": qsTr("Find the blue duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/blue.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/blue.$CA")
              }
             ],
             [ // Level 2
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/yellow_duck.svg",
                  "text": qsTr("Find the yellow duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/yellow.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/yellow.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/black_duck.svg",
                  "text": qsTr("Find the black duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/black.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/black.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/brown_duck.svg",
                  "text": qsTr("Find the brown duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/brown.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/brown.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/green_duck.svg",
                  "text": qsTr("Find the green duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/green.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/green.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/grey_duck.svg",
                  "text": qsTr("Find the grey duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/grey.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/grey.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/orange_duck.svg",
                  "text": qsTr("Find the orange duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/orange.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/orange.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/purple_duck.svg",
                  "text": qsTr("Find the purple duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/purple.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/purple.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/white_duck.svg",
                  "text": qsTr("Find the white duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/white.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/white.$CA")
              }
             ],
             [ // Level 3
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/yellow_duck.svg",
                  "text": qsTr("Find the yellow duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/yellow.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/yellow.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/brown_duck.svg",
                  "text": qsTr("Find the brown duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/brown.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/brown.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/green_duck.svg",
                  "text": qsTr("Find the green duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/green.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/green.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/grey_duck.svg",
                  "text": qsTr("Find the grey duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/grey.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/grey.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/orange_duck.svg",
                  "text": qsTr("Find the orange duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/orange.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/orange.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/purple_duck.svg",
                  "text": qsTr("Find the purple duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/purple.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/purple.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/red_duck.svg",
                  "text": qsTr("Find the red duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/red.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/red.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/blue_duck.svg",
                  "text": qsTr("Find the blue duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-ogg/$LOCALE/colors/blue.ogg")
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/blue.$CA")
              }
             ]
         ];
