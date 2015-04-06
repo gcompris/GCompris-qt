@@ -70,7 +70,7 @@ Item {
      * type:alias
      * Model for the list (user has to specify one).
      */
-    property alias model: listview.model
+    property alias model: gridview.model
 
     /**
      * type:string
@@ -143,7 +143,7 @@ Item {
  
      /**
      * type:Item
-     * Combobox display when active: header with the description and the listView containing all the available choices.
+     * Combobox display when active: header with the description and the gridview containing all the available choices.
      */
     Item {
         id: popup
@@ -159,9 +159,11 @@ Item {
         // (ctrl+F should still resize the window for example)
         Keys.onPressed: background.currentActivity.Keys.onPressed(event)
 
-        Keys.onUpPressed: listview.decrementCurrentIndex()
-        Keys.onDownPressed: listview.incrementCurrentIndex()
-        
+        Keys.onRightPressed: gridview.moveCurrentIndexRight();
+        Keys.onLeftPressed: gridview.moveCurrentIndexLeft();
+        Keys.onDownPressed: gridview.moveCurrentIndexDown();
+        Keys.onUpPressed: gridview.moveCurrentIndexUp();
+
         Keys.onEscapePressed: {
             // Keep the old value
             discardChange();
@@ -199,12 +201,12 @@ Item {
                     }
                 }
             }
-            listview.currentIndex = currentIndex;
+            gridview.currentIndex = currentIndex;
         }
 
         // Accept the change. Updates the currentIndex and text of the button
         function acceptChange() {
-            currentIndex = listview.currentIndex;
+            currentIndex = gridview.currentIndex;
             currentText = isModelArray ? model[currentIndex].text : (model && model.get(currentIndex) ? model.get(currentIndex).text : "")
         }
 
@@ -222,8 +224,8 @@ Item {
             
             Rectangle {
                 id : headerDescription
-                width: listview.width
-                height: listview.elementHeight
+                width: gridview.width
+                height: gridview.elementHeight
                 GCText {
                     text: label
                     fontSize: mediumSize
@@ -244,8 +246,11 @@ Item {
                     }
                 }
             }
-            ListView {
-                id: listview
+            //todo compute good size to have more columns if size screen is big enough
+            property int cellSize: listBackground.width
+
+            GridView {
+                id: gridview
                 readonly property int elementHeight: 40 * ApplicationInfo.ratio
                 contentHeight: isModelArray ? elementHeight*model.count : elementHeight*model.length
                 width: listBackground.width
@@ -254,23 +259,25 @@ Item {
                 flickableDirection: Flickable.VerticalFlick
                 clip: true
                 anchors.top: headerDescription.bottom
+                cellWidth: listBackground.cellSize
+                cellHeight: elementHeight
 
                 delegate: Component {
                     Rectangle {
-                        width: listBackground.width
-                        height: listview.elementHeight
-                        color: ListView.isCurrentItem ? "darkcyan" : "beige"
-                        border.width: ListView.isCurrentItem ? 3 : 2
+                        width: gridview.cellWidth
+                        height: gridview.elementHeight
+                        color: GridView.isCurrentItem ? "darkcyan" : "beige"
+                        border.width: GridView.isCurrentItem ? 3 : 2
                         radius: 5
                         Image {
                             id: isSelectedIcon
-                            visible: parent.ListView.isCurrentItem
+                            visible: parent.GridView.isCurrentItem
                             source: "qrc:/gcompris/src/core/resource/apply.svg"
                             fillMode: Image.PreserveAspectFit
                             anchors.right: textValue.left
                             anchors.verticalCenter: parent.verticalCenter
                             anchors.rightMargin: 10
-                            sourceSize.width: (listview.elementHeight*0.8) * ApplicationInfo.ratio
+                            sourceSize.width: (gridview.elementHeight*0.8) * ApplicationInfo.ratio
                         }
                         GCText {
                             id: textValue
