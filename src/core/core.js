@@ -177,9 +177,7 @@ function showDownloadDialog(parent, properties) {
  */
 function checkForVoices(parent)
 {
-    if (!GCompris.DownloadManager.haveLocalResource(
-            GCompris.DownloadManager.getVoicesResourceForLocale(
-                    GCompris.ApplicationSettings.locale))) {
+    if (!GCompris.DownloadManager.areVoicesRegistered()) {
         showMessageDialog(parent,
                 qsTr("Missing sound files!") + '\n'
                 + qsTr("This activity uses language sound files, that are not yet installed on your system.")
