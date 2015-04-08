@@ -126,6 +126,7 @@ inline QString DownloadManager::getAbsoluteResourcePath(const QString& path) con
     return QString();
 }
 
+// @FIXME should support a variable subpath lenght like data2/full.rcc"
 inline QString DownloadManager::getRelativeResourcePath(const QString& path) const
 {
     QStringList parts = path.split('/', QString::SkipEmptyParts);
@@ -323,15 +324,6 @@ inline QUrl DownloadManager::getUrlForFilename(const QString& filename) const
     return QUrl(serverUrl.toString() + '/' + getRelativeResourcePath(filename));
 }
 
-inline QString DownloadManager::getResourceRootForFilename(const QString& filename) const
-{
-    QStringList parts = QFileInfo(filename).path()
-            .remove("-" COMPRESSED_AUDIO) // krazy:excludeall=doublequote_chars
-            .split('/', QString::SkipEmptyParts);
-    return QString("/gcompris") + '/' + parts[parts.size()-2] +
-            '/' + parts[parts.size()-1];
-}
-
 inline QString  DownloadManager::getSystemDownloadPath() const
 {
     return QStandardPaths::writableLocation(QStandardPaths::DataLocation);
@@ -429,7 +421,7 @@ bool DownloadManager::checksumMatches(DownloadJob *job, const QString& filename)
 
 void DownloadManager::unregisterResource_locked(const QString& filename)
 {
-    if (!QResource::unregisterResource(filename, getResourceRootForFilename(filename)))
+    if (!QResource::unregisterResource(filename))
             qDebug() << "Error unregistering resource file" << filename;
     else {
         qDebug() << "Successfully unregistered resource file" << filename;
@@ -448,21 +440,19 @@ bool DownloadManager::registerResource(const QString& filename)
     if (isRegistered(filename))
         unregisterResource_locked(filename);
 
-    if (!QResource::registerResource(filename, getResourceRootForFilename(filename))) {
+    if (!QResource::registerResource(filename)) {
         qDebug() << "Error registering resource file" << filename;
         return false;
     } else {
         qDebug() << "Successfully registered resource"
-                << filename
-                << "(rcRoot=" << getResourceRootForFilename(filename) << ")";
+                << filename;
         registeredResources.append(filename);
 
-        QString relPath = getRelativeResourcePath(filename);
-        emit resourceRegistered(relPath);
+        emit resourceRegistered(getRelativeResourcePath(filename));
 
         QString v = getVoicesResourceForLocale(
-                ApplicationSettings::getInstance()->locale());
-        if (v == relPath)
+                    ApplicationSettings::getInstance()->locale());
+        if (v == getRelativeResourcePath(filename))
             emit voicesRegistered();
         return false;
     }
