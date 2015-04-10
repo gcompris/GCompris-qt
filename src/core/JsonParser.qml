@@ -28,7 +28,7 @@ import GCompris 1.0
  *
  * @inherit QtQuick.Item
  */
-Item {
+QtObject {
     id: jsonparser
 
     /**

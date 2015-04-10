@@ -27,7 +27,7 @@ import QtQuick 2.2
  *
  * Put here the locales for which we have a good enough translation.
  */
-Item {
+QtObject {
     /**
      * type:list
      * List of language objects.

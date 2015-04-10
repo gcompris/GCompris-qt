@@ -29,7 +29,7 @@ import QtQuick 2.2
  * The @p value property must be set to a logically OR-ed combination of
  * the other properties each representing one Bar element.
  */
-Item {
+QtObject {
     /**
      * type:int
      * Bitmask defininig all visible elements of a bar.
@@ -42,7 +42,7 @@ Item {
      *
      * Used for opening a help screen.
      */
-    property int help: 1
+    readonly property int help: 1
 
     /**
      * type:int
@@ -50,7 +50,7 @@ Item {
      *
      * Used on the menu screen.
      */
-    property int about: 2
+    readonly property int about: 2
 
     /**
      * type:int
@@ -58,7 +58,7 @@ Item {
      *
      * Used for exiting the application or returning to the menu.
      */
-    property int exit: 4
+    readonly property int exit: 4
 
     /**
      * type:int
@@ -66,7 +66,7 @@ Item {
      *
      * Used for returning from an acitivity to the main menu.
      */
-    property int home: 8
+    readonly property int home: 8
 
     /**
      * type:int
@@ -74,13 +74,13 @@ Item {
      *
      * Used for switching to a config screen.
      */
-    property int config: 16
+    readonly property int config: 16
 
     /**
      * type:int
      * Representation of the current level and next and previous buttons.
      */
-    property int level: 32
+    readonly property int level: 32
 
     /**
      * type:int
@@ -88,7 +88,7 @@ Item {
      *
      * Used for restarting the current level of an activity.
      */
-    property int reload: 64
+    readonly property int reload: 64
 
     /**
      * type:int
@@ -96,7 +96,7 @@ Item {
      *
      * Used for repeating audio voices.
      */
-    property int repeat: 128
+    readonly property int repeat: 128
 
     /**
      * type:int
@@ -104,5 +104,5 @@ Item {
      *
      * Shown automatically during running download.
      */
-    property int download: 256
+    readonly property int download: 256
 }
