@@ -246,20 +246,22 @@ Item {
                     }
                 }
             }
-            //todo compute good size to have more columns if size screen is big enough
-            property int cellSize: listBackground.width
 
             GridView {
                 id: gridview
                 readonly property int elementHeight: 40 * ApplicationInfo.ratio
-                contentHeight: isModelArray ? elementHeight*model.count : elementHeight*model.length
+
+                // each element has a 300 width size minimum. If the screen is larger than it, we do a grid with cases with 300px for width at minimum.
+                // If you have a better idea/formula to have a different column number, don't hesitate, change it :).
+                readonly property int numberOfColumns: Math.max(1, Math.floor(width / 300))
+                contentHeight: isModelArray ? elementHeight*model.count/numberOfColumns : elementHeight*model.length/numberOfColumns
                 width: listBackground.width
                 height: listBackground.height-headerDescription.height
                 currentIndex: gccombobox.currentIndex
                 flickableDirection: Flickable.VerticalFlick
                 clip: true
                 anchors.top: headerDescription.bottom
-                cellWidth: listBackground.cellSize
+                cellWidth: width / numberOfColumns
                 cellHeight: elementHeight
 
                 delegate: Component {
