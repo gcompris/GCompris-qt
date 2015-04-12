@@ -354,7 +354,8 @@ bool DownloadManager::checkDownloadRestriction() const
         return false;
     return true;
 #endif
-    return ApplicationSettings::getInstance()->isAutomaticDownloadsEnabled();
+    return ApplicationSettings::getInstance()->isAutomaticDownloadsEnabled() &&
+            ApplicationInfo::getInstance()->isDownloadAllowed();
 }
 
 void DownloadManager::handleError(QNetworkReply::NetworkError code)

@@ -253,6 +253,7 @@ Item {
             Button {
                 id: voicesButton
                 height: 30 * ApplicationInfo.ratio
+                visible: ApplicationInfo.isDownloadAllowed
                 text: voicesRow.haveLocalResource ? qsTr("Check for updates") :
                 qsTr("Download")
                 style: GCButtonStyle {}
@@ -453,8 +454,10 @@ Item {
 
         if (ApplicationSettings.locale != dialogConfig.languages[languageBox.currentIndex].locale) {
             ApplicationSettings.locale = dialogConfig.languages[languageBox.currentIndex].locale
-            if (!DownloadManager.haveLocalResource(
-            DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort)))
+            if(!DownloadManager.isDataRegistered(
+                        "voices-" + ApplicationInfo.CompressedAudio + "/" +
+                        ApplicationInfo.getVoicesLocale(dialogConfig.languages[languageBox.currentIndex].locale)
+                        ))
             {
                 // ask for downloading new voices
                 Core.showMessageDialog(main,
