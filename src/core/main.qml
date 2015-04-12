@@ -150,7 +150,8 @@ Window {
             }
         }
 
-        focus: true
+        focus: ApplicationInfo.QTVersion >= "5.4.0"
+
         delegate: StackViewDelegate {
             id: root
             function getTransition(properties)
