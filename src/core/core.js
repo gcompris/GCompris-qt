@@ -221,8 +221,8 @@ function quit(parent)
                 qsTr("Quit?") +
                 '\n' +
                 qsTr("Do you really want to quit GCompris?"),
-                "YES", function() { Qt.quit(); },
-                "NO", function() { aboutToQuit = false; },
+                qsTr("Yes"), function() { Qt.quit(); },
+                qsTr("No"), function() { aboutToQuit = false; },
                 function() { aboutToQuit = false; } );
     } else
         Qt.quit();
