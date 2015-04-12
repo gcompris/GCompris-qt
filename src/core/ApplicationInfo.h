@@ -142,7 +142,15 @@ class ApplicationInfo : public QObject
      * This is determined at compile time (ogg for free platforms, aac on
      * MacOSX and IOS).
      */
-	Q_PROPERTY(QString CompressedAudio READ CompressedAudio CONSTANT)
+    Q_PROPERTY(QString CompressedAudio READ CompressedAudio CONSTANT)
+
+    /**
+     * Download allowed
+     *
+     * This is determined at compile time. If set to NO GCompris will
+     * never download anything.
+     */
+    Q_PROPERTY(bool isDownloadAllowed READ isDownloadAllowed CONSTANT)
 
 public:
 
@@ -229,6 +237,7 @@ public:
     static QString GCVersion() { return VERSION; }
     static QString QTVersion() { return qVersion(); }
     static QString CompressedAudio() { return COMPRESSED_AUDIO; }
+    static bool isDownloadAllowed() { return DOWNLOAD_ALLOWED == "ON"; }
 
     /// @endcond
 

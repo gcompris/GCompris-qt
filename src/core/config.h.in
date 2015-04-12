@@ -10,3 +10,5 @@
 #define GCOMPRIS_APPLICATION_NAME "@GCOMPRIS_EXECUTABLE_NAME@"
 /* Compressed audio format */
 #define COMPRESSED_AUDIO "@COMPRESSED_AUDIO@"
+/* Download Allowed */
+#define DOWNLOAD_ALLOWED "@WITH_DOWNLOAD@"
