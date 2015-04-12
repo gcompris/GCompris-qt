@@ -203,7 +203,7 @@ ActivityBase {
                             opacity: !modelData.isTarget ? 1 : (background.gotIt ? 0 : 1)
 
                             Component.onCompleted: {
-                                activity.audioEffects.play(Activity.url + "realrainbow.$CA")
+                                activity.audioEffects.play(Activity.url + "realrainbow."+ApplicationInfo.CompressedAudio)
                             }
 
                             ParallelAnimation {
