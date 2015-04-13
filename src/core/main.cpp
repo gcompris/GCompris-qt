@@ -120,7 +120,7 @@ int main(int argc, char *argv[])
 		}
 		if(!defaultCursor && !parser.isSet(clDefaultCursor))
 			QGuiApplication::setOverrideCursor(
-						QCursor(QPixmap(":/gcompris/src/core/resource/cursor.png"),
+						QCursor(QPixmap(":/gcompris/src/core/resource/cursor.svg"),
 								0, 0));
 
 		// Hide the cursor
