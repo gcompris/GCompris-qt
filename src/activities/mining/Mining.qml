@@ -170,7 +170,7 @@ ActivityBase {
 
                             signal hit
                             onHit: {
-                                activity.audioEffects.play(Activity.url + "pickaxe.$CA")
+                                activity.audioEffects.play(Activity.url + "pickaxe."+ApplicationInfo.CompressedAudio)
                                 background.gotIt = true
                                 tuto.setState("Unzoom")
                             }

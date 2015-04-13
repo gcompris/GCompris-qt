@@ -180,5 +180,24 @@ option(WITH_KIOSK_MODE "Set the kiosk mode by default" OFF)
 
 set(COMPRESSED_AUDIO "ogg" CACHE STRING "Compressed Audio format [ogg|aac]")
 
+file(GLOB_RECURSE OGG_FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/ "*.ogg")
+
+foreach(OGG_FILE ${OGG_FILES})
+  # This should only replace the extension
+  string(REGEX REPLACE "ogg$" "aac" AAC_FILE ${OGG_FILE})
+  add_custom_command(
+    OUTPUT ${AAC_FILE}
+    # Put the good line depending on your installation
+    COMMAND avconv -v warning -i ${OGG_FILE} -acodec libvo_aacenc ${AAC_FILE}
+    #COMMAND ffmpeg -v warning -i ${OGG_FILE} -acodec aac -strict -2 ${AAC_FILE}
+    )
+  list(APPEND AAC_FILES ${AAC_FILE})
+endforeach()
+
+add_custom_target(
+  createAacFromOgg
+  DEPENDS ${AAC_FILES}
+  )
+
 add_subdirectory(src)
 

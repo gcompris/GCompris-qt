@@ -22,7 +22,7 @@ var colors =
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/clarinet.svg",
                 "text": qsTr("Find the clarinet"),
-                "audio": ApplicationInfo.getAudioFilePath(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/instruments/resource/clarinet.$CA"))
+                "audio": ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/instruments/resource/clarinet.$CA")
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/flute_traversiere.svg",
