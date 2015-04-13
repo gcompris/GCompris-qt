@@ -71,7 +71,7 @@ endif()
 
 target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${QT_LIBRARIES})
 
-GCOMPRIS_ADD_RCC(core *.qml *.js resource/*.* resource/bonus/* resource/sounds/* resource/fonts/* qmldir)
+GCOMPRIS_ADD_RCC(core *.qml *.js resource/*.${COMPRESSED_AUDIO} resource/*.gif resource/*.png resource/*.svg resource/bonus/* resource/sounds/* resource/fonts/* qmldir)
 
 # Installation
 # ============
