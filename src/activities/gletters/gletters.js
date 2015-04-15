@@ -87,6 +87,14 @@ function start(items_, uppercaseOnly_,  _mode) {
         items.ourActivity.dataSetUrl + "default-"+localeShort+".json"));
         items.wordlist.useDefault = false
     }
+    // Last chance, we load the english default
+    if(items.wordlist.maxLevel == 0) {
+        items.wordlist.useDefault = true
+        items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
+            items.ourActivity.dataSetUrl + "default-en.json"));
+        items.wordlist.useDefault = false
+    }
+
 
     maxLevel = items.wordlist.maxLevel;
     droppedWords = new Array();
