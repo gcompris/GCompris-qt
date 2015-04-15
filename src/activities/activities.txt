@@ -9,8 +9,11 @@ align4
 align4-2players
 alphabet-sequence
 ballcatch
+babymatch
+babyshapes
 braille_alphabets
 canal_lock
+chronos
 click_on_letter
 click_on_letter_up
 clickanddraw
@@ -19,6 +22,7 @@ clockgame
 color_mix
 color_mix_light
 colors
+details
 drawnumber
 enumerate
 erase
@@ -27,6 +31,7 @@ erase_clic
 fifteen
 followline
 football
+geography
 gletters
 gnumch-equality
 gnumch-factors
@@ -36,6 +41,7 @@ gnumch-primes
 guessnumber
 hexagon
 imageid
+imagename
 instruments
 leftright
 lightsoff

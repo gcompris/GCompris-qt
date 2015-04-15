@@ -1,0 +1,35 @@
+{
+   "instruction" : "Lock on the grass.",
+   "levels" : [
+      {
+          "pixmapfile" : "dog2/dog1.png",
+          "x" : "0.617",
+          "y" : "0.130"
+      },
+      {
+          "pixmapfile" : "dog2/dog2.png",
+          "x" : "0.171",
+          "y" : "0.129"
+      },
+      {
+          "pixmapfile" : "dog2/dog3.png",
+          "x" : "0.634",
+          "y" : "0.375"
+      },
+      {
+          "pixmapfile" : "dog2/dog4.png",
+          "x" : "0.413",
+          "y" : "0.374"
+      },
+      {
+          "pixmapfile" : "dog2/dog5.png",
+          "x" : "0.382",
+          "y" : "0.130"
+      },
+      {
+          "pixmapfile" : "dog2/dog6.png",
+          "x" : "0.185",
+          "y" : "0.374"
+      }
+   ]
+}

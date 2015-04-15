@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ShapeGame>
+<Title y="40" x="200" justification="GTK_JUSTIFY_CENTER">
+<name>Africa</name>
+</Title>
+<Shape name="afrique_sud" pixmapfile="geography/afrique/south_africa.png" sound="voices/$LOCALE/geography/south_africa.ogg" x="525" y="469" zoomx="1" zoomy="1" position="0"><tooltip>South Africa</tooltip>
+</Shape>
+<Shape name="algerie" pixmapfile="geography/afrique/algeria.png" sound="voices/$LOCALE/geography/algeria.ogg" x="386" y="72" zoomx="1" zoomy="1" position="0">
+<tooltip>Algeria</tooltip>
+</Shape>
+<Shape name="angola" pixmapfile="geography/afrique/angola.png" sound="voices/$LOCALE/geography/angola.ogg" x="486" y="354" zoomx="1" zoomy="1" position="0">
+<tooltip>Angola</tooltip>
+</Shape>
+<Shape name="benin" pixmapfile="geography/afrique/benin.png" sound="voices/$LOCALE/geography/benin.ogg" x="391" y="206" zoomx="1" zoomy="1" position="0">
+<tooltip>Benin</tooltip>
+</Shape>
+<Shape name="botswana" pixmapfile="geography/afrique/botswana.png" sound="voices/$LOCALE/geography/botswana.ogg" x="526" y="428" zoomx="1" zoomy="1" position="0">
+<tooltip>Botswana</tooltip>
+</Shape>
+<Shape name="burkina" pixmapfile="geography/afrique/burkina_faso.png" sound="voices/$LOCALE/geography/burkina_faso.ogg" x="366" y="184" zoomx="1" zoomy="1" position="0">
+<tooltip>Burkina Faso</tooltip>
+</Shape>
+<Shape name="cameroon" pixmapfile="geography/afrique/cameroon.png" sound="voices/$LOCALE/geography/cameroon.ogg" x="455" y="223" zoomx="1" zoomy="1" position="0">
+<tooltip>Cameroon</tooltip>
+</Shape>
+<Shape name="congo" pixmapfile="geography/afrique/congo.png" sound="voices/$LOCALE/geography/republic_of_congo.ogg" x="470" y="274" zoomx="1" zoomy="1" position="0">
+<tooltip>Republic of Congo</tooltip>
+</Shape>
+<Shape name="cote_ivoire" pixmapfile="geography/afrique/ivory_coast.png" sound="voices/$LOCALE/geography/ivory_coast.ogg" x="343" y="218" zoomx="1" zoomy="1" position="0">
+<tooltip>Ivory Coast</tooltip>
+</Shape>
+<Shape name="egypte" pixmapfile="geography/afrique/egypt.png" sound="voices/$LOCALE/geography/egypt.ogg" x="558" y="84" zoomx="1" zoomy="1" position="0">
+<tooltip>Egypt</tooltip>
+</Shape>
+<Shape name="erythree" pixmapfile="geography/afrique/eritrea.png" sound="voices/$LOCALE/geography/eritrea.ogg" x="621" y="164" zoomx="1" zoomy="1" position="0">
+<tooltip>Eritrea</tooltip>
+</Shape>
+<Shape name="ethiopie" pixmapfile="geography/afrique/ethiopia.png" sound="voices/$LOCALE/geography/ethiopia.ogg" x="627" y="207" zoomx="1" zoomy="1" position="0">
+<tooltip>Ethiopia</tooltip>
+</Shape>
+<Shape name="gabon" pixmapfile="geography/afrique/gabon.png" sound="voices/$LOCALE/geography/gabon.ogg" x="449" y="279" zoomx="1" zoomy="1" position="0">
+<tooltip>Gabon</tooltip>
+</Shape>
+<Shape name="ghana" pixmapfile="geography/afrique/ghana.png" sound="voices/$LOCALE/geography/ghana.ogg" x="368" y="215" zoomx="1" zoomy="1" position="0">
+<tooltip>Ghana</tooltip>
+</Shape>
+<Shape name="guinea" pixmapfile="geography/afrique/guinea.png" sound="voices/$LOCALE/geography/guinea.ogg" x="307" y="200" zoomx="1" zoomy="1" position="0">
+<tooltip>Guinea</tooltip>
+</Shape>
+<Shape name="kenya" pixmapfile="geography/afrique/kenya.png" sound="voices/$LOCALE/geography/kenya.ogg" x="612" y="270" zoomx="1" zoomy="1" position="0">
+<tooltip>Kenya</tooltip>
+</Shape>
+<Shape name="liberia" pixmapfile="geography/afrique/liberia.png" sound="voices/$LOCALE/geography/liberia.ogg" x="317" y="226" zoomx="1" zoomy="1" position="0">
+<tooltip>Liberia</tooltip>
+</Shape>
+<Shape name="libye" pixmapfile="geography/afrique/libya.png" sound="voices/$LOCALE/geography/libya.ogg" x="481" y="85" zoomx="1" zoomy="1" position="0">
+<tooltip>Libya</tooltip>
+</Shape>
+<Shape name="madagascar" pixmapfile="geography/afrique/madagascar.png" sound="voices/$LOCALE/geography/madagascar.ogg" x="662" y="402" zoomx="1" zoomy="1" position="0">
+<tooltip>Madagascar</tooltip>
+</Shape>
+<Shape name="malawi" pixmapfile="geography/afrique/malawi.png" sound="voices/$LOCALE/geography/malawi.ogg" x="587" y="362" zoomx="1" zoomy="1" position="0">
+<tooltip>Malawi</tooltip>
+</Shape>
+<Shape name="mali" pixmapfile="geography/afrique/mali.png" sound="voices/$LOCALE/geography/mali.ogg" x="352" y="145" zoomx="1" zoomy="1" position="0">
+<tooltip>Mali</tooltip>
+</Shape>
+<Shape name="maroc" pixmapfile="geography/afrique/moroco.png" sound="voices/$LOCALE/geography/moroco.ogg" x="321" y="69" zoomx="1" zoomy="1" position="0">
+<tooltip>Morocco</tooltip>
+</Shape>
+<Shape name="mauritanie" pixmapfile="geography/afrique/mauritania.png" sound="voices/$LOCALE/geography/mauritania.ogg" x="309" y="124" zoomx="1" zoomy="1" position="0">
+<tooltip>Mauritania</tooltip>
+</Shape>
+<Shape name="mozambique" pixmapfile="geography/afrique/mozambique.png" sound="voices/$LOCALE/geography/mozambique.ogg" x="594" y="403" zoomx="1" zoomy="1" position="0">
+<tooltip>Mozambique</tooltip>
+</Shape>
+<Shape name="namibie" pixmapfile="geography/afrique/namibia.png" sound="voices/$LOCALE/geography/namibia.ogg" x="487" y="432" zoomx="1" zoomy="1" position="0">
+<tooltip>Namibia</tooltip>
+</Shape>
+<Shape name="niger" pixmapfile="geography/afrique/niger.png" sound="voices/$LOCALE/geography/niger.ogg" x="426" y="147" zoomx="1" zoomy="1" position="0">
+<tooltip>Niger</tooltip>
+</Shape>
+<Shape name="nigeria" pixmapfile="geography/afrique/nigeria.png" sound="voices/$LOCALE/geography/nigeria.ogg" x="431" y="207" zoomx="1" zoomy="1" position="0">
+<tooltip>Nigeria</tooltip>
+</Shape>
+<Shape name="ouganda" pixmapfile="geography/afrique/uganda.png" sound="voices/$LOCALE/geography/uganda.ogg" x="576" y="260" zoomx="1" zoomy="1" position="0">
+<tooltip>Uganda</tooltip>
+</Shape>
+<Shape name="rep_centrafrique" pixmapfile="geography/afrique/rep_centrafrique.png" sound="voices/$LOCALE/geography/central_african_republic.ogg" x="507" y="222" zoomx="1" zoomy="1" position="0">
+<tooltip>Central African Republic</tooltip>
+</Shape>
+<Shape name="rep_congo" pixmapfile="geography/afrique/rep_congo.png" sound="voices/$LOCALE/geography/democratic_republic_of_congo.ogg" x="510" y="299" zoomx="1" zoomy="1" position="0">
+<tooltip>Democratic Republic of Congo</tooltip>
+</Shape>
+<Shape name="senegal" pixmapfile="geography/afrique/senegal.png" sound="voices/$LOCALE/geography/senegal.ogg" x="288" y="169" zoomx="1" zoomy="1" position="0">
+<tooltip>Senegal</tooltip>
+</Shape>
+<Shape name="somalie" pixmapfile="geography/afrique/somalia.png" sound="voices/$LOCALE/geography/somalia.ogg" x="661" y="234" zoomx="1" zoomy="1" position="0">
+<tooltip>Somalia</tooltip>
+</Shape>
+<Shape name="sudan" pixmapfile="geography/afrique/soudan.png" sound="voices/$LOCALE/geography/sudan.ogg" x="561" y="179" zoomx="1" zoomy="1" position="0">
+<tooltip>Sudan</tooltip>
+</Shape>
+<Shape name="tanzanie" pixmapfile="geography/afrique/tanzania.png" sound="voices/$LOCALE/geography/tanzania.ogg" x="592" y="315" zoomx="1" zoomy="1" position="0">
+<tooltip>Tanzania</tooltip>
+</Shape>
+<Shape name="tchad" pixmapfile="geography/afrique/chad.png" sound="voices/$LOCALE/geography/chad.ogg" x="492" y="162" zoomx="1" zoomy="1" position="0">
+<tooltip>Chad</tooltip>
+</Shape>
+<Shape name="togo" pixmapfile="geography/afrique/togo.png" sound="voices/$LOCALE/geography/togo.ogg" x="381" y="211" zoomx="1" zoomy="1" position="0">
+<tooltip>Togo</tooltip>
+</Shape>
+<Shape name="tunisie" pixmapfile="geography/afrique/tunisia.png" sound="voices/$LOCALE/geography/tunisia.ogg" x="433" y="33" zoomx="1" zoomy="1" position="0">
+<tooltip>Tunisia</tooltip>
+</Shape>
+<Shape name="zambie" pixmapfile="geography/afrique/zambia.png" sound="voices/$LOCALE/geography/zambia.ogg" x="549" y="363" zoomx="1" zoomy="1" position="0">
+<tooltip>Zambia</tooltip>
+</Shape>
+<Shape name="zimbabwe" pixmapfile="geography/afrique/zimbabwe.png" sound="voices/$LOCALE/geography/zimbabwe.ogg" x="555" y="403" zoomx="1" zoomy="1" position="0">
+<tooltip>Zimbabwe</tooltip>
+</Shape>
+<Shape name="zz" zoomx="1" zoomy="1" y="260" x="480" type="SHAPE_BACKGROUND" position="0" pixmapfile="geography/afrique/africa.png"/></ShapeGame>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ShapeGame><!-- Created with GComprisShapegame gimp script -->
+<!--image: http://commons.wikimedia.org/wiki/File:L'église_d'Auvers-sur-Oise.jpg -->
+<Info x="394" y="495" justification="GTK_JUSTIFY_CENTER" color_skin="gcompris/text button" color_background_skin="gcompris/shadow">
+    <name>Vincent van Gogh, The Church at Auvers-sur-Oise - 1890</name>
+  </Info>
+<shape name="2" targetfile="" pixmapfile="details/Eglise_dAuvers-sur-Oise_2.png" position="0" x="237.0" y="290.0"/>
+<shape name="1" targetfile="" pixmapfile="details/Eglise_dAuvers-sur-Oise_1.png" position="0" x="430.0" y="99.0"/>
+<shape name="0" targetfile="" pixmapfile="details/Eglise_dAuvers-sur-Oise_0.png" position="0" x="273.0" y="400.0"/>
+<shape name="background" pixmapfile="details/Eglise_dAuvers-sur-Oise_background.jpg" position="0" type="SHAPE_BACKGROUND" x="399.5" y="260.0"/>
+</ShapeGame>

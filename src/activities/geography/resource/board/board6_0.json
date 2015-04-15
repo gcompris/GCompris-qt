@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ShapeGame>
+  <Title x="280" y="40" justification="GTK_JUSTIFY_CENTER">
+    <name>Eastern Europe</name>
+  </Title>
+  <Shape name="A" pixmapfile="geography/europe/albania.png" x="505" y="431" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/albania.ogg">
+      <tooltip>Albania</tooltip>
+  </Shape>
+  <Shape name="B" pixmapfile="geography/europe/belarus.png" x="577" y="239" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/belarus.ogg">
+      <tooltip>Belarus</tooltip>
+  </Shape>
+  <Shape name="C" pixmapfile="geography/europe/bosnia_herzegovina.png" x="470" y="388" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/bosnia_herzegovina.ogg">
+      <tooltip>Bosnia Herzegovina</tooltip>
+  </Shape>
+  <Shape name="D" pixmapfile="geography/europe/bulgaria.png" x="567" y="404" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/bulgaria.ogg">
+      <tooltip>Bulgaria</tooltip>
+  </Shape>
+  <Shape name="E" pixmapfile="geography/europe/croatia.png" x="454" y="375" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/croatia.ogg">
+      <tooltip>Croatia</tooltip>
+  </Shape>
+  <Shape name="G" pixmapfile="geography/europe/czech.png" x="438" y="294" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/czech.ogg">
+      <tooltip>Czech Republic</tooltip>
+  </Shape>
+  <Shape name="H" pixmapfile="geography/europe/estonia.png" x="528" y="167" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/estonia.ogg">
+      <tooltip>Estonia</tooltip>
+  </Shape>
+  <Shape name="I" pixmapfile="geography/europe/hungary.png" x="487" y="336" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/hungary.ogg">
+      <tooltip>Hungary</tooltip>
+  </Shape>
+  <Shape name="J" pixmapfile="geography/europe/latvia.png" x="531" y="193" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/latvia.ogg">
+      <tooltip>Latvia</tooltip>
+  </Shape>
+  <Shape name="K" pixmapfile="geography/europe/lithuania.png" x="524" y="218" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/lithuania.ogg">
+      <tooltip>Lithuania</tooltip>
+  </Shape>
+  <Shape name="L" pixmapfile="geography/europe/macedonia.png" x="524" y="421" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/macedonia.ogg">
+      <tooltip>Macedonia</tooltip>
+  </Shape>
+  <Shape name="M" pixmapfile="geography/europe/moldova.png" x="596" y="339" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/moldova.ogg">
+      <tooltip>Moldova</tooltip>
+  </Shape>
+  <Shape name="N" pixmapfile="geography/europe/poland.png" x="474" y="264" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/poland.ogg">
+      <tooltip>Poland</tooltip>
+  </Shape>
+  <Shape name="O" pixmapfile="geography/europe/romania.png" x="558" y="355" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/romania.ogg">
+      <tooltip>Romania</tooltip>
+  </Shape>
+  <Shape name="P" pixmapfile="geography/europe/russia.png" x="631" y="189" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/russia.ogg">
+      <tooltip>Russia</tooltip>
+  </Shape>
+  <Shape name="Q1" pixmapfile="geography/europe/serbia.png" x="510" y="385" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/serbia.ogg">
+      <tooltip>Serbia</tooltip>
+  </Shape>
+  <Shape name="Q2" pixmapfile="geography/europe/montenegro.png" x="494" y="403" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/montenegro.ogg">
+      <tooltip>Montenegro</tooltip>
+  </Shape>
+  <Shape name="R" pixmapfile="geography/europe/slovakia.png" x="488" y="314" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/slovakia.ogg">
+      <tooltip>Slovak Republic</tooltip>
+  </Shape>
+  <Shape name="S" pixmapfile="geography/europe/slovenia.png" x="432" y="351" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/slovenia.ogg">
+      <tooltip>Slovenia</tooltip>
+  </Shape>
+  <Shape name="T" pixmapfile="geography/europe/turkey.png" x="677" y="466" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/turkey.ogg">
+      <tooltip>Turkey</tooltip>
+  </Shape>
+  <Shape name="U" pixmapfile="geography/europe/ukraine.png" x="626" y="318" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/ukraine.ogg">
+      <tooltip>Ukraine</tooltip>
+  </Shape>
+  <Shape name="V" pixmapfile="geography/europe/greece.png" x="550" y="472" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/greece.ogg">
+      <tooltip>Greece</tooltip>
+  </Shape>
+  <Shape name="F" pixmapfile="geography/europe/cyprus.png" type="SHAPE_BACKGROUND" x="683" y="521" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/cyprus.ogg">
+      <tooltip>Cyprus</tooltip>
+  </Shape>
+  <Shape name="Z" pixmapfile="geography/europe/europe.png" type="SHAPE_BACKGROUND"
+	 x="420" y="260" zoomx="1" zoomy="1" position="0"/>
+</ShapeGame>

@@ -1,0 +1,45 @@
+{
+   "instruction" : "Continents",
+   "levels" : [
+      {
+          "pixmapfile" : "continents/back.png",
+          "type" : "SHAPE_BACKGROUND_IMAGE"
+      },
+      {
+          "pixmapfile" : "continents/asia.png",
+          "x" : "0.747",
+          "y" : "0.386",
+          "toolTipText" : "Asia"
+      },
+      {
+          "pixmapfile" : "continents/africa.png",
+          "x" : "0.512",
+          "y" : "0.636",
+          "toolTipText" : "Africa"
+      },
+      {
+          "pixmapfile" : "continents/antarctica.png",
+          "x" : "0.42",
+          "y" : "0.979",
+          "toolTipText" : "Antarctica"
+      },
+      {
+          "pixmapfile" : "continents/oceania.png",
+          "x" : "0.892",
+          "y" : "0.822",
+          "toolTipText" : "Oceania"
+      },
+      {
+          "pixmapfile" : "continents/europa.png",
+          "x" : "0.507",
+          "y" : "0.257",
+          "toolTipText" : "Europe"
+      },
+      {
+          "pixmapfile" : "continents/america.png",
+          "x" : "0.22",
+          "y" : "0.479",
+          "toolTipText" : "America"
+      }
+   ]
+}

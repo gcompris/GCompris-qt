@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ShapeGame>
+  <Title x="270" y="40" justification="GTK_JUSTIFY_CENTER">
+    <name>Western Europe</name>
+  </Title>
+  <Shape name="E" pixmapfile="geography/europe/austria.png" x="443" y="328" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/austria.ogg">
+        <tooltip>Austria</tooltip>
+  </Shape>
+  <Shape name="O" pixmapfile="geography/europe/belgium.png" x="335" y="286" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/belgium.ogg">
+        <tooltip>Belgium</tooltip>
+  </Shape>
+  <Shape name="B" pixmapfile="geography/europe/denmark.png" x="399" y="203" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/denmark.ogg">
+        <tooltip>Denmark</tooltip>
+  </Shape>
+  <Shape name="A" pixmapfile="geography/europe/finland.png" x="554" y="75" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/finland.ogg">
+        <tooltip>Finland</tooltip>
+  </Shape>
+  <Shape name="D" pixmapfile="geography/europe/france.png" x="312" y="351" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/france.ogg">
+        <tooltip>France</tooltip>
+  </Shape>
+  <Shape name="H" pixmapfile="geography/europe/germany.png" x="405" y="277" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/germany.ogg">
+        <tooltip>Germany</tooltip>
+  </Shape>
+  <Shape name="F" pixmapfile="geography/europe/iceland.png" x="141" y="54" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/iceland.ogg">
+        <tooltip>Iceland</tooltip>
+  </Shape>
+  <Shape name="R" pixmapfile="geography/europe/ireland.png" x="186" y="249" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/ireland.ogg">
+        <tooltip>Ireland</tooltip>
+  </Shape>
+  <Shape name="I" pixmapfile="geography/europe/italy.png" x="439" y="417" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/italy.ogg">
+        <tooltip>Italy</tooltip>
+  </Shape>
+  <Shape name="L" pixmapfile="geography/europe/luxembourg.png" type="SHAPE_BACKGROUND" x="354" y="298" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/luxembourg.ogg">
+        <tooltip>Luxembourg</tooltip>
+  </Shape>
+  <Shape name="N" pixmapfile="geography/europe/netherland.png" x="342" y="261" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/netherland.ogg">
+        <tooltip>The Netherlands</tooltip>
+  </Shape>
+  <Shape name="M" pixmapfile="geography/europe/norway.png" x="462" y="85" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/norway.ogg">
+        <tooltip>Norway</tooltip>
+  </Shape>
+  <Shape name="C" pixmapfile="geography/europe/portugal.png" x="182" y="453" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/portugal.ogg">
+        <tooltip>Portugal</tooltip>
+  </Shape>
+  <Shape name="P" pixmapfile="geography/europe/spain.png" x="252" y="448" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/spain.ogg">
+        <tooltip>Spain</tooltip>
+  </Shape>
+  <Shape name="Q" pixmapfile="geography/europe/sweden.png" x="467" y="118" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/sweden.ogg">
+        <tooltip>Sweden</tooltip>
+  </Shape>
+  <Shape name="J" pixmapfile="geography/europe/switz.png" x="383" y="341" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/switz.ogg">
+        <tooltip>Switzerland</tooltip>
+  </Shape>
+  <Shape name="G" pixmapfile="geography/europe/united_kingdom.png" x="241" y="226" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/united_kingdom.ogg">
+        <tooltip>United Kingdom</tooltip>
+  </Shape>
+  <Shape name="Z" pixmapfile="geography/europe/europe.png" type="SHAPE_BACKGROUND" x="450" y="260" zoomx="1" zoomy="1" position="0"/>
+</ShapeGame>
+

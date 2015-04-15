@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ShapeGame>
+  <Title x="600" y="495" justification="GTK_JUSTIFY_CENTER">
+    <name>Transportation</name>
+  </Title>
+  <Shape name="G" pixmapfile="chronos/st_rocket.png"  x="233" y="276" zoomx="1" zoomy="1" position="0"/>
+  <Title x="233" y="399" justification="GTK_JUSTIFY_CENTER"><name xml:space="preserve">1829 Stephenson's Rocket
+Steam locomotive</name></Title>
+  <Shape name="E" pixmapfile="chronos/Eole.svg"  x="500" y="84" zoomx="1" zoomy="1" position="0"/>
+  <Title x="474" y="170" justification="GTK_JUSTIFY_CENTER"><name>1880 Clement Ader's Eole</name></Title>
+  <Shape name="C" pixmapfile="chronos/fardier.png"  x="600" y="380" zoomx="1" zoomy="1" position="0"/>
+  <Title x="625" y="452" justification="GTK_JUSTIFY_CENTER"><name>1769 Cugnot's fardier</name></Title>
+</ShapeGame>
+

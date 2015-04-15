@@ -1,0 +1,51 @@
+{
+   "instruction" : "North America",
+   "levels" : [
+      {
+          "pixmapfile" : "northamerica/north_america.png",
+          "type" : "SHAPE_BACKGROUND_IMAGE"
+      },
+      {
+          "pixmapfile" : "northamerica/iceland.png",
+          "x" : "0.643",
+          "y" : "0.092",
+          "dropAreaSize" : "10",
+          "toolTipText" : "Iceland"
+      },
+      {
+          "pixmapfile" : "northamerica/greenland.png",
+          "x" : "0.524",
+          "y" : "0.152",
+          "dropAreaSize" : "10",
+          "toolTipText" : "Greenland"
+      },
+      {
+          "pixmapfile" : "northamerica/canada.png",
+          "x" : "0.394",
+          "y" : "0.35",
+          "dropAreaSize" : "10",
+          "toolTipText" : "Canada"
+      },
+      {
+          "pixmapfile" : "northamerica/alaska.png",
+          "x" : "0.126",
+          "y" : "0.177",
+          "dropAreaSize" : "10",
+          "toolTipText" : "Alaska"
+      },
+      {
+          "pixmapfile" : "northamerica/usa.png",
+          "x" : "0.358",
+          "y" : "0.704",
+          "dropAreaSize" : "10",
+          "toolTipText" : "United States of America"
+      },
+      {
+          "pixmapfile" : "northamerica/mexico.png",
+          "x" : "0.264",
+          "y" : "0.835",
+          "dropAreaSize" : "10",
+          "toolTipText" : "Mexico"
+      }
+   ]
+}

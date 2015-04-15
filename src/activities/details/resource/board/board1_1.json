@@ -1,0 +1,19 @@
+{
+   "instruction" : "Vincent van Gogh, The Bridge of Langlois at Arles with a lady with umbrella - 1888",
+   "levels" : [
+      {
+          "pixmapfile" : "image/VincentVanGoghBridge_background.jpg",
+          "type" : "SHAPE_BACKGROUND_IMAGE"
+      },
+      {
+          "pixmapfile" : "image/VincentVanGoghBridge_1.png",
+          "x" : "0.943",
+          "y" : "0.5"
+      },
+      {
+          "pixmapfile" : "image/VincentVanGoghBridge_0.png",
+          "x" : "0.56",
+          "y" : "0.536"
+      }
+   ]
+}

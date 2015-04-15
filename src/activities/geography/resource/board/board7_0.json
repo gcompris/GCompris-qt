@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ShapeGame>
+    <Title x="240" y="500" justification="GTK_JUSTIFY_CENTER">
+         <name>Northern Africa</name>
+    </Title>
+
+<Shape name="A" pixmapfile="geography/africa/algeria.png" sound="voices/$LOCALE/geography/algeria.ogg" x="286" y="150" position="0">
+	<tooltip>Algeria</tooltip>
+</Shape>
+
+<Shape name="B" pixmapfile="geography/africa/benin.png" sound="voices/$LOCALE/geography/benin.ogg" x="275" y="341" position="0">
+	<tooltip>Benin</tooltip>
+</Shape>
+
+<Shape name="C" pixmapfile="geography/africa/burkina_faso.png" sound="voices/$LOCALE/geography/burkina_faso.ogg" x="236" y="310" position="0">
+	<tooltip>Burkina Faso</tooltip>
+</Shape>
+
+<Shape name="D" pixmapfile="geography/africa/cameroon.png" sound="voices/$LOCALE/geography/cameroon.ogg" x="383" y="377" position="0">
+	<tooltip>Cameroon</tooltip>
+</Shape>
+
+<Shape name="E" pixmapfile="geography/africa/central_african_republic.png" sound="voices/$LOCALE/geography/central_african_republic.ogg" x="465" y="370" position="0">
+	<tooltip>Central African Republic</tooltip>
+</Shape>
+
+<Shape name="F" pixmapfile="geography/africa/chad.png" sound="voices/$LOCALE/geography/chad.ogg" x="446" y="281" position="0">
+	<tooltip>Chad</tooltip>
+</Shape>
+
+<Shape name="G" pixmapfile="geography/africa/djibouti.png" sound="voices/$LOCALE/geography/djibouti.ogg" x="684" y="324" position="0">
+	<tooltip>Djibouti</tooltip>
+</Shape>
+
+<Shape name="H" pixmapfile="geography/africa/egypt.png" sound="voices/$LOCALE/geography/egypt.ogg" x="559" y="164" position="0">
+	<tooltip>Egypt</tooltip>
+</Shape>
+
+<Shape name="I" pixmapfile="geography/africa/equatorial_guinea.png" sound="voices/$LOCALE/geography/equatorial_guinea.ogg" x="373" y="436" position="0">
+	<tooltip>Equatorial Guinea</tooltip>
+</Shape>
+
+<Shape name="J" pixmapfile="geography/africa/ethiopia.png" sound="voices/$LOCALE/geography/ethiopia.ogg" x="662" y="356" position="0">
+	<tooltip>Ethiopia</tooltip>
+</Shape>
+
+<Shape name="erytrea" pixmapfile="geography/africa/eritrea.png" sound="voices/$LOCALE/geography/eritrea.ogg" x="655" y="293" zoomx="1" zoomy="1" position="0">
+<tooltip>Eritrea</tooltip>
+</Shape>
+
+<Shape name="K" pixmapfile="geography/africa/gabon.png" sound="voices/$LOCALE/geography/gabon.ogg" x="388" y="462" position="0">
+	<tooltip>Gabon</tooltip>
+</Shape>
+
+<Shape name="L" pixmapfile="geography/africa/ganbia.png" sound="voices/$LOCALE/geography/gambia.ogg" x="101" y="290" position="0">
+	<tooltip>Gambia</tooltip>
+</Shape>
+
+<Shape name="M" pixmapfile="geography/africa/ghana.png" sound="voices/$LOCALE/geography/ghana.ogg" x="237" y="355" position="0">
+	<tooltip>Ghana</tooltip>
+</Shape>
+
+<Shape name="N" pixmapfile="geography/africa/guinea_bissau.png" sound="voices/$LOCALE/geography/guinea_bissau.ogg" x="103" y="306" position="0">
+	<tooltip>Guinea Bissau</tooltip>
+</Shape>
+
+<Shape name="O" pixmapfile="geography/africa/guinea.png" sound="voices/$LOCALE/geography/guinea.ogg" x="137" y="325" position="0">
+	<tooltip>Guinea</tooltip>
+</Shape>
+
+<Shape name="P" pixmapfile="geography/africa/ivory_coast.png" sound="voices/$LOCALE/geography/ivory_coast.ogg" x="192" y="356" position="0">
+	<tooltip>Ivory Coast</tooltip>
+</Shape>
+
+<Shape name="Q" pixmapfile="geography/africa/liberia.png" sound="voices/$LOCALE/geography/liberia.ogg" x="152" y="366" position="0">
+	<tooltip>Liberia</tooltip>
+</Shape>
+
+<Shape name="R" pixmapfile="geography/africa/libya.png" sound="voices/$LOCALE/geography/libya.ogg" x="432" y="173" position="0">
+	<tooltip>Libya</tooltip>
+</Shape>
+
+<Shape name="S" pixmapfile="geography/africa/mali.png" sound="voices/$LOCALE/geography/mali.ogg" x="219" y="250" position="0">
+	<tooltip>Mali</tooltip>
+</Shape>
+
+<Shape name="T" pixmapfile="geography/africa/mauritania.png" sound="voices/$LOCALE/geography/mauritania.ogg" x="161" y="211" position="0">
+	<tooltip>Mauritania</tooltip>
+</Shape>
+
+<Shape name="U" pixmapfile="geography/africa/moroco.png" sound="voices/$LOCALE/geography/moroco.ogg" x="212" y="101" position="0">
+	<tooltip>Morocco</tooltip>
+</Shape>
+
+<Shape name="V" pixmapfile="geography/africa/nigeria.png" sound="voices/$LOCALE/geography/nigeria.ogg" x="341" y="344" position="0">
+	<tooltip>Nigeria</tooltip>
+</Shape>
+
+<Shape name="W" pixmapfile="geography/africa/niger.png" sound="voices/$LOCALE/geography/niger.ogg" x="338" y="256" position="0">
+	<tooltip>Niger</tooltip>
+</Shape>
+
+<Shape name="X" pixmapfile="geography/africa/rwanda.png" sound="voices/$LOCALE/geography/rwanda.ogg" x="565" y="474" position="0">
+	<tooltip>Rwanda</tooltip>
+</Shape>
+
+<Shape name="Y" pixmapfile="geography/africa/senegal.png" sound="voices/$LOCALE/geography/senegal.ogg" x="106" y="277" position="0">
+	<tooltip>Senegal</tooltip>
+</Shape>
+
+<Shape name="Z" pixmapfile="geography/africa/sierra_leone.png" sound="voices/$LOCALE/geography/sierra_leone.ogg" x="133" y="340" position="0">
+	<tooltip>Sierra Leone</tooltip>
+</Shape>
+
+<Shape name="AA" pixmapfile="geography/africa/somalia.png" sound="voices/$LOCALE/geography/somalia.ogg" x="720" y="396" position="0">
+	<tooltip>Somalia</tooltip>
+</Shape>
+
+<Shape name="AB" pixmapfile="geography/africa/sudan.png" sound="voices/$LOCALE/geography/sudan.ogg" x="557" y="306" position="0">
+	<tooltip>Sudan</tooltip>
+</Shape>
+
+<Shape name="AC" pixmapfile="geography/africa/togo.png" sound="voices/$LOCALE/geography/togo.ogg" x="258" y="348" position="0">
+	<tooltip>Togo</tooltip>
+</Shape>
+
+<Shape name="AD" pixmapfile="geography/africa/tunisia.png" sound="voices/$LOCALE/geography/tunisia.ogg" x="367" y="92" position="0">
+	<tooltip>Tunisia</tooltip>
+</Shape>
+
+<Shape name="AE" pixmapfile="geography/africa/uganda.png" sound="voices/$LOCALE/geography/uganda.ogg" x="587" y="436" position="0">
+	<tooltip>Uganda</tooltip>
+</Shape>
+
+<Shape name="AF" pixmapfile="geography/africa/western_sahara.png" sound="voices/$LOCALE/geography/western_sahara.ogg" x="148" y="170" position="0">
+	<tooltip>Western Sahara</tooltip>
+</Shape>
+
+<Shape name="1" pixmapfile="geography/africa/north_africa.png" type="SHAPE_BACKGROUND" x="420" y="260" position="0"/>
+</ShapeGame>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ShapeGame>
+  <Title y="50" x="150" justification="GTK_JUSTIFY_CENTER">
+    <name>Cars</name>
+  </Title>
+  <Shape zoomy="1" zoomx="1" y="276" x="233"  position="0" pixmapfile="chronos/renault1899.png" name="G"/>
+  <Title y="399" x="233" justification="GTK_JUSTIFY_CENTER">
+    <name>1899 Renault "voiturette"</name>
+  </Title>
+  <Shape zoomy="1" zoomx="1" y="114" x="500"  position="0" pixmapfile="chronos/lancia1923.png" name="E"/>
+  <Title y="190" x="490" justification="GTK_JUSTIFY_CENTER">
+    <name>1923 Lancia Lambda</name>
+  </Title>
+  <Shape zoomy="1" zoomx="1" y="380" x="600"  position="0" pixmapfile="chronos/1955ds19.png" name="C"/>
+  <Title y="490" x="580" justification="GTK_JUSTIFY_CENTER">
+    <name>1955 Citroën DS 19</name>
+  </Title>
+</ShapeGame>

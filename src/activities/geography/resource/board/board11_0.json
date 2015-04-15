@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ShapeGame>
+    <Title x="700" y="50" justification="GTK_JUSTIFY_RIGHT">
+         <name>Oceania</name>
+    </Title>
+<Shape name="H" pixmapfile="geography/oceania/hawaii.png" sound="voices/$LOCALE/geography/oceania/hawaii.ogg" x="536" y="97" position="0">
+	<tooltip>Hawaii</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/us_minor.png" sound="voices/$LOCALE/geography/oceania/us_minor.ogg" x="472" y="144" position="0">
+	<tooltip>United States Minor Outlying Islands</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/australia.png" sound="voices/$LOCALE/geography/oceania/australia.ogg" x="261" y="389" position="0">
+	<tooltip>Australia</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/american_samoa.png" sound="voices/$LOCALE/geography/oceania/american_samoa.ogg" x="499" y="287" position="0">
+	<tooltip>American Samoa</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/cook_islands.png" sound="voices/$LOCALE/geography/oceania/cook_islands.ogg" x="550" y="306" position="0">
+	<tooltip>Cook Islands</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/new_zealand.png" sound="voices/$LOCALE/geography/oceania/new_zealand.ogg" x="444" y="378" position="0">
+	<tooltip>New Zealand</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/solomon_islands.png" sound="voices/$LOCALE/geography/oceania/solomon_islands.ogg" x="362" y="268" position="0">
+	<tooltip>Solomon Islands</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/fiji.png" sound="voices/$LOCALE/geography/oceania/fiji.ogg" x="442" y="308" position="0">
+	<tooltip>Fiji</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/kiribati.png" sound="voices/$LOCALE/geography/oceania/kiribati.ogg" x="508" y="239" position="0">
+	<tooltip>Kiribati</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/marshall_islands.png" sound="voices/$LOCALE/geography/oceania/marshall_islands.ogg" x="394" y="187" position="0">
+	<tooltip>Marshall Islands</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/new_caledonia.png" sound="voices/$LOCALE/geography/oceania/new_caledonia.ogg" x="370" y="329" position="0">
+	<tooltip>New Caledonia</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/tonga.png" sound="voices/$LOCALE/geography/oceania/tonga.ogg" x="477" y="319" position="0">
+	<tooltip>Tonga</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/tuvalu.png" sound="voices/$LOCALE/geography/oceania/tuvalu.ogg" x="444" y="257" position="0">
+	<tooltip>Tuvalu</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/vanuatu.png" sound="voices/$LOCALE/geography/oceania/vanuatu.ogg" x="392" y="306" position="0">
+	<tooltip>Vanuatu</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/micronesia.png" sound="voices/$LOCALE/geography/oceania/micronesia.ogg" x="298" y="177" position="0">
+	<tooltip>Micronesia</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/northern_mariana_islands.png" sound="voices/$LOCALE/geography/oceania/northern_mariana_islands.ogg" x="270" y="126" position="0">
+	<tooltip>Northern Mariana Islands</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/palau.png" sound="voices/$LOCALE/geography/oceania/palau.ogg" x="203" y="190" position="0">
+	<tooltip>Palau</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/indonesia.png" sound="voices/$LOCALE/geography/oceania/indonesia.ogg" x="172" y="243" position="0">
+	<tooltip>Indonesia</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/east_timor.png" sound="voices/$LOCALE/geography/oceania/east_timor.ogg" x="174" y="273" position="0">
+	<tooltip>East Timor</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/papua_new_guinea.png" sound="voices/$LOCALE/geography/oceania/papua_new_guinea.ogg" x="286" y="253" position="0">
+	<tooltip>Papua New Guinea</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/french_polynesia.png" sound="voices/$LOCALE/geography/oceania/french_polynesia.ogg" x="630" y="326" position="0">
+	<tooltip>French Polynesia</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/oceania/pitcairn_islands.png" sound="voices/$LOCALE/geography/oceania/pitcairn_islands.ogg" x="686" y="376" position="0">
+	<tooltip>Pitcairn Islands</tooltip>
+</Shape>
+<Shape name="1" pixmapfile="geography/oceania/bg_oceania.png" type="SHAPE_BACKGROUND" x="400" y="265" position="0"/>
+</ShapeGame>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ShapeGame>
+  <Title x="150" y="50" justification="GTK_JUSTIFY_CENTER">
+    <name>Aviation</name>
+  </Title>
+  <Shape zoomy="1" zoomx="1" y="276" x="233"  position="0" pixmapfile="chronos/Eole.svg" name="G"/>
+  <Title y="379" x="233" justification="GTK_JUSTIFY_CENTER">
+    <name>1880 Clement Ader's Eole</name>
+  </Title>
+  <Shape zoomy="1" zoomx="1" y="120" x="550"  position="0" pixmapfile="chronos/wright_flyer.png" name="E"/>
+  <Title y="215" x="534" justification="GTK_JUSTIFY_CENTER">
+  <name>1903 The Wright brothers' Flyer III</name>
+  </Title>
+  <Shape zoomy="1" zoomx="1" y="380" x="570"  position="0" pixmapfile="chronos/bleriot.png" name="C"/>
+  <Title y="460" x="585" justification="GTK_JUSTIFY_CENTER">
+  <name xml:space="preserve">1909 Louis Bleriot crosses
+the English Channel</name>
+  </Title>
+</ShapeGame>
+

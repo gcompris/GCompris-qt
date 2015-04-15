@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ShapeGame>
+    <Title x="700" y="50" justification="GTK_JUSTIFY_RIGHT">
+         <name>Central America</name>
+    </Title>
+<Shape name="H" pixmapfile="geography/centralamerica/bahamas.png" sound="voices/$LOCALE/geography/bahamas.ogg" x="490" y="147" position="0">
+	<tooltip>Bahamas</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/centralamerica/belize.png" sound="voices/$LOCALE/geography/belize.ogg" x="232" y="285" position="0">
+	<tooltip>Belize</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/centralamerica/costa_rica.png" sound="voices/$LOCALE/geography/costa_rica.ogg" x="297" y="437" position="0">
+	<tooltip>Costa Rica</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/centralamerica/cuba.png" sound="voices/$LOCALE/geography/cuba.ogg" x="405" y="197" position="0">
+	<tooltip>Cuba</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/centralamerica/dominican_republic.png" sound="voices/$LOCALE/geography/dominican_republic.ogg" x="563" y="253" position="0">
+	<tooltip>Dominican Republic</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/centralamerica/el_salvador.png" sound="voices/$LOCALE/geography/salvador.ogg" x="220" y="355" position="0">
+	<tooltip>El Salvador</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/centralamerica/guatemala.png" sound="voices/$LOCALE/geography/guatemala.ogg" x="198" y="313" position="0">
+	<tooltip>Guatemala</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/centralamerica/haiti.png" sound="voices/$LOCALE/geography/haiti.ogg" x="513" y="247" position="0">
+	<tooltip>Haiti</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/centralamerica/honduras.png" sound="voices/$LOCALE/geography/honduras.ogg" x="267" y="341" position="0">
+	<tooltip>Honduras</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/centralamerica/jamaica.png" sound="voices/$LOCALE/geography/jamaica.ogg" x="436" y="266" position="0">
+	<tooltip>Jamaica</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/centralamerica/mexico.png" sound="voices/$LOCALE/geography/mexico.ogg" x="163" y="186" position="0">
+	<tooltip>Mexico</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/centralamerica/nicaragua.png" sound="voices/$LOCALE/geography/nicaragua.ogg" x="281" y="374" position="0">
+	<tooltip>Nicaragua</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/centralamerica/panama.png" sound="voices/$LOCALE/geography/panama.ogg" x="367" y="463" position="0">
+	<tooltip>Panama</tooltip>
+</Shape>
+<Shape name="H" pixmapfile="geography/centralamerica/puerto_rico.png" sound="voices/$LOCALE/geography/puerto_rico.ogg" x="629" y="264" position="0">
+	<tooltip>Puerto Rico</tooltip>
+</Shape>
+<Shape name="1" pixmapfile="geography/centralamerica/bg_central_america.png" type="SHAPE_BACKGROUND" x="400" y="265" position="0"/>
+</ShapeGame>
