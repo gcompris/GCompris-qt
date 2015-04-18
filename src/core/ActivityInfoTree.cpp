@@ -165,6 +165,18 @@ void ActivityInfoTree::filterLockedActivities()
     emit menuTreeChanged();
 }
 
+void ActivityInfoTree::filterEnabledActivities()
+{
+    for(auto activity: m_menuTree) {
+        qDebug() << "    menuTree->filterEnabledActivities()" << activity->name() << " " << activity->enabled();
+        if(!activity->enabled()) {
+            qDebug() << "    menuTree->filterEnabledActivities()" << activity->name() << " " << activity->enabled();
+            m_menuTree.removeOne(activity);
+        }
+    }
+    emit menuTreeChanged();
+}
+
 void ActivityInfoTree::exportAsSQL()
 {
     QTextStream cout(stdout);
@@ -249,6 +261,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 
 	menuTree->filterByTag("favorite");
     menuTree->filterLockedActivities();
+    menuTree->filterEnabledActivities();
     return menuTree;
 }
 

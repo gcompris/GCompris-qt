@@ -51,6 +51,7 @@ public:
 protected slots:
     Q_INVOKABLE void filterByTag(const QString &tag);
     Q_INVOKABLE void filterLockedActivities();
+    Q_INVOKABLE void filterEnabledActivities();
 
 signals:
 	void menuTreeChanged();

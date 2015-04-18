@@ -31,4 +31,5 @@ ActivityInfo {
   manual: qsTr("Click on the word corresponding to the printed image.")
   credit: ""
   section: "reading"
+  enabled: DownloadManager.isDataRegistered("words") || ApplicationInfo.isDownloadAllowed
 }

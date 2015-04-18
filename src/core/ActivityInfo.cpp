@@ -30,7 +30,8 @@
 ActivityInfo::ActivityInfo(QObject *parent):
 	QObject(parent),
     m_demo(true),
-    m_favorite(false)
+    m_favorite(false),
+    m_enabled(true)
 {
 }
 
@@ -167,6 +168,16 @@ void ActivityInfo::setFavorite(const bool favorite)
   m_favorite = favorite;
   ApplicationSettings::getInstance()->setFavorite(m_name, m_favorite);
   emit favoriteChanged();
+}
+
+bool ActivityInfo::enabled() const
+{
+  return m_enabled;
+}
+void ActivityInfo::setEnabled(const bool enabled)
+{
+  m_enabled = enabled;
+  emit enabledChanged();
 }
 
 QStringList ActivityInfo::getSectionPath()

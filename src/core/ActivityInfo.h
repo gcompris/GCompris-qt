@@ -111,6 +111,10 @@ class ActivityInfo : public QObject
 
 	Q_PROPERTY(bool favorite READ favorite WRITE setFavorite NOTIFY favoriteChanged)
 
+    /**
+     * This activity is enabled.
+     */
+    Q_PROPERTY(bool enabled READ enabled WRITE setEnabled NOTIFY enabledChanged)
 
 public:
 	/// @cond INTERNAL_DOCS
@@ -140,8 +144,10 @@ public:
 	void setManual(const QString &);
 	QString credit() const;
 	void setCredit(const QString &);
-	bool favorite() const;
-	void setFavorite(const bool);
+    bool favorite() const;
+    void setFavorite(const bool);
+    bool enabled() const;
+    void setEnabled(const bool);
 
 	QStringList getSectionPath();
 
@@ -159,7 +165,8 @@ signals:
 	void prerequisiteChanged();
 	void manualChanged();
 	void creditChanged();
-	void favoriteChanged();
+    void favoriteChanged();
+    void enabledChanged();
 
 	/// @endcond
 private:
@@ -176,7 +183,8 @@ private:
 	QString m_prerequisite;
 	QString m_manual;
 	QString m_credit;
-	bool m_favorite;
+    bool m_favorite;
+    bool m_enabled;
 };
 
 #endif // ACTIVITYINFO_H
