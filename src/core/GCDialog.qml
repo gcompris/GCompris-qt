@@ -48,7 +48,7 @@ Item {
      * type:string
      * Heading instruction text.
      */
-    property alias message: instructionTxt.text
+    property alias message: instructionTxt.textIn
 
     /**
      * type:string
@@ -159,8 +159,16 @@ Item {
 //                    horizontalAlignment: Text.AlignHCenter
                     width: instruction.width
                     wrapMode: TextEdit.WordWrap
+                    textFormat: TextEdit.RichText
                     z: 2
-                    onLinkActivated: Qt.openUrlExternally(link)
+                    text: style + "<body>" + textIn + "</body>"
+                    Component.onCompleted: ApplicationInfo.isDownloadAllowed ?
+                                               linkActivated.connect(Qt.openUrlExternally) : null
+
+                    property string textIn
+                    property string style: ApplicationInfo.isDownloadAllowed ?
+                                               "<HEAD><STYLE type='text/css'>A {color: blue;}</STYLE></HEAD>" :
+                                               "<HEAD><STYLE type='text/css'>A {color: black;}</STYLE></HEAD>"
                 }
             }
         }

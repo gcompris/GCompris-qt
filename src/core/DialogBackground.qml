@@ -108,13 +108,18 @@ Rectangle {
 
                     GCText {
                         id: textContent
-                        text: content
+                        text: style + "<body>" + content + "</body>"
                         width: flick.width
                         height: flick.height
                         fontSize: regularSize
                         wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.RichText
-                        onLinkActivated: Qt.openUrlExternally(link)
+                        Component.onCompleted: ApplicationInfo.isDownloadAllowed ?
+                                                   linkActivated.connect(Qt.openUrlExternally) : null
+
+                        property string style: ApplicationInfo.isDownloadAllowed ?
+                                                   "<HEAD><STYLE type='text/css'>A {color: blue;}</STYLE></HEAD>" :
+                                                   "<HEAD><STYLE type='text/css'>A {color: black;}</STYLE></HEAD>"
                     }
                 }
             }
