@@ -320,12 +320,14 @@ ActivityBase {
             sourceComponent: GCDialog {
                 parent: activity.main
                 message: qsTr("The images for this activity are not yet installed.")
-                button1Text: qsTr("Download the images")
+                button1Text: ApplicationInfo.isApplicationInfo ? qsTr("Download the images") : qsTr("OK")
                 onClose: background.downloadWordsNeeded = false
                 onButton1Hit: {
-                    DownloadManager.resourceRegistered.connect(handleResourceRegistered);
-                    DownloadManager.downloadResource(wordsResource)
-                    var downloadDialog = Core.showDownloadDialog(activity, {});
+                    if(ApplicationInfo.isApplicationInfo) {
+                        DownloadManager.resourceRegistered.connect(handleResourceRegistered);
+                        DownloadManager.downloadResource(wordsResource)
+                        Core.showDownloadDialog(activity, {});
+                    }
                 }
             }
             anchors.fill: parent
