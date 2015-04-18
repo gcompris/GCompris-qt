@@ -80,22 +80,22 @@ function start(items_, uppercaseOnly_,  _mode) {
     // If wordlist is empty, we try to load from short locale and if not present again, we switch to default one
     var localeUnderscoreIndex = locale.indexOf('_')
     // probably exist a better way to see if the list is empty
-    if(items.wordlist.maxLevel == 0 && localeUnderscoreIndex > 0) {
-        var localeShort = locale.substring(0, localeUnderscoreIndex)
+    if(items.wordlist.maxLevel == 0) {
+        var localeShort;
+        // We will first look again for locale xx (without _XX if exist)
+        if(localeUnderscoreIndex > 0) {
+            localeShort = locale.substring(0, localeUnderscoreIndex)
+        }
+        else {
+            localeShort = locale;
+        }
+        // If not found, we will use the default file
         items.wordlist.useDefault = true
         items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
         items.ourActivity.dataSetUrl + "default-"+localeShort+".json"));
+        // We remove the using of default file for next time we enter this function
         items.wordlist.useDefault = false
     }
-    // Last chance, we load the english default
-    if(items.wordlist.maxLevel == 0) {
-        items.wordlist.useDefault = true
-        items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
-            items.ourActivity.dataSetUrl + "default-en.json"));
-        items.wordlist.useDefault = false
-    }
-
-
     maxLevel = items.wordlist.maxLevel;
     droppedWords = new Array();
     initLevel();
