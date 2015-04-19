@@ -168,9 +168,7 @@ void ActivityInfoTree::filterLockedActivities()
 void ActivityInfoTree::filterEnabledActivities()
 {
     for(auto activity: m_menuTree) {
-        qDebug() << "    menuTree->filterEnabledActivities()" << activity->name() << " " << activity->enabled();
         if(!activity->enabled()) {
-            qDebug() << "    menuTree->filterEnabledActivities()" << activity->name() << " " << activity->enabled();
             m_menuTree.removeOne(activity);
         }
     }
