@@ -80,7 +80,7 @@ ActivityBase {
                 width: parent.width + 10
                 color: "#55333333"
                 border.color: "black"
-                border.width: 2
+                border.width: 0
                 radius: 5
 
                 Row {
@@ -108,7 +108,7 @@ ActivityBase {
                 width: parent.width + 10
                 color: "#55333333"
                 border.color: "black"
-                border.width: 2
+                border.width: 0
                 radius: 5
                 Row {
                     anchors.topMargin: 4
@@ -142,7 +142,7 @@ ActivityBase {
                 width: parent.width + 10
                 color: "#55333333"
                 border.color: "black"
-                border.width: 2
+                border.width: 0
                 radius: 5
                 Row {
                     anchors.topMargin: 4
