@@ -56,7 +56,7 @@ ActivityBase {
         anchors.fill: parent
         signal start
         signal stop
-        source: Activity.url + "resource/background.svg"
+        source: Activity.url + "../algorithm/resource/desert_scene.svg"
         sourceSize.width: parent.width
 
         Component.onCompleted: {
