@@ -107,7 +107,7 @@ ActivityBase {
                         width: items.cellSize
                         height: items.cellSize
                         border.color: "#FFFFFFFF"
-                        border.width: 1 * ApplicationInfo.ratio
+                        border.width: 0
                         Piece {
                             anchors.fill: parent
                             state: stateTemp
