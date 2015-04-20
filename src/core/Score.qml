@@ -68,11 +68,7 @@ Rectangle {
      */
     property string message
 
-    gradient: Gradient {
-        GradientStop { position: 0.0; color: "#AAFFFFFF" }
-        GradientStop { position: 0.9; color: "#AAFFFFFF" }
-        GradientStop { position: 1.0; color: "#AACECECE" }
-    }
+    color: "#AAFFFFFF"
     width: subLevelText.width * 2
     height: subLevelText.height * 1.4
     radius: 10
@@ -81,7 +77,7 @@ Rectangle {
     anchors.margins: 30
 
     border.color: "black"
-    border.width: 2
+    border.width: 0
 
     z: 1000
 

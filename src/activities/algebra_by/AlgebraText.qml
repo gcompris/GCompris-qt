@@ -39,11 +39,11 @@ Item {
     DropShadow {
         anchors.fill: text
         cached: true
-        horizontalOffset: 3
-        verticalOffset: 3
-        radius: 8.0
+        horizontalOffset: 1
+        verticalOffset: 1
+        radius: 3.0
         samples: 16
-        color: "#80000000"
+        color: "#422a2a2a"
         source: text
     }
 }
