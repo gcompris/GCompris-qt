@@ -22,8 +22,8 @@
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title /></cc:Work></rdf:RDF></metadata><defs
      id="defs604" /><sodipodi:namedview
      id="base"
-     inkscape:zoom="0.37724655"
-     inkscape:cx="227.39393"
+     inkscape:zoom="0.7544931"
+     inkscape:cx="-252.3984"
      inkscape:cy="231.57206"
      inkscape:window-width="1880"
      inkscape:window-height="1060"
@@ -203,11 +203,11 @@
      sodipodi:nodetypes="csccs" /><path
      id="path748"
      d="m 110.88759,233.3441 c 0,6.5584 -5.3166,11.875 -11.875,11.875 -6.55834,0 -11.87489,-5.3166 -11.87489,-11.875 0,-6.5584 5.31655,-11.875 11.87489,-11.875 6.5584,0 11.875,5.3166 11.875,11.875 z m 47.5,-1e-4 c 0,32.7918 -26.5831,59.3749 -59.375,59.3749 -32.79189,0 -59.37499,-26.5831 -59.37499,-59.3749 0,-32.7919 26.5831,-59.3751 59.37499,-59.3751 32.7919,0 59.375,26.5832 59.375,59.3751 z"
-     style="font-size:12px;fill:#fbffff;fill-rule:evenodd;stroke-width:1;fill-opacity:0.89767444"
+     style="font-size:12px;fill:#ececec;fill-rule:evenodd;stroke-width:1;fill-opacity:0.89803922"
      inkscape:connector-curvature="0" /><ellipse
      transform="matrix(0.99978385,0.02079077,-0.02079077,0.99978385,0,0)"
      id="path625"
-     style="fill:#fbffff;fill-opacity:0.89767444;fill-rule:evenodd;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     style="fill:#ececec;fill-opacity:0.89803922;fill-rule:evenodd;stroke:none;stroke-width:1pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
      cx="400.60117"
      cy="52.908932"
      rx="275.82077"
