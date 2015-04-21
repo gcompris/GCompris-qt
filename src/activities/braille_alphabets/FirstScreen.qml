@@ -39,7 +39,7 @@ Image {
         horizontalAlignment: Text.AlignHCenter
         font.weight: Font.DemiBold
         anchors.centerIn: parent.Center
-        color: "white"
+        color: "#2a2a2a"
         width: parent.width
         wrapMode: Text.WordWrap
     }
@@ -77,7 +77,7 @@ Image {
             left: introChar.right
             leftMargin: 30 * ApplicationInfo.ratio
         }
-        color: "white"
+        color: "#2a2a2a"
         width: parent.width / 2
         wrapMode: Text.WordWrap
     }
@@ -85,10 +85,10 @@ Image {
     GCText {
         id: bottom_text
         text: qsTr("When you are ready, click on me and try reproducing Braille characters.")
-        fontSize: smallSize
-        font.weight: Font.DemiBold
+        fontSize: regularSize
+        font.weight: Font.Bold
         width: parent.width * 0.3
-        color: "white"
+        color: "#2a2a2a"
         horizontalAlignment: Text.AlignJustify
         wrapMode:  Text.WordWrap
         anchors {

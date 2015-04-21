@@ -7,49 +7,16 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="252.93201"
    height="297.70303"
    id="svg3160"
    version="1.1"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    sodipodi:docname="char_background.svg">
   <defs
-     id="defs3162">
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient642"
-       id="linearGradient1395"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.31356592,0,0,0.25952649,84.568003,242.76088)"
-       x1="-0.75621742"
-       y1="395.16165"
-       x2="807.38812"
-       y2="395.16165" />
-    <linearGradient
-       id="linearGradient642">
-      <stop
-         style="stop-color:#8d9782;stop-opacity:0.67073172;"
-         offset="0"
-         id="stop643" />
-      <stop
-         style="stop-color:#d4dede;stop-opacity:0.67073172;"
-         offset="1"
-         id="stop644" />
-    </linearGradient>
-    <linearGradient
-       y2="395.16165"
-       x2="807.38812"
-       y1="395.16165"
-       x1="-0.75621742"
-       gradientTransform="matrix(0.31356592,0,0,0.36944116,-200.75172,387.80177)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient3158"
-       xlink:href="#linearGradient642"
-       inkscape:collect="always" />
-  </defs>
+     id="defs3162" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -57,8 +24,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="250.84031"
+     inkscape:zoom="1.979899"
+     inkscape:cx="-23.416106"
      inkscape:cy="151.04205"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -68,9 +35,9 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1366"
-     inkscape:window-height="748"
-     inkscape:window-x="-2"
+     inkscape:window-width="1880"
+     inkscape:window-height="1060"
+     inkscape:window-x="-3"
      inkscape:window-y="-3"
      inkscape:window-maximized="1" />
   <metadata
@@ -97,20 +64,20 @@
        height="297.70303"
        width="252.93201"
        id="rect1391"
-       style="fill:url(#linearGradient3158);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.87500000000000000;marker:none;visibility:visible;display:inline;overflow:visible;opacity:1"
+       style="fill:#a5cbd9;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.875;marker:none;visibility:visible;display:inline;overflow:visible;opacity:1"
        rx="12.316764"
        inkscape:export-filename="/home/bruno/Projets/gcompris/gcompris/boards/images/mosaic_bg.png"
        inkscape:export-xdpi="71.968178"
        inkscape:export-ydpi="71.968178" />
     <rect
-       rx="12.316764"
+       rx="12.114932"
        ry="19.583115"
        y="394.19302"
-       x="-197.09198"
+       x="-195.07167"
        height="281.63184"
-       width="246.57784"
+       width="242.53723"
        id="rect1393"
-       style="fill:#e8e7e2;fill-opacity:0.75619835;fill-rule:nonzero;stroke:none;stroke-width:1.87500000000000000;marker:none;visibility:visible;display:inline;overflow:visible;opacity:1"
+       style="display:inline;overflow:visible;visibility:visible;opacity:1;fill:#d3e6ed;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.875;marker:none"
        inkscape:export-filename="/home/bruno/Projets/gcompris/gcompris/boards/images/mosaic_bg.png"
        inkscape:export-xdpi="71.968178"
        inkscape:export-ydpi="71.968178" />

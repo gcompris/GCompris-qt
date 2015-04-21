@@ -113,8 +113,8 @@ Item {
             Rectangle {
                 id: incircle1
                 border.width: 2 * ApplicationInfo.ratio
-                color: on ? "red" : "white"
-                border.color: "black"
+                color: on ? "#e4421c" : "#f0f0f0"
+                border.color: "#2a2a2a"
                 width: dotWidth
                 height: dotHeight
                 radius: width * 0.5
