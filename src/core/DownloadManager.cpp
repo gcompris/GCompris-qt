@@ -39,6 +39,12 @@ DownloadManager* DownloadManager::_instance = 0;
 DownloadManager::DownloadManager()
   : accessManager(this), serverUrl(ApplicationSettings::getInstance()->downloadServerUrl())
 {
+    // Cleanup of previous data directory no more used
+    QDir previousDataLocation = QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/data";
+    if(previousDataLocation.exists()) {
+        qDebug() << "Remove previous directory data: " << previousDataLocation;
+        previousDataLocation.removeRecursively();
+    }
 }
 
 DownloadManager::~DownloadManager()
