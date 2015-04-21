@@ -1,8 +1,26 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=GCompris Educational Game
+Name[ca]=Joc educatiu GCompris
+Name[nl]=Educatief spel GCompris
+Name[pt]=Jogo Educativo GCompris
+Name[sv]=GCompris pedagogiskt spel
+Name[uk]=Освітня гра GCompris
+Name[x-test]=xxGCompris Educational Gamexx
 GenericName=Educational game
+GenericName[ca]=Joc educatiu
+GenericName[nl]=Educatief spel
+GenericName[pt]=Jogo educativo
+GenericName[sv]=Pedagogiskt spel
+GenericName[uk]=Освітня гра
+GenericName[x-test]=xxEducational gamexx
 Comment=Multi-Activity Educational game for children 2 to 10
+Comment[ca]=Joc educatiu amb múltiples activitats per a nens dels 2 a 10 anys
+Comment[nl]=Educatief spel met meerdere activiteiten voor kinderen van 2 tot 10
+Comment[pt]=Jogo educativo multi-actividades para crianças dos 2 aos 10 anos
+Comment[sv]=Pedagogiskt multiaktivitetsspel för barn från 2 till 10 år
+Comment[uk]=Набір освітніх ігор для дітей від 2 до 10 років
+Comment[x-test]=xxMulti-Activity Educational game for children 2 to 10xx
 Exec=gcompris-qt
 Icon=gcompris-qt
 Terminal=false
