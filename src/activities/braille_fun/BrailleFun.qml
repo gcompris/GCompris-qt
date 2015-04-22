@@ -90,9 +90,7 @@ ActivityBase {
                 anchors.verticalCenter: planeText.verticalCenter
                 fontSize: hugeSize
                 font.weight: Font.DemiBold
-                style: Text.Outline
-                styleColor: "white"
-                color: "black"
+                color: "#2a2a2a"
                 text: items.question
             }
 
@@ -123,8 +121,9 @@ ActivityBase {
             }
             width: charWidth * cardRepeater.model
             height: charWidth * 1.5
-            color: "#C0CCCCCC"
-            border.color: "#80666666"
+            color: "#AAFFFFFF"
+            border.width: 0
+            radius: 5
 
             property int charWidth: Math.min(120 * ApplicationInfo.ratio,
                             parent.width * 0.3)
@@ -161,8 +160,7 @@ ActivityBase {
                             width:  charBg.charWidth * 0.6
                             height: ins.height
                             anchors.horizontalCenter: inner.horizontalCenter
-                            border.width: 3
-                            border.color: "black"
+                            border.width: 0
                             color: ins.found ? '#FFa3f9a3' : "#ffef6949"
 
                             BrailleChar {
@@ -191,7 +189,7 @@ ActivityBase {
                         GCText {
                             text: brailleChar
                             font.weight: Font.DemiBold
-                            color: "black"
+                            color: "#2a2a2a"
                             fontSize: hugeSize
                             anchors {
                                 top: rect1.bottom
