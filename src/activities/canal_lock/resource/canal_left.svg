@@ -13,7 +13,7 @@
    height="590.30927"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    version="1.0"
    sodipodi:docname="canal_left.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
@@ -69,16 +69,16 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8284272"
-     inkscape:cx="-94.478924"
+     inkscape:cx="-222.46525"
      inkscape:cy="172.90504"
      inkscape:document-units="px"
      inkscape:current-layer="BACKGROUND"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="713"
-     inkscape:window-x="-2"
+     inkscape:window-width="1880"
+     inkscape:window-height="1060"
+     inkscape:window-x="-3"
      inkscape:window-y="-3"
      inkscape:window-maximized="1"
      fit-margin-top="0"
@@ -105,7 +105,7 @@
      style="display:inline"
      transform="translate(77.828423,58.93059)">
     <path
-       style="fill:#0000ff;fill-opacity:1;stroke:#000000;display:inline;stroke-width:1.02000000000000002;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:#4f76d6;fill-opacity:1;stroke:none;display:inline;stroke-width:1.02;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m -79.873753,298.26224 18.046723,-0.61619 -0.01046,102.02075 -18.101376,0 z"
        id="rect5246"
        inkscape:connector-curvature="0"
@@ -122,7 +122,7 @@
          id="g8511" />
     </g>
     <path
-       style="fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:1.02;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:1.02;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
        d="m -62.153306,293.60694 -17.488109,0 0,13.78447 17.488109,0 z"
        id="rect5241"
        inkscape:connector-curvature="0"
