@@ -73,7 +73,7 @@ Image {
 
     Image {
         id: intensityBrush
-        source: Activity.url + "brush.svg"
+        source: Activity.url + (activity.modeRGB ? "light.svg" : "brush.svg")
         sourceSize.height: parent.sourceSize.height * 0.25 + currentStep / maxSteps * 15
         z: 2
         anchors {
