@@ -7,6 +7,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg2"
@@ -55,36 +56,6 @@
          style="stop-color:#ffffff;stop-opacity:0"
          offset="1" />
     </radialGradient>
-    <linearGradient
-       id="linearGradient3169"
-       y2="121.75"
-       gradientUnits="userSpaceOnUse"
-       x2="134.37"
-       gradientTransform="matrix(0.87453775,0,0,0.86592856,14.269796,-29.128422)"
-       y1="34.521999"
-       x1="110.65"
-       inkscape:collect="always">
-      <stop
-         id="stop3163"
-         style="stop-color:#ffffff"
-         offset="0" />
-      <stop
-         id="stop3165"
-         style="stop-color:#ffffff;stop-opacity:0"
-         offset="1" />
-    </linearGradient>
-    <filter
-       id="filter3182"
-       height="1.5297"
-       width="1.2804"
-       y="-0.26486999"
-       x="-0.14018001"
-       inkscape:collect="always">
-      <feGaussianBlur
-         id="feGaussianBlur3184"
-         stdDeviation="13.951612"
-         inkscape:collect="always" />
-    </filter>
     <filter
        id="filter3202"
        height="1.5516"
@@ -97,30 +68,50 @@
          stdDeviation="16.425908"
          inkscape:collect="always" />
     </filter>
+    <linearGradient
+       id="linearGradient4166">
+      <stop
+         id="stop4168"
+         offset="0.0000000"
+         style="stop-color:#0e9adb;stop-opacity:1" />
+      <stop
+         id="stop4170"
+         offset="1.0000000"
+         style="stop-color:#075376;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4166"
+       id="linearGradient4183"
+       x1="74.663681"
+       y1="17.278248"
+       x2="74.663681"
+       y2="128.68976"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
-     inkscape:zoom="1.7771951"
+     inkscape:zoom="1.2566667"
      height="300px"
      borderopacity="1.0"
      inkscape:current-layer="layer1"
-     inkscape:cx="-2.5902944"
-     inkscape:window-y="-8"
+     inkscape:cx="-104.43618"
+     inkscape:window-y="-3"
      width="300px"
      inkscape:guide-bbox="true"
      showguides="true"
      bordercolor="#666666"
-     inkscape:window-x="-8"
+     inkscape:window-x="-3"
      guidetolerance="10"
      objecttolerance="10"
-     inkscape:window-width="1366"
+     inkscape:window-width="1880"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      pagecolor="#ffffff"
      gridtolerance="10000"
      inkscape:cy="81.934857"
      inkscape:document-units="px"
-     inkscape:window-height="705"
+     inkscape:window-height="1060"
      showgrid="false"
      inkscape:window-maximized="1" />
   <g
@@ -128,53 +119,19 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      transform="translate(0,-150)">
-    <g
-       id="g14069"
-       transform="matrix(0.96982014,0,0,0.96977651,2.0893256,7.1141853)">
-      <ellipse
-         ry="71.367531"
-         rx="73.541435"
-         cy="223.75761"
-         cx="75.850044"
-         style="fill:#0f04b4"
-         id="path2160" />
-      <ellipse
-         ry="71.367538"
-         rx="73.541435"
-         cy="223.75761"
-         cx="75.850044"
-         style="opacity:0.03222201;fill:#2400ff;stroke:#060000;stroke-width:2.73487091;stroke-linecap:round;stroke-linejoin:round"
-         id="path3189" />
-      <ellipse
-         ry="49.336868"
-         rx="53.315651"
-         cy="264.19098"
-         cx="204.50928"
-         transform="matrix(0.73855708,-0.22561309,0.18368169,0.31331342,-123.71939,187.12357)"
-         style="fill:url(#radialGradient3157);stroke:url(#radialGradient3141);stroke-width:4.88803959;stroke-linecap:round;stroke-linejoin:round;filter:url(#filter3202)"
-         id="path3133" />
-      <path
-         transform="matrix(0.55672929,0,0,0.56228966,1.9459073,171.39149)"
-         inkscape:connector-curvature="0"
-         d="M 118.51,44.134 C 79.259,54.346 40.118,99.086 34.914,115.44 8.298,189.57 304.234,111.16 215.674,58.741 191.494,39.823 148.324,36.81 118.514,44.134 Z"
-         style="fill:url(#linearGradient3169);fill-rule:evenodd;filter:url(#filter3182)"
-         sodipodi:nodetypes="cccc"
-         id="path3159" />
-      <ellipse
-         ry="56.021626"
-         rx="55.910652"
-         cy="223.75761"
-         cx="75.850044"
-         id="path3361"
-         style="opacity:1;fill:#f9f9f9;fill-opacity:0.95294118;fill-rule:evenodd;stroke:#17b5ed;stroke-width:0.71682268;stroke-opacity:0" />
-      <ellipse
-         ry="62.985275"
-         rx="63.689289"
-         cy="223.75761"
-         cx="75.850044"
-         id="path14067"
-         style="opacity:0.903;fill:#d32222;fill-opacity:0.19215686;fill-rule:evenodd;stroke:#17b5ed;stroke-width:4.1668458;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39735101" />
-    </g>
+    <path
+       style="fill:#49bbf0;fill-opacity:1;stroke:url(#linearGradient4183);stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 75.650391 4.8984375 A 71.321968 69.210556 0 0 0 4.328125 74.109375 A 71.321968 69.210556 0 0 0 75.650391 143.32031 A 71.321968 69.210556 0 0 0 146.97266 74.109375 A 71.321968 69.210556 0 0 0 75.650391 4.8984375 z M 75.650391 32.640625 A 41.388706 41.46899 0 0 1 117.03906 74.109375 A 41.388706 41.46899 0 0 1 75.650391 115.57812 A 41.388706 41.46899 0 0 1 34.261719 74.109375 A 41.388706 41.46899 0 0 1 75.650391 32.640625 z "
+       transform="translate(0,150)"
+       id="path2160" />
+    <ellipse
+       id="path3133"
+       style="fill:url(#radialGradient3157);stroke:url(#radialGradient3141);stroke-width:4.88803959;stroke-linecap:round;stroke-linejoin:round;filter:url(#filter3202)"
+       transform="matrix(0.71626753,-0.21879428,0.1781382,0.30384399,-117.89623,188.58223)"
+       cx="204.50928"
+       cy="264.19098"
+       rx="53.315651"
+       ry="49.336868" />
   </g>
   <metadata
      id="metadata3357">

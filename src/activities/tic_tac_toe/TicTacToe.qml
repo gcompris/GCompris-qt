@@ -58,7 +58,7 @@ ActivityBase {
             property alias player1shrink: player1shrink
             property alias player1image: player1image
             property alias changeScalePlayer1: changeScalePlayer1
-            property alias rotateCat: rotateCat
+            property alias rotateKonqi: rotateKonqi
             
             property alias player2: player2
             property alias player2_score: player2_score.text
@@ -124,10 +124,7 @@ ActivityBase {
                             border.width: 5
                             radius: 10
                             state: "INITIAL"
-                            gradient: Gradient {
-                                GradientStop { position: 0.0; color: "lightsteelblue" }
-                                GradientStop { position: 1.0; color: "#7B68EE" }
-                            }
+                            color: "#c7ecfb"
                             Piece {
                                 anchors.fill: parent
                                 state: stateTemp
@@ -154,7 +151,7 @@ ActivityBase {
                                 hoverEnabled: !magnify.running && !items.gameDone && !player1turn.running && !player2turn.running
                                 width: parent.width
                                 height: parent.height
-                                onEntered: {border.color = "orange"}
+                                onEntered: {border.color = "#62db53"}
                                 onExited: {border.color = "transparent"} 
                                 onClicked: {Activity.handleCreate(parent)}
                             }
@@ -203,7 +200,7 @@ ActivityBase {
                 player2.state = "second"
                 rotateTux.stop()
                 player2image.rotation = 0
-                rotateCat.start()
+                rotateKonqi.start()
                 player2shrink.start()
             }
             onStopped: {Activity.shouldComputerPlay()}
@@ -228,7 +225,7 @@ ActivityBase {
             onStarted:{
                 player1.state = "second"
                 player2.state = "first"
-                rotateCat.stop()
+                rotateKonqi.stop()
                 player1image.rotation = 0
                 rotateTux.start()
                 player1shrink.start()
@@ -246,7 +243,7 @@ ActivityBase {
         }
         
         SequentialAnimation {
-            id: rotateCat
+            id: rotateKonqi
             loops: Animation.Infinite
             NumberAnimation {
                 target: player1image
@@ -314,7 +311,7 @@ ActivityBase {
                     id: player2_score
                     anchors.verticalCenter: parent.verticalCenter
                     x: parent.width*0.65
-                    color: "white"
+                    color: "#2a2a2a"
                     fontSize: largeSize
                 }
             }
@@ -328,7 +325,7 @@ ActivityBase {
                     }
                     PropertyChanges {
                         target: player2
-                        color: "green"
+                        color: "#49bbf0"
                     }
                 },
                 State {
@@ -350,7 +347,7 @@ ActivityBase {
                     }
                     PropertyChanges {
                         target: player2
-                        color: "#FFEF03"
+                        color: "#f7ec5d"
                     }
                 }
             ]
@@ -387,7 +384,7 @@ ActivityBase {
                     
                 Image {
                     id: player1image
-                    source: Activity.url + "CatCross.svg"
+                    source: Activity.url + "KonqiCross.svg"
                     sourceSize.height: parent.height*0.8
                     x: parent.width*0.06
                     anchors.verticalCenter: parent.verticalCenter
@@ -396,7 +393,7 @@ ActivityBase {
                 GCText {
                     id: player1_score
                     anchors.verticalCenter: parent.verticalCenter
-                    color: "white"
+                    color: "#2a2a2a"
                     x: parent.width*0.65
                     fontSize: largeSize
                 }
@@ -407,11 +404,11 @@ ActivityBase {
                     name: "first"
                     PropertyChanges {
                         target: player1image
-                        source: Activity.url + "CatCross.svg"
+                        source: Activity.url + "KonqiCross.svg"
                     }
                     PropertyChanges {
                         target: player1
-                        color: "red"
+                        color: "#f07c49"
                     }
                 },
                 State {
@@ -422,7 +419,7 @@ ActivityBase {
                     }
                     PropertyChanges {
                             target: player1image
-                            source: Activity.url + "CatCross.svg"
+                            source: Activity.url + "KonqiCross.svg"
                     }
                 },
                 State {
@@ -433,7 +430,7 @@ ActivityBase {
                     }
                     PropertyChanges {
                         target: player1
-                        color: "#FFEF03"
+                        color: "#f7ec5d"
                     }
                 }
             ]

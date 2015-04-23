@@ -111,7 +111,7 @@ function stopAnimations() {
     items.player2turn.stop()
     items.player1shrink.stop()
     items.player2shrink.stop()
-    items.rotateCat.stop()
+    items.rotateKonqi.stop()
     items.rotateTux.stop()
 }
 
@@ -122,7 +122,7 @@ function initiatePlayer1() {
     items.changeScalePlayer2.scale = 1.0
     items.player1.state = "first"
     items.player2.state = "second"
-    items.rotateCat.start()
+    items.rotateKonqi.start()
 }
 
 //Initial values at the start of game when its player 1 turn
@@ -446,9 +446,9 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
                 items.repeater.itemAt(currentPieceRow * items.columns + col).visible = true
                 items.repeater.itemAt(currentPieceRow * items.columns + col -1).visible = true
                 items.repeater.itemAt(currentPieceRow * items.columns + col -2).visible = true
-                items.repeater.itemAt(currentPieceRow * items.columns + col).border.color = "green"
-                items.repeater.itemAt(currentPieceRow * items.columns + col - 1).border.color = "green"
-                items.repeater.itemAt(currentPieceRow * items.columns + col - 2).border.color = "green"
+                items.repeater.itemAt(currentPieceRow * items.columns + col).border.color = "#62db53"
+                items.repeater.itemAt(currentPieceRow * items.columns + col - 1).border.color = "#62db53"
+                items.repeater.itemAt(currentPieceRow * items.columns + col - 2).border.color = "#62db53"
                 return true
             }
         } 
@@ -465,9 +465,9 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
                 items.repeater.itemAt(row * items.columns + currentPieceColumn).visible = true
                 items.repeater.itemAt((row - 1) * items.columns + currentPieceColumn).visible = true
                 items.repeater.itemAt((row -2) * items.columns + currentPieceColumn).visible = true
-                items.repeater.itemAt(row * items.columns + currentPieceColumn).border.color = "green"
-                items.repeater.itemAt((row -1) * items.columns + currentPieceColumn).border.color = "green"
-                items.repeater.itemAt((row -2) * items.columns + currentPieceColumn).border.color = "green"
+                items.repeater.itemAt(row * items.columns + currentPieceColumn).border.color = "#62db53"
+                items.repeater.itemAt((row -1) * items.columns + currentPieceColumn).border.color = "#62db53"
+                items.repeater.itemAt((row -2) * items.columns + currentPieceColumn).border.color = "#62db53"
                 return true
             }
         } 
@@ -481,9 +481,9 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
         items.repeater.itemAt(0).visible = true
         items.repeater.itemAt(4).visible = true
         items.repeater.itemAt(8).visible = true
-        items.repeater.itemAt(0).border.color = "green"
-        items.repeater.itemAt(4).border.color = "green"
-        items.repeater.itemAt(8).border.color = "green"
+        items.repeater.itemAt(0).border.color = "#62db53"
+        items.repeater.itemAt(4).border.color = "#62db53"
+        items.repeater.itemAt(8).border.color = "#62db53"
         return true
     }
 
@@ -492,9 +492,9 @@ function checkGameWon(currentPieceRow, currentPieceColumn) {
         items.repeater.itemAt(2).visible = true
         items.repeater.itemAt(4).visible = true
         items.repeater.itemAt(6).visible = true
-        items.repeater.itemAt(2).border.color = "green"
-        items.repeater.itemAt(4).border.color = "green"
-        items.repeater.itemAt(6).border.color = "green"
+        items.repeater.itemAt(2).border.color = "#62db53"
+        items.repeater.itemAt(4).border.color = "#62db53"
+        items.repeater.itemAt(6).border.color = "#62db53"
         return true
     }
     return false
@@ -542,7 +542,7 @@ function continueGame() {
             items.bonus.isWin = false
         }
         else if(items.counter == 9) {
-            items.rotateCat.stop()
+            items.rotateKonqi.stop()
             items.rotateTux.stop()
             items.player2image.rotation = 0
             items.player1image.rotation = 0
@@ -571,7 +571,7 @@ function continueGame() {
             }
         }
         else if(items.counter == 9) {
-            items.rotateCat.stop()
+            items.rotateKonqi.stop()
             items.rotateTux.stop()
             items.player2image.rotation = 0
             items.player1image.rotation = 0
