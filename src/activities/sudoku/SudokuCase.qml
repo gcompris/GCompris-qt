@@ -26,7 +26,7 @@ import GCompris 1.0
 Rectangle {
     id: mCase
     border.width: 2
-    border.color: "black"
+    border.color: "#2a2a2a"
 
     property string text
     property bool isInitial
