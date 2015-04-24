@@ -45,11 +45,9 @@ Image {
         anchors.bottom: parent.top
         anchors.bottomMargin: - parent.height / 1.5
         radius: height / 10
-        color: "white"
-        border.color: "black"
+        color: "#f0d578"
+        border.color: "#b98a1c"
         border.width: 3
-        opacity: 0.9
-
     }
 
     GCText {
@@ -67,18 +65,18 @@ Image {
         font.pixelSize: parent.width * 0.65
         font.bold: true
         style: Text.Outline
-        styleColor: "black"
+        styleColor: "#2a2a2a"
         color: "white"
     }
 
     DropShadow {
         anchors.fill: text
         cached: true
-        horizontalOffset: 3
-        verticalOffset: 3
-        radius: 8.0
+        horizontalOffset: 1
+        verticalOffset: 1
+        radius: 3
         samples: 16
-        color: "#80000000"
+        color: "#422a2a2a"
         source: text
     }
 
