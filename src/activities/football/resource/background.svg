@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
+
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -11,9 +12,8 @@
    inkscape:export-ydpi="72.000000"
    inkscape:export-xdpi="72.000000"
    inkscape:export-filename="/home/bruno/Projets/gcompris/gcompris/boards/images/foot.png"
-   sodipodi:docname="foot_background.svg"
-   sodipodi:docbase="/home/bruno/Projets/gcompris/gcompris/boards/images"
-   inkscape:version="0.46"
+   sodipodi:docname="background.svg"
+   inkscape:version="0.91 r13725"
    sodipodi:version="0.32"
    id="svg2"
    height="520"
@@ -36,21 +36,22 @@
      gridtolerance="0.32000000pt"
      inkscape:guide-bbox="true"
      showguides="true"
-     inkscape:window-y="40"
-     inkscape:window-x="216"
-     inkscape:window-height="719"
-     inkscape:window-width="1007"
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:window-height="1053"
+     inkscape:window-width="934"
      inkscape:current-layer="layer1"
      inkscape:document-units="px"
      inkscape:cy="345.78596"
-     inkscape:cx="339.57964"
+     inkscape:cx="416.4467"
      inkscape:zoom="0.49497475"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
      bordercolor="#666666"
      pagecolor="#ffffff"
-     id="base">
+     id="base"
+     inkscape:window-maximized="0">
     <inkscape:grid
        id="GridFromPre046Settings"
        type="xygrid"
@@ -99,14 +100,14 @@
        height="517.30975"
        width="795.97729"
        id="rect5202"
-       style="fill:#007601;fill-opacity:1;fill-rule:nonzero;stroke:#060606;stroke-width:2.46268510999999979;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" />
+       style="fill:#64b560;fill-opacity:1;fill-rule:nonzero;stroke:#060606;stroke-width:2.46268511;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" />
     <rect
        y="64.874275"
        x="58.747051"
        height="390.0968"
        width="686.71228"
        id="rect1335"
-       style="fill:#0bc528;fill-opacity:0.74404764;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.99573052;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" />
+       style="fill:#71ba50;fill-opacity:1;fill-rule:nonzero;stroke:#ffffff;stroke-width:1.99573052;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" />
     <rect
        y="151.48001"
        x="58.634857"

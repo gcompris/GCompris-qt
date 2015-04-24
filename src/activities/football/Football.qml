@@ -84,7 +84,7 @@ ActivityBase {
                 Rectangle {
                     id: line
                     opacity: 0.0
-                    color: "red"
+                    color: "#ee4b4b"
                     transformOrigin: Item.TopLeft
                 }
                 Image {
@@ -140,7 +140,7 @@ ActivityBase {
                 anchors.top: border.top
                 anchors.left: border.right
                 z:10
-                opacity: 0.5
+                opacity: 0.3
             }
         }
 
