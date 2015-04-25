@@ -1,6 +1,6 @@
 /* GCompris - BrailleChar.qml
  *
- * Copyright (C) 2014 <Arkit Vora>
+ * Copyright (C) 2014 Arkit Vora <arkitvora123@gmail.com>
  *
  * Authors:
  *   Srishti Sethi <srishakatux@gmail.com> (GTK+ version)
@@ -88,6 +88,11 @@ Item {
         brailleChar = ""
     }
 
+    function clearLetter() {
+        brailleChar = ""
+        updateDotsFromBrailleChar()
+    }
+
     function switchState(value) {
         circles.itemAt(value-1).switchState()
     }
@@ -103,13 +108,13 @@ Item {
         Repeater {
 
             id: circles
-            model: ["1", "2", "3", "4", "5", "6"]
+            model: 6
 
             Rectangle {
                 id: incircle1
                 border.width: 2 * ApplicationInfo.ratio
-                color: on ? "red" : "white"
-                border.color: "black"
+                color: on ? "#e4421c" : "#f0f0f0"
+                border.color: "#2a2a2a"
                 width: dotWidth
                 height: dotHeight
                 radius: width * 0.5

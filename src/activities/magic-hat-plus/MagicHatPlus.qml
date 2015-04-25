@@ -1,6 +1,6 @@
 /* GCompris - MagicHat.qml
  *
- * Copyright (C) 2014 <Thibaut ROMAIN>
+ * Copyright (C) 2014 Thibaut ROMAIN <thibrom@gmail.com>
  *
  * Authors:
  *   <Bruno Coudoin> (GTK+ version)

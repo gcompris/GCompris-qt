@@ -82,7 +82,7 @@ ActivityBase {
         }
 
         Rectangle {
-            color: "white"
+            color: "#E3DEDB"
             anchors.fill: maze
         }
 
@@ -104,11 +104,12 @@ ActivityBase {
                         id: north
                         width: items.cellSize + items.wallSize
                         height: items.wallSize
+                        radius: height / 2
                         anchors.top: parent.top
                         anchors.left: parent.left
                         anchors.topMargin: -items.wallSize / 2
                         anchors.leftMargin: -items.wallSize / 2
-                        color: "black"
+                        color: "#B38B56"
                         visible: modelData & 1 ? items.wallVisible : false
                         z: 1
                     }
@@ -117,11 +118,12 @@ ActivityBase {
                         id: south
                         width: items.cellSize + items.wallSize
                         height: items.wallSize
+                        radius: height / 2
                         anchors.bottom: parent.bottom
                         anchors.left: parent.left
                         anchors.bottomMargin: -items.wallSize / 2
                         anchors.leftMargin: -items.wallSize / 2
-                        color: "black"
+                        color: "#B38B56"
                         visible: modelData & 4 ? items.wallVisible : false
                         z: 1
                     }
@@ -130,11 +132,12 @@ ActivityBase {
                         id: east
                         width: items.wallSize
                         height: items.cellSize + items.wallSize
+                        radius: width / 2
                         anchors.bottom: parent.bottom
                         anchors.right: parent.right
                         anchors.bottomMargin: -items.wallSize / 2
                         anchors.rightMargin: -items.wallSize / 2
-                        color: "black"
+                        color: "#B38B56"
                         visible: modelData & 8 ? items.wallVisible : false
                         z: 1
                     }
@@ -143,11 +146,12 @@ ActivityBase {
                         id: west
                         width: items.wallSize
                         height: items.cellSize + items.wallSize
+                        radius: width / 2
                         anchors.bottom: parent.bottom
                         anchors.left: parent.left
                         anchors.bottomMargin: -items.wallSize / 2
                         anchors.leftMargin: -items.wallSize / 2
-                        color: "black"
+                        color: "#B38B56"
                         visible: modelData & 2 ? items.wallVisible : false
                         z: 1
                     }
@@ -222,7 +226,7 @@ ActivityBase {
             source: Activity.url + "tux_top_south.svg"
             sourceSize.width: items.cellSize * 0.8
             x: maze.x + items.cellSize * 0.05 + items.wallSize / 2 + items.playerx * items.cellSize
-            y: maze.y + items.cellSize * 0.05 + items.wallSize / 2 + items.playery * items.cellSize
+            y: maze.y + items.cellSize * 0.20 + items.wallSize / 2 + items.playery * items.cellSize
             z: 2
             rotation: items.playerr
             Timer {
@@ -270,13 +274,13 @@ ActivityBase {
 
         Image {
             id: door
-            source: Activity.url + "door.png"
-            width: items.cellSize * 0.8
+            source: Activity.url + "door.svg"
+            width: items.cellSize * 0.6
             height: items.cellSize * 0.8
             y: maze.y + items.cellSize * 0.05 + items.wallSize / 2 + items.doory * items.cellSize
             z: 1
             anchors.right: maze.right
-            anchors.rightMargin: items.cellSize * 0.05 + items.wallSize / 2
+            anchors.rightMargin: items.cellSize * 0.15 + items.wallSize / 2
         }
 
         BarButton {

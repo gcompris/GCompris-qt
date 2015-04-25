@@ -1,6 +1,7 @@
 /* gcompris - Planegame.qml
 
- Copyright (C)
+ Copyright (C) 2014 Johnny Jazeix <jazeix@gmail.com>
+
  2003, 2014: Bruno Coudoin: initial version
  2014: Johnny Jazeix: Qt port
 
@@ -55,7 +56,7 @@ ActivityBase {
         anchors.fill: parent
         signal start
         signal stop
-        source: Activity.url + "resource/background.svg"
+        source: Activity.url + "../algorithm/resource/desert_scene.svg"
         sourceSize.width: parent.width
 
         Component.onCompleted: {

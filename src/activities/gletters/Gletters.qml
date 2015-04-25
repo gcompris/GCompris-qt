@@ -1,6 +1,6 @@
 /* GCompris - gletters.qml
  *
- * Copyright (C) 2014 Holger Kaelberer
+ * Copyright (C) 2014 Holger Kaelberer <holger.k@elberer.de>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
@@ -21,6 +21,7 @@
  */
 
 import QtQuick 2.1
+import QtQuick.Controls 1.1
 import GCompris 1.0
 
 import "../../core"
@@ -52,14 +53,18 @@ ActivityBase {
     
     pageComponent: Image {
         id: background
-        source: activity.dataSetUrl + "background.svgz"
+        source: activity.dataSetUrl + "background.svg"
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: parent.width
 
         signal start
         signal stop
+
+        // system locale by default
+        property string locale: "system"
         
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -77,6 +82,7 @@ ActivityBase {
             property alias keyboard: keyboard
             property alias wordDropTimer: wordDropTimer
             property GCAudio audioEffects: activity.audioEffects
+            property alias locale: background.locale
         }
 
         onStart: {
@@ -105,6 +111,90 @@ ActivityBase {
 
         }
 
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    property alias localeBox: localeBox
+                    height: column.height
+
+                    property alias availableLangs: langs.languages
+                    LanguageList {
+                        id: langs
+                    }
+
+                    Column {
+                        id: column
+                        spacing: 10
+                        width: parent.width
+
+                        Flow {
+                            spacing: 5
+                            width: dialogActivityConfig.width
+                            GCComboBox {
+                                id: localeBox
+                                model: langs.languages
+                                background: dialogActivityConfig
+                                width: 250 * ApplicationInfo.ratio
+                                label: qsTr("Select your locale")
+                            }
+                        }
+/* TODO handle this:
+                        GCDialogCheckBox {
+                            id: uppercaseBox
+                            width: 250 * ApplicationInfo.ratio
+                            text: qsTr("Uppercase only mode")
+                            checked: true
+                            onCheckedChanged: {
+                                print("uppercase changed")
+                            }
+                        }
+*/
+                    }
+                }
+            }
+
+            onClose: home()
+            onLoadData: {
+                if(dataToSave && dataToSave["locale"]) {
+                    background.locale = dataToSave["locale"];
+                }
+            }
+            onSaveData: {
+                var oldLocale = background.locale;
+                var newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
+                // Remove .UTF-8
+                if(newLocale.indexOf('.') != -1) {
+                    newLocale = newLocale.substring(0, newLocale.indexOf('.'))
+                }
+                dataToSave = {"locale": newLocale}
+
+                background.locale = newLocale;
+
+                // Restart the activity with new information
+                if(oldLocale !== newLocale) {
+                    background.stop();
+                    background.start();
+                }
+            }
+
+
+            function setDefaultValues() {
+                var localeUtf8 = background.locale;
+                if(background.locale != "system") {
+                    localeUtf8 += ".UTF-8";
+                }
+
+                for(var i = 0 ; i < dialogActivityConfig.configItem.availableLangs.length ; i ++) {
+                    if(dialogActivityConfig.configItem.availableLangs[i].locale === localeUtf8) {
+                        dialogActivityConfig.loader.item.localeBox.currentIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -113,13 +203,18 @@ ActivityBase {
         Bar {
             id: bar
             anchors.bottom: keyboard.top
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | config }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onConfigClicked: {
+                dialogActivityConfig.active = true
+                dialogActivityConfig.setDefaultValues()
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {
@@ -152,6 +247,9 @@ ActivityBase {
         Wordlist {
             id: wordlist
             defaultFilename: activity.dataSetUrl + "default-en.json"
+            // To switch between locales: xx_XX stored in configuration and
+            // possibly correct xx if available (ie fr_FR for french but dataset is fr.)
+            useDefault: false
             filename: ""
 
             onError: console.log("Gletters: Wordlist error: " + msg);

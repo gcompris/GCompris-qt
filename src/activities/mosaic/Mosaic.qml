@@ -1,6 +1,6 @@
 /* GCompris - mosaic.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Clement coudoin <clement.coudoin@free.fr> (GTK+ version)
@@ -32,7 +32,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: Activity.url + "background.svgz"
+        source: Activity.url + "background.svg"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
         anchors.fill: parent

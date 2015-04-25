@@ -1,6 +1,6 @@
 /* GCompris - DownloadManager.cpp
  *
- * Copyright (C) 2014 Holger Kaelberer
+ * Copyright (C) 2014 Holger Kaelberer <holger.k@elberer.de>
  *
  * Authors:
  *   Holger Kaelberer <holger.k@elberer.de>
@@ -30,7 +30,6 @@
 #include <QMutexLocker>
 #include <QNetworkConfiguration>
 #include <QDirIterator>
-#include <QtQml>
 
 const QString DownloadManager::contentsFilename = QString("Contents");
 DownloadManager* DownloadManager::_instance = 0;
@@ -40,6 +39,12 @@ DownloadManager* DownloadManager::_instance = 0;
 DownloadManager::DownloadManager()
   : accessManager(this), serverUrl(ApplicationSettings::getInstance()->downloadServerUrl())
 {
+    // Cleanup of previous data directory no more used
+    QDir previousDataLocation = QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/data";
+    if(previousDataLocation.exists()) {
+        qDebug() << "Remove previous directory data: " << previousDataLocation;
+        previousDataLocation.removeRecursively();
+    }
 }
 
 DownloadManager::~DownloadManager()
@@ -112,52 +117,36 @@ void DownloadManager::abortDownloads()
     }
 }
 
-/** Helper generating a relative voices resources file-path for a given locale
- *
- * @param locale  Locale name string of the form <language>_<country>. */
 QString DownloadManager::getVoicesResourceForLocale(const QString& locale) const
 {
-    return QString("data/voices/voices-%1.rcc").arg(
-            ApplicationInfo::getInstance()->getVoicesLocale(locale));
+    return QString("data2/voices-" COMPRESSED_AUDIO "/voices-%1.rcc")
+            .arg(ApplicationInfo::getInstance()->getVoicesLocale(locale));
 }
 
-/** Transform the passed relative path to an absolute resource path of an
- * existing .rcc file, honouring the order of the systemResourcePaths
- *
- * @returns The absolute path of the .rcc file if it exists, QString() otherwise
- */
 inline QString DownloadManager::getAbsoluteResourcePath(const QString& path) const
 {
     foreach (const QString &base, getSystemResourcePaths()) {
-        if (QFile::exists(base + "/" + path))
-            return QString(base + "/" + path);
+        if (QFile::exists(base + '/' + path))
+            return QString(base + '/' + path);
     }
     return QString();
 }
 
-/** Transform the passed absolute relative path to a relative resource path if possible
- *
- * @returns The relative path if it could be generated, QString() otherwise
- */
+// @FIXME should support a variable subpath lenght like data2/full.rcc"
 inline QString DownloadManager::getRelativeResourcePath(const QString& path) const
 {
-    QStringList parts = path.split("/", QString::SkipEmptyParts);
+    QStringList parts = path.split('/', QString::SkipEmptyParts);
     if (parts.size() < 3)
         return QString();
-    return QString(parts[parts.size()-3] + "/" + parts[parts.size()-2]
-                   + "/" + parts[parts.size()-1]);
+    return QString(parts[parts.size()-3] + '/' + parts[parts.size()-2]
+                   + '/' + parts[parts.size()-1]);
 }
 
-/** Check if the given relative resource path exists locally */
 bool DownloadManager::haveLocalResource(const QString& path) const
 {
-    return (getAbsoluteResourcePath(path) != QString());
+    return (!getAbsoluteResourcePath(path).isEmpty());
 }
 
-/** Update resource from server if not prohibited by the settings and register
- * it if possible
- *
- * @returns success*/
 bool DownloadManager::updateResource(const QString& path)
 {
     if (checkDownloadRestriction())
@@ -165,7 +154,7 @@ bool DownloadManager::updateResource(const QString& path)
     else {
         QString absPath = getAbsoluteResourcePath(path);
         // automatic download prohibited -> register if available
-        if (absPath != QString())
+        if (!absPath.isEmpty())
             return registerResource(absPath);
         else {
             qDebug() << "No such local resource and download prohibited:"
@@ -175,18 +164,10 @@ bool DownloadManager::updateResource(const QString& path)
     }
 }
 
-/** Download a resource based on the passed relative resource path and register
- * it if possible
- *
- * If a corresponding local resource exists, an update will only be downloaded
- * if it is not up2date according to checksum comparison. Whenever at the end
- * we have a valid .rcc file it will be registered.
- *
- * @returns success*/
 bool DownloadManager::downloadResource(const QString& path)
 {
     qDebug() << "Downloading resource file" << path;
-    DownloadJob* job = new DownloadJob(QUrl(serverUrl.toString() + "/" + path));
+    DownloadJob* job = new DownloadJob(QUrl(serverUrl.toString() + '/' + path));
 
     {
         QMutexLocker locker(&jobsMutex);
@@ -268,7 +249,6 @@ inline QString DownloadManager::filenameForTempFilename(const QString &tempFilen
     return tempFilename;
 }
 
-/** Start a new download specified by the passed DownloadJob */
 bool DownloadManager::download(DownloadJob* job)
 {
     QNetworkRequest request;
@@ -315,8 +295,8 @@ bool DownloadManager::download(DownloadJob* job)
     connect(reply, SIGNAL(error(QNetworkReply::NetworkError)),
             this, SLOT(handleError(QNetworkReply::NetworkError)));
     if (job->url.fileName() != contentsFilename) {
-        connect(reply, SIGNAL(downloadProgress(qint64, qint64)),
-                this, SIGNAL(downloadProgress(qint64, qint64)));
+        connect(reply, SIGNAL(downloadProgress(qint64,qint64)),
+                this, SIGNAL(downloadProgress(qint64,qint64)));
         emit downloadStarted(job->url.toString().remove(0, serverUrl.toString().length()));
     }
 
@@ -347,41 +327,14 @@ inline QString DownloadManager::getFilenameForUrl(const QUrl& url) const
 
 inline QUrl DownloadManager::getUrlForFilename(const QString& filename) const
 {
-    return QUrl(serverUrl.toString() + "/" + getRelativeResourcePath(filename));
+    return QUrl(serverUrl.toString() + '/' + getRelativeResourcePath(filename));
 }
 
-inline QString DownloadManager::getResourceRootForFilename(const QString& filename) const
-{
-    QStringList parts = QFileInfo(filename).path().split("/", QString::SkipEmptyParts);
-    return QString("/gcompris") + "/" + parts[parts.size()-2] +
-            "/" + parts[parts.size()-1];
-}
-
-/** Get platform-specific path storing downloaded resources
- *
- * Uses QStandardPaths::writableLocation(QStandardPaths::DataLocation)
- * which returns
- *   - on desktop $HOME/.local/share/KDE/gcompris-qt/
- *   - on android /data/data/net.gcompris/files
- *
- */
 inline QString  DownloadManager::getSystemDownloadPath() const
 {
     return QStandardPaths::writableLocation(QStandardPaths::DataLocation);
 }
 
-/** Get all paths that are used for storing resources
- *
- * The caller should keep list order when looking for resources.
- *
- * For now returns
- * 1. getSystemdDownloadPath()
- * 2. QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)/gcompris-qt
- *    which is
- *    - $HOME/.local/share/gcompris-qt (on linux desktop)
- *    - /storage/sdcard0/GCompris (on android)
- *
- */
 inline QStringList DownloadManager::getSystemResourcePaths() const
 {
     return QStringList({
@@ -390,7 +343,7 @@ inline QStringList DownloadManager::getSystemResourcePaths() const
         "assets:",
 #endif
         QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) +
-            "/" + GCOMPRIS_APPLICATION_NAME
+            '/' + GCOMPRIS_APPLICATION_NAME
     });
 }
 
@@ -407,7 +360,8 @@ bool DownloadManager::checkDownloadRestriction() const
         return false;
     return true;
 #endif
-    return ApplicationSettings::getInstance()->isAutomaticDownloadsEnabled();
+    return ApplicationSettings::getInstance()->isAutomaticDownloadsEnabled() &&
+            ApplicationInfo::getInstance()->isDownloadAllowed();
 }
 
 void DownloadManager::handleError(QNetworkReply::NetworkError code)
@@ -417,13 +371,6 @@ void DownloadManager::handleError(QNetworkReply::NetworkError code)
     emit error(reply->error(), reply->errorString());
 }
 
-/** Parse upstream Contents file and build checksum map
- *
- * We expect the line-syntax, that md5sum and colleagues creates:
- *
- * <MD5SUM>  <FILENAME>
- * 53f0a3eb206b3028500ca039615c5f84  voices-en.rcc
- */
 bool DownloadManager::parseContents(DownloadJob *job)
 {
     if (job->file.isOpen())
@@ -434,10 +381,15 @@ bool DownloadManager::parseContents(DownloadJob *job)
         return false;
     }
 
+    /*
+     * We expect the line-syntax, that md5sum and colleagues creates:
+     * <MD5SUM>  <FILENAME>
+     * 53f0a3eb206b3028500ca039615c5f84  voices-en.rcc
+     */
     QTextStream in(&job->file);
     while (!in.atEnd()) {
         QString line = in.readLine();
-        QStringList parts = line.split(" ", QString::SkipEmptyParts);
+        QStringList parts = line.split(' ', QString::SkipEmptyParts);
         if (parts.size() != 2) {
             qWarning() << "Invalid format of Contents file!";
             return false;
@@ -449,8 +401,6 @@ bool DownloadManager::parseContents(DownloadJob *job)
     return true;
 }
 
-/** Compares the checksum of the file in filename with the contents map in the
- * passed DownloadJob */
 bool DownloadManager::checksumMatches(DownloadJob *job, const QString& filename) const
 {
     Q_ASSERT(job->contents != (QMap<QString, QString>()));
@@ -476,13 +426,9 @@ bool DownloadManager::checksumMatches(DownloadJob *job, const QString& filename)
     return (fileHash == job->contents[basename]);
 }
 
-/** Unregister the passed resource
- *
- * Caller must lock rcMutex
- */
 void DownloadManager::unregisterResource_locked(const QString& filename)
 {
-    if (!QResource::unregisterResource(filename, getResourceRootForFilename(filename)))
+    if (!QResource::unregisterResource(filename))
             qDebug() << "Error unregistering resource file" << filename;
     else {
         qDebug() << "Successfully unregistered resource file" << filename;
@@ -501,46 +447,39 @@ bool DownloadManager::registerResource(const QString& filename)
     if (isRegistered(filename))
         unregisterResource_locked(filename);
 
-    if (!QResource::registerResource(filename, getResourceRootForFilename(filename))) {
+    if (!QResource::registerResource(filename)) {
         qDebug() << "Error registering resource file" << filename;
         return false;
     } else {
         qDebug() << "Successfully registered resource"
-                << filename
-                << "(rcRoot=" << getResourceRootForFilename(filename) << ")";
+                << filename;
         registeredResources.append(filename);
 
-        QString relPath = getRelativeResourcePath(filename);
-        emit resourceRegistered(relPath);
+        emit resourceRegistered(getRelativeResourcePath(filename));
 
         QString v = getVoicesResourceForLocale(
-                ApplicationSettings::getInstance()->locale());
-        if (v == relPath)
+                    ApplicationSettings::getInstance()->locale());
+        if (v == getRelativeResourcePath(filename))
             emit voicesRegistered();
         return false;
     }
 }
 
-bool DownloadManager::isResourceRegistered(const QString& resource) const
+bool DownloadManager::isDataRegistered(const QString& data) const
 {
-    for (auto &base: getSystemResourcePaths())
-        if (isRegistered(base + "/" + resource))
-            return true;
-    return false;
+    QString res = QString(":/gcompris/data/%1").arg(data);
+
+    return !QDir(res).entryList().empty();
 }
 
 bool DownloadManager::areVoicesRegistered() const
 {
-    QString relFilename = getVoicesResourceForLocale(
-            ApplicationSettings::getInstance()->locale());
-    return isResourceRegistered(relFilename);
+    QString resource = QString("voices-" COMPRESSED_AUDIO "/%1").
+            arg(ApplicationInfo::getInstance()->getVoicesLocale(ApplicationSettings::getInstance()->locale()));
+
+    return isDataRegistered(resource);
 }
 
-/** Handle a finished download
- *
- * Called whenever a single download (sub-job) has finished. Responsible for
- * iterating over possibly remaining sub-jobs of our DownloadJob.
- */
 void DownloadManager::downloadFinished()
 {
     QNetworkReply* reply = dynamic_cast<QNetworkReply*>(sender());
@@ -608,7 +547,7 @@ void DownloadManager::downloadFinished()
         QString relPath = getRelativeResourcePath(getFilenameForUrl(job->url));
         // check in each resource-path for an up2date rcc file:
         foreach (const QString &base, getSystemResourcePaths()) {
-            QString filename = base + "/" + relPath;
+            QString filename = base + '/' + relPath;
             if (QFile::exists(filename)
                 && checksumMatches(job, filename))
             {
@@ -646,7 +585,7 @@ void DownloadManager::downloadFinished()
             nUrl = job->queue.takeFirst();
             QString relPath = getRelativeResourcePath(getFilenameForUrl(nUrl));
             foreach (const QString &base, getSystemResourcePaths()) {
-                QString filename = base + "/" + relPath;
+                QString filename = base + '/' + relPath;
                 if (QFile::exists(filename))
                     registerResource(filename);
                 }

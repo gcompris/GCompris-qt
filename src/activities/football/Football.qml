@@ -1,6 +1,6 @@
 /* GCompris - football.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
@@ -72,7 +72,7 @@ ActivityBase {
 
         Image {
             id: field
-            source: Activity.url + "background.svgz"
+            source: Activity.url + "background.svg"
             anchors.fill: parent
             Rectangle {
                 id: border
@@ -84,12 +84,12 @@ ActivityBase {
                 Rectangle {
                     id: line
                     opacity: 0.0
-                    color: "red"
+                    color: "#ee4b4b"
                     transformOrigin: Item.TopLeft
                 }
                 Image {
                     id: ball
-                    source: Activity.url + "ball.svgz"
+                    source: Activity.url + "ball.svg"
                     sourceSize.height: 50 * ApplicationInfo.ratio
                     property real change
                     z: 10
@@ -112,7 +112,7 @@ ActivityBase {
                 }
                 Image {
                     id: tux
-                    source: Activity.url+"tux_top.svgz"
+                    source: Activity.url+"tux_top.svg"
                     sourceSize.height: 80 * ApplicationInfo.ratio
                     x: border.width - tux.width
                     y: border.height / 2
@@ -140,7 +140,7 @@ ActivityBase {
                 anchors.top: border.top
                 anchors.left: border.right
                 z:10
-                opacity: 0.5
+                opacity: 0.3
             }
         }
 

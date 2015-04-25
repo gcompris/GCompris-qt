@@ -1,6 +1,6 @@
 /* GCompris - ReadyButton.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -29,14 +29,10 @@ Rectangle {
     visible: true
     radius: 4
     smooth: true
-    border.width: 2
+    border.width: 0
     width: iamReadyText.width + 50 * ApplicationInfo.ratio
     height: iamReadyText.height + 50 * ApplicationInfo.ratio
-    gradient: Gradient {
-        GradientStop { position: 0.0; color: "#AAFFFFFF" }
-        GradientStop { position: 0.9; color: "#AAFFFFFF" }
-        GradientStop { position: 1.0; color: "#AACECECE" }
-    }
+    color: "#AAFFFFFF"
 
     signal clicked
 

@@ -24,6 +24,12 @@ import QtQuick.Controls.Styles 1.1
 import GCompris 1.0
 import QtQuick.Layouts 1.1
 
+/**
+ * GCompris' CheckBox component.
+ * @ingroup components
+ *
+ * @inherit QtQuick.Controls.CheckBox
+ */
 CheckBox {
     id: checkBox
     width: parent.width
@@ -34,8 +40,8 @@ CheckBox {
         indicator: Image {
             sourceSize.height: 50 * ApplicationInfo.ratio
             source:
-                control.checked ? "qrc:/gcompris/src/core/resource/apply.svgz" :
-                                  "qrc:/gcompris/src/core/resource/cancel.svgz"
+                control.checked ? "qrc:/gcompris/src/core/resource/apply.svg" :
+                                  "qrc:/gcompris/src/core/resource/cancel.svg"
         }
         label: GCText {
             fontSize: mediumSize

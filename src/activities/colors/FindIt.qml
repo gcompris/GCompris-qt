@@ -1,9 +1,9 @@
-/* GCompris - Colors.qml
+/* GCompris - FindIt.qml
+ *
+ * Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Original activity in the Gtk+ version of GCompris by
  * Pascal Georges (pascal.georges1@free.fr)
- *
- * Copyright (C) 2014 Bruno Coudoin
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -190,7 +190,7 @@ ActivityBase {
 
         BarButton {
             id: repeatItem
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
             sourceSize.width: 80 * ApplicationInfo.ratio
             z: bar.z + 1
             visible: items.audioOk

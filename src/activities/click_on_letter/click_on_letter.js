@@ -144,7 +144,7 @@ function initLevel() {
             GCompris.DownloadManager.haveLocalResource(
                 GCompris.DownloadManager.getVoicesResourceForLocale(
                     GCompris.ApplicationSettings.locale))) {
-        items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/click_on_letter.ogg"));
+        items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/misc/click_on_letter.$CA"));
         items.audioVoices.silence(100)
         playLetter(currentLetter)
         items.questionItem.visible = false
@@ -159,7 +159,7 @@ function initLevel() {
 }
 
 function playLetter(letter) {
-    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices/$LOCALE/alphabet/"
+    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/"
                                                                        + Core.getSoundFilenamForChar(letter)))
 }
 

@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.h
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -18,38 +18,110 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-#ifndef MENU_H
-#define MENU_H
+#ifndef ACTIVITYINFO_H
+#define ACTIVITYINFO_H
 
 #include <qqml.h>
 
-
+/**
+ * @class ActivityInfo
+ * @short A QML component holding meta information about an activity.
+ * @ingroup components
+ *
+ * Each GCompris activity has to provide some meta data about itself in form
+ * of an ActivityInfo definition. This data will be used to register it in the
+ * ActivityInfoTree, and populate the full screen help dialog.
+ *
+ * @sa DialogHelp
+ */
 class ActivityInfo : public QObject
 {
 	Q_OBJECT
+
+	/**
+	 * Name of the main activity QML file.
+	 *
+	 * Example: "activity/Activity.qml"
+	 */
 	Q_PROPERTY(QString name READ name WRITE setName NOTIFY nameChanged)
-	Q_PROPERTY(QString dir READ dir WRITE setDir NOTIFY dirChanged)
+
+    /**
+     * Section(s) this activity belongs to.
+     *
+     * An activity can belong to one or multiple activity sections
+     * (seperated by whitespace) out of:
+     * computer, discovery, experiment, fun, math, puzzle,
+     * reading, strategy.
+     */
 	Q_PROPERTY(QString section READ section WRITE setSection NOTIFY sectionChanged)
+
+    /**
+     * Difficulty of the activity.
+     *
+     * A difficulty level from 1 (easiest) to 6 (most difficult).
+     */
 	Q_PROPERTY(int difficulty READ difficulty WRITE setDifficulty NOTIFY difficultyChanged)
+
+    /**
+     * Relative path to the icon of the activity.
+     *
+     * Example: "activity/activity.svg"
+     */
 	Q_PROPERTY(QString icon READ icon WRITE setIcon NOTIFY iconChanged)
+
+    /**
+     * Author of the activity.
+     */
 	Q_PROPERTY(QString author READ author WRITE setAuthor NOTIFY authorChanged)
+
+    /**
+     * Whether the activity is part of the demo version of GCompris.
+     */
 	Q_PROPERTY(bool demo READ demo WRITE setDemo NOTIFY demoChanged)
+
+    /**
+     * Title of the activity.
+     */
 	Q_PROPERTY(QString title READ title WRITE setTitle NOTIFY titleChanged)
+
+    /**
+     * Description of the activity.
+     */
 	Q_PROPERTY(QString description READ description WRITE setDescription NOTIFY descriptionChanged)
+
+    /**
+     * Goal that this activity wants to achieve.
+     */
 	Q_PROPERTY(QString goal READ goal WRITE setGoal NOTIFY goalChanged)
+
+	/**
+     * Prerequisite for using this activity.
+     */
 	Q_PROPERTY(QString prerequisite READ prerequisite WRITE setPrerequisite NOTIFY prerequisiteChanged)
+
+    /**
+     * Manual describing the activity's usage.
+     */
 	Q_PROPERTY(QString manual READ manual WRITE setManual NOTIFY manualChanged)
+
+    /**
+     * Credits to third parties.
+     */
 	Q_PROPERTY(QString credit READ credit WRITE setCredit NOTIFY creditChanged)
+
 	Q_PROPERTY(bool favorite READ favorite WRITE setFavorite NOTIFY favoriteChanged)
 
+    /**
+     * This activity is enabled.
+     */
+    Q_PROPERTY(bool enabled READ enabled WRITE setEnabled NOTIFY enabledChanged)
 
 public:
-	ActivityInfo(QObject *parent = 0);
+	/// @cond INTERNAL_DOCS
+	explicit ActivityInfo(QObject *parent = 0);
 
 	QString name() const;
 	void setName(const QString &);
-	QString dir() const;
-	void setDir(const QString &);
 	QString section() const;
 	void setSection(const QString &);
 	int difficulty() const;
@@ -72,15 +144,16 @@ public:
 	void setManual(const QString &);
 	QString credit() const;
 	void setCredit(const QString &);
-	bool favorite() const;
-	void setFavorite(const bool);
+    bool favorite() const;
+    void setFavorite(const bool);
+    bool enabled() const;
+    void setEnabled(const bool);
 
 	QStringList getSectionPath();
 
 signals:
 	void nameChanged();
 	void typeChanged();
-	void dirChanged();
 	void sectionChanged();
 	void difficultyChanged();
 	void iconChanged();
@@ -92,12 +165,13 @@ signals:
 	void prerequisiteChanged();
 	void manualChanged();
 	void creditChanged();
-	void favoriteChanged();
-	
+    void favoriteChanged();
+    void enabledChanged();
+
+	/// @endcond
 private:
 	QString m_name;
 	QString m_type;
-	QString m_dir;
 	QString m_section;
 	int m_difficulty;
 	QString m_icon;
@@ -109,7 +183,8 @@ private:
 	QString m_prerequisite;
 	QString m_manual;
 	QString m_credit;
-	bool m_favorite;
+    bool m_favorite;
+    bool m_enabled;
 };
 
-#endif // MENU_H
+#endif // ACTIVITYINFO_H

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:docname="crash.svg"
+   viewBox="0 0 102.28125 93.156247"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   width="100%"
+   height="100%">
+  <defs
+     id="defs13" />
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="-3"
+     pagecolor="#ffffff"
+     inkscape:window-height="748"
+     inkscape:window-maximized="1"
+     inkscape:zoom="2.8"
+     inkscape:window-x="-2"
+     showgrid="false"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="113.35224"
+     inkscape:cy="41.424472"
+     inkscape:window-width="1366"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     id="layer1"
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     transform="translate(-17.437524,-850.625)">
+    <path
+       id="path2816"
+       style="fill:#d40000;fill-rule:evenodd;stroke:#000000;stroke-width:1.29390752;stroke-miterlimit:8.80000019"
+       sodipodi:nodetypes="ccccccccccccccccc"
+       d="M 107.77271,931.40582 78.547693,917.46278 74.339399,942.42229 52.047402,919.65068 23.221884,935.40083 39.198838,904.69641 19.231027,899.00975 37.93479,885.77521 19.413092,866.00715 l 28.854647,7.28883 9.754505,-21.44722 14.898091,18.33547 34.370685,-14.27075 -15.791767,25.52755 26.437867,9.7545 -25.729376,10.46092 15.564966,29.74937 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3591"
+       sodipodi:nodetypes="ccccccccccccccccc"
+       style="fill:#ffff00;fill-rule:evenodd;stroke:#000000;stroke-width:0.89688587;stroke-miterlimit:8.80000019"
+       d="m 97.040841,920.33633 -21.550362,-9.11055 -4.765536,19.33387 -13.604354,-17.81738 -21.08843,9.993 12.183621,-20.35866 -14.950038,-5.23652 14.074049,-7.87873 -12.839642,-13.70269 20.001531,5.05214 5.836648,-15.05096 11.250959,12.89373 24.378888,-13.03374 -11.685459,17.87949 20.173624,8.23961 -20.60709,7.99103 13.191591,20.80506 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3593"
+       sodipodi:nodetypes="ccccccccccccccccc"
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.5381186;stroke-miterlimit:8.80000019"
+       d="m 86.508271,911.02781 -13.670344,-5.09626 -2.859192,11.59993 -8.161836,-10.69017 -12.653187,5.99541 7.309784,-12.21467 -10.633496,-4.06578 10.107903,-3.80337 -7.703139,-8.22097 12.000402,3.03128 3.501885,-9.03032 6.75042,7.73601 13.887724,-9.85365 -7.195919,10.35789 13.213588,5.68306 -12.548509,6.45812 8.654305,12.11336 z"
+       inkscape:connector-curvature="0" />
+  </g>
+  <metadata
+     id="metadata11">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Crash</dc:title>
+        <dc:date>2012-01-04T16:54:08</dc:date>
+        <dc:description>Crash</dc:description>
+        <dc:source>https://openclipart.org/detail/166838/crash-by-roshellin</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>roshellin</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>crash</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

@@ -1,6 +1,6 @@
 /* GCompris - Algebra.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -39,11 +39,11 @@ Item {
     DropShadow {
         anchors.fill: text
         cached: true
-        horizontalOffset: 3
-        verticalOffset: 3
-        radius: 8.0
+        horizontalOffset: 1
+        verticalOffset: 1
+        radius: 3.0
         samples: 16
-        color: "#80000000"
+        color: "#422a2a2a"
         source: text
     }
 }

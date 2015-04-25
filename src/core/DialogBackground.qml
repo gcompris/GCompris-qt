@@ -1,6 +1,6 @@
 /* GCompris - dialogBackground.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -22,6 +22,19 @@ import QtQuick 2.2
 import QtQuick.Controls 1.1
 import GCompris 1.0
 
+/**
+ * Base QML component for all full screen dialog screens.
+ * @ingroup components
+ *
+ * Defines the general screen layout used by the following full screen
+ * dialog elements:
+ *
+ * DialogAbout, DialogHelp.
+ *
+ * For a general purpose dialog cf. GCDialog.
+ *
+ * @inherit QtQuick.Rectangle
+ */
 Rectangle {
     id: dialogBackground
     color: "#696da3"
@@ -95,13 +108,18 @@ Rectangle {
 
                     GCText {
                         id: textContent
-                        text: content
+                        text: style + "<body>" + content + "</body>"
                         width: flick.width
                         height: flick.height
                         fontSize: regularSize
                         wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.RichText
-                        onLinkActivated: Qt.openUrlExternally(link)
+                        Component.onCompleted: ApplicationInfo.isDownloadAllowed ?
+                                                   linkActivated.connect(Qt.openUrlExternally) : null
+
+                        property string style: ApplicationInfo.isDownloadAllowed ?
+                                                   "<HEAD><STYLE type='text/css'>A {color: blue;}</STYLE></HEAD>" :
+                                                   "<HEAD><STYLE type='text/css'>A {color: black;}</STYLE></HEAD>"
                     }
                 }
             }

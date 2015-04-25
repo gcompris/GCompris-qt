@@ -1,10 +1,10 @@
 /* GCompris - AlgebraMinus.qml
  *
- * Copyright (C) 2014 Aruna Sankaranarayanan and Bruno Coudoin
+ * Copyright (C) 2014 Aruna Sankaranarayanan <aruna.evam@gmail.com>
  *
  * Authors:
  *   Bruno Coudoin (GTK+ version)
- *   Aruna Sankaranarayanan aruna.evam@gmail.com (Qt Quick port)
+ *   Aruna Sankaranarayanan <aruna.evam@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by

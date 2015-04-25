@@ -30,8 +30,7 @@ Rectangle {
     anchors.horizontalCenter: parent.horizontalCenter
     width: parent.paintedWidth * 0.05
     height: maxHeight
-    border.width: 2
-    border.color: "black"
+    border.width: 0
     state: "close"
 
     property int minHeight

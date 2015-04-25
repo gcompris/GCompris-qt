@@ -1,6 +1,6 @@
 /* GCompris - ClickOnLetter.qml
  *
- * Copyright (C) 2014 Holger Kaelberer 
+ * Copyright (C) 2014 Holger Kaelberer  <holger.k@elberer.de>
  * 
  * Authors:
  *   Pascal Georges <pascal.georges1@free.fr> (GTK+ version)
@@ -40,7 +40,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: Activity.url + "background.svgz"
+        source: Activity.url + "background.svg"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
         focus: true
@@ -113,7 +113,7 @@ ActivityBase {
         
         BarButton {
             id: repeatItem
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
             sourceSize.width: 80 * ApplicationInfo.ratio
             anchors {
                 top: parent.top
@@ -125,7 +125,7 @@ ActivityBase {
 
         Image {
             id: railway
-            source: Activity.url + "railway.svgz"
+            source: Activity.url + "railway.svg"
             fillMode: Image.PreserveAspectCrop
             anchors.bottom: bar.top
             anchors.left: parent.left
@@ -169,18 +169,18 @@ ActivityBase {
                 fontSize: 44
                 font.bold: true
                 style: Text.Outline
-                styleColor: "black"
+                styleColor: "#2a2a2a"
                 color: "white"
             }
 
             DropShadow {
                 anchors.fill: questionText
                 cached: true
-                horizontalOffset: 3
-                verticalOffset: 3
-                radius: 8.0
+                horizontalOffset: 1
+                verticalOffset: 1
+                radius: 3
                 samples: 16
-                color: "#80000000"
+                color: "#422a2a2a"
                 source: questionText
             }
 
@@ -195,7 +195,7 @@ ActivityBase {
 
         Image {
             id: engine
-            source: Activity.url + "engine.svgz"
+            source: Activity.url + "engine.svg"
 
             anchors.bottom: railway.bottom
             anchors.left: railway.left
@@ -207,7 +207,7 @@ ActivityBase {
 
         Image {
             id: smoke
-            source: Activity.url + "smoke.svgz"
+            source: Activity.url + "smoke.svg"
 
             anchors.bottom: engine.top
             anchors.left: railway.left

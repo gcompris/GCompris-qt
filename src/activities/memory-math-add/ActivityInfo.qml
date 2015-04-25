@@ -1,3 +1,20 @@
+/* GCompris - ActivityInfo.qml
+ *
+ * Copyright (C) 2015 JB BUTET <ashashiwa@gmail.com>
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
 import GCompris 1.0
 
 ActivityInfo {
@@ -9,7 +26,7 @@ ActivityInfo {
   title: qsTr("Addition memory game")
   description: qsTr("Turn the cards over to find two numbers which add up the same, until all the cards are gone.")
 //  intro: "Turn over two cards to match the calculation with its answer."
-  goal: qsTr("Practise adding up, until all the cards are gone.")
+  goal: qsTr("Practice adding up, until all the cards are gone.")
   prerequisite: qsTr("Addition")
   manual: qsTr("You can see some cards, but you can't see what's on the other side of them. Each card is hiding an adding-up sum, or the answer to the sum.
 An adding-up sum looks like this: 2 + 2 = 4

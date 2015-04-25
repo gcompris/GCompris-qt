@@ -1,6 +1,6 @@
 /* GCompris - Menu.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
@@ -22,7 +22,25 @@ import QtQuick 2.2
 import "../../core"
 import GCompris 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
+import QtGraphicalEffects 1.0
 
+/**
+ * GCompris' top level menu screen.
+ *
+ * Displays a grid of available activities divided subdivided in activity
+ * categories/sections.
+ *
+ * The visibility of the section row is toggled by the setting
+ * ApplicationSettings.sectionVisible.
+ *
+ * The list of available activities depends on the following settings:
+ *
+ * * ApplicationSettings.showLockedActivities
+ * * ApplicationSettings.filterLevelMin
+ * * ApplicationSettings.filterLevelMax
+ *
+ * @inherit QtQuick.Item
+ */
 ActivityBase {
     id: menuActivity
     focus: true
@@ -42,50 +60,52 @@ ActivityBase {
 
     onDisplayDialog: pageView.push(dialog)
 
+    // @cond INTERNAL_DOCS
     property string url: "qrc:/gcompris/src/activities/menu/resource/"
     property variant sections: [
         {
-            icon: menuActivity.url + "all.svgz",
+            icon: menuActivity.url + "all.svg",
             tag: "favorite"
         },
         {
-            icon: menuActivity.url + "computer.svgz",
+            icon: menuActivity.url + "computer.svg",
             tag: "computer"
         },
         {
-            icon: menuActivity.url + "discovery.svgz",
+            icon: menuActivity.url + "discovery.svg",
             tag: "discovery"
         },
         {
-            icon: menuActivity.url + "experience.svgz",
+            icon: menuActivity.url + "experience.svg",
             tag: "experiment"
         },
         {
-            icon: menuActivity.url + "fun.svgz",
+            icon: menuActivity.url + "fun.svg",
             tag: "fun"
         },
         {
-            icon: menuActivity.url + "math.svgz",
+            icon: menuActivity.url + "math.svg",
             tag: "math"
         },
         {
-            icon: menuActivity.url + "puzzle.svgz",
+            icon: menuActivity.url + "puzzle.svg",
             tag: "puzzle"
         },
         {
-            icon: menuActivity.url + "reading.svgz",
+            icon: menuActivity.url + "reading.svg",
             tag: "reading"
         },
         {
-            icon: menuActivity.url + "strategy.svgz",
+            icon: menuActivity.url + "strategy.svg",
             tag: "strategy"
         },
     ]
     property string currentTag: sections[0].tag
+    /// @endcond
 
     pageComponent: Image {
         id: background
-        source: menuActivity.url + "background.svgz"
+        source: menuActivity.url + "background.svg"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
 
@@ -180,6 +200,7 @@ ActivityBase {
                         particles.burst(10)
                         ActivityInfoTree.filterByTag(modelData.tag)
                         ActivityInfoTree.filterLockedActivities()
+                        ActivityInfoTree.filterEnabledActivities()
                         menuActivity.currentTag = modelData.tag
                         section.currentIndex = index
                     }
@@ -195,7 +216,7 @@ ActivityBase {
                     color:  "#99FFFFFF"
                 }
                 Image {
-                    source: "qrc:/gcompris/src/core/resource/button.svgz"
+                    source: "qrc:/gcompris/src/core/resource/button.svg"
                     anchors.fill: parent
                 }
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
@@ -235,7 +256,7 @@ ActivityBase {
                     font.weight: Font.DemiBold
                     color: 'white'
                     text: qsTr("Put your favorite activities here by selecting the " +
-                               "star on each activity top right.")
+                               "sun on each activity top right.")
                 }
                 Rectangle {
                     anchors.fill: instructionTxt
@@ -256,9 +277,10 @@ ActivityBase {
 
         GridView {
             id: activitiesGrid
+            layer.enabled: true
             anchors {
                 top: horizontal ? section.bottom : parent.top
-                bottom: parent.bottom
+                bottom: bar.top
                 left: horizontal ? parent.left : section.right
                 margins: 4
             }
@@ -290,7 +312,7 @@ ActivityBase {
                     anchors.margins: 5
                     Image {
                         source: "qrc:/gcompris/src/core/resource/difficulty" +
-                                ActivityInfoTree.menuTree[index].difficulty + ".svgz";
+                                ActivityInfoTree.menuTree[index].difficulty + ".svg";
                         anchors.top: parent.top
                         sourceSize.width: iconWidth * 0.15
                         x: 5
@@ -346,7 +368,7 @@ ActivityBase {
                     onClicked: selectCurrentItem()
                 }
                 Image {
-                    source: menuActivity.url + (favorite ? "all.svgz" : "all_disabled.svg");
+                    source: menuActivity.url + (favorite ? "all.svg" : "all_disabled.svg");
                     anchors {
                         top: parent.top
                         right: parent.right
@@ -383,6 +405,25 @@ ActivityBase {
                 Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
+       
+            Rectangle{
+                id: activitiesMask
+                visible: false
+                anchors.fill: activitiesGrid
+                gradient: Gradient {
+                  GradientStop { position: 0.0; color: "#FFFFFFFF" }
+                  GradientStop { position: 0.9; color: "#FFFFFFFF" }
+                  GradientStop { position: 0.95; color: "#00FFFFFF"}
+                }
+            }
+       
+            layer.effect: OpacityMask {
+                id: activitiesOpacity
+                source: activitiesGrid
+                maskSource: activitiesMask
+                anchors.fill: activitiesGrid
+            }
+
         }
 
         Bar {
@@ -397,7 +438,9 @@ ActivityBase {
             }
 
             onConfigClicked: {
-                displayDialog(dialogConfig)
+                dialogActivityConfig.active = true
+                dialogActivityConfig.loader.item.loadFromConfig()
+                displayDialog(dialogActivityConfig)
             }
         }
     }
@@ -412,12 +455,24 @@ ActivityBase {
         activityInfo: ActivityInfoTree.rootMenu
     }
 
-    DialogConfig {
-        id: dialogConfig
-        main: menuActivity.main
+    DialogActivityConfig {
+        id: dialogActivityConfig
+        currentActivity: menuActivity
+
+        content: Component {
+            ConfigurationItem {
+                id: configItem
+                width: dialogActivityConfig.width - 50 * ApplicationInfo.ratio
+            }
+        }
+
+        onSaveData: {
+            dialogActivityConfig.configItem.save();
+        }
         onClose: {
             ActivityInfoTree.filterByTag(menuActivity.currentTag)
             ActivityInfoTree.filterLockedActivities()
+            ActivityInfoTree.filterEnabledActivities()
             home()
         }
     }

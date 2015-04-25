@@ -1,6 +1,6 @@
 /* GCompris - ParticleSystemStar.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -22,11 +22,28 @@ import QtQuick 2.2
 import QtQuick.Particles 2.0
 import GCompris 1.0
 
+/**
+ * A ParticleSystem component using star image particles.
+ * @ingroup components
+ *
+ * Used for click effects.
+ *
+ * Because of problems on some Android devices leading to crashes must be
+ * used via the wrapper @ref ParticleSystemStarLoader.
+ *
+ * @inherit QtQuick.ParticleSystem
+ * @sa ParticleSystemStarLoader
+ */
 ParticleSystem {
     id: particles
     anchors.fill: parent
+
+    /// @cond INTERNAL_DOCS
+
     property alias emitter: clickedEmitter
     property alias clip: imageParticle.clip
+
+    /// @endcond
 
     Emitter {
         id: clickedEmitter

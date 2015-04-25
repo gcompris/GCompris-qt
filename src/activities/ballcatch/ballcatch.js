@@ -123,7 +123,7 @@ function initLevel() {
     items.deltaPressedTimer.interval = timerinc
 
     items.background.source = "qrc:/gcompris/src/activities/ballcatch/resource/beach" +
-            levelProperties[currentLevel].backgroundImage + ".svgz"
+            levelProperties[currentLevel].backgroundImage + ".svg"
 
     items.ball.reinitBall();
 

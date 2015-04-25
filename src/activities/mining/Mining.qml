@@ -1,6 +1,6 @@
 /* GCompris - mining.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Peter Albrecht <pa-dev@gmx.de> (GTK+ version)
@@ -170,7 +170,7 @@ ActivityBase {
 
                             signal hit
                             onHit: {
-                                activity.audioEffects.play(Activity.url + "pickaxe.ogg")
+                                activity.audioEffects.play(Activity.url + "pickaxe."+ApplicationInfo.CompressedAudio)
                                 background.gotIt = true
                                 tuto.setState("Unzoom")
                             }
@@ -203,7 +203,7 @@ ActivityBase {
                             opacity: !modelData.isTarget ? 1 : (background.gotIt ? 0 : 1)
 
                             Component.onCompleted: {
-                                activity.audioEffects.play(Activity.url + "realrainbow.ogg")
+                                activity.audioEffects.play(Activity.url + "realrainbow."+ApplicationInfo.CompressedAudio)
                             }
 
                             ParallelAnimation {

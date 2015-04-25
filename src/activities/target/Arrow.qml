@@ -1,6 +1,6 @@
 /* GCompris - arrow.qml
  *
- * Copyright (C) 2014 Bruno coudoin
+ * Copyright (C) 2014 Bruno coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)

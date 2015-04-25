@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.cpp
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -18,19 +18,20 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
+#include "ActivityInfo.h"
+
 #include <QtDebug>
 #include <QQmlProperty>
 #include <QQmlEngine>
 #include <QQmlComponent>
 
-#include "ActivityInfo.h"
 #include "ApplicationSettings.h"
 
 ActivityInfo::ActivityInfo(QObject *parent):
 	QObject(parent),
-	m_dir(""),
     m_demo(true),
-    m_favorite(false)
+    m_favorite(false),
+    m_enabled(true)
 {
 }
 
@@ -46,16 +47,6 @@ void ActivityInfo::setName(const QString &name)
     if(!ApplicationSettings::getInstance()->isKioskMode())
         m_favorite = ApplicationSettings::getInstance()->isFavorite(m_name);
 	emit nameChanged();
-}
-
-QString ActivityInfo::dir() const
-{
-	return m_dir;
-}
-void ActivityInfo::setDir(const QString &dir)
-{
-	m_dir = dir;
-	emit dirChanged();
 }
 
 QString ActivityInfo::section() const
@@ -177,6 +168,16 @@ void ActivityInfo::setFavorite(const bool favorite)
   m_favorite = favorite;
   ApplicationSettings::getInstance()->setFavorite(m_name, m_favorite);
   emit favoriteChanged();
+}
+
+bool ActivityInfo::enabled() const
+{
+  return m_enabled;
+}
+void ActivityInfo::setEnabled(const bool enabled)
+{
+  m_enabled = enabled;
+  emit enabledChanged();
 }
 
 QStringList ActivityInfo::getSectionPath()

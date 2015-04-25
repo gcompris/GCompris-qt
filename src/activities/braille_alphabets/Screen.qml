@@ -1,6 +1,6 @@
 /* GCompris - Screen.qml
  *
- * Copyright (C) 2014 <Arkit Vora>
+ * Copyright (C) 2014 Arkit Vora <arkitvora123@gmail.com>
  *
  * Authors:
  *   Srishti Sethi <srishakatux@gmail.com> (GTK+ version)
@@ -89,6 +89,7 @@ ActivityBase {
             property alias questionItem: questionItem
             property string instructions
             property alias playableChar: playableChar
+            property alias score: score
             property bool brailleCodeSeen
         }
 
@@ -130,9 +131,9 @@ ActivityBase {
                             id: rect1
                             width:  charList.width / 13
                             height: ins.height
-                            border.width: 3
+                            border.width: 0
                             border.color: "black"
-                            color: "white"
+                            color: "#a5cbd9"
 
                             BrailleChar {
                                 id: ins
@@ -146,9 +147,7 @@ ActivityBase {
                         GCText {
                             text: letter
                             font.weight: Font.DemiBold
-                            style: Text.Outline
-                            styleColor: "white"
-                            color: "black"
+                            color: "#2a2a2a"
                             font.pointSize: NaN  // need to clear font.pointSize explicitly
                             font.pixelSize: Math.max(parent.width * 0.5, 24)
                             anchors {
@@ -199,9 +198,7 @@ ActivityBase {
                 font.pointSize: NaN  // need to clear font.pointSize explicitly
                 font.pixelSize: Math.max(playableChar.width * 0.4, 24)
                 font.weight: Font.DemiBold
-                style: Text.Outline
-                styleColor: "white"
-                color: "black"
+                color: "#2a2a2a"
                 text: playableChar.brailleChar
                 anchors {
                     top: playableChar.bottom
@@ -213,7 +210,7 @@ ActivityBase {
 
         Rectangle {
             id: instructionsArea
-            height: questionItem.height * 1.1
+            height: questionItem.height * 1.2
             width: parent.width / 1.1
             anchors {
                 top: charList.bottom
@@ -224,14 +221,13 @@ ActivityBase {
                 rightMargin: 10 * ApplicationInfo.ratio
             }
             color: "#55333333"
-            border.color: "black"
-            border.width: 2
+            border.width: 0
             radius: 5
 
             GCText {
                 id: questionItem
                 anchors.centerIn: parent
-                fontSize: regularSize
+                fontSize: largeSize
                 horizontalAlignment: Text.AlignHCenter
                 font.weight: Font.DemiBold
                 style: Text.Outline
@@ -241,8 +237,7 @@ ActivityBase {
                 wrapMode: Text.WordWrap
 
                 function initQuestion() {
-                    playableChar.brailleChar = ""
-                    playableChar.updateDotsFromBrailleChar()
+                    playableChar.clearLetter()
                     text = Activity.getCurrentTextQuestion()
                     if(items.instructions)
                         text += "\n" + items.instructions
@@ -261,6 +256,13 @@ ActivityBase {
 
         FirstScreen {
             id: first_screen
+        }
+
+        Score {
+            id: score
+            anchors.bottom: background.bottom
+            anchors.right: braille_map.left
+            visible: !(dialogMap.visible || first_screen.visible)
         }
 
         DialogHelp {

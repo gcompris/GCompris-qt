@@ -1,6 +1,6 @@
 /* GCompris - MagicHat.qml
  *
- * Copyright (C) 2014 <Thibaut ROMAIN>
+ * Copyright (C) 2014 Thibaut ROMAIN <thibrom@gmail.com>
  *
  * Authors:
  *   <Bruno Coudoin> (GTK+ version)
@@ -37,7 +37,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: Activity.url + "background.svgz"
+        source: Activity.url + "background.svg"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
         property int starSize: Math.min(rightLayout.width / 12,

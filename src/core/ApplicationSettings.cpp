@@ -1,6 +1,6 @@
 /****************************************************************************
 **
-** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).
+** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies). <qt@digia.org>
 ** Contact: http://www.qt-project.org/legal
 **
 ** This file is part of the examples of the Qt Toolkit.
@@ -36,7 +36,10 @@
 **
 ** $QT_END_LICENSE$
 **
-****************************************************************************/
+***************************************************************************/
+
+#include "ApplicationSettings.h"
+#include "ApplicationInfo.h"
 
 #include <QtCore/qmath.h>
 #include <QtCore/QUrl>
@@ -47,8 +50,6 @@
 
 #include <QSettings>
 #include <QStandardPaths>
-#include "ApplicationSettings.h"
-#include "ApplicationInfo.h"
 #include <QDebug>
 
 #define GC_DEFAULT_FONT "Andika-R.ttf"
@@ -304,6 +305,29 @@ void ApplicationSettings::notifyBarHiddenChanged()
 void ApplicationSettings::saveBaseFontSize()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, BASE_FONT_SIZE_KEY, m_baseFontSize);
+}
+
+void ApplicationSettings::saveActivityConfiguration(const QString &activity, const QVariantMap &data)
+{
+    qDebug() << "save configuration for:" << activity;
+    QMapIterator<QString, QVariant> i(data);
+    while (i.hasNext()) {
+        i.next();
+        updateValueInConfig(activity, i.key(), i.value());
+    }
+}
+
+QVariantMap ApplicationSettings::loadActivityConfiguration(const QString &activity)
+{
+    qDebug() << "load configuration for:" << activity;
+    m_config.beginGroup(activity);
+    QStringList keys = m_config.childKeys();
+    QVariantMap data;
+    foreach(const QString &key, keys) {
+        data[key] = m_config.value(key);
+    }
+    m_config.endGroup();
+    return data;
 }
 
 void ApplicationSettings::setFavorite(const QString &activity, bool favorite)

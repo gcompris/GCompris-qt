@@ -1,9 +1,9 @@
 /* GCompris - Instruments.qml
  *
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ *
  * Original activity in the Gtk+ version of GCompris by
  * Sylvain Dechy <syl.1@free.fr>
- *
- * Copyright (C) 2014 Bruno Coudoin
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -28,7 +28,7 @@ import "instruments.js" as Dataset
 FindIt {
     mode: "Instruments"
     dataset: Dataset
-    backgroundImg: "qrc:/gcompris/src/activities/instruments/resource/background.svgz"
+    backgroundImg: "qrc:/gcompris/src/activities/instruments/resource/background.svg"
     itemWidth: 130 * ApplicationInfo.ratio
     itemHeight: 130 * ApplicationInfo.ratio
 }

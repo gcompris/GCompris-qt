@@ -1,6 +1,6 @@
 /* GCompris - gnumch-factors.qml
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 Manuel Tondeur <manueltondeur@gmail.com>
  *
  * Authors:
  *   <THE GTK VERSION AUTHOR> (GTK+ version)

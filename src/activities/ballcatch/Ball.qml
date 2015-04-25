@@ -1,8 +1,8 @@
 /* gcompris - Ball.qml
 
- Copyright (C)
- 2003, 2014: Bruno Coudoin: initial version
- 2014: Johnny Jazeix: Qt port
+ Copyright (C) 2014 Johnny Jazeix <jazeix@gmail.com>
+
+ Bruno Coudoin: initial Gtk+ version
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -23,8 +23,8 @@ import GCompris 1.0
 
 Image {
     id: ball
-    source: "qrc:/gcompris/src/activities/ballcatch/resource/ball.svgz"
-    sourceSize.height: 100 * ApplicationInfo.ratio
+    source: "qrc:/gcompris/src/activities/ballcatch/resource/ball.svg"
+    sourceSize.height: 200 * ApplicationInfo.ratio
     z: 3
 
     readonly property real initScale: 1.0
@@ -84,7 +84,7 @@ Image {
 
     function reinitBall() {
         x = background.width / 2 - width / 2;
-        y = leftHand.y + 10;
+        y = leftHand.y - height / 3;
         ball.scale = initScale;
         ball.rotation = 0;
     }

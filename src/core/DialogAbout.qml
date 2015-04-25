@@ -1,6 +1,6 @@
 /* GCompris - DialogAbout.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -21,6 +21,12 @@
 
 import GCompris 1.0
 
+/**
+ * GCompris' full screen about dialog.
+ * @ingroup infrastructure
+ *
+ * @sa DialogBackground
+ */
 DialogBackground {
     visible: false
     title: qsTr("About GCompris")

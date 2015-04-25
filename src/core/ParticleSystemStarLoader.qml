@@ -1,6 +1,6 @@
 /* GCompris - ParticleSystemStarLoader.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -21,9 +21,26 @@
 import QtQuick 2.2
 import GCompris 1.0
 
+/**
+ * A QML loader that wraps ParticleSystemStar.
+ * @ingroup components
+ *
+ * Wrapper loading/activating a @ref ParticleSystemStarLoader only if
+ * the Android systems supports fragment shaders according to
+ * ApplicationInfo.hasShader.
+ *
+ * @inherit QtQuick.Loader
+ * @sa ParticleSystemStar ApplicationInfo.hasShader
+ */
 Loader {
     anchors.fill: parent
     active: ApplicationInfo.hasShader
+
+    /**
+     * Emits count particles from the particle emitter immediately.
+     *
+     * Cf. Emitter.burst
+     */
     function burst(val) {
         if(active)
             item.emitter.burst(val)

@@ -1,6 +1,6 @@
 /* GCompris - DialogHelp.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -21,11 +21,24 @@
 import QtQuick 2.2
 import GCompris 1.0
 
+/**
+ * GCompris' full screen help dialog.
+ * @ingroup infrastructure
+ *
+ * Used in Menu.qml as well as all activities to show more detailed
+ * information like author, manual, difficulty etc. as defined in each
+ * activities ActivityInfo.qml
+ *
+ * The help screens for the activities are generated automatically by
+ * the core and are started via the 'help' button on the Bar.
+ *
+ * @sa Bar.helpClicked, BarEnumContent.help, DialogBackground, ActivityInfo
+ */
 DialogBackground {
     visible: false
     title: activityInfo.title
     titleIcon: activityInfo.difficulty != 0 ? "qrc:/gcompris/src/core/resource/difficulty" +
-               activityInfo.difficulty + ".svgz" : ""
+               activityInfo.difficulty + ".svg" : ""
     property QtObject activityInfo: ActivityInfoTree.currentActivity
 
     function getIcon() {
@@ -34,6 +47,12 @@ DialogBackground {
         "' height='" + 100 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/activities/" + activityInfo.icon + "'/>"
         }
         return ""
+    }
+
+    function reformat(string) {
+        var text = string.replace(/^    (.*)\n/gm,'<ul><li>$1</li></ul>')
+        text = text.replace(/\n/gm,'<br/>')
+        return text
     }
 
     function getContent() {
@@ -49,12 +68,12 @@ DialogBackground {
             contentText += "<br/><br/>"
         }
         if(activityInfo.goal) {
-            contentText += "<b>" + qsTr("Goal") + ": </b>" + activityInfo.goal
+            var goal = reformat(activityInfo.goal)
+            contentText += "<b>" + qsTr("Goal") + ": </b>" + goal
             contentText += "<br/><br/>"
         }
         if(activityInfo.manual) {
-            var manual = activityInfo.manual.replace(/^    (.*)\n/gm,'<ul><li>$1</li></ul>')
-            manual = manual.replace(/\n/gm,'<br/>')
+            var manual = reformat(activityInfo.manual)
             contentText += "<b>" + qsTr("Manual") + ": </b>" + manual
             contentText += "<br/><br/>"
         }

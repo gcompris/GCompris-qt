@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfoTree.cpp
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -18,15 +18,16 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
+#include "ActivityInfoTree.h"
+#include "ApplicationInfo.h"
+
 #include <QtDebug>
 #include <QQmlProperty>
 #include <QQmlComponent>
 #include <QResource>
+#include <QStandardPaths>
 #include <QCoreApplication>
 #include <QTextStream>
-
-#include "ActivityInfoTree.h"
-#include "ApplicationInfo.h"
 
 ActivityInfoTree::ActivityInfoTree(QObject *parent) : QObject(parent),
 	m_currentActivity(NULL)
@@ -107,7 +108,7 @@ void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
 									  const QDir &menuDir, const QString &menuFile)
 {
 	QQmlComponent component(engine,
-							QUrl::fromLocalFile(menuDir.absolutePath() + "/" + menuFile));
+							QUrl::fromLocalFile(menuDir.absolutePath() + '/' + menuFile));
 	QObject *object = component.create();
 	if(component.isReady()) {
 		if(QQmlProperty::read(object, "section").toString() == "/") {
@@ -158,6 +159,16 @@ void ActivityInfoTree::filterLockedActivities()
     for(auto activity: m_menuTree) {
         // Remove non free activities if needed. We need to already have a menuTree filled!
         if(!activity->demo()) {
+            m_menuTree.removeOne(activity);
+        }
+    }
+    emit menuTreeChanged();
+}
+
+void ActivityInfoTree::filterEnabledActivities()
+{
+    for(auto activity: m_menuTree) {
+        if(!activity->enabled()) {
             m_menuTree.removeOne(activity);
         }
     }
@@ -248,6 +259,7 @@ QObject *ActivityInfoTree::menuTreeProvider(QQmlEngine *engine, QJSEngine *scrip
 
 	menuTree->filterByTag("favorite");
     menuTree->filterLockedActivities();
+    menuTree->filterEnabledActivities();
     return menuTree;
 }
 
@@ -261,6 +273,10 @@ void ActivityInfoTree::init()
 
     if(!QResource::registerResource(ApplicationInfo::getFilePath("activities.rcc")))
         qDebug() << "Failed to load the resource file activities.rcc";
+
+    if(QResource::registerResource(QStandardPaths::writableLocation(QStandardPaths::DataLocation) +
+                                    "/data2/" + QString("full-%1.rcc").arg(COMPRESSED_AUDIO)))
+        qDebug() << "Registered the pre-download " << QString("full-%1.rcc").arg(COMPRESSED_AUDIO);;
 
     qmlRegisterSingletonType<QObject>("GCompris", 1, 0, "ActivityInfoTree", menuTreeProvider);
 	qmlRegisterType<ActivityInfo>("GCompris", 1, 0, "ActivityInfo");

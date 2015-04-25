@@ -1,6 +1,6 @@
 /* GCompris - File.cpp
  *
- * Copyright (C) 2014 Holger Kaelberer
+ * Copyright (C) 2014 Holger Kaelberer <holger.k@elberer.de>
  *
  * Authors:
  *   Holger Kaelberer <holger.k@elberer.de>
@@ -24,7 +24,7 @@
 #include <QFile>
 #include <QString>
 #include <QTextStream>
-#include <QtQml>
+#include <QQmlComponent>
 
 File::File(QObject *parent) : QObject(parent)
 {
@@ -60,7 +60,7 @@ void File::setName(const QString &str)
 
 QString File::read(const QString& name)
 {
-    if (name != QString())
+    if (!name.isEmpty())
         setName(name);
 
     if (m_name.isEmpty()){
@@ -92,7 +92,7 @@ QString File::read(const QString& name)
 
 bool File::write(const QString& data, const QString& name)
 {
-    if (name != QString())
+    if (!name.isEmpty())
         setName(name);
 
     if (m_name.isEmpty()) {

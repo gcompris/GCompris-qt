@@ -40,7 +40,7 @@ Item {
         spacing: 8
         BarButton {
             id: ok
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svgz";
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
             sourceSize.width: 75 * ApplicationInfo.ratio
             visible: true
             anchors {

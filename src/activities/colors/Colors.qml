@@ -1,9 +1,9 @@
 /* GCompris - Colors.qml
  *
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ *
  * Original activity in the Gtk+ version of GCompris by
  * Pascal Georges <pascal.georges1@free.fr>
- *
- * Copyright (C) 2014 Bruno Coudoin
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ import "colors.js" as Dataset
 FindIt {
     mode: "Colors"
     dataset: Dataset
-    backgroundImg: "qrc:/gcompris/src/activities/colors/resource/background.svgz"
+    backgroundImg: "qrc:/gcompris/src/activities/colors/resource/background.svg"
     itemWidth: 130 * ApplicationInfo.ratio
     itemHeight: 130 * ApplicationInfo.ratio
 }

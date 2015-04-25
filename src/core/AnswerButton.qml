@@ -2,7 +2,7 @@
   Copyed in GCompris from Touch'n'learn
 
     Touch'n'learn - Fun and easy mobile lessons for kids
-    Copyright (C) 2010, 2011 by Alessandro Portale
+    Copyright (C) 2010, 2011 by Alessandro Portale <alessandro@casaportale.de>
     http://touchandlearn.sourceforge.net
 
     This file is part of Touch'n'learn
@@ -71,7 +71,7 @@ Item {
         id: particles
     }
     Image {
-        source: "qrc:/gcompris/src/core/resource/button.svgz"
+        source: "qrc:/gcompris/src/core/resource/button.svg"
         sourceSize { height: parent.height; width: parent.width }
         width: sourceSize.width
         height: sourceSize.height

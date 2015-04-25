@@ -112,7 +112,7 @@ ActivityBase {
                                       canal.paintedHeight * 0.23
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.horizontalCenterOffset: parent.paintedWidth * 0.035
-                color: "blue"
+                color: "#4f76d6"
                 width: parent.paintedWidth * 0.205
                 height: minHeight
                 state: "down"
@@ -145,7 +145,7 @@ ActivityBase {
 
             Lock {
                 id: lock1
-                color: "red"
+                color: "#dfb625"
                 anchors.bottomMargin: (background.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.03
                 anchors.horizontalCenterOffset: - parent.paintedWidth * 0.16
@@ -179,7 +179,7 @@ ActivityBase {
 
             Lock {
                 id: lock2
-                color: "red"
+                color: "#dfb625"
                 anchors.bottomMargin: (background.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.03
                 anchors.horizontalCenterOffset: parent.paintedWidth * 0.22
@@ -213,7 +213,7 @@ ActivityBase {
 
             Lock {
                 id: door1
-                color: "green"
+                color: "#31cb25"
                 anchors.bottomMargin: (background.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.2
                 anchors.horizontalCenterOffset: - parent.paintedWidth * 0.07
@@ -246,7 +246,7 @@ ActivityBase {
 
             Lock {
                 id: door2
-                color: "green"
+                color: "#31cb25"
                 anchors.bottomMargin: (background.height - canal.paintedHeight) / 2 +
                                       canal.paintedHeight * 0.2
                 anchors.horizontalCenterOffset: parent.paintedWidth * 0.14

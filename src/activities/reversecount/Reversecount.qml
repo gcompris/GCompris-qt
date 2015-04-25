@@ -98,7 +98,7 @@ ActivityBase {
                 y: modelData[1] * (background.height- background.height/5) / 5
                 width: background.width / 5
                 height: background.height / 5
-                source: Activity.url + "iceblock.svgz"
+                source: Activity.url + "iceblock.svg"
             }
         }
 

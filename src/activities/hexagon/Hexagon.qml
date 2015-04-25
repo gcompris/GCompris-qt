@@ -1,6 +1,6 @@
 /* GCompris - Hexagon.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Christof Petig and Ingo Konrad (GTK+ version)
@@ -33,7 +33,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: "qrc:/gcompris/src/activities/menu/resource/background.svgz"
+        source: "qrc:/gcompris/src/activities/menu/resource/background.svg"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
         signal start

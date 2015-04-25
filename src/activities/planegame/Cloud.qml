@@ -1,6 +1,7 @@
 /* gcompris - Cloud.qml
 
- Copyright (C)
+ Copyright (C) 2014 Johnny Jazeix <jazeix@gmail.com>
+
  2003, 2014: Bruno Coudoin: initial version
  2014: Johnny Jazeix: Qt port
 
@@ -82,14 +83,14 @@ Image {
             name: "normal"
             PropertyChanges {
                 target: cloud
-                source: Activity.url + "resource/cloud.svgz"
+                source: Activity.url + "resource/cloud.svg"
             }
         },
         State {
             name: "storm"
             PropertyChanges {
                 target: cloud
-                source: Activity.url + "resource/cloud_storm.svgz"
+                source: Activity.url + "resource/cloud_storm.svg"
             }
             StateChangeScript {
                 script: stormy.start()

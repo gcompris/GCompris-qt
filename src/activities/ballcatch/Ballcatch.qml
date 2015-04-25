@@ -1,8 +1,8 @@
 /* gcompris - Ballcatch.qml
 
- Copyright (C)
- 2003, 2014: Bruno Coudoin: initial version
- 2014: Johnny Jazeix: Qt port
+ Copyright (C) 2014 Johnny Jazeix <jazeix@gmail.com>
+
+ Bruno Coudoin: initial Gtk+ version
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -42,7 +42,7 @@ ActivityBase {
         signal stop
         focus: true
         fillMode: Image.PreserveAspectCrop
-        source: "qrc:/gcompris/src/activities/ballcatch/resource/beach1.svgz"
+        source: "qrc:/gcompris/src/activities/ballcatch/resource/beach1.svg"
         sourceSize.width: parent.width
 
         Component.onCompleted: {
@@ -110,9 +110,9 @@ ActivityBase {
         Image {
             id: tux
             x: background.width / 2 - width / 2
-            y: background.height / 3
-            sourceSize.height: 100 * ApplicationInfo.ratio
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svgz"
+            y: background.height / 2 - height / 4
+            sourceSize.height: 200 * ApplicationInfo.ratio
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg"
         }
 
         Image {
@@ -120,7 +120,7 @@ ActivityBase {
             y: background.height - 1.5 * height
             z: 5
             sourceSize.height: 150 * ApplicationInfo.ratio
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svgz"
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svg"
 
             NumberAnimation {
                 id: leftHandAnimation
@@ -160,7 +160,7 @@ ActivityBase {
             y: background.height - 1.5 * height
             z: 5
             sourceSize.height: 150 * ApplicationInfo.ratio
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svgz"
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/hand.svg"
 
             function animate(newTime) {
                 rightHandAnimation.duration = newTime
@@ -195,9 +195,9 @@ ActivityBase {
 
         Image {
             id: leftShift
-            x: 10
-            y: rightHand.y
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svgz"
+            x: background.width / 4 - width 
+            y: rightHand.y - height / 2
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svg"
             opacity: items.leftPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
         }
@@ -205,9 +205,9 @@ ActivityBase {
         Image {
             id: rightShift
             mirror: true
-            x: background.width - width - 10
-            y: rightHand.y
-            source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svgz"
+            x: background.width - background.width / 4
+            y: rightHand.y - height / 2
+            source: "qrc:/gcompris/src/activities/ballcatch/resource/arrow_key.svg"
             opacity: items.rightPressed ? 1 : 0.5
             visible: !ApplicationInfo.isMobile
         }

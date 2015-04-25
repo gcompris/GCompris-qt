@@ -34,8 +34,11 @@ ActivityBase {
 
     }
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
+        source: "qrc:/gcompris/src/activities/menu/resource/background.svg"
+        sourceSize.width: parent.width
+        fillMode: Image.PreserveAspectCrop
         anchors.fill: parent
         signal start
         signal stop
@@ -84,9 +87,8 @@ ActivityBase {
         /* Target text */
         Rectangle {
             id: questionItemBackground
-            color: "#C0b7b353"
-            border.color: "black"
-            border.width: 2
+            color: "#c0ceb339"
+            border.width: 0
             radius: 10
             z: 10
             anchors {
@@ -121,7 +123,7 @@ ActivityBase {
         /* The clock */
         Image {
             id: clock
-            source: Activity.url + "clock_bg.svgz"
+            source: Activity.url + "clock_bg.svg"
             anchors.centerIn: parent
             fillMode: Image.PreserveAspectFit
             sourceSize.height: parent.height
@@ -131,7 +133,7 @@ ActivityBase {
             /* The yellow zones */
             Image {
                 id: zones
-                source: Activity.url + "clock_zones.svgz"
+                source: Activity.url + "clock_zones.svg"
                 anchors.centerIn: parent
                 fillMode: Image.PreserveAspectFit
                 sourceSize.height: parent.height * 0.7
@@ -142,7 +144,7 @@ ActivityBase {
             /* The setter */
             Image {
                 id: setter
-                source: Activity.url + "clock_setter.svgz"
+                source: Activity.url + "clock_setter.svg"
                 anchors {
                     verticalCenter: parent.verticalCenter
                     left: parent.right
@@ -174,7 +176,7 @@ ActivityBase {
                                                     (index + 1) * 2 * Math.PI / 60)
                     }
                     z: 4
-                    color: "red"
+                    color: "#d56a3a"
                     visible: items.bar.level < 6
                 }
             }
@@ -183,7 +185,7 @@ ActivityBase {
                 model: 60
 
                 Rectangle {
-                    color: "red"
+                    color: "#d56a3a"
                     width: clock.radius * 0.02
                     height: 2
                     rotation: 90 + (index + 1) * 360 / 60
@@ -220,7 +222,7 @@ ActivityBase {
                                                     (index + 1) * 2 * Math.PI / 12)
                     }
                     z: 4
-                    color: "blue"
+                    color: "#3a81d5"
                     visible: items.bar.level < 7
                 }
             }
@@ -229,7 +231,7 @@ ActivityBase {
                 model: 12
 
                 Rectangle {
-                    color: "blue"
+                    color: "#3a81d5"
                     width: clock.radius * 0.03
                     height: 4
                     rotation: 90 + (index + 1) * 360 / 12
@@ -262,7 +264,7 @@ ActivityBase {
                     verticalCenterOffset: clock.radius * 0.2
                 }
                 z: 4
-                color: "black"
+                color: "#2a2a2a"
                 visible: items.bar.level < 4
             }
 
@@ -273,7 +275,7 @@ ActivityBase {
                 height: clock.radius * 0.2
                 width: height / 10
                 radius: width / 2
-                color: "blue"
+                color: "#3a81d5"
                 transform: Rotation {
                     id: roth
                     origin.x: h.width / 2
@@ -302,7 +304,7 @@ ActivityBase {
                 height: clock.radius * 0.28
                 width: height / 20
                 radius: width / 2
-                color: "red"
+                color: "#d56a3a"
                 transform: Rotation {
                     id: rotm
                     origin.x: m.width / 2
@@ -331,7 +333,7 @@ ActivityBase {
                 height: clock.radius * 0.32
                 width: height / 30
                 radius: width / 2
-                color: "green"
+                color: "#2ccf4b"
                 transform: Rotation {
                     id: rots
                     origin.x: s.width / 2
@@ -357,7 +359,7 @@ ActivityBase {
             /* Center */
             Rectangle {
                 id: center
-                color: "black"
+                color: "#2a2a2a"
                 height: clock.radius / 25
                 width: height
                 radius: width / 2

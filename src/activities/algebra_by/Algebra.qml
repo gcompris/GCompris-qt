@@ -1,6 +1,6 @@
 /* GCompris - Algebra.qml
  *
- * Copyright (C) 2014 Aruna Sankaranarayanan and Bruno Coudoin
+ * Copyright (C) 2014 Aruna Sankaranarayanan <aruna.evam@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -33,7 +33,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: "qrc:/gcompris/src/activities/algebra_by/resource/background.svgz"
+        source: "qrc:/gcompris/src/activities/menu/resource/background.svg"
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: parent.width
         signal start

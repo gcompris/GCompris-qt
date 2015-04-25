@@ -1,6 +1,6 @@
 /* GCompris - main.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -26,6 +26,21 @@ import QtQml 2.2
 import GCompris 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
 
+/**
+ * GCompris' main QML file defining the top level window.
+ * @ingroup infrastructure
+ *
+ * Handles application start (Component.onCompleted) and shutdown (onClosing)
+ * on the QML layer.
+ *
+ * Contains the central GCAudio objects audio effects and audio voices.
+ *
+ * Contains the top level StackView presenting and animating GCompris'
+ * full screen views.
+ *
+ * @sa BarButton, BarEnumContent
+ * @inherit QtQuick.Window
+ */
 Window {
     id: main
     width: 800
@@ -33,6 +48,8 @@ Window {
     minimumWidth: 400
     minimumHeight: 400
     title: "GCompris"
+
+    /// @cond INTERNAL_DOCS
 
     property var applicationState: Qt.application.state
 
@@ -61,13 +78,13 @@ Window {
             }
 
             function playWelcome() {
-                audioVoices.append(ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/welcome.ogg"));
+                audioVoices.append(ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/misc/welcome.$CA"));
             }
         }
 
         Component.onCompleted: {
             if(ApplicationSettings.isAudioEffectsEnabled)
-                append("qrc:/gcompris/src/core/resource/intro.ogg")
+                append(ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/core/resource/intro.$CA"))
 
             if (DownloadManager.areVoicesRegistered())
                 delayedWelcomeTimer.playWelcome();
@@ -86,7 +103,7 @@ Window {
 
     function playIntroVoice(name) {
         name = name.split("/")[0]
-        audioVoices.append(ApplicationInfo.getAudioFilePath("voices/$LOCALE/intro/" + name + ".ogg"))
+        audioVoices.append(ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/intro/" + name + ".$CA"))
     }
 
     Component.onCompleted: {
@@ -106,17 +123,17 @@ Window {
                         + qsTr("Have Fun!")
                         + "\n"
                         + qsTr("Your current language is %1 (%2).")
-                          .arg(Qt.locale(ApplicationSettings.locale).nativeLanguageName)
-                          .arg(ApplicationSettings.locale)
+                          .arg(Qt.locale(ApplicationInfo.localeShort).nativeLanguageName)
+                          .arg(ApplicationInfo.localeShort)
                         + "\n"
                         + qsTr("Do you want to download the corresponding sound files now?"),
-                        "YES",
+                        qsTr("Yes"),
                         function() {
                             if (DownloadManager.downloadResource(
-                                        DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
+                                        DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort)))
                                 var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                         },
-                        "NO", null,
+                        qsTr("No"), null,
                         function() { pageView.currentItem.focus = true }
             );
         }
@@ -133,11 +150,12 @@ Window {
             }
         }
 
+        focus: ApplicationInfo.QTVersion >= "5.4.0"
+
         delegate: StackViewDelegate {
             id: root
             function getTransition(properties)
             {
-                properties.exitItem.pause()
                 audioVoices.clearQueue()
                 if(!properties.exitItem.isDialog) {
                     if(!properties.enterItem.isDialog) {
@@ -165,7 +183,6 @@ Window {
             function transitionFinished(properties)
             {
                 properties.exitItem.opacity = 1
-                properties.enterItem.play()
                 if(!properties.enterItem.isDialog) {
                     properties.exitItem.stop()
                 }
@@ -250,4 +267,6 @@ Window {
             property Component replaceTransition: pushHTransition
         }
     }
+
+    /// @endcond
 }

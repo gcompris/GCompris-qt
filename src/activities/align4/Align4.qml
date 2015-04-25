@@ -1,6 +1,6 @@
 /* GCompris - align4.qml
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 Bharath M S <brat.197@gmail.com>
  *
  * Authors:
  *   Laurent Lacheny <laurent.lacheny@wanadoo.fr> (GTK+ version)

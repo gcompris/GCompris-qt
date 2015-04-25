@@ -1,6 +1,6 @@
 /* GCompris - align4-2players.qml
  *
- * Copyright (C) 2014 Bharath M S
+ * Copyright (C) 2014 Bharath M S <brat.197@gmail.com>
  *
  * Authors:
  *   Laurent Lacheny <laurent.lacheny@wanadoo.fr> (GTK+ version)
@@ -107,7 +107,7 @@ ActivityBase {
                         width: items.cellSize
                         height: items.cellSize
                         border.color: "#FFFFFFFF"
-                        border.width: 1 * ApplicationInfo.ratio
+                        border.width: 0
                         Piece {
                             anchors.fill: parent
                             state: stateTemp

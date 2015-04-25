@@ -1,3 +1,21 @@
+#!/usr/bin/python
+#
+# GCompris - l10n-fetch-po-files.py
+#
+# Copyright (C) 2015 Trijita org <jktjkt@trojita.org>
+#
+#   This program is free software; you can redistribute it and/or modify
+#   it under the terms of the GNU General Public License as published by
+#   the Free Software Foundation; either version 3 of the License, or
+#   (at your option) any later version.
+#
+#   This program is distributed in the hope that it will be useful,
+#   but WITHOUT ANY WARRANTY; without even the implied warranty of
+#   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+#   GNU General Public License for more details.
+#
+#   You should have received a copy of the GNU General Public License
+#   along with this program; if not, see <http://www.gnu.org/licenses/>.
 import os
 import re
 import subprocess
@@ -10,7 +28,7 @@ Run me from GCompris's top-level directory.
 
 
 SVN_PATH = "svn://anonsvn.kde.org/home/kde/trunk/l10n-kf5/"
-SOURCE_PO_PATH = "/messages/kdereview/gcompris_qt.po"
+SOURCE_PO_PATH = "/messages/extragear-edu/gcompris_qt.po"
 OUTPUT_PO_PATH = "./po/"
 OUTPUT_PO_PATTERN = "gcompris_%s.po"
 

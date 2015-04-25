@@ -108,6 +108,9 @@ function initLevel() {
     // Shuffle not to ask the question in the model order
     currentDataSet = Core.shuffle(currentDataSet)
 
+    items.score.numberOfSubLevels = currentDataSet.length;
+    items.score.currentSubLevel = 0;
+
     items.playableChar.isLetter = currentDataSet[0].letter >= "A" && currentDataSet[0].letter <= "Z"
     // Trig the next question
     items.questionItem.opacity = 0
@@ -136,6 +139,7 @@ function nextQuestion() {
         // We just set the opacity to 0, the questionItem will then grab
         // the new question by itself
         items.questionItem.opacity = 0
+        items.score.currentSubLevel ++
     }
 }
 

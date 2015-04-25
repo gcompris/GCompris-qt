@@ -1,6 +1,6 @@
 /****************************************************************************
 **
-** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies).
+** Copyright (C) 2013 Digia Plc and/or its subsidiary(-ies). <qt@digia.org>
 ** Contact: http://www.qt-project.org/legal
 **
 ** This file is part of the examples of the Qt Toolkit.
@@ -36,7 +36,9 @@
 **
 ** $QT_END_LICENSE$
 **
-****************************************************************************/
+***************************************************************************/
+
+#include "ApplicationInfo.h"
 
 #include <QtCore/QtMath>
 #include <QtCore/QUrl>
@@ -45,7 +47,6 @@
 #include <QtGui/QScreen>
 #include <QtCore/QLocale>
 #include <QtQuick/QQuickWindow>
-#include "ApplicationInfo.h"
 
 #include <qmath.h>
 #include <QDebug>
@@ -64,14 +65,15 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     m_isMobile = true;
 #endif
 
-#if defined(Q_OS_LINUX) || defined(Q_OS_UNIX)
+#if defined(Q_OS_ANDROID)
+    // Put android before checking linux/unix as it is also a linux
+    m_platform = Android;
+#elif (defined(Q_OS_LINUX) || defined(Q_OS_UNIX))
     m_platform = Linux;
 #elif defined(Q_OS_WIN)
     m_platform = Windows;
 #elif defined(Q_OS_MAC)
     m_platform = MacOSX;
-#elif defined(Q_OS_ANDROID)
-    m_platform = Android;
 #elif defined(Q_OS_IOS)
     m_platform = Ios;
 #elif defined(Q_OS_BLACKBERRY)
@@ -91,11 +93,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     qreal width = qMin(rect.width(), rect.height());
     qreal dpi = qApp->primaryScreen()->logicalDotsPerInch();
     m_fontRatio = m_isMobile ? qMax(qreal(1.0), qMin(height*refDpi/(dpi*refHeight), width*refDpi/(dpi*refWidth))) : 1;
-    m_sliderHandleWidth = getSizeWithRatio(70);
-    m_sliderHandleHeight = getSizeWithRatio(87);
-    m_sliderGapWidth = getSizeWithRatio(100);
     m_isPortraitMode = m_isMobile ? rect.height() > rect.width() : false;
-    m_hMargin =  m_isPortraitMode ? 20 * ratio() : 50 * ratio();
     m_applicationWidth = m_isMobile ? rect.width() : 1120;
 
     if (m_isMobile)
@@ -144,13 +142,14 @@ QString ApplicationInfo::getAudioFilePath(const QString &file)
 
     QString filename = file;
     filename.replace("$LOCALE", localeName);
-    return getResourceDataPath() + "/" + filename;
+    filename.replace("$CA", COMPRESSED_AUDIO);
+
+    if(file.startsWith("/") || file.startsWith("qrc:") || file.startsWith(":"))
+        return filename;
+    else
+        return getResourceDataPath() + '/' + filename;
 }
 
-// Given a file name, if it contains $LOCALE it is replaced by
-// the current locale like 'en' while in the English locale.
-// e.g. qrc:/foo/bar_$LOCALE.json => qrc:/foo/bar_en.json
-// FIXME should check long locale first
 QString ApplicationInfo::getLocaleFilePath(const QString &file)
 {
     QString localeShortName = localeShort();
@@ -181,9 +180,7 @@ void ApplicationInfo::setIsPortraitMode(const bool newMode)
 {
     if (m_isPortraitMode != newMode) {
         m_isPortraitMode = newMode;
-        m_hMargin = m_isPortraitMode ? 20 * ratio() : 50 * ratio();
         emit portraitModeChanged();
-        emit hMarginChanged();
     }
 }
 
@@ -215,7 +212,7 @@ QString ApplicationInfo::getVoicesLocale(const QString &locale)
         _locale = QLocale::system().name();
     }
     // locales we have country-specific voices for:
-    if (_locale.startsWith("pt_BR") || _locale.startsWith("zh_CN"))
+    if (_locale.startsWith(QLatin1String("pt_BR")) || _locale.startsWith(QLatin1String("zh_CN")))
         return QLocale(_locale).name();
     // short locale for all the rest:
     return localeShort(_locale);

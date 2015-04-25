@@ -1,0 +1,76 @@
+/**
+@mainpage GCompris-qt Core Documentation
+
+The GCompris core comprises different classes and QML components, that can
+be used by activities for their purposes. The core can roughly be
+subdivided into
+<ol>
+  <li>
+      @ref infrastructure, that consists of some fundamental source code
+      infrastructure needed by the bare GCompris application to run and
+  </li>
+  <li>
+      @ref components that define some common building blocks for activities
+      and thus assure a consistent integration into the GCompris ecosystem.
+  </li>
+</ol>
+
+Accordingly, activity developers should first have a look at the
+@ref components section to get an overview of the activity interface they
+have to implement.
+
+Most of the classes from the @ref infrastructure section are not of immediate
+use for activity developers, unless they want to contribute/extend core
+functionalities. One exception is the ApplicationInfo singleton
+that contains some accessor methods to the native layer, that are often of
+use for concrete activitites.
+*/
+
+/**
+@defgroup infrastructure Core Infrastructure
+
+This section contains all objects that implement internal core functions
+needed by the bare GCompris application to run.
+
+Among the more important classes are the following:
+
+<ul>
+  <li>
+    The ApplicationSettings singleton maintains the persistent settings of
+    GCompris.
+  </li>
+
+  <li>
+    ApplicationInfo is kind of a general purpose container for helper functions
+    often accessing native platform properties that are needed in many places
+    of GCompris.
+  </li>
+</ul>
+*/
+
+/**
+@defgroup components Core QML Components
+This section contains all core QML components, that encapsulate common
+behaviour and can be used by activities in order to integrate well into the
+GCompris ecosystem.
+
+Each activity has to provide meta information about itself by implementing the
+ActivityInfo template and derive from ActivityBase as a container for its
+QML scene.
+
+Each activity @em must add a navigation Bar to its viewport. Activities that
+support sublevels should use a Score element. The Bonus component can be used
+for audio feedback upon winning/loosing. If an activity uses per-activity
+configuration it should use DialogActivityConfig.
+
+For audio playback the GCAudio wrapper should be used, and GCText's purpose is
+to unify Text handling in GCompris.
+
+Besides these, there are more components that provide controls or
+styles for GCompris.
+
+Cf. Template.qml for a skeleton that can also be used as a starting point for
+developing new activities.
+
+Last but not least have a look at the existing activities to learn by example.
+*/

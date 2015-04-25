@@ -1,6 +1,6 @@
 /* GCompris - drawnumber.qml
  *
- * Copyright (C) 2014 Emmanuel Charruau
+ * Copyright (C) 2014 Emmanuel Charruau <echarruau@gmail.com>
  *
  * Authors:
  *   Olivier Ponchaut <opvg@mailoo.org> (GTK+ version)

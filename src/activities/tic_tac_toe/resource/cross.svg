@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:docname="cross.svg"
+   inkscape:export-filename="/datas/wiki/cross.png"
+   viewBox="0 0 150 150"
+   sodipodi:version="0.32"
+   inkscape:export-xdpi="90.000000"
+   version="1.0"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-ydpi="90.000000"
+   inkscape:version="0.91 r13725"
+   width="150"
+   height="150">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient1697">
+      <stop
+         style="stop-color:#db4d0e;stop-opacity:1"
+         offset="0.0000000"
+         id="stop1698" />
+      <stop
+         style="stop-color:#762907;stop-opacity:1"
+         offset="1.0000000"
+         id="stop1699" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1697"
+       id="linearGradient4165"
+       x1="43.070263"
+       y1="-43.535252"
+       x2="43.070263"
+       y2="18.303106"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.6887358,0,0,1.6887358,-1.430018,-21.15238)" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:grid-points="true"
+     inkscape:pageshadow="2"
+     inkscape:window-y="0"
+     pagecolor="#ffffff"
+     inkscape:window-height="768"
+     inkscape:grid-bbox="true"
+     inkscape:zoom="1.4392362"
+     inkscape:window-x="0"
+     showgrid="false"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="58.092669"
+     inkscape:cy="89.701501"
+     showguides="false"
+     inkscape:window-width="1366"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px"
+     inkscape:window-maximized="0" />
+  <g
+     id="layer1"
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     transform="translate(0,116)">
+    <path
+       inkscape:connector-curvature="0"
+       d="m 5.0935499,-87.869742 c -1.6235192,1.960313 -1.4767117,4.836014 0.3411117,6.619296 L 45.400867,-41.284238 5.4346616,-1.3180331 C 4.5063195,-0.3983273 3.9838573,0.85385507 3.9838573,2.162171 c 0,1.3039962 0.5224622,2.5561786 1.4508043,3.4758843 L 27.153547,27.361262 c 0.919708,0.928342 2.176208,1.450804 3.480204,1.450804 1.308315,0 2.560497,-0.522462 3.480204,-1.450804 l 39.966207,-39.966208 39.966208,39.966208 c 0.9197,0.928342 2.17189,1.450804 3.47588,1.450804 1.30832,0 2.5605,-0.522462 3.48021,-1.450804 l 21.7232,-21.7232067 c 0.92835,-0.9197057 1.45081,-2.1718881 1.45081,-3.4758843 0,-1.30831593 -0.52246,-2.5604983 -1.45081,-3.4802041 l -39.96621,-39.9662049 39.96621,-39.966208 c 0.92835,-0.919706 1.45081,-2.171889 1.45081,-3.480204 0,-1.303997 -0.52246,-2.556179 -1.45081,-3.475885 l -21.7232,-21.723205 c -0.91971,-0.92834 -2.17189,-1.45081 -3.48021,-1.45081 -1.30399,0 -2.55618,0.52247 -3.47588,1.45081 L 74.080162,-69.963534 34.113955,-109.92974 c -0.919707,-0.92834 -2.171889,-1.45081 -3.480204,-1.45081 -1.303996,0 -2.560496,0.52247 -3.480204,1.45081 L 5.4346616,-88.206535 c -0.1208999,0.107944 -0.2331649,0.220211 -0.3411117,0.336793 z"
+       style="fill:#f07c49;fill-opacity:1;stroke:url(#linearGradient4165);stroke-width:4;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path1349" />
+  </g>
+  <metadata
+     id="metadata11550">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:date>2008-05-26T11:40:39</dc:date>
+        <dc:description />
+        <dc:source>https://openclipart.org/detail/16982/cross-by-jean_victor_balin</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>jean_victor_balin</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>cancel</rdf:li>
+            <rdf:li>delete</rdf:li>
+            <rdf:li>icon</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

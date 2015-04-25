@@ -1,0 +1,587 @@
+/* GCompris - TicTacToe.js
+ *
+ * Copyright (C) 2014 Pulkit Gupta <pulkitgenius@gmail.com>
+ *
+ * Authors:
+ *   Pulkit Gupta <pulkitgenius@gmail.com>
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
+.pragma library
+.import QtQuick 2.0 as Quick
+
+var currentLevel = 0
+var numberOfLevel = 5
+var items
+
+var url = "qrc:/gcompris/src/activities/tic_tac_toe/resource/"
+
+var currentPiece
+var currentPlayer
+var currentLocation
+var twoPlayer
+var track = []      //For tracking moves
+var hx      //x co-ordinate needed for creating first image when playSecond is enabled
+var vy      //y co-ordinate needed for creating first image when playSecond is enabled
+var stopper     //For stopping game when doing reset
+
+function start(items_, twoPlayer_) {
+    
+    items = items_
+    currentLevel = 1
+    currentPlayer = 1
+    items.player1_score = 0
+    items.player2_score = 0
+    twoPlayer = twoPlayer_
+    numberOfLevel = 6
+    items.playSecond = 0
+    
+    initLevel()
+}
+
+function stop() {
+}
+
+function initLevel() {
+    
+    items.bar.level = currentLevel
+    items.counter = 0
+    items.gameDone = false
+    items.pieces.clear()
+    track = []
+    for(var y = 0;  y < items.rows; y++) {
+        for(var x = 0;  x < items.columns; x++) {
+            items.pieces.append({'stateTemp': "invisible"})
+        }
+    }
+    if (items.playSecond) 
+        initiatePlayer2()
+    else 
+        initiatePlayer1()
+    stopper = 0
+    if (items.playSecond)
+        changePlayToSecond()
+}
+
+function nextLevel() {
+    if(numberOfLevel <= ++currentLevel ) {
+        currentLevel = 1
+    }
+    reset();
+}
+
+function previousLevel() {
+    if(--currentLevel < 1) {
+        currentLevel = numberOfLevel - 1
+    }
+    reset();
+}
+
+function reset() {
+    
+    stopper = 1
+    hx = items.repeater.itemAt(1).x     
+    vy = items.repeater.itemAt(3).y
+    stopAnimations()
+    items.player1image.rotation = 0
+    items.player2image.rotation = 0
+    items.pieces.clear() // Clear the board
+    if (items.playSecond)
+        items.playSecond = 0
+    else
+        items.playSecond = 1
+    initLevel()
+}
+
+function stopAnimations() {
+    
+    items.magnify.stop()
+    items.player1turn.stop()
+    items.player2turn.stop()
+    items.player1shrink.stop()
+    items.player2shrink.stop()
+    items.rotateKonqi.stop()
+    items.rotateTux.stop()
+}
+
+//Initial values at the start of game when its player 1 turn
+function initiatePlayer1() {
+    
+    items.changeScalePlayer1.scale = 1.4
+    items.changeScalePlayer2.scale = 1.0
+    items.player1.state = "first"
+    items.player2.state = "second"
+    items.rotateKonqi.start()
+}
+
+//Initial values at the start of game when its player 1 turn
+function initiatePlayer2() {
+    
+    items.changeScalePlayer1.scale = 1.0
+    items.changeScalePlayer2.scale = 1.4
+    items.player1.state = "second"
+    items.player2.state = "first"
+    items.rotateTux.start()
+}
+
+//Change scale of score boxes according to turns
+function changeScale() {
+    
+   if (items.playSecond) {
+        if (items.counter%2 == 0)
+            items.player2turn.start()
+        else
+            items.player1turn.start()
+    }
+    else {
+        if (items.counter%2 == 0)
+            items.player1turn.start()
+        else
+            items.player2turn.start()
+    }
+}
+
+//Changing play to second in single player mode
+function changePlayToSecond() {
+    if (items.playSecond == 0) {
+        items.playSecond = 1
+        reset()
+        return 0
+    }
+    if (!twoPlayer) {
+        var rand = Math.floor((Math.random() * 9))
+        var y = parseInt(rand/3) * vy
+        var x = parseInt(rand%3) * hx
+        items.repeater.itemAt(rand).state = "DONE"
+        currentPiece = rand
+        items.createPiece.x=x
+        items.createPiece.y=y
+        items.demagnify.start()
+        items.createPiece.opacity = 1
+        items.magnify.start()
+    }
+}
+
+//Changing play to second in single player mode
+function changePlayToFirst() {
+    items.playSecond = 0
+    reset()
+}
+
+//Get row of the corresponding square box (square boxes are defined in repeater)
+function getrowno(parentY) {
+    
+    for(var i = 0; i < items.rows - 1; i++) {
+        if(parentY == items.repeater.itemAt(i*3).y) {
+            return i
+        }
+    }
+    return items.rows - 1
+}
+
+//Get column of the corresponding square box (square boxes are defined in repeater)
+function getcolno(parentX) {
+    
+    for(var i = 0; i < items.columns - 1; i++) {
+        if(parentX == items.repeater.itemAt(i).x) {
+            return i
+        }
+    }
+    return items.columns - 1
+}
+
+//Create the piece (cross or circle) at given position
+function handleCreate(parent) {
+    
+    parent.state = "DONE"
+    var rowno = getrowno(parent.y)
+    var colno = getcolno(parent.x)
+    currentPiece = (rowno * items.columns) + colno
+    items.createPiece.x=parent.x
+    items.createPiece.y=parent.y
+    items.demagnify.start()
+    items.createPiece.opacity = 1
+    items.magnify.start()
+}
+
+//Return the state of piece (1 or 2), 1 and 2 corresponds to Player 1 and Player 2 respectively
+function getPieceState(col, row) {
+    return items.pieces.get(row * items.columns + col).stateTemp
+}
+
+/* setmove() decides the move which is to be played by computer. It decides according to the current level of player:
+ * At level 1 -> No if statements are parsed, and in the end, a random empty location is returned
+ * At level 2 -> Only first 'if' statement is parsed, evaluateBoard(computerState) is called which checks if computer can 
+ *               win in this turn, if there is an empty location in which computer can get three consecutive marks, then
+ *               computer will play there, else computer will play on a random empty location. At level 2, computer will 
+ *               not check if player can win in next turn or not, this increases the winning chance of player at level 2.
+ * At level 3 -> First two 'if' statements are parsed, hence computer will first check if it can win in this turn by executing
+ *               evaluateBoard(computerState). If not, then it will execute evaluateBoard(playerState) which will check if
+ *               player can win in next turn or not, if player can win, then computer will play at that location to stop
+ *               the player from winning. Else computer will play randomly. Therefore player can not win, unless he uses
+ *               a double trick (Having two positions from where you can win).
+ * At level 4 -> Same as level 3
+ * At level 5 -> Along with evaluateBoard(computerState) and evaluateBoard(playerState), applyLogic(playerState) is called 
+ *               which counters all the possibilities of double trick. Hence at level 5, player can not win, it will either
+ *               be a draw or the player will lose.
+ * setmove() returns the position where computer has to play its turn
+*/
+function setmove() {
+
+    //Assigning States -> Which state "1" or "2" is used for identifying player and computer  
+    var playerState = items.playSecond ? "2" : "1"
+    var computerState = items.playSecond ? "1" : "2"
+
+    if (currentLevel > 1) {
+        var value = evaluateBoard(computerState)
+        if (value != -1){
+            return value}
+    }
+    
+    if (currentLevel > 2) {
+        var value = evaluateBoard(playerState)
+        if (value != -1){
+            return value}
+    }
+    
+    if (currentLevel > 4) {
+        var value = applyLogic(playerState)
+        if (value != -1)
+            return value
+    }
+    
+    var found = false
+    while (!found) {
+        var randno = Math.floor((Math.random() * 9));
+        if (items.pieces.get(randno).stateTemp == "invisible")
+            found = true
+    }
+    return randno
+}
+
+//Returns the position after analyzing such that no double trick is possible
+function applyLogic( player ) {
+    
+    if (items.pieces.get(4).stateTemp == "invisible")
+        return 4
+    if (!items.playSecond) {    
+        if (items.counter == 1 && track[0] == 4) {
+            var temp = [0,2,6,8]
+            var randno = Math.floor((Math.random() * 4));
+            return temp[randno]
+        }
+        if (items.counter == 3 && track[0] == 4) {
+            var temp = [0,2,6,8]
+            var found = false
+            while (!found) {
+                var randno = Math.floor((Math.random() * 4));
+                if (items.pieces.get(temp[randno]).stateTemp == "invisible")
+                    found = true
+            }
+            return temp[randno]
+        }
+        var value = giveNearest()
+        if (value != -1)
+            return value
+        return -1
+    }
+    else {
+        if (items.counter == 2 && track[1] == 4) {
+            var temp = [0,2,6,8]
+            var found = false
+            while (!found) {
+                var randno = Math.floor((Math.random() * 4));
+                if (items.pieces.get(temp[randno]).stateTemp == "invisible")
+                    found = true
+            }
+        }
+        else {
+            var value = giveNearest()
+            if (value != -1)
+                return value
+            return -1
+        }
+    }
+}
+
+/* One of the function used by applyLogic, giveNearest() returns the immediate empty position (up, down, left or right) to the 
+ * position at which player played his turn. The logic is, that in most cases if computer plays just immediate to where the 
+ * player has played, then player wont be able to get three consecutive marks. 
+ * Returns -1 if no immediate empty position is found
+*/
+function giveNearest() {
+    
+    var currentRow = parseInt(currentPiece / items.columns)
+    var currentCol = parseInt(currentPiece % items.columns)
+    var temp = []
+    
+    if ( currentRow + 1 < 3 ) {
+        if(getPieceState(currentCol, currentRow + 1) == "invisible")
+            temp.push((currentRow + 1) * items.columns + currentCol)
+    }
+    if ( currentRow - 1 > 0 ) {
+        if(getPieceState(currentCol, currentRow - 1) == "invisible")
+            temp.push((currentRow - 1) * items.columns + currentCol)
+    }
+    if ( currentCol + 1 < 3 ) {
+        if(getPieceState(currentCol + 1, currentRow) == "invisible")
+            temp.push(currentRow * items.columns + currentCol + 1)
+    }
+    if ( currentCol - 1 > 0 ) {
+        if(getPieceState(currentCol - 1, currentRow) == "invisible")
+            temp.push(currentRow * items.columns + currentCol - 1)
+    }
+    if (temp.length != 0) {
+        var randno = Math.floor((Math.random() * temp.length));
+        return temp[randno]
+    }
+    
+    return -1
+}
+
+//Starts the process of computer turn
+function doMove() {
+    var pos = setmove ()
+    handleCreate(items.repeater.itemAt(pos))
+}
+
+/* evaluateBoard(player) checks if the player has marked two consecutive places and if third place is empty or not, if found
+ * such a place, then return that place, else return -1
+*/
+function evaluateBoard(player) {
+    
+    var countp, counti, invisibleX, invisibleY
+    //Horizontal
+    for(var i = 0; i < 3; i++) {
+        countp=0
+        counti=0
+        for(var j=0; j<3; j++) {
+            if(getPieceState(j,i) == player)
+                countp++
+            else if(getPieceState(j,i) == "invisible") {
+                counti++
+                invisibleX=i
+                invisibleY=j
+            }
+        }
+        if(countp==2 && counti==1) {
+            return (invisibleX * items.columns + invisibleY)
+        }
+    }
+    //Vertical
+    for(var i = 0; i < 3; i++) {
+        countp=0
+        counti=0
+        for(var j=0; j<3; j++) {
+            if(getPieceState(i,j) == player)
+                countp++
+            else if(getPieceState(i,j) == "invisible") {
+                counti++
+                invisibleX=j
+                invisibleY=i
+            }
+        }
+        if(countp==2 && counti==1) {
+            return (invisibleX * items.columns + invisibleY)
+        }
+    }
+
+    // Diagonal top left / bottom right
+    countp=0
+    counti=0
+    for(var i=0; i<3; i++) {
+        if(getPieceState(i,i) == player)
+            countp++
+        else if(getPieceState(i,i) == "invisible") {
+            counti++
+            invisibleX=i
+            invisibleY=i
+        }
+    }
+    if(countp==2 && counti==1) {
+        return (invisibleX * items.columns + invisibleY)
+    }
+
+    // Diagonal top right / bottom left
+    countp=0
+    counti=0
+    var j=2
+    for(var i=0; i<3; i++) {
+        if(getPieceState(j,i) == player)
+            countp++
+        else if(getPieceState(j,i) == "invisible") {
+            counti++
+            invisibleX=i
+            invisibleY=j
+        }
+        j--
+    }
+    if(countp==2 && counti==1) {
+        return (invisibleX * items.columns + invisibleY)
+    }
+    return -1
+}
+
+//Checks the condition if game is won or not
+function checkGameWon(currentPieceRow, currentPieceColumn) {
+
+    currentPlayer = getPieceState(currentPieceColumn, currentPieceRow)
+    
+    // Horizontal
+    var sameColor = 0
+    for(var col = 0; col < items.columns; col++) {
+        if(getPieceState(col, currentPieceRow) === currentPlayer) {
+            if(++sameColor == 3) {
+                items.repeater.itemAt(currentPieceRow * items.columns + col).visible = true
+                items.repeater.itemAt(currentPieceRow * items.columns + col -1).visible = true
+                items.repeater.itemAt(currentPieceRow * items.columns + col -2).visible = true
+                items.repeater.itemAt(currentPieceRow * items.columns + col).border.color = "#62db53"
+                items.repeater.itemAt(currentPieceRow * items.columns + col - 1).border.color = "#62db53"
+                items.repeater.itemAt(currentPieceRow * items.columns + col - 2).border.color = "#62db53"
+                return true
+            }
+        } 
+        else {
+            sameColor = 0
+        }
+    }
+
+    // Vertical
+    sameColor = 0
+    for(var row = 0; row < items.rows; row++) {
+        if(getPieceState(currentPieceColumn, row) === currentPlayer) {
+            if(++sameColor == 3) {
+                items.repeater.itemAt(row * items.columns + currentPieceColumn).visible = true
+                items.repeater.itemAt((row - 1) * items.columns + currentPieceColumn).visible = true
+                items.repeater.itemAt((row -2) * items.columns + currentPieceColumn).visible = true
+                items.repeater.itemAt(row * items.columns + currentPieceColumn).border.color = "#62db53"
+                items.repeater.itemAt((row -1) * items.columns + currentPieceColumn).border.color = "#62db53"
+                items.repeater.itemAt((row -2) * items.columns + currentPieceColumn).border.color = "#62db53"
+                return true
+            }
+        } 
+        else {
+            sameColor = 0
+        }
+    }
+
+    // Diagonal top left / bottom right
+    if(getPieceState(0,0) === currentPlayer && getPieceState(1,1) === currentPlayer && getPieceState(2,2) === currentPlayer) {
+        items.repeater.itemAt(0).visible = true
+        items.repeater.itemAt(4).visible = true
+        items.repeater.itemAt(8).visible = true
+        items.repeater.itemAt(0).border.color = "#62db53"
+        items.repeater.itemAt(4).border.color = "#62db53"
+        items.repeater.itemAt(8).border.color = "#62db53"
+        return true
+    }
+
+    // Diagonal top right / bottom left
+    if(getPieceState(2,0) === currentPlayer && getPieceState(1,1) === currentPlayer && getPieceState(0,2) === currentPlayer) {
+        items.repeater.itemAt(2).visible = true
+        items.repeater.itemAt(4).visible = true
+        items.repeater.itemAt(6).visible = true
+        items.repeater.itemAt(2).border.color = "#62db53"
+        items.repeater.itemAt(4).border.color = "#62db53"
+        items.repeater.itemAt(6).border.color = "#62db53"
+        return true
+    }
+    return false
+}
+
+//Checks if its Computer's turn or not, if its Computer's turn, then call doMove()
+function shouldComputerPlay() {
+    if(!twoPlayer) {
+        if(items.counter % 2 && items.playSecond == false && stopper == 0) {
+            doMove()
+        }
+        else if((items.counter % 2 == 0) && items.playSecond == true && stopper == 0) {
+            doMove()
+        }
+    }
+}
+
+//This function is called after every turn to proceed the game
+function continueGame() {
+    
+    items.createPiece.opacity = 0
+    if (!items.playSecond)
+        items.pieces.set(currentPiece, {"stateTemp": items.counter++ % 2 ? "2": "1"})
+    else {
+        if (items.counter++ % 2 == 0)
+            items.pieces.set(currentPiece, {"stateTemp": "2"})
+        else
+            items.pieces.set(currentPiece, {"stateTemp": "1"})
+    }
+    track.push(currentPiece)
+    /* Update score if game won */
+    if(twoPlayer) {
+        if(checkGameWon(parseInt(currentPiece / items.columns),
+                        parseInt(currentPiece % items.columns))) {
+            items.gameDone = true
+            if(currentPlayer === "1") {
+                items.player1.state = "win"
+                items.player1_score++
+            } 
+            else {
+                items.player2.state = "win"
+                items.player2_score++
+            }
+            items.bonus.good("flower")
+            items.bonus.isWin = false
+        }
+        else if(items.counter == 9) {
+            items.rotateKonqi.stop()
+            items.rotateTux.stop()
+            items.player2image.rotation = 0
+            items.player1image.rotation = 0
+            items.changeScalePlayer1.scale = 1.0
+            items.changeScalePlayer2.scale = 1.0
+            items.player1.state = "second"
+            items.player2.state = "second"
+            items.bonus.bad("tux")
+        }
+        else
+            changeScale()
+    } 
+    else {
+        if(checkGameWon(parseInt(currentPiece / items.columns),
+                        parseInt(currentPiece % items.columns))) {
+            items.gameDone = true
+            if(currentPlayer == "1") {
+                items.player1_score++
+                items.player1.state = "win"
+                items.bonus.good("flower")
+            } 
+            else {
+                items.player2_score++
+                items.player2.state = "win"
+                items.bonus.bad("tux")
+            }
+        }
+        else if(items.counter == 9) {
+            items.rotateKonqi.stop()
+            items.rotateTux.stop()
+            items.player2image.rotation = 0
+            items.player1image.rotation = 0
+            items.changeScalePlayer1.scale = 1.0
+            items.changeScalePlayer2.scale = 1.0
+            items.player1.state = "second"
+            items.player2.state = "second"
+            items.bonus.bad("tux")
+        }
+        else 
+            changeScale()
+    }
+}

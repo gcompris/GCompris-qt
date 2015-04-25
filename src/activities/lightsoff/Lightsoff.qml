@@ -69,21 +69,21 @@ ActivityBase {
 
         /* The background picture */
         Image {
-            source: Activity.url + "back.svgz"
+            source: Activity.url + "back.svg"
             anchors.bottom: parent.bottom
             fillMode: Image.TileHorizontally
             sourceSize.height: (parent.height - (gridarea.y + gridarea.height)) * 1.2
             z: 2
         }
         Image {
-            source: Activity.url + "building.svgz"
+            source: Activity.url + "building.svg"
             fillMode: Image.PreserveAspectFit
             anchors.fill: gridarea
             anchors.margins: -1 * Math.ceil(items.nbCell / 2) * items.cellSize
             z: 2
         }
         Image {
-            source: Activity.url + "front.svgz"
+            source: Activity.url + "front.svg"
             anchors.bottom: parent.bottom
             fillMode: Image.TileHorizontally
             sourceSize.height: 20 + tux.height * 0.5
@@ -93,7 +93,7 @@ ActivityBase {
         /* The sun */
         Image {
             id: sun
-            source: Activity.url + "sun.svgz"
+            source: Activity.url + "sun.svg"
             sourceSize.height: items.cellSize * 2 * items.nbCell / 5
             anchors {
                 left: parent.left
@@ -114,7 +114,7 @@ ActivityBase {
         BarButton {
             id: tux
             fillMode: Image.PreserveAspectFit
-            source: Activity.url + "tux.svgz"
+            source: Activity.url + "tux.svg"
             sourceSize.width: parent.width - grid.width < 200 ?
                                   bar.height * 1.2 :
                                   Math.min((parent.width - grid.width - 40) / 2, 150)
@@ -167,7 +167,7 @@ ActivityBase {
                     BarButton {
                         anchors.fill: parent
                         fillMode: Image.PreserveAspectFit
-                        source: Activity.url + "on.svgz"
+                        source: Activity.url + "on.svg"
                         opacity: lighton === 1 ? 1 : 0
                         z: lighton === 1 ? 11 : 10
                         sourceSize.height: items.cellSize
@@ -186,7 +186,7 @@ ActivityBase {
                     BarButton {
                         anchors.fill: parent
                         fillMode: Image.PreserveAspectFit
-                        source: Activity.url + "off.svgz"
+                        source: Activity.url + "off.svg"
                         opacity: lighton === 1 ? 0 : 1
                         z: lighton === 1 ? 10 : 11
                         sourceSize.height: items.cellSize

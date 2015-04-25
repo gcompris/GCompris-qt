@@ -1,6 +1,6 @@
 /* GCompris - Score.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -21,14 +21,54 @@
 import QtQuick 2.2
 import GCompris 1.0
 
+/**
+ * A QML component to visualize sub-level progress.
+ * @ingroup components
+ *
+ * Score usually consists of current-level (@ref currentSubLevel)
+ * and the max number of levels (@ref numberOfSubLevels).
+ *
+ * For other cases an activity can also directly define the whole message
+ * it wants to be shown (@ref message).
+ *
+ * @inherit QtQuick.Rectangle
+ */
 Rectangle {
     id: score
 
-    gradient: Gradient {
-        GradientStop { position: 0.0; color: "#AAFFFFFF" }
-        GradientStop { position: 0.9; color: "#AAFFFFFF" }
-        GradientStop { position: 1.0; color: "#AACECECE" }
-    }
+    /**
+     * type:int
+     * Size of the font used in pt.
+     *
+     * @sa GCFont.fontSize.
+     */
+    property alias fontSize: subLevelText.fontSize
+
+    /**
+     * type:int
+     * Total number of sub-levels to show.
+     *
+     * @sa currentSubLevel
+     */
+    property int numberOfSubLevels
+
+    /**
+     * type:int
+     * Current sub-level to show.
+     *
+     * @sa numberOfSubLevels
+     */
+    property int currentSubLevel
+
+    /**
+     * type:string
+     * Complete message string to to show.
+     *
+     * Mutually exclusive with currentSubLevel and numberOfSubLevels
+     */
+    property string message
+
+    color: "#AAFFFFFF"
     width: subLevelText.width * 2
     height: subLevelText.height * 1.4
     radius: 10
@@ -37,17 +77,9 @@ Rectangle {
     anchors.margins: 30
 
     border.color: "black"
-    border.width: 2
+    border.width: 0
 
     z: 1000
-
-    property alias fontSize: subLevelText.fontSize
-
-    /* Either fill in numberOfSubLevels and currentSubLevel
-     * or directly the message you want to write */
-    property int numberOfSubLevels
-    property int currentSubLevel
-    property string message
 
     onCurrentSubLevelChanged: message = currentSubLevel + "/" + numberOfSubLevels
     onNumberOfSubLevelsChanged: message = currentSubLevel + "/" + numberOfSubLevels

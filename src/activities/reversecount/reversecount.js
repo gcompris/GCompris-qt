@@ -30,13 +30,13 @@ var iceBlocksLayout = [[0, 0],[1, 0],[2, 0],[3, 0],[4, 0],
                        [0, 1]]
 
 var backgrounds = [
-            "baleine.svgz",
-            "phoque.svgz",
-            "ourspolaire.svgz",
-            "morse.svgz",
-            "elephant_mer.svgz",
-            "epaulard.svgz",
-            "narval.svgz"
+            "baleine.svg",
+            "phoque.svg",
+            "ourspolaire.svg",
+            "morse.svg",
+            "elephant_mer.svg",
+            "epaulard.svg",
+            "narval.svg"
         ]
 
 var tuxIceBlockNumber = 0
@@ -49,18 +49,18 @@ var placeFishToReachBool = false
 var level = null;
 
 var fishes = [
-            "Benzfish.svgz",
-            "blue-fish.svgz",
-            "drunken_duck_cartoon_globefish_kugelfisch.svgz",
-            "Fish02.svgz",
-            "molumen_Codfish.svgz",
-            "mystica_Aquarium_fish_-_Amphiprion_percula.svgz",
-            "pepinux_Pez_dorado.svgz",
-            "The_Whale-Fish.svgz",
-            "Benzfish.svgz",
-            "blue-fish.svgz",
-            "drunken_duck_cartoon_globefish_kugelfisch.svgz",
-            "Fish02.svgz"
+            "Benzfish.svg",
+            "blue-fish.svg",
+            "drunken_duck_cartoon_globefish_kugelfisch.svg",
+            "Fish02.svg",
+            "molumen_Codfish.svg",
+            "mystica_Aquarium_fish_-_Amphiprion_percula.svg",
+            "pepinux_Pez_dorado.svg",
+            "The_Whale-Fish.svg",
+            "Benzfish.svg",
+            "blue-fish.svg",
+            "drunken_duck_cartoon_globefish_kugelfisch.svg",
+            "Fish02.svg"
         ]
 
 
@@ -286,7 +286,7 @@ function placeFishToReach() {
 
 
 function setClock() {
-    items.clock.source = url + "flower" + clockPos + ".svgz"
+    items.clock.source = url + "flower" + clockPos + ".svg"
 }
 
 

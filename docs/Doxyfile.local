@@ -1,0 +1,8 @@
+PROJECT_NAME = GCompris-qt
+DISTRIBUTE_GROUP_DOC = yes
+FILTER_PATTERNS = *.qml=doxyqml
+EXTENSION_MAPPING = qml=C++ js=C++
+#EXCLUDE_PATTERNS = */activities/*
+INPUT= src/core/ \
+       src/activities/menu/Menu.qml \
+       src/activities/template/Template.qml

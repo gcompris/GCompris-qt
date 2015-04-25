@@ -1,6 +1,7 @@
 /* gcompris - SudokuCase.qml
 
- Copyright (C)
+ Copyright (C) 2014 Johnny Jazeix <jazeix@gmail.com>
+
  2003, 2014: Bruno Coudoin: initial version
  2014: Johnny Jazeix: Qt port
 
@@ -25,7 +26,7 @@ import GCompris 1.0
 Rectangle {
     id: mCase
     border.width: 2
-    border.color: "black"
+    border.color: "#2a2a2a"
 
     property string text
     property bool isInitial

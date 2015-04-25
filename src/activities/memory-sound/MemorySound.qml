@@ -1,6 +1,6 @@
 /* gcompris - MemorySound.qml
  *
- * Copyright (C) 2014 JB BUTET
+ * Copyright (C) 2014 JB BUTET <ashashiwa@gmail.com>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
@@ -20,11 +20,12 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import GCompris 1.0
 
 import "../memory"
 import "memorysounddataset.js" as Dataset
 
 MemoryCommon {
     dataset: Dataset.get()
-    backgroundImg: "qrc:/gcompris/src/activities/memory-sound/resource/gcompris_band.svgz"
+    backgroundImg: "qrc:/gcompris/src/activities/memory-sound/resource/gcompris_band.svg"
 }

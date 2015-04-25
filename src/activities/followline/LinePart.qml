@@ -1,6 +1,6 @@
 /* GCompris - LinePart.qml
  *
- * Copyright (C) 2014 Bruno Coudoin
+ * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -34,7 +34,7 @@ Item {
         width: parent.width
         height: parent.height * 0.2
         radius: height / 8
-        color: "black"
+        color: "#30354e"
         z: 10
     }
 
@@ -48,10 +48,10 @@ Item {
         radius: height / 4
         z: 5
         color: index < part.items.currentLock
-               ? "blue"
+               ? "#3ca7e0"
                : index === part.items.currentLock
-                 ? "red"
-                 : "grey"
+                 ? "#dd3128"
+                 : "#7A7F8E"
 
         MouseArea {
             anchors.fill: parent
@@ -77,7 +77,7 @@ Item {
         width: parent.width
         height: parent.height * 0.2
         radius: height / 8
-        color: "black"
+        color: "#30354e"
         z: 10
     }
 }

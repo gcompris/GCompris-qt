@@ -1,6 +1,6 @@
 /* gcompris
  *
- * Copyright (C) 2014 JB BUTET
+ * Copyright (C) 2014 JB BUTET <ashashiwa@gmail.com>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
@@ -26,6 +26,6 @@ import "../memory-math-div/memory-divdataset.js" as Dataset
 
 MemoryCommon {
     dataset: Dataset.get()
-    backgroundImg: "qrc:/gcompris/src/activities/memory/resource/scenery_background.png"
+    backgroundImg: "qrc:/gcompris/src/activities/memory/resource/background.svg"
     withTux: true
 }

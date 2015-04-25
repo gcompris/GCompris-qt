@@ -110,7 +110,7 @@ function initSubLevel() {
     for (var j = 0; j < selectedWords.length; j++) {
         items.wordListModel.append({"word": selectedWords[j] })
     }
-    items.wordImage.changeSource("qrc:/" + items.goodWord.image)
+    items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image)
 }
 
 function nextLevel() {
