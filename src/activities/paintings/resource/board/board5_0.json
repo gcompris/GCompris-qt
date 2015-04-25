@@ -1,0 +1,47 @@
+{
+   "instruction" : "Mary Cassatt, Summertime - 1894",
+   "levels" : [
+      {
+         "pixmapfile" : "images/cassat_summertime_2.jpg",
+         "x" : "0.51",
+         "y" : "0.243",
+         "height" : "0.4305",
+         "width" : "0.2897"
+      },
+      {
+         "pixmapfile" : "images/cassat_summertime_4.jpg",
+         "x" : "0.254",
+         "y" : "0.655",
+         "height" : "0.4285",
+         "width" : "0.2897"
+      },
+      {
+         "pixmapfile" : "images/cassat_summertime_6.jpg",
+         "x" : "0.765",
+         "y" : "0.657",
+         "height" : "0.4305",
+         "width" : "0.2877"
+      },
+      {
+         "pixmapfile" : "images/cassat_summertime_5.jpg",
+         "x" : "0.51",
+         "y" : "0.657",
+         "height" : "0.4305",
+         "width" : "0.2897"
+      },
+      {
+         "pixmapfile" : "images/cassat_summertime_1.jpg",
+         "x" : "0.254",
+         "y" : "0.243",
+         "height" : "0.4305",
+         "width" : "0.2897"
+      },
+      {
+         "pixmapfile" : "images/cassat_summertime_3.jpg",
+         "x" : "0.765",
+         "y" : "0.243",
+         "height" : "0.4305",
+         "width" : "0.2877"
+      }
+   ]
+}

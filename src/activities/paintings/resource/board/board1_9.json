@@ -1,0 +1,117 @@
+{
+   "instruction" : "Utagawa Hiroshige, Horse-mackerel and Prawn - 1840",
+   "levels" : [
+      {
+         "pixmapfile" : "images/HiroshigeHorsePrawns_d4.png",
+         "x" : "0.831",
+         "y" : "0.809",
+         "height" : "0.3045",
+         "width" : "0.3217"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeHorsePrawns_c4.png",
+         "x" : "0.627",
+         "y" : "0.831",
+         "height" : "0.2595",
+         "width" : "0.2857"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeHorsePrawns_b4.png",
+         "x" : "0.397",
+         "y" : "0.809",
+         "height" : "0.3045",
+         "width" : "0.3807"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeHorsePrawns_a4.png",
+         "x" : "0.169",
+         "y" : "0.809",
+         "height" : "0.3045",
+         "width" : "0.2767"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeHorsePrawns_d3.png",
+         "x" : "0.831",
+         "y" : "0.581",
+         "height" : "0.3175",
+         "width" : "0.3217"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeHorsePrawns_c3.png",
+         "x" : "0.604",
+         "y" : "0.606",
+         "height" : "0.3665",
+         "width" : "0.3317"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeHorsePrawns_b3.png",
+         "x" : "0.373",
+         "y" : "0.604",
+         "height" : "0.2735",
+         "width" : "0.3317"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeHorsePrawns_a3.png",
+         "x" : "0.169",
+         "y" : "0.581",
+         "height" : "0.3175",
+         "width" : "0.2767"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeHorsePrawns_d2.png",
+         "x" : "0.831",
+         "y" : "0.371",
+         "height" : "0.2745",
+         "width" : "0.3217"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeHorsePrawns_c2.png",
+         "x" : "0.604",
+         "y" : "0.371",
+         "height" : "0.2745",
+         "width" : "0.3317"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeHorsePrawns_b2.png",
+         "x" : "0.396",
+         "y" : "0.394",
+         "height" : "0.3215",
+         "width" : "0.2857"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeHorsePrawns_a2.png",
+         "x" : "0.193",
+         "y" : "0.37",
+         "height" : "0.2735",
+         "width" : "0.3257"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeHorsePrawns_d1.png",
+         "x" : "0.854",
+         "y" : "0.166",
+         "height" : "0.3105",
+         "width" : "0.2757"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeHorsePrawns_c1.png",
+         "x" : "0.629",
+         "y" : "0.166",
+         "height" : "0.3105",
+         "width" : "0.3807"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeHorsePrawns_b1.png",
+         "x" : "0.396",
+         "y" : "0.166",
+         "height" : "0.3105",
+         "width" : "0.2857"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeHorsePrawns_a1.png",
+         "x" : "0.193",
+         "y" : "0.166",
+         "height" : "0.3105",
+         "width" : "0.3257"
+      }
+   ]
+}

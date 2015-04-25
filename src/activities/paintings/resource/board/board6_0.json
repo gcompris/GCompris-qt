@@ -1,0 +1,47 @@
+{
+   "instruction" : "Vincent Van Gogh, Village Street in Auvers - 1890",
+   "levels" : [
+      {
+         "pixmapfile" : "images/gogh_auvert_2.jpg",
+         "x" : "0.504",
+         "y" : "0.225",
+         "height" : "0.4565",
+         "width" : "0.2897"
+      },
+      {
+         "pixmapfile" : "images/gogh_auvert_6.jpg",
+         "x" : "0.76",
+         "y" : "0.665",
+         "height" : "0.4585",
+         "width" : "0.2897"
+      },
+      {
+         "pixmapfile" : "images/gogh_auvert_5.jpg",
+         "x" : "0.504",
+         "y" : "0.665",
+         "height" : "0.4565",
+         "width" : "0.2897"
+      },
+      {
+         "pixmapfile" : "images/gogh_auvert_1.jpg",
+         "x" : "0.248",
+         "y" : "0.225",
+         "height" : "0.4565",
+         "width" : "0.2897"
+      },
+      {
+         "pixmapfile" : "images/gogh_auvert_4.jpg",
+         "x" : "0.248",
+         "y" : "0.665",
+         "height" : "0.4565",
+         "width" : "0.2897"
+      },
+      {
+         "pixmapfile" : "images/gogh_auvert_3.jpg",
+         "x" : "0.76",
+         "y" : "0.225",
+         "height" : "0.4565",
+         "width" : "0.2897"
+      }
+   ]
+}

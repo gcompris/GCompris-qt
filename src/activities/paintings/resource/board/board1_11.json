@@ -1,0 +1,180 @@
+{
+   "instruction" : "Katsushika Hokusa, Poppies - 1833-1834",
+   "levels" : [
+      {
+         "pixmapfile" : "images/HokusaiPoppies_e5.png",
+         "x" : "0.826",
+         "y" : "0.804",
+         "height" : "0.2245",
+         "width" : "0.2407"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_d5.png",
+         "x" : "0.662",
+         "y" : "0.804",
+         "height" : "0.2245",
+         "width" : "0.2487"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_c5.png",
+         "x" : "0.511",
+         "y" : "0.82",
+         "height" : "0.1925",
+         "width" : "0.2167"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_b5.png",
+         "x" : "0.345",
+         "y" : "0.82",
+         "height" : "0.1925",
+         "width" : "0.2827"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_a5.png",
+         "x" : "0.18",
+         "y" : "0.804",
+         "height" : "0.2245",
+         "width" : "0.2087"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_e4.png",
+         "x" : "0.842",
+         "y" : "0.655",
+         "height" : "0.2005",
+         "width" : "0.2087"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_d4.png",
+         "x" : "0.696",
+         "y" : "0.655",
+         "height" : "0.2005",
+         "width" : "0.2507"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_c4.png",
+         "x" : "0.512",
+         "y" : "0.657",
+         "height" : "0.2675",
+         "width" : "0.2827"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_b4.png",
+         "x" : "0.343",
+         "y" : "0.673",
+         "height" : "0.2355",
+         "width" : "0.2167"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_a4.png",
+         "x" : "0.197",
+         "y" : "0.64",
+         "height" : "0.2315",
+         "width" : "0.2437"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_e3.png",
+         "x" : "0.842",
+         "y" : "0.505",
+         "height" : "0.2355",
+         "width" : "0.2087"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_d3.png",
+         "x" : "0.696",
+         "y" : "0.505",
+         "height" : "0.2355",
+         "width" : "0.2507"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_c3.png",
+         "x" : "0.512",
+         "y" : "0.487",
+         "height" : "0.2005",
+         "width" : "0.2827"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_b3.png",
+         "x" : "0.343",
+         "y" : "0.489",
+         "height" : "0.2675",
+         "width" : "0.2167"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_a3.png",
+         "x" : "0.197",
+         "y" : "0.487",
+         "height" : "0.2005",
+         "width" : "0.2437"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_e2.png",
+         "x" : "0.826",
+         "y" : "0.336",
+         "height" : "0.2355",
+         "width" : "0.2407"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_d2.png",
+         "x" : "0.678",
+         "y" : "0.336",
+         "height" : "0.2355",
+         "width" : "0.2167"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_c2.png",
+         "x" : "0.528",
+         "y" : "0.32",
+         "height" : "0.2675",
+         "width" : "0.2507"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_b2.png",
+         "x" : "0.361",
+         "y" : "0.302",
+         "height" : "0.2315",
+         "width" : "0.2507"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_a2.png",
+         "x" : "0.197",
+         "y" : "0.336",
+         "height" : "0.2355",
+         "width" : "0.2437"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_e1.png",
+         "x" : "0.842",
+         "y" : "0.171",
+         "height" : "0.2285",
+         "width" : "0.2087"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_d1.png",
+         "x" : "0.696",
+         "y" : "0.171",
+         "height" : "0.2285",
+         "width" : "0.2507"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_c1.png",
+         "x" : "0.528",
+         "y" : "0.154",
+         "height" : "0.1925",
+         "width" : "0.2507"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_b1.png",
+         "x" : "0.345",
+         "y" : "0.154",
+         "height" : "0.1925",
+         "width" : "0.2827"
+      },
+      {
+         "pixmapfile" : "images/HokusaiPoppies_a1.png",
+         "x" : "0.18",
+         "y" : "0.171",
+         "height" : "0.2285",
+         "width" : "0.2087"
+      }
+   ]
+}

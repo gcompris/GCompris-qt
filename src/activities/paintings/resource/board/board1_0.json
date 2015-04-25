@@ -1,0 +1,47 @@
+{
+   "instruction" : "Edgar Degas, The Dancing Class - 1873-75",
+   "levels" : [
+      {
+         "pixmapfile" : "images/degas_class-dance_6.png",
+         "x" : "0.655",
+         "y" : "0.787",
+         "height" : "0.3295",
+         "width" : "0.3167"
+      },
+      {
+         "pixmapfile" : "images/degas_class-dance_5.png",
+         "x" : "0.408",
+         "y" : "0.749",
+         "height" : "0.4045",
+         "width" : "0.3867"
+      },
+      {
+         "pixmapfile" : "images/degas_class-dance_4.png",
+         "x" : "0.62",
+         "y" : "0.478",
+         "height" : "0.4865",
+         "width" : "0.3857"
+      },
+      {
+         "pixmapfile" : "images/degas_class-dance_3.png",
+         "x" : "0.373",
+         "y" : "0.44",
+         "height" : "0.4095",
+         "width" : "0.3177"
+      },
+      {
+         "pixmapfile" : "images/degas_class-dance_2.png",
+         "x" : "0.656",
+         "y" : "0.165",
+         "height" : "0.3295",
+         "width" : "0.3137"
+      },
+      {
+         "pixmapfile" : "images/degas_class-dance_1.png",
+         "x" : "0.409",
+         "y" : "0.169",
+         "height" : "0.3365",
+         "width" : "0.3887"
+      }
+   ]
+}

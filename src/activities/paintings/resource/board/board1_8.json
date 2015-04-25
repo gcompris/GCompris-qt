@@ -1,0 +1,116 @@
+{
+   "levels" : [
+      {
+         "pixmapfile" : "images/HiroshigeInokashiraSnow_d4.png",
+         "x" : "0.82",
+         "y" : "0.799",
+         "height" : "0.2355",
+         "width" : "0.3107"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeInokashiraSnow_c4.png",
+         "x" : "0.624",
+         "y" : "0.778",
+         "height" : "0.2765",
+         "width" : "0.2767"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeInokashiraSnow_b4.png",
+         "x" : "0.401",
+         "y" : "0.799",
+         "height" : "0.2355",
+         "width" : "0.3677"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeInokashiraSnow_a4.png",
+         "x" : "0.181",
+         "y" : "0.799",
+         "height" : "0.2355",
+         "width" : "0.2677"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeInokashiraSnow_d3.png",
+         "x" : "0.843",
+         "y" : "0.596",
+         "height" : "0.3315",
+         "width" : "0.2667"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeInokashiraSnow_c3.png",
+         "x" : "0.625",
+         "y" : "0.594",
+         "height" : "0.2445",
+         "width" : "0.3677"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeInokashiraSnow_b3.png",
+         "x" : "0.4",
+         "y" : "0.616",
+         "height" : "0.2895",
+         "width" : "0.2767"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeInokashiraSnow_a3.png",
+         "x" : "0.204",
+         "y" : "0.596",
+         "height" : "0.3315",
+         "width" : "0.3137"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeInokashiraSnow_d2.png",
+         "x" : "0.843",
+         "y" : "0.383",
+         "height" : "0.2465",
+         "width" : "0.2667"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeInokashiraSnow_c2.png",
+         "x" : "0.625",
+         "y" : "0.405",
+         "height" : "0.2915",
+         "width" : "0.3677"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeInokashiraSnow_b2.png",
+         "x" : "0.378",
+         "y" : "0.405",
+         "height" : "0.2915",
+         "width" : "0.3217"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeInokashiraSnow_a2.png",
+         "x" : "0.181",
+         "y" : "0.383",
+         "height" : "0.2465",
+         "width" : "0.2677"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeInokashiraSnow_d1.png",
+         "x" : "0.82",
+         "y" : "0.199",
+         "height" : "0.2825",
+         "width" : "0.3107"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeInokashiraSnow_c1.png",
+         "x" : "0.602",
+         "y" : "0.199",
+         "height" : "0.2825",
+         "width" : "0.3217"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeInokashiraSnow_b1.png",
+         "x" : "0.378",
+         "y" : "0.199",
+         "height" : "0.2825",
+         "width" : "0.3217"
+      },
+      {
+         "pixmapfile" : "images/HiroshigeInokashiraSnow_a1.png",
+         "x" : "0.181",
+         "y" : "0.199",
+         "height" : "0.2825",
+         "width" : "0.2677"
+      }
+   ]
+}

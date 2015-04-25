@@ -1,0 +1,47 @@
+{
+   "instruction" : " Pierre-Auguste Renoir, Le Moulin de la Galette - 1876",
+   "levels" : [
+      {
+         "pixmapfile" : "images/renoir-moulin_de_la_galette-4.png",
+         "x" : "0.269",
+         "y" : "0.637",
+         "height" : "0.5355",
+         "width" : "0.3037"
+      },
+      {
+         "pixmapfile" : "images/renoir-moulin_de_la_galette-5.png",
+         "x" : "0.518",
+         "y" : "0.637",
+         "height" : "0.5355",
+         "width" : "0.4227"
+      },
+      {
+         "pixmapfile" : "images/renoir-moulin_de_la_galette-3.png",
+         "x" : "0.767",
+         "y" : "0.324",
+         "height" : "0.5385",
+         "width" : "0.3037"
+      },
+      {
+         "pixmapfile" : "images/renoir-moulin_de_la_galette-1.png",
+         "x" : "0.294",
+         "y" : "0.281",
+         "height" : "0.4525",
+         "width" : "0.3577"
+      },
+      {
+         "pixmapfile" : "images/renoir-moulin_de_la_galette-2.png",
+         "x" : "0.543",
+         "y" : "0.281",
+         "height" : "0.4525",
+         "width" : "0.3717"
+      },
+      {
+         "pixmapfile" : "images/renoir-moulin_de_la_galette-6.png",
+         "x" : "0.766",
+         "y" : "0.674",
+         "height" : "0.4545",
+         "width" : "0.3057"
+      }
+   ]
+}

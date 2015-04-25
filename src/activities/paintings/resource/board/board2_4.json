@@ -1,0 +1,117 @@
+{
+   "instruction" : "Pieter Brugel, The Harvesters - 1565",
+   "levels" : [
+      {
+         "pixmapfile" : "images/PieterBruegel_d4.png",
+         "x" : "0.836",
+         "y" : "0.832",
+         "height" : "0.2615",
+         "width" : "0.2617"
+      },
+      {
+         "pixmapfile" : "images/PieterBruegel_c4.png",
+         "x" : "0.623",
+         "y" : "0.832",
+         "height" : "0.2615",
+         "width" : "0.3597"
+      },
+      {
+         "pixmapfile" : "images/PieterBruegel_b4.png",
+         "x" : "0.382",
+         "y" : "0.832",
+         "height" : "0.2615",
+         "width" : "0.3167"
+      },
+      {
+         "pixmapfile" : "images/PieterBruegel_a4.png",
+         "x" : "0.188",
+         "y" : "0.832",
+         "height" : "0.2615",
+         "width" : "0.2637"
+      },
+      {
+         "pixmapfile" : "images/PieterBruegel_d3.png",
+         "x" : "0.815",
+         "y" : "0.628",
+         "height" : "0.3215",
+         "width" : "0.3047"
+      },
+      {
+         "pixmapfile" : "images/PieterBruegel_c3.png",
+         "x" : "0.623",
+         "y" : "0.628",
+         "height" : "0.3215",
+         "width" : "0.2717"
+      },
+      {
+         "pixmapfile" : "images/PieterBruegel_b3.png",
+         "x" : "0.426",
+         "y" : "0.628",
+         "height" : "0.3215",
+         "width" : "0.3177"
+      },
+      {
+         "pixmapfile" : "images/PieterBruegel_a3.png",
+         "x" : "0.21",
+         "y" : "0.628",
+         "height" : "0.3215",
+         "width" : "0.3087"
+      },
+      {
+         "pixmapfile" : "images/PieterBruegel_d2.png",
+         "x" : "0.815",
+         "y" : "0.372",
+         "height" : "0.3665",
+         "width" : "0.3047"
+      },
+      {
+         "pixmapfile" : "images/PieterBruegel_c2.png",
+         "x" : "0.623",
+         "y" : "0.394",
+         "height" : "0.3215",
+         "width" : "0.2717"
+      },
+      {
+         "pixmapfile" : "images/PieterBruegel_b2.png",
+         "x" : "0.404",
+         "y" : "0.372",
+         "height" : "0.3665",
+         "width" : "0.3607"
+      },
+      {
+         "pixmapfile" : "images/PieterBruegel_a2.png",
+         "x" : "0.188",
+         "y" : "0.394",
+         "height" : "0.3215",
+         "width" : "0.2637"
+      },
+      {
+         "pixmapfile" : "images/PieterBruegel_d1.png",
+         "x" : "0.815",
+         "y" : "0.141",
+         "height" : "0.2615",
+         "width" : "0.3047"
+      },
+      {
+         "pixmapfile" : "images/PieterBruegel_c1.png",
+         "x" : "0.623",
+         "y" : "0.166",
+         "height" : "0.3105",
+         "width" : "0.2717"
+      },
+      {
+         "pixmapfile" : "images/PieterBruegel_b1.png",
+         "x" : "0.426",
+         "y" : "0.141",
+         "height" : "0.2615",
+         "width" : "0.3177"
+      },
+      {
+         "pixmapfile" : "images/PieterBruegel_a1.png",
+         "x" : "0.21",
+         "y" : "0.166",
+         "height" : "0.3105",
+         "width" : "0.3087"
+      }
+   ]
+}

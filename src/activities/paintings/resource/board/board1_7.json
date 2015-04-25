@@ -1,0 +1,89 @@
+{
+   "instruction" : "Katsushika Hokusai, The Great Wave off Kanagawa - 1823-1829",
+   "levels" : [
+      {
+         "pixmapfile" : "images/GreatWave_d3.png",
+         "x" : "0.825",
+         "y" : "0.734",
+         "height" : "0.3645",
+         "width" : "0.2547"
+      },
+      {
+         "pixmapfile" : "images/GreatWave_c3.png",
+         "x" : "0.64",
+         "y" : "0.734",
+         "height" : "0.3645",
+         "width" : "0.3087"
+      },
+      {
+         "pixmapfile" : "images/GreatWave_b3.png",
+         "x" : "0.428",
+         "y" : "0.734",
+         "height" : "0.3645",
+         "width" : "0.3087"
+      },
+      {
+         "pixmapfile" : "images/GreatWave_a3.png",
+         "x" : "0.219",
+         "y" : "0.762",
+         "height" : "0.3085",
+         "width" : "0.3007"
+      },
+      {
+         "pixmapfile" : "images/GreatWave_d2.png",
+         "x" : "0.825",
+         "y" : "0.46",
+         "height" : "0.3775",
+         "width" : "0.2547"
+      },
+      {
+         "pixmapfile" : "images/GreatWave_c2.png",
+         "x" : "0.64",
+         "y" : "0.488",
+         "height" : "0.3215",
+         "width" : "0.3087"
+      },
+      {
+         "pixmapfile" : "images/GreatWave_b2.png",
+         "x" : "0.428",
+         "y" : "0.46",
+         "height" : "0.3775",
+         "width" : "0.3087"
+      },
+      {
+         "pixmapfile" : "images/GreatWave_a2.png",
+         "x" : "0.219",
+         "y" : "0.517",
+         "height" : "0.3795",
+         "width" : "0.3007"
+      },
+      {
+         "pixmapfile" : "images/GreatWave_d1.png",
+         "x" : "0.825",
+         "y" : "0.213",
+         "height" : "0.3105",
+         "width" : "0.2547"
+      },
+      {
+         "pixmapfile" : "images/GreatWave_c1.png",
+         "x" : "0.619",
+         "y" : "0.242",
+         "height" : "0.3685",
+         "width" : "0.3507"
+      },
+      {
+         "pixmapfile" : "images/GreatWave_b1.png",
+         "x" : "0.384",
+         "y" : "0.213",
+         "height" : "0.3105",
+         "width" : "0.3057"
+      },
+      {
+         "pixmapfile" : "images/GreatWave_a1.png",
+         "x" : "0.197",
+         "y" : "0.242",
+         "height" : "0.3685",
+         "width" : "0.2567"
+      }
+   ]
+}

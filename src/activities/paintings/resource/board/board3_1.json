@@ -1,0 +1,61 @@
+{
+   "instruction" : "Wassily Kandinsky, Composition VIII - 1923",
+   "levels" : [
+      {
+         "pixmapfile" : "images/kandinky_8.png",
+         "x" : "0.829",
+         "y" : "0.605",
+         "height" : "0.5525",
+         "width" : "0.2457"
+      },
+      {
+         "pixmapfile" : "images/kandinky_7.png",
+         "x" : "0.642",
+         "y" : "0.605",
+         "height" : "0.5525",
+         "width" : "0.2997"
+      },
+      {
+         "pixmapfile" : "images/kandinky_6.png",
+         "x" : "0.403",
+         "y" : "0.657",
+         "height" : "0.4475",
+         "width" : "0.3507"
+      },
+      {
+         "pixmapfile" : "images/kandinky_5.png",
+         "x" : "0.189",
+         "y" : "0.657",
+         "height" : "0.4475",
+         "width" : "0.2477"
+      },
+      {
+         "pixmapfile" : "images/kandinky_4.png",
+         "x" : "0.829",
+         "y" : "0.228",
+         "height" : "0.4495",
+         "width" : "0.2457"
+      },
+      {
+         "pixmapfile" : "images/kandinky_3.png",
+         "x" : "0.642",
+         "y" : "0.228",
+         "height" : "0.4495",
+         "width" : "0.2997"
+      },
+      {
+         "pixmapfile" : "images/kandinky_2.png",
+         "x" : "0.428",
+         "y" : "0.281",
+         "height" : "0.5555",
+         "width" : "0.2997"
+      },
+      {
+         "pixmapfile" : "images/kandinky_1.png",
+         "x" : "0.215",
+         "y" : "0.281",
+         "height" : "0.5555",
+         "width" : "0.2997"
+      }
+   ]
+}
