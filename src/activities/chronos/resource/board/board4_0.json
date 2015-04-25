@@ -1,21 +1,48 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<ShapeGame>
-  <Title x="150" y="50" justification="GTK_JUSTIFY_CENTER">
-    <name>Aviation</name>
-  </Title>
-  <Shape zoomy="1" zoomx="1" y="276" x="233"  position="0" pixmapfile="chronos/Eole.svg" name="G"/>
-  <Title y="379" x="233" justification="GTK_JUSTIFY_CENTER">
-    <name>1880 Clement Ader's Eole</name>
-  </Title>
-  <Shape zoomy="1" zoomx="1" y="120" x="550"  position="0" pixmapfile="chronos/wright_flyer.png" name="E"/>
-  <Title y="215" x="534" justification="GTK_JUSTIFY_CENTER">
-  <name>1903 The Wright brothers' Flyer III</name>
-  </Title>
-  <Shape zoomy="1" zoomx="1" y="380" x="570"  position="0" pixmapfile="chronos/bleriot.png" name="C"/>
-  <Title y="460" x="585" justification="GTK_JUSTIFY_CENTER">
-  <name xml:space="preserve">1909 Louis Bleriot crosses
-the English Channel</name>
-  </Title>
-</ShapeGame>
-
+{
+   "numberOfSubLevel" : 3,
+   "instruction" : "Aviation",
+   "levels" : [
+      {
+          "pixmapfile" : "images/Eole.svg",
+          "x" : "0.2",
+          "y" : "0.55",
+          "width" : 0.4,
+          "height" : 0.4
+      },
+      {
+          "pixmapfile" : "images/wright_flyer.png",
+          "x" : "0.5",
+          "y" : "0.9",
+          "width" : 0.4,
+          "height" : 0.2
+      },
+      {
+          "pixmapfile" : "images/bleriot.png",
+          "x" : "0.75",
+          "y" : "0.55",
+          "width" : 0.4,
+          "height" : 0.4
+      },
+      {
+		  "text" : "1880 Clement Ader's Eole",
+		  "x" : "0.25",
+		  "y" : 0.2,
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "1903 The Wright brothers' Flyer III",
+		  "x" : "0.5",
+		  "y" : 0.75,
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "1909 Louis Bleriot crosses the English Channel",
+		  "x" : "0.75",
+		  "y" : 0.21,
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      }
+   ]
+}

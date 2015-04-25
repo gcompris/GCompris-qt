@@ -2,7 +2,7 @@
 
  Copyright (C)
  2003, 2014: Bruno Coudoin: initial version
- 2015: Johnny Jazeix and Pulkit Gupta: Qt port
+ 2015: Pulkit Gupta: Qt port
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -35,7 +35,7 @@ Rectangle {
     property int dropAreaSize
     property string imageName
 
-    width: parent.width > parent.height ? parent.height/30 : parent.width/30
+    width: parent.width > parent.height ? parent.height/35 : parent.width/35
     height: width
     radius: width/2
     z: 2
@@ -47,10 +47,30 @@ Rectangle {
     x: posX * parent.width - width/2
     y: posY * parent.height - height/2
     
+    Image {
+        id: dropAreaImage
+        width: 0
+        height : 0
+        z: 0
+        anchors.centerIn: dropCircle
+        source: Activity.url + imageName
+    }
+    
     DropArea {
         id: dragTarget
-        width: dropAreaSize * dropCircle.width
-        height: dropAreaSize * dropCircle.height
+        
+        width: Math.max(Math.min((imgWidth ? imgWidth * dropCircle.parent.width : (dropCircle.parent.source == "" ? 
+			   dropCircle.parent.width * dropAreaImage.sourceSize.width/dropCircle.parent.width : 
+			   dropCircle.parent.width * dropAreaImage.sourceSize.width/dropCircle.parent.sourceSize.width)), 
+			   12 * dropCircle.width), 3 * dropCircle.width)
+			   
+        height: Math.max(Math.min((imgHeight ? imgHeight * dropCircle.parent.height : (dropCircle.parent.source == "" ? 
+				dropCircle.parent.height * dropAreaImage.sourceSize.height/dropCircle.parent.height : 
+				dropCircle.parent.height * dropAreaImage.sourceSize.height/dropCircle.parent.sourceSize.height)), 
+			    12 * dropCircle.width), 3 * dropCircle.width)
+                        
+        //width: dropAreaImage.sourceSize.width //dropAreaSize * dropCircle.width
+        //height: dropAreaImage.sourceSize.height //dropAreaSize * dropCircle.height
         z: 2
         anchors.centerIn: parent
         
@@ -94,8 +114,17 @@ Rectangle {
                     PropertyChanges {
                         target: targetImage
                         source: dragTarget.drag.source.source
-                        width: imgWidth ? imgWidth * dropCircle.parent.width : (dropCircle.parent.source == "" ? dropCircle.parent.width * dragTarget.drag.source.sourceSize.width/dropCircle.parent.width : dropCircle.parent.width * dragTarget.drag.source.sourceSize.width/dropCircle.parent.sourceSize.width)
-                        height: imgHeight ? imgHeight * dropCircle.parent.height : (dropCircle.parent.source == "" ? dropCircle.parent.height * dragTarget.drag.source.sourceSize.height/dropCircle.parent.height : dropCircle.parent.height * dragTarget.drag.source.sourceSize.height/dropCircle.parent.sourceSize.height)
+                        
+                        width: imgWidth ? imgWidth * dropCircle.parent.width : (dropCircle.parent.source == "" ? 
+							   dropCircle.parent.width * dragTarget.drag.source.sourceSize.width/dropCircle.parent.width : 
+							   dropCircle.parent.width * dragTarget.drag.source.sourceSize.width/
+							   dropCircle.parent.sourceSize.width)
+							   
+                        height: imgHeight ? imgHeight * dropCircle.parent.height : (dropCircle.parent.source == "" ? 
+								dropCircle.parent.height * dragTarget.drag.source.sourceSize.height/dropCircle.parent.height : 
+								dropCircle.parent.height * dragTarget.drag.source.sourceSize.height/
+								dropCircle.parent.sourceSize.height)
+								
                         opacity: 0.5
                     }
                 }

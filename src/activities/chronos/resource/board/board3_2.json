@@ -1,16 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<ShapeGame>
-  <Title x="600" y="495" justification="GTK_JUSTIFY_CENTER">
-    <name>Transportation</name>
-  </Title>
-  <Shape name="B" pixmapfile="chronos/celerifere.png"  x="167" y="307" zoomx="1" zoomy="1" position="0"/>
-  <Title x="167" y="400" justification="GTK_JUSTIFY_CENTER"><name xml:space="preserve">1791 Comte de Sivrac's
-Celerifere</name></Title>
-  <Shape name="C" pixmapfile="chronos/fardier.png"  x="602" y="315" zoomx="1" zoomy="1" position="0"/>
-  <Title x="602" y="380" justification="GTK_JUSTIFY_CENTER"><name>1769 Cugnot's fardier</name></Title>
-  <Shape name="E" pixmapfile="chronos/Eole.svg"  x="385" y="140" zoomx="1" zoomy="1" position="0"/>
-  <Title x="357" y="220" justification="GTK_JUSTIFY_CENTER"><name>1880 Clement Ader's Eole</name></Title>
-</ShapeGame>
-
-
+{
+   "instruction" : "Transportation",
+   "levels" : [
+      {
+          "pixmapfile" : "images/celerifere.png",
+          "x" : "0.2",
+          "y" : "0.55",
+          "width" : 0.4,
+          "height" : 0.4
+      },
+      {
+          "pixmapfile" : "images/fardier.png",
+          "x" : "0.5",
+          "y" : "0.9",
+          "width" : 0.4,
+          "height" : 0.2
+      },
+      {
+          "pixmapfile" : "images/Eole.svg",
+          "x" : "0.75",
+          "y" : "0.55",
+          "width" : 0.4,
+          "height" : 0.4
+      },
+      {
+		  "text" : "1791 Comte de Sivrac's Celerifere",
+		  "x" : "0.25",
+		  "y" : 0.2,
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "1769 Cugnot's fardier",
+		  "x" : "0.5",
+		  "y" : 0.75,
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "1880 Clement Ader's Eole",
+		  "x" : "0.75",
+		  "y" : 0.21,
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      }
+   ]
+}

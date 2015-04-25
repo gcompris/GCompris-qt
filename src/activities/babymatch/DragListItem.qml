@@ -2,7 +2,7 @@
 
  Copyright (C)
  2003, 2014: Bruno Coudoin: initial version
- 2015: Johnny Jazeix and Pulkit Gupta: Qt port
+ 2015: Pulkit Gupta: Qt port
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -98,10 +98,10 @@ Item {
         Image {
             id: tileImage
             anchors.centerIn: parent
-            height: heightInColumn * 1.1
-            width: widthInColumn * 1.1
+            height: Activity.glowEnabled ? heightInColumn * 1.1 : heightInColumn
+            width: Activity.glowEnabled ? widthInColumn * 1.1 : widthInColumn
             fillMode: Image.PreserveAspectFit
-            source: Activity.url+imgName
+            source: Activity.url + imgName
             
             property QtObject dragTarget
             property QtObject tileImageParent
@@ -115,7 +115,8 @@ Item {
                     leftContainer.z = 1
                 
                 tileImage.state = "INITIAL"
-                var coord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.width/2, tile.yCenter - tileImage.height/2)
+                var coord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.width/2, 
+							tile.yCenter - tileImage.height/2)
                 tileImage.moveImageX = coord.x
                 tileImage.moveImageY = coord.y
                 tileImage.tileImageParent = tile
@@ -147,6 +148,8 @@ Item {
                         toolTip.text = toolTipText
                         toolTip.visible = true
                     }
+                    //activity.audioVoices.append(ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/congratulation.ogg"))
+					activity.audioVoices.append(ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/Hello.ogg"))
                 }
                 onExited: {
                     if(!pressed) {
@@ -154,6 +157,7 @@ Item {
                         tile.border.color = "transparent"
                         toolTip.visible = false
                     }
+                    activity.audioEffects.play("voices/$LOCALE/misc/No.ogg")
                 }
 
                 onPressed: {
@@ -186,7 +190,8 @@ Item {
                         tileImage.state = "DROPPED"
                         tile.colorChange = false
                         tileImage.dropping = true
-                        var coord = tileImage.parent.mapFromItem(backgroundImage, tileImage.Drag.target.xCenter - tileImage.width/2, tileImage.Drag.target.yCenter - tileImage.height/2)
+                        var coord = tileImage.parent.mapFromItem(backgroundImage, tileImage.Drag.target.xCenter - 
+									tileImage.width/2, tileImage.Drag.target.yCenter - tileImage.height/2)
                         tileImage.moveImageX = coord.x
                         tileImage.moveImageY = coord.y
                         tileImage.Drag.target.dropped(tileImage.Drag) // Emit signal manually
@@ -219,8 +224,14 @@ Item {
                     name: "DROPPED"
                     PropertyChanges {
                         target: tileImage
-                        height: imgHeight ? imgHeight * backgroundImage.height : (backgroundImage.source == "" ? backgroundImage.height * tileImage.sourceSize.height/backgroundImage.height : backgroundImage.height * tileImage.sourceSize.height/backgroundImage.sourceSize.height) 
-                        width: imgWidth ? imgWidth * backgroundImage.width : (backgroundImage.source == "" ? backgroundImage.width * tileImage.sourceSize.width/backgroundImage.width : backgroundImage.width * tileImage.sourceSize.width/backgroundImage.sourceSize.width)
+                        
+                        height: imgHeight ? imgHeight * backgroundImage.height : (backgroundImage.source == "" ? 
+								backgroundImage.height * tileImage.sourceSize.height/backgroundImage.height : 
+								backgroundImage.height * tileImage.sourceSize.height/backgroundImage.sourceSize.height) 
+								
+                        width: imgWidth ? imgWidth * backgroundImage.width : (backgroundImage.source == "" ? 
+							   backgroundImage.width * tileImage.sourceSize.width/backgroundImage.width : 
+							   backgroundImage.width * tileImage.sourceSize.width/backgroundImage.sourceSize.width)
                     }
                 }
             ]

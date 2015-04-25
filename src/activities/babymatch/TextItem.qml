@@ -2,7 +2,7 @@
 
  Copyright (C)
  2003, 2014: Bruno Coudoin: initial version
- 2015: Johnny Jazeix and Pulkit Gupta: Qt port
+ 2015: Pulkit Gupta: Qt port
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -49,7 +49,7 @@ Item {
         width: Math.min(implicitWidth, textWidth * displayText.parent.width)
         wrapMode: TextEdit.WordWrap
         z: 2
-        text: qsTr(showText)
+        text: showText
         onHeightChanged: {
             if(firstTime) {
                 displayTxtContainer.height = displayTxt.height * Math.ceil(displayTxt.implicitWidth / displayTxt.width)

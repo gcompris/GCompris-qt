@@ -23,6 +23,7 @@ color_mix
 color_mix_light
 colors
 details
+double-entry
 drawnumber
 enumerate
 erase
@@ -32,6 +33,7 @@ fifteen
 followline
 football
 geography
+geo-country
 gletters
 gnumch-equality
 gnumch-factors
@@ -78,6 +80,7 @@ money_back_cents
 money_cents
 mosaic
 numbers-odd-even
+paintings
 penalty
 planegame
 redraw

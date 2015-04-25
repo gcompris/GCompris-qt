@@ -1,15 +1,47 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<ShapeGame>
-  <Title x="600" y="495" justification="GTK_JUSTIFY_CENTER">
-    <name>Transportation</name>
-  </Title>
-  <Shape name="G" pixmapfile="chronos/st_rocket.png"  x="233" y="276" zoomx="1" zoomy="1" position="0"/>
-  <Title x="233" y="399" justification="GTK_JUSTIFY_CENTER"><name xml:space="preserve">1829 Stephenson's Rocket
-Steam locomotive</name></Title>
-  <Shape name="E" pixmapfile="chronos/Eole.svg"  x="500" y="84" zoomx="1" zoomy="1" position="0"/>
-  <Title x="474" y="170" justification="GTK_JUSTIFY_CENTER"><name>1880 Clement Ader's Eole</name></Title>
-  <Shape name="C" pixmapfile="chronos/fardier.png"  x="600" y="380" zoomx="1" zoomy="1" position="0"/>
-  <Title x="625" y="452" justification="GTK_JUSTIFY_CENTER"><name>1769 Cugnot's fardier</name></Title>
-</ShapeGame>
-
+{
+   "instruction" : "Transportation",
+   "levels" : [
+      {
+          "pixmapfile" : "images/st_rocket.png",
+          "x" : "0.2",
+          "y" : "0.55",
+          "width" : 0.4,
+          "height" : 0.4
+      },
+      {
+          "pixmapfile" : "images/Eole.svg",
+          "x" : "0.5",
+          "y" : "0.9",
+          "width" : 0.4,
+          "height" : 0.2
+      },
+      {
+          "pixmapfile" : "images/fardier.png",
+          "x" : "0.75",
+          "y" : "0.55",
+          "width" : 0.4,
+          "height" : 0.4
+      },
+      {
+		  "text" : "1829 Stephenson's Rocket Steam locomotive",
+		  "x" : "0.25",
+		  "y" : 0.2,
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "1880 Clement Ader's Eole",
+		  "x" : "0.5",
+		  "y" : 0.75,
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "1769 Cugnot's fardier",
+		  "x" : "0.75",
+		  "y" : 0.21,
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      }
+   ]
+}

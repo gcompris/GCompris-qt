@@ -1,10 +1,10 @@
 /* GCompris - Babymatch.qml
  *
- * Copyright (C) 2015 Johnny Jazeix, Pulkit Gupta
+ * Copyright (C) 2015 Pulkit Gupta
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
- *   Johnny Jazeix <jazeix@gmail.com> and Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -67,6 +67,7 @@ ActivityBase {
             property alias leftBar: leftBar
             property alias instruction: instruction
             property alias toolTip: toolTip
+            property alias player_score: player_score
         }
 
         onStart: { Activity.start(items, url, levelCount, subLevelCount, answerGlow, displayDropCircle) }
@@ -79,11 +80,33 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | reload }
+            content: BarEnumContent { value: help | home | level }
             onHelpClicked: {displayDialog(dialogHelp)}
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+        }
+        
+        Image {
+            id: score
+            source: "qrc:/gcompris/src/activities/babymatch/resource/score.svg"
+            height: bar.height
+            anchors {
+                bottom: bar.bottom
+                bottomMargin: 10
+                //verticalCenter: bar.verticalCenter
+                left: leftContainer.right
+                leftMargin: 275
+            }
+
+            GCText {
+                id: player_score
+                anchors.verticalCenter: parent.verticalCenter
+                anchors.horizontalCenter: parent.horizontalCenter
+                x: parent.width*0.70
+                color: "white"
+                fontSize: largeSize
+            }
         }
 
         Bonus {
@@ -149,7 +172,9 @@ ActivityBase {
             
             Rectangle {
                 id: leftWidget
-                property double leftWidgetWidth: Math.min((availablePieces.view.height/availablePieces.view.nbItemsByGroup) - (1.5*availablePieces.view.spacing), (background.width/5) - availablePieces.view.spacing) + 10 * ApplicationInfo.ratio
+                property double leftWidgetWidth: Math.min((availablePieces.view.height/availablePieces.view.nbItemsByGroup) 
+												 - (1.5*availablePieces.view.spacing), (background.width/5) - 
+												 availablePieces.view.spacing) + 10 * ApplicationInfo.ratio
                 width: leftWidgetWidth
                 height: background.height
                 color: "#FFFF42"
@@ -187,7 +212,8 @@ ActivityBase {
             anchors {
                 bottom: bar.top
                 bottomMargin: 10
-                horizontalCenter: leftContainer.horizontalCenter
+                left: leftContainer.left//horizontalCenter
+                leftMargin: 5
             }
             visible: toolTip.visible
             z: 101
@@ -219,27 +245,35 @@ ActivityBase {
                 width: source == "" ? grid.width : (ratio > gridRatio ? grid.width : grid.height * ratio)
                 height: source == "" ? grid.height : (ratio < gridRatio ? grid.height : grid.width / ratio)
                 anchors.centerIn: parent
-            }
-            
-            Repeater {
-                id: backgroundPieces
-                model: backgroundPiecesModel
-                delegate: piecesDelegate
-                z: 2
                 
-                Component {
-                    id: piecesDelegate
-                    Image {
-                        id: shapeBackground
-                        source: Activity.url + imgName
-                        x: posX * backgroundImage.width - width / 2
-                        y: posY * backgroundImage.height - height / 2
-                        height: imgHeight ? imgHeight * backgroundImage.height : (backgroundImage.source == "" ? backgroundImage.height * shapeBackground.sourceSize.height/backgroundImage.height : backgroundImage.height * shapeBackground.sourceSize.height/backgroundImage.sourceSize.height)
-                        width: imgWidth ? imgWidth * backgroundImage.width : (backgroundImage.source == "" ? backgroundImage.width * shapeBackground.sourceSize.width/backgroundImage.width : backgroundImage.width * shapeBackground.sourceSize.width/backgroundImage.sourceSize.width)
-                        fillMode: Image.PreserveAspectFit
-                    }
-                }
-            }  
+                Repeater {
+					id: backgroundPieces
+					model: backgroundPiecesModel
+					delegate: piecesDelegate
+					z: 2
+					
+					Component {
+						id: piecesDelegate
+						Image {
+							id: shapeBackground
+							source: Activity.url + imgName
+							x: posX * backgroundImage.width - width / 2
+							y: posY * backgroundImage.height - height / 2
+							
+							height: imgHeight ? imgHeight * backgroundImage.height : (backgroundImage.source == "" ? 
+									backgroundImage.height * shapeBackground.sourceSize.height/backgroundImage.height : 
+									backgroundImage.height * shapeBackground.sourceSize.height/
+									backgroundImage.sourceSize.height)
+									
+							width: imgWidth ? imgWidth * backgroundImage.width : (backgroundImage.source == "" ? 
+								   backgroundImage.width * shapeBackground.sourceSize.width/backgroundImage.width : 
+								   backgroundImage.width * shapeBackground.sourceSize.width/backgroundImage.sourceSize.width)
+							
+							fillMode: Image.PreserveAspectFit
+						}
+					}
+				}
+            }            
             
            Rectangle {
                 id: instruction

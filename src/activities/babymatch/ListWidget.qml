@@ -2,7 +2,7 @@
 
  Copyright (C)
  2003, 2014: Bruno Coudoin: initial version
- 2015: Johnny Jazeix and Pulkit Gupta: Qt port
+ 2015: Pulkit Gupta: Qt port
 
  This program is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -47,7 +47,7 @@ Item {
     }
 
     PropertyAnimation {
-        id: "showOk"
+        id: showOk
         target: ok
         properties: "height"
         from: 0
@@ -55,7 +55,7 @@ Item {
         duration: 300
     }
     PropertyAnimation {
-        id: "hideOk"
+        id: hideOk
         target: ok
         properties: "height"
         from: view.iconSize * 0.9
@@ -211,7 +211,8 @@ Item {
             
             Image {
                 id: next
-                visible: model.count > view.nbItemsByGroup && view.nextNavigation != 0 && view.currentDisplayedGroup < view.nbDisplayedGroup - 1
+                visible: model.count > view.nbItemsByGroup && view.nextNavigation != 0 && view.currentDisplayedGroup < 
+						 view.nbDisplayedGroup - 1
                 source:"qrc:/gcompris/src/core/resource/bar_next.svgz"
                 width: view.iconSize * 0.35
                 fillMode: Image.PreserveAspectFit

@@ -1,10 +1,10 @@
 /* GCompris - Chronos.qml
  *
- * Copyright (C) 2015 Johnny Jazeix, Pulkit Gupta
+ * Copyright (C) 2015 Pulkit Gupta
  *
  * Authors:
  *   José Jorge <jjorge@free.fr> (GTK+ version)
- *   Johnny Jazeix <jazeix@gmail.com> and Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by

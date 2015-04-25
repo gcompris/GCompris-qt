@@ -1,10 +1,10 @@
 /* GCompris - babymatch.js
  *
- * Copyright (C) 2015 Johnny Jazeix, Pulkit Gupta
+ * Copyright (C) 2015 Pulkit Gupta
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
- *   Johnny Jazeix <jazeix@gmail.com> and Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
+ *   Pulkit Gupta <pulkitgenius@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -46,6 +46,7 @@ function start(items_, url_, levelCount_, subLevelCount_, answerGlow_, displayDr
     currentSubLevel = 0
     spots = []
     showText = []
+    items.player_score.text = 0
     initLevel()
 }
 
@@ -82,6 +83,7 @@ function initLevel() {
 
     var dropItemComponent = Qt.createComponent("qrc:/gcompris/src/activities/babymatch/DropAnswerItem.qml")
     var textItemComponent = Qt.createComponent("qrc:/gcompris/src/activities/babymatch/TextItem.qml")
+    //print(dropItemComponent.errorString())
     
     if(currentSubLevel == 0 && levelData.numberOfSubLevel != undefined)
         numberOfSubLevel = levelData.numberOfSubLevel
@@ -96,22 +98,22 @@ function initLevel() {
     if(levelData.instruction == undefined)
         items.instruction.visible = false
     else if(!displayDropCircle) {
-        items.instruction.text = qsTr(levelData.instruction)
+        items.instruction.text = levelData.instruction
     }
     else {
         items.instruction.visible = true
-        items.instruction.text = qsTr(levelData.instruction)
+        items.instruction.text = levelData.instruction
     }
 
     // Fill available pieces
-    var arr=[], l=levelData.levels.length
-    for(var i=0 ; i < l ; i++)
-        arr[i]=i
+    var arr=[], levelDataLength = levelData.levels.length
+    for(var i=0 ; i < levelDataLength ; i++)
+        arr[i] = i
         
-    var i=0, j=0, k=0, n=0 
-    while(l--) {
+    var i = 0, j = 0, k = 0, n = 0 
+    while(levelDataLength--) {
         
-        var rand = Math.floor(Math.random() * l)
+        var rand = Math.floor(Math.random() * levelDataLength)
         i = arr[rand]
         arr.splice(rand,1)
         
@@ -121,15 +123,16 @@ function initLevel() {
                 "imgHeight": levelData.levels[i].height == undefined ? 0 : levelData.levels[i].height,
                 "imgWidth": levelData.levels[i].width == undefined ? 0 : levelData.levels[i].width,
                 "toolTipText": levelData.levels[i].toolTipText == undefined ? "" : levelData.levels[i].toolTipText,
-                "pressSound": levelData.levels[i].soundFile == undefined ? "qrc:/gcompris/src/core/resource/sounds/bleep.wav" : url + levelData.levels[i].soundFile
+                "pressSound": levelData.levels[i].soundFile == undefined ? 
+							  "qrc:/gcompris/src/core/resource/sounds/bleep.wav" : url + levelData.levels[i].soundFile
             });
 
             spots[j++] = dropItemComponent.createObject(
                          items.backgroundImage, {
                             "posX": levelData.levels[i].x,
                             "posY": levelData.levels[i].y,
-                            "imgHeight": levelData.levels[i].height == undefined ? 0 : levelData.levels[i].height,// == 0 ? items.grid.height : levelData.levels[i].height * items.grid.height,
-                            "imgWidth": levelData.levels[i].width == undefined ? 0 : levelData.levels[i].width,// == 0 ? items.grid.width : levelData.levels[i].width * items.grid.width,
+                            "imgHeight": levelData.levels[i].height == undefined ? 0 : levelData.levels[i].height,
+                            "imgWidth": levelData.levels[i].width == undefined ? 0 : levelData.levels[i].width,
                             "dropAreaSize": levelData.levels[i].dropAreaSize == undefined ? 15 : levelData.levels[i].dropAreaSize,
                             "imageName" : levelData.levels[i].pixmapfile
                          });
@@ -139,13 +142,14 @@ function initLevel() {
                             items.backgroundImage, {
                                 "posX": levelData.levels[i].x,
                                 "posY": levelData.levels[i].y,
-                                "textWidth": levelData.levels[i].width,// == 0 ? items.grid.width : levelData.levels[i].width * items.grid.width,
+                                "textWidth": levelData.levels[i].width,
                                 "showText" : levelData.levels[i].text
                             });
         }
         else {
             if(levelData.levels[i].type === "SHAPE_BACKGROUND_IMAGE") {
                 items.backgroundImage.source = url + levelData.levels[i].pixmapfile
+                print(items.backgroundImage.source)
             }
             else {
                 items.backgroundPiecesModel.append( {
@@ -178,6 +182,7 @@ function parseFromJson(json)
 }
 
 function nextSubLevel() {
+	items.player_score.text++
     if(numberOfSubLevel < ++currentSubLevel) {
         currentSubLevel = 0
         nextLevel()

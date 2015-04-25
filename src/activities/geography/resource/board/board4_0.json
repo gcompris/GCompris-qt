@@ -1,50 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ShapeGame>
-  <Title x="600" y="495" justification="GTK_JUSTIFY_CENTER">
-    <name>South America</name>
-  </Title>
-  <Shape name="A" pixmapfile="geography/southamerica/argentina.png" x="410" y="380" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/argentina.ogg">
-        <tooltip>Argentina</tooltip>
-  </Shape>
-  <Shape name="B" pixmapfile="geography/southamerica/bolivia.png" x="390" y="224" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/bolivia.ogg">
-        <tooltip>Bolivia</tooltip>
-  </Shape>
-  <Shape name="C" pixmapfile="geography/southamerica/brazil.png" x="453" y="203" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/brazil.ogg">
-        <tooltip>Brazil</tooltip>
-  </Shape>
-  <Shape name="D" pixmapfile="geography/southamerica/chile.png" x="375" y="369" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/chile.ogg">
-        <tooltip>Chile</tooltip>
-  </Shape>
-  <Shape name="E" pixmapfile="geography/southamerica/colombia.png" x="314" y="81" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/colombia.ogg">
-        <tooltip>Colombia</tooltip>
-  </Shape>
-  <Shape name="F" pixmapfile="geography/southamerica/ecuador.png" x="279" y="128" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/ecuador.ogg">
-        <tooltip>Ecuador</tooltip>
-  </Shape>
-  <Shape name="G" pixmapfile="geography/southamerica/french_guiana.png" x="454" y="77" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/french_guiana.ogg">
-        <tooltip>French Guiana</tooltip>
-  </Shape>
-  <Shape name="H" pixmapfile="geography/southamerica/guyana.png" x="413" y="72" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/guyana.ogg">
-        <tooltip>Guyana</tooltip>
-  </Shape>
-  <Shape name="I" pixmapfile="geography/southamerica/panama.png" x="263" y="54" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/panama.ogg">
-        <tooltip>Panama</tooltip>
-  </Shape>
-  <Shape name="J" pixmapfile="geography/southamerica/paraguay.png" x="428" y="270" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/paraguay.ogg">
-        <tooltip>Paraguay</tooltip>
-  </Shape>
-  <Shape name="K" pixmapfile="geography/southamerica/peru.png" x="305" y="178" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/peru.ogg">
-        <tooltip>Peru</tooltip>
-  </Shape>
-  <Shape name="L" pixmapfile="geography/southamerica/suriname.png" x="434" y="77" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/suriname.ogg">
-        <tooltip>Suriname</tooltip>
-  </Shape>
-  <Shape name="M" pixmapfile="geography/southamerica/uruguay.png" x="452" y="333" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/uruguay.ogg">
-        <tooltip>Uruguay</tooltip>
-  </Shape>
-  <Shape name="N" pixmapfile="geography/southamerica/venezuela.png" x="357" y="66" zoomx="1" zoomy="1" position="0" sound="voices/$LOCALE/geography/venezuela.ogg">
-        <tooltip>Venezuela</tooltip>
-  </Shape>
-  <Shape name="1" pixmapfile="geography/southamerica/south_america.png" type="SHAPE_BACKGROUND" x="420" y="260" zoomx="1" zoomy="1" position="0"/>
-</ShapeGame>
-
+{
+   "instruction" : "South America",
+   "levels" : [
+      {
+         "pixmapfile" : "southamerica/south_america.png",
+         "type" : "SHAPE_BACKGROUND_IMAGE"
+      },
+      {
+         "pixmapfile" : "southamerica/venezuela.png",
+         "toolTipText" : "Venezuela",
+         "x" : "0.411",
+         "y" : "0.127"
+      },
+      {
+         "pixmapfile" : "southamerica/uruguay.png",
+         "toolTipText" : "Uruguay",
+         "x" : "0.545",
+         "y" : "0.64"
+      },
+      {
+         "pixmapfile" : "southamerica/suriname.png",
+         "toolTipText" : "Suriname",
+         "x" : "0.52",
+         "y" : "0.148"
+      },
+      {
+         "pixmapfile" : "southamerica/peru.png",
+         "toolTipText" : "Peru",
+         "x" : "0.338",
+         "y" : "0.342"
+      },
+      {
+         "pixmapfile" : "southamerica/paraguay.png",
+         "toolTipText" : "Paraguay",
+         "x" : "0.511",
+         "y" : "0.519"
+      },
+      {
+         "pixmapfile" : "southamerica/panama.png",
+         "toolTipText" : "Panama",
+         "x" : "0.279",
+         "y" : "0.104"
+      },
+      {
+         "pixmapfile" : "southamerica/guyana.png",
+         "toolTipText" : "Guyana",
+         "x" : "0.49",
+         "y" : "0.138"
+      },
+      {
+         "pixmapfile" : "southamerica/french_guiana.png",
+         "toolTipText" : "French Guiana",
+         "x" : "0.548",
+         "y" : "0.148"
+      },
+      {
+         "pixmapfile" : "southamerica/ecuador.png",
+         "toolTipText" : "Ecuador",
+         "x" : "0.301",
+         "y" : "0.246"
+      },
+      {
+         "pixmapfile" : "southamerica/colombia.png",
+         "toolTipText" : "Colombia",
+         "x" : "0.351",
+         "y" : "0.156"
+      },
+      {
+         "pixmapfile" : "southamerica/chile.png",
+         "toolTipText" : "Chile",
+         "x" : "0.437",
+         "y" : "0.71"
+      },
+      {
+         "pixmapfile" : "southamerica/brazil.png",
+         "toolTipText" : "Brazil",
+         "x" : "0.546",
+         "y" : "0.39"
+      },
+      {
+         "pixmapfile" : "southamerica/bolivia.png",
+         "toolTipText" : "Bolivia",
+         "x" : "0.458",
+         "y" : "0.431"
+      },
+      {
+         "pixmapfile" : "southamerica/argentina.png",
+         "toolTipText" : "Argentina",
+         "x" : "0.486",
+         "y" : "0.731"
+      }
+   ]
+}
