@@ -18,7 +18,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${my_cxx_flags}")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${my_cxx_flags}")
 
 set(GCOMPRIS_MAJOR_VERSION 0)
-set(GCOMPRIS_MINOR_VERSION 34)
+set(GCOMPRIS_MINOR_VERSION 30)
 set(GCOMPRIS_PATCH_VERSION 0)
 
 set(GCOMPRIS_VERSION ${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION})
@@ -67,12 +67,6 @@ find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
 option(WITH_ACTIVATION_CODE "Include the activation system" OFF)
 option(WITH_DEMO_ONLY "Include only demo activities" OFF)
 
-option(WITH_DOWNLOAD "Internal download" ON)
-if(WITH_DOWNLOAD)
-  set(ANDROID_INTERNET_PERMISSION "<uses-permission android:name=\"android.permission.INTERNET\" />")
-  set(ANDROID_ACCESS_NETWORK_STATE_PERMISSION "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\" />")
-endif(WITH_DOWNLOAD)
-
 # Set output directory
 if(CMAKE_HOST_APPLE)
   set(_bundle_bin gcompris-qt.app/Contents/MacOS)
@@ -88,7 +82,7 @@ if(ANDROID)
   set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir} CACHE INTERNAL "" FORCE)
   set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir} CACHE INTERNAL "" FORCE)
   if(WITH_ACTIVATION_CODE)
-    set(ANDROID_BILLING_PERMISSION "<uses-permission android:name=\"com.android.vending.BILLING\"/>")
+    set(ANDROID_BILLING_PERMISSION '<uses-permission android:name="com.android.vending.BILLING"/>')
     set(ANDROID_PACKAGE "net.gcompris")
   else(WITH_ACTIVATION_CODE)
     set(ANDROID_PACKAGE "net.gcompris.full")
@@ -177,27 +171,6 @@ else()
 endif()
 
 option(WITH_KIOSK_MODE "Set the kiosk mode by default" OFF)
-
-set(COMPRESSED_AUDIO "ogg" CACHE STRING "Compressed Audio format [ogg|aac]")
-
-file(GLOB_RECURSE OGG_FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/ "*.ogg")
-
-foreach(OGG_FILE ${OGG_FILES})
-  # This should only replace the extension
-  string(REGEX REPLACE "ogg$" "aac" AAC_FILE ${OGG_FILE})
-  add_custom_command(
-    OUTPUT ${AAC_FILE}
-    # Put the good line depending on your installation
-    COMMAND avconv -v warning -i ${OGG_FILE} -acodec libvo_aacenc ${AAC_FILE}
-    #COMMAND ffmpeg -v warning -i ${OGG_FILE} -acodec aac -strict -2 ${AAC_FILE}
-    )
-  list(APPEND AAC_FILES ${AAC_FILE})
-endforeach()
-
-add_custom_target(
-  createAacFromOgg
-  DEPENDS ${AAC_FILES}
-  )
 
 add_subdirectory(src)
 

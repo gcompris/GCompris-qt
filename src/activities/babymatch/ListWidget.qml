@@ -148,7 +148,7 @@ Item {
         
         Image {
             id: ok
-            source:"qrc:/gcompris/src/core/resource/bar_ok.svgz"
+            source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
             width: view.iconSize * 0.9
             height: 0
             fillMode: Image.PreserveAspectFit
@@ -193,7 +193,7 @@ Item {
             Image {
                 id: previous
                 opacity: (model.count > view.nbItemsByGroup && view.previousNavigation != 0 && view.currentDisplayedGroup != 0) ? 1 : 0
-                source:"qrc:/gcompris/src/core/resource/bar_previous.svgz"
+                source:"qrc:/gcompris/src/core/resource/bar_previous.svg"
                 width: view.iconSize * 0.35
                 fillMode: Image.PreserveAspectFit
                 MouseArea {
@@ -213,7 +213,7 @@ Item {
                 id: next
                 visible: model.count > view.nbItemsByGroup && view.nextNavigation != 0 && view.currentDisplayedGroup < 
 						 view.nbDisplayedGroup - 1
-                source:"qrc:/gcompris/src/core/resource/bar_next.svgz"
+                source:"qrc:/gcompris/src/core/resource/bar_next.svg"
                 width: view.iconSize * 0.35
                 fillMode: Image.PreserveAspectFit
                 MouseArea {

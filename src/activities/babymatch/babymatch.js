@@ -149,7 +149,6 @@ function initLevel() {
         else {
             if(levelData.levels[i].type === "SHAPE_BACKGROUND_IMAGE") {
                 items.backgroundImage.source = url + levelData.levels[i].pixmapfile
-                print(items.backgroundImage.source)
             }
             else {
                 items.backgroundPiecesModel.append( {

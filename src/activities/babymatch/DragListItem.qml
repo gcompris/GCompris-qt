@@ -148,8 +148,6 @@ Item {
                         toolTip.text = toolTipText
                         toolTip.visible = true
                     }
-                    //activity.audioVoices.append(ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/congratulation.ogg"))
-					activity.audioVoices.append(ApplicationInfo.getAudioFilePath("voices/$LOCALE/misc/Hello.ogg"))
                 }
                 onExited: {
                     if(!pressed) {
@@ -157,7 +155,6 @@ Item {
                         tile.border.color = "transparent"
                         toolTip.visible = false
                     }
-                    activity.audioEffects.play("voices/$LOCALE/misc/No.ogg")
                 }
 
                 onPressed: {
