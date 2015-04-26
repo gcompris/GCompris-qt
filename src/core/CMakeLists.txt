@@ -105,6 +105,10 @@ if(BUILD_STANDALONE)
       mediaservice/${_lib_prefix}gstcamerabin
       mediaservice/${_lib_prefix}gstmediacapture
       mediaservice/${_lib_prefix}gstmediaplayer)
+  elseif(APPLE)
+    list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}qavfmediaplayer
+      mediaservice/${_lib_prefix}qtmedia_audioengine
+      mediaservice/${_lib_prefix}qavfcamera)
   endif()
 
   set(_qml_plugins
