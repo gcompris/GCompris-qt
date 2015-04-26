@@ -137,7 +137,7 @@ Item {
     DropShadow {
         id: dropShadow
         anchors.fill: wordText
-        cached: true
+        cached: false
         horizontalOffset: 1
         verticalOffset: 1
         radius: 3.0

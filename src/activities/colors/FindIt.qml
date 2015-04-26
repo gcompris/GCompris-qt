@@ -162,7 +162,7 @@ ActivityBase {
 
         DropShadow {
             anchors.fill: questionItem
-            cached: true
+            cached: false
             horizontalOffset: 3
             verticalOffset: 3
             radius: 8.0

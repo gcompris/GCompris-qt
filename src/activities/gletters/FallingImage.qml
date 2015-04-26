@@ -105,7 +105,7 @@ Item {
     DropShadow {
         id: dropShadow
         anchors.fill: image
-        cached: true
+        cached: false
         horizontalOffset: 1
         verticalOffset: 1
         radius: 3.0

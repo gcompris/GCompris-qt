@@ -71,7 +71,7 @@ Image {
 
     DropShadow {
         anchors.fill: text
-        cached: true
+        cached: false
         horizontalOffset: 1
         verticalOffset: 1
         radius: 3

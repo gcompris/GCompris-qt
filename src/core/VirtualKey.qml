@@ -105,7 +105,7 @@ Item {
     
     DropShadow {
         anchors.fill: button
-        cached: true
+        cached: false
         horizontalOffset: 3
         verticalOffset: 3
         radius: 8.0

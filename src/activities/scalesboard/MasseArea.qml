@@ -241,7 +241,7 @@ Rectangle {
 
                 DropShadow {
                     anchors.fill: text
-                    cached: true
+                    cached: false
                     horizontalOffset: 3
                     verticalOffset: 3
                     radius: 8.0
