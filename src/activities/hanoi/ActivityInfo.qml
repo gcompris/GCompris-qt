@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2015 Johnny Jazeix <jazeix@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,13 +21,13 @@ ActivityInfo {
   name: "hanoi/Hanoi.qml"
   difficulty: 2
   icon: "hanoi/hanoi.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
-  demo: false
+  author: "Johnny Jazeix <jazeix@gmail.com>"
+  demo: true
   title: qsTr("Simplified Tower of Hanoi")
   description: qsTr("Reproduce the given tower")
   goal: qsTr("Reproduce the tower on the right in the empty space on the left")
   prerequisite: qsTr("Mouse-manipulation")
   manual: qsTr("Drag and Drop one top piece at a time, from one peg to another, to reproduce the tower on the right in the empty space on the left.")
   credit: qsTr("Concept taken from EPI games.")
-  section: "/puzzle"
+  section: "puzzle"
 }

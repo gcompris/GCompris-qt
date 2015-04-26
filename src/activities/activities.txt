@@ -36,6 +36,7 @@ gnumch-inequality
 gnumch-multiples
 gnumch-primes
 guessnumber
+hanoi
 hanoi_real
 hexagon
 imageid

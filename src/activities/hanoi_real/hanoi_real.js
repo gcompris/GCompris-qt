@@ -1,10 +1,11 @@
 /* GCompris - hanoi_real.js
  *
- * Copyright (C) 2014 <Amit Tomar>
+ * Copyright (C) 2015 <Amit Tomar>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
- *   "Amit Tomar" <a.tomar@outlook.com> (Qt Quick port)
+ *   Amit Tomar <a.tomar@outlook.com> (Qt Quick hanoi tower port)
+ *   Johnny Jazeix <jazeix@gmail.com> (Qt Quick hanoi simplified port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,34 +22,131 @@
  */
 .pragma library
 .import QtQuick 2.0 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/hanoi_real/resource/"
 
-var currentLevel  = 0
-var numberOfLevel = 3
+var currentLevel = 0
+var numberOfLevel
 var items
+var activityMode
 
-function start(items_) {
+// Specific data for simplified mode
+var symbols = [
+    "!", "/", "<",
+    ">", "&", "~",
+    "#", "{", "%",
+    "|", "?", "}",
+    "=", "+", "*"
+]
+
+var colors = [
+    "red",
+    "green",
+    "blue",
+    "yellow",
+    "magenta",
+    "orange",
+    "darksalmon",
+    "pink",
+    "mediumorchid",
+    "lightsteelblue",
+    "olive",
+    "purple",
+    "aquamarine",
+    "lawngreen",
+    "brown"
+]
+
+var nbTowersLessExpectedAndResultOnes
+var nbMaxItemsByTower
+
+function start(items_, activityMode_) {
     items = items_
+    activityMode = activityMode_
     currentLevel = 0
+    numberOfLevel = (activityMode == "real") ? 3 : 6
+
     initLevel()
 }
 
 function stop() {
 }
 
+function initSpecificInfoForSimplified() {
+    Core.shuffle(symbols);
+    switch(items.bar.level) {
+    case 1:
+        nbTowersLessExpectedAndResultOnes = 3;
+        nbMaxItemsByTower = 5;
+        break;
+    case 2:
+        nbTowersLessExpectedAndResultOnes = 4;
+        nbMaxItemsByTower = 5;
+        break;
+    case 3:
+        nbTowersLessExpectedAndResultOnes = 5;
+        nbMaxItemsByTower = 6;
+        break;
+    case 4:
+        nbTowersLessExpectedAndResultOnes = 6;
+        nbMaxItemsByTower = 7;
+        break;
+    case 5:
+        nbTowersLessExpectedAndResultOnes = 6;
+        nbMaxItemsByTower = 8;
+        break;
+    case 6:
+        nbTowersLessExpectedAndResultOnes = 5;
+        nbMaxItemsByTower = 9;
+    }
+}
+
 function initLevel() {
     items.bar.level = currentLevel + 1
-    items.numberOfDisc = currentLevel + 3
-    items.discRepeater.model = items.numberOfDisc
+
+    if(activityMode == "real") {
+        items.numberOfDisc = currentLevel + 3
+        items.discRepeater.model = items.numberOfDisc
+        items.towerModel.model = 3
+    }
+    else {
+        initSpecificInfoForSimplified();
+        items.towerModel.model = nbTowersLessExpectedAndResultOnes + 2
+
+        items.numberOfDisc = nbTowersLessExpectedAndResultOnes * (nbMaxItemsByTower-1) + nbMaxItemsByTower
+        items.discRepeater.model = items.numberOfDisc
+    }
 
     placeDiscsAtOrigin()
+
+    if(activityMode != "real") {
+        for(var i = 0 ; i < (items.numberOfDisc-nbMaxItemsByTower); ++i) {
+            var index = Math.floor(Math.random() * symbols.length);
+            items.discRepeater.itemAt(i).text = symbols[index];
+            items.discRepeater.itemAt(i).color = colors[index];
+        }
+        // Fill the text discs avoiding duplicates
+        var currentAnswerId = items.numberOfDisc-nbMaxItemsByTower;
+        var goodAnswerIndices = [];
+        do {
+            var id = Math.floor(Math.random() * (items.numberOfDisc-nbMaxItemsByTower));
+            if(goodAnswerIndices.indexOf(id) == -1) {
+                items.discRepeater.itemAt(currentAnswerId).text = items.discRepeater.itemAt(id).text;
+                items.discRepeater.itemAt(currentAnswerId).color = items.discRepeater.itemAt(id).color;
+                goodAnswerIndices.push(id);
+                currentAnswerId ++;
+            }
+        }
+        while(currentAnswerId < items.numberOfDisc);
+    }
+
     disableNonDraggablediscs()
 }
 
 function nextLevel()
 {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
     initLevel();
@@ -66,8 +164,15 @@ function placeDisc(disc, towerImage)
 {
     disc.towerImage = towerImage
     disc.position = getNumberOfDiscOnTower(towerImage)
-    disc.x = towerImage.x + towerImage.width / 2 - disc.width / 2
-    disc.y = towerImage.y + towerImage.height - (disc.position + 1) * disc.height
+    disc.parent = towerImage
+    setDiscY(disc, towerImage);
+}
+
+function setDiscY(disc, towerImage)
+{
+    //  -(towerImage.height * 0.12) because we need to remove the base of the tower
+    // dependant of the image!
+    disc.y = towerImage.y + towerImage.height - disc.position * disc.height - (towerImage.height * 0.12)
 }
 
 function placeDiscsAtOrigin() {
@@ -76,30 +181,56 @@ function placeDiscsAtOrigin() {
         items.discRepeater.model = 0
     items.discRepeater.model = items.numberOfDisc
 
-    for( var i = 0 ; i < items.numberOfDisc ; ++i ) {
-        placeDisc(items.discRepeater.itemAt(i), items.tower1Image)
+    if(activityMode == "real") {
+        for(var i = 0 ; i < items.numberOfDisc ; ++i) {
+            placeDisc(items.discRepeater.itemAt(i), items.towerModel.itemAt(0))
+            items.discRepeater.itemAt(i).color = colors[i];
+        }
+    }
+    else {
+        // First fill the first towers
+        for(var i = 0 ; i < (items.numberOfDisc-nbMaxItemsByTower); ++i) {
+            placeDisc(items.discRepeater.itemAt(i), items.towerModel.itemAt(i%nbTowersLessExpectedAndResultOnes))
+        }
+        // Fill last tower
+        for(var i = items.numberOfDisc-nbMaxItemsByTower ; i < items.numberOfDisc ; ++i) {
+            placeDisc(items.discRepeater.itemAt(i), items.towerModel.itemAt(nbTowersLessExpectedAndResultOnes+1))
+        }
     }
 }
 
 function discReleased(index)
 {
     var disc = items.discRepeater.itemAt(index)
-    if( checkIfDiscOnTowerImage(disc, items.tower1Image) &&
-            getNumberOfDiscOnTower(items.tower1Image) < items.numberOfDisc &&
-            getHigherfDiscOnTower(items.tower1Image) <= index) {
-        placeDisc(disc, items.tower1Image)
-    } else if(checkIfDiscOnTowerImage(disc, items.tower2Image) &&
-            getNumberOfDiscOnTower(items.tower2Image) < items.numberOfDisc &&
-            getHigherfDiscOnTower(items.tower2Image) <= index) {
-        placeDisc(disc, items.tower2Image)
-    } else if(checkIfDiscOnTowerImage(disc, items.tower3Image) &&
-            getNumberOfDiscOnTower(items.tower3Image) < items.numberOfDisc &&
-            getHigherfDiscOnTower(items.tower3Image) <= index) {
-        placeDisc(disc, items.tower3Image)
-    } else {
+    var isCorrect = false;
+
+    if(activityMode == "real") {
+        for(var i = 0 ; i < items.towerModel.model ; ++ i) {
+            var towerItem = items.towerModel.itemAt(i);
+            if(checkIfDiscOnTowerImage(disc, towerItem) &&
+               getNumberOfDiscOnTower(towerItem) < items.numberOfDisc &&
+               getHigherfDiscOnTower(towerItem) <= index) {
+                placeDisc(disc, towerItem)
+                isCorrect = true
+                break;
+            }
+        }
+    }
+    else {
+        for(var i = 0 ; i < items.towerModel.model ; ++ i) {
+            var towerItem = items.towerModel.itemAt(i);
+            if(checkIfDiscOnTowerImage(disc, towerItem) &&
+               getNumberOfDiscOnTower(towerItem) < nbMaxItemsByTower) {
+                placeDisc(disc, towerItem)
+                isCorrect = true
+                break;
+            }
+        }
+    }
+
+    if(!isCorrect) {
         // Cancel the drop
-        disc.x = items.background.currentX
-        disc.y = items.background.currentY
+        setDiscY(disc, disc.towerImage)
     }
 
     disableNonDraggablediscs()
@@ -111,13 +242,16 @@ function performTowersHighlight(disc, x)
 {
     deHighlightTowers()
 
-    if( checkIfDiscOnTowerImage(disc, items.tower1Image) ) {
-        items.tower1Image.highlight = true
-    } else if( checkIfDiscOnTowerImage(disc, items.tower2Image) ) {
-        items.tower2Image.highlight = true
-    } else if( checkIfDiscOnTowerImage(disc, items.tower3Image) ) {
-        items.tower3Image.highlight = true
-    } else {
+    var isCorrect = false;
+    for(var i = 0 ; i < items.towerModel.model ; ++ i) {
+        var towerItem = items.towerModel.itemAt(i);
+        if(checkIfDiscOnTowerImage(disc, towerItem)) {
+            towerItem.highlight = true
+            isCorrect = true
+            break
+        }
+    }
+    if(!isCorrect && disc.towerImage) {
         disc.towerImage.highlight = true
     }
 }
@@ -127,11 +261,11 @@ function sceneSizeChanged()
     if(!items)
         return
 
-    for( var i = 0 ; i < items.numberOfDisc ; ++i ) {
+    for(var i = 0 ; i < items.numberOfDisc ; ++i) {
         var disc = items.discRepeater.itemAt(i)
-        var towerImage = items.discRepeater.itemAt(i).towerImage
-        disc.x = towerImage.x + towerImage.width / 2 - disc.width / 2
-        disc.y = towerImage.y + towerImage.height - (disc.position + 1) * disc.height
+        if(!disc || !disc.towerImage)
+            continue
+        setDiscY(disc, disc.towerImage)
     }
 
     disableNonDraggablediscs()
@@ -139,34 +273,62 @@ function sceneSizeChanged()
 }
 
 function disableNonDraggablediscs()
- {
-    for( var i = 0 ; i < items.numberOfDisc ; ++i ) {
-        if(getHigherfDiscOnTower(items.discRepeater.itemAt(i).towerImage) > i)
-            items.discRepeater.itemAt(i).mouseEnabled = false
-        else
-            items.discRepeater.itemAt(i).mouseEnabled = true
+{
+    if(activityMode == "real") {
+        // Only the highest (index) one is enabled
+        for(var i = 0 ; i < items.numberOfDisc ; ++i) {
+            items.discRepeater.itemAt(i).mouseEnabled = (getHigherfDiscOnTower(items.discRepeater.itemAt(i).towerImage) <= i)
+        }
+    }
+    else {
+        // In simplified, all the last tower discs are disabled
+        // We disable all except the highest (in position) ones of each tower
+        var highestOnes = [];
+        for(var i = 0 ; i < items.numberOfDisc ; ++i) {
+            var disc = items.discRepeater.itemAt(i)
+            if(!disc)
+                continue
+
+            disc.mouseEnabled = false
+            if(disc.towerImage == items.towerModel.itemAt(items.towerModel.model-1)) {
+                continue;
+            }
+            else if(highestOnes[disc.towerImage] == undefined) {
+                highestOnes[disc.towerImage] = {"pos": disc.position, "id": i}
+            }
+            else if(highestOnes[disc.towerImage].pos < disc.position) {
+                highestOnes[disc.towerImage].pos = disc.position
+                highestOnes[disc.towerImage].id = i
+            }
+        }
+
+        for(var i in highestOnes) {
+            items.discRepeater.itemAt(highestOnes[i].id).mouseEnabled = true
+        }
     }
 }
 
 function deHighlightTowers()
- {
-    if(items.tower1Image)
-        items.tower1Image.highlight = false
-    if(items.tower2Image)
-        items.tower2Image.highlight = false
-    if(items.tower3Image)
-        items.tower3Image.highlight = false
+{
+    if(items.towerModel) {
+        for(var i = 0 ; i < items.towerModel.model ; ++ i) {
+            if(items.towerModel.itemAt(i))
+                items.towerModel.itemAt(i).highlight = false
+        }
+    }
 }
 
 function checkIfDiscOnTowerImage(disc, towerImage)
 {
-    return ((disc.x + disc.width / 2) > towerImage.x &&
-            (disc.x + disc.width / 2) < towerImage.x + towerImage.width)
+    var discPosition = items.background.mapFromItem(disc, 0, 0)
+    var towerPosition = items.background.mapFromItem(towerImage, 0, 0)
+    return ((discPosition.x + disc.width / 2) > towerPosition.x &&
+            (discPosition.x + disc.width / 2) < towerPosition.x + towerImage.width)
 }
 
 function getHigherfDiscOnTower(towerImage) {
     var higher = 0
-    for( var i = 0 ; i < items.numberOfDisc ; ++i )
+    for(var i = 0 ; i < items.numberOfDisc ; ++i)
     {
         if(items.discRepeater.itemAt(i).towerImage === towerImage)
             higher = i
@@ -176,7 +338,7 @@ function getHigherfDiscOnTower(towerImage) {
 
 function getNumberOfDiscOnTower(towerImage) {
     var count = 0
-    for( var i = 0 ; i < items.numberOfDisc ; ++i )
+    for(var i = 0 ; i < items.numberOfDisc ; ++i)
     {
         if(items.discRepeater.itemAt(i).towerImage === towerImage)
             count++
@@ -185,15 +347,45 @@ function getNumberOfDiscOnTower(towerImage) {
 }
 
 function checkSolved() {
-    if(getNumberOfDiscOnTower(items.tower3Image) === items.numberOfDisc)
-        items.bonus.good("flower")
+    if(activityMode == "real") {
+        if(getNumberOfDiscOnTower(items.towerModel.itemAt(items.towerModel.model-1)) === items.numberOfDisc)
+            items.bonus.good("flower")
+    }
+    else {
+        // Recreate both last towers text
+        var expectedTower = [];
+        var actualTower = [];
+        for(var i = 0 ; i < items.numberOfDisc ; ++i) {
+            var disc = items.discRepeater.itemAt(i);
+            if(disc.towerImage == items.towerModel.itemAt(items.towerModel.model-1)) {
+                actualTower[disc.position] = disc.text
+}
+            else if(disc.towerImage == items.towerModel.itemAt(items.towerModel.model-2)) {
+                expectedTower[disc.position] = disc.text
+            }
+        }
+
+        // Don't check if not the same length
+        var hasWon = (expectedTower.length == actualTower.length)
+        for (var i = 0; hasWon && i < actualTower.length; ++i) {
+            if (expectedTower[i] !== actualTower[i]) hasWon = false
+        }
+        if(hasWon) {
+            items.bonus.good("flower")
+        }
+    }
 }
 
 function getDiscWidth(index)
 {
-    if( 0 === index ) return items.tower1Image.width * 1.6
-    else if ( 1 === index ) return items.tower1Image.width * 1.3
-    else if ( 2 === index ) return items.tower1Image.width * 1
-    else if ( 3 === index ) return items.tower1Image.width * 0.7
-    else return items.tower1Image.width * 0.5
+    if(activityMode == "real") {
+        if( 0 === index ) return items.towerModel.itemAt(0).width * 1.6
+        else if ( 1 === index ) return items.towerModel.itemAt(0).width * 1.3
+        else if ( 2 === index ) return items.towerModel.itemAt(0).width * 1
+        else if ( 3 === index ) return items.towerModel.itemAt(0).width * 0.7
+        else return items.towerModel.itemAt(0).width * 0.5
+    }
+    else {
+        return items.towerModel.itemAt(0).width
+    }
 }

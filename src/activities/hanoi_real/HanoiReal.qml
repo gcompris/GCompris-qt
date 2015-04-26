@@ -1,6 +1,6 @@
  /* GCompris - hanoi_real.qml
  *
- * Copyright (C) 2014 Amit Tomar <a.tomar@outlook.com>
+ * Copyright (C) 2015 Amit Tomar <a.tomar@outlook.com>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
@@ -19,7 +19,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.3
+import QtQuick 2.1
 import QtGraphicalEffects 1.0
 import GCompris 1.0
 
@@ -33,6 +33,8 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    property string activityMode: "real"
+
     pageComponent: Image {
         id: background
         source: Activity.url + "background.svg"
@@ -40,10 +42,6 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
         signal start
         signal stop
-
-        property real currentX: 0.0
-        property real currentY: 0.0
-        property real spacing: (background.width - 3 * tower1Image.width) / 4
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -58,17 +56,12 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias discRepeater: discRepeater
-            property alias tower1Image: tower1Image
-            property alias tower2Image: tower2Image
-            property alias tower3Image: tower3Image
-            property alias tower1ImageHighlight: tower1ImageHighlight
-            property alias tower2ImageHighlight: tower2ImageHighlight
-            property alias tower3ImageHighlight: tower3ImageHighlight
+            property alias towerModel: towerModel
             property int numberOfDisc
             property int maxZ: 5
         }
 
-        onStart: { Activity.start(items) }
+        onStart: { Activity.start(items, activityMode) }
         onStop : { Activity.stop() }
 
         onWidthChanged: Activity.sceneSizeChanged()
@@ -77,7 +70,7 @@ ActivityBase {
         Rectangle {
             id: instruction
             width: parent.width
-            height: description.height  + 5 * ApplicationInfo.ratio
+            height: description.height + 5 * ApplicationInfo.ratio
             color: "#FFF"
             opacity: 0.7
             anchors {
@@ -88,7 +81,8 @@ ActivityBase {
 
             GCText {
                 id: description
-                text: qsTr("Move the entire stack to the right peg, one disc at a time.")
+                text: activityMode == "real" ? qsTr("Move the entire stack to the right peg, one disc at a time.") :
+                qsTr("Build the same tower in the empty area as the one you see on the right-hand side")
                 width: parent.width
                 fontSize: largeSize
                 color: "black"
@@ -99,27 +93,33 @@ ActivityBase {
             }
         }
 
-        Repeater
-        {
+        Repeater {
             id: discRepeater
 
-            Image {
+            Rectangle {
                 id: disc
-                parent: tower1Image
-                z: tower1Image.z + 1
+                parent: towerModel.itemAt(0)
+                z: towerModel.itemAt(0).z + 1
 
-                sourceSize.width: Activity.getDiscWidth(index)
-                height: tower1Image.height * 0.1
-                source: Activity.url + "disc" + (index + 1) + ".svg"
+                width: Activity.getDiscWidth(index)
+                height: activityMode == "real"? towerModel.itemAt(0).height * 0.15:
+                                                towerModel.itemAt(0).height / (Activity.nbMaxItemsByTower+1)
+
                 opacity: index < items.numberOfDisc ? 1 : 0
 
+                onHeightChanged: Activity.sceneSizeChanged()
+
+                radius: 10
                 property bool mouseEnabled : true
                 property alias discMouseArea: discMouseArea
                 property Item towerImage
                 property int position // The position index on the tower
 
+                property alias text: textSimplified.text
+
                 onXChanged: Activity.performTowersHighlight(disc, x)
 
+                anchors.horizontalCenter: if(parent) parent.horizontalCenter
                 Behavior on y {
                     NumberAnimation {
                         id: bouncebehavior
@@ -131,6 +131,14 @@ ActivityBase {
                     }
                 }
 
+                GCText {
+                    id: textSimplified
+                    visible: activityMode == "simplified"
+                    anchors.verticalCenter: parent.verticalCenter
+                    anchors.rightMargin: 4
+                    anchors.right: parent.right
+                }
+
                 MouseArea {
                     id: discMouseArea
                     enabled: parent.mouseEnabled
@@ -139,75 +147,67 @@ ActivityBase {
                     height: background.height
                     drag.target: parent
                     drag.axis: Drag.XandYAxis
+                    hoverEnabled : true
 
                     onPressed: {
-                        background.currentX = disc.x
-                        background.currentY = disc.y
+                        disc.anchors.horizontalCenter = undefined
                         disc.z ++
-
                         disc.z = items.maxZ
                         ++items.maxZ
                     }
 
-                    onReleased: Activity.discReleased(index)
+                    onReleased: {
+                        Activity.discReleased(index)
+                        disc.anchors.horizontalCenter = disc.parent.horizontalCenter
+                    }
                 }
             }
         }
 
-        Image {
-            id: tower1Image
-            x: parent.spacing
+        Grid {
+            // do columns if mobile?
+            rows: 1
+            columnSpacing: (background.width - towerModel.model * towerModel.itemAt(0).width) / (items.towerModel.model+1)
+
             anchors {
                 bottom: instruction.top
+                horizontalCenter: parent.horizontalCenter
                 bottomMargin: 10 * ApplicationInfo.ratio
             }
-            source: Activity.url + "disc_support.svg"
-            sourceSize.width: background.width / 5.5
-            fillMode: Image.Stretch
+            Repeater {
+                id: towerModel
+                model: 1 // will be dynamically set in js
+                delegate: Image {
+                    id: towerImage
+                    source: Activity.url + "disc_support.svg"
+                    sourceSize.width: background.width / (towerModel.model + 2.5)
+                    fillMode: Image.Stretch
+                    height: background.height - instruction.height - 2 * bar.height
+                    property alias highlight: towerImageHighlight.highlight
 
-            property alias highlight: tower1ImageHighlight.highlight
+                    onHeightChanged: Activity.sceneSizeChanged()
 
-            Highlight {
-                id: tower1ImageHighlight
-            }
-        }
+                    Highlight {
+                        id: towerImageHighlight
+                    }
+                    Highlight {
+                        // last tower highlight
+                        id: towerImageHighlightGlow
+                        hue: 1.0
+                        lightness: 0
+                        opacity: towerImageHighlight.opacity == 0 ? 0.5 : 0
+                        visible: modelData == towerModel.model-1
+                    }
 
-        Image {
-            id: tower2Image
-            anchors.left: tower1Image.right
-            anchors.top: tower1Image.top
-            anchors.leftMargin: parent.spacing
-            source: Activity.url + "disc_support.svg"
-            sourceSize.width: background.width / 5.5
-            fillMode: Image.Stretch
+                    // in simplified mode only, the target tower
+                    Highlight {
+                        hue: 0.3
+                        lightness: 0
+                        opacity: towerImageHighlight.opacity == 0 ? 0.5 : 0
+                        visible: activityMode == "simplified" && (modelData == towerModel.model-2)
+                    }
 
-            property alias highlight: tower2ImageHighlight.highlight
-
-            Highlight {
-                id: tower2ImageHighlight
-            }
-        }
-
-        Image {
-            id: tower3Image
-            anchors.left: tower2Image.right
-            anchors.top: tower2Image.top
-            anchors.leftMargin: parent.spacing
-            source: Activity.url + "disc_support.svg"
-            sourceSize.width: background.width / 5.5
-            fillMode: Image.Stretch
-
-            property alias highlight: tower3ImageHighlight.highlight
-
-            Highlight {
-                id: tower3ImageHighlight
-            }
-
-            Highlight {
-                id: tower3ImageHighlightGlow
-                hue: 1.0
-                lightness:   0
-                opacity: tower3ImageHighlight.opacity == 0 ? .5 : 0
+                }
             }
         }
 
