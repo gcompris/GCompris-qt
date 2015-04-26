@@ -178,7 +178,11 @@ endif()
 
 option(WITH_KIOSK_MODE "Set the kiosk mode by default" OFF)
 
-set(COMPRESSED_AUDIO "ogg" CACHE STRING "Compressed Audio format [ogg|aac]")
+if(WINDOWS OR APPLE)
+  set(COMPRESSED_AUDIO "aac" CACHE STRING "Compressed Audio format [ogg|aac]")
+else()
+  set(COMPRESSED_AUDIO "ogg" CACHE STRING "Compressed Audio format [ogg|aac]")
+endif()
 
 file(GLOB_RECURSE OGG_FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/ "*.ogg")
 
