@@ -100,7 +100,7 @@ if(BUILD_STANDALONE)
   endif()
 
   set(_qt_plugins2 imageformats/${_lib_prefix}qsvg)
-  if(UNIX AND NOT ANDROID)
+  if(UNIX AND NOT ANDROID AND NOT APPLE)
     list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}gstaudiodecoder
       mediaservice/${_lib_prefix}gstcamerabin
       mediaservice/${_lib_prefix}gstmediacapture
@@ -127,6 +127,16 @@ if(BUILD_STANDALONE)
     set(_qt_plugins_destdir ${_app}/Contents/plugins)
     set(_qt_qml_destdir ${_app}/Contents/qml)
     set(GCOMPRIS_BUNDLE "\${CMAKE_INSTALL_PREFIX}/${_app}")
+    set_target_properties(gcompris-qt PROPERTIES
+      MACOSX_BUNDLE_INFO_STRING "GCompris, Educational game for children 2 to 10"
+      MACOSX_BUNDLE_ICON_FILE "${gcompris_icon}"
+      MACOSX_BUNDLE_GUI_IDENTIFIER "net.gcompris"
+      MACOSX_BUNDLE_LONG_VERSION_STRING "${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION}.${GCOMPRIS_PATCH_VERSION}"
+      MACOSX_BUNDLE_BUNDLE_NAME "gcompris-qt"
+      MACOSX_BUNDLE_SHORT_VERSION_STRING "${GCOMPRIS_VERSION}"
+      MACOSX_BUNDLE_BUNDLE_VERSION "${GCOMPRIS_VERSION}"
+      MACOSX_BUNDLE_COPYRIGHT "GPL License, Copyright 2000-2015 Bruno Coudoin and Others.")
+    set_source_files_properties(${GCOMPRIS_RESOURCES}/${gcompris_icon} PROPERTIES MACOSX_PACKAGE_LOCATION "Resources")
   else()
     set(_qtconf_destdir bin)
     set(_qt_plugins_destdir bin/plugins)
@@ -172,7 +182,7 @@ if(BUILD_STANDALONE)
   install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
 
   # install a startup script for linux bundle
-  if(UNIX)
+  if(UNIX AND NOT APPLE)
     install(PROGRAMS ../../tools/gcompris-qt.sh DESTINATION bin)
   endif()
 endif()
@@ -202,14 +212,6 @@ if(APPLE)
   set(CPACK_GENERATOR "DragNDrop")
   set(CPACK_DMG_DS_STORE "${GCOMPRIS_RESOURCES}/dmg_DS_Store")
   set(CPACK_DMG_BACKGROUND_IMAGE "${GCOMPRIS_RESOURCES}/dmg_background.png")
-  set(MACOSX_BUNDLE_ICON_FILE "GCompris" )
-  set(MACOSX_BUNDLE_INFO_STRING "Educational game for children 2 to 10.")
-  set(MACOSX_BUNDLE_GUI_IDENTIFIER "net.gcompris")
-  set(MACOSX_BUNDLE_LONG_VERSION_STRING "${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION}.${GCOMPRIS_PATCH_VERSION}")
-  set(MACOSX_BUNDLE_BUNDLE_NAME "gcompris-qt")
-  set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${GCOMPRIS_VERSION}")
-  set(MACOSX_BUNDLE_BUNDLE_VERSION "${GCOMPRIS_VERSION}")
-  set(MACOSX_BUNDLE_COPYRIGHT "GPL License / Copyright 2000-2014 Bruno Coudoin and Others.")
 elseif(WIN32)
   set(CPACK_GENERATOR "NSIS")
 else()
