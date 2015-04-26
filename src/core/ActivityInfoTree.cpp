@@ -141,7 +141,7 @@ void ActivityInfoTree::filterByTag(const QString &tag)
     for(auto activity: m_menuTreeFull) {
         if((activity->section().indexOf(tag) != -1 ||
 			tag == "all" ||
-			tag == "favorite" && activity->favorite()) &&
+            (tag == "favorite" && activity->favorite())) &&
             (activity->difficulty() >= ApplicationSettings::getInstance()->filterLevelMin() &&
              activity->difficulty() <= ApplicationSettings::getInstance()->filterLevelMax())) {
             m_menuTree.push_back(activity);
