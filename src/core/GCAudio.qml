@@ -96,7 +96,6 @@ Item {
      *          exist or audio is muted
      */
     function play(file) {
-        console.log("play ", file)
         if(!fileId.exists(file) || muted)
             return false
 
@@ -129,7 +128,6 @@ Item {
      *             audio is muted
      */
     function append(file) {
-        console.log("append ", file)
         if(!fileId.exists(file) || muted)
             return false
 
