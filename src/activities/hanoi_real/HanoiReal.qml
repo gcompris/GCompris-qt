@@ -58,7 +58,6 @@ ActivityBase {
             property alias discRepeater: discRepeater
             property alias towerModel: towerModel
             property int numberOfDisc
-            property int maxZ: 5
         }
 
         onStart: { Activity.start(items, activityMode) }
@@ -99,7 +98,7 @@ ActivityBase {
             Rectangle {
                 id: disc
                 parent: towerModel.itemAt(0)
-                z: towerModel.itemAt(0).z + 1
+                z: 4
 
                 width: Activity.getDiscWidth(index)
                 height: activityMode == "real"? towerModel.itemAt(0).height * 0.15:
@@ -151,12 +150,15 @@ ActivityBase {
 
                     onPressed: {
                         disc.anchors.horizontalCenter = undefined
+                        // Need to higher the z tower for the disc to be above all other towers and disc
+                        disc.towerImage.z ++
                         disc.z ++
-                        disc.z = items.maxZ
-                        ++items.maxZ
                     }
 
                     onReleased: {
+                        // Restore previous z before releasing the disc
+                        disc.towerImage.z --
+                        disc.z --
                         Activity.discReleased(index)
                         disc.anchors.horizontalCenter = disc.parent.horizontalCenter
                     }
@@ -186,6 +188,8 @@ ActivityBase {
                     property alias highlight: towerImageHighlight.highlight
 
                     onHeightChanged: Activity.sceneSizeChanged()
+
+                    z: 3
 
                     Highlight {
                         id: towerImageHighlight

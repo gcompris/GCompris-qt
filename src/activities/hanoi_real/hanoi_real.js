@@ -204,6 +204,7 @@ function discReleased(index)
     var disc = items.discRepeater.itemAt(index)
     var isCorrect = false;
 
+
     if(activityMode == "real") {
         for(var i = 0 ; i < items.towerModel.model ; ++ i) {
             var towerItem = items.towerModel.itemAt(i);
@@ -277,7 +278,9 @@ function disableNonDraggablediscs()
     if(activityMode == "real") {
         // Only the highest (index) one is enabled
         for(var i = 0 ; i < items.numberOfDisc ; ++i) {
-            items.discRepeater.itemAt(i).mouseEnabled = (getHigherfDiscOnTower(items.discRepeater.itemAt(i).towerImage) <= i)
+            var disc = items.discRepeater.itemAt(i)
+            if(disc)
+                disc.mouseEnabled = (getHigherfDiscOnTower(disc.towerImage) <= i)
         }
     }
     else {
@@ -330,7 +333,7 @@ function getHigherfDiscOnTower(towerImage) {
     var higher = 0
     for(var i = 0 ; i < items.numberOfDisc ; ++i)
     {
-        if(items.discRepeater.itemAt(i).towerImage === towerImage)
+        if(items.discRepeater.itemAt(i) && items.discRepeater.itemAt(i).towerImage === towerImage)
             higher = i
     }
     return higher
