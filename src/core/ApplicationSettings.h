@@ -272,11 +272,8 @@ public:
         emit embeddedFontChanged();
     }
 
-    bool isAutomaticDownloadsEnabled() const { return m_isAutomaticDownloadsEnabled; }
-    void setIsAutomaticDownloadsEnabled(const bool newIsAutomaticDownloadsEnabled) {
-        m_isAutomaticDownloadsEnabled = newIsAutomaticDownloadsEnabled;
-        emit automaticDownloadsEnabledChanged();
-    }
+    bool isAutomaticDownloadsEnabled() const;
+    void setIsAutomaticDownloadsEnabled(const bool newIsAutomaticDownloadsEnabled);
 
     quint32 filterLevelMin() const { return m_filterLevelMin; }
     void setFilterLevelMin(const quint32 newFilterLevelMin) {

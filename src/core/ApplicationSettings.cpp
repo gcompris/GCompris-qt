@@ -122,7 +122,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_showLockedActivities = m_config.value(SHOW_LOCKED_ACTIVITIES_KEY, m_isDemoMode).toBool();
 	m_sectionVisible = m_config.value(SECTION_VISIBLE, true).toBool();
 	m_isAutomaticDownloadsEnabled = m_config.value(ENABLE_AUTOMATIC_DOWNLOADS,
-            !ApplicationInfo::getInstance()->isMobile()).toBool();
+            !ApplicationInfo::getInstance()->isMobile() && ApplicationInfo::isDownloadAllowed()).toBool();
     m_filterLevelMin = m_config.value(FILTER_LEVEL_MIN, 1).toUInt();
     m_filterLevelMax = m_config.value(FILTER_LEVEL_MAX, 6).toUInt();
 	m_defaultCursor = m_config.value(DEFAULT_CURSOR, false).toBool();
@@ -247,6 +247,16 @@ void ApplicationSettings::notifyVirtualKeyboardChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
     qDebug() << "virtualkeyboard set to: " << m_isVirtualKeyboard;
+}
+
+bool ApplicationSettings::isAutomaticDownloadsEnabled() const {
+    return m_isAutomaticDownloadsEnabled && ApplicationInfo::isDownloadAllowed();
+}
+void ApplicationSettings::setIsAutomaticDownloadsEnabled(const bool newIsAutomaticDownloadsEnabled) {
+    if(ApplicationInfo::isDownloadAllowed()) {
+        m_isAutomaticDownloadsEnabled = newIsAutomaticDownloadsEnabled;
+        emit automaticDownloadsEnabledChanged();
+    }
 }
 
 void ApplicationSettings::notifyAutomaticDownloadsEnabledChanged()
