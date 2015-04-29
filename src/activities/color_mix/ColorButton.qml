@@ -27,8 +27,9 @@ Rectangle {
     height: parent.height / 4
     width: height
     z: 3
+    color: "#A8ffffff"
     radius: width / 2
-    border.color: "black"
+    border.color: "#a82a2a2a"
 
     property alias text: buttonText.text
 
@@ -40,6 +41,8 @@ Rectangle {
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
         fontSize: Math.max(parent.height * 0.8, 10)
+        color: "#2a2a2a"
+
     }
 
     MouseArea {

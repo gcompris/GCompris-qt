@@ -86,8 +86,8 @@ ActivityBase {
                 topMargin: items.margins
                 horizontalCenter: parent.horizontalCenter
             }
-            border.color: "black"
-            border.width: 2
+            border.color: "#2a2a2a"
+            border.width: 0
             color: Activity.getColor(items.targetColor1, items.targetColor2,
                                      items.targetColor3)
         }
@@ -95,6 +95,7 @@ ActivityBase {
         GCText {
             text: qsTr("Match the color")
             fontSize: 18
+            color: "#2a2a2a"
             horizontalAlignment: Text.AlignRight
             wrapMode: Text.WordWrap
             anchors {
@@ -128,8 +129,8 @@ ActivityBase {
                 top: target.bottom
                 topMargin: (background.height - items.chooserHeight * 4) / 2
             }
-            border.color: "black"
-            border.width: 2
+            border.color: "#2a2a2a"
+            border.width: 0
             color: Activity.getColor(items.currentColor1, items.currentColor2,
                                      items.currentColor3)
         }
