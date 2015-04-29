@@ -412,8 +412,8 @@ ActivityBase {
                 anchors.fill: activitiesGrid
                 gradient: Gradient {
                   GradientStop { position: 0.0; color: "#FFFFFFFF" }
-                  GradientStop { position: 0.9; color: "#FFFFFFFF" }
-                  GradientStop { position: 0.95; color: "#00FFFFFF"}
+                  GradientStop { position: 0.92; color: "#FFFFFFFF" }
+                  GradientStop { position: 0.96; color: "#00FFFFFF"}
                 }
             }
        
