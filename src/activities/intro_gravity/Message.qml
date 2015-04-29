@@ -63,8 +63,8 @@ Item{
         y: intro_text.y -4
         width: intro_text.width +4
         height: intro_text.height +4
-        color: "#ffff30"
-        border.color: "#7AA3CC"
+        color: "#d8ffffff"
+        border.color: "#2a2a2a"
         border.width: 2
         radius: 8
     }
@@ -93,8 +93,8 @@ Item{
         height: Math.max(skipText.height, nextText.height) * 1.4
         x: intro_textbg.x + (intro_textbg.width/2) + 20
         y: intro_textbg.y + intro_textbg.height - button.height - 5
-        color: "#ffff30"
-        border.color: "#7AA3CC"
+        color: "#d8ffffff"
+        border.color: "#2a2a2a"
         border.width: 3
         radius: 8
         z: 5
@@ -127,8 +127,8 @@ Item{
         height: button.height
         x: intro_textbg.x + (intro_textbg.width/2) -20- skipButton.width
         y: intro_textbg.y + intro_textbg.height - skipButton.height - 5
-        color: "#ffff30"
-        border.color: "#7AA3CC"
+        color: "#d8ffffff"
+        border.color: "#2a2a2a"
         border.width: 3
         radius: 8
         z: 5
