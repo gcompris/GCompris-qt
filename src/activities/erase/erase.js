@@ -152,6 +152,7 @@ function nextLevel() {
     if( ++currentLevel >= nbLevel ) {
         currentLevel = 0
     }
+    items.currentSubLevel = 0;
     initLevel();
 }
 
@@ -167,6 +168,7 @@ function previousLevel() {
     if(--currentLevel < 0) {
         currentLevel = nbLevel - 1
     }
+    items.currentSubLevel = 0;
     initLevel();
 }
 
