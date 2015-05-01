@@ -65,6 +65,7 @@ function initLevel() {
 function initQuestion() {
     // We just set the opacity to 0, the questionItem will then grab
     // the new question by itself
+    // Need to set opacity to 0.1 before in order to be sure it's changed and trigger the questionItem onOpacityChanged
     items.questionItem.opacity = 0.1
     items.questionItem.opacity = 0
 }
