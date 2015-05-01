@@ -76,6 +76,7 @@ var items
 function start(items_) {
     items = items_
     currentLevel = 0
+    items.score.currentSubLevel = 1
     initLevel()
 }
 
@@ -96,6 +97,9 @@ function initLevel() {
                 'rotation': level.rotations[r] }
         }
     }
+
+    items.score.numberOfSubLevels = level.images.length * level.rotations.length
+
     currentHands = Core.shuffle(currentHands)
     displayHand()
 }
@@ -104,6 +108,7 @@ function nextLevel() {
     if(levels.length <= ++currentLevel ) {
         currentLevel = 0
     }
+    items.score.currentSubLevel = 1
     initLevel();
 }
 
@@ -111,6 +116,7 @@ function previousLevel() {
     if(--currentLevel < 0) {
         currentLevel = levels.length - 1
     }
+    items.score.currentSubLevel = 1
     initLevel();
 }
 
@@ -130,6 +136,7 @@ function getCurrentHandRotation() {
 }
 
 function displayNextHand() {
+    items.score.currentSubLevel ++
     if(currentHands.length <= ++currentImageId ) {
         items.bonus.good("flower")
         nextLevel()
@@ -142,7 +149,7 @@ function isLeft() {
 }
 
 function leftClick() {
-    if(currentHands[currentImageId].image.indexOf("gauche") !== -1) {
+    if(isLeft()) {
         displayNextHand()
     }
 }
@@ -152,7 +159,7 @@ function isRight() {
 }
 
 function rightClick() {
-    if(currentHands[currentImageId].image.indexOf("droit") !== -1) {
+    if(isRight()) {
         displayNextHand()
     }
 }

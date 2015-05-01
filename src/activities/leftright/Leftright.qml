@@ -49,6 +49,7 @@ ActivityBase {
             property alias imageAnimOff: imageAnimOff
             property alias leftButton: leftButton
             property alias rightButton: rightButton
+            property alias score: score
         }
 
         Component.onCompleted: {
@@ -178,6 +179,12 @@ ActivityBase {
 
         Bonus {
             id: bonus
+        }
+
+        Score {
+            id: score
+            anchors.top: background.top
+            anchors.bottom: undefined
         }
     }
 }
