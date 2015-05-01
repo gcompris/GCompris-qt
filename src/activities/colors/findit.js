@@ -38,6 +38,7 @@ function start(items_, dataset_, mode_) {
     numberOfLevel = dataset.length
     items.firstQuestion = true
     items.audioOk = false
+    items.score.currentSubLevel = 1
     initLevel()
 }
 
@@ -54,6 +55,8 @@ function initLevel() {
         items.containerModel.append(dataset[currentLevel][i])
     }
 
+    items.score.numberOfSubLevels = dataset[currentLevel].length
+
     // Shuffle again not to ask the question in the model order
     dataset[currentLevel] = Core.shuffle(dataset[currentLevel])
     initQuestion()
@@ -62,25 +65,29 @@ function initLevel() {
 function initQuestion() {
     // We just set the opacity to 0, the questionItem will then grab
     // the new question by itself
+    items.questionItem.opacity = 0.1
     items.questionItem.opacity = 0
 }
 
 function nextQuestion() {
-    if(dataset[currentLevel].length <= ++currentQuestion ) {
+    if(dataset[currentLevel].length <= ++currentQuestion) {
         items.bonus.good("flower")
     } else {
+        items.score.currentSubLevel++
         initQuestion()
     }
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    items.score.currentSubLevel = 1
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
     initLevel();
 }
 
 function previousLevel() {
+    items.score.currentSubLevel = 1
     if(--currentLevel < 0) {
         currentLevel = numberOfLevel - 1
     }

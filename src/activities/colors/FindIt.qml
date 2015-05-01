@@ -67,6 +67,7 @@ ActivityBase {
             // On startup we want to queue the first sound but not after
             property bool firstQuestion: true
             property bool audioOk: false
+            property alias score: score
         }
         onStart: Activity.start(items, dataset, mode)
         onStop: Activity.stop()
@@ -208,6 +209,9 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
+        Score {
+            id: score
+        }
     }
 
 }
