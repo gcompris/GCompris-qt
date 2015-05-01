@@ -38,6 +38,8 @@ Item {
 
     signal answer
 
+    visible: ApplicationSettings.isVirtualKeyboard
+
     Column {
         id: leftPanel
         width: columnWidth
