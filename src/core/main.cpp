@@ -87,6 +87,9 @@ int main(int argc, char *argv[])
 	File::init();
 	DownloadManager::init();
 
+    // Tell media players to stop playing, it's GCompris time
+    ApplicationInfo::getInstance()->requestAudioFocus();
+
     // Must be done after ApplicationSettings is constructed because we get an
     // async callback from the payment system
     ApplicationSettings::getInstance()->checkPayment();

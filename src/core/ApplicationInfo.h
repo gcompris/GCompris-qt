@@ -209,6 +209,20 @@ public:
      */
     Q_INVOKABLE QString getVoicesLocale(const QString &locale);
 
+    /**
+     * Request GCompris to take the Audio Focus at the system level.
+     *
+     * On systems that support it, it will mute a running audio player.
+     */
+    Q_INVOKABLE bool requestAudioFocus() const;
+
+    /**
+    * Abandon the Audio Focus.
+    *
+    * On systems that support it, it will let an audio player start again.
+    */
+    Q_INVOKABLE void abandonAudioFocus() const;
+
     /// @cond INTERNAL_DOCS
 
     static ApplicationInfo *getInstance() {

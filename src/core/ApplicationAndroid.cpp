@@ -20,6 +20,7 @@
  */
 
 #include "ApplicationSettings.h"
+#include "ApplicationInfo.h"
 #include <QtAndroidExtras/QAndroidJniObject>
 #include <QDebug>
 
@@ -33,12 +34,13 @@ void ApplicationSettings::setDemoMode(const bool newDemoMode)
         // Going back to demo mode, should never happens except for testing
         ApplicationSettings::getInstance()->bought(false);
     }
-
 }
 
 void ApplicationSettings::checkPayment() {
+#if defined(WITH_ACTIVATION_CODE)
     QAndroidJniObject::callStaticMethod<void>("net/gcompris/GComprisActivity",
                                               "checkPayment");
+#endif
 }
 
 static void bought(JNIEnv *, jclass /*clazz*/, jboolean b)
@@ -49,6 +51,19 @@ static void bought(JNIEnv *, jclass /*clazz*/, jboolean b)
 static JNINativeMethod methods[] = {
     {"bought", "(Z)V", (void *)bought}
 };
+
+bool ApplicationInfo::requestAudioFocus() const
+{
+  qDebug() << "requestAudioFocus";
+  return QAndroidJniObject::callStaticMethod<jboolean>("net/gcompris/GComprisActivity",
+						       "requestAudioFocus");
+}
+
+void ApplicationInfo::abandonAudioFocus() const
+{
+  QAndroidJniObject::callStaticMethod<void>("net/gcompris/GComprisActivity",
+                                            "abandonAudioFocus");
+}
 
 jint JNICALL JNI_OnLoad(JavaVM *vm, void *)
 {

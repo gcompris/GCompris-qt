@@ -204,6 +204,9 @@ function quit(parent)
     if (aboutToQuit)  // don't execute concurrently
         return;
     aboutToQuit = true;
+
+    GCompris.ApplicationInfo.abandonAudioFocus()
+
     if (GCompris.DownloadManager.downloadIsRunning()) {
         var dialog = showDownloadDialog(parent, {
             text: qsTr("Download in progress")

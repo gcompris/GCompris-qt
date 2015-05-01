@@ -44,6 +44,7 @@ package net.gcompris;
 import org.qtproject.qt5.android.bindings.QtApplication;
 import org.qtproject.qt5.android.bindings.QtActivity;
 import com.android.vending.billing.*;
+import android.media.AudioManager;
 import android.util.Log;
 import android.os.Bundle;
 import android.os.IBinder;
@@ -196,4 +197,27 @@ public class GComprisActivity extends QtActivity
         }
     }
 
+    public static boolean requestAudioFocus() {
+	Context mContext = m_instance.getApplicationContext();
+	AudioManager am = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
+
+	// Request audio focus for playback
+	int result = am.requestAudioFocus(null,
+					  // Use the music stream.
+					  AudioManager.STREAM_MUSIC,
+					  // Request permanent focus.
+					  AudioManager.AUDIOFOCUS_GAIN);
+   
+	if (result == AudioManager.AUDIOFOCUS_REQUEST_GRANTED) {
+	    return true;
+	}
+	return false;
+    }
+
+    public static void abandonAudioFocus() {
+	// Abandon audio focus
+	Context mContext = m_instance.getApplicationContext();
+	AudioManager am = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
+	am.abandonAudioFocus(null);
+    }
 }

@@ -36,10 +36,10 @@ set(gcompris_SRCS
    config.h.in
 )
 
-if(WITH_ACTIVATION_CODE AND ANDROID)
-  list(APPEND gcompris_SRCS ApplicationSettingsAndroid.cpp)
+if(ANDROID)
+  list(APPEND gcompris_SRCS ApplicationAndroid.cpp)
 else()
-  list(APPEND gcompris_SRCS ApplicationSettingsDefault.cpp)
+  list(APPEND gcompris_SRCS ApplicationSettingsDefault.cpp ApplicationInfoDefault.cpp)
 endif()
 
 include_directories(
