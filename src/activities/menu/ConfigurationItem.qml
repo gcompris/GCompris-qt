@@ -207,6 +207,17 @@ Item {
             spacing: 5
             width: parent.width
             GCComboBox {
+                id: fontCapitalizationBox
+                model: fontCapitalizationModel
+                width: 250 * ApplicationInfo.ratio
+                background: dialogActivityConfig
+                label: qsTr("Font Capitalization")
+            }
+        }
+        Flow {
+            spacing: 5
+            width: parent.width
+            GCComboBox {
                 id: languageBox
                 model: dialogConfig.languages
                 width: 300 * ApplicationInfo.ratio
@@ -436,6 +447,14 @@ Item {
                 break;
             }
         }
+
+        // Set font capitalization
+        for(var i = 0 ; i < fontCapitalizationModel.length ; i ++) {
+            if(fontCapitalizationModel[i].value == ApplicationSettings.fontCapitalization) {
+                fontCapitalizationBox.currentIndex = i;
+                break;
+            }
+        }
     }
 
     function save() {
@@ -449,6 +468,7 @@ Item {
 
         ApplicationSettings.isEmbeddedFont = fonts.get(fontBox.currentIndex).isLocalResource;
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
+        ApplicationSettings.fontCapitalization = fontCapitalizationModel[fontCapitalizationBox.currentIndex].value
 
         ApplicationSettings.saveBaseFontSize();
 
@@ -524,11 +544,19 @@ Item {
         }
     }
 
+    property variant fontCapitalizationModel: [
+        { text: qsTr("Mixed case (default)"), value: Font.MixedCase },
+        { text: qsTr("All uppercase"), value: Font.AllUppercase },
+        { text: qsTr("All lowercase"), value: Font.AllLowercase }
+    ]
+
     function hasConfigChanged() {
         return (ApplicationSettings.locale !== dialogConfig.languages[languageBox.currentIndex].locale ||
         (ApplicationSettings.sectionVisible != sectionVisible) ||
         (ApplicationSettings.font != fonts.get(fontBox.currentIndex).text) ||
         (ApplicationSettings.isEmbeddedFont != fonts.get(fontBox.currentIndex).isLocalResource) ||
+        (ApplicationSettings.isEmbeddedFont != fonts.get(fontBox.currentIndex).isLocalResource) ||
+        (ApplicationSettings.fontCapitalization != fontCapitalizationModel[(fontcapitalizationBox.currentIndex)].value) ||
         (ApplicationSettings.isAudioVoicesEnabled != isAudioVoicesEnabled) ||
         (ApplicationSettings.isAudioEffectsEnabled != isAudioEffectsEnabled) ||
         (ApplicationSettings.isFullscreen != isFullscreen) ||

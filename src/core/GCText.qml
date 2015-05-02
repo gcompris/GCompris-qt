@@ -121,4 +121,5 @@ Text {
     font.pointSize: ((fixFontSize ? 0 : ApplicationSettings.baseFontSize)
                       + fontSize) * ApplicationInfo.fontRatio
     font.family: GCSingletonFontLoader.fontLoader.name
+    font.capitalization: ApplicationSettings.fontCapitalization
 }

@@ -131,6 +131,14 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(bool isEmbeddedFont READ isEmbeddedFont WRITE setIsEmbeddedFont NOTIFY embeddedFontChanged)
 
     /**
+     * Font Capitalization
+     *
+     * Force all texts to be rendered in UpperCase, LowerCase or MixedCase (default)
+     * @sa font
+     */
+    Q_PROPERTY(quint32 fontCapitalization READ fontCapitalization WRITE setFontCapitalization NOTIFY fontCapitalizationChanged)
+
+    /**
      * Whether downloads/updates of resource files should be done automatically,
      * without user-interaction.
      *
@@ -272,6 +280,12 @@ public:
         emit embeddedFontChanged();
     }
 
+    quint32 fontCapitalization() const { return m_fontCapitalization; }
+    void setFontCapitalization(quint32 newFontCapitalization) {
+        m_fontCapitalization = newFontCapitalization;
+        emit fontCapitalizationChanged();
+    }
+
     bool isAutomaticDownloadsEnabled() const;
     void setIsAutomaticDownloadsEnabled(const bool newIsAutomaticDownloadsEnabled);
 
@@ -350,6 +364,7 @@ protected slots:
     Q_INVOKABLE void notifyVirtualKeyboardChanged();
     Q_INVOKABLE void notifyLocaleChanged();
     Q_INVOKABLE void notifyFontChanged();
+    Q_INVOKABLE void notifyFontCapitalizationChanged();
     Q_INVOKABLE void notifyEmbeddedFontChanged();
     Q_INVOKABLE void notifyAutomaticDownloadsEnabledChanged();
     Q_INVOKABLE void notifyFilterLevelMinChanged();
@@ -394,6 +409,7 @@ signals:
     void virtualKeyboardChanged();
     void localeChanged();
     void fontChanged();
+    void fontCapitalizationChanged();
     void embeddedFontChanged();
     void automaticDownloadsEnabledChanged();
     void filterLevelMinChanged();
@@ -424,6 +440,7 @@ private:
     bool m_isVirtualKeyboard;
     bool m_isAutomaticDownloadsEnabled;
     bool m_isEmbeddedFont;
+    quint32 m_fontCapitalization;
     quint32 m_filterLevelMin;
     quint32 m_filterLevelMax;
 	bool m_defaultCursor;

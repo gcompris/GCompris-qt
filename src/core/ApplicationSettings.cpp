@@ -53,6 +53,7 @@
 #include <QDebug>
 
 #define GC_DEFAULT_FONT "Andika-R.ttf"
+#define GC_DEFAULT_FONT_CAPITALIZATION 0 // Font.MixedCase
 
 static const QString GENERAL_GROUP_KEY = "General";
 static const QString ADMIN_GROUP_KEY = "Admin";
@@ -77,6 +78,7 @@ static const QString FILTER_LEVEL_MIN = "filterLevelMin";
 static const QString FILTER_LEVEL_MAX = "filterLevelMax";
 
 static const QString BASE_FONT_SIZE_KEY = "baseFontSize";
+static const QString FONT_CAPITALIZATION = "fontCapitalization";
 
 static const QString DEFAULT_CURSOR = "defaultCursor";
 static const QString NO_CURSOR = "noCursor";
@@ -102,6 +104,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
             ApplicationInfo::getInstance()->isMobile()).toBool();
     m_locale = m_config.value(LOCALE_KEY, GC_DEFAULT_LOCALE).toString();
     m_font = m_config.value(FONT_KEY, GC_DEFAULT_FONT).toString();
+    m_fontCapitalization = m_config.value(FONT_CAPITALIZATION, GC_DEFAULT_FONT_CAPITALIZATION).toUInt();
     m_isEmbeddedFont = m_config.value(IS_CURRENT_FONT_EMBEDDED, true).toBool();
 
 // The default demo mode based on the platform
@@ -183,8 +186,9 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(SECTION_VISIBLE, m_sectionVisible);
 	m_config.setValue(DEFAULT_CURSOR, m_defaultCursor);
 	m_config.setValue(NO_CURSOR, m_noCursor);
-	m_config.setValue(BASE_FONT_SIZE_KEY, m_baseFontSize);
-	m_config.endGroup();
+    m_config.setValue(BASE_FONT_SIZE_KEY, m_baseFontSize);
+    m_config.setValue(FONT_CAPITALIZATION, m_fontCapitalization);
+    m_config.endGroup();
 
     // admin group
     m_config.beginGroup(ADMIN_GROUP_KEY);
@@ -235,6 +239,12 @@ void ApplicationSettings::notifyEmbeddedFontChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, IS_CURRENT_FONT_EMBEDDED, m_isEmbeddedFont);
     qDebug() << "new font is embedded: " << m_isEmbeddedFont;
+}
+
+void ApplicationSettings::notifyFontCapitalizationChanged()
+{
+    updateValueInConfig(GENERAL_GROUP_KEY, FONT_CAPITALIZATION, m_fontCapitalization);
+    qDebug() << "new fontCapitalization: " << m_fontCapitalization;
 }
 
 void ApplicationSettings::notifyFullscreenChanged()
