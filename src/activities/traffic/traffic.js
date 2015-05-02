@@ -194,6 +194,8 @@ var carComponent = null;
 var activeCars = new Array();
 var haveWon = false;
 var mode = null;
+var truckIndex = 0;
+var carIndex = 0;
 
 function start(items_, mode_) {
     items = items_;
@@ -312,10 +314,10 @@ function drawCar(car)
     
     if (id == 'O' || id == 'P' || id == 'Q' || id == 'R') { 
         size = 3;
-        source = truckList[Math.floor(Math.random() * truckList.length)];
+        source = truckList[Math.floor(truckIndex++ % truckList.length)];
     } else {
         size = 2;
-        source = carList[Math.floor(Math.random() * (carList.length-1)) + 1];
+        source = carList[Math.floor(carIndex++ % (carList.length-1)) + 1];
     }
     
     if (x == 'A') xPos = 0;
@@ -375,6 +377,8 @@ function cleanupActiveCars()
 function initLevel() {
     // destroy old cars
     cleanupActiveCars();
+    truckIndex = 0;
+    carIndex = 0;
     items.bar.level = currentLevel + 1;
     if (currentSubLevel == 0) {
         // initialize level
