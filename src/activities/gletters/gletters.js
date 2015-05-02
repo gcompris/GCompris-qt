@@ -108,6 +108,7 @@ function stop() {
 }
 
 function initLevel() {
+    items.audioVoices.clearQueue()
     items.bar.level = currentLevel + 1;
     wgMaxFallingItems = 3
     successRate = 1.0
