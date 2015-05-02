@@ -121,7 +121,7 @@ ActivityBase {
                         id: pointNumberText
 
                         opacity: pointImageOpacity
-                        text: index
+                        text: index + 1
                         anchors.horizontalCenter: parent.horizontalCenter
                         anchors.verticalCenter: parent.verticalCenter
                         fontSize: 18
