@@ -32,7 +32,7 @@ Image {
     // If won, ball goes on tux, if loose, depends on the side clicked first
     property int finishX
 
-    readonly property int finishY: tux.y + tux.height / 2
+    readonly property int finishY: tux.y + tux.height / 4
     readonly property real finishScale: initScale / 2
     property int radius: initScale
 

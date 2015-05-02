@@ -110,7 +110,7 @@ ActivityBase {
         Image {
             id: tux
             x: background.width / 2 - width / 2
-            y: background.height / 2 - height / 4
+            y: leftHand.y - height / 3 - height / 2
             sourceSize.height: 200 * ApplicationInfo.ratio
             source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg"
         }
