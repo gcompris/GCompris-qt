@@ -99,9 +99,11 @@ Item {
         if(!fileId.exists(file) || muted)
             return false
 
-        if(file)
+        if(file) {
+            // Setting the source to "" on Linux fix a case where the sound is no more played if you play twice the same sound in a row
+            source = ""
             source = file
-
+        }
         if(!muted) {
             audio.play()
         }
