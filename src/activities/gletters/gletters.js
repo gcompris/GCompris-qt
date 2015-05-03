@@ -391,3 +391,9 @@ function playLetter(letter) {
     items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/"+locale+"/alphabet/"
                                                                        + Core.getSoundFilenamForChar(letter)))
 }
+
+
+function focusTextInput() {
+    if (!GCompris.ApplicationInfo.isMobile)
+        items.textinput.forceActiveFocus();
+}

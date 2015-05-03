@@ -50,7 +50,15 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {}
-    
+
+    // When going on configuration, it steals the focus and re set it to the activity.
+    // We need to set it back to the textinput item in order to have key events.
+    onFocusChanged: {
+        if(focus) {
+            Activity.focusTextInput()
+        }
+    }
+
     pageComponent: Image {
         id: background
         source: activity.dataSetUrl + "background.svg"
@@ -83,12 +91,12 @@ ActivityBase {
             property alias wordDropTimer: wordDropTimer
             property GCAudio audioEffects: activity.audioEffects
             property alias locale: background.locale
+            property alias textinput: textinput
         }
 
         onStart: {
             Activity.start(items, uppercaseOnly, mode);
-            if (!ApplicationInfo.isMobile)
-                textinput.forceActiveFocus();
+            Activity.focusTextInput()
         }
         onStop: { Activity.stop() }
 
@@ -108,7 +116,6 @@ ActivityBase {
                     text = "";
                 }
             }
-
         }
 
         DialogActivityConfig {
