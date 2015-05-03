@@ -95,12 +95,13 @@ ActivityBase {
         Repeater {
             id: discRepeater
 
-            Rectangle {
+            Image {
                 id: disc
                 parent: towerModel.itemAt(0)
                 z: 4
 
-                width: Activity.getDiscWidth(index)
+                source: Activity.url + "disc.svg"
+                sourceSize.width: Activity.getDiscWidth(index)
                 height: activityMode == "real"? towerModel.itemAt(0).height * 0.15:
                                                 towerModel.itemAt(0).height / (Activity.nbMaxItemsByTower+1)
 
@@ -108,7 +109,8 @@ ActivityBase {
 
                 onHeightChanged: Activity.sceneSizeChanged()
 
-                radius: 10
+                property alias color: colorEffect.color
+                //radius: 10
                 property bool mouseEnabled : true
                 property alias discMouseArea: discMouseArea
                 property Item towerImage
@@ -128,6 +130,12 @@ ActivityBase {
                             period: 0.75
                         }
                     }
+                }
+
+                ColorOverlay {
+                    id: colorEffect
+                    anchors.fill: parent
+                    source: parent
                 }
 
                 GCText {

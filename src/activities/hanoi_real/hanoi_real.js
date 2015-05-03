@@ -41,21 +41,21 @@ var symbols = [
 ]
 
 var colors = [
-    "red",
-    "green",
-    "blue",
-    "yellow",
-    "magenta",
-    "orange",
-    "darksalmon",
-    "pink",
-    "mediumorchid",
-    "lightsteelblue",
-    "olive",
-    "purple",
-    "aquamarine",
-    "lawngreen",
-    "brown"
+    "#70ff0000", // red
+    "#7000ff00", // green
+    "#700000ff", // blue
+    "#70ffff00", // yellow
+    "#70ff00ff", // magenta
+    "#70ff4500", // orange
+    "#70e9967a", // darksalmon
+    "#70b0c4de", // pink
+    "#70ba55d3", // mediumorchid
+    "#70b0c4de", // lightsteelblue
+    "#70808000", // olive
+    "#70800080", // purple
+    "#7000ffff", // cyan
+    "#707cfc00", // lawngreen
+    "#70800000" // brown
 ]
 
 var nbTowersLessExpectedAndResultOnes
