@@ -101,12 +101,53 @@ ActivityBase {
             id:tuxboat
             source:"resource/boat.svg"
             sourceSize.width:Math.min(120 * ApplicationInfo.ratio , parent.width*0.15)
-            sourceSize.height:Math.min(120 * ApplicationInfo.ratio , parent.height*0.1)
+            sourceSize.height:Math.min(120 * ApplicationInfo.ratio , parent.height*0.15)
             anchors{
-
+                bottom:parent.bottom
+                left:parent.left
+                leftMargin:parent.width*0.10
+                bottomMargin:15
             }
+        }
+
+
+        Image {
+            id:tuxparked
+            source:"resource/boat_parked.svg"
+            sourceSize.width:Math.min(120 * ApplicationInfo.ratio , parent.width*0.15)
+            sourceSize.height:Math.min(120 * ApplicationInfo.ratio , parent.height*0.15)
+            anchors{
+                bottom:parent.bottom
+                right:parent.right
+                rightMargin:parent.width*0.01
+                bottomMargin:15
+            }
+        }
+
+        Image {
+            id:river
+            source:"resource/river.svg"
+            anchors {
+                top:parent.top
+                left:parent.left
+                topMargin:parent.height*0.05
+                leftMargin:parent.width*0.25
+            }
+            visible: true
 
         }
+
+//        Image {
+//            id:fillwater
+//            source:"resource/fillwater.svg"
+//            anchors {
+//                top:parent.top
+//                right:parent.right
+//                topMargin: parent.height*0.20
+//                rightMargin: parent.width*0.20
+//            }
+//        }
+
 
 
         Component.onCompleted: {

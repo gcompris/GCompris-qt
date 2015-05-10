@@ -23,10 +23,10 @@ ActivityInfo {
   icon: "watercycle/watercycle.svg"
   author: "Sagar Chand Agarwal <atomsagar@gmail.com>"
   demo: true
-  title: "Watercycle activity"
-  description: "Tux is tired and is coming home.Help Tux to takebath by completing the water cycle."
-  goal: "Understand the different components that make up the water cycle."
-  prerequisite: "Nothing"
+  title: qsTr("Watercycle activity")
+  description: qsTr("Tux is tired and is coming home.Help Tux to take bath by completing the water cycle.")
+  goal: qsTr("Understand the different components that make up the water cycle.Click on different elements like sun,cloud,power station,wastewater and boat to see the progress")
+  prerequisite:qsTr( "Nothing")
   manual: ""
   credit: ""
   section: "fun"
