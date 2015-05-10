@@ -130,8 +130,12 @@ ActivityBase {
             anchors {
                 top:parent.top
                 left:parent.left
-                topMargin:parent.height*0.05
-                leftMargin:parent.width*0.25
+//                right: parent.right
+//                bottom: parent.bottom
+                topMargin:parent.height*0.17
+                leftMargin:parent.width*0.24
+//                rightMargin: parent.width*0.24
+//                bottomMargin: parent.height*0.17
             }
             visible: true
 
