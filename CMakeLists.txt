@@ -30,6 +30,8 @@ set(GCOMPRIS_VERSION_CODE ${GCOMPRIS_MINOR_VERSION})
 # Set executable filename
 if(ANDROID)
   set(GCOMPRIS_EXECUTABLE_NAME GCompris)
+elseif(SAILFISHOS)
+  set(GCOMPRIS_EXECUTABLE_NAME harbour-gcompris-qt)
 else()
   set(GCOMPRIS_EXECUTABLE_NAME gcompris-qt)
 endif()
@@ -54,7 +56,12 @@ if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
             directory and create a build directory and call \"${CMAKE_COMMAND} <path to the sources>\".")
 endif("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_SOURCE_DIR}")
 
-set(QT_REQUIRED_VERSION 5.3.0)
+# Sailfish does not provide a recent Qt version
+if(SAILFISHOS)
+  set(QT_REQUIRED_VERSION 5.2.2)
+else()
+  set(QT_REQUIRED_VERSION 5.3.0)
+endif()
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
             Qml Quick Gui Multimedia Core Svg Xml XmlPatterns LinguistTools)
@@ -87,7 +94,7 @@ if(CMAKE_HOST_APPLE)
 elseif(ANDROID)
   set(_data_dest_dir android/assets)
 else()
-  set(_data_dest_dir share/gcompris-qt)
+  set(_data_dest_dir share/${GCOMPRIS_EXECUTABLE_NAME})
 endif()
 if(ANDROID)
   # Android .so output
@@ -223,3 +230,9 @@ add_subdirectory(src)
 if(KF5_FOUND)
     add_subdirectory(docs/docbook)
 endif(KF5_FOUND)
+
+if(SAILFISHOS)
+  # Need to be done at the end, after src
+  add_subdirectory(platforms/sailfishOS)
+endif()
+

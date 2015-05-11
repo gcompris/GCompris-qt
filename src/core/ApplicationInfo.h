@@ -160,10 +160,11 @@ public:
     enum Platform {
         Linux,      /**< Linux (except Android) */
         Windows,    /**< Windows */
-		MacOSX,     /**< MacOSX */
+        MacOSX,     /**< MacOSX */
         Android,    /**< Android */
         Ios,        /**< IOS (not supported) */
-        Blackberry  /**< Blackberry (not supported) */
+        Blackberry, /**< Blackberry (not supported) */
+        SailfishOS  /**< SailfishOS */
     };
 
     /**

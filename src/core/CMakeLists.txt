@@ -10,6 +10,10 @@ if(WITH_KIOSK_MODE)
   add_definitions(-DWITH_KIOSK_MODE)
 endif()
 
+if(SAILFISHOS)
+  add_definitions(-DSAILFISHOS)
+endif()
+
 # Note: put .cpp files before .h files in the following or cmake messes up
 # moc generation -- WTF! 
 set(gcompris_SRCS
@@ -89,12 +93,15 @@ install(TARGETS ${GCOMPRIS_EXECUTABLE_NAME}
 if(BUILD_STANDALONE)
   # Qt plugins to install
   set(_qt_plugins "")
+  if(NOT SAILFISHOS)
+    list(APPEND _qt_plugins Qt5::QJpegPlugin)
+  endif()
   if(APPLE)
     list(APPEND _qt_plugins Qt5::QTgaPlugin Qt5::QTiffPlugin)
   elseif(WIN32)
-    list(APPEND _qt_plugins Qt5::QJpegPlugin Qt5::QWindowsIntegrationPlugin Qt5::QWindowsAudioPlugin Qt5::AudioCaptureServicePlugin Qt5::DSServicePlugin)
-  elseif(UNIX AND NOT ANDROID)
-    list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin Qt5::QJpegPlugin)
+    list(APPEND _qt_plugins Qt5::QWindowsIntegrationPlugin Qt5::QWindowsAudioPlugin Qt5::AudioCaptureServicePlugin Qt5::DSServicePlugin)
+  elseif(UNIX AND NOT ANDROID AND NOT SAILFISHOS)
+    list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin)
   endif()
 
   # Qml plugins to install
@@ -105,7 +112,7 @@ if(BUILD_STANDALONE)
   endif()
 
   set(_qt_plugins2 imageformats/${_lib_prefix}qsvg)
-  if(UNIX AND NOT ANDROID AND NOT APPLE)
+  if(UNIX AND NOT ANDROID AND NOT APPLE AND NOT SAILFISHOS)
     list(APPEND _qt_plugins2 mediaservice/${_lib_prefix}gstaudiodecoder
       mediaservice/${_lib_prefix}gstcamerabin
       mediaservice/${_lib_prefix}gstmediacapture
@@ -117,14 +124,18 @@ if(BUILD_STANDALONE)
   endif()
 
   set(_qml_plugins
-    QtQuick/Controls/${_lib_prefix}qtquickcontrolsplugin
     QtQuick/Window.2/${_lib_prefix}windowplugin
     QtQuick/Particles.2/${_lib_prefix}particlesplugin
-    QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin
     QtQuick.2/${_lib_prefix}qtquick2plugin
     QtMultimedia/${_lib_prefix}declarative_multimedia)
 
-  if(NOT WIN32)
+  if(NOT SAILFISHOS)
+    list(APPEND _qml_plugins
+      QtQuick/Controls/${_lib_prefix}qtquickcontrolsplugin
+      QtQuick/Layouts/${_lib_prefix}qquicklayoutsplugin)
+  endif()
+
+  if(NOT WIN32 AND NOT SAILFISHOS)
     list(APPEND QtAudioEngine/${_lib_prefix}declarative_audioengine)
   endif()
 
@@ -191,7 +202,7 @@ if(BUILD_STANDALONE)
   install(SCRIPT ${CMAKE_CURRENT_BINARY_DIR}/FixBundle.cmake)
 
   # install a startup script for linux bundle
-  if(UNIX AND NOT APPLE)
+  if(UNIX AND NOT APPLE AND NOT SAILFISHOS)
     install(PROGRAMS ../../tools/gcompris-qt.sh DESTINATION bin)
   endif()
 endif()
@@ -223,6 +234,23 @@ if(APPLE)
   set(CPACK_DMG_BACKGROUND_IMAGE "${GCOMPRIS_RESOURCES}/dmg_background.png")
 elseif(WIN32)
   set(CPACK_GENERATOR "NSIS")
+elseif(SAILFISHOS)
+  configure_file(${PROJECT_SOURCE_DIR}/platforms/sailfishOS/harbour-gcompris-qt.spec.cmake ${CMAKE_BINARY_DIR}/harbour-gcompris-qt.spec @ONLY)
+
+  install(FILES ${PROJECT_SOURCE_DIR}/platforms/sailfishOS/harbour-gcompris-qt.desktop DESTINATION share/applications)
+  install(FILES ${PROJECT_SOURCE_DIR}/platforms/sailfishOS/harbour-gcompris-qt.png DESTINATION share/icons/hicolor/86x86/apps)
+  set(CPACK_RPM_PACKAGE_SUMMARY "gcompris-qt")
+  # BUILD_ARCH is either armv7hl or i486
+  set(CPACK_RPM_PACKAGE_ARCHITECTURE "${BUILD_ARCH}")
+  set(CPACK_RPM_PACKAGE_NAME "${GCOMPRIS_EXECUTABLE_NAME}")
+  set(CPACK_RPM_PACKAGE_VERSION "${GCOMPRIS_VERSION}")
+  set(CPACK_RPM_PACKAGE_LICENSED "GPLv3")
+  set(CPACK_RPM_PACKAGE_URL "https://www.gcompris.org")
+  set(CPACK_RPM_PACKAGE_DESCRIPTION "GCompris is a high quality educational software suite comprising of numerous activities for children aged 2 to 10.")
+  set(CPACK_RPM_USER_BINARY_SPECFILE "${CMAKE_BINARY_DIR}/harbour-gcompris-qt.spec")
+  set(CMAKE_INSTALL_PREFIX "/usr")
+  set(CPACK_PACKAGING_INSTALL_PREFIX "/usr")
+  set(CPACK_GENERATOR "RPM")
 else()
   set(CPACK_GENERATOR "STGZ")
 endif()
