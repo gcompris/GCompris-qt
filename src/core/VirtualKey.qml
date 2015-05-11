@@ -21,8 +21,8 @@
 import QtQuick 2.0
 import GCompris 1.0
 import QtGraphicalEffects 1.0
-import QtQuick.Controls 1.1
-import QtQuick.Controls.Styles 1.1
+import QtQuick.Controls 1.0
+import QtQuick.Controls.Styles 1.0
 
 Item {
     id: virtualKey
