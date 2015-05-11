@@ -451,8 +451,8 @@ private:
     bool m_isKioskMode;
     bool m_sectionVisible;
 	int m_baseFontSize;
-	const int m_baseFontSizeMin = -7;
-	const int m_baseFontSizeMax = 7;
+	const int m_baseFontSizeMin;
+	const int m_baseFontSizeMax;
 
     QString m_downloadServerUrl;
 
