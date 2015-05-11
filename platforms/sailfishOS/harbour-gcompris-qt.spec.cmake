@@ -67,7 +67,7 @@ mv "@CMAKE_BINARY_DIR@/_CPack_Packages/Linux/RPM/tmpBBroot" $RPM_BUILD_ROOT
 
 
 %changelog
-* Sat May  9 14:00:00 2015 Alex Smirnov <smirnoff.al@gmail.com>
+* Sat May  9 2015 Alex Smirnov <smirnoff.al@gmail.com>
 Add translation files
 * Sun Apr 12 2015 Johnny Jazeix <gcompris-devel@kde.org>
   First version for sailfishOS
