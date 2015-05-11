@@ -162,7 +162,6 @@ ActivityBase {
         MultiPointTouchArea {
             anchors.fill: parent
             touchPoints: [ TouchPoint { id: point1 } ]
-            mouseEnabled: true
             property real startX
             property real startY
             // Workaround to avoid having 2 times the onReleased event

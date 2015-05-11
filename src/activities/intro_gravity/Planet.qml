@@ -63,7 +63,6 @@ Item {
         id: touchArea
         anchors.fill: parent
         touchPoints: [ TouchPoint { id: point1 } ]
-        mouseEnabled: true
         property real startX
         property real startY
         property bool started

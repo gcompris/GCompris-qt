@@ -121,7 +121,6 @@ ActivityBase {
 
                             MultiPointTouchArea {
                                 anchors.fill: parent
-                                mouseEnabled: true
                                 onReleased: Activity.unpay(index)
                             }
                         }
@@ -271,7 +270,6 @@ ActivityBase {
 
                             MultiPointTouchArea {
                                 anchors.fill: parent
-                                mouseEnabled: true
                                 onReleased: Activity.pay(index)
                             }
                         }
