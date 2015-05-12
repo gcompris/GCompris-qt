@@ -189,7 +189,7 @@ ActivityBase {
             source: Activity.url + "score_1.svg"
             sourceSize.height: bar.height * 1.1
             anchors {
-                bottom: bar.bottom
+                bottom: parent.width > parent.height ? bar.bottom : bar.top
                 bottomMargin: 10
                 right: parent.right
                 rightMargin: 2 * ApplicationInfo.ratio
@@ -209,7 +209,7 @@ ActivityBase {
             source: Activity.url + "score_2.svg"
             sourceSize.height: bar.height * 1.1
             anchors {
-                bottom: bar.bottom
+                bottom: parent.width > parent.height ? bar.bottom : bar.top
                 bottomMargin: 10
                 right: player1.left
                 rightMargin: 2 * ApplicationInfo.ratio
