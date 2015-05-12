@@ -172,7 +172,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | reload }
+            content: BarEnumContent { value: help | home | reload | (twoPlayer ? 0 : level) }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -180,6 +180,8 @@ ActivityBase {
             onReloadClicked: {
                 Activity.reset()
             }
+            onPreviousLevelClicked: Activity.previousLevel()
+            onNextLevelClicked: Activity.nextLevel()
         }
 
         Image {

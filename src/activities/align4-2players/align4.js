@@ -31,8 +31,14 @@ var currentPlayer
 var currentLocation
 var twoPlayer
 var weight = [[100, 50, 20, 100, 50, 20],
+              [100, 50, 20, 100, 50, 20],
               [110, 55, 20, 100, 50, 20],
+              [100, 50, 20, 110, 55, 20],
+              [100, 50, 20, 110, 55, 20],
               [100, 50, 20, 110, 55, 20]];
+var nextColumn
+var depthMax
+var randomMiss
 
 function start(items_, twoPlayer_) {
     items = items_
@@ -48,7 +54,7 @@ function stop() {
 
 function initLevel() {
 
-    numberOfLevel = twoPlayer ? 1 : 3
+    numberOfLevel = twoPlayer ? 1 : weight.length
 
     items.bar.level = currentLevel + 1
 
@@ -61,6 +67,20 @@ function initLevel() {
             items.pieces.append({'stateTemp': "invisible"})
         }
     }
+
+    nextColumn = 3
+    if(currentLevel < 2)
+        depthMax = 2
+    else
+        depthMax = 4
+
+
+    if(currentLevel < 2)
+        randomMiss = 1
+    else if(currentLevel < 4)
+        randomMiss = 0.5
+    else
+        randomMiss = 1
 
     setPieceLocationByIndex(3)
 }
@@ -82,7 +102,6 @@ function previousLevel() {
 function reset() {
     items.drop.stop()    // stop animation
     items.pieces.clear() // Clear the board
-    currentLevel = (currentLevel + 1) % 3
     initLevel()
 }
 
@@ -182,8 +201,6 @@ function getFreeStopFromBoard(column, board) {
     return -1
 }
 
-var nextColumn = 3
-
 
 function alphabeta(depth, alpha, beta, player, board) {
 
@@ -212,7 +229,7 @@ function alphabeta(depth, alpha, beta, player, board) {
             if(beta <= alpha) break;
         }
 
-        if(depth === 4) {
+        if(depth === depthMax) {
             var max = -10000;
             for(var i = 0; i < scores.length; i++) {
                 if(scores[i] > max) {
@@ -247,7 +264,7 @@ function doMove() {
 
     var board = getBoardFromModel()
 
-    alphabeta(4, -10000, 10000, 2, board)
+    alphabeta(depthMax, -10000, 10000, 2, board)
 
     setPieceLocation(items.repeater.itemAt(nextColumn).x,
                      items.repeater.itemAt(0).y)
@@ -258,16 +275,34 @@ function doMove() {
 function checkLine() {
     var score = 0
     var count1, count2
-    var player1 = arguments[0]
-    var player2 = arguments[1]
+
+    // Make the game easier, forget to analyse some line depending on the level
+    if(Math.random() > randomMiss)
+        return 0
+
+    // Performance improvement, do not enter the processing loop
+    // if there is nothing to look at.
+    var gotOne = false
+    for(var i = 2; i < (arguments.length - 1); i++) {
+        if(arguments[i] !== "invisible") {
+            gotOne = true
+            break
+        }
+    }
+
+    if(!gotOne)
+        return 0
+
+    var player1 = arguments[0].toString()
+    var player2 = arguments[1].toString()
 
     for(var i = 2; i < (arguments.length - 3); i++) {
         count1 = 0
         count2 = 0
         for(var j = 0; j < 4; j++) {
-            if(arguments[i + j] === player1.toString()) {
+            if(arguments[i + j] === player1) {
                 count1++
-            } else if( arguments[i + j] === player2.toString()) {
+            } else if( arguments[i + j] === player2) {
                 count2++
             }
         }
