@@ -2,6 +2,7 @@
 Encoding=UTF-8
 Name=GCompris Educational Game
 Name[ca]=Joc educatiu GCompris
+Name[cs]=Výuková hra GCompris
 Name[en_GB]=GCompris Educational Game
 Name[es]=Juego educativo GCompris
 Name[gl]=Xogo educativo GCompris
@@ -19,6 +20,7 @@ Name[x-test]=xxGCompris Educational Gamexx
 Name[zh_CN]=GCompris 教育游戏
 GenericName=Educational game
 GenericName[ca]=Joc educatiu
+GenericName[cs]=Výuková hra
 GenericName[en_GB]=Educational game
 GenericName[es]=Juego educativo
 GenericName[gl]=Xogo educativo
