@@ -18,6 +18,7 @@
   <id type="desktop" xml:lang="zh-CN">gcompris.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <metadata_license xml:lang="ca">CC0-1.0</metadata_license>
+  <metadata_license xml:lang="cs">CC0-1.0</metadata_license>
   <metadata_license xml:lang="en-GB">CC0-1.0</metadata_license>
   <metadata_license xml:lang="es">CC0-1.0</metadata_license>
   <metadata_license xml:lang="gl">CC0-1.0</metadata_license>
@@ -34,6 +35,7 @@
   <metadata_license xml:lang="zh-CN">CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <project_license xml:lang="ca">GPL-3.0+</project_license>
+  <project_license xml:lang="cs">GPL-3.0+</project_license>
   <project_license xml:lang="en-GB">GPL-3.0+</project_license>
   <project_license xml:lang="es">GPL-3.0+</project_license>
   <project_license xml:lang="gl">GPL-3.0+</project_license>
@@ -99,6 +101,7 @@
     <p>Some of the activities are game orientated, but nonetheless
     still educational.</p>
     <p xml:lang="ca">Algunes de les activitats estan orientades a joc, però sempre són educatives.</p>
+    <p xml:lang="cs">Některé aktivity jsou v podobě her, ale přesto jsou poučné.</p>
     <p xml:lang="en-GB">Some of the activities are game orientated, but nonetheless still educational.</p>
     <p xml:lang="gl">Algunhas das actividades están orientadas ao xogo, pero son aínda así educativas.</p>
     <p xml:lang="it">Alcune delle attività sono orientate al gioco, ma comunque didattiche.</p>
