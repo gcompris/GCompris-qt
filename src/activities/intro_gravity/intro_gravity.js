@@ -72,7 +72,7 @@ function initLevel() {
     move = 0
 
     items.shuttle.x =  Math.random() > 0.5 ?
-                items.background.width * 0.2 : items.background.width * 0.8
+                items.background.width * 0.2 : items.background.width * 0.7
     items.shuttle.y = items.background.height + items.shuttle.height
 
     if(items.bar.level != 1 ) {
