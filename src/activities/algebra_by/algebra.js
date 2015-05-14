@@ -40,6 +40,7 @@ function start(coreItems_, otherItems_, operand_) {
 }
 
 function stop() {
+    coreItems.balloon.stopMoving()
 }
 
 function initLevel() {
