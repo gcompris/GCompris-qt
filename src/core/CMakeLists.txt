@@ -88,13 +88,13 @@ install(TARGETS ${GCOMPRIS_EXECUTABLE_NAME}
 
 if(BUILD_STANDALONE)
   # Qt plugins to install
-  set(_qt_plugins Qt5::QJpegPlugin)
+  set(_qt_plugins "")
   if(APPLE)
-    list(APPEND _qt_plugins Qt5::QTgaPlugin Qt5::QTiffPlugin Qt5::QCocoaIntegrationPlugin)
+    list(APPEND _qt_plugins Qt5::QTgaPlugin Qt5::QTiffPlugin)
   elseif(WIN32)
-    list(APPEND _qt_plugins Qt5::QWindowsIntegrationPlugin Qt5::QWindowsAudioPlugin Qt5::AudioCaptureServicePlugin Qt5::DSServicePlugin)
+    list(APPEND _qt_plugins Qt5::QJpegPlugin Qt5::QWindowsIntegrationPlugin Qt5::QWindowsAudioPlugin Qt5::AudioCaptureServicePlugin Qt5::DSServicePlugin)
   elseif(UNIX AND NOT ANDROID)
-    list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin)
+    list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin Qt5::QJpegPlugin)
   endif()
 
   # Qml plugins to install
