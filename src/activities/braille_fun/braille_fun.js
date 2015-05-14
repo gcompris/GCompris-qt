@@ -40,6 +40,7 @@ function start(items_ ) {
 }
 
 function stop() {
+    items.animateX.stop()
 }
 
 function initQuestion() {
