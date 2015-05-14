@@ -394,6 +394,6 @@ function playLetter(letter) {
 
 
 function focusTextInput() {
-    if (!GCompris.ApplicationInfo.isMobile)
+    if (!GCompris.ApplicationInfo.isMobile && items)
         items.textinput.forceActiveFocus();
 }
