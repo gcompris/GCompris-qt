@@ -82,13 +82,12 @@ ActivityBase {
             property alias bonus: bonus
         }
 
-        onStart: { Activity.start(items, twoPlayer) }
-        onStop: { Activity.stop() }
+        onStart: Activity.start(items, twoPlayer)
+        onStop: Activity.stop()
 
         Image {
             id: board
             source: Activity.url + "board.svg"
-            fillMode: Image.PreserveAspectFit
             sourceSize.width: 4 * Math.min(background.width / 4 , background.height / 6)
             anchors {
                 verticalCenter: parent.verticalCenter
