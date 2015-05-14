@@ -224,6 +224,7 @@ Item {
             
             Rectangle {
                 id : headerDescription
+		z: 10
                 width: gridview.width
                 height: gridview.elementHeight
                 GCText {
@@ -235,20 +236,21 @@ Item {
                 GCButtonCancel {
                     id: discardIcon
                     anchors.right: headerDescription.right
-                    anchors.verticalCenter: parent.verticalCenter
-                }
+                    anchors.top: headerDescription.top
 
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: {
-                        popup.acceptChange();
-                        popup.hidePopUpAndRestoreFocus();
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            popup.acceptChange();
+                            popup.hidePopUpAndRestoreFocus();
+                        }
                     }
                 }
             }
 
             GridView {
                 id: gridview
+		z: 4
                 readonly property int elementHeight: 40 * ApplicationInfo.ratio
 
                 // each element has a 300 width size minimum. If the screen is larger than it, we do a grid with cases with 300px for width at minimum.
@@ -261,6 +263,7 @@ Item {
                 flickableDirection: Flickable.VerticalFlick
                 clip: true
                 anchors.top: headerDescription.bottom
+		anchors.topMargin: headerDescription.height / 2
                 cellWidth: width / numberOfColumns
                 cellHeight: elementHeight
 
@@ -275,9 +278,8 @@ Item {
                             id: isSelectedIcon
                             visible: parent.GridView.isCurrentItem
                             source: "qrc:/gcompris/src/core/resource/apply.svg"
-                            fillMode: Image.PreserveAspectFit
                             anchors.right: textValue.left
-                            anchors.verticalCenter: parent.verticalCenter
+                            anchors.top: parent.top
                             anchors.rightMargin: 10
                             sourceSize.width: (gridview.elementHeight*0.8) * ApplicationInfo.ratio
                         }
