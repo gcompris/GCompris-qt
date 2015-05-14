@@ -124,7 +124,7 @@ ActivityBase {
                 id: animationLeft
                 onRunningChanged: {
                     if (!animationLeft.running) {
-                        timerBad.start()
+                        timerBonus.start()
                     }
                 }
                 PropertyAnimation
@@ -162,7 +162,7 @@ ActivityBase {
                 id: animationRight
                 onRunningChanged: {
                     if (!animationRight.running) {
-                        timerBad.start()
+                        timerBonus.start()
                     }
                 }
                 PropertyAnimation
@@ -199,7 +199,7 @@ ActivityBase {
                 id: animationTop
                 onRunningChanged: {
                     if (!animationTop.running) {
-                        timerBad.start()
+                        timerBonus.start()
                     }
                 }
                 PropertyAnimation
@@ -356,13 +356,11 @@ ActivityBase {
                             } else {
                                 ball.state = "CENTER"
                             }
-
-                            timerGood.start()
                         } else {
                             /* failure */
                             ball.state = "FAIL"
-                            timerBad.start()
                         }
+                        timerBonus.start()
                     } else {
                         /* First click, start animation*/
                         progress.anim.running = true;
@@ -375,15 +373,9 @@ ActivityBase {
         }
 
         Timer {
-            id: timerGood
+            id: timerBonus
             interval: 1500
-            onTriggered: bonus.good("tux")
-        }
-
-        Timer {
-            id: timerBad
-            interval: 1500
-            onTriggered: bonus.bad("tux")
+            onTriggered: ball.state == "FAIL" ? bonus.bad("tux") : bonus.good("tux")
         }
 
         DialogHelp {

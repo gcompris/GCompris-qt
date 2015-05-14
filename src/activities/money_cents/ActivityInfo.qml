@@ -23,7 +23,7 @@ ActivityInfo {
   icon: "money_cents/money_cents.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: false
-  title: qsTr("Money")
+  title: qsTr("Money with cents")
   description: qsTr("Practice money usage including cents")
 //  intro: "Click on the money to pay."
   goal: qsTr("You must buy the different items and give the exact price. At higher levels, several items are displayed, and you must first calculate the total price.")
