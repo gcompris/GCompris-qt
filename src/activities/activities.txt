@@ -39,6 +39,7 @@ guessnumber
 hanoi
 hanoi_real
 hexagon
+simplepaint
 imageid
 instruments
 intro_gravity
