@@ -108,6 +108,7 @@ function initLevel() {
     for (var i = 0; i < numberOfColors; ++i)
         currentColors[i] = colors[i];
     items.colorsRepeater.model = currentColors;
+    items.chooserRepeater.model = currentColors;
     // add first guess row:
     items.guessModel.clear();
     appendGuessRow();

@@ -46,6 +46,11 @@ ActivityBase {
         signal start
         signal stop
 
+        MouseArea {
+            anchors.fill: parent
+            onClicked: showChooser(false);
+        }
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -59,6 +64,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias colorsRepeater: colorsRepeater
+            property alias chooserRepeater: chooserRepeater
             property alias guessModel: guessModel
             property alias guessColumn: guessColumn
         }
@@ -93,7 +99,6 @@ ActivityBase {
                     color: modelData
                 }
             }
-
         }
 
         Rectangle {
@@ -126,6 +131,7 @@ ActivityBase {
 
         function showTooltip(visible, status, mouseArea)
         {
+            showChooser(false);
             if (!visible || status === Activity.STATUS_UNKNOWN) {
                 tooltipRect.opacity = 0;
                 return;
@@ -137,11 +143,78 @@ ActivityBase {
                 tooltipRect.text = qsTr("This item is well placed");
             if (status === Activity.STATUS_MISPLACED)
                 tooltipRect.text = qsTr("This item is misplaced");
-            if (x !== undefined)
-                tooltipRect.x = obj.x - 5 - tooltipRect.width;
-            if (y !== undefined)
-                tooltipRect.y = obj.y - 5 - tooltipRect.height;
+            tooltipRect.x = obj.x - 5 - tooltipRect.width;
+            tooltipRect.y = obj.y - 5 - tooltipRect.height;
             tooltipRect.opacity = 0.9;
+        }
+
+        Column {
+            id: chooserColumn
+
+            property int colIndex: 0
+            property int guessIndex: 0
+            spacing: 0
+            opacity: 0
+            visible: false
+
+            Timer {
+                id: chooserTimer
+                interval: 2000
+                onTriggered: showChooser(false);
+            }
+
+            Repeater {
+                id: chooserRepeater
+
+                model: new Array()
+
+                delegate: Rectangle {
+                    width: guessColumn.guessSize * 1.6
+                    height: guessColumn.guessSize / 2
+                    radius: 4 //width * 0.5
+                    border.width: index == chooserColumn.colIndex ? 3 : 0
+                    border.color: "white"
+                    color: modelData
+
+                    MouseArea {
+                        id: chooserMouseArea
+                        anchors.fill: parent
+                        acceptedButtons: Qt.LeftButton
+                        z: 3
+                        hoverEnabled: ApplicationInfo.isMobile ? false : true
+
+                        onClicked: {
+                            chooserColumn.colIndex = index;
+                            var obj = items.guessModel.get(0);
+                            obj.guess.setProperty(chooserColumn.guessIndex, "colIndex", chooserColumn.colIndex);
+                            showChooser(false);
+                        }
+                    }
+                }
+            }
+
+            Behavior on opacity {
+                NumberAnimation { duration: 100 }
+            }
+        }
+
+        function showChooser(visible, guessIndex, item)
+        {
+            if (!visible) {
+                chooserTimer.stop();
+                chooserColumn.opacity = 0;
+                return;
+            }
+
+            var modelObj = guessModel.get(0).guess.get(guessIndex);
+            var obj = background.mapFromItem(item, item.x, item.y);
+            chooserColumn.colIndex = modelObj.colIndex;
+            chooserColumn.guessIndex = guessIndex;
+            chooserColumn.x = obj.x - 0.4 * guessColumn.guessSize;
+            chooserColumn.y = obj.y - chooserRepeater.count * guessColumn.guessSize / 2 - guessColumn.guessSize * 0.15;
+            chooserColumn.opacity = 0.9;
+            chooserColumn.visible = true;
+            chooserTimer.restart();
         }
 
         ListModel {
@@ -265,12 +338,18 @@ ActivityBase {
                                     z: 3
                                     hoverEnabled: ApplicationInfo.isMobile ? false : true
 
+                                    onPressAndHold: {
+                                        if (guessColRepeater.count > 1)
+                                            guessRepeater.model.get(index).colIndex = guessModel.get(1).guess.get(index).colIndex;
+                                    }
+
                                     onClicked: {
                                         var obj = guessRepeater.model.get(index);
                                         if (mouse.button == Qt.LeftButton)
                                             obj.colIndex = (obj.colIndex == Activity.currentColors.length - 1) ? 0 : obj.colIndex + 1;
                                         else
                                             obj.colIndex = (obj.colIndex == 0) ? Activity.currentColors.length - 1 : obj.colIndex - 1;
+                                        showChooser(true, index, parent);
                                     }
                                 }
                             }
@@ -375,6 +454,7 @@ ActivityBase {
                 rightMargin: 10
             }
             onClicked: {
+                showChooser(false);
                 Activity.checkGuess();
             }
         }
