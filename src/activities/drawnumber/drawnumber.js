@@ -127,7 +127,7 @@ function drawSegment(pointIndex) {
 
         if (clickanddrawflag) {
             if (pointIndex < items.pointImageRepeater.count-1) {
-                 items.pointImageRepeater.itemAt(pointIndex+1).source = url + "greenpoint.svg"
+                 items.pointImageRepeater.itemAt(pointIndex+1).highlight = true
             }
         }
 
@@ -153,7 +153,7 @@ function loadCoordinates() {
     items.pointImageRepeater.model = pointPositions
 
     if (clickanddrawflag) {
-            items.pointImageRepeater.itemAt(0).source = url + "greenpoint.svg"
+            items.pointImageRepeater.itemAt(0).highlight = true
     }
 
     // prepare segments data

@@ -105,7 +105,9 @@ ActivityBase {
                 Image {
                     id: pointImage
 
-                    source: Activity.url + "bluepoint.svg"
+                    source: Activity.url + (highlight ?
+                                                (pointImageOpacity ? "greenpoint.svg" : "greenpointHighlight.svg") :
+                                                "bluepoint.svg")
                     sourceSize.height: background.height / 15
                     x: modelData[0] * background.width / 801 - sourceSize.height/2
                     y: modelData[1] * background.height / 521 - sourceSize.height/2
@@ -116,6 +118,7 @@ ActivityBase {
                     function drawSegment() {
                         Activity.drawSegment(index)
                     }
+                    property bool highlight: false
 
                     GCText {
                         id: pointNumberText
