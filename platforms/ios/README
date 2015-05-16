@@ -1,0 +1,18 @@
+iOS build instruction.
+
+copy the following files at the root dir
+cp config.h ../..
+cp gcompris.pro ../../
+
+At root dir create the directory
+mkdir rcc
+mkdir translations
+
+And fill copy the appropriate files in them.
+
+Create a build directory:
+mkdir build-ios
+~/Qt5.5.0/5.5/ios/bin/qmake ../gcompris.pro
+open gcompris.xcodeproj
+
+Fix the Launch reference to point the Launch item in the xcassets
