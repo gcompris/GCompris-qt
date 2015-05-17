@@ -13,6 +13,7 @@ HEADERS += src/core/ActivityInfo.h \
            src/core/DownloadManager.h \
            src/core/File.h
 SOURCES += src/core/ActivityInfo.cpp \
+           src/core/ApplicationInfoDefault.cpp \
            src/core/ActivityInfoTree.cpp \
            src/core/ApplicationInfo.cpp \
            src/core/ApplicationSettings.cpp \
