@@ -136,7 +136,7 @@ ActivityBase {
 
                     ParallelAnimation {
                         id: anim
-                        running: items.pointIndexToClick == index
+                        running: pointImageOpacity == 0 && items.pointIndexToClick == index
                         loops: Animation.Infinite
                         SequentialAnimation {
                             NumberAnimation {
