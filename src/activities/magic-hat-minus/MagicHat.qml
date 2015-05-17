@@ -117,6 +117,7 @@ ActivityBase {
                         starsColor: starColors[index]
                         theHat: items.hat
                         starsSize: background.starSize
+                        opacity: 0
                     }
                 }
             }
@@ -136,6 +137,7 @@ ActivityBase {
                         starsColor: starColors[index]
                         theHat: items.hat
                         starsSize: background.starSize
+                        opacity: 0
                     }
                 }
             }
@@ -168,6 +170,7 @@ ActivityBase {
                         authorizeClick: false
                         theHat: items.hat
                         starsSize: background.starSize
+                        opacity: 0
                     }
                 }
             }
