@@ -23,6 +23,7 @@
 
 bool ApplicationInfo::requestAudioFocus() const
 {
+  return true;
 }
 
 void ApplicationInfo::abandonAudioFocus() const
