@@ -24,11 +24,11 @@ ActivityInfo {
   author: "Emmanuel Charruau <echarruau@gmail.com>"
   demo: true
   title: qsTr("Click and draw")
-  description: qsTr("Draw the picture by clicking on the green points.")
-//  intro: "Click on the blue points and draw "
+  description: qsTr("Draw the picture by clicking on the selected points.")
+//  intro: "Click on the selected points and draw"
   goal: ""
   prerequisite: qsTr("Can move the mouse and click accurately on points.")
-  manual: qsTr("Draw the picture by clicking on each green point in sequence. Each time a green point is selected the next green one appears.")
+  manual: qsTr("Draw the picture by clicking on each point in sequence. Each time a point is selected the next green one appears.")
   credit: ""
   section: "computer mouse"
 }
