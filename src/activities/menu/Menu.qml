@@ -110,8 +110,6 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
 
         function loadActivity() {
-            activityLoader.item.menu = menuActivity
-            activityLoader.item.activityInfo = ActivityInfoTree.currentActivity
             pageView.push(activityLoader.item)
         }
 
@@ -390,7 +388,9 @@ ActivityBase {
                     activityLoader.setSource("qrc:/gcompris/src/activities/" + ActivityInfoTree.menuTree[index].name,
                                              {
                                                  'audioVoices': audioVoices,
-                                                 'audioEffects': audioEffects
+                                                 'audioEffects': audioEffects,
+                                                 'menu': menuActivity,
+                                                 'activityInfo': ActivityInfoTree.currentActivity
                                              })
                     if (activityLoader.status == Loader.Ready) loadActivity()
                 }
