@@ -147,9 +147,13 @@ ActivityBase {
             function checkPoints(touchPoints) {
                 for(var i in touchPoints) {
                     var touch = touchPoints[i]
-                    var part = playArea.childAt(touch.x, touch.y)
-                    if(part) {
-                        part.drawSegment()
+                    for(var p = 0; p < pointImageRepeater.count; p++) {
+                        var part = pointImageRepeater.itemAt(p)
+                        // Could not make it work with the item.contains() api
+                        if(touch.x > part.x && touch.x < part.x + part.width &&
+                           touch.y > part.y && touch.y < part.y + part.height) {
+                            part.drawSegment()
+                        }
                     }
                 }
 
