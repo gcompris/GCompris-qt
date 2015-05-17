@@ -111,7 +111,7 @@ ActivityBase {
                     sourceSize.height: background.height / 15
                     x: modelData[0] * background.width / 801 - sourceSize.height/2
                     y: modelData[1] * background.height / 521 - sourceSize.height/2
-                    z: items.pointIndexToClick <= index ? 10 : 1
+                    z: items.pointIndexToClick == index ? 1000 : index
                     visible: index == pointImageRepeater.count - 1 &&
                              items.pointIndexToClick == 0 ? false : true
 
@@ -133,9 +133,60 @@ ActivityBase {
                         styleColor: "black"
                         color: "white"
                     }
+
+                    ParallelAnimation {
+                        id: anim
+                        running: items.pointIndexToClick == index
+                        loops: Animation.Infinite
+                        SequentialAnimation {
+                            NumberAnimation {
+                                target: pointImage
+                                property: "rotation"
+                                from: -150; to: 150
+                                duration: 3000
+                                easing.type: Easing.InOutQuad
+                            }
+                            NumberAnimation {
+                                target: pointImage
+                                property: "rotation"
+                                from: 150; to: -150
+                                duration: 3000
+                                easing.type: Easing.InOutQuad
+                            }
+                        }
+                        SequentialAnimation {
+                            NumberAnimation {
+                                target: pointImage
+                                property: "scale"
+                                from: 1; to: 1.5
+                                duration: 1500
+                                easing.type: Easing.InOutQuad
+                            }
+                            NumberAnimation {
+                                target: pointImage
+                                property: "scale"
+                                from: 1.5; to: 1
+                                duration: 1500
+                                easing.type: Easing.InOutQuad
+                            }
+                            NumberAnimation {
+                                target: pointImage
+                                property: "scale"
+                                from: 1; to: 1.5
+                                duration: 1500
+                                easing.type: Easing.InOutQuad
+                            }
+                            NumberAnimation {
+                                target: pointImage
+                                property: "scale"
+                                from: 1.5; to: 1
+                                duration: 1500
+                                easing.type: Easing.InOutQuad
+                            }
+                        }
+                    }
                 }
             }
-
         }
 
         MultiPointTouchArea {
