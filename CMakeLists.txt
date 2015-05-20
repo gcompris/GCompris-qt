@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 2.8.12)
 
 project(gcompris C CXX)
 
@@ -58,6 +58,13 @@ set(QT_REQUIRED_VERSION 5.3.0)
 
 find_package(Qt5 ${QT_REQUIRED_VERSION} REQUIRED
             Qml Quick Gui Multimedia Core Svg Xml XmlPatterns LinguistTools)
+
+find_package (KF5 QUIET COMPONENTS
+    DocTools
+)
+if(KF5_FOUND)
+    include(KDEInstallDirs)
+endif(KF5_FOUND)
 
 #get_cmake_property(_variableNames VARIABLES)
 #foreach (_variableName ${_variableNames})
@@ -207,3 +214,6 @@ add_custom_target(
 
 add_subdirectory(src)
 
+if(KF5_FOUND)
+    add_subdirectory(docs/docbook)
+endif(KF5_FOUND)
