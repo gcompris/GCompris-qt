@@ -1,6 +1,6 @@
 /* GCompris - braille_alphabets.js
  *
- * Copyright (C) 2014 <Arkit Vora>
+ * Copyright (C) 2014 Arkit Vora <arkitvora123@gmail.com>
  *
  * Authors:
  *   Srishti Sethi <srishakatux@gmail.com> (GTK+ version)

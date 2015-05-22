@@ -1,6 +1,6 @@
 /* GCompris - braille_fun.js
  *
- * Copyright (C) 2014 Arkit Vora
+ * Copyright (C) 2014 Arkit Vora <arkitvora123@gmail.com>
  *
  * Authors:
  *   Srishti Sethi (GTK+ version)
