@@ -1,6 +1,6 @@
 /* GCompris - template.qml
  *
- * Copyright (C) 2014 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2015 YOUR NAME <xx@yy.org>
  *
  * Authors:
  *   <THE GTK VERSION AUTHOR> (GTK+ version)

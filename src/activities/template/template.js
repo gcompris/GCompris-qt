@@ -1,6 +1,6 @@
 /* GCompris - template.js
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2015 <YOUR NAME HERE>
  *
  * Authors:
  *   <THE GTK VERSION AUTHOR> (GTK+ version)
