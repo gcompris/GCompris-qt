@@ -1,6 +1,6 @@
 /* GCompris - missing-letter.js
  *
- * Copyright (C) 2014 <YOUR NAME HERE>
+ * Copyright (C) 2014 "Amit Tomar" <a.tomar@outlook.com>
  *
  * Authors:
  *   "Pascal Georges" <pascal.georgis1.free.fr> (GTK+ version)
