@@ -134,6 +134,12 @@ int main(int argc, char *argv[])
     QCommandLineOption clMute(QStringList() << "m" << "mute",
                                        QObject::tr("run GCompris without sound."));
     parser.addOption(clMute);
+    QCommandLineOption clWithoutConfig(QStringList() << "disable-config",
+                                       QObject::tr("Disable the configuration button."));
+    parser.addOption(clWithoutConfig);
+    QCommandLineOption clWithConfig(QStringList() << "enable-config",
+                                       QObject::tr("Enable the configuration button (default)."));
+    parser.addOption(clWithConfig);
     parser.process(app);
 
 
@@ -199,6 +205,12 @@ int main(int argc, char *argv[])
     if(parser.isSet(clSound)) {
         ApplicationSettings::getInstance()->setIsAudioEffectsEnabled(true);
         ApplicationSettings::getInstance()->setIsAudioVoicesEnabled(true);
+    }
+    if(parser.isSet(clWithConfig)) {
+        ApplicationSettings::getInstance()->setKioskMode(false);
+    }
+    if(parser.isSet(clWithoutConfig)) {
+        ApplicationSettings::getInstance()->setKioskMode(true);
     }
 
     QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
