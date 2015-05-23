@@ -128,6 +128,12 @@ int main(int argc, char *argv[])
     QCommandLineOption clWindow(QStringList() << "w" << "window",
                                        QObject::tr("run GCompris in window mode."));
     parser.addOption(clWindow);
+    QCommandLineOption clSound(QStringList() << "s" << "sound",
+                                       QObject::tr("run GCompris with sound enabled."));
+    parser.addOption(clSound);
+    QCommandLineOption clMute(QStringList() << "m" << "mute",
+                                       QObject::tr("run GCompris without sound."));
+    parser.addOption(clMute);
     parser.process(app);
 
 
@@ -180,7 +186,22 @@ int main(int argc, char *argv[])
         DownloadManager::getInstance()->updateResource(DownloadManager::getInstance()
             ->getVoicesResourceForLocale(locale));
 
-	QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
+    if(parser.isSet(clFullscreen)) {
+        isFullscreen = true;
+    }
+    if(parser.isSet(clWindow)) {
+        isFullscreen = false;
+    }
+    if(parser.isSet(clMute)) {
+        ApplicationSettings::getInstance()->setIsAudioEffectsEnabled(false);
+        ApplicationSettings::getInstance()->setIsAudioVoicesEnabled(false);
+    }
+    if(parser.isSet(clSound)) {
+        ApplicationSettings::getInstance()->setIsAudioEffectsEnabled(true);
+        ApplicationSettings::getInstance()->setIsAudioVoicesEnabled(true);
+    }
+
+    QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
 	QObject::connect(&engine, SIGNAL(quit()), DownloadManager::getInstance(),
             SLOT(shutdown()));
 
@@ -188,13 +209,6 @@ int main(int argc, char *argv[])
         ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree*>(ActivityInfoTree::menuTreeProvider(&engine, NULL)));
         menuTree->exportAsSQL();
         exit(0);
-    }
-
-    if(parser.isSet(clFullscreen)) {
-        isFullscreen = true;
-    }
-    if(parser.isSet(clWindow)) {
-        isFullscreen = false;
     }
 
     QObject *topLevel = engine.rootObjects().value(0);
