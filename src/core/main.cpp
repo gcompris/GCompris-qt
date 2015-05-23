@@ -118,6 +118,9 @@ int main(int argc, char *argv[])
         if(locale == GC_DEFAULT_LOCALE)
             locale = QString(QLocale::system().name() + ".UTF-8");
 
+        if(locale == "C.UTF-8")
+            locale = "en_US.UTF-8";
+
         if(config.contains("General/fullscreen")) {
             isFullscreen = config.value("General/fullscreen").toBool();
         }
