@@ -337,7 +337,8 @@ inline QString  DownloadManager::getSystemDownloadPath() const
 
 inline QStringList DownloadManager::getSystemResourcePaths() const
 {
-    return QStringList({
+
+    QStringList results({
         getSystemDownloadPath(),
 #if defined(Q_OS_ANDROID)
         "assets:",
@@ -345,6 +346,13 @@ inline QStringList DownloadManager::getSystemResourcePaths() const
         QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation) +
             '/' + GCOMPRIS_APPLICATION_NAME
     });
+
+    // Append standard application directories (like /usr/share/applications/)
+    foreach(QString path, QStandardPaths::standardLocations(QStandardPaths::ApplicationsLocation)) {
+        results.append(path + '/' + GCOMPRIS_APPLICATION_NAME);
+    }
+
+    return results;
 }
 
 bool DownloadManager::checkDownloadRestriction() const
@@ -562,7 +570,7 @@ void DownloadManager::downloadFinished()
         if (code != NoChange)  // nothing is up2date locally -> download it
             if (download(job))
                 goto outNext;
-    }
+        }
 
     // none left, DownloadJob finished
     if (job->file.isOpen())

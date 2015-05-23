@@ -130,11 +130,18 @@ private:
      * @returns A list of absolute paths used for storing local resources.
      *          The caller should keep the returned list order when looking for
      *          resources, for now the lists contains:
-     *          1. getSystemdDownloadPath()
+     *          1. getSystemDownloadPath()
      *          2. QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)/gcompris-qt
      *             which is
      *             - $HOME/.local/share/gcompris-qt (on linux desktop)
      *             - /storage/sdcard0/GCompris (on android)
+     *          3. [QStandardPaths::standardLocations(QStandardPaths::ApplicationsLocation)]/gcompris-qt
+     *             which is on GNU/Linux
+     *             - $HOME/.local/share/KDE/gcompris-qt
+     *             - $HOME/.local/share/gcompris-qt
+     *             - $HOME/.local/share/applications/gcompris-qt
+     *             - /usr/share/applications/gcompris-qt
+     *             - /usr/local/share/applications/gcompris-qt
      */
     QStringList getSystemResourcePaths() const;
     QString getResourceRootForFilename(const QString& filename) const;
