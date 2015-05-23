@@ -75,10 +75,16 @@ int main(int argc, char *argv[])
 	QCommandLineOption clDefaultCursor(QStringList() << "c" << "cursor",
 									   "run GCompris with the default system cursor.");
 	parser.addOption(clDefaultCursor);
-	QCommandLineOption clNoCursor(QStringList() << "C" << "nocursor",
-									   "run GCompris without cursor (touch screen mode).");
-	parser.addOption(clNoCursor);
-	parser.process(app);
+    QCommandLineOption clNoCursor(QStringList() << "C" << "nocursor",
+                                       "run GCompris without cursor (touch screen mode).");
+    parser.addOption(clNoCursor);
+    QCommandLineOption clFullscreen(QStringList() << "f" << "fullscreen",
+                                       QObject::tr("run GCompris in fullscreen mode."));
+    parser.addOption(clFullscreen);
+    QCommandLineOption clWindow(QStringList() << "w" << "window",
+                                       QObject::tr("run GCompris in window mode."));
+    parser.addOption(clWindow);
+    parser.process(app);
 
 
     ApplicationInfo::init();
@@ -172,6 +178,13 @@ int main(int argc, char *argv[])
         ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree*>(ActivityInfoTree::menuTreeProvider(&engine, NULL)));
         menuTree->exportAsSQL();
         exit(0);
+    }
+
+    if(parser.isSet(clFullscreen)) {
+        isFullscreen = true;
+    }
+    if(parser.isSet(clWindow)) {
+        isFullscreen = false;
     }
 
     QObject *topLevel = engine.rootObjects().value(0);
