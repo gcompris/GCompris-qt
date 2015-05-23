@@ -117,10 +117,10 @@ int main(int argc, char *argv[])
     QCommandLineOption exportActivitiesAsSQL("export-activities-as-sql", "Export activities as SQL");
     parser.addOption(exportActivitiesAsSQL);
 	QCommandLineOption clDefaultCursor(QStringList() << "c" << "cursor",
-									   "run GCompris with the default system cursor.");
+                                       QObject::tr("run GCompris with the default system cursor."));
 	parser.addOption(clDefaultCursor);
     QCommandLineOption clNoCursor(QStringList() << "C" << "nocursor",
-                                       "run GCompris without cursor (touch screen mode).");
+                                       QObject::tr("run GCompris without cursor (touch screen mode)."));
     parser.addOption(clNoCursor);
     QCommandLineOption clFullscreen(QStringList() << "f" << "fullscreen",
                                        QObject::tr("run GCompris in fullscreen mode."));
