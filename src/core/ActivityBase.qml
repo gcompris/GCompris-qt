@@ -163,7 +163,9 @@ Item {
         } else if (event.modifiers === Qt.ControlModifier &&
                    event.key === Qt.Key_M) {
             // Ctrl+M toggle sound
-            ApplicationSettings.isAudioEffectsEnabled = !ApplicationSettings.isAudioEffectsEnabled
+            // We mute / unmute both channels in sync
+            ApplicationSettings.isAudioVoicesEnabled = !ApplicationSettings.isAudioVoicesEnabled
+            ApplicationSettings.isAudioEffectsEnabled = ApplicationSettings.isAudioVoicesEnabled
         } else if (event.modifiers === Qt.ControlModifier &&
                    event.key === Qt.Key_W) {
             // Ctrl+W exit the current activity
