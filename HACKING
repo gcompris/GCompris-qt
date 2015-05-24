@@ -58,7 +58,8 @@ Installing dependencies on a Debian based systems can be done like this:
                           qml-module-qtmultimedia qt5-default \
                           qml-module-qtgraphicaleffects qt5-qmake qtcreator \
                           qtdeclarative5-dev qtdeclarative5-dev \
-                          qtmultimedia5-dev qtquick1-5-dev qttools5-dev
+                          qtmultimedia5-dev qtquick1-5-dev qttools5-dev \
+                          qttools5-dev-tools libqt5multimedia5-plugins
 
 To build for Android, Qt 5 AndroidExtra also needs to be installed.
 
