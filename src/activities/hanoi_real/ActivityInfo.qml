@@ -25,6 +25,7 @@ ActivityInfo {
   demo: true
   title: qsTr("The Tower of Hanoi")
   description: qsTr("Reproduce the tower on the right side")
+  //intro: "Rebuild the model tower on the right support. Take care, no disc may be placed atop a smaller disc."
   goal: qsTr("The object of the game is to move the entire stack to another peg, obeying the following rules:
     only one disc may be moved at a time
     no disc may be placed atop a smaller disc

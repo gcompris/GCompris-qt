@@ -25,6 +25,7 @@ ActivityInfo {
   demo: false
   title: qsTr("Mirror the given image")
   description: qsTr("Draw the image on the empty grid as if you see it in a mirror.")
+  //intro: "Use the drawing tools to reproduce the right-hand side symmetrical figure."
   goal: ""
   prerequisite: ""
   manual: qsTr("First, select the proper color from the toolbar. Then drag to paint.") + " " +

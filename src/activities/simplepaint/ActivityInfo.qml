@@ -25,6 +25,7 @@ ActivityInfo {
   demo: true
   title: "A simple drawing activity"
   description: "Create your own drawing"
+  // intro: "Select a color and paint the rectangles as you like to create a drawing."
   goal: "Enhance creative skills"
   prerequisite: ""
   manual: "Select a color and paint the rectangles as you like to create a drawing."

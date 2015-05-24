@@ -25,6 +25,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Simplified Tower of Hanoi")
   description: qsTr("Reproduce the given tower")
+  //intro: "Rebuild the same tower in the empty area as the one you see on the right hand side."
   goal: qsTr("Reproduce the tower on the right in the empty space on the left")
   prerequisite: qsTr("Mouse-manipulation")
   manual: qsTr("Drag and Drop one top piece at a time, from one peg to another, to reproduce the tower on the right in the empty space on the left.")

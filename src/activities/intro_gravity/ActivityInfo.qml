@@ -25,6 +25,7 @@ ActivityInfo {
   demo: true
   title: "Intro gravity"
   description: qsTr("Introduction to the concept of gravity")
+  //intro: "Change the planets' gravitational force by moving the sliders up and down. Be careful not to crash Tux's spaceship."
   goal: qsTr("Maintain the spaceship in the middle without crashing into the planets or the asteroids")
   prerequisite: ""
   manual: qsTr("Follow the instructions when you run the activity.")

@@ -25,6 +25,7 @@ ActivityInfo {
   demo: true
   title: "Template activity"
   description: ""
+  //intro: "put here in comment the text for the intro voice"
   goal: ""
   prerequisite: ""
   manual: ""

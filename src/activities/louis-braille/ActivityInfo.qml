@@ -25,6 +25,7 @@ ActivityInfo {
   demo: true
   title: "The History of Louis Braille"
   description: "Review the major dates of the inventor of the Braille System"
+  //intro: "Discover the history behind Louis Braille."
   goal: ""
   prerequisite: ""
   manual: "Read the history of Louis Braille, his biography and discovery of the Braille system.

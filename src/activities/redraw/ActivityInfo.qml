@@ -25,6 +25,7 @@ ActivityInfo {
   demo: false
   title: qsTr("Redraw the given image")
   description: qsTr("Draw perfectly the given image on the empty grid.")
+  //intro: "Use the drawing tools to reproduce a symmetrical figure on the right hand side."
   goal: ""
   prerequisite: ""
   manual: qsTr("First, select the proper color from the toolbar. Then drag to paint.") + " " +

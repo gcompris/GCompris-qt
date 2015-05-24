@@ -25,6 +25,7 @@ ActivityInfo {
   demo: true
   title: qsTr("Braille Fun")
   description: qsTr("Braille the falling letters")
+  //intro: "Create the Braille cell for the falling letter."
   goal: ""
   prerequisite: qsTr("Braille Alphabet Codes")
   manual: qsTr("Enter the braille code in the tile for the corresponding falling letters. Check the braille chart by clicking on the toggle button for help.")
