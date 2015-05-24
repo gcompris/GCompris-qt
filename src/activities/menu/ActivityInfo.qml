@@ -28,20 +28,20 @@ ActivityInfo {
 At the bottom of the screen is the GCompris control bar. Notice that you can hide or show the bar by touching its anchor.
 The following icons are displayed from right to left.
 (note that each icon is displayed only if available in the current activity)
-    Home - Exit an activity, go back to menu (ctrl-w and escape key)
+    Home - Exit an activity, go back to menu (Ctrl+W and escape key)
     Arrows - Display the current level. Click to select another level
     Lips - Repeat the question
     Question Mark - Help
     Tool - The configuration menu
     Tux Plane - About GCompris
-    Quit - Quit GCompris (ctrl-q)
+    Quit - Quit GCompris (Ctrl+Q)
 The stars show suitable age groups for each game:
     1, 2 or 3 simple stars - from 2 to 6 years old
     1, 2 or 3 complex stars - 7 years and up
 Shortcuts:
-    ctrl-b Show or Hide the control bar
-    ctrl-f Toggle full screen
-    ctrl-m Toggle mute for the background music" )
+    Ctrl+B Show or Hide the control bar
+    Ctrl+F Toggle full screen
+    Ctrl+M Toggle mute for the background music" )
   credit: ""
   section: "/"
 }
