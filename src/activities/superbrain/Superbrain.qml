@@ -226,13 +226,15 @@ ActivityBase {
             dynamicRoles: true
         }
 
-        Column {
+        ListView {
             id: guessColumn
 
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.bottom: background.isPortrait ? bar.top : parent.bottom
             anchors.bottomMargin: Math.min(5, background.height - height - (background.isPortrait ? bar.height : 0))
+
+            boundsBehavior: Flickable.DragOverBounds
 
             readonly property int guessSize: 30 * background.scaleFactor * ApplicationInfo.ratio
             readonly property int vertSpacing: 15 * background.scaleFactor * ApplicationInfo.ratio
@@ -247,201 +249,200 @@ ActivityBase {
             spacing: vertSpacing
 
             width: guessColWidth + 10 + (2 * horizSpacing) + resultColWidth
-            height: guessColRepeater.count * (guessSize + vertSpacing)
+            height: count * (guessSize + vertSpacing)
 
-            Repeater {
-                id: guessColRepeater
+            model: guessModel
 
-                model: guessModel
+            Behavior on height {
+                PropertyAnimation { property: "height"; duration: 1000; easing.type: Easing.OutCubic }
+            }
 
-                delegate: Row {
-                    id: guessRow
-                    width: guessColumn.width
-                    height: guessColumn.guessSize
-                    spacing: guessColumn.horizSpacing
-                    property int rowIndex: index
+            delegate: Row {
+                id: guessRow
+                width: guessColumn.width
+                height: guessColumn.guessSize
+                spacing: guessColumn.horizSpacing
+                property int rowIndex: index
 
-                    Item {
-                        id: guessRowSpacer
-                        width: guessColumn.guessColWidth - (guessRepeater.count * (guessColumn.guessSize + (2 * guessColumn.statusMargin) + guessColumn.horizSpacing))
-                        height: parent.height
-                    }
+                Item {
+                    id: guessRowSpacer
+                    width: guessColumn.guessColWidth - (guessRepeater.count * (guessColumn.guessSize + (2 * guessColumn.statusMargin) + guessColumn.horizSpacing))
+                    height: parent.height
+                }
 
-                    Repeater {
-                        id: guessRepeater
-                        anchors.left: parent.left
-                        anchors.top: parent.top
-                        model: guess
+                Repeater {
+                    id: guessRepeater
+                    anchors.left: parent.left
+                    anchors.top: parent.top
+                    model: guess
 
-                        delegate: Item { // wrapper needed for singleGuessStatusRect's opacity
-                            id: singleGuessWrapper
+                    delegate: Item { // wrapper needed for singleGuessStatusRect's opacity
+                        id: singleGuessWrapper
 
-                            width: guessColumn.guessSize + (2 * guessColumn.statusMargin);
-                            height: guessColumn.guessSize + (2 * guessColumn.statusMargin);
+                        width: guessColumn.guessSize + (2 * guessColumn.statusMargin);
+                        height: guessColumn.guessSize + (2 * guessColumn.statusMargin);
 
-                            Rectangle {
-                                id: singleGuessStatusRect
-                                border.width: 2
-                                border.color: (status == Activity.STATUS_CORRECT) ? "white" : "black";
+                        Rectangle {
+                            id: singleGuessStatusRect
+                            border.width: 2
+                            border.color: (status == Activity.STATUS_CORRECT) ? "white" : "black";
+                            anchors.fill: parent
+                            radius: 3
+                            color: (status == Activity.STATUS_CORRECT) ? "black" : "white";
+                            opacity: (status == Activity.STATUS_UNKNOWN) ? 0 : 0.9
+                            z: 1
+
+                            MouseArea {
+                                id: mouseAreaRect
                                 anchors.fill: parent
-                                radius: 3
-                                color: (status == Activity.STATUS_CORRECT) ? "black" : "white";
-                                opacity: (status == Activity.STATUS_UNKNOWN) ? 0 : 0.9
-                                z: 1
+                                acceptedButtons: Qt.LeftButton
+                                enabled: guessRow.rowIndex > 0
+                                z: 4
+                                hoverEnabled: ApplicationInfo.isMobile ? false : true
 
-                                MouseArea {
-                                    id: mouseAreaRect
-                                    anchors.fill: parent
-                                    acceptedButtons: Qt.LeftButton
-                                    enabled: guessRow.rowIndex > 0
-                                    z: 4
-                                    hoverEnabled: ApplicationInfo.isMobile ? false : true
+                                Timer {
+                                    id: tooltipTimer
+                                    repeat: false
+                                    interval: 300
 
-                                    Timer {
-                                        id: tooltipTimer
-                                        repeat: false
-                                        interval: 300
-
-                                        onTriggered: showTooltip(true, status, mouseAreaRect)
-                                    }
-
-                                    onEntered: tooltipTimer.restart()
-
-                                    onExited: {
-                                        tooltipTimer.stop()
-                                        showTooltip(false)
-                                    }
-
-                                    onClicked: showTooltip(true, status, mouseAreaRect)  // for mobile
+                                    onTriggered: showTooltip(true, status, mouseAreaRect)
                                 }
-                            }
 
-                            Rectangle {
-                                id: singleGuess
+                                onEntered: tooltipTimer.restart()
 
-                                width: guessColumn.guessSize
-                                height: guessColumn.guessSize
-                                anchors.left: parent.left
-                                anchors.top: parent.top
-                                anchors.leftMargin: guessColumn.statusMargin
-                                anchors.topMargin: guessColumn.statusMargin
-
-                                radius: width * 0.5
-                                border.width: 2
-                                border.color: "lightgray"
-                                color: Activity.colors[colIndex]
-                                opacity: 1.0
-                                z: 2
-
-                                MouseArea {
-                                    id: mouseArea
-                                    anchors.fill: parent
-                                    acceptedButtons: Qt.LeftButton | Qt.RightButton
-                                    enabled: guessRow.rowIndex == 0
-                                    visible: guessRow.rowIndex == 0  // note, need to set invisible or it will cover the tooltip MouseArea
-                                    z: 3
-                                    hoverEnabled: ApplicationInfo.isMobile ? false : true
-
-                                    onPressAndHold: {
-                                        if (guessColRepeater.count > 1)
-                                            guessRepeater.model.get(index).colIndex = guessModel.get(1).guess.get(index).colIndex;
-                                    }
-
-                                    onClicked: {
-                                        var obj = guessRepeater.model.get(index);
-                                        if (mouse.button == Qt.LeftButton)
-                                            obj.colIndex = (obj.colIndex == Activity.currentColors.length - 1) ? 0 : obj.colIndex + 1;
-                                        else
-                                            obj.colIndex = (obj.colIndex == 0) ? Activity.currentColors.length - 1 : obj.colIndex - 1;
-                                        showChooser(true, index, parent);
-                                    }
+                                onExited: {
+                                    tooltipTimer.stop()
+                                    showTooltip(false)
                                 }
-                            }
 
-                            states: State {
-                                name: "scaled"; when: mouseArea.containsMouse
-                                PropertyChanges {
-                                    target: singleGuessWrapper
-                                    scale: 1.3
-                                }
-                            }
-
-                            transitions: Transition {
-                                NumberAnimation { properties: "scale"; easing.type: Easing.OutCubic }
+                                onClicked: showTooltip(true, status, mouseAreaRect)  // for mobile
                             }
                         }
+
+                        Rectangle {
+                            id: singleGuess
+
+                            width: guessColumn.guessSize
+                            height: guessColumn.guessSize
+                            anchors.left: parent.left
+                            anchors.top: parent.top
+                            anchors.leftMargin: guessColumn.statusMargin
+                            anchors.topMargin: guessColumn.statusMargin
+
+                            radius: width * 0.5
+                            border.width: 2
+                            border.color: "lightgray"
+                            color: Activity.colors[colIndex]
+                            opacity: 1.0
+                            z: 2
+
+                            MouseArea {
+                                id: mouseArea
+                                anchors.fill: parent
+                                acceptedButtons: Qt.LeftButton | Qt.RightButton
+                                enabled: guessRow.rowIndex == 0
+                                visible: guessRow.rowIndex == 0  // note, need to set invisible or it will cover the tooltip MouseArea
+                                z: 3
+                                hoverEnabled: ApplicationInfo.isMobile ? false : true
+
+                                onPressAndHold: {
+                                    if (guessColumn.count > 1)
+                                        guessRepeater.model.get(index).colIndex = guessModel.get(1).guess.get(index).colIndex;
+                                }
+
+                                onClicked: {
+                                    var obj = guessRepeater.model.get(index);
+                                    if (mouse.button == Qt.LeftButton)
+                                        obj.colIndex = (obj.colIndex == Activity.currentColors.length - 1) ? 0 : obj.colIndex + 1;
+                                    else
+                                        obj.colIndex = (obj.colIndex == 0) ? Activity.currentColors.length - 1 : obj.colIndex - 1;
+                                    showChooser(true, index, parent);
+                                }
+                            }
+                        }
+
+                        states: State {
+                            name: "scaled"; when: mouseArea.containsMouse
+                            PropertyChanges {
+                                target: singleGuessWrapper
+                                scale: 1.3
+                            }
+                        }
+
+                        transitions: Transition {
+                            NumberAnimation { properties: "scale"; easing.type: Easing.OutCubic }
+                        }
                     }
+                }
+
+                Item {
+                    id: guessRowSpacer2
+                    width: 10
+                    height: guessColumn.guessSize
+                }
+
+                Column {
+                    id: guessResultColumn
+
+                    width: guessColumn.resultColWidth
+                    height: guessColumn.guessSize
+                    spacing: 2
 
                     Item {
-                        id: guessRowSpacer2
-                        width: 10
-                        height: guessColumn.guessSize
+                        id: guessResultColSpacer
+                        width: guessResultColumn.width
+                        height: (guessResultColumn.height - 2 * (guessColumn.resultSize))
                     }
 
-                    Column {
-                        id: guessResultColumn
+                    Row {
+                        id: guessResultCorrectRow
 
-                        width: guessColumn.resultColWidth
-                        height: guessColumn.guessSize
+                        width: guessResultColumn.width
+                        height: guessColumn.resultSize
                         spacing: 2
 
-                        Item {
-                            id: guessResultColSpacer
-                            width: guessResultColumn.width
-                            height: (guessResultColumn.height - 2 * (guessColumn.resultSize))
-                        }
+                        Repeater {
+                            id: guessResultCorrectRepeater
 
-                        Row {
-                            id: guessResultCorrectRow
+                            model: result.correct
+                            delegate: Rectangle {
+                                id: singleCorrectResult
 
-                            width: guessResultColumn.width
-                            height: guessColumn.resultSize
-                            spacing: 2
+                                width: guessColumn.resultSize
+                                height: guessColumn.resultSize
 
-                            Repeater {
-                                id: guessResultCorrectRepeater
-
-                                model: result.correct
-                                delegate: Rectangle {
-                                    id: singleCorrectResult
-
-                                    width: guessColumn.resultSize
-                                    height: guessColumn.resultSize
-
-                                    radius: width * 0.5
-                                    border.width: 1
-                                    border.color: "white"
-                                    color: "black"
-                                }
-                            }
-                        }
-
-                        Row {
-                            id: guessResultMisplacedRow
-
-                            width: guessResultColumn.width
-                            height: guessColumn.resultSize
-                            spacing: 2
-
-                            Repeater {
-                                id: guessResultMisplacedRepeater
-
-                                model: result.misplaced
-                                delegate: Rectangle {
-                                    id: singleMisplacedResult
-
-                                    width: guessColumn.resultSize
-                                    height: guessColumn.resultSize
-
-                                    radius: width * 0.5
-                                    border.width: 1
-                                    border.color: "black"
-                                    color: "white"
-                                }
+                                radius: width * 0.5
+                                border.width: 1
+                                border.color: "white"
+                                color: "black"
                             }
                         }
                     }
 
+                    Row {
+                        id: guessResultMisplacedRow
+
+                        width: guessResultColumn.width
+                        height: guessColumn.resultSize
+                        spacing: 2
+
+                        Repeater {
+                            id: guessResultMisplacedRepeater
+
+                            model: result.misplaced
+                            delegate: Rectangle {
+                                id: singleMisplacedResult
+
+                                width: guessColumn.resultSize
+                                height: guessColumn.resultSize
+
+                                radius: width * 0.5
+                                border.width: 1
+                                border.color: "black"
+                                color: "white"
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -495,5 +496,4 @@ ActivityBase {
             anchors.right: undefined
         }
     }
-
 }
