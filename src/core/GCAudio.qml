@@ -89,6 +89,12 @@ Item {
     signal done
 
     /**
+     *  When mute is changed we set the volume to 0 to mute a potential playing
+     * sound.
+     */
+    onMutedChanged: muted ? audio.volume = 0 : audio.volume = 1
+
+    /**
      * Plays back the audio resource @p file.
      *
      * @param type:string file [optional] URL to an audio source.
