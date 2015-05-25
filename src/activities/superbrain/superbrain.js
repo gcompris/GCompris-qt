@@ -65,6 +65,7 @@ var STATUS_CORRECT = 2;
 function start(items_) {
     items = items_;
     currentLevel = 0;
+    currentSubLevel = 0;
     initLevel();
 }
 
