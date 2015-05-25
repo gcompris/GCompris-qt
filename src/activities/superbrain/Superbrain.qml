@@ -85,10 +85,14 @@ ActivityBase {
             width: 100 * ApplicationInfo.ratio
             height: 100 * ApplicationInfo.ratio
 
+            add: Transition {
+                NumberAnimation { properties: "y"; duration: 1000; easing.type: Easing.OutBounce }
+            }
+
             Repeater {
                 id: colorsRepeater
 
-                model: new Array()
+                model: ListModel {}
 
                 delegate: Rectangle {
                     width: 40 * background.scaleFactor * ApplicationInfo.ratio
@@ -96,7 +100,7 @@ ActivityBase {
                     radius: width * 0.5
                     border.width: 2
                     border.color: "white"
-                    color: modelData
+                    color: col
                 }
             }
         }

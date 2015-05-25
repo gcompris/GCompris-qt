@@ -105,10 +105,12 @@ function initLevel() {
     }
     //console.log("XXX solution: " + JSON.stringify(solution));
     // populate currentColors:
+    items.colorsRepeater.model.clear();
     currentColors = new Array();
-    for (var i = 0; i < numberOfColors; ++i)
+    for (var i = 0; i < numberOfColors; ++i) {
         currentColors[i] = colors[i];
-    items.colorsRepeater.model = currentColors;
+        items.colorsRepeater.model.append({"col": colors[i]});
+    }
     items.chooserRepeater.model = currentColors;
     // add first guess row:
     items.guessModel.clear();
