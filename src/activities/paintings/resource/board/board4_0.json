@@ -1,0 +1,47 @@
+{
+   "instruction" : "Bazille, The Ramparts at Aigues-Mortes - 1867",
+   "levels" : [
+      {
+         "pixmapfile" : "images/bazille_rampart_4.jpg",
+         "x" : "0.256",
+         "y" : "0.62",
+         "height" : "0.3555",
+         "width" : "0.2937"
+      },
+      {
+         "pixmapfile" : "images/bazille_rampart_1.jpg",
+         "x" : "0.256",
+         "y" : "0.281",
+         "height" : "0.3595",
+         "width" : "0.2937"
+      },
+      {
+         "pixmapfile" : "images/bazille_rampart_3.jpg",
+         "x" : "0.775",
+         "y" : "0.281",
+         "height" : "0.3595",
+         "width" : "0.2947"
+      },
+      {
+         "pixmapfile" : "images/bazille_rampart_5.jpg",
+         "x" : "0.515",
+         "y" : "0.62",
+         "height" : "0.3555",
+         "width" : "0.2937"
+      },
+      {
+         "pixmapfile" : "images/bazille_rampart_2.jpg",
+         "x" : "0.515",
+         "y" : "0.281",
+         "height" : "0.3595",
+         "width" : "0.2937"
+      },
+      {
+         "pixmapfile" : "images/bazille_rampart_6.jpg",
+         "x" : "0.775",
+         "y" : "0.62",
+         "height" : "0.3555",
+         "width" : "0.2947"
+      }
+   ]
+}

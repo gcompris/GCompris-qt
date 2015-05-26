@@ -1,0 +1,89 @@
+{
+   "instruction" : "Leonardo da Vinci, Mona Lisa - 1503-19",
+   "levels" : [
+      {
+         "pixmapfile" : "images/MonaLisa_d3.png",
+         "x" : "0.664",
+         "y" : "0.762",
+         "height" : "0.4025",
+         "width" : "0.1407"
+      },
+      {
+         "pixmapfile" : "images/MonaLisa_c3.png",
+         "x" : "0.575",
+         "y" : "0.793",
+         "height" : "0.3405",
+         "width" : "0.1677"
+      },
+      {
+         "pixmapfile" : "images/MonaLisa_b3.png",
+         "x" : "0.462",
+         "y" : "0.793",
+         "height" : "0.3405",
+         "width" : "0.1887"
+      },
+      {
+         "pixmapfile" : "images/MonaLisa_a3.png",
+         "x" : "0.36",
+         "y" : "0.793",
+         "height" : "0.3405",
+         "width" : "0.1427"
+      },
+      {
+         "pixmapfile" : "images/MonaLisa_d2.png",
+         "x" : "0.664",
+         "y" : "0.488",
+         "height" : "0.3555",
+         "width" : "0.1407"
+      },
+      {
+         "pixmapfile" : "images/MonaLisa_c2.png",
+         "x" : "0.575",
+         "y" : "0.49",
+         "height" : "0.4825",
+         "width" : "0.1677"
+      },
+      {
+         "pixmapfile" : "images/MonaLisa_b2.png",
+         "x" : "0.472",
+         "y" : "0.49",
+         "height" : "0.4825",
+         "width" : "0.1697"
+      },
+      {
+         "pixmapfile" : "images/MonaLisa_a2.png",
+         "x" : "0.371",
+         "y" : "0.521",
+         "height" : "0.4205",
+         "width" : "0.1637"
+      },
+      {
+         "pixmapfile" : "images/MonaLisa_d1.png",
+         "x" : "0.654",
+         "y" : "0.214",
+         "height" : "0.4075",
+         "width" : "0.1607"
+      },
+      {
+         "pixmapfile" : "images/MonaLisa_c1.png",
+         "x" : "0.564",
+         "y" : "0.182",
+         "height" : "0.3425",
+         "width" : "0.1467"
+      },
+      {
+         "pixmapfile" : "images/MonaLisa_b1.png",
+         "x" : "0.462",
+         "y" : "0.182",
+         "height" : "0.3425",
+         "width" : "0.1887"
+      },
+      {
+         "pixmapfile" : "images/MonaLisa_a1.png",
+         "x" : "0.36",
+         "y" : "0.214",
+         "height" : "0.4075",
+         "width" : "0.1427"
+      }
+   ]
+}

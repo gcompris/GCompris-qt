@@ -1,0 +1,68 @@
+{
+   "instruction" : "Giovanni Bellini, La Pala di Pesaro - 1475-85",
+   "levels" : [
+      {
+         "pixmapfile" : "images/PalaDiPesaro_c3.png",
+         "x" : "0.796",
+         "y" : "0.688",
+         "height" : "0.2995",
+         "width" : "0.3347"
+      },
+      {
+         "pixmapfile" : "images/PalaDiPesaro_b3.png",
+         "x" : "0.513",
+         "y" : "0.71",
+         "height" : "0.2565",
+         "width" : "0.4677"
+      },
+      {
+         "pixmapfile" : "images/PalaDiPesaro_a3.png",
+         "x" : "0.228",
+         "y" : "0.688",
+         "height" : "0.2995",
+         "width" : "0.3367"
+      },
+      {
+         "pixmapfile" : "images/PalaDiPesaro_c2.png",
+         "x" : "0.796",
+         "y" : "0.465",
+         "height" : "0.3105",
+         "width" : "0.3347"
+      },
+      {
+         "pixmapfile" : "images/PalaDiPesaro_b2.png",
+         "x" : "0.543",
+         "y" : "0.489",
+         "height" : "0.3575",
+         "width" : "0.4087"
+      },
+      {
+         "pixmapfile" : "images/PalaDiPesaro_a2.png",
+         "x" : "0.258",
+         "y" : "0.465",
+         "height" : "0.3105",
+         "width" : "0.3967"
+      },
+      {
+         "pixmapfile" : "images/PalaDiPesaro_c1.png",
+         "x" : "0.767",
+         "y" : "0.263",
+         "height" : "0.2585",
+         "width" : "0.3927"
+      },
+      {
+         "pixmapfile" : "images/PalaDiPesaro_b1.png",
+         "x" : "0.483",
+         "y" : "0.263",
+         "height" : "0.2585",
+         "width" : "0.4067"
+      },
+      {
+         "pixmapfile" : "images/PalaDiPesaro_a1.png",
+         "x" : "0.228",
+         "y" : "0.263",
+         "height" : "0.2585",
+         "width" : "0.3367"
+      }
+   ]
+}

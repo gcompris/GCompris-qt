@@ -1,0 +1,180 @@
+{
+   "instruction" : "Katsushika Hokusai, Kazusa sea Route - 1830.",
+   "levels" : [
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_e5.png",
+         "x" : "0.84",
+         "y" : "0.82",
+         "height" : "0.1925",
+         "width" : "0.2497"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_d5.png",
+         "x" : "0.687",
+         "y" : "0.804",
+         "height" : "0.2245",
+         "width" : "0.2247"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_c5.png",
+         "x" : "0.531",
+         "y" : "0.82",
+         "height" : "0.1925",
+         "width" : "0.2617"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_b5.png",
+         "x" : "0.355",
+         "y" : "0.804",
+         "height" : "0.2245",
+         "width" : "0.2617"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_a5.png",
+         "x" : "0.184",
+         "y" : "0.804",
+         "height" : "0.2245",
+         "width" : "0.2537"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_e4.png",
+         "x" : "0.84",
+         "y" : "0.673",
+         "height" : "0.2355",
+         "width" : "0.2497"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_d4.png",
+         "x" : "0.687",
+         "y" : "0.655",
+         "height" : "0.2005",
+         "width" : "0.2247"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_c4.png",
+         "x" : "0.513",
+         "y" : "0.673",
+         "height" : "0.2355",
+         "width" : "0.2957"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_b4.png",
+         "x" : "0.338",
+         "y" : "0.64",
+         "height" : "0.2315",
+         "width" : "0.2257"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_a4.png",
+         "x" : "0.184",
+         "y" : "0.64",
+         "height" : "0.2315",
+         "width" : "0.2537"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_e3.png",
+         "x" : "0.857",
+         "y" : "0.489",
+         "height" : "0.2675",
+         "width" : "0.2157"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_d3.png",
+         "x" : "0.705",
+         "y" : "0.505",
+         "height" : "0.2355",
+         "width" : "0.2597"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_c3.png",
+         "x" : "0.513",
+         "y" : "0.505",
+         "height" : "0.2355",
+         "width" : "0.2957"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_b3.png",
+         "x" : "0.338",
+         "y" : "0.487",
+         "height" : "0.2005",
+         "width" : "0.2257"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_a3.png",
+         "x" : "0.184",
+         "y" : "0.471",
+         "height" : "0.2315",
+         "width" : "0.2537"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_e2.png",
+         "x" : "0.857",
+         "y" : "0.318",
+         "height" : "0.2005",
+         "width" : "0.2157"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_d2.png",
+         "x" : "0.688",
+         "y" : "0.336",
+         "height" : "0.2355",
+         "width" : "0.2947"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_c2.png",
+         "x" : "0.513",
+         "y" : "0.32",
+         "height" : "0.2675",
+         "width" : "0.2257"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_b2.png",
+         "x" : "0.338",
+         "y" : "0.32",
+         "height" : "0.2675",
+         "width" : "0.2957"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_a2.png",
+         "x" : "0.166",
+         "y" : "0.302",
+         "height" : "0.2315",
+         "width" : "0.2177"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_e1.png",
+         "x" : "0.857",
+         "y" : "0.171",
+         "height" : "0.2285",
+         "width" : "0.2157"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_d1.png",
+         "x" : "0.705",
+         "y" : "0.171",
+         "height" : "0.2285",
+         "width" : "0.2597"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_c1.png",
+         "x" : "0.513",
+         "y" : "0.154",
+         "height" : "0.1925",
+         "width" : "0.2957"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_b1.png",
+         "x" : "0.338",
+         "y" : "0.154",
+         "height" : "0.1925",
+         "width" : "0.2257"
+      },
+      {
+         "pixmapfile" : "images/KazusaSeaRoute_a1.png",
+         "x" : "0.184",
+         "y" : "0.154",
+         "height" : "0.1925",
+         "width" : "0.2537"
+      }
+   ]
+}

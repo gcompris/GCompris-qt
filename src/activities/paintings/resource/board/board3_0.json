@@ -1,0 +1,61 @@
+{
+   "instruction" : "Pierre-Auguste Renoir, Girls At The Piano - 1892",
+   "levels" : [
+      {
+         "pixmapfile" : "images/renoir-filles_piano-8.png",
+         "x" : "0.611",
+         "y" : "0.779",
+         "height" : "0.2955",
+         "width" : "0.2617"
+      },
+      {
+         "pixmapfile" : "images/renoir-filles_piano-7.png",
+         "x" : "0.413",
+         "y" : "0.781",
+         "height" : "0.2955",
+         "width" : "0.3187"
+      },
+      {
+         "pixmapfile" : "images/renoir-filles_piano-6.png",
+         "x" : "0.611",
+         "y" : "0.581",
+         "height" : "0.2435",
+         "width" : "0.2617"
+      },
+      {
+         "pixmapfile" : "images/renoir-filles_piano-5.png",
+         "x" : "0.413",
+         "y" : "0.582",
+         "height" : "0.2435",
+         "width" : "0.3187"
+      },
+      {
+         "pixmapfile" : "images/renoir-filles_piano-4.png",
+         "x" : "0.583",
+         "y" : "0.356",
+         "height" : "0.3535",
+         "width" : "0.3167"
+      },
+      {
+         "pixmapfile" : "images/renoir-filles_piano-3.png",
+         "x" : "0.385",
+         "y" : "0.356",
+         "height" : "0.3535",
+         "width" : "0.2627"
+      },
+      {
+         "pixmapfile" : "images/renoir-filles_piano-2.png",
+         "x" : "0.611",
+         "y" : "0.129",
+         "height" : "0.2435",
+         "width" : "0.2617"
+      },
+      {
+         "pixmapfile" : "images/renoir-filles_piano-1.png",
+         "x" : "0.413",
+         "y" : "0.129",
+         "height" : "0.2435",
+         "width" : "0.3187"
+      }
+   ]
+}

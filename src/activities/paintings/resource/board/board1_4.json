@@ -1,0 +1,47 @@
+{
+   "instruction" : "Katsushika Hokusai, Oiran and Kamuro",
+   "levels" : [
+      {
+         "pixmapfile" : "images/HokusaiOiranKamuro_b3.png",
+         "x" : "0.605",
+         "y" : "0.734",
+         "height" : "0.3645",
+         "width" : "0.2367"
+      },
+      {
+         "pixmapfile" : "images/HokusaiOiranKamuro_a3.png",
+         "x" : "0.439",
+         "y" : "0.734",
+         "height" : "0.3645",
+         "width" : "0.2797"
+      },
+      {
+         "pixmapfile" : "images/HokusaiOiranKamuro_b2.png",
+         "x" : "0.605",
+         "y" : "0.488",
+         "height" : "0.3215",
+         "width" : "0.2367"
+      },
+      {
+         "pixmapfile" : "images/HokusaiOiranKamuro_a2.png",
+         "x" : "0.439",
+         "y" : "0.488",
+         "height" : "0.3215",
+         "width" : "0.2797"
+      },
+      {
+         "pixmapfile" : "images/HokusaiOiranKamuro_b1.png",
+         "x" : "0.605",
+         "y" : "0.242",
+         "height" : "0.3685",
+         "width" : "0.2367"
+      },
+      {
+         "pixmapfile" : "images/HokusaiOiranKamuro_a1.png",
+         "x" : "0.439",
+         "y" : "0.242",
+         "height" : "0.3685",
+         "width" : "0.2797"
+      }
+   ]
+}
