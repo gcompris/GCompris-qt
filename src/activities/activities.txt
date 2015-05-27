@@ -9,10 +9,13 @@ algorithm
 align4
 align4-2players
 alphabet-sequence
+babymatch
+babyshapes
 ballcatch
 braille_alphabets
 braille_fun
 canal_lock
+chronos
 clickanddraw
 clickgame
 click_on_letter
@@ -21,6 +24,7 @@ clockgame
 color_mix
 color_mix_light
 colors
+details
 drawnumber
 enumerate
 erase
@@ -29,6 +33,8 @@ erase_clic
 fifteen
 followline
 football
+geo-country
+geography
 gletters
 gnumch-equality
 gnumch-factors
@@ -41,6 +47,7 @@ hanoi_real
 hexagon
 simplepaint
 imageid
+imagename
 instruments
 intro_gravity
 leftright
