@@ -24,7 +24,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "chronos/Chronos.qml"
   difficulty: 1
-  icon: "chronos/chronos.svgz"
+  icon: "chronos/chronos.svg"
   author: "José Jorge <jjorge@free.fr>, Qt Quick port by Pulkit Gupta <pulkitgenius@gmail.com> "
   demo: true
   title: qsTr("Chronos")

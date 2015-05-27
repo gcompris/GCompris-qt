@@ -24,7 +24,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "geography/Geography.qml"
   difficulty: 2
-  icon: "geography/globe.svgz"
+  icon: "geography/globe.svg"
   author: "Jean-Philippe Ayanides <jp.ayanides@free.fr>, Qt Quick port by Pulkit Gupta <pulkitgenius@gmail.com>"
   demo: true
   title: qsTr("Locate the countries")

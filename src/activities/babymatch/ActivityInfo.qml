@@ -23,7 +23,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "babymatch/Babymatch.qml"
   difficulty: 1
-  icon: "babymatch/babymatch.svgz"
+  icon: "babymatch/babymatch.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>, Qt Quick port by Pulkit Gupta <pulkitgenius@gmail.com>"
   demo: false
   title: qsTr("Matching Items")
