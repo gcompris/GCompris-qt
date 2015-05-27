@@ -1,0 +1,243 @@
+{
+   "instruction" : "Africa",
+   "levels" : [
+      {
+         "pixmapfile" : "africa/africa.png",
+         "type" : "SHAPE_BACKGROUND_IMAGE"
+      },
+      {
+         "pixmapfile" : "africa/zimbabwe.png",
+         "toolTipText" : "Zimbabwe",
+         "x" : "0.676",
+         "y" : "0.783"
+      },
+      {
+         "pixmapfile" : "africa/zambia.png",
+         "toolTipText" : "Zambia",
+         "x" : "0.662",
+         "y" : "0.704"
+      },
+      {
+         "pixmapfile" : "africa/tunisia.png",
+         "toolTipText" : "Tunisia",
+         "x" : "0.39",
+         "y" : "0.051"
+      },
+      {
+         "pixmapfile" : "africa/togo.png",
+         "toolTipText" : "Togo",
+         "x" : "0.268",
+         "y" : "0.403"
+      },
+      {
+         "pixmapfile" : "africa/chad.png",
+         "toolTipText" : "Chad",
+         "x" : "0.528",
+         "y" : "0.306"
+      },
+      {
+         "pixmapfile" : "africa/tanzania.png",
+         "toolTipText" : "Tanzania",
+         "x" : "0.763",
+         "y" : "0.609"
+      },
+      {
+         "pixmapfile" : "africa/soudan.png",
+         "toolTipText" : "Sudan",
+         "x" : "0.69",
+         "y" : "0.34"
+      },
+      {
+         "pixmapfile" : "africa/somalia.png",
+         "toolTipText" : "Somalia",
+         "x" : "0.925",
+         "y" : "0.449"
+      },
+      {
+         "pixmapfile" : "africa/senegal.png",
+         "toolTipText" : "Senegal",
+         "x" : "0.049",
+         "y" : "0.32"
+      },
+      {
+         "pixmapfile" : "africa/rep_congo.png",
+         "toolTipText" : "Democratic Republic of Congo",
+         "x" : "0.57",
+         "y" : "0.577"
+      },
+      {
+         "pixmapfile" : "africa/rep_centrafrique.png",
+         "toolTipText" : "Central African Republic",
+         "x" : "0.563",
+         "y" : "0.425"
+      },
+      {
+         "pixmapfile" : "africa/uganda.png",
+         "toolTipText" : "Uganda",
+         "x" : "0.725",
+         "y" : "0.5"
+      },
+      {
+         "pixmapfile" : "africa/nigeria.png",
+         "toolTipText" : "Nigeria",
+         "x" : "0.385",
+         "y" : "0.395"
+      },
+      {
+         "pixmapfile" : "africa/niger.png",
+         "toolTipText" : "Niger",
+         "x" : "0.373",
+         "y" : "0.277"
+      },
+      {
+         "pixmapfile" : "africa/namibia.png",
+         "toolTipText" : "Namibia",
+         "x" : "0.516",
+         "y" : "0.84"
+      },
+      {
+         "pixmapfile" : "africa/mozambique.png",
+         "toolTipText" : "Mozambique",
+         "x" : "0.768",
+         "y" : "0.783"
+      },
+      {
+         "pixmapfile" : "africa/mauritania.png",
+         "toolTipText" : "Mauritania",
+         "x" : "0.099",
+         "y" : "0.231"
+      },
+      {
+         "pixmapfile" : "africa/moroco.png",
+         "toolTipText" : "Morocco",
+         "x" : "0.127",
+         "y" : "0.123"
+      },
+      {
+         "pixmapfile" : "africa/mali.png",
+         "toolTipText" : "Mali",
+         "x" : "0.2",
+         "y" : "0.273"
+      },
+      {
+         "pixmapfile" : "africa/malawi.png",
+         "toolTipText" : "Malawi",
+         "x" : "0.751",
+         "y" : "0.702"
+      },
+      {
+         "pixmapfile" : "africa/madagascar.png",
+         "toolTipText" : "Madagascar",
+         "x" : "0.927",
+         "y" : "0.781"
+      },
+      {
+         "pixmapfile" : "africa/libya.png",
+         "toolTipText" : "Libya",
+         "x" : "0.502",
+         "y" : "0.154"
+      },
+      {
+         "pixmapfile" : "africa/liberia.png",
+         "toolTipText" : "Liberia",
+         "x" : "0.117",
+         "y" : "0.433"
+      },
+      {
+         "pixmapfile" : "africa/kenya.png",
+         "toolTipText" : "Kenya",
+         "x" : "0.81",
+         "y" : "0.52"
+      },
+      {
+         "pixmapfile" : "africa/guinea.png",
+         "toolTipText" : "Guinea",
+         "x" : "0.094",
+         "y" : "0.381"
+      },
+      {
+         "pixmapfile" : "africa/ghana.png",
+         "toolTipText" : "Ghana",
+         "x" : "0.237",
+         "y" : "0.411"
+      },
+      {
+         "pixmapfile" : "africa/gabon.png",
+         "toolTipText" : "Gabon",
+         "x" : "0.427",
+         "y" : "0.538"
+      },
+      {
+         "pixmapfile" : "africa/ethiopia.png",
+         "toolTipText" : "Ethiopia",
+         "x" : "0.845",
+         "y" : "0.395"
+      },
+      {
+         "pixmapfile" : "africa/eritrea.png",
+         "toolTipText" : "Eritrea",
+         "x" : "0.831",
+         "y" : "0.31"
+      },
+      {
+         "pixmapfile" : "africa/egypt.png",
+         "toolTipText" : "Egypt",
+         "x" : "0.683",
+         "y" : "0.152"
+      },
+      {
+         "pixmapfile" : "africa/ivory_coast.png",
+         "toolTipText" : "Ivory Coast",
+         "x" : "0.178",
+         "y" : "0.417"
+      },
+      {
+         "pixmapfile" : "africa/congo.png",
+         "toolTipText" : "Republic of Congo",
+         "x" : "0.477",
+         "y" : "0.528"
+      },
+      {
+         "pixmapfile" : "africa/cameroon.png",
+         "toolTipText" : "Cameroon",
+         "x" : "0.441",
+         "y" : "0.427"
+      },
+      {
+         "pixmapfile" : "africa/burkina_faso.png",
+         "toolTipText" : "Burkina Faso",
+         "x" : "0.232",
+         "y" : "0.35"
+      },
+      {
+         "pixmapfile" : "africa/botswana.png",
+         "toolTipText" : "Botswana",
+         "x" : "0.608",
+         "y" : "0.832"
+      },
+      {
+         "pixmapfile" : "africa/benin.png",
+         "toolTipText" : "Benin",
+         "x" : "0.291",
+         "y" : "0.393"
+      },
+      {
+         "pixmapfile" : "africa/angola.png",
+         "toolTipText" : "Angola",
+         "x" : "0.514",
+         "y" : "0.686"
+      },
+      {
+         "pixmapfile" : "africa/algeria.png",
+         "toolTipText" : "Algeria",
+         "x" : "0.279",
+         "y" : "0.128"
+      },
+      {
+         "pixmapfile" : "africa/south_africa.png",
+         "toolTipText" : "South Africa",
+         "x" : "0.606",
+         "y" : "0.913"
+      }
+   ]
+}
