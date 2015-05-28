@@ -89,8 +89,8 @@ function initLevel() {
     else if(currentSubLevel == 0)
         numberOfSubLevel = numberOfSubLevelDefault
         
-    items.player_score.text = (currentSubLevel + 1) + '/' + (numberOfSubLevel + 1)
-    items.score.anchors.leftMargin = Math.floor(currentLevel / 10) * 25 + 290
+    items.score.currentSubLevel = currentSubLevel + 1
+    items.score.numberOfSubLevels = numberOfSubLevel + 1
     
     if(levelData.glow == undefined)
         glowEnabled = glowEnabledDefault

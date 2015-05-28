@@ -67,7 +67,6 @@ ActivityBase {
             property alias leftBar: leftBar
             property alias instruction: instruction
             property alias toolTip: toolTip
-            property alias player_score: player_score
             property alias score: score
         }
 
@@ -88,25 +87,8 @@ ActivityBase {
             onHomeClicked: activity.home()
         }
         
-        Image {
+        Score {
             id: score
-            source: "qrc:/gcompris/src/activities/babymatch/resource/score.svg"
-            height: bar.height
-            anchors {
-                bottom: bar.bottom
-                bottomMargin: 10
-                left: bar.right
-                leftMargin: 290
-            }
-
-            GCText {
-                id: player_score
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.horizontalCenter: parent.horizontalCenter
-                x: parent.width*0.70
-                color: "white"
-                fontSize: largeSize
-            }
         }
 
         Bonus {
