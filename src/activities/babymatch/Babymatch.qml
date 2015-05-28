@@ -120,7 +120,7 @@ ActivityBase {
         }
 
         PropertyAnimation {
-            id: "showLeftWidget"
+            id: showLeftWidget
             target: leftWidget
             properties: "width"
             from: 0
@@ -132,7 +132,7 @@ ActivityBase {
             }
         }
         PropertyAnimation {
-            id: "hideLeftWidget"
+            id: hideLeftWidget
             target: leftWidget
             properties: "width"
             from: leftWidget.leftWidgetWidth
