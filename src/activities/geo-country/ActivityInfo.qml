@@ -25,13 +25,13 @@ ActivityInfo {
   name: "geo-country/GeoCountry.qml"
   difficulty: 2
   icon: "geo-country/france_region.svg"
-  author: "Jean-Philippe Ayanides <jp.ayanides@free.fr>, Qt Quick port by Pulkit Gupta <pulkitgenius@gmail.com>"
+  author: "Pulkit Gupta <pulkitgenius@gmail.com>"
   demo: true
   title: qsTr("Locate the region")
   description: qsTr("Drag and Drop the regions to redraw the whole country")
   goal: ""
-  prerequisite: qsTr("Mouse manipulation: movement, drag and drop")
+  prerequisite: ""
   manual: ""
   credit: "The map of Germany comes from Wikipedia and is released under the GNU Free Documentation License. Olaf Ronneberger and his children Lina and Julia Ronneberger created the German level."
-  section: "/discovery/miscellaneous"
+  section: "discovery"
 }

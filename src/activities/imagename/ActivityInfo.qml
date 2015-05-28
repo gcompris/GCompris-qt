@@ -24,7 +24,7 @@ ActivityInfo {
   name: "imagename/Imagename.qml"
   difficulty: 1
   icon: "imagename/imagename.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net> / Andre Connes <andre.connes@toulouse.iufm.fr>, Qt Quick port by Pulkit Gupta <pulkitgenius@gmail.com>"
+  author: "Pulkit Gupta <pulkitgenius@gmail.com>"
   demo: false
   title: qsTr("Image Name")
   description: qsTr("Drag and Drop each item above its name")

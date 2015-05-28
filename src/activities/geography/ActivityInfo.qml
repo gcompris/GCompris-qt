@@ -25,13 +25,13 @@ ActivityInfo {
   name: "geography/Geography.qml"
   difficulty: 2
   icon: "geography/globe.svg"
-  author: "Jean-Philippe Ayanides <jp.ayanides@free.fr>, Qt Quick port by Pulkit Gupta <pulkitgenius@gmail.com>"
+  author: "Pulkit Gupta <pulkitgenius@gmail.com>"
   demo: true
   title: qsTr("Locate the countries")
   description: qsTr("Drag and Drop the items to redraw the whole map")
   goal: ""
-  prerequisite: qsTr("Mouse manipulation: movement, drag and drop")
+  prerequisite: ""
   manual: ""
   credit: ""
-  section: "/discovery/miscellaneous"
+  section: "discovery"
 }
