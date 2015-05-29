@@ -250,7 +250,7 @@ Item {
 
             GCText {
                 id: voicesText
-                text: qsTr("Localized sounds")
+                text: qsTr("Localized voices")
             }
 
             Image {
