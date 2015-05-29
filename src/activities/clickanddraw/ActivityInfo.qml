@@ -28,7 +28,7 @@ ActivityInfo {
 //  intro: "Click on the selected points and draw"
   goal: ""
   prerequisite: qsTr("Can move the mouse and click accurately on points.")
-  manual: qsTr("Draw the picture by clicking on each point in sequence. Each time a point is selected the next green one appears.")
+  manual: qsTr("Draw the picture by clicking on each point in sequence. Each time a point is selected the next blue one appears.")
   credit: ""
   section: "computer mouse"
 }

@@ -236,7 +236,6 @@ Item {
 
             function localeChanged() {
                 var language = dialogConfig.languages[languageBox.currentIndex].text;
-                voicesText.text = language;
                 voicesRow.haveLocalResource = DownloadManager.isDataRegistered(
                             "voices-" + ApplicationInfo.CompressedAudio + "/" +
                             ApplicationInfo.getVoicesLocale(dialogConfig.languages[languageBox.currentIndex].locale)
@@ -251,7 +250,7 @@ Item {
 
             GCText {
                 id: voicesText
-                text: qsTr("Sounds")
+                text: qsTr("Localized sounds")
             }
 
             Image {

@@ -117,22 +117,22 @@ int main(int argc, char *argv[])
     QCommandLineOption exportActivitiesAsSQL("export-activities-as-sql", "Export activities as SQL");
     parser.addOption(exportActivitiesAsSQL);
 	QCommandLineOption clDefaultCursor(QStringList() << "c" << "cursor",
-                                       QObject::tr("run GCompris with the default system cursor."));
+                                       QObject::tr("Run GCompris with the default system cursor."));
 	parser.addOption(clDefaultCursor);
     QCommandLineOption clNoCursor(QStringList() << "C" << "nocursor",
-                                       QObject::tr("run GCompris without cursor (touch screen mode)."));
+                                       QObject::tr("Run GCompris without cursor (touch screen mode)."));
     parser.addOption(clNoCursor);
     QCommandLineOption clFullscreen(QStringList() << "f" << "fullscreen",
-                                       QObject::tr("run GCompris in fullscreen mode."));
+                                       QObject::tr("Run GCompris in fullscreen mode."));
     parser.addOption(clFullscreen);
     QCommandLineOption clWindow(QStringList() << "w" << "window",
-                                       QObject::tr("run GCompris in window mode."));
+                                       QObject::tr("Run GCompris in window mode."));
     parser.addOption(clWindow);
     QCommandLineOption clSound(QStringList() << "s" << "sound",
-                                       QObject::tr("run GCompris with sound enabled."));
+                                       QObject::tr("Run GCompris with sound enabled."));
     parser.addOption(clSound);
     QCommandLineOption clMute(QStringList() << "m" << "mute",
-                                       QObject::tr("run GCompris without sound."));
+                                       QObject::tr("Run GCompris without sound."));
     parser.addOption(clMute);
     QCommandLineOption clWithoutConfig(QStringList() << "disable-config",
                                        QObject::tr("Disable the configuration button."));
