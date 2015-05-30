@@ -219,6 +219,7 @@ ActivityBase {
 
             color: "transparent"
             z: 2
+            y: 10
             anchors.left: leftContainer.right
             width: background.width - leftContainer.width
             height: background.height - (bar.height * 1.1)
@@ -233,6 +234,7 @@ ActivityBase {
                 z: 2
                 width: source == "" ? grid.width : (ratio > gridRatio ? grid.width : grid.height * ratio)
                 height: source == "" ? grid.height : (ratio < gridRatio ? grid.height : grid.width / ratio)
+                anchors.topMargin: 10
                 anchors.centerIn: parent
                 
                 //Inserting static background images
@@ -286,7 +288,7 @@ ActivityBase {
                 id: instructionTxt
                 anchors {
                     top: grid.top
-                    topMargin: 5
+                    topMargin: -10
                     horizontalCenter: grid.horizontalCenter
                 }
                 visible: instruction.visible
@@ -298,7 +300,6 @@ ActivityBase {
                 horizontalAlignment: Text.AlignHCenter
                 width: Math.max(Math.min(parent.width * 0.9, text.length * 11), parent.width * 0.3)
                 wrapMode: TextEdit.WordWrap
-                text: "Drag and Drop the items to make them match"
             }
             
         }
