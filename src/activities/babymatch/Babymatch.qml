@@ -95,6 +95,7 @@ ActivityBase {
         
         Score {
             id: score
+            visible: numberOfSubLevels > 1
         }
 
         Bonus {
