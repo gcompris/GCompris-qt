@@ -22,53 +22,91 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Drag and Drop the items to make them match")
    property variant levels: [
       {
-          "pixmapfile" : "images/lamp.svg",
+          "pixmapfile" : "images/fusee.svg",
           "x" : "0.2",
-          "y" : "0.8",
+          "y" : "0.25",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/postpoint.svg",
+          "pixmapfile" : "images/star.svg",
           "x" : "0.5",
-          "y" : "0.8",
+          "y" : "0.25",
           "height" : 0.25,
           "width" : 0.25
       },
       
       {
+          "pixmapfile" : "images/sofa.svg",
+          "x" : "0.8",
+          "y" : "0.25",
+          "height" : 0.25,
+          "width" : 0.25
+      },
+      {
+          "pixmapfile" : "images/house.svg",
+          "x" : "0.2",
+          "y" : "0.7",
+          "height" : 0.25,
+          "width" : 0.25
+      },
+      {
+          "pixmapfile" : "images/lighthouse.svg",
+          "x" : "0.5",
+          "y" : "0.7",
+          "height" : 0.25,
+          "width" : 0.25
+      },
+      {
           "pixmapfile" : "images/sailingboat.svg",
           "x" : "0.8",
-          "y" : "0.8",
+          "y" : "0.7",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/light.svg",
-          "x" : "0.2",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
-          "height" : 0.25,
-          "width" : 0.25
+		  "text" : "rocket",
+		  "x" : "0.2",
+		  "y" : "0.4",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
       },
       {
-          "pixmapfile" : "images/postcard.svg",
-          "x" : "0.5",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
-          "height" : 0.25,
-          "width" : 0.25
+		  "text" : "star",
+		  "x" : "0.5",
+		  "y" : "0.4",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
       },
       {
-          "pixmapfile" : "images/fishingboat.svg",
-          "x" : "0.8",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
-          "height" : 0.25,
-          "width" : 0.25
+		  "text" : "sofa",
+		  "x" : "0.8",
+		  "y" : "0.4",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "house",
+		  "x" : "0.2",
+		  "y" : "0.85",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "light house",
+		  "x" : "0.5",
+		  "y" : "0.85",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "sailing boat",
+		  "x" : "0.8",
+		  "y" : "0.85",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
       }
    ]
 }

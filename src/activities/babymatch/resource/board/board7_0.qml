@@ -22,50 +22,49 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Drag and Drop the items to make them match")
    property variant levels: [
       {
-          "pixmapfile" : "images/lamp.svg",
-          "x" : "0.2",
-          "y" : "0.8",
+          "pixmapfile" : "images/bell.svg",
+          "x" : "0.5",
+          "y" : "0.7",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/postpoint.svg",
-          "x" : "0.5",
-          "y" : "0.8",
+          "pixmapfile" : "images/lamp.svg",
+          "x" : "0.2",
+          "y" : "0.7",
           "height" : 0.25,
           "width" : 0.25
       },
       
       {
-          "pixmapfile" : "images/sailingboat.svg",
+          "pixmapfile" : "images/lifebuoy.svg",
           "x" : "0.8",
-          "y" : "0.8",
+          "y" : "0.7",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/light.svg",
+          "pixmapfile" : "images/sun.svg",
           "x" : "0.2",
-          "y" : "0.4",
+          "y" : "0.3",
           "type" : "SHAPE_BACKGROUND",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/postcard.svg",
+          "pixmapfile" : "images/sound.svg",
           "x" : "0.5",
-          "y" : "0.4",
+          "y" : "0.3",
           "type" : "SHAPE_BACKGROUND",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/fishingboat.svg",
+          "pixmapfile" : "images/umbrella.svg",
           "x" : "0.8",
-          "y" : "0.4",
+          "y" : "0.3",
           "type" : "SHAPE_BACKGROUND",
           "height" : 0.25,
           "width" : 0.25

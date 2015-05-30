@@ -22,53 +22,92 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Drag and Drop the items to make them match")
+   property string instruction: qsTr("Drag and Drop each item onto its name")
    property variant levels: [
       {
-          "pixmapfile" : "images/lamp.svg",
+          "pixmapfile" : "images/postpoint.svg",
           "x" : "0.2",
-          "y" : "0.8",
+          "y" : "0.25",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/postpoint.svg",
+          "pixmapfile" : "images/sailingboat.svg",
           "x" : "0.5",
-          "y" : "0.8",
+          "y" : "0.25",
           "height" : 0.25,
           "width" : 0.25
       },
       
       {
-          "pixmapfile" : "images/sailingboat.svg",
+          "pixmapfile" : "images/lamp.svg",
           "x" : "0.8",
-          "y" : "0.8",
-          "height" : 0.25,
-          "width" : 0.25
-      },
-      {
-          "pixmapfile" : "images/light.svg",
-          "x" : "0.2",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
+          "y" : "0.25",
           "height" : 0.25,
           "width" : 0.25
       },
       {
           "pixmapfile" : "images/postcard.svg",
-          "x" : "0.5",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
+          "x" : "0.2",
+          "y" : "0.7",
           "height" : 0.25,
           "width" : 0.25
       },
       {
           "pixmapfile" : "images/fishingboat.svg",
-          "x" : "0.8",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
+          "x" : "0.5",
+          "y" : "0.7",
           "height" : 0.25,
           "width" : 0.25
+      },
+      {
+          "pixmapfile" : "images/light.svg",
+          "x" : "0.8",
+          "y" : "0.7",
+          "height" : 0.25,
+          "width" : 0.25
+      },
+      {
+		  "text" : "mail box",
+		  "x" : "0.2",
+		  "y" : "0.4",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "sailing boat",
+		  "x" : "0.5",
+		  "y" : "0.4",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "lamp",
+		  "x" : "0.8",
+		  "y" : "0.4",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "postcard",
+		  "x" : "0.2",
+		  "y" : "0.85",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "fishing boat",
+		  "x" : "0.5",
+		  "y" : "0.85",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "bulb",
+		  "x" : "0.8",
+		  "y" : "0.85",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
       }
    ]
 }

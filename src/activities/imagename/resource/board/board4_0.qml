@@ -22,53 +22,91 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Drag and Drop the items to make them match")
    property variant levels: [
       {
-          "pixmapfile" : "images/lamp.svg",
+          "pixmapfile" : "images/apple.svg",
           "x" : "0.2",
-          "y" : "0.8",
+          "y" : "0.25",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/postpoint.svg",
+          "pixmapfile" : "images/tree.svg",
           "x" : "0.5",
-          "y" : "0.8",
+          "y" : "0.25",
           "height" : 0.25,
           "width" : 0.25
       },
       
       {
-          "pixmapfile" : "images/sailingboat.svg",
+          "pixmapfile" : "images/bicycle.svg",
           "x" : "0.8",
-          "y" : "0.8",
+          "y" : "0.25",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/light.svg",
+          "pixmapfile" : "images/car.svg",
           "x" : "0.2",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
+          "y" : "0.7",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/postcard.svg",
+          "pixmapfile" : "images/carrot.svg",
           "x" : "0.5",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
+          "y" : "0.7",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/fishingboat.svg",
+          "pixmapfile" : "images/rape.svg",
           "x" : "0.8",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
+          "y" : "0.7",
           "height" : 0.25,
           "width" : 0.25
+      },
+      {
+		  "text" : "apple",
+		  "x" : "0.2",
+		  "y" : "0.4",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "tree",
+		  "x" : "0.5",
+		  "y" : "0.4",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "bicycle",
+		  "x" : "0.8",
+		  "y" : "0.4",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "car",
+		  "x" : "0.2",
+		  "y" : "0.85",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "carrot",
+		  "x" : "0.5",
+		  "y" : "0.85",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "grater",
+		  "x" : "0.8",
+		  "y" : "0.85",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
       }
    ]
 }

@@ -56,9 +56,9 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel
-    var filename = url + "board" + "/" + "board" + currentLevel + "_" + currentSubLevel + ".json"
-    var json = items.file.read(filename)
-    var levelData = parseFromJson(json)
+    var filename = url + "board" + "/" + "board" + currentLevel + "_" + currentSubLevel + ".qml"
+    items.dataset.source = filename
+    var levelData = items.dataset.item
     
     items.availablePieces.model.clear()
     for(var i = 0 ; i < spots.length ; ++ i) 
@@ -171,20 +171,6 @@ function initLevel() {
     //Initialize displayedGroup variable which is used for showing navigation bars
     for(var i=0;i<items.availablePieces.view.nbDisplayedGroup;++i)
         items.availablePieces.view.displayedGroup[i] = true
-}
-
-function parseFromJson(json)
-{
-    var doc;
-    try {
-        doc = JSON.parse(json);
-        if (undefined === doc.levels)
-            return null;
-    } catch(e) {
-        console.error("babymatch: Error parsing JSON: " + e)
-        return null;
-    }
-    return doc;
 }
 
 function nextSubLevel() {

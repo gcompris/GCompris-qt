@@ -22,53 +22,91 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Drag and Drop the items to make them match")
    property variant levels: [
       {
-          "pixmapfile" : "images/lamp.svg",
+          "pixmapfile" : "images/bottle.svg",
           "x" : "0.2",
-          "y" : "0.8",
+          "y" : "0.25",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/postpoint.svg",
+          "pixmapfile" : "images/glass.svg",
           "x" : "0.5",
-          "y" : "0.8",
+          "y" : "0.25",
           "height" : 0.25,
           "width" : 0.25
       },
       
       {
-          "pixmapfile" : "images/sailingboat.svg",
+          "pixmapfile" : "images/egg.svg",
           "x" : "0.8",
-          "y" : "0.8",
+          "y" : "0.25",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/light.svg",
+          "pixmapfile" : "images/eggpot.svg",
           "x" : "0.2",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
+          "y" : "0.7",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/postcard.svg",
+          "pixmapfile" : "images/flower.svg",
           "x" : "0.5",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
+          "y" : "0.7",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/fishingboat.svg",
+          "pixmapfile" : "images/flowerpot.svg",
           "x" : "0.8",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
+          "y" : "0.7",
           "height" : 0.25,
           "width" : 0.25
+      },
+      {
+		  "text" : "bottle",
+		  "x" : "0.2",
+		  "y" : "0.4",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "glass",
+		  "x" : "0.5",
+		  "y" : "0.4",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "egg",
+		  "x" : "0.8",
+		  "y" : "0.4",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "eggcup",
+		  "x" : "0.2",
+		  "y" : "0.85",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "flower",
+		  "x" : "0.5",
+		  "y" : "0.85",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "vase",
+		  "x" : "0.8",
+		  "y" : "0.85",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
       }
    ]
 }

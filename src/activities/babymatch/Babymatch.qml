@@ -68,6 +68,12 @@ ActivityBase {
             property alias instruction: instruction
             property alias toolTip: toolTip
             property alias score: score
+            property alias dataset: dataset
+        }
+
+        Loader {
+            id: dataset
+            asynchronous: false
         }
 
         onStart: { Activity.start(items, url, levelCount, subLevelCount, answerGlow, displayDropCircle) }

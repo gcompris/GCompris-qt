@@ -22,53 +22,49 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Drag and Drop the items to make them match")
+   property string instruction: qsTr("Cars")
    property variant levels: [
       {
-          "pixmapfile" : "images/lamp.svg",
+          "pixmapfile" : "images/bolle1878.svg",
           "x" : "0.2",
-          "y" : "0.8",
-          "height" : 0.25,
-          "width" : 0.25
+          "y" : "0.55",
+          "width" : 0.4,
+          "height" : 0.4
       },
       {
-          "pixmapfile" : "images/postpoint.svg",
+          "pixmapfile" : "images/fardier.png",
           "x" : "0.5",
-          "y" : "0.8",
-          "height" : 0.25,
-          "width" : 0.25
-      },
-      
-      {
-          "pixmapfile" : "images/sailingboat.svg",
-          "x" : "0.8",
-          "y" : "0.8",
-          "height" : 0.25,
-          "width" : 0.25
+          "y" : "0.9",
+          "width" : 0.4,
+          "height" : 0.2
       },
       {
-          "pixmapfile" : "images/light.svg",
-          "x" : "0.2",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile" : "images/benz1885.png",
+          "x" : "0.75",
+          "y" : "0.55",
+          "width" : 0.4,
+          "height" : 0.4
       },
       {
-          "pixmapfile" : "images/postcard.svg",
-          "x" : "0.5",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
-          "height" : 0.25,
-          "width" : 0.25
+		  "text" : "1878 Léon Bollé's La Mancelle",
+		  "x" : "0.25",
+		  "y" : 0.2,
+		  "width" : "0.4",
+		  "type" : "DisplayText"
       },
       {
-          "pixmapfile" : "images/fishingboat.svg",
-          "x" : "0.8",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
-          "height" : 0.25,
-          "width" : 0.25
+		  "text" : "1769 Cugnot's fardier",
+		  "x" : "0.5",
+		  "y" : 0.75,
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "1885 The first petrol car by Benz",
+		  "x" : "0.75",
+		  "y" : 0.21,
+		  "width" : "0.4",
+		  "type" : "DisplayText"
       }
    ]
 }

@@ -22,19 +22,18 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Drag and Drop the items to make them match")
    property variant levels: [
       {
-          "pixmapfile" : "images/lamp.svg",
+          "pixmapfile" : "images/castle.svg",
           "x" : "0.2",
-          "y" : "0.8",
+          "y" : "0.25",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/postpoint.svg",
+          "pixmapfile" : "images/crown.svg",
           "x" : "0.5",
-          "y" : "0.8",
+          "y" : "0.25",
           "height" : 0.25,
           "width" : 0.25
       },
@@ -42,33 +41,72 @@ QtObject {
       {
           "pixmapfile" : "images/sailingboat.svg",
           "x" : "0.8",
-          "y" : "0.8",
+          "y" : "0.25",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/light.svg",
+          "pixmapfile" : "images/windflag5.svg",
           "x" : "0.2",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
+          "y" : "0.7",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/postcard.svg",
+          "pixmapfile" : "images/raquette.svg",
           "x" : "0.5",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
+          "y" : "0.7",
           "height" : 0.25,
           "width" : 0.25
       },
       {
-          "pixmapfile" : "images/fishingboat.svg",
+          "pixmapfile" : "images/football.svg",
           "x" : "0.8",
-          "y" : "0.4",
-          "type" : "SHAPE_BACKGROUND",
+          "y" : "0.7",
           "height" : 0.25,
           "width" : 0.25
+      },
+      {
+		  "text" : "castle",
+		  "x" : "0.2",
+		  "y" : "0.4",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "crown",
+		  "x" : "0.5",
+		  "y" : "0.4",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "sailing boat",
+		  "x" : "0.8",
+		  "y" : "0.4",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "flag",
+		  "x" : "0.2",
+		  "y" : "0.85",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "racket",
+		  "x" : "0.5",
+		  "y" : "0.85",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "ball",
+		  "x" : "0.8",
+		  "y" : "0.85",
+		  "width" : "0.4",
+		  "type" : "DisplayText"
       }
    ]
 }
