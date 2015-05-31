@@ -98,12 +98,13 @@ function initLevel() {
         glowEnabled = levelData.glow
     
     if(levelData.instruction == undefined)
-        items.instruction.visible = false
+        items.instruction.opacity = 0
     else if(!displayDropCircle) {
+        items.instruction.opacity = 0
         items.instruction.text = levelData.instruction
     }
     else {
-        items.instruction.visible = true
+        items.instruction.opacity = 1
         items.instruction.text = levelData.instruction
     }
 	

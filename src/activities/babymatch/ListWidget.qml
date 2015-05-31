@@ -158,9 +158,9 @@ Item {
             MouseArea {
                 anchors.fill: parent
                 hoverEnabled: true
-                onEntered: {backgroundImage.displayTextZ = 3}
+                onEntered: instruction.opacity = 1
                 onClicked: {view.checkAnswer()}
-                onExited: {backgroundImage.displayTextZ = 1}
+                onExited: instruction.opacity = 0
             }
         }
                                      

@@ -229,7 +229,7 @@ ActivityBase {
                 fillMode: Image.PreserveAspectFit
                 property double ratio: sourceSize.width / sourceSize.height
                 property double gridRatio: grid.width / grid.height
-                property int displayTextZ: 1
+                property alias instruction: instruction
                 source: ""
                 z: 2
                 width: source == "" ? grid.width : (ratio > gridRatio ? grid.width : grid.height * ratio)
@@ -265,7 +265,13 @@ ActivityBase {
 						}
 					}
 				}
-            }            
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: (instruction.opacity === 0 ?
+                                instruction.opacity = 1 : instruction.opacity = 0)
+                }
+            }
             
            Rectangle {
 				id: instruction
@@ -273,7 +279,6 @@ ActivityBase {
                 opacity: 0.8
                 radius: 10
                 z: 3
-                visible: backgroundImage.displayTextZ == 3
                 border.width: 2
                 border.color: "black"
                 gradient: Gradient {
@@ -282,7 +287,9 @@ ActivityBase {
                     GradientStop { position: 1.0; color: "#AAA" }
                 }
                 property alias text: instructionTxt.text
-            }
+
+                Behavior on opacity { PropertyAnimation { duration: 200 } }
+           }
             
             GCText {
                 id: instructionTxt
@@ -291,7 +298,7 @@ ActivityBase {
                     topMargin: -10
                     horizontalCenter: grid.horizontalCenter
                 }
-                visible: instruction.visible
+                opacity: instruction.opacity
                 z: instruction.z
                 fontSize: regularSize
                 color: "white"

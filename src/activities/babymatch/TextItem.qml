@@ -25,7 +25,7 @@ import "babymatch.js" as Activity
 
 Item {
     id: displayText
-    z: parent.displayTextZ
+    opacity: parent.instruction.opacity
     
     property double posX
     property double posY
