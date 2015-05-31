@@ -22,7 +22,7 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Districts of south Italia")
+   property string instruction: qsTr("Districts of Southern Italy")
    property variant levels: [
       {
          "pixmapfile" : "italy/south/background.png",

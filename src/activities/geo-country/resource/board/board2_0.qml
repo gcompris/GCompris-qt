@@ -22,7 +22,7 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Disctict of Deutschland")
+   property string instruction: qsTr("Districts of Germany")
    property variant levels: [
       {
          "pixmapfile" : "germany/back.png",
