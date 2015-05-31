@@ -25,60 +25,60 @@ QtObject {
    property string instruction: qsTr("Tux and the apple tree")
    property variant levels: [
       {
-          "pixmapfile" : "images/chronos-tuxtree3.svg",
-          "x" : "0.25",
-          "y" : "0.7",
-          "width" : 0.4,
-          "height" : 0.4
+          "pixmapfile": "images/chronos-tuxtree3.svg",
+          "x": "0.25",
+          "y": "0.7",
+          "width": 0.4,
+          "height": 0.4
       },
       {
-          "pixmapfile" : "images/chronos-tuxtree2.svg",
-          "x" : "0.75",
-          "y" : "0.25",
-          "width" : 0.4,
-          "height" : 0.4
+          "pixmapfile": "images/chronos-tuxtree2.svg",
+          "x": "0.75",
+          "y": "0.25",
+          "width": 0.4,
+          "height": 0.4
       },
       {
-          "pixmapfile" : "images/chronos-tuxtree4.svg",
-          "x" : "0.75",
-          "y" : "0.7",
-          "width" : 0.4,
-          "height" : 0.4
+          "pixmapfile": "images/chronos-tuxtree4.svg",
+          "x": "0.75",
+          "y": "0.7",
+          "width": 0.4,
+          "height": 0.4
       },
       {
-          "pixmapfile" : "images/chronos-tuxtree1.svg",
-          "x" : "0.25",
-          "y" : "0.25",
-          "width" : 0.4,
-          "height" : 0.4
+          "pixmapfile": "images/chronos-tuxtree1.svg",
+          "x": "0.25",
+          "y": "0.25",
+          "width": 0.4,
+          "height": 0.4
       },
       {
-		  "text" : "1",
-		  "x" : "0.25",
-		  "y" : 0.25,
-		  "width" : "0.2",
-		  "type" : "DisplayText"
+		  "text": qsTr("1"),
+		  "x": "0.25",
+		  "y": 0.25,
+		  "width": "0.2",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "2",
-		  "x" : "0.75",
-		  "y" : 0.25,
-		  "width" : "0.2",
-		  "type" : "DisplayText"
+		  "text": qsTr("2"),
+		  "x": "0.75",
+		  "y": 0.25,
+		  "width": "0.2",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "3",
-		  "x" : "0.25",
-		  "y" : 0.7,
-		  "width" : "0.2",
-		  "type" : "DisplayText"
+		  "text": qsTr("3"),
+		  "x": "0.25",
+		  "y": 0.7,
+		  "width": "0.2",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "4",
-		  "x" : "0.75",
-		  "y" : 0.7,
-		  "width" : "0.2",
-		  "type" : "DisplayText"
+		  "text": qsTr("4"),
+		  "x": "0.75",
+		  "y": 0.7,
+		  "width": "0.2",
+		  "type": "DisplayText"
       }
    ]
 }

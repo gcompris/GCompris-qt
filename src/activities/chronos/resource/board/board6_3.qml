@@ -25,46 +25,46 @@ QtObject {
    property string instruction: qsTr("Cars")
    property variant levels: [
       {
-          "pixmapfile" : "images/renault1899.png",
-          "x" : "0.2",
-          "y" : "0.55",
-          "width" : 0.4,
-          "height" : 0.4
+          "pixmapfile": "images/renault1899.png",
+          "x": "0.2",
+          "y": "0.55",
+          "width": 0.4,
+          "height": 0.4
       },
       {
-          "pixmapfile" : "images/lancia1923.png",
-          "x" : "0.5",
-          "y" : "0.9",
-          "width" : 0.4,
-          "height" : 0.2
+          "pixmapfile": "images/lancia1923.png",
+          "x": "0.5",
+          "y": "0.9",
+          "width": 0.4,
+          "height": 0.2
       },
       {
-          "pixmapfile" : "images/1955ds19.png",
-          "x" : "0.75",
-          "y" : "0.55",
-          "width" : 0.4,
-          "height" : 0.4
+          "pixmapfile": "images/1955ds19.png",
+          "x": "0.75",
+          "y": "0.55",
+          "width": 0.4,
+          "height": 0.4
       },
       {
-		  "text" : "1899 Renault voiturette",
-		  "x" : "0.25",
-		  "y" : 0.2,
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("1899 Renault voiturette"),
+		  "x": "0.25",
+		  "y": 0.2,
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "1923 Lancia Lambda",
-		  "x" : "0.5",
-		  "y" : 0.75,
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("1923 Lancia Lambda"),
+		  "x": "0.5",
+		  "y": 0.75,
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "1955 Citroën DS 19",
-		  "x" : "0.75",
-		  "y" : 0.21,
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("1955 Citroën DS 19"),
+		  "x": "0.75",
+		  "y": 0.21,
+		  "width": "0.4",
+		  "type": "DisplayText"
       }
    ]
 }

@@ -25,44 +25,44 @@ QtObject {
    property string instruction: qsTr("Continents")
    property variant levels: [
       {
-         "pixmapfile" : "continents/back.png",
-         "type" : "SHAPE_BACKGROUND_IMAGE"
+         "pixmapfile": "continents/back.png",
+         "type": "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "continents/oceania.png",
-         "toolTipText" : "Oceania",
-         "x" : "0.892",
-         "y" : "0.822"
+         "pixmapfile": "continents/oceania.png",
+         "toolTipText": qsTr("Oceania"),
+         "x": "0.892",
+         "y": "0.822"
       },
       {
-         "pixmapfile" : "continents/europa.png",
-         "toolTipText" : "Europe",
-         "x" : "0.507",
-         "y" : "0.257"
+         "pixmapfile": "continents/europa.png",
+         "toolTipText": qsTr("Europe"),
+         "x": "0.507",
+         "y": "0.257"
       },
       {
-         "pixmapfile" : "continents/asia.png",
-         "toolTipText" : "Asia",
-         "x" : "0.747",
-         "y" : "0.386"
+         "pixmapfile": "continents/asia.png",
+         "toolTipText": qsTr("Asia"),
+         "x": "0.747",
+         "y": "0.386"
       },
       {
-         "pixmapfile" : "continents/antarctica.png",
-         "toolTipText" : "Antarctica",
-         "x" : "0.42",
-         "y" : "0.979"
+         "pixmapfile": "continents/antarctica.png",
+         "toolTipText": qsTr("Antarctica"),
+         "x": "0.42",
+         "y": "0.979"
       },
       {
-         "pixmapfile" : "continents/america.png",
-         "toolTipText" : "America",
-         "x" : "0.22",
-         "y" : "0.479"
+         "pixmapfile": "continents/america.png",
+         "toolTipText": qsTr("America"),
+         "x": "0.22",
+         "y": "0.479"
       },
       {
-         "pixmapfile" : "continents/africa.png",
-         "toolTipText" : "Africa",
-         "x" : "0.512",
-         "y" : "0.636"
+         "pixmapfile": "continents/africa.png",
+         "toolTipText": qsTr("Africa"),
+         "x": "0.512",
+         "y": "0.636"
       }
    ]
 }

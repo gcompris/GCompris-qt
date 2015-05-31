@@ -25,60 +25,60 @@ QtObject {
    property string instruction: qsTr("The 4 Seasons")
    property variant levels: [
       {
-          "pixmapfile" : "images/autumn.png",
-          "x" : "0.25",
-          "y" : "0.7",
-          "width" : 0.4,
-          "height" : 0.4
+          "pixmapfile": "images/autumn.png",
+          "x": "0.25",
+          "y": "0.7",
+          "width": 0.4,
+          "height": 0.4
       },
       {
-          "pixmapfile" : "images/summer.png",
-          "x" : "0.75",
-          "y" : "0.25",
-          "width" : 0.4,
-          "height" : 0.4
+          "pixmapfile": "images/summer.png",
+          "x": "0.75",
+          "y": "0.25",
+          "width": 0.4,
+          "height": 0.4
       },
       {
-          "pixmapfile" : "images/spring.png",
-          "x" : "0.25",
-          "y" : "0.25",
-          "width" : 0.4,
-          "height" : 0.4
+          "pixmapfile": "images/spring.png",
+          "x": "0.25",
+          "y": "0.25",
+          "width": 0.4,
+          "height": 0.4
       },
       {
-          "pixmapfile" : "images/winter.png",
-          "x" : "0.75",
-          "y" : "0.7",
-          "width" : 0.4,
-          "height" : 0.4
+          "pixmapfile": "images/winter.png",
+          "x": "0.75",
+          "y": "0.7",
+          "width": 0.4,
+          "height": 0.4
       },
       {
-		  "text" : "Spring",
-		  "x" : "0.25",
-		  "y" : 0.25,
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("Spring"),
+		  "x": "0.25",
+		  "y": 0.25,
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "Summer",
-		  "x" : "0.75",
-		  "y" : 0.25,
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("Summer"),
+		  "x": "0.75",
+		  "y": 0.25,
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "Autumn",
-		  "x" : "0.25",
-		  "y" : 0.7,
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("Autumn"),
+		  "x": "0.25",
+		  "y": 0.7,
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "Winter",
-		  "x" : "0.75",
-		  "y" : 0.7,
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("Winter"),
+		  "x": "0.75",
+		  "y": 0.7,
+		  "width": "0.4",
+		  "type": "DisplayText"
       }
    ]
 }

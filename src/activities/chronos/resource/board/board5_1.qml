@@ -25,46 +25,46 @@ QtObject {
    property string instruction: qsTr("Transportation")
    property variant levels: [
       {
-          "pixmapfile" : "images/helico_cornu.png",
-          "x" : "0.75",
-          "y" : "0.55",
-          "width" : 0.4,
-          "height" : 0.4
+          "pixmapfile": "images/helico_cornu.png",
+          "x": "0.75",
+          "y": "0.55",
+          "width": 0.4,
+          "height": 0.4
       },
       {
-          "pixmapfile" : "images/Eole.svg",
-          "x" : "0.5",
-          "y" : "0.9",
-          "width" : 0.4,
-          "height" : 0.2
+          "pixmapfile": "images/Eole.svg",
+          "x": "0.5",
+          "y": "0.9",
+          "width": 0.4,
+          "height": 0.2
       },
       {
-          "pixmapfile" : "images/mongolfiere.png",
-          "x" : "0.2",
-          "y" : "0.55",
-          "width" : 0.4,
-          "height" : 0.4
+          "pixmapfile": "images/mongolfiere.png",
+          "x": "0.2",
+          "y": "0.55",
+          "width": 0.4,
+          "height": 0.4
       },
       {
-		  "text" : "1783 Montgolfier brothers' hot air balloon",
-		  "x" : "0.25",
-		  "y" : 0.2,
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("1783 Montgolfier brothers' hot air balloon"),
+		  "x": "0.25",
+		  "y": 0.2,
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "1880 Clement Ader's Eole",
-		  "x" : "0.5",
-		  "y" : 0.75,
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("1880 Clement Ader's Eole"),
+		  "x": "0.5",
+		  "y": 0.75,
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "1906 Paul Cornu First helicopter flight",
-		  "x" : "0.75",
-		  "y" : 0.21,
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("1906 Paul Cornu First helicopter flight"),
+		  "x": "0.75",
+		  "y": 0.21,
+		  "width": "0.4",
+		  "type": "DisplayText"
       }
    ]
 }

@@ -24,89 +24,89 @@ import QtQuick 2.0
 QtObject {
    property variant levels: [
       {
-          "pixmapfile" : "images/pencil.svg",
-          "x" : "0.2",
-          "y" : "0.25",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/pencil.svg",
+          "x": "0.2",
+          "y": "0.25",
+          "height": 0.25,
+          "width": 0.25
       },
       {
-          "pixmapfile" : "images/postcard.svg",
-          "x" : "0.5",
-          "y" : "0.25",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/postcard.svg",
+          "x": "0.5",
+          "y": "0.25",
+          "height": 0.25,
+          "width": 0.25
       },
       
       {
-          "pixmapfile" : "images/tree.svg",
-          "x" : "0.8",
-          "y" : "0.25",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/tree.svg",
+          "x": "0.8",
+          "y": "0.25",
+          "height": 0.25,
+          "width": 0.25
       },
       {
-          "pixmapfile" : "images/star.svg",
-          "x" : "0.2",
-          "y" : "0.7",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/star.svg",
+          "x": "0.2",
+          "y": "0.7",
+          "height": 0.25,
+          "width": 0.25
       },
       {
-          "pixmapfile" : "images/truck.svg",
-          "x" : "0.5",
-          "y" : "0.7",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/truck.svg",
+          "x": "0.5",
+          "y": "0.7",
+          "height": 0.25,
+          "width": 0.25
       },
       {
-          "pixmapfile" : "images/minivan.svg",
-          "x" : "0.8",
-          "y" : "0.7",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/minivan.svg",
+          "x": "0.8",
+          "y": "0.7",
+          "height": 0.25,
+          "width": 0.25
       },
       {
-		  "text" : "pencil",
-		  "x" : "0.2",
-		  "y" : "0.4",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("pencil"),
+		  "x": "0.2",
+		  "y": "0.4",
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "postcard",
-		  "x" : "0.5",
-		  "y" : "0.4",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("postcard"),
+		  "x": "0.5",
+		  "y": "0.4",
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "tree",
-		  "x" : "0.8",
-		  "y" : "0.4",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("tree"),
+		  "x": "0.8",
+		  "y": "0.4",
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "star",
-		  "x" : "0.2",
-		  "y" : "0.85",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("star"),
+		  "x": "0.2",
+		  "y": "0.85",
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "truck",
-		  "x" : "0.5",
-		  "y" : "0.85",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("truck"),
+		  "x": "0.5",
+		  "y": "0.85",
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "van",
-		  "x" : "0.8",
-		  "y" : "0.85",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("van"),
+		  "x": "0.8",
+		  "y": "0.85",
+		  "width": "0.4",
+		  "type": "DisplayText"
       }
    ]
 }

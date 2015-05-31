@@ -24,89 +24,89 @@ import QtQuick 2.0
 QtObject {
    property variant levels: [
       {
-          "pixmapfile" : "images/apple.svg",
-          "x" : "0.2",
-          "y" : "0.25",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/apple.svg",
+          "x": "0.2",
+          "y": "0.25",
+          "height": 0.25,
+          "width": 0.25
       },
       {
-          "pixmapfile" : "images/tree.svg",
-          "x" : "0.5",
-          "y" : "0.25",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/tree.svg",
+          "x": "0.5",
+          "y": "0.25",
+          "height": 0.25,
+          "width": 0.25
       },
       
       {
-          "pixmapfile" : "images/bicycle.svg",
-          "x" : "0.8",
-          "y" : "0.25",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/bicycle.svg",
+          "x": "0.8",
+          "y": "0.25",
+          "height": 0.25,
+          "width": 0.25
       },
       {
-          "pixmapfile" : "images/car.svg",
-          "x" : "0.2",
-          "y" : "0.7",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/car.svg",
+          "x": "0.2",
+          "y": "0.7",
+          "height": 0.25,
+          "width": 0.25
       },
       {
-          "pixmapfile" : "images/carrot.svg",
-          "x" : "0.5",
-          "y" : "0.7",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/carrot.svg",
+          "x": "0.5",
+          "y": "0.7",
+          "height": 0.25,
+          "width": 0.25
       },
       {
-          "pixmapfile" : "images/rape.svg",
-          "x" : "0.8",
-          "y" : "0.7",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/rape.svg",
+          "x": "0.8",
+          "y": "0.7",
+          "height": 0.25,
+          "width": 0.25
       },
       {
-		  "text" : "apple",
-		  "x" : "0.2",
-		  "y" : "0.4",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("apple"),
+		  "x": "0.2",
+		  "y": "0.4",
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "tree",
-		  "x" : "0.5",
-		  "y" : "0.4",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("tree"),
+		  "x": "0.5",
+		  "y": "0.4",
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "bicycle",
-		  "x" : "0.8",
-		  "y" : "0.4",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("bicycle"),
+		  "x": "0.8",
+		  "y": "0.4",
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "car",
-		  "x" : "0.2",
-		  "y" : "0.85",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("car"),
+		  "x": "0.2",
+		  "y": "0.85",
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "carrot",
-		  "x" : "0.5",
-		  "y" : "0.85",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("carrot"),
+		  "x": "0.5",
+		  "y": "0.85",
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "grater",
-		  "x" : "0.8",
-		  "y" : "0.85",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("grater"),
+		  "x": "0.8",
+		  "y": "0.85",
+		  "width": "0.4",
+		  "type": "DisplayText"
       }
    ]
 }

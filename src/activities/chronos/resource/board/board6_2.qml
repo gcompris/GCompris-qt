@@ -25,46 +25,46 @@ QtObject {
    property string instruction: qsTr("Cars")
    property variant levels: [
       {
-          "pixmapfile" : "images/bolle1878.svg",
-          "x" : "0.2",
-          "y" : "0.55",
-          "width" : 0.4,
-          "height" : 0.4
+          "pixmapfile": "images/bolle1878.svg",
+          "x": "0.2",
+          "y": "0.55",
+          "width": 0.4,
+          "height": 0.4
       },
       {
-          "pixmapfile" : "images/fardier.png",
-          "x" : "0.5",
-          "y" : "0.9",
-          "width" : 0.4,
-          "height" : 0.2
+          "pixmapfile": "images/fardier.png",
+          "x": "0.5",
+          "y": "0.9",
+          "width": 0.4,
+          "height": 0.2
       },
       {
-          "pixmapfile" : "images/benz1885.png",
-          "x" : "0.75",
-          "y" : "0.55",
-          "width" : 0.4,
-          "height" : 0.4
+          "pixmapfile": "images/benz1885.png",
+          "x": "0.75",
+          "y": "0.55",
+          "width": 0.4,
+          "height": 0.4
       },
       {
-		  "text" : "1878 Léon Bollé's La Mancelle",
-		  "x" : "0.25",
-		  "y" : 0.2,
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("1878 Léon Bollé's La Mancelle"),
+		  "x": "0.25",
+		  "y": 0.2,
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "1769 Cugnot's fardier",
-		  "x" : "0.5",
-		  "y" : 0.75,
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("1769 Cugnot's fardier"),
+		  "x": "0.5",
+		  "y": 0.75,
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "1885 The first petrol car by Benz",
-		  "x" : "0.75",
-		  "y" : 0.21,
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("1885 The first petrol car by Benz"),
+		  "x": "0.75",
+		  "y": 0.21,
+		  "width": "0.4",
+		  "type": "DisplayText"
       }
    ]
 }

@@ -24,89 +24,89 @@ import QtQuick 2.0
 QtObject {
    property variant levels: [
       {
-          "pixmapfile" : "images/tree.svg",
-          "x" : "0.2",
-          "y" : "0.25",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/tree.svg",
+          "x": "0.2",
+          "y": "0.25",
+          "height": 0.25,
+          "width": 0.25
       },
       {
-          "pixmapfile" : "images/postpoint.svg",
-          "x" : "0.5",
-          "y" : "0.25",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/postpoint.svg",
+          "x": "0.5",
+          "y": "0.25",
+          "height": 0.25,
+          "width": 0.25
       },
       
       {
-          "pixmapfile" : "images/sailingboat.svg",
-          "x" : "0.8",
-          "y" : "0.25",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/sailingboat.svg",
+          "x": "0.8",
+          "y": "0.25",
+          "height": 0.25,
+          "width": 0.25
       },
       {
-          "pixmapfile" : "images/light.svg",
-          "x" : "0.2",
-          "y" : "0.7",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/light.svg",
+          "x": "0.2",
+          "y": "0.7",
+          "height": 0.25,
+          "width": 0.25
       },
       {
-          "pixmapfile" : "images/bottle.svg",
-          "x" : "0.5",
-          "y" : "0.7",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/bottle.svg",
+          "x": "0.5",
+          "y": "0.7",
+          "height": 0.25,
+          "width": 0.25
       },
       {
-          "pixmapfile" : "images/flower.svg",
-          "x" : "0.8",
-          "y" : "0.7",
-          "height" : 0.25,
-          "width" : 0.25
+          "pixmapfile": "images/flower.svg",
+          "x": "0.8",
+          "y": "0.7",
+          "height": 0.25,
+          "width": 0.25
       },
       {
-		  "text" : "tree",
-		  "x" : "0.2",
-		  "y" : "0.4",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("tree"),
+		  "x": "0.2",
+		  "y": "0.4",
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "mail box",
-		  "x" : "0.5",
-		  "y" : "0.4",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("mail box"),
+		  "x": "0.5",
+		  "y": "0.4",
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "sailing boat",
-		  "x" : "0.8",
-		  "y" : "0.4",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("sailing boat"),
+		  "x": "0.8",
+		  "y": "0.4",
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "bulb",
-		  "x" : "0.2",
-		  "y" : "0.85",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("bulb"),
+		  "x": "0.2",
+		  "y": "0.85",
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "bottle",
-		  "x" : "0.5",
-		  "y" : "0.85",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("bottle"),
+		  "x": "0.5",
+		  "y": "0.85",
+		  "width": "0.4",
+		  "type": "DisplayText"
       },
       {
-		  "text" : "flower",
-		  "x" : "0.8",
-		  "y" : "0.85",
-		  "width" : "0.4",
-		  "type" : "DisplayText"
+		  "text": qsTr("flower"),
+		  "x": "0.8",
+		  "y": "0.85",
+		  "width": "0.4",
+		  "type": "DisplayText"
       }
    ]
 }
