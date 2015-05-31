@@ -267,7 +267,7 @@ ActivityBase {
 
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: (instruction.opacity === 0 ?
+                    onClicked: (instruction.opacity === 0 && instruction.text != "" ?
                                 instruction.opacity = 1 : instruction.opacity = 0)
                 }
             }
