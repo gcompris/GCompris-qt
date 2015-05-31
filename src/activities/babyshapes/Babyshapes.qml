@@ -31,5 +31,4 @@ Babymatch {
 
     url: "qrc:/gcompris/src/activities/babyshapes/resource/"
     levelCount: 7
-    subLevelCount: 0
 }

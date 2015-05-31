@@ -31,5 +31,4 @@ Babymatch {
 
     url: "qrc:/gcompris/src/activities/chronos/resource/"
     levelCount: 4
-    subLevelCount: 2
 }

@@ -31,6 +31,5 @@ Babymatch {
 
     url: "qrc:/gcompris/src/activities/geo-country/resource/"
     levelCount: 15
-    subLevelCount: 0
     answerGlow: false
 }

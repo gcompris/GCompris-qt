@@ -30,7 +30,6 @@ ActivityBase {
 
     property string url: "qrc:/gcompris/src/activities/babymatch/resource/"
     property int levelCount: 7
-    property int subLevelCount: 0
     property bool answerGlow: true	//For highlighting the answers
     property bool displayDropCircle: true	//For displaying drop circles
 
@@ -76,7 +75,7 @@ ActivityBase {
             asynchronous: false
         }
 
-        onStart: { Activity.start(items, url, levelCount, subLevelCount, answerGlow, displayDropCircle) }
+        onStart: { Activity.start(items, url, levelCount, answerGlow, displayDropCircle) }
         onStop: { Activity.stop() }
 
         DialogHelp {

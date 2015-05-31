@@ -26,7 +26,6 @@ var currentLevel = 1
 var currentSubLevel = 0
 var numberOfLevel
 var numberOfSubLevel
-var numberOfSubLevelDefault
 var items
 var url
 var glowEnabled
@@ -35,15 +34,15 @@ var spots = []
 var showText = []
 var displayDropCircle
 
-function start(items_, url_, levelCount_, subLevelCount_, answerGlow_, displayDropCircle_) {
+function start(items_, url_, levelCount_, answerGlow_, displayDropCircle_) {
     items = items_
     url = url_
     numberOfLevel = levelCount_
-    numberOfSubLevelDefault = subLevelCount_
     glowEnabledDefault = answerGlow_
     displayDropCircle = displayDropCircle_
     currentLevel = 1
     currentSubLevel = 0
+    numberOfSubLevel = 0
     spots = []
     showText = []
     initLevel()
@@ -86,8 +85,6 @@ function initLevel() {
     
     if(currentSubLevel == 0 && levelData.numberOfSubLevel != undefined)
         numberOfSubLevel = levelData.numberOfSubLevel
-    else if(currentSubLevel == 0)
-        numberOfSubLevel = numberOfSubLevelDefault
         
     items.score.currentSubLevel = currentSubLevel + 1
     items.score.numberOfSubLevels = numberOfSubLevel + 1
