@@ -23,7 +23,7 @@ import QtQuick 2.0
 
 QtObject {
    property string instruction: qsTr("Drag and Drop the items to make them match")
-   property variant levels: [
+   property variant levels : [
       {
           "pixmapfile" : "images/lamp.svg",
           "x" : "0.2",
