@@ -175,6 +175,7 @@ function initLevel() {
 function nextSubLevel() {
 	if(numberOfSubLevel < ++currentSubLevel) {
         currentSubLevel = 0
+        numberOfSubLevel = 0
         nextLevel()
     }
     else
@@ -183,6 +184,7 @@ function nextSubLevel() {
 
 function nextLevel() {
     currentSubLevel = 0
+    numberOfSubLevel = 0
     if(numberOfLevel < ++currentLevel) {
         currentLevel = 1
     }
@@ -191,6 +193,7 @@ function nextLevel() {
 
 function previousLevel() {
     currentSubLevel = 0
+    numberOfSubLevel = 0
     if(--currentLevel < 1) {
         currentLevel = numberOfLevel
     }
