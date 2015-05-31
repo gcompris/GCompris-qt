@@ -22,62 +22,42 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("The 4 Seasons")
+   property int numberOfSubLevel: 4
+   property string instruction: qsTr("Place each image in the order and on the date it was invented.")
    property variant levels: [
       {
-          "pixmapfile" : "images/autumn.png",
+          "pixmapfile" : "images/fardier.png",
+          "x" : "0.7",
+          "y" : "0.8",
+          "width" : 0.5,
+          "height" : 0.4
+      },
+      {
+          "pixmapfile" : "images/st_rocket.png",
           "x" : "0.25",
-          "y" : "0.7",
-          "width" : 0.4,
+          "y" : "0.55",
+          "width" : 0.5,
           "height" : 0.4
       },
       {
-          "pixmapfile" : "images/summer.png",
-          "x" : "0.75",
-          "y" : "0.25",
-          "width" : 0.4,
-          "height" : 0.4
-      },
-      {
-          "pixmapfile" : "images/spring.png",
-          "x" : "0.25",
-          "y" : "0.25",
-          "width" : 0.4,
-          "height" : 0.4
-      },
-      {
-          "pixmapfile" : "images/winter.png",
-          "x" : "0.75",
-          "y" : "0.7",
-          "width" : 0.4,
-          "height" : 0.4
-      },
-      {
-		  "text" : "Spring",
-		  "x" : "0.25",
-		  "y" : 0.25,
+		  "text" : "1829 Stephenson's Rocket Steam locomotive",
+		  "x" : "0.24",
+		  "y" : 0.29,
 		  "width" : "0.4",
 		  "type" : "DisplayText"
       },
       {
-		  "text" : "Summer",
+		  "text" : "1769 Cugnot's fardier",
 		  "x" : "0.75",
-		  "y" : 0.25,
+		  "y" : 0.59,
 		  "width" : "0.4",
 		  "type" : "DisplayText"
       },
       {
-		  "text" : "Autumn",
-		  "x" : "0.25",
-		  "y" : 0.7,
-		  "width" : "0.4",
-		  "type" : "DisplayText"
-      },
-      {
-		  "text" : "Winter",
-		  "x" : "0.75",
-		  "y" : 0.7,
-		  "width" : "0.4",
+		  "text" : "Transportation",
+		  "x" : "0.8",
+		  "y" : 0.3,
+		  "width" : "0.3",
 		  "type" : "DisplayText"
       }
    ]

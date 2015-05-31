@@ -22,63 +22,62 @@
 import QtQuick 2.0
 
 QtObject {
-   property int numberOfSubLevel: 0
-   property string instruction: qsTr("Tux and the apple tree")
+   property string instruction: qsTr("The 4 Seasons")
    property variant levels: [
       {
-          "pixmapfile" : "images/chronos-tuxtree3.svg",
+          "pixmapfile" : "images/autumn.png",
           "x" : "0.25",
           "y" : "0.7",
           "width" : 0.4,
           "height" : 0.4
       },
       {
-          "pixmapfile" : "images/chronos-tuxtree2.svg",
+          "pixmapfile" : "images/summer.png",
           "x" : "0.75",
           "y" : "0.25",
           "width" : 0.4,
           "height" : 0.4
       },
       {
-          "pixmapfile" : "images/chronos-tuxtree4.svg",
-          "x" : "0.75",
-          "y" : "0.7",
-          "width" : 0.4,
-          "height" : 0.4
-      },
-      {
-          "pixmapfile" : "images/chronos-tuxtree1.svg",
+          "pixmapfile" : "images/spring.png",
           "x" : "0.25",
           "y" : "0.25",
           "width" : 0.4,
           "height" : 0.4
       },
       {
-		  "text" : "1",
+          "pixmapfile" : "images/winter.png",
+          "x" : "0.75",
+          "y" : "0.7",
+          "width" : 0.4,
+          "height" : 0.4
+      },
+      {
+		  "text" : "Spring",
 		  "x" : "0.25",
 		  "y" : 0.25,
-		  "width" : "0.2",
+		  "width" : "0.4",
 		  "type" : "DisplayText"
       },
       {
-		  "text" : "2",
+		  "text" : "Summer",
 		  "x" : "0.75",
 		  "y" : 0.25,
-		  "width" : "0.2",
+		  "width" : "0.4",
 		  "type" : "DisplayText"
       },
       {
-		  "text" : "3",
+		  "text" : "Autumn",
 		  "x" : "0.25",
 		  "y" : 0.7,
-		  "width" : "0.2",
+		  "width" : "0.4",
 		  "type" : "DisplayText"
       },
       {
-		  "text" : "4",
+		  "text" : "Winter",
 		  "x" : "0.75",
 		  "y" : 0.7,
-		  "width" : "0.2",
+		  "width" : "0.4",
 		  "type" : "DisplayText"
       }
    ]

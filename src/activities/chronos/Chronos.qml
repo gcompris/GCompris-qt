@@ -30,5 +30,5 @@ Babymatch {
     onStop: {}
 
     url: "qrc:/gcompris/src/activities/chronos/resource/"
-    levelCount: 4
+    levelCount: 6
 }

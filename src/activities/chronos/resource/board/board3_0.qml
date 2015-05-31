@@ -22,42 +22,62 @@
 import QtQuick 2.0
 
 QtObject {
-   property int numberOfSubLevel: 4
-   property string instruction: qsTr("Place each image in the order and on the date it was invented.")
+   property string instruction: qsTr("Gardening")
    property variant levels: [
       {
-          "pixmapfile" : "images/fardier.png",
-          "x" : "0.7",
-          "y" : "0.8",
-          "width" : 0.5,
-          "height" : 0.4
-      },
-      {
-          "pixmapfile" : "images/st_rocket.png",
+          "pixmapfile" : "images/garden1.png",
           "x" : "0.25",
-          "y" : "0.55",
-          "width" : 0.5,
+          "y" : "0.25",
+          "width" : 0.4,
           "height" : 0.4
       },
       {
-		  "text" : "1829 Stephenson's Rocket Steam locomotive",
-		  "x" : "0.24",
-		  "y" : 0.29,
-		  "width" : "0.4",
+          "pixmapfile" : "images/garden4.png",
+          "x" : "0.75",
+          "y" : "0.7",
+          "width" : 0.4,
+          "height" : 0.4
+      },
+      {
+          "pixmapfile" : "images/garden3.png",
+          "x" : "0.25",
+          "y" : "0.7",
+          "width" : 0.4,
+          "height" : 0.4
+      },
+      {
+          "pixmapfile" : "images/garden2.png",
+          "x" : "0.75",
+          "y" : "0.25",
+          "width" : 0.4,
+          "height" : 0.4
+      },
+      {
+		  "text" : "1",
+		  "x" : "0.25",
+		  "y" : 0.25,
+		  "width" : "0.2",
 		  "type" : "DisplayText"
       },
       {
-		  "text" : "1769 Cugnot's fardier",
+		  "text" : "2",
 		  "x" : "0.75",
-		  "y" : 0.59,
-		  "width" : "0.4",
+		  "y" : 0.25,
+		  "width" : "0.2",
 		  "type" : "DisplayText"
       },
       {
-		  "text" : "Transportation",
-		  "x" : "0.8",
-		  "y" : 0.3,
-		  "width" : "0.3",
+		  "text" : "3",
+		  "x" : "0.25",
+		  "y" : 0.7,
+		  "width" : "0.2",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "4",
+		  "x" : "0.75",
+		  "y" : 0.7,
+		  "width" : "0.2",
 		  "type" : "DisplayText"
       }
    ]

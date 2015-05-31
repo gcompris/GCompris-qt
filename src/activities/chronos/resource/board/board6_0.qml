@@ -22,62 +22,49 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Gardening")
+   property int numberOfSubLevel: 3
+   property string instruction: qsTr("Aviation")
    property variant levels: [
       {
-          "pixmapfile" : "images/garden1.png",
-          "x" : "0.25",
-          "y" : "0.25",
+          "pixmapfile" : "images/Eole.svg",
+          "x" : "0.2",
+          "y" : "0.55",
           "width" : 0.4,
           "height" : 0.4
       },
       {
-          "pixmapfile" : "images/garden4.png",
+          "pixmapfile" : "images/wright_flyer.png",
+          "x" : "0.5",
+          "y" : "0.9",
+          "width" : 0.4,
+          "height" : 0.2
+      },
+      {
+          "pixmapfile" : "images/bleriot.png",
           "x" : "0.75",
-          "y" : "0.7",
+          "y" : "0.55",
           "width" : 0.4,
           "height" : 0.4
       },
       {
-          "pixmapfile" : "images/garden3.png",
-          "x" : "0.25",
-          "y" : "0.7",
-          "width" : 0.4,
-          "height" : 0.4
-      },
-      {
-          "pixmapfile" : "images/garden2.png",
-          "x" : "0.75",
-          "y" : "0.25",
-          "width" : 0.4,
-          "height" : 0.4
-      },
-      {
-		  "text" : "1",
+		  "text" : "1880 Clement Ader's Eole",
 		  "x" : "0.25",
-		  "y" : 0.25,
-		  "width" : "0.2",
+		  "y" : 0.2,
+		  "width" : "0.4",
 		  "type" : "DisplayText"
       },
       {
-		  "text" : "2",
+		  "text" : "1903 The Wright brothers' Flyer III",
+		  "x" : "0.5",
+		  "y" : 0.75,
+		  "width" : "0.4",
+		  "type" : "DisplayText"
+      },
+      {
+		  "text" : "1909 Louis Bleriot crosses the English Channel",
 		  "x" : "0.75",
-		  "y" : 0.25,
-		  "width" : "0.2",
-		  "type" : "DisplayText"
-      },
-      {
-		  "text" : "3",
-		  "x" : "0.25",
-		  "y" : 0.7,
-		  "width" : "0.2",
-		  "type" : "DisplayText"
-      },
-      {
-		  "text" : "4",
-		  "x" : "0.75",
-		  "y" : 0.7,
-		  "width" : "0.2",
+		  "y" : 0.21,
+		  "width" : "0.4",
 		  "type" : "DisplayText"
       }
    ]

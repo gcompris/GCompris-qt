@@ -23,7 +23,6 @@ import QtQuick 2.0
 
 QtObject {
    property string instruction: qsTr("Moonwalker")
-   property int numberOfSubLevel: 2
    property variant levels: [
       {
           "pixmapfile" : "images/bg.jpg",
