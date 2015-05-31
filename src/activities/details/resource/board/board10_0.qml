@@ -22,27 +22,22 @@
 import QtQuick 2.0
 
 QtObject {
+   property string instruction: qsTr("Eilean Donan castle")
    property variant levels: [
       {
-         "pixmapfile" : "image/NDP_background.jpg",
+         "pixmapfile" : "image/EilanDonanCastle_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/NDP_0.png",
-         "x" : "0.508",
-         "y" : "0.65",
+         "pixmapfile" : "image/EilanDonanCastle_0.png",
+         "x" : "0.566",
+         "y" : "0.327",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/NDP_1.png",
-         "x" : "0.499",
-         "y" : "0.357",
-         "dropAreaSize" : "8"
-      },
-      {
-         "pixmapfile" : "image/NDP_2.png",
-         "x" : "0.286",
-         "y" : "0.888",
+         "pixmapfile" : "image/EilanDonanCastle_1.png",
+         "x" : "0.825",
+         "y" : "0.174",
          "dropAreaSize" : "8"
       }
    ]

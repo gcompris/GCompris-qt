@@ -286,6 +286,7 @@ ActivityBase {
                     GradientStop { position: 0.9; color: "#666" }
                     GradientStop { position: 1.0; color: "#AAA" }
                 }
+                visible: instructionTxt.text
                 property alias text: instructionTxt.text
 
                 Behavior on opacity { PropertyAnimation { duration: 200 } }

@@ -22,22 +22,28 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Vincent van Gogh, The Bridge of Langlois at Arles with a lady with umbrella - 1888")
+   property string instruction: qsTr("Notre Dame de Paris cathedral on the Île de la Cité island in Paris, France.")
    property variant levels: [
       {
-         "pixmapfile" : "image/VincentVanGoghBridge_background.jpg",
+         "pixmapfile" : "image/NDP_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/VincentVanGoghBridge_0.png",
-         "x" : "0.56",
-         "y" : "0.536",
+         "pixmapfile" : "image/NDP_0.png",
+         "x" : "0.508",
+         "y" : "0.65",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/VincentVanGoghBridge_1.png",
-         "x" : "0.943",
-         "y" : "0.5",
+         "pixmapfile" : "image/NDP_1.png",
+         "x" : "0.499",
+         "y" : "0.357",
+         "dropAreaSize" : "8"
+      },
+      {
+         "pixmapfile" : "image/NDP_2.png",
+         "x" : "0.286",
+         "y" : "0.888",
          "dropAreaSize" : "8"
       }
    ]

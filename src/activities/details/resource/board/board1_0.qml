@@ -22,7 +22,6 @@
 import QtQuick 2.0
 
 QtObject {
-   property int numberOfSubLevel: 9
    property string instruction: qsTr("Vincent van Gogh, Entrance Hall of Saint-Paul Hospital - 1889")
    property variant levels: [
       {

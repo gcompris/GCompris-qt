@@ -22,23 +22,22 @@
 import QtQuick 2.0
 
 QtObject {
-   property int numberOfSubLevel: 12
-   property string instruction: qsTr("Eilean Donan castle")
+   property string instruction: qsTr("Vincent van Gogh, The Bridge of Langlois at Arles with a lady with umbrella - 1888")
    property variant levels: [
       {
-         "pixmapfile" : "image/EilanDonanCastle_background.jpg",
+         "pixmapfile" : "image/VincentVanGoghBridge_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/EilanDonanCastle_0.png",
-         "x" : "0.566",
-         "y" : "0.327",
+         "pixmapfile" : "image/VincentVanGoghBridge_0.png",
+         "x" : "0.56",
+         "y" : "0.536",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/EilanDonanCastle_1.png",
-         "x" : "0.825",
-         "y" : "0.174",
+         "pixmapfile" : "image/VincentVanGoghBridge_1.png",
+         "x" : "0.943",
+         "y" : "0.5",
          "dropAreaSize" : "8"
       }
    ]
