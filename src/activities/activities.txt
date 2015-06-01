@@ -52,6 +52,7 @@ imageid
 imagename
 instruments
 intro_gravity
+lang
 leftright
 lightsoff
 louis-braille
