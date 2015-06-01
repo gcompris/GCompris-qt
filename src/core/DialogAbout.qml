@@ -1,6 +1,6 @@
 /* GCompris - DialogAbout.qml
  *
- * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ * Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -125,5 +125,5 @@ DialogBackground {
         qsTr("<b>A big thanks to the translation team:</b> %1")
         .arg(translators) +
 
-        "<br/><center><b>" + "Copyright 2000-2014 Bruno Coudoin and Others" + "</b></center>" + "<br/>"
+        "<br/><center><b>" + "Copyright 2000-2015 Bruno Coudoin and Others" + "</b></center>" + "<br/>"
 }
