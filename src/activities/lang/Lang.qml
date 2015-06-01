@@ -1,6 +1,6 @@
 /* GCompris - lang.qml
  *
- * Copyright (C) 2014 Siddhesh suthar<siddhesh.it@gmail.com>
+ * Copyright (C) 2014 <Siddhesh suthar>
  *
  * Authors:
  *   Pascal Georges (pascal.georges1@free.fr) (GTK+ version)
@@ -69,7 +69,6 @@ ActivityBase {
             property alias categoryText: categoryText
             property alias wordListModel: wordListModel
             property alias parser: parser
-            property int count: 0
             property variant goodWord
             property int goodWordIndex
             property alias englishFallbackDialog: englishFallbackDialog
@@ -115,6 +114,7 @@ ActivityBase {
 
         JsonParser {
             id: parser
+
             onError: console.error("lang: Error parsing json: " + msg);
         }
 
@@ -353,10 +353,6 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onReloadClicked: {
-                items.count = 0
-                list.visible = false
-            }
         }
 
         Bonus {

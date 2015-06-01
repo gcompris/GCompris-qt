@@ -1,6 +1,6 @@
 /* GCompris - lang.js
  *
- * Copyright (C) 2014 Siddhesh suthar<siddhesh.it@gmail.com>
+ * Copyright (C) 2014 <Siddhesh suthar>
  *
  * Authors:
  *   Pascal Georges (pascal.georges1@free.fr) (GTK+ version)
@@ -76,12 +76,13 @@ function initLevel() {
     var currentLesson = lessons[currentLevel]
     wordList = Lang.getLessonWords(dataset, currentLesson);
 //    Core.shuffle(wordList);
-//    stopped shuffling for testing purposes.
 
+    backFlag = 0
+    flag =0
     maxSubLevel = wordList.length;
     items.score.numberOfSubLevels = maxSubLevel;
     items.score.visible = true
-    items.count = 0;
+    console.log(currentLesson.name)
     items.categoryText.changeCategory(currentLesson.name);
 
     subLevelsLeft = [];
@@ -94,17 +95,35 @@ function initLevel() {
 
 function initSubLevel() {
     // initialize sublevel
+    items.score.currentSubLevel = currentSubLevel + 1;
 
-    items.goodWord = wordList[items.score.currentSubLevel]
-    items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image)
-    items.wordText.changeText(items.goodWord.translatedTxt)
+    console.log(flag)
+    if(flag === maxSubLevel || flag === -maxSubLevel){
+        items.bonus.good("smiley");
+    }
+
+    else{
+        if(backFlag === 1 ){
+            items.goodWordIndex = subLevelsLeft.shift()
+            subLevelsLeft.push(items.goodWordIndex)
+
+        }
+        if(backFlag === 0) {
+            items.goodWordIndex = subLevelsLeft.pop()
+            subLevelsLeft.unshift(items.goodWordIndex)
+        }
+
+        items.goodWord = wordList[items.goodWordIndex]
+        items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image)
+        items.wordText.changeText(items.goodWord.translatedTxt)
+    }
 }
 
 function nextLevel() {
     if(maxLevel <= ++currentLevel ) {
         currentLevel = 0
     }
-    items.score.currentSubLevel = 0;
+    currentSubLevel = 0;
     initLevel();
 }
 
@@ -112,26 +131,34 @@ function previousLevel() {
     if(--currentLevel < 0) {
         currentLevel = maxLevel - 1
     }
-    items.score.currentSubLevel = 0;
+    currentSubLevel = 0;
     initLevel();
 }
 
 function nextSubLevel() {
-    items.score.currentSubLevel++;
-    if(items.score.currentSubLevel == items.score.numberOfSubLevels){
-        items.score.visible = false
-        items.bonus.good("smiley");
-        //here logic for starting quiz game
+    flag++;
+    if(maxSubLevel <= ++currentSubLevel ) {
+        currentSubLevel = 0
     }
-    else{
-        initSubLevel();
+    if(backFlag === 1){
+       subLevelsLeft.pop()
+       subLevelsLeft.unshift(items.goodWordIndex)
     }
+    backFlag = 0
+    initSubLevel();
+
 }
 
 function prevSubLevel() {
-    if(--items.score.currentSubLevel < 0) {
-        items.score.currentSubLevel = maxSubLevel - 1;
+    flag--;
+    if(--currentSubLevel < 0) {
+        currentSubLevel = maxSubLevel - 1
     }
+    if(backFlag === 0){
+       subLevelsLeft.shift()
+       subLevelsLeft.push(items.goodWordIndex)
+    }
+    backFlag =1
     initSubLevel()
 }
 
