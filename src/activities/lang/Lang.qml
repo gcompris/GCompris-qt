@@ -1,29 +1,26 @@
 /* GCompris - lang.qml
- *
-<<<<<<< HEAD
- * Copyright (C) 2014 <Siddhesh suthar>
-=======
- * Copyright (C) 2014 Siddhesh suthar<siddhesh.it@gmail.com>
->>>>>>> lang activity with simplified javascript code
- *
- * Authors:
- *   Pascal Georges (pascal.georges1@free.fr) (GTK+ version)
- *   Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
- *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Integration Lang dataset)
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 3 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
- */
+*
+* Copyright (C) Holger Kaelberer <holger.k@elberer.de> (Qt Quick port of imageid)
+*
+* Authors:
+*   Pascal Georges (pascal.georges1@free.fr) (GTK+ version)
+*   Holger Kaelberer <holger.k@elberer.de> (Qt Quick port of imageid)
+*   Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
+*   Bruno Coudoin <bruno.coudoin@gcompris.net> (Integration Lang dataset)
+*
+*   This program is free software; you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation; either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/
 import QtQuick 2.1
 import GCompris 1.0
 import QtGraphicalEffects 1.0
@@ -69,6 +66,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias wordImage: wordImage
+            property alias imageFrame: imageFrame
             property alias wordText: wordText
             property alias categoryText: categoryText
             property alias wordListModel: wordListModel
@@ -77,6 +75,7 @@ ActivityBase {
             property variant goodWord
             property int goodWordIndex
             property alias englishFallbackDialog: englishFallbackDialog
+            property alias quiz: quiz
 
             function playWord() {
                 if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
@@ -93,7 +92,7 @@ ActivityBase {
         }
 
         onStart: {
-            Activity.init(items)
+            Activity.init(items,quiz) //change here passing quiz
             repeatItem.visible = false
             keyNavigation = false
             activity.audioVoices.error.connect(voiceError)
@@ -357,57 +356,70 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-        }
-    }
-
-    Bonus {
-        id: bonus
-        Component.onCompleted: win.connect(Activity.nextLevel)
-    }
-
-    Loader {
-        id: englishFallbackDialog
-        sourceComponent: GCDialog {
-            parent: activity.main
-            message: qsTr("We are sorry, we don't have yet a translation for your language.") + " " +
-                     qsTr("GCompris is developed by the KDE community, you can translate GCompris by joining a translation team on <a href=\"%2\">%2</a>").arg("http://l10n.kde.org/") +
-                     "<br /> <br />" +
-                     qsTr("We switched to English for this activity but you can select another language in the configuration dialog.")
-            onClose: background.englishFallback = false
-        }
-        anchors.fill: parent
-        focus: true
-        active: background.englishFallback
-        onStatusChanged: if (status == Loader.Ready) item.start()
-    }
-
-    Loader {
-        id: downloadWordsDialog
-        sourceComponent: GCDialog {
-            parent: activity.main
-            message: qsTr("The images for this activity are not yet installed.")
-            button1Text: qsTr("Download the images")
-            onClose: background.downloadWordsNeeded = false
-            onButton1Hit: {
-                DownloadManager.resourceRegistered.connect(handleResourceRegistered);
-                DownloadManager.downloadResource(wordsResource)
-                var downloadDialog = Core.showDownloadDialog(activity, {});
+            onReloadClicked: {
+                items.count = 0
+                list.visible = false
             }
         }
-        anchors.fill: parent
-        focus: true
-        active: background.downloadWordsNeeded
-        onStatusChanged: if (status == Loader.Ready) item.start()
-    }
 
-    Score {
-        id: score
+        Bonus {
+            id: bonus
+            Component.onCompleted: win.connect(Activity.nextLevel)
+        }
 
-        anchors.bottom: parent.bottom
-        anchors.bottomMargin: 10 * ApplicationInfo.ratio
-        anchors.right: parent.right
-        anchors.rightMargin: 10 * ApplicationInfo.ratio
-        anchors.top: undefined
+        Loader {
+            id: englishFallbackDialog
+            sourceComponent: GCDialog {
+                parent: activity.main
+                message: qsTr("We are sorry, we don't have yet a translation for your language.") + " " +
+                         qsTr("GCompris is developed by the KDE community, you can translate GCompris by joining a translation team on <a href=\"%2\">%2</a>").arg("http://l10n.kde.org/") +
+                         "<br /> <br />" +
+                         qsTr("We switched to English for this activity but you can select another language in the configuration dialog.")
+                onClose: background.englishFallback = false
+            }
+            anchors.fill: parent
+            focus: true
+            active: background.englishFallback
+            onStatusChanged: if (status == Loader.Ready) item.start()
+        }
+
+        Loader {
+            id: downloadWordsDialog
+            sourceComponent: GCDialog {
+                parent: activity.main
+                message: qsTr("The images for this activity are not yet installed.")
+                button1Text: qsTr("Download the images")
+                onClose: background.downloadWordsNeeded = false
+                onButton1Hit: {
+                    DownloadManager.resourceRegistered.connect(handleResourceRegistered);
+                    DownloadManager.downloadResource(wordsResource)
+                    var downloadDialog = Core.showDownloadDialog(activity, {});
+                }
+            }
+            anchors.fill: parent
+            focus: true
+            active: background.downloadWordsNeeded
+            onStatusChanged: if (status == Loader.Ready) item.start()
+        }
+
+        Score {
+            id: score
+
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            anchors.right: parent.right
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.top: undefined
+        }
+
+        Quiz{
+            id: quiz
+            displayed: false
+            width: parent.width
+            height: parent.height - bar.height
+//            wordImageQuiz: visible
+        }
+
     }
 
 }
