@@ -46,7 +46,7 @@ QtObject {
           "height": 0.4
       },
       {
-		  "text": qsTr("1878 Léon Bollé's La Mancelle"),
+          "text": qsTr("1878 Amédée Bollée's La Mancelle"),
 		  "x": "0.25",
 		  "y": 0.2,
 		  "width": "0.4",
