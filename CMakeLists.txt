@@ -1,4 +1,8 @@
-cmake_minimum_required(VERSION 2.8.12)
+if(SAILFISHOS)
+  cmake_minimum_required(VERSION 2.8.11)
+else(SAILfISHOS)
+  cmake_minimum_required(VERSION 2.8.12)
+endif()
 
 project(gcompris C CXX)
 
