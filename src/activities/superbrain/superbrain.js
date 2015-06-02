@@ -111,7 +111,7 @@ function initLevel() {
         currentColors[i] = colors[i];
         items.colorsRepeater.model.append({"col": colors[i]});
     }
-    items.chooserRepeater.model = currentColors;
+    items.chooserGrid.model = currentColors;
     // add first guess row:
     items.guessModel.clear();
     appendGuessRow();

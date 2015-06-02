@@ -64,7 +64,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias colorsRepeater: colorsRepeater
-            property alias chooserRepeater: chooserRepeater
+            property alias chooserGrid: chooserGrid
             property alias guessModel: guessModel
             property alias guessColumn: guessColumn
         }
@@ -152,52 +152,84 @@ ActivityBase {
             tooltipRect.opacity = 0.9;
         }
 
-        Column {
-            id: chooserColumn
+        Rectangle {
+            id: chooser
 
-            property int colIndex: 0
-            property int guessIndex: 0
-            spacing: 0
-            opacity: 0
+            width: chooserGrid.width + 15
+            height: chooserGrid.height + 15
+
+            color: "darkgray"
+            border.width: 0
+            border.color: "white"
+
+            opacity: 1
+            scale: 0
             visible: false
+            z: 10
 
-            Timer {
-                id: chooserTimer
-                interval: 2000
-                onTriggered: showChooser(false);
+            property bool above: true
+
+            Rectangle {
+                width: 10
+                height: 10
+                x: chooser.width / 2 - 5
+                y: chooser.above ? (chooser.height - 5) : (-5)
+                color: chooser.color
+                z: chooser.z
+                transform: Rotation { origin.x: 5; origin.y: 5; angle: 45}
             }
 
-            Repeater {
-                id: chooserRepeater
+            GridView {
+                id: chooserGrid
+
+                cellWidth: guessColumn.guessSize * 2
+                cellHeight: guessColumn.guessSize * 2
+                width: Math.ceil(count / 2) * cellWidth// * 1.2
+                height: 2 * cellHeight// * 1.2
+                anchors.centerIn: parent
+
+                clip: false
+                interactive: false
+                verticalLayoutDirection: GridView.TopToBottom
+                layoutDirection: Qt.LeftToRight
+                flow: GridView.FlowLeftToRight
+
+                property int colIndex: 0
+                property int guessIndex: 0
+
+                Timer {
+                    id: chooserTimer
+                    interval: 2000
+                    onTriggered: showChooser(false);
+                }
 
                 model: new Array()
 
                 delegate: Rectangle {
-                    width: guessColumn.guessSize * 1.6
-                    height: guessColumn.guessSize / 2
-                    radius: 4 //width * 0.5
-                    border.width: index == chooserColumn.colIndex ? 3 : 0
-                    border.color: "white"
+                    width: chooserGrid.cellWidth
+                    height: chooserGrid.cellWidth
+                    radius: 5
+                    border.width: index == chooserGrid.colIndex ? 3 : 1
+                    border.color: index == chooserGrid.colIndex ? "white" : "darkgray"
                     color: modelData
 
                     MouseArea {
                         id: chooserMouseArea
                         anchors.fill: parent
                         acceptedButtons: Qt.LeftButton
-                        z: 3
+                        z: 11
                         hoverEnabled: ApplicationInfo.isMobile ? false : true
 
                         onClicked: {
-                            chooserColumn.colIndex = index;
+                            chooserGrid.colIndex = index;
                             var obj = items.guessModel.get(0);
-                            obj.guess.setProperty(chooserColumn.guessIndex, "colIndex", chooserColumn.colIndex);
+                            obj.guess.setProperty(chooserGrid.guessIndex, "colIndex", chooserGrid.colIndex);
                             showChooser(false);
                         }
                     }
                 }
             }
-
-            Behavior on opacity {
+            Behavior on scale {
                 NumberAnimation { duration: 100 }
             }
         }
@@ -206,18 +238,25 @@ ActivityBase {
         {
             if (!visible) {
                 chooserTimer.stop();
-                chooserColumn.opacity = 0;
+                chooser.scale = 0;
                 return;
             }
 
             var modelObj = guessModel.get(0).guess.get(guessIndex);
             var obj = background.mapFromItem(item, item.x, item.y);
-            chooserColumn.colIndex = modelObj.colIndex;
-            chooserColumn.guessIndex = guessIndex;
-            chooserColumn.x = obj.x - 0.4 * guessColumn.guessSize;
-            chooserColumn.y = obj.y - chooserRepeater.count * guessColumn.guessSize / 2 - guessColumn.guessSize * 0.15;
-            chooserColumn.opacity = 0.9;
-            chooserColumn.visible = true;
+            chooserGrid.colIndex = modelObj.colIndex;
+            chooserGrid.guessIndex = guessIndex;
+            chooser.x = obj.x + guessColumn.guessSize / 2 - 0.5 * chooser.width;
+            var targetY = obj.y - chooser.height - 15;
+            var targetAbove = true;
+            if (targetY < 0) {
+                targetY = obj.y + guessColumn.guessSize + 10;
+                targetAbove = false;
+            }
+            chooser.y = targetY;
+            chooser.above = targetAbove;
+            chooser.scale = 1;
+            chooser.visible = true;
             chooserTimer.restart();
         }
 
