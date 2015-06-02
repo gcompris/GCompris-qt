@@ -19,6 +19,7 @@ clockgame
 color_mix
 color_mix_light
 colors
+computer-part
 drawnumber
 enumerate
 erase
