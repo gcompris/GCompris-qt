@@ -20,7 +20,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
-import QtQuick.Layouts 1.1
 import GCompris 1.0
 import "../../core"
 import "braille_alphabets.js" as Activity
