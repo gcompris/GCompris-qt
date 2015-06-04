@@ -1,6 +1,10 @@
 /* GCompris - lang.qml
  *
+<<<<<<< HEAD
  * Copyright (C) 2014 <Siddhesh suthar>
+=======
+ * Copyright (C) 2014 Siddhesh suthar<siddhesh.it@gmail.com>
+>>>>>>> lang activity with simplified javascript code
  *
  * Authors:
  *   Pascal Georges (pascal.georges1@free.fr) (GTK+ version)
@@ -69,6 +73,7 @@ ActivityBase {
             property alias categoryText: categoryText
             property alias wordListModel: wordListModel
             property alias parser: parser
+            property int count: 0
             property variant goodWord
             property int goodWordIndex
             property alias englishFallbackDialog: englishFallbackDialog
@@ -114,7 +119,6 @@ ActivityBase {
 
         JsonParser {
             id: parser
-
             onError: console.error("lang: Error parsing json: " + msg);
         }
 
@@ -123,59 +127,59 @@ ActivityBase {
         }
 
         Rectangle{
-                id: categoryTextbg
-                x: categoryText.x -4
-                y: categoryText.y -4
-                width: imageFrame.width
-                height: categoryText.height +4
-                color: "#5090ff"
-                border.color: "#000000"
-                border.width: 2
-                radius: 16
-                anchors.bottom: imageFrame.top
-                anchors.left: imageFrame.left
-                anchors.bottomMargin: 20
+            id: categoryTextbg
+            x: categoryText.x -4
+            y: categoryText.y -4
+            width: imageFrame.width
+            height: categoryText.height +4
+            color: "#5090ff"
+            border.color: "#000000"
+            border.width: 2
+            radius: 16
+            anchors.bottom: imageFrame.top
+            anchors.left: imageFrame.left
+            anchors.bottomMargin: 20
 
 
-                GCText{
-                        id: categoryText
-                        text: ""
-                        fontSize: largeSize
-                        font.weight: Font.DemiBold
-                        width: parent.width
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        color: "white"
-                        wrapMode: Text.WordWrap
+            GCText{
+                id: categoryText
+                text: ""
+                fontSize: largeSize
+                font.weight: Font.DemiBold
+                width: parent.width
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                color: "white"
+                wrapMode: Text.WordWrap
 
-                        property string nextCategory
-                        function changeCategory(nextCategory_) {
-                            nextCategory = nextCategory_
-                            animCategory.start()
-                        }
+                property string nextCategory
+                function changeCategory(nextCategory_) {
+                    nextCategory = nextCategory_
+                    animCategory.start()
+                }
 
-                        SequentialAnimation {
-                            id: animCategory
-                            PropertyAnimation {
-                                target: categoryText
-                                property: "opacity"
-                                to: 0
-                                duration: 100
-                            }
-                            PropertyAction {
-                                target: categoryText
-                                property: "text"
-                                value: "Category: "+ categoryText.nextCategory
-                            }
-                            PropertyAnimation {
-                                target: categoryText
-                                property: "opacity"
-                                to: 1
-                                duration: 100
-                            }
-                        }
-
+                SequentialAnimation {
+                    id: animCategory
+                    PropertyAnimation {
+                        target: categoryText
+                        property: "opacity"
+                        to: 0
+                        duration: 100
                     }
+                    PropertyAction {
+                        target: categoryText
+                        property: "text"
+                        value: "Category: "+ categoryText.nextCategory
+                    }
+                    PropertyAnimation {
+                        target: categoryText
+                        property: "opacity"
+                        to: 1
+                        duration: 100
+                    }
+                }
+
+            }
         }
 
         Image {
@@ -266,59 +270,59 @@ ActivityBase {
         }
 
         Rectangle{
-                id: wordTextbg
-                x: wordText.x -4
-                y: wordText.y -4
-                width: imageFrame.width
-                height: wordText.height +4
-                color: "#5090ff"
-                border.color: "#000000"
-                border.width: 2
-                radius: 16
-                anchors.top: imageFrame.bottom
-                anchors.left: imageFrame.left
-                anchors.topMargin: 20
+            id: wordTextbg
+            x: wordText.x -4
+            y: wordText.y -4
+            width: imageFrame.width
+            height: wordText.height +4
+            color: "#5090ff"
+            border.color: "#000000"
+            border.width: 2
+            radius: 16
+            anchors.top: imageFrame.bottom
+            anchors.left: imageFrame.left
+            anchors.topMargin: 20
 
 
-                GCText{
-                        id: wordText
-                        text: ""
-                        fontSize: largeSize
-                        font.weight: Font.DemiBold
-                        width: parent.width
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        color: "white"
-                        wrapMode: Text.WordWrap
+            GCText{
+                id: wordText
+                text: ""
+                fontSize: largeSize
+                font.weight: Font.DemiBold
+                width: parent.width
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                color: "white"
+                wrapMode: Text.WordWrap
 
-                        property string nextWord
-                        function changeText(nextWord_) {
-                            nextWord = nextWord_
-                            animWord.start()
-                        }
+                property string nextWord
+                function changeText(nextWord_) {
+                    nextWord = nextWord_
+                    animWord.start()
+                }
 
-                        SequentialAnimation {
-                            id: animWord
-                            PropertyAnimation {
-                                target: wordText
-                                property: "opacity"
-                                to: 0
-                                duration: 100
-                            }
-                            PropertyAction {
-                                target: wordText
-                                property: "text"
-                                value: wordText.nextWord
-                            }
-                            PropertyAnimation {
-                                target: wordText
-                                property: "opacity"
-                                to: 1
-                                duration: 100
-                            }
-                        }
-
+                SequentialAnimation {
+                    id: animWord
+                    PropertyAnimation {
+                        target: wordText
+                        property: "opacity"
+                        to: 0
+                        duration: 100
                     }
+                    PropertyAction {
+                        target: wordText
+                        property: "text"
+                        value: wordText.nextWord
+                    }
+                    PropertyAnimation {
+                        target: wordText
+                        property: "opacity"
+                        to: 1
+                        duration: 100
+                    }
+                }
+
+            }
 
         }
 
@@ -354,57 +358,56 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
         }
+    }
 
-        Bonus {
-            id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+    Bonus {
+        id: bonus
+        Component.onCompleted: win.connect(Activity.nextLevel)
+    }
+
+    Loader {
+        id: englishFallbackDialog
+        sourceComponent: GCDialog {
+            parent: activity.main
+            message: qsTr("We are sorry, we don't have yet a translation for your language.") + " " +
+                     qsTr("GCompris is developed by the KDE community, you can translate GCompris by joining a translation team on <a href=\"%2\">%2</a>").arg("http://l10n.kde.org/") +
+                     "<br /> <br />" +
+                     qsTr("We switched to English for this activity but you can select another language in the configuration dialog.")
+            onClose: background.englishFallback = false
         }
+        anchors.fill: parent
+        focus: true
+        active: background.englishFallback
+        onStatusChanged: if (status == Loader.Ready) item.start()
+    }
 
-        Loader {
-            id: englishFallbackDialog
-            sourceComponent: GCDialog {
-                parent: activity.main
-                message: qsTr("We are sorry, we don't have yet a translation for your language.") + " " +
-                         qsTr("GCompris is developed by the KDE community, you can translate GCompris by joining a translation team on <a href=\"%2\">%2</a>").arg("http://l10n.kde.org/") +
-                         "<br /> <br />" +
-                         qsTr("We switched to English for this activity but you can select another language in the configuration dialog.")
-                onClose: background.englishFallback = false
+    Loader {
+        id: downloadWordsDialog
+        sourceComponent: GCDialog {
+            parent: activity.main
+            message: qsTr("The images for this activity are not yet installed.")
+            button1Text: qsTr("Download the images")
+            onClose: background.downloadWordsNeeded = false
+            onButton1Hit: {
+                DownloadManager.resourceRegistered.connect(handleResourceRegistered);
+                DownloadManager.downloadResource(wordsResource)
+                var downloadDialog = Core.showDownloadDialog(activity, {});
             }
-            anchors.fill: parent
-            focus: true
-            active: background.englishFallback
-            onStatusChanged: if (status == Loader.Ready) item.start()
         }
+        anchors.fill: parent
+        focus: true
+        active: background.downloadWordsNeeded
+        onStatusChanged: if (status == Loader.Ready) item.start()
+    }
 
-        Loader {
-            id: downloadWordsDialog
-            sourceComponent: GCDialog {
-                parent: activity.main
-                message: qsTr("The images for this activity are not yet installed.")
-                button1Text: qsTr("Download the images")
-                onClose: background.downloadWordsNeeded = false
-                onButton1Hit: {
-                    DownloadManager.resourceRegistered.connect(handleResourceRegistered);
-                    DownloadManager.downloadResource(wordsResource)
-                    var downloadDialog = Core.showDownloadDialog(activity, {});
-                }
-            }
-            anchors.fill: parent
-            focus: true
-            active: background.downloadWordsNeeded
-            onStatusChanged: if (status == Loader.Ready) item.start()
-        }
+    Score {
+        id: score
 
-        Score {
-            id: score
-
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
-            anchors.right: parent.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
-            anchors.top: undefined
-        }
-
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 10 * ApplicationInfo.ratio
+        anchors.right: parent.right
+        anchors.rightMargin: 10 * ApplicationInfo.ratio
+        anchors.top: undefined
     }
 
 }
