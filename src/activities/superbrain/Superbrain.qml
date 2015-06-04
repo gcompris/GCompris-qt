@@ -135,11 +135,11 @@ ActivityBase {
 
         function showTooltip(visible, status, mouseArea)
         {
-            showChooser(false);
             if (!visible || status === Activity.STATUS_UNKNOWN) {
                 tooltipRect.opacity = 0;
                 return;
             }
+            showChooser(false);
 
             var obj = background.mapFromItem(mouseArea, mouseArea.mouseX, mouseArea.mouseY);
 
