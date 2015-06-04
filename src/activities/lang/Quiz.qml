@@ -44,13 +44,12 @@ Item{
     //        id: quizItems
     //        property Item main: activity.main
     property alias background: background
-    property alias bar: bar
     property alias bonus: bonus
     property alias score: score
     property alias wordImage: wordImage
     property alias imageFrame: imageFrame
     property alias wordListModel: wordListModel
-    property alias wordImageModel: wordImageModel
+    property alias wordListView: wordListView
     property alias parser: parser
     property variant goodWord
     property int goodWordIndex
@@ -111,24 +110,21 @@ Item{
             id: wordListModel
         }
 
-        ListModel {
-            id: wordImageModel
-        }
-
         Grid {
             id: gridId
-            columns: horizontalLayout ? 3 : 1
-            spacing: 2 * ApplicationInfo.ratio
+            columns: horizontalLayout ? 2 : 1
+            spacing: 10 * ApplicationInfo.ratio
             anchors.fill: parent
-            anchors.margins: 2 * ApplicationInfo.ratio
+            anchors.margins: 10 * ApplicationInfo.ratio
 
             Item {
                 width: background.horizontalLayout
-                       ? background.width * 0.40
+                       ? background.width * 0.55
                        : background.width - gridId.anchors.margins * 2
                 height: background.horizontalLayout
                         ? background.height - bar.height
                         : (background.height - bar.height) * 0.4
+
                 Image {
                     id: imageFrame
                     anchors {
@@ -136,8 +132,9 @@ Item{
                         verticalCenter: parent.verticalCenter
                     }
                     source: "qrc:/gcompris/src/activities/lang/resource/imageid_frame.svg"
-                    sourceSize.width: background.horizontalLayout ? parent.width * 0.6 : parent.height * 1.2
+                    sourceSize.width: background.horizontalLayout ? parent.width * 0.7 : parent.height * 1.2
                     z: 11
+                    visible: Activity.miniGame ==3 ? false : true
 
                     Image {
                         id: wordImage
@@ -177,34 +174,11 @@ Item{
                 }
             }
 
-            ListView{
-                id: wordImageView
-                width: background.horizontalLayout
-                       ? background.width * 0.30
-                       : background.width - gridId.anchors.margins * 2
-                height: background.horizontalLayout
-                        ? background.height - bar.height
-                        : (background.height - bar.height) * 0.40
-                spacing: 10 * ApplicationInfo.ratio
-                orientation: Qt.Vertical
-                verticalLayoutDirection: ListView.TopToBottom
-                interactive: false
-                model: wordImageModel
-
-                property int buttonHeight: height / wordListModel.count * 0.9
-
-                delegate: Image{
-                    id: wordImageQuiz
-                    width: wordImageView.width/2
-                    height: wordImageView.buttonHeight
-                    source: image
-                }
-            }
 
             ListView {
                 id: wordListView
                 width: background.horizontalLayout
-                       ? background.width * 0.30
+                       ? background.width * 0.40
                        : background.width - gridId.anchors.margins * 2
                 height: background.horizontalLayout
                         ? background.height - bar.height
@@ -235,16 +209,32 @@ Item{
 
                 property int buttonHeight: height / wordListModel.count * 0.9
 
-                delegate: AnswerButton {
-                    id: wordRectangle
+                delegate: Item{
 
+                    id: wordListViewDelegate
                     width: wordListView.width
                     height: wordListView.buttonHeight
 
-                    textLabel: word
-                    isCorrectAnswer: word === Activity.quizItems.goodWord.translatedTxt
-                    onIncorrectlyPressed: Activity.badWordSelected(Activity.quizItems.goodWordIndex);
-                    onCorrectlyPressed: Activity.nextSubLevelQuiz();
+                    Image{
+                        id: wordImageQuiz
+                        width: wordListView.width/3
+                        height: wordListView.buttonHeight * 0.7
+                        source: image
+                        z: 7
+                        anchors.left: parent.left
+                        anchors.leftMargin: 10* ApplicationInfo.ratio
+                        visible:  (Activity.miniGame==1) ? true : false  // to hide images after first mini game
+                    }
+
+                    AnswerButton {
+                        id: wordRectangle
+                        width: wordListView.width
+                        height: wordListView.buttonHeight
+                        textLabel: word
+                        isCorrectAnswer: word === Activity.quizItems.goodWord.translatedTxt
+                        onIncorrectlyPressed: Activity.badWordSelected(Activity.quizItems.goodWordIndex);
+                        onCorrectlyPressed: Activity.nextSubLevelQuiz();
+                    }
                 }
             }
         }
@@ -261,23 +251,6 @@ Item{
                 margins: 10 * ApplicationInfo.ratio
             }
             onClicked: items.playWord()
-        }
-
-        DialogHelp {
-            id: dialogHelp
-            onClose: home()
-        }
-
-        Bar {
-            id: bar
-
-            content: BarEnumContent { value: help | home | level }
-            onHelpClicked: {
-                displayDialog(dialogHelp)
-            }
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
         }
 
         Bonus {

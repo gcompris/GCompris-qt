@@ -76,8 +76,8 @@ function initLevel() {
 
     var currentLesson = lessons[currentLevel]
     wordList = Lang.getLessonWords(dataset, currentLesson);
-    //    Core.shuffle(wordList);
-    //    stopped shuffling for testing purposes.
+//    Core.shuffle(wordList);
+//    stopped shuffling for testing purposes.
 
     maxSubLevel = wordList.length;
     items.score.numberOfSubLevels = maxSubLevel;
@@ -125,8 +125,7 @@ function previousLevel() {
 function nextSubLevel() {
     items.score.currentSubLevel++;
     if(items.score.currentSubLevel == items.score.numberOfSubLevels){
-        //        items.score.visible = false
-        //        items.bonus.good("smiley");
+
         //here logic for starting quiz game
         items.imageFrame.visible = false
         items.quiz.displayed = true
