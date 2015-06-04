@@ -44,16 +44,16 @@ var numberOfColors = 0;
 var maxPieces = 5;
 var solution = new Array(maxPieces);
 var colors = [
-            "#C00000FF",
-            "#C000FF00",
-            "#C0FF0000",
-            "#C000FFFF",
-            "#C0FF00FF",
-            "#C0FFFF00",
-            "#C000007F",
-            "#C0007F00",
-            "#C07F0000",
-            "#C07F007F"
+            "#FF0000FF",
+            "#FF00FF00",
+            "#FFFF0000",
+            "#FF00FFFF",
+            "#FFFF00FF",
+            "#FFFFFF00",
+            "#FF8e7016",
+            "#FF04611a",
+            "#FFa0174b",
+            "#FF7F007F"
         ];
 var currentColors = new Array();
 var maxColors = colors.length;
