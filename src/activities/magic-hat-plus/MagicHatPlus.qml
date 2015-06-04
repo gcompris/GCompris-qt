@@ -20,7 +20,6 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
-import QtQuick.Layouts 1.1
 
 import "../../core"
 import "../magic-hat-minus/"
