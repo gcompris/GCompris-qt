@@ -46,7 +46,7 @@ Item{
              +" which can be turned off or on by means of an electronic switch. "),
         qsTr("Your goal is to click on the box kept beside the table "
              +"and see the components of computer one by one and read about it. "
-             +"Then,Drag the image to the specific point on the table and place it."),
+             /*+"Then,Drag the image to the specific point on the table and place it."*/),
         qsTr("Zoom at the table to enjoy virtual settings. "
              +"and click done.")
     ]
