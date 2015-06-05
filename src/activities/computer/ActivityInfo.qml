@@ -29,6 +29,6 @@ ActivityInfo {
   goal: qsTr("Learning the parts of computer and basic setting of its external components")
   prerequisite: "none"
   manual: qsTr("Drag and drop the components on the table and zoom the monitor and enjoy.")
-  credit: qsTr("Siddhesh Suthar(siddhism) for information implementation.")
+  credit: qsTr("")
   section: "fun"
 }
