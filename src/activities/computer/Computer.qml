@@ -4,7 +4,7 @@
  *
  * Authors:
  *
- *   "Sagar Chand Agarwal" <atomsagar@gmail.com> (Qt Quick port)
+ *   "Sagar Chand Agarwal" <atomsagar@gmail.com> (Qt Quick)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -38,6 +38,25 @@ ActivityBase {
         id: background
         anchors.fill: parent
 
+        PinchArea {
+            anchors.fill:parent
+            pinch.target: room
+            pinch.minimumScale: 1
+            pinch.maximumScale: 3
+        }
+
+        MouseArea {
+            id:dragarea
+            hoverEnabled:true
+            anchors.fill:parent
+            drag.target:background
+            onWheel:{
+                var scaleBefore = background.scale
+                background.scale += background.scale * wheel.angleDelta.y / 120 / 10
+            }
+
+        }
+
         signal start
         signal stop
 
@@ -52,13 +71,14 @@ ActivityBase {
             property Item main: activity.main
             property alias background: background
             property alias bar: bar
-            property alias bonus: bonus
             property int count: 0
             property var dataset: Dataset.dataset
+            property GCAudio audioEffects: activity.audioEffects
         }
 
         onStart: { Activity.start(items,message) }
         onStop: { Activity.stop() }
+
         Message {
             id: message
             z: 20
@@ -69,7 +89,6 @@ ActivityBase {
                 left: parent.left
                 leftMargin: 5
             }
-
         }
 
 
@@ -78,6 +97,41 @@ ActivityBase {
             source: "resource/background.svg"
             width: parent.width
             height: parent.height
+        }
+
+        Rectangle{
+            id:switchboard
+            radius:10
+            color:"yellow"
+            height: parent.width*0.05
+            width: switchboard.height
+            anchors {
+                bottom: table.top
+                right: table.right
+                rightMargin: 0.1*parent.width
+                bottomMargin: 0.1*parent.height
+            }
+
+            Image {
+                id: poweron
+                source: "resource/poweron.svg"
+                anchors.fill: switchboard
+                visible: false
+            }
+
+            Image {
+                id: poweroff
+                source: "resource/poweroff.svg"
+                anchors.fill: switchboard
+                visible: true
+                MouseArea
+                {
+                    anchors.fill: poweroff
+                    onClicked: poweroff.visible=false,
+                               poweron.visible=true
+                }
+
+            }
         }
 
         Image {
@@ -98,6 +152,7 @@ ActivityBase {
                 source:"resource/images/monitor.svg"
                 sourceSize.height: parent.height/2
                 sourceSize.width :parent.width/2
+                opacity:0.1
                 anchors {
                     bottom: table.bottom
                     left: table.left
@@ -105,22 +160,13 @@ ActivityBase {
                     bottomMargin: table.height*0.9
 
                 }
-                //                Rectangle{
-                //                    id:white
-                //                    height:monitor.height*0.65
-                //                    width: monitor.width *0.8
-                //                    visible:false
-                //                    anchors {
-                //
-                //                    }
-                //                }
-
-
-                //                MouseArea{
-                //                    anchors.fill:monitor
-                //                    onClicked:white.visible=true
-
-                //                }
+                Image {
+                    id: cursor
+                    source: "resource/cursor.svg"
+                    height: monitor.height*0.2
+                    width: monitor.width*0.2
+                    visible: true
+                }
 
                 Flickable {
                     id: flick
@@ -150,7 +196,7 @@ ActivityBase {
 
                     TextEdit {
                         id: edit
-                        color:"red"
+                        color:"white"
                         width: flick.width
                         height: flick.height
                         focus: true
@@ -158,7 +204,20 @@ ActivityBase {
                         onCursorRectangleChanged: flick.ensureVisible(cursorRectangle)
                     }
                 }
-                visible:false
+
+                MouseArea{
+                    anchors.fill: monitor
+                    onEntered:
+                    {
+                        cursor.visible=true
+                    }
+                    onPressed:{
+                        cursor.x= mouseX
+                        cursor.y= mouseY
+                    }
+                    onExited: {cursor.visible=false}
+                }
+                visible: true
 
             }
             Image {
@@ -174,7 +233,8 @@ ActivityBase {
                     bottomMargin: table.height*0.8
 
                 }
-                visible: false
+                visible: true
+                opacity: 0.1
             }
             Image {
                 id:keyboard
@@ -187,7 +247,9 @@ ActivityBase {
                     left: table.left
                     leftMargin: table.width *0.3
                 }
-                visible: false
+                visible: true
+                opacity: 0.1
+
             }
             Image {
                 id:mouse
@@ -201,49 +263,37 @@ ActivityBase {
                     leftMargin: table.width *0.1
                     bottomMargin :table.height*0.6
                 }
-                visible: false
-            }
-            PinchArea {
-                anchors.fill:parent
-                pinch.target: table
-                pinch.minimumScale: 1
-                pinch.maximumScale: 3
+                visible: true
+                opacity: 0.1
             }
 
-            MouseArea {
-                id:dragarea
-                hoverEnabled:true
-                anchors.fill:parent
-                drag.target:table
-                onWheel:{
-                    var scaleBefore = table.scale
-                    table.scale += table.scale * wheel.angleDelta.y / 120 / 10
-                }
 
-            }
+
         }
+
 
         Image {
             id: boxclosed
             source: "resource/closebox.svg"
             visible: true
-            sourceSize.height: parent.width/3
-            sourceSize.width: parent.height/3
+            sourceSize.height: parent.width/4
+            sourceSize.width: parent.height/4
             anchors {
                 right :parent.right
                 rightMargin: parent.width*0.1*ApplicationInfo.ratio
                 bottom: parent.bottom
                 bottomMargin: parent.height*0.1*ApplicationInfo.ratio
             }
-
             MouseArea {
                 anchors.fill :boxclosed
                 onClicked: {
                     boxclosed.visible=false,
-                            boxopened.visible=true
+                            boxopened.visible=true,
+                            showpart()
                 }
             }
         }
+
 
         Image {
             id: boxopened
@@ -258,6 +308,18 @@ ActivityBase {
 
             }
             visible: false
+        }
+
+        function showpart() {
+            if(boxopened.visible=true)
+            {
+                previous.visible=true
+                next.visible= true
+                info_rect.visible=true
+                img.visible=true
+                name_rect.visible=true
+
+            }
         }
 
 
@@ -282,11 +344,11 @@ ActivityBase {
 
         Image {
             id: previous
-            anchors.right: img.left
-            anchors.rightMargin: 20 * ApplicationInfo.ratio
-            anchors.verticalCenter: img.verticalCenter
+            anchors.right: boxopened.left
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.verticalCenter: boxopened.verticalCenter
             source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
-            sourceSize.height: 80 * ApplicationInfo.ratio
+            sourceSize.height: 40 * ApplicationInfo.ratio
             Behavior on scale { PropertyAnimation { duration: 100} }
             MouseArea {
                 anchors.fill: parent
@@ -295,114 +357,130 @@ ActivityBase {
                 onExited: previous.scale = 1
                 onClicked: background.previous()
             }
+            visible: false
         }
-
-        // The image description
 
         Rectangle {
             id: info_rect
-            border.color: "black"
-            border.width: 1 * ApplicationInfo.ratio
-            color: "white"
-            width: parent.width * 0.9
-            height:info.height * 1.3
+            visible: false
+            border.color: "blue"
+            border.width: 2 * ApplicationInfo.ratio
+            radius: 8*ApplicationInfo.ratio
+            color: "red"
+            height: parent.height*1.1
+            width: parent.width*1.1
+            anchors.top :table.bottom
             anchors.bottom: parent.bottom
             anchors.left: parent.left
             anchors.leftMargin: 0.1*parent.width*ApplicationInfo.ratio
-            anchors.bottomMargin: 50 * ApplicationInfo.ratio
             anchors.right: boxopened.left
-            anchors.rightMargin: 20*ApplicationInfo.ratio
+            anchors.rightMargin: 50*ApplicationInfo.ratio
 
             GCText {
                 id:info
-                color: "red"
+                color: "yellow"
                 anchors.centerIn: parent
                 horizontalAlignment: Text.AlignHCenter
-                width: parent.width * 0.94
+                width: info_rect.width*0.9
                 wrapMode: Text.WordWrap
                 fontSize: regularSize
                 text: items.dataset[items.count].text
             }
-            MouseArea{
-                anchors.fill:info_rect
-                onClicked:info_rect.visible=false
-            }
         }
 
-        // Image and name
         Image {
-
             id: img
+            visible: false
             anchors.bottom: boxclosed.top
             anchors.bottomMargin: 40 * ApplicationInfo.ratio
             anchors.right : parent.right
             anchors.rightMargin: parent.width*0.1*ApplicationInfo.ratio
-            sourceSize.height: boxopened*2*ApplicationInfo.ratio
-            sourceSize.width: boxopened*2*ApplicationInfo.ratio
+            sourceSize.height: boxopened*0.5*ApplicationInfo.ratio
+            sourceSize.width: boxopened*0.5*ApplicationInfo.ratio
             source: items.dataset[items.count].img
             fillMode: Image.PreserveAspectFit
 
-            Rectangle {
-                id: name_rect
-                border.color: "black"
-                border.width: 1
-                color: "white"
-                width: name.width * 1.1
-                height: name.height * 1.1
-                anchors {
-                    top: img.top
-                    horizontalCenter: img.horizontalCenter
-                    bottomMargin: 0.1*parent.height
-                }
-                GCText {
-                    id: name
-                    color: "blue"
-                    fontSize: regularSize
-                    anchors.centerIn: name_rect
-                    text: items.dataset[items.count].name
-                }
+            property bool mouseEnabled : true
+
+            MouseArea{
+                anchors.fill: img
+                onClicked: {showImage()}
             }
-            function showImage(){
-                if(items.dataset[items.count].id=="monitor")
+
+            //            MouseArea {
+            //                id: drag
+            //                enabled:parent.mouseEnabled
+            //                drag.target: img
+            //                drag.axis: Drag.XandYAxis
+            //                hoverEnabled: true
+            //                anchors.fill: parent
+            //                onPressed: {
+            //                    img.anchors.right=undefined
+            //                    img.anchors.bottom=undefined
+            //                }
+
+            //                onReleased: {
+            //                    drop()
+            //                }
+
+            //            }
+        }
+
+        function showImage(){
+            if(items.dataset[items.count].id=="monitor")
+            {
+                monitor.opacity=1
+            }
+            else
+                if(items.dataset[items.count].id=="cpu")
                 {
-                    monitor.visible=true
+                    cpu.opacity=1
                 }
                 else
-                    if(items.dataset[items.count].id=="cpu")
+                    if(items.dataset[items.count].id=="keyboard")
                     {
-                        cpu.visible=true
+                        keyboard.opacity=1
                     }
                     else
-                        if(items.dataset[items.count].id=="keyboard")
+                        if(items.dataset[items.count].id=="mouse")
                         {
-                            keyboard.visible=true
+                            mouse.opacity=1
                         }
-                        else
-                            if(items.dataset[items.count].id=="mouse")
-                            {
-                                mouse.visible=true
-                            }
-                return 0
+            return 0
+        }
+
+
+        Rectangle {
+            id: name_rect
+            visible: false
+            border.color: "black"
+            border.width: 1
+            radius: 2*ApplicationInfo.ratio
+            color: "white"
+            width: name.width * 1.1
+            height: name.height * 1.1
+            anchors {
+                top: boxopened.bottom
+                horizontalCenter: boxopened.horizontalCenter
+                bottomMargin: 0.1*parent.height
             }
-
-
-            MouseArea {
-                anchors.fill: parent
-
-                onClicked:img.showImage(),background.next()
+            GCText {
+                id: name
+                color: "black"
+                fontSize: regularSize
+                anchors.centerIn: name_rect
+                text: items.dataset[items.count].name
             }
-
-
-
         }
 
         Image {
             id: next
-            anchors.left: img.right
-            anchors.leftMargin: 20 * ApplicationInfo.ratio
-            anchors.verticalCenter: img.verticalCenter
+            visible: false
+            anchors.left: boxopened.right
+            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.verticalCenter: boxopened.verticalCenter
             source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-            sourceSize.height: 80 * ApplicationInfo.ratio
+            sourceSize.height: 40 * ApplicationInfo.ratio
             Behavior on scale { PropertyAnimation { duration: 100} }
 
             MouseArea {
@@ -414,6 +492,9 @@ ActivityBase {
             }
         }
 
+
+
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -421,22 +502,12 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home}
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
         }
-
-        Bonus {
-            id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
-        }
-
-
     }
-
 }
 

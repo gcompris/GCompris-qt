@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2015 Sagar Chand Agarwal <atomsagar@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,14 +21,14 @@ ActivityInfo {
   name: "computer/Computer.qml"
   difficulty: 1
   icon: "computer/computer.svg"
-  author: "Your Name <yy@zz.org>"
+  author: "Sagar Chand Agarwal < atomsagar@gmail.com >"
   demo: true
-  title: "Computer activity"
-  description: ""
-  //intro: "put here in comment the text for the intro voice"
-  goal: ""
-  prerequisite: ""
-  manual: ""
-  credit: ""
+  title: qsTr("Computer activity")
+  description: qsTr("Your goal is to click on the box kept beside the table and see the components of computer one by one and read about it.Then,Drag the image to the specific points on the table and place it.Zoom at the table to enjoy virtual settings.")
+  //intro: "Dad bought personal computer.Unbox the box kept beside the door and drag components one by one."
+  goal: qsTr("Learning the parts of computer and basic setting of its external components")
+  prerequisite: "none"
+  manual: qsTr("Drag and drop the components on the table and zoom the monitor and enjoy.")
+  credit: qsTr("Siddhesh Suthar(siddhism) for information implementation.")
   section: "fun"
 }
