@@ -9,14 +9,14 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="435.77759"
-   height="169.37607"
-   id="svg4449"
+   width="298.59085"
+   height="126.58681"
+   id="svg4239"
    version="1.1"
    inkscape:version="0.48.4 r9939"
    sodipodi:docname="resident.svg">
   <defs
-     id="defs4451" />
+     id="defs4241" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -24,23 +24,23 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="149.38899"
-     inkscape:cy="63.325016"
+     inkscape:zoom="2.8"
+     inkscape:cx="263.89228"
+     inkscape:cy="9.8387632"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g15148"
      showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1307"
-     inkscape:window-height="744"
-     inkscape:window-x="59"
-     inkscape:window-y="24"
+     inkscape:window-width="1366"
+     inkscape:window-height="695"
+     inkscape:window-x="-2"
+     inkscape:window-y="28"
      inkscape:window-maximized="1" />
   <metadata
-     id="metadata4454">
+     id="metadata4244">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -55,11 +55,11 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-225.61101,-426.31113)">
+     transform="translate(-225.65491,-469.10041)">
     <g
        style="display:inline;enable-background:new"
        id="g15148"
-       transform="matrix(1.1853934,0,0,0.76369861,-243.53347,311.01041)">
+       transform="matrix(0.8122208,0,0,0.5707664,-95.79863,382.92796)">
       <path
          style="opacity:0.15;fill:#000000;fill-rule:evenodd;stroke:none;display:inline;enable-background:new"
          d="m 734.20003,300.83004 15.82811,14.38743 12.72928,-3.16998 0.63646,-13.13281 -13.28226,-13.48172 -15.91159,15.39708 z"
@@ -3243,7 +3243,7 @@
         </g>
       </g>
       <g
-         transform="matrix(0.7267426,0,0,0.7267426,451.92132,190.78949)"
+         transform="matrix(0.7267426,0,0,0.7267426,432.1343,172.01774)"
          id="g17424"
          style="fill:#d38d5f;fill-opacity:1;display:inline;enable-background:new">
         <g

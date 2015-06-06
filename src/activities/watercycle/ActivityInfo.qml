@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Sagar Chand Agarwal <atomsagar@gmail.com>
+ * Copyright (C) 2015 Sagar Chand Agarwal <atomsagar@gmail.com> (Qt Quick port)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,16 +18,17 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "watercycle/Watercycle.qml"
-  difficulty: 1
-  icon: "watercycle/watercycle.svg"
-  author: "Sagar Chand Agarwal <atomsagar@gmail.com>"
-  demo: true
-  title: qsTr("Watercycle activity")
-  description: qsTr("Tux is tired and is coming home.Help Tux to take bath by completing the water cycle.")
-  goal: qsTr("Understand the different components that make up the water cycle.Click on different elements like sun,cloud,power station,wastewater and boat to see the progress")
-  prerequisite:qsTr( "Nothing")
-  manual: ""
-  credit: ""
-  section: "fun"
+    name: "watercycle/Watercycle.qml"
+    difficulty: 1
+    icon: "watercycle/watercycle.svg"
+    author: qsTr("Sagar Chand Agarwal")
+    demo: true
+    title: "Watercycle activity"
+    description: qsTr("Help Tux to take bath by completing the water cycle, and giving water to Tux's home ,before Tux reaches shore.")
+    //intro: "put here in comment the text for the intro voice"
+    goal: qsTr("Understand the water cycle and how it works.")
+    prerequisite: "none"
+    manual: ""
+    credit: ""
+    section: "fun"
 }
