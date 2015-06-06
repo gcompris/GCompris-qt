@@ -23,7 +23,7 @@ ActivityInfo {
   icon: "align4/align4.svg"
   author: "Bharath M S <brat.197@gmail.com>"
   demo: true
-  title: qsTr("Align four")
+  title: qsTr("Align four (against Tux)")
   description: qsTr("Arrange four tokens in a row")
 //  intro: "Click on the column where you wish your token to fall and try to align of 4 tokens before Tux."
   goal: qsTr("Create a line of 4 tokens either horizontally (lying down), vertically (standing up) or diagonally.")
