@@ -45,7 +45,6 @@ guessnumber
 hanoi
 hanoi_real
 hexagon
-simplepaint
 imageid
 imagename
 instruments
@@ -94,6 +93,7 @@ reversecount
 scalesboard
 scalesboard_weight
 scalesboard_weight_avoirdupois
+simplepaint
 smallnumbers
 smallnumbers2
 sudoku
@@ -102,4 +102,5 @@ target
 tic_tac_toe
 tic_tac_toe_2players
 traffic
+watercycle
 wordsgame
