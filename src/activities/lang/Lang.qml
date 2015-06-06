@@ -1,25 +1,26 @@
 /* GCompris - lang.qml
- *
- * Copyright (C) 2014 Siddhesh suthar<siddhesh.it@gmail.com>
- *
- * Authors:
- *   Pascal Georges (pascal.georges1@free.fr) (GTK+ version)
- *   Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
- *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Integration Lang dataset)
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 3 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
- */
+*
+* Copyright (C) Holger Kaelberer <holger.k@elberer.de> (Qt Quick port of imageid)
+*
+* Authors:
+*   Pascal Georges (pascal.georges1@free.fr) (GTK+ version)
+*   Holger Kaelberer <holger.k@elberer.de> (Qt Quick port of imageid)
+*   Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
+*   Bruno Coudoin <bruno.coudoin@gcompris.net> (Integration Lang dataset)
+*
+*   This program is free software; you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation; either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/
 import QtQuick 2.1
 import GCompris 1.0
 import QtGraphicalEffects 1.0
@@ -65,6 +66,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias wordImage: wordImage
+            property alias imageFrame: imageFrame
             property alias wordText: wordText
             property alias categoryText: categoryText
             property alias wordListModel: wordListModel
@@ -73,6 +75,7 @@ ActivityBase {
             property variant goodWord
             property int goodWordIndex
             property alias englishFallbackDialog: englishFallbackDialog
+            property alias quiz: quiz
 
             function playWord() {
                 if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
@@ -89,7 +92,7 @@ ActivityBase {
         }
 
         onStart: {
-            Activity.init(items)
+            Activity.init(items,quiz) //change here passing quiz
             repeatItem.visible = false
             keyNavigation = false
             activity.audioVoices.error.connect(voiceError)
@@ -123,59 +126,59 @@ ActivityBase {
         }
 
         Rectangle{
-                id: categoryTextbg
-                x: categoryText.x -4
-                y: categoryText.y -4
-                width: imageFrame.width
-                height: categoryText.height +4
-                color: "#5090ff"
-                border.color: "#000000"
-                border.width: 2
-                radius: 16
-                anchors.bottom: imageFrame.top
-                anchors.left: imageFrame.left
-                anchors.bottomMargin: 20
+            id: categoryTextbg
+            x: categoryText.x -4
+            y: categoryText.y -4
+            width: imageFrame.width
+            height: categoryText.height +4
+            color: "#5090ff"
+            border.color: "#000000"
+            border.width: 2
+            radius: 16
+            anchors.bottom: imageFrame.top
+            anchors.left: imageFrame.left
+            anchors.bottomMargin: 20
 
 
-                GCText{
-                        id: categoryText
-                        text: ""
-                        fontSize: largeSize
-                        font.weight: Font.DemiBold
-                        width: parent.width
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        color: "white"
-                        wrapMode: Text.WordWrap
+            GCText{
+                id: categoryText
+                text: ""
+                fontSize: largeSize
+                font.weight: Font.DemiBold
+                width: parent.width
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                color: "white"
+                wrapMode: Text.WordWrap
 
-                        property string nextCategory
-                        function changeCategory(nextCategory_) {
-                            nextCategory = nextCategory_
-                            animCategory.start()
-                        }
+                property string nextCategory
+                function changeCategory(nextCategory_) {
+                    nextCategory = nextCategory_
+                    animCategory.start()
+                }
 
-                        SequentialAnimation {
-                            id: animCategory
-                            PropertyAnimation {
-                                target: categoryText
-                                property: "opacity"
-                                to: 0
-                                duration: 100
-                            }
-                            PropertyAction {
-                                target: categoryText
-                                property: "text"
-                                value: "Category: "+ categoryText.nextCategory
-                            }
-                            PropertyAnimation {
-                                target: categoryText
-                                property: "opacity"
-                                to: 1
-                                duration: 100
-                            }
-                        }
-
+                SequentialAnimation {
+                    id: animCategory
+                    PropertyAnimation {
+                        target: categoryText
+                        property: "opacity"
+                        to: 0
+                        duration: 100
                     }
+                    PropertyAction {
+                        target: categoryText
+                        property: "text"
+                        value: "Category: "+ categoryText.nextCategory
+                    }
+                    PropertyAnimation {
+                        target: categoryText
+                        property: "opacity"
+                        to: 1
+                        duration: 100
+                    }
+                }
+
+            }
         }
 
         Image {
@@ -266,59 +269,59 @@ ActivityBase {
         }
 
         Rectangle{
-                id: wordTextbg
-                x: wordText.x -4
-                y: wordText.y -4
-                width: imageFrame.width
-                height: wordText.height +4
-                color: "#5090ff"
-                border.color: "#000000"
-                border.width: 2
-                radius: 16
-                anchors.top: imageFrame.bottom
-                anchors.left: imageFrame.left
-                anchors.topMargin: 20
+            id: wordTextbg
+            x: wordText.x -4
+            y: wordText.y -4
+            width: imageFrame.width
+            height: wordText.height +4
+            color: "#5090ff"
+            border.color: "#000000"
+            border.width: 2
+            radius: 16
+            anchors.top: imageFrame.bottom
+            anchors.left: imageFrame.left
+            anchors.topMargin: 20
 
 
-                GCText{
-                        id: wordText
-                        text: ""
-                        fontSize: largeSize
-                        font.weight: Font.DemiBold
-                        width: parent.width
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        color: "white"
-                        wrapMode: Text.WordWrap
+            GCText{
+                id: wordText
+                text: ""
+                fontSize: largeSize
+                font.weight: Font.DemiBold
+                width: parent.width
+                horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                color: "white"
+                wrapMode: Text.WordWrap
 
-                        property string nextWord
-                        function changeText(nextWord_) {
-                            nextWord = nextWord_
-                            animWord.start()
-                        }
+                property string nextWord
+                function changeText(nextWord_) {
+                    nextWord = nextWord_
+                    animWord.start()
+                }
 
-                        SequentialAnimation {
-                            id: animWord
-                            PropertyAnimation {
-                                target: wordText
-                                property: "opacity"
-                                to: 0
-                                duration: 100
-                            }
-                            PropertyAction {
-                                target: wordText
-                                property: "text"
-                                value: wordText.nextWord
-                            }
-                            PropertyAnimation {
-                                target: wordText
-                                property: "opacity"
-                                to: 1
-                                duration: 100
-                            }
-                        }
-
+                SequentialAnimation {
+                    id: animWord
+                    PropertyAnimation {
+                        target: wordText
+                        property: "opacity"
+                        to: 0
+                        duration: 100
                     }
+                    PropertyAction {
+                        target: wordText
+                        property: "text"
+                        value: wordText.nextWord
+                    }
+                    PropertyAnimation {
+                        target: wordText
+                        property: "opacity"
+                        to: 1
+                        duration: 100
+                    }
+                }
+
+            }
 
         }
 
@@ -353,6 +356,10 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onReloadClicked: {
+                items.count = 0
+                list.visible = false
+            }
         }
 
         Bonus {
@@ -405,6 +412,11 @@ ActivityBase {
             anchors.top: undefined
         }
 
+        Quiz{
+            id: quiz
+            displayed: false
+            width: parent.width
+            height: parent.height - bar.height
+        }
     }
-
 }

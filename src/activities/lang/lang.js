@@ -31,6 +31,7 @@ var level = null;
 var maxLevel;
 var maxSubLevel;
 var items;
+var quizItems;
 var baseUrl = "qrc:/gcompris/src/activities/lang/resource/";
 var dataset = null;
 var lessons
@@ -39,8 +40,9 @@ var subLevelsLeft
 var backFlag
 var flag
 
-function init(items_) {
+function init(items_,quiz_) {
     items = items_
+    quizItems = quiz_
     maxLevel = 0
     maxSubLevel = 0
     currentLevel = 0
@@ -105,6 +107,8 @@ function nextLevel() {
         currentLevel = 0
     }
     items.score.currentSubLevel = 0;
+    items.imageFrame.visible = true
+    items.quiz.displayed = false
     initLevel();
 }
 
@@ -113,15 +117,20 @@ function previousLevel() {
         currentLevel = maxLevel - 1
     }
     items.score.currentSubLevel = 0;
+    items.imageFrame.visible = true
+    items.quiz.displayed = false
     initLevel();
 }
 
 function nextSubLevel() {
     items.score.currentSubLevel++;
     if(items.score.currentSubLevel == items.score.numberOfSubLevels){
-        items.score.visible = false
-        items.bonus.good("smiley");
+//        items.score.visible = false
+//        items.bonus.good("smiley");
         //here logic for starting quiz game
+        initQuiz()
+        items.imageFrame.visible = false
+        items.quiz.displayed = true
     }
     else{
         initSubLevel();
@@ -130,6 +139,9 @@ function nextSubLevel() {
 
 function prevSubLevel() {
     if(--items.score.currentSubLevel < 0) {
+        //TO DO
+        //should not allow beyond zero. what to do display an error message
+        // not changing it for quickly passing through the main activity while testing.
         items.score.currentSubLevel = maxSubLevel - 1;
     }
     initSubLevel()
@@ -140,4 +152,71 @@ function prevSubLevel() {
 function badWordSelected(wordIndex) {
     if (subLevelsLeft[0] != wordIndex)
         subLevelsLeft.unshift(wordIndex);
+}
+
+function initQuiz(){
+    items.score.currentSubLevel = 0
+    quizItems.score.currentSubLevel = 0
+    initSubLevelQuiz()
+}
+
+function initSubLevelQuiz(){
+
+    if(quizItems.score.currentSubLevel < quizItems.score.numberOfSubLevels)
+        quizItems.score.currentSubLevel = currentSubLevel + 1;
+    else
+        quizItems.score.visible = false
+
+    quizItems.goodWordIndex = subLevelsLeft.pop()
+    quizItems.goodWord = wordList[quizItems.score.currentSubLevel]
+
+    var selectedWords = []
+    var selectedImages = []
+    selectedWords.push(quizItems.goodWord.translatedTxt)
+    selectedImages.push("qrc:/gcompris/data/"+ quizItems.goodWord.image)
+
+    for (var i = 0; i < wordList.length; i++) {
+        if(wordList[i].translatedTxt !== selectedWords[0]){
+            selectedWords.push(wordList[i].translatedTxt)
+            selectedImages.push("qrc:/gcompris/data/"+ wordList[i].image)
+        }
+        if(selectedWords.length > 4)
+            break
+    }
+
+    // Push the result in the model
+    quizItems.wordListModel.clear();
+    quizItems.wordImageModel.clear();
+
+    var y = Math.random();
+    shuffle(selectedWords,y);
+    shuffle(selectedImages,y);
+
+    for (var j = 0; j < selectedWords.length; j++) {
+        quizItems.wordListModel.append({"word": selectedWords[j]})
+        quizItems.wordImageModel.append({"image": selectedImages[j]})
+        //will have to append "image" : image url for the same word here.
+        //can be done better if we can append an whole element
+    }
+
+    quizItems.wordImage.changeSource("qrc:/gcompris/data/" + quizItems.goodWord.image)
+}
+
+function nextSubLevelQuiz(){
+        ++quizItems.score.currentSubLevel
+        if(subLevelsLeft.length === 0) {
+            //starting back the main activity
+            items.imageFrame.visible = true
+            items.quiz.displayed = false
+            items.bonus.good("smiley")
+        } else {
+            initSubLevelQuiz();
+        }
+}
+
+//used from core, modified a bit
+function shuffle(o,y) {
+    for(var j, x, i = o.length; i;
+        j = Math.floor(y * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
 }
