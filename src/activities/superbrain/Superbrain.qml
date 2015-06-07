@@ -67,6 +67,7 @@ ActivityBase {
             property alias chooserGrid: chooserGrid
             property alias guessModel: guessModel
             property alias guessColumn: guessColumn
+            property alias currentRepeater: currentRepeater
         }
 
         onStart: { Activity.start(items) }
@@ -76,14 +77,14 @@ ActivityBase {
             id: colorsColumn
 
             anchors.left: parent.left
-            anchors.leftMargin: 65 * background.scaleFactor * ApplicationInfo.ratio
+            anchors.leftMargin: 5 * background.scaleFactor * ApplicationInfo.ratio
             anchors.top: parent.top
-            anchors.topMargin: 20 * background.scaleFactor * ApplicationInfo.ratio
+            anchors.topMargin: 5 * background.scaleFactor * ApplicationInfo.ratio
 
-            spacing: 5 * background.scaleFactor * ApplicationInfo.ratio
+            spacing: 3 * background.scaleFactor * ApplicationInfo.ratio
 
-            width: 100 * ApplicationInfo.ratio
-            height: 100 * ApplicationInfo.ratio
+            width: guessColumn.guessSize
+            height: guessColumn.guessSize
 
             add: Transition {
                 NumberAnimation { properties: "y"; duration: 1000; easing.type: Easing.OutBounce }
@@ -152,88 +153,6 @@ ActivityBase {
             tooltipRect.opacity = 0.9;
         }
 
-        Rectangle {
-            id: chooser
-
-            width: chooserGrid.width + 15
-            height: chooserGrid.height + 15
-
-            color: "darkgray"
-            border.width: 0
-            border.color: "white"
-
-            opacity: 1
-            scale: 0
-            visible: false
-            z: 10
-
-            property bool above: true
-
-            Rectangle {
-                width: 10
-                height: 10
-                x: chooser.width / 2 - 5
-                y: chooser.above ? (chooser.height - 5) : (-5)
-                color: chooser.color
-                z: chooser.z
-                transform: Rotation { origin.x: 5; origin.y: 5; angle: 45}
-            }
-
-            GridView {
-                id: chooserGrid
-
-                cellWidth: guessColumn.guessSize * 2
-                cellHeight: guessColumn.guessSize * 2
-                width: Math.ceil(count / 2) * cellWidth// * 1.2
-                height: 2 * cellHeight// * 1.2
-                anchors.centerIn: parent
-
-                clip: false
-                interactive: false
-                verticalLayoutDirection: GridView.TopToBottom
-                layoutDirection: Qt.LeftToRight
-                flow: GridView.FlowLeftToRight
-
-                property int colIndex: 0
-                property int guessIndex: 0
-
-                Timer {
-                    id: chooserTimer
-                    interval: 2000
-                    onTriggered: showChooser(false);
-                }
-
-                model: new Array()
-
-                delegate: Rectangle {
-                    width: chooserGrid.cellWidth
-                    height: chooserGrid.cellWidth
-                    radius: 5
-                    border.width: index == chooserGrid.colIndex ? 3 : 1
-                    border.color: index == chooserGrid.colIndex ? "white" : "darkgray"
-                    color: modelData
-
-                    MouseArea {
-                        id: chooserMouseArea
-                        anchors.fill: parent
-                        acceptedButtons: Qt.LeftButton
-                        z: 11
-                        hoverEnabled: ApplicationInfo.isMobile ? false : true
-
-                        onClicked: {
-                            chooserGrid.colIndex = index;
-                            var obj = items.guessModel.get(0);
-                            obj.guess.setProperty(chooserGrid.guessIndex, "colIndex", chooserGrid.colIndex);
-                            showChooser(false);
-                        }
-                    }
-                }
-            }
-            Behavior on scale {
-                NumberAnimation { duration: 100 }
-            }
-        }
-
         function showChooser(visible, guessIndex, item)
         {
             if (!visible) {
@@ -241,23 +160,223 @@ ActivityBase {
                 chooser.scale = 0;
                 return;
             }
-
             var modelObj = guessModel.get(0).guess.get(guessIndex);
-            var obj = background.mapFromItem(item, item.x, item.y);
+            var absolute = currentRow.mapToItem(background, item.x, item.y);
             chooserGrid.colIndex = modelObj.colIndex;
             chooserGrid.guessIndex = guessIndex;
-            chooser.x = obj.x + guessColumn.guessSize / 2 - 0.5 * chooser.width;
-            var targetY = obj.y - chooser.height - 15;
-            var targetAbove = true;
-            if (targetY < 0) {
-                targetY = obj.y + guessColumn.guessSize + 10;
-                targetAbove = false;
+            var chooserOffset = 0.5*chooser.width - item.width/2;
+            var arrowOffset = 0;
+            var targetX = item.x - chooserOffset;
+            // beyond left screen border:
+            if (absolute.x - chooserOffset < 0) {
+                arrowOffset = absolute.x - chooserOffset;
+                targetX -= arrowOffset;
             }
+            // beyond right screen border:
+            if (absolute.x + chooserOffset + item.width > background.width) {
+                arrowOffset = absolute.x + chooserOffset + item.width - background.width;
+                targetX -= arrowOffset;
+            }
+
+            chooser.x = targetX;
+            chooser.arrowOffset = arrowOffset;
+            var targetY = item.y - chooser.height - 15;
+            var targetAbove = true;
+            /* //only on top-level, at window border:
+if (targetY < 0) {
+                targetY = item.y + guessColumn.guessSize + 10;
+                targetAbove = false;
+            }*/
             chooser.y = targetY;
             chooser.above = targetAbove;
             chooser.scale = 1;
             chooser.visible = true;
             chooserTimer.restart();
+            //console.log("XXX chooser at item.x=" + item.x + " absolute.x=" + absolute.x + " chooser.x/w=" + chooser.x + "/" + chooser.width + " background.width=" + background.width + " currentRow.x/y/w/h=" + currentRow.x + "/" + currentRow.y + "/" + currentRow.width + "/" + currentRow.height + " guessIdx=" + guessIndex + " arrowOff=" + arrowOffset);
+        }
+
+        Item {
+            id: currentWrapper
+
+            width: currentRow.width
+            height: currentRow.height
+            z: 8
+
+            anchors.left: parent.left
+            anchors.leftMargin: background.width / 2 - width / 2
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 0.4 * background.height
+
+            Rectangle {
+                id: chooser
+
+                width: chooserGrid.width + 15
+                height: chooserGrid.height + 15
+
+                color: "darkgray"
+                border.width: 0
+                border.color: "white"
+
+                opacity: 1
+                scale: 0
+                visible: false
+                z: 10
+
+                property bool above: true
+                property real arrowOffset: 0
+
+                Rectangle {
+                    id: chooserArrow
+                    width: 10
+                    height: 10
+
+                    x: chooser.width / 2 - 5 + chooser.arrowOffset
+                    y: chooser.above ? (chooser.height - 5) : (-5)
+                    color: chooser.color
+                    z: chooser.z
+                    transform: Rotation { origin.x: 5; origin.y: 5; angle: 45}
+                }
+
+                GridView {
+                    id: chooserGrid
+
+                    cellWidth: guessColumn.guessSize * 2
+                    cellHeight: guessColumn.guessSize * 2
+                    width: Math.ceil(count / 2) * cellWidth// * 1.2
+                    height: 2 * cellHeight// * 1.2
+                    anchors.centerIn: parent
+                    z: 11
+
+                    clip: false
+                    interactive: false
+                    verticalLayoutDirection: GridView.TopToBottom
+                    layoutDirection: Qt.LeftToRight
+                    flow: GridView.FlowLeftToRight
+
+                    property int colIndex: 0
+                    property int guessIndex: 0
+
+                    Timer {
+                        id: chooserTimer
+                        interval: 2000
+                        onTriggered: showChooser(false);
+                    }
+
+                    model: new Array()
+
+                    delegate: Rectangle {
+                        width: chooserGrid.cellWidth
+                        height: chooserGrid.cellWidth
+                        radius: 5 * background.scaleFactor
+                        border.width: index == chooserGrid.colIndex ? 3 : 1
+                        border.color: index == chooserGrid.colIndex ? "white" : "darkgray"
+                        color: modelData
+
+                        MouseArea {
+                            id: chooserMouseArea
+                            anchors.fill: parent
+                            acceptedButtons: Qt.LeftButton
+                            z: 11
+                            hoverEnabled: ApplicationInfo.isMobile ? false : true
+
+                            onClicked: {
+                                chooserGrid.colIndex = index;
+                                var obj = items.guessModel.get(0);
+                                obj.guess.setProperty(chooserGrid.guessIndex, "colIndex", chooserGrid.colIndex);
+                                showChooser(false);
+                            }
+                        }
+                    }
+                }
+                Behavior on scale {
+                    NumberAnimation { duration: 100 }
+                }
+            }
+
+            Row {
+                id: currentRow
+                visible: true
+
+                property double factor: 1.9
+
+                anchors.left: parent.left
+                anchors.top: parent.top
+
+                spacing: guessColumn.horizSpacing * factor
+                height: guessColumn.guessSize * factor
+                scale: 1
+                z: 9
+
+                Repeater {
+                    id: currentRepeater
+
+                    delegate: Rectangle {
+                        id: currentGuess
+
+                        width: guessColumn.guessSize * currentRow.factor
+                        height: guessColumn.guessSize * currentRow.factor
+                        radius: width * 0.5
+                        border.width: 2 * currentRow.factor
+                        border.color: "lightgray"
+                        color: Activity.colors[colIndex]
+                        opacity: 1.0
+                        z: 2
+
+                        MouseArea {
+                            id: mouseArea
+                            anchors.fill: parent
+                            acceptedButtons: Qt.LeftButton | Qt.RightButton
+                            enabled: true
+                            z: 3
+                            hoverEnabled: ApplicationInfo.isMobile ? false : true
+
+                            onPressAndHold: {
+                                if (guessColumn.count > 1)
+                                    guessModel.get(0).guess.get(index).colIndex = guessModel.get(1).guess.get(index).colIndex;
+                            }
+
+                            onClicked: {
+                                var obj = items.guessModel.get(0).guess.get(index);
+                                if (mouse.button == Qt.LeftButton)
+                                    obj.colIndex = (obj.colIndex == Activity.currentColors.length - 1) ? 0 : obj.colIndex + 1;
+                                else
+                                    obj.colIndex = (obj.colIndex == 0) ? Activity.currentColors.length - 1 : obj.colIndex - 1;
+                                showChooser(true, index, parent);
+                            }
+                        }
+                        states: State {
+                            name: "scaled"; when: mouseArea.containsMouse
+                            PropertyChanges {
+                                target: currentGuess
+                                scale: 1.1
+                            }
+                        }
+                        transitions: Transition {
+                            NumberAnimation { properties: "scale"; easing.type: Easing.OutCubic }
+                        }
+                    }
+                }
+            }
+        }
+
+        BarButton {
+            id: okButton
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+            sourceSize.width: 66 * bar.barZoom
+            width: guessColumn.guessSize * currentRow.factor
+            height: guessColumn.guessSize * currentRow.factor
+            visible: true
+            z: 8
+            anchors {
+                top: currentWrapper.bottom
+                topMargin: 10 * background.scaleFactor
+                left: currentWrapper.left
+                leftMargin: currentWrapper.leftMargin
+            }
+            onClicked: {
+                showChooser(false);
+                Activity.checkGuess();
+            }
         }
 
         ListModel {
@@ -274,6 +393,7 @@ ActivityBase {
             anchors.bottomMargin: Math.min(5, background.height - height - (background.isPortrait ? bar.height : 0))
 
             boundsBehavior: Flickable.DragOverBounds
+            opacity: 0.65
 
             readonly property int guessSize: 30 * background.scaleFactor * ApplicationInfo.ratio
             readonly property int vertSpacing: 15 * background.scaleFactor * ApplicationInfo.ratio
@@ -302,6 +422,7 @@ ActivityBase {
                 height: guessColumn.guessSize
                 spacing: guessColumn.horizSpacing
                 property int rowIndex: index
+                visible: index != 0
 
                 Item {
                     id: guessRowSpacer
@@ -374,42 +495,6 @@ ActivityBase {
                             color: Activity.colors[colIndex]
                             opacity: 1.0
                             z: 2
-
-                            MouseArea {
-                                id: mouseArea
-                                anchors.fill: parent
-                                acceptedButtons: Qt.LeftButton | Qt.RightButton
-                                enabled: guessRow.rowIndex == 0
-                                visible: guessRow.rowIndex == 0  // note, need to set invisible or it will cover the tooltip MouseArea
-                                z: 3
-                                hoverEnabled: ApplicationInfo.isMobile ? false : true
-
-                                onPressAndHold: {
-                                    if (guessColumn.count > 1)
-                                        guessRepeater.model.get(index).colIndex = guessModel.get(1).guess.get(index).colIndex;
-                                }
-
-                                onClicked: {
-                                    var obj = guessRepeater.model.get(index);
-                                    if (mouse.button == Qt.LeftButton)
-                                        obj.colIndex = (obj.colIndex == Activity.currentColors.length - 1) ? 0 : obj.colIndex + 1;
-                                    else
-                                        obj.colIndex = (obj.colIndex == 0) ? Activity.currentColors.length - 1 : obj.colIndex - 1;
-                                    showChooser(true, index, parent);
-                                }
-                            }
-                        }
-
-                        states: State {
-                            name: "scaled"; when: mouseArea.containsMouse
-                            PropertyChanges {
-                                target: singleGuessWrapper
-                                scale: 1.3
-                            }
-                        }
-
-                        transitions: Transition {
-                            NumberAnimation { properties: "scale"; easing.type: Easing.OutCubic }
                         }
                     }
                 }
@@ -483,23 +568,6 @@ ActivityBase {
                         }
                     }
                 }
-            }
-        }
-
-        BarButton {
-            id: okButton
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            sourceSize.width: 66 * bar.barZoom
-            visible: true
-            anchors {
-                bottom: parent.bottom
-                bottomMargin: 0.3 * parent.height
-                right: guessColumn.left
-                rightMargin: 10
-            }
-            onClicked: {
-                showChooser(false);
-                Activity.checkGuess();
             }
         }
 

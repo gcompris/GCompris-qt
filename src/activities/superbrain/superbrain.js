@@ -106,6 +106,7 @@ function initLevel() {
     //console.log("XXX solution: " + JSON.stringify(solution));
     // populate currentColors:
     items.colorsRepeater.model.clear();
+    items.currentRepeater.model = new Array();
     currentColors = new Array();
     for (var i = 0; i < numberOfColors; ++i) {
         currentColors[i] = colors[i];
@@ -130,6 +131,8 @@ function appendGuessRow()
                                 guess: guessRow,
                                 result: {correct: 0, misplaced: 0}
                             });
+    var obj = items.guessModel.get(0);
+    items.currentRepeater.model = obj.guess;
 }
 
 function checkGuess()
