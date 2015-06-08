@@ -202,10 +202,9 @@ if (targetY < 0) {
             height: currentRow.height
             z: 8
 
-            anchors.left: parent.left
-            anchors.leftMargin: background.width / 2 - width / 2
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: 0.4 * background.height
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: ApplicationSettings.isBarHidden ? parent.bottom : bar.top
+            anchors.bottomMargin: 20 * ApplicationInfo.ratio
 
             Rectangle {
                 id: chooser
@@ -258,7 +257,7 @@ if (targetY < 0) {
 
                     Timer {
                         id: chooserTimer
-                        interval: 2000
+                        interval: 5000
                         onTriggered: showChooser(false);
                     }
 
@@ -337,10 +336,14 @@ if (targetY < 0) {
 
                             onClicked: {
                                 var obj = items.guessModel.get(0).guess.get(index);
-                                if (mouse.button == Qt.LeftButton)
-                                    obj.colIndex = (obj.colIndex == Activity.currentColors.length - 1) ? 0 : obj.colIndex + 1;
-                                else
-                                    obj.colIndex = (obj.colIndex == 0) ? Activity.currentColors.length - 1 : obj.colIndex - 1;
+                                if(chooserTimer.running && chooserGrid.guessIndex === index) {
+                                    if (mouse.button == Qt.LeftButton)
+                                        obj.colIndex = (obj.colIndex ==
+                                                        Activity.currentColors.length - 1) ? 0 : obj.colIndex + 1;
+                                    else
+                                        obj.colIndex = (obj.colIndex == 0) ?
+                                                    Activity.currentColors.length - 1 : obj.colIndex - 1;
+                                }
                                 showChooser(true, index, parent);
                             }
                         }
@@ -356,26 +359,20 @@ if (targetY < 0) {
                         }
                     }
                 }
-            }
-        }
 
-        BarButton {
-            id: okButton
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            sourceSize.width: 66 * bar.barZoom
-            width: guessColumn.guessSize * currentRow.factor
-            height: guessColumn.guessSize * currentRow.factor
-            visible: true
-            z: 8
-            anchors {
-                top: currentWrapper.bottom
-                topMargin: 10 * background.scaleFactor
-                left: currentWrapper.left
-                leftMargin: currentWrapper.leftMargin
-            }
-            onClicked: {
-                showChooser(false);
-                Activity.checkGuess();
+                BarButton {
+                    id: okButton
+                    source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+                    sourceSize.width: 66 * bar.barZoom
+                    width: guessColumn.guessSize * currentRow.factor
+                    height: guessColumn.guessSize * currentRow.factor
+                    visible: true
+                    z: 8
+                    onClicked: {
+                        showChooser(false);
+                        Activity.checkGuess();
+                    }
+                }
             }
         }
 
@@ -387,13 +384,12 @@ if (targetY < 0) {
         ListView {
             id: guessColumn
 
-            anchors.right: parent.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
-            anchors.bottom: background.isPortrait ? bar.top : parent.bottom
-            anchors.bottomMargin: Math.min(5, background.height - height - (background.isPortrait ? bar.height : 0))
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.bottom: currentWrapper.top
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio
 
             boundsBehavior: Flickable.DragOverBounds
-            opacity: 0.65
+            verticalLayoutDirection: ListView.BottomToTop
 
             readonly property int guessSize: 30 * background.scaleFactor * ApplicationInfo.ratio
             readonly property int vertSpacing: 15 * background.scaleFactor * ApplicationInfo.ratio
@@ -412,10 +408,6 @@ if (targetY < 0) {
 
             model: guessModel
 
-            Behavior on height {
-                PropertyAnimation { property: "height"; duration: 1000; easing.type: Easing.OutCubic }
-            }
-
             delegate: Row {
                 id: guessRow
                 width: guessColumn.width
@@ -426,7 +418,9 @@ if (targetY < 0) {
 
                 Item {
                     id: guessRowSpacer
-                    width: guessColumn.guessColWidth - (guessRepeater.count * (guessColumn.guessSize + (2 * guessColumn.statusMargin) + guessColumn.horizSpacing))
+                    width: guessColumn.guessColWidth -
+                           (guessRepeater.count * (guessColumn.guessSize +
+                                                   (2 * guessColumn.statusMargin) + guessColumn.horizSpacing))
                     height: parent.height
                 }
 
@@ -594,13 +588,12 @@ if (targetY < 0) {
 
         Score {
             id: score
-
-            anchors.bottom: bar.top
-            anchors.bottomMargin: 30 * ApplicationInfo.ratio
-            anchors.left: background.left
-            anchors.leftMargin: 10
-            anchors.top: undefined
-            anchors.right: undefined
+            anchors.bottom: undefined
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.topMargin: 10 * ApplicationInfo.ratio
+            anchors.left: undefined
+            anchors.top: parent.top
+            anchors.right: parent.right
         }
     }
 }
