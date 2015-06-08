@@ -49,6 +49,7 @@ Item{
     property alias wordImage: wordImage
     property alias imageFrame: imageFrame
     property alias wordListModel: wordListModel
+    property alias wordListView: wordListView
     property alias parser: parser
     property variant goodWord
     property int goodWordIndex
@@ -217,7 +218,7 @@ Item{
                     Image{
                         id: wordImageQuiz
                         width: wordListView.width/3
-                        height: wordListView.buttonHeight
+                        height: wordListView.buttonHeight * 0.7
                         source: image
                         z: 7
                         anchors.left: parent.left
