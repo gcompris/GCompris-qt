@@ -123,7 +123,7 @@ function previousLevel() {
 }
 
 function nextSubLevel() {
-    items.score.currentSubLevel++;
+    ++items.score.currentSubLevel;
     if(items.score.currentSubLevel == items.score.numberOfSubLevels){
         //        items.score.visible = false
         //        items.bonus.good("smiley");
@@ -171,7 +171,7 @@ function initQuiz(){
 function initSubLevelQuiz(){
 
     if(quizItems.score.currentSubLevel < quizItems.score.numberOfSubLevels)
-        quizItems.score.currentSubLevel = currentSubLevel + 1;
+        quizItems.score.currentSubLevel = quizItems.score.currentSubLevel + 1;
     else
         quizItems.score.visible = false
 
