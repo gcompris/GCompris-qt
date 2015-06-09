@@ -67,6 +67,7 @@ ActivityBase {
             property alias score: score
             property alias wordImage: wordImage
             property alias imageFrame: imageFrame
+            property alias wordTextbg: wordTextbg
             property alias wordText: wordText
             property alias categoryText: categoryText
             property alias wordListModel: wordListModel

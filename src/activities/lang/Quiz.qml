@@ -232,7 +232,7 @@ Item{
                         height: wordListView.buttonHeight
                         textLabel: word
                         isCorrectAnswer: word === Activity.quizItems.goodWord.translatedTxt
-                        onIncorrectlyPressed: Activity.badWordSelected(Activity.quizItems.goodWordIndex);
+                        onIncorrectlyPressed: Activity.badWordSelected(goodWordIndex);
                         onCorrectlyPressed: Activity.nextSubLevelQuiz();
                     }
                 }

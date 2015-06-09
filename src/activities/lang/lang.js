@@ -76,20 +76,26 @@ function initLevel() {
 
     var currentLesson = lessons[currentLevel]
     wordList = Lang.getLessonWords(dataset, currentLesson);
+
     //    Core.shuffle(wordList);
     //    stopped shuffling for testing purposes.
 
     maxSubLevel = wordList.length;
     items.score.numberOfSubLevels = maxSubLevel;
     items.score.visible = true
+    items.score.currentSubLevel = 0;
+    items.imageFrame.visible = true
+    items.wordTextbg.visible = true
+    items.quiz.displayed = false
+    items.categoryText.changeCategory(currentLesson.name);
     items.count = 0;
     miniGame = 1;
-    items.categoryText.changeCategory(currentLesson.name);
 
     subLevelsLeft = [];
     for(var i in wordList){
         subLevelsLeft.push(i)   // This is available in all editors.
     }
+
 
     initSubLevel()
 }
@@ -106,9 +112,6 @@ function nextLevel() {
     if(maxLevel <= ++currentLevel ) {
         currentLevel = 0
     }
-    items.score.currentSubLevel = 0;
-    items.imageFrame.visible = true
-    items.quiz.displayed = false
     initLevel();
 }
 
@@ -116,17 +119,12 @@ function previousLevel() {
     if(--currentLevel < 0) {
         currentLevel = maxLevel - 1
     }
-    items.score.currentSubLevel = 0;
-    items.imageFrame.visible = true
-    items.quiz.displayed = false
     initLevel();
 }
 
 function nextSubLevel() {
     ++items.score.currentSubLevel;
     if(items.score.currentSubLevel == items.score.numberOfSubLevels){
-        //        items.score.visible = false
-        //        items.bonus.good("smiley");
         //here logic for starting quiz game
         items.imageFrame.visible = false
         items.quiz.displayed = true
@@ -142,7 +140,7 @@ function prevSubLevel() {
         //TO DO
         //should not allow beyond zero. what to do display an error message
         // not changing it for quickly passing through the main activity while testing.
-        items.score.currentSubLevel = maxSubLevel - 1;
+        items.score.currentSubLevel = maxSubLevel -1;
     }
     initSubLevel()
 }
@@ -162,10 +160,17 @@ function initQuiz(){
     }
 
     items.score.currentSubLevel = 0
+    items.score.visible = false
+    quizItems.score.visible = true
+    items.imageFrame.visible = false
+    items.wordTextbg.visible = false
+
+    quizItems.wordImage.visible = true
+    quizItems.imageFrame.visible = true
     quizItems.score.currentSubLevel = 0
+    currentSubLevel =0
+    quizItems.score.numberOfSubLevels = wordList.length
     initSubLevelQuiz()
-
-
 }
 
 function initSubLevelQuiz(){
@@ -176,7 +181,7 @@ function initSubLevelQuiz(){
         quizItems.score.visible = false
 
     quizItems.goodWordIndex = subLevelsLeft.pop()
-    quizItems.goodWord = wordList[quizItems.score.currentSubLevel]
+    quizItems.goodWord = wordList[quizItems.goodWordIndex]
 
     var selectedWords = []
     var selectedImages = []
@@ -212,7 +217,7 @@ function initSubLevelQuiz(){
 }
 
 function nextSubLevelQuiz(){
-    ++quizItems.score.currentSubLevel
+    ++currentSubLevel
     if(subLevelsLeft.length === 0) {
 
         if(miniGame==3){
