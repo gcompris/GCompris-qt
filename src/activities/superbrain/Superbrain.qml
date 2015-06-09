@@ -203,8 +203,31 @@ if (targetY < 0) {
             z: 8
 
             anchors.horizontalCenter: parent.horizontalCenter
-            anchors.bottom: ApplicationSettings.isBarHidden ? parent.bottom : bar.top
             anchors.bottomMargin: 20 * ApplicationInfo.ratio
+
+            state: ApplicationSettings.isBarHidden ? "hidden" : "shown"
+            states: [
+                State {
+                    name: "hidden"
+                    when: ApplicationSettings.isBarHidden
+                    AnchorChanges {
+                        target: currentWrapper;
+                        anchors.bottom: parent.bottom
+                    }
+                },
+                State {
+                    name: "shown"
+                    when: !ApplicationSettings.isBarHidden
+                    AnchorChanges {
+                        target: currentWrapper;
+                        anchors.bottom: bar.top
+                    }
+                }
+            ]
+
+            transitions: Transition {
+                AnchorAnimation { duration: 800; easing.type: Easing.OutBounce }
+            }
 
             Rectangle {
                 id: chooser
@@ -405,6 +428,10 @@ if (targetY < 0) {
 
             width: guessColWidth + 10 + (2 * horizSpacing) + resultColWidth
             height: count * (guessSize + vertSpacing)
+
+            displaced: Transition {
+                NumberAnimation { easing.type: Easing.OutCubic; properties: "y"; duration: 300 }
+            }
 
             model: guessModel
 
