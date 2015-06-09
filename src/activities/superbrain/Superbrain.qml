@@ -469,7 +469,10 @@ if (targetY < 0) {
                                     showTooltip(false)
                                 }
 
-                                onClicked: showTooltip(true, status, mouseAreaRect)  // for mobile
+                                onPressAndHold: showTooltip(true, status, mouseAreaRect);
+
+                                onDoubleClicked: Activity.ackColor(index, colIndex);
+
                             }
                         }
 
@@ -489,6 +492,30 @@ if (targetY < 0) {
                             color: Activity.colors[colIndex]
                             opacity: 1.0
                             z: 2
+
+                            Image {
+                                id: okImage
+                                visible: isAcked
+
+                                width: parent.width / 2
+                                height: parent.height / 2
+
+                                anchors.centerIn: parent
+
+                                source: Activity.baseUrl + "apply.svg"
+                            }
+
+                            MouseArea {
+                                id: ackMouseArea
+                                anchors.fill: parent
+                                acceptedButtons: Qt.LeftButton
+                                enabled: status == Activity.STATUS_UNKNOWN
+                                visible: status == Activity.STATUS_UNKNOWN
+                                z: 3
+                                hoverEnabled: ApplicationInfo.isMobile ? false : true
+
+                                onDoubleClicked: Activity.ackColor(index, colIndex);
+                            }
                         }
                     }
                 }
