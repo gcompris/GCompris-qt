@@ -77,18 +77,16 @@ function initLevel() {
     var currentLesson = lessons[currentLevel]
     wordList = Lang.getLessonWords(dataset, currentLesson);
 
-    //    Core.shuffle(wordList);
-    //    stopped shuffling for testing purposes.
+    Core.shuffle(wordList);
 
     maxSubLevel = wordList.length;
     items.score.numberOfSubLevels = maxSubLevel;
     items.score.visible = true
-    items.score.currentSubLevel = 0;
+    items.score.currentSubLevel = 1;
     items.imageFrame.visible = true
     items.wordTextbg.visible = true
     items.quiz.displayed = false
     items.categoryText.changeCategory(currentLesson.name);
-    items.count = 0;
     miniGame = 1;
 
     subLevelsLeft = [];
@@ -96,14 +94,13 @@ function initLevel() {
         subLevelsLeft.push(i)   // This is available in all editors.
     }
 
-
     initSubLevel()
 }
 
 function initSubLevel() {
     // initialize sublevel
 
-    items.goodWord = wordList[items.score.currentSubLevel]
+    items.goodWord = wordList[items.score.currentSubLevel-1]
     items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image)
     items.wordText.changeText(items.goodWord.translatedTxt)
 }
@@ -124,25 +121,24 @@ function previousLevel() {
 
 function nextSubLevel() {
     ++items.score.currentSubLevel;
-    if(items.score.currentSubLevel == items.score.numberOfSubLevels){
+    if(items.score.currentSubLevel == items.score.numberOfSubLevels+1){
         //here logic for starting quiz game
-        items.imageFrame.visible = false
-        items.quiz.displayed = true
         initQuiz()
     }
-    else{
+    else {
         initSubLevel();
     }
 }
 
 function prevSubLevel() {
-    if(--items.score.currentSubLevel < 0) {
+    if(--items.score.currentSubLevel <= 0) {
         //TO DO
-        //should not allow beyond zero. what to do display an error message
-        // not changing it for quickly passing through the main activity while testing.
-        items.score.currentSubLevel = maxSubLevel -1;
+//        items.score.currentSubLevel = maxSubLevel -1;
+        initQuiz()
     }
+    else {
     initSubLevel()
+    }
 }
 
 
@@ -150,6 +146,7 @@ function prevSubLevel() {
 function badWordSelected(wordIndex) {
     if (subLevelsLeft[0] != wordIndex)
         subLevelsLeft.unshift(wordIndex);
+    --quizItems.score.currentSubLevel; //to not increase currentSubLevel when question done wrong
 }
 
 function initQuiz(){
@@ -159,11 +156,16 @@ function initQuiz(){
         subLevelsLeft.push(i)   // This is available in all editors.
     }
 
+    Core.shuffle(subLevelsLeft)
+
     items.score.currentSubLevel = 0
     items.score.visible = false
+//    quizItems.bar.visible = true
+//    items.bar.visible = false
     quizItems.score.visible = true
     items.imageFrame.visible = false
     items.wordTextbg.visible = false
+    items.quiz.displayed = true
 
     quizItems.wordImage.visible = true
     quizItems.imageFrame.visible = true
@@ -184,14 +186,12 @@ function initSubLevelQuiz(){
     quizItems.goodWord = wordList[quizItems.goodWordIndex]
 
     var selectedWords = []
-    var selectedImages = []
-    selectedWords.push(quizItems.goodWord.translatedTxt)
-    selectedImages.push("qrc:/gcompris/data/"+ quizItems.goodWord.image)
+    selectedWords.push([quizItems.goodWord.translatedTxt,"qrc:/gcompris/data/"+ quizItems.goodWord.image])
+
 
     for (var i = 0; i < wordList.length; i++) {
-        if(wordList[i].translatedTxt !== selectedWords[0]){
-            selectedWords.push(wordList[i].translatedTxt)
-            selectedImages.push("qrc:/gcompris/data/"+ wordList[i].image)
+        if(wordList[i].translatedTxt !== selectedWords[0][0]){
+            selectedWords.push([wordList[i].translatedTxt,"qrc:/gcompris/data/"+ wordList[i].image])
         }
         if(selectedWords.length > 4)
             break
@@ -199,13 +199,10 @@ function initSubLevelQuiz(){
 
     // Push the result in the model
     quizItems.wordListModel.clear();
-
-    var y = Math.random();
-    shuffle(selectedWords,y);
-    shuffle(selectedImages,y);
+    Core.shuffle(selectedWords);
 
     for (var j = 0; j < selectedWords.length; j++) {
-        quizItems.wordListModel.append({"word": selectedWords[j], "image": selectedImages[j]})
+        quizItems.wordListModel.append({"word": selectedWords[j][0], "image": selectedWords[j][1]})
     }
 
     quizItems.wordImage.changeSource("qrc:/gcompris/data/" + quizItems.goodWord.image)
@@ -227,17 +224,11 @@ function nextSubLevelQuiz(){
         }
         else{
             ++miniGame;
+            quizItems.bonus.good("flower")
             initQuiz()
         }
 
     } else {
         initSubLevelQuiz();
     }
-}
-
-//used from core, modified for shuffling the image and words in the same way
-function shuffle(o,y) {
-    for(var j, x, i = o.length; i;
-        j = Math.floor(y * i), x = o[--i], o[i] = o[j], o[j] = x);
-    return o;
 }

@@ -79,6 +79,7 @@ ActivityBase {
             property alias quiz: quiz
 
             function playWord() {
+                activity.audioVoices.clearQueue()
                 if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
                     voiceError();
             }
@@ -126,7 +127,7 @@ ActivityBase {
             id: wordListModel
         }
 
-        Rectangle{
+        Rectangle {
             id: categoryTextbg
             x: categoryText.x -4
             y: categoryText.y -4
@@ -141,7 +142,7 @@ ActivityBase {
             anchors.bottomMargin: 20
 
 
-            GCText{
+            GCText {
                 id: categoryText
                 text: ""
                 fontSize: largeSize
@@ -234,7 +235,7 @@ ActivityBase {
                 }
             }
 
-            Image{
+            Image {
                 id: previousWordButton
                 source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
                 sourceSize.width: 30 * 1.2 * ApplicationInfo.ratio
@@ -244,24 +245,24 @@ ActivityBase {
                     top: parent.top
                     topMargin: parent.height/2 - previousWordButton.height/2
                 }
-                MouseArea{
+                MouseArea {
                     id: previousWordButtonArea
                     anchors.fill: parent
                     onClicked: Activity.prevSubLevel()
                 }
             }
 
-            Image{
+            Image {
                 id: nextWordButton
                 source: "qrc:/gcompris/src/core/resource/bar_next.svg";
                 sourceSize.width: 30 * 1.2 * ApplicationInfo.ratio
-                anchors{
+                anchors {
                     left: parent.right
                     leftMargin: 30
                     top: parent.top
                     topMargin: parent.height/2 - previousWordButton.height/2
                 }
-                MouseArea{
+                MouseArea {
                     id: nextWordButtonArea
                     anchors.fill: parent
                     onClicked: Activity.nextSubLevel();
@@ -269,7 +270,7 @@ ActivityBase {
             }
         }
 
-        Rectangle{
+        Rectangle {
             id: wordTextbg
             x: wordText.x -4
             y: wordText.y -4
@@ -284,7 +285,7 @@ ActivityBase {
             anchors.topMargin: 20
 
 
-            GCText{
+            GCText {
                 id: wordText
                 text: ""
                 fontSize: largeSize
@@ -357,10 +358,6 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onReloadClicked: {
-                items.count = 0
-                list.visible = false
-            }
         }
 
         Bonus {
@@ -417,8 +414,7 @@ ActivityBase {
             id: quiz
             displayed: false
             width: parent.width
-            height: parent.height - bar.height
-//            wordImageQuiz: visible
+            height: parent.height
         }
 
     }

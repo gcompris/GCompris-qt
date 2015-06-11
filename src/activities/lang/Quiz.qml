@@ -46,6 +46,7 @@ Item{
     property alias background: background
     property alias bonus: bonus
     property alias score: score
+    property alias bar: bar
     property alias wordImage: wordImage
     property alias imageFrame: imageFrame
     property alias wordListModel: wordListModel
@@ -67,6 +68,7 @@ Item{
         source: "qrc:/gcompris/src/activities/lang/resource/imageid-bg.svg"
         fillMode: Image.PreserveAspectCrop
         sourceSize.width: parent.width
+        height: parent.height
 
         property bool horizontalLayout: background.width > background.height
         property bool keyNavigation: false
@@ -209,13 +211,13 @@ Item{
 
                 property int buttonHeight: height / wordListModel.count * 0.9
 
-                delegate: Item{
+                delegate: Item {
 
                     id: wordListViewDelegate
                     width: wordListView.width
                     height: wordListView.buttonHeight
 
-                    Image{
+                    Image {
                         id: wordImageQuiz
                         width: wordListView.width/3
                         height: wordListView.buttonHeight * 0.7
@@ -239,6 +241,9 @@ Item{
             }
         }
 
+        onVoiceDone: repeatItem.visible = true
+        onVoiceError: repeatItem.visible = false
+
         BarButton {
             id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
@@ -253,9 +258,21 @@ Item{
             onClicked: items.playWord()
         }
 
+        Bar {
+            id: bar
+
+            content: BarEnumContent { value: help | home | activity.items.level }
+            onHelpClicked: {
+                displayDialog(dialogHelp)
+            }
+//            onPreviousLevelClicked: Activity.previousLevel()
+//            onNextLevelClicked: Activity.nextLevel()
+            onHomeClicked: activity.home()
+        }
+
         Bonus {
             id: bonus
-            onWin: Activity.nextLevel()
+            onWin: Activity.nextSubLevelQuiz()
         }
 
         Score {
