@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,12 +23,12 @@ ActivityInfo {
   icon: "simplepaint/simplepaint.svg"
   author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
   demo: true
-  title: "A simple drawing activity"
-  description: "Create your own drawing"
+  title: qsTr("A simple drawing activity")
+  description: qsTr("Create your own drawing")
   // intro: "Select a color and paint the rectangles as you like to create a drawing."
-  goal: "Enhance creative skills"
+  goal: qsTr("Enhance creative skills")
   prerequisite: ""
-  manual: "Select a color and paint the rectangles as you like to create a drawing."
+  manual: qsTr("Select a color and paint the rectangles as you like to create a drawing.")
   credit: ""
   section: "fun"
 }
