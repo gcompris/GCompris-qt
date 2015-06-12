@@ -480,7 +480,7 @@ Item {
             {
                 // ask for downloading new voices
                 Core.showMessageDialog(main,
-                qsTr("You selected a new locale") + '\n'
+                qsTr("You selected a new locale.") + '\n'
                 + qsTr("Do you want to download the corresponding sound files now?"),
                 qsTr("Yes"), function() {
                     // yes -> start download
