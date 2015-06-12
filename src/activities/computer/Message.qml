@@ -1,6 +1,6 @@
 /*GCompris-Qt Message.qml
 *
-* Copyright (C) 2015 Sagar Chand Agarwal <atomsagar@gmail.com>
+* Copyright (C) 2015 Siddhesh Suthar <siddhesh.it@gmail.com>
 *
 * Authors:
 *
@@ -36,19 +36,18 @@ Item{
 
     property variant intro: [
         "",
-        qsTr("Computer is a general-purpose device that can be programmed to carry out a set of "
-             +"arithmetic or logical operations automatically. Since a sequence of operations "
-             +"can be readily changed, the computer can solve more than one kind of problem."),
-        qsTr("A general purpose computer has four main components: the arithmetic logic unit (ALU),  "
+        qsTr(" Computer is a general-purpose device that can be programmed to carry out a set of "
+             +" arithmetic or logical operations automatically. Since a sequence of operations "
+             +"can be readily changed, the computer can solve more than one kind of problem. "),
+        qsTr(" A general purpose computer has four main components: the arithmetic logic unit (ALU),  "
              +" the control unit, the memory, and the input and output devices (collectively termed I/O). "
-             +"These parts are interconnected by buses, often made of groups of wires."),
-        qsTr("Inside each of these parts are thousands to trillions of small electrical circuits "
+             +" These parts are interconnected by buses, often made of groups of wires." ),
+        qsTr(" Inside each of these parts are thousands to trillions of small electrical circuits "
              +" which can be turned off or on by means of an electronic switch. "),
-        qsTr("Your goal is to click on the box kept beside the table "
-             +"and see the components of computer one by one and read about it. "
-             /*+"Then,Drag the image to the specific point on the table and place it."*/),
-        qsTr("Zoom at the table to enjoy virtual settings. "
-             +"and click done.")
+        qsTr(" Your goal is to click on the box kept beside the table "
+             +" and see the components of computer one by one and read about it. "
+             +" Then,click on the image to see it placed on the table. "),
+        qsTr(" Zoom at the table to enjoy virtual settings. ")
     ]
 
     Behavior on opacity { NumberAnimation {duration: 100 } }
@@ -101,13 +100,13 @@ Item{
         GCText {
             id: nextText
             anchors.centerIn: parent
-            text: index != 4 ? qsTr("Next") : qsTr("Let's Go")
+            text: index != intro.length ? qsTr("Next") : qsTr("Let's Go")
         }
 
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                if(index++ == 4) {
+                if(index++ == intro.length) {
                     index = 0
 
                 }
