@@ -21,7 +21,7 @@ ActivityInfo {
   name: "play_rhythm/PlayRhythm.qml"
   difficulty: 3
   icon: "play_rhythm/play_rhythm.svg"
-  author: "Beth Hadley <bethmhadley@gmail.com>"
+  author: "Beth Hadley &lt;bethmhadley@gmail.com&gt;"
   demo: true
   title: qsTr("Play Rhythm")
   description: qsTr("Learn to listen to, read, and play musical rhythms.")

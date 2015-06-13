@@ -21,7 +21,7 @@ ActivityInfo {
   name: "maze3D/Maze3D.qml"
   difficulty: 2
   icon: "maze3D/maze3D.svg"
-  author: "Christof Petig <christof@petig-baender.de>"
+  author: "Christof Petig &lt;christof@petig-baender.de&gt;"
   demo: true
   title: qsTr("3D Maze")
   description: qsTr("Find your way out of the 3D maze")

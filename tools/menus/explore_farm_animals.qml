@@ -21,7 +21,7 @@ ActivityInfo {
   name: "explore_farm_animals/ExploreFarmAnimals.qml"
   difficulty: 2
   icon: "explore_farm_animals/explore_farm_animals.svg"
-  author: "Beth Hadley <bethmhadley@gmail.com>"
+  author: "Beth Hadley &lt;bethmhadley@gmail.com&gt;"
   demo: true
   title: qsTr("Explore Farm Animals")
   description: qsTr("Learn about farm animals, what sounds they make, and interesting facts.")

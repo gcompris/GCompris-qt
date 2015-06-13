@@ -21,7 +21,7 @@ ActivityInfo {
   name: "doubleentry/Doubleentry.qml"
   difficulty: 2
   icon: "doubleentry/doubleentry.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Double-entry table")
   description: qsTr("Drag and Drop the items in the double-entry table")

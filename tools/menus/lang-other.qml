@@ -21,7 +21,7 @@ ActivityInfo {
   name: "lang-other/Lang-other.qml"
   difficulty: 4
   icon: "lang-other/lang-other.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Enrich your vocabulary")
   description: qsTr("List of words in the 'other' category.")

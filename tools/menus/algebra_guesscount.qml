@@ -21,7 +21,7 @@ ActivityInfo {
   name: "algebra_guesscount/AlgebraGuesscount.qml"
   difficulty: 3
   icon: "algebra_guesscount/algebra_guesscount.svg"
-  author: "Pascal Georges <pascal.georges1@free.fr>"
+  author: "Pascal Georges &lt;pascal.georges1@free.fr&gt;"
   demo: true
   title: qsTr("Find the series of correct operations that matches the given answer")
   description: qsTr("Work out the right combination of numbers and operations to match the given value")

@@ -21,7 +21,7 @@ ActivityInfo {
   name: "searace1player/Searace1player.qml"
   difficulty: 6
   icon: "searace1player/searace1player.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Sea race (Single Player)")
   description: qsTr("Give good instructions to your ship in order to be first in the race.")

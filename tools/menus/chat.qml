@@ -21,7 +21,7 @@ ActivityInfo {
   name: "chat/Chat.qml"
   difficulty: 3
   icon: "chat/chat.svg"
-  author: "Bruno coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Chat and draw with your friends")
   description: qsTr("This chat activity only works on the local network")

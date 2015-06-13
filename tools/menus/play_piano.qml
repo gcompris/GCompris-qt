@@ -21,7 +21,7 @@ ActivityInfo {
   name: "play_piano/PlayPiano.qml"
   difficulty: 2
   icon: "play_piano/play_piano.svg"
-  author: "Beth Hadley <bethmhadley@gmail.com>"
+  author: "Beth Hadley &lt;bethmhadley@gmail.com&gt;"
   demo: true
   title: qsTr("Play Piano!")
   description: qsTr("Learn to play melodies on the piano keyboard!")
