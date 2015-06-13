@@ -21,7 +21,7 @@ ActivityInfo {
   name: "redraw/Redraw.qml"
   difficulty: 3
   icon: "redraw/redraw.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Redraw the given image")
   description: qsTr("Draw perfectly the given image on the empty grid.")

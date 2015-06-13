@@ -25,7 +25,7 @@ ActivityInfo {
   name: "babyshapes/Babyshapes.qml"
   difficulty: 1
   icon: "babyshapes/babyshapes.svg"
-  author: "Pulkit Gupta <pulkitgenius@gmail.com>"
+  author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   demo: false
   title: qsTr("Complete the puzzle")
   description: qsTr("Drag and Drop the shapes on their respective targets")

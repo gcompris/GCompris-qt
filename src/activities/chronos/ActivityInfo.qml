@@ -25,7 +25,7 @@ ActivityInfo {
   name: "chronos/Chronos.qml"
   difficulty: 1
   icon: "chronos/chronos.svg"
-  author: "Pulkit Gupta <pulkitgenius@gmail.com>"
+  author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   demo: true
   title: qsTr("Chronos")
   description: qsTr("Drag and Drop the items to organize the story")

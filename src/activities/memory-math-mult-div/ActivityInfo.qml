@@ -21,7 +21,7 @@ ActivityInfo {
   name: "memory-math-mult-div/MemoryMathMultDiv.qml"
   difficulty: 6
   icon: "memory-math-mult-div/memory-math-mult-div.svg"
-  author: "JB BUTET <ashashiwa@gmail.com>"
+  author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
   demo: true
   title: qsTr("Multiplication and division memory game")
   description: qsTr("Turn the cards over to find a matching operation, until all the cards are gone.")

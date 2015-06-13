@@ -21,7 +21,7 @@ ActivityInfo {
   name: "mazeinvisible/Mazeinvisible.qml"
   difficulty: 4
   icon: "mazeinvisible/mazeinvisible.svg"
-  author: "Stephane Mankowski <stephane@mankowski.fr>"
+  author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   demo: true
   title: qsTr("Invisible Maze")
   description: qsTr("Guide Tux out of the invisible maze")

@@ -21,7 +21,7 @@ ActivityInfo {
   name: "money/Money.qml"
   difficulty: 2
   icon: "money/money.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Money")
   description: qsTr("Practice money usage")

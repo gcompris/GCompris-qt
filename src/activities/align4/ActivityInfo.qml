@@ -21,7 +21,7 @@ ActivityInfo {
   name: "align4/Align4.qml"
   difficulty: 2
   icon: "align4/align4.svg"
-  author: "Bharath M S <brat.197@gmail.com>"
+  author: "Bharath M S &lt;brat.197@gmail.com&gt;"
   demo: true
   title: qsTr("Align four (against Tux)")
   description: qsTr("Arrange four tokens in a row")

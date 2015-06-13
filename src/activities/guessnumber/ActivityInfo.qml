@@ -21,7 +21,7 @@ ActivityInfo {
   name: "guessnumber/Guessnumber.qml"
   difficulty: 3
   icon: "guessnumber/guessnumber.svg"
-  author: "Thib ROMAIN <thibrom@gmail.com>"
+  author: "Thib ROMAIN &lt;thibrom@gmail.com&gt;"
   demo: true
   title: qsTr("Guess a number")
   description: qsTr("Help Tux escape the cave. Tux hides a number for you to find.")

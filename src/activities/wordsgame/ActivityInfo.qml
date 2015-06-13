@@ -21,7 +21,7 @@ ActivityInfo {
   name: "wordsgame/Wordsgame.qml"
   difficulty: 2
   icon: "wordsgame/wordsgame.svg"
-  author: "Holger Kaelberer <holger.k@elberer.de>"
+  author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
   demo: true
   title: qsTr("Falling Words")
   description: qsTr("Type the falling words before they reach the ground")

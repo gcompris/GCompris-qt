@@ -21,7 +21,7 @@ ActivityInfo {
     name: "numbers-odd-even/NumbersOddEven.qml"
     difficulty: 2
     icon: "numbers-odd-even/numbers-odd-even.svg"
-    author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+    author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
     demo: false
     title: qsTr("Even and Odd Numbers")
     description: qsTr("Move the helicopter to catch the clouds having even or odd numbers")

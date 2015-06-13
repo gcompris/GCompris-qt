@@ -21,7 +21,7 @@ ActivityInfo {
   name: "lightsoff/Lightsoff.qml"
   difficulty: 6
   icon: "lightsoff/lightsoff.svg"
-  author: "Stephane Mankowski <stephane@mankowski.fr>"
+  author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   demo: true
   title: qsTr("Lights Off")
   description: qsTr("The aim is to switch off all the lights.")

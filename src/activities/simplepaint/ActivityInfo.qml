@@ -21,7 +21,7 @@ ActivityInfo {
   name: "simplepaint/Simplepaint.qml"
   difficulty: 1
   icon: "simplepaint/simplepaint.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: true
   title: qsTr("A simple drawing activity")
   description: qsTr("Create your own drawing")

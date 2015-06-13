@@ -21,7 +21,7 @@ ActivityInfo {
   name: "drawnumber/Drawnumber.qml"
   difficulty: 2
   icon: "drawnumber/drawnumber.svg"
-  author: "Emmanuel Charruau <echarruau@gmail.com>"
+  author: "Emmanuel Charruau &lt;echarruau@gmail.com&gt;"
   demo: true
   title: qsTr("Number sequence")
   description: qsTr("Touch the numbers in the right sequence.")

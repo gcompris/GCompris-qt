@@ -21,7 +21,7 @@ ActivityInfo {
   name: "target/Target.qml"
   difficulty: 2
   icon: "target/target.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Practice addition with a target game")
   description: qsTr("Hit the target and count your points")

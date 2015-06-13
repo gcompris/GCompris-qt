@@ -21,7 +21,7 @@ ActivityInfo {
   name: "advanced_colors/AdvancedColors.qml"
   difficulty: 6
   icon: "advanced_colors/advanced_colors.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Advanced colors")
   description: qsTr("Select the butterfly of the correct color")

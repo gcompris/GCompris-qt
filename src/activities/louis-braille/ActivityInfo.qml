@@ -21,7 +21,7 @@ ActivityInfo {
   name: "louis-braille/LouisBraille.qml"
   difficulty: 4
   icon: "louis-braille/resource/louis.png"
-  author: "Arkit Vora <arkitvora123@gmail.com>"
+  author: "Arkit Vora &lt;arkitvora123@gmail.com&gt;"
   demo: true
   title: qsTr("The History of Louis Braille")
   description: qsTr("Review the major dates of the inventor of the Braille System")

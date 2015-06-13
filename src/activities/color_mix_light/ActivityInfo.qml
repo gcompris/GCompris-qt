@@ -21,7 +21,7 @@ ActivityInfo {
   name: "color_mix_light/ColorMixLight.qml"
   difficulty: 4
   icon: "color_mix_light/colormixlight.svg"
-  author: "Stephane Mankowski <stephane@mankowski.fr>"
+  author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   demo: true
   title: qsTr("Mixing colors of light")
   description: qsTr("Discover light color mixing.")

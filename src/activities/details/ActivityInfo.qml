@@ -24,7 +24,7 @@ ActivityInfo {
   name: "details/Details.qml"
   difficulty: 1
   icon: "details/details.svg"
-  author: "Pulkit Gupta <pulkitgenius@gmail.com>"
+  author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   demo: false
   title: qsTr("Find the details")
   description: qsTr("Drag and Drop the shapes on their respective targets")

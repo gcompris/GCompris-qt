@@ -21,7 +21,7 @@ ActivityInfo {
   name: "memory-math-add-minus-mult-div-tux/MemoryMathAddMinusMultDivTux.qml"
   difficulty: 6
   icon: "memory-math-add-minus-mult-div-tux/memory-math-add-minus-mult-div-tux.svg"
-  author: "JB BUTET <ashashiwa@gmail.com>"
+  author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
   demo: true
   title: qsTr("All operations memory game against Tux")
   description: qsTr("Turn the cards over to find a matching operation, until all the cards are gone.")

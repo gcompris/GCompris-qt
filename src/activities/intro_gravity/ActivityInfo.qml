@@ -21,7 +21,7 @@ ActivityInfo {
   name: "intro_gravity/IntroGravity.qml"
   difficulty: 4
   icon: "intro_gravity/intro_gravity.svg"
-  author: "Siddhesh suthar<siddhesh.it@gmail.com>"
+  author: "Siddhesh suthar &lt;siddhesh.it@gmail.com&gt;"
   demo: true
   title: "Intro gravity"
   description: qsTr("Introduction to the concept of gravity")
