@@ -50,7 +50,8 @@ function start() {
     currentLevel = 0;
     currentSubLevel = 0;
 
-    dataset = Lang.load(items.parser, baseUrl, "words.json", "content-$LOCALE.json")
+//    dataset = Lang.load(items.parser, baseUrl, "words.json", "content-$LOCALE.json")
+    dataset = Lang.load(items.parser, baseUrl, "words.json", "content-fr.json")
     if(!dataset) {
         // English fallback
         items.background.englishFallback = true

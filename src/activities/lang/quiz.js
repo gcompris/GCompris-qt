@@ -1,4 +1,4 @@
-/* GCompris - Quiz.qml
+/* GCompris - quiz.js
  *
  * Copyright (C) 2014 Holger Kaelberer <holger.k@elberer.de> (Qt Quick port of imageid)
  *

@@ -71,14 +71,15 @@ ActivityBase {
             property alias wordTextbg: wordTextbg
             property alias wordText: wordText
             property alias categoryText: categoryText
-            property alias wordListModel: wordListModel
+//            property alias wordListModel: wordListModel
             property alias parser: parser
             property alias repeatItem: repeatItem
-            property int count: 0
+//            property int count: 0
             property variant goodWord
             property int goodWordIndex
             property alias englishFallbackDialog: englishFallbackDialog
             property alias quiz: quiz
+            property alias spellIt: spellIt
 
             function playWord() {
                 activity.audioVoices.clearQueue()
@@ -125,9 +126,9 @@ ActivityBase {
             onError: console.error("lang: Error parsing json: " + msg);
         }
 
-        ListModel {
-            id: wordListModel
-        }
+//        ListModel {
+//            id: wordListModel
+//        }
 
         Rectangle {
             id: categoryTextbg
@@ -417,6 +418,14 @@ ActivityBase {
 
         Loader {
             id: quiz
+            width: parent.width
+            height: parent.height
+            anchors.fill: parent
+            asynchronous: false
+        }
+
+        Loader {
+            id: spellIt
             width: parent.width
             height: parent.height
             anchors.fill: parent

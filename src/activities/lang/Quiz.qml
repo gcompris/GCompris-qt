@@ -118,7 +118,7 @@ Item{
 
             Item {
                 width: background.horizontalLayout
-                       ? background.width * 0.55
+                       ? background.width * 0.40
                        : background.width - gridId.anchors.margins * 2
                 height: background.horizontalLayout
                         ? background.height - bar.height
@@ -177,7 +177,7 @@ Item{
             ListView {
                 id: wordListView
                 width: background.horizontalLayout
-                       ? background.width * 0.40
+                       ? background.width * 0.55
                        : background.width - gridId.anchors.margins * 2
                 height: background.horizontalLayout
                         ? background.height - bar.height
@@ -211,25 +211,36 @@ Item{
                 delegate: Item {
 
                     id: wordListViewDelegate
-                    width: wordListView.width
+                    property int requiredWidth: wordRectangle.textLabel.length* 20 + wordImageQuiz.width + 20
+
+                    width: (wordListView.width > requiredWidth)
+                             ? wordListView.width
+                             : requiredWidth
                     height: wordListView.buttonHeight
+                    anchors.right: parent.right
+                    anchors.left: parent.left
 
                     Image {
                         id: wordImageQuiz
-                        width: wordListView.width/3
+                        width: wordListView.width * 0.25
                         height: wordListView.buttonHeight * 0.7
                         source: image
                         z: 7
-                        anchors.left: parent.left
+                        fillMode: Image.PreserveAspectFit
                         anchors.leftMargin: 10* ApplicationInfo.ratio
                         visible:  (QuizActivity.miniGame==1) ? true : false  // to hide images after first mini game
                     }
 
                     AnswerButton {
                         id: wordRectangle
-                        width: wordListView.width
+                        width: parent.width
                         height: wordListView.buttonHeight
                         textLabel: word
+
+                        anchors.left: wordImageQuiz.left
+                        anchors.leftMargin: 10* ApplicationInfo.ratio
+                        anchors.right: parent.right
+
                         isCorrectAnswer: word === QuizActivity.quizItems.goodWord.translatedTxt
                         onIncorrectlyPressed: {
                             QuizActivity.badWordSelected(goodWordIndex);
