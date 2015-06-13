@@ -21,7 +21,7 @@ ActivityInfo {
   name: "note_names/NoteNames.qml"
   difficulty: 4
   icon: "note_names/note_names.svg"
-  author: "Beth Hadley <bethmhadley@gmail.com>"
+  author: "Beth Hadley &lt;bethmhadley@gmail.com&gt;"
   demo: true
   title: qsTr("Name that Note!")
   description: qsTr("Learn the names of the notes, in bass and treble clef, with the help of sounds and colors")

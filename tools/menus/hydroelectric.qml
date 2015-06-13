@@ -21,7 +21,7 @@ ActivityInfo {
   name: "hydroelectric/Hydroelectric.qml"
   difficulty: 4
   icon: "hydroelectric/hydroelectric.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Learn about an electrical system based on renewable energy")
   description: qsTr("Tux has come back from a long fishing party on his boat. Bring the electrical system back up so he can have light in his home.")

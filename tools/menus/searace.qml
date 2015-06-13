@@ -21,7 +21,7 @@ ActivityInfo {
   name: "searace/Searace.qml"
   difficulty: 6
   icon: "searace/searace.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Sea race (2 Players)")
   description: qsTr("Direct your boat accurately to win the race.")

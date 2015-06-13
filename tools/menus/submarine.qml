@@ -21,7 +21,7 @@ ActivityInfo {
   name: "submarine/Submarine.qml"
   difficulty: 5
   icon: "submarine/submarine.svg"
-  author: "Pascal Georges <pascal.georges1@free.fr>"
+  author: "Pascal Georges &lt;pascal.georges1@free.fr&gt;"
   demo: true
   title: qsTr("Pilot a submarine")
   description: qsTr("Pilot a submarine using air tanks and dive rudders")

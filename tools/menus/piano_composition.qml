@@ -21,7 +21,7 @@ ActivityInfo {
   name: "piano_composition/PianoComposition.qml"
   difficulty: 4
   icon: "piano_composition/piano_composition.svg"
-  author: "Beth Hadley <bethmhadley@gmail.com>"
+  author: "Beth Hadley &lt;bethmhadley@gmail.com&gt;"
   demo: true
   title: qsTr("Piano Composition")
   description: qsTr("An activity to learn how the piano keyboard works, how notes are written on a musical staff and explore music composition by loading and saving your work.")

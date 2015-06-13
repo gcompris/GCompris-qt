@@ -21,7 +21,7 @@ ActivityInfo {
   name: "paratrooper/Paratrooper.qml"
   difficulty: 1
   icon: "paratrooper/tuxpara.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Parachutist")
   description: qsTr("Help Tux the parachutist land safely")

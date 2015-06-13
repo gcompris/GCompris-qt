@@ -21,7 +21,7 @@ ActivityInfo {
   name: "chess_computer/ChessComputer.qml"
   difficulty: 2
   icon: "chess_computer/chess_computer.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Learning chess")
   description: qsTr("Play chess against the computer in a learning mode")

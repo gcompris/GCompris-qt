@@ -21,7 +21,7 @@ ActivityInfo {
   name: "explore_world_music/ExploreWorldMusic.qml"
   difficulty: 4
   icon: "explore_world_music/explore_world_music.svg"
-  author: "Beth Hadley <bethmhadley@gmail.com>"
+  author: "Beth Hadley &lt;bethmhadley@gmail.com&gt;"
   demo: true
   title: qsTr("Explore World Music")
   description: qsTr("Learn about the music of the world.")

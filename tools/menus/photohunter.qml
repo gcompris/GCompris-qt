@@ -21,7 +21,7 @@ ActivityInfo {
   name: "photohunter/Photohunter.qml"
   difficulty: 2
   icon: "photohunter/photohunter.svg"
-  author: "Marc Le Douarain <http://membres.lycos.fr/mavati>"
+  author: "Marc Le Douarain &lt;http://membres.lycos.fr/mavati&gt;"
   demo: true
   title: qsTr("Photo hunter")
   description: qsTr("Find the differences between two pictures")

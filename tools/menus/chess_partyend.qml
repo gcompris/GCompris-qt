@@ -21,7 +21,7 @@ ActivityInfo {
   name: "chess_partyend/ChessPartyend.qml"
   difficulty: 2
   icon: "chess_partyend/chess_partyend.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Learning chess")
   description: qsTr("Play the end of the chess game against the computer")

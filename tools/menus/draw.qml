@@ -21,7 +21,7 @@ ActivityInfo {
   name: "draw/Draw.qml"
   difficulty: 2
   icon: "draw/draw.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("A simple vector-drawing tool")
   description: qsTr("A creative board where you can draw freely")

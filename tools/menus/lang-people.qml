@@ -21,7 +21,7 @@ ActivityInfo {
   name: "lang-people/Lang-people.qml"
   difficulty: 4
   icon: "lang-people/lang-people.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Enrich your vocabulary")
   description: qsTr("List of words in the 'people' category.")

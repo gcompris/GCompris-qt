@@ -21,7 +21,7 @@ ActivityInfo {
   name: "railroad/Railroad.qml"
   difficulty: 1
   icon: "railroad/railroad.svg"
-  author: "Pascal Georges <pascal.georges1@free.fr>"
+  author: "Pascal Georges &lt;pascal.georges1@free.fr&gt;"
   demo: true
   title: qsTr("Railway")
   description: qsTr("A memory game based on trains")
