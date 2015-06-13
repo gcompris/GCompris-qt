@@ -24,6 +24,7 @@
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
+.import "qrc:/gcompris/src/activities/lang/quiz.js" as QuizActivity
 
 var currentLevel = 0;
 var currentSubLevel = 0;
@@ -31,17 +32,14 @@ var level = null;
 var maxLevel;
 var maxSubLevel;
 var items;
-var quizItems;
 var baseUrl = "qrc:/gcompris/src/activities/lang/resource/";
 var dataset = null;
 var lessons
 var wordList
 var subLevelsLeft
-var miniGame
 
-function init(items_,quiz_) {
+function init(items_) {
     items = items_
-    quizItems = quiz_
     maxLevel = 0
     maxSubLevel = 0
     currentLevel = 0
@@ -85,9 +83,8 @@ function initLevel() {
     items.score.currentSubLevel = 1;
     items.imageFrame.visible = true
     items.wordTextbg.visible = true
-    items.quiz.displayed = false
+    items.bar.visible = true
     items.categoryText.changeCategory(currentLesson.name);
-    miniGame = 1;
 
     subLevelsLeft = [];
     for(var i in wordList){
@@ -123,7 +120,8 @@ function nextSubLevel() {
     ++items.score.currentSubLevel;
     if(items.score.currentSubLevel == items.score.numberOfSubLevels+1){
         //here logic for starting quiz game
-        initQuiz()
+        console.log("initiating new quiz with wordlist" + wordList.length)
+        QuizActivity.initQuiz(items,wordList)
     }
     else {
         initSubLevel();
@@ -132,103 +130,10 @@ function nextSubLevel() {
 
 function prevSubLevel() {
     if(--items.score.currentSubLevel <= 0) {
-        //TO DO
-//        items.score.currentSubLevel = maxSubLevel -1;
-        initQuiz()
+        console.log("initiating new quiz with wordlist" + wordList.length)
+        QuizActivity.initQuiz(items,wordList)
     }
     else {
     initSubLevel()
-    }
-}
-
-
-// Append to the queue of words for the sublevel the error
-function badWordSelected(wordIndex) {
-    if (subLevelsLeft[0] != wordIndex)
-        subLevelsLeft.unshift(wordIndex);
-    --quizItems.score.currentSubLevel; //to not increase currentSubLevel when question done wrong
-}
-
-function initQuiz(){
-
-    subLevelsLeft = [];
-    for(var i in wordList){
-        subLevelsLeft.push(i)   // This is available in all editors.
-    }
-
-    Core.shuffle(subLevelsLeft)
-
-    items.score.currentSubLevel = 0
-    items.score.visible = false
-//    quizItems.bar.visible = true
-//    items.bar.visible = false
-    quizItems.score.visible = true
-    items.imageFrame.visible = false
-    items.wordTextbg.visible = false
-    items.quiz.displayed = true
-
-    quizItems.wordImage.visible = true
-    quizItems.imageFrame.visible = true
-    quizItems.score.currentSubLevel = 0
-    currentSubLevel =0
-    quizItems.score.numberOfSubLevels = wordList.length
-    initSubLevelQuiz()
-}
-
-function initSubLevelQuiz(){
-
-    if(quizItems.score.currentSubLevel < quizItems.score.numberOfSubLevels)
-        quizItems.score.currentSubLevel = quizItems.score.currentSubLevel + 1;
-    else
-        quizItems.score.visible = false
-
-    quizItems.goodWordIndex = subLevelsLeft.pop()
-    quizItems.goodWord = wordList[quizItems.goodWordIndex]
-
-    var selectedWords = []
-    selectedWords.push([quizItems.goodWord.translatedTxt,"qrc:/gcompris/data/"+ quizItems.goodWord.image])
-
-
-    for (var i = 0; i < wordList.length; i++) {
-        if(wordList[i].translatedTxt !== selectedWords[0][0]){
-            selectedWords.push([wordList[i].translatedTxt,"qrc:/gcompris/data/"+ wordList[i].image])
-        }
-        if(selectedWords.length > 4)
-            break
-    }
-
-    // Push the result in the model
-    quizItems.wordListModel.clear();
-    Core.shuffle(selectedWords);
-
-    for (var j = 0; j < selectedWords.length; j++) {
-        quizItems.wordListModel.append({"word": selectedWords[j][0], "image": selectedWords[j][1]})
-    }
-
-    quizItems.wordImage.changeSource("qrc:/gcompris/data/" + quizItems.goodWord.image)
-
-    if(miniGame==3){
-        quizItems.wordImage.visible = false
-        quizItems.imageFrame.visible = false
-    }
-}
-
-function nextSubLevelQuiz(){
-    ++currentSubLevel
-    if(subLevelsLeft.length === 0) {
-
-        if(miniGame==3){
-            items.imageFrame.visible = true
-            items.quiz.displayed = false
-            items.bonus.good("smiley")
-        }
-        else{
-            ++miniGame;
-            quizItems.bonus.good("flower")
-            initQuiz()
-        }
-
-    } else {
-        initSubLevelQuiz();
     }
 }

@@ -29,6 +29,7 @@ import QtGraphicalEffects 1.0
 
 import "../../core"
 import "lang.js" as Activity
+import "quiz.js" as QuizActivity
 import "qrc:/gcompris/src/core/core.js" as Core
 
 Item{
@@ -40,9 +41,6 @@ Item{
     // The opacity of quiz, set to 0 to disable
     property int index: 1
 
-    //    QtObject {
-    //        id: quizItems
-    //        property Item main: activity.main
     property alias background: background
     property alias bonus: bonus
     property alias score: score
@@ -52,6 +50,7 @@ Item{
     property alias wordListModel: wordListModel
     property alias wordListView: wordListView
     property alias parser: parser
+    property alias repeatItem: repeatItem
     property variant goodWord
     property int goodWordIndex
 
@@ -60,8 +59,6 @@ Item{
             voiceError();
     }
     onGoodWordChanged: playWord()
-
-    //    }
 
     Image {
         id: background
@@ -136,7 +133,7 @@ Item{
                     source: "qrc:/gcompris/src/activities/lang/resource/imageid_frame.svg"
                     sourceSize.width: background.horizontalLayout ? parent.width * 0.7 : parent.height * 1.2
                     z: 11
-                    visible: Activity.miniGame ==3 ? false : true
+                    visible: QuizActivity.miniGame ==3 ? false : true
 
                     Image {
                         id: wordImage
@@ -225,7 +222,7 @@ Item{
                         z: 7
                         anchors.left: parent.left
                         anchors.leftMargin: 10* ApplicationInfo.ratio
-                        visible:  (Activity.miniGame==1) ? true : false  // to hide images after first mini game
+                        visible:  (QuizActivity.miniGame==1) ? true : false  // to hide images after first mini game
                     }
 
                     AnswerButton {
@@ -233,16 +230,16 @@ Item{
                         width: wordListView.width
                         height: wordListView.buttonHeight
                         textLabel: word
-                        isCorrectAnswer: word === Activity.quizItems.goodWord.translatedTxt
-                        onIncorrectlyPressed: Activity.badWordSelected(goodWordIndex);
-                        onCorrectlyPressed: Activity.nextSubLevelQuiz();
+                        isCorrectAnswer: word === QuizActivity.quizItems.goodWord.translatedTxt
+                        onIncorrectlyPressed: {
+                            QuizActivity.badWordSelected(goodWordIndex);
+                            QuizActivity.nextSubLevelQuiz();
+                        }
+                        onCorrectlyPressed: QuizActivity.nextSubLevelQuiz();
                     }
                 }
             }
         }
-
-        onVoiceDone: repeatItem.visible = true
-        onVoiceError: repeatItem.visible = false
 
         BarButton {
             id: repeatItem
@@ -255,13 +252,16 @@ Item{
                 left: parent.left
                 margins: 10 * ApplicationInfo.ratio
             }
-            onClicked: items.playWord()
+            onClicked: {
+                console.log("inside quiz.qml 's repeatItem")
+                quiz.playWord()
+            }
         }
 
         Bar {
             id: bar
 
-            content: BarEnumContent { value: help | home | activity.items.level }
+            content: BarEnumContent { value: help | home | Activity.currentLevel }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -272,7 +272,7 @@ Item{
 
         Bonus {
             id: bonus
-            onWin: Activity.nextSubLevelQuiz()
+            onWin: QuizActivity.initQuizMiniGame()
         }
 
         Score {

@@ -27,6 +27,7 @@ import QtGraphicalEffects 1.0
 
 import "../../core"
 import "lang.js" as Activity
+//import "quiz.js" as QuizActivity
 import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
@@ -72,6 +73,7 @@ ActivityBase {
             property alias categoryText: categoryText
             property alias wordListModel: wordListModel
             property alias parser: parser
+            property alias repeatItem: repeatItem
             property int count: 0
             property variant goodWord
             property int goodWordIndex
@@ -94,7 +96,7 @@ ActivityBase {
         }
 
         onStart: {
-            Activity.init(items,quiz) //change here passing quiz
+            Activity.init(items)
             repeatItem.visible = false
             keyNavigation = false
             activity.audioVoices.error.connect(voiceError)
@@ -341,7 +343,10 @@ ActivityBase {
                 left: parent.left
                 margins: 10 * ApplicationInfo.ratio
             }
-            onClicked: items.playWord()
+            onClicked: {
+                console.log("inside main repeatItem")
+                items.playWord()
+            }
         }
 
         DialogHelp {
@@ -410,11 +415,12 @@ ActivityBase {
             anchors.top: undefined
         }
 
-        Quiz{
+        Loader {
             id: quiz
-            displayed: false
             width: parent.width
             height: parent.height
+            anchors.fill: parent
+            asynchronous: false
         }
 
     }
