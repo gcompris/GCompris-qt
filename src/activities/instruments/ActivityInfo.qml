@@ -21,7 +21,7 @@ ActivityInfo {
   name: "instruments/Instruments.qml"
   difficulty: 4
   icon: "instruments/instruments.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Music instruments")
   description: qsTr("Click on the correct musical instruments")

@@ -21,7 +21,7 @@ ActivityInfo {
   name: "template/Template.qml"
   difficulty: 1
   icon: "template/template.svg"
-  author: "Your Name <yy@zz.org>"
+  author: "Your Name &lt;yy@zz.org&gt;"
   demo: true
   title: "Template activity"
   description: ""

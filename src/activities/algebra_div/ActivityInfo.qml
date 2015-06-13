@@ -21,7 +21,7 @@ ActivityInfo {
       name: "algebra_div/AlgebraDiv.qml"
       difficulty: 6
       icon: "algebra_div/algebra_div.svg"
-      author: "Sayan Biswas <techsayan01@gmail.com>"
+      author: "Sayan Biswas &lt;techsayan01@gmail.com&gt;"
       demo: false
       title: qsTr("Division of numbers")
       description: qsTr("Practice the division operation")

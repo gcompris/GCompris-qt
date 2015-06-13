@@ -21,7 +21,7 @@ ActivityInfo {
   name: "gnumch-equality/GnumchEquality.qml"
   difficulty: 3
   icon: "gnumch-equality/gnumch-equality.svg"
-  author: "Manuel Tondeur <manueltondeur@gmail.com>"
+  author: "Manuel Tondeur &lt;manueltondeur@gmail.com&gt;"
   demo: true
   title: qsTr("Gnumch Equality")
   description: qsTr("Guide the Number Muncher to the expressions that equal the number at the bottom of the screen.")

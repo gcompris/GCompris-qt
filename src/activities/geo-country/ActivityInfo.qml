@@ -25,7 +25,7 @@ ActivityInfo {
   name: "geo-country/GeoCountry.qml"
   difficulty: 2
   icon: "geo-country/france_region.svg"
-  author: "Pulkit Gupta <pulkitgenius@gmail.com>"
+  author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   demo: true
   title: qsTr("Locate the region")
   description: qsTr("Drag and Drop the regions to redraw the whole country")

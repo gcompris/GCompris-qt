@@ -21,7 +21,7 @@ ActivityInfo {
   name: "memory-enumerate/MemoryEnumerate.qml"
   difficulty: 2
   icon: "memory-enumerate/memory-enumerate.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Enumeration memory game")
   description: qsTr("Turn the cards over to match the number with the drawn picture.")

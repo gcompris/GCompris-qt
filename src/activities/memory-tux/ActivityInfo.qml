@@ -21,7 +21,7 @@ ActivityInfo {
   name: "memory-tux/MemoryTux.qml"
   difficulty: 1
   icon: "memory-tux/memory-tux.svg"
-  author: "JB BUTET <ashashiwa@gmail.com>"
+  author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
   demo: true
   title: qsTr("Memory Game with images against Tux")
   description: qsTr("Flip the cards to find the matching pairs against Tux")

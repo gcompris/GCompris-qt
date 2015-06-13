@@ -21,7 +21,7 @@ ActivityInfo {
   name: "reversecount/Reversecount.qml"
   difficulty: 2
   icon: "reversecount/reversecount.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Practice subtraction with a fun game")
   description: qsTr("Tux is hungry. Help him find fish by counting to the correct ice spot.")

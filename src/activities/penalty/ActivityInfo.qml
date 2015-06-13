@@ -21,7 +21,7 @@ ActivityInfo {
   name: "penalty/Penalty.qml"
   difficulty: 1
   icon: "penalty/penalty.svg"
-  author: "Stephane Mankowski <stephane@mankowski.fr>"
+  author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   demo: true
   title: qsTr("Penalty kick")
   description: qsTr("Double click or double tap on the ball to score a goal.")

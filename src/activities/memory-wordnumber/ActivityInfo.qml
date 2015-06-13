@@ -21,7 +21,7 @@ ActivityInfo {
   name: "memory-wordnumber/MemoryWordnumber.qml"
   difficulty: 3
   icon: "memory-wordnumber/memory_wordnumber.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Wordnumber memory game")
   description: qsTr("Turn the cards over to match the number with the word matching it.")

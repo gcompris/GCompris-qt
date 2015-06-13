@@ -21,7 +21,7 @@ ActivityInfo {
   name: "football/Football.qml"
   difficulty: 1
   icon: "football/football.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("The football game")
   description: qsTr("Kick the ball into the goal")

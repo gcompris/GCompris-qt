@@ -22,7 +22,7 @@ ActivityInfo {
   name: "gnumch-primes/GnumchPrimes.qml"
   difficulty: 6
   icon: "gnumch-primes/gnumch-primes.svg"
-  author: "Manuel Tondeur <manueltondeur@gmail.com>"
+  author: "Manuel Tondeur &lt;manueltondeur@gmail.com&gt;"
   demo: true
   title: qsTr("Gnumch Primes")
   description: qsTr("Guide the Number Muncher to all the prime numbers.")

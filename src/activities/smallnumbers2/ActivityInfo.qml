@@ -21,7 +21,7 @@ ActivityInfo {
   name: "smallnumbers2/Smallnumbers2.qml"
   difficulty: 2
   icon: "smallnumbers2/smallnumbers2.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Numbers with pairs of dice")
   description: qsTr("Count the number of dots on dice before they reach the ground")

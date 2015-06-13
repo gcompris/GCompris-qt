@@ -21,7 +21,7 @@ ActivityInfo {
     name: "ballcatch/Ballcatch.qml"
     difficulty: 1
     icon: "ballcatch/ballcatch.svg"
-    author: "Johnny Jazeix <jazeix@gmail.com>"
+    author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
     demo: true
     title: qsTr("Make the ball go to Tux")
     description: qsTr("Press the left and right arrow keys at the same time, to make the ball go in a straight line.")

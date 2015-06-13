@@ -21,7 +21,7 @@ ActivityInfo {
   name: "color_mix/ColorMix.qml"
   difficulty: 4
   icon: "color_mix/colormix.svg"
-  author: "Stephane Mankowski <stephane@mankowski.fr>"
+  author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   demo: true
   title: qsTr("Mixing color of paint")
   description: qsTr("Discover paint color mixing.")

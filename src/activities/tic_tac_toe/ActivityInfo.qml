@@ -24,7 +24,7 @@ ActivityInfo {
   name: "tic_tac_toe/TicTacToe.qml"
   difficulty: 2
   icon: "tic_tac_toe/tic_tac_toe.svg"
-  author: "Pulkit Gupta <pulkitgenius@gmail.com>"
+  author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   demo: true
   title: qsTr("Tic Tac Toe (against Tux)")
   description: qsTr("Place three marks in a row")

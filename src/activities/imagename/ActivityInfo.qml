@@ -24,7 +24,7 @@ ActivityInfo {
   name: "imagename/Imagename.qml"
   difficulty: 1
   icon: "imagename/imagename.svg"
-  author: "Pulkit Gupta <pulkitgenius@gmail.com>"
+  author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   demo: false
   title: qsTr("Image Name")
   description: qsTr("Drag and Drop each item above its name")

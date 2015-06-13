@@ -21,7 +21,7 @@ ActivityInfo {
   name: "memory-math-add-tux/MemoryMathAddTux.qml"
   difficulty: 3
   icon: "memory-math-add-tux/memory-math-add-tux.svg"
-  author: "JB BUTET <ashashiwa@gmail.com>"
+  author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
   demo: true
   title: qsTr("Addition memory game against Tux")
   description: qsTr("Turn the cards over to find two numbers which add up the same, until all the cards are gone. Tux do the same. You have to beat it !")
