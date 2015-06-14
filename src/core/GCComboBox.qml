@@ -263,7 +263,6 @@ Item {
                 flickableDirection: Flickable.VerticalFlick
                 clip: true
                 anchors.top: headerDescription.bottom
-		anchors.topMargin: headerDescription.height / 2
                 cellWidth: width / numberOfColumns
                 cellHeight: elementHeight
 
@@ -279,7 +278,7 @@ Item {
                             visible: parent.GridView.isCurrentItem
                             source: "qrc:/gcompris/src/core/resource/apply.svg"
                             anchors.right: textValue.left
-                            anchors.top: parent.top
+                            anchors.verticalCenter: parent.verticalCenter
                             anchors.rightMargin: 10
                             sourceSize.width: (gridview.elementHeight*0.8) * ApplicationInfo.ratio
                         }
