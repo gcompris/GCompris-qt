@@ -24,11 +24,11 @@ ActivityInfo {
   author: "Arkit Vora &lt;arkitvora123@gmail.com&gt;"
   demo: true
   title: qsTr("Braille Fun")
-  description: qsTr("Braille the falling letters")
-  //intro: "Create the Braille cell for the falling letter."
+  description: qsTr("Braille the letters")
+  //intro: "Create the Braille cell for the letter."
   goal: ""
   prerequisite: qsTr("Braille Alphabet Codes")
-  manual: qsTr("Enter the braille code in the tile for the corresponding falling letters. Check the braille chart by clicking on the toggle button for help.")
+  manual: qsTr("Enter the braille code in the tile for the letters on the banner pulled by Tux in his plane across the screen. Check the braille chart by clicking on the toggle button for help.")
   credit: ""
   section: "discovery braille"
 }
