@@ -73,7 +73,7 @@ activities such as memory and logic games, scientific experiments &etc;.</para>
 suite of activities. Unfortunately, it is difficult to follow and maintain them as each one offers different 
 graphic interfaces which vary widely in quality.</para>
 <para>The purpose of &gcompris; is to provide a development platform for educational activities.</para>
-<para>&gcompris; is part of &GNU; project and is placed under the <ulink url="http://www.gnu.org/licenses/gpl.html">GPL license</ulink>.</para>
+<para>&gcompris; is part of &kde; project and is placed under the <ulink url="http://www.gnu.org/licenses/gpl.html">GPL license</ulink>.</para>
 </sect1>
 
 <sect1 id="minimal-configuration">
