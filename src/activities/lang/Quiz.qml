@@ -30,6 +30,7 @@ import QtGraphicalEffects 1.0
 import "../../core"
 import "lang.js" as Activity
 import "quiz.js" as QuizActivity
+import "spell_it.js" as SpellActivity
 import "qrc:/gcompris/src/core/core.js" as Core
 
 Item{
@@ -181,7 +182,7 @@ Item{
                        : background.width - gridId.anchors.margins * 2
                 height: background.horizontalLayout
                         ? background.height - bar.height
-                        : (background.height - bar.height) * 0.40
+                        : (background.height - bar.height) * 0.60
                 spacing: 10 * ApplicationInfo.ratio
                 orientation: Qt.Vertical
                 verticalLayoutDirection: ListView.TopToBottom
@@ -211,19 +212,16 @@ Item{
                 delegate: Item {
 
                     id: wordListViewDelegate
-                    property int requiredWidth: wordRectangle.textLabel.length* 20 + wordImageQuiz.width + 20
 
-                    width: (wordListView.width > requiredWidth)
-                             ? wordListView.width
-                             : requiredWidth
+                    width: wordListView.width
                     height: wordListView.buttonHeight
                     anchors.right: parent.right
                     anchors.left: parent.left
 
                     Image {
                         id: wordImageQuiz
-                        width: wordListView.width * 0.25
-                        height: wordListView.buttonHeight * 0.7
+                        width: wordListView.width * 0.4
+                        height: wordListView.buttonHeight
                         source: image
                         z: 7
                         fillMode: Image.PreserveAspectFit
@@ -233,12 +231,12 @@ Item{
 
                     AnswerButton {
                         id: wordRectangle
-                        width: parent.width
+                        width: parent.width * 0.6
                         height: wordListView.buttonHeight
                         textLabel: word
 
                         anchors.left: wordImageQuiz.left
-                        anchors.leftMargin: 10* ApplicationInfo.ratio
+                        anchors.leftMargin: 20* ApplicationInfo.ratio
                         anchors.right: parent.right
 
                         isCorrectAnswer: word === QuizActivity.quizItems.goodWord.translatedTxt

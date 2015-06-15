@@ -27,7 +27,8 @@ import QtGraphicalEffects 1.0
 
 import "../../core"
 import "lang.js" as Activity
-//import "quiz.js" as QuizActivity
+import "quiz.js" as QuizActivity
+import "spell_it.js" as SpellActivity
 import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
@@ -70,6 +71,7 @@ ActivityBase {
             property alias imageFrame: imageFrame
             property alias wordTextbg: wordTextbg
             property alias wordText: wordText
+            property alias categoryTextbg: categoryTextbg
             property alias categoryText: categoryText
 //            property alias wordListModel: wordListModel
             property alias parser: parser

@@ -25,6 +25,7 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 .import "qrc:/gcompris/src/activities/lang/quiz.js" as QuizActivity
+.import "qrc:/gcompris/src/activities/lang/spell_it.js" as SpellActivity
 
 var currentLevel = 0;
 var currentSubLevel = 0;
@@ -50,8 +51,7 @@ function start() {
     currentLevel = 0;
     currentSubLevel = 0;
 
-//    dataset = Lang.load(items.parser, baseUrl, "words.json", "content-$LOCALE.json")
-    dataset = Lang.load(items.parser, baseUrl, "words.json", "content-fr.json")
+    dataset = Lang.load(items.parser, baseUrl, "words.json", "content-$LOCALE.json")
     if(!dataset) {
         // English fallback
         items.background.englishFallback = true
@@ -68,6 +68,7 @@ function start() {
 }
 
 function stop() {
+
 }
 
 function initLevel() {
@@ -84,6 +85,8 @@ function initLevel() {
     items.score.currentSubLevel = 1;
     items.imageFrame.visible = true
     items.wordTextbg.visible = true
+    items.wordText.visible = true
+    items.categoryTextbg.visible = true
     items.bar.visible = true
     items.categoryText.changeCategory(currentLesson.name);
 
@@ -120,8 +123,8 @@ function previousLevel() {
 function nextSubLevel() {
     ++items.score.currentSubLevel;
     if(items.score.currentSubLevel == items.score.numberOfSubLevels+1){
+
         //here logic for starting quiz game
-        console.log("initiating new quiz with wordlist" + wordList.length)
         QuizActivity.initQuiz(items,wordList)
     }
     else {
@@ -135,6 +138,6 @@ function prevSubLevel() {
         QuizActivity.initQuiz(items,wordList)
     }
     else {
-    initSubLevel()
+        initSubLevel()
     }
 }

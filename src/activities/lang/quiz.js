@@ -27,6 +27,7 @@
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
+.import "qrc:/gcompris/src/activities/lang/spell_it.js" as SpellActivity
 
 var items;
 var quizItems;
@@ -128,7 +129,10 @@ function nextSubLevelQuiz(){
             //destroying previous loaded quiz
             items.quiz.source = ""
             miniGame = 1
-            items.bonus.good("smiley")
+            quizItems.bonus.good("flower")
+            SpellActivity.initSpell(items,wordList);
+//            these things to be put in spell activity's bonus function
+//            items.bonus.good("smiley")
         }
         else{
             ++miniGame;
