@@ -42,6 +42,7 @@ gnumch-inequality
 gnumch-multiples
 gnumch-primes
 guessnumber
+hangman
 hanoi
 hanoi_real
 hexagon
