@@ -26,14 +26,17 @@ import "hangman.js" as Activity
 
 ActivityBase {
     id: activity
-
+    property string dataSetUrl: "qrc:/gcompris/src/activities/hangman/resource/"
+    
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
+        source:activity.dataSetUrl+"background.svgz"
+	fillMode: Image.PreserveAspectCrop
+	sourceSize.width: parent.width
         anchors.fill: parent
-        color: "#ABCDEF"
         signal start
         signal stop
 
@@ -49,17 +52,140 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property alias wordlist: wordlist
+            property alias keyboard:keyboard
+            property alias heli:heli
+            property alias man1:man1
+            property alias man2:man2
+            property alias man3:man3
+            property alias hidden:hidden
+            property string text:text
         }
 
-        onStart: { Activity.start(items) }
+        onStart: { Activity.start(items)
+		   if (!ApplicationInfo.isMobile)
+                        textinput.forceActiveFocus();
+	         }	 
         onStop: { Activity.stop() }
 
         GCText {
+	    id:hidden
             anchors.centerIn: parent
-            text: "hangman activity"
             fontSize: largeSize
+            color:"#FF9933"
+	    font.family: "Helvetica"
+            font.pointSize:55
+            anchors.horizontalCenter:parent.horizontalCenter
+            anchors.verticalCenter:parent.verticalCenter
         }
+        
+        TextInput {
+            // Helper element to capture composed key events like french ô which
+            // are not available via Keys.onPressed() on linux. Must be
+            // disabled on mobile!
+            id: textinput
+            enabled: !ApplicationInfo.isMobile
+            focus: true
+            visible:false
+            Keys.onPressed: {
+	        if (text != "") {
+                    Activity.processKeyPress(text);
+                    text = "";
+                }      
+	    }
+            
 
+        }
+        
+        Image{
+	      id:heli
+	      width:parent.width/5
+	      height:parent.height/5
+	      source:activity.dataSetUrl+"helicopter.svgz";
+	      Behavior on x {
+              PropertyAnimation {
+                          id: xAnim
+                          easing.type: Easing.OutQuad
+                          duration:  10000
+                         
+                }
+             }
+             Behavior on y {
+                            PropertyAnimation {easing.type: Easing.OutQuad; duration:  5000}
+             }
+             
+             transform: Rotation {
+                                  id: helicoRotation;
+                                  origin.x: heli.width / 2;
+                                  origin.y: heli.height / 2;
+                                  axis { x: 0; y: 0; z: 1 }
+                                  Behavior on angle {
+                                                  animation: rotAnim
+                                  }
+             }
+
+             states: [
+                     State {
+                             name: "horizontal"
+                             PropertyChanges {
+                             target: helicoRotation
+                             angle: 0
+                       }
+                   },
+                   State {
+                             name: "advancing"
+                             PropertyChanges {
+                             target: helicoRotation
+                             angle: 45
+                         }
+                   }
+               ]
+
+               RotationAnimation {
+                id: rotAnim
+                direction: heli.state == "horizontal" ?
+                               RotationAnimation.Counterclockwise :
+                               RotationAnimation.Clockwise
+                duration: 500
+                onRunningChanged: if(!rotAnim.running && heli.state == "advancing")
+                                      heli.state = "horizontal"
+               }
+             
+             
+             Image{  id:man1
+		     width:heli.width/4
+		     height:heli.height/4
+		     x:heli.width/3
+		     source:activity.dataSetUrl+"aadmi.svg";
+		     anchors.top:heli.bottom
+		    		     
+              }
+	      Image{ id:man2
+		     width:heli.width/4
+		     height:heli.height/4
+		     source:activity.dataSetUrl+"aadmi.svg";
+		     anchors.top:heli.bottom
+		     anchors.left:man1.right
+		     
+	      }
+	      Image{ id:man3
+		     width:heli.width/4
+		     height:heli.height/4
+		     source:activity.dataSetUrl+"aadmi.svg";
+		     anchors.top:heli.bottom
+		     anchors.left:man2.right
+		   
+	      }
+	      
+	      MouseArea {
+                       id: mousearea
+                       anchors.fill:parent
+                       
+              }
+              
+         
+	}
+	 
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -74,6 +200,26 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+        }
+        
+         VirtualKeyboard {
+            id: keyboard
+            
+            anchors.bottom: parent.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width
+            
+            onKeypress: Activity.processKeyPress(text);
+            
+	    onError: console.log("VirtualKeyboard error: " + msg);
+        }
+        
+         Wordlist {
+            id: wordlist
+            defaultFilename: activity.dataSetUrl + "default-en.json"
+            filename: ""
+           
+            onError: console.log("Hangman: Wordlist error: " + msg);
         }
 
         Bonus {

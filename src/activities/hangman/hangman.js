@@ -1,10 +1,10 @@
 /* GCompris - hangman.js
  *
- * Copyright (C) 2015 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2014 <RAJDEEP KAUR>
  *
- * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *    Authors:
+ *    Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+ *    Rajdeep kaur <rajdeep51994@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,22 +21,131 @@
  */
 .pragma library
 .import QtQuick 2.0 as Quick
+.import QtQuick 2.0 as Quick
+.import GCompris 1.0 as GCompris //for ApplicationInfo
+.import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentLevel = 0
-var numberOfLevel = 4
-var items
+var currentLevel=1;
+var currentSublevel=1;
+var wordlength=0;
+var maxLevel = 0;
+var maxsublevel=0;
+var level = 1;
+var sublevel = 0;
+var numberOfLevel=5;
+var items;
+
+var no_of_life ;
+
+var count_no_alphabet;
+var current_word;
+var wordi = new Array();
+var component;
+var sp ="_ ";
+var url = "qrc:/gcompris/src/activities/hangman/resource/"
+
 
 function start(items_) {
     items = items_
     currentLevel = 0
-    initLevel()
+    no_of_life = 6;
+    items.wordlist.loadFromFile(
+    GCompris.ApplicationInfo.getLocaleFilePath(items.ourActivity.dataSetUrl + "default-$LOCALE.json"));
+    maxLevel=items.wordlist.maxLevel;
+    items.heli.state = "horizontal";
+    initLevel(); 
+    
 }
 
 function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1
+    items.bar.level = currentLevel + 1;		
+    items.heli.x = items.background.width/2-(items.heli.width+10);
+    items.heli.y=items.background.height-(items.heli.height+50);
+    initSublevel();
+    
+    level = items.wordlist.getLevelWordList(currentLevel+1);
+    {	//to set the layout...populate
+        var letters = new Array();
+        items.keyboard.shiftKey = false;
+        for (var i = 0; i < level.words.length; i++) {
+            for (var j = 0; j < level.words[i].length; j++) {
+                var letter = level.words[i].charAt(j);
+                var isUpper = (letter == letter.toLocaleUpperCase());
+                if (isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1)
+                    items.keyboard.shiftKey = true;
+                else if (!isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1)
+                    items.keyboard.shiftKey = true;
+                else if (letters.indexOf(letter) === -1)
+                    letters.push(level.words[i].charAt(j));
+            }
+        }
+        letters.sort();
+        // generate layout from letter map
+        var layout = new Array();
+        var row = 0;
+        var offset = 0;
+        while (offset < letters.length-1) {
+            var cols = letters.length <= 10 ? letters.length : (Math.ceil((letters.length-offset) / (3 - row)));
+            layout[row] = new Array();
+            for (var j = 0; j < cols; j++)
+                layout[row][j] = { label: letters[j+offset] };
+            offset += j;
+            row++;
+        }
+        
+    }
+    items.keyboard.layout = layout;
+    
+}
+
+function processKeyPress(text) {
+        console.log(text+"\n");
+        var flag = 0;
+        var inital = wordi;
+	console.log(inital+"brazil");
+        wordi = "";
+        for(var i = 0; i< current_word.length ; i++) {
+            if(current_word[i] === text) {
+               flag=1;
+	       count_no_alphabet +=1;
+	       if(i === 0){
+		  wordi=wordi+current_word.charAt(0);
+		  for(var j = 1; j <inital.length ; j = j+1)
+		  {	wordi = wordi+inital.charAt(j);
+		  }
+               }
+               else{
+		  var j=i*2;
+		    for(var k=0;k<inital.length;k=k+1)
+		    {	   if(j === k)
+			   {	wordi = wordi+current_word.charAt(i);
+			   }
+			   else
+			   {	wordi = wordi+inital.charAt(k);
+			   }
+		    }
+	       }
+	    }
+	   
+        }
+        if(flag !== 1)
+	{	wordi = inital;
+		no_of_life=no_of_life-1;
+		items.bonus.bad("smiley");
+		if(no_of_life === 0)
+		{		items.heli.x=0;
+				items.heli.y=0;
+		}
+	}				
+        items.hidden.text=wordi;
+	if(count_no_alphabet === (current_word.length+2))
+	{	items.bonus.good("smiley");
+		
+		initSublevel();
+	}
 }
 
 function nextLevel() {
@@ -51,4 +160,29 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
+}
+
+function initSublevel()
+{	maxsublevel = items.wordlist.getMaxSubLevel(items.bar.level);
+        items.wordlist.initRandomWord(items.bar.level);
+	var text1 = items.wordlist.getRandomWord();
+	wordi = new Array();
+	current_word = text1 ;
+        count_no_alphabet = 0;
+	console.log(current_word);
+	for(var i = 0; i < current_word.length ; i=i+1)
+	{   if(i == 0)	
+	    {	wordi.push("_ ");   }
+	    else
+	    {	wordi = wordi + sp;		
+	    }
+	}
+	console.log(wordi);
+	items.hidden.text=qsTr(wordi);
+}
+
+function nextSublevel()
+{	if(maxsublevel<= ++currentSublevel)
+	{		currentSublevel=0;	}
+	initSublevel();
 }
