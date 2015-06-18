@@ -23,7 +23,6 @@ import QtQuick 2.1
 import GCompris 1.0
 
 import "../../core"
-import "computer-data.js" as Dataset
 import "qrc:/gcompris/src/core/core.js" as Core
 
 
@@ -44,8 +43,6 @@ ActivityBase {
         signal start
         signal stop
 
-        property bool mouseEnabled : true
-
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -57,20 +54,18 @@ ActivityBase {
             property Item main: activity.main
             property alias background: background
             property alias bar: bar
-            property int count: 0
-            property var dataset: Dataset.dataset
         }
 
         Rectangle {
             id: switchboard
-            radius:10
-            height: parent.width*0.05
-            width: switchboard.height*1.5
+            radius: 10
+            height: parent.height*0.05
+            width: parent.width*0.1
             anchors {
-                bottom: table.top
-                right: table.right
-                rightMargin: 0.1*parent.width
-                bottomMargin: 0.05*parent.height
+                top: parent.top
+                left: parent.left
+                leftMargin: 0.1*parent.width
+                topMargin: 0.05*parent.height
             }
 
             Image {
@@ -98,112 +93,7 @@ ActivityBase {
                         poweron.visible = true,
                         poweroff.visible = false
                 }
-
             }
-        }
-
-        Image {
-            id: table
-            visible: true
-            source: "resource/table.svg"
-            sourceSize.height: parent.height
-            sourceSize.width: parent.width/2
-            anchors {
-                left: parent.left
-                leftMargin: parent.width*0.1
-                bottom: parent.bottom
-                bottomMargin: 0.25*parent.height
-            }
-            Image {
-                id:monitor
-                source:""
-                sourceSize.height: parent.height/2
-                sourceSize.width :parent.width/2
-                anchors {
-                    bottom: table.bottom
-                    left: table.left
-                    leftMargin: table.width *0.2
-                    bottomMargin: table.height*0.9
-
-                }
-                Flickable {
-                    id: flick
-                    width:monitor.width*0.65
-                    height:monitor.height*0.8
-                    contentWidth: edit.paintedWidth
-                    contentHeight: edit.paintedHeight
-                    clip: true
-                    anchors {
-                        left:monitor.left
-                        leftMargin:monitor.width*0.1
-                        top:monitor.top
-                        topMargin:monitor.height*0.1
-                    }
-
-                    function ensureVisible(r)
-                    {
-                        if (contentX >= r.x)
-                            contentX = r.x;
-                        else if (contentX+width <= r.x+r.width)
-                            contentX = r.x+r.width-width;
-                        if (contentY >= r.y)
-                            contentY = r.y;
-                        else if (contentY+height <= r.y+r.height)
-                            contentY = r.y+r.height-height;
-                    }
-
-                    TextEdit {
-                        id: edit
-                        color:"red"
-                        width: flick.width
-                        height: flick.height
-                        focus: true
-                        wrapMode: TextEdit.Wrap
-                        onCursorRectangleChanged: flick.ensureVisible(cursorRectangle)
-                    }
-                }
-
-            }
-            Image {
-                id:cpu
-                source:""
-                sourceSize.height: parent.height*0.60
-                sourceSize.width :parent.width/2
-
-                anchors {
-                    bottom: table.bottom
-                    left: monitor.right
-                    leftMargin: table.width *0.1
-                    bottomMargin: table.height*0.8
-
-                }
-            }
-            Image {
-                id:keyboard
-                source:""
-                sourceSize.height: parent.height/4
-                sourceSize.width : parent.width/3
-
-                anchors {
-                    top: monitor.bottom
-                    left: table.left
-                    leftMargin: table.width *0.3
-                }
-            }
-            Image {
-                id: mouse
-                source:""
-                sourceSize.height: parent.height/3
-                sourceSize.width :parent.width/3
-
-                anchors {
-                    bottom: table.bottom
-                    left: keyboard.right
-                    leftMargin: table.width *0.1
-                    bottomMargin :table.height*0.6
-                }
-            }
-
         }
 
 
@@ -214,17 +104,15 @@ ActivityBase {
             sourceSize.height: parent.width/4
             sourceSize.width: parent.height/4
             anchors {
-                left :table.right
-                leftMargin: parent.width*0.1*ApplicationInfo.ratio
+                horizontalCenter: parent.horizontalCenter
                 bottom: parent.bottom
-                bottomMargin: parent.height*0.1*ApplicationInfo.ratio
+                bottomMargin: parent.height*0.15
             }
             MouseArea {
                 anchors.fill :boxclosed
                 onClicked: {
-                    boxclosed.visible=false,
-                            boxopened.visible=true,
-                            showpart()
+                    boxclosed.visible=false
+                    boxopened.visible=true
                 }
             }
         }
@@ -236,182 +124,13 @@ ActivityBase {
             sourceSize.height: boxclosed.height
             sourceSize.width: boxclosed.width
             anchors {
-                left: table.right
-                leftMargin: parent.width*0.1*ApplicationInfo.ratio
+                horizontalCenter: parent.horizontalCenter
                 bottom: parent.bottom
-                bottomMargin: parent.height*0.15*ApplicationInfo.ratio
-
+                bottomMargin: parent.height*0.15
             }
             visible: false
         }
 
-        function showpart() {
-            if(boxopened.visible=true)
-            {
-                previous.visible=true
-                next.visible= true
-                info_rect.visible=true
-                img.visible=true
-                name_rect.visible=true
-
-            }
-        }
-
-
-
-        Keys.onRightPressed: background.next()
-        Keys.onLeftPressed: background.previous()
-
-        function previous() {
-            if(items.count == 0)
-                items.count = items.dataset.length - 1
-            else
-                items.count--
-        }
-
-        function next() {
-            if(items.count == items.dataset.length - 1) {
-                items.count = 0
-            } else {
-                items.count++
-            }
-        }
-
-
-        Image {
-            id: previous
-            anchors.right: boxopened.left
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
-            anchors.verticalCenter: boxopened.verticalCenter
-            source: "qrc:/gcompris/src/core/resource/bar_previous.svg"
-            sourceSize.height: 40 * ApplicationInfo.ratio
-            Behavior on scale { PropertyAnimation { duration: 100} }
-            MouseArea {
-                anchors.fill: parent
-                hoverEnabled: true
-                onEntered: previous.scale = 1.1
-                onExited: previous.scale = 1
-                onClicked: background.previous()
-            }
-            visible:false
-        }
-
-        Rectangle {
-            id: info_rect
-            border.color: "red"
-            border.width: 2 * ApplicationInfo.ratio
-            radius: 8*ApplicationInfo.ratio
-            color: "gold"
-            height: parent.height*0.5
-            width: parent.width*0.5
-            anchors.top :table.bottom
-            anchors.bottom: parent.bottom
-            anchors.left: parent.left
-            anchors.leftMargin: 0.1*parent.width*ApplicationInfo.ratio
-            anchors.right: boxopened.left
-            anchors.rightMargin: 50*ApplicationInfo.ratio
-
-            GCText {
-                id:info
-                color: "black"
-                anchors.centerIn: parent
-                horizontalAlignment: Text.AlignHCenter
-                width: info_rect.width
-                height: info_rect.height
-                wrapMode: Text.WordWrap
-                fontSize: regularSize
-                text: items.dataset[items.count].text
-            }
-            visible: false
-        }
-
-        Image {
-            id: img
-            anchors.bottom: boxclosed.top
-            anchors.right : parent.right
-            anchors.rightMargin: parent.width*0.15*ApplicationInfo.ratio
-            height: boxclosed.height
-            width: boxclosed.width
-            source: items.dataset[items.count].img
-            fillMode: Image.PreserveAspectFit
-            visible: false
-            MouseArea {
-                anchors.fill: img
-                id:drag
-                drag.target:img
-                drag.axis: Drag.XandYAxis
-                hoverEnabled: true
-
-                onPressed:img.anchors.right= undefined,
-                          img.anchors.bottom= undefined
-
-            }
-        }
-
-
-        Rectangle {
-            id: name_rect
-            border.color: "black"
-            border.width: 1
-            radius: 2*ApplicationInfo.ratio
-            color: "white"
-            width: name.width * 1.1
-            height: name.height * 1.1
-            anchors {
-                top: boxopened.bottom
-                horizontalCenter: boxopened.horizontalCenter
-                bottomMargin: 0.1*parent.height
-            }
-            GCText {
-                id: name
-                color: "black"
-                fontSize: regularSize
-                anchors.centerIn: name_rect
-                text: items.dataset[items.count].name
-            }
-            visible: false
-        }
-
-        function showImage(){
-            if(items.dataset[items.count].id=="monitor")
-            {
-                monitor.source = img.source
-            }
-            else
-                if(items.dataset[items.count].id=="cpu")
-                {
-                    cpu.visible=true
-                }
-                else
-                    if(items.dataset[items.count].id=="keyboard")
-                    {
-                        keyboard.visible=true
-                    }
-                    else
-                        if(items.dataset[items.count].id=="mouse")
-                        {
-                            mouse.visible=true
-                        }
-            return 0
-        }
-        Image {
-            id: next
-            anchors.left: boxopened.right
-            anchors.leftMargin: 10 * ApplicationInfo.ratio
-            anchors.verticalCenter: boxopened.verticalCenter
-            source: "qrc:/gcompris/src/core/resource/bar_next.svg"
-            sourceSize.height: 40 * ApplicationInfo.ratio
-            Behavior on scale { PropertyAnimation { duration: 100} }
-
-            MouseArea {
-                anchors.fill: parent
-                hoverEnabled: true
-                onEntered: next.scale = 1.1
-                onExited: next.scale = 1
-                onClicked: background.next()
-            }
-            visible: false
-        }
 
         DialogHelp {
             id: dialogHelp

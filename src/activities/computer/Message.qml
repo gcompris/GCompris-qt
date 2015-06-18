@@ -23,7 +23,6 @@
 import QtQuick 2.1
 import "../../core"
 import GCompris 1.0
-import "computer.js" as Activity
 
 Item{
     id: message
