@@ -20,6 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import GCompris 1.0
 
 import "../../core"
 import "hangman.js" as Activity
@@ -75,6 +76,7 @@ ActivityBase {
             property alias hidden:hidden
             property string text:text
             property alias locale: background.locale
+            property alias textinput: textinput
         }
 
         onStart: { Activity.start(items);
@@ -284,6 +286,11 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+	    onConfigClicked: {
+                dialogActivityConfig.active = true
+                dialogActivityConfig.setDefaultValues()
+                displayDialog(dialogActivityConfig)
+            }
         }
         
          VirtualKeyboard {
