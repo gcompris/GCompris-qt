@@ -20,8 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 .pragma library
-.import QtQuick 2.0 as Quick
-.import QtQuick 2.0 as Quick
+.import QtQuick 2.0 as Quick 
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 .import "qrc:/gcompris/src/core/core.js" as Core
 
@@ -47,10 +46,33 @@ var url = "qrc:/gcompris/src/activities/hangman/resource/"
 
 function start(items_) {
     items = items_
-    currentLevel = 0
+    currentLevel = 1;
+    currentSublevel = 1;
     no_of_life = 6;
-    items.wordlist.loadFromFile(
-    GCompris.ApplicationInfo.getLocaleFilePath(items.ourActivity.dataSetUrl + "default-$LOCALE.json"));
+    
+     var locale = items.locale == "system" ? "$LOCALE" : items.locale
+     items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
+            items.ourActivity.dataSetUrl + "default-"+locale+".json"));
+     // If wordlist is empty, we try to load from short locale and if not present again, we switch to default one
+     var localeUnderscoreIndex = locale.indexOf('_')
+     // probably exist a better way to see if the list is empty
+     if(items.wordlist.maxLevel == 0) {
+        var localeShort;
+        // We will first look again for locale xx (without _XX if exist)
+        if(localeUnderscoreIndex > 0) {
+            localeShort = locale.substring(0, localeUnderscoreIndex)
+        }
+        else {
+            localeShort = locale;
+        }
+        // If not found, we will use the default file
+        items.wordlist.useDefault = true
+        items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
+        items.ourActivity.dataSetUrl + "default-"+localeShort+".json"));
+        // We remove the using of default file for next time we enter this function
+        items.wordlist.useDefault = false
+    }
+    
     maxLevel=items.wordlist.maxLevel;
     items.heli.state = "horizontal";
     initLevel(); 
@@ -185,4 +207,9 @@ function nextSublevel()
 {	if(maxsublevel<= ++currentSublevel)
 	{		currentSublevel=0;	}
 	initSublevel();
+}
+
+function focusTextInput() {
+    if (!GCompris.ApplicationInfo.isMobile && items)
+        items.textinput.forceActiveFocus();
 }
