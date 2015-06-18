@@ -30,18 +30,30 @@ ActivityBase {
     
     onStart: focus = true
     onStop: {}
+    
+    // When going on configuration, it steals the focus and re set it to the activity.
+    // We need to set it back to the textinput item in order to have key events.
+    onFocusChanged: {
+        if(focus) {
+            Activity.focusTextInput()
+        }
+    }
 
     pageComponent: Image {
         id: background
-        source:activity.dataSetUrl+"background.svgz"
+        source:activity.dataSetUrl+"background.svg"
 	fillMode: Image.PreserveAspectCrop
 	sourceSize.width: parent.width
         anchors.fill: parent
         signal start
         signal stop
 
+        // system locale by default
+        property string locale: "system"
+        
         Component.onCompleted: {
-            activity.start.connect(start)
+            dialogActivityConfig.getInitialConfiguration()
+	    activity.start.connect(start)
             activity.stop.connect(stop)
         }
 
@@ -50,6 +62,8 @@ ActivityBase {
             id: items
             property Item main: activity.main
             property alias background: background
+            property Item ourActivity: activity
+            property GCAudio audioVoices: activity.audioVoices
             property alias bar: bar
             property alias bonus: bonus
             property alias wordlist: wordlist
@@ -60,11 +74,11 @@ ActivityBase {
             property alias man3:man3
             property alias hidden:hidden
             property string text:text
+            property alias locale: background.locale
         }
 
-        onStart: { Activity.start(items)
-		   if (!ApplicationInfo.isMobile)
-                        textinput.forceActiveFocus();
+        onStart: { Activity.start(items);
+		    Activity.focusTextInput();
 	         }	 
         onStop: { Activity.stop() }
 
@@ -99,9 +113,8 @@ ActivityBase {
         
         Image{
 	      id:heli
-	      width:parent.width/5
-	      height:parent.height/5
-	      source:activity.dataSetUrl+"helicopter.svgz";
+	      sourceSize.height: 90 * ApplicationInfo.ratio
+	      source:activity.dataSetUrl+"plane.svg";
 	      Behavior on x {
               PropertyAnimation {
                           id: xAnim
@@ -153,15 +166,16 @@ ActivityBase {
              
              
              Image{  id:man1
-		     width:heli.width/4
+		     width:heli.width/7
 		     height:heli.height/4
 		     x:heli.width/3
 		     source:activity.dataSetUrl+"aadmi.svg";
 		     anchors.top:heli.bottom
+		     anchors.left:heli.left
 		    		     
               }
 	      Image{ id:man2
-		     width:heli.width/4
+		     width:heli.width/7
 		     height:heli.height/4
 		     source:activity.dataSetUrl+"aadmi.svg";
 		     anchors.top:heli.bottom
@@ -169,7 +183,7 @@ ActivityBase {
 		     
 	      }
 	      Image{ id:man3
-		     width:heli.width/4
+		     width:heli.width/7
 		     height:heli.height/4
 		     source:activity.dataSetUrl+"aadmi.svg";
 		     anchors.top:heli.bottom
@@ -185,8 +199,78 @@ ActivityBase {
               
          
 	}
+	
+	DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    property alias localeBox: localeBox
+                    height: column.height
+
+                    property alias availableLangs: langs.languages
+                    LanguageList {
+                        id: langs
+                    }
+
+                    Column {
+                        id: column
+                        spacing: 10
+                        width: parent.width
+
+                        Flow {
+                            spacing: 5
+                            width: dialogActivityConfig.width
+                            GCComboBox {
+                                id: localeBox
+                                model: langs.languages
+                                background: dialogActivityConfig
+                                width: 250 * ApplicationInfo.ratio
+                                label: qsTr("Select your locale")
+                            }
+                        }
+/* TODO handle this:
+                        GCDialogCheckBox {
+                            id: uppercaseBox
+                            width: 250 * ApplicationInfo.ratio
+                            text: qsTr("Uppercase only mode")
+                            checked: true
+                            onCheckedChanged: {
+                                print("uppercase changed")
+                            }
+                        }
+*/
+                    }
+                }
+            }
+
+            onClose: home()
+            onLoadData: {
+                if(dataToSave && dataToSave["locale"]) {
+                    background.locale = dataToSave["locale"];
+                }
+            }
+            onSaveData: {
+                var oldLocale = background.locale;
+                var newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
+                // Remove .UTF-8
+                if(newLocale.indexOf('.') != -1) {
+                    newLocale = newLocale.substring(0, newLocale.indexOf('.'))
+                }
+                dataToSave = {"locale": newLocale}
+
+                background.locale = newLocale;
+
+                // Restart the activity with new information
+                if(oldLocale !== newLocale) {
+                    background.stop();
+                    background.start();
+                }
+         }
+
 	 
-        DialogHelp {
+      }
+       DialogHelp {
             id: dialogHelp
             onClose: home()
         }
