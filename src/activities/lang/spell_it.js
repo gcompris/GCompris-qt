@@ -32,16 +32,13 @@ var spellItems;
 var wordList;
 var subLevelsLeft
 var currentSubLevel
-var miniGame
 
-function initSpell(items_,wordList_){
+function init(items_, loadedItems_, wordList_, mode_) {
 
     items = items_
+    spellItems = loadedItems_
     wordList = wordList_
-    miniGame = 1
 
-    items.spellIt.source = "Spell_it.qml"
-    spellItems = items.spellIt.item
     console.log("new " + spellItems + " loaded")
     spellItems.answer.forceActiveFocus()
 
@@ -49,54 +46,73 @@ function initSpell(items_,wordList_){
 
 }
 
-function initLevel(){
+function initLevel() {
 
     subLevelsLeft = [];
-    for(var i in wordList){
+    for(var i in wordList) {
         subLevelsLeft.push(i)   // This is available in all editors.
     }
 
     Core.shuffle(subLevelsLeft)
 
     items.score.currentSubLevel = 0
-    items.score.visible = false
-    items.bar.visible = false
-    items.repeatItem.visible = false
     items.imageFrame.visible = false
     items.wordTextbg.visible = false
     items.categoryTextbg.visible = false
 
     currentSubLevel =0
-    spellItems.bar.visible = true
-    spellItems.repeatItem.visible = true
-    spellItems.score.currentSubLevel = 0
-    spellItems.score.numberOfSubLevels = wordList.length
-    spellItems.score.visible = true
-    spellItems.displayed = true
+
+    /* populate VirtualKeyboard for mobile:
+             * 1. for < 10 letters print them all in the same row
+             * 2. for > 10 letters create 3 rows with equal amount of keys per row
+             *    if possible, otherwise more keys in the upper rows
+             */
+    // first generate a map of needed letters
+    var letters = [];
+    for (var i = 0; i < wordList.length; i++) {
+        var currentWord = wordList[i].translatedTxt;
+        for (var j = 0; j < currentWord.length; j++) {
+            var letter = currentWord.charAt(j);
+
+            if(letters.indexOf(letter) === -1)
+                letters.push(currentWord.charAt(j));
+        }
+    }
+    letters.sort();
+    // generate layout from letter map
+    var layout = [];
+    var row = 0;
+    var offset = 0;
+    while (offset < letters.length-1) {
+        var cols = letters.length <= 10 ? letters.length : (Math.ceil((letters.length-offset) / (3 - row)));
+        layout[row] = new Array();
+        for (var j = 0; j < cols; j++)
+            layout[row][j] = { label: letters[j+offset] };
+        offset += j;
+        row++;
+    }
+    items.keyboard.layout = layout;
+    items.keyboard.visible = true;
 
     initSubLevel()
 }
 
-function initSubLevel(){
+function initSubLevel() {
 
-    if(spellItems.score.currentSubLevel < spellItems.score.numberOfSubLevels)
-        spellItems.score.currentSubLevel = spellItems.score.currentSubLevel + 1;
+    if(items.score.currentSubLevel < items.score.numberOfSubLevels)
+        items.score.currentSubLevel = items.score.currentSubLevel + 1;
     else
-        spellItems.score.visible = false
+        items.score.visible = false
 
-    spellItems.goodWord = wordList[spellItems.score.currentSubLevel-1]
+    spellItems.goodWord = wordList[items.score.currentSubLevel-1]
     spellItems.wordImage.changeSource("qrc:/gcompris/data/" + spellItems.goodWord.image)
     spellItems.hintText.changeHint(spellItems.goodWord.translatedTxt[0])
     spellItems.hintText.visible = true
     spellItems.answer.text = ""
 }
 
-function nextSubLevel(){
-    if(spellItems.score.currentSubLevel == spellItems.score.numberOfSubLevels ) {
-        //destroying previous loaded spellIt
-        spellItems.bar.visible = false
-        spellItems.repeatItem.visible = false
-        spellItems.score.visible = false
+function nextSubLevel() {
+    if(items.score.currentSubLevel == items.score.numberOfSubLevels ) {
         spellItems.displayed = false
         spellItems.bonus.good("smiley")
     } else {
@@ -104,11 +120,11 @@ function nextSubLevel(){
     }
 }
 
-function checkAnswer(answer_){
-    if(spellItems.goodWord.translatedTxt == answer_){
+function checkAnswer(answer_) {
+    if(spellItems.goodWord.translatedTxt == answer_) {
         nextSubLevel()
     }
-    else{
+    else {
         badWordSelected(currentSubLevel-1,answer_)
     }
 }
@@ -118,27 +134,48 @@ function badWordSelected(wordIndex,answer) {
     if (subLevelsLeft[0] != wordIndex)
         subLevelsLeft.unshift(wordIndex);
 
-    spellItems.hintText.visible = true
-    //showing hint
+    provideHint(answer)
+}
+
+//function to construct hint based on the answer entered by user
+function provideHint(answer_) {
+    var answer = answer_
     var hint = ""
     var firstIncorrectIndex = 0
 
     for (var i=0 ; i< spellItems.goodWord.translatedTxt.length; i++) {
 
         var goodChar = spellItems.goodWord.translatedTxt[i]
-        if( goodChar == answer[i]) {
+
+        //skipping hint if the suggestion is a space
+        if( goodChar == " ") {
+            hint = hint + " "
+            continue
+        }
+
+        if( answer[i] == goodChar) {
             hint = hint + goodChar
         }
         else {
-            if(firstIncorrectIndex == 0){
+            if(firstIncorrectIndex == 0) {
                 hint = hint + goodChar
                 firstIncorrectIndex = i
             }
-            else{
+            else {
                 hint = hint + "."
             }
         }
+
     }
 
     spellItems.hintText.changeHint(hint)
+    spellItems.hintText.visible = true
+
+}
+
+// to handle virtual key board key press events
+function processKeyPress(text_){
+    var answer = spellItems.answer
+    var text  = text_
+    answer.insert(answer.length,text)
 }

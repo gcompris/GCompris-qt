@@ -38,6 +38,16 @@ var dataset = null;
 var lessons
 var wordList
 var subLevelsLeft
+// miniGames is list of miniGames
+// first element is Activity name,
+// second element is mode of miniGame
+// third element is the qml to load
+var miniGames = [["QuizActivity", 1,"Quiz.qml"],
+                 ["QuizActivity", 2,"Quiz.qml"],
+                 ["QuizActivity", 3,"Quiz.qml"],
+                 ["SpellActivity", 1,"SpellIt.qml"]];
+var currentMiniGame
+var loadedItems
 
 function init(items_) {
     items = items_
@@ -81,19 +91,24 @@ function initLevel() {
 
     maxSubLevel = wordList.length;
     items.score.numberOfSubLevels = maxSubLevel;
-    items.score.visible = true
     items.score.currentSubLevel = 1;
     items.imageFrame.visible = true
     items.wordTextbg.visible = true
     items.wordText.visible = true
     items.categoryTextbg.visible = true
-    items.bar.visible = true
     items.categoryText.changeCategory(currentLesson.name);
+    items.keyboard.visible = false
+    items.miniGameLoader.source = ""
+    currentMiniGame = 0
+    //    items.quiz.source= ""
+    //    items.spellIt.source = ""
 
     subLevelsLeft = [];
-    for(var i in wordList){
+    for(var i in wordList) {
         subLevelsLeft.push(i)   // This is available in all editors.
     }
+
+
 
     initSubLevel()
 }
@@ -122,10 +137,11 @@ function previousLevel() {
 
 function nextSubLevel() {
     ++items.score.currentSubLevel;
-    if(items.score.currentSubLevel == items.score.numberOfSubLevels+1){
+    if(items.score.currentSubLevel == items.score.numberOfSubLevels+1) {
 
         //here logic for starting quiz game
-        QuizActivity.initQuiz(items,wordList)
+        nextMiniGame()
+//      QuizActivity.init(items, wordList)
     }
     else {
         initSubLevel();
@@ -134,10 +150,30 @@ function nextSubLevel() {
 
 function prevSubLevel() {
     if(--items.score.currentSubLevel <= 0) {
-        console.log("initiating new quiz with wordlist" + wordList.length)
-        QuizActivity.initQuiz(items,wordList)
+        //        QuizActivity.init(items,wordList)
+        //        SpellActivity.init(items, wordList)
+        nextMiniGame()
     }
     else {
         initSubLevel()
+    }
+}
+
+//called by a miniGame when it is won
+function nextMiniGame() {
+    if(currentMiniGame < miniGames.length) {
+
+        var mode = miniGames[currentMiniGame][1];
+        var itemToLoad = miniGames[currentMiniGame][2];
+
+        items.miniGameLoader.source = itemToLoad;
+        loadedItems = items.miniGameLoader.item
+
+        // initiate the loaded item mini game
+        loadedItems.init(items, loadedItems, wordList, mode)
+        ++currentMiniGame;
+    }
+    else {
+        nextLevel()
     }
 }

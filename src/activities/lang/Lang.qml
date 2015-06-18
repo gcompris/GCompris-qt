@@ -73,15 +73,15 @@ ActivityBase {
             property alias wordText: wordText
             property alias categoryTextbg: categoryTextbg
             property alias categoryText: categoryText
-//            property alias wordListModel: wordListModel
             property alias parser: parser
             property alias repeatItem: repeatItem
-//            property int count: 0
+            property alias keyboard: keyboard
             property variant goodWord
             property int goodWordIndex
             property alias englishFallbackDialog: englishFallbackDialog
-            property alias quiz: quiz
-            property alias spellIt: spellIt
+            property alias miniGameLoader: miniGameLoader
+            //            property alias quiz: quiz
+            //            property alias spellIt: spellIt
 
             function playWord() {
                 activity.audioVoices.clearQueue()
@@ -128,9 +128,9 @@ ActivityBase {
             onError: console.error("lang: Error parsing json: " + msg);
         }
 
-//        ListModel {
-//            id: wordListModel
-//        }
+        //        ListModel {
+        //            id: wordListModel
+        //        }
 
         Rectangle {
             id: categoryTextbg
@@ -244,7 +244,7 @@ ActivityBase {
                 id: previousWordButton
                 source: "qrc:/gcompris/src/core/resource/bar_previous.svg";
                 sourceSize.width: 30 * 1.2 * ApplicationInfo.ratio
-                anchors{
+                anchors {
                     right: parent.left
                     rightMargin: 30
                     top: parent.top
@@ -359,6 +359,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            anchors.bottom: keyboard.top
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
@@ -411,7 +412,7 @@ ActivityBase {
         Score {
             id: score
 
-            anchors.bottom: parent.bottom
+            anchors.bottom: keyboard.top
             anchors.bottomMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
@@ -419,19 +420,23 @@ ActivityBase {
         }
 
         Loader {
-            id: quiz
+            id: miniGameLoader
             width: parent.width
             height: parent.height
             anchors.fill: parent
             asynchronous: false
         }
 
-        Loader {
-            id: spellIt
+        VirtualKeyboard {
+            id: keyboard
+
+            anchors.bottom: parent.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
-            height: parent.height
-            anchors.fill: parent
-            asynchronous: false
+
+            onKeypress: SpellActivity.processKeyPress(text)
+
+            onError: console.log("VirtualKeyboard error: " + msg);
         }
 
     }

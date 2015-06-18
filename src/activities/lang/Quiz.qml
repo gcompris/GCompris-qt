@@ -33,7 +33,7 @@ import "quiz.js" as QuizActivity
 import "spell_it.js" as SpellActivity
 import "qrc:/gcompris/src/core/core.js" as Core
 
-Item{
+Item {
     id: quiz
     opacity: displayed ? 1 : 0
 
@@ -44,16 +44,17 @@ Item{
 
     property alias background: background
     property alias bonus: bonus
-    property alias score: score
-    property alias bar: bar
     property alias wordImage: wordImage
     property alias imageFrame: imageFrame
     property alias wordListModel: wordListModel
     property alias wordListView: wordListView
     property alias parser: parser
-    property alias repeatItem: repeatItem
     property variant goodWord
     property int goodWordIndex
+
+    function init(items_, loadedItems_, wordList_, mode_) {
+        QuizActivity.init(items_, loadedItems_, wordList_, mode_);
+    }
 
     function playWord() {
         if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
@@ -71,34 +72,34 @@ Item{
         property bool horizontalLayout: background.width > background.height
         property bool keyNavigation: false
 
-        //    Keys.onRightPressed: {
-        //        keyNavigation = true
-        //        wordListView.incrementCurrentIndex()
-        //    }
-        //    Keys.onLeftPressed:  {
-        //        keyNavigation = true
-        //        wordListView.decrementCurrentIndex()
-        //    }
-        //    Keys.onDownPressed:  {
-        //        keyNavigation = true
-        //        wordListView.incrementCurrentIndex()
-        //    }
-        //    Keys.onUpPressed:  {
-        //        keyNavigation = true
-        //        wordListView.decrementCurrentIndex()
-        //    }
-        //    Keys.onSpacePressed:  {
-        //        keyNavigation = true
-        //        wordListView.currentItem.pressed()
-        //    }
-        //    Keys.onEnterPressed:  {
-        //        keyNavigation = true
-        //        wordListView.currentItem.pressed()
-        //    }
-        //    Keys.onReturnPressed:  {
-        //        keyNavigation = true
-        //        wordListView.currentItem.pressed()
-        //    }
+//        Keys.onRightPressed: {
+//            keyNavigation = true
+//            wordListView.incrementCurrentIndex()
+//        }
+//        Keys.onLeftPressed:  {
+//            keyNavigation = true
+//            wordListView.decrementCurrentIndex()
+//        }
+//        Keys.onDownPressed:  {
+//            keyNavigation = true
+//            wordListView.incrementCurrentIndex()
+//        }
+//        Keys.onUpPressed:  {
+//            keyNavigation = true
+//            wordListView.decrementCurrentIndex()
+//        }
+//        Keys.onSpacePressed:  {
+//            keyNavigation = true
+//            wordListView.currentItem.pressed()
+//        }
+//        Keys.onEnterPressed:  {
+//            keyNavigation = true
+//            wordListView.currentItem.pressed()
+//        }
+//        Keys.onReturnPressed:  {
+//            keyNavigation = true
+//            wordListView.currentItem.pressed()
+//        }
 
         JsonParser {
             id: parser
@@ -134,7 +135,7 @@ Item{
                     source: "qrc:/gcompris/src/activities/lang/resource/imageid_frame.svg"
                     sourceSize.width: background.horizontalLayout ? parent.width * 0.7 : parent.height * 1.2
                     z: 11
-                    visible: QuizActivity.miniGame ==3 ? false : true
+                    visible: QuizActivity.mode ==3 ? false : true
 
                     Image {
                         id: wordImage
@@ -226,7 +227,7 @@ Item{
                         z: 7
                         fillMode: Image.PreserveAspectFit
                         anchors.leftMargin: 10* ApplicationInfo.ratio
-                        visible:  (QuizActivity.miniGame==1) ? true : false  // to hide images after first mini game
+                        visible:  (QuizActivity.mode==1) ? true : false  // to hide images after first mini game
                     }
 
                     AnswerButton {
@@ -250,48 +251,10 @@ Item{
             }
         }
 
-        BarButton {
-            id: repeatItem
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            sourceSize.width: 80 * ApplicationInfo.ratio
-
-            z: 12
-            anchors {
-                top: parent.top
-                left: parent.left
-                margins: 10 * ApplicationInfo.ratio
-            }
-            onClicked: {
-                console.log("inside quiz.qml 's repeatItem")
-                quiz.playWord()
-            }
-        }
-
-        Bar {
-            id: bar
-
-            content: BarEnumContent { value: help | home | Activity.currentLevel }
-            onHelpClicked: {
-                displayDialog(dialogHelp)
-            }
-//            onPreviousLevelClicked: Activity.previousLevel()
-//            onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
-        }
 
         Bonus {
             id: bonus
-            onWin: QuizActivity.initQuizMiniGame()
-        }
-
-        Score {
-            id: score
-
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
-            anchors.right: parent.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
-            anchors.top: undefined
+            onWin: Activity.nextMiniGame()
         }
 
     }

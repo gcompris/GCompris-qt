@@ -34,39 +34,28 @@ var quizItems;
 var wordList;
 var subLevelsLeft
 var currentSubLevel
-var miniGame
+var mode
 
-function initQuiz(items_,wordList_){
+function init(items_, loadedItems_, wordList_, mode_) {
 
     items = items_
+    quizItems = loadedItems_
     wordList = wordList_
-    miniGame = 1
-
-    items.quiz.source = "Quiz.qml"
-    quizItems = items.quiz.item
-    console.log(quizItems + "loaded")
-
-    initQuizMiniGame()
-
-}
-
-function initQuizMiniGame(){
+    mode = mode_
 
     subLevelsLeft = [];
-    for(var i in wordList){
+    for(var i in wordList) {
         subLevelsLeft.push(i)   // This is available in all editors.
     }
 
     Core.shuffle(subLevelsLeft)
 
     items.score.currentSubLevel = 0
-    items.score.visible = false
-    items.bar.visible = false
-    items.repeatItem.visible = false
     items.imageFrame.visible = false
     items.wordTextbg.visible = false
+    items.categoryTextbg.visible = false
 
-    if(miniGame==3){
+    if(mode==3) {
         quizItems.wordImage.visible = false
         quizItems.imageFrame.visible = false
     }
@@ -76,21 +65,15 @@ function initQuizMiniGame(){
     }
 
     currentSubLevel =0
-    quizItems.bar.visible = true
-    quizItems.repeatItem.visible = true
-    quizItems.score.currentSubLevel = 0
-    quizItems.score.numberOfSubLevels = wordList.length
-    quizItems.score.visible = true
-
     initSubLevelQuiz()
 }
 
-function initSubLevelQuiz(){
+function initSubLevelQuiz() {
 
-    if(quizItems.score.currentSubLevel < quizItems.score.numberOfSubLevels)
-        quizItems.score.currentSubLevel = quizItems.score.currentSubLevel + 1;
+    if(items.score.currentSubLevel < items.score.numberOfSubLevels)
+        items.score.currentSubLevel = items.score.currentSubLevel + 1;
     else
-        quizItems.score.visible = false
+        items.score.visible = false
 
     quizItems.goodWordIndex = subLevelsLeft.pop()
     quizItems.goodWord = wordList[quizItems.goodWordIndex]
@@ -112,32 +95,17 @@ function initSubLevelQuiz(){
     Core.shuffle(selectedWords);
 
     for (var j = 0; j < selectedWords.length; j++) {
-        quizItems.wordListModel.append({"word": selectedWords[j][0], "image": selectedWords[j][1]})
+        quizItems.wordListModel.append( {"word": selectedWords[j][0], "image": selectedWords[j][1]})
     }
 
     quizItems.wordImage.changeSource("qrc:/gcompris/data/" + quizItems.goodWord.image)
 
 }
 
-function nextSubLevelQuiz(){
+function nextSubLevelQuiz() {
     ++currentSubLevel
     if(subLevelsLeft.length === 0) {
-        if(miniGame==3){
-            items.imageFrame.visible = true
-            quizItems.displayed = false
-
-            //destroying previous loaded quiz
-            items.quiz.source = ""
-            miniGame = 1
-            quizItems.bonus.good("flower")
-            SpellActivity.initSpell(items,wordList);
-//            these things to be put in spell activity's bonus function
-//            items.bonus.good("smiley")
-        }
-        else{
-            ++miniGame;
-            quizItems.bonus.good("flower")
-        }
+        quizItems.bonus.good("smiley")
     } else {
         initSubLevelQuiz();
     }
@@ -147,5 +115,5 @@ function nextSubLevelQuiz(){
 function badWordSelected(wordIndex) {
     if (subLevelsLeft[0] != wordIndex)
         subLevelsLeft.unshift(wordIndex);
-    quizItems.score.currentSubLevel = quizItems.score.currentSubLevel -1
+    items.score.currentSubLevel = items.score.currentSubLevel -1
 }

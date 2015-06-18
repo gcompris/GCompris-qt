@@ -43,21 +43,23 @@ Item {
     property int index: 1
 
     property alias background: background
-    property alias bar: bar
-    property alias bonus: bonus
-    property alias score: score
     property alias wordImage: wordImage
     property alias imageFrame: imageFrame
     property alias hintTextbg: hintTextbg
     property alias hintText:  hintText
     property alias parser: parser
-    property alias repeatItem: repeatItem
     property alias answerbg: answerbg
     property alias answer: answer
     property alias ok: ok
     property alias okMouseArea: okMouseArea
+    property alias bonus: bonus
     property variant goodWord
     property int goodWordIndex
+
+
+    function init(items_, loadedItems_, wordList_, mode_) {
+        SpellActivity.init(items_, loadedItems_, wordList_, mode_);
+    }
 
     function playWord() {
         if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
@@ -140,13 +142,13 @@ Item {
             id: imageFrame
             width:  background.width * 0.55
             height: background.horizontalLayout
-                    ? (background.height - bar.height)* 0.7
-                    : (background.height - bar.height) * 0.4
+                    ? (background.height - Activity.items.bar.height - Activity.items.keyboard.height)* 0.7
+                    : (background.height - Activity.items.bar.height) * 0.4
 
             anchors {
                 horizontalCenter: background.horizontalCenter
                 top: background.top
-                topMargin: (background.height - bar.height) * 0.15
+                topMargin: (background.height - Activity.items.bar.height - Activity.items.keyboard.height) * 0.15
             }
             source: "qrc:/gcompris/src/activities/lang/resource/imageid_frame.svg"
             sourceSize.width: background.horizontalLayout ? parent.width * 0.9 : parent.height * 1.2
@@ -199,9 +201,11 @@ Item {
             border.color: "#000000"
             border.width: 2
             radius: 16
-            anchors.top: imageFrame.bottom
-            anchors.left: imageFrame.left
-            anchors.topMargin: 20* ApplicationInfo.ratio
+            anchors {
+                top: imageFrame.bottom
+                left: imageFrame.left
+                topMargin: 20* ApplicationInfo.ratio
+            }
 
             TextInput {
                 id: answer
@@ -228,12 +232,13 @@ Item {
             width: answerbg.width * 1.2
             height: answerbg.height
             fillMode: Image.PreserveAspectFit
-            anchors.top: imageFrame.bottom
-            anchors.topMargin: 10* ApplicationInfo.ratio
-            anchors.left: imageFrame.right
-            anchors.leftMargin: 10* ApplicationInfo.ratio
-            anchors.right: parent.right
-
+            anchors {
+                top: imageFrame.bottom
+                topMargin: 10* ApplicationInfo.ratio
+                left: imageFrame.right
+                leftMargin: 10* ApplicationInfo.ratio
+                right: parent.right
+            }
             MouseArea {
                 id: okMouseArea
                 anchors.fill: parent
@@ -244,48 +249,23 @@ Item {
             }
         }
 
-        BarButton {
-            id: repeatItem
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            sourceSize.width: 80 * ApplicationInfo.ratio
 
-            z: 12
-            anchors {
-                top: parent.top
-                left: parent.left
-                margins: 10 * ApplicationInfo.ratio
-            }
-            onClicked: {
-                console.log("inside spell it 's repeatItem")
-                playWord()
-            }
-        }
+        //        VirtualKeyboard {
+        //            id: keyboard
+        //            x: 0
 
-        Bar {
-            id: bar
+        //            anchors.bottom: parent.bottom
+        //            anchors.horizontalCenter: parent.horizontalCenter
+        //            width: parent.width
 
-            content: BarEnumContent { value: help | home | Activity.currentLevel }
-            onHelpClicked: {
-                displayDialog(dialogHelp)
-            }
-            //            onPreviousLevelClicked: Activity.previousLevel()
-            //            onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
-        }
+        //            onKeypress: answer.insert(answer.length,text)
+
+        //            onError: console.log("VirtualKeyboard error: " + msg);
+        //        }
 
         Bonus {
             id: bonus
-            onWin: Activity.nextLevel()
-        }
-
-        Score {
-            id: score
-
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: 10 * ApplicationInfo.ratio
-            anchors.right: parent.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
-            anchors.top: undefined
+            onWin: Activity.nextMiniGame()
         }
 
     }
