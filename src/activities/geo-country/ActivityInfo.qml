@@ -32,6 +32,6 @@ ActivityInfo {
   goal: ""
   prerequisite: ""
   manual: ""
-  credit: "The map of Germany comes from Wikipedia and is released under the GNU Free Documentation License. Olaf Ronneberger and his children Lina and Julia Ronneberger created the German level."
+  credit: qsTr("The map of Germany comes from Wikipedia and is released under the GNU Free Documentation License. Olaf Ronneberger and his children Lina and Julia Ronneberger created the German level.")
   section: "discovery"
 }
