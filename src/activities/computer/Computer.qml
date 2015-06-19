@@ -35,7 +35,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: "resource/background.svg"
+        source: "resource/room/background.svg"
         sourceSize.width: parent.width
         sourceSize.height: parent.height
 
@@ -59,18 +59,18 @@ ActivityBase {
         Rectangle {
             id: switchboard
             radius: 10
-            height: parent.height*0.05
+            height: parent.height*0.1
             width: parent.width*0.1
             anchors {
                 top: parent.top
                 left: parent.left
-                leftMargin: 0.1*parent.width
-                topMargin: 0.05*parent.height
+                leftMargin: 0.45*parent.width
+                topMargin: 0.2*parent.height
             }
 
             Image {
                 id: poweron
-                source: "resource/poweron.svg"
+                source: "resource/room/poweron.svg"
                 anchors.fill: switchboard
                 visible: false
                 MouseArea {
@@ -83,7 +83,7 @@ ActivityBase {
 
             Image {
                 id: poweroff
-                source: "resource/poweroff.svg"
+                source: "resource/room/poweroff.svg"
                 anchors.fill: switchboard
                 visible: true
                 MouseArea
@@ -99,7 +99,7 @@ ActivityBase {
 
         Image {
             id: boxclosed
-            source: "resource/closebox.svg"
+            source: "resource/room/closebox.svg"
             visible: true
             sourceSize.height: parent.width/4
             sourceSize.width: parent.height/4
@@ -120,7 +120,7 @@ ActivityBase {
 
         Image {
             id: boxopened
-            source: "resource/openbox.svg"
+            source: "resource/room/openbox.svg"
             sourceSize.height: boxclosed.height
             sourceSize.width: boxclosed.width
             anchors {

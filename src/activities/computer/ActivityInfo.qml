@@ -24,8 +24,8 @@ ActivityInfo {
   author: "Sagar Chand Agarwal < atomsagar@gmail.com >"
   demo: true
   title: qsTr("Computer activity")
-  description: qsTr("Your goal is to click on the box kept beside the table and see the components of computer one by one and read about it.Then,Drag the image to the specific points on the table and place it.Zoom at the table to enjoy virtual settings.")
-  //intro: "Dad bought personal computer.Unbox the box kept beside the door and drag components one by one."
+  description: qsTr("Your goal is to click on the box kept beside the table and see the components of computer one by one and read about it.")
+  //intro: ""
   goal: qsTr("Learning the parts of computer and basic setting of its external components")
   prerequisite: "none"
   manual: qsTr("Drag and drop the components on the table and zoom the monitor and enjoy.")
