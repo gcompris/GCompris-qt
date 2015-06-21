@@ -34,6 +34,7 @@ Item {
     property double tileWidth
     property double tileHeight
     property string imageName: imgName
+    property string imageSound: imgSound
     property alias tileImageGlow: tileImageGlow
     property QtObject answer: tileImage.parent
     property bool isInList: tileImage.parent == tile
@@ -162,8 +163,7 @@ Item {
                     else
                         leftContainer.z = 1
                     
-                    //activity.audioEffects.stop()
-                    //activity.audioEffects.play(pressSound)
+                    activity.audioVoices.play(ApplicationInfo.getAudioFilePath(imageSound))
                     
                     tileImage.anchors.centerIn = undefined
                     if (tileImage.dragTarget != null) {
