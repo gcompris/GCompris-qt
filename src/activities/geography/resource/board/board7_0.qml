@@ -169,7 +169,7 @@ QtObject {
          "y": "0.704"
       },
       {
-         "pixmapfile": "africa/ganbia.png",
+         "pixmapfile": "africa/gambia.png",
          "sound": "voices-$CA/$LOCALE/geography/gambia.$CA",
          "toolTipText": qsTr("Gambia"),
          "x": "0.048",
