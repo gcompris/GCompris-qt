@@ -30,138 +30,161 @@ QtObject {
       },
       {
          "pixmapfile": "europe/cyprus.png",
+         "sound": "voices-$CA/$LOCALE/geography/cyprus.$CA",
          "type": "SHAPE_BACKGROUND",
          "x": "0.859",
          "y": "0.965"
       },
       {
          "pixmapfile": "europe/greece.png",
+         "sound": "voices-$CA/$LOCALE/geography/greece.$CA",
          "toolTipText": qsTr("Greece"),
          "x": "0.677",
          "y": "0.878"
       },
       {
          "pixmapfile": "europe/ukraine.png",
+         "sound": "voices-$CA/$LOCALE/geography/ukraine.$CA",
          "toolTipText": qsTr("Ukraine"),
          "x": "0.781",
          "y": "0.603"
       },
       {
          "pixmapfile": "europe/turkey.png",
+         "sound": "voices-$CA/$LOCALE/geography/turkey.$CA",
          "toolTipText": qsTr("Turkey"),
          "x": "0.851",
          "y": "0.867"
       },
       {
          "pixmapfile": "europe/slovenia.png",
+         "sound": "voices-$CA/$LOCALE/geography/slovenia.$CA",
          "toolTipText": qsTr("Slovenia"),
          "x": "0.516",
          "y": "0.662"
       },
       {
          "pixmapfile": "europe/slovakia.png",
+         "sound": "voices-$CA/$LOCALE/geography/slovakia.$CA",
          "toolTipText": qsTr("Slovak Republic"),
          "x": "0.593",
          "y": "0.596"
       },
       {
          "pixmapfile": "europe/montenegro.png",
+         "sound": "voices-$CA/$LOCALE/geography/montenegro.$CA",
          "toolTipText": qsTr("Montenegro"),
          "x": "0.601",
          "y": "0.755"
       },
       {
          "pixmapfile": "europe/serbia.png",
+         "sound": "voices-$CA/$LOCALE/geography/serbia.$CA",
          "toolTipText": qsTr("Serbia"),
          "x": "0.623",
          "y": "0.723"
       },
       {
          "pixmapfile": "europe/russia.png",
+         "sound": "voices-$CA/$LOCALE/geography/russia.$CA",
          "toolTipText": qsTr("Russia"),
          "x": "0.788",
          "y": "0.373"
       },
       {
          "pixmapfile": "europe/romania.png",
+         "sound": "voices-$CA/$LOCALE/geography/romania.$CA",
          "toolTipText": qsTr("Romania"),
          "x": "0.688",
          "y": "0.669"
       },
       {
          "pixmapfile": "europe/poland.png",
+         "sound": "voices-$CA/$LOCALE/geography/poland.$CA",
          "toolTipText": qsTr("Poland"),
          "x": "0.574",
          "y": "0.507"
       },
       {
          "pixmapfile": "europe/moldova.png",
+         "sound": "voices-$CA/$LOCALE/geography/moldova.$CA",
          "toolTipText": qsTr("Moldova"),
          "x": "0.74",
          "y": "0.641"
       },
       {
          "pixmapfile": "europe/macedonia.png",
+         "sound": "voices-$CA/$LOCALE/geography/macedonia.$CA",
          "toolTipText": qsTr("Macedonia"),
          "x": "0.642",
          "y": "0.787"
       },
       {
          "pixmapfile": "europe/lithuania.png",
+         "sound": "voices-$CA/$LOCALE/geography/lithuania.$CA",
          "toolTipText": qsTr("Lithuania"),
          "x": "0.642",
          "y": "0.425"
       },
       {
          "pixmapfile": "europe/latvia.png",
+         "sound": "voices-$CA/$LOCALE/geography/latvia.$CA",
          "toolTipText": qsTr("Latvia"),
          "x": "0.651",
          "y": "0.381"
       },
       {
          "pixmapfile": "europe/hungary.png",
+         "sound": "voices-$CA/$LOCALE/geography/hungary.$CA",
          "toolTipText": qsTr("Hungary"),
          "x": "0.591",
          "y": "0.635"
       },
       {
          "pixmapfile": "europe/estonia.png",
+         "sound": "voices-$CA/$LOCALE/geography/estonia.$CA",
          "toolTipText": qsTr("Estonia"),
          "x": "0.647",
          "y": "0.334"
       },
       {
          "pixmapfile": "europe/czech.png",
+         "sound": "voices-$CA/$LOCALE/geography/czech.$CA",
          "toolTipText": qsTr("Czech Republic"),
          "x": "0.525",
          "y": "0.561"
       },
       {
          "pixmapfile": "europe/croatia.png",
+         "sound": "voices-$CA/$LOCALE/geography/croatia.$CA",
          "toolTipText": qsTr("Croatia"),
          "x": "0.546",
          "y": "0.705"
       },
       {
          "pixmapfile": "europe/bulgaria.png",
+         "sound": "voices-$CA/$LOCALE/geography/bulgaria.$CA",
          "toolTipText": qsTr("Bulgaria"),
          "x": "0.701",
          "y": "0.757"
       },
       {
          "pixmapfile": "europe/bosnia_herzegovina.png",
+         "sound": "voices-$CA/$LOCALE/geography/bosnia_herzegovina.$CA",
          "toolTipText": qsTr("Bosnia Herzegovina"),
          "x": "0.568",
          "y": "0.728"
       },
       {
          "pixmapfile": "europe/belarus.png",
+         "sound": "voices-$CA/$LOCALE/geography/belarus.$CA",
          "toolTipText": qsTr("Belarus"),
          "x": "0.714",
          "y": "0.463"
       },
       {
          "pixmapfile": "europe/albania.png",
+         "sound": "voices-$CA/$LOCALE/geography/albania.$CA",
          "toolTipText": qsTr("Albania"),
          "x": "0.616",
          "y": "0.805"
