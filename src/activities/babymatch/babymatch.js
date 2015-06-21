@@ -123,6 +123,7 @@ function initLevel() {
         if(levelData.levels[i].type === undefined) {
             items.availablePieces.model.append( {
                 "imgName": levelData.levels[i].pixmapfile,
+                "imgSound": levelData.levels[i].sound,
                 "imgHeight": levelData.levels[i].height == undefined ? 0 : levelData.levels[i].height,
                 "imgWidth": levelData.levels[i].width == undefined ? 0 : levelData.levels[i].width,
                 "toolTipText": levelData.levels[i].toolTipText == undefined ? "" : levelData.levels[i].toolTipText,
