@@ -31,6 +31,6 @@ Babymatch {
 
     url: "qrc:/gcompris/src/activities/details/resource/"
     answerGlow: false
-    levelCount: 22
+    levelCount: 21
     displayDropCircle: false
 }

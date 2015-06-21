@@ -22,28 +22,34 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Notre Dame de Paris cathedral on the Île de la Cité island in Paris, France.")
+   property string instruction: qsTr("Windmill in Sønderho, Fanø, Denmark")
    property variant levels: [
       {
-         "pixmapfile" : "image/NDP_background.jpg",
+         "pixmapfile" : "image/FanoeWindmill_background.jpg",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/NDP_0.png",
-         "x" : "0.508",
-         "y" : "0.65",
+         "pixmapfile" : "image/FanoeWindmill_0.png",
+         "x" : "0.679",
+         "y" : "0.324",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/NDP_1.png",
-         "x" : "0.499",
-         "y" : "0.357",
+         "pixmapfile" : "image/FanoeWindmill_1.png",
+         "x" : "0.162",
+         "y" : "0.612",
          "dropAreaSize" : "8"
       },
       {
-         "pixmapfile" : "image/NDP_2.png",
-         "x" : "0.286",
-         "y" : "0.888",
+         "pixmapfile" : "image/FanoeWindmill_2.png",
+         "x" : "0.703",
+         "y" : "0.812",
+         "dropAreaSize" : "8"
+      },
+      {
+         "pixmapfile" : "image/FanoeWindmill_3.png",
+         "x" : "0.372",
+         "y" : "0.696",
          "dropAreaSize" : "8"
       }
    ]
