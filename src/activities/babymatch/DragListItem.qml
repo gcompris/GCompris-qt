@@ -163,7 +163,8 @@ Item {
                     else
                         leftContainer.z = 1
                     
-                    activity.audioVoices.play(ApplicationInfo.getAudioFilePath(imageSound))
+                    if(imageSound)
+                        activity.audioVoices.play(ApplicationInfo.getAudioFilePath(imageSound))
                     
                     tileImage.anchors.centerIn = undefined
                     if (tileImage.dragTarget != null) {
