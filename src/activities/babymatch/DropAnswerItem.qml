@@ -60,16 +60,8 @@ Rectangle {
     DropArea {
         id: dragTarget
         
-        width: Math.max(Math.min((imgWidth ? imgWidth * dropCircle.parent.width : (dropCircle.parent.source == "" ? 
-			   dropCircle.parent.width * dropAreaImage.sourceSize.width/dropCircle.parent.width : 
-			   dropCircle.parent.width * dropAreaImage.sourceSize.width/dropCircle.parent.sourceSize.width)), 
-			   12 * dropCircle.width), 3 * dropCircle.width)
-			   
-        height: Math.max(Math.min((imgHeight ? imgHeight * dropCircle.parent.height : (dropCircle.parent.source == "" ? 
-				dropCircle.parent.height * dropAreaImage.sourceSize.height/dropCircle.parent.height : 
-				dropCircle.parent.height * dropAreaImage.sourceSize.height/dropCircle.parent.sourceSize.height)), 
-			    12 * dropCircle.width), 3 * dropCircle.width)
-                        
+        width: 3 * dropCircle.width
+        height: 3 * dropCircle.width
         z: dropCircle.z
         anchors.centerIn: parent
         
