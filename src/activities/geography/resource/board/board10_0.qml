@@ -204,6 +204,7 @@ QtObject {
       },
       {
          "pixmapfile": "asia/georgia.png",
+         //: Translators: Strip Asia| and translate only Georgia
          "toolTipText": qsTr("Asia|Georgia"),
          "x": "0.133",
          "y": "0.389"

@@ -22,6 +22,7 @@
 import QtQuick 2.0
 
 QtObject {
+   property string instruction: "Districts of Canada"
    property variant levels: [
       {
          "pixmapfile" : "canada/background.png",
