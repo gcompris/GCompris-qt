@@ -222,6 +222,7 @@ QtObject {
       },
       {
          "pixmapfile" : "usa/georgia.png",
+         //: Translators: Strip USA| and translate only Georgia
          "toolTipText" : "USA|Georgia",
          "x" : "0.75",
          "y" : "0.673"
