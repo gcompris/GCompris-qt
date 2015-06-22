@@ -37,6 +37,7 @@ var baseUrl = "qrc:/gcompris/src/activities/lang/resource/";
 var dataset = null;
 var lessons
 var wordList
+var savedWordList
 var subLevelsLeft
 // miniGames is list of miniGames
 // first element is Activity name,
@@ -61,7 +62,24 @@ function start() {
     currentLevel = 0;
     currentSubLevel = 0;
 
-    dataset = Lang.load(items.parser, baseUrl, "words.json", "content-$LOCALE.json")
+    var locale = items.locale == "system" ? "$LOCALE" : items.locale
+    dataset = Lang.load(items.parser, baseUrl, "words.json", "content-"+ locale +".json")
+
+    // If dataset is empty, we try to load from short locale and if not present again, we switch to default one
+    var localeUnderscoreIndex = locale.indexOf('_')
+    if(!dataset) {
+        var localeShort;
+        // We will first look again for locale xx (without _XX if exist)
+        if(localeUnderscoreIndex > 0) {
+            localeShort = locale.substring(0, localeUnderscoreIndex)
+        }
+        else {
+            localeShort = locale;
+        }
+        dataset = Lang.load(items.parser, baseUrl, "words.json", "content-"+localeShort+ ".json")
+    }
+
+    //If still dataset is empty then fallback to english
     if(!dataset) {
         // English fallback
         items.background.englishFallback = true
@@ -92,30 +110,32 @@ function initLevel() {
     maxSubLevel = wordList.length;
     items.score.numberOfSubLevels = maxSubLevel;
     items.score.currentSubLevel = 1;
+
     items.imageFrame.visible = true
     items.wordTextbg.visible = true
     items.wordText.visible = true
     items.categoryTextbg.visible = true
     items.categoryText.changeCategory(currentLesson.name);
-    items.keyboard.visible = false
     items.miniGameLoader.source = ""
+    items.keyboard.visibleFlag = false
     currentMiniGame = 0
-    //    items.quiz.source= ""
-    //    items.spellIt.source = ""
 
     subLevelsLeft = [];
     for(var i in wordList) {
         subLevelsLeft.push(i)   // This is available in all editors.
     }
 
-
-
     initSubLevel()
 }
 
 function initSubLevel() {
     // initialize sublevel
+    if(items.score.currentSubLevel == 1)
+        items.previousWordButton.visible = false
+    else
+        items.previousWordButton.visible = true
 
+    console.log(items.score.currentSubLevel)
     items.goodWord = wordList[items.score.currentSubLevel-1]
     items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image)
     items.wordText.changeText(items.goodWord.translatedTxt)
@@ -138,10 +158,8 @@ function previousLevel() {
 function nextSubLevel() {
     ++items.score.currentSubLevel;
     if(items.score.currentSubLevel == items.score.numberOfSubLevels+1) {
-
         //here logic for starting quiz game
         nextMiniGame()
-//      QuizActivity.init(items, wordList)
     }
     else {
         initSubLevel();
@@ -149,10 +167,9 @@ function nextSubLevel() {
 }
 
 function prevSubLevel() {
-    if(--items.score.currentSubLevel <= 0) {
-        //        QuizActivity.init(items,wordList)
-        //        SpellActivity.init(items, wordList)
-        nextMiniGame()
+    --items.score.currentSubLevel
+    if( items.score.currentSubLevel <= 0) {
+        //Do nothing
     }
     else {
         initSubLevel()
@@ -166,8 +183,19 @@ function nextMiniGame() {
         var mode = miniGames[currentMiniGame][1];
         var itemToLoad = miniGames[currentMiniGame][2];
 
+        // reloading the wordList
+        var currentLesson = lessons[currentLevel]
+        var wordList = Lang.getLessonWords(dataset, currentLesson);
+        Core.shuffle(wordList);
+        maxSubLevel = wordList.length
+
         items.miniGameLoader.source = itemToLoad;
         loadedItems = items.miniGameLoader.item
+
+        // resetting the wordList length because it could have been spliced by quiz miniGame 3
+        if(currentMiniGame === 3) {
+            items.score.numberOfSubLevels = wordList.length
+        }
 
         // initiate the loaded item mini game
         loadedItems.init(items, loadedItems, wordList, mode)

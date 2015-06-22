@@ -187,6 +187,17 @@ Item {
         }
     }
 
+    /**
+     * Check if a voice file exists in the first place.
+     * can be used to check before appending it to list of voices.
+     *
+     * @param type:string file File to the audio file to be checked.
+     * @returns @c true upon success, or @c false if @p file does not exist
+     */
+    function fileExists(file) {
+        return fileId.exists(file)
+    }
+
     Audio {
         id: audio
         onError: {

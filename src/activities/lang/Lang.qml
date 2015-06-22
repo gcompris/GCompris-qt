@@ -49,6 +49,9 @@ ActivityBase {
         property bool englishFallback: false
         property bool downloadWordsNeeded: false
 
+        //system locale by defauls
+        property string locale: "system"
+
         signal start
         signal stop
         signal voiceError
@@ -73,6 +76,7 @@ ActivityBase {
             property alias wordText: wordText
             property alias categoryTextbg: categoryTextbg
             property alias categoryText: categoryText
+            property alias previousWordButton: previousWordButton
             property alias parser: parser
             property alias repeatItem: repeatItem
             property alias keyboard: keyboard
@@ -80,13 +84,19 @@ ActivityBase {
             property int goodWordIndex
             property alias englishFallbackDialog: englishFallbackDialog
             property alias miniGameLoader: miniGameLoader
+            property alias locale: background.locale
             //            property alias quiz: quiz
             //            property alias spellIt: spellIt
 
             function playWord() {
-                activity.audioVoices.clearQueue()
-                if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
+                if(!activity.audioVoices.fileExists(ApplicationInfo.getAudioFilePath(goodWord.voice))) {
                     voiceError();
+                }
+                else {
+                    activity.audioVoices.clearQueue()
+                    if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
+                        voiceError();
+                }
             }
             onGoodWordChanged: playWord()
 
@@ -127,10 +137,6 @@ ActivityBase {
             id: parser
             onError: console.error("lang: Error parsing json: " + msg);
         }
-
-        //        ListModel {
-        //            id: wordListModel
-        //        }
 
         Rectangle {
             id: categoryTextbg
@@ -347,8 +353,11 @@ ActivityBase {
                 margins: 10 * ApplicationInfo.ratio
             }
             onClicked: {
-                console.log("inside main repeatItem")
-                items.playWord()
+                //items.playWord()
+                if(Activity.currentMiniGame ==0)
+                    items.playWord()
+                else
+                    Activity.loadedItems.playWord();
             }
         }
 
@@ -360,13 +369,18 @@ ActivityBase {
         Bar {
             id: bar
             anchors.bottom: keyboard.top
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | config}
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onConfigClicked: {
+                dialogActivityConfig.active = true
+                dialogActivityConfig.setDefaultValues()
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {
@@ -434,9 +448,96 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
 
+            property bool visibleFlag: false
+            visible: ApplicationSettings.isVirtualKeyboard && items.keyboard.visibleFlag
+
             onKeypress: SpellActivity.processKeyPress(text)
 
             onError: console.log("VirtualKeyboard error: " + msg);
+        }
+
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    property alias localeBox: localeBox
+                    height: column.height
+
+                    property alias availableLangs: langs.languages
+                    LanguageList {
+                        id: langs
+                    }
+
+                    Column {
+                        id: column
+                        spacing: 10
+                        width: parent.width
+
+                        Flow {
+                            spacing: 5
+                            width: dialogActivityConfig.width
+                            GCComboBox {
+                                id: localeBox
+                                model: langs.languages
+                                background: dialogActivityConfig
+                                width: 250 * ApplicationInfo.ratio
+                                label: qsTr("Select your locale")
+                            }
+                        }
+                        /* TODO handle this:
+                        GCDialogCheckBox {
+                            id: uppercaseBox
+                            width: 250 * ApplicationInfo.ratio
+                            text: qsTr("Uppercase only mode")
+                            checked: true
+                            onCheckedChanged: {
+                                print("uppercase changed")
+                            }
+                        }
+*/
+                    }
+                }
+            }
+
+            onClose: home()
+            onLoadData: {
+                if(dataToSave && dataToSave["locale"]) {
+                    background.locale = dataToSave["locale"];
+                }
+            }
+            onSaveData: {
+                var oldLocale = background.locale;
+                var newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
+                // Remove .UTF-8
+                if(newLocale.indexOf('.') != -1) {
+                    newLocale = newLocale.substring(0, newLocale.indexOf('.'))
+                }
+                dataToSave = {"locale": newLocale}
+
+                background.locale = newLocale;
+
+                // Restart the activity with new information
+                if(oldLocale !== newLocale) {
+                    background.stop();
+                    background.start();
+                }
+            }
+
+
+            function setDefaultValues() {
+                var localeUtf8 = background.locale;
+                if(background.locale != "system") {
+                    localeUtf8 += ".UTF-8";
+                }
+
+                for(var i = 0 ; i < dialogActivityConfig.configItem.availableLangs.length ; i ++) {
+                    if(dialogActivityConfig.configItem.availableLangs[i].locale === localeUtf8) {
+                        dialogActivityConfig.loader.item.localeBox.currentIndex = i;
+                        break;
+                    }
+                }
+            }
         }
 
     }

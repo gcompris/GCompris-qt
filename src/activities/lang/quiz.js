@@ -31,24 +31,17 @@
 
 var items;
 var quizItems;
-var wordList;
+var filteredWordList;
 var subLevelsLeft
 var currentSubLevel
 var mode
 
-function init(items_, loadedItems_, wordList_, mode_) {
+function init(items_, loadedItems_, filteredWordList_, mode_) {
 
     items = items_
     quizItems = loadedItems_
-    wordList = wordList_
+    filteredWordList = filteredWordList_
     mode = mode_
-
-    subLevelsLeft = [];
-    for(var i in wordList) {
-        subLevelsLeft.push(i)   // This is available in all editors.
-    }
-
-    Core.shuffle(subLevelsLeft)
 
     items.score.currentSubLevel = 0
     items.imageFrame.visible = false
@@ -58,14 +51,34 @@ function init(items_, loadedItems_, wordList_, mode_) {
     if(mode==3) {
         quizItems.wordImage.visible = false
         quizItems.imageFrame.visible = false
+
+        for (var j = 0; j < filteredWordList.length ; j++) {
+            if(!quizItems.checkWordExistence (filteredWordList[j]) || items.repeatItem.visible == false) {
+                filteredWordList.splice(j,1)
+                j--;
+            }
+        }
+        items.score.numberOfSubLevels = filteredWordList.length
     }
     else {
         quizItems.wordImage.visible = true
         quizItems.imageFrame.visible = true
     }
 
+    subLevelsLeft = [];
+    for(var i in filteredWordList) {
+        subLevelsLeft.push(i)   // This is available in all editors.
+    }
+
+    Core.shuffle(subLevelsLeft)
     currentSubLevel =0
-    initSubLevelQuiz()
+
+    if(subLevelsLeft.length === 0) {
+        quizItems.bonus.good("smiley")
+    } else {
+        initSubLevelQuiz();
+    }
+
 }
 
 function initSubLevelQuiz() {
@@ -76,15 +89,15 @@ function initSubLevelQuiz() {
         items.score.visible = false
 
     quizItems.goodWordIndex = subLevelsLeft.pop()
-    quizItems.goodWord = wordList[quizItems.goodWordIndex]
+    quizItems.goodWord = filteredWordList[quizItems.goodWordIndex]
 
     var selectedWords = []
     selectedWords.push([quizItems.goodWord.translatedTxt,"qrc:/gcompris/data/"+ quizItems.goodWord.image])
 
 
-    for (var i = 0; i < wordList.length; i++) {
-        if(wordList[i].translatedTxt !== selectedWords[0][0]){
-            selectedWords.push([wordList[i].translatedTxt,"qrc:/gcompris/data/"+ wordList[i].image])
+    for (var i = 0; i < filteredWordList.length; i++) {
+        if(filteredWordList[i].translatedTxt !== selectedWords[0][0]){
+            selectedWords.push([filteredWordList[i].translatedTxt,"qrc:/gcompris/data/"+ filteredWordList[i].image])
         }
         if(selectedWords.length > 4)
             break
@@ -99,7 +112,6 @@ function initSubLevelQuiz() {
     }
 
     quizItems.wordImage.changeSource("qrc:/gcompris/data/" + quizItems.goodWord.image)
-
 }
 
 function nextSubLevelQuiz() {

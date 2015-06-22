@@ -29,15 +29,15 @@
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 var items;
 var spellItems;
-var wordList;
+var spellWordList;
 var subLevelsLeft
 var currentSubLevel
 
-function init(items_, loadedItems_, wordList_, mode_) {
+function init(items_, loadedItems_, spellWordList_, mode_) {
 
     items = items_
     spellItems = loadedItems_
-    wordList = wordList_
+    spellWordList = spellWordList_
 
     console.log("new " + spellItems + " loaded")
     spellItems.answer.forceActiveFocus()
@@ -49,7 +49,7 @@ function init(items_, loadedItems_, wordList_, mode_) {
 function initLevel() {
 
     subLevelsLeft = [];
-    for(var i in wordList) {
+    for(var i in spellWordList) {
         subLevelsLeft.push(i)   // This is available in all editors.
     }
 
@@ -69,8 +69,8 @@ function initLevel() {
              */
     // first generate a map of needed letters
     var letters = [];
-    for (var i = 0; i < wordList.length; i++) {
-        var currentWord = wordList[i].translatedTxt;
+    for (var i = 0; i < spellWordList.length; i++) {
+        var currentWord = spellWordList[i].translatedTxt;
         for (var j = 0; j < currentWord.length; j++) {
             var letter = currentWord.charAt(j);
 
@@ -92,7 +92,7 @@ function initLevel() {
         row++;
     }
     items.keyboard.layout = layout;
-    items.keyboard.visible = true;
+    items.keyboard.visibleFlag = true;
 
     initSubLevel()
 }
@@ -104,7 +104,7 @@ function initSubLevel() {
     else
         items.score.visible = false
 
-    spellItems.goodWord = wordList[items.score.currentSubLevel-1]
+    spellItems.goodWord = spellWordList[items.score.currentSubLevel-1]
     spellItems.wordImage.changeSource("qrc:/gcompris/data/" + spellItems.goodWord.image)
     spellItems.hintText.changeHint(spellItems.goodWord.translatedTxt[0])
     spellItems.hintText.visible = true

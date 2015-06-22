@@ -62,8 +62,15 @@ Item {
     }
 
     function playWord() {
-        if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
+        if(!activity.audioVoices.fileExists(ApplicationInfo.getAudioFilePath(goodWord.voice))) {
+            console.log("file does not exist so don't display the repeatItem")
             voiceError();
+        }
+        else {
+            activity.audioVoices.clearQueue()
+            if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
+                voiceError();
+        }
     }
     onGoodWordChanged: playWord()
 
