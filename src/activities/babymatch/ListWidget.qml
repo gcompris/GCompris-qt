@@ -163,29 +163,37 @@ Item {
                 onExited: instruction.opacity = 0
             }
         }
-                                     
+
         Repeater {
             id: repeater
-            Component {
-                id: contactsDelegate
-
-                DragListItem {
-                        id: item
-                        z: 1
-                        heightInColumn: view.iconSize * 0.85
-                        widthInColumn: view.iconSize * 0.85
-                        tileWidth: view.iconSize
-                        tileHeight: view.iconSize
-                        
-                        visible: view.currentDisplayedGroup*view.nbItemsByGroup <= index &&
-                                 index <= (view.currentDisplayedGroup+1)*view.nbItemsByGroup-1
-                    }
-                    
+            property int currentIndex
+            onCurrentIndexChanged: {
+                for(var i = 0; i < mymodel.count; i++) {
+                    if(currentIndex != i)
+                        repeater.itemAt(i).selected = false
+                    else
+                        repeater.itemAt(i).selected = true
                 }
+                if(currentIndex == -1)
+                    toolTip.visible = false
+            }
+            DragListItem {
+                id: contactsDelegate
+                z: 1
+                heightInColumn: view.iconSize * 0.85
+                widthInColumn: view.iconSize * 0.85
+                tileWidth: view.iconSize
+                tileHeight: view.iconSize
+                visible: view.currentDisplayedGroup*view.nbItemsByGroup <= index &&
+                         index <= (view.currentDisplayedGroup+1)*view.nbItemsByGroup-1
+
+                onPressed: repeater.currentIndex = index
+            }
             
             clip: true
             model: mymodel
-            delegate: contactsDelegate
+
+            onModelChanged: repeater.currentIndex = -1
         }
 
         Row {
@@ -193,7 +201,8 @@ Item {
             
             Image {
                 id: previous
-                opacity: (model.count > view.nbItemsByGroup && view.previousNavigation != 0 && view.currentDisplayedGroup != 0) ? 1 : 0
+                opacity: (model.count > view.nbItemsByGroup &&
+                          view.previousNavigation != 0 && view.currentDisplayedGroup != 0) ? 1 : 0
                 source:"qrc:/gcompris/src/core/resource/bar_previous.svg"
                 width: view.iconSize * 0.35
                 fillMode: Image.PreserveAspectFit
@@ -202,6 +211,7 @@ Item {
                     hoverEnabled: true
                     
                     onClicked: {
+                        repeater.currentIndex = -1
                         if(previous.opacity == 1) {
                             view.setCurrentDisplayedGroup = view.currentDisplayedGroup - view.previousNavigation
                             hideLeftWidget.start()
@@ -220,6 +230,7 @@ Item {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
+                        repeater.currentIndex = -1
                         view.setCurrentDisplayedGroup = view.currentDisplayedGroup + view.nextNavigation
                         hideLeftWidget.start()
                     }
