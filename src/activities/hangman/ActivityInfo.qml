@@ -21,10 +21,10 @@ ActivityInfo {
   name: "hangman/Hangman.qml"
   difficulty: 3
   icon: "hangman/hangman.svg"
-  author: "Rajdeep kaur rajdeep1994@gmail.com"
+  author: "Rajdeep kaur <rajdeep1994@gmail.com>"
   demo: true
   title: qsTr("Hangman")
-  description: qsTr("A word is hidden you must discover it letter by letter")
+  description: qsTr("Marry wants the flowers Guess the word letter by letter so plane come on the ground and john will give a flower to marry ")
   goal: qsTr("To enrich vocabulary")
   prerequisite: ""
   manual: qsTr("Guess the word letter by letter")
