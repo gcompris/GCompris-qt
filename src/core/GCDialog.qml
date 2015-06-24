@@ -157,7 +157,8 @@ Item {
                     color: "black"
                     // @FIXME This property breaks the wrapping
 //                    horizontalAlignment: Text.AlignHCenter
-                    width: instruction.width
+                    // need to remove the anchors (left and right) else sometimes text is hidden on the side
+                    width: instruction.width - 2*flick.anchors.margins
                     wrapMode: TextEdit.WordWrap
                     textFormat: TextEdit.RichText
                     z: 2
