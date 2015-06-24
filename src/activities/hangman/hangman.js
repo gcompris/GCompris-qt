@@ -33,6 +33,7 @@ var level = 1;
 var sublevel = 0;
 var numberOfLevel=5;
 var items;
+var win=0;
 
 var no_of_life ;
 
@@ -74,20 +75,21 @@ function start(items_) {
     }
     
     maxLevel=items.wordlist.maxLevel;
-    items.heli.state = "horizontal";
     initLevel(); 
     
 }
 
+function helico()
+{	
+ 
+}
 function stop() {
 }
 
 function initLevel() {
     items.bar.level = currentLevel + 1;		
-    items.heli.x = items.background.width/2-(items.heli.width+10);
-    items.heli.y=items.background.height-(items.heli.height+50);
     initSublevel();
-    
+    helico();
     level = items.wordlist.getLevelWordList(currentLevel+1);
     {	//to set the layout...populate
         var letters = new Array();
@@ -156,16 +158,11 @@ function processKeyPress(text) {
         if(flag !== 1)
 	{	wordi = inital;
 		no_of_life=no_of_life-1;
-		items.bonus.bad("smiley");
-		if(no_of_life === 0)
-		{		items.heli.x=0;
-				items.heli.y=0;
-		}
+		items.bonus.bad("tux");
 	}				
         items.hidden.text=wordi;
 	if(count_no_alphabet === (current_word.length+2))
-	{	items.bonus.good("smiley");
-		
+	{	items.bonus.good("tux");
 		initSublevel();
 	}
 }
@@ -187,6 +184,7 @@ function previousLevel() {
 function initSublevel()
 {	maxsublevel = items.wordlist.getMaxSubLevel(items.bar.level);
         items.wordlist.initRandomWord(items.bar.level);
+	win=0;
 	var text1 = items.wordlist.getRandomWord();
 	wordi = new Array();
 	current_word = text1 ;
