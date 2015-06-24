@@ -108,8 +108,8 @@ ActivityBase {
 
         Rectangle {
             id: tooltipRect
-            width: 100
-            height: tooltipText.font.pixelSize + 10
+            width: 100 * ApplicationInfo.ratio
+            height: tooltipText.height + 10 * ApplicationInfo.ratio
             radius: 4
             x: 0
             y: 0
@@ -121,8 +121,7 @@ ActivityBase {
             GCText {
                 id: tooltipText
                 anchors.centerIn: parent
-                fontSize: NaN
-                font.pixelSize: 11 * ApplicationInfo.ratio
+                fontSize: 13
                 text: ""
                 color: "black"
 
@@ -484,7 +483,7 @@ if (targetY < 0) {
                                 Timer {
                                     id: tooltipTimer
                                     repeat: false
-                                    interval: 300
+                                    interval: 500
 
                                     onTriggered: showTooltip(true, status, mouseAreaRect)
                                 }
@@ -496,8 +495,7 @@ if (targetY < 0) {
                                     showTooltip(false)
                                 }
 
-                                onPressAndHold: showTooltip(true, status, mouseAreaRect);
-
+                                onClicked: showTooltip(true, status, mouseAreaRect);
                                 onDoubleClicked: Activity.ackColor(index, colIndex);
 
                             }
