@@ -70,13 +70,13 @@ ActivityBase {
             property alias wordlist: wordlist
             property alias keyboard:keyboard
             property alias heli:heli
-            property alias man1:man1
-            property alias man2:man2
-            property alias man3:man3
             property alias hidden:hidden
             property string text:text
             property alias locale: background.locale
             property alias textinput: textinput
+            property alias ping:ping
+            property alias flower:flower
+            property alias animateX: animateX
         }
 
         onStart: { Activity.start(items);
@@ -115,92 +115,51 @@ ActivityBase {
         
         Image{
 	      id:heli
-	      sourceSize.height: 90 * ApplicationInfo.ratio
+	      sourceSize.height: 50 * ApplicationInfo.ratio
 	      source:activity.dataSetUrl+"plane.svg";
-	      Behavior on x {
-              PropertyAnimation {
-                          id: xAnim
-                          easing.type: Easing.OutQuad
+	      PropertyAnimation{ 
+		                running: true
+				id:animateX
+				target:heli
+				properties: "x"
+                                from: - heli.width
+                                to: background.width
+                                duration: 10000
+                                easing.type: Easing.OutInCirc
+	      }
+             
+        }
+	
+	Image{ 
+		          id:ping
+		          visible:true
+		          width:parent.width/10
+		          height:parent.height/5
+		          x:background.width/6
+		          y:6*background.height/10
+		          source:activity.dataSetUrl+"pingu.svg";
+			  Behavior on x {
+                          PropertyAnimation {
+                          id: xAnima
+                          easing.type: Easing.InQuad
                           duration:  10000
-                         
+                          
                 }
              }
-             Behavior on y {
-                            PropertyAnimation {easing.type: Easing.OutQuad; duration:  5000}
-             }
-             
-             transform: Rotation {
-                                  id: helicoRotation;
-                                  origin.x: heli.width / 2;
-                                  origin.y: heli.height / 2;
-                                  axis { x: 0; y: 0; z: 1 }
-                                  Behavior on angle {
-                                                  animation: rotAnim
-                                  }
-             }
-
-             states: [
-                     State {
-                             name: "horizontal"
-                             PropertyChanges {
-                             target: helicoRotation
-                             angle: 0
-                       }
-                   },
-                   State {
-                             name: "advancing"
-                             PropertyChanges {
-                             target: helicoRotation
-                             angle: 45
-                         }
-                   }
-               ]
-
-               RotationAnimation {
-                id: rotAnim
-                direction: heli.state == "horizontal" ?
-                               RotationAnimation.Counterclockwise :
-                               RotationAnimation.Clockwise
-                duration: 500
-                onRunningChanged: if(!rotAnim.running && heli.state == "advancing")
-                                      heli.state = "horizontal"
-               }
-             
-             
-             Image{  id:man1
-		     width:heli.width/7
-		     height:heli.height/4
-		     x:heli.width/3
-		     source:activity.dataSetUrl+"aadmi.svg";
-		     anchors.top:heli.bottom
-		     anchors.left:heli.left
-		    		     
-              }
-	      Image{ id:man2
-		     width:heli.width/7
-		     height:heli.height/4
-		     source:activity.dataSetUrl+"aadmi.svg";
-		     anchors.top:heli.bottom
-		     anchors.left:man1.right
-		     
-	      }
-	      Image{ id:man3
-		     width:heli.width/7
-		     height:heli.height/4
-		     source:activity.dataSetUrl+"aadmi.svg";
-		     anchors.top:heli.bottom
-		     anchors.left:man2.right
-		   
-	      }
-	      
-	      MouseArea {
-                       id: mousearea
-                       anchors.fill:parent
-                       
-              }
-              
-         
-	}
+	 }
+	Image{
+			  
+	                  id:flower
+			  visible:true
+			  width:ping.width/4
+			  height:ping.height/6
+			  source:activity.dataSetUrl+"flower.svg";
+			  anchors.left:ping.left
+			  y:6.5*background.height/10
+			  
+			  
+	}	
+	  
 	
 	DialogActivityConfig {
             id: dialogActivityConfig
