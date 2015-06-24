@@ -251,7 +251,7 @@ ActivityBase {
         }
 
         function playSound(identifier) {
-            activity.audioEffects.play("qrc:/gcompris/src/activities/ballcatch/resource/"+ identifier + ".wav")
+            activity.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/"+ identifier + ".wav")
         }
 
         /* Timer starting when user first presses a first key.
