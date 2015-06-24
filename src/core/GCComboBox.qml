@@ -43,8 +43,8 @@ Item {
     id: gccombobox
     focus: true
 
-    width: button.width
-    height: button.height
+    width: parent.width
+    height: flow.height
 
     /**
      * type:Item
@@ -101,7 +101,8 @@ Item {
      * Combobox display when inactive: the button with current choice  and its label besides.
      */
     Flow {
-        width: button.width+labelText.width+10
+        id: flow
+        width: parent.width
         spacing: 5 * ApplicationInfo.ratio
         Rectangle {
             id: button

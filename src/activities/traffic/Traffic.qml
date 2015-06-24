@@ -126,7 +126,6 @@ ActivityBase {
                         GCComboBox {
                             id: modeBox
                             model: availableModes
-                            width: 250 * ApplicationInfo.ratio
                             background: dialogActivityConfig
                             label: qsTr("Select your mode")
                         }
