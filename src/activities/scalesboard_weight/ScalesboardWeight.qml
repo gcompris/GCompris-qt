@@ -36,7 +36,7 @@ Scalesboard {
     dataset: [
             {
                 "masses": [[1, kg(1)], [2, kg(2)], [2, kg(2)], [5, kg(5)],
-                          [5, kg(5)], [1, kg(10)], [1, kg(10)]],
+                          [5, kg(5)], [10, kg(10)], [10, kg(10)]],
                 "targets": [[3, kg(3)], [4, kg(4)], [6, kg(6)], [7, kg(7)], [8, kg(8)], [9, kg(9)]],
                 "rightDrop": false,
                 "message": qsTr('The "kg" symbol at the end of a number means kilogram.') + " " +
