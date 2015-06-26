@@ -158,11 +158,10 @@ function processKeyPress(text) {
         if(flag !== 1)
 	{	wordi = inital;
 		no_of_life=no_of_life-1;
-		items.bonus.bad("tux");
 	}				
         items.hidden.text=wordi;
-	if(count_no_alphabet === (current_word.length+2))
-	{	items.bonus.good("tux");
+	if(count_no_alphabet === (current_word.length))
+	{	items.ping_animation.running = true 
 		initSublevel();
 	}
 }
