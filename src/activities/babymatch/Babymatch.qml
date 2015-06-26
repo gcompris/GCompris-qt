@@ -44,6 +44,8 @@ ActivityBase {
         signal start
         signal stop
 
+        property bool vert: background.width > background.height
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -61,9 +63,6 @@ ActivityBase {
             property alias grid: grid
             property alias backgroundImage: backgroundImage
             property alias leftWidget: leftWidget
-            property alias showLeftWidget: showLeftWidget
-            property alias hideLeftWidget: hideLeftWidget
-            property alias leftBar: leftBar
             property alias instruction: instruction
             property alias toolTip: toolTip
             property alias score: score
@@ -107,71 +106,21 @@ ActivityBase {
             name: ""
         }
 
-        PropertyAnimation {
-            id: showLeftWidget
-            target: leftWidget
-            properties: "width"
-            from: 0
-            to: leftWidget.leftWidgetWidth
-            duration: 300
-            onStarted: {
-                //activity.audioEffects.stop()
-                //activity.audioEffects.play("qrc:/gcompris/src/activities/babymatch/resource/sound/slideOut.wav")
-            }
-        }
-        PropertyAnimation {
-            id: hideLeftWidget
-            target: leftWidget
-            properties: "width"
-            from: leftWidget.leftWidgetWidth
-            to: 0
-            duration: 300
-            onStarted: {
-                //activity.audioEffects.stop()
-                //activity.audioEffects.play("qrc:/gcompris/src/activities/babymatch/resource/sound/slideIn.wav")
-            }
-            onStopped: {
-                availablePieces.view.currentDisplayedGroup = availablePieces.view.setCurrentDisplayedGroup
-                availablePieces.view.setNextNavigation()
-                availablePieces.view.setPreviousNavigation()
-                showLeftWidget.start()
-            }
-        }
-
         Rectangle {
-            id: leftContainer
-            width: leftWidget.leftWidgetWidth + leftBar.width
-            height: background.height
-            color: "transparent"
+            id: leftWidget
+            width: background.vert ?
+                       90 * ApplicationInfo.ratio :
+                       background.width
+            height: background.vert ?
+                        background.height :
+                        90 * ApplicationInfo.ratio
+            color: "#FFFF42"
+            border.color: "#FFD85F"
+            border.width: 4
             anchors.left: parent.left
-            z: 1
-            
-            Rectangle {
-                id: leftBar
-                width: leftWidget.leftWidgetWidth/10
-                height: background.height - 5 * ApplicationInfo.ratio
-                radius: 10
-                color: "#666"
-                anchors.left: leftWidget.right
-                anchors.verticalCenter: parent.verticalCenter
-                border.width: 2
-                border.color: "black"
-            }
-            
-            Rectangle {
-                id: leftWidget
-                property double leftWidgetWidth: Math.min((availablePieces.view.height/availablePieces.view.nbItemsByGroup) 
-												 - (1.5*availablePieces.view.spacing), (background.width/5) - 
-												 availablePieces.view.spacing) + 10 * ApplicationInfo.ratio
-                width: leftWidgetWidth
-                height: background.height
-                color: "#FFFF42"
-                border.color: "#FFD85F" 
-                border.width: 4
-                anchors.left: parent.left
-                ListWidget {
-                    id: availablePieces
-                }
+            ListWidget {
+                id: availablePieces
+                vert: background.vert
             }
         }
         
@@ -200,7 +149,7 @@ ActivityBase {
             anchors {
                 bottom: bar.top
                 bottomMargin: 10
-                left: leftContainer.left//horizontalCenter
+                left: leftWidget.left//horizontalCenter
                 leftMargin: 5
             }
             visible: toolTip.visible
@@ -218,10 +167,13 @@ ActivityBase {
 
             color: "transparent"
             z: 2
-            y: 10
-            anchors.left: leftContainer.right
-            width: background.width - leftContainer.width
-            height: background.height - (bar.height * 1.1)
+            x: background.vert ? 90 * ApplicationInfo.ratio : 0
+            y: background.vert ? 0 : 90 * ApplicationInfo.ratio
+            width: background.vert ?
+                       background.width - 90 * ApplicationInfo.ratio : background.width
+            height: background.vert ?
+                        background.height - (bar.height * 1.1) :
+                        background.height - (bar.height * 1.1) - 90 * ApplicationInfo.ratio
             
             Image {
                 id: backgroundImage
@@ -238,77 +190,84 @@ ActivityBase {
                 
                 //Inserting static background images
                 Repeater {
-					id: backgroundPieces
-					model: backgroundPiecesModel
-					delegate: piecesDelegate
-					z: 2
-					
-					Component {
-						id: piecesDelegate
-						Image {
-							id: shapeBackground
-							source: Activity.url + imgName
-							x: posX * backgroundImage.width - width / 2
-							y: posY * backgroundImage.height - height / 2
-							
-							height: imgHeight ? imgHeight * backgroundImage.height : (backgroundImage.source == "" ? 
-									backgroundImage.height * shapeBackground.sourceSize.height/backgroundImage.height : 
-									backgroundImage.height * shapeBackground.sourceSize.height/
-									backgroundImage.sourceSize.height)
-									
-							width: imgWidth ? imgWidth * backgroundImage.width : (backgroundImage.source == "" ? 
-								   backgroundImage.width * shapeBackground.sourceSize.width/backgroundImage.width : 
-								   backgroundImage.width * shapeBackground.sourceSize.width/backgroundImage.sourceSize.width)
-							
-							fillMode: Image.PreserveAspectFit
-						}
-					}
-				}
+                    id: backgroundPieces
+                    model: backgroundPiecesModel
+                    delegate: piecesDelegate
+                    z: 2
+
+                    Component {
+                        id: piecesDelegate
+                        Image {
+                            id: shapeBackground
+                            source: Activity.url + imgName
+                            x: posX * backgroundImage.width - width / 2
+                            y: posY * backgroundImage.height - height / 2
+
+                            height:
+                                imgHeight ?
+                                    imgHeight * backgroundImage.height :
+                                    (backgroundImage.source == "" ?
+                                         backgroundImage.height * shapeBackground.sourceSize.height / backgroundImage.height :
+                                         backgroundImage.height * shapeBackground.sourceSize.height /
+                                         backgroundImage.sourceSize.height)
+
+                            width:
+                                imgWidth ?
+                                    imgWidth * backgroundImage.width :
+                                    (backgroundImage.source == "" ?
+                                         backgroundImage.width * shapeBackground.sourceSize.width / backgroundImage.width :
+                                         backgroundImage.width * shapeBackground.sourceSize.width /
+                                         backgroundImage.sourceSize.width)
+
+                            fillMode: Image.PreserveAspectFit
+                        }
+                    }
+                }
 
                 MouseArea {
                     anchors.fill: parent
                     onClicked: (instruction.opacity === 0 && instruction.text != "" ?
-                                instruction.opacity = 1 : instruction.opacity = 0)
+                                    instruction.opacity = 1 : instruction.opacity = 0)
                 }
             }
-            
-           Rectangle {
-				id: instruction
-				anchors.fill: instructionTxt
-                opacity: 0.8
-                radius: 10
-                z: 3
-                border.width: 2
-                border.color: "black"
-                gradient: Gradient {
-                    GradientStop { position: 0.0; color: "#000" }
-                    GradientStop { position: 0.9; color: "#666" }
-                    GradientStop { position: 1.0; color: "#AAA" }
-                }
-                property alias text: instructionTxt.text
-
-                Behavior on opacity { PropertyAnimation { duration: 200 } }
-           }
-            
-            GCText {
-                id: instructionTxt
-                anchors {
-                    top: grid.top
-                    topMargin: -10
-                    horizontalCenter: grid.horizontalCenter
-                }
-                opacity: instruction.opacity
-                z: instruction.z
-                fontSize: regularSize
-                color: "white"
-                style: Text.Outline
-                styleColor: "black"
-                horizontalAlignment: Text.AlignHCenter
-                width: Math.max(Math.min(parent.width * 0.9, text.length * 11), parent.width * 0.3)
-                wrapMode: TextEdit.WordWrap
-            }
-            
         }
+
+        Rectangle {
+            id: instruction
+            anchors.fill: instructionTxt
+            opacity: 0.8
+            radius: 10
+            z: 3
+            border.width: 2
+            border.color: "black"
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "#000" }
+                GradientStop { position: 0.9; color: "#666" }
+                GradientStop { position: 1.0; color: "#AAA" }
+            }
+            property alias text: instructionTxt.text
+
+            Behavior on opacity { PropertyAnimation { duration: 200 } }
+        }
+
+        GCText {
+            id: instructionTxt
+            anchors {
+                top: background.vert ? grid.top : leftWidget.bottom
+                topMargin: -10
+                horizontalCenter: background.vert ? grid.horizontalCenter : leftWidget.horizontalCenter
+            }
+            opacity: instruction.opacity
+            z: instruction.z
+            fontSize: regularSize
+            color: "white"
+            style: Text.Outline
+            styleColor: "black"
+            horizontalAlignment: Text.AlignHCenter
+            width: Math.max(Math.min(parent.width * 0.9, text.length * 11), parent.width * 0.3)
+            wrapMode: TextEdit.WordWrap
+        }
+
         
         ListModel {
             id: backgroundPiecesModel

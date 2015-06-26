@@ -115,7 +115,7 @@ Item {
             
             function imageRemove() {
                 if(backgroundImage.source == "")
-                    leftContainer.z = 1
+                    leftWidget.z = 1
                 
                 tileImage.state = "INITIAL"
                 var coord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.width/2, 
@@ -159,9 +159,9 @@ Item {
                         toolTip.visible = true
                     }
                     if(tileImage.parent == tile)
-                        leftContainer.z = 3
+                        leftWidget.z = 3
                     else
-                        leftContainer.z = 1
+                        leftWidget.z = 1
                     
                     if(imageSound)
                         activity.audioVoices.play(ApplicationInfo.getAudioFilePath(imageSound))
