@@ -74,8 +74,7 @@ function start(items_, uppercaseOnly_,  _mode) {
     currentSubLevel = 0;
 
     var locale = items.locale == "system" ? "$LOCALE" : items.locale
-
-    items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
+       items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
             items.ourActivity.dataSetUrl + "default-"+locale+".json"));
     // If wordlist is empty, we try to load from short locale and if not present again, we switch to default one
     var localeUnderscoreIndex = locale.indexOf('_')

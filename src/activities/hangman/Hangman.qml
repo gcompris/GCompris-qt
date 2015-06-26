@@ -27,6 +27,10 @@ import "hangman.js" as Activity
 
 ActivityBase {
     id: activity
+    
+    
+    // Overload this in your activity to change it
+    // Put you default-<locale>.json files in it
     property string dataSetUrl: "qrc:/gcompris/src/activities/hangman/resource/"
     
     onStart: focus = true
@@ -81,7 +85,8 @@ ActivityBase {
 
         onStart: { Activity.start(items);
 		    Activity.focusTextInput();
-	         }	 
+	  }
+	         
         onStop: { Activity.stop() }
 
         GCText {
@@ -115,22 +120,49 @@ ActivityBase {
         
         Image{
 	      id:heli
-	      sourceSize.height: 50 * ApplicationInfo.ratio
+	      height:parent.height/6
+	      width:parent.width/4
 	      source:activity.dataSetUrl+"plane.svg";
-	      PropertyAnimation{ 
-		                running: true
-				id:animateX
-				target:heli
-				properties: "x"
-                                from: - heli.width
-                                to: background.width
-                                duration: 10000
-                                easing.type: Easing.OutInCirc
-	      }
-             
+	      x:0
+	      transform: Rotation { origin.x: 40; origin.y: 50; origin.z:20 ;axis { x: 0; y: 1; z: 0 } }
+	         
         }
+        
+        SequentialAnimation{
+				  id:animateX
+				  running:true
+				  loops:Animation.Infinite
+				  NumberAnimation{
+				     target:heli
+				     property:"x"
+				     from:0; to:1000
+				     duration:10000
+				     easing.type: Easing.OutQuad
+				  }
+				  NumberAnimation{
+				    target:heli
+				    property:"rotation"
+				    from:0; to:180
+				    duration:1000
+				    easing.type:Easing.OutQuad
+				  }
+				  NumberAnimation{
+				    target:heli
+				    property:"x"
+				    from:1000; to:0
+				    duration:10000
+				    easing.type:Easing.OutQuad
+				 }
+				 NumberAnimation{
+				      target:heli
+				      property:"rotation"
+				      from:180; to:360
+				      duration:1000
+				      easing.type:Easing.OutQuad
+				 }
+	}  
 	
-	Image{ 
+	Image{
 		          id:ping
 		          visible:true
 		          width:parent.width/10
@@ -228,6 +260,20 @@ ActivityBase {
                     background.start();
                 }
          }
+         
+         function setDefaultValues() {
+                var localeUtf8 = background.locale;
+                if(background.locale != "system") {
+                    localeUtf8 += ".UTF-8";
+                }
+
+                for(var i = 0 ; i < dialogActivityConfig.configItem.availableLangs.length ; i ++) {
+                    if(dialogActivityConfig.configItem.availableLangs[i].locale === localeUtf8) {
+                        dialogActivityConfig.loader.item.localeBox.currentIndex = i;
+                        break;
+                    }
+                }
+           }
 
 	 
       }
