@@ -40,7 +40,7 @@ function load(parser, baseUrl, datasetFilename, translationFilename) {
         return;
     }
     dataset['contentText'] = loadContent(parser,
-       GCompris.ApplicationInfo.getLocaleFilePath(baseUrl + "/" + translationFilename))
+                                         GCompris.ApplicationInfo.getLocaleFilePath(baseUrl + "/" + translationFilename))
 
     if(!dataset['contentText']) {
         return null
@@ -70,8 +70,8 @@ function getChapterModel(dataset) {
     for (var c = 0; c < dataset.length; c++) {
         chapters.push(
                     {'name': dataset[c].name,
-                     'image': dataset[c].content[0].content[0].image,
-                     'index': c
+                        'image': dataset[c].content[0].content[0].image,
+                        'index': c
                     })
     }
     return chapters
@@ -109,4 +109,27 @@ function getLessonWords(dataset, lesson) {
 function getTextByAudio(contentText, audio) {
     audio += ".ogg"
     return contentText[audio]
+}
+
+// Return a datamodel for the lessons for creating menu
+function getMenuModel(dataset) {
+    var menus = []
+    var levelCount = 0  //used for creating a straight indexing of levels
+    var prevLevelcount = 0
+    for (var c in dataset) {
+        for (var l in dataset[c].content) {
+
+            levelCount = parseInt(l) + prevLevelcount
+            var currentLesson = getLesson(dataset, dataset[c], l)
+            menus.push(
+                        { 'name' : currentLesson.name,
+                          'image': currentLesson.content[0].image,
+                          'index': levelCount,
+                            'wordCount': currentLesson.content.length
+                        })
+
+        }
+        prevLevelcount = levelCount+ 1
+    }
+    return menus
 }

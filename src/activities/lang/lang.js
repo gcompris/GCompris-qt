@@ -36,9 +36,11 @@ var items;
 var baseUrl = "qrc:/gcompris/src/activities/lang/resource/";
 var dataset = null;
 var lessons
+var menus
 var wordList
 var savedWordList
 var subLevelsLeft
+var currentProgress = []
 // miniGames is list of miniGames
 // first element is Activity name,
 // second element is mode of miniGame
@@ -91,7 +93,23 @@ function start() {
     lessons = Lang.getAllLessons(dataset)
     maxLevel = lessons.length
 
-    initLevel();
+    menus = Lang.getMenuModel(dataset)
+    items.menuModel.clear()
+
+    items.menuModel.append(menus)
+    items.menu_screen.focus = true
+
+    items.imageFrame.visible = false
+
+    for (var k =0; k<maxLevel; k++) {
+        if(!(currentProgress[k] > 0))
+            currentProgress[k] = 0
+    }
+
+    items.menu_screen.visible = true
+    items.menu_screen.focus = true
+    items.menu_screen.forceActiveFocus()
+//    initLevel();
 
 }
 
@@ -99,7 +117,8 @@ function stop() {
 
 }
 
-function initLevel() {
+function initLevel(currentLevel_) {
+    currentLevel = currentLevel_
     items.bar.level = currentLevel + 1;
 
     var currentLesson = lessons[currentLevel]
@@ -111,7 +130,9 @@ function initLevel() {
     items.score.numberOfSubLevels = maxSubLevel;
     items.score.currentSubLevel = 1;
 
+    items.menu_screen.visible = false
     items.imageFrame.visible = true
+
     items.wordTextbg.visible = true
     items.wordText.visible = true
     items.categoryTextbg.visible = true
@@ -135,7 +156,6 @@ function initSubLevel() {
     else
         items.previousWordButton.visible = true
 
-    console.log(items.score.currentSubLevel)
     items.goodWord = wordList[items.score.currentSubLevel-1]
     items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image)
     items.wordText.changeText(items.goodWord.translatedTxt)
@@ -145,14 +165,14 @@ function nextLevel() {
     if(maxLevel <= ++currentLevel ) {
         currentLevel = 0
     }
-    initLevel();
+    initLevel(currentLevel);
 }
 
 function previousLevel() {
     if(--currentLevel < 0) {
         currentLevel = maxLevel - 1
     }
-    initLevel();
+    initLevel(currentLevel);
 }
 
 function nextSubLevel() {

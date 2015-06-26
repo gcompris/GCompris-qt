@@ -53,6 +53,7 @@ Item {
     property int goodWordIndex
 
     function init(items_, loadedItems_, wordList_, mode_) {
+        loadedItems_.forceActiveFocus()
         QuizActivity.init(items_, loadedItems_, wordList_, mode_);
     }
 
@@ -80,34 +81,34 @@ Item {
         property bool horizontalLayout: background.width > background.height
         property bool keyNavigation: false
 
-//        Keys.onRightPressed: {
-//            keyNavigation = true
-//            wordListView.incrementCurrentIndex()
-//        }
-//        Keys.onLeftPressed:  {
-//            keyNavigation = true
-//            wordListView.decrementCurrentIndex()
-//        }
-//        Keys.onDownPressed:  {
-//            keyNavigation = true
-//            wordListView.incrementCurrentIndex()
-//        }
-//        Keys.onUpPressed:  {
-//            keyNavigation = true
-//            wordListView.decrementCurrentIndex()
-//        }
-//        Keys.onSpacePressed:  {
-//            keyNavigation = true
-//            wordListView.currentItem.pressed()
-//        }
-//        Keys.onEnterPressed:  {
-//            keyNavigation = true
-//            wordListView.currentItem.pressed()
-//        }
-//        Keys.onReturnPressed:  {
-//            keyNavigation = true
-//            wordListView.currentItem.pressed()
-//        }
+        Keys.onRightPressed: {
+            keyNavigation = true
+            wordListView.incrementCurrentIndex()
+        }
+        Keys.onLeftPressed:  {
+            keyNavigation = true
+            wordListView.decrementCurrentIndex()
+        }
+        Keys.onDownPressed:  {
+            keyNavigation = true
+            wordListView.incrementCurrentIndex()
+        }
+        Keys.onUpPressed:  {
+            keyNavigation = true
+            wordListView.decrementCurrentIndex()
+        }
+        Keys.onSpacePressed:  {
+            keyNavigation = true
+            wordListView.currentItem.children[1].pressed()
+        }
+        Keys.onEnterPressed:  {
+            keyNavigation = true
+            wordListView.currentItem.children[1].pressed()
+        }
+        Keys.onReturnPressed:  {
+            keyNavigation = true
+            wordListView.currentItem.children[1].pressed()
+        }
 
         JsonParser {
             id: parser

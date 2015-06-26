@@ -91,6 +91,7 @@ function initLevel() {
         offset += j;
         row++;
     }
+    layout[row-1][offset] = { label: items.keyboard.backspace };
     items.keyboard.layout = layout;
     items.keyboard.visibleFlag = true;
 
@@ -177,5 +178,18 @@ function provideHint(answer_) {
 function processKeyPress(text_){
     var answer = spellItems.answer
     var text  = text_
+    if ( text == items.keyboard.backspace) {
+        backspace(answer)
+        return
+    }
     answer.insert(answer.length,text)
+}
+
+function backspace(answer) {
+    answer.text = answer.text.slice(0, -1)
+    if(answer.text.length === 0) {
+        answer.text = ""
+    } else {
+        checkAnswer(answer.text)
+    }
 }

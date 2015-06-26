@@ -80,13 +80,14 @@ ActivityBase {
             property alias parser: parser
             property alias repeatItem: repeatItem
             property alias keyboard: keyboard
+            property alias menuModel: menu_screen.menuModel
+            property alias menu_screen: menu_screen
             property variant goodWord
             property int goodWordIndex
             property alias englishFallbackDialog: englishFallbackDialog
             property alias miniGameLoader: miniGameLoader
             property alias locale: background.locale
-            //            property alias quiz: quiz
-            //            property alias spellIt: spellIt
+            property int currentProgress: 0
 
             function playWord() {
                 if(!activity.audioVoices.fileExists(ApplicationInfo.getAudioFilePath(goodWord.voice))) {
@@ -110,6 +111,7 @@ ActivityBase {
 
         onStart: {
             Activity.init(items)
+            items.menu_screen.visible = true
             repeatItem.visible = false
             keyNavigation = false
             activity.audioVoices.error.connect(voiceError)
@@ -338,6 +340,10 @@ ActivityBase {
 
         }
 
+        MenuScreen{
+            id: menu_screen
+        }
+
         onVoiceDone: repeatItem.visible = true
         onVoiceError: repeatItem.visible = false
 
@@ -375,7 +381,19 @@ ActivityBase {
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
+//            onHomeClicked: activity.home()
+            onHomeClicked: {
+                if(menu_screen.visible == false) {
+                    menu_screen.visible = true
+                    items.imageFrame.visible = false
+                    level = 0
+                    if (Activity.loadedItems.visible)
+                        Activity.loadedItems.visible = false
+                }
+                else {
+                    activity.home()
+                }
+            }
             onConfigClicked: {
                 dialogActivityConfig.active = true
                 dialogActivityConfig.setDefaultValues()

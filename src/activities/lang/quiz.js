@@ -64,6 +64,7 @@ function init(items_, loadedItems_, filteredWordList_, mode_) {
         quizItems.wordImage.visible = true
         quizItems.imageFrame.visible = true
     }
+    quizItems.wordListView.forceActiveFocus()
 
     subLevelsLeft = [];
     for(var i in filteredWordList) {
