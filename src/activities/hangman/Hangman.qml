@@ -94,7 +94,7 @@ ActivityBase {
 	    id:hidden
             anchors.centerIn: parent
             fontSize: largeSize
-            color:"#FF9933"
+            color:"black"
 	    font.family: "Helvetica"
             font.pointSize:55
             anchors.horizontalCenter:parent.horizontalCenter
@@ -125,7 +125,15 @@ ActivityBase {
 	      width:parent.width/4
 	      source:activity.dataSetUrl+"plane.svg";
 	      x:0
-	      transform: Rotation { origin.x: 40; origin.y: 50; origin.z:20 ;axis { x: 0; y: 1; z: 0 } }
+	      GCText {
+		      text:"Hangman"
+		      color:"black"
+		      font.family: "Helvetica"
+                      font.pointSize:16
+                      anchors.left:heli.left
+                      anchors.leftMargin:10
+                      anchors.verticalCenter:heli.verticalCenter
+	              }
 	         
         }
         
@@ -140,27 +148,6 @@ ActivityBase {
 				     duration:10000
 				     easing.type: Easing.OutQuad
 				  }
-				  NumberAnimation{
-				    target:heli
-				    property:"rotation"
-				    from:0; to:180
-				    duration:1000
-				    easing.type:Easing.OutQuad
-				  }
-				  NumberAnimation{
-				    target:heli
-				    property:"x"
-				    from:1000; to:0
-				    duration:10000
-				    easing.type:Easing.OutQuad
-				 }
-				 NumberAnimation{
-				      target:heli
-				      property:"rotation"
-				      from:180; to:360
-				      duration:1000
-				      easing.type:Easing.OutQuad
-				 }
 	}  
 	
 	Image{
