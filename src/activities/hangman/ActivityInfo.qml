@@ -24,7 +24,7 @@ ActivityInfo {
   author: "Rajdeep kaur <rajdeep1994@gmail.com>"
   demo: true
   title: qsTr("Hangman")
-  description: qsTr("Marry wants the flowers Guess the word letter by letter so plane come on the ground and john will give a flower to marry ")
+  description: qsTr("John wants to give a magical flower to marry that appears only if you guess the correct word. Help John by guess the word letter by letter")
   goal: qsTr("To enrich vocabulary")
   prerequisite: ""
   manual: qsTr("Guess the word letter by letter")
