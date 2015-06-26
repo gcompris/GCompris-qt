@@ -77,6 +77,7 @@ ActivityBase {
             property alias ping:ping
             property alias flower:flower
             property alias animateX: animateX
+            property alias ping_animation:ping_animation
         }
 
         onStart: { Activity.start(items);
@@ -150,7 +151,7 @@ ActivityBase {
 	Image{
 			  
 	                  id:flower
-			  visible:true
+			  visible:false
 			  width:ping.width/4
 			  height:ping.height/6
 			  source:activity.dataSetUrl+"flower.svg";
@@ -158,9 +159,32 @@ ActivityBase {
 			  y:6.5*background.height/10
 			  
 			  
-	}	
+	}
+	SequentialAnimation{  id:ping_animation
+			      PropertyAnimation{
+				    target:flower
+			            property:"visible" ;to:true
+			      }
+			      PropertyAnimation{
+				    target:ping
+				    property:"x" ;from:background.width/6; to :background.width/11
+				    duration:1000
+				    easing.type: Easing.InQuad
+			      }
+			      PropertyAnimation{
+				    target:flower
+			            property:"visible" ;to:"false"
+			      }
+			      PropertyAnimation{
+				    target:ping
+				    property:"x" ;from:background.width/11; to :background.width/6
+				    duration:1000
+				    easing.type: Easing.InQuad
+			      }
+			            
+			      
 	  
-	
+	}
 	DialogActivityConfig {
             id: dialogActivityConfig
             currentActivity: activity
