@@ -87,10 +87,10 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1;		
+    items.bar.level = currentLevel ;		
     initSublevel();
     helico();
-    level = items.wordlist.getLevelWordList(currentLevel+1);
+    level = items.wordlist.getLevelWordList(currentLevel);
     {	//to set the layout...populate
         var letters = new Array();
         items.keyboard.shiftKey = false;
@@ -129,7 +129,7 @@ function processKeyPress(text) {
         console.log(text+"\n");
         var flag = 0;
         var inital = wordi;
-	console.log(inital+"brazil");
+	console.log(inital);
         wordi = "";
         for(var i = 0; i< current_word.length ; i++) {
             if(current_word[i] === text) {
@@ -158,9 +158,9 @@ function processKeyPress(text) {
         if(flag !== 1)
 	{	wordi = inital;
 		no_of_life=no_of_life-1;
-	}				
-        items.hidden.text=wordi;
-	if(count_no_alphabet === (current_word.length))
+	}	
+	items.hidden.text = wordi
+	if(count_no_alphabet === (current_word.length+2))
 	{	items.ping_animation.running = true 
 		initSublevel();
 	}

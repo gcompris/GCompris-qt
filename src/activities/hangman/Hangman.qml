@@ -145,7 +145,7 @@ ActivityBase {
 				     target:heli
 				     property:"x"
 				     from:0; to:1000
-				     duration:10000
+				     duration:12000
 				     easing.type: Easing.OutQuad
 				  }
 	}  
