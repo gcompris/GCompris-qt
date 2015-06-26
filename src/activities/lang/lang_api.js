@@ -112,7 +112,7 @@ function getTextByAudio(contentText, audio) {
 }
 
 // Return a datamodel for the lessons for creating menu
-function getMenuModel(dataset) {
+function getMenuModel(dataset, items) {
     var menus = []
     var levelCount = 0  //used for creating a straight indexing of levels
     var prevLevelcount = 0
@@ -121,13 +121,22 @@ function getMenuModel(dataset) {
 
             levelCount = parseInt(l) + prevLevelcount
             var currentLesson = getLesson(dataset, dataset[c], l)
+            var tempWordList = getLessonWords(dataset, currentLesson);
+            var modifiedWordCount = tempWordList.length
+
+            for (var m in tempWordList) {
+                // if voice is disabled then it doesn't affect maximum
+                if(!items.checkWordExistence (tempWordList[m]) ) {
+                    --modifiedWordCount
+                }
+            }
+
             menus.push(
                         { 'name' : currentLesson.name,
                           'image': currentLesson.content[0].image,
                           'index': levelCount,
-                            'wordCount': currentLesson.content.length
+                            'wordCount': tempWordList.length * 4 + modifiedWordCount
                         })
-
         }
         prevLevelcount = levelCount+ 1
     }

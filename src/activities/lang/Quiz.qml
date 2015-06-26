@@ -254,7 +254,10 @@ Item {
                             QuizActivity.badWordSelected(goodWordIndex);
                             QuizActivity.nextSubLevelQuiz();
                         }
-                        onCorrectlyPressed: QuizActivity.nextSubLevelQuiz();
+                        onCorrectlyPressed: {
+                            ++Activity.currentProgress[Activity.currentLevel]
+                            QuizActivity.nextSubLevelQuiz();
+                        }
                     }
                 }
             }

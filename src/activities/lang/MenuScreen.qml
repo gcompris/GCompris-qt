@@ -24,7 +24,7 @@
 import QtQuick 2.1
 import GCompris 1.0
 import QtGraphicalEffects 1.0
-import QtQuick.Controls 1.3
+import QtQuick.Controls 1.2
 
 import "../../core"
 import "lang.js" as Activity
@@ -45,6 +45,7 @@ Image {
 
     property var currentActiveGrid: menuGrid
     property bool keyboardMode: false
+
     Keys.onPressed: {
         if(event.key === Qt.Key_Space) {
             currentActiveGrid.currentItem.selectCurrentItem()
@@ -107,6 +108,7 @@ Image {
                 opacity: 0.5
             }
             Image {
+                id: containerImage
                 source: "qrc:/gcompris/data/"+ image;
                 anchors.top: activityBackground.top
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -134,9 +136,10 @@ Image {
                     anchors.topMargin: ApplicationInfo.ratio * 4
                     anchors.horizontalCenter: parent.horizontalCenter
                     width: activityBackground.width
-                    maximumValue: wordCount * 5
+                    maximumValue: wordCount
                     minimumValue: 0
-                    value: Activity.currentProgress[index]
+                    value: Activity.savedProgress[index]
+//                    value: Activity.getProgressStatus(index)
                     orientation: Qt.Horizontal
                 }
 
@@ -154,6 +157,7 @@ Image {
             function selectCurrentItem() {
                 particles.burst(50)
                 Activity.initLevel(index)
+                console.log("maximum Value " +progressLang.maximumValue)
             }
 
         } //delegate close

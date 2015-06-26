@@ -41,6 +41,8 @@ var wordList
 var savedWordList
 var subLevelsLeft
 var currentProgress = []
+var savedProgress = []
+var modifiedWordCount = 0
 // miniGames is list of miniGames
 // first element is Activity name,
 // second element is mode of miniGame
@@ -93,23 +95,29 @@ function start() {
     lessons = Lang.getAllLessons(dataset)
     maxLevel = lessons.length
 
-    menus = Lang.getMenuModel(dataset)
+    menus = Lang.getMenuModel(dataset, items)
     items.menuModel.clear()
 
+    for (var j =0; j<maxLevel; j++) {
+        if(!(currentProgress[j] > 0))
+            currentProgress[j] = 0
+    }
+    for (var k =0; k<maxLevel; k++) {
+        if(!(savedProgress[k] > 0))
+            savedProgress[k] = 0
+    }
+
+    items.menuModel.clear()
     items.menuModel.append(menus)
-    items.menu_screen.focus = true
 
     items.imageFrame.visible = false
-
-    for (var k =0; k<maxLevel; k++) {
-        if(!(currentProgress[k] > 0))
-            currentProgress[k] = 0
-    }
+    items.score.visible = false
 
     items.menu_screen.visible = true
     items.menu_screen.focus = true
     items.menu_screen.forceActiveFocus()
-//    initLevel();
+
+    //    initLevel();
 
 }
 
@@ -129,6 +137,7 @@ function initLevel(currentLevel_) {
     maxSubLevel = wordList.length;
     items.score.numberOfSubLevels = maxSubLevel;
     items.score.currentSubLevel = 1;
+    items.score.visible = true
 
     items.menu_screen.visible = false
     items.imageFrame.visible = true
@@ -140,6 +149,7 @@ function initLevel(currentLevel_) {
     items.miniGameLoader.source = ""
     items.keyboard.visibleFlag = false
     currentMiniGame = 0
+    currentProgress[currentLevel] = 0
 
     subLevelsLeft = [];
     for(var i in wordList) {
@@ -162,6 +172,10 @@ function initSubLevel() {
 }
 
 function nextLevel() {
+    if(savedProgress[currentLevel] < currentProgress[currentLevel])
+        savedProgress[currentLevel] = currentProgress[currentLevel]
+    console.log("clicked on next and saved "+ savedProgress[currentLevel])
+
     if(maxLevel <= ++currentLevel ) {
         currentLevel = 0
     }
@@ -169,6 +183,10 @@ function nextLevel() {
 }
 
 function previousLevel() {
+    if(savedProgress[currentLevel] < currentProgress[currentLevel])
+        savedProgress[currentLevel] = currentProgress[currentLevel]
+    console.log("clicked on prev and saved "+ savedProgress[currentLevel])
+
     if(--currentLevel < 0) {
         currentLevel = maxLevel - 1
     }
@@ -177,7 +195,12 @@ function previousLevel() {
 
 function nextSubLevel() {
     ++items.score.currentSubLevel;
+    ++currentProgress[currentLevel]
+    //make a change when progress exceedes previous one 2 0
+
     if(items.score.currentSubLevel == items.score.numberOfSubLevels+1) {
+        // saving progress after completion
+        savedProgress[currentLevel] = currentProgress[currentLevel]
         //here logic for starting quiz game
         nextMiniGame()
     }
@@ -188,6 +211,7 @@ function nextSubLevel() {
 
 function prevSubLevel() {
     --items.score.currentSubLevel
+    --currentProgress[currentLevel]
     if( items.score.currentSubLevel <= 0) {
         //Do nothing
     }
@@ -224,4 +248,8 @@ function nextMiniGame() {
     else {
         nextLevel()
     }
+}
+
+function getProgressStatus(index) {
+    return savedProgress[index  ]
 }

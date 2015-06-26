@@ -87,7 +87,13 @@ ActivityBase {
             property alias englishFallbackDialog: englishFallbackDialog
             property alias miniGameLoader: miniGameLoader
             property alias locale: background.locale
-            property int currentProgress: 0
+
+            function checkWordExistence(wordForCheck) {
+                if(!activity.audioVoices.fileExists(ApplicationInfo.getAudioFilePath(wordForCheck.voice)))
+                    return false
+                else
+                    return true
+            }
 
             function playWord() {
                 if(!activity.audioVoices.fileExists(ApplicationInfo.getAudioFilePath(goodWord.voice))) {
@@ -375,7 +381,9 @@ ActivityBase {
         Bar {
             id: bar
             anchors.bottom: keyboard.top
-            content: BarEnumContent { value: help | home | level | config}
+            content: BarEnumContent { value:
+                    menu_screen.visible ? help | home | level | config
+                                : help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -383,11 +391,15 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
 //            onHomeClicked: activity.home()
             onHomeClicked: {
+                if(Activity.savedProgress[Activity.currentLevel] < Activity.currentProgress[Activity.currentLevel])
+                    Activity.savedProgress[Activity.currentLevel] = Activity.currentProgress[Activity.currentLevel]
+                console.log("clicked on home and saved "+ Activity.savedProgress[Activity.currentLevel])
                 if(menu_screen.visible == false) {
                     menu_screen.visible = true
                     items.imageFrame.visible = false
+                    items.score.visible = false
                     level = 0
-                    if (Activity.loadedItems.visible)
+                    if (Activity.loadedItems)
                         Activity.loadedItems.visible = false
                 }
                 else {

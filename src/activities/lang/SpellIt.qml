@@ -251,7 +251,11 @@ Item {
                 anchors.fill: parent
                 hoverEnabled: true
                 onEntered: ok.scale = 1.1
-                onClicked:SpellActivity.checkAnswer(answer.text)
+                onClicked: {
+                    var check = SpellActivity.checkAnswer(answer.text)
+                    if (check)
+                        ++Activity.currentProgress[Activity.currentLevel]
+                }
                 onExited: ok.scale = 1
             }
         }

@@ -124,6 +124,7 @@ function nextSubLevel() {
 function checkAnswer(answer_) {
     if(spellItems.goodWord.translatedTxt == answer_) {
         nextSubLevel()
+        return true
     }
     else {
         badWordSelected(currentSubLevel-1,answer_)
