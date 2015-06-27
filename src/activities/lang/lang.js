@@ -36,13 +36,15 @@ var items;
 var baseUrl = "qrc:/gcompris/src/activities/lang/resource/";
 var dataset = null;
 var lessons
-var menus
+var maxWordInLesson = 12
 var wordList
-var savedWordList
 var subLevelsLeft
+var menus = []
 var currentProgress = []
 var savedProgress = []
-var modifiedWordCount = 0
+var subWordList
+var currentSubLesson
+var maxSubLesson
 // miniGames is list of miniGames
 // first element is Activity name,
 // second element is mode of miniGame
@@ -60,6 +62,7 @@ function init(items_) {
     maxSubLevel = 0
     currentLevel = 0
     currentSubLevel = 0
+    currentSubLesson = 0
 }
 
 function start() {
@@ -102,9 +105,12 @@ function start() {
         if(!(currentProgress[j] > 0))
             currentProgress[j] = 0
     }
+
     for (var k =0; k<maxLevel; k++) {
         if(!(savedProgress[k] > 0))
             savedProgress[k] = 0
+//        savedProgress[k] = menus[k].savedProgress
+//        menus.push({'savedProgress': savedProgress[k] })
     }
 
     items.menuModel.clear()
@@ -122,7 +128,9 @@ function start() {
 }
 
 function stop() {
-
+//    for (var k =0; k<maxLevel; k++) {
+//            menus[k].savedProgress =  savedProgress[k]
+//    }
 }
 
 function initLevel(currentLevel_) {
@@ -131,10 +139,18 @@ function initLevel(currentLevel_) {
 
     var currentLesson = lessons[currentLevel]
     wordList = Lang.getLessonWords(dataset, currentLesson);
+    maxSubLesson = Math.floor(wordList.length / maxWordInLesson)
 
-    Core.shuffle(wordList);
+    var subLessons = []
+    for (var i = 0; i < wordList.length; i++) {
+        subLessons[i] = wordList.splice(0,maxWordInLesson)
+    }
 
-    maxSubLevel = wordList.length;
+    subWordList = subLessons[currentSubLesson]
+
+    Core.shuffle(subWordList);
+
+    maxSubLevel = subWordList.length;
     items.score.numberOfSubLevels = maxSubLevel;
     items.score.currentSubLevel = 1;
     items.score.visible = true
@@ -149,26 +165,32 @@ function initLevel(currentLevel_) {
     items.miniGameLoader.source = ""
     items.keyboard.visibleFlag = false
     currentMiniGame = 0
-    currentProgress[currentLevel] = 0
 
     subLevelsLeft = [];
-    for(var i in wordList) {
+    for(var i in subWordList) {
         subLevelsLeft.push(i)   // This is available in all editors.
     }
+
+    if(currentSubLesson == 0)
+            currentProgress[currentLevel] = 0
 
     initSubLevel()
 }
 
-function initSubLevel() {
-    // initialize sublevel
-    if(items.score.currentSubLevel == 1)
-        items.previousWordButton.visible = false
-    else
-        items.previousWordButton.visible = true
+function nextSubLesson(){
+    if(savedProgress[currentLevel] < currentProgress[currentLevel])
+        savedProgress[currentLevel] = currentProgress[currentLevel]
 
-    items.goodWord = wordList[items.score.currentSubLevel-1]
-    items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image)
-    items.wordText.changeText(items.goodWord.translatedTxt)
+    if(currentSubLesson < maxSubLesson) {
+        ++currentSubLesson
+    }
+    else {
+        if(maxLevel <= ++currentLevel ) {
+            currentLevel = 0
+        }
+        currentSubLesson = 0
+    }
+    initLevel(currentLevel)
 }
 
 function nextLevel() {
@@ -191,6 +213,18 @@ function previousLevel() {
         currentLevel = maxLevel - 1
     }
     initLevel(currentLevel);
+}
+
+function initSubLevel() {
+    // initialize sublevel
+    if(items.score.currentSubLevel == 1)
+        items.previousWordButton.visible = false
+    else
+        items.previousWordButton.visible = true
+
+    items.goodWord = subWordList[items.score.currentSubLevel-1]
+    items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image)
+    items.wordText.changeText(items.goodWord.translatedTxt)
 }
 
 function nextSubLevel() {
@@ -224,25 +258,39 @@ function prevSubLevel() {
 function nextMiniGame() {
     if(currentMiniGame < miniGames.length) {
 
+
+        console.log("launching next Mini game current progress" + currentProgress[currentLevel]
+                    +"saved progress"+ savedProgress[currentLevel])
+
         var mode = miniGames[currentMiniGame][1];
         var itemToLoad = miniGames[currentMiniGame][2];
 
-        // reloading the wordList
+        // reloading the subWordList
         var currentLesson = lessons[currentLevel]
         var wordList = Lang.getLessonWords(dataset, currentLesson);
-        Core.shuffle(wordList);
-        maxSubLevel = wordList.length
+
+        var subLessons = []
+        for (var i = 0; i < wordList.length; i++) {
+            subLessons[i] = wordList.splice(0,maxWordInLesson)
+        }
+
+        var subWordList = subLessons[currentSubLesson]
+
+
+        Core.shuffle(subWordList);
+
+        maxSubLevel = subWordList.length
 
         items.miniGameLoader.source = itemToLoad;
         loadedItems = items.miniGameLoader.item
 
-        // resetting the wordList length because it could have been spliced by quiz miniGame 3
+        // resetting the subWordList length because it could have been spliced by quiz miniGame 3
         if(currentMiniGame === 3) {
-            items.score.numberOfSubLevels = wordList.length
+            items.score.numberOfSubLevels = subWordList.length
         }
 
         // initiate the loaded item mini game
-        loadedItems.init(items, loadedItems, wordList, mode)
+        loadedItems.init(items, loadedItems, subWordList, mode)
         ++currentMiniGame;
     }
     else {

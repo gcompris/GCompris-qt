@@ -58,6 +58,7 @@ ActivityBase {
         signal voiceDone
 
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -189,7 +190,7 @@ ActivityBase {
                     PropertyAction {
                         target: categoryText
                         property: "text"
-                        value: "Category: "+ categoryText.nextCategory
+                        value: qsTr("Category: ")+ categoryText.nextCategory
                     }
                     PropertyAnimation {
                         target: categoryText
@@ -382,18 +383,22 @@ ActivityBase {
             id: bar
             anchors.bottom: keyboard.top
             content: BarEnumContent { value:
-                    menu_screen.visible ? help | home | level | config
-                                : help | home | level }
+                    menu_screen.visible ? help | home |config
+                                : help | home }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
+//            onPreviousLevelClicked: Activity.previousLevel()
+//            onNextLevelClicked: Activity.nextLevel()
 //            onHomeClicked: activity.home()
             onHomeClicked: {
+                Activity.currentSubLesson = 0
                 if(Activity.savedProgress[Activity.currentLevel] < Activity.currentProgress[Activity.currentLevel])
                     Activity.savedProgress[Activity.currentLevel] = Activity.currentProgress[Activity.currentLevel]
                 console.log("clicked on home and saved "+ Activity.savedProgress[Activity.currentLevel])
+                menu_screen.menuModel.clear()
+                menu_screen.menuModel.append(Activity.menus)
+
                 if(menu_screen.visible == false) {
                     menu_screen.visible = true
                     items.imageFrame.visible = false

@@ -276,7 +276,7 @@ Item {
 
         Bonus {
             id: bonus
-            onWin: Activity.nextMiniGame()
+            onWin: Activity.nextSubLesson()
         }
 
     }

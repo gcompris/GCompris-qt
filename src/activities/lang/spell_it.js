@@ -91,7 +91,7 @@ function initLevel() {
         offset += j;
         row++;
     }
-    layout[row-1][offset] = { label: items.keyboard.backspace };
+    layout[row-1].push({ label: items.keyboard.backspace });
     items.keyboard.layout = layout;
     items.keyboard.visibleFlag = true;
 

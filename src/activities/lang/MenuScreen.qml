@@ -139,7 +139,7 @@ Image {
                     maximumValue: wordCount
                     minimumValue: 0
                     value: Activity.savedProgress[index]
-//                    value: Activity.getProgressStatus(index)
+//                    value: savedProgress
                     orientation: Qt.Horizontal
                 }
 
@@ -157,7 +157,6 @@ Image {
             function selectCurrentItem() {
                 particles.burst(50)
                 Activity.initLevel(index)
-                console.log("maximum Value " +progressLang.maximumValue)
             }
 
         } //delegate close

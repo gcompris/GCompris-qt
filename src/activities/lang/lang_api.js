@@ -135,7 +135,8 @@ function getMenuModel(dataset, items) {
                         { 'name' : currentLesson.name,
                           'image': currentLesson.content[0].image,
                           'index': levelCount,
-                            'wordCount': tempWordList.length * 4 + modifiedWordCount
+                          'wordCount': tempWordList.length * 4 + modifiedWordCount,
+                           'savedProgress': 0
                         })
         }
         prevLevelcount = levelCount+ 1
