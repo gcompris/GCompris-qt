@@ -477,8 +477,7 @@ Item {
             {
                 // ask for downloading new voices
                 Core.showMessageDialog(main,
-                qsTr("You selected a new locale.") + '\n'
-                + qsTr("Do you want to download the corresponding sound files now?"),
+                qsTr("You selected a new locale. You need to restart GCompris to play in your new locale.<br/>Do you want to download the corresponding sound files now?"),
                 qsTr("Yes"), function() {
                     // yes -> start download
                     if (DownloadManager.downloadResource(
