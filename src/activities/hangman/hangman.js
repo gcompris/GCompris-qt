@@ -83,7 +83,7 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel ;		
+    items.bar.level = currentLevel ;
     initSublevel();
     level = items.wordlist.getLevelWordList(currentLevel);
     {	//to set the layout...populate
@@ -177,6 +177,7 @@ function previousLevel() {
 
 function initSublevel()
 {	maxsublevel = items.wordlist.getMaxSubLevel(items.bar.level);
+	items.score.numberOfSubLevels=maxsublevel;
         items.wordlist.initRandomWord(items.bar.level);
 	win=0;
 	var text1 = items.wordlist.getRandomWord();
@@ -193,6 +194,7 @@ function initSublevel()
 	}
 	console.log(wordi);
 	items.hidden.text=qsTr(wordi);
+	items.score.currentSubLevel = currentSublevel;
 }
 
 function nextSublevel()
