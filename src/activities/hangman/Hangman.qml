@@ -3,7 +3,7 @@
  * Copyright (C) 2015 Rajdeep Kaur <rajdeep51994@gmail.com>
  *
  * Authors:
- *   <BRUNO COUDOIN> (GTK+ version)
+ *   
  *   RAJDEEP KAUR<rajdeep51994@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -331,7 +331,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.initSublevel());
+            Component.onCompleted: win.connect(Activity.initSublevel);
         }
     }
 
