@@ -81,6 +81,7 @@ ActivityBase {
             property alias flower:flower
             property alias animateX: animateX
             property alias ping_animation:ping_animation
+            property alias score: score
         }
 
         onStart: { Activity.start(items);
@@ -308,6 +309,17 @@ ActivityBase {
                 displayDialog(dialogActivityConfig)
             }
         }
+        
+        Score {
+            id: score
+
+            anchors.top: undefined
+            anchors.topMargin: 10 * ApplicationInfo.ratio
+            anchors.right: parent.right
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.bottom: keyboard.top
+        }
+        
         
          VirtualKeyboard {
             id: keyboard
