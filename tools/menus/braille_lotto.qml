@@ -21,7 +21,7 @@ ActivityInfo {
   name: "braille_lotto/BrailleLotto.qml"
   difficulty: 6
   icon: "braille_lotto/braille_lotto.svg"
-  author: "Srishti Sethi <srishakatux@gmail.com>"
+  author: "Srishti Sethi &lt;srishakatux@gmail.com&gt;"
   demo: true
   title: qsTr("Braille Lotto")
   description: qsTr("Discover the Braille system for numbers.")

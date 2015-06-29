@@ -21,7 +21,7 @@ ActivityInfo {
   name: "braille_alphabets/BrailleAlphabets.qml"
   difficulty: 5
   icon: "braille_alphabets/braille_alphabets.svg"
-  author: "Arkit Vora <arkitvora123@gmail.com>"
+  author: "Arkit Vora &lt;arkitvora123@gmail.com&gt;"
   demo: true
   title: qsTr("Discover the Braille system")
   description: qsTr("Learn and memorize the Braille system")

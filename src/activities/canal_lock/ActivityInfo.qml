@@ -21,7 +21,7 @@ ActivityInfo {
   name: "canal_lock/CanalLock.qml"
   difficulty: 2
   icon: "canal_lock/canal_lock.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Operate a canal lock")
   description: qsTr("Tux is in trouble, and needs to take his boat through a lock. Help Tux and find out how a canal lock works.")

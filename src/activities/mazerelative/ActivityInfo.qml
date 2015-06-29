@@ -21,7 +21,7 @@ ActivityInfo {
   name: "mazerelative/Mazerelative.qml"
   difficulty: 3
   icon: "mazerelative/maze.svg"
-  author: "Stephane Mankowski <stephane@mankowski.fr>"
+  author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   demo: true
   title: qsTr("Relative Maze")
   description: qsTr("Help Tux get out of this maze (Move is relative)")

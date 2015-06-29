@@ -170,7 +170,6 @@ Item {
             GCComboBox {
                 id: fontBox
                 model: fonts
-                width: 250 * ApplicationInfo.ratio
                 background: dialogActivityConfig
                 label: qsTr("Font selector")
             }
@@ -209,7 +208,6 @@ Item {
             GCComboBox {
                 id: fontCapitalizationBox
                 model: fontCapitalizationModel
-                width: 250 * ApplicationInfo.ratio
                 background: dialogActivityConfig
                 label: qsTr("Font Capitalization")
             }
@@ -220,7 +218,6 @@ Item {
             GCComboBox {
                 id: languageBox
                 model: dialogConfig.languages
-                width: 300 * ApplicationInfo.ratio
                 background: dialogActivityConfig
                 onCurrentIndexChanged: voicesRow.localeChanged();
                 label: qsTr("Language selector")
@@ -480,7 +477,7 @@ Item {
             {
                 // ask for downloading new voices
                 Core.showMessageDialog(main,
-                qsTr("You selected a new locale") + '\n'
+                qsTr("You selected a new locale.") + '\n'
                 + qsTr("Do you want to download the corresponding sound files now?"),
                 qsTr("Yes"), function() {
                     // yes -> start download

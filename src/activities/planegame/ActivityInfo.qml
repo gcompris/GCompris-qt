@@ -21,7 +21,7 @@ ActivityInfo {
     name: "planegame/Sequence.qml"
     difficulty: 2
     icon: "planegame/planegame.svg"
-    author: "Johnny Jazeix <jazeix@gmail.com>"
+    author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
     demo: true
     title: qsTr("Numbers in Order")
     description: qsTr("Move the helicopter to catch the clouds in the correct order")

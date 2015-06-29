@@ -165,7 +165,7 @@ Rectangle {
             GCText {
                 id: heading
                 text: qsTr("Arrange the events in the order in which they happened. " +
-                           "Select the line to move then touch it's target position.")
+                           "Select the line to move, then touch its target position.")
                 width: parent.width - 4
                 wrapMode: Text.WordWrap
                 fontSize: regularSize

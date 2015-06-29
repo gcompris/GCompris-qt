@@ -22,7 +22,7 @@ ActivityInfo {
   name: "gnumch-inequality/GnumchInequality.qml"
   difficulty: 3
   icon: "gnumch-inequality/gnumch-inequality.svg"
-  author: "Manuel Tondeur <manueltondeur@gmail.com>"
+  author: "Manuel Tondeur &lt;manueltondeur@gmail.com&gt;"
   demo: true
   title: qsTr("Gnumch Inequality")
   description: qsTr("Guide the Number Muncher to the all the expressions that do not equal the number at the top of the screen.")

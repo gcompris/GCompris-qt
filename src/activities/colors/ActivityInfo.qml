@@ -21,7 +21,7 @@ ActivityInfo {
   name: "colors/Colors.qml"
   difficulty: 1
   icon: "colors/colors.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Colors")
   description: qsTr("Click on the right color")

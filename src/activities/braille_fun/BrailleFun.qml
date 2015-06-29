@@ -66,6 +66,8 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        property bool hasWon: false
+
         Item {
             id: planeText
             width: plane.width
@@ -104,9 +106,13 @@ ActivityBase {
                 onRunningChanged: {
                     // @FIXME, in some case we are stopped before the end
                     if(planeText.x >= background.width / 2 && running == false) {
-                        bonus.bad("tux")
-                        charBg.clickable(false)
+                        if(!hasWon) {
+                            bonus.bad("tux")
+                            charBg.clickable(false)
+                        }
                     }
+                    // reset the flag either when we start or finish the timer
+                    hasWon = false
                 }
             }
         }
@@ -124,7 +130,7 @@ ActivityBase {
             border.width: 0
             radius: 5
 
-            property int charWidth: Math.min(120 * ApplicationInfo.ratio,
+            property int charWidth: Math.min(150 * ApplicationInfo.ratio,
                             parent.width * 0.3)
 
             function clickable(status) {
@@ -175,12 +181,13 @@ ActivityBase {
                                         answerString = answerString + cardRepeater.itemAt(i).brailleChar;
                                     }
                                     if(answerString === items.question) {
+                                        hasWon = true
                                         charBg.clickable(false)
                                         bonus.good("tux")
                                         score.currentSubLevel ++;
                                     }
                                 }
-                                property string question: items.question[modelData]
+                                property string question: items.question[modelData] ? items.question[modelData] : ""
                                 property bool found: question === brailleChar
                             }
                         }

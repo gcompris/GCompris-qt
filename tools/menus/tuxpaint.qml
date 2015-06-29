@@ -21,7 +21,7 @@ ActivityInfo {
   name: "tuxpaint/Tuxpaint.qml"
   difficulty: 1
   icon: "tuxpaint/tuxpaint.svg"
-  author: "Bill Kendrick <Tuxpaint>"
+  author: "Bill Kendrick &lt;Tuxpaint&gt;"
   demo: true
   title: qsTr("Tuxpaint")
   description: qsTr("Launch Tuxpaint")

@@ -21,7 +21,7 @@ ActivityInfo {
     name: "enumerate/Enumerate.qml"
     difficulty: 2
     icon: "enumerate/enumerate.svg"
-    author: "Thib ROMAIN <thibrom@gmail.com>"
+    author: "Thib ROMAIN &lt;thibrom@gmail.com&gt;"
     demo: true
     title: qsTr("Count the items")
     description: qsTr("Place the items in the best way to count them")

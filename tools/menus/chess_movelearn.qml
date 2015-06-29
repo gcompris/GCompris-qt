@@ -21,7 +21,7 @@ ActivityInfo {
   name: "chess_movelearn/ChessMovelearn.qml"
   difficulty: 2
   icon: "chess_movelearn/chess_movelearn.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Learning chess")
   description: qsTr("Chess training. Catch the computer's pawns.")

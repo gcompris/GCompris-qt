@@ -25,7 +25,7 @@ ActivityInfo {
   name: "geography/Geography.qml"
   difficulty: 2
   icon: "geography/globe.svg"
-  author: "Pulkit Gupta <pulkitgenius@gmail.com>"
+  author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   demo: true
   title: qsTr("Locate the countries")
   description: qsTr("Drag and Drop the items to redraw the whole map")

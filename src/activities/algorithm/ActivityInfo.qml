@@ -21,7 +21,7 @@ ActivityInfo {
   name: "algorithm/Algorithm.qml"
   difficulty: 2
   icon: "algorithm/algorithm.svg"
-  author: "Bharath M S <brat.197@gmail.com>"
+  author: "Bharath M S &lt;brat.197@gmail.com&gt;"
   demo: true
   title: qsTr("Logical associations")
   description: qsTr("Complete the arrangement of fruits")

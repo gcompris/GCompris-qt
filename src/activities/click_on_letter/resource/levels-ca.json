@@ -9,6 +9,6 @@
     { "level": 8, "questions": "abcdefgh", "answers": "abcdefgh" },
     { "level": 9, "questions": "ijklmnop", "answers": "ijklmnop" },
     { "level": 10, "questions": "qrstuvwxyz", "answers": "qrstuvwxyz" },
-    { "level": 11, "questions": "bcdfghjklmnpqrstvwxz", "answers": "bcdfghjklmnpqrstvwxz" }
-    { "level": 11, "questions": "àçéèíïóòúü", "answers": "àçéèíïóòúü" }
+    { "level": 11, "questions": "bcdfghjklmnpqrstvwxz", "answers": "bcdfghjklmnpqrstvwxz" },
+    { "level": 12, "questions": "àçéèíïóòúü", "answers": "àçéèíïóòúü" }
 ]

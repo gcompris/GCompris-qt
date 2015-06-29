@@ -21,7 +21,7 @@ ActivityInfo {
   name: "imageid/Imageid.qml"
   difficulty: 2
   icon: "imageid/imageid.svg"
-  author: "Holger Kaelberer <holger.k@elberer.de>"
+  author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
   demo: true
   title: qsTr("Reading practice")
   description: qsTr("Practice reading by finding the word matching an image")

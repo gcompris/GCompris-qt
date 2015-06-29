@@ -24,17 +24,13 @@ import "../../core"
 import "babymatch.js" as Activity
 
 Item {
-    width: view.width
-    height: view.height
+    id: listWidget
+    anchors.fill: parent
+    anchors.topMargin: 5 * ApplicationInfo.ratio
+    anchors.leftMargin: 5 * ApplicationInfo.ratio
     z: 10
 
-    anchors {
-        left: parent.left
-        leftMargin: 5 * ApplicationInfo.ratio
-        top: parent.top
-        topMargin: 10 * ApplicationInfo.ratio
-    }
-
+    property bool vert
     property alias model: mymodel;
     property alias view: view;
     property alias showOk : showOk
@@ -64,19 +60,40 @@ Item {
         onStopped: {view.checkDisplayedGroup()}
     }
 
-    Column {
+    Image {
+        id: ok
+        source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
+        sourceSize.width: view.iconSize
+        fillMode: Image.PreserveAspectFit
+        anchors.horizontalCenter: parent.horizontalCenter
+
+        MouseArea {
+            anchors.fill: parent
+            hoverEnabled: true
+            onEntered: instruction.opacity = 1
+            onClicked: view.checkAnswer()
+            onExited: instruction.opacity = 0
+        }
+    }
+
+    Grid {
         id: view
-        width: leftWidget.width
-        height: background.height- 2*bar.height
+        width: listWidget.vert ? leftWidget.width : 2 * bar.height
+        height: listWidget.vert ? background.height - 2 * bar.height : bar.height
         spacing: 10
         z: 20
-        
+        columns: listWidget.vert ? 1 : nbItemsByGroup + 1
+
         property int currentDisplayedGroup: 0
         property int setCurrentDisplayedGroup
-        property int nbItemsByGroup: 4
+        property int nbItemsByGroup:
+            listWidget.vert ?
+                parent.height / iconSize - 2 :
+                parent.width / iconSize - 2
+
         property int itemsDropped: 0
-        property int nbDisplayedGroup: Math.ceil(model.count/nbItemsByGroup)
-        property int iconSize: width - 10 * ApplicationInfo.ratio
+        property int nbDisplayedGroup: Math.ceil(model.count / nbItemsByGroup)
+        property int iconSize: 80 * ApplicationInfo.ratio
         property int previousNavigation: 1
         property int nextNavigation: 1
         property bool okShowed: false
@@ -84,6 +101,15 @@ Item {
         property var displayedGroup: []
         property alias ok: ok
         
+        add: Transition {
+            NumberAnimation { property: "opacity"; from: 0; to: 1.0; duration: 400 }
+            NumberAnimation { property: "scale"; from: 0; to: 1.0; duration: 400 }
+        }
+
+        move: Transition {
+            NumberAnimation { properties: "x,y"; duration: 400; easing.type: Easing.OutBounce }
+        }
+
         //For setting navigation buttons
         function setNextNavigation() {
             nextNavigation = 0
@@ -123,13 +149,19 @@ Item {
                 for(var i = 0 ; i < nbDisplayedGroup ; ++i) {
                     if(displayedGroup[i]) {
                         view.setCurrentDisplayedGroup = i
-                        hideLeftWidget.start()
+                        view.refreshLeftWidget()
                         break
                     }
                 }
             }
         }
         
+        function refreshLeftWidget() {
+            availablePieces.view.currentDisplayedGroup = availablePieces.view.setCurrentDisplayedGroup
+            availablePieces.view.setNextNavigation()
+            availablePieces.view.setPreviousNavigation()
+        }
+
         function checkAnswer() {
             var win = true
             view.showGlow = true
@@ -147,45 +179,36 @@ Item {
                 Activity.wrong()
         }
         
-        Image {
-            id: ok
-            source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: view.iconSize * 0.9
-            height: 0
-            fillMode: Image.PreserveAspectFit
-            anchors.horizontalCenter: parent.horizontalCenter
-            
-            MouseArea {
-                anchors.fill: parent
-                hoverEnabled: true
-                onEntered: instruction.opacity = 1
-                onClicked: {view.checkAnswer()}
-                onExited: instruction.opacity = 0
-            }
-        }
-                                     
         Repeater {
             id: repeater
-            Component {
-                id: contactsDelegate
-
-                DragListItem {
-                        id: item
-                        z: 1
-                        heightInColumn: view.iconSize * 0.85
-                        widthInColumn: view.iconSize * 0.85
-                        tileWidth: view.iconSize
-                        tileHeight: view.iconSize
-                        
-                        visible: view.currentDisplayedGroup*view.nbItemsByGroup <= index &&
-                                 index <= (view.currentDisplayedGroup+1)*view.nbItemsByGroup-1
-                    }
-                    
+            property int currentIndex
+            onCurrentIndexChanged: {
+                for(var i = 0; i < mymodel.count; i++) {
+                    if(currentIndex != i)
+                        repeater.itemAt(i).selected = false
+                    else
+                        repeater.itemAt(i).selected = true
                 }
+                if(currentIndex == -1)
+                    toolTip.visible = false
+            }
+            DragListItem {
+                id: contactsDelegate
+                z: 1
+                heightInColumn: view.iconSize * 0.85
+                widthInColumn: view.iconSize * 0.85
+                tileWidth: view.iconSize
+                tileHeight: view.iconSize
+                visible: view.currentDisplayedGroup * view.nbItemsByGroup <= index &&
+                         index <= (view.currentDisplayedGroup+1) * view.nbItemsByGroup-1
+
+                onPressed: repeater.currentIndex = index
+            }
             
             clip: true
             model: mymodel
-            delegate: contactsDelegate
+
+            onModelChanged: repeater.currentIndex = -1
         }
 
         Row {
@@ -193,18 +216,18 @@ Item {
             
             Image {
                 id: previous
-                opacity: (model.count > view.nbItemsByGroup && view.previousNavigation != 0 && view.currentDisplayedGroup != 0) ? 1 : 0
+                opacity: (model.count > view.nbItemsByGroup &&
+                          view.previousNavigation != 0 && view.currentDisplayedGroup != 0) ? 1 : 0
                 source:"qrc:/gcompris/src/core/resource/bar_previous.svg"
-                width: view.iconSize * 0.35
+                sourceSize.width: view.iconSize * 0.35
                 fillMode: Image.PreserveAspectFit
                 MouseArea {
-                    anchors.fill: parent
-                    hoverEnabled: true
-                    
+                    anchors.fill: parent                    
                     onClicked: {
+                        repeater.currentIndex = -1
                         if(previous.opacity == 1) {
                             view.setCurrentDisplayedGroup = view.currentDisplayedGroup - view.previousNavigation
-                            hideLeftWidget.start()
+                            view.refreshLeftWidget()
                         }
                     }
                 }
@@ -215,13 +238,14 @@ Item {
                 visible: model.count > view.nbItemsByGroup && view.nextNavigation != 0 && view.currentDisplayedGroup < 
 						 view.nbDisplayedGroup - 1
                 source:"qrc:/gcompris/src/core/resource/bar_next.svg"
-                width: view.iconSize * 0.35
+                sourceSize.width: view.iconSize * 0.35
                 fillMode: Image.PreserveAspectFit
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
+                        repeater.currentIndex = -1
                         view.setCurrentDisplayedGroup = view.currentDisplayedGroup + view.nextNavigation
-                        hideLeftWidget.start()
+                        view.refreshLeftWidget()
                     }
                 }
             }

@@ -21,7 +21,7 @@ ActivityInfo {
   name: "followline/Followline.qml"
   difficulty: 1
   icon: "followline/followline.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Control the hose-pipe")
   description: qsTr("The fireman needs to stop the fire, but the hose is blocked.")

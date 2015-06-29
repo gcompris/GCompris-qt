@@ -21,7 +21,7 @@ ActivityInfo {
   name: "memory-math-div-tux/MemoryMathDivTux.qml"
   difficulty: 6
   icon: "memory-math-div-tux/memory-math-div-tux.svg"
-  author: "JB BUTET <ashashiwa@gmail.com>"
+  author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
   demo: true
   title: qsTr("Division memory game against Tux")
   description: qsTr("Turn the cards over to find a matching operation, until all the cards are gone.")

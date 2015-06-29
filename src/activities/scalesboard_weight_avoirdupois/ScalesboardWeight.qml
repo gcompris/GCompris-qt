@@ -35,7 +35,7 @@ Scalesboard {
     dataset: [
             {
                 "masses": [[1, lb(1)], [2, lb(2)], [2, lb(2)], [5, lb(5)],
-                          [5, lb(5)], [1, lb(10)], [1, lb(10)]],
+                          [5, lb(5)], [10, lb(10)], [10, lb(10)]],
                 "targets": [[3, lb(3)], [4, lb(4)], [6, lb(6)], [7, lb(7)], [8, lb(8)], [9, lb(9)]],
                 "rightDrop": false,
                 "message": qsTr('The "lb" symbol at the end of a number means pound.') + " " +
@@ -61,7 +61,7 @@ Scalesboard {
             {
                 "masses": [[1, oz(1)], [4, oz(4)], [6, oz(6)], [8, oz(8)],
                           [10, oz(10)], [16, lb(1)]],
-                "targets": [[3, oz(3)], [9, oz(9)], [11, oz(11)], [32, lb(32)]],
+                "targets": [[3, oz(3)], [9, oz(9)], [11, oz(11)], [32, lb(2)]],
                 "rightDrop": true,
                 "message": qsTr("Take care, you can drop weights on both sides of the scale.")
             },
@@ -77,7 +77,7 @@ Scalesboard {
             {
                 "masses": [[1, oz(1)], [4, oz(4)], [6, oz(6)], [8, oz(8)],
                           [10, oz(10)], [16, lb(1)]],
-                "targets": [[3, oz(3)], [9, oz(9)], [11, oz(11)], [32, lb(32)]],
+                "targets": [[3, oz(3)], [9, oz(9)], [11, oz(11)], [32, lb(2)]],
                 "rightDrop": true,
                 "message": qsTr("Take care, you can drop weights on both sides of the scale."),
                 "question": qsTr("Enter the weight of the gift in ounce: %1")

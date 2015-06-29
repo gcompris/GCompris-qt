@@ -21,7 +21,7 @@ ActivityInfo {
   name: "melody/Melody.qml"
   difficulty: 2
   icon: "melody/melody.svg"
-  author: "Jose JORGE <jjorge@free.fr>"
+  author: "Jose JORGE &lt;jjorge@free.fr&gt;"
   demo: true
   title: qsTr("Melody")
   description: qsTr("Repeat a melody")

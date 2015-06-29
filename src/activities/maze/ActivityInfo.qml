@@ -21,7 +21,7 @@ ActivityInfo {
   name: "maze/Maze.qml"
   difficulty: 1
   icon: "maze/maze.svg"
-  author: "Stephane Mankowski <stephane@mankowski.fr>"
+  author: "Stephane Mankowski &lt;stephane@mankowski.fr&gt;"
   demo: true
   title: qsTr("Maze")
   description: qsTr("Help Tux get out of this maze")

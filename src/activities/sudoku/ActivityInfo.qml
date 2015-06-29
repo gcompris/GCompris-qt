@@ -21,7 +21,7 @@ ActivityInfo {
   name: "sudoku/Sudoku.qml"
   difficulty: 4
   icon: "sudoku/sudoku.svg"
-  author: "Johnny Jazeix <jazeix@gmail.com>"
+  author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   demo: true
   title: qsTr("Sudoku, place unique symbols in a grid")
   description: qsTr("Symbols must be unique in a row, in a column, and (if defined) each region.")

@@ -22,7 +22,7 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Paul Gauguin, Arearea - 1892")
+   property string instruction: qsTr("Vincent van Gogh, Bedroom in Arles - 1888")
    property variant levels: [
 	  {
           "pixmapfile" : "image/Van_Gogh_0011_background.png",

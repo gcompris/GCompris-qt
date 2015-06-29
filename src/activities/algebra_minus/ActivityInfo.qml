@@ -21,7 +21,7 @@ ActivityInfo {
   name: "algebra_minus/AlgebraMinus.qml"
   difficulty: 4
   icon: "algebra_minus/algebra_minus.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Subtraction of numbers")
   description: qsTr("Practice the subtraction operation")

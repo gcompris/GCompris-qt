@@ -21,7 +21,6 @@
  */
 
 import QtQuick 2.1
-import QtQuick.Controls 1.0
 import GCompris 1.0
 
 import "../../core"
@@ -143,7 +142,6 @@ ActivityBase {
                                 id: localeBox
                                 model: langs.languages
                                 background: dialogActivityConfig
-                                width: 250 * ApplicationInfo.ratio
                                 label: qsTr("Select your locale")
                             }
                         }

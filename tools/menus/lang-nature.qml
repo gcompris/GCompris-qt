@@ -21,7 +21,7 @@ ActivityInfo {
   name: "lang-nature/Lang-nature.qml"
   difficulty: 4
   icon: "lang-nature/lang-nature.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: true
   title: qsTr("Enrich your vocabulary")
   description: qsTr("List of words in the 'nature' category.")

@@ -21,7 +21,7 @@ ActivityInfo {
   name: "land_safe/LandSafe.qml"
   difficulty: 4
   icon: "land_safe/land_safe.svg"
-  author: "Matilda Bernard <serah4291@gmail.com>"
+  author: "Matilda Bernard &lt;serah4291@gmail.com&gt;"
   demo: true
   title: qsTr("Land Safe")
   description: qsTr("Understanding acceleration due to gravity.")

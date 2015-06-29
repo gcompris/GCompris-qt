@@ -21,7 +21,7 @@ ActivityInfo {
   name: "click_on_letter/ClickOnLetter.qml"
   difficulty: 2
   icon: "click_on_letter/click_on_letter.svg"
-  author: "Holger Kaelberer <holger.k@elberer.de>"
+  author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
   demo: true
   title: qsTr("Click on a lowercase letter")
   description: qsTr("Listen to a letter and click on the right one")

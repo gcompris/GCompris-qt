@@ -21,7 +21,7 @@ ActivityInfo {
   name: "memory-sound/MemorySound.qml"
   difficulty: 2
   icon: "memory-sound/memory-sound.svg"
-  author: "JB BUTET <ashashiwa@gmail.com>"
+  author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
   demo: true
   title: qsTr("Audio memory game")
   description: qsTr("Click on cards and listen to find the matching sounds")

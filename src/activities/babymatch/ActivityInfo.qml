@@ -24,7 +24,7 @@ ActivityInfo {
   name: "babymatch/Babymatch.qml"
   difficulty: 1
   icon: "babymatch/babymatch.svg"
-  author: "Pulkit Gupta <pulkitgenius@gmail.com>"
+  author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   demo: false
   title: qsTr("Matching Items")
   description: qsTr("Drag and Drop the items to make them match")

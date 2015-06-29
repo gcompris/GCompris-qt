@@ -21,7 +21,7 @@ ActivityInfo {
   name: "watercycle/Watercycle.qml"
   difficulty: 3
   icon: "watercycle/watercycle.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Learn about the water cycle")
   description: qsTr("Tux has come back from a long fishing party on his boat. Bring the water system back up so he can take a shower.")

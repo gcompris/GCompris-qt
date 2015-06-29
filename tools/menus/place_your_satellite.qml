@@ -21,7 +21,7 @@ ActivityInfo {
   name: "place_your_satellite/PlaceYourSatellite.qml"
   difficulty: 4
   icon: "place_your_satellite/place_your_satellite.svg"
-  author: "Matilda Bernard <seah4291@gmail.com>"
+  author: "Matilda Bernard &lt;seah4291@gmail.com&gt;"
   demo: true
   title: qsTr("Place your satellite")
   description: qsTr("Understanding effect of mass and distance on orbital velocity.")

@@ -43,8 +43,8 @@ Item {
     id: gccombobox
     focus: true
 
-    width: button.width
-    height: button.height
+    width: parent.width
+    height: flow.height
 
     /**
      * type:Item
@@ -101,7 +101,8 @@ Item {
      * Combobox display when inactive: the button with current choice  and its label besides.
      */
     Flow {
-        width: button.width+labelText.width+10
+        id: flow
+        width: parent.width
         spacing: 5 * ApplicationInfo.ratio
         Rectangle {
             id: button
@@ -263,7 +264,6 @@ Item {
                 flickableDirection: Flickable.VerticalFlick
                 clip: true
                 anchors.top: headerDescription.bottom
-		anchors.topMargin: headerDescription.height / 2
                 cellWidth: width / numberOfColumns
                 cellHeight: elementHeight
 
@@ -279,7 +279,7 @@ Item {
                             visible: parent.GridView.isCurrentItem
                             source: "qrc:/gcompris/src/core/resource/apply.svg"
                             anchors.right: textValue.left
-                            anchors.top: parent.top
+                            anchors.verticalCenter: parent.verticalCenter
                             anchors.rightMargin: 10
                             sourceSize.width: (gridview.elementHeight*0.8) * ApplicationInfo.ratio
                         }

@@ -21,7 +21,7 @@ ActivityInfo {
   name: "magic-hat-minus/MagicHat.qml"
   difficulty: 2
   icon: "magic-hat-minus/magic-hat-minus.svg"
-  author: "Thibaut ROMAIN <thibrom@gmail.com>"
+  author: "Thibaut ROMAIN &lt;thibrom@gmail.com&gt;"
   demo: true
   title: qsTr("The magician hat")
   description: qsTr("Count how many items are under the magic hat after some have got away")

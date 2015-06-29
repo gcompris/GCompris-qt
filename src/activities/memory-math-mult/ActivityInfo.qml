@@ -21,7 +21,7 @@ ActivityInfo {
   name: "memory-math-mult/MemoryMathMult.qml"
   difficulty: 5
   icon: "memory-math-mult/memory-math-mult.svg"
-  author: "JB BUTET <ashashiwa@gmail.com>"
+  author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
   demo: true
   title: qsTr("Multiplication memory game")
   description: qsTr("Turn the cards over to find two numbers which multiply the same, until all the cards are gone.")

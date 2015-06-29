@@ -22,11 +22,11 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "tic_tac_toe/TicTacToe.qml"
-  difficulty: 1
+  difficulty: 2
   icon: "tic_tac_toe/tic_tac_toe.svg"
-  author: "Pulkit Gupta <pulkitgenius@gmail.com>"
+  author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   demo: true
-  title: qsTr("Tic Tac Toe")
+  title: qsTr("Tic Tac Toe (against Tux)")
   description: qsTr("Place three marks in a row")
 //  intro: "Click on the square which you wish to mark and try to mark 3 consecutive squares before Tux."
   goal: qsTr("Place three respective marks in any horizontal, vertical, or diagonal row to win the game")

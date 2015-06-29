@@ -21,7 +21,7 @@ ActivityInfo {
   name: "superbrain/Superbrain.qml"
   difficulty: 2
   icon: "superbrain/superbrain.svg"
-  author: "Holger Kaelberer <holger.k@elberer.de>"
+  author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
   demo: true
   title: qsTr("Super Brain")
   description: qsTr("Tux has hidden several items. Find them again in the correct order")

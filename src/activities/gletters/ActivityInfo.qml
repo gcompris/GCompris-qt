@@ -21,7 +21,7 @@ ActivityInfo {
   name: "gletters/Gletters.qml"
   difficulty: 2
   icon: "gletters/gletters.svg"
-  author: "Holger Kaelberer <holger.k@elberer.de>"
+  author: "Holger Kaelberer &lt;holger.k@elberer.de&gt;"
   demo: true
   title: qsTr("Simple Letters")
   description: qsTr("Type the falling letters before they reach the ground")

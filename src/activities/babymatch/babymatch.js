@@ -123,9 +123,16 @@ function initLevel() {
         if(levelData.levels[i].type === undefined) {
             items.availablePieces.model.append( {
                 "imgName": levelData.levels[i].pixmapfile,
+                "imgSound": levelData.levels[i].sound ? levelData.levels[i].sound : "",
                 "imgHeight": levelData.levels[i].height == undefined ? 0 : levelData.levels[i].height,
                 "imgWidth": levelData.levels[i].width == undefined ? 0 : levelData.levels[i].width,
-                "toolTipText": levelData.levels[i].toolTipText == undefined ? "" : levelData.levels[i].toolTipText,
+                "toolTipText":
+                   // We remove the text before the pipe symbol if any (translation disembiguation)
+                   levelData.levels[i].toolTipText == undefined ?
+                                                       "" :
+                                                       (levelData.levels[i].toolTipText.split('|').length > 1 ?
+                                                        levelData.levels[i].toolTipText.split('|')[1] :
+                                                        levelData.levels[i].toolTipText),
                 "pressSound": levelData.levels[i].soundFile == undefined ? 
 							  "qrc:/gcompris/src/core/resource/sounds/bleep.wav" : url + levelData.levels[i].soundFile
             });

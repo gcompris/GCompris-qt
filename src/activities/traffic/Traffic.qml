@@ -21,7 +21,6 @@
  */
 
 import QtQuick 2.1
-import QtQuick.Controls 1.0
 import GCompris 1.0
 
 import "../../core"
@@ -127,7 +126,6 @@ ActivityBase {
                         GCComboBox {
                             id: modeBox
                             model: availableModes
-                            width: 250 * ApplicationInfo.ratio
                             background: dialogActivityConfig
                             label: qsTr("Select your mode")
                         }
