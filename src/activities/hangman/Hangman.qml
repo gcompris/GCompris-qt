@@ -75,7 +75,6 @@ ActivityBase {
             property alias keyboard:keyboard
             property alias heli:heli
             property alias hidden:hidden
-            property string text:text
             property alias locale: background.locale
             property alias textinput: textinput
             property alias ping:ping
@@ -91,15 +90,16 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         GCText {
+	  
 	    id:hidden
             anchors.centerIn: parent
             fontSize: largeSize
             color:"black"
-	    font.family: "Helvetica"
-            font.pointSize:55
+            font.pointSize:60
             anchors.horizontalCenter:parent.horizontalCenter
             anchors.verticalCenter:parent.verticalCenter
-        }
+            
+	}
         
         TextInput {
             // Helper element to capture composed key events like french ô which
@@ -109,7 +109,7 @@ ActivityBase {
             enabled: !ApplicationInfo.isMobile
             focus: true
             visible:false
-            Keys.onPressed: {
+            onTextChanged: {
 	        if (text != "") {
                     Activity.processKeyPress(text);
                     text = "";
@@ -331,7 +331,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(Activity.initSublevel());
         }
     }
 

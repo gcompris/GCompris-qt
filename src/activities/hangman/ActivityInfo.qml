@@ -21,7 +21,7 @@ ActivityInfo {
   name: "hangman/Hangman.qml"
   difficulty: 3
   icon: "hangman/hangman.svg"
-  author: "Rajdeep kaur <rajdeep1994@gmail.com>"
+  author: "Rajdeep kaur &lt;rajdeep1994@gmail.com&gt;"
   demo: true
   title: qsTr("Hangman")
   description: qsTr("John wants to give a magical flower to marry that appears only if you guess the correct word. Help John by guess the word letter by letter")
