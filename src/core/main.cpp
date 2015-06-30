@@ -83,6 +83,18 @@ QString loadTranslation(QSettings &config, QTranslator &translator)
         loadAndroidTranslation(translator, ApplicationInfo::localeShort(locale));
 #else
 
+#if (defined(Q_OS_LINUX) || defined(Q_OS_UNIX))
+    // only useful for translators: load from /usr/share/... if exists as it is where kde scripts install translations
+    if(translator.load("gcompris_qt.qm", QString("/usr/share/locale/%1/LC_MESSAGES").arg(locale))) {
+        qDebug() << "load translation for locale " << locale << " in " <<
+            QString("/usr/share/locale/%1/LC_MESSAGES").arg(locale);
+    }
+    else if(translator.load("gcompris_qt.qm", QString("/usr/share/locale/%1/LC_MESSAGES").arg(locale.split('_')[0]))) {
+        qDebug() << "load translation for locale " << locale << " in " <<
+            QString("/usr/share/locale/%1/LC_MESSAGES").arg(locale.split('_')[0]);
+    }
+    else
+#endif
     if(!translator.load("gcompris_" + locale, QString("%1/%2/translations").arg(QCoreApplication::applicationDirPath(), GCOMPRIS_DATA_FOLDER))) {
         qDebug() << "Unable to load translation for locale " <<
                     locale << ", use en_US by default";
