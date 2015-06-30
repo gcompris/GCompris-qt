@@ -53,7 +53,7 @@ function init(items_, loadedItems_, filteredWordList_, mode_) {
         quizItems.imageFrame.visible = false
 
         for (var j = 0; j < filteredWordList.length ; j++) {
-            if(!quizItems.checkWordExistence (filteredWordList[j]) || items.repeatItem.visible == false) {
+            if(!items.checkWordExistence (filteredWordList[j]) || items.repeatItem.visible == false) {
                 filteredWordList.splice(j,1)
                 j--;
             }

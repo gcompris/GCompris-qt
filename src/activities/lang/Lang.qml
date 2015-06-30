@@ -90,10 +90,7 @@ ActivityBase {
             property alias locale: background.locale
 
             function checkWordExistence(wordForCheck) {
-                if(!activity.audioVoices.fileExists(ApplicationInfo.getAudioFilePath(wordForCheck.voice)))
-                    return false
-                else
-                    return true
+                return !activity.audioVoices.fileExists(ApplicationInfo.getAudioFilePath(wordForCheck.voice))
             }
 
             function playWord() {

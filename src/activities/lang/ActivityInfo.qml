@@ -21,7 +21,7 @@ ActivityInfo {
   name: "lang/Lang.qml"
   difficulty: 1
   icon: "lang/lang.svg"
-  author: "siddhesh suthar <siddhesh.it@gmail.com>"
+  author: "siddhesh suthar &lt;siddhesh.it@gmail.com&gt;"
   demo: false
   title: qsTr("Lang activity")
   description: qsTr("Complete language learning activities.")

@@ -45,6 +45,7 @@ Image {
 
     property var currentActiveGrid: menuGrid
     property bool keyboardMode: false
+    property string favtUrl: "qrc:/gcompris/src/activities/menu/resource/"
 
     Keys.onPressed: {
         if(event.key === Qt.Key_Space) {
@@ -158,6 +159,24 @@ Image {
                 particles.burst(50)
                 Activity.initLevel(index)
             }
+
+            property bool favorite: false
+
+            Image {
+                source: menu_screen.favtUrl + (favorite ? "all.svg" : "all_disabled.svg");
+                anchors {
+                    top: parent.top
+                    right: parent.right
+                    rightMargin: 4 * ApplicationInfo.ratio
+                }
+                sourceSize.width: iconWidth * 0.25
+                visible: ApplicationSettings.sectionVisible
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: favorite = !favorite
+                }
+            }
+
 
         } //delegate close
 

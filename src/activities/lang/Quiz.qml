@@ -57,19 +57,12 @@ Item {
         QuizActivity.init(items_, loadedItems_, wordList_, mode_);
     }
 
-    function checkWordExistence(wordForCheck) {
-        if(!activity.audioVoices.fileExists(ApplicationInfo.getAudioFilePath(wordForCheck.voice)))
-            return false
-        else
-            return true
-    }
-
     function playWord() {
         if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
             voiceError();
     }
 
-    onGoodWordChanged:  playWord()
+    onGoodWordChanged: playWord()
 
     Image {
         id: background

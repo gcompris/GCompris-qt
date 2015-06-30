@@ -109,7 +109,6 @@ function start() {
     for (var k =0; k<maxLevel; k++) {
         if(!(savedProgress[k] > 0))
             savedProgress[k] = 0
-//        savedProgress[k] = menus[k].savedProgress
 //        menus.push({'savedProgress': savedProgress[k] })
     }
 
@@ -129,7 +128,8 @@ function start() {
 
 function stop() {
 //    for (var k =0; k<maxLevel; k++) {
-//            menus[k].savedProgress =  savedProgress[k]
+//            items.savedData[k] =  savedProgress[k]
+//            console.log(items.savedData[k])
 //    }
 }
 
