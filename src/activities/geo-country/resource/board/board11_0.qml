@@ -22,6 +22,7 @@
 import QtQuick 2.0
 
 QtObject {
+   property int numberOfSubLevel: 3
    property string instruction: qsTr("Districts of Italy")
    property variant levels: [
       {
