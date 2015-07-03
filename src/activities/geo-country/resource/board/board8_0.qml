@@ -1,6 +1,6 @@
 /* GCompris
  *
- * Copyright (C) 2015 Bruno Coudoin
+ * Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
@@ -22,7 +22,7 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: "Districts of Canada"
+   property string instruction: qsTr("Districts of Canada")
    property variant levels: [
       {
          "pixmapfile" : "canada/background.png",

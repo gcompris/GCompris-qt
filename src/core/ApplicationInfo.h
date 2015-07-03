@@ -5,7 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
- * This file was originaly created from Digia example code under BSD licence
+ * This file was originally created from Digia example code under BSD license
  * and heavily modified since then.
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -251,9 +251,9 @@ protected slots:
      * the file is already absolute only the token replacement is applied.
 	 *
 	 * @param file A templated relative path to a language specific file. Any
-	 *             occurence of the '$LOCALE' placeholder will be replaced by
+	 *             occurrence of the '$LOCALE' placeholder will be replaced by
 	 *             the currently active locale string.
-     *             Any occurence of '$CA' placeholder will be replaced by
+     *             Any occurrence of '$CA' placeholder will be replaced by
      *             the current compressed audio format ('ogg' or 'aac).
      *             Example: 'voices-$CA/$LOCALE/misc/click_on_letter.$CA'
 	 * @returns An absolute path to the corresponding resource file.
@@ -261,7 +261,7 @@ protected slots:
     Q_INVOKABLE QString getAudioFilePath(const QString &file);
 
     /**
-     * Returns an absolute path to a langauge specific resource file.
+     * Returns an absolute path to a language specific resource file.
      *
      * Generalization of getAudioFilePath().
      * @sa getAudioFilePath

@@ -1,6 +1,6 @@
 /* GCompris - Babymatch.qml
  *
- * Copyright (C) 2015 Pulkit Gupta
+ * Copyright (C) 2015 Pulkit Gupta <pulkitgenius@gmail.com>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)

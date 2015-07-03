@@ -49,7 +49,7 @@ class ActivityInfo : public QObject
      * Section(s) this activity belongs to.
      *
      * An activity can belong to one or multiple activity sections
-     * (seperated by whitespace) out of:
+     * (separated by whitespace) out of:
      * computer, discovery, experiment, fun, math, puzzle,
      * reading, strategy.
      */
