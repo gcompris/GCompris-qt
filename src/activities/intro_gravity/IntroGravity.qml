@@ -106,15 +106,39 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onReloadClicked: Activity.initLevel()
-         }
+        }
 
         Bonus {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
 
-        Message {
+        IntroMessage {
             id: message
+            onIntroDone: {
+                items.timer.start()
+                items.asteroidCreation.start()
+                items.shuttleMotion.restart()
+            }
+            intro: [
+                qsTr("Gravity is universal and Newton's law of universal gravitation extends gravity"
+                     +" beyond earth. This force of gravitational attraction is directly dependent"
+                     +" upon the masses of both objects and inversely proportional to"
+                     +" the square of the distance that separates their centers."),
+                qsTr("Since the gravitational force is directly proportional to the mass of both interacting "
+                     +"objects, more massive objects will attract each other with a greater gravitational "
+                     +"force. So as the mass of either object increases, the force of gravitational "
+                     +"attraction between them also increases"),
+                qsTr("But this force is inversely proportional to the square of the separation distance "
+                     +"between the two interacting objects, more separation distance will "
+                     +"result in weaker gravitational forces."),
+                qsTr("Your goal is to let Tux's spaceship move by changing the mass "
+                     +"of its surrounding planets. Don't get too close to the planets "
+                     +"or you will crash on them. "
+                     +"The arrow indicates the direction of the force on your ship."),
+                qsTr("Avoid the asteroid and join the space "
+                     +"shuttle to win.")
+            ]
             z: 20
             anchors {
                 top: parent.top
