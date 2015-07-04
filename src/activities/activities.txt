@@ -87,8 +87,7 @@ mosaic
 numbers-odd-even
 penalty
 planegame
-readingh
-readingv
+programmingMaze
 redraw
 redraw_symmetrical
 reversecount
