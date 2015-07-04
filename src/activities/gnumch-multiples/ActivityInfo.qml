@@ -22,7 +22,7 @@ ActivityInfo {
   name: "gnumch-multiples/GnumchMultiples.qml"
   difficulty: 3
   icon: "gnumch-multiples/gnumch-multiples.svg"
-  author: "Manuel Tondeur <manueltondeur@gmail.com>"
+  author: "Manuel Tondeur &lt;manueltondeur@gmail.com&gt;"
   demo: true
   title: qsTr("Gnumch Multiples")
   description: qsTr("Guide the Number Muncher to all the multiples of the number at the top of the screen.")

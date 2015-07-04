@@ -1,6 +1,6 @@
 /* GCompris - Chronos.qml
  *
- * Copyright (C) 2015 Pulkit Gupta
+ * Copyright (C) 2015 Pulkit Gupta <pulkitgenius@gmail.com>
  *
  * Authors:
  *   José Jorge <jjorge@free.fr> (GTK+ version)

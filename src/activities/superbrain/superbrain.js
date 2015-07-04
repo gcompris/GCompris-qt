@@ -44,17 +44,18 @@ var numberOfColors = 0;
 var maxPieces = 5;
 var solution = new Array(maxPieces);
 var colors = [
-            "#C00000FF",
-            "#C000FF00",
-            "#C0FF0000",
-            "#C000FFFF",
-            "#C0FF00FF",
-            "#C0FFFF00",
-            "#C000007F",
-            "#C0007F00",
-            "#C07F0000",
-            "#C07F007F"
+            "#FF0000FF",
+            "#FF00FF00",
+            "#FFFF0000",
+            "#FF00FFFF",
+            "#FFFF00FF",
+            "#FFFFFF00",
+            "#FF8e7016",
+            "#FF04611a",
+            "#FFa0174b",
+            "#FF7F007F"
         ];
+var ackColors = new Array();
 var currentColors = new Array();
 var maxColors = colors.length;
 
@@ -87,6 +88,7 @@ function initLevel() {
     }
 
     // init sublevel
+    ackColors = new Array(numberOfPieces);
     items.score.numberOfSubLevels = maxSubLevel;
     items.score.currentSubLevel = currentSubLevel + 1;
     var selectedColors = new Array(maxColors);
@@ -106,12 +108,13 @@ function initLevel() {
     //console.log("XXX solution: " + JSON.stringify(solution));
     // populate currentColors:
     items.colorsRepeater.model.clear();
+    items.currentRepeater.model = new Array();
     currentColors = new Array();
     for (var i = 0; i < numberOfColors; ++i) {
         currentColors[i] = colors[i];
         items.colorsRepeater.model.append({"col": colors[i]});
     }
-    items.chooserRepeater.model = currentColors;
+    items.chooserGrid.model = currentColors;
     // add first guess row:
     items.guessModel.clear();
     appendGuessRow();
@@ -121,15 +124,31 @@ function appendGuessRow()
 {
     var guessRow = new Array();
     for (var i = 0; i < numberOfPieces; ++i) {
+        var col =
         guessRow.push({
-                          colIndex: 0,
-                          status: STATUS_UNKNOWN
+                          index: i,
+                          colIndex: (ackColors[i] === undefined) ? 0 : ackColors[i],
+                          status: STATUS_UNKNOWN,
+                          isAcked: (ackColors[i] !== undefined)
                       });
     }
     items.guessModel.insert(0, {
                                 guess: guessRow,
                                 result: {correct: 0, misplaced: 0}
                             });
+    var obj = items.guessModel.get(0);
+    items.currentRepeater.model = obj.guess;
+}
+
+function ackColor(column, colIndex)
+{
+    ackColors[column] = (ackColors[column] == colIndex) ?  undefined : colIndex;
+    for (var i = 0; i < items.guessModel.count; i++) {
+        var obj = items.guessModel.get(i).guess.get(column);
+        obj.isAcked = (ackColors[column] == obj.colIndex);
+    }
+    items.currentRepeater.model.get(column).colIndex = colIndex;
+    items.currentRepeater.model.get(column).isAcked = (ackColors[column] !== undefined);
 }
 
 function checkGuess()
@@ -153,7 +172,6 @@ function checkGuess()
     obj.result = ({ correct: correctCount });
     if (remainingIndeces.length == 0) {
         items.bonus.good("smiley");
-        return;
     }
 
     for (var i = 0; i < numberOfPieces; i++) {

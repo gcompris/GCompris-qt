@@ -21,7 +21,7 @@ ActivityInfo {
   name: "hanoi/Hanoi.qml"
   difficulty: 2
   icon: "hanoi/hanoi.svg"
-  author: "Johnny Jazeix <jazeix@gmail.com>"
+  author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   demo: true
   title: qsTr("Simplified Tower of Hanoi")
   description: qsTr("Reproduce the given tower")

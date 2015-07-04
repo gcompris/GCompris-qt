@@ -1,10 +1,10 @@
-/*GCompris-Qt Message.qml
-*
-* Copyright (C) 2015 Siddhesh suthar <siddhesh.it@gmail.com>
+/*GCompris-Qt IntroMessage.qml
+*   Copyright (C) 2015 Siddhesh suthar <siddhesh.it@gmail.com>
 *
 * Authors:
-*   Bruno Coudoin <bruno.coudoin@gcompris.net> and Matilda Bernard (GTK+ version)
-*   Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
+*
+*   Siddhesh suthar <siddhesh.it@gmail.com>
+*   Sagar Chand Agarwal <atomsagar@gmail.com>
 *
 *   This program is free software; you can redistribute it and/or modify
 *   it under the terms of the GNU General Public License as published by
@@ -21,48 +21,47 @@
 */
 
 import QtQuick 2.1
-import "../../core"
 import GCompris 1.0
-import "intro_gravity.js" as Activity
 
-Item{
-    id: message    
-    opacity: displayed ? 1 : 0
+/**
+ * A QML component for multi activity introduction in GCompris.
+ * The signal emitted named as introDone helps in the occurence
+ * of events to be followed in the start of the activity.
+ * @ingroup components
+ *
+ * Contains the following basic layout elements: Introduction (intro_text), a skip
+ * button (skipButton) and Iterate(or Go) button (button) .
+ *
+ */
 
-    property bool displayed: index == 0 ? false : true
+Item {
+    id: message
 
-    // The message in the intro array, set to 0 to disable
+    visible: index == 0 ? false : true
+
+    /**
+     * Emitted when the index of intro is equal to its length
+     * or when skipButton is clicked .
+     */
+    signal introDone
+
+    /**
+     * The index of the intro array, set to 0 to hide the IntroMessage item .
+     */
     property int index: 1
 
-    property variant intro: [
-        "",
-        qsTr("Gravity is universal and Newton's law of universal gravitation extends gravity"
-             +" beyond earth. This force of gravitational attraction is directly dependent"
-             +" upon the masses of both objects and inversely proportional to"
-             +" the square of the distance that separates their centers."),
-        qsTr("Since the gravitational force is directly proportional to the mass of both interacting "
-             +"objects, more massive objects will attract each other with a greater gravitational "
-             +"force. So as the mass of either object increases, the force of gravitational "
-             +"attraction between them also increases"),
-        qsTr("But this force is inversely proportional to the square of the separation distance "
-             +"between the two interacting objects, more separation distance will "
-             +"result in weaker gravitational forces."),
-        qsTr("Your goal is to let Tux's spaceship move by changing the mass "
-             +"of its surrounding planets. Don't get too close to the planets "
-             +"or you will crash on them. "
-             +"The arrow indicates the direction of the force on your ship."),
-        qsTr("Avoid the asteroid and join the space "
-             +"shuttle to win.")
-        ]
-
-    Behavior on opacity { NumberAnimation {duration: 100 } }
+    /**
+     * intro is the texts array used as introduction .
+     * It has to be filled by the user when defining an IntroMessage item .
+     */
+    property variant intro;
 
     Rectangle {
         id: intro_textbg
-        x: intro_text.x -4
-        y: intro_text.y -4
-        width: intro_text.width +4
-        height: intro_text.height +4
+        x: intro_text.x - 4
+        y: intro_text.y - 4
+        width: intro_text.width + 4
+        height: intro_text.height + 4
         color: "#d8ffffff"
         border.color: "#2a2a2a"
         border.width: 2
@@ -76,7 +75,7 @@ Item{
         horizontalAlignment: Text.AlignHCenter
         anchors {
             top: parent.top
-            topMargin: 10 *ApplicationInfo.ratio
+            topMargin: 10 * ApplicationInfo.ratio
             right: parent.right
             rightMargin: 5 * ApplicationInfo.ratio
             left: parent.left
@@ -87,7 +86,9 @@ Item{
         text: parent.intro[parent.index]
     }
 
-    Rectangle { // our inlined button ui
+    /* Inlined Button User Interface for Next(or Let's Go) . */
+
+    Rectangle {
         id: button
         width: Math.max(skipText.width, nextText.width) * 1.2
         height: Math.max(skipText.height, nextText.height) * 1.4
@@ -105,23 +106,28 @@ Item{
         GCText {
             id: nextText
             anchors.centerIn: parent
-            text: index != 4 ? qsTr("Next") : qsTr("Let's Go")
+            text: index != (intro.length - 1)? qsTr("Next") : qsTr("Let's Go")
         }
 
         MouseArea {
-            anchors.fill: parent
+            id: button_area
+            anchors.fill: button
             onClicked: {
-                if(index++ == 4) {
+                if( index <= (intro.length - 2) )
+                {
+                    index++
+                }
+                else {
                     index = 0
-                    items.timer.start()
-                    items.asteroidCreation.start()
-                    items.shuttleMotion.restart()
+                    message.introDone()
                 }
             }
         }
     }
 
-    Rectangle { // our inlined button ui
+    /* Inlined Button User Interface for Skip . */
+
+    Rectangle {
         id: skipButton
         width: button.width
         height: button.height
@@ -142,13 +148,14 @@ Item{
         }
 
         MouseArea {
+            id: skipButton_area
             anchors.fill: parent
             onClicked: {
                 message.index = 0
-                items.timer.start()
-                items.asteroidCreation.start()
-                items.shuttleMotion.restart()
+                message.introDone()
             }
         }
     }
+
 }
+

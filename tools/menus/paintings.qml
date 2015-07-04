@@ -21,7 +21,7 @@ ActivityInfo {
   name: "paintings/Paintings.qml"
   difficulty: 1
   icon: "paintings/shapegame.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Assemble the puzzle")
   description: qsTr("Drag and Drop the items to rebuild the original paintings")

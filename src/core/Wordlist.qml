@@ -150,8 +150,11 @@ Item {
      * @returns type:int Number of sublevels.
      */
     function getMaxSubLevel(level) {
-        if (level > maxLevel)
+        if (level > maxLevel || level === 0) {
+            console.log("ERROR: Wordlist.getMaxSubLevel out of range, requested level", level,
+                        "out of expected range", 1, "-", maxLevel)
             return null;
+        }
         return wordList.levels[level - 1].sublevels !== undefined ?
                     wordList.levels[level - 1].sublevels : 0;
     }

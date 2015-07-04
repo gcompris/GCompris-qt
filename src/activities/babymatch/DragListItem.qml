@@ -19,7 +19,6 @@
 */
 
 import QtQuick 2.1
-import QtQuick.Controls 1.1
 import QtGraphicalEffects 1.0
 import GCompris 1.0
 import "babymatch.js" as Activity
@@ -35,10 +34,14 @@ Item {
     property double tileWidth
     property double tileHeight
     property string imageName: imgName
+    property string imageSound: imgSound
     property alias tileImageGlow: tileImageGlow
     property QtObject answer: tileImage.parent
     property bool isInList: tileImage.parent == tile
-    
+    property bool selected: false
+
+    signal pressed
+
     ParallelAnimation {
         id: tileImageAnimation
         NumberAnimation { 
@@ -86,9 +89,9 @@ Item {
         id: tile
         width: tileWidth
         height: tileHeight
-        color: "transparent"
-        border.color: "transparent"
-        border.width: 2
+        color: (parent.selected && tileImage.parent == tile) ? "#33FF294D" : "transparent"
+        border.color: (parent.selected && tileImage.parent == tile) ? "white" : "transparent"
+        border.width: 3
         radius: 2
         
         property double xCenter: tile.x + tile.width/2
@@ -112,7 +115,7 @@ Item {
             
             function imageRemove() {
                 if(backgroundImage.source == "")
-                    leftContainer.z = 1
+                    leftWidget.z = 1
                 
                 tileImage.state = "INITIAL"
                 var coord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.width/2, 
@@ -140,31 +143,28 @@ Item {
                 hoverEnabled: true
 
                 onEntered: {
-                    if(tile.colorChange) {
-                        tile.color = "#FF294D"
-                        tile.border.color = "white"
-                    }
+                    item.pressed()
                     if(toolTipText != "") {
                         toolTip.text = toolTipText
                         toolTip.visible = true
                     }
                 }
                 onExited: {
-                    if(!pressed) {
-                        tile.color = "transparent"
-                        tile.border.color = "transparent"
-                        toolTip.visible = false
-                    }
                 }
 
                 onPressed: {
+                    item.pressed()
+                    if(toolTipText != "") {
+                        toolTip.text = toolTipText
+                        toolTip.visible = true
+                    }
                     if(tileImage.parent == tile)
-                        leftContainer.z = 3
+                        leftWidget.z = 3
                     else
-                        leftContainer.z = 1
+                        leftWidget.z = 1
                     
-                    //activity.audioEffects.stop()
-                    //activity.audioEffects.play(pressSound)
+                    if(imageSound)
+                        activity.audioVoices.play(ApplicationInfo.getAudioFilePath(imageSound))
                     
                     tileImage.anchors.centerIn = undefined
                     if (tileImage.dragTarget != null) {
@@ -174,12 +174,6 @@ Item {
                 }
 
                 onReleased: {
-                    tile.color = "transparent"
-                    tile.border.color = "transparent"
-                    
-                    //activity.audioEffects.stop()
-                    //activity.audioEffects.play("qrc:/gcompris/src/activities/babymatch/resource/sound/drop.wav")
-                    
                     if(tileImage.Drag.target === null)
                         tileImage.imageRemove()
                     else {

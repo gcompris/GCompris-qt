@@ -1,6 +1,6 @@
 /* GCompris
  *
- * Copyright (C) 2015 Bruno Coudoin
+ * Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
@@ -22,6 +22,7 @@
 import QtQuick 2.0
 
 QtObject {
+   property int numberOfSubLevel: 2
    property string instruction: qsTr("Districts of Turkey")
    property variant levels: [
       {

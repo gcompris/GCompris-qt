@@ -21,7 +21,7 @@ ActivityInfo {
   name: "anim/Anim.qml"
   difficulty: 3
   icon: "anim/anim.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Create a drawing or an animation")
   description: qsTr("Free drawing and animation tool.")

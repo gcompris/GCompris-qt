@@ -21,7 +21,7 @@ ActivityInfo {
   name: "electric/Electric.qml"
   difficulty: 5
   icon: "electric/electric.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Electricity")
   description: qsTr("Create and simulate an electric schema")

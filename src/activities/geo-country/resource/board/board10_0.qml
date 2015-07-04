@@ -1,6 +1,6 @@
 /* GCompris
  *
- * Copyright (C) 2015 Bruno Coudoin
+ * Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
@@ -22,6 +22,7 @@
 import QtQuick 2.0
 
 QtObject {
+   property int numberOfSubLevel: 1
    property string instruction: qsTr("United States of America")
    property variant levels: [
       {
@@ -222,6 +223,7 @@ QtObject {
       },
       {
          "pixmapfile" : "usa/georgia.png",
+         //: Translators: Strip USA| and translate only Georgia
          "toolTipText" : "USA|Georgia",
          "x" : "0.75",
          "y" : "0.673"

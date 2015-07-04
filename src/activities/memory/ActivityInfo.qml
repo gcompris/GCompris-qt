@@ -21,7 +21,7 @@ ActivityInfo {
   name: "memory/Memory.qml"
   difficulty: 1
   icon: "memory/memory.svg"
-  author: "JB BUTET <ashashiwa@gmail.com>"
+  author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
   demo: true
   title: qsTr("Memory Game with images")
   description: qsTr("Flip the cards to find the matching pairs")

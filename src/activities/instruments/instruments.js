@@ -75,7 +75,7 @@ var colors =
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/flute_traversiere.svg",
-                "text": qsTr("Find the flute traversiere"),
+                "text": qsTr("Find the transverse flute"),
                 "audio": ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/instruments/resource/flute_traversiere.$CA")
             },
             {
@@ -117,7 +117,7 @@ var colors =
             },
             {
                 "image": "qrc:/gcompris/src/activities/instruments/resource/flute_traversiere.svg",
-                "text": qsTr("Find the flute traversiere"),
+                "text": qsTr("Find the transverse flute"),
                 "audio": ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/instruments/resource/flute_traversiere.$CA")
             },
             {

@@ -22,7 +22,7 @@ ActivityInfo
   name: "missing-letter/MissingLetter.qml"
   difficulty: 2
   icon: "missing-letter/missing-letter.svg"
-  author: "Amit Tomar <a.tomar@outlook.com>"
+  author: "Amit Tomar &lt;a.tomar@outlook.com&gt;"
   demo: true
   title: qsTr("Missing Letter")
   description: ""

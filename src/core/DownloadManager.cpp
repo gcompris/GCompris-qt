@@ -132,7 +132,7 @@ inline QString DownloadManager::getAbsoluteResourcePath(const QString& path) con
     return QString();
 }
 
-// @FIXME should support a variable subpath lenght like data2/full.rcc"
+// @FIXME should support a variable subpath length like data2/full.rcc"
 inline QString DownloadManager::getRelativeResourcePath(const QString& path) const
 {
     QStringList parts = path.split('/', QString::SkipEmptyParts);
@@ -348,7 +348,7 @@ inline QStringList DownloadManager::getSystemResourcePaths() const
     });
 
     // Append standard application directories (like /usr/share/applications/)
-    foreach(QString path, QStandardPaths::standardLocations(QStandardPaths::ApplicationsLocation)) {
+    foreach(const QString &path, QStandardPaths::standardLocations(QStandardPaths::ApplicationsLocation)) {
         results.append(path + '/' + GCOMPRIS_APPLICATION_NAME);
     }
 

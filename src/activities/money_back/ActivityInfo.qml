@@ -21,7 +21,7 @@ ActivityInfo {
   name: "money_back/MoneyBack.qml"
   difficulty: 3
   icon: "money_back/money_back.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Give Tux his change")
   description: qsTr("Practice money usage by giving Tux his change")

@@ -337,6 +337,8 @@ ActivityBase {
                         progress = progressLeft
                     } else if (mouse.button == Qt.RightButton) {
                         progress = progressRight
+                    } else if (mouse.button == Qt.MidButton) {
+                        progress = progressTop
                     }
 
                     if(progress.ratio > 0) {
@@ -375,7 +377,14 @@ ActivityBase {
         Timer {
             id: timerBonus
             interval: 1500
-            onTriggered: ball.state == "FAIL" ? bonus.bad("tux") : bonus.good("tux")
+            onTriggered: {
+                if (ball.state == "FAIL" || ball.state == "INITIAL") {
+                    bonus.bad("tux")
+                    ball.state = "FAIL"
+                } else {
+                    bonus.good("tux")
+                }
+            }
         }
 
         DialogHelp {

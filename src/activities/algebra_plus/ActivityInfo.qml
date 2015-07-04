@@ -21,7 +21,7 @@ ActivityInfo {
   name: "algebra_plus/AlgebraPlus.qml"
   difficulty: 3
   icon: "algebra_plus/algebra_plus.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Addition of numbers")
   description: qsTr("Practice the addition of numbers")

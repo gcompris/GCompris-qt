@@ -21,7 +21,7 @@ ActivityInfo {
     name: "alphabet-sequence/AlphabetSequence.qml"
     difficulty: 2
     icon: "alphabet-sequence/alphabet-sequence.svg"
-    author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+    author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
     demo: false
     title: qsTr("Alphabet sequence")
     description: qsTr("Move the helicopter to catch the clouds following the order of the alphabet")

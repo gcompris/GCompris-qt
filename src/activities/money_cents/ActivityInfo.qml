@@ -21,7 +21,7 @@ ActivityInfo {
   name: "money_cents/MoneyCents.qml"
   difficulty: 5
   icon: "money_cents/money_cents.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Money with cents")
   description: qsTr("Practice money usage including cents")

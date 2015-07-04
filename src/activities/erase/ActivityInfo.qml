@@ -21,7 +21,7 @@ ActivityInfo {
   name: "erase/Erase.qml"
   difficulty: 1
   icon: "erase/erase.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Move the mouse or touch the screen")
   description: qsTr("Move the mouse or touch the screen to erase the area and discover the background")

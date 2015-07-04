@@ -1,6 +1,6 @@
 /* GCompris
  *
- * Copyright (C) 2015 Bruno Coudoin
+ * Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
@@ -30,120 +30,140 @@ QtObject {
       },
       {
          "pixmapfile": "africa/zimbabwe.png",
+         "sound": "voices-$CA/$LOCALE/geography/zimbabwe.$CA",
          "toolTipText": qsTr("Zimbabwe"),
          "x": "0.515",
          "y": "0.554"
       },
       {
          "pixmapfile": "africa/zambia.png",
+         "sound": "voices-$CA/$LOCALE/geography/zambia.$CA",
          "toolTipText": qsTr("Zambia"),
          "x": "0.5",
          "y": "0.426"
       },
       {
          "pixmapfile": "africa/uganda.png",
+         "sound": "voices-$CA/$LOCALE/geography/uganda.$CA",
          "toolTipText": qsTr("Uganda"),
          "x": "0.599",
          "y": "0.105"
       },
       {
          "pixmapfile": "africa/tanzania.png",
+         "sound": "voices-$CA/$LOCALE/geography/tanzania.$CA",
          "toolTipText": qsTr("Tanzania"),
          "x": "0.658",
          "y": "0.279"
       },
       {
          "pixmapfile": "africa/swaziland.png",
+         "sound": "voices-$CA/$LOCALE/geography/swaziland.$CA",
          "toolTipText": qsTr("Swaziland"),
          "x": "0.559",
          "y": "0.717"
       },
       {
          "pixmapfile": "africa/south_africa.png",
+         "sound": "voices-$CA/$LOCALE/geography/south_africa.$CA",
          "toolTipText": qsTr("South Africa"),
          "x": "0.436",
          "y": "0.757"
       },
       {
          "pixmapfile": "africa/rwanda.png",
+         "sound": "voices-$CA/$LOCALE/geography/rwanda.$CA",
          "toolTipText": qsTr("Rwanda"),
          "x": "0.555",
          "y": "0.188"
       },
       {
          "pixmapfile": "africa/republic_of_congo.png",
+         "sound": "voices-$CA/$LOCALE/geography/republic_of_congo.$CA",
          "toolTipText": qsTr("Republic of Congo"),
          "x": "0.228",
          "y": "0.143"
       },
       {
          "pixmapfile": "africa/namibia.png",
+         "sound": "voices-$CA/$LOCALE/geography/namibia.$CA",
          "toolTipText": qsTr("Namibia"),
          "x": "0.298",
          "y": "0.632"
       },
       {
          "pixmapfile": "africa/mozambique.png",
+         "sound": "voices-$CA/$LOCALE/geography/mozambique.$CA",
          "toolTipText": qsTr("Mozambique"),
          "x": "0.66",
          "y": "0.551"
       },
       {
          "pixmapfile": "africa/malawi.png",
+         "sound": "voices-$CA/$LOCALE/geography/malawi.$CA",
          "toolTipText": qsTr("Malawi"),
          "x": "0.636",
          "y": "0.435"
       },
       {
          "pixmapfile": "africa/madagascar.png",
+         "sound": "voices-$CA/$LOCALE/geography/madagascar.$CA",
          "toolTipText": qsTr("Madagascar"),
          "x": "0.886",
          "y": "0.56"
       },
       {
          "pixmapfile": "africa/lesotho.png",
+         "sound": "voices-$CA/$LOCALE/geography/lesotho.$CA",
          "toolTipText": qsTr("Lesotho"),
          "x": "0.509",
          "y": "0.779"
       },
       {
          "pixmapfile": "africa/kenya.png",
+         "sound": "voices-$CA/$LOCALE/geography/kenya.$CA",
          "toolTipText": qsTr("Kenya"),
          "x": "0.721",
          "y": "0.127"
       },
       {
          "pixmapfile": "africa/gabon.png",
+         "sound": "voices-$CA/$LOCALE/geography/gabon.$CA",
          "toolTipText": qsTr("Gabon"),
          "x": "0.162",
          "y": "0.161"
       },
       {
          "pixmapfile": "africa/equatorial_guinea.png",
+         "sound": "voices-$CA/$LOCALE/geography/equatorial_guinea.$CA",
          "toolTipText": qsTr("Equatorial Guinea"),
          "x": "0.134",
          "y": "0.103"
       },
       {
          "pixmapfile": "africa/democratic_republic_of_congo.png",
+         "sound": "voices-$CA/$LOCALE/geography/democratic_republic_of_congo.$CA",
          "toolTipText": qsTr("Democratic Republic of Congo"),
          "x": "0.377",
          "y": "0.223"
       },
       {
          "pixmapfile": "africa/burundi.png",
+         "sound": "voices-$CA/$LOCALE/geography/burundi.$CA",
          "toolTipText": qsTr("Burundi"),
          "x": "0.553",
          "y": "0.225"
       },
       {
          "pixmapfile": "africa/botswana.png",
+         "sound": "voices-$CA/$LOCALE/geography/botswana.$CA",
          "toolTipText": qsTr("Botswana"),
          "x": "0.43",
          "y": "0.627"
       },
       {
          "pixmapfile": "africa/angola.png",
+         "sound": "voices-$CA/$LOCALE/geography/angola.$CA",
          "toolTipText": qsTr("Angola"),
          "x": "0.296",
          "y": "0.388"

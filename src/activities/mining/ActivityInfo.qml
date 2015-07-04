@@ -21,7 +21,7 @@ ActivityInfo {
   name: "mining/Mining.qml"
   difficulty: 1
   icon: "mining/mining.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Mining for gold")
   description: qsTr("Use the mousewheel to approach the rockwall and look for gold nuggets.")

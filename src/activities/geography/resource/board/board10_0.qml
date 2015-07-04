@@ -1,6 +1,6 @@
 /* GCompris
  *
- * Copyright (C) 2015 Bruno Coudoin
+ * Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
@@ -204,6 +204,7 @@ QtObject {
       },
       {
          "pixmapfile": "asia/georgia.png",
+         //: Translators: Strip Asia| and translate only Georgia
          "toolTipText": qsTr("Asia|Georgia"),
          "x": "0.133",
          "y": "0.389"

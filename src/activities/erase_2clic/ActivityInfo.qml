@@ -21,7 +21,7 @@ ActivityInfo {
   name: "erase_2clic/Erase2clic.qml"
   difficulty: 2
   icon: "erase_2clic/erase_2clic.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Double tap or double click")
   description: qsTr("Double tap or double click to erase the area and discover the background image")

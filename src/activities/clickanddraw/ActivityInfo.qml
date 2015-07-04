@@ -21,7 +21,7 @@ ActivityInfo {
   name: "clickanddraw/Clickanddraw.qml"
   difficulty: 1
   icon: "clickanddraw/clickanddraw.svg"
-  author: "Emmanuel Charruau <echarruau@gmail.com>"
+  author: "Emmanuel Charruau &lt;echarruau@gmail.com&gt;"
   demo: true
   title: qsTr("Click and draw")
   description: qsTr("Draw the picture by clicking on the selected points.")

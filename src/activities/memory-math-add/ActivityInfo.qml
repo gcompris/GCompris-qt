@@ -21,7 +21,7 @@ ActivityInfo {
   name: "memory-math-add/MemoryMathAdd.qml"
   difficulty: 3
   icon: "memory-math-add/memory-math-add.svg"
-  author: "JB BUTET <ashashiwa@gmail.com>"
+  author: "JB BUTET &lt;ashashiwa@gmail.com&gt;"
   demo: true
   title: qsTr("Addition memory game")
   description: qsTr("Turn the cards over to find two numbers which add up the same, until all the cards are gone.")

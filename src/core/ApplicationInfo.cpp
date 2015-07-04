@@ -5,7 +5,7 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
- * This file was originaly created from Digia example code under BSD licence
+ * This file was originally created from Digia example code under BSD license
  * and heavily modified since then.
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -132,7 +132,7 @@ QString ApplicationInfo::getAudioFilePath(const QString &file)
     filename.replace("$LOCALE", localeName);
     filename.replace("$CA", COMPRESSED_AUDIO);
 
-    if(file.startsWith("/") || file.startsWith("qrc:") || file.startsWith(":"))
+    if(file.startsWith('/') || file.startsWith(QLatin1String("qrc:")) || file.startsWith(':'))
         return filename;
     else
         return getResourceDataPath() + '/' + filename;

@@ -21,7 +21,7 @@ ActivityInfo {
     name: "leftright/Leftright.qml"
     difficulty: 2
     icon: "leftright/leftright.svg"
-    author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+    author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
     demo: false
     title: qsTr("Find your left and right hands")
     description: qsTr("Determine if a hand is a right or a left hand")

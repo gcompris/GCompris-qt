@@ -46,7 +46,6 @@ guessnumber
 hanoi
 hanoi_real
 hexagon
-simplepaint
 imageid
 imagename
 instruments
@@ -95,6 +94,7 @@ reversecount
 scalesboard
 scalesboard_weight
 scalesboard_weight_avoirdupois
+simplepaint
 smallnumbers
 smallnumbers2
 sudoku

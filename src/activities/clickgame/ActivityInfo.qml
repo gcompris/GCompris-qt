@@ -21,7 +21,7 @@ ActivityInfo {
   name: "clickgame/Clickgame.qml"
   difficulty: 1
   icon: "clickgame/clickgame.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Click On Me")
   description: qsTr("Catch all the swimming fish before they leave the fish tank")
