@@ -25,12 +25,12 @@ import GCompris 1.0
 
 /**
  * A QML component for multi activity introduction in GCompris.
- * The signal emitted named as introDone helps in the occurence
+ * The signal emitted named as introDone helps in the occurrence
  * of events to be followed in the start of the activity.
  * @ingroup components
  *
  * Contains the following basic layout elements: Introduction (intro_text), a skip
- * button (skipButton) and Iterate(or Go) button (button) .
+ * button (skipButton) and Iterate (or Go) button (button).
  *
  */
 
@@ -41,18 +41,18 @@ Item {
 
     /**
      * Emitted when the index of intro is equal to its length
-     * or when skipButton is clicked .
+     * or when skipButton is clicked.
      */
     signal introDone
 
     /**
-     * The index of the intro array, set to 0 to hide the IntroMessage item .
+     * The index of the intro array, set to 0 to hide the IntroMessage item.
      */
     property int index: 1
 
     /**
      * intro is the texts array used as introduction .
-     * It has to be filled by the user when defining an IntroMessage item .
+     * It has to be filled by the user when defining an IntroMessage item.
      */
     property variant intro;
 
@@ -86,7 +86,7 @@ Item {
         text: parent.intro[parent.index]
     }
 
-    /* Inlined Button User Interface for Next(or Let's Go) . */
+    /* Inlined Button User Interface for Next (or Let's go). */
 
     Rectangle {
         id: button
@@ -106,14 +106,14 @@ Item {
         GCText {
             id: nextText
             anchors.centerIn: parent
-            text: index != (intro.length - 1)? qsTr("Next") : qsTr("Let's Go")
+            text: index != (intro.length - 1) ? qsTr("Next") : qsTr("Let's go")
         }
 
         MouseArea {
             id: button_area
             anchors.fill: button
             onClicked: {
-                if( index <= (intro.length - 2) )
+                if(index <= (intro.length - 2))
                 {
                     index++
                 }
@@ -131,7 +131,7 @@ Item {
         id: skipButton
         width: button.width
         height: button.height
-        x: intro_textbg.x + (intro_textbg.width/2) -20- skipButton.width
+        x: intro_textbg.x + (intro_textbg.width/2) - 20 - skipButton.width
         y: intro_textbg.y + intro_textbg.height - skipButton.height - 5
         color: "#d8ffffff"
         border.color: "#2a2a2a"
