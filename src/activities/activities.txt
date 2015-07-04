@@ -119,8 +119,7 @@ paintings
 penalty
 photo_hunter
 planegame
-readingh
-readingv
+programmingMaze
 redraw
 redraw_symmetrical
 renewable_energy
