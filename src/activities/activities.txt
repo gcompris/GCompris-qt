@@ -126,6 +126,7 @@ photo_hunter
 planegame
 play_piano
 play_rhythm
+programmingMaze
 railroad
 readingh
 readingv
