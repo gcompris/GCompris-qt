@@ -45,6 +45,9 @@ var currentX
 var currentY
 var nextX
 var nextY
+var changedX
+var changedY
+var changedRotation
 
 function start(items_) {
     items = items_
@@ -71,6 +74,7 @@ function initLevel() {
     items.fish.x = mazeBlocks[currentLevel][countOfMazeBlocks -1][0] * stepX
     items.fish.y = mazeBlocks[currentLevel][countOfMazeBlocks -1][1] * stepY
     tuxIceBlockNumber = 0
+    changedRotation = -90
 
     items.player.init()
 }
@@ -79,8 +83,8 @@ function runCode() {
 
     //initiallize back to starting position and code
     playerCode = []
-    items.player.x = initialX
-    items.player.y = initialY
+//    items.player.x = initialX
+//    items.player.y = initialY
 
     for(var i = 0; i < items.answerModel.count; i++) {
         playerCode.push(items.answerModel.get([i]).name)
@@ -88,11 +92,18 @@ function runCode() {
 
     for( var j = 0; j < playerCode.length; j++) {
         currentInstruction = playerCode[j]
-//        console.log(j +"th" +" tuxIceBlockNumber "+tuxIceBlockNumber +
-//                    " x: " +items.player.x +" y: "+items.player.y)
 
-        currentBlock = tuxIceBlockNumber % mazeBlocks[currentLevel].length
-        nextBlock = (tuxIceBlockNumber + 1) % mazeBlocks[currentLevel].length
+        changedX = items.player.x
+        changedY = items.player.y
+        changedRotation = items.player.rotation
+
+        if(tuxIceBlockNumber > mazeBlocks[currentLevel].length) {
+            console.log("can't solve, breaking out of loop")
+            break;
+        }
+
+        currentBlock = tuxIceBlockNumber
+        nextBlock = tuxIceBlockNumber + 1
         currentX = mazeBlocks[currentLevel][currentBlock][0]
         currentY = mazeBlocks[currentLevel][currentBlock][1]
         nextX = mazeBlocks[currentLevel][nextBlock][0]
@@ -101,44 +112,48 @@ function runCode() {
         if ( currentInstruction == "Move Forward") {
 
             if (nextX - currentX > 0) {
-                items.player.x = mazeBlocks[currentLevel][currentBlock][0] *
-                        stepX +
-                        stepX
+                changedX = currentX * stepX + stepX
+//                console.log("have to go left "+items.player.x + "changed X "+ changedY)
             }
             else if(nextX - currentX < 0){
-                items.player.x = mazeBlocks[currentLevel][currentBlock][0] *
-                        stepX -
-                        stepX
+                changedX = currentX * stepX - stepX
+//                console.log("have to go right "+items.player.x + "changed X "+ changedY)
             }
 
-            if (nextY - currentY < 0) {
-                items.player.y = mazeBlocks[currentLevel][currentBlock][1] *
-                        stepY +
-                        stepY
+            else if (nextY - currentY < 0) {
+                changedY = currentY * stepY - stepY
+//                console.log("have to go up "+items.player.y + "changed Y "+ changedY)
             }
             else if (nextY - currentY > 0 ) {
-                items.player.y = mazeBlocks[currentLevel][currentBlock][1] *
-                        stepY -
-                        stepY
+                changedY = currentY * stepY + stepY
+//                console.log("have to go down "+items.player.y + "changed Y "+changedY)
             }
+            else {
+                // add an animation to indicate that its not possible
+//                console.log("dead end")
+            }
+
             ++tuxIceBlockNumber;
         }
 
         if ( currentInstruction == "Turn Left") {
-            items.player.rotation -= 90
+              changedRotation = -90
+              items.player.rotation = items.player.rotation + changedRotation
+//            items.player.rotation -= 90
         }
         if ( currentInstruction == "Turn Right") {
-            items.player.rotation += 90
+                changedRotation = +90
+                items.player.rotation = items.player.rotation + changedRotation
         }
 
-        if(items.player.x == items.fish.x && items.player.y == items.fish.y){
+//        console.log("changed rotation "+changedRotation)
+        items.player.x = changedX
+        items.player.y = changedY
+
+        if(changedX === items.fish.x && changedY === items.fish.y){
             items.bonus.good("smiley")
         }
     }
-
-
-
-
 
 }
 
@@ -154,5 +169,15 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
+}
+
+function repositionObjectsOnWidthChanged(factor) {
+    if(items)
+        initLevel()
+}
+
+function repositionObjectsOnHeightChanged(factor) {
+    if(items)
+        initLevel()
 }
 

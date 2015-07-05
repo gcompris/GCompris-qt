@@ -19,8 +19,10 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.2
-import "../../core"
 import GCompris 1.0
+import "../../core"
+import "qrc:/gcompris/src/core/core.js" as Core
+
 import "programmingMaze.js" as Activity
 
 import QtQuick.Controls 1.0
@@ -32,6 +34,22 @@ ActivityBase {
 
     onStart: focus = true
     onStop: {}
+
+    property int oldWidth: width
+    onWidthChanged: {
+        // Reposition planets and asteroids, same for height
+        Activity.repositionObjectsOnWidthChanged(width / oldWidth)
+        oldWidth = width
+    }
+
+    property int oldHeight: height
+    onHeightChanged: {
+        // Reposition planets and asteroids, same for height
+        Activity.repositionObjectsOnHeightChanged(height / oldHeight)
+        oldHeight = height
+    }
+
+
 
     pageComponent: Rectangle {
         id: background
@@ -136,7 +154,7 @@ ActivityBase {
             source: "qrc:/gcompris/src/activities/maze/resource/" + "tux_top_south.svg"
             sourceSize.width: background.width / 10
             x: 0; y: 0; z: 11
-            property int duration: 1000
+            property int duration: 2000
 
             signal init
 
@@ -152,13 +170,13 @@ ActivityBase {
                     duration: player.duration
                 }
             }
-            Behavior on y {
-                SmoothedAnimation {
+//            Behavior on y {
+//                SmoothedAnimation {
 //                    reversingMode: SmoothedAnimation.Immediate
 //                    onRunningChanged: Activity.playerRunningChanged()
-                    duration: player.duration
-                }
-            }
+//                    duration: player.duration
+//                }
+//            }
             Behavior on rotation {
                 RotationAnimation {
                     duration: player.duration / 2
@@ -173,9 +191,6 @@ ActivityBase {
             source: Activity.reverseCountUrl + "blue-fish.svg"
             sourceSize.width: background.width / 10
 //            anchors.leftMargin: 20 * ApplicationInfo.ratio
-
-            width: background.width / 10
-            height: (background.height - background.height/10) / 10
             x: 0; y: 0; z: 5
         }
 
@@ -375,7 +390,6 @@ ActivityBase {
                     hoverEnabled: true
                     onEntered: runCode.scale = 1.1
                     onClicked: {
-                        console.log(answerModel)
                         Activity.runCode()
                     }
                     onExited: runCode.scale = 1
@@ -458,13 +472,14 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | reload }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onReloadClicked: Activity.initLevel()
         }
 
         Bonus {
