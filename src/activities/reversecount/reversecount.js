@@ -43,7 +43,6 @@ var tuxIceBlockNumber = 0
 var tuxIceBlockNumberGoal = 0
 var tuxIsMoving = false;
 var debuginttmp = 0
-var clockPos
 var placeFishToReachBool = false
 
 var level = null;
@@ -143,8 +142,7 @@ function initLevel() {
     numberOfFish = levels[currentLevel].numberOfFish
 
     fishIndex = 0
-    clockPos = 4
-    setClock()
+    items.clockPosition = 4
     tuxIceBlockNumber = 0
     items.tux.init()
 
@@ -159,9 +157,8 @@ function moveTux() {
 
     if (tuxIceBlockNumberGoal > fishIndex)
     {
-        clockPos--
-        setClock()
-        if (clockPos === 0) {
+        items.clockPosition--
+        if (items.clockPosition === 0) {
             lost()
             initLevel()
             return
@@ -198,8 +195,7 @@ function moveTuxToNextIceBlock() {
         if (--numberOfFish == 0) {
             won()
             items.fishToReach.showParticles()
-            clockPos++
-            setClock()
+            items.clockPosition++
             return
         }
 
@@ -212,9 +208,8 @@ function moveTuxToNextIceBlock() {
     items.audioEffects.play(url + 'icy_walk.wav')
     //if tux reaches its position + dice number before reaching the fish, calculation was wrong
     if (tuxIceBlockNumber == tuxIceBlockNumberGoal) {
-        clockPos--
-        setClock()
-        if (clockPos === 0) {
+        items.clockPosition--
+        if (items.clockPosition === 0) {
             lost()
             initLevel()
             return
@@ -273,7 +268,13 @@ function calculateNextPlaceFishToReach() {
 }
 
 function placeFishToReach() {
-    items.fishToReach.opacity = 0
+    // placeFishToReach can be called when the opacity is 0.
+    // In this case, this does not trigger the onOpacityChanged of the fish Image (meaning the fish will not be displayed) so we directly set the opacity to 1.
+    if(items.fishToReach.opacity == 0)
+        items.fishToReach.opacity = 1
+    else
+        items.fishToReach.opacity = 0
+
     items.fishToReach.nextSource = url + fishes[fishIndex % fishes.length]
     items.fishToReach.nextX = iceBlocksLayout[fishIndex % iceBlocksLayout.length][0] *
             items.background.width / 5 +
@@ -284,14 +285,8 @@ function placeFishToReach() {
 }
 
 
-
-function setClock() {
-    items.clock.source = url + "flower" + clockPos + ".svg"
-}
-
-
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
     initLevel();
