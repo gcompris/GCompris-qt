@@ -72,6 +72,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property GCAudio audioEffects: activity.audioEffects
             property alias mazeModel: mazeModel
             property alias instructionModel: instructionModel
             property alias answerModel: answerModel
@@ -154,29 +155,42 @@ ActivityBase {
             source: "qrc:/gcompris/src/activities/maze/resource/" + "tux_top_south.svg"
             sourceSize.width: background.width / 10
             x: 0; y: 0; z: 11
-            property int duration: 2000
+            property int duration: 0
 
             signal init
 
             onInit: {
-               player.rotation = -90
-//               Activity.runCode()
+                player.rotation = -90
+                //               Activity.runCode()
             }
 
             Behavior on x {
-                SmoothedAnimation {
-//                    reversingMode: SmoothedAnimation.Immediate
-//                    onRunningChanged: Activity.playerRunningChanged()
+                NumberAnimation {
                     duration: player.duration
                 }
             }
-//            Behavior on y {
-//                SmoothedAnimation {
-//                    reversingMode: SmoothedAnimation.Immediate
-//                    onRunningChanged: Activity.playerRunningChanged()
-//                    duration: player.duration
-//                }
-//            }
+
+            Behavior on y {
+                NumberAnimation {
+                    duration: player.duration
+                }
+            }
+
+            //            Behavior on x {
+            //                SmoothedAnimation {
+            //                    reversingMode: SmoothedAnimation.Immediate
+            //                    onRunningChanged: Activity.playerRunningChanged()
+            //                    duration: player.duration
+            //                }
+            //            }
+            //            Behavior on y {
+            //                SmoothedAnimation {
+            //                    reversingMode: SmoothedAnimation.Immediate
+            //                    onRunningChanged: Activity.playerRunningChanged()
+            //                    duration: player.duration
+            //                }
+            //            }
+
             Behavior on rotation {
                 RotationAnimation {
                     duration: player.duration / 2
@@ -190,7 +204,7 @@ ActivityBase {
             id: fish
             source: Activity.reverseCountUrl + "blue-fish.svg"
             sourceSize.width: background.width / 10
-//            anchors.leftMargin: 20 * ApplicationInfo.ratio
+            //            anchors.leftMargin: 20 * ApplicationInfo.ratio
             x: 0; y: 0; z: 5
         }
 
