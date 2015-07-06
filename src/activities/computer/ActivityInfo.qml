@@ -21,14 +21,14 @@ ActivityInfo {
   name: "computer/Computer.qml"
   difficulty: 1
   icon: "computer/computer.svg"
-  author: "Sagar Chand Agarwal < atomsagar@gmail.com >"
+  author: "Sagar Chand Agarwal &lt;atomsagar@gmail.com&gt;"
   demo: true
-  title: qsTr("Computer activity")
-  description: qsTr("Your goal is to click on the box kept beside the table and see the components of computer one by one and read about it.")
-  //intro: ""
-  goal: qsTr("Learning the parts of computer and basic setting of its external components")
-  prerequisite: "none"
-  manual: qsTr("Drag and drop the components on the table and zoom the monitor and enjoy.")
-  credit: qsTr("")
+  title: "Know your Computer"
+  description: ""
+  //intro: "put here in comment the text for the intro voice"
+  goal: ""
+  prerequisite: ""
+  manual: ""
+  credit: ""
   section: "fun"
 }

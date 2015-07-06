@@ -1,10 +1,10 @@
 /* GCompris - computer.qml
  *
- * Copyright (C) 2015 <atomsagar@gmail.com>
+ * Copyright (C) 2015 YOUR NAME <xx@yy.org>
  *
  * Authors:
- *
- *   "Sagar Chand Agarwal" <atomsagar@gmail.com> (Qt Quick)
+ *   <THE GTK VERSION AUTHOR> (GTK+ version)
+ *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -20,11 +20,9 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
-import GCompris 1.0
 
 import "../../core"
-import "qrc:/gcompris/src/core/core.js" as Core
-
+import "computer.js" as Activity
 
 ActivityBase {
     id: activity
@@ -32,14 +30,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Image {
+    pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        source: "resource/room/background.svg"
-        sourceSize.width: parent.width
-        sourceSize.height: parent.height
-
-
+        color: "#ABCDEF"
         signal start
         signal stop
 
@@ -48,14 +42,23 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
-
+        // Add here the QML items you need to access in javascript
         QtObject {
             id: items
             property Item main: activity.main
             property alias background: background
             property alias bar: bar
+            property alias bonus: bonus
         }
 
+        onStart: { Activity.start(items) }
+        onStop: { Activity.stop() }
+
+        GCText {
+            anchors.centerIn: parent
+            text: "computer activity"
+            fontSize: largeSize
+        }
 
         DialogHelp {
             id: dialogHelp
@@ -64,12 +67,19 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home}
+            content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
+            onPreviousLevelClicked: Activity.previousLevel()
+            onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
         }
-    }
-}
 
+        Bonus {
+            id: bonus
+            Component.onCompleted: win.connect(Activity.nextLevel)
+        }
+    }
+
+}
