@@ -132,12 +132,11 @@ ActivityBase {
         GCText {
 
             id:hidden
-            anchors.centerIn: parent
             fontSize: largeSize
             color:"black"
             font.pointSize:60
             anchors.horizontalCenter:parent.horizontalCenter
-            anchors.verticalCenter:parent.verticalCenter
+            y:background.height/4
             
         }
         
