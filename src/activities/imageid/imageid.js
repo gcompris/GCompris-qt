@@ -143,3 +143,7 @@ function badWordSelected(wordIndex) {
     if (subLevelsLeft[0] != wordIndex)
         subLevelsLeft.unshift(wordIndex);
 }
+
+
+
+

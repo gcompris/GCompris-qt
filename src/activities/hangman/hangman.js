@@ -1,6 +1,6 @@
 /* GCompris - hangman.js
  *
- * Copyright (C) 2014 <RAJDEEP KAUR>
+ *   Copyright (C) 2014 <RAJDEEP KAUR>
  *
  *    Authors:
  *    Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
@@ -19,62 +19,57 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
+
+
 .pragma library
 .import QtQuick 2.0 as Quick 
-.import GCompris 1.0 as GCompris //for ApplicationInfo
+.import GCompris 1.0 as GCompris 
 .import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/activities/imageid/lang_api.js" as Lang
 
-var currentLevel=1;
-var currentSublevel=1;
-var wordlength=0;
-var maxLevel = 0;
-var maxsublevel=0;
-var level = 1;
-var sublevel = 0;
-var numberOfLevel=5;
-var items;
-var win=0;
 
-var no_of_life ;
+var currentLevel 
+var currentSubLevel 
+var wordlength 
+var maxLevel 
+var maxSubLevel
+var level 
+var sublevel 
+var numberOfLevel 
+var items
+var win 
 
-var count_no_alphabet;
-var current_word;
+var noOfLife;
+
+var countNoAlphabet;
+var currentWord;
 var wordi = new Array();
 var component;
 var sp ="_ ";
-var url = "qrc:/gcompris/src/activities/hangman/resource/"
+var baseUrl = "qrc:/gcompris/src/activities/hangman/resource/"
+var dataset = null;
+var lessons 
+var wordList
+var subLevelsLeft
 
 
 function start(items_) {
     items = items_
-    currentLevel = 1;
-    currentSublevel = 1;
-    no_of_life = 6;
+    currentLevel = 0;
+    currentSubLevel = 0;
+    noOfLife = 6;
     
-     var locale = items.locale == "system" ? "$LOCALE" : items.locale
-     items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
-            items.ourActivity.dataSetUrl + "default-"+locale+".json"));
-     // If wordlist is empty, we try to load from short locale and if not present again, we switch to default one
-     var localeUnderscoreIndex = locale.indexOf('_')
-     // probably exist a better way to see if the list is empty
-     if(items.wordlist.maxLevel == 0) {
-        var localeShort;
-        // We will first look again for locale xx (without _XX if exist)
-        if(localeUnderscoreIndex > 0) {
-            localeShort = locale.substring(0, localeUnderscoreIndex)
-        }
-        else {
-            localeShort = locale;
-        }
-        // If not found, we will use the default file
-        items.wordlist.useDefault = true
-        items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
-        items.ourActivity.dataSetUrl + "default-"+localeShort+".json"));
-        // We remove the using of default file for next time we enter this function
-        items.wordlist.useDefault = false
+    dataset = Lang.load(items.parser, baseUrl, "words.json", "content-$LOCALE.json")
+    if(!dataset) {
+        // English fallback
+        items.background.englishFallback = true
+        dataset = Lang.load(items.parser, baseUrl, "words.json", "content-en.json")
+    } else {
+        items.background.englishFallback = false
     }
     
-    maxLevel=items.wordlist.maxLevel;
+    lessons = Lang.getAllLessons(dataset)
+    maxLevel = lessons.length
     initLevel(); 
     
 }
@@ -83,9 +78,21 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel ;
-    initSublevel();
-    level = items.wordlist.getLevelWordList(currentLevel);
+    items.bar.level = currentLevel + 1;
+    var currentLesson = lessons[currentLevel]
+    wordList = Lang.getLessonWords(dataset, currentLesson);
+    Core.shuffle(wordList);
+    
+    maxSubLevel = wordList.length;
+    items.score.numberOfSubLevels = maxSubLevel;
+    items.score.visible = true;
+    
+    subLevelsLeft = []
+    for(var i in wordList)
+        subLevelsLeft.push(i)
+    
+    initSubLevel();
+    level =  currentLevel + 1;
     {	//to set the layout...populate
         var letters = new Array();
         items.keyboard.shiftKey = false;
@@ -126,12 +133,12 @@ function processKeyPress(text) {
         var inital = wordi;
 	console.log(inital);
         wordi = "";
-        for(var i = 0; i< current_word.length ; i++) {
+        for(var i = 0; i< currentWord.length ; i++) {
             if(current_word[i] === text) {
                flag=1;
-	       count_no_alphabet +=1;
+	       countNoAlphabet +=1;
 	       if(i === 0){
-		  wordi=wordi+current_word.charAt(0);
+		  wordi=wordi+currentWord.charAt(0);
 		  for(var j = 1; j <inital.length ; j = j+1)
 		  {	wordi = wordi+inital.charAt(j);
 		  }
@@ -140,7 +147,7 @@ function processKeyPress(text) {
 		  var j=i*2;
 		    for(var k=0;k<inital.length;k=k+1)
 		    {	   if(j === k)
-			   {	wordi = wordi+current_word.charAt(i);
+			   {	wordi = wordi+currentWord.charAt(i);
 			   }
 			   else
 			   {	wordi = wordi+inital.charAt(k);
@@ -152,10 +159,10 @@ function processKeyPress(text) {
         }
         if(flag !== 1)
 	{	wordi = inital;
-		no_of_life=no_of_life-1;
+		noOfLife=noOfLife-1;
 	}	
 	items.hidden.text = wordi
-	if(count_no_alphabet === (current_word.length))
+	if(countNoAlphabet === (currentWord.length))
 	{	items.ping_animation.running = true
 		items.bonus.good("lion");
 	}
@@ -175,17 +182,21 @@ function previousLevel() {
     initLevel();
 }
 
-function initSublevel()
-{	maxsublevel = items.wordlist.getMaxSubLevel(items.bar.level);
-	items.score.numberOfSubLevels=maxsublevel;
-        items.wordlist.initRandomWord(items.bar.level);
+function initSubLevel()
+{	if(items.score.currentSubLevel < items.score.numberOfSubLevels)
+        items.score.currentSubLevel = currentSubLevel + 1;
+        else
+        items.score.visible = false
+	items.goodWordIndex = subLevelsLeft.pop()
+        items.goodWord = wordList[items.goodWordIndex]
+	var text1 = items.goodWord.translatedTxt;
+	items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image);
 	win=0;
-	var text1 = items.wordlist.getRandomWord();
 	wordi = new Array();
-	current_word = text1 ;
-        count_no_alphabet = 0;
-	console.log(current_word);
-	for(var i = 0; i < current_word.length ; i=i+1)
+	currentWord = text1 ;
+        countNoAlphabet = 0;
+	console.log(currentWord);
+	for(var i = 0; i < currentWord.length ; i=i+1)
 	{   if(i == 0)	
 	    {	wordi.push("_ ");   }
 	    else
@@ -193,14 +204,13 @@ function initSublevel()
 	    }
 	}
 	console.log(wordi);
-	items.hidden.text=qsTr(wordi);
-	items.score.currentSubLevel = currentSublevel;
+	items.hidden.text=wordi;
 }
 
 function nextSublevel()
-{	if(maxsublevel<= ++currentSublevel)
-	{		currentSublevel=1;	}
-	initSublevel();
+{	if(maxsublevel<= ++currentSubLevel)
+	{		currentSubLevel=1;	}
+	initSubLevel();
 }
 
 function focusTextInput() {
