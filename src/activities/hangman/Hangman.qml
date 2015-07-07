@@ -3,8 +3,8 @@
  * Copyright (C) 2015 Rajdeep Kaur <rajdeep51994@gmail.com>
  *
  * Authors:
- *   
- *   RAJDEEP KAUR<rajdeep51994@gmail.com> (Qt Quick port)
+ *   Bruno copyright to: Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+ *   Rajdeep kaur<rajdeep51994@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,9 +21,11 @@
  */
 import QtQuick 2.1
 import GCompris 1.0
+import QtGraphicalEffects 1.0
 
 import "../../core"
 import "hangman.js" as Activity
+import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -50,14 +52,19 @@ ActivityBase {
 	fillMode: Image.PreserveAspectCrop
 	sourceSize.width: parent.width
         anchors.fill: parent
+        
+        readonly property string wordsResource: "data2/words/words.rcc"
+        property bool englishFallback: false
+        property bool downloadWordsNeeded: false
+        
         signal start
         signal stop
-
-        // system locale by default
-        property string locale: "system"
+        signal voiceError
+        signal voiceDone
+        
         
         Component.onCompleted: {
-            dialogActivityConfig.getInitialConfiguration()
+            
 	    activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -68,24 +75,48 @@ ActivityBase {
             property Item main: activity.main
             property alias background: background
             property Item ourActivity: activity
-            property GCAudio audioVoices: activity.audioVoices
             property alias bar: bar
             property alias bonus: bonus
-            property alias wordlist: wordlist
             property alias keyboard:keyboard
-            property alias heli:heli
             property alias hidden:hidden
-            property alias locale: background.locale
             property alias textinput: textinput
             property alias ping:ping
             property alias flower:flower
-            property alias animateX: animateX
             property alias ping_animation:ping_animation
+            property alias wordImage: wordImage
             property alias score: score
+            property alias parser: parser
+            property variant goodWord
+            property int goodWordIndex
+            property alias englishFallbackDialog: englishFallbackDialog
+            
+        }
+        
+        function handleResourceRegistered(resource)
+        {
+            if (resource == wordsResource)
+                Activity.start(items);
         }
 
+
         onStart: { Activity.start(items);
-		    Activity.focusTextInput();
+		   Activity.focusTextInput();
+		   
+		   activity.audioVoices.error.connect(voiceError)
+                   activity.audioVoices.done.connect(voiceDone)
+		   
+		    // check for words.rcc:
+                  if (DownloadManager.isDataRegistered("words")) {
+                  // words.rcc is already registered -> start right away
+                  Activity.start(items);
+                  } else if(DownloadManager.haveLocalResource(wordsResource)) {
+                  // words.rcc is there, but not yet registered -> updateResource
+                  DownloadManager.resourceRegistered.connect(handleResourceRegistered);
+                  DownloadManager.updateResource(wordsResource);
+                  } else {
+                  // words.rcc has not been downloaded yet -> ask for download
+                  downloadWordsNeeded = true
+                  }
 	  }
 	         
         onStop: { Activity.stop() }
@@ -120,36 +151,52 @@ ActivityBase {
 
         }
         
-        Image{
-	      id:heli
-	      height:parent.height/6
-	      width:parent.width/4
-	      source:activity.dataSetUrl+"plane.svg";
-	      x:0
-	      GCText {
-		      text:"Hangman"
-		      color:"black"
-		      font.family: "Helvetica"
-                      font.pointSize:16
-                      anchors.left:heli.left
-                      anchors.leftMargin:10
-                      anchors.verticalCenter:heli.verticalCenter
-	              }
-	         
-        }
         
-        SequentialAnimation{
-				  id:animateX
-				  running:true
-				  loops:Animation.Infinite
-				  NumberAnimation{
-				     target:heli
-				     property:"x"
-				     from:0; to:1000
-				     duration:12000
-				     easing.type: Easing.OutQuad
-				  }
-	}  
+        Image {    id:imageframe
+		   visible:true
+		   width:parent.width/5
+		   height:parent.height/5
+		   anchors.horizontalCenter:background.horizontalCenter
+		   y:background.height/10
+		   source:dataSetUrl+"imageid_frame.svg"
+		   Image{
+			  id:wordImage
+			  sourceSize.width: parent.width * 0.6
+			  anchors {
+                            centerIn: parent
+                            margins: 0.05 + parent.width
+                          }
+                          property string nextSource
+                        function changeSource(nextSource_) {
+                            nextSource = nextSource_
+                            animImage.start()
+                        }
+
+                        SequentialAnimation {
+                            id: animImage
+                            PropertyAnimation {
+                                target: wordImage
+                                property: "opacity"
+                                to: 0
+                                duration: 100
+                            }
+                            PropertyAction {
+                                target: wordImage
+                                property: "source"
+                                value: wordImage.nextSource
+                            }
+                            PropertyAnimation {
+                                target: wordImage
+                                property: "opacity"
+                                to: 1
+                                duration: 100
+                            }
+                        }
+                          
+		   }
+	}
+        
+        
 	
 	Image{
 		          id:ping
@@ -204,113 +251,30 @@ ActivityBase {
 			            
 			      
 	  
-	}
-	DialogActivityConfig {
-            id: dialogActivityConfig
-            currentActivity: activity
-            content: Component {
-                Item {
-                    property alias localeBox: localeBox
-                    height: column.height
-
-                    property alias availableLangs: langs.languages
-                    LanguageList {
-                        id: langs
-                    }
-
-                    Column {
-                        id: column
-                        spacing: 10
-                        width: parent.width
-
-                        Flow {
-                            spacing: 5
-                            width: dialogActivityConfig.width
-                            GCComboBox {
-                                id: localeBox
-                                model: langs.languages
-                                background: dialogActivityConfig
-                                width: 250 * ApplicationInfo.ratio
-                                label: qsTr("Select your locale")
-                            }
-                        }
-/* TODO handle this:
-                        GCDialogCheckBox {
-                            id: uppercaseBox
-                            width: 250 * ApplicationInfo.ratio
-                            text: qsTr("Uppercase only mode")
-                            checked: true
-                            onCheckedChanged: {
-                                print("uppercase changed")
-                            }
-                        }
-*/
-                    }
-                }
-            }
-
-            onClose: home()
-            onLoadData: {
-                if(dataToSave && dataToSave["locale"]) {
-                    background.locale = dataToSave["locale"];
-                }
-            }
-            onSaveData: {
-                var oldLocale = background.locale;
-                var newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
-                // Remove .UTF-8
-                if(newLocale.indexOf('.') != -1) {
-                    newLocale = newLocale.substring(0, newLocale.indexOf('.'))
-                }
-                dataToSave = {"locale": newLocale}
-
-                background.locale = newLocale;
-
-                // Restart the activity with new information
-                if(oldLocale !== newLocale) {
-                    background.stop();
-                    background.start();
-                }
-         }
-         
-         function setDefaultValues() {
-                var localeUtf8 = background.locale;
-                if(background.locale != "system") {
-                    localeUtf8 += ".UTF-8";
-                }
-
-                for(var i = 0 ; i < dialogActivityConfig.configItem.availableLangs.length ; i ++) {
-                    if(dialogActivityConfig.configItem.availableLangs[i].locale === localeUtf8) {
-                        dialogActivityConfig.loader.item.localeBox.currentIndex = i;
-                        break;
-                    }
-                }
-           }
-
-	 
       }
-       DialogHelp {
+	
+      DialogHelp {
             id: dialogHelp
             onClose: home()
-        }
+      }
 
-        Bar {
-            id: bar
-            content: BarEnumContent { value: help | home | level }
-            onHelpClicked: {
+      Bar {
+          id: bar
+          content: BarEnumContent { value: help | home | level }
+          onHelpClicked: {
                 displayDialog(dialogHelp)
-            }
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
-	    onConfigClicked: {
+          }
+          onPreviousLevelClicked: Activity.previousLevel()
+          onNextLevelClicked: Activity.nextLevel()
+          onHomeClicked: activity.home()
+	  onConfigClicked: {
                 dialogActivityConfig.active = true
                 dialogActivityConfig.setDefaultValues()
                 displayDialog(dialogActivityConfig)
-            }
-        }
+          }
+     }
         
-        Score {
+    Score {
             id: score
 
             anchors.top: undefined
@@ -318,33 +282,69 @@ ActivityBase {
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.bottom: keyboard.top
+    }
+    
+    JsonParser {
+            id: parser
+            
+            onError: console.error("Imageid: Error parsing json: " + msg);
+    }
+        
+        
+    VirtualKeyboard {
+         id: keyboard
+         anchors.bottom: parent.bottom
+         anchors.horizontalCenter: parent.horizontalCenter
+         width: parent.width
+            
+         onKeypress: Activity.processKeyPress(text);
+            
+	 onError: console.log("VirtualKeyboard error: " + msg);
+     }
+        
+     Bonus {
+            id: bonus
+            Component.onCompleted: win.connect(Activity.initSubLevel);
         }
         
         
-         VirtualKeyboard {
-            id: keyboard
-            
-            anchors.bottom: parent.bottom
-            anchors.horizontalCenter: parent.horizontalCenter
-            width: parent.width
-            
-            onKeypress: Activity.processKeyPress(text);
-            
-	    onError: console.log("VirtualKeyboard error: " + msg);
+      Loader {
+            id: englishFallbackDialog
+            sourceComponent: GCDialog {
+                parent: activity.main
+                message: qsTr("We are sorry, we don't have yet a translation for your language.") + " " +
+                         qsTr("GCompris is developed by the KDE community, you can translate GCompris by joining a translation team on <a href=\"%2\">%2</a>").arg("http://l10n.kde.org/") +
+                         "<br /> <br />" +
+                         qsTr("We switched to English for this activity but you can select another language in the configuration dialog.")
+                onClose: background.englishFallback = false
+            }
+            anchors.fill: parent
+            focus: true
+            active: background.englishFallback
+            onStatusChanged: if (status == Loader.Ready) item.start()
         }
         
-         Wordlist {
-            id: wordlist
-            defaultFilename: activity.dataSetUrl + "default-en.json"
-            filename: ""
-           
-            onError: console.log("Hangman: Wordlist error: " + msg);
+     Loader {
+            id: downloadWordsDialog
+            sourceComponent: GCDialog {
+                parent: activity.main
+                message: qsTr("The images for this activity are not yet installed.")
+                button1Text: ApplicationInfo.isDownloadAllowed ? qsTr("Download the images") : qsTr("OK")
+                onClose: background.downloadWordsNeeded = false
+                onButton1Hit: {
+                    if(ApplicationInfo.isDownloadAllowed) {
+                        DownloadManager.resourceRegistered.connect(handleResourceRegistered);
+                        DownloadManager.downloadResource(wordsResource)
+                        Core.showDownloadDialog(activity, {});
+                    }
+                }
+            }
+            anchors.fill: parent
+            focus: true
+            active: background.downloadWordsNeeded
+            onStatusChanged: if (status == Loader.Ready) item.start()
         }
 
-        Bonus {
-            id: bonus
-            Component.onCompleted: win.connect(Activity.initSublevel);
-        }
     }
 
 }
