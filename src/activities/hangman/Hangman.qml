@@ -49,8 +49,8 @@ ActivityBase {
     pageComponent: Image {
         id: background
         source:activity.dataSetUrl+"background.svg"
-	fillMode: Image.PreserveAspectCrop
-	sourceSize.width: parent.width
+        fillMode: Image.PreserveAspectCrop
+        sourceSize.width: parent.width
         anchors.fill: parent
         
         readonly property string wordsResource: "data2/words/words.rcc"
@@ -65,7 +65,7 @@ ActivityBase {
         
         Component.onCompleted: {
             
-	    activity.start.connect(start)
+            activity.start.connect(start)
             activity.stop.connect(stop)
         }
 
@@ -100,30 +100,30 @@ ActivityBase {
 
 
         onStart: { Activity.start(items);
-		   Activity.focusTextInput();
-		   
-		   activity.audioVoices.error.connect(voiceError)
-                   activity.audioVoices.done.connect(voiceDone)
-		   
-		    // check for words.rcc:
-                  if (DownloadManager.isDataRegistered("words")) {
-                  // words.rcc is already registered -> start right away
-                  Activity.start(items);
-                  } else if(DownloadManager.haveLocalResource(wordsResource)) {
-                  // words.rcc is there, but not yet registered -> updateResource
-                  DownloadManager.resourceRegistered.connect(handleResourceRegistered);
-                  DownloadManager.updateResource(wordsResource);
-                  } else {
-                  // words.rcc has not been downloaded yet -> ask for download
-                  downloadWordsNeeded = true
-                  }
-	  }
-	         
+            Activity.focusTextInput();
+
+            activity.audioVoices.error.connect(voiceError)
+            activity.audioVoices.done.connect(voiceDone)
+
+            // check for words.rcc:
+            if (DownloadManager.isDataRegistered("words")) {
+                // words.rcc is already registered -> start right away
+                Activity.start(items);
+            } else if(DownloadManager.haveLocalResource(wordsResource)) {
+                // words.rcc is there, but not yet registered -> updateResource
+                DownloadManager.resourceRegistered.connect(handleResourceRegistered);
+                DownloadManager.updateResource(wordsResource);
+            } else {
+                // words.rcc has not been downloaded yet -> ask for download
+                downloadWordsNeeded = true
+            }
+        }
+
         onStop: { Activity.stop() }
 
         GCText {
-	  
-	    id:hidden
+
+            id:hidden
             anchors.centerIn: parent
             fontSize: largeSize
             color:"black"
@@ -131,7 +131,7 @@ ActivityBase {
             anchors.horizontalCenter:parent.horizontalCenter
             anchors.verticalCenter:parent.verticalCenter
             
-	}
+        }
         
         TextInput {
             // Helper element to capture composed key events like french ô which
@@ -142,139 +142,139 @@ ActivityBase {
             focus: true
             visible:false
             onTextChanged: {
-	        if (text != "") {
+                if (text != "") {
                     Activity.processKeyPress(text);
                     text = "";
-                }      
-	    }
+                }
+            }
             
 
         }
         
         
         Image {    id:imageframe
-		   visible:true
-		   width:parent.width/5
-		   height:parent.height/5
-		   anchors.horizontalCenter:background.horizontalCenter
-		   y:background.height/10
-		   source:dataSetUrl+"imageid_frame.svg"
-		   Image{
-			  id:wordImage
-			  sourceSize.width: parent.width * 0.6
-			  anchors {
-                            centerIn: parent
-                            margins: 0.05 + parent.width
-                          }
-                          property string nextSource
-                        function changeSource(nextSource_) {
-                            nextSource = nextSource_
-                            animImage.start()
-                        }
-
-                        SequentialAnimation {
-                            id: animImage
-                            PropertyAnimation {
-                                target: wordImage
-                                property: "opacity"
-                                to: 0
-                                duration: 100
-                            }
-                            PropertyAction {
-                                target: wordImage
-                                property: "source"
-                                value: wordImage.nextSource
-                            }
-                            PropertyAnimation {
-                                target: wordImage
-                                property: "opacity"
-                                to: 1
-                                duration: 100
-                            }
-                        }
-                          
-		   }
-	}
-        
-        
-	
-	Image{
-		          id:ping
-		          visible:true
-		          width:parent.width/10
-		          height:parent.height/5
-		          x:background.width/6
-		          y:6*background.height/10
-		          source:activity.dataSetUrl+"pingu.svg";
-			  Behavior on x {
-                          PropertyAnimation {
-                          id: xAnima
-                          easing.type: Easing.InQuad
-                          duration:  10000
-                          
+            visible:true
+            width:parent.width/5
+            height:parent.height/5
+            anchors.horizontalCenter:background.horizontalCenter
+            y:background.height/10
+            source:dataSetUrl+"imageid_frame.svg"
+            Image{
+                id:wordImage
+                sourceSize.width: parent.width * 0.6
+                anchors {
+                    centerIn: parent
+                    margins: 0.05 + parent.width
                 }
-             }
-	 }
-	Image{
-			  
-	                  id:flower
-			  visible:false
-			  width:ping.width/4
-			  height:ping.height/6
-			  source:activity.dataSetUrl+"flower.svg";
-			  anchors.left:ping.left
-			  y:6.5*background.height/10
-			  
-			  
-	}
-	SequentialAnimation{  id:ping_animation
-			      PropertyAnimation{
-				    target:flower
-			            property:"visible" ;to:true
-			      }
-			      PropertyAnimation{
-				    target:ping
-				    property:"x" ;from:background.width/6; to :background.width/11
-				    duration:1000
-				    easing.type: Easing.InQuad
-			      }
-			      PropertyAnimation{
-				    target:flower
-			            property:"visible" ;to:"false"
-			      }
-			      PropertyAnimation{
-				    target:ping
-				    property:"x" ;from:background.width/11; to :background.width/6
-				    duration:1000
-				    easing.type: Easing.InQuad
-			      }
-			            
-			      
-	  
-      }
-	
-      DialogHelp {
+                property string nextSource
+                function changeSource(nextSource_) {
+                    nextSource = nextSource_
+                    animImage.start()
+                }
+
+                SequentialAnimation {
+                    id: animImage
+                    PropertyAnimation {
+                        target: wordImage
+                        property: "opacity"
+                        to: 0
+                        duration: 100
+                    }
+                    PropertyAction {
+                        target: wordImage
+                        property: "source"
+                        value: wordImage.nextSource
+                    }
+                    PropertyAnimation {
+                        target: wordImage
+                        property: "opacity"
+                        to: 1
+                        duration: 100
+                    }
+                }
+
+            }
+        }
+        
+        
+
+        Image{
+            id:ping
+            visible:true
+            width:parent.width/10
+            height:parent.height/5
+            x:background.width/6
+            y:6*background.height/10
+            source:activity.dataSetUrl+"pingu.svg";
+            Behavior on x {
+                PropertyAnimation {
+                    id: xAnima
+                    easing.type: Easing.InQuad
+                    duration:  10000
+
+                }
+            }
+        }
+        Image{
+
+            id:flower
+            visible:false
+            width:ping.width/4
+            height:ping.height/6
+            source:activity.dataSetUrl+"flower.svg";
+            anchors.left:ping.left
+            y:6.5*background.height/10
+
+
+        }
+        SequentialAnimation{  id:ping_animation
+            PropertyAnimation{
+                target:flower
+                property:"visible" ;to:true
+            }
+            PropertyAnimation{
+                target:ping
+                property:"x" ;from:background.width/6; to :background.width/11
+                duration:1000
+                easing.type: Easing.InQuad
+            }
+            PropertyAnimation{
+                target:flower
+                property:"visible" ;to:"false"
+            }
+            PropertyAnimation{
+                target:ping
+                property:"x" ;from:background.width/11; to :background.width/6
+                duration:1000
+                easing.type: Easing.InQuad
+            }
+
+
+
+        }
+
+        DialogHelp {
             id: dialogHelp
             onClose: home()
-      }
+        }
 
-      Bar {
-          id: bar
-          content: BarEnumContent { value: help | home | level }
-          onHelpClicked: {
+        Bar {
+            id: bar
+            content: BarEnumContent { value: help | home | level }
+            onHelpClicked: {
                 displayDialog(dialogHelp)
-          }
-          onPreviousLevelClicked: Activity.previousLevel()
-          onNextLevelClicked: Activity.nextLevel()
-          onHomeClicked: activity.home()
-	  onConfigClicked: {
+            }
+            onPreviousLevelClicked: Activity.previousLevel()
+            onNextLevelClicked: Activity.nextLevel()
+            onHomeClicked: activity.home()
+            onConfigClicked: {
                 dialogActivityConfig.active = true
                 dialogActivityConfig.setDefaultValues()
                 displayDialog(dialogActivityConfig)
-          }
-     }
+            }
+        }
         
-    Score {
+        Score {
             id: score
 
             anchors.top: undefined
@@ -282,33 +282,33 @@ ActivityBase {
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.bottom: keyboard.top
-    }
-    
-    JsonParser {
+        }
+
+        JsonParser {
             id: parser
             
             onError: console.error("Imageid: Error parsing json: " + msg);
-    }
+        }
         
         
-    VirtualKeyboard {
-         id: keyboard
-         anchors.bottom: parent.bottom
-         anchors.horizontalCenter: parent.horizontalCenter
-         width: parent.width
+        VirtualKeyboard {
+            id: keyboard
+            anchors.bottom: parent.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width
             
-         onKeypress: Activity.processKeyPress(text);
+            onKeypress: Activity.processKeyPress(text);
             
-	 onError: console.log("VirtualKeyboard error: " + msg);
-     }
+            onError: console.log("VirtualKeyboard error: " + msg);
+        }
         
-     Bonus {
+        Bonus {
             id: bonus
             Component.onCompleted: win.connect(Activity.initSubLevel);
         }
         
         
-      Loader {
+        Loader {
             id: englishFallbackDialog
             sourceComponent: GCDialog {
                 parent: activity.main
@@ -324,7 +324,7 @@ ActivityBase {
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
         
-     Loader {
+        Loader {
             id: downloadWordsDialog
             sourceComponent: GCDialog {
                 parent: activity.main
@@ -346,5 +346,5 @@ ActivityBase {
         }
 
     }
-
+    
 }

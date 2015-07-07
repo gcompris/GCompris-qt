@@ -70,7 +70,7 @@ function start(items_) {
     
     lessons = Lang.getAllLessons(dataset)
     maxLevel = lessons.length
-    initLevel(); 
+    initLevel();
     
 }
 
@@ -92,7 +92,6 @@ function initLevel() {
         subLevelsLeft.push(i)
     
     initSubLevel();
-    level =  currentLevel + 1;
     {	//to set the layout...populate
         var letters = new Array();
         items.keyboard.shiftKey = false;
@@ -128,44 +127,44 @@ function initLevel() {
 }
 
 function processKeyPress(text) {
-        console.log(text+"\n");
-        var flag = 0;
-        var inital = wordi;
-	console.log(inital);
-        wordi = "";
-        for(var i = 0; i< currentWord.length ; i++) {
-            if(current_word[i] === text) {
-               flag=1;
-	       countNoAlphabet +=1;
-	       if(i === 0){
-		  wordi=wordi+currentWord.charAt(0);
-		  for(var j = 1; j <inital.length ; j = j+1)
-		  {	wordi = wordi+inital.charAt(j);
-		  }
-               }
-               else{
-		  var j=i*2;
-		    for(var k=0;k<inital.length;k=k+1)
-		    {	   if(j === k)
-			   {	wordi = wordi+currentWord.charAt(i);
-			   }
-			   else
-			   {	wordi = wordi+inital.charAt(k);
-			   }
-		    }
-	       }
-	    }
-	   
+    console.log(text+"\n");
+    var flag = 0;
+    var inital = wordi;
+    console.log(inital);
+    wordi = "";
+    for(var i = 0; i< currentWord.length ; i++) {
+        if(current_word[i] === text) {
+            flag=1;
+            countNoAlphabet +=1;
+            if(i === 0){
+                wordi=wordi+currentWord.charAt(0);
+                for(var j = 1; j <inital.length ; j = j+1)
+                {	wordi = wordi+inital.charAt(j);
+                }
+            }
+            else{
+                var j=i*2;
+                for(var k=0;k<inital.length;k=k+1)
+                {	   if(j === k)
+                    {	wordi = wordi+currentWord.charAt(i);
+                    }
+                    else
+                    {	wordi = wordi+inital.charAt(k);
+                    }
+                }
+            }
         }
-        if(flag !== 1)
-	{	wordi = inital;
-		noOfLife=noOfLife-1;
-	}	
-	items.hidden.text = wordi
-	if(countNoAlphabet === (currentWord.length))
-	{	items.ping_animation.running = true
-		items.bonus.good("lion");
-	}
+
+    }
+    if(flag !== 1)
+    {	wordi = inital;
+        noOfLife=noOfLife-1;
+    }
+    items.hidden.text = wordi
+    if(countNoAlphabet === (currentWord.length))
+    {	items.ping_animation.running = true
+        items.bonus.good("lion");
+    }
 }
 
 function nextLevel() {
@@ -185,32 +184,32 @@ function previousLevel() {
 function initSubLevel()
 {	if(items.score.currentSubLevel < items.score.numberOfSubLevels)
         items.score.currentSubLevel = currentSubLevel + 1;
-        else
+    else
         items.score.visible = false
-	items.goodWordIndex = subLevelsLeft.pop()
-        items.goodWord = wordList[items.goodWordIndex]
-	var text1 = items.goodWord.translatedTxt;
-	items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image);
-	win=0;
-	wordi = new Array();
-	currentWord = text1 ;
-        countNoAlphabet = 0;
-	console.log(currentWord);
-	for(var i = 0; i < currentWord.length ; i=i+1)
-	{   if(i == 0)	
-	    {	wordi.push("_ ");   }
-	    else
-	    {	wordi = wordi + sp;		
-	    }
-	}
-	console.log(wordi);
-	items.hidden.text=wordi;
+    items.goodWordIndex = subLevelsLeft.pop()
+    items.goodWord = wordList[items.goodWordIndex]
+    var text1 = items.goodWord.translatedTxt;
+    items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image);
+    win=0;
+    wordi = new Array();
+    currentWord = text1 ;
+    countNoAlphabet = 0;
+    console.log(currentWord);
+    for(var i = 0; i < currentWord.length ; i=i+1)
+    {   if(i == 0)
+        {	wordi.push("_ ");   }
+        else
+        {	wordi = wordi + sp;
+        }
+    }
+    console.log(wordi);
+    items.hidden.text=wordi;
 }
 
 function nextSublevel()
 {	if(maxsublevel<= ++currentSubLevel)
-	{		currentSubLevel=1;	}
-	initSubLevel();
+    {		currentSubLevel=1;	}
+    initSubLevel();
 }
 
 function focusTextInput() {
