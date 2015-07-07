@@ -75,6 +75,9 @@ function start(items_, uppercaseOnly_,  _mode) {
 
     var locale = items.locale == "system" ? "$LOCALE" : items.locale
 
+    // register the voices for the locale
+    GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(GCompris.ApplicationInfo.getVoicesLocale(items.locale)));
+
     items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
             items.ourActivity.dataSetUrl + "default-"+locale+".json"));
     // If wordlist is empty, we try to load from short locale and if not present again, we switch to default one
@@ -387,7 +390,8 @@ function nextSubLevel() {
 }
 
 function playLetter(letter) {
-    var locale = items.locale == "system" ? "$LOCALE" : items.locale
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+
     items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/"+locale+"/alphabet/"
                                                                        + Core.getSoundFilenamForChar(letter)))
 }
