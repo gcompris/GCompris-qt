@@ -51,6 +51,8 @@ var currentRotation
 var changedRotation
 var flag = 0
 var tuxIsMoving = false
+var j =0
+var busy = false
 
 function start(items_) {
     items = items_
@@ -72,6 +74,10 @@ function initLevel() {
     initialX = mazeBlocks[currentLevel][0][0] * stepX
     initialY = mazeBlocks[currentLevel][0][1] * stepY
 
+    busy = false
+    j = 0
+    playerCode = []
+
     items.player.x = initialX
     items.player.y = initialY
     items.fish.x = mazeBlocks[currentLevel][countOfMazeBlocks -1][0] * stepX
@@ -91,33 +97,49 @@ function initLevel() {
 * 270 =EAST
 */
 function getPlayerRotation() {
-    //    return ((items.player.rotation % 360) + 360) % 360
     return ((changedRotation % 360) + 360) % 360
-
 }
 
 function runCode() {
 
     //initiallize back to starting position and code
     playerCode = []
+    busy = false
 
     for(var i = 0; i < items.answerModel.count; i++) {
         playerCode.push(items.answerModel.get([i]).name)
     }
 
-    for( var j = 0; j < playerCode.length; j++) {
-        currentInstruction = playerCode[j]
-        tuxIsMoving = false
+
+    if(flag == 1) {
+        busy = false
+    }
+
+    if(!busy) {
+        executeFirstInstruction()
+    }
+    checkSuccess()
+}
+
+
+function playerRunningChanged() {
+
+    if(busy) {
+        //do nothing
+    }
+    else {
+        executeNextInstruction()
+    }
+}
+
+function executeNextInstruction() {
+    if(!busy && j < playerCode.length ) {
         changedX = items.player.x
         changedY = items.player.y
         currentRotation = getPlayerRotation()
 
-        //        see how to end it nextX nextY won't be accesible after it
-        //        if(tuxIceBlockNumber > mazeBlocks[currentLevel].length) {
-        //            console.log("can't solve, breaking out of loop")
-        //            break;
-        //        }
-
+        currentInstruction = playerCode[j]
+        console.log(j + " executing next " +currentInstruction)
         currentBlock = tuxIceBlockNumber
         nextBlock = tuxIceBlockNumber + 1
         currentX = mazeBlocks[currentLevel][currentBlock][0]
@@ -125,75 +147,125 @@ function runCode() {
         nextX = mazeBlocks[currentLevel][nextBlock][0]
         nextY = mazeBlocks[currentLevel][nextBlock][1]
 
-        if(flag == 1) {
-            tuxIsMoving = false
-            break
+        if ( currentInstruction == "Move Forward") {
+            ++tuxIceBlockNumber;
+            if (nextX - currentX > 0 && currentRotation == 270) {  //EAST 270
+                changedX = currentX * stepX + stepX
+                console.log("moving forward emitting the signal")
+                items.player.x = changedX
+                items.player.y = changedY
+            }
+            else if(nextX - currentX < 0 && currentRotation == 90){ //WEST 90
+                changedX = currentX * stepX - stepX
+                items.player.x = changedX
+                items.player.y = changedY
+            }
+            else if (nextY - currentY < 0 && currentRotation == 180) { //NORTH 0
+                changedY = currentY * stepY - stepY
+                console.log("moving forward emitting the signal")
+                items.player.x = changedX
+                items.player.y = changedY
+
+            }
+            else if (nextY - currentY > 0 && currentRotation == 0) { //SOUTH 180
+                changedY = currentY * stepY + stepY
+                items.player.x = changedX
+                items.player.y = changedY
+            }
+            else {
+                // add an animation to indicate that its not possible
+                flag = 1
+                items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+                console.log("dead end")
+            }
         }
 
-        //        tuxIsMoving = false
-        executeNextInstruction()
-
+        else if ( currentInstruction == "Turn Left") {
+            changedRotation = (currentRotation - 90) % 360
+            //        console.log("turning left")
+            items.player.rotation = changedRotation
+        }
+        else if ( currentInstruction == "Turn Right") {
+            changedRotation = (currentRotation + 90) % 360
+            items.player.rotation = changedRotation
+        }
+        j = j+ 1
+        busy = true
         checkSuccess()
     }
 
 }
 
-function playerRunningChanged() {
+function executeFirstInstruction() {
+    if(!busy && j < playerCode.length) {
+        changedX = items.player.x
+        changedY = items.player.y
+        currentRotation = getPlayerRotation()
 
-    //TODO: if its moving keep moving don't go to next instruction
-    //    if(tuxIsMoving) {
-    //        executeNextInstruction()
-    //    }
-}
+        currentInstruction = playerCode[j]
+        console.log(j + " executing first " +currentInstruction)
+        currentBlock = tuxIceBlockNumber
+        nextBlock = tuxIceBlockNumber + 1
+        currentX = mazeBlocks[currentLevel][currentBlock][0]
+        currentY = mazeBlocks[currentLevel][currentBlock][1]
+        nextX = mazeBlocks[currentLevel][nextBlock][0]
+        nextY = mazeBlocks[currentLevel][nextBlock][1]
 
-function executeNextInstruction() {
+        if ( currentInstruction == "Move Forward") {
+            ++tuxIceBlockNumber;
+            if (nextX - currentX > 0 && currentRotation == 270) {  //EAST 270
+                changedX = currentX * stepX + stepX
+                console.log("moving forward emitting the signal")
+                items.player.x = changedX
+                items.player.y = changedY
+            }
+            else if(nextX - currentX < 0 && currentRotation == 90){ //WEST 90
+                changedX = currentX * stepX - stepX
+                items.player.x = changedX
+                items.player.y = changedY
+            }
+            else if (nextY - currentY < 0 && currentRotation == 180) { //NORTH 0
+                changedY = currentY * stepY - stepY
+                console.log("moving up emitting the signal")
+                items.player.x = changedX
+                items.player.y = changedY
+            }
+            else if (nextY - currentY > 0 && currentRotation == 0) { //SOUTH 180
+                changedY = currentY * stepY + stepY
+                items.player.x = changedX
+                items.player.y = changedY
+            }
+            else {
+                // add an animation to indicate that its not possible
+                flag = 1
+                items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
+                console.log("dead end")
+            }
+        }
 
-    if ( currentInstruction == "Move Forward") {
-        if (nextX - currentX > 0 && currentRotation == 270) {  //EAST 270
-            //            console.log("moving forward")
-            changedX = currentX * stepX + stepX
-            items.player.x = changedX
-            items.player.y = changedY
+        else if ( currentInstruction == "Turn Left") {
+            changedRotation = (currentRotation - 90) % 360
+            console.log("turning left emmitting signal")
+            items.player.rotation = changedRotation
         }
-        else if(nextX - currentX < 0 && currentRotation == 90){ //WEST 90
-            changedX = currentX * stepX - stepX
-            items.player.x = changedX
-            items.player.y = changedY
+        else if ( currentInstruction == "Turn Right") {
+            changedRotation = (currentRotation + 90) % 360
+            console.log("turning left emmitting signal")
+            items.player.rotation = changedRotation
         }
-        else if (nextY - currentY < 0 && currentRotation == 180) { //NORTH 0
-            //            console.log("moving up")
-            changedY = currentY * stepY - stepY
-            items.player.x = changedX
-            items.player.y = changedY
-        }
-        else if (nextY - currentY > 0 && currentRotation == 0) { //SOUTH 180
-            changedY = currentY * stepY + stepY
-            items.player.x = changedX
-            items.player.y = changedY
-        }
-        else {
-            // add an animation to indicate that its not possible
-            flag = 1
-            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
-            console.log("dead end")
-        }
-        ++tuxIceBlockNumber;
-    }
 
-    else if ( currentInstruction == "Turn Left") {
-        changedRotation = (currentRotation - 90) % 360
-        //        console.log("turning left")
-        items.player.rotation = changedRotation
-    }
-    else if ( currentInstruction == "Turn Right") {
-        changedRotation = (currentRotation + 90) % 360
-        items.player.rotation = changedRotation
+        j = j + 1;
+        busy = true
+        checkSuccess()
     }
 }
 
 function checkSuccess() {
     if(changedX === items.fish.x && changedY === items.fish.y){
-        tuxIsMoving = false
+        console.log("success")
+        playerCode = []
+        j = 0
+        busy = false
         items.bonus.good("smiley")
     }
 }

@@ -119,13 +119,13 @@ ActivityBase {
         ListModel {
             id: instructionModel
             ListElement {
-                name: "Move Forward"
+                name: qsTr("Move Forward")
             }
             ListElement {
-                name: "Turn Left"
+                name: qsTr("Turn Left")
             }
             ListElement {
-                name: "Turn Right"
+                name: qsTr("Turn Right")
             }
         }
 
@@ -155,46 +155,45 @@ ActivityBase {
             source: "qrc:/gcompris/src/activities/maze/resource/" + "tux_top_south.svg"
             sourceSize.width: background.width / 10
             x: 0; y: 0; z: 11
-            property int duration: 0
+            property int duration: 1000
 
             signal init
 
             onInit: {
                 player.rotation = -90
-                //               Activity.runCode()
             }
 
             Behavior on x {
-                NumberAnimation {
+                SmoothedAnimation {
                     duration: player.duration
+                    reversingMode: SmoothedAnimation.Immediate
+                    onRunningChanged: {
+                        Activity.busy = !Activity.busy
+                        Activity.playerRunningChanged()
+                    }
                 }
             }
 
             Behavior on y {
-                NumberAnimation {
+                SmoothedAnimation {
                     duration: player.duration
+                    reversingMode: SmoothedAnimation.Immediate
+                    onRunningChanged: {
+                        Activity.busy = !Activity.busy
+                        Activity.playerRunningChanged()
+                    }
                 }
             }
 
-            //            Behavior on x {
-            //                SmoothedAnimation {
-            //                    reversingMode: SmoothedAnimation.Immediate
-            //                    onRunningChanged: Activity.playerRunningChanged()
-            //                    duration: player.duration
-            //                }
-            //            }
-            //            Behavior on y {
-            //                SmoothedAnimation {
-            //                    reversingMode: SmoothedAnimation.Immediate
-            //                    onRunningChanged: Activity.playerRunningChanged()
-            //                    duration: player.duration
-            //                }
-            //            }
 
             Behavior on rotation {
                 RotationAnimation {
                     duration: player.duration / 2
                     direction: RotationAnimation.Shortest
+                    onRunningChanged: {
+                        Activity.busy = !Activity.busy
+                        Activity.playerRunningChanged()
+                    }
                 }
             }
 
