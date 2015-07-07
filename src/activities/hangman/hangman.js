@@ -91,6 +91,7 @@ function initLevel() {
     for(var i in wordList)
         subLevelsLeft.push(i)
     
+    level = items.bar.level
     initSubLevel();
     {	//to set the layout...populate
         var letters = new Array();
