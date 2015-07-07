@@ -381,7 +381,7 @@ function previousLevel() {
 function nextSubLevel() {
     if( ++currentSubLevel >= maxSubLevel) {
         currentSubLevel = 0
-        items.bonus.good("lion");
+        items.bonusTimer.start();
     } else
         initSubLevel();
 }
