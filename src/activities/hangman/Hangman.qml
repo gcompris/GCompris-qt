@@ -90,7 +90,15 @@ ActivityBase {
             property int goodWordIndex
             property alias englishFallbackDialog: englishFallbackDialog
             
+             function playWord() {
+                if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
+                    voiceError();
+            }
+            onGoodWordChanged: playWord()
         }
+
+            
+        
         
         function handleResourceRegistered(resource)
         {
