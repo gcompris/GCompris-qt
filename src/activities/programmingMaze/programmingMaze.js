@@ -50,9 +50,8 @@ var changedY
 var currentRotation
 var changedRotation
 var flag = 0
-var tuxIsMoving = false
 var j =0
-var busy = false
+//var busy = false
 
 function start(items_) {
     items = items_
@@ -74,7 +73,8 @@ function initLevel() {
     initialX = mazeBlocks[currentLevel][0][0] * stepX
     initialY = mazeBlocks[currentLevel][0][1] * stepY
 
-    busy = false
+//    busy = false
+    items.player.tuxIsBusy = false
     j = 0
     playerCode = []
 
@@ -86,7 +86,6 @@ function initLevel() {
     currentRotation = -90
     changedRotation = -90
     flag = 0
-    tuxIsMoving = false
 
     items.player.init()
 }
@@ -104,36 +103,29 @@ function runCode() {
 
     //initiallize back to starting position and code
     playerCode = []
-    busy = false
-
+    items.player.tuxIsBusy = false
     for(var i = 0; i < items.answerModel.count; i++) {
         playerCode.push(items.answerModel.get([i]).name)
     }
 
-
-    if(flag == 1) {
-        busy = false
+    if(!items.player.tuxIsBusy) {
+        executeNextInstruction()
     }
-
-    if(!busy) {
-        executeFirstInstruction()
-    }
-    checkSuccess()
 }
 
 
 function playerRunningChanged() {
 
-    if(busy) {
-        //do nothing
-    }
-    else {
+    if(!items.player.tuxIsBusy) {
+        if(flag == 1) {
+            deadEnd()
+        }
         executeNextInstruction()
     }
 }
 
 function executeNextInstruction() {
-    if(!busy && j < playerCode.length ) {
+    if(!items.player.tuxIsBusy && j < playerCode.length ) {
         changedX = items.player.x
         changedY = items.player.y
         currentRotation = getPlayerRotation()
@@ -177,6 +169,7 @@ function executeNextInstruction() {
                 flag = 1
                 items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
                 console.log("dead end")
+                return
             }
         }
 
@@ -189,75 +182,18 @@ function executeNextInstruction() {
             changedRotation = (currentRotation + 90) % 360
             items.player.rotation = changedRotation
         }
-        j = j+ 1
-        busy = true
+        j = j + 1
+//        busy = true
+        items.player.tuxIsBusy = true
         checkSuccess()
     }
-
 }
 
-function executeFirstInstruction() {
-    if(!busy && j < playerCode.length) {
-        changedX = items.player.x
-        changedY = items.player.y
-        currentRotation = getPlayerRotation()
-
-        currentInstruction = playerCode[j]
-        console.log(j + " executing first " +currentInstruction)
-        currentBlock = tuxIceBlockNumber
-        nextBlock = tuxIceBlockNumber + 1
-        currentX = mazeBlocks[currentLevel][currentBlock][0]
-        currentY = mazeBlocks[currentLevel][currentBlock][1]
-        nextX = mazeBlocks[currentLevel][nextBlock][0]
-        nextY = mazeBlocks[currentLevel][nextBlock][1]
-
-        if ( currentInstruction == "Move Forward") {
-            ++tuxIceBlockNumber;
-            if (nextX - currentX > 0 && currentRotation == 270) {  //EAST 270
-                changedX = currentX * stepX + stepX
-                console.log("moving forward emitting the signal")
-                items.player.x = changedX
-                items.player.y = changedY
-            }
-            else if(nextX - currentX < 0 && currentRotation == 90){ //WEST 90
-                changedX = currentX * stepX - stepX
-                items.player.x = changedX
-                items.player.y = changedY
-            }
-            else if (nextY - currentY < 0 && currentRotation == 180) { //NORTH 0
-                changedY = currentY * stepY - stepY
-                console.log("moving up emitting the signal")
-                items.player.x = changedX
-                items.player.y = changedY
-            }
-            else if (nextY - currentY > 0 && currentRotation == 0) { //SOUTH 180
-                changedY = currentY * stepY + stepY
-                items.player.x = changedX
-                items.player.y = changedY
-            }
-            else {
-                // add an animation to indicate that its not possible
-                flag = 1
-                items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
-                console.log("dead end")
-            }
-        }
-
-        else if ( currentInstruction == "Turn Left") {
-            changedRotation = (currentRotation - 90) % 360
-            console.log("turning left emmitting signal")
-            items.player.rotation = changedRotation
-        }
-        else if ( currentInstruction == "Turn Right") {
-            changedRotation = (currentRotation + 90) % 360
-            console.log("turning left emmitting signal")
-            items.player.rotation = changedRotation
-        }
-
-        j = j + 1;
-        busy = true
-        checkSuccess()
-    }
+function deadEnd() {
+    playerCode = []
+    j =0
+    items.player.tuxIsBusy = false
+    console.log("ending")
 }
 
 function checkSuccess() {
@@ -265,7 +201,8 @@ function checkSuccess() {
         console.log("success")
         playerCode = []
         j = 0
-        busy = false
+//        busy = false
+        items.player.tuxIsBusy = false
         items.bonus.good("smiley")
     }
 }

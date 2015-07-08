@@ -156,6 +156,7 @@ ActivityBase {
             sourceSize.width: background.width / 10
             x: 0; y: 0; z: 11
             property int duration: 1000
+            property bool tuxIsBusy: false
 
             signal init
 
@@ -163,13 +164,18 @@ ActivityBase {
                 player.rotation = -90
             }
 
+            onTuxIsBusyChanged: {
+                Activity.playerRunningChanged()
+            }
+
             Behavior on x {
                 SmoothedAnimation {
                     duration: player.duration
                     reversingMode: SmoothedAnimation.Immediate
                     onRunningChanged: {
-                        Activity.busy = !Activity.busy
-                        Activity.playerRunningChanged()
+                        player.tuxIsBusy = !player.tuxIsBusy
+                        //                        Activity.busy = !Activity.busy
+                        //                        Activity.playerRunningChanged()
                     }
                 }
             }
@@ -179,8 +185,9 @@ ActivityBase {
                     duration: player.duration
                     reversingMode: SmoothedAnimation.Immediate
                     onRunningChanged: {
-                        Activity.busy = !Activity.busy
-                        Activity.playerRunningChanged()
+                        player.tuxIsBusy = !player.tuxIsBusy
+                        //                        Activity.busy = !Activity.busy
+                        //                        Activity.playerRunningChanged()
                     }
                 }
             }
@@ -191,8 +198,9 @@ ActivityBase {
                     duration: player.duration / 2
                     direction: RotationAnimation.Shortest
                     onRunningChanged: {
-                        Activity.busy = !Activity.busy
-                        Activity.playerRunningChanged()
+                        player.tuxIsBusy = !player.tuxIsBusy
+                        //                        Activity.busy = !Activity.busy
+                        //                        Activity.playerRunningChanged()
                     }
                 }
             }
@@ -222,6 +230,7 @@ ActivityBase {
             spacing: 5 * ApplicationInfo.ratio
             interactive: false
             model: instructionModel
+            clip: true
 
             header: instructionHeaderComponent
 
@@ -284,11 +293,11 @@ ActivityBase {
                     signal clicked
                     onClicked: {
                         clickedAnim.start()
-                        answerModel.append({"name": instructionText.text, "selected": false})
+                        answerModel.append({"name": instructionText.text})
                     }
                     onPressed: {
                         clickedAnim.start()
-                        answerModel.append({"name": instructionText.text, "selected": false})
+                        answerModel.append({"name": instructionText.text})
                     }
                 }
 
@@ -314,88 +323,105 @@ ActivityBase {
         // insert data upon clicking the list items into this answerData
         // and then process it to run the code
 
-        ListView {
-            id: answerSheet
-
+        ScrollView {
+            id: answerSheetScroller
             width: parent.width * 0.350
             height: parent.height * 0.80 - bar.height
             anchors.right: parent.right
             anchors.top: parent.top
             anchors.margins: 10 * ApplicationInfo.ratio
 
-            orientation: Qt.Vertical
-            verticalLayoutDirection: ListView.TopToBottom
-            spacing: 5 * ApplicationInfo.ratio
-            interactive: false
-            model: answerModel
+            ListView {
+                id: answerSheet
 
-            header: answerHeaderComponent
-            footer: answerFooterComponent
+                width: parent.width
+                height: parent.height
 
-            delegate: Item {
-                width: answerSheet.width - answerSheet.spacing
-                height: answerSheet.height / answerModel.count - answerSheet.spacing
+                orientation: Qt.Vertical
+                verticalLayoutDirection: ListView.TopToBottom
+                spacing: 5 * ApplicationInfo.ratio
+                interactive: false
+                model: answerModel
+                clip: true
 
-                Rectangle {
-                    id: answerRect
-                    anchors.fill: parent
-                    color: "#005B9A"
-                    opacity: 1
-                }
+                header: answerHeaderComponent
 
-                Image {
-                    source: "qrc:/gcompris/src/core/resource/button.svg"
-                    sourceSize {  height: parent.height; width: parent.width }
-                    width: sourceSize.width
-                    height: sourceSize.height
-                    smooth: false
-                }
+                delegate: Item {
+                    width: answerSheet.width - answerSheet.spacing
+                    height: answerSheet.height / 5 - answerSheet.spacing
 
-                GCText {
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.verticalCenter: parent.verticalCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    width: parent.width
-                    fontSizeMode: Text.Fit
-                    minimumPointSize: 7
-                    fontSize: regularSize
-                    wrapMode: Text.WordWrap
-                    color: "white"
-                    text: name
-                }
-
-                Image {
-                    source: "qrc:/gcompris/src/core/resource/bar_exit.svg"
-                    sourceSize {  height: parent.height ; width: parent.width }
-                    width: sourceSize.width / 8
-                    height: sourceSize.height / 3
-                    smooth: false
-
-                    anchors.right: parent.right
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.rightMargin: 10 * ApplicationInfo.ratio
-
-                    MouseArea {
-                        id: answerRemove
+                    Rectangle {
+                        id: answerRect
                         anchors.fill: parent
-                        onPressed: {
-                            answerModel.remove(model.index)
+                        color: "#005B9A"
+                        opacity: 1
+                    }
+
+                    Image {
+                        source: "qrc:/gcompris/src/core/resource/button.svg"
+                        sourceSize {  height: parent.height; width: parent.width }
+                        width: sourceSize.width
+                        height: sourceSize.height
+                        smooth: false
+                    }
+
+                    GCText {
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        anchors.verticalCenter: parent.verticalCenter
+                        horizontalAlignment: Text.AlignHCenter
+                        width: parent.width
+                        fontSizeMode: Text.Fit
+                        minimumPointSize: 7
+                        fontSize: regularSize
+                        wrapMode: Text.WordWrap
+                        color: "white"
+                        text: name
+                    }
+
+                    Image {
+                        source: "qrc:/gcompris/src/core/resource/bar_exit.svg"
+                        sourceSize {  height: parent.height ; width: parent.width }
+                        width: sourceSize.width / 8
+                        height: sourceSize.height / 3
+                        smooth: false
+
+                        anchors.right: parent.right
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.rightMargin: 10 * ApplicationInfo.ratio
+
+                        MouseArea {
+                            id: answerRemove
+                            anchors.fill: parent
+                            onPressed: {
+                                answerModel.remove(model.index)
+                            }
                         }
+
                     }
 
                 }
-
             }
+
         }
 
-        Component {
-            id: answerFooterComponent
+//        Component {
+//            id: answerFooterComponent
+//            anchors.top: answerSheet.bottom
+        Item {
+            width: background.width / 8
+            height: background.height / 8
+            anchors.top: answerSheetScroller.bottom
+            anchors.topMargin: 10 * ApplicationInfo.ratio
+            anchors.left: answerSheetScroller.left
+
             Image {
                 id: runCode
+                width: parent.width
+                height: parent.height
+
                 source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
-                width: background.width / 8
-                height: background.height / 8
                 fillMode: Image.PreserveAspectFit
+
 
                 MouseArea {
                     id: runCodeMouseArea
