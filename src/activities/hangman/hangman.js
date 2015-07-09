@@ -33,7 +33,7 @@ var currentSubLevel
 var wordlength 
 var maxLevel 
 var maxSubLevel
-var level 
+var level = null;
 var sublevel 
 var numberOfLevel 
 var items
@@ -91,7 +91,8 @@ function initLevel() {
     for(var i in wordList)
         subLevelsLeft.push(i)
     
-    level = items.bar.level
+    level = items.wordlist.getLevelWordList(currentLevel + 1);
+    console.log(level+"france");
     initSubLevel();
     {	//to set the layout...populate
         var letters = new Array();
@@ -128,7 +129,7 @@ function initLevel() {
 }
 
 function processKeyPress(text) {
-    console.log(text+"\n");
+    console.log(text+"idiot");
     var flag = 0;
     var inital = wordi;
     console.log(inital);
@@ -177,8 +178,9 @@ function nextLevel() {
 
 function previousLevel() {
     if(--currentLevel < 0) {
-        currentLevel = numberOfLevel - 1
+        currentLevel = maxLevel - 1
     }
+    currentSubLevel = 0;
     initLevel();
 }
 
@@ -209,8 +211,8 @@ function initSubLevel()
 
 function nextSublevel()
 {	if(maxsublevel<= ++currentSubLevel)
-    {		currentSubLevel=1;	}
-    initSubLevel();
+        {		currentSubLevel=1;	}
+        initSubLevel();
 }
 
 function focusTextInput() {

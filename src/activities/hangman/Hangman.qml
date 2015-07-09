@@ -88,6 +88,7 @@ ActivityBase {
             property alias parser: parser
             property variant goodWord
             property int goodWordIndex
+            property alias wordlist:wordlist
             property alias englishFallbackDialog: englishFallbackDialog
             
              function playWord() {
@@ -103,12 +104,16 @@ ActivityBase {
         function handleResourceRegistered(resource)
         {
             if (resource == wordsResource)
-                Activity.start(items);
+	    {    Activity.start(items);
+	         Activity.focusTextInput();
+	         
+	    }
+	    
         }
 
 
-        onStart: { Activity.start(items);
-            Activity.focusTextInput();
+        onStart: {  
+                   
 
             activity.audioVoices.error.connect(voiceError)
             activity.audioVoices.done.connect(voiceDone)
@@ -136,7 +141,7 @@ ActivityBase {
             color:"black"
             font.pointSize:60
             anchors.horizontalCenter:parent.horizontalCenter
-            y:background.height/4
+            y:background.height/3
             
         }
         
@@ -148,8 +153,10 @@ ActivityBase {
             enabled: !ApplicationInfo.isMobile
             focus: true
             visible:false
+            
             onTextChanged: {
                 if (text != "") {
+		    console.log("congo");
                     Activity.processKeyPress(text);
                     text = "";
                 }
@@ -161,8 +168,8 @@ ActivityBase {
         
         Image {    id:imageframe
             visible:true
-            width:parent.width/5
-            height:parent.height/5
+            width:parent.width/4
+            height:parent.height/4
             anchors.horizontalCenter:background.horizontalCenter
             y:background.height/10
             source:dataSetUrl+"imageid_frame.svg"
@@ -350,6 +357,17 @@ ActivityBase {
             focus: true
             active: background.downloadWordsNeeded
             onStatusChanged: if (status == Loader.Ready) item.start()
+        }
+        
+       Wordlist {
+            id: wordlist
+            defaultFilename: activity.dataSetUrl + "content-en.json"
+            // To switch between locales: xx_XX stored in configuration and
+            // possibly correct xx if available (ie fr_FR for french but dataset is fr.)
+            useDefault: false
+            filename: ""
+
+            onError: console.log("Hangman: Wordlist error: " + msg);
         }
 
     }
