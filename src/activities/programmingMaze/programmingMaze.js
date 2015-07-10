@@ -26,11 +26,51 @@ var numberOfLevel = 4
 var items
 var reverseCountUrl = "qrc:/gcompris/src/activities/reversecount/resource/"
 var mazeBlocks = [
-            [[1,2],[2,2],[3,2]],
-            [[1,3],[2,3],[2,2],[2,1],[3,1]],
-            [[1,1],[2,1],[3,1],[3,2],[3,3],[2,3],[1,3]],
-            [[0,3],[1,3],[1,2],[2,2],[2,1],[3,1]]
+            //level one
+            [
+                //maze blocks
+                [[1,2],[2,2],[3,2]],
+                //fish index
+                [[3,2]],
+                //instruction set
+                [qsTr("move-forward"),
+                 qsTr("turn-left"),
+                 qsTr("turn-right")]
+            ],
+            //level two
+            [
+                [[1,3],[2,3],[2,2],[2,1],[3,1]],
+                //fish index
+                [[3,1]],
+                //instruction set
+                [qsTr("move-forward"),
+                 qsTr("turn-left"),
+                 qsTr("turn-right")]
+            ],
+            //level three
+            [
+                [[1,1],[2,1],[3,1],[3,2],[3,3],[2,3],[1,3]],
+                [[1,3]],
+                //instruction set
+                [qsTr("move-forward"),
+                 qsTr("turn-left"),
+                 qsTr("turn-right"),
+                 qsTr("call-procedure")]
+            ],
+            //level four
+            [
+                [[0,3],[1,3],[1,2],[2,2],[2,1],[3,1]],
+                [[3,1]],
+                //instruction set
+                [qsTr("move-forward"),
+                 qsTr("turn-left"),
+                 qsTr("turn-right"),
+                 qsTr("call-procedure")]
+            ]
         ]
+//[1,3],[2,3],[2,2],[2,1],[3,1]
+//[1,1],[2,1],[3,1],[3,2],[3,3],[2,3],[1,3]
+//[0,3],[1,3],[1,2],[2,2],[2,1],[3,1]
 var countOfMazeBlocks
 var initialX
 var initialY
@@ -51,7 +91,11 @@ var currentRotation
 var changedRotation
 var flag = 0
 var j =0
-//var busy = false
+var blocksDataIndex = 0
+var blocksFishIndex = 1
+var blocksInstructionIndex = 2
+var levelInstructions
+var url = "qrc:/gcompris/src/activities/programmingMaze/resource/"
 
 function start(items_) {
     items = items_
@@ -64,24 +108,30 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    items.mazeModel.model = mazeBlocks[currentLevel]
+    items.mazeModel.model = mazeBlocks[currentLevel][blocksDataIndex]
     items.answerModel.clear()
-    countOfMazeBlocks = mazeBlocks[currentLevel].length
+    countOfMazeBlocks = mazeBlocks[currentLevel][blocksDataIndex].length
+
 
     stepX = items.background.width / 8
     stepY = (items.background.height - items.background.height/8) / 8
-    initialX = mazeBlocks[currentLevel][0][0] * stepX
-    initialY = mazeBlocks[currentLevel][0][1] * stepY
+    initialX = mazeBlocks[currentLevel][blocksDataIndex][0][0] * stepX
+    initialY = mazeBlocks[currentLevel][blocksDataIndex][0][1] * stepY
 
-//    busy = false
+    items.instructionModel.clear()
+    levelInstructions = mazeBlocks[currentLevel][blocksInstructionIndex]
+    for (var i = 0; i < levelInstructions.length ; i++) {
+        items.instructionModel.append({"name":levelInstructions[i]});
+    }
+
     items.player.tuxIsBusy = false
     j = 0
     playerCode = []
 
     items.player.x = initialX
     items.player.y = initialY
-    items.fish.x = mazeBlocks[currentLevel][countOfMazeBlocks -1][0] * stepX
-    items.fish.y = mazeBlocks[currentLevel][countOfMazeBlocks -1][1] * stepY
+    items.fish.x = mazeBlocks[currentLevel][blocksFishIndex][0][0] * stepX
+    items.fish.y = mazeBlocks[currentLevel][blocksFishIndex][0][1] * stepY
     tuxIceBlockNumber = 0
     currentRotation = -90
     changedRotation = -90
@@ -134,12 +184,12 @@ function executeNextInstruction() {
         console.log(j + " executing next " +currentInstruction)
         currentBlock = tuxIceBlockNumber
         nextBlock = tuxIceBlockNumber + 1
-        currentX = mazeBlocks[currentLevel][currentBlock][0]
-        currentY = mazeBlocks[currentLevel][currentBlock][1]
-        nextX = mazeBlocks[currentLevel][nextBlock][0]
-        nextY = mazeBlocks[currentLevel][nextBlock][1]
+        currentX = mazeBlocks[currentLevel][blocksDataIndex][currentBlock][0]
+        currentY = mazeBlocks[currentLevel][blocksDataIndex][currentBlock][1]
+        nextX = mazeBlocks[currentLevel][blocksDataIndex][nextBlock][0]
+        nextY = mazeBlocks[currentLevel][blocksDataIndex][nextBlock][1]
 
-        if ( currentInstruction == "Move Forward") {
+        if ( currentInstruction == "move-forward") {
             ++tuxIceBlockNumber;
             if (nextX - currentX > 0 && currentRotation == 270) {  //EAST 270
                 changedX = currentX * stepX + stepX
@@ -173,17 +223,16 @@ function executeNextInstruction() {
             }
         }
 
-        else if ( currentInstruction == "Turn Left") {
+        else if ( currentInstruction == "turn-left") {
             changedRotation = (currentRotation - 90) % 360
             //        console.log("turning left")
             items.player.rotation = changedRotation
         }
-        else if ( currentInstruction == "Turn Right") {
+        else if ( currentInstruction == "turn-right") {
             changedRotation = (currentRotation + 90) % 360
             items.player.rotation = changedRotation
         }
         j = j + 1
-//        busy = true
         items.player.tuxIsBusy = true
         checkSuccess()
     }
@@ -194,6 +243,7 @@ function deadEnd() {
     j =0
     items.player.tuxIsBusy = false
     console.log("ending")
+    initLevel();
 }
 
 function checkSuccess() {
@@ -201,7 +251,6 @@ function checkSuccess() {
         console.log("success")
         playerCode = []
         j = 0
-//        busy = false
         items.player.tuxIsBusy = false
         items.bonus.good("smiley")
     }
