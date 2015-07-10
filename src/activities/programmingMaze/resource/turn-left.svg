@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="svg2"
+    sodipodi:docname="compulsory ahead only.svg"
+    viewBox="0 0 744.09 1052.4"
+    version="1.1"
+    inkscape:version="0.47 r22583"
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-y="25"
+      pagecolor="#ffffff"
+      inkscape:window-height="716"
+      inkscape:window-maximized="1"
+      inkscape:zoom="0.35368524"
+      inkscape:window-x="1"
+      showgrid="false"
+      borderopacity="1.0"
+      inkscape:current-layer="layer1"
+      inkscape:cx="470.15093"
+      inkscape:cy="538.61003"
+      inkscape:window-width="1364"
+      inkscape:pageopacity="0.0"
+      inkscape:document-units="px"
+  />
+  <g
+      id="layer1"
+      inkscape:label="Layer 1"
+      inkscape:groupmode="layer"
+    >
+    <g
+        id="g3674"
+        transform="translate(786.01 -53.72)"
+      >
+      <rect
+          id="rect3605"
+          ry="3.9747"
+          style="color:#000000;fill:#000000"
+          transform="scale(1,-1)"
+          height="334.5"
+          width="44.638"
+          y="-640.19"
+          x="453.24"
+      />
+      <path
+          id="path3607"
+          style="color:#000000;fill:#000000"
+          sodipodi:type="star"
+          sodipodi:sides="3"
+          sodipodi:r1="99.959175"
+          sodipodi:r2="50.013184"
+          sodipodi:arg1="0.5404195"
+          sodipodi:arg2="1.5304663"
+          transform="matrix(.73472 0 0 -.55431 1217.1 852.77)"
+          inkscape:randomized="0"
+          sodipodi:cy="358.07648"
+          sodipodi:cx="-1011.4286"
+          inkscape:rounded="0"
+          inkscape:flatsided="false"
+          d="m-925.71 409.51-83.698-1.4561-89.412-1.456 43.11-71.756 45.967-76.705 40.588 73.212 43.445 78.161z"
+      />
+    </g
+    >
+    <rect
+        id="rect3811"
+        ry="4.1611"
+        style="color:#000000;fill:#e51300"
+        transform="matrix(-.73962 .67303 .68344 .73001 0 0)"
+        height="618.39"
+        width="51.017"
+        y="1139.7"
+        x="-869.45"
+    />
+    <g
+        id="g3889"
+      >
+      <path
+          id="path3609"
+          sodipodi:rx="310"
+          sodipodi:ry="324.28571"
+          style="color:#000000;fill:#15155a"
+          sodipodi:type="arc"
+          d="m705.71 530.93a310 324.29 0 1 1 -620 0 310 324.29 0 1 1 620 0z"
+          transform="matrix(.93160 0 0 .90845 36.964 75.465)"
+          sodipodi:cy="530.93359"
+          sodipodi:cx="395.71429"
+      />
+      <g
+          id="g3885"
+          transform="matrix(-.013330 -.99991 .98598 -.013518 -166.76 956.68)"
+        >
+        <rect
+            id="rect3592"
+            style="color:#000000;fill:#f9f9fc"
+            ry="3.8314"
+            height="322.44"
+            width="45.714"
+            y="452.06"
+            x="379.4"
+        />
+        <path
+            id="path3597"
+            style="color:#000000;fill:#f9f9fc"
+            sodipodi:type="star"
+            sodipodi:sides="3"
+            sodipodi:r1="99.959175"
+            sodipodi:r2="50.013184"
+            sodipodi:arg1="0.5404195"
+            sodipodi:arg2="1.5304663"
+            transform="matrix(.75243 0 0 .64235 1161.7 202.92)"
+            inkscape:randomized="0"
+            sodipodi:cy="358.07648"
+            sodipodi:cx="-1011.4286"
+            inkscape:rounded="0"
+            inkscape:flatsided="false"
+            d="m-925.71 409.51-83.698-1.4561-89.412-1.456 43.11-71.756 45.967-76.705 40.588 73.212 43.445 78.161z"
+        />
+      </g
+      >
+    </g
+    >
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >Indian road sign - Compulsory turn left</dc:title
+        >
+        <dc:date
+          >2012-09-10T00:55:46</dc:date
+        >
+        <dc:description
+          >created by swecha developer and contributer Srujana.</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/172256/indian-road-sign---compulsory-turn-left-by-ksrujana96-172256</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >ksrujana96</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >Compulsory turn left</rdf:li
+            >
+            <rdf:li
+              >indian road sign</rdf:li
+            >
+            <rdf:li
+              >road sign</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>

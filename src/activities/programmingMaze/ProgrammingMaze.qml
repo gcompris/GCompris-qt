@@ -89,44 +89,35 @@ ActivityBase {
 
         Keys.onRightPressed: {
             keyNavigation = true
-            instruction.incrementCurrentIndex()
+            instruction.moveCurrentIndexRight()
         }
         Keys.onLeftPressed:  {
             keyNavigation = true
-            instruction.decrementCurrentIndex()
+            instruction.moveCurrentIndexLeft()
         }
         Keys.onDownPressed:  {
             keyNavigation = true
-            instruction.incrementCurrentIndex()
+            instruction.moveCurrentIndexDown()
         }
         Keys.onUpPressed:  {
             keyNavigation = true
-            instruction.decrementCurrentIndex()
+            instruction.moveCurrentIndexUp()
         }
         Keys.onSpacePressed:  {
             keyNavigation = true
-            instruction.currentItem.children[3].clicked()
+            instruction.currentItem.mouseAreaInstruction.clicked()
         }
         Keys.onEnterPressed:  {
             keyNavigation = true
-            instruction.currentItem.children[3].clicked()
+            instruction.currentItem.mouseAreaInstruction.clicked()
         }
         Keys.onReturnPressed:  {
             keyNavigation = true
-            instruction.currentItem.children[3].clicked()
+            instruction.currentItem.mouseAreaInstruction.clicked()
         }
 
         ListModel {
             id: instructionModel
-            ListElement {
-                name: qsTr("Move Forward")
-            }
-            ListElement {
-                name: qsTr("Turn Left")
-            }
-            ListElement {
-                name: qsTr("Turn Right")
-            }
         }
 
         ListModel {
@@ -174,8 +165,6 @@ ActivityBase {
                     reversingMode: SmoothedAnimation.Immediate
                     onRunningChanged: {
                         player.tuxIsBusy = !player.tuxIsBusy
-                        //                        Activity.busy = !Activity.busy
-                        //                        Activity.playerRunningChanged()
                     }
                 }
             }
@@ -186,8 +175,6 @@ ActivityBase {
                     reversingMode: SmoothedAnimation.Immediate
                     onRunningChanged: {
                         player.tuxIsBusy = !player.tuxIsBusy
-                        //                        Activity.busy = !Activity.busy
-                        //                        Activity.playerRunningChanged()
                     }
                 }
             }
@@ -199,8 +186,6 @@ ActivityBase {
                     direction: RotationAnimation.Shortest
                     onRunningChanged: {
                         player.tuxIsBusy = !player.tuxIsBusy
-                        //                        Activity.busy = !Activity.busy
-                        //                        Activity.playerRunningChanged()
                     }
                 }
             }
@@ -215,106 +200,111 @@ ActivityBase {
             x: 0; y: 0; z: 5
         }
 
-        ListView {
+        property int buttonWidth: background.width / 10
+        property int buttonHeight: background.height / 10
+        property int answerButtonWidth: background.width / 10
+        property int answerButtonHeight: background.height / 10
+
+        GridView {
             id: instruction
             width: parent.width * 0.625
             height: parent.height * 0.375 - bar.height / 2
+            cellWidth: background.buttonWidth
+            cellHeight: background.buttonHeight
 
             anchors.left: parent.left
             anchors.bottom: bar.top
             anchors.margins: 10 * ApplicationInfo.ratio
             anchors.bottomMargin: bar.height / 2
 
-            orientation: Qt.Vertical
-            verticalLayoutDirection: ListView.TopToBottom
-            spacing: 5 * ApplicationInfo.ratio
             interactive: false
             model: instructionModel
-            clip: true
 
             header: instructionHeaderComponent
 
             highlight: Rectangle {
-                width: instruction.width
-                height: instruction.buttonHeight
+                width: buttonWidth
+                height: buttonHeight
                 color: "lightsteelblue"
                 border.width: 3
                 border.color: "black"
                 visible: background.keyNavigation
-                y: instruction.currentItem.y
-                Behavior on y { SpringAnimation { spring: 3; damping: 0.2 } }
+                x: instruction.currentItem.x
+                Behavior on x { SpringAnimation { spring: 3; damping: 0.2 } }
             }
             highlightFollowsCurrentItem: false
             focus: true
             keyNavigationWraps: true
 
-            property int buttonHeight: instruction.height / instructionModel.count - instruction.spacing
+            delegate: Column {
+                spacing: 10 * ApplicationInfo.ratio
+                property alias mouseAreaInstruction: mouseAreaInstruction
 
-            delegate: Item {
-                width: instruction.width - instruction.spacing
-                height: instruction.buttonHeight
+                Item {
+                    width: background.buttonWidth
+                    height: background.buttonHeight
 
-                Rectangle {
-                    id: rect
-                    anchors.fill: parent
-                    gradient: Gradient {
-                        GradientStop { position: 0.0; color: "#0191C8" }
-                        GradientStop { position: 1.0; color: "#005B9A" }
-                    }
-                    opacity: 0.5
+                    Rectangle {
+                        id: rect
+                        width: parent.width
+                        height: parent.height
+                        anchors.fill: parent
+                        gradient: Gradient {
+                            GradientStop { position: 0.0; color: "#0191C8" }
+                            GradientStop { position: 1.0; color: "#005B9A" }
+                        }
+                        opacity: 0.5
 
-                }
-
-                Image {
-                    source: "qrc:/gcompris/src/core/resource/button.svg"
-                    sourceSize {  height: parent.height; width: parent.width }
-                    width: sourceSize.width
-                    height: sourceSize.height
-                    smooth: false
-                }
-
-                GCText {
-                    id: instructionText
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.verticalCenter: parent.verticalCenter
-                    horizontalAlignment: Text.AlignHCenter
-                    width: instruction.width
-                    fontSizeMode: Text.Fit
-                    minimumPointSize: 7
-                    fontSize: regularSize
-                    wrapMode: Text.WordWrap
-                    color: "white"
-                    text: name
-                }
-
-                MouseArea {
-                    id: mouseArea
-                    anchors.fill: parent
-                    signal clicked
-                    onClicked: {
-                        clickedAnim.start()
-                        answerModel.append({"name": instructionText.text})
-                    }
-                    onPressed: {
-                        clickedAnim.start()
-                        answerModel.append({"name": instructionText.text})
-                    }
-                }
-
-                SequentialAnimation {
-                    id: clickedAnim
-                    PropertyAnimation {
-                        target: rect
-                        property: "opacity"
-                        to: "1"
-                        duration: 300
                     }
 
-                    PropertyAnimation {
-                        target: rect
-                        property: "opacity"
-                        to: "0.5"
-                        duration: 300
+                    Image {
+                        id: icon
+                        source: Activity.url + name + ".svg"
+                        sourceSize {width: parent.width; height: parent.height}
+                        width: sourceSize.width
+                        height: sourceSize.height
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        smooth: false
+                    }
+
+
+                    Image {
+                        source: "qrc:/gcompris/src/core/resource/button.svg"
+                        sourceSize {  height: parent.height; width: parent.width }
+                        width: sourceSize.width
+                        height: sourceSize.height
+                        smooth: false
+                    }
+
+                    MouseArea {
+                        id: mouseAreaInstruction
+                        anchors.fill: parent
+                        signal clicked
+                        onClicked: {
+                            clickedAnim.start()
+                            answerModel.append({"name": name})
+                        }
+                        onPressed: {
+                            clickedAnim.start()
+                            answerModel.append({"name": name})
+                        }
+                    }
+
+                    SequentialAnimation {
+                        id: clickedAnim
+                        PropertyAnimation {
+                            target: rect
+                            property: "opacity"
+                            to: "1"
+                            duration: 300
+                        }
+
+                        PropertyAnimation {
+                            target: rect
+                            property: "opacity"
+                            to: "0.5"
+                            duration: 300
+                        }
                     }
                 }
             }
@@ -323,32 +313,27 @@ ActivityBase {
         // insert data upon clicking the list items into this answerData
         // and then process it to run the code
 
-        ScrollView {
-            id: answerSheetScroller
+        GridView {
+            id: answerSheet
+
             width: parent.width * 0.350
             height: parent.height * 0.80 - bar.height
+            cellWidth: background.answerButtonWidth
+            cellHeight: background.answerButtonHeight
             anchors.right: parent.right
             anchors.top: parent.top
             anchors.margins: 10 * ApplicationInfo.ratio
 
-            ListView {
-                id: answerSheet
+            interactive: false
+            model: answerModel
+            clip: true
+            header: answerHeaderComponent
 
-                width: parent.width
-                height: parent.height
+            delegate: Column {
 
-                orientation: Qt.Vertical
-                verticalLayoutDirection: ListView.TopToBottom
-                spacing: 5 * ApplicationInfo.ratio
-                interactive: false
-                model: answerModel
-                clip: true
-
-                header: answerHeaderComponent
-
-                delegate: Item {
-                    width: answerSheet.width - answerSheet.spacing
-                    height: answerSheet.height / 5 - answerSheet.spacing
+                Item {
+                    width: background.answerButtonWidth
+                    height: background.answerButtonHeight
 
                     Rectangle {
                         id: answerRect
@@ -365,29 +350,16 @@ ActivityBase {
                         smooth: false
                     }
 
-                    GCText {
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        anchors.verticalCenter: parent.verticalCenter
-                        horizontalAlignment: Text.AlignHCenter
-                        width: parent.width
-                        fontSizeMode: Text.Fit
-                        minimumPointSize: 7
-                        fontSize: regularSize
-                        wrapMode: Text.WordWrap
-                        color: "white"
-                        text: name
-                    }
-
                     Image {
-                        source: "qrc:/gcompris/src/core/resource/bar_exit.svg"
-                        sourceSize {  height: parent.height ; width: parent.width }
-                        width: sourceSize.width / 8
-                        height: sourceSize.height / 3
-                        smooth: false
-
-                        anchors.right: parent.right
+                        id: answer
+                        source: Activity.url + name + ".svg"
+                        sourceSize { width: parent.width; height: parent.height  }
+                        width: sourceSize.width
+                        height: sourceSize.height
+                        anchors.centerIn: parent
                         anchors.verticalCenter: parent.verticalCenter
-                        anchors.rightMargin: 10 * ApplicationInfo.ratio
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        smooth: false
 
                         MouseArea {
                             id: answerRemove
@@ -398,21 +370,17 @@ ActivityBase {
                         }
 
                     }
-
                 }
             }
-
         }
 
-//        Component {
-//            id: answerFooterComponent
-//            anchors.top: answerSheet.bottom
+
         Item {
             width: background.width / 8
             height: background.height / 8
-            anchors.top: answerSheetScroller.bottom
+            anchors.top: answerSheet.bottom
             anchors.topMargin: 10 * ApplicationInfo.ratio
-            anchors.left: answerSheetScroller.left
+            anchors.left: answerSheet.left
 
             Image {
                 id: runCode
@@ -442,7 +410,7 @@ ActivityBase {
             id: instructionHeaderComponent
             Rectangle {
                 id: headerRect
-                width: ListView.view.width
+                width: instruction.width
                 height: 40 * ApplicationInfo.ratio
                 color: "#005B9A"
                 opacity: 1
@@ -475,7 +443,7 @@ ActivityBase {
             id: answerHeaderComponent
             Rectangle {
                 id: answerHeaderRect
-                width: ListView.view.width
+                width: answerSheet.width
                 height: 40 * ApplicationInfo.ratio
                 color: "#005B9A"
                 opacity: 1
