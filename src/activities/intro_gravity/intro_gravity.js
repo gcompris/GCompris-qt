@@ -79,9 +79,9 @@ function initLevel() {
         items.timer.start()
         items.asteroidCreation.start()
         items.shuttleMotion.restart()
-        message.index = 0
+        message.index = -1
     } else {
-        message.index = 1
+        message.index = 0
     }
 }
 

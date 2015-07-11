@@ -1,6 +1,6 @@
 /* GCompris - Geography.qml
  *
- * Copyright (C) 2015 Pulkit Gupta
+ * Copyright (C) 2015 Pulkit Gupta <pulkitgenius@gmail.com>
  *
  * Authors:
  *   Jean-Philippe Ayanides <jp.ayanides@free.fr> (GTK+ version)

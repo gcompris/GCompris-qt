@@ -24,7 +24,7 @@ ActivityInfo {
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Rebuild the mosaic")
-  description: qsTr("Rebuild the mosaic")
+  description: qsTr("Put each item at the same place as in the given example.")
 //  intro: "Put each item at the same place as in the given example."
   goal: ""
   prerequisite: ""

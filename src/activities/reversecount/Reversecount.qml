@@ -58,7 +58,7 @@ ActivityBase {
             property alias chooseDiceBar: chooseDiceBar
             property alias tux: tux
             property alias fishToReach: fishToReach
-            property alias clock: clock
+            property int clockPosition: 4
         }
 
         onStart: { Activity.start(items) }
@@ -69,14 +69,28 @@ ActivityBase {
 
         onWidthChanged: {
             if(Activity.fishIndex > 0) {
-                Activity.placeFishToReach(Activity.fishIndex)
+                // set x
+                fishToReach.x = Activity.iceBlocksLayout[Activity.fishIndex % Activity.iceBlocksLayout.length][0] *
+            background.width / 5 + (background.width / 5 - tux.width) / 2
+                // set y
+                fishToReach.y = Activity.iceBlocksLayout[Activity.fishIndex % Activity.iceBlocksLayout.length][1] *
+            (background.height - background.height/5) / 5 +
+            (background.height / 5 - tux.height) / 2
+                // Move Tux
                 Activity.moveTuxToIceBlock()
             }
         }
 
         onHeightChanged: {
             if(Activity.fishIndex > 0) {
-                Activity.placeFishToReach(Activity.fishIndex)
+                // set x
+                fishToReach.x = Activity.iceBlocksLayout[Activity.fishIndex % Activity.iceBlocksLayout.length][0] *
+            background.width / 5 + (background.width / 5 - tux.width) / 2
+                // set y
+                fishToReach.y = Activity.iceBlocksLayout[Activity.fishIndex % Activity.iceBlocksLayout.length][1] *
+            (background.height - background.height/5) / 5 +
+            (background.height / 5 - tux.height) / 2
+                // Move Tux
                 Activity.moveTuxToIceBlock()
             }
         }
@@ -127,11 +141,14 @@ ActivityBase {
                 clip: false
             }
 
-            onOpacityChanged: opacity == 0 ? source = nextSource : null
+            onOpacityChanged: { if(opacity == 0) { source = ""; source = nextSource; } }
+
             onSourceChanged: {
-                x = nextX
-                y = nextY
-                opacity = 1
+                if(source != "") {
+                    x = nextX
+                    y = nextY
+                    opacity = 1
+                }
             }
 
             Behavior on opacity { NumberAnimation { duration: 500 } }
@@ -156,6 +173,7 @@ ActivityBase {
 
         Image {
             id: clock
+            source: Activity.url + "flower" + items.clockPosition + ".svg"
             anchors {
                 right: parent.right
                 bottom: parent.bottom
