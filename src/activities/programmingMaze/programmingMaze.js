@@ -22,7 +22,7 @@
 .import QtQuick 2.0 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 4
+var numberOfLevel = 5
 var items
 var reverseCountUrl = "qrc:/gcompris/src/activities/reversecount/resource/"
 var mazeBlocks = [
@@ -55,7 +55,8 @@ var mazeBlocks = [
                 [qsTr("move-forward"),
                  qsTr("turn-left"),
                  qsTr("turn-right"),
-                 qsTr("call-procedure")]
+                 qsTr("call-procedure"),
+                 qsTr("end-procedure")]
             ],
             //level four
             [
@@ -65,7 +66,20 @@ var mazeBlocks = [
                 [qsTr("move-forward"),
                  qsTr("turn-left"),
                  qsTr("turn-right"),
-                 qsTr("call-procedure")]
+                 qsTr("call-procedure"),
+                 qsTr("end-procedure")]
+            ],
+            //level five
+            [
+                [[0,3],[0,2],[0,1],[0,0],[1,0],[2,0],[2,1],
+                [2,2],[2,3],[3,3],[4,3],[4,2],[4,1],[4,0]],
+                [[4,0]],
+                //instruction set
+                [qsTr("move-forward"),
+                 qsTr("turn-left"),
+                 qsTr("turn-right"),
+                 qsTr("call-procedure"),
+                 qsTr("end-procedure")]
             ]
         ]
 //[1,3],[2,3],[2,2],[2,1],[3,1]
@@ -90,16 +104,23 @@ var changedY
 var currentRotation
 var changedRotation
 var flag = 0
-var j =0
+var j = 0
+var reset = 0
 var blocksDataIndex = 0
 var blocksFishIndex = 1
 var blocksInstructionIndex = 2
 var levelInstructions
+var moveForward
+var turnLeft
+var turnRight
+var callProcedure
+var endProcedure
 var url = "qrc:/gcompris/src/activities/programmingMaze/resource/"
 
 function start(items_) {
     items = items_
     currentLevel = 0
+    reset = 0
     initLevel()
 }
 
@@ -109,7 +130,13 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.mazeModel.model = mazeBlocks[currentLevel][blocksDataIndex]
-    items.answerModel.clear()
+
+    if(!reset) {
+        items.answerModel.clear()
+        items.procedureModel.clear()
+        items.procedureCalled = false
+        items.background.procedureDefinationFinished = false
+    }
     countOfMazeBlocks = mazeBlocks[currentLevel][blocksDataIndex].length
 
 
@@ -122,7 +149,18 @@ function initLevel() {
     levelInstructions = mazeBlocks[currentLevel][blocksInstructionIndex]
     for (var i = 0; i < levelInstructions.length ; i++) {
         items.instructionModel.append({"name":levelInstructions[i]});
+        if(levelInstructions[i] == "call-procedure")
+            callProcedure = levelInstructions[i]
+        if(levelInstructions[i] == "end-procedure")
+            endProcedure = levelInstructions[i]
+        if(levelInstructions[i] == "move-forward")
+            moveForward = levelInstructions[i]
+        if(levelInstructions[i] == "turn-left")
+            turnLeft = levelInstructions[i]
+        if(levelInstructions[i] == "turn-right")
+            turnRight = levelInstructions[i]
     }
+
 
     items.player.tuxIsBusy = false
     j = 0
@@ -155,7 +193,15 @@ function runCode() {
     playerCode = []
     items.player.tuxIsBusy = false
     for(var i = 0; i < items.answerModel.count; i++) {
-        playerCode.push(items.answerModel.get([i]).name)
+        if(items.answerModel.get([i]).name == callProcedure) {
+            for(var j =0; j < items.procedureModel.count; j++){
+                if(items.procedureModel.get([j]).name != endProcedure)
+                    playerCode.push(items.procedureModel.get([j]).name)
+            }
+        }
+        else {
+            playerCode.push(items.answerModel.get([i]).name)
+        }
     }
 
     if(!items.player.tuxIsBusy) {
@@ -181,7 +227,7 @@ function executeNextInstruction() {
         currentRotation = getPlayerRotation()
 
         currentInstruction = playerCode[j]
-        console.log(j + " executing next " +currentInstruction)
+//        console.log(j + " executing next " +currentInstruction)
         currentBlock = tuxIceBlockNumber
         nextBlock = tuxIceBlockNumber + 1
         currentX = mazeBlocks[currentLevel][blocksDataIndex][currentBlock][0]
@@ -189,11 +235,11 @@ function executeNextInstruction() {
         nextX = mazeBlocks[currentLevel][blocksDataIndex][nextBlock][0]
         nextY = mazeBlocks[currentLevel][blocksDataIndex][nextBlock][1]
 
-        if ( currentInstruction == "move-forward") {
+        if ( currentInstruction == moveForward) {
             ++tuxIceBlockNumber;
             if (nextX - currentX > 0 && currentRotation == 270) {  //EAST 270
                 changedX = currentX * stepX + stepX
-                console.log("moving forward emitting the signal")
+//                console.log("moving forward emitting the signal")
                 items.player.x = changedX
                 items.player.y = changedY
             }
@@ -204,7 +250,6 @@ function executeNextInstruction() {
             }
             else if (nextY - currentY < 0 && currentRotation == 180) { //NORTH 0
                 changedY = currentY * stepY - stepY
-                console.log("moving forward emitting the signal")
                 items.player.x = changedX
                 items.player.y = changedY
 
@@ -223,12 +268,12 @@ function executeNextInstruction() {
             }
         }
 
-        else if ( currentInstruction == "turn-left") {
+        else if ( currentInstruction == turnLeft) {
             changedRotation = (currentRotation - 90) % 360
             //        console.log("turning left")
             items.player.rotation = changedRotation
         }
-        else if ( currentInstruction == "turn-right") {
+        else if ( currentInstruction == turnRight) {
             changedRotation = (currentRotation + 90) % 360
             items.player.rotation = changedRotation
         }
@@ -257,6 +302,7 @@ function checkSuccess() {
 }
 
 function nextLevel() {
+    reset = 0
     if(numberOfLevel <= ++currentLevel ) {
         currentLevel = 0
     }
@@ -264,6 +310,7 @@ function nextLevel() {
 }
 
 function previousLevel() {
+    reset = 0
     if(--currentLevel < 0) {
         currentLevel = numberOfLevel - 1
     }
@@ -271,11 +318,13 @@ function previousLevel() {
 }
 
 function repositionObjectsOnWidthChanged(factor) {
+    reset = 1
     if(items)
         initLevel()
 }
 
 function repositionObjectsOnHeightChanged(factor) {
+    reset = 1
     if(items)
         initLevel()
 }
