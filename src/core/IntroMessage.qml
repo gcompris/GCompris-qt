@@ -37,7 +37,7 @@ import GCompris 1.0
 Item {
     id: message
 
-    visible: index == 0 ? false : true
+    visible: index == -1 ? false : true
 
     /**
      * Emitted when the index of intro is equal to its length
@@ -46,9 +46,9 @@ Item {
     signal introDone
 
     /**
-     * The index of the intro array, set to 0 to hide the IntroMessage item.
+     * The index of the intro array, set to -1 to hide the IntroMessage item.
      */
-    property int index: 1
+    property int index: 0
 
     /**
      * intro is the texts array used as introduction .
@@ -83,7 +83,7 @@ Item {
         }
         width: parent.width
         wrapMode: Text.WordWrap
-        text: parent.intro[parent.index]
+        text: parent.index == -1 ? "" : parent.intro[parent.index]
     }
 
     /* Inlined Button User Interface for Next (or Let's go). */
@@ -118,7 +118,7 @@ Item {
                     index++
                 }
                 else {
-                    index = 0
+                    index = -1
                     message.introDone()
                 }
             }
@@ -151,11 +151,9 @@ Item {
             id: skipButton_area
             anchors.fill: parent
             onClicked: {
-                message.index = 0
+                index = -1
                 message.introDone()
             }
         }
     }
-
 }
-
