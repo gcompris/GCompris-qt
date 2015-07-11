@@ -17,7 +17,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r"
-   sodipodi:docname="call-p.svg">
+   sodipodi:docname="end-p.svg">
   <defs
      id="defs4">
     <linearGradient
@@ -77,10 +77,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-445"
+     inkscape:cx="-799.28571"
      inkscape:cy="634.28571"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g5892"
      showgrid="false"
      inkscape:snap-text-baseline="false"
      inkscape:window-width="1309"
@@ -96,7 +96,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -106,11 +106,12 @@
      id="layer1"
      transform="translate(0,-698.03149)">
     <g
-       id="g5931">
+       id="g5892"
+       transform="translate(500,417.14286)">
       <rect
          ry="11.1842"
-         y="712.36224"
-         x="0"
+         y="295.21936"
+         x="-500"
          height="325.71429"
          width="345.71429"
          id="rect5796"
@@ -119,19 +120,19 @@
          transform="scale(0.57857971,1.7283703)"
          sodipodi:linespacing="125%"
          id="text3348"
-         y="563.01056"
-         x="31.238455"
+         y="321.73615"
+         x="-809.32391"
          style="font-style:normal;font-weight:normal;font-size:155.56118774px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:none;fill-opacity:0.25862068;stroke:#ffffff;stroke-width:2.01466322px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          xml:space="preserve"><tspan
            style="fill:none;fill-opacity:0.25862068;stroke:#ffffff;stroke-width:2.01466322px;stroke-opacity:1"
-           y="563.01056"
-           x="31.238455"
+           y="321.73615"
+           x="-809.32391"
            id="tspan3350"
-           sodipodi:role="line">CALL P</tspan><tspan
+           sodipodi:role="line">END P</tspan><tspan
            style="fill:none;fill-opacity:0.25862068;stroke:#ffffff;stroke-width:2.01466322px;stroke-opacity:1"
            id="tspan3352"
-           y="757.46204"
-           x="31.238455"
+           y="516.18762"
+           x="-809.32391"
            sodipodi:role="line" /></text>
     </g>
   </g>
