@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2204"
+   sodipodi:docname="TzeenieWheenie-Power-On-Off-Switch-red-2.svg"
+   viewBox="0 0 64 64"
+   sodipodi:version="0.32"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:version="0.48.4 r9939"
+   version="1.1"
+   width="100%"
+   height="100%">
+  <defs
+     id="defs2206">
+    <linearGradient
+       id="linearGradient4207">
+      <stop
+         id="stop4209"
+         style="stop-color:#ff1e1e"
+         offset="0" />
+      <stop
+         id="stop4211"
+         style="stop-color:#820000"
+         offset="1" />
+    </linearGradient>
+    <radialGradient
+       id="radialGradient4213"
+       xlink:href="#linearGradient4207"
+       gradientUnits="userSpaceOnUse"
+       cy="24.545"
+       cx="22.909"
+       r="19.636"
+       inkscape:collect="always" />
+    <radialGradient
+       id="radialGradient4217"
+       xlink:href="#linearGradient4207"
+       gradientUnits="userSpaceOnUse"
+       cy="14.033"
+       cx="14.119"
+       gradientTransform="matrix(.70005 .95069 -.80524 .59295 16.857 -6.8714)"
+       r="19.636"
+       inkscape:collect="always" />
+    <radialGradient
+       id="radialGradient7146"
+       gradientUnits="userSpaceOnUse"
+       cy="29.818"
+       cx="31.273"
+       r="26.864"
+       inkscape:collect="always">
+      <stop
+         id="stop3198"
+         style="stop-color:#000000"
+         offset="0" />
+      <stop
+         id="stop3204"
+         style="stop-color:#cdcdcd"
+         offset="0.9" />
+      <stop
+         id="stop3200"
+         style="stop-color:#4c4c4c"
+         offset="1" />
+    </radialGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="0"
+     pagecolor="#ffffff"
+     inkscape:window-height="701"
+     inkscape:grid-bbox="true"
+     inkscape:zoom="5.5"
+     inkscape:window-x="88"
+     showgrid="true"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="30.181818"
+     inkscape:cy="32"
+     inkscape:window-width="900"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px"
+     inkscape:window-maximized="0" />
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer">
+    <path
+       id="path2214"
+       sodipodi:rx="26.363636"
+       sodipodi:ry="26.363636"
+       style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:.5;fill:url(#radialGradient7146)"
+       sodipodi:type="arc"
+       d="m57.636 29.818a26.364 26.364 0 1 1 -52.727 0 26.364 26.364 0 1 1 52.727 0z"
+       transform="translate(.90909 2.1818)"
+       sodipodi:cy="29.818182"
+       sodipodi:cx="31.272728" />
+    <path
+       id="path3236"
+       sodipodi:rx="19.636364"
+       sodipodi:ry="19.636364"
+       style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:1.5;fill:url(#radialGradient4213)"
+       sodipodi:type="arc"
+       d="m42.545 24.545a19.636 19.636 0 1 1 -39.272 0 19.636 19.636 0 1 1 39.272 0z"
+       transform="matrix(1.0713 0 0 1.0713 7.6382 5.7033)"
+       sodipodi:cy="24.545454"
+       sodipodi:cx="22.90909" />
+    <path
+       id="path4215"
+       sodipodi:rx="19.636364"
+       sodipodi:ry="19.636364"
+       style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:1.5;fill:url(#radialGradient4217)"
+       sodipodi:type="arc"
+       d="m42.545 24.545a19.636 19.636 0 1 1 -39.272 0 19.636 19.636 0 1 1 39.272 0z"
+       transform="matrix(1.0713 0 0 1.0713 7.6382 5.7033)"
+       sodipodi:cy="24.545454"
+       sodipodi:cx="22.90909" />
+    <path
+       id="path7148"
+       sodipodi:nodetypes="csssc"
+       style="stroke-linejoin:round;opacity:.8;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"
+       d="m35.726 23.492c5.376 1.957 8.151 7.908 6.194 13.283-1.956 5.376-7.907 8.151-13.283 6.194-5.375-1.956-8.15-7.907-6.194-13.283 1.087-2.986 3.208-5.107 6.194-6.194" />
+    <path
+       id="path8120"
+       style="opacity:.8;stroke:#000000;stroke-linecap:round;stroke-width:3;fill:none"
+       d="m32.091 29.313l0.182-8.91" />
+  </g>
+  <metadata
+     id="metadata20">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:date>2007-11-05T10:57:26</dc:date>
+        <dc:description>A classical, red power on/off switch with a small metalish frame.</dc:description>
+        <dc:source>https://openclipart.org/detail/7930/power-on/off-switch-red-2-by-tzeeniewheenie</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>TzeenieWheenie</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>off</rdf:li>
+            <rdf:li>power</rdf:li>
+            <rdf:li>switch</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

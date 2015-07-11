@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/)by gsagri04 -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:docname="Desktop1.svg"
+   viewBox="0 0 77.896982 66.760301"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   width="100%"
+   height="100%">
+  <defs
+     id="defs4">
+    <pattern
+       id="pattern5664"
+       xlink:href="#Wavywhite"
+       patternTransform="matrix(.17033 0 0 .19712 18.603 3.7179)"
+       inkscape:collect="always" />
+    <pattern
+       id="Wavywhite"
+       height="5.1805778"
+       width="30.066020"
+       patternUnits="userSpaceOnUse"
+       inkscape:stockid="Wavy white"
+       inkscape:collect="always">
+      <path
+         id="path5198"
+         style="fill:white"
+         d="m7.597 0.061c-2.518-0.248-4.941 0.241-7.607 1.727v1.273c2.783-1.63 5.183-2.009 7.482-1.781 2.298 0.228 4.497 1.081 6.781 1.938 4.567 1.713 9.551 3.458 15.813-0.157l-0.004-1.273c-6.44 3.709-10.816 1.982-15.371 0.273-2.278-0.854-4.576-1.75-7.094-2z" />
+    </pattern>
+    <filter
+       id="filter5827"
+       inkscape:collect="always"
+       color-interpolation-filters="sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur5829"
+         stdDeviation="1.3860982"
+         inkscape:collect="always" />
+    </filter>
+    <linearGradient
+       id="linearGradient5897"
+       y2="372.72"
+       gradientUnits="userSpaceOnUse"
+       x2="342.69"
+       gradientTransform="matrix(0.17033,0,0,0.19712,18.603,3.7179)"
+       y1="431.17001"
+       x1="346.13"
+       inkscape:collect="always">
+      <stop
+         id="stop3803"
+         style="stop-color:#cccccc"
+         offset="0" />
+      <stop
+         id="stop3805"
+         style="stop-color:#cccccc;stop-opacity:0"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5897"
+       id="linearGradient3081"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.17033,0,0,0.19712,18.603,3.7179)"
+       x1="346.13"
+       y1="431.17001"
+       x2="342.69"
+       y2="372.72" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="-3"
+     fit-margin-left="0"
+     pagecolor="#ffffff"
+     fit-margin-top="0"
+     inkscape:window-maximized="1"
+     inkscape:zoom="1.981963"
+     inkscape:window-x="-2"
+     inkscape:window-height="708"
+     showgrid="false"
+     borderopacity="1.0"
+     inkscape:current-layer="g5759"
+     inkscape:cx="180.75706"
+     inkscape:cy="-14.542411"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1366"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px" />
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(-1.5108487,-11.066836)">
+    <g
+       id="g5831"
+       transform="matrix(0.90406,0,0,0.90406,-25.855,-2.1125)">
+      <g
+         id="g5759"
+         style="fill:#000000;filter:url(#filter5827)">
+        <g
+           id="g5761"
+           style="fill:#000000"
+           transform="translate(0,4.5212)">
+          <rect
+             id="rect5763"
+             style="fill:#000000"
+             ry="6.1950998"
+             height="52.376999"
+             width="79.325996"
+             y="13.476"
+             x="33.689999" />
+          <path
+             id="path5765"
+             style="opacity:0.24107002;fill:#000000;stroke:#ffffff;stroke-width:0.18324"
+             inkscape:connector-curvature="0"
+             d="m 39.043,13.475 c -2.9657,0 -5.3548,2.7648 -5.3548,6.1969 v 27.017 h 79.327 v -27.017 c 0,-3.4321 -2.3891,-6.1969 -5.3548,-6.1969 h -68.617 z" />
+          <path
+             id="path5767"
+             style="opacity:0.27232002;fill:#000000"
+             inkscape:connector-curvature="0"
+             d="m 39.043,13.475 c -2.9657,0 -5.3548,2.7648 -5.3548,6.1969 v 12.104 h 79.327 v -12.104 c 0,-3.4321 -2.3891,-6.1969 -5.3548,-6.1969 h -68.617 z" />
+          <rect
+             id="rect5769"
+             style="fill:#000000"
+             ry="5.3957"
+             height="45.618"
+             width="73.769997"
+             y="16.855"
+             x="36.507999" />
+          <path
+             id="path5771"
+             sodipodi:nodetypes="ccsssc"
+             style="opacity:0.16964004;fill:#000000"
+             inkscape:connector-curvature="0"
+             d="m 41.17,16.855 c 10.629,23.114 70.092,42.205 64.445,45.618 H 41.17 c -2.5831,0 -4.6626,-2.4065 -4.6626,-5.3957 v -34.827 c 0,-2.9892 2.0795,-5.3957 4.6626,-5.3957 z" />
+          <rect
+             id="rect5773"
+             style="fill:#000000"
+             ry="2.0332999"
+             height="5.4221001"
+             width="40.800999"
+             y="75.153"
+             x="53.743" />
+          <rect
+             id="rect5775"
+             style="fill:#000000"
+             height="10.392"
+             width="34.554001"
+             y="65.889999"
+             x="56.280998" />
+          <path
+             id="path5777"
+             sodipodi:nodetypes="cccc"
+             style="opacity:0.27679013;fill:#000000"
+             inkscape:connector-curvature="0"
+             d="m 56.281,65.89 c 15.717,2.0471 21.134,5.3237 34.554,10.392 H 56.281 z" />
+          <rect
+             id="rect5779"
+             style="fill:#000000"
+             ry="2.0332999"
+             height="5.4221001"
+             width="40.800999"
+             y="75.153"
+             x="53.743" />
+        </g>
+      </g>
+      <g
+         id="g5726">
+        <g
+           id="g5713"
+           transform="translate(0,4.5212)">
+          <rect
+             id="rect2985"
+             style="fill:#1c1c24"
+             ry="6.1950998"
+             height="52.376999"
+             width="79.325996"
+             y="13.476"
+             x="33.689999" />
+          <path
+             id="rect3785"
+             style="opacity:0.24107002;fill:none;stroke:#ffffff;stroke-width:0.18324"
+             inkscape:connector-curvature="0"
+             d="m 39.043,13.475 c -2.9657,0 -5.3548,2.7648 -5.3548,6.1969 v 27.017 h 79.327 v -27.017 c 0,-3.4321 -2.3891,-6.1969 -5.3548,-6.1969 h -68.617 z" />
+          <path
+             id="rect3772"
+             style="opacity:0.27232002;fill:#ffffff"
+             inkscape:connector-curvature="0"
+             d="m 39.043,13.475 c -2.9657,0 -5.3548,2.7648 -5.3548,6.1969 v 12.104 h 79.327 v -12.104 c 0,-3.4321 -2.3891,-6.1969 -5.3548,-6.1969 h -68.617 z" />
+          <rect
+             id="rect3757"
+             style="fill:#ffffff"
+             ry="5.3957"
+             height="45.618"
+             width="73.769997"
+             y="16.855"
+             x="36.507999" />
+          <path
+             id="rect3769"
+             d="m 41.17,16.855 c 10.629,23.114 70.092,42.205 64.445,45.618 H 41.17 c -2.5831,0 -4.6626,-2.4065 -4.6626,-5.3957 v -34.827 c 0,-2.9892 2.0795,-5.3957 4.6626,-5.3957 z"
+             sodipodi:nodetypes="ccsssc"
+             style="opacity:0.16964004;fill:#999999"
+             inkscape:connector-curvature="0" />
+          <rect
+             id="rect3792"
+             style="fill:#000000"
+             ry="2.0332999"
+             height="5.4221001"
+             width="40.800999"
+             y="75.153"
+             x="53.743" />
+          <rect
+             id="rect3790"
+             style="fill:#4d4d4d"
+             height="10.392"
+             width="34.554001"
+             y="65.889999"
+             x="56.280998" />
+          <path
+             id="rect3796"
+             d="m 56.281,65.89 c 15.717,2.0471 21.134,5.3237 34.554,10.392 H 56.281 z"
+             sodipodi:nodetypes="cccc"
+             style="opacity:0.27679013;fill:#cccccc"
+             inkscape:connector-curvature="0" />
+          <rect
+             id="rect3799"
+             style="fill:url(#linearGradient3081)"
+             ry="2.0332999"
+             height="5.4221001"
+             width="40.800999"
+             y="75.153"
+             x="53.743" />
+        </g>
+      </g>
+    </g>
+  </g>
+  <metadata
+     id="metadata79">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:date>2011-07-17T05:51:11</dc:date>
+        <dc:description>Simple desktop illustration </dc:description>
+        <dc:source>https://openclipart.org/detail/149863/desktop-by-gsagri04</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>gsagri04</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>CPU</rdf:li>
+            <rdf:li>Desktop</rdf:li>
+            <rdf:li>PC</rdf:li>
+            <rdf:li>computer</rdf:li>
+            <rdf:li>illustration</rdf:li>
+            <rdf:li>screen</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

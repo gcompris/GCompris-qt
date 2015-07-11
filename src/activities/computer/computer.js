@@ -1,10 +1,10 @@
 /* GCompris - computer.js
  *
- * Copyright (C) 2015 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2015 Sagar Chand Agarwal <atomsagar@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *
+ *   Sagar Chand Agarwal <atomsagar@gmail.com> (Qt Quick)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -21,15 +21,49 @@
  */
 .pragma library
 .import QtQuick 2.0 as Quick
+.import GCompris 1.0 as GCompris //for Applicationdataset
+.import "qrc:/gcompris/src/core/core.js" as Core
+
+var url = "qrc:/gcompris/src/activities/computer/resource/"
+
+var dataset = [
+            {
+                text : qsTr("A monitor or a display is an electronic visual display for computers. The monitor comprises the display device, circuitry and an enclosure."),
+                name : "Monitor",
+                id   : "monitor",
+                img  : url + "images/monitor.svg"
+            },
+            {
+                text : qsTr(" central processing unit (CPU) is the electronic circuitry within a computer that carries out the instructions of a computer program by performing the basic arithmetic, logical, control and input/output (I/O) operations specified by the instructions. "),
+                name : "Central Processing Unit",
+                id   :"cpu",
+                img  : url + "images/cpu.svg"
+            },
+            {
+                text : qsTr(" the keyboard is used as a text entry interface to type text and numbers into a word processor, text editor or other programs.A keyboard is also used to give commands to the operating system of a computer"),
+                name : "Keyboard",
+                id   :"keyboard",
+                img  : url + "images/keyboard.svg"
+            },
+            {
+                text : qsTr("In computing, a mouse is a pointing device that detects two-dimensional motion relative to a surface. This motion is typically translated into the motion of a pointer on a display, which allows for fine control of a graphical user interface."),
+                name : "Mouse",
+                id   :"mouse",
+                img  : url + "images/mouse.svg"
+            }
+        ]
 
 var currentLevel = 0
-var numberOfLevel = 4
+var numberOfLevel = 0
 var items
+var count = 0
+
 
 function start(items_) {
     items = items_
     currentLevel = 0
     initLevel()
+    count =0
 }
 
 function stop() {
@@ -37,6 +71,22 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+}
+
+function previous() {
+    if(count == 0)
+        count = dataset.length - 1
+    else
+        count--
+}
+
+function next() {
+    if( count == dataset.length - 1) {
+        count = 0
+    } else {
+        count++
+    }
+
 }
 
 function nextLevel() {
