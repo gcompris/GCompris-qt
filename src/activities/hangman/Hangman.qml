@@ -3,7 +3,7 @@
  * Copyright (C) 2015 Rajdeep Kaur <rajdeep51994@gmail.com>
  *
  * Authors:
- *   Bruno copyright to: Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Rajdeep kaur<rajdeep51994@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
