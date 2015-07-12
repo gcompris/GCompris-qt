@@ -88,7 +88,6 @@ ActivityBase {
             property alias parser: parser
             property variant goodWord
             property int goodWordIndex
-            property alias wordlist:wordlist
             property alias englishFallbackDialog: englishFallbackDialog
             
              function playWord() {
@@ -105,7 +104,7 @@ ActivityBase {
         {
             if (resource == wordsResource)
 	    {    Activity.start(items);
-	         Activity.focusTextInput();
+	         Activity.focusTextInput()
 	         
 	    }
 	    
@@ -359,16 +358,7 @@ ActivityBase {
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
         
-       Wordlist {
-            id: wordlist
-            defaultFilename: activity.dataSetUrl + "content-en.json"
-            // To switch between locales: xx_XX stored in configuration and
-            // possibly correct xx if available (ie fr_FR for french but dataset is fr.)
-            useDefault: false
-            filename: ""
-
-            onError: console.log("Hangman: Wordlist error: " + msg);
-        }
+       
 
     }
     
