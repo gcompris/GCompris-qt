@@ -90,8 +90,8 @@ function initLevel() {
     subLevelsLeft = []
     for(var i in wordList)
         subLevelsLeft.push(i)
-    
-    level = items.wordlist.getLevelWordList(currentLevel + 1);
+	
+    level = Lang.getChapter(dataset, currentLevel+1)
     console.log(level+"france");
     initSubLevel();
     {	//to set the layout...populate
