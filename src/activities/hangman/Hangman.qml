@@ -90,29 +90,29 @@ ActivityBase {
             property int goodWordIndex
             property alias englishFallbackDialog: englishFallbackDialog
             
-             function playWord() {
+            function playWord() {
                 if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
                     voiceError();
             }
             onGoodWordChanged: playWord()
         }
 
-            
+
         
         
         function handleResourceRegistered(resource)
         {
             if (resource == wordsResource)
-	    {    Activity.start(items);
-	         Activity.focusTextInput()
-	         
-	    }
-	    
+            {    Activity.start(items);
+                Activity.focusTextInput()
+
+            }
+
         }
 
 
-        onStart: {  
-                   
+        onStart: {
+
 
             activity.audioVoices.error.connect(voiceError)
             activity.audioVoices.done.connect(voiceDone)
@@ -155,7 +155,7 @@ ActivityBase {
             
             onTextChanged: {
                 if (text != "") {
-		    console.log("congo");
+                    console.log("congo");
                     Activity.processKeyPress(text);
                     text = "";
                 }
@@ -358,7 +358,7 @@ ActivityBase {
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
         
-       
+
 
     }
     
