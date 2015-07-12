@@ -77,56 +77,60 @@ function start(items_) {
 function stop() {
 }
 
-function initLevel() {
-    items.bar.level = currentLevel + 1;
-    var currentLesson = lessons[currentLevel]
-    wordList = Lang.getLessonWords(dataset, currentLesson);
-    Core.shuffle(wordList);
-    
-    maxSubLevel = wordList.length;
-    items.score.numberOfSubLevels = maxSubLevel;
-    items.score.visible = true;
-    
-    subLevelsLeft = []
-    for(var i in wordList)
-        subLevelsLeft.push(i)
-	
-    level = Lang.getChapter(dataset, currentLevel+1)
-    console.log(level+"france");
-    initSubLevel();
-    {	//to set the layout...populate
-        var letters = new Array();
-        items.keyboard.shiftKey = false;
-        for (var i = 0; i < level.words.length; i++) {
-            for (var j = 0; j < level.words[i].length; j++) {
-                var letter = level.words[i].charAt(j);
-                var isUpper = (letter == letter.toLocaleUpperCase());
-                if (isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1)
-                    items.keyboard.shiftKey = true;
-                else if (!isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1)
-                    items.keyboard.shiftKey = true;
-                else if (letters.indexOf(letter) === -1)
-                    letters.push(level.words[i].charAt(j));
+
+
+    function initLevel() {
+        items.bar.level = currentLevel + 1;
+        var currentLesson = lessons[currentLevel]
+        wordList = Lang.getLessonWords(dataset, currentLesson);
+        Core.shuffle(wordList);
+       
+        maxSubLevel = wordList.length;
+        items.score.numberOfSubLevels = maxSubLevel;
+        items.score.visible = true;
+       
+        subLevelsLeft = []
+        for(var i in wordList)
+            subLevelsLeft.push(i)
+       
+        console.log(level+"france");
+        initSubLevel();
+        {   //to set the layout...populate
+            var letters = new Array();
+            items.keyboard.shiftKey = false;
+            for (var i = 0; i < wordList.length; i++) {
+                var currentWord = wordList[i].translatedTxt;
+                for (var j = 0; j < currentWord.length; j++) {
+                    var letter = currentWord.charAt(j);
+                    var isUpper = (letter == letter.toLocaleUpperCase());
+                    if (isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1)
+                        items.keyboard.shiftKey = true;
+                    else if (!isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1)
+                        items.keyboard.shiftKey = true;
+                    else if (letters.indexOf(letter) === -1)
+                        letters.push(currentWord.charAt(j));
+                }
             }
+            letters.sort();
+            // generate layout from letter map
+            var layout = new Array();
+            var row = 0;
+            var offset = 0;
+            while (offset < letters.length-1) {
+                var cols = letters.length <= 10 ? letters.length : (Math.ceil((letters.length-offset) / (3 - row)));
+                layout[row] = new Array();
+                for (var j = 0; j < cols; j++)
+                    layout[row][j] = { label: letters[j+offset] };
+                offset += j;
+                row++;
+            }
+           
         }
-        letters.sort();
-        // generate layout from letter map
-        var layout = new Array();
-        var row = 0;
-        var offset = 0;
-        while (offset < letters.length-1) {
-            var cols = letters.length <= 10 ? letters.length : (Math.ceil((letters.length-offset) / (3 - row)));
-            layout[row] = new Array();
-            for (var j = 0; j < cols; j++)
-                layout[row][j] = { label: letters[j+offset] };
-            offset += j;
-            row++;
-        }
-        
+        items.keyboard.layout = layout;
+       
     }
-    items.keyboard.layout = layout;
-    
-}
+
+
 
 function processKeyPress(text) {
     console.log(text+"idiot");
@@ -135,7 +139,7 @@ function processKeyPress(text) {
     console.log(inital);
     wordi = "";
     for(var i = 0; i< currentWord.length ; i++) {
-        if(current_word[i] === text) {
+        if(currentWord[i] === text) {
             flag=1;
             countNoAlphabet +=1;
             if(i === 0){
@@ -171,7 +175,7 @@ function processKeyPress(text) {
 
 function nextLevel() {
     if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 1
+        currentLevel = 0
     }
     initLevel();
 }
