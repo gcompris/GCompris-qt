@@ -67,9 +67,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 #endif
 
     QRect rect = qApp->primaryScreen()->geometry();
-//    m_ratio = 2;
-//    m_ratio = 2.56;
-    m_ratio = m_isMobile ? qMin(qMax(rect.width(), rect.height())/800. , qMin(rect.width(), rect.height())/520.) : 1;
+    m_ratio = qMin(qMax(rect.width(), rect.height())/800. , qMin(rect.width(), rect.height())/520.);
     // calculate a factor for font-scaling, cf.
     // http://doc.qt.io/qt-5/scalability.html#calculating-scaling-ratio
     qreal refDpi = 216.;
@@ -78,7 +76,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     qreal height = qMax(rect.width(), rect.height());
     qreal width = qMin(rect.width(), rect.height());
     qreal dpi = qApp->primaryScreen()->logicalDotsPerInch();
-    m_fontRatio = m_isMobile ? qMax(qreal(1.0), qMin(height*refDpi/(dpi*refHeight), width*refDpi/(dpi*refWidth))) : 1;
+    m_fontRatio = qMax(qreal(1.0), qMin(height*refDpi/(dpi*refHeight), width*refDpi/(dpi*refWidth)));
     m_isPortraitMode = m_isMobile ? rect.height() > rect.width() : false;
     m_applicationWidth = m_isMobile ? rect.width() : 1120;
 
