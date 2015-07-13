@@ -395,5 +395,7 @@ function playLetter(letter) {
 
 function focusTextInput() {
     if (!GCompris.ApplicationInfo.isMobile && items)
-        items.textinput.forceActiveFocus();
+    {     console.log(items.textinput.forceActiveFocus+"fance");
+	  items.textinput.forceActiveFocus();
+    }
 }
