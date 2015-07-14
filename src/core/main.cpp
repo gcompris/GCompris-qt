@@ -99,6 +99,15 @@ int main(int argc, char *argv[])
     app.setOrganizationDomain("kde.org");
     app.setApplicationVersion(ApplicationInfo::GCVersion());
 
+#if defined(Q_OS_MAC)
+    // Sandboxing on MacOSX as documented in:
+    // http://doc.qt.io/qt-5/osx-deployment.html
+    QDir dir(QGuiApplication::applicationDirPath());
+    dir.cdUp();
+    dir.cd("Plugins");
+    QGuiApplication::setLibraryPaths(QStringList(dir.absolutePath()));
+#endif
+
     // Local scope for config
     QSettings config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
                      "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf",
