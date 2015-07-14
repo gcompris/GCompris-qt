@@ -72,8 +72,6 @@ else()
   qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Core)
 endif()
 
-target_link_libraries(${GCOMPRIS_EXECUTABLE_NAME} ${QT_LIBRARIES})
-
 if(CMAKE_HOST_WIN32)
   # Remove the console for windows
   set_target_properties(${GCOMPRIS_EXECUTABLE_NAME} PROPERTIES LINK_FLAGS -Wl,-subsystem,windows)
