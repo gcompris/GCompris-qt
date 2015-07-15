@@ -36,7 +36,7 @@ ActivityBase {
     property string dataSetUrl: "qrc:/gcompris/src/activities/hangman/resource/"
     
     onStart: focus = true
-    onStop: {}
+    onStop:  { }
     
     // When going on configuration, it steals the focus and re set it to the activity.
     // We need to set it back to the textinput item in order to have key events.
@@ -50,8 +50,8 @@ ActivityBase {
         id: background
         source:activity.dataSetUrl+"background.svg"
         fillMode: Image.PreserveAspectCrop
-        sourceSize.width: parent.width
         anchors.fill: parent
+        sourceSize.width:parent.width
         
         readonly property string wordsResource: "data2/words/words.rcc"
         property bool englishFallback: false
@@ -104,7 +104,7 @@ ActivityBase {
         {
             if (resource == wordsResource)
             {    Activity.start(items);
-                Activity.focusTextInput()
+                 Activity.focusTextInput()
 
             }
 
@@ -112,8 +112,8 @@ ActivityBase {
 
 
         onStart: {
-
-
+            focus:true
+            
             activity.audioVoices.error.connect(voiceError)
             activity.audioVoices.done.connect(voiceDone)
 
@@ -150,9 +150,9 @@ ActivityBase {
             // disabled on mobile!
             id: textinput
             enabled: !ApplicationInfo.isMobile
-            focus: true
-            visible:false
             
+            visible:false
+            focus:true
             onTextChanged: {
                 if (text != "") {
                     console.log("congo");
