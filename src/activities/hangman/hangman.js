@@ -75,11 +75,11 @@ function start(items_) {
 }
 
 function stop() {
+	 
 }
 
-
-
 function initLevel() {
+    
     items.bar.level = currentLevel + 1;
     var currentLesson = lessons[currentLevel]
     wordList = Lang.getLessonWords(dataset, currentLesson);
@@ -132,7 +132,6 @@ function initLevel() {
 
 
 function processKeyPress(text) {
-    console.log(text+"idiot");
     var flag = 0;
     var inital = wordi;
     console.log(inital);
@@ -169,6 +168,7 @@ function processKeyPress(text) {
     if(countNoAlphabet === (currentWord.length))
     {	items.ping_animation.running = true
         items.bonus.good("lion");
+	nextSubLevel();
     }
 }
 
@@ -190,7 +190,8 @@ function previousLevel() {
 }
 
 function initSubLevel()
-{	if(items.score.currentSubLevel < items.score.numberOfSubLevels)
+{   // initialize sublevel
+    if(items.score.currentSubLevel < items.score.numberOfSubLevels)
         items.score.currentSubLevel = currentSubLevel + 1;
     else
         items.score.visible = false
@@ -214,13 +215,15 @@ function initSubLevel()
     items.hidden.text=wordi;
 }
 
-function nextSublevel()
-{	if(maxsublevel<= ++currentSubLevel)
-    {		currentSubLevel=1;	}
-    initSubLevel();
+function nextSubLevel() {
+    if( ++currentSubLevel >= maxSubLevel) {
+        currentSubLevel = 0
+        nextLevel();
+      
+    } 
 }
 
 function focusTextInput() {
-    if (!GCompris.ApplicationInfo.isMobile && items)
+    if (!GCompris.ApplicationInfo.isMobile && items && items.textinput)
         items.textinput.forceActiveFocus();
 }
