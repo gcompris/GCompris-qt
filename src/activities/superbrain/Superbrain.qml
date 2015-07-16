@@ -38,9 +38,7 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
         focus: true
 
-        readonly property double scaleFactor: Math.max(1,
-                                                       Math.min(background.width / 800,
-                                                                background.height / 520))
+        readonly property double scaleFactor: 1
         readonly property bool isPortrait: (height > width)
 
         signal start
@@ -77,11 +75,11 @@ ActivityBase {
             id: colorsColumn
 
             anchors.left: parent.left
-            anchors.leftMargin: 5 * background.scaleFactor * ApplicationInfo.ratio
+            anchors.leftMargin: 5 * ApplicationInfo.ratio
             anchors.top: parent.top
-            anchors.topMargin: 5 * background.scaleFactor * ApplicationInfo.ratio
+            anchors.topMargin: 5 * ApplicationInfo.ratio
 
-            spacing: 3 * background.scaleFactor * ApplicationInfo.ratio
+            spacing: 3  * ApplicationInfo.ratio
 
             width: guessColumn.guessSize
             height: guessColumn.guessSize
@@ -96,8 +94,8 @@ ActivityBase {
                 model: ListModel {}
 
                 delegate: Rectangle {
-                    width: 40 * background.scaleFactor * ApplicationInfo.ratio
-                    height: 40 * background.scaleFactor * ApplicationInfo.ratio
+                    width: 40 * ApplicationInfo.ratio
+                    height: 40 * ApplicationInfo.ratio
                     radius: width * 0.5
                     border.width: 2
                     border.color: "white"
@@ -288,7 +286,7 @@ if (targetY < 0) {
                     delegate: Rectangle {
                         width: chooserGrid.cellWidth
                         height: chooserGrid.cellWidth
-                        radius: 5 * background.scaleFactor
+                        radius: 5
                         border.width: index == chooserGrid.colIndex ? 3 : 1
                         border.color: index == chooserGrid.colIndex ? "white" : "darkgray"
                         color: modelData
@@ -413,11 +411,11 @@ if (targetY < 0) {
             boundsBehavior: Flickable.DragOverBounds
             verticalLayoutDirection: ListView.BottomToTop
 
-            readonly property int guessSize: 30 * background.scaleFactor * ApplicationInfo.ratio
-            readonly property int vertSpacing: 15 * background.scaleFactor * ApplicationInfo.ratio
-            readonly property int horizSpacing: 15 * background.scaleFactor * ApplicationInfo.ratio
-            readonly property int statusMargin: 5 * background.scaleFactor * ApplicationInfo.ratio
-            readonly property int resultSize: 10 * background.scaleFactor * ApplicationInfo.ratio
+            readonly property int guessSize: 30 * ApplicationInfo.ratio
+            readonly property int vertSpacing: 15 * ApplicationInfo.ratio
+            readonly property int horizSpacing: 15 * ApplicationInfo.ratio
+            readonly property int statusMargin: 5 * ApplicationInfo.ratio
+            readonly property int resultSize: 10 * ApplicationInfo.ratio
             readonly property int guessColWidth: Activity.maxPieces * (guessSize + (2 * guessColumn.statusMargin))
                                                  + (Activity.maxPieces-1) * horizSpacing;
             readonly property int resultColWidth: Activity.maxPieces * resultSize
