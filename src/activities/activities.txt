@@ -16,10 +16,10 @@ braille_alphabets
 braille_fun
 canal_lock
 chronos
-clickanddraw
-clickgame
 click_on_letter
 click_on_letter_up
+clickanddraw
+clickgame
 clockgame
 color_mix
 color_mix_light
@@ -87,6 +87,8 @@ mosaic
 numbers-odd-even
 penalty
 planegame
+readingh
+readingv
 redraw
 redraw_symmetrical
 reversecount

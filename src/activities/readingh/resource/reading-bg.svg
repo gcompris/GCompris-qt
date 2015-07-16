@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="800"
+   height="520"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.46"
+   version="1.0"
+   sodipodi:docname="reading-bg.svgz"
+   inkscape:output_extension="org.inkscape.output.svgz.inkscape">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <inkscape:perspective
+       id="perspective2427"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       sodipodi:type="inkscape:persp3d" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="331.87153"
+     inkscape:cy="337.03994"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1280"
+     inkscape:window-height="974"
+     inkscape:window-x="0"
+     inkscape:window-y="25">
+    <sodipodi:guide
+       orientation="0,1"
+       position="-244.45692,789.93929"
+       id="guide3244" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-6.0141234,-15.002437)">
+    <rect
+       style="opacity:1;fill:#e8e7e2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+       id="rect2433"
+       width="800"
+       height="520"
+       x="6.0141234"
+       y="15.002437"
+       rx="10.181538"
+       ry="11.100569" />
+    <path
+       style="opacity:1;fill:#d5c393;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.01660419;stroke-linecap:round;stroke-linejoin:round;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+       d="M 65.583246,59.730578 C 59.895537,59.730578 55.310661,64.688073 55.310661,70.854564 L 55.310661,469.72004 C 55.310661,475.8865 59.895537,480.84397 65.583246,480.84397 L 364.2129,480.84397 C 369.90061,480.84397 374.48548,475.8864 374.48548,469.72004 L 374.48548,224.3969 L 722.93407,226.46503 C 734.20803,226.46503 743.29018,216.38744 743.29018,203.87242 L 743.29018,85.112068 C 743.29018,72.59691 734.20803,62.519408 722.93407,62.519408 L 65.583246,59.730578 z M 87.451876,73.643395 L 339.91797,73.643395 C 351.19185,73.643395 360.27408,83.720896 360.27408,96.236053 L 360.27408,447.56602 C 360.27408,460.08113 351.19185,470.15863 339.91797,470.15863 L 87.451876,470.15863 C 76.177898,470.15873 67.095773,460.08113 67.095773,447.56602 L 67.095773,96.236053 C 67.095773,83.720916 76.177898,73.643395 87.451876,73.643395 z M 430.7011,75.930862 L 718.17592,75.930862 C 723.8636,75.930862 728.44849,80.888367 728.44849,87.054848 L 728.44849,199.29738 C 728.44849,205.46384 723.8636,210.42141 718.17592,210.42141 L 430.7011,210.42141 C 425.01339,210.42141 420.42851,205.46404 420.42851,199.29738 L 420.42851,87.054848 C 420.42851,80.888357 425.01339,75.930862 430.7011,75.930862 z"
+       id="rect2465" />
+  </g>
+</svg>

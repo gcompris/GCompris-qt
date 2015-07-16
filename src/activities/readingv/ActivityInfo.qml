@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2015 Johnny Jazeix <jazeix@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,16 +18,17 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "readingh/Readingh.qml"
+  name: "readingv/Readingv.qml"
   difficulty: 2
-  icon: "readingh/readingh.svg"
-  author: "Bruno Coudoin <bruno.coudoin@gcompris.net>"
-  demo: false
-  title: qsTr("Horizontal reading practice")
-  description: qsTr("Read a list of words and work out if a given word is in it")
-  goal: qsTr("Reading training in a limited time")
+  icon: "readingv/reading.svg"
+  author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
+  demo: true
+  title: qsTr("Vertical-reading practice")
+  description: qsTr("Read a vertical list of words and work out if a given word is in it.")
+  goal: qsTr("Read training in a limited time")
   prerequisite: qsTr("Reading")
   manual: qsTr("A word is shown at the top right of the board. A list of words will appear and disappear on the left. Does the given word belong to the list?")
   credit: ""
-  section: "/reading"
+  section: "reading"
 }
+

@@ -84,7 +84,7 @@ Item {
         // the x of the text is changed, which would not work if we use an anchor layout.
         property int horizontallyCenteredX: (button.width - width) >> 1;
         x: horizontallyCenteredX;
-        fontSize: 18
+        fontSizeMode: Text.Fit
         font.bold: true
         text: textLabel
     }
