@@ -35,9 +35,9 @@ ActivityBase {
     // Put you default-<locale>.json files in it
     property string dataSetUrl: "qrc:/gcompris/src/activities/hangman/resource/"
     
-    onStart: focus = true
+    onStart:{ focus = true
+    }
     onStop:  { }
-    
     // When going on configuration, it steals the focus and re set it to the activity.
     // We need to set it back to the textinput item in order to have key events.
     onFocusChanged: {
@@ -113,7 +113,6 @@ ActivityBase {
 
         onStart: {
             focus:true
-            
             activity.audioVoices.error.connect(voiceError)
             activity.audioVoices.done.connect(voiceDone)
 
@@ -129,6 +128,8 @@ ActivityBase {
                 // words.rcc has not been downloaded yet -> ask for download
                 downloadWordsNeeded = true
             }
+            
+            Activity.focusTextInput()
         }
 
         onStop: { Activity.stop() }
