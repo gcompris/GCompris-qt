@@ -75,7 +75,7 @@ function start(items_) {
 }
 
 function stop() {
-	 
+
 }
 
 function initLevel() {
@@ -140,52 +140,52 @@ function processKeyPress(text) {
     var t =0;
     for(var x =0 ; x < inital.length; x = x+1)
     {			if(text == inital.charAt(x))
-			{	t = 1;
-				break;
-	                }
+        {	t = 1;
+            break;
+        }
     }
     var occ =0;
     for(var i = 0; i< currentWord.length ; i++) {
-      
-      if(currentWord[i] === text && !t) {
+
+        if(currentWord[i] === text && !t) {
             flag=1;
-	    occ++;
-	    countNoAlphabet +=1;
+            occ++;
+            countNoAlphabet +=1;
             var j=i*2;
             if(occ === 1){
-	    for(var k=0;k<inital.length;k=k+1)
-            {	   if(j === k)
-                   {	wordi = wordi + currentWord.charAt(i);
-                   }
-                   else
-                   {	wordi = wordi + inital.charAt(k);
-                   }
-            }
+                for(var k=0;k<inital.length;k=k+1)
+                {	   if(j === k)
+                    {	wordi = wordi + currentWord.charAt(i);
+                    }
+                    else
+                    {	wordi = wordi + inital.charAt(k);
+                    }
+                }
             }
             else
-	    {	temp="";
-		for(var k=0;k<wordi.length;k=k+1)
-		{	temp = temp +wordi.charAt(k);
-		}
-		wordi="";
-                var j=i*2;
-	        for(var k=0;k<inital.length;k=k+1)
-                {	   if(j === k)
-                           {	wordi = wordi + currentWord.charAt(i);
-                           }
-                           else
-                           {	wordi = wordi + temp.charAt(k);
-                           }
+            {	temp="";
+                for(var k=0;k<wordi.length;k=k+1)
+                {	temp = temp +wordi.charAt(k);
                 }
-		
-	    }
-		
-	        
-       }
-      
-            
-      }
-      
+                wordi="";
+                var j=i*2;
+                for(var k=0;k<inital.length;k=k+1)
+                {	   if(j === k)
+                    {	wordi = wordi + currentWord.charAt(i);
+                    }
+                    else
+                    {	wordi = wordi + temp.charAt(k);
+                    }
+                }
+
+            }
+
+
+        }
+
+
+    }
+
     
 
     if(flag !== 1)
@@ -196,7 +196,7 @@ function processKeyPress(text) {
     if(countNoAlphabet >= (currentWord.length))
     {	items.ping_animation.running = true
         items.bonus.good("lion");
-	nextSubLevel();
+        nextSubLevel();
     }
 }
 
@@ -247,8 +247,8 @@ function nextSubLevel() {
     if( ++currentSubLevel >= maxSubLevel) {
         currentSubLevel = 0
         nextLevel();
-      
-    } 
+
+    }
 }
 
 function focusTextInput() {
