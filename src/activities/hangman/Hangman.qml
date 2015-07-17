@@ -215,10 +215,10 @@ ActivityBase {
         Image{
             id:ping
             visible:true
-            width:parent.width/10
-            height:parent.height/5
-            x:background.width/6
-            y:6*background.height/10
+            width:parent.width/12
+            height:parent.height/7
+            x:background.width/10
+            y:5*background.height/10
             source:activity.dataSetUrl+"pingu.svg";
             Behavior on x {
                 PropertyAnimation {
@@ -234,10 +234,11 @@ ActivityBase {
             id:flower
             visible:false
             width:ping.width/4
-            height:ping.height/6
+            height:ping.height/5
             source:activity.dataSetUrl+"flower.svg";
-            anchors.left:ping.left
-            y:6.5*background.height/10
+            anchors.right:ping.right
+            y:5.4*background.height/10
+            x:background.width/6
 
 
         }
@@ -248,8 +249,8 @@ ActivityBase {
             }
             PropertyAnimation{
                 target:ping
-                property:"x" ;from:background.width/6; to :background.width/11
-                duration:1000
+                property:"x" ;from:background.width/6; to :1.1*background.width/2
+                duration:5000
                 easing.type: Easing.InQuad
             }
             PropertyAnimation{
@@ -258,8 +259,8 @@ ActivityBase {
             }
             PropertyAnimation{
                 target:ping
-                property:"x" ;from:background.width/11; to :background.width/6
-                duration:1000
+                property:"x" ;from:1.1*background.width/2; to :background.width/6
+                duration:5000
                 easing.type: Easing.InQuad
             }
 
