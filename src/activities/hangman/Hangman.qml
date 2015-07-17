@@ -104,7 +104,7 @@ ActivityBase {
         {
             if (resource == wordsResource)
             {    Activity.start(items);
-                 Activity.focusTextInput()
+                Activity.focusTextInput()
 
             }
 
@@ -268,14 +268,99 @@ ActivityBase {
 
         }
         
-       DialogHelp {
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    property alias localeBox: localeBox
+                    height: column.height
+
+                    property alias availableLangs: langs.languages
+                    LanguageList {
+                        id: langs
+                    }
+
+                    Column {
+                        id: column
+                        spacing: 10
+                        width: parent.width
+
+                        Flow {
+                            spacing: 5
+                            width: dialogActivityConfig.width
+                            GCComboBox {
+                                id: localeBox
+                                model: langs.languages
+                                background: dialogActivityConfig
+                                width: 250 * ApplicationInfo.ratio
+                                label: qsTr("Select your locale")
+                            }
+                        }
+                        /* TODO handle this:
+                        GCDialogCheckBox {
+                            id: uppercaseBox
+                            width: 250 * ApplicationInfo.ratio
+                            text: qsTr("Uppercase only mode")
+                            checked: true
+                            onCheckedChanged: {
+                                print("uppercase changed")
+                            }
+                        }
+*/
+                    }
+                }
+            }
+
+            onClose: home()
+            onLoadData: {
+                if(dataToSave && dataToSave["locale"]) {
+                    background.locale = dataToSave["locale"];
+                }
+            }
+            onSaveData: {
+                var oldLocale = background.locale;
+                var newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
+                // Remove .UTF-8
+                if(newLocale.indexOf('.') != -1) {
+                    newLocale = newLocale.substring(0, newLocale.indexOf('.'))
+                }
+                dataToSave = {"locale": newLocale}
+
+                background.locale = newLocale;
+
+                // Restart the activity with new information
+                if(oldLocale !== newLocale) {
+                    background.stop();
+                    background.start();
+                }
+            }
+
+
+            function setDefaultValues() {
+                var localeUtf8 = background.locale;
+                if(background.locale != "system") {
+                    localeUtf8 += ".UTF-8";
+                }
+
+                for(var i = 0 ; i < dialogActivityConfig.configItem.availableLangs.length ; i ++) {
+                    if(dialogActivityConfig.configItem.availableLangs[i].locale === localeUtf8) {
+                        dialogActivityConfig.loader.item.localeBox.currentIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
+        
+        DialogHelp {
             id: dialogHelp
             onClose: home()
         }
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            anchors.bottom: keyboard.top
+            content: BarEnumContent { value: help | home | level | config }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
