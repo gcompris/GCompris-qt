@@ -89,6 +89,7 @@ ActivityBase {
             property variant goodWord
             property int goodWordIndex
             property alias englishFallbackDialog: englishFallbackDialog
+
             
             function playWord() {
                 if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
@@ -156,7 +157,6 @@ ActivityBase {
             focus:true
             onTextChanged: {
                 if (text != "") {
-                    console.log("congo");
                     Activity.processKeyPress(text);
                     text = "";
                 }
