@@ -1,6 +1,6 @@
 /* GCompris - hangman.js
  *
- *   Copyright (C) 2014 <RAJDEEP KAUR>
+ *   Copyright (C) 2015 Rajdeep Kaur <rajdeep1994@gmail.com>
  *
  *    Authors:
  *    Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
@@ -137,25 +137,26 @@ function processKeyPress(text) {
     console.log(inital);
     wordi = "";
     var temp;
-    var t =0;
-    for(var x =0 ; x < inital.length; x = x+1)
-    {			if(text == inital.charAt(x))
-        {	t = 1;
+    var letterCheck =false;
+    for(var x =0 ; x < inital.length; x = x+1){
+        if(text == inital.charAt(x)){
+            letterCheck = true;
             break;
         }
     }
+    
     var occ =0;
     for(var i = 0; i< currentWord.length ; i++) {
 
-        if(currentWord[i] === text && !t) {
+        if(currentWord[i] === text && !letterCheck && currentWord[i] != " ") {
             flag=1;
             occ++;
             countNoAlphabet +=1;
             var j=i*2;
             if(occ === 1){
-                for(var k=0;k<inital.length;k=k+1)
-                {	   if(j === k)
-                    {	wordi = wordi + currentWord.charAt(i);
+                for(var k=0;k<inital.length;k=k+1){
+                    if(j === k){
+                        wordi = wordi + currentWord.charAt(i);
                     }
                     else
                     {	wordi = wordi + inital.charAt(k);
@@ -164,14 +165,14 @@ function processKeyPress(text) {
             }
             else
             {	temp="";
-                for(var k=0;k<wordi.length;k=k+1)
-                {	temp = temp +wordi.charAt(k);
+                for(var k=0;k<wordi.length;k=k+1){
+                    temp = temp +wordi.charAt(k);
                 }
                 wordi="";
                 var j=i*2;
-                for(var k=0;k<inital.length;k=k+1)
-                {	   if(j === k)
-                    {	wordi = wordi + currentWord.charAt(i);
+                for(var k=0;k<inital.length;k=k+1){
+                    if(j === k){
+                        wordi = wordi + currentWord.charAt(i);
                     }
                     else
                     {	wordi = wordi + temp.charAt(k);
@@ -188,13 +189,15 @@ function processKeyPress(text) {
 
     
 
-    if(flag !== 1)
-    {	wordi = inital;
+    if(flag !== 1){
+        wordi = inital;
         noOfLife=noOfLife-1;
     }
     items.hidden.text = wordi
-    if(countNoAlphabet >= (currentWord.length))
-    {	items.ping_animation.running = true
+    console.log("wordlength"+currentWord.length);
+    console.log("count"+countNoAlphabet);
+    if(countNoAlphabet >= (currentWord.length)){
+        items.ping_animation.running = true
         items.bonus.good("lion");
         nextSubLevel();
     }
@@ -231,10 +234,18 @@ function initSubLevel()
     wordi = new Array();
     currentWord = text1 ;
     countNoAlphabet = 0;
+    for(var x = 0 ; x < currentWord.length; x++){
+        if(currentWord[x] === " "){
+            countNoAlphabet = countNoAlphabet +1;
+        }
+    }
     console.log(currentWord);
-    for(var i = 0; i < currentWord.length ; i=i+1)
-    {   if(i == 0)
-        {	wordi.push("_ ");   }
+    for(var i = 0; i < currentWord.length ; i=i+1){
+        if(i == 0){
+            wordi.push("_ ");   }
+        else if(currentWord[i]==" "){
+            wordi = wordi + " " + " "
+        }
         else
         {	wordi = wordi + sp;
         }
