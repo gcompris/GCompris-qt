@@ -143,15 +143,28 @@ function initLevel() {
         var letters = new Array();
         items.keyboard.shiftKey = false;
         for (var i = 0; i < level.words.length; i++) {
-            for (var j = 0; j < level.words[i].length; j++) {
-                var letter = level.words[i].charAt(j);
+            if(mode ==='letter') {
+                // The word is a letter, even if it has several chars (digraph)
+                var letter = level.words[i];
                 var isUpper = (letter == letter.toLocaleUpperCase());
                 if (isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1)
                     items.keyboard.shiftKey = true;
                 else if (!isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1)
                     items.keyboard.shiftKey = true;
                 else if (letters.indexOf(letter) === -1)
-                    letters.push(level.words[i].charAt(j));
+                    letters.push(level.words[i]);
+            } else {
+                // We split each word in char to create the keyboard
+                for (var j = 0; j < level.words[i].length; j++) {
+                    var letter = level.words[i].charAt(j);
+                    var isUpper = (letter == letter.toLocaleUpperCase());
+                    if (isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1)
+                        items.keyboard.shiftKey = true;
+                    else if (!isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1)
+                        items.keyboard.shiftKey = true;
+                    else if (letters.indexOf(letter) === -1)
+                        letters.push(level.words[i].charAt(j));
+                }
             }
         }
         letters.sort();
@@ -287,7 +300,7 @@ function createWord()
                     "x": Math.random() * (items.main.width - 25),
                     "y": -25,
                 });
-        } else if(items.ourActivity.getDominoValues(text)) {
+        } else if(items.ourActivity.getDominoValues(text).length) {
             word = wordComponent.createObject( items.background,
                 {
                     "text": text,
@@ -303,6 +316,7 @@ function createWord()
                     // assume x=width-25px for now, Word auto-adjusts onCompleted():
                     "x": Math.random() * (items.main.width - 25),
                     "y": -25,
+                    "mode": mode,
                 });
         }
 
