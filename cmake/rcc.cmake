@@ -12,9 +12,13 @@ function(GCOMPRIS_ADD_RCC resource_path)
 
   get_filename_component(activity "${resource_path}" NAME)
 
-  # Create this QRC file
-  # (cannot create it in the build dir because rcc expect local files)
-  set(CREATED_QRC "${CMAKE_CURRENT_SOURCE_DIR}/${activity}.qrc")
+  if(Qt5Widgets_VERSION_STRING VERSION_LESS 5.4.2 OR WIN32)
+    # (cannot create it in the build dir because rcc expect local files)
+    # Create this QRC file
+    set(CREATED_QRC "${CMAKE_CURRENT_SOURCE_DIR}/${activity}.qrc")
+  else()
+    set(CREATED_QRC "${CMAKE_CURRENT_BINARY_DIR}/${activity}.qrc")
+  endif()
 
   set(ACTIVITY_PATH "/gcompris/src/${resource_path}")
   file(GLOB QRC_CONTENTS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} ${rcc_files})
@@ -29,9 +33,17 @@ function(GCOMPRIS_ADD_RCC resource_path)
 
   set(CREATED_RCC ${GCOMPRIS_RCC_DIR}/${activity}.rcc)
 
+  if(Qt5Widgets_VERSION_STRING VERSION_LESS 5.4.2 OR WIN32)
+    set(_RCC_COMMAND ${Qt5Core_RCC_EXECUTABLE} "-binary" -o ${CREATED_RCC} ${CREATED_QRC})
+  else()
+    set(_RCC_COMMAND ${Qt5Core_RCC_EXECUTABLE} "-binary" -o ${CREATED_RCC} - < ${CREATED_QRC})
+  endif()
+
   add_custom_command(OUTPUT ${CREATED_RCC}
-                     COMMAND ${Qt5Core_RCC_EXECUTABLE} "-binary" -o ${CREATED_RCC} ${CREATED_QRC}
-                     DEPENDS ${QRC_CONTENTS} "${out_depends}" VERBATIM)
+                     COMMAND ${_RCC_COMMAND}
+                     DEPENDS ${QRC_CONTENTS} "${out_depends}" VERBATIM
+                     WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
+
   if(CMAKE_HOST_APPLE)
     install(FILES ${CREATED_RCC} DESTINATION gcompris-qt.app/Contents/MacOS/rcc)
   elseif(SAILFISHOS)
