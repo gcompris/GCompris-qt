@@ -253,6 +253,8 @@ function createLastLevel()
 }
 
 function playLetter(letter) {
-    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/"
+    // WARNING This activity is english only for now
+    // replace en by $LOCALE once i18n support
+    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/en/alphabet/"
                                                                        + Core.getSoundFilenamForChar(letter)))
 }
