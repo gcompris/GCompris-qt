@@ -62,9 +62,9 @@ ActivityBase {
         property bool keyNavigation: false
         property bool moveAnswerCell: false
         property bool moveProcedureCell: false
-        property bool procedureCalled: false
-        property bool procedureDefinationFinished: false
-        property variant answers: []
+        property bool insertIntoMain: true
+        property bool insertIntoProcedure: false
+        //        property variant answers: []
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -85,10 +85,9 @@ ActivityBase {
             property alias answerSheet: answerSheet
             property alias procedureModel: procedureModel
             property alias procedure: procedure
-            property alias procedureCalled: background.procedureCalled
-            property alias procedureDefinationFinished: background.procedureDefinationFinished
             property alias player: player
             property alias fish: fish
+            property alias runCodeImage: runCode.source
         }
 
         onStart: {
@@ -133,13 +132,6 @@ ActivityBase {
 
         ListModel {
             id: answerModel
-            function createModel() {
-                answerModel.clear()
-                for (var i = 0; i < answers.length; i++) {
-                    answerModel.append({"name": answers[i], "uid": i})
-                }
-            }
-            Component.onCompleted: { createModel() }
         }
 
         ListModel {
@@ -152,7 +144,6 @@ ActivityBase {
 
             anchors.left: parent.left
             anchors.top: parent.top
-            anchors.bottom: instruction.top
 
             Image {
                 x: modelData[0] * background.width / 10
@@ -228,13 +219,14 @@ ActivityBase {
         GridView {
             id: instruction
             width: parent.width * 0.5
-            height: parent.height * 0.3
+            height: parent.height * 0.3 + 25 * ApplicationInfo.ratio
             cellWidth: background.buttonWidth
             cellHeight: background.buttonHeight
 
             anchors.left: parent.left
             anchors.bottom: runCode.top
-            anchors.margins: 10 * ApplicationInfo.ratio
+            anchors.top: mazeModel.bottom
+            anchors.topMargin: background.buttonHeight * 4
             anchors.bottomMargin: runCode.height / 2
 
             interactive: false
@@ -274,7 +266,6 @@ ActivityBase {
                             GradientStop { position: 1.0; color: "#005B9A" }
                         }
                         opacity: 0.5
-
                     }
 
                     Image {
@@ -302,40 +293,21 @@ ActivityBase {
                         signal clicked
                         onClicked: {
                             clickedAnim.start()
-                            if(procedureCalled && name != Activity.callProcedure ||
-                                    (name == Activity.endProcedure &&
-                                     !background.procedureDefinationFinished)) {
+                            if(background.insertIntoProcedure && name != Activity.callProcedure) {
                                 procedureModel.append({"name": name})
-                            } else {
-                                answers.push(name)
-                                answerModel.createModel()
                             }
-
-                            if(name == Activity.callProcedure && !background.procedureDefinationFinished)
-                                background.procedureCalled = true
-                            if(name == Activity.endProcedure) {
-                                background.procedureCalled = false
-                                background.procedureDefinationFinished = true
+                            if(background.insertIntoMain) {
+                                answerModel.append({"name": name})
                             }
                         }
                         onPressed: {
                             clickedAnim.start()
-                            if(procedureCalled && name != Activity.callProcedure ||
-                                    (name == Activity.endProcedure &&
-                                     !background.procedureDefinationFinished)) {
+                            if(background.insertIntoProcedure && name != Activity.callProcedure) {
                                 procedureModel.append({"name": name})
-                            } else {
-                                answers.push(name)
-                                answerModel.createModel()
                             }
-
-                            if(name == Activity.callProcedure && !background.procedureDefinationFinished)
-                                background.procedureCalled = true
-                            if(name == Activity.endProcedure) {
-                                background.procedureCalled = false
-                                background.procedureDefinationFinished = true
+                            if(background.insertIntoMain) {
+                                answerModel.append({"name": name})
                             }
-
                         }
                     }
                     SequentialAnimation {
@@ -361,182 +333,107 @@ ActivityBase {
         // insert data upon clicking the list items into this answerData
         // and then process it to run the code
 
-        GridView {
+        AnswerSheet {
             id: answerSheet
-
-            width: parent.width * 0.4
-            height: parent.height * 0.4 + 25 * ApplicationInfo.ratio
-            cellWidth: background.buttonWidth
-            cellHeight: background.buttonHeight
+            background: background
+            currentModel: answerModel
             anchors.right: parent.right
-            anchors.top: parent.top
+            anchors.top: answerHeaderComponent.bottom
+        }
 
-            interactive: false
-            model: answerModel
-            clip: true
-            header: answerHeaderComponent
+        AnswerSheet {
+            id: procedure
+            background: background
+            currentModel: procedureModel
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+            //highlight move answer cell
+        }
 
-            highlight: Rectangle {
-                width: buttonWidth + 5 * ApplicationInfo.ratio
-                height: buttonHeight + 5 * ApplicationInfo.ratio
-                color: "lightsteelblue"
-                border.width: 5 * ApplicationInfo.ratio
-                border.color: "black"
-                opacity: 0.5
-                z: 11
-                visible: background.moveAnswerCell
-                x: answerSheet.currentItem.x
-                Behavior on x { SpringAnimation { spring: 3; damping: 0.2 } }
+        Image {
+            id: runCode
+            width: background.width / 10
+            height: background.height / 10
+            anchors.right: instruction.right
+            anchors.bottom: bar.top
+            anchors.margins: 10 * ApplicationInfo.ratio
+
+
+            source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
+            fillMode: Image.PreserveAspectFit
+
+
+            MouseArea {
+                id: runCodeMouseArea
+                anchors.fill: parent
+                hoverEnabled: true
+                onEntered: runCode.scale = 1.1
+                onClicked: {
+                    Activity.runCode()
+                }
+                onExited: runCode.scale = 1
             }
-            highlightFollowsCurrentItem: true
-            highlightMoveDuration: Activity.moveAnimDuration
-            keyNavigationWraps: true
-            focus: true
-
-            property int firstIndexDrag: -1
-
-            delegate: Column {
-
-                Item {
-                    id: item
-                    width: background.buttonWidth - 5 * ApplicationInfo.ratio
-                    height: background.buttonHeight - 5 * ApplicationInfo.ratio
-
-                    Rectangle {
-                        id: answerRect
-                        anchors.fill: parent
-                        color: "#005B9A"
-                        opacity: 1
-                        x: item.x; y: item.y
-                        width: item.width; height: item.height
-                    }
-
-                    Image {
-                        source: "qrc:/gcompris/src/core/resource/button.svg"
-                        sourceSize {  height: parent.height; width: parent.width }
-                        width: sourceSize.width
-                        height: sourceSize.height
-                        smooth: true
-                    }
-
-                    Image {
-                        id: answer
-                        source: Activity.url + name + ".svg"
-                        sourceSize { width: parent.width; height: parent.height  }
-                        width: sourceSize.width
-                        height: sourceSize.height
-                        anchors.centerIn: parent
-                        anchors.verticalCenter: parent.verticalCenter
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        smooth: false
-
-                        property int uid: (index >= 0) ? answerModel.get(index).uid : -1
-                        states: [
-                            State {
-                                name: "active";
-                                when: answerMouseArea.activeId == answer.uid
-                                PropertyChanges {
-                                    target: answer;
-                                    x: answerMouseArea.mouseX;
-                                    y: answerMouseArea.mouseY;
-                                    z: 10;
-                                    scale: 0.7;
-                                }
-                            }
-                        ]
-
-                        transitions: Transition {
-                            NumberAnimation { property: "scale"; duration: 200}
-                        }
-
-                        MouseArea {
-                            id: answerMouseArea
-                            anchors.fill: parent
-                            hoverEnabled: true
-                            property int index: answerSheet.indexAt(mouseX, mouseY) //item underneath cursor
-                            property int activeId: -1 //uid of active item
-                            property int activeIndex //current position of active item
-
-                            onPressAndHold: {
-                                console.log("press and hold")
-                                activeId = answerSheet.model.get(activeIndex=index).uid
-                            }
-                            onReleased: {
-                                console.log("released")
-                                activeId = -1
-                            }
-                            onPositionChanged: {
-                                if (activeId != -1 && index != -1 &&
-                                        index != activeIndex) {
-                                    answerSheet.model.move(activeIndex,
-                                                           activeIndex = index, 1)
-                                }
-                            }
-                        }
-
-                    }
+        }
 
 
-                    //                            onReleased: {
-                    //                                if(answerSheet.indexAt(mouseX,mouseY) == -1)
-                    //                                    answerModel.remove(model.index)
-                    //                                else
-                    //                                    answerModel.move(answerSheet.firstIndexDrag,
-                    //                                                     answerSheet.indexAt(mouse.x, mouse.y),1)
-                    //                                answerSheet.firstIndexDrag = -1
-                    //                            }
-                    //                            onPressed: {
-                    //                                console.log("see "+answerSheet.indexAt(mouse.x, mouse.y))
-                    //                                answerSheet.firstIndexDrag = answerSheet.indexAt(mouseX,mouseY)
-                    //                            }
 
+        Component {
+            id: instructionHeaderComponent
+            Rectangle {
+                id: headerRect
+                width: instruction.width
+                height: 25 * ApplicationInfo.ratio
+                color: "#005B9A"
+                opacity: 1
+
+                Image {
+                    source: "qrc:/gcompris/src/core/resource/button.svg"
+                    sourceSize {  height: parent.height; width: parent.width }
+                    width: sourceSize.width
+                    height: sourceSize.height
+                    smooth: false
+                }
+
+                GCText {
+                    id: headerText
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    horizontalAlignment: Text.AlignHCenter
+                    width: parent.width
+                    height: parent.height
+                    fontSizeMode: Font.DemiBold
+                    minimumPointSize: 7
+                    fontSize: mediumSize
+                    wrapMode: Text.WordWrap
+                    color: "white"
+                    text: qsTr("Choose the instructions")
                 }
             }
-//        }
-    }
-
-    GridView {
-        id: procedure
-
-        width: parent.width * 0.4
-        height: parent.height * 0.30 + 25 * ApplicationInfo.ratio
-        cellWidth: background.buttonWidth
-        cellHeight: background.buttonHeight
-        anchors.right: parent.right
-        anchors.top: answerSheet.bottom
-
-        highlight: Rectangle {
-            width: buttonWidth + 5 * ApplicationInfo.ratio
-            height: buttonHeight + 5 * ApplicationInfo.ratio
-            color: "lightsteelblue"
-            border.width: 5 * ApplicationInfo.ratio
-            border.color: "black"
-            opacity: 0.5
-            z: 11
-            visible: background.moveProcedureCell
-            x: procedure.currentItem.x
-            Behavior on x { SpringAnimation { spring: 3; damping: 0.2 } }
         }
-        highlightFollowsCurrentItem: true
-        highlightMoveDuration: Activity.moveAnimDuration
-        keyNavigationWraps: true
 
-        interactive: false
-        model: procedureModel
-        clip: true
-        header: procedureHeaderComponent
+        Item {
+            id: answerHeaderComponent
+            width: answerSheet.width
+            height: 50 * ApplicationInfo.ratio
+            anchors.left: answerSheet.left
+            anchors.top: parent.top
+            property alias mainHeaderOpacity: answerHeaderRect.opacity
 
-        delegate: Column {
+            Rectangle {
+                id: answerHeaderRect
+                anchors.fill: parent
+                color: "#005B9A"
+                opacity: 1
 
-            Item {
-                width: background.buttonWidth - 5 * ApplicationInfo.ratio
-                height: background.buttonHeight - 5 * ApplicationInfo.ratio
-
-                Rectangle {
-                    id: procedureRect
+                MouseArea {
                     anchors.fill: parent
-                    color: "#005B9A"
-                    opacity: 1
+                    onClicked: {
+                        background.insertIntoMain = true
+                        background.insertIntoProcedure = false
+                        procedureHeaderComponent.pHeaderOpacity = 0.5
+                        answerHeaderRect.opacity = 1
+                        console.log("clicked main")
+                    }
                 }
 
                 Image {
@@ -547,180 +444,98 @@ ActivityBase {
                     smooth: false
                 }
 
-                Image {
-                    id: procedureSubInstruction
-                    source: Activity.url + name + ".svg"
-                    sourceSize { width: parent.width; height: parent.height  }
-                    width: sourceSize.width
-                    height: sourceSize.height
-                    anchors.centerIn: parent
-                    anchors.verticalCenter: parent.verticalCenter
+                GCText {
+                    id: answerHeaderText
                     anchors.horizontalCenter: parent.horizontalCenter
-                    smooth: false
-
-                    MouseArea {
-                        id: procedureInstructionRemove
-                        anchors.fill: parent
-                        onPressed: {
-                            if(name != Activity.endProcedure)
-                                procedureModel.remove(model.index)
-                        }
-                    }
+                    anchors.verticalCenter: parent.verticalCenter
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    width: parent.width
+                    height: parent.height
+                    fontSizeMode: Font.DemiBold
+                    minimumPointSize: 7
+                    fontSize: mediumSize
+                    wrapMode: Text.WordWrap
+                    color: "white"
+                    text: qsTr("Your Code")
                 }
             }
         }
-    }
 
-
-    Image {
-        id: runCode
-        width: background.width / 10
-        height: background.height / 10
-        anchors.right: instruction.right
-        anchors.bottom: bar.top
-        anchors.margins: 10 * ApplicationInfo.ratio
-
-
-        source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
-        fillMode: Image.PreserveAspectFit
-
-
-        MouseArea {
-            id: runCodeMouseArea
-            anchors.fill: parent
-            hoverEnabled: true
-            onEntered: runCode.scale = 1.1
-            onClicked: {
-                Activity.runCode()
-            }
-            onExited: runCode.scale = 1
-        }
-    }
-
-
-
-    Component {
-        id: instructionHeaderComponent
-        Rectangle {
-            id: headerRect
-            width: instruction.width
-            height: 25 * ApplicationInfo.ratio
-            color: "#005B9A"
-            opacity: 1
-
-            Image {
-                source: "qrc:/gcompris/src/core/resource/button.svg"
-                sourceSize {  height: parent.height; width: parent.width }
-                width: sourceSize.width
-                height: sourceSize.height
-                smooth: false
-            }
-
-            GCText {
-                id: headerText
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
-                horizontalAlignment: Text.AlignHCenter
-                width: parent.width
-                height: parent.height
-                fontSizeMode: Font.DemiBold
-                minimumPointSize: 7
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
-                color: "white"
-                text: qsTr("Choose the instructions")
-            }
-        }
-    }
-
-    Component {
-        id: answerHeaderComponent
-        Rectangle {
-            id: answerHeaderRect
-            width: answerSheet.width
-            height: 25 * ApplicationInfo.ratio
-            color: "#005B9A"
-            opacity: 1
-
-            Image {
-                source: "qrc:/gcompris/src/core/resource/button.svg"
-                sourceSize {  height: parent.height; width: parent.width }
-                width: sourceSize.width
-                height: sourceSize.height
-                smooth: false
-            }
-
-            GCText {
-                id: answerHeaderText
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
-                horizontalAlignment: Text.AlignHCenter
-                width: parent.width
-                height: parent.height
-                fontSizeMode: Font.DemiBold
-                minimumPointSize: 7
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
-                color: "white"
-                text: qsTr("Your Code")
-            }
-        }
-    }
-    Component {
-        id: procedureHeaderComponent
-        Rectangle {
-            id: procedureHeaderRect
+        Item{
+            id: procedureHeaderComponent
             width: procedure.width
-            height: 25 * ApplicationInfo.ratio
-            color: "#005B9A"
-            opacity: 1
+            height: 50 * ApplicationInfo.ratio
+            anchors.left: procedure.left
+            anchors.bottom: procedure.top
+//            anchors.top: answerSheet.bottom
+            property alias pHeaderOpacity: procedureHeaderRect.opacity
+            Rectangle {
+                id: procedureHeaderRect
+                anchors.fill: parent
+                color: "#005B9A"
+                opacity: 0.5
 
-            Image {
-                source: "qrc:/gcompris/src/core/resource/button.svg"
-                sourceSize {  height: parent.height; width: parent.width }
-                width: sourceSize.width
-                height: sourceSize.height
-                smooth: false
-            }
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        if(bar.level > 2) {
+                            background.insertIntoMain = false
+                            background.insertIntoProcedure = true
+                            answerHeaderComponent.mainHeaderOpacity = 0.5
+                            procedureHeaderRect.opacity = 1
+                            console.log("clicked procedure")
+                        }
+                    }
+                }
 
-            GCText {
-                id: procedureHeaderText
-                anchors.horizontalCenter: parent.horizontalCenter
-                anchors.verticalCenter: parent.verticalCenter
-                horizontalAlignment: Text.AlignHCenter
-                width: parent.width
-                height: parent.height
-                fontSizeMode: Font.DemiBold
-                minimumPointSize: 7
-                fontSize: mediumSize
-                wrapMode: Text.WordWrap
-                color: "white"
-                text: qsTr("Your procedure")
+                Image {
+                    source: "qrc:/gcompris/src/core/resource/button.svg"
+                    sourceSize {  height: parent.height; width: parent.width }
+                    width: sourceSize.width
+                    height: sourceSize.height
+                    smooth: false
+                }
+
+                GCText {
+                    id: procedureHeaderText
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    width: parent.width
+                    height: parent.height
+                    fontSizeMode: Font.DemiBold
+                    minimumPointSize: 7
+                    fontSize: mediumSize
+                    wrapMode: Text.WordWrap
+                    color: "white"
+                    text: qsTr("Your procedure")
+                }
             }
         }
-    }
 
-    DialogHelp {
-        id: dialogHelp
-        onClose: home()
-    }
-
-    Bar {
-        id: bar
-        content: BarEnumContent { value: help | home | level | reload }
-        onHelpClicked: {
-            displayDialog(dialogHelp)
+        DialogHelp {
+            id: dialogHelp
+            onClose: home()
         }
-        onPreviousLevelClicked: Activity.previousLevel()
-        onNextLevelClicked: Activity.nextLevel()
-        onHomeClicked: activity.home()
-        onReloadClicked: Activity.initLevel()
-    }
 
-    Bonus {
-        id: bonus
-        Component.onCompleted: win.connect(Activity.nextLevel)
+        Bar {
+            id: bar
+            content: BarEnumContent { value: help | home | level | reload }
+            onHelpClicked: {
+                displayDialog(dialogHelp)
+            }
+            onPreviousLevelClicked: Activity.previousLevel()
+            onNextLevelClicked: Activity.nextLevel()
+            onHomeClicked: activity.home()
+            onReloadClicked: Activity.initLevel()
+        }
+
+        Bonus {
+            id: bonus
+            Component.onCompleted: win.connect(Activity.nextLevel)
+        }
     }
-}
 
 }
