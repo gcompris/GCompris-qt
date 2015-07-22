@@ -53,8 +53,7 @@ var mazeBlocks = [
                 [qsTr("move-forward"),
                  qsTr("turn-left"),
                  qsTr("turn-right"),
-                 qsTr("call-procedure"),
-                 qsTr("end-procedure")]
+                 qsTr("call-procedure")]
             ],
             //level four
             [
@@ -64,20 +63,18 @@ var mazeBlocks = [
                 [qsTr("move-forward"),
                  qsTr("turn-left"),
                  qsTr("turn-right"),
-                 qsTr("call-procedure"),
-                 qsTr("end-procedure")]
+                 qsTr("call-procedure")]
             ],
             //level five
             [
                 [[0,3],[0,2],[0,1],[0,0],[1,0],[2,0],[2,1],
-                [2,2],[2,3],[3,3],[4,3],[4,2],[4,1],[4,0]],
+                 [2,2],[2,3],[3,3],[4,3],[4,2],[4,1],[4,0]],
                 [[4,0]],
                 //instruction set
                 [qsTr("move-forward"),
                  qsTr("turn-left"),
                  qsTr("turn-right"),
-                 qsTr("call-procedure"),
-                 qsTr("end-procedure")]
+                 qsTr("call-procedure")]
             ]
         ]
 //[1,3],[2,3],[2,2],[2,1],[3,1]
@@ -101,7 +98,7 @@ var changedX
 var changedY
 var currentRotation
 var changedRotation
-var flag = 0
+var deadEndPoint = 0
 var j = 0
 var reset = 0
 var blocksDataIndex = 0
@@ -118,6 +115,8 @@ var runningProcedure
 var moveAnimDuration
 var url = "qrc:/gcompris/src/activities/programmingMaze/resource/"
 var reverseCountUrl = "qrc:/gcompris/src/activities/reversecount/resource/"
+var okImage = "qrc:/gcompris/src/core/resource/bar_ok.svg"
+var reloadImage = "qrc:/gcompris/src/core/resource/bar_reload.svg"
 var currentLevel = 0
 var numberOfLevel = 5
 var items
@@ -134,19 +133,14 @@ function stop() {
 }
 
 function initLevel() {
-    console.log("bar level "+items.bar.level)
     items.bar.level = currentLevel + 1
     items.mazeModel.model = mazeBlocks[currentLevel][blocksDataIndex]
 
-    if(!reset) {
-        items.background.answers = []
+    if(!reset && !deadEndPoint) {
         items.answerModel.clear()
         items.procedureModel.clear()
-        items.procedureCalled = false
-        items.background.procedureDefinationFinished = false
     }
     countOfMazeBlocks = mazeBlocks[currentLevel][blocksDataIndex].length
-
 
     stepX = items.background.width / 10
     stepY = (items.background.height - items.background.height/10) / 10
@@ -169,11 +163,6 @@ function initLevel() {
             turnRight = levelInstructions[i]
     }
 
-
-    items.player.tuxIsBusy = false
-    j = 0
-    playerCode = []
-
     items.player.x = initialX
     items.player.y = initialY
     items.fish.x = mazeBlocks[currentLevel][blocksFishIndex][0][0] * stepX
@@ -181,15 +170,20 @@ function initLevel() {
     tuxIceBlockNumber = 0
     currentRotation = -90
     changedRotation = -90
-    flag = 0
+    deadEndPoint = 0
     procedureBlocks = 0
     runningProcedure = false
+    moveAnimDuration = 1000
     items.background.moveAnswerCell = false
     items.background.moveProcedureCell = false
-    moveAnimDuration = 1000
+    items.background.insertIntoMain = true
+    items.background.insertIntoProcedure = false
     items.answerSheet.highlightMoveDuration = moveAnimDuration
     items.procedure.highlightMoveDuration = moveAnimDuration
-
+    items.runCodeImage = okImage
+    items.player.tuxIsBusy = false
+    j = 0
+    playerCode = []
 
     items.player.init()
 }
@@ -205,50 +199,57 @@ function getPlayerRotation() {
 
 function runCode() {
 
-    //initiallize back to starting position and code
-    playerCode = []
-    items.player.tuxIsBusy = false
-    procedureBlocks = items.procedureModel.count
-    console.log("procedure blocks "+procedureBlocks)
-    for(var i = 0; i < items.answerModel.count; i++) {
-        if(items.answerModel.get([i]).name == callProcedure) {
-            playerCode.push("start-procedure")
-            for(var j =0; j < items.procedureModel.count; j++){
-                if(items.procedureModel.get([j]).name != endProcedure)
-                    playerCode.push(items.procedureModel.get([j]).name)
-            }
-            playerCode.push("end-procedure")
-        }
-        else {
-            playerCode.push(items.answerModel.get([i]).name)
-        }
+    if(items.runCodeImage == reloadImage) {
+        playerCode = []
+        items.answerSheet.highlightFollowsCurrentItem = false
+        initLevel()
     }
+    else {
+        items.answerSheet.highlightFollowsCurrentItem = true
+        //initiallize code
+        playerCode = []
+        items.player.tuxIsBusy = false
+        procedureBlocks = items.procedureModel.count
+        for(var i = 0; i < items.answerModel.count; i++) {
+            if(items.answerModel.get([i]).name == callProcedure) {
+                playerCode.push("start-procedure")
+                for(var j =0; j < items.procedureModel.count; j++){
+                    if(items.procedureModel.get([j]).name != endProcedure)
+                        playerCode.push(items.procedureModel.get([j]).name)
+                }
+                playerCode.push("end-procedure")
+            }
+            else {
+                playerCode.push(items.answerModel.get([i]).name)
+            }
+        }
 
-    if(!items.player.tuxIsBusy) {
-        executeNextInstruction()
+        if(!items.player.tuxIsBusy) {
+            executeNextInstruction()
+        }
     }
 }
 
 
 function playerRunningChanged() {
-
     if(!items.player.tuxIsBusy) {
-        if(flag == 1) {
-            deadEnd()
+        if(deadEndPoint == 1)
+            console.log("it was a dead end")
+        else{
+           executeNextInstruction()
         }
-        executeNextInstruction()
     }
 }
 
 function executeNextInstruction() {
     currentInstruction = playerCode[j]
-    if(!items.player.tuxIsBusy && j < playerCode.length
+    if(!items.player.tuxIsBusy && j < playerCode.length && deadEndPoint == 0
             && currentInstruction != "start-procedure" && currentInstruction != "end-procedure") {
+//        console.log("current instruction "+currentInstruction)
         changedX = items.player.x
         changedY = items.player.y
         currentRotation = getPlayerRotation()
 
-        console.log(j + " executing next " +currentInstruction)
         currentBlock = tuxIceBlockNumber
         nextBlock = tuxIceBlockNumber + 1
         currentX = mazeBlocks[currentLevel][blocksDataIndex][currentBlock][0]
@@ -256,16 +257,15 @@ function executeNextInstruction() {
         nextX = mazeBlocks[currentLevel][blocksDataIndex][nextBlock][0]
         nextY = mazeBlocks[currentLevel][blocksDataIndex][nextBlock][1]
 
-
         if ( currentInstruction == moveForward) {
             ++tuxIceBlockNumber;
             items.background.moveAnswerCell = true
-            items.background.moveProcedureCell = true
+//            items.background.moveProcedureCell = true
             items.answerSheet.highlightMoveDuration = moveAnimDuration
             items.procedure.highlightMoveDuration = moveAnimDuration
             if (nextX - currentX > 0 && currentRotation == 270) {  //EAST 270
                 changedX = currentX * stepX + stepX
-//                console.log("moving forward emitting the signal")
+                //                console.log("moving forward emitting the signal")
                 items.player.x = changedX
                 items.player.y = changedY
             }
@@ -287,27 +287,25 @@ function executeNextInstruction() {
             }
             else {
                 // add an animation to indicate that its not possible
-                flag = 1
+                deadEndPoint = 1
                 items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
                 console.log("dead end")
-                return
+                deadEnd()
             }
         }
 
         else if ( currentInstruction == turnLeft) {
             changedRotation = (currentRotation - 90) % 360
-                    console.log("turning left")
             items.player.rotation = changedRotation
             items.background.moveAnswerCell = true
-            items.background.moveProcedureCell = true
+//            items.background.moveProcedureCell = true
             items.answerSheet.highlightMoveDuration = moveAnimDuration / 2
             items.procedure.highlightMoveDuration = moveAnimDuration / 2
         }
         else if ( currentInstruction == turnRight) {
             changedRotation = (currentRotation + 90) % 360
-            console.log("turning right")
             items.background.moveAnswerCell = true
-            items.background.moveProcedureCell = true
+//            items.background.moveProcedureCell = true
             items.player.rotation = changedRotation
             items.answerSheet.highlightMoveDuration = moveAnimDuration / 2
             items.procedure.highlightMoveDuration = moveAnimDuration / 2
@@ -329,6 +327,7 @@ function executeNextInstruction() {
     if(currentInstruction == "start-procedure") {
         runningProcedure = true
         items.background.moveProcedureCell = true
+        items.background.moveAnswerCell = false
         j = j + 1
         executeNextInstruction()
     }
@@ -336,19 +335,18 @@ function executeNextInstruction() {
         runningProcedure = false
         procedureBlocks = items.procedureModel.count
         items.background.moveProcedureCell = false
+        items.background.moveAnswerCell  =true
         j = j + 1
         executeNextInstruction()
     }
 
-//    items.player.tuxIsBusy = true
+    //    items.player.tuxIsBusy = true
 }
 
 function deadEnd() {
-    playerCode = []
-    j =0
-    items.player.tuxIsBusy = false
-    console.log("ending")
-    initLevel();
+    deadEndPoint = 1
+    items.runCodeImage = reloadImage
+//    initLevel();
 }
 
 function checkSuccess() {
