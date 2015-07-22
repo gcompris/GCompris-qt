@@ -124,9 +124,9 @@ function get() {
                  "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/purple.$CA")
              },
              {
-                 "image": "qrc:/gcompris/src/activities/colors/resource/red_duck.svg",
-                 "text": qsTr("Find the red duck"),
-                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/red.$CA")
+                 "image": "qrc:/gcompris/src/activities/colors/resource/pink_duck.svg",
+                 "text": qsTr("Find the pink duck"),
+                 "audio": ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/colors/pink.$CA")
              },
              {
                  "image": "qrc:/gcompris/src/activities/colors/resource/blue_duck.svg",
