@@ -1,6 +1,6 @@
-/* GCompris - MenuScreen.qml
+/* GCompris - lang.qml
 *
-* Copyright (C) Holger Kaelberer <holger.k@elberer.de> (Qt Quick port of imageid)
+* Copyright (C) Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
 *
 * Authors:
 *   Pascal Georges (pascal.georges1@free.fr) (GTK+ version)
@@ -20,8 +20,7 @@
 *
 *   You should have received a copy of the GNU General Public License
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
-*/
-import QtQuick 2.1
+*/import QtQuick 2.1
 import GCompris 1.0
 import QtGraphicalEffects 1.0
 import QtQuick.Controls 1.2
@@ -48,20 +47,39 @@ Image {
     property string favtUrl: "qrc:/gcompris/src/activities/menu/resource/"
 
     Keys.onPressed: {
-        if(event.key === Qt.Key_Space) {
-            currentActiveGrid.currentItem.selectCurrentItem()
+        if( Activity.currentMiniGame == -1) {
+            console.log("key pressed in menu screen")
+            items.background.keyNavigation = false
+            if(event.key === Qt.Key_Escape){
+                activity.home()
+            }
+            if(event.key === Qt.Key_Space) {
+                currentActiveGrid.currentItem.selectCurrentItem()
+            }
+            if(event.key === Qt.Key_Enter) {
+                currentActiveGrid.currentItem.selectCurrentItem()
+            }
+            if(event.key === Qt.Key_Return) {
+                currentActiveGrid.currentItem.selectCurrentItem()
+            }
+            if(event.key === Qt.Key_Left) {
+                currentActiveGrid.moveCurrentIndexLeft()
+            }
+            if(event.key === Qt.Key_Right) {
+                currentActiveGrid.moveCurrentIndexRight()
+            }
+            if(event.key === Qt.Key_Up) {
+                currentActiveGrid.moveCurrentIndexUp()
+            }
+            if(event.key === Qt.Key_Down) {
+                currentActiveGrid.moveCurrentIndexDown()
+            }
         }
     }
     Keys.onReleased: {
         keyboardMode = true
         event.accepted = false
     }
-    Keys.onEnterPressed: currentActiveGrid.currentItem.selectCurrentItem();
-    Keys.onReturnPressed: currentActiveGrid.currentItem.selectCurrentItem();
-    Keys.onRightPressed: currentActiveGrid.moveCurrentIndexRight();
-    Keys.onLeftPressed: currentActiveGrid.moveCurrentIndexLeft();
-    Keys.onDownPressed: currentActiveGrid.moveCurrentIndexDown();
-    Keys.onUpPressed: currentActiveGrid.moveCurrentIndexUp();
 
     // Activities
     property int iconWidth: 190 * ApplicationInfo.ratio
@@ -85,7 +103,7 @@ Image {
         anchors {
             top: parent.top
             fill: parent
-//            margins: 4
+            //            margins: 4
         }
         width: background.width
         cellWidth: levelCellWidth
@@ -140,7 +158,7 @@ Image {
                     maximumValue: wordCount
                     minimumValue: 0
                     value: Activity.savedProgress[index]
-//                    value: savedProgress
+                    //                    value: savedProgress
                     orientation: Qt.Horizontal
                 }
 

@@ -1,25 +1,26 @@
-/* GCompris - lang.js
- *
- * Copyright (C) 2014 Siddhesh suthar<siddhesh.it@gmail.com>
- *
- * Authors:
- *   Pascal Georges (pascal.georges1@free.fr) (GTK+ version)
- *   Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
- *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Integration Lang dataset)
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 3 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
- */.pragma library
+/* GCompris - lang.qml
+*
+* Copyright (C) Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
+*
+* Authors:
+*   Pascal Georges (pascal.georges1@free.fr) (GTK+ version)
+*   Holger Kaelberer <holger.k@elberer.de> (Qt Quick port of imageid)
+*   Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
+*   Bruno Coudoin <bruno.coudoin@gcompris.net> (Integration Lang dataset)
+*
+*   This program is free software; you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation; either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/.pragma library
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
@@ -63,6 +64,7 @@ function init(items_) {
     currentLevel = 0
     currentSubLevel = 0
     currentSubLesson = 0
+    currentMiniGame = -1
 }
 
 function start() {
@@ -172,7 +174,7 @@ function initLevel(currentLevel_) {
     }
 
     if(currentSubLesson == 0)
-            currentProgress[currentLevel] = 0
+            currentProgress[currentLevel] = 0 //change to saved progress
 
     initSubLevel()
 }
@@ -183,14 +185,14 @@ function nextSubLesson(){
 
     if(currentSubLesson < maxSubLesson) {
         ++currentSubLesson
+        initLevel(currentLevel)
     }
     else {
         if(maxLevel <= ++currentLevel ) {
             currentLevel = 0
         }
-        currentSubLesson = 0
+        launchMenuScreen()
     }
-    initLevel(currentLevel)
 }
 
 function nextLevel() {
@@ -201,7 +203,6 @@ function nextLevel() {
     if(maxLevel <= ++currentLevel ) {
         currentLevel = 0
     }
-    initLevel(currentLevel);
 }
 
 function previousLevel() {
@@ -259,8 +260,8 @@ function nextMiniGame() {
     if(currentMiniGame < miniGames.length) {
 
 
-        console.log("launching next Mini game current progress" + currentProgress[currentLevel]
-                    +"saved progress"+ savedProgress[currentLevel])
+        console.log("launching next Mini game current progress " + currentProgress[currentLevel]
+                    +" saved progress "+ savedProgress[currentLevel])
 
         var mode = miniGames[currentMiniGame][1];
         var itemToLoad = miniGames[currentMiniGame][2];
@@ -293,11 +294,26 @@ function nextMiniGame() {
         loadedItems.init(items, loadedItems, subWordList, mode)
         ++currentMiniGame;
     }
-    else {
-        nextLevel()
-    }
 }
 
 function getProgressStatus(index) {
     return savedProgress[index  ]
+}
+
+function launchMenuScreen() {
+    currentSubLesson = 0
+    currentMiniGame = -1
+    if(savedProgress[currentLevel] < currentProgress[currentLevel])
+        savedProgress[currentLevel] = currentProgress[currentLevel]
+    console.log("completed level and now progress: "+ savedProgress[currentLevel])
+    items.menu_screen.menuModel.clear()
+    items.menu_screen.menuModel.append(menus)
+    if(items.menu_screen.visible == false) {
+        items.menu_screen.visible = true
+        items.imageFrame.visible = false
+        items.score.visible = false
+        level = 0
+        if (loadedItems)
+            loadedItems.visible = false
+    }
 }

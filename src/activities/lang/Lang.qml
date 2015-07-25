@@ -1,6 +1,6 @@
 /* GCompris - lang.qml
 *
-* Copyright (C) Holger Kaelberer <holger.k@elberer.de> (Qt Quick port of imageid)
+* Copyright (C) Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
 *
 * Authors:
 *   Pascal Georges (pascal.georges1@free.fr) (GTK+ version)
@@ -90,7 +90,7 @@ ActivityBase {
             property alias locale: background.locale
 
             function checkWordExistence(wordForCheck) {
-                return !activity.audioVoices.fileExists(ApplicationInfo.getAudioFilePath(wordForCheck.voice))
+                return activity.audioVoices.fileExists(ApplicationInfo.getAudioFilePath(wordForCheck.voice))
             }
 
             function playWord() {
@@ -137,6 +137,48 @@ ActivityBase {
         onStop: {
             DownloadManager.resourceRegistered.disconnect(handleResourceRegistered);
             Activity.stop()
+        }
+
+        Keys.onEscapePressed: {
+            if (Activity.currentMiniGame != -1) {
+                Activity.launchMenuScreen()
+            }
+        }
+
+        Keys.onLeftPressed: {
+            if( Activity.currentMiniGame == 0 && score.currentSubLevel  > 1 ) {
+                console.log("left key pressed lang and current sub level "+ score.currentSubLevel )
+                keyNavigation = true
+                Activity.prevSubLevel()
+            }
+        }
+        Keys.onRightPressed: {
+            if( Activity.currentMiniGame == 0) {
+                console.log("right key pressed lang")
+                keyNavigation = true
+                Activity.nextSubLevel()
+            }
+        }
+        Keys.onSpacePressed: {
+            if( Activity.currentMiniGame == 0 ) {
+                console.log("space key pressed lang")
+                keyNavigation = true
+                Activity.nextSubLevel()
+            }
+        }
+        Keys.onEnterPressed: {
+            if( Activity.currentMiniGame == 0) {
+                console.log("enter key pressed lang")
+                keyNavigation = true
+                Activity.nextSubLevel()
+            }
+        }
+        Keys.onReturnPressed: {
+            if(!menu_screen.visible && Activity.currentMiniGame == 0) {
+                console.log("return key pressed lang")
+                keyNavigation = true
+                Activity.nextSubLevel()
+            }
         }
 
         JsonParser {
@@ -250,6 +292,13 @@ ActivityBase {
                         duration: 100
                     }
                 }
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        if(Activity.currentMiniGame == 0)
+                            items.playWord()
+                    }
+                }
             }
 
             Image {
@@ -356,7 +405,7 @@ ActivityBase {
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
             sourceSize.width: 80 * ApplicationInfo.ratio
 
-            z: 12
+            z: menu_screen.visible ? -12 : 12
             anchors {
                 top: parent.top
                 left: parent.left
@@ -381,15 +430,16 @@ ActivityBase {
             anchors.bottom: keyboard.top
             content: BarEnumContent { value:
                     menu_screen.visible ? help | home |config
-                                : help | home }
+                                        : help | home }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
-//            onPreviousLevelClicked: Activity.previousLevel()
-//            onNextLevelClicked: Activity.nextLevel()
-//            onHomeClicked: activity.home()
+            //            onPreviousLevelClicked: Activity.previousLevel()
+            //            onNextLevelClicked: Activity.nextLevel()
+            //            onHomeClicked: activity.home()
             onHomeClicked: {
                 Activity.currentSubLesson = 0
+                Activity.currentMiniGame = -1
                 if(Activity.savedProgress[Activity.currentLevel] < Activity.currentProgress[Activity.currentLevel])
                     Activity.savedProgress[Activity.currentLevel] = Activity.currentProgress[Activity.currentLevel]
                 console.log("clicked on home and saved "+ Activity.savedProgress[Activity.currentLevel])
@@ -482,6 +532,7 @@ ActivityBase {
 
             property bool visibleFlag: false
             visible: ApplicationSettings.isVirtualKeyboard && items.keyboard.visibleFlag
+                     && !menu_screen.visible
 
             onKeypress: SpellActivity.processKeyPress(text)
 
@@ -517,17 +568,6 @@ ActivityBase {
                                 label: qsTr("Select your locale")
                             }
                         }
-                        /* TODO handle this:
-                        GCDialogCheckBox {
-                            id: uppercaseBox
-                            width: 250 * ApplicationInfo.ratio
-                            text: qsTr("Uppercase only mode")
-                            checked: true
-                            onCheckedChanged: {
-                                print("uppercase changed")
-                            }
-                        }
-*/
                     }
                 }
             }
