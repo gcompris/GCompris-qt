@@ -308,6 +308,7 @@ function launchMenuScreen() {
     console.log("completed level and now progress: "+ savedProgress[currentLevel])
     items.menu_screen.menuModel.clear()
     items.menu_screen.menuModel.append(menus)
+    items.menu_screen.forceActiveFocus()
     if(items.menu_screen.visible == false) {
         items.menu_screen.visible = true
         items.imageFrame.visible = false

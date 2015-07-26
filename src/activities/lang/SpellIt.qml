@@ -72,6 +72,15 @@ Item {
     }
     onGoodWordChanged: playWord()
 
+    Keys.onEscapePressed: {
+        if(Activity.currentMiniGame == -1) {
+            home()
+        }
+        else {
+            Activity.launchMenuScreen()
+        }
+    }
+
     Image {
         id: background
         source: "qrc:/gcompris/src/activities/lang/resource/imageid-bg.svg"

@@ -160,7 +160,7 @@ ActivityBase {
             }
         }
         Keys.onSpacePressed: {
-            if( Activity.currentMiniGame == 0 ) {
+            if( Activity.currentMiniGame == 0) {
                 console.log("space key pressed lang")
                 keyNavigation = true
                 Activity.nextSubLevel()

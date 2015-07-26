@@ -46,13 +46,20 @@ Image {
     property bool keyboardMode: false
     property string favtUrl: "qrc:/gcompris/src/activities/menu/resource/"
 
+    Keys.onEscapePressed: {
+        if(Activity.currentMiniGame == -1) {
+            home()
+        }
+        else {
+            Activity.launchMenuScreen()
+        }
+    }
+
     Keys.onPressed: {
-        if( Activity.currentMiniGame == -1) {
+        if( Activity.currentMiniGame === -1) {
             console.log("key pressed in menu screen")
             items.background.keyNavigation = false
-            if(event.key === Qt.Key_Escape){
-                activity.home()
-            }
+            event.accepted = true
             if(event.key === Qt.Key_Space) {
                 currentActiveGrid.currentItem.selectCurrentItem()
             }

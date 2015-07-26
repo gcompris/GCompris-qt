@@ -72,6 +72,15 @@ Item {
         property bool horizontalLayout: background.width > background.height
         property bool keyNavigation: false
 
+
+        Keys.onEscapePressed: {
+            if(Activity.currentMiniGame == -1) {
+                home()
+            }
+            else {
+                Activity.launchMenuScreen()
+            }
+        }
         Keys.onRightPressed: {
             keyNavigation = true
             wordListView.incrementCurrentIndex()
