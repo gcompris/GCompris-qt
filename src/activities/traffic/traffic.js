@@ -196,6 +196,7 @@ var haveWon = false;
 var mode = null;
 var truckIndex = 0;
 var carIndex = 0;
+var isMoving = false;
 
 function start(items_, mode_) {
     items = items_;
@@ -376,6 +377,7 @@ function cleanupActiveCars()
 
 function initLevel() {
     // destroy old cars
+    isMoving = false;
     cleanupActiveCars();
     truckIndex = 0;
     carIndex = 0;

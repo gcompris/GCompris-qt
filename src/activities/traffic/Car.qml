@@ -42,6 +42,7 @@ Item {
     property var yBounds: undefined
 
     property string mode
+    property bool isMoving: false
 
     Component.onCompleted: {
         mode = parent.mode
@@ -95,13 +96,17 @@ Item {
                 property real startY;
             
                 onPressed: {
-                    car.audioEffects.play(Activity.baseUrl + "car.wav")
-                    rectTouch.startX = point1.x;
-                    rectTouch.startY = point1.y;
+                    if (!Activity.isMoving) {
+                        Activity.isMoving = true;
+                        car.isMoving = true;
+                        car.audioEffects.play(Activity.baseUrl + "car.wav")
+                        rectTouch.startX = point1.x;
+                        rectTouch.startY = point1.y;
+                    }
                 }
                 
                 onUpdated: {
-                    if (!Activity.haveWon) {
+                    if (car.isMoving && !Activity.haveWon) {
                         var deltaX = point1.x - startX;
                         var deltaY = point1.y - startY;
                         Activity.updateCarPosition(car, car.x + deltaX, car.y + deltaY);
@@ -109,8 +114,12 @@ Item {
                 }
 
                 onReleased: {
-                    if (!Activity.haveWon)
-                        Activity.snapCarToGrid(car);
+                    if (car.isMoving) {
+                        car.isMoving = false;
+                        Activity.isMoving = false;
+                        if (!Activity.haveWon)
+                            Activity.snapCarToGrid(car);
+                    }
                 }
             }
         }
@@ -135,13 +144,17 @@ Item {
                 property real startY;
             
                 onPressed: {
-                    car.audioEffects.play(Activity.baseUrl + "car.wav")
-                    imageTouch.startX = imagePoint.x;
-                    imageTouch.startY = imagePoint.y;
+                    if (!Activity.isMoving) {
+                        Activity.isMoving = true;
+                        car.isMoving = true;
+                        car.audioEffects.play(Activity.baseUrl + "car.wav")
+                        imageTouch.startX = imagePoint.x;
+                        imageTouch.startY = imagePoint.y;
+                    }
                 }
                 
                 onUpdated: {
-                    if (!Activity.haveWon) {
+                    if (car.isMoving && !Activity.haveWon) {
                         var deltaX = imagePoint.x - startX;
                         var deltaY = imagePoint.y - startY;
                         if (!car.isHorizontal) {
@@ -154,8 +167,12 @@ Item {
                 }
 
                 onReleased: {
-                    if (!Activity.haveWon)
-                        Activity.snapCarToGrid(car);
+                    if (car.isMoving) {
+                        Activity.isMoving = false;
+                        car.isMoving = false;
+                        if (!Activity.haveWon)
+                            Activity.snapCarToGrid(car);
+                    }
                 }
             }
         }
