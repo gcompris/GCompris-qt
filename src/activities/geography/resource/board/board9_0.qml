@@ -93,7 +93,7 @@ QtObject {
       },
       {
          "pixmapfile": "africa/rep_congo.png",
-         "sound": "voices-$CA/$LOCALE/geography/rep_congo.$CA",
+         "sound": "voices-$CA/$LOCALE/geography/democratic_republic_of_congo.$CA",
          "toolTipText": qsTr("Democratic Republic of Congo"),
          "x": "0.57",
          "y": "0.577"
