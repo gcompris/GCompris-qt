@@ -88,6 +88,8 @@ ActivityBase {
             property alias englishFallbackDialog: englishFallbackDialog
             property alias miniGameLoader: miniGameLoader
             property alias locale: background.locale
+            property alias progress: background.progress
+            property alias dialogActivityConfig: dialogActivityConfig
 
             function checkWordExistence(wordForCheck) {
                 return activity.audioVoices.fileExists(ApplicationInfo.getAudioFilePath(wordForCheck.voice))
@@ -117,7 +119,6 @@ ActivityBase {
             Activity.init(items)
             items.menu_screen.visible = true
             repeatItem.visible = false
-            keyNavigation = false
             activity.audioVoices.error.connect(voiceError)
             activity.audioVoices.done.connect(voiceDone)
 
@@ -136,6 +137,9 @@ ActivityBase {
         }
         onStop: {
             DownloadManager.resourceRegistered.disconnect(handleResourceRegistered);
+            dialogActivityConfig.saveDatainConfiguration()
+//            var progressToSave = {'progress': Activity.savedProgress}
+//            ApplicationSettings.saveActivityConfiguration(activity,progressToSave)
             Activity.stop()
         }
 
@@ -574,21 +578,32 @@ ActivityBase {
 
             onClose: home()
             onLoadData: {
-                if(dataToSave && dataToSave["locale"]) {
+//                if(dataToSave && dataToSave["locale"] && dataToSave["progress"] && dataToSave["favorites"]) {
+                if(dataToSave && dataToSave["locale"] && dataToSave["progress"]) {
                     background.locale = dataToSave["locale"];
+                    Activity.savedProgress = dataToSave["progress"];
+//                    Activity.favorites = dataToSave["favorites"];
                 }
             }
             onSaveData: {
                 var oldLocale = background.locale;
-                var newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
+                var newLocale = oldLocale;
+                if(dialogActivityConfig.loader.item)
+                   newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
                 // Remove .UTF-8
                 if(newLocale.indexOf('.') != -1) {
                     newLocale = newLocale.substring(0, newLocale.indexOf('.'))
                 }
-                dataToSave = {"locale": newLocale}
+                var newProgress = Activity.savedProgress
+//                var newFavorites = Activity.favorites
+                console.log("new progress "+newProgress )
+//                console.log("new favorites "+newFavorites )
+                dataToSave = {"locale": newLocale, "progress": newProgress}
+//                dataToSave = {"locale": newLocale, "progress": newProgress, "favorites": newFavorites}
 
                 background.locale = newLocale;
-
+                Activity.savedProgress = newProgress;
+                Activity.favorites = newFavorites;
                 // Restart the activity with new information
                 if(oldLocale !== newLocale) {
                     background.stop();

@@ -105,6 +105,7 @@ Item {
             border.color: "#000000"
             border.width: 2
             radius: 16
+            anchors.top: parent.top
             anchors.bottom: imageFrame.top
             anchors.left: imageFrame.left
             anchors.bottomMargin: 5
@@ -118,6 +119,8 @@ Item {
                 width: parent.width
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
                 color: "white"
                 wrapMode: Text.WordWrap
 
@@ -170,6 +173,8 @@ Item {
             Image {
                 id: wordImage
                 sourceSize.width: parent.width * 0.6
+                width: parent.width * 0.6
+                height: parent.height * 0.6
 
                 anchors {
                     centerIn: parent

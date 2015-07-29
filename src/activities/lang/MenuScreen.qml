@@ -119,7 +119,6 @@ Image {
         model: menuModel
         keyNavigationWraps: true
         property int spacing: 10
-
         delegate: Item {
             id: delegateItem
             width: levelCellWidth - menuGrid.spacing
@@ -165,7 +164,6 @@ Image {
                     maximumValue: wordCount
                     minimumValue: 0
                     value: Activity.savedProgress[index]
-                    //                    value: savedProgress
                     orientation: Qt.Horizontal
                 }
 
@@ -185,10 +183,9 @@ Image {
                 Activity.initLevel(index)
             }
 
-            property bool favorite: false
 
             Image {
-                source: menu_screen.favtUrl + (favorite ? "all.svg" : "all_disabled.svg");
+                source: menu_screen.favtUrl + ( Activity.favorites[index] ? "all.svg" : "all_disabled.svg");
                 anchors {
                     top: parent.top
                     right: parent.right
@@ -198,7 +195,12 @@ Image {
                 visible: ApplicationSettings.sectionVisible
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: favorite = !favorite
+                    onClicked: {
+                        console.log("before Activity.favorites[index] is "+Activity.favorites)
+                        Activity.favorites[index] = !(Activity.favorites[index])
+                        parent.source = menu_screen.favtUrl + ( Activity.favorites[index] ? "all.svg" : "all_disabled.svg");
+                        console.log("now Activity.favorites[index] is "+Activity.favorites)
+                    }
                 }
             }
 

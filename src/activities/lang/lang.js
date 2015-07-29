@@ -43,6 +43,7 @@ var subLevelsLeft
 var menus = []
 var currentProgress = []
 var savedProgress = []
+var favorites= []
 var subWordList
 var currentSubLesson
 var maxSubLesson
@@ -109,13 +110,18 @@ function start() {
     }
 
     for (var k =0; k<maxLevel; k++) {
-        if(!(savedProgress[k] > 0))
+        if(!(savedProgress[k] >0)) {
             savedProgress[k] = 0
+        }
+        if(!favorites[k])
+            favorites[k] = false
 //        menus.push({'savedProgress': savedProgress[k] })
     }
 
     items.menuModel.clear()
     items.menuModel.append(menus)
+
+//    console.log("model length "+ items.menuModel.count)
 
     items.imageFrame.visible = false
     items.score.visible = false
@@ -129,10 +135,6 @@ function start() {
 }
 
 function stop() {
-//    for (var k =0; k<maxLevel; k++) {
-//            items.savedData[k] =  savedProgress[k]
-//            console.log(items.savedData[k])
-//    }
 }
 
 function initLevel(currentLevel_) {
@@ -173,8 +175,10 @@ function initLevel(currentLevel_) {
         subLevelsLeft.push(i)   // This is available in all editors.
     }
 
+    for(i =0 ;i < maxLevel;i++)
+//    items.progress = savedProgress
     if(currentSubLesson == 0)
-            currentProgress[currentLevel] = 0 //change to saved progress
+            currentProgress[currentLevel] = savedProgress[currentLevel] //change to saved progress
 
     initSubLevel()
 }

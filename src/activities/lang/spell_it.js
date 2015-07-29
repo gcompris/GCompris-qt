@@ -90,7 +90,6 @@ function initLevel() {
         row++;
     }
     layout[row-1].push({ label: items.keyboard.backspace });
-    items.keyboard.layout = [];
     items.keyboard.layout = layout;
     items.keyboard.visibleFlag = true;
 

@@ -140,6 +140,11 @@ Rectangle {
         loadData()
     }
 
+    function saveDatainConfiguration() {
+        saveData()
+        ApplicationSettings.saveActivityConfiguration(activityName, dataToSave)
+    }
+
     Row {
         visible: dialogActivityContent.active
         spacing: 2
