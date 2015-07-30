@@ -113,10 +113,14 @@ function start() {
         if(!(savedProgress[k] >0)) {
             savedProgress[k] = 0
         }
-        if(!favorites[k])
-            favorites[k] = false
+//        favorites[k] = favorites[k]
+//        if(!favorites[k])
+//            favorites[k] = false
 //        menus.push({'savedProgress': savedProgress[k] })
     }
+
+
+    console.log("At the start "+favorites)
 
     items.menuModel.clear()
     items.menuModel.append(menus)
@@ -135,6 +139,7 @@ function start() {
 }
 
 function stop() {
+    console.log("at the stop "+favorites)
 }
 
 function initLevel(currentLevel_) {
@@ -301,7 +306,7 @@ function nextMiniGame() {
 }
 
 function getProgressStatus(index) {
-    return savedProgress[index  ]
+    return savedProgress[index]
 }
 
 function launchMenuScreen() {

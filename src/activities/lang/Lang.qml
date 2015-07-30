@@ -138,8 +138,6 @@ ActivityBase {
         onStop: {
             DownloadManager.resourceRegistered.disconnect(handleResourceRegistered);
             dialogActivityConfig.saveDatainConfiguration()
-//            var progressToSave = {'progress': Activity.savedProgress}
-//            ApplicationSettings.saveActivityConfiguration(activity,progressToSave)
             Activity.stop()
         }
 
@@ -576,13 +574,13 @@ ActivityBase {
                 }
             }
 
-            onClose: home()
             onLoadData: {
-//                if(dataToSave && dataToSave["locale"] && dataToSave["progress"] && dataToSave["favorites"]) {
-                if(dataToSave && dataToSave["locale"] && dataToSave["progress"]) {
+                if(dataToSave && dataToSave["locale"] && dataToSave["progress"] && dataToSave["favorites"]) {
+//                if(dataToSave && dataToSave["locale"] && dataToSave["progress"]) {
                     background.locale = dataToSave["locale"];
                     Activity.savedProgress = dataToSave["progress"];
-//                    Activity.favorites = dataToSave["favorites"];
+                    Activity.favorites = dataToSave["favorites"];
+                    console.log("loaded "+Activity.favorites)
                 }
             }
             onSaveData: {
@@ -595,15 +593,16 @@ ActivityBase {
                     newLocale = newLocale.substring(0, newLocale.indexOf('.'))
                 }
                 var newProgress = Activity.savedProgress
-//                var newFavorites = Activity.favorites
+                var newFavorites = Activity.favorites
                 console.log("new progress "+newProgress )
 //                console.log("new favorites "+newFavorites )
-                dataToSave = {"locale": newLocale, "progress": newProgress}
-//                dataToSave = {"locale": newLocale, "progress": newProgress, "favorites": newFavorites}
+//                dataToSave = {"locale": newLocale, "progress": newProgress}
+                dataToSave = {"locale": newLocale, "progress": newProgress, "favorites": newFavorites}
 
                 background.locale = newLocale;
                 Activity.savedProgress = newProgress;
                 Activity.favorites = newFavorites;
+                console.log("saved "+Activity.favorites)
                 // Restart the activity with new information
                 if(oldLocale !== newLocale) {
                     background.stop();
@@ -625,6 +624,7 @@ ActivityBase {
                     }
                 }
             }
+            onClose: home()
         }
 
     }

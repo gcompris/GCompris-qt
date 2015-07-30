@@ -57,7 +57,6 @@ Image {
 
     Keys.onPressed: {
         if( Activity.currentMiniGame === -1) {
-            console.log("key pressed in menu screen")
             items.background.keyNavigation = false
             event.accepted = true
             if(event.key === Qt.Key_Space) {
@@ -183,9 +182,10 @@ Image {
                 Activity.initLevel(index)
             }
 
-
+            property bool favoriteIndicator: Activity.favorites[index]
             Image {
-                source: menu_screen.favtUrl + ( Activity.favorites[index] ? "all.svg" : "all_disabled.svg");
+                id: favtImage
+                source: menu_screen.favtUrl +( favoriteIndicator ? "all.svg" : "all_disabled.svg");
                 anchors {
                     top: parent.top
                     right: parent.right
@@ -193,13 +193,12 @@ Image {
                 }
                 sourceSize.width: iconWidth * 0.25
                 visible: ApplicationSettings.sectionVisible
+
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        console.log("before Activity.favorites[index] is "+Activity.favorites)
-                        Activity.favorites[index] = !(Activity.favorites[index])
-                        parent.source = menu_screen.favtUrl + ( Activity.favorites[index] ? "all.svg" : "all_disabled.svg");
-                        console.log("now Activity.favorites[index] is "+Activity.favorites)
+                        favoriteIndicator = !favoriteIndicator
+                        Activity.favorites[index] = favoriteIndicator
                     }
                 }
             }
