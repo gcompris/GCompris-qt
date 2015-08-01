@@ -198,7 +198,9 @@ QString ApplicationInfo::getVoicesLocale(const QString &locale)
         _locale = QLocale::system().name();
     }
     // locales we have country-specific voices for:
-    if (_locale.startsWith(QLatin1String("pt_BR")) || _locale.startsWith(QLatin1String("zh_CN")))
+    if (_locale.startsWith(QLatin1String("pt_BR")) ||
+        _locale.startsWith(QLatin1String("zh_CN")) ||
+        _locale.startsWith(QLatin1String("zh_TW")))
         return QLocale(_locale).name();
     // short locale for all the rest:
     return localeShort(_locale);
