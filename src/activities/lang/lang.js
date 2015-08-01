@@ -113,19 +113,20 @@ function start() {
         if(!(savedProgress[k] >0)) {
             savedProgress[k] = 0
         }
-//        favorites[k] = favorites[k]
-//        if(!favorites[k])
-//            favorites[k] = false
-//        menus.push({'savedProgress': savedProgress[k] })
     }
 
+    if(favorites.length == 0 && !items.dialogActivityConfig.dataToSave["storedFavorites"]) {
+       console.log("favorites is empty ? ", favorites.length, " dataToSave stored favt ", !items.dialogActivityConfig.dataToSave["storedFavorites"])
+        for(k =0; k<maxLevel; k++)
+            favorites[k] = false
+    }
 
-    console.log("At the start "+favorites)
+    console.log("At start "+favorites)
 
     items.menuModel.clear()
     items.menuModel.append(menus)
-
-//    console.log("model length "+ items.menuModel.count)
+    sortByFavorites();
+    console.log("after sorting ",favorites)
 
     items.imageFrame.visible = false
     items.score.visible = false
@@ -133,8 +134,6 @@ function start() {
     items.menu_screen.visible = true
     items.menu_screen.focus = true
     items.menu_screen.forceActiveFocus()
-
-    //    initLevel();
 
 }
 
@@ -183,7 +182,7 @@ function initLevel(currentLevel_) {
     for(i =0 ;i < maxLevel;i++)
 //    items.progress = savedProgress
     if(currentSubLesson == 0)
-            currentProgress[currentLevel] = savedProgress[currentLevel] //change to saved progress
+            currentProgress[currentLevel] = 0
 
     initSubLevel()
 }
@@ -325,5 +324,14 @@ function launchMenuScreen() {
         level = 0
         if (loadedItems)
             loadedItems.visible = false
+    }
+    sortByFavorites()
+}
+
+function sortByFavorites() {
+    for(var i = 0; i < items.menuModel.count; i++) {
+        if(favorites[i] === true || favorites[i] === "true") {
+            items.menuModel.move(i,0,1);
+        }
     }
 }

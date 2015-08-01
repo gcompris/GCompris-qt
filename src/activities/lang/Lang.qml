@@ -575,12 +575,17 @@ ActivityBase {
             }
 
             onLoadData: {
-                if(dataToSave && dataToSave["locale"] && dataToSave["progress"] && dataToSave["favorites"]) {
+                if(dataToSave && dataToSave["locale"] && dataToSave["progress"] && dataToSave["storedFavorites"]) {
 //                if(dataToSave && dataToSave["locale"] && dataToSave["progress"]) {
                     background.locale = dataToSave["locale"];
                     Activity.savedProgress = dataToSave["progress"];
-                    Activity.favorites = dataToSave["favorites"];
-                    console.log("loaded "+Activity.favorites)
+                    var storedFavorites = dataToSave["storedFavorites"];
+
+                    for(var i = 0;i < storedFavorites.length; i++) {
+                        console.log(i,"storedFavorite ", storedFavorites[i], "type of it ", typeof(storedFavorites[i]));
+                        Activity.favorites[i] = ( storedFavorites[i] === "true" || storedFavorites[i] === true);
+                        console.log("here it is ",Activity.favorites[i], "type of it", typeof(Activity.favorites[i]));
+                    }
                 }
             }
             onSaveData: {
@@ -593,16 +598,14 @@ ActivityBase {
                     newLocale = newLocale.substring(0, newLocale.indexOf('.'))
                 }
                 var newProgress = Activity.savedProgress
-                var newFavorites = Activity.favorites
+                var newStoredFavorites = Activity.favorites
                 console.log("new progress "+newProgress )
-//                console.log("new favorites "+newFavorites )
 //                dataToSave = {"locale": newLocale, "progress": newProgress}
-                dataToSave = {"locale": newLocale, "progress": newProgress, "favorites": newFavorites}
+                dataToSave = {"locale": newLocale, "progress": newProgress, "storedFavorites": newStoredFavorites}
 
                 background.locale = newLocale;
                 Activity.savedProgress = newProgress;
-                Activity.favorites = newFavorites;
-                console.log("saved "+Activity.favorites)
+                Activity.favorites = newStoredFavorites;
                 // Restart the activity with new information
                 if(oldLocale !== newLocale) {
                     background.stop();

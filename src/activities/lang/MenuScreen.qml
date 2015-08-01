@@ -24,6 +24,7 @@
 import GCompris 1.0
 import QtGraphicalEffects 1.0
 import QtQuick.Controls 1.2
+import QtQml.Models 2.1
 
 import "../../core"
 import "lang.js" as Activity
@@ -118,6 +119,7 @@ Image {
         model: menuModel
         keyNavigationWraps: true
         property int spacing: 10
+
         delegate: Item {
             id: delegateItem
             width: levelCellWidth - menuGrid.spacing
@@ -197,12 +199,12 @@ Image {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
+                        console.log("once and for all ", typeof(Activity.favorites[index]), "value", Activity.favorites[index])
                         favoriteIndicator = !favoriteIndicator
                         Activity.favorites[index] = favoriteIndicator
                     }
                 }
             }
-
 
         } //delegate close
 
@@ -218,6 +220,7 @@ Image {
         }
 
     } // grid view close
+
     Rectangle{
         id: menusMask
         visible: false
@@ -227,6 +230,10 @@ Image {
             GradientStop { position: 0.92; color: "#FFFFFFFF" }
             GradientStop { position: 0.96; color: "#00FFFFFF"}
         }
+    }
+
+    DelegateModel {
+
     }
 
 
