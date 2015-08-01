@@ -192,7 +192,7 @@ ActivityBase {
         BarButton {
             id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            sourceSize.width: 80 * ApplicationInfo.ratio
+            sourceSize.height: visible ? 80 * ApplicationInfo.ratio : 1
             z: bar.z + 1
             visible: items.audioOk
             anchors {
@@ -204,13 +204,17 @@ ActivityBase {
                            questionItem.initQuestion()
         }
 
+        Score {
+            id: score
+            anchors.bottom: repeatItem.top
+            anchors.right: repeatItem.right
+            anchors.bottomMargin: 30
+            anchors.margins: 0
+        }
+
         Bonus {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
-        }
-
-        Score {
-            id: score
         }
     }
 
