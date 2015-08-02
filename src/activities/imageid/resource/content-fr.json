@@ -307,7 +307,6 @@
     "eggplant.ogg": "une aubergine",
     "elbow.ogg": "le coude",
     "electrician.ogg": "un électricien",
-    "eleven.ogg": "onze",
     "elk.ogg": "un wapiti",
     "empty.ogg": "vide",
     "engine.ogg": "un moteur",
@@ -824,7 +823,6 @@
     "sip.ogg": "siroter",
     "sister.ogg": "une soeur",
     "sit.ogg": "s'asseoir",
-    "sixteen.ogg": "seize",
     "skate.ogg": "un skate",
     "skeleton.ogg": "un squelette",
     "ski.ogg": "le ski",
@@ -1009,7 +1007,6 @@
     "turnip.ogg": "un navet",
     "turtle.ogg": "une tortue",
     "tusk.ogg": "une défense",
-    "twelve.ogg": "douze",
     "twin_boys.ogg": "un jumeau",
     "twin_girls.ogg": "une jumelle",
     "umbrella.ogg": "un parapluie",
@@ -1078,5 +1075,8 @@
     "U0037.ogg": "sept",
     "U0038.ogg": "huit",
     "U0039.ogg": "neuf",
-    "10.ogg": "dix"
+    "10.ogg": "dix",
+    "11.ogg": "onze",
+    "12.ogg": "douze",
+    "16.ogg": "seize"
 }
