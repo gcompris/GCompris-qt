@@ -61,7 +61,7 @@ ActivityBase {
             id: items
             property alias background: background
             property alias bar: bar
-            property alias bonus: bonus
+            property alias bonusTimer: bonusTimer
             property alias containerModel: containerModel
             property alias questionItem: questionItem
             // On startup we want to queue the first sound but not after
@@ -210,6 +210,24 @@ ActivityBase {
             anchors.right: repeatItem.right
             anchors.bottomMargin: 30
             anchors.margins: 0
+        }
+
+        Timer {
+            id: bonusTimer
+            interval: 2000
+            property bool win
+
+            function good() {
+                win = true
+                start()
+            }
+
+            function bad() {
+                win = false
+                start()
+            }
+
+            onTriggered: win ? bonus.good("flower") : bonus.bad("flower")
         }
 
         Bonus {
