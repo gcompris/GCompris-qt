@@ -58,7 +58,7 @@ ActivityBase {
         QtObject {
             id: items
             property alias bar: bar
-            property alias bonus: bonus
+            property alias bonusTimer: bonusTimer
             property GCAudio audioEffects: activity.audioEffects
             property bool withTux: activity.withTux
             property bool tuxTurn: false
@@ -183,6 +183,24 @@ ActivityBase {
                 styleColor: "white"
                 text: items.tuxScore
             }
+        }
+
+        Timer {
+            id: bonusTimer
+            interval: 2000
+            property bool win
+
+            function good() {
+                win = true
+                start()
+            }
+
+            function bad() {
+                win = false
+                start()
+            }
+
+            onTriggered: win ? bonus.good("flower") : bonus.bad("flower")
         }
 
         Bonus {
