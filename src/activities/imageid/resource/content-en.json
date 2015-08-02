@@ -521,11 +521,6 @@
     "pink.ogg": "pink",
     "red.ogg": "red",
     "white.ogg": "white",
-    "five.ogg": "five",
-    "one.ogg": "one",
-    "ten.ogg": "ten",
-    "three.ogg": "three",
-    "two.ogg": "two",
     "van.ogg": "van",
     "big.ogg": "big",
     "blind.ogg": "blind",
@@ -578,5 +573,8 @@
     "U0037.ogg": "seven",
     "U0038.ogg": "eight",
     "U0039.ogg": "nine",
-    "10.ogg": "ten"
+    "10.ogg": "ten",
+    "11.ogg": "eleven",
+    "12.ogg": "twelve",
+    "16.ogg": "sixteen"
 }
