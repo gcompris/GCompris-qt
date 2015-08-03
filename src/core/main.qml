@@ -43,9 +43,9 @@ import "qrc:/gcompris/src/core/core.js" as Core
  */
 Window {
     id: main
-    // Start in 500x500 window adapted to the screen aspect ratio
-    width: Math.min(Screen.width, 500 * (Screen.width / Screen.height) * ApplicationInfo.ratio)
-    height: Math.max(Screen.height, 500 * ApplicationInfo.ratio)
+    // Start in window mode at full screen size
+    width: Screen.width
+    height: Screen.height
     minimumWidth: 400 * ApplicationInfo.ratio
     minimumHeight: 400 * ApplicationInfo.ratio
     title: "GCompris"
