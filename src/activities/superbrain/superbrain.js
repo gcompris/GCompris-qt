@@ -24,23 +24,26 @@
 .import GCompris 1.0 as GCompris
 
 /* Todo/possible improvements:
- *
- * - select colors to guess instead of cycling through
- * - (> 6 levels with duplicate colors)
- * - improve layout for smartphones (too small, stretch horizontally/vertically
- *   in landscape/portrait orientation)
+ * - configuration: use symbols instead of colors
  */
 
 var currentLevel = 0;
-var maxLevel = 6;
+var maxLevel = 8;
 var currentSubLevel = 0;
 var maxSubLevel = 6;
 var items;
 var baseUrl = "qrc:/gcompris/src/activities/superbrain/resource/";
 
-var maxLevelForHelp = 4; // after this level, we provide less feedback to the user
-var numberOfPieces = 0;
-var numberOfColors = 0;
+var levels = [
+            { numberOfPieces: 3, numberOfColors: 5, help: true,  uniqueColors: true  },
+            { numberOfPieces: 4, numberOfColors: 6, help: true,  uniqueColors: true  },
+            { numberOfPieces: 5, numberOfColors: 7, help: true,  uniqueColors: true  },
+            { numberOfPieces: 5, numberOfColors: 7, help: true,  uniqueColors: false },
+            { numberOfPieces: 3, numberOfColors: 5, help: false, uniqueColors: true  },
+            { numberOfPieces: 4, numberOfColors: 6, help: false, uniqueColors: true  },
+            { numberOfPieces: 5, numberOfColors: 7, help: false, uniqueColors: true  },
+            { numberOfPieces: 5, numberOfColors: 7, help: false, uniqueColors: false }
+        ];
 var maxPieces = 5;
 var solution = new Array(maxPieces);
 var colors = [
@@ -77,30 +80,22 @@ function initLevel() {
     if (currentSubLevel == 0) {
         // init level
         items.bar.level = currentLevel + 1;
-
-        if(currentLevel + 1 < maxLevelForHelp) {
-            numberOfPieces = currentLevel + 3;
-            numberOfColors = currentLevel + 5;
-        } else {
-            numberOfPieces = currentLevel - maxLevelForHelp + 4;
-            numberOfColors = currentLevel - maxLevelForHelp + 6;
-        }
     }
 
     // init sublevel
-    ackColors = new Array(numberOfPieces);
+    ackColors = new Array(levels[currentLevel].numberOfPieces);
     items.score.numberOfSubLevels = maxSubLevel;
     items.score.currentSubLevel = currentSubLevel + 1;
     var selectedColors = new Array(maxColors);
-    solution = new Array(numberOfPieces);
+    solution = new Array(levels[currentLevel].numberOfPieces);
     for (var i = 0; i < maxColors; ++i)
         selectedColors[i] = false;
     // generate solution:
-    for(var i = 0; i < numberOfPieces; ++i) {
+    for(var i = 0; i < levels[currentLevel].numberOfPieces; ++i) {
         var j;
         do
-            j = Math.floor(Math.random() * numberOfColors);
-        while (selectedColors[j]);
+            j = Math.floor(Math.random() * levels[currentLevel].numberOfColors);
+        while (levels[currentLevel].uniqueColors && selectedColors[j]);
 
         solution[i] = j;
         selectedColors[j] = true;
@@ -110,7 +105,7 @@ function initLevel() {
     items.colorsRepeater.model.clear();
     items.currentRepeater.model = new Array();
     currentColors = new Array();
-    for (var i = 0; i < numberOfColors; ++i) {
+    for (var i = 0; i < levels[currentLevel].numberOfColors; ++i) {
         currentColors[i] = colors[i];
         items.colorsRepeater.model.append({"col": colors[i]});
     }
@@ -123,7 +118,7 @@ function initLevel() {
 function appendGuessRow()
 {
     var guessRow = new Array();
-    for (var i = 0; i < numberOfPieces; ++i) {
+    for (var i = 0; i < levels[currentLevel].numberOfPieces; ++i) {
         var col =
         guessRow.push({
                           index: i,
@@ -158,13 +153,13 @@ function checkGuess()
     var correctCount = 0;
     var misplacedCount = 0;
     // check for exact matches first:
-    for (var i = 0; i < numberOfPieces; i++) {
+    for (var i = 0; i < levels[currentLevel].numberOfPieces; i++) {
         var guessIndex = obj.guess.get(i).colIndex;
         var newStatus;
         if (solution[i] == guessIndex) {
             // correct
             remainingIndeces.splice(remainingIndeces.indexOf(guessIndex), 1);
-            if (currentLevel + 1 < maxLevelForHelp)
+            if (levels[currentLevel].help)
                 obj.guess.setProperty(i, "status", STATUS_CORRECT);
             correctCount++;
         }
@@ -174,7 +169,7 @@ function checkGuess()
         items.bonus.good("smiley");
     }
 
-    for (var i = 0; i < numberOfPieces; i++) {
+    for (var i = 0; i < levels[currentLevel].numberOfPieces; i++) {
         if (obj.guess.get(i).status == STATUS_CORRECT)
             continue;
         var guessIndex = obj.guess.get(i).colIndex;
@@ -183,7 +178,7 @@ function checkGuess()
                 remainingIndeces.indexOf(guessIndex) != -1) {
             // misplaced
             remainingIndeces.splice(remainingIndeces.indexOf(guessIndex), 1);
-            if (currentLevel + 1 < maxLevelForHelp)
+            if (levels[currentLevel].help)
                 obj.guess.setProperty(i, "status", STATUS_MISPLACED);
             misplacedCount++;
         }
