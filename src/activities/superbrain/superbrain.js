@@ -23,10 +23,6 @@
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris
 
-/* Todo/possible improvements:
- * - configuration: use symbols instead of colors
- */
-
 var currentLevel = 0;
 var maxLevel = 8;
 var currentSubLevel = 0;
@@ -47,19 +43,31 @@ var levels = [
 var maxPieces = 5;
 var solution = new Array(maxPieces);
 var colors = [
-            "#FF0000FF",
-            "#FF00FF00",
-            "#FFFF0000",
-            "#FF00FFFF",
-            "#FFFF00FF",
-            "#FFFFFF00",
-            "#FF8e7016",
-            "#FF04611a",
-            "#FFa0174b",
-            "#FF7F007F"
+            "#FF0000FF",  // dark blue
+            "#FF00FF00",  // light green
+            "#FFFF0000",  // red
+            "#FF00FFFF",  // light blue
+            "#FFFF00FF",  // magenta
+            "#FFFFFF00",  // yellow
+            "#FF8e7016",  // brown
+            "#FF04611a",  // dark green
+            "#FFa0174b",   // dark magenta
         ];
+var mode = "color";
+var symbols = [
+            baseUrl + "darkblue_star.svg",
+            baseUrl + "lightgreen_triangle.svg",
+            baseUrl + "red_heart.svg",
+            baseUrl + "lightblue_cloud.svg",
+            baseUrl + "magenta_diamond.svg",
+            baseUrl + "yellow_star.svg",
+            baseUrl + "brown_cross.svg",
+            baseUrl + "darkgreen_ring.svg",
+            baseUrl + "red_circle.svg",
+        ];
+
 var ackColors = new Array();
-var currentColors = new Array();
+var currentIndeces = new Array();
 var maxColors = colors.length;
 
 var STATUS_UNKNOWN = 0;
@@ -101,15 +109,15 @@ function initLevel() {
         selectedColors[j] = true;
     }
     //console.log("XXX solution: " + JSON.stringify(solution));
-    // populate currentColors:
+    // populate currentIndeces:
     items.colorsRepeater.model.clear();
     items.currentRepeater.model = new Array();
-    currentColors = new Array();
+    currentIndeces = new Array();
     for (var i = 0; i < levels[currentLevel].numberOfColors; ++i) {
-        currentColors[i] = colors[i];
-        items.colorsRepeater.model.append({"col": colors[i]});
+        currentIndeces[i] = i;
+        items.colorsRepeater.model.append({"itemIndex": i});
     }
-    items.chooserGrid.model = currentColors;
+    items.chooserGrid.model = currentIndeces;
     // add first guess row:
     items.guessModel.clear();
     appendGuessRow();
