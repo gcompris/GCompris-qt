@@ -481,7 +481,7 @@ Item {
                 qsTr("Yes"), function() {
                     // yes -> start download
                     if (DownloadManager.downloadResource(
-                    DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort)))
+                    DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
                     var downloadDialog = Core.showDownloadDialog(main, {});
                 },
                 qsTr("No"), null,
