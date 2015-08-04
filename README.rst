@@ -26,8 +26,8 @@ There are many simple activities dedicated to children on any platforms,
 desktops, web and tablets. When they exist, they are hard to find and request
 the teacher or parent to manage a lot of independant small tools.
 
-GCompris is an educational suite of activities all accessible from a single
-user interface. It provides a unique user interface for all its activities.
+GCompris is an educational suite of activities all accessible from a
+single unified user interface.
 
 How
 ===
@@ -41,14 +41,22 @@ to GCompris.
 
 About You
 =========
- 
+
 You can help by:
 
-* Creating new activities.
+* `Creating new activities <http://gcompris.net/wiki/Qt_Quick_development_process>_`.
 * Providing fancy graphics to incorporate as icons or backgrounds.
-* Translating GCompris.
-* Just giving your ideas.
+* `Translating GCompris
+  <http://gcompris.net/wiki/Developer%27s_corner#Translation>`_.
+* `Recording voices <http://gcompris.net/wiki/Voice_translation_Qt>`_.
+* `Just giving your ideas
+  <http://gcompris.net/wiki/Ideas_for_activities>`_.
 
 Get more information on our `developer's wiki
 <http://gcompris.net/wiki/Developer%27s_corner>`_.
 
+Licence
+=======
+
+GCompris is free software released under the `GPL V3+
+<http://www.gnu.org/licenses/gpl-3.0.fr.html>`_.
