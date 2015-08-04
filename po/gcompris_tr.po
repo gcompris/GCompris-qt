@@ -1,0 +1,6553 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Qt-Contexts: true\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Qt-Contexts: true\n"
+
+#: activities/advanced_colors/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Advanced colors"
+msgstr ""
+
+#: activities/advanced_colors/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Select the butterfly of the correct color"
+msgstr ""
+
+#: activities/advanced_colors/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Learn to recognize unusual colors."
+msgstr ""
+
+#: activities/advanced_colors/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Can read"
+msgstr ""
+
+#: activities/advanced_colors/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"You will see dancing butterflies of different colors and a question. You "
+"have to find the correct butterfly and touch it."
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:24
+#: activities/advanced_colors/advanced_colors.js:441
+msgctxt "advanced_colors|"
+msgid "Find the coral butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:28
+#: activities/advanced_colors/advanced_colors.js:58
+#: activities/advanced_colors/advanced_colors.js:495
+#: activities/advanced_colors/advanced_colors.js:535
+#: activities/advanced_colors/advanced_colors.js:593
+#: activities/advanced_colors/advanced_colors.js:607
+#: activities/advanced_colors/advanced_colors.js:699
+msgctxt "advanced_colors|"
+msgid "Find the claret butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:32
+#: activities/advanced_colors/advanced_colors.js:274
+#: activities/advanced_colors/advanced_colors.js:467
+msgctxt "advanced_colors|"
+msgid "Find the navy butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:36
+#: activities/advanced_colors/advanced_colors.js:66
+msgctxt "advanced_colors|"
+msgid "Find the corn butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:40
+#: activities/advanced_colors/advanced_colors.js:70
+msgctxt "advanced_colors|"
+msgid "Find the cobalt butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:44
+#: activities/advanced_colors/advanced_colors.js:74
+#: activities/advanced_colors/advanced_colors.js:403
+msgctxt "advanced_colors|"
+msgid "Find the cyan butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:48
+#: activities/advanced_colors/advanced_colors.js:78
+#: activities/advanced_colors/advanced_colors.js:437
+#: activities/advanced_colors/advanced_colors.js:491
+#: activities/advanced_colors/advanced_colors.js:501
+#: activities/advanced_colors/advanced_colors.js:569
+msgctxt "advanced_colors|"
+msgid "Find the chestnut butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:52
+#: activities/advanced_colors/advanced_colors.js:82
+msgctxt "advanced_colors|"
+msgid "Find the almond butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:62
+#: activities/advanced_colors/advanced_colors.js:695
+msgctxt "advanced_colors|"
+msgid "Find the sapphire butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:86
+#: activities/advanced_colors/advanced_colors.js:184
+msgctxt "advanced_colors|"
+msgid "Find the ruby butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:92
+#: activities/advanced_colors/advanced_colors.js:679
+msgctxt "advanced_colors|"
+msgid "Find the sienna butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:96
+msgctxt "advanced_colors|"
+msgid "Find the sage butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:100
+#: activities/advanced_colors/advanced_colors.js:427
+#: activities/advanced_colors/advanced_colors.js:581
+msgctxt "advanced_colors|"
+msgid "Find the salmon butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:104
+#: activities/advanced_colors/advanced_colors.js:389
+#: activities/advanced_colors/advanced_colors.js:649
+msgctxt "advanced_colors|"
+msgid "Find the sepia butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:108
+msgctxt "advanced_colors|"
+msgid "Find the sulfur butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:112
+#: activities/advanced_colors/advanced_colors.js:671
+msgctxt "advanced_colors|"
+msgid "Find the tea butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:116
+msgctxt "advanced_colors|"
+msgid "Find the lime butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:120
+msgctxt "advanced_colors|"
+msgid "Find the turquoise butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:126
+msgctxt "advanced_colors|"
+msgid "Find the absinthe butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:130
+msgctxt "advanced_colors|"
+msgid "Find the mahogany butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:134
+#: activities/advanced_colors/advanced_colors.js:627
+msgctxt "advanced_colors|"
+msgid "Find the aquamarine butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:138
+#: activities/advanced_colors/advanced_colors.js:433
+msgctxt "advanced_colors|"
+msgid "Find the alabaster butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:142
+#: activities/advanced_colors/advanced_colors.js:585
+msgctxt "advanced_colors|"
+msgid "Find the amber butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:146
+msgctxt "advanced_colors|"
+msgid "Find the amethyst butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:150
+#: activities/advanced_colors/advanced_colors.js:529
+#: activities/advanced_colors/advanced_colors.js:637
+msgctxt "advanced_colors|"
+msgid "Find the anise butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:154
+#: activities/advanced_colors/advanced_colors.js:300
+#: activities/advanced_colors/advanced_colors.js:461
+msgctxt "advanced_colors|"
+msgid "Find the vermilion butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:160
+msgctxt "advanced_colors|"
+msgid "Find the ceruse butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:164
+#: activities/advanced_colors/advanced_colors.js:407
+#: activities/advanced_colors/advanced_colors.js:521
+#: activities/advanced_colors/advanced_colors.js:539
+msgctxt "advanced_colors|"
+msgid "Find the fawn butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:168
+#: activities/advanced_colors/advanced_colors.js:589
+msgctxt "advanced_colors|"
+msgid "Find the chartreuse butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:172
+msgctxt "advanced_colors|"
+msgid "Find the emerald butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:176
+#: activities/advanced_colors/advanced_colors.js:194
+#: activities/advanced_colors/advanced_colors.js:393
+#: activities/advanced_colors/advanced_colors.js:399
+#: activities/advanced_colors/advanced_colors.js:509
+#: activities/advanced_colors/advanced_colors.js:577
+#: activities/advanced_colors/advanced_colors.js:683
+msgctxt "advanced_colors|"
+msgid "Find the aubergine butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:180
+#: activities/advanced_colors/advanced_colors.js:657
+msgctxt "advanced_colors|"
+msgid "Find the fuchsia butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:188
+msgctxt "advanced_colors|"
+msgid "Find the glaucous butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:198
+#: activities/advanced_colors/advanced_colors.js:369
+msgctxt "advanced_colors|"
+msgid "Find the auburn butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:202
+#: activities/advanced_colors/advanced_colors.js:381
+msgctxt "advanced_colors|"
+msgid "Find the azure butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:206
+#: activities/advanced_colors/advanced_colors.js:563
+msgctxt "advanced_colors|"
+msgid "Find the grayish brown butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:210
+msgctxt "advanced_colors|"
+msgid "Find the bistre butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:214
+#: activities/advanced_colors/advanced_colors.js:555
+msgctxt "advanced_colors|"
+msgid "Find the crimson butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:218
+msgctxt "advanced_colors|"
+msgid "Find the celadon butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:222
+#: activities/advanced_colors/advanced_colors.js:471
+#: activities/advanced_colors/advanced_colors.js:641
+msgctxt "advanced_colors|"
+msgid "Find the cerulean butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:228
+#: activities/advanced_colors/advanced_colors.js:551
+msgctxt "advanced_colors|"
+msgid "Find the dove butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:232
+msgctxt "advanced_colors|"
+msgid "Find the garnet butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:236
+#: activities/advanced_colors/advanced_colors.js:547
+msgctxt "advanced_colors|"
+msgid "Find the indigo butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:240
+#: activities/advanced_colors/advanced_colors.js:445
+#: activities/advanced_colors/advanced_colors.js:645
+msgctxt "advanced_colors|"
+msgid "Find the ivory butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:244
+msgctxt "advanced_colors|"
+msgid "Find the jade butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:248
+msgctxt "advanced_colors|"
+msgid "Find the lavender butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:252
+msgctxt "advanced_colors|"
+msgid "Find the lichen butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:256
+#: activities/advanced_colors/advanced_colors.js:483
+#: activities/advanced_colors/advanced_colors.js:517
+msgctxt "advanced_colors|"
+msgid "Find the wine butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:262
+#: activities/advanced_colors/advanced_colors.js:623
+msgctxt "advanced_colors|"
+msgid "Find the lilac butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:266
+#: activities/advanced_colors/advanced_colors.js:525
+#: activities/advanced_colors/advanced_colors.js:631
+msgctxt "advanced_colors|"
+msgid "Find the magenta butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:270
+#: activities/advanced_colors/advanced_colors.js:475
+msgctxt "advanced_colors|"
+msgid "Find the malachite butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:278
+msgctxt "advanced_colors|"
+msgid "Find the larch butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:282
+#: activities/advanced_colors/advanced_colors.js:411
+msgctxt "advanced_colors|"
+msgid "Find the mimosa butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:286
+#: activities/advanced_colors/advanced_colors.js:415
+msgctxt "advanced_colors|"
+msgid "Find the ochre butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:290
+#: activities/advanced_colors/advanced_colors.js:365
+msgctxt "advanced_colors|"
+msgid "Find the olive butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:296
+#: activities/advanced_colors/advanced_colors.js:479
+#: activities/advanced_colors/advanced_colors.js:513
+msgctxt "advanced_colors|"
+msgid "Find the opaline butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:304
+#: activities/advanced_colors/advanced_colors.js:611
+msgctxt "advanced_colors|"
+msgid "Find the ultramarine butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:308
+#: activities/advanced_colors/advanced_colors.js:377
+#: activities/advanced_colors/advanced_colors.js:449
+msgctxt "advanced_colors|"
+msgid "Find the mauve butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:312
+#: activities/advanced_colors/advanced_colors.js:573
+#: activities/advanced_colors/advanced_colors.js:615
+msgctxt "advanced_colors|"
+msgid "Find the grayish blue butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:316
+#: activities/advanced_colors/advanced_colors.js:487
+#: activities/advanced_colors/advanced_colors.js:691
+msgctxt "advanced_colors|"
+msgid "Find the pistachio butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:320
+#: activities/advanced_colors/advanced_colors.js:543
+msgctxt "advanced_colors|"
+msgid "Find the platinum butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:324
+#: activities/advanced_colors/advanced_colors.js:597
+#: activities/advanced_colors/advanced_colors.js:665
+msgctxt "advanced_colors|"
+msgid "Find the purple butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:330
+#: activities/advanced_colors/advanced_colors.js:385
+#: activities/advanced_colors/advanced_colors.js:453
+#: activities/advanced_colors/advanced_colors.js:603
+#: activities/advanced_colors/advanced_colors.js:661
+msgctxt "advanced_colors|"
+msgid "Find the plum butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:334
+#: activities/advanced_colors/advanced_colors.js:419
+msgctxt "advanced_colors|"
+msgid "Find the prussian blue butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:338
+#: activities/advanced_colors/advanced_colors.js:423
+#: activities/advanced_colors/advanced_colors.js:457
+#: activities/advanced_colors/advanced_colors.js:687
+msgctxt "advanced_colors|"
+msgid "Find the rust butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:342
+msgctxt "advanced_colors|"
+msgid "Find the saffron butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:346
+msgctxt "advanced_colors|"
+msgid "Find the vanilla butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:350
+#: activities/advanced_colors/advanced_colors.js:559
+msgctxt "advanced_colors|"
+msgid "Find the veronese butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:354
+#: activities/advanced_colors/advanced_colors.js:653
+msgctxt "advanced_colors|"
+msgid "Find the verdigris butterfly"
+msgstr ""
+
+#: activities/advanced_colors/advanced_colors.js:358
+#: activities/advanced_colors/advanced_colors.js:373
+#: activities/advanced_colors/advanced_colors.js:505
+#: activities/advanced_colors/advanced_colors.js:619
+#: activities/advanced_colors/advanced_colors.js:675
+msgctxt "advanced_colors|"
+msgid "Find the dark purple butterfly"
+msgstr ""
+
+#: activities/algebra_by/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Multiplication of numbers"
+msgstr ""
+
+#: activities/algebra_by/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Practice the multiplication operation"
+msgstr ""
+
+#: activities/algebra_by/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Learn to multiply numbers within a limited period of time"
+msgstr ""
+
+#: activities/algebra_by/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Multiplication tables from 1 to 10"
+msgstr ""
+
+#: activities/algebra_by/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Two numbers are displayed on the screen. Quickly multiply them and use your "
+"computer's keyboard or the on-screen keypad to type the product of the "
+"numbers. You have to be fast and submit the answer before the penguins in "
+"their balloon land!"
+msgstr ""
+
+#: activities/algebra_div/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Division of numbers"
+msgstr ""
+
+#: activities/algebra_div/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Practice the division operation"
+msgstr ""
+
+#: activities/algebra_div/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Find the result of the division within a limited period of time"
+msgstr ""
+
+#: activities/algebra_div/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Division of small numbers"
+msgstr ""
+
+#: activities/algebra_div/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Two numbers are displayed on the screen. Quickly find the result of the "
+"division and use your computer's keyboard or the on-screen keypad to type "
+"it. You have to be fast and submit the answer before the penguins in their "
+"balloon land!"
+msgstr ""
+
+#: activities/algebra_minus/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Subtraction of numbers"
+msgstr ""
+
+#: activities/algebra_minus/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Practice the subtraction operation"
+msgstr ""
+
+#: activities/algebra_minus/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid ""
+"Learn to find the difference between two numbers within a limited period of "
+"time"
+msgstr ""
+
+#: activities/algebra_minus/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Subtraction of small numbers"
+msgstr ""
+
+#: activities/algebra_minus/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Two numbers are displayed on the screen. Quickly find the difference between "
+"them and use your computer's keyboard or the on-screen keypad to type it. "
+"You have to be fast and submit the answer before the penguins in their "
+"balloon land!"
+msgstr ""
+
+#: activities/algebra_plus/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Addition of numbers"
+msgstr ""
+
+#: activities/algebra_plus/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Practice the addition of numbers"
+msgstr ""
+
+#: activities/algebra_plus/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Learn to find the sum of two numbers within a limited period of time"
+msgstr ""
+
+#: activities/algebra_plus/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Simple addition. Can recognize written numbers"
+msgstr ""
+
+#: activities/algebra_plus/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Two numbers are displayed on the screen. Quickly find the sum of them and "
+"use your computer's keyboard or the on-screen keypad to type it. You have to "
+"be fast and submit the answer before the penguins land in their balloon!"
+msgstr ""
+
+#: activities/algorithm/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Logical associations"
+msgstr ""
+
+#: activities/algorithm/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Complete the arrangement of fruits"
+msgstr ""
+
+#: activities/algorithm/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Logic training activity"
+msgstr ""
+
+#: activities/algorithm/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid ""
+"Look at the two sequences. Each fruit in the first sequence has been "
+"replaced by another fruit in the second sequence. Complete the second "
+"sequence by using the correct fruits, after studying this pattern."
+msgstr ""
+
+#: activities/align4-2players/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Align four (with a friend)"
+msgstr ""
+
+#: activities/align4-2players/ActivityInfo.qml:27
+#: activities/align4/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Arrange four tokens in a row"
+msgstr ""
+
+#: activities/align4-2players/ActivityInfo.qml:29
+#: activities/align4/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid ""
+"Create a line of 4 tokens either horizontally (lying down), vertically "
+"(standing up) or diagonally."
+msgstr ""
+
+#: activities/align4-2players/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid ""
+"Play with a friend. Take turns to click the line in which you want to drop a "
+"token. You can also use the arrow keys to move the token left or right, and "
+"the down or space key to drop a token. First player to create a line of 4 "
+"tokens wins"
+msgstr ""
+
+#: activities/align4/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Align four (against Tux)"
+msgstr ""
+
+#: activities/align4/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid ""
+"Play with the computer. Take turns to click the line in which you want to "
+"drop a token. You can also use the arrow keys to move the token left or "
+"right, and the down or space key to drop a token. First player to create a "
+"line of 4 tokens wins"
+msgstr ""
+
+#: activities/alphabet-sequence/ActivityInfo.qml:26
+#: activities/alphabet-sequence/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Alphabet sequence"
+msgstr ""
+
+#: activities/alphabet-sequence/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"Move the helicopter to catch the clouds following the order of the alphabet"
+msgstr ""
+
+#: activities/alphabet-sequence/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Can decode letters"
+msgstr ""
+
+#: activities/alphabet-sequence/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Catch the alphabet letters. With a keyboard use the arrow keys to move the "
+"helicopter. With a pointing device you just click or tap on the target "
+"location. To know which letter you have to catch you can either remember it "
+"or check the bottom right corner."
+msgstr ""
+
+#: activities/alphabet-sequence/AlphabetSequence.qml:29
+msgctxt "AlphabetSequence|"
+msgid "a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z"
+msgstr ""
+
+#: activities/babymatch/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Matching Items"
+msgstr ""
+
+#: activities/babymatch/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Drag and Drop the items to make them match"
+msgstr ""
+
+#: activities/babymatch/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Motor coordination. Conceptual matching."
+msgstr ""
+
+#: activities/babymatch/ActivityInfo.qml:32
+msgctxt "ActivityInfo|"
+msgid "Cultural references."
+msgstr ""
+
+#: activities/babymatch/ActivityInfo.qml:33
+msgctxt "ActivityInfo|"
+msgid ""
+"In the main board area, a set of objects is displayed. In the vertical box "
+"(at the left of the main board) another set of objects is shown, each object "
+"in the group on the left matching exactly one object in the main board area. "
+"This game challenges you to find the logical link between these objects. How "
+"do they fit together? Drag each object to the correct red space in the main "
+"area."
+msgstr ""
+
+#: activities/babymatch/resource/board/board1_0.qml:25
+#: activities/babyshapes/resource/board/board1_0.qml:25
+msgctxt "board1_0|"
+msgid "Drag and Drop the items to make them match"
+msgstr ""
+
+#: activities/babyshapes/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Complete the puzzle"
+msgstr ""
+
+#: activities/babyshapes/ActivityInfo.qml:31
+#: activities/details/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Drag and Drop the shapes on their respective targets"
+msgstr ""
+
+#: activities/babyshapes/ActivityInfo.qml:34
+#: activities/details/ActivityInfo.qml:33
+msgctxt "ActivityInfo|"
+msgid ""
+"Complete the puzzle by dragging each piece from the set of pieces on the "
+"left, to the matching space in the puzzle."
+msgstr ""
+
+#: activities/babyshapes/ActivityInfo.qml:35
+msgctxt "ActivityInfo|"
+msgid "The dog is provided by Andre Connes and released under the GPL"
+msgstr ""
+
+#: activities/babyshapes/resource/board/board5_0.qml:25
+msgctxt "board5_0|"
+msgid "Hello ! My name is Lock."
+msgstr ""
+
+#: activities/babyshapes/resource/board/board6_0.qml:25
+msgctxt "board6_0|"
+msgid "Lock with colored shapes."
+msgstr ""
+
+#: activities/babyshapes/resource/board/board7_0.qml:26
+msgctxt "board7_0|"
+msgid "Paul Gauguin, Arearea - 1892"
+msgstr ""
+
+#: activities/babyshapes/resource/board/board7_1.qml:25
+msgctxt "board7_1|"
+msgid "Pieter Bruegel the Elder, The peasants wedding - 1568"
+msgstr ""
+
+#: activities/babyshapes/resource/board/board7_2.qml:25
+msgctxt "board7_2|"
+msgid "The Lady and the Unicorn - XVe century"
+msgstr ""
+
+#: activities/babyshapes/resource/board/board7_3.qml:25
+msgctxt "board7_3|"
+msgid "Vincent van Gogh, Bedroom in Arles - 1888"
+msgstr ""
+
+#: activities/babyshapes/resource/board/board7_4.qml:25
+msgctxt "board7_4|"
+msgid "Ambrosius Bosschaert the Elder, Flower Still Life - 1614"
+msgstr ""
+
+#: activities/ballcatch/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Make the ball go to Tux"
+msgstr ""
+
+#: activities/ballcatch/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"Press the left and right arrow keys at the same time, to make the ball go in "
+"a straight line."
+msgstr ""
+
+#: activities/ballcatch/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Press the left and right arrow at the same time, to make the ball go in a "
+"straight line. On a touch screen you have to hit the two hands at the same "
+"time."
+msgstr ""
+
+#: activities/ballcatch/Ballcatch.qml:242
+msgctxt "Ballcatch|"
+msgid ""
+"Tap both hands at the same time, to make the ball go in a straight line."
+msgstr ""
+
+#: activities/ballcatch/Ballcatch.qml:244
+msgctxt "Ballcatch|"
+msgid ""
+"Press left and right arrow keys at the same time, to make the ball go in a "
+"straight line."
+msgstr ""
+
+#: activities/braille_alphabets/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Discover the Braille system"
+msgstr ""
+
+#: activities/braille_alphabets/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Learn and memorize the Braille system"
+msgstr ""
+
+#: activities/braille_alphabets/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Let children discover the Braille system."
+msgstr ""
+
+#: activities/braille_alphabets/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"The screen has 3 sections: an interactive braille cell, an instruction "
+"telling you the letter to reproduce, and at the top the Braille letters to "
+"use as a reference. Each level teaches a set of 10 letters."
+msgstr ""
+
+#: activities/braille_alphabets/braille_alphabets.js:58
+#: activities/braille_alphabets/braille_alphabets.js:68
+#: activities/braille_alphabets/braille_alphabets.js:78
+#: activities/braille_alphabets/braille_alphabets.js:88
+#: activities/braille_alphabets/braille_alphabets.js:98
+msgctxt "braille_alphabets|"
+msgid "Now it's a little bit harder without the braille map."
+msgstr ""
+
+#: activities/braille_alphabets/braille_alphabets.js:63
+msgctxt "braille_alphabets|"
+msgid ""
+"Look at the Braille character map and observe how similar the first and "
+"second line are."
+msgstr ""
+
+#: activities/braille_alphabets/braille_alphabets.js:73
+msgctxt "braille_alphabets|"
+msgid ""
+"Again, similar as the first line but take care, the 'W' letter was added "
+"afterwards."
+msgstr ""
+
+#: activities/braille_alphabets/braille_alphabets.js:83
+msgctxt "braille_alphabets|"
+msgid "This is easy, numbers are the same as letters from A to J."
+msgstr ""
+
+#: activities/braille_alphabets/FirstScreen.qml:36
+msgctxt "FirstScreen|"
+msgid "Braille : Unlocking the Code"
+msgstr ""
+
+#: activities/braille_alphabets/FirstScreen.qml:64
+msgctxt "FirstScreen|"
+msgid ""
+"The Braille system is a method that is used by blind people to read and "
+"write."
+msgstr ""
+
+#: activities/braille_alphabets/FirstScreen.qml:65
+msgctxt "FirstScreen|"
+msgid ""
+"Each Braille character, or cell, is made up of six dot positions, arranged "
+"in a rectangle containing two columns of three dots each. As seen on the "
+"left, each dot is referenced by a number from 1 to 6."
+msgstr ""
+
+#: activities/braille_alphabets/FirstScreen.qml:86
+msgctxt "FirstScreen|"
+msgid "When you are ready, click on me and try reproducing Braille characters."
+msgstr ""
+
+#: activities/braille_alphabets/questions.js:23
+#: activities/braille_alphabets/questions.js:27
+#: activities/braille_alphabets/questions.js:31
+#: activities/braille_alphabets/questions.js:35
+#: activities/braille_alphabets/questions.js:39
+#: activities/braille_alphabets/questions.js:43
+#: activities/braille_alphabets/questions.js:47
+#: activities/braille_alphabets/questions.js:51
+#: activities/braille_alphabets/questions.js:55
+#: activities/braille_alphabets/questions.js:59
+#: activities/braille_alphabets/questions.js:65
+#: activities/braille_alphabets/questions.js:69
+#: activities/braille_alphabets/questions.js:73
+#: activities/braille_alphabets/questions.js:77
+#: activities/braille_alphabets/questions.js:81
+#: activities/braille_alphabets/questions.js:85
+#: activities/braille_alphabets/questions.js:89
+#: activities/braille_alphabets/questions.js:93
+#: activities/braille_alphabets/questions.js:97
+#: activities/braille_alphabets/questions.js:101
+#: activities/braille_alphabets/questions.js:107
+#: activities/braille_alphabets/questions.js:111
+#: activities/braille_alphabets/questions.js:115
+#: activities/braille_alphabets/questions.js:119
+#: activities/braille_alphabets/questions.js:123
+#: activities/braille_alphabets/questions.js:127
+#, qt-format
+msgctxt "questions|"
+msgid "Click on the dots in braille cell area to produce the letter %1."
+msgstr ""
+
+#: activities/braille_alphabets/questions.js:133
+#: activities/braille_alphabets/questions.js:137
+#: activities/braille_alphabets/questions.js:141
+#: activities/braille_alphabets/questions.js:145
+#: activities/braille_alphabets/questions.js:150
+#: activities/braille_alphabets/questions.js:154
+#: activities/braille_alphabets/questions.js:158
+#: activities/braille_alphabets/questions.js:162
+#: activities/braille_alphabets/questions.js:166
+#: activities/braille_alphabets/questions.js:170
+#, qt-format
+msgctxt "questions|"
+msgid "Click on the dots in braille cell area to produce the number %1."
+msgstr ""
+
+#: activities/braille_alphabets/questions.js:176
+#: activities/braille_alphabets/questions.js:180
+#: activities/braille_alphabets/questions.js:184
+#: activities/braille_alphabets/questions.js:188
+#: activities/braille_alphabets/questions.js:192
+#, qt-format
+msgctxt "questions|"
+msgid "Click on the dots in braille cell area to produce the symbol %1."
+msgstr ""
+
+#: activities/braille_fun/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Braille Fun"
+msgstr ""
+
+#: activities/braille_fun/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Braille the letters"
+msgstr ""
+
+#: activities/braille_fun/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Braille Alphabet Codes"
+msgstr ""
+
+#: activities/braille_fun/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Enter the braille code in the tile for the letters on the banner pulled by "
+"Tux in his plane across the screen. Check the braille chart by clicking on "
+"the toggle button for help."
+msgstr ""
+
+#: activities/canal_lock/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Operate a canal lock"
+msgstr ""
+
+#: activities/canal_lock/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"Tux is in trouble, and needs to take his boat through a lock. Help Tux and "
+"find out how a canal lock works."
+msgstr ""
+
+#: activities/canal_lock/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"You are in charge of the canal lock. Open the gates and the locks in the "
+"right order, so Tux can travel through the gates in both directions."
+msgstr ""
+
+#: activities/canal_lock/ActivityInfo.qml:32
+msgctxt "ActivityInfo|"
+msgid "Drawing by Stephane Cabaraux."
+msgstr ""
+
+#: activities/chronos/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Chronos"
+msgstr ""
+
+#: activities/chronos/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Drag and Drop the items to organize the story"
+msgstr ""
+
+#: activities/chronos/ActivityInfo.qml:32
+msgctxt "ActivityInfo|"
+msgid "Sort the pictures into the order that tells the story"
+msgstr ""
+
+#: activities/chronos/ActivityInfo.qml:33
+msgctxt "ActivityInfo|"
+msgid "Tell a short story"
+msgstr ""
+
+#: activities/chronos/ActivityInfo.qml:34
+msgctxt "ActivityInfo|"
+msgid "Pick from the pictures on the left and put them on the red dots"
+msgstr ""
+
+#: activities/chronos/ActivityInfo.qml:35
+msgctxt "ActivityInfo|"
+msgid ""
+"Moon photo is copyright NASA. The space sounds come from Tuxpaint and "
+"Vegastrike which are released under the GPL license. The transportation "
+"images are copyright Franck Doucet. Dates of Transportation are based on "
+"those found in &lt;http://www.wikipedia.org&gt;."
+msgstr ""
+
+#: activities/chronos/resource/board/board1_0.qml:25
+msgctxt "board1_0|"
+msgid "Moonwalker"
+msgstr ""
+
+#: activities/chronos/resource/board/board1_0.qml:56
+msgctxt "board1_0|"
+msgid "1"
+msgstr ""
+
+#: activities/chronos/resource/board/board1_0.qml:63
+msgctxt "board1_0|"
+msgid "2"
+msgstr ""
+
+#: activities/chronos/resource/board/board1_0.qml:70
+msgctxt "board1_0|"
+msgid "3"
+msgstr ""
+
+#: activities/chronos/resource/board/board1_0.qml:77
+msgctxt "board1_0|"
+msgid "4"
+msgstr ""
+
+#: activities/chronos/resource/board/board2_0.qml:25
+msgctxt "board2_0|"
+msgid "The 4 Seasons"
+msgstr ""
+
+#: activities/chronos/resource/board/board2_0.qml:56
+msgctxt "board2_0|"
+msgid "Spring"
+msgstr ""
+
+#: activities/chronos/resource/board/board2_0.qml:63
+msgctxt "board2_0|"
+msgid "Summer"
+msgstr ""
+
+#: activities/chronos/resource/board/board2_0.qml:70
+msgctxt "board2_0|"
+msgid "Autumn"
+msgstr ""
+
+#: activities/chronos/resource/board/board2_0.qml:77
+msgctxt "board2_0|"
+msgid "Winter"
+msgstr ""
+
+#: activities/chronos/resource/board/board3_0.qml:25
+msgctxt "board3_0|"
+msgid "Gardening"
+msgstr ""
+
+#: activities/chronos/resource/board/board3_0.qml:56
+msgctxt "board3_0|"
+msgid "1"
+msgstr ""
+
+#: activities/chronos/resource/board/board3_0.qml:63
+msgctxt "board3_0|"
+msgid "2"
+msgstr ""
+
+#: activities/chronos/resource/board/board3_0.qml:70
+msgctxt "board3_0|"
+msgid "3"
+msgstr ""
+
+#: activities/chronos/resource/board/board3_0.qml:77
+msgctxt "board3_0|"
+msgid "4"
+msgstr ""
+
+#: activities/chronos/resource/board/board4_0.qml:25
+msgctxt "board4_0|"
+msgid "Tux and the apple tree"
+msgstr ""
+
+#: activities/chronos/resource/board/board4_0.qml:56
+msgctxt "board4_0|"
+msgid "1"
+msgstr ""
+
+#: activities/chronos/resource/board/board4_0.qml:63
+msgctxt "board4_0|"
+msgid "2"
+msgstr ""
+
+#: activities/chronos/resource/board/board4_0.qml:70
+msgctxt "board4_0|"
+msgid "3"
+msgstr ""
+
+#: activities/chronos/resource/board/board4_0.qml:77
+msgctxt "board4_0|"
+msgid "4"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_0.qml:26
+msgctxt "board5_0|"
+msgid "Place each image in the order and on the date it was invented."
+msgstr ""
+
+#: activities/chronos/resource/board/board5_0.qml:43
+msgctxt "board5_0|"
+msgid "1829 Stephenson's Rocket Steam locomotive"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_0.qml:50
+msgctxt "board5_0|"
+msgid "1769 Cugnot's fardier"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_0.qml:57
+msgctxt "board5_0|"
+msgid "Transportation"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_1.qml:25
+msgctxt "board5_1|"
+msgid "Transportation"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_1.qml:49
+msgctxt "board5_1|"
+msgid "1783 Montgolfier brothers' hot air balloon"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_1.qml:56
+msgctxt "board5_1|"
+msgid "1880 Clement Ader's Eole"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_1.qml:63
+msgctxt "board5_1|"
+msgid "1906 Paul Cornu First helicopter flight"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_2.qml:25
+msgctxt "board5_2|"
+msgid "Transportation"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_2.qml:49
+msgctxt "board5_2|"
+msgid "1791 Comte de Sivrac's Celerifere"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_2.qml:56
+msgctxt "board5_2|"
+msgid "1769 Cugnot's fardier"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_2.qml:63
+msgctxt "board5_2|"
+msgid "1880 Clement Ader's Eole"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_3.qml:25
+msgctxt "board5_3|"
+msgid "Transportation"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_3.qml:49
+msgctxt "board5_3|"
+msgid "1791 Comte de Sivrac's Celerifere"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_3.qml:56
+msgctxt "board5_3|"
+msgid "1783 Montgolfier brothers' hot air balloon"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_3.qml:63
+msgctxt "board5_3|"
+msgid "1829 Stephenson's Rocket Steam locomotive"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_4.qml:25
+msgctxt "board5_4|"
+msgid "Transportation"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_4.qml:49
+msgctxt "board5_4|"
+msgid "1829 Stephenson's Rocket Steam locomotive"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_4.qml:56
+msgctxt "board5_4|"
+msgid "1880 Clement Ader's Eole"
+msgstr ""
+
+#: activities/chronos/resource/board/board5_4.qml:63
+msgctxt "board5_4|"
+msgid "1769 Cugnot's fardier"
+msgstr ""
+
+#: activities/chronos/resource/board/board6_0.qml:26
+msgctxt "board6_0|"
+msgid "Aviation"
+msgstr ""
+
+#: activities/chronos/resource/board/board6_0.qml:50
+msgctxt "board6_0|"
+msgid "1880 Clement Ader's Eole"
+msgstr ""
+
+#: activities/chronos/resource/board/board6_0.qml:57
+msgctxt "board6_0|"
+msgid "1903 The Wright brothers' Flyer III"
+msgstr ""
+
+#: activities/chronos/resource/board/board6_0.qml:64
+msgctxt "board6_0|"
+msgid "1909 Louis Bleriot crosses the English Channel"
+msgstr ""
+
+#: activities/chronos/resource/board/board6_1.qml:25
+msgctxt "board6_1|"
+msgid "Aviation"
+msgstr ""
+
+#: activities/chronos/resource/board/board6_1.qml:49
+msgctxt "board6_1|"
+msgid "1947 Chuck Yeager breaks the sound-barrier"
+msgstr ""
+
+#: activities/chronos/resource/board/board6_1.qml:56
+msgctxt "board6_1|"
+msgid "1927 Charles Lindbergh crosses the Atlantic Ocean"
+msgstr ""
+
+#: activities/chronos/resource/board/board6_1.qml:63
+msgctxt "board6_1|"
+msgid "1934 Hélène Boucher's speed record of 444km/h"
+msgstr ""
+
+#: activities/chronos/resource/board/board6_2.qml:25
+msgctxt "board6_2|"
+msgid "Cars"
+msgstr ""
+
+#: activities/chronos/resource/board/board6_2.qml:49
+msgctxt "board6_2|"
+msgid "1878 Amédée Bollée's La Mancelle"
+msgstr ""
+
+#: activities/chronos/resource/board/board6_2.qml:56
+msgctxt "board6_2|"
+msgid "1769 Cugnot's fardier"
+msgstr ""
+
+#: activities/chronos/resource/board/board6_2.qml:63
+msgctxt "board6_2|"
+msgid "1885 The first petrol car by Benz"
+msgstr ""
+
+#: activities/chronos/resource/board/board6_3.qml:25
+msgctxt "board6_3|"
+msgid "Cars"
+msgstr ""
+
+#: activities/chronos/resource/board/board6_3.qml:49
+msgctxt "board6_3|"
+msgid "1899 Renault voiturette"
+msgstr ""
+
+#: activities/chronos/resource/board/board6_3.qml:56
+msgctxt "board6_3|"
+msgid "1923 Lancia Lambda"
+msgstr ""
+
+#: activities/chronos/resource/board/board6_3.qml:63
+msgctxt "board6_3|"
+msgid "1955 Citroën DS 19"
+msgstr ""
+
+#: activities/click_on_letter/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Click on a lowercase letter"
+msgstr ""
+
+#: activities/click_on_letter/ActivityInfo.qml:27
+#: activities/click_on_letter_up/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Listen to a letter and click on the right one"
+msgstr ""
+
+#: activities/click_on_letter/ActivityInfo.qml:29
+#: activities/click_on_letter_up/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Letter-name recognition"
+msgstr ""
+
+#: activities/click_on_letter/ActivityInfo.qml:30
+#: activities/click_on_letter_up/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Visual letter-recognition."
+msgstr ""
+
+#: activities/click_on_letter/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"A letter is spoken. Click on the matching letter in the main area. You can "
+"listen to the letter again, by clicking on the mouth icon."
+msgstr ""
+
+#: activities/click_on_letter_up/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Click on an uppercase letter"
+msgstr ""
+
+#: activities/click_on_letter_up/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"A letter is spoken. Click on the matching letter in the main area. You can "
+"listen to the letter again, by clicking on the mouth icon in the bottom box."
+msgstr ""
+
+#: activities/clickanddraw/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Click and draw"
+msgstr ""
+
+#: activities/clickanddraw/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Draw the picture by clicking on the selected points."
+msgstr ""
+
+#: activities/clickanddraw/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Can move the mouse and click accurately on points."
+msgstr ""
+
+#: activities/clickanddraw/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Draw the picture by clicking on each point in sequence. Each time a point is "
+"selected the next blue one appears."
+msgstr ""
+
+#: activities/clickgame/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Click On Me"
+msgstr ""
+
+#: activities/clickgame/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Catch all the swimming fish before they leave the fish tank"
+msgstr ""
+
+#: activities/clickgame/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Motor coordination: moving the hand precisely."
+msgstr ""
+
+#: activities/clickgame/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Can move mouse and click on the correct place"
+msgstr ""
+
+#: activities/clickgame/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Catch all the moving fish by simple clicking or touching them with your "
+"finger."
+msgstr ""
+
+#: activities/clickgame/ActivityInfo.qml:32
+msgctxt "ActivityInfo|"
+msgid ""
+"Fish are taken from the Unix utility xfishtank. All image credits belong to "
+"Guillaume Rousse."
+msgstr ""
+
+#: activities/clockgame/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Learning Clock"
+msgstr ""
+
+#: activities/clockgame/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Learn how to tell the time on an analog clock"
+msgstr ""
+
+#: activities/clockgame/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid ""
+"Distinguish between time-units (hour, minute and second). Set and display "
+"time on an analog clock."
+msgstr ""
+
+#: activities/clockgame/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "The concept of time."
+msgstr ""
+
+#: activities/clockgame/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Set the clock to the given time, in the time-units shown (hours:minutes or "
+"hours:minutes:seconds). Drag the different arrows, to make the respective "
+"time unit go up or down."
+msgstr ""
+
+#: activities/clockgame/Clockgame.qml:105
+msgctxt "Clockgame|"
+msgid "Set the watch to:"
+msgstr ""
+
+#: activities/color_mix/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Mixing color of paint"
+msgstr ""
+
+#: activities/color_mix/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Discover paint color mixing."
+msgstr ""
+
+#: activities/color_mix/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Mix the primary colors to match to the given color"
+msgstr ""
+
+#: activities/color_mix/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"\n"
+"The activity deals with mixing primary colors of paint (subtractive "
+"mixing).\n"
+"\n"
+"In case of paints the inks absorb different colors of light falling on it, "
+"subtracting it from what you see. The more ink you add, the more light is "
+"absorbed, and the darker the combined color gets. We can mix just three "
+"primary colors to make many new colors. The primary colors for paint/ink are "
+"cyan (a special shade of blue), magenta (a special shade of pink), and "
+"yellow.\n"
+"        "
+msgstr ""
+
+#: activities/color_mix/ActivityInfo.qml:36
+msgctxt "ActivityInfo|"
+msgid "Images from http://openclipart.org"
+msgstr ""
+
+#: activities/color_mix/ColorMix.qml:97
+msgctxt "ColorMix|"
+msgid "Match the color"
+msgstr ""
+
+#: activities/color_mix/ColorMix.qml:206
+msgctxt "ColorMix|"
+msgid "Not enough red"
+msgstr ""
+
+#: activities/color_mix/ColorMix.qml:208
+msgctxt "ColorMix|"
+msgid "Too much red"
+msgstr ""
+
+#: activities/color_mix/ColorMix.qml:211
+msgctxt "ColorMix|"
+msgid "Not enough green"
+msgstr ""
+
+#: activities/color_mix/ColorMix.qml:213
+msgctxt "ColorMix|"
+msgid "Too much green"
+msgstr ""
+
+#: activities/color_mix/ColorMix.qml:216
+msgctxt "ColorMix|"
+msgid "Not enough blue"
+msgstr ""
+
+#: activities/color_mix/ColorMix.qml:218
+msgctxt "ColorMix|"
+msgid "Too much blue"
+msgstr ""
+
+#: activities/color_mix/ColorMix.qml:222
+msgctxt "ColorMix|"
+msgid "Not enough magenta"
+msgstr ""
+
+#: activities/color_mix/ColorMix.qml:224
+msgctxt "ColorMix|"
+msgid "Too much magenta"
+msgstr ""
+
+#: activities/color_mix/ColorMix.qml:227
+msgctxt "ColorMix|"
+msgid "Not enough yellow"
+msgstr ""
+
+#: activities/color_mix/ColorMix.qml:229
+msgctxt "ColorMix|"
+msgid "Too much yellow"
+msgstr ""
+
+#: activities/color_mix/ColorMix.qml:232
+msgctxt "ColorMix|"
+msgid "Not enough cyan"
+msgstr ""
+
+#: activities/color_mix/ColorMix.qml:234
+msgctxt "ColorMix|"
+msgid "Too much cyan"
+msgstr ""
+
+#: activities/color_mix_light/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Mixing colors of light"
+msgstr ""
+
+#: activities/color_mix_light/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Discover light color mixing."
+msgstr ""
+
+#: activities/color_mix_light/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Mix the primary colors to match to the given color."
+msgstr ""
+
+#: activities/color_mix_light/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"\n"
+"The activity deals with mixing primary colors of light (additive mixing).\n"
+"\n"
+"In case of light it is just the opposite of mixing color with paints! The "
+"more light you add the lighter the resultant color will get. Primary colors "
+"of light are red, green and blue.\n"
+"        "
+msgstr ""
+
+#: activities/colors/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Colors"
+msgstr ""
+
+#: activities/colors/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Click on the right color"
+msgstr ""
+
+#: activities/colors/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid ""
+"This activity teaches you to recognize different colors. When you hear the "
+"name of the color, touch the duck wearing it."
+msgstr ""
+
+#: activities/colors/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Identifying colours"
+msgstr ""
+
+#: activities/colors/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Listen to the color and touch the matching duck."
+msgstr ""
+
+#: activities/colors/colors.js:24 activities/colors/colors.js:56
+#: activities/colors/colors.js:98
+msgctxt "colors|"
+msgid "Find the yellow duck"
+msgstr ""
+
+#: activities/colors/colors.js:29 activities/colors/colors.js:61
+msgctxt "colors|"
+msgid "Find the black duck"
+msgstr ""
+
+#: activities/colors/colors.js:34 activities/colors/colors.js:71
+#: activities/colors/colors.js:108
+msgctxt "colors|"
+msgid "Find the green duck"
+msgstr ""
+
+#: activities/colors/colors.js:39 activities/colors/colors.js:128
+msgctxt "colors|"
+msgid "Find the red duck"
+msgstr ""
+
+#: activities/colors/colors.js:44 activities/colors/colors.js:91
+msgctxt "colors|"
+msgid "Find the white duck"
+msgstr ""
+
+#: activities/colors/colors.js:49 activities/colors/colors.js:133
+msgctxt "colors|"
+msgid "Find the blue duck"
+msgstr ""
+
+#: activities/colors/colors.js:66 activities/colors/colors.js:103
+msgctxt "colors|"
+msgid "Find the brown duck"
+msgstr ""
+
+#: activities/colors/colors.js:76 activities/colors/colors.js:113
+msgctxt "colors|"
+msgid "Find the grey duck"
+msgstr ""
+
+#: activities/colors/colors.js:81 activities/colors/colors.js:118
+msgctxt "colors|"
+msgid "Find the orange duck"
+msgstr ""
+
+#: activities/colors/colors.js:86 activities/colors/colors.js:123
+msgctxt "colors|"
+msgid "Find the purple duck"
+msgstr ""
+
+#: activities/details/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Find the details"
+msgstr ""
+
+#: activities/details/ActivityInfo.qml:34
+msgctxt "ActivityInfo|"
+msgid "The images are from Wikimedia Commons."
+msgstr ""
+
+#: activities/details/resource/board/board10_0.qml:25
+msgctxt "board10_0|"
+msgid "Eilean Donan castle"
+msgstr ""
+
+#: activities/details/resource/board/board11_0.qml:25
+msgctxt "board11_0|"
+msgid "Gizah Pyramids, Egypt"
+msgstr ""
+
+#: activities/details/resource/board/board12_0.qml:25
+msgctxt "board12_0|"
+msgid "Sydney Opera House, Australia"
+msgstr ""
+
+#: activities/details/resource/board/board13_0.qml:25
+msgctxt "board13_0|"
+msgid "Tower Bridge in London"
+msgstr ""
+
+#: activities/details/resource/board/board14_0.qml:25
+msgctxt "board14_0|"
+msgid "Eiffel Tower, seen from the champ de Mars, Paris, France"
+msgstr ""
+
+#: activities/details/resource/board/board15_0.qml:25
+msgctxt "board15_0|"
+msgid "Courtyard of the Museum of Louvre, and its pyramid"
+msgstr ""
+
+#: activities/details/resource/board/board16_0.qml:25
+msgctxt "board16_0|"
+msgid "Panorama of Château de Chenonceau, Indre-et-Loire, France."
+msgstr ""
+
+#: activities/details/resource/board/board17_0.qml:25
+msgctxt "board17_0|"
+msgid "Windmill in Sønderho, Fanø, Denmark"
+msgstr ""
+
+#: activities/details/resource/board/board18_0.qml:25
+msgctxt "board18_0|"
+msgid "Nagoya Castle, Aichi Prefecture, Japan."
+msgstr ""
+
+#: activities/details/resource/board/board19_0.qml:25
+msgctxt "board19_0|"
+msgid "Taj Mahal, Agra, India"
+msgstr ""
+
+#: activities/details/resource/board/board1_0.qml:25
+msgctxt "board1_0|"
+msgid "Vincent van Gogh, Entrance Hall of Saint-Paul Hospital - 1889"
+msgstr ""
+
+#: activities/details/resource/board/board20_0.qml:25
+msgctxt "board20_0|"
+msgid "Castle Neuschwanstein at Schwangau, Bavaria, Germany"
+msgstr ""
+
+#: activities/details/resource/board/board21_0.qml:25
+msgctxt "board21_0|"
+msgid "Egeskov Castle, Denmark"
+msgstr ""
+
+#: activities/details/resource/board/board2_0.qml:25
+msgctxt "board2_0|"
+msgid ""
+"Vincent van Gogh, The Bridge of Langlois at Arles with a lady with umbrella "
+"- 1888"
+msgstr ""
+
+#: activities/details/resource/board/board3_0.qml:25
+msgctxt "board3_0|"
+msgid "Vincent van Gogh, The Church at Auvers-sur-Oise - 1890"
+msgstr ""
+
+#: activities/details/resource/board/board4_0.qml:25
+msgctxt "board4_0|"
+msgid "Vincent van Gogh, Painter on His Way to Work - 1888"
+msgstr ""
+
+#: activities/details/resource/board/board5_0.qml:25
+msgctxt "board5_0|"
+msgid "Vincent van Gogh, The Harvest - 1888"
+msgstr ""
+
+#: activities/details/resource/board/board6_0.qml:25
+msgctxt "board6_0|"
+msgid "Vincent van Gogh, Cafe Terrace at Night - 1888"
+msgstr ""
+
+#: activities/details/resource/board/board7_0.qml:25
+msgctxt "board7_0|"
+msgid "Vincent van Gogh, The Night Café - 1888"
+msgstr ""
+
+#: activities/details/resource/board/board8_0.qml:25
+msgctxt "board8_0|"
+msgid "Vincent van Gogh, Portrait of Pere Tanguy 1887-8"
+msgstr ""
+
+#: activities/details/resource/board/board9_0.qml:25
+msgctxt "board9_0|"
+msgid ""
+"Notre Dame de Paris cathedral on the Île de la Cité island in Paris, France."
+msgstr ""
+
+#: activities/drawnumber/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Number sequence"
+msgstr ""
+
+#: activities/drawnumber/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Touch the numbers in the right sequence."
+msgstr ""
+
+#: activities/drawnumber/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Can count from 1 to 50."
+msgstr ""
+
+#: activities/drawnumber/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Draw the picture by touching each number in the right sequence, or sliding "
+"your finger or dragging the mouse through the numbers in the correct "
+"sequence."
+msgstr ""
+
+#: activities/enumerate/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Count the items"
+msgstr ""
+
+#: activities/enumerate/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Place the items in the best way to count them"
+msgstr ""
+
+#: activities/enumerate/ActivityInfo.qml:29
+#: activities/numbers-odd-even/ActivityInfo.qml:29
+#: activities/planegame/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Numeration training"
+msgstr ""
+
+#: activities/enumerate/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Basic enumeration"
+msgstr ""
+
+#: activities/enumerate/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"First, properly organize the items so that you can count them. Then, select "
+"the item you want to answer in the bottom right area. Enter the answer with "
+"the keyboard."
+msgstr ""
+
+#: activities/erase/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Move the mouse or touch the screen"
+msgstr ""
+
+#: activities/erase/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"Move the mouse or touch the screen to erase the area and discover the "
+"background"
+msgstr ""
+
+#: activities/erase/ActivityInfo.qml:29
+#: activities/erase_2clic/ActivityInfo.qml:29
+#: activities/erase_clic/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Motor-coordination"
+msgstr ""
+
+#: activities/erase/ActivityInfo.qml:30
+#: activities/erase_2clic/ActivityInfo.qml:30
+#: activities/erase_clic/ActivityInfo.qml:30
+#: activities/hanoi/ActivityInfo.qml:30
+#: activities/memory-tux/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Mouse-manipulation"
+msgstr ""
+
+#: activities/erase/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Move the mouse or touch the screen until all the blocks disappear."
+msgstr ""
+
+#: activities/erase_2clic/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Double tap or double click"
+msgstr ""
+
+#: activities/erase_2clic/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"Double tap or double click to erase the area and discover the background "
+"image"
+msgstr ""
+
+#: activities/erase_2clic/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Double tap or double click the mouse on rectangles until all the blocks "
+"disappear."
+msgstr ""
+
+#: activities/erase_clic/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Click or tap"
+msgstr ""
+
+#: activities/erase_clic/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Click or tap to erase the area and discover the background"
+msgstr ""
+
+#: activities/erase_clic/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Click or tap on the blocks all of them disappear."
+msgstr ""
+
+#: activities/fifteen/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "The fifteen game"
+msgstr ""
+
+#: activities/fifteen/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Move each item to recreate the image."
+msgstr ""
+
+#: activities/fifteen/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Click or drag on any pieces that has a free block beside it, and it will be "
+"swapped with the empty one."
+msgstr ""
+
+#: activities/followline/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Control the hose-pipe"
+msgstr ""
+
+#: activities/followline/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "The fireman needs to stop the fire, but the hose is blocked."
+msgstr ""
+
+#: activities/followline/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Fine motor coordination"
+msgstr ""
+
+#: activities/followline/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Move the mouse or your finger over the lock which is represented as a red "
+"part in the hose-pipe. This will move it, bringing it, part by part, up to "
+"the fire. Be careful, if you move off the hose, the lock will go backward."
+msgstr ""
+
+#: activities/football/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "The football game"
+msgstr ""
+
+#: activities/football/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Kick the ball into the goal"
+msgstr ""
+
+#: activities/football/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Kick the ball behind the goal keeper on the right"
+msgstr ""
+
+#: activities/football/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Drag a line from the ball, to set its speed and direction."
+msgstr ""
+
+#: activities/geo-country/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Locate the region"
+msgstr ""
+
+#: activities/geo-country/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Drag and Drop the regions to redraw the whole country"
+msgstr ""
+
+#: activities/geo-country/resource/board/board10_0.qml:26
+msgctxt "board10_0|"
+msgid "United States of America"
+msgstr ""
+
+#: activities/geo-country/resource/board/board10_1.qml:25
+msgctxt "board10_1|"
+msgid "United States of America"
+msgstr ""
+
+#: activities/geo-country/resource/board/board11_0.qml:26
+msgctxt "board11_0|"
+msgid "Districts of Italy"
+msgstr ""
+
+#: activities/geo-country/resource/board/board11_1.qml:25
+msgctxt "board11_1|"
+msgid "Districts of Northern Italy"
+msgstr ""
+
+#: activities/geo-country/resource/board/board11_2.qml:25
+msgctxt "board11_2|"
+msgid "Districts of Central Italy"
+msgstr ""
+
+#: activities/geo-country/resource/board/board11_3.qml:25
+msgctxt "board11_3|"
+msgid "Districts of Southern Italy"
+msgstr ""
+
+#: activities/geo-country/resource/board/board12_0.qml:25
+msgctxt "board12_0|"
+msgid "Districts of India"
+msgstr ""
+
+#: activities/geo-country/resource/board/board13_0.qml:25
+msgctxt "board13_0|"
+msgid "Districts of Australia"
+msgstr ""
+
+#: activities/geo-country/resource/board/board14_0.qml:25
+msgctxt "board14_0|"
+msgid "Districts of China"
+msgstr ""
+
+#: activities/geo-country/resource/board/board15_0.qml:26
+msgctxt "board15_0|"
+msgid "Northern Scotland"
+msgstr ""
+
+#: activities/geo-country/resource/board/board15_1.qml:25
+msgctxt "board15_1|"
+msgid "Southern Scotland"
+msgstr ""
+
+#: activities/geo-country/resource/board/board15_2.qml:25
+msgctxt "board15_2|"
+msgid "Northern Scotland"
+msgstr ""
+
+#: activities/geo-country/resource/board/board15_3.qml:25
+msgctxt "board15_3|"
+msgid "Southern Scotland"
+msgstr ""
+
+#: activities/geo-country/resource/board/board1_0.qml:25
+msgctxt "board1_0|"
+msgid "Districts of France"
+msgstr ""
+
+#: activities/geo-country/resource/board/board2_0.qml:25
+msgctxt "board2_0|"
+msgid "Districts of Germany"
+msgstr ""
+
+#: activities/geo-country/resource/board/board3_0.qml:25
+msgctxt "board3_0|"
+msgid "Districts of Argentina"
+msgstr ""
+
+#: activities/geo-country/resource/board/board4_0.qml:25
+msgctxt "board4_0|"
+msgid "Districts of Poland"
+msgstr ""
+
+#: activities/geo-country/resource/board/board5_0.qml:26
+msgctxt "board5_0|"
+msgid "Districts of Turkey"
+msgstr ""
+
+#: activities/geo-country/resource/board/board5_1.qml:25
+msgctxt "board5_1|"
+msgid "Eastern Districts of Turkey"
+msgstr ""
+
+#: activities/geo-country/resource/board/board5_2.qml:25
+msgctxt "board5_2|"
+msgid "Districts of Turkey"
+msgstr ""
+
+#: activities/geo-country/resource/board/board6_0.qml:25
+msgctxt "board6_0|"
+msgid "Counties of Norway"
+msgstr ""
+
+#: activities/geo-country/resource/board/board7_0.qml:25
+msgctxt "board7_0|"
+msgid "Counties of Brazil"
+msgstr ""
+
+#: activities/geography/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Locate the countries"
+msgstr ""
+
+#: activities/geography/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Drag and Drop the items to redraw the whole map"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:25
+msgctxt "board10_0|"
+msgid "Asia"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:33
+msgctxt "board10_0|"
+msgid "Russia"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:39
+msgctxt "board10_0|"
+msgid "Mongolia"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:45
+msgctxt "board10_0|"
+msgid "Japan"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:51
+msgctxt "board10_0|"
+msgid "North Korea"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:57
+msgctxt "board10_0|"
+msgid "South Korea"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:63
+msgctxt "board10_0|"
+msgid "Kazakhstan"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:69
+msgctxt "board10_0|"
+msgid "Uzbekistan"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:75
+msgctxt "board10_0|"
+msgid "Taiwan"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:81
+msgctxt "board10_0|"
+msgid "Vietnam"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:87
+msgctxt "board10_0|"
+msgid "Cambodia"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:93
+msgctxt "board10_0|"
+msgid "Laos"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:99
+msgctxt "board10_0|"
+msgid "Thailand"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:105
+msgctxt "board10_0|"
+msgid "Sri Lanka"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:111
+msgctxt "board10_0|"
+msgid "China"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:117
+msgctxt "board10_0|"
+msgid "India"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:123
+msgctxt "board10_0|"
+msgid "Bangladesh"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:129
+msgctxt "board10_0|"
+msgid "Bhutan"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:135
+msgctxt "board10_0|"
+msgid "Nepal"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:141
+msgctxt "board10_0|"
+msgid "Pakistan"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:147
+msgctxt "board10_0|"
+msgid "Myanmar"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:153
+msgctxt "board10_0|"
+msgid "Philippines"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:159
+msgctxt "board10_0|"
+msgid "Indonesia"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:165
+msgctxt "board10_0|"
+msgid "Malaysia"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:171
+msgctxt "board10_0|"
+msgid "Afghanistan"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:177
+msgctxt "board10_0|"
+msgid "Tajikistan"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:183
+msgctxt "board10_0|"
+msgid "Kyrgyzstan"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:189
+msgctxt "board10_0|"
+msgid "Turkmenistan"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:195
+msgctxt "board10_0|"
+msgid "Iran"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:201
+msgctxt "board10_0|"
+msgid "Azerbaijan"
+msgstr ""
+
+#. Translators: Strip Asia| and translate only Georgia
+#: activities/geography/resource/board/board10_0.qml:208
+msgctxt "board10_0|"
+msgid "Asia|Georgia"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:214
+msgctxt "board10_0|"
+msgid "Turkey"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:220
+msgctxt "board10_0|"
+msgid "Syria"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:226
+msgctxt "board10_0|"
+msgid "Iraq"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:232
+msgctxt "board10_0|"
+msgid "Jordan"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:238
+msgctxt "board10_0|"
+msgid "Saudi Arabia"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:244
+msgctxt "board10_0|"
+msgid "Yemen"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:250
+msgctxt "board10_0|"
+msgid "United Arab Emirates"
+msgstr ""
+
+#: activities/geography/resource/board/board10_0.qml:256
+msgctxt "board10_0|"
+msgid "Oman"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:25
+msgctxt "board11_0|"
+msgid "Oceania"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:33
+msgctxt "board11_0|"
+msgid "Pitcairn Islands"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:39
+msgctxt "board11_0|"
+msgid "French Polynesia"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:45
+msgctxt "board11_0|"
+msgid "Papua New Guinea"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:51
+msgctxt "board11_0|"
+msgid "East Timor"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:57
+msgctxt "board11_0|"
+msgid "Indonesia"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:63
+msgctxt "board11_0|"
+msgid "Palau"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:69
+msgctxt "board11_0|"
+msgid "Northern Mariana Islands"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:75
+msgctxt "board11_0|"
+msgid "Micronesia"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:81
+msgctxt "board11_0|"
+msgid "Vanuatu"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:87
+msgctxt "board11_0|"
+msgid "Tuvalu"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:93
+msgctxt "board11_0|"
+msgid "Tonga"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:99
+msgctxt "board11_0|"
+msgid "New Caledonia"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:105
+msgctxt "board11_0|"
+msgid "Marshall Islands"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:111
+msgctxt "board11_0|"
+msgid "Kiribati"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:117
+msgctxt "board11_0|"
+msgid "Fiji"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:123
+msgctxt "board11_0|"
+msgid "Solomon Islands"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:129
+msgctxt "board11_0|"
+msgid "New Zealand"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:135
+msgctxt "board11_0|"
+msgid "Cook Islands"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:141
+msgctxt "board11_0|"
+msgid "American Samoa"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:147
+msgctxt "board11_0|"
+msgid "Australia"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:153
+msgctxt "board11_0|"
+msgid "United States Minor Outlying Islands"
+msgstr ""
+
+#: activities/geography/resource/board/board11_0.qml:159
+msgctxt "board11_0|"
+msgid "Hawaii"
+msgstr ""
+
+#: activities/geography/resource/board/board1_0.qml:25
+msgctxt "board1_0|"
+msgid "Continents"
+msgstr ""
+
+#: activities/geography/resource/board/board1_0.qml:34
+msgctxt "board1_0|"
+msgid "Oceania"
+msgstr ""
+
+#: activities/geography/resource/board/board1_0.qml:41
+msgctxt "board1_0|"
+msgid "Europe"
+msgstr ""
+
+#: activities/geography/resource/board/board1_0.qml:48
+msgctxt "board1_0|"
+msgid "Asia"
+msgstr ""
+
+#: activities/geography/resource/board/board1_0.qml:55
+msgctxt "board1_0|"
+msgid "Antarctica"
+msgstr ""
+
+#: activities/geography/resource/board/board1_0.qml:62
+msgctxt "board1_0|"
+msgid "America"
+msgstr ""
+
+#: activities/geography/resource/board/board1_0.qml:69
+msgctxt "board1_0|"
+msgid "Africa"
+msgstr ""
+
+#: activities/geography/resource/board/board2_0.qml:25
+msgctxt "board2_0|"
+msgid "North America"
+msgstr ""
+
+#: activities/geography/resource/board/board2_0.qml:34
+msgctxt "board2_0|"
+msgid "Alaska"
+msgstr ""
+
+#: activities/geography/resource/board/board2_0.qml:41
+msgctxt "board2_0|"
+msgid "United States of America"
+msgstr ""
+
+#: activities/geography/resource/board/board2_0.qml:48
+msgctxt "board2_0|"
+msgid "Mexico"
+msgstr ""
+
+#: activities/geography/resource/board/board2_0.qml:55
+msgctxt "board2_0|"
+msgid "Iceland"
+msgstr ""
+
+#: activities/geography/resource/board/board2_0.qml:62
+msgctxt "board2_0|"
+msgid "Greenland"
+msgstr ""
+
+#: activities/geography/resource/board/board2_0.qml:69
+msgctxt "board2_0|"
+msgid "Canada"
+msgstr ""
+
+#: activities/geography/resource/board/board3_0.qml:26
+msgctxt "board3_0|"
+msgid "Central America"
+msgstr ""
+
+#: activities/geography/resource/board/board3_0.qml:35
+msgctxt "board3_0|"
+msgid "Puerto Rico"
+msgstr ""
+
+#: activities/geography/resource/board/board3_0.qml:42
+msgctxt "board3_0|"
+msgid "Panama"
+msgstr ""
+
+#: activities/geography/resource/board/board3_0.qml:49
+msgctxt "board3_0|"
+msgid "Nicaragua"
+msgstr ""
+
+#: activities/geography/resource/board/board3_0.qml:56
+msgctxt "board3_0|"
+msgid "Mexico"
+msgstr ""
+
+#: activities/geography/resource/board/board3_0.qml:63
+msgctxt "board3_0|"
+msgid "Jamaica"
+msgstr ""
+
+#: activities/geography/resource/board/board3_0.qml:70
+msgctxt "board3_0|"
+msgid "Honduras"
+msgstr ""
+
+#: activities/geography/resource/board/board3_0.qml:77
+msgctxt "board3_0|"
+msgid "Haiti"
+msgstr ""
+
+#: activities/geography/resource/board/board3_0.qml:84
+msgctxt "board3_0|"
+msgid "Guatemala"
+msgstr ""
+
+#: activities/geography/resource/board/board3_0.qml:91
+msgctxt "board3_0|"
+msgid "El Salvador"
+msgstr ""
+
+#: activities/geography/resource/board/board3_0.qml:98
+msgctxt "board3_0|"
+msgid "Dominican Republic"
+msgstr ""
+
+#: activities/geography/resource/board/board3_0.qml:105
+msgctxt "board3_0|"
+msgid "Cuba"
+msgstr ""
+
+#: activities/geography/resource/board/board3_0.qml:112
+msgctxt "board3_0|"
+msgid "Costa Rica"
+msgstr ""
+
+#: activities/geography/resource/board/board3_0.qml:119
+msgctxt "board3_0|"
+msgid "Belize"
+msgstr ""
+
+#: activities/geography/resource/board/board3_0.qml:126
+msgctxt "board3_0|"
+msgid "Bahamas"
+msgstr ""
+
+#: activities/geography/resource/board/board3_1.qml:25
+msgctxt "board3_1|"
+msgid "Central America"
+msgstr ""
+
+#: activities/geography/resource/board/board3_1.qml:34
+msgctxt "board3_1|"
+msgid "Puerto Rico"
+msgstr ""
+
+#: activities/geography/resource/board/board3_1.qml:41
+msgctxt "board3_1|"
+msgid "Panama"
+msgstr ""
+
+#: activities/geography/resource/board/board3_1.qml:48
+msgctxt "board3_1|"
+msgid "Nicaragua"
+msgstr ""
+
+#: activities/geography/resource/board/board3_1.qml:55
+msgctxt "board3_1|"
+msgid "Mexico"
+msgstr ""
+
+#: activities/geography/resource/board/board3_1.qml:62
+msgctxt "board3_1|"
+msgid "Jamaica"
+msgstr ""
+
+#: activities/geography/resource/board/board3_1.qml:69
+msgctxt "board3_1|"
+msgid "Honduras"
+msgstr ""
+
+#: activities/geography/resource/board/board3_1.qml:76
+msgctxt "board3_1|"
+msgid "Haiti"
+msgstr ""
+
+#: activities/geography/resource/board/board3_1.qml:83
+msgctxt "board3_1|"
+msgid "Guatemala"
+msgstr ""
+
+#: activities/geography/resource/board/board3_1.qml:90
+msgctxt "board3_1|"
+msgid "El Salvador"
+msgstr ""
+
+#: activities/geography/resource/board/board3_1.qml:97
+msgctxt "board3_1|"
+msgid "Dominican Republic"
+msgstr ""
+
+#: activities/geography/resource/board/board3_1.qml:104
+msgctxt "board3_1|"
+msgid "Cuba"
+msgstr ""
+
+#: activities/geography/resource/board/board3_1.qml:111
+msgctxt "board3_1|"
+msgid "Costa Rica"
+msgstr ""
+
+#: activities/geography/resource/board/board3_1.qml:118
+msgctxt "board3_1|"
+msgid "Belize"
+msgstr ""
+
+#: activities/geography/resource/board/board3_1.qml:125
+msgctxt "board3_1|"
+msgid "Bahamas"
+msgstr ""
+
+#: activities/geography/resource/board/board4_0.qml:25
+msgctxt "board4_0|"
+msgid "South America"
+msgstr ""
+
+#: activities/geography/resource/board/board4_0.qml:34
+msgctxt "board4_0|"
+msgid "Venezuela"
+msgstr ""
+
+#: activities/geography/resource/board/board4_0.qml:41
+msgctxt "board4_0|"
+msgid "Uruguay"
+msgstr ""
+
+#: activities/geography/resource/board/board4_0.qml:48
+msgctxt "board4_0|"
+msgid "Suriname"
+msgstr ""
+
+#: activities/geography/resource/board/board4_0.qml:55
+msgctxt "board4_0|"
+msgid "Peru"
+msgstr ""
+
+#: activities/geography/resource/board/board4_0.qml:62
+msgctxt "board4_0|"
+msgid "Paraguay"
+msgstr ""
+
+#: activities/geography/resource/board/board4_0.qml:69
+msgctxt "board4_0|"
+msgid "Panama"
+msgstr ""
+
+#: activities/geography/resource/board/board4_0.qml:76
+msgctxt "board4_0|"
+msgid "Guyana"
+msgstr ""
+
+#: activities/geography/resource/board/board4_0.qml:83
+msgctxt "board4_0|"
+msgid "French Guiana"
+msgstr ""
+
+#: activities/geography/resource/board/board4_0.qml:90
+msgctxt "board4_0|"
+msgid "Ecuador"
+msgstr ""
+
+#: activities/geography/resource/board/board4_0.qml:97
+msgctxt "board4_0|"
+msgid "Colombia"
+msgstr ""
+
+#: activities/geography/resource/board/board4_0.qml:104
+msgctxt "board4_0|"
+msgid "Chile"
+msgstr ""
+
+#: activities/geography/resource/board/board4_0.qml:111
+msgctxt "board4_0|"
+msgid "Brazil"
+msgstr ""
+
+#: activities/geography/resource/board/board4_0.qml:118
+msgctxt "board4_0|"
+msgid "Bolivia"
+msgstr ""
+
+#: activities/geography/resource/board/board4_0.qml:125
+msgctxt "board4_0|"
+msgid "Argentina"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:25
+msgctxt "board5_0|"
+msgid "Western Europe"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:34
+msgctxt "board5_0|"
+msgid "United Kingdom"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:41
+msgctxt "board5_0|"
+msgid "Switzerland"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:48
+msgctxt "board5_0|"
+msgid "Sweden"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:55
+msgctxt "board5_0|"
+msgid "Spain"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:62
+msgctxt "board5_0|"
+msgid "Portugal"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:69
+msgctxt "board5_0|"
+msgid "Norway"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:76
+msgctxt "board5_0|"
+msgid "The Netherlands"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:90
+msgctxt "board5_0|"
+msgid "Italy"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:97
+msgctxt "board5_0|"
+msgid "Ireland"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:104
+msgctxt "board5_0|"
+msgid "Iceland"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:111
+msgctxt "board5_0|"
+msgid "Germany"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:118
+msgctxt "board5_0|"
+msgid "France"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:125
+msgctxt "board5_0|"
+msgid "Finland"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:132
+msgctxt "board5_0|"
+msgid "Denmark"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:139
+msgctxt "board5_0|"
+msgid "Belgium"
+msgstr ""
+
+#: activities/geography/resource/board/board5_0.qml:146
+msgctxt "board5_0|"
+msgid "Austria"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:25
+msgctxt "board6_0|"
+msgid "Eastern Europe"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:41
+msgctxt "board6_0|"
+msgid "Greece"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:48
+msgctxt "board6_0|"
+msgid "Ukraine"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:55
+msgctxt "board6_0|"
+msgid "Turkey"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:62
+msgctxt "board6_0|"
+msgid "Slovenia"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:69
+msgctxt "board6_0|"
+msgid "Slovak Republic"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:76
+msgctxt "board6_0|"
+msgid "Montenegro"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:83
+msgctxt "board6_0|"
+msgid "Serbia"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:90
+msgctxt "board6_0|"
+msgid "Russia"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:97
+msgctxt "board6_0|"
+msgid "Romania"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:104
+msgctxt "board6_0|"
+msgid "Poland"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:111
+msgctxt "board6_0|"
+msgid "Moldova"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:118
+msgctxt "board6_0|"
+msgid "Macedonia"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:125
+msgctxt "board6_0|"
+msgid "Lithuania"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:132
+msgctxt "board6_0|"
+msgid "Latvia"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:139
+msgctxt "board6_0|"
+msgid "Hungary"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:146
+msgctxt "board6_0|"
+msgid "Estonia"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:153
+msgctxt "board6_0|"
+msgid "Czech Republic"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:160
+msgctxt "board6_0|"
+msgid "Croatia"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:167
+msgctxt "board6_0|"
+msgid "Bulgaria"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:174
+msgctxt "board6_0|"
+msgid "Bosnia Herzegovina"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:181
+msgctxt "board6_0|"
+msgid "Belarus"
+msgstr ""
+
+#: activities/geography/resource/board/board6_0.qml:188
+msgctxt "board6_0|"
+msgid "Albania"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:25
+msgctxt "board7_0|"
+msgid "Northern Africa"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:34
+msgctxt "board7_0|"
+msgid "Western Sahara"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:41
+msgctxt "board7_0|"
+msgid "Uganda"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:48
+msgctxt "board7_0|"
+msgid "Tunisia"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:55
+msgctxt "board7_0|"
+msgid "Togo"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:62
+msgctxt "board7_0|"
+msgid "Sudan"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:69
+msgctxt "board7_0|"
+msgid "Somalia"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:76
+msgctxt "board7_0|"
+msgid "Sierra Leone"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:83
+msgctxt "board7_0|"
+msgid "Senegal"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:90
+msgctxt "board7_0|"
+msgid "Rwanda"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:97
+msgctxt "board7_0|"
+msgid "Niger"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:104
+msgctxt "board7_0|"
+msgid "Nigeria"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:111
+msgctxt "board7_0|"
+msgid "Morocco"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:118
+msgctxt "board7_0|"
+msgid "Mauritania"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:125
+msgctxt "board7_0|"
+msgid "Mali"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:132
+msgctxt "board7_0|"
+msgid "Libya"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:139
+msgctxt "board7_0|"
+msgid "Liberia"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:146
+msgctxt "board7_0|"
+msgid "Ivory Coast"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:153
+msgctxt "board7_0|"
+msgid "Guinea"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:160
+msgctxt "board7_0|"
+msgid "Guinea Bissau"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:167
+msgctxt "board7_0|"
+msgid "Ghana"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:174
+msgctxt "board7_0|"
+msgid "Gambia"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:181
+msgctxt "board7_0|"
+msgid "Gabon"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:188
+msgctxt "board7_0|"
+msgid "Eritrea"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:195
+msgctxt "board7_0|"
+msgid "Ethiopia"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:202
+msgctxt "board7_0|"
+msgid "Equatorial Guinea"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:209
+msgctxt "board7_0|"
+msgid "Egypt"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:216
+msgctxt "board7_0|"
+msgid "Djibouti"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:223
+msgctxt "board7_0|"
+msgid "Chad"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:230
+msgctxt "board7_0|"
+msgid "Central African Republic"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:237
+msgctxt "board7_0|"
+msgid "Cameroon"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:244
+msgctxt "board7_0|"
+msgid "Burkina Faso"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:251
+msgctxt "board7_0|"
+msgid "Benin"
+msgstr ""
+
+#: activities/geography/resource/board/board7_0.qml:258
+msgctxt "board7_0|"
+msgid "Algeria"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:25
+msgctxt "board8_0|"
+msgid "Southern Africa"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:34
+msgctxt "board8_0|"
+msgid "Zimbabwe"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:41
+msgctxt "board8_0|"
+msgid "Zambia"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:48
+msgctxt "board8_0|"
+msgid "Uganda"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:55
+msgctxt "board8_0|"
+msgid "Tanzania"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:62
+msgctxt "board8_0|"
+msgid "Swaziland"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:69
+msgctxt "board8_0|"
+msgid "South Africa"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:76
+msgctxt "board8_0|"
+msgid "Rwanda"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:83
+msgctxt "board8_0|"
+msgid "Republic of Congo"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:90
+msgctxt "board8_0|"
+msgid "Namibia"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:97
+msgctxt "board8_0|"
+msgid "Mozambique"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:104
+msgctxt "board8_0|"
+msgid "Malawi"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:111
+msgctxt "board8_0|"
+msgid "Madagascar"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:118
+msgctxt "board8_0|"
+msgid "Lesotho"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:125
+msgctxt "board8_0|"
+msgid "Kenya"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:132
+msgctxt "board8_0|"
+msgid "Gabon"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:139
+msgctxt "board8_0|"
+msgid "Equatorial Guinea"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:146
+msgctxt "board8_0|"
+msgid "Democratic Republic of Congo"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:153
+msgctxt "board8_0|"
+msgid "Burundi"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:160
+msgctxt "board8_0|"
+msgid "Botswana"
+msgstr ""
+
+#: activities/geography/resource/board/board8_0.qml:167
+msgctxt "board8_0|"
+msgid "Angola"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:25
+msgctxt "board9_0|"
+msgid "Africa"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:34
+msgctxt "board9_0|"
+msgid "Zimbabwe"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:41
+msgctxt "board9_0|"
+msgid "Zambia"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:48
+msgctxt "board9_0|"
+msgid "Tunisia"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:55
+msgctxt "board9_0|"
+msgid "Togo"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:62
+msgctxt "board9_0|"
+msgid "Chad"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:69
+msgctxt "board9_0|"
+msgid "Tanzania"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:76
+msgctxt "board9_0|"
+msgid "Sudan"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:83
+msgctxt "board9_0|"
+msgid "Somalia"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:90
+msgctxt "board9_0|"
+msgid "Senegal"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:97
+msgctxt "board9_0|"
+msgid "Democratic Republic of Congo"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:104
+msgctxt "board9_0|"
+msgid "Central African Republic"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:111
+msgctxt "board9_0|"
+msgid "Uganda"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:118
+msgctxt "board9_0|"
+msgid "Nigeria"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:125
+msgctxt "board9_0|"
+msgid "Niger"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:132
+msgctxt "board9_0|"
+msgid "Namibia"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:139
+msgctxt "board9_0|"
+msgid "Mozambique"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:146
+msgctxt "board9_0|"
+msgid "Mauritania"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:153
+msgctxt "board9_0|"
+msgid "Morocco"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:160
+msgctxt "board9_0|"
+msgid "Mali"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:167
+msgctxt "board9_0|"
+msgid "Malawi"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:174
+msgctxt "board9_0|"
+msgid "Madagascar"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:181
+msgctxt "board9_0|"
+msgid "Libya"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:188
+msgctxt "board9_0|"
+msgid "Liberia"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:195
+msgctxt "board9_0|"
+msgid "Kenya"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:202
+msgctxt "board9_0|"
+msgid "Guinea"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:209
+msgctxt "board9_0|"
+msgid "Ghana"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:216
+msgctxt "board9_0|"
+msgid "Gabon"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:223
+msgctxt "board9_0|"
+msgid "Ethiopia"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:230
+msgctxt "board9_0|"
+msgid "Eritrea"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:237
+msgctxt "board9_0|"
+msgid "Egypt"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:244
+msgctxt "board9_0|"
+msgid "Ivory Coast"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:251
+msgctxt "board9_0|"
+msgid "Republic of Congo"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:258
+msgctxt "board9_0|"
+msgid "Cameroon"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:265
+msgctxt "board9_0|"
+msgid "Burkina Faso"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:272
+msgctxt "board9_0|"
+msgid "Botswana"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:279
+msgctxt "board9_0|"
+msgid "Benin"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:286
+msgctxt "board9_0|"
+msgid "Angola"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:293
+msgctxt "board9_0|"
+msgid "Algeria"
+msgstr ""
+
+#: activities/geography/resource/board/board9_0.qml:300
+msgctxt "board9_0|"
+msgid "South Africa"
+msgstr ""
+
+#: activities/gletters/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Simple Letters"
+msgstr ""
+
+#: activities/gletters/ActivityInfo.qml:27
+#: activities/gletters/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Type the falling letters before they reach the ground"
+msgstr ""
+
+#: activities/gletters/ActivityInfo.qml:29
+#: activities/imageid/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Letter association between the screen and the keyboard"
+msgstr ""
+
+#: activities/gletters/Gletters.qml:146
+msgctxt "Gletters|"
+msgid "Select your locale"
+msgstr ""
+
+#: activities/gnumch-equality/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Gnumch Equality"
+msgstr ""
+
+#: activities/gnumch-equality/ActivityInfo.qml:27
+#: activities/gnumch-equality/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Guide the Number Muncher to the expressions that equal the number at the "
+"bottom of the screen."
+msgstr ""
+
+#: activities/gnumch-equality/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Practice addition, multiplication, division and subtraction."
+msgstr ""
+
+#: activities/gnumch-equality/ActivityInfo.qml:33
+#: activities/gnumch-factors/ActivityInfo.qml:34
+#: activities/gnumch-inequality/ActivityInfo.qml:32
+#: activities/gnumch-inequality/ActivityInfo.qml:34
+#: activities/gnumch-multiples/ActivityInfo.qml:34
+#: activities/gnumch-primes/ActivityInfo.qml:34
+msgctxt "ActivityInfo|"
+msgid ""
+"If you have a keyboard you can use the arrow keys to move and hit space to "
+"swallow a number. With a mouse you can click on the block next to your "
+"position to move and click again to swallow the number. With a touch screen "
+"you can do like with a mouse or swipe anywhere in the direction you want to "
+"move and tap to swallow the number."
+msgstr ""
+
+#: activities/gnumch-equality/ActivityInfo.qml:35
+#: activities/gnumch-factors/ActivityInfo.qml:36
+#: activities/gnumch-inequality/ActivityInfo.qml:36
+#: activities/gnumch-multiples/ActivityInfo.qml:36
+#: activities/gnumch-primes/ActivityInfo.qml:36
+msgctxt "ActivityInfo|"
+msgid "Take care to avoid the Troggles."
+msgstr ""
+
+#: activities/gnumch-equality/TopPanel.qml:50
+#, qt-format
+msgctxt "TopPanel|"
+msgid "Equal to %1"
+msgstr ""
+
+#: activities/gnumch-equality/TopPanel.qml:52
+#, qt-format
+msgctxt "TopPanel|"
+msgid "Not equal to %1"
+msgstr ""
+
+#: activities/gnumch-equality/TopPanel.qml:54
+#, qt-format
+msgctxt "TopPanel|"
+msgid "Factor of %1"
+msgstr ""
+
+#: activities/gnumch-equality/TopPanel.qml:56
+#, qt-format
+msgctxt "TopPanel|"
+msgid "Multiple of %1"
+msgstr ""
+
+#: activities/gnumch-equality/TopPanel.qml:58
+#, qt-format
+msgctxt "TopPanel|"
+msgid "Primes less than %1"
+msgstr ""
+
+#: activities/gnumch-equality/Warning.qml:47
+msgctxt "Warning|"
+msgid "You were eaten by a Troggle."
+msgstr ""
+
+#: activities/gnumch-equality/Warning.qml:51
+msgctxt "Warning|"
+msgid "You ate a wrong number."
+msgstr ""
+
+#: activities/gnumch-equality/Warning.qml:62
+msgctxt "Warning|"
+msgid "1 is not a prime number."
+msgstr ""
+
+#: activities/gnumch-equality/Warning.qml:72
+#, qt-format
+msgctxt "Warning|"
+msgid "%1 is divisible by %2"
+msgstr ""
+
+#: activities/gnumch-equality/Warning.qml:80
+msgctxt "Warning|"
+msgid "and"
+msgstr ""
+
+#: activities/gnumch-equality/Warning.qml:86
+#, qt-format
+msgctxt "Warning|"
+msgid "Multiples of %1 include %2, "
+msgstr ""
+
+#: activities/gnumch-equality/Warning.qml:87
+#, qt-format
+msgctxt "Warning|"
+msgid "but %1 is not a multiple of %2."
+msgstr ""
+
+#: activities/gnumch-equality/Warning.qml:104
+#, qt-format
+msgctxt "Warning|"
+msgid "and %1 are the divisors of %2."
+msgstr ""
+
+#: activities/gnumch-equality/Warning.qml:133
+msgctxt "Warning|"
+msgid "Press \"Return\" or click on me to continue."
+msgstr ""
+
+#: activities/gnumch-equality/WarnMonster.qml:41
+msgctxt "WarnMonster|"
+msgid "Be careful, a troggle !"
+msgstr ""
+
+#: activities/gnumch-factors/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Gnumch Factors"
+msgstr ""
+
+#: activities/gnumch-factors/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid ""
+"Guide the Number Muncher to all the factors of the number at the top of the "
+"screen."
+msgstr ""
+
+#: activities/gnumch-factors/ActivityInfo.qml:30
+#: activities/gnumch-multiples/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Learn about multiples and factors."
+msgstr ""
+
+#: activities/gnumch-factors/ActivityInfo.qml:32
+msgctxt "ActivityInfo|"
+msgid ""
+"The factors of a number are all the numbers that divide that number evenly. "
+"For example, the factors of 6 are 1, 2, 3 and 6. 4 is not a factor of 6 "
+"because 6 cannot be divided into 4 equal pieces. If one number is a multiple "
+"of a second number, then the second number is a factor of the first number. "
+"You can think of multiples as families, and factors are the people in those "
+"families. So 1, 2, 3 and 6 all fit into the 6 family, but 4 belongs to "
+"another family."
+msgstr ""
+
+#: activities/gnumch-inequality/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Gnumch Inequality"
+msgstr ""
+
+#: activities/gnumch-inequality/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid ""
+"Guide the Number Muncher to the all the expressions that do not equal the "
+"number at the top of the screen."
+msgstr ""
+
+#: activities/gnumch-inequality/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Practice addition, subtraction, multiplication and division."
+msgstr ""
+
+#: activities/gnumch-multiples/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Gnumch Multiples"
+msgstr ""
+
+#: activities/gnumch-multiples/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid ""
+"Guide the Number Muncher to all the multiples of the number at the top of "
+"the screen."
+msgstr ""
+
+#: activities/gnumch-multiples/ActivityInfo.qml:32
+msgctxt "ActivityInfo|"
+msgid ""
+"The multiples of a number are all the numbers that are equal to the original "
+"number times another number. For example, 24, 36, 48 and 60 are all "
+"multiples of 12. 25 is not a multiple of 12 because there isn't any number "
+"that can be multiplied by 12 to get 25. If one number is a factor of a "
+"second number, then the second number is a multiple of the first number. "
+"Again, you can think of multiples as families, and factors are the people "
+"who belong to those families. The factor 5, has parents 10, grandparents 15, "
+"great-grandparents 20, great-great-grandparents 25, and every extra step of "
+"5 is another great- in front! But the number 5 does not belong in the 8 or "
+"23 families. You can't fit any number of 5s into 8 or 23 with nothing left "
+"over. So 8 isn't a multiple of 5, nor is 23. Only 5, 10, 15, 20, 25 ... are "
+"multiples (or families or steps) of 5."
+msgstr ""
+
+#: activities/gnumch-primes/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Gnumch Primes"
+msgstr ""
+
+#: activities/gnumch-primes/ActivityInfo.qml:28
+msgctxt "ActivityInfo|"
+msgid "Guide the Number Muncher to all the prime numbers."
+msgstr ""
+
+#: activities/gnumch-primes/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Learn about prime numbers."
+msgstr ""
+
+#: activities/gnumch-primes/ActivityInfo.qml:32
+msgctxt "ActivityInfo|"
+msgid ""
+"Prime numbers are numbers that are only divisible by themselves and 1. For "
+"example, 3 is a prime number, but 4 isn't (because 4 is divisible by 2). You "
+"can think of prime numbers as very small families: they only ever have two "
+"people in them! Only themselves and 1. You can't fit any other numbers into "
+"them with nothing left over. 5 is one of these lonely numbers (only 5 × 1 = "
+"5), but you can see that 6 has 2 and 3 in its family as well (6 × 1 = 6, 2 "
+"×3 = 6). So 6 is not a prime number."
+msgstr ""
+
+#: activities/guessnumber/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Guess a number"
+msgstr ""
+
+#: activities/guessnumber/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Help Tux escape the cave. Tux hides a number for you to find."
+msgstr ""
+
+#: activities/guessnumber/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Numbers from 1 to 1000 for the last level."
+msgstr ""
+
+#: activities/guessnumber/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Read the instructions that give you the range of the number to find. Enter a "
+"number in the top right entry box. You will be told if your number is higher "
+"or lower. Then enter another number. The distance between Tux and the escape "
+"area on the right represents how far you are from the correct number. If Tux "
+"is over or under the escape area, it means your number is over or under the "
+"correct number."
+msgstr ""
+
+#: activities/guessnumber/guessnumber.js:65
+#, qt-format
+msgctxt "guessnumber|"
+msgid "Guess a number between 1 and %1"
+msgstr ""
+
+#: activities/guessnumber/guessnumber.js:90
+#: activities/guessnumber/guessnumber.js:94
+msgctxt "guessnumber|"
+msgid "Number too high"
+msgstr ""
+
+#: activities/guessnumber/guessnumber.js:97
+msgctxt "guessnumber|"
+msgid "Number too low"
+msgstr ""
+
+#: activities/guessnumber/guessnumber.js:101
+msgctxt "guessnumber|"
+msgid "Number found!"
+msgstr ""
+
+#: activities/hanoi/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Simplified Tower of Hanoi"
+msgstr ""
+
+#: activities/hanoi/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Reproduce the given tower"
+msgstr ""
+
+#: activities/hanoi/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Reproduce the tower on the right in the empty space on the left"
+msgstr ""
+
+#: activities/hanoi/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Drag and Drop one top piece at a time, from one peg to another, to reproduce "
+"the tower on the right in the empty space on the left."
+msgstr ""
+
+#: activities/hanoi/ActivityInfo.qml:32
+msgctxt "ActivityInfo|"
+msgid "Concept taken from EPI games."
+msgstr ""
+
+#: activities/hanoi_real/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "The Tower of Hanoi"
+msgstr ""
+
+#: activities/hanoi_real/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Reproduce the tower on the right side"
+msgstr ""
+
+#: activities/hanoi_real/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid ""
+"The object of the game is to move the entire stack to another peg, obeying "
+"the following rules:\n"
+"    only one disc may be moved at a time\n"
+"    no disc may be placed atop a smaller disc\n"
+msgstr ""
+
+#: activities/hanoi_real/ActivityInfo.qml:34
+msgctxt "ActivityInfo|"
+msgid ""
+"Drag and drop the top pieces only from one peg to another, to reproduce the "
+"initial left side tower on the right peg."
+msgstr ""
+
+#: activities/hanoi_real/ActivityInfo.qml:35
+msgctxt "ActivityInfo|"
+msgid ""
+"The puzzle was invented by the French mathematician Edouard Lucas in 1883. "
+"There is a legend about a Hindu temple whose priests were constantly engaged "
+"in moving a set of 64 discs according to the rules of the Tower of Hanoi "
+"puzzle. According to the legend, the world would end when the priests "
+"finished their work. The puzzle is therefore also known as the Tower of "
+"Brahma puzzle. It is not clear whether Lucas invented this legend or was "
+"inspired by it. (source Wikipedia <http://en.wikipedia.org/wiki/"
+"Tower_of_hanoi>)"
+msgstr ""
+
+#: activities/hanoi_real/HanoiReal.qml:83
+msgctxt "HanoiReal|"
+msgid "Move the entire stack to the right peg, one disc at a time."
+msgstr ""
+
+#: activities/hanoi_real/HanoiReal.qml:84
+msgctxt "HanoiReal|"
+msgid ""
+"Build the same tower in the empty area as the one you see on the right-hand "
+"side"
+msgstr ""
+
+#: activities/hexagon/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Hexagon"
+msgstr ""
+
+#: activities/hexagon/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Find the strawberry by clicking on the blue fields"
+msgstr ""
+
+#: activities/hexagon/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Logic-training activity"
+msgstr ""
+
+#: activities/hexagon/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Try to find the strawberry under the blue fields. The fields become redder "
+"as you get closer."
+msgstr ""
+
+#: activities/imageid/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Reading practice"
+msgstr ""
+
+#: activities/imageid/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Practice reading by finding the word matching an image"
+msgstr ""
+
+#: activities/imageid/ActivityInfo.qml:30
+#: activities/imagename/ActivityInfo.qml:32
+#: activities/memory-wordnumber/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Reading"
+msgstr ""
+
+#: activities/imageid/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Click on the word corresponding to the printed image."
+msgstr ""
+
+#: activities/imageid/Imageid.qml:306
+msgctxt "Imageid|"
+msgid "We are sorry, we don't have yet a translation for your language."
+msgstr ""
+
+#: activities/imageid/Imageid.qml:307
+#, qt-format
+msgctxt "Imageid|"
+msgid ""
+"GCompris is developed by the KDE community, you can translate GCompris by "
+"joining a translation team on <a href=\"%2\">%2</a>"
+msgstr ""
+
+#: activities/imageid/Imageid.qml:309
+msgctxt "Imageid|"
+msgid ""
+"We switched to English for this activity but you can select another language "
+"in the configuration dialog."
+msgstr ""
+
+#: activities/imageid/Imageid.qml:322
+msgctxt "Imageid|"
+msgid "The images for this activity are not yet installed."
+msgstr ""
+
+#: activities/imageid/Imageid.qml:323
+msgctxt "Imageid|"
+msgid "Download the images"
+msgstr ""
+
+#: activities/imageid/Imageid.qml:323
+msgctxt "Imageid|"
+msgid "OK"
+msgstr ""
+
+#: activities/imagename/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Image Name"
+msgstr ""
+
+#: activities/imagename/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Drag and Drop each item above its name"
+msgstr ""
+
+#: activities/imagename/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Vocabulary and reading"
+msgstr ""
+
+#: activities/imagename/ActivityInfo.qml:33
+msgctxt "ActivityInfo|"
+msgid ""
+"Drag each image from the (vertical) box on the left to its (corresponding) "
+"name on the right. Click the OK button to check your answer."
+msgstr ""
+
+#: activities/imagename/resource/board/board1_0.qml:25
+msgctxt "board1_0|"
+msgid "Drag and Drop each item onto its name"
+msgstr ""
+
+#: activities/imagename/resource/board/board1_0.qml:71
+msgctxt "board1_0|"
+msgid "mail box"
+msgstr ""
+
+#: activities/imagename/resource/board/board1_0.qml:78
+msgctxt "board1_0|"
+msgid "sailing boat"
+msgstr ""
+
+#: activities/imagename/resource/board/board1_0.qml:85
+msgctxt "board1_0|"
+msgid "lamp"
+msgstr ""
+
+#: activities/imagename/resource/board/board1_0.qml:92
+msgctxt "board1_0|"
+msgid "postcard"
+msgstr ""
+
+#: activities/imagename/resource/board/board1_0.qml:99
+msgctxt "board1_0|"
+msgid "fishing boat"
+msgstr ""
+
+#: activities/imagename/resource/board/board1_0.qml:106
+msgctxt "board1_0|"
+msgid "bulb"
+msgstr ""
+
+#: activities/imagename/resource/board/board2_0.qml:70
+msgctxt "board2_0|"
+msgid "bottle"
+msgstr ""
+
+#: activities/imagename/resource/board/board2_0.qml:77
+msgctxt "board2_0|"
+msgid "glass"
+msgstr ""
+
+#: activities/imagename/resource/board/board2_0.qml:84
+msgctxt "board2_0|"
+msgid "egg"
+msgstr ""
+
+#: activities/imagename/resource/board/board2_0.qml:91
+msgctxt "board2_0|"
+msgid "eggcup"
+msgstr ""
+
+#: activities/imagename/resource/board/board2_0.qml:98
+msgctxt "board2_0|"
+msgid "flower"
+msgstr ""
+
+#: activities/imagename/resource/board/board2_0.qml:105
+msgctxt "board2_0|"
+msgid "vase"
+msgstr ""
+
+#: activities/imagename/resource/board/board3_0.qml:70
+msgctxt "board3_0|"
+msgid "rocket"
+msgstr ""
+
+#: activities/imagename/resource/board/board3_0.qml:77
+msgctxt "board3_0|"
+msgid "star"
+msgstr ""
+
+#: activities/imagename/resource/board/board3_0.qml:84
+msgctxt "board3_0|"
+msgid "sofa"
+msgstr ""
+
+#: activities/imagename/resource/board/board3_0.qml:91
+msgctxt "board3_0|"
+msgid "house"
+msgstr ""
+
+#: activities/imagename/resource/board/board3_0.qml:98
+msgctxt "board3_0|"
+msgid "light house"
+msgstr ""
+
+#: activities/imagename/resource/board/board3_0.qml:105
+msgctxt "board3_0|"
+msgid "sailing boat"
+msgstr ""
+
+#: activities/imagename/resource/board/board4_0.qml:70
+msgctxt "board4_0|"
+msgid "apple"
+msgstr ""
+
+#: activities/imagename/resource/board/board4_0.qml:77
+msgctxt "board4_0|"
+msgid "tree"
+msgstr ""
+
+#: activities/imagename/resource/board/board4_0.qml:84
+msgctxt "board4_0|"
+msgid "bicycle"
+msgstr ""
+
+#: activities/imagename/resource/board/board4_0.qml:91
+msgctxt "board4_0|"
+msgid "car"
+msgstr ""
+
+#: activities/imagename/resource/board/board4_0.qml:98
+msgctxt "board4_0|"
+msgid "carrot"
+msgstr ""
+
+#: activities/imagename/resource/board/board4_0.qml:105
+msgctxt "board4_0|"
+msgid "grater"
+msgstr ""
+
+#: activities/imagename/resource/board/board5_0.qml:70
+msgctxt "board5_0|"
+msgid "pencil"
+msgstr ""
+
+#: activities/imagename/resource/board/board5_0.qml:77
+msgctxt "board5_0|"
+msgid "postcard"
+msgstr ""
+
+#: activities/imagename/resource/board/board5_0.qml:84
+msgctxt "board5_0|"
+msgid "tree"
+msgstr ""
+
+#: activities/imagename/resource/board/board5_0.qml:91
+msgctxt "board5_0|"
+msgid "star"
+msgstr ""
+
+#: activities/imagename/resource/board/board5_0.qml:98
+msgctxt "board5_0|"
+msgid "truck"
+msgstr ""
+
+#: activities/imagename/resource/board/board5_0.qml:105
+msgctxt "board5_0|"
+msgid "van"
+msgstr ""
+
+#: activities/imagename/resource/board/board6_0.qml:70
+msgctxt "board6_0|"
+msgid "castle"
+msgstr ""
+
+#: activities/imagename/resource/board/board6_0.qml:77
+msgctxt "board6_0|"
+msgid "crown"
+msgstr ""
+
+#: activities/imagename/resource/board/board6_0.qml:84
+msgctxt "board6_0|"
+msgid "sailing boat"
+msgstr ""
+
+#: activities/imagename/resource/board/board6_0.qml:91
+msgctxt "board6_0|"
+msgid "flag"
+msgstr ""
+
+#: activities/imagename/resource/board/board6_0.qml:98
+msgctxt "board6_0|"
+msgid "racket"
+msgstr ""
+
+#: activities/imagename/resource/board/board6_0.qml:105
+msgctxt "board6_0|"
+msgid "ball"
+msgstr ""
+
+#: activities/imagename/resource/board/board7_0.qml:70
+msgctxt "board7_0|"
+msgid "tree"
+msgstr ""
+
+#: activities/imagename/resource/board/board7_0.qml:77
+msgctxt "board7_0|"
+msgid "mail box"
+msgstr ""
+
+#: activities/imagename/resource/board/board7_0.qml:84
+msgctxt "board7_0|"
+msgid "sailing boat"
+msgstr ""
+
+#: activities/imagename/resource/board/board7_0.qml:91
+msgctxt "board7_0|"
+msgid "bulb"
+msgstr ""
+
+#: activities/imagename/resource/board/board7_0.qml:98
+msgctxt "board7_0|"
+msgid "bottle"
+msgstr ""
+
+#: activities/imagename/resource/board/board7_0.qml:105
+msgctxt "board7_0|"
+msgid "flower"
+msgstr ""
+
+#: activities/instruments/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Music instruments"
+msgstr ""
+
+#: activities/instruments/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Click on the correct musical instruments"
+msgstr ""
+
+#: activities/instruments/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Learn to recognize musical instruments."
+msgstr ""
+
+#: activities/instruments/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Click on the correct instrument."
+msgstr ""
+
+#: activities/instruments/instruments.js:24
+#: activities/instruments/instruments.js:73
+msgctxt "instruments|"
+msgid "Find the clarinet"
+msgstr ""
+
+#: activities/instruments/instruments.js:29
+msgctxt "instruments|"
+msgid "Find the transverse flute"
+msgstr ""
+
+#: activities/instruments/instruments.js:34
+#: activities/instruments/instruments.js:83
+#: activities/instruments/instruments.js:125
+msgctxt "instruments|"
+msgid "Find the guitar"
+msgstr ""
+
+#: activities/instruments/instruments.js:39
+#: activities/instruments/instruments.js:88
+#: activities/instruments/instruments.js:130
+msgctxt "instruments|"
+msgid "Find the harp"
+msgstr ""
+
+#: activities/instruments/instruments.js:46
+#: activities/instruments/instruments.js:93
+#: activities/instruments/instruments.js:135
+msgctxt "instruments|"
+msgid "Find the piano"
+msgstr ""
+
+#: activities/instruments/instruments.js:51
+#: activities/instruments/instruments.js:98
+#: activities/instruments/instruments.js:140
+msgctxt "instruments|"
+msgid "Find the saxophone"
+msgstr ""
+
+#: activities/instruments/instruments.js:56
+#: activities/instruments/instruments.js:103
+#: activities/instruments/instruments.js:145
+msgctxt "instruments|"
+msgid "Find the trombone"
+msgstr ""
+
+#: activities/instruments/instruments.js:61
+#: activities/instruments/instruments.js:108
+#: activities/instruments/instruments.js:150
+msgctxt "instruments|"
+msgid "Find the trumpet"
+msgstr ""
+
+#: activities/instruments/instruments.js:66
+#: activities/instruments/instruments.js:115
+msgctxt "instruments|"
+msgid "Find the violin"
+msgstr ""
+
+#: activities/instruments/instruments.js:78
+#: activities/instruments/instruments.js:120
+msgctxt "instruments|"
+msgid "Find the flute traversiere"
+msgstr ""
+
+#: activities/instruments/instruments.js:157
+#: activities/instruments/instruments.js:189
+msgctxt "instruments|"
+msgid "Find the drum kit"
+msgstr ""
+
+#: activities/instruments/instruments.js:162
+#: activities/instruments/instruments.js:194
+msgctxt "instruments|"
+msgid "Find the accordion"
+msgstr ""
+
+#: activities/instruments/instruments.js:167
+#: activities/instruments/instruments.js:199
+msgctxt "instruments|"
+msgid "Find the banjo"
+msgstr ""
+
+#: activities/instruments/instruments.js:172
+#: activities/instruments/instruments.js:217
+msgctxt "instruments|"
+msgid "Find the bongo"
+msgstr ""
+
+#: activities/instruments/instruments.js:177
+#: activities/instruments/instruments.js:222
+msgctxt "instruments|"
+msgid "Find the electric guitar"
+msgstr ""
+
+#: activities/instruments/instruments.js:182
+msgctxt "instruments|"
+msgid "Find the castanets"
+msgstr ""
+
+#: activities/instruments/instruments.js:204
+msgctxt "instruments|"
+msgid "Find the cymbal"
+msgstr ""
+
+#: activities/instruments/instruments.js:209
+msgctxt "instruments|"
+msgid "Find the cello"
+msgstr ""
+
+#: activities/instruments/instruments.js:227
+msgctxt "instruments|"
+msgid "Find the harmonica"
+msgstr ""
+
+#: activities/instruments/instruments.js:232
+#: activities/instruments/instruments.js:265
+msgctxt "instruments|"
+msgid "Find the horn"
+msgstr ""
+
+#: activities/instruments/instruments.js:237
+#: activities/instruments/instruments.js:270
+msgctxt "instruments|"
+msgid "Find the maracas"
+msgstr ""
+
+#: activities/instruments/instruments.js:242
+#: activities/instruments/instruments.js:275
+msgctxt "instruments|"
+msgid "Find the organ"
+msgstr ""
+
+#: activities/instruments/instruments.js:250
+#: activities/instruments/instruments.js:283
+msgctxt "instruments|"
+msgid "Find the snare drum"
+msgstr ""
+
+#: activities/instruments/instruments.js:255
+#: activities/instruments/instruments.js:288
+msgctxt "instruments|"
+msgid "Find the timpani"
+msgstr ""
+
+#: activities/instruments/instruments.js:260
+#: activities/instruments/instruments.js:293
+msgctxt "instruments|"
+msgid "Find the triangle"
+msgstr ""
+
+#: activities/instruments/instruments.js:298
+msgctxt "instruments|"
+msgid "Find the tambourine"
+msgstr ""
+
+#: activities/instruments/instruments.js:303
+msgctxt "instruments|"
+msgid "Find the tuba"
+msgstr ""
+
+#: activities/intro_gravity/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Introduction to the concept of gravity"
+msgstr ""
+
+#: activities/intro_gravity/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid ""
+"Maintain the spaceship in the middle without crashing into the planets or "
+"the asteroids"
+msgstr ""
+
+#: activities/intro_gravity/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Follow the instructions when you run the activity."
+msgstr ""
+
+#: activities/intro_gravity/Message.qml:39
+msgctxt "Message|"
+msgid ""
+"Gravity is universal and Newton's law of universal gravitation extends "
+"gravity beyond earth. This force of gravitational attraction is directly "
+"dependent upon the masses of both objects and inversely proportional to the "
+"square of the distance that separates their centers."
+msgstr ""
+
+#: activities/intro_gravity/Message.qml:43
+msgctxt "Message|"
+msgid ""
+"Since the gravitational force is directly proportional to the mass of both "
+"interacting objects, more massive objects will attract each other with a "
+"greater gravitational force. So as the mass of either object increases, the "
+"force of gravitational attraction between them also increases"
+msgstr ""
+
+#: activities/intro_gravity/Message.qml:47
+msgctxt "Message|"
+msgid ""
+"But this force is inversely proportional to the square of the separation "
+"distance between the two interacting objects, more separation distance will "
+"result in weaker gravitational forces."
+msgstr ""
+
+#: activities/intro_gravity/Message.qml:50
+msgctxt "Message|"
+msgid ""
+"Your goal is to let Tux's spaceship move by changing the mass of its "
+"surrounding planets. Don't get too close to the planets or you will crash on "
+"them. The arrow indicates the direction of the force on your ship."
+msgstr ""
+
+#: activities/intro_gravity/Message.qml:54
+msgctxt "Message|"
+msgid "Avoid the asteroid and join the space shuttle to win."
+msgstr ""
+
+#: activities/intro_gravity/Message.qml:108
+msgctxt "Message|"
+msgid "Next"
+msgstr ""
+
+#: activities/intro_gravity/Message.qml:108
+msgctxt "Message|"
+msgid "Let's Go"
+msgstr ""
+
+#: activities/intro_gravity/Message.qml:141
+msgctxt "Message|"
+msgid "Skip Instruction"
+msgstr ""
+
+#: activities/leftright/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Find your left and right hands"
+msgstr ""
+
+#: activities/leftright/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Determine if a hand is a right or a left hand"
+msgstr ""
+
+#: activities/leftright/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid ""
+"Distinguish right and left hands from different points of view. Spatial "
+"representation"
+msgstr ""
+
+#: activities/leftright/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"You can see a hand: is it a left hand or a right hand? Click on the left "
+"button, or the right button depending on the displayed hand."
+msgstr ""
+
+#: activities/leftright/Leftright.qml:146
+msgctxt "Leftright|"
+msgid "Left hand"
+msgstr ""
+
+#: activities/leftright/Leftright.qml:159
+msgctxt "Leftright|"
+msgid "Right hand"
+msgstr ""
+
+#: activities/lightsoff/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Lights Off"
+msgstr ""
+
+#: activities/lightsoff/ActivityInfo.qml:27
+#: activities/lightsoff/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "The aim is to switch off all the lights."
+msgstr ""
+
+#: activities/lightsoff/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"The effect of pressing a button is to toggle the state of that button, and "
+"of its immediate vertical and horizontal neighbors. The sun and the color of "
+"the sky depend on the number of clicks needed to solve the puzzle. If you "
+"click on Tux, the solution is shown."
+msgstr ""
+
+#: activities/lightsoff/ActivityInfo.qml:32
+msgctxt "ActivityInfo|"
+msgid ""
+"The solver algorithm is described on Wikipedia. To know more about the "
+"Lights Off game: &lt;http://en.wikipedia.org/wiki/Lights_Out_(game)&gt;"
+msgstr ""
+
+#: activities/louis-braille/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "The History of Louis Braille"
+msgstr ""
+
+#: activities/louis-braille/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Review the major dates of the inventor of the Braille System"
+msgstr ""
+
+#: activities/louis-braille/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Read the history of Louis Braille, his biography and discovery of the "
+"Braille system.\n"
+"Click on the previous and next buttons to move to the respective story page. "
+"At the end, arrange the sequence in the chronological order."
+msgstr ""
+
+#: activities/louis-braille/ActivityInfo.qml:33
+msgctxt "ActivityInfo|"
+msgid ""
+"Louis Braille Video: <a href='http://www.youtube.com/watch?"
+"v=9bdfC2j_4x4'>http://www.youtube.com/watch?v=9bdfC2j_4x4</a>"
+msgstr ""
+
+#: activities/louis-braille/louis_braille_data.js:23
+msgctxt "louis_braille_data|"
+msgid "Born on January 4th 1809 in Coupvary near Paris in France."
+msgstr ""
+
+#: activities/louis-braille/louis_braille_data.js:28
+msgctxt "louis_braille_data|"
+msgid ""
+"Louis Braille injured his right eye with a stitching awl from his father's "
+"workshop."
+msgstr ""
+
+#: activities/louis-braille/louis_braille_data.js:33
+msgctxt "louis_braille_data|"
+msgid ""
+"At the age of three, Louis became blind due to a severe infection that "
+"spread to his left eye."
+msgstr ""
+
+#: activities/louis-braille/louis_braille_data.js:38
+msgctxt "louis_braille_data|"
+msgid ""
+"At the age of 10, he was sent to Paris to study at the Royal Institute for "
+"Blind Youth."
+msgstr ""
+
+#: activities/louis-braille/louis_braille_data.js:43
+msgctxt "louis_braille_data|"
+msgid "He impressed his classmates and began to play the piano and the organ."
+msgstr ""
+
+#: activities/louis-braille/louis_braille_data.js:48
+msgctxt "louis_braille_data|"
+msgid ""
+"Charles Barbier, a French soldier, visited his school and shared his "
+"invention of night writing, a code of 12 raised dots to share information on "
+"battlefields."
+msgstr ""
+
+#: activities/louis-braille/louis_braille_data.js:53
+msgctxt "louis_braille_data|"
+msgid "Louis trimmed Barbier's 12 dots into 6 and invented the Braille system."
+msgstr ""
+
+#: activities/louis-braille/louis_braille_data.js:58
+msgctxt "louis_braille_data|"
+msgid ""
+"He became a teacher after graduating and promoted his method while secretly "
+"teaching it at the Institute."
+msgstr ""
+
+#: activities/louis-braille/louis_braille_data.js:63
+msgctxt "louis_braille_data|"
+msgid ""
+"He revised and extended braille to include mathematics, symbols, "
+"punctuations and music notations."
+msgstr ""
+
+#: activities/louis-braille/louis_braille_data.js:68
+msgctxt "louis_braille_data|"
+msgid ""
+"He died of tuberculosis. He is buried in the Pantheon in Paris. A monument "
+"is erected to honor him."
+msgstr ""
+
+#: activities/louis-braille/louis_braille_data.js:73
+msgctxt "louis_braille_data|"
+msgid ""
+"Braille got accepted as a world wide standard. Louis Braille proved that if "
+"you have motivation you can do incredible things."
+msgstr ""
+
+#: activities/louis-braille/ReorderList.qml:167
+msgctxt "ReorderList|"
+msgid ""
+"Arrange the events in the order in which they happened. Select the line to "
+"move, then touch its target position."
+msgstr ""
+
+#: activities/magic-hat-minus/ActivityInfo.qml:26
+#: activities/magic-hat-plus/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "The magician hat"
+msgstr ""
+
+#: activities/magic-hat-minus/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Count how many items are under the magic hat after some have got away"
+msgstr ""
+
+#: activities/magic-hat-minus/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Learn subtraction"
+msgstr ""
+
+#: activities/magic-hat-minus/ActivityInfo.qml:30
+#: activities/memory-math-minus/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Subtraction"
+msgstr ""
+
+#: activities/magic-hat-minus/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Look at the magician, he tells the number of stars that are under his magic "
+"hat. Then, click on the hat to open it. A few stars escape. Click again on "
+"the hat to close it. You have to count how many are still under the hat. "
+"Click on the bottom area to answer."
+msgstr ""
+
+#. The math operation
+#: activities/magic-hat-minus/MagicHat.qml:84
+msgctxt "MagicHat|"
+msgid "-"
+msgstr ""
+
+#: activities/magic-hat-minus/MagicHat.qml:84
+msgctxt "MagicHat|"
+msgid "+"
+msgstr ""
+
+#: activities/magic-hat-plus/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Count how many items are under the magic hat"
+msgstr ""
+
+#: activities/magic-hat-plus/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Learn addition"
+msgstr ""
+
+#: activities/magic-hat-plus/ActivityInfo.qml:30
+#: activities/memory-math-add-tux/ActivityInfo.qml:30
+#: activities/memory-math-add/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Addition"
+msgstr ""
+
+#: activities/magic-hat-plus/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Click on the hat to open or close it. Under the hat, how many stars can you "
+"see moving around? Count carefully. Click in the bottom-right area to input "
+"your answer."
+msgstr ""
+
+#: activities/maze/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Maze"
+msgstr ""
+
+#: activities/maze/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Help Tux get out of this maze"
+msgstr ""
+
+#: activities/maze/ActivityInfo.qml:31
+#: activities/mazerelative/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Use the arrow keys or swipe the touch screen to move Tux up to the door."
+msgstr ""
+
+#: activities/maze/ActivityInfo.qml:32
+#: activities/mazeinvisible/ActivityInfo.qml:32
+#: activities/mazerelative/ActivityInfo.qml:33
+msgctxt "ActivityInfo|"
+msgid ""
+"At the first levels, Tux walks comfortably, one step on each move request, "
+"through the maze."
+msgstr ""
+
+#: activities/maze/ActivityInfo.qml:33
+#: activities/mazeinvisible/ActivityInfo.qml:33
+#: activities/mazerelative/ActivityInfo.qml:34
+msgctxt "ActivityInfo|"
+msgid ""
+"For larger mazes, there is a special walking mode, called \"run-fast-mode\". "
+"If this run-fast-mode is enabled, Tux will run all the way automatically "
+"until he reaches a fork and you have to decide which way to go further."
+msgstr ""
+
+#: activities/maze/ActivityInfo.qml:34
+#: activities/mazeinvisible/ActivityInfo.qml:34
+#: activities/mazerelative/ActivityInfo.qml:35
+msgctxt "ActivityInfo|"
+msgid ""
+"You can see whether this mode is enabled or not, by looking at Tux's feet: "
+"If Tux is barefooted, \"run-fast-mode\" is disabled. And if he wears red "
+"sport shoes, \"run-fast-mode\" is enabled."
+msgstr ""
+
+#: activities/maze/ActivityInfo.qml:35
+#: activities/mazeinvisible/ActivityInfo.qml:35
+#: activities/mazerelative/ActivityInfo.qml:36
+msgctxt "ActivityInfo|"
+msgid ""
+"At higher levels, run-fast-mode will be enabled automatically. If you want "
+"to use this feature in earlier levels or want to disable it in advanced "
+"levels, click on the \"barefoot / sportshoe\"-icon in the upper left corner "
+"of the screen to toggle the run-fast-mode.\n"
+"\t"
+msgstr ""
+
+#: activities/maze/Maze.qml:325
+msgctxt "Maze|"
+msgid ""
+"Look at your position, then switch back to invisible mode to continue your "
+"moves"
+msgstr ""
+
+#: activities/mazeinvisible/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Invisible Maze"
+msgstr ""
+
+#: activities/mazeinvisible/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Guide Tux out of the invisible maze"
+msgstr ""
+
+#: activities/mazeinvisible/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Use the arrow keys or swipe the touch screen to move Tux up to the door. Use "
+"the maze icon or the spacebar to switch between invisible and visible modes. "
+"Visible mode just gives you an indication of your position, like a map. You "
+"cannot move Tux in visible mode."
+msgstr ""
+
+#: activities/mazerelative/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Relative Maze"
+msgstr ""
+
+#: activities/mazerelative/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Help Tux get out of this maze (Move is relative)"
+msgstr ""
+
+#: activities/mazerelative/ActivityInfo.qml:32
+msgctxt "ActivityInfo|"
+msgid ""
+"In this maze, the move is relative (first person). Left and right are used "
+"to turn and up to go forward."
+msgstr ""
+
+#: activities/memory-enumerate/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Enumeration memory game"
+msgstr ""
+
+#: activities/memory-enumerate/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Turn the cards over to match the number with the drawn picture."
+msgstr ""
+
+#: activities/memory-enumerate/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Numeration training, memory."
+msgstr ""
+
+#: activities/memory-enumerate/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"You can see some cards, but you can't see what's on the other side of them. "
+"Each card is hiding a number of pictures, or the written number."
+msgstr ""
+
+#: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "All operations memory game against Tux"
+msgstr ""
+
+#: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:27
+#: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:27
+#: activities/memory-math-div-tux/ActivityInfo.qml:27
+#: activities/memory-math-div/ActivityInfo.qml:27
+#: activities/memory-math-mult-div-tux/ActivityInfo.qml:27
+#: activities/memory-math-mult-div/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"Turn the cards over to find a matching operation, until all the cards are "
+"gone."
+msgstr ""
+
+#: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:29
+#: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid ""
+"Practice addition, subtraction, multiplication, division, until all the "
+"cards are gone."
+msgstr ""
+
+#: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:30
+#: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Addition, subtraction, multiplication, division"
+msgstr ""
+
+#: activities/memory-math-add-minus-mult-div-tux/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"You can see some cards, but you can't see what's on the other side of them. "
+"Each card is hiding an operation, or the answer to it.\n"
+"\n"
+"In this game, these cards are hiding the two parts of an operation. You need "
+"to find the two parts of the operation, and bring them together again. Click "
+"on a card to see what number it's hiding, then try to find the other card "
+"that goes with it, to make a whole operation. You can only turn over two "
+"cards in one go, so you need to remember where the numbers are hiding, then "
+"you can match them when you find their other half. You're doing the job of "
+"the equals sign, and the numbers need you to put them together and make a "
+"proper equality. When you do that, both those cards disappear! When you've "
+"made them all disappear, found more than Tux, you've won the game!"
+msgstr ""
+
+#: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "All operations memory game"
+msgstr ""
+
+#: activities/memory-math-add-minus-mult-div/ActivityInfo.qml:31
+#: activities/memory-math-add-minus/ActivityInfo.qml:31
+#: activities/memory-math-div/ActivityInfo.qml:31
+#: activities/memory-math-minus/ActivityInfo.qml:31
+#: activities/memory-math-mult-div/ActivityInfo.qml:31
+#: activities/memory-math-mult/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"You can see some cards, but you can't see what's on the other side of them. "
+"Each card is hiding an operation, or the answer to it.\n"
+"\n"
+"In this game, these cards are hiding the two parts of an operation. You need "
+"to find the two parts of the operation, and bring them together again. Click "
+"on a card to see what number it's hiding, then try to find the other card "
+"that goes with it, to make a whole operation. You can only turn over two "
+"cards in one go, so you need to remember where the numbers are hiding, then "
+"you can match them when you find their other half. You're doing the job of "
+"the equals sign, and the numbers need you to put them together and make a "
+"proper equality. When you do that, both those cards disappear! When you've "
+"made them all disappear, found all the operations, you've won the game!"
+msgstr ""
+
+#: activities/memory-math-add-minus-tux/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Addition and subtraction memory game against Tux"
+msgstr ""
+
+#: activities/memory-math-add-minus-tux/ActivityInfo.qml:27
+#: activities/memory-math-add-minus/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"Turn the cards over to find two numbers which subtract the same, until all "
+"the cards are gone."
+msgstr ""
+
+#: activities/memory-math-add-minus-tux/ActivityInfo.qml:29
+#: activities/memory-math-add-minus/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Practice addition, subtraction, until all the cards are gone."
+msgstr ""
+
+#: activities/memory-math-add-minus-tux/ActivityInfo.qml:30
+#: activities/memory-math-add-minus/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Addition and subtraction"
+msgstr ""
+
+#: activities/memory-math-add-minus-tux/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"You can see some cards, but you can't see what's on the other side of them. "
+"Each card is hiding an operation, or the answer to it.\n"
+"\n"
+"In this game, these cards are hiding the two parts of an operation. You need "
+"to find the two parts of the operation, and bring them together again. Click "
+"on a card to see what number it's hiding, then try to find the other card "
+"that goes with it, to make a whole operation. You can only turn over two "
+"cards in one go, so you need to remember where the numbers are hiding, then "
+"you can match them when you find their other half. You're doing the job of "
+"the equals sign, and the numbers need you to put them together and make a "
+"proper equality. When you do that, both those cards disappear! When you've "
+"made them all disappear, found more than Tux, and you've won the game!"
+msgstr ""
+
+#: activities/memory-math-add-minus/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Addition and subtraction memory game"
+msgstr ""
+
+#: activities/memory-math-add-tux/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Addition memory game against Tux"
+msgstr ""
+
+#: activities/memory-math-add-tux/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"Turn the cards over to find two numbers which add up the same, until all the "
+"cards are gone. Tux do the same. You have to beat it !"
+msgstr ""
+
+#: activities/memory-math-add-tux/ActivityInfo.qml:29
+#: activities/memory-math-add/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Practice adding up, until all the cards are gone."
+msgstr ""
+
+#: activities/memory-math-add-tux/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"You can see some cards, but you can't see what's on the other side of them. "
+"Each card is hiding an adding-up sum, or the answer to the sum.\n"
+"An adding-up sum looks like this: 2 + 2 = 4\n"
+"The numbers on one side of the equals sign (=) have to be the same as the "
+"number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud "
+"when you work this out, and count on your fingers, because the more ways you "
+"do something, the better you remember it. You can also use blocks, or "
+"buttons, or anything you can count. If you have lots of brothers and "
+"sisters, you can count them! Or the kids in your class at school. Sing "
+"counting songs. Count lots of things, for practice, and you'll be very good "
+"at adding-up!\n"
+"\n"
+"In this game, these cards are hiding the two parts of an adding-up sum (also "
+"called an addition sum). You need to find the two parts of the sum, and "
+"bring them together again. Click on a card to see what number it's hiding, "
+"then try to find the other card that goes with it, to make a whole sum. You "
+"can only turn over two cards in one go, so you need to remember where the "
+"numbers are hiding, then you can match them when you find their other half. "
+"You're doing the job of the equals sign, and the numbers need you to put "
+"them together and make a proper sum. When you do that, both those cards "
+"disappear! When you've made them all disappear, found more sums than Tux and "
+"you've won the game!"
+msgstr ""
+
+#: activities/memory-math-add/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Addition memory game"
+msgstr ""
+
+#: activities/memory-math-add/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"Turn the cards over to find two numbers which add up the same, until all the "
+"cards are gone."
+msgstr ""
+
+#: activities/memory-math-add/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"You can see some cards, but you can't see what's on the other side of them. "
+"Each card is hiding an adding-up sum, or the answer to the sum.\n"
+"An adding-up sum looks like this: 2 + 2 = 4\n"
+"The numbers on one side of the equals sign (=) have to be the same as the "
+"number on the other side. So 2 (1, 2) and 2 more (3, 4) makes 4. Count aloud "
+"when you work this out, and count on your fingers, because the more ways you "
+"do something, the better you remember it. You can also use blocks, or "
+"buttons, or anything you can count. If you have lots of brothers and "
+"sisters, you can count them! Or the kids in your class at school. Sing "
+"counting songs. Count lots of things, for practice, and you'll be very good "
+"at adding-up!\n"
+"\n"
+"In this game, these cards are hiding the two parts of an adding-up sum (also "
+"called an addition sum). You need to find the two parts of the sum, and "
+"bring them together again. Click on a card to see what number it's hiding, "
+"then try to find the other card that goes with it, to make a whole sum. You "
+"can only turn over two cards in one go, so you need to remember where the "
+"numbers are hiding, then you can match them when you find their other half. "
+"You're doing the job of the equals sign, and the numbers need you to put "
+"them together and make a proper sum. When you do that, both those cards "
+"disappear! When you've made them all disappear, found all the sums, you've "
+"won the game!"
+msgstr ""
+
+#: activities/memory-math-div-tux/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Division memory game against Tux"
+msgstr ""
+
+#: activities/memory-math-div-tux/ActivityInfo.qml:29
+#: activities/memory-math-div/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Practice division, until all the cards are gone."
+msgstr ""
+
+#: activities/memory-math-div-tux/ActivityInfo.qml:30
+#: activities/memory-math-div/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Division"
+msgstr ""
+
+#: activities/memory-math-div-tux/ActivityInfo.qml:31
+#: activities/memory-math-mult-div-tux/ActivityInfo.qml:31
+#: activities/memory-math-mult-tux/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"You can see some cards, but you can't see what's on the other side of them. "
+"Each card is hiding an operation, or the answer to it.\n"
+"\n"
+"In this game, these cards are hiding the two parts of an operation. You need "
+"to find the two parts of the operation, and bring them together again. Click "
+"on a card to see what number it's hiding, then try to find the other card "
+"that goes with it, to make a whole operation. You can only turn over two "
+"cards in one go, so you need to remember where the numbers are hiding, then "
+"you can match them when you find their other half. You're doing the job of "
+"the equals sign, and the numbers need you to put them together and make a "
+"proper equality. When you do that, both those cards disappear! When you've "
+"made them all disappear, found more than Tux and you've won the game!"
+msgstr ""
+
+#: activities/memory-math-div/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Division memory game"
+msgstr ""
+
+#: activities/memory-math-minus-tux/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Subtraction memory game against Tux"
+msgstr ""
+
+#: activities/memory-math-minus-tux/ActivityInfo.qml:27
+#: activities/memory-math-minus/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"Turn the cards over to find two numbers which add or subtract the same, "
+"until all the cards are gone."
+msgstr ""
+
+#: activities/memory-math-minus-tux/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Practice subtraction, until all the cards are gone. Tux do the same"
+msgstr ""
+
+#: activities/memory-math-minus-tux/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "subtraction"
+msgstr ""
+
+#: activities/memory-math-minus-tux/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"You can see some cards, but you can't see what's on the other side of them. "
+"Each card is hiding an operation, or the answer to it.\n"
+"\n"
+"In this game, these cards are hiding the two parts of an operation. You need "
+"to find the two parts of the operation, and bring them together again. Click "
+"on a card to see what number it's hiding, then try to find the other card "
+"that goes with it, to make a whole operation. You can only turn over two "
+"cards in one go, so you need to remember where the numbers are hiding, then "
+"you can match them when you find their other half. You're doing the job of "
+"the equals sign, and the numbers need you to put them together and make a "
+"proper equality. When you do that, both those cards disappear! When you've "
+"made them all disappear, found more operations than Tux and you've won the "
+"game!"
+msgstr ""
+
+#: activities/memory-math-minus/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Subtraction memory game"
+msgstr ""
+
+#: activities/memory-math-minus/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Practice subtraction, until all the cards are gone."
+msgstr ""
+
+#: activities/memory-math-mult-div-tux/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Multiplication and division memory game against Tux"
+msgstr ""
+
+#: activities/memory-math-mult-div-tux/ActivityInfo.qml:29
+#: activities/memory-math-mult-div/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Practice multiplication, division, until all the cards are gone."
+msgstr ""
+
+#: activities/memory-math-mult-div-tux/ActivityInfo.qml:30
+#: activities/memory-math-mult-div/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Multiplication, division"
+msgstr ""
+
+#: activities/memory-math-mult-div/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Multiplication and division memory game"
+msgstr ""
+
+#: activities/memory-math-mult-tux/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Multiplication memory game against Tux"
+msgstr ""
+
+#: activities/memory-math-mult-tux/ActivityInfo.qml:27
+#: activities/memory-math-mult/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"Turn the cards over to find two numbers which multiply the same, until all "
+"the cards are gone."
+msgstr ""
+
+#: activities/memory-math-mult-tux/ActivityInfo.qml:29
+#: activities/memory-math-mult/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Practice multiplication, until all the cards are gone."
+msgstr ""
+
+#: activities/memory-math-mult-tux/ActivityInfo.qml:30
+#: activities/memory-math-mult/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Multiplication"
+msgstr ""
+
+#: activities/memory-math-mult/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Multiplication memory game"
+msgstr ""
+
+#: activities/memory-sound-tux/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Audio memory game against Tux"
+msgstr ""
+
+#: activities/memory-sound-tux/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Play the audio memory game against Tux"
+msgstr ""
+
+#: activities/memory-sound-tux/ActivityInfo.qml:29
+#: activities/memory-sound/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Train your audio memory and remove all the cards."
+msgstr ""
+
+#: activities/memory-sound-tux/ActivityInfo.qml:31
+#: activities/memory-sound/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"A set of cards is shown. Each card has an associated sound, and each sound "
+"has a twin exactly the same. Click on a card to hear its hidden sound, and "
+"try to match the twins. You can only activate two cards at once, so you need "
+"to remember where a sound is, while you listen to its twin. When you turn "
+"over the twins, they both disappear."
+msgstr ""
+
+#: activities/memory-sound/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Audio memory game"
+msgstr ""
+
+#: activities/memory-sound/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Click on cards and listen to find the matching sounds"
+msgstr ""
+
+#: activities/memory-tux/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Memory Game with images against Tux"
+msgstr ""
+
+#: activities/memory-tux/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Flip the cards to find the matching pairs against Tux"
+msgstr ""
+
+#: activities/memory-tux/ActivityInfo.qml:29
+#: activities/memory/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Train your memory and remove all the cards"
+msgstr ""
+
+#: activities/memory-tux/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"A set of blank cards is shown. Each card has a picture on the other side, "
+"and each picture card has a twin exactly the same. Click on a card to see "
+"its hidden picture, and try to match the twins. You can only turn over two "
+"cards at once, so you need to remember where a picture is, while you look "
+"for its twin. When you turn over the twins, they both disappear. Tux teacher "
+"do the same."
+msgstr ""
+
+#: activities/memory-wordnumber/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Wordnumber memory game"
+msgstr ""
+
+#: activities/memory-wordnumber/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Turn the cards over to match the number with the word matching it."
+msgstr ""
+
+#: activities/memory-wordnumber/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Reading numbers, memory."
+msgstr ""
+
+#: activities/memory-wordnumber/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"You can see some cards, but you can't see what's on the other side of them. "
+"Each card is hiding the numeral form of a number, or the word to write it."
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:22
+msgctxt "dataset|"
+msgid "zero"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:23
+msgctxt "dataset|"
+msgid "one"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:24
+msgctxt "dataset|"
+msgid "two"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:25
+msgctxt "dataset|"
+msgid "three"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:26
+msgctxt "dataset|"
+msgid "four"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:27
+msgctxt "dataset|"
+msgid "five"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:28
+msgctxt "dataset|"
+msgid "six"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:29
+msgctxt "dataset|"
+msgid "seven"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:30
+msgctxt "dataset|"
+msgid "eight"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:31
+msgctxt "dataset|"
+msgid "nine"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:32
+msgctxt "dataset|"
+msgid "ten"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:33
+msgctxt "dataset|"
+msgid "eleven"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:34
+msgctxt "dataset|"
+msgid "twelve"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:35
+msgctxt "dataset|"
+msgid "thirteen"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:36
+msgctxt "dataset|"
+msgid "fourteen"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:37
+msgctxt "dataset|"
+msgid "fifteen"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:38
+msgctxt "dataset|"
+msgid "sixteen"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:39
+msgctxt "dataset|"
+msgid "seventeen"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:40
+msgctxt "dataset|"
+msgid "eighteen"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:41
+msgctxt "dataset|"
+msgid "nineteen"
+msgstr ""
+
+#: activities/memory-wordnumber/dataset.js:42
+msgctxt "dataset|"
+msgid "twenty"
+msgstr ""
+
+#: activities/memory/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Memory Game with images"
+msgstr ""
+
+#: activities/memory/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Flip the cards to find the matching pairs"
+msgstr ""
+
+#: activities/memory/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"A set of blank cards is shown. Each card has a picture on the other side, "
+"and each picture card has a twin exactly the same. Click on a card to see "
+"its hidden picture, and try to match the twins. You can only turn over two "
+"cards at once, so you need to remember where a picture is, while you look "
+"for its twin. When you turn over the twins, they both disappear."
+msgstr ""
+
+#: activities/memory/math_util.js:26 activities/memory/math_util.js:29
+msgctxt "math_util|"
+msgid "+"
+msgstr ""
+
+#: activities/memory/math_util.js:39
+msgctxt "math_util|"
+msgid "-"
+msgstr ""
+
+#: activities/memory/math_util.js:50 activities/memory/math_util.js:53
+msgctxt "math_util|"
+msgid "×"
+msgstr ""
+
+#: activities/memory/math_util.js:63
+msgctxt "math_util|"
+msgid "÷"
+msgstr ""
+
+#: activities/menu/ActivityInfo.qml:23
+msgctxt "ActivityInfo|"
+msgid "GCompris Main Menu"
+msgstr ""
+
+#: activities/menu/ActivityInfo.qml:24
+msgctxt "ActivityInfo|"
+msgid "Select an activity to run it."
+msgstr ""
+
+#: activities/menu/ActivityInfo.qml:25
+msgctxt "ActivityInfo|"
+msgid ""
+"GCompris is a high quality educational software suite comprising of numerous "
+"activities for children aged 2 to 10."
+msgstr ""
+
+#: activities/menu/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid ""
+"Some of the activities are game orientated, but nonetheless still "
+"educational."
+msgstr ""
+
+#: activities/menu/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"Select an icon to enter an activity or to display a list of activities in a "
+"category.\n"
+"At the bottom of the screen is the GCompris control bar. Notice that you can "
+"hide or show the bar by touching its anchor.\n"
+"The following icons are displayed:\n"
+"(note that each icon is displayed only if available in the current "
+"activity)\n"
+"    Home - Exit an activity, go back to menu (Ctrl+W and escape key)\n"
+"    Arrows - Display the current level. Click to select another level\n"
+"    Lips - Repeat the question\n"
+"    Question Mark - Help\n"
+"    Reload - Start the activity from the beginning again\n"
+"    Tool - The configuration menu\n"
+"    G - About GCompris\n"
+"    Quit - Quit GCompris (Ctrl+Q)\n"
+"The stars show suitable age groups for each game:\n"
+"    1, 2 or 3 simple stars - from 2 to 6 years old\n"
+"    1, 2 or 3 complex stars - 7 years and up\n"
+"Shortcuts:\n"
+"    Ctrl+B Show or Hide the control bar\n"
+"    Ctrl+F Toggle full screen\n"
+"    Ctrl+M Toggle mute for the background music\n"
+"    Ctrl+S Toggle the activity section bar"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:72
+msgctxt "ConfigurationItem|"
+msgid "You have the full version"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:73
+msgctxt "ConfigurationItem|"
+msgid "Buy the full version"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:105
+msgctxt "ConfigurationItem|"
+msgid "Show locked activities"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:115
+msgctxt "ConfigurationItem|"
+msgid "Enable audio voices"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:124
+msgctxt "ConfigurationItem|"
+msgid "Enable audio effects"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:133
+msgctxt "ConfigurationItem|"
+msgid "Fullscreen"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:142
+msgctxt "ConfigurationItem|"
+msgid "Virtual Keyboard"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:152
+msgctxt "ConfigurationItem|"
+msgid "Enable automatic downloads/updates of sound files"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:161
+msgctxt "ConfigurationItem|"
+msgid "The activity section menu is visible"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:174
+msgctxt "ConfigurationItem|"
+msgid "Font selector"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:194
+msgctxt "ConfigurationItem|"
+msgid "Font size"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:200
+msgctxt "ConfigurationItem|"
+msgid "Default"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:212
+msgctxt "ConfigurationItem|"
+msgid "Font Capitalization"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:223
+msgctxt "ConfigurationItem|"
+msgid "Language selector"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:250
+msgctxt "ConfigurationItem|"
+msgid "Localized voices"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:264
+msgctxt "ConfigurationItem|"
+msgid "Check for updates"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:265
+msgctxt "ConfigurationItem|"
+msgid "Download"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:283
+msgctxt "ConfigurationItem|"
+msgid "Difficulty filter:"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:480
+msgctxt "ConfigurationItem|"
+msgid ""
+"You selected a new locale. You need to restart GCompris to play in your new "
+"locale.<br/>Do you want to download the corresponding sound files now?"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:481
+msgctxt "ConfigurationItem|"
+msgid "Yes"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:487
+msgctxt "ConfigurationItem|"
+msgid "No"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:543
+msgctxt "ConfigurationItem|"
+msgid "Mixed case (default)"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:544
+msgctxt "ConfigurationItem|"
+msgid "All uppercase"
+msgstr ""
+
+#: activities/menu/ConfigurationItem.qml:545
+msgctxt "ConfigurationItem|"
+msgid "All lowercase"
+msgstr ""
+
+#: activities/menu/Menu.qml:256
+msgctxt "Menu|"
+msgid ""
+"Put your favorite activities here by selecting the sun on each activity top "
+"right."
+msgstr ""
+
+#: activities/mining/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Mining for gold"
+msgstr ""
+
+#: activities/mining/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Use the mousewheel to approach the rockwall and look for gold nuggets."
+msgstr ""
+
+#: activities/mining/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid ""
+"Learn to use the mousewheel or the zoom / pinch gesture to zoom in and out."
+msgstr ""
+
+#: activities/mining/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "You should be familiar with moving the mouse and clicking."
+msgstr ""
+
+#: activities/mining/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Looking at the rockwall, you can see a sparkle somewhere. Move next to this "
+"sparkle and use the mousewheel or the zoom gesture to zoom in. If you zoomed "
+"in at maximum, a gold nugget will appear at the position of the sparkle. "
+"Click on the gold nugget to collect it.\n"
+"\n"
+"Having collected the nugget, use the mousewheel or the pinch gesture to zoom "
+"out again. If you zoomed out at maximum, another sparkle will appear, "
+"showing the next gold nugget to collect. Collect enough nuggets to complete "
+"the level.\n"
+"\n"
+"The truck in the lower, right corner of the screen will tell you the number "
+"of already collected nuggets and the total number of nuggets to collect in "
+"this level."
+msgstr ""
+
+#: activities/mining/ActivityInfo.qml:36
+msgctxt "ActivityInfo|"
+msgid ""
+"Thanks to the Tuxpaint team for providing the following sounds under GPL:\n"
+"- realrainbow.ogg - used when a new gold nugget appears\n"
+"- metalpaint.wav - remixed and used when a gold nugget is collected"
+msgstr ""
+
+#: activities/mining/Mining.qml:413
+msgctxt "Mining|"
+msgid ""
+"Find the sparkle and zoom in around it. If you have a mouse, point the "
+"cursor on the sparkle then use the scroll wheel. If you have a trackpad, "
+"point the cursor on the sparkle then drag one finger on the right area or "
+"two fingers on the center. On a touch area, drag two fingers away from the "
+"sparkle, one in each direction."
+msgstr ""
+
+#: activities/mining/Mining.qml:424
+msgctxt "Mining|"
+msgid "Perfect you are zooming. Continue until you see the nugget."
+msgstr ""
+
+#: activities/mining/Mining.qml:430
+msgctxt "Mining|"
+msgid "Hum, take care, you are zooming too far from the sparkle."
+msgstr ""
+
+#: activities/mining/Mining.qml:436
+msgctxt "Mining|"
+msgid "Now you see the nugget, click on it to catch it."
+msgstr ""
+
+#: activities/mining/Mining.qml:442
+msgctxt "Mining|"
+msgid ""
+"Hum, you are too far from the nugget to see it. Unzoom then zoom again as "
+"close as you can from the sparkle."
+msgstr ""
+
+#: activities/mining/Mining.qml:448
+msgctxt "Mining|"
+msgid "Now unzoom and try to find another sparkle."
+msgstr ""
+
+#: activities/mining/Mining.qml:454
+msgctxt "Mining|"
+msgid "Continue to unzoom until you see the sparkle."
+msgstr ""
+
+#: activities/mining/Mining.qml:460
+msgctxt "Mining|"
+msgid "Now you see the sparkle, go ahead, you can zoom on it."
+msgstr ""
+
+#: activities/missing-letter/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Missing Letter"
+msgstr ""
+
+#: activities/missing-letter/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Training reading skills"
+msgstr ""
+
+#: activities/missing-letter/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Word reading"
+msgstr ""
+
+#: activities/missing-letter/ActivityInfo.qml:32
+msgctxt "ActivityInfo|"
+msgid ""
+"An object is displayed in the main area, and an incomplete word is printed "
+"under the picture. Select the missing letter to complete the word."
+msgstr ""
+
+#: activities/money/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Money"
+msgstr ""
+
+#: activities/money/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Practice money usage"
+msgstr ""
+
+#: activities/money/ActivityInfo.qml:29
+#: activities/money_cents/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid ""
+"You must buy the different items and give the exact price. At higher levels, "
+"several items are displayed, and you must first calculate the total price."
+msgstr ""
+
+#: activities/money/ActivityInfo.qml:30
+#: activities/money_back/ActivityInfo.qml:30
+#: activities/money_back_cents/ActivityInfo.qml:30
+#: activities/money_cents/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Can count"
+msgstr ""
+
+#: activities/money/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Click or tap on the coins or paper money at the bottom of the screen to pay. "
+"If you want to remove a coin or note, click or tap on it on the upper screen "
+"area."
+msgstr ""
+
+#: activities/money/money.js:661
+msgctxt "money|"
+msgid ""
+"Click on the coins or paper money at the bottom of the screen to pay. If you "
+"want to remove a coin or note, click on it on the upper screen area."
+msgstr ""
+
+#: activities/money/money.js:701
+#, qt-format
+msgctxt "money|"
+msgid ""
+"Tux just bought some items in your shop.\n"
+"He gives you %1, please give back his change."
+msgstr ""
+
+#: activities/money_back/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Give Tux his change"
+msgstr ""
+
+#: activities/money_back/ActivityInfo.qml:27
+#: activities/money_back_cents/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Practice money usage by giving Tux his change"
+msgstr ""
+
+#: activities/money_back/ActivityInfo.qml:29
+#: activities/money_back_cents/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid ""
+"Tux bought you different items and shows you his money. You must give him "
+"back his change. At higher levels, several items are displayed, and you must "
+"first calculate the total price."
+msgstr ""
+
+#: activities/money_back/ActivityInfo.qml:31
+#: activities/money_back_cents/ActivityInfo.qml:31
+#: activities/money_cents/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Click on the coins or paper money at the bottom of the screen to pay. If you "
+"want to remove a coin or note, click on it on the upper screen area."
+msgstr ""
+
+#: activities/money_back_cents/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Give Tux his change, including cents"
+msgstr ""
+
+#: activities/money_cents/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Money with cents"
+msgstr ""
+
+#: activities/money_cents/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Practice money usage including cents"
+msgstr ""
+
+#: activities/mosaic/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Rebuild the mosaic"
+msgstr ""
+
+#: activities/mosaic/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"First select the item you want to put then click on a spot on the empty area"
+msgstr ""
+
+#: activities/numbers-odd-even/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Even and Odd Numbers"
+msgstr ""
+
+#: activities/numbers-odd-even/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Move the helicopter to catch the clouds having even or odd numbers"
+msgstr ""
+
+#: activities/numbers-odd-even/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Catch the odd or even number clouds. With a keyboard use the arrow keys to "
+"move the helicopter. With a pointing device you just click or tap on the "
+"target location. To know which number you have to catch you can either "
+"remember it or check the bottom right corner."
+msgstr ""
+
+#: activities/penalty/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Penalty kick"
+msgstr ""
+
+#: activities/penalty/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Double click or double tap on the ball to score a goal."
+msgstr ""
+
+#: activities/penalty/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Double click or double tap on the ball to kick it. You can double click the "
+"left right or middle mouse button. If you lose, Tux catches the ball. You "
+"must click on it to bring it back to its former position"
+msgstr ""
+
+#: activities/penalty/Penalty.qml:278
+msgctxt "Penalty|"
+msgid "Double click or double tap on the ball to kick it."
+msgstr ""
+
+#: activities/penalty/Penalty.qml:318
+msgctxt "Penalty|"
+msgid "Click or tap the ball to bring it back to its former position"
+msgstr ""
+
+#: activities/planegame/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Numbers in Order"
+msgstr ""
+
+#: activities/planegame/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Move the helicopter to catch the clouds in the correct order"
+msgstr ""
+
+#: activities/planegame/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Catch the clouds in increasing order. With a keyboard use the arrow keys to "
+"move the helicopter. With a pointing device you just click or tap on the "
+"target location. To know which number you have to catch you can either "
+"remember it or check the bottom right corner."
+msgstr ""
+
+#: activities/redraw/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Redraw the given image"
+msgstr ""
+
+#: activities/redraw/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Draw perfectly the given image on the empty grid."
+msgstr ""
+
+#: activities/redraw/ActivityInfo.qml:31
+#: activities/redraw_symmetrical/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "First, select the proper color from the toolbar. Then drag to paint."
+msgstr ""
+
+#: activities/redraw/ActivityInfo.qml:32
+msgctxt "ActivityInfo|"
+msgid ""
+"At the first level a hint is provided to show that no symmetry is requested."
+msgstr ""
+
+#: activities/redraw_symmetrical/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Mirror the given image"
+msgstr ""
+
+#: activities/redraw_symmetrical/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Draw the image on the empty grid as if you see it in a mirror."
+msgstr ""
+
+#: activities/redraw_symmetrical/ActivityInfo.qml:32
+msgctxt "ActivityInfo|"
+msgid ""
+"At the first level a hint is provided to show that a symmetry is requested."
+msgstr ""
+
+#: activities/reversecount/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Practice subtraction with a fun game"
+msgstr ""
+
+#: activities/reversecount/ActivityInfo.qml:27
+#: activities/reversecount/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Tux is hungry. Help him find fish by counting to the correct ice spot."
+msgstr ""
+
+#: activities/reversecount/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid ""
+"Can read numbers on a dice, and count intervals up to 10 for the first level"
+msgstr ""
+
+#: activities/reversecount/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Click on the dice to show how many ice spots there are between Tux and the "
+"fish. Click the dice with the right mouse button to count backwards. When "
+"done, click on the OK button or hit the Enter key."
+msgstr ""
+
+#: activities/scalesboard/ActivityInfo.qml:26
+#: activities/scalesboard_weight/ActivityInfo.qml:26
+#: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Balance the scales properly"
+msgstr ""
+
+#: activities/scalesboard/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Drag and Drop weights to balance the scales"
+msgstr ""
+
+#: activities/scalesboard/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Mental calculation, arithmetic equality"
+msgstr ""
+
+#: activities/scalesboard/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"To balance the scales, move the weights on the left or the right side. The "
+"weights can be arranged in any order."
+msgstr ""
+
+#: activities/scalesboard/ScaleNumber.qml:44
+#: activities/scalesboard/ScaleNumber.qml:73
+msgctxt "ScaleNumber|"
+msgid "Take care, you can drop weights on both sides of the scale."
+msgstr ""
+
+#: activities/scalesboard/ScaleNumber.qml:66
+msgctxt "ScaleNumber|"
+msgid "Now you have to guess the weight of the gift."
+msgstr ""
+
+#: activities/scalesboard/ScaleNumber.qml:67
+#: activities/scalesboard/ScaleNumber.qml:74
+#: activities/scalesboard/ScaleNumber.qml:80
+#: activities/scalesboard/ScaleNumber.qml:86
+#: activities/scalesboard/ScaleNumber.qml:93
+#, qt-format
+msgctxt "ScaleNumber|"
+msgid "Enter the weight of the gift: %1"
+msgstr ""
+
+#: activities/scalesboard_weight/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Drag and Drop masses to balance the scales and calculate the weight"
+msgstr ""
+
+#: activities/scalesboard_weight/ActivityInfo.qml:29
+#: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Mental calculation, arithmetic equality, unit conversion"
+msgstr ""
+
+#: activities/scalesboard_weight/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"To balance the scales, move the masses on the left or the right side. They "
+"can be arranged in any order. Take care of the weight and the unit of the "
+"masses, remember that a kilogram (kg) is 1000 grams (g)."
+msgstr ""
+
+#: activities/scalesboard_weight/ScalesboardWeight.qml:28
+#, qt-format
+msgctxt "ScalesboardWeight|"
+msgid "%1 g"
+msgstr ""
+
+#: activities/scalesboard_weight/ScalesboardWeight.qml:33
+#, qt-format
+msgctxt "ScalesboardWeight|"
+msgid "%1 kg"
+msgstr ""
+
+#: activities/scalesboard_weight/ScalesboardWeight.qml:42
+msgctxt "ScalesboardWeight|"
+msgid "The \"kg\" symbol at the end of a number means kilogram."
+msgstr ""
+
+#: activities/scalesboard_weight/ScalesboardWeight.qml:43
+msgctxt "ScalesboardWeight|"
+msgid ""
+"The kilogram is a unit of mass, a property which corresponds to the common "
+"perception of how \"heavy\" an object is."
+msgstr ""
+
+#: activities/scalesboard_weight/ScalesboardWeight.qml:52
+msgctxt "ScalesboardWeight|"
+msgid ""
+"The \"g\" symbol at the end of a number means gram. One kilogram equals 1000 "
+"grams"
+msgstr ""
+
+#: activities/scalesboard_weight/ScalesboardWeight.qml:60
+msgctxt "ScalesboardWeight|"
+msgid "Remember, one kilogram (\"kg\") equals 1000 grams (\"g\")."
+msgstr ""
+
+#: activities/scalesboard_weight/ScalesboardWeight.qml:66
+#: activities/scalesboard_weight/ScalesboardWeight.qml:100
+#: activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml:66
+#: activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml:82
+msgctxt "ScalesboardWeight|"
+msgid "Take care, you can drop weights on both sides of the scale."
+msgstr ""
+
+#: activities/scalesboard_weight/ScalesboardWeight.qml:85
+#: activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml:74
+msgctxt "ScalesboardWeight|"
+msgid "Now you have to guess the weight of the gift."
+msgstr ""
+
+#: activities/scalesboard_weight/ScalesboardWeight.qml:86
+#, qt-format
+msgctxt "ScalesboardWeight|"
+msgid "Enter the weight of the gift in kilogram: %1"
+msgstr ""
+
+#: activities/scalesboard_weight/ScalesboardWeight.qml:94
+#: activities/scalesboard_weight/ScalesboardWeight.qml:101
+#: activities/scalesboard_weight/ScalesboardWeight.qml:110
+#: activities/scalesboard_weight/ScalesboardWeight.qml:116
+#: activities/scalesboard_weight/ScalesboardWeight.qml:122
+#: activities/scalesboard_weight/ScalesboardWeight.qml:130
+#, qt-format
+msgctxt "ScalesboardWeight|"
+msgid "Enter the weight of the gift in gram: %1"
+msgstr ""
+
+#: activities/scalesboard_weight/ScalesboardWeight.qml:109
+msgctxt "ScalesboardWeight|"
+msgid "Remember, one kilo ('kg') equals 1000 grams ('g')."
+msgstr ""
+
+#: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"Drag and Drop masses to balance the scales and calculate the weight in the "
+"avoirdupois unit"
+msgstr ""
+
+#: activities/scalesboard_weight_avoirdupois/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"To balance the scales, move the masses on the left or the right side. They "
+"can be arranged in any order. Take care of the weight and the unit of the "
+"masses, remember that a pound (lb) is 16 ounce (oz)."
+msgstr ""
+
+#: activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml:27
+#, qt-format
+msgctxt "ScalesboardWeight|"
+msgid "%1 oz"
+msgstr ""
+
+#: activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml:32
+#, qt-format
+msgctxt "ScalesboardWeight|"
+msgid "%1 lb"
+msgstr ""
+
+#: activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml:41
+msgctxt "ScalesboardWeight|"
+msgid "The \"lb\" symbol at the end of a number means pound."
+msgstr ""
+
+#: activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml:42
+msgctxt "ScalesboardWeight|"
+msgid ""
+"The pound is a unit of mass, a property which corresponds to the common "
+"perception of how \"heavy\" an object is. This unit is used in the USA."
+msgstr ""
+
+#: activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml:51
+msgctxt "ScalesboardWeight|"
+msgid ""
+"The \"oz\" symbol at the end of a number means ounce. One pound equals "
+"sixteen ounces"
+msgstr ""
+
+#: activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml:59
+msgctxt "ScalesboardWeight|"
+msgid "Remember, one pound (\"lb\") equals sixteen ounces (\"oz\")."
+msgstr ""
+
+#: activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml:75
+#: activities/scalesboard_weight_avoirdupois/ScalesboardWeight.qml:83
+#, qt-format
+msgctxt "ScalesboardWeight|"
+msgid "Enter the weight of the gift in ounce: %1"
+msgstr ""
+
+#: activities/simplepaint/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "A simple drawing activity"
+msgstr ""
+
+#: activities/simplepaint/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Create your own drawing"
+msgstr ""
+
+#: activities/simplepaint/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Enhance creative skills"
+msgstr ""
+
+#: activities/simplepaint/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Select a color and paint the rectangles as you like to create a drawing."
+msgstr ""
+
+#: activities/smallnumbers/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Numbers With Dice"
+msgstr ""
+
+#: activities/smallnumbers/ActivityInfo.qml:27
+#: activities/smallnumbers2/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Count the number of dots on dice before they reach the ground"
+msgstr ""
+
+#: activities/smallnumbers/ActivityInfo.qml:29
+#: activities/smallnumbers2/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "In a limited time, count the number of dots"
+msgstr ""
+
+#: activities/smallnumbers/ActivityInfo.qml:30
+#: activities/smallnumbers2/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Counting skills"
+msgstr ""
+
+#: activities/smallnumbers/ActivityInfo.qml:31
+#: activities/smallnumbers2/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "With the keyboard, type the number of dots you see on the falling dice."
+msgstr ""
+
+#: activities/smallnumbers2/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Numbers with pairs of dice"
+msgstr ""
+
+#: activities/sudoku/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Sudoku, place unique symbols in a grid"
+msgstr ""
+
+#: activities/sudoku/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid ""
+"Symbols must be unique in a row, in a column, and (if defined) each region."
+msgstr ""
+
+#: activities/sudoku/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid ""
+"The aim of the puzzle is to enter a symbol or numeral from 1 through 9 in "
+"each cell of a grid. In the official Sudoku the grid is 9x9 made up of 3x3 "
+"subgrids (called 'regions'). In GCompris we start at lower levels with a "
+"simpler version using symbols and with no regions. In all cases the grid is "
+"presented with various symbols or numerals given in some cells (the "
+"'givens'). Each row, column and region must contain only one instance of "
+"each symbol or numeral (Source &lt;http://en.wikipedia.org/wiki/Sudoku&gt;)."
+msgstr ""
+
+#: activities/sudoku/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Completing the puzzle requires patience and logical ability"
+msgstr ""
+
+#: activities/sudoku/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Select a number or a symbol on the left and click on its target position. "
+"GCompris will not let you enter invalid data."
+msgstr ""
+
+#: activities/superbrain/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Super Brain"
+msgstr ""
+
+#: activities/superbrain/ActivityInfo.qml:27
+#: activities/superbrain/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Tux has hidden several items. Find them again in the correct order"
+msgstr ""
+
+#: activities/superbrain/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Click on the items until you find what you think is the correct answer. "
+"Then, click on the OK button. In the lower levels, Tux gives you an "
+"indication if you found a hiding place by marking the item with a black box. "
+"You can use the right mouse button to flip the colors in the opposite order "
+"or the color chooser to directly pick a color. Press and hold a mouse button "
+"or on the touch screen to automatically choose the last color selected on a "
+"column."
+msgstr ""
+
+#: activities/superbrain/Superbrain.qml:147
+msgctxt "Superbrain|"
+msgid "This item is well placed"
+msgstr ""
+
+#: activities/superbrain/Superbrain.qml:149
+msgctxt "Superbrain|"
+msgid "This item is misplaced"
+msgstr ""
+
+#: activities/target/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Practice addition with a target game"
+msgstr ""
+
+#: activities/target/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Hit the target and count your points"
+msgstr ""
+
+#: activities/target/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Throw darts at a target and count your score."
+msgstr ""
+
+#: activities/target/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid ""
+"Can move the mouse, can read numbers and count up to 15 for the first level"
+msgstr ""
+
+#: activities/target/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Check the speed and direction of the target, and then click on it to launch "
+"a dart. When all your darts are thrown, you are asked to count your score. "
+"Enter the score with the keyboard."
+msgstr ""
+
+#: activities/tic_tac_toe/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Tic Tac Toe (against Tux)"
+msgstr ""
+
+#: activities/tic_tac_toe/ActivityInfo.qml:30
+#: activities/tic_tac_toe_2players/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Place three marks in a row"
+msgstr ""
+
+#: activities/tic_tac_toe/ActivityInfo.qml:32
+#: activities/tic_tac_toe_2players/ActivityInfo.qml:32
+msgctxt "ActivityInfo|"
+msgid ""
+"Place three respective marks in any horizontal, vertical, or diagonal row to "
+"win the game"
+msgstr ""
+
+#: activities/tic_tac_toe/ActivityInfo.qml:34
+msgctxt "ActivityInfo|"
+msgid ""
+"Play with the computer. Take turns to click on the square which you want to "
+"mark. First player to create a line of 3 marks wins"
+msgstr ""
+
+#: activities/tic_tac_toe_2players/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Tic Tac Toe (with a friend)"
+msgstr ""
+
+#: activities/tic_tac_toe_2players/ActivityInfo.qml:34
+msgctxt "ActivityInfo|"
+msgid ""
+"Play with a friend. Take turns to click on the square which you want to "
+"mark. First player to create a line of 3 marks wins"
+msgstr ""
+
+#: activities/traffic/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "A sliding-block puzzle game"
+msgstr ""
+
+#: activities/traffic/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Remove the red car from the parking lot through the gate on the right"
+msgstr ""
+
+#: activities/traffic/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid ""
+"Each car can only move either horizontally or vertically. You must make some "
+"room in order to let the red car move through the gate on the right."
+msgstr ""
+
+#: activities/traffic/Traffic.qml:118
+msgctxt "Traffic|"
+msgid "Colors"
+msgstr ""
+
+#: activities/traffic/Traffic.qml:119
+msgctxt "Traffic|"
+msgid "Images"
+msgstr ""
+
+#: activities/traffic/Traffic.qml:130
+msgctxt "Traffic|"
+msgid "Select your mode"
+msgstr ""
+
+#: activities/wordsgame/ActivityInfo.qml:26
+msgctxt "ActivityInfo|"
+msgid "Falling Words"
+msgstr ""
+
+#: activities/wordsgame/ActivityInfo.qml:27
+msgctxt "ActivityInfo|"
+msgid "Type the falling words before they reach the ground"
+msgstr ""
+
+#: activities/wordsgame/ActivityInfo.qml:29
+msgctxt "ActivityInfo|"
+msgid "Keyboard training"
+msgstr ""
+
+#: activities/wordsgame/ActivityInfo.qml:30
+msgctxt "ActivityInfo|"
+msgid "Keyboard manipulation"
+msgstr ""
+
+#: activities/wordsgame/ActivityInfo.qml:31
+msgctxt "ActivityInfo|"
+msgid "Type the complete word as it falls, before it reaches the ground"
+msgstr ""
+
+#: core/BuyMeOverlay.qml:57
+msgctxt "BuyMeOverlay|"
+msgid "This activity is only available in the full version of GCompris."
+msgstr ""
+
+#: core/BuyMeOverlay.qml:68
+msgctxt "BuyMeOverlay|"
+msgid "Buy the full version"
+msgstr ""
+
+#: core/core.js:182
+msgctxt "core|"
+msgid "Missing sound files!"
+msgstr ""
+
+#: core/core.js:183
+msgctxt "core|"
+msgid ""
+"This activity uses language sound files, that are not yet installed on your "
+"system."
+msgstr ""
+
+#: core/core.js:185
+msgctxt "core|"
+msgid "For downloading the needed sound files go to the preferences dialog."
+msgstr ""
+
+#: core/core.js:212
+msgctxt "core|"
+msgid "Download in progress"
+msgstr ""
+
+#: core/core.js:214
+msgctxt "core|"
+msgid "Download in progress.<br/>'Abort' it to quit immediately."
+msgstr ""
+
+#: core/core.js:224
+msgctxt "core|"
+msgid "Quit?"
+msgstr ""
+
+#: core/core.js:226
+msgctxt "core|"
+msgid "Do you really want to quit GCompris?"
+msgstr ""
+
+#: core/core.js:227
+msgctxt "core|"
+msgid "Yes"
+msgstr ""
+
+#: core/core.js:228
+msgctxt "core|"
+msgid "No"
+msgstr ""
+
+#: core/DialogAbout.qml:32
+msgctxt "DialogAbout|"
+msgid "About GCompris"
+msgstr ""
+
+#. Replace this string with your names, one name per line.
+#: core/DialogAbout.qml:35 core/DialogAbout.qml:36
+msgctxt "DialogAbout|"
+msgid "translator-credits"
+msgstr ""
+
+#: core/DialogAbout.qml:42
+#, qt-format
+msgctxt "DialogAbout|"
+msgid "GCompris %1"
+msgstr ""
+
+#: core/DialogAbout.qml:43
+#, qt-format
+msgctxt "DialogAbout|"
+msgid "Based on Qt %1"
+msgstr ""
+
+#: core/DialogAbout.qml:47
+msgctxt "DialogAbout|"
+msgid "GCompris Home Page: http://gcompris.net"
+msgstr ""
+
+#: core/DialogAbout.qml:54
+msgctxt "DialogAbout|"
+msgid "<b>GCompris</b> is a Free Software developed within the KDE community."
+msgstr ""
+
+#: core/DialogAbout.qml:58
+#, qt-format
+msgctxt "DialogAbout|"
+msgid ""
+"<b>KDE</b> is a world-wide network of software engineers, artists, writers, "
+"translators and facilitators who are committed to <a href=\"%1\">Free "
+"Software</a> development. This community has created hundreds of Free "
+"Software applications as part of the KDE frameworks, workspaces and "
+"applications.<br /><br />KDE is a cooperative enterprise in which no single "
+"entity controls the efforts or products of KDE to the exclusion of others. "
+"Everyone is welcome to join and contribute to KDE, including you.<br /><br /"
+">Visit <a href=\"%2\">%2</a> for more information about the KDE community "
+"and the software we produce."
+msgstr ""
+
+#: core/DialogAbout.qml:75
+#, qt-format
+msgctxt "DialogAbout|"
+msgid ""
+"Software can always be improved, and the KDE team is ready to do so. "
+"However, you - the user - must tell us when something does not work as "
+"expected or could be done better.<br /><br />KDE has a bug tracking system. "
+"Visit <a href=\"%1\">%1</a> to report a bug.<br /><br />If you have a "
+"suggestion for improvement then you are welcome to use the bug tracking "
+"system to register your wish. Make sure you use the severity called "
+"\"Wishlist\"."
+msgstr ""
+
+#: core/DialogAbout.qml:87
+#, qt-format
+msgctxt "DialogAbout|"
+msgid ""
+"You do not have to be a software developer to be a member of the KDE team. "
+"You can join the national teams that translate program interfaces. You can "
+"provide graphics, themes, sounds, and improved documentation. You decide!"
+"<br /><br />Visit <a href=\"%1\">%1</a> for information on some projects in "
+"which you can participate.<br /><br />If you need more information or "
+"documentation, then a visit to <a href=\"%2\">%2</a> will provide you with "
+"what you need."
+msgstr ""
+
+#: core/DialogAbout.qml:104
+#, qt-format
+msgctxt "DialogAbout|"
+msgid ""
+"To support development the KDE community has formed the KDE e.V., a non-"
+"profit organization legally founded in Germany. KDE e.V. represents the KDE "
+"community in legal and financial matters. See <a href=\"%1\">%1</a> for "
+"information on KDE e.V.<br /><br />KDE benefits from many kinds of "
+"contributions, including financial. We use the funds to reimburse members "
+"and others for expenses they incur when contributing. Further funds are used "
+"for legal support and organizing conferences and meetings. <br /> <br />We "
+"would like to encourage you to support our efforts with a financial "
+"donation, using one of the ways described at <a href=\"%2\">%2</a>.<br /"
+"><br />Thank you very much in advance for your support."
+msgstr ""
+
+#: core/DialogAbout.qml:121
+#, qt-format
+msgctxt "DialogAbout|"
+msgid "<b>A big thanks to the development team:</b> %1"
+msgstr ""
+
+#: core/DialogAbout.qml:125
+#, qt-format
+msgctxt "DialogAbout|"
+msgid "<b>A big thanks to the translation team:</b> %1"
+msgstr ""
+
+#: core/DialogActivityConfig.qml:91
+#, qt-format
+msgctxt "DialogActivityConfig|"
+msgid "%1 configuration"
+msgstr ""
+
+#: core/DialogActivityConfig.qml:93
+msgctxt "DialogActivityConfig|"
+msgid "Configuration"
+msgstr ""
+
+#: core/DialogHelp.qml:63
+msgctxt "DialogHelp|"
+msgid "Author"
+msgstr ""
+
+#: core/DialogHelp.qml:67
+msgctxt "DialogHelp|"
+msgid "Prerequisite"
+msgstr ""
+
+#: core/DialogHelp.qml:72
+msgctxt "DialogHelp|"
+msgid "Goal"
+msgstr ""
+
+#: core/DialogHelp.qml:77
+msgctxt "DialogHelp|"
+msgid "Manual"
+msgstr ""
+
+#: core/DialogHelp.qml:81
+msgctxt "DialogHelp|"
+msgid "Credit"
+msgstr ""
+
+#: core/DialogHelp.qml:85
+msgctxt "DialogHelp|"
+msgid "Section: "
+msgstr ""
+
+#: core/DownloadDialog.qml:166
+msgctxt "DownloadDialog|"
+msgid "Downloading ..."
+msgstr ""
+
+#. Run this task in background
+#: core/DownloadDialog.qml:210
+msgctxt "DownloadDialog|"
+msgid "Background"
+msgstr ""
+
+#: core/DownloadDialog.qml:227
+msgctxt "DownloadDialog|"
+msgid "Abort"
+msgstr ""
+
+#: core/DownloadDialog.qml:252
+msgctxt "DownloadDialog|"
+msgid "Download error"
+msgstr ""
+
+#: core/DownloadDialog.qml:280
+msgctxt "DownloadDialog|"
+msgid "Your download finished successfully. The data files are now available."
+msgstr ""
+
+#: core/DownloadDialog.qml:282
+msgctxt "DownloadDialog|"
+msgid "Restart any currently active activity."
+msgstr ""
+
+#: core/DownloadDialog.qml:284
+msgctxt "DownloadDialog|"
+msgid "Your local data files are up-to-date."
+msgstr ""
+
+#: core/LanguageList.qml:43
+msgctxt "LanguageList|"
+msgid "Your system default"
+msgstr ""
+
+#: core/main.cpp:129
+msgctxt "QObject|"
+msgid "Run GCompris with the default system cursor."
+msgstr ""
+
+#: core/main.cpp:132
+msgctxt "QObject|"
+msgid "Run GCompris without cursor (touch screen mode)."
+msgstr ""
+
+#: core/main.cpp:135
+msgctxt "QObject|"
+msgid "Run GCompris in fullscreen mode."
+msgstr ""
+
+#: core/main.cpp:138
+msgctxt "QObject|"
+msgid "Run GCompris in window mode."
+msgstr ""
+
+#: core/main.cpp:141
+msgctxt "QObject|"
+msgid "Run GCompris with sound enabled."
+msgstr ""
+
+#: core/main.cpp:144
+msgctxt "QObject|"
+msgid "Run GCompris without sound."
+msgstr ""
+
+#: core/main.cpp:147
+msgctxt "QObject|"
+msgid "Disable the configuration button."
+msgstr ""
+
+#: core/main.cpp:150
+msgctxt "QObject|"
+msgid "Enable the configuration button (default)."
+msgstr ""
+
+#: core/main.qml:119
+msgctxt "main|"
+msgid "Welcome to GCompris!"
+msgstr ""
+
+#: core/main.qml:120
+msgctxt "main|"
+msgid "You are running GCompris for the first time."
+msgstr ""
+
+#: core/main.qml:121
+msgctxt "main|"
+msgid ""
+"You should verify that your application settings especially your language is "
+"set correctly, and that all language specific sound files are installed. You "
+"can do this in the Preferences Dialog."
+msgstr ""
+
+#: core/main.qml:123
+msgctxt "main|"
+msgid "Have Fun!"
+msgstr ""
+
+#: core/main.qml:125
+#, qt-format
+msgctxt "main|"
+msgid "Your current language is %1 (%2)."
+msgstr ""
+
+#: core/main.qml:129
+msgctxt "main|"
+msgid "Do you want to download the corresponding sound files now?"
+msgstr ""
+
+#: core/main.qml:130
+msgctxt "main|"
+msgid "Yes"
+msgstr ""
+
+#: core/main.qml:136
+msgctxt "main|"
+msgid "No"
+msgstr ""
+
+#: core/ReadyButton.qml:46
+msgctxt "ReadyButton|"
+msgid "I am Ready"
+msgstr ""
+
+#, fuzzy
+# ~| msgid ""
+#~ msgctxt "ActivityInfo|"
+#~ msgid ""
+#~ msgstr ""
+#~ "MIME-Version: 1.0\n"
+#~ "Content-Type: text/plain; charset=UTF-8\n"
+#~ "Content-Transfer-Encoding: 8bit\n"
+#~ "X-Qt-Contexts: true\n"
+#~ "Plural-Forms: nplurals=2; plural=(n > 1);\n"

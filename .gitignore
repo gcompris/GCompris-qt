@@ -6,4 +6,3 @@ GCompris.pro.user
 build/*
 *.DS_Store
 src/activities/activities_out.txt
-po
