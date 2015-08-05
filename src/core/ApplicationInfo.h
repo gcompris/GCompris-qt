@@ -24,13 +24,13 @@
 #ifndef APPLICATIONINFO_H
 #define APPLICATIONINFO_H
 
-#include <config.h>
-#include "ApplicationSettings.h"
-
 #include <qqml.h>
 #include <QtCore/QObject>
 #include <QtQml/QQmlPropertyMap>
 #include <QQmlEngine>
+
+#include <config.h>
+#include "ApplicationSettings.h"
 
 class QQuickWindow;
 
