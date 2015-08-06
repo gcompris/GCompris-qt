@@ -25,20 +25,25 @@ set(GCOMPRIS_MAJOR_VERSION 0)
 set(GCOMPRIS_MINOR_VERSION 40)
 set(GCOMPRIS_PATCH_VERSION 0)
 
-set(GCOMPRIS_VERSION ${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION})
-
-# An integer value that represents the version of the application
-# Increase it at each release
-set(GCOMPRIS_VERSION_CODE ${GCOMPRIS_MINOR_VERSION})
-
 # Set executable filename
 if(ANDROID)
   set(GCOMPRIS_EXECUTABLE_NAME GCompris)
+  if("${ANDROID_ABI}" STREQUAL "x86")
+    # We always want x86 to be a release above to arm one because the play
+    # store want x86 to be pushed after arm.
+    MATH(EXPR GCOMPRIS_MINOR_VERSION "${GCOMPRIS_MINOR_VERSION}+1")
+  endif("${ANDROID_ABI}" STREQUAL "x86")
 elseif(SAILFISHOS)
   set(GCOMPRIS_EXECUTABLE_NAME harbour-gcompris-qt)
 else()
   set(GCOMPRIS_EXECUTABLE_NAME gcompris-qt)
 endif()
+
+set(GCOMPRIS_VERSION ${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION})
+
+# An integer value that represents the version of the application
+# Increase it at each release
+set(GCOMPRIS_VERSION_CODE ${GCOMPRIS_MINOR_VERSION})
 
 # cmake modules setup
 find_package(ECM 1.4.0 QUIET NO_MODULE)
@@ -165,9 +170,9 @@ foreach(PoSource ${TRANSLATIONS_FILES})
     # Remove the obsolete translations and set po in the ts output file
     COMMAND msgattrib --no-obsolete  ${CMAKE_CURRENT_SOURCE_DIR}/${PoSource} -o ${OutTsFile}
     # Convert the po into ts
-    COMMAND lconvert -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
+    COMMAND ${Qt5_DIR}/../../../bin/lconvert -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
     # Convert the ts in qm removing non finished translations
-    COMMAND lrelease -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
+    COMMAND ${Qt5_DIR}/../../../bin/lrelease -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
     )
   list(APPEND QM_FILES ${QmOutput})
 endforeach()

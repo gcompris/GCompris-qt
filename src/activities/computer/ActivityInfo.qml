@@ -23,12 +23,12 @@ ActivityInfo {
   icon: "computer/computer.svg"
   author: "Sagar Chand Agarwal &lt;atomsagar@gmail.com&gt;"
   demo: true
-  title: "Know your Computer"
-  description: ""
+  title: qsTr("Know your Computer")
+  description: qsTr("Test your knowledge about the external and internal parts of computer, followed by virtual setting of a computer and quiz to test your knowledge about parts. ")
   //intro: "put here in comment the text for the intro voice"
-  goal: ""
+  goal: "Learning"
   prerequisite: ""
   manual: ""
-  credit: ""
+  credit: "Images by OpenClipart"
   section: "fun"
 }

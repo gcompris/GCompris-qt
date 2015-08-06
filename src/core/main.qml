@@ -43,10 +43,11 @@ import "qrc:/gcompris/src/core/core.js" as Core
  */
 Window {
     id: main
-    width: 800
-    height: 520
-    minimumWidth: 400
-    minimumHeight: 400
+    // Start in window mode at full screen size
+    width: Screen.width
+    height: Screen.height
+    minimumWidth: 400 * ApplicationInfo.ratio
+    minimumHeight: 400 * ApplicationInfo.ratio
     title: "GCompris"
 
     /// @cond INTERNAL_DOCS
@@ -123,14 +124,14 @@ Window {
                         + qsTr("Have Fun!")
                         + "\n"
                         + qsTr("Your current language is %1 (%2).")
-                          .arg(Qt.locale(ApplicationInfo.localeShort).nativeLanguageName)
-                          .arg(ApplicationInfo.localeShort)
+                          .arg(Qt.locale(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale)).nativeLanguageName)
+                          .arg(ApplicationInfo.getVoicesLocale(ApplicationSettings.locale))
                         + "\n"
                         + qsTr("Do you want to download the corresponding sound files now?"),
                         qsTr("Yes"),
                         function() {
                             if (DownloadManager.downloadResource(
-                                        DownloadManager.getVoicesResourceForLocale(ApplicationInfo.localeShort)))
+                                        DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale)))
                                 var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                         },
                         qsTr("No"), null,

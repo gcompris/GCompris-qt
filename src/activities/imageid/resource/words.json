@@ -999,17 +999,17 @@
                     {
                         "description": "eleven",
                         "image": "words/eleven.png",
-                        "voice": "voices-$CA/$LOCALE/words/eleven.$CA"
+                        "voice": "voices-$CA/$LOCALE/alphabet/11.$CA"
                     },
                     {
                         "description": "twelve",
                         "image": "words/twelve.png",
-                        "voice": "voices-$CA/$LOCALE/words/twelve.$CA"
+                        "voice": "voices-$CA/$LOCALE/alphabet/12.$CA"
                     },
                     {
                         "description": "sixteen",
                         "image": "words/sixteen.png",
-                        "voice": "voices-$CA/$LOCALE/words/sixteen.$CA"
+                        "voice": "voices-$CA/$LOCALE/alphabet/16.$CA"
                     }
                 ]
             }

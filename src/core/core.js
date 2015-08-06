@@ -44,8 +44,11 @@ function shuffle(o) {
 }
 
 /**
- * Return the filename of the audio voices file for the passed letter
+ * Return the filename of the audio voices file for the passed letters
  * (or a number) @p c
+ *
+ * A letter maybe a digraph or more characters (a pair of characters used
+ * to write one phoneme). In this case the result have the form U0066U0068.ogg
  *
  * The returned audio file. has the suffix .ogg
  *
@@ -55,13 +58,17 @@ function shuffle(o) {
  */
 function getSoundFilenamForChar(c)
 {
-    var result = "U";
-    var codeHex = c.toLowerCase().charCodeAt(0).toString(16).toUpperCase();
-    while (codeHex.length < 4) {
-        codeHex = "0" + codeHex;
+    var results = ''
+    for(var i = 0; i < c.length; ++i) {
+        var result = "U";
+        var codeHex = c.toLowerCase().charCodeAt(i).toString(16).toUpperCase();
+        while (codeHex.length < 4) {
+            codeHex = "0" + codeHex;
+        }
+        results += "U" + codeHex
     }
-    result += codeHex + ".$CA";
-    return result;
+    results += ".$CA";
+    return results;
 }
 
 /**

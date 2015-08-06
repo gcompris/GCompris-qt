@@ -38,9 +38,7 @@ ActivityBase {
         fillMode: Image.PreserveAspectCrop
         focus: true
 
-        readonly property double scaleFactor: Math.max(1,
-                                                       Math.min(background.width / 800,
-                                                                background.height / 520))
+        readonly property double scaleFactor: 1
         readonly property bool isPortrait: (height > width)
 
         signal start
@@ -52,6 +50,7 @@ ActivityBase {
         }
 
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -77,11 +76,11 @@ ActivityBase {
             id: colorsColumn
 
             anchors.left: parent.left
-            anchors.leftMargin: 5 * background.scaleFactor * ApplicationInfo.ratio
+            anchors.leftMargin: 5 * ApplicationInfo.ratio
             anchors.top: parent.top
-            anchors.topMargin: 5 * background.scaleFactor * ApplicationInfo.ratio
+            anchors.topMargin: 5 * ApplicationInfo.ratio
 
-            spacing: 3 * background.scaleFactor * ApplicationInfo.ratio
+            spacing: 3  * ApplicationInfo.ratio
 
             width: guessColumn.guessSize
             height: guessColumn.guessSize
@@ -95,13 +94,12 @@ ActivityBase {
 
                 model: ListModel {}
 
-                delegate: Rectangle {
-                    width: 40 * background.scaleFactor * ApplicationInfo.ratio
-                    height: 40 * background.scaleFactor * ApplicationInfo.ratio
-                    radius: width * 0.5
+                delegate: SearchItem {
+                    width: 40 * ApplicationInfo.ratio
+                    height: 40 * ApplicationInfo.ratio
                     border.width: 2
                     border.color: "white"
-                    color: col
+                    searchItemIndex: itemIndex
                 }
             }
         }
@@ -263,8 +261,8 @@ if (targetY < 0) {
 
                     cellWidth: guessColumn.guessSize * 2
                     cellHeight: guessColumn.guessSize * 2
-                    width: Math.ceil(count / 2) * cellWidth// * 1.2
-                    height: 2 * cellHeight// * 1.2
+                    width: Math.ceil(count / 2) * cellWidth
+                    height: 2 * cellHeight
                     anchors.centerIn: parent
                     z: 11
 
@@ -285,13 +283,15 @@ if (targetY < 0) {
 
                     model: new Array()
 
-                    delegate: Rectangle {
+                    delegate: SearchItem {
+                        id: chooserItem
                         width: chooserGrid.cellWidth
                         height: chooserGrid.cellWidth
-                        radius: 5 * background.scaleFactor
                         border.width: index == chooserGrid.colIndex ? 3 : 1
                         border.color: index == chooserGrid.colIndex ? "white" : "darkgray"
-                        color: modelData
+                        highlightSymbol: index == chooserGrid.colIndex
+                        searchItemIndex: modelData
+                        radius: 5
 
                         MouseArea {
                             id: chooserMouseArea
@@ -301,7 +301,7 @@ if (targetY < 0) {
                             hoverEnabled: ApplicationInfo.isMobile ? false : true
 
                             onClicked: {
-                                chooserGrid.colIndex = index;
+                                chooserGrid.colIndex = chooserItem.searchItemIndex;
                                 var obj = items.guessModel.get(0);
                                 obj.guess.setProperty(chooserGrid.guessIndex, "colIndex", chooserGrid.colIndex);
                                 showChooser(false);
@@ -331,15 +331,14 @@ if (targetY < 0) {
                 Repeater {
                     id: currentRepeater
 
-                    delegate: Rectangle {
+                    delegate: SearchItem {
                         id: currentGuess
 
                         width: guessColumn.guessSize * currentRow.factor
                         height: guessColumn.guessSize * currentRow.factor
-                        radius: width * 0.5
                         border.width: 2 * currentRow.factor
                         border.color: "lightgray"
-                        color: Activity.colors[colIndex]
+                        searchItemIndex: colIndex
                         opacity: 1.0
                         z: 2
 
@@ -361,10 +360,10 @@ if (targetY < 0) {
                                 if(chooserTimer.running && chooserGrid.guessIndex === index) {
                                     if (mouse.button == Qt.LeftButton)
                                         obj.colIndex = (obj.colIndex ==
-                                                        Activity.currentColors.length - 1) ? 0 : obj.colIndex + 1;
+                                                        Activity.currentIndeces.length - 1) ? 0 : obj.colIndex + 1;
                                     else
                                         obj.colIndex = (obj.colIndex == 0) ?
-                                                    Activity.currentColors.length - 1 : obj.colIndex - 1;
+                                                    Activity.currentIndeces.length - 1 : obj.colIndex - 1;
                                 }
                                 showChooser(true, index, parent);
                             }
@@ -413,11 +412,11 @@ if (targetY < 0) {
             boundsBehavior: Flickable.DragOverBounds
             verticalLayoutDirection: ListView.BottomToTop
 
-            readonly property int guessSize: 30 * background.scaleFactor * ApplicationInfo.ratio
-            readonly property int vertSpacing: 15 * background.scaleFactor * ApplicationInfo.ratio
-            readonly property int horizSpacing: 15 * background.scaleFactor * ApplicationInfo.ratio
-            readonly property int statusMargin: 5 * background.scaleFactor * ApplicationInfo.ratio
-            readonly property int resultSize: 10 * background.scaleFactor * ApplicationInfo.ratio
+            readonly property int guessSize: 30 * ApplicationInfo.ratio
+            readonly property int vertSpacing: 15 * ApplicationInfo.ratio
+            readonly property int horizSpacing: 15 * ApplicationInfo.ratio
+            readonly property int statusMargin: 5 * ApplicationInfo.ratio
+            readonly property int resultSize: 10 * ApplicationInfo.ratio
             readonly property int guessColWidth: Activity.maxPieces * (guessSize + (2 * guessColumn.statusMargin))
                                                  + (Activity.maxPieces-1) * horizSpacing;
             readonly property int resultColWidth: Activity.maxPieces * resultSize
@@ -501,7 +500,7 @@ if (targetY < 0) {
                             }
                         }
 
-                        Rectangle {
+                        SearchItem {
                             id: singleGuess
 
                             width: guessColumn.guessSize
@@ -511,10 +510,9 @@ if (targetY < 0) {
                             anchors.leftMargin: guessColumn.statusMargin
                             anchors.topMargin: guessColumn.statusMargin
 
-                            radius: width * 0.5
                             border.width: 2
                             border.color: "lightgray"
-                            color: Activity.colors[colIndex]
+                            searchItemIndex: colIndex
                             opacity: 1.0
                             z: 2
 
@@ -622,15 +620,73 @@ if (targetY < 0) {
             onClose: home()
         }
 
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    property alias modeBox: modeBox
+
+                    property var availableModes: [
+                        { "text": qsTr("Colors"), "value": "color" },
+                        { "text": qsTr("Shapes"), "value": "symbol" }
+                    ]
+
+                    Flow {
+                        id: flow
+                        spacing: 5
+                        width: dialogActivityConfig.width
+                        GCComboBox {
+                            id: modeBox
+                            model: availableModes
+                            background: dialogActivityConfig
+                            label: qsTr("Select your mode")
+                        }
+                    }
+                }
+            }
+            onClose: home()
+            onLoadData: {
+                if(dataToSave && dataToSave["mode"]) {
+                    Activity.mode = dataToSave["mode"];
+                }
+            }
+
+            onSaveData: {
+                var newMode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
+                if (newMode !== Activity.mode) {
+                    chooserGrid.model = new Array();
+                    Activity.mode = newMode;
+                    dataToSave = {"mode": Activity.mode};
+                    Activity.initLevel();
+                }
+            }
+
+            function setDefaultValues() {
+                for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i ++) {
+                    if(dialogActivityConfig.configItem.availableModes[i].value === Activity.mode) {
+                        dialogActivityConfig.configItem.modeBox.currentIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
+
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | config }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onConfigClicked: {
+                dialogActivityConfig.active = true
+                // Set default values
+                dialogActivityConfig.setDefaultValues();
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {

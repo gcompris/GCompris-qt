@@ -61,7 +61,7 @@ ActivityBase {
             id: items
             property alias background: background
             property alias bar: bar
-            property alias bonus: bonus
+            property alias bonusTimer: bonusTimer
             property alias containerModel: containerModel
             property alias questionItem: questionItem
             // On startup we want to queue the first sound but not after
@@ -192,7 +192,7 @@ ActivityBase {
         BarButton {
             id: repeatItem
             source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            sourceSize.width: 80 * ApplicationInfo.ratio
+            sourceSize.height: visible ? 80 * ApplicationInfo.ratio : 1
             z: bar.z + 1
             visible: items.audioOk
             anchors {
@@ -204,13 +204,35 @@ ActivityBase {
                            questionItem.initQuestion()
         }
 
+        Score {
+            id: score
+            anchors.bottom: repeatItem.top
+            anchors.right: repeatItem.right
+            anchors.bottomMargin: 30
+            anchors.margins: 0
+        }
+
+        Timer {
+            id: bonusTimer
+            interval: 2000
+            property bool win
+
+            function good() {
+                win = true
+                start()
+            }
+
+            function bad() {
+                win = false
+                start()
+            }
+
+            onTriggered: win ? bonus.good("flower") : bonus.bad("flower")
+        }
+
         Bonus {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
-        }
-
-        Score {
-            id: score
         }
     }
 

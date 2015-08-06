@@ -70,12 +70,11 @@ ActivityBase {
             source: "qrc:/gcompris/src/activities/traffic/resource/traffic_box.svg"
 
             anchors.centerIn: parent
-            sourceSize.width: Math.max(400, background.width * 0.4175 * ApplicationInfo.ratio) //334
-            sourceSize.height: Math.max(400, background.height * 0.636538462 * ApplicationInfo.ratio) //331
+            sourceSize.width: Math.min(background.width * 0.85,
+                                       background.height * 0.85)
             fillMode: Image.PreserveAspectFit
-            property double scaleFactor: Math.min(background.width / background.sourceSize.width,
-                    background.height / background.sourceSize.height)
-            
+            property double scaleFactor: background.width / background.sourceSize.width
+
             Grid {
                 id: jamGrid
                 anchors.centerIn: parent

@@ -116,6 +116,7 @@ ActivityBase {
                     box_scale.running = false
                     closebox.visible= false
                     show.start()
+                    background.opacity = 0.5
                 }
             }
         }
@@ -143,6 +144,10 @@ ActivityBase {
                 openbox.visible = false
                 background.opacity = 0.7
                 show.stop()
+                previous.visible =  true
+                next.visible = true
+                info_rect.visible = true
+                Activity.next()
             }
         }
 
@@ -183,7 +188,6 @@ ActivityBase {
                                 (background.height - 100 * ApplicationInfo.ratio) * 0.7)
                 height: width
                 fillMode: Image.PreserveAspectFit
-                source: Activity.dataset[Activity.count].img
             }
 
             Rectangle {
@@ -220,7 +224,6 @@ ActivityBase {
                     to: 1
                     duration: 1000
                 }
-                text: Activity.dataset[Activity.count].name
             }
         }
 
@@ -281,11 +284,8 @@ ActivityBase {
                 width: parent.width * 0.94
                 wrapMode: Text.WordWrap
                 fontSize: smallSize
-                text: Activity.count.toString()
             }
         }
-
-
 
 
         // Load the next part
@@ -324,9 +324,16 @@ ActivityBase {
                 }
                 MouseArea {
                     anchors.fill: parent
-                    onClicked:  load.source ="resource/levels/Level1.qml"
+                    onClicked:  {
+                        holder.visible = false
+                        next.visible = false
+                        previous.visible = false
+                        info_rect.visible = false
+                        background.source = "qrc:/gcompris/src/activities/imageid/resource/imageid-bg.svg"
+                        load.source = "Quiz.qml"
+                    }
                 }
-           }
+            }
 
         }
 

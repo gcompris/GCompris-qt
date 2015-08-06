@@ -33,6 +33,7 @@ Image {
     property bool playAudioOnError: false
 
     function select() {
+        mouseArea.enabled = false
         if(question === Activity.getCurrentTextQuestion()) {
             particles.burst(40)
             animWin.start()
@@ -46,6 +47,7 @@ Image {
     }
 
     MouseArea {
+        id: mouseArea
         anchors.fill: parent
         onClicked: select()
     }
@@ -66,7 +68,8 @@ Image {
               property: "rotation"
               from: 10; to: -10
               duration: 400 + Math.floor(Math.random() * 400)
-              easing.type: Easing.InOutQuad }
+              easing.type: Easing.InOutQuad
+          }
     }
 
     SequentialAnimation {
@@ -79,6 +82,11 @@ Image {
               from: 0; to: 360
               duration: 600
               easing.type: Easing.InOutQuad
+          }
+          onRunningChanged: {
+              if (running == false) {
+                  mouseArea.enabled = true
+              }
           }
     }
 
@@ -117,6 +125,11 @@ Image {
             from: cross.size
             to: 0
             easing.type: Easing.InOutQuad
+        }
+        onRunningChanged: {
+            if (running == false) {
+                mouseArea.enabled = true
+            }
         }
     }
 

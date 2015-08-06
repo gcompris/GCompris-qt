@@ -37,6 +37,7 @@ Item {
     property int unmatchedIndex: 0;
     property alias text: wordText.text;
     property bool wonState: false
+    property string mode
 
     signal won
 
@@ -84,13 +85,18 @@ Item {
         if (wonState)
             return
 
-        var chars = text.split("");
-        if (chars[unmatchedIndex] == c) {
-            unmatchedIndex++;
-            return true;
+        if(word.mode === 'letter') {
+            unmatchedIndex = c.length
+            return (text === c)
         } else {
-            unmatchedIndex = 0;
-            return false;
+            var chars = text.split("");
+            if (chars[unmatchedIndex] == c) {
+                unmatchedIndex++;
+                return true;
+            } else {
+                unmatchedIndex = 0;
+                return false;
+            }
         }
     }
 
