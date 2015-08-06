@@ -53,12 +53,12 @@ GridView {
         opacity: 0.5
         z: 11
         visible: background.moveAnswerCell
-        x: answerSheet.currentItem.x - answerSheet.cellWidth
+//        x: answerSheet.currentItem.x - answerSheet.cellWidth
         Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
     }
     highlightFollowsCurrentItem: true
     highlightMoveDuration: Activity.moveAnimDuration
-    keyNavigationWraps: true
+    keyNavigationWraps: false
     focus: true
 
     property int draggedItemIndex: -1

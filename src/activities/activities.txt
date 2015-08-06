@@ -120,6 +120,8 @@ penalty
 photo_hunter
 planegame
 programmingMaze
+readingh
+readingv
 redraw
 redraw_symmetrical
 renewable_energy
