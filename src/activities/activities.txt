@@ -88,6 +88,8 @@ numbers-odd-even
 penalty
 planegame
 programmingMaze
+readingh
+readingv
 redraw
 redraw_symmetrical
 reversecount

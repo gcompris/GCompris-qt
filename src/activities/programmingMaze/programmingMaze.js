@@ -178,6 +178,10 @@ function initLevel() {
     items.background.moveProcedureCell = false
     items.background.insertIntoMain = true
     items.background.insertIntoProcedure = false
+    items.answerHeaderComponent.mainHeaderOpacity = 1
+    items.procedureHeaderComponent.pHeaderOpacity = 0.5
+    items.answerSheet.currentIndex = -1
+    items.procedure.currentIndex = -1
     items.answerSheet.highlightMoveDuration = moveAnimDuration
     items.procedure.highlightMoveDuration = moveAnimDuration
     items.runCodeImage = okImage
@@ -328,6 +332,8 @@ function executeNextInstruction() {
         runningProcedure = true
         items.background.moveProcedureCell = true
         items.background.moveAnswerCell = false
+        items.answerSheet.currentIndex += 1
+        items.procedure.currentIndex = -1
         j = j + 1
         executeNextInstruction()
     }
@@ -387,3 +393,9 @@ function repositionObjectsOnHeightChanged(factor) {
         initLevel()
 }
 
+function reloadLevel() {
+    if(deadEndPoint) {
+        playerCode = []
+    }
+    initLevel()
+}

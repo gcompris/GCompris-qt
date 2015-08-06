@@ -84,6 +84,8 @@ ActivityBase {
             property alias answerModel: answerModel
             property alias answerSheet: answerSheet
             property alias procedureModel: procedureModel
+            property alias answerHeaderComponent: answerHeaderComponent
+            property alias procedureHeaderComponent: procedureHeaderComponent
             property alias procedure: procedure
             property alias player: player
             property alias fish: fish
@@ -347,6 +349,7 @@ ActivityBase {
             currentModel: procedureModel
             anchors.right: parent.right
             anchors.bottom: parent.bottom
+            visible: (bar.level > 2)? true : false
             //highlight move answer cell
         }
 
@@ -468,6 +471,7 @@ ActivityBase {
             height: 50 * ApplicationInfo.ratio
             anchors.left: procedure.left
             anchors.bottom: procedure.top
+            visible: (bar.level > 2)? true : false
 //            anchors.top: answerSheet.bottom
             property alias pHeaderOpacity: procedureHeaderRect.opacity
             Rectangle {
@@ -529,7 +533,7 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onReloadClicked: Activity.initLevel()
+            onReloadClicked: Activity.reloadLevel()
         }
 
         Bonus {
