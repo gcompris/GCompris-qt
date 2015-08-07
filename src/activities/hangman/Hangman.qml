@@ -33,6 +33,7 @@ ActivityBase {
     
     // Overload this in your activity to change it
     // Put you default-<locale>.json files in it
+   
     property string dataSetUrl: "qrc:/gcompris/src/activities/hangman/resource/"
     
     onStart:{ focus = true
@@ -53,6 +54,10 @@ ActivityBase {
         anchors.fill: parent
         sourceSize.width:parent.width
         
+         // system locale by default
+         property string locale: "system"
+        
+        
         readonly property string wordsResource: "data2/words/words.rcc"
         property bool englishFallback: false
         property bool downloadWordsNeeded: false
@@ -64,7 +69,7 @@ ActivityBase {
         
         
         Component.onCompleted: {
-            
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -86,8 +91,11 @@ ActivityBase {
             property alias wordImage: wordImage
             property alias score: score
             property alias parser: parser
+            property alias locale: background.locale
+            property int noOfLife:noOfLife
             property variant goodWord
             property int goodWordIndex
+           
             property alias englishFallbackDialog: englishFallbackDialog
 
             
@@ -297,17 +305,7 @@ ActivityBase {
                                 label: qsTr("Select your locale")
                             }
                         }
-                        /* TODO handle this:
-                        GCDialogCheckBox {
-                            id: uppercaseBox
-                            width: 250 * ApplicationInfo.ratio
-                            text: qsTr("Uppercase only mode")
-                            checked: true
-                            onCheckedChanged: {
-                                print("uppercase changed")
-                            }
-                        }
-*/
+                        
                     }
                 }
             }

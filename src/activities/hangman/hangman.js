@@ -57,7 +57,12 @@ function start(items_) {
     items = items_
     currentLevel = 0;
     currentSubLevel = 0;
-    noOfLife = 6;
+    items.noOfLife = 6;
+    
+    var locale = items.locale == "system" ? "$LOCALE" : items.locale
+
+    // register the voices for the locale
+    GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(GCompris.ApplicationInfo.getVoicesLocale(items.locale)));
     
     dataset = Lang.load(items.parser, baseUrl, "words.json", "content-$LOCALE.json")
     if(!dataset) {
@@ -191,12 +196,12 @@ function processKeyPress(text) {
 
     if(flag !== 1){
         wordi = inital;
-        noOfLife=noOfLife-1;
+        items.noOfLife=items.noOfLife-1;
     }
     items.hidden.text = wordi
     console.log("wordlength"+currentWord.length);
     console.log("count"+countNoAlphabet);
-    if(noOfLife <= 3)
+    if(items.noOfLife <= 3)
     {
       items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image);
     }
