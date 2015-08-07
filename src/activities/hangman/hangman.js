@@ -200,10 +200,7 @@ function processKeyPress(text) {
     {
       items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image);
     }
-    else
-    {
-      items.wordImage.changeSource("qrc:/gcompris/src/activities/hangman/resource/quemark.svg");
-    }
+    
     if(countNoAlphabet >= (currentWord.length)){
         items.ping_animation.running = true
         items.bonus.good("lion");
@@ -237,7 +234,7 @@ function initSubLevel()
     items.goodWordIndex = subLevelsLeft.pop()
     items.goodWord = wordList[items.goodWordIndex]
     var text1 = items.goodWord.translatedTxt;
-    
+    items.wordImage.changeSource("qrc:/gcompris/src/activities/hangman/resource/quemark.svg");
     win=0;
     wordi = new Array();
     currentWord = text1 ;
