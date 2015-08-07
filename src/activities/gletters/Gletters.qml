@@ -48,7 +48,7 @@ ActivityBase {
     }
 
     onStart: focus = true
-    onStop: {}
+    onStop: { }
 
     // When going on configuration, it steals the focus and re set it to the activity.
     // We need to set it back to the textinput item in order to have key events.
@@ -95,6 +95,7 @@ ActivityBase {
         }
 
         onStart: {
+	     focus:true
             Activity.start(items, uppercaseOnly, mode);
             Activity.focusTextInput()
         }
