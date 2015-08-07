@@ -74,16 +74,13 @@ function start(items_, uppercaseOnly_,  _mode) {
     currentSubLevel = 0;
 
     var locale = items.locale == "system" ? "$LOCALE" : items.locale
-<<<<<<< HEAD
 
     // register the voices for the locale
     GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(GCompris.ApplicationInfo.getVoicesLocale(items.locale)));
 
     items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
-=======
        items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
->>>>>>>  helicoper motion set but still pressing problem is their and roation and not perfect
-            items.ourActivity.dataSetUrl + "default-"+locale+".json"));
+            items.ourActivity.dataSetUrl + "default-"+locale+".json")));
     // If wordlist is empty, we try to load from short locale and if not present again, we switch to default one
     var localeUnderscoreIndex = locale.indexOf('_')
     // probably exist a better way to see if the list is empty
