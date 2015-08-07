@@ -79,8 +79,7 @@ function start(items_, uppercaseOnly_,  _mode) {
     GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(GCompris.ApplicationInfo.getVoicesLocale(items.locale)));
 
     items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
-       items.wordlist.loadFromFile(GCompris.ApplicationInfo.getLocaleFilePath(
-            items.ourActivity.dataSetUrl + "default-"+locale+".json")));
+            items.ourActivity.dataSetUrl + "default-"+locale+".json"));
     // If wordlist is empty, we try to load from short locale and if not present again, we switch to default one
     var localeUnderscoreIndex = locale.indexOf('_')
     // probably exist a better way to see if the list is empty
@@ -386,33 +385,4 @@ function nextLevel() {
     }
     currentSubLevel = 0;
     initLevel();
-}
-
-function previousLevel() {
-    if(--currentLevel < 0) {
-        currentLevel = maxLevel - 1
-    }
-    currentSubLevel = 0;
-    initLevel();
-}
-
-function nextSubLevel() {
-    if( ++currentSubLevel >= maxSubLevel) {
-        currentSubLevel = 0
-        items.bonusTimer.start();
-    } else
-        initSubLevel();
-}
-
-function playLetter(letter) {
-    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
-
-    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/"+locale+"/alphabet/"
-                                                                       + Core.getSoundFilenamForChar(letter)))
-}
-
-
-function focusTextInput() {
-    if (!GCompris.ApplicationInfo.isMobile && items && items.textinput)
-        items.textinput.forceActiveFocus();
 }
