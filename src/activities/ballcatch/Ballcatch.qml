@@ -105,6 +105,8 @@ ActivityBase {
                 win.connect(Activity.nextLevel)
                 loose.connect(Activity.restartLevel)
             }
+            onStart: tux.opacity = 0
+            onStop: tux.opacity = 1
         }
 
         Image {
@@ -113,6 +115,7 @@ ActivityBase {
             y: leftHand.y - height / 3 - height / 2
             sourceSize.height: 200 * ApplicationInfo.ratio
             source: "qrc:/gcompris/src/activities/ballcatch/resource/tux.svg"
+            Behavior on opacity { PropertyAnimation { easing.type: Easing.InQuad; duration: 250 } }
         }
 
         Image {
