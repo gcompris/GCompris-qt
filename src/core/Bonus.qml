@@ -90,7 +90,8 @@ Image {
     anchors.fill: parent
     fillMode: Image.Pad
     z: 1000
-    scale: ApplicationInfo.ratio
+    sourceSize.width: parent.width * 0.5
+    sourceSize.height: parent.height * 0.7
 
     /**
      * Triggers win feedback.
