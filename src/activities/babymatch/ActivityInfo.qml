@@ -25,7 +25,7 @@ ActivityInfo {
   difficulty: 1
   icon: "babymatch/babymatch.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
-  demo: false
+  demo: true
   title: qsTr("Matching Items")
   description: qsTr("Drag and Drop the items to make them match")
 //  intro: "Slide the images on their respective targets"

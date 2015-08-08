@@ -25,7 +25,7 @@ ActivityInfo {
   difficulty: 1
   icon: "details/details.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
-  demo: false
+  demo: true
   title: qsTr("Find the details")
   description: qsTr("Drag and Drop the shapes on their respective targets")
 //  intro: "Slide the images on their respective targets"

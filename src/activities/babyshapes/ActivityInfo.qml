@@ -26,7 +26,7 @@ ActivityInfo {
   difficulty: 1
   icon: "babyshapes/babyshapes.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
-  demo: false
+  demo: true
   title: qsTr("Complete the puzzle")
   description: qsTr("Drag and Drop the shapes on their respective targets")
 //  intro: "Slide the images on their respective targets"

@@ -25,7 +25,7 @@ ActivityInfo {
   difficulty: 1
   icon: "imagename/imagename.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
-  demo: false
+  demo: true
   title: qsTr("Image Name")
   description: qsTr("Drag and Drop each item above its name")
 //  intro: "Slide the images on their respective targets"
