@@ -201,7 +201,7 @@ function processKeyPress(text) {
     items.hidden.text = wordi
     console.log("wordlength"+currentWord.length);
     console.log("count"+countNoAlphabet);
-    if(items.noOfLife <= 3)
+    if(items.noOfLife == 3)
     {
       items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image);
       
