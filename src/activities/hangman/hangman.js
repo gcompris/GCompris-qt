@@ -204,6 +204,7 @@ function processKeyPress(text) {
     if(items.noOfLife <= 3)
     {
       items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image);
+      
     }
     
     if(countNoAlphabet >= (currentWord.length)){
