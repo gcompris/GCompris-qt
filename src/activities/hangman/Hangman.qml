@@ -103,6 +103,12 @@ ActivityBase {
                 if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
                     voiceError();
             }
+            function voice()
+	    {	if(noOfLife==3)
+	        {	playWord();
+		}
+		
+	    }
             
         }
 
