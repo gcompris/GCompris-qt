@@ -103,7 +103,7 @@ ActivityBase {
                 if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
                     voiceError();
             }
-            onGoodWordChanged: playWord()
+            
         }
 
 
