@@ -54,6 +54,16 @@ Image {
     property string looseSound
 
     /**
+     * Emitted when the bonus starts
+     */
+    signal start
+
+    /**
+     * Emitted when the bonus stops
+     */
+    signal stop
+
+    /**
      * Emitted when the win event is over.
      *
      * After the animation has finished.
@@ -110,6 +120,7 @@ Image {
                 audioEffects.play(winSound)
         source = url + "bonus/" + name + "_good.svg"
         isWin = true;
+        start()
         animation.start()
     }
 
@@ -130,6 +141,7 @@ Image {
                 audioEffects.play(looseSound)
         source = url + "bonus/" + name + "_bad.svg"
         isWin = false;
+        start()
         animation.start()
     }
 
@@ -149,6 +161,9 @@ Image {
             duration: 500
             easing.type: Easing.InOutQuad
         }
-        onStopped: isWin ? win() : loose()
+        onStopped: {
+            bonus.stop()
+            isWin ? win() : loose()
+        }
     }
 }
