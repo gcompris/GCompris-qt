@@ -85,14 +85,12 @@ ActivityBase {
             property alias keyboard:keyboard
             property alias hidden:hidden
             property alias textinput: textinput
-            property alias ping:ping
-            property alias flower:flower
-            property alias ping_animation:ping_animation
             property alias wordImage: wordImage
             property alias score: score
             property alias parser: parser
             property alias locale: background.locale
             property int noOfLife:noOfLife
+            property alias thresh:thresh
             property variant goodWord
             property int goodWordIndex
            
@@ -179,26 +177,29 @@ ActivityBase {
 
         }
         
+       Item{ 
         
         Image {    id:imageframe
             visible:true
-            width:parent.width/4
-            height:parent.height/4
-            anchors.horizontalCenter:background.horizontalCenter
+            width:background.width/4
+            height:background.height/4
+            x:background.width/2.7
             y:background.height/10
             source:dataSetUrl+"imageid_frame.svg"
             Image{
                 id:wordImage
-                sourceSize.width: parent.width * 0.6
+                sourceSize.width: parent.width * 0.5
                 anchors {
                     centerIn: parent
-                    margins: 0.05 + parent.width
+                    margins: 0.06 + parent.width
                 }
                 property string nextSource
                 function changeSource(nextSource_) {
                     nextSource = nextSource_
                     animImage.start()
                 }
+                
+                 
 
                 SequentialAnimation {
                     id: animImage
@@ -220,67 +221,36 @@ ActivityBase {
                         duration: 100
                     }
                 }
+                
+                
 
             }
         }
         
         
+        Image {		id:threshmask
+			visible:true
+			width:background.width/4
+			height:background.height/4
+			x:background.width/2.7
+			y:background.height/10
+			source:dataSetUrl+"imageid_frame.svg"
+	}
+		
+	ThresholdMask {
+			 id:thresh 
+                         anchors.fill:threshmask
+                         source: threshmask
+                         maskSource: wordImage
+                         threshold:0
+                         
+         }
+	 
+	}
+        
+        
 
-        Image{
-            id:ping
-            visible:true
-            width:parent.width/12
-            height:parent.height/7
-            x:background.width/10
-            y:5*background.height/10
-            source:activity.dataSetUrl+"pingu.svg";
-            Behavior on x {
-                PropertyAnimation {
-                    id: xAnima
-                    easing.type: Easing.InQuad
-                    duration:  10000
-
-                }
-            }
-        }
-        Image{
-
-            id:flower
-            visible:false
-            width:ping.width/4
-            height:ping.height/5
-            source:activity.dataSetUrl+"flower.svg";
-            anchors.right:ping.right
-            y:5.4*background.height/10
-            x:background.width/6
-
-
-        }
-        SequentialAnimation{  id:ping_animation
-            PropertyAnimation{
-                target:flower
-                property:"visible" ;to:true
-            }
-            PropertyAnimation{
-                target:ping
-                property:"x" ;from:background.width/6; to :1.1*background.width/2
-                duration:5000
-                easing.type: Easing.InQuad
-            }
-            PropertyAnimation{
-                target:flower
-                property:"visible" ;to:"false"
-            }
-            PropertyAnimation{
-                target:ping
-                property:"x" ;from:1.1*background.width/2; to :background.width/6
-                duration:5000
-                easing.type: Easing.InQuad
-            }
-
-
-
-        }
+       
         
         DialogActivityConfig {
             id: dialogActivityConfig

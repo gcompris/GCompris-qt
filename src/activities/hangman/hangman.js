@@ -40,6 +40,8 @@ var items
 var win 
 
 var noOfLife;
+var theresss;
+var spreadd;
 
 var countNoAlphabet;
 var currentWord;
@@ -197,18 +199,15 @@ function processKeyPress(text) {
     if(flag !== 1){
         wordi = inital;
         items.noOfLife=items.noOfLife-1;
+	theresss=theresss-0.1;
+	items.thresh.threshold=theresss;
+	items.thresh.spread=items.thresh.spread+0.1;
     }
     items.hidden.text = wordi
     console.log("wordlength"+currentWord.length);
     console.log("count"+countNoAlphabet);
-    if(items.noOfLife == 3)
-    {
-      items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image);
-      
-    }
-    
     if(countNoAlphabet >= (currentWord.length)){
-        items.ping_animation.running = true
+        items.thresh.threshold=
         items.bonus.good("lion");
         nextSubLevel();
     }
@@ -240,7 +239,11 @@ function initSubLevel()
     items.goodWordIndex = subLevelsLeft.pop()
     items.goodWord = wordList[items.goodWordIndex]
     var text1 = items.goodWord.translatedTxt;
-    items.wordImage.changeSource("qrc:/gcompris/src/activities/hangman/resource/quemark.svg");
+    items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image);
+    items.noOfLife=6;
+    items.thresh.threshold=0.7;
+    items.thresh.spread=0.2;
+    theresss=0.7;
     win=0;
     wordi = new Array();
     currentWord = text1 ;
