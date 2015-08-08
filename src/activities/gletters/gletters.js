@@ -379,10 +379,35 @@ function audioCrashPlay() {
     items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
 }
 
-function nextLevel() {
-    if(maxLevel <= ++currentLevel ) {
-        currentLevel = 0
+
+function previousLevel() {
+    if(--currentLevel < 0) {
+        currentLevel = maxLevel - 1
     }
     currentSubLevel = 0;
     initLevel();
 }
+
+function nextSubLevel() {
+    if( ++currentSubLevel >= maxSubLevel) {
+        currentSubLevel = 0
+        items.bonusTimer.start();
+    } else
+        initSubLevel();
+}
+
+function playLetter(letter) {
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+
+    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/"+locale+"/alphabet/"
+                                                                       + Core.getSoundFilenamForChar(letter)))
+}
+
+
+function focusTextInput() {
+    if (!GCompris.ApplicationInfo.isMobile && items)
+        items.textinput.forceActiveFocus();
+}
+
+    
+
