@@ -32,8 +32,6 @@ ActivityBase {
 
     property var dataset
     property string backgroundImg
-    property int itemWidth
-    property int itemHeight
     
     property string mode: ""
 
@@ -103,13 +101,18 @@ ActivityBase {
             cellWidth: itemHeight + 10
             cellHeight: itemWidth + 10
             keyNavigationWraps: true
+
+            property int itemWidth: Math.min((parent.width * 0.6) / (count / 2),
+                                             (parent.height * 0.5) / (count / 3))
+            property int itemHeight: itemWidth
+
             delegate: ColorItem {
                 audioVoices: activity.audioVoices
                 source: model.image
                 audioSrc: model.audio ? model.audio : ""
                 question: model.text
-                sourceSize.height: itemHeight
-                sourceSize.width: itemWidth
+                sourceSize.height: container.itemHeight
+                sourceSize.width: container.itemWidth
             }
             add: Transition {
                 PathAnimation {

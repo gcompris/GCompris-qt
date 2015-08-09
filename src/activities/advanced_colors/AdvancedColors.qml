@@ -29,6 +29,4 @@ FindIt {
     mode: "AdvancedColors"
     dataset: Dataset
     backgroundImg: "qrc:/gcompris/src/activities/menu/resource/background.svg"
-    itemWidth: 130 * ApplicationInfo.ratio
-    itemHeight: 130 * ApplicationInfo.ratio
 }
