@@ -196,6 +196,8 @@ QString ApplicationInfo::getVoicesLocale(const QString &locale)
     QString _locale = locale;
     if(_locale == GC_DEFAULT_LOCALE) {
         _locale = QLocale::system().name();
+        if(_locale == "C")
+            _locale = "en_US";
     }
     // locales we have country-specific voices for:
     if (_locale.startsWith(QLatin1String("pt_BR")) ||
