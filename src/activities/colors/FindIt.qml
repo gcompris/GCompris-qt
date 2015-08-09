@@ -140,6 +140,9 @@ ActivityBase {
             anchors.top: parent.top
             anchors.topMargin: 10
             fontSize: largeSize
+            width: parent.width * 0.9
+            horizontalAlignment: Text.AlignHCenter
+            wrapMode: Text.WordWrap
             font.weight: Font.DemiBold
             style: Text.Outline
             styleColor: "black"
