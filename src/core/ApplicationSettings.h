@@ -231,8 +231,10 @@ public:
 
     bool isFullscreen() const { return m_isFullscreen; }
     void setFullscreen(const bool newMode) {
-        m_isFullscreen = newMode;
-        emit fullscreenChanged();
+        if(m_isFullscreen != newMode) {
+            m_isFullscreen = newMode;
+            emit fullscreenChanged();
+        }
     }
 
     bool isVirtualKeyboard() const { return m_isVirtualKeyboard; }
