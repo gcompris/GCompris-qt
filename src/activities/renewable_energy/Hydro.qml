@@ -120,6 +120,7 @@ Item {
             anchors.fill: sun
             visible: false
             onClicked: {
+                sun_area.visible = false
                 if(check == false){
                     hydro.state = "up"
                     check = true

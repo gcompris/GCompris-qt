@@ -715,7 +715,7 @@ ActivityBase {
 
             }
             if(Activity.currentLevel == 1) {
-
+                check.visible = true
                 if(Activity.voltage == 0  && residentsmallon.visible != true && tuxon.visible != true)
                 {
                     stepdownwire.visible = false
@@ -753,6 +753,7 @@ ActivityBase {
 
             }
             if(Activity.currentLevel == 2) {
+                check.visible = true
                 if(Activity.voltage == 0  && residentsmallon.visible == true && tuxon.visible == true && residentbigon.visible == true)
                 {
                     tux()
@@ -833,7 +834,6 @@ ActivityBase {
                 {
                     big()
                 }
-
             }
         }
 
