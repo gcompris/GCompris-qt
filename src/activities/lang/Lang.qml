@@ -49,7 +49,7 @@ ActivityBase {
         property bool englishFallback: false
         property bool downloadWordsNeeded: false
 
-        //system locale by defauls
+        //system locale by default
         property string locale: "system"
 
         signal start
@@ -117,8 +117,8 @@ ActivityBase {
 
         onStart: {
             Activity.init(items)
-            items.menu_screen.visible = true
-            repeatItem.visible = false
+//            items.menu_screen.visible = true
+//            repeatItem.visible = false
             activity.audioVoices.error.connect(voiceError)
             activity.audioVoices.done.connect(voiceDone)
 
@@ -593,10 +593,11 @@ ActivityBase {
             onLoadData: {
                 if(dataToSave && dataToSave["locale"] && dataToSave["progress"] && dataToSave["storedFavorites"]) {
                     background.locale = dataToSave["locale"];
-                    var locale = background.locale
+                    var locale = ApplicationInfo.getVoicesLocale(background.locale)
+                    console.log("locale while loading "+locale)
                     console.log("loading progress "+dataToSave["progress"][locale])
                     Activity.newProgress = dataToSave["progress"]
-                    Activity.saveNewProgress(dataToSave["progress"][locale]);
+                    Activity.saveNewProgress(dataToSave["progress"][locale],locale);
                     var storedFavorites = dataToSave["storedFavorites"];
 
                     for(var i = 0;i < storedFavorites.length; i++) {
@@ -606,6 +607,8 @@ ActivityBase {
             }
             onSaveData: {
                 var oldLocale = background.locale;
+                console.log("the locale in onSaveData",ApplicationInfo.getVoicesLocale(oldLocale))
+                oldLocale = ApplicationInfo.getVoicesLocale(oldLocale)
                 var newLocale = oldLocale;
                 if(dialogActivityConfig.loader.item)
                     newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
@@ -613,6 +616,9 @@ ActivityBase {
                 if(newLocale.indexOf('.') != -1) {
                     newLocale = newLocale.substring(0, newLocale.indexOf('.'))
                 }
+                console.log("new locale before converting "+newLocale)
+                newLocale = ApplicationInfo.getVoicesLocale(newLocale)
+                console.log("new locale after converting "+newLocale)
                 var newProgress = {};
                 newProgress = Activity.newProgress;
                 newProgress[oldLocale] = Activity.savedProgress
@@ -626,7 +632,7 @@ ActivityBase {
 
                 background.locale = newLocale;
                 Activity.newProgress = newProgress;
-                Activity.saveNewProgress(newProgress[newLocale]);
+                Activity.saveNewProgress(newProgress[newLocale], newLocale);
                 console.log("After saving the progress of locale  ",newLocale , " progress " , Activity.savedProgress)
                 Activity.favorites = newStoredFavorites;
                 // Restart the activity with new information

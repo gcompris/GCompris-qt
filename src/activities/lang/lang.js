@@ -1,4 +1,4 @@
-/* GCompris - lang.qml
+/* GCompris - lang.js
 *
 * Copyright (C) Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
 *
@@ -74,7 +74,9 @@ function start() {
     currentLevel = 0;
     currentSubLevel = 0;
 
-    var locale = items.locale == "system" ? "$LOCALE" : items.locale
+    console.log("the locale in items", GCompris.ApplicationInfo.getVoicesLocale(items.locale))
+//    var locale = items.locale == "system" ? "$LOCALE" : items.locale
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
     dataset = Lang.load(items.parser, baseUrl, "words.json", "content-"+ locale +".json")
 
     // If dataset is empty, we try to load from short locale and if not present again, we switch to default one
@@ -111,10 +113,8 @@ function start() {
             currentProgress[j] = 0
     }
 
-    currentLocale = items.locale
-    //for first time filling up the progress
     if(!items.dialogActivityConfig.dataToSave["progress"]) {
-        console.log("progress saved does not exist "+currentLocale)
+        console.log("saving progress initialization"+locale)
         savedProgress = []
         for(var k =0; k<maxLevel; k++)
             savedProgress[k] = 0
@@ -126,15 +126,16 @@ function start() {
             favorites[k] = false
     }
 
-
     items.menuModel.clear()
     items.menuModel.append(menus)
     sortByFavorites();
+
 
     items.imageFrame.visible = false
     items.score.visible = false
 
     items.menu_screen.visible = true
+    items.repeatItem.visible = false
     items.menu_screen.focus = true
     items.menu_screen.forceActiveFocus()
 
@@ -340,9 +341,9 @@ function sortByFavorites() {
     }
 }
 
-function saveNewProgress(progress) {
+function saveNewProgress(progress, locale) {
     if(!progress) {
-        console.log("saving progress for new language "+items.background.locale)
+        console.log("saving progress for new language "+locale)
         savedProgress = []
         for(var k =0; k<maxLevel; k++)
             savedProgress[k] = 0

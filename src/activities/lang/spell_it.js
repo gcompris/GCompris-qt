@@ -1,4 +1,4 @@
-/* GCompris - lang.qml
+/* GCompris - spell_it.js
 *
 * Copyright (C) Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
 *

@@ -1,4 +1,4 @@
-/* GCompris - lang.qml
+/* GCompris - MenuScreen.qml
 *
 * Copyright (C) Siddhesh suthar <siddhesh.it@gmail.com> (Qt Quick port)
 *
