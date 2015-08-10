@@ -199,7 +199,6 @@ Image {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        console.log("once and for all ", typeof(Activity.favorites[index]), "value", Activity.favorites[index])
                         favoriteIndicator = !favoriteIndicator
                         Activity.favorites[index] = favoriteIndicator
                     }
@@ -231,11 +230,6 @@ Image {
             GradientStop { position: 0.96; color: "#00FFFFFF"}
         }
     }
-
-    DelegateModel {
-
-    }
-
 
     layer.effect: OpacityMask {
         id: activitiesOpacity

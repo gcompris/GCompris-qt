@@ -47,6 +47,7 @@ var favorites= []
 var subWordList
 var currentSubLesson
 var maxSubLesson
+var currentLocale
 // miniGames is list of miniGames
 // first element is Activity name,
 // second element is mode of miniGame
@@ -57,6 +58,7 @@ var miniGames = [["QuizActivity", 1,"Quiz.qml"],
                  ["SpellActivity", 1,"SpellIt.qml"]];
 var currentMiniGame
 var loadedItems
+var newProgress = {}
 
 function init(items_) {
     items = items_
@@ -109,24 +111,25 @@ function start() {
             currentProgress[j] = 0
     }
 
-    for (var k =0; k<maxLevel; k++) {
-        if(!(savedProgress[k] >0)) {
+    currentLocale = items.locale
+    //for first time filling up the progress
+    if(!items.dialogActivityConfig.dataToSave["progress"]) {
+        console.log("progress saved does not exist "+currentLocale)
+        savedProgress = []
+        for(var k =0; k<maxLevel; k++)
             savedProgress[k] = 0
-        }
     }
 
-    if(favorites.length == 0 && !items.dialogActivityConfig.dataToSave["storedFavorites"]) {
-       console.log("favorites is empty ? ", favorites.length, " dataToSave stored favt ", !items.dialogActivityConfig.dataToSave["storedFavorites"])
+    if(favorites.length == 0 || !items.dialogActivityConfig.dataToSave["storedFavorites"]) {
+//       console.log("favorites is empty ? ", favorites.length, " dataToSave stored favt ", !items.dialogActivityConfig.dataToSave["storedFavorites"])
         for(k =0; k<maxLevel; k++)
             favorites[k] = false
     }
 
-    console.log("At start "+favorites)
 
     items.menuModel.clear()
     items.menuModel.append(menus)
     sortByFavorites();
-    console.log("after sorting ",favorites)
 
     items.imageFrame.visible = false
     items.score.visible = false
@@ -138,7 +141,6 @@ function start() {
 }
 
 function stop() {
-    console.log("at the stop "+favorites)
 }
 
 function initLevel(currentLevel_) {
@@ -179,8 +181,6 @@ function initLevel(currentLevel_) {
         subLevelsLeft.push(i)   // This is available in all editors.
     }
 
-    for(i =0 ;i < maxLevel;i++)
-//    items.progress = savedProgress
     if(currentSubLesson == 0)
             currentProgress[currentLevel] = 0
 
@@ -325,6 +325,10 @@ function launchMenuScreen() {
         if (loadedItems)
             loadedItems.visible = false
     }
+    else {
+        activity.home()
+    }
+
     sortByFavorites()
 }
 
@@ -333,5 +337,17 @@ function sortByFavorites() {
         if(favorites[i] === true || favorites[i] === "true") {
             items.menuModel.move(i,0,1);
         }
+    }
+}
+
+function saveNewProgress(progress) {
+    if(!progress) {
+        console.log("saving progress for new language "+items.background.locale)
+        savedProgress = []
+        for(var k =0; k<maxLevel; k++)
+            savedProgress[k] = 0
+    }
+    else {
+        savedProgress = progress
     }
 }
