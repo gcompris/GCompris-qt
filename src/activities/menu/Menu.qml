@@ -223,8 +223,8 @@ ActivityBase {
         }
 
         // Activities
-        property int iconWidth: 190 * ApplicationInfo.ratio
-        property int iconHeight: 190 * ApplicationInfo.ratio
+        property int iconWidth: 180 * ApplicationInfo.ratio
+        property int iconHeight: 180 * ApplicationInfo.ratio
         property int activityCellWidth:
             horizontal ? background.width / Math.floor(background.width / iconWidth) :
                          (background.width - section.width) / Math.floor((background.width - section.width) / iconWidth)
