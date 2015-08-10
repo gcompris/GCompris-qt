@@ -141,6 +141,28 @@ ActivityBase {
             Activity.stop()
         }
 
+        Keys.onPressed: {
+            if(event.modifiers === Qt.ControlModifier && event.key === Qt.Key_1) {
+                Activity.initLevel(bar.level-1)
+            }
+            if(event.modifiers === Qt.ControlModifier && event.key === Qt.Key_2) {
+                Activity.currentMiniGame = 0
+                Activity.nextMiniGame()
+            }
+            if(event.modifiers === Qt.ControlModifier && event.key === Qt.Key_3) {
+                Activity.currentMiniGame = 1
+                Activity.nextMiniGame()
+            }
+            if(event.modifiers === Qt.ControlModifier && event.key === Qt.Key_4) {
+                Activity.currentMiniGame = 2
+                Activity.nextMiniGame()
+            }
+            if(event.modifiers === Qt.ControlModifier && event.key === Qt.Key_5) {
+                Activity.currentMiniGame = 3
+                Activity.nextMiniGame()
+            }
+        }
+
         Keys.onEscapePressed: {
             if (Activity.currentMiniGame != -1) {
                 Activity.launchMenuScreen()
