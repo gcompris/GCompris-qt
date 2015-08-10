@@ -268,9 +268,10 @@ ActivityBase {
                     sun_area.visible = false
                     rain.visible = true
                     cloud_info.running = true
-                    river.opacity = 1
+                    river_fill.running = true
                     cloud_opacity.start()
                     cloud_area.visible = false
+                    river.visible = true
                 }
             }
             NumberAnimation on opacity {
@@ -302,34 +303,132 @@ ActivityBase {
             ScriptAction {
                 script: background.next()
             }
+        }
+
+        Image {
+            id: river
+            source: activity.url + "river.svg"
+            width: parent.width*0.415
+            height: parent.height*0.74
+            anchors {
+                top: parent.top
+                left: parent.left
+                topMargin: parent.height*0.1775
+                leftMargin: parent.width*0.293
+            }
+            visible: false
+        }
+
+        Image {
+            id: reservoir1
+            source: activity.url + "reservoir1.svg"
+            width: parent.width*0.06
+            height: parent.height*0.15
+            anchors {
+                top: parent.top
+                left: parent.left
+                topMargin: parent.height*0.2925
+                leftMargin: parent.width*0.3225
+            }
+            opacity: 0
+        }
+
+        Image {
+            id: reservoir2
+            source: activity.url + "reservoir2.svg"
+            width: parent.width*0.12
+            height: parent.height*0.155
+            anchors {
+                top: parent.top
+                left: parent.left
+                topMargin: parent.height*0.2925
+                leftMargin: parent.width*0.285
+            }
+            opacity: 0
+        }
+
+        Image {
+            id: reservoir3
+            source: activity.url + "reservoir3.svg"
+            width: parent.width*0.2
+            height: parent.height*0.17
+            anchors {
+                top: parent.top
+                left: parent.left
+                topMargin: parent.height*0.29
+                leftMargin: parent.width*0.25
+            }
+            opacity: 0
+        }
+
+        SequentialAnimation {
+            id: river_fill
+            running: false
+
+            PropertyAnimation{
+                target: reservoir1
+                property: "opacity"
+                to: 1
+            }
+
+            PauseAnimation {
+                duration: 1000
+            }
+
+            PropertyAnimation{
+                target: reservoir2
+                property: "opacity"
+                to: 1
+            }
+
+            PauseAnimation {
+                duration: 1000
+            }
+            PropertyAnimation{
+                target: reservoir3
+                property: "opacity"
+                to: 1
+            }
             onRunningChanged: {
-                if(!cloud_info.running)
+                if(!river_fill.running)
                 {
                     motor_area.visible = true
                 }
             }
         }
 
-        Image {
-            id: river
-            opacity: 0
-            source: activity.url + "river.svg"
-            height: parent.height*0.745
-            width: parent.width*0.46
-            anchors {
-                top: parent.top
-                left: parent.left
-                topMargin: parent.height*0.175
-                leftMargin: parent.width*0.250
+
+        SequentialAnimation {
+            id: river_empty
+            running: false
+
+            PropertyAnimation{
+                target: reservoir3
+                property: "opacity"
+                to: 0
             }
-            NumberAnimation on opacity {
-                id: river_dry
-                from: 1
-                to: 0.5
-                running: false
-                duration: 10000
+
+            PauseAnimation {
+                duration: 1000
+            }
+
+            PropertyAnimation{
+                target: reservoir2
+                property: "opacity"
+                to: 0
+            }
+
+            PauseAnimation {
+                duration: 1000
+            }
+
+            PropertyAnimation{
+                target: reservoir1
+                property: "opacity"
+                to: 0
             }
         }
+
 
         Image {
             id: motor
@@ -352,7 +451,7 @@ ActivityBase {
                     fillwater.opacity = 1
                     towerfull.visible = true
                     anim3.running = true
-                    river_dry.running = true
+                    river_empty.running = true
                     waste_area.visible = true
                 }
             }
@@ -498,25 +597,26 @@ ActivityBase {
                 rightMargin: shower.width*0.15
                 topMargin: shower.height*0.25
             }
-            MouseArea {
-                id: shower_area
-                visible: false
-                anchors.fill: showercold
-                onClicked: {
-                    console.log(wastewater.opacity)
-                    if(wastewater.opacity == 0.4 && shower_activate == true && cycle_done == false) {
-                        showerhot.visible = true
-                        tuxbath.visible = true
-                        showercold.visible = false
-                        tuxoff.visible = false
-                        anim2.running = true
-                        shower_info.running = true
-                        empty_water.running = true
-                        shower_area.visible = false
-                    }
+            visible: false
+        }
+
+        MouseArea {
+            id: shower_area
+            visible: false
+            anchors.fill: shower
+            onClicked: {
+                console.log(wastewater.opacity)
+                if(wastewater.opacity == 0.4 && shower_activate == true && cycle_done == false) {
+                    showerhot.visible = true
+                    tuxbath.visible = true
+                    showercold.visible = false
+                    tuxoff.visible = false
+                    anim2.running = true
+                    shower_info.running = true
+                    empty_water.running = true
+                    shower_area.visible = false
                 }
             }
-            visible: false
         }
 
 
@@ -898,12 +998,14 @@ ActivityBase {
             background.next()
             towerfull.scale = 0
             towerfull.visible = false
+            river_fill.running = false
+            river_empty.running = false
             anim2.running = false
             anim3.running = false
             shower_area.visible = false
             background.state = "origin"
             fillwater.opacity = 0
-            river.opacity = 0
+            river.visible = false
             shower_activate = false
             wastewater.opacity = 0
             cycle_done = false
