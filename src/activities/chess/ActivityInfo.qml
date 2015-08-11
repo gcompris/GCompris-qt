@@ -18,9 +18,9 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "chess_computer/ChessComputer.qml"
+  name: "chess/Chess.qml"
   difficulty: 2
-  icon: "chess_computer/chess_computer.svg"
+  icon: "chess/chess.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("Learning chess")
@@ -28,6 +28,6 @@ ActivityInfo {
   goal: ""
   prerequisite: qsTr("Mouse-manipulation")
   manual: ""
-  credit: qsTr("The chess engine is from gnuchess.")
+  credit: qsTr("The chess engine is p4wn from https://github.com/douglasbagnall/p4wn.")
   section: "/strategy/chess"
 }
