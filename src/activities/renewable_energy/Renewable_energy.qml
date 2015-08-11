@@ -715,10 +715,10 @@ ActivityBase {
 
             }
             if(Activity.currentLevel == 1) {
-                check.visible = true
                 if(Activity.voltage == 0  && residentsmallon.visible != true && tuxon.visible != true)
                 {
                     stepdownwire.visible = false
+                    check.visible = true
                 }
 
                 if(Activity.voltage == 0  && residentsmallon.visible == true && tuxon.visible == true)
@@ -726,40 +726,45 @@ ActivityBase {
                     tux()
                     small()
                     stepdownwire.visible = false
+                    check.visible = true
                 }
 
                 if(Activity.voltage == 0  && residentsmallon.visible != true && tuxon.visible == true)
                 {
                     tux()
                     stepdownwire.visible = false
+                    check.visible = true
                 }
 
                 if(Activity.voltage == 0  && residentsmallon.visible == true && tuxon.visible != true)
                 {
                     small()
                     stepdownwire.visible = false
+                    check.visible = true
                 }
 
                 if(Activity.voltage == 100  && residentsmallon.visible == true && tuxon.visible == true)
                 {
                     small()
+                    check.visible = true
                 }
 
                 if(Activity.voltage == 100  && residentsmallon.visible == true && tuxon.visible != true)
                 {
                     small()
                     stepdownwire.visible = false
+                    check.visible = true
                 }
 
             }
             if(Activity.currentLevel == 2) {
-                check.visible = true
                 if(Activity.voltage == 0  && residentsmallon.visible == true && tuxon.visible == true && residentbigon.visible == true)
                 {
                     tux()
                     small()
                     big()
                     stepdownwire.visible = false
+                    check.visible = true
                 }
 
                 if(Activity.voltage == 0  && residentsmallon.visible == true && tuxon.visible == true && residentbigon.visible != true)
@@ -767,6 +772,7 @@ ActivityBase {
                     tux()
                     small()
                     stepdownwire.visible = false
+                    check.visible = true
                 }
 
                 if(Activity.voltage == 0  && residentsmallon.visible != true && tuxon.visible == true && residentbigon.visible == true)
@@ -774,6 +780,7 @@ ActivityBase {
                     tux()
                     big()
                     stepdownwire.visible = false
+                    check.visible = true
                 }
 
                 if(Activity.voltage == 0  && residentsmallon.visible == true && tuxon.visible != true && residentbigon.visible == true)
@@ -781,58 +788,69 @@ ActivityBase {
                     big()
                     small()
                     stepdownwire.visible = false
+                    check.visible = true
                 }
 
                 if(Activity.voltage == 0  && residentsmallon.visible == true && tuxon.visible != true && residentbigon.visible != true)
                 {
                     small()
                     stepdownwire.visible = false
+                    check.visible = true
                 }
 
                 if(Activity.voltage == 0  && residentsmallon.visible != true && tuxon.visible == true && residentbigon.visible != true)
                 {
                     tux()
                     stepdownwire.visible = false
+                    check.visible = true
                 }
 
                 if(Activity.voltage == 0  && residentsmallon.visible != true && tuxon.visible != true && residentbigon.visible == true)
                 {
                     big()
                     stepdownwire.visible = false
+                    check.visible = true
                 }
 
                 if (Activity.voltage == 100 && tuxon.visible == true && residentsmallon.visible == true && residentbigon.visible == true)
                 {
                     small()
                     big()
+                    check.visible = true
                 }
 
                 if (Activity.voltage == 100 && tuxon.visible == true &&residentsmallon.visible == true && residentbigon.visible != true)
                 {
                     small()
+                    check.visible = true
+                }
+
+                if (Activity.voltage == 100 && tuxon.visible == true &&residentsmallon.visible != true && residentbigon.visible == true)
+                {
+                    big()
+                    check.visible = true
                 }
 
                 if (Activity.voltage == 100 && tuxon.visible != true && residentsmallon.visible == true && residentbigon.visible == true) {
                     big()
                     small()
+                    check.visible = true
                 }
 
                 if (Activity.voltage == 100 && tuxon.visible != true && residentsmallon.visible != true && residentbigon.visible == true) {
                     big()
+                    check.visible = true
                 }
 
                 if (Activity.voltage == 100 && tuxon.visible != true && residentsmallon.visible == true && residentbigon.visible != true) {
                     small()
+                    check.visible = true
                 }
 
-                if (Activity.voltage == 400 && residentbigon.visible == true)
+                if (Activity.voltage <= 400 && residentbigon.visible == true)
                 {
                     big()
-                }
-
-                if (Activity.voltage == 500  && residentbigon.visible == true)
-                {
-                    big()
+                    check.visible = true
                 }
             }
         }

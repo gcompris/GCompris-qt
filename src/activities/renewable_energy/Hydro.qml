@@ -645,10 +645,15 @@ Item {
         running: false
         repeat: false
         onTriggered: {
+            sunarea()
             Activity.paneloff()
             Activity.panel_activate = false
             panel_timer.stop()
         }
+    }
+
+    function sunarea() {
+        sun_area.visible = true
     }
 
     Timer {
