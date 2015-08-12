@@ -20,6 +20,8 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import QtQuick.Controls 1.0
+import QtQuick.Controls.Styles 1.0
 import GCompris 1.0
 
 import "../../core"
@@ -54,51 +56,82 @@ ActivityBase {
                                             background.height / (8 + 3))
             property var state
             property int from
+            property bool blackTurn
+            property var whiteAtBottom
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        // TODO Imprement a vertical layout
         Grid {
-            id: grid
-            anchors.horizontalCenter: parent.horizontalCenter
             anchors {
                 top: parent.top
                 topMargin: items.cellSize / 2
-                horizontalCenter: parent.horizontalCenter
+                leftMargin: 10 * ApplicationInfo.ratio
+            }
+            columns: 3
+            rows: 1
+            width: background.width
+            spacing: 10
+            horizontalItemAlignment: Grid.AlignHCenter
+            verticalItemAlignment: Grid.AlignVCenter
+
+            Column {
+                id: controls
+                spacing: 10
+                width: undo.width + (background.width * 0.9 - undo.width - grid.width) / 2
+                Button {
+                    id: undo
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    height: 30 * ApplicationInfo.ratio
+                    text: qsTr("Undo");
+                    style: GCButtonStyle {}
+                    onClicked: Activity.undo()
+                }
+
+                Button {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    height: 30 * ApplicationInfo.ratio
+                    text: qsTr("Swap");
+                    style: GCButtonStyle {}
+                    onClicked: Activity.swap()
+                }
             }
 
-            spacing: 5
-            columns: 8
-            rows: 8
+            Grid {
+                id: grid
+                spacing: 5
+                columns: 8
+                rows: 8
 
-            Repeater {
-                id: repeater
-                model: items.state
-                delegate: blueSquare
+                Repeater {
+                    id: repeater
+                    model: items.state
+                    delegate: blueSquare
 
-                Component {
-                    id: blueSquare
-                    Rectangle {
-                        color: index % 2 + (Math.floor(index / 8) % 2) == 1 ?
-                                   "#FF9999FF" : '#FFFFFF99';
-                        width: items.cellSize
-                        height: items.cellSize
-                        border.color: items.from == index ? "#FFCC2211" : "#FFFFFFFF"
-                        border.width: 2
-                        Image {
-                            anchors.fill: parent
-                            source: modelData ? Activity.url + modelData + ".svg" : ''
-                        }
-                        MouseArea {
-                            anchors.fill: parent
-                            onClicked: {
-                                if(items.from == -1) {
-                                    items.from = index
-                                    console.log("from", items.from)
-                                } else {
-                                    Activity.moveTo(Activity.viewPosToEngine(items.from),
-                                                    Activity.viewPosToEngine(index))
+                    Component {
+                        id: blueSquare
+                        Rectangle {
+                            color: index % 2 + (Math.floor(index / 8) % 2) == 1 ?
+                                       "#FF9999FF" : '#FFFFFF99';
+                            width: items.cellSize
+                            height: items.cellSize
+                            border.color: items.from == index ? "#FFCC2211" : "#FFFFFFFF"
+                            border.width: 2
+                            Image {
+                                anchors.fill: parent
+                                source: modelData ? Activity.url + modelData + ".svg" : ''
+                            }
+                            MouseArea {
+                                anchors.fill: parent
+                                onClicked: {
+                                    if(Activity.isWhite(modelData) == true && !items.blackTurn ||
+                                            Activity.isWhite(modelData) == false && items.blackTurn) {
+                                        items.from = index
+                                    } else if(items.from != -1) {
+                                        Activity.moveTo(items.from, index)
+                                    }
                                 }
                             }
                         }
