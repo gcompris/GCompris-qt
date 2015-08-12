@@ -21,7 +21,9 @@ else if (this.console === undefined){//MSIE
     p4_log = function(){};
 }
 else {
-    p4_log = function(){console.log.apply(console, arguments);};
+    // disable the console
+    p4_log = function(){};
+    //p4_log = function(){console.log.apply(console, arguments);};
 }
 
 /*MSIE Date.now backport */
