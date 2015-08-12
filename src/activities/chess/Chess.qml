@@ -54,7 +54,7 @@ ActivityBase {
             property alias bonus: bonus
             property int cellSize: Math.min(background.width / (8 + 1),
                                             background.height / (8 + 3))
-            property var state
+            property var viewstate
             property int from
             property bool blackTurn
             property var whiteAtBottom
@@ -107,7 +107,7 @@ ActivityBase {
 
                 Repeater {
                     id: repeater
-                    model: items.state
+                    model: items.viewstate
                     delegate: blueSquare
 
                     Component {
@@ -117,18 +117,24 @@ ActivityBase {
                                        "#FF9999FF" : '#FFFFFF99';
                             width: items.cellSize
                             height: items.cellSize
-                            border.color: items.from == index ? "#FFCC2211" : "#FFFFFFFF"
+                            border.color: {
+                                if(!modelData.acceptMove)
+                                    return items.from == index ? "#FFCC2211" : "#FFFFFFFF"
+                                else
+                                    return "#FF0000FF"
+                            }
                             border.width: 2
                             Image {
                                 anchors.fill: parent
-                                source: modelData ? Activity.url + modelData + ".svg" : ''
+                                source: modelData.img ? Activity.url + modelData.img + ".svg" : ''
                             }
                             MouseArea {
                                 anchors.fill: parent
                                 onClicked: {
-                                    if(Activity.isWhite(modelData) == true && !items.blackTurn ||
-                                            Activity.isWhite(modelData) == false && items.blackTurn) {
+                                    if(Activity.isWhite(modelData.img) == true && !items.blackTurn ||
+                                            Activity.isWhite(modelData.img) == false && items.blackTurn) {
                                         items.from = index
+                                        Activity.showPossibleMoves(items.from)
                                     } else if(items.from != -1) {
                                         Activity.moveTo(items.from, index)
                                     }

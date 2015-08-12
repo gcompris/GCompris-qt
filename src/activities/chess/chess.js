@@ -60,7 +60,8 @@ function initLevel() {
     state = Engine. p4_fen2state(FEN[0][1])
     items.from = -1
     items.blackTurn = state.to_play // 0=w 1=b
-    items.state = simplifiedState(state['board'])
+    refresh()
+    Engine.p4_prepare(state)
 }
 
 function nextLevel() {
@@ -101,43 +102,43 @@ function simplifiedState(state) {
         if(state[i] != 16) {
             switch(state[i]) {
                 case 0:
-                    newState.push("")
+                    newState.push({'img': "", 'acceptMove': false})
                     break
                 case 2:
-                    newState.push("wp")
+                    newState.push({'img': "wp", 'acceptMove': false})
                     break
                 case 3:
-                    newState.push("bp")
+                    newState.push({'img': "bp", 'acceptMove': false})
                     break
                 case 4:
-                    newState.push("wr")
+                    newState.push({'img': "wr", 'acceptMove': false})
                     break
                 case 5:
-                    newState.push("br")
+                    newState.push({'img': "br", 'acceptMove': false})
                     break
                 case 6:
-                    newState.push("wn")
+                    newState.push({'img': "wn", 'acceptMove': false})
                     break
                 case 7:
-                    newState.push("bn")
+                    newState.push({'img': "bn", 'acceptMove': false})
                     break
                 case 8:
-                    newState.push("wb")
+                    newState.push({'img': "wb", 'acceptMove': false})
                     break
                 case 9:
-                    newState.push("bb")
+                    newState.push({'img': "bb", 'acceptMove': false})
                     break
                 case 10:
-                    newState.push("wk")
+                    newState.push({'img': "wk", 'acceptMove': false})
                     break
                 case 11:
-                    newState.push("bk")
+                    newState.push({'img': "bk", 'acceptMove': false})
                     break
                 case 12:
-                    newState.push("wq")
+                    newState.push({'img': "wq", 'acceptMove': false})
                     break
                 case 13:
-                    newState.push("bq")
+                    newState.push({'img': "bq", 'acceptMove': false})
                     break
                 default:
                     break
@@ -149,11 +150,39 @@ function simplifiedState(state) {
 }
 
 function refresh() {
-    items.state = simplifiedState(state['board'])
+    items.viewstate = simplifiedState(state['board'])
 }
 
+// Convert view position (QML) to the chess engine coordinate
+//
+// The engine manages coordinate into a 120 element array, which is conceptually
+// a 10x12 board, with the 8x8 board placed at the centre, thus:
+//  + 0123456789
+//  0 ##########
+// 10 ##########
+// 20 #RNBQKBNR#
+// 30 #PPPPPPPP#
+// 40 #........#
+// 50 #........#
+// 60 #........#
+// 70 #........#
+// 80 #pppppppp#
+// 90 #rnbqkbnr#
+//100 ##########
+//110 ##########
+//
+// In QML each cell is in the regular range [0-63]
+//
 function viewPosToEngine(pos) {
     return (Math.floor(pos / 8) + 2) * 10 + pos % 8 + 1
+}
+
+// Convert chess engine coordinate to view position (QML)
+function engineToViewPos(pos) {
+    var newpos = pos - 21 - (Math.floor((pos - 20) / 10) * 2)
+    if(items.whiteAtBottom)
+        newpos = 63 - newpos
+    return newpos
 }
 
 function computerMove() {
@@ -166,21 +195,14 @@ function computerMove() {
 }
 
 function moveTo(from, to) {
-    console.log("moveTo 1:", from, to)
-    console.log("moveTo 2:", viewPosToEngine(from), viewPosToEngine(to))
     if(items.whiteAtBottom) {
         from = 63 - from
         to = 63 - to
     }
-
-    console.log("moveTo 3:", from, to)
-    console.log("moveTo 4:", viewPosToEngine(from), viewPosToEngine(to))
     var move = state.move(viewPosToEngine(from), viewPosToEngine(to))
     if(move.ok) {
         refresh()
-        console.log("to_play=", state.to_play)
         computerMove()
-        console.log("after computer to_play=", state.to_play)
     }
     items.from = -1;
 }
@@ -193,4 +215,23 @@ function undo() {
 function swap() {
     items.whiteAtBottom = !items.whiteAtBottom
     refresh()
+}
+
+function clearAcceptMove() {
+    for(var i=0; i < items.viewstate.length; ++i)
+        items.viewstate[i]['acceptMove'] = false
+}
+
+function showPossibleMoves(from) {
+    var result = Engine.p4_parse(state, 0, 0, 0)
+    clearAcceptMove()
+    if(items.whiteAtBottom)
+        from = 63 - from
+    for(var i=0; i<result.length; ++i)
+        if(viewPosToEngine(from) == result[i][1]) {
+            var pos = engineToViewPos(result[i][2])
+            items.viewstate[pos]['acceptMove'] = true
+        }
+    // Refresh the model
+    items.viewstate = items.viewstate
 }
