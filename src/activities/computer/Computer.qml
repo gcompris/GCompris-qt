@@ -56,6 +56,37 @@ ActivityBase {
             property alias img: img
             property alias name: name
             property alias info: intro_text
+            property alias answers: answers
+        }
+
+        Column
+        {
+            id: buttonHolder
+            property bool buttonHolderMouseArea : true
+            spacing: 10 * ApplicationInfo.ratio
+            x: holder.x - width - 10 * ApplicationInfo.ratio
+            y: 30
+
+            add: Transition {
+                NumberAnimation { properties: "y"; from: 10; duration: 500 }
+            }
+
+            Repeater
+            {
+                id: answers
+
+                AnswerButton {
+                    width: 120 * ApplicationInfo.ratio
+                    height: 80 * ApplicationInfo.ratio
+                    textLabel: modelData
+                    isCorrectAnswer: modelData === Activity.getCorrectAnswer()
+                    onCorrectlyPressed: Activity.answerPressed(modelData)
+                    onPressed: {
+                        Activity.playLetter(modelData)
+                        if(modelData === Activity.getCorrectAnswer()) Activity.showAnswer()
+                    }
+                }
+            }
         }
 
         // show of current part of topic
@@ -240,6 +271,9 @@ ActivityBase {
 
         // Load the next part
 
+        Keys.onRightPressed: Activity.next()
+        Keys.onLeftPressed: Activity.previous()
+
         Image {
             visible: false
             id: next
@@ -257,6 +291,77 @@ ActivityBase {
                 onExited: next.scale = 1
                 onClicked: Activity.next()
             }
+        }
+
+        //Proceed to nextpart
+
+        Rectangle {
+            id: proceed
+            anchors {
+                right: parent.right
+                bottom: parent.bottom
+                bottomMargin: parent.height * 0.05
+                rightMargin: parent.width * 0.05
+            }
+            border.color: "black"
+            visible: true
+            radius: 4
+            smooth: true
+            border.width: 0
+            width: proceed_text.width * 1.1 * ApplicationInfo.ratio
+            height: proceed_text.height * 1.1 * ApplicationInfo.ratio
+            color: "#AAFFFFFF"
+
+            GCText {
+                id: proceed_text
+                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.verticalCenter: parent.verticalCenter
+                font.bold: true
+                fontSize: 18
+                text: qsTr("Visual <br> Demo")
+                Behavior on scale { PropertyAnimation { duration: 100} }
+            }
+
+            MouseArea {
+                anchors.fill: proceed
+                hoverEnabled: true
+                onEntered: proceed_text.scale = 1.1
+                onExited: proceed_text.scale = 1
+                onClicked: {
+                    if(proceed_text.text == qsTr("Visual <br> Demo"))
+                    {
+                        reset()
+                        proceed_text.text = qsTr("Quiz")
+                        page.source = Activity.url + "levels/Level1.qml"
+                    }
+                    else if(proceed_text.text == qsTr("Quiz"))
+                    {
+                        background.source= "qrc:/gcompris/src/activities/imageid/resource/imageid-bg.svg"
+                        reset()
+                        page.source = "Quiz.qml"
+                        Activity.nextQuestion()
+                    }
+                }
+            }
+        }
+
+        function reset () {
+            openbox.visible = false
+            closebox.visible = false
+            holder.visible = false
+            next.visible = false
+            previous.visible = false
+            intro_textbg.visible = false
+            intro_text.visible = false
+
+        }
+
+        // loaders for sublevels
+
+        Loader {
+            id: page
+            anchors.fill: parent
+            source: ""
         }
 
         onStart: { Activity.start(items) }

@@ -116,6 +116,7 @@ var items
 var count = 0
 var level = 0
 var quiz
+var proceed = false
 
 function start(items_,quiz_) {
     items = items_
@@ -124,6 +125,7 @@ function start(items_,quiz_) {
     count = 0
     level = 0
     quiz = quiz_
+    proceed = false
 }
 
 function stop() {
@@ -152,6 +154,7 @@ function next() {
 
 function nextLevel() {
     if(numberOfLevel <= ++currentLevel ) {
+        proceed = true
         currentLevel = 0
     }
     initLevel();
@@ -168,4 +171,18 @@ function display() {
     items.img.source = dataset[level][count].img
     items.name.text = dataset[level][count].name
     items.info.text = dataset[level][count].desc
+}
+
+function nextQuestion() {
+
+    items.answers.model = []
+
+    var answerModel = new Array()
+
+    for (var i = 0 ;i < dataset[level].length ; ++i)
+    {
+        answerModel.push(dataset[level][i].name)
+    }
+
+    items.answers.model = answerModel
 }

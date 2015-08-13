@@ -27,32 +27,33 @@ import "../../../../core"
 Item {
 
     Image {
+        id: switchboard
+        sourceSize.width: parent.width*0.15
+        source: Activity.url + "images/switchoff.svg"
+        anchors {
+            bottom: table.top
+            right: table.right
+            rightMargin: parent.width*0.2
+            bottomMargin: parent.height*0.3
+        }
+        MouseArea {
+            anchors.fill: switchboard
+            onClicked: switchboard.source = switchboard.source == Activity.url + "images/switchoff.svg" ? Activity.url + "images/switchon.svg" : Activity.url + "images/switchoff.svg"
+        }
+    }
+    Image {
         id: table
         source: Activity.url + "images/table.svg"
-        sourceSize.height: parent.height/2
-        sourceSize.width: parent.width/2
+        height: parent.height*0.60
+        width: parent.width*0.60
         anchors {
             left: parent.left
             leftMargin: parent.width*0.1*ApplicationInfo.ratio
             bottom: parent.bottom
-            bottomMargin: 0.2*parent.height*ApplicationInfo.ratio
+            bottomMargin: 0.1*parent.height*ApplicationInfo.ratio
         }
 
-        Image {
-            id: switchboard
-            sourceSize.width: parent.width*0.15
-            source: Activity.url + "images/switchoff.svg"
-            anchors {
-                bottom: table.top
-                right: table.right
-                rightMargin: parent.width*0.2
-                bottomMargin: parent.height*0.3
-            }
-            MouseArea {
-                anchors.fill: switchboard
-                onClicked: switchboard.source = switchboard.source == Activity.url + "images/switchoff.svg" ? Activity.url + "images/switchon.svg" : Activity.url + "images/switchoff.svg"
-            }
-        }
+
 
         Image {
             id:monitor
@@ -108,7 +109,7 @@ Item {
 
         Image {
             id:cpu
-          source: Activity.url + "images/cpu.svg"
+            source: Activity.url + "images/cpu.svg"
             sourceSize.height: parent.height*0.60
             sourceSize.width :parent.width/2
 
