@@ -55,7 +55,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias img: img
             property alias name: name
-            property alias info: info
+            property alias info: intro_text
         }
 
         // show of current part of topic
@@ -74,7 +74,6 @@ ActivityBase {
 
         GCText {
             id: intro_text
-            fontSize: regularSize
             font.weight: Font.DemiBold
             horizontalAlignment: Text.AlignHCenter
             anchors {
@@ -87,6 +86,7 @@ ActivityBase {
             }
             width: parent.width
             wrapMode: Text.WordWrap
+            fontSize: smallSize * 0.5
             text: qsTr("Click on the box below.")
         }
 
@@ -116,7 +116,6 @@ ActivityBase {
                     box_scale.running = false
                     closebox.visible= false
                     show.start()
-                    background.opacity = 0.5
                 }
             }
         }
@@ -142,31 +141,31 @@ ActivityBase {
                 intro_text.text = qsTr("Parts of the Computer")
                 holder.visible = true
                 openbox.visible = false
-                background.opacity = 0.7
                 show.stop()
                 previous.visible =  true
                 next.visible = true
-                info_rect.visible = true
+                intro_text.visible = true
                 Activity.next()
+                holder.visible = true
             }
         }
 
-        //main frame for showing images
+        // Images are shown here
 
         Rectangle
         {
             id: holder
             visible: false
             width: Math.max(img.width * 1.1, img.height * 1.1)
-            height: name_rect.y + name_rect.height
-            x: (background.width - width* ApplicationInfo.ratio) / 2
-            y: 100
+            height: name_text.y + name_text.height
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+                top: intro_text.bottom
+            }
             color: "black"
             radius: 10
             border.width: 2
             border.color: "black"
-            anchors.top: info_rect.bottom
-            anchors.topMargin: parent.height * 0.05
             gradient: Gradient {
                 GradientStop { position: 0.0; color: "#80FFFFFF" }
                 GradientStop { position: 0.9; color: "#80EEEEEE" }
@@ -187,11 +186,10 @@ ActivityBase {
                 width: Math.min((background.width - 120 * ApplicationInfo.ratio) * 0.7,
                                 (background.height - 100 * ApplicationInfo.ratio) * 0.7)
                 height: width
-                fillMode: Image.PreserveAspectFit
             }
 
             Rectangle {
-                id: name_rect
+                id: name_text
                 width: holder.width
                 height: name.height * 1.5
                 anchors.horizontalCenter: holder.horizontalCenter
@@ -210,22 +208,17 @@ ActivityBase {
             GCText {
                 id: name
                 anchors {
-                    horizontalCenter: name_rect.horizontalCenter
-                    verticalCenter: name_rect.verticalCenter
+                    horizontalCenter: name_text.horizontalCenter
+                    verticalCenter: name_text.verticalCenter
                 }
                 style: Text.Outline; styleColor: "black"
                 color: "white"
-                fontSize: largeSize
-
-                NumberAnimation on scale{
-                    running: true
-                    loops: Animation.Infinite
-                    from: 0.7
-                    to: 1
-                    duration: 1000
-                }
+                fontSize: smallSize
             }
         }
+
+
+        // Load the previous part
 
         Image {
             visible: false
@@ -245,6 +238,8 @@ ActivityBase {
             }
         }
 
+        // Load the next part
+
         Image {
             visible: false
             id: next
@@ -262,85 +257,6 @@ ActivityBase {
                 onExited: next.scale = 1
                 onClicked: Activity.next()
             }
-        }
-
-        Rectangle {
-            visible: false
-            id: info_rect
-            border.color: "black"
-            border.width: 1 * ApplicationInfo.ratio
-            color: "white"
-            width: parent.width * 0.9
-            height:info.height * 1.3
-            anchors.top: intro_textbg.bottom
-            anchors.horizontalCenter: parent.horizontalCenter
-            anchors.topMargin: 5 * ApplicationInfo.ratio
-
-            GCText {
-                id:info
-                color: "blue"
-                anchors.centerIn: parent
-                horizontalAlignment: Text.AlignHCenter
-                width: parent.width * 0.94
-                wrapMode: Text.WordWrap
-                fontSize: smallSize
-            }
-        }
-
-
-        // Load the next part
-
-        Rectangle
-        {
-            width: 130 * 0.7 * ApplicationInfo.ratio
-            height: 70 * ApplicationInfo.ratio
-            anchors {
-                right: parent.right
-                bottom: parent.bottom
-                margins: 10
-            }
-            radius: 10
-            border.width: 3
-            border.color: "black"
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#fdf1aa" }
-                GradientStop { position: 0.1; color: "#fcec89" }
-                GradientStop { position: 0.4; color: "#f8d600" }
-                GradientStop { position: 1.0; color: "#f8d600" }
-            }
-
-            GCText {
-                text: qsTr("Click")
-                anchors.centerIn: parent
-                fontSize: smallSize
-                style: Text.Outline; styleColor: "white"
-                color: "black"
-                NumberAnimation on scale{
-                    running: true
-                    loops: Animation.Infinite
-                    from: 0.7
-                    to: 1
-                    duration: 1000
-                }
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked:  {
-                        holder.visible = false
-                        next.visible = false
-                        previous.visible = false
-                        info_rect.visible = false
-                        background.source = "qrc:/gcompris/src/activities/imageid/resource/imageid-bg.svg"
-                        load.source = "Quiz.qml"
-                    }
-                }
-            }
-
-        }
-
-        Loader {
-            id: load
-            anchors.fill: parent
-            source: ""
         }
 
         onStart: { Activity.start(items) }

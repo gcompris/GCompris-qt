@@ -27,6 +27,8 @@
 
 var url = "qrc:/gcompris/src/activities/computer/resource/"
 
+// number of levels
+
 var dataset = [
             [
                 {
@@ -52,6 +54,58 @@ var dataset = [
                     name : "Mouse",
                     id   :"mouse",
                     img  : url + "images/mouse.svg"
+                }
+            ],
+            [
+                {
+                    desc : qsTr(""),
+                    name : "",
+                    id   : "",
+                    img  : url + "images/"
+                },
+                {
+                    desc : qsTr(""),
+                    name : "",
+                    id   : "",
+                    img  : url + "images/"
+                },
+                {
+                    desc : qsTr(""),
+                    name : "",
+                    id   : "",
+                    img  : url + "images/"
+                },
+                {
+                    desc : qsTr(""),
+                    name : "",
+                    id   : "",
+                    img  : url + "images/"
+                }
+            ],
+            [
+                {
+                    desc : qsTr(""),
+                    name : "",
+                    id   : "",
+                    img  : url + "images/"
+                },
+                {
+                    desc : qsTr(""),
+                    name : "",
+                    id   : "",
+                    img  : url + "images/"
+                },
+                {
+                    desc : qsTr(""),
+                    name : "",
+                    id   : "",
+                    img  : url + "images/"
+                },
+                {
+                    desc : qsTr(""),
+                    name : "",
+                    id   : "",
+                    img  : url + "images/"
                 }
             ]
         ]
@@ -115,69 +169,3 @@ function display() {
     items.name.text = dataset[level][count].name
     items.info.text = dataset[level][count].desc
 }
-
-function wrongOptionPressed()
-{
-    items.bar.opacity = 1
-}
-
-function getCorrectAnswer()
-{
-    var question = dataset[currentQuestionNumber]
-    var currentQuestion = question.questionString
-    var i = 0
-    for(  ; i < currentQuestion.length ; ++i )
-    {
-        if( "_" == currentQuestion.charAt(i)  )
-        {
-            break;
-        }
-    }
-
-    return question.answerString.charAt(i)
-}
-
-// Take appropriate action based on the character being pressed
-function answerPressed(character)
-{
-    if( character === getCorrectAnswer() )
-    {
-        items.bonus.good("flower")
-        return true
-    }
-    else
-    {
-        items.bonus.bad("flower")
-    }
-    return false
-}
-
-function showAnswer()
-{
-    var question = dataset[currentQuestionNumber]
-    items.questionText.text = question.answerString
-    items.questionText.state = "answer"
-}
-
-// Reset the screen values for next question
-function nextQuestion()
-{
-    items.questionText.state = "question"
-    items.answers.model = []
-
-    if(++currentQuestionNumber >= dataset.length) {
-        nextLevel()
-        return
-    }
-
-    var choice = question.choiceString
-
-    var answersModel = new Array()
-    for(var i = 0 ; i < choice.length ; ++i)
-        answersModel.push(choice.charAt(i))
-    items.answers.model = answersModel
-
-    items.questionText.text = dataset[level][count].name
-    items.questionImage.source = dataset[level][count].img
-}
-
