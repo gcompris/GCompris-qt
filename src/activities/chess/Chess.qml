@@ -31,6 +31,13 @@ ActivityBase {
     id: activity
 
     property bool twoPlayers: false
+    property variant fen: [
+        ["initial state", "rnbkqbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBKQBNR w KQkq - 1 1"],
+        ["initial state", "rnbkqbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBKQBNR w KQkq - 1 1"],
+        ["initial state", "rnbkqbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBKQBNR w KQkq - 1 1"],
+        ["initial state", "rnbkqbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBKQBNR w KQkq - 1 1"],
+        ["initial state", "rnbkqbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBKQBNR w KQkq - 1 1"]
+    ]
 
     onStart: focus = true
     onStop: {}
@@ -56,6 +63,7 @@ ActivityBase {
             property alias bonus: bonus
             property int cellSize: Math.min(background.width / (8 + 1),
                                             background.height / (8 + 3))
+            property variant fen: activity.fen
             property bool twoPlayer: activity.twoPlayers
             property var viewstate
             property int from
