@@ -21,12 +21,13 @@
  */
 .pragma library
 .import QtQuick 2.0 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
 .import "engine.js" as Engine
 
 var url = "qrc:/gcompris/src/activities/chess/resource/"
 
 var currentLevel = 0
-var numberOfLevel = 4
+var numberOfLevel = 5
 var items
 var state
 
@@ -202,7 +203,7 @@ function moveTo(from, to) {
     var move = state.move(viewPosToEngine(from), viewPosToEngine(to))
     if(move.ok) {
         refresh()
-        computerMove()
+        randomMove()
     }
     items.from = -1;
 }
@@ -222,6 +223,7 @@ function clearAcceptMove() {
         items.viewstate[i]['acceptMove'] = false
 }
 
+
 function showPossibleMoves(from) {
     var result = Engine.p4_parse(state, 0, 0, 0)
     clearAcceptMove()
@@ -234,4 +236,24 @@ function showPossibleMoves(from) {
         }
     // Refresh the model
     items.viewstate = items.viewstate
+}
+
+// Random move depending on the level
+function randomMove() {
+    // At level 2 we let the computer play 20% of the time
+    // and 80% of the time we make a random move.
+    if(Math.random() < currentLevel / (numberOfLevel - 1)) {
+        computerMove()
+        return
+    }
+    // Get all possible moves
+    var moves = Engine.p4_parse(state, state.to_play, 0, 0)
+    moves = Core.shuffle(moves)
+    var move = state.move(moves[0][1], moves[0][2])
+    if(move.ok) {
+        refresh()
+    } else {
+        // Bad move, should not happens
+        computerMove()
+    }
 }
