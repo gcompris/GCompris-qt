@@ -30,6 +30,8 @@ import "chess.js" as Activity
 ActivityBase {
     id: activity
 
+    property bool twoPlayers: false
+
     onStart: focus = true
     onStop: {}
 
@@ -54,6 +56,7 @@ ActivityBase {
             property alias bonus: bonus
             property int cellSize: Math.min(background.width / (8 + 1),
                                             background.height / (8 + 3))
+            property bool twoPlayer: activity.twoPlayers
             property var viewstate
             property int from
             property bool blackTurn

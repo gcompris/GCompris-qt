@@ -203,9 +203,11 @@ function moveTo(from, to) {
     var move = state.move(viewPosToEngine(from), viewPosToEngine(to))
     if(move.ok) {
         refresh()
-        randomMove()
+        if(!items.twoPlayer)
+            randomMove()
     }
     items.from = -1;
+    items.blackTurn = state.to_play // 0=w 1=b
 }
 
 function undo() {
@@ -225,7 +227,7 @@ function clearAcceptMove() {
 
 
 function showPossibleMoves(from) {
-    var result = Engine.p4_parse(state, 0, 0, 0)
+    var result = Engine.p4_parse(state, state.to_play, 0, 0)
     clearAcceptMove()
     if(items.whiteAtBottom)
         from = 63 - from
