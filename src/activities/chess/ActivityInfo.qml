@@ -19,15 +19,15 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "chess/Chess.qml"
-  difficulty: 2
+  difficulty: 6
   icon: "chess/chess.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
+  demo: true
   title: qsTr("Learning chess")
   description: qsTr("Play chess against the computer in a learning mode")
   goal: ""
-  prerequisite: qsTr("Mouse-manipulation")
-  manual: ""
-  credit: qsTr("The chess engine is p4wn from https://github.com/douglasbagnall/p4wn.")
+  prerequisite: ""
+  manual: qsTr("This activity let the children discover the chess game. It displays the possible target position for any selected piece which helps the children understand how pieces moves. At first first level the computer is fully random to give the most chances to the children. At the top level, the computer play normally.")
+  credit: qsTr("The chess engine is p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;.")
   section: "/strategy/chess"
 }
