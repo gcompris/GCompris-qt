@@ -454,27 +454,10 @@ ActivityBase {
                 displayDialog(dialogHelp)
             }
             onHomeClicked: {
-                Activity.currentSubLesson = 0
-                Activity.currentMiniGame = -1
-                if(Activity.savedProgress[Activity.currentLevel] < Activity.currentProgress[Activity.currentLevel])
-                    Activity.savedProgress[Activity.currentLevel] = Activity.currentProgress[Activity.currentLevel]
-                console.log("completed level and now progress: "+ Activity.savedProgress[Activity.currentLevel])
-                menu_screen.menuModel.clear()
-                menu_screen.menuModel.append(Activity.menus)
-
-                if(menu_screen.visible == false) {
-                    menu_screen.visible = true
-                    items.imageFrame.visible = false
-                    items.score.visible = false
-                    level = 0
-                    if (Activity.loadedItems)
-                        Activity.loadedItems.visible = false
-                }
-                else {
-                    activity.home()
-                }
-                Activity.sortByFavorites()
-
+                if(items.menu_screen.visible == false)
+                    Activity.launchMenuScreen()
+                else
+                    home()
             }
             onConfigClicked: {
                 dialogActivityConfig.active = true
@@ -591,23 +574,21 @@ ActivityBase {
             }
 
             onLoadData: {
-                if(dataToSave && dataToSave["locale"] && dataToSave["progress"] && dataToSave["storedFavorites"]) {
+                if(dataToSave && dataToSave["locale"] && dataToSave["progress"] && dataToSave["favorites"]) {
                     background.locale = dataToSave["locale"];
                     var locale = ApplicationInfo.getVoicesLocale(background.locale)
-                    console.log("locale while loading "+locale)
-                    console.log("loading progress "+dataToSave["progress"][locale])
-                    Activity.newProgress = dataToSave["progress"]
                     Activity.saveNewProgress(dataToSave["progress"][locale],locale);
-                    var storedFavorites = dataToSave["storedFavorites"];
+                    var storedFavorites = dataToSave["favorites"][locale];
 
                     for(var i = 0;i < storedFavorites.length; i++) {
-                        Activity.favorites[i] = ( storedFavorites[i] === "true" || storedFavorites[i] === true);
+                        var currentSection = Activity.lessons[i].name
+                        Activity.favorites[currentSection] = ( storedFavorites[currentSection] === "true"
+                                                              || storedFavorites[currentSection] === true);
                     }
                 }
             }
             onSaveData: {
                 var oldLocale = background.locale;
-                console.log("the locale in onSaveData",ApplicationInfo.getVoicesLocale(oldLocale))
                 oldLocale = ApplicationInfo.getVoicesLocale(oldLocale)
                 var newLocale = oldLocale;
                 if(dialogActivityConfig.loader.item)
@@ -616,25 +597,23 @@ ActivityBase {
                 if(newLocale.indexOf('.') != -1) {
                     newLocale = newLocale.substring(0, newLocale.indexOf('.'))
                 }
-                console.log("new locale before converting "+newLocale)
                 newLocale = ApplicationInfo.getVoicesLocale(newLocale)
-                console.log("new locale after converting "+newLocale)
                 var newProgress = {};
-                newProgress = Activity.newProgress;
+                newProgress = Activity.newProgress
                 newProgress[oldLocale] = Activity.savedProgress
 
-                var newStoredFavorites = Activity.favorites
+                var newFavorites = {};
+                newFavorites = Activity.newFavorites
+                newFavorites[oldLocale] = Activity.favorites
 
-                console.log("length of progress object ", Object.keys(newProgress).length)
-                console.log("saving the progress of locale  ",oldLocale , " progress " , newProgress[oldLocale])
-
-                dataToSave = {"locale": newLocale, "progress": newProgress, "storedFavorites": newStoredFavorites}
+                dataToSave = {"locale": newLocale, "progress": newProgress, "favorites": newFavorites}
 
                 background.locale = newLocale;
                 Activity.newProgress = newProgress;
+                Activity.newFavorites = newFavorites;
                 Activity.saveNewProgress(newProgress[newLocale], newLocale);
-                console.log("After saving the progress of locale  ",newLocale , " progress " , Activity.savedProgress)
-                Activity.favorites = newStoredFavorites;
+                Activity.saveNewFavorites(newFavorites[newLocale], newLocale);
+
                 // Restart the activity with new information
                 if(oldLocale !== newLocale) {
                     background.stop();

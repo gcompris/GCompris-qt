@@ -28,7 +28,7 @@ ActivityInfo {
   difficulty: 1
   icon: "lang/lang.svg"
   author: "siddhesh suthar &lt;siddhesh.it@gmail.com&gt;"
-  demo: false
+  demo: true
   title: qsTr("Lang activity")
   description: qsTr("Complete language learning activities.")
   goal: qsTr("Enrich your vocabulary in your native language or in a foreign one.")

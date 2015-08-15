@@ -120,10 +120,12 @@ Image {
         keyNavigationWraps: true
         property int spacing: 10
 
+
         delegate: Item {
             id: delegateItem
             width: levelCellWidth - menuGrid.spacing
             height: levelCellHeight - menuGrid.spacing
+            property string sectionName: Activity.lessons[index].name
 
             Rectangle {
                 id: activityBackground
@@ -164,7 +166,7 @@ Image {
                     width: activityBackground.width
                     maximumValue: wordCount
                     minimumValue: 0
-                    value: Activity.savedProgress[index]
+                    value: Activity.savedProgress[sectionName]
                     orientation: Qt.Horizontal
                 }
 
@@ -184,7 +186,7 @@ Image {
                 Activity.initLevel(index)
             }
 
-            property bool favoriteIndicator: Activity.favorites[index]
+            property bool favoriteIndicator: Activity.favorites[sectionName]
             Image {
                 id: favtImage
                 source: menu_screen.favtUrl +( favoriteIndicator ? "all.svg" : "all_disabled.svg");
@@ -200,7 +202,7 @@ Image {
                     anchors.fill: parent
                     onClicked: {
                         favoriteIndicator = !favoriteIndicator
-                        Activity.favorites[index] = favoriteIndicator
+                        Activity.favorites[sectionName] = favoriteIndicator
                     }
                 }
             }
