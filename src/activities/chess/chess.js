@@ -136,8 +136,6 @@ function simplifiedState(state) {
     return newState
 }
 
-
-
 function updateMessage(move) {
     items.message = items.blackTurn ? qsTr("Black's turn") : qsTr("White's turn")
     if(!move)
@@ -189,7 +187,7 @@ function engineToViewPos(pos) {
 }
 
 function computerMove() {
-    var computer = state.findmove(1)
+    var computer = state.findmove(3)
     var move = state.move(computer[0], computer[1])
     if(move.ok) {
         refresh(move)
