@@ -186,7 +186,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | (items.twoPlayer ? 0 : level) }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
