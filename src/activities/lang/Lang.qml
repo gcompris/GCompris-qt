@@ -448,8 +448,8 @@ ActivityBase {
             id: bar
             anchors.bottom: keyboard.top
             content: BarEnumContent { value:
-                    menu_screen.visible ? help | home |config
-                                        : help | home }
+                    menu_screen.visible ? help | home |config | reload
+                                        : help | home | reload }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -463,6 +463,10 @@ ActivityBase {
                 dialogActivityConfig.active = true
                 dialogActivityConfig.setDefaultValues()
                 displayDialog(dialogActivityConfig)
+            }
+            onReloadClicked: {
+                if(items.menu_screen.visible == false)
+                    Activity.clearPartitionsPassed()
             }
         }
 

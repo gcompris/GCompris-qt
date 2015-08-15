@@ -272,7 +272,6 @@ Item {
                 onEntered: ok.scale = 1.1
                 onClicked: {
                     var check = SpellActivity.checkAnswer(answer.text)
-                    console.log(check)
                     if (check)
                         ++Activity.currentProgress[Activity.currentLevel]
                 }

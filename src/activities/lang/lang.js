@@ -148,7 +148,6 @@ function start() {
                 partitionsPassed[currentSection] =  0
             else {
                 var partitionsData = items.dialogActivityConfig.dataToSave["partitionsPassed"][locale]
-                console.log("value while initiallizing for ",currentSection, partitionsData[currentSection])
                 partitionsPassed[currentSection] = partitionsData[currentSection]
             }
         }
@@ -383,7 +382,6 @@ function savePartitionsPassed(partitions, locale) {
         partitionsPassed = {}
         for(var k =0; k<maxLevel; k++){
             var sectionName = lessons[k].name
-            console.log("intiallizing inside savePartitionsPassed")
             partitionsPassed[sectionName] = 0
         }
     }
@@ -392,6 +390,12 @@ function savePartitionsPassed(partitions, locale) {
     }
 }
 
+function clearPartitionsPassed() {
+    for(var k =0; k<maxLevel; k++){
+        var sectionName = lessons[k].name
+        partitionsPassed[sectionName] = 0
+    }
+}
 
 
 //needed for win.connect, can remove when figure out how to do that
