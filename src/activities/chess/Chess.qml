@@ -66,8 +66,10 @@ ActivityBase {
             property variant fen: activity.fen
             property bool twoPlayer: activity.twoPlayers
             property var viewstate
+            property var history
             property int from
             property bool blackTurn
+            property bool gameOver
             property var whiteAtBottom
             property string message
         }
@@ -111,6 +113,13 @@ ActivityBase {
                     text: qsTr("Undo");
                     style: GCButtonStyle {}
                     onClicked: Activity.undo()
+                    opacity: items.history.length > 0 ? 1 : 0
+                    Behavior on opacity {
+                        PropertyAnimation {
+                            easing.type: Easing.InQuad
+                            duration: 200
+                        }
+                    }
                 }
 
                 Button {
@@ -153,6 +162,7 @@ ActivityBase {
                             }
                             MouseArea {
                                 anchors.fill: parent
+                                enabled: !items.gameOver
                                 onClicked: {
                                     if(Activity.isWhite(modelData.img) == true && !items.blackTurn ||
                                             Activity.isWhite(modelData.img) == false && items.blackTurn) {

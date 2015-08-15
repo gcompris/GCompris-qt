@@ -46,6 +46,7 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     state = Engine.p4_fen2state(items.fen[currentLevel][1])
     items.from = -1
+    items.gameOver = false
     refresh()
     Engine.p4_prepare(state)
 }
@@ -136,21 +137,26 @@ function simplifiedState(state) {
 }
 
 function updateMessage(move) {
+    items.gameOver = false
     items.message = items.blackTurn ? qsTr("Black's turn") : qsTr("White's turn")
     if(!move)
         return
     if((move.flags & (Engine.P4_MOVE_FLAG_CHECK | Engine.P4_MOVE_FLAG_MATE))
-            == (Engine.P4_MOVE_FLAG_CHECK | Engine.P4_MOVE_FLAG_MATE))
+            == (Engine.P4_MOVE_FLAG_CHECK | Engine.P4_MOVE_FLAG_MATE)) {
         items.message = items.blackTurn ? qsTr("Black mates") : qsTr("White mates")
-    else if((move.flags & Engine.P4_MOVE_FLAG_MATE) == Engine.P4_MOVE_FLAG_MATE)
+        items.gameOver = true
+    } else if((move.flags & Engine.P4_MOVE_FLAG_MATE) == Engine.P4_MOVE_FLAG_MATE) {
         items.message = qsTr("Drawn game")
-    else if((move.flags & Engine.P4_MOVE_FLAG_CHECK) == Engine.P4_MOVE_FLAG_CHECK)
+        items.gameOver = true
+    } else if((move.flags & Engine.P4_MOVE_FLAG_CHECK) == Engine.P4_MOVE_FLAG_CHECK) {
         items.message = items.blackTurn ? qsTr("Black checks") : qsTr("White checks")
+    }
 }
 
 function refresh(move) {
     items.viewstate = simplifiedState(state['board'])
     items.blackTurn = state.to_play // 0=w 1=b
+    items.history = state.history
     updateMessage(move)
 }
 
@@ -210,7 +216,13 @@ function moveTo(from, to) {
 }
 
 function undo() {
-    state.jump_to_moveno(state.moveno - 2)
+    state.jump_to_moveno(state.moveno - 1)
+    // In computer mode, the white always starts, take care
+    // of undo after a mate which requires us to revert on
+    // a white play
+    if(!items.twoPlayer && state.to_play != 0) {
+        state.jump_to_moveno(state.moveno - 1)
+    }
     refresh()
 }
 
