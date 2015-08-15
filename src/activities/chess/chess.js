@@ -46,7 +46,6 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     state = Engine.p4_fen2state(items.fen[currentLevel][1])
     items.from = -1
-    items.blackTurn = state.to_play // 0=w 1=b
     refresh()
     Engine.p4_prepare(state)
 }
@@ -151,6 +150,7 @@ function updateMessage(move) {
 
 function refresh(move) {
     items.viewstate = simplifiedState(state['board'])
+    items.blackTurn = state.to_play // 0=w 1=b
     updateMessage(move)
 }
 
@@ -207,7 +207,6 @@ function moveTo(from, to) {
             randomMove()
     }
     items.from = -1;
-    items.blackTurn = state.to_play // 0=w 1=b
 }
 
 function undo() {
