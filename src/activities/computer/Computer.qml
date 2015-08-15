@@ -215,6 +215,7 @@ ActivityBase {
                 style: Text.Outline; styleColor: "black"
                 color: "white"
                 fontSize: smallSize
+                visible: false
             }
         }
 
@@ -287,7 +288,7 @@ ActivityBase {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 font.bold: true
-                fontSize: 18
+                fontSize: smallSize
                 text: qsTr("Visual <br> Demo")
                 Behavior on scale { PropertyAnimation { duration: 100} }
             }
@@ -309,7 +310,6 @@ ActivityBase {
                         reset()
                         Activity.nextQuestion()
                         holder.visible = true
-                        name.visible = false
                         proceed.visible = false
                     }
                 }
@@ -382,7 +382,6 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 

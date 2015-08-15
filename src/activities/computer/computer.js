@@ -127,6 +127,7 @@ function start(items_,quiz_) {
     level = 0
     quiz = quiz_
     proceed = false
+    index = 0
 }
 
 function stop() {
@@ -183,15 +184,31 @@ function nextQuestion() {
     {
         answerModel.push(dataset[level][i].name)
     }
-
+    items.name.text = dataset[level][index].name
     items.img.source = dataset[level][index].img
     items.answers.model = answerModel
 }
-function getCorrectAnswer() {
 
+function getCorrectAnswer() {
+    return dataset[level][index].name
 }
 
 function showAnswer()
 {
+    console.log(dataset[level][index].name)
+    items.name.visible = true
+    win()
+}
 
+function win () {
+    items.bonus.good("flower")
+    items.name.visible = false
+    if(index != dataset[level].length)
+    {
+        index++
+        nextQuestion()
+    }
+    else {
+    nextLevel()
+    }
 }

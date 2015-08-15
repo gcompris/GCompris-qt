@@ -44,8 +44,8 @@ Item {
     Image {
         id: table
         source: Activity.url + "images/table.svg"
-        height: parent.height*0.60
-        width: parent.width*0.60
+        height: parent.height*0.40
+        width: parent.width*0.70
         anchors {
             left: parent.left
             leftMargin: parent.width*0.1*ApplicationInfo.ratio
@@ -120,6 +120,24 @@ Item {
                 bottomMargin: table.height*0.8
             }
             visible: true
+            Image {
+                id: cpu_switch
+                source: Activity.url + "images/cpuoff.svg"
+                height: parent.height*0.2
+                width: cpu_switch.height
+                MouseArea {
+                    anchors.fill: cpu_switch
+                    onClicked: {
+                        onClicked: cpu_switch.source = cpu_switch.source == Activity.url + "images/cpuoff.svg" ? Activity.url + "images/cpuon.svg" : Activity.url + "images/cpuoff.svg"
+                    }
+                }
+                anchors {
+                    bottom: parent.bottom
+                    right: parent.right
+                    bottomMargin: parent.height * 0.1
+                    leftMargin: parent.widhth * 0.1
+                }
+            }
         }
 
         Image {
