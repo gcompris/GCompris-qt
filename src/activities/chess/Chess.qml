@@ -127,6 +127,7 @@ ActivityBase {
                     height: 30 * ApplicationInfo.ratio
                     text: qsTr("Swap");
                     style: GCButtonStyle {}
+                    opacity: items.twoPlayer
                     onClicked: Activity.swap()
                 }
             }
