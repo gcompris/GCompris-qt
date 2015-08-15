@@ -150,6 +150,8 @@ function updateMessage(move) {
         items.gameOver = true
     } else if((move.flags & Engine.P4_MOVE_FLAG_CHECK) == Engine.P4_MOVE_FLAG_CHECK) {
         items.message = items.blackTurn ? qsTr("Black checks") : qsTr("White checks")
+    } else if(move.flags == Engine.P4_MOVE_ILLEGAL) {
+        items.message = qsTr("Invalid, your king may be in check")
     }
 }
 
@@ -212,6 +214,9 @@ function moveTo(from, to) {
         if(!items.twoPlayer)
             randomMove()
         items.from = -1;
+    } else {
+        // Probably a check makes the move invalid
+        updateMessage(move)
     }
 }
 
