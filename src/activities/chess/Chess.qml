@@ -92,6 +92,17 @@ ActivityBase {
                 id: controls
                 spacing: 10
                 width: undo.width + (background.width * 0.9 - undo.width - grid.width) / 2
+
+                GCText {
+                    color: "black"
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: undo.width * 1.2
+                    fontSize: smallSize
+                    text: items.blackTurn ? qsTr("Black's turn") : qsTr("White's turn")
+                    horizontalAlignment: Text.AlignHCenter
+                    wrapMode: TextEdit.WordWrap
+                }
+
                 Button {
                     id: undo
                     anchors.horizontalCenter: parent.horizontalCenter
