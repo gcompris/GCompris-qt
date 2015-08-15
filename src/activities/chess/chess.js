@@ -44,7 +44,7 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    state = Engine. p4_fen2state(items.fen[currentLevel][1])
+    state = Engine.p4_fen2state(items.fen[currentLevel][1])
     items.from = -1
     items.blackTurn = state.to_play // 0=w 1=b
     refresh()
@@ -136,8 +136,24 @@ function simplifiedState(state) {
     return newState
 }
 
-function refresh() {
+
+
+function updateMessage(move) {
+    items.message = items.blackTurn ? qsTr("Black's turn") : qsTr("White's turn")
+    if(!move)
+        return
+    if((move.flags & (Engine.P4_MOVE_FLAG_CHECK | Engine.P4_MOVE_FLAG_MATE))
+            == (Engine.P4_MOVE_FLAG_CHECK | Engine.P4_MOVE_FLAG_MATE))
+        items.message = items.blackTurn ? qsTr("Black mates") : qsTr("White mates")
+    else if((move.flags & Engine.P4_MOVE_FLAG_MATE) == Engine.P4_MOVE_FLAG_MATE)
+        items.message = qsTr("Drawn game")
+    else if((move.flags & Engine.P4_MOVE_FLAG_CHECK) == Engine.P4_MOVE_FLAG_CHECK)
+        items.message = items.blackTurn ? qsTr("Black checks") : qsTr("White checks")
+}
+
+function refresh(move) {
     items.viewstate = simplifiedState(state['board'])
+    updateMessage(move)
 }
 
 // Convert view position (QML) to the chess engine coordinate
@@ -176,7 +192,7 @@ function computerMove() {
     var computer = state.findmove(1)
     var move = state.move(computer[0], computer[1])
     if(move.ok) {
-        refresh()
+        refresh(move)
     }
     return move
 }
@@ -188,7 +204,7 @@ function moveTo(from, to) {
     }
     var move = state.move(viewPosToEngine(from), viewPosToEngine(to))
     if(move.ok) {
-        refresh()
+        refresh(move)
         if(!items.twoPlayer)
             randomMove()
     }
@@ -239,7 +255,7 @@ function randomMove() {
     moves = Core.shuffle(moves)
     var move = state.move(moves[0][1], moves[0][2])
     if(move.ok) {
-        refresh()
+        refresh(move)
     } else {
         // Bad move, should not happens
         computerMove()

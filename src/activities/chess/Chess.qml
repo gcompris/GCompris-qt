@@ -69,6 +69,7 @@ ActivityBase {
             property int from
             property bool blackTurn
             property var whiteAtBottom
+            property string message
         }
 
         onStart: { Activity.start(items) }
@@ -98,7 +99,7 @@ ActivityBase {
                     anchors.horizontalCenter: parent.horizontalCenter
                     width: undo.width * 1.2
                     fontSize: smallSize
-                    text: items.blackTurn ? qsTr("Black's turn") : qsTr("White's turn")
+                    text: items.message
                     horizontalAlignment: Text.AlignHCenter
                     wrapMode: TextEdit.WordWrap
                 }
