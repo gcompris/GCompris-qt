@@ -574,10 +574,12 @@ ActivityBase {
             }
 
             onLoadData: {
-                if(dataToSave && dataToSave["locale"] && dataToSave["progress"] && dataToSave["favorites"]) {
+                if(dataToSave && dataToSave["locale"] && dataToSave["progress"]
+                        && dataToSave["favorites"] && dataToSave["partitionsPassed"]) {
                     background.locale = dataToSave["locale"];
                     var locale = ApplicationInfo.getVoicesLocale(background.locale)
                     Activity.saveNewProgress(dataToSave["progress"][locale],locale);
+                    Activity.savePartitionsPassed(dataToSave["partitionsPassed"][locale],locale);
                     var storedFavorites = dataToSave["favorites"][locale];
 
                     for(var i = 0;i < storedFavorites.length; i++) {
@@ -606,13 +608,18 @@ ActivityBase {
                 newFavorites = Activity.newFavorites
                 newFavorites[oldLocale] = Activity.favorites
 
-                dataToSave = {"locale": newLocale, "progress": newProgress, "favorites": newFavorites}
+                var partitionsPassed = {};
+                partitionsPassed[oldLocale] = Activity.partitionsPassed
+
+                dataToSave = {"locale": newLocale, "progress": newProgress,
+                    "favorites": newFavorites, "partitionsPassed": partitionsPassed}
 
                 background.locale = newLocale;
                 Activity.newProgress = newProgress;
                 Activity.newFavorites = newFavorites;
                 Activity.saveNewProgress(newProgress[newLocale], newLocale);
                 Activity.saveNewFavorites(newFavorites[newLocale], newLocale);
+                Activity.savePartitionsPassed(partitionsPassed[newLocale],newLocale);
 
                 // Restart the activity with new information
                 if(oldLocale !== newLocale) {

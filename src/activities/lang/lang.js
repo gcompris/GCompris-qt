@@ -61,6 +61,7 @@ var loadedItems
 var currentSection
 var newProgress = {}
 var newFavorites = {}
+var partitionsPassed = {}
 
 function init(items_) {
     items = items_
@@ -139,6 +140,18 @@ function start() {
                                              favoritesData[currentSection] === true);
             }
         }
+
+        if(!items.dialogActivityConfig.dataToSave["partitionsPassed"])
+            partitionsPassed[currentSection] =  0
+        else {
+            if(!items.dialogActivityConfig.dataToSave["partitionsPassed"][locale])
+                partitionsPassed[currentSection] =  0
+            else {
+                var partitionsData = items.dialogActivityConfig.dataToSave["partitionsPassed"][locale]
+                console.log("value while initiallizing for ",currentSection, partitionsData[currentSection])
+                partitionsPassed[currentSection] = partitionsData[currentSection]
+            }
+        }
     }
 
     items.menuModel.clear()
@@ -171,7 +184,11 @@ function initLevel(currentLevel_) {
         subLessons[i] = wordList.splice(0,maxWordInLesson)
     }
 
+    console.log("before initiallizing level with sublesson ",currentSubLesson, partitionsPassed[currentSection])
+    currentSubLesson = partitionsPassed[currentSection]
     subWordList = subLessons[currentSubLesson]
+    console.log("after initiallizing level with sublesson ",currentSubLesson, partitionsPassed[currentSection])
+
 
     Core.shuffle(subWordList);
 
@@ -286,6 +303,8 @@ function nextSubLesson(){
 
     if(currentSubLesson < maxSubLesson) {
         ++currentSubLesson
+        partitionsPassed[currentSection] = currentSubLesson
+        console.log("inside nextSubLesson", currentSubLesson)
         initLevel(currentLevel)
     }
     else {
@@ -309,7 +328,7 @@ function launchMenuScreen() {
     items.menu_screen.menuModel.append(menus)
     items.menu_screen.forceActiveFocus()
 
-    var partitionsPassed = currentSubLesson
+    //    partitionsPassed[currentSection] = currentSubLesson
 
     currentSubLesson = 0
     currentMiniGame = -1
@@ -346,7 +365,6 @@ function saveNewProgress(progress, locale) {
     }
 }
 
-
 function saveNewFavorites(storedFavorites, locale) {
     if(!favorites) {
         favorites = {}
@@ -359,6 +377,22 @@ function saveNewFavorites(storedFavorites, locale) {
         favorites= storedFavorites
     }
 }
+
+function savePartitionsPassed(partitions, locale) {
+    if(!partitions) {
+        partitionsPassed = {}
+        for(var k =0; k<maxLevel; k++){
+            var sectionName = lessons[k].name
+            console.log("intiallizing inside savePartitionsPassed")
+            partitionsPassed[sectionName] = 0
+        }
+    }
+    else {
+        partitionsPassed = partitions
+    }
+}
+
+
 
 //needed for win.connect, can remove when figure out how to do that
 function nextLevel() {
