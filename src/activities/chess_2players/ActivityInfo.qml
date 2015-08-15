@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,7 +18,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "chess_2players/Chess_2players.qml"
+  name: "chess_2players/Chess2Players.qml"
   difficulty: 6
   icon: "chess_2players/chess_2players.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
