@@ -211,8 +211,8 @@ function moveTo(from, to) {
         refresh(move)
         if(!items.twoPlayer)
             randomMove()
+        items.from = -1;
     }
-    items.from = -1;
 }
 
 function undo() {
