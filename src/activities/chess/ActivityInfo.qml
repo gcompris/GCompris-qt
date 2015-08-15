@@ -23,9 +23,9 @@ ActivityInfo {
   icon: "chess/chess.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
-  title: qsTr("Play chess against the computer")
+  title: qsTr("Play chess against Tux")
   description: ""
-  //intro: "play chess against the computer"
+  //intro: "play chess against Tux"
   goal: ""
   prerequisite: ""
   manual: qsTr("In this activity you discover the chess game by playing against the computer. It displays the possible target position for any selected piece which helps the children understand how pieces moves. At first first level the computer is fully random to give the most chances to the children. At the top level, the computer play normally.")

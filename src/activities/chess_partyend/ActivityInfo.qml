@@ -19,13 +19,13 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "chess_partyend/ChessPartyEnd.qml"
-  difficulty: 2
+  difficulty: 6
   icon: "chess_partyend/chess_partyend.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
   title: qsTr("End of chess game")
-  description: qsTr("Play the end of the chess game against the computer")
-  //intro: "Play the end of the chess game against the computer"
+  description: qsTr("Play the end of the chess game against Tux")
+  //intro: "Play the end of the chess game against Tux"
   goal: ""
   prerequisite: ""
   manual: ""
