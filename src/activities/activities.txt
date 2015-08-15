@@ -17,6 +17,7 @@ braille_fun
 canal_lock
 chess
 chess_2players
+chess_partyend
 chronos
 clickanddraw
 clickgame

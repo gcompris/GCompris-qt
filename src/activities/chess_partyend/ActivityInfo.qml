@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,16 +18,17 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "chess_partyend/ChessPartyend.qml"
+  name: "chess_partyend/ChessPartyEnd.qml"
   difficulty: 2
   icon: "chess_partyend/chess_partyend.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
-  title: qsTr("Learning chess")
+  title: qsTr("End of chess game")
   description: qsTr("Play the end of the chess game against the computer")
+  //intro: "Play the end of the chess game against the computer"
   goal: ""
-  prerequisite: qsTr("Mouse-manipulation")
+  prerequisite: ""
   manual: ""
-  credit: qsTr("The chess engine is from gnuchess.")
-  section: "/strategy/chess"
+  credit: qsTr("The chess engine is p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;.")
+  section: "strategy"
 }
