@@ -59,36 +59,6 @@ ActivityBase {
             property alias answers: answers
         }
 
-        Column
-        {
-            id: buttonHolder
-            property bool buttonHolderMouseArea : true
-            spacing: 10 * ApplicationInfo.ratio
-            x: holder.x - width - 10 * ApplicationInfo.ratio
-            y: 30
-
-            add: Transition {
-                NumberAnimation { properties: "y"; from: 10; duration: 500 }
-            }
-
-            Repeater
-            {
-                id: answers
-
-                AnswerButton {
-                    width: 120 * ApplicationInfo.ratio
-                    height: 80 * ApplicationInfo.ratio
-                    textLabel: modelData
-                    isCorrectAnswer: modelData === Activity.getCorrectAnswer()
-                    onCorrectlyPressed: Activity.answerPressed(modelData)
-                    onPressed: {
-                        Activity.playLetter(modelData)
-                        if(modelData === Activity.getCorrectAnswer()) Activity.showAnswer()
-                    }
-                }
-            }
-        }
-
         // show of current part of topic
 
         Rectangle {
@@ -336,10 +306,11 @@ ActivityBase {
                     }
                     else if(proceed_text.text == qsTr("Quiz"))
                     {
-                        background.source= "qrc:/gcompris/src/activities/imageid/resource/imageid-bg.svg"
                         reset()
-                        page.source = "Quiz.qml"
                         Activity.nextQuestion()
+                        holder.visible = true
+                        name.visible = false
+                        proceed.visible = false
                     }
                 }
             }
@@ -353,7 +324,7 @@ ActivityBase {
             previous.visible = false
             intro_textbg.visible = false
             intro_text.visible = false
-
+            page.source = ""
         }
 
         // loaders for sublevels
@@ -362,6 +333,32 @@ ActivityBase {
             id: page
             anchors.fill: parent
             source: ""
+        }
+
+        //quiz
+
+        Column
+        {
+            id: buttonHolder
+            property bool buttonHolderMouseArea : true
+            spacing: 10 * ApplicationInfo.ratio
+            x: holder.x - width - 10 * ApplicationInfo.ratio
+            y: 30
+            add: Transition {
+                NumberAnimation { properties: "y"; from: 10; duration: 500 }
+            }
+            Repeater
+            {
+                id: answers
+                AnswerButton {
+                    width: 120 * ApplicationInfo.ratio
+                    height: 80 * ApplicationInfo.ratio
+                    textLabel: modelData
+                    onPressed: {
+                        if(modelData === Activity.getCorrectAnswer()) Activity.showAnswer()
+                    }
+                }
+            }
         }
 
         onStart: { Activity.start(items) }

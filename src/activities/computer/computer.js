@@ -117,6 +117,7 @@ var count = 0
 var level = 0
 var quiz
 var proceed = false
+var index = 0
 
 function start(items_,quiz_) {
     items = items_
@@ -174,7 +175,6 @@ function display() {
 }
 
 function nextQuestion() {
-
     items.answers.model = []
 
     var answerModel = new Array()
@@ -184,5 +184,14 @@ function nextQuestion() {
         answerModel.push(dataset[level][i].name)
     }
 
+    items.img.source = dataset[level][index].img
     items.answers.model = answerModel
+}
+function getCorrectAnswer() {
+
+}
+
+function showAnswer()
+{
+
 }
