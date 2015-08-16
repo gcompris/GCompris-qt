@@ -57,6 +57,7 @@ ActivityBase {
             property alias name: name
             property alias info: intro_text
             property alias answers: answers
+            property alias proceed: proceed
         }
 
         // show of current part of topic
@@ -268,6 +269,7 @@ ActivityBase {
 
         Rectangle {
             id: proceed
+            visible: false
             anchors {
                 right: parent.right
                 bottom: parent.bottom
@@ -275,7 +277,6 @@ ActivityBase {
                 rightMargin: parent.width * 0.05
             }
             border.color: "black"
-            visible: true
             radius: 4
             smooth: true
             border.width: 0
@@ -304,6 +305,7 @@ ActivityBase {
                         reset()
                         proceed_text.text = qsTr("Quiz")
                         page.source = Activity.url + "levels/Level1.qml"
+                        proceed.visible = false
                     }
                     else if(proceed_text.text == qsTr("Quiz"))
                     {

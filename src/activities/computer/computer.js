@@ -39,7 +39,7 @@ var dataset = [
                 },
                 {
                     desc : qsTr(" central processing unit (CPU) is the electronic circuitry within a computer that carries out the instructions of a computer program by performing the basic arithmetic, logical, control and input/output (I/O) operations specified by the instructions. "),
-                    name : "Central Processing Unit",
+                    name : "CPU",
                     id   :"cpu",
                     img  : url + "images/cpu.svg"
                 },
@@ -116,7 +116,6 @@ var items
 var count = 0
 var level = 0
 var quiz
-var proceed = false
 var index = 0
 
 function start(items_,quiz_) {
@@ -126,7 +125,6 @@ function start(items_,quiz_) {
     count = 0
     level = 0
     quiz = quiz_
-    proceed = false
     index = 0
 }
 
@@ -148,6 +146,7 @@ function previous() {
 function next() {
     display()
     if( count == dataset[level].length - 1) {
+        items.proceed.visible = true
         count = 0
     } else {
         count++
@@ -156,7 +155,6 @@ function next() {
 
 function nextLevel() {
     if(numberOfLevel <= ++currentLevel ) {
-        proceed = true
         currentLevel = 0
     }
     initLevel();
@@ -209,6 +207,10 @@ function win () {
         nextQuestion()
     }
     else {
-    nextLevel()
+        nextLevel()
     }
+}
+
+function sublevel() {
+    items.proceed.visible = true
 }

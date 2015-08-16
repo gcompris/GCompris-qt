@@ -141,18 +141,19 @@ Item {
                         if(!load.running) {
                             monitor.source= Activity.url + "images/monitor.svg"
                             wallpaper.visible = false
+                            help_text.text = qsTr("Click on the Mouse to activate the cursor on the screen. You will see the cursor moves with your actual mouse, when being pressed. ")
+                            mouse_area.visible = true
                         }
                     }
                 }
                 MouseArea {
-                onClicked: {
-                    if(mouse_area.visible == true && monitor_area.visible == true && cursor.visible == true)
-                    {
-                        wallpaper.opacity = 0
+                    onClicked: {
+                        if(cursor.visible == true)
+                        {
+                            wallpaper.opacity = 0
+                        }
                     }
                 }
-                }
-
             }
 
             Flickable {
@@ -269,9 +270,14 @@ Item {
             visible: true
             MouseArea {
                 id: keyboard_area
+                visible: false
                 anchors.fill: keyboard
                 onClicked: {
                     flick.visible = true
+                    edit.text =  qsTr("Enter Text ::>")
+                    help_text.text = qsTr("Congrats, you know how to power up a virtual computer. Proceed to Quiz to check knowledge of the parts. ")
+                    keyboard_area.visible = false
+                    Activity.sublevel()
                 }
             }
         }
@@ -290,11 +296,15 @@ Item {
             }
             MouseArea {
                 id: mouse_area
+                visible: false
                 anchors.fill: mouse
                 onClicked: {
                     cursor.visible = true
                     monitor_area.visible = true
                     wallpaper.opacity = 1
+                    help_text.text = qsTr("Click on the Keyboard to type on the screen. ")
+                    keyboard_area.visible = true
+                    mouse_area.visible = false
                 }
             }
             visible: true
@@ -307,10 +317,12 @@ Item {
     }
 
     function cpu_reset() {
-        wallpaper.visible = false
+        wallpaper.opacity = 0
         monitor.source = Activity.url + "images/monitor_off.svg"
         flick.visible = false
         mouse_area.visible = false
         keyboard_area.visible = false
+        cursor.visible = false
+        monitor_area.visible = false
     }
 }
