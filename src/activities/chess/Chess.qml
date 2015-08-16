@@ -32,11 +32,11 @@ ActivityBase {
 
     property bool twoPlayers: false
     property variant fen: [
-        ["initial state", "rnbkqbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBKQBNR w KQkq - 1 1"],
-        ["initial state", "rnbkqbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBKQBNR w KQkq - 1 1"],
-        ["initial state", "rnbkqbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBKQBNR w KQkq - 1 1"],
-        ["initial state", "rnbkqbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBKQBNR w KQkq - 1 1"],
-        ["initial state", "rnbkqbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBKQBNR w KQkq - 1 1"]
+        ["initial state", "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 1 1"],
+        ["initial state", "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 1 1"],
+        ["initial state", "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 1 1"],
+        ["initial state", "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 1 1"],
+        ["initial state", "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 1 1"]
     ]
 
     onStart: focus = true
@@ -137,7 +137,7 @@ ActivityBase {
                 spacing: 5
                 columns: 8
                 rows: 8
-
+                layoutDirection: Qt.RightToLeft
                 Repeater {
                     id: repeater
                     model: items.viewstate
@@ -147,7 +147,7 @@ ActivityBase {
                         id: blueSquare
                         Rectangle {
                             color: index % 2 + (Math.floor(index / 8) % 2) == 1 ?
-                                       "#FF9999FF" : '#FFFFFF99';
+                                       "#FFFFFF99" : '#FF9999FF';
                             width: items.cellSize
                             height: items.cellSize
                             border.color: {
