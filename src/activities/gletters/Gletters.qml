@@ -109,7 +109,6 @@ ActivityBase {
             enabled: !ApplicationInfo.isMobile
             focus: true
             visible: false
-
             onTextChanged: {
                 if (text != "") {
                     Activity.processKeyPress(text);
