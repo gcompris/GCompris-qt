@@ -29,6 +29,6 @@ ActivityInfo {
   goal: "Learning"
   prerequisite: ""
   manual: ""
-  credit: "Images by OpenClipart"
+  credit: qsTr("Images by OpenClipart")
   section: "fun"
 }
