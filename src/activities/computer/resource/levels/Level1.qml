@@ -26,21 +26,70 @@ import "../../../../core"
 
 Item {
 
+    property bool power: false
+
+    Rectangle {
+        id: help_textbg
+        x: help_text.x - 4
+        y: help_text.y - 4
+        width: help_text.width + 4
+        height: help_text.height + 4
+        color: "#d8ffffff"
+        border.color: "#2a2a2a"
+        border.width: 2
+        radius: 8
+    }
+
+    GCText {
+        id: help_text
+        font.weight: Font.DemiBold
+        horizontalAlignment: Text.AlignHCenter
+        anchors {
+            top: parent.top
+            topMargin: 10 * ApplicationInfo.ratio
+            right: parent.right
+            rightMargin: 5 * ApplicationInfo.ratio
+            left: parent.left
+            leftMargin: 5 * ApplicationInfo.ratio
+        }
+        width: parent.width
+        wrapMode: Text.WordWrap
+        fontSize: smallSize * 0.5
+        text: qsTr("Click on the power switch to begin")
+    }
+
+
     Image {
         id: switchboard
-        sourceSize.width: parent.width*0.15
+        sourceSize.width: parent.width*0.1
         source: Activity.url + "images/switchoff.svg"
         anchors {
-            bottom: table.top
-            right: table.right
-            rightMargin: parent.width*0.2
+            top: help_textbg.bottom
+            left: parent.left
+            leftMargin: parent.width*0.2
             bottomMargin: parent.height*0.3
         }
         MouseArea {
             anchors.fill: switchboard
-            onClicked: switchboard.source = switchboard.source == Activity.url + "images/switchoff.svg" ? Activity.url + "images/switchon.svg" : Activity.url + "images/switchoff.svg"
+            onClicked: {
+                if( switchboard.source == Activity.url + "images/switchoff.svg" )
+                {
+                    power = true
+                    switchboard.source = Activity.url + "images/switchon.svg"
+                    cpu_area.visible = true
+                    help_text.text = qsTr("Click on the Central Processing unit to start the system ")
+                }
+                else
+                {
+                    power = false
+                    switchboard.source = Activity.url + "images/switchoff.svg"
+                    poweroff()
+                }
+            }
         }
     }
+
+
     Image {
         id: table
         source: Activity.url + "images/table.svg"
@@ -53,23 +102,62 @@ Item {
             bottomMargin: 0.1*parent.height*ApplicationInfo.ratio
         }
 
-
-
         Image {
-            id:monitor
-            source: Activity.url + "images/monitor.svg"
+            id: monitor
+            source: Activity.url + "images/monitor_off.svg"
             sourceSize.height: parent.height/2
             sourceSize.width :parent.width/2
             anchors {
                 bottom: table.bottom
                 left: table.left
-                leftMargin: table.width *0.2
+                leftMargin: table.width*0.2
                 bottomMargin: table.height*0.9
+            }
+
+            Image {
+                id: cursor
+                source: Activity.url + "images/cursor.svg"
+                height: monitor.height*0.2
+                width: monitor.width*0.2
+                visible: false
+            }
+
+            Image {
+                id: wallpaper
+                opacity: 0
+                source: Activity.url + "images/GCompris.png"
+                sourceSize.height: parent.height/2
+                sourceSize.width: parent.width/2
+                anchors {
+                    centerIn: parent
+                }
+                NumberAnimation on opacity {
+                    id: load
+                    running: false
+                    from: 0
+                    to: 1
+                    duration: 10000
+                    onRunningChanged:  {
+                        if(!load.running) {
+                            monitor.source= Activity.url + "images/monitor.svg"
+                            wallpaper.visible = false
+                        }
+                    }
+                }
+                MouseArea {
+                onClicked: {
+                    if(mouse_area.visible == true && monitor_area.visible == true && cursor.visible == true)
+                    {
+                        wallpaper.opacity = 0
+                    }
+                }
+                }
 
             }
 
             Flickable {
                 id: flick
+                visible: false
                 width:monitor.width*0.65
                 height:monitor.height*0.7
                 contentWidth: edit.paintedWidth
@@ -96,13 +184,27 @@ Item {
 
                 TextEdit {
                     id: edit
-                    color:"red"
+                    color:"black"
                     width: flick.width
                     height: flick.height
                     focus: true
                     wrapMode: TextEdit.Wrap
                     onCursorRectangleChanged: flick.ensureVisible(cursorRectangle)
                 }
+            }
+            MouseArea{
+                id: monitor_area
+                visible: false
+                anchors.fill: monitor
+                onEntered:
+                {
+                    cursor.visible=true
+                }
+                onPressed:{
+                    cursor.x= mouseX
+                    cursor.y= mouseY
+                }
+                onExited: {cursor.visible=false}
             }
             visible: true
         }
@@ -126,11 +228,24 @@ Item {
                 height: parent.height*0.2
                 width: cpu_switch.height
                 MouseArea {
+                    id: cpu_area
+                    visible: false
                     anchors.fill: cpu_switch
                     onClicked: {
-                        onClicked: cpu_switch.source = cpu_switch.source == Activity.url + "images/cpuoff.svg" ? Activity.url + "images/cpuon.svg" : Activity.url + "images/cpuoff.svg"
+                        if( cpu_switch.source == Activity.url + "images/cpuoff.svg")
+                        {
+                            cpu_switch.source = Activity.url + "images/cpuon.svg"
+                            help_text.text = qsTr("Great, The monitor is switched on.")
+                            load.running = true
+                        }
+                        else
+                        {
+                            cpu_reset()
+                            cpu_switch.source = Activity.url + "images/cpuoff.svg"
+                        }
                     }
                 }
+
                 anchors {
                     bottom: parent.bottom
                     right: parent.right
@@ -152,10 +267,17 @@ Item {
                 leftMargin: table.width *0.3
             }
             visible: true
+            MouseArea {
+                id: keyboard_area
+                anchors.fill: keyboard
+                onClicked: {
+                    flick.visible = true
+                }
+            }
         }
 
         Image {
-            id:mouse
+            id: mouse
             source: Activity.url + "images/mouse.svg"
             sourceSize.height: parent.height/3
             sourceSize.width :parent.width/3
@@ -166,7 +288,29 @@ Item {
                 leftMargin: table.width *0.1
                 bottomMargin :table.height*0.6
             }
+            MouseArea {
+                id: mouse_area
+                anchors.fill: mouse
+                onClicked: {
+                    cursor.visible = true
+                    monitor_area.visible = true
+                    wallpaper.opacity = 1
+                }
+            }
             visible: true
         }
+    }
+
+    function poweroff() {
+        cpu_switch.source = Activity.url + "images/cpuoff.svg"
+        cpu_reset()
+    }
+
+    function cpu_reset() {
+        wallpaper.visible = false
+        monitor.source = Activity.url + "images/monitor_off.svg"
+        flick.visible = false
+        mouse_area.visible = false
+        keyboard_area.visible = false
     }
 }

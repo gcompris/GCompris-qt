@@ -215,7 +215,7 @@ ActivityBase {
                 style: Text.Outline; styleColor: "black"
                 color: "white"
                 fontSize: smallSize
-                visible: false
+                visible: true
             }
         }
 
@@ -384,5 +384,4 @@ ActivityBase {
             id: bonus
         }
     }
-
 }

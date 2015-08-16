@@ -35,7 +35,7 @@ var dataset = [
                     desc : qsTr("A monitor or a display is an electronic visual display for computers. The monitor comprises the display device, circuitry and an enclosure."),
                     name : "Monitor",
                     id   : "monitor",
-                    img  : url + "images/monitor.svg"
+                    img  : url + "images/monitor_off.svg"
                 },
                 {
                     desc : qsTr(" central processing unit (CPU) is the electronic circuitry within a computer that carries out the instructions of a computer program by performing the basic arithmetic, logical, control and input/output (I/O) operations specified by the instructions. "),

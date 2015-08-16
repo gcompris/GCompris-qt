@@ -135,14 +135,14 @@
      bordercolor="#666666"
      inkscape:window-x="0"
      inkscape:guide-bbox="true"
-     inkscape:window-y="0"
+     inkscape:window-y="12"
      fit-margin-bottom="0"
      inkscape:window-width="1362"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      pagecolor="#ffffff"
      inkscape:document-units="px"
-     inkscape:window-height="741"
+     inkscape:window-height="702"
      fit-margin-top="0" />
   <g
      id="layer1"
@@ -183,7 +183,7 @@
        x="32.313" />
     <rect
        id="rect3801"
-       style="fill-opacity:.66238;fill:#1d2446"
+       style="fill-opacity:0.66238;fill:#ffffff"
        rx="2"
        height="409.71"
        width="618.22"
