@@ -26,7 +26,6 @@ import QtGraphicalEffects 1.0
 
 import "../../core"
 import "lang.js" as Activity
-import "quiz.js" as QuizActivity
 import "spell_it.js" as SpellActivity
 import "qrc:/gcompris/src/core/core.js" as Core
 
@@ -278,20 +277,6 @@ Item {
                 onExited: ok.scale = 1
             }
         }
-
-
-        //        VirtualKeyboard {
-        //            id: keyboard
-        //            x: 0
-
-        //            anchors.bottom: parent.bottom
-        //            anchors.horizontalCenter: parent.horizontalCenter
-        //            width: parent.width
-
-        //            onKeypress: answer.insert(answer.length,text)
-
-        //            onError: console.log("VirtualKeyboard error: " + msg);
-        //        }
 
         Bonus {
             id: bonus

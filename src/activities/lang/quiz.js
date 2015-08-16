@@ -26,7 +26,6 @@
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
-.import "qrc:/gcompris/src/activities/lang/spell_it.js" as SpellActivity
 
 var items;
 var quizItems;

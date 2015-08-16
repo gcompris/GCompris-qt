@@ -25,8 +25,6 @@
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
-.import "qrc:/gcompris/src/activities/lang/quiz.js" as QuizActivity
-.import "qrc:/gcompris/src/activities/lang/spell_it.js" as SpellActivity
 
 var currentLevel = 0;
 var currentSubLevel = 0;
@@ -78,7 +76,7 @@ function start() {
     currentSubLevel = 0;
 
     console.log("the locale in items", GCompris.ApplicationInfo.getVoicesLocale(items.locale) +" vs " +items.locale)
-    //    var locale = items.locale == "system" ? "$LOCALE" : items.locale
+//    var locale = items.locale == "system" ? "$LOCALE" : items.locale
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
     dataset = Lang.load(items.parser, baseUrl, "words.json", "content-"+ locale +".json")
 
@@ -86,6 +84,7 @@ function start() {
     var localeUnderscoreIndex = locale.indexOf('_')
     if(!dataset) {
         var localeShort;
+        console.log("If dataset is empty, we try to load from short locale")
         // We will first look again for locale xx (without _XX if exist)
         if(localeUnderscoreIndex > 0) {
             localeShort = locale.substring(0, localeUnderscoreIndex)
@@ -183,11 +182,8 @@ function initLevel(currentLevel_) {
         subLessons[i] = wordList.splice(0,maxWordInLesson)
     }
 
-    console.log("before initiallizing level with sublesson ",currentSubLesson, partitionsPassed[currentSection])
     currentSubLesson = partitionsPassed[currentSection]
     subWordList = subLessons[currentSubLesson]
-    console.log("after initiallizing level with sublesson ",currentSubLesson, partitionsPassed[currentSection])
-
 
     Core.shuffle(subWordList);
 
