@@ -24,6 +24,7 @@ import GCompris 1.0
 
 import "../../core"
 import "readingh.js" as Activity
+import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -80,7 +81,6 @@ ActivityBase {
             content: Component {
                 Item {
                     property alias localeBox: localeBox
-                    property alias leftToRightBox: leftToRightBox
                     height: column.height
 
                     property alias availableLangs: langs.languages
@@ -104,12 +104,6 @@ ActivityBase {
                                 label: qsTr("Select your locale")
                             }
                         }
-                        GCDialogCheckBox {
-                            id: leftToRightBox
-                            width: 300 * ApplicationInfo.ratio
-                            text: qsTr("Left to right mode")
-                            checked: wordDisplayList.layoutDirection == Qt.LeftToRight
-                        }
                     }
                 }
             }
@@ -120,33 +114,24 @@ ActivityBase {
                     if(dataToSave["locale"]) {
                         background.locale = dataToSave["locale"];
                     }
-                    if(dataToSave["leftToRight"] == false) {
-                        wordDisplayList.layoutDirection = Qt.RightToLeft;
-                    }
-                    else { // true or undefined (default value)
-                        wordDisplayList.layoutDirection = Qt.LeftToRight;
-                    }
                 }
             }
             onSaveData: {
                 var oldLocale = background.locale;
                 var newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
-                var leftToRightMode = dialogActivityConfig.loader.item.leftToRightBox.checked;
                 // Remove .UTF-8
                 if(newLocale.indexOf('.') != -1) {
                     newLocale = newLocale.substring(0, newLocale.indexOf('.'))
                 }
                 dataToSave = {
                     "locale": newLocale,
-                    "leftToRight": leftToRightMode
                 }
 
                 background.locale = newLocale;
-                wordDisplayList.layoutDirection = leftToRightMode ? Qt.LeftToRight : Qt.RightToLeft;
-
                 // Restart the activity with new information
                 if(oldLocale !== newLocale) {
                     background.stop();
+                    wordDisplayList.layoutDirection = Core.isLeftToRightLocale(background.locale) ? Qt.LeftToRight : Qt.RightToLeft;
                     background.start();
                 }
             }
@@ -213,7 +198,7 @@ ActivityBase {
             width: 350/800*parent.width-x
             height: 520/600*parent.height-y
             flow: mode == "readingh" ? Flow.LeftToRight : Flow.TopToBottom
-            layoutDirection: Qt.LeftToRight
+            layoutDirection: Core.isLeftToRightLocale(locale) ? Qt.LeftToRight : Qt.RightToLeft
 
             Repeater {
                 id: wordDisplayRepeater

@@ -237,3 +237,8 @@ function quit(parent)
     } else
         Qt.quit();
 }
+
+function isLeftToRightLocale(locale) {
+    var localeShort = GCompris.ApplicationInfo.getVoicesLocale(locale)
+    return (localeShort != "ar" && localeShort != "he");
+}
