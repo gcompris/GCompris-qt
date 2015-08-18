@@ -393,6 +393,12 @@ function clearPartitionsPassed() {
     }
 }
 
+function nextPressed() {
+    if(!items.menu_screen.visible && currentMiniGame == 0) {
+        items.background.keyNavigation = true
+        nextSubLevel()
+    }
+}
 
 //needed for win.connect, can remove when figure out how to do that
 function nextLevel() {

@@ -113,7 +113,6 @@ function initSubLevel() {
 
 function nextSubLevel() {
     if(items.score.currentSubLevel == items.score.numberOfSubLevels ) {
-        spellItems.displayed = false
         spellItems.bonus.good("smiley")
     } else {
         initSubLevel();

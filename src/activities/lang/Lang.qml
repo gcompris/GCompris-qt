@@ -181,22 +181,13 @@ ActivityBase {
             }
         }
         Keys.onSpacePressed: {
-            if( Activity.currentMiniGame == 0) {
-                keyNavigation = true
-                Activity.nextSubLevel()
-            }
+            Activity.nextPressed()
         }
         Keys.onEnterPressed: {
-            if( Activity.currentMiniGame == 0) {
-                keyNavigation = true
-                Activity.nextSubLevel()
-            }
+            Activity.nextPressed()
         }
         Keys.onReturnPressed: {
-            if(!menu_screen.visible && Activity.currentMiniGame == 0) {
-                keyNavigation = true
-                Activity.nextSubLevel()
-            }
+            Activity.nextPressed()
         }
 
         JsonParser {
@@ -247,7 +238,7 @@ ActivityBase {
                     PropertyAction {
                         target: categoryText
                         property: "text"
-                        value: qsTr("Category: ")+ categoryText.nextCategory
+                        value: qsTr("Category: %1").arg(categoryText.nextCategory)
                     }
                     PropertyAnimation {
                         target: categoryText
@@ -447,7 +438,7 @@ ActivityBase {
             id: bar
             anchors.bottom: keyboard.top
             content: BarEnumContent { value:
-                    menu_screen.visible ? help | home |config | reload
+                    menu_screen.visible ? help | home |config
                                         : help | home | reload }
             onHelpClicked: {
                 displayDialog(dialogHelp)
@@ -464,7 +455,6 @@ ActivityBase {
                 displayDialog(dialogActivityConfig)
             }
             onReloadClicked: {
-                if(items.menu_screen.visible == false)
                     Activity.clearPartitionsPassed()
             }
         }

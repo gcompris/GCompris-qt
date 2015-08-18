@@ -27,17 +27,10 @@ import QtGraphicalEffects 1.0
 import "../../core"
 import "lang.js" as Activity
 import "spell_it.js" as SpellActivity
-import "qrc:/gcompris/src/core/core.js" as Core
 
 
 Item {
     id: spellIt
-    opacity: displayed ? 1 : 0
-
-    property bool displayed: index == 0 ? false : true
-
-    // The opacity of spell it, set to 0 to disable
-    property int index: 1
 
     property alias background: background
     property alias wordImage: wordImage

@@ -28,16 +28,9 @@ import QtGraphicalEffects 1.0
 import "../../core"
 import "lang.js" as Activity
 import "quiz.js" as QuizActivity
-import "qrc:/gcompris/src/core/core.js" as Core
 
 Item {
     id: quiz
-    opacity: displayed ? 1 : 0
-
-    property bool displayed: index == 0 ? false : true
-
-    // The opacity of quiz, set to 0 to disable
-    property int index: 1
 
     property alias background: background
     property alias bonus: bonus

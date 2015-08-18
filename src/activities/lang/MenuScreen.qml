@@ -24,11 +24,9 @@
 import GCompris 1.0
 import QtGraphicalEffects 1.0
 import QtQuick.Controls 1.2
-import QtQml.Models 2.1
 
 import "../../core"
 import "lang.js" as Activity
-import "qrc:/gcompris/src/core/core.js" as Core
 
 Image {
     id: menu_screen
