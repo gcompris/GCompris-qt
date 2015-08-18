@@ -258,6 +258,10 @@ function showPossibleMoves(from) {
 
 // Random move depending on the level
 function randomMove() {
+    if(!items.difficultyByLevel) {
+        computerMove()
+        return
+    }
     // At level 2 we let the computer play 20% of the time
     // and 80% of the time we make a random move.
     if(Math.random() < currentLevel / (numberOfLevel - 1)) {
@@ -265,6 +269,7 @@ function randomMove() {
         return
     }
     // Get all possible moves
+    console.log('random move')
     var moves = Engine.p4_parse(state, state.to_play, 0, 0)
     moves = Core.shuffle(moves)
     var move = state.move(moves[0][1], moves[0][2])

@@ -31,6 +31,8 @@ ActivityBase {
     id: activity
 
     property bool twoPlayers: false
+    // difficultyByLevel means that at level 1 computer is bad better at last level
+    property bool difficultyByLevel: true
     property variant fen: [
         ["initial state", "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 1 1"],
         ["initial state", "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 1 1"],
@@ -65,6 +67,7 @@ ActivityBase {
                                             background.height / (8 + 3))
             property variant fen: activity.fen
             property bool twoPlayer: activity.twoPlayers
+            property bool difficultyByLevel: activity.difficultyByLevel
             property var viewstate
             property var history
             property int from
