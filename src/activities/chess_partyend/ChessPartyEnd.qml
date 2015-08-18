@@ -26,6 +26,7 @@ import "../chess"
 
 Chess {
     twoPlayers: false
+    difficultyByLevel: false
     fen: [
         ["", "4k3/8/8/8/8/8/8/K4QQ1 w - -"],
         ["", "1k6/8/8/8/8/8/8/K4RR1 w - -"],
@@ -39,7 +40,7 @@ Chess {
         ["“leonid's position”", "q2k2q1/2nqn2b/1n1P1n1b/2rnr2Q/1NQ1QN1Q/3Q3B/2RQR2B/Q2K2Q1 w - -"],
         ["sufficient material - opposing bishops", "8/6BK/7B/6b1/7B/8/B7/7k w - - 40 40"],
         ["checkmate in 1", "rnbqkr2/ppppbp1p/8/3NQ3/8/8/PPPP1nPP/R1B1KBNR  w - -"],
-        ["checkmate in 2", "6k1/p4p2/1p4p1/2p4p/4Pnq1/1P6/P1P2PPP/3R2Q1 w - -"],
-        ["checkmate in 5, sacrifice your queen", "5rq1/1p3p1p/6p1/q2P4/2n5/P6Q/QB2p3/2R5 w - -"]
+        ["checkmate in 2", "6k1/p4p2/1p4p1/2p4p/4Pnq1/1PQ5/P1P2PPP/3R2K1 w - -"],
+        ["checkmate in 5, sacrifice your queen", "5rk1/1p3p1p/6p1/q2P4/2n5/P6Q/KB2p3/2R5 w - -"]
     ]
 }
