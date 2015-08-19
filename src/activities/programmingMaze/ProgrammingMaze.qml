@@ -21,7 +21,6 @@
 import QtQuick 2.2
 import GCompris 1.0
 import "../../core"
-import "qrc:/gcompris/src/core/core.js" as Core
 
 import "programmingMaze.js" as Activity
 
