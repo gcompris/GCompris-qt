@@ -20,10 +20,10 @@ import GCompris 1.0
 ActivityInfo {
   name: "programmingMaze/ProgrammingMaze.qml"
   difficulty: 3
-  icon: "maze/maze.svg"
+  icon: "programmingMaze/programmingMaze.svg"
   author: "Siddhesh Suthar &lt;siddhesh.it@gmail.com&gt;"
   demo: false
-  title: qsTr("ProgrammingMaze activity")
+  title: qsTr("Programming Maze")
   description: qsTr("This activity teaches the kid to program the Tux to its goal using
 simple instructions like move forward, turn left etc")
   goal: qsTr("Tux is hungry. Help him find fish by programming him to the correct ice spot.")
