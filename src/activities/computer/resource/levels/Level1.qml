@@ -77,13 +77,14 @@ Item {
                     power = true
                     switchboard.source = Activity.url + "images/switchon.svg"
                     cpu_area.visible = true
-                    help_text.text = qsTr("Click on the Central Processing unit to start the system ")
+                    help_text.text = qsTr("Click on the Central Processing unit Power button to start the system ")
                 }
                 else
                 {
                     power = false
                     switchboard.source = Activity.url + "images/switchoff.svg"
                     poweroff()
+                    help_text.text = qsTr("You have shut down the power. Press on the switchboard for electricity.")
                 }
             }
         }
@@ -138,7 +139,7 @@ Item {
                     to: 1
                     duration: 10000
                     onRunningChanged:  {
-                        if(!load.running) {
+                        if(!load.running && cpu.source == Activity.url + "images/cpuoff.svg") {
                             monitor.source= Activity.url + "images/monitor.svg"
                             wallpaper.visible = false
                             help_text.text = qsTr("Click on the Mouse to activate the cursor on the screen. You will see the cursor moves with your actual mouse, when being pressed. ")
@@ -241,8 +242,9 @@ Item {
                         }
                         else
                         {
-                            cpu_reset()
                             cpu_switch.source = Activity.url + "images/cpuoff.svg"
+                            cpu_reset()
+                            help_text.text = qsTr(" You have switched off the Central processing Unit.<br/> Press on the CPU button to power again. ")
                         }
                     }
                 }
@@ -318,6 +320,7 @@ Item {
 
     function cpu_reset() {
         wallpaper.opacity = 0
+        load.running = false
         monitor.source = Activity.url + "images/monitor_off.svg"
         flick.visible = false
         mouse_area.visible = false

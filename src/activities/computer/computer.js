@@ -84,11 +84,14 @@ function initLevel() {
 }
 
 function previous() {
-    display()
-    if(count == 0)
+    if(count == 0) {
         count = dataset[level].length - 1
-    else
+
+    }
+    else {
         count--
+    }
+    display()
 }
 
 function next() {
