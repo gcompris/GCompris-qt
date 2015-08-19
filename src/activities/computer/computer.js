@@ -34,22 +34,26 @@ var dataset = [
                 {
                     desc : "A monitor or a display is an electronic visual display for computers. The monitor comprises the display device, circuitry and an enclosure.",
                     name : qsTr("Monitor"),
-                    img  : url + "images/monitor_off.svg"
+                    img  : url + "images/monitor_off.svg" ,
+                    ques : "Which device is used to show output of the keyboard ?"
                 },
                 {
                     desc : " central processing unit (CPU) is the electronic circuitry within a computer that carries out the instructions of a computer program by performing the basic arithmetic, logical, control and input/output (I/O) operations specified by the instructions. ",
                     name : qsTr("CPU"),
-                    img  : url + "images/cpu.svg"
+                    ques : "It is known as the Brain of the Computer. Click on the image." ,
+                    img  : url + "images/cpu.svg" ,
                 },
                 {
                     desc : " the keyboard is used as a text entry interface to type text and numbers into a word processor, text editor or other programs.A keyboard is also used to give commands to the operating system of a computer",
                     name : qsTr("Keyboard"),
-                    img  : url + "images/keyboard.svg"
+                    img  : url + "images/keyboard.svg",
+                    ques : "Which device has alphabets, numeric and special keys on it ? "
                 },
                 {
                     desc : "In computing, a mouse is a pointing device that detects two-dimensional motion relative to a surface. This motion is typically translated into the motion of a pointer on a display, which allows for fine control of a graphical user interface.",
                     name : qsTr("Mouse"),
-                    img  : url + "images/mouse.svg"
+                    img  : url + "images/mouse.svg" ,
+                    ques : "It is used as a pointing device. Can you guess it? "
                 }
             ]
         ]
@@ -124,28 +128,27 @@ function nextQuestion() {
 
     for (var i = 0 ;i < dataset[level].length; i++)
     {
-        answerModel.push(dataset[level][i].name)
+        answerModel.push(dataset[level][i].img)
     }
 
-    items.img.source = dataset[level][index].img
+    items.info.text = dataset[level][index].ques
     items.answers.model = answerModel
 }
 
 function getCorrectAnswer() {
-    return dataset[level][index].name
+    return dataset[level][index].img
 }
 
 function showAnswer()
 {
     console.log(dataset[level][index].name)
-    items.name.visible = true
     win()
 }
 
 function win () {
     items.bonus.good("flower")
     items.name.visible = false
-    if(index < dataset[level].length)
+    if(index < dataset[level].length - 1)
     {
         index++
         nextQuestion()

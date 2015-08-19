@@ -311,8 +311,9 @@ ActivityBase {
                     {
                         reset()
                         Activity.nextQuestion()
-                        holder.visible = true
                         proceed.visible = false
+                        intro_textbg.visible = true
+                        intro_text.visible = true
                     }
                 }
             }
@@ -339,25 +340,29 @@ ActivityBase {
 
         //quiz
 
-        Column
+        Grid
         {
             id: buttonHolder
             property bool buttonHolderMouseArea : true
-            spacing: 10 * ApplicationInfo.ratio
-            x: holder.x - width - 10 * ApplicationInfo.ratio
-            y: 30
+            spacing: 20 * ApplicationInfo.ratio
+            anchors.centerIn: parent
             add: Transition {
                 NumberAnimation { properties: "y"; from: 10; duration: 500 }
             }
+            rows: 2
+            columns: 2
             Repeater
             {
                 id: answers
-                AnswerButton {
-                    width: 120 * ApplicationInfo.ratio
-                    height: 80 * ApplicationInfo.ratio
-                    textLabel: modelData
-                    onPressed: {
-                        if(modelData === Activity.getCorrectAnswer()) Activity.showAnswer()
+                Image {
+                    width: img.height / 2
+                    height: width
+                    source: modelData
+                    MouseArea {
+                        anchors.fill: parent
+                        onPressed: {
+                            if(modelData === Activity.getCorrectAnswer()) Activity.showAnswer()
+                        }
                     }
                 }
             }
