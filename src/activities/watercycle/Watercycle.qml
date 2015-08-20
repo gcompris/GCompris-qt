@@ -135,8 +135,8 @@ ActivityBase {
             id: tuxboat
             opacity: 1
             source: activity.url + "boat.svg"
-            sourceSize.width: root.width*0.15
-            sourceSize.height: root.height*0.15
+            sourceSize.width: parent.width*0.15
+            sourceSize.height: parent.height*0.15
             anchors{
                 bottom: parent.bottom
                 bottomMargin: 15
@@ -147,7 +147,7 @@ ActivityBase {
             NumberAnimation on x {
                 id: anim
                 running: false
-                to: root.width - tuxboat.width
+                to: parent.width - tuxboat.width
                 duration: 15000
                 onRunningChanged: {
                     if(!anim.running)
