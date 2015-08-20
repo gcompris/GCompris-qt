@@ -174,6 +174,7 @@ ActivityBase {
                 bottom: parent.bottom
                 bottomMargin: 20
             }
+            z: 10
         }
 
         Image {
@@ -279,8 +280,8 @@ ActivityBase {
         Image {
             id: rain
             source: activity.url + "rain.svg"
-            height:cloud.height*2
-            width: cloud.width
+            sourceSize.height:cloud.height*2
+            sourceSize.width: cloud.width
             anchors {
                 top: cloud.bottom
                 left: parent.left
@@ -302,8 +303,10 @@ ActivityBase {
         Image {
             id: river
             source: activity.url + "river.svg"
-            width: parent.width*0.415
-            height: parent.height*0.74
+            sourceSize.width: parent.width * 0.415
+            sourceSize.height: parent.height * 0.74
+            width: parent.width * 0.415
+            height: parent.height * 0.74
             anchors {
                 top: parent.top
                 left: parent.left
@@ -317,6 +320,7 @@ ActivityBase {
         Image {
             id: reservoir1
             source: activity.url + "reservoir1.svg"
+            sourceSize.width: parent.width*0.06
             width: parent.width*0.06
             height: parent.height*0.15
             anchors {
@@ -332,6 +336,7 @@ ActivityBase {
         Image {
             id: reservoir2
             source: activity.url + "reservoir2.svg"
+            sourceSize.width: parent.width*0.12
             width: parent.width*0.12
             height: parent.height*0.155
             anchors {
@@ -347,6 +352,7 @@ ActivityBase {
         Image {
             id: reservoir3
             source: activity.url + "reservoir3.svg"
+            sourceSize.width: parent.width*0.2
             width: parent.width*0.2
             height: parent.height*0.17
             anchors {
@@ -431,15 +437,15 @@ ActivityBase {
         Image {
             id: motor
             source: activity.url + "motor.svg"
-            width: parent.width*0.07
-            height: parent.height*0.08
+            sourceSize.width: parent.width*0.07
+            sourceSize.height: parent.height*0.08
             anchors {
                 top: parent.top
                 left:parent.left
                 topMargin: parent.height*0.38
                 leftMargin: parent.width*0.4
             }
-            z: 10
+            z: 20
             MouseArea {
                 id: motor_area
                 visible: false
@@ -537,8 +543,8 @@ ActivityBase {
         Image {
             id: shower
             source: activity.url + "shower.svg"
-            height: parent.height*0.2
-            width: parent.width*0.15
+            sourceSize.height: parent.height*0.2
+            sourceSize.width: parent.width*0.15
             anchors {
                 bottom: parent.bottom
                 right: parent.right
@@ -667,9 +673,10 @@ ActivityBase {
             id: fillwater
             anchors.fill: parent
             sourceSize.width: parent.width
+            width: parent.width
             source: activity.url + "fillwater.svg"
             opacity: 0.1
-            z: 10
+            z: 11
             NumberAnimation on opacity{
                 id: empty_water
                 from: 1
@@ -690,6 +697,7 @@ ActivityBase {
             id: wastewater
             anchors.fill: parent
             sourceSize.width: parent.width
+            width: parent.width
             source: activity.url + "wastewater.svg"
             opacity: 0
             z: 10
@@ -719,8 +727,8 @@ ActivityBase {
         Image {
             id: waste
             source: activity.url + "waste.svg"
-            height: parent.height*0.15
-            width: parent.width*0.1
+            sourceSize.height: parent.height*0.15
+            sourceSize.width: parent.width*0.1
             anchors {
                 top: parent.top
                 left: parent.left

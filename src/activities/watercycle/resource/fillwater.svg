@@ -14,8 +14,8 @@
    height="520"
    id="svg2"
    sodipodi:version="0.32"
-   inkscape:version="0.48.4 r9939"
-   sodipodi:docname="wastewater.svg"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="fillwater.svg"
    inkscape:output_extension="org.inkscape.output.svgz.inkscape"
    version="1.0"
    style="display:inline;enable-background:new"
@@ -212,16 +212,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.1826318"
-     inkscape:cx="574.54196"
-     inkscape:cy="248.01057"
+     inkscape:zoom="3.0867075"
+     inkscape:cx="402.47961"
+     inkscape:cy="255.3543"
      inkscape:document-units="px"
      inkscape:current-layer="layer5"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="700"
-     inkscape:window-x="-2"
-     inkscape:window-y="-3"
+     inkscape:window-width="3200"
+     inkscape:window-height="1717"
+     inkscape:window-x="-8"
+     inkscape:window-y="0"
      showguides="true"
      inkscape:guide-bbox="true"
      borderlayer="true"
@@ -235,7 +235,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>28/10/2008</dc:date>
         <dc:creator>
           <cc:Agent>
@@ -296,8 +296,8 @@
      style="display:inline">
     <path
        id="CLEANWATER"
-       d="m 622,191.78683 0,26.61942 c 0,0 0.0347,0.24121 0,0.625 -0.104,1.15137 -0.74219,3.46875 -4.09375,3.46875 l -245.01196,0 -7.68979,5.5 256.7955,0 0.28125,0 c -3e-5,0 5.21875,-0.74786 5.21875,-5.25 l 0,-0.25 0,-28.01732 c -2.54044,-0.95754 -2.1975,-0.73299 -5.5,-2.69585 z m 20,2.89516 0,62.44301 c -0.19342,1.21027 -0.97182,3.125 -4.03125,3.125 l -153.35246,1.37449 0,3.66735 153.35246,0.45816 c 3.05943,0 3.83783,1.91473 4.03125,3.125 l 0,27.54787 2.93011,0.27869 2.56989,1.57747 0,-105.98353 z m 15.40939,114.06801 0.0884,3.89094 -2.38649,1.60906 19.93773,0 -1.32583,-5.5 z"
-       style="fill:#0073ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline;enable-background:new"
+       d="m 622,191.78683 0,26.61942 c 0,0 0.0347,0.24121 0,0.625 -0.104,1.15137 -0.74219,3.46875 -4.09375,3.46875 l -255.01196,0 -7.68979,5.5 266.7955,0 0.28125,0 c -3e-5,0 5.21875,-0.74786 5.21875,-5.25 l 0,-0.25 0,-28.01732 c -2.54044,-0.95754 -2.1975,-0.73299 -5.5,-2.69585 z m 20,2.89516 0,62.44301 c -0.19342,1.21027 -0.97182,3.125 -4.03125,3.125 l -153.35246,1.37449 0,3.66735 153.35246,0.45816 c 3.05943,0 3.83783,1.91473 4.03125,3.125 l 0,27.54787 2.93011,0.27869 2.56989,1.57747 0,-105.98353 z m 15.40939,114.06801 0.0884,3.89094 -2.38649,1.60906 19.93773,0 -1.32583,-5.5 z"
+       style="display:inline;fill:#0073ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
        sodipodi:nodetypes="ccsccccccccccccccccccccccccccc"
        inkscape:connector-curvature="0" />
   </g>
