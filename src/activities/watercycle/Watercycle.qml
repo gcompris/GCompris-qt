@@ -552,8 +552,7 @@ ActivityBase {
         Image {
             id: tuxoff
             source:activity.url + "tuxoff.svg"
-            height: shower.height*0.4
-            width: shower.width*0.2
+            sourceSize.width: shower.height * 0.4
             anchors {
                 horizontalCenter: shower.horizontalCenter
                 verticalCenter: shower.verticalCenter
@@ -567,8 +566,7 @@ ActivityBase {
         Image {
             id: tuxbath
             source: activity.url + "tuxbath.svg"
-            height: shower.height*0.5
-            width: shower.width*0.3
+            sourceSize.width: shower.height * 0.5
             anchors {
                 horizontalCenter: shower.horizontalCenter
                 verticalCenter: shower.verticalCenter
@@ -582,6 +580,7 @@ ActivityBase {
         Image {
             id: showerhot
             source: activity.url + "showerhot.svg"
+            sourceSize.width: shower.width * 0.1
             anchors {
                 right: shower.right
                 top: shower.top
@@ -595,6 +594,7 @@ ActivityBase {
         Image {
             id: showercold
             source: activity.url + "showercold.svg"
+            sourceSize.width: shower.width * 0.1
             anchors {
                 right: shower.right
                 top: shower.top
@@ -610,7 +610,6 @@ ActivityBase {
             visible: false
             anchors.fill: shower
             onClicked: {
-                console.log(wastewater.opacity)
                 if(wastewater.opacity == 0.4 && shower_activate == true && cycle_done == false) {
                     showerhot.visible = true
                     tuxbath.visible = true
