@@ -107,6 +107,7 @@ ActivityBase {
             sourceSize.width: parent.width
             source: activity.url + "sky.svg"
             height: (background.height - landscape.paintedHeight) / 2 + landscape.paintedHeight * 0.3
+            z: 1
         }
 
         Image {
@@ -118,6 +119,7 @@ ActivityBase {
             sourceSize.width: parent.width
             source: activity.url + "sea.svg"
             height : (background.height - landscape.paintedHeight) / 2 + landscape.paintedHeight * 0.7
+            z:3
         }
 
         Image {
@@ -125,6 +127,7 @@ ActivityBase {
             anchors.fill: parent
             sourceSize.width: parent.width
             source: activity.url + "landscape.svg"
+            z: 6
         }
 
 
@@ -181,8 +184,9 @@ ActivityBase {
                 left: parent.left
                 top: parent.top
                 leftMargin: parent.width*0.05
-                topMargin: parent.height*0.30
+                topMargin: parent.height * 0.28
             }
+            z: 2
             MouseArea{
                 id: sun_area
                 visible: false
@@ -223,28 +227,16 @@ ActivityBase {
 
 
         Image {
-            id: mask
-            source: activity.url + "mask.svg"
-            sourceSize.width: parent.width*0.05
-            anchors{
-                left: parent.left
-                top: parent.top
-                leftMargin: parent.width*0.05
-                topMargin: parent.height*0.32
-            }
-        }
-
-        Image {
             id: vapor
             opacity: 0
             state: "vapor"
             source: activity.url + "vapor.svg"
             sourceSize.width: parent.width*0.05
             anchors {
-                top: mask.bottom
-                left: parent.left
-                leftMargin: parent.width*0.05
+                top: sea.top
+                left: sun.left
             }
+            z: 10
         }
 
 
@@ -259,6 +251,7 @@ ActivityBase {
                 top: parent.top
                 leftMargin: 0.05*parent.width
             }
+            z: 10
             MouseArea {
                 id: cloud_area
                 visible: false
@@ -293,6 +286,7 @@ ActivityBase {
                 left: parent.left
                 leftMargin: 0.3*parent.width
             }
+            z: 10
             visible: false
         }
 
@@ -316,6 +310,7 @@ ActivityBase {
                 topMargin: parent.height*0.1775
                 leftMargin: parent.width*0.293
             }
+            z: 10
             visible: false
         }
 
@@ -331,6 +326,7 @@ ActivityBase {
                 leftMargin: parent.width*0.3225
             }
             opacity: 0
+            z: 10
         }
 
         Image {
@@ -345,6 +341,7 @@ ActivityBase {
                 leftMargin: parent.width*0.285
             }
             opacity: 0
+            z: 10
         }
 
         Image {
@@ -359,6 +356,7 @@ ActivityBase {
                 leftMargin: parent.width*0.25
             }
             opacity: 0
+            z: 10
         }
 
         SequentialAnimation {
@@ -441,6 +439,7 @@ ActivityBase {
                 topMargin: parent.height*0.38
                 leftMargin: parent.width*0.4
             }
+            z: 10
             MouseArea {
                 id: motor_area
                 visible: false
@@ -494,6 +493,7 @@ ActivityBase {
                 topMargin: parent.height*0.225
                 rightMargin: parent.width*0.175
             }
+            z: 10
 
             Image {
                 id: towerfull
@@ -545,6 +545,7 @@ ActivityBase {
                 bottomMargin: parent.height* 0.32
                 rightMargin: parent.width*0.012
             }
+            z: 10
             visible: false
         }
 
@@ -559,6 +560,7 @@ ActivityBase {
                 verticalCenterOffset: shower.height*0.1
                 horizontalCenterOffset: -shower.width*0.05
             }
+            z: 10
             visible: false
         }
 
@@ -573,6 +575,7 @@ ActivityBase {
                 verticalCenterOffset: shower.height*0.1
                 horizontalCenterOffset: -shower.width*0.05
             }
+            z: 10
             visible: false
         }
 
@@ -585,6 +588,7 @@ ActivityBase {
                 rightMargin: shower.width*0.15
                 topMargin: shower.height*0.25
             }
+            z: 10
             visible: false
         }
 
@@ -597,6 +601,7 @@ ActivityBase {
                 rightMargin: shower.width*0.15
                 topMargin: shower.height*0.25
             }
+            z: 10
             visible: false
         }
 
@@ -665,6 +670,7 @@ ActivityBase {
             sourceSize.width: parent.width
             source: activity.url + "fillwater.svg"
             opacity: 0.1
+            z: 10
             NumberAnimation on opacity{
                 id: empty_water
                 from: 1
@@ -687,6 +693,7 @@ ActivityBase {
             sourceSize.width: parent.width
             source: activity.url + "wastewater.svg"
             opacity: 0
+            z: 10
             NumberAnimation on opacity  {
                 id: waste_activate
                 from: 0
@@ -721,6 +728,7 @@ ActivityBase {
                 topMargin: parent.height*0.74
                 leftMargin: parent.width*0.66
             }
+            z: 10
             MouseArea {
                 id: waste_area
                 visible: false
