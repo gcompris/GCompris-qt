@@ -144,11 +144,13 @@ ActivityBase {
             x:0
             z:20
 
+            Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 200 } }
             NumberAnimation on x {
                 id: anim
                 running: false
                 to: parent.width - tuxboat.width
                 duration: 15000
+                easing.type: Easing.InOutCirc
                 onRunningChanged: {
                     if(!anim.running)
                     {
@@ -175,6 +177,7 @@ ActivityBase {
                 bottomMargin: 20
             }
             z: 10
+            Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 200 } }
         }
 
         Image {
