@@ -61,8 +61,7 @@ ActivityBase {
                 "rain": qsTr("Rain causes rivers to swell up and this water is transported to us via motor pumps through water-tower." +
                              " Click on the motor pump to supply water to residents."),
                 "tower": qsTr("See the tower filled with water. Activate the sewage treatment station by clicking on it."),
-                "shower": qsTr("Great, Click on the shower, as Tux arrives home. "),
-                "tosea": qsTr("The sewage is collected from homes in brown pipes and after treatment it is flowed to river bodies."),
+                "shower": qsTr("Great, click on the shower, as Tux arrives home."),
                 "done":  qsTr("Fantastic, you have completed water cycle. You can continue playing.")
             }
 
@@ -753,6 +752,16 @@ ActivityBase {
                 newKey = key
                 textanim.start()
             }
+        }
+
+        Rectangle {
+            id: infoBg
+            z: 99
+            anchors.fill: info
+            color: '#8ebfc7'
+            radius: width * 0.01
+            opacity: info.text ? 0.7 : 0
+            Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 200 } }
         }
 
         DialogHelp {
