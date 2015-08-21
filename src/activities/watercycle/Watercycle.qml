@@ -34,18 +34,6 @@ ActivityBase {
     onStop: {}
 
     property string url: "qrc:/gcompris/src/activities/watercycle/resource/"
-    property bool shower_activate: false
-    property bool cycle_done: false
-
-    property int  oldWidth: width
-    onWidthChanged: {
-        oldWidth: width
-    }
-
-    property int oldHeight: height
-    onHeightChanged: {
-        oldHeight: height
-    }
 
     pageComponent: Item {
         id: background
@@ -54,23 +42,38 @@ ActivityBase {
         signal start
         signal stop
 
+        Component.onCompleted: {
+            activity.start.connect(start)
+            activity.stop.connect(stop)
+        }
+
+        onStart: {
+            console.log("on start")
+            shower.hide()
+            river.level = 0
+        }
+
         QtObject {
             id: items
-            property Item main: activity.main
-            property alias background: background
-            property alias bar: bar
             property int count: 0
-            property alias bonus: bonus
             property var dataset: Dataset.dataset
-            property GCAudio audioEffects: activity.audioEffects
         }
 
         IntroMessage {
             id: message
+            anchors {
+                top: parent.top
+                topMargin: 10
+                right: parent.right
+                rightMargin: 5
+                left: parent.left
+                leftMargin: 5
+            }
+            z: 100
             onIntroDone: {
                 anim.running = true
                 info.visible = true
-                sun_area.visible = true
+                sun_area.enabled = true
 
             }
             intro: [
@@ -89,16 +92,6 @@ ActivityBase {
                 qsTr("There is text guide to help you in understanding the course of water cycle. "
                      +"Learn and Enjoy.")
             ]
-            anchors {
-                top: parent.top
-                topMargin: 10
-                right: parent.right
-                rightMargin: 5
-                left: parent.left
-                leftMargin: 5
-            }
-
-            z: 20
         }
 
         Image {
@@ -142,7 +135,7 @@ ActivityBase {
                 bottomMargin: 15
             }
             x:0
-            z:20
+            z:30
 
             Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 200 } }
             NumberAnimation on x {
@@ -150,15 +143,13 @@ ActivityBase {
                 running: false
                 to: parent.width - tuxboat.width
                 duration: 15000
-                easing.type: Easing.InOutCirc
+                easing.type: Easing.InOutSine
                 onRunningChanged: {
                     if(!anim.running)
                     {
                         tuxboat.opacity = 0
-                        tuxparked.opacity = 1
-                        shower.visible = true
-                        tuxoff.visible = true
-                        showercold.visible = true
+                        boatparked.opacity = 1
+                        shower.stop()
                     }
                 }
             }
@@ -166,7 +157,7 @@ ActivityBase {
 
 
         Image {
-            id: tuxparked
+            id: boatparked
             source: activity.url + "boat_parked.svg"
             sourceSize.width: parent.width*0.15
             sourceSize.height: parent.height*0.15
@@ -176,14 +167,14 @@ ActivityBase {
                 bottom: parent.bottom
                 bottomMargin: 20
             }
-            z: 10
+            z: 29
             Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 200 } }
         }
 
         Image {
             id: sun
             source: activity.url + "sun.svg"
-            sourceSize.width: parent.width*0.05
+            sourceSize.width: parent.width * 0.05
             anchors {
                 left: parent.left
                 top: parent.top
@@ -191,44 +182,23 @@ ActivityBase {
                 topMargin: parent.height * 0.28
             }
             z: 2
-            MouseArea{
+            MouseArea {
                 id: sun_area
-                visible: false
                 anchors.fill: sun
                 onClicked: {
-                    sun_info.running = true
-                    background.state = "up"
-                    cloud_timer.start()
-                    sun_area.visible = false
+                    if(cloud.opacity == 0)
+                        sun.up()
                 }
             }
-        }
-
-        SequentialAnimation  {
-            id: sun_info
-            running: false
-
-            ScriptAction {
-                script: background.next()
+            Behavior on anchors.topMargin { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 5000 } }
+            function up() {
+                sun.anchors.topMargin = parent.height * 0.05
+                vapor.up()
             }
-
-            PauseAnimation {
-                duration: 3000
-            }
-
-            ScriptAction {
-                script: background.next()
-            }
-
-            PauseAnimation {
-                duration: 5000
-            }
-
-            ScriptAction {
-                script: background.next()
+            function down() {
+                sun.anchors.topMargin = parent.height * 0.28
             }
         }
-
 
         Image {
             id: vapor
@@ -237,10 +207,48 @@ ActivityBase {
             source: activity.url + "vapor.svg"
             sourceSize.width: parent.width*0.05
             anchors {
-                top: sea.top
                 left: sun.left
             }
+            y: background.height * 0.28
             z: 10
+
+            SequentialAnimation {
+                id: vaporAnim
+                loops: 2
+                NumberAnimation {
+                    target: vapor
+                    property: "opacity"
+                    duration: 200
+                    from: 0
+                    to: 1
+                }
+                NumberAnimation {
+                    target: vapor
+                    property: "y"
+                    duration: 5000
+                    from: background.height * 0.28
+                    to: background.height * 0.1
+                }
+                NumberAnimation {
+                    target: vapor
+                    property: "opacity"
+                    duration: 200
+                    from: 1
+                    to: 0
+                }
+                NumberAnimation {
+                    target: vapor
+                    property: "y"
+                    duration: 0
+                    to: background.height * 0.28
+                }
+            }
+            function up() {
+                vaporAnim.start()
+                cloud.up()
+            }
+            function down() {
+            }
         }
 
 
@@ -249,57 +257,77 @@ ActivityBase {
             opacity: 0
             source: activity.url + "cloud.svg"
             sourceSize.width: parent.width * 0.20
-            sourceSize.height: parent.height*0.10
+            fillMode: Image.PreserveAspectFit
+            width: 0
             anchors {
-                left: parent.left
                 top: parent.top
-                leftMargin: 0.05*parent.width
+                topMargin: parent.height * 0.05
             }
-            z: 10
+            x: parent.width * 0.05
+            z: 11
             MouseArea {
                 id: cloud_area
-                visible: false
                 anchors.fill: cloud
                 onClicked: {
-                    background.state = "down"
-                    sun_area.visible = false
-                    rain.visible = true
-                    cloud_info.running = true
-                    river_fill.running = true
-                    cloud_opacity.start()
-                    cloud_area.visible = false
-                    river.visible = true
+                    sun.down()
+                    rain.up()
                 }
             }
-            NumberAnimation on opacity {
-                id: cloud_vanish
-                running: false
-                from: 1
-                to: 0
-                duration: 5000
+            Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 2000 } }
+            Behavior on width { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 15000 } }
+            Behavior on x { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 15000 } }
+            function up() {
+                opacity = 1
+                width = sourceSize.width
+                x = parent.width * 0.4
+            }
+            function down() {
+                width = 0
+                opacity = 0
+                x = parent.width * 0.05
             }
         }
 
         Image {
             id: rain
             source: activity.url + "rain.svg"
-            sourceSize.height:cloud.height*2
-            sourceSize.width: cloud.width
+            sourceSize.height: cloud.height * 2
+            opacity: 0
             anchors {
                 top: cloud.bottom
-                left: parent.left
-                leftMargin: 0.3*parent.width
             }
+            x: cloud.x
             z: 10
-            visible: false
-        }
-
-
-        SequentialAnimation{
-            id: cloud_info
-            running: false
-            ScriptAction {
-                script: background.next()
+            Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 300 } }
+            SequentialAnimation{
+                id: rainAnim
+                running: false
+                loops: 10
+                NumberAnimation {
+                    target: rain
+                    property: "scale"
+                    duration: 500
+                    to: 0.95
+                }
+                NumberAnimation {
+                    target: rain
+                    property: "scale"
+                    duration: 500
+                    to: 1
+                }
+                onRunningChanged: {
+                    if(!running) {
+                        rain.down()
+                        cloud.down()
+                    }
+                }
+            }
+            function up() {
+                opacity = 1
+                rainAnim.start()
+            }
+            function down() {
+                opacity = 0
             }
         }
 
@@ -310,6 +338,7 @@ ActivityBase {
             sourceSize.height: parent.height * 0.74
             width: parent.width * 0.415
             height: parent.height * 0.74
+            opacity: level > 0 ? 1 : 0
             anchors {
                 top: parent.top
                 left: parent.left
@@ -317,7 +346,8 @@ ActivityBase {
                 leftMargin: parent.width*0.293
             }
             z: 10
-            visible: false
+            Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 5000 } }
+            property double level: 0
         }
 
         Image {
@@ -332,8 +362,9 @@ ActivityBase {
                 topMargin: parent.height*0.2925
                 leftMargin: parent.width*0.3225
             }
-            opacity: 0
+            opacity: river.level > 0.2 ? 1 : 0
             z: 10
+            Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 5000 } }
         }
 
         Image {
@@ -348,8 +379,9 @@ ActivityBase {
                 topMargin: parent.height*0.2925
                 leftMargin: parent.width*0.285
             }
-            opacity: 0
+            opacity: river.level > 0.5 ? 1 : 0
             z: 10
+            Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 5000 } }
         }
 
         Image {
@@ -364,81 +396,13 @@ ActivityBase {
                 topMargin: parent.height*0.29
                 leftMargin: parent.width*0.25
             }
-            opacity: 0
+            opacity: river.level > 0.8 ? 1 : 0
             z: 10
+            Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 5000 } }
         }
-
-        SequentialAnimation {
-            id: river_fill
-            running: false
-
-            PropertyAnimation{
-                target: reservoir1
-                property: "opacity"
-                to: 1
-            }
-
-            PauseAnimation {
-                duration: 1000
-            }
-
-            PropertyAnimation{
-                target: reservoir2
-                property: "opacity"
-                to: 1
-            }
-
-            PauseAnimation {
-                duration: 1000
-            }
-            PropertyAnimation{
-                target: reservoir3
-                property: "opacity"
-                to: 1
-            }
-            onRunningChanged: {
-                if(!river_fill.running)
-                {
-                    motor_area.visible = true
-                }
-            }
-        }
-
-
-        SequentialAnimation {
-            id: river_empty
-            running: false
-
-            PropertyAnimation{
-                target: reservoir3
-                property: "opacity"
-                to: 0
-            }
-
-            PauseAnimation {
-                duration: 1000
-            }
-
-            PropertyAnimation{
-                target: reservoir2
-                property: "opacity"
-                to: 0
-            }
-
-            PauseAnimation {
-                duration: 1000
-            }
-
-            PropertyAnimation{
-                target: reservoir1
-                property: "opacity"
-                to: 0
-            }
-        }
-
 
         Image {
-            id: motor
+            id: waterplant
             source: activity.url + "motor.svg"
             sourceSize.width: parent.width*0.07
             sourceSize.height: parent.height*0.08
@@ -449,46 +413,59 @@ ActivityBase {
                 leftMargin: parent.width*0.4
             }
             z: 20
+            property bool running: false
             MouseArea {
                 id: motor_area
-                visible: false
-                anchors.fill: motor
+                enabled: river.level > 0.2
+                anchors.fill: parent
                 onClicked: {
-                    motor_info.running = true
-                    motor_area.visible = false
-                    fillwater.opacity = 1
-                    towerfull.visible = true
-                    anim3.running = true
-                    river_empty.running = true
-                    waste_area.visible = true
+                    waterplant.running = true
                 }
             }
         }
 
+        Image {
+            id: fillpipe
+            anchors.fill: parent
+            sourceSize.width: parent.width
+            width: parent.width
+            source: activity.url + "fillwater.svg"
+            opacity: waterplant.running ? 1 : 0.1
+            z: 9
+            Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 300 } }
+        }
 
-
-        SequentialAnimation{
-            id: motor_info
-            running: false
-
-            ScriptAction {
-                script: {
-                    background.next()
-                    wastearea()
+        Image {
+            id: sewageplant
+            source: activity.url + "waste.svg"
+            sourceSize.height: parent.height * 0.15
+            anchors {
+                top: parent.top
+                left: parent.left
+                topMargin: parent.height*0.74
+                leftMargin: parent.width*0.66
+            }
+            z: 11
+            property bool running: false
+            MouseArea {
+                id: waste_area
+                enabled: river.opacity == 1
+                anchors.fill: parent
+                onClicked: {
+                    sewageplant.running = true
                 }
-            }
-
-            PauseAnimation {
-                duration: 10000
-            }
-
-            ScriptAction {
-                script: background.next()
             }
         }
 
-        function wastearea() {
-            waste_area.visible = false
+        Image {
+            id: wastepipe
+            anchors.fill: parent
+            sourceSize.width: parent.width
+            width: parent.width
+            source: activity.url + "wastewater.svg"
+            opacity: sewageplant.running ? 1 : 0.1
+            z: 10
+            Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 300 } }
         }
 
         Image {
@@ -503,10 +480,11 @@ ActivityBase {
                 rightMargin: parent.width*0.175
             }
             z: 10
+            property double level: 0
 
             Image {
-                id: towerfull
-                scale: 0
+                id: towerfill
+                scale: tower.level
                 source: activity.url + "watertowerfill.svg"
                 sourceSize.width: tower.width*0.4
                 anchors {
@@ -515,32 +493,8 @@ ActivityBase {
                     topMargin: tower.height*0.13
                     leftMargin: tower.width*0.3
                 }
-
-                NumberAnimation on scale{
-                    id: anim2
-                    running: false
-                    to: 0
-                    duration: 10000
-                }
-
-                NumberAnimation on scale{
-                    id: anim3
-                    running: false
-                    from: 0
-                    to: 1
-                    duration: 10000
-
-                    onRunningChanged: {
-                        console.log(wastewater.opacity)
-                        if(!anim3.running &&  shower_activate == false && cycle_done == false ){
-                            shower_area.visible = true
-                            shower_activate = true
-                        }
-                    }
-                }
-                visible: false
+                Behavior on scale { PropertyAnimation { duration: timer.interval } }
             }
-            visible: true
         }
 
         Image {
@@ -556,6 +510,49 @@ ActivityBase {
             }
             z: 10
             visible: false
+            property bool on: false
+
+            MouseArea {
+                id: shower_area
+                anchors.fill: parent
+                onClicked: {
+                    if(!shower.on &&
+                            river.opacity == 1 && wastepipe.opacity > 0.8 &&
+                            fillpipe.opacity > 0.8 && tower.level > 0.5)
+                        shower.start()
+                    else
+                        shower.stop()
+                }
+            }
+
+            function start() {
+                console.log("start")
+                shower.on = true
+                shower.visible = true
+                showerhot.visible = true
+                tuxbath.visible = true
+                showercold.visible = false
+                tuxoff.visible = false
+            }
+
+            function stop() {
+                console.log("stop")
+                shower.on = false
+                shower.visible = true
+                showerhot.visible = false
+                tuxbath.visible = false
+                showercold.visible = true
+                tuxoff.visible = true
+            }
+            function hide() {
+                console.log("hide")
+                shower.visible = false
+                shower.on = false
+                tuxoff.visible = false
+                showercold.visible = false
+                showerhot.visible = false
+                tuxbath.visible = false
+            }
         }
 
         Image {
@@ -614,346 +611,28 @@ ActivityBase {
             visible: false
         }
 
-        MouseArea {
-            id: shower_area
-            visible: false
-            anchors.fill: shower
-            onClicked: {
-                if(wastewater.opacity == 0.4 && shower_activate == true && cycle_done == false) {
-                    showerhot.visible = true
-                    tuxbath.visible = true
-                    showercold.visible = false
-                    tuxoff.visible = false
-                    anim2.running = true
-                    shower_info.running = true
-                    empty_water.running = true
-                    shower_area.visible = false
+        // Manage stuff that changes periodically
+        Timer {
+            id: timer
+            interval: 100
+            running: true
+            repeat: true
+            onTriggered: {
+                if(rain.opacity > 0.9 && river.level < 1) {
+                    river.level += 0.01
+                }
+                if(river.level > 0 && fillpipe.opacity > 0.9 && tower.level < 1 && !shower.on) {
+                    river.level -= 0.02
+                    tower.level += 0.05
+                }
+                if(tower.level > 0 && shower.on) {
+                    tower.level -= 0.02
+                }
+                if(tower.level <= 0 && boatparked.opacity) {
+                    shower.stop()
                 }
             }
         }
-
-
-        SequentialAnimation {
-            id: shower_info
-            running: false
-
-            ScriptAction {
-                script: background.next()
-            }
-
-            PauseAnimation {
-                duration: 11000
-            }
-            ScriptAction {
-                script: showercheck()
-            }
-
-            PauseAnimation {
-                duration: 200
-            }
-
-            ScriptAction {
-                script:cyclecomplete()
-            }
-
-            PauseAnimation {
-                duration: 2000
-            }
-
-            ScriptAction {
-                script: background.next()
-            }
-            onRunningChanged: {
-                if(!shower_info.running)
-                {
-                    waste_area.visible = true
-                }
-            }
-        }
-
-
-        Image {
-            id: fillwater
-            anchors.fill: parent
-            sourceSize.width: parent.width
-            width: parent.width
-            source: activity.url + "fillwater.svg"
-            opacity: 0.1
-            z: 11
-            NumberAnimation on opacity{
-                id: empty_water
-                from: 1
-                to: 0.5
-                running: false
-                duration: 10000
-            }
-            NumberAnimation on opacity{
-                id: fill_water
-                from: 0.5
-                to: 1
-                running: false
-                duration: 10000
-            }
-        }
-
-        Image {
-            id: wastewater
-            anchors.fill: parent
-            sourceSize.width: parent.width
-            width: parent.width
-            source: activity.url + "wastewater.svg"
-            opacity: 0
-            z: 10
-            NumberAnimation on opacity  {
-                id: waste_activate
-                from: 0
-                to: 0.4
-                running: false
-                duration: 1
-            }
-            NumberAnimation on opacity{
-                id: waste_flow
-                from: 1
-                to: 0.4
-                running: false
-                duration: 5000
-            }
-            NumberAnimation on opacity{
-                id: waste_fetch
-                from: 0.4
-                to: 1
-                running: false
-                duration: 5000
-            }
-        }
-
-        Image {
-            id: waste
-            source: activity.url + "waste.svg"
-            sourceSize.height: parent.height*0.15
-            sourceSize.width: parent.width*0.1
-            anchors {
-                top: parent.top
-                left: parent.left
-                topMargin: parent.height*0.74
-                leftMargin: parent.width*0.66
-            }
-            z: 10
-            MouseArea {
-                id: waste_area
-                visible: false
-                anchors.fill: waste
-                onClicked: {
-                    if(wastewater.opacity == 0) {
-                        waste_area.visible == false
-                        waste_activate.running = true
-                    }
-                    else if(wastewater.opacity == 0.4 && shower_activate == false){
-                        waste_info.running = true
-                        waste_area.visible = false
-                        waste_fetch.running = true
-                    }
-                }
-            }
-        }
-
-        SequentialAnimation{
-            id: waste_info
-            running: false
-
-            PauseAnimation {
-                duration: 5000
-            }
-
-            ScriptAction {
-                script: background.next()
-            }
-
-            PauseAnimation {
-                duration: 5000
-            }
-
-            ScriptAction {
-                script: waste_collect()
-            }
-
-            PauseAnimation {
-                duration: 5000
-            }
-
-            ScriptAction {
-                script: background.next()
-            }
-
-
-            PauseAnimation {
-                duration: 5000
-            }
-
-            ScriptAction {
-                script: reset()
-            }
-
-        }
-
-
-        states: [ State {
-                name:"up"
-                AnchorChanges {
-                    target: sun
-                    anchors {
-                        left: parent.left
-                        top: parent.top
-                    }
-                }
-                PropertyChanges {
-                    target: sun
-                    anchors
-                    {
-                        leftMargin: parent.width*0.05
-                        topMargin: parent.height*0.05
-                    }
-                }
-
-                AnchorChanges {
-                    target:vapor
-                    anchors {
-                        left: parent.left
-                        top: parent.top
-                    }
-                }
-                PropertyChanges {
-                    target: vapor
-                    opacity: 1
-                    anchors {
-                        leftMargin: parent.width*0.05
-                        topMargin: parent.height*0.15
-                    }
-                }
-                AnchorChanges {
-                    target: cloud
-                    anchors {
-                        top: parent.top
-                        left: parent.left
-                    }
-                }
-                PropertyChanges {
-                    target: cloud
-                    opacity: 1
-                    anchors {
-                        leftMargin: parent.width*0.35
-                    }
-                }
-            } ,
-            State {
-                name: "down"
-                AnchorChanges {
-                    target: sun
-                    anchors {
-                        left:parent.left
-                        top:parent.top
-                    }
-                }
-                PropertyChanges {
-                    target: sun
-                    anchors {
-                        leftMargin: parent.width*0.05
-                        topMargin: parent.height*0.30
-                    }
-                }
-
-                PropertyChanges {
-                    target: vapor
-                    opacity: 0
-                }
-                AnchorChanges {
-                    target: cloud
-                    anchors {
-                        top: parent.top
-                        left: parent.left
-                    }
-                }
-                PropertyChanges {
-                    target: cloud
-                    opacity: 1
-                    anchors {
-                        leftMargin: parent.width*0.35
-                    }
-                }
-            },
-            State {
-                name: "origin"
-                AnchorChanges {
-                    target: cloud
-                    anchors {
-                        top: parent.top
-                        left: parent.left
-                    }
-                }
-                PropertyChanges {
-                    target: cloud
-                    opacity: 0
-                    anchors {
-                        leftMargin: parent.width*0.05
-                    }
-                }
-            }
-        ]
-
-        transitions: [
-            Transition {
-                to: "up"
-                SequentialAnimation {
-
-                    AnchorAnimation {
-                        targets: sun
-                        duration: 3000
-
-                    }
-                    NumberAnimation {
-                        target: vapor
-                        property: "opacity"
-                        duration:100
-                    }
-
-                    AnchorAnimation {
-                        targets: vapor
-                        loops: 5
-                        duration: 1000
-                    }
-
-                    NumberAnimation {
-                        target: cloud
-                        property: "opacity"
-                        duration: 50
-                    }
-
-                    AnchorAnimation {
-                        targets: cloud
-                        duration: 3000
-                    }
-
-                }
-            } ,
-            Transition {
-                from: "up"
-                to: "down"
-                SequentialAnimation {
-
-                    NumberAnimation {
-                        target: vapor
-                        property: "opacity"
-                        duration: 100
-                    }
-
-                    AnchorAnimation {
-                        targets: sun
-                        duration: 5000
-                    }
-                }
-            }
-        ]
-
 
         GCText {
             id: info
@@ -987,46 +666,7 @@ ActivityBase {
         }
 
         function cyclecomplete(){
-            items.bonus.good("smiley")
-        }
-
-
-        function showercheck(){
-            if( !anim2.running )
-            {
-                anim3.running = true
-                showercold.visible = true
-                tuxoff.visible = true
-                showerhot.visible = false
-                tuxbath.visible = false
-                shower_area.visible = false
-                fill_water.running = true
-                shower_activate = false
-                cycle_done = true
-            }
-        }
-
-        function waste_collect()
-        {
-            waste_flow.running = true
-        }
-
-        function reset() {
-            sun_area.visible = true
-            background.next()
-            towerfull.scale = 0
-            towerfull.visible = false
-            river_fill.running = false
-            river_empty.running = false
-            anim2.running = false
-            anim3.running = false
-            shower_area.visible = false
-            background.state = "origin"
-            fillwater.opacity = 0
-            river.visible = false
-            shower_activate = false
-            wastewater.opacity = 0
-            cycle_done = false
+            bonus.good("smiley")
         }
 
 
@@ -1048,25 +688,5 @@ ActivityBase {
             id:bonus
         }
 
-        Timer {
-            id: cloud_timer
-            running: false
-            repeat: false
-            interval: 11150
-            onTriggered: {
-                cloud_area.visible= true
-                cloud_timer.stop()
-            }
-        }
-
-        Timer {
-            id: cloud_opacity
-            repeat: false
-            running: false
-            onTriggered: {
-                rain.visible= false
-                cloud_vanish.running= true
-            }
-        }
     }
 }
