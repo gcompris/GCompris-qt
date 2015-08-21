@@ -20,38 +20,19 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-var dataset = [
-            {
-                "text" : qsTr("Sun is the main component of water cycle. Click on the Sun to start the water cycle.")
-            },
-            {
-                "text" : qsTr("As the Sun rises, the temperature of sea rises and heating starts. This is called evaporation.")
-            } ,
-            {
-                "text" :  qsTr("Due to evaporation, water gets heated to form water-vapor.")
-            } ,
-            {
-                "text" : qsTr("Water-vapor condenses to form cloud and when they become heavy, they rain. Click on the cloud.")
-            } ,
-            {
-                "text" : qsTr("Rain causes rivers to swell up and this water is transported to us via motor through water-tower. Click on motor to supply water to residents.")
-            } ,
-            {
-                "text" : qsTr("See the tower filled with water. Activate the waste station by clicking on it.")
-            } ,
-            {
-                "text" : qsTr("Great, Click on the shower, as Tux arrives home. ")
-            } ,
-            {
-                "text" : qsTr("The blue pipes bring fresh water to residents including Tux bathroom. After usage, the used water, now waste, is sent to waste water station.")
-            } ,
-            {
-                "text" : qsTr("Click on waste water station to pump sewage for treatment.")
-            } ,
-            {
-                "text" : qsTr("The sewage is collected from homes in brown pipes and after treatment it is flowed to river bodies.")
-            },
-            {
-                "text" :  qsTr("Fantastic, you have completed water cycle. You can replay the whole water cycle once again.")
-            }
-        ]
+var dataset = {
+    "none": "",
+    "start": qsTr("Sun is the main component of water cycle. Click on the sun to start the water cycle."),
+    "sun": qsTr("As the sun rises, the temperature of the sea starts heating and evaporate."),
+    "vapor":  qsTr("Due to evaporation, water gets heated to form water vapor."),
+    "cloud": qsTr("Water vapor condenses to form cloud and when they become heavy, they rain. Click on the cloud."),
+    "rain": qsTr("Rain causes rivers to swell up and this water is transported to us via motor pumps through water-tower." +
+                 " Click on the motor pump to supply water to residents."),
+    "tower": qsTr("See the tower filled with water. Activate the waste station by clicking on it."),
+    "shower": qsTr("Great, Click on the shower, as Tux arrives home. "),
+    "bluepipe": qsTr("The blue pipes bring fresh water to residents including Tux bathroom." +
+                     " After usage, the used water, now waste, is sent to sewage water station."),
+    "seawage": qsTr("Click on the seawage treatment plant to activate it."),
+    "tosea": qsTr("The sewage is collected from homes in brown pipes and after treatment it is flowed to river bodies."),
+    "done":  qsTr("Fantastic, you have completed water cycle. You can continue playing.")
+}

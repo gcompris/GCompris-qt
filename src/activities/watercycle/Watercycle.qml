@@ -25,7 +25,6 @@ import GCompris 1.0
 
 import "../../core"
 import "."
-import "watercycle_text.js" as Dataset
 
 ActivityBase {
     id: activity
@@ -54,8 +53,20 @@ ActivityBase {
 
         QtObject {
             id: items
-            property int count: 0
-            property var dataset: Dataset.dataset
+            property var dataset: {
+                "none": "",
+                "start": qsTr("Sun is the main component of water cycle. Click on the sun to start the water cycle."),
+                "sun": qsTr("As the sun rises, the temperature of the sea starts heating and evaporates."),
+                "cloud": qsTr("Water vapor condenses to form cloud and when they become heavy, they rain. Click on the cloud."),
+                "rain": qsTr("Rain causes rivers to swell up and this water is transported to us via motor pumps through water-tower." +
+                             " Click on the motor pump to supply water to residents."),
+                "tower": qsTr("See the tower filled with water. Activate the sewage treatment station by clicking on it."),
+                "shower": qsTr("Great, Click on the shower, as Tux arrives home. "),
+                "tosea": qsTr("The sewage is collected from homes in brown pipes and after treatment it is flowed to river bodies."),
+                "done":  qsTr("Fantastic, you have completed water cycle. You can continue playing.")
+            }
+
+            property bool cycleDone: false
         }
 
         IntroMessage {
@@ -73,7 +84,6 @@ ActivityBase {
                 anim.running = true
                 info.visible = true
                 sun_area.enabled = true
-
             }
             intro: [
                 qsTr("The Water Cycle (also known as the hydrologic cycle) is the journey water takes"
@@ -122,7 +132,6 @@ ActivityBase {
             z: 6
         }
 
-
         Image {
             id: tuxboat
             opacity: 1
@@ -149,11 +158,12 @@ ActivityBase {
                         tuxboat.opacity = 0
                         boatparked.opacity = 1
                         shower.stop()
+                        if(!sun.hasRun)
+                            info.setText('start')
                     }
                 }
             }
         }
-
 
         Image {
             id: boatparked
@@ -181,6 +191,7 @@ ActivityBase {
                 topMargin: parent.height * 0.28
             }
             z: 2
+            property bool hasRun: false
             MouseArea {
                 id: sun_area
                 anchors.fill: sun
@@ -191,6 +202,8 @@ ActivityBase {
             }
             Behavior on anchors.topMargin { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 5000 } }
             function up() {
+                info.setText('sun')
+                sun.hasRun = true
                 sun.anchors.topMargin = parent.height * 0.05
                 vapor.up()
             }
@@ -241,6 +254,10 @@ ActivityBase {
                     duration: 0
                     to: background.height * 0.28
                 }
+                onRunningChanged: {
+                    if(!running)
+                        info.setText('cloud')
+                }
             }
             function up() {
                 vaporAnim.start()
@@ -272,17 +289,67 @@ ActivityBase {
                     rain.up()
                 }
             }
-            Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 2000 } }
-            Behavior on width { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 15000 } }
-            Behavior on x { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 15000 } }
+            ParallelAnimation {
+                id: cloudanimOn
+                running: false
+                PropertyAnimation {
+                    target: cloud
+                    property: 'opacity'
+                    easing.type: Easing.InOutQuad
+                    duration: 5000
+                    from: 0
+                    to: 1
+                }
+                PropertyAnimation {
+                    target: cloud
+                    property: 'width'
+                    easing.type: Easing.InOutQuad
+                    duration: 15000
+                    from: 0
+                    to: cloud.sourceSize.width
+                }
+                PropertyAnimation {
+                    target: cloud
+                    property: 'x'
+                    easing.type: Easing.InOutQuad
+                    duration: 15000
+                    from: background.width * 0.05
+                    to: background.width * 0.4
+                }
+            }
+            SequentialAnimation {
+                id: cloudanimOff
+                running: false
+                PropertyAnimation {
+                    target: cloud
+                    property: 'opacity'
+                    easing.type: Easing.InOutQuad
+                    duration: 3000
+                    from: 1
+                    to: 0
+                }
+                PropertyAnimation {
+                    target: cloud
+                    property: 'width'
+                    easing.type: Easing.InOutQuad
+                    duration: 0
+                    to: 0
+                }
+                PropertyAnimation {
+                    target: cloud
+                    property: 'x'
+                    easing.type: Easing.InOutQuad
+                    duration: 0
+                    to: background.width * 0.05
+                }
+            }
+
             function up() {
-                opacity = 1
-                width = sourceSize.width
-                x = parent.width * 0.4
+                cloudanimOn.start()
             }
             function down() {
-                width = 0
                 opacity = 0
+                width = 0
                 x = parent.width * 0.05
             }
         }
@@ -322,6 +389,7 @@ ActivityBase {
                 }
             }
             function up() {
+                info.setText('rain')
                 opacity = 1
                 rainAnim.start()
             }
@@ -418,6 +486,7 @@ ActivityBase {
                 enabled: river.level > 0.2
                 anchors.fill: parent
                 onClicked: {
+                    info.setText('tower')
                     waterplant.running = true
                 }
             }
@@ -451,6 +520,7 @@ ActivityBase {
                 enabled: river.opacity == 1
                 anchors.fill: parent
                 onClicked: {
+                    info.setText('shower')
                     sewageplant.running = true
                 }
             }
@@ -531,6 +601,12 @@ ActivityBase {
                 tuxbath.visible = true
                 showercold.visible = false
                 tuxoff.visible = false
+
+                if(!items.cycleDone) {
+                    info.setText('done')
+                    bonus.good('smiley')
+                    items.cycleDone = true
+                }
             }
 
             function stop() {
@@ -632,7 +708,7 @@ ActivityBase {
 
         GCText {
             id: info
-            visible: false
+            visible: true
             fontSize: smallSize
             font.weight: Font.DemiBold
             horizontalAlignment: Text.AlignHCenter
@@ -642,29 +718,42 @@ ActivityBase {
                 right: parent.right
                 rightMargin: 5 * ApplicationInfo.ratio
                 left: parent.left
-                leftMargin: parent.width*0.50
+                leftMargin: parent.width * 0.50
             }
             width: parent.width
             wrapMode: Text.WordWrap
-            text: items.dataset[items.count].text
-        }
+            z: 100
+            onTextChanged: textanim.start()
+            property string newKey
 
-        //functions for different checkpoints.
-
-        function next() {
-            if(items.count <= items.dataset.length - 2)
-            {
-                items.count++
+            SequentialAnimation {
+                id: textanim
+                NumberAnimation {
+                    target: info
+                    property: "opacity"
+                    duration: 200
+                    from: 1
+                    to: 0
+                }
+                PropertyAction {
+                    target: info
+                    property: 'text'
+                    value: items.dataset[info.newKey]
+                }
+                NumberAnimation {
+                    target: info
+                    property: "opacity"
+                    duration: 200
+                    from: 0
+                    to: 1
+                }
             }
-            else {
-                items.count = 0
+
+            function setText(key) {
+                newKey = key
+                textanim.start()
             }
         }
-
-        function cyclecomplete(){
-            bonus.good("smiley")
-        }
-
 
         DialogHelp {
             id: dialogHelp
