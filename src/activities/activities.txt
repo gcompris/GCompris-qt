@@ -104,4 +104,5 @@ target
 tic_tac_toe
 tic_tac_toe_2players
 traffic
+watercycle
 wordsgame
