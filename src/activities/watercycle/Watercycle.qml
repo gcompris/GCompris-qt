@@ -85,20 +85,18 @@ ActivityBase {
                 sun_area.enabled = true
             }
             intro: [
-                qsTr("The Water Cycle (also known as the hydrologic cycle) is the journey water takes"
+                qsTr("The water cycle (also known as the hydrologic cycle) is the journey water takes"
                      +" as it circulates from the land to the sky and back again."
-                     +" The Sun's heat provides energy to evaporate water from water bodies like oceans.") ,
+                     +" The sun's heat provides energy to evaporate water from water bodies like oceans.") ,
                 qsTr(" Plants also lose water to the air through transpiration. The water vapor eventually, "
                      +" cools forming tiny droplets in clouds. When the clouds meet cool air over land, "
                      +" precipitation is triggered and fall down as rain.") ,
                 qsTr("Some of the water is trapped between rock or clay layers, called groundwater."
                      +" But most of the water flows as runoff, eventually returning to the seas via rivers."),
                 qsTr("Your goal is to complete water cycle before Tux reaches home."
-                     +" Click on the different components which make up the Water Cycle."
-                     +" First click on sun, then cloud, then motor near the river and"
-                     +" at last regulate the switch to provide water to Tux's bathroom."),
-                qsTr("There is text guide to help you in understanding the course of water cycle. "
-                     +"Learn and Enjoy.")
+                     +" Click on the different components which make up the water cycle."
+                     +" First click on sun, then cloud, water pumping station near the river, "
+                     +" sewage treatment, and at last regulate the switch to provide water to Tux's shower.")
             ]
         }
 
