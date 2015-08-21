@@ -19,16 +19,16 @@ import GCompris 1.0
 
 ActivityInfo {
     name: "watercycle/Watercycle.qml"
-    difficulty: 1
+    difficulty: 3
     icon: "watercycle/watercycle.svg"
     author: "Sagar Chand Agarwal &lt;atomsagar@gmail.com&gt;"
     demo: true
     title: qsTr("Watercycle")
-    description: qsTr("Help Tux to take bath by completing the water cycle, and giving water to Tux's home, before Tux reaches shore.")
+    description: qsTr("Tux has come back from a long fishing party on his boat. Bring the water system back up so he can take a shower.")
     //intro: "Click on the various active elements that make up the water supply. Then press the shower button for Tux."
-    goal: qsTr("Understand the water cycle and how it works.")
-    prerequisite: "none"
-    manual: qsTr("Click on different active elements : sun, cloud, water pump station, and water cleanup station, in order to reactivate the entire water system. When the system is back up and Tux is in the shower, push the shower button for him.")
+    goal: qsTr("Learn the water cycle")
+    prerequisite: ""
+    manual: qsTr("Click on different active elements : sun, cloud, umping station, and the sewage treatment plant, in order to reactivate the entire water system. When the system is back up and Tux is in the shower, push the shower button for him.")
     credit: qsTr("Drawing by Stephane Cabaraux.")
     section: "experiment"
 }
