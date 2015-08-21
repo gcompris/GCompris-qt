@@ -48,7 +48,6 @@ ActivityBase {
         }
 
         onStart: {
-            console.log("on start")
             shower.hide()
             river.level = 0
         }
@@ -526,7 +525,6 @@ ActivityBase {
             }
 
             function start() {
-                console.log("start")
                 shower.on = true
                 shower.visible = true
                 showerhot.visible = true
@@ -536,7 +534,6 @@ ActivityBase {
             }
 
             function stop() {
-                console.log("stop")
                 shower.on = false
                 shower.visible = true
                 showerhot.visible = false
@@ -545,7 +542,6 @@ ActivityBase {
                 tuxoff.visible = true
             }
             function hide() {
-                console.log("hide")
                 shower.visible = false
                 shower.on = false
                 tuxoff.visible = false
