@@ -172,7 +172,7 @@ ActivityBase {
                                             Activity.isWhite(modelData.img) == false && items.blackTurn) {
                                         items.from = index
                                         Activity.showPossibleMoves(items.from)
-                                    } else if(items.from != -1) {
+                                    } else if(items.from != -1 && modelData.acceptMove) {
                                         Activity.moveTo(items.from, index)
                                     }
                                 }
