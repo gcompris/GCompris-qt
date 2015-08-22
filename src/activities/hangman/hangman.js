@@ -40,8 +40,6 @@ var items
 var win 
 
 var noOfLife;
-var theresss;
-var spreadd;
 
 var countNoAlphabet;
 var currentWord;
@@ -199,15 +197,13 @@ function processKeyPress(text) {
     if(flag !== 1){
         wordi = inital;
         items.noOfLife=items.noOfLife-1;
-	theresss=theresss-0.1;
-	items.thresh.threshold=theresss;
+	items.thresh.threshold=items.thresh.threshold-0.1;
 	items.thresh.spread=items.thresh.spread+0.1;
     }
     items.hidden.text = wordi
     console.log("wordlength"+currentWord.length);
     console.log("count"+countNoAlphabet);
     if(countNoAlphabet >= (currentWord.length)){
-        items.thresh.threshold=
         items.bonus.good("lion");
         nextSubLevel();
     }
@@ -243,7 +239,6 @@ function initSubLevel()
     items.noOfLife=6;
     items.thresh.threshold=0.7;
     items.thresh.spread=0.2;
-    theresss=0.7;
     win=0;
     wordi = new Array();
     currentWord = text1 ;

@@ -179,7 +179,9 @@ ActivityBase {
         
        Item{ 
         
-        Image {    id:imageframe
+        Image {   
+	  
+	    id:imageframe
             visible:true
             width:background.width/4
             height:background.height/4
@@ -242,7 +244,8 @@ ActivityBase {
                          anchors.fill:threshmask
                          source: threshmask
                          maskSource: wordImage
-                         threshold:0
+                         threshold:0.6
+                         spread:0.2
                          
          }
 	 
