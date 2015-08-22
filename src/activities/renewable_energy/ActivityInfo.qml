@@ -18,7 +18,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-    name: "renewable_energy/Renewable_energy.qml"
+    name: "renewable_energy/RenewableEnergy.qml"
     difficulty: 2
     icon: "renewable_energy/renewable_energy.svg"
     author: "Sagar Chand Agarwal &lt;atomsagar@gmail.com&gt;"
