@@ -56,8 +56,8 @@ ActivityBase {
             property var dataset: {
                 "none": "",
                 "start": qsTr("Sun is the main component of water cycle. Click on the sun to start the water cycle."),
-                "sun": qsTr("As the sun rises, the temperature of the sea starts heating and evaporates."),
-                "cloud": qsTr("Water vapor condenses to form cloud and when they become heavy, they rain. Click on the cloud."),
+                "sun": qsTr("As the sun rises, the water of the sea starts heating and evaporates."),
+                "cloud": qsTr("Water vapor condenses to form cloud and when clouds become heavy, they rain. Click on the cloud."),
                 "rain": qsTr("Rain causes rivers to swell up and this water is transported to us via motor pumps through water-tower." +
                              " Click on the motor pump to supply water to residents."),
                 "tower": qsTr("See the tower filled with water. Activate the sewage treatment station by clicking on it."),
@@ -88,7 +88,7 @@ ActivityBase {
                 qsTr("The water cycle (also known as the hydrologic cycle) is the journey water takes"
                      +" as it circulates from the land to the sky and back again."
                      +" The sun's heat provides energy to evaporate water from water bodies like oceans.") ,
-                qsTr(" Plants also lose water to the air through transpiration. The water vapor eventually, "
+                qsTr("Plants also lose water to the air through transpiration. The water vapor eventually, "
                      +" cools forming tiny droplets in clouds. When the clouds meet cool air over land, "
                      +" precipitation is triggered and fall down as rain.") ,
                 qsTr("Some of the water is trapped between rock or clay layers, called groundwater."
