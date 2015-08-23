@@ -45,10 +45,10 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
         anchors.fill: parent
-        color: "#ABCDEF"
+        source: Activity.url + 'background.svg'
         signal start
         signal stop
 
