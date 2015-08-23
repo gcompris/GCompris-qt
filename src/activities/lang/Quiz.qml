@@ -229,12 +229,12 @@ Item {
 
                     Image {
                         id: wordImageQuiz
-                        width: wordListView.width * 0.4
+                        width: height
                         height: wordListView.buttonHeight
                         source: image
                         z: 7
                         fillMode: Image.PreserveAspectFit
-                        anchors.leftMargin: 10* ApplicationInfo.ratio
+                        anchors.leftMargin: 5 * ApplicationInfo.ratio
                         visible:  (QuizActivity.mode==1) ? true : false  // to hide images after first mini game
                     }
 
@@ -245,7 +245,6 @@ Item {
                         textLabel: word
 
                         anchors.left: wordImageQuiz.left
-                        anchors.leftMargin: 20* ApplicationInfo.ratio
                         anchors.right: parent.right
 
                         isCorrectAnswer: word === QuizActivity.quizItems.goodWord.translatedTxt
