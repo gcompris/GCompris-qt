@@ -35,7 +35,6 @@ function start(items_) {
     items = items_
     currentLevel = 0
     numberOfLevel = items.fen.length
-    items.whiteAtBottom = true
     initLevel()
 }
 
@@ -49,6 +48,9 @@ function initLevel() {
     items.gameOver = false
     refresh()
     Engine.p4_prepare(state)
+    items.positions = 0 // Force a model reload
+    items.positions = simplifiedState(state['board'])
+    clearAcceptMove()
 }
 
 function nextLevel() {
@@ -67,7 +69,7 @@ function previousLevel() {
 
 function isWhite(piece) {
     if(piece.length != 2)
-        return undefined
+        return -1
 
     if(piece[0] == 'w')
         return true
@@ -77,61 +79,56 @@ function isWhite(piece) {
 
 function simplifiedState(state) {
     var newState = new Array()
-    var i = 0
-    var end = state.length
-    var step = 1
-    if(items.whiteAtBottom) {
-        i = state.length
-        end = 0
-        step = -1
-    }
-    while(i != end) {
+    for(var i = state.length - 1; i >= 0; --i) {
         if(state[i] != 16) {
+            var img = ""
             switch(state[i]) {
-                case 0:
-                    newState.push({'img': "", 'acceptMove': false})
-                    break
                 case 2:
-                    newState.push({'img': "wp", 'acceptMove': false})
+                    img = "wp"
                     break
                 case 3:
-                    newState.push({'img': "bp", 'acceptMove': false})
+                    img = "bp"
                     break
                 case 4:
-                    newState.push({'img': "wr", 'acceptMove': false})
+                    img = "wr"
                     break
                 case 5:
-                    newState.push({'img': "br", 'acceptMove': false})
+                    img = "br"
                     break
                 case 6:
-                    newState.push({'img': "wn", 'acceptMove': false})
+                    img = "wn"
                     break
                 case 7:
-                    newState.push({'img': "bn", 'acceptMove': false})
+                    img = "bn"
                     break
                 case 8:
-                    newState.push({'img': "wb", 'acceptMove': false})
+                    img = "wb"
                     break
                 case 9:
-                    newState.push({'img': "bb", 'acceptMove': false})
+                    img = "bb"
                     break
                 case 10:
-                    newState.push({'img': "wk", 'acceptMove': false})
+                    img = "wk"
                     break
                 case 11:
-                    newState.push({'img': "bk", 'acceptMove': false})
+                    img = "bk"
                     break
                 case 12:
-                    newState.push({'img': "wq", 'acceptMove': false})
+                    img = "wq"
                     break
                 case 13:
-                    newState.push({'img': "bq", 'acceptMove': false})
+                    img = "bq"
                     break
                 default:
                     break
             }
+            newState.push(
+                        {
+                            'pos': engineToViewPos(i),
+                            'img': img,
+                            'isWhite': isWhite(img)
+                        })
         }
-        i += step
     }
     return newState
 }
@@ -156,7 +153,6 @@ function updateMessage(move) {
 }
 
 function refresh(move) {
-    items.viewstate = simplifiedState(state['board'])
     items.blackTurn = state.to_play // 0=w 1=b
     items.history = state.history
     updateMessage(move)
@@ -189,33 +185,40 @@ function viewPosToEngine(pos) {
 // Convert chess engine coordinate to view position (QML)
 function engineToViewPos(pos) {
     var newpos = pos - 21 - (Math.floor((pos - 20) / 10) * 2)
-    if(items.whiteAtBottom)
-        newpos = 63 - newpos
     return newpos
+}
+
+// move is the result from the engine move
+function visibleMove(move, from, to) {
+    items.pieces.moveTo(from, to)
+    // Castle move
+    if(move.flags & Engine.P4_MOVE_FLAG_CASTLE_KING)
+        items.pieces.moveTo(from + 3, to - 1)
+    else if(move.flags & Engine.P4_MOVE_FLAG_CASTLE_QUEEN)
+        items.pieces.moveTo(from - 4, to + 1)
 }
 
 function computerMove() {
     var computer = state.findmove(3)
     var move = state.move(computer[0], computer[1])
     if(move.ok) {
+        visibleMove(move, engineToViewPos(computer[0]), engineToViewPos(computer[1]))
         refresh(move)
     }
     return move
 }
 
 function moveTo(from, to) {
-    if(items.whiteAtBottom) {
-        from = 63 - from
-        to = 63 - to
-    }
     var move = state.move(viewPosToEngine(from), viewPosToEngine(to))
     if(move.ok) {
+        visibleMove(move, from, to)
         refresh(move)
+        clearAcceptMove()
         if(!items.twoPlayer)
             randomMove()
         items.from = -1;
     } else {
-        // Probably a check makes the move invalid
+        // Probably a check makes the move is invalid
         updateMessage(move)
     }
 }
@@ -229,31 +232,7 @@ function undo() {
         state.jump_to_moveno(state.moveno - 1)
     }
     refresh()
-}
-
-function swap() {
-    items.whiteAtBottom = !items.whiteAtBottom
-    refresh()
-}
-
-function clearAcceptMove() {
-    for(var i=0; i < items.viewstate.length; ++i)
-        items.viewstate[i]['acceptMove'] = false
-}
-
-
-function showPossibleMoves(from) {
-    var result = Engine.p4_parse(state, state.to_play, 0, 0)
-    clearAcceptMove()
-    if(items.whiteAtBottom)
-        from = 63 - from
-    for(var i=0; i<result.length; ++i)
-        if(viewPosToEngine(from) == result[i][1]) {
-            var pos = engineToViewPos(result[i][2])
-            items.viewstate[pos]['acceptMove'] = true
-        }
-    // Refresh the model
-    items.viewstate = items.viewstate
+    items.positions = simplifiedState(state['board'])
 }
 
 // Random move depending on the level
@@ -269,14 +248,33 @@ function randomMove() {
         return
     }
     // Get all possible moves
-    console.log('random move')
     var moves = Engine.p4_parse(state, state.to_play, 0, 0)
     moves = Core.shuffle(moves)
     var move = state.move(moves[0][1], moves[0][2])
     if(move.ok) {
+        visibleMove(move, engineToViewPos(moves[0][1]), engineToViewPos(moves[0][2]))
         refresh(move)
     } else {
         // Bad move, should not happens
         computerMove()
     }
 }
+
+// Clear all accept move marker from the chessboard
+function clearAcceptMove() {
+    for(var i=0; i < items.positions.length; ++i)
+        items.pieces.getPieceAt(i)['acceptMove'] = false
+}
+
+// Highlight the possible moves for the piece at position 'from'
+function showPossibleMoves(from) {
+    var result = Engine.p4_parse(state, state.to_play, 0, 0)
+    clearAcceptMove()
+    for(var i=0; i < result.length; ++i) {
+        if(viewPosToEngine(from) == result[i][1]) {
+            var pos = engineToViewPos(result[i][2])
+            items.pieces.getPieceAt(pos)['acceptMove'] = true
+        }
+    }
+}
+

@@ -25,6 +25,7 @@ import QtQuick.Controls.Styles 1.0
 import GCompris 1.0
 
 import "../../core"
+import "."
 import "chess.js" as Activity
 
 ActivityBase {
@@ -68,12 +69,12 @@ ActivityBase {
             property variant fen: activity.fen
             property bool twoPlayer: activity.twoPlayers
             property bool difficultyByLevel: activity.difficultyByLevel
-            property var viewstate
+            property var positions
+            property var pieces: pieces
             property var history
             property int from
             property bool blackTurn
             property bool gameOver
-            property var whiteAtBottom
             property string message
         }
 
@@ -97,7 +98,7 @@ ActivityBase {
             Column {
                 id: controls
                 spacing: 10
-                width: undo.width + (background.width * 0.9 - undo.width - grid.width) / 2
+                width: undo.width + (background.width * 0.9 - undo.width - chessboard.width) / 2
 
                 GCText {
                     color: "black"
@@ -131,55 +132,95 @@ ActivityBase {
                     text: qsTr("Swap");
                     style: GCButtonStyle {}
                     opacity: items.twoPlayer
-                    onClicked: Activity.swap()
+                    onClicked: chessboard.swap()
                 }
             }
 
-            Grid {
-                id: grid
-                spacing: 5
-                columns: 8
-                rows: 8
+            // The chessboard
+            GridView {
+                id: chessboard
+                cellWidth: items.cellSize
+                cellHeight: items.cellSize
+                width: items.cellSize * 8
+                height: items.cellSize * 8
+                interactive: false
+                keyNavigationWraps: true
+                model: 64
                 layoutDirection: Qt.RightToLeft
-                Repeater {
-                    id: repeater
-                    model: items.viewstate
-                    delegate: blueSquare
+                delegate: square
+                rotation: 180
 
-                    Component {
-                        id: blueSquare
-                        Rectangle {
-                            color: index % 2 + (Math.floor(index / 8) % 2) == 1 ?
-                                       "#FFFFFF99" : '#FF9999FF';
-                            width: items.cellSize
-                            height: items.cellSize
-                            border.color: {
-                                if(!modelData.acceptMove)
-                                    return items.from == index ? "#FFCC2211" : "#FFFFFFFF"
-                                else
-                                    return "#FF0000FF"
-                            }
-                            border.width: 2
-                            Image {
-                                anchors.fill: parent
-                                source: modelData.img ? Activity.url + modelData.img + ".svg" : ''
-                            }
-                            MouseArea {
-                                anchors.fill: parent
-                                enabled: !items.gameOver
-                                onClicked: {
-                                    if(Activity.isWhite(modelData.img) == true && !items.blackTurn ||
-                                            Activity.isWhite(modelData.img) == false && items.blackTurn) {
-                                        items.from = index
-                                        Activity.showPossibleMoves(items.from)
-                                    } else if(items.from != -1 && modelData.acceptMove) {
-                                        Activity.moveTo(items.from, index)
-                                    }
-                                }
-                            }
+                Component {
+                    id: square
+                    Rectangle {
+                        color: index % 2 + (Math.floor(index / 8) % 2) == 1 ?
+                                   "#FFFFFF99" : '#FF9999FF';
+                        width: items.cellSize
+                        height: items.cellSize
+                    }
+                }
+
+                Behavior on rotation { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1400 } }
+
+                function swap() {
+                    if(chessboard.rotation == 180)
+                        chessboard.rotation = 0
+                    else
+                        chessboard.rotation = 180
+                }
+            }
+        }
+
+        Repeater {
+            id: pieces
+            model: items.positions
+            delegate: piece
+            parent: chessboard
+
+            Piece {
+                id: piece
+                sourceSize.width: items.cellSize
+                width: items.cellSize - spacing
+                height: items.cellSize - spacing
+                source: modelData.img ? Activity.url + modelData.img + ".svg" : ""
+                x: items.cellSize * (7 - pos % 8) + spacing / 2
+                y: items.cellSize * Math.floor(pos / 8) + spacing / 2
+                pos: modelData.pos
+                newPos: modelData.pos
+                rotation: - chessboard.rotation
+
+                isWhite: modelData.isWhite
+                property int spacing: 6 * ApplicationInfo.ratio
+
+                MouseArea {
+                    anchors.fill: parent
+                    enabled: !items.gameOver
+                    onClicked: {
+                        if(parent.isWhite == 1 && !items.blackTurn ||
+                                parent.isWhite == 0 && items.blackTurn) {
+                            items.from = parent.newPos
+                            Activity.showPossibleMoves(items.from)
+                        } else if(items.from != -1 && parent.acceptMove) {
+                            Activity.moveTo(items.from, parent.newPos)
                         }
                     }
                 }
+            }
+
+            function moveTo(from, to) {
+                var fromPiece = getPieceAt(from)
+                var toPiece = getPieceAt(to)
+                toPiece.hide(from)
+                fromPiece.pos = to
+                fromPiece.newPos = to
+            }
+
+            function getPieceAt(pos) {
+                for(var i=0; i < pieces.count; i++) {
+                    if(pieces.itemAt(i).newPos == pos)
+                        return pieces.itemAt(i)
+                }
+                return(undefined)
             }
         }
 
