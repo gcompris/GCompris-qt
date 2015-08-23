@@ -28,7 +28,7 @@ ActivityInfo {
   //intro: "play chess against your friend"
   goal: ""
   prerequisite: ""
-  manual: qsTr("In this activity you discover the chess game by playing against a friend. It displays the possible target position for any selected piece which helps the children understand how pieces moves. At first first level the computer is fully random to give the most chances to the children. At the top level, the computer play normally.")
+  manual: qsTr("In this activity you discover the chess game by playing against a friend. It displays the possible target position for any selected piece which helps the children understand how pieces moves.")
   credit: ""
   section: "strategy"
 }

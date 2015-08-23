@@ -28,7 +28,7 @@ ActivityInfo {
   //intro: "play chess against Tux"
   goal: ""
   prerequisite: ""
-  manual: qsTr("In this activity you discover the chess game by playing against the computer. It displays the possible target position for any selected piece which helps the children understand how pieces moves. At first first level the computer is fully random to give the most chances to the children. At the top level, the computer play normally.")
+  manual: qsTr("In this activity you discover the chess game by playing against the computer. It displays the possible target position for any selected piece which helps the children understand how pieces moves. At first level the computer is fully random to give the most chances to the children. As level increases, better the computer plays.")
   credit: qsTr("The chess engine is p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;.")
   section: "strategy"
 }

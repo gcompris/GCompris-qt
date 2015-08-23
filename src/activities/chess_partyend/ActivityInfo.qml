@@ -28,7 +28,7 @@ ActivityInfo {
   //intro: "Play the end of the chess game against Tux"
   goal: ""
   prerequisite: ""
-  manual: ""
+  manual: "In this activity you discover the chess game by playing only the end of a game. It displays the possible target position for any selected piece which helps the children understand how pieces moves."
   credit: qsTr("The chess engine is p4wn &lt;https://github.com/douglasbagnall/p4wn&gt;.")
   section: "strategy"
 }
