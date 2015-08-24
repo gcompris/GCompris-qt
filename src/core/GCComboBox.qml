@@ -134,11 +134,16 @@ Item {
             }
         }
 
-        GCText {
-            id: labelText
-            text: label
-            fontSize: mediumSize
-            wrapMode: Text.WordWrap
+        Item {
+            width: button.width
+            height: parent.height
+            GCText {
+                id: labelText
+                text: label
+                anchors.verticalCenter: parent.verticalCenter
+                fontSize: mediumSize
+                wrapMode: Text.WordWrap
+            }
         }
     }
  
