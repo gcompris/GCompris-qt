@@ -183,7 +183,8 @@ ActivityBase {
                 sourceSize.width: items.cellSize
                 width: items.cellSize - spacing
                 height: items.cellSize - spacing
-                source: modelData.img ? Activity.url + modelData.img + ".svg" : ""
+                source: modelData.img ? Activity.url + img + ".svg" : ""
+                img: modelData.img
                 x: items.cellSize * (7 - pos % 8) + spacing / 2
                 y: items.cellSize * Math.floor(pos / 8) + spacing / 2
                 pos: modelData.pos

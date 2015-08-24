@@ -196,6 +196,10 @@ function visibleMove(move, from, to) {
         items.pieces.moveTo(from + 3, to - 1)
     else if(move.flags & Engine.P4_MOVE_FLAG_CASTLE_QUEEN)
         items.pieces.moveTo(from - 4, to + 1)
+    else if(items.pieces.getPieceAt(to).img == 'wp' && to > 56)
+        items.pieces.getPieceAt(to).img = 'wq'
+    else if(items.pieces.getPieceAt(to).img == 'bp' && to < 8)
+        items.pieces.getPieceAt(to).img = 'bq'
 }
 
 function computerMove() {

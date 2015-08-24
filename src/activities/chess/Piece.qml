@@ -29,6 +29,7 @@ Image {
     Behavior on y { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 200 } }
     z: 10
 
+    property string img
     property bool acceptMove : false
     property int newPos
     // color = -1 if no piece, 0 is black and 1 is white
