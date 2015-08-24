@@ -232,6 +232,7 @@ function undo() {
         state.jump_to_moveno(state.moveno - 1)
     }
     refresh()
+    items.positions = 0 // Force a model reload
     items.positions = simplifiedState(state['board'])
 }
 
