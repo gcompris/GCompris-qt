@@ -33,7 +33,8 @@ Image {
     property bool acceptMove : false
     property int newPos
     // color = -1 if no piece, 0 is black and 1 is white
-    property int isWhite
+    property int isWhite: img.length != 2 ? -1 : img[0] == 'w' ? 1 : 0
+
 
     SequentialAnimation {
         id: moveAnim

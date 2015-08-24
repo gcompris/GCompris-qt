@@ -191,7 +191,6 @@ ActivityBase {
                 newPos: modelData.pos
                 rotation: - chessboard.rotation
 
-                isWhite: modelData.isWhite
                 property int spacing: 6 * ApplicationInfo.ratio
 
                 MouseArea {

@@ -67,16 +67,6 @@ function previousLevel() {
     initLevel();
 }
 
-function isWhite(piece) {
-    if(piece.length != 2)
-        return -1
-
-    if(piece[0] == 'w')
-        return true
-
-    return false
-}
-
 function simplifiedState(state) {
     var newState = new Array()
     for(var i = state.length - 1; i >= 0; --i) {
@@ -125,8 +115,7 @@ function simplifiedState(state) {
             newState.push(
                         {
                             'pos': engineToViewPos(i),
-                            'img': img,
-                            'isWhite': isWhite(img)
+                            'img': img
                         })
         }
     }
