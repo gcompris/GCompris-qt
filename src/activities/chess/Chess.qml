@@ -76,6 +76,7 @@ ActivityBase {
             property bool blackTurn
             property bool gameOver
             property string message
+            property alias trigComputerMove: trigComputerMove
         }
 
         onStart: { Activity.start(items) }
@@ -222,6 +223,13 @@ ActivityBase {
                 }
                 return(undefined)
             }
+        }
+
+        Timer {
+            id: trigComputerMove
+            repeat: false
+            interval: 400
+            onTriggered: Activity.randomMove()
         }
 
         DialogHelp {

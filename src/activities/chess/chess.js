@@ -215,7 +215,7 @@ function moveTo(from, to) {
         refresh(move)
         clearAcceptMove()
         if(!items.twoPlayer)
-            randomMove()
+            items.trigComputerMove.start()
         items.from = -1;
     } else {
         // Probably a check makes the move is invalid
