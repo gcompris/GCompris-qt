@@ -44,21 +44,44 @@ Image {
             duration: 200
             to: 0
         }
-         PropertyAction {
+        PropertyAction {
              target: piece
-             property: 'source'
+             property: 'img'
              value: ""
-         }
-         PropertyAction {
-             target: piece
-             property: 'pos'
-             value: piece.newPos
-         }
-         PropertyAction {
-             target: piece
-             property: 'scale'
-             value: 1
-         }
+        }
+        PropertyAction {
+            target: piece
+            property: 'pos'
+            value: piece.newPos
+        }
+        PropertyAction {
+            target: piece
+            property: 'scale'
+            value: 1
+        }
+    }
+
+    SequentialAnimation {
+        id: promotionAnim
+        PauseAnimation {
+            duration: 200
+        }
+        NumberAnimation {
+            target: piece
+            property: 'scale'
+            to: 0
+        }
+        PropertyAction {
+            target: piece
+            property: 'img'
+            value: isWhite ? 'wq' : 'bq'
+        }
+        NumberAnimation {
+            target: piece
+            property: 'scale'
+            to: 1
+            easing.type: Easing.OutElastic
+        }
     }
 
     Rectangle {
@@ -73,6 +96,10 @@ Image {
     function hide(newPos) {
         piece.newPos = newPos
         moveAnim.start()
+    }
+
+    function promotion() {
+        promotionAnim.start()
     }
 }
 

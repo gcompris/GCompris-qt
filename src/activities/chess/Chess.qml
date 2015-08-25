@@ -216,6 +216,11 @@ ActivityBase {
                 fromPiece.newPos = to
             }
 
+            function promotion(to) {
+                var toPiece = getPieceAt(to)
+                toPiece.promotion()
+            }
+
             function getPieceAt(pos) {
                 for(var i=0; i < pieces.count; i++) {
                     if(pieces.itemAt(i).newPos == pos)
