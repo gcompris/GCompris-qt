@@ -463,6 +463,9 @@ bool DownloadManager::registerResource(const QString& filename)
                 << filename;
         registeredResources.append(filename);
 
+        locker.unlock(); /* note: we unlock before emitting to prevent
+                          * potential deadlocks */
+
         emit resourceRegistered(getRelativeResourcePath(filename));
 
         QString v = getVoicesResourceForLocale(
