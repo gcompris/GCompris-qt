@@ -49,6 +49,9 @@ ActivityBase {
             activity.stop.connect(stop)
         }
 
+        onStart: { Activity.start(items) }
+        onStop: { Activity.stop() }
+
         QtObject {
             id: items
             property Item main: activity.main
@@ -68,10 +71,13 @@ ActivityBase {
             property var holeType: Fixture.Category3
             property var goalType: Fixture.Category4
             property var buttonType: Fixture.Category5
+            property alias parser: parser
         }
 
-        onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }
+        JsonParser {
+            id: parser
+            onError: console.error("Balancebox: Error parsing JSON: " + msg);
+        }
 
         Image {
             id: mapWrapper
@@ -195,7 +201,7 @@ ActivityBase {
                 
                 gravity: Qt.point(0, 0)  // we calculate acceleration ourselves
                 
-                pixelsPerMeter: Activity.pixelsPerMeter // default: 32
+                pixelsPerMeter: Activity.box2dPpm // default: 32
                 timeStep: Activity.step/1000  // default: 1/60
                 
             }

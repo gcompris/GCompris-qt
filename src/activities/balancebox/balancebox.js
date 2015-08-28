@@ -19,93 +19,66 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
+/* ToDo:
+  - levels, levels, levels
+  - fix inconsistent tilting behaviour on different android devices
+  - take dpi into account to adjust sensitivity
+  - make sensitivity configurable?
+  - use Qt classes instead of jni for orientation?
+*/
 .pragma library
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris
 .import Box2D 2.0 as Box2D
 
+/** Level description format:
+ * Example:
+ * [ { "level": 1,
+ *     "map": [ [ 0x0000,  0x0308, ... ],
+ *              [ 0x0010,  0x0008, ... ],
+ *              ...
+ *            ],
+ *     "targets": [ 1, 2, 3, 5, 10, ... ]
+ *   },
+ *   { "level": 2, ... }
+ *   ...
+ * ]
+ * 
+ * "level": Number of the level.
+ * "map":   Definition of the map inside the balancebox.
+ *          The map is a 2-dimensional array of map fields. A map field is
+ *          described by a bitmask of 16 bit with the lower 8bit defining walls,
+ *          objects, etc. (cf. below) and the higher 8 bit defining the order of
+ *          buttons present on the map. The values of the buttons are described
+ *          in the "targets" property.
+ * "targets": Values of the buttons present on the map. Most likely these will
+ *            be numbers, but letters are also possible. The order in which they
+ *            need to be pressed by the ball is defined in the higher 8 bits of
+ *            the map fields.
+ */
 var EMPTY = 0x0000;
 var NORTH = 0x0001;
-var WEST  = 0x0002;
+var EAST  = 0x0002;
 var SOUTH = 0x0004;
-var EAST  = 0x0008;
+var WEST  = 0x0008;
 var START = 0x0010;
 var GOAL  = 0x0020;
 var HOLE  = 0x0040;
 
-var dataset = 
-    [
-     { "map":
-         [
-          [ 0x0000,  0x0300,  0x0000,  0x0000,  0x0000,  0x0000,  0x0200,  0x0000,  0x0000,  0x0600 ],
-          [ 0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000 ],
-          [ 0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000 ],
-          [ 0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000 ],
-          [ 0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0400,  0x0000 ],
-          [ 0x0500,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000 ],
-          [ 0x0000,  0x0000,  0x0000,  0x0000,  0x0800,  0x0900,  0x0000,  0x0000,  0x0000,  0x0000 ],
-          [ 0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000 ],
-          [ 0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0020 ],
-          [ 0x0000,  0x0000,  0x0700,  0x0100,  0x0000,  0x0000,  0x0000,  0x0000,  0x0000,  0x0A00 ]
-         ],
-       "targets": [1, 2, 4, 8, 16, 32, 64, 65, 66, 99]
-     },
-     { "map":
-         [
-          [ 0,  0,  0,  4,  4,  4,  4,  4,  0,  0 ],
-          [ 0,  0,  0,  0,  0,  0, 64,  8,  0,  0 ],
-          [ 0,  0,  0,  2,  0,  0,  0,  8,  0,  0 ],
-          [ 0,  0,  0,  2,  0,  0,  0,  8,  0,  0 ],
-          [ 0,  0,  0,  2,  0,  0,  0,  0,  0,  0 ],
-          [ 0,  0,  0,  2, 32,  0,  0,  0,  0,  0 ],
-          [ 0,  0,  0,  1,  1,  1,  1,  1,  1,  0 ],
-          [ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0 ],
-          [ 0,  0,  0,  0,  0,  0,  0,  0,  0,  0 ],
-          [ 0,  0,  0,  0,  0, 16,  0,  0,  0,  0 ]
-         ]
-     },
-     { "map":
-         [
-          [ 3,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  1,  9 ],
-          [ 2,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  8 ],
-          [ 2,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  8 ],
-          [ 2,  0,  0,  0,  0,  0,  0,  4,  4,  4,  4,  4,  0,  0,  8 ],
-          [ 2,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  8 ],
-          [ 2,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  2,  0,  8 ],
-          [ 2,  0,  0,  0,  2,  0,  0,  0,  0,  0,  0,  0,  2,  0,  8 ],
-          [ 2,  0,  0,  0,  2,  0,  0,  0,  0,  0,  0,  0,  2,  0,  8 ],
-          [ 2,  0,  0,  0,  2,  0,  0,  0,  0,  0,  0,  0,  2,  0,  8 ],
-          [ 2,  0,  0,  0,  2,  0,  0,  0,  0,  0,  0,  0,  2,  0,  8 ],
-          [ 2,  0,  0,  0,  2,  0,  0,  0,  0,  0,  0,  0,  0,  0,  8 ],
-          [ 2,  0,  0,  0,  0, 16,  0,  1,  1,  1,  1,  1,  0,  0,  8 ],
-          [ 2,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  8 ],
-          [ 2,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  8 ],
-          [ 6,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4,  4, 12 ]
-         ]
-     },
-     { "map":
-         [
-          [ 3,  9,  1,  1,  3,  1,  1,  1,  1, 41 ],
-          [ 2,  0, 64,  0,  2,  0,  0,  4,  4,  8 ],
-          [ 2,  0,  0,  0,  2,  0,  0,  0,  0,  8 ],
-          [ 2, 64, 64,  0,  3, 11,  0,  0,  0,  8 ],
-          [ 2,  0,  2,  0,  2, 10,  0, 64, 64, 72 ],
-          [ 3,  0,  2,  0,  2, 10,  0,  0,  0,  8 ],
-          [ 2,  0,  2,  5,  5,  0,  5,  5,  0,  8 ],
-          [ 2,  1,  2,  0,  0, 10,  0,  0,  0,  8 ],
-          [ 2, 16,  2,  0,  0, 10,  0,  0,  0,  8 ],
-          [ 6,  4,  6,  4,  4,  4,  4,  4,  4, 12 ]
-         ]
-     },
-];
+var dataset = null;
 
-// Parameters that control the ball's dynamics, FIXME: improve!
-var m = 10
-var g = 50.8 
+// Parameters that control the ball's dynamics
+var m = 0.2; // without ppm-correction: 10
+var g = 9.81; // without ppm-correction: 50.8
+var box2dPpm = 32;    // pixelsPerMeter used in Box2D's world
+var boardSizeM = 0.9; // board's real edge length, fixed to 30 cm
+var boardSizePix = 500;  // board's current size in pix
+var pixelsPerMeter = boardSizePix / boardSizeM; // calculated dynamically: boardSizePix / boardSizeM;  FIXME: use current dpi!
+var vFactor = pixelsPerMeter / box2dPpm; // FIXME: calculate!
+
 var step = 20;   // time step (in ms)
 var friction = 0.15;
 var restitution = 0.3;  // rebounce factor
-var pixelsPerMeter = 32;
 
 // stuff for keyboard based tilting
 var keyboardTiltStep = 0.25;   // degrees
@@ -115,9 +88,10 @@ var keyboardIsTilting = false;  // tilting or resetting to horizontal
 
 var debugDraw = false;
 var currentLevel = 0;
-var numberOfLevel = 4;
+var numberOfLevel = 0;
 var items;
 var baseUrl = "qrc:/gcompris/src/activities/balancebox/resource";
+var levelsFile = baseUrl + "/levels-default.json"; 
 var level;
 var map; // current map
 var goal;
@@ -135,21 +109,53 @@ var contactIndex = -1;
 function start(items_) {
     if (GCompris.ApplicationInfo.isMobile) {
         var or = GCompris.ApplicationInfo.getRequestedOrientation();
-        GCompris.ApplicationInfo.setRequestedOrientation(0);
+        GCompris.ApplicationInfo.setRequestedOrientation(5);
+        /* -1: SCREEN_ORIENTATION_UNSPECIFIED
+         * 0:  SCREEN_ORIENTATION_LANDSCAPE: forces landscape, inverted rotation
+         *     on S2
+         * 5:  SCREEN_ORIENTATION_NOSENSOR:
+         *     forces 'main' orientation mode on each device (portrait on handy
+         *     landscape on tablet and reports rotation correctly)
+         * 14: SCREEN_ORIENTATION_LOCKED: inverted rotation on tablet
+         */
     }
 
     items = items_;
     console.log("Starting: pixelsPerM=" + items.world.pixelsPerMeter
             + " timeStep=" + items.world.timeStep
             + " posIterations=" + items.world.positionIterations
-            + " velIterations=" + items.world.velocityIterations);
+            + " velIterations=" + items.world.velocityIterations
+            + " vFactor=" + vFactor);
+
     goal = null;
     holes = new Array();
     walls = new Array();
     contacts = new Array();
     ballContacts = new Array();
     currentLevel = 0;
+    
+    dataset = items.parser.parseFromUrl(levelsFile, validateLevels);
+    if (dataset == null) {
+        console.error("Balancebox: Error loading levels from " + levelsFile
+                + ", can't continue!");
+        return;
+    }
+    numberOfLevel = dataset.length;
+
     initLevel();
+}
+
+function validateLevels(doc)
+{
+    // minimal syntax check:
+    if (undefined === doc || !Array.isArray(doc) || doc.length < 1)
+        return false;
+    for (var i = 0; i < doc.length; i++) {
+        if (undefined === doc[i].map || !Array.isArray(doc[i].map) ||
+                doc[i].map.length < 1)
+            return false;
+    }
+    return true;
 }
 
 function sinDeg(num) {return Math.sin(num/180*Math.PI);};
@@ -167,8 +173,8 @@ function moveBall()
             + "/" + (items.ball.body.linearVelocity.y+dvy));
   */
     
-    items.ball.body.linearVelocity.x += dvx
-    items.ball.body.linearVelocity.y += dvy
+    items.ball.body.linearVelocity.x += dvx * vFactor;
+    items.ball.body.linearVelocity.y += dvy * vFactor;
     
     checkBallContacts();
 
@@ -250,7 +256,7 @@ function initMap()
             var x = col * items.cellSize;
             var y = row * items.cellSize;
             var orderNum = (map[row][col] & 0xFF00) >> 8;
-            //console.log("XXX processing field " + col + "/" + row + " : number=" + orderNum);
+            console.log("XXX processing field " + col + "/" + row + " : number=" + orderNum);
             // debugging:
             /*try {
                 var rect = Qt.createQmlObject(
