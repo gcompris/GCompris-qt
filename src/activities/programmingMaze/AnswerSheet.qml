@@ -150,7 +150,7 @@ GridView {
                     currentModel.remove(draggedIndex)
                 else {
                     if(diff <= insertEnd ) {
-                        if(dropIndex < draggedIndex) {
+                        if(dropIndex <= draggedIndex) {
                             //moving box from right to left
                             currentModel.move(draggedIndex, answerSheet.indexAt(mouseX,mouseY),1)
                         }

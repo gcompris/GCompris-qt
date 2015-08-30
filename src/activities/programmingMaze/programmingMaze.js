@@ -137,9 +137,10 @@ function stop() {
 }
 
 function initLevel() {
-//    console.log("current level error :type ",typeof(currentLevel),"value ",currentLevel)
+    if(!items || !items.bar)
+        return;
+
     items.bar.level = currentLevel + 1
-//    console.log("current level error :type ",typeof(items.bar.level),"value ",items.bar.level)
     items.mazeModel.model = mazeBlocks[currentLevel][blocksDataIndex]
 
     if(!reset && !deadEndPoint) {
