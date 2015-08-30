@@ -19,6 +19,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import QtQuick.Window 2.1
 import QtSensors 5.0
 import QtGraphicalEffects 1.0
 import GCompris 1.0
@@ -48,6 +49,7 @@ ActivityBase {
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
+            items.dpi = Math.round(Screen.pixelDensity*25.4);
         }
 
         onStart: { Activity.start(items) }
@@ -73,6 +75,7 @@ ActivityBase {
             property var goalType: Fixture.Category4
             property var buttonType: Fixture.Category5
             property alias parser: parser
+            property double dpi
         }
 
         JsonParser {

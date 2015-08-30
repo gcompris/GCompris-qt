@@ -21,8 +21,7 @@
 
 /* ToDo:
   - levels, levels, levels
-  - fix inconsistent tilting behaviour on different android devices
-  - take dpi into account to adjust sensitivity
+  (- fix inconsistent tilting behaviour on different android devices)
   - make sensitivity configurable?
   - use Qt classes instead of jni for orientation?
 */
@@ -72,8 +71,10 @@ var m = 0.2; // without ppm-correction: 10
 var g = 9.81; // without ppm-correction: 50.8
 var box2dPpm = 32;    // pixelsPerMeter used in Box2D's world
 var boardSizeM = 0.9; // board's real edge length, fixed to 30 cm
-var boardSizePix = 500;  // board's current size in pix
-var pixelsPerMeter = boardSizePix / boardSizeM; // calculated dynamically: boardSizePix / boardSizeM;  FIXME: use current dpi!
+var boardSizePix = 500;  // board's current size in pix (acquired dynamically)
+var dpiBase=139;
+var curDpi = null;
+var pixelsPerMeter = null;
 var vFactor = pixelsPerMeter / box2dPpm; // FIXME: calculate!
 
 var step = 20;   // time step (in ms)
@@ -107,6 +108,8 @@ var balanceItemComponent = Qt.createComponent("qrc:/gcompris/src/activities/bala
 var contactIndex = -1;
 
 function start(items_) {
+    items = items_;
+
     if (GCompris.ApplicationInfo.isMobile) {
         var or = GCompris.ApplicationInfo.getRequestedOrientation();
         GCompris.ApplicationInfo.setRequestedOrientation(5);
@@ -120,12 +123,18 @@ function start(items_) {
          */
     }
 
-    items = items_;
+    // set up dynamic variables for movement:
+    pixelsPerMeter = boardSizePix / boardSizeM / (items.dpi / dpiBase);
+    vFactor = pixelsPerMeter / box2dPpm;
+
     console.log("Starting: pixelsPerM=" + items.world.pixelsPerMeter
             + " timeStep=" + items.world.timeStep
             + " posIterations=" + items.world.positionIterations
             + " velIterations=" + items.world.velocityIterations
-            + " vFactor=" + vFactor);
+            + " boardSizePix=" + boardSizePix
+            + " pixelsPerMeter=" + pixelsPerMeter
+            + " vFactor=" + vFactor
+            + " dpi=" + items.dpi);
 
     goal = null;
     holes = new Array();
@@ -256,7 +265,7 @@ function initMap()
             var x = col * items.cellSize;
             var y = row * items.cellSize;
             var orderNum = (map[row][col] & 0xFF00) >> 8;
-            console.log("XXX processing field " + col + "/" + row + " : number=" + orderNum);
+            //console.log("XXX processing field " + col + "/" + row + " : number=" + orderNum);
             // debugging:
             /*try {
                 var rect = Qt.createQmlObject(

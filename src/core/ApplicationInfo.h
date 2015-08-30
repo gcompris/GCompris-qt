@@ -306,7 +306,7 @@ protected slots:
     void notifyPortraitMode();
     Q_INVOKABLE void notifyFullscreenChanged();
 
-//#ifdef Q_OS_ANDROID
+//#ifdef Q_OS_ANDROID //FIXME: documentation!
     Q_INVOKABLE void setRequestedOrientation(int orientation);
     Q_INVOKABLE int getRequestedOrientation();
 //#endif
