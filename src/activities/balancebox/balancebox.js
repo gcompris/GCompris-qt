@@ -217,6 +217,7 @@ function checkBallContacts()
                     if (lastContact == contacts.length) {
                         console.log("door unlocked");
                         goalUnlocked = true;
+                        goal.imageSource = baseUrl + "/door.svg";
                     }
                 }
             }
@@ -230,7 +231,7 @@ function finishBall(won, x, y)
     items.keyboardTimer.stop();
     items.ball.x = x;
     items.ball.y = y;
-    items.ball.scale = 0;
+    items.ball.scale = 0.4;
     items.ball.body.linearVelocity = Qt.point(0, 0);
     if (won)
         items.bonus.good("flower");
@@ -323,7 +324,7 @@ function initMap()
                 goal = createObject(balanceItemComponent, {
                         x: goalX, y: goalY,
                         width: items.ball.width, height: items.ball.height,
-                        imageSource: baseUrl + "/door.svg",
+                        imageSource: baseUrl + "/door_closed.svg",
                         categories: items.goalType,
                         sensor: true});
                 //console.log("found goal at col/row " + col + "/" + row
