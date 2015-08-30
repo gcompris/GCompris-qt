@@ -314,7 +314,7 @@ function initMap()
                 goal = createObject(balanceItemComponent, {
                         x: goalX, y: goalY,
                         width: items.ball.width, height: items.ball.height,
-                        imageSource: baseUrl + "/door.png",
+                        imageSource: baseUrl + "/door.svg",
                         categories: items.goalType,
                         sensor: true});
                 //console.log("found goal at col/row " + col + "/" + row

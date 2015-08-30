@@ -37,10 +37,11 @@ ActivityBase {
     Keys.onPressed: Activity.processKeyPress(event.key)
     Keys.onReleased: Activity.processKeyRelease(event.key)
         
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
+        source: Activity.baseUrl + "/maze_bg.svg"
+        sourceSize.width: parent.width
         anchors.fill: parent
-        color: "#ABCDEF"
         signal start
         signal stop
 
@@ -79,18 +80,17 @@ ActivityBase {
             onError: console.error("Balancebox: Error parsing JSON: " + msg);
         }
 
-        Image {
+        Rectangle {
             id: mapWrapper
-            
+
             property double margin: 20
             property int columns: 0
             property int rows: 0
-            
-            source: Activity.baseUrl + "/woodbackground.png" 
-            fillMode: Image.Tile
             property double length: Math.min(background.height -
                     2*mapWrapper.margin, background.width - 2*mapWrapper.margin);
-            
+
+            color: "#E3DEDB"
+
             width: length
             height: length
         
@@ -143,7 +143,7 @@ ActivityBase {
                 anchors.topMargin: -items.wallSize/2
                 shadow: true
                 shadowHorizontalOffset: items.tilt.yRotation
-                shadowVerticalOffset: items.tilt.xRotation
+                shadowVerticalOffset: items.tilt.xRotation                
             }
             // left:
             Wall {

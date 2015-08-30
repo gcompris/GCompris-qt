@@ -60,7 +60,8 @@ Item {
         anchors.fill: parent
         width: parent.width
         height: parent.height
-        color: "black"
+        radius: height / 2
+        color: "#B38B56"
     }
     
     DropShadow {
