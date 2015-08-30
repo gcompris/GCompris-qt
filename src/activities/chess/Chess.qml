@@ -71,6 +71,7 @@ ActivityBase {
             property bool difficultyByLevel: activity.difficultyByLevel
             property var positions
             property var pieces: pieces
+            property var squares: squares
             property var history
             property int from
             property bool blackTurn
@@ -173,6 +174,42 @@ ActivityBase {
         }
 
         Repeater {
+            id: squares
+            model: items.positions
+            delegate: square
+            parent: chessboard
+
+            DropArea {
+                id: square
+                x: items.cellSize * (7 - pos % 8) + spacing / 2
+                y: items.cellSize * Math.floor(pos / 8) + spacing / 2
+                width: items.cellSize - spacing
+                height: items.cellSize - spacing
+                z: 1
+                keys: acceptMove ? ['acceptMe'] : ['sorryNo']
+                property bool acceptMove : false
+                property int pos: modelData.pos
+                property int spacing: 6 * ApplicationInfo.ratio
+                Rectangle {
+                    id: possibleMove
+                    anchors.fill: parent
+                    color: parent.containsDrag ? 'green' : 'transparent'
+                    border.width: parent.acceptMove ? 5 : 0
+                    border.color: "black"
+                    z: 1
+                }
+            }
+
+            function getSquareAt(pos) {
+                for(var i=0; i < squares.count; i++) {
+                    if(squares.itemAt(i).pos === pos)
+                        return squares.itemAt(i)
+                }
+                return(undefined)
+            }
+        }
+
+        Repeater {
             id: pieces
             model: items.positions
             delegate: piece
@@ -187,22 +224,44 @@ ActivityBase {
                 img: modelData.img
                 x: items.cellSize * (7 - pos % 8) + spacing / 2
                 y: items.cellSize * Math.floor(pos / 8) + spacing / 2
+                z: 1
                 pos: modelData.pos
                 newPos: modelData.pos
                 rotation: - chessboard.rotation
 
                 property int spacing: 6 * ApplicationInfo.ratio
 
+                Drag.active: dragArea.drag.active
+                Drag.hotSpot.x: width / 2
+                Drag.hotSpot.y: height / 2
+
                 MouseArea {
+                    id: dragArea
                     anchors.fill: parent
                     enabled: !items.gameOver
-                    onClicked: {
+                    drag.target: parent
+                    onPressed: {
+                        piece.Drag.keys = ['acceptMe']
+                        parent.z = 100
                         if(parent.isWhite == 1 && !items.blackTurn ||
                                 parent.isWhite == 0 && items.blackTurn) {
                             items.from = parent.newPos
                             Activity.showPossibleMoves(items.from)
-                        } else if(items.from != -1 && parent.acceptMove) {
+                        } else if(items.from != -1 && squares.getSquareAt(parent.newPos)['acceptMove']) {
                             Activity.moveTo(items.from, parent.newPos)
+                        }
+                    }
+                    onReleased: {
+                        if(piece.Drag.target) {
+                            console.log("1")
+                            if(items.from != -1) {
+                                Activity.moveTo(items.from, piece.Drag.target.pos)
+                            }
+                        } else {
+                            var pos = parent.pos
+                            // Force recalc of the old x,y position
+                            parent.pos = 0
+                            pieces.getPieceAt(pos).move(pos)
                         }
                     }
                 }
@@ -212,8 +271,7 @@ ActivityBase {
                 var fromPiece = getPieceAt(from)
                 var toPiece = getPieceAt(to)
                 toPiece.hide(from)
-                fromPiece.pos = to
-                fromPiece.newPos = to
+                fromPiece.move(to)
             }
 
             function promotion(to) {

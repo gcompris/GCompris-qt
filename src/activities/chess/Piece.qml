@@ -37,7 +37,7 @@ Image {
 
 
     SequentialAnimation {
-        id: moveAnim
+        id: hideAnim
         NumberAnimation {
             target: piece
             property: "scale"
@@ -58,6 +58,11 @@ Image {
             target: piece
             property: 'scale'
             value: 1
+        }
+        PropertyAction {
+            target: piece
+            property: 'z'
+            value: 2
         }
     }
 
@@ -84,22 +89,19 @@ Image {
         }
     }
 
-    Rectangle {
-        id: possibleMove
-        anchors.fill: parent
-        color: 'transparent'
-        border.width: parent.acceptMove ? 5 : 0
-        border.color: "black"
-        z: 1
-    }
-
     function hide(newPos) {
         piece.newPos = newPos
-        moveAnim.start()
+        hideAnim.start()
     }
 
     function promotion() {
         promotionAnim.start()
+    }
+
+    function move(to) {
+        piece.newPos = to
+        piece.pos = to
+        piece.z = 2
     }
 }
 

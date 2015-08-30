@@ -257,7 +257,7 @@ function randomMove() {
 // Clear all accept move marker from the chessboard
 function clearAcceptMove() {
     for(var i=0; i < items.positions.length; ++i)
-        items.pieces.getPieceAt(i)['acceptMove'] = false
+        items.squares.getSquareAt(i)['acceptMove'] = false
 }
 
 // Highlight the possible moves for the piece at position 'from'
@@ -267,7 +267,7 @@ function showPossibleMoves(from) {
     for(var i=0; i < result.length; ++i) {
         if(viewPosToEngine(from) == result[i][1]) {
             var pos = engineToViewPos(result[i][2])
-            items.pieces.getPieceAt(pos)['acceptMove'] = true
+            items.squares.getSquareAt(pos)['acceptMove'] = true
         }
     }
 }
