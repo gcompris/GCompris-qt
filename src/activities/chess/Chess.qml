@@ -64,7 +64,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property int cellSize: Math.min(background.width / (8 + 1),
+            property int cellSize: Math.min(background.width / (8 + 2),
                                             background.height / (8 + 3))
             property variant fen: activity.fen
             property bool twoPlayer: activity.twoPlayers
@@ -89,6 +89,7 @@ ActivityBase {
                 top: parent.top
                 topMargin: items.cellSize / 2
                 leftMargin: 10 * ApplicationInfo.ratio
+                rightMargin: 10 * ApplicationInfo.ratio
             }
             columns: 3
             rows: 1
@@ -100,12 +101,19 @@ ActivityBase {
             Column {
                 id: controls
                 spacing: 10
-                width: undo.width + (background.width * 0.9 - undo.width - chessboard.width) / 2
+                anchors {
+                    leftMargin: 10
+                    rightMargin: 10
+                }
+                width: Math.max(undo.width * 1.2,
+                                Math.min(
+                                    (background.width * 0.9 - undo.width - chessboard.width),
+                                    (background.width - chessboard.width) / 2))
 
                 GCText {
                     color: "black"
                     anchors.horizontalCenter: parent.horizontalCenter
-                    width: undo.width * 1.2
+                    width: parent.width
                     fontSize: smallSize
                     text: items.message
                     horizontalAlignment: Text.AlignHCenter
