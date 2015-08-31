@@ -73,6 +73,8 @@ ActivityBase {
             property var pieces: pieces
             property var squares: squares
             property var history
+            property var redo_stack
+            property alias redoTimer: redoTimer
             property int from
             property bool blackTurn
             property bool gameOver
@@ -128,6 +130,22 @@ ActivityBase {
                     style: GCButtonStyle {}
                     onClicked: Activity.undo()
                     opacity: items.history.length > 0 ? 1 : 0
+                    Behavior on opacity {
+                        PropertyAnimation {
+                            easing.type: Easing.InQuad
+                            duration: 200
+                        }
+                    }
+                }
+
+                Button {
+                    id: redo
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    height: 30 * ApplicationInfo.ratio
+                    text: qsTr("Redo");
+                    style: GCButtonStyle {}
+                    onClicked: Activity.redo()
+                    opacity: items.redo_stack.length > 0 ? 1 : 0
                     Behavior on opacity {
                         PropertyAnimation {
                             easing.type: Easing.InQuad
@@ -261,7 +279,6 @@ ActivityBase {
                     }
                     onReleased: {
                         if(piece.Drag.target) {
-                            console.log("1")
                             if(items.from != -1) {
                                 Activity.moveTo(items.from, piece.Drag.target.pos)
                             }
@@ -301,6 +318,20 @@ ActivityBase {
             repeat: false
             interval: 400
             onTriggered: Activity.randomMove()
+        }
+
+        // Use to redo the computer move after the user move
+        Timer {
+            id: redoTimer
+            repeat: false
+            interval: 400
+            onTriggered: Activity.moveByEngine(move)
+            property var move
+
+            function moveByEngine(engineMove) {
+                move = engineMove
+                redoTimer.start()
+            }
         }
 
         DialogHelp {

@@ -46,6 +46,7 @@ function initLevel() {
     state = Engine.p4_fen2state(items.fen[currentLevel][1])
     items.from = -1
     items.gameOver = false
+    items.redo_stack = []
     refresh()
     Engine.p4_prepare(state)
     items.positions = 0 // Force a model reload
@@ -207,6 +208,7 @@ function moveTo(from, to) {
         visibleMove(move, from, to)
         refresh(move)
         clearAcceptMove()
+        items.redo_stack = []
         if(!items.twoPlayer)
             items.trigComputerMove.start()
         items.from = -1;
@@ -217,16 +219,41 @@ function moveTo(from, to) {
 }
 
 function undo() {
+    var redo_stack = items.redo_stack
+    redo_stack.push(state.history[state.moveno - 1])
     state.jump_to_moveno(state.moveno - 1)
     // In computer mode, the white always starts, take care
     // of undo after a mate which requires us to revert on
     // a white play
     if(!items.twoPlayer && state.to_play != 0) {
+        redo_stack.push(state.history[state.moveno - 1])
         state.jump_to_moveno(state.moveno - 1)
     }
+    items.redo_stack = redo_stack
     refresh()
-    items.positions = 0 // Force a model reload
+    items.positions = [] // Force a model reload
     items.positions = simplifiedState(state['board'])
+}
+
+function moveByEngine(engineMove) {
+    var move = state.move(engineMove[0], engineMove[1])
+    visibleMove(move, engineToViewPos(engineMove[0]), engineToViewPos(engineMove[1]))
+    refresh(move)
+}
+
+function redo() {
+    var redo_stack = items.redo_stack
+    moveByEngine(items.redo_stack.pop())
+    // In computer mode, the white always starts, take care
+    // of undo after a mate which requires us to revert on
+    // a white play
+    if(!items.twoPlayer && state.to_play != 0) {
+        items.redoTimer.moveByEngine(items.redo_stack.pop())
+    }
+
+    // Force refresh
+    items.redo_stack = []
+    items.redo_stack = redo_stack
 }
 
 // Random move depending on the level
