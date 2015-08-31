@@ -197,8 +197,8 @@ function processKeyPress(text) {
     if(flag !== 1){
         wordi = inital;
         items.noOfLife=items.noOfLife-1;
-	items.thresh.threshold=items.thresh.threshold-0.1;
-	items.thresh.spread=items.thresh.spread+0.1;
+        //items.thresh.threshold=items.thresh.threshold-0.1;
+        //items.thresh.spread=items.thresh.spread+0.1;
     }
     items.hidden.text = wordi
     console.log("wordlength"+currentWord.length);
@@ -237,8 +237,8 @@ function initSubLevel()
     var text1 = items.goodWord.translatedTxt;
     items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image);
     items.noOfLife=6;
-    items.thresh.threshold=0.7;
-    items.thresh.spread=0.2;
+    items.thresh.threshold=0.5;
+    items.thresh.spread=0.5;
     win=0;
     wordi = new Array();
     currentWord = text1 ;

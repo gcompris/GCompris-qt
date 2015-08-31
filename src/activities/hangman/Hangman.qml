@@ -21,6 +21,11 @@
  */
 import QtQuick 2.1
 import GCompris 1.0
+import QtQuick 2.4
+import QtQuick.Controls 1.3
+import QtQuick.Window 2.2
+import QtQuick.Dialogs 1.2
+
 import QtGraphicalEffects 1.0
 
 import "../../core"
@@ -33,7 +38,7 @@ ActivityBase {
     
     // Overload this in your activity to change it
     // Put you default-<locale>.json files in it
-   
+
     property string dataSetUrl: "qrc:/gcompris/src/activities/hangman/resource/"
     
     onStart:{ focus = true
@@ -54,8 +59,8 @@ ActivityBase {
         anchors.fill: parent
         sourceSize.width:parent.width
         
-         // system locale by default
-         property string locale: "system"
+        // system locale by default
+        property string locale: "system"
         
         
         readonly property string wordsResource: "data2/words/words.rcc"
@@ -93,7 +98,7 @@ ActivityBase {
             property alias thresh:thresh
             property variant goodWord
             property int goodWordIndex
-           
+
             property alias englishFallbackDialog: englishFallbackDialog
 
             
@@ -102,11 +107,11 @@ ActivityBase {
                     voiceError();
             }
             function voice()
-	    {	if(noOfLife==3)
-	        {	playWord();
-		}
-		
-	    }
+            {	if(noOfLife==3)
+                {	playWord();
+                }
+
+            }
             
         }
 
@@ -177,83 +182,83 @@ ActivityBase {
 
         }
         
-       Item{ 
-        
-        Image {   
-	  
-	    id:imageframe
-            visible:true
-            width:background.width/4
-            height:background.height/4
-            x:background.width/2.7
-            y:background.height/10
-            source:dataSetUrl+"imageid_frame.svg"
-            Image{
-                id:wordImage
-                sourceSize.width: parent.width * 0.5
-                anchors {
-                    centerIn: parent
-                    margins: 0.06 + parent.width
-                }
-                property string nextSource
-                function changeSource(nextSource_) {
-                    nextSource = nextSource_
-                    animImage.start()
-                }
-                
-                 
+        Item{
 
-                SequentialAnimation {
-                    id: animImage
-                    PropertyAnimation {
-                        target: wordImage
-                        property: "opacity"
-                        to: 0
-                        duration: 100
+            Image {
+
+                id:imageframe
+                visible:true
+                width:background.width/4
+                height:background.height/4
+                x:background.width/2.7
+                y:background.height/10
+                source:dataSetUrl+"imageid_frame.svg"
+                Image{
+                    id:wordImage
+                    sourceSize.width: parent.width * 0.5
+                    anchors {
+                        centerIn: parent
+                        margins: 0.06 + parent.width
                     }
-                    PropertyAction {
-                        target: wordImage
-                        property: "source"
-                        value: wordImage.nextSource
+                    property string nextSource
+                    function changeSource(nextSource_) {
+                        nextSource = nextSource_
+                        animImage.start()
                     }
-                    PropertyAnimation {
-                        target: wordImage
-                        property: "opacity"
-                        to: 1
-                        duration: 100
+
+
+
+                    SequentialAnimation {
+                        id: animImage
+                        PropertyAnimation {
+                            target: wordImage
+                            property: "opacity"
+                            to: 0
+                            duration: 100
+                        }
+                        PropertyAction {
+                            target: wordImage
+                            property: "source"
+                            value: wordImage.nextSource
+                        }
+                        PropertyAnimation {
+                            target: wordImage
+                            property: "opacity"
+                            to: 1
+                            duration: 100
+                        }
                     }
+
+
+
                 }
-                
-                
+            }
+
+
+            Image {		id:threshmask
+                visible:true
+                width:background.width/4
+                height:background.height/4
+                x:background.width/2.7
+                y:background.height/10
+                source:dataSetUrl+"fog.png"
+            }
+
+            ThresholdMask {
+                id:thresh
+                anchors.fill:wordImage
+                source: wordImage
+                maskSource:threshmask
+                threshold:0.5
+                spread:0.5
 
             }
+
         }
         
         
-        Image {		id:threshmask
-			visible:true
-			width:background.width/4
-			height:background.height/4
-			x:background.width/2.7
-			y:background.height/10
-			source:dataSetUrl+"imageid_frame.svg"
-	}
-		
-	ThresholdMask {
-			 id:thresh 
-                         anchors.fill:threshmask
-                         source: threshmask
-                         maskSource: wordImage
-                         threshold:0.6
-                         spread:0.2
-                         
-         }
-	 
-	}
-        
-        
 
-       
+
         
         DialogActivityConfig {
             id: dialogActivityConfig
