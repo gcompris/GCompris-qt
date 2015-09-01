@@ -126,7 +126,6 @@ var advanced_colors =
              },
              {
                  "image": "qrc:/gcompris/src/activities/advanced_colors/resource/sulphur_butterfly.svg",
-                 //:
                  //: Color #E4BB25
                  "text": qsTr("Find the sulfur butterfly")
              },
