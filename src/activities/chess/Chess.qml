@@ -61,6 +61,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
+            property GCAudio audioEffects: activity.audioEffects
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
@@ -191,6 +192,7 @@ ActivityBase {
                 Behavior on rotation { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1400 } }
 
                 function swap() {
+                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/flip.wav')
                     if(chessboard.rotation == 180)
                         chessboard.rotation = 0
                     else
@@ -293,8 +295,13 @@ ActivityBase {
             }
 
             function moveTo(from, to) {
+                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
                 var fromPiece = getPieceAt(from)
                 var toPiece = getPieceAt(to)
+                if(toPiece.img != '')
+                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/smudge.wav')
+                else
+                    items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
                 toPiece.hide(from)
                 fromPiece.move(to)
             }
