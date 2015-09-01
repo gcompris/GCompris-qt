@@ -155,7 +155,7 @@ ActivityBase {
                 userEntry.text = ""
             }
 
-            if(userEntry.text.length >= 3) {
+            if(userEntry.text.length > ('' + targetItem.scoreTotal).length) {
                 return
             }
 
