@@ -132,10 +132,9 @@ ActivityBase {
             property int nbStoreColumns: activity.dataset === "BACK_WITHOUT_CENTS" ||
                                          activity.dataset === "BACK_WITH_CENTS" ? store.model.length + 1 : store.model.length
             property int itemStoreWidth:
-                Math.min( (width - storeAreaFlow.anchors.leftMargin -
-                           storeAreaFlow.anchors.rightMargin -
-                           storeAreaFlow.spacing * nbStoreColumns - 1) / nbStoreColumns,
-                          (parent.height - answerArea.height - instructionsArea.realHeight - pocketArea.height - bar.height) / 2)
+                Math.min((column.width - storeAreaFlow.spacing * nbStoreColumns) / nbStoreColumns,
+                         (parent.height - answerArea.height - instructionsArea.realHeight -
+                          pocketArea.height - bar.height) * 0.8 / 2)
             property int itemStoreHeight: itemStoreWidth
 
             Rectangle {
@@ -170,6 +169,7 @@ ActivityBase {
                                  activity.dataset === "BACK_WITH_CENTS"
                         source: Activity.url + "/tux.svg"
                         sourceSize.height:  column.itemStoreHeight
+                        sourceSize.width:  column.itemStoreHeight
                         Repeater {
                             id: tuxMoney
                             Image {
@@ -186,15 +186,17 @@ ActivityBase {
                         Image {
                             source: Activity.url + modelData.img
                             sourceSize.height:  column.itemStoreHeight
+                            sourceSize.width:  column.itemStoreHeight
                             GCText {
                                 text: modelData.price
-                                fontSize: 20
+                                fontSize: 16
                                 font.weight: Font.DemiBold
                                 style: Text.Outline
                                 styleColor: "black"
                                 color: "white"
                                 anchors.horizontalCenter: parent.horizontalCenter
-                                anchors.verticalCenter: parent.verticalCenter
+                                anchors.top: parent.top
+                                anchors.topMargin: index % 2 == 0 ?  0 : parent.height - height
                             }
                         }
                     }
