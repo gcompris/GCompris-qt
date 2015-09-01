@@ -43,6 +43,7 @@ var noOfLife;
 
 var countNoAlphabet;
 var currentWord;
+var trail;
 var wordi = new Array();
 var component;
 var sp ="_ ";
@@ -197,8 +198,13 @@ function processKeyPress(text) {
     if(flag !== 1){
         wordi = inital;
         items.noOfLife=items.noOfLife-1;
-        //items.thresh.threshold=items.thresh.threshold-0.1;
-        //items.thresh.spread=items.thresh.spread+0.1;
+        items.thresh.threshold=items.thresh.threshold-0.1;
+	if(items.noOfLife==0)
+	{     items.hidden.text=items.goodWord.translatedTxt;	
+	      items.bonus.bad("lion");
+	      nextSubLevel();
+	}
+        
     }
     items.hidden.text = wordi
     console.log("wordlength"+currentWord.length);
@@ -236,9 +242,9 @@ function initSubLevel()
     items.goodWord = wordList[items.goodWordIndex]
     var text1 = items.goodWord.translatedTxt;
     items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image);
-    items.noOfLife=6;
-    items.thresh.threshold=0.5;
-    items.thresh.spread=0.5;
+    items.noOfLife=8;
+    items.thresh.threshold=0.9;
+    items.thresh.spread=0.4;
     win=0;
     wordi = new Array();
     currentWord = text1 ;
@@ -265,7 +271,7 @@ function initSubLevel()
 
 function nextSubLevel() {
     if( ++currentSubLevel >= maxSubLevel) {
-        currentSubLevel = 0
+        currentSubLevel = 0;
         nextLevel();
 
     }
