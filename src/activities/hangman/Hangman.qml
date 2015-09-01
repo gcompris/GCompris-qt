@@ -96,6 +96,7 @@ ActivityBase {
             property alias locale: background.locale
             property int noOfLife:noOfLife
             property alias thresh:thresh
+            property alias imageframe:imageframe
             property variant goodWord
             property int goodWordIndex
 
@@ -182,24 +183,25 @@ ActivityBase {
 
         }
         
-        Item{
-
-            Image {
-
-                id:imageframe
-                visible:true
-                width:background.width/4
-                height:background.height/4
-                x:background.width/2.7
-                y:background.height/10
-                source:dataSetUrl+"imageid_frame.svg"
+        Item{	
+  
+		id:imageframe
+                width:background.width/4.2
+		height:background.height/4.2
+		x:background.width/2.5
+		y:background.height/9.4
                 Image{
-                    id:wordImage
-                    sourceSize.width: parent.width * 0.5
-                    anchors {
+		      id:wordImage
+		      width:background.width/6
+		      height:background.height/5
+		      x:imageframe.width/2
+		      y:imageframe.height/2
+		      smooth:true
+		      visible:false
+		      anchors {
                         centerIn: parent
                         margins: 0.06 + parent.width
-                    }
+		      }
                     property string nextSource
                     function changeSource(nextSource_) {
                         nextSource = nextSource_
@@ -231,27 +233,25 @@ ActivityBase {
 
 
 
-                }
+                
             }
 
 
-            Image {		id:threshmask
-                visible:true
-                width:background.width/4
-                height:background.height/4
-                x:background.width/2.7
-                y:background.height/10
+            Image {
+		id:threshmask
+                smooth:true
+                visible:false
+                width:1.3*parent.width
+                height:1.2*parent.height
                 source:dataSetUrl+"fog.png"
             }
 
             ThresholdMask {
                 id:thresh
                 anchors.fill:wordImage
-                source: wordImage
+                source:wordImage
                 maskSource:threshmask
-                threshold:0.5
-                spread:0.5
-
+               
             }
 
         }
