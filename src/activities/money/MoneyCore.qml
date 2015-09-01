@@ -133,8 +133,8 @@ ActivityBase {
                                          activity.dataset === "BACK_WITH_CENTS" ? store.model.length + 1 : store.model.length
             property int itemStoreWidth:
                 Math.min((column.width - storeAreaFlow.spacing * nbStoreColumns) / nbStoreColumns,
-                         (parent.height - answerArea.height - instructionsArea.realHeight -
-                          pocketArea.height - bar.height) * 0.8 / 2)
+                         (parent.height - answerArea.height -
+                          pocketArea.height - bar.height) * 0.8) - instructionsArea.realHeight
             property int itemStoreHeight: itemStoreWidth
 
             Rectangle {
@@ -218,7 +218,7 @@ ActivityBase {
                 anchors.rightMargin: 10
                 visible: bar.level === 1
 
-                property int realHeight: bar.level === 1 ? height : 0
+                property int realHeight: bar.level === 1 ? height + column.spacing : 0
 
                 GCText {
                     id: instructions
