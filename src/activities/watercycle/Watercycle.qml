@@ -66,6 +66,7 @@ ActivityBase {
             }
 
             property bool cycleDone: false
+            property GCAudio audioEffects: activity.audioEffects
         }
 
         IntroMessage {
@@ -152,11 +153,14 @@ ActivityBase {
                 onRunningChanged: {
                     if(!anim.running)
                     {
+                        items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/harbor2.wav')
                         tuxboat.opacity = 0
                         boatparked.opacity = 1
                         shower.stop()
                         if(!sun.hasRun)
                             info.setText('start')
+                    } else {
+                        items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/harbor1.wav')
                     }
                 }
             }
@@ -199,6 +203,7 @@ ActivityBase {
             }
             Behavior on anchors.topMargin { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 5000 } }
             function up() {
+                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
                 info.setText('sun')
                 sun.hasRun = true
                 sun.anchors.topMargin = parent.height * 0.05
@@ -386,6 +391,7 @@ ActivityBase {
                 }
             }
             function up() {
+                items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/water.wav')
                 info.setText('rain')
                 opacity = 1
                 rainAnim.start()
@@ -483,6 +489,7 @@ ActivityBase {
                 enabled: river.level > 0.2
                 anchors.fill: parent
                 onClicked: {
+                    items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/bubble.wav')
                     info.setText('tower')
                     waterplant.running = true
                 }
@@ -517,6 +524,7 @@ ActivityBase {
                 enabled: river.opacity == 1
                 anchors.fill: parent
                 onClicked: {
+                    items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/bubble.wav')
                     info.setText('shower')
                     sewageplant.running = true
                 }
@@ -604,6 +612,7 @@ ActivityBase {
                     bonus.good('smiley')
                     items.cycleDone = true
                 }
+                items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/apert.wav')
             }
 
             function stop() {
