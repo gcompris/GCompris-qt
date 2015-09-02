@@ -52,6 +52,8 @@ var dataset = null;
 var lessons 
 var wordList
 var subLevelsLeft
+var doublePresscheck;
+var doublelen;
 
 
 function start(items_) {
@@ -192,17 +194,28 @@ function processKeyPress(text) {
 
 
     }
-
+    
     
 
     if(flag !== 1){
         wordi = inital;
-        items.noOfLife=items.noOfLife-1;
-        items.thresh.threshold=items.thresh.threshold-0.1;
-	if(items.noOfLife==0)
-	{     items.hidden.text=items.goodWord.translatedTxt;	
-	      items.bonus.bad("lion");
-	      nextSubLevel();
+	var flag1=0;
+        for(var b=0;b<doublelen;b++)
+	{	if(doublePresscheck[b]==text)
+		{	flag1=1;
+			break;
+		}
+	}
+	if(flag1==0)
+	{	items.noOfLife=items.noOfLife-1;
+		items.thresh.threshold=items.thresh.threshold-0.1;
+		if(items.noOfLife==0)
+		{     items.hidden.text=items.goodWord.translatedTxt;	
+		      items.bonus.bad("lion");
+		      nextSubLevel();
+		}
+		doublePresscheck.push(text);
+		doublelen++;
 	}
         
     }
@@ -246,6 +259,8 @@ function initSubLevel()
     items.thresh.threshold=0.9;
     items.thresh.spread=0.4;
     win=0;
+    doublePresscheck=new Array();
+    doublelen=0;
     wordi = new Array();
     currentWord = text1 ;
     countNoAlphabet = 0;
