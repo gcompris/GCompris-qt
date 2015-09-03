@@ -24,9 +24,6 @@ import "../../core"
 
 import "programmingMaze.js" as Activity
 
-import QtQuick.Controls 1.0
-import QtQuick.Layouts 1.0
-
 
 ActivityBase {
     id: activity
@@ -36,19 +33,15 @@ ActivityBase {
 
     property int oldWidth: width
     onWidthChanged: {
-        // Reposition planets and asteroids, same for height
         Activity.repositionObjectsOnWidthChanged(width / oldWidth)
         oldWidth = width
     }
 
     property int oldHeight: height
     onHeightChanged: {
-        // Reposition planets and asteroids, same for height
         Activity.repositionObjectsOnHeightChanged(height / oldHeight)
         oldHeight = height
     }
-
-
 
     pageComponent: Rectangle {
         id: background
@@ -63,7 +56,6 @@ ActivityBase {
         property bool moveProcedureCell: false
         property bool insertIntoMain: true
         property bool insertIntoProcedure: false
-        //        property variant answers: []
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -83,8 +75,6 @@ ActivityBase {
             property alias answerModel: answerModel
             property alias answerSheet: answerSheet
             property alias procedureModel: procedureModel
-            property alias answerHeaderComponent: answerHeaderComponent
-            property alias procedureHeaderComponent: procedureHeaderComponent
             property alias procedure: procedure
             property alias player: player
             property alias fish: fish
@@ -157,7 +147,7 @@ ActivityBase {
 
         Image {
             id: player
-            source: "qrc:/gcompris/src/activities/maze/resource/" + "tux_top_south.svg"
+            source: "qrc:/gcompris/src/activities/maze/resource/tux_top_south.svg"
             sourceSize.width: background.width / 12
             x: 0; y: 0; z: 11
             property int duration: 1000
@@ -166,7 +156,7 @@ ActivityBase {
             signal init
 
             onInit: {
-                player.rotation = -90
+                player.rotation = Activity.EAST
             }
 
             onTuxIsBusyChanged: {
@@ -210,7 +200,6 @@ ActivityBase {
             id: fish
             source: Activity.reverseCountUrl + "blue-fish.svg"
             sourceSize.width: background.width / 12
-            //            anchors.leftMargin: 20 * ApplicationInfo.ratio
             x: 0; y: 0; z: 5
         }
 
@@ -276,7 +265,6 @@ ActivityBase {
                         width: sourceSize.width
                         height: sourceSize.height
                         anchors.horizontalCenter: parent.horizontalCenter
-                        smooth: false
                     }
 
 
@@ -285,7 +273,6 @@ ActivityBase {
                         sourceSize {  height: parent.height; width: parent.width }
                         width: sourceSize.width
                         height: sourceSize.height
-                        smooth: false
                     }
 
                     MouseArea {
@@ -348,8 +335,7 @@ ActivityBase {
             currentModel: procedureModel
             anchors.right: parent.right
             anchors.bottom: parent.bottom
-            visible: (bar.level > 2)? true : false
-            //highlight move answer cell
+            visible: bar.level > 2
         }
 
         Image {
@@ -359,7 +345,6 @@ ActivityBase {
             anchors.right: instruction.right
             anchors.bottom: bar.top
             anchors.margins: 10 * ApplicationInfo.ratio
-
 
             source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
             fillMode: Image.PreserveAspectFit
@@ -371,6 +356,7 @@ ActivityBase {
                 hoverEnabled: true
                 onEntered: runCode.scale = 1.1
                 onClicked: {
+                    // todo add a condition to disable it if code is running
                     Activity.runCode()
                 }
                 onExited: runCode.scale = 1
@@ -386,14 +372,12 @@ ActivityBase {
                 width: instruction.width
                 height: 25 * ApplicationInfo.ratio
                 color: "#005B9A"
-                opacity: 1
 
                 Image {
                     source: "qrc:/gcompris/src/core/resource/button.svg"
-                    sourceSize {  height: parent.height; width: parent.width }
+                    sourceSize { height: parent.height; width: parent.width }
                     width: sourceSize.width
                     height: sourceSize.height
-                    smooth: false
                 }
 
                 GCText {
@@ -419,22 +403,18 @@ ActivityBase {
             height: 50 * ApplicationInfo.ratio
             anchors.left: answerSheet.left
             anchors.top: parent.top
-            property alias mainHeaderOpacity: answerHeaderRect.opacity
 
             Rectangle {
                 id: answerHeaderRect
                 anchors.fill: parent
                 color: "#005B9A"
-                opacity: 1
+                opacity: background.insertIntoMain ? 1 : 0.5
 
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
                         background.insertIntoMain = true
                         background.insertIntoProcedure = false
-                        procedureHeaderComponent.pHeaderOpacity = 0.5
-                        answerHeaderRect.opacity = 1
-                        console.log("clicked main")
                     }
                 }
 
@@ -443,7 +423,6 @@ ActivityBase {
                     sourceSize {  height: parent.height; width: parent.width }
                     width: sourceSize.width
                     height: sourceSize.height
-                    smooth: false
                 }
 
                 GCText {
@@ -470,25 +449,19 @@ ActivityBase {
             height: 50 * ApplicationInfo.ratio
             anchors.left: procedure.left
             anchors.bottom: procedure.top
-            visible: (bar.level > 2)? true : false
+            visible: procedure.visible
 //            anchors.top: answerSheet.bottom
-            property alias pHeaderOpacity: procedureHeaderRect.opacity
             Rectangle {
                 id: procedureHeaderRect
                 anchors.fill: parent
                 color: "#005B9A"
-                opacity: 0.5
+                opacity: background.insertIntoProcedure ? 1 : 0.5
 
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        if(bar.level > 2) {
-                            background.insertIntoMain = false
-                            background.insertIntoProcedure = true
-                            answerHeaderComponent.mainHeaderOpacity = 0.5
-                            procedureHeaderRect.opacity = 1
-                            console.log("clicked procedure")
-                        }
+                        background.insertIntoMain = false
+                        background.insertIntoProcedure = true
                     }
                 }
 
@@ -497,7 +470,6 @@ ActivityBase {
                     sourceSize {  height: parent.height; width: parent.width }
                     width: sourceSize.width
                     height: sourceSize.height
-                    smooth: false
                 }
 
                 GCText {
