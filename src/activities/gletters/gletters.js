@@ -379,13 +379,6 @@ function audioCrashPlay() {
     items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
 }
 
-function nextLevel() {
-    if(maxLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
-    currentSubLevel = 0;
-    initLevel();
-}
 
 function previousLevel() {
     if(--currentLevel < 0) {
@@ -412,6 +405,9 @@ function playLetter(letter) {
 
 
 function focusTextInput() {
-    if (!GCompris.ApplicationInfo.isMobile && items && items.textinput)
+    if (!GCompris.ApplicationInfo.isMobile && items)
         items.textinput.forceActiveFocus();
 }
+
+    
+
