@@ -5,7 +5,6 @@
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
  *   Sagar Chand Agarwal <atomsagar@gmail.com> (Qt Quick port)
- *   Johnny Jazeix <jazeix@gmail.com> (Qt Quick)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
