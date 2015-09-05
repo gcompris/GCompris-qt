@@ -357,7 +357,11 @@ ActivityBase {
                 onEntered: runCode.scale = 1.1
                 onClicked: {
                     // todo add a condition to disable it if code is running
-                    Activity.runCode()
+                    // either the execution hasn't started or stopped because of deadEndPoint
+                    if(Activity.codeIterator == 0 || Activity.deadEndPoint) {
+                        console.log(Activity.codeIterator +" value of codeIterator")
+                        Activity.runCode()
+                    }
                 }
                 onExited: runCode.scale = 1
             }
