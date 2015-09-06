@@ -27,104 +27,73 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 
-var items;
-var quizItems;
-var filteredWordList;
-var subLevelsLeft
-var currentSubLevel
+var quizItems
+var wordList
+var remainingWords
 var mode
 
-function init(items_, loadedItems_, filteredWordList_, mode_) {
-
-    items = items_
+// @return true if the quiz was ran
+function init(loadedItems_, wordList_, mode_) {
     quizItems = loadedItems_
-    filteredWordList = filteredWordList_
+    wordList = wordList_
     mode = mode_
 
-    items.score.currentSubLevel = 0
-    items.imageFrame.visible = false
-    items.wordTextbg.visible = false
-    items.categoryTextbg.visible = false
+    quizItems.score.numberOfSubLevels = wordList.length
 
-    if(mode==3) {
-        quizItems.wordImage.visible = false
+    if(mode == 3) {
         quizItems.imageFrame.visible = false
-
-        for (var j = 0; j < filteredWordList.length ; j++) {
-            if(!items.checkWordExistence (filteredWordList[j]) || !items.repeatItem.visible) {
-                filteredWordList.splice(j,1)
+        // Remove words for which we don't have voice
+        for (var j = 0; j < wordList.length ; j++) {
+            if(!wordList[j].hasVoice) {
+                wordList.splice(j, 1)
                 j--;
             }
         }
-        items.score.numberOfSubLevels = filteredWordList.length
-    }
-    else {
-        quizItems.wordImage.visible = true
+    } else {
         quizItems.imageFrame.visible = true
     }
+
+    // Bails out if we don't have enough words to play
+    if(wordList.length < 2) {
+        return false
+    }
+
     quizItems.wordListView.forceActiveFocus()
-
-    subLevelsLeft = [];
-    for(var i in filteredWordList) {
-        subLevelsLeft.push(i)   // This is available in all editors.
-    }
-
-    Core.shuffle(subLevelsLeft)
-    currentSubLevel =0
-
-    if(subLevelsLeft.length === 0) {
-        quizItems.bonus.good("smiley")
-    } else {
-        initSubLevelQuiz();
-    }
-
+    remainingWords = Core.shuffle(wordList).slice()
+    nextQuiz();
+    return true
 }
 
-function initSubLevelQuiz() {
+function nextQuiz() {
 
-    if(items.score.currentSubLevel < items.score.numberOfSubLevels)
-        items.score.currentSubLevel = items.score.currentSubLevel + 1;
-    else
-        items.score.visible = false
+    quizItems.score.currentSubLevel = quizItems.score.numberOfSubLevels - remainingWords.length + 1
 
-    quizItems.goodWordIndex = subLevelsLeft.pop()
-    quizItems.goodWord = filteredWordList[quizItems.goodWordIndex]
+    quizItems.goodWord = remainingWords.pop()
 
     var selectedWords = []
-    selectedWords.push([quizItems.goodWord.translatedTxt,"qrc:/gcompris/data/"+ quizItems.goodWord.image])
+    selectedWords.push(quizItems.goodWord)
 
-
-    for (var i = 0; i < filteredWordList.length; i++) {
-        if(filteredWordList[i].translatedTxt !== selectedWords[0][0]){
-            selectedWords.push([filteredWordList[i].translatedTxt,"qrc:/gcompris/data/"+ filteredWordList[i].image])
+    // Pick 3 wrong words to complete the quiz
+    for (var i = 0; i < wordList.length; i++) {
+        if(wordList[i] !== quizItems.goodWord) {
+            selectedWords.push(wordList[i])
         }
         if(selectedWords.length > 4)
             break
     }
 
     // Push the result in the model
+    selectedWords = Core.shuffle(selectedWords);
     quizItems.wordListModel.clear();
-    Core.shuffle(selectedWords);
-
-    for (var j = 0; j < selectedWords.length; j++) {
-        quizItems.wordListModel.append( {"word": selectedWords[j][0], "image": selectedWords[j][1]})
-    }
+    quizItems.wordListModel.append(selectedWords)
 
     quizItems.wordImage.changeSource("qrc:/gcompris/data/" + quizItems.goodWord.image)
 }
 
 function nextSubLevelQuiz() {
-    ++currentSubLevel
-    if(subLevelsLeft.length === 0) {
+    if(remainingWords.length === 0) {
         quizItems.bonus.good("smiley")
     } else {
-        initSubLevelQuiz();
+        nextQuiz();
     }
-}
-
-// Append to the front of queue of words for the sublevel the error
-function badWordSelected(wordIndex) {
-    if (subLevelsLeft[0] != wordIndex)
-        subLevelsLeft.unshift(wordIndex);
-    items.score.currentSubLevel = items.score.currentSubLevel -1
 }

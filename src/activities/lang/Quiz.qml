@@ -31,28 +31,32 @@ import "quiz.js" as QuizActivity
 
 Item {
     id: quiz
+    opacity: 0
 
     property alias background: background
     property alias bonus: bonus
+    property alias score: score
     property alias wordImage: wordImage
     property alias imageFrame: imageFrame
     property alias wordListModel: wordListModel
     property alias wordListView: wordListView
     property alias parser: parser
     property variant goodWord
-    property int goodWordIndex
+    property bool horizontalLayout: background.width > background.height
 
-    function init(items_, loadedItems_, wordList_, mode_) {
+    function init(loadedItems_, wordList_, mode_) {
+        opacity = 1
         loadedItems_.forceActiveFocus()
-        QuizActivity.init(items_, loadedItems_, wordList_, mode_);
+        return QuizActivity.init(loadedItems_, wordList_, mode_)
     }
 
     function playWord() {
-        if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
-            voiceError();
+        activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice))
     }
 
     onGoodWordChanged: playWord()
+
+    Behavior on opacity { PropertyAnimation { duration: 200 } }
 
     Image {
         id: background
@@ -61,17 +65,10 @@ Item {
         sourceSize.width: parent.width
         height: parent.height
 
-        property bool horizontalLayout: background.width > background.height
         property bool keyNavigation: false
 
-
         Keys.onEscapePressed: {
-            if(Activity.currentMiniGame == -1) {
-                home()
-            }
-            else {
-                Activity.launchMenuScreen()
-            }
+            Activity.launchMenuScreen()
         }
         Keys.onRightPressed: {
             keyNavigation = true
@@ -114,16 +111,16 @@ Item {
 
         Grid {
             id: gridId
-            columns: horizontalLayout ? 2 : 1
+            columns: quiz.horizontalLayout ? 2 : 1
             spacing: 10 * ApplicationInfo.ratio
             anchors.fill: parent
             anchors.margins: 10 * ApplicationInfo.ratio
 
             Item {
-                width: background.horizontalLayout
+                width: quiz.horizontalLayout
                        ? background.width * 0.40
                        : background.width - gridId.anchors.margins * 2
-                height: background.horizontalLayout
+                height: quiz.horizontalLayout
                         ? background.height - bar.height
                         : (background.height - bar.height) * 0.4
 
@@ -134,9 +131,9 @@ Item {
                         verticalCenter: parent.verticalCenter
                     }
                     source: "qrc:/gcompris/src/activities/lang/resource/imageid_frame.svg"
-                    sourceSize.width: background.horizontalLayout ? parent.width * 0.7 : parent.height * 1.2
+                    sourceSize.width: quiz.horizontalLayout ? parent.width * 0.7 : parent.height * 1.2
                     z: 11
-                    visible: QuizActivity.mode ==3 ? false : true
+                    visible: QuizActivity.mode !== 3
 
                     Image {
                         id: wordImage
@@ -175,8 +172,7 @@ Item {
                         MouseArea {
                             anchors.fill: parent
                             onClicked: {
-                                if(Activity.currentMiniGame != 0)
-                                    Activity.loadedItems.playWord()
+                                quiz.playWord()
                             }
                         }
                     }
@@ -186,10 +182,10 @@ Item {
 
             ListView {
                 id: wordListView
-                width: background.horizontalLayout
+                width: quiz.horizontalLayout
                        ? background.width * 0.55
                        : background.width - gridId.anchors.margins * 2
-                height: background.horizontalLayout
+                height: quiz.horizontalLayout
                         ? background.height - bar.height
                         : (background.height - bar.height) * 0.60
                 spacing: 10 * ApplicationInfo.ratio
@@ -231,29 +227,29 @@ Item {
                         id: wordImageQuiz
                         width: height
                         height: wordListView.buttonHeight
-                        source: image
+                        source: "qrc:/gcompris/data/" + image
                         z: 7
                         fillMode: Image.PreserveAspectFit
                         anchors.leftMargin: 5 * ApplicationInfo.ratio
-                        visible:  (QuizActivity.mode==1) ? true : false  // to hide images after first mini game
+                        visible:  (QuizActivity.mode == 1) ? true : false  // hide images after first mini game
                     }
 
                     AnswerButton {
                         id: wordRectangle
                         width: parent.width * 0.6
                         height: wordListView.buttonHeight
-                        textLabel: word
+                        textLabel: translatedTxt
 
                         anchors.left: wordImageQuiz.left
                         anchors.right: parent.right
 
-                        isCorrectAnswer: word === QuizActivity.quizItems.goodWord.translatedTxt
+                        isCorrectAnswer: translatedTxt === quiz.goodWord.translatedTxt
                         onIncorrectlyPressed: {
-                            QuizActivity.badWordSelected(goodWordIndex);
+                            // push the error to have it asked again
+                            QuizActivity.remainingWords.unshift(quiz.goodWord);
                             QuizActivity.nextSubLevelQuiz();
                         }
                         onCorrectlyPressed: {
-                            ++Activity.currentProgress[Activity.currentLevel]
                             QuizActivity.nextSubLevelQuiz();
                         }
                     }
@@ -261,11 +257,18 @@ Item {
             }
         }
 
+        Score {
+            id: score
+            anchors.bottom: undefined
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            anchors.right: parent.right
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.top: parent.top
+        }
 
         Bonus {
             id: bonus
-            onWin: Activity.nextMiniGame()
+            onWin: imageReview.nextMiniGame()
         }
-
     }
 }

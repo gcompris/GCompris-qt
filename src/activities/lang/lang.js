@@ -26,76 +26,49 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 
-var currentLevel = 0;
+var lessonIndex = 0;
 var currentSubLevel = 0;
-var level = null;
 var maxLevel;
 var maxSubLevel;
 var items;
 var baseUrl = "qrc:/gcompris/src/activities/lang/resource/";
-var dataset = null;
+var dataset
 var lessons
-var maxWordInLesson = 12
-var wordList
-var subLevelsLeft
-var menus = []
-var currentProgress = []
-var savedProgress = {}
-var favorites= {}
-var subWordList
-var currentSubLesson
-var maxSubLesson
-var currentLocale
-// miniGames is list of miniGames
-// first element is Activity name,
-// second element is mode of miniGame
-// third element is the qml to load
-var miniGames = [["QuizActivity", 1,"Quiz.qml"],
-                 ["QuizActivity", 2,"Quiz.qml"],
-                 ["QuizActivity", 3,"Quiz.qml"],
-                 ["SpellActivity", 1,"SpellIt.qml"]];
-var currentMiniGame
-var loadedItems
-var currentSection
-var newProgress = {}
-var newFavorites = {}
-var partitionsPassed = {}
+var maxWordInLesson = 3
 
 function init(items_) {
     items = items_
     maxLevel = 0
     maxSubLevel = 0
-    currentLevel = 0
+    lessonIndex = 0
     currentSubLevel = 0
-    currentSubLesson = 0
-    currentMiniGame = -1
 }
 
 function start() {
-    currentLevel = 0;
+    lessonIndex = 0;
     currentSubLevel = 0;
+    items.imageReview.stop()
 
-    console.log("the locale in items", GCompris.ApplicationInfo.getVoicesLocale(items.locale) +" vs " +items.locale)
-//    var locale = items.locale == "system" ? "$LOCALE" : items.locale
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
-    dataset = Lang.load(items.parser, baseUrl, "words.json", "content-"+ locale +".json")
+    dataset = Lang.load(items.parser, baseUrl, "words.json",
+                        "content-"+ locale +".json")
 
-    // If dataset is empty, we try to load from short locale and if not present again, we switch to default one
+    // If dataset is empty, we try to load from short locale
+    // and if not present again, we switch to default one
     var localeUnderscoreIndex = locale.indexOf('_')
     if(!dataset) {
         var localeShort;
-        console.log("If dataset is empty, we try to load from short locale")
         // We will first look again for locale xx (without _XX if exist)
         if(localeUnderscoreIndex > 0) {
             localeShort = locale.substring(0, localeUnderscoreIndex)
-        }
-        else {
+        } else {
             localeShort = locale;
         }
-        dataset = Lang.load(items.parser, baseUrl, "words.json", "content-"+localeShort+ ".json")
+        dataset = Lang.load(items.parser, baseUrl, "words.json",
+                            "content-"+localeShort+ ".json")
     }
 
-    //If still dataset is empty then fallback to english
+    // If still dataset is empty then fallback to english
     if(!dataset) {
         // English fallback
         items.background.englishFallback = true
@@ -104,309 +77,93 @@ function start() {
         items.background.englishFallback = false
     }
 
+    // We have to keep it because we can't access content from the model
     lessons = Lang.getAllLessons(dataset)
+    addPropertiesToLessons(lessons)
     maxLevel = lessons.length
 
-    menus = Lang.getMenuModel(dataset, items)
-    items.menuModel.clear()
-
-    for (var j =0; j<maxLevel; j++) {
-        if(!(currentProgress[j] > 0)) //useless now
-            currentProgress[j] = 0
+    items.menuModel.append(lessons)
+    if(items.dialogActivityConfig.dataToSave[items.locale]) {
+        savedPropertiesToLessons(items.dialogActivityConfig.dataToSave)
     }
-
-    //initiallizing progress and favorites
-    for(var k =0; k<maxLevel; k++) {
-        currentSection = lessons[k].name
-        if(!items.dialogActivityConfig.dataToSave["progress"])
-            savedProgress[currentSection] =  0
-        else {
-            var progressData = items.dialogActivityConfig.dataToSave["progress"][locale]
-            savedProgress[currentSection] = progressData[currentSection]
-        }
-
-        if(!items.dialogActivityConfig.dataToSave["favorites"]) {
-            if(k==0)
-                console.log("no data in favorites setting everything to false")
-            favorites[currentSection] = false
-        }
-        else {
-            if(!items.dialogActivityConfig.dataToSave["favorites"][locale])
-                favorites[currentSection] = false
-            else {
-                var favoritesData = items.dialogActivityConfig.dataToSave["favorites"][locale]
-                favorites[currentSection] = (favoritesData[currentSection] === "true" ||
-                                             favoritesData[currentSection] === true);
-            }
-        }
-
-        if(!items.dialogActivityConfig.dataToSave["partitionsPassed"])
-            partitionsPassed[currentSection] =  0
-        else {
-            if(!items.dialogActivityConfig.dataToSave["partitionsPassed"][locale])
-                partitionsPassed[currentSection] =  0
-            else {
-                var partitionsData = items.dialogActivityConfig.dataToSave["partitionsPassed"][locale]
-                partitionsPassed[currentSection] = partitionsData[currentSection]
-            }
-        }
-    }
-
-    items.menuModel.clear()
-    items.menuModel.append(menus)
     sortByFavorites();
 
-    items.imageFrame.visible = false
-    items.score.visible = false
+    items.menuScreen.start()
+}
 
-    items.menu_screen.visible = true
-    items.repeatItem.visible = false
-    items.menu_screen.focus = true
-    items.menu_screen.forceActiveFocus()
+// Insert our specific properties in the lessons
+function addPropertiesToLessons(lessons) {
+    for (var i in lessons) {
+        lessons[i]['wordCount'] = lessons[i].content.length
+        lessons[i]['image'] = lessons[i].content[0].image
+        lessons[i]['progress'] = 0
+        lessons[i]['favorite'] = false
+        lessons[i]['lessonIndex'] = i
+    }
+}
+
+// Return a new json that contains all the properties we have to save
+function lessonsToSavedProperties(dataToSave) {
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+    var props = {}
+    for(var i = 0; i < items.menuModel.count; i++) {
+        var lesson = items.menuModel.get(i)
+        props[lesson.name] = {
+            'favorite': lesson['favorite'],
+            'progress': lesson['progress']
+        }
+    }
+    dataToSave[locale] = props
+    return dataToSave
+}
+
+// Update the lessons based on a previous saving
+function savedPropertiesToLessons(dataToSave) {
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+    var props = dataToSave[GCompris.ApplicationInfo.getVoicesLocale(items.locale)]
+    for(var i = 0; i < items.menuModel.count; i++) {
+        var lesson = items.menuModel.get(i)
+        if(props[lesson.name]) {
+            lesson['favorite'] = props[lesson.name].favorite
+            lesson['progress'] = props[lesson.name].progress
+        }
+    }
 }
 
 function stop() {
 }
 
-function initLevel(currentLevel_) {
-    currentLevel = currentLevel_
-    items.bar.level = currentLevel + 1;
+function initLevel(lessonIndex_) {
+    lessonIndex = lessonIndex_
 
-    var currentLesson = lessons[currentLevel]
-    currentSection = currentLesson.name
-    wordList = Lang.getLessonWords(dataset, currentLesson);
-    maxSubLesson = Math.floor(wordList.length / maxWordInLesson)
-
-    var subLessons = []
-    for (var i = 0; i < wordList.length; i++) {
-        subLessons[i] = wordList.splice(0,maxWordInLesson)
+    var flatWordList = Lang.getLessonWords(dataset, lessons[lessonIndex]);
+    // We have to split the works in chunks of maxWordInLesson
+    items.wordList = []
+    for (var i = 0; i < flatWordList.length; i++) {
+        items.wordList[i] = Core.shuffle(flatWordList.splice(0, maxWordInLesson));
     }
+    // TODO complete the last set to have maxWordInLesson items
 
-    currentSubLesson = partitionsPassed[currentSection]
-    subWordList = subLessons[currentSubLesson]
+    maxSubLevel = items.wordList.length;
 
-    Core.shuffle(subWordList);
-
-    maxSubLevel = subWordList.length;
-    items.score.numberOfSubLevels = maxSubLevel;
-    items.score.currentSubLevel = 1;
-    items.score.visible = true
-
-    items.menu_screen.visible = false
-    items.imageFrame.visible = true
-
-    items.wordTextbg.visible = true
-    items.wordText.visible = true
-    items.categoryTextbg.visible = true
-    items.categoryText.changeCategory(currentLesson.name);
-    items.miniGameLoader.source = ""
-    items.keyboard.visibleFlag = false
-    currentMiniGame = 0
-
-    subLevelsLeft = [];
-    for(var i in subWordList) {
-        subLevelsLeft.push(i)   // This is available in all editors.
-    }
-
-    if(currentSubLesson == 0)
-        currentProgress[currentLevel] = 0
-
-    initSubLevel()
-}
-
-function initSubLevel() {
-    // initialize sublevel
-    if(items.score.currentSubLevel == 1)
-        items.previousWordButton.visible = false
-    else
-        items.previousWordButton.visible = true
-
-    items.goodWord = subWordList[items.score.currentSubLevel-1]
-    items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image)
-    items.wordText.changeText(items.goodWord.translatedTxt)
-}
-
-function nextSubLevel() {
-    ++items.score.currentSubLevel;
-    ++currentProgress[currentLevel]
-
-    if(items.score.currentSubLevel == items.score.numberOfSubLevels+1) {
-        // saving progress after completion
-        console.log("saving for ",currentSection)
-        savedProgress[currentSection] = currentProgress[currentLevel]
-        //here logic for starting next mini game
-        nextMiniGame()
-    }
-    else {
-        initSubLevel();
-    }
-}
-
-function prevSubLevel() {
-    --items.score.currentSubLevel
-    --currentProgress[currentLevel]
-    if( items.score.currentSubLevel <= 0) {
-        //Do nothing
-    }
-    else {
-        initSubLevel()
-    }
-}
-
-//called by a miniGame when it is won
-function nextMiniGame() {
-    if(currentMiniGame < miniGames.length) {
-
-        var mode = miniGames[currentMiniGame][1];
-        var itemToLoad = miniGames[currentMiniGame][2];
-
-        // reloading the subWordList
-        var currentLesson = lessons[currentLevel]
-        var wordList = Lang.getLessonWords(dataset, currentLesson);
-
-        var subLessons = []
-        for (var i = 0; i < wordList.length; i++) {
-            subLessons[i] = wordList.splice(0,maxWordInLesson)
-        }
-
-        var subWordList = subLessons[currentSubLesson]
-
-        Core.shuffle(subWordList);
-
-        maxSubLevel = subWordList.length
-
-        items.miniGameLoader.source = itemToLoad;
-        loadedItems = items.miniGameLoader.item
-
-        // resetting the subWordList length because it could have been spliced by quiz miniGame 3
-        if(currentMiniGame === 3) {
-            items.score.numberOfSubLevels = subWordList.length
-        }
-
-        // initiate the loaded item mini game
-        loadedItems.init(items, loadedItems, subWordList, mode)
-        ++currentMiniGame;
-    }
-}
-
-//function for starting next partition of 12 words
-function nextSubLesson(){
-
-    //make a change in savedProgress when progress exceedes previous one
-    if(savedProgress[currentSection] < currentProgress[currentLevel])
-        savedProgress[currentSection] = currentProgress[currentLevel]
-
-    if(currentSubLesson < maxSubLesson) {
-        ++currentSubLesson
-        partitionsPassed[currentSection] = currentSubLesson
-        console.log("inside nextSubLesson", currentSubLesson)
-        initLevel(currentLevel)
-    }
-    else {
-        if(maxLevel <= ++currentLevel ) {
-            currentLevel = 0
-        }
-        launchMenuScreen()
-    }
-}
-
-function getProgressStatus(index) {
-    return savedProgress[index]
+    items.menuScreen.stop()
+    items.imageReview.category = lessons[lessonIndex].name
+    items.imageReview.initLevel(Math.floor(items.menuModel.get(lessonIndex)['progress'] / maxWordInLesson))
 }
 
 function launchMenuScreen() {
-    if(savedProgress[currentSection] < currentProgress[currentLevel]){
-        savedProgress[currentSection] = currentProgress[currentLevel]
-    }
-
-    items.menu_screen.menuModel.clear()
-    items.menu_screen.menuModel.append(menus)
-    items.menu_screen.forceActiveFocus()
-
-    //    partitionsPassed[currentSection] = currentSubLesson
-
-    currentSubLesson = 0
-    currentMiniGame = -1
-    if(items.menu_screen.visible == false) {
-        items.menu_screen.visible = true
-        items.imageFrame.visible = false
-        items.score.visible = false
-        level = 0
-        if (loadedItems)
-            loadedItems.visible = false
-    }
-    sortByFavorites()
+    items.menuScreen.start()
+    items.imageReview.stop()
 }
 
 function sortByFavorites() {
     for(var i = 0; i < items.menuModel.count; i++) {
-        currentSection = lessons[i].name
-        if(favorites[currentSection] === true || favorites[currentSection] === "true") {
-            items.menuModel.move(i,0,1);
-        }
+        if(items.menuModel.get(i)['favorite'])
+            items.menuModel.move(i, 0, 1);
     }
 }
 
-function saveNewProgress(progress, locale) {
-    if(!progress) {
-        savedProgress = {}
-        for(var k =0; k<maxLevel; k++){
-            var sectionName = lessons[k].name
-            savedProgress[sectionName] = 0
-        }
-    }
-    else {
-        savedProgress = progress
-    }
-}
-
-function saveNewFavorites(storedFavorites, locale) {
-    if(!favorites) {
-        favorites = {}
-        for(var k =0; k<maxLevel; k++){
-            var sectionName = lessons[k].name
-            favorites[sectionName] = false
-        }
-    }
-    else {
-        favorites= storedFavorites
-    }
-}
-
-function savePartitionsPassed(partitions, locale) {
-    if(!partitions) {
-        partitionsPassed = {}
-        for(var k =0; k<maxLevel; k++){
-            var sectionName = lessons[k].name
-            partitionsPassed[sectionName] = 0
-        }
-    }
-    else {
-        partitionsPassed = partitions
-    }
-}
-
-function clearPartitionsPassed() {
-    for(var k =0; k<maxLevel; k++){
-        var sectionName = lessons[k].name
-        partitionsPassed[sectionName] = 0
-    }
-}
-
-function nextPressed() {
-    if(!items.menu_screen.visible && currentMiniGame == 0) {
-        items.background.keyNavigation = true
-        nextSubLevel()
-    }
-}
-
-//needed for win.connect, can remove when figure out how to do that
-function nextLevel() {
-    if(savedProgress[currentLevel] < currentProgress[currentLevel])
-        savedProgress[currentLevel] = currentProgress[currentLevel]
-    console.log("clicked on next and saved "+ savedProgress[currentLevel])
-
-    if(maxLevel <= ++currentLevel ) {
-        currentLevel = 0
-    }
+function markProgress() {
+    // We count progress as a number or image learnt from the lesson start
+    items.menuModel.get(lessonIndex)['progress'] += maxWordInLesson
 }

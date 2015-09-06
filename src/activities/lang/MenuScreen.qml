@@ -29,56 +29,65 @@ import "../../core"
 import "lang.js" as Activity
 
 Image {
-    id: menu_screen
+    id: menuScreen
     anchors.fill: parent
     fillMode: Image.PreserveAspectCrop
     source: Activity.baseUrl + "imageid-bg.svg"
     sourceSize.width: parent.width
+    opacity: 0
 
     property alias menuModel: menuModel
-    // Filters
-    property bool horizontal: parent.width > parent.height
-
-    property var currentActiveGrid: menuGrid
     property bool keyboardMode: false
-    property string favtUrl: "qrc:/gcompris/src/activities/menu/resource/"
+
+    Behavior on opacity { PropertyAnimation { duration: 200 } }
+
+    function start() {
+        focus = true
+        forceActiveFocus()
+        menuGrid.currentIndex = 0
+        opacity = 1
+    }
+
+    function stop() {
+        focus = false
+        opacity = 0
+    }
 
     Keys.onEscapePressed: {
-        if(Activity.currentMiniGame == -1) {
-            home()
-        }
-        else {
-            Activity.launchMenuScreen()
-        }
+        home()
     }
 
     Keys.onPressed: {
-        if( Activity.currentMiniGame === -1) {
-            items.background.keyNavigation = false
+        if(event.key === Qt.Key_Space) {
+            menuGrid.currentItem.selectCurrentItem()
             event.accepted = true
-            if(event.key === Qt.Key_Space) {
-                currentActiveGrid.currentItem.selectCurrentItem()
-            }
-            if(event.key === Qt.Key_Enter) {
-                currentActiveGrid.currentItem.selectCurrentItem()
-            }
-            if(event.key === Qt.Key_Return) {
-                currentActiveGrid.currentItem.selectCurrentItem()
-            }
-            if(event.key === Qt.Key_Left) {
-                currentActiveGrid.moveCurrentIndexLeft()
-            }
-            if(event.key === Qt.Key_Right) {
-                currentActiveGrid.moveCurrentIndexRight()
-            }
-            if(event.key === Qt.Key_Up) {
-                currentActiveGrid.moveCurrentIndexUp()
-            }
-            if(event.key === Qt.Key_Down) {
-                currentActiveGrid.moveCurrentIndexDown()
-            }
+        }
+        if(event.key === Qt.Key_Enter) {
+            menuGrid.currentItem.selectCurrentItem()
+            event.accepted = true
+        }
+        if(event.key === Qt.Key_Return) {
+            menuGrid.currentItem.selectCurrentItem()
+            event.accepted = true
+        }
+        if(event.key === Qt.Key_Left) {
+            menuGrid.moveCurrentIndexLeft()
+            event.accepted = true
+        }
+        if(event.key === Qt.Key_Right) {
+            menuGrid.moveCurrentIndexRight()
+            event.accepted = true
+        }
+        if(event.key === Qt.Key_Up) {
+            menuGrid.moveCurrentIndexUp()
+            event.accepted = true
+        }
+        if(event.key === Qt.Key_Down) {
+            menuGrid.moveCurrentIndexDown()
+            event.accepted = true
         }
     }
+
     Keys.onReleased: {
         keyboardMode = true
         event.accepted = false
@@ -88,16 +97,12 @@ Image {
     property int iconWidth: 190 * ApplicationInfo.ratio
     property int iconHeight: 190 * ApplicationInfo.ratio
 
-    property int levelCellWidth:
-        horizontal ? background.width / Math.floor(background.width / iconWidth ):
-                     background.width  / Math.floor(background.width  / iconWidth)
-    property int levelCellHeight: iconHeight * 1.5
-
+    property int levelCellWidth: background.width / Math.floor(background.width / iconWidth )
+    property int levelCellHeight: iconHeight * 1.3
 
     ListModel {
         id: menuModel
     }
-
 
     GridView {
         id: menuGrid
@@ -106,9 +111,8 @@ Image {
         anchors {
             top: parent.top
             fill: parent
-            //            margins: 4
         }
-        width: background.width
+        width: background.width / 2
         cellWidth: levelCellWidth
         cellHeight: levelCellHeight
         clip: true
@@ -121,7 +125,7 @@ Image {
             id: delegateItem
             width: levelCellWidth - menuGrid.spacing
             height: levelCellHeight - menuGrid.spacing
-            property string sectionName: Activity.lessons[index].name
+            property string sectionName: name
 
             Rectangle {
                 id: activityBackground
@@ -153,7 +157,6 @@ Image {
                     wrapMode: Text.WordWrap
                     text: name
                 }
-                //   TODO : progress bar
                 ProgressBar {
                     id: progressLang
                     anchors.top: title.bottom
@@ -162,7 +165,7 @@ Image {
                     width: activityBackground.width
                     maximumValue: wordCount
                     minimumValue: 0
-                    value: Activity.savedProgress[sectionName]
+                    value: progress
                     orientation: Qt.Horizontal
                 }
 
@@ -179,13 +182,12 @@ Image {
 
             function selectCurrentItem() {
                 particles.burst(50)
-                Activity.initLevel(index)
+                Activity.initLevel(lessonIndex)
             }
 
-            property bool favoriteIndicator: Activity.favorites[sectionName]
             Image {
-                id: favtImage
-                source: menu_screen.favtUrl +( favoriteIndicator ? "all.svg" : "all_disabled.svg");
+                source: "qrc:/gcompris/src/activities/menu/resource/" +
+                        ( favorite ? "all.svg" : "all_disabled.svg" );
                 anchors {
                     top: parent.top
                     right: parent.right
@@ -197,8 +199,7 @@ Image {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        favoriteIndicator = !favoriteIndicator
-                        Activity.favorites[sectionName] = favoriteIndicator
+                        menuModel.get(index)['favorite'] = !menuModel.get(index)['favorite']
                     }
                 }
             }
@@ -211,7 +212,7 @@ Image {
             color:  "#AA41AAC4"
             border.width: 3
             border.color: "black"
-            visible: menu_screen.keyboardMode
+            visible: menuScreen.keyboardMode
             Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
             Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
         }

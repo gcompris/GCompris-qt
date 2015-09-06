@@ -20,7 +20,8 @@
 *
 *   You should have received a copy of the GNU General Public License
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
-*/import QtQuick 2.1
+*/
+import QtQuick 2.1
 import GCompris 1.0
 import QtGraphicalEffects 1.0
 
@@ -28,9 +29,9 @@ import "../../core"
 import "lang.js" as Activity
 import "spell_it.js" as SpellActivity
 
-
 Item {
     id: spellIt
+    opacity: 0
 
     property alias background: background
     property alias wordImage: wordImage
@@ -43,26 +44,24 @@ Item {
     property alias ok: ok
     property alias okMouseArea: okMouseArea
     property alias bonus: bonus
+    property alias keyboard: keyboard
+    property alias score: score
     property variant goodWord
     property int goodWordIndex
     property int maximumLengthAnswer
 
-    function init(items_, loadedItems_, wordList_, mode_) {
-        SpellActivity.init(items_, loadedItems_, wordList_, mode_);
+    function init(loadedItems_, wordList_, mode_) {
+        opacity = 1
+        return SpellActivity.init(loadedItems_, wordList_, mode_);
     }
 
     function playWord() {
-        if(!activity.audioVoices.fileExists(ApplicationInfo.getAudioFilePath(goodWord.voice))) {
-            console.log("file does not exist so don't display the repeatItem")
-            voiceError();
-        }
-        else {
-            activity.audioVoices.clearQueue()
-            if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
-                voiceError();
-        }
+        activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice))
     }
+
     onGoodWordChanged: playWord()
+
+    Behavior on opacity { PropertyAnimation { duration: 200 } }
 
     Keys.onEscapePressed: {
         if(Activity.currentMiniGame == -1) {
@@ -148,25 +147,21 @@ Item {
 
         Image {
             id: imageFrame
+            source: "qrc:/gcompris/src/activities/lang/resource/imageid_frame.svg"
+            sourceSize.width: background.horizontalLayout ? parent.width * 0.9 : parent.height * 1.2
             width:  background.width * 0.55
-            height: background.horizontalLayout
-                    ? (background.height - Activity.items.bar.height - Activity.items.keyboard.height)* 0.7
-                    : (background.height - Activity.items.bar.height) * 0.4
+            height: (background.height - hintTextbg.height - answerbg.height - bar.height) * 0.8
 
             anchors {
                 horizontalCenter: background.horizontalCenter
                 top: background.top
-                topMargin: (background.height - Activity.items.bar.height - Activity.items.keyboard.height) * 0.15
+                topMargin: (background.height) * 0.15
             }
-            source: "qrc:/gcompris/src/activities/lang/resource/imageid_frame.svg"
-            sourceSize.width: background.horizontalLayout ? parent.width * 0.9 : parent.height * 1.2
             z: 11
 
             Image {
                 id: wordImage
                 sourceSize.width: parent.width * 0.6
-                width: parent.width * 0.6
-                height: parent.height * 0.6
 
                 anchors {
                     centerIn: parent
@@ -202,8 +197,7 @@ Item {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        if(Activity.currentMiniGame != 0)
-                            Activity.loadedItems.playWord()
+                        spellIt.playWord()
                     }
                 }
             }
@@ -235,7 +229,10 @@ Item {
                 visible: true
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
-                font.pointSize: hintText.fontSize
+                font.pointSize: hintText.pointSize
+                font.weight: Font.DemiBold
+                font.family: GCSingletonFontLoader.fontLoader.name
+                font.capitalization: ApplicationSettings.fontCapitalization
                 maximumLength: maximumLengthAnswer
                 onAccepted: {
                     answer.forceActiveFocus()
@@ -247,8 +244,7 @@ Item {
         Image {
             id: ok
             source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
-            width: answerbg.width * 1.2
-            height: answerbg.height
+            sourceSize.width: 70 * ApplicationInfo.ratio
             fillMode: Image.PreserveAspectFit
             anchors {
                 top: imageFrame.bottom
@@ -263,9 +259,7 @@ Item {
                 hoverEnabled: true
                 onEntered: ok.scale = 1.1
                 onClicked: {
-                    var check = SpellActivity.checkAnswer(answer.text)
-                    if (check)
-                        ++Activity.currentProgress[Activity.currentLevel]
+                    SpellActivity.checkAnswer(answer.text)
                 }
                 onExited: ok.scale = 1
             }
@@ -273,8 +267,31 @@ Item {
 
         Bonus {
             id: bonus
-            onWin: Activity.nextSubLesson()
+            onWin: imageReview.nextMiniGame()
         }
 
     }
+
+    Score {
+        id: score
+        anchors.bottom: undefined
+        anchors.bottomMargin: 10 * ApplicationInfo.ratio
+        anchors.right: parent.right
+        anchors.rightMargin: 10 * ApplicationInfo.ratio
+        anchors.top: parent.top
+    }
+
+    VirtualKeyboard {
+        id: keyboard
+        anchors.bottom: parent.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: parent.width
+        visible: ApplicationSettings.isVirtualKeyboard && keyboard.visibleFlag
+                 && !menuScreen.visible
+        property bool visibleFlag: false
+
+        onKeypress: SpellActivity.processKeyPress(text)
+        onError: console.log("VirtualKeyboard error: " + msg);
+    }
+
 }
