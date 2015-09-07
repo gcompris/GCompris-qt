@@ -28,8 +28,6 @@
 
 var lessonIndex = 0;
 var currentSubLevel = 0;
-var maxLevel;
-var maxSubLevel;
 var items;
 var baseUrl = "qrc:/gcompris/src/activities/lang/resource/";
 var dataset
@@ -38,8 +36,6 @@ var maxWordInLesson = 3
 
 function init(items_) {
     items = items_
-    maxLevel = 0
-    maxSubLevel = 0
     lessonIndex = 0
     currentSubLevel = 0
 }
@@ -80,7 +76,6 @@ function start() {
     // We have to keep it because we can't access content from the model
     lessons = Lang.getAllLessons(dataset)
     addPropertiesToLessons(lessons)
-    maxLevel = lessons.length
 
     items.menuModel.append(lessons)
     if(items.dialogActivityConfig.dataToSave[items.locale]) {
@@ -142,9 +137,14 @@ function initLevel(lessonIndex_) {
     for (var i = 0; i < flatWordList.length; i++) {
         items.wordList[i] = Core.shuffle(flatWordList.splice(0, maxWordInLesson));
     }
-    // TODO complete the last set to have maxWordInLesson items
-
-    maxSubLevel = items.wordList.length;
+    // If needed complete the last set to have maxWordInLesson items in it
+    var lastIndex = items.wordList.length - 1
+    if(items.wordList[lastIndex].length != maxWordInLesson) {
+        var flatWordList = Lang.getLessonWords(dataset, lessons[lessonIndex]);
+        var lastLength = items.wordList[lastIndex].length
+        items.wordList[lastIndex] =
+                items.wordList[lastIndex].concat(flatWordList.splice(0, maxWordInLesson - lastLength))
+    }
 
     items.menuScreen.stop()
     items.imageReview.category = lessons[lessonIndex].name
@@ -152,8 +152,8 @@ function initLevel(lessonIndex_) {
 }
 
 function launchMenuScreen() {
-    items.menuScreen.start()
     items.imageReview.stop()
+    items.menuScreen.start()
 }
 
 function sortByFavorites() {
