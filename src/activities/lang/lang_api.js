@@ -98,15 +98,10 @@ function getLessonWords(dataset, lesson) {
     var allWords = []
     for (var k in wordList) {
         var word = wordList[k]
-        word['translatedTxt'] = getTextByAudio(dataset.contentText,
-                                               word.description)
+        word['translatedTxt'] = dataset.contentText[
+                    word.voice.substr(word.voice.lastIndexOf("/")+1).replace("$CA", "ogg")];
         if(word['translatedTxt'])
             allWords.push(word)
     }
     return allWords
-}
-
-function getTextByAudio(contentText, audio) {
-    audio += ".ogg"
-    return contentText[audio]
 }
