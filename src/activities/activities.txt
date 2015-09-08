@@ -48,7 +48,6 @@ guessnumber
 hanoi
 hanoi_real
 hexagon
-imageid
 imagename
 instruments
 intro_gravity
