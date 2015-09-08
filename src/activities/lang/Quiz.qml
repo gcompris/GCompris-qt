@@ -50,11 +50,7 @@ Item {
         return QuizActivity.init(loadedItems_, wordList_, mode_)
     }
 
-    function playWord() {
-        activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice))
-    }
-
-    onGoodWordChanged: playWord()
+    onGoodWordChanged: Activity.playWord(goodWord.voice)
 
     Behavior on opacity { PropertyAnimation { duration: 200 } }
 
@@ -171,9 +167,7 @@ Item {
                         }
                         MouseArea {
                             anchors.fill: parent
-                            onClicked: {
-                                quiz.playWord()
-                            }
+                            onClicked: Activity.playWord(goodWord.voice)
                         }
                     }
                 }

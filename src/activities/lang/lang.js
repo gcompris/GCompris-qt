@@ -46,6 +46,12 @@ function start() {
     items.imageReview.stop()
 
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+
+    // register the voices for the locale
+    console.log("lang start updateReource", locale)
+    GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
+    console.log("lang start updateReource done")
+
     dataset = Lang.load(items.parser, baseUrl, "words.json",
                         "content-"+ locale +".json")
 
@@ -177,4 +183,11 @@ function sortByFavorites() {
 function markProgress() {
     // We count progress as a number or image learnt from the lesson start
     items.menuModel.get(lessonIndex)['progress'] += maxWordInLesson
+}
+
+function playWord(word) {
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+    console.log('locale', locale, 'word', word)
+    return items.audioVoices.append(
+                GCompris.ApplicationInfo.getAudioFilePathForLocale(word, locale))
 }

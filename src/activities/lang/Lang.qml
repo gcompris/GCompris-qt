@@ -60,6 +60,7 @@ ActivityBase {
         QtObject {
             id: items
             property Item main: activity.main
+            property GCAudio audioVoices: activity.audioVoices
             property alias background: background
             property alias bar: bar
             property alias imageReview: imageReview

@@ -55,11 +55,7 @@ Item {
         return SpellActivity.init(loadedItems_, wordList_, mode_);
     }
 
-    function playWord() {
-        activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice))
-    }
-
-    onGoodWordChanged: playWord()
+    onGoodWordChanged: Activity.playWord(goodWord.voice)
 
     Behavior on opacity { PropertyAnimation { duration: 200 } }
 
@@ -197,7 +193,7 @@ Item {
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        spellIt.playWord()
+                        Activity.playWord(goodWord.voice)
                     }
                 }
             }

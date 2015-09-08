@@ -77,7 +77,7 @@ Item {
 
     onWordChanged: {
         if(word) {
-            if (activity.audioVoices.append(ApplicationInfo.getAudioFilePath(word.voice))) {
+            if (Activity.playWord(word.voice)) {
                 word['hasVoice'] = true
                 repeatItem.visible = true
             } else {
@@ -337,9 +337,7 @@ Item {
             left: parent.left
             margins: 10 * ApplicationInfo.ratio
         }
-        onClicked: {
-            activity.audioVoices.append(ApplicationInfo.getAudioFilePath(word.voice))
-        }
+        onClicked: Activity.playWord(imageReview.word.voice)
         Behavior on opacity { PropertyAnimation { duration: 200 } }
     }
 
