@@ -110,10 +110,9 @@ Image {
         layer.enabled: true
 
         anchors {
-            top: parent.top
             fill: parent
+            bottomMargin: bar.height
         }
-        width: background.width / 2
         cellWidth: levelCellWidth
         cellHeight: levelCellHeight
         clip: true
@@ -219,24 +218,24 @@ Image {
             Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
         }
 
-    } // grid view close
-
-    Rectangle{
-        id: menusMask
-        visible: false
-        anchors.fill: menuGrid
-        gradient: Gradient {
-            GradientStop { position: 0.0; color: "#FFFFFFFF" }
-            GradientStop { position: 0.92; color: "#FFFFFFFF" }
-            GradientStop { position: 0.96; color: "#00FFFFFF"}
+        Rectangle{
+            id: menusMask
+            visible: false
+            anchors.fill: menuGrid
+            gradient: Gradient {
+                GradientStop { position: 0.0; color: "#FFFFFFFF" }
+                GradientStop { position: 0.92; color: "#FFFFFFFF" }
+                GradientStop { position: 0.96; color: "#00FFFFFF"}
+            }
         }
-    }
 
-    layer.effect: OpacityMask {
-        id: activitiesOpacity
-        source: menuGrid
-        maskSource: menusMask
-        anchors.fill: menuGrid
-    }
+        layer.effect: OpacityMask {
+            id: activitiesOpacity
+            source: menuGrid
+            maskSource: menusMask
+            anchors.fill: menuGrid
+        }
+
+    } // grid view close
 
 }
