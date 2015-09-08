@@ -32,7 +32,7 @@ var items;
 var baseUrl = "qrc:/gcompris/src/activities/lang/resource/";
 var dataset
 var lessons
-var maxWordInLesson = 3
+var maxWordInLesson = 12
 
 function init(items_) {
     items = items_

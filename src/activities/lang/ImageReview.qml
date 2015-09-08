@@ -42,8 +42,8 @@ Item {
     // third element is the qml to load
     property var miniGames: [
         ["QuizActivity", 1, "Quiz.qml"],
-//        ["QuizActivity", 2, "Quiz.qml"],
-//        ["QuizActivity", 3, "Quiz.qml"],
+        ["QuizActivity", 2, "Quiz.qml"],
+        ["QuizActivity", 3, "Quiz.qml"],
         ["SpellActivity", 1, "SpellIt.qml"]
     ]
     property var currentMiniGame
