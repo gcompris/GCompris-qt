@@ -75,7 +75,7 @@ ActivityBase {
         function handleResourceRegistered(resource)
         {
             if (resource == wordsResource)
-                Activity.start(items);
+                Activity.start();
         }
 
         onStart: {
@@ -88,7 +88,7 @@ ActivityBase {
             // check for words.rcc:
             if (DownloadManager.isDataRegistered("words")) {
                 // words.rcc is already registered -> start right away
-                Activity.start(items);
+                Activity.start();
             } else if(DownloadManager.haveLocalResource(wordsResource)) {
                 // words.rcc is there, but not yet registered -> updateResource
                 DownloadManager.resourceRegistered.connect(handleResourceRegistered);
@@ -208,7 +208,7 @@ ActivityBase {
                                 id: localeBox
                                 model: langs.languages
                                 background: dialogActivityConfig
-                                width: 250 * ApplicationInfo.ratio
+                                width: dialogActivityConfig.width
                                 label: qsTr("Select your locale")
                             }
                         }
@@ -225,25 +225,28 @@ ActivityBase {
                 }
             }
             onSaveData: {
-                var oldLocale = ApplicationInfo.getVoicesLocale(items.locale)
-                var newLocale = oldLocale;
-                if(dialogActivityConfig.loader.item) {
-                    newLocale = configItem.availableLangs[loader.item.localeBox.currentIndex].locale;
-                    // Remove .UTF-8
-                    if(newLocale.indexOf('.') != -1) {
-                        newLocale = newLocale.substring(0, newLocale.indexOf('.'))
-                    }
-                    newLocale = ApplicationInfo.getVoicesLocale(newLocale)
-                }
-                dataToSave = Activity.lessonsToSavedProperties(dataToSave)
-                dataToSave['locale'] = oldLocale
+                // Save the lessons status on the current locale
+                var oldLocale = items.locale
+                dataToSave[ApplicationInfo.getVoicesLocale(items.locale)] =
+                        Activity.lessonsToSavedProperties(dataToSave)
 
+                if(!dialogActivityConfig.loader.item)
+                    return
+
+                var newLocale =
+                        dialogActivityConfig.configItem.availableLangs[
+                            dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
+                // Remove .UTF-8
+                if(newLocale.indexOf('.') != -1) {
+                    newLocale = newLocale.substring(0, newLocale.indexOf('.'))
+                }
+                dataToSave['locale'] = newLocale
                 items.locale = newLocale;
 
                 // Restart the activity with new information
                 if(oldLocale !== newLocale) {
-                    background.stop();
-                    background.start();
+                    Activity.stop()
+                    Activity.start();
                 }
             }
 

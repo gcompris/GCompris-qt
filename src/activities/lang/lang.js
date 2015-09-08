@@ -77,10 +77,9 @@ function start() {
     lessons = Lang.getAllLessons(dataset)
     addPropertiesToLessons(lessons)
 
+    items.menuModel.clear()
     items.menuModel.append(lessons)
-    if(items.dialogActivityConfig.dataToSave[items.locale]) {
-        savedPropertiesToLessons(items.dialogActivityConfig.dataToSave)
-    }
+    savedPropertiesToLessons(items.dialogActivityConfig.dataToSave)
     sortByFavorites();
 
     items.menuScreen.start()
@@ -101,7 +100,7 @@ function addPropertiesToLessons(lessons) {
 }
 
 // Return a new json that contains all the properties we have to save
-function lessonsToSavedProperties(dataToSave) {
+function lessonsToSavedProperties() {
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
     var props = {}
     for(var i = 0; i < items.menuModel.count; i++) {
@@ -111,19 +110,21 @@ function lessonsToSavedProperties(dataToSave) {
             'progress': lesson['progress']
         }
     }
-    dataToSave[locale] = props
-    return dataToSave
+    return props
 }
 
 // Update the lessons based on a previous saving
 function savedPropertiesToLessons(dataToSave) {
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
-    var props = dataToSave[GCompris.ApplicationInfo.getVoicesLocale(items.locale)]
+    var props = dataToSave[locale]
     for(var i = 0; i < items.menuModel.count; i++) {
         var lesson = items.menuModel.get(i)
-        if(props[lesson.name]) {
+        if(props && props[lesson.name]) {
             lesson['favorite'] = props[lesson.name].favorite
             lesson['progress'] = props[lesson.name].progress
+        } else {
+            lesson['favorite'] = false
+            lesson['progress'] = 0
         }
     }
 }
