@@ -89,7 +89,10 @@ function start() {
 // Insert our specific properties in the lessons
 function addPropertiesToLessons(lessons) {
     for (var i in lessons) {
-        lessons[i]['wordCount'] = lessons[i].content.length
+        // Ceil the wordCount to a maxWordInLesson count
+        lessons[i]['wordCount'] =
+                Math.ceil(Lang.getLessonWords(dataset, lessons[i]).length / maxWordInLesson)
+                * maxWordInLesson
         lessons[i]['image'] = lessons[i].content[0].image
         lessons[i]['progress'] = 0
         lessons[i]['favorite'] = false
@@ -134,21 +137,28 @@ function initLevel(lessonIndex_) {
     var flatWordList = Lang.getLessonWords(dataset, lessons[lessonIndex]);
     // We have to split the works in chunks of maxWordInLesson
     items.wordList = []
-    for (var i = 0; i < flatWordList.length; i++) {
-        items.wordList[i] = Core.shuffle(flatWordList.splice(0, maxWordInLesson));
+    var i = 0
+    while(flatWordList.length > 0) {
+        items.wordList[i++] = Core.shuffle(flatWordList.splice(0, maxWordInLesson));
     }
     // If needed complete the last set to have maxWordInLesson items in it
-    var lastIndex = items.wordList.length - 1
-    if(items.wordList[lastIndex].length != maxWordInLesson) {
+    // We pick extra items from the head of the list
+    if(items.wordList[i-1].length != maxWordInLesson) {
         var flatWordList = Lang.getLessonWords(dataset, lessons[lessonIndex]);
-        var lastLength = items.wordList[lastIndex].length
-        items.wordList[lastIndex] =
-                items.wordList[lastIndex].concat(flatWordList.splice(0, maxWordInLesson - lastLength))
+        var lastLength = items.wordList[i-1].length
+        items.wordList[i-1] =
+                items.wordList[i-1].concat(flatWordList.splice(0, maxWordInLesson - lastLength))
     }
 
-    items.menuScreen.stop()
     items.imageReview.category = lessons[lessonIndex].name
-    items.imageReview.initLevel(Math.floor(items.menuModel.get(lessonIndex)['progress'] / maxWordInLesson))
+    // Calc the sublevel to start with
+    var subLevel = Math.floor(items.menuModel.get(lessonIndex)['progress'] / maxWordInLesson)
+    if(subLevel >= items.wordList.length)
+        // Level done, start again at level 0
+        subLevel = 0
+
+    items.menuScreen.stop()
+    items.imageReview.initLevel(subLevel)
 }
 
 function launchMenuScreen() {
