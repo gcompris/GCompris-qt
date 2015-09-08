@@ -64,7 +64,7 @@ Item {
         property bool keyNavigation: false
 
         Keys.onEscapePressed: {
-            Activity.launchMenuScreen()
+            imageReview.start()
         }
         Keys.onRightPressed: {
             keyNavigation = true

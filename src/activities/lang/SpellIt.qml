@@ -60,12 +60,7 @@ Item {
     Behavior on opacity { PropertyAnimation { duration: 200 } }
 
     Keys.onEscapePressed: {
-        if(Activity.currentMiniGame == -1) {
-            home()
-        }
-        else {
-            Activity.launchMenuScreen()
-        }
+        imageReview.start()
     }
 
     Image {
