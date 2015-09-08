@@ -131,7 +131,7 @@ ActivityBase {
         Bar {
             id: bar
             content: BarEnumContent { value:
-                    menuScreen.visible ? help | home |config
+                    menuScreen.started ? help | home | config
                                        : help | home }
             onHelpClicked: {
                 displayDialog(dialogHelp)
