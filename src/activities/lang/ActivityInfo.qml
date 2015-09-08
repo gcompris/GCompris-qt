@@ -25,7 +25,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "lang/Lang.qml"
-  difficulty: 1
+  difficulty: 4
   icon: "lang/lang.svg"
   author: "siddhesh suthar &lt;siddhesh.it@gmail.com&gt;"
   demo: true
