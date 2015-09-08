@@ -268,6 +268,21 @@ Item {
 
     }
 
+    BarButton {
+        id: repeatItem
+        source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
+        sourceSize.width: 80 * ApplicationInfo.ratio
+
+        z: 12
+        anchors {
+            top: parent.top
+            left: parent.left
+            margins: 10 * ApplicationInfo.ratio
+        }
+        onClicked: Activity.playWord(goodWord.voice)
+        Behavior on opacity { PropertyAnimation { duration: 200 } }
+    }
+
     Score {
         id: score
         anchors.bottom: undefined
