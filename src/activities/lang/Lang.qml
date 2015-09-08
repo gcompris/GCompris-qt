@@ -91,8 +91,12 @@ ActivityBase {
                 // words.rcc is already registered -> start right away
                 Activity.start();
             } else if(DownloadManager.haveLocalResource(wordsResource)) {
-                // words.rcc is there, but not yet registered -> updateResource
-                DownloadManager.resourceRegistered.connect(handleResourceRegistered);
+                // words.rcc is there -> register old file first
+                if (DownloadManager.registerResource(wordsResource))
+                    Activity.start(items);
+                else // could not register the old data -> react to a possible update
+                    DownloadManager.resourceRegistered.connect(handleResourceRegistered);
+                // then try to update in the background
                 DownloadManager.updateResource(wordsResource);
             } else {
                 // words.rcc has not been downloaded yet -> ask for download
