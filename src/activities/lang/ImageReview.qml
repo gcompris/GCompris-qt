@@ -35,7 +35,7 @@ Item {
 
     property alias category: categoryText.text
     property int wordListIndex // This is the current sub list of words
-    property var word: visible ? items.wordList[wordListIndex][score.currentSubLevel - 1] : undefined
+    property var word: rootItem.opacity == 1 ? items.wordList[wordListIndex][score.currentSubLevel - 1] : undefined
     // miniGames is list of miniGames
     // first element is Activity name,
     // second element is mode of miniGame
@@ -216,6 +216,7 @@ Item {
             }
             MouseArea {
                 anchors.fill: parent
+                enabled: rootItem.opacity == 1
                 onClicked: {
                     activity.audioVoices.append(ApplicationInfo.getAudioFilePath(word.voice))
                 }
@@ -396,7 +397,7 @@ Item {
             startMiniGame(++currentMiniGame)
         } else {
             Activity.markProgress()
-            if(wordListIndex < items.wordList.length) {
+            if(wordListIndex < items.wordList.length - 1) {
                 initLevel(wordListIndex + 1)
             } else {
                 Activity.launchMenuScreen()

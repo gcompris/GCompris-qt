@@ -177,6 +177,7 @@ Image {
             }
             MouseArea {
                 anchors.fill: activityBackground
+                enabled: menuScreen.opacity == 1
                 onClicked: selectCurrentItem()
             }
 
