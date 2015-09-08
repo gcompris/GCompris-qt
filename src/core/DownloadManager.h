@@ -180,7 +180,7 @@ private:
      * the passed DownloadJob */
     bool checksumMatches(DownloadJob *job, const QString& filename) const;
 
-    bool registerResource(const QString& filename);
+    bool registerResourceAbsolute(const QString& filename);
 
     /** Unregisters the passed resource
      *
@@ -265,6 +265,13 @@ public:
      * @sa isDataRegistered
      */
     Q_INVOKABLE bool areVoicesRegistered() const;
+
+    /*
+     * Registers a rcc resource file given by a relative resource path
+     *
+     * @param filename  Relative resource path.
+     */
+    Q_INVOKABLE bool registerResource(const QString& filename);
 
 public slots:
 

@@ -155,7 +155,7 @@ bool DownloadManager::updateResource(const QString& path)
         QString absPath = getAbsoluteResourcePath(path);
         // automatic download prohibited -> register if available
         if (!absPath.isEmpty())
-            return registerResource(absPath);
+            return registerResourceAbsolute(absPath);
         else {
             qDebug() << "No such local resource and download prohibited:"
                 << path;
@@ -449,7 +449,10 @@ inline bool DownloadManager::isRegistered(const QString& filename) const
     return (registeredResources.indexOf(filename) != -1);
 }
 
-bool DownloadManager::registerResource(const QString& filename)
+/*
+ * Registers an rcc file given by absolute path
+ */
+bool DownloadManager::registerResourceAbsolute(const QString& filename)
 {
     QMutexLocker locker(&rcMutex);
     if (isRegistered(filename))
@@ -472,8 +475,16 @@ bool DownloadManager::registerResource(const QString& filename)
                     ApplicationSettings::getInstance()->locale());
         if (v == getRelativeResourcePath(filename))
             emit voicesRegistered();
-        return false;
+        return true;
     }
+}
+
+/*
+ * Registers an rcc file given by a relative resource path
+ */
+bool DownloadManager::registerResource(const QString& filename)
+{
+    return registerResourceAbsolute(getAbsoluteResourcePath(filename));
 }
 
 bool DownloadManager::isDataRegistered(const QString& data) const
@@ -535,9 +546,9 @@ void DownloadManager::downloadFinished()
                 << ":" << reply->error() << ":" << reply->errorString();
             // note: errorHandler() emit's error!
             code = Error;
-            // register already existing files:
-            if (QFile::exists(targetFilename))
-                registerResource(targetFilename);
+            // register already existing files (if not yet done):
+            if (QFile::exists(targetFilename) && !isRegistered(targetFilename))
+                registerResourceAbsolute(targetFilename);
         } else {
             qDebug() << "Download of RCC file finished successfully: " << job->url;
             if (!checksumMatches(job, targetFilename)) {
@@ -548,7 +559,7 @@ void DownloadManager::downloadFinished()
                             .arg(targetFilename));
                 code = Error;
             } else
-                registerResource(targetFilename);
+                registerResourceAbsolute(targetFilename);
         }
     }
 
@@ -565,7 +576,8 @@ void DownloadManager::downloadFinished()
                 // file is up2date, register! necessary:
                 qDebug() << "Local resource is up-to-date:"
                         << QFileInfo(filename).fileName();
-                registerResource(filename);
+                if (!isRegistered(filename))  // no update and already registered -> noop
+                    registerResourceAbsolute(filename);
                 code = NoChange;
                 break;
             }
@@ -598,7 +610,7 @@ void DownloadManager::downloadFinished()
             foreach (const QString &base, getSystemResourcePaths()) {
                 QString filename = base + '/' + relPath;
                 if (QFile::exists(filename))
-                    registerResource(filename);
+                    registerResourceAbsolute(filename);
                 }
         }
     }
