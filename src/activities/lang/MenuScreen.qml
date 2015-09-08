@@ -184,7 +184,7 @@ Image {
 
             function selectCurrentItem() {
                 particles.burst(50)
-                Activity.initLevel(lessonIndex)
+                Activity.initLevel(index)
             }
 
             Image {

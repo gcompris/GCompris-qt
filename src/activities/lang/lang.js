@@ -26,7 +26,7 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 
-var lessonIndex = 0;
+var lessonModelIndex = 0;
 var currentSubLevel = 0;
 var items;
 var baseUrl = "qrc:/gcompris/src/activities/lang/resource/";
@@ -36,12 +36,12 @@ var maxWordInLesson = 3
 
 function init(items_) {
     items = items_
-    lessonIndex = 0
+    lessonModelIndex = 0
     currentSubLevel = 0
 }
 
 function start() {
-    lessonIndex = 0;
+    lessonModelIndex = 0;
     currentSubLevel = 0;
     items.imageReview.stop()
 
@@ -101,6 +101,7 @@ function addPropertiesToLessons(lessons) {
         lessons[i]['image'] = lessons[i].content[0].image
         lessons[i]['progress'] = 0
         lessons[i]['favorite'] = false
+        // We need to keep a back reference from the model to the lessons array
         lessons[i]['lessonIndex'] = i
     }
 }
@@ -138,8 +139,9 @@ function savedPropertiesToLessons(dataToSave) {
 function stop() {
 }
 
-function initLevel(lessonIndex_) {
-    lessonIndex = lessonIndex_
+function initLevel(lessonModelIndex_) {
+    lessonModelIndex = lessonModelIndex_
+    var lessonIndex = items.menuModel.get(lessonModelIndex).lessonIndex
 
     var flatWordList = Lang.getLessonWords(dataset, lessons[lessonIndex]);
     // We have to split the works in chunks of maxWordInLesson
@@ -159,7 +161,7 @@ function initLevel(lessonIndex_) {
 
     items.imageReview.category = lessons[lessonIndex].name
     // Calc the sublevel to start with
-    var subLevel = Math.floor(items.menuModel.get(lessonIndex)['progress'] / maxWordInLesson)
+    var subLevel = Math.floor(items.menuModel.get(lessonModelIndex)['progress'] / maxWordInLesson)
     if(subLevel >= items.wordList.length)
         // Level done, start again at level 0
         subLevel = 0
@@ -181,8 +183,8 @@ function sortByFavorites() {
 }
 
 function markProgress() {
-    // We count progress as a number or image learnt from the lesson start
-    items.menuModel.get(lessonIndex)['progress'] += maxWordInLesson
+    // We count progress as a number of image learnt from the lesson start
+    items.menuModel.get(lessonModelIndex)['progress'] += maxWordInLesson
 }
 
 function playWord(word) {
