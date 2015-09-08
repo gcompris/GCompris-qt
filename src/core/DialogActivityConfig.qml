@@ -43,6 +43,7 @@ import GCompris 1.0
  */
 Rectangle {
     id: dialogActivityContent
+    visible: false
 
     /* Public interface: */
 
@@ -138,6 +139,11 @@ Rectangle {
         }
         dataToSave = ApplicationSettings.loadActivityConfiguration(activityName)
         loadData()
+    }
+
+    function saveDatainConfiguration() {
+        saveData()
+        ApplicationSettings.saveActivityConfiguration(activityName, dataToSave)
     }
 
     Row {

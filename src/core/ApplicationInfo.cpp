@@ -125,7 +125,12 @@ QString ApplicationInfo::getFilePath(const QString &file)
 QString ApplicationInfo::getAudioFilePath(const QString &file)
 {
     QString localeName = getVoicesLocale(ApplicationSettings::getInstance()->locale());
+    return getAudioFilePathForLocale(file, localeName);
+}
 
+QString ApplicationInfo::getAudioFilePathForLocale(const QString &file,
+                                                   const QString &localeName)
+{
     QString filename = file;
     filename.replace("$LOCALE", localeName);
     filename.replace("$CA", COMPRESSED_AUDIO);

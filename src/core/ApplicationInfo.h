@@ -246,19 +246,35 @@ protected slots:
 	 */
 	QString getResourceDataPath();
 
-	/**
+    /**
      * Returns an absolute path to a language specific sound/voices file. If
      * the file is already absolute only the token replacement is applied.
-	 *
-	 * @param file A templated relative path to a language specific file. Any
-	 *             occurrence of the '$LOCALE' placeholder will be replaced by
-	 *             the currently active locale string.
+     *
+     * @param file A templated relative path to a language specific file. Any
+     *             occurrence of the '$LOCALE' placeholder will be replaced by
+     *             the currently active locale string.
      *             Any occurrence of '$CA' placeholder will be replaced by
      *             the current compressed audio format ('ogg' or 'aac).
      *             Example: 'voices-$CA/$LOCALE/misc/click_on_letter.$CA'
-	 * @returns An absolute path to the corresponding resource file.
-	 */
+     * @returns An absolute path to the corresponding resource file.
+     */
     Q_INVOKABLE QString getAudioFilePath(const QString &file);
+
+    /**
+     * Returns an absolute path to a language specific sound/voices file. If
+     * the file is already absolute only the token replacement is applied.
+     *
+     * @param file A templated relative path to a language specific file. Any
+     *             occurrence of the '$LOCALE' placeholder will be replaced by
+     *             the currently active locale string.
+     *             Any occurrence of '$CA' placeholder will be replaced by
+     *             the current compressed audio format ('ogg' or 'aac).
+     *             Example: 'voices-$CA/$LOCALE/misc/click_on_letter.$CA'
+     * @param locale the locale for which to get this audio file
+     * @returns An absolute path to the corresponding resource file.
+     */
+    Q_INVOKABLE QString getAudioFilePathForLocale(const QString &file,
+                                                  const QString &localeName);
 
     /**
      * Returns an absolute path to a language specific resource file.

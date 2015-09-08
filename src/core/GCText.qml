@@ -118,6 +118,12 @@ Text {
      */
     property int fontSize: 14
 
+    /**
+     * type:int
+     * Read only value of the calculated pointSize
+     */
+    readonly property int pointSize: font.pointSize
+
     font.pointSize: ((fixFontSize ? 0 : ApplicationSettings.baseFontSize)
                       + fontSize) * ApplicationInfo.fontRatio
     font.family: GCSingletonFontLoader.fontLoader.name
