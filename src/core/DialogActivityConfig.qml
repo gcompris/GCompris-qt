@@ -43,6 +43,7 @@ import GCompris 1.0
  */
 Rectangle {
     id: dialogActivityContent
+    visible: false
 
     /* Public interface: */
 
