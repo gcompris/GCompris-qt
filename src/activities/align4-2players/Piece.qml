@@ -26,6 +26,7 @@ import GCompris 1.0
 
 Image {
     id: piece
+    fillMode: Image.PreserveAspectFit
 
     opacity: 1.0
 

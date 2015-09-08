@@ -119,8 +119,7 @@ ActivityBase {
             Piece {
                 id: fallingPiece
                 state: items.gameDone ? "invisible" : items.counter % 2 ? "2": "1"
-                width: items.cellSize
-                height: items.cellSize
+                sourceSize.width: items.cellSize
 
                 Behavior on x { PropertyAnimation { duration: 200 } }
             }
