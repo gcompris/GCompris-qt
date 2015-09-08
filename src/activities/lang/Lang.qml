@@ -132,7 +132,11 @@ ActivityBase {
                 displayDialog(dialogHelp)
             }
             onHomeClicked: {
-                if(items.menuScreen.visible == false)
+                if(!items.menuScreen.started && !items.imageReview.started)
+                    // We're in a mini game, start imageReview
+                    items.imageReview.start()
+                else if(items.imageReview.started)
+                    // Leave imageReview
                     Activity.launchMenuScreen()
                 else
                     home()

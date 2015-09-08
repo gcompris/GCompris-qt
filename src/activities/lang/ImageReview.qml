@@ -48,6 +48,12 @@ Item {
     ]
     property var currentMiniGame
     property var loadedItems
+    property bool started: rootItem.opacity == 1
+
+    // Start at last wordListIndex
+    function start() {
+        initLevel(wordListIndex)
+    }
 
     // Start the image review at wordList sublesson
     function initLevel(wordListIndex_) {
@@ -64,6 +70,9 @@ Item {
     function stop() {
         focus = false
         rootItem.opacity = 0
+        wordImage.changeSource('')
+        wordText.changeText('')
+        repeatItem.visible = false
     }
 
     onWordChanged: {

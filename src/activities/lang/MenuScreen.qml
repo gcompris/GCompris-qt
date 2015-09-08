@@ -38,6 +38,7 @@ Image {
 
     property alias menuModel: menuModel
     property bool keyboardMode: false
+    property bool started: opacity == 1
 
     Behavior on opacity { PropertyAnimation { duration: 200 } }
 
