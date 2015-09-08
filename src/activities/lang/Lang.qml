@@ -130,6 +130,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            anchors.bottom: keyboardArea.top
             content: BarEnumContent { value:
                     menuScreen.started ? help | home | config
                                        : help | home }
@@ -151,6 +152,13 @@ ActivityBase {
                 dialogActivityConfig.setDefaultValues()
                 displayDialog(dialogActivityConfig)
             }
+        }
+
+        // This is a stop to hold the virtual keyboard from a mini game
+        Row {
+            id: keyboardArea
+            anchors.bottom: parent.bottom
+            width: parent.width
         }
 
         Loader {

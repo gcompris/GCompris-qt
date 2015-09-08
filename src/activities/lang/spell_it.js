@@ -80,7 +80,6 @@ function initLevel() {
     }
     layout[row-1].push({ label: spellItems.keyboard.backspace });
     spellItems.keyboard.layout = layout;
-    spellItems.keyboard.visibleFlag = true;
 
     initSubLevel()
 }

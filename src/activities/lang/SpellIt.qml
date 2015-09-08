@@ -146,7 +146,8 @@ Item {
             source: "qrc:/gcompris/src/activities/lang/resource/imageid_frame.svg"
             sourceSize.width: background.horizontalLayout ? parent.width * 0.9 : parent.height * 1.2
             width:  background.width * 0.55
-            height: (background.height - hintTextbg.height - answerbg.height - bar.height) * 0.8
+            height: (background.height - hintTextbg.height - answerbg.height
+                     - keyboard.height - bar.height) * 0.8
 
             anchors {
                 horizontalCenter: background.horizontalCenter
@@ -157,7 +158,7 @@ Item {
 
             Image {
                 id: wordImage
-                sourceSize.width: parent.width * 0.6
+                sourceSize.width: Math.min(parent.width * 0.6, parent.height * 0.6)
 
                 anchors {
                     centerIn: parent
@@ -294,12 +295,11 @@ Item {
 
     VirtualKeyboard {
         id: keyboard
-        anchors.bottom: parent.bottom
-        anchors.horizontalCenter: parent.horizontalCenter
+        parent: keyboardArea
+        anchors.bottom: undefined
+        anchors.horizontalCenter: undefined
         width: parent.width
-        visible: ApplicationSettings.isVirtualKeyboard && keyboard.visibleFlag
-                 && !menuScreen.visible
-        property bool visibleFlag: false
+        visible: ApplicationSettings.isVirtualKeyboard
 
         onKeypress: SpellActivity.processKeyPress(text)
         onError: console.log("VirtualKeyboard error: " + msg);
