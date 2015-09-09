@@ -1,6 +1,6 @@
 /* GCompris - balance.qml
  *
- * Copyright (C) 2014 Holger Kaelberer <holger.k@elberer.de>
+ * Copyright (C) 2014,2015 Holger Kaelberer <holger.k@elberer.de>
  *
  * Authors:
  *   Holger Kaelberer <holger.k@elberer.de>
@@ -24,8 +24,11 @@ import QtSensors 5.0
 import QtGraphicalEffects 1.0
 import GCompris 1.0
 import Box2D 2.0
+import QtQuick.Controls 1.0
+
 
 import "../../core"
+import "editor/"
 import "balancebox.js" as Activity
 
 ActivityBase {
@@ -46,13 +49,39 @@ ActivityBase {
         signal start
         signal stop
 
+        Keys.onPressed: {
+            if (event.key == Qt.Key_A) {
+                startEditor()
+            }
+        }
+
+        function startEditor() {
+            console.log("XXX: launching editor");
+            editor.visible = true;
+            displayDialog(editor);
+        }
+
+        Button {
+            id: editButton
+            anchors.top: parent.top
+            anchors.right: parent.right
+            width: 80
+            height: 30
+            text: "Editor"
+            onClicked: {
+                startEditor();
+            }
+        }
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
             items.dpi = Math.round(Screen.pixelDensity*25.4);
+
         }
 
-        onStart: { Activity.start(items) }
+        onStart: Activity.start(items)
+
         onStop: { Activity.stop() }
 
         QtObject {
@@ -76,6 +105,17 @@ ActivityBase {
             property var buttonType: Fixture.Category5
             property alias parser: parser
             property double dpi
+        }
+
+        BalanceboxEditor {
+            id: editor
+            visible: false
+
+            onClose: {
+                console.log("XXX editor.onClose");
+                activity.home()
+            }
+
         }
 
         JsonParser {

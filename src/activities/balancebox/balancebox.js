@@ -1,6 +1,6 @@
-/* GCompris - balance.js
+/* GCompris - balancebox.js
  *
- * Copyright (C) 2014  Holger Kaelberer <holger.k@elberer.de>
+ * Copyright (C) 2014,2015 Holger Kaelberer <holger.k@elberer.de>
  *
  * Authors:
  *   Holger Kaelberer <holger.k@elberer.de>
@@ -30,7 +30,9 @@
 .import GCompris 1.0 as GCompris
 .import Box2D 2.0 as Box2D
 
-/** Level description format:
+/**
+ * Level description format:
+ *
  * Example:
  * [ { "level": 1,
  *     "map": [ [ 0x0000,  0x0308, ... ],
@@ -45,7 +47,7 @@
  * 
  * "level": Number of the level.
  * "map":   Definition of the map inside the balancebox.
- *          The map is a 2-dimensional array of map fields. A map field is
+ *          The map is a 2-dimensional array of map cells. A cell is
  *          described by a bitmask of 16 bit with the lower 8bit defining walls,
  *          objects, etc. (cf. below) and the higher 8 bit defining the order of
  *          buttons present on the map. The values of the buttons are described
@@ -55,14 +57,16 @@
  *            need to be pressed by the ball is defined in the higher 8 bits of
  *            the map fields.
  */
-var EMPTY = 0x0000;
-var NORTH = 0x0001;
-var EAST  = 0x0002;
-var SOUTH = 0x0004;
-var WEST  = 0x0008;
-var START = 0x0010;
-var GOAL  = 0x0020;
-var HOLE  = 0x0040;
+var EMPTY   = 0x0000;
+var NORTH   = 0x0001;
+var EAST    = 0x0002;
+var SOUTH   = 0x0004;
+var WEST    = 0x0008;
+// all the following are mutually exclusive:
+var START   = 0x0010;
+var GOAL    = 0x0020;
+var HOLE    = 0x0040;
+var CONTACT = 0x0080;
 
 var dataset = null;
 
@@ -498,4 +502,148 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
+}
+
+var TOOL_H_WALL = SOUTH
+var TOOL_V_WALL = EAST
+var TOOL_HOLE = HOLE
+var TOOL_CONTACT = CONTACT
+var TOOL_GOAL = GOAL
+var TOOL_BALL = START
+
+function initEditor(props)
+{
+    console.log("XXX init editor " + props + " map: " + map);
+    props.mapModel.clear();
+
+    for (var row = 0; row < map.length; row++) {
+        for (var col = 0; col < map[row].length; col++) {
+            var contactValue = "";
+            var value = parseInt(map[row][col]);  // always enforce number
+            var orderNum = (value & 0xFF00) >> 8;
+            if (orderNum > 0 && level.targets[orderNum - 1] === undefined) {
+                console.error("Invalid level: orderNum " + orderNum
+                              + " without target value!");
+            } else if (orderNum > 0) {
+                if (orderNum > props.lastOrderNum)
+                    props.lastOrderNum = orderNum;
+                contactValue = Number(level.targets[orderNum-1]).toString();
+                if (contactValue > parseInt(props.contactValue) + 1)
+                    props.contactValue = Number(contactValue + 1).toString();
+            }
+            props.mapModel.append({
+                "row": row,
+                "col": col,
+                "value": value,
+                "orn": orderNum,
+                "contactValue": orderNum > 0 ? contactValue : ""
+            });
+            if (value & GOAL) {
+                if (props.lastGoalIndex > -1) {
+                    console.error("Invalid level: multiple goal locations: row/col="
+                                  + row + "/" + col);
+                    return;
+                }
+                props.lastGoalIndex = row * map.length + col;
+            }
+            if (value & START) {
+                if (props.lastBallIndex > -1) {
+                    console.error("Invalid level: multiple start locations: row/col="
+                                  + row + "/" + col);
+                    return;
+                }
+                props.lastBallIndex = row * map.length + col;
+            }
+        }
+    }
+}
+
+function dec2hex(i) {
+   return (i+0x10000).toString(16).substr(-4).toUpperCase();
+}
+
+function modelToLevel(props)
+{
+    map = new Array();
+    var targets = new Array();
+    for (var i = 0; i < props.mapModel.count; i++) {
+        var row = Math.floor(i / props.columns);
+        var col = i % props.columns;
+        if (col === 0) {
+            map[row] = new Array();
+        }
+
+        var obj = props.mapModel.get(i);
+        var value = obj.value;
+        if (obj.orn > 0) {
+            value |= (obj.orn << 8);
+            targets[obj.orn-1] = obj.contactValue;
+        }
+        map[row][col] = "0x" + dec2hex(value);
+    }
+    var level = {
+                    level: "0",
+                    map: map,
+                    targets: targets
+                }
+    console.log("XXX level: " + JSON.stringify(level) + " - " + map);
+}
+
+function modifyMap(props, row, col)
+{
+    //console.log("XXX modify map currentTool='" + props.currentTool + "'");
+    var modelIndex = row * map.length + col;
+    var obj = props.mapModel.get(modelIndex);
+    var newValue = obj.value;
+
+    // special treatment for mutually exclusive ones:
+    if (props.currentTool === TOOL_HOLE
+            || props.currentTool === TOOL_GOAL
+            || props.currentTool === TOOL_CONTACT
+            || props.currentTool === TOOL_BALL) {
+        // helper:
+        var MUTEX_MASK = (START | GOAL | HOLE | CONTACT) ^ props.currentTool;
+        newValue &= ~MUTEX_MASK;
+    }
+
+    // special treatment for singletons:
+    if (props.currentTool === TOOL_GOAL) {
+        console.log("GGGoal " + (obj.value & TOOL_GOAL));
+        if ((obj.value & TOOL_GOAL) === 0) {
+            // setting a new one
+            if (props.lastGoalIndex > -1) {
+                // clear last one first:
+                props.mapModel.setProperty(props.lastGoalIndex, "value",
+                                           props.mapModel.get(props.lastGoalIndex).value &
+                                           (~TOOL_GOAL));
+            }
+            // now memorize the new one:
+            props.lastGoalIndex = modelIndex;
+        }
+    } else
+    if (props.currentTool === TOOL_BALL) {
+        if ((obj.value & TOOL_BALL) === 0) {
+            // setting a new one
+            if (props.lastBallIndex > -1)
+                // clear last one first:
+                props.mapModel.setProperty(props.lastBallIndex, "value",
+                                           props.mapModel.get(props.lastBallIndex).value & (~TOOL_BALL));
+            // now memorize the new one:
+            props.lastBallIndex = modelIndex;
+        }
+    }
+
+    // special treatment for contacts:
+    if (props.currentTool === TOOL_CONTACT) {
+        props.mapModel.setProperty(row * map.length + col, "orn", ++props.lastOrderNum);
+        props.mapModel.setProperty(row * map.length + col, "contactValue", props.contactValue);
+        var newContact =  Number(Number(props.contactValue) + 1).toString()
+        props.contactValue = newContact;
+    }
+
+    // update value by current tool bit:
+    newValue ^= props.currentTool;
+
+    console.log("XXX value=" + obj.value + " typeof=" + typeof(obj.value) + " newValue=" + newValue + " typeof=" + typeof(newValue));
+    props.mapModel.setProperty(modelIndex, "value", newValue);
 }
