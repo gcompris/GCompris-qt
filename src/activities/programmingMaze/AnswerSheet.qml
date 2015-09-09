@@ -20,12 +20,8 @@
  */
 import QtQuick 2.2
 import GCompris 1.0
-import "../../core"
 
 import "programmingMaze.js" as Activity
-
-import QtQuick.Controls 1.0
-import QtQuick.Layouts 1.0
 
 GridView {
     id: answerSheet
@@ -51,8 +47,6 @@ GridView {
         border.color: "purple"
         opacity: 0.5
         z: 11
-        visible: background.moveAnswerCell
-//        x: answerSheet.currentItem.x - answerSheet.cellWidth
         Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
     }
     highlightFollowsCurrentItem: true
@@ -149,18 +143,18 @@ GridView {
                 if(answerSheet.indexAt(mouseX,mouseY) == -1)
                     currentModel.remove(draggedIndex)
                 else {
-                    if(diff <= insertEnd ) {
+                    if(diff <= insertEnd) {
                         if(dropIndex <= draggedIndex) {
                             //moving box from right to left
-                            currentModel.move(draggedIndex, answerSheet.indexAt(mouseX,mouseY),1)
+                            currentModel.move(draggedIndex, answerSheet.indexAt(mouseX,mouseY), 1)
                         }
                         else {
                             //moving box from left to right
-                            currentModel.move(draggedIndex, answerSheet.indexAt(mouseX,mouseY) -1,1)
+                            currentModel.move(draggedIndex, answerSheet.indexAt(mouseX,mouseY)-1, 1)
                         }
                     }
                     else {
-                        currentModel.set(dropIndex, currentModel.get(draggedIndex),1)
+                        currentModel.set(dropIndex, currentModel.get(draggedIndex), 1)
                         currentModel.remove(draggedIndex)
                     }
                 }
@@ -176,7 +170,7 @@ GridView {
                     answerSheet.cellWidth
             var diffX = Math.floor(mouseX - calculatedX)
             var insertEndX = answerSheet.cellWidth / 2
-            if( diffX <= insertEndX ) {
+            if(diffX <= insertEndX) {
                 answerSheet.possibleDropIndex = newPos
                 answerSheet.possibleDropRemoveIndex = -1
             }
@@ -189,7 +183,6 @@ GridView {
 
 
     delegate: Column {
-
         Item {
             id: itemParent
             width: background.buttonWidth
@@ -197,10 +190,9 @@ GridView {
 
             Rectangle {
                 id: circlePlaceholder
-                width: 30 * ApplicationInfo.ratio;
-                height: 30 * ApplicationInfo.ratio;
-                radius: 30 * ApplicationInfo.ratio
-                smooth: true
+                width: 30 * ApplicationInfo.ratio
+                height: width
+                radius: width
                 anchors.centerIn: parent
                 color: "#cecece"
                 opacity: 0
@@ -271,7 +263,6 @@ GridView {
                     sourceSize {  height: parent.height; width: parent.width }
                     width: sourceSize.width
                     height: sourceSize.height
-                    smooth: true
                 }
 
                 Image {
@@ -281,8 +272,6 @@ GridView {
                     width: sourceSize.width
                     height: sourceSize.height
                     anchors.centerIn: parent
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.horizontalCenter: parent.horizontalCenter
                     smooth: false
 
                     Rectangle {
