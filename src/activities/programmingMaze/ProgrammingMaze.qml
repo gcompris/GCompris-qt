@@ -52,8 +52,6 @@ ActivityBase {
         signal stop
 
         property bool keyNavigation: false
-        property bool moveAnswerCell: false
-        property bool moveProcedureCell: false
         property bool insertIntoMain: true
         property bool insertIntoProcedure: false
 
@@ -183,7 +181,6 @@ ActivityBase {
                 }
             }
 
-
             Behavior on rotation {
                 RotationAnimation {
                     duration: player.duration / 2
@@ -280,17 +277,14 @@ ActivityBase {
                         anchors.fill: parent
                         signal clicked
                         onClicked: {
-                            clickedAnim.start()
-                            if(background.insertIntoProcedure && name != Activity.callProcedure) {
-                                procedureModel.append({"name": name})
-                            }
-                            if(background.insertIntoMain) {
-                                answerModel.append({"name": name})
-                            }
+                            insertIntoModel()
                         }
                         onPressed: {
+                            insertIntoModel()
+                        }
+                        function insertIntoModel() {
                             clickedAnim.start()
-                            if(background.insertIntoProcedure && name != Activity.callProcedure) {
+                            if(background.insertIntoProcedure && name != Activity.CALL_PROCEDURE) {
                                 procedureModel.append({"name": name})
                             }
                             if(background.insertIntoMain) {
@@ -454,7 +448,6 @@ ActivityBase {
             anchors.left: procedure.left
             anchors.bottom: procedure.top
             visible: procedure.visible
-//            anchors.top: answerSheet.bottom
             Rectangle {
                 id: procedureHeaderRect
                 anchors.fill: parent

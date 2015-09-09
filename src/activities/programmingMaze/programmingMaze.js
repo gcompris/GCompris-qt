@@ -80,19 +80,11 @@ var mazeBlocks = [
 //[1,1],[2,1],[3,1],[3,2],[3,3],[2,3],[1,3]
 //[0,3],[1,3],[1,2],[2,2],[2,1],[3,1]
 var countOfMazeBlocks
-var initialX
-var initialY
 var stepX
 var stepY
 var playerCode = []
 var currentInstruction
 var tuxIceBlockNumber
-var currentBlock
-var nextBlock
-var currentX
-var currentY
-var nextX
-var nextY
 var changedX
 var changedY
 var currentRotation
@@ -100,15 +92,6 @@ var changedRotation
 var deadEndPoint = false
 var codeIterator = 0
 var reset = false
-var blocksDataIndex = 0
-var blocksFishIndex = 1
-var blocksInstructionIndex = 2
-var levelInstructions
-var moveForward = "move-forward"
-var turnLeft = "turn-left"
-var turnRight = "turn-right"
-var callProcedure = "call-procedure"
-var endProcedure = "end-procedure"
 var procedureBlocks
 var runningProcedure
 var moveAnimDuration
@@ -124,6 +107,16 @@ var NORTH = 0
 var WEST = 90
 var SOUTH = 180
 var EAST = 270
+
+var BLOCKS_DATA_INDEX = 0
+var BLOCKS_FISH_INDEX = 1
+var BLOCKS_INSTRUCTION_INDEX = 2
+
+var MOVE_FORWARD = "move-forward"
+var TURN_LEFT = "turn-left"
+var TURN_RIGHT = "turn-right"
+var CALL_PROCEDURE = "call-procedure"
+var END_PROCEDURE = "end-procedure"
 
 function start(items_) {
     items = items_
@@ -141,29 +134,27 @@ function initLevel() {
         return;
 
     items.bar.level = currentLevel + 1
-    items.mazeModel.model = mazeBlocks[currentLevel][blocksDataIndex]
+    items.mazeModel.model = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX]
 
     if(!reset && !deadEndPoint) {
         items.answerModel.clear()
         items.procedureModel.clear()
     }
-    countOfMazeBlocks = mazeBlocks[currentLevel][blocksDataIndex].length
+    countOfMazeBlocks = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX].length
 
     stepX = items.background.width / 10
     stepY = (items.background.height - items.background.height/10) / 10
-    initialX = mazeBlocks[currentLevel][blocksDataIndex][0][0] * stepX
-    initialY = mazeBlocks[currentLevel][blocksDataIndex][0][1] * stepY
 
     items.instructionModel.clear()
-    levelInstructions = mazeBlocks[currentLevel][blocksInstructionIndex]
+    var levelInstructions = mazeBlocks[currentLevel][BLOCKS_INSTRUCTION_INDEX]
     for (var i = 0; i < levelInstructions.length ; i++) {
         items.instructionModel.append({"name":levelInstructions[i]});
     }
 
-    items.player.x = initialX
-    items.player.y = initialY
-    items.fish.x = mazeBlocks[currentLevel][blocksFishIndex][0][0] * stepX
-    items.fish.y = mazeBlocks[currentLevel][blocksFishIndex][0][1] * stepY
+    items.player.x = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][0][0] * stepX
+    items.player.y = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][0][1] * stepY
+    items.fish.x = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][0] * stepX
+    items.fish.y = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][1] * stepY
     tuxIceBlockNumber = 0
     currentRotation = EAST
     changedRotation = EAST
@@ -171,8 +162,6 @@ function initLevel() {
     procedureBlocks = 0
     runningProcedure = false
     moveAnimDuration = 1000
-    items.background.moveAnswerCell = false
-    items.background.moveProcedureCell = false
     items.background.insertIntoMain = true
     items.background.insertIntoProcedure = false
     items.answerSheet.currentIndex = -1
@@ -204,10 +193,10 @@ function runCode() {
         items.player.tuxIsBusy = false
         procedureBlocks = items.procedureModel.count
         for(var i = 0; i < items.answerModel.count; i ++) {
-            if(items.answerModel.get([i]).name == callProcedure) {
+            if(items.answerModel.get([i]).name == CALL_PROCEDURE) {
                 playerCode.push("start-procedure")
                 for(var j = 0; j < items.procedureModel.count; j++) {
-                    if(items.procedureModel.get([j]).name != endProcedure)
+                    if(items.procedureModel.get([j]).name != END_PROCEDURE)
                         playerCode.push(items.procedureModel.get([j]).name)
                 }
                 playerCode.push("end-procedure")
@@ -237,23 +226,23 @@ function playerRunningChanged() {
 
 function executeNextInstruction() {
     currentInstruction = playerCode[codeIterator]
+
     if(!items.player.tuxIsBusy && codeIterator < playerCode.length && !deadEndPoint
             && currentInstruction != "start-procedure" && currentInstruction != "end-procedure") {
         changedX = items.player.x
         changedY = items.player.y
         currentRotation = getPlayerRotation()
 
-        currentBlock = tuxIceBlockNumber
-        nextBlock = tuxIceBlockNumber + 1
+        var currentBlock = tuxIceBlockNumber
+        var nextBlock = tuxIceBlockNumber + 1
 
-        currentX = mazeBlocks[currentLevel][blocksDataIndex][currentBlock][0]
-        currentY = mazeBlocks[currentLevel][blocksDataIndex][currentBlock][1]
-        nextX = mazeBlocks[currentLevel][blocksDataIndex][nextBlock][0]
-        nextY = mazeBlocks[currentLevel][blocksDataIndex][nextBlock][1]
+        var currentX = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][currentBlock][0]
+        var currentY = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][currentBlock][1]
+        var nextX = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][nextBlock][0]
+        var nextY = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][nextBlock][1]
 
-        if(currentInstruction == moveForward) {
+        if(currentInstruction == MOVE_FORWARD) {
             ++tuxIceBlockNumber;
-            items.background.moveAnswerCell = true
             items.answerSheet.highlightMoveDuration = moveAnimDuration
             items.procedure.highlightMoveDuration = moveAnimDuration
             if (nextX - currentX > 0 && currentRotation == EAST) {
@@ -278,18 +267,14 @@ function executeNextInstruction() {
             items.player.x = changedX
             items.player.y = changedY
         }
-        else if(currentInstruction == turnLeft) {
+        else if(currentInstruction == TURN_LEFT) {
             changedRotation = (currentRotation - 90) % 360
             items.player.rotation = changedRotation
-            items.background.moveAnswerCell = true
-//            items.background.moveProcedureCell = true
             items.answerSheet.highlightMoveDuration = moveAnimDuration / 2
             items.procedure.highlightMoveDuration = moveAnimDuration / 2
         }
-        else if(currentInstruction == turnRight) {
+        else if(currentInstruction == TURN_RIGHT) {
             changedRotation = (currentRotation + 90) % 360
-            items.background.moveAnswerCell = true
-//            items.background.moveProcedureCell = true
             items.player.rotation = changedRotation
             items.answerSheet.highlightMoveDuration = moveAnimDuration / 2
             items.procedure.highlightMoveDuration = moveAnimDuration / 2
@@ -310,8 +295,6 @@ function executeNextInstruction() {
     }
     else if(currentInstruction == "start-procedure") {
         runningProcedure = true
-        items.background.moveProcedureCell = true
-        items.background.moveAnswerCell = false
         items.answerSheet.currentIndex += 1
         items.procedure.currentIndex = -1
         codeIterator = codeIterator + 1
@@ -320,8 +303,6 @@ function executeNextInstruction() {
     else if(currentInstruction == "end-procedure") {
         runningProcedure = false
         procedureBlocks = items.procedureModel.count
-        items.background.moveProcedureCell = false
-        items.background.moveAnswerCell = true
         codeIterator = codeIterator + 1
         executeNextInstruction()
     }
