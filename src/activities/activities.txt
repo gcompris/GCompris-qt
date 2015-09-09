@@ -60,6 +60,7 @@ magic-hat-plus
 maze
 mazeinvisible
 mazerelative
+melody
 memory
 memory-enumerate
 memory-math-add

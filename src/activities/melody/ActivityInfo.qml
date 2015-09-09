@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,13 +21,14 @@ ActivityInfo {
   name: "melody/Melody.qml"
   difficulty: 2
   icon: "melody/melody.svg"
-  author: "Jose JORGE &lt;jjorge@free.fr&gt;"
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: true
   title: qsTr("Melody")
   description: qsTr("Repeat a melody")
+// intro: "Listen to the sound sequence played, and repeat it by clicking on the elements"
   goal: qsTr("Ear-training activity")
   prerequisite: qsTr("Move and click the mouse")
   manual: qsTr("Listen to the sound sequence played, and repeat it by clicking on the elements. You can listen again by clicking on the repeat button.")
   credit: ""
-  section: "/discovery/sound_group"
+  section: "discovery memory music"
 }
