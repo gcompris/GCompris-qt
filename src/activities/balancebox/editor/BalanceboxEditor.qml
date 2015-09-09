@@ -335,102 +335,132 @@ Item {
 
                         property bool highlighted: false
 
-                        Wall {
-                            id: northWall
+                        Loader {
+                            id: northWallLoader
+                            active: value & Activity.NORTH
                             width: items.cellSize + items.wallSize
                             height: items.wallSize
                             anchors.top: parent.top
                             anchors.left: parent.left
                             anchors.topMargin: -items.wallSize / 2
                             anchors.leftMargin: -items.wallSize / 2
-                            shadow: false
-                            visible: value & Activity.NORTH
-                            z: 1
+                            sourceComponent: Wall {
+                                id: northWall
+                                shadow: false
+                                anchors.centerIn: parent
+                                z: 1
+                            }
                         }
 
-                        Wall {
-                            id: eastWall
+                        Loader {
+                            id: eastWallLoader
+                            active: value & Activity.EAST || (cell.highlighted && props.currentTool === Activity.TOOL_V_WALL)
                             width: items.wallSize
                             height: items.cellSize + items.wallSize
                             anchors.bottom: parent.bottom
                             anchors.right: parent.right
                             anchors.bottomMargin: -items.wallSize / 2
                             anchors.rightMargin: -items.wallSize / 2
-                            shadow: false
-                            visible: value & Activity.EAST || (cell.highlighted && props.currentTool === Activity.TOOL_V_WALL)
-                            z: 1
+                            sourceComponent: Wall {
+                                id: eastWall
+                                anchors.centerIn: parent
+                                shadow: false
+                                z: 1
+                            }
                         }
 
-                        Wall {
-                            id: southWall
+                        Loader {
+                            id: southWallLoader
+                            active: value & Activity.SOUTH || (cell.highlighted && props.currentTool === Activity.SOUTH)
                             width: items.cellSize + items.wallSize
                             height: items.wallSize
                             anchors.bottom: parent.bottom
                             anchors.left: parent.left
                             anchors.bottomMargin: -items.wallSize / 2
                             anchors.leftMargin: -items.wallSize / 2
-                            shadow: false
-                            visible: value & Activity.SOUTH || (cell.highlighted && props.currentTool === Activity.SOUTH)
-                            z: 1
+                            sourceComponent: Wall {
+                                id: southWall
+                                anchors.centerIn: parent
+                                shadow: false
+                                z: 1
+                            }
                         }
 
-                        Wall {
-                            id: westWall
+                        Loader {
+                            id: westWallLoader
+                            active: value & Activity.WEST
                             width: items.wallSize
                             height: items.cellSize + items.wallSize
                             anchors.bottom: parent.bottom
                             anchors.left: parent.left
                             anchors.bottomMargin: -items.wallSize / 2
                             anchors.leftMargin: -items.wallSize / 2
-                            shadow: false
-                            visible: value & Activity.WEST
-                            z: 1
+                            sourceComponent: Wall {
+                                id: westWall
+                                anchors.centerIn: parent
+                                shadow: false
+                                z: 1
+                            }
                         }
 
-                        BalanceItem {
-                            id: goal
+                        Loader {
+                            id: doorLoader
+                            active: value & Activity.GOAL || (cell.highlighted && props.currentTool === Activity.TOOL_GOAL)
+                            anchors.centerIn: parent
                             width: items.cellSize - items.wallSize
                             height: items.cellSize - items.wallSize
-                            anchors.top: parent.top
-                            anchors.left: parent.left
-                            anchors.margins: items.wallSize / 2
-                            visible: value & Activity.GOAL || (cell.highlighted && props.currentTool === Activity.TOOL_GOAL)
-                            z: 1
-                            imageSource: Activity.baseUrl + "/door.svg"
+                            sourceComponent: BalanceItem {
+                                id: goal
+                                anchors.centerIn: parent
+                                z: 1
+                                imageSource: Activity.baseUrl + "/door.svg"
+                            }
                         }
 
-                        BalanceItem {
-                            id: hole
-                            width: items.ball.width
-                            height:items.ball.height
+                        Loader {
+                            id: holeLoader
+                            active: value & Activity.HOLE || (cell.highlighted && props.currentTool === Activity.TOOL_HOLE)
                             anchors.centerIn: parent
-                            visible: value & Activity.HOLE || (cell.highlighted && props.currentTool === Activity.TOOL_HOLE)
-                            z: 1
-                            imageSource: Activity.baseUrl + "/hole.svg"
+                            sourceComponent: BalanceItem {
+                                id: hole
+                                width: items.ball.width
+                                height:items.ball.height
+                                anchors.centerIn: parent
+                                z: 1
+                                imageSource: Activity.baseUrl + "/hole.svg"
+                            }
                         }
 
-                        BalanceItem {
-                            id: ball
-                            width: items.ball.width
-                            height:items.ball.height
+                        Loader {
+                            id: ballLoader
+                            active: value & Activity.START || (cell.highlighted && props.currentTool === Activity.TOOL_BALL)
                             anchors.centerIn: parent
-                            visible: value & Activity.START || (cell.highlighted && props.currentTool === Activity.TOOL_BALL)
-                            imageSource: Activity.baseUrl + "/ball.svg"
-                            z: 1
+                            sourceComponent: BalanceItem {
+                                    id: ball
+                                    width: items.ball.width
+                                    height:items.ball.height
+                                    anchors.centerIn: parent
+                                    visible: true
+                                    imageSource: Activity.baseUrl + "/ball.svg"
+                                    z: 1
+                            }
                         }
 
-                        BalanceContact {
-                            id: contact
+                        Loader {
+                            id: contactLoader
+                            active: (orn > 0) || (cell.highlighted && props.currentTool === Activity.TOOL_CONTACT)
                             width: items.cellSize - items.wallSize
                             height: items.cellSize - items.wallSize
-                            anchors.top: parent.top
-                            anchors.margins: items.wallSize / 2
-                            anchors.left: parent.left
-                            visible: (orn > 0) || (cell.highlighted && props.currentTool === Activity.TOOL_CONTACT)
-                            pressed: false
-                            orderNum: orn
-                            text: contactValue
-                            z: 1
+                            anchors.centerIn: parent
+                            sourceComponent: BalanceContact {
+                                id: contact
+                                anchors.centerIn: parent
+                                visible: true
+                                pressed: false
+                                orderNum: orn
+                                text: contactValue
+                                z: 1
+                            }
                         }
 
                         Rectangle {  // bounding rect

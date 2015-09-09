@@ -529,7 +529,7 @@ function initEditor(props)
                     props.lastOrderNum = orderNum;
                 contactValue = Number(level.targets[orderNum-1]).toString();
                 if (contactValue > parseInt(props.contactValue) + 1)
-                    props.contactValue = Number(contactValue + 1).toString();
+                    props.contactValue = Number(parseInt(contactValue) + 1).toString();
             }
             props.mapModel.append({
                 "row": row,
