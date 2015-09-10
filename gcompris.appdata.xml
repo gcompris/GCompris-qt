@@ -181,6 +181,7 @@
     <p xml:lang="sv">Nedan finns en lista över kategorier med några av aktiviteterna tillgängliga i varje kategori.</p>
     <p xml:lang="uk">Нижче наведено список категорій із деякими вправами у цих категоріях.</p>
     <p xml:lang="x-test">xxBelow you can find a list of categories with some of the activities available in that category.xx</p>
+    <p xml:lang="zh-CN">下面列出了一些分类和对应分类中的活动。</p>
     <p xml:lang="zh-TW">下方您可以看到該類別的活動清單。</p>
     <ul>
       <li>computer discovery: keyboard, mouse, different mouse gestures, ...</li>
@@ -203,6 +204,7 @@
       <li xml:lang="sv">upptäcka datorn: tangentbord, mus, olika musgester, ...</li>
       <li xml:lang="uk">Знайомство з комп’ютером: клавіатура, миша, керування мишею…</li>
       <li xml:lang="x-test">xxcomputer discovery: keyboard, mouse, different mouse gestures, ...xx</li>
+      <li xml:lang="zh-CN">探索电脑：键盘、鼠标、不同的鼠标手势……</li>
       <li xml:lang="zh-TW">電腦探索：鍵盤、滑鼠、不同的滑鼠手勢等</li>
       <li>arithmetic: table memory, enumeration, mirror image, balance
     the scale, change giving, ...</li>
@@ -225,6 +227,7 @@
       <li xml:lang="sv">aritmetik: tabellminne, uppräkning, spegelbild, balansera vågen, ge växel, ...</li>
       <li xml:lang="uk">Арифметика: запам’ятовування таблиць, нумерація, віддзеркалення, балансування масштабу, обчислення решти…</li>
       <li xml:lang="x-test">xxarithmetic: table memory, enumeration, mirror image, balance the scale, change giving, ...xx</li>
+      <li xml:lang="zh-CN">算数：表格记忆、枚举、镜像、天平、找零……</li>
       <li xml:lang="zh-TW">數學運算：表格記憶、列舉、影像映射、平衡、找零計算等</li>
       <li>science: the canal lock, color mixing, gravity concept, ...</li>
       <li xml:lang="ca">ciència: blocar el canal, barreja de colors, el concepte de la gravetat...</li>
@@ -246,6 +249,7 @@
       <li xml:lang="sv">vetenskap: kanalslussen, färgblandning, gravitationskonceptet, ...</li>
       <li xml:lang="uk">Наука: шлюзування, змішування кольорів, поняття тяжіння…</li>
       <li xml:lang="x-test">xxscience: the canal lock, color mixing, gravity concept, ...xx</li>
+      <li xml:lang="zh-CN">科学：运河闸门、颜料色彩混合、重力的概念……</li>
       <li xml:lang="zh-TW">科學：顏色混合、重力觀念、運河鎖等等</li>
       <li>games: memory, connect 4, tic tac toe, sudoku, hanoi tower, ...</li>
       <li xml:lang="ca">jocs: memòria, connectar 4, tres en ratlla, sudoku, torre de Hanoi...</li>
@@ -267,6 +271,7 @@
       <li xml:lang="sv">spel: memory, koppla 4, tre-i-rad, sudoku, tornen i Hanoi, ...</li>
       <li xml:lang="uk">Ігри: запам’ятовування, чотири-у-рядок, хрестики-нулики, судоку, ханойські вежі…</li>
       <li xml:lang="x-test">xxgames: memory, connect 4, tic tac toe, sudoku, hanoi tower, ...xx</li>
+      <li xml:lang="zh-CN">游戏：记忆、四子棋、井子棋、数独、汉诺塔……</li>
       <li xml:lang="zh-TW">遊戲：記憶遊戲、四子棋、井字遊戲、數獨、河內塔等等</li>
       <li>reading: reading practice, ...</li>
       <li xml:lang="ca">lectura: practicar la lectura...</li>
@@ -288,6 +293,7 @@
       <li xml:lang="sv">läsning: läsningsövning, ...</li>
       <li xml:lang="uk">Читання: вправи із читання…</li>
       <li xml:lang="x-test">xxreading: reading practice, ...xx</li>
+      <li xml:lang="zh-CN">阅读：阅读练习……</li>
       <li xml:lang="zh-TW">閱讀：閱讀練習等等</li>
       <li>other: learn to tell time, the braille system, maze, music
     instruments, ...</li>
@@ -310,6 +316,7 @@
       <li xml:lang="sv">annat: lära sig klockan, punktskrift, labyrint, musikinstrument, ...</li>
       <li xml:lang="uk">Інше: навчання позначенням часу, система Брайля, лабіринти, музичні інструменти…</li>
       <li xml:lang="x-test">xxother: learn to tell time, the braille system, maze, music instruments, ...xx</li>
+      <li xml:lang="zh-CN">其他：学认钟表、盲文系统、迷宫、乐器……</li>
       <li xml:lang="zh-TW">其他：看時間、點字系統、迷宮、認識樂器等等</li>
     </ul>
     <p>Currently GCompris offers in excess of 100 activities and more
@@ -335,6 +342,7 @@
     <p xml:lang="sv">För närvarande erbjuder GCompris över 100 aktiviteter och ännu fler håller på att utvecklas. GCompris är fri programvara, vilket betyder att man kan anpassa det till sina egna behov, och viktigast av allt, dela det med barn överallt.</p>
     <p xml:lang="uk">У поточній версії GCompris понад 100 вправ. Розробники постійно працюють над новими вправами. GCompris є вільним програмним забезпеченням, це означає, що ви можете адаптувати програму до власних потреб, покращувати її і, що найважливіше, ділитися вашими творіннями із усіма дітьми.</p>
     <p xml:lang="x-test">xxCurrently GCompris offers in excess of 100 activities and more are being developed. GCompris is free software, that means that you can adapt it to your own needs, improve it and, most importantly, share it with children everywhere.xx</p>
+    <p xml:lang="zh-CN">当前 GCompris 提供超过100个活动，还有更多的正在开发中。GCompris 是自由软件，这意味着你可以根据你的需要进行调整、改进，以及最重要的一点，和世界各地的孩子们分享。</p>
     <p xml:lang="zh-TW">目前 GCompris 提供超過 100 個活動，還有更多正在開發中。GCompris 是一套自由軟體，表示您可以根據您自己的需求來改進，並分享給所有的孩子們。</p>
   </description>
   <screenshots>
