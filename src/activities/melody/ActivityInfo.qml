@@ -22,13 +22,13 @@ ActivityInfo {
   difficulty: 2
   icon: "melody/melody.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: true
+  demo: false
   title: qsTr("Melody")
-  description: qsTr("Repeat a melody")
-// intro: "Listen to the sound sequence played, and repeat it by clicking on the elements"
+  description: qsTr("Reproduce a sound sequence")
+// intro: "Listen to the sound sequence played, and reproduce it by clicking on the xylophone's bars"
   goal: qsTr("Ear-training activity")
   prerequisite: qsTr("Move and click the mouse")
-  manual: qsTr("Listen to the sound sequence played, and repeat it by clicking on the elements. You can listen again by clicking on the repeat button.")
+  manual: qsTr("Listen to the sound sequence played, and repeat it by clicking on the xylophone's bars. You can listen again by clicking on the repeat button.")
   credit: ""
   section: "discovery memory music"
 }

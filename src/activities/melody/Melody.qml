@@ -221,6 +221,7 @@ ActivityBase {
         }
 
         function repeat() {
+            activity.audioEffects.play(items.url + 'xylofon_melody.ogg')
             items.questionToPlay = items.question.slice()
             items.answer = []
             questionPlayer.start()
