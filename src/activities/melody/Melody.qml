@@ -23,7 +23,6 @@ import QtQuick 2.1
 import GCompris 1.0
 
 import "../../core"
-import "melody.js" as Activity
 
 ActivityBase {
     id: activity
@@ -34,7 +33,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: Activity.url + 'xylofon_background.svg'
+        source: items.url + 'xylofon_background.svg'
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
 
@@ -49,14 +48,22 @@ ActivityBase {
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
-            property Item main: activity.main
-            property alias background: background
-            property alias bar: bar
-            property alias bonus: bonus
+            property string url: "qrc:/gcompris/src/activities/melody/resource/"
+            property var question
+            property var questionToPlay
+            property var answer
+            property alias questionInterval: questionPlayer.interval
+            property int numberOfLevel: 10
         }
 
-        onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }
+        onStart: {
+            bar.level = 1
+            initLevel()
+        }
+
+        onStop: {
+            questionPlayer.stop()
+        }
 
         Image {
             id: xylofon
@@ -64,17 +71,18 @@ ActivityBase {
                 fill: parent
                 margins: 10 * ApplicationInfo.ratio
             }
-            source: Activity.url + 'xylofon.svg'
+            source: items.url + 'xylofon.svg'
             sourceSize.width: parent.width * 0.7
             fillMode: Image.PreserveAspectFit
         }
 
         Repeater {
+            id: parts
             model: 4
             Image {
                 id: part
                 parent: xylofon
-                source: Activity.url + 'xylofon_part' + (index + 1) + '.svg'
+                source: items.url + 'xylofon_part' + (index + 1) + '.svg'
                 rotation: - 80
                 anchors.horizontalCenter: xylofon.horizontalCenter
                 anchors.horizontalCenterOffset: (- xylofon.paintedWidth) * 0.3 + xylofon.paintedWidth * index * 0.22
@@ -83,13 +91,51 @@ ActivityBase {
                 sourceSize.width: xylofon.paintedWidth * 0.5
                 fillMode: Image.PreserveAspectFit
 
+                property alias anim: anim
+
+                SequentialAnimation {
+                    id: anim
+                    NumberAnimation {
+                        target: part
+                        property: "scale"
+                        from: 1; to: 0.95
+                        duration: 150
+                        easing.type: Easing.InOutQuad
+                    }
+                    NumberAnimation {
+                        target: part
+                        property: "scale"
+                        from: 0.95; to: 1
+                        duration: 150
+                        easing.type: Easing.OutElastic
+                    }
+                }
+
                 MouseArea {
                     anchors.fill: parent
                     onClicked: {
-                        console.log(index)
-                        activity.audioEffects.play(Activity.url +
-                                                   'xylofon_son' + (index + 1) + '.ogg')
+                        anim.start()
+                        background.playNote(index)
+                        items.answer.push(index)
+                        background.checkAnswer()
                     }
+                }
+            }
+        }
+
+        function playNote(index) {
+            activity.audioEffects.play(items.url +
+                                       'xylofon_son' + (index + 1) + '.ogg')
+        }
+
+        Timer {
+            id: questionPlayer
+            onTriggered: {
+                var partIndex = items.questionToPlay.shift()
+                if(partIndex !== undefined) {
+                    parts.itemAt(partIndex).anim.start()
+                    background.playNote(partIndex)
+                    start()
                 }
             }
         }
@@ -101,19 +147,63 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | repeat }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
+            onPreviousLevelClicked: {
+                if(bar.level == 1) {
+                    bar.level = items.numberOfLevel
+                } else {
+                    bar.level--
+                }
+                initLevel();
+            }
+            onNextLevelClicked: parent.nextLevel()
             onHomeClicked: activity.home()
+            onRepeatClicked: parent.repeat()
         }
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(parent.nextLevel)
+            onWin: {
+                parent.nextLevel()
+                parent.repeat()
+            }
+            onLoose: parent.repeat()
+        }
+
+        function initLevel() {
+            items.question = []
+            for(var i = 0; i < bar.level + 2; ++i) {
+                items.question.push(Math.floor(Math.random() * 4))
+            }
+            items.questionInterval = 1000 - Math.min(500, 100 * bar.level)
+            items.answer = []
+        }
+
+        function nextLevel() {
+            if(items.numberOfLevel === bar.level ) {
+                bar.level = 1
+            } else {
+                bar.level++
+            }
+
+            initLevel();
+        }
+
+        function repeat() {
+            items.questionToPlay = items.question.slice()
+            items.answer = []
+            questionPlayer.start()
+        }
+
+        function checkAnswer() {
+            if(items.answer.join() == items.question.join())
+                bonus.good('lion')
+            else if(items.answer.length >= items.question.length)
+                bonus.bad('lion')
         }
     }
-
 }
