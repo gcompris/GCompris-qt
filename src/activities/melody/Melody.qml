@@ -58,6 +58,8 @@ ActivityBase {
 
         onStart: {
             bar.level = 1
+            score.numberOfSubLevels = 5
+            score.currentSubLevel = 1
             initLevel()
         }
 
@@ -152,6 +154,7 @@ ActivityBase {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: {
+                score.currentSubLevel = 1
                 if(bar.level == 1) {
                     bar.level = items.numberOfLevel
                 } else {
@@ -166,30 +169,54 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(parent.nextLevel)
             onWin: {
-                parent.nextLevel()
+                parent.nextSubLevel()
                 parent.repeat()
             }
             onLoose: parent.repeat()
         }
 
+        Score {
+            id: score
+            anchors.bottom: undefined
+            anchors.right: parent.right
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.top: parent.top
+        }
+
         function initLevel() {
             items.question = []
+            questionPlayer.stop()
+
+            var numberOfParts = 4
+            if(bar.level < 3)
+                numberOfParts = 2
+            else if(bar.level < 5)
+                numberOfParts = 3
+
             for(var i = 0; i < bar.level + 2; ++i) {
-                items.question.push(Math.floor(Math.random() * 4))
+                items.question.push(Math.floor(Math.random() * numberOfParts))
             }
             items.questionInterval = 1000 - Math.min(500, 100 * bar.level)
             items.answer = []
         }
 
+        function nextSubLevel() {
+            if(score.currentSubLevel < score.numberOfSubLevels) {
+                score.currentSubLevel++
+                initLevel()
+                return
+            }
+            nextLevel()
+        }
+
         function nextLevel() {
+            score.currentSubLevel = 1
             if(items.numberOfLevel === bar.level ) {
                 bar.level = 1
             } else {
                 bar.level++
             }
-
             initLevel();
         }
 
