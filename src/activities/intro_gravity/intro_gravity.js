@@ -136,7 +136,8 @@ function createAsteroid() {
                     "source" : ImageUrl,
                     "x": randomX,
                     "y": 50,
-                    "fallDuration": fallDuration
+                    "fallDuration": fallDuration,
+                    "scale": GCompris.ApplicationInfo.ratio
                 });
 
     if(asteroid === null) {
