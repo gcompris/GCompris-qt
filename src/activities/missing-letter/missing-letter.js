@@ -227,6 +227,16 @@ function playLetter(letter) {
                                                                        + Core.getSoundFilenamForChar(letter)))
 }
 
+function playCurrentWord() {
+    var question = getCurrentQuestion()
+    playWord(question.voice)
+}
+
 function playWord(word) {
     items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath(word))
+}
+
+function focusTextInput() {
+    if (!GCompris.ApplicationInfo.isMobile && items && items.textinput)
+        items.textinput.forceActiveFocus();
 }

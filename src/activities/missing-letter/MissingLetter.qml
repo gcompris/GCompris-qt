@@ -32,6 +32,13 @@ ActivityBase
     onStart: focus = true
     onStop: {}
 
+    // When going on configuration, it steals the focus and re set it to the activity.
+    // We need to set it back to the textinput item in order to have key events.
+    onFocusChanged: {
+        if(focus) {
+            Activity.focusTextInput()
+        }
+    }
     pageComponent: Image
     {
         id: background
@@ -67,6 +74,7 @@ ActivityBase
             property alias englishFallbackDialog: englishFallbackDialog
             property alias parser: parser
             property string answer
+            property alias textinput: textinput
         }
 
         function handleResourceRegistered(resource)
@@ -77,6 +85,7 @@ ActivityBase
 
         onStart: {
             Activity.init(items)
+            Activity.focusTextInput()
 
             // check for words.rcc:
             if (DownloadManager.isDataRegistered("words")) {
@@ -98,6 +107,32 @@ ActivityBase
         onStop: {
             DownloadManager.resourceRegistered.disconnect(handleResourceRegistered);
             Activity.stop()
+        }
+
+        TextInput {
+            // Helper element to capture composed key events like french ô which
+            // are not available via Keys.onPressed() on linux. Must be
+            // disabled on mobile!
+            id: textinput
+            anchors.centerIn: background
+            enabled: !ApplicationInfo.isMobile
+            focus: true
+            visible: false
+
+            // TODO, do we want to have keyboard input disreguards casing
+            property bool uppercaseOnly: false
+
+            onTextChanged: {
+                if (text != '') {
+                    var typedText = uppercaseOnly ? text.toLocaleUpperCase() : text;
+                    var question = Activity.getCurrentQuestion()
+                    if(typedText === question.answer) {
+                        questionAnim.start()
+                        Activity.showAnswer()
+                    }
+                    text = '';
+                }
+            }
         }
 
         // Buttons with possible answers shown on the left of screen
@@ -196,18 +231,21 @@ ActivityBase
                             property: 'scale'
                             to: 1.05
                             duration: 500
+                            easing.type: Easing.OutQuad
                         }
                         NumberAnimation {
                             target: questionText
                             property: 'scale'
                             to: 0.95
                             duration: 1000
+                            easing.type: Easing.OutQuad
                         }
                         NumberAnimation {
                             target: questionText
                             property: 'scale'
                             to: 1.0
                             duration: 500
+                            easing.type: Easing.OutQuad
                         }
                         ScriptAction {
                             script: Activity.nextSubLevel()
@@ -237,11 +275,12 @@ ActivityBase
         Bar
         {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | repeat }
             onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onRepeatClicked: Activity.playCurrentWord()
         }
 
         Bonus
