@@ -38,6 +38,9 @@ ActivityBase
         source: Activity.url + "background.svg"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
+        readonly property string wordsResource: "data2/words/words.rcc"
+        property bool englishFallback: false
+        property bool downloadWordsNeeded: false
 
         signal start
         signal stop
@@ -53,29 +56,60 @@ ActivityBase
         {
             id: items
             property Item  main: activity.main
+            property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property alias score: score
             property alias questionImage: questionImage
             property alias questionText: questionText
             property alias answers: answers
-            property alias currentQuestionNumberText : currentQuestionNumberText
             property GCAudio audioVoices: activity.audioVoices
+            property alias englishFallbackDialog: englishFallbackDialog
+            property alias parser: parser
+            property string answer
         }
 
-        onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }
+        function handleResourceRegistered(resource)
+        {
+            if (resource == wordsResource)
+                Activity.start();
+        }
 
-        // Option holder for buttons shown on the left of screen
+        onStart: {
+            Activity.init(items)
+
+            // check for words.rcc:
+            if (DownloadManager.isDataRegistered("words")) {
+                // words.rcc is already registered -> start right away
+                Activity.start();
+            } else if(DownloadManager.haveLocalResource(wordsResource)) {
+                // words.rcc is there -> register old file first
+                if (DownloadManager.registerResource(wordsResource))
+                    Activity.start(items);
+                else // could not register the old data -> react to a possible update
+                    DownloadManager.resourceRegistered.connect(handleResourceRegistered);
+                // then try to update in the background
+                DownloadManager.updateResource(wordsResource);
+            } else {
+                // words.rcc has not been downloaded yet -> ask for download
+                downloadWordsNeeded = true
+            }
+        }
+        onStop: {
+            DownloadManager.resourceRegistered.disconnect(handleResourceRegistered);
+            Activity.stop()
+        }
+
+        // Buttons with possible answers shown on the left of screen
         Column
         {
             id: buttonHolder
-            property bool buttonHolderMouseArea : true
             spacing: 10 * ApplicationInfo.ratio
             x: holder.x - width - 10 * ApplicationInfo.ratio
-            y: 30
+            y: holder.y
 
             add: Transition {
-                NumberAnimation { properties: "y"; from: 10; duration: 500 }
+                NumberAnimation { properties: "y"; from: holder.y; duration: 500 }
             }
 
             Repeater
@@ -84,14 +118,12 @@ ActivityBase
 
                 AnswerButton {
                     width: 120 * ApplicationInfo.ratio
-                    height: 80 * ApplicationInfo.ratio
+                    height: (holder.height
+                             - buttonHolder.spacing * answers.model.length) / answers.model.length
                     textLabel: modelData
-                    isCorrectAnswer: modelData === Activity.getCorrectAnswer()
-                    onCorrectlyPressed: Activity.answerPressed(modelData)
-                    onPressed: {
-                        Activity.playLetter(modelData)
-                        if(modelData === Activity.getCorrectAnswer()) Activity.showAnswer()
-                    }
+                    isCorrectAnswer: modelData === items.answer
+                    onCorrectlyPressed: questionAnim.start()
+                    onPressed: modelData == items.answer ? Activity.showAnswer() : ''
                 }
             }
         }
@@ -134,9 +166,8 @@ ActivityBase
             Rectangle {
                 id: questionTextBg
                 width: holder.width
-                height: questionText.height * 1.5
+                height: questionText.height * 1.1
                 anchors.horizontalCenter: holder.horizontalCenter
-                anchors.margins: 20
                 anchors.top: questionImage.bottom
                 radius: 10
                 border.width: 2
@@ -146,68 +177,55 @@ ActivityBase
                     GradientStop { position: 0.9; color: "#666" }
                     GradientStop { position: 1.0; color: "#AAA" }
                 }
-            }
 
-            GCText {
-                id: questionText
-                anchors {
-                    horizontalCenter: questionTextBg.horizontalCenter
-                    verticalCenter: questionTextBg.verticalCenter
-                }
-                style: Text.Outline; styleColor: "black"
-                color: "white"
-                fontSize: largeSize
+                GCText {
+                    id: questionText
+                    horizontalAlignment: Text.AlignHCenter
+                    verticalAlignment: Text.AlignVCenter
+                    style: Text.Outline
+                    styleColor: "black"
+                    color: "white"
+                    fontSize: largeSize
+                    wrapMode: Text.WordWrap
+                    width: holder.width
 
-                states: [
-                    State {
-                        name: "question"
-                        PropertyChanges {
+                    SequentialAnimation {
+                        id: questionAnim
+                        NumberAnimation {
                             target: questionText
-                            scale: 1.0
-                            rotation: 0
+                            property: 'scale'
+                            to: 1.05
+                            duration: 500
                         }
-                    },
-                    State {
-                        name: "answer"
-                        PropertyChanges {
+                        NumberAnimation {
                             target: questionText
-                            scale: 1.6
+                            property: 'scale'
+                            to: 0.95
+                            duration: 1000
+                        }
+                        NumberAnimation {
+                            target: questionText
+                            property: 'scale'
+                            to: 1.0
+                            duration: 500
+                        }
+                        ScriptAction {
+                            script: Activity.nextSubLevel()
                         }
                     }
-                ]
-
-                Behavior on scale { NumberAnimation { duration: 200 } }
+                }
             }
+
 
         }
 
-        // Counter of progress within this level
-        Rectangle
-        {
-            width: 130 * 0.7 * ApplicationInfo.ratio
-            height: 70 * ApplicationInfo.ratio
-            anchors {
-                right: parent.right
-                bottom: parent.bottom
-                margins: 10
-            }
-            radius: 10
-            border.width: 3
-            border.color: "black"
-            gradient: Gradient {
-                GradientStop { position: 0.0; color: "#fdf1aa" }
-                GradientStop { position: 0.1; color: "#fcec89" }
-                GradientStop { position: 0.4; color: "#f8d600" }
-                GradientStop { position: 1.0; color: "#f8d600" }
-            }
-
-            GCText {
-                id: currentQuestionNumberText
-                anchors.centerIn: parent
-                fontSize: largeSize
-                style: Text.Outline; styleColor: "white"
-                color: "black"
-            }
+        Score {
+            id: score
+            anchors.bottom: undefined
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            anchors.right: parent.right
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.top: parent.top
         }
 
         DialogHelp
@@ -229,11 +247,48 @@ ActivityBase
         Bonus
         {
             id: bonus
-            Component.onCompleted:
-            {
-                win.connect(Activity.correctOptionPressed)
-                loose.connect(Activity.wrongOptionPressed)
-            }
+            Component.onCompleted: win.connect(Activity.nextLevel)
         }
+
+        JsonParser {
+            id: parser
+            onError: console.error("missing letter: Error parsing json: " + msg);
+        }
+
+        Loader {
+            id: downloadWordsDialog
+            sourceComponent: GCDialog {
+                parent: activity.main
+                message: qsTr("The images for this activity are not yet installed.")
+                button1Text: qsTr("Download the images")
+                onClose: background.downloadWordsNeeded = false
+                onButton1Hit: {
+                    DownloadManager.resourceRegistered.connect(handleResourceRegistered);
+                    DownloadManager.downloadResource(wordsResource)
+                    var downloadDialog = Core.showDownloadDialog(activity, {});
+                }
+            }
+            anchors.fill: parent
+            focus: true
+            active: background.downloadWordsNeeded
+            onStatusChanged: if (status == Loader.Ready) item.start()
+        }
+
+        Loader {
+            id: englishFallbackDialog
+            sourceComponent: GCDialog {
+                parent: activity.main
+                message: qsTr("We are sorry, we don't have yet a translation for your language.") + " " +
+                         qsTr("GCompris is developed by the KDE community, you can translate GCompris by joining a translation team on <a href=\"%2\">%2</a>").arg("http://l10n.kde.org/") +
+                         "<br /> <br />" +
+                         qsTr("We switched to English for this activity but you can select another language in the configuration dialog.")
+                onClose: background.englishFallback = false
+            }
+            anchors.fill: parent
+            focus: true
+            active: background.englishFallback
+            onStatusChanged: if (status == Loader.Ready) item.start()
+        }
+
     }
 }

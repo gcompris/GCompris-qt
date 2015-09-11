@@ -23,113 +23,142 @@
 .import QtQuick 2.0 as Quick
 .import "qrc:/gcompris/src/core/core.js" as Core
 .import GCompris 1.0 as GCompris //for ApplicationInfo
+.import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 
 var url = "qrc:/gcompris/src/activities/missing-letter/resource/"
-
-var questionsStatic =
-        [
-            [
-                // Level 1
-                {
-                    questionString: "c_r",
-                    answerString  : "car",
-                    choiceString  : "atr",
-                    pictureSource : url + "car.png",
-                },
-                {
-                    questionString: "_og",
-                    answerString  : "dog",
-                    choiceString  : "dws",
-                    pictureSource : url + "dog.png",
-                },
-                {
-                    questionString: "_pple",
-                    answerString  : "apple",
-                    choiceString  : "back",
-                    pictureSource : url + "apple.png",
-                },
-
-                {
-                    questionString: "bal_",
-                    answerString  : "ball",
-                    choiceString  : "hlt",
-                    pictureSource : url + "ball.png",
-                }
-            ],
-            [
-                // Level 2
-                {
-                    questionString: "be_",
-                    answerString  : "bed",
-                    choiceString  : "dfg",
-                    pictureSource : url + "bed.png",
-                },
-                {
-                    questionString: "_ake",
-                    answerString  : "cake",
-                    choiceString  : "lxc",
-                    pictureSource : url + "cake.png",
-                },
-                {
-                    questionString: "ba_",
-                    answerString  : "bag",
-                    choiceString  : "qlg",
-                    pictureSource : url + "bag.png",
-                },
-                {
-                    questionString: "f_sh",
-                    answerString  : "fish",
-                    choiceString  : "epi",
-                    pictureSource : url + "fish.png",
-                }
-            ],
-            [
-                // Level 3
-                {
-                    questionString: "bana_a",
-                    answerString  : "banana",
-                    choiceString  : "bakn",
-                    pictureSource : url + "banana.png",
-                },
-                {
-                    questionString: "bottl_",
-                    answerString  : "bottle",
-                    choiceString  : "degw",
-                    pictureSource : url + "bottle.png",
-                },
-                {
-                    questionString: "_ouse",
-                    answerString  : "house",
-                    choiceString  : "khpz",
-                    pictureSource : url + "house.png",
-                },
-                {
-                    questionString: "_lane",
-                    answerString  : "plane",
-                    choiceString  : "lmpo",
-                    pictureSource : url + "plane.png",
-                }
-            ]
-        ]
+var langUrl = "qrc:/gcompris/src/activities/lang/resource/";
 
 var items
 var currentLevel
 var numberOfLevel
-var currentQuestionNumber
 
 var questions
 var dataset
+var lessons
 
-function start(items_)
+// Do not propose these letter in the choices
+var ignoreLetters = '[ ,;:-_\']'
+
+function init(items_)
 {
     items = items_
+}
+
+function start()
+{
     currentLevel = 0
-    questions = questionsStatic
-    createLastLevel()
+
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(GCompris.ApplicationSettings.locale)
+
+    // register the voices for the locale
+    GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
+
+    dataset = Lang.load(items.parser, langUrl, "words.json",
+                        "content-"+ locale +".json")
+
+    // If dataset is empty, we try to load from short locale
+    // and if not present again, we switch to default one
+    var localeUnderscoreIndex = locale.indexOf('_')
+    if(!dataset) {
+        var localeShort;
+        // We will first look again for locale xx (without _XX if exist)
+        if(localeUnderscoreIndex > 0) {
+            localeShort = locale.substring(0, localeUnderscoreIndex)
+        } else {
+            localeShort = locale;
+        }
+        dataset = Lang.load(items.parser, langUrl, "words.json",
+                            "content-"+localeShort+ ".json")
+    }
+
+    // If still dataset is empty then fallback to english
+    if(!dataset) {
+        // English fallback
+        items.background.englishFallback = true
+        dataset = Lang.load(items.parser, langUrl, "words.json", "content-en.json")
+    } else {
+        items.background.englishFallback = false
+    }
+
+    lessons = Lang.getAllLessons(dataset)
+    questions = initDataset()
     numberOfLevel = questions.length
     initLevel()
 }
 
+function initDataset() {
+    var questions = []
+    for (var lessonIndex = 0; lessonIndex < lessons.length; lessonIndex++) {
+        var lesson = Lang.getLessonWords(dataset, lessons[lessonIndex])
+        var guessLetters = getRandomLetters(lesson)
+        questions[lessonIndex] = []
+        for (var j in lesson) {
+            var clearQuestion = lesson[j].translatedTxt
+            var maskedQuestion = getRandomMaskedQuestion(clearQuestion, guessLetters, lessonIndex)
+
+            questions[lessonIndex].push(
+                        {
+                            'image': lesson[j].image,
+                            'clearQuestion': clearQuestion,
+                            'maskedQuestion': maskedQuestion[0],
+                            'answer': maskedQuestion[1],
+                            'choices': maskedQuestion[2],
+                            'voice': lesson[j].voice,
+                        })
+        }
+    }
+    return questions
+}
+
+// Get all the letters for all the words in the lesson
+function getRandomLetters(lesson) {
+    var letters = []
+    var re = new RegExp(ignoreLetters, 'g');
+    for (var i in lesson) {
+        letters = letters.concat(lesson[i].translatedTxt.replace(re, '').split(''))
+    }
+    return sortUnique(letters)
+}
+
+// Get a random letter in the given word excluding ignoreLetters
+function getRandomLetter(word) {
+    var re = new RegExp(ignoreLetters, 'g')
+    var letters = word.replace(re, '').split('')
+    return Core.shuffle(letters)[0]
+}
+
+function getRandomMaskedQuestion(clearQuestion, guessLetters, level) {
+    var maskedQuestion = clearQuestion
+    var goodLetter = getRandomLetter(maskedQuestion)
+    var index = maskedQuestion.search(goodLetter)
+
+    // Replace the char at index with '_'
+    var repl = maskedQuestion.split('')
+    repl[index] = '_'
+    maskedQuestion = repl.join('')
+
+    // Get some other letter to confuse the children
+    var confusingLetters = []
+    for(var i = 0; i < Math.min(level + 2, 6); i++) {
+        var letter = guessLetters.shift()
+        confusingLetters.push(letter)
+        guessLetters.push(letter)
+    }
+    confusingLetters.push(goodLetter)
+
+    return [maskedQuestion, goodLetter, Core.shuffle(sortUnique(confusingLetters))]
+}
+
+function sortUnique(arr) {
+    arr = arr.sort(function (a, b) { return a.localeCompare(b); });
+    var ret = [arr[0]];
+    for (var i = 1; i < arr.length; i++) { // start loop at 1 as element 0 can never be a duplicate
+        if (arr[i-1] !== arr[i]) {
+            ret.push(arr[i]);
+        }
+    }
+    return ret;
+}
 function stop()
 {
 }
@@ -137,10 +166,24 @@ function stop()
 function initLevel()
 {
     items.bar.level = currentLevel + 1
-    dataset = Core.shuffle(questions[currentLevel])
-    currentQuestionNumber = 0
-    nextQuestion()
-    items.currentQuestionNumberText.text = "1/" + dataset.length
+    items.score.currentSubLevel = 1
+    items.score.numberOfSubLevels = questions[currentLevel].length
+    showQuestion()
+}
+
+function getCurrentQuestion() {
+    return questions[currentLevel][items.score.currentSubLevel - 1]
+}
+
+function showQuestion()
+{
+    var question = getCurrentQuestion()
+
+    playWord(question.voice)
+    items.answer = question.answer
+    items.answers.model = question.choices
+    items.questionText.text = question.maskedQuestion
+    items.questionImage.source = "qrc:/gcompris/data/" + question.image
 }
 
 function nextLevel()
@@ -152,6 +195,17 @@ function nextLevel()
     initLevel();
 }
 
+function nextSubLevel() {
+    var question = getCurrentQuestion()
+
+    if(++items.score.currentSubLevel > questions[currentLevel].length) {
+        items.bonus.good('flower')
+        nextLevel()
+        return
+    }
+    showQuestion()
+}
+
 function previousLevel()
 {
     if(--currentLevel < 0)
@@ -161,100 +215,18 @@ function previousLevel()
     initLevel();
 }
 
-function correctOptionPressed()
-{
-    nextQuestion()
-
-    if( currentQuestionNumber > dataset.length )
-        currentQuestionNumber = 0
-
-    items.currentQuestionNumberText.text =
-            currentQuestionNumber + "/" + dataset.length
-}
-
-function wrongOptionPressed()
-{
-    items.bar.opacity = 1
-}
-
-function getCorrectAnswer()
-{
-    var question = dataset[currentQuestionNumber]
-    var currentQuestion = question.questionString
-    var i = 0
-    for(  ; i < currentQuestion.length ; ++i )
-    {
-        if( "_" == currentQuestion.charAt(i)  )
-        {
-            break;
-        }
-    }
-
-    return question.answerString.charAt(i)
-}
-
-// Take appropriate action based on the character being pressed
-function answerPressed(character)
-{
-    if( character === getCorrectAnswer() )
-    {
-        items.bonus.good("flower")
-        return true
-    }
-    else
-    {
-        items.bonus.bad("flower")
-    }
-    return false
-}
-
 function showAnswer()
 {
-    var question = dataset[currentQuestionNumber]
-    items.questionText.text = question.answerString
-    items.questionText.state = "answer"
-}
-
-// Reset the screen values for next question
-function nextQuestion()
-{
-    items.questionText.state = "question"
-    items.answers.model = []
-
-    if(++currentQuestionNumber >= dataset.length) {
-        nextLevel()
-        return
-    }
-
-    var question = dataset[currentQuestionNumber]
-
-    var choice = question.choiceString
-
-    var answersModel = new Array()
-    for(var i = 0 ; i < choice.length ; ++i)
-        answersModel.push(choice.charAt(i))
-    items.answers.model = answersModel
-
-    items.questionText.text = question.questionString
-    items.questionImage.source = question.pictureSource
-}
-
-// Add a new level which contains all the questions given in the
-// questions list, combined together.
-function createLastLevel()
-{
-    var lastData = []
-    for(var level = 0 ; level < questions.length ; ++level)
-        for(var i = 0 ; i < questions.length ; ++i)
-            lastData.push(questions[level][i])
-
-    questions.push(lastData)
-
+    var question = getCurrentQuestion()
+    playLetter(question.answer)
+    items.questionText.text = question.clearQuestion
 }
 
 function playLetter(letter) {
-    // WARNING This activity is english only for now
-    // replace en by $LOCALE once i18n support
-    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/en/alphabet/"
+    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/"
                                                                        + Core.getSoundFilenamForChar(letter)))
+}
+
+function playWord(word) {
+    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath(word))
 }
