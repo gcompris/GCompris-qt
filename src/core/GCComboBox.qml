@@ -286,7 +286,7 @@ Item {
                             anchors.right: textValue.left
                             anchors.verticalCenter: parent.verticalCenter
                             anchors.rightMargin: 10
-                            sourceSize.width: (gridview.elementHeight*0.8) * ApplicationInfo.ratio
+                            sourceSize.width: (gridview.elementHeight * 0.8)
                         }
                         GCText {
                             id: textValue
