@@ -79,8 +79,8 @@ ActivityBase {
             property alias arrow: arrow
             property alias asteroidCreation: asteroidCreation
             property GCAudio audioEffects: activity.audioEffects
-            property double distLeft: Math.abs(spaceshipX)
-            property double distRight: Math.abs(background.width - spaceshipX)
+            property double distLeft: Math.abs(spaceshipX / ApplicationInfo.ratio)
+            property double distRight: Math.abs((background.width - spaceshipX) / ApplicationInfo.ratio)
             property double forceLeft: (Math.pow(scaleLeft, 2) / Math.pow(distLeft, 2)) * Math.pow(10, 6)
             property double forceRight: (Math.pow(scaleRight, 2) / Math.pow(distRight, 2)) * Math.pow(10, 6)
             // the center value for the spaceship
