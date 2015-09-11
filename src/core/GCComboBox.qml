@@ -256,12 +256,13 @@ Item {
 
             GridView {
                 id: gridview
-		z: 4
+                z: 4
                 readonly property int elementHeight: 40 * ApplicationInfo.ratio
 
-                // each element has a 300 width size minimum. If the screen is larger than it, we do a grid with cases with 300px for width at minimum.
+                // each element has a 300 width size minimum. If the screen is larger than it,
+                // we do a grid with cases with 300px for width at minimum.
                 // If you have a better idea/formula to have a different column number, don't hesitate, change it :).
-                readonly property int numberOfColumns: Math.max(1, Math.floor(width / 300))
+                readonly property int numberOfColumns: Math.max(1, Math.floor(width / (300 * ApplicationInfo.ratio)))
                 contentHeight: isModelArray ? elementHeight*model.count/numberOfColumns : elementHeight*model.length/numberOfColumns
                 width: listBackground.width
                 height: listBackground.height-headerDescription.height
@@ -283,9 +284,9 @@ Item {
                             id: isSelectedIcon
                             visible: parent.GridView.isCurrentItem
                             source: "qrc:/gcompris/src/core/resource/apply.svg"
-                            anchors.right: textValue.left
+                            anchors.left: parent.left
                             anchors.verticalCenter: parent.verticalCenter
-                            anchors.rightMargin: 10
+                            anchors.leftMargin: 10
                             sourceSize.width: (gridview.elementHeight * 0.8)
                         }
                         GCText {
