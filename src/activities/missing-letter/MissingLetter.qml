@@ -119,14 +119,16 @@ ActivityBase
             focus: true
             visible: false
 
-            // TODO, do we want to have keyboard input disreguards casing
-            property bool uppercaseOnly: false
-
             onTextChanged: {
                 if (text != '') {
-                    var typedText = uppercaseOnly ? text.toLocaleUpperCase() : text;
-                    var question = Activity.getCurrentQuestion()
-                    if(typedText === question.answer) {
+                    var typedText = text
+                    var answerText = Activity.getCurrentQuestion().answer
+                    if(ApplicationSettings.fontCapitalization === Font.AllUppercase)
+                        typedText = text.toLocaleUpperCase()
+                    else if(ApplicationSettings.fontCapitalization === Font.AllLowercase)
+                        typedText = text.toLocaleLowerCase()
+
+                    if(typedText === answerText) {
                         questionAnim.start()
                         Activity.showAnswer()
                     }
