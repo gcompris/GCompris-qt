@@ -195,7 +195,7 @@ add_custom_target(BuildTranslations
   COMMENT "If you don't have the .po, you need to run make getSvnTranslations first then re-run cmake"
   )
 
-INSTALL(FILES docs/gcompris-qt.1 DESTINATION man/man1)
+INSTALL(FILES docs/gcompris-qt.1 DESTINATION ${CMAKE_INSTALL_PREFIX}/share/man/man1)
 
 if(CMAKE_HOST_APPLE)
   install(DIRECTORY ${GCOMPRIS_TRANSLATIONS_DIR} DESTINATION ${_bundle_bin})
