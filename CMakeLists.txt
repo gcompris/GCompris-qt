@@ -151,6 +151,18 @@ add_custom_target(getSvnTranslations
   COMMENT "Re-run cmake after this to be able to run BuildTranslations with the latest files"
   )
 
+find_file(Qt5_LCONVERT NAMES lconvert lconvert-qt5
+  PATHS ${Qt5_DIR}/../../../bin /usr/bin
+  NO_DEFAULT_PATH
+  DOC "Path to QT5 lconvert tool"
+  )
+
+find_file(Qt5_LRELEASE NAMES lrelease lrelease-qt5
+  PATHS ${Qt5_DIR}/../../../bin /usr/bin
+  NO_DEFAULT_PATH
+  DOC "Path to QT5 lrelease tool"
+  )
+
 # Get all po files in po/. You can get them doing : python2 tools/l10n-fetch-po-files.py
 file(GLOB TRANSLATIONS_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "po/*.po")
 # Set the output dir for the translation files to /bin
@@ -170,9 +182,9 @@ foreach(PoSource ${TRANSLATIONS_FILES})
     # Remove the obsolete translations and set po in the ts output file
     COMMAND msgattrib --no-obsolete  ${CMAKE_CURRENT_SOURCE_DIR}/${PoSource} -o ${OutTsFile}
     # Convert the po into ts
-    COMMAND ${Qt5_DIR}/../../../bin/lconvert -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
+    COMMAND ${Qt5_LCONVERT} -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
     # Convert the ts in qm removing non finished translations
-    COMMAND ${Qt5_DIR}/../../../bin/lrelease -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
+    COMMAND ${Qt5_LRELEASE} -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
     )
   list(APPEND QM_FILES ${QmOutput})
 endforeach()
