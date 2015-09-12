@@ -236,7 +236,7 @@ public:
     static QString GCVersion() { return VERSION; }
     static QString QTVersion() { return qVersion(); }
     static QString CompressedAudio() { return COMPRESSED_AUDIO; }
-    static bool isDownloadAllowed() { return DOWNLOAD_ALLOWED == "ON"; }
+    static bool isDownloadAllowed() { return QString(DOWNLOAD_ALLOWED) == "ON"; }
 
     /// @endcond
 
