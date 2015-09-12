@@ -59,7 +59,7 @@ void ActivityInfo::setSection(const QString &section)
   emit sectionChanged();
 }
 
-int ActivityInfo::difficulty() const
+quint32 ActivityInfo::difficulty() const
 {
   return m_difficulty;
 }
