@@ -4,7 +4,7 @@ else(SAILfISHOS)
   cmake_minimum_required(VERSION 2.8.12)
 endif()
 
-project(gcompris C CXX)
+project(gcompris-qt C CXX)
 
 # Set c++11 support
 include(CheckCXXCompilerFlag)
@@ -22,7 +22,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${my_cxx_flags}")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${my_cxx_flags}")
 
 set(GCOMPRIS_MAJOR_VERSION 0)
-set(GCOMPRIS_MINOR_VERSION 43)
+set(GCOMPRIS_MINOR_VERSION 44)
 set(GCOMPRIS_PATCH_VERSION 0)
 
 # Set executable filename
