@@ -124,7 +124,7 @@ public:
 	void setName(const QString &);
 	QString section() const;
 	void setSection(const QString &);
-	int difficulty() const;
+    quint32 difficulty() const;
 	void setDifficulty(const int &);
 	QString icon() const;
 	void setIcon(const QString &);
