@@ -82,6 +82,21 @@ if(KF5_FOUND)
     include(KDEInstallDirs)
 endif(KF5_FOUND)
 
+FIND_PROGRAM(LCONVERT_EXECUTABLE lconvert
+  PATHS
+  ${Qt5_DIR}/../../../bin/
+  /usr/local/bin
+  /usr/bin/
+  NO_DEFAULT_PATH
+)
+FIND_PROGRAM(LRELEASE_EXECUTABLE lrelease
+  PATHS
+  ${Qt5_DIR}/../../../bin/
+  /usr/local/bin
+  /usr/bin/
+  NO_DEFAULT_PATH
+)
+
 #get_cmake_property(_variableNames VARIABLES)
 #foreach (_variableName ${_variableNames})
 #    message("${_variableName}=${${_variableName}}")
@@ -170,9 +185,9 @@ foreach(PoSource ${TRANSLATIONS_FILES})
     # Remove the obsolete translations and set po in the ts output file
     COMMAND msgattrib --no-obsolete  ${CMAKE_CURRENT_SOURCE_DIR}/${PoSource} -o ${OutTsFile}
     # Convert the po into ts
-    COMMAND ${Qt5_DIR}/../../../bin/lconvert -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
+    COMMAND ${LCONVERT_EXECUTABLE} -if po -of ts -i ${OutTsFile} -o ${OutTsFile}
     # Convert the ts in qm removing non finished translations
-    COMMAND ${Qt5_DIR}/../../../bin/lrelease -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
+    COMMAND ${LRELEASE_EXECUTABLE} -compress -nounfinished ${OutTsFile} -qm ${GCOMPRIS_TRANSLATIONS_DIR}/${QmOutput}
     )
   list(APPEND QM_FILES ${QmOutput})
 endforeach()
