@@ -138,7 +138,8 @@ ActivityBase {
                 displayDialog(dialogHelp)
             }
             onHomeClicked: {
-                if(!items.menuScreen.started && !items.imageReview.started)
+                // if we don't have the images, we leave the activity on home()
+                if(DownloadManager.haveLocalResource(wordsResource) && !items.menuScreen.started && !items.imageReview.started)
                     // We're in a mini game, start imageReview
                     items.imageReview.start()
                 else if(items.imageReview.started)
