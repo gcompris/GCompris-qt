@@ -64,11 +64,11 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property alias daysky: daysky
+            property alias sky: sky
         }
 
         Image {
-            id: daysky
+            id: sky
             anchors.top: parent.top
             sourceSize.width: parent.width
             source: activity.url + "sky.svg"
@@ -380,7 +380,6 @@ ActivityBase {
                         residentbigon.visible = true
                         Activity.consume(600)
                         Activity.update()
-
                         big_consume.text = "600 W"
                         checkbonus()
                     }
@@ -634,7 +633,7 @@ ActivityBase {
             moon_rise.running = false
             moon.opacity = 0
             moon_anim.running= false
-            daysky.source = activity.url + "sky.svg"
+            sky.source = activity.url + "sky.svg"
         }
 
         function reload() {
@@ -656,7 +655,7 @@ ActivityBase {
                 residentbigoff.visible = true
                 small_consume_rect.visible = true
                 big_consume_rect.visible = true
-                daysky.source = activity.url + "sky.svg"
+                sky.source = activity.url + "sky.svg"
                 moon_anim.running = true
             }
         }

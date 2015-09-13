@@ -132,9 +132,9 @@ function showtuxmeter() {
 function sceneload(scene_) {
     scene = scene_
     if(scene == false) {
-        items.daysky.source = "resource/sky.svg"
+        items.sky.source = "resource/sky.svg"
     }
     else {
-        items.daysky.source = "../intro_gravity/resource/background.svg"
+        items.sky.source = "../intro_gravity/resource/background.svg"
     }
 }
