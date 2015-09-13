@@ -347,10 +347,8 @@ inline QStringList DownloadManager::getSystemResourcePaths() const
             '/' + GCOMPRIS_APPLICATION_NAME
     });
 
-    // Append standard application directories (like /usr/share/applications/)
-    foreach(const QString &path, QStandardPaths::standardLocations(QStandardPaths::ApplicationsLocation)) {
-        results.append(path + '/' + GCOMPRIS_APPLICATION_NAME);
-    }
+    // Append standard application directories (like /usr/share/KDE/gcompris-qt)
+    results += QStandardPaths::standardLocations(QStandardPaths::AppDataLocation);
 
     return results;
 }

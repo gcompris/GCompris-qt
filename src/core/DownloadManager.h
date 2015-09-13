@@ -140,8 +140,8 @@ private:
      *             - $HOME/.local/share/KDE/gcompris-qt
      *             - $HOME/.local/share/gcompris-qt
      *             - $HOME/.local/share/applications/gcompris-qt
-     *             - /usr/share/applications/gcompris-qt
-     *             - /usr/local/share/applications/gcompris-qt
+     *             - /usr/local/share/KDE/gcompris-qt
+     *             - /usr/share/KDE/gcompris-qt
      */
     QStringList getSystemResourcePaths() const;
     QString getResourceRootForFilename(const QString& filename) const;
