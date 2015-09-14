@@ -34,13 +34,19 @@ import "balancebox.js" as Activity
 ActivityBase {
     id: activity
 
-    onStart: focus = true
-    onStop: {}
+    property string mode: "play"  // play or test
+    property var testLevel
+
+    onStart: {
+        console.log("XXX BalanceBox onStart");
+        focus = true;
+    }
+    onStop: {console.log("XXX BalanceBox onStop");}
 
     Keys.enabled: ApplicationInfo.isMobile ? false : true
     Keys.onPressed: Activity.processKeyPress(event.key)
     Keys.onReleased: Activity.processKeyRelease(event.key)
-        
+
     pageComponent: Image {
         id: background
         source: Activity.baseUrl + "/maze_bg.svg"
@@ -55,10 +61,20 @@ ActivityBase {
             }
         }
 
+        Keys.onEscapePressed: {
+            console.log("XXX Balancebox onEscape");
+            if (activity.mode == "test") {
+                console.log("XXX Balancebox onEscape");
+                startEditor();
+                event.accepted = true;
+            } else
+                event.accepted = false;
+        }
+
         function startEditor() {
             console.log("XXX: launching editor");
-            editor.visible = true;
-            displayDialog(editor);
+            editorLoader.active = true;
+            displayDialog(editorLoader.item);
         }
 
         Button {
@@ -69,6 +85,7 @@ ActivityBase {
             height: 30
             text: "Editor"
             onClicked: {
+                //console.log("XXX mode=" + activity.mode);
                 startEditor();
             }
         }
@@ -86,6 +103,8 @@ ActivityBase {
 
         QtObject {
             id: items
+            property string mode: activity.mode
+            property var testLevel: activity.testLevel
             property Item main: activity.main
             property alias background: background
             property alias bar: bar
@@ -107,15 +126,20 @@ ActivityBase {
             property double dpi
         }
 
-        BalanceboxEditor {
-            id: editor
-            visible: false
+        Loader {
+            id: editorLoader
+            active: false
+            sourceComponent: BalanceboxEditor {
+                id: editor
+                visible: true
+                testBox: activity
 
-            onClose: {
-                console.log("XXX editor.onClose");
-                activity.home()
+                onClose: {
+                    console.log("XXX editor.onClose");
+                    activity.home()
+                }
+
             }
-
         }
 
         JsonParser {
@@ -336,13 +360,20 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent {
+                value: activity.mode == "play" ? (help | home | level) : ( help | home )
+            }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
-            onHomeClicked: activity.home()
+            onHomeClicked: {
+                if (activity.mode == "test")
+                    background.startEditor();
+                else
+                    activity.home()
+            }
         }
 
         Bonus {

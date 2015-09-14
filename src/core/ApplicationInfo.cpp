@@ -31,6 +31,7 @@
 #include <QtGui/QScreen>
 #include <QtCore/QLocale>
 #include <QtQuick/QQuickWindow>
+#include <QStandardPaths>
 
 #include <qmath.h>
 #include <QDebug>
@@ -172,6 +173,11 @@ QString ApplicationInfo::getLocaleFilePath(const QString &file)
     QString filename = file;
     filename.replace("$LOCALE", localeShortName);
     return filename;
+}
+
+QString ApplicationInfo::getWritablePath() const
+{
+    return QStandardPaths::writableLocation(QStandardPaths::DataLocation);
 }
 
 QStringList ApplicationInfo::getSystemExcludedFonts()

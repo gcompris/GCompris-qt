@@ -146,7 +146,7 @@ Item {
     onDisplayDialog: menu ? menu.displayDialog(dialog) : ""
 
     Keys.forwardTo: activity.children
-    Keys.onEscapePressed: home()
+    Keys.onEscapePressed: {console.log("XXX: Base onEscape"); home();}
     Keys.onPressed: {
         if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_Q) {

@@ -102,7 +102,7 @@ QtObject {
         } else if (url.substring(0,4) == "http")
             error("http:// scheme not yet implemented");
         else // unknown url scheme
-            error("Unknown url scheme in url parameter");
+            error("Unknown url scheme in url parameter: " + url);
         return null;
     }
 }

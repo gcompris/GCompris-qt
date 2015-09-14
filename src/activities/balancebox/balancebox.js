@@ -99,39 +99,31 @@ var baseUrl = "qrc:/gcompris/src/activities/balancebox/resource";
 var levelsFile = baseUrl + "/levels-default.json"; 
 var level;
 var map; // current map
-var goal;
+
+var goal = null;
+var holes = new Array();
+var walls = new Array();
+var contacts = new Array();
+var ballContacts = new Array();
 var goalUnlocked;
-var holes;
-var walls;
-var contacts;
 var lastContact;
 var ballContacts;
 var wallComponent = Qt.createComponent("qrc:/gcompris/src/activities/balancebox/Wall.qml");
 var contactComponent = Qt.createComponent("qrc:/gcompris/src/activities/balancebox/BalanceContact.qml");
 var balanceItemComponent = Qt.createComponent("qrc:/gcompris/src/activities/balancebox/BalanceItem.qml");
 var contactIndex = -1;
+var userFile = GCompris.ApplicationInfo.getWritablePath() + "/balancebox/" + "levels-user.json"
 
 function start(items_) {
     items = items_;
 
-    if (GCompris.ApplicationInfo.isMobile) {
-        var or = GCompris.ApplicationInfo.getRequestedOrientation();
-        GCompris.ApplicationInfo.setRequestedOrientation(5);
-        /* -1: SCREEN_ORIENTATION_UNSPECIFIED
-         * 0:  SCREEN_ORIENTATION_LANDSCAPE: forces landscape, inverted rotation
-         *     on S2
-         * 5:  SCREEN_ORIENTATION_NOSENSOR:
-         *     forces 'main' orientation mode on each device (portrait on handy
-         *     landscape on tablet and reports rotation correctly)
-         * 14: SCREEN_ORIENTATION_LOCKED: inverted rotation on tablet
-         */
-    }
-
+    currentLevel = 0;
     // set up dynamic variables for movement:
     pixelsPerMeter = boardSizePix / boardSizeM / (items.dpi / dpiBase);
     vFactor = pixelsPerMeter / box2dPpm;
 
-    console.log("Starting: pixelsPerM=" + items.world.pixelsPerMeter
+    console.log("Starting: mode=" + items.mode
+            + " pixelsPerM=" + items.world.pixelsPerMeter
             + " timeStep=" + items.world.timeStep
             + " posIterations=" + items.world.positionIterations
             + " velIterations=" + items.world.velocityIterations
@@ -140,21 +132,32 @@ function start(items_) {
             + " vFactor=" + vFactor
             + " dpi=" + items.dpi);
 
-    goal = null;
-    holes = new Array();
-    walls = new Array();
-    contacts = new Array();
-    ballContacts = new Array();
-    currentLevel = 0;
-    
-    dataset = items.parser.parseFromUrl(levelsFile, validateLevels);
-    if (dataset == null) {
-        console.error("Balancebox: Error loading levels from " + levelsFile
-                + ", can't continue!");
-        return;
+    if (items.mode === "play") {
+        if (GCompris.ApplicationInfo.isMobile) {
+            var or = GCompris.ApplicationInfo.getRequestedOrientation();
+            GCompris.ApplicationInfo.setRequestedOrientation(5);
+            /* -1: SCREEN_ORIENTATION_UNSPECIFIED
+         * 0:  SCREEN_ORIENTATION_LANDSCAPE: forces landscape, inverted rotation
+         *     on S2
+         * 5:  SCREEN_ORIENTATION_NOSENSOR:
+         *     forces 'main' orientation mode on each device (portrait on handy
+         *     landscape on tablet and reports rotation correctly)
+         * 14: SCREEN_ORIENTATION_LOCKED: inverted rotation on tablet
+         */
+        }
+
+
+        dataset = items.parser.parseFromUrl(levelsFile, validateLevels);
+        if (dataset == null) {
+            console.error("Balancebox: Error loading levels from " + levelsFile
+                          + ", can't continue!");
+            return;
+        }
+    } else {
+        // testmode:
+        dataset = [items.testLevel];
     }
     numberOfLevel = dataset.length;
-
     initLevel();
 }
 
@@ -331,8 +334,6 @@ function initMap()
                         imageSource: baseUrl + "/door_closed.svg",
                         categories: items.goalType,
                         sensor: true});
-                //console.log("found goal at col/row " + col + "/" + row
-                //        + "  " + goalX + "/" + goalY);
             }
             
             if (map[row][col] & HOLE) {
@@ -365,15 +366,12 @@ function initMap()
                     sensor: true,
                     orderNum: orderNum,
                     text: level.targets[orderNum-1]}));
-                //console.log("found contact at col/row " + col + "/" + row
-                //        + "  " + contactX + "/" + contactY + " w/h=" + (items.cellSize - items.wallSize));
             }
         }
-        //modelMap = modelMap.concat(map[row]);
     }
-//    console.log("setting model to " + JSON.stringify(modelMap)
-//            + " cellsize=" + items.cellSize + " wallsize"+items.wallSize);
-    //items.mazeRepeater.model = modelMap;
+    if (goalUnlocked)  // if we have no contacts at all
+        goal.imageSource = baseUrl + "/door.svg";
+
 }
 
 function addBallContact(item)
@@ -422,14 +420,14 @@ function tearDown()
     ballContacts = new Array();
 }
 
-function initLevel() {
+function initLevel(testLevel) {
     items.bar.level = currentLevel + 1;
 
     // reset everything
     tearDown();
 
-    map = dataset[currentLevel].map;
     level = dataset[currentLevel];
+    map = level.map
     initMap();
     items.timer.start();
 }
@@ -502,148 +500,4 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
-}
-
-var TOOL_H_WALL = SOUTH
-var TOOL_V_WALL = EAST
-var TOOL_HOLE = HOLE
-var TOOL_CONTACT = CONTACT
-var TOOL_GOAL = GOAL
-var TOOL_BALL = START
-
-function initEditor(props)
-{
-    console.log("XXX init editor " + props + " map: " + map);
-    props.mapModel.clear();
-
-    for (var row = 0; row < map.length; row++) {
-        for (var col = 0; col < map[row].length; col++) {
-            var contactValue = "";
-            var value = parseInt(map[row][col]);  // always enforce number
-            var orderNum = (value & 0xFF00) >> 8;
-            if (orderNum > 0 && level.targets[orderNum - 1] === undefined) {
-                console.error("Invalid level: orderNum " + orderNum
-                              + " without target value!");
-            } else if (orderNum > 0) {
-                if (orderNum > props.lastOrderNum)
-                    props.lastOrderNum = orderNum;
-                contactValue = Number(level.targets[orderNum-1]).toString();
-                if (contactValue > parseInt(props.contactValue) + 1)
-                    props.contactValue = Number(parseInt(contactValue) + 1).toString();
-            }
-            props.mapModel.append({
-                "row": row,
-                "col": col,
-                "value": value,
-                "orn": orderNum,
-                "contactValue": orderNum > 0 ? contactValue : ""
-            });
-            if (value & GOAL) {
-                if (props.lastGoalIndex > -1) {
-                    console.error("Invalid level: multiple goal locations: row/col="
-                                  + row + "/" + col);
-                    return;
-                }
-                props.lastGoalIndex = row * map.length + col;
-            }
-            if (value & START) {
-                if (props.lastBallIndex > -1) {
-                    console.error("Invalid level: multiple start locations: row/col="
-                                  + row + "/" + col);
-                    return;
-                }
-                props.lastBallIndex = row * map.length + col;
-            }
-        }
-    }
-}
-
-function dec2hex(i) {
-   return (i+0x10000).toString(16).substr(-4).toUpperCase();
-}
-
-function modelToLevel(props)
-{
-    map = new Array();
-    var targets = new Array();
-    for (var i = 0; i < props.mapModel.count; i++) {
-        var row = Math.floor(i / props.columns);
-        var col = i % props.columns;
-        if (col === 0) {
-            map[row] = new Array();
-        }
-
-        var obj = props.mapModel.get(i);
-        var value = obj.value;
-        if (obj.orn > 0) {
-            value |= (obj.orn << 8);
-            targets[obj.orn-1] = obj.contactValue;
-        }
-        map[row][col] = "0x" + dec2hex(value);
-    }
-    var level = {
-                    level: "0",
-                    map: map,
-                    targets: targets
-                }
-    console.log("XXX level: " + JSON.stringify(level) + " - " + map);
-}
-
-function modifyMap(props, row, col)
-{
-    //console.log("XXX modify map currentTool='" + props.currentTool + "'");
-    var modelIndex = row * map.length + col;
-    var obj = props.mapModel.get(modelIndex);
-    var newValue = obj.value;
-
-    // special treatment for mutually exclusive ones:
-    if (props.currentTool === TOOL_HOLE
-            || props.currentTool === TOOL_GOAL
-            || props.currentTool === TOOL_CONTACT
-            || props.currentTool === TOOL_BALL) {
-        // helper:
-        var MUTEX_MASK = (START | GOAL | HOLE | CONTACT) ^ props.currentTool;
-        newValue &= ~MUTEX_MASK;
-    }
-
-    // special treatment for singletons:
-    if (props.currentTool === TOOL_GOAL) {
-        console.log("GGGoal " + (obj.value & TOOL_GOAL));
-        if ((obj.value & TOOL_GOAL) === 0) {
-            // setting a new one
-            if (props.lastGoalIndex > -1) {
-                // clear last one first:
-                props.mapModel.setProperty(props.lastGoalIndex, "value",
-                                           props.mapModel.get(props.lastGoalIndex).value &
-                                           (~TOOL_GOAL));
-            }
-            // now memorize the new one:
-            props.lastGoalIndex = modelIndex;
-        }
-    } else
-    if (props.currentTool === TOOL_BALL) {
-        if ((obj.value & TOOL_BALL) === 0) {
-            // setting a new one
-            if (props.lastBallIndex > -1)
-                // clear last one first:
-                props.mapModel.setProperty(props.lastBallIndex, "value",
-                                           props.mapModel.get(props.lastBallIndex).value & (~TOOL_BALL));
-            // now memorize the new one:
-            props.lastBallIndex = modelIndex;
-        }
-    }
-
-    // special treatment for contacts:
-    if (props.currentTool === TOOL_CONTACT) {
-        props.mapModel.setProperty(row * map.length + col, "orn", ++props.lastOrderNum);
-        props.mapModel.setProperty(row * map.length + col, "contactValue", props.contactValue);
-        var newContact =  Number(Number(props.contactValue) + 1).toString()
-        props.contactValue = newContact;
-    }
-
-    // update value by current tool bit:
-    newValue ^= props.currentTool;
-
-    console.log("XXX value=" + obj.value + " typeof=" + typeof(obj.value) + " newValue=" + newValue + " typeof=" + typeof(newValue));
-    props.mapModel.setProperty(modelIndex, "value", newValue);
 }

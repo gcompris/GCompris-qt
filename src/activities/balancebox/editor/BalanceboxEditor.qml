@@ -25,15 +25,19 @@ import QtQuick.Controls 1.0
 
 import "../../../core"
 import ".."
-import "../balancebox.js" as Activity
+import "balanceboxeditor.js" as Activity
 
 
 Item {
     id: editor
 
+    property string filename: Activity.userFile
     property bool isDialog: true
 
     property ActivityBase currentActivity
+    property var testBox
+
+    property bool isTesting: false
 
     /**
      * Emitted when the config dialog has been closed.
@@ -51,7 +55,27 @@ Item {
     Keys.onPressed: Activity.processKeyPress(event.key)
     Keys.onReleased: Activity.processKeyRelease(event.key)
   */
-    onStart: Activity.initEditor(props);
+
+    Keys.onEscapePressed: {
+        console.log("XXX editor onEscape");
+        if (!isTesting) {
+            if (Activity.levelChanged)
+                Activity.warnUnsavedChanges(home,
+                                            function() {});
+            else
+                home()
+        } else
+            event.accepted = false;
+    }
+
+    onStart: {
+        console.log("XXX Editor onStart");
+        if (!isTesting)
+            Activity.initEditor(props);
+        else
+            stopTesting();
+    }
+    onStop: {console.log("XXX Editor onStop");}
 
     Component.onCompleted: console.log("XXX editor complete");
 
@@ -60,14 +84,37 @@ Item {
         property int columns: 10
         property int rows: 10
         property int currentTool
+        property alias editor: editor
         property alias mapModel: mapModel
-        property alias mapGrimd: mapGrid
+        property alias mapWrapper: mapWrapper
+        property int cellSize: mapWrapper.length / Math.min(mapWrapper.rows, mapWrapper.columns)
+        property int wallSize: cellSize / 5
+        property int ballSize: cellSize - 2*wallSize
         property alias toolBox: toolBox
         property string contactValue: "1"
+        property int lastOrderNum: 0
+        property alias file: file
+        property alias parser: parser
+        property alias bar: bar
         // singletons:
         property int lastGoalIndex: -1
         property int lastBallIndex: -1
-        property int lastOrderNum: 0
+    }
+
+    function startTesting() {
+        console.log("BalanceboxEditor: entering testing mode");
+        editor.isTesting = true;
+        testBox.mode = "test";
+        testBox.testLevel = Activity.modelToLevel();
+        testBox.start();
+        activity.home();
+    }
+
+    function stopTesting() {
+        console.log("BalanceboxEditor: stopping testing mode");
+        editor.isTesting = false;
+        testBox.mode = "play";
+        testBox.testLevel = null;
     }
 
     Rectangle {
@@ -78,9 +125,15 @@ Item {
             console.log("XXX editor completed");
         }
 
+        File {
+            id: file
+
+            onError: console.error("File error: " + msg);
+        }
+
         JsonParser {
             id: parser
-            onError: console.error("Balancebox: Error parsing JSON: " + msg);
+            onError: console.error("Balanceboxeditor: Error parsing JSON: " + msg);
         }
 
         GCText {
@@ -92,8 +145,10 @@ Item {
 
         Column {
             id: toolBox2
-            anchors.top: background.top
-            anchors.right: background.right
+            anchors.top: mapWrapper.top
+            anchors.left: mapWrapper.right
+            anchors.leftMargin: 20
+            spacing: 5
             width: 80
             height: parent.height
             anchors.topMargin: 20
@@ -101,13 +156,21 @@ Item {
 
             Button {
                 id: saveButton
-                width: 80
+                width:100
                 height: 30
                 style: GCButtonStyle {}
                 text: "Save"
                 onClicked: {
-                    Activity.modelToLevel(props);
+                    Activity.saveModel();
                 }
+            }
+            Button {
+                id: testButton
+                width: 100
+                height: 30
+                style: GCButtonStyle {}
+                text: "Test"
+                onClicked: editor.startTesting();
             }
         }
 
@@ -115,13 +178,16 @@ Item {
             id: toolBox
             anchors.top: title.bottom
             anchors.left: parent.left
-            width: items.cellSize
+            width: props.cellSize
+            spacing: 5
             anchors.leftMargin: (mapWrapper.x - width ) / 2
 
+            Component.onCompleted: clearTool.selected = true;
 
             function setCurrentTool(item)
             {
                 props.currentTool = item.type;
+                if (clearTool !== item) clearTool.selected = false;
                 if (hWallTool !== item) hWallTool.selected = false;
                 if (vWallTool !== item) vWallTool.selected = false;
                 if (holeTool !== item) holeTool.selected = false;
@@ -132,11 +198,36 @@ Item {
             }
 
             EditorTool {
+                id: clearTool
+                type: Activity.TOOL_CLEAR
+                anchors.left: parent.left
+                width: props.cellSize - 2
+                height: props.cellSize - 2
+
+                onSelectedChanged: {
+                    if (selected) {
+                        toolBox.setCurrentTool(clearTool);
+                    }
+                }
+
+                Image {
+                    id: clear
+
+                    source: "qrc:/gcompris/src/core/resource/cancel.svg"
+                    width: parent.width
+                    height: parent.height
+
+                    anchors.centerIn: parent
+                    anchors.margins: 3
+                }
+            }
+
+            EditorTool {
                 id: hWallTool
                 type: Activity.TOOL_H_WALL
                 anchors.left: parent.left
-                width: items.cellSize
-                height: items.cellSize
+                width: props.cellSize
+                height: props.cellSize
 
                 onSelectedChanged: {
                     if (selected) {
@@ -148,7 +239,7 @@ Item {
                     id: hWall
 
                     width: parent.width
-                    height: items.wallSize
+                    height: props.wallSize
 
                     anchors.centerIn: parent
                     anchors.margins: 3
@@ -158,8 +249,8 @@ Item {
             EditorTool {
                 id: vWallTool
                 anchors.left: parent.left
-                width: items.cellSize
-                height: items.cellSize
+                width: props.cellSize
+                height: props.cellSize
                 type: Activity.TOOL_V_WALL
 
                 onSelectedChanged: {
@@ -171,7 +262,7 @@ Item {
                 Wall {
                     id: vWall
 
-                    width: items.wallSize
+                    width: props.wallSize
                     height: parent.height
 
                     anchors.centerIn: parent
@@ -182,8 +273,8 @@ Item {
             EditorTool {
                 id: holeTool
                 anchors.left: parent.left
-                width: items.cellSize
-                height: items.cellSize
+                width: props.cellSize
+                height: props.cellSize
                 type: Activity.TOOL_HOLE
                 onSelectedChanged: {
                     if (selected) {
@@ -193,10 +284,10 @@ Item {
 
                 BalanceItem {
                     id: hole
-                    width: parent.width - items.wallSize / 2
-                    height: parent.height - items.wallSize / 2
+                    width: parent.width - props.wallSize / 2
+                    height: parent.height - props.wallSize / 2
                     anchors.centerIn: parent
-                    anchors.margins: items.wallSize / 2
+                    anchors.margins: props.wallSize / 2
                     visible: true
                     imageSource: Activity.baseUrl + "/hole.svg"
                 }
@@ -205,8 +296,8 @@ Item {
             EditorTool {
                 id: ballTool
                 anchors.left: parent.left
-                width: items.cellSize
-                height: items.cellSize
+                width: props.cellSize
+                height: props.cellSize
                 type: Activity.TOOL_BALL
                 onSelectedChanged: {
                     if (selected) {
@@ -216,10 +307,10 @@ Item {
 
                 BalanceItem {
                     id: ball
-                    width: parent.width - items.wallSize / 2
-                    height: parent.height - items.wallSize / 2
+                    width: parent.width - props.wallSize / 2
+                    height: parent.height - props.wallSize / 2
                     anchors.centerIn: parent
-                    anchors.margins: items.wallSize / 2
+                    anchors.margins: props.wallSize / 2
                     visible: true
                     imageSource: Activity.baseUrl + "/ball.svg"
                 }
@@ -228,8 +319,8 @@ Item {
             EditorTool {
                 id: goalTool
                 anchors.left: parent.left
-                width: items.cellSize
-                height: items.cellSize
+                width: props.cellSize
+                height: props.cellSize
                 type: Activity.TOOL_GOAL
                 onSelectedChanged: {
                     if (selected) {
@@ -239,10 +330,10 @@ Item {
 
                 BalanceItem {
                     id: goal
-                    width: items.cellSize - items.wallSize
-                    height: items.cellSize - items.wallSize
+                    width: props.cellSize - props.wallSize
+                    height: props.cellSize - props.wallSize
                     anchors.centerIn: parent
-                    anchors.margins: items.wallSize / 2
+                    anchors.margins: props.wallSize / 2
                     z: 1
                     imageSource: Activity.baseUrl + "/door.svg"
                 }
@@ -250,15 +341,15 @@ Item {
 
             Rectangle {
                 id: contactToolWrapper
-                width: items.cellSize * 2
-                height: items.cellSize
+                width: props.cellSize * 2
+                height: props.cellSize
                 color: "silver"
 
                 EditorTool {
                     id: contactTool
                     anchors.left: parent.left
-                    width: items.cellSize
-                    height: items.cellSize
+                    width: props.cellSize
+                    height: props.cellSize
                     type: Activity.TOOL_CONTACT
                     onSelectedChanged: {
                         if (selected) {
@@ -268,10 +359,10 @@ Item {
 
                     BalanceContact {
                         id: contact
-                        width: items.cellSize - items.wallSize
-                        height: items.cellSize - items.wallSize
+                        width: props.cellSize - props.wallSize
+                        height: props.cellSize - props.wallSize
                         anchors.centerIn: parent
-                        anchors.margins: items.wallSize / 2
+                        anchors.margins: props.wallSize / 2
                         pressed: false
                         orderNum: 99
                         text: props.contactValue
@@ -330,20 +421,20 @@ Item {
 
                     delegate: Item {  // cell wrapper
                         id: cell
-                        width: items.cellSize
-                        height: items.cellSize
+                        width: props.cellSize
+                        height: props.cellSize
 
                         property bool highlighted: false
 
                         Loader {
                             id: northWallLoader
                             active: value & Activity.NORTH
-                            width: items.cellSize + items.wallSize
-                            height: items.wallSize
+                            width: props.cellSize + props.wallSize
+                            height: props.wallSize
                             anchors.top: parent.top
                             anchors.left: parent.left
-                            anchors.topMargin: -items.wallSize / 2
-                            anchors.leftMargin: -items.wallSize / 2
+                            anchors.topMargin: -props.wallSize / 2
+                            anchors.leftMargin: -props.wallSize / 2
                             sourceComponent: Wall {
                                 id: northWall
                                 shadow: false
@@ -355,12 +446,12 @@ Item {
                         Loader {
                             id: eastWallLoader
                             active: value & Activity.EAST || (cell.highlighted && props.currentTool === Activity.TOOL_V_WALL)
-                            width: items.wallSize
-                            height: items.cellSize + items.wallSize
+                            width: props.wallSize
+                            height: props.cellSize + props.wallSize
                             anchors.bottom: parent.bottom
                             anchors.right: parent.right
-                            anchors.bottomMargin: -items.wallSize / 2
-                            anchors.rightMargin: -items.wallSize / 2
+                            anchors.bottomMargin: -props.wallSize / 2
+                            anchors.rightMargin: -props.wallSize / 2
                             sourceComponent: Wall {
                                 id: eastWall
                                 anchors.centerIn: parent
@@ -372,12 +463,12 @@ Item {
                         Loader {
                             id: southWallLoader
                             active: value & Activity.SOUTH || (cell.highlighted && props.currentTool === Activity.SOUTH)
-                            width: items.cellSize + items.wallSize
-                            height: items.wallSize
+                            width: props.cellSize + props.wallSize
+                            height: props.wallSize
                             anchors.bottom: parent.bottom
                             anchors.left: parent.left
-                            anchors.bottomMargin: -items.wallSize / 2
-                            anchors.leftMargin: -items.wallSize / 2
+                            anchors.bottomMargin: -props.wallSize / 2
+                            anchors.leftMargin: -props.wallSize / 2
                             sourceComponent: Wall {
                                 id: southWall
                                 anchors.centerIn: parent
@@ -389,12 +480,12 @@ Item {
                         Loader {
                             id: westWallLoader
                             active: value & Activity.WEST
-                            width: items.wallSize
-                            height: items.cellSize + items.wallSize
+                            width: props.wallSize
+                            height: props.cellSize + props.wallSize
                             anchors.bottom: parent.bottom
                             anchors.left: parent.left
-                            anchors.bottomMargin: -items.wallSize / 2
-                            anchors.leftMargin: -items.wallSize / 2
+                            anchors.bottomMargin: -props.wallSize / 2
+                            anchors.leftMargin: -props.wallSize / 2
                             sourceComponent: Wall {
                                 id: westWall
                                 anchors.centerIn: parent
@@ -407,8 +498,8 @@ Item {
                             id: doorLoader
                             active: value & Activity.GOAL || (cell.highlighted && props.currentTool === Activity.TOOL_GOAL)
                             anchors.centerIn: parent
-                            width: items.cellSize - items.wallSize
-                            height: items.cellSize - items.wallSize
+                            width: props.cellSize - props.wallSize
+                            height: props.cellSize - props.wallSize
                             sourceComponent: BalanceItem {
                                 id: goal
                                 anchors.centerIn: parent
@@ -423,8 +514,8 @@ Item {
                             anchors.centerIn: parent
                             sourceComponent: BalanceItem {
                                 id: hole
-                                width: items.ball.width
-                                height:items.ball.height
+                                width: props.ballSize
+                                height:props.ballSize
                                 anchors.centerIn: parent
                                 z: 1
                                 imageSource: Activity.baseUrl + "/hole.svg"
@@ -437,8 +528,8 @@ Item {
                             anchors.centerIn: parent
                             sourceComponent: BalanceItem {
                                     id: ball
-                                    width: items.ball.width
-                                    height:items.ball.height
+                                    width: props.ballSize
+                                    height:props.ballSize
                                     anchors.centerIn: parent
                                     visible: true
                                     imageSource: Activity.baseUrl + "/ball.svg"
@@ -449,8 +540,8 @@ Item {
                         Loader {
                             id: contactLoader
                             active: (orn > 0) || (cell.highlighted && props.currentTool === Activity.TOOL_CONTACT)
-                            width: items.cellSize - items.wallSize
-                            height: items.cellSize - items.wallSize
+                            width: props.cellSize - props.wallSize
+                            height: props.cellSize - props.wallSize
                             anchors.centerIn: parent
                             sourceComponent: BalanceContact {
                                 id: contact
@@ -466,8 +557,8 @@ Item {
                         Rectangle {  // bounding rect
                             id: cellRect
 
-                            width: items.cellSize
-                            height: items.cellSize
+                            width: props.cellSize
+                            height: props.cellSize
                             color: "transparent"
                             border.width: 1
                             border.color: cell.highlighted ? "yellow": "lightgray"
@@ -495,72 +586,88 @@ Item {
             Wall {
                 id: rightWall
                 
-                width: items.wallSize
-                height: parent.height + items.wallSize
+                width: props.wallSize
+                height: parent.height + props.wallSize
                 
                 anchors.left: mapWrapper.right
-                anchors.leftMargin: - items.wallSize/2
+                anchors.leftMargin: - props.wallSize/2
                 anchors.top: parent.top
-                anchors.topMargin: -items.wallSize/2
+                anchors.topMargin: -props.wallSize/2
                 
-                shadow: true
-                shadowHorizontalOffset: items.tilt.yRotation
-                shadowVerticalOffset: items.tilt.xRotation
+                shadow: false
             }
             // bottom:
             Wall {
                 id: bottomWall
                 
-                width: parent.width + items.wallSize
-                height: items.wallSize
+                width: parent.width + props.wallSize
+                height: props.wallSize
                 
                 anchors.left: mapWrapper.left 
-                anchors.leftMargin: - items.wallSize/2
+                anchors.leftMargin: - props.wallSize/2
                 anchors.top: parent.bottom
-                anchors.topMargin: -items.wallSize/2
+                anchors.topMargin: -props.wallSize/2
                 
-                shadow: true
-                shadowHorizontalOffset: items.tilt.yRotation
-                shadowVerticalOffset: items.tilt.xRotation
+                shadow: false
             }
             // top:
             Wall {
                 id: topWall
                 
-                width: parent.width + items.wallSize
-                height: items.wallSize
+                width: parent.width + props.wallSize
+                height: props.wallSize
                 
                 anchors.left: mapWrapper.left 
-                anchors.leftMargin: - items.wallSize/2
+                anchors.leftMargin: - props.wallSize/2
                 anchors.top: parent.top
-                anchors.topMargin: -items.wallSize/2
-                shadow: true
-                shadowHorizontalOffset: items.tilt.yRotation
-                shadowVerticalOffset: items.tilt.xRotation                
+                anchors.topMargin: -props.wallSize/2
+                shadow: false
             }
             // left:
             Wall {
                 id: leftWall
                 
-                width: items.wallSize
-                height: parent.height + items.wallSize
+                width: props.wallSize
+                height: parent.height + props.wallSize
                 
                 anchors.left: mapWrapper.left
-                anchors.leftMargin: - items.wallSize/2
+                anchors.leftMargin: - props.wallSize/2
                 anchors.top: parent.top
-                anchors.topMargin: -items.wallSize/2
-                shadow: true
-                shadowHorizontalOffset: items.tilt.yRotation
-                shadowVerticalOffset: items.tilt.xRotation
+                anchors.topMargin: -props.wallSize/2
+                shadow: false
             }            
         }
     }
 
-    // The cancel button
-    /*GCButtonCancel {
-        onClose: {
-            parent.close()
+    Bar {
+        id: bar
+        content: BarEnumContent { value: help | home | level }
+        onHelpClicked: {
+            // FIXME: show help
         }
-    }*/
+        onPreviousLevelClicked: {
+            if (Activity.currentLevel > 0) {
+                if (Activity.levelChanged)
+                    Activity.warnUnsavedChanges(Activity.previousLevel,
+                                                function() {});
+                else
+                    Activity.previousLevel();
+            }
+        }
+        onNextLevelClicked: {
+            if (Activity.levelChanged)
+                Activity.warnUnsavedChanges(Activity.nextLevel,
+                                            function() {});
+            else
+                Activity.nextLevel();
+        }
+        onHomeClicked: {
+            if (Activity.levelChanged)
+                Activity.warnUnsavedChanges(activity.home,
+                                            function() {});
+            else
+                activity.home()
+        }
+    }
 
 }

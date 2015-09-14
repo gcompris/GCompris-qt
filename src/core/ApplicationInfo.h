@@ -209,6 +209,13 @@ public:
     */
     Q_INVOKABLE void abandonAudioFocus() const;
 
+    /**
+    * Abandon the Audio Focus.
+    *
+    * On systems that support it, it will let an audio player start again.
+    */
+    Q_INVOKABLE QString getWritablePath() const;
+
     /// @cond INTERNAL_DOCS
 
     static ApplicationInfo *getInstance() {
