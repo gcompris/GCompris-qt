@@ -93,7 +93,10 @@ function initLevel() {
         glowEnabled = glowEnabledDefault
     else 
         glowEnabled = levelData.glow
-    
+
+    // BUG352639: tooltip is not clear when changing level
+    items.toolTip.visible = false
+
     if(levelData.instruction == undefined) {
         items.instruction.opacity = 0
         items.instruction.text = ""
