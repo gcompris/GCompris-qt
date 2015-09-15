@@ -10,12 +10,12 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg5779"
-   sodipodi:docname="Stellaris_Red_snooker_ball.svg"
+   sodipodi:docname="balancebox.svg"
    viewBox="0 0 130.16473 130.74681"
    sodipodi:version="0.32"
    version="1.0"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   inkscape:version="0.48.4 r9939"
+   inkscape:version="0.91 r13725"
    width="100%"
    height="100%">
   <defs
@@ -72,35 +72,22 @@
          style="stop-color:#080000"
          offset="1" />
     </radialGradient>
-    <filter
-       id="filter6829"
-       height="1.3637"
-       width="1.3796999"
-       y="-0.18184"
-       x="-0.18983001"
-       inkscape:collect="always"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         id="feGaussianBlur6831"
-         stdDeviation="13.983349"
-         inkscape:collect="always" />
-    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
      bordercolor="#666666"
      inkscape:pageshadow="2"
-     inkscape:window-y="14"
+     inkscape:window-y="161"
      pagecolor="#ffffff"
      inkscape:window-height="622"
      width="150px"
-     inkscape:zoom="2.7133333"
-     inkscape:window-x="408"
+     inkscape:zoom="1.9186164"
+     inkscape:window-x="2156"
      height="150px"
      borderopacity="1.0"
      inkscape:current-layer="layer1"
      inkscape:cx="65.0781"
-     inkscape:cy="62.57524"
+     inkscape:cy="33.173521"
      inkscape:window-width="878"
      inkscape:pageopacity="0.0"
      inkscape:document-units="px"
@@ -115,29 +102,36 @@
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
      transform="translate(-328.5919,-195.02536)">
-    <path
-       id="path5172"
-       sodipodi:rx="73.189621"
-       sodipodi:ry="73.189621"
-       style="color:#000000;fill:url(#radialGradient5614);stroke:#333333;stroke-width:0.94555002;filter:url(#filter4666)"
-       sodipodi:type="arc"
-       d="m 360.16997,611.94043 c 0,40.42151 -32.76811,73.18962 -73.18962,73.18962 -40.42151,0 -73.18962,-32.76811 -73.18962,-73.18962 0,-40.42151 32.76811,-73.18962 73.18962,-73.18962 40.42151,0 73.18962,32.76811 73.18962,73.18962 z"
-       inkscape:export-ydpi="90"
-       inkscape:export-filename="/home/thp/grfx/ocal_snooker_red-ball.png"
-       transform="matrix(0.86882,0,0,0.87273,144.34,-273.66)"
-       sodipodi:cy="611.94043"
-       sodipodi:cx="286.98035"
-       inkscape:export-xdpi="90" />
-    <path
-       id="path5174"
-       style="fill:url(#radialGradient5616);fill-rule:evenodd;filter:url(#filter5843)"
-       d="m 366.76,593 c -2.53,-0.89 -17.52,2.78 -29.04,10.4 -11.53,7.63 -17.12,17.46 -17.06,20.08 0.07,3.26 3.72,12.45 11.9,20.82 8.17,8.36 19.96,13.67 20.81,12.64 0.57,-0.68 1.68,-15.06 8.18,-25.28 6.51,-10.22 17.18,-13.13 17.85,-15.62 0.42,-1.58 -2.05,-7.62 -5.21,-13.38 -3.16,-5.76 -5.53,-9 -7.43,-9.66 z"
-       inkscape:export-ydpi="90"
-       sodipodi:nodetypes="cssssssss"
-       inkscape:export-filename="/home/thp/grfx/ocal_snooker_red-ball.png"
-       transform="matrix(0.61577,-0.077588,0.077239,0.61854,103.83,-130.06)"
-       inkscape:export-xdpi="90"
-       inkscape:connector-curvature="0" />
+    <g
+       id="g4153"
+       transform="matrix(0.8,0,0,0.8,78.213644,60.419097)">
+      <g
+         id="g4147">
+        <circle
+           id="path5172"
+           style="color:#000000;fill:url(#radialGradient5614);stroke:#333333;stroke-width:0.94555002;filter:url(#filter4666)"
+           inkscape:export-ydpi="90"
+           inkscape:export-filename="/home/thp/grfx/ocal_snooker_red-ball.png"
+           transform="matrix(0.86882,0,0,0.87273,144.34,-273.66)"
+           inkscape:export-xdpi="90"
+           cx="286.98035"
+           cy="611.94043"
+           r="73.189621" />
+      </g>
+      <g
+         id="g4150">
+        <path
+           id="path5174"
+           style="fill:url(#radialGradient5616);fill-rule:evenodd;filter:url(#filter5843)"
+           d="m 366.76,593 c -2.53,-0.89 -17.52,2.78 -29.04,10.4 -11.53,7.63 -17.12,17.46 -17.06,20.08 0.07,3.26 3.72,12.45 11.9,20.82 8.17,8.36 19.96,13.67 20.81,12.64 0.57,-0.68 1.68,-15.06 8.18,-25.28 6.51,-10.22 17.18,-13.13 17.85,-15.62 0.42,-1.58 -2.05,-7.62 -5.21,-13.38 -3.16,-5.76 -5.53,-9 -7.43,-9.66 z"
+           inkscape:export-ydpi="90"
+           sodipodi:nodetypes="cssssssss"
+           inkscape:export-filename="/home/thp/grfx/ocal_snooker_red-ball.png"
+           transform="matrix(0.61577,-0.077588,0.077239,0.61854,103.83,-130.06)"
+           inkscape:export-xdpi="90"
+           inkscape:connector-curvature="0" />
+      </g>
+    </g>
   </g>
   <metadata
      id="metadata21">

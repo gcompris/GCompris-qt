@@ -161,21 +161,16 @@ function moveBall()
 function checkBallContacts()
 {
     for (var k = 0; k < ballContacts.length; k++) {
-        //console.log("XXX checking ballContact of type " + ballContacts[k].categories);
-        if (items.ball.x > ballContacts[k].x - items.ball.width/2 &&
-            items.ball.x < ballContacts[k].x + items.ball.width/2 &&
-            items.ball.y > ballContacts[k].y - items.ball.width/2 &&
-            items.ball.y < ballContacts[k].y + items.ball.width/2) {
+        if (items.ball.x > ballContacts[k].x - items.ballSize/2 &&
+            items.ball.x < ballContacts[k].x + items.ballSize/2 &&
+            items.ball.y > ballContacts[k].y - items.ballSize/2 &&
+            items.ball.y < ballContacts[k].y + items.ballSize/2) {
             // collision
             if (ballContacts[k].categories == items.holeType)
                 finishBall(false, ballContacts[k].x, ballContacts[k].y);
             else if (ballContacts[k].categories == items.goalType && goalUnlocked)
                 finishBall(true, ballContacts[k].x, ballContacts[k].y);
             else if (ballContacts[k].categories == items.buttonType) {
-                /*console.log("XXX hit button " + k + " index="
-                        + contacts.indexOf(ballContacts[k]) + " orderNum=" 
-                        + ballContacts[k].orderNum + " lastContact=" + lastContact
-                        + " length=" + contacts.length);*/
                 if (!ballContacts[k].pressed
                     && ballContacts[k].orderNum == lastContact + 1)
                 {
@@ -218,7 +213,6 @@ function createObject(component, properties)
     var p = properties;
     p.world = items.world;
     var object = component.createObject(items.mapWrapper, p);
-    //console.log("XXX created object " + JSON.stringify(object) + " shadow:" + object.shadow);
     return object;
 }
 
@@ -229,62 +223,54 @@ function initMap()
     items.mapWrapper.rows = map.length;
     items.mapWrapper.columns = map[0].length;
     console.log("creating map of size " + items.mapWrapper.rows + "/" + items.mapWrapper.columns);
-    items.ball.width = items.ball.height = items.cellSize - 2*items.wallSize;    
     for (var row = 0; row < map.length; row++) {
         for (var col = 0; col < map[row].length; col++) {
             var x = col * items.cellSize;
             var y = row * items.cellSize;
             var orderNum = (map[row][col] & 0xFF00) >> 8;
-            //console.log("XXX processing field " + col + "/" + row + " : number=" + orderNum);
             // debugging:
-            /*try {
-                var rect = Qt.createQmlObject(
-                        "import QtQuick 2.0;Rectangle{"
-                       +"width:" + items.cellSize +";"
-                       +"height:" + items.cellSize+";"
-                       +"x:" + x + ";"
-                       +"y:" + y +";"
-                       +"color: \"transparent\";"
-                       +"border.color: \"blue\";"
-                       +"border.width: 1;"
-                       +"}", items.mapWrapper);
-            } catch (e) {
-                console.error("Error creating object: " + e);
-            }*/
+            if (debugDraw) {
+                try {
+                    var rect = Qt.createQmlObject(
+                            "import QtQuick 2.0;Rectangle{"
+                           +"width:" + items.cellSize +";"
+                           +"height:" + items.cellSize+";"
+                           +"x:" + x + ";"
+                           +"y:" + y +";"
+                           +"color: \"transparent\";"
+                           +"border.color: \"blue\";"
+                           +"border.width: 1;"
+                           +"}", items.mapWrapper);
+                } catch (e) {
+                    console.error("Error creating object: " + e);
+                }
+            }
             if (map[row][col] & NORTH) {
                 walls.push(createObject(wallComponent, {x: x-items.wallSize/2, 
                     y: y-items.wallSize/2, width: items.cellSize + items.wallSize,
                     height: items.wallSize,
-                    shadow: true, shadowHorizontalOffset: items.tilt.yRotation,
-                    shadowVerticalOffset: items.tilt.xRotation}));
+                    shadow: false}));
             }
             if (map[row][col] & SOUTH) {
                 walls.push(createObject(wallComponent, {x: x-items.wallSize/2,
                     y: y+items.cellSize-items.wallSize/2,
                     width: items.cellSize+items.wallSize, height: items.wallSize,
-                    shadow: true, shadowHorizontalOffset: items.tilt.yRotation,
-                    shadowVerticalOffset: items.tilt.xRotation}));
+                    shadow: false}));
             }
             if (map[row][col] & EAST) {
                 walls.push(createObject(wallComponent, {x: x+items.cellSize-items.wallSize/2,
                     y: y-items.wallSize/2, width: items.wallSize, 
-                    height: items.cellSize+items.wallSize, shadow: true,
-                    shadowHorizontalOffset: items.tilt.yRotation,
-                    shadowVerticalOffset: items.tilt.xRotation}));
+                    height: items.cellSize+items.wallSize, shadow: false}));
             }
             if (map[row][col] & WEST) {
                 walls.push(createObject(wallComponent, {x: x-items.wallSize/2,
                     y: y-items.wallSize/2, width: items.wallSize,
-                    height: items.cellSize+items.wallSize, shadow: true,
-                    shadowHorizontalOffset: items.tilt.yRotation,
-                    shadowVerticalOffset: items.tilt.xRotation}));
+                    height: items.cellSize+items.wallSize, shadow: false}));
             }
 
             if (map[row][col] & START) {
-                items.ball.x = col * items.cellSize + items.wallSize/2;
-                items.ball.y = row * items.cellSize + items.wallSize/2;
-                //console.log("setting ball to col/row " + col + "/" + row
-                //        + "  " + items.ball.x + "/" + items.ball.y);
+                items.ball.x = col * items.cellSize + items.wallSize ;
+                items.ball.y = row * items.cellSize + items.wallSize;
             }
             
             if (map[row][col] & GOAL) {
@@ -292,25 +278,23 @@ function initMap()
                 var goalY = row * items.cellSize + items.wallSize/2;
                 goal = createObject(balanceItemComponent, {
                         x: goalX, y: goalY,
-                        width: items.ball.width, height: items.ball.height,
+                        width: items.cellSize - items.wallSize,
+                        height: items.cellSize - items.wallSize,
                         imageSource: baseUrl + "/door_closed.svg",
                         categories: items.goalType,
                         sensor: true});
             }
             
             if (map[row][col] & HOLE) {
-                var holeX = col * items.cellSize + items.wallSize/2;
-                var holeY = row * items.cellSize + items.wallSize/2;
-                /*holes.push(createObject(holeComponent, {x: holeX, y: holeY,
-                        width: items.ball.width, height: items.ball.height}));*/
+                var holeX = col * items.cellSize + items.wallSize;
+                var holeY = row * items.cellSize + items.wallSize;
                 holes.push(createObject(balanceItemComponent, {
                     x: holeX, y: holeY,
-                    width: items.ball.width, height: items.ball.height,
+                    width: items.ballSize, height: items.ballSize,
                     imageSource: baseUrl + "/hole.svg",
                     density: 0, friction: 0, restitution: 0,
                     categories: items.holeType,
                     sensor: true}));
-                //console.log("found hole at col/row " + col + "/" + row + "  " + holeX + "/" + holeY);
             }
             
             if (orderNum > 0) {
@@ -321,7 +305,6 @@ function initMap()
                     x: contactX, y: contactY,
                     width: items.cellSize - items.wallSize, 
                     height: items.cellSize - items.wallSize,
-                    //width: items.cellSize, height: items.cellSize,
                     pressed: false,
                     density: 0, friction: 0, restitution: 0,
                     categories: items.buttonType,
@@ -340,17 +323,14 @@ function addBallContact(item)
 {
     if (ballContacts.indexOf(item) !== -1)
         return;
-    //console.log("adding ball contact");
     ballContacts.push(item);
 }
 
 function removeBallContact(item)
 {
     var index = ballContacts.indexOf(item);
-    if (index > -1) {
-        //console.log("removing ball contact");
+    if (index > -1)
         ballContacts.splice(index, 1);
-    }
 }
 
 function tearDown()

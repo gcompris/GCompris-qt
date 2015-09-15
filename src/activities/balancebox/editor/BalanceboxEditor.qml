@@ -51,11 +51,6 @@ Item {
 
     signal stop
 
-/*    Keys.enabled: ApplicationInfo.isMobile ? false : true
-    Keys.onPressed: Activity.processKeyPress(event.key)
-    Keys.onReleased: Activity.processKeyRelease(event.key)
-  */
-
     Keys.onEscapePressed: {
         console.log("XXX editor onEscape");
         if (!isTesting) {
@@ -106,8 +101,6 @@ Item {
         editor.isTesting = true;
         testBox.mode = "test";
         testBox.testLevel = Activity.modelToLevel();
-        //testBox.start();
-        //activity.home();
         back(testBox);
     }
 
@@ -153,7 +146,6 @@ Item {
             width: 80
             height: parent.height
             anchors.topMargin: 20
-//            /anchors.rightMargin: (background.width - mapWrapper.x - mapWrapper.width ) / 2
 
             Button {
                 id: saveButton
@@ -642,10 +634,7 @@ Item {
 
     Bar {
         id: bar
-        content: BarEnumContent { value: help | home | level }
-        onHelpClicked: {
-            // FIXME: show help
-        }
+        content: BarEnumContent { value: home | level } // FIXME: add dedicated editor help?
         onPreviousLevelClicked: {
             if (Activity.currentLevel > 0) {
                 if (Activity.levelChanged)

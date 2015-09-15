@@ -20,6 +20,7 @@
  */
 import QtQuick 2.0
 import Box2D 2.0
+import QtGraphicalEffects 1.0
 
 import "../../core"
 
@@ -42,6 +43,10 @@ Item {
     property alias friction: itemFixture.friction
     property alias restitution: itemFixture.restitution
     
+    property alias shadow: itemShadow.visible
+    property alias shadowHorizontalOffset: itemShadow.horizontalOffset
+    property alias shadowVerticalOffset: itemShadow.verticalOffset
+
     signal beginContact(Item item, Item other)
     signal endContact(Item item, Item other)
 
@@ -52,6 +57,18 @@ Item {
         height: item.height
         source: item.imageSource
         anchors.centerIn: parent
+    }
+
+    DropShadow {
+        id: itemShadow
+        anchors.fill: itemImage
+        cached: true
+        visible: false  // note: dropping shadows for the walls is really expensive
+                        // in terms of CPU usage!
+        radius: 0
+        samples: 16
+        color: "#80000000"
+        source: itemImage
     }
 
     Body {

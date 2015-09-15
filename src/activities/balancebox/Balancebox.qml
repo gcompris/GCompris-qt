@@ -105,6 +105,7 @@ ActivityBase {
             property alias tilt: tilt
             property alias timer: timer
             property alias ball: ball
+            property int ballSize: cellSize - 2*wallSize
             property alias mapWrapper: mapWrapper
             property int cellSize: mapWrapper.length / Math.min(mapWrapper.rows, mapWrapper.columns)
             property int wallSize: cellSize / 5
@@ -171,8 +172,8 @@ ActivityBase {
                 anchors.topMargin: -items.wallSize/2
                 
                 shadow: true
-                shadowHorizontalOffset: items.tilt.yRotation
-                shadowVerticalOffset: items.tilt.xRotation
+                shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
+                shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
             }
             // bottom:
             Wall {
@@ -187,8 +188,8 @@ ActivityBase {
                 anchors.topMargin: -items.wallSize/2
                 
                 shadow: true
-                shadowHorizontalOffset: items.tilt.yRotation
-                shadowVerticalOffset: items.tilt.xRotation
+                shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
+                shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
             }
             // top:
             Wall {
@@ -202,8 +203,8 @@ ActivityBase {
                 anchors.top: parent.top
                 anchors.topMargin: -items.wallSize/2
                 shadow: true
-                shadowHorizontalOffset: items.tilt.yRotation
-                shadowVerticalOffset: items.tilt.xRotation                
+                shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
+                shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
             }
             // left:
             Wall {
@@ -217,8 +218,8 @@ ActivityBase {
                 anchors.top: parent.top
                 anchors.topMargin: -items.wallSize/2
                 shadow: true
-                shadowHorizontalOffset: items.tilt.yRotation
-                shadowVerticalOffset: items.tilt.xRotation
+                shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
+                shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
             }
             
             BalanceItem {
@@ -226,6 +227,8 @@ ActivityBase {
                 world: physicsWorld
                 imageSource: Activity.baseUrl + "/ball.svg"
                 scale: 1.0
+                width: items.ballSize
+                height: items.ballSize
                 z: 1
                 categories: items.ballType
                 collidesWith: items.wallType | items.holeType | items.goalType 
@@ -235,9 +238,9 @@ ActivityBase {
                 linearDamping: Activity.friction
                 restitution: Activity.restitution
                 bodyType: Body.Dynamic
-
-                //Component.onCompleted: console.log("XXX ball: " + width + "/" + height 
-                //        + " - " + parent.width + "/" + parent.height); 
+                shadow: true
+                shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
+                shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
 
                 Behavior on scale {
                     NumberAnimation {
@@ -247,7 +250,6 @@ ActivityBase {
                 }
             
                 onBeginContact: {
-                    //console.log("ZZZ: contact with " + other.categories);
                     if (other.categories !== items.wallType)
                         Activity.addBallContact(other);
                 }

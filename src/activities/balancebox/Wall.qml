@@ -32,11 +32,11 @@ Item {
     property alias body: itemBody
     property alias world: itemBody.world
     property alias categories: itemFixture.categories 
-    //property alias shadow: itemShadow.visible
-    property bool shadow: false //itemShadow.visible
+    property alias shadow: itemShadow.visible
+    //property bool shadow: false //itemShadow.visible
     property alias shadowHorizontalOffset: itemShadow.horizontalOffset
     property alias shadowVerticalOffset: itemShadow.verticalOffset
-    
+
     Body {
         id: itemBody
         target: item
@@ -54,7 +54,7 @@ Item {
             collidesWith: Box.Category1 | Box.Category2
         }
     }
-    
+
     Rectangle {
         id: itemRectangle
         anchors.fill: parent
@@ -62,20 +62,20 @@ Item {
         height: parent.height
         radius: height / 2
         color: "#B38B56"
+        z: 2
     }
-    
+
     DropShadow {
         id: itemShadow
         anchors.fill: itemRectangle
         cached: true
         visible: false  // note: dropping shadows for the walls is really expensive
                         // in terms of CPU usage!
-        //horizontalOffset: 3
-        //verticalOffset: 3
-        radius: 8.0
+        radius: 0
         samples: 16
         color: "#80000000"
         source: itemRectangle
+        z: 1
     }
 
 }
