@@ -119,6 +119,12 @@ Item {
     signal home
 
     /**
+     * Emitted when the user wants to return several views back in the
+     * page stack.
+     */
+    signal back(Item to)
+
+    /**
      * Emitted every time the activity has been started.
      *
      * Initialize your activity upon this signal.
@@ -142,8 +148,21 @@ Item {
      */
     signal displayDialog(Item dialog)
 
+    /**
+     * Emitted when multiple @p dialogs should be pushed on the page-stack
+     *
+     * Emit this signal when you want to stack >1 views. The last one will be
+     * shown the intermediated ones will be kept on the page stack for later
+     * pop() calls.
+     *
+     * @param dialogs Array of dialogs to push;
+     */
+    signal displayDialogs(var dialogs)
+
+    onBack: menu ? menu.back(to) : ""
     onHome: menu ? menu.home() : ""
     onDisplayDialog: menu ? menu.displayDialog(dialog) : ""
+    onDisplayDialogs: menu ? menu.displayDialogs(dialogs) : ""
 
     Keys.forwardTo: activity.children
     Keys.onEscapePressed: {console.log("XXX: Base onEscape"); home();}

@@ -18,6 +18,35 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
+
+/**
+ * Level description format:
+ *
+ * Example:
+ * [ { "level": 1,
+ *     "map": [ [ 0x0000,  0x0308, ... ],
+ *              [ 0x0010,  0x0008, ... ],
+ *              ...
+ *            ],
+ *     "targets": [ 1, 2, 3, 5, 10, ... ]
+ *   },
+ *   { "level": 2, ... }
+ *   ...
+ * ]
+ *
+ * "level": Number of the level.
+ * "map":   Definition of the map inside the balancebox.
+ *          The map is a 2-dimensional array of map cells. A cell is
+ *          described by a bitmask of 16 bit with the lower 8bit defining walls,
+ *          objects, etc. (cf. below) and the higher 8 bit defining the order of
+ *          buttons present on the map. The values of the buttons are described
+ *          in the "targets" property.
+ * "targets": Values of the buttons present on the map. Most likely these will
+ *            be numbers, but letters are also possible. The order in which they
+ *            need to be pressed by the ball is defined in the higher 8 bits of
+ *            the map fields.
+ */
+
 var EMPTY   = 0x0000;
 var NORTH   = 0x0001;
 var EAST    = 0x0002;
@@ -30,6 +59,9 @@ var HOLE    = 0x0040;
 var CONTACT = 0x0080;
 
 var baseUrl = "qrc:/gcompris/src/activities/balancebox/resource";
+var builtinFile = baseUrl + "/levels-default.json";
+var userFile = "file://" + GCompris.ApplicationInfo.getWritablePath()
+        + "/balancebox/" + "levels-user.json"
 
 function validateLevels(doc)
 {

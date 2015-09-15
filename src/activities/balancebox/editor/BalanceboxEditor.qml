@@ -77,7 +77,7 @@ Item {
     }
     onStop: {console.log("XXX Editor onStop");}
 
-    Component.onCompleted: console.log("XXX editor complete");
+    Component.onCompleted: console.log("XXX editor complete " + filename);
 
     QtObject {
         id: props
@@ -106,8 +106,9 @@ Item {
         editor.isTesting = true;
         testBox.mode = "test";
         testBox.testLevel = Activity.modelToLevel();
-        testBox.start();
-        activity.home();
+        //testBox.start();
+        //activity.home();
+        back(testBox);
     }
 
     function stopTesting() {

@@ -46,6 +46,14 @@ ActivityBase {
     focus: true
     activityInfo: ActivityInfoTree.rootMenu
 
+    onBack: {
+        console.log("XXX onBack to " + to);
+        pageView.pop(to);
+        // Restore focus that has been taken by the loaded activity
+        if(pageView.currentItem == menuActivity)
+            focus = true;
+    }
+
     onHome: {
         if(pageView.depth === 1) {
             Core.quit(main);
@@ -59,6 +67,16 @@ ActivityBase {
     }
 
     onDisplayDialog: pageView.push(dialog)
+
+    onDisplayDialogs: {
+        console.log("XXX onForward to " + dialogs);
+        var toPush = new Array();
+        for (var i = 0; i < dialogs.length; i++) {
+            displayDialog(dialogs[i]);
+            toPush.push({item: dialogs[i]});
+        }
+        pageView.push(toPush);
+    }
 
     // @cond INTERNAL_DOCS
     property string url: "qrc:/gcompris/src/activities/menu/resource/"

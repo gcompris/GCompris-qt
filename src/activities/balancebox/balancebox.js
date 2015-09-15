@@ -30,43 +30,7 @@
 .import GCompris 1.0 as GCompris
 .import Box2D 2.0 as Box2D
 
-/**
- * Level description format:
- *
- * Example:
- * [ { "level": 1,
- *     "map": [ [ 0x0000,  0x0308, ... ],
- *              [ 0x0010,  0x0008, ... ],
- *              ...
- *            ],
- *     "targets": [ 1, 2, 3, 5, 10, ... ]
- *   },
- *   { "level": 2, ... }
- *   ...
- * ]
- * 
- * "level": Number of the level.
- * "map":   Definition of the map inside the balancebox.
- *          The map is a 2-dimensional array of map cells. A cell is
- *          described by a bitmask of 16 bit with the lower 8bit defining walls,
- *          objects, etc. (cf. below) and the higher 8 bit defining the order of
- *          buttons present on the map. The values of the buttons are described
- *          in the "targets" property.
- * "targets": Values of the buttons present on the map. Most likely these will
- *            be numbers, but letters are also possible. The order in which they
- *            need to be pressed by the ball is defined in the higher 8 bits of
- *            the map fields.
- */
-var EMPTY   = 0x0000;
-var NORTH   = 0x0001;
-var EAST    = 0x0002;
-var SOUTH   = 0x0004;
-var WEST    = 0x0008;
-// all the following are mutually exclusive:
-var START   = 0x0010;
-var GOAL    = 0x0020;
-var HOLE    = 0x0040;
-var CONTACT = 0x0080;
+Qt.include("balancebox_common.js")
 
 var dataset = null;
 
@@ -95,8 +59,6 @@ var debugDraw = false;
 var currentLevel = 0;
 var numberOfLevel = 0;
 var items;
-var baseUrl = "qrc:/gcompris/src/activities/balancebox/resource";
-var levelsFile = baseUrl + "/levels-default.json"; 
 var level;
 var map; // current map
 
@@ -112,7 +74,6 @@ var wallComponent = Qt.createComponent("qrc:/gcompris/src/activities/balancebox/
 var contactComponent = Qt.createComponent("qrc:/gcompris/src/activities/balancebox/BalanceContact.qml");
 var balanceItemComponent = Qt.createComponent("qrc:/gcompris/src/activities/balancebox/BalanceItem.qml");
 var contactIndex = -1;
-var userFile = GCompris.ApplicationInfo.getWritablePath() + "/balancebox/" + "levels-user.json"
 
 function start(items_) {
     items = items_;
@@ -145,8 +106,9 @@ function start(items_) {
          * 14: SCREEN_ORIENTATION_LOCKED: inverted rotation on tablet
          */
         }
-
-
+        var levelsFile = builtinFile;
+        if (items.levelSet == "user")
+            levelsFile = userFile;
         dataset = items.parser.parseFromUrl(levelsFile, validateLevels);
         if (dataset == null) {
             console.error("Balancebox: Error loading levels from " + levelsFile
@@ -369,7 +331,7 @@ function initMap()
             }
         }
     }
-    if (goalUnlocked)  // if we have no contacts at all
+    if (goalUnlocked && goal)  // if we have no contacts at all
         goal.imageSource = baseUrl + "/door.svg";
 
 }

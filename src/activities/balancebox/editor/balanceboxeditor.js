@@ -33,8 +33,7 @@ var TOOL_HOLE = HOLE
 var TOOL_CONTACT = CONTACT
 var TOOL_GOAL = GOAL
 var TOOL_BALL = START
-var userFile = "file://" + GCompris.ApplicationInfo.getWritablePath()
-        + "/balancebox/" + "levels-user.json"
+
 var levels;
 var level;
 var currentLevel;
@@ -52,7 +51,7 @@ function initEditor(_props)
     numberOfLevel = 0;
     props.lastBallIndex = -1;
     props.lastGoalIndex = -1;
-
+console.log("XXX loaded levels form file " + props.editor.filename);
     levels = [];
     if (props.file.exists(props.editor.filename)) {
         levels = props.parser.parseFromUrl(props.editor.filename, validateLevels);
@@ -60,7 +59,8 @@ function initEditor(_props)
             console.error("BalanceboxEditor: Error loading levels from "
                           + props.editor.filename);
             levels = [];  // restart with an empty level-set
-        }
+        } else
+            console.log("XXX loaded levels form file " + props.editor.filename);
     }
     numberOfLevel = levels.length;
 
@@ -86,6 +86,7 @@ function createEmptyLevel()
 
 function initLevel()
 {
+    console.log("XXX editor initLevel levels=" + JSON.stringify(levels));
     if (currentLevel >= numberOfLevel) {
         levels.push(createEmptyLevel());
         numberOfLevel++;

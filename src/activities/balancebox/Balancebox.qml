@@ -34,7 +34,8 @@ import "balancebox.js" as Activity
 ActivityBase {
     id: activity
 
-    property string mode: "play"  // play or test
+    property string mode: "play"  // "play" or "test"
+    property string levelSet: "builtin"   // "builtin" or "user"
     property var testLevel
 
     onStart: {
@@ -74,23 +75,14 @@ ActivityBase {
         function startEditor() {
             console.log("XXX: launching editor");
             editorLoader.active = true;
-            displayDialog(editorLoader.item);
-        }
-
-        Button {
-            id: editButton
-            anchors.top: parent.top
-            anchors.right: parent.right
-            width: 80
-            height: 30
-            text: "Editor"
-            onClicked: {
-                //console.log("XXX mode=" + activity.mode);
-                startEditor();
-            }
+            if (activity.mode == "test")
+                displayDialogs([dialogActivityConfig, editorLoader.item]);
+            else
+                displayDialog(editorLoader.item);
         }
 
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
             items.dpi = Math.round(Screen.pixelDensity*25.4);
@@ -104,6 +96,7 @@ ActivityBase {
         QtObject {
             id: items
             property string mode: activity.mode
+            property string levelSet: activity.levelSet
             property var testLevel: activity.testLevel
             property Item main: activity.main
             property alias background: background
@@ -361,7 +354,9 @@ ActivityBase {
         Bar {
             id: bar
             content: BarEnumContent {
-                value: activity.mode == "play" ? (help | home | level) : ( help | home )
+                value: activity.mode == "play"
+                           ? (help | home | level | config )
+                           : ( help | home )
             }
             onHelpClicked: {
                 displayDialog(dialogHelp)
@@ -373,6 +368,12 @@ ActivityBase {
                     background.startEditor();
                 else
                     activity.home()
+            }
+            onConfigClicked: {
+                dialogActivityConfig.active = true
+                // Set default values
+                dialogActivityConfig.setDefaultValues();
+                displayDialog(dialogActivityConfig)
             }
         }
 
@@ -390,6 +391,72 @@ ActivityBase {
             running: false
             repeat: false
             onTriggered: Activity.keyboardHandler()
+        }
+
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    property alias levelsBox: levelsBox
+
+                    property var availableLevels: [
+                        { "text": qsTr("Bultin"), "value": "builtin" },
+                        { "text": qsTr("User"), "value": "user" },
+                    ]
+
+                    Flow {
+                        id: flow
+                        spacing: 5
+                        width: dialogActivityConfig.width
+                        GCComboBox {
+                            id: levelsBox
+                            model: availableLevels
+                            background: dialogActivityConfig
+                            label: qsTr("Select your level set")
+                        }
+
+                        Button {
+                            id: editorButton
+                            style:  GCButtonStyle {}
+                            //width: 80
+                            height: levelsBox.height
+                            text: "Start Editor"
+                            visible: levelsBox.currentIndex == 1
+                            onClicked: background.startEditor()
+                        }
+                    }
+                }
+            }
+
+            onClose: home()
+
+            onLoadData: {
+                if(dataToSave && dataToSave["levels"]) {
+                    activity.levelSet = dataToSave["levels"];
+                }
+            }
+
+            onSaveData: {
+                var newLevels = dialogActivityConfig.configItem
+                    .availableLevels[dialogActivityConfig.configItem.levelsBox.currentIndex].value;
+                if (newLevels !== activity.levelSet) {
+                    activity.levelSet = newLevels;
+                    dataToSave = {"levels": activity.levelSet};
+                    //activity.start();  done automatically during view switch
+                }
+            }
+
+            function setDefaultValues() {
+                for(var i = 0 ;
+                    i < dialogActivityConfig.configItem.availableLevels.length;
+                    i ++) {
+                    if(dialogActivityConfig.configItem.availableLevels[i].value === activity.levelSet) {
+                        dialogActivityConfig.configItem.levelsBox.currentIndex = i;
+                        break;
+                    }
+                }
+            }
         }
     }
 }
