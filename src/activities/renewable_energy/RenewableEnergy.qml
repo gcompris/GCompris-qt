@@ -414,7 +414,6 @@ ActivityBase {
                     residentbigoff.visible = true
                     resident_biglights.visible = false
                     Activity.update()
-
                     big_consume.text = "0 W"
                 }
             }
@@ -516,7 +515,6 @@ ActivityBase {
                             tuxoff.visible = false
                             Activity.consume(100)
                             Activity.update()
-
                             checkbonus()
                             tux_consume.text = "100 W"
                         }
@@ -692,7 +690,6 @@ ActivityBase {
             Activity.consume(-300)
             Activity.update()
             small_consume.text= "0 W"
-
         }
 
         function big() {
