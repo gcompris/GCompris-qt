@@ -22,6 +22,14 @@
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 
+// possible instructions
+var MOVE_FORWARD = "move-forward"
+var TURN_LEFT = "turn-left"
+var TURN_RIGHT = "turn-right"
+var CALL_PROCEDURE = "call-procedure"
+var START_PROCEDURE = "start-procedure"
+var END_PROCEDURE = "end-procedure"
+
 var mazeBlocks = [
             //level one
             [
@@ -30,9 +38,9 @@ var mazeBlocks = [
                 //fish index
                 [[3,2]],
                 //instruction set
-                ["move-forward",
-                 "turn-left",
-                 "turn-right"]
+                [MOVE_FORWARD,
+                 TURN_LEFT,
+                 TURN_RIGHT]
             ],
             //level two
             [
@@ -40,29 +48,29 @@ var mazeBlocks = [
                 //fish index
                 [[3,1]],
                 //instruction set
-                ["move-forward",
-                 "turn-left",
-                 "turn-right"]
+                [MOVE_FORWARD,
+                 TURN_LEFT,
+                 TURN_RIGHT]
             ],
             //level three
             [
                 [[1,1],[2,1],[3,1],[3,2],[3,3],[2,3],[1,3]],
                 [[1,3]],
                 //instruction set
-                ["move-forward",
-                 "turn-left",
-                 "turn-right",
-                 "call-procedure"]
+                [MOVE_FORWARD,
+                 TURN_LEFT,
+                 TURN_RIGHT,
+                 CALL_PROCEDURE]
             ],
             //level four
             [
                 [[0,3],[1,3],[1,2],[2,2],[2,1],[3,1]],
                 [[3,1]],
                 //instruction set
-                ["move-forward",
-                 "turn-left",
-                 "turn-right",
-                 "call-procedure"]
+                [MOVE_FORWARD,
+                 TURN_LEFT,
+                 TURN_RIGHT,
+                 CALL_PROCEDURE]
             ],
             //level five
             [
@@ -70,15 +78,13 @@ var mazeBlocks = [
                  [2,2],[2,3],[3,3],[4,3],[4,2],[4,1],[4,0]],
                 [[4,0]],
                 //instruction set
-                ["move-forward",
-                 "turn-left",
-                 "turn-right",
-                 "call-procedure"]
+                [MOVE_FORWARD,
+                 TURN_LEFT,
+                 TURN_RIGHT,
+                 CALL_PROCEDURE]
             ]
         ]
-//[1,3],[2,3],[2,2],[2,1],[3,1]
-//[1,1],[2,1],[3,1],[3,2],[3,3],[2,3],[1,3]
-//[0,3],[1,3],[1,2],[2,2],[2,1],[3,1]
+
 var stepX
 var stepY
 var playerCode = []
@@ -109,12 +115,6 @@ var BLOCKS_DATA_INDEX = 0
 var BLOCKS_FISH_INDEX = 1
 var BLOCKS_INSTRUCTION_INDEX = 2
 
-var MOVE_FORWARD = "move-forward"
-var TURN_LEFT = "turn-left"
-var TURN_RIGHT = "turn-right"
-var CALL_PROCEDURE = "call-procedure"
-var END_PROCEDURE = "end-procedure"
-
 function start(items_) {
     items = items_
     currentLevel = 0
@@ -137,8 +137,9 @@ function initLevel() {
         items.answerModel.clear()
         items.procedureModel.clear()
     }
-    stepX = items.background.width / 10
-    stepY = (items.background.height - items.background.height/10) / 10
+
+    stepX = items.mazeModel.itemAt(0).width
+    stepY = items.mazeModel.itemAt(0).height
 
     items.instructionModel.clear()
     var levelInstructions = mazeBlocks[currentLevel][BLOCKS_INSTRUCTION_INDEX]
@@ -146,8 +147,10 @@ function initLevel() {
         items.instructionModel.append({"name":levelInstructions[i]});
     }
 
-    items.player.x = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][0][0] * stepX
-    items.player.y = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][0][1] * stepY
+    // Center Tux in its first case
+    items.player.x = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][0][0] * stepX + (stepX-items.player.width)/2
+    items.player.y = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][0][1] * stepY + (stepY-items.player.height)/2
+
     tuxIceBlockNumber = 0
     changedRotation = EAST
     deadEndPoint = false
@@ -186,12 +189,12 @@ function runCode() {
         procedureBlocks = items.procedureModel.count
         for(var i = 0; i < items.answerModel.count; i ++) {
             if(items.answerModel.get([i]).name == CALL_PROCEDURE) {
-                playerCode.push("start-procedure")
+                playerCode.push(START_PROCEDURE)
                 for(var j = 0; j < items.procedureModel.count; j++) {
                     if(items.procedureModel.get([j]).name != END_PROCEDURE)
                         playerCode.push(items.procedureModel.get([j]).name)
                 }
-                playerCode.push("end-procedure")
+                playerCode.push(END_PROCEDURE)
             }
             else {
                 playerCode.push(items.answerModel.get([i]).name)
@@ -220,7 +223,7 @@ function executeNextInstruction() {
     var currentInstruction = playerCode[codeIterator]
 
     if(!items.player.tuxIsBusy && codeIterator < playerCode.length && !deadEndPoint
-            && currentInstruction != "start-procedure" && currentInstruction != "end-procedure") {
+            && currentInstruction != START_PROCEDURE && currentInstruction != END_PROCEDURE) {
         changedX = items.player.x
         changedY = items.player.y
         var currentRotation = getPlayerRotation()
@@ -238,22 +241,21 @@ function executeNextInstruction() {
             items.answerSheet.highlightMoveDuration = moveAnimDuration
             items.procedure.highlightMoveDuration = moveAnimDuration
             if (nextX - currentX > 0 && currentRotation == EAST) {
-                changedX = currentX * stepX + stepX
+                changedX += stepX
             }
             else if(nextX - currentX < 0 && currentRotation == WEST) {
-                changedX = currentX * stepX - stepX
+                changedX -= stepX
             }
             else if(nextY - currentY < 0 && currentRotation == SOUTH) {
-                changedY = currentY * stepY - stepY
+                changedY -= stepY
             }
             else if(nextY - currentY > 0 && currentRotation == NORTH) {
-                changedY = currentY * stepY + stepY
+                changedY += stepY
             }
             else {
                 // add an animation to indicate that its not possible
                 deadEndPoint = true
                 items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav")
-                console.log("dead end")
                 deadEnd()
             }
             items.player.x = changedX
@@ -272,30 +274,30 @@ function executeNextInstruction() {
             items.procedure.highlightMoveDuration = moveAnimDuration / 2
         }
 
-        codeIterator = codeIterator + 1
+        codeIterator ++
         items.player.tuxIsBusy = true
         if(runningProcedure && procedureBlocks > 0
-                && currentInstruction != "start-procedure" && currentInstruction != "end-procedure") {
+                && currentInstruction != START_PROCEDURE && currentInstruction != END_PROCEDURE) {
             procedureBlocks--
             items.procedure.moveCurrentIndexRight()
         }
         if(!runningProcedure
-                && currentInstruction != "start-procedure" && currentInstruction != "end-procedure") {
+                && currentInstruction != START_PROCEDURE && currentInstruction != END_PROCEDURE) {
             items.answerSheet.moveCurrentIndexRight()
         }
         checkSuccess()
     }
-    else if(currentInstruction == "start-procedure") {
+    else if(currentInstruction == START_PROCEDURE) {
         runningProcedure = true
         items.answerSheet.currentIndex += 1
         items.procedure.currentIndex = -1
-        codeIterator = codeIterator + 1
+        codeIterator ++
         executeNextInstruction()
     }
-    else if(currentInstruction == "end-procedure") {
+    else if(currentInstruction == END_PROCEDURE) {
         runningProcedure = false
         procedureBlocks = items.procedureModel.count
-        codeIterator = codeIterator + 1
+        codeIterator ++
         executeNextInstruction()
     }
 }
