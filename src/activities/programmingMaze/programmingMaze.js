@@ -79,15 +79,12 @@ var mazeBlocks = [
 //[1,3],[2,3],[2,2],[2,1],[3,1]
 //[1,1],[2,1],[3,1],[3,2],[3,3],[2,3],[1,3]
 //[0,3],[1,3],[1,2],[2,2],[2,1],[3,1]
-var countOfMazeBlocks
 var stepX
 var stepY
 var playerCode = []
-var currentInstruction
 var tuxIceBlockNumber
 var changedX
 var changedY
-var currentRotation
 var changedRotation
 var deadEndPoint = false
 var codeIterator = 0
@@ -140,8 +137,6 @@ function initLevel() {
         items.answerModel.clear()
         items.procedureModel.clear()
     }
-    countOfMazeBlocks = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX].length
-
     stepX = items.background.width / 10
     stepY = (items.background.height - items.background.height/10) / 10
 
@@ -153,10 +148,7 @@ function initLevel() {
 
     items.player.x = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][0][0] * stepX
     items.player.y = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][0][1] * stepY
-    items.fish.x = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][0] * stepX
-    items.fish.y = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][1] * stepY
     tuxIceBlockNumber = 0
-    currentRotation = EAST
     changedRotation = EAST
     deadEndPoint = false
     procedureBlocks = 0
@@ -225,13 +217,13 @@ function playerRunningChanged() {
 }
 
 function executeNextInstruction() {
-    currentInstruction = playerCode[codeIterator]
+    var currentInstruction = playerCode[codeIterator]
 
     if(!items.player.tuxIsBusy && codeIterator < playerCode.length && !deadEndPoint
             && currentInstruction != "start-procedure" && currentInstruction != "end-procedure") {
         changedX = items.player.x
         changedY = items.player.y
-        currentRotation = getPlayerRotation()
+        var currentRotation = getPlayerRotation()
 
         var currentBlock = tuxIceBlockNumber
         var nextBlock = tuxIceBlockNumber + 1
@@ -314,7 +306,12 @@ function deadEnd() {
 }
 
 function checkSuccess() {
-    if(changedX === items.fish.x && changedY === items.fish.y) {
+    var fishX = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][0];
+    var fishY = mazeBlocks[currentLevel][BLOCKS_FISH_INDEX][0][1];
+    var tuxX = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][tuxIceBlockNumber][0]
+    var tuxY = mazeBlocks[currentLevel][BLOCKS_DATA_INDEX][tuxIceBlockNumber][1]
+
+    if(tuxX === fishX && tuxY === fishY) {
         playerCode = []
         codeIterator = 0
         items.player.tuxIsBusy = false
