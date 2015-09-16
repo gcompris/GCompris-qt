@@ -75,7 +75,6 @@ ActivityBase {
             property alias procedureModel: procedureModel
             property alias procedure: procedure
             property alias player: player
-            property alias fish: fish
             property alias runCodeImage: runCode.source
         }
 
@@ -135,11 +134,19 @@ ActivityBase {
             anchors.top: parent.top
 
             Image {
-                x: modelData[0] * background.width / 10
-                y: modelData[1] * (background.height - background.height/10) / 10
+                x: modelData[0] * width
+                y: modelData[1] * height
                 width: background.width / 10
-                height: background.height / 10
+                height: (background.height - background.height/10) / 10
                 source: Activity.reverseCountUrl + "iceblock.svg"
+
+                Image {
+                    id: fish
+                    anchors.centerIn: parent
+                    sourceSize.width: background.width / 12
+                    source: (modelData[0] == Activity.mazeBlocks[Activity.currentLevel][1][0][0] && modelData[1] == Activity.mazeBlocks[Activity.currentLevel][1][0][1]) ? Activity.reverseCountUrl + "blue-fish.svg" : ""
+                    z: 5
+                }
             }
         }
 
@@ -191,13 +198,6 @@ ActivityBase {
                 }
             }
 
-        }
-
-        Image {
-            id: fish
-            source: Activity.reverseCountUrl + "blue-fish.svg"
-            sourceSize.width: background.width / 12
-            x: 0; y: 0; z: 5
         }
 
         property int buttonWidth: background.width / 10
