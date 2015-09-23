@@ -44,7 +44,6 @@ ActivityBase {
     }
     onStop: {console.log("XXX BalanceBox onStop");}
 
-    Keys.enabled: ApplicationInfo.isMobile ? false : true
     Keys.onPressed: Activity.processKeyPress(event.key)
     Keys.onReleased: Activity.processKeyRelease(event.key)
 
@@ -56,22 +55,6 @@ ActivityBase {
         signal start
         signal stop
 
-        Keys.onPressed: {
-            if (event.key == Qt.Key_A) {
-                startEditor()
-            }
-        }
-
-        Keys.onEscapePressed: {
-            console.log("XXX Balancebox onEscape");
-            if (activity.mode == "test") {
-                console.log("XXX Balancebox onEscape");
-                startEditor();
-                event.accepted = true;
-            } else
-                event.accepted = false;
-        }
-
         function startEditor() {
             console.log("XXX: launching editor");
             editorLoader.active = true;
@@ -79,6 +62,23 @@ ActivityBase {
                 displayDialogs([dialogActivityConfig, editorLoader.item]);
             else
                 displayDialog(editorLoader.item);
+        }
+
+        function handleBackEvent() {
+            console.log("XXX Balancebox onEscape/back");
+            if (activity.mode == "test") {
+                console.log("XXX Balancebox onEscape/back");
+                startEditor();
+                return true;
+            } else
+                return false;
+        }
+
+        Keys.onEscapePressed: event.accepted = handleBackEvent();
+
+        Keys.onReleased: {
+            if (event.key === Qt.Key_Back)
+                event.accepted = handleBackEvent();
         }
 
         Component.onCompleted: {

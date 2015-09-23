@@ -61,7 +61,7 @@ Window {
         }
     }
 
-    onClosing: Core.quit()
+    onClosing: Core.quit(main)
 
     GCAudio {
         id: audioVoices

@@ -21,11 +21,12 @@
 
 /* ToDo:
   - levels, levels, levels
-  (- fix inconsistent tilting behaviour on different android devices)
   - make sensitivity configurable?
-  - use Qt classes instead of jni for orientation?
   - visualize when in test-mode in Balancebox
   - fix back-button on android (missing parent?)
+  - catch case of user levelset without or empty levels file
+  - editor: detect and warn invalid levels (no start, no goal)
+  - handle resize events
 */
 .pragma library
 .import QtQuick 2.0 as Quick
@@ -99,7 +100,6 @@ function start(items_) {
     if (items.mode === "play") {
         if (GCompris.ApplicationInfo.isMobile) {
             // lock screen orientation
-            var or = GCompris.ApplicationInfo.getRequestedOrientation();
             GCompris.ApplicationInfo.setRequestedOrientation(0);
             if (GCompris.ApplicationInfo.getNativeOrientation() === Qt.PortraitOrientation) {
                 /*
@@ -214,6 +214,9 @@ function finishBall(won, x, y)
 function stop() {
     // reset everything
     tearDown();
+    // unlock screen orientation
+    if (GCompris.ApplicationInfo.isMobile)
+        GCompris.ApplicationInfo.setRequestedOrientation(-1);
 }
 
 function createObject(component, properties)
