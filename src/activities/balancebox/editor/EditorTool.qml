@@ -32,9 +32,13 @@ Item {
     Rectangle {
         id: bounding
         anchors.fill: parent
-        color: "silver"
+        radius: 10
         border.width: 2
-        border.color: root.selected ? "red" : root.highlighted ? "yellow": "lightgray"
+        border.color: (root.selected || root.highlighted) ? "red" : "black"
+        gradient: Gradient {
+            GradientStop { position: 0 ; color: root.selected ? "#87ff5c" : "#ffe85c" }
+            GradientStop { position: 1 ; color: root.selected ? "#44ff00" : "#f8d600" }
+        }
     }
 
     MouseArea {

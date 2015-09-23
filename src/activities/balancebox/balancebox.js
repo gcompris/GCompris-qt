@@ -23,7 +23,6 @@
   - levels, levels, levels
   - make sensitivity configurable?
   - visualize when in test-mode in Balancebox
-  - fix back-button on android (missing parent?)
   - catch case of user levelset without or empty levels file
   - editor: detect and warn invalid levels (no start, no goal)
   - handle resize events
@@ -41,7 +40,7 @@ var dataset = null;
 var m = 0.2; // without ppm-correction: 10
 var g = 9.81; // without ppm-correction: 50.8
 var box2dPpm = 32;    // pixelsPerMeter used in Box2D's world
-var boardSizeM = 0.9; // board's real edge length, fixed to 30 cm
+var boardSizeM = 0.9; // board's real edge length, fixed to 90 cm
 var boardSizePix = 500;  // board's current size in pix (acquired dynamically)
 var dpiBase=139;
 var curDpi = null;
@@ -53,7 +52,7 @@ var friction = 0.15;
 var restitution = 0.3;  // rebounce factor
 
 // stuff for keyboard based tilting
-var keyboardTiltStep = 0.25;   // degrees
+var keyboardTiltStep = 0.5;   // degrees
 var keyboardTimeStep = 20;    // ms
 var lastKey;
 var keyboardIsTilting = false;  // tilting or resetting to horizontal
@@ -84,6 +83,7 @@ function start(items_) {
     currentLevel = 0;
     // set up dynamic variables for movement:
     pixelsPerMeter = boardSizePix / boardSizeM / (items.dpi / dpiBase);
+    //pixelsPerMeter = (items.mapWrapper.length / 760) * boardSizePix / boardSizeM;
     vFactor = pixelsPerMeter / box2dPpm;
 
     console.log("Starting: mode=" + items.mode
@@ -131,20 +131,10 @@ function start(items_) {
     initLevel();
 }
 
-function validateLevels(doc)
+function sinDeg(num)
 {
-    // minimal syntax check:
-    if (undefined === doc || !Array.isArray(doc) || doc.length < 1)
-        return false;
-    for (var i = 0; i < doc.length; i++) {
-        if (undefined === doc[i].map || !Array.isArray(doc[i].map) ||
-                doc[i].map.length < 1)
-            return false;
-    }
-    return true;
+    return Math.sin(num/180*Math.PI);
 }
-
-function sinDeg(num) {return Math.sin(num/180*Math.PI);};
 
 function moveBall()
 {

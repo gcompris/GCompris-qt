@@ -22,6 +22,7 @@ import QtQuick 2.1
 import QtGraphicalEffects 1.0
 import GCompris 1.0
 import QtQuick.Controls 1.0
+import QtQuick.Controls.Styles 1.3
 
 import "../../../core"
 import ".."
@@ -130,37 +131,29 @@ Item {
             onError: console.error("Balanceboxeditor: Error parsing JSON: " + msg);
         }
 
-        GCText {
-            id: title
-            text: "Editor"
-            anchors.top: parent.top
-            anchors.left: parent.left
-        }
-
         Column {
             id: toolBox2
             anchors.top: mapWrapper.top
             anchors.left: mapWrapper.right
-            anchors.leftMargin: 20
-            spacing: 5
-            width: 80
-            height: parent.height
+            anchors.leftMargin: 10
             anchors.topMargin: 20
+            spacing: 5
+            width: (background.width - mapWrapper.width - props.wallSize - 20) / 2
+            height: parent.height
+//            anchors.topMargin: 20
 
             Button {
                 id: saveButton
-                width:100
-                height: 30
+                width: parent.width
+                height: props.cellSize
                 style: GCButtonStyle {}
                 text: "Save"
-                onClicked: {
-                    Activity.saveModel();
-                }
+                onClicked: Activity.saveModel();
             }
             Button {
                 id: testButton
-                width: 100
-                height: 30
+                width: parent.width
+                height: props.cellSize
                 style: GCButtonStyle {}
                 text: "Test"
                 onClicked: editor.startTesting();
@@ -169,11 +162,12 @@ Item {
 
         Column {
             id: toolBox
-            anchors.top: title.bottom
+            anchors.top: mapWrapper.top
+            anchors.topMargin: 20
             anchors.left: parent.left
-            width: props.cellSize
+            anchors.leftMargin: 10
+            width: (mapWrapper.x - 20)
             spacing: 5
-            anchors.leftMargin: (mapWrapper.x - width ) / 2
 
             Component.onCompleted: clearTool.selected = true;
 
@@ -193,8 +187,8 @@ Item {
             EditorTool {
                 id: clearTool
                 type: Activity.TOOL_CLEAR
-                anchors.left: parent.left
-                width: props.cellSize - 2
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: parent.width
                 height: props.cellSize - 2
 
                 onSelectedChanged: {
@@ -207,8 +201,8 @@ Item {
                     id: clear
 
                     source: "qrc:/gcompris/src/core/resource/cancel.svg"
-                    width: parent.width
-                    height: parent.height
+                    width: props.cellSize - 4
+                    height: props.cellSize - 4
 
                     anchors.centerIn: parent
                     anchors.margins: 3
@@ -218,8 +212,8 @@ Item {
             EditorTool {
                 id: hWallTool
                 type: Activity.TOOL_H_WALL
-                anchors.left: parent.left
-                width: props.cellSize
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: parent.width
                 height: props.cellSize
 
                 onSelectedChanged: {
@@ -231,7 +225,7 @@ Item {
                 Wall {
                     id: hWall
 
-                    width: parent.width
+                    width: props.cellSize
                     height: props.wallSize
 
                     anchors.centerIn: parent
@@ -241,8 +235,8 @@ Item {
 
             EditorTool {
                 id: vWallTool
-                anchors.left: parent.left
-                width: props.cellSize
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: parent.width
                 height: props.cellSize
                 type: Activity.TOOL_V_WALL
 
@@ -254,10 +248,8 @@ Item {
 
                 Wall {
                     id: vWall
-
                     width: props.wallSize
-                    height: parent.height
-
+                    height: props.cellSize - 4
                     anchors.centerIn: parent
                     anchors.margins: 3
                 }
@@ -265,8 +257,8 @@ Item {
 
             EditorTool {
                 id: holeTool
-                anchors.left: parent.left
-                width: props.cellSize
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: parent.width
                 height: props.cellSize
                 type: Activity.TOOL_HOLE
                 onSelectedChanged: {
@@ -277,8 +269,8 @@ Item {
 
                 BalanceItem {
                     id: hole
-                    width: parent.width - props.wallSize / 2
-                    height: parent.height - props.wallSize / 2
+                    width: props.cellSize - props.wallSize / 2
+                    height: props.cellSize - props.wallSize / 2
                     anchors.centerIn: parent
                     anchors.margins: props.wallSize / 2
                     visible: true
@@ -288,8 +280,8 @@ Item {
 
             EditorTool {
                 id: ballTool
-                anchors.left: parent.left
-                width: props.cellSize
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: parent.width
                 height: props.cellSize
                 type: Activity.TOOL_BALL
                 onSelectedChanged: {
@@ -300,7 +292,7 @@ Item {
 
                 BalanceItem {
                     id: ball
-                    width: parent.width - props.wallSize / 2
+                    width: props.cellSize - props.wallSize / 2
                     height: parent.height - props.wallSize / 2
                     anchors.centerIn: parent
                     anchors.margins: props.wallSize / 2
@@ -311,8 +303,8 @@ Item {
 
             EditorTool {
                 id: goalTool
-                anchors.left: parent.left
-                width: props.cellSize
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: parent.width
                 height: props.cellSize
                 type: Activity.TOOL_GOAL
                 onSelectedChanged: {
@@ -332,48 +324,47 @@ Item {
                 }
             }
 
-            Rectangle {
-                id: contactToolWrapper
-                width: props.cellSize * 2
+            EditorTool {
+                id: contactTool
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: parent.width
                 height: props.cellSize
-                color: "silver"
-
-                EditorTool {
-                    id: contactTool
-                    anchors.left: parent.left
-                    width: props.cellSize
-                    height: props.cellSize
-                    type: Activity.TOOL_CONTACT
-                    onSelectedChanged: {
-                        if (selected) {
-                            toolBox.setCurrentTool(contactTool);
-                        }
+                type: Activity.TOOL_CONTACT
+                onSelectedChanged: {
+                    if (selected) {
+                        toolBox.setCurrentTool(contactTool);
                     }
+                }
+
+                Row {
+                    id: contactToolRow
+                    spacing: 5
+                    width: contact.width + contactTextInput + spacing
+                    anchors.centerIn: parent
 
                     BalanceContact {
                         id: contact
                         width: props.cellSize - props.wallSize
                         height: props.cellSize - props.wallSize
-                        anchors.centerIn: parent
                         anchors.margins: props.wallSize / 2
                         pressed: false
                         orderNum: 99
                         text: props.contactValue
                         z: 1
                     }
-                }
-                TextInput {
-                    id: contactTextInput
-                    width: contactTool.width
-                    height: contactTool.height
-                    anchors.left: contactTool.right
-                    text: props.contactValue
-                    maximumLength: 2
-                    //activeFocusOnPress: true
-                    font.pixelSize: width / 2
-                    //horizontalAlignment: Text.AlignHCenter
-                    verticalAlignment: Text.AlignVCenter
-                    onTextChanged: if (text !== props.contactValue) props.contactValue = text;
+                    SpinBox {
+                        id: contactTextInput
+                        width: contact.width * 2
+                        height: contact.height
+                        value: props.contactValue
+                        maximumValue: 99
+                        minimumValue: 1
+                        decimals: 0
+                        horizontalAlignment: Qt.AlignHCenter
+                        font.family: GCSingletonFontLoader.fontLoader.name
+                        font.pixelSize: height / 2
+                        onValueChanged: if (value != props.contactValue) props.contactValue = value;
+                    }
                 }
             }
         }
