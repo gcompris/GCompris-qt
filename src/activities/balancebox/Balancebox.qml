@@ -38,6 +38,16 @@ ActivityBase {
     property string levelSet: "builtin"   // "builtin" or "user"
     property var testLevel
 
+    onWidthChanged: {
+        Activity.reconfigureScene();
+        Activity.initLevel();
+    }
+
+    onHeightChanged: {
+        Activity.reconfigureScene();
+        Activity.initLevel();
+    }
+
     onStart: {
         console.log("XXX BalanceBox onStart");
         focus = true;
@@ -91,7 +101,7 @@ ActivityBase {
 
         onStart: Activity.start(items)
 
-        onStop: { Activity.stop() }
+        onStop: Activity.stop()
 
         QtObject {
             id: items

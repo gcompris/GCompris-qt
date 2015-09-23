@@ -22,10 +22,8 @@
 /* ToDo:
   - levels, levels, levels
   - make sensitivity configurable?
-  - visualize when in test-mode in Balancebox
   - catch case of user levelset without or empty levels file
   - editor: detect and warn invalid levels (no start, no goal)
-  - handle resize events
 */
 .pragma library
 .import QtQuick 2.0 as Quick
@@ -81,21 +79,8 @@ function start(items_) {
     items = items_;
 
     currentLevel = 0;
-    // set up dynamic variables for movement:
-    pixelsPerMeter = boardSizePix / boardSizeM / (items.dpi / dpiBase);
-    //pixelsPerMeter = (items.mapWrapper.length / 760) * boardSizePix / boardSizeM;
-    vFactor = pixelsPerMeter / box2dPpm;
 
-    console.log("Starting: mode=" + items.mode
-            + " pixelsPerM=" + items.world.pixelsPerMeter
-            + " timeStep=" + items.world.timeStep
-            + " posIterations=" + items.world.positionIterations
-            + " velIterations=" + items.world.velocityIterations
-            + " boardSizePix=" + boardSizePix  + " (real " + items.mapWrapper.length + ")"
-            + " pixelsPerMeter=" + pixelsPerMeter
-            + " vFactor=" + vFactor
-            + " dpi=" + items.dpi
-            + " nativeOrientation=" + GCompris.ApplicationInfo.getNativeOrientation());
+    reconfigureScene();
 
     if (items.mode === "play") {
         if (GCompris.ApplicationInfo.isMobile) {
@@ -129,6 +114,25 @@ function start(items_) {
     }
     numberOfLevel = dataset.length;
     initLevel();
+}
+
+function reconfigureScene()
+{
+    // set up dynamic variables for movement:
+    pixelsPerMeter = boardSizePix / boardSizeM / (items.dpi / dpiBase);
+    //pixelsPerMeter = (items.mapWrapper.length / 760) * boardSizePix / boardSizeM;
+    vFactor = pixelsPerMeter / box2dPpm;
+
+    console.log("Starting: mode=" + items.mode
+            + " pixelsPerM=" + items.world.pixelsPerMeter
+            + " timeStep=" + items.world.timeStep
+            + " posIterations=" + items.world.positionIterations
+            + " velIterations=" + items.world.velocityIterations
+            + " boardSizePix" + boardSizePix  + " (real " + items.mapWrapper.length + ")"
+            + " pixelsPerMeter=" + pixelsPerMeter
+            + " vFactor=" + vFactor
+            + " dpi=" + items.dpi
+            + " nativeOrientation=" + GCompris.ApplicationInfo.getNativeOrientation());
 }
 
 function sinDeg(num)
@@ -336,6 +340,7 @@ function removeBallContact(item)
 
 function tearDown()
 {
+    items.ball.body.linearVelocity = Qt.point(0, 0);
     items.timer.stop();
     items.keyboardTimer.stop();
     if (holes.length > 0) {
