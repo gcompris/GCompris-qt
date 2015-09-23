@@ -1,6 +1,6 @@
 /* GCompris - Goal.qml
  *
- * Copyright (C) 2014 Holger Kaelberer
+ * Copyright (C) 2014-2015 Holger Kaelberer
  *
  * Authors:
  *   Holger Kaelberer <holger.k@elberer.de>

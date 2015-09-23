@@ -1,6 +1,6 @@
 /* GCompris - balance.qml
  *
- * Copyright (C) 2014,2015 Holger Kaelberer <holger.k@elberer.de>
+ * Copyright (C) 2014-2015 Holger Kaelberer <holger.k@elberer.de>
  *
  * Authors:
  *   Holger Kaelberer <holger.k@elberer.de>
@@ -239,8 +239,8 @@ ActivityBase {
                 restitution: Activity.restitution
                 bodyType: Body.Dynamic
                 shadow: true
-                shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
-                shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
+                shadowHorizontalOffset: (items.tilt.yRotation > 0) ? Math.min(items.tilt.yRotation, items.wallSize) : Math.max(items.tilt.yRotation, -items.wallSize)
+                shadowVerticalOffset: (items.tilt.xRotation > 0) ? Math.min(items.tilt.xRotation, items.wallSize) : Math.max(items.tilt.xRotation, -items.wallSize)
 
                 Behavior on scale {
                     NumberAnimation {
@@ -290,6 +290,10 @@ ActivityBase {
 
             property double xRotation: 0
             property double yRotation: 0
+
+            property bool swapAxes: false
+            property bool invertX: false
+            property bool invertY: false
             
             onXRotationChanged: {
                 if (xRotation > 90)
@@ -312,9 +316,14 @@ ActivityBase {
                 active: ApplicationInfo.isMobile ? true : false
     
                 onReadingChanged: {
-                    tilt.xRotation = reading.xRotation;
-                    tilt.yRotation = reading.yRotation;
-                    
+                    if (!tilt.swapAxes) {
+                        tilt.xRotation = tilt.invertX ? -reading.xRotation : reading.xRotation;
+                        tilt.yRotation = tilt.invertY ? -reading.yRotation : reading.yRotation;
+                    } else {
+                        tilt.xRotation = tilt.invertX ? -reading.yRotation : reading.yRotation;
+                        tilt.yRotation = tilt.invertY ? -reading.xRotation : reading.xRotation;
+                    }
+
                     tiltText.text = "X/Y Rotation: " 
                         + tiltSensor.reading.xRotation 
                         + "/" + tiltSensor.reading.yRotation

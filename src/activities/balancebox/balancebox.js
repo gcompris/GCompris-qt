@@ -1,6 +1,6 @@
 /* GCompris - balancebox.js
  *
- * Copyright (C) 2014,2015 Holger Kaelberer <holger.k@elberer.de>
+ * Copyright (C) 2014-2015 Holger Kaelberer <holger.k@elberer.de>
  *
  * Authors:
  *   Holger Kaelberer <holger.k@elberer.de>
@@ -93,23 +93,29 @@ function start(items_) {
             + " boardSizePix=" + boardSizePix  + " (real " + items.mapWrapper.length + ")"
             + " pixelsPerMeter=" + pixelsPerMeter
             + " vFactor=" + vFactor
-            + " dpi=" + items.dpi);
+            + " dpi=" + items.dpi
+            + " nativeOrientation=" + GCompris.ApplicationInfo.getNativeOrientation());
 
     if (items.mode === "play") {
         if (GCompris.ApplicationInfo.isMobile) {
+            // lock screen orientation
             var or = GCompris.ApplicationInfo.getRequestedOrientation();
-            GCompris.ApplicationInfo.setRequestedOrientation(5);
-        /* -1: SCREEN_ORIENTATION_UNSPECIFIED
-         * 0:  SCREEN_ORIENTATION_LANDSCAPE: forces landscape, inverted rotation
-         *     on S2
-         * 5:  SCREEN_ORIENTATION_NOSENSOR:
-         *     forces 'main' orientation mode on each device (portrait on handy
-         *     landscape on tablet and reports rotation correctly)
-         * 14: SCREEN_ORIENTATION_LOCKED: inverted rotation on tablet
-         */
+            GCompris.ApplicationInfo.setRequestedOrientation(0);
+            if (GCompris.ApplicationInfo.getNativeOrientation() === Qt.PortraitOrientation) {
+                /*
+                 * Adjust tilting if native orientation != landscape.
+                 *
+                 * Note: As of Qt 5.4.1 QTiltSensor as well as QRotationSensor
+                 * report on Android
+                 *   isFeatureSupported(AxesOrientation) == false.
+                 * Therefore we honour rotation manually.
+                 */
+                items.tilt.swapAxes = true;
+                items.tilt.invertX = true;
+            }
         }
         var levelsFile = builtinFile;
-        if (items.levelSet == "user")
+        if (items.levelSet === "user")
             levelsFile = userFile;
         dataset = items.parser.parseFromUrl(levelsFile, validateLevels);
         if (dataset == null) {

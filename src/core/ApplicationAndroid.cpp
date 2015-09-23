@@ -1,6 +1,6 @@
 /* GCompris - ApplicationSettingsAndroid.cpp
  *
- * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ * Copyright (C) 2014-2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -23,6 +23,7 @@
 #include "ApplicationInfo.h"
 #include <QtAndroidExtras/QAndroidJniObject>
 #include <QDebug>
+#include <QtAndroid>
 
 void ApplicationSettings::setDemoMode(const bool newDemoMode)
 {
@@ -77,3 +78,17 @@ jint JNICALL JNI_OnLoad(JavaVM *vm, void *)
 
     return JNI_VERSION_1_4;
 }
+
+void ApplicationInfo::setRequestedOrientation(int orientation)
+{
+    QAndroidJniObject activity = QtAndroid::androidActivity();
+    activity.callMethod<void>("setRequestedOrientation", "(I)V", orientation);
+}
+
+int ApplicationInfo::getRequestedOrientation()
+{
+    QAndroidJniObject activity = QtAndroid::androidActivity();
+    jint orientation = activity.callMethod<jint>("getRequestedOrientation");
+    return orientation;
+}
+

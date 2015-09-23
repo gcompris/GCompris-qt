@@ -1,6 +1,6 @@
 /* GCompris - ApplicationSettingsDefault.cpp
  *
- * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ * Copyright (C) 2014-2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -38,10 +38,6 @@
 
 #include <QFontDatabase>
 #include <QDir>
-#ifdef Q_OS_ANDROID
-#   include <QtAndroidExtras/QAndroidJniObject>
-#   include <QtAndroid>
-#endif
 
 QQuickWindow *ApplicationInfo::m_window = NULL;
 ApplicationInfo *ApplicationInfo::m_instance = NULL;
@@ -103,24 +99,9 @@ ApplicationInfo::~ApplicationInfo()
     m_instance = NULL;
 }
 
-void ApplicationInfo::setRequestedOrientation(int orientation)
+Qt::ScreenOrientation ApplicationInfo::getNativeOrientation()
 {
-#ifdef Q_OS_ANDROID
-    QAndroidJniObject activity = QtAndroid::androidActivity();
-    activity.callMethod<void>("setRequestedOrientation", "(I)V", orientation);
-#endif
-}
-
-int ApplicationInfo::getRequestedOrientation()
-{
-#ifdef Q_OS_ANDROID
-    QAndroidJniObject activity = QtAndroid::androidActivity();
-    jint orientation = activity.callMethod<jint>("getRequestedOrientation");
-    qDebug() << "VVV orient=" << orientation << "platform="<< platform() << "mobile=" << isMobile();
-    qDebug() << "VVV orient=" << orientation << "platform="<< platform() << "mobile=" << isMobile();
-    return orientation;
-#endif
-    return -1;
+    return QGuiApplication::primaryScreen()->nativeOrientation();
 }
 
 void ApplicationInfo::setApplicationWidth(const int newWidth)

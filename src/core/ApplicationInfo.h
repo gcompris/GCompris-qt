@@ -1,6 +1,6 @@
 /* GCompris - ApplicationSettingsDefault.cpp
  *
- * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ * Copyright (C) 2014-2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -246,6 +246,43 @@ public:
     static QString CompressedAudio() { return COMPRESSED_AUDIO; }
     static bool isDownloadAllowed() { return QString(DOWNLOAD_ALLOWED) == "ON"; }
 
+    /**
+     * Returns the native screen orientation.
+     *
+     * Wraps QScreen::nativeOrientation: The native orientation of the screen
+     * is the orientation where the logo sticker of the device appears the
+     * right way up, or Qt::PrimaryOrientation if the platform does not support
+     * this functionality.
+     *
+     * The native orientation is a property of the hardware, and does not change
+     */
+    Q_INVOKABLE Qt::ScreenOrientation getNativeOrientation();
+
+    /**
+     * Change the desired orientation of the application.
+     *
+     * Android specific function, cf. http://developer.android.com/reference/android/app/Activity.html#setRequestedOrientation(int)
+     *
+     * @param orientation Desired orientation of the application. For possible
+     *                    values cf. http://developer.android.com/reference/android/content/pm/ActivityInfo.html#screenOrientation .
+     *                    Some useful values:
+     *                    - -1: SCREEN_ORIENTATION_UNSPECIFIED
+     *                    -  0: SCREEN_ORIENTATION_LANDSCAPE: forces landscape
+     *                    -  1: SCREEN_ORIENTATION_PORTRAIT: forces portrait
+     *                    -  5: SCREEN_ORIENTATION_NOSENSOR: forces native
+     *                          orientation mode on each device (portrait on
+     *                          smartphones, landscape on tablet)
+     *                    - 14: SCREEN_ORIENTATION_LOCKED: lock current orientation
+     */
+    Q_INVOKABLE void setRequestedOrientation(int orientation);
+
+    /**
+     * Query the desired orientation of the application.
+     *
+     * @sa setRequestedOrientation
+     */
+    Q_INVOKABLE int getRequestedOrientation();
+
     /// @endcond
 
 protected slots:
@@ -312,11 +349,6 @@ protected slots:
 
     void notifyPortraitMode();
     Q_INVOKABLE void notifyFullscreenChanged();
-
-//#ifdef Q_OS_ANDROID //FIXME: documentation!
-    Q_INVOKABLE void setRequestedOrientation(int orientation);
-    Q_INVOKABLE int getRequestedOrientation();
-//#endif
 
 protected:
 	qreal getSizeWithRatio(const qreal height) { return ratio() * height; }
