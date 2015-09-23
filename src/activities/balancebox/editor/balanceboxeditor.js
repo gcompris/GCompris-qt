@@ -86,7 +86,7 @@ function createEmptyLevel()
 
 function initLevel()
 {
-    console.log("XXX editor initLevel levels=" + JSON.stringify(levels));
+    //console.log("XXX editor initLevel levels=" + JSON.stringify(levels));
     if (currentLevel >= numberOfLevel) {
         levels.push(createEmptyLevel());
         numberOfLevel++;
@@ -171,7 +171,7 @@ function modelToLevel()
                     map: map,
                     targets: targets
                 }
-    console.log("XXX level: " + JSON.stringify(level) + " - " + map);
+    //console.log("XXX level: " + JSON.stringify(level) + " - " + map);
     return level;
 }
 

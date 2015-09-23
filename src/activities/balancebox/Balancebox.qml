@@ -171,7 +171,7 @@ ActivityBase {
                 anchors.top: parent.top
                 anchors.topMargin: -items.wallSize/2
                 
-                shadow: true
+                shadow: false
                 shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
                 shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
             }
@@ -187,7 +187,7 @@ ActivityBase {
                 anchors.top: parent.bottom
                 anchors.topMargin: -items.wallSize/2
                 
-                shadow: true
+                shadow: false
                 shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
                 shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
             }
@@ -202,7 +202,7 @@ ActivityBase {
                 anchors.leftMargin: - items.wallSize/2
                 anchors.top: parent.top
                 anchors.topMargin: -items.wallSize/2
-                shadow: true
+                shadow: false
                 shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
                 shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
             }
@@ -217,7 +217,7 @@ ActivityBase {
                 anchors.leftMargin: - items.wallSize/2
                 anchors.top: parent.top
                 anchors.topMargin: -items.wallSize/2
-                shadow: true
+                shadow: false
                 shadowHorizontalOffset: Math.min(items.tilt.yRotation, items.wallSize)
                 shadowVerticalOffset: Math.min(items.tilt.xRotation, items.wallSize)
             }

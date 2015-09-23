@@ -24,6 +24,8 @@
   (- fix inconsistent tilting behaviour on different android devices)
   - make sensitivity configurable?
   - use Qt classes instead of jni for orientation?
+  - visualize when in test-mode in Balancebox
+  - fix back-button on android (missing parent?)
 */
 .pragma library
 .import QtQuick 2.0 as Quick
@@ -88,7 +90,7 @@ function start(items_) {
             + " timeStep=" + items.world.timeStep
             + " posIterations=" + items.world.positionIterations
             + " velIterations=" + items.world.velocityIterations
-            + " boardSizePix=" + boardSizePix
+            + " boardSizePix=" + boardSizePix  + " (real " + items.mapWrapper.length + ")"
             + " pixelsPerMeter=" + pixelsPerMeter
             + " vFactor=" + vFactor
             + " dpi=" + items.dpi);
@@ -97,7 +99,7 @@ function start(items_) {
         if (GCompris.ApplicationInfo.isMobile) {
             var or = GCompris.ApplicationInfo.getRequestedOrientation();
             GCompris.ApplicationInfo.setRequestedOrientation(5);
-            /* -1: SCREEN_ORIENTATION_UNSPECIFIED
+        /* -1: SCREEN_ORIENTATION_UNSPECIFIED
          * 0:  SCREEN_ORIENTATION_LANDSCAPE: forces landscape, inverted rotation
          *     on S2
          * 5:  SCREEN_ORIENTATION_NOSENSOR:
