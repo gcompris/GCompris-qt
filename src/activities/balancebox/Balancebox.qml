@@ -30,6 +30,7 @@ import QtQuick.Controls 1.0
 import "../../core"
 import "editor/"
 import "balancebox.js" as Activity
+import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -440,7 +441,6 @@ ActivityBase {
                         Button {
                             id: editorButton
                             style:  GCButtonStyle {}
-                            //width: 80
                             height: levelsBox.height
                             text: "Start Editor"
                             visible: levelsBox.currentIndex == 1
@@ -466,6 +466,23 @@ ActivityBase {
                     dataToSave = {"levels": activity.levelSet};
                     //activity.start();  done automatically during view switch
                 }
+            }
+
+            dataValidationFunc: function() {
+                var newLevels = dialogActivityConfig.configItem
+                    .availableLevels[dialogActivityConfig.configItem.levelsBox.currentIndex].value;
+                if (newLevels === "user" &&
+                        !parser.jsonFile.exists(Activity.userFile)) {
+                    Core.showMessageDialog(dialogActivityConfig,
+                                           qsTr("You selected the user defined level set, but you have not yet defined any user levels!<br/> " +
+                                 "Either define your user levels by starting the level editor or choose the 'builtin' level set."),
+                                  "Ok", null,
+                                  "", null,
+                                  null);
+                    return false;
+                }
+
+                return true;
             }
 
             function setDefaultValues() {
