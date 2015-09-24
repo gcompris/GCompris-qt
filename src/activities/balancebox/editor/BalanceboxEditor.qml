@@ -135,10 +135,10 @@ Item {
             id: toolBox2
             anchors.top: mapWrapper.top
             anchors.left: mapWrapper.right
-            anchors.leftMargin: 10
-            anchors.topMargin: 20
-            spacing: 5
-            width: (background.width - mapWrapper.width - props.wallSize - 20) / 2
+            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.topMargin: 20 * ApplicationInfo.ratio
+            spacing: 5 * ApplicationInfo.ratio
+            width: (background.width - mapWrapper.width - props.wallSize - 20 * ApplicationInfo.ratio) / 2
             height: parent.height
 //            anchors.topMargin: 20
 
@@ -163,11 +163,11 @@ Item {
         Column {
             id: toolBox
             anchors.top: mapWrapper.top
-            anchors.topMargin: 20
+            anchors.topMargin: 20 * ApplicationInfo.ratio
             anchors.left: parent.left
             anchors.leftMargin: 10
             width: (mapWrapper.x - 20)
-            spacing: 5
+            spacing: 5 * ApplicationInfo.ratio
 
             Component.onCompleted: clearTool.selected = true;
 
@@ -339,7 +339,7 @@ Item {
                 Row {
                     id: contactToolRow
                     spacing: 5
-                    width: contact.width + contactTextInput + spacing
+                    width: contact.width + contactTextInput.width + spacing
                     anchors.centerIn: parent
 
                     BalanceContact {

@@ -21,9 +21,7 @@
 
 /* ToDo:
   - levels, levels, levels
-  - make sensitivity configurable?
-  - catch case of user levelset without or empty levels file
-  - editor: detect and warn invalid levels (no start, no goal)
+  - make sensitivity configurable
 */
 .pragma library
 .import QtQuick 2.0 as Quick
@@ -41,6 +39,7 @@ var box2dPpm = 32;    // pixelsPerMeter used in Box2D's world
 var boardSizeM = 0.9; // board's real edge length, fixed to 90 cm
 var boardSizePix = 500;  // board's current size in pix (acquired dynamically)
 var dpiBase=139;
+var boardSizeBase = 760;
 var curDpi = null;
 var pixelsPerMeter = null;
 var vFactor = pixelsPerMeter / box2dPpm; // FIXME: calculate!
@@ -119,8 +118,7 @@ function start(items_) {
 function reconfigureScene()
 {
     // set up dynamic variables for movement:
-    pixelsPerMeter = boardSizePix / boardSizeM / (items.dpi / dpiBase);
-    //pixelsPerMeter = (items.mapWrapper.length / 760) * boardSizePix / boardSizeM;
+    pixelsPerMeter = (items.mapWrapper.length / boardSizeBase) * boardSizePix / boardSizeM;
     vFactor = pixelsPerMeter / box2dPpm;
 
     console.log("Starting: mode=" + items.mode
