@@ -228,6 +228,9 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
 	QObject::connect(&engine, SIGNAL(quit()), DownloadManager::getInstance(),
             SLOT(shutdown()));
+    // add import path for shipped qml modules:
+    engine.addImportPath(QStringLiteral("%1/../lib/qml")
+                         .arg(QCoreApplication::applicationDirPath()));
 
     if(parser.isSet(exportActivitiesAsSQL)) {
         ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree*>(ActivityInfoTree::menuTreeProvider(&engine, NULL)));

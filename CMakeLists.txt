@@ -260,3 +260,25 @@ if(SAILFISHOS)
   add_subdirectory(platforms/sailfishOS)
 endif()
 
+#
+# external: qml-box2d
+#
+
+include(ExternalProject)
+
+set (_box2d_install_dir ${CMAKE_CURRENT_BINARY_DIR}/lib/qml/Box2D.2.0)
+set (_box2d_source_dir ${CMAKE_CURRENT_SOURCE_DIR}/external/qml-box2d)
+
+ExternalProject_Add(qml_box2d
+                    DOWNLOAD_COMMAND ""
+                    SOURCE_DIR ${_box2d_source_dir}
+                    CONFIGURE_COMMAND qmake ${_box2d_source_dir}/box2d.pro
+                    BUILD_COMMAND make
+                    INSTALL_DIR ${_box2d_install_dir}
+                    INSTALL_COMMAND cp libBox2D.so ${_box2d_source_dir}/qmldir ${_box2d_install_dir}
+                   )
+
+add_library(qml-box2d SHARED IMPORTED)
+set_target_properties(qml-box2d PROPERTIES IMPORTED_LOCATION ${_box2d_install_dir}/libBox2D.so)
+
+install(DIRECTORY  ${_box2d_install_dir} DESTINATION lib/qml)

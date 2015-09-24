@@ -10,5 +10,6 @@
  "target-architecture": "@ARM_TARGET@",
  "application-binary": "@CMAKE_LIBRARY_OUTPUT_DIRECTORY@libGCompris.so",
  "android-package-source-directory": "@PACKAGE_SOURCE_ANDROID@/",
- "android-package": "net.gcompris"
+ "android-package": "net.gcompris",
+ "android-extra-plugins": "@CMAKE_BINARY_DIR@/lib/qml"
 }
