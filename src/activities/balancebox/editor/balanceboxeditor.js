@@ -210,6 +210,8 @@ function modifyMap(props, row, col)
         newValue = 0;
         props.mapModel.setProperty(row * level.map.length + col,
                                    "contactValue", 0)
+        props.mapModel.setProperty(row * level.map.length + col,
+                                   "orn", 0)
     } else { // all other tools
 
         // special treatment for mutually exclusive ones:
@@ -219,6 +221,8 @@ function modifyMap(props, row, col)
                 || props.currentTool === TOOL_BALL) {
             // helper:
             var MUTEX_MASK = (START | GOAL | HOLE | CONTACT) ^ props.currentTool;
+            props.mapModel.setProperty(row * level.map.length + col,
+                                       "orn", 0)
             newValue &= ~MUTEX_MASK;
         }
 
