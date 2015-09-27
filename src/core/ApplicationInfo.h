@@ -203,18 +203,19 @@ public:
     Q_INVOKABLE bool requestAudioFocus() const;
 
     /**
-    * Abandon the Audio Focus.
-    *
-    * On systems that support it, it will let an audio player start again.
-    */
+     * Abandon the Audio Focus.
+     *
+     * On systems that support it, it will let an audio player start again.
+     */
     Q_INVOKABLE void abandonAudioFocus() const;
 
     /**
-    * Abandon the Audio Focus.
-    *
-    * On systems that support it, it will let an audio player start again.
-    */
-    Q_INVOKABLE QString getWritablePath() const;
+     * Return the platform specific path for storing data shared between apps
+     *
+     * On Android (version?): /storage/emulated/0/GCompris
+     * On Linux: $HOME/local/share/GCompris
+     */
+    Q_INVOKABLE QString getSharedWritablePath() const;
 
     /// @cond INTERNAL_DOCS
 

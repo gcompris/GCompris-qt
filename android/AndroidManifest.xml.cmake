@@ -33,6 +33,8 @@
 	</application>
 	<supports-screens android:anyDensity="true" android:normalScreens="true" android:smallScreens="true" android:largeScreens="true"/>
 	<uses-sdk android:minSdkVersion="9" android:targetSdkVersion="19"/>
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 	@ANDROID_INTERNET_PERMISSION@
 	@ANDROID_ACCESS_NETWORK_STATE_PERMISSION@
 	@ANDROID_BILLING_PERMISSION@
