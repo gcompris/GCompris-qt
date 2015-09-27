@@ -523,7 +523,7 @@ Item {
 
                         Loader {
                             id: contactLoader
-                            active: (orn > 0) || (cell.highlighted && props.currentTool === Activity.TOOL_CONTACT)
+                            active: (value & Activity.CONTACT) || (cell.highlighted && props.currentTool === Activity.TOOL_CONTACT)
                             width: props.cellSize - props.wallSize
                             height: props.cellSize - props.wallSize
                             anchors.centerIn: parent
@@ -532,7 +532,6 @@ Item {
                                 anchors.centerIn: parent
                                 visible: true
                                 pressed: false
-                                orderNum: orn
                                 text: contactValue
                                 z: 1
                             }

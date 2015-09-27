@@ -38,22 +38,24 @@ ActivityBase {
     property string mode: "play"  // "play" or "test"
     property string levelSet: "builtin"   // "builtin" or "user"
     property var testLevel
+    property bool inForeground: false   // to avoid unneeded reconfigurations
 
-    onWidthChanged: {
-        Activity.reconfigureScene();
-        Activity.initLevel();
-    }
+    onWidthChanged: if (inForeground) {
+                        Activity.reconfigureScene();
+                        Activity.initLevel();
+                    }
 
-    onHeightChanged: {
-        Activity.reconfigureScene();
-        Activity.initLevel();
-    }
+    onHeightChanged: if (inForeground) {
+                         Activity.reconfigureScene();
+                         Activity.initLevel();
+                     }
 
     onStart: {
         console.log("XXX BalanceBox onStart");
+        inForeground = true;
         focus = true;
     }
-    onStop: {console.log("XXX BalanceBox onStop");}
+    onStop: {console.log("XXX BalanceBox onStop"); inForeground = false;}
 
     Keys.onPressed: Activity.processKeyPress(event.key)
     Keys.onReleased: Activity.processKeyRelease(event.key)
@@ -237,6 +239,7 @@ ActivityBase {
                 id: ball
                 world: physicsWorld
                 imageSource: Activity.baseUrl + "/ball.svg"
+                visible: false
                 scale: 1.0
                 width: items.ballSize
                 height: items.ballSize

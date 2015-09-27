@@ -22,6 +22,8 @@
 /* ToDo:
   - levels, levels, levels
   - make sensitivity configurable
+  - add rectangular fixture for goal
+  - editor: add 'clear' button
 */
 .pragma library
 .import QtQuick 2.0 as Quick
@@ -117,6 +119,8 @@ function start(items_) {
 
 function reconfigureScene()
 {
+    if (items === undefined || items.mapWrapper === undefined)
+        return;
     // set up dynamic variables for movement:
     pixelsPerMeter = (items.mapWrapper.length / boardSizeBase) * boardSizePix / boardSizeM;
     vFactor = pixelsPerMeter / box2dPpm;
@@ -140,7 +144,6 @@ function sinDeg(num)
 
 function moveBall()
 {
- //   console.log("tilt: " + items.tilt.xRotation + "/" + items.tilt.yRotation );
     var dt = step / 1000;
     var dvx = ((m*g*dt) * sinDeg(items.tilt.yRotation)) / m;
     var dvy = ((m*g*dt) * sinDeg(items.tilt.xRotation)) / m;
@@ -176,10 +179,7 @@ function checkBallContacts()
                 {
                     ballContacts[k].pressed = true;
                     lastContact = ballContacts[k].orderNum;
-                    console.log("unlocked next contact " + lastContact
-                            + " length=" + contacts.length);
                     if (lastContact == contacts.length) {
-                        console.log("door unlocked");
                         goalUnlocked = true;
                         goal.imageSource = baseUrl + "/door.svg";
                     }
@@ -225,7 +225,6 @@ function initMap()
     goalUnlocked = true;
     items.mapWrapper.rows = map.length;
     items.mapWrapper.columns = map[0].length;
-    console.log("creating map of size " + items.mapWrapper.rows + "/" + items.mapWrapper.columns);
     for (var row = 0; row < map.length; row++) {
         for (var col = 0; col < map[row].length; col++) {
             var x = col * items.cellSize;
@@ -272,8 +271,9 @@ function initMap()
             }
 
             if (map[row][col] & START) {
-                items.ball.x = col * items.cellSize + items.wallSize ;
+                items.ball.x = col * items.cellSize + items.wallSize;
                 items.ball.y = row * items.cellSize + items.wallSize;
+                items.ball.visible = true;
             }
             
             if (map[row][col] & GOAL) {
@@ -339,6 +339,8 @@ function removeBallContact(item)
 function tearDown()
 {
     items.ball.body.linearVelocity = Qt.point(0, 0);
+    items.ball.scale = 1;
+    items.ball.visible = false;
     items.timer.stop();
     items.keyboardTimer.stop();
     if (holes.length > 0) {
@@ -362,7 +364,6 @@ function tearDown()
     goal = null;
     items.tilt.xRotation = 0;
     items.tilt.yRotation = 0;
-    items.ball.scale = 1;
     ballContacts = new Array();
 }
 

@@ -41,6 +41,7 @@ var numberOfLevel;
 var levelChanged = false;  // whether current level has unsaved changes
 var props;
 var currentIsNewLevel;
+var targetList = [];
 
 function initEditor(_props)
 {
@@ -51,7 +52,6 @@ function initEditor(_props)
     numberOfLevel = 0;
     props.lastBallIndex = -1;
     props.lastGoalIndex = -1;
-console.log("XXX loaded levels form file " + props.editor.filename);
     levels = [];
     if (props.file.exists(props.editor.filename)) {
         levels = props.parser.parseFromUrl(props.editor.filename, validateLevels);
@@ -59,8 +59,7 @@ console.log("XXX loaded levels form file " + props.editor.filename);
             console.error("BalanceboxEditor: Error loading levels from "
                           + props.editor.filename);
             levels = [];  // restart with an empty level-set
-        } else
-            console.log("XXX loaded levels form file " + props.editor.filename);
+        }
     }
     numberOfLevel = levels.length;
 
@@ -86,9 +85,9 @@ function createEmptyLevel()
 
 function initLevel()
 {
-    //console.log("XXX editor initLevel levels=" + JSON.stringify(levels));
     if (currentLevel >= numberOfLevel) {
         levels.push(createEmptyLevel());
+        levelChanged = false;
         numberOfLevel++;
         currentIsNewLevel = true;
     } else
@@ -100,7 +99,7 @@ function initLevel()
     props.lastGoalIndex = -1;
 
     props.mapModel.clear();
-    levelChanged = false;
+    targetList = [];
     for (var row = 0; row < level.map.length; row++) {
         for (var col = 0; col < level.map[row].length; col++) {
             var contactValue = "";
@@ -112,7 +111,9 @@ function initLevel()
             } else if (orderNum > 0) {
                 if (orderNum > props.lastOrderNum)
                     props.lastOrderNum = orderNum;
-                contactValue = Number(level.targets[orderNum-1]).toString();
+                var target = level.targets[orderNum-1]
+                targetList.push(parseInt(target));
+                contactValue = Number(target).toString();
                 if (contactValue > parseInt(props.contactValue) + 1)
                     props.contactValue = Number(parseInt(contactValue) + 1).toString();
             }
@@ -120,8 +121,7 @@ function initLevel()
                 "row": row,
                 "col": col,
                 "value": value,
-                "orn": orderNum,
-                "contactValue": orderNum > 0 ? contactValue : ""
+                "contactValue": (orderNum > 0) ? contactValue : ""
             });
             if (value & GOAL) {
                 if (props.lastGoalIndex > -1) {
@@ -151,6 +151,7 @@ function modelToLevel()
 {
     var map = new Array();
     var targets = new Array();
+    targetList.sort(function(a,b) { return a - b;})
     for (var i = 0; i < props.mapModel.count; i++) {
         var row = Math.floor(i / props.columns);
         var col = i % props.columns;
@@ -160,18 +161,15 @@ function modelToLevel()
 
         var obj = props.mapModel.get(i);
         var value = obj.value;
-        if (obj.orn > 0) {
-            value |= (obj.orn << 8);
-            targets[obj.orn-1] = obj.contactValue;
-        }
+        if (obj.value & CONTACT)
+            value |= ((targetList.indexOf(parseInt(obj.contactValue)) + 1) << 8);
         map[row][col] = "0x" + dec2hex(value);
     }
     var level = {
                     level: currentLevel + 1,
                     map: map,
-                    targets: targets
+                    targets: targetList
                 }
-    //console.log("XXX level: " + JSON.stringify(level) + " - " + map);
     return level;
 }
 
@@ -183,35 +181,49 @@ function saveModel()
         if (!props.file.mkpath(path))
             console.error("Could not create directory " + path);
         else
-            console.debug("Created path " + path);
+            console.debug("Created directory " + path);
     }
     levels[currentLevel] = l
     if (!props.file.write(JSON.stringify(levels), userFile))
         console.error("BalanceboxEditor: Error saving levels to " + userFile);
     else {
-        //console.debug("BalanceboxEditor: Saved " + numberOfLevel + " levels in " + userFile);
+        console.debug("BalanceboxEditor: Saved " + numberOfLevel + " levels in " + userFile);
         Core.showMessageDialog(props.editor,
                                qsTr("Saved %1 levels to user levels file.")
-                               .arg(numberOfLevel).arg(userFile),
+                               .arg(numberOfLevel),
                                "", null, "", null, null);
         levelChanged = false;
+        currentIsNewLevel = false;
     }
 }
 
 function modifyMap(props, row, col)
 {
-    //console.log("XXX modify map currentTool='" + props.currentTool + "'");
     var modelIndex = row * level.map.length + col;
     var obj = props.mapModel.get(modelIndex);
     var oldValue = obj.value;
     var newValue = oldValue;
 
+    // special treatment for already set contact: update targetList
+    if (obj.value & TOOL_CONTACT) {
+        if (props.currentTool !== TOOL_H_WALL && props.currentTool !== TOOL_H_WALL) {
+            var idx = targetList.indexOf(parseInt(obj.contactValue));
+            if (idx !== -1)
+                targetList.splice(idx, 1);
+        }
+    } else {
+        // wants to set a new contact -> check for already existing value
+        if (props.currentTool === TOOL_CONTACT &&
+                targetList.indexOf(parseInt(props.contactValue)) !== -1) {
+            console.debug("Avoiding to set duplicate value " + props.contactValue);
+            return;
+        }
+    }
+
     if (props.currentTool === TOOL_CLEAR) {
         newValue = 0;
         props.mapModel.setProperty(row * level.map.length + col,
-                                   "contactValue", 0)
-        props.mapModel.setProperty(row * level.map.length + col,
-                                   "orn", 0)
+                                   "contactValue", "");
     } else { // all other tools
 
         // special treatment for mutually exclusive ones:
@@ -221,14 +233,11 @@ function modifyMap(props, row, col)
                 || props.currentTool === TOOL_BALL) {
             // helper:
             var MUTEX_MASK = (START | GOAL | HOLE | CONTACT) ^ props.currentTool;
-            props.mapModel.setProperty(row * level.map.length + col,
-                                       "orn", 0)
             newValue &= ~MUTEX_MASK;
         }
 
         // special treatment for singletons:
         if (props.currentTool === TOOL_GOAL) {
-            console.log("GGGoal " + (obj.value & TOOL_GOAL));
             if ((obj.value & TOOL_GOAL) === 0) {
                 // setting a new one
                 if (props.lastGoalIndex > -1) {
@@ -255,8 +264,9 @@ function modifyMap(props, row, col)
 
         // special treatment for contacts:
         if (props.currentTool === TOOL_CONTACT) {
-            props.mapModel.setProperty(row * level.map.length + col, "orn", ++props.lastOrderNum);
             props.mapModel.setProperty(row * level.map.length + col, "contactValue", props.contactValue);
+            if (targetList.indexOf(parseInt(props.contactValue)) === -1)
+                targetList.push(parseInt(props.contactValue));
             var newContact =  Number(Number(props.contactValue) + 1).toString()
             props.contactValue = newContact;
         }
@@ -267,7 +277,7 @@ function modifyMap(props, row, col)
 
     if (oldValue !== newValue)
         levelChanged = true;
-    console.log("XXX value=" + obj.value + " typeof=" + typeof(obj.value) + " newValue=" + newValue + " typeof=" + typeof(newValue));
+    console.log("XXX changed=" + levelChanged + " old/new=" + oldValue + "/"+ newValue);
     props.mapModel.setProperty(modelIndex, "value", newValue);
 }
 
@@ -282,6 +292,7 @@ function warnUnsavedChanges(yesFunc, noFunc)
 }
 
 function nextLevel() {
+    console.log("XXX next changed=" + levelChanged);
     if(numberOfLevel === currentLevel + 1
             && !levelChanged && currentIsNewLevel ) {
         console.log("BalanceboxEditor: Current level is new and unchanged, nogo!");
@@ -289,6 +300,7 @@ function nextLevel() {
     }
 
     currentLevel++;
+    levelChanged = false;
     initLevel();
 }
 
@@ -296,5 +308,6 @@ function previousLevel() {
     if (currentLevel === 0)
         return;
     currentLevel--;
+    levelChanged = false;
     initLevel();
 }
