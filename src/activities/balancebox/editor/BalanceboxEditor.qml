@@ -22,7 +22,6 @@ import QtQuick 2.1
 import QtGraphicalEffects 1.0
 import GCompris 1.0
 import QtQuick.Controls 1.0
-import QtQuick.Controls.Styles 1.3
 
 import "../../../core"
 import ".."
@@ -92,7 +91,6 @@ Item {
         property alias file: file
         property alias parser: parser
         property alias bar: bar
-        // singletons:
         property int lastGoalIndex: -1
         property int lastBallIndex: -1
     }
