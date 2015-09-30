@@ -109,9 +109,11 @@ Window {
 
     Component.onCompleted: {
         console.log("enter main.qml (run #" + ApplicationSettings.exeCount
-                + ", ratio=" + ApplicationInfo.ratio
-                + ", fontRatio=" + ApplicationInfo.fontRatio
-                + ", dpi=" + Math.round(Screen.pixelDensity*25.4) + ")");
+                    + ", ratio=" + ApplicationInfo.ratio
+                    + ", fontRatio=" + ApplicationInfo.fontRatio
+                    + ", dpi=" + Math.round(Screen.pixelDensity*25.4)
+                    + ", sharedWritablePath=" + ApplicationInfo.getSharedWritablePath()
+                    + ")");
         if (ApplicationSettings.exeCount == 1 && !ApplicationSettings.isKioskMode) {
             // first run
             var dialog;

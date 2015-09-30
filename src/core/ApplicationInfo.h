@@ -212,7 +212,8 @@ public:
     /**
      * Return the platform specific path for storing data shared between apps
      *
-     * On Android (version?): /storage/emulated/0/GCompris
+     * On Android: /storage/emulated/0/GCompris (>= Android 4.2),
+     *             /storage/sdcard0/GCompris (< Android 4.2)
      * On Linux: $HOME/local/share/GCompris
      */
     Q_INVOKABLE QString getSharedWritablePath() const;

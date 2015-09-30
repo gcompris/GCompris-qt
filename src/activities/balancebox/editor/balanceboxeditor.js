@@ -97,6 +97,8 @@ function initLevel()
     props.bar.level = currentLevel + 1
     props.lastBallIndex = -1;
     props.lastGoalIndex = -1;
+    props.lastOrderNum = 0;
+    var maxContactValue = 1;
 
     props.mapModel.clear();
     targetList = [];
@@ -114,8 +116,8 @@ function initLevel()
                 var target = level.targets[orderNum-1]
                 targetList.push(parseInt(target));
                 contactValue = Number(target).toString();
-                if (contactValue > parseInt(props.contactValue) + 1)
-                    props.contactValue = Number(parseInt(contactValue) + 1).toString();
+                if (target >= maxContactValue)
+                    maxContactValue = target + 1;
             }
             props.mapModel.append({
                 "row": row,
@@ -141,6 +143,7 @@ function initLevel()
             }
         }
     }
+    props.contactValue = maxContactValue;
 }
 
 function dec2hex(i) {
@@ -161,8 +164,11 @@ function modelToLevel()
 
         var obj = props.mapModel.get(i);
         var value = obj.value;
-        if (obj.value & CONTACT)
+        value &= ~(0xff00);  // always clear order-number bits
+        if (obj.value & CONTACT) {
             value |= ((targetList.indexOf(parseInt(obj.contactValue)) + 1) << 8);
+            //console.log("XXX adjusting ordernum for value " + obj.contactValue + " to " + (targetList.indexOf(parseInt(obj.contactValue)) + 1));
+        }
         map[row][col] = "0x" + dec2hex(value);
     }
     var level = {
@@ -170,6 +176,7 @@ function modelToLevel()
                     map: map,
                     targets: targetList
                 }
+    //console.log("XXX serialized level: " + JSON.stringify(level));
     return level;
 }
 
@@ -185,12 +192,14 @@ function saveModel()
     }
     levels[currentLevel] = l
     if (!props.file.write(JSON.stringify(levels), userFile))
-        console.error("BalanceboxEditor: Error saving levels to " + userFile);
-    else {
-        console.debug("BalanceboxEditor: Saved " + numberOfLevel + " levels in " + userFile);
         Core.showMessageDialog(props.editor,
-                               qsTr("Saved %1 levels to user levels file.")
-                               .arg(numberOfLevel),
+                               qsTr("Error saving %1 levels to your levels file (%2)")
+                               .arg(numberOfLevel).arg(userFile),
+                               "", null, "", null, null);
+    else {
+        Core.showMessageDialog(props.editor,
+                               qsTr("Saved %1 levels to your levels file (%2)")
+                               .arg(numberOfLevel).arg(userFile),
                                "", null, "", null, null);
         levelChanged = false;
         currentIsNewLevel = false;
@@ -204,26 +213,26 @@ function modifyMap(props, row, col)
     var oldValue = obj.value;
     var newValue = oldValue;
 
-    // special treatment for already set contact: update targetList
-    if (obj.value & TOOL_CONTACT) {
-        if (props.currentTool !== TOOL_H_WALL && props.currentTool !== TOOL_H_WALL) {
-            var idx = targetList.indexOf(parseInt(obj.contactValue));
-            if (idx !== -1)
-                targetList.splice(idx, 1);
-        }
-    } else {
-        // wants to set a new contact -> check for already existing value
-        if (props.currentTool === TOOL_CONTACT &&
-                targetList.indexOf(parseInt(props.contactValue)) !== -1) {
-            console.debug("Avoiding to set duplicate value " + props.contactValue);
-            return;
-        }
+    // contact-tool: check for already existing value early
+    if (props.currentTool === TOOL_CONTACT        // have contact tool and ...
+            && targetList.indexOf(parseInt(props.contactValue)) !== -1  // already have this contact value ...
+            && !(obj.value & TOOL_CONTACT                               // which is not set at the same cell
+                 && obj.contactValue === props.contactValue))
+    {
+        console.debug("Avoiding to set duplicate contact value " + props.contactValue
+                      + " current targets=" + JSON.stringify(targetList));
+        return;
     }
 
     if (props.currentTool === TOOL_CLEAR) {
         newValue = 0;
-        props.mapModel.setProperty(row * level.map.length + col,
-                                   "contactValue", "");
+        // remove contact stuff:
+        if (obj.value & TOOL_CONTACT) {
+            if (targetList.indexOf(parseInt(obj.contactValue)) !== -1)
+                targetList.splice(targetList.indexOf(parseInt(obj.contactValue)), 1);
+            props.mapModel.setProperty(row * level.map.length + col,
+                                       "contactValue", "");
+        }
     } else { // all other tools
 
         // special treatment for mutually exclusive ones:
@@ -264,20 +273,37 @@ function modifyMap(props, row, col)
 
         // special treatment for contacts:
         if (props.currentTool === TOOL_CONTACT) {
-            props.mapModel.setProperty(row * level.map.length + col, "contactValue", props.contactValue);
-            if (targetList.indexOf(parseInt(props.contactValue)) === -1)
-                targetList.push(parseInt(props.contactValue));
-            var newContact =  Number(Number(props.contactValue) + 1).toString()
-            props.contactValue = newContact;
+            if (obj.value & TOOL_CONTACT &&                     // have old contact value ...
+                    obj.contactValue === props.contactValue) {  // ... which is == the new one
+                // clear contact
+                if (targetList.indexOf(parseInt(obj.contactValue)) !== -1)
+                    targetList.splice(targetList.indexOf(parseInt(obj.contactValue)), 1);
+                props.mapModel.setProperty(row * level.map.length + col,
+                                           "contactValue", "");
+                newValue &= ~(CONTACT);
+            } else {
+                if (obj.value & TOOL_CONTACT) {              // have old contact that is different
+                    if (targetList.indexOf(parseInt(obj.contactValue)) !== -1)
+                        targetList.splice(targetList.indexOf(parseInt(obj.contactValue)), 1);
+                    // no change to newValue
+                }
+                // -> set new one:
+                if (targetList.indexOf(parseInt(props.contactValue)) === -1)
+                    targetList.push(parseInt(props.contactValue));
+                props.mapModel.setProperty(row * level.map.length + col,
+                                           "contactValue", props.contactValue);
+                props.contactValue = Number(Number(props.contactValue) + 1).toString();
+                newValue |= CONTACT;
+            }
+        } else {
+            // for other than contact-tool: update value by current tool bit:
+            newValue ^= props.currentTool;
         }
-
-        // update value by current tool bit:
-        newValue ^= props.currentTool;
     }
 
     if (oldValue !== newValue)
         levelChanged = true;
-    console.log("XXX changed=" + levelChanged + " old/new=" + oldValue + "/"+ newValue);
+    //console.log("XXX changed=" + levelChanged + " old/new=" + dec2hex(oldValue) + "/"+ dec2hex(newValue));
     props.mapModel.setProperty(modelIndex, "value", newValue);
 }
 
@@ -292,7 +318,6 @@ function warnUnsavedChanges(yesFunc, noFunc)
 }
 
 function nextLevel() {
-    console.log("XXX next changed=" + levelChanged);
     if(numberOfLevel === currentLevel + 1
             && !levelChanged && currentIsNewLevel ) {
         console.log("BalanceboxEditor: Current level is new and unchanged, nogo!");
