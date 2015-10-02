@@ -226,11 +226,16 @@ int main(int argc, char *argv[])
     }
 
     QQmlApplicationEngine engine(QUrl("qrc:/gcompris/src/core/main.qml"));
-	QObject::connect(&engine, SIGNAL(quit()), DownloadManager::getInstance(),
-            SLOT(shutdown()));
+    QObject::connect(&engine, SIGNAL(quit()), DownloadManager::getInstance(),
+                     SLOT(shutdown()));
     // add import path for shipped qml modules:
+#ifdef SAILFISHOS
+    engine.addImportPath(QStringLiteral("%1/../share/%2/lib/qml")
+                         .arg(QCoreApplication::applicationDirPath()).arg(GCOMPRIS_APPLICATION_NAME));
+#else
     engine.addImportPath(QStringLiteral("%1/../lib/qml")
                          .arg(QCoreApplication::applicationDirPath()));
+#endif
 
     if(parser.isSet(exportActivitiesAsSQL)) {
         ActivityInfoTree *menuTree(qobject_cast<ActivityInfoTree*>(ActivityInfoTree::menuTreeProvider(&engine, NULL)));

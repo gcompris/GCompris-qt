@@ -63,7 +63,11 @@ mv "@CMAKE_BINARY_DIR@/_CPack_Packages/Linux/RPM/tmpBBroot" $RPM_BUILD_ROOT
 @TRANSLATION_GENERATED_FILES@
 %dir "/usr/share/harbour-gcompris-qt/rcc"
 @RCC_GENERATED_FILES@
-
+%dir "/usr/share/harbour-gcompris-qt/lib"
+%dir "/usr/share/harbour-gcompris-qt/lib/qml"
+%dir "/usr/share/harbour-gcompris-qt/lib/qml/Box2D.2.0"
+"/usr/share/harbour-gcompris-qt/lib/qml/Box2D.2.0/libBox2D.so"
+"/usr/share/harbour-gcompris-qt/lib/qml/Box2D.2.0/qmldir"
 
 
 %changelog

@@ -426,7 +426,7 @@ ActivityBase {
                     property alias levelsBox: levelsBox
 
                     property var availableLevels: [
-                        { "text": qsTr("Bultin"), "value": "builtin" },
+                        { "text": qsTr("Built in"), "value": "builtin" },
                         { "text": qsTr("User"), "value": "user" },
                     ]
 
@@ -478,7 +478,7 @@ ActivityBase {
                         !parser.jsonFile.exists(Activity.userFile)) {
                     Core.showMessageDialog(dialogActivityConfig,
                                            qsTr("You selected the user defined level set, but you have not yet defined any user levels!<br/> " +
-                                 "Either define your user levels by starting the level editor or choose the 'builtin' level set."),
+                                 "Either define your user levels by starting the level editor or choose the 'built in' level set."),
                                   "Ok", null,
                                   "", null,
                                   null);

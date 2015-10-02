@@ -69,7 +69,7 @@ if(ANDROID)
   qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Core Svg Xml XmlPatterns Sensors AndroidExtras)
 else()
   add_executable(${GCOMPRIS_EXECUTABLE_NAME} MACOSX_BUNDLE ${gcompris_SRCS} ${gcompris_MOC} ${gcompris_RES})
-  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Core)
+  qt5_use_modules(${GCOMPRIS_EXECUTABLE_NAME} Qml Quick Gui Multimedia Network XmlPatterns Svg Xml Sensors Core)
 endif()
 
 if(CMAKE_HOST_WIN32)
@@ -102,6 +102,8 @@ if(BUILD_STANDALONE)
     list(APPEND _qt_plugins Qt5::QXcbIntegrationPlugin)
   endif()
 
+  list(APPEND _qt_plugins Qt5::genericSensorPlugin Qt5::QtSensorGesturePlugin Qt5::QShakeSensorGesturePlugin)
+
   # Qml plugins to install
   if(WIN32)
     set(_lib_prefix "")
@@ -120,14 +122,14 @@ if(BUILD_STANDALONE)
       mediaservice/${_lib_prefix}qtmedia_audioengine
       mediaservice/${_lib_prefix}qavfcamera)
   endif()
-
+  
   set(_qml_plugins
     QtQuick/Window.2/${_lib_prefix}windowplugin
     QtQuick/Particles.2/${_lib_prefix}particlesplugin
     QtQuick.2/${_lib_prefix}qtquick2plugin
     QtMultimedia/${_lib_prefix}declarative_multimedia
-    Box2D.2.0/${_lib_prefix}Box2D)
-
+    QtSensors/${_lib_prefix}declarative_sensors)
+  
   if(NOT SAILFISHOS)
     list(APPEND _qml_plugins
       QtQuick/Controls/${_lib_prefix}qtquickcontrolsplugin
@@ -135,7 +137,9 @@ if(BUILD_STANDALONE)
   endif()
 
   if(NOT WIN32 AND NOT SAILFISHOS)
-    list(APPEND QtAudioEngine/${_lib_prefix}declarative_audioengine)
+    list(APPEND _qml_plugins
+      QtAudioEngine/${_lib_prefix}declarative_audioengine
+      Box2D.2.0/${_lib_prefix}Box2D)
   endif()
 
   set(GCOMPRIS_OTHER_LIBS)
