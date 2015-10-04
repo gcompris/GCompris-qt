@@ -22,6 +22,7 @@
 import QtQuick 2.0
 
 QtObject {
+   property string instruction: qsTr("Katsushika Hokusai, Viewing Sunset over the Ryogoku Bridge from the Ommaya Embankment - 1830")
    property variant levels : [
       {
          "pixmapfile" : "image/bg.png",

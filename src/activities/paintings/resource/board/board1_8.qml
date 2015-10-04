@@ -22,6 +22,7 @@
 import QtQuick 2.0
 
 QtObject {
+   property string instruction: qsTr("Utagawa Hiroshige, The Benzaiten Shrine at Inokashira in Snow - 1760-70")
    property variant levels : [
       {
          "pixmapfile" : "image/bg.png",
