@@ -22,56 +22,41 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Giuseppe Arcimboldo, The Librarian - 1566")
+   property string instruction: qsTr("Mary Cassatt, Summertime - 1894")
    property variant levels : [
       {
          "pixmapfile" : "image/bg.png",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/Arcimboldo_Librarian_c3.png",
-         "x" : "0.625",
-         "y" : "0.735"
+         "pixmapfile" : "image/cassat_summertime_2.jpg",
+         "x" : "0.496",
+         "y" : "0.244"
       },
       {
-         "pixmapfile" : "image/Arcimboldo_Librarian_b3.png",
-         "x" : "0.498",
-         "y" : "0.735"
+         "pixmapfile" : "image/cassat_summertime_4.jpg",
+         "x" : "0.211",
+         "y" : "0.671"
       },
       {
-         "pixmapfile" : "image/Arcimboldo_Librarian_a3.png",
-         "x" : "0.372",
-         "y" : "0.762"
+         "pixmapfile" : "image/cassat_summertime_6.jpg",
+         "x" : "0.779",
+         "y" : "0.673"
       },
       {
-         "pixmapfile" : "image/Arcimboldo_Librarian_c2.png",
-         "x" : "0.638",
-         "y" : "0.47"
+         "pixmapfile" : "image/cassat_summertime_5.jpg",
+         "x" : "0.496",
+         "y" : "0.673"
       },
       {
-         "pixmapfile" : "image/Arcimboldo_Librarian_b2.png",
-         "x" : "0.499",
-         "y" : "0.497"
+         "pixmapfile" : "image/cassat_summertime_1.jpg",
+         "x" : "0.211",
+         "y" : "0.244"
       },
       {
-         "pixmapfile" : "image/Arcimboldo_Librarian_a2.png",
-         "x" : "0.357",
-         "y" : "0.498"
-      },
-      {
-         "pixmapfile" : "image/Arcimboldo_Librarian_c1.png",
-         "x" : "0.625",
-         "y" : "0.231"
-      },
-      {
-         "pixmapfile" : "image/Arcimboldo_Librarian_b1.png",
-         "x" : "0.498",
-         "y" : "0.259"
-      },
-      {
-         "pixmapfile" : "image/Arcimboldo_Librarian_a1.png",
-         "x" : "0.373",
-         "y" : "0.231"
+         "pixmapfile" : "image/cassat_summertime_3.jpg",
+         "x" : "0.779",
+         "y" : "0.244"
       }
    ]
 }

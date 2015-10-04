@@ -30,6 +30,6 @@ Babymatch {
     onStop: {}
 
     url: "qrc:/gcompris/src/activities/paintings/resource/"
-    levelCount: 6
+    levelCount: 22
     answerGlow: false
 }

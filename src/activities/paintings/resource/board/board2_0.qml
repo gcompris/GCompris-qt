@@ -22,72 +22,41 @@
 import QtQuick 2.0
 
 QtObject {
-   property int numberOfSubLevel: 4
-   property string instruction: qsTr("Michelangelo, Pieta - 1499")
+   property string instruction: qsTr("Giuseppe Arcimboldo, Spring - 1573")
    property variant levels : [
       {
          "pixmapfile" : "image/bg.png",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/Michelangelo_Pieta_c4.png",
-         "x" : "0.696",
-         "y" : "0.854"
+         "pixmapfile" : "image/Arcimboldo_Spring_b3.png",
+         "x" : "0.615",
+         "y" : "0.762"
       },
       {
-         "pixmapfile" : "image/Michelangelo_Pieta_b4.png",
-         "x" : "0.474",
-         "y" : "0.854"
+         "pixmapfile" : "image/Arcimboldo_Spring_a3.png",
+         "x" : "0.405",
+         "y" : "0.735"
       },
       {
-         "pixmapfile" : "image/Michelangelo_Pieta_a4.png",
-         "x" : "0.275",
-         "y" : "0.831"
+         "pixmapfile" : "image/Arcimboldo_Spring_b2.png",
+         "x" : "0.59",
+         "y" : "0.498"
       },
       {
-         "pixmapfile" : "image/Michelangelo_Pieta_c3.png",
-         "x" : "0.719",
-         "y" : "0.619"
+         "pixmapfile" : "image/Arcimboldo_Spring_a2.png",
+         "x" : "0.379",
+         "y" : "0.497"
       },
       {
-         "pixmapfile" : "image/Michelangelo_Pieta_b3.png",
-         "x" : "0.521",
-         "y" : "0.619"
+         "pixmapfile" : "image/Arcimboldo_Spring_b1.png",
+         "x" : "0.59",
+         "y" : "0.231"
       },
       {
-         "pixmapfile" : "image/Michelangelo_Pieta_a3.png",
-         "x" : "0.298",
-         "y" : "0.617"
-      },
-      {
-         "pixmapfile" : "image/Michelangelo_Pieta_c2.png",
-         "x" : "0.696",
-         "y" : "0.352"
-      },
-      {
-         "pixmapfile" : "image/Michelangelo_Pieta_b2.png",
-         "x" : "0.474",
-         "y" : "0.352"
-      },
-      {
-         "pixmapfile" : "image/Michelangelo_Pieta_a2.png",
-         "x" : "0.275",
-         "y" : "0.377"
-      },
-      {
-         "pixmapfile" : "image/Michelangelo_Pieta_c1.png",
-         "x" : "0.696",
-         "y" : "0.138"
-      },
-      {
-         "pixmapfile" : "image/Michelangelo_Pieta_b1.png",
-         "x" : "0.497",
-         "y" : "0.138"
-      },
-      {
-         "pixmapfile" : "image/Michelangelo_Pieta_a1.png",
-         "x" : "0.298",
-         "y" : "0.138"
+         "pixmapfile" : "image/Arcimboldo_Spring_a1.png",
+         "x" : "0.379",
+         "y" : "0.259"
       }
    ]
 }

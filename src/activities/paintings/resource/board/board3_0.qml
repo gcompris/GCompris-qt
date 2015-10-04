@@ -22,52 +22,56 @@
 import QtQuick 2.0
 
 QtObject {
-   property int numberOfSubLevel: 1
-   property string instruction: qsTr("Pierre-Auguste Renoir, Girls At The Piano - 1892")
+   property string instruction: qsTr("Giuseppe Arcimboldo, The Librarian - 1566")
    property variant levels : [
       {
          "pixmapfile" : "image/bg.png",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/renoir-filles_piano-8.png",
-         "x" : "0.608",
-         "y" : "0.799"
+         "pixmapfile" : "image/Arcimboldo_Librarian_c3.png",
+         "x" : "0.625",
+         "y" : "0.735"
       },
       {
-         "pixmapfile" : "image/renoir-filles_piano-7.png",
-         "x" : "0.387",
-         "y" : "0.801"
+         "pixmapfile" : "image/Arcimboldo_Librarian_b3.png",
+         "x" : "0.498",
+         "y" : "0.735"
       },
       {
-         "pixmapfile" : "image/renoir-filles_piano-6.png",
-         "x" : "0.608",
-         "y" : "0.593"
+         "pixmapfile" : "image/Arcimboldo_Librarian_a3.png",
+         "x" : "0.372",
+         "y" : "0.762"
       },
       {
-         "pixmapfile" : "image/renoir-filles_piano-5.png",
-         "x" : "0.387",
-         "y" : "0.595"
+         "pixmapfile" : "image/Arcimboldo_Librarian_c2.png",
+         "x" : "0.638",
+         "y" : "0.47"
       },
       {
-         "pixmapfile" : "image/renoir-filles_piano-4.png",
-         "x" : "0.577",
-         "y" : "0.36"
+         "pixmapfile" : "image/Arcimboldo_Librarian_b2.png",
+         "x" : "0.499",
+         "y" : "0.497"
       },
       {
-         "pixmapfile" : "image/renoir-filles_piano-3.png",
-         "x" : "0.356",
-         "y" : "0.36"
+         "pixmapfile" : "image/Arcimboldo_Librarian_a2.png",
+         "x" : "0.357",
+         "y" : "0.498"
       },
       {
-         "pixmapfile" : "image/renoir-filles_piano-2.png",
-         "x" : "0.608",
-         "y" : "0.125"
+         "pixmapfile" : "image/Arcimboldo_Librarian_c1.png",
+         "x" : "0.625",
+         "y" : "0.231"
       },
       {
-         "pixmapfile" : "image/renoir-filles_piano-1.png",
-         "x" : "0.387",
-         "y" : "0.125"
+         "pixmapfile" : "image/Arcimboldo_Librarian_b1.png",
+         "x" : "0.498",
+         "y" : "0.259"
+      },
+      {
+         "pixmapfile" : "image/Arcimboldo_Librarian_a1.png",
+         "x" : "0.373",
+         "y" : "0.231"
       }
    ]
 }

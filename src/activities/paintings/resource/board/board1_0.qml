@@ -22,42 +22,41 @@
 import QtQuick 2.0
 
 QtObject {
-   property int numberOfSubLevel: 12
-   property string instruction: qsTr("Edgar Degas, The Dancing Class - 1873-75")
+   property string instruction: qsTr(" Pierre-Auguste Renoir, Le Moulin de la Galette - 1876")
    property variant levels : [
       {
          "pixmapfile" : "image/bg.png",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/degas_class-dance_6.png",
-         "x" : "0.657",
-         "y" : "0.807"
+         "pixmapfile" : "image/renoir-moulin_de_la_galette-4.png",
+         "x" : "0.226",
+         "y" : "0.651"
       },
       {
-         "pixmapfile" : "image/degas_class-dance_5.png",
-         "x" : "0.382",
-         "y" : "0.768"
+         "pixmapfile" : "image/renoir-moulin_de_la_galette-5.png",
+         "x" : "0.504",
+         "y" : "0.651"
       },
       {
-         "pixmapfile" : "image/degas_class-dance_4.png",
-         "x" : "0.618",
-         "y" : "0.486"
+         "pixmapfile" : "image/renoir-moulin_de_la_galette-3.png",
+         "x" : "0.782",
+         "y" : "0.327"
       },
       {
-         "pixmapfile" : "image/degas_class-dance_3.png",
-         "x" : "0.343",
-         "y" : "0.448"
+         "pixmapfile" : "image/renoir-moulin_de_la_galette-1.png",
+         "x" : "0.255",
+         "y" : "0.283"
       },
       {
-         "pixmapfile" : "image/degas_class-dance_2.png",
-         "x" : "0.658",
-         "y" : "0.162"
+         "pixmapfile" : "image/renoir-moulin_de_la_galette-2.png",
+         "x" : "0.533",
+         "y" : "0.283"
       },
       {
-         "pixmapfile" : "image/degas_class-dance_1.png",
-         "x" : "0.383",
-         "y" : "0.166"
+         "pixmapfile" : "image/renoir-moulin_de_la_galette-6.png",
+         "x" : "0.781",
+         "y" : "0.69"
       }
    ]
 }

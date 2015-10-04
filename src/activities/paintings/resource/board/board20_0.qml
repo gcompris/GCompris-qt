@@ -22,41 +22,41 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr(" Pierre-Auguste Renoir, Le Moulin de la Galette - 1876")
+   property string instruction: qsTr("Bazille, The Ramparts at Aigues-Mortes - 1867")
    property variant levels : [
       {
          "pixmapfile" : "image/bg.png",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/renoir-moulin_de_la_galette-4.png",
-         "x" : "0.226",
-         "y" : "0.651"
+         "pixmapfile" : "image/bazille_rampart_4.jpg",
+         "x" : "0.212",
+         "y" : "0.634"
       },
       {
-         "pixmapfile" : "image/renoir-moulin_de_la_galette-5.png",
-         "x" : "0.504",
-         "y" : "0.651"
-      },
-      {
-         "pixmapfile" : "image/renoir-moulin_de_la_galette-3.png",
-         "x" : "0.782",
-         "y" : "0.327"
-      },
-      {
-         "pixmapfile" : "image/renoir-moulin_de_la_galette-1.png",
-         "x" : "0.255",
+         "pixmapfile" : "image/bazille_rampart_1.jpg",
+         "x" : "0.212",
          "y" : "0.283"
       },
       {
-         "pixmapfile" : "image/renoir-moulin_de_la_galette-2.png",
-         "x" : "0.533",
+         "pixmapfile" : "image/bazille_rampart_3.jpg",
+         "x" : "0.791",
          "y" : "0.283"
       },
       {
-         "pixmapfile" : "image/renoir-moulin_de_la_galette-6.png",
-         "x" : "0.781",
-         "y" : "0.69"
+         "pixmapfile" : "image/bazille_rampart_5.jpg",
+         "x" : "0.501",
+         "y" : "0.634"
+      },
+      {
+         "pixmapfile" : "image/bazille_rampart_2.jpg",
+         "x" : "0.501",
+         "y" : "0.283"
+      },
+      {
+         "pixmapfile" : "image/bazille_rampart_6.jpg",
+         "x" : "0.791",
+         "y" : "0.634"
       }
    ]
 }

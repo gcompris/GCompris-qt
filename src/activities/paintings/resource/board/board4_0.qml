@@ -22,41 +22,41 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Bazille, The Ramparts at Aigues-Mortes - 1867")
+   property string instruction: qsTr("Katsushika Hokusai, Oiran and Kamuro")
    property variant levels : [
       {
          "pixmapfile" : "image/bg.png",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/bazille_rampart_4.jpg",
-         "x" : "0.212",
-         "y" : "0.634"
+         "pixmapfile" : "image/HokusaiOiranKamuro_b3.png",
+         "x" : "0.602",
+         "y" : "0.752"
       },
       {
-         "pixmapfile" : "image/bazille_rampart_1.jpg",
-         "x" : "0.212",
-         "y" : "0.283"
+         "pixmapfile" : "image/HokusaiOiranKamuro_a3.png",
+         "x" : "0.416",
+         "y" : "0.752"
       },
       {
-         "pixmapfile" : "image/bazille_rampart_3.jpg",
-         "x" : "0.791",
-         "y" : "0.283"
+         "pixmapfile" : "image/HokusaiOiranKamuro_b2.png",
+         "x" : "0.602",
+         "y" : "0.497"
       },
       {
-         "pixmapfile" : "image/bazille_rampart_5.jpg",
-         "x" : "0.501",
-         "y" : "0.634"
+         "pixmapfile" : "image/HokusaiOiranKamuro_a2.png",
+         "x" : "0.416",
+         "y" : "0.497"
       },
       {
-         "pixmapfile" : "image/bazille_rampart_2.jpg",
-         "x" : "0.501",
-         "y" : "0.283"
+         "pixmapfile" : "image/HokusaiOiranKamuro_b1.png",
+         "x" : "0.602",
+         "y" : "0.242"
       },
       {
-         "pixmapfile" : "image/bazille_rampart_6.jpg",
-         "x" : "0.791",
-         "y" : "0.634"
+         "pixmapfile" : "image/HokusaiOiranKamuro_a1.png",
+         "x" : "0.416",
+         "y" : "0.242"
       }
    ]
 }

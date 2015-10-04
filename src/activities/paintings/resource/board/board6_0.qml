@@ -22,41 +22,71 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Vincent Van Gogh, Village Street in Auvers - 1890")
+   property string instruction: qsTr("Katsushika Hokusai, Ejiri in Suruga Province - 1830-1833")
    property variant levels : [
       {
          "pixmapfile" : "image/bg.png",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/gogh_auvert_2.jpg",
-         "x" : "0.489",
-         "y" : "0.224"
+         "pixmapfile" : "image/EjiriSuruga_d3.png",
+         "x" : "0.846",
+         "y" : "0.752"
       },
       {
-         "pixmapfile" : "image/gogh_auvert_6.jpg",
-         "x" : "0.774",
-         "y" : "0.681"
+         "pixmapfile" : "image/EjiriSuruga_c3.png",
+         "x" : "0.618",
+         "y" : "0.752"
       },
       {
-         "pixmapfile" : "image/gogh_auvert_5.jpg",
-         "x" : "0.489",
-         "y" : "0.681"
+         "pixmapfile" : "image/EjiriSuruga_b3.png",
+         "x" : "0.38",
+         "y" : "0.752"
       },
       {
-         "pixmapfile" : "image/gogh_auvert_1.jpg",
-         "x" : "0.204",
-         "y" : "0.224"
+         "pixmapfile" : "image/EjiriSuruga_a3.png",
+         "x" : "0.174",
+         "y" : "0.782"
       },
       {
-         "pixmapfile" : "image/gogh_auvert_4.jpg",
-         "x" : "0.204",
-         "y" : "0.681"
+         "pixmapfile" : "image/EjiriSuruga_d2.png",
+         "x" : "0.823",
+         "y" : "0.497"
       },
       {
-         "pixmapfile" : "image/gogh_auvert_3.jpg",
-         "x" : "0.774",
-         "y" : "0.224"
+         "pixmapfile" : "image/EjiriSuruga_c2.png",
+         "x" : "0.616",
+         "y" : "0.468"
+      },
+      {
+         "pixmapfile" : "image/EjiriSuruga_b2.png",
+         "x" : "0.405",
+         "y" : "0.468"
+      },
+      {
+         "pixmapfile" : "image/EjiriSuruga_a2.png",
+         "x" : "0.174",
+         "y" : "0.498"
+      },
+      {
+         "pixmapfile" : "image/EjiriSuruga_d1.png",
+         "x" : "0.823",
+         "y" : "0.242"
+      },
+      {
+         "pixmapfile" : "image/EjiriSuruga_c1.png",
+         "x" : "0.616",
+         "y" : "0.212"
+      },
+      {
+         "pixmapfile" : "image/EjiriSuruga_b1.png",
+         "x" : "0.405",
+         "y" : "0.212"
+      },
+      {
+         "pixmapfile" : "image/EjiriSuruga_a1.png",
+         "x" : "0.174",
+         "y" : "0.212"
       }
    ]
 }

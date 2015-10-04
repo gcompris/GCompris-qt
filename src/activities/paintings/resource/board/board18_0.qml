@@ -22,41 +22,52 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Giuseppe Arcimboldo, Spring - 1573")
+   property int numberOfSubLevel: 1
+   property string instruction: qsTr("Pierre-Auguste Renoir, Girls At The Piano - 1892")
    property variant levels : [
       {
          "pixmapfile" : "image/bg.png",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/Arcimboldo_Spring_b3.png",
-         "x" : "0.615",
-         "y" : "0.762"
+         "pixmapfile" : "image/renoir-filles_piano-8.png",
+         "x" : "0.608",
+         "y" : "0.799"
       },
       {
-         "pixmapfile" : "image/Arcimboldo_Spring_a3.png",
-         "x" : "0.405",
-         "y" : "0.735"
+         "pixmapfile" : "image/renoir-filles_piano-7.png",
+         "x" : "0.387",
+         "y" : "0.801"
       },
       {
-         "pixmapfile" : "image/Arcimboldo_Spring_b2.png",
-         "x" : "0.59",
-         "y" : "0.498"
+         "pixmapfile" : "image/renoir-filles_piano-6.png",
+         "x" : "0.608",
+         "y" : "0.593"
       },
       {
-         "pixmapfile" : "image/Arcimboldo_Spring_a2.png",
-         "x" : "0.379",
-         "y" : "0.497"
+         "pixmapfile" : "image/renoir-filles_piano-5.png",
+         "x" : "0.387",
+         "y" : "0.595"
       },
       {
-         "pixmapfile" : "image/Arcimboldo_Spring_b1.png",
-         "x" : "0.59",
-         "y" : "0.231"
+         "pixmapfile" : "image/renoir-filles_piano-4.png",
+         "x" : "0.577",
+         "y" : "0.36"
       },
       {
-         "pixmapfile" : "image/Arcimboldo_Spring_a1.png",
-         "x" : "0.379",
-         "y" : "0.259"
+         "pixmapfile" : "image/renoir-filles_piano-3.png",
+         "x" : "0.356",
+         "y" : "0.36"
+      },
+      {
+         "pixmapfile" : "image/renoir-filles_piano-2.png",
+         "x" : "0.608",
+         "y" : "0.125"
+      },
+      {
+         "pixmapfile" : "image/renoir-filles_piano-1.png",
+         "x" : "0.387",
+         "y" : "0.125"
       }
    ]
 }

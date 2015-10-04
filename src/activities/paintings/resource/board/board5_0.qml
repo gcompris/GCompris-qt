@@ -22,41 +22,56 @@
 import QtQuick 2.0
 
 QtObject {
-   property string instruction: qsTr("Mary Cassatt, Summertime - 1894")
+   property string instruction: qsTr("Katsushika Hokusai, Woman holding a fan")
    property variant levels : [
       {
          "pixmapfile" : "image/bg.png",
          "type" : "SHAPE_BACKGROUND_IMAGE"
       },
       {
-         "pixmapfile" : "image/cassat_summertime_2.jpg",
-         "x" : "0.496",
-         "y" : "0.244"
+         "pixmapfile" : "image/HokusaiWomanHoldingFan_c3.png",
+         "x" : "0.627",
+         "y" : "0.752"
       },
       {
-         "pixmapfile" : "image/cassat_summertime_4.jpg",
-         "x" : "0.211",
-         "y" : "0.671"
+         "pixmapfile" : "image/HokusaiWomanHoldingFan_b3.png",
+         "x" : "0.484",
+         "y" : "0.752"
       },
       {
-         "pixmapfile" : "image/cassat_summertime_6.jpg",
-         "x" : "0.779",
-         "y" : "0.673"
+         "pixmapfile" : "image/HokusaiWomanHoldingFan_a3.png",
+         "x" : "0.355",
+         "y" : "0.782"
       },
       {
-         "pixmapfile" : "image/cassat_summertime_5.jpg",
-         "x" : "0.496",
-         "y" : "0.673"
+         "pixmapfile" : "image/HokusaiWomanHoldingFan_c2.png",
+         "x" : "0.64",
+         "y" : "0.468"
       },
       {
-         "pixmapfile" : "image/cassat_summertime_1.jpg",
-         "x" : "0.211",
-         "y" : "0.244"
+         "pixmapfile" : "image/HokusaiWomanHoldingFan_b2.png",
+         "x" : "0.499",
+         "y" : "0.497"
       },
       {
-         "pixmapfile" : "image/cassat_summertime_3.jpg",
-         "x" : "0.779",
-         "y" : "0.244"
+         "pixmapfile" : "image/HokusaiWomanHoldingFan_a2.png",
+         "x" : "0.355",
+         "y" : "0.498"
+      },
+      {
+         "pixmapfile" : "image/HokusaiWomanHoldingFan_c1.png",
+         "x" : "0.64",
+         "y" : "0.212"
+      },
+      {
+         "pixmapfile" : "image/HokusaiWomanHoldingFan_b1.png",
+         "x" : "0.499",
+         "y" : "0.242"
+      },
+      {
+         "pixmapfile" : "image/HokusaiWomanHoldingFan_a1.png",
+         "x" : "0.355",
+         "y" : "0.212"
       }
    ]
 }
