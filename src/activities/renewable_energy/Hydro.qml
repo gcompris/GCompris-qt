@@ -63,35 +63,43 @@ Item {
         id: tuxboat
         opacity: 1
         source: activity.url + "boat.svg"
-        sourceSize.width: root.width*0.15
-        sourceSize.height: root.height*0.15
+        sourceSize.width: parent.width*0.15
+        sourceSize.height: parent.height*0.15
         anchors{
             bottom: parent.bottom
             bottomMargin: 15
         }
-        x: 0
-        z: 20
+        x:0
+        z:30
 
+        Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 200 } }
         NumberAnimation on x {
             id: anim
             running: false
-            to: root.width - tuxboat.width
+            to: parent.width - tuxboat.width
             duration: 15000
+            easing.type: Easing.InOutSine
             onRunningChanged: {
                 if(!anim.running)
                 {
-                    tuxboat.opacity = 0
-                    tuxparked.opacity = 1
-                    tuxoff.visible = true
-                    Activity.tuxreached = true
-                    Activity.showtuxmeter()
+                    items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/harbor2.wav')
+                    if(!anim.running)
+                    {
+                        tuxboat.opacity = 0
+                        boatparked.opacity = 1
+                        tuxoff.visible = true
+                        Activity.tuxreached = true
+                        Activity.showtuxmeter()
+                    }
+                } else {
+                    items.audioEffects.play('qrc:/gcompris/src/activities/watercycle/resource/harbor1.wav')
                 }
             }
         }
     }
 
     Image {
-        id: tuxparked
+        id: boatparked
         source: activity.url + "boat_parked.svg"
         sourceSize.width: parent.width*0.15
         sourceSize.height: parent.height*0.15
@@ -101,7 +109,8 @@ Item {
             bottom: parent.bottom
             bottomMargin: 20
         }
-        z: 20
+        z: 29
+        Behavior on opacity { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 200 } }
     }
 
     Image {

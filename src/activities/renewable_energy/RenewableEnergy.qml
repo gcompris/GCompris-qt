@@ -32,7 +32,7 @@ ActivityBase {
 
     property string url: "qrc:/gcompris/src/activities/renewable_energy/resource/"
 
-    property int  oldWidth: width
+    property int oldWidth: width
     onWidthChanged: {
         oldWidth: width
     }
@@ -49,8 +49,6 @@ ActivityBase {
         signal start
         signal stop
 
-        property bool transformer: false
-
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -65,6 +63,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias sky: sky
+            property GCAudio audioEffects: activity.audioEffects
         }
 
         Image {
@@ -221,7 +220,7 @@ ActivityBase {
             }
         }
 
-        Image{
+        Image {
             source:  activity.url + "right.svg"
             sourceSize.width: stepdown.width/2
             sourceSize.height: stepdown.height/2
@@ -231,8 +230,7 @@ ActivityBase {
                 bottomMargin: parent.height*0.03
             }
 
-
-            Rectangle{
+            Rectangle {
                 width: pow.width*1.1
                 height: pow.height*1.1
                 border.color: "black"
@@ -251,7 +249,7 @@ ActivityBase {
             }
         }
 
-        Image{
+        Image {
             source: activity.url + "down.svg"
             sourceSize.width: stepdown.width/2
             sourceSize.height: stepdown.height/2
@@ -263,7 +261,7 @@ ActivityBase {
             }
 
 
-            Rectangle{
+            Rectangle {
                 width: stepdown_info.width*1.1
                 height: stepdown_info.height*1.1
                 border.color: "black"
