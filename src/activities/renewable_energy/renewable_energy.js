@@ -22,119 +22,25 @@
 .pragma library
 .import QtQuick 2.0 as Quick
 
-var currentLevel = 0
 var numberOfLevel = 3
 var items
-var power = 0
-var count = 0
-var pow
-var voltage = 0
-var solar
-var click = false
-var tux_meter
-var tuxreached = false
-var scene = false
-var panel_activate = false
-var stepdown_info
 
-function start(items_,pow_,solar_,tux_meter_,stepdown_info_) {
+function start(items_) {
     items = items_
-    currentLevel = 0
-    initLevel()
-    pow = pow_
-    solar = solar_
-    panel_activate= false
-    tux_meter = tux_meter_
-    tux_meter.visible = false
-    tuxreached = false
-    stepdown_info = stepdown_info_
-}
-
-function stop() {
-}
-
-function initLevel() {
-    items.bar.level = currentLevel + 1
-    items.background.initiate()
-    power = 0
-    count = 0
-    voltage = 0
-    scene = false
-    panel_activate = false
-    click = false
+    items.currentLevel = 0
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
-        currentLevel = 0
+    if(numberOfLevel <= ++items.currentLevel ) {
+        items.currentLevel = 0
     }
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0 ) {
-        currentLevel = numberOfLevel - 1
+    if(--items.currentLevel < 0 ) {
+        items.currentLevel = numberOfLevel - 1
     }
     initLevel();
 }
 
-function win() {
-    items.bonus.good("flower")
-}
-
-function add(power_) {
-    power = power + power_
-}
-
-function volt(voltage_) {
-    voltage = voltage + voltage_
-}
-
-function consume(count_) {
-    count = count + count_
-}
-
-
-function update() {
-    pow.text = "%1 W".arg(voltage)
-    stepdown_info.text = "%1 W".arg(count)
-}
-
-function verify() {
-    if(power < count) {
-        items.background.reset()
-    }
-}
-
-function paneloff() {
-    solar.source = ""
-    solar.source = "Solar.qml"
-    if(click == true) {
-        add(-400)
-        volt(-400)
-        update()
-        verify()
-        click = false
-    }
-}
-
-function panel() {
-    panel_activate = true
-}
-
-function showtuxmeter() {
-    if(tuxreached == true)
-    {
-        tux_meter.visible = true
-    }
-}
-
-function sceneload(scene_) {
-    scene = scene_
-    if(scene == false) {
-        items.sky.source = "resource/sky.svg"
-    }
-    else {
-        items.sky.source = "../intro_gravity/resource/background.svg"
-    }
-}

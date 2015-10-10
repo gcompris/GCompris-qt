@@ -62,97 +62,63 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property alias sky: sky
             property GCAudio audioEffects: activity.audioEffects
+            property int currentLevel
         }
 
-        Image {
-            id: sky
-            anchors.top: parent.top
-            sourceSize.width: parent.width
-            source: activity.url + "sky.svg"
-            height: (background.height - landscape.paintedHeight) / 2 + landscape.paintedHeight * 0.3
-            visible: true
+        onStart: { Activity.start(items) }
+        onStop: {
+            hydro.item.stop()
         }
 
-        Image {
-            id: sea
-            anchors {
-                left: parent.left
-                bottom: parent.bottom
-            }
-            sourceSize.width: parent.width
-            source: activity.url + "sea.svg"
-            height : (background.height - landscape.paintedHeight) / 2 + landscape.paintedHeight * 0.7
-            visible: true
-        }
-
-        Image {
-            id: moon
-            source: activity.url + "moon.svg"
-            sourceSize.width: parent.width*0.05
-            anchors {
-                left: parent.left
-                top: parent.top
-                leftMargin: parent.width*0.1
-                topMargin: parent.height*0.05
-            }
-            opacity: 0
-            NumberAnimation on opacity {
-                id:  moon_rise
-                running: false
-                from: 0
-                to: 1
-                duration: 10000
-            }
-            NumberAnimation on opacity {
-                id:  moon_set
-                running: false
-                from: 1
-                to: 0
-                duration: 10000
-            }
-        }
-
-        Timer {
-            id: moon_anim
-            running: false
-            repeat: true
-            interval: 50000
-            onTriggered: if(Activity.scene == false) {
-                             moon_rise.running = true
-                             anim_pause.start()
-                             moon_anim.stop()
-                         }
-                         else {
-                             moon_set.running = true
-                             anim_pause.start()
-                             moon_anim.stop()
-                         }
-        }
-
-        Timer {
-            id: anim_pause
-            running: false
-            interval: 10000
-            repeat: false
-            onTriggered: {
-                anim_pause.stop()
-                moon_anim.start()
-            }
-        }
-
-        Image {
-            id: landscape
+        Loader {
+            id: hydro
             anchors.fill: parent
-            sourceSize.width: parent.width
-            sourceSize.height: parent.height
-            source: activity.url + "landscape.svg"
+            source: "Hydro.qml"
+        }
+
+        Loader {
+            id: wind
+            anchors.fill: parent
+            source: items.currentLevel > 0 ? "Wind.qml" : ""
+        }
+
+        Loader {
+            id: solar
+            anchors.fill: parent
+            source: items.currentLevel > 1 ? "Solar.qml" : ""
+        }
+
+        IntroMessage {
+            id: message
+            opacity: items.currentLevel == 0 ? 1 : start()
+            anchors {
+                top: parent.top
+                topMargin: 10
+                right: parent.right
+                rightMargin: 5
+                left: parent.left
+                leftMargin: 5
+            }
+            onIntroDone: {
+                hydro.item.start()
+                message.opacity = 0
+            }
+            intro: [
+                qsTr("Tux has come back from a long fishing party on his boat. " +
+                     "Bring the electrical system back up so he can have light in his home."),
+                qsTr("Click on different active elements : sun, cloud, dam, solar array, " +
+                     "wind farm and transformers, in order to reactivate the entire electrical system."),
+                qsTr("When the system is back up and Tux is in his home, push the light button for him. " +
+                     "To win you must switch on all the consumers while all the producers are up."),
+                qsTr("Learn about an electrical system based on renewable energy. Enjoy.")
+            ]
+            Behavior on opacity { PropertyAnimation { duration: 200 } }
         }
 
         Rectangle {
             id: check
-            visible: false
+            opacity: 0
             width: 400 * ApplicationInfo.ratio
             height: 200 * ApplicationInfo.ratio
             anchors.horizontalCenter: parent.horizontalCenter
@@ -167,15 +133,15 @@ ActivityBase {
                 anchors.fill: parent
                 horizontalAlignment: Text.AlignHCenter
                 verticalAlignment: Text.AlignVCenter
-                text: qsTr( "It is not possible to consume more electricity "+
-                           "than what is produced. This is a key limitation in the "+
-                           "distribution of electricity, with minor exceptions, "+
-                           "electrical energy cannot be stored, and therefore it "+
-                           "must be generated as it is needed. A sophisticated "+
-                           "system of control is therefore required to ensure electric "+
-                           "generation very closely matches the demand. If supply and demand "+
-                           "are not in balance, generation plants and transmission equipment "+
-                           "can shut down which, in the worst cases, can lead to a major "+
+                text: qsTr( "It is not possible to consume more electricity " +
+                           "than what is produced. This is a key limitation in the " +
+                           "distribution of electricity, with minor exceptions, " +
+                           "electrical energy cannot be stored, and therefore it " +
+                           "must be generated as it is needed. A sophisticated " +
+                           "system of control is therefore required to ensure electric " +
+                           "generation very closely matches the demand. If supply and demand " +
+                           "are not in balance, generation plants and transmission equipment " +
+                           "can shut down which, in the worst cases, can lead to a major " +
                            "regional blackout.")
                 fontSizeMode: Text.Fit
                 minimumPointSize: 10
@@ -191,33 +157,30 @@ ActivityBase {
 
             MouseArea {
                 anchors.fill: parent
-                onClicked: check.visible = false
+                enabled: check.opacity > 0
+                onClicked: check.opacity = 0
             }
         }
 
         Image {
             id: stepdown
             source: activity.url + "transformer.svg"
-            sourceSize.width: parent.width*0.06
-            height: parent.height*0.09
+            sourceSize.width: parent.width * 0.06
+            height: parent.height * 0.09
             anchors {
                 top: parent.top
                 left: parent.left
-                topMargin: parent.height*0.41
-                leftMargin: parent.width*0.72
+                topMargin: parent.height * 0.41
+                leftMargin: parent.width * 0.72
             }
             MouseArea {
-                anchors.fill: stepdown
+                anchors.fill: parent
                 onClicked: {
-                    power()
-                    if( Activity.power > 0 ) {
-                        stepdownwire.visible = true
-                    }
-                    else {
-                        stepdownwire.visible = false
-                    }
+                    onClicked: parent.started = !parent.started
                 }
             }
+            property bool started: false
+            property double power: started && hydro.item.power ? hydro.item.power : 0
         }
 
         Image {
@@ -225,8 +188,8 @@ ActivityBase {
             sourceSize.width: stepdown.width/2
             sourceSize.height: stepdown.height/2
             anchors {
-                right:stepdown.left
-                bottom:stepdown.bottom
+                right: stepdown.left
+                bottom: stepdown.bottom
                 bottomMargin: parent.height*0.03
             }
 
@@ -245,6 +208,7 @@ ActivityBase {
                     id: pow
                     anchors.centerIn: parent
                     fontSize: smallSize * 0.5
+                    text: stepdown.power.toString() + "W"
                 }
             }
         }
@@ -284,46 +248,31 @@ ActivityBase {
             source: activity.url + "hydroelectric/stepdown.svg"
             sourceSize.width: parent.width
             anchors.fill: parent
-            visible: false
+            visible: power > 0
+            property double power: stepdown.power
         }
 
         Image {
             id: residentsmalloff
             visible: false
             source: activity.url + "off.svg"
-            sourceSize.height: parent.height*0.03
-            sourceSize.width: parent.height*0.03
+            sourceSize.height: parent.height * 0.03
+            sourceSize.width: parent.height * 0.03
             anchors {
                 left: parent.left
                 top: parent.top
-                leftMargin: parent.width*0.55
-                topMargin: parent.height*0.65
+                leftMargin: parent.width * 0.55
+                topMargin: parent.height * 0.65
             }
             MouseArea {
                 id: small_area
                 visible: false
-                anchors.fill: residentsmalloff
+                anchors.fill: parent
                 onClicked: {
-                    if( Activity.power >= 300 && stepdownwire.visible == true) {
-                        Activity.add(-300)
-                        resident_smalllights.visible = true
-                        residentsmalloff.visible = false
-                        residentsmallon.visible = true
-                        Activity.consume(300)
-                        Activity.update()
-                        small_consume.text = "300 W"
-                        checkbonus()
-                    }
-                    else {
-                        if(stepdownwire.visible == true)
-                        {
-                            check.visible= true
-                        }
-                    }
+                    console.log('residentsmalloff')
                 }
             }
         }
-
 
         Image {
             id: residentsmallon
@@ -338,21 +287,12 @@ ActivityBase {
                 topMargin: parent.height*0.65
             }
             MouseArea {
-                anchors.fill: residentsmallon
+                anchors.fill: parent
                 onClicked: {
-                    Activity.add(300)
-                    Activity.consume(-300)
-                    resident_smalllights.visible = false
-                    residentsmallon.visible = false
-                    residentsmalloff.visible = true
-                    small_consume.text= "0 W"
-                    Activity.update()
-
+                    console.log("residentsmallon")
                 }
             }
         }
-
-
 
         Image {
             id: residentbigoff
@@ -369,24 +309,9 @@ ActivityBase {
             MouseArea {
                 id: big_area
                 visible: false
-                anchors.fill: residentbigoff
+                anchors.fill: parent
                 onClicked: {
-                    if( Activity.power >= 600 && stepdownwire.visible == true) {
-                        Activity.add(-600)
-                        resident_biglights.visible = true
-                        residentbigoff.visible = false
-                        residentbigon.visible = true
-                        Activity.consume(600)
-                        Activity.update()
-                        big_consume.text = "600 W"
-                        checkbonus()
-                    }
-                    else {
-                        if(stepdownwire.visible == true)
-                        {
-                            check.visible = true
-                        }
-                    }
+                    console.log('residentbigoff')
                 }
             }
         }
@@ -404,15 +329,9 @@ ActivityBase {
                 topMargin: parent.height*0.65
             }
             MouseArea {
-                anchors.fill: residentbigon
+                anchors.fill: parent
                 onClicked: {
-                    Activity.add(600)
-                    Activity.consume(-600)
-                    residentbigon.visible = false
-                    residentbigoff.visible = true
-                    resident_biglights.visible = false
-                    Activity.update()
-                    big_consume.text = "0 W"
+                    console.log('residentbigon')
                 }
             }
         }
@@ -456,17 +375,17 @@ ActivityBase {
             visible: false
         }
 
-        Rectangle{
+        Rectangle {
             id: big_consume_rect
-            width: big_consume.width*1.1
-            height: big_consume.height*1.1
+            width: big_consume.width * 1.1
+            height: big_consume.height * 1.1
             border.color: "black"
-            radius :5
-            color:"yellow"
+            radius : 5
+            color: "yellow"
             anchors {
                 top: residentbigon.bottom
                 left: small_consume_rect.right
-                leftMargin: parent.width*0.05
+                leftMargin: parent.width * 0.05
             }
             GCText {
                 id: big_consume
@@ -477,394 +396,70 @@ ActivityBase {
             visible: false
         }
 
-        //tuxoff is visible when tuxboat animation stops and on is activated after stepdown is activated.
+        // Tux is visible when tuxboat animation stops
+        // It's light can be activated after stepdown is on
 
         Image {
-            id: tuxoff
-            source: activity.url + "lightsoff.svg"
-            sourceSize.height: parent.height*0.2
-            sourceSize.width: parent.width*0.15
+            id: tux
+            source: activity.url + (on ? "lightson.svg" : "lightsoff.svg")
+            sourceSize.height: parent.height * 0.2
+            sourceSize.width: parent.width * 0.15
             anchors {
                 bottom: parent.bottom
                 right: parent.right
-                bottomMargin: parent.height* 0.3
-                rightMargin: parent.width*0.02
+                bottomMargin: parent.height * 0.3
+                rightMargin: parent.width * 0.02
             }
             visible: false
+            property double power_consumed: on ? 50 : 0
+            property bool on: stepdown.power > 50 && tux_switch.on
+
             Image {
-                id: off
-                source: activity.url + "off.svg"
+                id: tux_switch
+                source: activity.url + (on ? "on.svg" : "off.svg")
                 sourceSize.height: parent.height*0.20
                 sourceSize.width: parent.height*0.20
+                property bool on: false
                 anchors {
-                    right: tuxoff.right
-                    top: tuxoff.top
-                    rightMargin: tuxoff.width*0.20
-                    topMargin: tuxoff.height*0.30
+                    right: tux.right
+                    top: tux.top
+                    rightMargin: tux.width * 0.20
+                    topMargin: tux.height * 0.30
                 }
                 MouseArea {
                     id: off_area
-                    visible: false
-                    anchors.fill: off
+                    anchors.fill: parent
                     onClicked: {
-                        if( Activity.power >= 100 && stepdownwire.visible == true) {
-                            Activity.add(-100)
-                            tuxon.visible = true
-                            tuxoff.visible = false
-                            Activity.consume(100)
-                            Activity.update()
-                            checkbonus()
-                            tux_consume.text = "100 W"
-                        }
+                        tux_switch.on = !tux_switch.on
                     }
                 }
             }
         }
 
-        Image {
-            id: tuxon
-            source: activity.url + "lightson.svg"
-            sourceSize.height: parent.height*0.2
-            sourceSize.width: parent.width*0.15
-            anchors {
-                bottom: parent.bottom
-                right: parent.right
-                bottomMargin: parent.height* 0.3
-                rightMargin: parent.width*0.02
-            }
-            Image {
-                id: on
-                source: activity.url + "on.svg"
-                sourceSize.height: parent.height*0.20
-                sourceSize.width: parent.height*0.20
-                anchors {
-                    right: tuxon.right
-                    top: tuxon.top
-                    rightMargin: tuxon.width*0.20
-                    topMargin: tuxon.height*0.30
-                }
-                MouseArea {
-                    anchors.fill: on
-                    onClicked: {
-                        Activity.add(100)
-                        Activity.consume(-100)
-                        tuxon.visible = false
-                        tuxoff.visible = true
-                        Activity.update()
-                        tux_consume.text = "0 W"
-                    }
-                }
-            }
-            visible: false
-        }
-
-        Rectangle{
+        Rectangle {
             id: tux_meter
-            width: tux_consume.width*1.1
-            height: tux_consume.height*1.1
+            width: tux_consume.width * 1.1
+            height: tux_consume.height * 1.1
             border.color: "black"
-            radius :5
-            color:"yellow"
+            radius : 5
+            color: "yellow"
             anchors {
-                top: tuxon.bottom
-                left: tuxon.left
+                top: tux.top
+                left: tux.left
+                leftMargin: tux.width * 0.2
             }
             GCText {
                 id: tux_consume
                 anchors.centerIn: parent
-                text: "0 W"
                 fontSize: smallSize * 0.5
+                text: tux.power_consumed.toString() + "W"
             }
-            visible: false
+            visible: tux.visible
         }
 
-
-        function initiate() {
-            unload()
-            reload()
-            power()
+        function win() {
+            items.bonus.good("flower")
         }
-
-        Loader {
-            id: hydro
-            anchors.fill: parent
-        }
-
-        Loader {
-            id: wind
-            anchors.fill: parent
-        }
-
-        Loader {
-            id: solar
-            anchors.fill: parent
-        }
-
-        function unload( )
-        {
-            pow.text = "0 W"
-            stepdown_info.text = "0 W"
-            stepdownwire.visible = false
-            off_area.visible = false
-            small_area.visible = false
-            big_area.visible = false
-            tuxon.visible = false
-            tuxoff.visible = false
-            residentsmalloff.visible = false
-            residentsmallon.visible= false
-            residentbigoff.visible = false
-            residentbigon.visible = false
-            resident_smalllights.visible = false
-            resident_biglights.visible = false
-            small_consume_rect.visible = false
-            big_consume_rect.visible = false
-            tux_meter.visible = false
-            small_consume.text = "0 W"
-            big_consume.text= "0 W"
-            tux_consume.text = "0 W"
-            wind.source = ""
-            hydro.source =""
-            solar.source = ""
-            moon_set.running = false
-            moon_rise.running = false
-            moon.opacity = 0
-            moon_anim.running= false
-            sky.source = activity.url + "sky.svg"
-        }
-
-        function reload() {
-            if(Activity.currentLevel == 0) {
-                hydro.source = "Hydro.qml"
-            }
-            if(Activity.currentLevel == 1) {
-                wind.source = "Wind.qml"
-                hydro.source = "Hydro.qml"
-                residentsmalloff.visible = true
-                small_consume_rect.visible = true
-
-            }
-            if(Activity.currentLevel == 2) {
-                solar.source = "Solar.qml"
-                wind.source = "Wind.qml"
-                hydro.source = "Hydro.qml"
-                residentsmalloff.visible = true
-                residentbigoff.visible = true
-                small_consume_rect.visible = true
-                big_consume_rect.visible = true
-                sky.source = activity.url + "sky.svg"
-                moon_anim.running = true
-            }
-        }
-
-        function power() {
-            if(Activity.currentLevel == 0 && Activity.power >= 0 ) {
-                off_area.visible = true
-            }
-            if(Activity.currentLevel == 1 && Activity.power >= 0) {
-                off_area.visible = true
-                small_area.visible = true
-            }
-            if(Activity.currentLevel == 2 && Activity.count >= 0 ) {
-                off_area.visible = true
-                small_area.visible = true
-                big_area.visible = true
-            }
-        }
-
-        function tux() {
-            Activity.add(100)
-            Activity.consume(-100)
-            tuxon.visible = false
-            tuxoff.visible = true
-            Activity.update()
-            tux_consume.text = "0 W"
-        }
-
-        function small() {
-            resident_smalllights.visible = false
-            residentsmalloff.visible = true
-            residentsmallon.visible =false
-            Activity.add(300)
-            Activity.consume(-300)
-            Activity.update()
-            small_consume.text= "0 W"
-        }
-
-        function big() {
-            resident_biglights.visible = false
-            residentbigoff.visible = true
-            residentbigon.visible = false
-            Activity.add(600)
-            Activity.consume(-600)
-            Activity.update()
-            big_consume.text= "0 W"
-        }
-
-        function reset() {
-            if(Activity.currentLevel == 0) {
-                if(Activity.voltage == 0) {
-                    stepdownwire.visible = false
-                }
-
-            }
-            if(Activity.currentLevel == 1) {
-                if(Activity.voltage == 0  && residentsmallon.visible != true && tuxon.visible != true)
-                {
-                    stepdownwire.visible = false
-                    check.visible = true
-                }
-
-                if(Activity.voltage == 0  && residentsmallon.visible == true && tuxon.visible == true)
-                {
-                    tux()
-                    small()
-                    stepdownwire.visible = false
-                    check.visible = true
-                }
-
-                if(Activity.voltage == 0  && residentsmallon.visible != true && tuxon.visible == true)
-                {
-                    tux()
-                    stepdownwire.visible = false
-                    check.visible = true
-                }
-
-                if(Activity.voltage == 0  && residentsmallon.visible == true && tuxon.visible != true)
-                {
-                    small()
-                    stepdownwire.visible = false
-                    check.visible = true
-                }
-
-                if(Activity.voltage == 100  && residentsmallon.visible == true && tuxon.visible == true)
-                {
-                    small()
-                    check.visible = true
-                }
-
-                if(Activity.voltage == 100  && residentsmallon.visible == true && tuxon.visible != true)
-                {
-                    small()
-                    stepdownwire.visible = false
-                    check.visible = true
-                }
-
-            }
-            if(Activity.currentLevel == 2) {
-                if(Activity.voltage == 0  && residentsmallon.visible == true && tuxon.visible == true && residentbigon.visible == true)
-                {
-                    tux()
-                    small()
-                    big()
-                    stepdownwire.visible = false
-                    check.visible = true
-                }
-
-                if(Activity.voltage == 0  && residentsmallon.visible == true && tuxon.visible == true && residentbigon.visible != true)
-                {
-                    tux()
-                    small()
-                    stepdownwire.visible = false
-                    check.visible = true
-                }
-
-                if(Activity.voltage == 0  && residentsmallon.visible != true && tuxon.visible == true && residentbigon.visible == true)
-                {
-                    tux()
-                    big()
-                    stepdownwire.visible = false
-                    check.visible = true
-                }
-
-                if(Activity.voltage == 0  && residentsmallon.visible == true && tuxon.visible != true && residentbigon.visible == true)
-                {
-                    big()
-                    small()
-                    stepdownwire.visible = false
-                    check.visible = true
-                }
-
-                if(Activity.voltage == 0  && residentsmallon.visible == true && tuxon.visible != true && residentbigon.visible != true)
-                {
-                    small()
-                    stepdownwire.visible = false
-                    check.visible = true
-                }
-
-                if(Activity.voltage == 0  && residentsmallon.visible != true && tuxon.visible == true && residentbigon.visible != true)
-                {
-                    tux()
-                    stepdownwire.visible = false
-                    check.visible = true
-                }
-
-                if(Activity.voltage == 0  && residentsmallon.visible != true && tuxon.visible != true && residentbigon.visible == true)
-                {
-                    big()
-                    stepdownwire.visible = false
-                    check.visible = true
-                }
-
-                if (Activity.voltage == 100 && tuxon.visible == true && residentsmallon.visible == true && residentbigon.visible == true)
-                {
-                    small()
-                    big()
-                    check.visible = true
-                }
-
-                if (Activity.voltage == 100 && tuxon.visible == true &&residentsmallon.visible == true && residentbigon.visible != true)
-                {
-                    small()
-                    check.visible = true
-                }
-
-                if (Activity.voltage == 100 && tuxon.visible == true &&residentsmallon.visible != true && residentbigon.visible == true)
-                {
-                    big()
-                    check.visible = true
-                }
-
-                if (Activity.voltage == 100 && tuxon.visible != true && residentsmallon.visible == true && residentbigon.visible == true) {
-                    big()
-                    small()
-                    check.visible = true
-                }
-
-                if (Activity.voltage == 100 && tuxon.visible != true && residentsmallon.visible != true && residentbigon.visible == true) {
-                    big()
-                    check.visible = true
-                }
-
-                if (Activity.voltage == 100 && tuxon.visible != true && residentsmallon.visible == true && residentbigon.visible != true) {
-                    small()
-                    check.visible = true
-                }
-
-                if (Activity.voltage <= 400 && residentbigon.visible == true)
-                {
-                    big()
-                    check.visible = true
-                }
-            }
-        }
-
-        function checkbonus() {
-            if(Activity.currentLevel == 0 && tuxon.visible == true)
-            {
-                Activity.win()
-            }
-            if(Activity.currentLevel == 1 && tuxon.visible == true && residentsmallon.visible == true)
-            {
-                Activity.win()
-            }
-            if(Activity.currentLevel == 2 && tuxon.visible == true && residentbigon.visible == true && residentsmallon.visible == true)
-            {
-                Activity.win()
-            }
-        }
-
-        onStart: { Activity.start(items,pow,solar,tux_meter,stepdown_info) }
-        onStop: { Activity.stop() }
 
         DialogHelp {
             id: dialogHelp
@@ -874,13 +469,12 @@ ActivityBase {
         Bar {
             id: bar
             content: BarEnumContent { value: help | home | level | reload }
-            onHelpClicked: {
-                displayDialog(dialogHelp)
-            }
+            onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onReloadClicked: Activity.initLevel()
+            level: items.currentLevel + 1
         }
 
         Bonus {
