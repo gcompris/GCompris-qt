@@ -26,7 +26,6 @@ import "../../core"
 
 Item {
     id: wind
-    property bool active: false
     property alias power: windTransformer.power
 
     Image {
@@ -125,37 +124,38 @@ Item {
     }
 
     // Wind turbines
-    Image {
+    WindTurbine {
         id: windTurbine
-        source: activity.url + "wind/mast.svg"
-        sourceSize.width: parent.width * 0.01
         anchors {
             top: parent.top
             right: parent.right
             topMargin: parent.height * 0.17
             rightMargin: parent.width * 0.05
         }
-        property double power: cloud.started ? 1000 : 0
-
-        Image {
-            id: blade
-            source: activity.url + "wind/blade.svg"
-            sourceSize.height: parent.height * 1.3
-            anchors {
-                horizontalCenter: parent.horizontalCenter
-                verticalCenter: parent.top
-                verticalCenterOffset: parent.height * 0.06
-            }
-
-            SequentialAnimation on rotation {
-                id: anim
-                loops: Animation.Infinite
-                running: cloud.started
-                NumberAnimation {
-                    from: 0; to: 360
-                    duration: 3000
-                }
-            }
+        z: 55
+        duration: 3200
+        property double power: cloud.started ? 500 : 0
+    }
+    WindTurbine {
+        id: windTurbine2
+        anchors {
+            top: parent.top
+            right: parent.right
+            topMargin: parent.height * 0.15
+            rightMargin: parent.width * 0.1
         }
+        z: 54
+        duration: 3500
+    }
+    WindTurbine {
+        id: windTurbine3
+        anchors {
+            top: parent.top
+            right: parent.right
+            topMargin: parent.height * 0.12
+            rightMargin: parent.width * 0.15
+        }
+        z: 53
+        duration: 3100
     }
 }
