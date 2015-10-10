@@ -46,19 +46,10 @@ Item {
                 if(Activity.click == false && Activity.panel_activate == true) {
                     solarpower.source = activity.url + "solar/solarpoweron.svg"
                     solar_info.text = "400 W"
-                    Activity.click = true
-                    Activity.add(400)
-                    Activity.volt(400)
-                    Activity.update()
                 }
                 else {
                     solarpower.source = activity.url + "solar/solarpoweroff.svg"
                     solar_info.text = "0 W"
-                    Activity.click = false
-                    Activity.add(-400)
-                    Activity.volt(-400)
-                    Activity.update()
-                    Activity.verify()
                 }
             }
         }

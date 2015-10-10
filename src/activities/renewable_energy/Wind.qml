@@ -68,19 +68,10 @@ Item {
                 if(active == false) {
                     wind_power.source = activity.url + "wind/windpoweron.svg"
                     active = true
-                    Activity.add(100)
-                    Activity.volt(100)
-                    windvoltage.text = "100 W"
-                    Activity.update()
                 }
                 else {
                     active = false
                     wind_power.source = activity.url + "wind/windpoweroff.svg"
-                    Activity.add(-100)
-                    Activity.volt(-100)
-                    windvoltage.text = "0 W"
-                    Activity.update()
-                    Activity.verify()
                 }
             }
         }
