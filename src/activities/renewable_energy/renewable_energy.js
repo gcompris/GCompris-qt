@@ -34,13 +34,11 @@ function nextLevel() {
     if(numberOfLevel <= ++items.currentLevel ) {
         items.currentLevel = 0
     }
-    initLevel();
 }
 
 function previousLevel() {
     if(--items.currentLevel < 0 ) {
         items.currentLevel = numberOfLevel - 1
     }
-    initLevel();
 }
 

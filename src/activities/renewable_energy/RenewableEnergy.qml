@@ -180,7 +180,7 @@ ActivityBase {
                 }
             }
             property bool started: false
-            property double power: started && hydro.item.power ? hydro.item.power : 0
+            property double power: started ? (hydro.item.power + wind.item.power) : 0
         }
 
         Image {

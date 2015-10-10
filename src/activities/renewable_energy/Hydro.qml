@@ -485,7 +485,7 @@ Item {
         property double power: started && damwire.power ? damwire.power : 0
         MouseArea {
             id: stepup1_area
-            anchors.fill: stepup1
+            anchors.fill: parent
             onClicked: {
                 parent.started = !parent.started
             }

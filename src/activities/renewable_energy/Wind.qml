@@ -27,72 +27,75 @@ import "../../core"
 Item {
     id: wind
     property bool active: false
+    property alias power: windTransformer.power
+
     Image {
-        id: cloud_quiet
+        id: cloud
         opacity: 1
-        source: activity.url + "wind/cloud_quiet.svg"
+        source: activity.url + "wind/" + (started ? "cloud_fury.svg" :"cloud_quiet.svg")
         sourceSize.width: parent.width * 0.20
-        sourceSize.height: parent.height*0.10
+        sourceSize.height: parent.height * 0.10
         anchors {
             right: parent.right
             top: parent.top
-            rightMargin: 0.05*parent.width
+            topMargin: 0.05 * parent.height
+            rightMargin: 0.05 * parent.width
         }
+        property bool started: false
         MouseArea {
-            anchors.fill: cloud_quiet
+            anchors.fill: parent
             onClicked: {
-                cloud_quiet.source = activity.url+ "wind/cloud_fury.svg"
-                turbine_area.visible = true
-                wind.state = "move"
-                wind_timer.restart()
+                cloud.started = true
+                windTimer.restart()
+            }
+        }
+    }
+
+    Timer {
+        id: windTimer
+        interval: 30000
+        running: false
+        repeat: false
+        onTriggered: cloud.started = false
+    }
+
+    Image {
+        id: windTransformer
+        source: activity.url + (started ? "transformer.svg" : "transformer_off.svg")
+        sourceSize.width: parent.width * 0.035
+        height: parent.height * 0.06
+        anchors {
+            top: parent.top
+            right: parent.right
+            topMargin: parent.height * 0.2
+            rightMargin: parent.width * 0.18
+        }
+        property bool started: false
+        property double power: started ? windTurbine.power : 0
+        MouseArea {
+            anchors.fill: parent
+            onClicked: {
+                parent.started = !parent.started
             }
         }
     }
 
     Image {
-        id: wind_transformer
-        source: activity.url + "transformer.svg"
-        sourceSize.width: parent.width*0.035
-        height: parent.height*0.06
-        anchors {
-            top: parent.top
-            right: parent.right
-            topMargin: parent.height*0.2
-            rightMargin: parent.width*0.18
-        }
-        MouseArea {
-            id: wind_transformer_area
-            anchors.fill: wind_transformer
-            visible: false
-            onClicked: {
-                if(active == false) {
-                    wind_power.source = activity.url + "wind/windpoweron.svg"
-                    active = true
-                }
-                else {
-                    active = false
-                    wind_power.source = activity.url + "wind/windpoweroff.svg"
-                }
-            }
-        }
-    }
-
-    Image{
-        sourceSize.width: wind_transformer.width/2
-        sourceSize.height: wind_transformer.height/2
+        sourceSize.width: windTransformer.width / 2
+        sourceSize.height: windTransformer.height / 2
         source: activity.url + "down.svg"
         anchors {
-            bottom: wind_transformer.top
+            bottom: windTransformer.top
             right: parent.right
             rightMargin: parent.width*0.20
         }
 
-        Rectangle{
-            width: windvoltage.width*1.1
-            height: windvoltage.height*1.1
+        Rectangle {
+            width: windvoltage.width * 1.1
+            height: windvoltage.height * 1.1
             border.color: "black"
-            radius :5
-            color:"yellow"
+            radius: 5
+            color: "yellow"
             anchors {
                 bottom: parent.top
                 right: parent.right
@@ -100,7 +103,7 @@ Item {
             GCText {
                 id: windvoltage
                 anchors.centerIn: parent
-                text: "0 W"
+                text: wind.power.toString() + "W"
                 fontSize: smallSize * 0.5
             }
         }
@@ -108,134 +111,51 @@ Item {
 
 
     Image {
-        id: wind_power
-        source: activity.url + "wind/windpoweroff.svg"
+        source: activity.url + (windTurbine.power ? "wind/windturbineon.svg" : "wind/windturbineoff.svg")
         sourceSize.width: parent.width
         sourceSize.height: parent.height
         anchors.fill: parent
-        opacity: 1
     }
 
     Image {
-        id: wind_turbine
-        source: activity.url + "wind/windturbineoff.svg"
+        source: activity.url + (windTransformer.power ? "wind/windpoweron.svg" : "wind/windpoweroff.svg")
         sourceSize.width: parent.width
         sourceSize.height: parent.height
         anchors.fill: parent
-        opacity: 1
     }
 
-    //wind turbines animations
-
+    // Wind turbines
     Image {
-        id:turbine1
-        source: activity.url + "wind/turbine1.svg"
-        visible: true
-        sourceSize.width: parent.width*0.15
-        height: parent.height*0.15
+        id: windTurbine
+        source: activity.url + "wind/mast.svg"
+        sourceSize.width: parent.width * 0.01
         anchors {
             top: parent.top
             right: parent.right
-            topMargin: parent.height*0.13
-            rightMargin: parent.width*0.03
+            topMargin: parent.height * 0.17
+            rightMargin: parent.width * 0.05
         }
+        property double power: cloud.started ? 1000 : 0
 
-    }
-
-    MouseArea {
-        anchors.fill: turbine1
-        id: turbine_area
-        visible: false
-        onClicked: {
-            wind_turbine.source= activity.url + "wind/windturbineon.svg"
-            wind_transformer_area.visible = true
-        }
-    }
-
-    Image {
-        id:turbine2
-        visible: false
-        source: activity.url + "wind/turbine2.svg"
-        sourceSize.width: parent.width*0.15
-        height: parent.height*0.15
-        anchors {
-            top: parent.top
-            right: parent.right
-            topMargin: parent.height*0.13
-            rightMargin: parent.width*0.03
-        }
-    }
-
-    states: [
-        State {
-            name: "move"
-            PropertyChanges {
-                target: turbine1
-                visible: false
+        Image {
+            id: blade
+            source: activity.url + "wind/blade.svg"
+            sourceSize.height: parent.height * 1.3
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+                verticalCenter: parent.top
+                verticalCenterOffset: parent.height * 0.06
             }
-            PropertyChanges {
-                target: turbine2
-                visible: true
-            }
-        },
-        State {
-            name: "off"
-            PropertyChanges {
-                target: turbine2
-                visible: false
-            }
-            PropertyChanges {
-                target: turbine1
-                visible: true
+
+            SequentialAnimation on rotation {
+                id: anim
+                loops: Animation.Infinite
+                running: cloud.started
+                NumberAnimation {
+                    from: 0; to: 360
+                    duration: 3000
+                }
             }
         }
-    ]
-
-    transitions: Transition {
-        SequentialAnimation {
-            loops: Animation.Infinite
-            NumberAnimation {
-                easing.type: Easing.InQuad
-                properties: "visible"
-                duration: 2000
-            }
-        }
-    }
-
-
-    Timer {
-        id: wind_timer
-        interval: 30000
-        running: false
-        repeat: false
-        onTriggered: active == false ? wind_reset() : wind_power_reset()
-    }
-
-
-    function wind_reset() {
-        cloud_quiet.source = activity.url+ "wind/cloud_quiet.svg"
-        wind_power.source=  activity.url + "wind/windpoweroff.svg"
-        wind_turbine.source = activity.url + "wind/windturbineoff.svg"
-        turbine_area.visible = false
-        state = "off"
-        windvoltage.text = "0 W"
-        wind_transformer_area.visible = false
-        wind_timer.stop()
-    }
-
-    function wind_power_reset() {
-        cloud_quiet.source = activity.url+ "wind/cloud_quiet.svg"
-        wind_turbine.source = activity.url + "wind/windturbineoff.svg"
-        state = "off"
-        wind_power.source= activity.url + "wind/windpoweroff.svg"
-        wind_transformer_area.visible = false
-        turbine_area.visible= false
-        active = false
-        Activity.add(-100)
-        Activity.volt(-100)
-        windvoltage.text = "0 W"
-        Activity.update()
-        Activity.verify()
-        wind_timer.stop()
     }
 }
