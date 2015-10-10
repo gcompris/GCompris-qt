@@ -439,7 +439,7 @@ Item {
 
     Image {
         id: dam
-        source: activity.url + "hydroelectric/dam.svg"
+        source: activity.url + "hydroelectric/" + (started ? "dam.svg" : "dam_off.svg")
         width: river.width * 0.12
         sourceSize.height: parent.height * 0.08
         z: 45
@@ -471,7 +471,7 @@ Item {
 
     Image {
         id: stepup1
-        source: activity.url + "transformer.svg"
+        source: activity.url + (started ? "transformer.svg" : "transformer_off.svg")
         sourceSize.width: parent.width * 0.06
         height: parent.height * 0.09
         z: 34

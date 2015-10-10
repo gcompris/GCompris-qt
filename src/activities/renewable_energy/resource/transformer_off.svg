@@ -14,7 +14,7 @@
    id="svg6049"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="transformer.svg">
+   sodipodi:docname="transformer_off.svg">
   <defs
      id="defs6051" />
   <sodipodi:namedview
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="15.839192"
-     inkscape:cx="21.660065"
-     inkscape:cy="22.321163"
+     inkscape:zoom="44.8"
+     inkscape:cx="40.25311"
+     inkscape:cy="20.336621"
      inkscape:document-units="px"
      inkscape:current-layer="TRANSFORMER_DAM"
      showgrid="false"
@@ -34,11 +34,11 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="3200"
-     inkscape:window-height="1764"
+     inkscape:window-width="2894"
+     inkscape:window-height="1675"
      inkscape:window-x="0"
-     inkscape:window-y="36"
-     inkscape:window-maximized="1" />
+     inkscape:window-y="51"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata6054">
     <rdf:RDF>
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -139,11 +139,11 @@
            sodipodi:nodetypes="ccccc"
            id="rect16314-8"
            d="m 1182.8122,-176.98746 12.7048,12.57733 0,10.3427 -12.7048,-12.57734 0,-10.34269 z"
-           style="fill:#5ee736;fill-opacity:1;stroke:#000000;stroke-width:1.08165002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;enable-background:new" />
+           style="fill:#e7363f;fill-opacity:1;stroke:#000000;stroke-width:1.08165002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dashoffset:0;display:inline;enable-background:new" />
       </g>
       <rect
          transform="matrix(0.81949253,-0.57308987,0,1,0,0)"
-         style="fill:#5ee736;fill-opacity:1;stroke:#000000;stroke-width:1.10465705;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline;enable-background:new"
+         style="fill:#e7363f;fill-opacity:1;stroke:#000000;stroke-width:1.10465705;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;display:inline;enable-background:new"
          id="rect16319-0-2"
          width="12.55916"
          height="3.2826462"

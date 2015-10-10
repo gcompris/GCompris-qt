@@ -164,7 +164,7 @@ ActivityBase {
 
         Image {
             id: stepdown
-            source: activity.url + "transformer.svg"
+            source: activity.url + (started ? "transformer.svg" : "transformer_off.svg")
             sourceSize.width: parent.width * 0.06
             height: parent.height * 0.09
             anchors {
