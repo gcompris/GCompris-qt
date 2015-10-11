@@ -172,10 +172,11 @@ ActivityBase {
             height: 200 * ApplicationInfo.ratio
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
-            z: 3
+            z: 100
             border.width: 2
             radius: 5
-            color: "#00d635"
+            color: "#d0f0f0"
+            property bool shown: false
 
             GCText {
                 id: warning
@@ -242,14 +243,20 @@ ActivityBase {
 
             // Check powerOut does not exceed powerIn. Cut some consumers in case.
             function checkPower() {
-                if(powerOut > powerIn && residentBigSwitch.on)
+                if(powerOut > powerIn && residentBigSwitch.on) {
                     residentBigSwitch.on = false
+                    if(!check.shown && powerIn) check.opacity = 1
+                }
 
-                if(powerOut > powerIn && residentSmallSwitch.on)
-                        residentSmallSwitch.on = false
+                if(powerOut > powerIn && residentSmallSwitch.on) {
+                    residentSmallSwitch.on = false
+                    if(!check.shown && powerIn) check.opacity = 1
+                }
 
-                if(powerOut > powerIn && tuxSwitch.on)
-                        tuxSwitch.on = false
+                if(powerOut > powerIn && tuxSwitch.on) {
+                    tuxSwitch.on = false
+                    if(!check.shown && powerIn) check.opacity = 1
+                }
             }
         }
 
