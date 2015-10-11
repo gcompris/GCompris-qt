@@ -26,51 +26,45 @@ import "../../core"
 
 Item {
     id: solar
+    property alias power: solarTransformer.power
 
     Image {
-        id: solar_transformer
-        source: activity.url + "transformer.svg"
-        sourceSize.width: parent.width*0.05
-        height: parent.height*0.08
+        id: solarTransformer
+        source: activity.url + (started ? "transformer.svg" : "transformer_off.svg")
+        sourceSize.width: parent.width * 0.05
+        height: parent.height * 0.08
         anchors {
             top: parent.top
             right: parent.right
-            topMargin: parent.height*0.38
-            rightMargin: parent.width*0.11
+            topMargin: parent.height * 0.38
+            rightMargin: parent.width * 0.11
         }
+        property bool started: false
+        property double power: started ? solarPanel.power : 0
         MouseArea {
-            id: solar_area
-            visible: false
-            anchors.fill: solar_transformer
+            anchors.fill: parent
             onClicked: {
-                if(Activity.click == false && Activity.panel_activate == true) {
-                    solarpower.source = activity.url + "solar/solarpoweron.svg"
-                    solar_info.text = "400 W"
-                }
-                else {
-                    solarpower.source = activity.url + "solar/solarpoweroff.svg"
-                    solar_info.text = "0 W"
-                }
+                parent.started = !parent.started
             }
         }
     }
 
-    Image{
+    Image {
         source: activity.url + "left.svg"
-        sourceSize.width: solar_transformer.width/2
-        sourceSize.height: solar_transformer.height/2
+        sourceSize.width: solarTransformer.width / 2
+        sourceSize.height: solarTransformer.height / 2
         anchors {
-            top: solarpaneloff.top
-            left:solar_transformer.left
-            leftMargin: solar_transformer.width
-            topMargin: solar_transformer.height
+            top: solarPanel.top
+            left:solarTransformer.left
+            leftMargin: solarTransformer.width
+            topMargin: solarTransformer.height
         }
-        Rectangle{
-            width: solar_info.width*1.1
-            height: solar_info.height*1.1
+        Rectangle {
+            width: solar_info.width * 1.1
+            height: solar_info.height * 1.1
             border.color: "black"
-            radius :5
-            color:"yellow"
+            radius: 5
+            color: "yellow"
             anchors {
                 left: parent.right
             }
@@ -78,48 +72,40 @@ Item {
                 id: solar_info
                 fontSize: smallSize * 0.5
                 anchors.centerIn: parent
-                text: "0 W"
+                text: solar.power.toString() + "W"
             }
         }
     }
 
     Image {
-        id: solarpower
-        source: activity.url + "solar/solarpoweroff.svg"
+        id: solarPower
+        source: activity.url + "solar/" + (solarTransformer.power ? "solarpoweroff.svg" : "solarpoweroff.svg")
         sourceSize.width: parent.width
         anchors.fill: parent
-        visible: true
     }
 
     Image {
-        id: solarpaneloff
-        source: activity.url + "solar/solarpaneloff.svg"
-        sourceSize.width: parent.width*0.07
-        height: parent.height*0.09
+        id: solarPanel
+        source: activity.url + "solar/" + (power ? "solarpanelon.svg" : "solarpaneloff.svg")
+        sourceSize.width: parent.width * 0.07
+        height: parent.height * 0.09
         anchors {
             top: parent.top
             right: parent.right
-            topMargin: parent.height*0.31
-            rightMargin: parent.width*0.14
+            topMargin: parent.height * 0.31
+            rightMargin: parent.width * 0.14
         }
-        visible: true
+        property bool started: false
+        property double power: started && items.sunIsUp ? 1200 : 0
         MouseArea {
-            id: solarpanelarea
-            anchors.fill: solarpaneloff
-            onClicked: {
-                if( Activity.panel_activate == true ) {
-                    solar_area.visible = true
-                    solarpaneloff.source = activity.url + "solar/solarpanelon.svg"
-                    panelpower.source = activity.url + "solar/panelpoweron.svg"
-                    solarpanelarea.visible= false
-                }
-            }
+            anchors.fill: parent
+            onClicked: parent.started = !parent.started
         }
     }
 
     Image {
-        id: panelpower
-        source: activity.url + "solar/panelpoweroff.svg"
+        id: panelPower
+        source: activity.url + "solar/" + (solarPanel.power ? "panelpoweron.svg" : "panelpoweroff.svg")
         sourceSize.width: parent.width
         anchors.fill: parent
         visible: true

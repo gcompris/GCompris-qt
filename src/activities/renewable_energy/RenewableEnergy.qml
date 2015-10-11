@@ -64,6 +64,7 @@ ActivityBase {
             property alias bonus: bonus
             property GCAudio audioEffects: activity.audioEffects
             property int currentLevel
+            property bool sunIsUp
         }
 
         onStart: { Activity.start(items) }
@@ -180,7 +181,8 @@ ActivityBase {
                 }
             }
             property bool started: false
-            property double power: started ? (hydro.item.power + wind.item.power) : 0
+            property double power:
+                started ? (hydro.item.power + wind.item.power + solar.item.power) : 0
         }
 
         Image {

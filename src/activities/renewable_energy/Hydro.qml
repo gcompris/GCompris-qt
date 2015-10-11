@@ -148,10 +148,12 @@ Item {
             left: parent.left
             top: parent.top
             leftMargin: parent.width * 0.05
-            topMargin: parent.height - sea.height - height * 0.3
+            topMargin: sun.downPosition
+            onTopMarginChanged: items.sunIsUp = (anchors.topMargin != sun.downPosition)
         }
         z: 28
-        property bool hasRun: false
+        property double upPosition: parent.height * 0.05
+        property double downPosition: parent.height * 0.28
         MouseArea {
             id: sun_area
             anchors.fill: sun
@@ -163,12 +165,11 @@ Item {
         Behavior on anchors.topMargin { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 5000 } }
         function up() {
             items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
-            sun.hasRun = true
-            sun.anchors.topMargin = parent.height * 0.05
+            sun.anchors.topMargin = upPosition
             vapor.up()
         }
         function down() {
-            sun.anchors.topMargin = parent.height * 0.28
+            sun.anchors.topMargin = downPosition
         }
     }
 
