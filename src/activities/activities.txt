@@ -96,6 +96,7 @@ readingh
 readingv
 redraw
 redraw_symmetrical
+renewable_energy
 reversecount
 scalesboard
 scalesboard_weight
