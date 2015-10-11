@@ -416,7 +416,7 @@ Item {
         height: dam.height * 0.5
         z: 30
         anchors {
-            left:dam.left
+            left: dam.left
             leftMargin: parent.width * 0.05
             top: dam.top
         }
@@ -425,7 +425,7 @@ Item {
             height: dam_power.height * 1.1
             border.color: "black"
             radius: 5
-            color: "yellow"
+            color: items.produceColor
             anchors {
                 left: parent.right
             }

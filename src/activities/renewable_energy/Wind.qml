@@ -37,7 +37,7 @@ Item {
         anchors {
             right: parent.right
             top: parent.top
-            topMargin: 0.05 * parent.height
+            topMargin: 0.02 * parent.height
             rightMargin: 0.05 * parent.width
         }
         property bool started: false
@@ -94,7 +94,7 @@ Item {
             height: windvoltage.height * 1.1
             border.color: "black"
             radius: 5
-            color: "yellow"
+            color: items.produceColor
             anchors {
                 bottom: parent.top
                 right: parent.right

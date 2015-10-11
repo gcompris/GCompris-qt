@@ -43,9 +43,7 @@ Item {
         property double power: started ? solarPanel.power : 0
         MouseArea {
             anchors.fill: parent
-            onClicked: {
-                parent.started = !parent.started
-            }
+            onClicked: parent.started = !parent.started
         }
     }
 
@@ -64,7 +62,7 @@ Item {
             height: solar_info.height * 1.1
             border.color: "black"
             radius: 5
-            color: "yellow"
+            color: items.produceColor
             anchors {
                 left: parent.right
             }

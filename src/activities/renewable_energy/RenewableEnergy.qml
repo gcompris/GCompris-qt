@@ -65,6 +65,8 @@ ActivityBase {
             property GCAudio audioEffects: activity.audioEffects
             property int currentLevel
             property bool sunIsUp
+            property color consumeColor: '#ffff8100'
+            property color produceColor: '#ffffec00'
         }
 
         onStart: { Activity.start(items) }
@@ -164,7 +166,7 @@ ActivityBase {
         }
 
         Image {
-            id: stepdown
+            id: stepDown
             source: activity.url + (started ? "transformer.svg" : "transformer_off.svg")
             sourceSize.width: parent.width * 0.06
             height: parent.height * 0.09
@@ -181,26 +183,47 @@ ActivityBase {
                 }
             }
             property bool started: false
-            property double power:
-                started ? (hydro.item.power + wind.item.power + solar.item.power) : 0
+            property double powerIn:
+                started ? (hydro.item.power +
+                           (wind.item ? wind.item.power : 0) +
+                           (solar.item ? solar.item.power : 0)) : 0
+            property double powerOut:
+                started ? (tux.powerConsumed +
+                           residentSmallLights.powerConsumed +
+                           residentBigLights.powerConsumed) : 0
+
+            onPowerInChanged: checkPower()
+
+            // Check powerOut does not exceed powerIn. Cut some consumers in case.
+            function checkPower() {
+                if(powerOut > powerIn && residentBigSwitch.on)
+                    residentBigSwitch.on = false
+
+                if(powerOut > powerIn && residentSmallSwitch.on)
+                        residentSmallSwitch.on = false
+
+                if(powerOut > powerIn && tuxSwitch.on)
+                        tuxSwitch.on = false
+            }
         }
 
         Image {
             source:  activity.url + "right.svg"
-            sourceSize.width: stepdown.width/2
-            sourceSize.height: stepdown.height/2
+            sourceSize.width: stepDown.width / 2
+            sourceSize.height: stepDown.height / 2
             anchors {
-                right: stepdown.left
-                bottom: stepdown.bottom
-                bottomMargin: parent.height*0.03
+                right: stepDown.left
+                bottom: stepDown.bottom
+                bottomMargin: parent.height * 0.03
             }
 
             Rectangle {
-                width: pow.width*1.1
-                height: pow.height*1.1
+                id: produceMeter
+                width: pow.width * 1.1
+                height: pow.height * 1.1
                 border.color: "black"
-                radius :5
-                color:"yellow"
+                radius: 5
+                color: items.produceColor
                 anchors {
                     top: parent.top
                     right: parent.left
@@ -210,29 +233,30 @@ ActivityBase {
                     id: pow
                     anchors.centerIn: parent
                     fontSize: smallSize * 0.5
-                    text: stepdown.power.toString() + "W"
+                    text: stepDown.powerIn.toString() + "W"
                 }
             }
         }
 
         Image {
             source: activity.url + "down.svg"
-            sourceSize.width: stepdown.width/2
-            sourceSize.height: stepdown.height/2
+            sourceSize.width: stepDown.width / 2
+            sourceSize.height: stepDown.height / 2
             anchors {
-                left: stepdown.left
-                top: stepdown.top
-                topMargin: stepdown.height*0.8
-                leftMargin: parent.width*0.05
+                left: stepDown.left
+                top: stepDown.top
+                topMargin: stepDown.height * 0.8
+                leftMargin: parent.width * 0.05
             }
 
 
             Rectangle {
-                width: stepdown_info.width*1.1
-                height: stepdown_info.height*1.1
+                id: consumeMeter
+                width: stepdown_info.width * 1.1
+                height: stepdown_info.height * 1.1
                 border.color: "black"
-                radius :5
-                color:"red"
+                radius: 5
+                color: items.consumeColor
                 anchors {
                     top: parent.bottom
                     left: parent.right
@@ -241,23 +265,24 @@ ActivityBase {
                     id: stepdown_info
                     anchors.centerIn: parent
                     fontSize: smallSize * 0.5
+                    text: stepDown.powerOut.toString() + "W"
                 }
             }
         }
 
         Image {
-            id: stepdownwire
+            id: stepDownWire
             source: activity.url + "hydroelectric/stepdown.svg"
             sourceSize.width: parent.width
             anchors.fill: parent
             visible: power > 0
-            property double power: stepdown.power
+            property double power: stepDown.powerIn
         }
 
         Image {
-            id: residentsmalloff
-            visible: false
-            source: activity.url + "off.svg"
+            id: residentSmallSwitch
+            visible: items.currentLevel > 0
+            source: activity.url + (on ? "on.svg" : "off.svg")
             sourceSize.height: parent.height * 0.03
             sourceSize.width: parent.height * 0.03
             anchors {
@@ -266,136 +291,108 @@ ActivityBase {
                 leftMargin: parent.width * 0.55
                 topMargin: parent.height * 0.65
             }
+            property bool on: false
             MouseArea {
                 id: small_area
-                visible: false
+                visible: parent.visible
                 anchors.fill: parent
                 onClicked: {
-                    console.log('residentsmalloff')
+                    if(stepDown.powerIn - stepDown.powerOut > residentSmallLights.power)
+                        parent.on = !parent.on
+                    else
+                        parent.on = false
                 }
             }
         }
 
         Image {
-            id: residentsmallon
-            visible: false
-            source: activity.url + "on.svg"
-            sourceSize.height: parent.height*0.03
-            sourceSize.width: parent.height*0.03
-            anchors {
-                left: parent.left
-                top: parent.top
-                leftMargin: parent.width*0.55
-                topMargin: parent.height*0.65
-            }
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    console.log("residentsmallon")
-                }
-            }
-        }
-
-        Image {
-            id: residentbigoff
-            visible: false
-            source: activity.url + "off.svg"
-            sourceSize.height: parent.height*0.03
-            sourceSize.width: parent.height*0.03
-            anchors {
-                left: parent.left
-                top: parent.top
-                leftMargin: parent.width*0.60
-                topMargin: parent.height*0.65
-            }
-            MouseArea {
-                id: big_area
-                visible: false
-                anchors.fill: parent
-                onClicked: {
-                    console.log('residentbigoff')
-                }
-            }
-        }
-
-        Image {
-            id: residentbigon
-            visible: false
-            source: activity.url + "on.svg"
-            sourceSize.height: parent.height*0.03
-            sourceSize.width: parent.height*0.03
-            anchors {
-                left: parent.left
-                top: parent.top
-                leftMargin: parent.width*0.60
-                topMargin: parent.height*0.65
-            }
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    console.log('residentbigon')
-                }
-            }
-        }
-
-        Image {
-            id: resident_smalllights
-            source: activity.url+ "resident_smallon.svg"
+            id: residentSmallLights
+            source: activity.url + "resident_smallon.svg"
             sourceSize.width: parent.width
             sourceSize.height: parent.height
             anchors.fill: parent
-            visible: false
+            visible: items.currentLevel > 0 && powerConsumed
+            property int power: 1000
+            property int powerConsumed: on ? power : 0
+            property bool on: residentSmallSwitch.on
         }
 
-        Rectangle{
-            id: small_consume_rect
-            width: small_consume.width*1.1
-            height: small_consume.height*1.1
+        Rectangle {
+            id: smallConsumeRect
+            width: small_consume.width * 1.1
+            height: small_consume.height * 1.1
             border.color: "black"
             radius: 5
-            color:"yellow"
+            color: items.consumeColor
             anchors {
-                top: residentsmallon.bottom
-                left:residentsmallon.left
+                top: residentSmallSwitch.bottom
+                left:residentSmallSwitch.left
             }
             GCText {
                 id: small_consume
                 anchors.centerIn: parent
-                text: "0 W"
+                text: residentSmallLights.powerConsumed.toString() + "W"
                 fontSize: smallSize * 0.5
             }
-            visible: false
+            visible: items.currentLevel > 0
         }
 
+        Image {
+            id: residentBigSwitch
+            visible: items.currentLevel > 1
+            source: activity.url + (on ? "on.svg" : "off.svg")
+            sourceSize.height: parent.height * 0.03
+            sourceSize.width: parent.height * 0.03
+            anchors {
+                left: parent.left
+                top: parent.top
+                leftMargin: parent.width * 0.60
+                topMargin: parent.height * 0.65
+            }
+            property bool on: false
+            MouseArea {
+                id: big_area
+                visible: parent.visible
+                anchors.fill: parent
+                onClicked: {
+                    if(stepDown.powerIn - stepDown.powerOut > residentBigLights.power)
+                        parent.on = !parent.on
+                    else
+                        parent.on = false
+                }
+            }
+        }
 
         Image {
-            id: resident_biglights
-            source: activity.url+ "resident_bigon.svg"
+            id: residentBigLights
+            source: activity.url + "resident_bigon.svg"
             sourceSize.width: parent.width
             sourceSize.height: parent.height
             anchors.fill: parent
-            visible: false
+            visible: items.currentLevel > 0 && powerConsumed
+            property int power: 2000
+            property int powerConsumed: on ? power : 0
+            property bool on: residentBigSwitch.on
         }
 
         Rectangle {
-            id: big_consume_rect
-            width: big_consume.width * 1.1
-            height: big_consume.height * 1.1
+            id: bigConsumeRect
+            width: bigConsume.width * 1.1
+            height: bigConsume.height * 1.1
             border.color: "black"
             radius : 5
-            color: "yellow"
+            color: items.consumeColor
             anchors {
-                top: residentbigon.bottom
-                left: small_consume_rect.right
-                leftMargin: parent.width * 0.05
+                top: residentBigSwitch.bottom
+                left: residentBigSwitch.left
             }
             GCText {
-                id: big_consume
+                id: bigConsume
                 anchors.centerIn: parent
-                text: "0 W"
+                text: residentBigLights.powerConsumed.toString() + "W"
                 fontSize: smallSize * 0.5
             }
-            visible: false
+            visible: items.currentLevel > 1
         }
 
         // Tux is visible when tuxboat animation stops
@@ -413,11 +410,12 @@ ActivityBase {
                 rightMargin: parent.width * 0.02
             }
             visible: false
-            property double power_consumed: on ? 50 : 0
-            property bool on: stepdown.power > 50 && tux_switch.on
+            property int power: 50
+            property int powerConsumed: on ? power : 0
+            property bool on: tuxSwitch.on
 
             Image {
-                id: tux_switch
+                id: tuxSwitch
                 source: activity.url + (on ? "on.svg" : "off.svg")
                 sourceSize.height: parent.height*0.20
                 sourceSize.width: parent.height*0.20
@@ -432,31 +430,33 @@ ActivityBase {
                     id: off_area
                     anchors.fill: parent
                     onClicked: {
-                        tux_switch.on = !tux_switch.on
+                        if(stepDown.powerIn - stepDown.powerOut > tux.power)
+                            parent.on = !parent.on
+                        else
+                            parent.on = false
                     }
                 }
             }
-        }
 
-        Rectangle {
-            id: tux_meter
-            width: tux_consume.width * 1.1
-            height: tux_consume.height * 1.1
-            border.color: "black"
-            radius : 5
-            color: "yellow"
-            anchors {
-                top: tux.top
-                left: tux.left
-                leftMargin: tux.width * 0.2
+            Rectangle {
+                id: tuxMeter
+                width: tuxConsume.width * 1.1
+                height: tuxConsume.height * 1.1
+                border.color: "black"
+                radius : 5
+                color: items.consumeColor
+                anchors {
+                    bottom: tuxSwitch.top
+                    left: tuxSwitch.left
+                }
+                GCText {
+                    id: tuxConsume
+                    anchors.centerIn: parent
+                    fontSize: smallSize * 0.5
+                    text: tux.powerConsumed.toString() + "W"
+                }
+                visible: tux.visible
             }
-            GCText {
-                id: tux_consume
-                anchors.centerIn: parent
-                fontSize: smallSize * 0.5
-                text: tux.power_consumed.toString() + "W"
-            }
-            visible: tux.visible
         }
 
         function win() {
