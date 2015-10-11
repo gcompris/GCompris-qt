@@ -67,6 +67,7 @@ ActivityBase {
             property bool sunIsUp
             property color consumeColor: '#ffff8100'
             property color produceColor: '#ffffec00'
+            property bool hasWon: false
         }
 
         onStart: { }
@@ -88,13 +89,34 @@ ActivityBase {
 
         function nextLevel() {
             if(items.numberOfLevel <= ++items.currentLevel ) {
-                items.currentLevel = 0
+                // Stay on the last level
+                items.currentLevel = items.numberOfLevel - 1
             }
         }
 
         function previousLevel() {
             if(--items.currentLevel < 0 ) {
                 items.currentLevel = items.numberOfLevel - 1
+            }
+        }
+
+        function checkForNextLevel() {
+            switch(items.currentLevel) {
+                case 0:
+                    if(tuxSwitch.on)
+                        win()
+                    break
+                case 1:
+                    if(tuxSwitch.on && residentSmallSwitch.on)
+                        win()
+                    break
+                case 2:
+                    if(!items.hasWon &&
+                            tuxSwitch.on && residentSmallSwitch.on && residentBigSwitch.on) {
+                        items.hasWon = true
+                        win()
+                    }
+                    break
             }
         }
 
@@ -325,6 +347,8 @@ ActivityBase {
                         parent.on = !parent.on
                     else
                         parent.on = false
+
+                    checkForNextLevel()
                 }
             }
         }
@@ -383,6 +407,8 @@ ActivityBase {
                         parent.on = !parent.on
                     else
                         parent.on = false
+
+                    checkForNextLevel()
                 }
             }
         }
@@ -458,6 +484,8 @@ ActivityBase {
                             parent.on = !parent.on
                         else
                             parent.on = false
+
+                        checkForNextLevel()
                     }
                 }
             }
