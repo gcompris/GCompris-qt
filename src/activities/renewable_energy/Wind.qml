@@ -74,7 +74,7 @@ Item {
             rightMargin: parent.width * 0.18
         }
         property bool started: false
-        property double power: started ? windTurbine.power : 0
+        property int power: started ? windTurbine.power : 0
         MouseArea {
             anchors.fill: parent
             onClicked: {
@@ -138,7 +138,7 @@ Item {
         }
         z: 55
         duration: 3200
-        property double power: cloud.started ? 500 : 0
+        property int power: cloud.started ? 1500 : 0
     }
     WindTurbine {
         id: windTurbine2

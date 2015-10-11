@@ -44,7 +44,7 @@ Item {
             rightMargin: parent.width * 0.11
         }
         property bool started: false
-        property double power: started ? solarPanel.power : 0
+        property int power: started ? solarPanel.power : 0
         MouseArea {
             anchors.fill: parent
             onClicked: parent.started = !parent.started
@@ -81,7 +81,7 @@ Item {
 
     Image {
         id: solarPower
-        source: activity.url + "solar/" + (solarTransformer.power ? "solarpoweroff.svg" : "solarpoweroff.svg")
+        source: activity.url + "solar/" + (solarTransformer.power ? "solarpoweron.svg" : "solarpoweroff.svg")
         sourceSize.width: parent.width
         anchors.fill: parent
     }
@@ -98,7 +98,7 @@ Item {
             rightMargin: parent.width * 0.14
         }
         property bool started: false
-        property double power: started && items.sunIsUp ? 1200 : 0
+        property int power: started && items.sunIsUp ? 1000 : 0
         MouseArea {
             anchors.fill: parent
             onClicked: parent.started = !parent.started
@@ -110,6 +110,5 @@ Item {
         source: activity.url + "solar/" + (solarPanel.power ? "panelpoweron.svg" : "panelpoweroff.svg")
         sourceSize.width: parent.width
         anchors.fill: parent
-        visible: true
     }
 }

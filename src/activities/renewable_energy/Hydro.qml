@@ -461,7 +461,7 @@ Item {
             onClicked: parent.started = !parent.started
         }
         property bool started: false
-        property double power: started && river.level > 0.1 ? 900 : 0
+        property int power: started && river.level > 0.1 ? 1000 : 0
     }
 
     Image {
@@ -472,7 +472,7 @@ Item {
         anchors.fill: parent
         z: 44
         visible: power > 0
-        property double power: dam.power
+        property int power: dam.power
     }
 
     Image {
@@ -488,7 +488,7 @@ Item {
             leftMargin: parent.width*0.44
         }
         property bool started: false
-        property double power: started && damwire.power ? damwire.power : 0
+        property int power: started && damwire.power ? damwire.power : 0
         MouseArea {
             id: stepup1_area
             anchors.fill: parent
@@ -506,7 +506,7 @@ Item {
         anchors.fill: parent
         z: 34
         visible: power > 0
-        property double power: stepup1.power
+        property int power: stepup1.power
     }
 
     // Manage stuff that changes periodically

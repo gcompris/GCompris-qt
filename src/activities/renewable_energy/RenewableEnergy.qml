@@ -207,11 +207,11 @@ ActivityBase {
                 }
             }
             property bool started: false
-            property double powerIn:
+            property int powerIn:
                 started ? (hydro.item.power +
                            (wind.item ? wind.item.power : 0) +
                            (solar.item ? solar.item.power : 0)) : 0
-            property double powerOut:
+            property int powerOut:
                 started ? (tux.powerConsumed +
                            residentSmallLights.powerConsumed +
                            residentBigLights.powerConsumed) : 0
@@ -300,7 +300,7 @@ ActivityBase {
             sourceSize.width: parent.width
             anchors.fill: parent
             visible: power > 0
-            property double power: stepDown.powerIn
+            property int power: stepDown.powerIn
         }
 
         Image {
@@ -321,7 +321,7 @@ ActivityBase {
                 visible: parent.visible
                 anchors.fill: parent
                 onClicked: {
-                    if(stepDown.powerIn - stepDown.powerOut > residentSmallLights.power)
+                    if(stepDown.powerIn - stepDown.powerOut >= residentSmallLights.power)
                         parent.on = !parent.on
                     else
                         parent.on = false
@@ -379,7 +379,7 @@ ActivityBase {
                 visible: parent.visible
                 anchors.fill: parent
                 onClicked: {
-                    if(stepDown.powerIn - stepDown.powerOut > residentBigLights.power)
+                    if(stepDown.powerIn - stepDown.powerOut >= residentBigLights.power)
                         parent.on = !parent.on
                     else
                         parent.on = false
@@ -434,7 +434,7 @@ ActivityBase {
                 rightMargin: parent.width * 0.02
             }
             visible: false
-            property int power: 50
+            property int power: 100
             property int powerConsumed: on ? power : 0
             property bool on: tuxSwitch.on
 
@@ -454,7 +454,7 @@ ActivityBase {
                     id: off_area
                     anchors.fill: parent
                     onClicked: {
-                        if(stepDown.powerIn - stepDown.powerOut > tux.power)
+                        if(stepDown.powerIn - stepDown.powerOut >= tux.power)
                             parent.on = !parent.on
                         else
                             parent.on = false
