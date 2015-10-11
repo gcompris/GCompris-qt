@@ -49,13 +49,6 @@ Item {
         height: (background.height - landscape.paintedHeight) / 2 + landscape.paintedHeight * 0.3
         visible: true
         z: 27
-
-        function day() {
-            source = "resource/sky.svg"
-        }
-        function night() {
-            source = "../intro_gravity/resource/background.svg"
-        }
     }
 
     Image {
@@ -65,33 +58,6 @@ Item {
         sourceSize.height: parent.height
         source: activity.url + "landscape.svg"
         z: 30
-    }
-
-    Image {
-        id: moon
-        source: activity.url + "moon.svg"
-        sourceSize.width: parent.width*0.05
-        anchors {
-            left: parent.left
-            top: parent.top
-            leftMargin: parent.width*0.1
-            topMargin: parent.height*0.05
-        }
-        opacity: 0
-        NumberAnimation on opacity {
-            id: moon_rise
-            running: false
-            from: 0
-            to: 1
-            duration: 10000
-        }
-        NumberAnimation on opacity {
-            id: moon_set
-            running: false
-            from: 1
-            to: 0
-            duration: 10000
-        }
     }
 
     Image {
