@@ -22,7 +22,6 @@
 import QtQuick 2.1
 import GCompris 1.0
 import "../../core"
-import "renewable_energy.js" as Activity
 
 ActivityBase {
     id: activity
@@ -64,14 +63,39 @@ ActivityBase {
             property alias bonus: bonus
             property GCAudio audioEffects: activity.audioEffects
             property int currentLevel
+            property int numberOfLevel: 3
             property bool sunIsUp
             property color consumeColor: '#ffff8100'
             property color produceColor: '#ffffec00'
         }
 
-        onStart: { Activity.start(items) }
+        onStart: { }
         onStop: {
+            initLevel()
+        }
+
+        function initLevel() {
+            residentSmallSwitch.on = false
+            residentBigSwitch.on = false
+            tuxSwitch.on = false
+            stepDown.started = false
             hydro.item.stop()
+            if(wind.item)
+                wind.item.stop()
+            if(solar.item)
+                solar.item.stop()
+        }
+
+        function nextLevel() {
+            if(items.numberOfLevel <= ++items.currentLevel ) {
+                items.currentLevel = 0
+            }
+        }
+
+        function previousLevel() {
+            if(--items.currentLevel < 0 ) {
+                items.currentLevel = items.numberOfLevel - 1
+            }
         }
 
         Loader {
@@ -472,16 +496,16 @@ ActivityBase {
             id: bar
             content: BarEnumContent { value: help | home | level | reload }
             onHelpClicked: displayDialog(dialogHelp)
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
+            onPreviousLevelClicked: previousLevel()
+            onNextLevelClicked: nextLevel()
             onHomeClicked: activity.home()
-            onReloadClicked: Activity.initLevel()
+            onReloadClicked: initLevel()
             level: items.currentLevel + 1
         }
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(nextLevel)
         }
     }
 }

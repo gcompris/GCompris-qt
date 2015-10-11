@@ -21,12 +21,16 @@
  */
 import QtQuick 2.1
 import GCompris 1.0
-import "renewable_energy.js" as Activity
 import "../../core"
 
 Item {
     id: solar
     property alias power: solarTransformer.power
+
+    function stop() {
+        solarTransformer.started = false
+        solarPanel.started = false
+    }
 
     Image {
         id: solarTransformer

@@ -22,7 +22,6 @@
 import QtQuick 2.1
 import GCompris 1.0
 import "../../core"
-import "renewable_energy.js" as Activity
 
 Item {
     id: hydro
@@ -34,6 +33,12 @@ Item {
 
     function stop() {
         anim.running = false
+        dam.started = false
+        river.level = 0
+        sun.down()
+        rain.down()
+        cloud.down()
+        stepup1.started = false
     }
 
     Image {
