@@ -1,4 +1,4 @@
-/* GCompris - hangman.qml
+﻿/* GCompris - hangman.qml
  *
  * Copyright (C) 2015 Rajdeep Kaur <rajdeep51994@gmail.com>
  *
@@ -30,14 +30,11 @@ import "qrc:/gcompris/src/core/core.js" as Core
 ActivityBase {
     id: activity
     
-    
     // Overload this in your activity to change it
     // Put you default-<locale>.json files in it
-
     property string dataSetUrl: "qrc:/gcompris/src/activities/hangman/resource/"
     
-    onStart:{ focus = true
-    }
+    onStart: focus = true
     onStop:  { }
     // When going on configuration, it steals the focus and re set it to the activity.
     // We need to set it back to the textinput item in order to have key events.
@@ -49,15 +46,14 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source:activity.dataSetUrl+"background.svg"
+        source: activity.dataSetUrl+"background.svg"
         fillMode: Image.PreserveAspectCrop
         anchors.fill: parent
-        sourceSize.width:parent.width
+        sourceSize.width: parent.width
         
         // system locale by default
         property string locale: "system"
-        
-        
+                
         readonly property string wordsResource: "data2/words/words.rcc"
         property bool englishFallback: false
         property bool downloadWordsNeeded: false
@@ -66,7 +62,6 @@ ActivityBase {
         signal stop
         signal voiceError
         signal voiceDone
-        
         
         Component.onCompleted: {
             dialogActivityConfig.getInitialConfiguration()
@@ -82,51 +77,40 @@ ActivityBase {
             property Item ourActivity: activity
             property alias bar: bar
             property alias bonus: bonus
-            property alias keyboard:keyboard
-            property alias hidden:hidden
+            property alias keyboard: keyboard
+            property alias hidden: hidden
             property alias textinput: textinput
             property alias wordImage: wordImage
             property alias score: score
             property alias parser: parser
             property alias locale: background.locale
-            property int noOfLife:noOfLife
-            property alias thresh:thresh
-            property alias imageframe:imageframe
+            property int   remainingLife
+            property alias imageframe: imageframe
             property variant goodWord
             property int goodWordIndex
-
             property alias englishFallbackDialog: englishFallbackDialog
 
-            
             function playWord() {
                 if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
                     voiceError();
             }
-            function voice()
-            {	if(noOfLife==3)
-                {	playWord();
+            function voice() {
+	            if(remainingLife == 3) {
+	                playWord();
                 }
-
             }
-            
         }
 
-
-        
-        
-        function handleResourceRegistered(resource)
-        {
-            if (resource == wordsResource)
-            {    Activity.start(items);
+        function handleResourceRegistered(resource) {
+            if (resource == wordsResource) {
+                Activity.start(items);
                 Activity.focusTextInput()
-
             }
-
         }
 
 
         onStart: {
-            focus:true
+            focus = true
             activity.audioVoices.error.connect(voiceError)
             activity.audioVoices.done.connect(voiceDone)
 
@@ -142,21 +126,24 @@ ActivityBase {
                 // words.rcc has not been downloaded yet -> ask for download
                 downloadWordsNeeded = true
             }
-            
             Activity.focusTextInput()
         }
 
-        onStop: { Activity.stop() }
+        onStop: {
+            Activity.stop();
+            DownloadManager.resourceRegistered.disconnect(handleResourceRegistered);
+        }
 
         GCText {
-
-            id:hidden
+            id: hidden
             fontSize: largeSize
-            color:"black"
-            font.pointSize:60
-            anchors.horizontalCenter:parent.horizontalCenter
-            y:background.height/3
-            
+            color: "black"
+            font.pointSize:5
+            minimumPixelSize:20
+            font.pixelSize:60
+            font.letterSpacing :0.5
+            anchors.horizontalCenter: parent.horizontalCenter
+            y: background.height/3
         }
         
         TextInput {
@@ -165,96 +152,81 @@ ActivityBase {
             // disabled on mobile!
             id: textinput
             enabled: !ApplicationInfo.isMobile
-            
-            visible:false
-            focus:true
+            visible: false
+            focus: true
             onTextChanged: {
                 if (text != "") {
                     Activity.processKeyPress(text);
                     text = "";
                 }
             }
-            
-
         }
         
-        Item{	
-  
-		id:imageframe
-                width:background.width/4.2
-		height:background.height/4.2
-		x:background.width/2.5
-		y:background.height/9.4
-                Image{
-		      id:wordImage
-		      width:background.width/6
-		      height:background.height/5
-		      x:imageframe.width/2
-		      y:imageframe.height/2
-		      smooth:true
-		      visible:false
-		      anchors {
-                        centerIn: parent
-                        margins: 0.06 + parent.width
-		      }
-                    property string nextSource
-                    function changeSource(nextSource_) {
-                        nextSource = nextSource_
-                        animImage.start()
+        Item {
+  		    id: imageframe
+            width: background.width/4.2
+		    height: background.height/4.2
+		    x: background.width/2.5
+		    y: background.height/9.4
+            Image {
+		        id: wordImage
+		        width: background.width/6
+		        height: background.height/5
+		        x: imageframe.width/2
+		        y: imageframe.height/2
+		        smooth: true
+		        visible: false
+		        anchors {
+                    centerIn: parent
+                    margins: 0.06 + parent.width
+		        }
+                property string nextSource
+                function changeSource(nextSource_) {
+                    nextSource = nextSource_
+                    animImage.start()
+                }
+
+                SequentialAnimation {
+                    id: animImage
+                    PropertyAnimation {
+                        target: wordImage
+                        property: "opacity"
+                        to: 0
+                        duration: 100
                     }
-
-
-
-                    SequentialAnimation {
-                        id: animImage
-                        PropertyAnimation {
-                            target: wordImage
-                            property: "opacity"
-                            to: 0
-                            duration: 100
-                        }
-                        PropertyAction {
-                            target: wordImage
-                            property: "source"
-                            value: wordImage.nextSource
-                        }
-                        PropertyAnimation {
-                            target: wordImage
-                            property: "opacity"
-                            to: 1
-                            duration: 100
-                        }
+                    PropertyAction {
+                        target: wordImage
+                        property: "source"
+                        value: wordImage.nextSource
                     }
-
-
-
-                
+                    PropertyAnimation {
+                        target: wordImage
+                        property: "opacity"
+                        to: 1
+                        duration: 100
+                    }
+                }
             }
 
-
             Image {
-		id:threshmask
-                smooth:true
-                visible:false
-                width:1.3*parent.width
-                height:1.2*parent.height
-                source:dataSetUrl+"fog.png"
+		        id: threshmask
+                smooth: true
+                visible: false
+                width: 1.3*parent.width
+                height: 1.2*parent.height
+                source: dataSetUrl+"fog.png"
             }
 
             ThresholdMask {
-                id:thresh
-                anchors.fill:wordImage
-                source:wordImage
-                maskSource:threshmask
-               
+                id: thresh
+                anchors.fill: wordImage
+                source: wordImage
+                maskSource: threshmask
+                spread: 0.4
+                threshold: 0.15 * items.remainingLife // remainingLife between 0 and 6 => threshold between 0 and 0.9
             }
-
         }
-        
-        
 
-
-        
         DialogActivityConfig {
             id: dialogActivityConfig
             currentActivity: activity
@@ -302,7 +274,7 @@ ActivityBase {
                 if(newLocale.indexOf('.') != -1) {
                     newLocale = newLocale.substring(0, newLocale.indexOf('.'))
                 }
-                dataToSave = {"locale": newLocale}
+                dataToSave = {"locale": newLocale }
 
                 background.locale = newLocale;
 
@@ -363,8 +335,20 @@ ActivityBase {
 
         JsonParser {
             id: parser
-            
-            onError: console.error("Imageid: Error parsing json: " + msg);
+            onError: console.error("Hangman: Error parsing json: " + msg);
+        }
+
+        Image {
+            id: clock
+            source: "qrc:/gcompris/src/activities/reversecount/resource/" + "flower" + items.remainingLife + ".svg"
+            anchors {
+                left: parent.left
+                top: parent.top
+                margins:10
+
+            }
+            sourceSize.width: 66 * bar.barZoom
+
         }
         
         
@@ -373,9 +357,7 @@ ActivityBase {
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
-            
             onKeypress: Activity.processKeyPress(text);
-            
             onError: console.log("VirtualKeyboard error: " + msg);
         }
         
@@ -383,8 +365,7 @@ ActivityBase {
             id: bonus
             Component.onCompleted: win.connect(Activity.initSubLevel);
         }
-        
-        
+
         Loader {
             id: englishFallbackDialog
             sourceComponent: GCDialog {
@@ -421,9 +402,6 @@ ActivityBase {
             active: background.downloadWordsNeeded
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
-        
+   }
 
-
-    }
-    
 }

@@ -24,7 +24,7 @@ ActivityInfo {
   author: "Rajdeep kaur &lt;rajdeep1994@gmail.com&gt;"
   demo: true
   title: qsTr("Hangman")
-  description: qsTr("Guess the letter of the given word every wrong try will give you a hint of the words in the form of a masked object")
+  description: qsTr("Guess the letters of the given word. To help you, on every wrong try, a part of the image representing the word will be revealed.")
   goal: qsTr("To enrich vocabulary")
   prerequisite: ""
   manual: qsTr("Guess the word letter by letter")

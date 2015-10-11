@@ -20,62 +20,71 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-
 .pragma library
 .import QtQuick 2.0 as Quick 
 .import GCompris 1.0 as GCompris 
 .import "qrc:/gcompris/src/core/core.js" as Core
-.import "qrc:/gcompris/src/activities/imageid/lang_api.js" as Lang
+.import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 
-
-var currentLevel 
-var currentSubLevel 
-var wordlength 
-var maxLevel 
+var currentLevel
+var currentSubLevel
+var maxLevel
 var maxSubLevel
-var level = null;
-var sublevel 
-var numberOfLevel 
 var items
-var win 
 
-var noOfLife;
-
-var countNoAlphabet;
-var currentWord;
-var trail;
-var wordi = new Array();
-var component;
-var sp ="_ ";
-var baseUrl = "qrc:/gcompris/src/activities/hangman/resource/"
-var dataset = null;
-var lessons 
+var currentWord
+var sp ="_ "
+var dataset = null
+var lessons
 var wordList
 var subLevelsLeft
-var doublePresscheck;
-var doublelen;
+var alreadyTypedLetters
 
+// js strings are immutable, can't replace letter like that... http://stackoverflow.com/questions/1431094/how-do-i-replace-a-character-at-a-particular-index-in-javascript
+String.prototype.replaceAt = function(index, character) {
+    return this.substr(0, index) + character + this.substr(index+character.length);
+}
 
 function start(items_) {
     items = items_
     currentLevel = 0;
     currentSubLevel = 0;
-    items.noOfLife = 6;
+    items.remainingLife = 6;
     
-    var locale = items.locale == "system" ? "$LOCALE" : items.locale
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+
+    var resourceUrl = "qrc:/gcompris/src/activities/lang/resource/"
 
     // register the voices for the locale
-    GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(GCompris.ApplicationInfo.getVoicesLocale(items.locale)));
+    GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
     
-    dataset = Lang.load(items.parser, baseUrl, "words.json", "content-$LOCALE.json")
+    dataset = Lang.load(items.parser, resourceUrl, "words.json",
+                        "content-"+ locale +".json")
+
+    // If dataset is empty, we try to load from short locale
+    // and if not present again, we switch to default one
+    var localeUnderscoreIndex = locale.indexOf('_')
+    if(!dataset) {
+        var localeShort;
+        // We will first look again for locale xx (without _XX if exist)
+        if(localeUnderscoreIndex > 0) {
+            localeShort = locale.substring(0, localeUnderscoreIndex)
+        } else {
+            localeShort = locale;
+        }
+        dataset = Lang.load(items.parser, resourceUrl, "words.json",
+                            "content-"+localeShort+ ".json")
+    }
+
+    // If still dataset is empty then fallback to english
     if(!dataset) {
         // English fallback
         items.background.englishFallback = true
-        dataset = Lang.load(items.parser, baseUrl, "words.json", "content-en.json")
+        dataset = Lang.load(items.parser, resourceUrl, "words.json", "content-en.json")
     } else {
         items.background.englishFallback = false
     }
-    
+
     lessons = Lang.getAllLessons(dataset)
     maxLevel = lessons.length
     initLevel();
@@ -87,9 +96,8 @@ function stop() {
 }
 
 function initLevel() {
-    
     items.bar.level = currentLevel + 1;
-    var currentLesson = lessons[currentLevel]
+    var currentLesson = lessons[currentLevel];
     wordList = Lang.getLessonWords(dataset, currentLesson);
     Core.shuffle(wordList);
 
@@ -102,23 +110,28 @@ function initLevel() {
         subLevelsLeft.push(i)
 
     initSubLevel();
-    {   //to set the layout...populate
+    {
+        //to set the layout...populate
         var letters = new Array();
         items.keyboard.shiftKey = false;
         for (var i = 0; i < wordList.length; i++) {
-            var currentWord = wordList[i].translatedTxt;
-            for (var j = 0; j < currentWord.length; j++) {
-                var letter = currentWord.charAt(j);
+            var word = wordList[i].translatedTxt;
+            for (var j = 0; j < word.length; j++) {
+                var letter = word.charAt(j);
                 var isUpper = (letter == letter.toLocaleUpperCase());
                 if (isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1)
                     items.keyboard.shiftKey = true;
                 else if (!isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1)
                     items.keyboard.shiftKey = true;
                 else if (letters.indexOf(letter) === -1)
-                    letters.push(currentWord.charAt(j));
+                    letters.push(word.charAt(j));
             }
         }
         letters.sort();
+        // Remove space character if in list
+        var indexOfSpace = letters.indexOf(' ')
+        if(indexOfSpace > -1)
+            letters.splice(indexOfSpace, 1)
         // generate layout from letter map
         var layout = new Array();
         var row = 0;
@@ -140,96 +153,50 @@ function initLevel() {
 
 
 function processKeyPress(text) {
-    var flag = 0;
-    var inital = wordi;
-    console.log(inital);
-    wordi = "";
-    var temp;
-    var letterCheck =false;
-    for(var x =0 ; x < inital.length; x = x+1){
-        if(text == inital.charAt(x)){
-            letterCheck = true;
-            break;
+    // Check if the character has already been typed
+    if(alreadyTypedLetters.indexOf(text) !== -1) {
+        // Character already typed, do nothing
+        return;
+    }
+    // Add the character to the already typed characters
+    alreadyTypedLetters.push(text);
+
+    // Get all the indices of this letter in the word
+    var indices = [];
+    for(var i = 0 ; i < currentWord.length ; i ++) {
+        if (currentWord[i] === text) {
+            indices.push(i);
         }
     }
-    
-    var occ =0;
-    for(var i = 0; i< currentWord.length ; i++) {
 
-        if(currentWord[i] === text && !letterCheck && currentWord[i] != " ") {
-            flag=1;
-            occ++;
-            countNoAlphabet +=1;
-            var j=i*2;
-            if(occ === 1){
-                for(var k=0;k<inital.length;k=k+1){
-                    if(j === k){
-                        wordi = wordi + currentWord.charAt(i);
-                    }
-                    else
-                    {	wordi = wordi + inital.charAt(k);
-                    }
-                }
-            }
-            else
-            {	temp="";
-                for(var k=0;k<wordi.length;k=k+1){
-                    temp = temp +wordi.charAt(k);
-                }
-                wordi="";
-                var j=i*2;
-                for(var k=0;k<inital.length;k=k+1){
-                    if(j === k){
-                        wordi = wordi + currentWord.charAt(i);
-                    }
-                    else
-                    {	wordi = wordi + temp.charAt(k);
-                    }
-                }
-
-            }
-
-
+    if(indices.length == 0) {
+        // The letter is not in the word to find
+        items.remainingLife --;
+        // If no more life, we display the good word and show the bonus
+        if(items.remainingLife == 0) {
+            items.hidden.text = items.goodWord.translatedTxt;
+            items.bonus.bad("lion");
+            nextSubLevel();
+            return;
         }
-
-
     }
-    
-    
-
-    if(flag !== 1){
-        wordi = inital;
-	var flag1=0;
-        for(var b=0;b<doublelen;b++)
-	{	if(doublePresscheck[b]==text)
-		{	flag1=1;
-			break;
-		}
-	}
-	if(flag1==0)
-	{	items.noOfLife=items.noOfLife-1;
-		items.thresh.threshold=items.thresh.threshold-0.1;
-		if(items.noOfLife==0)
-		{     items.hidden.text=items.goodWord.translatedTxt;	
-		      items.bonus.bad("lion");
-		      nextSubLevel();
-		}
-		doublePresscheck.push(text);
-		doublelen++;
-	}
-        
+    else {
+        // For all the indices found, we replace the "_" by the letter
+        for(var index = 0 ; index < indices.length ; index ++) {
+            // Characters in the word displayed are separated by spaces, this is why we do 2*index
+            items.hidden.text = items.hidden.text.replaceAt(2*indices[index], text);
+        }
     }
-    items.hidden.text = wordi
-    console.log("wordlength"+currentWord.length);
-    console.log("count"+countNoAlphabet);
-    if(countNoAlphabet >= (currentWord.length)){
+
+    // If no more '_' in the word to find, we have found all letters, show bonus
+    if(items.hidden.text.indexOf("_") === -1) {
         items.bonus.good("lion");
         nextSubLevel();
     }
 }
 
 function nextLevel() {
-    if(maxLevel <= ++currentLevel ) {
+    if(maxLevel <= ++currentLevel) {
         currentLevel = 0
     }
     currentSubLevel = 0;
@@ -245,50 +212,33 @@ function previousLevel() {
     initLevel();
 }
 
-function initSubLevel()
-{   // initialize sublevel
+function initSubLevel() {
+    // initialize sublevel
     if(items.score.currentSubLevel < items.score.numberOfSubLevels)
         items.score.currentSubLevel = currentSubLevel + 1;
     else
         items.score.visible = false
     items.goodWordIndex = subLevelsLeft.pop()
     items.goodWord = wordList[items.goodWordIndex]
-    var text1 = items.goodWord.translatedTxt;
     items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image);
-    items.noOfLife=8;
-    items.thresh.threshold=0.9;
-    items.thresh.spread=0.4;
-    win=0;
-    doublePresscheck=new Array();
-    doublelen=0;
-    wordi = new Array();
-    currentWord = text1 ;
-    countNoAlphabet = 0;
-    for(var x = 0 ; x < currentWord.length; x++){
-        if(currentWord[x] === " "){
-            countNoAlphabet = countNoAlphabet +1;
+    items.remainingLife = 6;
+    alreadyTypedLetters = new Array();
+    currentWord = items.goodWord.translatedTxt;
+    items.hidden.text = ""
+    for(var i = 0; i < currentWord.length ; ++ i) {
+        if(currentWord[i] == " ") {
+            items.hidden.text = items.hidden.text + " " + " "
+        }
+        else {
+            items.hidden.text = items.hidden.text + sp;
         }
     }
-    console.log(currentWord);
-    for(var i = 0; i < currentWord.length ; i=i+1){
-        if(i == 0){
-            wordi.push("_ ");   }
-        else if(currentWord[i]==" "){
-            wordi = wordi + " " + " "
-        }
-        else
-        {	wordi = wordi + sp;
-        }
-    }
-    console.log(wordi);
-    items.hidden.text=wordi;
 }
 
 function nextSubLevel() {
     if( ++currentSubLevel >= maxSubLevel) {
         currentSubLevel = 0;
         nextLevel();
-
     }
 }
 
