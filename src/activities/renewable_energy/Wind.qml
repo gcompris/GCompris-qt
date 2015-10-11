@@ -76,7 +76,10 @@ Item {
         property bool started: false
         property int power: started ? windTurbine.power : 0
         MouseArea {
-            anchors.fill: parent
+            anchors.centerIn: parent
+            // Size the area for a touch screen
+            width: 70 * ApplicationInfo.ratio
+            height: width
             onClicked: {
                 parent.started = !parent.started
             }

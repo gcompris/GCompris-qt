@@ -224,7 +224,10 @@ ActivityBase {
                 leftMargin: parent.width * 0.72
             }
             MouseArea {
-                anchors.fill: parent
+                anchors.centerIn: parent
+                // Size the area for a touch screen
+                width: 70 * ApplicationInfo.ratio
+                height: width
                 onClicked: {
                     onClicked: parent.started = !parent.started
                 }
@@ -348,7 +351,10 @@ ActivityBase {
             MouseArea {
                 id: small_area
                 visible: parent.visible
-                anchors.fill: parent
+                anchors.centerIn: parent
+                // Size the area for a touch screen
+                width: 70 * ApplicationInfo.ratio
+                height: width
                 onClicked: {
                     if(stepDown.powerIn - stepDown.powerOut >= residentSmallLights.power)
                         parent.on = !parent.on
@@ -408,7 +414,10 @@ ActivityBase {
             MouseArea {
                 id: big_area
                 visible: parent.visible
-                anchors.fill: parent
+                anchors.centerIn: parent
+                // Size the area for a touch screen
+                width: 70 * ApplicationInfo.ratio
+                height: width
                 onClicked: {
                     if(stepDown.powerIn - stepDown.powerOut >= residentBigLights.power)
                         parent.on = !parent.on
@@ -485,7 +494,10 @@ ActivityBase {
                 }
                 MouseArea {
                     id: off_area
-                    anchors.fill: parent
+                    anchors.centerIn: parent
+                    // Size the area for a touch screen
+                    width: 70 * ApplicationInfo.ratio
+                    height: width
                     onClicked: {
                         if(stepDown.powerIn - stepDown.powerOut >= tux.power)
                             parent.on = !parent.on

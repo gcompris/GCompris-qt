@@ -423,7 +423,10 @@ Item {
         }
         MouseArea {
             id: dam_area
-            anchors.fill: dam
+            anchors.centerIn: parent
+            // Size the area for a touch screen
+            width: 70 * ApplicationInfo.ratio
+            height: width
             onClicked: parent.started = !parent.started
         }
         property bool started: false
@@ -457,7 +460,10 @@ Item {
         property int power: started && damwire.power ? damwire.power : 0
         MouseArea {
             id: stepup1_area
-            anchors.fill: parent
+            anchors.centerIn: parent
+            // Size the area for a touch screen
+            width: 70 * ApplicationInfo.ratio
+            height: width
             onClicked: {
                 parent.started = !parent.started
             }
