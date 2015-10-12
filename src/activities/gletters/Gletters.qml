@@ -83,7 +83,6 @@ ActivityBase {
             property GCAudio audioVoices: activity.audioVoices
             property alias background: background
             property alias bar: bar
-            property alias bonusTimer: bonusTimer
             property alias bonus: bonus
             property alias wordlist: wordlist
             property alias score: score
@@ -223,15 +222,9 @@ ActivityBase {
             }
         }
 
-        Timer {
-            id: bonusTimer
-            repeat: false
-            interval: 2000
-            onTriggered: bonus.good("lion")
-        }
-
         Bonus {
             id: bonus
+            interval: 2000
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
         
