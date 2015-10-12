@@ -174,6 +174,7 @@ ActivityBase {
                 parent.repeat()
             }
             onLoose: parent.repeat()
+            interval: 1000
         }
 
         Score {
