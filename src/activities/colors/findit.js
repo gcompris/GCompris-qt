@@ -72,7 +72,7 @@ function initQuestion() {
 
 function nextQuestion() {
     if(dataset[currentLevel].length <= currentQuestion + 1) {
-        items.bonusTimer.good()
+        items.bonus.good("flower")
     } else {
         currentQuestion++
         items.score.currentSubLevel++
