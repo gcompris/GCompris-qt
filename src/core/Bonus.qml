@@ -54,6 +54,12 @@ Image {
     property string looseSound
 
     /**
+     * type:int
+     * Interval in milliseconds after which the bonus will be played (default is 500ms)
+     */
+    property alias interval: timer.interval
+
+    /**
      * Emitted when the bonus starts
      */
     signal start
@@ -113,15 +119,9 @@ Image {
      * Possible values are "flower", "gnu", "lion", "note", "smiley", "tux"
      */
     function good(name) {
-        if(!audioVoices.play(
-                    ApplicationInfo.getAudioFilePath(
-                        winVoices[Math.floor(Math.random()*winVoices.length)])))
-            if(winSound)
-                audioEffects.play(winSound)
         source = url + "bonus/" + name + "_good.svg"
-        isWin = true;
-        start()
-        animation.start()
+        isWin = true
+        timer.start()
     }
 
     /**
@@ -134,13 +134,33 @@ Image {
      * Possible values are "flower", "gnu", "lion", "note", "smiley", "tux"
      */
     function bad(name) {
+        source = url + "bonus/" + name + "_bad.svg"
+        isWin = false;
+        timer.start()
+    }
+
+    /**
+     * Private: Triggers win feedback after the timer completion
+     */
+    function _good() {
+        if(!audioVoices.play(
+                    ApplicationInfo.getAudioFilePath(
+                        winVoices[Math.floor(Math.random()*winVoices.length)])))
+            if(winSound)
+                audioEffects.play(winSound)
+        start()
+        animation.start()
+    }
+
+    /**
+     * Private: Triggers loose feedback after the timer completion.
+     */
+    function _bad(name) {
         if(!audioEffects.play(
                     ApplicationInfo.getAudioFilePath(
                         looseVoices[Math.floor(Math.random()*looseVoices.length)])))
             if(looseSound)
                 audioEffects.play(looseSound)
-        source = url + "bonus/" + name + "_bad.svg"
-        isWin = false;
         start()
         animation.start()
     }
@@ -165,5 +185,13 @@ Image {
             bonus.stop()
             isWin ? win() : loose()
         }
+    }
+
+    // It is usefull to launch the bonus after a delay to let the children
+    // appreciate the completed level
+    Timer {
+        id: timer
+        interval: 500
+        onTriggered: isWin ? bonus._good() : bonus._bad()
     }
 }
