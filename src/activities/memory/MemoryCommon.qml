@@ -58,7 +58,7 @@ ActivityBase {
         QtObject {
             id: items
             property alias bar: bar
-            property alias bonusTimer: bonusTimer
+            property alias bonus: bonus
             property GCAudio audioEffects: activity.audioEffects
             property bool withTux: activity.withTux
             property bool tuxTurn: false
@@ -185,26 +185,9 @@ ActivityBase {
             }
         }
 
-        Timer {
-            id: bonusTimer
-            interval: 2000
-            property bool win
-
-            function good() {
-                win = true
-                start()
-            }
-
-            function bad() {
-                win = false
-                start()
-            }
-
-            onTriggered: win ? bonus.good("flower") : bonus.bad("flower")
-        }
-
         Bonus {
             id: bonus
+            interval: 2000
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }

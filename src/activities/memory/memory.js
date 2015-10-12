@@ -226,11 +226,11 @@ function tuxPlay() {
 
 
 function youWon() {
-    items.bonusTimer.good()
+    items.bonus.good("flower")
 }
 
 function youLoose(){
-    items.bonusTimer.bad()
+    items.bonus.bad("flower")
     if (items.withTux){
         initLevel()
     }
