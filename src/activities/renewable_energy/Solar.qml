@@ -48,8 +48,8 @@ Item {
         MouseArea {
             anchors.centerIn: parent
             // Size the area for a touch screen
-            width: 70 * ApplicationInfo.ratio
-            height: width
+            width: parent.width * 1.2
+            height: parent.height * 1.2
             onClicked: parent.started = !parent.started
         }
     }
@@ -103,10 +103,7 @@ Item {
         property bool started: false
         property int power: started && items.sunIsUp ? 1000 : 0
         MouseArea {
-            anchors.centerIn: parent
-            // Size the area for a touch screen
-            width: 70 * ApplicationInfo.ratio
-            height: width
+            anchors.fill: parent
             onClicked: parent.started = !parent.started
         }
     }
