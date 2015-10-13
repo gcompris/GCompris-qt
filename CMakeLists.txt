@@ -265,6 +265,7 @@ endif()
 #
 
 include(ExternalProject)
+get_property(_qmake_program TARGET ${Qt5Core_QMAKE_EXECUTABLE} PROPERTY IMPORT_LOCATION)
 
 set (_box2d_install_dir ${CMAKE_CURRENT_BINARY_DIR}/lib/qml/Box2D.2.0)
 set (_box2d_source_dir ${CMAKE_CURRENT_SOURCE_DIR}/external/qml-box2d)
@@ -279,7 +280,7 @@ endif()
 ExternalProject_Add(qml_box2d
                     DOWNLOAD_COMMAND ""
                     SOURCE_DIR ${_box2d_source_dir}
-                    CONFIGURE_COMMAND qmake ${_box2d_source_dir}/box2d.pro
+                    CONFIGURE_COMMAND ${_qmake_program} ${_box2d_source_dir}/box2d.pro
                     BUILD_COMMAND ${CMAKE_MAKE_PROGRAM}
                     INSTALL_DIR ${_box2d_install_dir}
                     INSTALL_COMMAND cp ${_box2d_library_dir}${_box2d_library_file} ${_box2d_source_dir}/qmldir ${_box2d_install_dir}
