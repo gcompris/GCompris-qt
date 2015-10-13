@@ -23,6 +23,7 @@
   - make sensitivity configurable
   - add rectangular fixture for goal
   - editor: add 'clear' button
+  - add sound effects
 */
 .pragma library
 .import QtQuick 2.0 as Quick
