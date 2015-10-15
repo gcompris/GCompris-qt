@@ -90,7 +90,7 @@ ActivityBase {
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
         }
-        
+
         Score {
             id: score
             visible: numberOfSubLevels > 1
@@ -123,7 +123,7 @@ ActivityBase {
                 vert: background.vert
             }
         }
-        
+
         Rectangle {
             id: toolTip
             anchors.top: toolTipTxt.top
@@ -143,7 +143,7 @@ ActivityBase {
             }
             property alias text: toolTipTxt.text
         }
-        
+
         GCText {
             id: toolTipTxt
             anchors {
@@ -161,7 +161,7 @@ ActivityBase {
             horizontalAlignment: Text.AlignHCenter
             wrapMode: TextEdit.WordWrap
         }
-        
+
         Rectangle {
             id: grid
 
@@ -174,7 +174,7 @@ ActivityBase {
             height: background.vert ?
                         background.height - (bar.height * 1.1) :
                         background.height - (bar.height * 1.1) - 90 * ApplicationInfo.ratio
-            
+
             Image {
                 id: backgroundImage
                 fillMode: Image.PreserveAspectFit
@@ -187,7 +187,7 @@ ActivityBase {
                 height: source == "" ? grid.height : (ratio < gridRatio ? grid.height : grid.width / ratio)
                 anchors.topMargin: 10
                 anchors.centerIn: parent
-                
+
                 //Inserting static background images
                 Repeater {
                     id: backgroundPieces
@@ -268,7 +268,7 @@ ActivityBase {
             wrapMode: TextEdit.WordWrap
         }
 
-        
+
         ListModel {
             id: backgroundPiecesModel
         }
