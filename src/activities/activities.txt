@@ -88,6 +88,7 @@ money_back
 money_back_cents
 money_cents
 mosaic
+mudit_test
 numbers-odd-even
 paintings
 penalty
