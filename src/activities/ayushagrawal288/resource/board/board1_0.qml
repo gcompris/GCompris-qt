@@ -216,7 +216,7 @@ QtObject {
             "y" : "0.876"
         },*/
         {
-            "pixmapfile" : "india/qutubminardelhi1.png",
+            "pixmapfile" : "india/qutubminardelhi.png",
             "toolTipText" : "Qutub Minar, Delhi",
             "x" : "0.336",
             "y" : "0.31",
