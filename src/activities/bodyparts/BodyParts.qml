@@ -21,7 +21,7 @@
 
 import QtQuick 2.1
 import GCompris 1.0
-
+import "../colors"
 import "BodyParts.js" as Dataset1
 
 FindIt {

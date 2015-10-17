@@ -105,7 +105,6 @@ scalesboard_weight_avoirdupois
 simplepaint
 smallnumbers
 smallnumbers2
-solarsystem
 sudoku
 superbrain
 target

@@ -21,8 +21,8 @@ ActivityInfo {
   name: "bodyparts/BodyParts.qml"
   difficulty: 1
   icon: "bodyparts/logo.svg"
+  demo: true
   author: "Shivansh Bajaj &lt;bajajshivanhs1@gmail.com&gt;"
-  demo: True
   title: qsTr("know your body parts")
   description: qsTr("Click on the right body part")
 //  intro: "Click on the right bodypart"
