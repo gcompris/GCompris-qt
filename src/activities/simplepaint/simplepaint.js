@@ -57,7 +57,6 @@ var backgrounds = [
     'qrc:/gcompris/src/activities/hanoi_real/resource/background.svg',
     'qrc:/gcompris/src/activities/intro_gravity/resource/background.svg',
     'qrc:/gcompris/src/activities/instruments/resource/background.svg',
-    'qrc:/gcompris/src/activities/memory/resource/background.svg',
     'qrc:/gcompris/src/activities/gletters/resource/background.svg',
     'qrc:/gcompris/src/activities/braille_alphabets/resource/background.svg',
     'qrc:/gcompris/src/activities/followline/resource/background.svg',
