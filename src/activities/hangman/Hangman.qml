@@ -84,6 +84,7 @@ ActivityBase {
             property alias score: score
             property alias parser: parser
             property alias locale: background.locale
+            property alias ok:ok
             property int   remainingLife
             property alias imageframe: imageframe
             property variant goodWord
@@ -332,7 +333,17 @@ ActivityBase {
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.bottom: keyboard.top
         }
-
+        
+        BarButton {
+		  id: ok
+		  source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
+		  sourceSize.width: 75 * ApplicationInfo.ratio
+		  visible: true
+		  anchors.right:score.left
+		  anchors.rightMargin: 10 * ApplicationInfo.ratio
+                  anchors.bottom: keyboard.top
+		  onClicked:Activity.nextSubLevel()
+	}
         JsonParser {
             id: parser
             onError: console.error("Hangman: Error parsing json: " + msg);
