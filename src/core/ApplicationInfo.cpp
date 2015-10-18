@@ -32,6 +32,7 @@
 #include <QtCore/QLocale>
 #include <QtQuick/QQuickWindow>
 #include <QStandardPaths>
+#include <QSensor>
 
 #include <qmath.h>
 #include <QDebug>
@@ -97,6 +98,11 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
 ApplicationInfo::~ApplicationInfo()
 {
     m_instance = NULL;
+}
+
+bool ApplicationInfo::sensorIsSupported(const QString& sensorType)
+{
+    return QSensor::sensorTypes().contains(sensorType.toUtf8());
 }
 
 Qt::ScreenOrientation ApplicationInfo::getNativeOrientation()

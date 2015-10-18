@@ -285,6 +285,15 @@ public:
      */
     Q_INVOKABLE int getRequestedOrientation();
 
+    /**
+     * Checks whether a sensor type from the QtSensor module is supported on
+     * the current platform.
+     *
+     * @param sensorType  Classname of a sensor from the QtSensor module
+     *                    to be checked (e.g. "QTiltSensor").
+     */
+    Q_INVOKABLE bool sensorIsSupported(const QString& sensorType);
+
     /// @endcond
 
 protected slots:

@@ -50,4 +50,5 @@ When your level is finished you can save it to the user level file by clicking o
 To return to the configuration configuration dialog click on the home-button on the bar or press Escape on your keyboard or the back button on your mobile device.")
   credit: ""
   section: "mobile fun"
+  enabled: !ApplicationInfo.isMobile() || ApplicationInfo.sensorIsSupported("QTiltSensor")
 }
