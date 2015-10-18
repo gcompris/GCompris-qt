@@ -70,9 +70,9 @@ Item {
         MouseArea {
             anchors.fill: parent
             hoverEnabled: true
-            onEntered: instruction.opacity = 1
+            onEntered: instruction.show()
             onClicked: view.checkAnswer()
-            onExited: instruction.opacity = 0
+            onExited: instruction.hide()
         }
     }
 
