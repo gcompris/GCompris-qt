@@ -19,7 +19,9 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import GCompris 1.0
 
+import "../../core"
 import "../babymatch"
 
 Babymatch {
@@ -29,6 +31,26 @@ Babymatch {
     onStop: {}
 
     url: "qrc:/gcompris/src/activities/ayushagrawal288/resource/"
-    levelCount: 1
+    levelCount: 2
     answerGlow: false
+
+    IntroMessage {
+        id: message
+        anchors {
+            top: parent.top
+            topMargin: 50
+            right: parent.right
+            rightMargin: 5
+            left: parent.left
+            leftMargin: 100
+        }
+
+        intro: [
+            qsTr("First, click on any of the monuments to select it"
+                 +" then drag it to the respective place in the map where it is situated."),
+            qsTr("And then drop it by releasing the mouse.")
+        ]
+    }
 }
+
+
