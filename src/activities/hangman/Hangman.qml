@@ -338,7 +338,7 @@ ActivityBase {
 		  id: ok
 		  source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
 		  sourceSize.width: 75 * ApplicationInfo.ratio
-		  visible: true
+		  visible: false
 		  anchors.right:score.left
 		  anchors.rightMargin: 10 * ApplicationInfo.ratio
                   anchors.bottom: keyboard.top
