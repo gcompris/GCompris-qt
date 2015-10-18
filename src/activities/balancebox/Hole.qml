@@ -62,7 +62,6 @@ Item {
             sensor: true
             
             onBeginContact: {
-//                /console.log("XXX hole begin contact with body cat" + body.target.objectName);
                 Activity.holeContacts.push(hole);
                 Activity.checkHoles(hole);
             }

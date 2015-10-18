@@ -47,16 +47,13 @@ ActivityBase {
     activityInfo: ActivityInfoTree.rootMenu
 
     onBack: {
-        console.log("XXX onBack to " + to + " depth=" + pageView.depth);
         pageView.pop(to);
-        console.log("XXX onBack to " + to + " depth=" + pageView.depth);
         // Restore focus that has been taken by the loaded activity
         if(pageView.currentItem == menuActivity)
             focus = true;
     }
 
     onHome: {
-        console.log("XXX Menu onHome depth=" + pageView.depth);
         if(pageView.depth === 1) {
             Core.quit(main);
         }
@@ -71,7 +68,6 @@ ActivityBase {
     onDisplayDialog: pageView.push(dialog)
 
     onDisplayDialogs: {
-        console.log("XXX onForward to " + dialogs);
         var toPush = new Array();
         for (var i = 0; i < dialogs.length; i++) {
             toPush.push({item: dialogs[i]});

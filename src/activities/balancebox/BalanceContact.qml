@@ -47,8 +47,6 @@ BalanceItem {
         
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        //Component.onCompleted: console.log("XXX: " + width + "/" + height 
-        //        + " - " + font.pixelSize); 
     }
 
 }

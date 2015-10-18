@@ -40,6 +40,8 @@ ActivityBase {
     property var testLevel
     property bool inForeground: false   // to avoid unneeded reconfigurations
 
+    //property bool alwaysStart: true     // enforce start signal for editor-to-testing-transition
+
     onWidthChanged: if (inForeground) {
                         Activity.reconfigureScene();
                         Activity.initLevel();
@@ -51,11 +53,10 @@ ActivityBase {
                      }
 
     onStart: {
-        console.log("XXX BalanceBox onStart");
         inForeground = true;
         focus = true;
     }
-    onStop: {console.log("XXX BalanceBox onStop"); inForeground = false;}
+    onStop: inForeground = false;
 
     Keys.onPressed: Activity.processKeyPress(event.key)
     Keys.onReleased: Activity.processKeyRelease(event.key)
@@ -69,7 +70,6 @@ ActivityBase {
         signal stop
 
         function startEditor() {
-            console.log("XXX: launching editor");
             editorLoader.active = true;
             if (activity.mode == "test")
                 displayDialogs([dialogActivityConfig, editorLoader.item]);
@@ -78,9 +78,7 @@ ActivityBase {
         }
 
         function handleBackEvent() {
-            console.log("XXX Balancebox onEscape/back");
             if (activity.mode == "test") {
-                console.log("XXX Balancebox onEscape/back");
                 startEditor();
                 return true;
             } else
@@ -141,10 +139,7 @@ ActivityBase {
                 visible: true
                 testBox: activity
 
-                onClose: {
-                    console.log("XXX editor.onClose");
-                    activity.home()
-                }
+                onClose: activity.home()
 
             }
         }
@@ -314,15 +309,12 @@ ActivityBase {
                     xRotation = 90;
                 else if (xRotation < -90)
                     xRotation = -90;
-                //console.log("xRotation changed to " + xRotation);
             }
             onYRotationChanged: {
-                //console.log("yRotation changed to " + yRotation);
                 if (yRotation > 90)
                     yRotation = 90;
                 else if (yRotation < -90)
                     yRotation = -90;
-                //console.log("xRotation changed to " + xRotation);
             }
             
             TiltSensor {
@@ -467,7 +459,7 @@ ActivityBase {
                 if (newLevels !== activity.levelSet) {
                     activity.levelSet = newLevels;
                     dataToSave = {"levels": activity.levelSet};
-                    //activity.start();  done automatically during view switch
+                    activity.start();
                 }
             }
 

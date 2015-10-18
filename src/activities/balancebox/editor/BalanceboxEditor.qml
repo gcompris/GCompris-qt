@@ -32,27 +32,20 @@ Item {
     id: editor
 
     property string filename: Activity.userFile
-    property bool isDialog: true
 
     property ActivityBase currentActivity
     property var testBox
 
     property bool isTesting: false
 
-    /**
-     * Emitted when the config dialog has been closed.
-     */
+    // props needed for stackView integration:
     signal close
-
-    /**
-     * Emitted when the config dialog has been started.
-     */
     signal start
-
     signal stop
+    property bool isDialog: true
+    property bool alwaysStart: true   // enforce start signal for configDialog-to-editor-transition
 
     Keys.onEscapePressed: {
-        console.log("XXX editor onEscape");
         if (!isTesting) {
             if (Activity.levelChanged)
                 Activity.warnUnsavedChanges(home,
@@ -64,15 +57,11 @@ Item {
     }
 
     onStart: {
-        console.log("XXX Editor onStart");
         if (!isTesting)
             Activity.initEditor(props);
         else
             stopTesting();
     }
-    onStop: {console.log("XXX Editor onStop");}
-
-    Component.onCompleted: console.log("XXX editor complete " + filename);
 
     QtObject {
         id: props
@@ -96,15 +85,14 @@ Item {
     }
 
     function startTesting() {
-        console.log("BalanceboxEditor: entering testing mode");
         editor.isTesting = true;
         testBox.mode = "test";
         testBox.testLevel = Activity.modelToLevel();
+        testBox.start();
         back(testBox);
     }
 
     function stopTesting() {
-        console.log("BalanceboxEditor: stopping testing mode");
         editor.isTesting = false;
         testBox.mode = "play";
         testBox.testLevel = null;
@@ -113,10 +101,6 @@ Item {
     Rectangle {
         id: background
         anchors.fill: parent
-
-        Component.onCompleted: {
-            console.log("XXX editor completed");
-        }
 
         File {
             id: file
@@ -179,7 +163,6 @@ Item {
                 if (ballTool !== item) ballTool.selected = false;
                 if (contactTool !== item) contactTool.selected = false;
                 if (goalTool !== item) goalTool.selected = false;
-                console.log("XXX new current tool: " + item);
             }
 
             EditorTool {

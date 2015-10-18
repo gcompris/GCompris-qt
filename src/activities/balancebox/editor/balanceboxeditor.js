@@ -167,7 +167,6 @@ function modelToLevel()
         value &= ~(0xff00);  // always clear order-number bits
         if (obj.value & CONTACT) {
             value |= ((targetList.indexOf(parseInt(obj.contactValue)) + 1) << 8);
-            //console.log("XXX adjusting ordernum for value " + obj.contactValue + " to " + (targetList.indexOf(parseInt(obj.contactValue)) + 1));
         }
         map[row][col] = "0x" + dec2hex(value);
     }
@@ -176,7 +175,6 @@ function modelToLevel()
                     map: map,
                     targets: targetList
                 }
-    //console.log("XXX serialized level: " + JSON.stringify(level));
     return level;
 }
 
@@ -303,7 +301,6 @@ function modifyMap(props, row, col)
 
     if (oldValue !== newValue)
         levelChanged = true;
-    //console.log("XXX changed=" + levelChanged + " old/new=" + dec2hex(oldValue) + "/"+ dec2hex(newValue));
     props.mapModel.setProperty(modelIndex, "value", newValue);
 }
 

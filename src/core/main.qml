@@ -159,15 +159,13 @@ Window {
             id: root
             function getTransition(properties)
             {
-                console.log("XXX getTransition: exitItem=" + properties.exitItem + " enterItem=" + properties.enterItem);
                 audioVoices.clearQueue()
-                if(!properties.exitItem.isDialog) {
-                    if(!properties.enterItem.isDialog) {
-                        playIntroVoice(properties.enterItem.activityInfo.name)
-                    }
-                    //properties.enterItem.start() // hkaelber // moved outside of if for configDialog -> Editor transition in balancebox
-                }
-                if (properties.enterItem.start)
+                if(!properties.exitItem.isDialog &&        // if coming from menu and
+                        !properties.enterItem.isDialog)    // going into an activity then
+                    playIntroVoice(properties.enterItem.activityInfo.name);    // play intro
+
+                if (!properties.exitItem.isDialog ||       // if coming from menu or
+                        properties.enterItem.alwaysStart)  // start signal enforced (for special case like transition from config-dialog to editor)
                     properties.enterItem.start();
 
                 if(properties.name === "pushTransition") {
