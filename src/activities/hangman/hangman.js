@@ -176,7 +176,6 @@ function processKeyPress(text) {
         if(items.remainingLife == 0) {
             items.hidden.text = items.goodWord.translatedTxt;
             items.bonus.bad("lion");
-            nextSubLevel();
             return;
         }
     }
@@ -239,6 +238,9 @@ function nextSubLevel() {
     if( ++currentSubLevel >= maxSubLevel) {
         currentSubLevel = 0;
         nextLevel();
+    }
+    else
+    {	initSubLevel();
     }
 }
 
