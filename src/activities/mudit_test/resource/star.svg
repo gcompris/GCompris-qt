@@ -9,12 +9,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="1200"
+   height="1200"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="New document 1">
+   sodipodi:docname="star.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -43,30 +43,32 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,147.63782)">
     <path
        sodipodi:type="star"
        style="fill:#00ff00"
        id="path2997"
        sodipodi:sides="5"
-       sodipodi:cx="182.85714"
+       sodipodi:cx="182.85715"
        sodipodi:cy="186.6479"
        sodipodi:r1="176.03339"
-       sodipodi:r2="88.01669"
+       sodipodi:r2="88.016693"
        sodipodi:arg1="2.1948194"
        sodipodi:arg2="2.8231379"
        inkscape:flatsided="false"
        inkscape:rounded="0"
        inkscape:randomized="0"
        d="M 80.000005,329.50504 99.265901,214.20588 15.207332,132.97023 130.81684,115.66379 182.10101,10.616141 l 52.18471,104.603189 115.75392,16.31263 -83.35758,81.95478 20.25569,115.1294 -103.70253,-53.95236 z"
-       inkscape:transform-center-x="0.23366171"
-       inkscape:transform-center-y="-16.587313" />
+       inkscape:transform-center-x="0.35727461"
+       inkscape:transform-center-y="-23.275076"
+       transform="matrix(1.5290495,0,0,1.4031857,306.24029,164.29114)" />
   </g>
 </svg>

@@ -25,10 +25,16 @@
 import QtQuick 2.1
 import GCompris 1.0
 
+import "../colors"
 import "mudit_test.js" as Dataset
 
-FindShape {
+
+FindIt {
     mode: "Shapes"
     dataset: Dataset
     backgroundImg: "qrc:/gcompris/src/activities/mudit_test/resource/background.svg"
 }
+
+
+
+

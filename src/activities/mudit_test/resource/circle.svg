@@ -14,7 +14,7 @@
    inkscape:version="0.48.4 r9939"
    width="1200"
    height="1200"
-   sodipodi:docname="shape.svg">
+   sodipodi:docname="circle.svg">
   <metadata
      id="metadata3045">
     <rdf:RDF>
@@ -58,5 +58,5 @@
      sodipodi:rx="188.95027"
      sodipodi:ry="172.37569"
      d="m 512.70717,411.04971 a 188.95027,172.37569 0 1 1 -377.90054,0 188.95027,172.37569 0 1 1 377.90054,0 z"
-     transform="matrix(0.99994973,0,0,1.0384064,-132.58041,-250.0411)" />
+     transform="matrix(0.99994973,0,0,1.0384064,271.83948,92.500336)" />
 </svg>

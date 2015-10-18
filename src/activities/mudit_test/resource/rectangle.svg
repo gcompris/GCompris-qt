@@ -9,8 +9,8 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="744.09448819"
-   height="1052.3622047"
+   width="1200"
+   height="1200"
    id="svg3025"
    version="1.1"
    inkscape:version="0.48.4 r9939"
@@ -50,13 +50,14 @@
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,147.63782)">
     <rect
-       style="fill:#ffff00;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="fill:#ffff00;fill-rule:evenodd;stroke:#000000;stroke-width:1.62546229px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        id="rect3033"
-       width="377.14285"
-       height="188.57143"
-       x="-2.8571429"
-       y="-1.9235317" />
+       width="593.66022"
+       height="316.5174"
+       x="291.74133"
+       y="266.96063" />
   </g>
 </svg>

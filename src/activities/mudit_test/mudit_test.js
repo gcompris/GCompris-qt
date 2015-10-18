@@ -44,6 +44,25 @@ function get() {
                  "text": qsTr("Recognize the triangle")
              }
 
+            ],
+            [//Level2
+             {
+                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/heart.svg",
+                 "text": qsTr("Recognize the Heart!!")
+             },
+             {
+                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/diamond.svg",
+                 "text": qsTr("Recognize the Diamond!!")
+             },
+             {
+                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/spade.svg",
+                 "text": qsTr("Recognize the Spade!!")
+             },
+             {
+                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/clubs.svg",
+                 "text": qsTr("Recognize the Clubs!!")
+             }
             ]
-        ];
+         ];
 }
+
