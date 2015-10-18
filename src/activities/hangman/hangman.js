@@ -175,6 +175,7 @@ function processKeyPress(text) {
         // If no more life, we display the good word and show the bonus
         if(items.remainingLife == 0) {
             items.hidden.text = items.goodWord.translatedTxt;
+	    items.ok.visible = true
             items.bonus.bad("lion");
             return;
         }
@@ -218,6 +219,7 @@ function initSubLevel() {
     else
         items.score.visible = false
     items.goodWordIndex = subLevelsLeft.pop()
+    items.ok.visible = false
     items.goodWord = wordList[items.goodWordIndex]
     items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image);
     items.remainingLife = 6;
