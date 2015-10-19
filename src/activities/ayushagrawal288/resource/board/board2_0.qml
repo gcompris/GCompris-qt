@@ -30,98 +30,98 @@ QtObject {
         },
         {
             "pixmapfile" : "india/goldentemplepunjab.png",
-            "toolTipText" : "Golden Temple, Punjab",
+            "toolTipText" : qsTr("Golden Temple, Punjab"),
             "x" : "0.278",
             "y" : "0.228",
-            "heigth" : "0.15",
+            "height" : "0.15",
             "width" : "0.15"
         },
         {
             "pixmapfile" : "india/hawamahalrajasthan.png",
-            "toolTipText" : "Hawa Mahal, Rajasthan",
+            "toolTipText" : qsTr("Hawa Mahal, Rajasthan"),
             "x" : "0.216",
             "y" : "0.377",
-            "heigth" : "0.11",
-            "width" : "0.11"
+            "height" : "0.18",
+            "width" : "0.18"
         },
         {
             "pixmapfile" : "india/tajmahal.png",
-            "toolTipText" : "Taj Mahal, Uttar Pradesh",
+            "toolTipText" : qsTr("Taj Mahal, Uttar Pradesh"),
             "x" : "0.459",
             "y" : "0.36",
-            "heigth" : "0.15",
+            "height" : "0.15",
             "width" : "0.15"
         },
         {
             "pixmapfile" : "india/gatewayindiamaharastra.png",
-            "toolTipText" : "Gateway of India, Maharashtra",
+            "toolTipText" : qsTr("Gateway of India, Maharashtra"),
             "x" : "0.179",
             "y" : "0.610",
-            "heigth" : "0.25",
+            "height" : "0.25",
             "width" : "0.25"
         },
         {
             "pixmapfile" : "india/sanchistupasmadyapradesh.png",
-            "toolTipText" : "Sanchi Stupas, Madhya Pradesh",
+            "toolTipText" : qsTr("Sanchi Stupas, Madhya Pradesh"),
             "x" : "0.375",
             "y" : "0.461",
-            "heigth" : "0.15",
+            "height" : "0.15",
             "width" : "0.15"
         },
         {
             "pixmapfile" : "india/ajantacavemaharastra.png",
-            "toolTipText" : "Ajanta Caves, Maharashtra",
+            "toolTipText" : qsTr("Ajanta Caves, Maharashtra"),
             "x" : "0.314",
             "y" : "0.624",
-            "heigth" : "0.25",
-            "width" : "0.25"
+            "height" : "0.20",
+            "width" : "0.20"
         },
         {
             "pixmapfile" : "india/suntempleorrisa.png",
-            "toolTipText" : "Sun Temple, Orrisa",
+            "toolTipText" : qsTr("Sun Temple, Orrisa"),
             "x" : "0.591",
             "y" : "0.584",
-            "heigth" : "0.15",
-            "width" : "0.15"
+            "height" : "0.18",
+            "width" : "0.18"
         },
         {
             "pixmapfile" : "india/mysorepalacekarnataka.png",
-            "toolTipText" : "Mysore Palace, Karnataka",
+            "toolTipText" : qsTr("Mysore Palace, Karnataka"),
             "x" : "0.295",
             "y" : "0.748",
-            "heigth" : "0.15",
+            "height" : "0.15",
             "width" : "0.15"
         },
         {
             "pixmapfile" : "india/chaarminartelangana.png",
-            "toolTipText" : "Chaar Minar, Telangana",
+            "toolTipText" : qsTr("Chaar Minar, Telangana"),
             "x" : "0.405",
             "y" : "0.66",
-            "heigth" : "0.15",
+            "height" : "0.15",
             "width" : "0.15"
         },
         {
             "pixmapfile" : "india/victoriamemorialwstbengal.png",
-            "toolTipText" : "Victoria Memorial, West Bengal",
+            "toolTipText" : qsTr("Victoria Memorial, West Bengal"),
             "x" : "0.689",
             "y" : "0.445",
-            "heigth" : "0.15",
-            "width" : "0.15"
+            "height" : "0.20",
+            "width" : "0.20"
         },
         {
             "pixmapfile" : "india/ranggharassam.png",
-            "toolTipText" : "Rang Ghar Assam",
+            "toolTipText" : qsTr("Rang Ghar Assam"),
             "x" : "0.842",
             "y" : "0.37",
-            "heigth" : "0.15",
+            "height" : "0.15",
             "width" : "0.15"
         },
         {
             "pixmapfile" : "india/qutubminardelhi.png",
-            "toolTipText" : "Qutub Minar, Delhi",
+            "toolTipText" : qsTr("Qutub Minar, Delhi"),
             "x" : "0.336",
             "y" : "0.31",
-            "heigth" : "0.25",
+            "height" : "0.25",
             "width" : "0.25"
         }
     ]

@@ -30,59 +30,59 @@ QtObject {
       },
       {
          "pixmapfile" : "wonders/chickenitzamexico.png",
-         "toolTipText" : "Chichén Itzá, Mexico",
+         "toolTipText" : qsTr("Chichén Itzá, Mexico"),
          "x" : "0.214",
          "y" : "0.542",
-         "heigth" : "0.15",
-         "width" : "0.15"
+         "height" : "0.18",
+         "width" : "0.18"
       },
       {
          "pixmapfile" : "wonders/romancolosseumrome.png",
-         "toolTipText" : "Roman Colosseum, Rome",
+         "toolTipText" : qsTr("Roman Colosseum, Rome"),
          "x" : "0.496",
          "y" : "0.408",
-         "heigth" : "0.08",
-         "width" : "0.08"
+         "height" : "0.11",
+         "width" : "0.11"
       },
       {
          "pixmapfile" : "wonders/christtheredeemerbrazil.png",
-         "toolTipText" : "Christ the Redeemer, Brazil",
+         "toolTipText" : qsTr("Christ the Redeemer, Brazil"),
          "x" : "0.351",
          "y" : "0.736",
-         "heigth" : "0.08",
-         "width" : "0.08"
+         "height" : "0.11",
+         "width" : "0.11"
       },
       {
          "pixmapfile" : "wonders/greatwallofchina.png",
-         "toolTipText" : "The Great Wall of China, China",
+         "toolTipText" : qsTr("The Great Wall of China, China"),
          "x" : "0.726",
          "y" : "0.42",
-         "heigth" : "0.11",
+         "height" : "0.11",
          "width" : "0.11"
       },
       {
          "pixmapfile" : "wonders/machupicchu.png",
-         "toolTipText" : "Machu Picchu, Peru",
+         "toolTipText" : qsTr("Machu Picchu, Peru"),
          "x" : "0.276",
          "y" : "0.711",
-         "heigth" : "0.15",
+         "height" : "0.15",
          "width" : "0.15"
       },
       {
          "pixmapfile" : "wonders/petrajordan.png",
-         "toolTipText" : "Petra, Jordan",
+         "toolTipText" : qsTr("Petra, Jordan"),
          "x" : "0.560",
          "y" : "0.453",
-         "heigth" : "0.15",
+         "height" : "0.15",
          "width" : "0.15"
       },
       {
          "pixmapfile" : "wonders/tajmahal.png",
-         "toolTipText" : "Taj Mahal, India",
+         "toolTipText" : qsTr("Taj Mahal, India"),
          "x" : "0.672",
          "y" : "0.476",
-         "heigth" : "0.11",
-         "width" : "0.11"
+         "height" : "0.15",
+         "width" : "0.15"
       },
     ]
 }
