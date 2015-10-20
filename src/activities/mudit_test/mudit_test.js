@@ -42,25 +42,45 @@ function get() {
              {
                  "image": "qrc:/gcompris/src/activities/mudit_test/resource/triangle.svg",
                  "text": qsTr("Recognize the triangle")
+             },
+             {
+                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/pentagon.svg",
+                 "text": qsTr("Recognize the pentagon")
              }
 
             ],
             [//Level2
              {
-                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/heart.svg",
-                 "text": qsTr("Recognize the Heart!!")
+                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/heart.png",
+                 "text": qsTr("Recognize the Heart")
              },
              {
-                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/diamond.svg",
-                 "text": qsTr("Recognize the Diamond!!")
+                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/diamond.png",
+                 "text": qsTr("Recognize the Diamonds")
              },
              {
-                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/spade.svg",
-                 "text": qsTr("Recognize the Spade!!")
+                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/spade.png",
+                 "text": qsTr("Recognize the Spade")
              },
              {
-                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/clubs.svg",
-                 "text": qsTr("Recognize the Clubs!!")
+                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/clubs.png",
+                 "text": qsTr("Recognize the Clubs")
+             },
+             {
+                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/ace.png",
+                 "text": qsTr("Recognize the Ace")
+             },
+             {
+                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/jack.png",
+                 "text": qsTr("Recognize the Jack")
+             },
+             {
+                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/king.png",
+                 "text": qsTr("Recognize the King")
+             },
+             {
+                 "image": "qrc:/gcompris/src/activities/mudit_test/resource/queen.png",
+                 "text": qsTr("Recognize the Queen")
              }
             ]
          ];

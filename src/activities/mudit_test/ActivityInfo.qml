@@ -20,7 +20,7 @@ import GCompris 1.0
 ActivityInfo {
   name: "mudit_test/Mudit_test.qml"
   difficulty: 1
-  icon: "mudit_test/mudit_test.png"
+  icon: "mudit_test/mudit_test.svg"
   author: "Mudit Sharma &lt;mudithkr@gmail.com&gt;"
   demo: true
   title: qsTr("Recognizing Shapes")

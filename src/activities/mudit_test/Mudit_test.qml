@@ -28,7 +28,6 @@ import GCompris 1.0
 import "../colors"
 import "mudit_test.js" as Dataset
 
-
 FindIt {
     mode: "Shapes"
     dataset: Dataset
