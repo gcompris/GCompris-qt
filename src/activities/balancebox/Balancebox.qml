@@ -174,7 +174,21 @@ ActivityBase {
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.verticalCenter: parent.verticalCenter
 
-            
+            transform: [
+                Rotation {
+                    origin.x: mapWrapper.width / 2
+                    origin.y: mapWrapper.height / 2
+                    axis { x: 1; y: 0; z: 0 }
+                    angle: ApplicationInfo.isMobile ? 0 : -items.tilt.xRotation
+                },
+                Rotation {
+                    origin.x: mapWrapper.width / 2
+                    origin.y: mapWrapper.height / 2
+                    axis { x: 0; y: 1; z: 0 }
+                    angle: ApplicationInfo.isMobile ? 0 : items.tilt.yRotation
+                }
+            ]
+
             // right:
             Wall {
                 id: rightWall
