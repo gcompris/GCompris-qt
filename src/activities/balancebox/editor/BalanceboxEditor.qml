@@ -45,23 +45,40 @@ Item {
     property bool isDialog: true
     property bool alwaysStart: true   // enforce start signal for configDialog-to-editor-transition
 
-    Keys.onEscapePressed: {
+    function handleBackEvent()
+    {
         if (!isTesting) {
             if (Activity.levelChanged)
-                Activity.warnUnsavedChanges(home,
+                Activity.warnUnsavedChanges(function() {stop(); home();},
                                             function() {});
-            else
-                home()
+            else {
+                stop();
+                home();
+            }
+            return true;
+        } else
+            return false;
+
+    }
+
+    Keys.onEscapePressed: event.accepted = handleBackEvent();
+
+    Keys.onReleased: {
+        if (event.key === Qt.Key_Back) {
+            event.accepted = handleBackEvent();
         } else
             event.accepted = false;
     }
 
     onStart: {
+        focus = true;
         if (!isTesting)
             Activity.initEditor(props);
         else
             stopTesting();
     }
+
+    onStop: testBox.focus = true;
 
     QtObject {
         id: props
@@ -88,7 +105,7 @@ Item {
         editor.isTesting = true;
         testBox.mode = "test";
         testBox.testLevel = Activity.modelToLevel();
-        testBox.start();
+        testBox.needRestart = true;
         back(testBox);
     }
 
@@ -96,6 +113,7 @@ Item {
         editor.isTesting = false;
         testBox.mode = "play";
         testBox.testLevel = null;
+        testBox.needRestart = true;
     }
 
     Rectangle {
@@ -536,7 +554,7 @@ Item {
                                 onEntered: cell.highlighted = true
                                 onExited: cell.highlighted = false
                                 onClicked: {
-                                    activity.focus = true;
+                                    editor.focus = true;
                                     Activity.modifyMap(props, row, col);
                                 }
                             }

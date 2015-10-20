@@ -40,7 +40,8 @@ ActivityBase {
     property var testLevel
     property bool inForeground: false   // to avoid unneeded reconfigurations
 
-    //property bool alwaysStart: true     // enforce start signal for editor-to-testing-transition
+    property bool alwaysStart: true     // enforce start signal for editor-to-testing- and returning from config-transition
+    property bool needRestart: true
 
     onWidthChanged: if (inForeground) {
                         Activity.reconfigureScene();
@@ -100,9 +101,16 @@ ActivityBase {
 
         }
 
-        onStart: Activity.start(items)
+        onStart: if (activity.needRestart) {
+                     Activity.start(items);
+                     activity.needRestart = false;
+                 } else
+                     Activity.initLevel();
 
-        onStop: Activity.stop()
+        onStop: {
+            Activity.stop();
+            activity.needRestart = true;
+        }
 
         QtObject {
             id: items
@@ -376,7 +384,9 @@ ActivityBase {
                            : ( help | home )
             }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                // stop everything or the ball keeps moving while we're away:
+                items.timer.stop();
+                displayDialog(dialogHelp);
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
@@ -387,6 +397,7 @@ ActivityBase {
                     activity.home()
             }
             onConfigClicked: {
+                items.timer.stop();
                 dialogActivityConfig.active = true
                 // Set default values
                 dialogActivityConfig.setDefaultValues();
@@ -445,7 +456,7 @@ ActivityBase {
                 }
             }
 
-            onClose: home()
+            onClose: home();
 
             onLoadData: {
                 if(dataToSave && dataToSave["levels"]) {
@@ -459,7 +470,7 @@ ActivityBase {
                 if (newLevels !== activity.levelSet) {
                     activity.levelSet = newLevels;
                     dataToSave = {"levels": activity.levelSet};
-                    activity.start();
+                    activity.needRestart = true;
                 }
             }
 

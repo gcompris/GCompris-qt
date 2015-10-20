@@ -188,7 +188,10 @@ function saveModel()
         else
             console.debug("Created directory " + path);
     }
-    levels[currentLevel] = l
+    levels[currentLevel] = l;
+    // renumber levels before saving:
+    for(var i = 0; i < levels.length; i++)
+        levels[i].level = i + 1;
     if (!props.file.write(JSON.stringify(levels), userFile))
         Core.showMessageDialog(props.editor,
                                qsTr("Error saving %1 levels to your levels file (%2)")
@@ -304,14 +307,30 @@ function modifyMap(props, row, col)
     props.mapModel.setProperty(modelIndex, "value", newValue);
 }
 
+var warningVisible = false;
 function warnUnsavedChanges(yesFunc, noFunc)
 {
-    Core.showMessageDialog(props.editor,
-            qsTr("You have unsaved changes!<br/> " +
-                 "Really switch to another level and lose changes?"),
-                  qsTr("Yes"), yesFunc,
-                  qsTr("No"), noFunc,
-                  noFunc);
+    if (!warningVisible) {
+        warningVisible = true;
+        Core.showMessageDialog(props.editor,
+                               qsTr("You have unsaved changes!<br/> " +
+                                    "Really leave this level and lose changes?"),
+                               qsTr("Yes"), function() {
+                                   warningVisible = false;
+                                   if (yesFunc !== undefined)
+                                       yesFunc();
+                               },
+                               qsTr("No"), function() {
+                                   warningVisible = false;
+                                   if (noFunc !== undefined)
+                                       noFunc();
+                               },
+                               function() {
+                                   warningVisible = false;
+                                   if (noFunc !== undefined)
+                                       noFunc();
+                               });
+    }
 }
 
 function nextLevel() {

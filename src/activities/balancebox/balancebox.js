@@ -23,7 +23,10 @@
   - make sensitivity configurable
   - add rectangular fixture for goal
   - editor: add 'clear' button
+  - editor: allow going back: level 1 -> last level
   - add sound effects
+  - add new item: unordered contact, that has to be collected but in an
+    arbitrary order
 */
 .pragma library
 .import QtQuick 2.0 as Quick
