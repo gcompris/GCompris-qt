@@ -47,7 +47,7 @@ All tools (except the clear-tool) toggle their respective target on the clicked 
 You can test a modified level by clicking on the 'Test' button on the right side of the editor view. You can return from testing mode by clicking on the home-button on the bar or by pressing Escape on your keyboard or the back button on your mobile device.
 In the editor you can change the level currently edited by using the arrow buttons on the bar. Back to the editor you can continue editing the current level and test it again if needed.
 When your level is finished you can save it to the user level file by clicking on the 'Save' button on the right side.
-To return to the configuration configuration dialog click on the home-button on the bar or press Escape on your keyboard or the back button on your mobile device.")
+To return to the configuration dialog click on the home-button on the bar or press Escape on your keyboard or the back button on your mobile device.")
   credit: ""
   section: "mobile fun"
   enabled: !ApplicationInfo.isMobile || ApplicationInfo.sensorIsSupported("QTiltSensor")
