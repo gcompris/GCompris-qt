@@ -30,6 +30,7 @@ color_mix_light
 colors
 details
 drawnumber
+droftware_activity
 enumerate
 erase
 erase_2clic
