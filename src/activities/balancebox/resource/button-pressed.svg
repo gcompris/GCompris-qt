@@ -8,11 +8,35 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
    width="100%"
    height="100%"
    viewBox="0 0 82.964888 82.945158"
-   id="svg2">
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="button-pressed.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3200"
+     inkscape:window-height="1679"
+     id="namedview4748"
+     showgrid="false"
+     inkscape:zoom="16.095184"
+     inkscape:cx="34.160688"
+     inkscape:cy="35.058574"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
   <defs
      id="defs4">
     <linearGradient
@@ -126,19 +150,6 @@
        gradientUnits="userSpaceOnUse"
        gradientTransform="matrix(1.5291,0,0,1.5291,-17.96,-17.311)" />
   </defs>
-  <g
-     transform="translate(-220.21209,-5.5675908)"
-     id="layer1">
-    <path
-       d="m 259.6011,5.6551 c -22.12,0.542 -41,21.433 -39.28,43.532 0.6,22.133 21.43,40.923 43.53,39.218 22.13,-0.591 40.91,-21.426 39.22,-43.531 -0.78,-22.299 -21.17,-40.737 -43.47,-39.219 z"
-       id="path3801"
-       style="fill:url(#radialGradient5438);fill-rule:evenodd" />
-    <path
-       d="m 94.045204,52.689968 a 39.421204,39.421204 0 1 1 -78.842407,0 39.421204,39.421204 0 1 1 78.842407,0 z"
-       transform="translate(207.0711,-5.6569)"
-       id="path3803"
-       style="fill:url(#radialGradient5452);fill-rule:evenodd" />
-  </g>
   <metadata
      id="metadata5434">
     <rdf:RDF>
@@ -154,7 +165,7 @@
             <dc:title>Openclipart</dc:title>
           </cc:Agent>
         </dc:publisher>
-        <dc:title></dc:title>
+        <dc:title />
         <dc:date>2010-09-22T02:42:15</dc:date>
         <dc:description>Three button templates (normal, hovered, and pressed) for your website.</dc:description>
         <dc:source>https://openclipart.org/detail/86281/grey-web-button-template-by-jhnri4</dc:source>
@@ -189,4 +200,20 @@
       </cc:License>
     </rdf:RDF>
   </metadata>
+  <ellipse
+     clip-path="none"
+     id="path4940"
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#5cc86d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.5;marker:none;enable-background:accumulate"
+     cx="42.526947"
+     cy="41.824135"
+     mask="none"
+     rx="41.230606"
+     ry="41.383369" />
+  <path
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#033200;fill-opacity:0.50232559;fill-rule:nonzero;stroke:none;stroke-width:0.5;marker:none;enable-background:accumulate"
+     clip-path="none"
+     d="M 42.526949,0.44058049 C 19.755571,0.44034799 1.2956665,18.968646 1.2959511,41.824383 1.2961824,64.679745 19.755945,83.207492 42.526949,83.207257 65.297953,83.207492 83.757716,64.679745 83.757982,41.824383 83.758214,18.968641 65.298309,0.44034429 42.526949,0.44058049 Z m 0,1.44319621 C 63.992986,1.8838268 82.320043,20.278825 82.320078,41.824383 82.320043,63.369942 63.992986,80.836035 42.526949,80.83608 21.060912,80.836035 2.7338558,63.369942 2.7338202,41.824383 2.7338202,20.278815 21.060912,1.883809 42.526949,1.8837767 Z"
+     id="path4940-1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cscscsssss" />
 </svg>
