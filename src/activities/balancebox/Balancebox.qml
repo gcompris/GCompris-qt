@@ -385,6 +385,51 @@ ActivityBase {
             }
         }
 
+        MultiPointTouchArea {
+            anchors.fill: parent
+            touchPoints: [ TouchPoint { id: point1 } ]
+            property real startX
+            property real startY
+            property int offset: 30
+
+            function reset() {
+                startX = point1.x
+                startY = point1.y
+            }
+
+            onPressed: {
+                reset()
+            }
+
+            onUpdated: {
+                var moveX = point1.x - startX
+                var moveY = point1.y - startY
+                // Find the direction with the most move
+                if(Math.abs(moveX) * ApplicationInfo.ratio > offset &&
+                   Math.abs(moveX) > Math.abs(moveY)) {
+                    if(moveX > offset * ApplicationInfo.ratio) {
+                        Activity.processKeyPress(Qt.Key_Right)
+                        reset()
+                    } else if(moveX < -offset * ApplicationInfo.ratio) {
+                        Activity.processKeyPress(Qt.Key_Left)
+                        reset()
+                    }
+                } else if(Math.abs(moveY) * ApplicationInfo.ratio > offset &&
+                          Math.abs(moveX) < Math.abs(moveY)) {
+                    if(moveY > offset * ApplicationInfo.ratio) {
+                        Activity.processKeyPress(Qt.Key_Down)
+                        reset()
+                    } else if(moveY < -offset * ApplicationInfo.ratio) {
+                        Activity.processKeyPress(Qt.Key_Up)
+                        reset()
+                    }
+                }
+            }
+            onReleased: {
+                Activity.keyboardIsTilting = false
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
