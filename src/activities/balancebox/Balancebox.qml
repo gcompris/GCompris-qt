@@ -137,6 +137,7 @@ ActivityBase {
             property var buttonType: Fixture.Category5
             property alias parser: parser
             property double dpi
+            property GCAudio audioEffects: activity.audioEffects
         }
 
         Loader {
@@ -283,6 +284,11 @@ ActivityBase {
                 onBeginContact: {
                     if (other.categories !== items.wallType)
                         Activity.addBallContact(other);
+                    else {
+                        // sound-effect on each contact with a wall might be too annoying:
+                        //items.audioEffects.stop();
+                        //items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/brick.wav");
+                    }
                 }
                 onEndContact: {
                     if (other.categories !== items.wallType)
@@ -466,6 +472,8 @@ ActivityBase {
 
         Bonus {
             id: bonus
+
+            looseSound: "qrc:/gcompris/src/core/resource/sounds/crash.wav"
             Component.onCompleted: {
                 win.connect(Activity.nextLevel);
                 loose.connect(Activity.initLevel);
