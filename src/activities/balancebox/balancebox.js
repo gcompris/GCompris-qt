@@ -387,14 +387,16 @@ function initLevel(testLevel) {
 // keyboard tilting stuff:
 function keyboardHandler()
 {
+    var MAX_TILT = 5
+
     if (keyboardIsTilting) {
-        if (lastKey == Qt.Key_Left)
+        if (lastKey == Qt.Key_Left && items.tilt.yRotation > -MAX_TILT)
             items.tilt.yRotation -= keyboardTiltStep;
-        else if (lastKey == Qt.Key_Right)
+        else if (lastKey == Qt.Key_Right && items.tilt.yRotation < MAX_TILT)
             items.tilt.yRotation += keyboardTiltStep;
-        else if (lastKey == Qt.Key_Up)
+        else if (lastKey == Qt.Key_Up && items.tilt.xRotation > -MAX_TILT)
             items.tilt.xRotation -= keyboardTiltStep;
-        else if (lastKey == Qt.Key_Down)
+        else if (lastKey == Qt.Key_Down && items.tilt.xRotation < MAX_TILT)
             items.tilt.xRotation += keyboardTiltStep;
         items.keyboardTimer.start();
     } else {// is resetting
