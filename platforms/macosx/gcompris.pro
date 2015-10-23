@@ -2,6 +2,7 @@
 
 TEMPLATE = app
 TARGET = gcompris
+CONFIG += c++11
 INCLUDEPATH += .
 QT += qml quick gui multimedia network xmlpatterns svg xml core
 APPCERT = "3rd Party Mac Developer Application: Bruno Coudoin"
@@ -41,9 +42,9 @@ codesign.depends  += all
 codesign.commands += macdeployqt $${TARGET}.app;
 
 rccFiles.files = rcc
-rccFiles.path = .
+rccFiles.path = Contents/Resources
 translationFiles.files = translations
-translationFiles.path = .
+translationFiles.path = Contents/Resources/
 QMAKE_BUNDLE_DATA += rccFiles translationFiles
 
 QMAKE_CFLAGS += -gdwarf-2

@@ -2,7 +2,8 @@ iOS build instruction.
 
 copy the following files at the root dir
 cp config.h ../..
-cp gcompris.pro ../../
+cp gcompris.pro ../..
+cp gcompris.icns ../..
 
 At root dir create the directory
 mkdir rcc
@@ -12,34 +13,11 @@ And fill copy the appropriate files in them.
 
 Create a build directory:
 mkdir build-macosx
-~/Qt/5.5/clang_64/bin/qmake -spec macx-xcode -config release ../gcompris.pro
-open gcompris.xcodeproj
+cd build-macosx
+~/Qt/5.5/clang_64/bin/qmake -config release ../gcompris.pro
+make
 
-Fix the Launch reference to point the Launch item in the xcassets
-
-For MacOS:
-- Fix Compilator
-  Apple LLVM / C++ Language Dialect -> C++11
-               C++ Standard Library -> C++11
-
-In Info.plist set LSRequiresIPhoneOS to false
-Set the sandbox to allow outgoing connection
-Product/Scheme/Edit/Run
-  Info / Debug Executable = False
-  Options / XPC Services = False (Uncheck everything here)
-In build phases, fix destination for rcc and translation to Resources instead of Wrapper
-build GCompris
-
-In a console:
-
-Tricky because of this bug:
-https://bugreports.qt.io/browse/QTBUG-46404
-
-pushd $Qt5_DIR
-./macdeployqt /Users/bdoin/Projets/gcompris/build-macosx/Debug/gcompris.app  -executable=/Users/bdoin/Projets/gcompris/build-macosx/Debug/gcompris.app/Contents/MacOS/gcompris  -always-overwrite -qmldir=/Users/bdoin/Projets/gcompris/src  -codesign="3rd Party Mac Developer Application: Bruno Coudoin"
-popd
-
-/Users/bdoin/Qt/5.5/clang_64//bin/macdeployqt gcompris.app  -executable=/Users/bdoin/Projets/gcompris/build-qtcreator/gcompris.app/Contents/MacOS/gcompris  -always-overwrite -qmldir=/Users/bdoin/Projets/gcompris/src  -codesign="Mac Developer: Bruno Coudoin" -verbose=2
+/Users/bdoin/Qt/5.5/clang_64//bin/macdeployqt gcompris.app  -executable=/Users/bdoin/Projets/gcompris/build-macosx/gcompris.app/Contents/MacOS/gcompris  -always-overwrite -qmldir=/Users/bdoin/Projets/gcompris/src  -codesign="Mac Developer: Bruno Coudoin" -verbose=2
 
 productbuild --component gcompris.app /Applications --sign "3rd Party Mac Developer Installer: Bruno Coudoin" gcompris.pkg
 

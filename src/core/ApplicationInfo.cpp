@@ -120,7 +120,7 @@ QString ApplicationInfo::getFilePath(const QString &file)
 #elif defined(Q_OS_IOS)
     return QString("%1/rcc/%2").arg(QCoreApplication::applicationDirPath(), file);
 #elif defined(Q_OS_MAC)
-    return QString("%1/rcc/%2").arg(QCoreApplication::applicationDirPath(), file);
+    return QString("%1/../Resources/rcc/%2").arg(QCoreApplication::applicationDirPath(), file);
 #else
     return QString("%1/%2/rcc/%3").arg(QCoreApplication::applicationDirPath(), GCOMPRIS_DATA_FOLDER, file);
 #endif
