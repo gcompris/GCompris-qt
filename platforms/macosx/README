@@ -19,8 +19,8 @@ Fix the Launch reference to point the Launch item in the xcassets
 
 For MacOS:
 - Fix Compilator
-  Apple LLVM / C++ Language -> C++11
-               C++ Standard -> C++11
+  Apple LLVM / C++ Language Dialect -> C++11
+               C++ Standard Library -> C++11
 
 In Info.plist set LSRequiresIPhoneOS to false
 Set the sandbox to allow outgoing connection
@@ -36,8 +36,10 @@ Tricky because of this bug:
 https://bugreports.qt.io/browse/QTBUG-46404
 
 pushd $Qt5_DIR
-./macdeployqt ~/Projets/gcompris/build-macosx/Debug/gcompris.app  -executable=~/Projets/gcompris/build-macosx/Debug/gcompris.app/Contents/MacOS/gcompris  -always-overwrite -qmldir=/Users/bdoin/Projets/gcompris/src  -codesign="3rd Party Mac Developer Application: Bruno Coudoin"
+./macdeployqt /Users/bdoin/Projets/gcompris/build-macosx/Debug/gcompris.app  -executable=/Users/bdoin/Projets/gcompris/build-macosx/Debug/gcompris.app/Contents/MacOS/gcompris  -always-overwrite -qmldir=/Users/bdoin/Projets/gcompris/src  -codesign="3rd Party Mac Developer Application: Bruno Coudoin"
 popd
+
+/Users/bdoin/Qt/5.5/clang_64//bin/macdeployqt gcompris.app  -executable=/Users/bdoin/Projets/gcompris/build-qtcreator/gcompris.app/Contents/MacOS/gcompris  -always-overwrite -qmldir=/Users/bdoin/Projets/gcompris/src  -codesign="Mac Developer: Bruno Coudoin" -verbose=2
 
 productbuild --component gcompris.app /Applications --sign "3rd Party Mac Developer Installer: Bruno Coudoin" gcompris.pkg
 
