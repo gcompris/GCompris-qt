@@ -327,7 +327,6 @@ ActivityBase {
         
         Score {
             id: score
-
             anchors.top: undefined
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.right: parent.right
@@ -340,11 +339,12 @@ ActivityBase {
 		  source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
 		  sourceSize.width: 75 * ApplicationInfo.ratio
 		  visible: false
-		  anchors.right:score.left
+          anchors.right: score.left
 		  anchors.rightMargin: 10 * ApplicationInfo.ratio
-                  anchors.bottom: keyboard.top
-		  onClicked:Activity.nextSubLevel()
-    }
+          anchors.bottom: keyboard.top
+          onClicked: Activity.nextSubLevel()
+        }
+
         JsonParser {
             id: parser
             onError: console.error("Hangman: Error parsing json: " + msg);
