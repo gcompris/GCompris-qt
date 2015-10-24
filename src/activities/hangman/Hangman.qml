@@ -253,7 +253,6 @@ ActivityBase {
                                 id: localeBox
                                 model: langs.languages
                                 background: dialogActivityConfig
-                                width: 250 * ApplicationInfo.ratio
                                 label: qsTr("Select your locale")
                             }
                         }
