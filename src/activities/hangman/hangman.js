@@ -40,7 +40,8 @@ var wordList
 var subLevelsLeft
 var alreadyTypedLetters
 
-// js strings are immutable, can't replace letter like that... http://stackoverflow.com/questions/1431094/how-do-i-replace-a-character-at-a-particular-index-in-javascript
+// js strings are immutable, can't replace letter like that...
+// http://stackoverflow.com/questions/1431094/how-do-i-replace-a-character-at-a-particular-index-in-javascript
 String.prototype.replaceAt = function(index, character) {
     return this.substr(0, index) + character + this.substr(index+character.length);
 }
@@ -56,7 +57,8 @@ function start(items_) {
     var resourceUrl = "qrc:/gcompris/src/activities/lang/resource/"
 
     // register the voices for the locale
-    GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
+    GCompris.DownloadManager.updateResource(
+                GCompris.DownloadManager.getVoicesResourceForLocale(locale))
     
     dataset = Lang.load(items.parser, resourceUrl, "words.json",
                         "content-"+ locale +".json")
@@ -80,7 +82,8 @@ function start(items_) {
     if(!dataset) {
         // English fallback
         items.background.englishFallback = true
-        dataset = Lang.load(items.parser, resourceUrl, "words.json", "content-en.json")
+        dataset = Lang.load(items.parser, resourceUrl, "words.json",
+                            "content-en.json")
     } else {
         items.background.englishFallback = false
     }
@@ -137,14 +140,14 @@ function initLevel() {
         var row = 0;
         var offset = 0;
         while (offset < letters.length-1) {
-            var cols = letters.length <= 10 ? letters.length : (Math.ceil((letters.length-offset) / (3 - row)));
+            var cols = letters.length <= 10
+                    ? letters.length : (Math.ceil((letters.length-offset) / (3 - row)));
             layout[row] = new Array();
             for (var j = 0; j < cols; j++)
                 layout[row][j] = { label: letters[j+offset] };
             offset += j;
             row++;
         }
-
     }
     items.keyboard.layout = layout;
 
@@ -175,12 +178,11 @@ function processKeyPress(text) {
         // If no more life, we display the good word and show the bonus
         if(items.remainingLife == 0) {
             items.hidden.text = items.goodWord.translatedTxt;
-	    items.ok.visible = true
+            items.ok.visible = true
             items.bonus.bad("lion");
             return;
         }
-    }
-    else {
+    } else {
         // For all the indices found, we replace the "_" by the letter
         for(var index = 0 ; index < indices.length ; index ++) {
             // Characters in the word displayed are separated by spaces, this is why we do 2*index
@@ -229,8 +231,7 @@ function initSubLevel() {
     for(var i = 0; i < currentWord.length ; ++ i) {
         if(currentWord[i] == " ") {
             items.hidden.text = items.hidden.text + " " + " "
-        }
-        else {
+        } else {
             items.hidden.text = items.hidden.text + sp;
         }
     }
@@ -240,9 +241,8 @@ function nextSubLevel() {
     if( ++currentSubLevel >= maxSubLevel) {
         currentSubLevel = 0;
         nextLevel();
-    }
-    else
-    {	initSubLevel();
+    } else {
+        initSubLevel();
     }
 }
 

@@ -84,7 +84,7 @@ ActivityBase {
             property alias score: score
             property alias parser: parser
             property alias locale: background.locale
-            property alias ok:ok
+            property alias ok: ok
             property int   remainingLife
             property alias imageframe: imageframe
             property variant goodWord
@@ -215,7 +215,7 @@ ActivityBase {
                 visible: false
                 width: 1.3*parent.width
                 height: 1.2*parent.height
-                source: dataSetUrl+"fog.png"
+                source: dataSetUrl + "fog.png"
             }
 
             ThresholdMask {
@@ -224,7 +224,8 @@ ActivityBase {
                 source: wordImage
                 maskSource: threshmask
                 spread: 0.4
-                threshold: 0.15 * items.remainingLife // remainingLife between 0 and 6 => threshold between 0 and 0.9
+                // remainingLife between 0 and 6 => threshold between 0 and 0.9
+                threshold: 0.15 * items.remainingLife
             }
         }
 
@@ -269,7 +270,8 @@ ActivityBase {
             }
             onSaveData: {
                 var oldLocale = background.locale;
-                var newLocale = dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
+                var newLocale =
+                        dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
                 // Remove .UTF-8
                 if(newLocale.indexOf('.') != -1) {
                     newLocale = newLocale.substring(0, newLocale.indexOf('.'))
@@ -350,7 +352,8 @@ ActivityBase {
 
         Image {
             id: clock
-            source: "qrc:/gcompris/src/activities/reversecount/resource/" + "flower" + items.remainingLife + ".svg"
+            source: "qrc:/gcompris/src/activities/reversecount/resource/" +
+                    "flower" + items.remainingLife + ".svg"
             anchors {
                 left: parent.left
                 top: parent.top
