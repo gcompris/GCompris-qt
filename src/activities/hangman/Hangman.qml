@@ -344,7 +344,7 @@ ActivityBase {
 		  anchors.rightMargin: 10 * ApplicationInfo.ratio
                   anchors.bottom: keyboard.top
 		  onClicked:Activity.nextSubLevel()
-	}
+    }
         JsonParser {
             id: parser
             onError: console.error("Hangman: Error parsing json: " + msg);
@@ -376,7 +376,9 @@ ActivityBase {
         
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.initSubLevel);
+            interval: 1000
+            onLoose: ok.visible = true
+            onWin: Activity.nextSubLevel()
         }
 
         Loader {
