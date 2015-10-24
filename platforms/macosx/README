@@ -17,6 +17,8 @@ cd build-macosx
 ~/Qt/5.5/clang_64/bin/qmake -config release ../gcompris.pro
 make
 
+codesign --deep -s "Mac Developer: Bruno Coudoin" --entitlements ../platforms/macosx/gcompris.entitlements gcompris.app
+
 /Users/bdoin/Qt/5.5/clang_64//bin/macdeployqt gcompris.app  -executable=/Users/bdoin/Projets/gcompris/build-macosx/gcompris.app/Contents/MacOS/gcompris  -always-overwrite -qmldir=/Users/bdoin/Projets/gcompris/src  -codesign="Mac Developer: Bruno Coudoin" -verbose=2
 
 productbuild --component gcompris.app /Applications --sign "3rd Party Mac Developer Installer: Bruno Coudoin" gcompris.pkg
