@@ -92,6 +92,12 @@ function getAllLessons(dataset) {
     return lessons
 }
 
+/* return a list of words in the lesson. Each words is formatted like:
+ * 'description' => "splatter"
+ * 'image' => "words/splatter.png"
+ * 'voice' => "voices-$CA/$LOCALE/words/splatter.$CA"
+ * 'translatedTxt' => "splatter"
+ */
 function getLessonWords(dataset, lesson) {
     var wordList = lesson.content
     // Fill up the lesson with the translated text
