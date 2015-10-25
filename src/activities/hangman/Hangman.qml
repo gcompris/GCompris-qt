@@ -60,8 +60,6 @@ ActivityBase {
         
         signal start
         signal stop
-        signal voiceError
-        signal voiceDone
         
         Component.onCompleted: {
             dialogActivityConfig.getInitialConfiguration()
@@ -92,12 +90,16 @@ ActivityBase {
             property alias englishFallbackDialog: englishFallbackDialog
 
             function playWord() {
-                if (!activity.audioVoices.append(ApplicationInfo.getAudioFilePath(goodWord.voice)))
-                    voiceError();
+                var locale = ApplicationInfo.getVoicesLocale(items.locale)
+                if(activity.audioVoices.append(
+                            ApplicationInfo.getAudioFilePathForLocale(goodWord.voice, locale)))
+                    bonus.interval = 2500
+                else
+                    bonus.interval = 500
             }
-            function voice() {
-	            if(remainingLife == 3) {
-	                playWord();
+            onRemainingLifeChanged: {
+                if(remainingLife == 3) {
+                    playWord();
                 }
             }
         }
@@ -109,11 +111,8 @@ ActivityBase {
             }
         }
 
-
         onStart: {
             focus = true
-            activity.audioVoices.error.connect(voiceError)
-            activity.audioVoices.done.connect(voiceDone)
 
             // check for words.rcc:
             if (DownloadManager.isDataRegistered("words")) {
@@ -376,7 +375,7 @@ ActivityBase {
         
         Bonus {
             id: bonus
-            interval: 1000
+            interval: 2000
             onLoose: ok.visible = true
             onWin: Activity.nextSubLevel()
         }

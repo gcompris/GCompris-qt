@@ -178,6 +178,7 @@ function processKeyPress(text) {
         // If no more life, we display the good word and show the bonus
         if(items.remainingLife == 0) {
             items.hidden.text = items.goodWord.translatedTxt;
+            items.playWord()
             items.bonus.bad("lion");
             return;
         }
@@ -191,6 +192,7 @@ function processKeyPress(text) {
 
     // If no more '_' in the word to find, we have found all letters, show bonus
     if(items.hidden.text.indexOf("_") === -1) {
+        items.playWord()
         items.bonus.good("lion");
     }
 }
