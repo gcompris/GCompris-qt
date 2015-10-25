@@ -263,34 +263,36 @@ endif()
 #
 # external: qml-box2d
 #
+option(WITH_SUBMODULE_BOX2D "Use git submodule to get Box2D")
+if(WITH_SUBMODULE_BOX2D)
+  include(ExternalProject)
+  get_property(_qmake_program TARGET ${Qt5Core_QMAKE_EXECUTABLE} PROPERTY IMPORT_LOCATION)
 
-include(ExternalProject)
-get_property(_qmake_program TARGET ${Qt5Core_QMAKE_EXECUTABLE} PROPERTY IMPORT_LOCATION)
-
-set (_box2d_install_dir ${CMAKE_CURRENT_BINARY_DIR}/lib/qml/Box2D.2.0)
-set (_box2d_source_dir ${CMAKE_CURRENT_SOURCE_DIR}/external/qml-box2d)
-if(WIN32)
+  set (_box2d_install_dir ${CMAKE_CURRENT_BINARY_DIR}/lib/qml/Box2D.2.0)
+  set (_box2d_source_dir ${CMAKE_CURRENT_SOURCE_DIR}/external/qml-box2d)
+  if(WIN32)
     set (_box2d_library_dir "release/")
     set (_box2d_library_file "Box2D.dll")
-else()
+  else()
     set (_box2d_library_dir "")
     set (_box2d_library_file "libBox2D.so")
-endif()
+  endif()
 
-ExternalProject_Add(qml_box2d
-                    DOWNLOAD_COMMAND ""
-                    SOURCE_DIR ${_box2d_source_dir}
-                    CONFIGURE_COMMAND ${_qmake_program} ${_box2d_source_dir}/box2d.pro
-                    BUILD_COMMAND ${CMAKE_MAKE_PROGRAM}
-                    INSTALL_DIR ${_box2d_install_dir}
-                    INSTALL_COMMAND cp ${_box2d_library_dir}${_box2d_library_file} ${_box2d_source_dir}/qmldir ${_box2d_install_dir}
-                   )
+  ExternalProject_Add(qml_box2d
+    DOWNLOAD_COMMAND ""
+    SOURCE_DIR ${_box2d_source_dir}
+    CONFIGURE_COMMAND ${_qmake_program} ${_box2d_source_dir}/box2d.pro
+    BUILD_COMMAND ${CMAKE_MAKE_PROGRAM}
+    INSTALL_DIR ${_box2d_install_dir}
+    INSTALL_COMMAND cp ${_box2d_library_dir}${_box2d_library_file} ${_box2d_source_dir}/qmldir ${_box2d_install_dir}
+    )
 
-add_library(qml-box2d SHARED IMPORTED)
-set_target_properties(qml-box2d PROPERTIES IMPORTED_LOCATION ${_box2d_install_dir}/${_box2d_library_file})
+  add_library(qml-box2d SHARED IMPORTED)
+  set_target_properties(qml-box2d PROPERTIES IMPORTED_LOCATION ${_box2d_install_dir}/${_box2d_library_file})
 
-if(SAILFISHOS)
-  install(DIRECTORY ${_box2d_install_dir} DESTINATION share/harbour-gcompris-qt/lib/qml)
-else()
-  install(DIRECTORY ${_box2d_install_dir} DESTINATION lib/qml)
+  if(SAILFISHOS)
+    install(DIRECTORY ${_box2d_install_dir} DESTINATION share/harbour-gcompris-qt/lib/qml)
+  else()
+    install(DIRECTORY ${_box2d_install_dir} DESTINATION lib/qml)
+  endif()
 endif()
