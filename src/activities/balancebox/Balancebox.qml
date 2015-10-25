@@ -515,7 +515,7 @@ ActivityBase {
                             id: editorButton
                             style:  GCButtonStyle {}
                             height: levelsBox.height
-                            text: "Start Editor"
+                            text: qsTr("Start Editor")
                             visible: levelsBox.currentIndex == 1
                             onClicked: background.startEditor()
                         }
