@@ -19,15 +19,15 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "hangman/Hangman.qml"
-  difficulty: 3
+  difficulty: 5
   icon: "hangman/hangman.svg"
   author: "Rajdeep kaur &lt;rajdeep1994@gmail.com&gt;"
   demo: true
-  title: qsTr("Hangman")
+  title: qsTr("The classic hangman game")
   description: qsTr("Guess the letters of the given word. To help you, on every wrong try, a part of the image representing the word will be revealed.")
-  goal: qsTr("To enrich vocabulary")
+  goal: qsTr("This is a good exercise to improve reading and spelling skills.")
   prerequisite: ""
-  manual: qsTr("Guess the word letter by letter")
+  manual: qsTr("You can enter the letters using the virtual keyboard on the screen or with the real keyboard.")
   credit: ""
-  section: "computer keyboard reading"
+  section: "keyboard reading"
 }
