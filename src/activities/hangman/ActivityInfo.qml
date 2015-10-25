@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2015 Rajdeep Kaur <rajdeep1994@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,13 +21,13 @@ ActivityInfo {
   name: "hangman/Hangman.qml"
   difficulty: 5
   icon: "hangman/hangman.svg"
-  author: "Bruno Coudoin"
-  demo: false
+  author: "Rajdeep kaur &lt;rajdeep1994@gmail.com&gt;"
+  demo: true
   title: qsTr("The classic hangman game")
-  description: qsTr("A word is hidden, you must discover it letter by letter")
+  description: qsTr("Guess the letters of the given word. To help you, on every wrong try, a part of the image representing the word will be revealed.")
   goal: qsTr("This is a good exercise to improve reading and spelling skills.")
-  prerequisite: qsTr("Reading skill")
+  prerequisite: ""
   manual: qsTr("You can enter the letters using the virtual keyboard on the screen or with the real keyboard.")
   credit: ""
-  section: "/reading"
+  section: "keyboard reading"
 }
