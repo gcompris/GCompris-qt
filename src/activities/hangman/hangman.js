@@ -116,17 +116,11 @@ function initLevel() {
     {
         //to set the layout...populate
         var letters = new Array();
-        items.keyboard.shiftKey = false;
         for (var i = 0; i < wordList.length; i++) {
             var word = wordList[i].translatedTxt;
             for (var j = 0; j < word.length; j++) {
-                var letter = word.charAt(j);
-                var isUpper = (letter == letter.toLocaleUpperCase());
-                if (isUpper && letters.indexOf(letter.toLocaleLowerCase()) !== -1)
-                    items.keyboard.shiftKey = true;
-                else if (!isUpper && letters.indexOf(letter.toLocaleUpperCase()) !== -1)
-                    items.keyboard.shiftKey = true;
-                else if (letters.indexOf(letter) === -1)
+                var letter = word.charAt(j).toLocaleLowerCase();
+                if (letters.indexOf(letter) === -1)
                     letters.push(word.charAt(j));
             }
         }
@@ -156,6 +150,9 @@ function initLevel() {
 
 
 function processKeyPress(text) {
+
+    text = text.toLocaleLowerCase()
+
     // Check if the character has already been typed
     if(alreadyTypedLetters.indexOf(text) !== -1) {
         // Character already typed, do nothing
@@ -167,7 +164,7 @@ function processKeyPress(text) {
     // Get all the indices of this letter in the word
     var indices = [];
     for(var i = 0 ; i < currentWord.length ; i ++) {
-        if (currentWord[i] === text) {
+        if (currentWord[i].toLocaleLowerCase() === text) {
             indices.push(i);
         }
     }
