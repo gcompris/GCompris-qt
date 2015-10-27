@@ -338,9 +338,11 @@ ActivityBase {
 		  source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
 		  sourceSize.width: 75 * ApplicationInfo.ratio
 		  visible: false
-          anchors.right: score.left
-		  anchors.rightMargin: 10 * ApplicationInfo.ratio
-          anchors.bottom: keyboard.top
+          anchors {
+              bottom: score.top
+              horizontalCenter: score.horizontalCenter
+              bottomMargin: 10 * ApplicationInfo.ratio
+          }
           onClicked: Activity.nextSubLevel()
         }
 
