@@ -370,7 +370,6 @@ Item {
 
                     MouseArea {
                         anchors.fill: parent
-                        hoverEnabled: true
                         propagateComposedEvents: true
 
                         // update index to allow for updating z value of the rows
