@@ -163,6 +163,7 @@ ActivityBase {
                     text = "";
                 }
             }
+            onAccepted: if(items.remainingLife === 0) Activity.nextSubLevel()
         }
         
         Item {

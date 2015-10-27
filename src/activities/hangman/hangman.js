@@ -151,7 +151,7 @@ function initLevel() {
 
 function processKeyPress(text) {
 
-    if(items.remainingLife == 0)
+    if(items.remainingLife === 0)
         return
 
     text = text.toLocaleLowerCase()
