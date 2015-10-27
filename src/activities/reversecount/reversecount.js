@@ -142,13 +142,14 @@ function initLevel() {
     numberOfFish = levels[currentLevel].numberOfFish
 
     fishIndex = 0
-    items.clockPosition = 4
     tuxIceBlockNumber = 0
     items.tux.init()
 
     calculateNextPlaceFishToReach()
     placeFishToReach()
+    moveTuxToIceBlock()
     items.backgroundImg.source = url + backgrounds[currentLevel % backgrounds.length]
+    items.clockPosition = 4
 }
 
 
@@ -160,7 +161,6 @@ function moveTux() {
         items.clockPosition--
         if (items.clockPosition === 0) {
             lost()
-            initLevel()
             return
         }
     }
@@ -211,7 +211,6 @@ function moveTuxToNextIceBlock() {
         items.clockPosition--
         if (items.clockPosition === 0) {
             lost()
-            initLevel()
             return
         }
         tuxIsMoving = false;
