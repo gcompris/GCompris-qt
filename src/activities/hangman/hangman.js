@@ -151,6 +151,9 @@ function initLevel() {
 
 function processKeyPress(text) {
 
+    if(items.remainingLife == 0)
+        return
+
     text = text.toLocaleLowerCase()
 
     // Check if the character has already been typed
@@ -171,9 +174,8 @@ function processKeyPress(text) {
 
     if(indices.length == 0) {
         // The letter is not in the word to find
-        items.remainingLife --;
         // If no more life, we display the good word and show the bonus
-        if(items.remainingLife == 0) {
+        if(--items.remainingLife == 0) {
             items.hidden.text = items.goodWord.translatedTxt;
             items.playWord()
             items.bonus.bad("lion");
