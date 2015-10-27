@@ -84,7 +84,6 @@ ActivityBase {
             property alias locale: background.locale
             property alias ok: ok
             property int   remainingLife
-            property alias imageframe: imageframe
             property variant goodWord
             property int goodWordIndex
             property alias englishFallbackDialog: englishFallbackDialog
@@ -143,7 +142,11 @@ ActivityBase {
             font.pixelSize:60
             font.letterSpacing :0.5
             anchors.horizontalCenter: parent.horizontalCenter
-            y: background.height/3
+            anchors {
+                bottom: bar.top
+                bottomMargin: 5 * ApplicationInfo.ratio
+            }
+            z: 11
         }
         
         TextInput {
@@ -164,22 +167,18 @@ ActivityBase {
         
         Item {
   		    id: imageframe
-            width: background.width/4.2
-		    height: background.height/4.2
-		    x: background.width/2.5
-		    y: background.height/9.4
+            width: Math.min(300,
+                            background.width * 0.8,
+                            hidden.y)
+            height: width
+            anchors.horizontalCenter: parent.horizontalCenter
+            y: background.height * 0.05
+            z: 10
             Image {
 		        id: wordImage
-		        width: background.width/6
-		        height: background.height/5
-		        x: imageframe.width/2
-		        y: imageframe.height/2
 		        smooth: true
-		        visible: false
-		        anchors {
-                    centerIn: parent
-                    margins: 0.06 + parent.width
-		        }
+                visible: false
+                anchors.fill: parent
                 property string nextSource
                 function changeSource(nextSource_) {
                     nextSource = nextSource_
