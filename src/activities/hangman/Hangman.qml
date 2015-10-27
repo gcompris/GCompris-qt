@@ -137,12 +137,12 @@ ActivityBase {
             id: hidden
             fontSize: largeSize
             color: "black"
-            font.pointSize:5
-            minimumPixelSize:20
-            font.pixelSize:60
-            font.letterSpacing :0.5
-            anchors.horizontalCenter: parent.horizontalCenter
+            font.letterSpacing: 0.5
+            width: parent.width * 0.9
+            wrapMode: Text.WordWrap
+            horizontalAlignment: Text.AlignHCenter
             anchors {
+                horizontalCenter: parent.horizontalCenter
                 bottom: bar.top
                 bottomMargin: 5 * ApplicationInfo.ratio
             }
@@ -172,7 +172,7 @@ ActivityBase {
                             hidden.y)
             height: width
             anchors.horizontalCenter: parent.horizontalCenter
-            y: background.height * 0.05
+            y: 5 * ApplicationInfo.ratio
             z: 10
             Image {
 		        id: wordImage
