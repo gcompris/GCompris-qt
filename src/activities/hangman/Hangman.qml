@@ -352,8 +352,6 @@ ActivityBase {
 
         Image {
             id: clock
-            source: "qrc:/gcompris/src/activities/reversecount/resource/" +
-                    "flower" + items.remainingLife + ".svg"
             anchors {
                 left: parent.left
                 top: parent.top
@@ -361,7 +359,37 @@ ActivityBase {
 
             }
             sourceSize.width: 66 * bar.barZoom
+            property int remainingife: items.remainingLife
+            onRemainingifeChanged: clockAnim.start()
 
+            SequentialAnimation {
+                id: clockAnim
+                ParallelAnimation {
+                    NumberAnimation {
+                        target: clock; properties: "opacity";
+                        to: 0; duration: 800; easing.type: Easing.OutCubic
+                    }
+                    NumberAnimation {
+                        target: clock; properties: "rotation"; from: 0; to: 180;
+                        duration: 800; easing.type: Easing.OutCubic
+                    }
+                }
+                PropertyAction {
+                    target: clock; property: 'source';
+                    value: "qrc:/gcompris/src/activities/reversecount/resource/" +
+                           "flower" + items.remainingLife + ".svg"
+                }
+                ParallelAnimation {
+                    NumberAnimation {
+                        target: clock; properties: "opacity";
+                        to: 1; duration: 800; easing.type: Easing.OutCubic
+                    }
+                    NumberAnimation {
+                        target: clock; properties: "rotation"; from: 180; to: 0;
+                        duration: 800; easing.type: Easing.OutCubic
+                    }
+                }
+            }
         }
         
         
