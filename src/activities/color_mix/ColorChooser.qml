@@ -102,7 +102,7 @@ Image {
     }
 
     ColorButton {
-        text: "+"
+        source: Activity.url + "plus.svg"
         anchors {
             verticalCenter: parent.verticalCenter
             right: parent.right
@@ -111,7 +111,7 @@ Image {
     }
 
     ColorButton {
-        text: "-"
+        source: Activity.url + "minus.svg"
         anchors {
             verticalCenter: parent.verticalCenter
             left: parent.left

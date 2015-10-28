@@ -22,27 +22,22 @@ import QtQuick 2.0
 
 import "../../core"
 
-Rectangle {
+Item {
     id: button
     height: parent.height / 4
     width: height
     z: 3
-    color: "#A8ffffff"
-    radius: width / 2
-    border.color: "#a82a2a2a"
 
-    property alias text: buttonText.text
+    property alias source: buttonImage.source
 
     signal clicked
 
-    GCText {
-        id: buttonText
+    Image {
+        id: buttonImage
         anchors.centerIn: parent
+        sourceSize.width: parent.width
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        fontSize: Math.max(parent.height * 0.8, 10)
-        color: "#2a2a2a"
-
     }
 
     MouseArea {
