@@ -261,14 +261,45 @@ if(SAILFISHOS)
 endif()
 
 #
-# external: qml-box2d
+# qml-box2d
 #
-option(WITH_SUBMODULE_BOX2D "Use git submodule to get Box2D")
-if(WITH_SUBMODULE_BOX2D)
+
+set(QML_BOX2D_MODULE "auto" CACHE STRING "Policy for qml-box2d module [auto|submodule|system]")
+
+include(qt_helper)
+
+getQtQmlPath(_qt_qml_system_path)
+set (_box2d_system_dir "${_qt_qml_system_path}/Box2D.2.0")
+
+if (${QML_BOX2D_MODULE} STREQUAL "submodule")
+  message("Building qml-box2d module from submodule")
+  set(_need_box2d_submodule "TRUE")
+else()
+  # try to find module in system scope
+  find_library(QML_BOX2D_LIBRARY NAMES Box2D libBox2D PATHS ${_box2d_system_dir} NO_DEFAULT_PATH)
+  if (QML_BOX2D_LIBRARY)
+    message("Using system qml-box2d plugin at ${QML_BOX2D_LIBRARY}")
+    # for packaging builds, copy the module manually to the correct location
+    if(SAILFISHOS)
+      file(COPY ${_box2d_system_dir}/qmldir ${QML_BOX2D_LIBRARY} DESTINATION share/harbour-gcompris-qt/lib/qml/Box2D.2.0)
+    elseif(ANDROID)
+      file(COPY ${_box2d_system_dir}/qmldir ${QML_BOX2D_LIBRARY} DESTINATION lib/qml/Box2D.2.0)
+    endif()
+    # FIXME: add others as needed
+  else()
+    if (${QML_BOX2D_MODULE} STREQUAL "auto")
+      message("Did not find the qml-box2d module in system scope, falling back to submodule build ...")
+      set (_need_box2d_submodule "TRUE")
+    else()
+      message(FATAL_ERROR "Did not find the qml-box2d module in system scope and submodule build was not requested. Can't continue!")
+    endif()
+  endif()
+endif()
+
+if (_need_box2d_submodule)
+  # build qml-box2d ourselves from submodule
   include(ExternalProject)
   get_property(_qmake_program TARGET ${Qt5Core_QMAKE_EXECUTABLE} PROPERTY IMPORT_LOCATION)
-
-  set (_box2d_install_dir ${CMAKE_CURRENT_BINARY_DIR}/lib/qml/Box2D.2.0)
   set (_box2d_source_dir ${CMAKE_CURRENT_SOURCE_DIR}/external/qml-box2d)
   if(WIN32)
     set (_box2d_library_dir "release/")
@@ -276,6 +307,12 @@ if(WITH_SUBMODULE_BOX2D)
   else()
     set (_box2d_library_dir "")
     set (_box2d_library_file "libBox2D.so")
+  endif()
+  set (_box2d_install_dir ${CMAKE_CURRENT_BINARY_DIR}/lib/qml/Box2D.2.0)
+  # make sure submodule is up2date
+  find_package(Git)
+  if(GIT_FOUND)
+    execute_process(COMMAND ${GIT_EXECUTABLE} submodule update --init)
   endif()
 
   ExternalProject_Add(qml_box2d
