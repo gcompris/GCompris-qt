@@ -147,7 +147,8 @@ function initLevel() {
                             "imgHeight": levelData.levels[i].height == undefined ? 0 : levelData.levels[i].height,
                             "imgWidth": levelData.levels[i].width == undefined ? 0 : levelData.levels[i].width,
                             "dropAreaSize": levelData.levels[i].dropAreaSize == undefined ? 15 : levelData.levels[i].dropAreaSize,
-                            "imageName" : levelData.levels[i].pixmapfile
+                            "imageName" : levelData.levels[i].pixmapfile,
+                            "factor": Math.max(3, 1.0 / levelData.levels.length * 100)
                          });
         }
         //Create Text pieces for the level which has to display additional information
