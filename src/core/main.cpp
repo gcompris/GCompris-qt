@@ -44,7 +44,7 @@ bool loadAndroidTranslation(QTranslator &translator, const QString &locale)
     uchar *data = (uchar*)malloc(file.size());
 
     if(!file.exists())
-        qDebug() << "file assets:/" << locale << ".qm exists";
+        qDebug() << "file assets:/" << locale << ".qm does not exist";
 
     in.readRawData((char*)data, file.size());
 
