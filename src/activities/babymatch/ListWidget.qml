@@ -69,10 +69,7 @@ Item {
 
         MouseArea {
             anchors.fill: parent
-            hoverEnabled: true
-            onEntered: instruction.show()
             onClicked: view.checkAnswer()
-            onExited: instruction.hide()
         }
     }
 
