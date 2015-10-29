@@ -62,7 +62,9 @@ ActivityBase {
             property alias animationcloud:animationcloud
             property alias bar: bar
             property alias bonus: bonus
+            property alias parachuteImage:parachuteImage
             property alias animationboat:animationboat
+            property alias parachuteanimation:parachuteanimation
         }
         Item{
             id:helimotion
@@ -91,6 +93,11 @@ ActivityBase {
                     onExited:{
                         forhover.visible=false
                     }
+                    onClicked:{
+                       parachuteImage.visible=true
+                       Activity.parachuefun()
+                    }
+
                 }
             }
 
@@ -101,7 +108,25 @@ ActivityBase {
                 properties: "x"
                 from:-helimotion.width
                 to:background.width
-                duration: 5000
+                duration: 9500
+                easing.type:Easing.Linear
+            }
+        }
+
+        Item{
+            id:parachutOpen
+            Image{
+               id:parachuteImage
+               visible:false
+               source:activity.dataSetUrl+"parachute.svgz"
+            }
+            PropertyAnimation{
+                id:parachuteanimation
+                target:parachutOpen
+                properties: "y"
+                from:helicopter.height
+                to:background.height/1.2
+                duration:5000
                 easing.type:Easing.Linear
             }
         }
@@ -121,7 +146,7 @@ ActivityBase {
                 properties:"x"
                 from:background.width
                 to:-cloud.width
-                duration:5000
+                duration:9000
                 easing.type:Easing.Linear
             }
         }
@@ -142,7 +167,7 @@ ActivityBase {
                 properties:"x"
                 from:-boat.width
                 to:background.width-2*boat.width
-                duration:5000
+                duration:8000
                 easing.type:Easing.Linear
             }
         }

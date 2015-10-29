@@ -49,6 +49,10 @@ function initLevel() {
     items.animationboat.restart()
 }
 
+function parachuefun(){
+     items.parachuteanimation.restart()
+}
+
 function nextLevel() {
     if(numberOfLevel <= ++currentLevel ) {
         currentLevel = 0
