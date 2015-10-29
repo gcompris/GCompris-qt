@@ -85,6 +85,7 @@ function createEmptyLevel()
 
 function initLevel()
 {
+    props.editor.testBox.loading.start();
     if (currentLevel >= numberOfLevel) {
         levels.push(createEmptyLevel());
         levelChanged = false;
@@ -94,56 +95,16 @@ function initLevel()
         currentIsNewLevel = false;
 
     level = levels[currentLevel];
-    props.bar.level = currentLevel + 1
-    props.lastBallIndex = -1;
-    props.lastGoalIndex = -1;
-    props.lastOrderNum = 0;
-    var maxContactValue = 1;
-
-    props.mapModel.clear();
-    targetList = [];
-    for (var row = 0; row < level.map.length; row++) {
-        for (var col = 0; col < level.map[row].length; col++) {
-            var contactValue = "";
-            var value = parseInt(level.map[row][col]);  // always enforce number
-            var orderNum = (value & 0xFF00) >> 8;
-            if (orderNum > 0 && level.targets[orderNum - 1] === undefined) {
-                console.error("Invalid level: orderNum " + orderNum
-                              + " without target value!");
-            } else if (orderNum > 0) {
-                if (orderNum > props.lastOrderNum)
-                    props.lastOrderNum = orderNum;
-                var target = level.targets[orderNum-1]
-                targetList.push(parseInt(target));
-                contactValue = Number(target).toString();
-                if (target >= maxContactValue)
-                    maxContactValue = target + 1;
-            }
-            props.mapModel.append({
-                "row": row,
-                "col": col,
-                "value": value,
-                "contactValue": (orderNum > 0) ? contactValue : ""
-            });
-            if (value & GOAL) {
-                if (props.lastGoalIndex > -1) {
-                    console.error("Invalid level: multiple goal locations: row/col="
-                                  + row + "/" + col);
-                    return;
-                }
-                props.lastGoalIndex = row * level.map.length + col;
-            }
-            if (value & START) {
-                if (props.lastBallIndex > -1) {
-                    console.error("Invalid level: multiple start locations: row/col="
-                                  + row + "/" + col);
-                    return;
-                }
-                props.lastBallIndex = row * level.map.length + col;
-            }
-        }
-    }
-    props.contactValue = maxContactValue;
+    props.bar.level = currentLevel + 1;
+    // populate model in the worker-thread:
+    props.editorWorker.sendMessage({
+                                       lastBallIndex: props.lastBallIndex,
+                                       lastGoalIndex: props.lastGoalIndex,
+                                       lastOrderNum:  props.lastOrderNum,
+                                       mapModel: props.mapModel,
+                                       targetList: targetList,
+                                       level: level
+                                   });
 }
 
 function dec2hex(i) {

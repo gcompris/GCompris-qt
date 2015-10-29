@@ -99,6 +99,7 @@ Item {
         property alias bar: bar
         property int lastGoalIndex: -1
         property int lastBallIndex: -1
+        property alias editorWorker: editorWorker
     }
 
     function startTesting() {
@@ -365,6 +366,21 @@ Item {
                         onValueChanged: if (value != props.contactValue) props.contactValue = value;
                     }
                 }
+            }
+        }
+
+        WorkerScript {
+            id: editorWorker
+
+            source: "editor_worker.js"
+            onMessage: {
+                // worker finished, update all changed values (except the model):
+                props.contactValue = messageObject.maxContactValue;
+                props.lastBallIndex = messageObject.lastBallIndex;
+                props.lastGoalIndex = messageObject.lastGoalIndex;
+                props.lastOrderNum = messageObject.lastOrderNum;
+                Activity.targetList = messageObject.targetList;
+                testBox.loading.stop();
             }
         }
 

@@ -138,6 +138,7 @@ ActivityBase {
             property alias parser: parser
             property double dpi
             property GCAudio audioEffects: activity.audioEffects
+            property Loading loading: activity.loading
         }
 
         Loader {

@@ -32,6 +32,8 @@
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris
 .import Box2D 2.0 as Box2D
+.import "qrc:/gcompris/src/core/core.js" as Core
+.import QtQml 2.2 as Qml
 
 Qt.include("balancebox_common.js")
 
@@ -78,6 +80,7 @@ var wallComponent = Qt.createComponent("qrc:/gcompris/src/activities/balancebox/
 var contactComponent = Qt.createComponent("qrc:/gcompris/src/activities/balancebox/BalanceContact.qml");
 var balanceItemComponent = Qt.createComponent("qrc:/gcompris/src/activities/balancebox/BalanceItem.qml");
 var contactIndex = -1;
+var pendingObjects = 0;
 
 function start(items_) {
     items = items_;
@@ -224,12 +227,46 @@ function createObject(component, properties)
     return object;
 }
 
+var incubators;  // need to reference all returned incubators in global scope
+                 // or things don't work
+function incubateObject(targetArr, component, properties)
+{
+    var p = properties;
+    p.world = items.world;
+    var incubator = component.incubateObject(items.mapWrapper, p);
+    if (incubator === null) {
+        console.error("Error during object incubation!");
+        items.loading.stop();
+        return;
+    }
+    incubators.push(incubator);
+    if (incubator.status === Qml.Component.Ready)
+        targetAttr.push(incubator.object);
+    else if (incubator.status === Qml.Component.Loading) {
+        pendingObjects++;
+        incubator.onStatusChanged = function(status) {
+            if (status === Qml.Component.Ready)
+                targetArr.push(incubator.object);
+            else
+                console.error("Error during object creation!");
+            if (--pendingObjects === 0) {
+                // initMap completed
+                items.timer.start();
+                items.loading.stop();
+            }
+        }
+    } else
+        console.error("Error during object creation!");
+}
+
 function initMap()
 {
     var modelMap = new Array();
+    incubators = new Array();
     goalUnlocked = true;
     items.mapWrapper.rows = map.length;
     items.mapWrapper.columns = map[0].length;
+    pendingObjects = 0;
     for (var row = 0; row < map.length; row++) {
         for (var col = 0; col < map[row].length; col++) {
             var x = col * items.cellSize;
@@ -239,40 +276,50 @@ function initMap()
             if (debugDraw) {
                 try {
                     var rect = Qt.createQmlObject(
-                            "import QtQuick 2.0;Rectangle{"
-                           +"width:" + items.cellSize +";"
-                           +"height:" + items.cellSize+";"
-                           +"x:" + x + ";"
-                           +"y:" + y +";"
-                           +"color: \"transparent\";"
-                           +"border.color: \"blue\";"
-                           +"border.width: 1;"
-                           +"}", items.mapWrapper);
+                                "import QtQuick 2.0;Rectangle{"
+                                +"width:" + items.cellSize +";"
+                                +"height:" + items.cellSize+";"
+                                +"x:" + x + ";"
+                                +"y:" + y +";"
+                                +"color: \"transparent\";"
+                                +"border.color: \"blue\";"
+                                +"border.width: 1;"
+                                +"}", items.mapWrapper);
                 } catch (e) {
                     console.error("Error creating object: " + e);
                 }
             }
             if (map[row][col] & NORTH) {
-                walls.push(createObject(wallComponent, {x: x-items.wallSize/2, 
-                    y: y-items.wallSize/2, width: items.cellSize + items.wallSize,
-                    height: items.wallSize,
-                    shadow: false}));
+                incubateObject(walls, wallComponent, {
+                                   x: x-items.wallSize/2,
+                                   y: y-items.wallSize/2,
+                                   width: items.cellSize + items.wallSize,
+                                   height: items.wallSize,
+                                   shadow: false});
             }
             if (map[row][col] & SOUTH) {
-                walls.push(createObject(wallComponent, {x: x-items.wallSize/2,
-                    y: y+items.cellSize-items.wallSize/2,
-                    width: items.cellSize+items.wallSize, height: items.wallSize,
-                    shadow: false}));
+                incubateObject(walls, wallComponent, {
+                                   x: x-items.wallSize/2,
+                                   y: y+items.cellSize-items.wallSize/2,
+                                   width: items.cellSize+items.wallSize,
+                                   height: items.wallSize,
+                                   shadow: false});
             }
             if (map[row][col] & EAST) {
-                walls.push(createObject(wallComponent, {x: x+items.cellSize-items.wallSize/2,
-                    y: y-items.wallSize/2, width: items.wallSize, 
-                    height: items.cellSize+items.wallSize, shadow: false}));
+                incubateObject(walls, wallComponent, {
+                                   x: x+items.cellSize-items.wallSize/2,
+                                   y: y-items.wallSize/2,
+                                   width: items.wallSize,
+                                   height: items.cellSize+items.wallSize,
+                                   shadow: false});
             }
             if (map[row][col] & WEST) {
-                walls.push(createObject(wallComponent, {x: x-items.wallSize/2,
-                    y: y-items.wallSize/2, width: items.wallSize,
-                    height: items.cellSize+items.wallSize, shadow: false}));
+                incubateObject(walls, wallComponent, {
+                                   x: x-items.wallSize/2,
+                                   y: y-items.wallSize/2,
+                                   width: items.wallSize,
+                                   height: items.cellSize+items.wallSize,
+                                   shadow: false});
             }
 
             if (map[row][col] & START) {
@@ -285,46 +332,53 @@ function initMap()
                 var goalX = col * items.cellSize + items.wallSize/2;
                 var goalY = row * items.cellSize + items.wallSize/2;
                 goal = createObject(balanceItemComponent, {
-                        x: goalX, y: goalY,
-                        width: items.cellSize - items.wallSize,
-                        height: items.cellSize - items.wallSize,
-                        imageSource: baseUrl + "/door_closed.svg",
-                        categories: items.goalType,
-                        sensor: true});
+                                        x: goalX,
+                                        y: goalY,
+                                        width: items.cellSize - items.wallSize,
+                                        height: items.cellSize - items.wallSize,
+                                        imageSource: baseUrl + "/door_closed.svg",
+                                        categories: items.goalType,
+                                        sensor: true});
             }
             
             if (map[row][col] & HOLE) {
                 var holeX = col * items.cellSize + items.wallSize;
                 var holeY = row * items.cellSize + items.wallSize;
-                holes.push(createObject(balanceItemComponent, {
-                    x: holeX, y: holeY,
-                    width: items.ballSize, height: items.ballSize,
-                    imageSource: baseUrl + "/hole.svg",
-                    density: 0, friction: 0, restitution: 0,
-                    categories: items.holeType,
-                    sensor: true}));
+                incubateObject(holes, balanceItemComponent, {
+                                   x: holeX,
+                                   y: holeY,
+                                   width: items.ballSize,
+                                   height: items.ballSize,
+                                   imageSource: baseUrl + "/hole.svg",
+                                   density: 0,
+                                   friction: 0,
+                                   restitution: 0,
+                                   categories: items.holeType,
+                                   sensor: true});
             }
             
             if (orderNum > 0) {
                 var contactX = col * items.cellSize + items.wallSize/2;
                 var contactY = row * items.cellSize + items.wallSize/2;
                 goalUnlocked = false;
-                contacts.push(createObject(contactComponent, {
-                    x: contactX, y: contactY,
-                    width: items.cellSize - items.wallSize, 
-                    height: items.cellSize - items.wallSize,
-                    pressed: false,
-                    density: 0, friction: 0, restitution: 0,
-                    categories: items.buttonType,
-                    sensor: true,
-                    orderNum: orderNum,
-                    text: level.targets[orderNum-1]}));
+                incubateObject(contacts, contactComponent, {
+                                   x: contactX,
+                                   y: contactY,
+                                   width: items.cellSize - items.wallSize,
+                                   height: items.cellSize - items.wallSize,
+                                   pressed: false,
+                                   density: 0,
+                                   friction: 0,
+                                   restitution: 0,
+                                   categories: items.buttonType,
+                                   sensor: true,
+                                   orderNum: orderNum,
+                                   text: level.targets[orderNum-1]});
             }
         }
     }
     if (goalUnlocked && goal)  // if we have no contacts at all
         goal.imageSource = baseUrl + "/door.svg";
-
 }
 
 function addBallContact(item)
@@ -373,6 +427,7 @@ function tearDown()
 }
 
 function initLevel(testLevel) {
+    items.loading.start();
     items.bar.level = currentLevel + 1;
 
     // reset everything
@@ -381,7 +436,6 @@ function initLevel(testLevel) {
     level = dataset[currentLevel];
     map = level.map
     initMap();
-    items.timer.start();
 }
 
 // keyboard tilting stuff:
