@@ -131,7 +131,15 @@ ActivityBase {
         Loader {
             id: activityLoader
             asynchronous: true
-            onStatusChanged: if (status == Loader.Ready) loadActivity()
+            onStatusChanged: {
+                if (status == Loader.Loading) {
+                    loading.start();
+                } else if (status == Loader.Ready) {
+                    loading.stop();
+                    loadActivity();
+                } else if (status == Loader.Error)
+                    loading.stop();
+            }
         }
 
         // Filters
@@ -404,6 +412,7 @@ ActivityBase {
                                              {
                                                  'audioVoices': audioVoices,
                                                  'audioEffects': audioEffects,
+                                                 'loading': loading,
                                                  'menu': menuActivity,
                                                  'activityInfo': ActivityInfoTree.currentActivity
                                              })
@@ -458,6 +467,7 @@ ActivityBase {
                 displayDialog(dialogActivityConfig)
             }
         }
+
     }
 
     DialogAbout {

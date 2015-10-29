@@ -142,6 +142,10 @@ Window {
         }
     }
 
+    Loading {
+        id: loading
+    }
+
     StackView {
         id: pageView
         anchors.fill: parent
@@ -149,7 +153,8 @@ Window {
             "item": "qrc:/gcompris/src/activities/" + ActivityInfoTree.rootMenu.name,
             "properties": {
                 'audioVoices': audioVoices,
-                'audioEffects': audioEffects
+                'audioEffects': audioEffects,
+                'loading': loading
             }
         }
 

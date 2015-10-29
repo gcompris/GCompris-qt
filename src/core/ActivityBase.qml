@@ -114,6 +114,15 @@ Item {
     property GCAudio audioEffects
 
     /**
+     * type:Loading
+     * The global loading object.
+     *
+     * Start it to signal heavy computation in case of GUI freezes.
+     * @sa Loading
+     */
+    property Loading loading
+
+    /**
      * Emitted when the user wants to return to the Home/Menu screen.
      */
     signal home
