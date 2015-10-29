@@ -1,4 +1,4 @@
-/* GCompris - hangman.qml
+/* GCompris - parachute.qml
  *
  * Copyright (C) 2015 Rajdeep Kaur <rajdeep51994@gmail.com>
  *
@@ -29,19 +29,19 @@ import "parachute.js" as Activity
 ActivityBase {
     id: activity
     
-    property string dataSetUrl: "qrc:/gcompris/src/activities/parachute/resources/"
+    property string dataSetUrl: "qrc:/gcompris/src/activities/parachute/resource/"
     
     onStart: focus = true
     onStop: {}
 
     pageComponent: Image {
         
-	id: background
-        source:"qrc:/gcompris/src/activities/parachute/resource/" + "background.svgz"
-	sourceSize.width: parent.width
-	anchors.fill: parent
+        id: background
+        source:activity.dataSetUrl + "back.svg"
+        fillMode: Image.PreserveAspectCrop
+        sourceSize.width: parent.width
+        anchors.fill: parent
 
-	
         signal start
         signal stop
 
@@ -49,18 +49,104 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
+        
+        onStart: { Activity.start(items) }
+        onStop: { Activity.stop() }
 
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
             property Item main: activity.main
             property alias background: background
+            property alias animationheli:animationheli
+            property alias animationcloud:animationcloud
             property alias bar: bar
             property alias bonus: bonus
+            property alias animationboat:animationboat
+        }
+        Item{
+            id:helimotion
+            width:helicopter.width
+            height:helicopter.height
+            x: -width
+            Rectangle{
+                id:forhover
+                width:helicopter.width
+                height:helicopter.height
+                visible:false
+                border.width:7
+                radius:20
+                border.color:"#A80000"
+            }
+            Image{
+                id:helicopter
+                source:activity.dataSetUrl+"tuxplane.svgz"
+                MouseArea {
+                    id:mousei
+                    hoverEnabled: true
+                    anchors.fill:parent
+                    onEntered:{
+                        forhover.visible=true
+                    }
+                    onExited:{
+                        forhover.visible=false
+                    }
+                }
+            }
+
+
+            PropertyAnimation {
+                id:animationheli
+                target:helimotion
+                properties: "x"
+                from:-helimotion.width
+                to:background.width
+                duration: 5000
+                easing.type:Easing.Linear
+            }
         }
 
-        onStart: { Activity.start(items) }
-        onStop: { Activity.stop() }
+        Item{
+            id:cloudmotion
+            width:cloud.width
+            height:height.height
+            Image{
+                id:cloud
+                source:activity.dataSetUrl+"cloud.svgz"
+                y:background.height/7
+            }
+            PropertyAnimation {
+                id:animationcloud
+                target:cloudmotion
+                properties:"x"
+                from:background.width
+                to:-cloud.width
+                duration:5000
+                easing.type:Easing.Linear
+            }
+        }
+
+
+        Item{
+            id:boatmotion
+            width:boat.width
+            height:boat.heigt
+            Image{
+                id:boat
+                source:activity.dataSetUrl+"fishingboat.svgz"
+                y:background.height/1.2
+            }
+            PropertyAnimation {
+                id:animationboat
+                target:boatmotion
+                properties:"x"
+                from:-boat.width
+                to:background.width-2*boat.width
+                duration:5000
+                easing.type:Easing.Linear
+            }
+        }
+
 
         GCText {
             anchors.centerIn: parent
@@ -90,3 +176,5 @@ ActivityBase {
     }
 
 }
+
+

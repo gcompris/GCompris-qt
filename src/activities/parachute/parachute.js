@@ -1,4 +1,4 @@
-/* GCompris - hangman.js
+/* GCompris - parachute.js
  *
  *   Copyright (C) 2015 Rajdeep Kaur <rajdeep1994@gmail.com>
  *
@@ -22,9 +22,12 @@
 
 .pragma library
 .import QtQuick 2.0 as Quick
+.import GCompris 1.0 as GCompris 
+.import "qrc:/gcompris/src/core/core.js" as Core
+
 
 var currentLevel = 0
-var numberOfLevel = 4
+var numberOfLevel = 5
 var items
 
 function start(items_) {
@@ -34,10 +37,16 @@ function start(items_) {
 }
 
 function stop() {
+  items.animationheli.stop()
+  items.animationcloud.stop()
+  items.animationboat.stop()
 }
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    items.animationheli.restart()
+    items.animationcloud.restart()
+    items.animationboat.restart()
 }
 
 function nextLevel() {
