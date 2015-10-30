@@ -168,7 +168,7 @@ ActivityBase {
         
         Item {
   		    id: imageframe
-            width: Math.min(300,
+            width: Math.min(300 * ApplicationInfo.ratio,
                             background.width * 0.8,
                             hidden.y)
             height: width
