@@ -100,7 +100,7 @@ Item {
         id: loadingImage
         source: "qrc:/gcompris/src/core/resource/loading.svg";
         anchors.centerIn: parent
-        sourceSize.width: 66
+        sourceSize.width: 1024
         width: 150
         height: 150
         opacity: 0.8
