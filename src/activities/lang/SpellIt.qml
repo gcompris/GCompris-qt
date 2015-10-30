@@ -153,12 +153,10 @@ Item {
 
             Image {
                 id: wordImage
-                sourceSize.width: Math.min(parent.width * 0.6, parent.height * 0.6)
-
-                anchors {
-                    centerIn: parent
-                    margins: 0.05 + parent.width
-                }
+                // Images are not svg
+                width: Math.min(parent.width, parent.height) * 0.9
+                height: width
+                anchors.centerIn: parent
                 property string nextSource
                 function changeSource(nextSource_) {
                     nextSource = nextSource_
@@ -211,13 +209,15 @@ Item {
                 topMargin: 20* ApplicationInfo.ratio
             }
 
+            // FIXME This does not work well on mobile. In case the children click on
+            // the TextInput the Android virtual keyboard pop up.
             TextInput {
                 id: answer
                 width: hintTextbg.width
                 height: hintTextbg.height
                 color: "white"
                 cursorVisible: true
-                focus: true
+                focus: false
                 visible: true
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
@@ -227,7 +227,6 @@ Item {
                 font.capitalization: ApplicationSettings.fontCapitalization
                 maximumLength: maximumLengthAnswer
                 onAccepted: {
-                    answer.forceActiveFocus()
                     okMouseArea.clicked(okMouseArea)
                 }
             }
