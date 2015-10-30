@@ -209,8 +209,6 @@ Item {
                 topMargin: 20* ApplicationInfo.ratio
             }
 
-            // FIXME This does not work well on mobile. In case the children click on
-            // the TextInput the Android virtual keyboard pop up.
             TextInput {
                 id: answer
                 width: hintTextbg.width
@@ -218,6 +216,7 @@ Item {
                 color: "white"
                 cursorVisible: true
                 focus: false
+                activeFocusOnPress: !ApplicationInfo.isMobile
                 visible: true
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
