@@ -59,10 +59,12 @@ ActivityBase {
             property Item main: activity.main
             property alias background: background
             property alias animationheli:animationheli
+            property alias parachuteanimationx:parachuteanimationx
             property alias animationcloud:animationcloud
             property alias bar: bar
             property alias bonus: bonus
             property alias parachuteImage:parachuteImage
+            property alias helicopter: helicopter
             property alias animationboat:animationboat
             property alias parachuteanimation:parachuteanimation
         }
@@ -79,6 +81,7 @@ ActivityBase {
                 border.width:7
                 radius:20
                 border.color:"#A80000"
+                color:"#500000"
             }
             Image{
                 id:helicopter
@@ -120,6 +123,11 @@ ActivityBase {
                visible:false
                source:activity.dataSetUrl+"parachute.svgz"
             }
+            Image{
+                id:parachute1Image
+                visible:false
+                source:activity.dataSetUrl+"minitux.svgz"
+            }
             PropertyAnimation{
                 id:parachuteanimation
                 target:parachutOpen
@@ -128,6 +136,14 @@ ActivityBase {
                 to:background.height/1.2
                 duration:5000
                 easing.type:Easing.Linear
+            }
+            PropertyAnimation{
+                 id:parachuteanimationx
+                 target:parachutOpen
+                 properties: "x"
+                 from:-helimotion.width
+                 to:background.width
+                 duration:9500
             }
         }
 
@@ -176,6 +192,8 @@ ActivityBase {
         GCText {
             anchors.centerIn: parent
             fontSize: largeSize
+            visible:false
+            text:"Control fall speed with up and down arrow keys"
         }
 
         DialogHelp {

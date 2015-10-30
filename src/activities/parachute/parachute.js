@@ -40,6 +40,7 @@ function stop() {
   items.animationheli.stop()
   items.animationcloud.stop()
   items.animationboat.stop()
+  items.items.parachuteanimation.stop()
 }
 
 function initLevel() {
@@ -47,9 +48,11 @@ function initLevel() {
     items.animationheli.restart()
     items.animationcloud.restart()
     items.animationboat.restart()
+    items.parachuteanimationx.restart()
 }
 
 function parachuefun(){
+     items.parachuteanimationx.stop()
      items.parachuteanimation.restart()
 }
 
