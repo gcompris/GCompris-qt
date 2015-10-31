@@ -651,8 +651,10 @@ Item {
         }
         onNextLevelClicked: {
             if (Activity.levelChanged)
-                Activity.warnUnsavedChanges(Activity.nextLevel,
-                                            function() {});
+                Activity.warnUnsavedChanges(function() {
+                    Activity.levelChanged = false; // mark unchanged early to make check in nextLevel() work
+                    Activity.nextLevel();
+                }, function() {});
             else
                 Activity.nextLevel();
         }

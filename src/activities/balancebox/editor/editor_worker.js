@@ -22,7 +22,6 @@
 Qt.include("../balancebox_common.js")
 
 WorkerScript.onMessage = function(msg) {
-    console.debug("XXX worker started");
     var maxContactValue = 1;
     msg.lastBallIndex = -1;
     msg.lastGoalIndex = -1;

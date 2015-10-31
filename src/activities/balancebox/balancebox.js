@@ -24,7 +24,6 @@
   - add rectangular fixture for goal
   - editor: add 'clear' button
   - editor: allow going back: level 1 -> last level
-  - add sound effects
   - add new item: unordered contact, that has to be collected but in an
     arbitrary order
 */
@@ -131,16 +130,16 @@ function reconfigureScene()
     pixelsPerMeter = (items.mapWrapper.length / boardSizeBase) * boardSizePix / boardSizeM;
     vFactor = pixelsPerMeter / box2dPpm;
 
-    console.log("Starting: mode=" + items.mode
-            + " pixelsPerM=" + items.world.pixelsPerMeter
-            + " timeStep=" + items.world.timeStep
-            + " posIterations=" + items.world.positionIterations
-            + " velIterations=" + items.world.velocityIterations
-            + " boardSizePix" + boardSizePix  + " (real " + items.mapWrapper.length + ")"
-            + " pixelsPerMeter=" + pixelsPerMeter
-            + " vFactor=" + vFactor
-            + " dpi=" + items.dpi
-            + " nativeOrientation=" + GCompris.ApplicationInfo.getNativeOrientation());
+//    console.log("Starting: mode=" + items.mode
+//            + " pixelsPerM=" + items.world.pixelsPerMeter
+//            + " timeStep=" + items.world.timeStep
+//            + " posIterations=" + items.world.positionIterations
+//            + " velIterations=" + items.world.velocityIterations
+//            + " boardSizePix" + boardSizePix  + " (real " + items.mapWrapper.length + ")"
+//            + " pixelsPerMeter=" + pixelsPerMeter
+//            + " vFactor=" + vFactor
+//            + " dpi=" + items.dpi
+//            + " nativeOrientation=" + GCompris.ApplicationInfo.getNativeOrientation());
 }
 
 function sinDeg(num)
@@ -154,11 +153,10 @@ function moveBall()
     var dvx = ((m*g*dt) * sinDeg(items.tilt.yRotation)) / m;
     var dvy = ((m*g*dt) * sinDeg(items.tilt.xRotation)) / m;
 
-/*    console.log("moving ball: dv: " + items.ball.body.linearVelocity.x
-            + "/" + items.ball.body.linearVelocity.y 
-            +  " -> " + (items.ball.body.linearVelocity.x+dvx) 
-            + "/" + (items.ball.body.linearVelocity.y+dvy));
-  */
+//    console.log("moving ball: dv: " + items.ball.body.linearVelocity.x
+//            + "/" + items.ball.body.linearVelocity.y
+//            +  " -> " + (items.ball.body.linearVelocity.x+dvx)
+//            + "/" + (items.ball.body.linearVelocity.y+dvy));
     
     items.ball.body.linearVelocity.x += dvx * vFactor;
     items.ball.body.linearVelocity.y += dvy * vFactor;
@@ -217,6 +215,8 @@ function stop() {
     // unlock screen orientation
     if (GCompris.ApplicationInfo.isMobile)
         GCompris.ApplicationInfo.setRequestedOrientation(-1);
+    // make sure loading overlay is really stopped
+    items.loading.stop();
 }
 
 function createObject(component, properties)
@@ -379,6 +379,12 @@ function initMap()
     }
     if (goalUnlocked && goal)  // if we have no contacts at all
         goal.imageSource = baseUrl + "/door.svg";
+
+    if (pendingObjects === 0) {
+        // don't have any pending objects (e.g. empty map!): stop overlay
+        items.timer.start();
+        items.loading.stop();
+    }
 }
 
 function addBallContact(item)
