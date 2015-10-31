@@ -32,7 +32,9 @@ ActivityBase {
     // Overload this in your activity to change it
     // Put you default-<locale>.json files in it
     property string dataSetUrl: "qrc:/gcompris/src/activities/gletters/resource/"
-    
+    /* no need to display the configuration button for smallnumbers */
+    property bool configurationButtonVisible: true
+
     property bool uppercaseOnly: false;  // FIXME: this should go in activity settings
     /* mode of the activity, "letter" (gletters) or "word" (wordsgame):*/
     property string mode: "letter"
@@ -208,7 +210,7 @@ ActivityBase {
         Bar {
             id: bar
             anchors.bottom: keyboard.top
-            content: BarEnumContent { value: help | home | level | config }
+            content: BarEnumContent { value: configurationButtonVisible ? (help | home | level | config) : (help | home | level)}
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
