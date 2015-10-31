@@ -7,6 +7,7 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg5779"
@@ -19,23 +20,47 @@
    width="100%"
    height="100%">
   <defs
-     id="defs5781" />
+     id="defs5781">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4334">
+      <stop
+         style="stop-color:#b1e1f9;stop-opacity:1"
+         offset="0"
+         id="stop4336" />
+      <stop
+         style="stop-color:#084a6e;stop-opacity:1"
+         offset="1"
+         id="stop4338" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4334"
+       id="radialGradient4340"
+       cx="375.22418"
+       cy="244.74582"
+       fx="375.22418"
+       fy="244.74582"
+       r="64.999359"
+       gradientTransform="matrix(-1.4494753,0.00901226,-0.00843849,-1.3571904,917.52958,560.94876)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
   <sodipodi:namedview
      id="base"
      bordercolor="#666666"
      inkscape:pageshadow="2"
      inkscape:window-y="0"
      pagecolor="#ffffff"
-     inkscape:window-height="1679"
+     inkscape:window-height="1141"
      width="150px"
-     inkscape:zoom="10.853333"
-     inkscape:window-x="0"
+     inkscape:zoom="2.7133333"
+     inkscape:window-x="1356"
      height="150px"
      borderopacity="1.0"
      inkscape:current-layer="layer1"
-     inkscape:cx="79.694697"
-     inkscape:cy="62.123882"
-     inkscape:window-width="3200"
+     inkscape:cx="77.114844"
+     inkscape:cy="64.703735"
+     inkscape:window-width="1600"
      inkscape:pageopacity="0.0"
      inkscape:document-units="px"
      showgrid="false"
@@ -55,7 +80,7 @@
        mask="none"
        cy="260.54211"
        cx="393.6991"
-       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#3cb2f1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.5;marker:none;enable-background:accumulate"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:url(#radialGradient4340);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.5;marker:none;enable-background:accumulate"
        id="path4940"
        clip-path="none" />
     <path
