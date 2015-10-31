@@ -148,7 +148,7 @@ Item {
                 width: parent.width
                 height: props.cellSize
                 style: GCButtonStyle {}
-                text: "Save"
+                text: qsTr("Save")
                 onClicked: Activity.saveModel();
             }
             Button {
@@ -156,7 +156,7 @@ Item {
                 width: parent.width
                 height: props.cellSize
                 style: GCButtonStyle {}
-                text: "Test"
+                text: qsTr("Test")
                 onClicked: editor.startTesting();
             }
         }
