@@ -43,6 +43,7 @@ BalanceItem {
         width: item.width
         height: item.height
         
+        font.pointSize: NaN
         font.pixelSize: width / 2
         
         horizontalAlignment: Text.AlignHCenter
