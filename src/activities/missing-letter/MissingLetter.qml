@@ -25,8 +25,7 @@ import GCompris 1.0
 import "../../core"
 import "missing-letter.js" as Activity
 
-ActivityBase
-{
+ActivityBase {
     id: activity
 
     onStart: focus = true
@@ -39,8 +38,7 @@ ActivityBase
             Activity.focusTextInput()
         }
     }
-    pageComponent: Image
-    {
+    pageComponent: Image {
         id: background
         source: Activity.url + "background.svg"
         sourceSize.width: parent.width
@@ -52,15 +50,13 @@ ActivityBase
         signal start
         signal stop
 
-        Component.onCompleted:
-        {
+        Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
 
         // Add here the QML items you need to access in javascript
-        QtObject
-        {
+        QtObject {
             id: items
             property Item  main: activity.main
             property alias background: background
@@ -77,8 +73,7 @@ ActivityBase
             property alias textinput: textinput
         }
 
-        function handleResourceRegistered(resource)
-        {
+        function handleResourceRegistered(resource) {
             if (resource == wordsResource)
                 Activity.start();
         }
@@ -138,8 +133,7 @@ ActivityBase
         }
 
         // Buttons with possible answers shown on the left of screen
-        Column
-        {
+        Column {
             id: buttonHolder
             spacing: 10 * ApplicationInfo.ratio
             x: holder.x - width - 10 * ApplicationInfo.ratio
@@ -149,8 +143,7 @@ ActivityBase
                 NumberAnimation { properties: "y"; from: holder.y; duration: 500 }
             }
 
-            Repeater
-            {
+            Repeater {
                 id: answers
 
                 AnswerButton {
@@ -166,8 +159,7 @@ ActivityBase
         }
 
         // Picture holder for different images being shown
-        Rectangle
-        {
+        Rectangle {
             id: holder
             width: Math.max(questionImage.width * 1.1, questionImage.height * 1.1)
             height: questionTextBg.y + questionTextBg.height
@@ -184,14 +176,12 @@ ActivityBase
                 GradientStop { position: 1.0; color: "#80AAAAAA" }
             }
 
-            Item
-            {
+            Item {
                 id: spacer
                 height: 20
             }
 
-            Image
-            {
+            Image {
                 id: questionImage
                 anchors.horizontalCenter: holder.horizontalCenter
                 anchors.top: spacer.bottom
@@ -268,14 +258,12 @@ ActivityBase
             anchors.top: parent.top
         }
 
-        DialogHelp
-        {
+        DialogHelp {
             id: dialogHelp
             onClose: home()
         }
 
-        Bar
-        {
+        Bar {
             id: bar
             content: BarEnumContent { value: help | home | level | repeat }
             onHelpClicked: displayDialog(dialogHelp)
@@ -285,8 +273,7 @@ ActivityBase
             onRepeatClicked: Activity.playCurrentWord()
         }
 
-        Bonus
-        {
+        Bonus {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
