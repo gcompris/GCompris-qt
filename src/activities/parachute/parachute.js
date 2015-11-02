@@ -40,7 +40,9 @@ function stop() {
   items.animationheli.stop()
   items.animationcloud.stop()
   items.animationboat.stop()
-  items.items.parachuteanimation.stop()
+  items.parachuteanimation.stop()
+  items.parachute1Image.visible=false
+  items.parachuteImage.visible=false
 }
 
 function initLevel() {
@@ -60,6 +62,8 @@ function nextLevel() {
     if(numberOfLevel <= ++currentLevel ) {
         currentLevel = 0
     }
+    items.keyunable.visible=false
+    items.parachuteImage.visible=false
     initLevel();
 }
 

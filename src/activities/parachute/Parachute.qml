@@ -60,6 +60,7 @@ ActivityBase {
             property alias background: background
             property alias animationheli:animationheli
             property alias parachuteanimationx:parachuteanimationx
+            property alias parachute1Image:parachute1Image
             property alias animationcloud:animationcloud
             property alias bar: bar
             property alias bonus: bonus
@@ -67,6 +68,7 @@ ActivityBase {
             property alias helicopter: helicopter
             property alias animationboat:animationboat
             property alias parachuteanimation:parachuteanimation
+            property alias keyunable:keyunable
         }
         Item{
             id:helimotion
@@ -97,7 +99,7 @@ ActivityBase {
                         forhover.visible=false
                     }
                     onClicked:{
-                       parachuteImage.visible=true
+                       parachute1Image.visible=true
                        Activity.parachuefun()
                     }
 
@@ -127,6 +129,15 @@ ActivityBase {
                 id:parachute1Image
                 visible:false
                 source:activity.dataSetUrl+"minitux.svgz"
+                MouseArea{
+                    id:paramouse
+                    anchors.fill:parent
+                    onClicked:{
+                        parachute1Image.visible=false
+                        parachuteImage.visible=true
+                        keyunable.visible=true
+                    }
+                }
             }
             PropertyAnimation{
                 id:parachuteanimation
@@ -190,6 +201,7 @@ ActivityBase {
 
 
         GCText {
+            id:keyunable
             anchors.centerIn: parent
             fontSize: largeSize
             visible:false
