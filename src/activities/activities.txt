@@ -12,7 +12,6 @@ alphabet-sequence
 babymatch
 babyshapes
 ballcatch
-bodyparts
 braille_alphabets
 braille_fun
 canal_lock
