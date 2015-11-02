@@ -173,13 +173,43 @@ ActivityBase {
 
         Image {
             id: clock
-            source: Activity.url + "flower" + items.clockPosition + ".svg"
             anchors {
                 right: parent.right
                 bottom: parent.bottom
                 margins: 10
             }
             sourceSize.width: 66 * bar.barZoom
+            property int remainingife: items.clockPosition
+            onRemainingifeChanged: clockAnim.start()
+
+            SequentialAnimation {
+                id: clockAnim
+                ParallelAnimation {
+                    NumberAnimation {
+                        target: clock; properties: "opacity";
+                        to: 0; duration: 800; easing.type: Easing.OutCubic
+                    }
+                    NumberAnimation {
+                        target: clock; properties: "rotation"; from: 0; to: 180;
+                        duration: 800; easing.type: Easing.OutCubic
+                    }
+                }
+                PropertyAction {
+                    target: clock; property: 'source';
+                    value: "qrc:/gcompris/src/activities/reversecount/resource/" +
+                           "flower" + items.clockPosition + ".svg"
+                }
+                ParallelAnimation {
+                    NumberAnimation {
+                        target: clock; properties: "opacity";
+                        to: 1; duration: 800; easing.type: Easing.OutCubic
+                    }
+                    NumberAnimation {
+                        target: clock; properties: "rotation"; from: 180; to: 0;
+                        duration: 800; easing.type: Easing.OutCubic
+                    }
+                }
+            }
         }
 
 
@@ -194,7 +224,8 @@ ActivityBase {
             id: bonus
             winSound: "qrc:/gcompris/src/activities/ballcatch/resource/tuxok.wav"
             looseSound: "qrc:/gcompris/src/activities/ballcatch/resource/youcannot.wav"
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            onWin: Activity.nextLevel()
+            onLoose: Activity.initLevel()
         }
     }
 

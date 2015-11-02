@@ -30,8 +30,8 @@ ActivityInfo {
   demo: true
   title: qsTr("Assemble the puzzle")
   description: qsTr("Drag and Drop the items to rebuild the original paintings")
-  goal: "Spatial representation"
-  prerequisite: "Mouse-manipulation: movement, drag and drop"
+  goal: qsTr("Spatial representation")
+  prerequisite: qsTr("Mouse-manipulation: movement, drag and drop")
   manual: qsTr("Drag the image parts from the box on the left to create a painting on the main board.")
   section: "puzzle"
 }

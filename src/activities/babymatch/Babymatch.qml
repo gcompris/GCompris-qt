@@ -226,8 +226,8 @@ ActivityBase {
 
                 MouseArea {
                     anchors.fill: parent
-                    onClicked: (instruction.opacity === 0 && instruction.text != "" ?
-                                    instruction.opacity = 1 : instruction.opacity = 0)
+                    onClicked: (instruction.opacity === 0 ?
+                                    instruction.show() : instruction.hide())
                 }
             }
         }
@@ -248,6 +248,14 @@ ActivityBase {
             property alias text: instructionTxt.text
 
             Behavior on opacity { PropertyAnimation { duration: 200 } }
+
+            function show() {
+                if(text)
+                    opacity = 1
+            }
+            function hide() {
+                opacity = 0
+            }
         }
 
         GCText {

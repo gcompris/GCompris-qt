@@ -35,6 +35,7 @@ Rectangle {
     property int dropAreaSize
     property string imageName
     property int area: dragTarget.width * dragTarget.height
+    property alias factor: dragTarget.factor
 
     width: parent.width > parent.height ? parent.height/35 : parent.width/35
     height: width
@@ -60,8 +61,11 @@ Rectangle {
     DropArea {
         id: dragTarget
         
-        width: 3 * dropCircle.width
-        height: 3 * dropCircle.width
+        // Trying to adjust the drop precision. In this approach we make it relative
+        // to the number of spots.
+        property double factor
+        width: factor * dropCircle.width
+        height: factor * dropCircle.width
         z: dropCircle.z
         anchors.centerIn: parent
         

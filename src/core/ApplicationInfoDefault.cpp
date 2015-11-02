@@ -29,3 +29,13 @@ bool ApplicationInfo::requestAudioFocus() const
 void ApplicationInfo::abandonAudioFocus() const
 {
 }
+
+void ApplicationInfo::setRequestedOrientation(int orientation)
+{
+    Q_UNUSED(orientation);
+}
+
+int ApplicationInfo::getRequestedOrientation()
+{
+    return -1;
+}

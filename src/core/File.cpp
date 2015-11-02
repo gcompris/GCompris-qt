@@ -1,6 +1,6 @@
 /* GCompris - File.cpp
  *
- * Copyright (C) 2014 Holger Kaelberer <holger.k@elberer.de>
+ * Copyright (C) 2014,2015 Holger Kaelberer <holger.k@elberer.de>
  *
  * Authors:
  *   Holger Kaelberer <holger.k@elberer.de>
@@ -22,6 +22,7 @@
 #include "File.h"
 
 #include <QFile>
+#include <QDir>
 #include <QString>
 #include <QTextStream>
 #include <QQmlComponent>
@@ -122,4 +123,10 @@ void File::init()
 bool File::exists(const QString& path)
 {
     return QFile::exists(sanitizeUrl(path));
+}
+
+bool File::mkpath(const QString& path)
+{
+    QDir dir;
+    return dir.mkpath(dir.filePath(sanitizeUrl(path)));
 }

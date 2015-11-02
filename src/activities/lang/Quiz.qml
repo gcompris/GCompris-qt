@@ -133,12 +133,11 @@ Item {
 
                     Image {
                         id: wordImage
-                        sourceSize.width: parent.width * 0.6
+                        // Images are not svg
+                        width: Math.min(parent.width, parent.height) * 0.9
+                        height: width
+                        anchors.centerIn: parent
 
-                        anchors {
-                            centerIn: parent
-                            margins: 0.05 + parent.width
-                        }
                         property string nextSource
                         function changeSource(nextSource_) {
                             nextSource = nextSource_

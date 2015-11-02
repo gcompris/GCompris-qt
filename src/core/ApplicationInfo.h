@@ -1,6 +1,6 @@
 /* GCompris - ApplicationSettingsDefault.cpp
  *
- * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ * Copyright (C) 2014-2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -31,6 +31,7 @@
 #include <QtCore/QObject>
 #include <QtQml/QQmlPropertyMap>
 #include <QQmlEngine>
+#include <QtGlobal>
 
 class QQuickWindow;
 
@@ -202,11 +203,20 @@ public:
     Q_INVOKABLE bool requestAudioFocus() const;
 
     /**
-    * Abandon the Audio Focus.
-    *
-    * On systems that support it, it will let an audio player start again.
-    */
+     * Abandon the Audio Focus.
+     *
+     * On systems that support it, it will let an audio player start again.
+     */
     Q_INVOKABLE void abandonAudioFocus() const;
+
+    /**
+     * Return the platform specific path for storing data shared between apps
+     *
+     * On Android: /storage/emulated/0/GCompris (>= Android 4.2),
+     *             /storage/sdcard0/GCompris (< Android 4.2)
+     * On Linux: $HOME/local/share/GCompris
+     */
+    Q_INVOKABLE QString getSharedWritablePath() const;
 
     /// @cond INTERNAL_DOCS
 
@@ -237,6 +247,52 @@ public:
     static QString QTVersion() { return qVersion(); }
     static QString CompressedAudio() { return COMPRESSED_AUDIO; }
     static bool isDownloadAllowed() { return QString(DOWNLOAD_ALLOWED) == "ON"; }
+
+    /**
+     * Returns the native screen orientation.
+     *
+     * Wraps QScreen::nativeOrientation: The native orientation of the screen
+     * is the orientation where the logo sticker of the device appears the
+     * right way up, or Qt::PrimaryOrientation if the platform does not support
+     * this functionality.
+     *
+     * The native orientation is a property of the hardware, and does not change
+     */
+    Q_INVOKABLE Qt::ScreenOrientation getNativeOrientation();
+
+    /**
+     * Change the desired orientation of the application.
+     *
+     * Android specific function, cf. http://developer.android.com/reference/android/app/Activity.html#setRequestedOrientation(int)
+     *
+     * @param orientation Desired orientation of the application. For possible
+     *                    values cf. http://developer.android.com/reference/android/content/pm/ActivityInfo.html#screenOrientation .
+     *                    Some useful values:
+     *                    - -1: SCREEN_ORIENTATION_UNSPECIFIED
+     *                    -  0: SCREEN_ORIENTATION_LANDSCAPE: forces landscape
+     *                    -  1: SCREEN_ORIENTATION_PORTRAIT: forces portrait
+     *                    -  5: SCREEN_ORIENTATION_NOSENSOR: forces native
+     *                          orientation mode on each device (portrait on
+     *                          smartphones, landscape on tablet)
+     *                    - 14: SCREEN_ORIENTATION_LOCKED: lock current orientation
+     */
+    Q_INVOKABLE void setRequestedOrientation(int orientation);
+
+    /**
+     * Query the desired orientation of the application.
+     *
+     * @sa setRequestedOrientation
+     */
+    Q_INVOKABLE int getRequestedOrientation();
+
+    /**
+     * Checks whether a sensor type from the QtSensor module is supported on
+     * the current platform.
+     *
+     * @param sensorType  Classname of a sensor from the QtSensor module
+     *                    to be checked (e.g. "QTiltSensor").
+     */
+    Q_INVOKABLE bool sensorIsSupported(const QString& sensorType);
 
     /// @endcond
 

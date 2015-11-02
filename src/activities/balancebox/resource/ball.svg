@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg5779"
+   sodipodi:docname="ball.svg"
+   viewBox="0 0 130.16473 130.74681"
+   sodipodi:version="0.32"
+   version="1.0"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:version="0.91 r13725"
+   width="100%"
+   height="100%">
+  <defs
+     id="defs5781">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4334">
+      <stop
+         style="stop-color:#b1e1f9;stop-opacity:1"
+         offset="0"
+         id="stop4336" />
+      <stop
+         style="stop-color:#084a6e;stop-opacity:1"
+         offset="1"
+         id="stop4338" />
+    </linearGradient>
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4334"
+       id="radialGradient4340"
+       cx="375.22418"
+       cy="244.74582"
+       fx="375.22418"
+       fy="244.74582"
+       r="64.999359"
+       gradientTransform="matrix(-1.4494753,0.00901226,-0.00843849,-1.3571904,917.52958,560.94876)"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     inkscape:window-y="0"
+     pagecolor="#ffffff"
+     inkscape:window-height="1141"
+     width="150px"
+     inkscape:zoom="2.7133333"
+     inkscape:window-x="1356"
+     height="150px"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="77.114844"
+     inkscape:cy="64.703735"
+     inkscape:window-width="1600"
+     inkscape:pageopacity="0.0"
+     inkscape:document-units="px"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-maximized="1" />
+  <g
+     id="layer1"
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     transform="translate(-328.5919,-195.02536)">
+    <ellipse
+       ry="64.999847"
+       rx="64.999359"
+       mask="none"
+       cy="260.54211"
+       cx="393.6991"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:url(#radialGradient4340);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.5;marker:none;enable-background:accumulate"
+       id="path4940"
+       clip-path="none" />
+    <path
+       sodipodi:nodetypes="cscscsssss"
+       inkscape:connector-curvature="0"
+       id="path4940-1"
+       d="m 393.69914,195.54197 c -35.89869,-3.6e-4 -65.00041,29.1016 -64.99997,65.00055 3.6e-4,35.89834 29.10188,64.99943 64.99997,64.99907 35.89811,3.6e-4 64.99962,-29.10073 65.00003,-64.99907 3.7e-4,-35.89898 -29.10135,-65.00091 -65.00003,-65.00055 z m 0,2.26679 c 33.84083,9e-5 62.73314,28.89266 62.7332,62.73376 -6e-5,33.84105 -28.89237,61.27464 -62.7332,61.27468 -33.84083,-4e-5 -62.73313,-27.43363 -62.73319,-61.27468 0,-33.8411 28.89236,-62.73369 62.73319,-62.73376 z"
+       clip-path="none"
+       style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#2a2a2a;fill-opacity:0.50232562;fill-rule:nonzero;stroke:none;stroke-width:0.5;marker:none;enable-background:accumulate" />
+  </g>
+  <metadata
+     id="metadata21">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Red snooker ball</dc:title>
+        <dc:date>2007-02-21T14:15:34</dc:date>
+        <dc:description>A red snooker ball.</dc:description>
+        <dc:source>https://openclipart.org/detail/3288/red-snooker-ball-by-stellaris</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Stellaris</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>ball</rdf:li>
+            <rdf:li>billiards</rdf:li>
+            <rdf:li>how i did it</rdf:li>
+            <rdf:li>red</rdf:li>
+            <rdf:li>snooker</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

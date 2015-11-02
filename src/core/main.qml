@@ -61,7 +61,7 @@ Window {
         }
     }
 
-    onClosing: Core.quit()
+    onClosing: Core.quit(main)
 
     GCAudio {
         id: audioVoices
@@ -109,9 +109,11 @@ Window {
 
     Component.onCompleted: {
         console.log("enter main.qml (run #" + ApplicationSettings.exeCount
-                + ", ratio=" + ApplicationInfo.ratio
-                + ", fontRatio=" + ApplicationInfo.fontRatio
-                + ", dpi=" + Math.round(Screen.pixelDensity*25.4) + ")");
+                    + ", ratio=" + ApplicationInfo.ratio
+                    + ", fontRatio=" + ApplicationInfo.fontRatio
+                    + ", dpi=" + Math.round(Screen.pixelDensity*25.4)
+                    + ", sharedWritablePath=" + ApplicationInfo.getSharedWritablePath()
+                    + ")");
         if (ApplicationSettings.exeCount == 1 && !ApplicationSettings.isKioskMode) {
             // first run
             var dialog;
@@ -140,6 +142,10 @@ Window {
         }
     }
 
+    Loading {
+        id: loading
+    }
+
     StackView {
         id: pageView
         anchors.fill: parent
@@ -147,7 +153,8 @@ Window {
             "item": "qrc:/gcompris/src/activities/" + ActivityInfoTree.rootMenu.name,
             "properties": {
                 'audioVoices': audioVoices,
-                'audioEffects': audioEffects
+                'audioEffects': audioEffects,
+                'loading': loading
             }
         }
 
@@ -158,12 +165,13 @@ Window {
             function getTransition(properties)
             {
                 audioVoices.clearQueue()
-                if(!properties.exitItem.isDialog) {
-                    if(!properties.enterItem.isDialog) {
-                        playIntroVoice(properties.enterItem.activityInfo.name)
-                    }
-                    properties.enterItem.start()
-                }
+                if(!properties.exitItem.isDialog &&        // if coming from menu and
+                        !properties.enterItem.isDialog)    // going into an activity then
+                    playIntroVoice(properties.enterItem.activityInfo.name);    // play intro
+
+                if (!properties.exitItem.isDialog ||       // if coming from menu or
+                        properties.enterItem.alwaysStart)  // start signal enforced (for special case like transition from config-dialog to editor)
+                    properties.enterItem.start();
 
                 if(properties.name === "pushTransition") {
                     if(properties.enterItem.isDialog) {

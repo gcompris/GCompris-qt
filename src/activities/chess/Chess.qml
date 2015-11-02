@@ -80,7 +80,7 @@ ActivityBase {
             property bool blackTurn
             property bool gameOver
             property string message
-            property alias trigComputerMove: trigComputerMove
+            property alias trigComputerMove: trigComputerMove            
         }
 
         onStart: { Activity.start(items) }
@@ -361,7 +361,6 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
 

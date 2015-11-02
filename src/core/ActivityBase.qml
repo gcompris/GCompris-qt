@@ -114,9 +114,24 @@ Item {
     property GCAudio audioEffects
 
     /**
+     * type:Loading
+     * The global loading object.
+     *
+     * Start it to signal heavy computation in case of GUI freezes.
+     * @sa Loading
+     */
+    property Loading loading
+
+    /**
      * Emitted when the user wants to return to the Home/Menu screen.
      */
     signal home
+
+    /**
+     * Emitted when the user wants to return several views back in the
+     * page stack.
+     */
+    signal back(Item to)
 
     /**
      * Emitted every time the activity has been started.
@@ -142,11 +157,24 @@ Item {
      */
     signal displayDialog(Item dialog)
 
+    /**
+     * Emitted when multiple @p dialogs should be pushed on the page-stack
+     *
+     * Emit this signal when you want to stack >1 views. The last one will be
+     * shown the intermediated ones will be kept on the page stack for later
+     * pop() calls.
+     *
+     * @param dialogs Array of dialogs to push;
+     */
+    signal displayDialogs(var dialogs)
+
+    onBack: menu ? menu.back(to) : ""
     onHome: menu ? menu.home() : ""
     onDisplayDialog: menu ? menu.displayDialog(dialog) : ""
+    onDisplayDialogs: menu ? menu.displayDialogs(dialogs) : ""
 
     Keys.forwardTo: activity.children
-    Keys.onEscapePressed: home()
+    Keys.onEscapePressed: home();
     Keys.onPressed: {
         if (event.modifiers === Qt.ControlModifier &&
                 event.key === Qt.Key_Q) {

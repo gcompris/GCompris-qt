@@ -1,6 +1,6 @@
 /* GCompris - File.h
  *
- * Copyright (C) 2014 Holger Kaelberer <holger.k@elberer.de>
+ * Copyright (C) 2014,2015 Holger Kaelberer <holger.k@elberer.de>
  *
  * Authors:
  *   Holger Kaelberer <holger.k@elberer.de>
@@ -77,6 +77,16 @@ public:
      * @returns @c true if @p path exists, @c false otherwise.
      */
     Q_INVOKABLE static bool exists(const QString& path);
+
+    /**
+     * Creates directory @p path.
+     *
+     * Creates also all parent directories necessary to create the directory.
+     *
+     * @param path Directory to create.
+     * @returns success
+     */
+    Q_INVOKABLE static bool mkpath(const QString& path);
 
     /// @cond INTERNAL_DOCS
     static void init();

@@ -29,8 +29,13 @@ cd $activitydir
 mv $template.js $activity.js
 mv $template.svg $activity.svg
 mv $Template.qml $Activity.qml
-sed -i s/$template/$activity/g *
-sed -i s/$Template/$Activity/g *
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  sed -i '' s/$template/$activity/g *
+  sed -i '' s/$Template/$Activity/g *
+else
+  sed -i s/$template/$activity/g *
+  sed -i s/$Template/$Activity/g *
+fi
 cd ..
 
 #

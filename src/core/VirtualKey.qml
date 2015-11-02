@@ -27,9 +27,6 @@ import QtQuick.Controls.Styles 1.0
 Item {
     id: virtualKey
     
-    z: (button.pressed || (!ApplicationInfo.isMobile && button.hovered)) ? 1 : -1
-
-            
     property alias text: button.text
     property var modifiers: 0   /* Supposed to hold any active key modifiers
                                  * in a bitmask from the Qt namespace:
@@ -85,19 +82,19 @@ Item {
             }
         }
     
-        states: State {
-            name: "hover"; when: (button.pressed || !ApplicationInfo.isMobile && button.hovered)
-            PropertyChanges { target: button; scale: 1.5 }
-        }
-    
-        transitions: Transition {
-            NumberAnimation { properties: "scale"; duration: 100; easing.type: Easing.OutCubic }
+        SequentialAnimation {
+            id: anim
+            PropertyAction { target: virtualKey; property: 'z'; value: 1 }
+            NumberAnimation { target: button; properties: "scale"; to: 1.3; duration: 100; easing.type: Easing.OutCubic }
+            NumberAnimation { target: button; properties: "scale"; to: 1.0; duration: 100; easing.type: Easing.OutCubic }
+            PropertyAction { target: virtualKey; property: 'z'; value: 0 }
         }
 
         onClicked: {
             //console.log("### virtualKey.onClicked text=" + virtualKey.text 
             //        + " specialKey="+ virtualKey.specialKey
             //        + " modifiers= "+ virtualKey.modifiers);
+            anim.start()
             virtualKey.pressed(virtualKey);
             button.focus = false;
         }

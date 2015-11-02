@@ -132,9 +132,17 @@ function updateMessage(move) {
             == (Engine.P4_MOVE_FLAG_CHECK | Engine.P4_MOVE_FLAG_MATE)) {
         items.message = items.blackTurn ? qsTr("Black mates") : qsTr("White mates")
         items.gameOver = true
+        if(!items.twoPlayer)
+            if(state.to_play != 0)
+                items.bonus.good('gnu')
+            else
+                items.bonus.good('tux')
+        else
+            items.bonus.good('flower')
     } else if((move.flags & Engine.P4_MOVE_FLAG_MATE) == Engine.P4_MOVE_FLAG_MATE) {
         items.message = qsTr("Drawn game")
         items.gameOver = true
+        items.bonus.good('flower')
     } else if((move.flags & Engine.P4_MOVE_FLAG_CHECK) == Engine.P4_MOVE_FLAG_CHECK) {
         items.message = items.blackTurn ? qsTr("Black checks") : qsTr("White checks")
     } else if(move.flags == Engine.P4_MOVE_ILLEGAL) {
@@ -236,6 +244,8 @@ function undo() {
 }
 
 function moveByEngine(engineMove) {
+    if(!engineMove)
+        return
     var move = state.move(engineMove[0], engineMove[1])
     visibleMove(move, engineToViewPos(engineMove[0]), engineToViewPos(engineMove[1]))
     refresh(move)

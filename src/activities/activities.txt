@@ -11,6 +11,7 @@ align4-2players
 alphabet-sequence
 babymatch
 babyshapes
+balancebox
 ballcatch
 braille_alphabets
 braille_fun
@@ -45,6 +46,7 @@ gnumch-inequality
 gnumch-multiples
 gnumch-primes
 guessnumber
+hangman
 hanoi
 hanoi_real
 hexagon

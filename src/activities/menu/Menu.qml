@@ -46,6 +46,13 @@ ActivityBase {
     focus: true
     activityInfo: ActivityInfoTree.rootMenu
 
+    onBack: {
+        pageView.pop(to);
+        // Restore focus that has been taken by the loaded activity
+        if(pageView.currentItem == menuActivity)
+            focus = true;
+    }
+
     onHome: {
         if(pageView.depth === 1) {
             Core.quit(main);
@@ -59,6 +66,14 @@ ActivityBase {
     }
 
     onDisplayDialog: pageView.push(dialog)
+
+    onDisplayDialogs: {
+        var toPush = new Array();
+        for (var i = 0; i < dialogs.length; i++) {
+            toPush.push({item: dialogs[i]});
+        }
+        pageView.push(toPush);
+    }
 
     // @cond INTERNAL_DOCS
     property string url: "qrc:/gcompris/src/activities/menu/resource/"
@@ -116,7 +131,15 @@ ActivityBase {
         Loader {
             id: activityLoader
             asynchronous: true
-            onStatusChanged: if (status == Loader.Ready) loadActivity()
+            onStatusChanged: {
+                if (status == Loader.Loading) {
+                    loading.start();
+                } else if (status == Loader.Ready) {
+                    loading.stop();
+                    loadActivity();
+                } else if (status == Loader.Error)
+                    loading.stop();
+            }
         }
 
         // Filters
@@ -389,6 +412,7 @@ ActivityBase {
                                              {
                                                  'audioVoices': audioVoices,
                                                  'audioEffects': audioEffects,
+                                                 'loading': loading,
                                                  'menu': menuActivity,
                                                  'activityInfo': ActivityInfoTree.currentActivity
                                              })
@@ -443,6 +467,7 @@ ActivityBase {
                 displayDialog(dialogActivityConfig)
             }
         }
+
     }
 
     DialogAbout {

@@ -37,15 +37,13 @@ var dataset
 var lessons
 
 // Do not propose these letter in the choices
-var ignoreLetters = '[ ,;:\u0027]'
+var ignoreLetters = '[ ,;:\\-\u0027]'
 
-function init(items_)
-{
+function init(items_) {
     items = items_
 }
 
-function start()
-{
+function start() {
     currentLevel = 0
 
     var locale = GCompris.ApplicationInfo.getVoicesLocale(GCompris.ApplicationSettings.locale)
@@ -175,12 +173,10 @@ function sortUnique(arr) {
     }
     return ret;
 }
-function stop()
-{
+function stop() {
 }
 
-function initLevel()
-{
+function initLevel() {
     items.bar.level = currentLevel + 1
     items.score.currentSubLevel = 1
     items.score.numberOfSubLevels = questions[currentLevel].length
@@ -191,8 +187,7 @@ function getCurrentQuestion() {
     return questions[currentLevel][items.score.currentSubLevel - 1]
 }
 
-function showQuestion()
-{
+function showQuestion() {
     var question = getCurrentQuestion()
 
     playWord(question.voice)
@@ -202,10 +197,8 @@ function showQuestion()
     items.questionImage.source = "qrc:/gcompris/data/" + question.image
 }
 
-function nextLevel()
-{
-    if(numberOfLevel <= ++currentLevel )
-    {
+function nextLevel() {
+    if(numberOfLevel <= ++currentLevel) {
         currentLevel = 0
     }
     initLevel();
@@ -222,17 +215,14 @@ function nextSubLevel() {
     showQuestion()
 }
 
-function previousLevel()
-{
-    if(--currentLevel < 0)
-    {
+function previousLevel() {
+    if(--currentLevel < 0) {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
 }
 
-function showAnswer()
-{
+function showAnswer() {
     var question = getCurrentQuestion()
     playLetter(question.answer)
     items.questionText.text = question.clearQuestion

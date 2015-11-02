@@ -70,6 +70,7 @@ Item {
             if(view.itemsDropped == mymodel.count) {
                 showOk.start()
                 view.okShowed = true
+                instruction.show()
             }
             else if(view.okShowed) {
                 hideOk.start()

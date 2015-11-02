@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="100%"
+   height="100%"
+   viewBox="0 0 82.964888 82.945158"
+   id="svg2"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="button-pressed.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3200"
+     inkscape:window-height="1679"
+     id="namedview4748"
+     showgrid="false"
+     inkscape:zoom="16.095184"
+     inkscape:cx="34.160688"
+     inkscape:cy="35.058574"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3892">
+      <stop
+         id="stop3894"
+         style="stop-color:#eeeeec;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3896"
+         style="stop-color:#babdb6;stop-opacity:1"
+         offset="0.51906002" />
+      <stop
+         id="stop3898"
+         style="stop-color:#888a85;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3884">
+      <stop
+         id="stop3886"
+         style="stop-color:#d3d7cf;stop-opacity:1"
+         offset="0" />
+      <stop
+         id="stop3888"
+         style="stop-color:#888a85;stop-opacity:1"
+         offset="0.51906002" />
+      <stop
+         id="stop3890"
+         style="stop-color:#555753;stop-opacity:1"
+         offset="1" />
+    </linearGradient>
+    <radialGradient
+       cx="62.958"
+       cy="59.881001"
+       r="39.421001"
+       id="radialGradient4094"
+       xlink:href="#linearGradient3884"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.5295,0,0,1.5295,-17.98,-17.33)" />
+    <radialGradient
+       cx="36.831001"
+       cy="35.720001"
+       r="39.421001"
+       id="radialGradient4096"
+       xlink:href="#linearGradient3884"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.5291,0,0,1.5291,-17.96,-17.311)" />
+    <radialGradient
+       cx="62.958"
+       cy="59.881001"
+       r="39.421001"
+       id="radialGradient4098"
+       xlink:href="#linearGradient3892"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.5295,0,0,1.5295,82.02,-17.33)" />
+    <radialGradient
+       cx="36.831001"
+       cy="35.720001"
+       r="39.421001"
+       id="radialGradient4100"
+       xlink:href="#linearGradient3892"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.5291,0,0,1.5291,-17.96,-17.311)" />
+    <radialGradient
+       cx="34.516998"
+       cy="34.055"
+       r="39.421001"
+       id="radialGradient4102"
+       xlink:href="#linearGradient3884"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.5295,0,0,1.5295,182.02,-17.33)" />
+    <radialGradient
+       cx="58.103001"
+       cy="60.228001"
+       r="39.421001"
+       id="radialGradient4104"
+       xlink:href="#linearGradient3884"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.5291,0,0,1.5291,-17.96,-17.311)" />
+    <radialGradient
+       cx="34.516998"
+       cy="34.055"
+       r="39.421001"
+       id="radialGradient5438"
+       xlink:href="#linearGradient3884"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.5295,0,0,1.5295,189.0911,-22.9869)" />
+    <radialGradient
+       cx="62.958"
+       cy="59.881001"
+       r="39.421001"
+       id="radialGradient5442"
+       xlink:href="#linearGradient3892"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.5295,0,0,1.5295,89.0911,-22.9869)" />
+    <radialGradient
+       cx="62.958"
+       cy="59.881001"
+       r="39.421001"
+       id="radialGradient5446"
+       xlink:href="#linearGradient3884"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.5295,0,0,1.5295,-10.9089,-22.9869)" />
+    <radialGradient
+       cx="58.103001"
+       cy="60.228001"
+       r="39.421001"
+       id="radialGradient5452"
+       xlink:href="#linearGradient3884"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(1.5291,0,0,1.5291,-17.96,-17.311)" />
+  </defs>
+  <metadata
+     id="metadata5434">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title />
+        <dc:date>2010-09-22T02:42:15</dc:date>
+        <dc:description>Three button templates (normal, hovered, and pressed) for your website.</dc:description>
+        <dc:source>https://openclipart.org/detail/86281/grey-web-button-template-by-jhnri4</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>jhnri4</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>black and white</rdf:li>
+            <rdf:li>button</rdf:li>
+            <rdf:li>circle</rdf:li>
+            <rdf:li>gradient</rdf:li>
+            <rdf:li>gray</rdf:li>
+            <rdf:li>grey</rdf:li>
+            <rdf:li>hovered</rdf:li>
+            <rdf:li>normal</rdf:li>
+            <rdf:li>pressed</rdf:li>
+            <rdf:li>template</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <ellipse
+     clip-path="none"
+     id="path4940"
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#5cc86d;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.5;marker:none;enable-background:accumulate"
+     cx="42.526947"
+     cy="41.824135"
+     mask="none"
+     rx="41.230606"
+     ry="41.383369" />
+  <path
+     style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:#033200;fill-opacity:0.50232559;fill-rule:nonzero;stroke:none;stroke-width:0.5;marker:none;enable-background:accumulate"
+     clip-path="none"
+     d="M 42.526949,0.44058049 C 19.755571,0.44034799 1.2956665,18.968646 1.2959511,41.824383 1.2961824,64.679745 19.755945,83.207492 42.526949,83.207257 65.297953,83.207492 83.757716,64.679745 83.757982,41.824383 83.758214,18.968641 65.298309,0.44034429 42.526949,0.44058049 Z m 0,1.44319621 C 63.992986,1.8838268 82.320043,20.278825 82.320078,41.824383 82.320043,63.369942 63.992986,80.836035 42.526949,80.83608 21.060912,80.836035 2.7338558,63.369942 2.7338202,41.824383 2.7338202,20.278815 21.060912,1.883809 42.526949,1.8837767 Z"
+     id="path4940-1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cscscsssss" />
+</svg>

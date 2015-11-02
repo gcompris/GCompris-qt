@@ -35,7 +35,10 @@ var remainingWords
 function init(loadedItems_, wordList_, mode_) {
     spellItems = loadedItems_
     wordList = wordList_
-    spellItems.answer.forceActiveFocus()
+    // Do not set the focus on mobile or the mobile OS keyboard will pop up
+    // instead of ours.
+    if(!GCompris.ApplicationInfo.isMobile)
+        spellItems.answer.forceActiveFocus()
     initLevel()
     return true
 }

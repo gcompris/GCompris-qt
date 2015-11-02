@@ -1,0 +1,3 @@
+[submodule "external/qml-box2d"]
+	path = external/qml-box2d
+	url = https://github.com/qml-box2d/qml-box2d

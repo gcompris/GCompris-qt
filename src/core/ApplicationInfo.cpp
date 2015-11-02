@@ -1,6 +1,6 @@
 /* GCompris - ApplicationSettingsDefault.cpp
  *
- * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ * Copyright (C) 2014-2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -31,6 +31,8 @@
 #include <QtGui/QScreen>
 #include <QtCore/QLocale>
 #include <QtQuick/QQuickWindow>
+#include <QStandardPaths>
+#include <QSensor>
 
 #include <qmath.h>
 #include <QDebug>
@@ -98,6 +100,16 @@ ApplicationInfo::~ApplicationInfo()
     m_instance = NULL;
 }
 
+bool ApplicationInfo::sensorIsSupported(const QString& sensorType)
+{
+    return QSensor::sensorTypes().contains(sensorType.toUtf8());
+}
+
+Qt::ScreenOrientation ApplicationInfo::getNativeOrientation()
+{
+    return QGuiApplication::primaryScreen()->nativeOrientation();
+}
+
 void ApplicationInfo::setApplicationWidth(const int newWidth)
 {
     if (newWidth != m_applicationWidth) {
@@ -148,6 +160,12 @@ QString ApplicationInfo::getLocaleFilePath(const QString &file)
     QString filename = file;
     filename.replace("$LOCALE", localeShortName);
     return filename;
+}
+
+QString ApplicationInfo::getSharedWritablePath() const
+{
+    return QStandardPaths::writableLocation(QStandardPaths::GenericDataLocation)
+            + QLatin1String("/GCompris");
 }
 
 QStringList ApplicationInfo::getSystemExcludedFonts()

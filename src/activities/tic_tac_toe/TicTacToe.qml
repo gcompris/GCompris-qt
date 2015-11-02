@@ -354,7 +354,7 @@ ActivityBase {
             transform: Scale {
                 id: changeScalePlayer2
                 property real scale: 1
-                origin.x: 100
+                origin.x: player2.width
                 origin.y: 0
                 xScale: scale
                 yScale: scale

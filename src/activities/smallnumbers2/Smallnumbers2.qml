@@ -30,6 +30,7 @@ Gletters {
 
     mode: "letter"
     dataSetUrl: "qrc:/gcompris/src/activities/smallnumbers2/resource/"
+    configurationButtonVisible: false
 
     function getDominoValues(key) {
         var val1 = Math.floor(Math.random() * key)

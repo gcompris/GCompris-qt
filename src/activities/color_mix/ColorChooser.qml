@@ -29,12 +29,11 @@ import "."
 
 Image {
     id: chooser
-    source: Activity.url + (activity.modeRGB ? "flashlight.svg" : "tube.svg")
     z: 1
 
     property int maxSteps: 10
     property int currentStep: 0
-    property alias hue: color.hue
+    property real hue
 
     Image {
         id: intensity
@@ -93,16 +92,8 @@ Image {
         }
     }
 
-    Colorize {
-        id: color
-        anchors.fill: parent
-        source: parent
-        hue: 0.0
-        saturation: 1
-    }
-
     ColorButton {
-        text: "+"
+        source: Activity.url + "plus.svg"
         anchors {
             verticalCenter: parent.verticalCenter
             right: parent.right
@@ -111,7 +102,7 @@ Image {
     }
 
     ColorButton {
-        text: "-"
+        source: Activity.url + "minus.svg"
         anchors {
             verticalCenter: parent.verticalCenter
             left: parent.left
