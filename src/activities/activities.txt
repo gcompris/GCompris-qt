@@ -34,6 +34,7 @@ enumerate
 erase
 erase_2clic
 erase_clic
+explore_farm_animals
 fifteen
 followline
 football
