@@ -90,7 +90,7 @@ ActivityBase {
                 description: dataset.tab[index].text
                 imageSource: dataset.tab[index].image2
                 question: dataset.tab[index].text2
-                audio: dataset.tab[index].audio
+                audio: dataset.tab[index].audio !== undefined ? dataset.tab[index].audio : ""
             }
         }
 
