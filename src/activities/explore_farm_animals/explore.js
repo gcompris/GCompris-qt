@@ -1,94 +1,128 @@
-/* GCompris - explore_.js
- *
- * Copyright (C) 2015 Djalil Mesli <djalilmesli@gmail.com>
- *
- * Authors:
- *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
- *   Djalil Mesli <djalilmesli@gmail.com> (Qt Quick port)
- *
- *   This program is free software; you can redistribute it and/or modify
- *   it under the terms of the GNU General Public License as published by
- *   the Free Software Foundation; either version 3 of the License, or
- *   (at your option) any later version.
- *
- *   This program is distributed in the hope that it will be useful,
- *   but WITHOUT ANY WARRANTY; without even the implied warranty of
- *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- *   GNU General Public License for more details.
- *
- *   You should have received a copy of the GNU General Public License
- *   along with this program; if not, see <http://www.gnu.org/licenses/>.
- */
+/* GCompris - explore.js
+*
+* Copyright (C) 2015 Djalil MESLI <djalilmesli@gmail.com>
+*
+* Authors:
+*   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+*   Djalil MESLI <djalilmesli@gmail.com> (Qt Quick port)
+*
+*   This program is free software; you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation; either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/
+
+.pragma library
 .import GCompris 1.0 as GCompris
-var tab= [
+.import "qrc:/gcompris/src/core/core.js" as Core
 
-             {
-                 "image" :  "qrc:/gcompris/src/activities/explore_farm_animals/resource/horse.svg",
-                 "text"  :  qsTr("The horse goes 'neigh! neigh!'. Horses usually sleep standing up"),
-                 "audio" :  GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/horse.wav"),
-                 "image2":  "qrc:/gcompris/src/activities/explore_farm_animals/resource/horse.jpg",
-                 "text2" :  qsTr("You can ride on the back of this animal!")
-             },
-             {
-                 "image"  : "qrc:/gcompris/src/activities/explore_farm_animals/resource/chicken.svg",
-                 "text"   : qsTr("The chicken goes 'luck, cackle, cluck'. Chickens have over 200 different noises they can use to communicate."),
-                 "audio"  : GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/chickens.wav"),
-                 "image2" : "qrc:/gcompris/src/activities/explore_farm_animals/resource/chicken.jpg",
-                 "text2"  : qsTr("This animal lays eggs.")
-             },
-             {
-                 "image"  : "qrc:/gcompris/src/activities/explore_farm_animals/resource/cow.svg",
-                 "text"   : qsTr("The cow goes 'moo. moo.'. Cows are herbivorous mammals. They graze all day in the meadow."),
-                 "audio"  : GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/cow.wav"),
-                 "image2" : "qrc:/gcompris/src/activities/explore_farm_animals/resource/cow.jpg",
-                 "text2"  : qsTr("You can drink the milk this animal produces.")
-             },
-             {
-                 "image"  : "qrc:/gcompris/src/activities/explore_farm_animals/resource/cat.svg",
-                 "text"   : qsTr("The cat goes 'meow, meow'. Cats usually hate water because their fur doesn't stay warm when it is wet."),
-                 "audio"  : GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/cat.wav"),
-                 "image2" : "qrc:/gcompris/src/activities/explore_farm_animals/resource/cat.jpg",
-                 "text2"  : qsTr("This pet likes chasing mice.")
-             },
-             {
-                 "image"  : "qrc:/gcompris/src/activities/explore_farm_animals/resource/pig.svg",
-                 "text"   : qsTr("The pig goes 'oink, oink'. Pigs are the 4th most intelligent animal."),
-                 "audio"  : GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/pig.wav"),
-                 "image2" : "qrc:/gcompris/src/activities/explore_farm_animals/resource/pig.jpg",
-                 "text2"  : qsTr("This animal likes to lie in the mud.")
-             },
-             {
-                 "image"  : "qrc:/gcompris/src/activities/explore_farm_animals/resource/duck.svg",
-                 "text"   : qsTr("The duck goes 'quack, quack'. Ducks have special features like webbed feet and produce an oil to make their feathers 'waterproof'."),
-                 "audio"  : GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/duck.wav"),
-                 "image2" : "qrc:/gcompris/src/activities/explore_farm_animals/resource/duck.jpg",
-                 "text2"  : qsTr("This animal has webbed feet so it can swim in the water.")
-             },
-             {
-                 "image"  : "qrc:/gcompris/src/activities/explore_farm_animals/resource/owl.svg",
-                 "text"   : qsTr("The owl goes 'hoo. hoo.' The owl has excellent vision and hearing at night."),
-                 "audio"  : GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/owl.wav"),
-                 "image2" : "qrc:/gcompris/src/activities/explore_farm_animals/resource/owl.jpg",
-                 "text2"  : qsTr("This animal likes to come out at night.")
-              },
-             {
-                "image"  : "qrc:/gcompris/src/activities/explore_farm_animals/resource/dog.svg",
-                "text"   : qsTr("The dog goes 'bark! bark!'. Dogs are great human companions and usually enjoy love and attention."),
-                "audio"  : GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/dog.wav"),
-                "image2" : "qrc:/gcompris/src/activities/explore_farm_animals/resource/dog.jpg",
-                "text2"  : qsTr("This animal's ancestors were wolves.")
-            },
-            {
-                "image"  : "qrc:/gcompris/src/activities/explore_farm_animals/resource/rooster.svg",
-                "text"   : qsTr("The rooster goes 'coc-a-doodle-doo!'. Roosters have been on farms for about 5,000 years. Every morning it wakes the farm up with its noises."),
-                "audio"  : GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/rooster.wav"),
-                "image2" : "qrc:/gcompris/src/activities/explore_farm_animals/resource/rooster.jpg",
-                "text2"  : qsTr("This animal wakes the farm up in the morning.")
-            }
+var currentSubLevel = 0
+var numberOfLevel
+var items
+var dataset
 
+var questionOrder
 
+function start(items_,var_) {
+    items = items_
+    dataset = var_
+    items.currentLevel = 0
+    currentSubLevel = 0
 
-           ]
+    numberOfLevel = items.hasAudioQuestions ? 3 : 2;
+    // create table of size N filled with numbers from 0 to N
+    questionOrder = Array.apply(null, {length: items.dataModel.count}).map(Number.call, Number)
 
+    initLevel()
+}
 
+function stop() {
+}
 
+function initLevel() {
+    items.bar.level = items.currentLevel + 1
+    // randomize the questions for level 2 and 3
+    Core.shuffle(questionOrder);
+
+    currentSubLevel = 0
+    reload();
+    changeOpacity();
+    setQuestionText();
+    setInstruction();
+}
+
+function nextLevel() {
+    if (numberOfLevel <= ++items.currentLevel) {
+        items.currentLevel = 0
+    }
+    if (items.currentLevel == 1) {
+        nextSubLevel();
+    }
+    initLevel();
+}
+
+function previousLevel() {
+    if(--items.currentLevel < 0) {
+        items.currentLevel = numberOfLevel - 1
+    }
+    initLevel();
+}
+
+function isComplete() {
+    for(var i = 0 ; i < items.dataModel.count ; ++ i) {
+        if(!items.dataModel.itemAt(i).starVisible)
+            return false;
+    }
+    return true;
+}
+
+function nextSubLevel() {
+    currentSubLevel ++;
+    if(currentSubLevel == items.dataModel.count) {
+        items.bonus.good("smiley");
+        currentSubLevel = 0;
+        nextLevel();
+    }
+    else if(items.currentLevel == 1 && items.hasAudioQuestions)
+        items.audioEffects.play(dataset.tab[questionOrder[currentSubLevel]].audio);
+    else if(items.currentLevel != 0) {
+        setQuestionText();
+    }
+}
+
+function reload() {
+    for(var i = 0 ; i < items.dataModel.count ; ++ i) {
+        items.dataModel.itemAt(i).starVisible = false;
+    }
+}
+
+function repeat() {
+    items.audioEffects.play(dataset.tab[questionOrder[currentSubLevel]].audio);
+}
+
+function changeOpacity() {
+    if (items.currentLevel == 2 || (items.currentLevel == 1 && !items.hasAudioQuestions)) {
+        items.question.opacity = 0.8;
+        items.questionText.opacity = 1;
+    }
+    else {
+        items.question.opacity = 0;
+        items.questionText.opacity = 0;
+    }
+}
+
+function setQuestionText() {
+    items.questionText.text = dataset.tab[questionOrder[currentSubLevel]].text2;
+}
+
+function setInstruction() {
+    items.instructionText.text = dataset.instruction[items.currentLevel].text
+}
