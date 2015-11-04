@@ -64,6 +64,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias hat: theHat
+            property alias introductionText: introText
             property var repeatersList:
                 [repeaterFirstRow, repeaterSecondRow, repeaterAnswerRow]
         }
@@ -190,6 +191,31 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+        }
+
+        BarButton {
+          id: okButton
+          source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+          sourceSize.width: 66 * bar.barZoom
+          x: background.width*0.85
+          y: background.height*0.75
+          width: 66*ApplicationInfo.ratio
+          height: 66*ApplicationInfo.ratio
+          visible: true
+          //z: 8
+          onClicked: {
+            Activity.verifyAnswer()
+          }
+        }
+
+        Text {
+          id: introText
+          x: background.width/2 - introText.width/2
+          y: 20
+          font.pointSize: 32
+          font.bold: true 
+          color: "cyan"
+          text: qsTr("Click on the hat to begin the game") 
         }
 
         Bonus {

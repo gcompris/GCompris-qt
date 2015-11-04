@@ -53,6 +53,12 @@ function initLevel() {
     nbStarsToAddOrRemove = new Array(0, 0, 0)
     nbStarsToCount = new Array(0, 0, 0)
     animationCount = 0
+    
+    if(currentLevel > 0) {
+        items.introductionText.visible = false
+    } else {
+        items.introductionText.visible = true
+    }
 
     for(var j=0; j<3; j++) {
         items.repeatersList[0].itemAt(j).initStars()
@@ -129,18 +135,20 @@ function initLevel() {
     }
 }
 
-function verifyAnswer(barIndex, state) {
+function userClickedAStar(barIndex,state) { 
     if(state)
         numberOfUserStars[barIndex]++
     else
         numberOfUserStars[barIndex]--
+}
 
+function verifyAnswer() {
     if(numberOfUserStars[0] === nbStarsToCount[0] &&
        numberOfUserStars[1] === nbStarsToCount[1] &&
        numberOfUserStars[2] === nbStarsToCount[2]) {
         items.bonus.good("flower")
     } else {
-        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/scroll.wav")
+        items.bonus.bad("flower")
     }
 }
 
@@ -159,6 +167,10 @@ function previousLevel() {
 }
 
 function moveStarsUnderHat() {
+    if(currentLevel == 0) {
+        items.introductionText.visible = false
+    }
+
     for(var j=0; j<3; j++) {
         items.repeatersList[0].itemAt(j).moveStars()
     }
