@@ -80,6 +80,25 @@ ActivityBase {
                 starsSize: background.starSize
                 audioEffects: activity.audioEffects
             }
+
+            GCText {
+                id: introText
+                anchors {
+                    horizontalCenter: parent.horizontalCenter
+                    top: parent.top
+                    topMargin: 20 * ApplicationInfo.ratio
+                }
+                width: parent.width - 5 * ApplicationInfo.ratio
+                fontSize: regularSize
+                font.bold: true
+                style: Text.Outline
+                styleColor: "black"
+                color: "white"
+                wrapMode: TextEdit.WordWrap
+                horizontalAlignment: TextEdit.AlignHCenter
+                text: qsTr("Click on the hat to begin the game")
+            }
+
             GCText {
                 //: The math operation
                 text: mode == "minus" ? qsTr("-") : qsTr("+")
@@ -88,6 +107,8 @@ ActivityBase {
                 y: secondRow.y
                 fontSize: 66
                 color: "white"
+                style: Text.Outline
+                styleColor: "black"
             }
         }
 
@@ -197,25 +218,17 @@ ActivityBase {
           id: okButton
           source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
           sourceSize.width: 66 * bar.barZoom
-          x: background.width*0.85
-          y: background.height*0.75
-          width: 66*ApplicationInfo.ratio
-          height: 66*ApplicationInfo.ratio
-          visible: true
-          //z: 8
+          anchors {
+              right: parent.right
+              rightMargin: 10 * ApplicationInfo.ratio
+              bottom: parent.bottom
+              bottomMargin: parent.width > 420 * ApplicationInfo.ratio ? 10 : bar.height
+          }
+          width: 66 * ApplicationInfo.ratio
+          height: 66 * ApplicationInfo.ratio
           onClicked: {
             Activity.verifyAnswer()
           }
-        }
-
-        Text {
-          id: introText
-          x: background.width/2 - introText.width/2
-          y: 20
-          font.pointSize: 32
-          font.bold: true 
-          color: "cyan"
-          text: qsTr("Click on the hat to begin the game") 
         }
 
         Bonus {
