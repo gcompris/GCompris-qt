@@ -49,7 +49,7 @@ Item {
         hoverEnabled: true
         onClicked: {
             mainItem.selected = !mainItem.selected
-            Activity.verifyAnswer(barIndex, mainItem.selected)
+            Activity.userClickedAStar(barIndex, mainItem.selected)
         }
     }
 
