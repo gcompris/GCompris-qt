@@ -88,7 +88,7 @@ Item {
             onStartedChanged: started ? retouch.start() : retouch.stop()
             onPressed: {
                 if (Activity.items.currentLevel == 0) {
-                    audioEffects.play(activity.url + name + '.wav');
+                    audioEffects.play(animal.audio);
                     description.visible = true;
                     star.visible = true;
                 }

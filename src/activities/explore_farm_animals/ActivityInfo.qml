@@ -18,7 +18,7 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "explore_farm_animals/Explore_farm_animals.qml"
+  name: "explore_farm_animals/ExploreFarmAnimals.qml"
   difficulty: 2
   icon: "explore_farm_animals/explore_farm_animals.svg"
   author: "Djalil Mesli &lt;djalilmesli@gmail.com&gt;"

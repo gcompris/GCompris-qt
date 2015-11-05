@@ -1,4 +1,4 @@
-/* GCompris - Explore_farm_animals.qml
+/* GCompris - ExploreFarmAnimals.qml
 *
 * Copyright (C) 2015 Djalil MESLI <djalilmesli@gmail.com>
 *
