@@ -13,8 +13,8 @@
    height="232.85588"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="hat.svg">
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="hat-point.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,16 +24,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.979899"
-     inkscape:cx="3.8398011"
-     inkscape:cy="98.879542"
+     inkscape:zoom="2.7300951"
+     inkscape:cx="77.32816"
+     inkscape:cy="102.8111"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="744"
+     inkscape:window-width="1600"
+     inkscape:window-height="840"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="31"
      inkscape:window-maximized="1"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -64,16 +64,16 @@
        sodipodi:nodetypes="cccc" />
     <text
        xml:space="preserve"
-       style="font-size:121.36519623000002355px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#dddf0e;fill-opacity:1;stroke:#000000;font-family:Sans;stroke-opacity:1;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none"
-       x="163.27831"
+       style="font-style:normal;font-weight:normal;font-size:121.36519623px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#dddf0e;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       x="157.56573"
        y="315.36108"
        id="text5618"
        sodipodi:linespacing="125%"
        transform="scale(1.0503119,0.95209813)"><tspan
          sodipodi:role="line"
          id="tspan5620"
-         x="163.27831"
+         x="157.56573"
          y="315.36108"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke:#000000;stroke-opacity:1;fill:#dddf0e;fill-opacity:1;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none">?</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;fill:#dddf0e;fill-opacity:1;stroke:#000000;stroke-width:1.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">?</tspan></text>
   </g>
 </svg>
