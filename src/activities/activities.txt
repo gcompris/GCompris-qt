@@ -36,6 +36,7 @@ erase_2clic
 erase_clic
 explore_farm_animals
 explore_world_animals
+explore_world_music
 fifteen
 followline
 football
