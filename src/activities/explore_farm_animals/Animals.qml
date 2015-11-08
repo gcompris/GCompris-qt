@@ -3,7 +3,7 @@
 * Copyright (C) 2015 Djalil MESLI <djalilmesli@gmail.com>
 *
 * Authors:
-*   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+*   Beth Hadley <bethmhadley@gmail.com> (GTK+ version)
 *   Djalil MESLI <djalilmesli@gmail.com> (Qt Quick port)
 *
 *   This program is free software; you can redistribute it and/or modify
