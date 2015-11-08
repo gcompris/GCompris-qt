@@ -24,7 +24,6 @@
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var currentSubLevel = 0
 var numberOfLevel
 var items
 var dataset
@@ -35,8 +34,8 @@ function start(items_,var_) {
     items = items_
     dataset = var_
     items.currentLevel = 0
-    currentSubLevel = 0
-
+    items.score.currentSubLevel = 0
+    items.score.numberOfSubLevels = items.dataModel.count
     numberOfLevel = items.hasAudioQuestions ? 3 : 2;
     // create table of size N filled with numbers from 0 to N
     questionOrder = Array.apply(null, {length: items.dataModel.count}).map(Number.call, Number)
@@ -52,7 +51,7 @@ function initLevel() {
     // randomize the questions for level 2 and 3
     Core.shuffle(questionOrder);
 
-    currentSubLevel = 0
+    items.score.currentSubLevel = 0
     reload();
     changeOpacity();
     setQuestionText();
@@ -63,10 +62,11 @@ function nextLevel() {
     if (numberOfLevel <= ++items.currentLevel) {
         items.currentLevel = 0
     }
+    initLevel();
     if (items.currentLevel == 1) {
+        items.score.currentSubLevel --;
         nextSubLevel();
     }
-    initLevel();
 }
 
 function previousLevel() {
@@ -85,14 +85,15 @@ function isComplete() {
 }
 
 function nextSubLevel() {
-    currentSubLevel ++;
-    if(currentSubLevel == items.dataModel.count) {
+    items.score.currentSubLevel ++;
+    if(items.score.currentSubLevel == items.dataModel.count) {
         items.bonus.good("smiley");
-        currentSubLevel = 0;
+        items.score.currentSubLevel = 0;
         nextLevel();
     }
-    else if(items.currentLevel == 1 && items.hasAudioQuestions)
-        items.audioEffects.play(dataset.tab[questionOrder[currentSubLevel]].audio);
+    else if(items.currentLevel == 1 && items.hasAudioQuestions) {
+        items.audioEffects.play(getCurrentQuestion().audio);
+    }
     else if(items.currentLevel != 0) {
         setQuestionText();
     }
@@ -105,7 +106,7 @@ function reload() {
 }
 
 function repeat() {
-    items.audioEffects.play(dataset.tab[questionOrder[currentSubLevel]].audio);
+    items.audioEffects.play(getCurrentQuestion().audio);
 }
 
 function changeOpacity() {
@@ -119,8 +120,12 @@ function changeOpacity() {
     }
 }
 
+function getCurrentQuestion() {
+    return dataset.tab[questionOrder[items.score.currentSubLevel]];
+}
+
 function setQuestionText() {
-    items.questionText.text = dataset.tab[questionOrder[currentSubLevel]].text2;
+    items.questionText.text = getCurrentQuestion().text2;
 }
 
 function setInstruction() {

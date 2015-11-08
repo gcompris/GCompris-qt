@@ -39,6 +39,8 @@ Rectangle {
     property alias description: descriptionText.text
     property alias imageSource: animalImage.source
 
+    property bool horizontalLayout: background.width > background.height
+
     GCText {
         id: heading
         fontSize: largeSize
@@ -53,14 +55,15 @@ Rectangle {
 
     Image {
         id: animalImage
-        sourceSize.width: parent.width * 0.5
+        sourceSize.width: if(rectangleDesc.horizontalLayout) parent.width * 0.5
+        sourceSize.height: if(!rectangleDesc.horizontalLayout) parent.height * 0.3
         fillMode: Image.PreserveAspectFit
         verticalAlignment: Image.AlignTop
         anchors {
-            top: heading.bottom
-            topMargin: 30 * ApplicationInfo.ratio
-            bottom: parent.bottom
-            bottomMargin: 60 * ApplicationInfo.ratio
+            top: rectangleDesc.horizontalLayout ? heading.bottom : descriptionText.bottom
+            //topMargin: 30 * ApplicationInfo.ratio
+            //bottom: parent.bottom
+            //bottomMargin: 60 * ApplicationInfo.ratio
             left: parent.left
             leftMargin:  30 * ApplicationInfo.ratio
         }
@@ -73,15 +76,15 @@ Rectangle {
         horizontalAlignment: Text.AlignJustify
         anchors {
             top: heading.bottom
-            topMargin: 30 * ApplicationInfo.ratio
+            topMargin: rectangleDesc.horizontalLayout ? 30 * ApplicationInfo.ratio : 0
             right: parent.right
             rightMargin: 30 * ApplicationInfo.ratio
-            left: animalImage.right
+            left: rectangleDesc.horizontalLayout ? animalImage.right : parent.left
             leftMargin: 30 * ApplicationInfo.ratio
         }
         color: "#2a2a2a"
-        width: parent.width * 0.45
-        height: parent.height * 0.5
+        width: rectangleDesc.horizontalLayout ? parent.width * 0.45 : parent.width
+        height: rectangleDesc.horizontalLayout ? parent.height * 0.5 : parent.height * 0.3
         wrapMode: Text.WordWrap
     }
 
@@ -90,8 +93,8 @@ Rectangle {
         height: rectangleDesc.height * 0.3
         radius: 5
         anchors {
-            top: descriptionText.bottom
-            topMargin: 30 * ApplicationInfo.ratio
+            top: rectangleDesc.horizontalLayout ? descriptionText.bottom : imageSource.bottom
+            topMargin: rectangleDesc.horizontalLayout ? 30 * ApplicationInfo.ratio : 0
             horizontalCenter: rectangleDesc.horizontalCenter
         }
         GCText {

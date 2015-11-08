@@ -92,8 +92,8 @@ Item {
                     description.visible = true;
                     star.visible = true;
                 }
-                else if (Activity.items.level == 1 && Activity.items.hasAudioQuestions) {
-                    if (Activity.getCurrentAudio() == animal.audio) {
+                else if (Activity.items.currentLevel == 1 && Activity.items.hasAudioQuestions) {
+                    if (Activity.getCurrentQuestion().audio == animal.audio) {
                         animWin.start();
                         items.bonus.good("smiley");
                         Activity.nextSubLevel();

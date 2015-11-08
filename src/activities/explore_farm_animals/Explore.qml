@@ -43,11 +43,7 @@ ActivityBase {
 
         sourceSize.width: parent.width
         sourceSize.height: parent.height
-        anchors {
-            bottom: parent.bottom
-            right: parent.right
-            margins: 0
-        }
+        anchors.fill: parent
 
         focus: true
 
@@ -68,6 +64,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property alias score: score
             property alias dataModel: dataModel
             property alias question: question
             property alias questionText: questionText
@@ -171,6 +168,14 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+        }
+
+        Score {
+            id: score
+            z: 1003
+            visible: items.currentLevel != 0
+            anchors.bottom: background.bottom
+            anchors.right: background.right
         }
 
         Bonus {
