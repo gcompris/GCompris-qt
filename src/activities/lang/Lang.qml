@@ -71,6 +71,7 @@ ActivityBase {
             property alias englishFallbackDialog: englishFallbackDialog
             property string locale: 'system'
             property alias dialogActivityConfig: dialogActivityConfig
+            property variant categoriesTranslations: activity.categoriesTranslations
         }
 
         function handleResourceRegistered(resource)
@@ -281,5 +282,18 @@ ActivityBase {
             onClose: home()
         }
     }
+
+    property variant categoriesTranslations: {"other": qsTr("other"),
+        "action": qsTr("action"), "adjective": qsTr("adjective"),
+        "color": qsTr("color"), "number": qsTr("number"),
+        "people": qsTr("people"), "bodyparts": qsTr("bodyparts"),
+        "clothes": qsTr("clothes"), "emotion": qsTr("emotion"),
+        "job": qsTr("job"), "sport": qsTr("sport"),
+        "nature": qsTr("nature"), "animal": qsTr("animal"),
+        "fruit": qsTr("fruit"), "plant": qsTr("plant"),
+        "vegetables": qsTr("vegetables"), "object": qsTr("object"),
+        "construction": qsTr("construction"),
+        "furniture": qsTr("furniture"), "houseware": qsTr("houseware"),
+        "tool": qsTr("tool"), "food": qsTr("food")}
 
 }

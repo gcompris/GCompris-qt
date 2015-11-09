@@ -156,7 +156,7 @@ Image {
                     elide: Text.ElideRight
                     maximumLineCount: 2
                     wrapMode: Text.WordWrap
-                    text: name
+                    text: Activity.items.categoriesTranslations[name]
                 }
                 ProgressBar {
                     id: progressLang
