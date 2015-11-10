@@ -114,6 +114,7 @@ smallnumbers
 smallnumbers2
 sudoku
 superbrain
+tangram
 target
 tic_tac_toe
 tic_tac_toe_2players

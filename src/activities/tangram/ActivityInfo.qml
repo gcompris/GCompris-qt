@@ -19,7 +19,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "tangram/Tangram.qml"
-  difficulty: 1
+  difficulty: 3
   icon: "tangram/tangram.svg"
   author: "Yves Combe /  Philippe Banwarth"
   demo: true
