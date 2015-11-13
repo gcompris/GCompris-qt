@@ -1,4 +1,4 @@
-/* GCompris - balance.qml
+/* GCompris - balancebox.qml
  *
  * Copyright (C) 2014-2015 Holger Kaelberer <holger.k@elberer.de>
  *
