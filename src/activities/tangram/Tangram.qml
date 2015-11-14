@@ -112,25 +112,22 @@ ActivityBase {
                 // Let the items comes from random side of the screen
                 x: Math.random() > 0.5 ? - width : background.width
                 y: Math.random() > 0.5 ? - height : background.height
-                source: Activity.url + 'triangle.svg'
-                sourceSize.width: 200
+                mirror: modelData[1]
+                rotation: -modelData[4]
+                source: Activity.url + modelData[0] + '.svg'
                 z: 0
 
-                property real xRatio
-                property real yRatio
+                property real xRatio: modelData[2]
+                property real yRatio: modelData[3]
                 property bool selected: false
 
                 Component.onCompleted: {
-                    xRatio = Activity.getRandomInt(10, background.width - 220 * ApplicationInfo.ratio) /
-                            (background.width  - 220 * ApplicationInfo.ratio)
-                    yRatio = Activity.getRandomInt(10, background.height - 180 * ApplicationInfo.ratio) /
-                            (background.height - 180 * ApplicationInfo.ratio)
                     positionMe()
                 }
 
                 function positionMe() {
-                    x = (background.width - 220 * ApplicationInfo.ratio) * xRatio
-                    y = (background.height- 180 * ApplicationInfo.ratio) * yRatio
+                    x = background.width * xRatio / 7
+                    y = (background.height - bar.height) * yRatio / 8
                 }
 
                 Drag.active: dragArea.drag.active
