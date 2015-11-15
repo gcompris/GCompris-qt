@@ -48,14 +48,14 @@ ActivityBase {
         }
 
         onWidthChanged: {
-            for(var i=0; i < itemList.model; i++) {
-                itemList.itemAt(i).positionMe()
+            for(var i=0; i < modelList.model; i++) {
+                modelList.itemAt(i).positionMe()
             }
         }
 
         onHeightChanged: {
-            for(var i=0; i < itemList.model; i++) {
-                itemList.itemAt(i).positionMe()
+            for(var i=0; i < modelList.model; i++) {
+                modelList.itemAt(i).positionMe()
             }
         }
 
@@ -66,7 +66,9 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property alias itemListModel: itemList.model
+            property alias modelListModel: modelList.model
+            property alias userList: userList
+            property alias userListModel: userList.model
             property Item selected
         }
 
@@ -92,8 +94,8 @@ ActivityBase {
             }
             onReleased: {
                 prevRotation = 0
-                // Force a modulo 5 rotation
-                items.selected.rotation = items.selected.rotation + (items.selected.rotation + 2.5) % 5
+                // Force a modulo 45 rotation
+                items.selected.rotation = Math.floor((items.selected.rotation + 45 / 2) / 45) * 45
             }
         }
 
@@ -106,14 +108,14 @@ ActivityBase {
         }
 
         Repeater {
-            id: itemList
+            id: modelList
             Image {
-                id: tans
+                id: tansModel
                 // Let the items comes from random side of the screen
                 x: Math.random() > 0.5 ? - width : background.width
                 y: Math.random() > 0.5 ? - height : background.height
                 mirror: modelData[1]
-                rotation: -modelData[4]
+                rotation: modelData[4]
                 source: Activity.url + modelData[0] + '.svg'
                 z: 0
 
@@ -127,7 +129,84 @@ ActivityBase {
 
                 function positionMe() {
                     x = background.width * xRatio / 7
-                    y = (background.height - bar.height) * yRatio / 8
+                    y = background.height * yRatio / 8
+                }
+
+                Colorize {
+                    anchors.fill: parent
+                    source: parent
+                    hue: 0.5
+                    lightness: -0.2
+                    saturation: 0
+                }
+                Behavior on x {
+                    PropertyAnimation  {
+                        duration: 2000
+                        easing.type: Easing.InOutQuad
+                    }
+                }
+                Behavior on y {
+                    PropertyAnimation  {
+                        duration: 2000
+                        easing.type: Easing.InOutQuad
+                    }
+                }
+            }
+        }
+
+
+        GCText {
+            id: text
+            x: 100
+            y: bar.y - 50
+        }
+
+        Repeater {
+            id: userList
+            Image {
+                id: tans
+                // Let the items comes from random side of the screen
+                x: Math.random() > 0.5 ? - width : background.width
+                y: Math.random() > 0.5 ? - height : background.height
+                mirror: modelData[1]
+                rotation: modelData[4]
+                source: Activity.url + modelData[0] + '.svg'
+                z: 0
+
+                property real xRatio: modelData[2]
+                property real yRatio: modelData[3]
+                property bool selected: false
+                property int animDuration: 3000
+
+                Component.onCompleted: {
+                    positionMe()
+                }
+
+                function positionMe() {
+                    x = background.width * xRatio / 7
+                    y = background.height * yRatio / 8
+                }
+
+                function positionToTans() {
+                    return [
+                                x / (background.width / 7),
+                                y / (background.height / 8)
+                            ]
+                }
+
+                function rotationToTans() {
+                    var mod = 360
+                    if(modelData[0] == 'p2')
+                        mod = 90
+                    else if(modelData[0] == 'p3')
+                        mod = 180
+                    return rotation >= 0 ? rotation % mod : (360 + rotation) % mod
+                }
+
+                function asTans() {
+                    console.log("asTans", rotation, rotation >= 0 ? rotation : 360 + rotation)
+                    return [modelData[0], mirror, positionToTans()[0], positionToTans()[1],
+                            rotationToTans()]
                 }
 
                 Drag.active: dragArea.drag.active
@@ -144,8 +223,24 @@ ActivityBase {
                             items.selected.selected = false
                         items.selected = tans
                         parent.selected = true
+                        var win = Activity.check()
+                        if(win)
+                            text.text = "win"
+                        else
+                            text.text = "loose"
                     }
-                    onReleased: parent.Drag.drop()
+                    onDoubleClicked: parent.mirror = !parent.mirror
+                    onReleased: {
+                        tans.animDuration = 30
+                        parent.Drag.drop()
+                        var closest = Activity.getClosest(positionToTans())
+                        if(closest) {
+                            console.log('closest found', closest[0], closest[1])
+                            tans.xRatio = closest[0]
+                            tans.yRatio = closest[1]
+                            tans.positionMe()
+                        }
+                    }
                 }
 
                 Colorize {
@@ -159,16 +254,25 @@ ActivityBase {
                 }
                 Behavior on x {
                     PropertyAnimation  {
-                        duration: 2000
+                        duration: tans.animDuration
                         easing.type: Easing.InOutQuad
                     }
                 }
                 Behavior on y {
                     PropertyAnimation  {
-                        duration: 2000
+                        duration: tans.animDuration
                         easing.type: Easing.InOutQuad
                     }
                 }
+            }
+
+            // Return the tans model of all the user tans
+            function asTans() {
+                var tans = []
+                for(var i = 0; i < userList.count; i++) {
+                    tans.push(userList.itemAt(i).asTans())
+                }
+                return tans
             }
         }
 

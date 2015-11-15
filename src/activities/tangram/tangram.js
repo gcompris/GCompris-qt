@@ -26,7 +26,16 @@ var url = "qrc:/gcompris/src/activities/tangram/resource/"
 
 var dataset = [
             [
-                ['p3', 1, 1.555033, 3.667909, 225],
+                ['p2', 0, 1.0, 1.0, 0],
+                ['p4', 0, 2.0, 1.0, 0],
+                ['p1', 0, 3.0, 1.0, 0],
+                ['p3', 0, 4.0, 1.0, 0],
+                ['p4', 0, 1.0, 2.0, 0],
+                ['p0', 0, 2.0, 2.0, 0],
+                ['p0', 0, 3.0, 2.0, 0]
+            ],
+            [
+                ['p3', 1, 1.555033, 3.667909, 45],
                 ['p2', 0, 3.055033, 4.667909, 0],
                 ['p4', 0, 2.221700, 4.501242, 270],
                 ['p4', 0, 3.888367, 4.834575, 90],
@@ -36,15 +45,26 @@ var dataset = [
             ],
             [
                 ['p2', 0, 3.450292, 1.017544, 45],
-                ['p4', 0, 3.450292, 2.196055, 315],
-                ['p1', 0, 3.450292, 3.098424, 315],
+                ['p4', 0, 3.450292, 2.196055, 45],
+                ['p1', 0, 3.450292, 3.098424, 45],
                 ['p3', 0, 3.096739, 5.199524, 90],
-                ['p4', 0, 4.157399, 5.081673, 135],
-                ['p0', 0, 3.450292, 6.495887, 315],
-                ['p0', 0, 3.450292, 4.374566, 315]
+                ['p4', 0, 4.157399, 5.081673, 45],
+                ['p0', 0, 3.450292, 6.495887, 45],
+                ['p0', 0, 3.450292, 4.374566, 45]
             ]
 ]
 
+var defaultTan = [
+            ['p2', 0, 1.0, 1.0, 0],
+            ['p4', 0, 2.0, 1.0, 0],
+            ['p1', 0, 3.0, 1.0, 0],
+            ['p3', 0, 4.0, 1.0, 0],
+            ['p4', 0, 1.0, 2.0, 0],
+            ['p0', 0, 2.0, 2.0, 0],
+            ['p0', 0, 3.0, 2.0, 0]
+        ]
+
+var tan // The current user tangran positions
 var currentLevel = 0
 var numberOfLevel = dataset.length
 var items
@@ -66,7 +86,9 @@ function stop() {
 function initLevel() {
     globalZ = 0
     items.bar.level = currentLevel + 1
-    items.itemListModel = dataset[items.bar.level - 1]
+    items.modelListModel = dataset[items.bar.level - 1]
+    items.userListModel = []
+    items.userListModel = defaultTan.slice();
 }
 
 function nextLevel() {
@@ -95,4 +117,55 @@ function getAngleOfLineBetweenTwoPoints(x1, y1, x2, y2) {
     var xDiff = x2 - x1;
     var yDiff = y2 - y1;
     return Math.atan2(yDiff, xDiff);
+}
+
+function getDistance(ix, iy, jx, jy) {
+    return Math.sqrt(Math.pow((ix - jx), 2) + Math.pow((iy - jy), 2))
+}
+
+function dumpTans(tans) {
+    for(var i = 0; i < tans.length; i++) {
+        console.log(tans[i][0], tans[i][1], tans[i][2], tans[i][3], tans[i][4])
+    }
+}
+
+function getClosest(point) {
+    console.log("getClosest", point)
+    var nbpiece = dataset[items.bar.level - 1].length
+    for(var i = 0; i < nbpiece; i++) {
+        var p1 = dataset[items.bar.level - 1][i]
+        if(getDistance(p1[2], p1[3], point[0], point[1]) < 0.2)
+            return [p1[2], p1[3]]
+    }
+    return
+}
+
+function check() {
+    console.log(("===== check ======"))
+    var nbpiece = dataset[items.bar.level - 1].length
+    var userTans = items.userList.asTans()
+    dumpTans(userTans)
+    for(var i = 0; i < nbpiece; i++) {
+        var p1 = dataset[items.bar.level - 1][i]
+        var ok = false
+        for(var j = 0; j < nbpiece; j++) {
+            var p2 = userTans[j]
+            // Check type distance and rotation are close enough
+            if(p1[0] === p2[0])
+            if(p1[0] === p2[0] && // Type
+                    p1[1] == p2[1] && // Flipping
+                    getDistance(p1[2], p1[3], p2[2], p2[3]) < 0.2 && // X, Y
+                    p1[4] === p2[4] /* Rotation */ ) {
+                ok = true
+            }
+            if(p1[0] === p2[0])
+                if(ok)
+                    console.log("distance ", p1[0], getDistance(p1[2], p1[3], p2[2], p2[3]), "OK")
+                else
+                    console.log("distance ", p1[0], getDistance(p1[2], p1[3], p2[2], p2[3]), "NOK")
+        }
+        if(!ok)
+            return false
+    }
+    return true
 }
