@@ -70,6 +70,7 @@ ActivityBase {
             property alias userList: userList
             property alias userListModel: userList.model
             property Item selected
+            property double tansRatio: 2
         }
 
         onStart: {
@@ -117,6 +118,7 @@ ActivityBase {
                 mirror: modelData[1]
                 rotation: modelData[4]
                 source: Activity.url + modelData[0] + '.svg'
+                sourceSize.width: 100 * items.tansRatio
                 z: 0
 
                 property real xRatio: modelData[2]
@@ -171,6 +173,7 @@ ActivityBase {
                 mirror: modelData[1]
                 rotation: modelData[4]
                 source: Activity.url + modelData[0] + '.svg'
+                sourceSize.width: 100 * items.tansRatio
                 z: 0
 
                 property real xRatio: modelData[2]
@@ -194,18 +197,22 @@ ActivityBase {
                             ]
                 }
 
+                // Manage to return a base rotation as it was provided in the model
                 function rotationToTans() {
-                    var mod = 360
-                    if(modelData[0] == 'p2')
-                        mod = 90
-                    else if(modelData[0] == 'p3')
-                        mod = 180
-                    return rotation >= 0 ? rotation % mod : (360 + rotation) % mod
+                    var mod = Activity.pieceRules[modelData[0]][0]
+                    var flipable = Activity.pieceRules[modelData[0]][1]
+                    if(flipable || !mirror)
+                        return rotation >= 0 ? rotation % mod : (360 + rotation) % mod
+                    else
+                        // It flipping but model is not flipping sensitive we have to rotate accordingly
+                        return rotation >= 0 ? (rotation - (mod - 90)) % mod : (360 + rotation - (mod - 90)) % mod
                 }
 
+                // Return all the positions as we got it from a tans definition
                 function asTans() {
-                    console.log("asTans", rotation, rotation >= 0 ? rotation : 360 + rotation)
-                    return [modelData[0], mirror, positionToTans()[0], positionToTans()[1],
+                    return [modelData[0],
+                            Activity.pieceRules[modelData[0]][1] ? mirror : 0,
+                            positionToTans()[0], positionToTans()[1],
                             rotationToTans()]
                 }
 

@@ -24,6 +24,14 @@
 
 var url = "qrc:/gcompris/src/activities/tangram/resource/"
 
+/* dataset format
+  for each piece we have:
+  - piece file name
+  - flipping (0 or 1)
+  - x
+  - y
+  - rotation
+*/
 var dataset = [
             [
                 ['p2', 0, 1.0, 1.0, 0],
@@ -54,6 +62,8 @@ var dataset = [
             ]
 ]
 
+// This is the list of tans provided to the use with their initial positions
+// this is the same formatting as dataset.
 var defaultTan = [
             ['p2', 0, 1.0, 1.0, 0],
             ['p4', 0, 2.0, 1.0, 0],
@@ -63,6 +73,18 @@ var defaultTan = [
             ['p0', 0, 2.0, 2.0, 0],
             ['p0', 0, 3.0, 2.0, 0]
         ]
+
+// Give specific piece rules
+// For each piece we provide:
+// - the modulo rotation. What angle is needed to turn to see the item in the same position
+// - the flipping support (true / false)
+var pieceRules = {
+    'p0': [360, false],
+    'p1': [360, false],
+    'p2': [90,  false],
+    'p3': [180, true],
+    'p4': [360, false]
+}
 
 var tan // The current user tangran positions
 var currentLevel = 0
@@ -124,13 +146,13 @@ function getDistance(ix, iy, jx, jy) {
 }
 
 function dumpTans(tans) {
+    console.log("== tans ==")
     for(var i = 0; i < tans.length; i++) {
         console.log(tans[i][0], tans[i][1], tans[i][2], tans[i][3], tans[i][4])
     }
 }
 
 function getClosest(point) {
-    console.log("getClosest", point)
     var nbpiece = dataset[items.bar.level - 1].length
     for(var i = 0; i < nbpiece; i++) {
         var p1 = dataset[items.bar.level - 1][i]
@@ -141,7 +163,6 @@ function getClosest(point) {
 }
 
 function check() {
-    console.log(("===== check ======"))
     var nbpiece = dataset[items.bar.level - 1].length
     var userTans = items.userList.asTans()
     dumpTans(userTans)
@@ -151,7 +172,6 @@ function check() {
         for(var j = 0; j < nbpiece; j++) {
             var p2 = userTans[j]
             // Check type distance and rotation are close enough
-            if(p1[0] === p2[0])
             if(p1[0] === p2[0] && // Type
                     p1[1] == p2[1] && // Flipping
                     getDistance(p1[2], p1[3], p2[2], p2[3]) < 0.2 && // X, Y
@@ -160,9 +180,9 @@ function check() {
             }
             if(p1[0] === p2[0])
                 if(ok)
-                    console.log("distance ", p1[0], getDistance(p1[2], p1[3], p2[2], p2[3]), "OK")
+                    console.log("piece ", p1[0], "OK")
                 else
-                    console.log("distance ", p1[0], getDistance(p1[2], p1[3], p2[2], p2[3]), "NOK")
+                    console.log("piece ", p1[0], getDistance(p1[2], p1[3], p2[2], p2[3]), 'rot exp/got', p1[4], '/', p2[4], "NOK")
         }
         if(!ok)
             return false
