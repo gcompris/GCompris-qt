@@ -1,4 +1,4 @@
-/* GCompris - balance.qml
+/* GCompris - balancebox.qml
  *
  * Copyright (C) 2014-2015 Holger Kaelberer <holger.k@elberer.de>
  *
@@ -43,15 +43,11 @@ ActivityBase {
     property bool alwaysStart: true     // enforce start signal for editor-to-testing- and returning from config-transition
     property bool needRestart: true
 
-    onWidthChanged: if (inForeground) {
+    onWidthChanged: if (inForeground)
                         Activity.reconfigureScene();
-                        Activity.initLevel();
-                    }
 
-    onHeightChanged: if (inForeground) {
+    onHeightChanged: if (inForeground)
                          Activity.reconfigureScene();
-                         Activity.initLevel();
-                     }
 
     onStart: {
         inForeground = true;

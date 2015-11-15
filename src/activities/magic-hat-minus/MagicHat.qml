@@ -64,6 +64,7 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias hat: theHat
+            property alias introductionText: introText
             property var repeatersList:
                 [repeaterFirstRow, repeaterSecondRow, repeaterAnswerRow]
         }
@@ -79,6 +80,25 @@ ActivityBase {
                 starsSize: background.starSize
                 audioEffects: activity.audioEffects
             }
+
+            GCText {
+                id: introText
+                anchors {
+                    horizontalCenter: parent.horizontalCenter
+                    top: parent.top
+                    topMargin: 20 * ApplicationInfo.ratio
+                }
+                width: parent.width - 5 * ApplicationInfo.ratio
+                fontSize: regularSize
+                font.bold: true
+                style: Text.Outline
+                styleColor: "black"
+                color: "white"
+                wrapMode: TextEdit.WordWrap
+                horizontalAlignment: TextEdit.AlignHCenter
+                text: qsTr("Click on the hat to begin the game")
+            }
+
             GCText {
                 //: The math operation
                 text: mode == "minus" ? qsTr("-") : qsTr("+")
@@ -87,6 +107,8 @@ ActivityBase {
                 y: secondRow.y
                 fontSize: 66
                 color: "white"
+                style: Text.Outline
+                styleColor: "black"
             }
         }
 
@@ -190,6 +212,23 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+        }
+
+        BarButton {
+          id: okButton
+          source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
+          sourceSize.width: 66 * bar.barZoom
+          anchors {
+              right: parent.right
+              rightMargin: 10 * ApplicationInfo.ratio
+              bottom: parent.bottom
+              bottomMargin: parent.width > 420 * ApplicationInfo.ratio ? 10 : bar.height
+          }
+          width: 66 * ApplicationInfo.ratio
+          height: 66 * ApplicationInfo.ratio
+          onClicked: {
+            Activity.verifyAnswer()
+          }
         }
 
         Bonus {

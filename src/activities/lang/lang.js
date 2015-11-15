@@ -157,7 +157,8 @@ function initLevel(lessonModelIndex_) {
                 items.wordList[i-1].concat(flatWordList.splice(0, maxWordInLesson - lastLength))
     }
 
-    items.imageReview.category = lessons[lessonIndex].name
+    items.imageReview.category = items.categoriesTranslations[lessons[lessonIndex].name] //lessons[lessonIndex].name
+
     // Calc the sublevel to start with
     var subLevel = Math.floor(items.menuModel.get(lessonModelIndex)['progress'] / maxWordInLesson)
     if(subLevel >= items.wordList.length)

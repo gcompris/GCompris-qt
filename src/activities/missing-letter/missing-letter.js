@@ -46,7 +46,7 @@ function init(items_) {
 function start() {
     currentLevel = 0
 
-    var locale = GCompris.ApplicationInfo.getVoicesLocale(GCompris.ApplicationSettings.locale)
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
 
     // register the voices for the locale
     GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
@@ -229,8 +229,9 @@ function showAnswer() {
 }
 
 function playLetter(letter) {
-    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/"
-                                                                       + Core.getSoundFilenamForChar(letter)))
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/"+locale+"/alphabet/" +
+                             Core.getSoundFilenamForChar(letter)))
 }
 
 function playCurrentWord() {
@@ -239,7 +240,9 @@ function playCurrentWord() {
 }
 
 function playWord(word) {
-    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath(word))
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+    var wordLocalized = word.replace("$LOCALE", locale)
+    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath(wordLocalized))
 }
 
 function focusTextInput() {

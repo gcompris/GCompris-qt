@@ -187,7 +187,7 @@ Image {
         }
     }
 
-    // It is usefull to launch the bonus after a delay to let the children
+    // It is useful to launch the bonus after a delay to let the children
     // appreciate the completed level
     Timer {
         id: timer

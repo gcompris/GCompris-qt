@@ -43,6 +43,10 @@ ActivityBase {
         source: Activity.url + "background.svg"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
+
+        // system locale by default
+        property string locale: "system"
+
         readonly property string wordsResource: "data2/words/words.rcc"
         property bool englishFallback: false
         property bool downloadWordsNeeded: false
@@ -51,6 +55,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -69,6 +74,7 @@ ActivityBase {
             property GCAudio audioVoices: activity.audioVoices
             property alias englishFallbackDialog: englishFallbackDialog
             property alias parser: parser
+            property alias locale: background.locale
             property string answer
             property alias textinput: textinput
         }
@@ -258,6 +264,79 @@ ActivityBase {
             anchors.top: parent.top
         }
 
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    property alias localeBox: localeBox
+                    height: column.height
+
+                    property alias availableLangs: langs.languages
+                    LanguageList {
+                        id: langs
+                    }
+
+                    Column {
+                        id: column
+                        spacing: 10
+                        width: parent.width
+
+                        Flow {
+                            spacing: 5
+                            width: dialogActivityConfig.width
+                            GCComboBox {
+                                id: localeBox
+                                model: langs.languages
+                                background: dialogActivityConfig
+                                label: qsTr("Select your locale")
+                            }
+                        }
+                    }
+                }
+            }
+
+            onClose: home()
+            onLoadData: {
+                if(dataToSave && dataToSave["locale"]) {
+                    background.locale = dataToSave["locale"];
+                }
+            }
+            onSaveData: {
+                var oldLocale = background.locale;
+                var newLocale =
+                        dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
+                // Remove .UTF-8
+                if(newLocale.indexOf('.') != -1) {
+                    newLocale = newLocale.substring(0, newLocale.indexOf('.'))
+                }
+                dataToSave = {"locale": newLocale }
+
+                background.locale = newLocale;
+
+                // Restart the activity with new information
+                if(oldLocale !== newLocale) {
+                    background.stop();
+                    background.start();
+                }
+            }
+
+
+            function setDefaultValues() {
+                var localeUtf8 = background.locale;
+                if(background.locale != "system") {
+                    localeUtf8 += ".UTF-8";
+                }
+
+                for(var i = 0 ; i < dialogActivityConfig.configItem.availableLangs.length ; i ++) {
+                    if(dialogActivityConfig.configItem.availableLangs[i].locale === localeUtf8) {
+                        dialogActivityConfig.loader.item.localeBox.currentIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -265,12 +344,17 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level | repeat }
+            content: BarEnumContent { value: help | home | level | repeat | config }
             onHelpClicked: displayDialog(dialogHelp)
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
             onRepeatClicked: Activity.playCurrentWord()
+            onConfigClicked: {
+                dialogActivityConfig.active = true
+                dialogActivityConfig.setDefaultValues()
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {

@@ -115,6 +115,7 @@ ActivityBase {
 
                 MouseArea {
                     anchors.fill: parent
+                    enabled: !questionPlayer.running
                     onClicked: {
                         anim.start()
                         background.playNote(index)

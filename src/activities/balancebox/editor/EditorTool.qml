@@ -1,6 +1,6 @@
 /* GCompris - EditorTool.qml
  *
- * Copyright (C) 2015 Holger Kaelberer
+ * Copyright (C) 2015 Holger Kaelberer <holger.k@elberer.de>
  *
  * Authors:
  *   Holger Kaelberer <holger.k@elberer.de>

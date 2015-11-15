@@ -80,13 +80,12 @@ var contactComponent = Qt.createComponent("qrc:/gcompris/src/activities/balanceb
 var balanceItemComponent = Qt.createComponent("qrc:/gcompris/src/activities/balancebox/BalanceItem.qml");
 var contactIndex = -1;
 var pendingObjects = 0;
+var pendingReconfigure = false;
 
 function start(items_) {
     items = items_;
 
     currentLevel = 0;
-
-    reconfigureScene();
 
     if (items.mode === "play") {
         if (GCompris.ApplicationInfo.isMobile) {
@@ -119,13 +118,19 @@ function start(items_) {
         dataset = [items.testLevel];
     }
     numberOfLevel = dataset.length;
-    initLevel();
+
+    reconfigureScene();
 }
 
 function reconfigureScene()
 {
     if (items === undefined || items.mapWrapper === undefined)
         return;
+    if (pendingObjects > 0) {
+        pendingReconfigure = true;
+        return;
+    }
+
     // set up dynamic variables for movement:
     pixelsPerMeter = (items.mapWrapper.length / boardSizeBase) * boardSizePix / boardSizeM;
     vFactor = pixelsPerMeter / box2dPpm;
@@ -140,6 +145,7 @@ function reconfigureScene()
 //            + " vFactor=" + vFactor
 //            + " dpi=" + items.dpi
 //            + " nativeOrientation=" + GCompris.ApplicationInfo.getNativeOrientation());
+    initLevel();
 }
 
 function sinDeg(num)
@@ -251,8 +257,13 @@ function incubateObject(targetArr, component, properties)
                 console.error("Error during object creation!");
             if (--pendingObjects === 0) {
                 // initMap completed
-                items.timer.start();
-                items.loading.stop();
+                if (pendingReconfigure) {
+                    pendingReconfigure = false;
+                    reconfigureScene();
+                } else {
+                    items.timer.start();
+                    items.loading.stop();
+                }
             }
         }
     } else

@@ -49,6 +49,11 @@ function start(_items, _mode)
     items = _items;
     mode = _mode;
 
+
+    // register the voices for the locale
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+    GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
+
     loadLevels();
     currentLevel = 0;
     currentSubLevel = 0;
@@ -139,12 +144,12 @@ function initLevel() {
         items.score.currentSubLevel = currentSubLevel + 1;
     }
 
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale);
     currentLetter = questions.split("")[currentSubLevel];
     if (GCompris.ApplicationSettings.isAudioVoicesEnabled &&
             GCompris.DownloadManager.haveLocalResource(
-                GCompris.DownloadManager.getVoicesResourceForLocale(
-                    GCompris.ApplicationSettings.locale))) {
-        items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/misc/click_on_letter.$CA"));
+                GCompris.DownloadManager.getVoicesResourceForLocale(locale))) {
+        items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/"+locale+"/misc/click_on_letter.$CA"));
         items.audioVoices.silence(100)
         playLetter(currentLetter)
         items.questionItem.visible = false
@@ -159,7 +164,8 @@ function initLevel() {
 }
 
 function playLetter(letter) {
-    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/alphabet/"
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+    items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/"+locale+"/alphabet/"
                                                                        + Core.getSoundFilenamForChar(letter)))
 }
 

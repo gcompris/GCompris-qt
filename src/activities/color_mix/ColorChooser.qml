@@ -36,7 +36,7 @@ Image {
     property real hue
 
     Image {
-        id: intensity
+        id: intensityScreen
         source: Activity.url + "flashlight2.svg"
         sourceSize.height: parent.sourceSize.height
         z: 2
@@ -49,24 +49,26 @@ Image {
             lightness: -(maxSteps - currentStep) / maxSteps
             saturation: 1
         }
+    }
 
-        Image {
-            source: Activity.url + "light.svg"
-            sourceSize.height: parent.sourceSize.height / 2
-            anchors {
-                left: parent.right
-                leftMargin: -20 * ApplicationInfo.ratio
-                verticalCenter: parent.verticalCenter
-            }
-            opacity: currentStep / maxSteps
+    Image {
+        id: intensityLight
+        source: Activity.url + "light.svg"
+        sourceSize.height: intensityScreen.sourceSize.height / 2
+        visible: intensityScreen.visible
+        anchors {
+            left: intensityScreen.right
+            leftMargin: -20 * ApplicationInfo.ratio
+            verticalCenter: intensityScreen.verticalCenter
+        }
+        opacity: currentStep / maxSteps
 
-            Colorize {
-                anchors.fill: parent
-                source: parent
-                hue: chooser.hue
-                lightness: -(maxSteps - currentStep) / maxSteps
-                saturation: 1
-            }
+        Colorize {
+            anchors.fill: parent
+            source: parent
+            hue: chooser.hue
+            lightness: -(maxSteps - currentStep) / maxSteps
+            saturation: 1
         }
     }
 

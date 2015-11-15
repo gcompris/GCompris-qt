@@ -135,8 +135,8 @@ Item {
         }
 
         Item {
-            width: button.width
-            height: parent.height
+            width: labelText.width
+            height: button.height
             GCText {
                 id: labelText
                 text: label
