@@ -89,7 +89,9 @@ function start(items_) {
 
     if (items.mode === "play") {
         if (GCompris.ApplicationInfo.isMobile) {
-            // lock screen orientation
+            // we don't have many touch events, therefore disable screensaver on android:
+            GCompris.ApplicationInfo.setKeepScreenOn(true);
+            // lock screen orientation to landscape:
             GCompris.ApplicationInfo.setRequestedOrientation(0);
             if (GCompris.ApplicationInfo.getNativeOrientation() === Qt.PortraitOrientation) {
                 /*
@@ -219,8 +221,10 @@ function stop() {
     // reset everything
     tearDown();
     // unlock screen orientation
-    if (GCompris.ApplicationInfo.isMobile)
+    if (GCompris.ApplicationInfo.isMobile) {
+        GCompris.ApplicationInfo.setKeepScreenOn(false);
         GCompris.ApplicationInfo.setRequestedOrientation(-1);
+    }
     // make sure loading overlay is really stopped
     items.loading.stop();
 }
