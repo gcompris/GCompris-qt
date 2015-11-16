@@ -39,3 +39,8 @@ int ApplicationInfo::getRequestedOrientation()
 {
     return -1;
 }
+
+void ApplicationInfo::setKeepScreenOn(bool value)
+{
+    Q_UNUSED(value);
+}

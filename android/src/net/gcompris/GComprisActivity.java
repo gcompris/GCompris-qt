@@ -55,6 +55,7 @@ import android.content.Context;
 import android.app.PendingIntent;
 import org.json.JSONObject;
 import java.util.ArrayList;
+import android.view.WindowManager;
 
 public class GComprisActivity extends QtActivity
 {
@@ -220,4 +221,29 @@ public class GComprisActivity extends QtActivity
 	AudioManager am = (AudioManager) mContext.getSystemService(Context.AUDIO_SERVICE);
 	am.abandonAudioFocus(null);
     }
+
+	/**
+	 * Toggle activation of screen-saver
+	 *
+	 * Note that the window flags *must* be modified from the UI thread
+	 * otherwise it has no effect.
+	 *
+	 * @param value  Whether screensaver should be enabled or disabled
+	 */
+	public void setKeepScreenOn(boolean value) {
+		if (value)
+			GComprisActivity.this.runOnUiThread(new Runnable() {
+				public void run() {
+					Log.d(QtApplication.QtTAG, "Disabling screensaver");
+					getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+				}
+			});
+		else
+			GComprisActivity.this.runOnUiThread(new Runnable() {
+				public void run() {
+					Log.d(QtApplication.QtTAG, "Enabling screensaver");
+					getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+				}
+			});
+	}
 }

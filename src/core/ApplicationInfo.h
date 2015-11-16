@@ -294,6 +294,14 @@ public:
      */
     Q_INVOKABLE bool sensorIsSupported(const QString& sensorType);
 
+    /**
+     * Toggles activation of screensaver on android
+     *
+     * @param value Whether screensaver should be disabled (true) or
+     *              enabled (false).
+     */
+    Q_INVOKABLE void setKeepScreenOn(bool value);
+
     /// @endcond
 
 protected slots:
