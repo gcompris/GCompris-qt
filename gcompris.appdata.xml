@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <application>
   <id type="desktop">gcompris.desktop</id>
+  <id type="desktop" xml:lang="ast">gcompris.desktop</id>
   <id type="desktop" xml:lang="ca">gcompris.desktop</id>
   <id type="desktop" xml:lang="ca-valencia">gcompris.desktop</id>
   <id type="desktop" xml:lang="de">gcompris.desktop</id>
