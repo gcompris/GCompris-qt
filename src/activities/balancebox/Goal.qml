@@ -27,17 +27,29 @@ import "balancebox.js" as Activity
 Item {
     id: goal
     
-    property alias body: itemBody
     property alias world: itemBody.world
+    property alias imageSource: goalImage.source
+    property alias body: itemBody
+    property alias bodyType: itemBody.bodyType
+    property alias linearDamping: itemBody.linearDamping
+    property alias fixtures: itemBody.fixtures
+    property alias sensor: itemFixture.sensor
+    property alias categories: itemFixture.categories
+    property alias collidesWith: itemFixture.collidesWith
+    property alias density: itemFixture.density
+    property alias friction: itemFixture.friction
+    property alias restitution: itemFixture.restitution
+
+    signal beginContact(Item item, Item other)
+    signal endContact(Item item, Item other)
 
     Image {
         id: goalImage
         
         width: goal.width
         height: goal.height
-        source: Activity.baseUrl + "/door.png"
+        source: Activity.baseUrl + "/door_closed.svg"
         anchors.centerIn: parent
-
     }
 
     Body {
@@ -48,12 +60,14 @@ Item {
         world: physicsWorld
         sleepingAllowed: false
         fixedRotation: true
-        
-        fixtures: Circle {
-            id: goalFixture
+        linearDamping: 0
 
-            categories: Circle.Category3
-            radius: goalImage.width / 2
+        fixtures: Box {
+            id: itemFixture
+
+            categories: Circle.Category4
+            width: goal.width
+            height: goal.height
             density: 0
             friction: 0
             restitution: 0
