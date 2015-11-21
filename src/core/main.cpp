@@ -19,8 +19,8 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 #include <QtDebug>
-#include <QtGui/QGuiApplication>
-#include <QtQuick/QQuickWindow>
+#include <QGuiApplication>
+#include <QQuickWindow>
 #include <QQmlApplicationEngine>
 #include <QStandardPaths>
 #include <QObject>

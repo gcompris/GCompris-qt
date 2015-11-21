@@ -21,7 +21,7 @@
 
 #include "ApplicationSettings.h"
 #include "ApplicationInfo.h"
-#include <QtAndroidExtras/QAndroidJniObject>
+#include <QAndroidJniObject>
 #include <QDebug>
 #include <QtAndroid>
 
