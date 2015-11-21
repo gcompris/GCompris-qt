@@ -24,13 +24,13 @@
 
 #include "ApplicationInfo.h"
 
-#include <QtCore/QtMath>
-#include <QtCore/QUrl>
-#include <QtCore/QUrlQuery>
-#include <QtGui/QGuiApplication>
-#include <QtGui/QScreen>
-#include <QtCore/QLocale>
-#include <QtQuick/QQuickWindow>
+#include <QtMath>
+#include <QUrl>
+#include <QUrlQuery>
+#include <QGuiApplication>
+#include <QScreen>
+#include <QLocale>
+#include <QQuickWindow>
 #include <QStandardPaths>
 #include <QSensor>
 

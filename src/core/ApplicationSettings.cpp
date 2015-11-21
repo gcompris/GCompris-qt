@@ -22,12 +22,12 @@
 #include "ApplicationSettings.h"
 #include "ApplicationInfo.h"
 
-#include <QtCore/qmath.h>
-#include <QtCore/QUrl>
-#include <QtCore/QUrlQuery>
-#include <QtGui/QGuiApplication>
-#include <QtGui/QScreen>
-#include <QtCore/QLocale>
+#include <qmath.h>
+#include <QUrl>
+#include <QUrlQuery>
+#include <QGuiApplication>
+#include <QScreen>
+#include <QLocale>
 
 #include <QSettings>
 #include <QStandardPaths>

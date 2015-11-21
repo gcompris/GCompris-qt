@@ -28,8 +28,8 @@
 #include "ApplicationSettings.h"
 
 #include <qqml.h>
-#include <QtCore/QObject>
-#include <QtQml/QQmlPropertyMap>
+#include <QObject>
+#include <QQmlPropertyMap>
 #include <QQmlEngine>
 #include <QtGlobal>
 
