@@ -5,6 +5,7 @@
 * Authors:
 *   Beth Hadley <bethmhadley@gmail.com> (GTK+ version)
 *   Djalil MESLI <djalilmesli@gmail.com> (Qt Quick port)
+*   Johnny Jazeix <jazeix@gmail.com> (Qt Quick port)
 *
 *   This program is free software; you can redistribute it and/or modify
 *   it under the terms of the GNU General Public License as published by
@@ -34,6 +35,10 @@ Rectangle {
 
     width: activity.width
     height: activity.height
+    // Empty mouseArea to avoid trigger the background mouseArea (click on other items)
+    MouseArea {
+        anchors.fill: parent
+    }
 
     property alias title: heading.text
     property alias description: descriptionText.text
@@ -49,7 +54,8 @@ Rectangle {
         anchors.centerIn: parent.Center
         color: "#2a2a2a"
         width: parent.width
-        height: parent.height * 0.2
+        height: if(rectangleDesc.horizontalLayout) parent.height * 0.2
+        fontSizeMode: Text.Fit
         wrapMode: Text.WordWrap
     }
 
@@ -58,13 +64,10 @@ Rectangle {
         sourceSize.width: if(rectangleDesc.horizontalLayout) parent.width * 0.5
         sourceSize.height: if(!rectangleDesc.horizontalLayout) parent.height * 0.3
         fillMode: Image.PreserveAspectFit
-        verticalAlignment: Image.AlignTop
         anchors {
             top: rectangleDesc.horizontalLayout ? heading.bottom : descriptionText.bottom
-            //topMargin: 30 * ApplicationInfo.ratio
-            //bottom: parent.bottom
-            //bottomMargin: 60 * ApplicationInfo.ratio
-            left: parent.left
+            horizontalCenter: rectangleDesc.horizontalLayout ? undefined : heading.horizontalCenter
+            left: rectangleDesc.horizontalLayout ? parent.left : undefined
             leftMargin:  30 * ApplicationInfo.ratio
         }
     }
@@ -76,7 +79,6 @@ Rectangle {
         horizontalAlignment: Text.AlignJustify
         anchors {
             top: heading.bottom
-            topMargin: rectangleDesc.horizontalLayout ? 30 * ApplicationInfo.ratio : 0
             right: parent.right
             rightMargin: 30 * ApplicationInfo.ratio
             left: rectangleDesc.horizontalLayout ? animalImage.right : parent.left
@@ -90,11 +92,10 @@ Rectangle {
 
     Rectangle {
         width: rectangleDesc.width * 0.3
-        height: rectangleDesc.height * 0.3
+        height: rectangleDesc.height * 0.2
         radius: 5
         anchors {
-            top: rectangleDesc.horizontalLayout ? descriptionText.bottom : imageSource.bottom
-            topMargin: rectangleDesc.horizontalLayout ? 30 * ApplicationInfo.ratio : 0
+            top: rectangleDesc.horizontalLayout ? descriptionText.bottom : animalImage.bottom
             horizontalCenter: rectangleDesc.horizontalCenter
         }
         GCText {

@@ -5,6 +5,7 @@
 * Authors:
 *   Beth Hadley <bethmhadley@gmail.com> (GTK+ version)
 *   Djalil MESLI <djalilmesli@gmail.com> (Qt Quick port)
+*   Johnny Jazeix <jazeix@gmail.com> (Qt Quick port)
 *
 *   This program is free software; you can redistribute it and/or modify
 *   it under the terms of the GNU General Public License as published by
@@ -36,13 +37,14 @@ Item {
     property real animalWidth: animalWidth
     property real animalHeight: animalHeight
     property alias starVisible: star.visible
-    property bool horizontalLayout: background.width > background.height
 
     property string title
     property string description
     property string imageSource
     property string question
     property string audio
+
+    signal displayDescription(variant animal)
 
     Image {
         id: animalImg
@@ -90,7 +92,7 @@ Item {
             onPressed: {
                 if (Activity.items.currentLevel == 0) {
                     audioEffects.play(animal.audio);
-                    description.visible = true;
+                    displayDescription(animal)
                     star.visible = true;
                 }
                 else if (Activity.items.currentLevel == 1 && Activity.items.hasAudioQuestions) {
@@ -114,33 +116,6 @@ Item {
                     }
                 }
             }
-        }
-    }
-
-    AnimalDescription {
-        id: description
-        parent: background
-        width: parent.width
-        height: parent.height
-        title: animal.title
-        description: animal.description
-        imageSource: animal.imageSource
-        visible: false
-
-        onVisibleChanged: {
-            if(visible) {
-                animDescription.start()
-            }
-        }
-
-        NumberAnimation {
-            id: animDescription
-            target: description
-            property: horizontalLayout ? "x" : "y"
-            from: horizontalLayout ? -background.width : -background.height
-            to: 0
-            duration: 1200
-            easing.type: Easing.OutBack
         }
     }
 

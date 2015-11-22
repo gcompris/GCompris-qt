@@ -44,6 +44,7 @@ function start(items_,var_) {
 }
 
 function stop() {
+    items.audioEffects.stop()
 }
 
 function initLevel() {
@@ -52,6 +53,10 @@ function initLevel() {
     Core.shuffle(questionOrder);
 
     items.score.currentSubLevel = 0
+    items.descriptionPanel.visible = false
+    // Stop audio if necessary (switch from level 2 at beginning to a new level for example)
+    items.audioEffects.stop()
+
     reload();
     changeOpacity();
     setQuestionText();
@@ -74,6 +79,10 @@ function previousLevel() {
         items.currentLevel = numberOfLevel - 1
     }
     initLevel();
+
+    if(items.currentLevel == 1 && items.hasAudioQuestions) {
+        items.audioEffects.play(getCurrentQuestion().audio);
+    }
 }
 
 function isComplete() {

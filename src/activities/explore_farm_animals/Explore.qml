@@ -5,6 +5,7 @@
 * Authors:
 *   Beth Hadley <bethmhadley@gmail.com> (GTK+ version)
 *   Djalil MESLI <djalilmesli@gmail.com> (Qt Quick port)
+*   Johnny Jazeix <jazeix@gmail.com> (Qt Quick port)
 *
 *   This program is free software; you can redistribute it and/or modify
 *   it under the terms of the GNU General Public License as published by
@@ -45,6 +46,8 @@ ActivityBase {
         sourceSize.height: parent.height
         anchors.fill: parent
 
+        property bool horizontalLayout: background.width > background.height
+
         focus: true
 
         signal start
@@ -69,10 +72,14 @@ ActivityBase {
             property alias question: question
             property alias questionText: questionText
             property alias instructionText: instructionText
+            property alias descriptionPanel: descriptionPanel
             property bool hasAudioQuestions: activity.hasAudioQuestions
             property int currentLevel
             property string currentAudio
         }
+
+        onStart: { Activity.start(items, dataset) }
+        onStop: { Activity.stop() }
 
         Repeater {
             id: dataModel
@@ -88,11 +95,45 @@ ActivityBase {
                 imageSource: dataset.tab[index].image2
                 question: dataset.tab[index].text2
                 audio: dataset.tab[index].audio !== undefined ? dataset.tab[index].audio : ""
+                Component.onCompleted: {
+                    displayDescription.connect(displayDescriptionItem)
+                }
             }
         }
 
-        onStart: { Activity.start(items, dataset) }
-        onStop: { Activity.stop() }
+        function displayDescriptionItem(animal) {
+            descriptionPanel.title = animal.title
+            descriptionPanel.description = animal.description
+            descriptionPanel.imageSource = animal.imageSource
+            descriptionPanel.visible = true
+        }
+
+        AnimalDescription {
+            id: descriptionPanel
+            width: parent.width
+            height: parent.height
+            visible: false
+            z: instruction.z + 1
+            onVisibleChanged: {
+                if(visible) {
+                    animDescription.start()
+                }
+                else {
+                    // stop if audio was playing
+                    items.audioEffects.stop()
+                }
+            }
+
+            NumberAnimation {
+                id: animDescription
+                target: descriptionPanel
+                property: horizontalLayout ? "x" : "y"
+                from: horizontalLayout ? -width : -height
+                to: 0
+                duration: 1200
+                easing.type: Easing.OutBack
+            }
+        }
 
         BarButton {
             id: repeatItem
