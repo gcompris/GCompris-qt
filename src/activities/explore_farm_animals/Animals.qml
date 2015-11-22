@@ -36,6 +36,7 @@ Item {
     property real animalWidth: animalWidth
     property real animalHeight: animalHeight
     property alias starVisible: star.visible
+    property bool horizontalLayout: background.width > background.height
 
     property string title
     property string description
@@ -119,11 +120,28 @@ Item {
     AnimalDescription {
         id: description
         parent: background
-        anchors.fill: parent
+        width: parent.width
+        height: parent.height
         title: animal.title
         description: animal.description
         imageSource: animal.imageSource
         visible: false
+
+        onVisibleChanged: {
+            if(visible) {
+                animDescription.start()
+            }
+        }
+
+        NumberAnimation {
+            id: animDescription
+            target: description
+            property: horizontalLayout ? "x" : "y"
+            from: horizontalLayout ? -background.width : -background.height
+            to: 0
+            duration: 1200
+            easing.type: Easing.OutBack
+        }
     }
 
     SequentialAnimation {

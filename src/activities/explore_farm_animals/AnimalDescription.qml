@@ -119,12 +119,4 @@ Rectangle {
             }
         }
     }
-
-    SequentialAnimation {
-        running: true
-        NumberAnimation { target: rectangleDesc; property: "x"; to: 0; duration: 800 }
-        NumberAnimation { target: rectangleDesc; property: "x"; to: 50 ; duration: 100 }
-        NumberAnimation { target: rectangleDesc; property: "x"; to: 0; duration: 400 }
-
-    }
 }
