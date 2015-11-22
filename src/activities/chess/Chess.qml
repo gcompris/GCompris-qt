@@ -65,8 +65,9 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
             property int cellSize: Math.min(background.width / (8 + 2),
-                                            background.height / (8 + 3))
+                                            background.height / (8 + barHeightAddon))
             property variant fen: activity.fen
             property bool twoPlayer: activity.twoPlayers
             property bool difficultyByLevel: activity.difficultyByLevel
@@ -81,6 +82,8 @@ ActivityBase {
             property bool gameOver
             property string message
             property alias trigComputerMove: trigComputerMove            
+
+            Behavior on cellSize { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1000 } }
         }
 
         onStart: { Activity.start(items) }
