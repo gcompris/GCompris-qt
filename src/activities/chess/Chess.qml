@@ -133,7 +133,8 @@ ActivityBase {
                     text: qsTr("Undo");
                     style: GCButtonStyle {}
                     onClicked: Activity.undo()
-                    opacity: items.history.length > 0 ? 1 : 0
+                    enabled: items.history.length > 0 ? 1 : 0
+                    opacity: enabled
                     Behavior on opacity {
                         PropertyAnimation {
                             easing.type: Easing.InQuad
@@ -149,7 +150,8 @@ ActivityBase {
                     text: qsTr("Redo");
                     style: GCButtonStyle {}
                     onClicked: Activity.redo()
-                    opacity: items.redo_stack.length > 0 ? 1 : 0
+                    enabled: items.redo_stack.length > 0 ? 1 : 0
+                    opacity: enabled
                     Behavior on opacity {
                         PropertyAnimation {
                             easing.type: Easing.InQuad
@@ -163,7 +165,8 @@ ActivityBase {
                     height: 30 * ApplicationInfo.ratio
                     text: qsTr("Swap");
                     style: GCButtonStyle {}
-                    opacity: items.twoPlayer
+                    enabled: items.twoPlayer
+                    opacity: enabled
                     onClicked: chessboard.swap()
                 }
             }
