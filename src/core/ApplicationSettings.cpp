@@ -33,6 +33,8 @@
 #include <QStandardPaths>
 #include <QDebug>
 
+#include <QtQml>
+
 #define GC_DEFAULT_FONT "Andika-R.ttf"
 #define GC_DEFAULT_FONT_CAPITALIZATION 0 // Font.MixedCase
 

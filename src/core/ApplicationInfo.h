@@ -27,7 +27,6 @@
 #include <config.h>
 #include "ApplicationSettings.h"
 
-#include <qqml.h>
 #include <QObject>
 #include <QQmlPropertyMap>
 #include <QQmlEngine>
