@@ -100,6 +100,7 @@ redraw
 redraw_symmetrical
 renewable_energy
 reversecount
+rishabh
 scalesboard
 scalesboard_weight
 scalesboard_weight_avoirdupois
