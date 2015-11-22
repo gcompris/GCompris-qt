@@ -21,7 +21,10 @@
 #ifndef ACTIVITYINFO_H
 #define ACTIVITYINFO_H
 
-#include <qqml.h>
+#include <QObject>
+#include <QString>
+#include <QStringList>
+#include <QQmlListProperty>
 
 /**
  * @class ActivityInfo

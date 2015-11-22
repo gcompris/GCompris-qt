@@ -31,6 +31,8 @@
 #include <QNetworkConfiguration>
 #include <QDirIterator>
 
+#include <QtQml>
+
 const QString DownloadManager::contentsFilename = QString("Contents");
 DownloadManager* DownloadManager::_instance = 0;
 

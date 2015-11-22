@@ -21,7 +21,6 @@
 #ifndef ACTIVITYINFOTREE_H
 #define ACTIVITYINFOTREE_H
 
-#include <qqml.h>
 #include "ActivityInfo.h"
 #include <QQmlEngine>
 #include <QDir>
