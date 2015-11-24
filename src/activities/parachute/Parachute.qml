@@ -53,7 +53,7 @@ ActivityBase {
             activity.stop.connect(stop)
         }
         
-        onStart: { Activity.start(items) }
+        onStart: {  }
         onStop: { Activity.stop() }
 
         // Add here the QML items you need to access in javascript
@@ -77,6 +77,44 @@ ActivityBase {
             property alias parachuteanimationrelup: parachuteanimationrelup
             property alias   parachuteanimationreldown: parachuteanimationreldown
         }
+
+        IntroMessage {
+            id:message
+            onIntroDone: {
+                Activity.start(items)
+
+            }
+            intro: [
+                qsTr("Gravity is universal and Newton's law of universal gravitation extends gravity"
+                     +" beyond earth. This force of gravitational attraction is directly dependent"
+                     +" upon the masses of both objects and inversely proportional to"
+                     +" the square of the distance that separates their centers."),
+                qsTr("Since the gravitational force is directly proportional to the mass of both interacting "
+                     +"objects, more massive objects will attract each other with a greater gravitational "
+                     +"force. So as the mass of either object increases, the force of gravitational "
+                     +"attraction between them also increases"),
+                qsTr("But this force is inversely proportional to the square of the separation distance "
+                     +"between the two interacting objects, more separation distance will "
+                     +"result in weaker gravitational forces."),
+                qsTr("Your goal is to let Tux's spaceship move by changing the mass "
+                     +"of its surrounding planets. Don't get too close to the planets "
+                     +"or you will crash on them. "
+                     +"The arrow indicates the direction of the force on your ship."),
+                qsTr("Avoid the asteroid and join the space "
+                     +"shuttle to win.")
+            ]
+            z: 20
+            anchors {
+                top: parent.top
+                topMargin: 10
+                right: parent.right
+                rightMargin: 5
+                left: parent.left
+                leftMargin: 5
+            }
+        }
+
+
         Item{
             id:helimotion
             width:helicopter.width
@@ -120,7 +158,7 @@ ActivityBase {
                 properties: "x"
                 from:-helimotion.width
                 to:background.width
-                duration:12000
+                duration: (bar.level === 1 ? 20000 : bar.level === 2 ? 16000 : bar.level === 3 ? 12000 : bar.level === 4 ? 10000 : 9000)
                 easing.type:Easing.Linear
             }
         }
@@ -152,7 +190,7 @@ ActivityBase {
                     properties: "y"
                     from:helicopter.height
                     to:background.height/1.2
-                    duration:7000
+                    duration:(bar.level === 1 ? 15000 : bar.level === 2 ? 14000 : bar.level === 3 ? 13000 : bar.level === 4 ? 10000 : 9000)
                     easing.type:Easing.Linear
                 }
 
@@ -162,7 +200,7 @@ ActivityBase {
                     properties:  "y"
                     from:parachutOpen.y
                     to:background.height/1.2
-                    duration:10000
+                    duration:(bar.level === 1 ? 30000 : bar.level === 2 ? 26000 : bar.level === 3 ? 20000 : bar.level === 4 ? 15000 : 9000)
                     easing.type:Easing.Linear
                 }
 
@@ -172,7 +210,7 @@ ActivityBase {
                     properties:  "y"
                     from:parachutOpen.y
                     to:background.height/1.2
-                    duration:2000
+                    duration:(bar.level === 1 ? 6000 : bar.level === 2 ? 5000 : bar.level === 3 ? 4000 : bar.level === 4 ? 2000 : 9000)
                     easing.type:Easing.Linear
 
                 }
@@ -183,7 +221,7 @@ ActivityBase {
                     properties:  "y"
                     from:parachutOpen.y
                     to:background.height/1.2
-                    duration:5000
+                    duration:(bar.level === 1 ? 15000 : bar.level === 2 ? 14000 : bar.level === 3 ? 13000 : bar.level === 4 ? 10000 : 9000)
                     easing.type:Easing.Linear
 
                 }
@@ -194,7 +232,7 @@ ActivityBase {
                     properties:  "y"
                     from:parachutOpen.y
                     to:background.height/1.2
-                    duration:5000
+                    duration:(bar.level === 1 ? 10000 : bar.level === 2 ? 9000 : bar.level === 3 ? 7000 : bar.level === 4 ? 5000 : 9000)
                     easing.type:Easing.Linear
                 }
 
@@ -206,7 +244,7 @@ ActivityBase {
                     properties: "x"
                     from:-helimotion.width
                     to:background.width
-                    duration:12000
+                    duration:(bar.level === 1 ? 20000 : bar.level === 2 ? 16000 : bar.level === 3 ? 12000 : bar.level === 4 ? 10000 : 9000)
                 }
             }
         }
@@ -225,7 +263,7 @@ ActivityBase {
                 properties:"x"
                 from:background.width
                 to:-cloud.width
-                duration:11000
+                duration:(bar.level === 1 ? 19000 : bar.level === 2 ? 15000 : bar.level === 3 ? 11000 : bar.level === 4 ? 9000 : 9000)
                 easing.type:Easing.Linear
             }
         }
@@ -246,7 +284,7 @@ ActivityBase {
                 properties:"x"
                 from:-boat.width
                 to:background.width-2*boat.width
-                duration:13000
+                duration:(bar.level === 1 ? 24000 : bar.level === 2 ? 20500 : bar.level === 3 ? 19000 : bar.level === 4 ? 17000 : 9000)
                 easing.type:Easing.Linear
             }
         }
@@ -267,7 +305,6 @@ ActivityBase {
 
         Bar {
             id: bar
-            anchors.bottom:background.bottom
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
