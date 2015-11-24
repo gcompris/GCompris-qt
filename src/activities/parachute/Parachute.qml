@@ -124,7 +124,7 @@ ActivityBase {
             }
             Image{
                 id:helicopter
-                source:activity.dataSetUrl+"tuxplane.svgz"
+                source:activity.dataSetUrl+"tuxplane.svg"
                 MouseArea {
                     id:mousei
                     hoverEnabled: true
@@ -160,12 +160,12 @@ ActivityBase {
             Image{
                 id:parachuteImage
                 visible:false
-                source:activity.dataSetUrl+"parachute.svgz"
+                source:activity.dataSetUrl+"parachute.svg"
             }
             Image{
                 id:parachute1Image
                 visible:false
-                source:activity.dataSetUrl+"minitux.svgz"
+                source:activity.dataSetUrl+"minitux.svg"
                 MouseArea{
                     id:paramouse
                     anchors.fill:parent
@@ -246,7 +246,7 @@ ActivityBase {
             height:height.height
             Image{
                 id:cloud
-                source:activity.dataSetUrl+"cloud.svgz"
+                source:activity.dataSetUrl+"cloud.svg"
                 y:background.height/7
             }
             PropertyAnimation {
@@ -267,7 +267,7 @@ ActivityBase {
             height:boat.heigt
             Image{
                 id:boat
-                source:activity.dataSetUrl+"fishingboat.svgz"
+                source:activity.dataSetUrl+"fishingboat.svg"
                 y:background.height/1.2
             }
             PropertyAnimation {
