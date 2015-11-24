@@ -34,6 +34,9 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    Keys.onPressed: Activity.processPressedKey(event)
+    Keys.onReleased: Activity.processReleasedKey(event)
+
     pageComponent: Image {
         
         id: background
@@ -69,6 +72,10 @@ ActivityBase {
             property alias animationboat:animationboat
             property alias parachuteanimation:parachuteanimation
             property alias keyunable:keyunable
+            property alias parachuteanimationup:parachuteanimationup
+            property alias parachuteanimationdown:parachuteanimationdown
+            property alias parachuteanimationrelup: parachuteanimationrelup
+            property alias   parachuteanimationreldown: parachuteanimationreldown
         }
         Item{
             id:helimotion
@@ -99,8 +106,8 @@ ActivityBase {
                         forhover.visible=false
                     }
                     onClicked:{
-                       parachute1Image.visible=true
-                       Activity.parachuefun()
+                        parachute1Image.visible=true
+                        Activity.parachuefun()
                     }
 
                 }
@@ -113,7 +120,7 @@ ActivityBase {
                 properties: "x"
                 from:-helimotion.width
                 to:background.width
-                duration: 9500
+                duration:12000
                 easing.type:Easing.Linear
             }
         }
@@ -121,9 +128,9 @@ ActivityBase {
         Item{
             id:parachutOpen
             Image{
-               id:parachuteImage
-               visible:false
-               source:activity.dataSetUrl+"parachute.svgz"
+                id:parachuteImage
+                visible:false
+                source:activity.dataSetUrl+"parachute.svgz"
             }
             Image{
                 id:parachute1Image
@@ -136,28 +143,73 @@ ActivityBase {
                         parachute1Image.visible=false
                         parachuteImage.visible=true
                         keyunable.visible=true
+
                     }
                 }
-            }
-            PropertyAnimation{
-                id:parachuteanimation
-                target:parachutOpen
-                properties: "y"
-                from:helicopter.height
-                to:background.height/1.2
-                duration:5000
-                easing.type:Easing.Linear
-            }
-            PropertyAnimation{
-                 id:parachuteanimationx
-                 target:parachutOpen
-                 properties: "x"
-                 from:-helimotion.width
-                 to:background.width
-                 duration:9500
+                PropertyAnimation{
+                    id:parachuteanimation
+                    target:parachutOpen
+                    properties: "y"
+                    from:helicopter.height
+                    to:background.height/1.2
+                    duration:7000
+                    easing.type:Easing.Linear
+                }
+
+                PropertyAnimation{
+                    id:parachuteanimationup
+                    target:parachutOpen
+                    properties:  "y"
+                    from:parachutOpen.y
+                    to:background.height/1.2
+                    duration:10000
+                    easing.type:Easing.Linear
+                }
+
+                PropertyAnimation{
+                    id:parachuteanimationdown
+                    target:parachutOpen
+                    properties:  "y"
+                    from:parachutOpen.y
+                    to:background.height/1.2
+                    duration:2000
+                    easing.type:Easing.Linear
+
+                }
+
+                PropertyAnimation{
+                    id:parachuteanimationrelup
+                    target:parachutOpen
+                    properties:  "y"
+                    from:parachutOpen.y
+                    to:background.height/1.2
+                    duration:5000
+                    easing.type:Easing.Linear
+
+                }
+
+                PropertyAnimation{
+                    id:parachuteanimationreldown
+                    target:parachutOpen
+                    properties:  "y"
+                    from:parachutOpen.y
+                    to:background.height/1.2
+                    duration:5000
+                    easing.type:Easing.Linear
+                }
+
+
+
+                PropertyAnimation{
+                    id:parachuteanimationx
+                    target:parachutOpen
+                    properties: "x"
+                    from:-helimotion.width
+                    to:background.width
+                    duration:12000
+                }
             }
         }
-
         Item{
             id:cloudmotion
             width:cloud.width
@@ -173,7 +225,7 @@ ActivityBase {
                 properties:"x"
                 from:background.width
                 to:-cloud.width
-                duration:9000
+                duration:11000
                 easing.type:Easing.Linear
             }
         }
@@ -194,7 +246,7 @@ ActivityBase {
                 properties:"x"
                 from:-boat.width
                 to:background.width-2*boat.width
-                duration:8000
+                duration:13000
                 easing.type:Easing.Linear
             }
         }
@@ -215,6 +267,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            anchors.bottom:background.bottom
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
@@ -228,8 +281,8 @@ ActivityBase {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
+
+
     }
 
 }
-
-
