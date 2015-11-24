@@ -85,23 +85,15 @@ ActivityBase {
 
             }
             intro: [
-                qsTr("Gravity is universal and Newton's law of universal gravitation extends gravity"
-                     +" beyond earth. This force of gravitational attraction is directly dependent"
-                     +" upon the masses of both objects and inversely proportional to"
-                     +" the square of the distance that separates their centers."),
-                qsTr("Since the gravitational force is directly proportional to the mass of both interacting "
-                     +"objects, more massive objects will attract each other with a greater gravitational "
-                     +"force. So as the mass of either object increases, the force of gravitational "
-                     +"attraction between them also increases"),
-                qsTr("But this force is inversely proportional to the square of the separation distance "
-                     +"between the two interacting objects, more separation distance will "
-                     +"result in weaker gravitational forces."),
-                qsTr("Your goal is to let Tux's spaceship move by changing the mass "
-                     +"of its surrounding planets. Don't get too close to the planets "
-                     +"or you will crash on them. "
-                     +"The arrow indicates the direction of the force on your ship."),
-                qsTr("Avoid the asteroid and join the space "
-                     +"shuttle to win.")
+                qsTr("The red boat moves in the water from left to right."),
+                qsTr("Penguin Tux falls off from the plane, to land on the boat safely. "),
+                qsTr("The purpose of the game is to determine the exact time when"
+                      + "he should fall off from the plane, in order to safely get to the boat. "),
+                qsTr("Tux also carries a parachute, that lets him prevent free fall under gravity, that is dangerous."
+                     +"Tux falls off when the player left clicks on the plane."),
+                qsTr("His speed can be controlled by the player by pressing UP and DOWN arrow keys,"
+                     + "such that Tux is saved from falling in water. "),
+                qsTr("Help Tux save his life!")
             ]
             z: 20
             anchors {
