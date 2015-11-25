@@ -63,7 +63,7 @@ ActivityBase {
             property alias background: background
             property alias animationheli:animationheli
             property alias parachuteanimationx:parachuteanimationx
-            property alias parachute1Image:parachute1Image
+            property alias minitux:minitux
             property alias animationcloud:animationcloud
             property alias bar: bar
             property alias bonus: bonus
@@ -75,7 +75,7 @@ ActivityBase {
             property alias parachuteanimationup:parachuteanimationup
             property alias parachuteanimationdown:parachuteanimationdown
             property alias parachuteanimationrelup: parachuteanimationrelup
-            property alias   parachuteanimationreldown: parachuteanimationreldown
+            property alias parachuteanimationreldown: parachuteanimationreldown
         }
 
         IntroMessage {
@@ -88,7 +88,7 @@ ActivityBase {
                 qsTr("The red boat moves in the water from left to right."),
                 qsTr("Penguin Tux falls off from the plane, to land on the boat safely. "),
                 qsTr("The purpose of the game is to determine the exact time when"
-                      + "he should fall off from the plane, in order to safely get to the boat. "),
+                     + "he should fall off from the plane, in order to safely get to the boat. "),
                 qsTr("Tux also carries a parachute, that lets him prevent free fall under gravity, that is dangerous."
                      +"Tux falls off when the player left clicks on the plane."),
                 qsTr("His speed can be controlled by the player by pressing UP and DOWN arrow keys,"
@@ -136,8 +136,11 @@ ActivityBase {
                         forhover.visible=false
                     }
                     onClicked:{
-                        parachute1Image.visible=true
+                        minitux.visible=true
                         Activity.parachuefun()
+                    }
+                    onDoubleClicked: {
+
                     }
 
                 }
@@ -157,20 +160,28 @@ ActivityBase {
 
         Item{
             id:parachutOpen
+            onYChanged:{
+                if((parachuteImage.y > background.height/1.4 )) {
+                    if(((boat.x < parachuteImage.x) && ((boat.x+boat.width)>parachuteImage.x))) {
+                        bonus.good("lion")
+                    }      }
+            }
             Image{
                 id:parachuteImage
                 visible:false
                 source:activity.dataSetUrl+"parachute.svg"
+
+
             }
             Image{
-                id:parachute1Image
+                id:minitux
                 visible:false
                 source:activity.dataSetUrl+"minitux.svg"
                 MouseArea{
                     id:paramouse
                     anchors.fill:parent
                     onClicked:{
-                        parachute1Image.visible=false
+                        minitux.visible=false
                         parachuteImage.visible=true
                         keyunable.visible=true
 

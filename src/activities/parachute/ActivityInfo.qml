@@ -18,16 +18,16 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "parachute/Parachute.qml"
+  name: qsTr("parachute/Parachute.qml")
   difficulty: 1
-  icon: "parachute/parachute.svg"
-  author: "Rajdeep Kaur &lt;rajdeep51994@gmail.com&gt;"
+  icon: qsTr("parachute/parachute.svg")
+  author: qsTr("Rajdeep Kaur &lt;rajdeep51994@gmail.com&gt;")
   demo: true
-  title: "Parachute activity"
+  title: qsTr("Parachute activity")
   description: qsTr("Help Tux the parachutist land safely")
   //intro: "put here in comment the text for the intro voice"
   goal:qsTr("In this game, Tux the parachutist needs help to land safely on the fishing boat. He needs to allow for the wind direction and speed.")
   prerequisite:qsTr("This board is game-oriented. No specific skills are needed to play.")
   manual:qsTr("Hit any key or click on the plane to make Tux jump. Hit another key or click on Tux to open the parachute.")
-  section: "fun"
+  section: qsTr("fun")
 }

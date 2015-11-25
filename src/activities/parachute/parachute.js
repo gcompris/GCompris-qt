@@ -29,7 +29,7 @@
 var currentLevel = 0
 var numberOfLevel = 4
 var items
-var flagofpress = 0
+var checkPressed = 0
 var uppressed
 var downpressed
 
@@ -45,13 +45,13 @@ function stop() {
     items.animationcloud.stop()
     items.animationboat.stop()
     items.parachuteanimation.stop()
-    items.parachute1Image.visible=false
+    items.minitux.visible=false
     items.parachuteImage.visible=false
 }
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    flagofpress = 0
+    checkPressed = 0
     items.animationheli.restart()
     items.animationcloud.restart()
     items.animationboat.restart()
@@ -61,11 +61,11 @@ function initLevel() {
 function processPressedKey(event) {
     switch(event.key) {
     case Qt.Key_Up : event.accepted = true;
-        if(flagofpress === 0) {
+        if(checkPressed === 0) {
             uppressed = true;
             items.parachuteanimation.stop()
             items.parachuteanimationup.restart()
-            flagofpress = 1;
+            checkPressed = 1;
         }
         else {
             uppressed = true;
@@ -74,11 +74,11 @@ function processPressedKey(event) {
         }
         break;
     case Qt.Key_Down : event.accepted = true;
-        if(flagofpress === 0) {
+        if(checkPressed === 0) {
             downpressed = true;
             items.parachuteanimation.stop()
             items.parachuteanimationdown.restart()
-            flagofpress = 1;
+            checkPressed = 1;
         }
         else {
             downpressed = true;
