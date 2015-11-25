@@ -56,6 +56,7 @@ function initLevel() {
     items.descriptionPanel.visible = false
     // Stop audio if necessary (switch from level 2 at beginning to a new level for example)
     items.audioEffects.stop()
+    items.instruction.visible = true
 
     reload();
     changeOpacity();

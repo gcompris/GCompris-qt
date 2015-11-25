@@ -38,15 +38,39 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Image {
+    pageComponent: Item {
         id: background
-        source: backgroundImage
 
-        sourceSize.width: parent.width
-        sourceSize.height: parent.height
-        anchors.fill: parent
+        /* In order to accept any screen ratio the play area is always a 1000x1000
+         * square and is centered in a big background image that is 2000x2000
+         */
+
+        Image {
+            id: bg
+            source: backgroundImage
+            sourceSize.width: 2000 * ApplicationInfo.ratio
+            sourceSize.height: 2000 * ApplicationInfo.ratio
+            width: 2000 * background.playRatio
+            height: width
+            anchors.centerIn: parent
+        }
+
+        Rectangle {
+            width: background.playWidth
+            height: background.playHeight
+            anchors.centerIn: parent
+            border.width: 2
+            border.color: "black"
+            color: "transparent"
+            visible: false /* debug to see the play area */
+        }
 
         property bool horizontalLayout: background.width > background.height
+        property int playX: (activity.width - playWidth) / 2
+        property int playY: (activity.height - playHeight) / 2
+        property int playWidth: horizontalLayout ? activity.height : activity.width
+        property int playHeight: playWidth
+        property double playRatio: playWidth / 1000
 
         focus: true
 
@@ -71,6 +95,7 @@ ActivityBase {
             property alias dataModel: dataModel
             property alias question: question
             property alias questionText: questionText
+            property alias instruction: instruction
             property alias instructionText: instructionText
             property alias descriptionPanel: descriptionPanel
             property bool hasAudioQuestions: activity.hasAudioQuestions
@@ -90,10 +115,10 @@ ActivityBase {
             model: dataset.tab.length
             Animals {
                 animalSource: dataset.tab[index].image
-                xA: activity.width * dataset.tab[index].x
-                yA: activity.height * dataset.tab[index].y
-                animalWidth: activity.width * dataset.tab[index].width
-                animalHeight: activity.height * dataset.tab[index].height
+                xA: background.playX + background.playWidth * dataset.tab[index].x - animalWidth / 2
+                yA: background.playY + background.playHeight * dataset.tab[index].y - animalHeight / 2
+                animalWidth: background.playWidth * dataset.tab[index].width * background.playRatio
+                animalHeight: background.playHeight * dataset.tab[index].height * background.playRatio
                 title: dataset.tab[index].title
                 description: dataset.tab[index].text
                 imageSource: dataset.tab[index].image2
@@ -157,33 +182,45 @@ ActivityBase {
 
         Rectangle {
             id: question
-            width: questionText.width + 5
-            height: questionText.height + 5
+            width: parent.width * 0.9
+            height: questionText.height
             color: "lightgray"
             radius: 10
             border.width: 3
             border.color: "black"
             opacity: 0
-            anchors.bottom: instruction.top
+            anchors {
+                top: instruction.visible ? instruction.bottom : parent.top
+                horizontalCenter: parent.horizontalCenter
+                margins: 20 * ApplicationInfo.ratio
+            }
             GCText {
                 id: questionText
-                verticalAlignment: Text.AlignVCenter
                 horizontalAlignment: Text.AlignHCenter
+                verticalAlignment: Text.AlignVCenter
+                anchors.centerIn: parent.Center
                 color: "black"
-                width: activity.width / 2
+                width: parent.width * 0.9
                 wrapMode: Text.Wrap
             }
         }
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: instruction.visible = false
+            enabled: instruction.visible
+        }
         Rectangle {
             id: instruction
-            width: instructionText.width + 5
-            height: instructionText.height + 5
+            width: parent.width * 0.9
+            height: instructionText.height
             color: "lightgray"
             radius: 10
             border.width: 3
             border.color: "black"
             anchors {
-                left: parent.left
+                top: parent.top
+                horizontalCenter: parent.horizontalCenter
                 margins: 20 * ApplicationInfo.ratio
             }
             y: parent.height / 4
@@ -194,7 +231,7 @@ ActivityBase {
                 verticalAlignment: Text.AlignVCenter
                 anchors.centerIn: parent.Center
                 color: "black"
-                width: activity.width / 6
+                width: parent.width * 0.9
                 wrapMode: Text.Wrap
             }
         }

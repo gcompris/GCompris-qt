@@ -29,10 +29,10 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/horse.wav"),
         "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/horse.jpg",
         "text2": qsTr("You can ride on the back of this animal!"),
-        "x": 0.55896985,
-        "y": 0.26696875,
-        "width": 0.105645,
-        "height": 0.2000287337
+        "x": 0.304,
+        "y": 0.480,
+        "width": 0.156,
+        "height": 0.166
     },
     {
         "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/chicken.svg",
@@ -41,10 +41,10 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/chickens.wav"),
         "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/chicken.jpg",
         "text2": qsTr("This animal lays eggs."),
-        "x": 0.36103875,
-        "y": 0.7781575521,
-        "width": 0.17824875,
-        "height": 0.2027100423
+        "x": 0.58,
+        "y": 0.73,
+        "width": 0.190,
+        "height": 0.121
     },
     {
         "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/cow.svg",
@@ -53,10 +53,10 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/cow.wav"),
         "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/cow.jpg",
         "text2": qsTr("You can drink the milk this animal produces."),
-        "x": 0.45646875,
-        "y": 0.52247722135,
-        "width": 0.24231625,
-        "height": 0.2436188965
+        "x": 0.364,
+        "y": 0.620,
+        "width": 0.305,
+        "height": 0.172
     },
     {
         "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/cat.svg",
@@ -65,10 +65,10 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/cat.wav"),
         "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/cat.jpg",
         "text2": qsTr("This pet likes chasing mice."),
-        "x": 0.44159875,
-        "y": 0.4046419271,
-        "width": 0.06263625,
-        "height": 0.1072301107
+        "x": 0.880,
+        "y": 0.775,
+        "width": 0.114,
+        "height": 0.110
     },
     {
         "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/pig.svg",
@@ -77,10 +77,10 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/pig.wav"),
         "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/pig.jpg",
         "text2": qsTr("This animal likes to lie in the mud."),
-        "x": 0.86141875,
-        "y": 0.7781575521,
-        "width": 0.08060875,
-        "height": 0.133525166
+        "x": 0.75,
+        "y": 0.90,
+        "width": 0.185,
+        "height": 0.173
     },
     {
         "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/duck.svg",
@@ -89,10 +89,10 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/duck.wav"),
         "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/duck.jpg",
         "text2": qsTr("This animal has webbed feet so it can swim in the water."),
-        "x": 0.16129375,
-        "y": 0.6669921875,
-        "width": 0.17968875,
-        "height": 0.207092181
+        "x": 0.163,
+        "y": 0.80,
+        "width": 0.210,
+        "height": 0.136
     },
     {
         "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/owl.svg",
@@ -101,10 +101,10 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/owl.wav"),
         "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/owl.jpg",
         "text2": qsTr("This animal likes to come out at night."),
-        "x": 0.90,
-        "y": 683/153600,
-        "width": 0.05102625,
-        "height": 0.1238537793
+        "x": 0.71,
+        "y": 0.29,
+        "width": 0.042,
+        "height": 0.056
     },
     {
         "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/dog.svg",
@@ -113,10 +113,10 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/dog.wav"),
         "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/dog.jpg",
         "text2": qsTr("This animal's ancestors were wolves."),
-        "x": 0.31079,
-        "y": 0.4947916667,
-        "width": 0.07916375,
-        "height": 0.113404235
+        "x": 0.120,
+        "y": 0.600,
+        "width": 0.126,
+        "height": 0.101
     },
     {
         "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/rooster.svg",
@@ -125,10 +125,10 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/rooster.wav"),
         "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/rooster.jpg",
         "text2": qsTr("This animal wakes the farm up in the morning."),
-        "x": 0.60511625,
-        "y": 0.7781575521,
-        "width": 0.08894625,
-        "height": 0.176610638
+        "x": 0.52,
+        "y": 0.90,
+        "width": 0.122,
+        "height": 0.137
     },
     {
         "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/sheep.svg",
@@ -137,10 +137,10 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/sheep.wav"),
         "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/sheep.jpg",
         "text2": qsTr("This animal is a close relative to the goat."),
-        "x": 0.8,
-        "y": 0.5,
-        "width": 0.285,
-        "height": 0.22
+        "x": 0.66,
+        "y": 0.550,
+        "width": 0.20,
+        "height": 0.15
     }
 ]
 
