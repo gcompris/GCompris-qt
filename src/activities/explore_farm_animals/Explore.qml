@@ -81,6 +81,10 @@ ActivityBase {
         onStart: { Activity.start(items, dataset) }
         onStop: { Activity.stop() }
 
+        Keys.onEscapePressed: {
+            descriptionPanel.visible ? descriptionPanel.visible = false : home()
+        }
+
         Repeater {
             id: dataModel
             model: dataset.tab.length
