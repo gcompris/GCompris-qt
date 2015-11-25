@@ -129,6 +129,18 @@ var tab = [
         "y": 0.7781575521,
         "width": 0.08894625,
         "height": 0.176610638
+    },
+    {
+        "image": "qrc:/gcompris/src/activities/explore_farm_animals/resource/sheep.svg",
+        "title": qsTr("Sheep"),
+        "text": qsTr("The sheep is a mammal that bears a fleece of wool. It is a grazing herbivore, bred for its wool, its meat, and its milk. The fleece can be removed and used to produce articles of clothing and blankets, among other things."),
+        "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_farm_animals/resource/sheep.wav"),
+        "image2": "qrc:/gcompris/src/activities/explore_farm_animals/resource/sheep.jpg",
+        "text2": qsTr("This animal is a close relative to the goat."),
+        "x": 0.8,
+        "y": 0.5,
+        "width": 0.285,
+        "height": 0.22
     }
 ]
 
