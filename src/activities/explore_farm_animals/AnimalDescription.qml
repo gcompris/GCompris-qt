@@ -35,9 +35,9 @@ Rectangle {
 
     width: activity.width
     height: activity.height
-    // Empty mouseArea to avoid trigger the background mouseArea (click on other items)
     MouseArea {
         anchors.fill: parent
+        onPressed: parent.close()
     }
 
     property alias title: heading.text
@@ -90,34 +90,17 @@ Rectangle {
         wrapMode: Text.WordWrap
     }
 
-    Rectangle {
-        width: rectangleDesc.width * 0.3
-        height: rectangleDesc.height * 0.2
-        radius: 5
-        anchors {
-            top: rectangleDesc.horizontalLayout ? descriptionText.bottom : animalImage.bottom
-            horizontalCenter: rectangleDesc.horizontalCenter
-        }
-        GCText {
-            id: bottom_text
-            text: qsTr("Back to the main page.")
-            fontSizeMode: Text.Fit
-            font.weight: Font.Bold
-            anchors.fill: parent
-            color: "#2a2a2a"
-            horizontalAlignment: Text.AlignJustify
-            wrapMode: Text.WordWrap
-        }
-        MouseArea {
-            id: mouseArea
-            anchors.fill: parent
-            onPressed: {
-                rectangleDesc.visible = false;
-                if (Activity.isComplete()) {
-                    Activity.items.bonus.good("flower");
-                    Activity.nextLevel();
-                }
-            }
+    // The cancel button
+    GCButtonCancel {
+        onClose: parent.close()
+    }
+
+    function close() {
+        rectangleDesc.visible = false;
+        if (Activity.isComplete()) {
+            Activity.items.bonus.good("flower");
+            Activity.nextLevel();
         }
     }
+
 }
