@@ -106,6 +106,7 @@ scalesboard_weight_avoirdupois
 simplepaint
 smallnumbers
 smallnumbers2
+stefan.toncu
 sudoku
 superbrain
 target
