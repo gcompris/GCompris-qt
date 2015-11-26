@@ -82,7 +82,10 @@ Item {
 
         MultiPointTouchArea {
             id: touchArea
-            anchors.fill: parent
+            anchors.centerIn: parent
+            // Make the item big enough to be clicked easily
+            width: Math.max(parent.width, 70 * ApplicationInfo.ratio)
+            height: Math.max(parent.height, 70 * ApplicationInfo.ratio)
             touchPoints: [ TouchPoint { id: point1 } ]
             mouseEnabled: true
 
