@@ -29,8 +29,8 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/australia.ogg"),
         "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/australia.jpg",
         "text2": qsTr("Australia"),
-        "x": 0.85,
-        "y": 0.63,
+        "x": 0.87,
+        "y": 0.65,
         "width": 0.05,
         "height": 0.05
     },
@@ -41,8 +41,8 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/africa.ogg"),
         "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/africa.jpg",
         "text2": qsTr("Africa"),
-        "x": 0.55,
-        "y": 0.45,
+        "x": 0.57,
+        "y": 0.47,
         "width": 0.05,
         "height": 0.05
     },
@@ -53,8 +53,8 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/middleeast.ogg"),
         "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/middleeast.jpg",
         "text2": qsTr("Middle East"),
-        "x": 0.6,
-        "y": 0.3,
+        "x": 0.62,
+        "y": 0.32,
         "width": 0.05,
         "height": 0.05
     },
@@ -65,8 +65,8 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/japan.ogg"),
         "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/japan.jpg",
         "text2": qsTr("Japan"),
-        "x": 0.85,
-        "y": 0.2,
+        "x": 0.87,
+        "y": 0.22,
         "width": 0.05,
         "height": 0.05
     },
@@ -77,8 +77,8 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/ireland.ogg"),
         "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/ireland.jpg",
         "text2": qsTr("Scotland and Ireland"),
-        "x": 0.48,
-        "y": 0.12,
+        "x": 0.50,
+        "y": 0.14,
         "width": 0.05,
         "height": 0.05
     },
@@ -89,8 +89,8 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/italy.ogg"),
         "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/italy.jpg",
         "text2": qsTr("Italy"),
-        "x": 0.52,
-        "y": 0.2,
+        "x": 0.54,
+        "y": 0.22,
         "width": 0.05,
         "height": 0.05
     },
@@ -101,8 +101,8 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/beethoven.ogg"),
         "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/orchestra.jpg",
         "text2": qsTr("European Classical Music"),
-        "x": 0.55,
-        "y": 0.15,
+        "x": 0.57,
+        "y": 0.17,
         "width": 0.05,
         "height": 0.05
     },
@@ -113,8 +113,8 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/mexico.ogg"),
         "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/mexico.jpg",
         "text2": qsTr("Mexico"),
-        "x": 0.22,
-        "y": 0.35,
+        "x": 0.24,
+        "y": 0.37,
         "width": 0.05,
         "height": 0.05
     },
@@ -125,8 +125,8 @@ var tab = [
         "audio": GCompris.ApplicationInfo.getAudioFilePath("qrc:/gcompris/src/activities/explore_world_music/resource/america.ogg"),
         "image2": "qrc:/gcompris/src/activities/explore_world_music/resource/america.jpg",
         "text2": qsTr("United States of America"),
-        "x": 0.23,
-        "y": 0.2,
+        "x": 0.25,
+        "y": 0.22,
         "width": 0.05,
         "height": 0.05
     }
