@@ -205,11 +205,6 @@ ActivityBase {
             }
         }
 
-        MouseArea {
-            anchors.fill: parent
-            onClicked: instruction.visible = false
-            enabled: instruction.visible
-        }
         Rectangle {
             id: instruction
             width: parent.width * 0.9
@@ -233,6 +228,11 @@ ActivityBase {
                 color: "black"
                 width: parent.width * 0.9
                 wrapMode: Text.Wrap
+            }
+            MouseArea {
+                anchors.fill: parent
+                onClicked: instruction.visible = false
+                enabled: instruction.visible
             }
         }
 

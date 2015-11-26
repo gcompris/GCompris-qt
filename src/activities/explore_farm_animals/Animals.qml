@@ -90,6 +90,7 @@ Item {
 
             onStartedChanged: started ? retouch.start() : retouch.stop()
             onPressed: {
+                Activity.items.instruction.visible = false
                 if (Activity.items.currentLevel == 0) {
                     audioEffects.play(animal.audio);
                     displayDescription(animal)
