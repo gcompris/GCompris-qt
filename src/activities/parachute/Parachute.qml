@@ -137,8 +137,11 @@ ActivityBase {
                         forhover.visible=false
                     }
                     onClicked:{
-                        minitux.visible=true
-                        Activity.parachuefun()
+                        if(Activity.Oneclick === 0) {
+                             minitux.visible=true
+                             Activity.parachuefun()
+                            Activity.Oneclick = 1;
+                        }
                     }
                     onDoubleClicked: {
 
@@ -339,7 +342,7 @@ ActivityBase {
             sourceSize.width: 75 * ApplicationInfo.ratio
             visible: false
             anchors.right: background.right
-            onClicked: { Activity.nextLevel()          }
+            onClicked: { Activity.nextLevel()  }
         }
 
         Bonus {

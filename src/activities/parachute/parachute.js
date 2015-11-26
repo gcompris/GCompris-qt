@@ -33,6 +33,7 @@ var checkPressed = 0
 var uppressed
 var downpressed
 var winlose
+var Oneclick
 
 function start(items_) {
     items = items_
@@ -54,6 +55,7 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     checkPressed = 0
     winlose = 0
+    Oneclick = 0
     items.ok.visible = false
     items.animationheli.restart()
     items.animationcloud.restart()
@@ -125,6 +127,7 @@ function nextLevel() {
     items.parachuteImage.visible=false
     items.ok.visible = false
     winlose = 0
+    Oneclick = 0
     initLevel();
 }
 
