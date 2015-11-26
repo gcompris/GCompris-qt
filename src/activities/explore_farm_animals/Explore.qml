@@ -192,7 +192,7 @@ ActivityBase {
             anchors {
                 top: instruction.visible ? instruction.bottom : parent.top
                 horizontalCenter: parent.horizontalCenter
-                margins: 20 * ApplicationInfo.ratio
+                margins: 10 * ApplicationInfo.ratio
             }
             GCText {
                 id: questionText
@@ -200,7 +200,7 @@ ActivityBase {
                 verticalAlignment: Text.AlignVCenter
                 anchors.centerIn: parent.Center
                 color: "black"
-                width: parent.width * 0.9
+                width: parent.width
                 wrapMode: Text.Wrap
             }
         }
@@ -216,9 +216,8 @@ ActivityBase {
             anchors {
                 top: parent.top
                 horizontalCenter: parent.horizontalCenter
-                margins: 20 * ApplicationInfo.ratio
+                margins: 5 * ApplicationInfo.ratio
             }
-            y: parent.height / 4
 
             GCText {
                 id: instructionText
@@ -226,7 +225,7 @@ ActivityBase {
                 verticalAlignment: Text.AlignVCenter
                 anchors.centerIn: parent.Center
                 color: "black"
-                width: parent.width * 0.9
+                width: parent.width
                 wrapMode: Text.Wrap
             }
             MouseArea {
