@@ -32,6 +32,7 @@ var items
 var checkPressed = 0
 var uppressed
 var downpressed
+var winlose
 
 function start(items_) {
     items = items_
@@ -52,6 +53,8 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
     checkPressed = 0
+    winlose = 0
+    items.ok.visible = false
     items.animationheli.restart()
     items.animationcloud.restart()
     items.animationboat.restart()
@@ -120,6 +123,8 @@ function nextLevel() {
     }
     items.keyunable.visible=false
     items.parachuteImage.visible=false
+    items.ok.visible = false
+    winlose = 0
     initLevel();
 }
 
@@ -127,5 +132,7 @@ function previousLevel() {
     if(--currentLevel < 0) {
         currentLevel = numberOfLevel - 1
     }
+    items.keyunable.visible=false
+    items.parachuteImage.visible=false
     initLevel();
 }

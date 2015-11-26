@@ -76,6 +76,7 @@ ActivityBase {
             property alias parachuteanimationdown:parachuteanimationdown
             property alias parachuteanimationrelup: parachuteanimationrelup
             property alias parachuteanimationreldown: parachuteanimationreldown
+            property alias ok: ok
         }
 
         IntroMessage {
@@ -161,10 +162,25 @@ ActivityBase {
         Item{
             id:parachutOpen
             onYChanged:{
-                if((parachuteImage.y > background.height/1.4 )) {
-                    if(((boat.x < parachuteImage.x) && ((boat.x+boat.width)>parachuteImage.x))) {
-                        bonus.good("lion")
-                    }      }
+                if(( parachutOpen.y >= background.height/1.4 )&&(Activity.winlose === 0)) {
+                    if((parachutOpen.x >= boatmotion.x) && (parachutOpen.x <= (boatmotion.x+boatmotion.width))) {
+                        bonus.good("smiley")
+                        Activity.winlose = 1
+
+                    }
+                    if((parachutOpen.y >= background.height/1.2)&&(Activity.winlose === 0)) {
+                        if((parachutOpen.x <= boatmotion.x) || (parachutOpen.x >= (boatmotion.x+boatmotion.width))) {
+                            bonus.bad("smiley")
+                            Activity.winlose = 1
+
+                        }
+                    }
+
+                }
+
+
+
+
             }
             Image{
                 id:parachuteImage
@@ -317,9 +333,20 @@ ActivityBase {
             onHomeClicked: activity.home()
         }
 
+        BarButton {
+            id: ok
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
+            sourceSize.width: 75 * ApplicationInfo.ratio
+            visible: false
+            anchors.right: background.right
+            onClicked: { Activity.nextLevel()          }
+        }
+
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            interval: 2000
+            onLoose: ok.visible = true
+            onWin:ok.visible = true
         }
 
 
