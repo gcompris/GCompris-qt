@@ -94,24 +94,20 @@ Item {
                     audioEffects.play(animal.audio);
                     displayDescription(animal)
                     star.visible = true;
-                }
-                else if (Activity.items.currentLevel == 1 && Activity.items.hasAudioQuestions) {
+                } else if (Activity.items.currentLevel == 1 && Activity.items.hasAudioQuestions) {
                     if (Activity.getCurrentQuestion().audio == animal.audio) {
                         animWin.start();
                         items.bonus.good("smiley");
                         Activity.nextSubLevel();
-                    }
-                    else {
+                    } else {
                         items.bonus.bad("smiley")
                     }
-                }
-                else {
+                } else {
                     if (items.questionText.text == animal.question) {
                         animWin.start();
                         items.bonus.good("smiley");
                         Activity.nextSubLevel();
-                    }
-                    else {
+                    } else {
                         items.bonus.bad("smiley")
                     }
                 }
