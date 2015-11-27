@@ -105,7 +105,10 @@ QString loadTranslation(QSettings &config, QTranslator &translator)
 
 int main(int argc, char *argv[])
 {
-	QGuiApplication app(argc, argv);
+    // Disable it because we already support HDPI display natively
+    qunsetenv("QT_DEVICE_PIXEL_RATIO");
+
+    QGuiApplication app(argc, argv);
     app.setOrganizationName("KDE");
     app.setApplicationName(GCOMPRIS_APPLICATION_NAME);
     app.setOrganizationDomain("kde.org");
