@@ -28,8 +28,6 @@ var numberOfLevel
 var items
 var dataset
 
-var questionOrder
-
 function start(items_,var_) {
     items = items_
     dataset = var_
@@ -38,7 +36,7 @@ function start(items_,var_) {
     items.score.numberOfSubLevels = items.dataModel.count
     numberOfLevel = items.hasAudioQuestions ? 3 : 2;
     // create table of size N filled with numbers from 0 to N
-    questionOrder = Array.apply(null, {length: items.dataModel.count}).map(Number.call, Number)
+    items.questionOrder = Array.apply(null, {length: items.dataModel.count}).map(Number.call, Number)
 
     initLevel()
 }
@@ -50,7 +48,7 @@ function stop() {
 function initLevel() {
     items.bar.level = items.currentLevel + 1
     // randomize the questions for level 2 and 3
-    Core.shuffle(questionOrder);
+    Core.shuffle(items.questionOrder);
 
     items.score.currentSubLevel = 0
     items.descriptionPanel.visible = false
@@ -59,9 +57,6 @@ function initLevel() {
     items.instruction.visible = true
 
     reload();
-    changeOpacity();
-    setQuestionText();
-    setInstruction();
 }
 
 function nextLevel() {
@@ -70,8 +65,8 @@ function nextLevel() {
     }
     initLevel();
     if (items.currentLevel == 1) {
-        items.score.currentSubLevel --;
-        nextSubLevel();
+        items.score.currentSubLevel = 0;
+        initSubLevel();
     }
 }
 
@@ -94,8 +89,7 @@ function isComplete() {
     return true;
 }
 
-function nextSubLevel() {
-    items.score.currentSubLevel ++;
+function initSubLevel() {
     if(items.score.currentSubLevel == items.dataModel.count) {
         items.bonus.good("smiley");
         items.score.currentSubLevel = 0;
@@ -104,9 +98,11 @@ function nextSubLevel() {
     else if(items.currentLevel == 1 && items.hasAudioQuestions) {
         items.audioEffects.play(getCurrentQuestion().audio);
     }
-    else if(items.currentLevel != 0) {
-        setQuestionText();
-    }
+}
+
+function nextSubLevel() {
+    items.score.currentSubLevel ++;
+    initSubLevel()
 }
 
 function reload() {
@@ -119,25 +115,6 @@ function repeat() {
     items.audioEffects.play(getCurrentQuestion().audio);
 }
 
-function changeOpacity() {
-    if (items.currentLevel == 2 || (items.currentLevel == 1 && !items.hasAudioQuestions)) {
-        items.question.opacity = 0.8;
-        items.questionText.opacity = 1;
-    }
-    else {
-        items.question.opacity = 0;
-        items.questionText.opacity = 0;
-    }
-}
-
 function getCurrentQuestion() {
-    return dataset.tab[questionOrder[items.score.currentSubLevel]];
-}
-
-function setQuestionText() {
-    items.questionText.text = getCurrentQuestion().text2;
-}
-
-function setInstruction() {
-    items.instructionText.text = dataset.instruction[items.currentLevel].text
+    return dataset.tab[items.questionOrder[items.score.currentSubLevel]];
 }

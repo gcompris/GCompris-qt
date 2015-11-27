@@ -38,6 +38,7 @@ Item {
     property real animalHeight: animalHeight
     property alias starVisible: star.visible
 
+    property int questionId
     property string title
     property string description
     property string imageSource
@@ -93,21 +94,14 @@ Item {
 
             onStartedChanged: started ? retouch.start() : retouch.stop()
             onPressed: {
+                var questionTargetId = items.questionOrder[Activity.items.score.currentSubLevel]
                 Activity.items.instruction.visible = false
                 if (Activity.items.currentLevel == 0) {
                     audioEffects.play(animal.audio);
                     displayDescription(animal)
                     star.visible = true;
-                } else if (Activity.items.currentLevel == 1 && Activity.items.hasAudioQuestions) {
-                    if (Activity.getCurrentQuestion().audio == animal.audio) {
-                        animWin.start();
-                        items.bonus.good("smiley");
-                        Activity.nextSubLevel();
-                    } else {
-                        items.bonus.bad("smiley")
-                    }
                 } else {
-                    if (items.questionText.text == animal.question) {
+                    if (questionId === questionTargetId) {
                         animWin.start();
                         items.bonus.good("smiley");
                         Activity.nextSubLevel();

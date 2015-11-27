@@ -101,6 +101,8 @@ ActivityBase {
             property bool hasAudioQuestions: activity.hasAudioQuestions
             property int currentLevel
             property string currentAudio
+            property var questionOrder
+            property var currentQuestion: activity.dataset.tab[items.questionOrder[score.currentSubLevel]]
         }
 
         onStart: { Activity.start(items, dataset) }
@@ -114,6 +116,7 @@ ActivityBase {
             id: dataModel
             model: dataset.tab.length
             Animals {
+                questionId: index
                 animalSource: dataset.tab[index].image
                 xA: background.playX + background.playWidth * dataset.tab[index].x - animalWidth / 2
                 yA: background.playY + background.playHeight * dataset.tab[index].y - animalHeight / 2
@@ -184,11 +187,11 @@ ActivityBase {
             id: question
             width: parent.width * 0.9
             height: questionText.height
-            color: "lightgray"
+            color: '#CCCCCCCC'
             radius: 10
             border.width: 3
             border.color: "black"
-            opacity: 0
+            visible: items.currentLevel == 2 || (items.currentLevel == 1 && !items.hasAudioQuestions)
             anchors {
                 top: instruction.visible ? instruction.bottom : parent.top
                 horizontalCenter: parent.horizontalCenter
@@ -202,6 +205,7 @@ ActivityBase {
                 color: "black"
                 width: parent.width
                 wrapMode: Text.Wrap
+                text: items.currentQuestion.text2
             }
         }
 
@@ -209,7 +213,7 @@ ActivityBase {
             id: instruction
             width: parent.width * 0.9
             height: instructionText.height
-            color: "lightgray"
+            color: "#CCCCCCCC"
             radius: 10
             border.width: 3
             border.color: "black"
@@ -227,6 +231,7 @@ ActivityBase {
                 color: "black"
                 width: parent.width
                 wrapMode: Text.Wrap
+                text: activity.dataset.instruction[items.currentLevel].text
             }
             MouseArea {
                 anchors.fill: parent
