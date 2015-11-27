@@ -120,8 +120,8 @@ ActivityBase {
                 source: dataset.tab[index].image
                 x: background.playX + background.playWidth * dataset.tab[index].x - width / 2
                 y: background.playY + background.playHeight * dataset.tab[index].y - height / 2
-                width: background.playWidth * dataset.tab[index].width * background.playRatio
-                height: background.playHeight * dataset.tab[index].height * background.playRatio
+                width: background.playWidth * dataset.tab[index].width
+                height: background.playHeight * dataset.tab[index].height
                 title: dataset.tab[index].title
                 description: dataset.tab[index].text
                 imageSource: dataset.tab[index].image2
