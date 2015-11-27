@@ -33,8 +33,8 @@ Rectangle {
     border.width: 5
     border.color: "black"
 
-    width: activity.width
-    height: activity.height
+    width: parent.width
+    height: parent.height
     MouseArea {
         anchors.fill: parent
         onPressed: parent.close()
@@ -54,21 +54,21 @@ Rectangle {
         anchors.centerIn: parent.Center
         color: "#2a2a2a"
         width: parent.width
-        height: if(rectangleDesc.horizontalLayout) parent.height * 0.2
-        fontSizeMode: Text.Fit
         wrapMode: Text.WordWrap
     }
 
     Image {
         id: animalImage
-        sourceSize.width: if(rectangleDesc.horizontalLayout) parent.width * 0.5
-        sourceSize.height: if(!rectangleDesc.horizontalLayout) parent.height * 0.3
+        width: rectangleDesc.horizontalLayout ? parent.width / 2 : parent.width * 0.9
+        height: rectangleDesc.horizontalLayout ?
+                    parent.height * 0.8 :
+                    (parent.height - heading.height - descriptionText.height) * 0.9
         fillMode: Image.PreserveAspectFit
         anchors {
             top: rectangleDesc.horizontalLayout ? heading.bottom : descriptionText.bottom
             horizontalCenter: rectangleDesc.horizontalLayout ? undefined : heading.horizontalCenter
             left: rectangleDesc.horizontalLayout ? parent.left : undefined
-            leftMargin:  30 * ApplicationInfo.ratio
+            leftMargin:  rectangleDesc.horizontalLayout ? 30 * ApplicationInfo.ratio : 0
         }
     }
 
