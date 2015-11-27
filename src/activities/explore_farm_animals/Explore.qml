@@ -93,8 +93,6 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias dataModel: dataModel
-            property alias question: question
-            property alias questionText: questionText
             property alias instruction: instruction
             property alias instructionText: instructionText
             property alias descriptionPanel: descriptionPanel

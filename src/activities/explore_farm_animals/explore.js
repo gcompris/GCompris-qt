@@ -49,7 +49,9 @@ function initLevel() {
     items.bar.level = items.currentLevel + 1
     // randomize the questions for level 2 and 3
     Core.shuffle(items.questionOrder);
-
+    // Change the currentSubLevel value to 1 to be sure to update the question value
+    // else if you are sublevel 0 and go to last level, the question is not the good one
+    items.score.currentSubLevel = 1
     items.score.currentSubLevel = 0
     items.descriptionPanel.visible = false
     // Stop audio if necessary (switch from level 2 at beginning to a new level for example)
