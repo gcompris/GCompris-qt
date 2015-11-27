@@ -26,18 +26,16 @@ import GCompris 1.0
 import "../../core"
 import "explore.js" as Activity
 
-Item {
-    id: animal
+Image {
+    id: animalImg
     width: animalWidth
     height: animalHeight
-    property string animalSource
-    property real xA: xA
-    property real yA: yA
-    property string name: name
-    property real animalWidth: animalWidth
-    property real animalHeight: animalHeight
-    property alias starVisible: star.visible
+    sourceSize.width: width
+    sourceSize.height: height
+    fillMode: Image.PreserveAspectFit
 
+    property string name: name
+    property alias starVisible: star.visible
     property int questionId
     property string title
     property string description
@@ -47,67 +45,53 @@ Item {
 
     signal displayDescription(variant animal)
 
+    SequentialAnimation {
+        id: anim
+        running: true
+        loops: 1
+
+        NumberAnimation {
+            target: animalImg
+            property: "rotation"
+            from: 0; to: 360
+            duration: 400 + Math.floor(Math.random() * 400)
+            easing.type: Easing.InOutQuad
+        }
+    }
+
     Image {
-        id: animalImg
-        source: parent.animalSource
+        id: star
 
-        sourceSize.width: parent.width
-        sourceSize.height: parent.height
-        x: xA
-        y: yA
-        fillMode: Image.PreserveAspectFit
+        x: animalImg.width / 2.5
+        y: animalImg.height * 0.8
+        visible: false
 
-        SequentialAnimation {
-            id: anim
-            running: true
-            loops: 1
+        source:"qrc:/gcompris/src/core/resource/star.png"
+    }
 
-            NumberAnimation {
-                target: animalImg
-                property: "rotation"
-                from: 0; to: 360
-                duration: 400 + Math.floor(Math.random() * 400)
-                easing.type: Easing.InOutQuad
-            }
-        }
+    MultiPointTouchArea {
+        id: touchArea
+        anchors.centerIn: parent
+        // Make the item big enough to be clicked easily
+        width: Math.max(parent.width, 70 * ApplicationInfo.ratio)
+        height: Math.max(parent.height, 70 * ApplicationInfo.ratio)
+        touchPoints: [ TouchPoint { id: point1 } ]
+        mouseEnabled: true
 
-        Image {
-            id: star
-
-            x: animalImg.width / 2.5
-            y: animalImg.height * 0.8
-            visible: false
-
-            source:"qrc:/gcompris/src/core/resource/star.png"
-        }
-
-        MultiPointTouchArea {
-            id: touchArea
-            anchors.centerIn: parent
-            // Make the item big enough to be clicked easily
-            width: Math.max(parent.width, 70 * ApplicationInfo.ratio)
-            height: Math.max(parent.height, 70 * ApplicationInfo.ratio)
-            touchPoints: [ TouchPoint { id: point1 } ]
-            mouseEnabled: true
-
-            property bool started
-
-            onStartedChanged: started ? retouch.start() : retouch.stop()
-            onPressed: {
-                var questionTargetId = items.questionOrder[Activity.items.score.currentSubLevel]
-                Activity.items.instruction.visible = false
-                if (Activity.items.currentLevel == 0) {
-                    audioEffects.play(animal.audio);
-                    displayDescription(animal)
-                    star.visible = true;
+        onPressed: {
+            var questionTargetId = items.questionOrder[Activity.items.score.currentSubLevel]
+            Activity.items.instruction.visible = false
+            if (Activity.items.currentLevel == 0) {
+                audioEffects.play(animalImg.audio);
+                displayDescription(animalImg)
+                star.visible = true;
+            } else {
+                if (questionId === questionTargetId) {
+                    animWin.start();
+                    items.bonus.good("smiley");
+                    Activity.nextSubLevel();
                 } else {
-                    if (questionId === questionTargetId) {
-                        animWin.start();
-                        items.bonus.good("smiley");
-                        Activity.nextSubLevel();
-                    } else {
-                        items.bonus.bad("smiley")
-                    }
+                    items.bonus.bad("smiley")
                 }
             }
         }

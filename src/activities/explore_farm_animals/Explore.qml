@@ -117,11 +117,11 @@ ActivityBase {
             model: dataset.tab.length
             Animals {
                 questionId: index
-                animalSource: dataset.tab[index].image
-                xA: background.playX + background.playWidth * dataset.tab[index].x - animalWidth / 2
-                yA: background.playY + background.playHeight * dataset.tab[index].y - animalHeight / 2
-                animalWidth: background.playWidth * dataset.tab[index].width * background.playRatio
-                animalHeight: background.playHeight * dataset.tab[index].height * background.playRatio
+                source: dataset.tab[index].image
+                x: background.playX + background.playWidth * dataset.tab[index].x - width / 2
+                y: background.playY + background.playHeight * dataset.tab[index].y - height / 2
+                width: background.playWidth * dataset.tab[index].width * background.playRatio
+                height: background.playHeight * dataset.tab[index].height * background.playRatio
                 title: dataset.tab[index].title
                 description: dataset.tab[index].text
                 imageSource: dataset.tab[index].image2
