@@ -165,76 +165,86 @@ ActivityBase {
             }
         }
 
-        BarButton {
-            id: repeatItem
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            sourceSize.width: 80 * ApplicationInfo.ratio
-            z: bar.z + 1
+        Row {
+            id: row
+            spacing: 10 * ApplicationInfo.ratio
+            anchors.fill: parent
+            anchors.margins: 10 * ApplicationInfo.ratio
+            layoutDirection: leftCol.width === 0 ? Qt.RightToLeft : Qt.LeftToRight
 
-            visible: items.currentLevel == 1 && activity.hasAudioQuestions //&& ApplicationSettings.isAudioVoicesEnabled
-            anchors {
-                bottom: parent.bottom
-                right: score.left
-                margins: 10 * ApplicationInfo.ratio
-            }
-            onClicked: Activity.repeat();
-        }
+            Column {
+                id: leftCol
+                spacing: 10 * ApplicationInfo.ratio
 
+                Rectangle {
+                    id: question
+                    width: row.width - rightCol.width - 10 * ApplicationInfo.ratio
+                    height: questionText.height
+                    color: '#CCCCCCCC'
+                    radius: 10
+                    border.width: 3
+                    border.color: "black"
+                    visible: items.currentLevel == 2 || (items.currentLevel == 1 && !items.hasAudioQuestions)
+                    GCText {
+                        id: questionText
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        anchors.centerIn: parent.Center
+                        color: "black"
+                        width: parent.width
+                        wrapMode: Text.Wrap
+                        text: items.currentQuestion.text2
+                    }
+                }
 
-        Rectangle {
-            id: question
-            width: parent.width * 0.9
-            height: questionText.height
-            color: '#CCCCCCCC'
-            radius: 10
-            border.width: 3
-            border.color: "black"
-            visible: items.currentLevel == 2 || (items.currentLevel == 1 && !items.hasAudioQuestions)
-            anchors {
-                top: instruction.visible ? instruction.bottom : parent.top
-                horizontalCenter: parent.horizontalCenter
-                margins: 10 * ApplicationInfo.ratio
-            }
-            GCText {
-                id: questionText
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                anchors.centerIn: parent.Center
-                color: "black"
-                width: parent.width
-                wrapMode: Text.Wrap
-                text: items.currentQuestion.text2
-            }
-        }
+                Rectangle {
+                    id: instruction
+                    width: row.width - rightCol.width - 10 * ApplicationInfo.ratio
+                    height: instructionText.height
+                    color: "#CCCCCCCC"
+                    radius: 10
+                    border.width: 3
+                    border.color: "black"
 
-        Rectangle {
-            id: instruction
-            width: parent.width * 0.9
-            height: instructionText.height
-            color: "#CCCCCCCC"
-            radius: 10
-            border.width: 3
-            border.color: "black"
-            anchors {
-                top: parent.top
-                horizontalCenter: parent.horizontalCenter
-                margins: 5 * ApplicationInfo.ratio
+                    GCText {
+                        id: instructionText
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        anchors.centerIn: parent.Center
+                        color: "black"
+                        width: parent.width
+                        wrapMode: Text.Wrap
+                        text: activity.dataset.instruction[bar.level - 1].text
+                    }
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: instruction.visible = false
+                        enabled: instruction.visible
+                    }
+                }
             }
 
-            GCText {
-                id: instructionText
-                horizontalAlignment: Text.AlignHCenter
-                verticalAlignment: Text.AlignVCenter
-                anchors.centerIn: parent.Center
-                color: "black"
-                width: parent.width
-                wrapMode: Text.Wrap
-                text: activity.dataset.instruction[items.currentLevel].text
-            }
-            MouseArea {
-                anchors.fill: parent
-                onClicked: instruction.visible = false
-                enabled: instruction.visible
+            Column {
+                id: rightCol
+                spacing: 10 * ApplicationInfo.ratio
+
+                Score {
+                    id: score
+                    visible: items.currentLevel != 0
+                    anchors {
+                        bottom: undefined
+                        right: undefined
+                    }
+                }
+
+                BarButton {
+                    id: repeatItem
+                    source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
+                    sourceSize.width: 60 * ApplicationInfo.ratio
+                    anchors.right: parent.right
+                    visible: items.currentLevel == 1 && activity.hasAudioQuestions //&& ApplicationSettings.isAudioVoicesEnabled
+                    onClicked: Activity.repeat();
+                }
             }
         }
 
@@ -252,14 +262,6 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-        }
-
-        Score {
-            id: score
-            z: 1003
-            visible: items.currentLevel != 0
-            anchors.bottom: background.bottom
-            anchors.right: background.right
         }
 
         Bonus {
