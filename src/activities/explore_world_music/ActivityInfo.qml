@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2015 Johnny Jazeix <jazeix@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@ ActivityInfo {
   name: "explore_world_music/ExploreWorldMusic.qml"
   difficulty: 4
   icon: "explore_world_music/explore_world_music.svg"
-  author: "Beth Hadley &lt;bethmhadley@gmail.com&gt;"
+  author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   demo: true
   title: qsTr("Explore World Music")
   description: qsTr("Learn about the music of the world.")
@@ -36,5 +36,5 @@ The second level is a matching game. You will hear a clip of music, and you must
 The third level is also a matching game. You must select the location that matches the text description on the screen. You win the level when you have correctly matched all text prompts.
 ")
   credit: qsTr("Images from http://commons.wikimedia.org/wiki, http://archive.org")
-  section: "/discovery/sound_group"
+  section: "discovery sound_group"
 }

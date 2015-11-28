@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2015 Djalil Mesli <djalilmesli@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@ ActivityInfo {
   name: "explore_farm_animals/ExploreFarmAnimals.qml"
   difficulty: 2
   icon: "explore_farm_animals/explore_farm_animals.svg"
-  author: "Beth Hadley &lt;bethmhadley@gmail.com&gt;"
+  author: "Djalil Mesli &lt;djalilmesli@gmail.com&gt;"
   demo: true
   title: qsTr("Explore Farm Animals")
   description: qsTr("Learn about farm animals, what sounds they make, and interesting facts.")
@@ -36,5 +36,5 @@ In level two, a random animal sound is played and you must choose which animal m
 In level three, a random text prompt is displayed and you must click on the animal that matches the text. When you have matched all texts correctly, you win!
 ")
   credit: ""
-  section: "/discovery/sound_group"
+  section: "discovery sound_group"
 }
