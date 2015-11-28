@@ -44,7 +44,7 @@ About You
 
 You can help by:
 
-* `Creating new activities <http://gcompris.net/wiki/Qt_Quick_development_process>_`.
+* `Creating new activities <http://gcompris.net/wiki/Qt_Quick_development_process>`_.
 * Providing fancy graphics to incorporate as icons or backgrounds.
 * `Translating GCompris
   <http://gcompris.net/wiki/Developer%27s_corner#Translation>`_.
