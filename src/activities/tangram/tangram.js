@@ -32,69 +32,178 @@ var url = "qrc:/gcompris/src/activities/tangram/resource/"
   - y
   - rotation
 */
-var dataset = [
-            [
-                ['p2', 0, 0.1, 0.1, 0],
-                ['p4', 0, 0.2, 0.1, 0],
-                ['p1', 0, 0.3, 0.1, 0],
-                ['p3', 0, 0.4, 0.1, 0],
-                ['p4', 0, 0.1, 0.2, 0],
-                ['p0', 0, 0.2, 0.2, 0],
-                ['p0', 0, 0.3, 0.2, 0]
-            ],
-            [
-                ['p3', 1, 1.555033, 3.667909, 45],
-                ['p2', 0, 3.055033, 4.667909, 0],
-                ['p4', 0, 2.221700, 4.501242, 270],
-                ['p4', 0, 3.888367, 4.834575, 90],
-                ['p0', 0, 3.083629, 2.753695, 45],
-                ['p0', 0, 1.221700, 5.834575, 0],
-                ['p1', 0, 5.221700, 5.167909, 45]
-            ],
-            [
-                ['p2', 0, 3.450292, 1.017544, 45],
-                ['p4', 0, 3.450292, 2.196055, 45],
-                ['p1', 0, 3.450292, 3.098424, 45],
-                ['p3', 0, 3.096739, 5.199524, 90],
-                ['p4', 0, 4.157399, 5.081673, 45],
-                ['p0', 0, 3.450292, 6.495887, 45],
-                ['p0', 0, 3.450292, 4.374566, 45]
-            ]
-]
 
-// This is the list of tans provided to the use with their initial positions
-// this is the same formatting as dataset.
-var defaultTan = [
-            ['p2', 0, 0.1, 0.1, 0],
-            ['p4', 0, 0.2, 0.1, 0],
-            ['p1', 0, 0.3, 0.1, 0],
-            ['p3', 0, 0.4, 0.1, 0],
-            ['p4', 0, 0.1, 0.2, 0],
-            ['p0', 0, 0.2, 0.2, 0],
-            ['p0', 0, 0.3, 0.2, 0]
+
+//back_road.svg  cabin.svg  container.svg  front_road.svg
+var dataset = [
+            // Level 1
+            {
+                'bg': 'traffic/traffic_bg.svg',
+                'pieces': [
+                    {
+                        'img': 'traffic/engine.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.744,
+                        'y': 0.519,
+                        'width': 0.233,
+                        'height': 0.109,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'initX': 0.75,
+                        'initY': 0.7,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'traffic/cabin.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.744,
+                        'y': 0.346,
+                        'width': 0.207,
+                        'height': 0.178,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'initX': 0.05,
+                        'initY': 0.7,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'traffic/container.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.020,
+                        'y': 0.354,
+                        'width': 0.676,
+                        'height': 0.271,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'initX': 0.0,
+                        'initY': 0.0,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'traffic/back_road.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.082,
+                        'y': 0.587,
+                        'width': 0.198,
+                        'height': 0.092,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'initX': 0.7,
+                        'initY': 0.1,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'traffic/front_road.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.565,
+                        'y': 0.557,
+                        'width': 0.403,
+                        'height': 0.121,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'initX': 0.3,
+                        'initY': 0.7,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    }
+                ]
+            },
+            // Level 2
+            {
+                'bg': 'traffic/traffic_bg.svg',
+                'pieces': [
+                    {
+                        'img': 'traffic/engine.svg',
+                        'flippable': 1,
+                        'flipping': 0,
+                        'x': 0.744,
+                        'y': 0.519,
+                        'width': 0.233,
+                        'height': 0.109,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'initX': 0.75,
+                        'initY': 0.7,
+                        'initRotation': 0,
+                        'initFlipping': 1
+                    },
+                    {
+                        'img': 'traffic/cabin.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.744,
+                        'y': 0.346,
+                        'width': 0.207,
+                        'height': 0.178,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'initX': 0.05,
+                        'initY': 0.7,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'traffic/container.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.020,
+                        'y': 0.354,
+                        'width': 0.676,
+                        'height': 0.271,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'initX': 0.0,
+                        'initY': 0.0,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'traffic/back_road.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.082,
+                        'y': 0.587,
+                        'width': 0.198,
+                        'height': 0.092,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'initX': 0.7,
+                        'initY': 0.1,
+                        'initRotation': 270,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'traffic/front_road.svg',
+                        'flippable': 1,
+                        'flipping': 0,
+                        'x': 0.565,
+                        'y': 0.557,
+                        'width': 0.403,
+                        'height': 0.121,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'initX': 0.3,
+                        'initY': 0.7,
+                        'initRotation': 90,
+                        'initFlipping': 1
+                    }
+                ]
+            }
         ]
 
-// Give specific piece rules
-// For each piece we provide:
-// - the modulo rotation. What angle is needed to turn to see the item in the same position
-// - the flipping support (true / false)
-var pieceRules = {
-    'p0': [360, false],
-    'p1': [360, false],
-    'p2': [90,  false],
-    'p3': [180, true],
-    'p4': [360, false]
-}
 
-var tan // The current user tangran positions
 var currentLevel = 0
 var numberOfLevel = dataset.length
 var items
-
-// We keep a globalZ across all items. It is increased on each
-// item selection to put it on top
-var globalZ = 0
-
 
 function start(items_) {
     items = items_
@@ -106,11 +215,7 @@ function stop() {
 }
 
 function initLevel() {
-    globalZ = 0
     items.bar.level = currentLevel + 1
-    items.modelListModel = dataset[items.bar.level - 1]
-    items.userListModel = []
-    items.userListModel = defaultTan.slice();
 }
 
 function nextLevel() {
@@ -148,53 +253,51 @@ function getDistance(ix, iy, jx, jy) {
 function dumpTans(tans) {
     console.log("== tans ==")
     for(var i = 0; i < tans.length; i++) {
-        console.log(tans[i][0], tans[i][1], tans[i][2], tans[i][3], tans[i][4])
+        console.log(tans[i].img, tans[i].x, tans[i].y, tans[i].rotation, tans[i].flipping)
     }
 }
 
 /* Returns the [x, y] coordinate of the closest point */
 function getClosest(point) {
-    console.log('getClosest', point[0], point[1])
-    var nbpiece = dataset[items.bar.level - 1].length
+    var nbpiece = items.currentTans.pieces.length
     var closestItem
     var closestDist = 1
     for(var i = 0; i < nbpiece; i++) {
-        var p1 = dataset[items.bar.level - 1][i]
-        var dist = getDistance(p1[2], p1[3], point[0], point[1])
+        var p1 = items.currentTans.pieces[i]
+        var dist = getDistance(p1.x, p1.y, point[0], point[1])
         if(dist < closestDist) {
             closestDist = dist
             closestItem = p1
         }
     }
 
-    console.log('  closestDist', closestDist, closestItem[2], closestItem[3])
     if(closestDist < 0.1)
-        return [closestItem[2], closestItem[3]]
+        return [closestItem.x, closestItem.y]
     return
 }
 
 function check() {
-    var nbpiece = dataset[items.bar.level - 1].length
+    var nbpiece = items.currentTans.pieces.length
     var userTans = items.userList.asTans()
-    dumpTans(userTans)
+    //dumpTans(userTans)
     console.log('== check ==')
     for(var i = 0; i < nbpiece; i++) {
-        var p1 = dataset[items.bar.level - 1][i]
+        var p1 = items.currentTans.pieces[i]
         var ok = false
         for(var j = 0; j < nbpiece; j++) {
             var p2 = userTans[j]
             // Check type distance and rotation are close enough
-            if(p1[0] === p2[0] && // Type
-                    p1[1] == p2[1] && // Flipping
-                    getDistance(p1[2], p1[3], p2[2], p2[3]) < 0.01 && // X, Y
-                    p1[4] === p2[4] /* Rotation */ ) {
+            if(p1.img === p2.img &&
+                    p1.flipping == p2.flipping &&
+                    getDistance(p1.x, p1.y, p2.x, p2.y) < 0.01 &&
+                    p1.rotation === p2.rotation ) {
                 ok = true
             }
-            if(p1[0] === p2[0])
+            if(p1.img === p2.img)
                 if(ok)
-                    console.log("piece ", p1[0], "OK")
+                    console.log("piece ", p1.img, "OK")
                 else
-                    console.log("piece ", p1[0], getDistance(p1[2], p1[3], p2[2], p2[3]), 'rot exp/got', p1[4], '/', p2[4], "NOK")
+                    console.log("piece ", p1.img, getDistance(p1.x, p1.y, p2.x, p2.y), 'rot exp/got', p1.rotation, '/', p2.rotation, "NOK")
         }
         if(!ok)
             return false

@@ -52,7 +52,7 @@ ActivityBase {
 
         Image {
             id: bg
-            source: Activity.url + "background.svg"
+            source: Activity.url + "traffic/background.svg"
             sourceSize.width: 2000 * ApplicationInfo.ratio
             sourceSize.height: 2000 * ApplicationInfo.ratio
             width: 2000 * background.playRatio
@@ -86,12 +86,23 @@ ActivityBase {
             property alias userList: userList
             property alias userListModel: userList.model
             property Item selected
+            property var currentTans: Activity.dataset[bar.level - 1]
         }
 
         onStart: {
             Activity.start(items)
         }
         onStop: { Activity.stop() }
+
+        Image {
+            id: bgData
+            source: Activity.url + items.currentTans.bg
+            sourceSize.width: 1000 * background.playRatio
+            sourceSize.height: 1000 * background.playRatio
+            width: 1000 * background.playRatio
+            height: width
+            anchors.centerIn: parent
+        }
 
         MouseArea {
             id: rotateArea
@@ -112,6 +123,7 @@ ActivityBase {
                 prevRotation = 0
                 // Force a modulo 45 rotation
                 items.selected.rotation = Math.floor((items.selected.rotation + 45 / 2) / 45) * 45
+                background.checkWin()
             }
         }
 
@@ -125,25 +137,25 @@ ActivityBase {
 
         Repeater {
             id: modelList
+            model: items.currentTans.pieces
             Image {
                 id: tansModel
-                x: background.playX + background.playWidth * xRatio
-                y: background.playY + background.playHeight * yRatio
-                mirror: modelData[1]
-                rotation: modelData[4]
-                source: Activity.url + modelData[0] + '.svg'
-                sourceSize.width: 100 * background.playRatio
-                z: 0
-
-                property real xRatio: modelData[2]
-                property real yRatio: modelData[3]
+                x: background.playX + background.playWidth * modelData.x
+                y: background.playY + background.playHeight * modelData.y
+                mirror: modelData.flipping
+                rotation: modelData.rotation
+                source: Activity.url + modelData.img
+                sourceSize.width: modelData.width * background.playWidth
+                sourceSize.height: modelData.height * background.playWidth
+                z: index
+                opacity: 0.1
 
                 Colorize {
                     anchors.fill: parent
                     source: parent
-                    hue: 0.5
-                    lightness: -0.2
-                    saturation: 0
+                    hue: 0
+                    lightness: -0.75
+                    saturation: 1
                 }
             }
         }
@@ -152,23 +164,25 @@ ActivityBase {
         GCText {
             id: text
             x: 100
-            y: bar.y - 50
+            y: 20
         }
 
         Repeater {
             id: userList
+            model: items.currentTans.pieces
             Image {
                 id: tans
                 x: background.playX + background.playWidth * xRatio
                 y: background.playY + background.playHeight * yRatio
-                mirror: modelData[1]
-                rotation: modelData[4]
-                source: Activity.url + modelData[0] + '.svg'
-                sourceSize.width: 100 * background.playRatio
-                z: 0
+                mirror: modelData.initFlipping
+                rotation: modelData.initRotation
+                source: Activity.url + modelData.img
+                sourceSize.width: modelData.width * background.playWidth
+                sourceSize.height: modelData.height * background.playWidth
+                z: 100 + index
 
-                property real xRatio: modelData[2]
-                property real yRatio: modelData[3]
+                property real xRatio: modelData.initX
+                property real yRatio: modelData.initY
                 property bool selected: false
                 property int animDuration: 1000
 
@@ -177,6 +191,10 @@ ActivityBase {
                 function restoreBindings() {
                     x = Qt.binding(function() { return background.playX + background.playWidth * xRatio })
                     y = Qt.binding(function() { return background.playY + background.playHeight * yRatio })
+                }
+
+                function restoreZindex() {
+                    z = 100 + index
                 }
 
                 function positionToTans() {
@@ -188,9 +206,8 @@ ActivityBase {
 
                 // Manage to return a base rotation as it was provided in the model
                 function rotationToTans() {
-                    var mod = Activity.pieceRules[modelData[0]][0]
-                    var flipable = Activity.pieceRules[modelData[0]][1]
-                    if(flipable || !mirror)
+                    var mod = modelData.moduloRotation
+                    if(modelData.flipable || !mirror)
                         return rotation >= 0 ? rotation % mod : (360 + rotation) % mod
                     else
                         // It flipping but model is not flipping sensitive we have to rotate accordingly
@@ -199,10 +216,13 @@ ActivityBase {
 
                 // Return all the positions as we got it from a tans definition
                 function asTans() {
-                    return [modelData[0],
-                            Activity.pieceRules[modelData[0]][1] ? mirror : 0,
-                            positionToTans()[0], positionToTans()[1],
-                            rotationToTans()]
+                    return {
+                        'img': modelData.img,
+                        'flipping': mirror,
+                         'x': positionToTans()[0],
+                         'y': positionToTans()[1],
+                         'rotation': rotationToTans()
+                    }
                 }
 
                 Drag.active: dragArea.drag.active
@@ -214,38 +234,38 @@ ActivityBase {
                     anchors.fill: parent
                     drag.target: parent
                     onPressed: {
-                        parent.z = ++Activity.globalZ
+                        parent.z = 200
+                        if(parent.selected) {
+                            parent.selected = false
+                            background.checkWin()
+                            return
+                        }
                         if(items.selected)
                             items.selected.selected = false
                         items.selected = tans
                         parent.selected = true
-                        var win = Activity.check()
-                        if(win)
-                            text.text = "win"
-                        else
-                            text.text = "loose"
+                        background.checkWin()
                     }
-                    onDoubleClicked: parent.mirror = !parent.mirror
+                    onDoubleClicked: {
+                        if(modelData.flippable)
+                            parent.mirror = !parent.mirror
+                        background.checkWin()
+                    }
                     onReleased: {
                         tans.animDuration = 30
                         parent.Drag.drop()
                         var posTans = positionToTans()
                         var closest = Activity.getClosest(posTans)
                         if(closest) {
-                            console.log('closest found', closest[0], closest[1])
                             tans.xRatio = closest[0]
                             tans.yRatio = closest[1]
-                            tans.restoreBindings()
                         } else {
                             tans.xRatio = posTans[0]
                             tans.yRatio = posTans[1]
                         }
-
-                        var win = Activity.check()
-                        if(win)
-                            text.text = "win"
-                        else
-                            text.text = "loose"
+                        tans.restoreBindings()
+                        tans.restoreZindex()
+                        background.checkWin()
                     }
                 }
 
@@ -282,6 +302,13 @@ ActivityBase {
             }
         }
 
+        function checkWin() {
+            var win = Activity.check()
+            if(win)
+                text.text = "win"
+            else
+                text.text = "loose"
+        }
 
         DialogHelp {
             id: dialogHelp
