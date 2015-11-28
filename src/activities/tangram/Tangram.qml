@@ -32,31 +32,47 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Image {
+    pageComponent: Item {
         id: background
         anchors.fill: parent
+
+        property bool horizontalLayout: background.width > background.height
+        property int playX: (activity.width - playWidth) / 2
+        property int playY: (activity.height - playHeight) / 2
+        property int playWidth: horizontalLayout ? activity.height : activity.width
+        property int playHeight: playWidth
+        property double playRatio: playWidth / 1000
+
         signal start
         signal stop
-        fillMode: Image.PreserveAspectCrop
-        source: Activity.url + "background.svg"
-        sourceSize.width: parent.width
 
+        /* In order to accept any screen ratio the play area is always a 1000x1000
+         * square and is centered in a big background image that is 2000x2000
+         */
+
+        Image {
+            id: bg
+            source: Activity.url + "background.svg"
+            sourceSize.width: 2000 * ApplicationInfo.ratio
+            sourceSize.height: 2000 * ApplicationInfo.ratio
+            width: 2000 * background.playRatio
+            height: width
+            anchors.centerIn: parent
+        }
+
+        Rectangle {
+            width: background.playWidth
+            height: background.playHeight
+            anchors.centerIn: parent
+            border.width: 2
+            border.color: "black"
+            color: "transparent"
+            visible: true /* debug to see the play area */
+        }
 
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
-        }
-
-        onWidthChanged: {
-            for(var i=0; i < modelList.model; i++) {
-                modelList.itemAt(i).positionMe()
-            }
-        }
-
-        onHeightChanged: {
-            for(var i=0; i < modelList.model; i++) {
-                modelList.itemAt(i).positionMe()
-            }
         }
 
         // Add here the QML items you need to access in javascript
@@ -70,7 +86,6 @@ ActivityBase {
             property alias userList: userList
             property alias userListModel: userList.model
             property Item selected
-            property double tansRatio: 2
         }
 
         onStart: {
@@ -112,27 +127,16 @@ ActivityBase {
             id: modelList
             Image {
                 id: tansModel
-                // Let the items comes from random side of the screen
-                x: Math.random() > 0.5 ? - width : background.width
-                y: Math.random() > 0.5 ? - height : background.height
+                x: background.playX + background.playWidth * xRatio
+                y: background.playY + background.playHeight * yRatio
                 mirror: modelData[1]
                 rotation: modelData[4]
                 source: Activity.url + modelData[0] + '.svg'
-                sourceSize.width: 100 * items.tansRatio
+                sourceSize.width: 100 * background.playRatio
                 z: 0
 
                 property real xRatio: modelData[2]
                 property real yRatio: modelData[3]
-                property bool selected: false
-
-                Component.onCompleted: {
-                    positionMe()
-                }
-
-                function positionMe() {
-                    x = background.width * xRatio / 7
-                    y = background.height * yRatio / 8
-                }
 
                 Colorize {
                     anchors.fill: parent
@@ -140,18 +144,6 @@ ActivityBase {
                     hue: 0.5
                     lightness: -0.2
                     saturation: 0
-                }
-                Behavior on x {
-                    PropertyAnimation  {
-                        duration: 2000
-                        easing.type: Easing.InOutQuad
-                    }
-                }
-                Behavior on y {
-                    PropertyAnimation  {
-                        duration: 2000
-                        easing.type: Easing.InOutQuad
-                    }
                 }
             }
         }
@@ -167,33 +159,30 @@ ActivityBase {
             id: userList
             Image {
                 id: tans
-                // Let the items comes from random side of the screen
-                x: Math.random() > 0.5 ? - width : background.width
-                y: Math.random() > 0.5 ? - height : background.height
+                x: background.playX + background.playWidth * xRatio
+                y: background.playY + background.playHeight * yRatio
                 mirror: modelData[1]
                 rotation: modelData[4]
                 source: Activity.url + modelData[0] + '.svg'
-                sourceSize.width: 100 * items.tansRatio
+                sourceSize.width: 100 * background.playRatio
                 z: 0
 
                 property real xRatio: modelData[2]
                 property real yRatio: modelData[3]
                 property bool selected: false
-                property int animDuration: 3000
+                property int animDuration: 1000
 
-                Component.onCompleted: {
-                    positionMe()
-                }
-
-                function positionMe() {
-                    x = background.width * xRatio / 7
-                    y = background.height * yRatio / 8
+                // After a drag the [x, y] positions are adressed directly breaking our
+                // binding. Call me to reset the binding.
+                function restoreBindings() {
+                    x = Qt.binding(function() { return background.playX + background.playWidth * xRatio })
+                    y = Qt.binding(function() { return background.playY + background.playHeight * yRatio })
                 }
 
                 function positionToTans() {
                     return [
-                                x / (background.width / 7),
-                                y / (background.height / 8)
+                                (x - background.playX) / background.playWidth,
+                                (y - background.playY) / background.playHeight
                             ]
                 }
 
@@ -240,13 +229,23 @@ ActivityBase {
                     onReleased: {
                         tans.animDuration = 30
                         parent.Drag.drop()
-                        var closest = Activity.getClosest(positionToTans())
+                        var posTans = positionToTans()
+                        var closest = Activity.getClosest(posTans)
                         if(closest) {
                             console.log('closest found', closest[0], closest[1])
                             tans.xRatio = closest[0]
                             tans.yRatio = closest[1]
-                            tans.positionMe()
+                            tans.restoreBindings()
+                        } else {
+                            tans.xRatio = posTans[0]
+                            tans.yRatio = posTans[1]
                         }
+
+                        var win = Activity.check()
+                        if(win)
+                            text.text = "win"
+                        else
+                            text.text = "loose"
                     }
                 }
 

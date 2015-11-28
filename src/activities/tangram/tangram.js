@@ -34,13 +34,13 @@ var url = "qrc:/gcompris/src/activities/tangram/resource/"
 */
 var dataset = [
             [
-                ['p2', 0, 1.0, 1.0, 0],
-                ['p4', 0, 2.0, 1.0, 0],
-                ['p1', 0, 3.0, 1.0, 0],
-                ['p3', 0, 4.0, 1.0, 0],
-                ['p4', 0, 1.0, 2.0, 0],
-                ['p0', 0, 2.0, 2.0, 0],
-                ['p0', 0, 3.0, 2.0, 0]
+                ['p2', 0, 0.1, 0.1, 0],
+                ['p4', 0, 0.2, 0.1, 0],
+                ['p1', 0, 0.3, 0.1, 0],
+                ['p3', 0, 0.4, 0.1, 0],
+                ['p4', 0, 0.1, 0.2, 0],
+                ['p0', 0, 0.2, 0.2, 0],
+                ['p0', 0, 0.3, 0.2, 0]
             ],
             [
                 ['p3', 1, 1.555033, 3.667909, 45],
@@ -65,13 +65,13 @@ var dataset = [
 // This is the list of tans provided to the use with their initial positions
 // this is the same formatting as dataset.
 var defaultTan = [
-            ['p2', 0, 1.0, 1.0, 0],
-            ['p4', 0, 2.0, 1.0, 0],
-            ['p1', 0, 3.0, 1.0, 0],
-            ['p3', 0, 4.0, 1.0, 0],
-            ['p4', 0, 1.0, 2.0, 0],
-            ['p0', 0, 2.0, 2.0, 0],
-            ['p0', 0, 3.0, 2.0, 0]
+            ['p2', 0, 0.1, 0.1, 0],
+            ['p4', 0, 0.2, 0.1, 0],
+            ['p1', 0, 0.3, 0.1, 0],
+            ['p3', 0, 0.4, 0.1, 0],
+            ['p4', 0, 0.1, 0.2, 0],
+            ['p0', 0, 0.2, 0.2, 0],
+            ['p0', 0, 0.3, 0.2, 0]
         ]
 
 // Give specific piece rules
@@ -152,13 +152,24 @@ function dumpTans(tans) {
     }
 }
 
+/* Returns the [x, y] coordinate of the closest point */
 function getClosest(point) {
+    console.log('getClosest', point[0], point[1])
     var nbpiece = dataset[items.bar.level - 1].length
+    var closestItem
+    var closestDist = 1
     for(var i = 0; i < nbpiece; i++) {
         var p1 = dataset[items.bar.level - 1][i]
-        if(getDistance(p1[2], p1[3], point[0], point[1]) < 0.2)
-            return [p1[2], p1[3]]
+        var dist = getDistance(p1[2], p1[3], point[0], point[1])
+        if(dist < closestDist) {
+            closestDist = dist
+            closestItem = p1
+        }
     }
+
+    console.log('  closestDist', closestDist, closestItem[2], closestItem[3])
+    if(closestDist < 0.1)
+        return [closestItem[2], closestItem[3]]
     return
 }
 
@@ -166,6 +177,7 @@ function check() {
     var nbpiece = dataset[items.bar.level - 1].length
     var userTans = items.userList.asTans()
     dumpTans(userTans)
+    console.log('== check ==')
     for(var i = 0; i < nbpiece; i++) {
         var p1 = dataset[items.bar.level - 1][i]
         var ok = false
@@ -174,7 +186,7 @@ function check() {
             // Check type distance and rotation are close enough
             if(p1[0] === p2[0] && // Type
                     p1[1] == p2[1] && // Flipping
-                    getDistance(p1[2], p1[3], p2[2], p2[3]) < 0.2 && // X, Y
+                    getDistance(p1[2], p1[3], p2[2], p2[3]) < 0.01 && // X, Y
                     p1[4] === p2[4] /* Rotation */ ) {
                 ok = true
             }
