@@ -148,7 +148,7 @@ ActivityBase {
                 sourceSize.width: modelData.width * background.playWidth
                 sourceSize.height: modelData.height * background.playWidth
                 z: index
-                opacity: 0.1
+                opacity: modelData.opacity
 
                 Colorize {
                     anchors.fill: parent
