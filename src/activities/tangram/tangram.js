@@ -38,10 +38,10 @@ var url = "qrc:/gcompris/src/activities/tangram/resource/"
 var dataset = [
             // Level 1
             {
-                'bg': 'traffic/traffic_bg.svg',
+                'bg': 'truck/traffic_bg.svg',
                 'pieces': [
                     {
-                        'img': 'traffic/engine.svg',
+                        'img': 'truck/engine.svg',
                         'flippable': 0,
                         'flipping': 0,
                         'x': 0.744,
@@ -57,7 +57,7 @@ var dataset = [
                         'initFlipping': 0
                     },
                     {
-                        'img': 'traffic/cabin.svg',
+                        'img': 'truck/cabin.svg',
                         'flippable': 0,
                         'flipping': 0,
                         'x': 0.744,
@@ -73,7 +73,7 @@ var dataset = [
                         'initFlipping': 0
                     },
                     {
-                        'img': 'traffic/container.svg',
+                        'img': 'truck/container.svg',
                         'flippable': 0,
                         'flipping': 0,
                         'x': 0.020,
@@ -89,7 +89,7 @@ var dataset = [
                         'initFlipping': 0
                     },
                     {
-                        'img': 'traffic/back_road.svg',
+                        'img': 'truck/back_road.svg',
                         'flippable': 0,
                         'flipping': 0,
                         'x': 0.082,
@@ -105,7 +105,7 @@ var dataset = [
                         'initFlipping': 0
                     },
                     {
-                        'img': 'traffic/front_road.svg',
+                        'img': 'truck/front_road.svg',
                         'flippable': 0,
                         'flipping': 0,
                         'x': 0.565,
@@ -124,10 +124,10 @@ var dataset = [
             },
             // Level 2
             {
-                'bg': 'traffic/traffic_bg.svg',
+                'bg': 'truck/traffic_bg.svg',
                 'pieces': [
                     {
-                        'img': 'traffic/engine.svg',
+                        'img': 'truck/engine.svg',
                         'flippable': 1,
                         'flipping': 0,
                         'x': 0.744,
@@ -143,7 +143,7 @@ var dataset = [
                         'initFlipping': 1
                     },
                     {
-                        'img': 'traffic/cabin.svg',
+                        'img': 'truck/cabin.svg',
                         'flippable': 0,
                         'flipping': 0,
                         'x': 0.744,
@@ -159,7 +159,7 @@ var dataset = [
                         'initFlipping': 0
                     },
                     {
-                        'img': 'traffic/container.svg',
+                        'img': 'truck/container.svg',
                         'flippable': 0,
                         'flipping': 0,
                         'x': 0.020,
@@ -175,7 +175,7 @@ var dataset = [
                         'initFlipping': 0
                     },
                     {
-                        'img': 'traffic/back_road.svg',
+                        'img': 'truck/back_road.svg',
                         'flippable': 0,
                         'flipping': 0,
                         'x': 0.082,
@@ -191,7 +191,7 @@ var dataset = [
                         'initFlipping': 0
                     },
                     {
-                        'img': 'traffic/front_road.svg',
+                        'img': 'truck/front_road.svg',
                         'flippable': 1,
                         'flipping': 0,
                         'x': 0.565,
@@ -210,10 +210,10 @@ var dataset = [
             },
             // Level 3
             {
-                'bg': 'traffic/traffic_bg.svg',
+                'bg': 'truck/traffic_bg.svg',
                 'pieces': [
                     {
-                        'img': 'traffic/engine.svg',
+                        'img': 'truck/engine.svg',
                         'flippable': 1,
                         'flipping': 0,
                         'x': 0.744,
@@ -229,7 +229,7 @@ var dataset = [
                         'initFlipping': 1
                     },
                     {
-                        'img': 'traffic/cabin.svg',
+                        'img': 'truck/cabin.svg',
                         'flippable': 0,
                         'flipping': 0,
                         'x': 0.744,
@@ -245,7 +245,7 @@ var dataset = [
                         'initFlipping': 0
                     },
                     {
-                        'img': 'traffic/container.svg',
+                        'img': 'truck/container.svg',
                         'flippable': 1,
                         'flipping': 0,
                         'x': 0.020,
@@ -261,7 +261,7 @@ var dataset = [
                         'initFlipping': 1
                     },
                     {
-                        'img': 'traffic/back_road.svg',
+                        'img': 'truck/back_road.svg',
                         'flippable': 0,
                         'flipping': 0,
                         'x': 0.082,
@@ -277,7 +277,7 @@ var dataset = [
                         'initFlipping': 0
                     },
                     {
-                        'img': 'traffic/front_road.svg',
+                        'img': 'truck/front_road.svg',
                         'flippable': 1,
                         'flipping': 0,
                         'x': 0.565,
