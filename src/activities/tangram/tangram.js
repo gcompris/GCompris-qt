@@ -493,25 +493,25 @@ function getClosest(point) {
 function check() {
     var nbpiece = items.currentTans.pieces.length
     var userTans = items.userList.asTans()
-    //dumpTans(userTans)
-    console.log('== check ==')
+    dumpTans(userTans)
+    //console.log('== check ==')
     for(var i = 0; i < nbpiece; i++) {
         var p1 = items.currentTans.pieces[i]
         var ok = false
+        console.log("testing " + p1.img)
         for(var j = 0; j < nbpiece; j++) {
             var p2 = userTans[j]
             // Check type distance and rotation are close enough
+            console.log("   compare with " + p2.img)
             if(p1.img === p2.img &&
                     p1.flipping == p2.flipping &&
                     getDistance(p1.x, p1.y, p2.x, p2.y) < 0.01 &&
                     p1.rotation === p2.rotation ) {
                 ok = true
+                console.log("piece ", p1.img, "OK")
+                break
             }
-            if(p1.img === p2.img)
-                if(ok)
-                    console.log("piece ", p1.img, "OK")
-                else
-                    console.log("piece ", p1.img, getDistance(p1.x, p1.y, p2.x, p2.y), 'rot exp/got', p1.rotation, '/', p2.rotation, "NOK")
+            console.log("piece ", p1.img, getDistance(p1.x, p1.y, p2.x, p2.y), 'rot exp/got', p1.rotation, '/', p2.rotation, "NOK")
         }
         if(!ok)
             return false

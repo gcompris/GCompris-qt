@@ -187,7 +187,7 @@ ActivityBase {
                 // Manage to return a base rotation as it was provided in the model
                 function rotationToTans() {
                     var mod = modelData.moduloRotation
-                    if(modelData.flipable || !mirror)
+                    if(modelData.flipable || modelData.flipping || !mirror)
                         return rotation >= 0 ? rotation % mod : (360 + rotation) % mod
                     else
                         // It flipping but model is not flipping sensitive we have to rotate accordingly
