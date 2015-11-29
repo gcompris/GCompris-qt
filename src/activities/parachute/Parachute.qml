@@ -143,9 +143,6 @@ ActivityBase {
                             Activity.Oneclick = 1;
                         }
                     }
-                    onDoubleClicked: {
-
-                    }
 
                 }
             }
@@ -169,7 +166,6 @@ ActivityBase {
                     if((parachutOpen.x >= boatmotion.x) && (parachutOpen.x <= (boatmotion.x+boatmotion.width))) {
                         bonus.good("smiley")
                         Activity.winlose = 1
-
                     }
                     if((parachutOpen.y >= background.height/1.2)&&(Activity.winlose === 0)) {
                         if((parachutOpen.x <= boatmotion.x) || (parachutOpen.x >= (boatmotion.x+boatmotion.width))) {
@@ -180,10 +176,6 @@ ActivityBase {
                     }
 
                 }
-
-
-
-
             }
             Image{
                 id:parachuteImage
@@ -342,7 +334,12 @@ ActivityBase {
             sourceSize.width: 75 * ApplicationInfo.ratio
             visible: false
             anchors.right: background.right
-            onClicked: { Activity.nextLevel()  }
+            onClicked: {
+
+                     Activity.nextLevel()
+
+
+            }
         }
 
         Bonus {
@@ -350,6 +347,7 @@ ActivityBase {
             interval: 2000
             onLoose: ok.visible = true
             onWin:ok.visible = true
+
         }
 
 
