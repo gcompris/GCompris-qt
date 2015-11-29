@@ -293,6 +293,124 @@ var dataset = [
                         'initFlipping': 0
                     }
                 ]
+            },
+                        // Level 1
+            {
+                'bg': 'car1/car.svg',
+                'pieces': [
+                    {
+                        'img': 'car1/windshield.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.211,
+                        'y': 0.196,
+                        'width': 0.563,
+                        'height': 0.227,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'opacity': 0.1,
+                        'initX': 0.02,
+                        'initY': 0.02,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'car1/tire_right.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.163,
+                        'y': 0.647,
+                        'width': 0.126,
+                        'height': 0.147,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'opacity': 0.1,
+                        'initX': 0.8,
+                        'initY': 0.05,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'car1/tire_right.svg',
+                        'flippable': 0,
+                        'flipping': 1,
+                        'x': 0.719,
+                        'y': 0.647,
+                        'width': 0.126,
+                        'height': 0.147,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'opacity': 0.1,
+                        'initX': 0.6,
+                        'initY': 0.05,
+                        'initRotation': 0,
+                        'initFlipping': 1
+                    },
+                    {
+                        'img': 'car1/bumper.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.147,
+                        'y': 0.564,
+                        'width': 0.710,
+                        'height': 0.184,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'opacity': 0.1,
+                        'initX': 0.05,
+                        'initY': 0.8,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'car1/grille.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.323,
+                        'y': 0.575,
+                        'width': 0.365,
+                        'height': 0.51,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'opacity': 0.1,
+                        'initX': 0.2,
+                        'initY': 0.8,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'car1/headlights.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.715,
+                        'y': 0.444,
+                        'width': 0.134,
+                        'height': 0.125,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'opacity': 0.1,
+                        'initX': 0.8,
+                        'initY': 0.8,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'car1/headlights.svg',
+                        'flippable': 0,
+                        'flipping': 1,
+                        'x': 0.155,
+                        'y': 0.444,
+                        'width': 0.134,
+                        'height': 0.125,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'opacity': 0.1,
+                        'initX': 0.8,
+                        'initY': 0.25,
+                        'initRotation': 0,
+                        'initFlipping': 1
+                    }
+                ]
             }
         ]
 
