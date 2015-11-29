@@ -85,21 +85,8 @@ ActivityBase {
             property alias modelListModel: modelList.model
             property alias userList: userList
             property alias userListModel: userList.model
-            property Item selected
+            property Item selectedITem
             property var currentTans: Activity.dataset[bar.level - 1]
-
-            onSelectedChanged: {
-                if(selected) {
-                    if(selected.flippable)
-                        flip.display()
-                    else
-                        flip.visible = false
-                    rotateButton.display()
-                } else {
-                    flip.visible = false
-                    rotateButton.visible = false
-                }
-            }
         }
 
         onStart: {
@@ -159,43 +146,6 @@ ActivityBase {
             y: 20
         }
 
-        Image {
-            id: rotateButton
-            source: "qrc:/gcompris/src/core/resource/bar_reload.svg"
-            visible: false
-            sourceSize.width: 40 * ApplicationInfo.ratio
-            z: 300
-
-            function display() {
-                visible = Qt.binding(function() { return items.selected.selection })
-                x = Qt.binding(function() { return items.selected.x - width / 2 })
-                y = Qt.binding(function() { return items.selected.y + items.selected.height / 2 - height / 2 })
-            }
-
-            RotateMouseArea {
-                anchors.fill: parent.parent
-            }
-        }
-
-        Image {
-            id: flip
-            source: "qrc:/gcompris/src/activities/tangram/resource/tangram/flip.svg"
-            visible: false
-            sourceSize.width: 40 * ApplicationInfo.ratio
-            z: 300
-
-            function display() {
-                visible = Qt.binding(function() { return items.selected.selection })
-                x = Qt.binding(function() { return items.selected.x + items.selected.width / 2 - width / 2 })
-                y = Qt.binding(function() { return items.selected.y + items.selected.height - height / 2 })
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: items.selected.flip()
-            }
-        }
-
         Repeater {
             id: userList
             model: items.currentTans.pieces
@@ -213,8 +163,7 @@ ActivityBase {
                 property real xRatio: modelData.initX
                 property real yRatio: modelData.initY
                 property bool selected: false
-                property int animDuration: 1000
-                property bool selection: false
+                property int animDuration: 48
                 property bool flippable: modelData.flippable
 
                 // After a drag the [x, y] positions are adressed directly breaking our
@@ -256,7 +205,7 @@ ActivityBase {
                     }
                 }
 
-                function flip() {
+                function flipMe() {
                     if(flippable)
                         mirror = !mirror
                     background.checkWin()
@@ -272,22 +221,16 @@ ActivityBase {
                     drag.target: parent
                     onPressed: {
                         parent.z = 200
-                        if(parent.selection) {
-                            parent.selection = false
-                            background.checkWin()
-                            return
-                        }
-                        if(items.selected)
-                            items.selected.selection = false
-                        items.selected = tans
-                        parent.selection = true
+                        if(items.selectedITem && items.selectedITem != tans)
+                            items.selectedITem.selected = false
+                        items.selectedITem = tans
+                        parent.selected = true
                         background.checkWin()
                     }
                     onDoubleClicked: {
-                        flip()
+                        flipMe()
                     }
                     onReleased: {
-                        tans.animDuration = 30
                         parent.Drag.drop()
                         var posTans = positionToTans()
                         var closest = Activity.getClosest(posTans)
@@ -311,8 +254,9 @@ ActivityBase {
                     hue: 0.6
                     lightness: -0.2
                     saturation: 0.5
-                    opacity: parent.selection ? 1 : 0
+                    opacity: parent.selected ? 1 : 0
                 }
+
                 Behavior on x {
                     PropertyAnimation  {
                         duration: tans.animDuration
@@ -325,6 +269,36 @@ ActivityBase {
                         easing.type: Easing.InOutQuad
                     }
                 }
+
+                Image {
+                    id: rotateButton
+                    source: "qrc:/gcompris/src/core/resource/bar_reload.svg"
+                    x: - width
+                    y: parent.height / 2 - height / 2
+                    visible: parent.selected
+                    sourceSize.width: 40 * ApplicationInfo.ratio
+                    z: parent.z + 1
+
+                    RotateMouseArea {
+                        anchors.fill: undefined
+                    }
+                }
+
+                Image {
+                    id: flip
+                    source: "qrc:/gcompris/src/activities/tangram/resource/tangram/flip.svg"
+                    x: parent.width / 2 - width / 2
+                    y: parent.height - height / 2
+                    visible: parent.selected && parent.flippable
+                    sourceSize.width: 40 * ApplicationInfo.ratio
+                    z: parent.z + 1
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: tans.flipMe()
+                    }
+                }
+
             }
 
             // Return the tans model of all the user tans
@@ -337,12 +311,22 @@ ActivityBase {
             }
         }
 
+        // We use a timere here because we have to check only once the potential
+        // animation are over
+        Timer {
+            id: checkWinTimer
+            interval: 200
+            onTriggered: {
+                var win = Activity.check()
+                if(win)
+                    text.text = "win"
+                else
+                    text.text = "loose"
+            }
+        }
+
         function checkWin() {
-            var win = Activity.check()
-            if(win)
-                text.text = "win"
-            else
-                text.text = "loose"
+            checkWinTimer.start()
         }
 
         DialogHelp {

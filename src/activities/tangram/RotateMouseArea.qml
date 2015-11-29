@@ -29,22 +29,27 @@ import "tangram.js" as Activity
 MouseArea {
     id: rotateArea
     anchors.fill: parent
-    enabled: items.selected
+    enabled: items.selectedITem && items.selectedITem.selected
     property double prevRotation: 0
+    onPressed: {
+        if(items.selectedITem && items.selectedITem.selected) {
+            items.selectedITem.selected = false
+        }
+    }
     onPositionChanged: {
         // Calc the angle touch / object center
         var rotation = Activity.getAngleOfLineBetweenTwoPoints(
-                    items.selected.x + items.selected.width / 2, items.selected.y + items.selected.height / 2,
+                    items.selectedITem.x + items.selectedITem.width / 2, items.selectedITem.y + items.selectedITem.height / 2,
                     mouseX, mouseY) * (180 / Math.PI)
         if(prevRotation) {
-            items.selected.rotation += rotation - prevRotation
+            items.selectedITem.rotation += rotation - prevRotation
         }
         prevRotation = rotation
     }
     onReleased: {
         prevRotation = 0
         // Force a modulo 45 rotation
-        items.selected.rotation = Math.floor((items.selected.rotation + 45 / 2) / 45) * 45
+        items.selectedITem.rotation = Math.floor((items.selectedITem.rotation + 45 / 2) / 45) * 45
         background.checkWin()
     }
 }
