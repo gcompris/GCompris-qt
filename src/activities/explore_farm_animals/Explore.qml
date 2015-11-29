@@ -171,7 +171,6 @@ ActivityBase {
             anchors.fill: parent
             anchors.margins: 10 * ApplicationInfo.ratio
             layoutDirection: leftCol.width === 0 ? Qt.RightToLeft : Qt.LeftToRight
-
             Column {
                 id: leftCol
                 spacing: 10 * ApplicationInfo.ratio
@@ -193,7 +192,7 @@ ActivityBase {
                         color: "black"
                         width: parent.width
                         wrapMode: Text.Wrap
-                        text: items.currentQuestion.text2
+                        text: items.currentQuestion ? items.currentQuestion.text2 : ""
                     }
                 }
 
