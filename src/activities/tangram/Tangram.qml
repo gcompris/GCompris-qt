@@ -52,7 +52,7 @@ ActivityBase {
 
         Image {
             id: bg
-            source: Activity.url + "traffic/background.svg"
+            source: Activity.url + "tangram/background.svg"
             sourceSize.width: 2000 * ApplicationInfo.ratio
             sourceSize.height: 2000 * ApplicationInfo.ratio
             width: 2000 * background.playRatio
@@ -87,6 +87,19 @@ ActivityBase {
             property alias userListModel: userList.model
             property Item selected
             property var currentTans: Activity.dataset[bar.level - 1]
+
+            onSelectedChanged: {
+                if(selected) {
+                    if(selected.flippable)
+                        flip.display()
+                    else
+                        flip.visible = false
+                    rotateButton.display()
+                } else {
+                    flip.visible = false
+                    rotateButton.visible = false
+                }
+            }
         }
 
         onStart: {
@@ -104,28 +117,7 @@ ActivityBase {
             anchors.centerIn: parent
         }
 
-        MouseArea {
-            id: rotateArea
-            anchors.fill: parent
-            enabled: items.selected
-            property double prevRotation: 0
-            onPositionChanged: {
-                // Calc the angle touch / object center
-                var rotation = Activity.getAngleOfLineBetweenTwoPoints(
-                            items.selected.x + items.selected.width / 2, items.selected.y + items.selected.height / 2,
-                            mouseX, mouseY) * (180 / Math.PI)
-                if(prevRotation) {
-                    items.selected.rotation += rotation - prevRotation
-                }
-                prevRotation = rotation
-            }
-            onReleased: {
-                prevRotation = 0
-                // Force a modulo 45 rotation
-                items.selected.rotation = Math.floor((items.selected.rotation + 45 / 2) / 45) * 45
-                background.checkWin()
-            }
-        }
+        RotateMouseArea {}
 
         DropArea {
             id: dropableArea
@@ -167,6 +159,43 @@ ActivityBase {
             y: 20
         }
 
+        Image {
+            id: rotateButton
+            source: "qrc:/gcompris/src/core/resource/bar_reload.svg"
+            visible: false
+            sourceSize.width: 40 * ApplicationInfo.ratio
+            z: 300
+
+            function display() {
+                visible = Qt.binding(function() { return items.selected.selection })
+                x = Qt.binding(function() { return items.selected.x - width / 2 })
+                y = Qt.binding(function() { return items.selected.y + items.selected.height / 2 - height / 2 })
+            }
+
+            RotateMouseArea {
+                anchors.fill: parent.parent
+            }
+        }
+
+        Image {
+            id: flip
+            source: "qrc:/gcompris/src/activities/tangram/resource/tangram/flip.svg"
+            visible: false
+            sourceSize.width: 40 * ApplicationInfo.ratio
+            z: 300
+
+            function display() {
+                visible = Qt.binding(function() { return items.selected.selection })
+                x = Qt.binding(function() { return items.selected.x + items.selected.width / 2 - width / 2 })
+                y = Qt.binding(function() { return items.selected.y + items.selected.height - height / 2 })
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: items.selected.flip()
+            }
+        }
+
         Repeater {
             id: userList
             model: items.currentTans.pieces
@@ -185,6 +214,8 @@ ActivityBase {
                 property real yRatio: modelData.initY
                 property bool selected: false
                 property int animDuration: 1000
+                property bool selection: false
+                property bool flippable: modelData.flippable
 
                 // After a drag the [x, y] positions are adressed directly breaking our
                 // binding. Call me to reset the binding.
@@ -225,6 +256,12 @@ ActivityBase {
                     }
                 }
 
+                function flip() {
+                    if(flippable)
+                        mirror = !mirror
+                    background.checkWin()
+                }
+
                 Drag.active: dragArea.drag.active
                 Drag.hotSpot.x : width / 2
                 Drag.hotSpot.y : height / 2
@@ -235,21 +272,19 @@ ActivityBase {
                     drag.target: parent
                     onPressed: {
                         parent.z = 200
-                        if(parent.selected) {
-                            parent.selected = false
+                        if(parent.selection) {
+                            parent.selection = false
                             background.checkWin()
                             return
                         }
                         if(items.selected)
-                            items.selected.selected = false
+                            items.selected.selection = false
                         items.selected = tans
-                        parent.selected = true
+                        parent.selection = true
                         background.checkWin()
                     }
                     onDoubleClicked: {
-                        if(modelData.flippable)
-                            parent.mirror = !parent.mirror
-                        background.checkWin()
+                        flip()
                     }
                     onReleased: {
                         tans.animDuration = 30
@@ -276,7 +311,7 @@ ActivityBase {
                     hue: 0.6
                     lightness: -0.2
                     saturation: 0.5
-                    opacity: parent.selected ? 1 : 0
+                    opacity: parent.selection ? 1 : 0
                 }
                 Behavior on x {
                     PropertyAnimation  {
