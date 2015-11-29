@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:cc="http://web.resource.org/cc/"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    id="svg1"
+    sodipodi:docname="music_cross.svg"
+    viewBox="0 0 60 60"
+    sodipodi:version="0.32"
+    _SVGFile__filename="oldscale/actions/music_cross.svg"
+    version="1.0"
+    y="0"
+    x="0"
+    inkscape:version="0.40"
+    sodipodi:docbase="/home/danny/work/flat/SVG/mono/scalable/actions"
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-y="0"
+      pagecolor="#ffffff"
+      inkscape:window-height="699"
+      inkscape:zoom="8.6748326"
+      inkscape:window-x="0"
+      borderopacity="1.0"
+      inkscape:current-layer="svg1"
+      inkscape:cx="33.903819"
+      inkscape:cy="21.795312"
+      inkscape:window-width="1024"
+      inkscape:pageopacity="0.0"
+  />
+  <path
+      id="path1092"
+      sodipodi:nodetypes="cccc"
+      style="stroke-linejoin:round;stroke:#ffffff;stroke-linecap:round;stroke-width:8.75;fill:none"
+      d="m20.588 5.0004v50m18.824-50v50"
+  />
+  <path
+      id="path1093"
+      sodipodi:nodetypes="cccc"
+      style="stroke-linejoin:round;stroke:#ffffff;stroke-linecap:round;stroke-width:10;fill:none"
+      d="m13.182 26.124l33.636-9.013m-33.636 25.778l33.636-8.979"
+  />
+  <g
+      id="g1088"
+      transform="matrix(1.051 0 0 1.051 -.96118 -1.6077)"
+    >
+    <path
+        id="path836"
+        sodipodi:nodetypes="cccc"
+        style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:3.2447;fill:none"
+        transform="matrix(1.0996 0 0 1.0996 5.3923 -4.8425)"
+        d="m13.742 10.122v43.261m16.287-43.261v43.261"
+    />
+    <path
+        id="path837"
+        sodipodi:nodetypes="cccc"
+        style="stroke-linejoin:round;stroke:#000000;stroke-linecap:round;stroke-width:4.7572;fill:none"
+        d="m13.457 26.385l32.002-8.575m-32.002 24.526l32.002-8.543"
+    />
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>

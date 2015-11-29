@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns1="http://sozi.baierouge.fr" id="svg2" viewBox="0 0 720 720" version="1.1" inkscape:version="0.91 r13725">
+  <g id="layer1" transform="translate(0 -332.36)">
+    <path id="path270" style="fill:#000000" d="m339.03 493.9c166.28 1.498 323.57 64.413 335.55 203.73 8.98 101.9-125.84 194.73-292.11 194.73-167.78-1.5-323.57-62.91-337.05-202.18-8.987-103.45 127.24-196.28 293.61-196.28zm40.352 364.01c71.903 0 118.34-68.954 110.85-124.33-16.478-109.35-53.928-197.78-152.79-197.78-71.903 0-113.85 70.405-104.86 125.83 16.571 109.4 48.029 196.28 146.8 196.28z"/>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>whole note</dc:title>
+        <dc:date>2011-05-27T21:51:50</dc:date>
+        <dc:description>There didn't seem to be a whole note on openclipart already. Here is a big one!</dc:description>
+        <dc:source>https://openclipart.org/detail/140893/whole-note-by-10binary</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>10binary</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>music</rdf:li>
+            <rdf:li>notation</rdf:li>
+            <rdf:li>note</rdf:li>
+            <rdf:li>whole</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

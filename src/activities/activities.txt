@@ -122,6 +122,7 @@ penalty
 photo_hunter
 planegame
 railroad
+playpiano
 readingh
 readingv
 redraw
