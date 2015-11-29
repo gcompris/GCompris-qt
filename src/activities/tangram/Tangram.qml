@@ -139,13 +139,6 @@ ActivityBase {
             }
         }
 
-
-        GCText {
-            id: text
-            x: 100
-            y: 20
-        }
-
         Repeater {
             id: userList
             model: items.currentTans.pieces
@@ -317,11 +310,8 @@ ActivityBase {
             id: checkWinTimer
             interval: 200
             onTriggered: {
-                var win = Activity.check()
-                if(win)
-                    text.text = "win"
-                else
-                    text.text = "loose"
+                if(Activity.check())
+                    bonus.good('flower')
             }
         }
 
@@ -347,6 +337,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            interval: 1600
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
