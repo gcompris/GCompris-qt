@@ -119,8 +119,8 @@ ActivityBase {
             model: items.currentTans.pieces
             Image {
                 id: tansModel
-                x: background.playX + background.playWidth * modelData.x
-                y: background.playY + background.playHeight * modelData.y
+                x: background.playX + background.playWidth * modelData.x - width / 2
+                y: background.playY + background.playHeight * modelData.y - height / 2
                 mirror: modelData.flipping
                 rotation: modelData.rotation
                 source: Activity.url + modelData.img
@@ -144,8 +144,8 @@ ActivityBase {
             model: items.currentTans.pieces
             Image {
                 id: tans
-                x: background.playX + background.playWidth * xRatio
-                y: background.playY + background.playHeight * yRatio
+                x: background.playX + background.playWidth * xRatio - width / 2
+                y: background.playY + background.playHeight * yRatio - height / 2
                 mirror: modelData.initFlipping
                 rotation: modelData.initRotation
                 source: Activity.url + modelData.img
@@ -162,8 +162,8 @@ ActivityBase {
                 // After a drag the [x, y] positions are adressed directly breaking our
                 // binding. Call me to reset the binding.
                 function restoreBindings() {
-                    x = Qt.binding(function() { return background.playX + background.playWidth * xRatio })
-                    y = Qt.binding(function() { return background.playY + background.playHeight * yRatio })
+                    x = Qt.binding(function() { return background.playX + background.playWidth * xRatio - width / 2})
+                    y = Qt.binding(function() { return background.playY + background.playHeight * yRatio - height / 2 })
                 }
 
                 function restoreZindex() {
@@ -172,8 +172,8 @@ ActivityBase {
 
                 function positionToTans() {
                     return [
-                                (x - background.playX) / background.playWidth,
-                                (y - background.playY) / background.playHeight
+                                (x + width / 2 - background.playX) / background.playWidth,
+                                (y + height / 2 - background.playY) / background.playHeight
                             ]
                 }
 
