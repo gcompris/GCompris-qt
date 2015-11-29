@@ -18,9 +18,9 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "play_piano/PlayPiano.qml"
+  name: "playpiano/Playpiano.qml"
   difficulty: 2
-  icon: "play_piano/play_piano.svg"
+  icon: "playpiano/playpiano.svg"
   author: "Beth Hadley &lt;bethmhadley@gmail.com&gt;"
   demo: true
   title: qsTr("Play Piano!")
