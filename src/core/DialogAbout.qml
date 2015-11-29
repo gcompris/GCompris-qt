@@ -36,7 +36,7 @@ DialogBackground {
                                  "translator-credits" ? "" : qsTr("translator-credits") + "<br/>"
     // Let's try to maitain here the contributor list sorted by number of commits
     // git shortlog -se | sort -nr | cut -c8- | sed 's/ <.*>/,/' | xargs
-    property string developers: "Bruno Coudoin, Johnny Jazeix, Holger Kaelberer, Aruna Sankaranarayanan, Stephane Mankowski, Thibaut ROMAIN, Manuel Tondeur, Bharath M S, Yuri Chornoivan, JB BUTET, Emmanuel Charruau, Arkit Vora, Luigi Toscano, Amit Tomar"
+    property string developers: "Bruno Coudoin, Johnny Jazeix, Holger Kaelberer, Timothée Giet, Rajdeep Kaur, Siddhesh Suthar, Aruna Sankaranarayanan, Stephane Mankowski, Amit Tomar, Thibaut Romain, Yuri Chornoivan, SagarC Agarwal, Manuel Tondeur, Burkhard Lück, Bharath M S, Per Andersson, JB BUTET, Emmanuel Charruau, Arkit Vora, Karl Ove Hufthammer, Pulkit Gupta, Antoni Bella Pérez, Paolo Gibellini, Luigi Toscano, Luciano Montanaro, André Marcelo Alvarenga, Aleix Pol, Yask Srivastava, Sayan Biswas, Mantas Kriaučiūnas, Bharath Brat, Arnold Dumas, Alexander Potashev"
     property string gcVersion: ApplicationInfo.GCVersion
     property string qtVersion: ApplicationInfo.QTVersion
     property string gcVersionTxt: qsTr("GCompris %1").arg(gcVersion)
