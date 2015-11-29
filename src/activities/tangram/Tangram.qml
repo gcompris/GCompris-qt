@@ -309,9 +309,12 @@ ActivityBase {
         Timer {
             id: checkWinTimer
             interval: 200
+            property bool alreadyStarted: false
             onTriggered: {
-                if(Activity.check())
+                if(Activity.check() && !alreadyStarted) {
+                    alreadyStarted = true
                     bonus.good('flower')
+                }
             }
         }
 
@@ -338,7 +341,12 @@ ActivityBase {
         Bonus {
             id: bonus
             interval: 1600
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(nextLevel)
+
+            function nextLevel() {
+                checkWinTimer.alreadyStarted = false
+                Activity.nextLevel()
+            }
         }
     }
 
