@@ -117,24 +117,34 @@ ActivityBase {
         Repeater {
             id: modelList
             model: items.currentTans.pieces
-            Image {
-                id: tansModel
-                x: background.playX + background.playWidth * modelData.x - width / 2
-                y: background.playY + background.playHeight * modelData.y - height / 2
-                mirror: modelData.flipping
-                rotation: modelData.rotation
-                source: Activity.url + modelData.img
-                sourceSize.width: modelData.width * background.playWidth
-                sourceSize.height: modelData.height * background.playWidth
-                z: index
-                opacity: modelData.opacity
-
-                Colorize {
-                    anchors.fill: parent
-                    source: parent
-                    hue: 0
-                    lightness: -0.75
-                    saturation: 1
+            Item {
+                anchors.fill: background
+                Image {
+                    id: tansModel
+                    x: background.playX + background.playWidth * modelData.x - width / 2
+                    y: background.playY + background.playHeight * modelData.y - height / 2
+                    source: Activity.url + modelData.img
+                    sourceSize.width: modelData.width * background.playWidth
+                    sourceSize.height: modelData.height * background.playWidth
+                    z: index
+                    visible: false
+                }
+                Rectangle {
+                    id: mask
+                    anchors.fill: tansModel
+                    color: '#CCC'
+                    visible: false
+                }
+                OpacityMask {
+                    anchors.fill: tansModel
+                    source: mask
+                    maskSource: tansModel
+                    rotation: modelData.rotation
+                    opacity: modelData.opacity
+                    transform: Scale {
+                        origin.x: modelData.width * background.playWidth / 2
+                        xScale: modelData.flipping ? -1 : 1
+                    }
                 }
             }
         }
