@@ -112,6 +112,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
+            interval: 3000
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }

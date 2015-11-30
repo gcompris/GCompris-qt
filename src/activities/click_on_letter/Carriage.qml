@@ -132,16 +132,6 @@ Image {
             duration: 50 }
     }
 
-    Colorize {
-        id: color
-        anchors.fill: parent
-        source: parent
-        hue: 0.0
-        saturation: 1
-        opacity: 0
-    }
-
-
     SequentialAnimation {
         id: failureAnimation
         NumberAnimation {

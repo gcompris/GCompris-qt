@@ -47,16 +47,15 @@ Item {
     Image {
         id: strawberry
         anchors.fill: parent
+        opacity: 0
+        onSourceChanged: opacity = 1
+        Behavior on opacity { PropertyAnimation { duration: 2000; easing.type: Easing.OutQuad } }
     }
-
 
     Image {
       id: border
       anchors.fill: parent
       source: Activity.url + "hexagon_border.svg"
-
-      onOpacityChanged: if(opacity == 0) Activity.strawberryFound()
-
       Behavior on opacity { PropertyAnimation { duration: 500 } }
     }
 
@@ -64,17 +63,16 @@ Item {
       id: canvas
       anchors.fill: parent
       source: Activity.url + "hexagon.svg"
+      visible: false
+    }
 
-      onOpacityChanged: if(opacity == 0) Activity.strawberryFound()
-      opacity: 0.65
-
-      Behavior on opacity { PropertyAnimation { duration: 500 } }
-
-      ColorOverlay {
-          id: colorOverlay
-          anchors.fill: parent
-          source: canvas
-      }
+    ColorOverlay {
+        id: colorOverlay
+        anchors.fill: canvas
+        source: canvas
+        onOpacityChanged: if(opacity == 0) Activity.strawberryFound()
+        opacity: 0.65
+        Behavior on opacity { PropertyAnimation { duration: 500 } }
     }
 
     // Create a particle only for the strawberry
@@ -97,7 +95,8 @@ Item {
     property bool isTouched: false
     function touched() {
         if(hasStrawberry && !isTouched) {
-            canvas.opacity = 0
+            colorOverlay.opacity = 0
+            border.opacity = 0
             isTouched = true
             strawberry.source = Activity.url + "strawberry.svg"
             audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
