@@ -40,36 +40,38 @@ Image {
         source: Activity.url + "flashlight2.svg"
         sourceSize.height: parent.sourceSize.height
         z: 2
-        visible: activity.modeRGB ? true : false
+        visible: false
+    }
 
-        Colorize {
-            anchors.fill: parent
-            source: parent
-            hue: chooser.hue
-            lightness: -(maxSteps - currentStep) / maxSteps
-            saturation: 1
-        }
+    Colorize {
+        anchors.fill: intensityScreen
+        source: intensityScreen
+        hue: chooser.hue
+        lightness: -(maxSteps - currentStep) / maxSteps
+        saturation: 1
+        visible: activity.modeRGB ? true : false
     }
 
     Image {
         id: intensityLight
         source: Activity.url + "light.svg"
         sourceSize.height: intensityScreen.sourceSize.height / 2
-        visible: intensityScreen.visible
+        visible: false
         anchors {
             left: intensityScreen.right
             leftMargin: -20 * ApplicationInfo.ratio
             verticalCenter: intensityScreen.verticalCenter
         }
         opacity: currentStep / maxSteps
+    }
 
-        Colorize {
-            anchors.fill: parent
-            source: parent
-            hue: chooser.hue
-            lightness: -(maxSteps - currentStep) / maxSteps
-            saturation: 1
-        }
+    Colorize {
+        anchors.fill: intensityLight
+        source: intensityLight
+        hue: chooser.hue
+        lightness: -(maxSteps - currentStep) / maxSteps
+        saturation: 1
+        visible: intensityScreen.visible
     }
 
     Image {
