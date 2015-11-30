@@ -70,13 +70,14 @@ Item {
         anchors.centerIn: contour
         fillMode: Image.PreserveAspectFit
         opacity: 1
+        visible: false
+    }
 
-        ColorOverlay {
-            anchors.fill: starImg
-            source: starImg
-            color: mainItem.selected ?
-                       mainItem.wantedColor : mainItem.disabledColor
-        }
+    ColorOverlay {
+        anchors.fill: starImg
+        source: starImg
+        color: mainItem.selected ?
+                   mainItem.wantedColor : mainItem.disabledColor
     }
 
     states: [
