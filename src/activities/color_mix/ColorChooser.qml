@@ -84,16 +84,17 @@ Image {
             leftMargin: activity.modeRGB ? -20 * ApplicationInfo.ratio : 0
             verticalCenter: parent.verticalCenter
         }
-        visible: currentStep > 0
-        fillMode: Image.PreserveAspectFit
+        visible: false
+        fillMode: Image.PreserveAspectFit        
+    }
 
-        Colorize {
-            anchors.fill: parent
-            source: parent
-            hue: chooser.hue
-            lightness: 0
-            saturation: 1
-        }
+    Colorize {
+        anchors.fill: intensityBrush
+        source: intensityBrush
+        hue: chooser.hue
+        lightness: 0
+        saturation: 1
+        visible: currentStep > 0
     }
 
     ColorButton {
