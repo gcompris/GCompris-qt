@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="100"
-   height="100"
-   viewBox="0 0 100.00001 99.999996"
+   width="214.72537"
+   height="107.60547"
+   viewBox="0 0 214.72539 107.60546"
    id="svg4163"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="2.8"
-     inkscape:cx="-6.8592671"
-     inkscape:cy="32.728987"
+     inkscape:cx="-64.853725"
+     inkscape:cy="29.031725"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -42,7 +42,8 @@
      inkscape:window-maximized="1"
      units="px"
      inkscape:snap-grids="false"
-     inkscape:snap-to-guides="false" />
+     inkscape:snap-to-guides="false"
+     borderlayer="true" />
   <metadata
      id="metadata4168">
     <rdf:RDF>
@@ -59,12 +60,12 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(706.25565,145.88207)">
+     transform="translate(779.33262,157.1848)">
     <path
-       inkscape:connector-curvature="0"
-       d="m -678.87647,-73.530926 -10e-6,-44.971984 44.97199,0 -44.97198,44.971984 z"
-       style="fill:#0040e5;fill-rule:evenodd;stroke:#000000;stroke-width:0.38139001"
+       id="path2399"
        sodipodi:nodetypes="cccc"
-       id="path4800" />
+       style="fill:#eae500;fill-rule:evenodd;stroke:#000000;stroke-width:0.35896;stroke-linecap:round;stroke-linejoin:round"
+       d="m -779.15317,-49.758814 107.17719,-107.246526 107.18929,107.246526 -214.36648,0 z"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>

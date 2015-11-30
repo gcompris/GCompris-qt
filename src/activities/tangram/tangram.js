@@ -411,6 +411,124 @@ var dataset = [
                         'initFlipping': 1
                     }
                 ]
+            },
+            // Level 5
+            {
+                'bg': '',
+                'pieces': [
+                    {
+                        'img': 'tangram/p0.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.500,
+                        'y': 0.349,
+                        'width': 0.429,
+                        'height': 0.214,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'opacity': 0.1,
+                        'initX': 0.22,
+                        'initY': 0.12,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'tangram/p0.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.714,
+                        'y': 0.349,
+                        'width': 0.429,
+                        'height': 0.214,
+                        'rotation': 180,
+                        'moduloRotation': 360,
+                        'opacity': 0.1,
+                        'initX': 0.216,
+                        'initY': 0.80,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'tangram/p1.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.664,
+                        'y': 0.608,
+                        'width': 0.304,
+                        'height': 0.152,
+                        'rotation': 90,
+                        'moduloRotation': 360,
+                        'opacity': 0.1,
+                        'initX': 0.45,
+                        'initY': 0.110,
+                        'initRotation': 180,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'tangram/p2.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.511,
+                        'y': 0.533,
+                        'width': 0.152,
+                        'height': 0.152,
+                        'rotation': 0,
+                        'moduloRotation': 90,
+                        'opacity': 0.1,
+                        'initX': 0.7,
+                        'initY': 0.110,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'tangram/p3.svg',
+                        'flippable': 1,
+                        'flipping': 0,
+                        'x': 0.749,
+                        'y': 0.509,
+                        'width': 0.322,
+                        'height': 0.108,
+                        'rotation': 0,
+                        'moduloRotation': 180,
+                        'opacity': 0.1,
+                        'initX': 0.94,
+                        'initY': 0.17,
+                        'initRotation': -90,
+                        'initFlipping': 1
+                    },
+                    {
+                        'img': 'tangram/p4.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.178,
+                        'y': 0.403,
+                        'width': 0.215,
+                        'height': 0.108,
+                        'rotation': 0,
+                        'moduloRotation': 360,
+                        'opacity': 0.1,
+                        'initX': 0.60,
+                        'initY': 0.85,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'tangram/p4.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.399,
+                        'y': 0.495,
+                        'width': 0.215,
+                        'height': 0.108,
+                        'rotation': 45,
+                        'moduloRotation': 360,
+                        'opacity': 0.1,
+                        'initX': 0.80,
+                        'initY': 0.85,
+                        'initRotation': 180,
+                        'initFlipping': 0
+                    }
+                ]
             }
         ]
 
