@@ -18,10 +18,10 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: qsTr("parachute/Parachute.qml")
+  name: "parachute/Parachute.qml"
   difficulty: 1
-  icon: qsTr("parachute/parachute.svg")
-  author: qsTr("Rajdeep Kaur &lt;rajdeep51994@gmail.com&gt;")
+  icon: "parachute/parachute.svg"
+  author: "Rajdeep Kaur &lt;rajdeep51994@gmail.com&gt;"
   demo: true
   title: qsTr("Parachute activity")
   description: qsTr("Help Tux the parachutist land safely")
