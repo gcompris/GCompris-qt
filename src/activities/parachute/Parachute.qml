@@ -77,6 +77,7 @@ ActivityBase {
             property alias parachuteanimationrelup: parachuteanimationrelup
             property alias parachuteanimationreldown: parachuteanimationreldown
             property alias ok: ok
+
         }
 
         IntroMessage {
@@ -162,10 +163,11 @@ ActivityBase {
         Item{
             id:parachutOpen
             onYChanged:{
+
                 if(( parachutOpen.y >= background.height/1.4 )&&(Activity.winlose === 0)) {
                     if((parachutOpen.x >= boatmotion.x) && (parachutOpen.x <= (boatmotion.x+boatmotion.width))) {
                         bonus.good("smiley")
-                        Activity.winlose = 1
+                          Activity.winlose = 1
                     }
                     if((parachutOpen.y >= background.height/1.2)&&(Activity.winlose === 0)) {
                         if((parachutOpen.x <= boatmotion.x) || (parachutOpen.x >= (boatmotion.x+boatmotion.width))) {

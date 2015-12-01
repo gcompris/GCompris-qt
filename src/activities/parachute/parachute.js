@@ -32,8 +32,8 @@ var items
 var checkPressed = 0
 var uppressed
 var downpressed
-var winlose
 var Oneclick
+var winlose
 
 function start(items_) {
     items = items_
