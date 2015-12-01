@@ -130,7 +130,7 @@ function updateMessage(move) {
         return
     if((move.flags & (Engine.P4_MOVE_FLAG_CHECK | Engine.P4_MOVE_FLAG_MATE))
             == (Engine.P4_MOVE_FLAG_CHECK | Engine.P4_MOVE_FLAG_MATE)) {
-        items.message = items.blackTurn ? qsTr("Black mates") : qsTr("White mates")
+        items.message = items.blackTurn ? qsTr("White mates", "white wins") : qsTr("Black mates", "black wins")
         items.gameOver = true
         if(!items.twoPlayer)
             if(state.to_play != 0)
@@ -144,7 +144,7 @@ function updateMessage(move) {
         items.gameOver = true
         items.bonus.good('flower')
     } else if((move.flags & Engine.P4_MOVE_FLAG_CHECK) == Engine.P4_MOVE_FLAG_CHECK) {
-        items.message = items.blackTurn ? qsTr("Black checks") : qsTr("White checks")
+        items.message = items.blackTurn ? qsTr("White checks", "black king is under attack") : qsTr("Black checks", "white king is under attack")
     } else if(move.flags == Engine.P4_MOVE_ILLEGAL) {
         items.message = qsTr("Invalid, your king may be in check")
     }
