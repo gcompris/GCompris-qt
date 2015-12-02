@@ -23,8 +23,7 @@ import QtQuick 2.1
 import QtGraphicalEffects 1.0
 
 Colorize {
-    anchors.fill: parent
-    source: parent
+    anchors.fill: source
     hue: 0.4
     saturation: 1
     lightness: .5

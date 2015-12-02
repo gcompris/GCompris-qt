@@ -95,20 +95,14 @@ ActivityBase {
         Repeater {
             id: discRepeater
 
-            Image {
+            Item {
                 id: disc
                 parent: towerModel.itemAt(0)
                 z: 4
-
-                source: Activity.url + "disc.svg"
-                sourceSize.width: Activity.getDiscWidth(index)
-                height: activityMode == "real"? towerModel.itemAt(0).height * 0.15:
-                                                towerModel.itemAt(0).height / (Activity.nbMaxItemsByTower+1)
-
+                width: discImage.width
+                height: discImage.height
                 opacity: index < items.numberOfDisc ? 1 : 0
-
                 onHeightChanged: Activity.sceneSizeChanged()
-
                 property alias color: colorEffect.color
                 //radius: 10
                 property bool mouseEnabled : true
@@ -121,40 +115,43 @@ ActivityBase {
                 onXChanged: Activity.performTowersHighlight(disc, x)
 
                 anchors.horizontalCenter: if(parent) parent.horizontalCenter
-                Behavior on y {
-                    NumberAnimation {
-                        id: bouncebehavior
-                        easing {
-                            type: Easing.OutElastic
-                            amplitude: 1.0
-                            period: 0.75
+
+                Image {
+                    id: discImage
+                    source: Activity.url + "disc.svg"
+                    sourceSize.width: Activity.getDiscWidth(index)
+                    height: activityMode == "real"? towerModel.itemAt(0).height * 0.15:
+                    towerModel.itemAt(0).height / (Activity.nbMaxItemsByTower+1)
+
+                    Behavior on y {
+                        NumberAnimation {
+                            id: bouncebehavior
+                            easing {
+                                type: Easing.OutElastic
+                                amplitude: 1.0
+                                period: 0.75
+                            }
                         }
                     }
-                }
 
-                ColorOverlay {
-                    id: colorEffect
-                    anchors.fill: parent
-                    source: parent
-                }
-
-                GCText {
-                    id: textSimplified
-                    visible: activityMode == "simplified"
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.rightMargin: 4
-                    anchors.right: parent.right
+                    GCText {
+                        id: textSimplified
+                        visible: activityMode == "simplified"
+                        anchors.verticalCenter: parent.verticalCenter
+                        anchors.rightMargin: 4
+                        anchors.right: parent.right
+                    }
                 }
 
                 MouseArea {
                     id: discMouseArea
-                    enabled: parent.mouseEnabled
+                    enabled: disc.mouseEnabled
                     anchors.centerIn: parent
                     width: Activity.getDiscWidth(0)
                     height: background.height
                     drag.target: parent
                     drag.axis: Drag.XandYAxis
-                    hoverEnabled : true
+                    hoverEnabled: true
 
                     onPressed: {
                         disc.anchors.horizontalCenter = undefined
@@ -171,6 +168,13 @@ ActivityBase {
                         disc.anchors.horizontalCenter = disc.parent.horizontalCenter
                     }
                 }
+
+                ColorOverlay {
+                    id: colorEffect
+                    anchors.fill: discImage
+                    source: discImage
+                }
+
             }
         }
 
@@ -187,24 +191,29 @@ ActivityBase {
             Repeater {
                 id: towerModel
                 model: 1 // will be dynamically set in js
-                delegate: Image {
+                delegate: Item {
                     id: towerImage
-                    source: Activity.url + "disc_support.svg"
-                    sourceSize.width: background.width / (towerModel.model + 2.5)
-                    fillMode: Image.Stretch
-                    height: background.height - instruction.height - 2 * bar.height
-                    property alias highlight: towerImageHighlight.highlight
-
+                    width: image.width
+                    height: image.height
                     onHeightChanged: Activity.sceneSizeChanged()
-
+                    property alias highlight: towerImageHighlight.highlight
+                    Image {
+                        id: image
+                        source: Activity.url + "disc_support.svg"
+                        sourceSize.width: background.width / (towerModel.model + 2.5)
+                        fillMode: Image.Stretch
+                        height: background.height - instruction.height - 2 * bar.height
+                    }
                     z: 3
 
                     Highlight {
                         id: towerImageHighlight
+                        source: image
                     }
                     Highlight {
                         // last tower highlight
                         id: towerImageHighlightGlow
+                        source: image
                         hue: 1.0
                         lightness: 0
                         opacity: towerImageHighlight.opacity == 0 ? 0.5 : 0
@@ -214,6 +223,7 @@ ActivityBase {
                     // in simplified mode only, the target tower
                     Highlight {
                         hue: 0.3
+                        source: image
                         lightness: 0
                         opacity: towerImageHighlight.opacity == 0 ? 0.5 : 0
                         visible: activityMode == "simplified" && (modelData == towerModel.model-2)
