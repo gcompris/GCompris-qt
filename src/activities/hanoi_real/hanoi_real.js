@@ -244,7 +244,11 @@ function performTowersHighlight(disc, x)
     deHighlightTowers()
 
     var isCorrect = false;
-    for(var i = 0 ; i < items.towerModel.model ; ++ i) {
+    var nbTower = items.towerModel.model
+    if(activityMode === "simplified")
+        nbTower--
+
+    for(var i = 0 ; i < nbTower ; ++ i) {
         var towerItem = items.towerModel.itemAt(i);
         if(checkIfDiscOnTowerImage(disc, towerItem)) {
             towerItem.highlight = true
