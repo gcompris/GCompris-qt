@@ -155,13 +155,13 @@ function saveModel()
         levels[i].level = i + 1;
     if (!props.file.write(JSON.stringify(levels), userFile))
         Core.showMessageDialog(props.editor,
-                               qsTr("Error saving %1 levels to your levels file (%2)")
-                               .arg(numberOfLevel).arg(userFile),
+                               qsTr("Error saving %n level(s) to your levels file (%1)", "", numberOfLevel)
+                               .arg(userFile),
                                "", null, "", null, null);
     else {
         Core.showMessageDialog(props.editor,
-                               qsTr("Saved %1 levels to your levels file (%2)")
-                               .arg(numberOfLevel).arg(userFile),
+                               qsTr("Saved %n level(s) to your levels file (%1)", "", numberOfLevel)
+                               .arg(userFile),
                                "", null, "", null, null);
         levelChanged = false;
         currentIsNewLevel = false;
