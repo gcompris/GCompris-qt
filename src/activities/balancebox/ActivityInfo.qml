@@ -31,7 +31,7 @@ ActivityInfo {
 //  intro: "Click on the word matching the picture."
   goal: qsTr("Practice fine motor skills and basic counting.")
   prerequisite: ""
-  manual: qsTr("Navigate the ball to the door. Be careful to not make it fall into the holes. Numbered contact buttons in the box need to be touched in the correct order to unlock the door. You can move the ball by tilting your mobile device. On desktop platforms use the arrow keys to simulate tilting.
+  manual: qsTr("Navigate the ball to the door. Be careful not to make it fall into the holes. Numbered-contact buttons in the box need to be touched in the correct order to unlock the door. You can move the ball by tilting your mobile device. On desktop platforms use the arrow keys to simulate tilting.
 
 In the <b>configuration dialog</b> you can choose between the default 'Built-in' level set and one that you can define yourself ('User'). A user-defined level set can be created by choosing the 'user' level set and start the level editor by clicking on the corresponding button.
 
@@ -42,7 +42,7 @@ In the <b>level editor</b> you can create your own levels. Choose one of the edi
     Hole: Set/remove a hole on a cell
     Ball: Set the starting position of the ball
     Door: Set the door position
-    Contact: Set/remove a contact button. With the spin-box you can adjust the value of the contact button. It is not possible to set a value more than one time on a map.
+    Contact: Set/remove a contact button. With the spin-box you can adjust the value of the contact button. It is not possible to set a value more than once on a map.
 All tools (except the clear-tool) toggle their respective target on the clicked cell: An item can be placed by clicking on an empty cell, and by clicking again on the same cell with the same tool, you can remove it again.
 You can test a modified level by clicking on the 'Test' button on the right side of the editor view. You can return from testing mode by clicking on the home-button on the bar or by pressing escape on your keyboard or the back-button on your mobile device.
 In the editor you can change the level currently edited by using the arrow buttons on the bar. Back in the editor you can continue editing the current level and test it again if needed.
