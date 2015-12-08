@@ -32,19 +32,19 @@ var items
 var checkPressed = 0
 var uppressed
 var downpressed
-var Oneclick
+var OneClick
 var winlose
+var sublevelcount
 
 function start(items_) {
     items = items_
     currentLevel = 0
-
     initLevel()
+
 }
 
 function stop() {
     items.animationheli.stop()
-    items.animationcloud.stop()
     items.animationboat.stop()
     items.parachuteanimation.stop()
     items.minitux.visible=false
@@ -55,12 +55,12 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     checkPressed = 0
     winlose = 0
-    Oneclick = 0
+    OneClick = 0
     items.ok.visible = false
     items.animationheli.restart()
-    items.animationcloud.restart()
     items.animationboat.restart()
     items.parachuteanimationx.restart()
+    items.cloudinfi.restart()
 }
 
 function processPressedKey(event) {
@@ -124,10 +124,14 @@ function nextLevel() {
         currentLevel = 0
     }
     items.keyunable.visible=false
-    items.parachuteImage.visible=false
     items.ok.visible = false
     winlose = 0
-    Oneclick = 0
+    OneClick = 0
+    items.animationheli.stop()
+    items.animationboat.stop()
+    items.parachuteanimation.stop()
+    items.minitux.visible=false
+    items.parachuteImage.visible=false
     initLevel();
 }
 
@@ -138,4 +142,25 @@ function previousLevel() {
     items.keyunable.visible=false
     items.parachuteImage.visible=false
     initLevel();
+}
+
+function repeat(){
+    items.keyunable.visible=false
+    items.ok1.visible = false
+    winlose = 0
+    OneClick = 0
+    items.animationheli.stop()
+    items.animationboat.stop()
+    items.parachuteanimation.stop()
+    items.minitux.visible=false
+    items.parachuteImage.visible=false
+    checkPressed = 0
+    winlose = 0
+    OneClick = 0
+    items.ok1.visible = false
+    items.animationheli.restart()
+    items.animationboat.restart()
+    items.parachuteanimationx.restart()
+    items.cloudinfi.restart()
+
 }

@@ -23,14 +23,13 @@ import QtQuick 2.1
 import GCompris 1.0
 import QtGraphicalEffects 1.0
 import "../../core"
-import "qrc:/gcompris/src/core/core.js" as Core
 import "parachute.js" as Activity
 
 ActivityBase {
     id: activity
-    
+
     property string dataSetUrl: "qrc:/gcompris/src/activities/parachute/resource/"
-    
+
     onStart: focus = true
     onStop: {}
 
@@ -38,7 +37,6 @@ ActivityBase {
     Keys.onReleased: Activity.processReleasedKey(event)
 
     pageComponent: Image {
-        
         id: background
         source:activity.dataSetUrl + "back.svg"
         fillMode: Image.PreserveAspectCrop
@@ -52,7 +50,7 @@ ActivityBase {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        
+
         onStart: {  }
         onStop: { Activity.stop() }
 
@@ -77,24 +75,24 @@ ActivityBase {
             property alias parachuteanimationrelup: parachuteanimationrelup
             property alias parachuteanimationreldown: parachuteanimationreldown
             property alias ok: ok
-
+            property alias ok1: ok1
+            property alias cloudinfi: cloudinfi
         }
 
         IntroMessage {
             id:message
             onIntroDone: {
                 Activity.start(items)
-
             }
             intro: [
                 qsTr("The red boat moves in the water from left to right."),
-                qsTr("Penguin Tux falls off from the plane, to land on the boat safely. "),
-                qsTr("The purpose of the game is to determine the exact time when"
+                qsTr("Penguin Tux falls off from the plane, to land on the boat safely."),
+                qsTr("The purpose of the game is to determine the exact time when "
                      + "he should fall off from the plane, in order to safely get to the boat. "),
-                qsTr("Tux also carries a parachute, that lets him prevent free fall under gravity, that is dangerous."
-                     +"Tux falls off when the player left clicks on the plane."),
-                qsTr("His speed can be controlled by the player by pressing UP and DOWN arrow keys,"
-                     + "such that Tux is saved from falling in water. "),
+                qsTr("Tux also carries a parachute, that lets him prevent free fall under gravity, that is dangerous. "
+                     + "Tux falls off when the player left clicks on the plane."),
+                qsTr("His speed can be controlled by the player by pressing UP and DOWN arrow keys, "
+                     + "such that Tux is saved from falling in water."),
                 qsTr("Help Tux save his life!")
             ]
             z: 20
@@ -108,210 +106,201 @@ ActivityBase {
             }
         }
 
-
-        Item{
-            id:helimotion
-            width:helicopter.width
-            height:helicopter.height
+        Item {
+            id: helimotion
+            width: helicopter.width
+            height: helicopter.height
             x: -width
-            Rectangle{
-                id:forhover
-                width:helicopter.width
-                height:helicopter.height
-                visible:false
-                border.width:7
-                radius:20
-                border.color:"#A80000"
-                color:"#500000"
+            Rectangle {
+                id: forhover
+                width: helicopter.width
+                height: helicopter.height
+                visible: false
+                border.width: 7
+                radius: 20
+                border.color: "#A80000"
+                color: "#500000"
             }
-            Image{
-                id:helicopter
-                source:activity.dataSetUrl+"tuxplane.svg"
+            Image {
+                id: helicopter
+                source: activity.dataSetUrl+"tuxplane.svg"
                 MouseArea {
-                    id:mousei
+                    id: mousei
                     hoverEnabled: true
-                    anchors.fill:parent
-                    onEntered:{
-                        forhover.visible=true
+                    anchors.fill: parent
+                    onEntered: {
+                        forhover.visible = true
                     }
                     onExited:{
-                        forhover.visible=false
+                        forhover.visible = false
                     }
                     onClicked:{
-                        if(Activity.Oneclick === 0) {
-                             minitux.visible=true
-                             Activity.parachuefun()
-                            Activity.Oneclick = 1;
+                        if(!Activity.OneClick) {
+                            minitux.visible = true
+                            Activity.parachuefun()
+                            Activity.OneClick = 1
+
                         }
                     }
-
                 }
             }
 
-
             PropertyAnimation {
-                id:animationheli
-                target:helimotion
+                id: animationheli
+                target: helimotion
                 properties: "x"
-                from:-helimotion.width
-                to:background.width
+                from: -helimotion.width
+                to: background.width
                 duration: (bar.level === 1 ? 20000 : bar.level === 2 ? 16000 : bar.level === 3 ? 12000 : bar.level === 4 ? 10000 : 9000)
-                easing.type:Easing.Linear
+                easing.type: Easing.Linear
             }
         }
 
-        Item{
-            id:parachutOpen
-            onYChanged:{
+        Item {
+            id: parachutOpen
+            onYChanged: {
 
-                if(( parachutOpen.y >= background.height/1.4 )&&(Activity.winlose === 0)) {
+                if((parachutOpen.y >= background.height/1.2) && (parachutOpen.y <=(boatmotion.height+background.height))) {
                     if((parachutOpen.x >= boatmotion.x) && (parachutOpen.x <= (boatmotion.x+boatmotion.width))) {
-                        bonus.good("smiley")
-                          Activity.winlose = 1
-                    }
-                    if((parachutOpen.y >= background.height/1.2)&&(Activity.winlose === 0)) {
-                        if((parachutOpen.x <= boatmotion.x) || (parachutOpen.x >= (boatmotion.x+boatmotion.width))) {
-                            bonus.bad("smiley")
-                            Activity.winlose = 1
+                                     bonus.good("tux")
 
-                        }
                     }
-
+                }
+                if(((parachutOpen.y >= background.height/1.2) && (parachutOpen.y <=(boatmotion.height+background.height)))) {
+                    if((parachutOpen.x < boatmotion.x) || (parachutOpen.x > (boatmotion.x+boatmotion.width))) {
+                                   bonus.bad("tux")
+                    }
                 }
             }
-            Image{
-                id:parachuteImage
-                visible:false
-                source:activity.dataSetUrl+"parachute.svg"
-
-
+            Image {
+                id: parachuteImage
+                visible: false
+                source: activity.dataSetUrl+"parachute.svg"
             }
-            Image{
-                id:minitux
-                visible:false
-                source:activity.dataSetUrl+"minitux.svg"
-                MouseArea{
-                    id:paramouse
-                    anchors.fill:parent
-                    onClicked:{
-                        minitux.visible=false
-                        parachuteImage.visible=true
-                        keyunable.visible=true
-
+            Image {
+                id: minitux
+                visible: false
+                source: activity.dataSetUrl+"minitux.svg"
+                MouseArea {
+                    id: paramouse
+                    anchors.fill: parent
+                    onClicked: {
+                        minitux.visible = false
+                        parachuteImage.visible = true
+                        keyunable.visible = true
                     }
                 }
-                PropertyAnimation{
-                    id:parachuteanimation
-                    target:parachutOpen
-                    properties: "y"
-                    from:helicopter.height
-                    to:background.height/1.2
-                    duration:(bar.level === 1 ? 15000 : bar.level === 2 ? 14000 : bar.level === 3 ? 13000 : bar.level === 4 ? 10000 : 9000)
-                    easing.type:Easing.Linear
+                PropertyAnimation {
+                    id: parachuteanimation
+                    target: parachutOpen
+                    properties: "y,x"
+                    from: helicopter.height
+                    to: background.height/1.2
+                    duration: (bar.level === 1 ? 15000 : bar.level === 2 ? 14000 : bar.level === 3 ? 13000 : bar.level === 4 ? 10000 : 9000)
+                    easing.type: Easing.Linear
+                }
+
+                PropertyAnimation {
+                    id: parachuteanimationup
+                    target: parachutOpen
+                    properties: "y,x"
+                    from: parachutOpen.y
+                    to: background.height/1.2
+                    duration: (bar.level === 1 ? 33000 : bar.level === 2 ? 26000 : bar.level === 3 ? 20000 : bar.level === 4 ? 15000 : 9000)
+                    easing.type: Easing.Linear
+                }
+
+                PropertyAnimation {
+                    id: parachuteanimationdown
+                    target: parachutOpen
+                    properties: "y,x"
+                    from: parachutOpen.y
+                    to: background.height/1.2
+                    duration: (bar.level === 1 ? 6000 : bar.level === 2 ? 5000 : bar.level === 3 ? 4000 : bar.level === 4 ? 2000 : 9000)
+                    easing.type: Easing.Linear
+                }
+
+                PropertyAnimation {
+                    id: parachuteanimationrelup
+                    target: parachutOpen
+                    properties: "y,x"
+                    from: parachutOpen.y
+                    to: background.height/1.2
+                    duration: (bar.level === 1 ? 15000 : bar.level === 2 ? 14000 : bar.level === 3 ? 13000 : bar.level === 4 ? 10000 : 9000)
+                    easing.type: Easing.Linear
+                }
+
+                PropertyAnimation {
+                    id: parachuteanimationreldown
+                    target: parachutOpen
+                    properties: "y,x"
+                    from: parachutOpen.y
+                    to: background.height/1.2
+                    duration: (bar.level === 1 ? 10000 : bar.level === 2 ? 9000 : bar.level === 3 ? 7000 : bar.level === 4 ? 5000 : 9000)
+                    easing.type: Easing.Linear
                 }
 
                 PropertyAnimation{
-                    id:parachuteanimationup
-                    target:parachutOpen
-                    properties:  "y"
-                    from:parachutOpen.y
-                    to:background.height/1.2
-                    duration:(bar.level === 1 ? 30000 : bar.level === 2 ? 26000 : bar.level === 3 ? 20000 : bar.level === 4 ? 15000 : 9000)
-                    easing.type:Easing.Linear
-                }
-
-                PropertyAnimation{
-                    id:parachuteanimationdown
-                    target:parachutOpen
-                    properties:  "y"
-                    from:parachutOpen.y
-                    to:background.height/1.2
-                    duration:(bar.level === 1 ? 6000 : bar.level === 2 ? 5000 : bar.level === 3 ? 4000 : bar.level === 4 ? 2000 : 9000)
-                    easing.type:Easing.Linear
-
-                }
-
-                PropertyAnimation{
-                    id:parachuteanimationrelup
-                    target:parachutOpen
-                    properties:  "y"
-                    from:parachutOpen.y
-                    to:background.height/1.2
-                    duration:(bar.level === 1 ? 15000 : bar.level === 2 ? 14000 : bar.level === 3 ? 13000 : bar.level === 4 ? 10000 : 9000)
-                    easing.type:Easing.Linear
-
-                }
-
-                PropertyAnimation{
-                    id:parachuteanimationreldown
-                    target:parachutOpen
-                    properties:  "y"
-                    from:parachutOpen.y
-                    to:background.height/1.2
-                    duration:(bar.level === 1 ? 10000 : bar.level === 2 ? 9000 : bar.level === 3 ? 7000 : bar.level === 4 ? 5000 : 9000)
-                    easing.type:Easing.Linear
-                }
-
-
-
-                PropertyAnimation{
-                    id:parachuteanimationx
-                    target:parachutOpen
+                    id: parachuteanimationx
+                    target: parachutOpen
                     properties: "x"
-                    from:-helimotion.width
-                    to:background.width
-                    duration:(bar.level === 1 ? 20000 : bar.level === 2 ? 16000 : bar.level === 3 ? 12000 : bar.level === 4 ? 10000 : 9000)
+                    from: -helimotion.width
+                    to: background.width
+                    duration: (bar.level === 1 ? 20000 : bar.level === 2 ? 16000 : bar.level === 3 ? 12000 : bar.level === 4 ? 10000 : 9000)
                 }
             }
         }
-        Item{
-            id:cloudmotion
-            width:cloud.width
-            height:height.height
-            Image{
-                id:cloud
-                source:activity.dataSetUrl+"cloud.svg"
-                y:background.height/7
+
+        Item {
+            id: cloudmotion
+            width: cloud.width
+            height: height.height
+            Image {
+                id: cloud
+                source: activity.dataSetUrl+"cloud.svg"
+                y: background.height/7
             }
-            PropertyAnimation {
-                id:animationcloud
-                target:cloudmotion
-                properties:"x"
-                from:background.width
-                to:-cloud.width
-                duration:(bar.level === 1 ? 19000 : bar.level === 2 ? 15000 : bar.level === 3 ? 11000 : bar.level === 4 ? 9000 : 9000)
-                easing.type:Easing.Linear
+            SequentialAnimation{
+                id:cloudinfi
+                loops: Animation.Infinite
+                PropertyAnimation{
+                    id: animationcloud
+                    target: cloudmotion
+                    properties: "x"
+                    from:-cloud.width
+                    to: background.width
+                    duration: (bar.level === 1 ? 24000 : bar.level === 2 ? 15000 : bar.level === 3 ? 11000 : bar.level === 4 ? 9000 : 9000)
+                    easing.type: Easing.Linear
+                }
             }
         }
 
-
-        Item{
-            id:boatmotion
-            width:boat.width
-            height:boat.heigt
-            Image{
-                id:boat
-                source:activity.dataSetUrl+"fishingboat.svg"
-                y:background.height/1.2
+        Item {
+            id: boatmotion
+            width: boat.width
+            height: boat.height
+            Image {
+                id: boat
+                source: activity.dataSetUrl+"fishingboat.svg"
+                y: background.height/1.2
             }
             PropertyAnimation {
-                id:animationboat
-                target:boatmotion
-                properties:"x"
-                from:-boat.width
-                to:background.width-2*boat.width
-                duration:(bar.level === 1 ? 24000 : bar.level === 2 ? 20500 : bar.level === 3 ? 19000 : bar.level === 4 ? 17000 : 9000)
-                easing.type:Easing.Linear
+                id: animationboat
+                target: boatmotion
+                properties: "x"
+                from: -boat.width
+                to: background.width-4*boat.width
+                duration: (bar.level === 1 ? 24000 : bar.level === 2 ? 20500 : bar.level === 3 ? 19000 : bar.level === 4 ? 17000 : 9000)
+                easing.type: Easing.Linear
             }
         }
-
 
         GCText {
-            id:keyunable
+            id: keyunable
             anchors.centerIn: parent
             fontSize: largeSize
-            visible:false
-            text:"Control fall speed with up and down arrow keys"
+            visible: false
+            text:qsTr("Control fall speed with up and down arrow keys")
         }
 
         DialogHelp {
@@ -321,7 +310,7 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level   }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
@@ -337,22 +326,27 @@ ActivityBase {
             visible: false
             anchors.right: background.right
             onClicked: {
+                Activity.nextLevel()
+            }
+        }
 
-                     Activity.nextLevel()
-
-
+        BarButton {
+            id: ok1
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
+            sourceSize.width: 75 * ApplicationInfo.ratio
+            visible: false
+            anchors.right: background.right
+            onClicked: {
+                Activity.repeat()
             }
         }
 
         Bonus {
             id: bonus
-            interval: 2000
-            onLoose: ok.visible = true
-            onWin:ok.visible = true
-
+            interval: 200
+            onWin: ok.visible = true
+            onLoose:ok1.visible = true
         }
-
-
     }
 
 }
