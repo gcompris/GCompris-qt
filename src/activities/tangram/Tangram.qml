@@ -218,6 +218,11 @@ ActivityBase {
                 Drag.hotSpot.x : width / 2
                 Drag.hotSpot.y : height / 2
 
+                onSelectedChanged: {
+                    if(!selected)
+                        tans.restoreZindex()
+                }
+
                 MouseArea {
                     id: dragArea
                     anchors.fill: parent
@@ -245,7 +250,6 @@ ActivityBase {
                             tans.yRatio = posTans[1]
                         }
                         tans.restoreBindings()
-                        tans.restoreZindex()
                         background.checkWin()
                     }
                 }
