@@ -57,7 +57,7 @@ ActivityBase {
                 "none": "",
                 "start": qsTr("Sun is the main component of water cycle. Click on the sun to start the water cycle."),
                 "sun": qsTr("As the sun rises, the water of the sea starts heating and evaporates."),
-                "cloud": qsTr(" Water vapor condenses to form cloud and when clouds become heavy, they rain. Click on the cloud."),
+                "cloud": qsTr(" Water vapor condenses to form cloud and when clouds become heavy, it rains. Click on the cloud."),
                 "rain": qsTr("Rain causes rivers to swell up and this water is transported to us via motor pumps through water-tower." +
                              " Click on the motor pump to supply water to residents."),
                 "tower": qsTr("See the tower filled with water. Activate the sewage treatment station by clicking on it."),

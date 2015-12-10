@@ -26,7 +26,7 @@ ActivityInfo {
   title: qsTr("Vertical-reading practice")
   description: qsTr("Read a vertical list of words and work out if a given word is in it.")
 //  intro: "Read a list of words and work out if a given word is in it."
-  goal: qsTr("Read training in a limited time")
+  goal: qsTr("Reading training in a limited time")
   prerequisite: qsTr("Reading")
   manual: qsTr("A word is shown at the top right of the board. A list of words will appear and disappear on the left. Does the given word belong to the list?")
   credit: ""

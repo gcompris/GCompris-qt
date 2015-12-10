@@ -24,7 +24,7 @@ ActivityInfo {
     author: "Sagar Chand Agarwal &lt;atomsagar@gmail.com&gt;"
     demo: true
     title: qsTr("Watercycle")
-    description: qsTr("Tux has come back from a long fishing party on his boat. Bring the water system back up so he can take a shower.")
+    description: qsTr("Tux has come back from fishing on his boat. Bring the water system back up so he can take a shower.")
     //intro: "Click on the various active elements that make up the water supply. Then press the shower button for Tux."
     goal: qsTr("Learn the water cycle")
     prerequisite: ""

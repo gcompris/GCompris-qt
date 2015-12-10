@@ -154,7 +154,7 @@ ActivityBase {
                 message.opacity = 0
             }
             intro: [
-                qsTr("Tux has come back from a long fishing party on his boat. " +
+                qsTr("Tux has come back from fishing on his boat. " +
                      "Bring the electrical system back up so he can have light in his home."),
                 qsTr("Click on different active elements : sun, cloud, dam, solar array, " +
                      "wind farm and transformers, in order to reactivate the entire electrical system."),
