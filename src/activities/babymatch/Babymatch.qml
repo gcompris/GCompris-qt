@@ -123,15 +123,18 @@ ActivityBase {
                 vert: background.vert
             }
         }
-        
+
         Rectangle {
             id: toolTip
-            anchors.top: toolTipTxt.top
-            anchors.horizontalCenter: toolTipTxt.horizontalCenter
+            anchors {
+                bottom: bar.top
+                bottomMargin: 10
+                left: leftWidget.left
+                leftMargin: 5
+            }
             width: toolTipTxt.width + 10
             height: toolTipTxt.height + 5
-            visible: false
-            opacity: 0.8
+            opacity: 1
             radius: 10
             z: 100
             border.width: 2
@@ -142,25 +145,30 @@ ActivityBase {
                 GradientStop { position: 1.0; color: "#AAA" }
             }
             property alias text: toolTipTxt.text
+            Behavior on opacity { NumberAnimation { duration: 120 } }
+
+            function show(newText) {
+                if(newText) {
+                    text = newText
+                    opacity = 0.8
+                } else {
+                    opacity = 0
+                }
+            }
+
+            GCText {
+                id: toolTipTxt
+                anchors.centerIn: parent
+                fontSize: regularSize
+                color: "white"
+                style: Text.Outline
+                styleColor: "black"
+                horizontalAlignment: Text.AlignHCenter
+                wrapMode: TextEdit.WordWrap
+                text: "coucou"
+            }
         }
         
-        GCText {
-            id: toolTipTxt
-            anchors {
-                bottom: bar.top
-                bottomMargin: 10
-                left: leftWidget.left//horizontalCenter
-                leftMargin: 5
-            }
-            visible: toolTip.visible
-            z: 101
-            fontSize: regularSize
-            color: "white"
-            style: Text.Outline
-            styleColor: "black"
-            horizontalAlignment: Text.AlignHCenter
-            wrapMode: TextEdit.WordWrap
-        }
         
         Rectangle {
             id: grid

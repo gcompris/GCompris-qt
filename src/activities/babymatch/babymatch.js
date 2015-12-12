@@ -21,6 +21,7 @@
  */
 .pragma library
 .import QtQuick 2.0 as Quick
+.import GCompris 1.0 as GCompris //for ApplicationInfo
 
 var currentLevel = 1
 var currentSubLevel = 0
@@ -72,7 +73,6 @@ function initLevel() {
     items.backgroundImage.source = ""
 
     items.availablePieces.view.currentDisplayedGroup = 0
-    items.availablePieces.view.itemsDropped = 0
     items.availablePieces.view.previousNavigation = 1
     items.availablePieces.view.nextNavigation = 1
     items.availablePieces.view.okShowed = false
@@ -82,7 +82,7 @@ function initLevel() {
     var dropItemComponent = Qt.createComponent("qrc:/gcompris/src/activities/babymatch/DropAnswerItem.qml")
     var textItemComponent = Qt.createComponent("qrc:/gcompris/src/activities/babymatch/TextItem.qml")
     //print(dropItemComponent.errorString())
-    
+
     if(currentSubLevel == 0 && levelData.numberOfSubLevel != undefined)
         numberOfSubLevel = levelData.numberOfSubLevel
         
@@ -94,8 +94,7 @@ function initLevel() {
     else 
         glowEnabled = levelData.glow
 
-    // BUG352639: tooltip is not clear when changing level
-    items.toolTip.visible = false
+    items.toolTip.show('')
 
     if(levelData.instruction == undefined) {
         items.instruction.opacity = 0
@@ -147,7 +146,7 @@ function initLevel() {
                             "imgHeight": levelData.levels[i].height == undefined ? 0 : levelData.levels[i].height,
                             "imgWidth": levelData.levels[i].width == undefined ? 0 : levelData.levels[i].width,
                             "dropAreaSize": levelData.levels[i].dropAreaSize == undefined ? 15 : levelData.levels[i].dropAreaSize,
-                            "imageName" : levelData.levels[i].pixmapfile,
+                            "imgName" : levelData.levels[i].pixmapfile,
                             "factor": Math.max(3, 1.0 / levelData.levels.length * 100)
                          });
         }
@@ -215,6 +214,39 @@ function win() {
     items.bonus.good("flower")
 }
 
-function wrong() {
-    items.bonus.bad("flower")
+function getClosestSpot(x, y) {
+    var minDist = 200 * GCompris.ApplicationInfo.ratio
+    var closestDist = Number.MAX_VALUE
+    var closestItem
+    for(var i = 0 ; i < spots.length ; ++ i) {
+        // Calc Distance
+        var spot = spots[i]
+        var dist = Math.floor(Math.sqrt(Math.pow(x - spot.x, 2) +
+                                        Math.pow(y - spot.y, 2)))
+        if(dist < closestDist) {
+            closestDist = dist
+            closestItem = spot
+        }
+    }
+    if(closestDist < minDist) {
+        return closestItem
+    } else {
+        return null
+    }
+}
+
+function highLightSpot(stopItem, tile) {
+    for(var i = 0 ; i < spots.length ; ++ i) {
+        if(spots[i] === stopItem) {
+            spots[i].show(tile)
+        } else {
+            spots[i].hide()
+        }
+    }
+}
+function dumpSpot() {
+    for(var i = 0 ; i < spots.length ; ++ i) {
+        if(spots[i].currentTileImageItem)
+            console.log(i, spots[i].currentTileImageItem.source)
+    }
 }
