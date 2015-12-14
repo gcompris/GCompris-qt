@@ -36,7 +36,6 @@ Item {
     property alias showOk : showOk
     property alias hideOk : hideOk
     property alias repeater : repeater
-    property int widgetWidth: view.iconSize
 
     ListModel {
         id: mymodel
