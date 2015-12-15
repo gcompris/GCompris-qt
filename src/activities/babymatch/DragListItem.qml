@@ -117,7 +117,7 @@ Item {
                 toSmall()
                 tileImage.parent = tileImage.tileImageParent
                 tileImage.anchors.centerIn = tileImage.tileImageParent
-
+				updateOkButton()
 //                tileImageAnimation.start()
             }
 
