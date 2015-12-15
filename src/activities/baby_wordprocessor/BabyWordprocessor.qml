@@ -45,9 +45,11 @@ ActivityBase {
             id: flick
 
             anchors {
-                fill: parent
+                left: parent.left
+                right: parent.right
+                top: parent.top
+                bottom: bar.top
                 margins: 10
-                bottomMargin: bar.height
             }
             contentWidth: edit.paintedWidth
             contentHeight: edit.paintedHeight
@@ -69,7 +71,7 @@ ActivityBase {
                 id: edit
                 width: flick.width
                 height: flick.height
-                focus: true // FIXME: can get the focus when we enter the activity
+                focus: true
                 wrapMode: TextEdit.Wrap
                 onCursorRectangleChanged: flick.ensureVisible(cursorRectangle)
                 font {
@@ -81,7 +83,6 @@ ActivityBase {
                 }
                 cursorDelegate: Rectangle {
                     width: 10
-                    height: 10
                     color: 'red'
                 }
                 function insertText(text) {
