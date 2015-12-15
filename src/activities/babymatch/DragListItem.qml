@@ -108,17 +108,17 @@ Item {
                 if(backgroundImage.source == "")
                     leftWidget.z = 1
 
-//                var coord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.width/2,
-//                            tile.yCenter - tileImage.height/2)
-//                tileImage.moveImageX = coord.x
-//                tileImage.moveImageY = coord.y
+                var coord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.width/2,
+                            tile.yCenter - tileImage.height/2)
+                tileImage.moveImageX = coord.x
+                tileImage.moveImageY = coord.y
                 tileImage.currentTargetSpot = null
                 tileImage.tileImageParent = tile
                 toSmall()
-                tileImage.parent = tileImage.tileImageParent
-                tileImage.anchors.centerIn = tileImage.tileImageParent
-				updateOkButton()
-//                tileImageAnimation.start()
+                //tileImage.parent = tileImage.tileImageParent
+                //tileImage.anchors.centerIn = tileImage.tileImageParent
+				//updateOkButton()
+                tileImageAnimation.start()
             }
 
             function toSmall() {
@@ -193,17 +193,18 @@ Item {
                         tileImage.currentTargetSpot = closestSpot
                         tileImage.tileImageParent = backgroundImage
                         tileImage.toFull()
-//                        var coord = tileImage.parent.mapFromItem(backgroundImage,
-//                                                                 closestSpot.xCenter - tileImage.fullWidth/2,
-//                                                                 closestSpot.yCenter - tileImage.fullHeight/2)
-//                        tileImage.moveImageX = coord.x
-//                        tileImage.moveImageY = coord.y
-                        tileImage.parent = tileImage.tileImageParent
+                        var coord = tileImage.parent.mapFromItem(backgroundImage,
+                                                                 closestSpot.xCenter - tileImage.fullWidth/2,
+                                                                 closestSpot.yCenter - tileImage.fullHeight/2)
+                        tileImage.moveImageX = coord.x
+                        tileImage.moveImageY = coord.y
+                        //tileImage.parent = tileImage.tileImageParent
+                        tileImage.tileImageParent = tileImage.currentTargetSpot
                         tileImage.z = 100
-                        tileImage.anchors.centerIn = tileImage.currentTargetSpot
-//                        tileImageAnimation.start()
+                        //tileImage.anchors.centerIn = tileImage.currentTargetSpot
+                        tileImageAnimation.start()
                     }
-                    item.updateOkButton()
+                    //item.updateOkButton()
                     Activity.dumpSpot()
                 }
 
