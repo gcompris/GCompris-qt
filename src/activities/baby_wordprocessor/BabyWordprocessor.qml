@@ -54,6 +54,7 @@ ActivityBase {
             contentWidth: edit.paintedWidth
             contentHeight: edit.paintedHeight
             clip: true
+            flickableDirection: Flickable.VerticalFlick
 
             function ensureVisible(r)
             {
