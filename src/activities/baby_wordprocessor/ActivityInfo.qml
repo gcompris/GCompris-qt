@@ -23,12 +23,12 @@ ActivityInfo {
   icon: "baby_wordprocessor/baby_wordprocessor.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
   demo: false
-  title: "A baby wordprocessor"
-  description: "A simplistic word processor to let the children play around with a keyboard and see letters."
+  title: qsTr("A baby wordprocessor")
+  description: qsTr("A simplistic word processor to let the children play around with a keyboard and see letters.")
   //intro: "A simplistic word processor to play around with the keyboard"
-  goal: "Discover the keyboard and the letters."
+  goal: qsTr("Discover the keyboard and the letters.")
   prerequisite: ""
-  manual: "Just type in letters as in a wordprocessor."
+  manual: qsTr("Just type on the real or virtual keyboard like in a wordprocessor.")
   credit: ""
   section: "computer keyboard reading"
 }
