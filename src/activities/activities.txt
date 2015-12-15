@@ -11,6 +11,7 @@ align4-2players
 alphabet-sequence
 babymatch
 babyshapes
+baby_wordprocessor
 balancebox
 ballcatch
 braille_alphabets
