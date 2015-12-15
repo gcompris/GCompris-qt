@@ -159,7 +159,7 @@ ActivityBase {
                     event.key === Qt.Key_S) {
                 // Ctrl+S toggle show / hide section
                 ApplicationSettings.sectionVisible = !ApplicationSettings.sectionVisible
-            } else if(event.key === Qt.Key_Space) {
+            } else if(event.key === Qt.Key_Space && currentActiveGrid.currentItem) {
                 currentActiveGrid.currentItem.selectCurrentItem()
             }
         }
@@ -169,12 +169,12 @@ ActivityBase {
         }
         Keys.onTabPressed: currentActiveGrid = ((currentActiveGrid == activitiesGrid) ?
                                                     section : activitiesGrid);
-        Keys.onEnterPressed: currentActiveGrid.currentItem.selectCurrentItem();
-        Keys.onReturnPressed: currentActiveGrid.currentItem.selectCurrentItem();
-        Keys.onRightPressed: currentActiveGrid.moveCurrentIndexRight();
-        Keys.onLeftPressed: currentActiveGrid.moveCurrentIndexLeft();
-        Keys.onDownPressed: currentActiveGrid.moveCurrentIndexDown();
-        Keys.onUpPressed: currentActiveGrid.moveCurrentIndexUp();
+        Keys.onEnterPressed: if(currentActiveGrid.currentItem) currentActiveGrid.currentItem.selectCurrentItem();
+        Keys.onReturnPressed: if(currentActiveGrid.currentItem)  currentActiveGrid.currentItem.selectCurrentItem();
+        Keys.onRightPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexRight();
+        Keys.onLeftPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexLeft();
+        Keys.onDownPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexDown();
+        Keys.onUpPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexUp();
 
         GridView {
             id: section
