@@ -20,6 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import GCompris 1.0
 
 import "../../core"
 
@@ -68,6 +69,13 @@ ActivityBase {
                     contentY = r.y+r.height-height;
             }
 
+            GCText {
+                id: hintText
+                text: ""
+                fontSize: largeSize
+                visible: false
+            }
+
             TextEdit {
                 id: edit
                 width: flick.width
@@ -76,9 +84,10 @@ ActivityBase {
                 wrapMode: TextEdit.Wrap
                 onCursorRectangleChanged: flick.ensureVisible(cursorRectangle)
                 font {
-                    pointSize: 38
-                    capitalization: Font.AllUppercase
-                    bold: true
+                    pointSize: hintText.pointSize
+                    capitalization: ApplicationSettings.fontCapitalization
+                    weight: Font.DemiBold
+                    family: GCSingletonFontLoader.fontLoader.name
                     letterSpacing: 5
                     wordSpacing: 10
                 }
