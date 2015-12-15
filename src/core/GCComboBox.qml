@@ -163,7 +163,19 @@ Item {
 
         // Forward event to activity if key pressed is not one of the handled key
         // (ctrl+F should still resize the window for example)
-        Keys.onPressed: background.currentActivity.Keys.onPressed(event)
+        Keys.onPressed: {
+            if(event.key !== Qt.Key_Back) {
+                background.currentActivity.Keys.onPressed(event)
+            }
+        }
+        Keys.onReleased: {
+            if(event.key === Qt.Key_Back) {
+                // Keep the old value
+                discardChange();
+                hidePopUpAndRestoreFocus();
+                event.accepted = true
+            }
+        }
 
         Keys.onRightPressed: gridview.moveCurrentIndexRight();
         Keys.onLeftPressed: gridview.moveCurrentIndexLeft();
