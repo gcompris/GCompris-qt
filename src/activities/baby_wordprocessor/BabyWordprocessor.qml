@@ -92,8 +92,21 @@ ActivityBase {
                     wordSpacing: 10
                 }
                 cursorDelegate: Rectangle {
+                    id: cursor
                     width: 10
                     color: 'red'
+                    SequentialAnimation on opacity {
+                        running: true
+                        loops: Animation.Infinite
+                        PropertyAnimation {
+                            to: 0.2
+                            duration: 1000
+                        }
+                        PropertyAnimation {
+                            to: 1
+                            duration: 1000
+                        }
+                    }
                 }
                 function insertText(text) {
                     edit.insert(cursorPosition, text)
