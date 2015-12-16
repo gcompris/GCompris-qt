@@ -36,7 +36,6 @@ Item {
     property alias showOk : showOk
     property alias hideOk : hideOk
     property alias repeater : repeater
-    property int widgetWidth: view.iconSize
 
     ListModel {
         id: mymodel
@@ -49,6 +48,11 @@ Item {
         from: 0
         to: view.iconSize * 0.9
         duration: 300
+        onStopped: {
+            view.okShowed = true
+            instruction.show()
+        }
+
     }
     PropertyAnimation {
         id: hideOk
@@ -57,7 +61,7 @@ Item {
         from: view.iconSize * 0.9
         to: 0
         duration: 200
-        onStopped: {view.checkDisplayedGroup()}
+        onStopped: view.checkDisplayedGroup()
     }
 
     Image {
@@ -88,7 +92,6 @@ Item {
                 parent.height / iconSize - 2 :
                 parent.width / iconSize - 2
 
-        property int itemsDropped: 0
         property int nbDisplayedGroup: Math.ceil(model.count / nbItemsByGroup)
         property int iconSize: 80 * ApplicationInfo.ratio
         property int previousNavigation: 1
@@ -131,8 +134,8 @@ Item {
         function checkDisplayedGroup() {
             var i = currentDisplayedGroup * nbItemsByGroup 
             var groupEmpty = true
-            while(i < model.count && i <  (currentDisplayedGroup + 1) * nbItemsByGroup) {
-                if (repeater.itemAt(i).isInList) {
+            while(i < model.count && i < (currentDisplayedGroup + 1) * nbItemsByGroup) {
+                if (repeater.itemAt(i).dropStatus < 0) {
                     groupEmpty = false
                     break
                 }
@@ -159,23 +162,25 @@ Item {
             availablePieces.view.setPreviousNavigation()
         }
 
+        function areAllPlaced() {
+            for(var i = 0 ; i < model.count ; ++i) {
+                if(repeater.itemAt(i).dropStatus < 0) {
+                    return false
+                }
+            }
+            return true
+        }
+
         function checkAnswer() {
-            var win = true
             view.showGlow = true
             for(var i = 0 ; i < model.count ; ++i) {
-                if(repeater.itemAt(i).imageName != repeater.itemAt(i).answer.imgName) {
-                    win = false
-                    repeater.itemAt(i).tileImageGlow.setColor = "red"
+                if(repeater.itemAt(i).dropStatus !== 1) {
+                    return
                 }
-                else
-                    repeater.itemAt(i).tileImageGlow.setColor = "green"
             }
-            if(win)
-                Activity.win()
-            else
-                Activity.wrong()
+            Activity.win()
         }
-        
+
         Repeater {
             id: repeater
             property int currentIndex
@@ -187,7 +192,7 @@ Item {
                         repeater.itemAt(i).selected = true
                 }
                 if(currentIndex == -1)
-                    toolTip.visible = false
+                    toolTip.opacity = 0
             }
             DragListItem {
                 id: contactsDelegate

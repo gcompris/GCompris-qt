@@ -25,22 +25,21 @@ import "babymatch.js" as Activity
 Rectangle {
     id: dropCircle
     
-    property string dropCircleColor: "pink"
-    property string positionType
+    property string dropCircleColor: currentTileImageItem ? 'transparent' : 'pink'
     property string text
     property double posX
     property double posY
     property double imgHeight
     property double imgWidth
-    property int dropAreaSize
-    property string imageName
-    property int area: dragTarget.width * dragTarget.height
-    property alias factor: dragTarget.factor
+    property string imgName
+    property double xCenter: x + width / 2
+    property double yCenter: y + height / 2
+    property Item currentTileImageItem
 
     width: parent.width > parent.height ? parent.height/35 : parent.width/35
     height: width
     radius: width/2
-    z: Math.round(10000000/area) / 100
+    z: 200
     
     border.width: 1
     color: Activity.displayDropCircle ? dropCircleColor : "transparent"
@@ -49,79 +48,54 @@ Rectangle {
     x: posX * parent.width - width/2
     y: posY * parent.height - height/2
     
-    Image {
-        id: dropAreaImage
-        width: 0
-        height : 0
-        z: 0
-        anchors.centerIn: dropCircle
-        source: Activity.url + imageName
-    }
-    
-    DropArea {
-        id: dragTarget
-        
-        // Trying to adjust the drop precision. In this approach we make it relative
-        // to the number of spots.
-        property double factor
-        width: factor * dropCircle.width
-        height: factor * dropCircle.width
-        z: dropCircle.z
-        anchors.centerIn: parent
-        
-        property double xCenter: dropCircle.x + dropCircle.width/2
-        property double yCenter: dropCircle.y + dropCircle.height/2
-        property QtObject dragSource 
-        property string imgName: imageName
-        
-        states: [
-            State {
-                when: dragTarget.containsDrag && Activity.displayDropCircle
-                PropertyChanges {
-                    target: dropCircle
-                    color: "lightgreen"
-                }
-            }
-        ]
-        onDropped: {
-			if(dragSource === null) 
-                dragSource = dragTarget.drag.source
-            else if(dragSource != dragTarget.drag.source) {
-                dragSource.imageRemove()
-                dragSource = dragTarget.drag.source
-            }
-            dropCircle.dropCircleColor = "transparent"
-        }
-    }
-    
-    //Display a shadow of image, when the image is hovered over a drop area
+    // Display a shadow of image, when the image is hovered over a target area
     Image {
         id: targetImage
-        width: 0
-        height : 0
         fillMode: Image.PreserveAspectFit
-        z: 4
-        anchors.centerIn: dropCircle
-        source: ""
-        
-        states: State {
-                    when: dragTarget.containsDrag
-                    PropertyChanges {
-                        target: targetImage
-                        source: dragTarget.drag.source.source
-                        
-                        width: imgWidth ? imgWidth * dropCircle.parent.width : (dropCircle.parent.source == "" ? 
-							   dropCircle.parent.width * dragTarget.drag.source.sourceSize.width/dropCircle.parent.width : 
-							   dropCircle.parent.width * dragTarget.drag.source.sourceSize.width/
-							   dropCircle.parent.sourceSize.width)
-							   
-                        height: imgHeight ? imgHeight * dropCircle.parent.height : (dropCircle.parent.source == "" ? 
-								dropCircle.parent.height * dragTarget.drag.source.sourceSize.height/dropCircle.parent.height : 
-								dropCircle.parent.height * dragTarget.drag.source.sourceSize.height/
-								dropCircle.parent.sourceSize.height)
-								
-                        opacity: 0.5
-                    }
-                }
+        anchors.centerIn: parent
+        z : -1
+
+        onSourceChanged: console.log('targetImage', source)
+    }
+
+    function imageRemove() {
+        console.log('imageRemove')
+        if(currentTileImageItem)
+            currentTileImageItem.imageRemove()
+        currentTileImageItem = null
+    }
+
+    function imageAdd(tileImageItem) {
+        console.log('imageAdd')
+        currentTileImageItem = tileImageItem
+        console.log('imageAdd=', currentTileImageItem.source)
+        dropCircle.color = dropCircleColor
+    }
+
+    function show(tileImageItem) {
+        if(Activity.displayDropCircle)
+            dropCircle.color = "lightgreen"
+
+        targetImage.source = tileImageItem.source
+        targetImage.width = tileImageItem.fullWidth
+        targetImage.height = tileImageItem.fullHeight
+        if(currentTileImageItem) {
+            currentTileImageItem.opacity = 0
+        }
+        if (tileImageItem.parentIsTile) {
+            targetImage.opacity = 1
+            tileImageItem.opacity = 0.5
+            dropCircle.z = 100
+        }
+        else
+            targetImage.opacity = 0.5
+    }
+
+    function hide() {
+        dropCircle.color = Activity.displayDropCircle ? dropCircleColor : "transparent"
+        targetImage.opacity = 0
+        dropCircle.z = 200
+        if(currentTileImageItem)
+            currentTileImageItem.opacity = 1
     }
 }

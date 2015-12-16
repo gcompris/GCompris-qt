@@ -29,60 +29,41 @@ Item {
     width: tile.width
     height: tile.height
 
+    property string source: imgName
     property double heightInColumn
     property double widthInColumn
     property double tileWidth
     property double tileHeight
-    property string imageName: imgName
-    property string imageSound: imgSound
-    property alias tileImageGlow: tileImageGlow
     property QtObject answer: tileImage.parent
-    property bool isInList: tileImage.parent == tile
     property bool selected: false
+    property alias dropStatus: tileImage.dropStatus
 
     signal pressed
 
     ParallelAnimation {
         id: tileImageAnimation
-        NumberAnimation { 
+        NumberAnimation {
             target: tileImage
-            easing.type: Easing.OutQuad 
-            property: "x" 
-            to: tileImage.moveImageX 
+            easing.type: Easing.OutQuad
+            property: "x"
+            to: tileImage.moveImageX
             duration: 430
         }
-        NumberAnimation { 
+        NumberAnimation {
             target: tileImage
             easing.type: Easing.OutQuad
             property: "y"
-            to: tileImage.moveImageY 
+            to: tileImage.moveImageY
             duration: 430
         }
         onStarted: {
             tileImage.anchors.centerIn = undefined
-            if(view.showGlow)
-                view.showGlow = false
+            view.showGlow = false
         }
         onStopped: {
             tileImage.parent = tileImage.tileImageParent
-            tileImage.anchors.centerIn = tileImage.parent
-            view.itemsDropped = view.itemsDropped + tileImage.dropNo
-            if(view.itemsDropped == mymodel.count) {
-                showOk.start()
-                view.okShowed = true
-                instruction.show()
-            }
-            else if(view.okShowed) {
-                hideOk.start()
-                view.okShowed = false
-            }
-            if(!view.okShowed && tileImage.dropNo == 1) 
-                view.checkDisplayedGroup()
-            if(!view.okShowed && tileImage.dropNo == -1) {
-                view.displayedGroup[parseInt(index/view.nbItemsByGroup)] = true
-                view.setPreviousNavigation()
-                view.setNextNavigation()
-            }
+            tileImage.anchors.centerIn = tileImage.currentTargetSpot == null ? tileImage.parent : tileImage.currentTargetSpot
+            updateOkButton()
         }
     }
     
@@ -95,138 +76,164 @@ Item {
         border.width: 3
         radius: 2
         
-        property double xCenter: tile.x + tile.width/2
-        property double yCenter: tile.y + tile.height/2
-        property bool colorChange: true
+        property double xCenter: tile.x + tile.width / 2
+        property double yCenter: tile.y + tile.height / 2
 
         Image {
             id: tileImage
             anchors.centerIn: parent
-            height: Activity.glowEnabled ? heightInColumn * 1.1 : heightInColumn
-            width: Activity.glowEnabled ? widthInColumn * 1.1 : widthInColumn
+            width: smallWidth
+            height: smallHeight
             fillMode: Image.PreserveAspectFit
             source: Activity.url + imgName
-            
-            property QtObject dragTarget
+
+            property double smallWidth: Activity.glowEnabled ? widthInColumn * 1.1 : widthInColumn
+            property double smallHeight: Activity.glowEnabled ? heightInColumn * 1.1 : heightInColumn
+            property double fullWidth: backgroundImage.source == "" ?
+                                           backgroundImage.width * tileImage.sourceSize.width/backgroundImage.width :
+                                           backgroundImage.width * tileImage.sourceSize.width/backgroundImage.sourceSize.width
+            property double fullHeight: backgroundImage.source == "" ?
+                                            backgroundImage.height * tileImage.sourceSize.height/backgroundImage.height :
+                                            backgroundImage.height * tileImage.sourceSize.height/backgroundImage.sourceSize.height
             property QtObject tileImageParent
             property double moveImageX
             property double moveImageY
-            property int dropNo
-            property bool dropping: false
-            
+            property int dropStatus: -1 // -1: Nothing / 0: Bad pos / 1: Good pos
+            property bool small: true
+            property Item currentTargetSpot
+            property bool pressedOnce
+            property bool parentIsTile : parent == tile ? true : false
+
             function imageRemove() {
+                console.log('imageRemove=', source)
+                dropStatus = -1
                 if(backgroundImage.source == "")
                     leftWidget.z = 1
-                
-                tileImage.state = "INITIAL"
-                var coord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.width/2, 
-							tile.yCenter - tileImage.height/2)
+
+                var coord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.width/2,
+                            tile.yCenter - tileImage.height/2)
                 tileImage.moveImageX = coord.x
                 tileImage.moveImageY = coord.y
+                tileImage.currentTargetSpot = null
                 tileImage.tileImageParent = tile
-                tileImage.dragTarget = null
-                tile.colorChange = true
-                
-                if(tileImage.parent != tile)
-                    tileImage.dropNo = -1
-                else
-                    tileImage.dropNo = 0
-                
+                toSmall()
+                //tileImage.parent = tileImage.tileImageParent
+                //tileImage.anchors.centerIn = tileImage.tileImageParent
+                //updateOkButton()
                 tileImageAnimation.start()
             }
-            
-            MouseArea {
+
+            function toSmall() {
+                width = smallWidth
+                height = smallHeight
+                small = true
+            }
+
+            function toFull() {
+                width = fullWidth
+                height = fullHeight
+                small = false
+            }
+
+            MultiPointTouchArea {
                 id: mouseArea
+                touchPoints: [ TouchPoint { id: point1 } ]
+                property real startX
+                property real startY
 
-                width: parent.width; height: parent.height
                 anchors.fill: parent
-                drag.target: parent
-                hoverEnabled: true
-
-                onEntered: {
-                    item.pressed()
-                    if(toolTipText != "") {
-                        toolTip.text = toolTipText
-                        toolTip.visible = true
-                    }
-                }
-                onExited: {
-                }
 
                 onPressed: {
                     item.pressed()
-                    if(toolTipText != "") {
-                        toolTip.text = toolTipText
-                        toolTip.visible = true
-                    }
+                    tileImage.toSmall()
+                    tileImage.anchors.centerIn = undefined
+                    tileImage.dropStatus = -1
+                    item.hideOkButton()
+                    startX = point1.x
+                    startY = point1.y
+
+                    toolTip.show(toolTipText)
                     if(tileImage.parent == tile)
                         leftWidget.z = 3
                     else
                         leftWidget.z = 1
-                    
-                    if(imageSound)
-                        activity.audioVoices.play(ApplicationInfo.getAudioFilePath(imageSound))
-                    
-                    tileImage.anchors.centerIn = undefined
-                    if (tileImage.dragTarget != null) {
-                        tileImage.dragTarget.parent.dropCircleColor = "pink"
-                        tileImage.dragTarget.dragSource = null
+
+                    if(tileImage.currentTargetSpot) {
+                        tileImage.currentTargetSpot.currentTileImageItem = null
+                        tileImage.currentTargetSpot = null
+                    }
+
+                    if(imgSound)
+                        activity.audioVoices.play(ApplicationInfo.getAudioFilePath(imgSound))
+                    tileImage.pressedOnce = true
+                }
+
+                onUpdated: {
+                    var moveX = point1.x - startX
+                    var moveY = point1.y - startY
+                    parent.x = parent.x + moveX
+                    parent.y = parent.y + moveY
+                    tileImage.opacity = 1
+                    Activity.highLightSpot(getClosestSpot(), tileImage)
+                }
+
+                onReleased: {                                       
+                    if (tileImage.pressedOnce) {
+                        console.log('onReleased')
+                        tileImage.opacity = 1
+                        tileImage.pressedOnce = false
+                        Activity.highLightSpot(null, tileImage)
+                        var closestSpot = getClosestSpot()
+                        updateFoundStatus(closestSpot)
+                        if(closestSpot === null) {
+                            console.log('  closestSpot === null')
+                            if(tileImage.currentTargetSpot)
+                                tileImage.currentTargetSpot.imageRemove()
+                            else
+                                tileImage.imageRemove()
+                        } else {
+                            console.log('  closestSpot !== null')
+                            if(tileImage.currentTargetSpot !== closestSpot) {
+                                closestSpot.imageRemove()
+                                closestSpot.imageAdd(tileImage)
+                            }
+                            tileImage.currentTargetSpot = closestSpot
+                            tileImage.tileImageParent = backgroundImage
+                            tileImage.toFull()
+                            var coord = tileImage.parent.mapFromItem(backgroundImage,
+                                                                     closestSpot.xCenter - tileImage.fullWidth/2,
+                                                                     closestSpot.yCenter - tileImage.fullHeight/2)
+                            tileImage.moveImageX = coord.x
+                            tileImage.moveImageY = coord.y
+                            //tileImage.parent = tileImage.tileImageParent
+                            tileImage.z = 100
+                            //tileImage.anchors.centerIn = tileImage.currentTargetSpot
+                            tileImageAnimation.start()
+                        }
+                        //item.updateOkButton()
+                        Activity.dumpSpot()
                     }
                 }
 
-                onReleased: {
-                    if(tileImage.Drag.target === null)
-                        tileImage.imageRemove()
-                    else {
-                        tileImage.dragTarget = tileImage.Drag.target
-                        tileImage.state = "DROPPED"
-                        tile.colorChange = false
-                        tileImage.dropping = true
-                        var coord = tileImage.parent.mapFromItem(backgroundImage, tileImage.Drag.target.xCenter - 
-									tileImage.width/2, tileImage.Drag.target.yCenter - tileImage.height/2)
-                        tileImage.moveImageX = coord.x
-                        tileImage.moveImageY = coord.y
-                        tileImage.Drag.target.dropped(tileImage.Drag) // Emit signal manually
-                        
-                        if(tileImage.parent == tile)
-                            tileImage.dropNo = 1
-                        else
-                            tileImage.dropNo = 0
-                        
-                        tileImage.tileImageParent = tileImage.Drag.target
-                        tileImageAnimation.start()
+                function getClosestSpot() {
+                    var coordImg = tileImage.parent.mapToItem(backgroundImage,
+                                                              tileImage.x + tileImage.width/2,
+                                                              tileImage.y + tileImage.height/2)
+                    return Activity.getClosestSpot(coordImg.x, coordImg.y)
+                }
+
+                function updateFoundStatus(closestSpot) {
+                    console.log('updateFoundStatus')
+                    if(!closestSpot) {
+                        tileImage.dropStatus = -1
+                        return
                     }
+                    if(closestSpot.imgName === imgName)
+                           tileImage.dropStatus = 1
+                    else
+                        tileImage.dropStatus = 0
                 }
             }
-            
-            Drag.active: mouseArea.drag.active
-            Drag.hotSpot.x: tileImage.width/2
-            Drag.hotSpot.y: tileImage.height/2
-
-            states: [
-                State {
-                    name: "INITIAL"
-                    PropertyChanges {
-                        target: tileImage
-                        height: Activity.glowEnabled ? heightInColumn * 1.1 : heightInColumn
-                        width: Activity.glowEnabled ? widthInColumn * 1.1 : widthInColumn
-                    }
-                },
-                State {
-                    name: "DROPPED"
-                    PropertyChanges {
-                        target: tileImage
-                        
-                        height: imgHeight ? imgHeight * backgroundImage.height : (backgroundImage.source == "" ? 
-								backgroundImage.height * tileImage.sourceSize.height/backgroundImage.height : 
-								backgroundImage.height * tileImage.sourceSize.height/backgroundImage.sourceSize.height) 
-								
-                        width: imgWidth ? imgWidth * backgroundImage.width : (backgroundImage.source == "" ? 
-							   backgroundImage.width * tileImage.sourceSize.width/backgroundImage.width : 
-							   backgroundImage.width * tileImage.sourceSize.width/backgroundImage.sourceSize.width)
-                    }
-                }
-            ]
             
             Image {
                 id: wrongAnswer
@@ -234,33 +241,48 @@ Item {
                 height: heightInColumn * 0.3
                 width: widthInColumn * 0.3
                 fillMode: Image.PreserveAspectFit
+                z: 10
                 source:"qrc:/gcompris/src/activities/babymatch/resource/error.svg"
-                visible: view.showGlow && tileImageGlow.setColor == "red"
+                visible: view.showGlow && tileImage.dropStatus === 0
             }
 
         }
         
         Glow {
-            id: tileImageBorder
-            parent: tileImage.parent
-            anchors.fill: tileImage
-            radius: 0.7
-            samples: 2
-            color: view.showGlow && Activity.glowEnabled ? "black" : "transparent"
-            source: tileImage
-            spread: 1.0
-        }
-        
-        Glow {
             id: tileImageGlow
-            property string setColor: "transparent"
             parent: tileImage.parent
             anchors.fill: tileImage
-            radius: view.showGlow && Activity.glowEnabled ? 9 : 0
-            samples: 18
-            color: view.showGlow && Activity.glowEnabled ? setColor : "transparent"
+            radius: tileImage.dropStatus === 0 ? 9 : 0.7
+            samples: tileImage.dropStatus === 0 ? 18 : 2
+            color: view.showGlow && Activity.glowEnabled ?
+                       (tileImage.dropStatus === 0 ? "red" : "black") :
+                       'transparent'
             source: tileImage
-            spread: 0.95
+            spread: tileImage.dropStatus === 0 ? 0.95 : 1
+            opacity: tileImage.opacity
+        }
+    }
+
+    function hideOkButton() {
+        if(view.okShowed) {
+            hideOk.start()
+            view.okShowed = false
+            view.showGlow = false
+        }
+    }
+
+    function updateOkButton() {
+        if(view.areAllPlaced()) {
+            showOk.start()
+        } 
+        console.log('==== dropStatus', tileImage.dropStatus)
+        if(!view.okShowed && tileImage.dropStatus >= 0)
+            view.checkDisplayedGroup()
+        if(!view.okShowed && tileImage.dropStatus == -1) {
+            view.displayedGroup[parseInt(index/view.nbItemsByGroup)] = true
+            view.setPreviousNavigation()
+            view.setNextNavigation()
+            view.checkDisplayedGroup()
         }
     }
 }
