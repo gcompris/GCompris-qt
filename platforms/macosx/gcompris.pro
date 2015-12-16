@@ -8,7 +8,7 @@ QT += qml quick gui multimedia network xmlpatterns svg xml core
 APPCERT = "3rd Party Mac Developer Application: Bruno Coudoin"
 INSTALLERCERT = "3rd Party Mac Developer Installer: Bruno Coudoin"
 BUNDLEID = net.gcompris
-ENTITLEMENTS = gcompris.entitlements
+ENTITLEMENTS = platform/macosx/gcompris.entitlements
 
 QMAKE_CFLAGS_RELEASE = $$QMAKE_CFLAGS_RELEASE_WITH_DEBUGINFO
 QMAKE_CXXFLAGS_RELEASE = $$QMAKE_CXXFLAGS_RELEASE_WITH_DEBUGINFO
@@ -58,12 +58,12 @@ codesign.commands += macdeployqt $${TARGET}.app;
 #codesign -s "$APPCERT" -i $BUNDLEID $${TARGET}.app/Contents/PlugIns/imageformats/libqjpeg.dylib
     
 # Sign the application bundle, using the provided entitlements
-codesign.commands += codesign -f -s $${APPCERT} -v –entitlements $${ENTITLEMENTS} $${TARGET}.app;
+codesign.commands += codesign -f -s \"$${APPCERT}\" -v –entitlements $${ENTITLEMENTS} $${TARGET}.app;
 
 product.depends += all
     
 # Build the product package
-product.commands += productbuild --component $${TARGET}.app /Applications --sign $${INSTALLERCERT} $${TARGET}.pkg;
+product.commands += productbuild --component $${TARGET}.app /Applications --sign \"$${INSTALLERCERT}\" $${TARGET}.pkg;
 
 QMAKE_EXTRA_TARGETS += codesign product copyfiles
 
