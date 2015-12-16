@@ -244,9 +244,3 @@ function highLightSpot(stopItem, tile) {
         }
     }
 }
-function dumpSpot() {
-    for(var i = 0 ; i < spots.length ; ++ i) {
-        if(spots[i].currentTileImageItem)
-            console.log(i, spots[i].currentTileImageItem.source)
-    }
-}

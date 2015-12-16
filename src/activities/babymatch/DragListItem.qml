@@ -105,7 +105,6 @@ Item {
             property bool parentIsTile : parent == tile ? true : false
 
             function imageRemove() {
-                console.log('imageRemove=', source)
                 dropStatus = -1
                 if(backgroundImage.source == "")
                     leftWidget.z = 1
@@ -117,9 +116,6 @@ Item {
                 tileImage.currentTargetSpot = null
                 tileImage.tileImageParent = tile
                 toSmall()
-                //tileImage.parent = tileImage.tileImageParent
-                //tileImage.anchors.centerIn = tileImage.tileImageParent
-                //updateOkButton()
                 tileImageAnimation.start()
             }
 
@@ -179,20 +175,17 @@ Item {
 
                 onReleased: {                                       
                     if (tileImage.pressedOnce) {
-                        console.log('onReleased')
                         tileImage.opacity = 1
                         tileImage.pressedOnce = false
                         Activity.highLightSpot(null, tileImage)
                         var closestSpot = getClosestSpot()
                         updateFoundStatus(closestSpot)
                         if(closestSpot === null) {
-                            console.log('  closestSpot === null')
                             if(tileImage.currentTargetSpot)
                                 tileImage.currentTargetSpot.imageRemove()
                             else
                                 tileImage.imageRemove()
                         } else {
-                            console.log('  closestSpot !== null')
                             if(tileImage.currentTargetSpot !== closestSpot) {
                                 closestSpot.imageRemove()
                                 closestSpot.imageAdd(tileImage)
@@ -205,13 +198,9 @@ Item {
                                                                      closestSpot.yCenter - tileImage.fullHeight/2)
                             tileImage.moveImageX = coord.x
                             tileImage.moveImageY = coord.y
-                            //tileImage.parent = tileImage.tileImageParent
                             tileImage.z = 100
-                            //tileImage.anchors.centerIn = tileImage.currentTargetSpot
                             tileImageAnimation.start()
                         }
-                        //item.updateOkButton()
-                        Activity.dumpSpot()
                     }
                 }
 
@@ -223,7 +212,6 @@ Item {
                 }
 
                 function updateFoundStatus(closestSpot) {
-                    console.log('updateFoundStatus')
                     if(!closestSpot) {
                         tileImage.dropStatus = -1
                         return
@@ -275,7 +263,6 @@ Item {
         if(view.areAllPlaced()) {
             showOk.start()
         } 
-        console.log('==== dropStatus', tileImage.dropStatus)
         if(!view.okShowed && tileImage.dropStatus >= 0)
             view.checkDisplayedGroup()
         if(!view.okShowed && tileImage.dropStatus == -1) {
