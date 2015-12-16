@@ -102,6 +102,7 @@ Item {
             property bool small: true
             property Item currentTargetSpot
             property bool pressedOnce
+            property bool parentIsTile : parent == tile ? true : false
 
             function imageRemove() {
                 console.log('imageRemove=', source)
@@ -172,12 +173,14 @@ Item {
                     var moveY = point1.y - startY
                     parent.x = parent.x + moveX
                     parent.y = parent.y + moveY
+                    tileImage.opacity = 1
                     Activity.highLightSpot(getClosestSpot(), tileImage)
                 }
 
                 onReleased: {                                       
                     if (tileImage.pressedOnce) {
                         console.log('onReleased')
+                        tileImage.opacity = 1
                         tileImage.pressedOnce = false
                         Activity.highLightSpot(null, tileImage)
                         var closestSpot = getClosestSpot()

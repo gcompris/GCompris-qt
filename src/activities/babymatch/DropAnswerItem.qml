@@ -53,6 +53,7 @@ Rectangle {
         id: targetImage
         fillMode: Image.PreserveAspectFit
         anchors.centerIn: parent
+        z : -1
 
         onSourceChanged: console.log('targetImage', source)
     }
@@ -81,12 +82,19 @@ Rectangle {
         if(currentTileImageItem) {
             currentTileImageItem.opacity = 0
         }
-        targetImage.opacity = 0.5
+        if (tileImageItem.parentIsTile) {
+            targetImage.opacity = 1
+            tileImageItem.opacity = 0.5
+            dropCircle.z = 100
+        }
+        else
+            targetImage.opacity = 0.5
     }
 
     function hide() {
         dropCircle.color = Activity.displayDropCircle ? dropCircleColor : "transparent"
         targetImage.opacity = 0
+        dropCircle.z = 200
         if(currentTileImageItem)
             currentTileImageItem.opacity = 1
     }
