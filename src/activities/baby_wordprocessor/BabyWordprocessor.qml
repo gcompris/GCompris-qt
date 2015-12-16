@@ -21,6 +21,7 @@
  */
 import QtQuick 2.1
 import GCompris 1.0
+import QtQuick.Controls 1.0
 
 import "../../core"
 
@@ -42,12 +43,46 @@ ActivityBase {
         }
         onStart: edit.forceActiveFocus();
 
+        Column {
+            id: controls
+            width: 200 * ApplicationInfo.ratio
+            anchors {
+                right: parent.right
+                top: parent.top
+                bottom: bar.top
+                margins: 10
+            }
+            spacing: 10
+
+            Button {
+                style: GCButtonStyle {}
+                height: 30 * ApplicationInfo.ratio
+                width: parent.width
+                text: qsTr("Title")
+                onClicked: edit.formatLineWith('h2')
+            }
+            Button {
+                style: GCButtonStyle {}
+                height: 30 * ApplicationInfo.ratio
+                width: parent.width
+                text: qsTr("Subtitle")
+                onClicked: edit.formatLineWith('h3')
+            }
+            Button {
+                style: GCButtonStyle {}
+                height: 30 * ApplicationInfo.ratio
+                width: parent.width
+                text: qsTr("Paragraph")
+                onClicked: edit.formatLineWith('p')
+            }
+        }
+
         Flickable {
             id: flick
 
             anchors {
                 left: parent.left
-                right: parent.right
+                right: controls.left
                 top: parent.top
                 bottom: bar.top
                 margins: 10
@@ -69,13 +104,6 @@ ActivityBase {
                     contentY = r.y+r.height-height;
             }
 
-            GCText {
-                id: hintText
-                text: ""
-                fontSize: largeSize
-                visible: false
-            }
-
             TextEdit {
                 id: edit
                 width: flick.width
@@ -83,8 +111,9 @@ ActivityBase {
                 focus: true
                 wrapMode: TextEdit.Wrap
                 onCursorRectangleChanged: flick.ensureVisible(cursorRectangle)
+                textFormat: TextEdit.RichText
                 font {
-                    pointSize: hintText.pointSize
+                    pointSize: (18 + ApplicationSettings.baseFontSize) * ApplicationInfo.fontRatio
                     capitalization: ApplicationSettings.fontCapitalization
                     weight: Font.DemiBold
                     family: GCSingletonFontLoader.fontLoader.name
@@ -94,6 +123,9 @@ ActivityBase {
                 cursorDelegate: Rectangle {
                     id: cursor
                     width: 10
+                    // height should be set automatically as mention in cursorRectangle property
+                    // documentation but it does not work
+                    height: parent.cursorRectangle.height
                     color: 'red'
                     SequentialAnimation on opacity {
                         running: true
@@ -116,6 +148,25 @@ ActivityBase {
                         moveCursorSelection(cursorPosition - 1, TextEdit.SelectCharacters)
                         cut()
                     }
+                }
+                function formatLineWith(tag) {
+                    var text = getText(0, length)
+                    var initialPosition = cursorPosition
+                    var first = cursorPosition - 1
+                    for(; first >= 0; first--) {
+                        if(text.charCodeAt(first) === 8233)
+                            break
+                    }
+                    first++
+                    var last = cursorPosition
+                    for(; last < text.length; last++) {
+                        if(text.charCodeAt(last) === 8233)
+                            break
+                    }
+                    var line = getText(first, last)
+                    remove(first, last)
+                    insert(first, '<' + tag + '>' + line + '</' + tag + '>')
+                    cursorPosition = initialPosition
                 }
             }
         }
