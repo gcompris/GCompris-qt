@@ -62,7 +62,7 @@ Item {
         }
         onStopped: {
             tileImage.parent = tileImage.tileImageParent
-            tileImage.anchors.centerIn = tileImage.parent
+            tileImage.anchors.centerIn = tileImage.currentTargetSpot == null ? tileImage.parent : tileImage.currentTargetSpot
             updateOkButton()
         }
     }
@@ -101,6 +101,8 @@ Item {
             property int dropStatus: -1 // -1: Nothing / 0: Bad pos / 1: Good pos
             property bool small: true
             property Item currentTargetSpot
+            property bool pressedOnce
+            property bool parentIsTile : parent == tile ? true : false
 
             function imageRemove() {
                 console.log('imageRemove=', source)
@@ -108,17 +110,17 @@ Item {
                 if(backgroundImage.source == "")
                     leftWidget.z = 1
 
-//                var coord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.width/2,
-//                            tile.yCenter - tileImage.height/2)
-//                tileImage.moveImageX = coord.x
-//                tileImage.moveImageY = coord.y
+                var coord = tileImage.parent.mapFromItem(tile, tile.xCenter - tileImage.width/2,
+                            tile.yCenter - tileImage.height/2)
+                tileImage.moveImageX = coord.x
+                tileImage.moveImageY = coord.y
                 tileImage.currentTargetSpot = null
                 tileImage.tileImageParent = tile
                 toSmall()
-                tileImage.parent = tileImage.tileImageParent
-                tileImage.anchors.centerIn = tileImage.tileImageParent
-				updateOkButton()
-//                tileImageAnimation.start()
+                //tileImage.parent = tileImage.tileImageParent
+                //tileImage.anchors.centerIn = tileImage.tileImageParent
+                //updateOkButton()
+                tileImageAnimation.start()
             }
 
             function toSmall() {
@@ -163,6 +165,7 @@ Item {
 
                     if(imgSound)
                         activity.audioVoices.play(ApplicationInfo.getAudioFilePath(imgSound))
+                    tileImage.pressedOnce = true
                 }
 
                 onUpdated: {
@@ -170,41 +173,46 @@ Item {
                     var moveY = point1.y - startY
                     parent.x = parent.x + moveX
                     parent.y = parent.y + moveY
+                    tileImage.opacity = 1
                     Activity.highLightSpot(getClosestSpot(), tileImage)
                 }
 
-                onReleased: {
-                    console.log('onReleased')
-                    Activity.highLightSpot(null, tileImage)
-                    var closestSpot = getClosestSpot()
-                    updateFoundStatus(closestSpot)
-                    if(closestSpot === null) {
-                        console.log('  closestSpot === null')
-                        if(tileImage.currentTargetSpot)
-                            tileImage.currentTargetSpot.imageRemove()
-                        else
-                            tileImage.imageRemove()
-                    } else {
-                        console.log('  closestSpot !== null')
-                        if(tileImage.currentTargetSpot !== closestSpot) {
-                            closestSpot.imageRemove()
-                            closestSpot.imageAdd(tileImage)
+                onReleased: {                                       
+                    if (tileImage.pressedOnce) {
+                        console.log('onReleased')
+                        tileImage.opacity = 1
+                        tileImage.pressedOnce = false
+                        Activity.highLightSpot(null, tileImage)
+                        var closestSpot = getClosestSpot()
+                        updateFoundStatus(closestSpot)
+                        if(closestSpot === null) {
+                            console.log('  closestSpot === null')
+                            if(tileImage.currentTargetSpot)
+                                tileImage.currentTargetSpot.imageRemove()
+                            else
+                                tileImage.imageRemove()
+                        } else {
+                            console.log('  closestSpot !== null')
+                            if(tileImage.currentTargetSpot !== closestSpot) {
+                                closestSpot.imageRemove()
+                                closestSpot.imageAdd(tileImage)
+                            }
+                            tileImage.currentTargetSpot = closestSpot
+                            tileImage.tileImageParent = backgroundImage
+                            tileImage.toFull()
+                            var coord = tileImage.parent.mapFromItem(backgroundImage,
+                                                                     closestSpot.xCenter - tileImage.fullWidth/2,
+                                                                     closestSpot.yCenter - tileImage.fullHeight/2)
+                            tileImage.moveImageX = coord.x
+                            tileImage.moveImageY = coord.y
+                            //tileImage.parent = tileImage.tileImageParent
+                            tileImage.z = 100
+                            //tileImage.anchors.centerIn = tileImage.currentTargetSpot
+                            tileImageAnimation.start()
                         }
-                        tileImage.currentTargetSpot = closestSpot
-                        tileImage.tileImageParent = backgroundImage
-                        tileImage.toFull()
-//                        var coord = tileImage.parent.mapFromItem(backgroundImage,
-//                                                                 closestSpot.xCenter - tileImage.fullWidth/2,
-//                                                                 closestSpot.yCenter - tileImage.fullHeight/2)
-//                        tileImage.moveImageX = coord.x
-//                        tileImage.moveImageY = coord.y
-                        tileImage.parent = tileImage.tileImageParent
-                        tileImage.z = 100
-                        tileImage.anchors.centerIn = tileImage.currentTargetSpot
-//                        tileImageAnimation.start()
+                        //item.updateOkButton()
+                        Activity.dumpSpot()
                     }
-                    item.updateOkButton()
-                    Activity.dumpSpot()
                 }
 
                 function getClosestSpot() {
@@ -266,9 +274,7 @@ Item {
     function updateOkButton() {
         if(view.areAllPlaced()) {
             showOk.start()
-        } else if(view.okShowed) {
-            hideOkButton()
-        }
+        } 
         console.log('==== dropStatus', tileImage.dropStatus)
         if(!view.okShowed && tileImage.dropStatus >= 0)
             view.checkDisplayedGroup()
@@ -276,6 +282,7 @@ Item {
             view.displayedGroup[parseInt(index/view.nbItemsByGroup)] = true
             view.setPreviousNavigation()
             view.setNextNavigation()
+            view.checkDisplayedGroup()
         }
     }
 }
