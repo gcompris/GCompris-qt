@@ -68,6 +68,7 @@ Rectangle {
         console.log('imageAdd')
         currentTileImageItem = tileImageItem
         console.log('imageAdd=', currentTileImageItem.source)
+        dropCircle.color = dropCircleColor
     }
 
     function show(tileImageItem) {
