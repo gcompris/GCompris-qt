@@ -52,8 +52,6 @@ ActivityBase {
         signal start
         signal stop
 
-        readonly property bool isPortrait: (height > width)
-
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -68,8 +66,9 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
-            property int cellSize: Math.min(background.width / (8 + 2),
-                                            background.height / (8 + barHeightAddon))
+            property bool isPortrait: (background.height > background.width)
+            property int cellSize: (items.isPortrait===true)?Math.min(background.width / (8 + 2), (background.height-controls.height) / (8 + 1 + barHeightAddon)) :
+                                             Math.min(background.width / (8 + 2), background.height / (8 + barHeightAddon))
             property variant fen: activity.fen
             property bool twoPlayer: activity.twoPlayers
             property bool difficultyByLevel: activity.difficultyByLevel
@@ -83,7 +82,7 @@ ActivityBase {
             property bool blackTurn
             property bool gameOver
             property string message
-            property alias trigComputerMove: trigComputerMove            
+            property alias trigComputerMove: trigComputerMove
 
             Behavior on cellSize { PropertyAnimation { easing.type: Easing.InOutQuad; duration: 1000 } }
         }
@@ -91,18 +90,17 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        // TODO Imprement a vertical layout
         Grid {
-            id: grid1
             anchors {
                 top: parent.top
                 topMargin: items.cellSize / 2
                 leftMargin: 10 * ApplicationInfo.ratio
                 rightMargin: 10 * ApplicationInfo.ratio
             }
-            columns: (isPortrait==true)?1:3
-            rows: (isPortrait==true)?2:1
-            width: background.width
+            columns: (items.isPortrait==true)?1:3
+            rows: (items.isPortrait==true)?2:1
+            width: (items.isPortrait==true)?undefined:background.width
+            anchors.horizontalCenter: parent.horizontalCenter
             spacing: 10
             horizontalItemAlignment: Grid.AlignHCenter
             verticalItemAlignment: Grid.AlignVCenter
@@ -114,7 +112,6 @@ ActivityBase {
                     leftMargin: 10
                     rightMargin: 10
                 }
-
                 width: Math.max(undo.width * 1.2,
                                 Math.min(
                                     (background.width * 0.9 - undo.width - chessboard.width),
@@ -165,28 +162,13 @@ ActivityBase {
                 }
 
                 Button {
-                    id: swap
-
                     anchors.horizontalCenter: parent.horizontalCenter
-
-                    Text {
-                          id: text_swap
-                          width: (contentWidth>150)?200:undefined
-                          text: qsTr("Swap");
-                          wrapMode: Text.WordWrap
-                          fontSizeMode: Text.VerticalFit
-                          font.pointSize : 32
-                          anchors.margins: 15
-                    }
-
-                    width: text_swap.width
-                    height: text_swap.height
+                    height: 30 * ApplicationInfo.ratio
+                    text: qsTr("Swap");
                     style: GCButtonStyle {}
                     enabled: items.twoPlayer
                     opacity: enabled
-                    onClicked: {
-                        chessboard.swap()
-                    }
+                    onClicked: chessboard.swap()
                 }
             }
 
@@ -386,14 +368,6 @@ ActivityBase {
 
         Bonus {
             id: bonus
-        }
-
-
-        function functie(nume) {
-            if (isPortrait==true)
-               anchors.horizontalCenter = nume.horizontalCenter
-            else
-                anchors.horizontalCenter = nume.horizontalCenter
         }
     }
 
