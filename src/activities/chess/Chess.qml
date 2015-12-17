@@ -52,6 +52,8 @@ ActivityBase {
         signal start
         signal stop
 
+        readonly property bool isPortrait: (height > width)
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -91,14 +93,15 @@ ActivityBase {
 
         // TODO Imprement a vertical layout
         Grid {
+            id: grid1
             anchors {
                 top: parent.top
                 topMargin: items.cellSize / 2
                 leftMargin: 10 * ApplicationInfo.ratio
                 rightMargin: 10 * ApplicationInfo.ratio
             }
-            columns: 3
-            rows: 1
+            columns: (isPortrait==true)?1:3
+            rows: (isPortrait==true)?2:1
             width: background.width
             spacing: 10
             horizontalItemAlignment: Grid.AlignHCenter
@@ -111,6 +114,7 @@ ActivityBase {
                     leftMargin: 10
                     rightMargin: 10
                 }
+
                 width: Math.max(undo.width * 1.2,
                                 Math.min(
                                     (background.width * 0.9 - undo.width - chessboard.width),
@@ -161,13 +165,28 @@ ActivityBase {
                 }
 
                 Button {
+                    id: swap
+
                     anchors.horizontalCenter: parent.horizontalCenter
-                    height: 30 * ApplicationInfo.ratio
-                    text: qsTr("Swap");
+
+                    Text {
+                          id: text_swap
+                          width: (contentWidth>150)?200:undefined
+                          text: qsTr("Swap");
+                          wrapMode: Text.WordWrap
+                          fontSizeMode: Text.VerticalFit
+                          font.pointSize : 32
+                          anchors.margins: 15
+                    }
+
+                    width: text_swap.width
+                    height: text_swap.height
                     style: GCButtonStyle {}
                     enabled: items.twoPlayer
                     opacity: enabled
-                    onClicked: chessboard.swap()
+                    onClicked: {
+                        chessboard.swap()
+                    }
                 }
             }
 
@@ -367,6 +386,14 @@ ActivityBase {
 
         Bonus {
             id: bonus
+        }
+
+
+        function functie(nume) {
+            if (isPortrait==true)
+               anchors.horizontalCenter = nume.horizontalCenter
+            else
+                anchors.horizontalCenter = nume.horizontalCenter
         }
     }
 
