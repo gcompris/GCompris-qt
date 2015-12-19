@@ -293,7 +293,7 @@ ActivityBase {
                         } else {
                             var pos = parent.pos
                             // Force recalc of the old x,y position
-                            parent.pos = 0
+                            parent.pos = -1
                             pieces.getPieceAt(pos).move(pos)
                         }
                     }
