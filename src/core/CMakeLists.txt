@@ -194,6 +194,17 @@ if(BUILD_STANDALONE)
   set(_qml_subdir QtGraphicalEffects)
   getQtQmlPath(_qt_qml_path)
   install(DIRECTORY ${_qt_qml_path}/QtGraphicalEffects DESTINATION ${_qt_qml_destdir})
+
+  # Fix for Linux 'make package' that fails to link with libicu
+  if(UNIX AND NOT APPLE AND NOT SAILFISHOS)
+    add_library( libicudata SHARED IMPORTED )
+    set_target_properties( libicudata PROPERTIES IMPORTED_LOCATION ${Qt5_DIR}/../../libicudata.so.53 )
+    add_library( libicui18n SHARED IMPORTED )
+    set_target_properties( libicui18n PROPERTIES IMPORTED_LOCATION ${Qt5_DIR}/../../libicui18n.so.53 )
+    add_library( libicuuc SHARED IMPORTED )
+    set_target_properties( libicuuc PROPERTIES IMPORTED_LOCATION ${Qt5_DIR}/../../libicuuc.so.53 )
+    TARGET_LINK_LIBRARIES(${GCOMPRIS_EXECUTABLE_NAME} libicudata libicui18n libicuuc)
+  endif()
 endif(BUILD_STANDALONE)
 
 # Hack: do not fixup Qt and Qml plugins on Windows because fixup_bundle takes ages (cmake bug ?) -> Johnny : we need this even if it takes time because some required dependencies are pulled here
