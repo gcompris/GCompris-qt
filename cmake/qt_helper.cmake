@@ -14,7 +14,7 @@ endfunction()
 
 function(getQtPluginsPath _path)
   get_target_property(_plugin_path Qt5::Qml LOCATION)
-  string(REGEX REPLACE "(.*/lib)/.*" "\\1" _plugin_root ${_plugin_path})
+  string(REGEX REPLACE "(.*)/lib/.*" "\\1/plugins" _plugin_root ${_plugin_path})
   set(${_path} ${_plugin_root} PARENT_SCOPE)
 endfunction()
 
