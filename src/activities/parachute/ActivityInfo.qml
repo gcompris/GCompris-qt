@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2015 Rajdeep Kaur <rajdeep51994@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -29,5 +29,5 @@ ActivityInfo {
   goal:qsTr("In this game, Tux the parachutist needs help to land safely on the fishing boat. He needs to allow for the wind direction and speed.")
   prerequisite:qsTr("This board is game-oriented. No specific skills are needed to play.")
   manual:qsTr("Hit any key or click on the plane to make Tux jump. Hit another key or click on Tux to open the parachute.")
-  section: qsTr("fun")
+  section: "fun"
 }
