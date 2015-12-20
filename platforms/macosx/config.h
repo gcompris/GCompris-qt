@@ -1,5 +1,5 @@
 /* Version number of package */
-#define VERSION "0.43"
+#define VERSION "0.50"
 /* Folder where rccs and translations are installed */
 #define GCOMPRIS_DATA_FOLDER "../Resources"
 /* GCompris for android, gcompris-qt for others */
