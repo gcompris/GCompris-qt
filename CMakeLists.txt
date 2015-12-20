@@ -4,7 +4,7 @@ else(SAILfISHOS)
   cmake_minimum_required(VERSION 2.8.12)
 endif()
 
-project(gcompris C CXX)
+project(gcompris-qt C CXX)
 
 # Set c++11 support
 include(CheckCXXCompilerFlag)
