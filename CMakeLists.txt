@@ -82,14 +82,14 @@ if(KF5_FOUND)
     include(KDEInstallDirs)
 endif(KF5_FOUND)
 
-FIND_PROGRAM(LCONVERT_EXECUTABLE lconvert
+FIND_PROGRAM(LCONVERT_EXECUTABLE lconvert lconvert-qt5
   PATHS
   ${Qt5_DIR}/../../../bin/
   /usr/local/bin
   /usr/bin/
   NO_DEFAULT_PATH
 )
-FIND_PROGRAM(LRELEASE_EXECUTABLE lrelease
+FIND_PROGRAM(LRELEASE_EXECUTABLE lrelease lrelease-qt5
   PATHS
   ${Qt5_DIR}/../../../bin/
   /usr/local/bin
