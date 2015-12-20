@@ -1,2 +1,2 @@
 include(BundleUtilities)
-fixup_bundle("@GCOMPRIS_BUNDLE@" "@GCOMPRIS_OTHER_LIBS@" "@Qt5_DIR@/lib")
+fixup_bundle("@GCOMPRIS_BUNDLE@" "@GCOMPRIS_OTHER_LIBS@" "@Qt5_DIR@/../..")
