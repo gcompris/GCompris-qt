@@ -34,7 +34,7 @@ Item {
 
     Rectangle {
         id: color
-        color: Activity.colors[root.searchItemIndex]
+        color: root.searchItemIndex == -1 ? "white" : Activity.colors[root.searchItemIndex]
         anchors.fill: parent
         width: parent.width
         height: parent.height

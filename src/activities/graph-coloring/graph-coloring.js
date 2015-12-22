@@ -28,7 +28,6 @@ var items
 var url = "qrc:/gcompris/src/activities/graph-coloring/resource/"
 
 var colors = [
-            "white",
             "#FF0000FF",  // dark blue
             "#FF00FF00",  // light green
             "#FFFF0000",  // red
@@ -79,7 +78,7 @@ function initLevel() {
         items.nodesRepeater.model.append({
                                              "posX":levelData.nodePositions[i][0],
                                              "posY":levelData.nodePositions[i][1],
-                                             "colIndex": 0
+                                             "colIndex": -1
                                          });
     }
     for (var i = 0; i < levelData.edgeList.length; ++i){
@@ -97,6 +96,17 @@ function initLevel() {
 function checkGuess() {
     var flag = false;
     var levelData = items.dataset.item
+
+    //Check wether all the nodes have been colored or not
+    for (var i = 0; i < levelData.nodePositions.length; i++){
+        var node1 = items.nodesRepeater.model.get(i)
+        if (node1.colIndex == -1){
+            flag = true;
+            break;
+        }
+    }
+
+    //Check wether the adjacent nodes do not have the same color
     for (var i = 0; i < levelData.edgeList.length; i++){
         var node1 = items.nodesRepeater.model.get(levelData.edgeList[i][0])
         var node2 = items.nodesRepeater.model.get(levelData.edgeList[i][1])
