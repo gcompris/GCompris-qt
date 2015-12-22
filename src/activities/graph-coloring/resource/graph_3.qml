@@ -21,8 +21,6 @@ import QtQuick 2.0
 
 QtObject {
 
-   property int numNodes: 10
-   property int numEdges: 15
    property variant edgeList:[
           [0,1], [1,2], [2,3], [3,4], [4,0], [5,7],
           [7,9], [9,6], [6,8], [8,5], [0,5], [1,6],

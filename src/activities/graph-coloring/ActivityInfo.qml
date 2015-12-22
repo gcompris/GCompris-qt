@@ -21,14 +21,14 @@ ActivityInfo {
   name: "graph-coloring/GraphColoring.qml"
   difficulty: 1
   icon: "graph-coloring/graph-coloring.svg"
-  author: "Akshat Tandon ;akshat.tandon@research.iiit.ac.in;"
+  author: "Akshat Tandon &lt;akshat.tandon@research.iiit.ac.in&gt;"
   demo: true
-  title: "Graph Coloring"
-  description: "Color the graph so that no two adjacent nodes have the same color."
+  title: qsTr("Graph Coloring")
+  description: qsTr("Color the graph so that no two adjacent nodes have the same color.")
   //intro: "Color the graph so that no two adjacent nodes have the same color."
-  goal: "Color the graph so that no two adjacent nodes have the same color."
-  prerequisite: "colors, lines"
+  goal: qsTr("Learn to distinguish between different colors and learn about relative positions.")
+  prerequisite: qsTr("Ability to distinguish different colors, sense of positions")
   manual: ""
   credit: ""
-  section: "fun"
+  section: qsTr("fun")
 }

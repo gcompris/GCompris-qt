@@ -72,14 +72,14 @@ function initLevel() {
         items.colorsRepeater.model.append({"itemIndex": i});
     }
     items.chooserGrid.model = currentIndeces
-    for (var i = 0; i < levelData.numNodes; ++i){
+    for (var i = 0; i < levelData.nodePositions.length; ++i){
         items.nodesRepeater.model.append({
                                              "posX":levelData.nodePositions[i][0],
                                              "posY":levelData.nodePositions[i][1],
                                              "colIndex": 0
                                          });
     }
-    for (var i = 0; i < levelData.numEdges; ++i){
+    for (var i = 0; i < levelData.edgeList.length; ++i){
         var node1 = levelData.edgeList[i][0]
         var node2 = levelData.edgeList[i][1]
         items.edgesRepeater.model.append({
@@ -94,7 +94,7 @@ function initLevel() {
 function checkGuess() {
     var flag = false;
     var levelData = items.dataset.item
-    for (var i = 0; i < levelData.numEdges; i++){
+    for (var i = 0; i < levelData.edgeList.length; i++){
         var node1 = items.nodesRepeater.model.get(levelData.edgeList[i][0])
         var node2 = items.nodesRepeater.model.get(levelData.edgeList[i][1])
         //console.log("node1 " + levelData.edgeList[i][0] + " node2 "+ levelData.edgeList[i][1]+" node1 color "+ node1.colIndex+ " node2 color " + node2.colIndex);
@@ -104,7 +104,7 @@ function checkGuess() {
             break;
         }
     }
-    console.log("flag is " + flag);
+    //console.log("flag is " + flag);
     if (flag == false) {
         items.bonus.good("lion");
     }
