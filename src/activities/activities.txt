@@ -49,6 +49,7 @@ gnumch-factors
 gnumch-inequality
 gnumch-multiples
 gnumch-primes
+graph-coloring
 guessnumber
 hangman
 hanoi
