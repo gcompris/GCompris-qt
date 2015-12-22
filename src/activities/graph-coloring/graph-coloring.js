@@ -23,7 +23,7 @@
 .import QtQuick 2.0 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 6
+var numberOfLevel = 8
 var items
 var url = "qrc:/gcompris/src/activities/graph-coloring/resource/"
 
@@ -47,6 +47,8 @@ var levels = [
             {extraColor:0, graph:"graph_2.qml"},
             {extraColor:2, graph:"graph_3.qml"},
             {extraColor:0, graph:"graph_3.qml"},
+            {extraColor:2, graph:"graph_4.qml"},
+            {extraColor:0, graph:"graph_4.qml"}
         ];
 
 function start(items_) {

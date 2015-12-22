@@ -107,17 +107,17 @@ ActivityBase {
             }
         }
 
-        Rectangle {
+        Item {
             id: graphRect
-            color: "transparent"
             anchors.left: parent.left
-            anchors.leftMargin: 225 * ApplicationInfo.ratio
+            anchors.leftMargin: 250 * ApplicationInfo.ratio
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 50 * ApplicationInfo.ratio
             anchors.top: parent.top
-            anchors.topMargin: 10 * ApplicationInfo.ratio
-            width: 1000 * ApplicationInfo.ratio
-            height: 1000 * ApplicationInfo.ratio
+            anchors.topMargin: 50 * ApplicationInfo.ratio
             property int factor: 450
-
+            height: background.height - 100 * ApplicationInfo.ratio
+            width: background.height - 100 * ApplicationInfo.ratio
             Repeater {
                 id: edgesRepeater
                 model: ListModel {}
@@ -129,8 +129,8 @@ ActivityBase {
                         ctx.lineWidth = 4
                         ctx.strokeStyle = "black"
                         ctx.beginPath()
-                        ctx.moveTo( ((x1 * parent.factor) + 25) * ApplicationInfo.ratio, ((y1 * parent.factor) + 25) * ApplicationInfo.ratio)
-                        ctx.lineTo( ((x2 * parent.factor) + 25) * ApplicationInfo.ratio, ((y2 * parent.factor) + 25) * ApplicationInfo.ratio)
+                        ctx.moveTo(x1 * graphRect.width, y1 * graphRect.height)
+                        ctx.lineTo(x2 * graphRect.width, y2 * graphRect.height)
                         ctx.stroke()
                     }
                 }
@@ -143,8 +143,10 @@ ActivityBase {
                 delegate:
                     Node{
                     id: currentNode
-                    x: posX * graphRect.factor * ApplicationInfo.ratio
-                    y: posY * graphRect.factor * ApplicationInfo.ratio
+
+                    x: posX * graphRect.width - width/2
+                    y: posY * graphRect.height - height/2
+
                     width: 50 * ApplicationInfo.ratio
                     height: 50 * ApplicationInfo.ratio
                     radius: width/2
@@ -293,6 +295,7 @@ ActivityBase {
             id: okButton
 
             anchors.right : graphRect.left
+            anchors.rightMargin: 30 * ApplicationInfo.ratio
             anchors.verticalCenter: background.verticalCenter
             anchors.verticalCenterOffset: -30
             source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
@@ -332,4 +335,3 @@ ActivityBase {
     }
 
 }
-
