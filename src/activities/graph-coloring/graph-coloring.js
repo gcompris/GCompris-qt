@@ -41,12 +41,12 @@ var colors = [
         ];
 
 var levels = [
-            {numberOfColors:5, graph:"graph_1.qml"},
-            {numberOfColors:3, graph:"graph_1.qml"},
-            {numberOfColors:4, graph:"graph_2.qml"},
-            {numberOfColors:3, graph:"graph_2.qml"},
-            {numberOfColors:5, graph:"graph_3.qml"},
-            {numberOfColors:3, graph:"graph_3.qml"},
+            {extraColor:2, graph:"graph_1.qml"},
+            {extraColor:0, graph:"graph_1.qml"},
+            {extraColor:1, graph:"graph_2.qml"},
+            {extraColor:0, graph:"graph_2.qml"},
+            {extraColor:2, graph:"graph_3.qml"},
+            {extraColor:0, graph:"graph_3.qml"},
         ];
 
 function start(items_) {
@@ -67,7 +67,8 @@ function initLevel() {
     items.colorsRepeater.model.clear();
     items.nodesRepeater.model.clear();
     items.edgesRepeater.model.clear();
-    for (var i = 0; i < levels[currentLevel].numberOfColors; ++i) {
+    var numColors = levelData.minColor + levels[currentLevel].extraColor;
+    for (var i = 0; i < numColors; ++i) {
         currentIndeces[i] = i;
         items.colorsRepeater.model.append({"itemIndex": i});
     }
@@ -108,7 +109,9 @@ function checkGuess() {
     if (flag == false) {
         items.bonus.good("lion");
     }
-    else items.bonus.bad("lion");
+    else {
+        items.bonus.bad("lion");
+    }
 }
 
 function nextLevel() {
