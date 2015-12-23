@@ -20,11 +20,11 @@ foreach(ACTIVITY ${ACTIVITIES})
     endif()
     # Set activities as options (enabled by default)
     option("USE_${ACTIVITY}" "Enable ${ACTIVITY} activity" ${DEFAULT_MODE})
-    if(USE_${ACTIVITY})
+    if(USE_${ACTIVITY} AND NOT (${_disabled_activities} MATCHES ${ACTIVITY}))
       # Add the directory for compilation
       add_subdirectory(${ACTIVITY})
       file(APPEND "activities_out.txt" "${ACTIVITY}\n")
-    endif(USE_${ACTIVITY})
+    endif()
   endif(${match})
 endforeach(ACTIVITY ${ACTIVITIES})
 
