@@ -281,32 +281,12 @@ ActivityBase {
                             obj.setProperty(chooserGrid.guessIndex, "colIndex", chooserGrid.colIndex);
                             showChooser(false);
                             Activity.checkAdjacent()
+                            Activity.checkGuess()
                         }
                     }
                 }
             }
         }
-
-        BarButton {
-            id: okButton
-
-            anchors.right : graphRect.left
-            anchors.rightMargin: 30 * ApplicationInfo.ratio
-            anchors.verticalCenter: background.verticalCenter
-            anchors.verticalCenterOffset: -30
-            source: "qrc:/gcompris/src/core/resource/bar_ok.svg"
-            sourceSize.width: 66 * bar.barZoom
-            width: 70 * ApplicationInfo.ratio
-            height:70 * ApplicationInfo.ratio
-            visible: true
-            z: 8
-            onClicked: {
-                showChooser(false);
-                Activity.checkGuess();
-            }
-        }
-
-
 
         DialogHelp {
             id: dialogHelp

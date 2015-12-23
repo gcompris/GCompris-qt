@@ -124,9 +124,6 @@ function checkGuess() {
     if (flag == false) {
         items.bonus.good("lion");
     }
-    else {
-        items.bonus.bad("lion");
-    }
 }
 
 function checkAdjacent() {
