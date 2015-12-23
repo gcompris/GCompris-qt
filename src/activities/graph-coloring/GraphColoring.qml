@@ -111,14 +111,14 @@ ActivityBase {
         Item {
             id: graphRect
             anchors.left: parent.left
-            anchors.leftMargin: 250 * ApplicationInfo.ratio
+            anchors.leftMargin: 150 * ApplicationInfo.ratio
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 50 * ApplicationInfo.ratio
             anchors.top: parent.top
             anchors.topMargin: 50 * ApplicationInfo.ratio
             property int factor: 450
             height: background.height - 100 * ApplicationInfo.ratio
-            width: background.height - 100 * ApplicationInfo.ratio
+            width: background.width - 300 * ApplicationInfo.ratio
             Repeater {
                 id: edgesRepeater
                 model: ListModel {}
