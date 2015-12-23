@@ -62,7 +62,7 @@ var levels = [
             {extraColor:0, graph:"graph_4.qml"}
         ];
 
-var mode = "symbol";
+var mode = "color";
 
 function start(items_) {
     items = items_

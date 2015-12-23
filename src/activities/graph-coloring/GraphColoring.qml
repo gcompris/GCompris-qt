@@ -43,6 +43,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
@@ -154,7 +155,7 @@ ActivityBase {
                     radius: width/2
                     border.color: highlight == true ? "white" : "black"
                     border.width: highlight == true ? 7 : 4
-                    highlightSymbol: highlight == true ? true : false
+                    highlightSymbol: highlight
                     searchItemIndex: colIndex
 
                     MouseArea {
