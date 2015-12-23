@@ -125,7 +125,7 @@ ActivityBase {
                     id: line
                     opacity: 1
                     antialiasing: true
-                    color: "black"
+                    color: highlight == true ? "white" : "black"
                     transformOrigin: Item.TopLeft
                     x: xp * graphRect.width
                     y: yp * graphRect.height
@@ -135,10 +135,6 @@ ActivityBase {
                     height: 3 * ApplicationInfo.ratio
                     rotation: (Math.atan((y2 - y)/(x2-x)) * 180 / Math.PI) + (((y2-y) < 0 && (x2-x) < 0) * 180) + (((y2-y) >= 0 && (x2-x) < 0) * 180)
                 }
-
-
-                //ctx.moveTo(x1 * graphRect.width, y1 * graphRect.height)
-                //ctx.lineTo(x2 * graphRect.width, y2 * graphRect.height)
 
             }
             Repeater{
@@ -156,7 +152,8 @@ ActivityBase {
                     width: 50 * ApplicationInfo.ratio
                     height: 50 * ApplicationInfo.ratio
                     radius: width/2
-                    border.color: "black"
+                    border.color: highlight == true ? "white" : "black"
+                    border.width: highlight == true ? 4 : 1
                     searchItemIndex: colIndex
 
                     MouseArea {
@@ -169,14 +166,6 @@ ActivityBase {
 
                         onClicked:{
                             var obj = items.nodesRepeater.model.get(index);
-                            if(chooserTimer.running && chooserGrid.guessIndex === index) {
-                                if (mouse.button == Qt.LeftButton)
-                                    obj.colIndex = (obj.colIndex ==
-                                                    Activity.currentIndeces.length - 1) ? 0 : obj.colIndex + 1;
-                                else
-                                    obj.colIndex = (obj.colIndex == 0) ?
-                                                Activity.currentIndeces.length - 1 : obj.colIndex - 1;
-                            }
                             showChooser(true, index, parent);
                         }
                     }
@@ -291,6 +280,7 @@ ActivityBase {
                             var obj = items.nodesRepeater.model;
                             obj.setProperty(chooserGrid.guessIndex, "colIndex", chooserGrid.colIndex);
                             showChooser(false);
+                            Activity.checkAdjacent()
                         }
                     }
                 }

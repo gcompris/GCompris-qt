@@ -79,7 +79,8 @@ function initLevel() {
         items.nodesRepeater.model.append({
                                              "posX":levelData.nodePositions[i][0],
                                              "posY":levelData.nodePositions[i][1],
-                                             "colIndex": -1
+                                             "colIndex": -1,
+                                             "highlight": false
                                          });
     }
     for (var i = 0; i < levelData.edgeList.length; ++i){
@@ -89,7 +90,8 @@ function initLevel() {
                                              "xp": levelData.nodePositions[node1][0],
                                              "yp": levelData.nodePositions[node1][1],
                                              "xpp": levelData.nodePositions[node2][0],
-                                             "ypp": levelData.nodePositions[node2][1]
+                                             "ypp": levelData.nodePositions[node2][1],
+                                             "highlight": false
                                          });
     }
 }
@@ -125,6 +127,41 @@ function checkGuess() {
     else {
         items.bonus.bad("lion");
     }
+}
+
+function checkAdjacent() {
+    var levelData = items.dataset.item
+    var flagNodes = new Array(levelData.nodePositions.length)
+    for (var i = 0; i < levelData.nodePositions.length; i++){
+        flagNodes[i] = false
+    }
+
+    for (var i = 0; i < levelData.edgeList.length; i++){
+
+        var node1 = items.nodesRepeater.model.get(levelData.edgeList[i][0])
+        var node1Num = levelData.edgeList[i][0]
+        var node2 = items.nodesRepeater.model.get(levelData.edgeList[i][1])
+        var node2Num = levelData.edgeList[i][1]
+        if (node1.colIndex == node2.colIndex && node2.colIndex != -1) {
+            items.nodesRepeater.model.setProperty(node1Num, "highlight", true)
+            items.nodesRepeater.model.setProperty(node2Num, "highlight", true)
+            items.edgesRepeater.model.setProperty(i, "highlight", true)
+            flagNodes[node1Num] = true
+            flagNodes[node2Num] = true
+        }
+        else {
+            if(!flagNodes[node1Num]) {
+                items.nodesRepeater.model.setProperty(node1Num, "highlight", false)
+            }
+            if(!flagNodes[node2Num]) {
+                items.nodesRepeater.model.setProperty(node2Num, "highlight", false)
+            }
+            items.edgesRepeater.model.setProperty(i, "highlight", false)
+
+        }
+
+    }
+
 }
 
 function nextLevel() {
