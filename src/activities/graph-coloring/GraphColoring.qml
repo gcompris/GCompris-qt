@@ -126,16 +126,30 @@ ActivityBase {
                     id: line
                     opacity: 1
                     antialiasing: true
-                    color: highlight == true ? "white" : "black"
+                    color: highlight == true ? "red" : "black"
+
                     transformOrigin: Item.TopLeft
                     x: xp * graphRect.width
                     y: yp * graphRect.height
                     property var x2: xpp * graphRect.width
                     property var y2: ypp * graphRect.height
                     width: Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y- y2, 2))
-                    height: 3 * ApplicationInfo.ratio
+                    height: highlight == true ? 7 * ApplicationInfo.ratio : 3 * ApplicationInfo.ratio
                     rotation: (Math.atan((y2 - y)/(x2-x)) * 180 / Math.PI) + (((y2-y) < 0 && (x2-x) < 0) * 180) + (((y2-y) >= 0 && (x2-x) < 0) * 180)
+                    Behavior on color {
+                        ColorAnimation {
+                            duration: 2000
+                            easing.type: Easing.OutExpo
+                        }
+                    }
+                    Behavior on height {
+                        NumberAnimation {
+                            duration: 2000
+                            easing.type: Easing.OutExpo
+                        }
+                    }
                 }
+
 
             }
             Repeater{
@@ -153,10 +167,36 @@ ActivityBase {
                     width: 50 * ApplicationInfo.ratio
                     height: 50 * ApplicationInfo.ratio
                     radius: width/2
-                    border.color: highlight == true ? "white" : "black"
+                    border.color: highlight == true ? "red" : "black"
                     border.width: highlight == true ? 7 : 4
                     highlightSymbol: highlight
                     searchItemIndex: colIndex
+                    symbolBorder.color: highlight == true ? "red" : "orange"
+                    symbolBorder.width: highlight == true ? 7 : 4
+                    Behavior on border.color {
+                        ColorAnimation {
+                            duration: 2000
+                            easing.type: Easing.OutExpo
+                        }
+                    }
+                    Behavior on symbolBorder.color {
+                        ColorAnimation {
+                            duration: 2000
+                            easing.type: Easing.OutExpo
+                        }
+                    }
+                    Behavior on border.width {
+                        NumberAnimation {
+                            duration: 2000
+                            easing.type: Easing.OutExpo
+                        }
+                    }
+                    Behavior on symbolBorder.width {
+                        NumberAnimation {
+                            duration: 2000
+                            easing.type: Easing.OutExpo
+                        }
+                    }
 
                     MouseArea {
                         id: mouseArea

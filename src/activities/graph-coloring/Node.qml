@@ -28,10 +28,11 @@ import "graph-coloring.js" as Activity
 
 Item {
     id: root
-    property int searchItemIndex: 0
+    property int searchItemIndex: -1
     property alias border: color.border
     property alias radius: color.radius
     property bool highlightSymbol: false
+    property alias symbolBorder: symbolHighlighter.border
 
     Image {
         id: symbol
