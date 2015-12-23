@@ -121,19 +121,25 @@ ActivityBase {
             Repeater {
                 id: edgesRepeater
                 model: ListModel {}
-                delegate: Canvas {
-                    id:edgeCanvas
-                    anchors.fill:parent
-                    onPaint:{
-                        var ctx = getContext("2d")
-                        ctx.lineWidth = 4
-                        ctx.strokeStyle = "black"
-                        ctx.beginPath()
-                        ctx.moveTo(x1 * graphRect.width, y1 * graphRect.height)
-                        ctx.lineTo(x2 * graphRect.width, y2 * graphRect.height)
-                        ctx.stroke()
-                    }
+                delegate: Rectangle {
+                    id: line
+                    opacity: 1
+                    antialiasing: true
+                    color: "black"
+                    transformOrigin: Item.TopLeft
+                    x: xp * graphRect.width
+                    y: yp * graphRect.height
+                    property var x2: xpp * graphRect.width
+                    property var y2: ypp * graphRect.height
+                    width: Math.sqrt(Math.pow(x - x2, 2) + Math.pow(y- y2, 2))
+                    height: 3 * ApplicationInfo.ratio
+                    rotation: (Math.atan((y2 - y)/(x2-x)) * 180 / Math.PI) + (((y2-y) < 0 && (x2-x) < 0) * 180) + (((y2-y) >= 0 && (x2-x) < 0) * 180)
                 }
+
+
+                //ctx.moveTo(x1 * graphRect.width, y1 * graphRect.height)
+                //ctx.lineTo(x2 * graphRect.width, y2 * graphRect.height)
+
             }
             Repeater{
                 id: nodesRepeater

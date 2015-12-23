@@ -26,7 +26,7 @@ var currentLevel = 0
 var numberOfLevel = 8
 var items
 var url = "qrc:/gcompris/src/activities/graph-coloring/resource/"
-
+var coloringLeft
 var colors = [
             "#FF0000FF",  // dark blue
             "#FF00FF00",  // light green
@@ -60,6 +60,7 @@ function stop() {
 }
 
 function initLevel() {
+    coloringLeft = true
     items.bar.level = currentLevel + 1
     var filename = url + levels[currentLevel].graph
     items.dataset.source = filename
@@ -85,10 +86,10 @@ function initLevel() {
         var node1 = levelData.edgeList[i][0]
         var node2 = levelData.edgeList[i][1]
         items.edgesRepeater.model.append({
-                                             "x1": levelData.nodePositions[node1][0],
-                                             "y1": levelData.nodePositions[node1][1],
-                                             "x2": levelData.nodePositions[node2][0],
-                                             "y2": levelData.nodePositions[node2][1]
+                                             "xp": levelData.nodePositions[node1][0],
+                                             "yp": levelData.nodePositions[node1][1],
+                                             "xpp": levelData.nodePositions[node2][0],
+                                             "ypp": levelData.nodePositions[node2][1]
                                          });
     }
 }
