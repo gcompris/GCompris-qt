@@ -31,9 +31,33 @@ Item {
     property int searchItemIndex: 0
     property alias border: color.border
     property alias radius: color.radius
+    property bool highlightSymbol: false
+
+    Image {
+        id: symbol
+        visible: Activity.mode === "symbol"
+        fillMode: Image.PreserveAspectFit
+        source: searchItemIndex == -1 ? Activity.url + "shapes/" + "circle_node.svg" : Activity.symbols[root.searchItemIndex]
+        anchors.left: parent.left
+        anchors.top: parent.top
+        anchors.margins: 3
+        width: parent.width - 6
+        height: parent.height - 6
+    }
+    Rectangle {
+        id: symbolHighlighter
+        visible: (Activity.mode === "symbol") && root.highlightSymbol
+        anchors.fill: parent
+        width: parent.width
+        height: parent.height
+        border.width: 3
+        border.color: "white"
+        color: "transparent"
+    }
 
     Rectangle {
         id: color
+        visible: Activity.mode === "color"
         color: root.searchItemIndex == -1 ? "white" : Activity.colors[root.searchItemIndex]
         anchors.fill: parent
         width: parent.width

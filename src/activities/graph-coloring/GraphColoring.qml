@@ -153,7 +153,8 @@ ActivityBase {
                     height: 50 * ApplicationInfo.ratio
                     radius: width/2
                     border.color: highlight == true ? "white" : "black"
-                    border.width: highlight == true ? 4 : 1
+                    border.width: highlight == true ? 7 : 4
+                    highlightSymbol: highlight == true ? true : false
                     searchItemIndex: colIndex
 
                     MouseArea {
@@ -266,6 +267,7 @@ ActivityBase {
                     border.width: index == chooserGrid.colIndex ? 3 : 1
                     border.color: index == chooserGrid.colIndex ? "white" : "darkgray"
                     searchItemIndex: modelData
+                    highlightSymbol: index == chooserGrid.colIndex
                     radius: 5
 
                     MouseArea {
@@ -293,15 +295,73 @@ ActivityBase {
             onClose: home()
         }
 
+        DialogActivityConfig {
+            id: dialogActivityConfig
+            currentActivity: activity
+            content: Component {
+                Item {
+                    property alias modeBox: modeBox
+
+                    property var availableModes: [
+                        { "text": qsTr("Colors"), "value": "color" },
+                        { "text": qsTr("Shapes"), "value": "symbol" }
+                    ]
+
+                    Flow {
+                        id: flow
+                        spacing: 5
+                        width: dialogActivityConfig.width
+                        GCComboBox {
+                            id: modeBox
+                            model: availableModes
+                            background: dialogActivityConfig
+                            label: qsTr("Select your mode")
+                        }
+                    }
+                }
+            }
+            onClose: home()
+            onLoadData: {
+                if(dataToSave && dataToSave["mode"]) {
+                    Activity.mode = dataToSave["mode"];
+                }
+            }
+
+            onSaveData: {
+                var newMode = dialogActivityConfig.configItem.availableModes[dialogActivityConfig.configItem.modeBox.currentIndex].value;
+                if (newMode !== Activity.mode) {
+                    chooserGrid.model = new Array();
+                    Activity.mode = newMode;
+                    dataToSave = {"mode": Activity.mode};
+                    Activity.initLevel();
+                }
+            }
+
+            function setDefaultValues() {
+                for(var i = 0 ; i < dialogActivityConfig.configItem.availableModes.length ; i ++) {
+                    if(dialogActivityConfig.configItem.availableModes[i].value === Activity.mode) {
+                        dialogActivityConfig.configItem.modeBox.currentIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
+
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: config | help | home | level }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onConfigClicked: {
+                dialogActivityConfig.active = true
+                // Set default values
+                dialogActivityConfig.setDefaultValues();
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {

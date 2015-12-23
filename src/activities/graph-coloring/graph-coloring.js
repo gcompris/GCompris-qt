@@ -39,6 +39,18 @@ var colors = [
             "#FFa0174b"   // dark magenta
         ];
 
+var symbols = [
+            url + "shapes/" + "darkblue_star.svg",
+            url + "shapes/" + "lightgreen_triangle.svg",
+            url + "shapes/" + "red_heart.svg",
+            url + "shapes/" + "lightblue_cloud.svg",
+            url + "shapes/" + "magenta_diamond.svg",
+            url + "shapes/" + "yellow_star.svg",
+            url + "shapes/" + "brown_cross.svg",
+            url + "shapes/" + "darkgreen_ring.svg",
+            url + "shapes/" + "red_circle.svg",
+        ];
+
 var levels = [
             {extraColor:2, graph:"graph_1.qml"},
             {extraColor:0, graph:"graph_1.qml"},
@@ -49,6 +61,8 @@ var levels = [
             {extraColor:2, graph:"graph_4.qml"},
             {extraColor:0, graph:"graph_4.qml"}
         ];
+
+var mode = "symbol";
 
 function start(items_) {
     items = items_
@@ -62,7 +76,7 @@ function stop() {
 function initLevel() {
     coloringLeft = true
     items.bar.level = currentLevel + 1
-    var filename = url + levels[currentLevel].graph
+    var filename = url + "graphs/" + levels[currentLevel].graph
     items.dataset.source = filename
     var currentIndeces = new Array();
     var levelData = items.dataset.item
