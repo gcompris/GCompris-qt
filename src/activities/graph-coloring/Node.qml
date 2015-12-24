@@ -33,7 +33,7 @@ Item {
     property alias border: color.border
     property alias radius: color.radius
     property bool highlightSymbol: false
-    property alias symbolBorder: symbolHighlighter.border
+    property bool symbolRotation: false
 
     Image {
         id: symbol
@@ -45,6 +45,24 @@ Item {
         anchors.margins: 3
         width: parent.width - 6
         height: parent.height - 6
+        SequentialAnimation {
+            id: anim
+            running: root.symbolRotation
+            loops: Animation.Infinite
+            NumberAnimation {
+                target: symbol
+                property: "rotation"
+                from: -10; to: 10
+                duration: 500
+                easing.type: Easing.InOutQuad
+            }
+            NumberAnimation {
+                target: symbol
+                property: "rotation"
+                from: 10; to: -10
+                duration: 500
+                easing.type: Easing.InOutQuad }
+        }
     }
     Rectangle {
         id: symbolHighlighter

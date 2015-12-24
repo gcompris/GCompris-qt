@@ -168,34 +168,22 @@ ActivityBase {
                     radius: width/2
                     border.color: highlight == true ? "red" : "black"
                     border.width: highlight == true ? 7 : 4
-                    highlightSymbol: highlight
+                    symbolRotation: highlight
                     searchItemIndex: colIndex
-                    symbolBorder.color: highlight == true ? "red" : "orange"
-                    symbolBorder.width: highlight == true ? 7 : 4
                     Behavior on border.color {
                         ColorAnimation {
                             duration: 2000
                             easing.type: Easing.OutExpo
                         }
                     }
-                    Behavior on symbolBorder.color {
-                        ColorAnimation {
-                            duration: 2000
-                            easing.type: Easing.OutExpo
-                        }
-                    }
+
                     Behavior on border.width {
                         NumberAnimation {
                             duration: 2000
                             easing.type: Easing.OutExpo
                         }
                     }
-                    Behavior on symbolBorder.width {
-                        NumberAnimation {
-                            duration: 2000
-                            easing.type: Easing.OutExpo
-                        }
-                    }
+
 
                     MouseArea {
                         id: mouseArea
