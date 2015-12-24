@@ -238,13 +238,13 @@ ActivityBase {
             if (targetX < 0) {
                 targetX = 0;
             }
-            if (targetX > background.width) {
+            if (targetX + chooser.width > background.width) {
                 targetX = background.width - chooser.width - 10;
             }
             if (targetY < 0) {
                 targetY = 0;
             }
-            if (targetY > background.height) {
+            if (targetY + chooser.height > background.height) {
                 targetY = background.height - chooser.height - 10;
             }
             chooser.x = targetX;
@@ -273,8 +273,8 @@ ActivityBase {
             GridView {
                 id: chooserGrid
 
-                cellWidth: graphRect.width/15
-                cellHeight: graphRect.width/15
+                cellWidth: graphRect.width/10
+                cellHeight: graphRect.width/10
                 width: Math.ceil(count / 2) * cellWidth
                 height: 2 * cellHeight
                 anchors.centerIn: parent
