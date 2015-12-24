@@ -160,9 +160,11 @@ ActivityBase {
 
                     x: posX * graphRect.width - width/2
                     y: posY * graphRect.height - height/2
-
-                    width: graphRect.width/9
-                    height: graphRect.width/9
+                    property int diameter: graphRect.width/9
+                    property int minDiameter: 40 * ApplicationInfo.ratio
+                    property int maxDiameter: 80 * ApplicationInfo.ratio
+                    width: diameter < minDiameter ? minDiameter : ( diameter > maxDiameter ? maxDiameter : diameter)
+                    height: width
                     radius: width/2
                     border.color: highlight == true ? "red" : "black"
                     border.width: highlight == true ? 7 : 4
