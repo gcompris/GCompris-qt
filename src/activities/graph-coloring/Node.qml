@@ -1,8 +1,9 @@
 /* GCompris - SearchItem.qml
  *
- * Copyright (C) 2015 Akshat Tandon <akshat.tandon@research.iiit.ac.in>
+ * Copyright (C) Holger Kaelberer <holger.k@elberer.de>
  * 
  * Authors:
+ *   Holger Kaelberer <holger.k@elberer.de>
  *   Akshat Tandon <akshat.tandon@research.iiit.ac.in>
  *
  *   This program is free software; you can redistribute it and/or modify

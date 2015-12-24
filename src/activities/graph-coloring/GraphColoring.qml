@@ -85,9 +85,6 @@ ActivityBase {
 
             spacing: 3  * ApplicationInfo.ratio
 
-            //width: guessColumn.guessSize
-            //height: guessColumn.guessSize
-
             add: Transition {
                 NumberAnimation { properties: "y"; duration: 1000; easing.type: Easing.OutBounce }
             }
@@ -164,8 +161,8 @@ ActivityBase {
                     x: posX * graphRect.width - width/2
                     y: posY * graphRect.height - height/2
 
-                    width: 50 * ApplicationInfo.ratio
-                    height: 50 * ApplicationInfo.ratio
+                    width: graphRect.width/13
+                    height: graphRect.width/13
                     radius: width/2
                     border.color: highlight == true ? "red" : "black"
                     border.width: highlight == true ? 7 : 4
@@ -276,8 +273,8 @@ ActivityBase {
             GridView {
                 id: chooserGrid
 
-                cellWidth: 50 * ApplicationInfo.ratio
-                cellHeight: 50 * ApplicationInfo.ratio
+                cellWidth: graphRect.width/15
+                cellHeight: graphRect.width/15
                 width: Math.ceil(count / 2) * cellWidth
                 height: 2 * cellHeight
                 anchors.centerIn: parent
