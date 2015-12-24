@@ -21,7 +21,7 @@
 */
 var url = "qrc:/gcompris/src/activities/maze/resource/"
 var currentLevel = 0
-var numberOfLevel = 20
+var numberOfLevel = 25
 var items
 var relativeMode
 var invisibleMode
@@ -110,6 +110,21 @@ function initLevel() {
     } else if (currentLevel + 1 == 20) {
         mazeColumns = 19
         mazeRows = 19
+    } else if (currentLevel + 1 == 21) {
+        mazeColumns = 20
+        mazeRows = 19
+    } else if (currentLevel + 1 == 22) {
+        mazeColumns = 20
+        mazeRows = 20
+    } else if (currentLevel + 1 == 23) {
+        mazeColumns = 19
+        mazeRows = 21
+    } else if (currentLevel + 1 == 24) {
+        mazeColumns = 23
+        mazeRows = 21
+    } else if (currentLevel + 1 == 25) {
+        mazeColumns = 23
+        mazeRows = 23
     }
 
     items.mazeRows = mazeRows
