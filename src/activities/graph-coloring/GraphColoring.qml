@@ -161,8 +161,8 @@ ActivityBase {
                     x: posX * graphRect.width - width/2
                     y: posY * graphRect.height - height/2
 
-                    width: graphRect.width/13
-                    height: graphRect.width/13
+                    width: graphRect.width/9
+                    height: graphRect.width/9
                     radius: width/2
                     border.color: highlight == true ? "red" : "black"
                     border.width: highlight == true ? 7 : 4
