@@ -28,7 +28,14 @@ ActivityInfo {
   //intro: "play chess against your friend"
   goal: ""
   prerequisite: ""
-  manual: qsTr("In this activity you discover the chess game by playing against a friend. It displays the possible target position for any selected piece which helps the children understand how pieces moves.")
+  manual: qsTr("In this activity you discover the chess game by playing against a friend. It displays the possible target position for any selected piece which helps the children understand how pieces moves.
+\nYou can achieve a mate sooner if follow these simple rules:
+    Trying to drive opponent's King in the corner.
+<b>Explanation</b>: this way opponent's piece would have only 3 directions to move instead of 8 from a best position.
+    'Making a trap'. Use your pawns as baits.
+<b>Explanation</b>: this way you can lure the opponent out of his 'comfort zone'.
+    Be patient enough.
+<b>Explanation</b>: don't rush too quick, be patient. Let yourself think a little bit and try to predict your opponent's future moves, so you can catch him on it or secure your pieces from his attacks.")
   credit: ""
   section: "strategy"
 }
