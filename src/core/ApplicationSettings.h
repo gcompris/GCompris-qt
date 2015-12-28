@@ -384,6 +384,22 @@ public slots:
      */
     Q_INVOKABLE QVariantMap loadActivityConfiguration(const QString &activity);
 
+    /**
+     * Loads per-activity progress using the default "progress" key.
+     *
+     * @param activity Name of the activity to load progress for.
+     * @returns Last started level of the activity, 0 if none saved.
+     */
+    Q_INVOKABLE int loadActivityProgress(const QString &activity);
+
+    /**
+     * Saves per-activity progress using the default "progress" key.
+     *
+     * @param activity Name of the activity that wants to persist settings.
+     * @param progress Last started level to save as progress value.
+     */
+    Q_INVOKABLE void saveActivityProgress(const QString &activity, int progress);
+
 signals:
     void showLockedActivitiesChanged();
 	void audioVoicesEnabledChanged();

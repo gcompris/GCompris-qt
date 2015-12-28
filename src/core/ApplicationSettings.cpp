@@ -67,6 +67,8 @@ static const QString DEMO_KEY = "demo";
 static const QString KIOSK_KEY = "kiosk";
 static const QString SECTION_VISIBLE = "sectionVisible";
 
+static const QString PROGRESS_KEY = "progress";
+
 ApplicationSettings *ApplicationSettings::m_instance = NULL;
 
 ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
@@ -351,6 +353,22 @@ template<class T> void ApplicationSettings::updateValueInConfig(const QString& g
     m_config.setValue(key, value);
     m_config.endGroup();
     m_config.sync();
+}
+
+int ApplicationSettings::loadActivityProgress(const QString &activity)
+{
+    int progress = 0;
+    m_config.beginGroup(activity);
+    progress = m_config.value(PROGRESS_KEY, 0).toInt();
+    m_config.endGroup();
+    qDebug() << "loaded progress for activity" << activity << ":" << progress;
+    return progress;
+
+}
+
+void ApplicationSettings::saveActivityProgress(const QString &activity, int progress)
+{
+    updateValueInConfig(activity, PROGRESS_KEY, progress);
 }
 
 QObject *ApplicationSettings::systeminfoProvider(QQmlEngine *engine,
