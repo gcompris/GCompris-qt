@@ -106,9 +106,15 @@ function start(items_) {
                 items.tilt.invertX = true;
             }
         }
-        var levelsFile = builtinFile;
+        var levelsFile;
         if (items.levelSet === "user")
             levelsFile = userFile;
+        else {
+            levelsFile = builtinFile;
+            currentLevel = GCompris.ApplicationSettings.loadActivityProgress(
+                        "balancebox");
+        }
+
         dataset = items.parser.parseFromUrl(levelsFile, validateLevels);
         if (dataset == null) {
             console.error("Balancebox: Error loading levels from " + levelsFile
@@ -213,9 +219,13 @@ function finishBall(won, x, y)
     items.ball.y = y;
     items.ball.scale = 0.4;
     items.ball.body.linearVelocity = Qt.point(0, 0);
-    if (won)
+    if (won) {
         items.bonus.good("flower");
-    else
+        if (items.levelSet === "builtin" && items.mode === "play") {
+            GCompris.ApplicationSettings.saveActivityProgress("balancebox",
+                        currentLevel+1 >= numberOfLevel ? 0 : currentLevel+1);
+        }
+    } else
         items.bonus.bad("flower");
 }
 
