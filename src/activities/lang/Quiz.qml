@@ -220,7 +220,7 @@ Item {
                         id: wordImageQuiz
                         width: height
                         height: wordListView.buttonHeight
-                        source: "qrc:/gcompris/data/" + image
+                        source: image
                         z: 7
                         fillMode: Image.PreserveAspectFit
                         anchors.leftMargin: 5 * ApplicationInfo.ratio

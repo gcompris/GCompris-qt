@@ -137,7 +137,7 @@ Image {
             }
             Image {
                 id: containerImage
-                source: "qrc:/gcompris/data/"+ image;
+                source: image;
                 anchors.top: activityBackground.top
                 anchors.horizontalCenter: parent.horizontalCenter
                 width: iconWidth

@@ -194,7 +194,7 @@ function showQuestion() {
     items.answer = question.answer
     items.answers.model = question.choices
     items.questionText.text = question.maskedQuestion
-    items.questionImage.source = "qrc:/gcompris/data/" + question.image
+    items.questionImage.source = question.image
 }
 
 function nextLevel() {

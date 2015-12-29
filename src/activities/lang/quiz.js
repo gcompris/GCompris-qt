@@ -87,7 +87,7 @@ function nextQuiz() {
     quizItems.wordListModel.clear();
     quizItems.wordListModel.append(selectedWords)
 
-    quizItems.wordImage.changeSource("qrc:/gcompris/data/" + quizItems.goodWord.image)
+    quizItems.wordImage.changeSource(quizItems.goodWord.image)
 }
 
 function nextSubLevelQuiz() {

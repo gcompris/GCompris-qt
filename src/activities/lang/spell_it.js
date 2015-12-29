@@ -90,8 +90,7 @@ function initLevel() {
 function initSubLevel() {
     spellItems.score.currentSubLevel++
     spellItems.goodWord = wordList[spellItems.score.currentSubLevel - 1]
-    spellItems.wordImage.changeSource("qrc:/gcompris/data/" +
-                                      spellItems.goodWord.image)
+    spellItems.wordImage.changeSource(spellItems.goodWord.image)
     spellItems.hintText.changeHint(spellItems.goodWord.translatedTxt[0])
     spellItems.hintText.visible = true
     spellItems.answer.text = ""

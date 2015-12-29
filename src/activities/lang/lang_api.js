@@ -45,6 +45,7 @@ function load(parser, baseUrl, datasetFilename, translationFilename) {
     if(!dataset['contentText']) {
         return null
     }
+    applyImgPrefix(dataset)
 
     return dataset
 }
@@ -110,4 +111,18 @@ function getLessonWords(dataset, lesson) {
             allWords.push(word)
     }
     return allWords
+}
+
+/* Apply the imgPrefix of the chapter to the whole image set
+ */
+function applyImgPrefix(dataset) {
+    for (var c = 0; c < dataset.length; c++) {
+        if(!dataset[c].imgPrefix)
+            break
+        for (var l in dataset[c].content) {
+            for (var k in dataset[c].content[l].content) {
+                dataset[c].content[l].content[k].image = dataset[c].imgPrefix + dataset[c].content[l].content[k].image
+            }
+        }
+    }
 }

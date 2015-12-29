@@ -222,7 +222,7 @@ function initSubLevel() {
     items.goodWordIndex = subLevelsLeft.pop()
     items.ok.visible = false
     items.goodWord = wordList[items.goodWordIndex]
-    items.wordImage.changeSource("qrc:/gcompris/data/" + items.goodWord.image);
+    items.wordImage.changeSource(items.goodWord.image);
     items.remainingLife = 6;
     alreadyTypedLetters = new Array();
     currentWord = items.goodWord.translatedTxt;

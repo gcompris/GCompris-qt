@@ -84,7 +84,7 @@ Item {
                 word['hasVoice'] = false
                 repeatItem.visible = false
             }
-            wordImage.changeSource("qrc:/gcompris/data/" + word.image)
+            wordImage.changeSource(word.image)
             wordText.changeText(word.translatedTxt)
         }
     }

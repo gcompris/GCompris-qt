@@ -1,11 +1,12 @@
 [
     {
         "type": "chapter",
-        "name": "other",
+        "name": "otherChapter",
+        "imgPrefix": "qrc:/gcompris/data/",
         "content": [
             {
                 "type": "lesson",
-                "name": "other",
+                "name": "otherLesson",
                 "content": [
                     {
                         "description": "alphabet",
@@ -1018,6 +1019,7 @@
     {
         "type": "chapter",
         "name": "people",
+        "imgPrefix": "qrc:/gcompris/data/",
         "content": [
             {
                 "type": "lesson",
@@ -2464,9 +2466,10 @@
         ]
     },
     {
-	"type": "chapter",
+        "type": "chapter",
         "name": "nature",
-	"content": [
+        "imgPrefix": "qrc:/gcompris/data/",
+        "content": [
             {
                 "type": "lesson",
                 "name": "animal",
@@ -4127,6 +4130,7 @@
     {
         "type": "chapter",
         "name": "object",
+        "imgPrefix": "qrc:/gcompris/data/",
         "content": [
             {
                 "type": "lesson",
