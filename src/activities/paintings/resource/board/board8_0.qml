@@ -25,8 +25,10 @@ QtObject {
    property string instruction: qsTr("Utagawa Hiroshige, The Benzaiten Shrine at Inokashira in Snow - 1760-70")
    property variant levels : [
       {
-         "pixmapfile" : "image/bg.png",
-         "type" : "SHAPE_BACKGROUND_IMAGE"
+         "pixmapfile" : "image/bg.svg",
+         "type" : "SHAPE_BACKGROUND_IMAGE",
+         "width": 702,
+         "height": 515
       },
       {
          "pixmapfile" : "image/HiroshigeInokashiraSnow_d4.png",

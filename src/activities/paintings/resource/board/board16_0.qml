@@ -25,8 +25,10 @@ QtObject {
    property string instruction: qsTr("Albrecht Dürer, Lion - 1494")
    property variant levels : [
       {
-         "pixmapfile" : "image/bg.png",
-         "type" : "SHAPE_BACKGROUND_IMAGE"
+         "pixmapfile" : "image/bg.svg",
+         "type" : "SHAPE_BACKGROUND_IMAGE",
+         "width": 702,
+         "height": 515
       },
       {
          "pixmapfile" : "image/AlbrechtDurer_d4.png",

@@ -25,8 +25,10 @@ QtObject {
    property string instruction: qsTr("Katsushika Hokusai, The Great Wave off Kanagawa - 1823-1829")
    property variant levels : [
       {
-         "pixmapfile" : "image/bg.png",
-         "type" : "SHAPE_BACKGROUND_IMAGE"
+         "pixmapfile" : "image/bg.svg",
+         "type" : "SHAPE_BACKGROUND_IMAGE",
+         "width": 702,
+         "height": 515
       },
       {
          "pixmapfile" : "image/GreatWave_d3.png",

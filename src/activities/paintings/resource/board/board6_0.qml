@@ -25,8 +25,10 @@ QtObject {
    property string instruction: qsTr("Katsushika Hokusai, Ejiri in Suruga Province - 1830-1833")
    property variant levels : [
       {
-         "pixmapfile" : "image/bg.png",
-         "type" : "SHAPE_BACKGROUND_IMAGE"
+         "pixmapfile" : "image/bg.svg",
+         "type" : "SHAPE_BACKGROUND_IMAGE",
+         "width": 702,
+         "height": 515
       },
       {
          "pixmapfile" : "image/EjiriSuruga_d3.png",

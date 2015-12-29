@@ -26,8 +26,10 @@ QtObject {
    property string instruction: qsTr("Pierre-Auguste Renoir, Girls At The Piano - 1892")
    property variant levels : [
       {
-         "pixmapfile" : "image/bg.png",
-         "type" : "SHAPE_BACKGROUND_IMAGE"
+         "pixmapfile" : "image/bg.svg",
+         "type" : "SHAPE_BACKGROUND_IMAGE",
+         "width": 702,
+         "height": 515
       },
       {
          "pixmapfile" : "image/renoir-filles_piano-8.png",
