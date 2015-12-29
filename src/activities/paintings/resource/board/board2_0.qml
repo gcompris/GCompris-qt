@@ -25,8 +25,10 @@ QtObject {
    property string instruction: qsTr("Giuseppe Arcimboldo, Spring - 1573")
    property variant levels : [
       {
-         "pixmapfile" : "image/bg.png",
-         "type" : "SHAPE_BACKGROUND_IMAGE"
+         "pixmapfile" : "image/bg.svg",
+         "type" : "SHAPE_BACKGROUND_IMAGE",
+         "width": 702,
+         "height": 515
       },
       {
          "pixmapfile" : "image/Arcimboldo_Spring_b3.png",

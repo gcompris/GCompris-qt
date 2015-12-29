@@ -25,8 +25,10 @@ QtObject {
    property string instruction: qsTr("Katsushika Hokusai, Viewing Sunset over the Ryogoku Bridge from the Ommaya Embankment - 1830")
    property variant levels : [
       {
-         "pixmapfile" : "image/bg.png",
-         "type" : "SHAPE_BACKGROUND_IMAGE"
+         "pixmapfile" : "image/bg.svg",
+         "type" : "SHAPE_BACKGROUND_IMAGE",
+         "width": 702,
+         "height": 515
       },
       {
          "pixmapfile" : "image/HokusaiBridge_e4.png",

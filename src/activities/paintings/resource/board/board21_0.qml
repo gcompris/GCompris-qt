@@ -25,8 +25,10 @@ QtObject {
    property string instruction: qsTr("Mary Cassatt, Summertime - 1894")
    property variant levels : [
       {
-         "pixmapfile" : "image/bg.png",
-         "type" : "SHAPE_BACKGROUND_IMAGE"
+         "pixmapfile" : "image/bg.svg",
+         "type" : "SHAPE_BACKGROUND_IMAGE",
+         "width": 702,
+         "height": 515
       },
       {
          "pixmapfile" : "image/cassat_summertime_2.jpg",

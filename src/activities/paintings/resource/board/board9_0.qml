@@ -25,8 +25,10 @@ QtObject {
    property string instruction: qsTr("Utagawa Hiroshige, Horse-mackerel and Prawn - 1840")
    property variant levels : [
       {
-         "pixmapfile" : "image/bg.png",
-         "type" : "SHAPE_BACKGROUND_IMAGE"
+         "pixmapfile" : "image/bg.svg",
+         "type" : "SHAPE_BACKGROUND_IMAGE",
+         "width": 702,
+         "height": 515
       },
       {
          "pixmapfile" : "image/HiroshigeHorsePrawns_d4.png",

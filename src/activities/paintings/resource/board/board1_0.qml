@@ -25,8 +25,10 @@ QtObject {
    property string instruction: qsTr(" Pierre-Auguste Renoir, Le Moulin de la Galette - 1876")
    property variant levels : [
       {
-         "pixmapfile" : "image/bg.png",
-         "type" : "SHAPE_BACKGROUND_IMAGE"
+         "pixmapfile" : "image/bg.svg",
+         "type" : "SHAPE_BACKGROUND_IMAGE",
+         "width": 702,
+         "height": 515
       },
       {
          "pixmapfile" : "image/renoir-moulin_de_la_galette-4.png",
