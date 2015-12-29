@@ -30,7 +30,7 @@ ActivityInfo {
   prerequisite: ""
   manual: qsTr("In this activity you discover the chess game by playing against the computer. It displays the possible target position for any selected piece which helps the children understand how pieces moves. At first level the computer is fully random to give the most chances to the children. As level increases, better the computer plays.
 \nYou can achieve a mate sooner if follow these simple rules:
-    Trying to drive opponents's King in the corner.
+    Trying to drive opponent's King in the corner.
 <b>Explanation</b>: this way opponent's piece would have only 3 directions to move instead of 8 from a best position.
     'Making a trap'. Use your pawns as baits.
 <b>Explanation</b>: this way you can lure the opponent out of his 'comfort zone'.
