@@ -54,21 +54,16 @@ Rectangle {
         fillMode: Image.PreserveAspectFit
         anchors.centerIn: parent
         z : -1
-
-        onSourceChanged: console.log('targetImage', source)
     }
 
     function imageRemove() {
-        console.log('imageRemove')
         if(currentTileImageItem)
             currentTileImageItem.imageRemove()
         currentTileImageItem = null
     }
 
     function imageAdd(tileImageItem) {
-        console.log('imageAdd')
         currentTileImageItem = tileImageItem
-        console.log('imageAdd=', currentTileImageItem.source)
         dropCircle.color = dropCircleColor
     }
 
