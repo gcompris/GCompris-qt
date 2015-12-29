@@ -28,7 +28,10 @@ ActivityInfo {
   //intro: "A simplistic word processor to play around with the keyboard"
   goal: qsTr("Discover the keyboard and the letters.")
   prerequisite: ""
-  manual: qsTr("Just type on the real or virtual keyboard like in a wordprocessor.")
+  manual: qsTr("Just type on the real or virtual keyboard like in a wordprocessor.
+    Clicking on the 'Title' button will make the text bigger. Similarly, the 'subtitle' button will make the text slightly less bigger. Clicking on 'paragraph' will remove the formatting.
+    Press 'Shift' and use the arrow keys to select the text. Use Ctrl+C to copy, Ctrl+V to paste and Crtl+X to cut text. Ctrl+Z can be used to undo changes.
+    Try to fiddle around and find more shortcuts. For example, what is the shortcut to select all the text?")
   credit: ""
   section: "computer keyboard reading"
 }
