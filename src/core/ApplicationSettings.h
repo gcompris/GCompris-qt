@@ -205,8 +205,11 @@ class ApplicationSettings : public QObject
     // internal group
     Q_PROPERTY(quint32 exeCount READ exeCount WRITE setExeCount NOTIFY exeCountChanged)
 
-	// no group
-	Q_PROPERTY(bool isBarHidden READ isBarHidden WRITE setBarHidden NOTIFY barHiddenChanged)
+    // keep last version ran. If different than ApplicationInfo.GCVersionCode(), it means a new version is running
+    Q_PROPERTY(int lastGCVersionRan READ lastGCVersionRan WRITE setLastGCVersionRan NOTIFY lastGCVersionRanChanged)
+
+    // no group
+    Q_PROPERTY(bool isBarHidden READ isBarHidden WRITE setBarHidden NOTIFY barHiddenChanged)
 
 public:
 	/// @cond INTERNAL_DOCS
@@ -381,6 +384,12 @@ public:
     int baseFontSizeMin() const { return m_baseFontSizeMin; }
     int baseFontSizeMax() const { return m_baseFontSizeMax; }
 
+    int lastGCVersionRan() const { return m_lastGCVersionRan; }
+    void setLastGCVersionRan(const int newLastGCVersionRan) {
+        m_lastGCVersionRan = newLastGCVersionRan;
+        emit lastGCVersionRanChanged();
+    }
+
 protected slots:
 
     Q_INVOKABLE void notifyShowLockedActivitiesChanged();
@@ -404,6 +413,8 @@ protected slots:
     Q_INVOKABLE void notifyDownloadServerUrlChanged();
 
     Q_INVOKABLE void notifyExeCountChanged();
+
+    Q_INVOKABLE void notifyLastGCVersionRanChanged();
 
     Q_INVOKABLE void notifyBarHiddenChanged();
 
@@ -469,6 +480,7 @@ signals:
 
     void exeCountChanged();
 
+    void lastGCVersionRanChanged();
     void barHiddenChanged();
 
 private:
@@ -506,6 +518,8 @@ private:
     QString m_downloadServerUrl;
 
     quint32 m_exeCount;
+
+    int m_lastGCVersionRan;
 
     bool m_isBarHidden;
 

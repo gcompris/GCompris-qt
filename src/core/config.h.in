@@ -21,8 +21,11 @@
 #ifndef GCOMPRIS_CONFIG_H
 #define GCOMPRIS_CONFIG_H
 
-/* Version number of package */
+/* Version number of package (string) */
 #define VERSION "@GCOMPRIS_VERSION@"
+/* Version number of package (integer) */
+#define VERSION_CODE @GCOMPRIS_VERSION_CODE@
+
 /* Folder where rccs and translations are installed */
 #ifdef  Q_OS_MAC
 #define GCOMPRIS_DATA_FOLDER "../Resources"

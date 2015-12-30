@@ -46,7 +46,7 @@ set(GCOMPRIS_VERSION ${GCOMPRIS_MAJOR_VERSION}.${GCOMPRIS_MINOR_VERSION})
 
 # An integer value that represents the version of the application
 # Increase it at each release
-set(GCOMPRIS_VERSION_CODE ${GCOMPRIS_MINOR_VERSION})
+math(EXPR GCOMPRIS_VERSION_CODE "${GCOMPRIS_MAJOR_VERSION}*10000 + ${GCOMPRIS_MINOR_VERSION}*100 + ${GCOMPRIS_PATCH_VERSION}")
 
 # cmake modules setup
 find_package(ECM 1.4.0 QUIET NO_MODULE)

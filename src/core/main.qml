@@ -134,6 +134,9 @@ Window {
             );
         }
     }
+    ChangeLog {
+       id: changelog
+    }
 
     Component.onCompleted: {
         console.log("enter main.qml (run #" + ApplicationSettings.exeCount
@@ -170,8 +173,23 @@ Window {
                             checkWordset()
                         }
             );
-        } else {
+        }
+        else {
             checkWordset()
+
+            if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
+                // display log between ApplicationSettings.lastGCVersionRan and ApplicationInfo.GCVersionCode
+                var dialog;
+                dialog = Core.showMessageDialog(
+                main,
+                qsTr("GCompris has been updated!<br/>") + changelog.getLogBetween(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode),
+                "", null,
+                "", null,
+                function() { pageView.currentItem.focus = true }
+                );
+                // Store new version
+                ApplicationSettings.lastGCVersionRan = ApplicationInfo.GCVersionCode;
+            }
         }
     }
 

@@ -177,7 +177,7 @@ Item {
         Button {
             id: button1
             width: parent.width
-            height: 60 * ApplicationInfo.ratio
+            height: (visible ? 60 : 30) * ApplicationInfo.ratio
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 top: instructionTxtBg.bottom
@@ -195,7 +195,7 @@ Item {
         Button {
             id: button2
             width: parent.width
-            height: 60 * ApplicationInfo.ratio
+            height: (visible ? 60 : 30) * ApplicationInfo.ratio
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 top: button1.bottom

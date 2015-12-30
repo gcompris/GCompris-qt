@@ -116,6 +116,11 @@ class ApplicationInfo : public QObject
 	Q_PROPERTY(QString GCVersion READ GCVersion CONSTANT)
 
     /**
+     * GCompris version code (compile time).
+     */
+	Q_PROPERTY(int GCVersionCode READ GCVersionCode CONSTANT)
+
+    /**
      * Qt version string (runtime).
      */
 	Q_PROPERTY(QString QTVersion READ QTVersion CONSTANT)
@@ -243,6 +248,7 @@ public:
         return localeShort( ApplicationSettings::getInstance()->locale() );
     }
     static QString GCVersion() { return VERSION; }
+    static int GCVersionCode() { return VERSION_CODE; }
     static QString QTVersion() { return qVersion(); }
     static QString CompressedAudio() { return COMPRESSED_AUDIO; }
     static bool isDownloadAllowed() { return QString(DOWNLOAD_ALLOWED) == "ON"; }

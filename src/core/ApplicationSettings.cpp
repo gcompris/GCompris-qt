@@ -56,6 +56,7 @@ static const QString ENABLE_AUTOMATIC_DOWNLOADS = "enableAutomaticDownloads";
 static const QString DOWNLOAD_SERVER_URL_KEY = "downloadServerUrl";
 
 static const QString EXE_COUNT_KEY = "exeCount";
+static const QString LAST_GC_VERSION_RAN = "lastGCVersionRan";
 
 static const QString FILTER_LEVEL_MIN = "filterLevelMin";
 static const QString FILTER_LEVEL_MAX = "filterLevelMax";
@@ -141,11 +142,13 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     // internal group
     m_config.beginGroup(INTERNAL_GROUP_KEY);
     m_exeCount = m_config.value(EXE_COUNT_KEY, 0).toUInt();
+    m_lastGCVersionRan = m_config.value(LAST_GC_VERSION_RAN, ApplicationInfo::getInstance()->GCVersionCode()).toUInt();
     m_config.endGroup();
 
     // no group
     m_isBarHidden = false;
 
+<<<<<<< ff718a62d9b45ef2cc3aa3eb27dee32e00bd2cfd
     connect(this, &ApplicationSettings::showLockedActivitiesChanged, this, &ApplicationSettings::notifyShowLockedActivitiesChanged);
 	connect(this, &ApplicationSettings::audioVoicesEnabledChanged, this, &ApplicationSettings::notifyAudioVoicesEnabledChanged);
 	connect(this, &ApplicationSettings::audioEffectsEnabledChanged, this, &ApplicationSettings::notifyAudioEffectsEnabledChanged);
@@ -163,6 +166,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, &ApplicationSettings::downloadServerUrlChanged, this, &ApplicationSettings::notifyDownloadServerUrlChanged);
     connect(this, &ApplicationSettings::exeCountChanged, this, &ApplicationSettings::notifyExeCountChanged);
     connect(this, &ApplicationSettings::barHiddenChanged, this, &ApplicationSettings::notifyBarHiddenChanged);
+    connect(this, &ApplicationSettings::lastGCVersionRanChanged, this, &ApplicationSettings::notifyLastGCVersionRanChanged);
 }
 
 ApplicationSettings::~ApplicationSettings()
@@ -199,6 +203,7 @@ ApplicationSettings::~ApplicationSettings()
     // internal group
     m_config.beginGroup(INTERNAL_GROUP_KEY);
     m_config.setValue(EXE_COUNT_KEY, m_exeCount);
+    m_config.setValue(LAST_GC_VERSION_RAN, m_lastGCVersionRan);
     m_config.endGroup();
 
     m_config.sync();
@@ -330,6 +335,12 @@ void ApplicationSettings::notifyExeCountChanged()
 {
     updateValueInConfig(INTERNAL_GROUP_KEY, EXE_COUNT_KEY, m_exeCount);
     qDebug() << "exeCount set to: " << m_exeCount;
+}
+
+void ApplicationSettings::notifyLastGCVersionRanChanged()
+{
+    updateValueInConfig(INTERNAL_GROUP_KEY, LAST_GC_VERSION_RAN, m_lastGCVersionRan);
+    qDebug() << "lastVersionRan set to: " << m_lastGCVersionRan;
 }
 
 void ApplicationSettings::notifyBarHiddenChanged()
