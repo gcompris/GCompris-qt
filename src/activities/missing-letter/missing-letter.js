@@ -51,7 +51,8 @@ function start() {
     // register the voices for the locale
     GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
 
-    dataset = Lang.load(items.parser, langUrl, "words.json",
+    dataset = Lang.load(items.parser, langUrl,
+                        GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
                         "content-"+ locale +".json")
 
     // If dataset is empty, we try to load from short locale
@@ -65,7 +66,8 @@ function start() {
         } else {
             localeShort = locale;
         }
-        dataset = Lang.load(items.parser, langUrl, "words.json",
+        dataset = Lang.load(items.parser, langUrl,
+                            GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
                             "content-"+localeShort+ ".json")
     }
 
@@ -73,7 +75,9 @@ function start() {
     if(!dataset) {
         // English fallback
         items.background.englishFallback = true
-        dataset = Lang.load(items.parser, langUrl, "words.json", "content-en.json")
+        dataset = Lang.load(items.parser, langUrl,
+                            GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
+                            "content-en.json")
     } else {
         items.background.englishFallback = false
     }

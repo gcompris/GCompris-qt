@@ -44,7 +44,6 @@ ActivityBase {
 
         readonly property string wordsResource: "data2/words/words.rcc"
         property bool englishFallback: false
-        property bool downloadWordsNeeded: false
 
         signal start
         signal stop
@@ -74,39 +73,15 @@ ActivityBase {
             property variant categoriesTranslations: activity.categoriesTranslations
         }
 
-        function handleResourceRegistered(resource)
-        {
-            if (resource == wordsResource)
-                Activity.start();
-        }
-
         onStart: {
             Activity.init(items)
             dialogActivityConfig.getInitialConfiguration()
-
             activity.audioVoices.error.connect(voiceError)
             activity.audioVoices.done.connect(voiceDone)
-
-            // check for words.rcc:
-            if (DownloadManager.isDataRegistered("words")) {
-                // words.rcc is already registered -> start right away
-                Activity.start();
-            } else if(DownloadManager.haveLocalResource(wordsResource)) {
-                // words.rcc is there -> register old file first
-                if (DownloadManager.registerResource(wordsResource))
-                    Activity.start(items);
-                else // could not register the old data -> react to a possible update
-                    DownloadManager.resourceRegistered.connect(handleResourceRegistered);
-                // then try to update in the background
-                DownloadManager.updateResource(wordsResource);
-            } else {
-                // words.rcc has not been downloaded yet -> ask for download
-                downloadWordsNeeded = true
-            }
+            Activity.start()
         }
 
         onStop: {
-            DownloadManager.resourceRegistered.disconnect(handleResourceRegistered);
             dialogActivityConfig.saveDatainConfiguration()
             Activity.stop()
         }
@@ -176,25 +151,6 @@ ActivityBase {
             anchors.fill: parent
             focus: true
             active: background.englishFallback
-            onStatusChanged: if (status == Loader.Ready) item.start()
-        }
-
-        Loader {
-            id: downloadWordsDialog
-            sourceComponent: GCDialog {
-                parent: activity.main
-                message: qsTr("The images for this activity are not yet installed.")
-                button1Text: qsTr("Download the images")
-                onClose: background.downloadWordsNeeded = false
-                onButton1Hit: {
-                    DownloadManager.resourceRegistered.connect(handleResourceRegistered);
-                    DownloadManager.downloadResource(wordsResource)
-                    var downloadDialog = Core.showDownloadDialog(activity, {});
-                }
-            }
-            anchors.fill: parent
-            focus: true
-            active: background.downloadWordsNeeded
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
 

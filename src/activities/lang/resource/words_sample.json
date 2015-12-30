@@ -1,0 +1,644 @@
+[
+    {
+        "type": "chapter",
+        "name": "other",
+        "imgPrefix": "qrc:/gcompris/src/activities/lang/resource/words_sample/",
+        "content": [
+            {
+                "type": "lesson",
+                "name": "color",
+                "content": [
+                    {
+                        "description": "color",
+                        "image": "color.png",
+                        "voice": "voices-$CA/$LOCALE/words/color.$CA"
+                    },
+                    {
+                        "description": "blue",
+                        "image": "blue.png",
+                        "voice": "voices-$CA/$LOCALE/words/blue.$CA"
+                    },
+                    {
+                        "description": "brown",
+                        "image": "brown.png",
+                        "voice": "voices-$CA/$LOCALE/words/brown.$CA"
+                    },
+                    {
+                        "description": "black",
+                        "image": "black.png",
+                        "voice": "voices-$CA/$LOCALE/words/black.$CA"
+                    },
+                    {
+                        "description": "gray",
+                        "image": "gray.png",
+                        "voice": "voices-$CA/$LOCALE/words/gray.$CA"
+                    },
+                    {
+                        "description": "green",
+                        "image": "green.png",
+                        "voice": "voices-$CA/$LOCALE/words/green.$CA"
+                    },
+                    {
+                        "description": "mauve",
+                        "image": "mauve.png",
+                        "voice": "voices-$CA/$LOCALE/words/mauve.$CA"
+                    },
+                    {
+                        "description": "orange color",
+                        "image": "orange-color.png",
+                        "voice": "voices-$CA/$LOCALE/words/orange-color.$CA"
+                    },
+                    {
+                        "description": "pink",
+                        "image": "pink.png",
+                        "voice": "voices-$CA/$LOCALE/words/pink.$CA"
+                    },
+                    {
+                        "description": "red",
+                        "image": "red.png",
+                        "voice": "voices-$CA/$LOCALE/words/red.$CA"
+                    },
+                    {
+                        "description": "white",
+                        "image": "white.png",
+                        "voice": "voices-$CA/$LOCALE/words/white.$CA"
+                    },
+                    {
+                        "description": "yellow",
+                        "image": "yellow.png",
+                        "voice": "voices-$CA/$LOCALE/words/yellow.$CA"
+                    }
+                ]
+            },
+            {
+                "type": "lesson",
+                "name": "number",
+                "content": [
+                    {
+                        "description": "zero",
+                        "image": "zero.png",
+                        "voice": "voices-$CA/$LOCALE/alphabet/U0030.$CA"
+                    },
+                    {
+                        "description": "one",
+                        "image": "one.png",
+                        "voice": "voices-$CA/$LOCALE/alphabet/U0031.$CA"
+                    },
+                    {
+                        "description": "two",
+                        "image": "two.png",
+                        "voice": "voices-$CA/$LOCALE/alphabet/U0032.$CA"
+                    },
+                    {
+                        "description": "three",
+                        "image": "three.png",
+                        "voice": "voices-$CA/$LOCALE/alphabet/U0033.$CA"
+                    },
+                    {
+                        "description": "four",
+                        "image": "four.png",
+                        "voice": "voices-$CA/$LOCALE/alphabet/U0034.$CA"
+                    },
+                    {
+                        "description": "five",
+                        "image": "five.png",
+                        "voice": "voices-$CA/$LOCALE/alphabet/U0035.$CA"
+                    },
+                    {
+                        "description": "six",
+                        "image": "six.png",
+                        "voice": "voices-$CA/$LOCALE/alphabet/U0036.$CA"
+                    },
+                    {
+                        "description": "seven",
+                        "image": "seven.png",
+                        "voice": "voices-$CA/$LOCALE/alphabet/U0037.$CA"
+                    },
+                    {
+                        "description": "eight",
+                        "image": "eight.png",
+                        "voice": "voices-$CA/$LOCALE/alphabet/U0038.$CA"
+                    },
+                    {
+                        "description": "nine",
+                        "image": "nine.png",
+                        "voice": "voices-$CA/$LOCALE/alphabet/U0039.$CA"
+                    },
+                    {
+                        "description": "ten",
+                        "image": "ten.png",
+                        "voice": "voices-$CA/$LOCALE/alphabet/10.$CA"
+                    },
+                    {
+                        "description": "eleven",
+                        "image": "eleven.png",
+                        "voice": "voices-$CA/$LOCALE/alphabet/11.$CA"
+                    },
+                    {
+                        "description": "twelve",
+                        "image": "twelve.png",
+                        "voice": "voices-$CA/$LOCALE/alphabet/12.$CA"
+                    },
+                    {
+                        "description": "sixteen",
+                        "image": "sixteen.png",
+                        "voice": "voices-$CA/$LOCALE/alphabet/16.$CA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "type": "chapter",
+        "name": "people",
+        "imgPrefix": "qrc:/gcompris/src/activities/lang/resource/words_sample/",
+        "content": [
+            {
+                "type": "lesson",
+                "name": "bodyparts",
+                "content": [
+                    {
+                        "description": "arm",
+                        "image": "arm.png",
+                        "voice": "voices-$CA/$LOCALE/words/arm.$CA"
+                    },
+                    {
+                        "description": "back",
+                        "image": "back.png",
+                        "voice": "voices-$CA/$LOCALE/words/back.$CA"
+                    },
+                    {
+                        "description": "brain",
+                        "image": "brain.png",
+                        "voice": "voices-$CA/$LOCALE/words/brain.$CA"
+                    },
+                    {
+                        "description": "ear",
+                        "image": "ear.png",
+                        "voice": "voices-$CA/$LOCALE/words/ear.$CA"
+                    },
+                    {
+                        "description": "eyes",
+                        "image": "eyes.png",
+                        "voice": "voices-$CA/$LOCALE/words/eyes.$CA"
+                    },
+                    {
+                        "description": "face",
+                        "image": "face.png",
+                        "voice": "voices-$CA/$LOCALE/words/face.$CA"
+                    },
+                    {
+                        "description": "feet",
+                        "image": "feet.png",
+                        "voice": "voices-$CA/$LOCALE/words/feet.$CA"
+                    },
+                    {
+                        "description": "finger",
+                        "image": "finger.png",
+                        "voice": "voices-$CA/$LOCALE/words/finger.$CA"
+                    },
+                    {
+                        "description": "foot",
+                        "image": "foot.png",
+                        "voice": "voices-$CA/$LOCALE/words/foot.$CA"
+                    },
+                    {
+                        "description": "hair",
+                        "image": "hair.png",
+                        "voice": "voices-$CA/$LOCALE/words/hair.$CA"
+                    },
+                    {
+                        "description": "hand",
+                        "image": "hand.png",
+                        "voice": "voices-$CA/$LOCALE/words/hand.$CA"
+                    },
+                    {
+                        "description": "head",
+                        "image": "head.png",
+                        "voice": "voices-$CA/$LOCALE/words/head.$CA"
+                    },
+                    {
+                        "description": "knee",
+                        "image": "knee.png",
+                        "voice": "voices-$CA/$LOCALE/words/knee.$CA"
+                    },
+                    {
+                        "description": "leg",
+                        "image": "leg.png",
+                        "voice": "voices-$CA/$LOCALE/words/leg.$CA"
+                    },
+                    {
+                        "description": "mouth",
+                        "image": "mouth.png",
+                        "voice": "voices-$CA/$LOCALE/words/mouth.$CA"
+                    },
+                    {
+                        "description": "neck",
+                        "image": "neck.png",
+                        "voice": "voices-$CA/$LOCALE/words/neck.$CA"
+                    },
+                    {
+                        "description": "nose",
+                        "image": "nose.png",
+                        "voice": "voices-$CA/$LOCALE/words/nose.$CA"
+                    },
+                    {
+                        "description": "skin",
+                        "image": "skin.png",
+                        "voice": "voices-$CA/$LOCALE/words/skin.$CA"
+                    },
+                    {
+                        "description": "teeth",
+                        "image": "teeth.png",
+                        "voice": "voices-$CA/$LOCALE/words/teeth.$CA"
+                    },
+                    {
+                        "description": "thumb",
+                        "image": "thumb.png",
+                        "voice": "voices-$CA/$LOCALE/words/thumb.$CA"
+                    },
+                    {
+                        "description": "tongue",
+                        "image": "tongue.png",
+                        "voice": "voices-$CA/$LOCALE/words/tongue.$CA"
+                    }
+                ]
+            },
+            {
+                "type": "lesson",
+                "name": "people",
+                "content": [
+                    {
+                        "description": "boy",
+                        "image": "boy.png",
+                        "voice": "voices-$CA/$LOCALE/words/boy.$CA"
+                    },
+                    {
+                        "description": "brother",
+                        "image": "brother.png",
+                        "voice": "voices-$CA/$LOCALE/words/brother.$CA"
+                    },
+                    {
+                        "description": "child",
+                        "image": "child.png",
+                        "voice": "voices-$CA/$LOCALE/words/child.$CA"
+                    },
+                    {
+                        "description": "dad",
+                        "image": "dad.png",
+                        "voice": "voices-$CA/$LOCALE/words/dad.$CA"
+                    },
+                    {
+                        "description": "family",
+                        "image": "family.png",
+                        "voice": "voices-$CA/$LOCALE/words/family.$CA"
+                    },
+                    {
+                        "description": "friend",
+                        "image": "friend.png",
+                        "voice": "voices-$CA/$LOCALE/words/friend.$CA"
+                    },
+                    {
+                        "description": "girl",
+                        "image": "girl.png",
+                        "voice": "voices-$CA/$LOCALE/words/girl.$CA"
+                    },
+                    {
+                        "description": "grandmother",
+                        "image": "grandmother.png",
+                        "voice": "voices-$CA/$LOCALE/words/grandmother.$CA"
+                    },
+                    {
+                        "description": "man",
+                        "image": "man.png",
+                        "voice": "voices-$CA/$LOCALE/words/man.$CA"
+                    },
+                    {
+                        "description": "mother",
+                        "image": "mother.png",
+                        "voice": "voices-$CA/$LOCALE/words/mother.$CA"
+                    },
+                    {
+                        "description": "sister",
+                        "image": "sister.png",
+                        "voice": "voices-$CA/$LOCALE/words/sister.$CA"
+                    },
+                    {
+                        "description": "son",
+                        "image": "son.png",
+                        "voice": "voices-$CA/$LOCALE/words/son.$CA"
+                    },
+                    {
+                        "description": "woman",
+                        "image": "woman.png",
+                        "voice": "voices-$CA/$LOCALE/words/woman.$CA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+       "type": "chapter",
+        "name": "nature",
+        "imgPrefix": "qrc:/gcompris/src/activities/lang/resource/words_sample/",
+        "content": [
+            {
+                "type": "lesson",
+                "name": "animal",
+                "content": [
+                    {
+                        "description": "animal",
+                        "image": "animal.png",
+                        "voice": "voices-$CA/$LOCALE/words/animal.$CA"
+                    },
+                    {
+                        "description": "bear",
+                        "image": "bear.png",
+                        "voice": "voices-$CA/$LOCALE/words/bear.$CA"
+                    },
+                    {
+                        "description": "bee",
+                        "image": "bee.png",
+                        "voice": "voices-$CA/$LOCALE/words/bee.$CA"
+                    },
+                    {
+                        "description": "beetle",
+                        "image": "beetle.png",
+                        "voice": "voices-$CA/$LOCALE/words/beetle.$CA"
+                    },
+                    {
+                        "description": "bird",
+                        "image": "bird.png",
+                        "voice": "voices-$CA/$LOCALE/words/bird.$CA"
+                    },
+                    {
+                        "description": "bug",
+                        "image": "bug.png",
+                        "voice": "voices-$CA/$LOCALE/words/bug.$CA"
+                    },
+                    {
+                        "description": "bull",
+                        "image": "bull.png",
+                        "voice": "voices-$CA/$LOCALE/words/bull.$CA"
+                    },
+                    {
+                        "description": "butterfly",
+                        "image": "butterfly.png",
+                        "voice": "voices-$CA/$LOCALE/words/butterfly.$CA"
+                    },
+                    {
+                        "description": "camel",
+                        "image": "camel.png",
+                        "voice": "voices-$CA/$LOCALE/words/camel.$CA"
+                    },
+                    {
+                        "description": "cat",
+                        "image": "cat.png",
+                        "voice": "voices-$CA/$LOCALE/words/cat.$CA"
+                    },
+                    {
+                        "description": "chicken",
+                        "image": "chicken.png",
+                        "voice": "voices-$CA/$LOCALE/words/chicken.$CA"
+                    },
+                    {
+                        "description": "cow",
+                        "image": "cow.png",
+                        "voice": "voices-$CA/$LOCALE/words/cow.$CA"
+                    },
+                    {
+                        "description": "dog",
+                        "image": "dog.png",
+                        "voice": "voices-$CA/$LOCALE/words/dog.$CA"
+                    },
+                    {
+                        "description": "dolphin",
+                        "image": "dolphin.png",
+                        "voice": "voices-$CA/$LOCALE/words/dolphin.$CA"
+                    },
+                    {
+                        "description": "dragon",
+                        "image": "dragon.png",
+                        "voice": "voices-$CA/$LOCALE/words/dragon.$CA"
+                    },
+                    {
+                        "description": "duck",
+                        "image": "duck.png",
+                        "voice": "voices-$CA/$LOCALE/words/duck.$CA"
+                    },
+                    {
+                        "description": "fish",
+                        "image": "fish.png",
+                        "voice": "voices-$CA/$LOCALE/words/fish.$CA"
+                    },
+                    {
+                        "description": "flies",
+                        "image": "flies.png",
+                        "voice": "voices-$CA/$LOCALE/words/flies.$CA"
+                    },
+                    {
+                        "description": "fox",
+                        "image": "fox.png",
+                        "voice": "voices-$CA/$LOCALE/words/fox.$CA"
+                    },
+                    {
+                        "description": "frog",
+                        "image": "frog.png",
+                        "voice": "voices-$CA/$LOCALE/words/frog.$CA"
+                    },
+                    {
+                        "description": "giraffe",
+                        "image": "giraffe.png",
+                        "voice": "voices-$CA/$LOCALE/words/giraffe.$CA"
+                    },
+                    {
+                        "description": "gorilla",
+                        "image": "gorilla.png",
+                        "voice": "voices-$CA/$LOCALE/words/gorilla.$CA"
+                    },
+                    {
+                        "description": "hedgehog",
+                        "image": "hedgehog.png",
+                        "voice": "voices-$CA/$LOCALE/words/hedgehog.$CA"
+                    },
+                    {
+                        "description": "hippopotamus",
+                        "image": "hippopotamus.png",
+                        "voice": "voices-$CA/$LOCALE/words/hippopotamus.$CA"
+                    },
+                    {
+                        "description": "horse",
+                        "image": "horse.png",
+                        "voice": "voices-$CA/$LOCALE/words/horse.$CA"
+                    },
+                    {
+                        "description": "kangaroo",
+                        "image": "kangaroo.png",
+                        "voice": "voices-$CA/$LOCALE/words/kangaroo.$CA"
+                    },
+                    {
+                        "description": "lizard",
+                        "image": "lizard.png",
+                        "voice": "voices-$CA/$LOCALE/words/lizard.$CA"
+                    },
+                    {
+                        "description": "mosquito",
+                        "image": "mosquito.png",
+                        "voice": "voices-$CA/$LOCALE/words/mosquito.$CA"
+                    },
+                    {
+                        "description": "mouse",
+                        "image": "mouse.png",
+                        "voice": "voices-$CA/$LOCALE/words/mouse.$CA"
+                    },
+                    {
+                        "description": "owl",
+                        "image": "owl.png",
+                        "voice": "voices-$CA/$LOCALE/words/owl.$CA"
+                    },
+                    {
+                        "description": "panda",
+                        "image": "panda.png",
+                        "voice": "voices-$CA/$LOCALE/words/panda.$CA"
+                    },
+                    {
+                        "description": "pig",
+                        "image": "pig.png",
+                        "voice": "voices-$CA/$LOCALE/words/pig.$CA"
+                    },
+                    {
+                        "description": "rabbit",
+                        "image": "rabbit.png",
+                        "voice": "voices-$CA/$LOCALE/words/rabbit.$CA"
+                    },
+                    {
+                        "description": "reptile",
+                        "image": "reptile.png",
+                        "voice": "voices-$CA/$LOCALE/words/reptile.$CA"
+                    },
+                    {
+                        "description": "rhinoceros",
+                        "image": "rhinoceros.png",
+                        "voice": "voices-$CA/$LOCALE/words/rhinoceros.$CA"
+                    },
+                    {
+                        "description": "shark",
+                        "image": "shark.png",
+                        "voice": "voices-$CA/$LOCALE/words/shark.$CA"
+                    },
+                    {
+                        "description": "sheep",
+                        "image": "sheep.png",
+                        "voice": "voices-$CA/$LOCALE/words/sheep.$CA"
+                    },
+                    {
+                        "description": "snail",
+                        "image": "snail.png",
+                        "voice": "voices-$CA/$LOCALE/words/snail.$CA"
+                    },
+                    {
+                        "description": "snake",
+                        "image": "snake.png",
+                        "voice": "voices-$CA/$LOCALE/words/snake.$CA"
+                    },
+                    {
+                        "description": "spider",
+                        "image": "spider.png",
+                        "voice": "voices-$CA/$LOCALE/words/spider.$CA"
+                    },
+                    {
+                        "description": "turkey",
+                        "image": "turkey.png",
+                        "voice": "voices-$CA/$LOCALE/words/turkey.$CA"
+                    },
+                    {
+                        "description": "turtle",
+                        "image": "turtle.png",
+                        "voice": "voices-$CA/$LOCALE/words/turtle.$CA"
+                    },
+                    {
+                        "description": "whale",
+                        "image": "whale.png",
+                        "voice": "voices-$CA/$LOCALE/words/whale.$CA"
+                    },
+                    {
+                        "description": "wolf",
+                        "image": "wolf.png",
+                        "voice": "voices-$CA/$LOCALE/words/wolf.$CA"
+                    }
+                ]
+            },
+            {
+                "type": "lesson",
+                "name": "fruit",
+                "content": [
+                    {
+                        "description": "apple",
+                        "image": "apple.png",
+                        "voice": "voices-$CA/$LOCALE/words/apple.$CA"
+                    },
+                    {
+                        "description": "apricot",
+                        "image": "apricot.png",
+                        "voice": "voices-$CA/$LOCALE/words/apricot.$CA"
+                    },
+                    {
+                        "description": "coconut",
+                        "image": "coconut.png",
+                        "voice": "voices-$CA/$LOCALE/words/coconut.$CA"
+                    },
+                    {
+                        "description": "fruit",
+                        "image": "fruit.png",
+                        "voice": "voices-$CA/$LOCALE/words/fruit.$CA"
+                    },
+                    {
+                        "description": "kiwi",
+                        "image": "kiwi.png",
+                        "voice": "voices-$CA/$LOCALE/words/kiwi.$CA"
+                    },
+                    {
+                        "description": "lemon",
+                        "image": "lemon.png",
+                        "voice": "voices-$CA/$LOCALE/words/lemon.$CA"
+                    },
+                    {
+                        "description": "melon",
+                        "image": "melon.png",
+                        "voice": "voices-$CA/$LOCALE/words/melon.$CA"
+                    },
+                    {
+                        "description": "orange",
+                        "image": "orange.png",
+                        "voice": "voices-$CA/$LOCALE/words/orange.$CA"
+                    },
+                    {
+                        "description": "peach",
+                        "image": "peach.png",
+                        "voice": "voices-$CA/$LOCALE/words/peach.$CA"
+                    },
+                    {
+                        "description": "pear",
+                        "image": "pear.png",
+                        "voice": "voices-$CA/$LOCALE/words/pear.$CA"
+                    },
+                    {
+                        "description": "plum",
+                        "image": "plum.png",
+                        "voice": "voices-$CA/$LOCALE/words/plum.$CA"
+                    },
+                    {
+                        "description": "raspberry",
+                        "image": "raspberry.png",
+                        "voice": "voices-$CA/$LOCALE/words/raspberry.$CA"
+                    },
+                    {
+                        "description": "strawberry",
+                        "image": "strawberry.png",
+                        "voice": "voices-$CA/$LOCALE/words/strawberry.$CA"
+                    }
+                ]
+            }
+        ]
+    }
+]

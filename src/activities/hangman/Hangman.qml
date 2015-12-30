@@ -56,7 +56,6 @@ ActivityBase {
                 
         readonly property string wordsResource: "data2/words/words.rcc"
         property bool englishFallback: false
-        property bool downloadWordsNeeded: false
         
         signal start
         signal stop
@@ -103,34 +102,14 @@ ActivityBase {
             }
         }
 
-        function handleResourceRegistered(resource) {
-            if (resource == wordsResource) {
-                Activity.start(items);
-                Activity.focusTextInput()
-            }
-        }
-
         onStart: {
             focus = true
-
-            // check for words.rcc:
-            if (DownloadManager.isDataRegistered("words")) {
-                // words.rcc is already registered -> start right away
-                Activity.start(items);
-            } else if(DownloadManager.haveLocalResource(wordsResource)) {
-                // words.rcc is there, but not yet registered -> updateResource
-                DownloadManager.resourceRegistered.connect(handleResourceRegistered);
-                DownloadManager.updateResource(wordsResource);
-            } else {
-                // words.rcc has not been downloaded yet -> ask for download
-                downloadWordsNeeded = true
-            }
+            Activity.start(items)
             Activity.focusTextInput()
         }
 
         onStop: {
             Activity.stop();
-            DownloadManager.resourceRegistered.disconnect(handleResourceRegistered);
         }
 
         GCText {
@@ -425,27 +404,6 @@ ActivityBase {
             active: background.englishFallback
             onStatusChanged: if (status == Loader.Ready) item.start()
         }
-        
-        Loader {
-            id: downloadWordsDialog
-            sourceComponent: GCDialog {
-                parent: activity.main
-                message: qsTr("The images for this activity are not yet installed.")
-                button1Text: ApplicationInfo.isDownloadAllowed ? qsTr("Download the images") : qsTr("OK")
-                onClose: background.downloadWordsNeeded = false
-                onButton1Hit: {
-                    if(ApplicationInfo.isDownloadAllowed) {
-                        DownloadManager.resourceRegistered.connect(handleResourceRegistered);
-                        DownloadManager.downloadResource(wordsResource)
-                        Core.showDownloadDialog(activity, {});
-                    }
-                }
-            }
-            anchors.fill: parent
-            focus: true
-            active: background.downloadWordsNeeded
-            onStatusChanged: if (status == Loader.Ready) item.start()
-        }
-   }
+    }
 
 }

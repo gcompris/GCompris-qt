@@ -248,6 +248,19 @@ Item {
             }
         }
 
+        /* Texchnically wordset config is a string that holds the wordset name or '' for the
+         * internal wordset. But as we support only internal and words its best to show the
+         * user a boolean choice.
+         */
+        GCDialogCheckBox {
+            id: wordsetBox
+            checked: wordset
+            text: qsTr("Use external large word image set")
+            onCheckedChanged: {
+                wordset = checked ? 'data2/words/words.rcc' : '';
+            }
+        }
+
         Flow {
             spacing: 5
             width: parent.width
@@ -485,6 +498,7 @@ Item {
     property bool isVirtualKeyboard: ApplicationSettings.isVirtualKeyboard
     property bool isAutomaticDownloadsEnabled: ApplicationSettings.isAutomaticDownloadsEnabled
     property bool sectionVisible: ApplicationSettings.sectionVisible
+    property string wordset: ApplicationSettings.wordset
     property int baseFontSize  // don't bind to ApplicationSettings.baseFontSize
     // or we get a binding loop warning
 
@@ -508,6 +522,9 @@ Item {
 
         sectionVisible = ApplicationSettings.sectionVisible
         sectionVisibleBox.checked = sectionVisible
+
+        wordset = ApplicationSettings.wordset
+        wordsetBox.checked = (wordset != '')
 
         baseFontSize = ApplicationSettings.baseFontSize;
 
@@ -544,6 +561,7 @@ Item {
         ApplicationSettings.isVirtualKeyboard = isVirtualKeyboard
         ApplicationSettings.isAutomaticDownloadsEnabled = isAutomaticDownloadsEnabled
         ApplicationSettings.sectionVisible = sectionVisible
+        ApplicationSettings.wordset = wordset
 
         ApplicationSettings.isEmbeddedFont = fonts.get(fontBox.currentIndex).isLocalResource;
         ApplicationSettings.font = fonts.get(fontBox.currentIndex).text
@@ -631,6 +649,7 @@ Item {
     function hasConfigChanged() {
         return (ApplicationSettings.locale !== dialogConfig.languages[languageBox.currentIndex].locale ||
         (ApplicationSettings.sectionVisible != sectionVisible) ||
+        (ApplicationSettings.wordset != wordset) ||
         (ApplicationSettings.font != fonts.get(fontBox.currentIndex).text) ||
         (ApplicationSettings.isEmbeddedFont != fonts.get(fontBox.currentIndex).isLocalResource) ||
         (ApplicationSettings.isEmbeddedFont != fonts.get(fontBox.currentIndex).isLocalResource) ||

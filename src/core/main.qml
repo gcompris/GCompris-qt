@@ -107,6 +107,34 @@ Window {
         audioVoices.append(ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/intro/" + name + ".$CA"))
     }
 
+    function checkWordset() {
+        if(ApplicationSettings.wordset == '')
+            return
+
+        // check for words.rcc:
+        if (DownloadManager.isDataRegistered("words")) {
+            // words.rcc is already registered -> nothing to do
+        } else if(DownloadManager.haveLocalResource(ApplicationSettings.wordset)) {
+            // words.rcc is there -> register old file first
+            // then try to update in the background
+            DownloadManager.updateResource(ApplicationSettings.wordset);
+        } else {
+            // words.rcc has not been downloaded yet -> ask for download
+            Core.showMessageDialog(
+                        main,
+                        qsTr("The images for several activities are not yet installed.")
+                        + qsTr("Do you want to download them now?"),
+                        qsTr("Yes"),
+                        function() {
+                            if (DownloadManager.downloadResource(ApplicationSettings.wordset))
+                                var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
+                        },
+                        qsTr("No"), null,
+                        function() { pageView.currentItem.focus = true }
+            );
+        }
+    }
+
     Component.onCompleted: {
         console.log("enter main.qml (run #" + ApplicationSettings.exeCount
                     + ", ratio=" + ApplicationInfo.ratio
@@ -137,8 +165,13 @@ Window {
                                 var downloadDialog = Core.showDownloadDialog(pageView.currentItem, {});
                         },
                         qsTr("No"), null,
-                        function() { pageView.currentItem.focus = true }
+                        function() {
+                            pageView.currentItem.focus = true
+                            checkWordset()
+                        }
             );
+        } else {
+            checkWordset()
         }
     }
 
