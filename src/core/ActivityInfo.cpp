@@ -31,7 +31,8 @@ ActivityInfo::ActivityInfo(QObject *parent):
 	QObject(parent),
     m_demo(true),
     m_favorite(false),
-    m_enabled(true)
+    m_enabled(true),
+    m_createdInVersion(0)
 {
 }
 
@@ -178,6 +179,16 @@ void ActivityInfo::setEnabled(const bool enabled)
 {
   m_enabled = enabled;
   emit enabledChanged();
+}
+
+int ActivityInfo::createdInVersion() const
+{
+  return m_createdInVersion;
+}
+void ActivityInfo::setCreatedInVersion(const int created)
+{
+  m_createdInVersion = created;
+  emit createdInVersionChanged();
 }
 
 QStringList ActivityInfo::getSectionPath()

@@ -119,6 +119,11 @@ class ActivityInfo : public QObject
      */
     Q_PROPERTY(bool enabled READ enabled WRITE setEnabled NOTIFY enabledChanged)
 
+    /**
+     * Version in which this activity has been created
+     */
+	Q_PROPERTY(int createdInVersion READ createdInVersion WRITE setCreatedInVersion NOTIFY createdInVersionChanged)
+
 public:
 	/// @cond INTERNAL_DOCS
 	explicit ActivityInfo(QObject *parent = 0);
@@ -127,7 +132,7 @@ public:
 	void setName(const QString &);
 	QString section() const;
 	void setSection(const QString &);
-    quint32 difficulty() const;
+        quint32 difficulty() const;
 	void setDifficulty(const int &);
 	QString icon() const;
 	void setIcon(const QString &);
@@ -147,10 +152,12 @@ public:
 	void setManual(const QString &);
 	QString credit() const;
 	void setCredit(const QString &);
-    bool favorite() const;
-    void setFavorite(const bool);
-    bool enabled() const;
-    void setEnabled(const bool);
+        bool favorite() const;
+        void setFavorite(const bool);
+        bool enabled() const;
+        void setEnabled(const bool);
+        int createdInVersion() const;
+        void setCreatedInVersion(const int);
 
 	QStringList getSectionPath();
 
@@ -168,8 +175,9 @@ signals:
 	void prerequisiteChanged();
 	void manualChanged();
 	void creditChanged();
-    void favoriteChanged();
-    void enabledChanged();
+        void favoriteChanged();
+        void enabledChanged();
+	void createdInVersionChanged();
 
 	/// @endcond
 private:
@@ -186,8 +194,9 @@ private:
 	QString m_prerequisite;
 	QString m_manual;
 	QString m_credit;
-    bool m_favorite;
-    bool m_enabled;
+        bool m_favorite;
+        bool m_enabled;
+	int m_createdInVersion;
 };
 
 #endif // ACTIVITYINFO_H

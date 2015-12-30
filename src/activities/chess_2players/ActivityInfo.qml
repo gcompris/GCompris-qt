@@ -38,4 +38,5 @@ ActivityInfo {
 <b>Explanation</b>: don't rush too quick, be patient. Let yourself think a little bit and try to predict your opponent's future moves, so you can catch him on it or secure your pieces from his attacks.")
   credit: ""
   section: "strategy"
+  createdInVersion: 5000
 }

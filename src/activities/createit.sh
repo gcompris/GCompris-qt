@@ -25,6 +25,13 @@ fi
 
 cp -r $templatedir $activitydir
 
+
+#retrieve version code
+major=`awk '/set\(GCOMPRIS_MAJOR_VERSION / {print substr ($NF, 0, length($NF)-1)}' <  ../../CMakeLists.txt`
+minor=`awk '/set\(GCOMPRIS_MINOR_VERSION / {print substr ($NF, 0, length($NF)-1)}' <  ../../CMakeLists.txt`
+patch=`awk '/set\(GCOMPRIS_PATCH_VERSION / {print substr ($NF, 0, length($NF)-1)}' <  ../../CMakeLists.txt`
+versioncode=$(($major*10000+$minor*100+$patch))
+
 cd $activitydir
 mv $template.js $activity.js
 mv $template.svg $activity.svg
@@ -32,9 +39,11 @@ mv $Template.qml $Activity.qml
 if [[ "$OSTYPE" == "darwin"* ]]; then
   sed -i '' s/$template/$activity/g *
   sed -i '' s/$Template/$Activity/g *
+  sed -i '' s/"creationversion"/$versioncode/g *
 else
   sed -i s/$template/$activity/g *
   sed -i s/$Template/$Activity/g *
+  sed -i s/"creationversion"/$versioncode/g *
 fi
 cd ..
 

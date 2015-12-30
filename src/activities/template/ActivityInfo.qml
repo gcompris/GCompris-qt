@@ -31,4 +31,5 @@ ActivityInfo {
   manual: ""
   credit: ""
   section: "fun"
+  createdInVersion: creationversion
 }

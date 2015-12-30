@@ -349,6 +349,15 @@ ActivityBase {
                                   menuActivity.url + "lock.svg"
                         sourceSize.width: 30 * ApplicationInfo.ratio
                     }
+                    Image {
+                        anchors {
+                            left: parent.left
+                            bottom: parent.bottom
+                        }
+                        source: ActivityInfoTree.menuTree[index].createdInVersion == ApplicationInfo.GCVersionCode
+                                ? menuActivity.url + "new.svg" : ""
+                        sourceSize.width: 30 * ApplicationInfo.ratio
+                    }
                     GCText {
                         id: title
                         anchors.top: parent.bottom
