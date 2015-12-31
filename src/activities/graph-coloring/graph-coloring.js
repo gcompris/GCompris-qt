@@ -23,7 +23,7 @@
 .import QtQuick 2.0 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 8
+var numberOfLevel = 14
 var items
 var url = "qrc:/gcompris/src/activities/graph-coloring/resource/"
 var coloringLeft
@@ -59,7 +59,13 @@ var levels = [
             {extraColor:2, graph:"graph_3.qml"},
             {extraColor:0, graph:"graph_3.qml"},
             {extraColor:2, graph:"graph_4.qml"},
-            {extraColor:0, graph:"graph_4.qml"}
+            {extraColor:0, graph:"graph_4.qml"},
+            {extraColor:2, graph:"graph_5.qml"},
+            {extraColor:0, graph:"graph_5.qml"},
+            {extraColor:2, graph:"graph_6.qml"},
+            {extraColor:0, graph:"graph_6.qml"},
+            {extraColor:3, graph:"graph_7.qml"},
+            {extraColor:0, graph:"graph_7.qml"}
         ];
 
 var mode = "symbol";

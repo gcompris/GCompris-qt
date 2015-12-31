@@ -43,6 +43,7 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
+            ApplicationSettings.isBarHidden = true
             dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -108,14 +109,17 @@ ActivityBase {
         Item {
             id: graphRect
             anchors.left: parent.left
-            anchors.leftMargin: 150 * ApplicationInfo.ratio
+            anchors.leftMargin: 100 * ApplicationInfo.ratio
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 50 * ApplicationInfo.ratio
             anchors.top: parent.top
             anchors.topMargin: 50 * ApplicationInfo.ratio
-            property int factor: 450
             height: background.height - 100 * ApplicationInfo.ratio
-            width: background.width - 300 * ApplicationInfo.ratio
+            width: background.width - 150 * ApplicationInfo.ratio
+            property int diameter: graphRect.width/11
+            property int minDiameter: 40 * ApplicationInfo.ratio
+            property int maxDiameter: 80 * ApplicationInfo.ratio
+            property int optDiameter: diameter < minDiameter ? minDiameter : ( diameter > maxDiameter ? maxDiameter : diameter)
             Repeater {
                 id: edgesRepeater
                 model: ListModel {}
@@ -160,10 +164,7 @@ ActivityBase {
 
                     x: posX * graphRect.width - width/2
                     y: posY * graphRect.height - height/2
-                    property int diameter: graphRect.width/9
-                    property int minDiameter: 40 * ApplicationInfo.ratio
-                    property int maxDiameter: 80 * ApplicationInfo.ratio
-                    width: diameter < minDiameter ? minDiameter : ( diameter > maxDiameter ? maxDiameter : diameter)
+                    width: graphRect.optDiameter
                     height: width
                     radius: width/2
                     border.color: highlight == true ? "red" : "black"
@@ -241,15 +242,15 @@ ActivityBase {
             chooser.y = targetY;
             chooser.scale = 1;
             chooser.visible = true;
-            chooserTimer.restart();
+            //chooserTimer.restart();
             //console.log(" item.x = " + item.x + " item.y" + item.y+" absolute.x" + absolute.x +" absolute.y" + absolute.y)
         }
 
         Rectangle {
             id: chooser
 
-            width: chooserGrid.width + 10
-            height: chooserGrid.height + 10
+            width: chooserGrid.width + 5
+            height: chooserGrid.height + 5
 
             color: "darkgray"
             border.width: 0
@@ -263,8 +264,8 @@ ActivityBase {
             GridView {
                 id: chooserGrid
 
-                cellWidth: graphRect.width/10
-                cellHeight: graphRect.width/10
+                cellWidth: graphRect.optDiameter - 2
+                cellHeight: cellWidth
                 width: Math.ceil(count / 2) * cellWidth
                 height: 2 * cellHeight
                 anchors.centerIn: parent
@@ -290,8 +291,8 @@ ActivityBase {
 
                 delegate: Node {
                     id: chooserItem
-                    width: chooserGrid.cellWidth
-                    height: chooserGrid.cellWidth
+                    width: graphRect.optDiameter - 5
+                    height: width
                     border.width: index == chooserGrid.colIndex ? 3 : 1
                     border.color: index == chooserGrid.colIndex ? "white" : "darkgray"
                     searchItemIndex: modelData
