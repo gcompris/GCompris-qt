@@ -23,7 +23,7 @@
 .import QtQuick 2.0 as Quick
 
 var url = "qrc:/gcompris/src/activities/hexagon/resource/"
-var maxNumberOfLevel = 9
+var maxNumberOfLevel = 12;
 var currentLevel = 0
 var main
 var items
