@@ -43,7 +43,6 @@ ActivityBase {
         signal stop
 
         Component.onCompleted: {
-            ApplicationSettings.isBarHidden = true
             dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -242,7 +241,7 @@ ActivityBase {
             chooser.y = targetY;
             chooser.scale = 1;
             chooser.visible = true;
-            //chooserTimer.restart();
+            chooserTimer.restart();
             //console.log(" item.x = " + item.x + " item.y" + item.y+" absolute.x" + absolute.x +" absolute.y" + absolute.y)
         }
 
