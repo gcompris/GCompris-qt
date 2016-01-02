@@ -95,7 +95,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias score: score
             property alias progressbar: progressbar
-            property alias pause: pause
+            property alias ok: ok
             property alias dataModel: dataModel
             property alias dataset: dataset
             property alias instruction: instruction
@@ -181,6 +181,7 @@ ActivityBase {
         }
 
         Column {
+            id: progress
             visible: items.score.currentSubLevel != 1
             anchors.bottom: parent.bottom
             anchors.right: parent.right
@@ -192,6 +193,7 @@ ActivityBase {
                 property string message
                 onValueChanged: message = value + "/" + maximumValue
                 onMaximumValueChanged:  message = value + "/" + maximumValue
+
                 GCText {
                     id: progressbarText
                     anchors.centerIn: parent
@@ -203,10 +205,19 @@ ActivityBase {
             }
         }
 
-        PauseAnimation {
-            id: pause
-            running: false
-            duration: 2000
+        Image {
+            id: ok
+            visible: progressbar.value === progressbar.maximumValue
+            source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
+            sourceSize.width: questionText.height * 2
+            fillMode: Image.PreserveAspectFit
+            anchors.right: progress.left
+            anchors.bottom: parent.bottom
+            anchors.margins: 10 * ApplicationInfo.ratio
+            MouseArea {
+                anchors.fill: parent
+                onClicked: Activity.nextLevel()
+            }
         }
 
         Row {
@@ -257,7 +268,7 @@ ActivityBase {
                         color: "black"
                         width: parent.width
                         wrapMode: Text.Wrap
-                        text: (dataset.item && items.score.currentSubLevel - 1 != items.score.numberOfSubLevels && items.score.currentSubLevel - 1 != -1) ? dataset.item.instructions[items.score.currentSubLevel - 1].text : ""
+                        text: (dataset.item && items.score.currentSubLevel - 1 != items.score.numberOfSubLevels  && items.score.currentSubLevel != 0) ? dataset.item.instructions[items.score.currentSubLevel - 1].text : ""
                     }
                     MouseArea {
                         anchors.fill: parent

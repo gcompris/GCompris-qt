@@ -66,7 +66,6 @@ function initLevel() {
 }
 
 function nextLevel() {
-    items.pause.running = true
     ++items.score.currentSubLevel
     if(numberofLevels <= currentLevel && items.score.numberOfSubLevels < items.score.currentSubLevel)
     {
@@ -112,9 +111,6 @@ function isComplete() {
 function initSubSubLevel() {
     if(items.progressbar.value == items.dataModel.count) {
         items.bonus.good("smiley");
-        items.pause.running = true
-        items.progressbar.value = 0;
-        nextLevel()
     }
      if(items.score.currentSubLevel == 2 && items.hasAudioQuestions) {
         items.audioEffects.play(getCurrentQuestion().audio);
@@ -122,7 +118,6 @@ function initSubSubLevel() {
 }
 
 function nextSubSubLevel() {
-    items.progressbar.value ++;
     initSubSubLevel()
 }
 

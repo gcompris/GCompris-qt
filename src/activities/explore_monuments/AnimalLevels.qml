@@ -74,8 +74,8 @@ Image {
         id: touchArea
         anchors.centerIn: parent
         // Make the item big enough to be clicked easily
-        width: Math.max(parent.width, 50 * ApplicationInfo.ratio)
-        height: Math.max(parent.height, 50 * ApplicationInfo.ratio)
+        width: Math.max(parent.width, 55 * ApplicationInfo.ratio)
+        height: Math.max(parent.height, 55 * ApplicationInfo.ratio)
         touchPoints: [ TouchPoint { id: point1 } ]
         mouseEnabled: true
 
@@ -90,7 +90,7 @@ Image {
                 if (questionId === questionTargetId) {
                     animWin.start();
                     items.bonus.good("smiley");
-                    pause.start();
+                    items.progressbar.value ++;
                     Activity.nextSubSubLevel();
                 } else {
                     items.bonus.bad("smiley")
