@@ -1,7 +1,7 @@
 /* GCompris - ClickOnLetter.qml
  *
  * Copyright (C) 2014 Holger Kaelberer  <holger.k@elberer.de>
- * 
+ *
  * Authors:
  *   Pascal Georges <pascal.georges1@free.fr> (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ Mostly full rewrite)
@@ -31,7 +31,7 @@ import "qrc:/gcompris/src/core/core.js" as Core
 ActivityBase {
     id: activity
     focus: true
-    
+
     /* mode of the activity, either "lowercase" (click_on_letter)
      * or "uppercase" (click_on_letter_up): */
     property string mode: "lowercase"
@@ -51,13 +51,13 @@ ActivityBase {
         signal start
         signal stop
         signal voiceError
-        
+
         Component.onCompleted: {
             dialogActivityConfig.getInitialConfiguration()
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-        
+
         QtObject {
             id: items
             property Item main: activity.main
@@ -71,7 +71,7 @@ ActivityBase {
             property alias bonus: bonus
             property alias locale: background.locale
         }
-        
+
         onVoiceError: {
             questionItem.visible = true
             repeatItem.visible = false
@@ -244,7 +244,7 @@ ActivityBase {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 opacity: 1.0
-                z:11            
+                z:11
                 text: ""
                 fontSize: 44
                 font.bold: true
@@ -309,10 +309,9 @@ ActivityBase {
             interactive: false
             verticalLayoutDirection: GridView.BottomToTop
             layoutDirection: Qt.LeftToRight
-            
+
             model: trainModel
             delegate: Carriage {
-                sourceSize.width: background.itemWidth
                 width: background.itemWidth
                 nbCarriage: (parent.width - engine.width) / background.itemWidth
             }
