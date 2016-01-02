@@ -12,9 +12,30 @@ function(getQtPluginPaths _plugin_target _absolute_path _subdir _file)
   set(${_file} ${_plugin_file} PARENT_SCOPE)
 endfunction()
 
+# Determine Qt5's plugin-path deriving from lib-dir and trying different
+# locations corresponding to different directory layouts, e.g.:
+#
+# Debian:
+#   /usr/lib/i386-linux-gnu/libQt5Qml.so.5.4.1
+#   /usr/lib/i386-linux-gnu/qt5/plugins/
+# Opensuse:
+#   /usr/lib64/libQt5Multimedia.so.5
+#   /usr/lib64/qt5/plugins/
+# Qt installer:
+#   /opt/Qt5.5.1/5.5/gcc/lib/libQt5Qml.so.5.5.1
+#   /opt/Qt5.5.1/5.5/gcc/plugins/
+#
+# The qml/-dir is always a sibling of the plugins/ dir.
 function(getQtPluginsPath _path)
-  get_target_property(_plugin_path Qt5::Qml LOCATION)
-  string(REGEX REPLACE "(.*)/lib/.*" "\\1/plugins" _plugin_root ${_plugin_path})
+  get_target_property(_lib_file Qt5::Qml LOCATION)
+  get_filename_component(_lib_dir ${_lib_file} PATH)
+  # try $_lib_dir/qt5/plugins (Debian/Opensuse)
+  set(_plugin_root ${_lib_dir}/qt5/plugins)
+  if (NOT IS_DIRECTORY ${_plugin_root})
+    # try $_lib_dir/../plugins (Qt installer)
+    get_filename_component(_lib_dir_base ${_lib_dir} PATH)
+    set(_plugin_root ${_lib_dir_base}/plugins)
+  endif()
   set(${_path} ${_plugin_root} PARENT_SCOPE)
 endfunction()
 
