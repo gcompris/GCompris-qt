@@ -74,13 +74,13 @@ Image {
         id: touchArea
         anchors.centerIn: parent
         // Make the item big enough to be clicked easily
-        width: Math.max(parent.width, 60 * ApplicationInfo.ratio)
-        height: Math.max(parent.height, 60 * ApplicationInfo.ratio)
+        width: Math.max(parent.width, 50 * ApplicationInfo.ratio)
+        height: Math.max(parent.height, 50 * ApplicationInfo.ratio)
         touchPoints: [ TouchPoint { id: point1 } ]
         mouseEnabled: true
 
         onPressed: {
-            var questionTargetId = items.questionOrder[Activity.items.subscore.currentSubLevel]
+            var questionTargetId = items.questionOrder[Activity.items.progressbar.value]
             Activity.items.instruction.visible = false
             if (Activity.items.score.currentSubLevel == 1) {
                 audioEffects.play(animalImg.audio);
@@ -90,6 +90,7 @@ Image {
                 if (questionId === questionTargetId) {
                     animWin.start();
                     items.bonus.good("smiley");
+                    pause.start();
                     Activity.nextSubSubLevel();
                 } else {
                     items.bonus.bad("smiley")

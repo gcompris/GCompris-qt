@@ -1,4 +1,4 @@
-/* GCompris - Explore_world_animals.qml
+/* GCompris - Explore_monuments.qml
 *
 * Copyright (C) 2015 Ayush Agrawal <ayushagrawal288@gmail.com>
 *

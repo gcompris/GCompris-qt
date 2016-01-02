@@ -28,12 +28,13 @@
 var numberofLevels
 var items
 var url
-var currentLevel = 1
+var currentLevel
 
 function start(items_,url_,levelcount_) {
     items = items_
     url = url_
     numberofLevels = levelcount_
+    currentLevel = 1
     items.score.currentSubLevel = 1
 
     initLevel()
@@ -47,15 +48,15 @@ function initLevel() {
     items.bar.level = (currentLevel)
     var filename = url + "board" + "/" + "board" + currentLevel + ".qml"
     items.dataset.source = filename
-    items.subscore.currentSubLevel = 0
-    items.subscore.numberOfSubLevels = items.dataModel.count
+    items.progressbar.value = 0
+    items.progressbar.maximumValue = items.dataModel.count
     items.score.numberOfSubLevels = items.hasAudioQuestions ? 3 : 2;
     // randomize the questions for level 2 and 3
     Core.shuffle(items.questionOrder);
     // Change the currentSubLevel value to 1 to be sure to update the question value
     // else if you are sublevel 0 and go to last level, the question is not the good one
-    items.subscore.currentSubLevel = 1
-    items.subscore.currentSubLevel = 0
+    items.progressbar.value = 1
+    items.progressbar.value = 0
     items.descriptionPanel.visible = false
     // Stop audio if necessary (switch from level 2 at beginning to a new level for example)
     items.audioEffects.stop()
@@ -65,6 +66,7 @@ function initLevel() {
 }
 
 function nextLevel() {
+    items.pause.running = true
     ++items.score.currentSubLevel
     if(numberofLevels <= currentLevel && items.score.numberOfSubLevels < items.score.currentSubLevel)
     {
@@ -76,7 +78,7 @@ function nextLevel() {
     }
     initLevel();
     if (items.score.currentSubLevel == 2) {
-        items.subscore.currentSubLevel = 0;
+        items.progressbar.value = 0;
         initSubSubLevel();
     }
 }
@@ -108,18 +110,19 @@ function isComplete() {
 }
 
 function initSubSubLevel() {
-    if(items.subscore.currentSubLevel == items.dataModel.count) {
+    if(items.progressbar.value == items.dataModel.count) {
         items.bonus.good("smiley");
-        items.subscore.currentSubLevel = 0;
+        items.pause.running = true
+        items.progressbar.value = 0;
         nextLevel()
     }
-    else if(items.score.currentSubLevel == 2 && items.hasAudioQuestions) {
+     if(items.score.currentSubLevel == 2 && items.hasAudioQuestions) {
         items.audioEffects.play(getCurrentQuestion().audio);
     }
 }
 
 function nextSubSubLevel() {
-    items.subscore.currentSubLevel ++;
+    items.progressbar.value ++;
     initSubSubLevel()
 }
 
@@ -134,5 +137,5 @@ function repeat() {
 }
 
 function getCurrentQuestion() {
-    return items.dataset.item.tab[items.questionOrder[items.subscore.currentSubLevel]];
+    return items.dataset.item.tab[items.questionOrder[items.progressbar.value]];
 }

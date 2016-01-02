@@ -25,6 +25,7 @@
 import QtQuick 2.1
 import GCompris 1.0
 import QtGraphicalEffects 1.0
+import QtQuick.Controls 1.4
 
 import "../../core"
 import "explore-level.js" as Activity
@@ -93,17 +94,17 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias score: score
-            property alias subscore: subscore
+            property alias progressbar: progressbar
+            property alias pause: pause
             property alias dataModel: dataModel
             property alias dataset: dataset
-            property alias pause: pause
             property alias instruction: instruction
             property alias instructionText: instructionText
             property alias descriptionPanel: descriptionPanel
             property bool hasAudioQuestions: activity.hasAudioQuestions
             property string currentAudio
             property var questionOrder
-            property var currentQuestion: items.dataset ? items.dataset.item.tab[items.questionOrder[subscore.currentSubLevel]] : ""
+            property var currentQuestion: items.dataset ? items.dataset.item.tab[items.questionOrder[progressbar.value]] : ""
         }
 
         Loader{
@@ -179,25 +180,33 @@ ActivityBase {
             }
         }
 
+        Column {
+            visible: items.score.currentSubLevel != 1
+            anchors.bottom: parent.bottom
+            anchors.right: parent.right
+            anchors.margins: 10 * ApplicationInfo.ratio
+            ProgressBar {
+                id: progressbar
+                height: questionText.height
+                width: background.width / 2.5
+                property string message
+                onValueChanged: message = value + "/" + maximumValue
+                onMaximumValueChanged:  message = value + "/" + maximumValue
+                GCText {
+                    id: progressbarText
+                    anchors.centerIn: parent
+                    fontSize: mediumSize
+                    font.bold: true
+                    color: "black"
+                    text: progressbar.message
+                }
+            }
+        }
+
         PauseAnimation {
             id: pause
-            duration: 3000
-        }
-
-        Score {
-            id: score
-            visible: true
-            anchors.margins: 10 * ApplicationInfo.ratio
-        }
-
-        Score {
-            id: subscore
-            visible: items.score.currentSubLevel != 1
-            anchors {
-                bottom: undefined
-                margins: 10 * ApplicationInfo.ratio
-                verticalCenter: background.verticalCenter
-            }
+            running: false
+            duration: 2000
         }
 
         Row {
@@ -262,6 +271,14 @@ ActivityBase {
                 id: rightCol
                 spacing: 10 * ApplicationInfo.ratio
 
+                Score {
+                    id: score
+                    anchors {
+                        bottom: undefined
+                        right: undefined
+                    }
+                }
+
                 BarButton {
                     id: repeatItem
                     source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
@@ -287,7 +304,7 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-//            onReloadClicked: activity.start.connect(start)
+            onReloadClicked: Activity.start(items, url, numberofLevel)
         }
         Bonus {
             id: bonus
