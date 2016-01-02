@@ -1,6 +1,6 @@
 /* GCompris - balancebox.js
  *
- * Copyright (C) 2014-2015 Holger Kaelberer <holger.k@elberer.de>
+ * Copyright (C) 2014-2016 Holger Kaelberer <holger.k@elberer.de>
  *
  * Authors:
  *   Holger Kaelberer <holger.k@elberer.de>
@@ -81,6 +81,7 @@ var goalComponent = Qt.createComponent("qrc:/gcompris/src/activities/balancebox/
 var contactIndex = -1;
 var pendingObjects = 0;
 var pendingReconfigure = false;
+var finishRunning = false;
 
 function start(items_) {
     items = items_;
@@ -213,6 +214,7 @@ function checkBallContacts()
 
 function finishBall(won, x, y)
 {
+    finishRunning = true;
     items.timer.stop();
     items.keyboardTimer.stop();
     items.ball.x = x;
@@ -291,6 +293,7 @@ function initMap()
     var modelMap = new Array();
     incubators = new Array();
     goalUnlocked = true;
+    finishRunning = false;
     items.mapWrapper.rows = map.length;
     items.mapWrapper.columns = map[0].length;
     pendingObjects = 0;
