@@ -4,7 +4,7 @@
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
- *   Ayush Agrawal <ayushagrawal288@gmail.com>
+ *   Ayush Agrawal <ayushagrawal288@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by

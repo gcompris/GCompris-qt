@@ -25,7 +25,7 @@
 import QtQuick 2.1
 import GCompris 1.0
 import QtGraphicalEffects 1.0
-import QtQuick.Controls 1.4
+import QtQuick.Controls 1.2
 
 import "../../core"
 import "explore-level.js" as Activity
