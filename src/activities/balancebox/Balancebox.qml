@@ -1,6 +1,6 @@
 /* GCompris - balancebox.qml
  *
- * Copyright (C) 2014-2015 Holger Kaelberer <holger.k@elberer.de>
+ * Copyright (C) 2014-2016 Holger Kaelberer <holger.k@elberer.de>
  *
  * Authors:
  *   Holger Kaelberer <holger.k@elberer.de>
@@ -450,8 +450,10 @@ ActivityBase {
                 items.timer.stop();
                 displayDialog(dialogHelp);
             }
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
+            onPreviousLevelClicked: if (!Activity.finishRunning)
+                                        Activity.previousLevel()
+            onNextLevelClicked: if (!Activity.finishRunning)
+                                    Activity.nextLevel()
             onHomeClicked: {
                 if (activity.mode == "test")
                     background.startEditor();
