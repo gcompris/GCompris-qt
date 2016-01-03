@@ -83,7 +83,7 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     m_applicationWidth = m_isMobile ? rect.width() : 1120;
 
     if (m_isMobile)
-        connect(qApp->primaryScreen(), SIGNAL(physicalSizeChanged(QSizeF)), this, SLOT(notifyPortraitMode()));
+        connect(qApp->primaryScreen(), &QScreen::physicalSizeChanged, this, &ApplicationInfo::notifyPortraitMode);
 
     // Get all symbol fonts to remove them
     QFontDatabase database;
@@ -241,8 +241,8 @@ QObject *ApplicationInfo::systeminfoProvider(QQmlEngine *engine,
      * the QQuickWindow value
      */
     ApplicationInfo* appInfo = getInstance();
-    connect(ApplicationSettings::getInstance(), SIGNAL(fullscreenChanged()), appInfo,
-            SLOT(notifyFullscreenChanged()));
+    connect(ApplicationSettings::getInstance(), &ApplicationSettings::fullscreenChanged, appInfo,
+            &ApplicationInfo::notifyFullscreenChanged);
     return appInfo;
 }
 
