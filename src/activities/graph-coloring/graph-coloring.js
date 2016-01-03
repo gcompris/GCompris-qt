@@ -40,15 +40,15 @@ var colors = [
         ];
 
 var symbols = [
-            url + "shapes/" + "darkblue_star.svg",
-            url + "shapes/" + "lightgreen_triangle.svg",
-            url + "shapes/" + "red_heart.svg",
-            url + "shapes/" + "lightblue_cloud.svg",
-            url + "shapes/" + "magenta_diamond.svg",
-            url + "shapes/" + "yellow_star.svg",
-            url + "shapes/" + "brown_cross.svg",
-            url + "shapes/" + "darkgreen_ring.svg",
-            url + "shapes/" + "red_circle.svg",
+            url + "shapes/" + "star.svg",
+            url + "shapes/" + "triangle.svg",
+            url + "shapes/" + "heart.svg",
+            url + "shapes/" + "cloud.svg",
+            url + "shapes/" + "diamond.svg",
+            url + "shapes/" + "star_simple.svg",
+            url + "shapes/" + "cross.svg",
+            url + "shapes/" + "ring.svg",
+            url + "shapes/" + "circle.svg",
         ];
 
 var levels = [
