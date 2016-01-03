@@ -133,22 +133,22 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     // no group
     m_isBarHidden = false;
 
-    connect(this, SIGNAL(showLockedActivitiesChanged()), this, SLOT(notifyShowLockedActivitiesChanged()));
-	connect(this, SIGNAL(audioVoicesEnabledChanged()), this, SLOT(notifyAudioVoicesEnabledChanged()));
-	connect(this, SIGNAL(audioEffectsEnabledChanged()), this, SLOT(notifyAudioEffectsEnabledChanged()));
-	connect(this, SIGNAL(fullscreenChanged()), this, SLOT(notifyFullscreenChanged()));
-    connect(this, SIGNAL(localeChanged()), this, SLOT(notifyLocaleChanged()));
-    connect(this, SIGNAL(fontChanged()), this, SLOT(notifyFontChanged()));
-    connect(this, SIGNAL(virtualKeyboardChanged()), this, SLOT(notifyVirtualKeyboardChanged()));
-    connect(this, SIGNAL(automaticDownloadsEnabledChanged()), this, SLOT(notifyAutomaticDownloadsEnabledChanged()));
-    connect(this, SIGNAL(filterLevelMinChanged()), this, SLOT(notifyFilterLevelMinChanged()));
-    connect(this, SIGNAL(filterLevelMaxChanged()), this, SLOT(notifyFilterLevelMaxChanged()));
-	connect(this, SIGNAL(sectionVisibleChanged()), this, SLOT(notifySectionVisibleChanged()));
-    connect(this, SIGNAL(demoModeChanged()), this, SLOT(notifyDemoModeChanged()));
-    connect(this, SIGNAL(kioskModeChanged()), this, SLOT(notifyKioskModeChanged()));
-    connect(this, SIGNAL(downloadServerUrlChanged()), this, SLOT(notifyDownloadServerUrlChanged()));
-    connect(this, SIGNAL(exeCountChanged()), this, SLOT(notifyExeCountChanged()));
-    connect(this, SIGNAL(barHiddenChanged()), this, SLOT(notifyBarHiddenChanged()));
+    connect(this, &ApplicationSettings::showLockedActivitiesChanged, this, &ApplicationSettings::notifyShowLockedActivitiesChanged);
+	connect(this, &ApplicationSettings::audioVoicesEnabledChanged, this, &ApplicationSettings::notifyAudioVoicesEnabledChanged);
+	connect(this, &ApplicationSettings::audioEffectsEnabledChanged, this, &ApplicationSettings::notifyAudioEffectsEnabledChanged);
+	connect(this, &ApplicationSettings::fullscreenChanged, this, &ApplicationSettings::notifyFullscreenChanged);
+    connect(this, &ApplicationSettings::localeChanged, this, &ApplicationSettings::notifyLocaleChanged);
+    connect(this, &ApplicationSettings::fontChanged, this, &ApplicationSettings::notifyFontChanged);
+    connect(this, &ApplicationSettings::virtualKeyboardChanged, this, &ApplicationSettings::notifyVirtualKeyboardChanged);
+    connect(this, &ApplicationSettings::automaticDownloadsEnabledChanged, this, &ApplicationSettings::notifyAutomaticDownloadsEnabledChanged);
+    connect(this, &ApplicationSettings::filterLevelMinChanged, this, &ApplicationSettings::notifyFilterLevelMinChanged);
+    connect(this, &ApplicationSettings::filterLevelMaxChanged, this, &ApplicationSettings::notifyFilterLevelMaxChanged);
+	connect(this, &ApplicationSettings::sectionVisibleChanged, this, &ApplicationSettings::notifySectionVisibleChanged);
+    connect(this, &ApplicationSettings::demoModeChanged, this, &ApplicationSettings::notifyDemoModeChanged);
+    connect(this, &ApplicationSettings::kioskModeChanged, this, &ApplicationSettings::notifyKioskModeChanged);
+    connect(this, &ApplicationSettings::downloadServerUrlChanged, this, &ApplicationSettings::notifyDownloadServerUrlChanged);
+    connect(this, &ApplicationSettings::exeCountChanged, this, &ApplicationSettings::notifyExeCountChanged);
+    connect(this, &ApplicationSettings::barHiddenChanged, this, &ApplicationSettings::notifyBarHiddenChanged);
 }
 
 ApplicationSettings::~ApplicationSettings()
