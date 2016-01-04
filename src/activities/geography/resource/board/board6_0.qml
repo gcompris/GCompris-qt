@@ -59,6 +59,7 @@ QtObject {
       {
          "pixmapfile": "europe/slovenia.png",
          "sound": "voices-$CA/$LOCALE/geography/slovenia.$CA",
+         "type": "SHAPE_BACKGROUND",
          "toolTipText": qsTr("Slovenia"),
          "x": "0.516",
          "y": "0.662"
@@ -74,6 +75,7 @@ QtObject {
          "pixmapfile": "europe/montenegro.png",
          "sound": "voices-$CA/$LOCALE/geography/montenegro.$CA",
          "toolTipText": qsTr("Montenegro"),
+         "type": "SHAPE_BACKGROUND",
          "x": "0.601",
          "y": "0.755"
       },
@@ -116,6 +118,7 @@ QtObject {
          "pixmapfile": "europe/macedonia.png",
          "sound": "voices-$CA/$LOCALE/geography/macedonia.$CA",
          "toolTipText": qsTr("Macedonia"),
+         "type": "SHAPE_BACKGROUND",
          "x": "0.642",
          "y": "0.787"
       },
