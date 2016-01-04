@@ -226,9 +226,7 @@ Item {
             MouseArea {
                 anchors.fill: parent
                 enabled: rootItem.opacity == 1
-                onClicked: {
-                    activity.audioVoices.append(ApplicationInfo.getAudioFilePath(word.voice))
-                }
+                onClicked: Activity.playWord(word.voice)
             }
         }
 
