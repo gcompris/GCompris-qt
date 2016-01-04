@@ -51,21 +51,183 @@ var symbols = [
             url + "shapes/" + "circle.svg",
         ];
 
+var graphs = [
+            {
+                minColor:3,
+                edgeList:[
+                    [0, 1], [0, 4], [1, 4], [1, 2], [1, 3], [2, 3]
+                ],
+                nodePositions : [
+                    [0, 0], [0.5, 0.4], [1, 0], [1, 0.7], [0, 0.7]
+                ]
+            },
+            {
+
+                minColor: 3,
+                edgeList:[
+                    [0, 1], [0, 3], [1, 2], [1, 3], [2, 3]
+                ],
+                nodePositions : [
+                    [0, 0.4], [0.5, 0], [1, 0.4], [0.5, 0.8]
+                ]
+            },
+            {
+
+                minColor: 4,
+                edgeList:[
+                    [0, 1], [0, 2], [0, 3],
+                    [1, 2], [1, 3],
+                    [2, 3]
+                ],
+                nodePositions : [
+                    [0.628, 0.501],
+                    [0.083, 0.501],
+                    [0.900, 0.030],
+                    [0.900, 0.973]
+                ]
+
+            },
+            {
+
+                minColor: 3,
+                edgeList:[
+                    [0,1], [1,2], [2,3], [3,4], [4,0], [5,7],
+                    [7,9], [9,6], [6,8], [8,5], [0,5], [1,6],
+                    [2,7], [3,8], [4,9]
+                ],
+                nodePositions : [
+                    [0.5,0], [0.90,0.35], [0.80,0.80],
+                    [0.20, 0.80], [0.10, 0.35], [0.5,0.20],
+                    [0.75,0.45], [0.65, 0.65], [0.35, 0.65], [0.25, 0.45]
+                ]
+
+            },
+            {
+
+                minColor: 5,
+                edgeList: [
+                    [5, 1],
+                    [5, 0],
+                    [0, 3],
+                    [0, 1],
+                    [0, 2],
+                    [2, 4],
+                    [2, 1],
+                    [3, 4],
+                    [3, 2],
+                    [4, 1],
+                    [5, 4],
+                    [5, 3]
+                ],
+                nodePositions : [
+                    [0.75, 0.00],
+                    [0.75, 1.00],
+                    [1.00, 0.50],
+                    [0.25, 0.00],
+                    [0.25, 1.00],
+                    [0.00, 0.50]
+                ]
+
+            },
+            {
+
+                minColor: 3,
+                edgeList: [
+                    [5, 4],
+                    [2, 0],
+                    [0, 1],
+                    [1, 5],
+                    [4, 3],
+                    [3, 2],
+                    [0, 11],
+                    [1, 6],
+                    [7, 5],
+                    [3, 9],
+                    [8, 4],
+                    [2, 10],
+                    [11, 9],
+                    [7, 9],
+                    [11, 7],
+                    [6, 8],
+                    [10, 8],
+                    [6, 10]
+                ],
+                nodePositions : [
+                    [0.26, 0.00],
+                    [0.74, 0.00],
+                    [0.00, 0.50],
+                    [0.26, 1.00],
+                    [0.74, 1.00],
+                    [1.00, 0.50],
+                    [0.62, 0.26],
+                    [0.74, 0.50],
+                    [0.62, 0.74],
+                    [0.38, 0.74],
+                    [0.26, 0.50],
+                    [0.38, 0.26]
+                ]
+            },
+            {
+
+                minColor: 4,
+                edgeList: [
+                    [0, 8],
+                    [0, 4],
+                    [3, 6],
+                    [10, 3],
+                    [2, 11],
+                    [7, 2],
+                    [9, 1],
+                    [5, 1],
+                    [0, 1],
+                    [1, 2],
+                    [4, 6],
+                    [8, 9],
+                    [10, 11],
+                    [0, 3],
+                    [3, 2],
+                    [8, 11],
+                    [10, 9],
+                    [4, 7],
+                    [5, 7],
+                    [6, 5],
+                    [6, 9],
+                    [10, 5],
+                    [4, 11],
+                    [8, 7]
+                ],
+                nodePositions : [
+                    [0.00, 0.00],
+                    [1.00, 0.00],
+                    [1.00, 1.00],
+                    [0.00, 1.00],
+                    [0.32, 0.42],
+                    [0.74, 0.42],
+                    [0.32, 0.63],
+                    [0.74, 0.63],
+                    [0.42, 0.32],
+                    [0.63, 0.32],
+                    [0.42, 0.74],
+                    [0.63, 0.74]
+                ]
+            }
+        ]
+
 var levels = [
-            {extraColor:2, graph:"graph_1.qml"},
-            {extraColor:0, graph:"graph_1.qml"},
-            {extraColor:1, graph:"graph_2.qml"},
-            {extraColor:0, graph:"graph_2.qml"},
-            {extraColor:2, graph:"graph_3.qml"},
-            {extraColor:0, graph:"graph_3.qml"},
-            {extraColor:2, graph:"graph_4.qml"},
-            {extraColor:0, graph:"graph_4.qml"},
-            {extraColor:2, graph:"graph_5.qml"},
-            {extraColor:0, graph:"graph_5.qml"},
-            {extraColor:2, graph:"graph_6.qml"},
-            {extraColor:0, graph:"graph_6.qml"},
-            {extraColor:3, graph:"graph_7.qml"},
-            {extraColor:0, graph:"graph_7.qml"}
+            {extraColor:1, graph:graphs[0]},
+            {extraColor:0, graph:graphs[0]},
+            {extraColor:1, graph:graphs[1]},
+            {extraColor:0, graph:graphs[1]},
+            {extraColor:1, graph:graphs[2]},
+            {extraColor:0, graph:graphs[2]},
+            {extraColor:1, graph:graphs[3]},
+            {extraColor:0, graph:graphs[3]},
+            {extraColor:1, graph:graphs[4]},
+            {extraColor:0, graph:graphs[4]},
+            {extraColor:1, graph:graphs[5]},
+            {extraColor:0, graph:graphs[5]},
+            {extraColor:1, graph:graphs[6]},
+            {extraColor:0, graph:graphs[6]}
         ];
 
 var mode = "symbol";
@@ -82,10 +244,8 @@ function stop() {
 function initLevel() {
     coloringLeft = true
     items.bar.level = currentLevel + 1
-    var filename = url + "graphs/" + levels[currentLevel].graph
-    items.dataset.source = filename
     var currentIndeces = new Array();
-    var levelData = items.dataset.item
+    var levelData = levels[currentLevel].graph
     items.colorsRepeater.model.clear();
     items.nodesRepeater.model.clear();
     items.edgesRepeater.model.clear();
@@ -118,8 +278,7 @@ function initLevel() {
 
 function checkGuess() {
     var flag = false;
-    var levelData = items.dataset.item
-
+    var levelData = levels[currentLevel].graph
     //Check wether all the nodes have been colored or not
     for (var i = 0; i < levelData.nodePositions.length; i++){
         var node1 = items.nodesRepeater.model.get(i)
@@ -147,7 +306,7 @@ function checkGuess() {
 }
 
 function checkAdjacent() {
-    var levelData = items.dataset.item
+    var levelData = levels[currentLevel].graph
     var flagNodes = new Array(levelData.nodePositions.length)
     for (var i = 0; i < levelData.nodePositions.length; i++){
         flagNodes[i] = false

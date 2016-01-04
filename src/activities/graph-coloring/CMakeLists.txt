@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(activities/graph-coloring *.qml *.svg *.js resource/graphs/* resource/shapes/*)
+GCOMPRIS_ADD_RCC(activities/graph-coloring *.qml *.svg *.js resource/shapes/*)

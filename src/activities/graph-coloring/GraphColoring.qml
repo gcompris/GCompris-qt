@@ -64,16 +64,10 @@ ActivityBase {
             property alias nodesRepeater: nodesRepeater
             property alias edgesRepeater: edgesRepeater
             property alias chooserGrid: chooserGrid
-            property alias dataset: dataset
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
-
-        Loader {
-            id: dataset
-            asynchronous: false
-        }
 
         Column {
             id: colorsColumn
