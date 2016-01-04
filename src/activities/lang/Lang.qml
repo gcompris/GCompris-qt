@@ -132,9 +132,9 @@ ActivityBase {
         Bar {
             id: bar
             anchors.bottom: keyboardArea.top
-            content: BarEnumContent { value:
-                    menuScreen.started ? help | home | config
-                                       : help | home }
+            content: menuScreen.started ? withConfig : withoutConfig
+            property BarEnumContent withConfig: BarEnumContent { value: help | home | config }
+            property BarEnumContent withoutConfig: BarEnumContent { value: help | home }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
