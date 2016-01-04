@@ -63,6 +63,15 @@ Item {
                 duration: 500
                 easing.type: Easing.InOutQuad }
         }
+        NumberAnimation {
+            id: rotationStop
+            running: !root.symbolRotation
+            target: symbol
+            property: "rotation"
+            to: 0
+            duration: 500
+            easing.type: Easing.InOutQuad
+        }
     }
     Rectangle {
         id: symbolHighlighter
