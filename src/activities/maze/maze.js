@@ -36,6 +36,8 @@ var mazeColumns = 0
 var mazeRows = 0
 var maze = 0
 
+var win = false
+
 function start(items_, relativeMode_, invisibleMode_) {
     items = items_
     relativeMode = relativeMode_
@@ -49,6 +51,8 @@ function stop() {}
 function initLevel() {
     items.wallVisible = !invisibleMode
     items.bar.level = currentLevel + 1
+
+    win = false
 
     /* Set main variables */
     if (currentLevel + 1 == 1) {
@@ -328,6 +332,7 @@ function getPlayerRotation() {
 
 function checkSuccess() {
     if (items.playery === items.doory && items.playerx === mazeColumns - 1) {
+        win = true
         items.bonus.good("lion")
     }
 }
@@ -339,24 +344,26 @@ function processPressedKey(event) {
         items.message.visible = items.wallVisible
     }
 
-    /* Move the player */
-    switch (event.key) {
-    case Qt.Key_Right:
-        clickRight()
-        event.accepted = true
-        break
-    case Qt.Key_Left:
-        clickLeft()
-        event.accepted = true
-        break
-    case Qt.Key_Up:
-        clickUp()
-        event.accepted = true
-        break
-    case Qt.Key_Down:
-        clickDown()
-        event.accepted = true
-        break
+    if ( !win ) {
+        /* Move the player */
+        switch (event.key) {
+        case Qt.Key_Right:
+            clickRight()
+            event.accepted = true
+            break
+        case Qt.Key_Left:
+            clickLeft()
+            event.accepted = true
+            break
+        case Qt.Key_Up:
+            clickUp()
+            event.accepted = true
+            break
+        case Qt.Key_Down:
+            clickDown()
+            event.accepted = true
+            break
+        }
     }
 }
 
