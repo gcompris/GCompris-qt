@@ -29,8 +29,6 @@ Rectangle {
     property string text
     property double posX
     property double posY
-    property double imgHeight
-    property double imgWidth
     property string imgName
     property double xCenter: x + width / 2
     property double yCenter: y + height / 2

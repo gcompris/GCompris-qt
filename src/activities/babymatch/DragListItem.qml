@@ -89,12 +89,12 @@ Item {
 
             property double smallWidth: Activity.glowEnabled ? widthInColumn * 1.1 : widthInColumn
             property double smallHeight: Activity.glowEnabled ? heightInColumn * 1.1 : heightInColumn
-            property double fullWidth: backgroundImage.source == "" ?
-                                           backgroundImage.width * tileImage.sourceSize.width/backgroundImage.width :
-                                           backgroundImage.width * tileImage.sourceSize.width/backgroundImage.sourceSize.width
-            property double fullHeight: backgroundImage.source == "" ?
-                                            backgroundImage.height * tileImage.sourceSize.height/backgroundImage.height :
-                                            backgroundImage.height * tileImage.sourceSize.height/backgroundImage.sourceSize.height
+            property double fullWidth: imgWidth ? imgWidth * backgroundImage.width : (backgroundImage.source == "" ?
+                                           tileImage.sourceSize.width :
+                                           backgroundImage.width * tileImage.sourceSize.width/backgroundImage.sourceSize.width)
+            property double fullHeight: imgHeight ? imgHeight * backgroundImage.height : (backgroundImage.source == "" ?
+                                           tileImage.sourceSize.height :
+                                           backgroundImage.height * tileImage.sourceSize.height/backgroundImage.sourceSize.height)
             property QtObject tileImageParent
             property double moveImageX
             property double moveImageY
