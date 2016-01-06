@@ -27,7 +27,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Mont-Saint-Michel"),
-            "text": qsTr("Le Mont-Saint-Michel is an island commune in Normandy, France. The island has held strategic fortifications since ancient times and since the 8th century AD has been the seat of the monastery from which it draws its name. The structural composition of the town exemplifies the feudal society that constructed it: on top, God, the abbey and monastery; below, the great halls; then stores and housing; and at the bottom, outside the walls, houses for fishermen and farmers."),
+            "text": qsTr("Mont Saint-Michel is a rocky tidal island located in Normandy, at the mouth of the Couesnon River, near the city of Avranches. The highest point of the island is the spire at the top of the Abbey’s bell tower, 170 metres above sea level. They are currently less than 50 people living on the island. The unique feature of Mont Saint-Michel is that it is completely surrounded by water and can only be accessed at low tide."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/montStMichel.jpg",
             "text2" : qsTr("Mont-Saint-Michel"),
             "x" : "0.278",
@@ -38,7 +38,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Cité de Carcassonne"),
-            "text": qsTr("The Cité de Carcassonne is a medieval citadel located in the French city of Carcassonne. Founded during the Gallo-Roman period, the citadel derives its reputation from its 3 kilometres (1.9 mi) long double surrounding walls interspersed by 52 towers. The town has about 2,500 years of history and has seen the Romans, Visigoths, Saracens and Crusaders. At the beginning of its history it was a Gaulish settlement then in the 3rd century A.D., the Romans decided to transform it into a fortified town. The town was finally annexed to the kingdom of France in 1247 A.D. It provided a strong French frontier between France and the Crown of Aragon."),
+            "text": qsTr("With more than 4 million visitors each year, Carcassonne is among the most prestigious tourist destinations in France, on a par with Mont Saint Michel and Paris’ Notre-Dame. A UNESCO World Heritage Site since 1997, Carcassonne is a dramatic representation of medieval architecture perched on a rocky spur that towers above the River Aude, southeast of the new town."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/citedeCarcassonne.jpg",
             "text2" : qsTr("Cité de Carcassonne"),
             "x" : "0.588",
@@ -49,7 +49,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Reims Cathedral"),
-            "text": qsTr("Notre-Dame de Reims (Our Lady of Reims) is the seat of the Archdiocese of Reims, where the kings of France were crowned. The cathedral replaced an older church, destroyed by fire in 1211, that was built on the site of the basilica where Clovis was baptized by Saint Remi, bishop of Reims, in AD 496. That original structure had itself been erected on the site of some Roman baths. A major tourism destination, the cathedral receives about one million visitors annually."),
+            "text": qsTr("By size, Reims Cathedral is quite an extraordinary construction: designed to accommodate huge crowds, its gigantic dimensions include a surface area of 6,650 m2 and a length of 122m. A Gothic art masterpiece and the coronation site of the Kings of France, it has been listed as a UNESCO World Heritage Site since 1991. The Mecca for tourists in the Champagne region welcomes 1,500,000 visitors every year."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/reimsCathedral.jpg",
             "text2" : qsTr("Reims Cathedral"),
             "x" : "0.687",
@@ -60,7 +60,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Pont du Gard"),
-            "text": qsTr("The Pont du Gard is an ancient Roman aqueduct that crosses the Gardon River in the south of France. Located near the town of Vers-Pont-du-Gard, the bridge is part of the Nîmes aqueduct, a 50-kilometer system built in the first century AD to carry water from a spring at Uzès to the Roman colony of Nemausus (Nîmes) Because of the uneven terrain between the two points, the mostly underground aqueduct followed a long, winding route that called for a bridge across the gorge of the Gardon River. The Pont du Gard is the highest of all elevated Roman aqueducts, and, along with the Aqueduct of Segovia, one of the best preserved. It was added to UNESCO's list of World Heritage Sites in 1985 because of its historical importance."),
+            "text": qsTr("The Pont du Gard was built shortly before the Christian era to allow the aqueduct of Nîmes (which is almost 50 km long) to cross the Gard river. The Roman architects and hydraulic engineers who designed this bridge, which stands almost 50 m high and is on three levels – the longest measuring 275 m – created a technical as well as an artistic masterpiece."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/pontduGard.jpg",
             "text2" : qsTr("Pont du Gard"),
             "x" : "0.691",
@@ -71,7 +71,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Arles Amphitheatre"),
-            "text": qsTr("The Arles Amphitheatre is a Roman amphitheatre in the southern French town of Arles. This two-tiered Roman amphitheatre is probably the most prominent tourist attraction in the city of Arles, which thrived in Roman times. The pronounced towers jutting out from the top are medieval add-ons. Built in 90 AD, the amphitheatre was capable of seating over 20,000 spectators, and was built to provide entertainment in the form of chariot races and bloody hand-to-hand battles. Today, it draws large crowds for bullfighting during the Feria d'Arles as well as plays and concerts in summer."),
+            "text": qsTr("This Roman amphitheatre dates back to the first century BC and was originally the setting for gladiator battles and chariot races during Antiquity. Modified many times, it was finally renovated during the 19th century."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/arlesAmphitheater.jpg",
             "text2" : qsTr("Arles Amphitheatre"),
             "x" : "0.730",
@@ -82,7 +82,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Château de Chambord"),
-            "text": qsTr("The royal Château de Chambord at Chambord, Loir-et-Cher, France, is one of the most recognizable châteaux in the world because of its very distinctive French Renaissance architecture which blends traditional French medieval forms with classical Renaissance structures. The building, which was never completed, was constructed by King Francis I of France."),
+            "text": qsTr("Prestigious, majestic, colossal, extravagant… are these adjectives enough to fully describe the splendour of Chambord? The largest chateau of the Loire Valley is indeed full of surprises for those who are lucky enough to explore its domain. This remarkable piece of architecture is certainly more than just a castle: it is the dream of a King, transformed into reality."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/chateaudeChambord.jpg",
             "text2" : qsTr("Château de Chambord"),
             "x" : "0.456",
@@ -93,7 +93,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Rocamadour"),
-            "text": qsTr("Rocamadour has attracted visitors for its setting in a gorge above a tributary of the River Dordogne, and especially for its historical monuments and its sanctuary of the Blessed Virgin Mary, which for centuries has attracted pilgrims from every country, among them kings, bishops, and nobles."),
+            "text": qsTr("When coming from Cahors by road, Rocamadour suddenly appears clinging precariously against the cliff above the Alzou canyon. One of the most famous villages of Europe, Rocamadour seemingly defies the laws of gravity. The vertiginous Citadel of Faith is best summed up by an old local saying: “houses on the river, churches on the houses, rocks on the churches, castle on the rock”."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/rocamadour.jpg",
             "text2" : qsTr("Rocamadour"),
             "x" : "0.538",
@@ -104,7 +104,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Palais des Papes"),
-            "text": qsTr("The Palais des Papes is a historical palace in Avignon, southern France, one of the largest and most important medieval Gothic buildings in Europe. One time fortress and palace, the papal residence was the seat of Western Christianity during the 14th century. Six papal conclaves were held in the Palais, leading to the elections of Benedict XII in 1334, Clement VI in 1342, Innocent VI in 1352, Urban V in 1362, Gregory XI in 1370 and Antipope Benedict XIII in 1394."),
+            "text": qsTr("The star attraction of Avignon is the Palais des Papes (Palace of the Popes), a vast castle of significant historic, religious and architectural importance. It is one of the largest and most important medieval Gothic buildings in Europe."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/palaisdesPapes.jpg",
             "text2" : qsTr("Palais des Papes"),
             "x" : "0.771",
@@ -115,7 +115,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Château de Chenonceau"),
-            "text": qsTr("The Château de Chenonceau is a French château spanning the River Cher, near the small village of Chenonceaux in the Indre-et-Loire département of the Loire Valley in France. It is one of the best-known châteaux of the Loire valley."),
+            "text": qsTr("Chateau de Chenonceau is among many of Loire Valley Chateaux that boast amazing architecture and historical significance drawing thousands of tourists from all over the world. Chateau de Chenonceau is sometimes called the Ladies Castle by some historians due to feminine figures having greatly influenced the construction and development of this French Chateau over the centuries."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/chateaudeChenonceau.jpg",
             "text2" : qsTr("Château de Chenonceau"),
             "x" : "0.449",
@@ -126,7 +126,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Eiffel Tower"),
-            "text": qsTr("The Eiffel Tower is a wrought iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower. Constructed in 1889 as the entrance to the 1889 World's Fair, it was initially criticized by some of France's leading artists and intellectuals for its design, but has become a global cultural icon of France and one of the most recognisable structures in the world. The tower is the tallest structure in Paris and the most-visited paid monument in the world: 6.98 million people ascended it in 2011. The tower received its 250 millionth visitor in 2010."),
+            "text": qsTr("The world-famous metallic tower was built for the Paris International Exhibition in 1889 for the centenary of the French Revolution. At the time of its inauguration, it was the world’s tallest monument."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/eiffelTower.jpg",
             "text2" : qsTr("Eiffel Tower"),
             "x" : "0.538",

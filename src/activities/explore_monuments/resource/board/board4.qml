@@ -27,7 +27,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Neuschwanstein Castle"),
-            "text": qsTr("Neuschwanstein Castle is a nineteenth-century Romanesque Revival palace on a rugged hill above the village of Hohenschwangau near Füssen in southwest Bavaria, Germany. The palace was commissioned by Ludwig II of Bavaria as a retreat and as an homage to Richard Wagner. Ludwig paid for the palace out of his personal fortune and by means of extensive borrowing, rather than Bavarian public funds."),
+            "text": qsTr("The ultimate fairytale castle, Neuschwanstein is situated on a rugged hill near Füssen in southwest Bavaria. It was the inspiration for the Sleeping Beauty castles in the Disneyland parks. The castle was commissioned by King Ludwig II of Bavaria who was declared insane when the castle was almost completed in 1886 and found dead a few days later. Neuschwanstein is the most photographed building in the country and one of the most popular tourist attractions in Germany."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/germany/neuschwansteinCastle.jpg",
             "text2" : qsTr("Neuschwanstein Castle"),
             "x" : "0.525",
@@ -49,7 +49,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Brandenburg Gate"),
-            "text": qsTr("The Brandenburg Gate is an 18th-century neoclassical triumphal arch in Berlin, and one of the best-known landmarks of Germany. It is built on the site of a former city gate that marked the start of the road from Berlin to the town of Brandenburg an der Havel."),
+            "text": qsTr("The Brandenburg Gate is the only surviving city gate of Berlin and symbolizes the reunification of East and West Berlin. Built in the 18th century, the Brandenburg Gate is the entry to Unter den Linden, the prominent boulevard of linden trees which once led directly to the palace of the Prussian monarchs. It is regarded as one of the most famous landmarks in Europe."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/germany/brandenburgGate.jpg",
             "text2" : qsTr("Brandenburg Gate"),
             "x" : "0.753",
@@ -60,7 +60,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Berlin Cathedral"),
-            "text": qsTr("Berlin Cathedral is the short name for the Evangelical (i.e. Protestant) Supreme Parish and Collegiate Church in Berlin, Germany. It is located on Museum Island in the Mitte borough. The current building was finished in 1905 and is a main work of Historicist architecture of the 'Kaiserzeit'."),
+            "text": qsTr("The Cathedral of Berlin is the largest church in the city, and it serves as a vital center for the Protestant church of Germany. Reaching out well beyond the borders of the parish  and of Berlin, the cathedral attracts thousands of visitors, year after year, from Germany and abroad."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/germany/berlinCathedral.jpg",
             "text2" : qsTr("Berlin Cathedral"),
             "x" : "0.736",
@@ -71,7 +71,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Schwerin Palace"),
-            "text": qsTr("Schwerin Palace, or Schwerin Castle, is a palatial schloss located in the city of Schwerin, the capital of Mecklenburg-Vorpommern state, Germany. It is situated on an island in the city's main lake, the Schweriner See. For centuries the palace was the home of the dukes and grand dukes of Mecklenburg and later Mecklenburg-Schwerin. Today it serves as the residence of the Mecklenburg-Vorpommern state parliament."),
+            "text": qsTr("This romantic fairytale fortress, with all its many towers, domes and wings, is reflected in the waters of Lake Schwerin. It was completed in 1857 and symbolised the powerful dynasty of its founder, Friedrich Franz II."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/germany/schwerinPalace.jpg",
             "text2" : qsTr("Schwerin Palace"),
             "x" : "0.585",
@@ -82,7 +82,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Aula Palatina"),
-            "text": qsTr("The Basilica of Constantine, or Aula Palatina, at Trier, Germany is a Roman palace basilica that was built by the emperor Constantine (AD 306–337) at the beginning of the 4th century. Today it is used as the Church of the Redeemer and owned by a congregation within the Evangelical Church in the Rhineland. The basilica contains the largest extant hall from antiquity and is ranked a World Heritage Site. The hall has a length of 67 m, a width of 26.05 m and a height of 33 m. It is designated as part of the Roman Monuments, Cathedral of St. Peter and Church of Our Lady in Trier UNESCO World Heritage Site."),
+            "text": qsTr("The long, high-ceilinged brick structure was the throne hall of the Roman emperor until the destruction of the city by Germanic tribes. The invaders built a settlement inside the roofless ruin. In the 12th century, the apse was converted into a tower to accommodate the Archbishop of Trier."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/germany/aulaPalatina.jpg",
             "text2" : qsTr("Aula Palatina"),
             "x" : "0.245",
@@ -93,7 +93,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Worms Cathedral"),
-            "text": qsTr("The Cathedral of St Peter is a church in Worms, southern Germany. It was the seat of the Catholic Prince-Bishopric of Worms until its extinction in 1800. It is a basilica with four round towers, two large domes, and a choir at each end. The interior is built in red sandstone. Today, the Wormser Dom is a Catholic parish church, honoured with the title of 'Minor Basilica'."),
+            "text": qsTr("Worms Cathedral (Wormser Dom) also known as the Cathedral of St Peter is a Romanesque cathedral in the German city of Worms. A sandstone structure with distinctive conical towers, Worms Cathedral was constructed in phases throughout the twelfth century and mostly completed by 1181."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/germany/wormsCathedral.jpg",
             "text2" : qsTr("Worms Cathedral"),
             "x" : "0.332",

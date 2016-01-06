@@ -27,7 +27,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Golden Temple"),
-            "text": qsTr("The Harmandir Sahib, also Darbar Sahib and informally referred to as the 'Golden Temple', is the holiest Sikh gurdwara located in the city of Amritsar, Punjab, India. The city was founded in 1574 by the fourth Sikh guru, Guru Ram Das. The Harmandir Sahib was designed by the fifth guru, Guru Arjan, who had the cornerstone laid by the Muslim Sufi saint Sai Hazrat Mian Mir on 28 December 1588. Guru Arjan completed the Adi Granth, the holy scripture of Sikhism, in 1604 and installed it in the gurdwara."),
+            "text": qsTr("The Golden Temple Amritsar India (Sri Harimandir Sahib Amritsar) is not only a central religious place of the Sikhs, but also a symbol of human brotherhood and equality. Everybody, irrespective of cast, creed or race can seek spiritual solace and religious fulfilment without any hindrance. It also represents the distinct identity, glory and heritage of the Sikhs. To pen-down the philosophy, ideology, the inner and outer beauty, as well as the historical legacy of Sri Harimandir Sahib is a momentous task. It is a matter of experience rather than a of description."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/goldenTemple.jpg",
             "text2" : qsTr("Golden Temple"),
             "x" : "0.256",
@@ -60,7 +60,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Gateway of India"),
-            "text": qsTr("The Gateway of India is a monument built during the British Rule in Mumbai City of Maharashtra state in Western India. It is located on the waterfront in the Apollo Bunder area in South Mumbai and overlooks the Arabian Sea. The structure is a basalt arch, 26 metres (85 feet) high. It lies at the end of Chhatrapati Shivaji Marg at the water's edge in Mumbai Harbour. It was a crude jetty used by the fishing community which was later renovated and used as a landing place for British governors and other prominent people. In earlier times, it would have been the first structure that visitors arriving by boat in Mumbai would have seen."),
+            "text": qsTr("The Gateway of India is one of India's most unique landmarks situated in the city of Mumbai. The colossal structure was constructed in 1924. Located at the tip of Apollo Bunder, the gateway overlooks the Mumbai harbor, bordered by the Arabian Sea in the Colaba district. The Gateway of India is a monument that marks India's chief ports and is a major tourist attraction for visitors who arrive in India for the first time."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/gatewayofIndia.jpg",
             "text2" : qsTr("Gateway of India"),
             "x" : "0.179",
@@ -82,7 +82,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Ajanta Caves"),
-            "text": qsTr("The Ajanta Caves in Aurangabad district of Maharashtra state of India are about 30 rock-cut Buddhist cave monuments which date from the 2nd century BCE to about 480 or 650 CE. The caves include paintings and sculptures described by the government Archaeological Survey of India as 'the finest surviving examples of Indian art, particularly painting', which are masterpieces of Buddhist religious art, with figures of the Buddha and depictions of the Jataka tales."),
+            "text": qsTr("AJANTA is world's greatest historical  monument recognised by UNESCO located  just 55kms from Jalgaon city and 105kms from  Aurangabad City of Maharashtra, India. There are  30 caves in Ajanta of which 9, 10, 19, 26 and 29 are chaitya-grihas and the rest are monasteries."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/ajantaCave.jpg",
             "text2" : qsTr("Ajanta Caves"),
             "x" : "0.304",
@@ -93,7 +93,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Konark Sun Temple"),
-            "text": qsTr("Konark Sun Temple is a 13th-century Sun Temple at Konark in Odisha, India. It is believed that the temple was built by king Narasimhadeva I of Eastern Ganga Dynasty around 1250 CE. The temple is in the shape of a gigantic chariot elaborately carved stone wheels, pillars and walls. A major part of the structure is now in ruins. The temple is a UNESCO World Heritage Site and has also featured on various list of Seven Wonders of India."),
+            "text": qsTr("he Konark Sun Temple (also spelled Konarak) is a 13th-century Hindu temple dedicated to the sun god. Shaped like a giant chariot, the temple is known for the exquisite stone carvings that cover the entire structure."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/konarkSunTemple.jpg",
             "text2" : qsTr("Konark Sun Temple"),
             "x" : "0.506",
@@ -104,7 +104,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Mysore Palace"),
-            "text": qsTr("The Palace of Mysore is a historical palace in the city of Mysore in Karnataka, southern India. It is the official residence and seat of the Wodeyars — the Maharajas of Mysore, the royal family of Mysore, who ruled the princely state from 1350 to 1950. The palace houses two durbar halls (ceremonial meeting halls of the royal court) and incorporates a mesmerizing and gigantic array of courtyards, gardens, and buildings. The palace is in the central region of inner Mysore, facing the Chamundi Hills eastward."),
+            "text": qsTr("Mysore Palace or Mysore Maharaja Palace is one of the largest and most spectacular monuments in the country. Also known as Amba Vilas, it is located in the heart of the city of Mysore. The palace was initially built by the Wodeyar kings in the 14th century."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/mysorePalace.jpg",
             "text2" : qsTr("Mysore Palace"),
             "x" : "0.295",
@@ -115,7 +115,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Charminar"),
-            "text": qsTr("The Charminar, constructed in 1591 CE, is a monument and mosque located in Hyderabad, Telangana, India. The landmark has become a global icon of Hyderabad, listed among the most recognized structures of India. The Charminar is situated on the east bank of Musi river. To the west lies the Laad Bazaar, and to the southwest lies the richly ornamented granite Makkah Masjid. It is listed as an archaeological and architectural treasure on the official 'List of Monuments' prepared by the Archaeological Survey of India under the The Ancient Monuments and Archaeological Sites and Remains Act."),
+            "text": qsTr("The Charminar in Hyderabad was constructed in 1591 by Mohammed Quli Qutab Shah. He built the Charminar to mark the end of plague in the Hyderabad city. Since the construction of the Charminar, the Hyderabad city has almost become synonymous with the monument. The Charminar is a massive and impressive structure with four minarets. In the evening, with illumination, the great Charminar looks even greater."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/charminar.jpg",
             "text2" : qsTr("Charminar"),
             "x" : "0.360",
@@ -126,7 +126,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Victoria Memorial"),
-            "text": qsTr("The Victoria Memorial is a large marble building in Kolkata (Calcutta), West Bengal, India which was built between 1906 and 1921. It is dedicated to the memory of Queen Victoria (1819–1901) and is now a museum and tourist destination under the auspices of the Ministry of Culture. The Memorial lies on the Maidan (grounds) by the bank of the Hooghly River, near Jawaharlal Nehru road."),
+            "text": qsTr("The Victoria Memorial was built to commemorate the peak of the British Empire in India. The Victoria Memorial, conceived by Lord Curzon, represents the architectural climax of Kolkata city. Lord Curzon, the then Viceroy specified its classical style but the actual plan of Victoria Memorial was laid down by the well-known architect, Sir William Emerson. The Victoria Memorial blends the best of the British and Mughal architecture. The Victoria Memorial hall was built with white Makrana marbles."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/victoriaMemorials.jpg",
             "text2" : qsTr("Victoria Memorial"),
             "x" : "0.670",

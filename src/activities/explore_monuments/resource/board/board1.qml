@@ -28,7 +28,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Chichén Itzá"),
-            "text": qsTr("Chichén Itzá (at the mouth of the well of the Itza) was a large pre-Columbian city built by the Maya people of the Terminal Classic period. The archaeological site is located in Tinúm Municipality, Yucatán State, Mexico."),
+            "text": qsTr("Chichen Itza, meaning “at the mouth of the Itza well”, is a Mayan City on the Yucatan Peninsula in Mexico, between Valladolid and Merida. It was established before the period of Christopher Colombus and probably served as the religion center of Yucatan for a while."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/chichenItza.jpg",
             "text2": qsTr("Chichén Itzá"),
             "x" : "0.206",
@@ -39,7 +39,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Colosseum"),
-            "text": qsTr("Colosseum is an oval amphitheatre in the centre of the city of Rome, Italy. Built of concrete and sand, it is the largest amphitheatre ever built and is considered one of the greatest works of architecture and engineering ever. Construction began under the emperor Vespasian in 72 AD, and was completed in 80 AD under his successor and heir Titus. Further modifications were made during the reign of Domitian (81–96)."),
+            "text": qsTr("The Colosseum or Coliseum is today the most recognisable of Rome's Classical buildings. Even 2,000 years after it was built, and despite centuries when the abandoned building was pillaged for building materials, it is instantly recognisable ... a Classical template for the stadia of today. It was the first permanent amphitheatre to be raised in Rome, and the most impressive arena the Classical world had yet seen"),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/colosseum.jpg",
             "text2": qsTr("Colosseum"),
             "x" : "0.514",
@@ -61,7 +61,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("The Great Wall of China"),
-            "text": qsTr("The Great Wall of China built along an east-to-west line across the historical northern borders of China to protect the Chinese states and empires against the raids and invasions of the various nomadic groups of the Eurasian Steppe. Several walls were being built as early as the 7th century. The Great Wall stretches from Dandong in the east, to Lop Lake in the west, along an arc that roughly delineates the southern edge of Inner Mongolia."),
+            "text": qsTr("The Great Wall, one of the greatest wonders of the world, was listed as a World Heritage by UNESCO in 1987. Just like a gigantic dragon, it winds up and down across deserts, grasslands, mountains and plateaus, stretching approximately 13,170 miles (21,196 kilometers) from east to west of China."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/greatWallofChina.jpg",
             "text2": qsTr("The Great Wall of China"),
             "x" : "0.765",
@@ -72,7 +72,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Machu Picchu"),
-            "text": qsTr("Machu Picchu is situated on a mountain ridge above the Sacred Valley which is 80 kilometres (50 mi) northwest of Cuzco and through which the Urubamba River flows. Most archaeologists believe that Machu Picchu was built as an estate for the Inca emperor Pachacuti (1438–1472). Often mistakenly referred to as the 'Lost City of the Incas', it is the most familiar icon of Inca civilization."),
+            "text": qsTr("Machu Picchu stands 2,430 m above sea-level, in the middle of a tropical mountain forest, in an extraordinarily beautiful setting. It was probably the most amazing urban creation of the Inca Empire at its height; its giant walls, terraces and ramps seem as if they have been cut naturally in the continuous rock escarpments. The natural setting, on the eastern slopes of the Andes, encompasses the upper Amazon basin with its rich diversity of flora and fauna."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/machuPicchu.jpg",
             "text2": qsTr("Machu Picchu"),
             "x" : "0.267",
