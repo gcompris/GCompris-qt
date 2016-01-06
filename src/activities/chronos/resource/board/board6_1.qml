@@ -25,25 +25,25 @@ QtObject {
    property string instruction: qsTr("Aviation")
    property variant levels: [
       {
-          "pixmapfile": "images/bell_X1.png",
-          "x": "0.2",
-          "y": "0.55",
+          "pixmapfile": "images/bell_X1.svg",
+          "x": 0.2,
+          "y": 0.55,
           "width": 0.4,
-          "height": 0.4
+          "height": 0.244
       },
       {
-          "pixmapfile": "images/lindbergh.png",
-          "x": "0.5",
-          "y": "0.9",
+          "pixmapfile": "images/lindbergh.svg",
+          "x": 0.5,
+          "y": 0.9,
           "width": 0.4,
-          "height": 0.2
+          "height": 0.14
       },
       {
-          "pixmapfile": "images/rafale.png",
-          "x": "0.75",
-          "y": "0.55",
+          "pixmapfile": "images/rafale.svg",
+          "x": 0.75,
+          "y": 0.55,
           "width": 0.4,
-          "height": 0.4
+          "height": 0.292
       },
       {
 		  "text": qsTr("1947 Chuck Yeager breaks the sound-barrier"),

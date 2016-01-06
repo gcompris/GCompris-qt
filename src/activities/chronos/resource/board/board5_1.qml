@@ -25,11 +25,11 @@ QtObject {
    property string instruction: qsTr("Transportation")
    property variant levels: [
       {
-          "pixmapfile": "images/helico_cornu.png",
-          "x": "0.75",
-          "y": "0.55",
+          "pixmapfile": "images/helico_cornu.svg",
+          "x": 0.75,
+          "y": 0.55,
           "width": 0.4,
-          "height": 0.4
+          "height": 0.16
       },
       {
           "pixmapfile": "images/Eole.svg",
@@ -39,11 +39,11 @@ QtObject {
           "height": 0.2
       },
       {
-          "pixmapfile": "images/mongolfiere.png",
-          "x": "0.2",
-          "y": "0.55",
+          "pixmapfile": "images/mongolfiere.svg",
+          "x": 0.2,
+          "y": 0.55,
           "width": 0.4,
-          "height": 0.4
+          "height": 0.522
       },
       {
 		  "text": qsTr("1783 Montgolfier brothers' hot air balloon"),
@@ -61,9 +61,9 @@ QtObject {
       },
       {
 		  "text": qsTr("1906 Paul Cornu First helicopter flight"),
-		  "x": "0.75",
+          "x": 0.75,
 		  "y": 0.21,
-		  "width": "0.4",
+          "width": 0.4,
 		  "type": "DisplayText"
       }
    ]

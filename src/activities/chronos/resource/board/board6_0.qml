@@ -33,18 +33,18 @@ QtObject {
           "height": 0.4
       },
       {
-          "pixmapfile": "images/wright_flyer.png",
-          "x": "0.5",
-          "y": "0.9",
+          "pixmapfile": "images/wright_flyer.svg",
+          "x": 0.5,
+          "y": 0.9,
           "width": 0.4,
-          "height": 0.2
+          "height": 0.216
       },
       {
-          "pixmapfile": "images/bleriot.png",
-          "x": "0.75",
-          "y": "0.55",
+          "pixmapfile": "images/bleriot.svg",
+          "x": 0.75,
+          "y": 0.55,
           "width": 0.4,
-          "height": 0.4
+          "height": 0.115
       },
       {
 		  "text": qsTr("1880 Clement Ader's Eole"),
@@ -55,7 +55,7 @@ QtObject {
       },
       {
 		  "text": qsTr("1903 The Wright brothers' Flyer III"),
-		  "x": "0.5",
+          "x": 0.5,
 		  "y": 0.75,
 		  "width": "0.4",
 		  "type": "DisplayText"

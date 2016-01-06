@@ -25,32 +25,32 @@ QtObject {
    property string instruction: qsTr("Gardening")
    property variant levels: [
       {
-          "pixmapfile": "images/garden1.png",
-          "x": "0.25",
-          "y": "0.25",
+          "pixmapfile": "images/garden1.svg",
+          "x": 0.25,
+          "y": 0.25,
           "width": 0.4,
-          "height": 0.4
+          "height": 0.309
       },
       {
-          "pixmapfile": "images/garden4.png",
-          "x": "0.75",
-          "y": "0.7",
+          "pixmapfile": "images/garden4.svg",
+          "x": 0.75,
+          "y": 0.7,
           "width": 0.4,
-          "height": 0.4
+          "height": 0.309
       },
       {
-          "pixmapfile": "images/garden3.png",
-          "x": "0.25",
-          "y": "0.7",
+          "pixmapfile": "images/garden3.svg",
+          "x": 0.25,
+          "y": 0.7,
           "width": 0.4,
-          "height": 0.4
+          "height": 0.309
       },
       {
-          "pixmapfile": "images/garden2.png",
-          "x": "0.75",
-          "y": "0.25",
+          "pixmapfile": "images/garden2.svg",
+          "x": 0.75,
+          "y": 0.25,
           "width": 0.4,
-          "height": 0.4
+          "height": 0.309
       },
       {
 		  "text": qsTr("1"),
