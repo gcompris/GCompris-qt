@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(activities/explore_world_animals *.qml *.svg *.js resource/*)
+GCOMPRIS_ADD_RCC(activities/explore_world_animals *.qml *.svg resource/*/*)
