@@ -5,7 +5,7 @@ Background http://www.clker.com/clipart-9207.html
 All monuments: Wikipedia
 
 Level 2
-Background openclipart.org
+Background https://openclipart.org/detail/194681/map-of-india-and-sri-lanka-in-cylindrical-equal-area-projection
 All monuments: Wikipedia
 
 Level 3
@@ -13,7 +13,7 @@ Background http://www.clipartbest.com/clipart-4cbMK6dcg
 All monuments: Wikipedia
 
 Level 4
-Background http://www.clipart.co
+Background http://cliparts.co/cliparts/zTX/oBj/zTXoBj5Lc.jpg
 All monuments: Wikipedia
 
 Level 5

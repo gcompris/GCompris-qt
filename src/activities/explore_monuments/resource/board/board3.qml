@@ -60,7 +60,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Pont du Gard"),
-            "text": qsTr("The Pont du Gard was built shortly before the Christian era to allow the aqueduct of Nîmes (which is almost 50 km long) to cross the Gard river. The Roman architects and hydraulic engineers who designed this bridge, which stands almost 50 m high and is on three levels – the longest measuring 275 m – created a technical as well as an artistic masterpiece."),
+            "text": qsTr("The Pont du Gard was built shortly before the Christian era to allow the aqueduct of Nîmes (which is almost 50 km long) to cross the Gardon river. The Roman architects and hydraulic engineers who designed this bridge, which stands almost 50 m high and is on three levels – the longest measuring 275 m – created a technical as well as an artistic masterpiece."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/pontduGard.jpg",
             "text2" : qsTr("Pont du Gard"),
             "x" : "0.691",
@@ -82,7 +82,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Château de Chambord"),
-            "text": qsTr("Prestigious, majestic, colossal, extravagant… are these adjectives enough to fully describe the splendour of Chambord? The largest chateau of the Loire Valley is indeed full of surprises for those who are lucky enough to explore its domain. This remarkable piece of architecture is certainly more than just a castle: it is the dream of a King, transformed into reality."),
+            "text": qsTr("Prestigious, majestic, colossal, extravagant are these adjectives enough to fully describe the splendour of Chambord? The largest chateau of the Loire Valley is indeed full of surprises for those who are lucky enough to explore its domain. This remarkable piece of architecture is certainly more than just a castle: it is the dream of a King, transformed into reality."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/france/chateaudeChambord.jpg",
             "text2" : qsTr("Château de Chambord"),
             "x" : "0.456",

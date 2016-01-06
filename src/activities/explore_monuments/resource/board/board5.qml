@@ -27,7 +27,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Cabrillo"),
-            "text": qsTr("Situated on Point Loma in San Diego, California, Cabrillo National Monument (nps.gov/cabr) commemorates the first European to land on the West Coast of the United States, Juan Rodriguez Cabrillo. Portuguese by birth, Cabrillo carried the Spanish flag in his conquests of the New World. He arrived at San Diego Bay in September 1542, three months after departing from Barra de Navidad on the west coast of Mexico."),
+            "text": qsTr("Situated on Point Loma in San Diego, California, Cabrillo National Monument commemorates the first European to land on the West Coast of the United States, Juan Rodriguez Cabrillo. Portuguese by birth, Cabrillo carried the Spanish flag in his conquests of the New World. He arrived at San Diego Bay in September 1542, three months after departing from Barra de Navidad on the west coast of Mexico."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/usa/cabrillo.jpg",
             "text2" : qsTr("Cabrillo"),
             "x" : "0.182",
@@ -38,7 +38,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Canyon de Chelly"),
-            "text": qsTr("The stoic red ruins of Canyon de Chelly (nps.gov/cach) in northeastern Arizona are at once part of the National Park Service and the Navajo Nation, having been established as a national monument in 1931. A number of important early Native American sites are preserved in the nearly 84,000 acres of parkland, and Canyon de Chelly also offers an array of Southwestern geological formations, including Spider Rock, an 800-foot-tall sandstone spire that rises eerily from the bottom of the canyon floor."),
+            "text": qsTr("The stoic red ruins of Canyon de Chelly in northeastern Arizona are at once part of the National Park Service and the Navajo Nation, having been established as a national monument in 1931. A number of important early Native American sites are preserved in the nearly 84,000 acres of parkland, and Canyon de Chelly also offers an array of Southwestern geological formations, including Spider Rock, an 800-foot-tall sandstone spire that rises eerily from the bottom of the canyon floor."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/usa/canyondeChelly.jpg",
             "text2" : qsTr("Canyon de Chelly"),
             "x" : "0.277",
@@ -49,7 +49,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Castillo de San Marcos"),
-            "text": qsTr("Set on more than 20 acres in St. Augustine, Florida, the Castillo de San Marcos (nps.gov/casa) was completed as the city's defensive fort in 1695, when Florida was still a Spanish territory. Constructed out of the rare coquina limestone, the star-shaped Castillo also is the oldest masonry fort in the country."),
+            "text": qsTr("Set on more than 20 acres in St. Augustine, Florida, the Castillo de San Marcos was completed as the city's defensive fort in 1695, when Florida was still a Spanish territory. Constructed out of the rare coquina limestone, the star-shaped Castillo also is the oldest masonry fort in the country."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/usa/castillodeSanMarcos.jpg",
             "text2" : qsTr("Castillo de San Marcos"),
             "x" : "0.759",
@@ -115,7 +115,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Statue of Liberty"),
-            "text": qsTr("Perhaps the best-known monument and symbol of the United States is the Statue of Liberty (nps.gov/stli), which sits on its own tiny island in New York City. The statue was a gift from the people of France and was dedicated in October 1886."),
+            "text": qsTr("Perhaps the best-known monument and symbol of the United States is the Statue of Liberty, which sits on its own tiny island in New York City. The statue was a gift from the people of France and was dedicated in October 1886."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/usa/statueofLiberty.jpg",
             "text2" : qsTr("Statue of Liberty"),
             "x" : "0.860",
@@ -126,7 +126,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Fort Sumter"),
-            "text": qsTr("Originally built as a defensive structure following the War of 1812, it was at this oceanfront fortification in Charleston Harbor, South Carolina, that the first shots of the Civil War were fired. Inside Fort Sumter (nps.gov/fosu), a number of exhibits offer perspectives on U.S. history, particularly the divisions between North and South that eventually resulted in the war."),
+            "text": qsTr("Originally built as a defensive structure following the War of 1812, it was at this oceanfront fortification in Charleston Harbor, South Carolina, that the first shots of the Civil War were fired. Inside Fort Sumter, a number of exhibits offer perspectives on U.S. history, particularly the divisions between North and South that eventually resulted in the war."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/usa/fortSumter.jpg",
             "text2" : qsTr("Fort Sumter"),
             "x" : "0.769",

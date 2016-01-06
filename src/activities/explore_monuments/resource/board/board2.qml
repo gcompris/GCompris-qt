@@ -93,7 +93,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Konark Sun Temple"),
-            "text": qsTr("he Konark Sun Temple (also spelled Konarak) is a 13th-century Hindu temple dedicated to the sun god. Shaped like a giant chariot, the temple is known for the exquisite stone carvings that cover the entire structure."),
+            "text": qsTr("The Konark Sun Temple (also spelled Konarak) is a 13th-century Hindu temple dedicated to the Sun god. Shaped like a giant chariot, the temple is known for the exquisite stone carvings that cover the entire structure."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/konarkSunTemple.jpg",
             "text2" : qsTr("Konark Sun Temple"),
             "x" : "0.506",

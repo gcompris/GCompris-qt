@@ -39,7 +39,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Colosseum"),
-            "text": qsTr("The Colosseum or Coliseum is today the most recognisable of Rome's Classical buildings. Even 2,000 years after it was built, and despite centuries when the abandoned building was pillaged for building materials, it is instantly recognisable ... a Classical template for the stadia of today. It was the first permanent amphitheatre to be raised in Rome, and the most impressive arena the Classical world had yet seen"),
+            "text": qsTr("The Colosseum or Coliseum is today the most recognisable of Rome's Classical buildings. Even 2,000 years after it was built, and despite centuries when the abandoned building was pillaged for building materials, it is instantly recognisable A classical template for the stadia of today. It was the first permanent amphitheatre to be raised in Rome, and the most impressive arena the Classical world had yet seen."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/colosseum.jpg",
             "text2": qsTr("Colosseum"),
             "x" : "0.514",
@@ -61,7 +61,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("The Great Wall of China"),
-            "text": qsTr("The Great Wall, one of the greatest wonders of the world, was listed as a World Heritage by UNESCO in 1987. Just like a gigantic dragon, it winds up and down across deserts, grasslands, mountains and plateaus, stretching approximately 13,170 miles (21,196 kilometers) from east to west of China."),
+            "text": qsTr("The Great Wall, was listed as a World Heritage by UNESCO in 1987. Just like a gigantic dragon, it winds up and down across deserts, grasslands, mountains and plateaus, stretching approximately 13,170 miles (21,196 kilometers) from east to west of China."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/greatWallofChina.jpg",
             "text2": qsTr("The Great Wall of China"),
             "x" : "0.765",
