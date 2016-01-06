@@ -209,6 +209,10 @@ var levelProperty = [
                 "nbFish": 15,
                 "minDuration": 6000
             },
+            {
+                "nbFish": 18,
+                "minDuration": 4000
+            }
         ]
 var currentImageId = 0
 var currentLevel = 0

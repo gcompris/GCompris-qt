@@ -28,7 +28,7 @@
 var url = "qrc:/gcompris/src/activities/football/resource/"
 
 var currentLevel = 0
-var numberOfLevel = 5
+var numberOfLevel = 8
 var items
 var flag = 0
 var friction = 0.995
