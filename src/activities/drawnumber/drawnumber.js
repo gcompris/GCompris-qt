@@ -137,6 +137,9 @@ function drawSegment(pointIndex) {
         }
 
         if (pointIndex == items.pointImageRepeater.count-1) {
+            for (var i = 1; i < dataset[currentLevel].coordinates.length; i++) {
+                items.segmentsRepeater.itemAt(i-1).opacity = 0
+            }
             items.imageBack.source = url + dataset[currentLevel].imageName2
             won()
         }
