@@ -25,25 +25,25 @@ QtObject {
    property string instruction: qsTr("Cars")
    property variant levels: [
       {
-          "pixmapfile": "images/renault1899.png",
-          "x": "0.2",
-          "y": "0.55",
+          "pixmapfile": "images/renault1899.svg",
+          "x": 0.2,
+          "y": 0.55,
           "width": 0.4,
-          "height": 0.4
+          "height": 0.305
       },
       {
-          "pixmapfile": "images/lancia1923.png",
-          "x": "0.5",
-          "y": "0.9",
+          "pixmapfile": "images/lancia1923.svg",
+          "x": 0.5,
+          "y": 0.9,
           "width": 0.4,
-          "height": 0.2
+          "height": 0.16
       },
       {
-          "pixmapfile": "images/1955ds19.png",
-          "x": "0.75",
-          "y": "0.55",
+          "pixmapfile": "images/1955ds19.svg",
+          "x": 0.75,
+          "y": 0.55,
           "width": 0.4,
-          "height": 0.4
+          "height": 0.19
       },
       {
 		  "text": qsTr("1899 Renault voiturette"),
@@ -61,10 +61,10 @@ QtObject {
       },
       {
 		  "text": qsTr("1955 Citroën DS 19"),
-		  "x": "0.75",
+          "x": 0.75,
 		  "y": 0.21,
-		  "width": "0.4",
-		  "type": "DisplayText"
+          "width": 0.4,
+          "type": "DisplayText"
       }
    ]
 }

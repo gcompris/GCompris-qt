@@ -26,38 +26,38 @@ QtObject {
    property string instruction: qsTr("Place each image in the order and on the date it was invented.")
    property variant levels: [
       {
-          "pixmapfile": "images/fardier.png",
-          "x": "0.7",
-          "y": "0.8",
-          "width": 0.5,
-          "height": 0.4
+          "pixmapfile": "images/fardier.svg",
+          "x": 0.7,
+          "y": 0.8,
+          "width": 0.4,
+          "height": 0.14
       },
       {
-          "pixmapfile": "images/st_rocket.png",
-          "x": "0.25",
-          "y": "0.55",
-          "width": 0.5,
-          "height": 0.4
+          "pixmapfile": "images/st_rocket.svg",
+          "x": 0.25,
+          "y": 0.55,
+          "width": 0.4,
+          "height": 0.308
       },
       {
 		  "text": qsTr("1829 Stephenson's Rocket Steam locomotive"),
-		  "x": "0.24",
+          "x": 0.24,
 		  "y": 0.29,
-		  "width": "0.4",
+          "width": 0.4,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("1769 Cugnot's fardier"),
-		  "x": "0.75",
+          "x": 0.75,
 		  "y": 0.59,
-		  "width": "0.4",
+          "width": 0.4,
 		  "type": "DisplayText"
       },
       {
 		  "text": qsTr("Transportation"),
-		  "x": "0.8",
+          "x": 0.8,
 		  "y": 0.3,
-		  "width": "0.3",
+          "width": 0.3,
 		  "type": "DisplayText"
       }
    ]

@@ -25,11 +25,11 @@ QtObject {
    property string instruction: qsTr("Transportation")
    property variant levels: [
       {
-          "pixmapfile": "images/st_rocket.png",
-          "x": "0.2",
-          "y": "0.55",
+          "pixmapfile": "images/st_rocket.svg",
+          "x": 0.2,
+          "y": 0.55,
           "width": 0.4,
-          "height": 0.4
+          "height": 0.308
       },
       {
           "pixmapfile": "images/Eole.svg",
@@ -39,11 +39,11 @@ QtObject {
           "height": 0.2
       },
       {
-          "pixmapfile": "images/fardier.png",
-          "x": "0.75",
-          "y": "0.55",
+          "pixmapfile": "images/fardier.svg",
+          "x": 0.75,
+          "y": 0.55,
           "width": 0.4,
-          "height": 0.4
+          "height": 0.14
       },
       {
 		  "text": qsTr("1829 Stephenson's Rocket Steam locomotive"),
