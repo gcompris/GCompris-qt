@@ -111,7 +111,6 @@ function isComplete() {
 function initSubSubLevel() {
     if(items.progressbar.value == items.dataModel.count) {
         items.bonus.good("smiley");
-//        items.score.currentSubLevel = 1
     }
      if(items.score.currentSubLevel == 2 && items.hasAudioQuestions) {
         items.audioEffects.play(getCurrentQuestion().audio);
