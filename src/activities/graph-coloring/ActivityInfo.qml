@@ -30,5 +30,5 @@ ActivityInfo {
   prerequisite: qsTr("Ability to distinguish different colors, sense of positions")
   manual: ""
   credit: ""
-  section: "fun"
+  section: "math"
 }
