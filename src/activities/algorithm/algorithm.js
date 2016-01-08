@@ -28,7 +28,6 @@
 functions :-
 
 setUp() - the function is called to set the basic game layout each time (questionTray, answerTray)
-getSetLength() - returns the number of unique indices in the chosen sample
 getImages() - returns a random array of length 8 that is based on the chosen sample
 setQuestion() - the function is called to set questionTray
 setAnswer() - the function is called to set answerTray
@@ -41,23 +40,20 @@ choiceCount (int) - initialised with the value 5 and the game is won when choice
 
 Example 1:
 sample: [0,1,0,1,0,1,0,1]
-getSetLength() output - 2
-getImages() sample output - [6,7,6,7,6,7,6,7]
+getImages() sample output - names of images with indexes [6,7,6,7,6,7,6,7]
 
 Example 2:
 sample: [0,1,2,0,1,2,0,1]
-getSetLength() output - 3
-getImages() sample output - [3,5,7,3,5,7,3,5]
+getImages() sample output - names of images with indexes [3,5,7,3,5,7,3,5]
 
 Example 3:
 sample: [0,1,2,3,3,2,1,0]
-getSetLength() output - 4
-getImages() sample output - [1,3,2,5,5,2,3,1]
+getImages() sample output - names of images with indexes [1,3,2,5,5,2,3,1]
 
 */
 
+var matchesVisible = 4
 var currentLevel = 0
-var numberOfLevel = 5
 var max = 8
 var index
 var answerIndex
@@ -90,15 +86,17 @@ function initLevel() {
 // Add more cases to sample and differentiate arrange according to level of difficulty
 // Develop an algo to choose them accordingly for each level
 
-var sample = [[[0,1,0,1,0,1,0,1],[0,1,2,0,1,2,0,1],[0,1,2,3,0,1,2,3],[0,1,2,3,3,2,1,0]],//level1
-              [[0,1,2,3,1,0,0,1],[0,1,2,3,0,1,0,1],[0,1,2,3,1,2,1,2],[0,1,2,3,2,3,2,3]],//2
-              [[0,1,2,3,0,1,2,0],[0,1,2,3,1,2,3,1],[0,1,2,3,2,1,3,1],[0,1,2,3,3,1,2,1]],//3
-              [[0,1,2,3,1,2,3,0],[0,1,2,3,2,3,0,1],[0,1,2,3,3,0,1,2],[0,1,2,3,4,0,1,2]],//4
-              [[0,1,2,3,3,1,2,0],[0,1,2,3,0,2,1,3],[0,1,2,3,2,3,1,0],[0,1,2,3,2,1,3,0]]]//5
-
+var sample = [[[0,1,0,1,0,1,0,1],[0,1,1,0,0,1,1,0],[1,1,0,0,0,0,1,1],[1,0,0,1,0,1,1,0]],//level1
+              [[0,1,2,0,1,2,0,1],[0,1,2,3,0,1,2,3],[0,1,2,3,3,2,1,0],[0,1,2,1,0,1,2,0]],//2
+              [[0,1,2,3,1,0,0,1],[0,1,2,3,0,1,0,1],[0,1,2,3,1,2,1,2],[0,1,2,3,2,3,2,3]],//3
+              [[0,1,2,3,0,1,2,0],[0,1,2,3,1,2,3,1],[0,1,2,3,2,1,3,1],[0,1,2,3,3,1,2,1]],//4
+              [[0,1,2,3,1,2,3,0],[0,1,2,3,2,3,0,1],[0,1,2,3,3,0,1,2],[0,1,2,3,3,0,1,2]],//5
+              [[0,1,2,3,3,1,2,0],[0,1,2,3,0,2,1,3],[0,1,2,3,2,3,1,0],[0,1,2,3,2,1,3,0]],//6
+	      [[0,1,2,3,3,0,1,1],[0,1,2,3,2,2,3,2],[0,1,2,3,1,1,0,3],[0,1,2,3,1,2,3,2]]]//7
+var numberOfLevel = sample.length
 
 function setUp(){
-    number = Math.floor(Math.random() * 10000) % 4
+    number = Math.floor(Math.random() * 10000) % sample[currentLevel].length
 
     index = getImages(number, currentLevel)
     setQuestion(index)
@@ -108,28 +106,16 @@ function setUp(){
 }
 
 
-function getSetLength(list){
-    //used to determine how many unique images are required for a sample
-    var count = []
-    for(var i=0; i<list.length;i++) {
-        if(!(list[i] in count)) {
-            count.push(list[i])
-        }
-    }
-    return count.length
-}
 
 // Returns a set of images that is used to set
 // either the Sample algorithm or the Answer tray
 function getImages(number, level) {
-    var setLength = getSetLength(sample[level][number])
-    var results = Core.shuffle(images).slice(0, setLength)
-    // Repeat the set
-    while(results.length < 8) {
-        results = results.concat(results)
+    var substitution = Core.shuffle(images)
+    // Create results table based on sample and substitution
+    var results = []
+    for(var i=0; i<sample[level][number].length; i++) {
+        results.push(substitution[sample[level][number][i]])
     }
-    // Remove extra items
-    results = results.slice(0, 8)
     return results
 }
 
@@ -139,11 +125,11 @@ function setQuestion(indices){
     items.question.model = indices
 }
 
-// The first 5 images of answerTray are set and the 6th is a question mark
+// The first `matchesVisible` images of answerTray are set and the `matchesVisible+1`th is a question mark
 function setAnswer(indices){
 
     var tempIndex = []
-    for(var i=0; i < 5; i++) {
+    for(var i=0; i < matchesVisible; i++) {
         tempIndex.push(indices[i])
     }
     tempIndex.push('question_mark')
@@ -151,7 +137,7 @@ function setAnswer(indices){
 }
 
 
-var choiceCount = 5 //game is won when choiceCount = 8
+var choiceCount = matchesVisible //game is won when choiceCount = 8
 
 function clickHandler(id){
     var tempIndex = []
@@ -161,15 +147,15 @@ function clickHandler(id){
         choiceCount++;
         items.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
 
-        if(choiceCount < 8){
+        if(choiceCount < max){
             tempIndex.push('question_mark')
         }
 
         tempIndex[choiceCount - 1] = answerIndex[choiceCount - 1]
         items.answer.model = tempIndex
 
-        if(choiceCount == 8){
-            choiceCount = 5
+        if(choiceCount == max){
+            choiceCount = matchesVisible
             items.currentSubLevel++
             if(items.currentSubLevel == items.nbSubLevel) { // increment level after 3 successful games
                 items.currentSubLevel-- // Don't display 4/3
