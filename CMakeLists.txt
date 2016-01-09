@@ -25,6 +25,9 @@ set(GCOMPRIS_MAJOR_VERSION 0)
 set(GCOMPRIS_MINOR_VERSION 60)
 set(GCOMPRIS_PATCH_VERSION 0)
 
+# Set the BUILD_DATE
+string(TIMESTAMP BUILD_DATE %Y%M)
+
 # Set executable filename
 if(ANDROID)
   set(GCOMPRIS_EXECUTABLE_NAME GCompris)
@@ -102,7 +105,7 @@ FIND_PROGRAM(LRELEASE_EXECUTABLE lrelease lrelease-qt5
 #    message("${_variableName}=${${_variableName}}")
 #endforeach()
 
-option(WITH_ACTIVATION_CODE "Include the activation system" OFF)
+set(ACTIVATION_MODE "no" CACHE STRING "Policy for activation [no|inapp|internal]")
 option(WITH_DEMO_ONLY "Include only demo activities" OFF)
 
 option(WITH_DOWNLOAD "Internal download" ON)
@@ -125,10 +128,10 @@ if(ANDROID)
   set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/android/libs/${ARM_TARGET}/)
   set(GCOMPRIS_TRANSLATIONS_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir} CACHE INTERNAL "" FORCE)
   set(GCOMPRIS_RCC_DIR ${CMAKE_BINARY_DIR}/${_data_dest_dir} CACHE INTERNAL "" FORCE)
-  if(WITH_ACTIVATION_CODE)
+  if(ACTIVATION_MODE STREQUAL "inapp")
     set(ANDROID_BILLING_PERMISSION "<uses-permission android:name=\"com.android.vending.BILLING\"/>")
     set(ANDROID_PACKAGE "net.gcompris")
-  else(WITH_ACTIVATION_CODE)
+  else(ACTIVATION_MODE)
     set(ANDROID_PACKAGE "net.gcompris.full")
   endif()
   add_subdirectory(android)

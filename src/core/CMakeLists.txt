@@ -2,10 +2,6 @@ include(qt_helper)
 
 configure_file(config.h.in "${CMAKE_CURRENT_BINARY_DIR}/config.h" @ONLY)
 
-if(WITH_ACTIVATION_CODE)
-  add_definitions(-DWITH_ACTIVATION_CODE)
-endif()
-
 if(WITH_KIOSK_MODE)
   add_definitions(-DWITH_KIOSK_MODE)
 endif()
@@ -196,7 +192,7 @@ if(BUILD_STANDALONE)
   install(DIRECTORY ${_qt_qml_path}/QtGraphicalEffects DESTINATION ${_qt_qml_destdir})
 
   # Fix for Linux 'make package' that fails to link with libicu
-  if(UNIX AND NOT APPLE AND NOT SAILFISHOS)
+  if(UNIX AND NOT APPLE AND NOT SAILFISHOS AND NOT ANDROID)
     add_library( libicudata SHARED IMPORTED )
     set_target_properties( libicudata PROPERTIES IMPORTED_LOCATION ${Qt5_DIR}/../../libicudata.so.53 )
     add_library( libicui18n SHARED IMPORTED )

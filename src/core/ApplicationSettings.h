@@ -143,6 +143,16 @@ class ApplicationSettings : public QObject
     Q_PROPERTY(bool isDemoMode READ isDemoMode WRITE setDemoMode NOTIFY demoModeChanged)
 
     /**
+     * Activation code key.
+     */
+    Q_PROPERTY(QString codeKey READ codeKey WRITE setCodeKey NOTIFY codeKeyChanged)
+
+    /**
+     * Activation mode.
+     */
+    Q_PROPERTY(quint32 activationMode READ activationMode CONSTANT)
+
+    /**
      * Whether kiosk mode is currently active.
      */
     Q_PROPERTY(bool isKioskMode READ isKioskMode WRITE setKioskMode NOTIFY kioskModeChanged)
@@ -286,14 +296,37 @@ public:
     bool isDemoMode() const { return m_isDemoMode; }
     void setDemoMode(const bool newMode);
 
+    QString codeKey() const { return m_codeKey; }
+    void setCodeKey(const QString newCodeKey) {
+        m_codeKey = newCodeKey;
+        emit notifyCodeKeyChanged();
+    }
+
+    /**
+     * @brief activationMode
+     * @return 0: no, 1: inapp, 2: internal
+     */
+    quint32 activationMode() const { return m_activationMode; }
+
     bool isKioskMode() const { return m_isKioskMode; }
     void setKioskMode(const bool newMode) {
         m_isKioskMode = newMode;
         emit kioskModeChanged();
     }
 
-    // Payment API
-    // Call a payment system to sync our demoMode state with it
+    /**
+     * Check validity of the activation code
+     * @param code An activation code to check
+     * @returns  0 if the code is not valid or we don't know yet
+     *           1 if the code is valid but out of date
+     *           2 if the code is valid and under 2 years
+     */
+    Q_INVOKABLE uint checkActivationCode(const QString code);
+
+    /**
+     * Check Payment API
+     * Call a payment system to sync our demoMode state with it
+     */
     void checkPayment();
     // Called by the payment system
     void bought(const bool isBought) {
@@ -352,6 +385,7 @@ protected slots:
     Q_INVOKABLE void notifyFilterLevelMinChanged();
     Q_INVOKABLE void notifyFilterLevelMaxChanged();
     Q_INVOKABLE void notifyDemoModeChanged();
+    Q_INVOKABLE void notifyCodeKeyChanged();
     Q_INVOKABLE void notifyKioskModeChanged();
     Q_INVOKABLE void notifySectionVisibleChanged();
 
@@ -413,6 +447,7 @@ signals:
     void filterLevelMinChanged();
     void filterLevelMaxChanged();
     void demoModeChanged();
+    void codeKeyChanged();
     void kioskModeChanged();
     void sectionVisibleChanged();
     void baseFontSizeChanged();
@@ -446,6 +481,8 @@ private:
     QString m_locale;
     QString m_font;
     bool m_isDemoMode;
+    QString m_codeKey;
+    quint32 m_activationMode;
     bool m_isKioskMode;
     bool m_sectionVisible;
 	int m_baseFontSize;

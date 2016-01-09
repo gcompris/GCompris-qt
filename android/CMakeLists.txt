@@ -26,8 +26,10 @@ set(ANDROID_VERSION_NAME ${GCOMPRIS_VERSION})
 
 # Set a name representing the build type
 set(APK_SUFFIX "-")
-if(WITH_ACTIVATION_CODE)
+if(ACTIVATION_MODE STREQUAL "inapp")
   set(APK_SUFFIX "-inapp${APK_SUFFIX}")
+elseif(ACTIVATION_MODE STREQUAL "internal")
+  set(APK_SUFFIX "-internal${APK_SUFFIX}")
 endif(WITH_ACTIVATION_CODE)
 
 if(WITH_DEMO_ONLY)

@@ -44,6 +44,11 @@ void ApplicationSettings::checkPayment() {
 #endif
 }
 
+uint ApplicationSettings::checkActivationCode(const QString code) {
+    // Not used in inapp mode.
+    return 0;
+}
+
 static void bought(JNIEnv *, jclass /*clazz*/, jboolean b)
 {
     ApplicationSettings::getInstance()->bought(b);

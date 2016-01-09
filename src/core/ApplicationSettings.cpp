@@ -66,6 +66,7 @@ static const QString FONT_CAPITALIZATION = "fontCapitalization";
 static const QString DEFAULT_CURSOR = "defaultCursor";
 static const QString NO_CURSOR = "noCursor";
 static const QString DEMO_KEY = "demo";
+static const QString CODE_KEY = "key";
 static const QString KIOSK_KEY = "kiosk";
 static const QString SECTION_VISIBLE = "sectionVisible";
 
@@ -92,12 +93,22 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_fontCapitalization = m_config.value(FONT_CAPITALIZATION, GC_DEFAULT_FONT_CAPITALIZATION).toUInt();
     m_isEmbeddedFont = m_config.value(IS_CURRENT_FONT_EMBEDDED, true).toBool();
 
-// The default demo mode based on the platform
-#if defined(WITH_ACTIVATION_CODE)
-    m_isDemoMode = m_config.value(DEMO_KEY, true).toBool();
-#else
-    m_isDemoMode = m_config.value(DEMO_KEY, false).toBool();
-#endif
+    // Init the activation mode
+    if(QLatin1String(ACTIVATION_MODE) == "no")
+        m_activationMode = 0;
+    else if(QLatin1String(ACTIVATION_MODE) == "inapp")
+        m_activationMode = 1;
+    else if(QLatin1String(ACTIVATION_MODE) == "internal")
+        m_activationMode = 2;
+    else
+        qFatal("Unknown activation mode");
+
+    // Set the demo mode
+    if(QLatin1String(ACTIVATION_MODE) != "no")
+        m_isDemoMode = m_config.value(DEMO_KEY, true).toBool();
+    else
+        m_isDemoMode = false;
+    m_codeKey = m_config.value(CODE_KEY, "").toString();
 
 #if defined(WITH_KIOSK_MODE)
     m_isKioskMode = m_config.value(KIOSK_KEY, true).toBool();
@@ -167,6 +178,7 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(FILTER_LEVEL_MIN, m_filterLevelMin);
 	m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
     m_config.setValue(DEMO_KEY, m_isDemoMode);
+    m_config.setValue(CODE_KEY, m_codeKey);
     m_config.setValue(KIOSK_KEY, m_isKioskMode);
     m_config.setValue(SECTION_VISIBLE, m_sectionVisible);
 	m_config.setValue(DEFAULT_CURSOR, m_defaultCursor);
@@ -276,6 +288,14 @@ void ApplicationSettings::notifyDemoModeChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, DEMO_KEY, m_isDemoMode);
     qDebug() << "notifyDemoMode: " << m_isDemoMode;
+}
+
+void ApplicationSettings::notifyCodeKeyChanged()
+{
+    checkPayment();
+    if(!m_isDemoMode)
+        updateValueInConfig(GENERAL_GROUP_KEY, CODE_KEY, m_codeKey);
+    qDebug() << "notifyCodeKey: " << m_codeKey;
 }
 
 void ApplicationSettings::notifyKioskModeChanged()

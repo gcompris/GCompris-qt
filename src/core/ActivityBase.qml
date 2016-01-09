@@ -219,7 +219,8 @@ Item {
 
     Loader {
         id: demoPageLoader
-        source: "BuyMeOverlay.qml"
+        source: ApplicationSettings.activationMode == 1 ?
+                    "BuyMeOverlayInapp.qml" : "BuyMeOverlay.qml"
         anchors.fill: parent
         active: !activityInfo.demo && ApplicationSettings.isDemoMode
     }

@@ -20,13 +20,40 @@
  */
 
 #include "ApplicationSettings.h"
+#include "config.h"
 #include <QDebug>
-
 void ApplicationSettings::setDemoMode(const bool newMode) {
     m_isDemoMode = newMode;
     emit demoModeChanged();
 }
 
 void ApplicationSettings::checkPayment() {
+    if(m_activationMode == 2)
+        setDemoMode(checkActivationCode(m_codeKey) < 2);
+}
+
+uint ApplicationSettings::checkActivationCode(const QString code) {
+    if(code.length() != 12) {
+        return 0;
+    }
+    bool ok;
+    uint year = code.mid(4, 3).toUInt(&ok, 16);
+    uint month = code.mid(7, 1).toUInt(&ok, 16);
+    uint crc = code.mid(8, 4).toUInt(&ok, 16);
+
+    uint expectedCrc =
+            code.mid(0, 4).toUInt(&ok, 16) ^
+            code.mid(4, 4).toUInt(&ok, 16) ^
+            0xCECA;
+    qDebug() << expectedCrc << " " << crc;
+    ok = (expectedCrc == crc && year < 2100 && month <= 12);
+    if(!ok)
+        // Bad crc, year or month
+        return 0;
+
+    // Check date is under 2 years
+    qDebug() << year * 100 + month + 200 << " " << atoi(BUILD_DATE);
+    ok = year * 100 + month + 200 >= atoi(BUILD_DATE);
+    return(ok ? 2 : 1);
 }
 

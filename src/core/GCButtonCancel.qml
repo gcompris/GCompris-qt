@@ -35,6 +35,7 @@ Image {
     smooth: true
     sourceSize.width: 60 * ApplicationInfo.ratio
     anchors.margins: 10
+    z: 200
 
     signal close
 

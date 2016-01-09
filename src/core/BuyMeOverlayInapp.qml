@@ -35,7 +35,7 @@ Item {
     }
     /* Activation Instruction */
     Rectangle {
-        id: instruction
+        id: instructionsArea
         z: 99
         anchors {
             horizontalCenter: parent.horizontalCenter
@@ -72,10 +72,25 @@ Item {
                 width: parent.width - lock.width
                 wrapMode: TextEdit.WordWrap
                 z: 2
-                text: qsTr("This activity is only available in the full version of GCompris." + "<br/>" +
-                           "On <a href='http://gcompris.net'>http://gcompris.net</a> " +
-                           "you will find the instructions to obtain an activation code." + " " +
-                           "Then go to the main configuration dialog to enter the code.")
+                text: qsTr("This activity is only available in the full version of GCompris.")
+            }
+        }
+
+        Button {
+            width: instructionsArea.width * 0.9
+            height: 60 * ApplicationInfo.ratio
+            anchors {
+                horizontalCenter: parent.horizontalCenter
+                top: instructionsArea.bottom
+                topMargin: 10
+            }
+            text: qsTr("Buy the full version").toUpperCase()
+            style: GCButtonStyle {
+            }
+
+            onClicked: {
+                if(ApplicationSettings.isDemoMode)
+                    ApplicationSettings.isDemoMode = false
             }
         }
     }

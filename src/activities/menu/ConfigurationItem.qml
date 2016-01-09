@@ -28,9 +28,9 @@ import "../../core"
 import "qrc:/gcompris/src/core/core.js" as Core
 
 Item {
+    id: dialogConfig
 
     property var languages: allLangs.languages
-    id: dialogConfig
     height: column.height
 
     LanguageList {
@@ -41,6 +41,11 @@ Item {
         id: column
         spacing: 10
         width: parent.width
+
+        move: Transition {
+            NumberAnimation { properties: "x,y"; duration: 120 }
+        }
+
         // Put configuration here
         Row {
             id: demoModeBox
@@ -94,9 +99,88 @@ Item {
                 }
 
                 onClicked: {
-                    if(ApplicationSettings.isDemoMode)
-                    ApplicationSettings.isDemoMode = false
+                    if(ApplicationSettings.activationMode == 1) {
+                        if(ApplicationSettings.isDemoMode)
+                            ApplicationSettings.isDemoMode = false
+                    } else if(ApplicationSettings.activationMode == 2) {
+                        activationCodeEntry.visible = !activationCodeEntry.visible
+                    }
                 }
+            }
+        }
+
+        Column {
+            id: activationCodeEntry
+            width: parent.width
+            spacing: 10
+            visible: false
+            opacity: 0
+
+            Behavior on opacity { NumberAnimation { duration: 200 } }
+
+            onVisibleChanged: {
+                if(visible) {
+                    activationInput.forceActiveFocus()
+                    activationInput.cursorPosition = 0
+                    opacity = 1
+                } else {
+                    activationInput.focus = false
+                    opacity = 0
+                }
+            }
+
+            GCText {
+                id: activationInstruction
+                fontSize: regularSize
+                color: "black"
+                style: Text.Outline
+                styleColor: "white"
+                horizontalAlignment: Text.AlignHCenter
+                width: parent.width
+                wrapMode: TextEdit.WordWrap
+                text: qsTr("On <a href='http://gcompris.net'>http://gcompris.net</a> " +
+                           "you will find the instructions to obtain an activation code.")
+                Component.onCompleted: ApplicationInfo.isDownloadAllowed ?
+                                           linkActivated.connect(Qt.openUrlExternally) : null
+            }
+
+            TextInput {
+                id: activationInput
+                width: parent.width
+                focus: true
+                font.weight: Font.DemiBold
+                font.pointSize: ApplicationSettings.baseFontSize
+                                + 14 * ApplicationInfo.fontRatio
+                color: 'black'
+                horizontalAlignment: Text.AlignHCenter
+                inputMask: '>HHHH-HHHH-HHHH;#'
+                text: ApplicationSettings.codeKey
+                onTextChanged: {
+                    var code = text.replace(/-/g,'')
+                    var codeValidity = ApplicationSettings.checkActivationCode(code);
+                    switch (codeValidity) {
+                    case 0:
+                        activationMsg.text = qsTr('Enter your activation code');
+                        break;
+                    case 1:
+                        activationMsg.text = qsTr('Sorry, your code is too old for this version of GCompris');
+                        break;
+                    case 2:
+                        activationMsg.text = qsTr('You code is valid, thanks a lot for your support');
+                        activationCodeEntry.visible = false
+                        ApplicationSettings.codeKey = code
+                        break;
+                    }
+                }
+            }
+
+            GCText {
+                id: activationMsg
+                width: parent.width
+                color: "black"
+                fontSize: regularSize
+                horizontalAlignment: TextInput.AlignHCenter
+                wrapMode: TextEdit.WordWrap
             }
         }
 
@@ -393,7 +477,6 @@ Item {
 
         }
     }
-
 
     property bool showLockedActivities: ApplicationSettings.showLockedActivities
     property bool isAudioVoicesEnabled: ApplicationSettings.isAudioVoicesEnabled

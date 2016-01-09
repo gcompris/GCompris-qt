@@ -35,5 +35,9 @@
 #define COMPRESSED_AUDIO "@COMPRESSED_AUDIO@"
 /* Download Allowed */
 #define DOWNLOAD_ALLOWED "@WITH_DOWNLOAD@"
+/* Date at which GCompris has been built */
+#define BUILD_DATE "@BUILD_DATE@"
+/* Type of activation system */
+#define ACTIVATION_MODE "@ACTIVATION_MODE@"
 
 #endif // GCOMPRIS_CONFIG_H
