@@ -34,6 +34,10 @@ Image {
 
     function select() {
         mouseArea.enabled = false
+        if(Activity.hasWon) {
+            return
+        }
+
         if(question === Activity.getCurrentTextQuestion()) {
             particles.burst(40)
             animWin.start()
