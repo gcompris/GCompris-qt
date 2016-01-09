@@ -86,7 +86,8 @@ Item {
             return
 
         if(word.mode === 'letter') {
-            unmatchedIndex = c.length
+            // Only highlight letter if it is the good one
+            unmatchedIndex = text === c ? c.length : 0
             return (text === c)
         } else {
             var chars = text.split("");
