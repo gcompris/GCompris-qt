@@ -28,7 +28,11 @@ import "babymatch.js" as Activity
 ActivityBase {
     id: activity
 
-    property string url: "qrc:/gcompris/src/activities/babymatch/resource/"
+    // In most cases, these 3 are the same.
+    // But for imageName for example, we reuse the images of babymatch, so we need to differentiate them
+    property string imagesUrl: boardsUrl
+    property string soundsUrl: boardsUrl
+    property string boardsUrl: "qrc:/gcompris/src/activities/babymatch/resource/"
     property int levelCount: 7
     property bool answerGlow: true	//For highlighting the answers
     property bool displayDropCircle: true	//For displaying drop circles
@@ -74,7 +78,7 @@ ActivityBase {
             asynchronous: false
         }
 
-        onStart: { Activity.start(items, url, levelCount, answerGlow, displayDropCircle) }
+        onStart: { Activity.start(items, imagesUrl, soundsUrl, boardsUrl, levelCount, answerGlow, displayDropCircle) }
         onStop: { Activity.stop() }
 
         DialogHelp {
@@ -207,7 +211,7 @@ ActivityBase {
                         id: piecesDelegate
                         Image {
                             id: shapeBackground
-                            source: Activity.url + imgName
+                            source: Activity.imagesUrl + imgName
                             x: posX * backgroundImage.width - width / 2
                             y: posY * backgroundImage.height - height / 2
 

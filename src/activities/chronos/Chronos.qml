@@ -29,6 +29,6 @@ Babymatch {
     onStart: focus = true
     onStop: {}
 
-    url: "qrc:/gcompris/src/activities/chronos/resource/"
+    boardsUrl: "qrc:/gcompris/src/activities/chronos/resource/"
     levelCount: 6
 }
