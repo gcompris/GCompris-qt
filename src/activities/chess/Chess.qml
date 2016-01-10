@@ -295,11 +295,8 @@ ActivityBase {
                         }
                     }
                     onReleased: {
-                        if(piece.Drag.target) {
-                            if(items.from != -1) {
-                                Activity.moveTo(items.from, piece.Drag.target.pos)
-                            }
-                        } else {
+                        // If no target or move not possible, we reset the position
+                        if(!piece.Drag.target || (items.from != -1 && !Activity.moveTo(items.from, piece.Drag.target.pos))) {
                             var pos = parent.pos
                             // Force recalc of the old x,y position
                             parent.pos = -1

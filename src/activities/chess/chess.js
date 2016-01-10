@@ -224,6 +224,7 @@ function moveTo(from, to) {
         // Probably a check makes the move is invalid
         updateMessage(move)
     }
+    return move.ok
 }
 
 function undo() {
