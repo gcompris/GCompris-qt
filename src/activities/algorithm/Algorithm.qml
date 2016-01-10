@@ -228,7 +228,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextLevel)
+            Component.onCompleted: win.connect(Activity.nextSubLevel)
         }
 
         Score {

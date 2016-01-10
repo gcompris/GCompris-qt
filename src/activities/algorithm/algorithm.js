@@ -92,7 +92,7 @@ var sample = [[[0,1,0,1,0,1,0,1],[0,1,1,0,0,1,1,0],[1,1,0,0,0,0,1,1],[1,0,0,1,0,
               [[0,1,2,3,0,1,2,0],[0,1,2,3,1,2,3,1],[0,1,2,3,2,1,3,1],[0,1,2,3,3,1,2,1]],//4
               [[0,1,2,3,1,2,3,0],[0,1,2,3,2,3,0,1],[0,1,2,3,3,0,1,2],[0,1,2,3,3,0,1,2]],//5
               [[0,1,2,3,3,1,2,0],[0,1,2,3,0,2,1,3],[0,1,2,3,2,3,1,0],[0,1,2,3,2,1,3,0]],//6
-	      [[0,1,2,3,3,0,1,1],[0,1,2,3,2,2,3,2],[0,1,2,3,1,1,0,3],[0,1,2,3,1,2,3,2]]]//7
+              [[0,1,2,3,3,0,1,1],[0,1,2,3,2,2,3,2],[0,1,2,3,1,1,0,3],[0,1,2,3,1,2,3,2]]]//7
 var numberOfLevel = sample.length
 
 function setUp(){
@@ -155,16 +155,10 @@ function clickHandler(id){
         items.answer.model = tempIndex
 
         if(choiceCount == max){
-            choiceCount = matchesVisible
-            items.currentSubLevel++
-            if(items.currentSubLevel == items.nbSubLevel) { // increment level after 3 successful games
-                items.currentSubLevel-- // Don't display 4/3
+            if(items.currentSubLevel+1 === items.nbSubLevel)
                 items.bonus.good("tux")
-            } else {
+            else
                 items.bonus.good("flower")
-                items.bonus.isWin = false
-                setUp()
-            }
         }
         return 1
     } else { // Wrong answer, try again
@@ -180,6 +174,15 @@ function nextLevel() {
     initLevel();
 }
 
+function nextSubLevel() {
+    choiceCount = matchesVisible
+    items.currentSubLevel++
+    if (items.currentSubLevel === items.nbSubLevel) {// increment level after 3 successful games
+        nextLevel()
+    }
+    setUp()
+}
+
 
 function previousLevel() {
     if(--currentLevel < 0) {
@@ -188,4 +191,3 @@ function previousLevel() {
     items.currentSubLevel = 0;
     initLevel();
 }
-
