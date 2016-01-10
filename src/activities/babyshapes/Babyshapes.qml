@@ -29,6 +29,6 @@ Babymatch {
     onStart: focus = true
     onStop: {}
 
-    url: "qrc:/gcompris/src/activities/babyshapes/resource/"
+    boardsUrl: "qrc:/gcompris/src/activities/babyshapes/resource/"
     levelCount: 7
 }

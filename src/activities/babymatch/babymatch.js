@@ -28,16 +28,20 @@ var currentSubLevel = 0
 var numberOfLevel
 var numberOfSubLevel
 var items
-var url
+var imagesUrl
+var soundsUrl
+var boardsUrl
 var glowEnabled
 var glowEnabledDefault
 var spots = []
 var showText = []
 var displayDropCircle
 
-function start(items_, url_, levelCount_, answerGlow_, displayDropCircle_) {
+function start(items_, imagesUrl_, soundsUrl_, boardsUrl_, levelCount_, answerGlow_, displayDropCircle_) {
     items = items_
-    url = url_
+    imagesUrl = imagesUrl_
+    soundsUrl = soundsUrl_
+    boardsUrl = boardsUrl_
     numberOfLevel = levelCount_
     glowEnabledDefault = answerGlow_
     displayDropCircle = displayDropCircle_
@@ -56,7 +60,7 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel
-    var filename = url + "board" + "/" + "board" + currentLevel + "_" + currentSubLevel + ".qml"
+    var filename = boardsUrl + "board" + "/" + "board" + currentLevel + "_" + currentSubLevel + ".qml"
     items.dataset.source = filename
     var levelData = items.dataset.item
     
@@ -136,7 +140,7 @@ function initLevel() {
                                                         levelData.levels[i].toolTipText.split('|')[1] :
                                                         levelData.levels[i].toolTipText),
                 "pressSound": levelData.levels[i].soundFile == undefined ? 
-							  "qrc:/gcompris/src/core/resource/sounds/bleep.wav" : url + levelData.levels[i].soundFile
+							  "qrc:/gcompris/src/core/resource/sounds/bleep.wav" : soundsUrl + levelData.levels[i].soundFile
             });
 
             spots[j++] = dropItemComponent.createObject(
@@ -159,7 +163,7 @@ function initLevel() {
         //Create static background pieces
         else {
             if(levelData.levels[i].type === "SHAPE_BACKGROUND_IMAGE") {
-                items.backgroundImage.source = url + levelData.levels[i].pixmapfile
+                items.backgroundImage.source = imagesUrl + levelData.levels[i].pixmapfile
                 if(levelData.levels[i].width)
                     items.backgroundImage.sourceSize.width = levelData.levels[i].width
                 if(levelData.levels[i].height)

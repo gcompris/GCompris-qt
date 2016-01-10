@@ -85,7 +85,7 @@ Item {
             width: smallWidth
             height: smallHeight
             fillMode: Image.PreserveAspectFit
-            source: Activity.url + imgName
+            source: Activity.imagesUrl + imgName
 
             property double smallWidth: Activity.glowEnabled ? widthInColumn * 1.1 : widthInColumn
             property double smallHeight: Activity.glowEnabled ? heightInColumn * 1.1 : heightInColumn

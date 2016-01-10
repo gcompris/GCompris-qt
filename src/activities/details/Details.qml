@@ -29,7 +29,7 @@ Babymatch {
     onStart: focus = true
     onStop: {}
 
-    url: "qrc:/gcompris/src/activities/details/resource/"
+    boardsUrl: "qrc:/gcompris/src/activities/details/resource/"
     answerGlow: false
     levelCount: 21
     displayDropCircle: false

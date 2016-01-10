@@ -29,7 +29,7 @@ Babymatch {
     onStart: focus = true
     onStop: {}
 
-    url: "qrc:/gcompris/src/activities/geography/resource/"
+    boardsUrl: "qrc:/gcompris/src/activities/geography/resource/"
     levelCount: 11
     answerGlow: false
 }
