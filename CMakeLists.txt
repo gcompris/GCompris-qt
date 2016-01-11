@@ -222,11 +222,11 @@ endif()
 option(WITH_KIOSK_MODE "Set the kiosk mode by default" OFF)
 
 if(WIN32)
-  set(COMPRESSED_AUDIO "ac3" CACHE STRING "Compressed Audio format [ogg|aac|ac3]")
+  set(COMPRESSED_AUDIO "mp3" CACHE STRING "Compressed Audio format [ogg|aac|mp3]")
 elseif(APPLE)
-  set(COMPRESSED_AUDIO "aac" CACHE STRING "Compressed Audio format [ogg|aac|ac3]")
+  set(COMPRESSED_AUDIO "aac" CACHE STRING "Compressed Audio format [ogg|aac|mp3]")
 else()
-  set(COMPRESSED_AUDIO "ogg" CACHE STRING "Compressed Audio format [ogg|aac|ac3]")
+  set(COMPRESSED_AUDIO "ogg" CACHE STRING "Compressed Audio format [ogg|aac|mp3]")
 endif()
 
 file(GLOB_RECURSE OGG_FILES ${CMAKE_CURRENT_SOURCE_DIR}/src/ "*.ogg")
@@ -241,11 +241,26 @@ foreach(OGG_FILE ${OGG_FILES})
     #COMMAND ffmpeg -v warning -i ${OGG_FILE} -acodec aac -strict -2 ${AAC_FILE}
     )
   list(APPEND AAC_FILES ${AAC_FILE})
+
+  # This should only replace the extension
+  string(REGEX REPLACE "ogg$" "mp3" MP3_FILE ${OGG_FILE})
+  add_custom_command(
+    OUTPUT ${MP3_FILE}
+    # Put the good line depending on your installation
+    #COMMAND avconv -v warning -i ${OGG_FILE} -acodec mp3 ${MP3_FILE}
+    COMMAND ffmpeg -v warning -i ${OGG_FILE} -acodec mp3 -strict -2 ${AAC_FILE}
+    )
+  list(APPEND MP3_FILES ${MP3_FILE})
 endforeach()
 
 add_custom_target(
   createAacFromOgg
   DEPENDS ${AAC_FILES}
+  )
+
+add_custom_target(
+  createMp3FromOgg
+  DEPENDS ${MP3_FILES}
   )
 
 set(ARCHIVE_NAME ${CMAKE_PROJECT_NAME}-${GCOMPRIS_VERSION})
