@@ -164,6 +164,7 @@ Item {
                 }
                 i++
             }
+            
             if (groupEmpty) {
                 displayedGroup[currentDisplayedGroup] = false
                 previousNavigation = 0
@@ -260,7 +261,7 @@ Item {
             Image {
                 id: next
                 visible: model.count > view.nbItemsByGroup && view.nextNavigation != 0 && view.currentDisplayedGroup < 
-                         view.nbDisplayedGroup - 1
+						 view.nbDisplayedGroup - 1
                 source:"qrc:/gcompris/src/core/resource/bar_next.svg"
                 sourceSize.width: view.iconSize * 0.35
                 fillMode: Image.PreserveAspectFit
