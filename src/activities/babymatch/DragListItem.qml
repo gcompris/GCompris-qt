@@ -104,6 +104,16 @@ Item {
             property bool pressedOnce
             property bool parentIsTile : parent == tile ? true : false
 
+            onFullWidthChanged: correctDroppedImageSize()
+            onFullHeightChanged: correctDroppedImageSize()
+
+            function correctDroppedImageSize() {
+                if(tileImage.dropStatus == 0 || tileImage.dropStatus == 1) {
+                    tileImage.width = tileImage.fullWidth
+                    tileImage.height = tileImage.fullHeight
+                }
+            }
+
             function imageRemove() {
                 dropStatus = -1
                 if(backgroundImage.source == "")
