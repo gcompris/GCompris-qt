@@ -127,8 +127,8 @@ ActivityBase {
         }
 
         function playNote(index) {
-            activity.audioEffects.play(items.url +
-                                       'xylofon_son' + (index + 1) + '.ogg')
+            activity.audioEffects.play(ApplicationInfo.getAudioFilePath(items.url +
+                                       'xylofon_son' + (index + 1) + '.$CA'))
         }
 
         Timer {
@@ -223,7 +223,7 @@ ActivityBase {
         }
 
         function repeat() {
-            activity.audioEffects.play(items.url + 'xylofon_melody.ogg')
+            activity.audioEffects.play(ApplicationInfo.getAudioFilePath(items.url + 'xylofon_melody.$CA'))
             items.questionToPlay = items.question.slice()
             items.answer = []
             questionPlayer.start()
