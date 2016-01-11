@@ -100,6 +100,8 @@ Item {
         property bool showGlow: false
         property var displayedGroup: []
         property alias ok: ok
+
+        onNbDisplayedGroupChanged: correctDisplayedGroup()
         
         add: Transition {
             NumberAnimation { property: "opacity"; from: 0; to: 1.0; duration: 400 }
@@ -108,6 +110,27 @@ Item {
 
         move: Transition {
             NumberAnimation { properties: "x,y"; duration: 400; easing.type: Easing.OutBounce }
+        }
+
+        // For correcting values of Displayed Groups when height or width is changed
+        function correctDisplayedGroup() {
+            if (nbDisplayedGroup > 0) {
+                for(var i = 0 ; i < nbDisplayedGroup ; i++) {
+                    var groupEmpty = true
+                    for(var j = 0 ; j < nbItemsByGroup, i*nbItemsByGroup + j < model.count ; j++) {
+                        if (repeater.itemAt(i*nbItemsByGroup + j).dropStatus < 0) {
+                            groupEmpty = false
+                            break
+                        }
+                    }
+                    if (groupEmpty)
+                        displayedGroup[i] = false
+                    else
+                        displayedGroup[i] = true
+                }
+                view.refreshLeftWidget()
+                view.checkDisplayedGroup()
+            }
         }
 
         //For setting navigation buttons
@@ -141,7 +164,6 @@ Item {
                 }
                 i++
             }
-            
             if (groupEmpty) {
                 displayedGroup[currentDisplayedGroup] = false
                 previousNavigation = 0
@@ -238,7 +260,7 @@ Item {
             Image {
                 id: next
                 visible: model.count > view.nbItemsByGroup && view.nextNavigation != 0 && view.currentDisplayedGroup < 
-						 view.nbDisplayedGroup - 1
+                         view.nbDisplayedGroup - 1
                 source:"qrc:/gcompris/src/core/resource/bar_next.svg"
                 sourceSize.width: view.iconSize * 0.35
                 fillMode: Image.PreserveAspectFit
