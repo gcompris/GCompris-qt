@@ -45,14 +45,13 @@ uint ApplicationSettings::checkActivationCode(const QString code) {
             code.mid(0, 4).toUInt(&ok, 16) ^
             code.mid(4, 4).toUInt(&ok, 16) ^
             0xCECA;
-    qDebug() << expectedCrc << " " << crc;
+
     ok = (expectedCrc == crc && year < 2100 && month <= 12);
     if(!ok)
         // Bad crc, year or month
         return 0;
 
     // Check date is under 2 years
-    qDebug() << year * 100 + month + 200 << " " << atoi(BUILD_DATE);
     ok = year * 100 + month + 200 >= atoi(BUILD_DATE);
     return(ok ? 2 : 1);
 }
