@@ -234,8 +234,23 @@ Item {
             id: enableAutomaticDownloadsBox
             checked: isAutomaticDownloadsEnabled
             text: qsTr("Enable automatic downloads/updates of sound files")
+            visible: ApplicationInfo.isDownloadAllowed
             onCheckedChanged: {
                 isAutomaticDownloadsEnabled = checked;
+            }
+        }
+
+        /* Technically wordset config is a string that holds the wordset name or '' for the
+         * internal wordset. But as we support only internal and words its best to show the
+         * user a boolean choice.
+         */
+        GCDialogCheckBox {
+            id: wordsetBox
+            checked: wordset
+            text: qsTr("Use external large word image set")
+            visible: ApplicationInfo.isDownloadAllowed
+            onCheckedChanged: {
+                wordset = checked ? 'data2/words/words.rcc' : '';
             }
         }
 
@@ -245,19 +260,6 @@ Item {
             text: qsTr("The activity section menu is visible")
             onCheckedChanged: {
                 sectionVisible = checked;
-            }
-        }
-
-        /* Texchnically wordset config is a string that holds the wordset name or '' for the
-         * internal wordset. But as we support only internal and words its best to show the
-         * user a boolean choice.
-         */
-        GCDialogCheckBox {
-            id: wordsetBox
-            checked: wordset
-            text: qsTr("Use external large word image set")
-            onCheckedChanged: {
-                wordset = checked ? 'data2/words/words.rcc' : '';
             }
         }
 
