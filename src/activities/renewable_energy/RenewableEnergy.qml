@@ -314,7 +314,8 @@ ActivityBase {
                 radius: 5
                 color: items.consumeColor
                 anchors {
-                    top: parent.bottom
+                    top: parent.top
+                    topMargin: parent.height * 0.1
                     left: parent.right
                 }
                 GCText {
