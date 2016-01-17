@@ -196,8 +196,8 @@ if(BUILD_STANDALONE)
   install(DIRECTORY ${_qt_qml_path}/QtGraphicalEffects DESTINATION ${_qt_qml_destdir})
 
   # Fix for Linux 'make package' that fails to link with libicu
-  if(UNIX AND NOT APPLE AND NOT SAILFISHOS)
-    add_library( libicudata SHARED IMPORTED )
+  if(UNIX AND NOT APPLE AND NOT SAILFISHOS AND NOT ANDROID)
+      add_library( libicudata SHARED IMPORTED )
     set_target_properties( libicudata PROPERTIES IMPORTED_LOCATION ${Qt5_DIR}/../../libicudata.so.53 )
     add_library( libicui18n SHARED IMPORTED )
     set_target_properties( libicui18n PROPERTIES IMPORTED_LOCATION ${Qt5_DIR}/../../libicui18n.so.53 )
