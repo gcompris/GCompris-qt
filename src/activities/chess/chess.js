@@ -273,6 +273,16 @@ function randomMove() {
         computerMove()
         return
     }
+    // Disable random move if the situation is too bad for the user
+    // This avoid having the computer playing bad against a user
+    // with too few pieces making the game last too long
+    var score = getScore()
+    console.log(score[0] / score[1])
+    if(score[0] / score[1] < 0.7) {
+        computerMove()
+        return
+    }
+
     // At level 2 we let the computer play 20% of the time
     // and 80% of the time we make a random move.
     if(Math.random() < currentLevel / (numberOfLevel - 1)) {
@@ -308,5 +318,25 @@ function showPossibleMoves(from) {
             items.squares.getSquareAt(pos)['acceptMove'] = true
         }
     }
+}
+
+// Calculate the score for black and white
+// Count the number of pieces with each piece having a given weight
+// Piece pawn knight bishop rook queen
+// Value 1    3 	 3      5    9
+// @return [white, black]
+function getScore() {
+    var lut = {2: 1, 4: 5, 6: 3, 8: 3, 12: 9}
+    var white = 0
+    var black = 0
+    for(var i=0; i < state['board'].length; ++i) {
+        var score = lut[state['board'][i] & 0xFE]
+        if(score)
+            if(state['board'][i] & 0x01)
+                black += score
+            else
+                white += score
+    }
+    return [white, black]
 }
 
