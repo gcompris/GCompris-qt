@@ -1,15 +1,21 @@
 MacOSX build instruction.
 
+mkdir rcc
+mkdir build
+cd build
+cmake ..
+make createAacFromOgg
+cp bin/gcompris-qt.app/Contents/Resources/rcc/*.rcc ../rcc/
+
 copy the following files at the root dir
 cp config.h ../..
 cp gcompris.pro ../..
 cp gcompris.icns ../..
 
 At root dir create the directory
-mkdir rcc
 mkdir translations
 
-And fill copy the appropriate files in them.
+And fill copy the appropriate qm files in them.
 
 Create a build directory:
 mkdir build-macosx
