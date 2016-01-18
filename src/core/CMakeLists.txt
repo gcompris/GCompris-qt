@@ -123,6 +123,10 @@ if(BUILD_STANDALONE)
       mediaservice/${_lib_prefix}qavfcamera)
   endif()
   
+  if(APPLE)
+    list(APPEND _qt_plugins2 platforms/${_lib_prefix}qcocoa)
+  endif()
+
   set(_qml_plugins
     QtQuick/Window.2/${_lib_prefix}windowplugin
     QtQuick/Particles.2/${_lib_prefix}particlesplugin
