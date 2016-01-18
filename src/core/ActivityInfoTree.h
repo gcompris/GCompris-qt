@@ -46,6 +46,7 @@ public:
 						const QDir &menuDir, const QString &menuFile);
 	void sortByDifficulty();
 	void sortByName();
+    Q_INVOKABLE void beginsearch();
 
 protected slots:
     Q_INVOKABLE void filterByTag(const QString &tag);

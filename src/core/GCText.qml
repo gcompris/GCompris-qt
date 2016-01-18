@@ -124,6 +124,8 @@ Text {
      */
     readonly property int pointSize: font.pointSize
 
+    property string  fontfamily:GCSingletonFontLoader.fontLoader.name
+
     font.pointSize: ((fixFontSize ? 0 : ApplicationSettings.baseFontSize)
                       + fontSize) * ApplicationInfo.fontRatio
     font.family: GCSingletonFontLoader.fontLoader.name

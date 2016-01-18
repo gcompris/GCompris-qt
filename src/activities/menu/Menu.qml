@@ -23,6 +23,8 @@ import "../../core"
 import GCompris 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
 import QtGraphicalEffects 1.0
+import QtQuick.Controls 1.2
+
 
 /**
  * GCompris' top level menu screen.
@@ -64,6 +66,8 @@ ActivityBase {
                 focus = true;
         }
     }
+
+
 
     onDisplayDialog: pageView.push(dialog)
 
@@ -114,6 +118,10 @@ ActivityBase {
             icon: menuActivity.url + "strategy.svg",
             tag: "strategy"
         },
+        {
+            icon: menuActivity.url + "search-icon.png",
+            tag: "search"
+        }
     ]
     property string currentTag: sections[0].tag
     /// @endcond
@@ -159,6 +167,7 @@ ActivityBase {
 
         property var currentActiveGrid: activitiesGrid
         property bool keyboardMode: false
+        property int defaultheight:  activitiesGrid.height
         Keys.onPressed: {
             if (event.modifiers === Qt.ControlModifier &&
                     event.key === Qt.Key_S) {
@@ -185,13 +194,39 @@ ActivityBase {
             id: section
             model: sections
             width: horizontal ? main.width : sectionCellWidth
-            height: horizontal ? sectionCellHeight : main.height - bar.height
+            height: horizontal ? (sectionCellHeight) : main.height - bar.height
             x: ApplicationSettings.sectionVisible ? section.initialX : -sectionCellWidth
             y: ApplicationSettings.sectionVisible ? section.initialY : -sectionCellHeight
             cellWidth: sectionCellWidth
             cellHeight: sectionCellHeight
             interactive: false
             keyNavigationWraps: true
+
+            states:
+                [
+                    State
+                    {
+                        name: "resize"
+                        PropertyChanges
+                        {
+                            target: section
+                            height:horizontal ? (sectionCellHeight + searchtext.height) : main.height - bar.height
+
+                        }
+                    },
+                    State
+                    {
+                        name: "default"
+                        PropertyChanges
+                        {
+                            target:section
+                            height: horizontal ? (sectionCellHeight) : main.height - bar.height
+
+
+                        }
+                    }
+
+                ]
 
             property int initialX: 4
             property int initialY: 4
@@ -208,6 +243,7 @@ ActivityBase {
                         sourceSize.height: sectionIconHeight
                         anchors.margins: 5
                         anchors.horizontalCenter: parent.horizontalCenter
+
                     }
 
                     ParticleSystemStarLoader {
@@ -223,12 +259,33 @@ ActivityBase {
                     }
 
                     function selectCurrentItem() {
-                        particles.burst(10)
-                        ActivityInfoTree.filterByTag(modelData.tag)
-                        ActivityInfoTree.filterLockedActivities()
-                        ActivityInfoTree.filterEnabledActivities()
-                        menuActivity.currentTag = modelData.tag
-                        section.currentIndex = index
+                        if(modelData.tag === "search")
+                        {
+                            section.state = "resize"
+                            searchtext.visible = true;
+                            warningOverlay.active = false
+                            ActivityInfoTree.beginsearch();
+                            console.log(defaultheight," ",bar.height," ",main.height)
+
+                        }
+                        else
+                        {
+                            particles.burst(10)
+                            ActivityInfoTree.filterByTag(modelData.tag)
+                            ActivityInfoTree.filterLockedActivities()
+                            ActivityInfoTree.filterEnabledActivities()
+                            menuActivity.currentTag = modelData.tag
+                            section.currentIndex = index
+                            searchtext.visible = false
+                            section.state = "default"
+                            if(ActivityInfoTree.menuTree.length === 0 && modelData.tag === "favorite")
+                               warningOverlay.active = true
+                            else
+                                warningOverlay.active = false
+
+
+                        }
+
                     }
                 }
             }
@@ -249,6 +306,8 @@ ActivityBase {
                 Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
         }
+
+
 
         // Activities
         property int iconWidth: 120 * ApplicationInfo.ratio
@@ -285,6 +344,7 @@ ActivityBase {
                                "sun on each activity top right.")
                 }
                 Rectangle {
+
                     anchors.fill: instructionTxt
                     anchors.margins: -6
                     z: 1
@@ -304,8 +364,9 @@ ActivityBase {
         GridView {
             id: activitiesGrid
             layer.enabled: true
+
             anchors {
-                top: horizontal ? section.bottom : parent.top
+                top: horizontal ? (section.bottom ) : parent.top
                 bottom: bar.top
                 left: horizontal ? parent.left : section.right
                 margins: 4
@@ -414,6 +475,7 @@ ActivityBase {
                     MouseArea {
                         anchors.fill: parent
                         onClicked: favorite = !favorite
+
                     }
                 }
 
@@ -460,6 +522,77 @@ ActivityBase {
             }
 
         }
+        Rectangle
+        {
+            id: searchtext
+            width: parent.width/3
+            height: parent.height/15
+
+            visible:  false
+            anchors
+            {
+
+               bottom : activitiesGrid.top
+
+            }
+            x: (parent.width/2) - (searchtext.width/2)
+
+           opacity: 0.5
+           radius: 10
+           border.width: 2
+           border.color: "black"
+
+           gradient: Gradient {
+//               GradientStop { position: 0.0; color: "#E5E593" }
+//               GradientStop { position: 0.6; color: "#DAD984" }
+//               GradientStop { position: 0.7; color: "#C2BF66" }
+//               GradientStop { position: 0.9; color: "#ABA648" }
+//               GradientStop { position: 1.0; color: "#9F9939" }
+               GradientStop { position: 0.3; color: "#000" }
+               GradientStop { position: 0.9; color: "#666" }
+               GradientStop { position: 1.0; color: "#AAA" }
+
+           }
+
+            TextField
+            {
+                id : input
+                anchors.fill: parent
+                textColor: "black"
+                font.pixelSize: 28
+                font.bold: true
+                font.family: "Helvetica"
+                opacity: 0.5
+            }
+
+
+        }
+
+//        TextField
+//        {
+//            id: searchtext
+//            text: ""
+//            visible: false
+//            width: parent.width/3
+//            height: parent.height/15
+//            anchors
+//            {
+////                top: horizontal ? (section.bottom) : parent.top
+//                bottom : activitiesGrid.top
+
+//            }
+//            x: (parent.width/2) - (searchtext.width/2)
+//            opacity: 0.5
+//            radius: 10
+//            border.width: 2
+//            border.color: "black"
+//            gradient: Gradient {
+//                GradientStop { position: 0.0; color: "#000" }
+//                GradientStop { position: 0.9; color: "#666" }
+//                GradientStop { position: 1.0; color: "#AAA" }
+
+
+//        }
 
         Bar {
             id: bar
