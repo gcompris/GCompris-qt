@@ -237,8 +237,8 @@ foreach(OGG_FILE ${OGG_FILES})
   add_custom_command(
     OUTPUT ${AAC_FILE}
     # Put the good line depending on your installation
-    COMMAND avconv -v warning -i ${OGG_FILE} -acodec libvo_aacenc ${AAC_FILE}
-    #COMMAND ffmpeg -v warning -i ${OGG_FILE} -acodec aac -strict -2 ${AAC_FILE}
+    #COMMAND avconv -v warning -i ${OGG_FILE} -acodec libvo_aacenc ${AAC_FILE}
+    COMMAND ffmpeg -v warning -i ${OGG_FILE} -acodec aac -strict -2 ${AAC_FILE}
     )
   list(APPEND AAC_FILES ${AAC_FILE})
 
