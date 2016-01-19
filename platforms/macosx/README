@@ -1,37 +1,14 @@
-MacOSX build instruction.
+Look at build.sh to build it.
 
-mkdir rcc
-mkdir build
-cd build
-cmake ..
-make createAacFromOgg
-cp bin/gcompris-qt.app/Contents/Resources/rcc/*.rcc ../rcc/
+For now there is a mix of CMake build and QMake build.
 
-copy the following files at the root dir
-cp config.h ../..
-cp gcompris.pro ../..
-cp gcompris.icns ../..
-
-At root dir create the directory
-mkdir translations
-
-And fill copy the appropriate qm files in them.
-
-Create a build directory:
-mkdir build-macosx
-cd build-macosx
-~/Qt/5.5/clang_64/bin/qmake -config release ../gcompris.pro
-make
-
-codesign --deep -s "3rd Party Mac Developer Application: Bruno Coudoin" --entitlements ../platforms/macosx/gcompris.entitlements gcompris.app
-
-/Users/bdoin/Qt/5.5/clang_64//bin/macdeployqt gcompris.app  -executable=/Users/bdoin/Projets/gcompris/build-macosx/gcompris.app/Contents/MacOS/gcompris  -always-overwrite -qmldir=/Users/bdoin/Projets/gcompris/src  -codesign="3rd Party Mac Developer Application: Bruno Coudoin" -verbose=2
-
-codesign --deep -s "3rd Party Mac Developer Application: Bruno Coudoin" gcompris.app/Contents/Resources/translations/*
-codesign --deep -s "3rd Party Mac Developer Application: Bruno Coudoin" gcompris.app/Contents/Resources/rcc/*
-
-make product
+The CMake build creates the rcc only.
 
 To test it:
+open gcompris.app
+
+This test the installer part but not sure where it goes and how to run it.
 sudo installer -store -pkg gcompris.pkg -target /
+
+To upload it, create a new version on itunes connect, then use the 'Application Loader' app to upload it.
 
