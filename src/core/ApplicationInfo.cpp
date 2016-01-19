@@ -24,6 +24,7 @@
 
 #include "ApplicationInfo.h"
 
+#include <QtQml>
 #include <QtMath>
 #include <QUrl>
 #include <QUrlQuery>
