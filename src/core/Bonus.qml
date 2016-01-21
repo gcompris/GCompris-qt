@@ -107,7 +107,6 @@ Image {
     fillMode: Image.Pad
     z: 1000
     sourceSize.width: parent.width * 0.5
-    sourceSize.height: parent.height * 0.7
 
     /**
      * Triggers win feedback.
