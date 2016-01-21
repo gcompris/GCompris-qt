@@ -107,7 +107,7 @@ Image {
     anchors.margins: 50 * ApplicationInfo.ratio
     fillMode: Image.PreserveAspectFit
     z: 1000
-    sourceSize.width: parent.width
+    sourceSize.width: parent.width * 0.5
 
     /**
      * Triggers win feedback.
