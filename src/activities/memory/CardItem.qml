@@ -66,6 +66,7 @@ Flipable {
 
     back: Image {
         source: card.pairData.emptyCard
+        sourceSize.width: parent.width
         width: parent.width
         height: parent.height
         fillMode: Image.PreserveAspectFit
@@ -73,7 +74,6 @@ Flipable {
         Image {
             source: card.pairData.image
             sourceSize.width: parent.width
-            sourceSize.height: parent.height
             anchors.centerIn: parent
             fillMode: Image.PreserveAspectFit
         }
@@ -97,6 +97,7 @@ Flipable {
         height: parent.height
         fillMode: Image.PreserveAspectFit
         source: card.pairData.back
+        sourceSize.width: parent.width
         anchors.centerIn: parent
     }
 
