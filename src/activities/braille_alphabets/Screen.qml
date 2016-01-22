@@ -37,7 +37,7 @@ ActivityBase {
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
         source: Activity.url + "background.svg"
-        sourceSize.width: parent.width
+        sourceSize.width: Math.max(parent.width, parent.height)
         signal start
         signal stop
         Component.onCompleted: {

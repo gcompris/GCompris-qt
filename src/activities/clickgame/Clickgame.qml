@@ -38,7 +38,7 @@ ActivityBase {
         focus: true
         fillMode: Image.PreserveAspectCrop
         source: "qrc:/gcompris/src/activities/clickgame/resource/sea1.jpg"
-        sourceSize.width: parent.width
+        sourceSize.width: Math.max(parent.width, parent.height)
 
         Component.onCompleted: {
             activity.start.connect(start)

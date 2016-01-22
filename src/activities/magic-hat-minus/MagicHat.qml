@@ -38,7 +38,7 @@ ActivityBase {
         id: background
         anchors.fill: parent
         source: Activity.url + "background.svg"
-        sourceSize.width: parent.width
+        sourceSize.width: Math.max(parent.width, parent.height)
         fillMode: Image.PreserveAspectCrop
         property int starSize: Math.min(rightLayout.width / 12,
                                         background.height / 16)

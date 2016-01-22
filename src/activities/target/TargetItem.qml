@@ -29,10 +29,9 @@ Image {
     id: targetItem
     fillMode: Image.PreserveAspectCrop
     source: Activity.url + "target_background.svg"
-//    sourceSize.width: parent.width * zoom
     width: parent.width * zoom
     height: parent.height * zoom
-    sourceSize.width: 2048
+    sourceSize.width: Math.max(parent.width, parent.height) * zoom
     anchors.centerIn: parent
     
     property int zoom: 2

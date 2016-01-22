@@ -38,7 +38,7 @@ ActivityBase {
         id: background
         anchors.fill: parent
         fillMode: Image.PreserveAspectCrop
-        sourceSize.width: parent.width
+        sourceSize.width: Math.max(parent.width, parent.height)
         source: Activity.url + "hillside.svg"
         signal start
         signal stop

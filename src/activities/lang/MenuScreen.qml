@@ -33,7 +33,7 @@ Image {
     anchors.fill: parent
     fillMode: Image.PreserveAspectCrop
     source: Activity.baseUrl + "imageid-bg.svg"
-    sourceSize.width: parent.width
+    sourceSize.width: Math.max(parent.width, parent.height)
     opacity: 0
 
     property alias menuModel: menuModel
