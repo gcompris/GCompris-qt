@@ -34,7 +34,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         source: items.backgroundImg
-        sourceSize.width: parent.width
+        sourceSize.width: Math.max(parent.width, parent.height)
         fillMode: Image.PreserveAspectCrop
         signal start
         signal stop

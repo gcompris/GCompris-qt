@@ -49,8 +49,8 @@ ActivityBase {
         source: activity.dataSetUrl+"background.svg"
         fillMode: Image.PreserveAspectCrop
         anchors.fill: parent
-        sourceSize.width: parent.width
-        
+        sourceSize.width: Math.max(parent.width, parent.height)
+
         // system locale by default
         property string locale: "system"
                 

@@ -34,7 +34,7 @@ ActivityBase {
         id: background
         anchors.fill: parent
         source: items.url + 'xylofon_background.svg'
-        sourceSize.width: parent.width
+        sourceSize.width: Math.max(parent.width, parent.height)
         fillMode: Image.PreserveAspectCrop
 
         signal start

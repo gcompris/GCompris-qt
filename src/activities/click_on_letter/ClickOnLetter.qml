@@ -41,7 +41,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         source: Activity.url + "background.svg"
-        sourceSize.width: parent.width
+        sourceSize.width: Math.max(parent.width, parent.height)
         fillMode: Image.PreserveAspectCrop
         focus: true
 
@@ -212,7 +212,7 @@ ActivityBase {
             anchors.left: parent.left
             anchors.right: parent.right
             height: 15 * ApplicationInfo.ratio
-            sourceSize.width: parent.width
+            sourceSize.width: Math.max(parent.width, parent.height)
             anchors.bottomMargin: 13 * ApplicationInfo.ratio
         }
 

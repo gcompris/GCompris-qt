@@ -29,8 +29,8 @@ Image {
     anchors.fill: parent
     fillMode: Image.PreserveAspectCrop
     source: Activity.url + "intro_bg.svg"
-    sourceSize.width: parent.width
-    
+    sourceSize.width: Math.max(parent.width, parent.height)
+
     GCText {
         id: heading
         text: qsTr("Braille : Unlocking the Code")
