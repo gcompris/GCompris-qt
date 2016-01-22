@@ -47,7 +47,8 @@ ActivityBase {
     id: menuActivity
     focus: true
     activityInfo: ActivityInfoTree.rootMenu
-
+    objectName: "menu"
+    signal textchanged(string message)
     onBack: {
         pageView.pop(to);
         // Restore focus that has been taken by the loaded activity
@@ -161,8 +162,7 @@ ActivityBase {
         property int sectionCellHeight: sectionIconHeight * 1.1
 
         property var currentActiveGrid: activitiesGrid
-        property bool keyboardMode: false
-        property int defaultheight:  activitiesGrid.height
+        property bool keyboardMode: false 
         Keys.onPressed: {
             if (event.modifiers === Qt.ControlModifier &&
                     event.key === Qt.Key_S) {
@@ -178,7 +178,7 @@ ActivityBase {
         }
         Keys.onTabPressed: currentActiveGrid = ((currentActiveGrid == activitiesGrid) ?
                                                     section : activitiesGrid);
-        Keys.onEnterPressed: if(currentActiveGrid.currentItem) currentActiveGrid.currentItem.selectCurrentItem();
+        Keys.onEnterPressed:if(currentActiveGrid.currentItem) currentActiveGrid.currentItem.selectCurrentItem();
         Keys.onReturnPressed: if(currentActiveGrid.currentItem)  currentActiveGrid.currentItem.selectCurrentItem();
         Keys.onRightPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexRight();
         Keys.onLeftPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexLeft();
@@ -189,40 +189,21 @@ ActivityBase {
             id: section
             model: sections
             width: horizontal ? main.width : sectionCellWidth
-            height: horizontal ? (sectionCellHeight) : main.height - bar.height
+            height:
+            {
+               if(currentTag === "search")
+               {
+                   return horizontal ? (sectionCellHeight + searchbar.height) : main.height - bar.height
+               }
+               else
+                   return horizontal ? (sectionCellHeight) : main.height - bar.height
+            }
             x: ApplicationSettings.sectionVisible ? section.initialX : -sectionCellWidth
             y: ApplicationSettings.sectionVisible ? section.initialY : -sectionCellHeight
             cellWidth: sectionCellWidth
             cellHeight: sectionCellHeight
             interactive: false
-            keyNavigationWraps: true
-
-            states:
-                [
-                    State
-                    {
-                        name: "resize"
-                        PropertyChanges
-                        {
-                            target: section
-                            height:horizontal ? (sectionCellHeight + searchtext.height) : main.height - bar.height
-
-                        }
-                    },
-                    State
-                    {
-                        name: "default"
-                        PropertyChanges
-                        {
-                            target:section
-                            height: horizontal ? (sectionCellHeight) : main.height - bar.height
-
-
-                        }
-                    }
-
-                ]
-
+            keyNavigationWraps: true 
             property int initialX: 4
             property int initialY: 4
 
@@ -254,32 +235,30 @@ ActivityBase {
                     }
 
                     function selectCurrentItem() {
-                        if(modelData.tag === "search")
-                        {
-                            section.state = "resize"
-                            searchtext.visible = true;
-                            warningOverlay.active = false
-                            ActivityInfoTree.beginsearch();
-                            console.log(defaultheight," ",bar.height," ",main.height)
-
-                        }
-                        else
-                        {
-                            particles.burst(10)
-                            ActivityInfoTree.filterByTag(modelData.tag)
-                            ActivityInfoTree.filterLockedActivities()
-                            ActivityInfoTree.filterEnabledActivities()
-                            menuActivity.currentTag = modelData.tag
-                            section.currentIndex = index
-                            searchtext.visible = false
-                            section.state = "default"
-                            if(ActivityInfoTree.menuTree.length === 0 && modelData.tag === "favorite")
-                               warningOverlay.active = true
-                            else
-                                warningOverlay.active = false
 
 
-                        }
+                               if(modelData.tag === "search")
+                               {
+                                   section.currentIndex = index
+                                   menuActivity.currentTag = modelData.tag
+                                   searchbar.visible = true;
+                                   warningOverlay.active = false;
+                                   ActivityInfoTree.beginsearch(modelData.tag);
+                               }
+                               else
+                               {
+                                   particles.burst(10)
+                                   ActivityInfoTree.filterByTag(modelData.tag)
+                                   ActivityInfoTree.filterLockedActivities()
+                                   ActivityInfoTree.filterEnabledActivities()
+                                   menuActivity.currentTag = modelData.tag
+                                   section.currentIndex = index
+                                   searchbar.visible = false
+                                   if(ActivityInfoTree.menuTree.length === 0 && modelData.tag === "favorite")
+                                      warningOverlay.active = true
+                                   else
+                                       warningOverlay.active = false
+                               }
 
                     }
                 }
@@ -311,7 +290,6 @@ ActivityBase {
             horizontal ? background.width / Math.floor(background.width / iconWidth) :
                          (background.width - section.width) / Math.floor((background.width - section.width) / iconWidth)
         property int activityCellHeight: iconHeight * 1.5
-
         Loader {
             id: warningOverlay
             anchors {
@@ -361,11 +339,19 @@ ActivityBase {
             layer.enabled: true
 
             anchors {
-                top: horizontal ? (section.bottom ) : parent.top
+                top:
+                {
+                    if(menuActivity.currentTag === "search")
+                    {
+                        return horizontal ? (section.bottom ) : searchbar.bottom
+                    }
+                    else
+                        return horizontal ? (section.bottom ) : parent.top
+                }
                 bottom: bar.top
                 left: horizontal ? parent.left : section.right
                 margins: 4
-            }
+                }
             width: background.width
             cellWidth: activityCellWidth
             cellHeight: activityCellHeight
@@ -511,20 +497,68 @@ ActivityBase {
             }
 
         }
+
+
         Rectangle
         {
-            id: searchtext
-            width: parent.width/3
-            height: parent.height/15
+            id: searchbar
+            width:
+            {
+                if(horizontal)
+                    return parent.width/2
+                else
+                    return (parent.width -(section.width+10))
+            }
+
+            height:
+            {
+                if(horizontal)
+                    return parent.height/10
+                else
+                    return parent.height/17
+            }
 
             visible:  false
             anchors
             {
 
-               bottom : activitiesGrid.top
+               bottom :
+               {
+                   if(horizontal)
+                       return activitiesGrid.top
+
+
+               }
+               top:
+               {
+                   if(!horizontal)
+                       return parent.top
+               }
+               left:
+               {
+                   if(!horizontal)
+                       return section.right
+               }
+
+
+
 
             }
-            x: (parent.width/2) - (searchtext.width/2)
+            anchors.topMargin:
+            {
+                if(!horizontal)
+                    return 4
+            }
+            anchors.bottomMargin:
+            {
+                if(!horizontal)
+                    return 4
+            }
+
+
+            x: horizontal ? (parent.width/2) - (searchbar.width/2) : 0
+
+
 
            opacity: 0.5
            radius: 10
@@ -532,11 +566,7 @@ ActivityBase {
            border.color: "black"
 
            gradient: Gradient {
-//               GradientStop { position: 0.0; color: "#E5E593" }
-//               GradientStop { position: 0.6; color: "#DAD984" }
-//               GradientStop { position: 0.7; color: "#C2BF66" }
-//               GradientStop { position: 0.9; color: "#ABA648" }
-//               GradientStop { position: 1.0; color: "#9F9939" }
+
                GradientStop { position: 0.3; color: "#000" }
                GradientStop { position: 0.9; color: "#666" }
                GradientStop { position: 1.0; color: "#AAA" }
@@ -547,41 +577,26 @@ ActivityBase {
             {
                 id : input
                 anchors.fill: parent
+                text: ""
                 textColor: "black"
                 font.pixelSize: 28
                 font.bold: true
-                font.family: "Helvetica"
+                font.family: gctext.fontfamily
                 opacity: 0.5
+                onTextChanged:
+                {
+                    menuActivity.textchanged(input.text)
+                }
+
+                GCText
+                {
+                    id: gctext
+                }
             }
 
 
         }
 
-//        TextField
-//        {
-//            id: searchtext
-//            text: ""
-//            visible: false
-//            width: parent.width/3
-//            height: parent.height/15
-//            anchors
-//            {
-////                top: horizontal ? (section.bottom) : parent.top
-//                bottom : activitiesGrid.top
-
-//            }
-//            x: (parent.width/2) - (searchtext.width/2)
-//            opacity: 0.5
-//            radius: 10
-//            border.width: 2
-//            border.color: "black"
-//            gradient: Gradient {
-//                GradientStop { position: 0.0; color: "#000" }
-//                GradientStop { position: 0.9; color: "#666" }
-//                GradientStop { position: 1.0; color: "#AAA" }
-
-
-//        }
 
         Bar {
             id: bar

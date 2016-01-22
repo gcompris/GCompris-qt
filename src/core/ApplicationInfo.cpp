@@ -197,6 +197,10 @@ void ApplicationInfo::setWindow(QQuickWindow *window)
 {
     m_window = window;
 }
+QQuickWindow* ApplicationInfo::getWindow()
+{
+    return m_window;
+}
 
 void ApplicationInfo::screenshot(QString const &path)
 {
