@@ -100,6 +100,7 @@ ActivityInfo *ActivityInfoTree::getParentActivity(ActivityInfo *root, ActivityIn
 void ActivityInfoTree::menuTreeAppend(ActivityInfo *menu)
 {
     m_menuTreeFull.append(menu);
+    m_menuTreeFulltemp = m_menuTreeFull;
 }
 
 void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
@@ -145,6 +146,8 @@ void ActivityInfoTree::filterByTag(const QString &tag)
             m_menuTree.push_back(activity);
         }
     }
+    if (searchedtext.trimmed()== "")
+           m_searched.clear();
     sortByDifficulty();
     emit menuTreeChanged();
 }
@@ -286,8 +289,71 @@ void ActivityInfoTree::init()
 }
 void ActivityInfoTree::beginsearch()
 {
-    m_menuTree.clear();
-    emit menuTreeChanged();
+
+     m_menuTree = m_searched;
+     emit menuTreeChanged();
+     m_mainWindow = ApplicationInfo::getWindow()->findChild<QObject*>("menu");
+     QObject::connect(m_mainWindow,SIGNAL(textchanged(QString)),this,SLOT(display(QString)));
+
+}
+void ActivityInfoTree::display(QString text)
+{
+    int end,length,start = 0;
 
 
+
+       searchedtext = text;
+       end = m_menuTreeFulltemp.length();
+       length = text.length(); // length of the  string . i.e text in the textfield
+       m_menuTree.clear();
+
+       // templength = length of string that was there in the textfield before the present string
+       // if user erases a character from a string ,the search needs to be performed on all the activities
+       if(length < templength)
+       {
+
+           m_menuTreeFulltemp = m_menuTreeFull;
+           end = m_menuTreeFulltemp.length();
+       }
+
+       if(text.trimmed() == "")
+       {
+           m_menuTree.clear();
+           m_menuTreeFulltemp = m_menuTreeFull;
+           templength = 0;
+           emit menuTreeChanged();
+       }
+       else
+       {
+
+           while(start != end )
+           {
+               // if there is any activity that matches the description push it into the m_menutree
+               if(m_menuTreeFulltemp.at(start)->title().contains(text.trimmed(),Qt::CaseInsensitive))
+               {
+                   m_menuTree.push_back(m_menuTreeFulltemp.at(start));
+
+
+               }
+               // remove the activities that do not match the description.this is to optimize the search.
+               // ex: if a user searchs for an activity with a string containing "number" in it ,search will be  perfomed only on those
+               // activities that contain "numbe" in them because all the activities that don't have "numbe" in them will be removed
+               else
+               {
+
+                   m_menuTreeFulltemp.removeAt(start);
+                   start = start - 1;
+                   end = m_menuTreeFulltemp.length();
+              }
+
+
+               start++;
+           }
+           m_searched = m_menuTree;
+           templength = length;
+           sortByDifficulty();
+           filterEnabledActivities();
+           filterLockedActivities();
+
+       }
 }

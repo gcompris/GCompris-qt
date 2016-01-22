@@ -31,8 +31,8 @@
 #include <QQmlPropertyMap>
 #include <QQmlEngine>
 #include <QtGlobal>
+#include <QQuickWindow>
 
-class QQuickWindow;
 
 /**
  * @class ApplicationInfo
@@ -259,6 +259,7 @@ public:
     static QObject *systeminfoProvider(QQmlEngine *engine,
 									   QJSEngine *scriptEngine);
     static void setWindow(QQuickWindow *window);
+    static QQuickWindow* getWindow();
     explicit ApplicationInfo(QObject *parent = 0);
     ~ApplicationInfo();
 	int applicationWidth() const { return m_applicationWidth; }

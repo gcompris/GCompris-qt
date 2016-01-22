@@ -54,6 +54,7 @@ protected slots:
     Q_INVOKABLE void filterEnabledActivities();
     // create a tree from the whole list of activities with the activities created between the two versions
     Q_INVOKABLE void filterCreatedWithinVersions(int firstVersion, int lastVersion);
+    void display(QString text);
 
 signals:
 	void menuTreeChanged();
@@ -62,12 +63,17 @@ signals:
 private:
     // this is the full activity list, it never changes
     QList<ActivityInfo *> m_menuTreeFull;
+    QList<ActivityInfo *> m_menuTreeFulltemp;
     // represents the Menu view and can be filtered
     QList<ActivityInfo *> m_menuTree;
+    QList<ActivityInfo *> m_searched;
     ActivityInfo *m_rootMenu;
     ActivityInfo *m_currentActivity;
     static int menuTreeCount(QQmlListProperty<ActivityInfo> *property);
     static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, int index);
+    QObject *m_mainWindow;
+    int templength = 0;
+    QString searchedtext;
 
 	struct SortByDifficulty
 	{
@@ -89,7 +95,6 @@ public:
 	static void init();
 	static QObject *menuTreeProvider(QQmlEngine *engine, QJSEngine *scriptEngine);
     void exportAsSQL();
-
 };
 
 #endif // ACTIVITYINFOTREE_H
