@@ -26,5 +26,5 @@ import "dataset.js" as Dataset
 
 MemoryCommon {
     dataset: Dataset.get()
-    backgroundImg: "qrc:/gcompris/src/activities/memory-wordnumber/resource/NewHouseNoText.svg"
+    backgroundImg: "qrc:/gcompris/src/activities/memory-wordnumber/resource/background.svg"
 }
