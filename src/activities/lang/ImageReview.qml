@@ -380,6 +380,9 @@ Item {
         var mode = miniGames[miniGameIndex][1];
         var itemToLoad = miniGames[miniGameIndex][2];
 
+        // Starting a minigame we don't wan't pending voices to play
+        Activity.clearVoiceQueue()
+
         // preparing the wordList
         var wordList = Core.shuffle(items.wordList[wordListIndex]).slice()
 
