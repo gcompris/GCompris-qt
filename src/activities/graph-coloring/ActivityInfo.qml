@@ -26,8 +26,8 @@ ActivityInfo {
   title: qsTr("Graph Coloring")
   description: qsTr("Color the graph so that no two adjacent nodes have the same color.")
   //intro: "Color the graph so that no two adjacent nodes have the same color."
-  goal: qsTr("Learn to distinguish between different colors and learn about relative positions.")
-  prerequisite: qsTr("Ability to distinguish different colors, sense of positions")
+  goal: qsTr("Learn to distinguish between different colors/shapes and learn about relative positions.")
+  prerequisite: qsTr("Ability to distinguish different colors/shapes, sense of positions")
   manual: ""
   credit: ""
   section: "math"

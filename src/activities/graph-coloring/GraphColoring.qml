@@ -160,8 +160,8 @@ ActivityBase {
                     width: graphRect.optDiameter
                     height: width
                     radius: width/2
-                    border.color: highlight == true ? "red" : "black"
-                    border.width: highlight == true ? 7 : 4
+                    border.color: highlight ? "red" : "black"
+                    border.width: highlight ? 7 : 4
                     symbolRotation: highlight
                     searchItemIndex: colIndex
                     Behavior on border.color {
