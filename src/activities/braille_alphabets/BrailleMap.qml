@@ -43,7 +43,7 @@ Rectangle {
         id: flick
         anchors.fill: parent
         contentWidth: parent.width
-        contentHeight: (grid1.width - grid1.spacing * 10) / 10 * 1.9 * 6.5
+        contentHeight: (grid1.height + grid2.height) * 1.1
         flickableDirection: Flickable.VerticalFlick
         clip: true
 
@@ -65,9 +65,8 @@ Rectangle {
                     "U", "V", "W", "X", "Y", "Z"
                 ]
 
-                Item {
+                Column {
                     width:  (grid1.width - grid1.spacing * 10) / 10
-                    height: (rect1.height + text1.height) * 1.2
 
                     Rectangle {
                         id: rect1
@@ -92,10 +91,8 @@ Rectangle {
                         style: Text.Outline
                         styleColor: "black"
                         color: "white"
-                        fontSize: Math.max(parent.width * 0.2, 12)
+                        fontSize: Math.max(Math.min(parent.width * 0.2, 24), 12)
                         anchors {
-                            top: rect1.bottom
-                            topMargin: 4 * ApplicationInfo.ratio
                             horizontalCenter: parent.horizontalCenter
                         }
                     }
@@ -106,7 +103,6 @@ Rectangle {
         Flow {
             id: grid2
             width : parent.width * 0.9
-            height :  parent.height * 0.4
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 top: grid1.bottom
@@ -121,9 +117,8 @@ Rectangle {
                     "+", "-", "*", "/", "#"
                 ]
 
-                Item {
+                Column {
                     width:  (grid1.width - grid1.spacing * 10) / 10
-                    height: (rect2.height + text2.height) * 1.2
 
                     Rectangle {
                         id: rect2
@@ -148,10 +143,8 @@ Rectangle {
                         style: Text.Outline
                         styleColor: "black"
                         color: "white"
-                        fontSize: Math.max(parent.width * 0.2, 12)
+                        fontSize: Math.max(Math.min(parent.width * 0.2, 24), 12)
                         anchors {
-                            top: rect2.bottom
-                            topMargin: 4 * ApplicationInfo.ratio
                             horizontalCenter: parent.horizontalCenter
                         }
                     }
