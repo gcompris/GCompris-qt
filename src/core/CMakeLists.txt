@@ -143,7 +143,7 @@ if(BUILD_STANDALONE)
   if(NOT WIN32 AND NOT SAILFISHOS)
     list(APPEND _qml_plugins
       QtAudioEngine/${_lib_prefix}declarative_audioengine
-      Box2D.2.0/${_lib_prefix}Box2D)
+      Box2D.2/${_lib_prefix}Box2D)
   endif()
 
   set(GCOMPRIS_OTHER_LIBS)
