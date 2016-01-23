@@ -1,8 +1,8 @@
 iOS build instruction.
 
 copy the following files at the root dir
-cp config.h ../..
-cp gcompris.pro ../../
+cp platforms/ios/config.h .
+cp platforms/ios/gcompris.pro .
 
 At root dir create the directory
 mkdir rcc
