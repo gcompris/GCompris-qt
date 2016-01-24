@@ -37,7 +37,7 @@ QtObject {
      *
      */
     property var changelog: [
-            { "versionCode": 6000 },
+            { "versionCode": 6000, "content": qsTr("A Changelog.") },
             { "versionCode": 5200, "content": qsTr("Many little fixes. Lang activity now available in French.") },
             { "versionCode": 5000, "content": qsTr("Adding a loading overlay to let the user know that some actions are taking place (loading an activity for example) and can take some seconds. Translations added for: Catalan (Valencian), Chinese Traditional, Finnish (92% translated), Russian (98% translated), Slovak (92% translated), Turkish.") },
             { "versionCode": 4000, "content": qsTr("Translations added for: Slovenian, German, Galician.") }
