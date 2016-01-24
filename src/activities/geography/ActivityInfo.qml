@@ -35,4 +35,5 @@ ActivityInfo {
   manual: ""
   credit: ""
   section: "discovery"
+  createdInVersion: 4000
 }

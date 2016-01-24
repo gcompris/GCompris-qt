@@ -51,4 +51,5 @@ To return to the configuration dialog click on the home-button on the bar or pre
   credit: ""
   section: "mobile fun"
   enabled: !ApplicationInfo.isMobile || ApplicationInfo.sensorIsSupported("QTiltSensor")
+  createdInVersion: 5000
 }

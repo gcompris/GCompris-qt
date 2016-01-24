@@ -34,4 +34,5 @@ ActivityInfo {
   manual: qsTr("Play with a friend. Take turns to click on the square which you want to mark. First player to create a line of 3 marks wins")
   credit: ""
   section: "strategy"
+  createdInVersion: 4000
 }

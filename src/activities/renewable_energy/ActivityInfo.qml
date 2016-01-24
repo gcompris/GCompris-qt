@@ -31,4 +31,5 @@ ActivityInfo {
     prerequisite: ""
     credit: qsTr("Drawing by Stephane Cabaraux")
     section: "experiment"
+    createdInVersion: 5000
 }

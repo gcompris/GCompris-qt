@@ -51,6 +51,8 @@ protected slots:
     Q_INVOKABLE void filterByTag(const QString &tag);
     Q_INVOKABLE void filterLockedActivities();
     Q_INVOKABLE void filterEnabledActivities();
+    // create a tree from the whole list of activities with the activities created between the two versions
+    Q_INVOKABLE void filterCreatedWithinVersions(int firstVersion, int lastVersion);
 
 signals:
 	void menuTreeChanged();

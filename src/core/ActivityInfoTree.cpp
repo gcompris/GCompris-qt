@@ -170,6 +170,18 @@ void ActivityInfoTree::filterEnabledActivities()
     emit menuTreeChanged();
 }
 
+void ActivityInfoTree::filterCreatedWithinVersions(int firstVersion, int lastVersion)
+{
+    m_menuTree.clear();
+    for(auto activity: m_menuTreeFull) {
+        if(firstVersion < activity->createdInVersion() && activity->createdInVersion() <= lastVersion) {
+            m_menuTree.push_back(activity);
+        }
+    }
+
+    emit menuTreeChanged();
+}
+
 void ActivityInfoTree::exportAsSQL()
 {
     QTextStream cout(stdout);

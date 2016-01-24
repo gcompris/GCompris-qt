@@ -31,4 +31,5 @@ ActivityInfo {
   manual: qsTr("Listen to the sound sequence played, and repeat it by clicking on the xylophone's bars. You can listen again by clicking on the repeat button.")
   credit: ""
   section: "discovery memory music"
+  createdInVersion: 5000
 }

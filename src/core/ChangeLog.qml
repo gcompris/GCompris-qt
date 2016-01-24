@@ -19,8 +19,8 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-import QtQuick 2.2
-
+import QtQuick 2.1
+import GCompris 1.0
 /**
  * Container object with a list of all the changes by version.
  * @ingroup infrastructure
@@ -31,27 +31,48 @@ QtObject {
      * type: list
      * List of changelog objects.
      *
-     * A changelog object consists of the properties @c version (10000*major+100*minor+patch)
-     * and @c content (which changes have been added in this version).
+     * A changelog object consists of the properties @c versionCode
+     * and an optional @c content (which changes have been added in this version).
+     * The activities added in this version are retrieved from the ActivityInfoTree and directly displayed.
      *
      */
     property var changelog: [
-            { "version": "0.60", "versionCode": 6000, "content": qsTr("New activities: baby_word_processor, ") },
-            { "version": "0.50", "versionCode": 5000, "content": qsTr("New activities: Chess activity, Sound sequence memory, Vocabulary training, Famous paintings puzzle, Reading practice activity, Scientific electrical grid power supply simulation, Scientific water system simulation, A fine motor skill practice activity based on the accelerometer, The classical hangman.") },
-            { "version": "0.40", "versionCode": 4000, "content": qsTr("New activities: algebra_div, babymatch, babyshapes, braille_fun, chronos, details, geo-country, geography, hanoi, hanoi_real, imagename, intro_gravity, louis-braille, simplepaint, superbrain, tic_tac_toe and tic_tac_toe_2players") }
+            { "versionCode": 6000 },
+            { "versionCode": 5200, "content": qsTr("Many little fixes. Lang activity now available in French.") },
+            { "versionCode": 5000, "content": qsTr("Adding a loading overlay to let the user know that some actions are taking place (loading an activity for example) and can take some seconds. Translations added for: Catalan (Valencian), Chinese Traditional, Finnish (92% translated), Russian (98% translated), Slovak (92% translated), Turkish.") },
+            { "versionCode": 4000, "content": qsTr("Translations added for: Slovenian, German, Galician.") }
         ]
 
     function isNewerVersion(previousVersion, newVersion) {
         return newVersion > previousVersion
     }
+
     function getLogBetween(previousVersion, newVersion) {
         var filtered = changelog.filter(function filter(obj) {
             return isNewerVersion(previousVersion, obj['versionCode'])
         });
         var output = "";
+        // Retrieve all the activities created between the two versions
+        ActivityInfoTree.filterCreatedWithinVersions(previousVersion, newVersion);
+        var activities = ActivityInfoTree.menuTree;
+        // display for each version an optional text ("content") then the new activities
         filtered.map(function filter(obj) {
-            var content = obj['content'].split(',').join('<br>');
-            output += "Version %1: %2<br/>".arg(obj['version']).arg(content);
+            obj['versionCode'];
+            var version = (obj['versionCode'] / 10000).toFixed(2);
+            output += qsTr("Version %1:").arg(version);
+            output += "<ul>";
+            // display free text if exist
+            if(obj['content']) {
+                output += "<li>" + obj['content'] + "</li>";
+            }
+            // display the activity titles
+            for(var i in activities) {
+                var activity = activities[i];
+                if(activity.createdInVersion == obj['versionCode']) {
+                    output += "<li>" + activity.title + "</li>";
+                }
+            }
+            output += "</ul>";
         });
 
         return output

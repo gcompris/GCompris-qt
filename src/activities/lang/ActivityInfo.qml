@@ -40,4 +40,5 @@ ActivityInfo {
            + "You can also access this activity online on http://gcompris.net/activity/lang.")
   section: "reading"
   enabled: DownloadManager.isDataRegistered("words") || ApplicationInfo.isDownloadAllowed
+  createdInVersion: 5000
 }

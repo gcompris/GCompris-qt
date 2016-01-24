@@ -34,4 +34,5 @@ ActivityInfo {
   manual: qsTr("Drag and drop the top pieces only from one peg to another, to reproduce the initial left side tower on the right peg.")
   credit: qsTr("The puzzle was invented by the French mathematician Edouard Lucas in 1883. There is a legend about a Hindu temple whose priests were constantly engaged in moving a set of 64 discs according to the rules of the Tower of Hanoi puzzle. According to the legend, the world would end when the priests finished their work. The puzzle is therefore also known as the Tower of Brahma puzzle. It is not clear whether Lucas invented this legend or was inspired by it. (source Wikipedia: http://en.wikipedia.org/wiki/Tower_of_hanoi)")
   section: "puzzle"
+  createdInVersion: 4000
 }

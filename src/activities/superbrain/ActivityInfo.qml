@@ -31,4 +31,5 @@ ActivityInfo {
   manual: qsTr("Click on the items until you find what you think is the correct answer. Then, click on the OK button. In the lower levels, Tux gives you an indication if you found a hiding place by marking the item with a black box. In the levels 4 and 8 an item may be hidden several times.<br/>You can use the right mouse button to flip the items in the opposite order or the item chooser to directly pick an item. Press and hold a mouse button or on the touch screen to automatically choose the last item selected on a column. Double click or tap on a previously selected item in your guess history to mark it as 'correct'. Such marked items are automatically selected in your current and future guesses until you un-mark them, again by double clicking or tapping.")
   credit: ""
   section: "puzzle"
+  createdInVersion: 4000
 }

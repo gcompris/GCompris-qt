@@ -182,7 +182,7 @@ Window {
                 var dialog;
                 dialog = Core.showMessageDialog(
                 main,
-                qsTr("GCompris has been updated!<br/>") + changelog.getLogBetween(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode),
+                qsTr("GCompris has been updated! Here are the new changes:<br/>") + changelog.getLogBetween(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode),
                 "", null,
                 "", null,
                 function() { pageView.currentItem.focus = true }

@@ -31,4 +31,5 @@ ActivityInfo {
   manual: qsTr("Follow the instructions when you run the activity.")
   credit: ""
   section: "experiment"
+  createdInVersion: 4000
 }

@@ -31,4 +31,5 @@ ActivityInfo {
   manual: qsTr("Select a color and paint the rectangles as you like to create a drawing.")
   credit: ""
   section: "fun"
+  createdInVersion: 4000
 }
