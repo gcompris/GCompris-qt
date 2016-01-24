@@ -88,10 +88,12 @@ ApplicationInfo::ApplicationInfo(QObject *parent): QObject(parent)
     if (m_isMobile)
         connect(qApp->primaryScreen(), &QScreen::physicalSizeChanged, this, &ApplicationInfo::notifyPortraitMode);
 
+// @FIXME this does not work on iOS: https://bugreports.qt.io/browse/QTBUG-50624
+#if not defined(Q_OS_IOS)
     // Get all symbol fonts to remove them
     QFontDatabase database;
     m_excludedFonts = database.families(QFontDatabase::Symbol);
-
+#endif
     // Get fonts from rcc
     const QStringList fontFilters = {"*.otf", "*.ttf"};
     m_fontsFromRcc = QDir(":/gcompris/src/core/resource/fonts").entryList(fontFilters);
