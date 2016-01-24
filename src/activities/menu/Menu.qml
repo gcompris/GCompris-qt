@@ -23,6 +23,8 @@ import "../../core"
 import GCompris 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
 import QtGraphicalEffects 1.0
+import QtQuick.Controls 1.2
+
 
 /**
  * GCompris' top level menu screen.
@@ -45,7 +47,8 @@ ActivityBase {
     id: menuActivity
     focus: true
     activityInfo: ActivityInfoTree.rootMenu
-
+    objectName: "menu"
+    signal textchanged(string message)
     onBack: {
         pageView.pop(to);
         // Restore focus that has been taken by the loaded activity
@@ -64,6 +67,8 @@ ActivityBase {
                 focus = true;
         }
     }
+
+
 
     onDisplayDialog: pageView.push(dialog)
 
@@ -114,6 +119,10 @@ ActivityBase {
             icon: menuActivity.url + "strategy.svg",
             tag: "strategy"
         },
+        {
+            icon: menuActivity.url + "search-icon.png",
+            tag: "search"
+        }
     ]
     property string currentTag: sections[0].tag
     /// @endcond
@@ -153,7 +162,7 @@ ActivityBase {
         property int sectionCellHeight: sectionIconHeight * 1.1
 
         property var currentActiveGrid: activitiesGrid
-        property bool keyboardMode: false
+        property bool keyboardMode: false 
         Keys.onPressed: {
             if (event.modifiers === Qt.ControlModifier &&
                     event.key === Qt.Key_S) {
@@ -169,7 +178,7 @@ ActivityBase {
         }
         Keys.onTabPressed: currentActiveGrid = ((currentActiveGrid == activitiesGrid) ?
                                                     section : activitiesGrid);
-        Keys.onEnterPressed: if(currentActiveGrid.currentItem) currentActiveGrid.currentItem.selectCurrentItem();
+        Keys.onEnterPressed:if(currentActiveGrid.currentItem) currentActiveGrid.currentItem.selectCurrentItem();
         Keys.onReturnPressed: if(currentActiveGrid.currentItem)  currentActiveGrid.currentItem.selectCurrentItem();
         Keys.onRightPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexRight();
         Keys.onLeftPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexLeft();
@@ -180,14 +189,21 @@ ActivityBase {
             id: section
             model: sections
             width: horizontal ? main.width : sectionCellWidth
-            height: horizontal ? sectionCellHeight : main.height - bar.height
+            height:
+            {
+               if(currentTag === "search")
+               {
+                   return horizontal ? (sectionCellHeight + searchbar.height) : main.height - bar.height
+               }
+               else
+                   return horizontal ? (sectionCellHeight) : main.height - bar.height
+            }
             x: ApplicationSettings.sectionVisible ? section.initialX : -sectionCellWidth
             y: ApplicationSettings.sectionVisible ? section.initialY : -sectionCellHeight
             cellWidth: sectionCellWidth
             cellHeight: sectionCellHeight
             interactive: false
-            keyNavigationWraps: true
-
+            keyNavigationWraps: true 
             property int initialX: 4
             property int initialY: 4
 
@@ -203,6 +219,7 @@ ActivityBase {
                         sourceSize.height: sectionIconHeight
                         anchors.margins: 5
                         anchors.horizontalCenter: parent.horizontalCenter
+
                     }
 
                     ParticleSystemStarLoader {
@@ -218,12 +235,31 @@ ActivityBase {
                     }
 
                     function selectCurrentItem() {
-                        particles.burst(10)
-                        ActivityInfoTree.filterByTag(modelData.tag)
-                        ActivityInfoTree.filterLockedActivities()
-                        ActivityInfoTree.filterEnabledActivities()
-                        menuActivity.currentTag = modelData.tag
-                        section.currentIndex = index
+
+
+                               if(modelData.tag === "search")
+                               {
+                                   section.currentIndex = index
+                                   menuActivity.currentTag = modelData.tag
+                                   searchbar.visible = true;
+                                   warningOverlay.active = false;
+                                   ActivityInfoTree.beginsearch(modelData.tag);
+                               }
+                               else
+                               {
+                                   particles.burst(10)
+                                   ActivityInfoTree.filterByTag(modelData.tag)
+                                   ActivityInfoTree.filterLockedActivities()
+                                   ActivityInfoTree.filterEnabledActivities()
+                                   menuActivity.currentTag = modelData.tag
+                                   section.currentIndex = index
+                                   searchbar.visible = false
+                                   if(ActivityInfoTree.menuTree.length === 0 && modelData.tag === "favorite")
+                                      warningOverlay.active = true
+                                   else
+                                       warningOverlay.active = false
+                               }
+
                     }
                 }
             }
@@ -245,6 +281,8 @@ ActivityBase {
             }
         }
 
+
+
         // Activities
         property int iconWidth: 180 * ApplicationInfo.ratio
         property int iconHeight: 180 * ApplicationInfo.ratio
@@ -252,7 +290,6 @@ ActivityBase {
             horizontal ? background.width / Math.floor(background.width / iconWidth) :
                          (background.width - section.width) / Math.floor((background.width - section.width) / iconWidth)
         property int activityCellHeight: iconHeight * 1.5
-
         Loader {
             id: warningOverlay
             anchors {
@@ -280,6 +317,7 @@ ActivityBase {
                                "sun on each activity top right.")
                 }
                 Rectangle {
+
                     anchors.fill: instructionTxt
                     anchors.margins: -6
                     z: 1
@@ -299,12 +337,21 @@ ActivityBase {
         GridView {
             id: activitiesGrid
             layer.enabled: true
+
             anchors {
-                top: horizontal ? section.bottom : parent.top
+                top:
+                {
+                    if(menuActivity.currentTag === "search")
+                    {
+                        return horizontal ? (section.bottom ) : searchbar.bottom
+                    }
+                    else
+                        return horizontal ? (section.bottom ) : parent.top
+                }
                 bottom: bar.top
                 left: horizontal ? parent.left : section.right
                 margins: 4
-            }
+                }
             width: background.width
             cellWidth: activityCellWidth
             cellHeight: activityCellHeight
@@ -400,6 +447,7 @@ ActivityBase {
                     MouseArea {
                         anchors.fill: parent
                         onClicked: favorite = !favorite
+
                     }
                 }
 
@@ -449,6 +497,106 @@ ActivityBase {
             }
 
         }
+
+
+        Rectangle
+        {
+            id: searchbar
+            width:
+            {
+                if(horizontal)
+                    return parent.width/2
+                else
+                    return (parent.width -(section.width+10))
+            }
+
+            height:
+            {
+                if(horizontal)
+                    return parent.height/10
+                else
+                    return parent.height/17
+            }
+
+            visible:  false
+            anchors
+            {
+
+               bottom :
+               {
+                   if(horizontal)
+                       return activitiesGrid.top
+
+
+               }
+               top:
+               {
+                   if(!horizontal)
+                       return parent.top
+               }
+               left:
+               {
+                   if(!horizontal)
+                       return section.right
+               }
+
+
+
+
+            }
+            anchors.topMargin:
+            {
+                if(!horizontal)
+                    return 4
+            }
+            anchors.bottomMargin:
+            {
+                if(!horizontal)
+                    return 4
+            }
+
+
+            x: horizontal ? (parent.width/2) - (searchbar.width/2) : 0
+
+
+
+           opacity: 0.5
+           radius: 10
+           border.width: 2
+           border.color: "black"
+
+           gradient: Gradient {
+
+               GradientStop { position: 0.3; color: "#000" }
+               GradientStop { position: 0.9; color: "#666" }
+               GradientStop { position: 1.0; color: "#AAA" }
+
+           }
+
+            TextField
+            {
+                id : input
+                anchors.fill: parent
+                text: ""
+                textColor: "black"
+                font.pixelSize: 28
+                font.bold: true
+                font.family: gctext.fontfamily
+                opacity: 0.5
+                onTextChanged:
+                {
+                    menuActivity.textchanged(input.text)
+                }
+
+                GCText
+                {
+                    id: gctext
+                }
+            }
+
+
+        }
+
 
         Bar {
             id: bar

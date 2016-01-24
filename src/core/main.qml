@@ -53,7 +53,6 @@ Window {
     /// @cond INTERNAL_DOCS
 
     property var applicationState: Qt.application.state
-
     onApplicationStateChanged: {
         if (ApplicationInfo.isMobile && applicationState != Qt.ApplicationActive) {
             audioVoices.stop();
