@@ -1,6 +1,6 @@
 #!/usr/bin/python
 #
-# GCompris - validate-json.py
+# GCompris - createAppicon.py
 #
 # Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
 #
@@ -67,11 +67,11 @@ content = {
 
 for image in images:
     size = image[0]
-    sizestr = str(image[0]) + 'x' + str(image[0])
     idiom = image[1]
     scale = image[2]
     scalestr = str(scale) + 'x'
-    filename = "appicon-" + idiom + sizestr + '_' + scalestr + ".png"
+    sizestr = str(int(size * scale)) + 'x' + str(int(size * scale))
+    filename = "appicon-" + sizestr + ".png"
     content['images'].append(
         {
             "size": sizestr,
@@ -83,8 +83,8 @@ for image in images:
 
     subprocess.call(["inkscape", image_source,
                      "-e", outdir + '/' + filename,
-                     "-w", str(size * scale),
-                     "-h", str(size * scale)])
+                     "-w", str(int(size * scale)),
+                     "-h", str(int(size * scale))])
 
 with open(outdir + '/Contents.json', 'w') as f:
     f.write(json.dumps(content, sort_keys=True,
