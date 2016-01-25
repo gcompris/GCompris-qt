@@ -21,6 +21,7 @@ import json
 import subprocess
 import sys
 import os
+from shutil import copyfile
 
 
 if len(sys.argv) < 3:
@@ -235,3 +236,7 @@ for image in images:
 with open(outdir + '/Contents.json', 'w') as f:
     f.write(json.dumps(content, sort_keys=True,
                        indent=4, separators=(',', ': ')))
+
+
+# Create the Default-658h.png
+copyfile(outdir + '/appicon-640x1136.png', outdir + '/../Default-568h@2x.png')
