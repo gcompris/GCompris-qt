@@ -70,8 +70,9 @@ for image in images:
     idiom = image[1]
     scale = image[2]
     scalestr = str(scale) + 'x'
-    sizestr = str(int(size * scale)) + 'x' + str(int(size * scale))
-    filename = "appicon-" + sizestr + ".png"
+    filesizestr = str(int(size * scale)) + 'x' + str(int(size * scale))
+    sizestr = str(size) + 'x' + str(size)
+    filename = "appicon-" + filesizestr + ".png"
     content['images'].append(
         {
             "size": sizestr,
