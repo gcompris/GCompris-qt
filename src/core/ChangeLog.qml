@@ -75,6 +75,11 @@ QtObject {
             output += "</ul>";
         });
 
+        // restore menu context
+        ActivityInfoTree.filterByTag("favorite")
+        ActivityInfoTree.filterLockedActivities()
+        ActivityInfoTree.filterEnabledActivities()
+
         return output
     }
 }
