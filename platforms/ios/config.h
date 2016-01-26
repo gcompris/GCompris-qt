@@ -22,7 +22,7 @@
 #define GCOMPRIS_CONFIG_H
 
 /* Version number of package */
-#define VERSION "0.35"
+#define VERSION "0.52"
 /* Folder where rccs and translations are installed */
 #ifdef  Q_OS_MAC
 #define GCOMPRIS_DATA_FOLDER "."

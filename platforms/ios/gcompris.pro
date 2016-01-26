@@ -50,11 +50,5 @@ ios {
 
 
 
-#ios {
-#    assets_catalogs.files = $$files($$PWD/*.xcassets)
-#    QMAKE_BUNDLE_DATA += assets_catalogs
-#}
-
-
 #target.path = $$[QT_INSTALL_EXAMPLES]/quick/animation
 #INSTALLS += target
