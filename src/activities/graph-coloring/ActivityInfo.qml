@@ -31,4 +31,5 @@ ActivityInfo {
   manual: ""
   credit: ""
   section: "math"
+  createdInVersion: 6000
 }
