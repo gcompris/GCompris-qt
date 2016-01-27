@@ -148,7 +148,6 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     // no group
     m_isBarHidden = false;
 
-<<<<<<< ff718a62d9b45ef2cc3aa3eb27dee32e00bd2cfd
     connect(this, &ApplicationSettings::showLockedActivitiesChanged, this, &ApplicationSettings::notifyShowLockedActivitiesChanged);
 	connect(this, &ApplicationSettings::audioVoicesEnabledChanged, this, &ApplicationSettings::notifyAudioVoicesEnabledChanged);
 	connect(this, &ApplicationSettings::audioEffectsEnabledChanged, this, &ApplicationSettings::notifyAudioEffectsEnabledChanged);
@@ -429,3 +428,4 @@ void ApplicationSettings::init()
 	qmlRegisterSingletonType<ApplicationSettings>("GCompris", 1, 0,
 												  "ApplicationSettings", systeminfoProvider);
 }
+
