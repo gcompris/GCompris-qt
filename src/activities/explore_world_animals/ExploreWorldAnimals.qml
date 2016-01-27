@@ -23,7 +23,7 @@
 import QtQuick 2.1
 import GCompris 1.0
 
-import "../explore_monuments"
+import "../explore_farm_animals"
 
 ExploreLevels {
     id: activity
