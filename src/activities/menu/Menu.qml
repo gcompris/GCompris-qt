@@ -461,7 +461,10 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | exit | config | about }
+            // No exit button on mobile, UI Guidelines prohibits it
+            content: BarEnumContent {
+                value: help | config | about | (ApplicationInfo.isMobile ? 0 : exit)
+            }
             onAboutClicked: {
                 displayDialog(dialogAbout)
             }
