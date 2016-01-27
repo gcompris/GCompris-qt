@@ -59,7 +59,7 @@ QtObject {
         filtered.map(function filter(obj) {
             obj['versionCode'];
             var version = (obj['versionCode'] / 10000).toFixed(2);
-            output += qsTr("Version %1:").arg(version);
+            output += "<b>" + qsTr("Version %1:").arg(version) + "</b>";
             output += "<ul>";
             // display free text if exist
             if(obj['content']) {
