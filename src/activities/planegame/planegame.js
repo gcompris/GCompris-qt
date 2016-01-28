@@ -101,8 +101,8 @@ function initLevel() {
 }
 
 function nextLevel() {
-    if(numberOfLevel-1 <= ++currentLevel) {
-        currentLevel = numberOfLevel-1
+    if(numberOfLevel <= ++currentLevel) {
+        currentLevel = 0
     }
 
     initLevel();
