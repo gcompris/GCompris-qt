@@ -45,7 +45,7 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = (currentLevel)
+    items.bar.level = currentLevel
     var filename = url + "board" + "/" + "board" + currentLevel + ".qml"
     items.dataset.source = filename
     items.progressbar.value = 0
