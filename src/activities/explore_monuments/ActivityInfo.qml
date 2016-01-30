@@ -19,7 +19,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "explore_monuments/Explore_monuments.qml"
-  difficulty: 1
+  difficulty: 3
   icon: "explore_monuments/explore_monuments.png"
   author: "Ayush Agrawal &lt;ayushagrawal288@gmail.com&gt;"
   demo: true
