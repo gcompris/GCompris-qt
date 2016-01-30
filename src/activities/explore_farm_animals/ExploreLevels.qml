@@ -24,7 +24,6 @@
 
 import QtQuick 2.1
 import GCompris 1.0
-import QtGraphicalEffects 1.0
 import QtQuick.Controls 1.2
 
 import "../../core"
@@ -33,7 +32,7 @@ import "explore-level.js" as Activity
 ActivityBase {
     id: activity
 
-    property int numberofLevel
+    property int numberOfLevels
     property string url
     property bool hasAudioQuestions
 
@@ -55,16 +54,6 @@ ActivityBase {
             width: 2000 * background.playRatio
             height: width
             anchors.centerIn: parent
-        }
-
-        Rectangle {
-            width: background.playWidth
-            height: background.playHeight
-            anchors.centerIn: parent
-            border.width: 2
-            border.color: "black"
-            color: "transparent"
-            visible: false /* debug to see the play area */
         }
 
         property bool horizontalLayout: background.width > background.height
@@ -118,7 +107,7 @@ ActivityBase {
             }
         }
 
-        onStart: { Activity.start(items, url, numberofLevel) }
+        onStart: { Activity.start(items, url, numberOfLevels) }
         onStop: { Activity.stop() }
 
         Keys.onEscapePressed: {
@@ -315,7 +304,7 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onReloadClicked: Activity.start(items, url, numberofLevel)
+            onReloadClicked: Activity.start(items, url, numberOfLevels)
         }
         Bonus {
             id: bonus

@@ -28,7 +28,7 @@ import "../explore_farm_animals"
 ExploreLevels {
     id: activity
 
-    numberofLevel: 1
+    numberOfLevels: 1
     url: "qrc:/gcompris/src/activities/explore_world_music/resource/"
     hasAudioQuestions: true
 }

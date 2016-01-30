@@ -25,15 +25,15 @@
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
 
-var numberofLevels
+var numberOfLevels
 var items
 var url
 var currentLevel
 
-function start(items_,url_,levelcount_) {
+function start(items_,url_,levelCount_) {
     items = items_
     url = url_
-    numberofLevels = levelcount_
+    numberOfLevels = levelCount_
     currentLevel = 1
     items.score.currentSubLevel = 1
 
@@ -67,7 +67,7 @@ function initLevel() {
 
 function nextLevel() {
     ++items.score.currentSubLevel
-    if(numberofLevels <= currentLevel && items.score.numberOfSubLevels < items.score.currentSubLevel)
+    if(numberOfLevels <= currentLevel && items.score.numberOfSubLevels < items.score.currentSubLevel)
     {
         currentLevel = 0
     }
@@ -86,7 +86,7 @@ function previousLevel() {
     --items.score.currentSubLevel
     if(currentLevel <= 1 && items.score.currentSubLevel < 1)
     {
-        currentLevel = numberofLevels
+        currentLevel = numberOfLevels
         items.score.currentSubLevel = items.score.numberOfSubLevels
     }
     else if(items.score.currentSubLevel < 1) {
