@@ -243,7 +243,7 @@ ActivityBase {
                                    menuActivity.currentTag = modelData.tag
                                    searchbar.visible = true;
                                    warningOverlay.active = false;
-                                   ActivityInfoTree.beginsearch(modelData.tag);
+                                   ActivityInfoTree.display(input.text);
                                }
                                else
                                {
@@ -583,9 +583,11 @@ ActivityBase {
                 font.bold: true
                 font.family: gctext.fontfamily
                 opacity: 0.5
+                Keys.onEnterPressed: Qt.inputMethod.hide()
                 onTextChanged:
                 {
-                    menuActivity.textchanged(input.text)
+                    ActivityInfoTree.display(input.text)
+                    console.log("lets see")
                 }
 
                 GCText

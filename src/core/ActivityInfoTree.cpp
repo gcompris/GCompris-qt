@@ -28,7 +28,11 @@
 #include <QStandardPaths>
 #include <QCoreApplication>
 #include <QTextStream>
+#include <time.h>
+ #include <QTime>
+#include<chrono>
 
+using namespace std::chrono;
 ActivityInfoTree::ActivityInfoTree(QObject *parent) : QObject(parent),
 	m_currentActivity(NULL)
 {}
@@ -286,62 +290,114 @@ void ActivityInfoTree::beginsearch()
 }
 void ActivityInfoTree::display(QString text)
 {
-    int end,length,start = 0;
+//    int end,length,start = 0;
 
 
 
-       searchedtext = text;
-       end = m_menuTreeFulltemp.length();
-       length = text.length(); // length of the  string . i.e text in the textfield
-       m_menuTree.clear();
+//       searchedtext = text;
+//       end = m_menuTreeFulltemp.length();
+//       length = text.length(); // length of the  string . i.e text in the textfield
+//       m_menuTree.clear();
 
-       // templength = length of string that was there in the textfield before the present string
-       // if user erases a character from a string ,the search needs to be performed on all the activities
-       if(length < templength)
-       {
+//       // templength = length of string that was there in the textfield before the present string
+//       // if user erases a character from a string ,the search needs to be performed on all the activities
+//       if(length < templength)
+//       {
 
-           m_menuTreeFulltemp = m_menuTreeFull;
-           end = m_menuTreeFulltemp.length();
-       }
+//           m_menuTreeFulltemp = m_menuTreeFull;
+//           end = m_menuTreeFulltemp.length();
+//       }
 
-       if(text.trimmed() == "")
-       {
-           m_menuTree.clear();
-           m_menuTreeFulltemp = m_menuTreeFull;
-           templength = 0;
-           emit menuTreeChanged();
-       }
-       else
-       {
+//       if(text.trimmed() == "")
+//       {
+//           m_menuTree.clear();
+//           m_menuTreeFulltemp = m_menuTreeFull;
+//           templength = 0;
+//           emit menuTreeChanged();
+//       }
+//       else
+//       {
 
-           while(start != end )
-           {
-               // if there is any activity that matches the description push it into the m_menutree
-               if(m_menuTreeFulltemp.at(start)->title().contains(text.trimmed(),Qt::CaseInsensitive))
-               {
-                   m_menuTree.push_back(m_menuTreeFulltemp.at(start));
-
-
-               }
-               // remove the activities that do not match the description.this is to optimize the search.
-               // ex: if a user searchs for an activity with a string containing "number" in it ,search will be  perfomed only on those
-               // activities that contain "numbe" in them because all the activities that don't have "numbe" in them will be removed
-               else
-               {
-
-                   m_menuTreeFulltemp.removeAt(start);
-                   start = start - 1;
-                   end = m_menuTreeFulltemp.length();
-              }
+//           while(start != end )
+//           {
+//               // if there is any activity that matches the description push it into the m_menutree
+//               if(m_menuTreeFulltemp.at(start)->title().contains(text.trimmed(),Qt::CaseInsensitive))
+//               {
+//                   m_menuTree.push_back(m_menuTreeFulltemp.at(start));
 
 
-               start++;
-           }
-           m_searched = m_menuTree;
-           templength = length;
-           sortByDifficulty();
-           filterEnabledActivities();
-           filterLockedActivities();
+//               }
+//               // remove the activities that do not match the description.this is to optimize the search.
+//               // ex: if a user searchs for an activity with a string containing "number" in it ,search will be  perfomed only on those
+//               // activities that contain "numbe" in them because all the activities that don't have "numbe" in them will be removed
+//               else
+//               {
 
-       }
+//                   m_menuTreeFulltemp.removeAt(start);
+//                   start = start - 1;
+//                   end = m_menuTreeFulltemp.length();
+//              }
+
+
+//               start++;
+//           }
+//           m_searched = m_menuTree;
+//           templength = length;
+//           sortByDifficulty();
+//           filterEnabledActivities();
+//           filterLockedActivities();
+
+//       }
+
+    int length,start = 0 ;
+
+    length = text.length();
+    searchedtext = text;
+    m_menuTree = m_searched;
+
+
+    if(length < templength)
+    {
+        m_menuTree = m_menuTreeFull;
+
+    }
+    if(text.trimmed().isEmpty())
+    {
+        m_menuTree = m_menuTreeFull;
+        templength = 0 ;
+
+    }
+    else
+    {
+
+        if(length != templength)
+        {
+            high_resolution_clock::time_point t1 = high_resolution_clock::now();
+
+            while(start != m_menuTree.length())
+            {
+
+                if(!m_menuTree.at(start)->title().contains(text.trimmed(),Qt::CaseInsensitive))
+                {
+                    m_menuTree.removeAt(start);
+                    start = start - 1;
+
+                }
+                start ++;
+
+            }
+            high_resolution_clock::time_point t2 = high_resolution_clock::now();
+            auto duration = duration_cast<microseconds>( t2 - t1 ).count();
+            qDebug()<<endl<<duration;
+        }
+        templength = length;
+
+    }
+
+    m_searched = m_menuTree;
+    filterEnabledActivities();
+    filterLockedActivities();
+    sortByDifficulty();
+    emit menuTreeChanged();
+
 }
