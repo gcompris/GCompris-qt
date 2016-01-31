@@ -36,12 +36,12 @@ page.</firstname>
 Don't forget to include this last date.
 Please respect the format of the date (YYYY-MM-DD),it is used by scripts.
 -->
-<date>2015-03-14</date>
+<date>2016-01-24</date>
 
 <!--version information of the application and kde this documentation is valid for.
 for example 'xx.yy.zz'
 -->
-<releaseinfo>0.30</releaseinfo>
+<releaseinfo>0.52</releaseinfo>
 
 <!-- Abstract about this handbook -->
 
@@ -79,11 +79,11 @@ graphic interfaces which vary widely in quality.</para>
 <sect1 id="minimal-configuration">
 <title>Minimal configuration</title>
 <itemizedlist>
-<listitem><para>Processor : Pentium 3 500Mhz</para></listitem> 
-<listitem><para>Memory (RAM) : 512 Mega Bytes</para></listitem> 
-<listitem><para>Disk : 400 Mega Bytes</para></listitem> 
-<listitem><para>Operating system : &GNU;/&Linux;, &BSD;, MacOSX, &Windows;</para></listitem> 
-<listitem><para>Video : A 3D card is <emphasis>not</emphasis> required. 32 bits color depth mandatory</para></listitem>
+<listitem><para>Processor : 1.6GHz Atom CPU</para></listitem> 
+<listitem><para>Memory (RAM) : 1 Giga Byte</para></listitem> 
+<listitem><para>Disk : 300 Mega Bytes</para></listitem> 
+<listitem><para>Operating system : &GNU;/&Linux;, &BSD;, MacOSX, &Windows;, Android, SailfishOS</para></listitem> 
+<listitem><para>Video : A 3D card with support of <emphasis>OpenGL 2.1</emphasis> or higher is required. 32 bits color depth mandatory</para></listitem>
 </itemizedlist>
 </sect1>
 
@@ -120,48 +120,44 @@ with a control bar at the bottom.</para>
   </mediaobject>
 </screenshot>
 
-<para>Each icon represents an activity. When the mouse is set on it, the activity is highlighted and the name, 
-description and author of the activity are displayed in the description area.</para> 
-<para>Around each one, you can find small icons which give additional information about the activity. 
-A simple click on the icon will lead you to an activity or a menu of activities.</para> 
-<para>An icon indicates if a functioning sound system is required for an activity:</para>
-<itemizedlist>
-<listitem><para>Soundspeaker : The audio files are included for this activity.</para></listitem> 
-<listitem><para>Soundspeaker with a red cross : The audio files are not installed in the present language.</para></listitem>
-</itemizedlist>
+<para>Each icon represents an activity. Around each one, you can find small icons which give additional information 
+about the activity. A simple click on the icon will lead you to an activity or a menu of activities. There are 8 sections 
+(categories) of activities, which placed on the top or on the left (only if your orientation is portrait). For example, 
+there is section "Board games", which includes board games, like chess, tic tac toe or align four</para>
 <para>The stars indicates the age group for which each game is designed:</para> 
 <itemizedlist>
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="32px-difficulty_star1.png" format="PNG"/></imageobject>
-</inlinemediaobject>1, 2 or 3 stars - for 2 to 6 years old.</para></listitem> 
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="32px-difficulty_star4.png" format="PNG"/></imageobject>
-</inlinemediaobject>1, 2 or 3 complex stars - greater than 6 years old.</para></listitem> 
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="difficulty1.svg" format="SVG"/></imageobject>
+</inlinemediaobject>1, 2 or 3 yellow stars - for 2 to 6 years old.</para></listitem> 
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="difficulty4.svg" format="SVG"/></imageobject>
+</inlinemediaobject>1, 2 or 3 red stars - greater than 6 years old.</para></listitem> 
 </itemizedlist>
 
 <para>At the bottom of the screen there is a control bar for &gcompris;. The following icons are described below from 
 the right to the left (the icons are only displayed if they are available in the activity):</para>
 <itemizedlist>
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="32px-Home.png" format="PNG"/></imageobject>
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_home.svg" format="SVG"/></imageobject>
 </inlinemediaobject> Home - Leaves the current activity, returns to the previous menu.</para></listitem> 
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="32px-Button-ok.png" format="PNG"/></imageobject>
-</inlinemediaobject> Thumb - Validate, confirm your answer. Some activities do not detect automatically whether or 
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_ok.svg" format="SVG"/></imageobject>
+</inlinemediaobject> "OK" - Validate, confirm your answer. Some activities do not detect automatically whether or 
 not the child has completed the task. In this case, you have to click on this icon. You can also use the &Enter; 
 key on your keyboard.</para></listitem> 
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="32px-Level1.png" format="PNG"/></imageobject>
-</inlinemediaobject> Die - The present level is displayed. Click on the die to select another level. 
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_previous.svg" format="SVG"/></imageobject></inlinemediaobject>
+<inlinemediaobject><imageobject><imagedata fileref="bar_next.svg" format="SVG"/></imageobject></inlinemediaobject> 
+Arrows - The present level is displayed. Click on one of the arrows to select another level. 
 Generally, the activities offer several levels whose numbers depend on the activity. 
 In &gcompris;, it is possible to go to the next level without having completed the current level.</para></listitem> 
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="32px-Repeat.png" format="PNG"/></imageobject>
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_repeat.svg" format="SVG"/></imageobject>
 </inlinemediaobject> Lips - Ask &gcompris; to repeat the question.</para></listitem> 
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="32px-Help.png" format="PNG"/></imageobject>
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_help.svg" format="SVG"/></imageobject>
 </inlinemediaobject> Question mark - Display the help dialog box. Sometimes, an activity can be too complex 
 to be described easily in the description area. In this case, this function gives access to additional information.</para></listitem> 
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="32px-Config.png" format="PNG"/></imageobject>
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_config.svg" format="SVG"/></imageobject>
 </inlinemediaobject> Tool box - Configuration menu. The configuration is saved in the user repository (folder) 
 under the name <filename>.config/gcompris/gcompris.conf</filename>. This is a text file which can be edited manually.</para></listitem> 
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="32px-About.png" format="PNG"/></imageobject>
-</inlinemediaobject> Tux and his plane - Information box on &gcompris;, presents the main contributors and the version of the software.</para></listitem> 
-<listitem><para><inlinemediaobject><imageobject><imagedata fileref="32px-Button-exit.png" format="PNG"/></imageobject>
-</inlinemediaobject> Night - Quit &gcompris;. You can also use the short cut on your keyboard 
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_about.svg" format="SVG"/></imageobject>
+</inlinemediaobject> Capital "G" - Information box on &gcompris;, presents the main contributors and the version of the software.</para></listitem> 
+<listitem><para><inlinemediaobject><imageobject><imagedata fileref="bar_exit.svg" format="SVG"/></imageobject>
+</inlinemediaobject> Power - Quit &gcompris;. You can also use the short cut on your keyboard 
 <keycombo action="simul">&Ctrl;<keycap>Q</keycap></keycombo></para></listitem> 
 </itemizedlist>
 </sect2>
@@ -171,8 +167,8 @@ under the name <filename>.config/gcompris/gcompris.conf</filename>. This is a te
 <para>When you use &gcompris; with small children or on a self-service kiosk, you can disable a certain number of options:</para>
 <itemizedlist>
 <listitem><para><userinput><command>gcompris --disable-quit</command></userinput> : disable the <guiicon>Quit</guiicon> button.</para></listitem> 
-<listitem><para><userinput><command>gcompris --disable-config</command></userinput> : disable the <guiicon>Configuration</guiicon> button</para></listitem> 
-<listitem><para><userinput><command>gcompris --disable-level</command></userinput> : disable the <guiicon>Level</guiicon> button</para></listitem> 
+<listitem><para><userinput><command>gcompris -f</command></userinput> : run &gcompris; in fullscreen mode</para></listitem> 
+<listitem><para><userinput><command>gcompris -C</command></userinput> : disable the cursor (touch screen mode)</para></listitem> 
 </itemizedlist>
 <para>These options can of course be combined.</para>
 </sect2>
@@ -243,339 +239,20 @@ through the administration module.</para>
 
 <sect1 id="customizing-activities">
 <title>Customizing activities</title>
-<para>Control Panels allow you to enrich the lexical content of activities to make them fit your needs. 
-In the activities of reading or math, you can add your own lists of words or numbers, and thus adapt 
-the content of the activity to your curriculum.</para>
+<para>You can customize some activities using tool button in them. For example, you can set lang in 
+some text activities (like wordsgame), or make it show real car images instead of filled rectangles 
+(traffic)</para>
 <screenshot>
-<screeninfo>Missing Letter</screeninfo>
+<screeninfo>Select mode of activity "Traffic"</screeninfo>
   <mediaobject>
     <imageobject>
-      <imagedata fileref="missing-letter.png" format="PNG"/>
+      <imagedata fileref="traffic-select-mode.png" format="PNG"/>
     </imageobject>
     <textobject>
-      <phrase>Missing Letter</phrase>
+      <phrase>Select mode of activity "Traffic"</phrase>
     </textobject>
   </mediaobject>
 </screenshot>
-<para>Configuration table of the activity of vertical reading:</para> 
-<screenshot>
-<screeninfo>Vertical Reading</screeninfo>
-  <mediaobject>
-    <imageobject>
-      <imagedata fileref="reading-activity.png" format="PNG"/>
-    </imageobject>
-    <textobject>
-      <phrase>Vertical Reading</phrase>
-    </textobject>
-  </mediaobject>
-</screenshot>
-<itemizedlist>
-<listitem><para>Default: Indicates the default language of the activity that can be changed.</para></listitem>  
-<listitem><para>Language: selects the language of the word list.</para></listitem>  
-<listitem><para>Level: indicates the level of difficulty and allows the display of lists that 
-you can complete and / or modify.</para></listitem> 
-</itemizedlist>
-</sect1>
-
-<sect1 id="administering-gcompris">
-<title>Administering &gcompris;</title>
-<para>&gcompris; contains a very powerful administration module to assist in simplifying its use in schools. 
-This module was designed to satisfy the many different ways of using &gcompris; in as simple a way as possible.</para>
-
-<sect2 id="activity-selection">
-<title>Activity selection</title>
-<para>&gcompris; currently offers nearly a hundred different activities. It is not always sensible to offer 
-all of the activities to children at once. One approach could be the introduction of the activities little 
-by little as the children develop their skills. This will keep their curiosity alive and will avoid them 
-loosing time doing activities which may be too complex for them.</para>
-
-<para>There are two different ways of selecting the activities:</para> 
- 
-<itemizedlist>
-<listitem>
-<screenshot>
-<screeninfo>Select an Activity by Level</screeninfo>
-  <mediaobject>
-    <imageobject>
-      <imagedata fileref="admin-difficulty-filter.png" format="PNG"/>
-    </imageobject>
-    <textobject>
-      <phrase>Select an Activity by Level</phrase>
-    </textobject>
-  </mediaobject>
-</screenshot>
-<para>By levels or intervals of levels. In this case, you use &gcompris;' levels (1 to 6 stars). 
-You can choose a specific level such as 1 star, or an interval of levels - from 2 to 4 stars.</para></listitem>  
-<listitem>
-<screenshot>
-<screeninfo>Select Activities</screeninfo>
-  <mediaobject>
-    <imageobject>
-      <imagedata fileref="admin-activity.png" format="PNG"/>
-    </imageobject>
-    <textobject>
-      <phrase>Select Activities</phrase>
-    </textobject>
-  </mediaobject>
-</screenshot>
-<para>By activity. In this mode, you can tick or tick out each activity or all the activities 
-of a same section.</para></listitem> 
-</itemizedlist>
-</sect2>
-
-<sect2 id="profile-creation">
-<title>Profile Creation</title>
-<para>A profile permits the creation of a behavior model of &gcompris; under a unique name. It is possible 
-to create profiles without any links to users, groups or class.</para>
-<screenshot>
-<screeninfo>Select Activities</screeninfo>
-  <mediaobject>
-    <imageobject>
-      <imagedata fileref="admin-profil-edit.png" format="PNG"/>
-    </imageobject>
-    <textobject>
-      <phrase>Select Activities</phrase>
-    </textobject>
-  </mediaobject>
-</screenshot>
-<para>If you want to use &gcompris; with children of different age groups, you can create a profile for each one. 
-For each profile, you will be able to associate a set of activities.</para> 
-<para>For instance, it is possible to create a profile 'grade 1' or a profile 'grade 2'. 
-To launch the administration module, find the start menu on your desktop or on a command line with 
-<userinput><command>gcompris -a</command></userinput>.</para>
-
-<sect3 id="using-profile">
-<title>Using a Profile</title>
-<para>Start &gcompris; with the option --profile 'my profile':</para> 
-<para><userinput><command>gcompris --profile <replaceable>cycle 1</replaceable></command></userinput> </para> 
-<para>To get the list of existing profiles:</para> 
-<para><userinput><command>gcompris --profile-list</command></userinput> </para> 
-<para>Of course to simplify the start of &gcompris; in a particular profile, the easiest is to create a new launcher 
-for your desktop and to associate it to a command that include the correct options.</para>
-</sect3>
-
-</sect2>
-
-<sect2 id="activity-configuration">
-<title>Activity Configuration</title>
-<para>The profiles exist mainly to specify a list of activities but you can also personalize the behavior 
-of each one whenever it is possible within the activity.</para> 
-<para>The activities marked with an icon <inlinemediaobject><imageobject>
-<imagedata fileref="Stock_preferences_24.png" format="PNG"/></imageobject>
-</inlinemediaobject> can be directly configured in the administration module. 
-For example, you can configure some activities to function in English.</para>
-</sect2>
-
-<sect2 id="user-class-creation">
-<title>User and Class Creation</title>
-<para>If you want to set up a personalized recording system, you can create a user profile for each pupil.</para>
-<screenshot>
-<screeninfo>Classes and Users</screeninfo>
-  <mediaobject>
-    <imageobject>
-      <imagedata fileref="admin-class.png" format="PNG"/>
-    </imageobject>
-    <textobject>
-      <phrase>Classes and Users</phrase>
-    </textobject>
-  </mediaobject>
-</screenshot>
-<para>This option will permit them to enter their 'user name' when they start &gcompris;. &gcompris; will then 
-record a list of activities the pupil has attempted and show whether or not the pupil has completed it. 
-&gcompris; is very flexible, you can group all the pupils in the default class if you don't use &gcompris; 
-in several classes. You can also create classes without mentioning pupils. It will give you the possibility 
-to define profiles for your classes.</para>
-</sect2>
-
-<sect2 id="groups-creation">
-<title>Groups Creation</title>
-<para>A group is a number of pupils from different classes. It is an optional function, you can use &gcompris;, 
-create users and define profiles without creating any groups.</para> 
-<screenshot>
-<screeninfo>Creating Groups</screeninfo>
-  <mediaobject>
-    <imageobject>
-      <imagedata fileref="admin-group.png" format="PNG"/>
-    </imageobject>
-    <textobject>
-      <phrase>Creating Groups</phrase>
-    </textobject>
-  </mediaobject>
-</screenshot>
-<para>The creation of groups will help you if your functioning mode is based on user groups which are composed of 
-small groups of classes but also of groups of children from the same class or even of children who have not 
-been associated to a class.</para>
-</sect2>
-
-<sect2 id="reporting">
-<title>Reporting</title>
-<para>Each activity lets appear a bonus image when the child has accomplished it or not. &gcompris; keeps 
-in its internal base all the results for each child or for the default user.</para>
-<screenshot>
-<screeninfo>Trace Usage</screeninfo>
-  <mediaobject>
-    <imageobject>
-      <imagedata fileref="admin-report.png" format="PNG"/>
-    </imageobject>
-    <textobject>
-      <phrase>Trace Usage</phrase>
-    </textobject>
-  </mediaobject>
-</screenshot>
-<para>You can display the results for all the pupils or for one in particular. A button allows you to erase 
-all the records.</para>
-</sect2>
-
-<sect2 id="identification">
-<title>Identification</title>
-<para>If you have created user profiles in &gcompris;, and you start &gcompris; with a profile, a 'Log-in' 
-screen will appear.</para> 
-<para>There are two identification modes: a 'list' mode where you have to find your name from a list of names.</para>
-<screenshot>
-<screeninfo>Children recognize their name and click on it</screeninfo>
-  <mediaobject>
-    <imageobject>
-      <imagedata fileref="login-list.png" format="PNG"/>
-    </imageobject>
-    <textobject>
-      <phrase>Children recognize their name and click on it</phrase>
-    </textobject>
-  </mediaobject>
-</screenshot>
-<para>This mode can encourage the child read his name.</para>
-<para>The second mode asks the child to enter his name.</para>
-<screenshot>
-<screeninfo>Children enter their login name</screeninfo>
-  <mediaobject>
-    <imageobject>
-      <imagedata fileref="login-text.png" format="PNG"/>
-    </imageobject>
-    <textobject>
-      <phrase>Children enter their login name</phrase>
-    </textobject>
-  </mediaobject>
-</screenshot>
-<para>It can help the child learn how to use the keyboard.</para>
-</sect2>
-
-<sect2 id="networking-ultiple-sers">
-<title>Networking / Multiple Users</title>
-<para>If you administer a school network, you can overwrite the configuration options of your users with 
-your own configuration. The instructions below apply to a single system on which you want to share the 
-configuration between several users or for different users on multiple computers. In the last case, you 
-need to put the configuration files on a networked partition.</para> 
-<para>&gcompris; uses 2 distinct files for its configuration:</para> 
-<itemizedlist>
-<listitem><para>The file <filename>gcompris.conf</filename> (configuration) contains 
-end user specific choices like sound and screen preference.</para></listitem> 
-<listitem><para>The file <filename>gcompris.db</filename> (database) contains:
-<itemizedlist>
-<listitem><para>The list of all the activities and their menu position.</para></listitem> 
-<listitem><para>The user log, what activity was played, at what time and was it successful.</para></listitem> 
-<listitem><para>The users, classes, groups and profiles.</para></listitem> 
-<listitem><para>The configuration of each activity.</para></listitem>
-</itemizedlist>
-</para></listitem>
-</itemizedlist> 
-<para>To edit a configuration file, the easiest way is to create one from &gcompris;. Simply configure &gcompris; 
-as you wish, quit it and copy the created configuration file into the system one. From it, you can then 
-remove the options that you don't want to be compulsory.</para> 
-<para>Configuration file example:</para> 
-<screen>music=1
-fx=1
-screensize=1
-fullscreen=1
-timer=1
-key="default"</screen>
-
-<sect3 id="gnu-linux">
-<title>&GNU; / &Linux;</title>
-<para>On &GNU;/&Linux;, the configuration file is in the user directory under <filename class="directory">~/.config/gcompris/gcompris.conf</filename> </para> 
-<para>To make the configuration global to all the users:</para> 
-<itemizedlist>
-<listitem><para>You can copy your configuration file to <filename class="directory">/etc/gcompris.conf</filename></para></listitem> 
-<listitem><para>You can run &gcompris; with the <userinput><option>--config</option></userinput> option 
-passing it a fully qualified path to a file</para></listitem>
-</itemizedlist>
-<para>To make all users using the same database, run &gcompris; with <userinput><option>--database</option></userinput>
-option passing it a file on a local directory or a networked folder. The users must have read and write access to this file.</para> 
-<para>You can create a desktop launcher for the children and pass in it the options you need 
-(<userinput><option>--config</option></userinput> and/or <userinput><option>--database</option></userinput>).</para>
-<para>
-You can create another desktop launcher for the teacher. It must include the <userinput><option>--administration</option></userinput> 
-option and the <userinput><option>--database</option></userinput> option that points to your database.</para>
-</sect3>
-
-<sect3 id="windows-xp-2000">
-<title>&Windows; XP / 2000</title>
-<para>On &Windows; XP, the configuration file is in <filename class="directory">C:\Documents and Settings\YOUR USER\.config\gcompris\gcompris.conf</filename> </para>
-<para>To make the configuration global to all the users:</para> 
-<itemizedlist>
-<listitem><para>You can copy your configuration file to <filename class="directory">C:\Program Files\gcompris</filename> directory</para></listitem> 
-<listitem><para>You can run &gcompris; with the <userinput><option>--config</option></userinput> option passing it a fully qualified path to a file</para></listitem>
-</itemizedlist>
-<para>To make all users using the same database, run &gcompris; with <userinput><option>--database</option></userinput> 
-option passing it a file on a local directory or a networked folder. The users must have read and write access to this file.</para> 
-<para>You can create a desktop launcher for the children and pass in it the options you need 
-(<userinput><option>--config</option></userinput> and/or <userinput><option>--database</option></userinput>). 
-Here's an example:</para>
-<para><userinput><command>"C:\Program Files\Gcompris\gcompris.exe" -b C:\Documents and Settings\All Users\gcconfig\gc.db</command></userinput></para> 
-<para>You can create another desktop launcher for the teacher. It must include the <userinput><option>--administration</option></userinput> option and 
-the <userinput><option>--database</option></userinput> that points to your database. Here's an example:</para>
-<para><userinput><command>"C:\Program Files\Gcompris\gcompris.exe" -a -b C:\Documents and Settings\All Users\gcconfig\gc.db </command></userinput></para>
-<note><para>Due to a bug in XP, there is a possibility that users with limited access will not be able 
-to write to the database. If this is happening to you, you will need to make those users to have administrator access.</para></note>
-</sect3>
-
-<sect3 id="windows-vista-7">
-<title>&Windows; Vista / 7</title>
-<para>On &Windows; Vista &amp; 7, the configuration file is in <filename class="directory">C:\User\YOUR USER\.config\gcompris\gcompris.conf</filename>,</para>
-<para>To make the configuration global to all the users:</para> 
-<itemizedlist>
-<listitem><para>You can copy your configuration file to <filename class="directory">C:\Program Files\gcompris</filename> 
-directory or <filename class="directory">C:\Program Files (x86)\Gcompris</filename>.
-</para></listitem>  
-<listitem><para> 
-You can run &gcompris; with the <userinput><option>--config</option></userinput> option passing it a fully qualified path to a file</para></listitem>  
-</itemizedlist>
-<para>To make all users using the same database, run &gcompris; with <userinput><option>--database</option></userinput> option passing it a file on a 
-local directory or a networked folder. The users must have read and write access to this file.</para> 
-<para>You can create a desktop launcher for the children and pass in it the options you need (<userinput><option>--config</option></userinput> 
-and/or <userinput><option>--database</option></userinput>). Here's an example:</para>
-<para><userinput><command>"C:\Program Files\Gcompris\gcompris.exe" -b C:\Users\Public\gcconfig\gc.db</command></userinput></para> 
-<para>You can create another desktop launcher for the teacher. It must include the <userinput><option>--administration</option></userinput> option and 
-the <userinput><option>--database</option></userinput> option that points to your database. Here's an example:</para> 
-<para><userinput><command>"C:\Program Files\Gcompris\gcompris.exe" -a -b C:\Users\Public\gcconfig\gc.db</command></userinput></para>
-</sect3>
-
-<sect3 id="activation-key">
-<title>Activation Key</title>
-<para>On &Windows;, it makes sense to put at least the line <userinput>key="your 6 digit key"</userinput> in a shared configuration 
-file. This way, all users on this PC won't have to activate &gcompris;.</para> 
-<para>On school networks, you can simply copy this file using your deployment system.</para> 
-<para>Finally, the last step is to move the <guiicon>Gcompris Admin</guiicon> desktop icon from the 
-<filename class="directory">All Users</filename> or <filename class="directory">Public</filename> desktop 
-folder to the user's desktop folder that will be administering &gcompris;. Make sure this user has &Windows; admin rights.</para>
-</sect3>
-
-</sect2>
-
-<sect2 id="portable-gcompris">
-<title>Portable &gcompris;</title>
-<para><ulink url="http://en.wikipedia.org/wiki/Portable_apps">Portable software</ulink> is a class of software that is suitable for use on portable drives such as a 
-USB (thumb) drive or iPod, although any external hard drive could theoretically be used. 
-The concept of carrying one's favored applications, utilities, and files on a portable drive for 
-use on any computer is one which has evolved considerably in recent years.</para> 
-<para>&gcompris; can be made portable very easily by installing it on the target thumb drive and adding 
-in its directory a <filename>gcompris.conf</filename> configuration file which includes a local user and configuration 
-directory. The directories are specified as relative to the gcompris.exe binary. </para>
-<para>Configuration file example:</para>
-<screen>
-user_dir="../My &gcompris;"
-config_dir="../&gcompris;_config"
-key="your 6 digit key if you have it"</screen>
-</sect2>
-
 </sect1>
 
 <sect1 id="console-switches">
@@ -609,110 +286,20 @@ key="your 6 digit key if you have it"</screen>
 <entry>Run &gcompris; without cursor (touch screen mode)</entry>
 </row>
 <row>
-<entry>--d, --difficulty</entry>
-<entry>Display only activities with this difficulty level</entry>
-</row>
-<row>
-<entry> -D, --debug</entry>
-<entry>Display debug information on the console</entry>
-</row>
-<row>
 <entry>-v, --version</entry>
 <entry>Print the version of &gcompris;</entry>
 </row>
 <row>
-<entry>-l, --root-menu</entry>
-<entry>Run &gcompris; with local menu (&eg; -l /reading will let you play only activities in the reading directory, 
--l /strategy/connect4 only the connect4 activity). Use '-l list' to list all the available activities and their descriptions.</entry>
+<entry>--export-activities-as-sql</entry>
+<entry>Export activities as SQL</entry>
 </row>
 <row>
-<entry>-A, --package_data_dir</entry>
-<entry>&gcompris; will find the data dir in this directory</entry>
-</row>
-<row>
-<entry>-S, --package_skin_dir</entry>
-<entry>&gcompris; will find the skins in this directory</entry>
-</row>
-<row>
-<entry>-L, --plugin_dir</entry>
-<entry>&gcompris; will find the activity plugins in this directory</entry>
-</row>
-<row>
-<entry>-P, --python_plugin_dir</entry>
-<entry>&gcompris; will find the python activity in this directory</entry>
-</row>
-<row>
-<entry>--locale_dir</entry>
-<entry>&gcompris; will find the locale file (.mo translation) in this directory</entry>
-</row>
-<row>
-<entry>-M, --menu_dir</entry>
-<entry>&gcompris; will find the activities menu in this directory</entry>
-</row>
-<row>
-<entry>-a, --administration</entry>
-<entry>Run &gcompris; in administration and user-management mode</entry>
-</row>
-<row>
-<entry>-b, --database</entry>
-<entry>Use alternate database for profiles [<filename class="directory"><envar>$HOME</envar>/.config/gcompris/gcompris_sqlite.db</filename>]</entry>
-</row>
-<row>
-<entry>--create-db</entry>
-<entry>Create the alternate database for profiles</entry>
-</row>
-<row>
-<entry>--reread-menu</entry>
-<entry>Re-read &XML; Menus and store them in the database</entry>
-</row>
-<row>
-<entry>-p, --profile</entry>
-<entry>Set the profile to use. Use <userinput><command>gcompris -a</command></userinput> to create profiles</entry>
-</row>
-<row>
-<entry>--profile-list</entry>
-<entry>List all available profiles. Use <userinput><command>gcompris -a</command></userinput> to create profiles</entry>
-</row>
-<row>
-<entry>--config-dir</entry>
-<entry>Config directory location: [<filename class="directory"><envar>$HOME</envar>/.config/gcompris</filename>]. 
-Alternate is to set <envar>$XDG_CONFIG_HOME</envar></entry>
-</row>
-<row>
-<entry>--user-dir</entry>
-<entry>The location of user directories: [<filename class="directory"><envar>$HOME</envar>/My gcompris</filename>]</entry>
-</row>
-<row>
-<entry>--experimental</entry>
-<entry>Run the experimental activities</entry>
-</row>
-<row>
-<entry>--disable-quit</entry>
-<entry>Disable the quit button</entry>
+<entry>--enable-config</entry>
+<entry>Enable the config button (default)</entry>
 </row>
 <row>
 <entry>--disable-config</entry>
 <entry>Disable the config button</entry>
-</row>
-<row>
-<entry>-g, --drag-mode</entry>
-<entry>Global drag and drop mode: normal, 2clicks, both. Default mode is normal</entry>
-</row>
-<row>
-<entry>--nolockcheck</entry>
-<entry>Do not avoid the execution of multiple instances of &gcompris;</entry>
-</row>
-<row>
-<entry>--no-zoom</entry>
-<entry>Disable maximization zoom</entry>
-</row>
-<row>
-<entry>--timing-base</entry>
-<entry>Increase activities timeout delays; useful values &lt; 1.0; 1.0 to not change hardcoded value</entry>
-</row>
-<row>
-<entry>--timing-mult</entry>
-<entry>How activities timeout delays are growing for several actors; useful values &lt; 1.0; 1.0 to not change hardcoded value</entry>
 </row>
 </tbody>
 </tgroup>
@@ -720,14 +307,14 @@ Alternate is to set <envar>$XDG_CONFIG_HOME</envar></entry>
 
 <sect2 id="windows-example">
 <title>&Windows; Example</title>
-<para>You can add these switches in the desktop icon properties. Here is an example that runs &gcompris; in kiosk mode in full screen given a specific database:</para>
-<para><userinput><command>"C:\Program Files\Gcompris\gcompris.exe" -b C:\Users\Public\gcconfig\gc.db --disable-quit --disable-config -f</command></userinput></para>
+<para>You can add these switches in the desktop icon properties. Here is an example that runs &gcompris; in kiosk mode in full screen, without config button and cursor:</para>
+<para><userinput><command>"C:\Program Files\Gcompris\gcompris-qt.exe" --disable-config -f -C</command></userinput></para>
 </sect2>
 
 <sect2 id="gnu-linux-example">
 <title>&GNU;/&Linux; Example</title>
-<para>Create an application launcher and configure the command line parameters. Here is an example that runs &gcompris; in kiosk mode in full screen given a specific database:</para> 
-<para><userinput><command>gcompris -b /etc/gcompris/gc.db --disable-quit --disable-config -f</command></userinput></para>
+<para>Create an application launcher and configure the command line parameters. Here is an example that runs &gcompris; in kiosk mode in full screen, without config button and cursor:</para> 
+<para><userinput><command>gcompris-qt --disable-config -f -C</command></userinput></para>
 </sect2>
 
 </sect1>
