@@ -27,7 +27,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Golden Temple"),
-            "text": qsTr("The Golden Temple Amritsar India (Sri Harimandir Sahib Amritsar) is not only a central religious place of the Sikhs, but also a symbol of human brotherhood and equality. Everybody, irrespective of cast, creed or race can seek spiritual solace and religious fulfilment without any hindrance. It also represents the distinct identity, glory and heritage of the Sikhs. To pen-down the philosophy, ideology, the inner and outer beauty, as well as the historical legacy of Sri Harimandir Sahib is a momentous task. It is a matter of experience rather than a of description."),
+            "text": qsTr("The Golden Temple Amritsar India (Sri Harimandir Sahib Amritsar) is not only a central religious place of the Sikhs, but also a symbol of human brotherhood and equality. Everybody, irrespective of cast, creed or race can seek spiritual solace and religious fulfillment without any hindrance. It also represents the distinct identity, glory and heritage of the Sikhs. To pen-down the philosophy, ideology, the inner and outer beauty, as well as the historical legacy of Sri Harimandir Sahib is a momentous task. It is a matter of experience rather than a of description."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/goldenTemple.jpg",
             "text2" : qsTr("Golden Temple"),
             "x" : "0.256",
@@ -71,7 +71,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Great Stupa"),
-            "text": qsTr("The Great Stupa at Sanchi is the oldest stone structure in India and was originally commissioned by the emperor Ashoka the Great in the 3rd century BCE. Its nucleus was a simple hemispherical brick structure built over the relics of the Buddha. It was crowned by the chatra, a parasol-like structure symbolising high rank, which was intended to honour and shelter the relics."),
+            "text": qsTr("The Great Stupa at Sanchi is the oldest stone structure in India and was originally commissioned by the emperor Ashoka the Great in the 3rd century BCE. Its nucleus was a simple hemispherical brick structure built over the relics of the Buddha. It was crowned by the chatra, a parasol-like structure symbolizing high rank, which was intended to honor and shelter the relics."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/greatStupa.jpg",
             "text2" : qsTr("Great Stupa"),
             "x" : "0.329",
@@ -82,7 +82,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Ajanta Caves"),
-            "text": qsTr("AJANTA is world's greatest historical  monument recognised by UNESCO located  just 55kms from Jalgaon city and 105kms from  Aurangabad City of Maharashtra, India. There are  30 caves in Ajanta of which 9, 10, 19, 26 and 29 are chaitya-grihas and the rest are monasteries."),
+            "text": qsTr("AJANTA is world's greatest historical  monument recognized by UNESCO located  just 55kms from Jalgaon city and 105kms from  Aurangabad City of Maharashtra, India. There are  30 caves in Ajanta of which 9, 10, 19, 26 and 29 are chaitya-grihas and the rest are monasteries."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/india/ajantaCave.jpg",
             "text2" : qsTr("Ajanta Caves"),
             "x" : "0.304",
@@ -160,7 +160,7 @@ QtObject {
 
     property var instructions : [
         {
-            "text": qsTr("Monuments of India.")
+            "text": qsTr("Monuments of India")
         },
         {
             "text": qsTr("Click on location where the given Monument is located.")

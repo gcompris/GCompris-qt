@@ -138,7 +138,7 @@ QtObject {
 
     property var instructions : [
         {
-            "text": qsTr("Monuments of France.")
+            "text": qsTr("Monuments of France")
         },
         {
             "text": qsTr("Click on location where the given Monument is located.")

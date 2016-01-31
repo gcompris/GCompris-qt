@@ -39,7 +39,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Colosseum"),
-            "text": qsTr("The Colosseum or Coliseum is today the most recognisable of Rome's Classical buildings. Even 2,000 years after it was built, and despite centuries when the abandoned building was pillaged for building materials, it is instantly recognisable A classical template for the stadia of today. It was the first permanent amphitheatre to be raised in Rome, and the most impressive arena the Classical world had yet seen."),
+            "text": qsTr("The Colosseum or Coliseum is today the most recognizable of Rome's Classical buildings. Even 2,000 years after it was built, and despite centuries when the abandoned building was pillaged for building materials, it is instantly recognizable as a classical template for the stadia of today. It was the first permanent amphitheatre to be raised in Rome, and the most impressive arena the Classical world had yet seen."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/colosseum.jpg",
             "text2": qsTr("Colosseum"),
             "x" : "0.514",

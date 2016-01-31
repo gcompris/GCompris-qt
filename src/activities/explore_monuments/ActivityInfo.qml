@@ -27,7 +27,7 @@ ActivityInfo {
   description: qsTr("Explore Monuments around the world.")
   //intro: "Explore Monuments around the world."
   goal: qsTr("To learn about different monuments on the basis of their location.")
-  prerequisite: qsTr("Knowlegde of different monuments.")
+  prerequisite: qsTr("Knowledge of different monuments.")
   manual: qsTr("Click on the given keys to learn more of the monuments and then identify where the monuments is on the map by its name.")
   credit: qsTr("Photos taken from Wikipedia.")
   section: "discovery"

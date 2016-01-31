@@ -71,7 +71,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Schwerin Palace"),
-            "text": qsTr("This romantic fairytale fortress, with all its many towers, domes and wings, is reflected in the waters of Lake Schwerin. It was completed in 1857 and symbolised the powerful dynasty of its founder, Friedrich Franz II."),
+            "text": qsTr("This romantic fairytale fortress, with all its many towers, domes and wings, is reflected in the waters of Lake Schwerin. It was completed in 1857 and symbolized the powerful dynasty of its founder, Friedrich Franz II."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/germany/schwerinPalace.jpg",
             "text2" : qsTr("Schwerin Palace"),
             "x" : "0.585",

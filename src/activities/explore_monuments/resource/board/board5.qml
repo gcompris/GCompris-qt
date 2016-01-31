@@ -93,7 +93,7 @@ QtObject {
         {
             "image": "qrc:/gcompris/src/activities/explore_monuments/resource/wonders/key.png",
             "title": qsTr("Mount Rushmore"),
-            "text": qsTr("Mt. Rushmore stands as a shrine of democracy, a monument and memorial to George Washingtonthis country's birth, growth and ideals. Mount Rushmore symbolizes the greatness of this nation through the greatness of its leaders. The epic sculpture of Mount Rushmore depicts the faces of four exalted American presidents that symbolize this nation's rich history, rugged determination and lasting achievements."),
+            "text": qsTr("Mt. Rushmore stands as a shrine of democracy, a monument and memorial to George Washington, this country's birth, growth and ideals. Mount Rushmore symbolizes the greatness of this nation through the greatness of its leaders. The epic sculpture of Mount Rushmore depicts the faces of four exalted American presidents that symbolize this nation's rich history, rugged determination and lasting achievements."),
             "image2": "qrc:/gcompris/src/activities/explore_monuments/resource/usa/mountRushmore.jpg",
             "text2" : qsTr("Mount Rushmore"),
             "x" : "0.492",
