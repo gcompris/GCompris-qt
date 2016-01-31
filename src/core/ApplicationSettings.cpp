@@ -142,7 +142,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     // internal group
     m_config.beginGroup(INTERNAL_GROUP_KEY);
     m_exeCount = m_config.value(EXE_COUNT_KEY, 0).toUInt();
-    m_lastGCVersionRan = m_config.value(LAST_GC_VERSION_RAN, ApplicationInfo::getInstance()->GCVersionCode()).toUInt();
+    m_lastGCVersionRan = m_config.value(LAST_GC_VERSION_RAN, 0).toUInt();
     m_config.endGroup();
 
     // no group
