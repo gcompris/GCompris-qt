@@ -114,12 +114,7 @@ Rectangle {
                         fontSize: regularSize
                         wrapMode: TextEdit.Wrap
                         textFormat: TextEdit.RichText
-                        Component.onCompleted: ApplicationInfo.isDownloadAllowed ?
-                                                   linkActivated.connect(Qt.openUrlExternally) : null
-
-                        property string style: ApplicationInfo.isDownloadAllowed ?
-                                                   "<HEAD><STYLE type='text/css'>A {color: blue;}</STYLE></HEAD>" :
-                                                   "<HEAD><STYLE type='text/css'>A {color: black;}</STYLE></HEAD>"
+                        property string style: "<HEAD><STYLE type='text/css'>A {color: black;}</STYLE></HEAD>"
                     }
                 }
             }
