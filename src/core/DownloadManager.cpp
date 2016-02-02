@@ -374,7 +374,7 @@ inline QUrl DownloadManager::getUrlForFilename(const QString& filename) const
 
 inline QString  DownloadManager::getSystemDownloadPath() const
 {
-    return QStandardPaths::writableLocation(QStandardPaths::DataLocation);
+    return QStandardPaths::writableLocation(QStandardPaths::CacheLocation);
 }
 
 inline QStringList DownloadManager::getSystemResourcePaths() const
