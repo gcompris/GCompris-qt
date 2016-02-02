@@ -42,7 +42,7 @@ DownloadManager::DownloadManager()
   : accessManager(this), serverUrl(ApplicationSettings::getInstance()->downloadServerUrl())
 {
     // Cleanup of previous data directory no more used
-    QDir previousDataLocation = QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/data";
+    QDir previousDataLocation = QStandardPaths::writableLocation(QStandardPaths::CacheLocation) + "/data";
     if(previousDataLocation.exists()) {
         qDebug() << "Remove previous directory data: " << previousDataLocation;
         previousDataLocation.removeRecursively();
@@ -334,7 +334,7 @@ inline QUrl DownloadManager::getUrlForFilename(const QString& filename) const
 
 inline QString  DownloadManager::getSystemDownloadPath() const
 {
-    return QStandardPaths::writableLocation(QStandardPaths::DataLocation);
+    return QStandardPaths::writableLocation(QStandardPaths::CacheLocation);
 }
 
 inline QStringList DownloadManager::getSystemResourcePaths() const

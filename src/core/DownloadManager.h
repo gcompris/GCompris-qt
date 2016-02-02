@@ -50,7 +50,7 @@
  *
  * will be downloaded to a local path
  *
- * <tt>/\<QStandardPaths::writableLocation(QStandardPaths::DataLocation)\>/\<path/to/my/resource.rcc\></tt>
+ * <tt>/\<QStandardPaths::writableLocation(QStandardPaths::CacheLocation)\>/\<path/to/my/resource.rcc\></tt>
  *
  * and registered with a resource root path
  *
@@ -115,10 +115,10 @@ private:
     /**
      * Get the platform-specific path storing downloaded resources.
      *
-     * Uses QStandardPaths::writableLocation(QStandardPaths::DataLocation)
+     * Uses QStandardPaths::writableLocation(QStandardPaths::CacheLocation)
      * which returns
-     *   - on desktop $HOME/.local/share/KDE/gcompris-qt/
-     *   - on android /data/data/net.gcompris/files
+     *   - on desktop linux $HOME/.cache/KDE/gcompris-qt/
+     *   - on other platforms check <http://doc.qt.io/qt-5/qstandardpaths.html>
      *
      * @return An absolute path.
      */
