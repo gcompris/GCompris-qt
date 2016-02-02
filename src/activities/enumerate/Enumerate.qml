@@ -77,6 +77,13 @@ ActivityBase {
             height: background.height
         }
 
+        Image {
+            source: Activity.url + 'turtle.svg'
+            anchors.fill: parent
+            fillMode: Image.PreserveAspectFit
+            sourceSize.width: Math.max(parent.width, parent.height)
+        }
+
         Column {
             id: answer
             anchors {
