@@ -69,8 +69,10 @@ DownloadManager::DownloadManager()
 
     Q_FOREACH( QDir prevDir, previousDataLocations ) {
         if(prevDir.exists()) {
-            qDebug() << "Data changed place, move from previous folder to the new one";
-            copyPath(prevDir.absolutePath(), getSystemDownloadPath() + "/data2");
+            if(prevDir.dirName() == "data2") {
+                qDebug() << "Data changed place, move from previous folder to the new one";
+                copyPath(prevDir.absolutePath(), getSystemDownloadPath() + "/data2");
+            }
             qDebug() << "Remove previous directory data: " << prevDir.absolutePath();
             prevDir.removeRecursively();
         }
