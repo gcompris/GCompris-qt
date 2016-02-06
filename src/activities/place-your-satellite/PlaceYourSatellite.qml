@@ -1,10 +1,24 @@
-/* GCompris - place-your-satellite.qml
+/* GCompris - PlaceYourSatellite.qml
 *
-* Copyright (C) 2014 Jean-Baptiste BUTET
+* Copyright (C) 2014 JB Butet
 *
 * Authors:
 *   Matilda Bernard (seah4291@gmail.com) (GTK+ version)
-*   Jean-Baptiste BUTET <ashashiwa@gmail.com> (Qt Quick port and rewrite)*/
+*   JB Butet <ashashiwa@gmail.com> (Qt Quick port)
+*
+*   This program is free software; you can redistribute it and/or modify
+*   it under the terms of the GNU General Public License as published by
+*   the Free Software Foundation; either version 3 of the License, or
+*   (at your option) any later version.
+*
+*   This program is distributed in the hope that it will be useful,
+*   but WITHOUT ANY WARRANTY; without even the implied warranty of
+*   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+*   GNU General Public License for more details.
+*
+*   You should have received a copy of the GNU General Public License
+*   along with this program; if not, see <http://www.gnu.org/licenses/>.
+*/
 
 import QtQuick 2.1
 import GCompris 1.0
@@ -130,7 +144,7 @@ ActivityBase {
             anchors.topMargin: 0.01*parent.height
             text: "<p><b>Launch your satellite !</b></p><p> Find good distance,  speed value and direction</p><p> to make satellite turn around the object</p>"
             horizontalAlignment: Text.AlignHCenter
-            font.pointSize: 24
+            font.pointSize: mediumSize
             color: "#777"
         }
 
@@ -139,25 +153,25 @@ ActivityBase {
             width: 0.2 * parent.width
             anchors.top: parent.top
             anchors.right: parent.right
-            anchors.topMargin: 0.25*parent.height
-            anchors.rightMargin: 0.25*parent.width
-            text: "<p>Adjust the arrow<p></p> to launch in desired direction.</p><p>Then release it</p>"
+            anchors.topMargin: 0.25 * parent.height
+            anchors.rightMargin: 0.25 * parent.width
+            text: qsTr("Adjust the arrow to launch the satellite in the desired direction.")
             horizontalAlignment: Text.AlignHCenter
-            font.pointSize: 18
+            font.pointSize: mediumSize
             color: "#777"
             wrapMode: Text.WordWrap
 
             PropertyAnimation on opacity {
                 id: instructionBlink
-                easing.type: Easing.OutInSine
+                easing.type: Easing.InOutBack
                 loops: Animation.Infinite
                 from: 0
                 to: 1.0
-                duration: 500
+                duration: 2000
             }
         }
 
-        //#####################################Central widget#####################
+        // ---- Central widget ----
         Rectangle{
             id:centralItem
             scale: scaleGlob
@@ -197,12 +211,12 @@ ActivityBase {
                 }
 
                 Rectangle {
-                    radius: 10 * ApplicationInfo.ratio
+                    radius: 10
                     color: 'transparent'
-                    border.width: 10 * ApplicationInfo.ratio
+                    border.width: 10
                     border.color: 'yellow'
-                    width: satInfo.paintedWidth + 30 * ApplicationInfo.ratio
-                    height: satInfo.paintedHeight + 30 * ApplicationInfo.ratio
+                    width: satInfo.paintedWidth + 30
+                    height: satInfo.paintedHeight + 30
                     anchors.top: satImage.bottom
                     GCText {
                         id: satInfo
@@ -212,7 +226,7 @@ ActivityBase {
 
                         horizontalAlignment: Text.AlignHCenter
                         wrapMode: Text.WordWrap
-                        font.pointSize: 18 * ApplicationInfo.ratio
+                        font.pointSize: mediumSize
                         color: "#FFF"
                     }
                 }
@@ -241,13 +255,13 @@ ActivityBase {
 
 
                 //border:0
-                width: massInfo.paintedWidth + 30 * ApplicationInfo.ratio
-                height: massInfo.paintedHeight + 30 * ApplicationInfo.ratio
+                width: massInfo.paintedWidth + 30
+                height: massInfo.paintedHeight + 30
 
                 Image {
                     id: objectDiameter
                     anchors.bottom: massImage.top
-                    anchors.topMargin: 50 * ApplicationInfo.ratio
+                    anchors.topMargin: 50
                     anchors.horizontalCenter: parent.horizontalCenter
                     width: massImage.width
                     source: Activity.url + "resource/arrow.png"
@@ -255,22 +269,22 @@ ActivityBase {
 
                 Rectangle {
                     id: diameterInfoRect
-                    radius: 10 * ApplicationInfo.ratio
+                    radius: 10
                     color: 'blue'
-                    border.width: 10 * ApplicationInfo.ratio
+                    border.width: 10
                     border.color: 'yellow'
-                    width: diameterInfo.paintedWidth + 30 * ApplicationInfo.ratio
-                    height: diameterInfo.paintedHeight + 30 * ApplicationInfo.ratio
+                    width: diameterInfo.paintedWidth + 30
+                    height: diameterInfo.paintedHeight + 30
                     anchors.horizontalCenter: massImage.horizontalCenter
                     anchors.bottom: massImage.top
-                    anchors.bottomMargin: 50 * ApplicationInfo.ratio
+                    anchors.bottomMargin: 50
                     scale: scaleGlob
                     GCText {
                         id: diameterInfo
                         text: items.massObjectDiameter/1000 + " km"
                         anchors.verticalCenter: parent.verticalCenter
                         anchors.horizontalCenter: parent.horizontalCenter
-                        font.pointSize: 16
+                        font.pointSize: mediumSize
                         color: "#777"
                     }
                 }
@@ -306,13 +320,18 @@ ActivityBase {
 
                     ctx.fillStyle = 'white'
                     ctx.strokeStyle = 'white'
-                    ctx.save() //first save only styles.
+                    ctx.save() // first save only styles.
 
                     ctx.translate(width / 4, height / 4)
                     ctx.save() //save with translation and styles 1
 
                     if (items.isEllipse){
-                        items.instructions.text = "Great !! Satellite is turning over Planet in " + items.period.toFixed(0) + " seconds or "+ (items.period/3600).toFixed(0) +" hours and " +60*((items.period/3600)-Math.floor(items.period/3600)).toFixed(0) +" minutes"
+                        items.instructions.text =
+                                qsTr("Great !! Satellite is turning over Planet in %1" +
+                                     " seconds or %2 hours and %3 minutes")
+                        .arg(items.period.toFixed(0))
+                        .arg((items.period/3600).toFixed(0))
+                        .arg(60*((items.period/3600) - Math.floor(items.period/3600)).toFixed(0))
                     }
                         for (var j = 0; j < Activity.listPointsPix.length; j++) {
                             ctx.save() //save with translation and styles 2
@@ -320,18 +339,21 @@ ActivityBase {
                             var ys = Activity.listPointsPix[j][1]
                             ctx.translate(xs, ys)
 
-                            if ((xs*xs+ys*ys)/(items.pixPerMeter*items.pixPerMeter) < (items.massObjectDiameter*items.massObjectDiameter/4)){  //fall on ground
-
+                            if ((xs*xs+ys*ys) /
+                                    (items.pixPerMeter*items.pixPerMeter) <
+                                    (items.massObjectDiameter*items.massObjectDiameter/4)) {
+                                // fall on ground
                                 var xx = Activity.listPointsPix[j-1][0]
                                 var yy = Activity.listPointsPix[j-1][1]
                                 ctx.drawImage(Activity.url + "resource/crash.png",xx+20, yy+20);
 
-                                ctx.restore()//restore with translation and styles 2
-                                items.instructions.text = "Great !! Satellite is turning over Planet !! But it crashes on its surface :("
+                                ctx.restore() // restore with translation and styles 2
+                                items.instructions.text =
+                                        qsTr("Great !! Satellite is turning over Planet !!" +
+                                             " But it crashes on its surface :(")
                                 tick=0
                                 crash=true
                                 satTimer.stop()
-
                                 break
                             }
 
@@ -343,16 +365,15 @@ ActivityBase {
                             ctx.moveTo(-3, 0)
                             ctx.lineTo(3, 0)
                             ctx.stroke()
-                            ctx.restore()//restore with translation and styles 2
+                            ctx.restore() // restore with translation and styles 2
                     }
 
                     satTimer.repeat = true
                     satTimer.start()
 
                     mouseareaCentral.hoverEnabled = true
-                    ctx.restore()//restore with translation and styles 1
-                    ctx.restore()//restaure with style 0
-
+                    ctx.restore() // restore with translation and styles 1
+                    ctx.restore() // restore with style 0
                 }
             }
 
@@ -368,36 +389,29 @@ ActivityBase {
                     var deltaX = mouseX - sat.x - sat.width / 2
                     var deltaY = mouseY - sat.y - sat.height / 2 - 18 * ApplicationInfo.ratio
                     if (deltaX > 0) {
-
                         arrowSatAngle = 360 / (2 * Math.PI) * Math.atan(
                                     deltaY / deltaX)
                     } else {
-
                         arrowSatAngle = 360 / (2 * Math.PI) * Math.atan(
                                     deltaY / deltaX) + 180
                     }
                 }
                 onClicked: {
                     hoverEnabled = false
-                    instructions.text ="<p>Now Use sliders to choose</p><p> a speed and a position<p><p>Then LAUNCH it !!</p>"
+                    instructions.text = qsTr("Now with the sliders choose a speed and a position. When ready launch it !!")
                     buttonLaunch.visible = true
-
                 }
             }
         }
 
-
-
-
-
         Rectangle {
             id: massInfoRect
-            radius: 10 * ApplicationInfo.ratio
+            radius: 10
             color: 'blue'
-            border.width: 10 * ApplicationInfo.ratio
+            border.width: 10
             border.color: 'yellow'
-            width: massInfo.paintedWidth + 30 * ApplicationInfo.ratio
-            height: massInfo.paintedHeightleft + 30 * ApplicationInfo.ratio
+            width: massInfo.paintedWidth + 30
+            height: massInfo.paintedHeightleft + 30
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.bottom: parent.bottom
             anchors.bottomMargin: parent.height * 0.3
@@ -408,7 +422,7 @@ ActivityBase {
                 anchors.horizontalCenter: parent.horizontalCenter
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WordWrap
-                font.pointSize: 20 * ApplicationInfo.ratio
+                font.pointSize: mediumSize
                 color: "#777"
             }
         }
@@ -431,23 +445,23 @@ ActivityBase {
             id: satMenu
             anchors.top: parent.top
             anchors.left: parent.left
-            anchors.topMargin: 0.1*parent.height* ApplicationInfo.ratio
+            anchors.topMargin: 0.1 * parent.height
             anchors.leftMargin: 0
             color: '#111111'
             width: parent.width * 0.2
             height: parent.height * 0.8
-            radius: 10 * ApplicationInfo.ratio
-            border.width: 10 * ApplicationInfo.ratio
+            radius: 10
+            border.width: 10
             border.color: 'yellow'
 
             GridView {
                 id: satGrid
-                cellHeight: 150 * ApplicationInfo.ratio
+                cellHeight: 150
                 cellWidth: satMenu.width
                 width: satMenu.width
                 height: satMenu.height
                 anchors.top: satMenu.top
-                anchors.topMargin: 50 * ApplicationInfo.ratio
+                anchors.topMargin: 50
 
                 Repeater {
                     id: satRepeater
@@ -473,7 +487,7 @@ ActivityBase {
                             GCText {
                                 text: name
                                 anchors.horizontalCenter: parent.horizontalCenter
-                                font.pointSize: 24 * ApplicationInfo.ratio
+                                font.pointSize: mediumSize
                                 color: satWrapper.GridView.isCurrentItem ? "red" : "white"
                             }
                             MouseArea {
@@ -497,13 +511,13 @@ ActivityBase {
             id: massMenu
             anchors.top: parent.top
             anchors.right: parent.right
-            anchors.topMargin: 0.1*parent.height* ApplicationInfo.ratio
+            anchors.topMargin: 0.1 * parent.height
             anchors.rightMargin: 0
             color: '#111111'
             width: parent.width * 0.2
             height: parent.height * 0.8
-            radius: 10 * ApplicationInfo.ratio
-            border.width: 10 * ApplicationInfo.ratio
+            radius: 10
+            border.width: 10
             border.color: 'yellow'
 
             GridView {
@@ -537,7 +551,7 @@ ActivityBase {
                             GCText {
                                 text: name
                                 anchors.horizontalCenter: parent.horizontalCenter
-                                font.pointSize: 24 * ApplicationInfo.ratio
+                                font.pointSize: mediumSize
 
                                 color: wrapper.GridView.isCurrentItem ? "red" : "white"
                             }
@@ -583,7 +597,7 @@ ActivityBase {
                 anchors.bottom:parent.top
                 anchors.horizontalCenter: parent.horizontalCenter
                 color:'white'
-                font.pointSize: 16
+                font.pointSize: mediumSize
             }
 
             onValueChanged: {
@@ -612,7 +626,7 @@ ActivityBase {
             GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: "Distance (in km):" + (slidDistance.value/1000).toFixed(0)
-                font.pointSize: 16
+                font.pointSize: mediumSize
                 anchors.bottom:parent.top
                 color:'white'
             }
@@ -636,9 +650,11 @@ ActivityBase {
             }
             GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: Math.round(slidSpeed.value)!=0 ? "Speed in m/s : " + slidSpeed.value.toFixed(0) : "Speed in m/s : " + slidSpeed.value.toFixed(2)
+                text: (Math.round(slidSpeed.value) != 0) ?
+                          qsTr("Speed in m/s: %1").arg(slidSpeed.value.toFixed(0)) :
+                          qsTr("Speed in m/s: %1").arg(slidSpeed.value.toFixed(2))
                 anchors.bottom:parent.top
-                font.pointSize: 16
+                font.pointSize: mediumSize
                 color:'white'
             }
         }
@@ -652,7 +668,7 @@ ActivityBase {
             width: parent.width * 0.1
             visible:false
             onClicked: Activity.calcparameters()
-            text : "<b>LAUNCH IT NOW !!</b>"
+            text : qsTr("LAUNCH IT NOW !!")
         }
 
 

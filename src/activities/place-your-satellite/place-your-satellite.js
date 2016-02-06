@@ -1,11 +1,10 @@
-
 /* GCompris - place-your-satellite.js
 *
-* Copyright (C) 2014 <YOUR NAME HERE>
+* Copyright (C) 2014 JB Butet
 *
 * Authors:
-*   <THE GTK VERSION AUTHOR> (GTK+ version)
-*   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+*   Matilda Bernard (seah4291@gmail.com) (GTK+ version)
+*   JB Butet <ashashiwa@gmail.com> (Qt Quick port)
 *
 *   This program is free software; you can redistribute it and/or modify
 *   it under the terms of the GNU General Public License as published by
@@ -21,9 +20,19 @@
 *   along with this program; if not, see <http://www.gnu.org/licenses/>.
 */
 
-var planetDataset = [['EARTH', 6e24, '12800000'], ['SATURN', 6e26, '116464000'], ['JUPITER', 2e27, '139822000'], ['SUN', 2e30, '1391684000'], ['67PComet', 1e13, '4000']]
+var planetDataset = [
+            ['EARTH', 6e24, '12800000'],
+            ['SATURN', 6e26, '116464000'],
+            ['JUPITER', 2e27, '139822000'],
+            ['SUN', 2e30, '1391684000'],
+            ['67PComet', 1e13, '4000']
+        ]
 
-var satelliteDataset = [['InternationalSpaceShip', '400000'], ['Rosetta', '3000'], ['Hubble','11000']]
+var satelliteDataset = [
+            ['InternationalSpaceShip', '400000'],
+            ['Rosetta', '3000'],
+            ['Hubble','11000']
+        ]
 
 var url = "qrc:/gcompris/src/activities/place-your-satellite/"
 
@@ -217,9 +226,10 @@ function extractXY(yout){
     listPoints = []
     listPointsPix = []
     for (var j=0; j<points.length; j++){
-        if(j%8==0){ //we draw only one point over 8
+        if(j % 8 == 0){ //we draw only one point over 8
             listPoints[j/8] = points[j].slice(0,2)
-            listPointsPix[j/8] = [pixPerMeter*listPoints[j/8][0], pixPerMeter*listPoints[j/8][1]]
+            listPointsPix[j/8] = [pixPerMeter*listPoints[j/8][0],
+                                  pixPerMeter*listPoints[j/8][1]]
         }
     }
     items.trajecCanvas.requestPaint()
@@ -241,13 +251,24 @@ function calcul(){
 //return 3d gravitationnal field at a position x by a object positionned at x0.
 function gravField(x,x0,m){
 
-    return  [-0.0000000000667*m*(x[0]-x0[0])/Math.pow(Math.pow((x[0]-x0[0]),2)+Math.pow((x[1]-x0[1]),2)+Math.pow((x[2]-x0[2]),2),1.5),
-                       -0.0000000000667*m*(x[1]-x0[1])/Math.pow(((x[0]-x0[0])*(x[0]-x0[0])+(x[1]-x0[1])*(x[1]-x0[1])+(x[2]-x0[2])*(x[2]-x0[2])),1.5),
-                       -0.0000000000667*m*(x[2]-x0[2])/Math.pow((Math.pow((x[0]-x0[0]),2)+Math.pow((x[1]-x0[1]),2)+Math.pow((x[2]-x0[2]),2)),1.5)]
+    return  [
+                -0.0000000000667*m*(x[0]-x0[0]) /
+                Math.pow(Math.pow((x[0]-x0[0]),2) +
+                         Math.pow((x[1]-x0[1]),2) +
+                         Math.pow((x[2]-x0[2]),2),1.5),
+                -0.0000000000667*m*(x[1]-x0[1]) /
+                Math.pow(((x[0]-x0[0]) *
+                          (x[0]-x0[0])+(x[1]-x0[1]) *
+                          (x[1]-x0[1])+(x[2]-x0[2]) *
+                          (x[2]-x0[2])),1.5),
+                -0.0000000000667*m*(x[2]-x0[2]) /
+                Math.pow((Math.pow((x[0]-x0[0]),2) +
+                          Math.pow((x[1]-x0[1]),2) +
+                          Math.pow((x[2]-x0[2]),2)),1.5)
+            ]
 }
 
 function satChanged(satNb) {
-
     satObjectName = satelliteDataset[satNb][0]
     satObjectMass = satelliteDataset[satNb][1]
     satObjectDiameter = satelliteDataset[satNb][2]
