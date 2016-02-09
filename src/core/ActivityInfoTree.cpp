@@ -288,7 +288,7 @@ void ActivityInfoTree::init()
 
 
 }
-void ActivityInfoTree::display(const QString& text)
+void ActivityInfoTree::filterBySearch(const QString& text)
 {
 
     if(text.trimmed().length() < m_searchedtext.length() or text.trimmed() == ""){
@@ -302,14 +302,19 @@ void ActivityInfoTree::display(const QString& text)
 
 
 
-    if(!text.trimmed().isEmpty() and text.length() != m_searchedtext.length())
+    if(!text.trimmed().isEmpty() and text.length() != m_searchedtext.length()){
         m_menuTree.erase(std::remove_if(m_menuTree.begin(),m_menuTree.end(),
                                         [&](ActivityInfo* activity){
-                             if(!activity->title().contains(text.trimmed(),Qt::CaseInsensitive))
-                                 return true;
+                             if(!activity->title().contains(text.trimmed(),Qt::CaseInsensitive)){
+                                 if(!activity->name().contains(text.trimmed(),Qt::CaseInsensitive))
+                                       return true;
+                                 else
+                                    return false;
+                             }
                              else
                                  return false;
                          }),m_menuTree.end());
+    }
 
     else{
            m_menuTree = m_searched;

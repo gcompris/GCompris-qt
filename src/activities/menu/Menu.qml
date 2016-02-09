@@ -47,7 +47,6 @@ ActivityBase {
     id: menuActivity
     focus: true
     activityInfo: ActivityInfoTree.rootMenu
-    signal textchanged(string message)
     onBack: {
         pageView.pop(to);
         // Restore focus that has been taken by the loaded activity
@@ -242,7 +241,7 @@ ActivityBase {
 
                                    section.currentIndex = index
                                    menuActivity.currentTag = modelData.tag
-                                   ActivityInfoTree.display(input.text);
+                                   ActivityInfoTree.filterBySearch(input.text);
                                }
                                else
                                {
@@ -540,15 +539,10 @@ ActivityBase {
                 horizontalAlignment: TextInput.AlignHCenter
                 verticalAlignment: TextInput.AlignVCenter
                 font.family:GCSingletonFontLoader.fontLoader.name
-                activeFocusOnPress:  ApplicationSettings.isVirtualKeyboard ? false: true
+                activeFocusOnPress:  !ApplicationSettings.isVirtualKeyboard
                 onTextChanged:
                 {
                     ActivityInfoTree.display(input.text)
-                }
-
-                GCText
-                {
-                    id: gctext
                 }
             }
         }
