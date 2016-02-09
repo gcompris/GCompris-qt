@@ -542,7 +542,7 @@ ActivityBase {
                 activeFocusOnPress:  !ApplicationSettings.isVirtualKeyboard
                 onTextChanged:
                 {
-                    ActivityInfoTree.display(input.text)
+                    ActivityInfoTree.filterBySearch(input.text)
                 }
             }
         }
@@ -564,27 +564,20 @@ ActivityBase {
              }
             onKeypress:
             {
-                processKeyPress(text);
-
-                function processKeyPress(text_){
-                    var string  = text_
-                    if ( string == keyboard.backspace) {
-                        backspace(string)
-                        return
-                    }
-                    if (string == keyboard.space)
-                    {
+                var string  = text_
+                if ( string == keyboard.backspace){
+                     backspace(string)
+                     return
+                }
+                if (string == keyboard.space){
                         space(string)
                         return
-                    }
-                    input.text = input.text.concat(string);
-
                 }
+                input.text = input.text.concat(string);
+
                 function backspace(string_)
                 {
-                    input.text = input.text.slice(0,-1);
-
-
+                        input.text = input.text.slice(0,-1);
                 }
                 function space(string_)
                 {
