@@ -47,7 +47,6 @@ ActivityBase {
     id: menuActivity
     focus: true
     activityInfo: ActivityInfoTree.rootMenu
-    objectName: "menu"
     signal textchanged(string message)
     onBack: {
         pageView.pop(to);
@@ -67,8 +66,6 @@ ActivityBase {
                 focus = true;
         }
     }
-
-
 
     onDisplayDialog: pageView.push(dialog)
 
@@ -354,7 +351,7 @@ ActivityBase {
                 bottom: bar.top
                 left: horizontal ? parent.left : section.right
                 margins: 4
-                }
+            }
             width: background.width
             cellWidth: activityCellWidth
             cellHeight: activityCellHeight

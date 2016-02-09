@@ -31,7 +31,8 @@
 #include <QQmlPropertyMap>
 #include <QQmlEngine>
 #include <QtGlobal>
-#include <QQuickWindow>
+
+class QQuickWindow;
 
 
 /**
