@@ -224,9 +224,4 @@ Item {
         anchors.fill: parent
         active: !activityInfo.demo && ApplicationSettings.isDemoMode
     }
-
-
-
-
-
 }
