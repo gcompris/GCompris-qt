@@ -31,11 +31,12 @@ class ActivityInfoTree : public QObject
 	Q_PROPERTY(ActivityInfo* rootMenu READ getRootMenu CONSTANT)
 	Q_PROPERTY(QQmlListProperty<ActivityInfo> menuTree READ menuTree NOTIFY menuTreeChanged)
     Q_PROPERTY(ActivityInfo* currentActivity READ getCurrentActivity WRITE setCurrentActivity NOTIFY currentActivityChanged)
+    Q_PROPERTY(QVariantList characters READ allCharacters)
 
 public:
 	explicit ActivityInfoTree(QObject *parent = 0);
 	QQmlListProperty<ActivityInfo> menuTree();
-	ActivityInfo *getRootMenu() const;
+    ActivityInfo *getRootMenu() const;
 	void setRootMenu(ActivityInfo *rootMenu);
 	ActivityInfo *menuTree(int) const;
 	void setCurrentActivity(ActivityInfo *currentActivity);
@@ -46,13 +47,14 @@ public:
 						const QDir &menuDir, const QString &menuFile);
 	void sortByDifficulty();
 	void sortByName();
-    Q_INVOKABLE void beginsearch();
+    QVariantList allCharacters();
+    QVariantList keyboardcharacters;
 
 protected slots:
     Q_INVOKABLE void filterByTag(const QString &tag);
     Q_INVOKABLE void filterLockedActivities();
     Q_INVOKABLE void filterEnabledActivities();
-    Q_INVOKABLE void display(QString text);
+    Q_INVOKABLE void display(const QString& text);
 
 signals:
 	void menuTreeChanged();
@@ -69,9 +71,7 @@ private:
     ActivityInfo *m_currentActivity;
     static int menuTreeCount(QQmlListProperty<ActivityInfo> *property);
     static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, int index);
-    QObject *m_mainWindow;
-    int templength = 0;
-    QString searchedtext;
+    QString m_searchedtext;
 
 	struct SortByDifficulty
 	{

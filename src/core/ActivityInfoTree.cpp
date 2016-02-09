@@ -28,11 +28,6 @@
 #include <QStandardPaths>
 #include <QCoreApplication>
 #include <QTextStream>
-#include <time.h>
- #include <QTime>
-#include<chrono>
-
-using namespace std::chrono;
 ActivityInfoTree::ActivityInfoTree(QObject *parent) : QObject(parent),
 	m_currentActivity(NULL)
 {}
@@ -150,7 +145,7 @@ void ActivityInfoTree::filterByTag(const QString &tag)
             m_menuTree.push_back(activity);
         }
     }
-    if (searchedtext.trimmed()== "")
+    if (m_searchedtext.trimmed()== "")
            m_searched.clear();
     sortByDifficulty();
     emit menuTreeChanged();
@@ -278,122 +273,36 @@ void ActivityInfoTree::init()
 
     qmlRegisterSingletonType<QObject>("GCompris", 1, 0, "ActivityInfoTree", menuTreeProvider);
     qmlRegisterType<ActivityInfo>("GCompris", 1, 0, "ActivityInfo");
-}
-void ActivityInfoTree::beginsearch()
-{
 
-     m_menuTree = m_searched;
-     emit menuTreeChanged();
-     m_mainWindow = ApplicationInfo::getWindow()->findChild<QObject*>("menu");
-     QObject::connect(m_mainWindow,SIGNAL(textchanged(QString)),this,SLOT(display(QString)));
 
 }
-void ActivityInfoTree::display(QString text)
+void ActivityInfoTree::display(const QString& text)
 {
-//    int end,length,start = 0;
 
-
-
-//       searchedtext = text;
-//       end = m_menuTreeFulltemp.length();
-//       length = text.length(); // length of the  string . i.e text in the textfield
-//       m_menuTree.clear();
-
-//       // templength = length of string that was there in the textfield before the present string
-//       // if user erases a character from a string ,the search needs to be performed on all the activities
-//       if(length < templength)
-//       {
-
-//           m_menuTreeFulltemp = m_menuTreeFull;
-//           end = m_menuTreeFulltemp.length();
-//       }
-
-//       if(text.trimmed() == "")
-//       {
-//           m_menuTree.clear();
-//           m_menuTreeFulltemp = m_menuTreeFull;
-//           templength = 0;
-//           emit menuTreeChanged();
-//       }
-//       else
-//       {
-
-//           while(start != end )
-//           {
-//               // if there is any activity that matches the description push it into the m_menutree
-//               if(m_menuTreeFulltemp.at(start)->title().contains(text.trimmed(),Qt::CaseInsensitive))
-//               {
-//                   m_menuTree.push_back(m_menuTreeFulltemp.at(start));
-
-
-//               }
-//               // remove the activities that do not match the description.this is to optimize the search.
-//               // ex: if a user searchs for an activity with a string containing "number" in it ,search will be  perfomed only on those
-//               // activities that contain "numbe" in them because all the activities that don't have "numbe" in them will be removed
-//               else
-//               {
-
-//                   m_menuTreeFulltemp.removeAt(start);
-//                   start = start - 1;
-//                   end = m_menuTreeFulltemp.length();
-//              }
-
-
-//               start++;
-//           }
-//           m_searched = m_menuTree;
-//           templength = length;
-//           sortByDifficulty();
-//           filterEnabledActivities();
-//           filterLockedActivities();
-
-//       }
-
-    int length,start = 0 ;
-
-    length = text.length();
-    searchedtext = text;
-    m_menuTree = m_searched;
-
-
-    if(length < templength)
-    {
-        m_menuTree = m_menuTreeFull;
-
-    }
-    if(text.trimmed().isEmpty())
-    {
-        m_menuTree = m_menuTreeFull;
-        templength = 0 ;
-
-    }
-    else
-    {
-
-        if(length != templength)
-        {
-            high_resolution_clock::time_point t1 = high_resolution_clock::now();
-
-            while(start != m_menuTree.length())
-            {
-
-                if(!m_menuTree.at(start)->title().contains(text.trimmed(),Qt::CaseInsensitive))
-                {
-                    m_menuTree.removeAt(start);
-                    start = start - 1;
-
-                }
-                start ++;
-
-            }
-            high_resolution_clock::time_point t2 = high_resolution_clock::now();
-            auto duration = duration_cast<microseconds>( t2 - t1 ).count();
-            qDebug()<<endl<<duration;
+    if(text.trimmed().length() < m_searchedtext.length() or text.trimmed() == ""){
+        if(text.trimmed() == ""){
+            m_searchedtext = "";
+            m_searched = m_menuTreeFull;
         }
-        templength = length;
 
+        m_menuTree = m_menuTreeFull;
     }
 
+
+
+    if(!text.trimmed().isEmpty() and text.length() != m_searchedtext.length())
+        m_menuTree.erase(std::remove_if(m_menuTree.begin(),m_menuTree.end(),
+                                        [&](ActivityInfo* activity){
+                             if(!activity->title().contains(text.trimmed(),Qt::CaseInsensitive))
+                                 return true;
+                             else
+                                 return false;
+                         }),m_menuTree.end());
+
+    else{
+           m_menuTree = m_searched;
+    }
+    m_searchedtext = text;
     m_searched = m_menuTree;
     filterEnabledActivities();
     filterLockedActivities();
@@ -401,3 +310,29 @@ void ActivityInfoTree::display(QString text)
     emit menuTreeChanged();
 
 }
+QVariantList  ActivityInfoTree::allCharacters()
+{
+    int i = 0;
+    QSet<QString> keyboardchars;
+    QString templetter;
+    foreach(auto tree,m_menuTreeFull)
+    {
+        auto title = tree->title();
+        for (int j = 0 ; j!= title.length(); j++)
+        {
+            if(!title.at(j).isSpace() and !title.at(j).isPunct())
+            {
+                templetter = title.at(j).toLower();
+                keyboardchars.insert(templetter);
+            }
+        }
+    }
+    foreach(const QString &letters, keyboardchars)
+    {
+        keyboardcharacters.push_back(letters);
+    }
+    std::sort(keyboardcharacters.begin(),keyboardcharacters.end());
+
+    return keyboardcharacters;
+}
+
