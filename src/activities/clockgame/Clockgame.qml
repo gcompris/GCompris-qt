@@ -103,19 +103,30 @@ ActivityBase {
             GCText {
                 id: questionItem
                 text: qsTr("Set the watch to:") + " " +
-                      Activity.get2CharValue(
-                          items.targetH) + ":" + Activity.get2CharValue(
-                          items.targetM) + ":" + Activity.get2CharValue(
-                          items.targetS)
+                      //~ singular %n hour
+                      //~ plural %n hours
+                      addNbsp(qsTr("%n hour(s)", "", items.targetH)) + " " +
+                      //~ singular %n minute
+                      //~ plural %n minutes
+                      addNbsp(qsTr("%n&nbsp;minute(s)", "", items.targetM)) +
+                      //~ singular %n second
+                      //~ plural %n seconds
+                      (s.visible ? " " + addNbsp(qsTr("%n second(s)", "", items.targetS)) : "")
                 fontSize: 18
+                textFormat: Text.RichText
                 font.weight: Font.DemiBold
                 color: "white"
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WordWrap
+                width: clock.width
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                     top: parent.top
                     margins: 10
+                }
+                // We don't want the wrapping to happen anywhere, set no break space
+                function addNbsp(str) {
+                    return str.replace(" ", "&nbsp;");
                 }
             }
         }
