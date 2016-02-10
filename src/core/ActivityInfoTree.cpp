@@ -99,7 +99,6 @@ ActivityInfo *ActivityInfoTree::getParentActivity(ActivityInfo *root, ActivityIn
 void ActivityInfoTree::menuTreeAppend(ActivityInfo *menu)
 {
     m_menuTreeFull.append(menu);
-    m_menuTreeFulltemp = m_menuTreeFull;
 }
 
 void ActivityInfoTree::menuTreeAppend(QQmlEngine *engine,
@@ -137,26 +136,16 @@ void ActivityInfoTree::filterByTag(const QString &tag)
 {
     m_menuTree.clear();
     for(auto activity: m_menuTreeFull) {
-        if((activity->section().indexOf(tag) != -1 ||
-			tag == "all" ||
-            (tag == "favorite" && activity->favorite()))) {
-            filterByDifficulty(activity,ApplicationSettings::getInstance()->filterLevelMin(),
-                               ApplicationSettings::getInstance()->filterLevelMax());
-
+            if((activity->section().indexOf(tag) != -1 ||
+                tag == "all" ||
+                (tag == "favorite" && activity->favorite())) &&
+                (activity->difficulty() >= ApplicationSettings::getInstance()->filterLevelMin() &&
+                 activity->difficulty() <= ApplicationSettings::getInstance()->filterLevelMax())) {
+                m_menuTree.push_back(activity);
+            }
         }
-    }
-    if (m_searchedtext.trimmed()== "")
-           m_searched.clear();
     sortByDifficulty();
     emit menuTreeChanged();
-}
-void ActivityInfoTree::filterByDifficulty(ActivityInfo* activity, int levelMin, int levelMax)
-{
-
-        if(activity->difficulty() >= levelMin && activity->difficulty() <=levelMax){
-            m_menuTree.push_back(activity);
-        }
-
 }
 void ActivityInfoTree::filterByDifficulty(const int &levelMin,const int &levelMax)
 {
@@ -305,46 +294,31 @@ void ActivityInfoTree::init()
 
 
 }
-void ActivityInfoTree::filterBySearch(const QString& text,int cursorPosition)
+void ActivityInfoTree::filterBySearch(const QString& text)
 {
+    m_searchedActivities.clear();
+    m_menuTree = m_menuTreeFull;
+    if(!text.trimmed().isEmpty()){
 
-    if(text.trimmed().length() < m_searchedtext.length() or text.trimmed() == ""
-            or text.length() != cursorPosition ){
-        if(text.trimmed() == ""){
-            m_searchedtext = "";
-            m_searched = m_menuTreeFull;
+        foreach(auto activity,m_menuTree)
+        {
+            if(activity->title().contains(text.trimmed(),Qt::CaseInsensitive) or
+                    activity->name().contains(text.trimmed(),Qt::CaseInsensitive) or
+                    activity->description().contains(text.trimmed(),Qt::CaseInsensitive)){
+
+                m_searchedActivities.push_back(activity);
+            }
         }
 
-        m_menuTree = m_menuTreeFull;
     }
-
-
-
-    if(!text.trimmed().isEmpty() and text.length() != m_searchedtext.length()){
-        m_menuTree.erase(std::remove_if(m_menuTree.begin(),m_menuTree.end(),
-                                        [&](ActivityInfo* activity){
-                             if(!activity->title().contains(text.trimmed(),Qt::CaseInsensitive)){
-                                 if(!activity->name().contains(text.trimmed(),Qt::CaseInsensitive))
-                                       return true;
-                                 else
-                                    return false;
-                             }
-                             else
-                                 return false;
-                         }),m_menuTree.end());
-    }
-
-    else{
-           m_menuTree = m_searched;
-    }
-    m_searchedtext = text;
-    m_searched = m_menuTree;
+    else
+        m_searchedActivities = m_menuTreeFull;
+    m_menuTree = m_searchedActivities;
     filterEnabledActivities();
     filterLockedActivities();
     filterByDifficulty(ApplicationSettings::getInstance()->filterLevelMin(),ApplicationSettings::getInstance()->filterLevelMax());
     sortByDifficulty();
     emit menuTreeChanged();
-
 }
 QVariantList  ActivityInfoTree::allCharacters()
 {
@@ -352,11 +326,9 @@ QVariantList  ActivityInfoTree::allCharacters()
     foreach(auto tree,m_menuTreeFull)
     {
         auto title = tree->title();
-        for (int j = 0 ; j!= title.length(); j++)
-        {
-            if(!title.at(j).isSpace() and !title.at(j).isPunct())
-            {
-                keyboardchars.insert(title.at(j).toLower());
+        foreach(const QChar letter,title){
+            if(!letter.isSpace() and !letter.isPunct()){
+                keyboardchars.insert(letter.toLower());
             }
         }
     }
