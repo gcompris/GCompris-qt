@@ -139,10 +139,10 @@ void ActivityInfoTree::filterByTag(const QString &tag)
     for(auto activity: m_menuTreeFull) {
         if((activity->section().indexOf(tag) != -1 ||
 			tag == "all" ||
-            (tag == "favorite" && activity->favorite())) &&
-            (activity->difficulty() >= ApplicationSettings::getInstance()->filterLevelMin() &&
-             activity->difficulty() <= ApplicationSettings::getInstance()->filterLevelMax())) {
-            m_menuTree.push_back(activity);
+            (tag == "favorite" && activity->favorite()))) {
+            filterByDifficulty(activity,ApplicationSettings::getInstance()->filterLevelMin(),
+                               ApplicationSettings::getInstance()->filterLevelMax());
+
         }
     }
     if (m_searchedtext.trimmed()== "")
@@ -150,7 +150,24 @@ void ActivityInfoTree::filterByTag(const QString &tag)
     sortByDifficulty();
     emit menuTreeChanged();
 }
+void ActivityInfoTree::filterByDifficulty(ActivityInfo* activity, int levelMin, int levelMax)
+{
 
+        if(activity->difficulty() >= levelMin && activity->difficulty() <=levelMax){
+            m_menuTree.push_back(activity);
+        }
+
+}
+void ActivityInfoTree::filterByDifficulty(const int &levelMin,const int &levelMax)
+{
+    auto it = std::remove_if(m_menuTree.begin(),m_menuTree.end(),[&](const ActivityInfo* activity)
+                                        {
+                                             if(activity->difficulty() >= levelMin and activity->difficulty() <= levelMax)
+                                                 return false;
+                                             else return true;
+                                        });
+        m_menuTree.erase(it,m_menuTree.end());
+}
 void ActivityInfoTree::filterLockedActivities()
 {
     // If we have the full version or if we show all the activities, we don't need to do anything
@@ -288,10 +305,11 @@ void ActivityInfoTree::init()
 
 
 }
-void ActivityInfoTree::filterBySearch(const QString& text)
+void ActivityInfoTree::filterBySearch(const QString& text,int cursorPosition)
 {
 
-    if(text.trimmed().length() < m_searchedtext.length() or text.trimmed() == ""){
+    if(text.trimmed().length() < m_searchedtext.length() or text.trimmed() == ""
+            or text.length() != cursorPosition ){
         if(text.trimmed() == ""){
             m_searchedtext = "";
             m_searched = m_menuTreeFull;
@@ -323,15 +341,14 @@ void ActivityInfoTree::filterBySearch(const QString& text)
     m_searched = m_menuTree;
     filterEnabledActivities();
     filterLockedActivities();
+    filterByDifficulty(ApplicationSettings::getInstance()->filterLevelMin(),ApplicationSettings::getInstance()->filterLevelMax());
     sortByDifficulty();
     emit menuTreeChanged();
 
 }
 QVariantList  ActivityInfoTree::allCharacters()
 {
-    int i = 0;
     QSet<QString> keyboardchars;
-    QString templetter;
     foreach(auto tree,m_menuTreeFull)
     {
         auto title = tree->title();
@@ -339,8 +356,7 @@ QVariantList  ActivityInfoTree::allCharacters()
         {
             if(!title.at(j).isSpace() and !title.at(j).isPunct())
             {
-                templetter = title.at(j).toLower();
-                keyboardchars.insert(templetter);
+                keyboardchars.insert(title.at(j).toLower());
             }
         }
     }
