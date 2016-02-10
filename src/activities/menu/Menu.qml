@@ -78,7 +78,6 @@ ActivityBase {
 
     // @cond INTERNAL_DOCS
     property string url: "qrc:/gcompris/src/activities/menu/resource/"
-    property int  cursorPosition: 0
     property  string inputText: ""
     property variant sections: [
         {
@@ -243,7 +242,7 @@ ActivityBase {
 
                                    section.currentIndex = index
                                    menuActivity.currentTag = modelData.tag
-                                   ActivityInfoTree.filterBySearch(input.text,input.cursorPosition);
+                                   ActivityInfoTree.filterBySearch(input.text);
                                }
                                else
                                {
@@ -541,9 +540,8 @@ ActivityBase {
                 activeFocusOnPress:  !ApplicationSettings.isVirtualKeyboard
                 onTextChanged:
                 {
-                    menuActivity.cursorPosition = input.cursorPosition;
                     menuActivity.inputText = input.text;
-                    ActivityInfoTree.filterBySearch(input.text,input.cursorPosition);
+                    ActivityInfoTree.filterBySearch(input.text);
                 }
             }
         }
@@ -678,7 +676,7 @@ ActivityBase {
                 ActivityInfoTree.filterEnabledActivities()
             }
             else
-                ActivityInfoTree.filterBySearch(menuActivity.inputText,menuActivity.cursorPosition);
+                ActivityInfoTree.filterBySearch(menuActivity.inputText);
             home()
         }
     }
