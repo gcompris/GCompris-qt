@@ -78,6 +78,8 @@ ActivityBase {
 
     // @cond INTERNAL_DOCS
     property string url: "qrc:/gcompris/src/activities/menu/resource/"
+    property int  cursorPosition: 0
+    property  string inputText: ""
     property variant sections: [
         {
             icon: menuActivity.url + "all.svg",
@@ -241,7 +243,7 @@ ActivityBase {
 
                                    section.currentIndex = index
                                    menuActivity.currentTag = modelData.tag
-                                   ActivityInfoTree.filterBySearch(input.text);
+                                   ActivityInfoTree.filterBySearch(input.text,input.cursorPosition);
                                }
                                else
                                {
@@ -449,7 +451,6 @@ ActivityBase {
                     MouseArea {
                         anchors.fill: parent
                         onClicked: favorite = !favorite
-
                     }
                 }
 
@@ -501,8 +502,7 @@ ActivityBase {
         }
 
 
-        Rectangle
-        {
+        Rectangle{
             id: searchbar
             width: horizontal ? parent.width/2 : parent.width - (section.width+10)
             height: horizontal ? parent.height/10 : parent.height/17
@@ -528,8 +528,7 @@ ActivityBase {
 
            }
 
-            TextField
-            {
+            TextField{
                 id : input
                 anchors.fill: parent
                 text: ""
@@ -542,13 +541,14 @@ ActivityBase {
                 activeFocusOnPress:  !ApplicationSettings.isVirtualKeyboard
                 onTextChanged:
                 {
-                    ActivityInfoTree.filterBySearch(input.text)
+                    menuActivity.cursorPosition = input.cursorPosition;
+                    menuActivity.inputText = input.text;
+                    ActivityInfoTree.filterBySearch(input.text,input.cursorPosition);
                 }
             }
         }
 
-        VirtualKeyboard
-        {
+        VirtualKeyboard{
             id:keyboard
             parent: background
             property string search;
@@ -564,7 +564,7 @@ ActivityBase {
              }
             onKeypress:
             {
-                var string  = text_
+                var string  = text
                 if ( string == keyboard.backspace){
                      backspace(string)
                      return
@@ -625,9 +625,6 @@ ActivityBase {
                return layout;
 
            }
-
-
-
         }
 
         Bar {
@@ -680,6 +677,8 @@ ActivityBase {
                 ActivityInfoTree.filterLockedActivities()
                 ActivityInfoTree.filterEnabledActivities()
             }
+            else
+                ActivityInfoTree.filterBySearch(menuActivity.inputText,menuActivity.cursorPosition);
             home()
         }
     }
