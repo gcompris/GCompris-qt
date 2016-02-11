@@ -296,24 +296,22 @@ void ActivityInfoTree::init()
 }
 void ActivityInfoTree::filterBySearch(const QString& text)
 {
-    m_searchedActivities.clear();
-    m_menuTree = m_menuTreeFull;
+    m_menuTree.clear();
     if(!text.trimmed().isEmpty()){
 
-        foreach(auto activity,m_menuTree)
+        foreach(auto activity,m_menuTreeFull)
         {
             if(activity->title().contains(text.trimmed(),Qt::CaseInsensitive) or
                     activity->name().contains(text.trimmed(),Qt::CaseInsensitive) or
                     activity->description().contains(text.trimmed(),Qt::CaseInsensitive)){
 
-                m_searchedActivities.push_back(activity);
+                m_menuTree.push_back(activity);
             }
         }
 
     }
     else
-        m_searchedActivities = m_menuTreeFull;
-    m_menuTree = m_searchedActivities;
+        m_menuTree = m_menuTreeFull;
     filterEnabledActivities();
     filterLockedActivities();
     filterByDifficulty(ApplicationSettings::getInstance()->filterLevelMin(),ApplicationSettings::getInstance()->filterLevelMax());
