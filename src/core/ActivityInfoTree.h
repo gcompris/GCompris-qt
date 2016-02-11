@@ -72,10 +72,9 @@ private:
     ActivityInfo *m_currentActivity;
     static int menuTreeCount(QQmlListProperty<ActivityInfo> *property);
     static ActivityInfo *menuTreeAt(QQmlListProperty<ActivityInfo> *property, int index);
-    QList<ActivityInfo *> m_searchedActivities;
 
-	struct SortByDifficulty
-	{
+    struct SortByDifficulty
+    {
 		bool operator()(const ActivityInfo *a, const ActivityInfo *b) const
 		{
 			return a->difficulty() < b->difficulty();
