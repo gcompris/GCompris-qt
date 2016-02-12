@@ -39,7 +39,7 @@ then
     exit 1
 fi
 
-# Param: ANDROID_ABI WITH_ACTIVATION_CODE DEMO_ONLY DOWNLOAD KIOSK_MODE
+# Param: ANDROID_ARCHITECTURE WITH_ACTIVATION_CODE DEMO_ONLY DOWNLOAD KIOSK_MODE
 f_cmake()
 {
     if [ $# != 5 ]
@@ -57,9 +57,9 @@ f_cmake()
         rm -rf CMakeFiles
     fi
 
-    cmake -DCMAKE_TOOLCHAIN_FILE=../platforms/android.cmake \
+    cmake -DCMAKE_TOOLCHAIN_FILE=/usr/share/ECM/toolchain/Android.cmake \
 	  -DCMAKE_BUILD_TYPE=release \
-	  -DANDROID_ABI=$1 \
+	  -DANDROID_ARCHITECTURE=$1 \
 	  -DQt5_DIR=${Qt5_BaseDIR}/${QtTarget}/lib/cmake/Qt5 \
 	  -Wno-dev \
 	  -DQML_BOX2D_MODULE=submodule \
