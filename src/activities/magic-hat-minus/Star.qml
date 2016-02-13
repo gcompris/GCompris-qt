@@ -65,8 +65,8 @@ Item {
     Image {
         id: starImg
         source: Activity.url + "star-clear.svg"
-        width: contour.width - 4
-        height: contour.height - 4
+        sourceSize.width: contour.width - 4
+        sourceSize.height: contour.height - 4
         anchors.centerIn: contour
         fillMode: Image.PreserveAspectFit
         opacity: 1

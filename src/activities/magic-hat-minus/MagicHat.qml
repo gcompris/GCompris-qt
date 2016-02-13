@@ -187,7 +187,7 @@ ActivityBase {
                         barGroupIndex: 2
                         barIndex: index
                         width: rightLayout.width
-                        backgroundColor: "#CCDDFFAA"
+                        backgroundColor: "#53b9c9"
                         starsColor: starColors[index]
                         authorizeClick: false
                         theHat: items.hat
