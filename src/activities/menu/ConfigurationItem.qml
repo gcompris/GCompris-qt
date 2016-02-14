@@ -375,6 +375,8 @@ Item {
             GCText {
                 id: voicesText
                 text: qsTr("Localized voices")
+                fontSize: mediumSize
+                wrapMode: Text.WordWrap
             }
 
             Image {
