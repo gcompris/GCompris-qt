@@ -1,5 +1,6 @@
 [Desktop Entry]
 Name=GCompris Educational Game
+Name[ar]=لعبة «فهمت» التّعليميّة
 Name[ca]=Joc educatiu GCompris
 Name[ca@valencia]=Joc educatiu GCompris
 Name[cs]=Výuková hra GCompris
@@ -28,6 +29,7 @@ Name[x-test]=xxGCompris Educational Gamexx
 Name[zh_CN]=GCompris 教育游戏
 Name[zh_TW]=GCompris 教育遊戲
 GenericName=Educational game
+GenericName[ar]=لعبة تعليميّة
 GenericName[ast]=Xuegu educativu
 GenericName[ca]=Joc educatiu
 GenericName[ca@valencia]=Joc educatiu
@@ -57,6 +59,7 @@ GenericName[x-test]=xxEducational gamexx
 GenericName[zh_CN]=教育游戏
 GenericName[zh_TW]=教育遊戲
 Comment=Multi-Activity Educational game for children 2 to 10
+Comment[ar]=لعبة تعليميّة متعدّدة الأنشطة للأطفال من سنتين إلى 10 سنوات
 Comment[ca]=Joc educatiu amb múltiples activitats per a nens dels 2 a 10 anys
 Comment[ca@valencia]=Joc educatiu amb múltiples activitats per a nens dels 2 a 10 anys
 Comment[de]=Lernspiel mit vielen Aktivitäten für Kinder von 2 bis 10 Jahren
