@@ -82,6 +82,7 @@
   <project_license xml:lang="zh-CN">GPL-3.0+</project_license>
   <project_license xml:lang="zh-TW">GPL-3.0+</project_license>
   <name>GCompris Educational Game</name>
+  <name xml:lang="ar">لعبة «فهمت» التّعليميّة</name>
   <name xml:lang="ca">Joc educatiu GCompris</name>
   <name xml:lang="ca-valencia">Joc educatiu GCompris</name>
   <name xml:lang="de">GCompris-Lernspiel</name>
@@ -108,6 +109,7 @@
   <name xml:lang="zh-CN">GCompris 教育游戏</name>
   <name xml:lang="zh-TW">GCompris 教育遊戲</name>
   <summary>Multi-Activity Educational game for children 2 to 10</summary>
+  <summary xml:lang="ar">لعبة تعليميّة متعدّدة الأنشطة للأطفال من سنتين إلى 10 سنوات</summary>
   <summary xml:lang="ca">Joc educatiu amb múltiples activitats per a nens dels 2 a 10 anys</summary>
   <summary xml:lang="ca-valencia">Joc educatiu amb múltiples activitats per a nens dels 2 a 10 anys</summary>
   <summary xml:lang="de">Lernspiel mit vielen Aktivitäten für Kinder von 2 bis 10 Jahren</summary>
@@ -136,6 +138,7 @@
   <description>
     <p>GCompris is an educational software suite comprising of
     numerous activities for children aged 2 to 10.</p>
+    <p xml:lang="ar">«فهمت» هو طقم برمجيّات تعليميّة يضمّ مختلف الأنشطة للأطفال من سنتين إلى 10 سنوات.</p>
     <p xml:lang="ca">El GCompris és una suite de programari educatiu que consisteix de nombroses activitats per a nens i nenes entre els 2 i els 10 anys.</p>
     <p xml:lang="ca-valencia">El GCompris és una suite de programari educatiu que consisteix de nombroses activitats per a nens i nenes entre els 2 i els 10 anys.</p>
     <p xml:lang="de">GCompris ist eine Lernsoftware, die verschiedene Aktivitäten für Kinder im Alter von 2 bis 10 Jahren anbietet.</p>
@@ -191,6 +194,7 @@
     <p xml:lang="zh-TW">有些活動是遊戲性質，但還是有很棒的教育意義。</p>
     <p>Below you can find a list of categories with some of the
     activities available in that category.</p>
+    <p xml:lang="ar">يمكنك أن تجد أدناه قائمة بالفئات وبعض الأنشطة الموجودة في كلّ فئة.</p>
     <p xml:lang="ca">A continuació trobareu una llista de les categories amb algunes de les activitats disponibles en cadascuna.</p>
     <p xml:lang="ca-valencia">A continuació trobareu una llista de les categories amb algunes de les activitats disponibles en cadascuna.</p>
     <p xml:lang="de">Sie können Aktivitäten aus folgenden Bereichen in GCompris finden:</p>
@@ -218,6 +222,7 @@
     <p xml:lang="zh-TW">下方您可以看到該類別的活動清單。</p>
     <ul>
       <li>computer discovery: keyboard, mouse, different mouse gestures, ...</li>
+      <li xml:lang="ar">استكشاف الحاسوب: لوحة المفاتيح، الفأرة، مختلف إيماءات الفأرة، وغيرها</li>
       <li xml:lang="ca">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí...</li>
       <li xml:lang="ca-valencia">descobrir l'ordinador: teclat, ratolí, diferents gestos del ratolí...</li>
       <li xml:lang="de">Entdeckung des Computers: Tastatur, Maus, verschiedene Mausgesten ...</li>
@@ -350,6 +355,7 @@
       <li xml:lang="zh-TW">閱讀：閱讀練習等等</li>
       <li>other: learn to tell time, the braille system, maze, music
     instruments, ...</li>
+      <li xml:lang="ar">أخرى: تعلّم الإخبار عن الوقت، نظام بريل، المتاهة، الآلات الموسيقيّة، وغيرها</li>
       <li xml:lang="ca">altres: aprendre a dir l'hora, el sistema braille, laberint, instruments musicals...</li>
       <li xml:lang="ca-valencia">altres: aprendre a dir l'hora, el sistema braille, laberint, instruments musicals...</li>
       <li xml:lang="de">Sonstiges: Uhrzeit, Braille-System, Labyrinthe, Musikinstrumente ...</li>
@@ -380,6 +386,7 @@
     are being developed. GCompris is free software, that means that
     you can adapt it to your own needs, improve it and, most
     importantly, share it with children everywhere.</p>
+    <p xml:lang="ar">توفّر «فهمت» حاليًّا أكثر من 100 نشاط وثمّة غيرها يجري تطويرها. «فهمت» برمجيّة حرّة، هذا يعني أنّك تستطيع تطويعها حسب احتياجك، وكذلك تطويرها، والأهم من ذلك هو مشاركتها مع الأطفال في كلّ مكان.</p>
     <p xml:lang="ca">Actualment el GCompris ofereix més de 100 activitats i encara se'n desenvolupen més. El GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb nens de tot arreu.</p>
     <p xml:lang="ca-valencia">Actualment el GCompris ofereix més de 100 activitats i encara se'n desenvolupen més. El GCompris és programari lliure, el qual vol dir que podeu adaptar-lo a les vostres pròpies necessitats, millorar-lo i, el més important, compartir-lo amb nens de tot arreu.</p>
     <p xml:lang="de">Insgesamt beinhaltet GCompris mehr als 100 Aktivitäten und wird ständig weiterentwickelt. GCompris ist freie Software. Sie haben also die Möglichkeit, sie ihren Bedürfnissen anzupassen und zu verbessern, und gerne auch alle Kinder der Welt von Ihrer Arbeit profitieren zu lassen.</p>
