@@ -117,7 +117,7 @@ ActivityBase {
                     capitalization: ApplicationSettings.fontCapitalization
                     weight: Font.DemiBold
                     family: GCSingletonFontLoader.fontLoader.name
-                    letterSpacing: 5
+                    letterSpacing: ApplicationSettings.fontLetterSpacing
                     wordSpacing: 10
                 }
                 cursorDelegate: Rectangle {

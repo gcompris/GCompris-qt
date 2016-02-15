@@ -128,4 +128,6 @@ Text {
                       + fontSize) * ApplicationInfo.fontRatio
     font.family: GCSingletonFontLoader.fontLoader.name
     font.capitalization: ApplicationSettings.fontCapitalization
+    font.letterSpacing: ApplicationSettings.fontLetterSpacing
+
 }

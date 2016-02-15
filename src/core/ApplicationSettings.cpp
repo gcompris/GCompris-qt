@@ -1,6 +1,6 @@
-/* GCompris - ApplicationSettingswordefault.cpp
+/* GCompris - ApplicationSettings.cpp
  *
- * Copyright (C) 2014 Johnny Jazeix <jazeix@gmail.com>
+ * Copyright (C) 2014-2016 Johnny Jazeix <jazeix@gmail.com>
  *
  * Authors:
  *   Johnny Jazeix <jazeix@gmail.com>
@@ -37,6 +37,7 @@
 
 #define GC_DEFAULT_FONT "Andika-R.ttf"
 #define GC_DEFAULT_FONT_CAPITALIZATION 0 // Font.MixedCase
+#define GC_DEFAULT_FONT_LETTER_SPACING 1
 
 static const QString GENERAL_GROUP_KEY = "General";
 static const QString ADMIN_GROUP_KEY = "Admin";
@@ -63,6 +64,7 @@ static const QString FILTER_LEVEL_MAX = "filterLevelMax";
 
 static const QString BASE_FONT_SIZE_KEY = "baseFontSize";
 static const QString FONT_CAPITALIZATION = "fontCapitalization";
+static const QString FONT_LETTER_SPACING = "fontLetterSpacing";
 
 static const QString DEFAULT_CURSOR = "defaultCursor";
 static const QString NO_CURSOR = "noCursor";
@@ -78,6 +80,7 @@ ApplicationSettings *ApplicationSettings::m_instance = NULL;
 
 ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
      m_baseFontSizeMin(-7), m_baseFontSizeMax(7),
+     m_fontLetterSpacingMin(0.0), m_fontLetterSpacingMax(8.0),
      m_config(QStandardPaths::writableLocation(QStandardPaths::GenericConfigLocation) +
               "/gcompris/" + GCOMPRIS_APPLICATION_NAME + ".conf", QSettings::IniFormat)
 {
@@ -93,6 +96,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     m_locale = m_config.value(LOCALE_KEY, GC_DEFAULT_LOCALE).toString();
     m_font = m_config.value(FONT_KEY, GC_DEFAULT_FONT).toString();
     m_fontCapitalization = m_config.value(FONT_CAPITALIZATION, GC_DEFAULT_FONT_CAPITALIZATION).toUInt();
+    setFontLetterSpacing(m_config.value(FONT_LETTER_SPACING, GC_DEFAULT_FONT_LETTER_SPACING).toReal());
     m_isEmbeddedFont = m_config.value(IS_CURRENT_FONT_EMBEDDED, true).toBool();
 
     // Init the activation mode
@@ -127,11 +131,11 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
             !ApplicationInfo::getInstance()->isMobile() && ApplicationInfo::isDownloadAllowed()).toBool();
     m_filterLevelMin = m_config.value(FILTER_LEVEL_MIN, 1).toUInt();
     m_filterLevelMax = m_config.value(FILTER_LEVEL_MAX, 6).toUInt();
-	m_defaultCursor = m_config.value(DEFAULT_CURSOR, false).toBool();
-	m_noCursor = m_config.value(NO_CURSOR, false).toBool();
+    m_defaultCursor = m_config.value(DEFAULT_CURSOR, false).toBool();
+    m_noCursor = m_config.value(NO_CURSOR, false).toBool();
     setBaseFontSize(m_config.value(BASE_FONT_SIZE_KEY, 0).toInt());
 
-	m_config.sync();  // make sure all defaults are written back
+    m_config.sync();  // make sure all defaults are written back
     m_config.endGroup();
 
     // admin group
@@ -158,7 +162,7 @@ ApplicationSettings::ApplicationSettings(QObject *parent): QObject(parent),
     connect(this, &ApplicationSettings::automaticDownloadsEnabledChanged, this, &ApplicationSettings::notifyAutomaticDownloadsEnabledChanged);
     connect(this, &ApplicationSettings::filterLevelMinChanged, this, &ApplicationSettings::notifyFilterLevelMinChanged);
     connect(this, &ApplicationSettings::filterLevelMaxChanged, this, &ApplicationSettings::notifyFilterLevelMaxChanged);
-	connect(this, &ApplicationSettings::sectionVisibleChanged, this, &ApplicationSettings::notifySectionVisibleChanged);
+    connect(this, &ApplicationSettings::sectionVisibleChanged, this, &ApplicationSettings::notifySectionVisibleChanged);
     connect(this, &ApplicationSettings::wordsetChanged, this, &ApplicationSettings::notifyWordsetChanged);
     connect(this, &ApplicationSettings::demoModeChanged, this, &ApplicationSettings::notifyDemoModeChanged);
     connect(this, &ApplicationSettings::kioskModeChanged, this, &ApplicationSettings::notifyKioskModeChanged);
@@ -174,7 +178,7 @@ ApplicationSettings::~ApplicationSettings()
     // general group
     m_config.beginGroup(GENERAL_GROUP_KEY);
     m_config.setValue(SHOW_LOCKED_ACTIVITIES_KEY, m_showLockedActivities);
-	m_config.setValue(ENABLE_AUDIO_VOICES_KEY, m_isAudioVoicesEnabled);
+    m_config.setValue(ENABLE_AUDIO_VOICES_KEY, m_isAudioVoicesEnabled);
     m_config.setValue(LOCALE_KEY, m_locale);
     m_config.setValue(FONT_KEY, m_font);
     m_config.setValue(IS_CURRENT_FONT_EMBEDDED, m_isEmbeddedFont);
@@ -182,16 +186,17 @@ ApplicationSettings::~ApplicationSettings()
     m_config.setValue(VIRTUALKEYBOARD_KEY, m_isVirtualKeyboard);
     m_config.setValue(ENABLE_AUTOMATIC_DOWNLOADS, m_isAutomaticDownloadsEnabled);
     m_config.setValue(FILTER_LEVEL_MIN, m_filterLevelMin);
-	m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
+    m_config.setValue(FILTER_LEVEL_MAX, m_filterLevelMax);
     m_config.setValue(DEMO_KEY, m_isDemoMode);
     m_config.setValue(CODE_KEY, m_codeKey);
     m_config.setValue(KIOSK_KEY, m_isKioskMode);
     m_config.setValue(SECTION_VISIBLE, m_sectionVisible);
     m_config.setValue(WORDSET, m_wordset);
     m_config.setValue(DEFAULT_CURSOR, m_defaultCursor);
-	m_config.setValue(NO_CURSOR, m_noCursor);
+    m_config.setValue(NO_CURSOR, m_noCursor);
     m_config.setValue(BASE_FONT_SIZE_KEY, m_baseFontSize);
     m_config.setValue(FONT_CAPITALIZATION, m_fontCapitalization);
+    m_config.setValue(FONT_LETTER_SPACING, m_fontLetterSpacing);
     m_config.endGroup();
 
     // admin group
@@ -250,6 +255,12 @@ void ApplicationSettings::notifyFontCapitalizationChanged()
 {
     updateValueInConfig(GENERAL_GROUP_KEY, FONT_CAPITALIZATION, m_fontCapitalization);
     qDebug() << "new fontCapitalization: " << m_fontCapitalization;
+}
+
+void ApplicationSettings::notifyFontLetterSpacingChanged()
+{
+    updateValueInConfig(GENERAL_GROUP_KEY, FONT_LETTER_SPACING, m_fontLetterSpacing);
+    qDebug() << "new fontLetterSpacing: " << m_fontLetterSpacing;
 }
 
 void ApplicationSettings::notifyFullscreenChanged()

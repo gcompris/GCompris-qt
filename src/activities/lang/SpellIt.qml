@@ -224,6 +224,7 @@ Item {
                 font.weight: Font.DemiBold
                 font.family: GCSingletonFontLoader.fontLoader.name
                 font.capitalization: ApplicationSettings.fontCapitalization
+                font.letterSpacing: ApplicationSettings.fontLetterSpacing
                 maximumLength: maximumLengthAnswer
                 onAccepted: {
                     okMouseArea.clicked(okMouseArea)

@@ -1,6 +1,6 @@
 /* GCompris - ConfigurationItem.qml
  *
- * Copyright (C) 2014 Johnny Jazeix <jazeix@gmail.com>
+ * Copyright (C) 2014-2016 Johnny Jazeix <jazeix@gmail.com>
  *
  * Authors:
  *   Johnny Jazeix <jazeix@gmail.com>
@@ -314,6 +314,34 @@ Item {
         Flow {
             spacing: 5
             width: parent.width
+            Slider {
+                id: fontLetterSpacingSlider
+                width: 250 * ApplicationInfo.ratio
+                style: GCSliderStyle {}
+                maximumValue: ApplicationSettings.fontLetterSpacingMax
+                minimumValue: ApplicationSettings.fontLetterSpacingMin
+                stepSize: 1.0
+                tickmarksEnabled: true
+                updateValueWhileDragging: true
+                value: fontLetterSpacing
+                onValueChanged: ApplicationSettings.fontLetterSpacing = value
+            }
+            GCText {
+                id: fontLetterSpacingText
+                text: qsTr("Font letter spacing")
+                fontSize: mediumSize
+                wrapMode: Text.WordWrap
+            }
+            Button {
+                height: 30 * ApplicationInfo.ratio
+                text: qsTr("Default");
+                style: GCButtonStyle {}
+                onClicked: fontLetterSpacingSlider.value = ApplicationSettings.fontLetterSpacingMin
+            }
+        }
+        Flow {
+            spacing: 5
+            width: parent.width
             GCComboBox {
                 id: languageBox
                 model: dialogConfig.languages
@@ -488,8 +516,6 @@ Item {
                     }
                 }
             }
-
-
         }
     }
 
@@ -502,6 +528,7 @@ Item {
     property bool sectionVisible: ApplicationSettings.sectionVisible
     property string wordset: ApplicationSettings.wordset
     property int baseFontSize  // don't bind to ApplicationSettings.baseFontSize
+    property real fontLetterSpacing // don't bind to ApplicationSettings.fontLetterSpacing
     // or we get a binding loop warning
 
     function loadFromConfig() {
@@ -529,7 +556,7 @@ Item {
         wordsetBox.checked = (wordset != '')
 
         baseFontSize = ApplicationSettings.baseFontSize;
-
+        fontLetterSpacing = ApplicationSettings.fontLetterSpacing;
         // Set locale
         for(var i = 0 ; i < dialogConfig.languages.length ; i ++) {
             if(dialogConfig.languages[i].locale === ApplicationSettings.locale) {
@@ -570,6 +597,7 @@ Item {
         ApplicationSettings.fontCapitalization = fontCapitalizationModel[fontCapitalizationBox.currentIndex].value
 
         ApplicationSettings.saveBaseFontSize();
+        ApplicationSettings.notifyFontLetterSpacingChanged();
 
         if (ApplicationSettings.locale != dialogConfig.languages[languageBox.currentIndex].locale) {
             ApplicationSettings.locale = dialogConfig.languages[languageBox.currentIndex].locale
@@ -594,11 +622,6 @@ Item {
             DownloadManager.updateResource(
             DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale))
         }
-    }
-
-    function reset()
-    {
-        ApplicationSettings.baseFontSize = baseFontSize;
     }
 
     ListModel {
@@ -656,6 +679,7 @@ Item {
         (ApplicationSettings.isEmbeddedFont != fonts.get(fontBox.currentIndex).isLocalResource) ||
         (ApplicationSettings.isEmbeddedFont != fonts.get(fontBox.currentIndex).isLocalResource) ||
         (ApplicationSettings.fontCapitalization != fontCapitalizationModel[(fontcapitalizationBox.currentIndex)].value) ||
+        (ApplicationSettings.fontLetterSpacing != fontLetterSpacing) ||
         (ApplicationSettings.isAudioVoicesEnabled != isAudioVoicesEnabled) ||
         (ApplicationSettings.isAudioEffectsEnabled != isAudioEffectsEnabled) ||
         (ApplicationSettings.isFullscreen != isFullscreen) ||
