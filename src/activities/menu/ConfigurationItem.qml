@@ -219,6 +219,7 @@ Item {
             onCheckedChanged: {
                 isFullscreen = checked;
             }
+            visible: !ApplicationInfo.isMobile
         }
 
         GCDialogCheckBox {
