@@ -37,7 +37,7 @@
 
 #define GC_DEFAULT_FONT "Andika-R.ttf"
 #define GC_DEFAULT_FONT_CAPITALIZATION 0 // Font.MixedCase
-#define GC_DEFAULT_FONT_LETTER_SPACING 1
+#define GC_DEFAULT_FONT_LETTER_SPACING 0
 
 static const QString GENERAL_GROUP_KEY = "General";
 static const QString ADMIN_GROUP_KEY = "Admin";
