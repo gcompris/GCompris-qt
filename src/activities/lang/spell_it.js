@@ -66,7 +66,7 @@ function initLevel() {
                 letters.push(currentWord.charAt(j));
         }
     }
-    letters.sort();
+    letters = GCompris.ApplicationInfo.localeSort(letters, spellItems.locale);
     // generate layout from letter map
     var layout = [];
     var row = 0;

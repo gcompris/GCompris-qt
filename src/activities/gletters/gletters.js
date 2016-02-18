@@ -1,6 +1,6 @@
 /* GCompris - gletters.js
  *
- * Copyright (C) 2014 Holger Kaelberer
+ * Copyright (C) 2014-2016 Holger Kaelberer
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
@@ -167,7 +167,7 @@ function initLevel() {
                 }
             }
         }
-        letters.sort();
+        letters = GCompris.ApplicationInfo.localeSort(letters, items.locale);
         // generate layout from letter map
         var layout = new Array();
         var row = 0;

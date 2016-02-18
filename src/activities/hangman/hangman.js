@@ -127,7 +127,7 @@ function initLevel() {
                     letters.push(word.charAt(j));
             }
         }
-        letters.sort();
+        letters = GCompris.ApplicationInfo.localeSort(letters, items.locale);
         // Remove space character if in list
         var indexOfSpace = letters.indexOf(' ')
         if(indexOfSpace > -1)

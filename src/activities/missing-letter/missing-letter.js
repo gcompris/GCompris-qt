@@ -168,7 +168,7 @@ function getRandomMaskedQuestion(clearQuestion, guessLetters, level) {
 }
 
 function sortUnique(arr) {
-    arr = arr.sort(function (a, b) { return a.localeCompare(b); });
+    arr = GCompris.ApplicationInfo.localeSort(arr, items.locale);
     var ret = [arr[0]];
     for (var i = 1; i < arr.length; i++) { // start loop at 1 as element 0 can never be a duplicate
         if (arr[i-1] !== arr[i]) {
