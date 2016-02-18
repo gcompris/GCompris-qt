@@ -56,6 +56,8 @@ import android.app.PendingIntent;
 import org.json.JSONObject;
 import java.util.ArrayList;
 import android.view.WindowManager;
+import java.text.Collator;
+import java.util.Locale;
 
 public class GComprisActivity extends QtActivity
 {
@@ -245,5 +247,22 @@ public class GComprisActivity extends QtActivity
 					getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 				}
 			});
+	}
+
+	public int localeCompare(String a, String b, String locale)
+	{
+		String[] parts = locale.split("[\\._]");
+		Locale l;
+		if (parts.length == 1)
+			l = new Locale(parts[0]);
+		else if (parts.length == 2)
+			l = new Locale(parts[0], parts[1]);
+		else
+			l = Locale.getDefault();
+		Collator collator = Collator.getInstance(l);
+		// Note: This works only if the device supports the
+		// passed locale. If it does not or if an invalid locale string has been
+		// passed, the collator seems to sort according to Locale.getDefault()
+		return collator.compare(a, b);
 	}
 }

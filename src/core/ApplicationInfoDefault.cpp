@@ -20,6 +20,8 @@
  */
 
 #include "ApplicationInfo.h"
+#include <QCollator>
+#include <QLocale>
 
 bool ApplicationInfo::requestAudioFocus() const
 {
@@ -43,4 +45,15 @@ int ApplicationInfo::getRequestedOrientation()
 void ApplicationInfo::setKeepScreenOn(bool value)
 {
     Q_UNUSED(value);
+}
+
+int ApplicationInfo::localeCompare(const QString& a, const QString& b,
+                                   const QString& locale) const
+{
+    QString _locale = locale.isEmpty() ? \
+                          ApplicationSettings::getInstance()->locale() \
+                        : locale;
+    QLocale l = (_locale == GC_DEFAULT_LOCALE) ? QLocale::system() \
+                                               : QLocale(_locale);
+    return QCollator(l).compare(a, b);
 }

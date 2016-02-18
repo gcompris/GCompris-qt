@@ -222,6 +222,32 @@ public:
      */
     Q_INVOKABLE QString getSharedWritablePath() const;
 
+    /**
+     * Compare two strings respecting locale specific sort order.
+     *
+     * @param a         First string to compare
+     * @param b         Second string to compare
+     * @param locale    Locale to respect for comparison in any of the forms
+     *                  used in GCompris xx[_XX][.codeset]. Defaults to currently
+     *                  set language from global configuration.
+     * @returns         -1, 0 or 1 if a is less than, equal to or greater than b
+     */
+    Q_INVOKABLE int localeCompare(const QString& a, const QString& b, const QString& locale = "") const;
+
+    /**
+     * Sort a list of strings respecting locale specific sort order.
+     *
+     * This function is supposed to be called from QML/JS. As there are still
+     * problems marshalling QStringList from C++ to QML/JS we use QVariantList
+     * both for argument and return value.
+     *
+     * @param list      List of strings to be sorted.
+     * @param locale    Locale to respect for sorting in any of the forms
+     *                  used in GCompris xx[_XX][.codeset].
+     * @returns         List sorted by the sort order of the passed locale.
+     */
+    Q_INVOKABLE QVariantList localeSort(QVariantList list, const QString& locale = "") const;
+
     /// @cond INTERNAL_DOCS
 
     static ApplicationInfo *getInstance() {

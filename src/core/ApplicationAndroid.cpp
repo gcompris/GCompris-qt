@@ -102,3 +102,25 @@ void ApplicationInfo::setKeepScreenOn(bool value)
     QAndroidJniObject activity = QtAndroid::androidActivity();
     activity.callMethod<void>("setKeepScreenOn", "(Z)V", value);
 }
+
+int ApplicationInfo::localeCompare(const QString& a, const QString& b,
+                                   const QString& locale) const
+{
+    QString _locale = locale.isEmpty() ? \
+                          ApplicationSettings::getInstance()->locale() \
+                        : locale;
+    if (_locale == GC_DEFAULT_LOCALE)
+        _locale = QLocale::system().name();
+
+    // QCollator on Android uses only the posix backend as of Qt 5.5.1,
+    // which is not capable of doing locale aware comparison.
+    // cf. https://bugreports.qt.io/browse/QTBUG-43637
+    // Therefore use native Collation via jni:
+    jint res = QtAndroid::androidActivity().callMethod<jint>(
+                   "localeCompare",
+                   "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I",
+                   QAndroidJniObject::fromString(a).object<jstring>(),
+                   QAndroidJniObject::fromString(b).object<jstring>(),
+                   QAndroidJniObject::fromString(_locale).object<jstring>());
+    return res;
+}
