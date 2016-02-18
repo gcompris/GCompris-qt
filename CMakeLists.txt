@@ -21,6 +21,9 @@ endif()
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${my_cxx_flags}")
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${my_cxx_flags}")
 
+# enable qml debugging for DEBUG builds:
+set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -DQT_QML_DEBUG")
+
 set(GCOMPRIS_MAJOR_VERSION 0)
 set(GCOMPRIS_MINOR_VERSION 60)
 set(GCOMPRIS_PATCH_VERSION 0)
