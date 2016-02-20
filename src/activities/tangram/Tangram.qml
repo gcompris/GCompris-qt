@@ -99,7 +99,7 @@ ActivityBase {
 
         Image {
             id: bgData
-            source: Activity.url + items.currentTans.bg
+            source: items.currentTans.bg ? Activity.url + items.currentTans.bg : ''
             sourceSize.width: 1000 * background.playRatio
             sourceSize.height: 1000 * background.playRatio
             width: 1000 * background.playRatio
@@ -135,7 +135,7 @@ ActivityBase {
                 Rectangle {
                     id: mask
                     anchors.fill: tansModel
-                    color: '#CCC'
+                    color: items.currentTans.colorMask
                     visible: false
                 }
                 OpacityMask {
@@ -143,7 +143,6 @@ ActivityBase {
                     source: mask
                     maskSource: tansModel
                     rotation: modelData.rotation
-                    opacity: modelData.opacity
                     transform: Scale {
                         origin.x: modelData.width * background.playWidth / 2
                         xScale: modelData.flipping ? -1 : 1

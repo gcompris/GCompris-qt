@@ -1,27 +1,30 @@
 .pragma library
 
 /* dataset format
-  for each piece we have:
-  - img: piece file name
-  - flippable: is the piece flippable
-  - flipping: target flipping state
-  - x: target x position
-  - y: target y position
-  - width: item width
-  - height: item height
-  - rotation: item target rotation
-  - moduloRotation: modulo rotation
-  - opacity: item opacity
-  - initX: initial x position
-  - initY: innitial y position
-  - initRotation: initial rotation
-  - initFlipping: initial flipping
+  - for each level we have:
+    - bg: an optional background image
+    - colorMask: the color of the shadowed target items
+    - a list of pieces that each holds:
+      - img: piece file name
+      - flippable: is the piece flippable
+      - flipping: target flipping state
+      - x: target x position
+      - y: target y position
+      - width: item width
+      - height: item height
+      - rotation: item target rotation
+      - moduloRotation: modulo rotation
+      - initX: initial x position
+      - initY: innitial y position
+      - initRotation: initial rotation
+      - initFlipping: initial flipping
 */
 
 var dataset = [
             // Level 1
             {
                 'bg': 'truck/traffic_bg.svg',
+                'colorMask': '#CCC',
                 'pieces': [
                     {
                         'img': 'truck/engine.svg',
@@ -33,7 +36,21 @@ var dataset = [
                         'height': 0.109,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
+                        'initX': 0.866,
+                        'initY': 0.754,
+                        'initRotation': 0,
+                        'initFlipping': 0
+                    },
+                    {
+                        'img': 'truck/engine.svg',
+                        'flippable': 0,
+                        'flipping': 0,
+                        'x': 0.860,
+                        'y': 0.573,
+                        'width': 0.233,
+                        'height': 0.109,
+                        'rotation': 0,
+                        'moduloRotation': 360,
                         'initX': 0.866,
                         'initY': 0.754,
                         'initRotation': 0,
@@ -49,7 +66,6 @@ var dataset = [
                         'height': 0.178,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.153,
                         'initY': 0.789,
                         'initRotation': 0,
@@ -65,7 +81,6 @@ var dataset = [
                         'height': 0.271,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.338,
                         'initY': 0.135,
                         'initRotation': 0,
@@ -81,7 +96,6 @@ var dataset = [
                         'height': 0.092,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.799,
                         'initY': 0.146,
                         'initRotation': 0,
@@ -97,7 +111,6 @@ var dataset = [
                         'height': 0.121,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.501,
                         'initY': 0.760,
                         'initRotation': 0,
@@ -108,6 +121,7 @@ var dataset = [
             // Level 2
             {
                 'bg': 'truck/traffic_bg.svg',
+                'colorMask': '#CCC',
                 'pieces': [
                     {
                         'img': 'truck/engine.svg',
@@ -119,7 +133,6 @@ var dataset = [
                         'height': 0.109,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.866,
                         'initY': 0.754,
                         'initRotation': 0,
@@ -135,7 +148,6 @@ var dataset = [
                         'height': 0.178,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.153,
                         'initY': 0.789,
                         'initRotation': 0,
@@ -151,7 +163,6 @@ var dataset = [
                         'height': 0.271,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.338,
                         'initY': 0.135,
                         'initRotation': 0,
@@ -167,7 +178,6 @@ var dataset = [
                         'height': 0.092,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.799,
                         'initY': 0.146,
                         'initRotation': 270,
@@ -183,7 +193,6 @@ var dataset = [
                         'height': 0.121,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.501,
                         'initY': 0.760,
                         'initRotation': 90,
@@ -194,6 +203,7 @@ var dataset = [
             // Level 3
             {
                 'bg': 'truck/traffic_bg.svg',
+                'colorMask': '#CCC',
                 'pieces': [
                     {
                         'img': 'truck/engine.svg',
@@ -205,7 +215,6 @@ var dataset = [
                         'height': 0.109,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0,
                         'initX': 0.866,
                         'initY': 0.754,
                         'initRotation': 0,
@@ -221,7 +230,6 @@ var dataset = [
                         'height': 0.178,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0,
                         'initX': 0.153,
                         'initY': 0.789,
                         'initRotation': 45,
@@ -237,7 +245,6 @@ var dataset = [
                         'height': 0.271,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0,
                         'initX': 0.338,
                         'initY': 0.135,
                         'initRotation': 0,
@@ -253,7 +260,6 @@ var dataset = [
                         'height': 0.092,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0,
                         'initX': 0.799,
                         'initY': 0.146,
                         'initRotation': 0,
@@ -269,7 +275,6 @@ var dataset = [
                         'height': 0.121,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0,
                         'initX': 0.501,
                         'initY': 0.760,
                         'initRotation': 270,
@@ -280,6 +285,7 @@ var dataset = [
             // Level 4
             {
                 'bg': 'car1/car.svg',
+                'colorMask': '#CCC',
                 'pieces': [
                     {
                         'img': 'car1/windshield.svg',
@@ -291,7 +297,6 @@ var dataset = [
                         'height': 0.227,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.301,
                         'initY': 0.133,
                         'initRotation': 0,
@@ -307,7 +312,6 @@ var dataset = [
                         'height': 0.147,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.863,
                         'initY': 0.123,
                         'initRotation': 0,
@@ -323,7 +327,6 @@ var dataset = [
                         'height': 0.147,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.663,
                         'initY': 0.123,
                         'initRotation': 0,
@@ -339,7 +342,6 @@ var dataset = [
                         'height': 0.184,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.405,
                         'initY': 0.892,
                         'initRotation': 0,
@@ -355,7 +357,6 @@ var dataset = [
                         'height': 0.051,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.382,
                         'initY': 0.825,
                         'initRotation': 0,
@@ -371,7 +372,6 @@ var dataset = [
                         'height': 0.125,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.90,
                         'initY': 0.85,
                         'initRotation': 0,
@@ -387,7 +387,6 @@ var dataset = [
                         'height': 0.125,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.90,
                         'initY': 0.30,
                         'initRotation': 0,
@@ -398,6 +397,7 @@ var dataset = [
             // Level 5 Real Tangram
             {
                 'bg': '',
+                'colorMask': '#CCC',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -409,7 +409,6 @@ var dataset = [
                         'height': 0.214,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.22,
                         'initY': 0.12,
                         'initRotation': 0,
@@ -425,7 +424,6 @@ var dataset = [
                         'height': 0.214,
                         'rotation': 180,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.216,
                         'initY': 0.80,
                         'initRotation': 0,
@@ -441,7 +439,6 @@ var dataset = [
                         'height': 0.152,
                         'rotation': 90,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.45,
                         'initY': 0.110,
                         'initRotation': 180,
@@ -457,7 +454,6 @@ var dataset = [
                         'height': 0.152,
                         'rotation': 0,
                         'moduloRotation': 90,
-                        'opacity': 0.7,
                         'initX': 0.7,
                         'initY': 0.110,
                         'initRotation': 0,
@@ -473,7 +469,6 @@ var dataset = [
                         'height': 0.108,
                         'rotation': 0,
                         'moduloRotation': 180,
-                        'opacity': 0.7,
                         'initX': 0.94,
                         'initY': 0.17,
                         'initRotation': -90,
@@ -489,7 +484,6 @@ var dataset = [
                         'height': 0.108,
                         'rotation': 0,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.60,
                         'initY': 0.85,
                         'initRotation': 0,
@@ -505,7 +499,6 @@ var dataset = [
                         'height': 0.108,
                         'rotation': 45,
                         'moduloRotation': 360,
-                        'opacity': 0.7,
                         'initX': 0.80,
                         'initY': 0.85,
                         'initRotation': 180,
