@@ -25,6 +25,7 @@ import GCompris 1.0
 
 import "../../core"
 import "tangram.js" as Activity
+import "."
 
 ActivityBase {
     id: activity
@@ -286,9 +287,7 @@ ActivityBase {
                     sourceSize.width: 40 * ApplicationInfo.ratio
                     z: parent.z + 1
 
-                    RotateMouseArea {
-                        anchors.fill: undefined
-                    }
+                    RotateMouseArea {}
                 }
 
                 Image {

@@ -31,16 +31,13 @@ MouseArea {
     anchors.fill: parent
     enabled: items.selectedITem && items.selectedITem.selected
     property double prevRotation: 0
-    onPressed: {
-        if(items.selectedITem && items.selectedITem.selected) {
-            items.selectedITem.selected = false
-        }
-    }
     onPositionChanged: {
+        var backPoint = background.mapFromItem(parent, mouseX, mouseY)
         // Calc the angle touch / object center
         var rotation = Activity.getAngleOfLineBetweenTwoPoints(
-                    items.selectedITem.x + items.selectedITem.width / 2, items.selectedITem.y + items.selectedITem.height / 2,
-                    mouseX, mouseY) * (180 / Math.PI)
+                    items.selectedITem.x + items.selectedITem.width / 2, items.selectedITem.y +
+                    items.selectedITem.height / 2,
+                    backPoint.x, backPoint.y) * (180 / Math.PI)
         if(prevRotation) {
             items.selectedITem.rotation += rotation - prevRotation
         }
@@ -50,6 +47,7 @@ MouseArea {
         prevRotation = 0
         // Force a modulo 45 rotation
         items.selectedITem.rotation = Math.floor((items.selectedITem.rotation + 45 / 2) / 45) * 45
+        items.selectedITem.selected = false
         background.checkWin()
     }
 }
