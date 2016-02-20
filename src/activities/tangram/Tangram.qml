@@ -25,6 +25,7 @@ import GCompris 1.0
 
 import "../../core"
 import "tangram.js" as Activity
+import "dataset.js" as Dataset
 import "."
 
 ActivityBase {
@@ -87,7 +88,8 @@ ActivityBase {
             property alias userList: userList
             property alias userListModel: userList.model
             property Item selectedITem
-            property var currentTans: Activity.dataset[bar.level - 1]
+            property var currentTans: Dataset.dataset[bar.level - 1]
+            property int numberOfLevel: Dataset.dataset.length
         }
 
         onStart: {
@@ -203,9 +205,9 @@ ActivityBase {
                     return {
                         'img': modelData.img,
                         'flipping': mirror,
-                         'x': positionToTans()[0],
-                         'y': positionToTans()[1],
-                         'rotation': rotationToTans()
+                        'x': positionToTans()[0],
+                        'y': positionToTans()[1],
+                        'rotation': rotationToTans()
                     }
                 }
 
