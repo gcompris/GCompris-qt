@@ -1,19 +1,23 @@
 [
     {
-        "level": 1,
-        "words":[
-            {"name":"cow"},
-            {"name":"dog"},
-            {"name":"hen"},
-            {"name":"car"},
-            {"name":"pig"},
-            {"name":"owl"},
-            {"name":"apple"},
-            {"name":"car"},
-            {"name":"plum"}
-        ],
-        "questions":"aeiou"
+       "level": 1,
+       "words": "car,cat,dog,cow,pig,duck,hat,owl",
+       "questions":"cadhouw"
+    },
+    {
+        "level": 2,
+        "words": "chicken,sheep,fire,fish,duck,pear,dice,apple,bulb,clock",
+        "questions":"csfudpiahe"
+    },
+    {
+        "level": 3,
+        "words": "bug,sheep,earth,orange,cat,pineapple,banana,apple,football,hand,dice",
+        "questions":"abcdefgiopshlt"
+    },
+    {
+        "level": 4,
+        "words": "balloons,rainbow,keyboard,football,horse,rooster,lemon,cherries,money,bulb,domino,girl,dice",
+        "questions":"brkfhlcmdgiey"
     }
-
 ]
 
