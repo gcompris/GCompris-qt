@@ -126,6 +126,15 @@ Item {
                     to: 0; duration: 200
                 }
             }
+            NumberAnimation {
+                id: rotationStop
+                running: !selected
+                target: cardImage
+                property: "rotation"
+                to: 0
+                duration: 500
+                easing.type: Easing.InOutQuad
+            }
             MouseArea {
                 id: mouseArea
                 anchors.fill: parent
