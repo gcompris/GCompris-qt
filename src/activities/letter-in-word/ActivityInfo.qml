@@ -23,12 +23,12 @@ ActivityInfo {
   icon: "letter-in-word/letter-in-word.svg"
   author: "Akshat Tandon &lt;akshat.tandon@research.iiit.ac.ins&gt;"
   demo: true
-  title: "Letter in which Word "
-  description: ""
+  title: qsTr("Letter in which Word ")
+  description: qsTr("A letter is written and/or spoken. Some words are displayed, the children must find the word or the words in which this letter appears.")
   //intro: "put here in comment the text for the intro voice"
-  goal: ""
-  prerequisite: ""
+  goal: qsTr("Select all the words which contain the spoken letter.")
+  prerequisite: qsTr("spellings,letter recognition")
   manual: ""
   credit: ""
-  section: "fun" 
+  section: "reading"
 }

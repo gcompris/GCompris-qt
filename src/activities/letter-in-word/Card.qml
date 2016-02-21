@@ -28,139 +28,140 @@ import "letter-in-word.js" as Activity
 Item {
     id: cardItem
 
-
         Image{
             id: wordPic
-            anchors.bottom: cardImage.top
-            sourceSize.width: cardItem.width
-            sourceSize.height: cardItem.width*1.11
+            sourceSize.width: cardItem.width -6
+            sourceSize.height: cardItem.width -5
             fillMode: Image.PreserveAspectFit
             source: imgurl
             z:-5
-        }
 
-        Image {
-            id: cardImage
-            sourceSize.width: cardItem.width
-            fillMode: Image.PreserveAspectFit
-            source:  Activity.url + "cloud.svg"
-            z: (state == 'scaled') ? 1 : -1
-
-
-            GCText {
-                id: text
-                anchors.horizontalCenter:parent.horizontalCenter
-
-                anchors.verticalCenter: parent.verticalCenter
-
-                z: 11
-
-                text: spelling
-                font.pointSize: NaN  // need to clear font.pointSize explicitly
-                font.pixelSize: parent.width * 0.30
-                font.bold: true
-                style: Text.Outline
-                styleColor: "#2a2a2a"
-                color: "white"
-            }
-
-            DropShadow {
-                anchors.fill: text
-                cached: false
-                horizontalOffset: 1
-                verticalOffset: 1
-                radius: 3
-                samples: 16
-                color: "#422a2a2a"
-                source: text
-            }
+            Image {
+                id: cardImage
+                anchors.top:parent.bottom
+                anchors.topMargin: -30 * ApplicationInfo.ratio
+                sourceSize.width: cardItem.width - 10
+                fillMode: Image.PreserveAspectFit
+                source:  Activity.url + "images/cloud.svg"
+                z: (state == 'scaled') ? 1 : -1
 
 
+                GCText {
+                    id: text
+                    anchors.horizontalCenter:parent.horizontalCenter
 
-            ParticleSystemStarLoader {
-                id: particle
-                clip: false
-            }
+                    anchors.verticalCenter: parent.verticalCenter
 
-            states: State {
-                name: "scaled"; when: mouseArea.containsMouse
-                PropertyChanges {
-                    target: cardItem
-                    scale: /*carriageImage.scale * */ 1.2
-                    z: 2}
-            }
+                    z: 11
 
-            transitions: Transition {
-                NumberAnimation { properties: "scale"; easing.type: Easing.OutCubic }
-            }
+                    text: spelling
+                    font.pointSize: NaN  // need to clear font.pointSize explicitly
+                    font.pixelSize: spelling.length > 5 ? parent.width * 0.23 : parent.width * 0.30
+                    font.bold: true
+                    style: Text.Outline
+                    styleColor: "#2a2a2a"
+                    color: "white"
+                }
 
-            SequentialAnimation {
-                id: successAnimation
-                running: selected
-                loops: Animation.Infinite
+                DropShadow {
+                    anchors.fill: text
+                    cached: false
+                    horizontalOffset: 1
+                    verticalOffset: 1
+                    radius: 3
+                    samples: 16
+                    color: "#422a2a2a"
+                    source: text
+                }
+
+
+
+                ParticleSystemStarLoader {
+                    id: particle
+                    clip: false
+                }
+
+                states: State {
+                    name: "scaled"; when: mouseArea.containsMouse
+                    PropertyChanges {
+                        target: cardItem
+                        scale: /*carriageImage.scale * */ 1.2
+                        z: 2}
+                }
+
+                transitions: Transition {
+                    NumberAnimation { properties: "scale"; easing.type: Easing.OutCubic }
+                }
+
+                SequentialAnimation {
+                    id: successAnimation
+                    running: selected
+                    loops: Animation.Infinite
+                    NumberAnimation {
+                        target: cardImage
+                        easing.type: Easing.InOutQuad
+                        property: "rotation"
+                        to: 20; duration: 500
+                    }
+                    NumberAnimation {
+                        target: cardImage
+                        easing.type: Easing.InOutQuad
+                        property: "rotation"; to: -20
+                        duration: 500 }
+
+                }
+
+                SequentialAnimation {
+                    id: failureAnimation
+                    NumberAnimation {
+                        target: colorCardImage
+                        property: "opacity"
+                        to: 1; duration: 400
+                    }
+                    NumberAnimation {
+                        target: colorCardImage
+                        property: "opacity"
+                        to: 0; duration: 200
+                    }
+                }
                 NumberAnimation {
+                    id: rotationStop
+                    running: !selected
                     target: cardImage
-                    easing.type: Easing.InOutQuad
                     property: "rotation"
-                    to: 20; duration: 500
-                }
-                NumberAnimation {
-                    target: cardImage
+                    to: 0
+                    duration: 500
                     easing.type: Easing.InOutQuad
-                    property: "rotation"; to: -20
-                    duration: 500 }
-
-            }
-
-            SequentialAnimation {
-                id: failureAnimation
-                NumberAnimation {
-                    target: colorCardImage
-                    property: "opacity"
-                    to: 1; duration: 400
                 }
-                NumberAnimation {
-                    target: colorCardImage
-                    property: "opacity"
-                    to: 0; duration: 200
-                }
-            }
-            NumberAnimation {
-                id: rotationStop
-                running: !selected
-                target: cardImage
-                property: "rotation"
-                to: 0
-                duration: 500
-                easing.type: Easing.InOutQuad
-            }
-            MouseArea {
-                id: mouseArea
-                anchors.fill: parent
-                hoverEnabled: ApplicationInfo.isMobile ? false : true
+                MouseArea {
+                    id: mouseArea
+                    anchors.fill: parent
+                    hoverEnabled: ApplicationInfo.isMobile ? false : true
 
-                onClicked: {
+                    onClicked: {
 
-                    if (Activity.checkWord(index)) {
+                        if (Activity.checkWord(index)) {
 
-                            successAnimation.restart();
-                            particle.burst(30)
+                                successAnimation.restart();
+                                particle.burst(30)
 
 
-                    } else {
-                        failureAnimation.restart()
+                        } else {
+                            failureAnimation.restart()
+                        }
                     }
                 }
             }
+            Colorize {
+                    id: colorCardImage
+                    z: 5
+                    anchors.fill: cardImage
+                    source: cardImage
+                    hue: 0.0
+                    saturation: 1
+                    opacity: 0
+                }
         }
 
-        Colorize {
-                id: colorCardImage
-                z: 5
-                anchors.fill: cardImage
-                source: cardImage
-                hue: 0.0
-                saturation: 1
-                opacity: 0
-            }
+
 }

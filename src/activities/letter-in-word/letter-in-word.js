@@ -27,7 +27,7 @@
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/letter-in-word/resource/"
-var defaultLevelsFile = ":/gcompris/src/activities/letter-in-word/resource/levels-en.json";
+var defaultLevelsFile = ":/gcompris/src/activities/letter-in-word/resource/levels/levels-en.json";
 var maxLettersPerLine = 6;
 
 var levels;
@@ -78,7 +78,7 @@ function validateLevels(levels)
 function loadLevels()
 {
     var ret;
-    var filename = GCompris.ApplicationInfo.getLocaleFilePath(url + "levels-$LOCALE.json");
+    var filename = GCompris.ApplicationInfo.getLocaleFilePath(url + "levels/levels-$LOCALE.json");
     levels = items.parser.parseFromUrl(filename);
     if (levels == null) {
         console.warn("Click_on_letter: Invalid levels file " + filename);

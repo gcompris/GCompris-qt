@@ -37,7 +37,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: Activity.url + "background.svg"
+        source: Activity.url + "images/background.svg"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
         focus: true
@@ -213,7 +213,7 @@ ActivityBase {
                 id: plane
                 anchors.centerIn: planeText
                 anchors.top: parent.top
-                source: Activity.url + "plane.svg"
+                source: Activity.url + "images/plane.svg"
                 sourceSize.height: 90 * ApplicationInfo.ratio
             }
 
@@ -253,14 +253,15 @@ ActivityBase {
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.top: planeText.bottom
+            anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.leftMargin: 5 * ApplicationInfo.ratio
             anchors.rightMargin: 5 * ApplicationInfo.ratio
-            //anchors.bottomMargin: 5 * ApplicationInfo.ratio
+            anchors.bottomMargin: 5 * ApplicationInfo.ratio
             cellWidth: itemWidth
             cellHeight: itemHeight
             clip: false
             interactive: false
-            verticalLayoutDirection: GridView.BottomToTop
+            //verticalLayoutDirection: GridView.BottomToTop
             layoutDirection: Qt.LeftToRight
 
 
