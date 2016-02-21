@@ -1,8 +1,18 @@
 [
     {
-        "level": 1,
-        "words": "cow,dog,fire,car,pig,owl,apple,plum",
-        "questions":"aeiou"
+       "level": 1,
+       "words": "car,bulb,fish",
+       "questions":"afbu"
+    },
+    {
+        "level": 2,
+        "words": "cow,dog,fire,pig",
+        "questions":"pfcdio"
+    },
+    {
+        "level": 3,
+        "words": "dice,banana,earth,orange,cat",
+        "questions":"aoedchg"
     }
 ]
 

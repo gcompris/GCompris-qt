@@ -207,7 +207,7 @@ ActivityBase {
             height: plane.height
             x: - width
             anchors.top: parent.top
-            anchors.topMargin: 20 * ApplicationInfo.ratio
+            anchors.topMargin: 5 * ApplicationInfo.ratio
 
             Image {
                 id: plane
@@ -253,9 +253,9 @@ ActivityBase {
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.top: planeText.bottom
-            anchors.leftMargin: 35 * ApplicationInfo.ratio
-            anchors.rightMargin: 35 * ApplicationInfo.ratio
-            anchors.bottomMargin: 13 * ApplicationInfo.ratio
+            anchors.leftMargin: 5 * ApplicationInfo.ratio
+            anchors.rightMargin: 5 * ApplicationInfo.ratio
+            //anchors.bottomMargin: 5 * ApplicationInfo.ratio
             cellWidth: itemWidth
             cellHeight: itemHeight
             clip: false
@@ -267,6 +267,7 @@ ActivityBase {
             model: wordsModel
             delegate: Card{
                 width: background.itemWidth
+
             }
         }
 

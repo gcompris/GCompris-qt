@@ -1,11 +1,9 @@
 /* GCompris - Card.qml
  *
- * Copyright (C) 2014 Holger Kaelberer  <holger.k@elberer.de>
+ * Copyright (C) 2016 Akshat Tandon  <akshat.tandon@research.iiit.ac.in>
  *
  * Authors:
- *   Pascal Georges <pascal.georges1@free.fr> (GTK+ version)
- *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ Mostly full rewrite)
- *   Holger Kaelberer <holger.k@elberer.de> (Qt Quick port)
+ *   Akshat Tandon    <akshat.tandon@research.iiit.ac.in>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -35,6 +33,7 @@ Item {
             id: wordPic
             anchors.bottom: cardImage.top
             sourceSize.width: cardItem.width
+            sourceSize.height: cardItem.width*1.11
             fillMode: Image.PreserveAspectFit
             source: imgurl
             z:-5
