@@ -4,7 +4,7 @@
  *               2016 Akshat Tandon
  *
  * Authors:
- *   Holger Kaelberer <holger.k@elberer.de> (Qt Quick port)
+ *   Holger Kaelberer <holger.k@elberer.de> (Qt Quick port of click-on-letter)
  *   Akshat Tandon    <akshat.tandon@research.iiit.ac.in>
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -81,11 +81,11 @@ function loadLevels()
     var filename = GCompris.ApplicationInfo.getLocaleFilePath(url + "levels/levels-$LOCALE.json");
     levels = items.parser.parseFromUrl(filename);
     if (levels == null) {
-        console.warn("Click_on_letter: Invalid levels file " + filename);
+        console.warn("Letter-in-word: Invalid levels file " + filename);
         // fallback to default Latin (levels-en.json) file:
         levels = items.parser.parseFromUrl(defaultLevelsFile);
         if (levels == null) {
-            console.error("Click_on_letter: Invalid default levels file "
+            console.error("Letter-in-word: Invalid default levels file "
                 + defaultLevelsFile + ". Can't continue!");
             // any way to error-exit here?
             return;
@@ -118,7 +118,7 @@ function initLevel() {
         level = levels[currentLevel];
         maxSubLevel = level.questions.length;
         items.score.numberOfSubLevels = maxSubLevel;
-        items.score.currentSubLevel = "1";
+        items.score.currentSubLevel = 1;
         questions = shuffleString(level.questions);
         items.wordsModel.clear();
         words = level.words.split(",")
@@ -145,7 +145,6 @@ function initLevel() {
     if (GCompris.ApplicationSettings.isAudioVoicesEnabled &&
             GCompris.DownloadManager.haveLocalResource(
                 GCompris.DownloadManager.getVoicesResourceForLocale(locale))) {
-        items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/"+locale+"/misc/click_on_letter.$CA"));
         items.audioVoices.silence(100)
         playLetter(currentLetter)
         items.repeatItem.visible = true

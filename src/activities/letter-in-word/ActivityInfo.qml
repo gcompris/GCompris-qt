@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2016 Akshat Tandon <akshat.tandon@research.iiit.ac.in>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,11 +23,11 @@ ActivityInfo {
   icon: "letter-in-word/letter-in-word.svg"
   author: "Akshat Tandon &lt;akshat.tandon@research.iiit.ac.ins&gt;"
   demo: true
-  title: qsTr("Letter in which Word ")
+  title: qsTr("Letter in which word")
   description: qsTr("A letter is written and/or spoken. Some words are displayed, the children must find the word or the words in which this letter appears.")
   //intro: "put here in comment the text for the intro voice"
   goal: qsTr("Select all the words which contain the spoken letter.")
-  prerequisite: qsTr("spellings,letter recognition")
+  prerequisite: qsTr("spellings, letter recognition")
   manual: ""
   credit: ""
   section: "reading"
