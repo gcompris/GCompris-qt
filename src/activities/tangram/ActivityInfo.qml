@@ -36,4 +36,5 @@ ActivityInfo {
   manual: qsTr("Select the tangram to form. Move a piece by dragging it. The symmetrical button appears on items that supports it. Click on the rotation button or drag around it to show the rotation you want. At first levels, simpler objects are used to introduce the tangram concept.")
   credit: qsTr("The original code was written by Philippe Banwarth in 1999. It was ported to GCompris by Yves Combe in 2005.")
   section: "/puzzle"
+  createdInVersion: 6000
 }
