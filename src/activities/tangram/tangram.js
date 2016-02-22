@@ -153,3 +153,30 @@ function toDataset() {
              '            },\n'
     return(tanss)
 }
+
+/* In edition mode arrow keys allow the move by 1 pixels in any direction */
+function processPressedKey(event) {
+
+    if ( items.editionMode && items.selectedITem && items.selectedITem.selected) {
+        /* Move the player */
+        switch (event.key) {
+        case Qt.Key_Right:
+            items.selectedITem.x += 1
+            event.accepted = true
+            break
+        case Qt.Key_Left:
+            items.selectedITem.x -= 1
+            event.accepted = true
+            break
+        case Qt.Key_Up:
+            items.selectedITem.y -= 1
+            event.accepted = true
+            break
+        case Qt.Key_Down:
+            items.selectedITem.y += 1
+            event.accepted = true
+            break
+        }
+    }
+}
+

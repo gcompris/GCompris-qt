@@ -34,6 +34,8 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    Keys.onPressed: Activity.processPressedKey(event)
+
     pageComponent: Item {
         id: background
         anchors.fill: parent
