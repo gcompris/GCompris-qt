@@ -22,24 +22,72 @@
 .pragma library
 .import QtQuick 2.0 as Quick
 
-var colorShortcut = {
-    0: 'white',
-    1: 'red',
-    2: 'orange',
-    3: 'green',
-    4: 'blue',
-    5: 'yellow',
-    6: 'black'
-}
-var colors = {
-    0: '#FFFFFFFF',
-    1: '#FFEE0000',
-    2: '#FFFFBA00',
-    3: '#FF53D537',
-    4: '#FF3759D5',
-    5: '#FFF5F357',
-    6: '#FF3D2626'
-}
+var colorsSimple = [
+            '#00FFFFFF',
+            '#FF550000',
+            '#FFaa0000',
+            '#FFffaaaa',
+            '#FFffdd55',
+            '#FF918a6f',
+            '#FFccff00',
+            '#FFe5ff80',
+            '#FF330080',
+            '#FF9955ff',
+            '#FFe9afdd',
+            '#FFff2a7f'
+]
+
+var colorsAdvanced = [
+            '#00FFFFFF',
+            '#FF550000',
+            '#FF800000',
+            '#FFaa0000',
+            '#FFd40000',
+            '#FFff0000',
+            '#FFff2a2a',
+            '#FFff8080',
+            '#FFffaaaa',
+            '#FFffd5d5',
+            '#FFc83737',
+            '#FFd35f5f',
+            '#FFde8787',
+            '#FFaa4400',
+            '#FFd45500',
+            '#FFff7f2a',
+            '#FFff9955',
+            '#FFffccaa',
+            '#FFaa8800',
+            '#FFffcc00',
+            '#FFffdd55',
+            '#FFffe680',
+            '#FFc8ab37',
+            '#FFd3bc5f',
+            '#FF918a6f',
+            '#FFaca793',
+            '#FFaad400',
+            '#FFccff00',
+            '#FFe5ff80',
+            '#FFf6ffd5',
+            '#FF00d455',
+            '#FF80ffb3',
+            '#FF00ffcc',
+            '#FF80ffe6',
+            '#FF2ad4ff',
+            '#FFaaeeff',
+            '#FF0066ff',
+            '#FF5555ff',
+            '#FF87aade',
+            '#FF80b3ff',
+            '#FF0000ff',
+            '#FF330080',
+            '#FF9955ff',
+            '#FFdd55ff',
+            '#FFff2ad4',
+            '#FFe9afdd',
+            '#FFff2a7f',
+            '#FFff80b2',
+            '#FFd35f8d',
+]
 
 var backgrounds = [
     'qrc:/gcompris/src/activities/menu/resource/background.svg',
@@ -97,11 +145,6 @@ function initLevel() {
     nbx = 20 + currentLevel
     nby = Math.floor(nbx * (main.height / main.width))
 
-    if(currentLevel == 0)
-        colors[0] = '#FFFFFFFF'
-    else
-        colors[0] = '#00FFFFFF'
-
     var model = []
     for(var ix = 0;  ix < nbx; ++ix) {
         for(var iy = 0;  iy < nby; ++iy) {
@@ -127,5 +170,5 @@ function previousLevel() {
 }
 
 function getColor() {
-    return colors[items.colorSelector]
+    return items.colorSelector
 }

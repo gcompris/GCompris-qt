@@ -49,8 +49,8 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias paintModel: paintModel
-            property int numberOfColor: 7
-            property int colorSelector: 0
+            property variant colors: bar.level < 10 ? Activity.colorsSimple : Activity.colorsAdvanced
+            property string colorSelector: colors[0]
             property string backgroundImg: Activity.backgrounds[bar.level - 1]
         }
 
@@ -81,133 +81,129 @@ ActivityBase {
             id: paintModel
         }
 
-        Row {
-            id: row
+        // The color selector
+        GridView {
+            id: colorSelector
             anchors {
-                top: parent.top
-                right: parent.right
                 left: parent.left
+                top: parent.top
                 bottom: bar.top
             }
-            anchors.margins: 10
-            spacing: 20
+            width: cellWidth + 10 * ApplicationInfo.ratio
+            model: items.colors
+            cellWidth: 60 * ApplicationInfo.ratio
+            cellHeight: cellWidth
+            delegate: Item {
+                width: colorSelector.cellWidth
+                height: width
+                Rectangle {
+                    id: rect
+                    width: parent.width
+                    height: width
+                    radius: width * 0.1
+                    z: iAmSelected ? 10 : 1
+                    color: modelData
+                    border.color: 'black'
+                    border.width: 1
 
-            // The color selector
-            Column {
-                id: colorSelector
-                property int cellSize: Math.min(parent.height / items.numberOfColor,
-                                                70 * ApplicationInfo.ratio)
-                Repeater {
-                    model: items.numberOfColor
-                    Item {
-                        width: colorSelector.cellSize
-                        height: width
-                        Image {
-                            id: img
-                            source: "qrc:/gcompris/src/activities/redraw/resource/" +
-                                    Activity.colorShortcut[modelData] + ".svg"
-                            sourceSize.width: parent.width
-                            z: iAmSelected ? 10 : 1
+                    property bool iAmSelected: modelData == items.colorSelector
 
-                            property bool iAmSelected: modelData == items.colorSelector
-
-                            states: [
-                                State {
-                                    name: "notclicked"
-                                    when: !img.iAmSelected && !mouseArea.containsMouse
-                                    PropertyChanges {
-                                        target: img
-                                        scale: 0.8
-                                    }
-                                },
-                                State {
-                                    name: "clicked"
-                                    when: mouseArea.pressed
-                                    PropertyChanges {
-                                        target: img
-                                        scale: 0.7
-                                    }
-                                },
-                                State {
-                                    name: "hover"
-                                    when: mouseArea.containsMouse
-                                    PropertyChanges {
-                                        target: img
-                                        scale: 1.1
-                                    }
-                                },
-                                State {
-                                    name: "selected"
-                                    when: img.iAmSelected
-                                    PropertyChanges {
-                                        target: img
-                                        scale: 1
-                                    }
-                                }
-                            ]
-
-                            SequentialAnimation {
-                                id: anim
-                                running: img.iAmSelected
-                                loops: Animation.Infinite
-                                alwaysRunToEnd: true
-                                NumberAnimation {
-                                    target: img
-                                    property: "rotation"
-                                    from: 0; to: 10
-                                    duration: 200
-                                    easing.type: Easing.OutQuad
-                                }
-                                NumberAnimation {
-                                    target: img
-                                    property: "rotation"
-                                    from: 10; to: -10
-                                    duration: 400
-                                    easing.type: Easing.InOutQuad
-                                }
-                                NumberAnimation {
-                                    target: img
-                                    property: "rotation"
-                                    from: -10; to: 0
-                                    duration: 200
-                                    easing.type: Easing.InQuad
-                                }
+                    states: [
+                        State {
+                            name: "notclicked"
+                            when: !rect.iAmSelected && !mouseArea.containsMouse
+                            PropertyChanges {
+                                target: rect
+                                scale: 0.8
                             }
-
-                            Behavior on scale { NumberAnimation { duration: 70 } }
-                            MouseArea {
-                                id: mouseArea
-                                anchors.fill: parent
-                                hoverEnabled: true
-                                onClicked: {
-                                    activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
-                                    items.colorSelector = modelData
-                                }
+                        },
+                        State {
+                            name: "clicked"
+                            when: mouseArea.pressed
+                            PropertyChanges {
+                                target: rect
+                                scale: 0.7
                             }
+                        },
+                        State {
+                            name: "hover"
+                            when: mouseArea.containsMouse
+                            PropertyChanges {
+                                target: rect
+                                scale: 1.1
+                            }
+                        },
+                        State {
+                            name: "selected"
+                            when: rect.iAmSelected
+                            PropertyChanges {
+                                target: rect
+                                scale: 1
+                            }
+                        }
+                    ]
+
+                    SequentialAnimation {
+                        id: anim
+                        running: rect.iAmSelected
+                        loops: Animation.Infinite
+                        alwaysRunToEnd: true
+                        NumberAnimation {
+                            target: rect
+                            property: "rotation"
+                            from: 0; to: 10
+                            duration: 200
+                            easing.type: Easing.OutQuad
+                        }
+                        NumberAnimation {
+                            target: rect
+                            property: "rotation"
+                            from: 10; to: -10
+                            duration: 400
+                            easing.type: Easing.InOutQuad
+                        }
+                        NumberAnimation {
+                            target: rect
+                            property: "rotation"
+                            from: -10; to: 0
+                            duration: 200
+                            easing.type: Easing.InQuad
+                        }
+                    }
+
+                    Behavior on scale { NumberAnimation { duration: 70 } }
+                    MouseArea {
+                        id: mouseArea
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        onClicked: {
+                            activity.audioEffects.play('qrc:/gcompris/src/core/resource/sounds/scroll.wav')
+                            items.colorSelector = modelData
                         }
                     }
                 }
             }
+        }
 
-            Item {
-                anchors {
-                    top: parent.top
-                    bottom: parent.bottom
-                }
-                width: parent.width - colorSelector.width - row.spacing
+        Item {
+            anchors {
+                top: parent.top
+                left: colorSelector.right
+                right: parent.right
+                bottom: parent.bottom
+            }
 
-                Repeater {
-                    model: paintModel
-                    parent: rootItem
+            Repeater {
+                model: paintModel
+                parent: rootItem
 
-                    PaintItem {
-                        initialX: colorSelector.width + colorSelector.spacing
-                        ix: m_ix
-                        iy: m_iy
-                        nbx: m_nbx
-                        nby: m_nby
-                        color: Activity.colors[0]
-                    }
+                PaintItem {
+                    initialX: colorSelector.width + 20 * ApplicationInfo.ratio
+                    ix: m_ix
+                    iy: m_iy
+                    nbx: m_nbx
+                    nby: m_nby
+                    color: items.colors[0]
                 }
             }
         }
