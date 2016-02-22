@@ -28,7 +28,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'train1',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'train/loco.svg',
@@ -95,7 +95,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'train2',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'train/loco.svg',
@@ -162,7 +162,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'train3',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'train/loco.svg',
@@ -229,7 +229,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'train4',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'train/loco.svg',
@@ -296,7 +296,7 @@ var dataset = [
             {
                 'name': 'Level 1',
                 'bg': 'truck/traffic_bg.svg',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'truck/engine.svg',
@@ -378,7 +378,7 @@ var dataset = [
             {
                 'name': 'Level 2',
                 'bg': 'truck/traffic_bg.svg',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'truck/engine.svg',
@@ -460,7 +460,7 @@ var dataset = [
             {
                 'name': 'Level 3',
                 'bg': 'truck/traffic_bg.svg',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'truck/engine.svg',
@@ -542,7 +542,7 @@ var dataset = [
             {
                 'name': 'Level 4',
                 'bg': 'car1/car.svg',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'car1/windshield.svg',
@@ -654,7 +654,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Level 5 Real Tangram',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -766,7 +766,7 @@ var dataset = [
             {
                 'name': 'Imported level 0',
                 'bg': '',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -878,7 +878,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 2',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -990,7 +990,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 10',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -1102,7 +1102,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 11',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -1214,7 +1214,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 12',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -1326,7 +1326,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 13',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -1438,7 +1438,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 14',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -1550,7 +1550,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 15',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -1662,7 +1662,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 16',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -1774,7 +1774,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 2',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -1885,7 +1885,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 4',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -1997,7 +1997,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 5',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -2109,7 +2109,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 6',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -2221,7 +2221,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 7',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -2333,7 +2333,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 8',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -2445,7 +2445,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 9',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -2557,7 +2557,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 17',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -2669,7 +2669,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 18',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -2781,7 +2781,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 19',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -2893,7 +2893,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 20',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -3005,7 +3005,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 21',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -3117,7 +3117,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 22',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -3229,7 +3229,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 23',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -3341,7 +3341,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 24',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -3453,7 +3453,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 25',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -3565,7 +3565,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 26',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -3677,7 +3677,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 27',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -3789,7 +3789,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 28',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -3901,7 +3901,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 29',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -4013,7 +4013,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 30',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -4125,7 +4125,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 31',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -4237,7 +4237,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 32',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -4349,7 +4349,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 33',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -4461,7 +4461,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 34',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -4573,7 +4573,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 35',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -4685,7 +4685,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 36',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -4797,7 +4797,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 38',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -4909,7 +4909,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 39',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -5021,7 +5021,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 40',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -5133,7 +5133,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 41',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -5245,7 +5245,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 42',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -5357,7 +5357,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 43',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -5469,7 +5469,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 44',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -5581,7 +5581,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 45',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -5693,7 +5693,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 46',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -5805,7 +5805,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 47',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -5917,7 +5917,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 48',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -6029,7 +6029,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 49',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -6141,7 +6141,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 50',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -6253,7 +6253,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 51',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -6365,7 +6365,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 52',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -6477,7 +6477,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 53',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -6589,7 +6589,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 54',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',
@@ -6701,7 +6701,7 @@ var dataset = [
             {
                 'bg': '',
                 'name': 'Imported level 55',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {
                         'img': 'tangram/p0.svg',

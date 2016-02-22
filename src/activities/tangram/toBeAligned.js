@@ -9,7 +9,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 56',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -105,7 +105,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 57',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -201,7 +201,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 58',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -297,7 +297,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 59',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -393,7 +393,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 60',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -489,7 +489,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 61',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -585,7 +585,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 62',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -681,7 +681,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 63',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -777,7 +777,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 64',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -873,7 +873,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 65',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -969,7 +969,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 66',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -1065,7 +1065,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 67',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -1161,7 +1161,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 68',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -1257,7 +1257,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 69',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -1353,7 +1353,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 70',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -1449,7 +1449,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 71',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -1545,7 +1545,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 72',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -1641,7 +1641,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 73',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -1737,7 +1737,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 74',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -1833,7 +1833,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 75',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -1929,7 +1929,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 76',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -2025,7 +2025,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 77',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -2121,7 +2121,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 78',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -2217,7 +2217,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 79',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -2313,7 +2313,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 80',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -2409,7 +2409,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 81',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -2505,7 +2505,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 82',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -2601,7 +2601,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 83',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -2697,7 +2697,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 84',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -2793,7 +2793,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 85',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -2889,7 +2889,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 86',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -2985,7 +2985,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 87',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -3081,7 +3081,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 88',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -3177,7 +3177,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 89',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -3273,7 +3273,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 90',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -3369,7 +3369,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 91',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -3465,7 +3465,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 92',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -3561,7 +3561,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 93',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -3657,7 +3657,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 94',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -3753,7 +3753,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 95',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -3849,7 +3849,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 96',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -3945,7 +3945,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 97',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -4041,7 +4041,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 98',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -4137,7 +4137,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 99',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -4233,7 +4233,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 100',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -4329,7 +4329,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 101',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -4425,7 +4425,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 102',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -4521,7 +4521,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 103',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -4617,7 +4617,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 104',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -4713,7 +4713,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 105',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -4809,7 +4809,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 106',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -4905,7 +4905,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 107',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -5001,7 +5001,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 108',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -5097,7 +5097,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 109',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -5193,7 +5193,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 110',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -5289,7 +5289,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 111',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -5385,7 +5385,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 112',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -5481,7 +5481,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 113',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -5577,7 +5577,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 114',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -5673,7 +5673,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 115',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -5769,7 +5769,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 116',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -5865,7 +5865,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 117',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -5961,7 +5961,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 118',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -6057,7 +6057,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 119',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -6153,7 +6153,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 120',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -6249,7 +6249,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 121',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -6345,7 +6345,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 122',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -6441,7 +6441,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 123',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -6537,7 +6537,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 124',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -6633,7 +6633,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 125',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -6729,7 +6729,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 126',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -6825,7 +6825,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 127',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -6921,7 +6921,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 128',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -7017,7 +7017,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 129',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -7113,7 +7113,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 130',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -7209,7 +7209,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 131',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -7305,7 +7305,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 132',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -7401,7 +7401,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 133',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -7497,7 +7497,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 134',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -7593,7 +7593,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 135',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -7689,7 +7689,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 136',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -7785,7 +7785,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 137',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -7881,7 +7881,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 138',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -7977,7 +7977,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 139',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -8073,7 +8073,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 140',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -8169,7 +8169,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 141',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -8265,7 +8265,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 142',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -8361,7 +8361,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 143',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                         'flipping': 0,
@@ -8457,7 +8457,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 144',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -8553,7 +8553,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 145',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -8649,7 +8649,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 146',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -8745,7 +8745,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 147',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -8841,7 +8841,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 148',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -8937,7 +8937,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 149',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -9033,7 +9033,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 150',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -9129,7 +9129,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 151',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -9225,7 +9225,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 152',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -9321,7 +9321,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 153',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -9417,7 +9417,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 154',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -9513,7 +9513,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 155',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -9609,7 +9609,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 156',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -9705,7 +9705,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 157',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -9801,7 +9801,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 158',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -9897,7 +9897,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 159',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -9993,7 +9993,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 160',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -10089,7 +10089,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 161',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -10185,7 +10185,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 162',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -10281,7 +10281,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 163',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -10377,7 +10377,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 164',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -10473,7 +10473,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 165',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -10569,7 +10569,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 166',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -10665,7 +10665,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 167',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -10761,7 +10761,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 168',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -10857,7 +10857,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 169',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -10953,7 +10953,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 170',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -11049,7 +11049,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 171',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -11145,7 +11145,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 172',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -11241,7 +11241,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 173',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -11337,7 +11337,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 174',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -11433,7 +11433,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 175',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -11529,7 +11529,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 176',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -11625,7 +11625,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 177',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -11721,7 +11721,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 178',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -11817,7 +11817,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 179',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -11913,7 +11913,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 180',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -12009,7 +12009,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 181',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -12105,7 +12105,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 182',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -12201,7 +12201,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 183',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -12297,7 +12297,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 184',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -12393,7 +12393,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 185',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -12489,7 +12489,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 186',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -12585,7 +12585,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 187',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -12681,7 +12681,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 188',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -12777,7 +12777,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 189',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -12873,7 +12873,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 190',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -12969,7 +12969,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 191',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -13065,7 +13065,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 192',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -13161,7 +13161,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 193',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -13257,7 +13257,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 194',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -13353,7 +13353,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 195',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -13449,7 +13449,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 196',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -13545,7 +13545,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 197',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -13641,7 +13641,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 198',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -13737,7 +13737,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 199',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -13833,7 +13833,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 200',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -13929,7 +13929,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 201',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -14025,7 +14025,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 202',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -14121,7 +14121,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 203',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -14217,7 +14217,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 204',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -14313,7 +14313,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 205',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -14409,7 +14409,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 206',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -14505,7 +14505,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 207',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -14601,7 +14601,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 208',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -14697,7 +14697,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 209',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -14793,7 +14793,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 210',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -14889,7 +14889,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 211',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -14985,7 +14985,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 212',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -15081,7 +15081,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 213',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -15177,7 +15177,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 214',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -15273,7 +15273,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 215',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -15369,7 +15369,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 216',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -15465,7 +15465,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 217',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -15561,7 +15561,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 218',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -15657,7 +15657,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 219',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -15753,7 +15753,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 220',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -15849,7 +15849,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 221',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -15945,7 +15945,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 222',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -16041,7 +16041,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 223',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -16137,7 +16137,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 224',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -16233,7 +16233,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 225',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -16329,7 +16329,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 226',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -16425,7 +16425,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 227',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -16521,7 +16521,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 228',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -16617,7 +16617,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 229',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -16713,7 +16713,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 230',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -16809,7 +16809,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 231',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -16905,7 +16905,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 232',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -17001,7 +17001,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 233',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -17097,7 +17097,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 234',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -17193,7 +17193,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 235',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -17289,7 +17289,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 236',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -17385,7 +17385,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 237',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -17481,7 +17481,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 238',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -17577,7 +17577,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 239',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -17673,7 +17673,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 240',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -17769,7 +17769,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 241',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -17865,7 +17865,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 242',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -17961,7 +17961,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 243',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -18057,7 +18057,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 244',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -18153,7 +18153,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 245',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -18249,7 +18249,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 246',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -18345,7 +18345,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 247',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -18441,7 +18441,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 248',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -18537,7 +18537,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 249',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -18633,7 +18633,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 250',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -18729,7 +18729,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 251',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -18825,7 +18825,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 252',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -18921,7 +18921,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 253',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -19017,7 +19017,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 254',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -19113,7 +19113,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 255',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -19209,7 +19209,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 256',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -19305,7 +19305,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 257',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -19401,7 +19401,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 258',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -19497,7 +19497,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 259',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -19593,7 +19593,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 260',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -19689,7 +19689,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 261',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -19785,7 +19785,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 262',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -19881,7 +19881,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 263',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -19977,7 +19977,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 264',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -20073,7 +20073,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 265',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -20169,7 +20169,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 266',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -20265,7 +20265,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 267',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -20361,7 +20361,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 268',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -20457,7 +20457,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 269',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -20553,7 +20553,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 270',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -20649,7 +20649,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 271',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -20745,7 +20745,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 272',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -20841,7 +20841,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 273',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -20937,7 +20937,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 274',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -21033,7 +21033,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 275',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -21129,7 +21129,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 276',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -21225,7 +21225,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 277',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -21321,7 +21321,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 278',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -21417,7 +21417,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 279',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -21513,7 +21513,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 280',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -21609,7 +21609,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 281',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -21705,7 +21705,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 282',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -21801,7 +21801,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 283',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -21897,7 +21897,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 284',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -21993,7 +21993,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 285',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -22089,7 +22089,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 286',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -22185,7 +22185,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 287',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -22281,7 +22281,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 288',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -22377,7 +22377,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 289',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -22473,7 +22473,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 290',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -22569,7 +22569,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 291',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -22665,7 +22665,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 292',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -22761,7 +22761,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 293',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -22857,7 +22857,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 294',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -22953,7 +22953,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 295',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -23049,7 +23049,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 296',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -23145,7 +23145,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 297',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -23241,7 +23241,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 298',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -23337,7 +23337,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 299',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -23433,7 +23433,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 300',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -23529,7 +23529,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 301',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -23625,7 +23625,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 302',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -23721,7 +23721,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 303',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -23817,7 +23817,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 304',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -23913,7 +23913,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 305',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -24009,7 +24009,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 306',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -24105,7 +24105,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 307',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -24201,7 +24201,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 308',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -24297,7 +24297,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 309',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -24393,7 +24393,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 310',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -24489,7 +24489,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 311',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -24585,7 +24585,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 312',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -24681,7 +24681,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 313',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -24777,7 +24777,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 314',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -24873,7 +24873,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 315',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -24969,7 +24969,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 316',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -25065,7 +25065,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 317',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -25161,7 +25161,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 318',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -25257,7 +25257,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 319',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -25353,7 +25353,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 320',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -25449,7 +25449,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 321',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -25545,7 +25545,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 322',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -25641,7 +25641,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 323',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -25737,7 +25737,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 324',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -25833,7 +25833,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 325',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -25929,7 +25929,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 326',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -26025,7 +26025,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 327',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -26121,7 +26121,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 328',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -26217,7 +26217,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 329',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -26313,7 +26313,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 330',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -26409,7 +26409,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 331',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -26505,7 +26505,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 332',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -26601,7 +26601,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 333',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -26697,7 +26697,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 334',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -26793,7 +26793,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 335',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -26889,7 +26889,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 336',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -26985,7 +26985,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 337',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -27081,7 +27081,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 338',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -27177,7 +27177,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 339',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -27273,7 +27273,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 340',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -27369,7 +27369,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 341',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -27465,7 +27465,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 342',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -27561,7 +27561,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 343',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -27657,7 +27657,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 344',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -27753,7 +27753,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 345',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -27849,7 +27849,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 346',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -27945,7 +27945,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 347',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -28041,7 +28041,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 348',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -28137,7 +28137,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 349',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -28233,7 +28233,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 350',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -28329,7 +28329,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 351',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -28425,7 +28425,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 352',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -28521,7 +28521,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 353',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -28617,7 +28617,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 354',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -28713,7 +28713,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 355',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -28809,7 +28809,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 356',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -28905,7 +28905,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 357',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -29001,7 +29001,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 358',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -29097,7 +29097,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 359',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -29193,7 +29193,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 360',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -29289,7 +29289,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 361',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -29385,7 +29385,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 362',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -29481,7 +29481,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 363',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -29577,7 +29577,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 364',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -29673,7 +29673,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 365',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -29769,7 +29769,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 366',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -29865,7 +29865,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 367',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -29961,7 +29961,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 368',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -30057,7 +30057,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 369',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -30153,7 +30153,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 370',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -30249,7 +30249,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 371',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -30345,7 +30345,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 372',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -30441,7 +30441,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 373',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -30537,7 +30537,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 374',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -30633,7 +30633,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 375',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -30729,7 +30729,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 376',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -30825,7 +30825,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 377',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -30921,7 +30921,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 378',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,
@@ -31017,7 +31017,7 @@ var toBeAligned = [
             {
                 'bg': '',
                 'name': 'Imported level 379',
-                'colorMask': '#CCC',
+                'colorMask': '#999',
                 'pieces': [
                     {   'flippable': 0,
                           'flipping': 0,

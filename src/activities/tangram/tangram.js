@@ -128,7 +128,7 @@ function toDataset() {
     var tanss = '            {\n' +
                 "                'bg': '',\n" +
                 "                'name': '" + items.currentTans.name + "',\n" +
-                "                'colorMask': '#CCC',\n" +
+                "                'colorMask': '#999',\n" +
                 "                'pieces': [\n"
     for(var i = 0; i < nbpiece; i++) {
         var p1 = items.currentTans.pieces[i]
