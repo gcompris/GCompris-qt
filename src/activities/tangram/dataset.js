@@ -233,6 +233,73 @@ var dataset = [
                 'pieces': [
                     {
                         'img': 'train/loco.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.238,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.84868,
+                        'initY': 0.14357,
+                        'moduloRotation': 360,
+                        'rotation': 315,
+                        'width': 0.237,
+                        'x': 0.20365693865396073,
+                        'y': 0.4241018463371054
+                    },
+                    {
+                        'img': 'train/coal.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.144,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.40198,
+                        'initY': 0.10248,
+                        'moduloRotation': 360,
+                        'rotation': 90,
+                        'width': 0.221,
+                        'x': 0.7575580702799286,
+                        'y': 0.6540005955926147
+                    },
+                    {
+                        'img': 'train/wood.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.141,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.58434,
+                        'initY': 0.23488,
+                        'moduloRotation': 360,
+                        'rotation': 45,
+                        'width': 0.235,
+                        'x': 0.6689178082191782,
+                        'y': 0.4540589636688504
+                    },
+                    {
+                        'img': 'train/passenger.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.213,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.84311,
+                        'initY': 0.42368,
+                        'moduloRotation': 360,
+                        'rotation': 0,
+                        'width': 0.238,
+                        'x': 0.4550815961882075,
+                        'y': 0.3317635497319833
+                    },
+                ]
+            },
+            {
+                'bg': '',
+                'name': 'train5',
+                'colorMask': '#999',
+                'pieces': [
+                    {
+                        'img': 'train/loco.svg',
                         'flippable': 1,
                         'flipping': true,
                         'height': 0.238,
