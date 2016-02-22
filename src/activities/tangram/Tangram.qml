@@ -69,7 +69,7 @@ ActivityBase {
             border.width: 2
             border.color: "black"
             color: "transparent"
-            visible: true /* debug to see the play area */
+            visible: items.editionMode /* debug to see the play area */
         }
 
         Component.onCompleted: {
@@ -90,6 +90,7 @@ ActivityBase {
             property Item selectedITem
             property var currentTans: Dataset.dataset[bar.level - 1]
             property int numberOfLevel: Dataset.dataset.length
+            property bool editionMode: false
         }
 
         onStart: {
@@ -142,7 +143,7 @@ ActivityBase {
                     anchors.fill: tansModel
                     source: mask
                     maskSource: tansModel
-                    rotation: modelData.rotation
+                    rotation: modelData.flipping ? 360 - modelData.rotation : modelData.rotation
                     transform: Scale {
                         origin.x: modelData.width * background.playWidth / 2
                         xScale: modelData.flipping ? -1 : 1
@@ -158,15 +159,15 @@ ActivityBase {
                 id: tans
                 x: background.playX + background.playWidth * xRatio - width / 2
                 y: background.playY + background.playHeight * yRatio - height / 2
-                mirror: modelData.initFlipping
-                rotation: modelData.initRotation
+                mirror: !items.editionMode ? modelData.initFlipping : modelData.flipping
+                rotation: !items.editionMode ? modelData.initRotation : modelData.rotation
                 source: Activity.url + modelData.img
                 sourceSize.width: modelData.width * background.playWidth
                 sourceSize.height: modelData.height * background.playWidth
                 z: 100 + index
 
-                property real xRatio: modelData.initX
-                property real yRatio: modelData.initY
+                property real xRatio: !items.editionMode ? modelData.initX : modelData.x
+                property real yRatio: !items.editionMode ? modelData.initY : modelData.y
                 property bool selected: false
                 property int animDuration: 48
                 property bool flippable: modelData.flippable
@@ -244,7 +245,7 @@ ActivityBase {
                         parent.Drag.drop()
                         var posTans = positionToTans()
                         var closest = Activity.getClosest(posTans)
-                        if(closest) {
+                        if(closest && !items.editionMode) {
                             tans.xRatio = closest[0]
                             tans.yRatio = closest[1]
                         } else {
@@ -327,7 +328,8 @@ ActivityBase {
             onTriggered: {
                 if(Activity.check() && !alreadyStarted) {
                     alreadyStarted = true
-                    bonus.good('flower')
+                    if(!items.editionMode)
+                        bonus.good('flower')
                 }
             }
         }
@@ -336,20 +338,33 @@ ActivityBase {
             checkWinTimer.start()
         }
 
+        GCText {
+            anchors.top: parent.top
+            anchors.left: parent.left
+            text: items.currentTans.name
+            visible: items.editionMode
+        }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()
         }
 
+        File {
+            id: file
+        }
+
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level |
+                                             (items.editionMode ? repeat : 0) }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+            onRepeatClicked: file.write(Activity.toDataset(), "/tmp/" + items.currentTans.name)
         }
 
         Bonus {

@@ -121,3 +121,35 @@ function check() {
     }
     return true
 }
+
+function toDataset() {
+    var nbpiece = items.currentTans.pieces.length
+    var userTans = items.userList.asTans()
+    var tanss = '            {\n' +
+                "                'bg': '',\n" +
+                "                'name': '" + items.currentTans.name + "',\n" +
+                "                'colorMask': '#CCC',\n" +
+                "                'pieces': [\n"
+    for(var i = 0; i < nbpiece; i++) {
+        var p1 = items.currentTans.pieces[i]
+        var p2 = userTans[i]
+        tanss += '                    {' + '\n' +
+                "                        'img': '" + p1.img + "',\n" +
+                "                        'flippable': " + p1.flippable + ',\n' +
+                "                        'flipping': " + p2.flipping + ',\n' +
+                "                        'height': " + p1.height + ',\n' +
+                "                        'initFlipping': " + p1.initFlipping + ',\n' +
+                "                        'initRotation': " + p1.initRotation + ',\n' +
+                "                        'initX': " + p1.initX + ',\n' +
+                "                        'initY': " + p1.initY + ',\n' +
+                "                        'moduloRotation': " + p1.moduloRotation + ',\n' +
+                "                        'rotation': " + p2.rotation + ',\n' +
+                "                        'width': " + p1.width + ',\n' +
+                "                        'x': " + p2.x + ',\n' +
+                "                        'y': " + p2.y + '\n' +
+                "                    },\n";
+    }
+    tanss += '                ]\n' +
+             '            },\n'
+    return(tanss)
+}
