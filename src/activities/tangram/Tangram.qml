@@ -192,7 +192,8 @@ ActivityBase {
 
                 // Manage to return a base rotation as it was provided in the model
                 function rotationToTans() {
-                    var mod = modelData.moduloRotation
+                    // moduloRotation == 0 to disable rotation, assume 360 in this case
+                    var mod = modelData.moduloRotation ? modelData.moduloRotation : 360
                     if(modelData.flipable || modelData.flipping || !mirror)
                         return rotation >= 0 ? rotation % mod : (360 + rotation) % mod
                     else
@@ -285,7 +286,7 @@ ActivityBase {
                     source: "qrc:/gcompris/src/core/resource/bar_reload.svg"
                     x: - width
                     y: parent.height / 2 - height / 2
-                    visible: parent.selected
+                    visible: parent.selected && modelData.moduloRotation > 0
                     sourceSize.width: 40 * ApplicationInfo.ratio
                     z: parent.z + 1
 
