@@ -759,13 +759,13 @@ var dataset = [
                         'rotation': 45,
                         'width': 0.215,
                         'x': 0.4021441334127456,
-                        'y': 0.49383561643835594
+                        'y': 0.49324002382370435
                     },
                 ]
             },
             {
-                'name': 'Imported level 0',
                 'bg': '',
+                'name': 'Imported level 0',
                 'colorMask': '#999',
                 'pieces': [
                     {
@@ -781,7 +781,7 @@ var dataset = [
                         'rotation': 270,
                         'width': 0.429,
                         'x': 0.42724419297200705,
-                        'y': 0.32522215604526505
+                        'y': 0.32462656343061347
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -795,8 +795,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 315,
                         'width': 0.429,
-                        'x': 0.15671113758189395,
-                        'y': 0.7645783204288266
+                        'x': 0.15611554496724236,
+                        'y': 0.7651739130434781
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -810,8 +810,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 270,
                         'width': 0.304,
-                        'x': 0.7618761167361525,
-                        'y': 0.6910780226325192
+                        'x': 0.7600893388921978,
+                        'y': 0.689886837403216
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -840,8 +840,8 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 45,
                         'width': 0.322,
-                        'x': 0.23011137581893984,
-                        'y': 0.4626932698034545
+                        'x': 0.2307069684335914,
+                        'y': 0.4632888624181061
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -855,7 +855,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.215,
-                        'x': 0.3443353186420489,
+                        'x': 0.3449309112567005,
                         'y': 0.5766063132817155
                     },
                     {
@@ -870,9 +870,9 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.215,
-                        'x': 0.5713722453841571,
-                        'y': 0.6528856462179867
-                    }
+                        'x': 0.5708940134670106,
+                        'y': 0.6522900536033351
+                    },
                 ]
             },
             {
@@ -907,7 +907,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 0,
                         'width': 0.429,
-                        'x': 0.4872650387135199,
+                        'x': 0.48845622394282306,
                         'y': 0.8604687313877308
                     },
                     {
@@ -968,7 +968,7 @@ var dataset = [
                         'rotation': 90,
                         'width': 0.215,
                         'x': 0.4437992852888625,
-                        'y': 0.17458129839189995
+                        'y': 0.1757724836212031
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -987,901 +987,6 @@ var dataset = [
                     },
                 ]
             },
-            {
-                'bg': '',
-                'name': 'Imported level 10',
-                'colorMask': '#999',
-                'pieces': [
-                    {
-                        'img': 'tangram/p0.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.214,
-                        'initFlipping': 0,
-                        'initRotation': 180,
-                        'initX': 0.217,
-                        'initY': 0.112,
-                        'moduloRotation': 360,
-                        'rotation': 315,
-                        'width': 0.429,
-                        'x': 0.7147884594571599,
-                        'y': 0.27767481979069164
-                    },
-                    {
-                        'img': 'tangram/p0.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.214,
-                        'initFlipping': 0,
-                        'initRotation': 0,
-                        'initX': 0.442,
-                        'initY': 0.113,
-                        'moduloRotation': 360,
-                        'rotation': 180,
-                        'width': 0.429,
-                        'x': 0.28196023066451115,
-                        'y': 0.7580107131796135
-                    },
-                    {
-                        'img': 'tangram/p1.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.152,
-                        'initFlipping': 0,
-                        'initRotation': 180,
-                        'initX': 0.61,
-                        'initY': 0.08,
-                        'moduloRotation': 360,
-                        'rotation': 0,
-                        'width': 0.304,
-                        'x': 0.6425140732578916,
-                        'y': 0.5773520909555007
-                    },
-                    {
-                        'img': 'tangram/p2.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.152,
-                        'initFlipping': 0,
-                        'initRotation': 0,
-                        'initX': 0.911,
-                        'initY': 0.081,
-                        'moduloRotation': 90,
-                        'rotation': 45,
-                        'width': 0.152,
-                        'x': 0.5179394382710797,
-                        'y': 0.5193719275078705
-                    },
-                    {
-                        'img': 'tangram/p3.svg',
-                        'flippable': 1,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 45,
-                        'initX': 0.083,
-                        'initY': 0.178,
-                        'moduloRotation': 180,
-                        'rotation': 90,
-                        'width': 0.322,
-                        'x': 0.46385831115459863,
-                        'y': 0.358319588530588
-                    },
-                    {
-                        'img': 'tangram/p4.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 135,
-                        'initX': 0.741,
-                        'initY': 0.118,
-                        'moduloRotation': 360,
-                        'rotation': 45,
-                        'width': 0.215,
-                        'x': 0.6074025181655749,
-                        'y': 0.6904580122521908
-                    },
-                    {
-                        'img': 'tangram/p4.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 45,
-                        'initX': 0.946,
-                        'initY': 0.205,
-                        'moduloRotation': 360,
-                        'rotation': 315,
-                        'width': 0.215,
-                        'x': 0.4478667022036928,
-                        'y': 0.19232372534672001
-                    },
-                ]
-            },
-            {
-                'bg': '',
-                'name': 'Imported level 11',
-                'colorMask': '#999',
-                'pieces': [
-                    {
-                        'img': 'tangram/p0.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.214,
-                        'initFlipping': 0,
-                        'initRotation': 180,
-                        'initX': 0.217,
-                        'initY': 0.112,
-                        'moduloRotation': 360,
-                        'rotation': 0,
-                        'width': 0.429,
-                        'x': 0.343738391049094,
-                        'y': 0.540710894154684
-                    },
-                    {
-                        'img': 'tangram/p0.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.214,
-                        'initFlipping': 0,
-                        'initRotation': 0,
-                        'initX': 0.442,
-                        'initY': 0.113,
-                        'moduloRotation': 360,
-                        'rotation': 180,
-                        'width': 0.429,
-                        'x': 0.47293088198757754,
-                        'y': 0.7540161192886923
-                    },
-                    {
-                        'img': 'tangram/p1.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.152,
-                        'initFlipping': 0,
-                        'initRotation': 180,
-                        'initX': 0.61,
-                        'initY': 0.08,
-                        'moduloRotation': 360,
-                        'rotation': 0,
-                        'width': 0.304,
-                        'x': 0.7088762542329619,
-                        'y': 0.5729427676337956
-                    },
-                    {
-                        'img': 'tangram/p2.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.152,
-                        'initFlipping': 0,
-                        'initRotation': 0,
-                        'initX': 0.911,
-                        'initY': 0.081,
-                        'moduloRotation': 90,
-                        'rotation': 0,
-                        'width': 0.152,
-                        'x': 0.34395914592019045,
-                        'y': 0.357820518846252
-                    },
-                    {
-                        'img': 'tangram/p3.svg',
-                        'flippable': 1,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 45,
-                        'initX': 0.083,
-                        'initY': 0.178,
-                        'moduloRotation': 180,
-                        'rotation': 90,
-                        'width': 0.322,
-                        'x': 0.6111663492725262,
-                        'y': 0.4875022815451374
-                    },
-                    {
-                        'img': 'tangram/p4.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 135,
-                        'initX': 0.741,
-                        'initY': 0.118,
-                        'moduloRotation': 360,
-                        'rotation': 90,
-                        'width': 0.215,
-                        'x': 0.7191694824300179,
-                        'y': 0.30080569922572953
-                    },
-                    {
-                        'img': 'tangram/p4.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 45,
-                        'initX': 0.946,
-                        'initY': 0.205,
-                        'moduloRotation': 360,
-                        'rotation': 180,
-                        'width': 0.215,
-                        'x': 0.8913969315919342,
-                        'y': 0.701881033948779
-                    },
-                ]
-            },
-            {
-                'bg': '',
-                'name': 'Imported level 12',
-                'colorMask': '#999',
-                'pieces': [
-                    {
-                        'img': 'tangram/p0.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.214,
-                        'initFlipping': 0,
-                        'initRotation': 180,
-                        'initX': 0.217,
-                        'initY': 0.112,
-                        'moduloRotation': 360,
-                        'rotation': 157.5,
-                        'width': 0.429,
-                        'x': 0.48378610108057524,
-                        'y': 0.5281706585552625
-                    },
-                    {
-                        'img': 'tangram/p0.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.214,
-                        'initFlipping': 0,
-                        'initRotation': 0,
-                        'initX': 0.442,
-                        'initY': 0.113,
-                        'moduloRotation': 360,
-                        'rotation': 337.5,
-                        'width': 0.429,
-                        'x': 0.6813192857142856,
-                        'y': 0.44696344975750885
-                    },
-                    {
-                        'img': 'tangram/p1.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.152,
-                        'initFlipping': 0,
-                        'initRotation': 180,
-                        'initX': 0.61,
-                        'initY': 0.08,
-                        'moduloRotation': 360,
-                        'rotation': 337.5,
-                        'width': 0.304,
-                        'x': 0.4120106755721944,
-                        'y': 0.19614960350548802
-                    },
-                    {
-                        'img': 'tangram/p2.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.152,
-                        'initFlipping': 0,
-                        'initRotation': 0,
-                        'initX': 0.911,
-                        'initY': 0.081,
-                        'moduloRotation': 90,
-                        'rotation': 67.5,
-                        'width': 0.152,
-                        'x': 0.3444424485663234,
-                        'y': 0.38844723423806676
-                    },
-                    {
-                        'img': 'tangram/p3.svg',
-                        'flippable': 1,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 45,
-                        'initX': 0.083,
-                        'initY': 0.178,
-                        'moduloRotation': 180,
-                        'rotation': 0,
-                        'width': 0.322,
-                        'x': 0.7375142759295499,
-                        'y': 0.2614944703479963
-                    },
-                    {
-                        'img': 'tangram/p4.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 135,
-                        'initX': 0.741,
-                        'initY': 0.118,
-                        'moduloRotation': 360,
-                        'rotation': 22.5,
-                        'width': 0.215,
-                        'x': 0.7627900962307498,
-                        'y': 0.5701947838849656
-                    },
-                    {
-                        'img': 'tangram/p4.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 45,
-                        'initX': 0.946,
-                        'initY': 0.205,
-                        'moduloRotation': 360,
-                        'rotation': 337.5,
-                        'width': 0.215,
-                        'x': 0.40648443886667235,
-                        'y': 0.6178664400578577
-                    },
-                ]
-            },
-            {
-                'bg': '',
-                'name': 'Imported level 13',
-                'colorMask': '#999',
-                'pieces': [
-                    {
-                        'img': 'tangram/p0.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.214,
-                        'initFlipping': 0,
-                        'initRotation': 180,
-                        'initX': 0.217,
-                        'initY': 0.112,
-                        'moduloRotation': 360,
-                        'rotation': 315,
-                        'width': 0.429,
-                        'x': 0.2638586309027482,
-                        'y': 0.6620276109078531
-                    },
-                    {
-                        'img': 'tangram/p0.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.214,
-                        'initFlipping': 0,
-                        'initRotation': 0,
-                        'initX': 0.442,
-                        'initY': 0.113,
-                        'moduloRotation': 360,
-                        'rotation': 45,
-                        'width': 0.429,
-                        'x': 0.7181540357355567,
-                        'y': 0.6625947943503786
-                    },
-                    {
-                        'img': 'tangram/p1.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.152,
-                        'initFlipping': 0,
-                        'initRotation': 180,
-                        'initX': 0.61,
-                        'initY': 0.08,
-                        'moduloRotation': 360,
-                        'rotation': 135,
-                        'width': 0.304,
-                        'x': 0.5402684068748407,
-                        'y': 0.532770816727644
-                    },
-                    {
-                        'img': 'tangram/p2.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.152,
-                        'initFlipping': 0,
-                        'initRotation': 0,
-                        'initX': 0.911,
-                        'initY': 0.081,
-                        'moduloRotation': 90,
-                        'rotation': 45,
-                        'width': 0.152,
-                        'x': 0.5934897143707991,
-                        'y': 0.2650342374712839
-                    },
-                    {
-                        'img': 'tangram/p3.svg',
-                        'flippable': 1,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 45,
-                        'initX': 0.083,
-                        'initY': 0.178,
-                        'moduloRotation': 180,
-                        'rotation': 45,
-                        'width': 0.322,
-                        'x': 0.8703241973964093,
-                        'y': 0.7381158602909895
-                    },
-                    {
-                        'img': 'tangram/p4.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 135,
-                        'initX': 0.741,
-                        'initY': 0.118,
-                        'moduloRotation': 360,
-                        'rotation': 0,
-                        'width': 0.215,
-                        'x': 0.49205568697353874,
-                        'y': 0.6394517670382031
-                    },
-                    {
-                        'img': 'tangram/p4.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 45,
-                        'initX': 0.946,
-                        'initY': 0.205,
-                        'moduloRotation': 360,
-                        'rotation': 0,
-                        'width': 0.215,
-                        'x': 0.18407762971156308,
-                        'y': 0.5332945214838765
-                    },
-                ]
-            },
-            {
-                'bg': '',
-                'name': 'Imported level 14',
-                'colorMask': '#999',
-                'pieces': [
-                    {
-                        'img': 'tangram/p0.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.214,
-                        'initFlipping': 0,
-                        'initRotation': 180,
-                        'initX': 0.217,
-                        'initY': 0.112,
-                        'moduloRotation': 360,
-                        'rotation': 225,
-                        'width': 0.429,
-                        'x': 0.44751174032162017,
-                        'y': 0.3817744321449843
-                    },
-                    {
-                        'img': 'tangram/p0.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.214,
-                        'initFlipping': 0,
-                        'initRotation': 0,
-                        'initX': 0.442,
-                        'initY': 0.113,
-                        'moduloRotation': 360,
-                        'rotation': 225,
-                        'width': 0.429,
-                        'x': 0.7475202487875435,
-                        'y': 0.6829741258402109
-                    },
-                    {
-                        'img': 'tangram/p1.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.152,
-                        'initFlipping': 0,
-                        'initRotation': 180,
-                        'initX': 0.61,
-                        'initY': 0.08,
-                        'moduloRotation': 360,
-                        'rotation': 135,
-                        'width': 0.304,
-                        'x': 0.46828760954649884,
-                        'y': 0.6170599085339913
-                    },
-                    {
-                        'img': 'tangram/p2.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.152,
-                        'initFlipping': 0,
-                        'initRotation': 0,
-                        'initX': 0.911,
-                        'initY': 0.081,
-                        'moduloRotation': 90,
-                        'rotation': 0,
-                        'width': 0.152,
-                        'x': 0.596934535097422,
-                        'y': 0.5317645532204544
-                    },
-                    {
-                        'img': 'tangram/p3.svg',
-                        'flippable': 1,
-                        'flipping': true,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 45,
-                        'initX': 0.083,
-                        'initY': 0.178,
-                        'moduloRotation': 180,
-                        'rotation': 90,
-                        'width': 0.322,
-                        'x': 0.7260177893303837,
-                        'y': 0.40327689160214414
-                    },
-                    {
-                        'img': 'tangram/p4.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 135,
-                        'initX': 0.741,
-                        'initY': 0.118,
-                        'moduloRotation': 360,
-                        'rotation': 315,
-                        'width': 0.215,
-                        'x': 0.5606175187611673,
-                        'y': 0.6442606058878584
-                    },
-                    {
-                        'img': 'tangram/p4.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 45,
-                        'initX': 0.946,
-                        'initY': 0.205,
-                        'moduloRotation': 360,
-                        'rotation': 180,
-                        'width': 0.215,
-                        'x': 0.7795034666893558,
-                        'y': 0.29555082319407805
-                    },
-                ]
-            },
-            {
-                'bg': '',
-                'name': 'Imported level 15',
-                'colorMask': '#999',
-                'pieces': [
-                    {
-                        'img': 'tangram/p0.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.214,
-                        'initFlipping': 0,
-                        'initRotation': 180,
-                        'initX': 0.217,
-                        'initY': 0.112,
-                        'moduloRotation': 360,
-                        'rotation': 45,
-                        'width': 0.429,
-                        'x': 0.3699737826086957,
-                        'y': 0.3832792040330129
-                    },
-                    {
-                        'img': 'tangram/p0.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.214,
-                        'initFlipping': 0,
-                        'initRotation': 0,
-                        'initX': 0.442,
-                        'initY': 0.113,
-                        'moduloRotation': 360,
-                        'rotation': 45,
-                        'width': 0.429,
-                        'x': 0.671769068918574,
-                        'y': 0.6838833051135882
-                    },
-                    {
-                        'img': 'tangram/p1.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.152,
-                        'initFlipping': 0,
-                        'initRotation': 180,
-                        'initX': 0.61,
-                        'initY': 0.08,
-                        'moduloRotation': 360,
-                        'rotation': 225,
-                        'width': 0.304,
-                        'x': 0.2832376501318812,
-                        'y': 0.5544194613290223
-                    },
-                    {
-                        'img': 'tangram/p2.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.152,
-                        'initFlipping': 0,
-                        'initRotation': 0,
-                        'initX': 0.911,
-                        'initY': 0.081,
-                        'moduloRotation': 90,
-                        'rotation': 0,
-                        'width': 0.152,
-                        'x': 0.5199639036841659,
-                        'y': 0.532106549051306
-                    },
-                    {
-                        'img': 'tangram/p3.svg',
-                        'flippable': 1,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 45,
-                        'initX': 0.083,
-                        'initY': 0.178,
-                        'moduloRotation': 180,
-                        'rotation': 135,
-                        'width': 0.322,
-                        'x': 0.5973484012592529,
-                        'y': 0.38031551697438937
-                    },
-                    {
-                        'img': 'tangram/p4.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 135,
-                        'initX': 0.741,
-                        'initY': 0.118,
-                        'moduloRotation': 360,
-                        'rotation': 315,
-                        'width': 0.215,
-                        'x': 0.3316203964945121,
-                        'y': 0.6455583281715307
-                    },
-                    {
-                        'img': 'tangram/p4.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 45,
-                        'initX': 0.946,
-                        'initY': 0.205,
-                        'moduloRotation': 360,
-                        'rotation': 135,
-                        'width': 0.215,
-                        'x': 0.1909075980600698,
-                        'y': 0.5072279001956946
-                    },
-                ]
-            },
-            {
-                'bg': '',
-                'name': 'Imported level 16',
-                'colorMask': '#999',
-                'pieces': [
-                    {
-                        'img': 'tangram/p0.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.214,
-                        'initFlipping': 0,
-                        'initRotation': 180,
-                        'initX': 0.217,
-                        'initY': 0.112,
-                        'moduloRotation': 360,
-                        'rotation': 0,
-                        'width': 0.429,
-                        'x': 0.2883534285714286,
-                        'y': 0.18657742857142856
-                    },
-                    {
-                        'img': 'tangram/p0.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.214,
-                        'initFlipping': 0,
-                        'initRotation': 0,
-                        'initX': 0.442,
-                        'initY': 0.113,
-                        'moduloRotation': 360,
-                        'rotation': 0,
-                        'width': 0.429,
-                        'x': 0.7126645774695821,
-                        'y': 0.18657742857142856
-                    },
-                    {
-                        'img': 'tangram/p1.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.152,
-                        'initFlipping': 0,
-                        'initRotation': 180,
-                        'initX': 0.61,
-                        'initY': 0.08,
-                        'moduloRotation': 360,
-                        'rotation': 225,
-                        'width': 0.304,
-                        'x': 0.6621818874329957,
-                        'y': 0.5612425913383816
-                    },
-                    {
-                        'img': 'tangram/p2.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.152,
-                        'initFlipping': 0,
-                        'initRotation': 0,
-                        'initX': 0.911,
-                        'initY': 0.081,
-                        'moduloRotation': 90,
-                        'rotation': 45,
-                        'width': 0.152,
-                        'x': 0.5017527033948778,
-                        'y': 0.4006426948864119
-                    },
-                    {
-                        'img': 'tangram/p3.svg',
-                        'flippable': 1,
-                        'flipping': true,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 45,
-                        'initX': 0.083,
-                        'initY': 0.178,
-                        'moduloRotation': 180,
-                        'rotation': 0,
-                        'width': 0.322,
-                        'x': 0.33971414770696856,
-                        'y': 0.3473129370373521
-                    },
-                    {
-                        'img': 'tangram/p4.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 135,
-                        'initX': 0.741,
-                        'initY': 0.118,
-                        'moduloRotation': 360,
-                        'rotation': 270,
-                        'width': 0.215,
-                        'x': 0.5553474164894069,
-                        'y': 0.5080201718710116
-                    },
-                    {
-                        'img': 'tangram/p4.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 45,
-                        'initX': 0.946,
-                        'initY': 0.205,
-                        'moduloRotation': 360,
-                        'rotation': 0,
-                        'width': 0.215,
-                        'x': 0.5018052899685187,
-                        'y': 0.5605088904109589
-                    },
-                ]
-            },
-            {
-                'bg': '',
-                'name': 'Imported level 2',
-                'colorMask': '#999',
-                'pieces': [
-                    {
-                        'img': 'tangram/p0.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.214,
-                        'initFlipping': 0,
-                        'initRotation': 180,
-                        'initX': 0.217,
-                        'initY': 0.112,
-                        'moduloRotation': 360,
-                        'rotation': 180,
-                        'width': 0.429,
-                        'x': 0.48799463966646806,
-                        'y': 0.4943704586063133
-                    },
-                    {
-                        'img': 'tangram/p0.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.214,
-                        'initFlipping': 0,
-                        'initRotation': 0,
-                        'initX': 0.442,
-                        'initY': 0.113,
-                        'moduloRotation': 360,
-                        'rotation': 0,
-                        'width': 0.429,
-                        'x': 0.4872650387135199,
-                        'y': 0.8604687313877308
-                    },
-                    {
-                        'img': 'tangram/p1.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.152,
-                        'initFlipping': 0,
-                        'initRotation': 180,
-                        'initX': 0.61,
-                        'initY': 0.08,
-                        'moduloRotation': 360,
-                        'rotation': 180,
-                        'width': 0.304,
-                        'x': 0.48849910661107804,
-                        'y': 0.6767837998808813
-                    },
-                    {
-                        'img': 'tangram/p2.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.152,
-                        'initFlipping': 0,
-                        'initRotation': 0,
-                        'initX': 0.911,
-                        'initY': 0.081,
-                        'moduloRotation': 90,
-                        'rotation': 45,
-                        'width': 0.152,
-                        'x': 0.4976587254318046,
-                        'y': 0.2817147111375819
-                    },
-                    {
-                        'img': 'tangram/p3.svg',
-                        'flippable': 1,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 45,
-                        'initX': 0.083,
-                        'initY': 0.178,
-                        'moduloRotation': 180,
-                        'rotation': 135,
-                        'width': 0.322,
-                        'x': 0.6386879094699226,
-                        'y': 0.6771066110780227
-                    },
-                    {
-                        'img': 'tangram/p4.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 135,
-                        'initX': 0.741,
-                        'initY': 0.118,
-                        'moduloRotation': 360,
-                        'rotation': 90,
-                        'width': 0.215,
-                        'x': 0.4437992852888625,
-                        'y': 0.17458129839189995
-                    },
-                    {
-                        'img': 'tangram/p4.svg',
-                        'flippable': 0,
-                        'flipping': false,
-                        'height': 0.108,
-                        'initFlipping': 0,
-                        'initRotation': 45,
-                        'initX': 0.946,
-                        'initY': 0.205,
-                        'moduloRotation': 360,
-                        'rotation': 270,
-                        'width': 0.215,
-                        'x': 0.5505265038713519,
-                        'y': 0.17522036926742104
-                    },
-            ]},
             {
                 'bg': '',
                 'name': 'Imported level 4',
@@ -1929,7 +1034,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 0,
                         'width': 0.304,
-                        'x': 0.39567403445928695,
+                        'x': 0.39746081230324165,
                         'y': 0.8445284176805921
                     },
                     {
@@ -1959,7 +1064,7 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 45,
                         'width': 0.322,
-                        'x': 0.5474650665362036,
+                        'x': 0.5480606591508552,
                         'y': 0.8445425508380838
                     },
                     {
@@ -1974,7 +1079,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 270,
                         'width': 0.215,
-                        'x': 0.3430503535267591,
+                        'x': 0.3442415387560623,
                         'y': 0.6619736192461498
                     },
                     {
@@ -2026,7 +1131,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 270,
                         'width': 0.429,
-                        'x': 0.3038023105590062,
+                        'x': 0.3043979031736578,
                         'y': 0.7001436053773504
                     },
                     {
@@ -2042,7 +1147,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.304,
                         'x': 0.41036384378456564,
-                        'y': 0.4135674346975241
+                        'y': 0.4105894716242662
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -2057,7 +1162,7 @@ var dataset = [
                         'rotation': 45,
                         'width': 0.152,
                         'x': 0.41105058716923326,
-                        'y': 0.2304170436484302
+                        'y': 0.22803467318982387
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -2072,7 +1177,7 @@ var dataset = [
                         'rotation': 45,
                         'width': 0.322,
                         'x': 0.5615592832468307,
-                        'y': 0.4141771604696673
+                        'y': 0.41060360478175784
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -2184,7 +1289,7 @@ var dataset = [
                         'rotation': 90,
                         'width': 0.322,
                         'x': 0.5898954388666723,
-                        'y': 0.22102215987407467
+                        'y': 0.2222133451033778
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -2199,7 +1304,7 @@ var dataset = [
                         'rotation': 90,
                         'width': 0.215,
                         'x': 0.4827649630732577,
-                        'y': 0.273316509146601
+                        'y': 0.2745076943759041
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -2214,7 +1319,7 @@ var dataset = [
                         'rotation': 270,
                         'width': 0.215,
                         'x': 0.48308363379562685,
-                        'y': 0.16694088990045092
+                        'y': 0.16872766774440565
                     },
                 ]
             },
@@ -2235,7 +1340,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 90,
                         'width': 0.429,
-                        'x': 0.7169813934314642,
+                        'x': 0.7163858008168126,
                         'y': 0.6799288850506253
                     },
                     {
@@ -2251,7 +1356,7 @@ var dataset = [
                         'rotation': 270,
                         'width': 0.429,
                         'x': 0.5030805756828045,
-                        'y': 0.6793332924359737
+                        'y': 0.6799288850506253
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -2265,8 +1370,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 180,
                         'width': 0.304,
-                        'x': 0.5346018311069515,
-                        'y': 0.2403987633795626
+                        'x': 0.5340062384922999,
+                        'y': 0.23920757815025945
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -2295,7 +1400,7 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 135,
                         'width': 0.322,
-                        'x': 0.6875840484131711,
+                        'x': 0.6857972705692164,
                         'y': 0.2391934449927678
                     },
                     {
@@ -2348,7 +1453,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.429,
                         'x': 0.5023814654981706,
-                        'y': 0.8300048045605377
+                        'y': 0.8294092119458861
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -2408,7 +1513,7 @@ var dataset = [
                         'rotation': 90,
                         'width': 0.322,
                         'x': 0.3443070895941462,
-                        'y': 0.19652486267335997
+                        'y': 0.1959292700587084
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -2423,7 +1528,7 @@ var dataset = [
                         'rotation': 180,
                         'width': 0.215,
                         'x': 0.5053594285714285,
-                        'y': 0.5172792343231515
+                        'y': 0.5166836417084999
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -2438,7 +1543,7 @@ var dataset = [
                         'rotation': 270,
                         'width': 0.215,
                         'x': 0.34410621968859023,
-                        'y': 0.3560260254403131
+                        'y': 0.3554304328256615
                     },
                 ]
             },
@@ -2535,7 +1640,7 @@ var dataset = [
                         'rotation': 225,
                         'width': 0.215,
                         'x': 0.721980888624181,
-                        'y': 0.23184132034374194
+                        'y': 0.2324369129583935
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -2550,7 +1655,791 @@ var dataset = [
                         'rotation': 135,
                         'width': 0.215,
                         'x': 0.9487881809750702,
-                        'y': 0.23184132034374194
+                        'y': 0.2324369129583935
+                    },
+                ]
+            },
+            {
+                'bg': '',
+                'name': 'Imported level 10',
+                'colorMask': '#999',
+                'pieces': [
+                    {
+                        'img': 'tangram/p0.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.214,
+                        'initFlipping': 0,
+                        'initRotation': 180,
+                        'initX': 0.217,
+                        'initY': 0.112,
+                        'moduloRotation': 360,
+                        'rotation': 315,
+                        'width': 0.429,
+                        'x': 0.7177664225304178,
+                        'y': 0.27648363456138847
+                    },
+                    {
+                        'img': 'tangram/p0.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.214,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.442,
+                        'initY': 0.113,
+                        'moduloRotation': 360,
+                        'rotation': 180,
+                        'width': 0.429,
+                        'x': 0.2771954897472985,
+                        'y': 0.7580107131796135
+                    },
+                    {
+                        'img': 'tangram/p1.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.152,
+                        'initFlipping': 0,
+                        'initRotation': 180,
+                        'initX': 0.61,
+                        'initY': 0.08,
+                        'moduloRotation': 360,
+                        'rotation': 0,
+                        'width': 0.304,
+                        'x': 0.6425140732578916,
+                        'y': 0.5773520909555007
+                    },
+                    {
+                        'img': 'tangram/p2.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.152,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.911,
+                        'initY': 0.081,
+                        'moduloRotation': 90,
+                        'rotation': 45,
+                        'width': 0.152,
+                        'x': 0.5179394382710797,
+                        'y': 0.5193719275078705
+                    },
+                    {
+                        'img': 'tangram/p3.svg',
+                        'flippable': 1,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 45,
+                        'initX': 0.083,
+                        'initY': 0.178,
+                        'moduloRotation': 180,
+                        'rotation': 90,
+                        'width': 0.322,
+                        'x': 0.4650494963839018,
+                        'y': 0.35951077375989116
+                    },
+                    {
+                        'img': 'tangram/p4.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 135,
+                        'initX': 0.741,
+                        'initY': 0.118,
+                        'moduloRotation': 360,
+                        'rotation': 45,
+                        'width': 0.215,
+                        'x': 0.6050201477069685,
+                        'y': 0.6904580122521908
+                    },
+                    {
+                        'img': 'tangram/p4.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 45,
+                        'initX': 0.946,
+                        'initY': 0.205,
+                        'moduloRotation': 360,
+                        'rotation': 315,
+                        'width': 0.215,
+                        'x': 0.4490578874329959,
+                        'y': 0.1929193179613716
+                    },
+                ]
+            },
+            {
+                'bg': '',
+                'name': 'Imported level 11',
+                'colorMask': '#999',
+                'pieces': [
+                    {
+                        'img': 'tangram/p0.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.214,
+                        'initFlipping': 0,
+                        'initRotation': 180,
+                        'initX': 0.217,
+                        'initY': 0.112,
+                        'moduloRotation': 360,
+                        'rotation': 0,
+                        'width': 0.429,
+                        'x': 0.343738391049094,
+                        'y': 0.5413064867693356
+                    },
+                    {
+                        'img': 'tangram/p0.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.214,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.442,
+                        'initY': 0.113,
+                        'moduloRotation': 360,
+                        'rotation': 180,
+                        'width': 0.429,
+                        'x': 0.47293088198757754,
+                        'y': 0.7540161192886923
+                    },
+                    {
+                        'img': 'tangram/p1.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.152,
+                        'initFlipping': 0,
+                        'initRotation': 180,
+                        'initX': 0.61,
+                        'initY': 0.08,
+                        'moduloRotation': 360,
+                        'rotation': 0,
+                        'width': 0.304,
+                        'x': 0.7088762542329619,
+                        'y': 0.5729427676337956
+                    },
+                    {
+                        'img': 'tangram/p2.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.152,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.911,
+                        'initY': 0.081,
+                        'moduloRotation': 90,
+                        'rotation': 0,
+                        'width': 0.152,
+                        'x': 0.34395914592019045,
+                        'y': 0.3584161114609036
+                    },
+                    {
+                        'img': 'tangram/p3.svg',
+                        'flippable': 1,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 45,
+                        'initX': 0.083,
+                        'initY': 0.178,
+                        'moduloRotation': 180,
+                        'rotation': 90,
+                        'width': 0.322,
+                        'x': 0.6111663492725262,
+                        'y': 0.48809787415978895
+                    },
+                    {
+                        'img': 'tangram/p4.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 135,
+                        'initX': 0.741,
+                        'initY': 0.118,
+                        'moduloRotation': 360,
+                        'rotation': 90,
+                        'width': 0.215,
+                        'x': 0.7179782972007147,
+                        'y': 0.30080569922572953
+                    },
+                    {
+                        'img': 'tangram/p4.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 45,
+                        'initX': 0.946,
+                        'initY': 0.205,
+                        'moduloRotation': 360,
+                        'rotation': 180,
+                        'width': 0.215,
+                        'x': 0.8913969315919342,
+                        'y': 0.701881033948779
+                    },
+                ]
+            },
+            {
+                'bg': '',
+                'name': 'Imported level 12',
+                'colorMask': '#999',
+                'pieces': [
+                    {
+                        'img': 'tangram/p0.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.214,
+                        'initFlipping': 0,
+                        'initRotation': 180,
+                        'initX': 0.217,
+                        'initY': 0.112,
+                        'moduloRotation': 360,
+                        'rotation': 157.5,
+                        'width': 0.429,
+                        'x': 0.48378610108057524,
+                        'y': 0.5281706585552625
+                    },
+                    {
+                        'img': 'tangram/p0.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.214,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.442,
+                        'initY': 0.113,
+                        'moduloRotation': 360,
+                        'rotation': 337.5,
+                        'width': 0.429,
+                        'x': 0.6813192857142856,
+                        'y': 0.44696344975750885
+                    },
+                    {
+                        'img': 'tangram/p1.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.152,
+                        'initFlipping': 0,
+                        'initRotation': 180,
+                        'initX': 0.61,
+                        'initY': 0.08,
+                        'moduloRotation': 360,
+                        'rotation': 337.5,
+                        'width': 0.304,
+                        'x': 0.412606268186846,
+                        'y': 0.1967451961201396
+                    },
+                    {
+                        'img': 'tangram/p2.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.152,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.911,
+                        'initY': 0.081,
+                        'moduloRotation': 90,
+                        'rotation': 67.5,
+                        'width': 0.152,
+                        'x': 0.3444424485663234,
+                        'y': 0.38844723423806676
+                    },
+                    {
+                        'img': 'tangram/p3.svg',
+                        'flippable': 1,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 45,
+                        'initX': 0.083,
+                        'initY': 0.178,
+                        'moduloRotation': 180,
+                        'rotation': 0,
+                        'width': 0.322,
+                        'x': 0.7404922390028078,
+                        'y': 0.2614944703479963
+                    },
+                    {
+                        'img': 'tangram/p4.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 135,
+                        'initX': 0.741,
+                        'initY': 0.118,
+                        'moduloRotation': 360,
+                        'rotation': 22.5,
+                        'width': 0.215,
+                        'x': 0.7627900962307498,
+                        'y': 0.569599191270314
+                    },
+                    {
+                        'img': 'tangram/p4.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 45,
+                        'initX': 0.946,
+                        'initY': 0.205,
+                        'moduloRotation': 360,
+                        'rotation': 337.5,
+                        'width': 0.215,
+                        'x': 0.40648443886667235,
+                        'y': 0.6178664400578577
+                    },
+                ]
+            },
+            {
+                'bg': '',
+                'name': 'Imported level 13',
+                'colorMask': '#999',
+                'pieces': [
+                    {
+                        'img': 'tangram/p0.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.214,
+                        'initFlipping': 0,
+                        'initRotation': 180,
+                        'initX': 0.217,
+                        'initY': 0.112,
+                        'moduloRotation': 360,
+                        'rotation': 315,
+                        'width': 0.429,
+                        'x': 0.2638586309027482,
+                        'y': 0.6620276109078531
+                    },
+                    {
+                        'img': 'tangram/p0.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.214,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.442,
+                        'initY': 0.113,
+                        'moduloRotation': 360,
+                        'rotation': 45,
+                        'width': 0.429,
+                        'x': 0.7175584431209051,
+                        'y': 0.6625947943503786
+                    },
+                    {
+                        'img': 'tangram/p1.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.152,
+                        'initFlipping': 0,
+                        'initRotation': 180,
+                        'initX': 0.61,
+                        'initY': 0.08,
+                        'moduloRotation': 360,
+                        'rotation': 135,
+                        'width': 0.304,
+                        'x': 0.5402684068748407,
+                        'y': 0.5333664093422956
+                    },
+                    {
+                        'img': 'tangram/p2.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.152,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.911,
+                        'initY': 0.081,
+                        'moduloRotation': 90,
+                        'rotation': 45,
+                        'width': 0.152,
+                        'x': 0.5934897143707991,
+                        'y': 0.2656298300859355
+                    },
+                    {
+                        'img': 'tangram/p3.svg',
+                        'flippable': 1,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 45,
+                        'initX': 0.083,
+                        'initY': 0.178,
+                        'moduloRotation': 180,
+                        'rotation': 45,
+                        'width': 0.322,
+                        'x': 0.8691330121671061,
+                        'y': 0.7381158602909895
+                    },
+                    {
+                        'img': 'tangram/p4.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 135,
+                        'initX': 0.741,
+                        'initY': 0.118,
+                        'moduloRotation': 360,
+                        'rotation': 0,
+                        'width': 0.215,
+                        'x': 0.4908645017442356,
+                        'y': 0.6394517670382031
+                    },
+                    {
+                        'img': 'tangram/p4.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 45,
+                        'initX': 0.946,
+                        'initY': 0.205,
+                        'moduloRotation': 360,
+                        'rotation': 0,
+                        'width': 0.215,
+                        'x': 0.18407762971156308,
+                        'y': 0.5332945214838765
+                    },
+                ]
+            },
+            {
+                'bg': '',
+                'name': 'Imported level 14',
+                'colorMask': '#999',
+                'pieces': [
+                    {
+                        'img': 'tangram/p0.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.214,
+                        'initFlipping': 0,
+                        'initRotation': 180,
+                        'initX': 0.217,
+                        'initY': 0.112,
+                        'moduloRotation': 360,
+                        'rotation': 225,
+                        'width': 0.429,
+                        'x': 0.4457249624776654,
+                        'y': 0.3811788395303327
+                    },
+                    {
+                        'img': 'tangram/p0.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.214,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.442,
+                        'initY': 0.113,
+                        'moduloRotation': 360,
+                        'rotation': 225,
+                        'width': 0.429,
+                        'x': 0.7475202487875435,
+                        'y': 0.6829741258402109
+                    },
+                    {
+                        'img': 'tangram/p1.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.152,
+                        'initFlipping': 0,
+                        'initRotation': 180,
+                        'initX': 0.61,
+                        'initY': 0.08,
+                        'moduloRotation': 360,
+                        'rotation': 135,
+                        'width': 0.304,
+                        'x': 0.46828760954649884,
+                        'y': 0.6164643159193397
+                    },
+                    {
+                        'img': 'tangram/p2.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.152,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.911,
+                        'initY': 0.081,
+                        'moduloRotation': 90,
+                        'rotation': 0,
+                        'width': 0.152,
+                        'x': 0.596934535097422,
+                        'y': 0.5317645532204544
+                    },
+                    {
+                        'img': 'tangram/p3.svg',
+                        'flippable': 1,
+                        'flipping': true,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 45,
+                        'initX': 0.083,
+                        'initY': 0.178,
+                        'moduloRotation': 180,
+                        'rotation': 90,
+                        'width': 0.322,
+                        'x': 0.7260177893303837,
+                        'y': 0.4038724842167957
+                    },
+                    {
+                        'img': 'tangram/p4.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 135,
+                        'initX': 0.741,
+                        'initY': 0.118,
+                        'moduloRotation': 360,
+                        'rotation': 315,
+                        'width': 0.215,
+                        'x': 0.5594263335318641,
+                        'y': 0.64485619850251
+                    },
+                    {
+                        'img': 'tangram/p4.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 45,
+                        'initX': 0.946,
+                        'initY': 0.205,
+                        'moduloRotation': 360,
+                        'rotation': 180,
+                        'width': 0.215,
+                        'x': 0.7789078740747042,
+                        'y': 0.2973376010380328
+                    },
+                ]
+            },
+            {
+                'bg': '',
+                'name': 'Imported level 15',
+                'colorMask': '#999',
+                'pieces': [
+                    {
+                        'img': 'tangram/p0.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.214,
+                        'initFlipping': 0,
+                        'initRotation': 180,
+                        'initX': 0.217,
+                        'initY': 0.112,
+                        'moduloRotation': 360,
+                        'rotation': 45,
+                        'width': 0.429,
+                        'x': 0.3699737826086957,
+                        'y': 0.3832792040330129
+                    },
+                    {
+                        'img': 'tangram/p0.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.214,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.442,
+                        'initY': 0.113,
+                        'moduloRotation': 360,
+                        'rotation': 45,
+                        'width': 0.429,
+                        'x': 0.671769068918574,
+                        'y': 0.6838833051135882
+                    },
+                    {
+                        'img': 'tangram/p1.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.152,
+                        'initFlipping': 0,
+                        'initRotation': 180,
+                        'initX': 0.61,
+                        'initY': 0.08,
+                        'moduloRotation': 360,
+                        'rotation': 225,
+                        'width': 0.304,
+                        'x': 0.2832376501318812,
+                        'y': 0.5544194613290223
+                    },
+                    {
+                        'img': 'tangram/p2.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.152,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.911,
+                        'initY': 0.081,
+                        'moduloRotation': 90,
+                        'rotation': 0,
+                        'width': 0.152,
+                        'x': 0.5199639036841659,
+                        'y': 0.532106549051306
+                    },
+                    {
+                        'img': 'tangram/p3.svg',
+                        'flippable': 1,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 45,
+                        'initX': 0.083,
+                        'initY': 0.178,
+                        'moduloRotation': 180,
+                        'rotation': 135,
+                        'width': 0.322,
+                        'x': 0.5955616234152982,
+                        'y': 0.38150670220369254
+                    },
+                    {
+                        'img': 'tangram/p4.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 135,
+                        'initX': 0.741,
+                        'initY': 0.118,
+                        'moduloRotation': 360,
+                        'rotation': 315,
+                        'width': 0.215,
+                        'x': 0.3316203964945121,
+                        'y': 0.6455583281715307
+                    },
+                    {
+                        'img': 'tangram/p4.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 45,
+                        'initX': 0.946,
+                        'initY': 0.205,
+                        'moduloRotation': 360,
+                        'rotation': 135,
+                        'width': 0.215,
+                        'x': 0.19150319067472138,
+                        'y': 0.5072279001956946
+                    },
+                ]
+            },
+            {
+                'bg': '',
+                'name': 'Imported level 16',
+                'colorMask': '#999',
+                'pieces': [
+                    {
+                        'img': 'tangram/p0.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.214,
+                        'initFlipping': 0,
+                        'initRotation': 180,
+                        'initX': 0.217,
+                        'initY': 0.112,
+                        'moduloRotation': 360,
+                        'rotation': 0,
+                        'width': 0.429,
+                        'x': 0.2883534285714286,
+                        'y': 0.18657742857142856
+                    },
+                    {
+                        'img': 'tangram/p0.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.214,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.442,
+                        'initY': 0.113,
+                        'moduloRotation': 360,
+                        'rotation': 0,
+                        'width': 0.429,
+                        'x': 0.7144513553135369,
+                        'y': 0.18657742857142856
+                    },
+                    {
+                        'img': 'tangram/p1.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.152,
+                        'initFlipping': 0,
+                        'initRotation': 180,
+                        'initX': 0.61,
+                        'initY': 0.08,
+                        'moduloRotation': 360,
+                        'rotation': 225,
+                        'width': 0.304,
+                        'x': 0.6615862948183441,
+                        'y': 0.5612425913383816
+                    },
+                    {
+                        'img': 'tangram/p2.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.152,
+                        'initFlipping': 0,
+                        'initRotation': 0,
+                        'initX': 0.911,
+                        'initY': 0.081,
+                        'moduloRotation': 90,
+                        'rotation': 45,
+                        'width': 0.152,
+                        'x': 0.5011571107802262,
+                        'y': 0.4000471022717604
+                    },
+                    {
+                        'img': 'tangram/p3.svg',
+                        'flippable': 1,
+                        'flipping': true,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 45,
+                        'initX': 0.083,
+                        'initY': 0.178,
+                        'moduloRotation': 180,
+                        'rotation': 0,
+                        'width': 0.322,
+                        'x': 0.34090533293627173,
+                        'y': 0.3467173444227006
+                    },
+                    {
+                        'img': 'tangram/p4.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 135,
+                        'initX': 0.741,
+                        'initY': 0.118,
+                        'moduloRotation': 360,
+                        'rotation': 270,
+                        'width': 0.215,
+                        'x': 0.5547518238747553,
+                        'y': 0.50742457925636
+                    },
+                    {
+                        'img': 'tangram/p4.svg',
+                        'flippable': 0,
+                        'flipping': false,
+                        'height': 0.108,
+                        'initFlipping': 0,
+                        'initRotation': 45,
+                        'initX': 0.946,
+                        'initY': 0.205,
+                        'moduloRotation': 360,
+                        'rotation': 0,
+                        'width': 0.215,
+                        'x': 0.5018052899685187,
+                        'y': 0.5605088904109589
                     },
                 ]
             },
@@ -2601,8 +2490,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 135,
                         'width': 0.304,
-                        'x': 0.5993033328511869,
-                        'y': 0.4249008147706969
+                        'x': 0.5998989254658383,
+                        'y': 0.4254964073853485
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -2616,7 +2505,7 @@ var dataset = [
                         'moduloRotation': 90,
                         'rotation': 0,
                         'width': 0.152,
-                        'x': 0.5157947553816048,
+                        'x': 0.5151991627669532,
                         'y': 0.5547390684080661
                     },
                     {
@@ -2631,7 +2520,7 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 0,
                         'width': 0.322,
-                        'x': 0.3855203159193396,
+                        'x': 0.3867115011486428,
                         'y': 0.6838223226410278
                     },
                     {
@@ -2646,8 +2535,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 315,
                         'width': 0.215,
-                        'x': 0.6306731785076152,
-                        'y': 0.5178264594571599
+                        'x': 0.6282908080490088,
+                        'y': 0.5166352742278567
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -2661,7 +2550,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 0,
                         'width': 0.215,
-                        'x': 0.22506349812813753,
+                        'x': 0.22625468335744067,
                         'y': 0.6839815865736408
                     },
                 ]
@@ -2684,7 +2573,7 @@ var dataset = [
                         'rotation': 225,
                         'width': 0.429,
                         'x': 0.3689950665362035,
-                        'y': 0.5221844964689866
+                        'y': 0.5227800890836382
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -2713,8 +2602,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 315,
                         'width': 0.304,
-                        'x': 0.43920371181825923,
-                        'y': 0.23080042508295756
+                        'x': 0.44099048966221394,
+                        'y': 0.22960923985365442
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -2743,7 +2632,7 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 0,
                         'width': 0.322,
-                        'x': 0.6547735065940611,
+                        'x': 0.6541779139794095,
                         'y': 0.33642118778184305
                     },
                     {
@@ -2759,7 +2648,7 @@ var dataset = [
                         'rotation': 45,
                         'width': 0.215,
                         'x': 0.25532196179698813,
-                        'y': 0.3364446853569301
+                        'y': 0.3340623148983238
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -2811,7 +2700,7 @@ var dataset = [
                         'rotation': 45,
                         'width': 0.429,
                         'x': 0.32756231353696913,
-                        'y': 0.5479414384412491
+                        'y': 0.5485370310559007
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -2825,8 +2714,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.304,
-                        'x': 0.4576632130519867,
-                        'y': 0.29472894086616175
+                        'x': 0.4552808425933804,
+                        'y': 0.292942163022207
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -2840,8 +2729,8 @@ var dataset = [
                         'moduloRotation': 90,
                         'rotation': 45,
                         'width': 0.152,
-                        'x': 0.5634848456564283,
-                        'y': 0.7212563220454352
+                        'x': 0.5628892530417767,
+                        'y': 0.7206607294307836
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -2855,8 +2744,8 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 0,
                         'width': 0.322,
-                        'x': 0.6700093044329108,
-                        'y': 0.5062230808304264
+                        'x': 0.6694137118182593,
+                        'y': 0.5074142660597296
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -2871,7 +2760,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.215,
                         'x': 0.6692648722879264,
-                        'y': 0.7766878983238322
+                        'y': 0.7737099352505743
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -2886,7 +2775,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.215,
                         'x': 0.6159281773164298,
-                        'y': 0.3988155402875864
+                        'y': 0.4006023181315411
                     },
                 ]
             },
@@ -2907,8 +2796,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 180,
                         'width': 0.429,
-                        'x': 0.7095031216710629,
-                        'y': 0.3594052020760657
+                        'x': 0.7089075290564113,
+                        'y': 0.35880960946141416
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -2937,7 +2826,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 90,
                         'width': 0.304,
-                        'x': 0.6608123341274569,
+                        'x': 0.6602167415128053,
                         'y': 0.6172947886497064
                     },
                     {
@@ -2968,7 +2857,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.322,
                         'x': 0.7450616349868119,
-                        'y': 0.5177982487024588
+                        'y': 0.518989433931762
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -2982,7 +2871,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.215,
-                        'x': 0.3941286029098952,
+                        'x': 0.3953197881391984,
                         'y': 0.5035934175955075
                     },
                     {
@@ -2997,8 +2886,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 0,
                         'width': 0.215,
-                        'x': 0.1759210345443717,
-                        'y': 0.4128557227090956
+                        'x': 0.17413425670041696,
+                        'y': 0.4116645374797924
                     },
                 ]
             },
@@ -3020,7 +2909,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.429,
                         'x': 0.2931057209223177,
-                        'y': 0.5921651248191953
+                        'y': 0.5933563100484984
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -3050,7 +2939,7 @@ var dataset = [
                         'rotation': 180,
                         'width': 0.304,
                         'x': 0.5058568165574747,
-                        'y': 0.7732384764740919
+                        'y': 0.7756208469326983
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -3079,8 +2968,8 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 90,
                         'width': 0.322,
-                        'x': 0.5605336791457501,
-                        'y': 0.5395521048243003
+                        'x': 0.5599380865310986,
+                        'y': 0.5383609195949971
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -3095,7 +2984,7 @@ var dataset = [
                         'rotation': 90,
                         'width': 0.215,
                         'x': 0.4534032033523357,
-                        'y': 0.4872577555517741
+                        'y': 0.4854709777078194
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -3110,7 +2999,7 @@ var dataset = [
                         'rotation': 270,
                         'width': 0.215,
                         'x': 0.45312613860290984,
-                        'y': 0.593633374797924
+                        'y': 0.5918465969539692
                     },
                 ]
             },
@@ -3131,8 +3020,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 135,
                         'width': 0.429,
-                        'x': 0.8025629327831193,
-                        'y': 0.48684969914064496
+                        'x': 0.8013717475538161,
+                        'y': 0.4862541065259934
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -3147,7 +3036,7 @@ var dataset = [
                         'rotation': 225,
                         'width': 0.429,
                         'x': 0.13619710958904108,
-                        'y': 0.4880408843699481
+                        'y': 0.48684969914064496
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -3162,7 +3051,7 @@ var dataset = [
                         'rotation': 180,
                         'width': 0.304,
                         'x': 0.46521087288351914,
-                        'y': 0.7468029854505234
+                        'y': 0.7456118002212202
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -3191,8 +3080,8 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 0,
                         'width': 0.322,
-                        'x': 0.30713649697949447,
-                        'y': 0.6165144128307667
+                        'x': 0.30773208959414605,
+                        'y': 0.6159188202161151
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -3206,7 +3095,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 0,
                         'width': 0.215,
-                        'x': 0.5751600478175786,
+                        'x': 0.574564455202927,
                         'y': 0.6160780841487281
                     },
                     {
@@ -3221,8 +3110,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 180,
                         'width': 0.215,
-                        'x': 0.6821312596783801,
-                        'y': 0.6145683710541989
+                        'x': 0.6815356670637285,
+                        'y': 0.6157595562835021
                     },
                 ]
             },
@@ -3243,8 +3132,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.429,
-                        'x': 0.29431064289968517,
-                        'y': 0.4978054989364417
+                        'x': 0.29609742074363987,
+                        'y': 0.49720990632179013
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -3258,7 +3147,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 135,
                         'width': 0.429,
-                        'x': 0.7509031906747214,
+                        'x': 0.7503075980600699,
                         'y': 0.49720990632179013
                     },
                     {
@@ -3274,7 +3163,7 @@ var dataset = [
                         'rotation': 180,
                         'width': 0.304,
                         'x': 0.507419305113588,
-                        'y': 0.6490009383987069
+                        'y': 0.6484053457840553
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -3289,7 +3178,7 @@ var dataset = [
                         'rotation': 45,
                         'width': 0.152,
                         'x': 0.5235003057091806,
-                        'y': 0.4676090588785841
+                        'y': 0.4661774651720127
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -3303,7 +3192,7 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 135,
                         'width': 0.322,
-                        'x': 0.9032756822087982,
+                        'x': 0.9014889043648434,
                         'y': 0.4215980534331661
                     },
                     {
@@ -3318,8 +3207,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.215,
-                        'x': 0.18004194554581818,
-                        'y': 0.4596875715987407
+                        'x': 0.18301990861907608,
+                        'y': 0.4590919789840891
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -3333,7 +3222,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.215,
-                        'x': 0.10442994980005103,
+                        'x': 0.10800350548796049,
                         'y': 0.38410412788224285
                     },
                 ]
@@ -3355,8 +3244,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 180,
                         'width': 0.429,
-                        'x': 0.47238020581979057,
-                        'y': 0.5611813891772315
+                        'x': 0.4735713910490937,
+                        'y': 0.5605857965625799
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -3400,8 +3289,8 @@ var dataset = [
                         'moduloRotation': 90,
                         'rotation': 45,
                         'width': 0.152,
-                        'x': 0.47476257627839685,
-                        'y': 0.3487488214073003
+                        'x': 0.4735713910490937,
+                        'y': 0.3481532287926487
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -3415,7 +3304,7 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 90,
                         'width': 0.322,
-                        'x': 0.20435665498170677,
+                        'x': 0.2055478402110099,
                         'y': 0.40163890615162084
                     },
                     {
@@ -3445,8 +3334,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 270,
                         'width': 0.215,
-                        'x': 0.09814044252531265,
-                        'y': 0.45393325542414703
+                        'x': 0.0993316277546158,
+                        'y': 0.4545288480387986
                     },
                 ]
             },
@@ -3467,7 +3356,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 0,
                         'width': 0.429,
-                        'x': 0.31032114711137593,
+                        'x': 0.31210792495533063,
                         'y': 0.4947798753509741
                     },
                     {
@@ -3482,7 +3371,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 0,
                         'width': 0.429,
-                        'x': 0.7441617778439547,
+                        'x': 0.7429705926146515,
                         'y': 0.4953754679656257
                     },
                     {
@@ -3498,7 +3387,7 @@ var dataset = [
                         'rotation': 180,
                         'width': 0.304,
                         'x': 0.5320062748234494,
-                        'y': 0.6776398619926827
+                        'y': 0.6764486767633795
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -3513,7 +3402,7 @@ var dataset = [
                         'rotation': 45,
                         'width': 0.152,
                         'x': 0.5278371265208884,
-                        'y': 0.4974391677018633
+                        'y': 0.4962479824725602
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -3527,7 +3416,7 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 0,
                         'width': 0.322,
-                        'x': 0.1492688081340935,
+                        'x': 0.15105558597804822,
                         'y': 0.44216685535607925
                     },
                     {
@@ -3542,8 +3431,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 180,
                         'width': 0.215,
-                        'x': 0.8529197675487108,
-                        'y': 0.44260318403811794
+                        'x': 0.849941804475453,
+                        'y': 0.44200759142346635
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -3557,8 +3446,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 0,
                         'width': 0.215,
-                        'x': 0.9586997941802097,
-                        'y': 0.4435173045179954
+                        'x': 0.956913016336255,
+                        'y': 0.44232611928869225
                     },
                 ]
             },
@@ -3579,7 +3468,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 90,
                         'width': 0.429,
-                        'x': 0.8713579370373522,
+                        'x': 0.870166751808049,
                         'y': 0.5098080346294563
                     },
                     {
@@ -3609,8 +3498,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 135,
                         'width': 0.304,
-                        'x': 0.28615371309452897,
-                        'y': 0.4525896805071047
+                        'x': 0.2843669352505742,
+                        'y': 0.454972050965711
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -3624,8 +3513,8 @@ var dataset = [
                         'moduloRotation': 90,
                         'rotation': 45,
                         'width': 0.152,
-                        'x': 0.3392029189143196,
-                        'y': 0.614992468646303
+                        'x': 0.3374161410703649,
+                        'y': 0.6161836538756061
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -3654,8 +3543,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 270,
                         'width': 0.215,
-                        'x': 0.3922522675912533,
-                        'y': 0.5086168494001534
+                        'x': 0.39106108236195014,
+                        'y': 0.5098080346294566
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -3669,8 +3558,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 180,
                         'width': 0.215,
-                        'x': 0.23223184991066118,
-                        'y': 0.5607520775972092
+                        'x': 0.23104066468135803,
+                        'y': 0.5619432628265124
                     },
                 ]
             },
@@ -3706,7 +3595,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 270,
                         'width': 0.429,
-                        'x': 0.2035522070960605,
+                        'x': 0.2041477997107121,
                         'y': 0.4016602115204628
                     },
                     {
@@ -3736,8 +3625,8 @@ var dataset = [
                         'moduloRotation': 90,
                         'rotation': 45,
                         'width': 0.152,
-                        'x': 0.4159849177231346,
-                        'y': 0.40344698936441753
+                        'x': 0.4165805103377862,
+                        'y': 0.4040425819790691
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -3781,7 +3670,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 90,
                         'width': 0.215,
-                        'x': 0.3629355690462009,
+                        'x': 0.3635311616608525,
                         'y': 0.5092270159959159
                     },
                 ]
@@ -3803,8 +3692,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 135,
                         'width': 0.429,
-                        'x': 0.6621785362886071,
-                        'y': 0.6488820563260445
+                        'x': 0.6627741289032587,
+                        'y': 0.6464996858674382
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -3819,7 +3708,7 @@ var dataset = [
                         'rotation': 315,
                         'width': 0.429,
                         'x': 0.5127414654981706,
-                        'y': 0.49587142984769855
+                        'y': 0.49527583723304697
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -3834,7 +3723,7 @@ var dataset = [
                         'rotation': 270,
                         'width': 0.304,
                         'x': 0.3615460260359058,
-                        'y': 0.4196922506594062
+                        'y': 0.42028784327405777
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -3849,7 +3738,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.152,
                         'x': 0.3615603020505404,
-                        'y': 0.6476765950821065
+                        'y': 0.6470810024674549
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -3864,7 +3753,7 @@ var dataset = [
                         'rotation': 45,
                         'width': 0.322,
                         'x': 0.4371580217816727,
-                        'y': 0.7988720345443716
+                        'y': 0.79827644192972
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -3878,8 +3767,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 315,
                         'width': 0.215,
-                        'x': 0.47584313256189914,
-                        'y': 0.3065864722198587
+                        'x': 0.47524753994724755,
+                        'y': 0.30718206483451027
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -3893,8 +3782,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.215,
-                        'x': 0.32464769309963404,
-                        'y': 0.5327981719560964
+                        'x': 0.32405210048498245,
+                        'y': 0.5339893571853995
                     },
                 ]
             },
@@ -3915,8 +3804,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.429,
-                        'x': 0.8624696252871606,
-                        'y': 0.45790672883519107
+                        'x': 0.8606828474432059,
+                        'y': 0.4573111362205395
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -3930,7 +3819,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.429,
-                        'x': 0.7112457766527694,
+                        'x': 0.7100545914234663,
                         'y': 0.607939392240279
                     },
                     {
@@ -3946,7 +3835,7 @@ var dataset = [
                         'rotation': 180,
                         'width': 0.304,
                         'x': 0.7856664443120907,
-                        'y': 0.7597304243171955
+                        'y': 0.7585392390878924
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -3960,7 +3849,7 @@ var dataset = [
                         'moduloRotation': 90,
                         'rotation': 0,
                         'width': 0.152,
-                        'x': 0.2570779988088148,
+                        'x': 0.2576735914234664,
                         'y': 0.3073210151450693
                     },
                     {
@@ -3975,8 +3864,8 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 45,
                         'width': 0.322,
-                        'x': 0.5594688777333447,
-                        'y': 0.5341141743384668
+                        'x': 0.5588732851186932,
+                        'y': 0.5335185817238152
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -4027,7 +3916,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.429,
-                        'x': 0.4029584563090276,
+                        'x': 0.4035540489236792,
                         'y': 0.5776136265634306
                     },
                     {
@@ -4042,8 +3931,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.429,
-                        'x': 0.5535298939845145,
-                        'y': 0.573472887432996
+                        'x': 0.5547210792138176,
+                        'y': 0.5770464431209054
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -4057,8 +3946,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 180,
                         'width': 0.304,
-                        'x': 0.6321198528035396,
-                        'y': 0.42525541104398873
+                        'x': 0.6303330749595848,
+                        'y': 0.4258510036586403
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -4102,7 +3991,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 135,
                         'width': 0.215,
-                        'x': 0.2886614069258914,
+                        'x': 0.28925699954054296,
                         'y': 0.4639405218242151
                     },
                     {
@@ -4118,7 +4007,7 @@ var dataset = [
                         'rotation': 225,
                         'width': 0.215,
                         'x': 0.5172271536628946,
-                        'y': 0.7639490302901388
+                        'y': 0.765140215519442
                     },
                 ]
             },
@@ -4140,7 +4029,7 @@ var dataset = [
                         'rotation': 135,
                         'width': 0.429,
                         'x': 0.37139204773249396,
-                        'y': 0.3799903723304688
+                        'y': 0.3805859649451203
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -4154,7 +4043,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.429,
-                        'x': 0.37198764034714554,
+                        'x': 0.37139204773249396,
                         'y': 0.5317529952352591
                     },
                     {
@@ -4169,8 +4058,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 0,
                         'width': 0.304,
-                        'x': 0.5993622589977027,
-                        'y': 0.5305618100059559
+                        'x': 0.5981710737683996,
+                        'y': 0.5323485878499107
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -4184,8 +4073,8 @@ var dataset = [
                         'moduloRotation': 90,
                         'rotation': 0,
                         'width': 0.152,
-                        'x': 0.5237645392665702,
-                        'y': 0.37818931847187953
+                        'x': 0.522573354037267,
+                        'y': 0.3805716889304859
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -4199,8 +4088,8 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 45,
                         'width': 0.322,
-                        'x': 0.6755555713434865,
-                        'y': 0.45378703820301197
+                        'x': 0.6737687934995319,
+                        'y': 0.4561694086616183
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -4214,8 +4103,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 315,
                         'width': 0.215,
-                        'x': 0.4856607450863609,
-                        'y': 0.4912811066110781
+                        'x': 0.48506515247170934,
+                        'y': 0.494259069684336
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -4229,8 +4118,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.215,
-                        'x': 0.7136592226665532,
-                        'y': 0.3406812597634646
+                        'x': 0.7118724448225985,
+                        'y': 0.3430636302220709
                     },
                 ]
             },
@@ -4266,8 +4155,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 180,
                         'width': 0.429,
-                        'x': 0.4572979055560281,
-                        'y': 0.22525243580362458
+                        'x': 0.460275868629286,
+                        'y': 0.22584802841827617
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -4281,8 +4170,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 135,
                         'width': 0.304,
-                        'x': 0.6158086101420913,
-                        'y': 0.2800885623245129
+                        'x': 0.6199777584446524,
+                        'y': 0.2794929697098613
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -4296,8 +4185,8 @@ var dataset = [
                         'moduloRotation': 90,
                         'rotation': 0,
                         'width': 0.152,
-                        'x': 0.38110459321024426,
-                        'y': 0.4063531174168298
+                        'x': 0.3846781488981537,
+                        'y': 0.40754430264613295
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -4311,7 +4200,7 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 45,
                         'width': 0.322,
-                        'x': 0.38110459321024426,
+                        'x': 0.38408255628350213,
                         'y': 0.6343374618395303
                     },
                     {
@@ -4326,8 +4215,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.215,
-                        'x': 0.4180172021611503,
-                        'y': 0.5212315405428402
+                        'x': 0.4215907578490598,
+                        'y': 0.5206359479281886
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -4341,8 +4230,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.215,
-                        'x': 0.34300094188717783,
-                        'y': 0.7486345683655237
+                        'x': 0.3459789049604357,
+                        'y': 0.7480389757508721
                     },
                 ]
             },
@@ -4364,7 +4253,7 @@ var dataset = [
                         'rotation': 135,
                         'width': 0.429,
                         'x': 0.707001553816047,
-                        'y': 0.4941864050880628
+                        'y': 0.492399627244108
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -4378,7 +4267,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 270,
                         'width': 0.429,
-                        'x': 0.22294173062196881,
+                        'x': 0.2235373232366204,
                         'y': 0.4048757792053093
                     },
                     {
@@ -4393,8 +4282,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 180,
                         'width': 0.304,
-                        'x': 0.47959852599336344,
-                        'y': 0.3429909656257977
+                        'x': 0.48019411860801503,
+                        'y': 0.3417997803964945
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -4423,8 +4312,8 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 135,
                         'width': 0.322,
-                        'x': 0.5563874309537992,
-                        'y': 0.4191700019569472
+                        'x': 0.5557918383391476,
+                        'y': 0.41797881672764403
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -4438,8 +4327,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.215,
-                        'x': 0.3682795253977708,
-                        'y': 0.3781025207181145
+                        'x': 0.3676839327831192,
+                        'y': 0.38048489117672085
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -4454,7 +4343,7 @@ var dataset = [
                         'rotation': 315,
                         'width': 0.215,
                         'x': 0.6694792190929976,
-                        'y': 0.30546863090274823
+                        'y': 0.30427744567344506
                     },
                 ]
             },
@@ -4476,7 +4365,7 @@ var dataset = [
                         'rotation': 180,
                         'width': 0.429,
                         'x': 0.504379130604952,
-                        'y': 0.4500411089083638
+                        'y': 0.4494455162937122
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -4490,8 +4379,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 90,
                         'width': 0.429,
-                        'x': 0.5034650101250744,
-                        'y': 0.6631108752658894
+                        'x': 0.504060602739726,
+                        'y': 0.663706467880541
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -4536,7 +4425,7 @@ var dataset = [
                         'rotation': 90,
                         'width': 0.322,
                         'x': 0.5578646651067812,
-                        'y': 0.8241632142431722
+                        'y': 0.822972029013869
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -4550,8 +4439,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 270,
                         'width': 0.215,
-                        'x': 0.5586195216540458,
-                        'y': 0.5573308486343912
+                        'x': 0.5580239290393942,
+                        'y': 0.5567352560197396
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -4565,8 +4454,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 270,
                         'width': 0.215,
-                        'x': 0.44986167480643235,
-                        'y': 0.8758621137581895
+                        'x': 0.4510528600357355,
+                        'y': 0.876457706372841
                     },
                 ]
             },
@@ -4587,8 +4476,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 90,
                         'width': 0.429,
-                        'x': 0.46714433038373177,
-                        'y': 0.5491162760997192
+                        'x': 0.4689311082276865,
+                        'y': 0.550903053943674
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -4602,8 +4491,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 270,
                         'width': 0.429,
-                        'x': 0.46897271420062975,
-                        'y': 0.7618675145920191
+                        'x': 0.4701638994299329,
+                        'y': 0.7642498850506254
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -4618,7 +4507,7 @@ var dataset = [
                         'rotation': 45,
                         'width': 0.304,
                         'x': 0.5225760495192718,
-                        'y': 0.3900099788990044
+                        'y': 0.3912011641283076
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -4633,7 +4522,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.152,
                         'x': 0.4841483509742195,
-                        'y': 0.10957202127116482
+                        'y': 0.11076320650046798
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -4662,8 +4551,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.215,
-                        'x': 0.5996225095720242,
-                        'y': 0.29887125491363914
+                        'x': 0.5984313243427211,
+                        'y': 0.2994668475282907
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -4700,7 +4589,7 @@ var dataset = [
                         'rotation': 135,
                         'width': 0.429,
                         'x': 0.5801178967072239,
-                        'y': 0.2569868069429082
+                        'y': 0.2575823995575598
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -4730,7 +4619,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.304,
                         'x': 0.5062928216625543,
-                        'y': 0.8623358910916362
+                        'y': 0.8617402984769846
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -4759,8 +4648,8 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 135,
                         'width': 0.322,
-                        'x': 0.5033148585892964,
-                        'y': 0.4081681132476813
+                        'x': 0.5045060438185995,
+                        'y': 0.4087637058623329
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -4774,8 +4663,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 135,
                         'width': 0.215,
-                        'x': 0.4670119754105334,
-                        'y': 0.7486627863524208
+                        'x': 0.46760756802518494,
+                        'y': 0.7474716011231176
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -4790,7 +4679,7 @@ var dataset = [
                         'rotation': 45,
                         'width': 0.215,
                         'x': 0.6188030074874501,
-                        'y': 0.82484182268357
+                        'y': 0.8236506374542669
                     },
                 ]
             },
@@ -4842,7 +4731,7 @@ var dataset = [
                         'rotation': 180,
                         'width': 0.304,
                         'x': 0.409509975070195,
-                        'y': 0.27528724342721006
+                        'y': 0.2746916508125585
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -4857,7 +4746,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.152,
                         'x': 0.4638991675316941,
-                        'y': 0.12348207819280181
+                        'y': 0.1240776708074534
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -4871,8 +4760,8 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 135,
                         'width': 0.322,
-                        'x': 0.5615338140049347,
-                        'y': 0.27544327958819026
+                        'x': 0.55974703616098,
+                        'y': 0.2748476869735387
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -4887,7 +4776,7 @@ var dataset = [
                         'rotation': 315,
                         'width': 0.215,
                         'x': 0.4472368503360845,
-                        'y': 0.388364755551774
+                        'y': 0.3877691629371225
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -4901,8 +4790,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.215,
-                        'x': 0.2946173330724072,
-                        'y': 0.3127813118352761
+                        'x': 0.2958085183017103,
+                        'y': 0.3121857192206245
                     },
                 ]
             },
@@ -4924,7 +4813,7 @@ var dataset = [
                         'rotation': 270,
                         'width': 0.429,
                         'x': 0.3989706585552626,
-                        'y': 0.6131447663575257
+                        'y': 0.6143359515868289
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -4938,8 +4827,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 90,
                         'width': 0.429,
-                        'x': 0.39952464519697095,
-                        'y': 0.8270871900791287
+                        'x': 0.39892905258231937,
+                        'y': 0.8282783753084318
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -4953,8 +4842,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 315,
                         'width': 0.304,
-                        'x': 0.34532571726367733,
-                        'y': 0.4552296543861142
+                        'x': 0.34651690249298045,
+                        'y': 0.4546340617714626
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -4999,7 +4888,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.215,
                         'x': 0.33158562401089087,
-                        'y': 0.3482584425253128
+                        'y': 0.3476628499106612
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -5036,7 +4925,7 @@ var dataset = [
                         'rotation': 315,
                         'width': 0.429,
                         'x': 0.20306670824470355,
-                        'y': 0.3540206429847699
+                        'y': 0.35521182821407304
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -5050,7 +4939,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.429,
-                        'x': 0.8084724678805414,
+                        'x': 0.8072812826512382,
                         'y': 0.35461623559942146
                     },
                     {
@@ -5081,7 +4970,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.152,
                         'x': 0.5036850853399131,
-                        'y': 0.5070169934484812
+                        'y': 0.5059467879690291
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -5096,7 +4985,7 @@ var dataset = [
                         'rotation': 135,
                         'width': 0.322,
                         'x': 0.4292785508380837,
-                        'y': 0.3552259613715648
+                        'y': 0.35463036875691323
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -5110,8 +4999,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 135,
                         'width': 0.215,
-                        'x': 0.24058904296775296,
-                        'y': 0.5421428245554327
+                        'x': 0.23999345035310138,
+                        'y': 0.5439296023993875
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -5147,8 +5036,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 135,
                         'width': 0.429,
-                        'x': 0.3190594612439379,
-                        'y': 0.5891428046456224
+                        'x': 0.31727268339998316,
+                        'y': 0.5903339898749256
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -5162,8 +5051,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.429,
-                        'x': 0.6184441107802261,
-                        'y': 0.5903339898749257
+                        'x': 0.6196352960095293,
+                        'y': 0.5915251751042289
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -5177,8 +5066,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 270,
                         'width': 0.304,
-                        'x': 0.621422073853484,
-                        'y': 0.36531347536799114
+                        'x': 0.6196352960095293,
+                        'y': 0.36471788275333955
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -5207,8 +5096,8 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 135,
                         'width': 0.322,
-                        'x': 0.3172585502424914,
-                        'y': 0.364122290138688
+                        'x': 0.3166629576278398,
+                        'y': 0.36471788275333955
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -5222,7 +5111,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 315,
                         'width': 0.215,
-                        'x': 0.277963570832979,
+                        'x': 0.2785591634476306,
                         'y': 0.2516119614566492
                     },
                     {
@@ -5274,7 +5163,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.429,
-                        'x': 0.7001468467625287,
+                        'x': 0.6989556615332255,
                         'y': 0.44439913936867176
                     },
                     {
@@ -5305,7 +5194,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.152,
                         'x': 0.24892876567684843,
-                        'y': 0.5938219341444737
+                        'y': 0.5967998972177316
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -5319,8 +5208,8 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 135,
                         'width': 0.322,
-                        'x': 0.24892876567684843,
-                        'y': 0.3664331823364247
+                        'x': 0.24833317306219685,
+                        'y': 0.3711979232536373
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -5335,7 +5224,7 @@ var dataset = [
                         'rotation': 135,
                         'width': 0.215,
                         'x': 0.2858412317706117,
-                        'y': 0.48073028886241803
+                        'y': 0.48508607686453575
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -5349,8 +5238,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.215,
-                        'x': 0.6620289194248277,
-                        'y': 0.6337125061686376
+                        'x': 0.6638156972687824,
+                        'y': 0.636094876627244
                     },
                 ]
             },
@@ -5431,7 +5320,7 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 45,
                         'width': 0.322,
-                        'x': 0.3367430913809242,
+                        'x': 0.3379342766102273,
                         'y': 0.5323473571853995
                     },
                     {
@@ -5446,8 +5335,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 315,
                         'width': 0.215,
-                        'x': 0.2980437045860631,
-                        'y': 0.2680459964264444
+                        'x': 0.2998304824300178,
+                        'y': 0.2674504038117928
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -5461,8 +5350,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.215,
-                        'x': 0.2992348898153662,
-                        'y': 0.6448575430102951
+                        'x': 0.3004260750446694,
+                        'y': 0.6454531356249467
                     },
                 ]
             },
@@ -5483,8 +5372,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.429,
-                        'x': 0.8213788910916362,
-                        'y': 0.5761561357951162
+                        'x': 0.820187705862333,
+                        'y': 0.5773473210244193
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -5498,8 +5387,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 135,
                         'width': 0.429,
-                        'x': 0.21483876457074794,
-                        'y': 0.5761561357951162
+                        'x': 0.21543435718539952,
+                        'y': 0.5773473210244193
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -5529,7 +5418,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.152,
                         'x': 0.5172155103377861,
-                        'y': 0.5779287804815791
+                        'y': 0.5785243730962307
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -5543,8 +5432,8 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 45,
                         'width': 0.322,
-                        'x': 0.5934088226835702,
-                        'y': 0.4267333410193143
+                        'x': 0.5928132300689186,
+                        'y': 0.42732893363396585
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -5558,8 +5447,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 315,
                         'width': 0.215,
-                        'x': 0.32851186930996334,
-                        'y': 0.38862954683910494
+                        'x': 0.32910746192461493,
+                        'y': 0.3892251394537565
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -5573,7 +5462,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.215,
-                        'x': 0.7077057863524205,
+                        'x': 0.7065146011231174,
                         'y': 0.3892251394537565
                     },
                 ]
@@ -5596,7 +5485,7 @@ var dataset = [
                         'rotation': 45,
                         'width': 0.429,
                         'x': 0.2840290624521398,
-                        'y': 0.2981298427635497
+                        'y': 0.29693865753424653
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -5610,8 +5499,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 315,
                         'width': 0.429,
-                        'x': 0.5881783100484981,
-                        'y': 0.2981298427635497
+                        'x': 0.5852003469752403,
+                        'y': 0.29693865753424653
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -5625,8 +5514,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 270,
                         'width': 0.304,
-                        'x': 0.5887739026631497,
-                        'y': 0.5237459498851357
+                        'x': 0.5852003469752403,
+                        'y': 0.5231503572704841
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -5640,8 +5529,8 @@ var dataset = [
                         'moduloRotation': 90,
                         'rotation': 0,
                         'width': 0.152,
-                        'x': 0.43580596137156474,
-                        'y': 0.29873956853569306
+                        'x': 0.43461477614226157,
+                        'y': 0.2969527906917383
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -5655,7 +5544,7 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 45,
                         'width': 0.322,
-                        'x': 0.28282374406534516,
+                        'x': 0.28461052190929986,
                         'y': 0.5219591720411809
                     },
                     {
@@ -5670,7 +5559,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.215,
-                        'x': 0.5518755697268782,
+                        'x': 0.5477064214243171,
                         'y': 0.6368518711818261
                     },
                     {
@@ -5685,8 +5574,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.215,
-                        'x': 0.24471994988513565,
-                        'y': 0.6362562785671745
+                        'x': 0.24710232034374197,
+                        'y': 0.6350650933378713
                     },
                 ]
             },
@@ -5737,7 +5626,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 0,
                         'width': 0.304,
-                        'x': 0.42749177299412894,
+                        'x': 0.4257049951501742,
                         'y': 0.339726420233132
                     },
                     {
@@ -5752,8 +5641,8 @@ var dataset = [
                         'moduloRotation': 90,
                         'rotation': 0,
                         'width': 0.152,
-                        'x': 0.19950742857142867,
-                        'y': 0.64451380277376
+                        'x': 0.19891183595677708,
+                        'y': 0.6427270249298053
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -5767,7 +5656,7 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 45,
                         'width': 0.322,
-                        'x': 0.6524981543435718,
+                        'x': 0.653689339572875,
                         'y': 0.5665337125840212
                     },
                     {
@@ -5782,8 +5671,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 135,
                         'width': 0.215,
-                        'x': 0.23641989466519192,
-                        'y': 0.5302309722624011
+                        'x': 0.23582430205054034,
+                        'y': 0.5296353796477495
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -5797,8 +5686,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.215,
-                        'x': 0.6149899527780143,
-                        'y': 0.6790440412660598
+                        'x': 0.6155855453926657,
+                        'y': 0.6796396338807114
                     },
                 ]
             },
@@ -5849,8 +5738,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 270,
                         'width': 0.304,
-                        'x': 0.6239805174848976,
-                        'y': 0.6214133177912025
+                        'x': 0.6227893322555944,
+                        'y': 0.6202221325618993
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -5865,7 +5754,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.152,
                         'x': 0.4710125761933123,
-                        'y': 0.3934289733685016
+                        'y': 0.39402456598315316
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -5879,7 +5768,7 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 135,
                         'width': 0.322,
-                        'x': 0.5478014811537477,
+                        'x': 0.5466102959244447,
                         'y': 0.5446244128307667
                     },
                     {
@@ -5894,8 +5783,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 135,
                         'width': 0.215,
-                        'x': 0.3603031585127202,
-                        'y': 0.7309456833999829
+                        'x': 0.3579207880541139,
+                        'y': 0.7333280538585892
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -5909,7 +5798,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.215,
-                        'x': 0.5846998140900195,
+                        'x': 0.5852954067046711,
                         'y': 0.7339236464732408
                     },
                 ]
@@ -5946,8 +5835,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.429,
-                        'x': 0.7965606155875098,
-                        'y': 0.4487198687143708
+                        'x': 0.7959650229728582,
+                        'y': 0.4493154613290224
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -5962,7 +5851,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.304,
                         'x': 0.5703489158512719,
-                        'y': 0.45050664655832556
+                        'y': 0.4493154613290224
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -5977,7 +5866,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.152,
                         'x': 0.495346788734791,
-                        'y': 0.29813415502424906
+                        'y': 0.2975385624095975
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -5992,7 +5881,7 @@ var dataset = [
                         'rotation': 135,
                         'width': 0.322,
                         'x': 0.41974906900365844,
-                        'y': 0.44932959448651416
+                        'y': 0.4487340018718626
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -6006,8 +5895,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 135,
                         'width': 0.215,
-                        'x': 0.23284633897728246,
-                        'y': 0.6368420502850335
+                        'x': 0.2316551537479793,
+                        'y': 0.6374376428996851
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -6021,8 +5910,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.215,
-                        'x': 0.7584426882498088,
-                        'y': 0.6374376428996851
+                        'x': 0.7590382808644603,
+                        'y': 0.6386288281289882
                     },
                 ]
             },
@@ -6074,7 +5963,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.304,
                         'x': 0.5258564231260104,
-                        'y': 0.4140152795031056
+                        'y': 0.41341968688845404
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -6134,7 +6023,7 @@ var dataset = [
                         'rotation': 135,
                         'width': 0.215,
                         'x': 0.8511179903003486,
-                        'y': 0.664288852718455
+                        'y': 0.6636932601038034
                     },
                 ]
             },
@@ -6170,8 +6059,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.429,
-                        'x': 0.7627420182081169,
-                        'y': 0.5911163670552197
+                        'x': 0.7621464255934653,
+                        'y': 0.5899251818259166
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -6200,7 +6089,7 @@ var dataset = [
                         'moduloRotation': 90,
                         'rotation': 0,
                         'width': 0.152,
-                        'x': 0.6115607119033439,
+                        'x': 0.6103695266740408,
                         'y': 0.4393112018208117
                     },
                     {
@@ -6231,7 +6120,7 @@ var dataset = [
                         'rotation': 45,
                         'width': 0.215,
                         'x': 0.49668228877733356,
-                        'y': 0.40120740764060236
+                        'y': 0.4023985928699055
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -6245,8 +6134,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.215,
-                        'x': 0.6490689134689016,
-                        'y': 0.5535940323321703
+                        'x': 0.64847332085425,
+                        'y': 0.5529984397175187
                     },
                 ]
             },
@@ -6267,7 +6156,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.429,
-                        'x': 0.16642188258317028,
+                        'x': 0.168208660427125,
                         'y': 0.4500991049093849
                     },
                     {
@@ -6298,7 +6187,7 @@ var dataset = [
                         'rotation': 180,
                         'width': 0.304,
                         'x': 0.546211392240279,
-                        'y': 0.4500991049093849
+                        'y': 0.45069469752403646
                     },
                     {
                         'img': 'tangram/p2.svg',
@@ -6312,8 +6201,8 @@ var dataset = [
                         'moduloRotation': 90,
                         'rotation': 0,
                         'width': 0.152,
-                        'x': 0.16584042312601036,
-                        'y': 0.6018758609716667
+                        'x': 0.16822279358461667,
+                        'y': 0.6012802683570151
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -6328,7 +6217,7 @@ var dataset = [
                         'rotation': 45,
                         'width': 0.322,
                         'x': 0.3950159527780142,
-                        'y': 0.45008482889475043
+                        'y': 0.45068042150940196
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -6342,8 +6231,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.215,
-                        'x': 0.8093215677699311,
-                        'y': 0.5643678022632521
+                        'x': 0.8099171603845827,
+                        'y': 0.5637722096486005
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -6357,8 +6246,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.215,
-                        'x': 0.7337097148813069,
-                        'y': 0.6411708403811791
+                        'x': 0.73490090011061,
+                        'y': 0.6399796551518759
                     },
                 ]
             },
@@ -6379,8 +6268,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 0,
                         'width': 0.429,
-                        'x': 0.22952271794435464,
-                        'y': 0.5494304572449586
+                        'x': 0.23011831055900622,
+                        'y': 0.5500260498596102
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -6424,8 +6313,8 @@ var dataset = [
                         'moduloRotation': 90,
                         'rotation': 45,
                         'width': 0.152,
-                        'x': 0.33589819433336177,
-                        'y': 0.44333190274823453
+                        'x': 0.3364937869480133,
+                        'y': 0.4445230879775377
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -6454,8 +6343,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 180,
                         'width': 0.215,
-                        'x': 0.5498406180549648,
-                        'y': 0.4996361363907089
+                        'x': 0.5504362106696163,
+                        'y': 0.49904054377605733
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -6469,7 +6358,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 90,
                         'width': 0.215,
-                        'x': 0.8194916828043906,
+                        'x': 0.818896090189739,
                         'y': 0.44571427320684087
                     },
                 ]
@@ -6506,8 +6395,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 0,
                         'width': 0.429,
-                        'x': 0.7699881876967583,
-                        'y': 0.5200925202926914
+                        'x': 0.7705837803114098,
+                        'y': 0.520688112907343
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -6521,7 +6410,7 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 0,
                         'width': 0.304,
-                        'x': 0.45026573734365694,
+                        'x': 0.44967014472900535,
                         'y': 0.3820107478941547
                     },
                     {
@@ -6551,7 +6440,7 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 0,
                         'width': 0.322,
-                        'x': 0.6095314413341276,
+                        'x': 0.6107226265634307,
                         'y': 0.3599128386794861
                     },
                     {
@@ -6581,8 +6470,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 180,
                         'width': 0.215,
-                        'x': 0.6618257906066536,
-                        'y': 0.4673202363651835
+                        'x': 0.6636125684506083,
+                        'y': 0.4667246437505319
                     },
                 ]
             },
@@ -6618,8 +6507,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.429,
-                        'x': 0.8339525533055391,
-                        'y': 0.6514080734280608
+                        'x': 0.8327613680762359,
+                        'y': 0.6520036660427124
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -6648,8 +6537,8 @@ var dataset = [
                         'moduloRotation': 90,
                         'rotation': 0,
                         'width': 0.152,
-                        'x': 0.5309802149238493,
-                        'y': 0.34959851110354806
+                        'x': 0.5297890296945461,
+                        'y': 0.35019410371819965
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -6663,8 +6552,8 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 45,
                         'width': 0.322,
-                        'x': 0.6821756543861142,
-                        'y': 0.4251962308346805
+                        'x': 0.680984469156811,
+                        'y': 0.4257918234493321
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -6678,8 +6567,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.215,
-                        'x': 0.41669738441249027,
-                        'y': 0.3120904523951332
+                        'x': 0.4161017917978387,
+                        'y': 0.3126860450097848
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -6693,8 +6582,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 45,
                         'width': 0.215,
-                        'x': 0.7202794485663236,
-                        'y': 0.31089926716583005
+                        'x': 0.7190882633370205,
+                        'y': 0.3126860450097848
                     },
                 ]
             },
@@ -6715,8 +6604,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 225,
                         'width': 0.429,
-                        'x': 0.7599486005275248,
-                        'y': 0.6195887750361609
+                        'x': 0.7617353783714795,
+                        'y': 0.6207799602654641
                     },
                     {
                         'img': 'tangram/p0.svg',
@@ -6730,8 +6619,8 @@ var dataset = [
                         'moduloRotation': 360,
                         'rotation': 135,
                         'width': 0.429,
-                        'x': 0.15876866468135795,
-                        'y': 0.6195887750361609
+                        'x': 0.1575774794520548,
+                        'y': 0.6213755528801157
                     },
                     {
                         'img': 'tangram/p1.svg',
@@ -6761,7 +6650,7 @@ var dataset = [
                         'rotation': 0,
                         'width': 0.152,
                         'x': 0.46054981783374455,
-                        'y': 0.6225526049519273
+                        'y': 0.6207658271079726
                     },
                     {
                         'img': 'tangram/p3.svg',
@@ -6775,8 +6664,8 @@ var dataset = [
                         'moduloRotation': 180,
                         'rotation': 135,
                         'width': 0.322,
-                        'x': 0.3849520981026123,
-                        'y': 0.31956613341274565
+                        'x': 0.3843565054879607,
+                        'y': 0.32016172602739723
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -6791,7 +6680,7 @@ var dataset = [
                         'rotation': 45,
                         'width': 0.215,
                         'x': 0.49805801939930244,
-                        'y': 0.43444455653875613
+                        'y': 0.43325337130945296
                     },
                     {
                         'img': 'tangram/p4.svg',
@@ -6806,7 +6695,7 @@ var dataset = [
                         'rotation': 225,
                         'width': 0.215,
                         'x': 0.4224460236535353,
-                        'y': 0.5088652241980773
+                        'y': 0.5076740389687742
                     },
                 ]
             }
