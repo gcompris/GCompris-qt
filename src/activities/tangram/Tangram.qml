@@ -171,6 +171,7 @@ ActivityBase {
                 property bool selected: false
                 property int animDuration: 48
                 property bool flippable: modelData.flippable
+                property bool rotable: modelData.moduloRotation != 0
 
                 // After a drag the [x, y] positions are adressed directly breaking our
                 // binding. Call me to reset the binding.

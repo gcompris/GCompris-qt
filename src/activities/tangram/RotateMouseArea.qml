@@ -29,7 +29,7 @@ import "tangram.js" as Activity
 MouseArea {
     id: rotateArea
     anchors.fill: parent
-    enabled: items.selectedITem && items.selectedITem.selected
+    enabled: items.selectedITem && items.selectedITem.selected && items.selectedITem.rotable
     property double prevRotation: 0
     onPositionChanged: {
         var backPoint = background.mapFromItem(parent, mouseX, mouseY)
