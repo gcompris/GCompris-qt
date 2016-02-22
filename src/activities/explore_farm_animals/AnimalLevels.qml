@@ -89,7 +89,6 @@ Image {
             } else {
                 if (questionId === questionTargetId) {
                     animWin.start();
-                    items.bonus.good("smiley");
                     items.progressbar.value ++;
                     Activity.nextSubSubLevel();
                 } else {

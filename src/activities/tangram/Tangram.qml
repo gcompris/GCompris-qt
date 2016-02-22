@@ -287,7 +287,7 @@ ActivityBase {
                     source: "qrc:/gcompris/src/core/resource/bar_reload.svg"
                     x: - width
                     y: parent.height / 2 - height / 2
-                    visible: parent.selected && modelData.moduloRotation > 0
+                    visible: parent.selected && parent.rotable
                     sourceSize.width: 40 * ApplicationInfo.ratio
                     z: parent.z + 1
 
