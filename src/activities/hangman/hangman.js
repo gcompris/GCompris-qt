@@ -116,35 +116,34 @@ function initLevel() {
         subLevelsLeft.push(i)
 
     initSubLevel();
-    {
-        //to set the layout...populate
-        var letters = new Array();
-        for (var i = 0; i < wordList.length; i++) {
-            var word = wordList[i].translatedTxt;
-            for (var j = 0; j < word.length; j++) {
-                var letter = word.charAt(j).toLocaleLowerCase();
-                if (letters.indexOf(letter) === -1)
-                    letters.push(word.charAt(j));
-            }
+
+    //to set the layout...populate
+    var letters = new Array();
+    for (var i = 0; i < wordList.length; i++) {
+        var word = wordList[i].translatedTxt;
+        for (var j = 0; j < word.length; j++) {
+            var letter = word.charAt(j).toLocaleLowerCase();
+            if (letters.indexOf(letter) === -1)
+                letters.push(letter);
         }
-        letters = GCompris.ApplicationInfo.localeSort(letters, items.locale);
-        // Remove space character if in list
-        var indexOfSpace = letters.indexOf(' ')
-        if(indexOfSpace > -1)
-            letters.splice(indexOfSpace, 1)
-        // generate layout from letter map
-        var layout = new Array();
-        var row = 0;
-        var offset = 0;
-        while (offset < letters.length-1) {
-            var cols = letters.length <= 10
-                    ? letters.length : (Math.ceil((letters.length-offset) / (3 - row)));
-            layout[row] = new Array();
-            for (var j = 0; j < cols; j++)
-                layout[row][j] = { label: letters[j+offset] };
-            offset += j;
-            row++;
-        }
+    }
+    letters = GCompris.ApplicationInfo.localeSort(letters, items.locale);
+    // Remove space character if in list
+    var indexOfSpace = letters.indexOf(' ')
+    if(indexOfSpace > -1)
+        letters.splice(indexOfSpace, 1)
+    // generate layout from letter map
+    var layout = new Array();
+    var row = 0;
+    var offset = 0;
+    while (offset < letters.length-1) {
+        var cols = letters.length <= 10
+                ? letters.length : (Math.ceil((letters.length-offset) / (3 - row)));
+        layout[row] = new Array();
+        for (var j = 0; j < cols; j++)
+            layout[row][j] = { label: letters[j+offset] };
+        offset += j;
+        row++;
     }
     items.keyboard.layout = layout;
 
@@ -188,7 +187,8 @@ function processKeyPress(text) {
         // For all the indices found, we replace the "_" by the letter
         for(var index = 0 ; index < indices.length ; index ++) {
             // Characters in the word displayed are separated by spaces, this is why we do 2*index
-            items.hidden.text = items.hidden.text.replaceAt(2*indices[index], text);
+            items.hidden.text = items.hidden.text.replaceAt(2*indices[index],
+                                                            currentWord[indices[index]]);
         }
     }
 
