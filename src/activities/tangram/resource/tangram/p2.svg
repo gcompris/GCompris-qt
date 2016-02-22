@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="151.95157"
-   height="152.06172"
-   viewBox="0 0 151.95157 152.06172"
+   width="152"
+   height="152"
+   viewBox="0 0 152 152"
    id="svg4163"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="-116.23516"
-     inkscape:cy="60.135166"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="91.326742"
+     inkscape:cy="92.993774"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -58,12 +58,12 @@
      inkscape:label="Calque 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(727.59405,170.53763)">
+     transform="translate(727.90335,170.16658)">
     <path
        id="path2402"
        sodipodi:nodetypes="ccccc"
-       style="fill:#00e5a5;fill-rule:evenodd;stroke:#000000;stroke-width:0.38139498"
-       d="m -727.40335,-170.34693 151.57017,0 0,151.680334 -151.57017,0 0,-151.680334 z"
+       style="fill:#00e5a5;fill-rule:evenodd;stroke:#000000;stroke-width:0.99594665;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m -727.40538,-169.66861 151.00404,0 0,151.004049 -151.00404,0 0,-151.004049 z"
        inkscape:connector-curvature="0" />
   </g>
 </svg>

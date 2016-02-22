@@ -52,9 +52,9 @@ Rectangle {
         fontSize: largeSize
         horizontalAlignment: Text.AlignHCenter
         font.weight: Font.DemiBold
-        anchors.centerIn: parent.Center
+        anchors.top: parent.top
         color: "#2a2a2a"
-        width: parent.width
+        width: parent.width - cancelButton.width
         wrapMode: Text.WordWrap
     }
 
@@ -67,7 +67,7 @@ Rectangle {
         fillMode: Image.PreserveAspectFit
         anchors {
             top: rectangleDesc.horizontalLayout ? heading.bottom : descriptionText.bottom
-            horizontalCenter: rectangleDesc.horizontalLayout ? undefined : heading.horizontalCenter
+            horizontalCenter: rectangleDesc.horizontalLayout ? undefined : parent.horizontalCenter
             left: rectangleDesc.horizontalLayout ? parent.left : undefined
             leftMargin:  rectangleDesc.horizontalLayout ? 30 * ApplicationInfo.ratio : 0
         }
@@ -79,7 +79,7 @@ Rectangle {
         fontSizeMode: Text.Fit
         horizontalAlignment: Text.AlignJustify
         anchors {
-            top: heading.bottom
+            top: (heading.height > cancelButton.height) ? heading.bottom : cancelButton.bottom
             right: parent.right
             rightMargin: 30 * ApplicationInfo.ratio
             left: rectangleDesc.horizontalLayout ? animalImage.right : parent.left
@@ -93,6 +93,7 @@ Rectangle {
 
     // The cancel button
     GCButtonCancel {
+        id: cancelButton
         onClose: parent.close()
     }
 
