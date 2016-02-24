@@ -23,7 +23,7 @@
 .import QtQuick 2.0 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 6
+var numberOfLevel = 9
 var items
 var numberToGuess = 0
 
@@ -59,6 +59,15 @@ function initLevel() {
             numberToGuess = getRandomInt(1,items.currentMax)
             break;
     case 5: items.currentMax = 1000
+            numberToGuess = getRandomInt(1,items.currentMax)
+            break;
+    case 6: items.currentMax = 5000
+            numberToGuess = getRandomInt(1,items.currentMax)
+            break;
+    case 7: items.currentMax = 10000
+           numberToGuess = getRandomInt(1,items.currentMax)
+           break;
+    case 8: items.currentMax = 50000
             numberToGuess = getRandomInt(1,items.currentMax)
             break;
     }

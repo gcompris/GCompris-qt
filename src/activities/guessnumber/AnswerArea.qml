@@ -26,7 +26,7 @@ import "guessnumber.js" as Activity
 
 Rectangle {
     id: answerBackground
-    width: 100 * ApplicationInfo.ratio
+    width: 130 * ApplicationInfo.ratio
     height: 60 * ApplicationInfo.ratio
     color: activeFocus ? "#ff07fff2" : "#cccccccc"
     radius: 10
