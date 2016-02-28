@@ -22,7 +22,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "imagename/Imagename.qml"
-  difficulty: 1
+  difficulty: 3
   icon: "imagename/imagename.svg"
   author: "Pulkit Gupta &lt;pulkitgenius@gmail.com&gt;"
   demo: true
