@@ -372,7 +372,8 @@ ActivityBase {
         Bar {
             id: bar
             content: BarEnumContent { value: help | home | (items.twoPlayer ? 0 : level) |
-                                             (items.twoPlayer ? 0 : reload) }
+                                             (items.twoPlayer && !items.gameOver ? 0 : reload) }
+
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }

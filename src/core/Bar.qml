@@ -1,6 +1,6 @@
 /* GCompris - Bar.qml
  *
- * Copyright (C) 2014 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ * Copyright (C) 2014-2016 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net>
@@ -93,7 +93,7 @@ Item {
       * type: real
       * Width of all the buttons
       */
-    property real totalWidth: 66
+    property real totalWidth: openBar.width
 
     readonly property int fullButton: 66
     readonly property int halfButton: 30
@@ -283,11 +283,13 @@ Item {
 
     function updateContent() {
         var newButtonModel = new Array()
+        numberOfButtons = 0
+        totalWidth = openBar.width;
         for(var def in buttonList) {
             if((content.value & buttonList[def].contentId) &&
                buttonList[def].allowed) {
                 newButtonModel.push(buttonList[def])
-                totalWidth+=computeWidth(buttonList[def].bid)
+                totalWidth += computeWidth(buttonList[def].bid)
                 numberOfButtons++
             }
         }
