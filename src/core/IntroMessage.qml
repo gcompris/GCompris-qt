@@ -123,6 +123,33 @@ Item {
                 }
             }
         }
+        states: [
+        State {
+            name: "notclicked"
+            PropertyChanges {
+                target: button
+                scale: 1.0
+            }
+        },
+        State {
+            name: "clicked"
+            when: button_area.pressed
+            PropertyChanges {
+                target: button
+                scale: 0.9
+            }
+        },
+        State {
+            name: "hover"
+            when: button_area.containsMouse
+            PropertyChanges {
+                target: button
+                scale: 1.1
+            }
+        }
+        ]
+        Behavior on scale { NumberAnimation { duration: 70 } }
+
     }
 
     /* Inlined Button User Interface for Skip . */
@@ -155,5 +182,32 @@ Item {
                 message.introDone()
             }
         }
+
+        states: [
+        State {
+            name: "notclicked"
+            PropertyChanges {
+                target: skipButton
+                scale: 1.0
+            }
+        },
+        State {
+            name: "clicked"
+            when: skipButton_area.pressed
+            PropertyChanges {
+                target: skipButton
+                scale: 0.9
+            }
+        },
+        State {
+            name: "hover"
+            when: skipButton_area.containsMouse
+            PropertyChanges {
+                target: skipButton
+                scale: 1.1
+            }
+        }
+        ]
+        Behavior on scale { NumberAnimation { duration: 70 } }
     }
 }
