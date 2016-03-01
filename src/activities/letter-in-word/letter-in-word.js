@@ -194,7 +194,9 @@ function initLevel() {
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale);
     currentLetter = questions[currentSubLevel];
     items.question = currentLetter
-    items.animateX.restart()
+    if(currentLevel <= 2){
+        items.animateX.restart();
+    }
     if (GCompris.ApplicationSettings.isAudioVoicesEnabled &&
             GCompris.DownloadManager.haveLocalResource(
                 GCompris.DownloadManager.getVoicesResourceForLocale(locale))) {
