@@ -198,7 +198,10 @@ ActivityBase {
                 right: parent.right
                 margins: 10
             }
-            onClicked: Activity.playLetter(Activity.currentLetter);
+            onClicked:{
+                Activity.playLetter(Activity.currentLetter);
+                animateX.restart();
+            }
         }
 
         Item {
