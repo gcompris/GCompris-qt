@@ -25,6 +25,7 @@
 .import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris //for ApplicationInfo
 .import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 
 var url = "qrc:/gcompris/src/activities/letter-in-word/resource/"
 var defaultLevelsFile = ":/gcompris/src/activities/letter-in-word/resource/levels/levels-en.json";
@@ -40,6 +41,8 @@ var level;
 var questions;
 var words;
 var items;
+var dataset = null;
+var frequency;
 
 function start(_items)
 {
@@ -51,14 +54,20 @@ function start(_items)
     // register the voices for the locale
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
     GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
-
-    loadLevels();
+    console.log('yo yo yo  *************')
+    loadDataset();
+    console.log('Dataset:')
+    console.log(dataset);
+    levels = Lang.getAllLessons(dataset)
     currentLevel = 0;
     currentSubLevel = 0;
     maxLevel = levels.length;
+    console.log('Max num of levels')
+    console.log(maxLevel);
     initLevel();
 }
 
+/*
 function validateLevels(levels)
 {
     var i;
@@ -92,6 +101,46 @@ function loadLevels()
         }
     }
 }
+*/
+
+function loadDataset()
+{
+    var resourceUrl = "qrc:/gcompris/src/activities/lang/resource/"
+
+    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+
+    dataset = Lang.load(items.parser, resourceUrl,
+                        GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
+                        "content-"+ locale +".json")
+    console.log('** Came here')
+    // If dataset is empty, we try to load from short locale
+    // and if not present again, we switch to default one
+    var localeUnderscoreIndex = locale.indexOf('_')
+    if(!dataset) {
+        var localeShort;
+        // We will first look again for locale xx (without _XX if exist)
+        if(localeUnderscoreIndex > 0) {
+            localeShort = locale.substring(0, localeUnderscoreIndex)
+        } else {
+            localeShort = locale;
+        }
+        dataset = Lang.load(items.parser, resourceUrl,
+                            GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
+                            "content-"+localeShort+ ".json")
+    }
+    console.log('** Came here 2')
+
+    if(!dataset) {
+        // English fallback
+        dataset = Lang.load(items.parser, resourceUrl,
+                            GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
+                            "content-en.json")
+    }
+    console.log('** Came here 3')
+
+
+
+}
 
 function stop()
 {
@@ -100,7 +149,7 @@ function stop()
 
 function shuffleString(s)
 {
-    var a = s.split("");
+    var a = s;
     var n = a.length;
 
     for(var i = n-1; i>0; i--) {
@@ -116,17 +165,18 @@ function initLevel() {
     items.bar.level = currentLevel + 1;
     if (currentSubLevel == 0) {
         level = levels[currentLevel];
-        maxSubLevel = level.questions.length;
+        words = Lang.getLessonWords(dataset, level);
+        frequency = calculateFrequency();
+        var tempQuestions = generateQuestions();
+        maxSubLevel = tempQuestions.length;
         items.score.numberOfSubLevels = maxSubLevel;
         items.score.currentSubLevel = 1;
-        questions = shuffleString(level.questions);
+        questions = shuffleString(tempQuestions);
         items.wordsModel.clear();
-        words = level.words.split(",")
         for (var i = 0; i < words.length; i++) {
-            words[i] = words[i].trim()
             items.wordsModel.append({
-                "spelling": words[i],
-                "imgurl": url + "images/" + words[i] + ".svg",
+                "spelling": words[i].translatedTxt,
+                "imgurl": words[i].image,
                 "selected": false
             });
         }
@@ -139,7 +189,7 @@ function initLevel() {
     }
 
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale);
-    currentLetter = questions.split("")[currentSubLevel];
+    currentLetter = questions[currentSubLevel];
     items.question = currentLetter
     items.animateX.restart()
     if (GCompris.ApplicationSettings.isAudioVoicesEnabled &&
@@ -153,6 +203,65 @@ function initLevel() {
         items.repeatItem.visible = false
     }
 
+}
+
+function calculateFrequency(){
+    var freq = [];
+    for(var i = 0; i < words.length; i++){
+        var currentWord = words[i].translatedTxt;
+        for(var j = 0; j < currentWord.length; j++){
+            var character = currentWord.charAt(j);
+            if(freq[character]){
+                freq[character]++;
+            }
+            else{
+                freq[character] = 1;
+            }
+        }
+    }
+    /*
+    for(var i in freq){
+        console.log(i)
+        console.log(freq[i])
+
+    }*/
+
+    return freq;
+}
+
+function generateQuestions(){
+    var freqArr = [];
+    var ques = [];
+
+    for(var character in frequency){
+        //console.log('calc freq')
+        //console.log(character)
+        //console.log(frequency[character])
+        freqArr.push([character, frequency[character]]);
+    }
+
+    freqArr.sort(function(a, b) {return a[1] - b[1]});
+
+    /*
+    for(var i = 0; i < freqArr.length; i++){
+        console.log('freq arr')
+        console.log(freqArr[i][0])
+        console.log(freqArr[i][1])
+    }*/
+
+    var limit = Math.min(10, freqArr.length);
+    console.log(freqArr.length)
+    console.log(limit)
+    for(var i = 0; i < limit; i++){
+        ques.push(freqArr[i][0])
+    }
+    console.log('bablu shuru ho jaa')
+    /*for(var i = 0; i < ques.length; i++){
+        console.log('bablu')
+        console.log(ques[i])
+    }*/
+
+    return ques;
 }
 
 function playLetter(letter) {
