@@ -23,7 +23,7 @@
 .import QtQuick 2.0 as Quick
 var url = "qrc:/gcompris/src/activities/guesscount/resource/"
 var currentLevel = 0
-var numberOfLevel = 4
+var numberOfLevel = 2
 var items
 var images = [
             ["plus.svg","+"],
@@ -43,22 +43,49 @@ var dataset=[
                     ]
 
                 }
+            },
+            {
+                'level': 2,
+                "data": {
+                    "questions":"3",
+                    "numbers":[
+                        [[6,7],42],
+                        [[8,5],3],
+                        [[10,2],5]
+                    ]
+
+                }
             }
+
         ]
 
 function start(items_) {
     items = items_
     currentLevel = 0
     initLevel()
-}
+    }
 
 function stop() {
 }
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    items.operators=images
+    items.total_questions=dataset[currentLevel]["data"]["questions"]
+    items.question_no=1
+    items.data=dataset[currentLevel]["data"]["numbers"][items.question_no-1][0]
+    items.guesscount=dataset[currentLevel]["data"]["numbers"][items.question_no-1][1]
+
 }
 
+function run() {
+
+    items.question_no=items.question_no+1
+    items.operators=images
+    //console.log(items.question_no)
+    items.data=dataset[currentLevel]["data"]["numbers"][items.question_no-1][0]
+    items.guesscount=dataset[currentLevel]["data"]["numbers"][items.question_no-1][1]
+}
 
 function nextLevel() {
     if(numberOfLevel <= ++currentLevel ) {

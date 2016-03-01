@@ -48,11 +48,12 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            property var operators: Activity.images
-            property var question_no:1
-            property int total_questions:Activity.dataset[0]["data"]["questions"]
-            property var data: Activity.dataset[0]["data"]["numbers"][items.question_no-1][0]
-            property var guesscount:Activity.dataset[0]["data"]["numbers"][items.question_no-1][1]
+            property var operators
+            property int question_no
+            property int total_questions
+            property var data
+            property int guesscount
+
 
         }
 
@@ -82,6 +83,7 @@ ActivityBase {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
+
         Image {
             source: Activity.url+"tiger1_RS.jpg"
             width:parent.width
@@ -91,15 +93,15 @@ ActivityBase {
 
         Row {
             id:row1
-            spacing: 800
+            spacing: 500
             anchors{
                 top:parent.top
                 topMargin:10
             }
             Rectangle {
                 id:question_no
-                width:200;
-                height: 50;
+                width:400;
+                height: 100;
                 radius: 20.0;
                 color: "steelblue"
                 anchors.margins: 5
@@ -107,12 +109,12 @@ ActivityBase {
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     fontSize: mediumSize
-                    text: items.question_no+"/"+items.total_questions
+                    text: qsTr("%1/%2").arg(items.question_no).arg(items.total_questions)
                 }
             }
             Rectangle{
-                width:guess.width;
-                height:50;
+                width:350;
+                height:100;
                 radius:20;
                 color:"orange"
                 GCText{
@@ -120,7 +122,7 @@ ActivityBase {
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     fontSize: mediumSize
-                    text: "Guesscount : "+items.guesscount
+                    text: qsTr("Guesscount : %1").arg(items.guesscount)
                 }
             }
         }
@@ -147,20 +149,22 @@ ActivityBase {
                     GCText{
                         anchors.horizontalCenter: parent.horizontalCenter
                         fontSize: largeSize
-                        text: "Operators"
+                        text: qsTr("Operators")
                     }
                 }
             }
             Repeater {
                 model: items.operators
-                Item{
+                Rectangle{
                     id:root
                     width:100
                     height:100
+                    color: "red"
                     MouseArea{
                         id:mousearea
-                        width: 100
-                        height: 100
+                        anchors.fill:parent
+                        //width: 100
+                        //height: 100
                         property Rectangle obj: rec
                         drag.target: rec
                         onReleased: {
@@ -193,7 +197,7 @@ ActivityBase {
                             states: State {
                                 when: mousearea.drag.active
                                 ParentChange { target: rec; parent: root }
-                                AnchorChanges { target: rec; anchors.verticalCenter: root; anchors.horizontalCenter: root }
+                                AnchorChanges { target: rec; anchors.verticalCenter: root.anchors.verticalCenter; anchors.horizontalCenter: root.anchors.horizontalCenter }
                             }
                         }
                     }}
@@ -221,7 +225,7 @@ ActivityBase {
                     GCText{
                         anchors.horizontalCenter: parent.horizontalCenter
                         fontSize: largeSize
-                        text: "Numbers"
+                        text: qsTr("Numbers")
                     }
                 }
             }
@@ -234,6 +238,7 @@ ActivityBase {
                     height:100
                     MouseArea{
                         id:mousearea
+                        //anchors.fill:rec2
                         width: 100
                         height: 100
                         property Rectangle obj: rec2
@@ -248,7 +253,7 @@ ActivityBase {
                             width:100
                             height: 100
                             color:"green"
-                            property int datavalue: modelData
+                            property var datavalue: modelData
                             Drag.active: mousearea.drag.active
                             Drag.keys: [ "number" ]
                             Drag.hotSpot.x: 50
@@ -256,7 +261,7 @@ ActivityBase {
                             GCText{
                                 anchors.horizontalCenter: parent.horizontalCenter
                                 anchors.verticalCenter: parent.verticalCenter
-                                text: modelData
+                                text:Number(modelData).toString()
                                 fontSize: mediumSize
                             }
 
@@ -264,7 +269,7 @@ ActivityBase {
                             states: State {
                                 when: mousearea.drag.active
                                 ParentChange { target: rec2; parent: root2 }
-                                AnchorChanges { target: rec2; anchors.verticalCenter: root2; anchors.horizontalCenter: root2 }
+                                AnchorChanges { target: rec2; anchors.verticalCenter: root2.anchors.verticalCenter; anchors.horizontalCenter: root2.anchors.horizontalCenter }
                             }
                         }
                     }
@@ -298,10 +303,7 @@ ActivityBase {
 
                     onDropped: {
                         dragTarget.present=Qt.binding(function() { return true })
-                        //dragTarget.visible=Qt.binding(function() { return false })
                         dragTarget.keys="not_allowed"
-
-                        //console.log(dragTarget.present)
                         if(index==1)
                         {
                             var p=dragTarget.children[1]
@@ -319,39 +321,35 @@ ActivityBase {
                             switch (row4.children[1].children[1].obj.operation) {
                             case "+":
                                 console.log(row4.children[0].children[1].obj.datavalue+row4.children[2].children[1].obj.datavalue);
-                                dragTarget.calculated_value=Qt.binding(function() { return row4.children[0].children[1].obj.datavalue+row4.children[2].children[1].obj.datavalue })
+                                dragTarget.calculated_value=row4.children[0].children[1].obj.datavalue+row4.children[2].children[1].obj.datavalue
                                 break;
                             case "-":
                                 console.log(row4.children[0].children[1].obj.datavalue-row4.children[2].children[1].obj.datavalue);
-                                dragTarget.calculated_value=Qt.binding(function() { return row4.children[0].children[1].obj.datavalue-row4.children[2].children[1].obj.datavalue })
+                                dragTarget.calculated_value=row4.children[0].children[1].obj.datavalue-row4.children[2].children[1].obj.datavalue
                                 break;
                             case "/":
                                 console.log(row4.children[0].children[1].obj.datavalue/row4.children[2].children[1].obj.datavalue);
-                                dragTarget.calculated_value=Qt.binding(function() { return row4.children[0].children[1].obj.datavalue/row4.children[2].children[1].obj.datavalue })
+                                dragTarget.calculated_value=row4.children[0].children[1].obj.datavalue/row4.children[2].children[1].obj.datavalue
                                 break;
                             default:
                                 console.log(row4.children[0].children[1].obj.datavalue*row4.children[2].children[1].obj.datavalue);
-                                dragTarget.calculated_value=Qt.binding(function() { return row4.children[0].children[1].obj.datavalue*row4.children[2].children[1].obj.datavalue })
+                                dragTarget.calculated_value=row4.children[0].children[1].obj.datavalue*row4.children[2].children[1].obj.datavalue
 
                             }
-                            row4.children[5].children[0].text=dragTarget.calculated_value
+                            row4.children[5].children[0].text=Number(dragTarget.calculated_value).toString()
                             if(dragTarget.calculated_value==items.guesscount)
                             {
 
-                                row4.children[5].children[0].text=dragTarget.calculated_value;
+                                row4.children[5].children[0].text=Number(dragTarget.calculated_value).toString()
                                 if(items.question_no==3){
                                     items.bonus.good("smiley");}
-                                if(items.question_no<4)
+                                if(items.question_no<3)
                                 {
                                     timer.start();
+                                    //items.bonus.good("flower")
 
-                                    //items.question_no= Qt.binding(function() { return items.question_no+1 });
                                 }
-                                //activity.start.connect(start)
 
-
-                                //items.operators=Qt.binding(function() { return Activity.images })
-                                //row4.children[1].children[1].obj.operation
                             }
 
                         }
@@ -386,6 +384,7 @@ ActivityBase {
                         height: 100
                         color:"transparent"
                         border.color: "black"
+                        border.width: 5
                         anchors.fill: parent
                         GCText{
                             anchors.horizontalCenter: parent.horizontalCenter
@@ -437,7 +436,7 @@ ActivityBase {
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     fontSize: mediumSize
-                    text:""
+                    text:Number(0).toString()
                 }
 
                 radius: 20.0
@@ -446,18 +445,18 @@ ActivityBase {
         }
 
 
-            Timer {
-                id:timer
-                interval: 1500
-                repeat: false
-                onTriggered: {
-                    items.question_no= Qt.binding(function() { return items.question_no+1 })
-                    items.operators=Activity.images
-                    result.children[0].text=" "
+        Timer {
+            id:timer
+            interval: 1500
+            repeat: false
+            onTriggered: {
+                items.operators=Activity.images
+                result.children[0].text=Number(0).toString()
+                Activity.run()
             }
 
+        }
     }
-}
 
 
 }
