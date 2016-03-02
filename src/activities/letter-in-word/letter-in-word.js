@@ -43,6 +43,7 @@ var words;
 var items;
 var dataset = null;
 var frequency;
+var incorrectFlag = false;
 
 function start(_items)
 {
@@ -54,54 +55,18 @@ function start(_items)
     // register the voices for the locale
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
     GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
-    console.log('yo yo yo  *************')
     loadDataset();
-    console.log('Dataset:')
-    console.log(dataset);
+    //console.log('Dataset:')
+    //console.log(dataset);
     levels = Lang.getAllLessons(dataset)
     currentLevel = 0;
     currentSubLevel = 0;
     maxLevel = levels.length;
-    console.log('Max num of levels')
-    console.log(maxLevel);
+    //console.log('Max num of levels')
+    //console.log(maxLevel);
     initLevel();
 }
 
-/*
-function validateLevels(levels)
-{
-    var i;
-    for (i = 0; i < levels.length; i++) {
-        if (undefined === levels[i].questions
-            || typeof levels[i].questions != "string"
-            || levels[i].questions.length < 1
-            || typeof levels[i].words != "object"
-            || levels[i].words.length < 1)
-            return false;
-    }
-    if (i < 1)
-        return false;
-    return true;
-}
-
-function loadLevels()
-{
-    var ret;
-    var filename = GCompris.ApplicationInfo.getLocaleFilePath(url + "levels/levels-$LOCALE.json");
-    levels = items.parser.parseFromUrl(filename);
-    if (levels == null) {
-        console.warn("Letter-in-word: Invalid levels file " + filename);
-        // fallback to default Latin (levels-en.json) file:
-        levels = items.parser.parseFromUrl(defaultLevelsFile);
-        if (levels == null) {
-            console.error("Letter-in-word: Invalid default levels file "
-                + defaultLevelsFile + ". Can't continue!");
-            // any way to error-exit here?
-            return;
-        }
-    }
-}
-*/
 
 function loadDataset()
 {
@@ -112,7 +77,7 @@ function loadDataset()
     dataset = Lang.load(items.parser, resourceUrl,
                         GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
                         "content-"+ locale +".json")
-    console.log('** Came here')
+    //console.log('** Came here')
     // If dataset is empty, we try to load from short locale
     // and if not present again, we switch to default one
     var localeUnderscoreIndex = locale.indexOf('_')
@@ -128,7 +93,7 @@ function loadDataset()
                             GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
                             "content-"+localeShort+ ".json")
     }
-    console.log('** Came here 2')
+    //console.log('** Came here 2')
 
     if(!dataset) {
         // English fallback
@@ -136,7 +101,7 @@ function loadDataset()
                             GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
                             "content-en.json")
     }
-    console.log('** Came here 3')
+    //console.log('** Came here 3')
 
 
 
@@ -163,7 +128,7 @@ function shuffleString(s)
 
 function initLevel() {
     items.bar.level = currentLevel + 1;
-    if (currentSubLevel == 0) {
+    if (currentSubLevel == 0 && !incorrectFlag) {
         level = levels[currentLevel];
         words = Lang.getLessonWords(dataset, level);
         Core.shuffle(words);
@@ -186,6 +151,8 @@ function initLevel() {
     } else {
         items.score.currentSubLevel = currentSubLevel + 1;
     }
+
+    incorrectFlag = false;
 
     for(var i = 0; i < words.length; i++){
         items.wordsModel.setProperty(i, "selected", false);
@@ -245,22 +212,21 @@ function generateQuestions(){
         freqArr.push([character, frequency[character]]);
     }
 
-    freqArr.sort(function(a, b) {return a[1] - b[1]});
+    freqArr.sort(function(a, b) {return b[1] - a[1]});
 
-    /*
+
     for(var i = 0; i < freqArr.length; i++){
         console.log('freq arr')
         console.log(freqArr[i][0])
         console.log(freqArr[i][1])
-    }*/
+    }
 
     var limit = Math.min(10, freqArr.length);
-    console.log(freqArr.length)
-    console.log(limit)
+    //console.log(freqArr.length)
+    //console.log(limit)
     for(var i = 0; i < limit; i++){
         ques.push(freqArr[i][0])
     }
-    console.log('bablu shuru ho jaa')
     /*for(var i = 0; i < ques.length; i++){
         console.log('bablu')
         console.log(ques[i])
@@ -321,13 +287,36 @@ function checkAnswer()
 
 function checkWord(index)
 {
+    var checkFlag = false;
     var modelEntry = items.wordsModel.get(index);
     for(var i = 0; i < modelEntry.spelling.length; i++){
         if(currentLetter ==  modelEntry.spelling.charAt(i)){
             items.wordsModel.setProperty(index, "selected", true);
             checkAnswer();
-            return true;
+            checkFlag = true;
+            break;
         }
     }
-    return false;
+    if(checkFlag == true){
+        return true;
+    }
+    else{
+        items.bonus.bad("flower");
+        return  false;
+    }
+}
+
+function incorrectSelection(){
+    //console.log('Entered /*******************************');
+    //console.log(typeof(questions))
+    //console.log('Before')
+    //console.log(questions)
+    incorrectFlag = true;
+    var quesLen = questions.length;
+    questions = questions.slice(0,currentSubLevel) + questions.slice(currentSubLevel+1,quesLen) + questions.charAt(currentSubLevel);
+    //console.log('After')
+    //console.log(questions);
+    currentSubLevel--;
+    nextSubLevel();
+    //console.log('Exited /*******************************');
 }

@@ -186,7 +186,11 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            Component.onCompleted: win.connect(Activity.nextSubLevel)
+            interval: 1000
+            Component.onCompleted: {
+                win.connect(Activity.nextSubLevel);
+                loose.connect(Activity.incorrectSelection);
+            }
         }
 
         BarButton {
