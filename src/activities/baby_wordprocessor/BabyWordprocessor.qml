@@ -163,10 +163,21 @@ ActivityBase {
                         if(text.charCodeAt(last) === 8233)
                             break
                     }
+                    // If the user did not enter anything on the line
+                    var firstline = false
+                    if (first == last) {
+                        if (first == 0) {
+                            firstline = true
+                            insert(0, 'a')
+                            last = 1
+                        } else
+                            first--
+                    }
                     var line = getText(first, last)
                     remove(first, last)
                     insert(first, '<' + tag + '>' + line + '</' + tag + '>')
                     cursorPosition = initialPosition
+                    if (firstline) remove(0, 1)
                 }
             }
         }
