@@ -127,6 +127,7 @@ function shuffleString(s)
 }
 
 function initLevel() {
+    var componentsArr;
     items.bar.level = currentLevel + 1;
     if (currentSubLevel == 0 && !incorrectFlag) {
         level = levels[currentLevel];
@@ -142,10 +143,14 @@ function initLevel() {
         questions = shuffleString(tempQuestions);
         items.wordsModel.clear();
         for (var i = 0; i < words.length; i++) {
+            componentsArr = [];
+            componentsArr.push({"textdata": words[i].translatedTxt});
+            //console.log(componentsArr.length)
             items.wordsModel.append({
                 "spelling": words[i].translatedTxt,
                 "imgurl": words[i].image,
-                "selected": false
+                "selected": false,
+                "components": componentsArr
             });
         }
     } else {
@@ -156,6 +161,7 @@ function initLevel() {
 
     for(var i = 0; i < words.length; i++){
         items.wordsModel.setProperty(i, "selected", false);
+
     }
 
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale);
@@ -214,12 +220,12 @@ function generateQuestions(){
 
     freqArr.sort(function(a, b) {return b[1] - a[1]});
 
-
+    /*
     for(var i = 0; i < freqArr.length; i++){
         console.log('freq arr')
         console.log(freqArr[i][0])
         console.log(freqArr[i][1])
-    }
+    }*/
 
     var limit = Math.min(10, freqArr.length);
     //console.log(freqArr.length)
@@ -298,6 +304,14 @@ function checkWord(index)
         }
     }
     if(checkFlag == true){
+
+
+        //items.wordsModel.setProperty(index, "components", componenetsArr)
+        //items.wordsModel.setProperty(index, "imgurl","qrc:/gcompris/src/activities/lang/resource/words_sample/one.png")
+
+        /*for(var i = 0; i < componenetsArr.length; i++){
+            console.log(componenetsArr[i].textdata)
+        }*/
         return true;
     }
     else{
