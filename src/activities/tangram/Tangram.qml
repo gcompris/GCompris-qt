@@ -175,7 +175,7 @@ ActivityBase {
                 property bool flippable: modelData.flippable
                 property bool rotable: modelData.moduloRotation != 0
 
-                // After a drag the [x, y] positions are adressed directly breaking our
+                // After a drag the [x, y] positions are addressed directly breaking our
                 // binding. Call me to reset the binding.
                 function restoreBindings() {
                     x = Qt.binding(function() { return background.playX + background.playWidth * xRatio - width / 2})
