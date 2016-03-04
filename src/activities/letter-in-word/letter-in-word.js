@@ -180,16 +180,26 @@ function initLevel() {
 
 function calculateFrequency(){
     var freq = [];
+    //regex pattern to detect wether the character is an english alphabet or some accented latin chacarcter
+    var pattern = /[A-Za-z\u00C0-\u017F]/;
     for(var i = 0; i < words.length; i++){
         var currentWord = words[i].translatedTxt;
         for(var j = 0; j < currentWord.length; j++){
             var character = currentWord.charAt(j);
-            if(freq[character]){
-                freq[character]++;
+            //consider the character if and only if it is an alphabet or an accented latin chataracter
+            if(pattern.test(character)){
+                if(freq[character]){
+                    freq[character]++;
+                }
+                else{
+                    freq[character] = 1;
+                }
+                //console.log('Character FOUND *****' + character)
             }
             else{
-                freq[character] = 1;
+                //console.log('Character NOT found *****' + character);
             }
+
         }
     }
     /*
