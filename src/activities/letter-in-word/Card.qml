@@ -181,11 +181,11 @@ Item {
                             if(spelling.charAt(i) == Activity.currentLetter){
                                 tempword = spelling.substring(j,i);
                                 if(i!=j){
-                                    console.log(tempword)
+                                    //console.log(tempword)
                                     components.append({"textdata": tempword})
                                 }
                                 components.append({"textdata": Activity.currentLetter});
-                                console.log(Activity.currentLetter)
+                                //console.log(Activity.currentLetter)
                                 //console.log('qwe:')
                                 //console.log(tempword)
                                 j = i + 1;
@@ -194,12 +194,12 @@ Item {
                         if(j < spelling.length){
                             tempword = spelling.substring(j, spelling.length);
                             components.append({"textdata": tempword})
-                            console.log(tempword)
+                            //console.log(tempword)
                             //console.log(tempword)
                             //console.log(componenetsArr.length)
                         }
-                        console.log('*/*/')
-                        console.log(components.length)
+                        //console.log('*/*/')
+                        //console.log(components.length)
 
 
 

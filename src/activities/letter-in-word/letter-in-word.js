@@ -127,6 +127,7 @@ function shuffleString(s)
 }
 
 function initLevel() {
+    //console.log("**********Current level: " + currentLevel)
     var componentsArr;
     items.bar.level = currentLevel + 1;
     if (currentSubLevel == 0 && !incorrectFlag) {
@@ -167,9 +168,10 @@ function initLevel() {
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale);
     currentLetter = questions[currentSubLevel];
     items.question = currentLetter
-    if(currentLevel <= 2){
-        items.animateX.restart();
-    }
+    items.animateX.restart();
+    //if(currentLevel <= 2){
+
+    //}
     if (GCompris.ApplicationSettings.isAudioVoicesEnabled &&
             GCompris.DownloadManager.haveLocalResource(
                 GCompris.DownloadManager.getVoicesResourceForLocale(locale))) {

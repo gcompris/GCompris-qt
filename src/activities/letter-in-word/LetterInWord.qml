@@ -242,9 +242,11 @@ ActivityBase {
                 target: planeText
                 properties: "x"
                 from: - planeText.width
-                to: background.width
-                duration: 11000
-                easing.type: Easing.OutInCirc
+                //to:background.width/2 - planeText.width/2
+                to: bar.level <= 2 ? background.width/4 : background.width
+                duration: bar.level <= 2 ? 5500: 11000
+                //easing.type: Easing.OutQuad
+                easing.type: bar.level <= 2 ? Easing.OutQuad: Easing.OutInCirc
             }
         }
 
