@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2016 RAHUL YADAV <rahulyadav170923@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,18 +18,18 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "guesscount/Guesscount.qml"
-  difficulty: 1
-  icon: "guesscount/guesscount.svg"
-  author: "Rahul Yadav &lt;rahulyadav170923@gmail.com&gt;"
-  demo: true
-  title: qsTr("Guessing the algebraic expression for the answer")
-  description:qsTr("guess the algebraic expression and click on the buttons to add them.")
-  //intro: "guesscount activity"
-  goal: qsTr("To teach algebra")
-  prerequisite: qsTr("knowledge of arithematic oprations")
-  manual: ""
-  credit: ""
-  section: "math"
-  createdInVersion:1
+    name: "guesscount/Guesscount.qml"
+    difficulty: 1
+    icon: "guesscount/guesscount.svg"
+    author: "Your Name &lt;yy@zz.org&gt;"
+    demo: true
+    title: qsTr("Guessing the algebraic expression for the answer")
+    description:qsTr("guess the algebraic expression and click on the buttons to add them.")
+    //intro: "guesscount activity"
+    goal: qsTr("To teach algebra")
+    prerequisite: qsTr("knowledge of arithematic oprations")
+    manual: ""
+    credit: ""
+    section: "math"
+    createdInVersion:1
 }
