@@ -70,9 +70,7 @@ ActivityBase {
             property string question
         }
 
-        onVoiceError: {
-            repeatItem.visible = false
-        }
+
 
         onStart: {
             activity.audioVoices.error.connect(voiceError)

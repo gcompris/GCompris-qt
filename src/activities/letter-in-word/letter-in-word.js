@@ -76,7 +76,7 @@ function loadDataset()
 
     dataset = Lang.load(items.parser, resourceUrl,
                         GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
-                        "content-"+ locale +".json")
+                                                               "content-"+ locale +".json")
     //console.log('** Came here')
     // If dataset is empty, we try to load from short locale
     // and if not present again, we switch to default one
@@ -91,7 +91,7 @@ function loadDataset()
         }
         dataset = Lang.load(items.parser, resourceUrl,
                             GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
-                            "content-"+localeShort+ ".json")
+                                                                   "content-"+localeShort+ ".json")
     }
     //console.log('** Came here 2')
 
@@ -99,7 +99,7 @@ function loadDataset()
         // English fallback
         dataset = Lang.load(items.parser, resourceUrl,
                             GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
-                            "content-en.json")
+                                                                   "content-en.json")
     }
     //console.log('** Came here 3')
 
@@ -109,7 +109,7 @@ function loadDataset()
 
 function stop()
 {
-     items.animateX.stop()
+    items.animateX.stop()
 }
 
 function shuffleString(s)
@@ -148,11 +148,11 @@ function initLevel() {
             componentsArr.push({"textdata": words[i].translatedTxt});
             //console.log(componentsArr.length)
             items.wordsModel.append({
-                "spelling": words[i].translatedTxt,
-                "imgurl": words[i].image,
-                "selected": false,
-                "components": componentsArr
-            });
+                                        "spelling": words[i].translatedTxt,
+                                        "imgurl": words[i].image,
+                                        "selected": false,
+                                        "components": componentsArr
+                                    });
         }
     } else {
         items.score.currentSubLevel = currentSubLevel + 1;
@@ -169,20 +169,13 @@ function initLevel() {
     currentLetter = questions[currentSubLevel];
     items.question = currentLetter
     items.animateX.restart();
-    //if(currentLevel <= 2){
 
-    //}
     if (GCompris.ApplicationSettings.isAudioVoicesEnabled &&
             GCompris.DownloadManager.haveLocalResource(
                 GCompris.DownloadManager.getVoicesResourceForLocale(locale))) {
         items.audioVoices.silence(100)
         playLetter(currentLetter)
-        items.repeatItem.visible = true
-    } else {
-        // no sound -> show question
-        items.repeatItem.visible = false
     }
-
 }
 
 function calculateFrequency(){

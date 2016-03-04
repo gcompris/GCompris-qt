@@ -28,7 +28,7 @@ import "letter-in-word.js" as Activity
 Item {
     id: cardItem
     width: cardImage.width
-    height: wordPic.height + cardImage.height
+    height: wordPic.height + cardImage.height - 30 * ApplicationInfo.ratio
 
     Image{
         id: wordPic
