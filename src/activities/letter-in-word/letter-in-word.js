@@ -48,22 +48,15 @@ var incorrectFlag = false;
 function start(_items)
 {
     Core.checkForVoices(_items.main);
-
     items = _items;
-
-
     // register the voices for the locale
     var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
     GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
-    loadDataset();
-    //console.log('Dataset:')
-    //console.log(dataset);
+    loadDataset();    
     levels = Lang.getAllLessons(dataset)
     currentLevel = 0;
     currentSubLevel = 0;
     maxLevel = levels.length;
-    //console.log('Max num of levels')
-    //console.log(maxLevel);
     initLevel();
 }
 
@@ -77,7 +70,6 @@ function loadDataset()
     dataset = Lang.load(items.parser, resourceUrl,
                         GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
                                                                "content-"+ locale +".json")
-    //console.log('** Came here')
     // If dataset is empty, we try to load from short locale
     // and if not present again, we switch to default one
     var localeUnderscoreIndex = locale.indexOf('_')
@@ -93,7 +85,6 @@ function loadDataset()
                             GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
                                                                    "content-"+localeShort+ ".json")
     }
-    //console.log('** Came here 2')
 
     if(!dataset) {
         // English fallback
@@ -101,9 +92,6 @@ function loadDataset()
                             GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
                                                                    "content-en.json")
     }
-    //console.log('** Came here 3')
-
-
 
 }
 
@@ -127,7 +115,7 @@ function shuffleString(s)
 }
 
 function initLevel() {
-    //console.log("**********Current level: " + currentLevel)
+
     var componentsArr;
     items.bar.level = currentLevel + 1;
     if (currentSubLevel == 0 && !incorrectFlag) {
@@ -146,7 +134,7 @@ function initLevel() {
         for (var i = 0; i < words.length; i++) {
             componentsArr = [];
             componentsArr.push({"textdata": words[i].translatedTxt});
-            //console.log(componentsArr.length)
+
             items.wordsModel.append({
                                         "spelling": words[i].translatedTxt,
                                         "imgurl": words[i].image,
@@ -193,21 +181,11 @@ function calculateFrequency(){
                 }
                 else{
                     freq[character] = 1;
-                }
-                //console.log('Character FOUND *****' + character)
-            }
-            else{
-                //console.log('Character NOT found *****' + character);
+                }            
             }
 
         }
     }
-    /*
-    for(var i in freq){
-        console.log(i)
-        console.log(freq[i])
-
-    }*/
 
     return freq;
 }
@@ -217,31 +195,16 @@ function generateQuestions(){
     var ques = [];
 
     for(var character in frequency){
-        //console.log('calc freq')
-        //console.log(character)
-        //console.log(frequency[character])
         freqArr.push([character, frequency[character]]);
     }
 
     freqArr.sort(function(a, b) {return b[1] - a[1]});
 
-    /*
-    for(var i = 0; i < freqArr.length; i++){
-        console.log('freq arr')
-        console.log(freqArr[i][0])
-        console.log(freqArr[i][1])
-    }*/
-
     var limit = Math.min(10, freqArr.length);
-    //console.log(freqArr.length)
-    //console.log(limit)
     for(var i = 0; i < limit; i++){
         ques.push(freqArr[i][0])
     }
-    /*for(var i = 0; i < ques.length; i++){
-        console.log('bablu')
-        console.log(ques[i])
-    }*/
+
 
     return ques;
 }
@@ -309,14 +272,6 @@ function checkWord(index)
         }
     }
     if(checkFlag == true){
-
-
-        //items.wordsModel.setProperty(index, "components", componenetsArr)
-        //items.wordsModel.setProperty(index, "imgurl","qrc:/gcompris/src/activities/lang/resource/words_sample/one.png")
-
-        /*for(var i = 0; i < componenetsArr.length; i++){
-            console.log(componenetsArr[i].textdata)
-        }*/
         return true;
     }
     else{
@@ -326,16 +281,9 @@ function checkWord(index)
 }
 
 function incorrectSelection(){
-    //console.log('Entered /*******************************');
-    //console.log(typeof(questions))
-    //console.log('Before')
-    //console.log(questions)
     incorrectFlag = true;
     var quesLen = questions.length;
     questions = questions.slice(0,currentSubLevel) + questions.slice(currentSubLevel+1,quesLen) + questions.charAt(currentSubLevel);
-    //console.log('After')
-    //console.log(questions);
     currentSubLevel--;
     nextSubLevel();
-    //console.log('Exited /*******************************');
 }

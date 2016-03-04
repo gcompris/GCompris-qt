@@ -49,41 +49,14 @@ Item {
         source:  Activity.url + "images/cloud.svg"
         z: (state == 'scaled') ? 1 : -1
 
-        /*ListView{
-                        //anchors.horizontalCenter:parent.horizontalCenter
-                        //anchors.verticalCenter: parent.verticalCenter
-                        model:components
-                        delegate:GCText {
-                            //id: textbox
-
-                            z: 11
-                            //anchors.horizontalCenter:cardImage.horizontalCenter
-                            //anchors.verticalCenter: cardImage.verticalCenter
-
-
-                            text:
-                            font.pointSize: NaN  // need to clear font.pointSize explicitly
-                            font.pixelSize: spelling.length > 5 ? cardImage.width * 0.23 : cardImage.width * 0.30
-                            font.bold: true
-                            style: Text.Outline
-                            styleColor: "#2a2a2a"
-                            color: "white"
-                        }
-                    }*/
         Row{
             anchors.verticalCenter: cardImage.verticalCenter
             Repeater{
-                //anchors.verticalCenter: cardImage.verticalCenter
 
                 model: components
                 GCText {
                     id: textbox
-
                     z: 11
-                    //anchors.horizontalCenter:cardImage.horizontalCenter
-                    //anchors.verticalCenter: cardImage.verticalCenter
-
-
                     text: textdata
                     font.pointSize: NaN  // need to clear font.pointSize explicitly
                     font.pixelSize: spelling.length > 5 ? (spelling.length > 7 ? cardImage.width * 0.19 : cardImage.width * 0.25): cardImage.width * 0.30
@@ -92,26 +65,11 @@ Item {
                     styleColor: "#2a2a2a"
                     color: selected && textdata.length == 1 && textdata == Activity.currentLetter ? "green" : "white"
 
-
                 }
 
             }
 
         }
-
-
-
-        /*
-                    DropShadow {
-                        anchors.fill: textbox
-                        cached: false
-                        horizontalOffset: 1
-                        verticalOffset: 1
-                        radius: 3
-                        samples: 16
-                        color: "#422a2a2a"
-                        source: textbox
-                    }*/
 
         ParticleSystemStarLoader {
             id: particle
@@ -197,27 +155,19 @@ Item {
                     if(spelling.charAt(i) == Activity.currentLetter){
                         tempword = spelling.substring(j,i);
                         if(i!=j){
-                            //console.log(tempword)
+
                             components.append({"textdata": tempword})
                         }
                         components.append({"textdata": Activity.currentLetter});
-                        //console.log(Activity.currentLetter)
-                        //console.log('qwe:')
-                        //console.log(tempword)
+
                         j = i + 1;
                     }
                 }
                 if(j < spelling.length){
                     tempword = spelling.substring(j, spelling.length);
                     components.append({"textdata": tempword})
-                    //console.log(tempword)
-                    //console.log(tempword)
-                    //console.log(componenetsArr.length)
+
                 }
-                //console.log('*/*/')
-                //console.log(components.length)
-
-
 
             } else {
                 failureAnimation.restart()
