@@ -1,10 +1,10 @@
 /* GCompris - guesscount.js
  *
- * Copyright (C) 2015 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 RAHUL YADAV <rahulyadav170923@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *   <PASCAL GEORGES> (V13.11)
+ *   "RAHUL YADAV" <rahulyadav170923@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -23,14 +23,14 @@
 .import QtQuick 2.0 as Quick
 var url = "qrc:/gcompris/src/activities/guesscount/resource/"
 var currentLevel = 0
-var numberOfLevel = 2
+var numberOfLevel = 4
 var items
 var images = [
             ["plus.svg","+"],
             ["minus.svg","-"],
             ["div.svg","/"],
             ["multiply.svg","*"],
-             ]
+        ]
 var dataset=[
             {
                 'level': 1,
@@ -38,7 +38,7 @@ var dataset=[
                     "questions":"3",
                     "numbers":[
                         [[1,2],3],
-                        [[2,3],6],
+                        [[3,1],3],
                         [[9,4],5]
                     ]
 
@@ -50,8 +50,32 @@ var dataset=[
                     "questions":"3",
                     "numbers":[
                         [[6,7],42],
-                        [[8,5],3],
-                        [[10,2],5]
+                        [[8,4],2],
+                        [[10,2,2],10]
+                    ]
+
+                }
+            },
+            {
+                'level': 3,
+                "data": {
+                    "questions":"3",
+                    "numbers":[
+                        [[11,7],77],
+                        [[8,16,4],2],
+                        [[10,2,2,3],7]
+                    ]
+
+                }
+            },
+            {
+                'level': 4,
+                "data": {
+                    "questions":"3",
+                    "numbers":[
+                        [[9,7],63],
+                        [[4,2,9],17],
+                        [[15,3,2,3],21]
                     ]
 
                 }
@@ -63,50 +87,120 @@ function start(items_) {
     items = items_
     currentLevel = 0
     initLevel()
-    }
+}
 
 function stop() {
 }
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    items.operators=images
+    items.operators=shuffle(images)
     items.total_questions=dataset[currentLevel]["data"]["questions"]
     items.question_no=1
     items.data=dataset[currentLevel]["data"]["numbers"][items.question_no-1][0]
     items.guesscount=dataset[currentLevel]["data"]["numbers"][items.question_no-1][1]
+    items.row5.visible=visibility(2)
+    items.row6.visible=visibility(3)
+    items.row5.enabled=false
+    items.row6.enabled=false
+    var no_of_rows=dataset[currentLevel]["data"]["numbers"][items.question_no-1][0].length-2
+    if(no_of_rows==0)
+    {
+        items.row4.children[5].color="orange"
+    }
+    else if(no_of_rows==1)
+    {
+        items.row4.children[5].color="yellow"
+        items.row5.children[5].color="orange"
+    }
+    else
+    {
+        items.row4.children[5].color="yellow"
+        items.row5.children[5].color="lightblue"
+        items.row6.children[5].color="orange"
+    }
 
 }
 
 function run() {
 
     items.question_no=items.question_no+1
-    items.operators=images
-    //console.log(items.question_no)
+    items.operators=shuffle(images)
     items.data=dataset[currentLevel]["data"]["numbers"][items.question_no-1][0]
     items.guesscount=dataset[currentLevel]["data"]["numbers"][items.question_no-1][1]
+    items.row5.visible=visibility(2)
+    items.row6.visible=visibility(3)
+    items.row5.enabled=false
+    items.row6.enabled=false
+    var no_of_rows=dataset[currentLevel]["data"]["numbers"][items.question_no-1][0].length-2
+    if(no_of_rows==0)
+    {
+        items.row4.children[5].color="orange"
+    }
+    else if(no_of_rows==1)
+    {
+        items.row4.children[5].color="yellow"
+        items.row5.children[5].color="orange"
+    }
+    else
+    {
+        items.row4.children[5].color="yellow"
+        items.row5.children[5].color="lightblue"
+        items.row6.children[5].color="orange"
+    }
+
 }
 
 function nextLevel() {
-    if(numberOfLevel <= ++currentLevel ) {
+    if(numberOfLevel <= ++currentLevel )
+    {
         currentLevel = 0
     }
     initLevel();
 }
 
 function previousLevel() {
-    if(--currentLevel < 0) {
+    if(--currentLevel < 0)
+    {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
 }
 
 
-function decidekeys(index){
-var keys=[]
-    if(index==1)
-        keys=["operator"]
+function decidekeys(index,row){
+    var keys=[]
+    if(row==1)
+    {
+        if(index==1)
+            keys=["operator"]
+        else
+            keys=["number"]
+        return keys
+    }
     else
-        keys=["number"]
-   return keys
+    {
+        if(index==0)
+            keys=["operator"]
+        else
+            keys=["number"]
+        return keys
+    }
+
 }
+
+function visibility(row){
+    if(row<dataset[currentLevel]["data"]["numbers"][items.question_no-1][0].length)
+        return true
+    return false
+}
+
+function shuffle(images){
+    var temp=images[0]
+    images[0]=images[1]
+    images[1]=images[2]
+    images[2]=images[3]
+    images[3]=temp
+    return images
+}
+
