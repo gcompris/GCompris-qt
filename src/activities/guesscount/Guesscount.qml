@@ -1,10 +1,10 @@
 /* GCompris - guesscount.qml
  *
- * Copyright (C) 2015 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 RAHUL YADAV <rahulyadav170923@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   <PASCAL GEORGES> (V13.11)
+ *   RAHUL YADAV <rahulyadav170923@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -35,6 +35,7 @@ ActivityBase {
         signal start
         signal stop
 
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -53,7 +54,9 @@ ActivityBase {
             property int total_questions
             property var data
             property int guesscount
-
+            property alias row4:row4
+            property alias row5:row5
+            property alias row6:row6
 
         }
 
@@ -104,7 +107,7 @@ ActivityBase {
                 height: 100;
                 radius: 20.0;
                 color: "steelblue"
-                anchors.margins: 5
+                anchors.leftMargin: 100
                 GCText{
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
@@ -135,6 +138,7 @@ ActivityBase {
                 top:row1.bottom
                 topMargin: 30
             }
+
             Rectangle{
                 id:operator
                 width:parent.width/2
@@ -145,7 +149,7 @@ ActivityBase {
                     width:400;
                     height: 100;
                     radius: 20.0;
-                    color: "#024c1c"
+                    color: "red"
                     GCText{
                         anchors.horizontalCenter: parent.horizontalCenter
                         fontSize: largeSize
@@ -200,7 +204,8 @@ ActivityBase {
                                 AnchorChanges { target: rec; anchors.verticalCenter: root.anchors.verticalCenter; anchors.horizontalCenter: root.anchors.horizontalCenter }
                             }
                         }
-                    }}
+                    }
+                }
             }
         }
         // row 3
@@ -221,7 +226,7 @@ ActivityBase {
                     width:400;
                     height: 100;
                     radius: 20.0;
-                    color: "#024c1c"
+                    color: "green"
                     GCText{
                         anchors.horizontalCenter: parent.horizontalCenter
                         fontSize: largeSize
@@ -288,6 +293,8 @@ ActivityBase {
                 left:parent.left
                 leftMargin: 300
             }
+            property bool locked
+            property var calculated_value
             Repeater{
                 id:repeat
                 model:3
@@ -297,7 +304,7 @@ ActivityBase {
                     height: 100
                     property bool present
                     property var mousearea: dragTarget.children[1]
-                    property var calculated_value
+
 
 
 
@@ -308,12 +315,14 @@ ActivityBase {
                         {
                             var p=dragTarget.children[1]
                             console.log(p.obj.operation)
+
                         }
                         else
                         {
                             var p=dragTarget.children[1]
                             console.log(p.obj.datavalue)
                         }
+
                         var m=row4.children[0]
 
                         if(row4.children[0].present && row4.children[1].present && row4.children[2].present)
@@ -321,38 +330,43 @@ ActivityBase {
                             switch (row4.children[1].children[1].obj.operation) {
                             case "+":
                                 console.log(row4.children[0].children[1].obj.datavalue+row4.children[2].children[1].obj.datavalue);
-                                dragTarget.calculated_value=row4.children[0].children[1].obj.datavalue+row4.children[2].children[1].obj.datavalue
+                                row4.calculated_value=row4.children[0].children[1].obj.datavalue+row4.children[2].children[1].obj.datavalue
                                 break;
                             case "-":
                                 console.log(row4.children[0].children[1].obj.datavalue-row4.children[2].children[1].obj.datavalue);
-                                dragTarget.calculated_value=row4.children[0].children[1].obj.datavalue-row4.children[2].children[1].obj.datavalue
+                                row4.calculated_value=row4.children[0].children[1].obj.datavalue-row4.children[2].children[1].obj.datavalue
                                 break;
                             case "/":
                                 console.log(row4.children[0].children[1].obj.datavalue/row4.children[2].children[1].obj.datavalue);
-                                dragTarget.calculated_value=row4.children[0].children[1].obj.datavalue/row4.children[2].children[1].obj.datavalue
+                                row4.calculated_value=row4.children[0].children[1].obj.datavalue/row4.children[2].children[1].obj.datavalue
                                 break;
                             default:
                                 console.log(row4.children[0].children[1].obj.datavalue*row4.children[2].children[1].obj.datavalue);
-                                dragTarget.calculated_value=row4.children[0].children[1].obj.datavalue*row4.children[2].children[1].obj.datavalue
+                                row4.calculated_value=row4.children[0].children[1].obj.datavalue*row4.children[2].children[1].obj.datavalue
 
                             }
-                            row4.children[5].children[0].text=Number(dragTarget.calculated_value).toString()
-                            if(dragTarget.calculated_value==items.guesscount)
+                            row4.children[5].children[0].text=Number(row4.calculated_value).toString()
+                            row5.enabled=true
+
+                            if(row4.calculated_value==items.guesscount)
                             {
 
-                                row4.children[5].children[0].text=Number(dragTarget.calculated_value).toString()
+                                row4.children[5].children[0].text=Number(row4.calculated_value).toString()
                                 if(items.question_no==3){
-                                    items.bonus.good("smiley");}
-                                if(items.question_no<3)
-                                {
-                                    timer.start();
-                                    //items.bonus.good("flower")
+                                    items.bonus.good("smiley");
 
                                 }
+                                if(items.question_no<3 && !Activity.visibility(2))
+                                {
+                                    timer.start();
+                                }
+
+
 
                             }
 
                         }
+
 
 
 
@@ -361,15 +375,30 @@ ActivityBase {
                     onExited: {
                         //console.log("deleted")
                         dragTarget.present=Qt.binding(function() { return false })
-                        dragTarget.keys=Activity.decidekeys(index)
+                        dragTarget.keys=Activity.decidekeys(index,1)
+                        result.children[0].text=" "
+                        if(row4.children[0].present==false || row4.children[1].present==false || row4.children[2].present==false)
+                        {
+                            row5.enabled=false
+                        }
+
+
+
 
 
                     }
                     onChildrenChanged: {
                         if(dragTarget.present==true)
-                        {//console.log("deleted")
+                        {
+                            //console.log("deleted")
                             dragTarget.present=Qt.binding(function() { return false })
-                            dragTarget.keys=Activity.decidekeys(index)
+                            dragTarget.keys=Activity.decidekeys(index,1)
+                            result.children[0].text=" "
+                            if(row4.children[0].present==false || row4.children[1].present==false || row4.children[2].present==false)
+                            {
+                                row5.enabled=false
+                            }
+
                         }
                     }
 
@@ -383,7 +412,7 @@ ActivityBase {
                         width:100
                         height: 100
                         color:"transparent"
-                        border.color: "black"
+                        border.color: index==1 ? "red" : "green"
                         border.width: 5
                         anchors.fill: parent
                         GCText{
@@ -399,13 +428,13 @@ ActivityBase {
                                 when: dragTarget.containsDrag
                                 PropertyChanges {
                                     target: dropRectangle
-                                    border.color:"red"
+                                    border.color:"white"
                                 }
 
                             }
                         ]
                         Component.onCompleted: {
-                            dragTarget.keys = Activity.decidekeys(index)
+                            dragTarget.keys = Activity.decidekeys(index,1)
                         }
 
 
@@ -430,13 +459,429 @@ ActivityBase {
                 id:result
                 width:100
                 height: 100
-                color:"white"
                 border.color: "black"
                 GCText{
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
                     fontSize: mediumSize
-                    text:Number(0).toString()
+                    text:" "
+                }
+
+                radius: 20.0
+            }
+
+        }
+
+        //row 5
+        Row{
+            id:row5
+            spacing: 50
+            visible:true
+            anchors{
+                top:row4.bottom
+                topMargin:10
+                left:parent.left
+                leftMargin: 300
+            }
+            property var calculated_value
+            Rectangle {
+                id:row4_result
+                width:100
+                height: 100
+                color:result.color
+                border.color: "black"
+                GCText{
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    fontSize: mediumSize
+                    text:result.children[0].text
+                }
+
+                radius: 20.0
+            }
+            Repeater{
+                id:row5repeat
+                model:2
+                DropArea {
+                    id: row5dragTarget
+                    width: 100
+                    height: 100
+                    property bool present
+                    property var mousearea: row5dragTarget.children[1]
+
+                    onDropped: {
+                        row5dragTarget.present=Qt.binding(function() { return true })
+                        row5dragTarget.keys="not_allowed"
+                        if(index==1)
+                        {
+                            var p=row5dragTarget.children[1]
+                            console.log(p.obj.datavalue)
+                            row4.enabled=false
+                        }
+                        else
+                        {
+                            var p=row5dragTarget.children[1]
+                            console.log(p.obj.operation)
+                            console.log(row4.enabled)
+                            row4.enabled=false
+
+                        }
+                        var m=row5.children[0]
+
+                        if(row5.children[1].present && row5.children[2].present)
+                        {
+                            switch (row5.children[1].children[1].obj.operation) {
+                            case "+":
+                                console.log(row4.calculated_value+row5.children[2].children[1].obj.datavalue);
+                                row5.calculated_value=row4.calculated_value+row5.children[2].children[1].obj.datavalue
+                                break;
+                            case "-":
+                                console.log(row4.calculated_value-row5.children[2].children[1].obj.datavalue);
+                                row5.calculated_value=row4.calculated_value-row5.children[2].children[1].obj.datavalue
+                                break;
+                            case "/":
+                                console.log(row4.calculated_value/row5.children[2].children[1].obj.datavalue);
+                                row5.calculated_value=row4.calculated_value/row5.children[2].children[1].obj.datavalue
+                                break;
+                            default:
+                                console.log(row4.calculated_value*row5.children[2].children[1].obj.datavalue);
+                                row5.calculated_value=row4.calculated_value*row5.children[2].children[1].obj.datavalue
+
+                            }
+                            row5.children[5].children[0].text=Number(row5.calculated_value).toString()
+                            row6.enabled=true
+                            if(row5.calculated_value==items.guesscount)
+                            {
+                                row5.children[5].children[0].text=Number(row5.calculated_value).toString()
+                                if(items.question_no==3)
+                                {
+                                    items.bonus.good("smiley")
+                                }
+                                if(items.question_no<3)
+                                {
+                                    timer.start();
+                                }
+
+                            }
+
+                        }
+
+
+
+
+                    }
+                    onExited: {
+                        //console.log("deleted")
+                        row5dragTarget.present=Qt.binding(function() { return false })
+                        row5dragTarget.keys=Activity.decidekeys(index,2)
+                        if(row5.children[1].present==false && row5.children[2].present==false)
+                        {
+                            row4.enabled=true
+
+                        }
+                        if(row5.children[1].present==false || row5.children[2].present==false)
+                        {
+
+                            row5result.children[0].text=" "
+                        }
+                        if(row5.children[1].present==false || row5.children[2].present==false)
+                        {
+                            row6.enabled=false
+
+                        }
+
+
+
+                    }
+                    onChildrenChanged: {
+                        if(row5dragTarget.present==true)
+                        {
+                            //console.log("deleted")
+                            row5dragTarget.present=Qt.binding(function() { return false })
+                            row5dragTarget.keys=Activity.decidekeys(index,2)
+                            if(row5.children[1].present==false && row5.children[2].present==false)
+                            {
+                                row4.enabled=true
+                            }
+                            if(row5.children[1].present==false || row5.children[2].present==false)
+                            {
+                                row5result.children[0].text=" "
+                            }
+                            if(row5.children[1].present==false || row5.children[2].present==false)
+                            {
+                                row6.enabled=false
+
+                            }
+                        }
+                    }
+
+
+
+
+
+
+                    Rectangle {
+                        id:row5dropRectangle
+                        width:100
+                        height: 100
+                        color:"transparent"
+                        border.color: index==0 ? "red" : "green"
+                        border.width: 5
+                        anchors.fill: parent
+                        GCText{
+                            anchors.horizontalCenter: parent.horizontalCenter
+                            anchors.verticalCenter: parent.verticalCenter
+                            fontSize: mediumSize
+                        }
+
+                        radius: 20.0
+
+                        states: [
+                            State {
+                                when: row5dragTarget.containsDrag
+                                PropertyChanges {
+                                    target: row5dropRectangle
+                                    border.color:"white"
+                                }
+
+                            }
+                        ]
+                        Component.onCompleted: {
+                            row5dragTarget.keys = Activity.decidekeys(index,2)
+                        }
+
+
+
+                    }
+
+                }
+            }
+
+            Rectangle {
+                width:100
+                height: 100
+                color:"transparent"
+                Image {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    source: Activity.url+"equal.svg"
+                }
+                radius: 20.0
+            }
+            Rectangle {
+                id:row5result
+                width:100
+                height: 100
+                border.color: "black"
+                GCText{
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    fontSize: mediumSize
+                    text:" "
+                }
+
+                radius: 20.0
+            }
+
+        }
+
+        //row 6
+        Row{
+            id:row6
+            spacing: 50
+            visible:true
+            anchors{
+                top:row5.bottom
+                topMargin:10
+                left:parent.left
+                leftMargin: 300
+            }
+            property var calculated_value
+            Rectangle {
+                id:row5_result
+                width:100
+                height: 100
+                border.color: "black"
+                GCText{
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    fontSize: mediumSize
+                    text:row5result.children[0].text
+                }
+
+                radius: 20.0
+            }
+            Repeater{
+                id:row6repeat
+                model:2
+                DropArea {
+                    id: row6dragTarget
+                    width: 100
+                    height: 100
+                    property bool present
+                    property var mousearea: row6dragTarget.children[1]
+
+
+
+
+                    onDropped: {
+                        row6dragTarget.present=Qt.binding(function() { return true })
+                        row6dragTarget.keys="not_allowed"
+                        if(index==1)
+                        {
+                            var p=row6dragTarget.children[1]
+                            console.log(p.obj.datavalue)
+                            row5.enabled=false
+                        }
+                        else
+                        {
+                            var p=row6dragTarget.children[1]
+                            console.log(p.obj.operation)
+                            row5.enabled=false
+                        }
+
+                        var m=row6.children[0]
+
+                        if(row6.children[1].present && row6.children[2].present)
+                        {
+                            switch (row6.children[1].children[1].obj.operation) {
+                            case "+":
+                                console.log(row5.calculated_value+row6.children[2].children[1].obj.datavalue);
+                                row6.calculated_value=row5.calculated_value+row6.children[2].children[1].obj.datavalue
+                                break;
+                            case "-":
+                                console.log(row5.calculated_value-row6.children[2].children[1].obj.datavalue);
+                                row6.calculated_value=row5.calculated_value-row6.children[2].children[1].obj.datavalue
+                                console.log(row6.calculated_value)
+                                break;
+                            case "/":
+                                console.log(row5.calculated_value/row6.children[2].children[1].obj.datavalue);
+                                row6.calculated_value=row5.calculated_value/row6.children[2].children[1].obj.datavalue
+                                break;
+                            default:
+                                console.log(row5.calculated_value*row6.children[2].children[1].obj.datavalue);
+                                row6.calculated_value=row5.calculated_value*row6.children[2].children[1].obj.datavalue;
+
+
+                            }
+                            row6.children[5].children[0].text=Number(row6.calculated_value).toString()
+
+                            if(row6.calculated_value==items.guesscount)
+                            {
+                                row6.children[5].children[0].text=Number(row6.calculated_value).toString()
+                                if(items.question_no==3)
+                                {
+                                    items.bonus.good("smiley")
+                                }
+                                if(items.question_no<3)
+                                {
+                                    timer.start()
+                                }
+
+                            }
+
+                        }
+
+
+
+
+                    }
+                    onExited: {
+                        //console.log("deleted")
+                        row6dragTarget.present=Qt.binding(function() { return false })
+                        row6dragTarget.keys=Activity.decidekeys(index,2)
+                        if(row6.children[1].present==false && row6.children[2].present==false)
+                        {
+                            row5.enabled=true
+                        }
+                        if(row6.children[1].present==false || row6.children[2].present==false)
+                        {
+                            row6result.children[0].text=" "
+                        }
+
+
+                    }
+                    onChildrenChanged: {
+                        if(row6dragTarget.present==true)
+                        {
+                            //console.log("deleted")
+                            row6dragTarget.present=Qt.binding(function() { return false })
+                            row6dragTarget.keys=Activity.decidekeys(index,2)
+                            if(row6.children[1].present==false && row6.children[2].present==false)
+                            {
+                                row5.enabled=true
+                            }
+                            if(row6.children[1].present==false || row6.children[2].present==false)
+                            {
+                                row6result.children[0].text=" "
+                            }
+
+                        }
+                    }
+
+
+
+
+
+
+                    Rectangle {
+                        id:row6dropRectangle
+                        width:100
+                        height: 100
+                        color:"transparent"
+                        border.color: index==0 ? "red" : "green"
+                        border.width: 5
+                        anchors.fill: parent
+                        GCText{
+                            anchors.horizontalCenter: parent.horizontalCenter
+                            anchors.verticalCenter: parent.verticalCenter
+                            fontSize: mediumSize
+                        }
+
+                        radius: 20.0
+
+                        states: [
+                            State {
+                                when: row6dragTarget.containsDrag
+                                PropertyChanges {
+                                    target: row6dropRectangle
+                                    border.color:"white"
+                                }
+
+                            }
+                        ]
+                        Component.onCompleted: {
+                            row6dragTarget.keys = Activity.decidekeys(index,2)
+                        }
+
+
+
+                    }
+
+                }
+            }
+
+            Rectangle {
+                width:100
+                height: 100
+                color:"transparent"
+                Image {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    source: Activity.url+"equal.svg"
+                }
+                radius: 20.0
+            }
+            Rectangle {
+                id:row6result
+                width:100
+                height: 100
+                border.color: "black"
+                GCText{
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    anchors.verticalCenter: parent.verticalCenter
+                    fontSize: mediumSize
+                    text:" "
                 }
 
                 radius: 20.0
@@ -445,13 +890,13 @@ ActivityBase {
         }
 
 
+
         Timer {
             id:timer
             interval: 1500
             repeat: false
-            onTriggered: {
-                items.operators=Activity.images
-                result.children[0].text=Number(0).toString()
+            onTriggered:{
+                result.children[0].text=" "
                 Activity.run()
             }
 
