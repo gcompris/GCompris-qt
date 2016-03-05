@@ -44,15 +44,16 @@ var items;
 var dataset = null;
 var frequency;
 var incorrectFlag = false;
+var locale;
 
 function start(_items)
 {
     Core.checkForVoices(_items.main);
     items = _items;
     // register the voices for the locale
-    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+    locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
     GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
-    loadDataset();    
+    loadDataset();
     levels = Lang.getAllLessons(dataset)
     currentLevel = 0;
     currentSubLevel = 0;
@@ -65,11 +66,11 @@ function loadDataset()
 {
     var resourceUrl = "qrc:/gcompris/src/activities/lang/resource/"
 
-    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+
 
     dataset = Lang.load(items.parser, resourceUrl,
                         GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
-                                                               "content-fr.json")//+ locale +".json")
+                                                               "content-"+ locale +".json")
     // If dataset is empty, we try to load from short locale
     // and if not present again, we switch to default one
     var localeUnderscoreIndex = locale.indexOf('_')
@@ -153,7 +154,6 @@ function initLevel() {
 
     }
 
-    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale);
     currentLetter = questions[currentSubLevel];
     items.question = currentLetter
     items.animateX.restart();
@@ -181,7 +181,7 @@ function calculateFrequency(){
                 }
                 else{
                     freq[character] = 1;
-                }            
+                }
             }
 
         }
@@ -210,7 +210,6 @@ function generateQuestions(){
 }
 
 function playLetter(letter) {
-    var locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
     items.audioVoices.append(GCompris.ApplicationInfo.getAudioFilePath("voices-$CA/"+locale+"/alphabet/"
                                                                        + Core.getSoundFilenamForChar(letter)))
 }
