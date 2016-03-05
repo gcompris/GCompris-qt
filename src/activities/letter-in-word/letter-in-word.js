@@ -69,7 +69,7 @@ function loadDataset()
 
     dataset = Lang.load(items.parser, resourceUrl,
                         GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
-                                                               "content-"+ locale +".json")
+                                                               "content-fr.json")//+ locale +".json")
     // If dataset is empty, we try to load from short locale
     // and if not present again, we switch to default one
     var localeUnderscoreIndex = locale.indexOf('_')
@@ -122,7 +122,7 @@ function initLevel() {
         level = levels[currentLevel];
         words = Lang.getLessonWords(dataset, level);
         Core.shuffle(words);
-        var limit = Math.min(13, words.length)
+        var limit = Math.min(11, words.length)
         words = words.slice(0,limit)
         frequency = calculateFrequency();
         var tempQuestions = generateQuestions();

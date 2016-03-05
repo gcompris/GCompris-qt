@@ -264,9 +264,9 @@ ActivityBase {
             anchors.topMargin: 10 * ApplicationInfo.ratio
             anchors.leftMargin: 5 * ApplicationInfo.ratio
             anchors.rightMargin: 5 * ApplicationInfo.ratio
-            anchors.bottomMargin: 5 * ApplicationInfo.ratio
-            cellWidth: itemWidth
-            cellHeight: itemHeight
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            cellWidth: itemWidth + 43*ApplicationInfo.ratio
+            cellHeight: itemHeight + 15*ApplicationInfo.ratio
             clip: false
             interactive: false
             //verticalLayoutDirection: GridView.BottomToTop

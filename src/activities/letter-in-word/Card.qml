@@ -27,7 +27,7 @@ import "letter-in-word.js" as Activity
 
 Item {
     id: cardItem
-    width: cardImage.width
+    //width: cardImage.width
     height: wordPic.height + cardImage.height - 30 * ApplicationInfo.ratio
 
     Image{
@@ -37,6 +37,7 @@ Item {
         fillMode: Image.PreserveAspectFit
         source: imgurl
         z:5
+        //visible: index % 2 != 0 ? false : true
     }
 
 
@@ -48,6 +49,7 @@ Item {
         fillMode: Image.PreserveAspectFit
         source:  Activity.url + "images/cloud.svg"
         z: (state == 'scaled') ? 1 : -1
+        //visible: index % 2 != 0 ? false : true
 
         Row{
             anchors.verticalCenter: cardImage.verticalCenter
