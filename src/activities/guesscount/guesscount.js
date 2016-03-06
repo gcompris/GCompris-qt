@@ -41,7 +41,7 @@ var dataset=[
                         [[3,1],3],
                         [[9,4],5]
                     ]
-
+                    
                 }
             },
             {
@@ -53,7 +53,7 @@ var dataset=[
                         [[8,4],2],
                         [[10,2,2],10]
                     ]
-
+                    
                 }
             },
             {
@@ -65,7 +65,7 @@ var dataset=[
                         [[8,16,4],2],
                         [[10,2,2,3],7]
                     ]
-
+                    
                 }
             },
             {
@@ -77,10 +77,10 @@ var dataset=[
                         [[4,2,9],17],
                         [[15,3,2,3],21]
                     ]
-
+                    
                 }
             }
-
+            
         ]
 
 function start(items_) {
@@ -103,12 +103,13 @@ function initLevel() {
     items.row6.visible=visibility(3)
     items.row5.enabled=false
     items.row6.enabled=false
-    var no_of_rows=dataset[currentLevel]["data"]["numbers"][items.question_no-1][0].length-2
-    if(no_of_rows==0)
+    var no_of_rows=dataset[currentLevel]["data"]["numbers"][items.question_no-1][0].length-1
+    items.no_of_rows=no_of_rows
+    if(no_of_rows==1)
     {
         items.row4.children[5].color="orange"
     }
-    else if(no_of_rows==1)
+    else if(no_of_rows==2)
     {
         items.row4.children[5].color="yellow"
         items.row5.children[5].color="orange"
@@ -119,11 +120,11 @@ function initLevel() {
         items.row5.children[5].color="lightblue"
         items.row6.children[5].color="orange"
     }
-
+    
 }
 
 function run() {
-
+    
     items.question_no=items.question_no+1
     items.operators=shuffle(images)
     items.data=dataset[currentLevel]["data"]["numbers"][items.question_no-1][0]
@@ -132,12 +133,13 @@ function run() {
     items.row6.visible=visibility(3)
     items.row5.enabled=false
     items.row6.enabled=false
-    var no_of_rows=dataset[currentLevel]["data"]["numbers"][items.question_no-1][0].length-2
-    if(no_of_rows==0)
+    var no_of_rows=dataset[currentLevel]["data"]["numbers"][items.question_no-1][0].length-1
+    items.no_of_rows=no_of_rows
+    if(no_of_rows==1)
     {
         items.row4.children[5].color="orange"
     }
-    else if(no_of_rows==1)
+    else if(no_of_rows==2)
     {
         items.row4.children[5].color="yellow"
         items.row5.children[5].color="orange"
@@ -148,7 +150,7 @@ function run() {
         items.row5.children[5].color="lightblue"
         items.row6.children[5].color="orange"
     }
-
+    
 }
 
 function nextLevel() {
@@ -186,7 +188,7 @@ function decidekeys(index,row){
             keys=["number"]
         return keys
     }
-
+    
 }
 
 function visibility(row){
