@@ -57,6 +57,8 @@ ActivityBase {
             property alias row4:row4
             property alias row5:row5
             property alias row6:row6
+            property GCAudio audioEffects: activity.audioEffects
+            property var no_of_rows
 
         }
 
@@ -352,17 +354,24 @@ ActivityBase {
                             {
 
                                 row4.children[5].children[0].text=Number(row4.calculated_value).toString()
-                                if(items.question_no==3){
-                                    items.bonus.good("smiley");
+                                if(items.question_no==3)
+                                {
+
+                                    items.bonus.good("smiley")
 
                                 }
                                 if(items.question_no<3 && !Activity.visibility(2))
                                 {
+                                    audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
                                     timer.start();
                                 }
 
 
 
+                            }
+                            else if(items.no_of_rows==1)
+                            {
+                                audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
                             }
 
                         }
@@ -555,14 +564,21 @@ ActivityBase {
                                 row5.children[5].children[0].text=Number(row5.calculated_value).toString()
                                 if(items.question_no==3)
                                 {
+
                                     items.bonus.good("smiley")
                                 }
                                 if(items.question_no<3)
                                 {
+                                    audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
                                     timer.start();
                                 }
 
                             }
+                            else if(items.no_of_rows==2)
+                            {
+                                audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                            }
+
 
                         }
 
@@ -701,6 +717,7 @@ ActivityBase {
                 id:row5_result
                 width:100
                 height: 100
+                color: row4_result.color
                 border.color: "black"
                 GCText{
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -771,14 +788,21 @@ ActivityBase {
                                 row6.children[5].children[0].text=Number(row6.calculated_value).toString()
                                 if(items.question_no==3)
                                 {
+
                                     items.bonus.good("smiley")
                                 }
                                 if(items.question_no<3)
                                 {
+                                    audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
                                     timer.start()
                                 }
 
                             }
+                            else if(items.no_of_rows==3)
+                            {
+                                audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                            }
+
 
                         }
 
