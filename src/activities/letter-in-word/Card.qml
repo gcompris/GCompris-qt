@@ -51,10 +51,11 @@ Item {
         z: (state == 'scaled') ? 1 : -1
         //visible: index % 2 != 0 ? false : true
 
-        Row{
+        Row {
             anchors.verticalCenter: cardImage.verticalCenter
-            Repeater{
+            anchors.horizontalCenter: cardImage.horizontalCenter
 
+            Repeater {
                 model: components
                 GCText {
                     id: textbox
@@ -83,7 +84,8 @@ Item {
             PropertyChanges {
                 target: cardItem
                 scale: /*carriageImage.scale * */ 1.2
-                z: 2}
+                z: 2
+            }
         }
 
         transitions: Transition {
@@ -104,8 +106,8 @@ Item {
                 target: cardImage
                 easing.type: Easing.InOutQuad
                 property: "rotation"; to: -20
-                duration: 500 }
-
+                duration: 500
+            }
         }
 
         SequentialAnimation {
@@ -153,11 +155,10 @@ Item {
                 components.clear();
                 var tempword;
                 var j = 0;
-                for(var i = 0; i < spelling.length; i++){
-                    if(spelling.charAt(i) == Activity.currentLetter){
-                        tempword = spelling.substring(j,i);
-                        if(i!=j){
-
+                for(var i = 0; i < spelling.length; i++) {
+                    if(spelling.charAt(i) == Activity.currentLetter) {
+                        tempword = spelling.substring(j, i);
+                        if(i != j) {
                             components.append({"textdata": tempword})
                         }
                         components.append({"textdata": Activity.currentLetter});
@@ -165,7 +166,7 @@ Item {
                         j = i + 1;
                     }
                 }
-                if(j < spelling.length){
+                if(j < spelling.length) {
                     tempword = spelling.substring(j, spelling.length);
                     components.append({"textdata": tempword})
 

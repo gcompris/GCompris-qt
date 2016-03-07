@@ -28,8 +28,6 @@
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 
 var url = "qrc:/gcompris/src/activities/letter-in-word/resource/"
-var defaultLevelsFile = ":/gcompris/src/activities/letter-in-word/resource/levels/levels-en.json";
-var maxLettersPerLine = 6;
 
 var levels;
 var currentLevel;
@@ -37,7 +35,6 @@ var maxLevel;
 var currentSubLevel;
 var currentLetter;
 var maxSubLevel;
-var level;
 var questions;
 var words;
 var items;
@@ -120,7 +117,7 @@ function initLevel() {
     var componentsArr;
     items.bar.level = currentLevel + 1;
     if (currentSubLevel == 0 && !incorrectFlag) {
-        level = levels[currentLevel];
+        var level = levels[currentLevel];
         words = Lang.getLessonWords(dataset, level);
         Core.shuffle(words);
         var limit = Math.min(11, words.length)
@@ -242,40 +239,31 @@ function nextSubLevel() {
 
 function checkAnswer()
 {
-    var checkFlag = false;
+    var hasWordNotFound = false;
     var modelEntry;
-    for(var i = 0; i < words.length; i++){
+    for(var i = 0; i < words.length; i++) {
         modelEntry = items.wordsModel.get(i);
-        for(var j = 0; j < modelEntry.spelling.length; j++){
-            if(currentLetter == modelEntry.spelling.charAt(j) && modelEntry.selected == false){
-                checkFlag = true;
-                break;
-            }
+        if(modelEntry.spelling.indexOf(currentLetter) != -1 && modelEntry.selected == false) {
+            hasWordNotFound = true;
+            break;
         }
     }
-    if(checkFlag == false){
+    if(hasWordNotFound == false) {
         items.bonus.good("flower");
     }
 }
 
 function checkWord(index)
 {
-    var checkFlag = false;
     var modelEntry = items.wordsModel.get(index);
-    for(var i = 0; i < modelEntry.spelling.length; i++){
-        if(currentLetter ==  modelEntry.spelling.charAt(i)){
-            items.wordsModel.setProperty(index, "selected", true);
-            checkAnswer();
-            checkFlag = true;
-            break;
-        }
-    }
-    if(checkFlag == true){
+    if(modelEntry.spelling.indexOf(currentLetter) != -1) {
+        items.wordsModel.setProperty(index, "selected", true);
+        checkAnswer();
         return true;
     }
-    else{
+    else {
         items.bonus.bad("flower");
-        return  false;
+        return false;
     }
 }
 

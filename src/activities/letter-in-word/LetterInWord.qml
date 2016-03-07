@@ -232,7 +232,6 @@ ActivityBase {
                 font.weight: Font.DemiBold
                 color: "#2a2a2a"
                 text: items.question
-
             }
 
             PropertyAnimation {
@@ -274,9 +273,8 @@ ActivityBase {
 
 
             model: wordsModel
-            delegate: Card{
+            delegate: Card {
                 width: background.itemWidth
-
             }
         }
 
