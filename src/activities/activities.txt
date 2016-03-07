@@ -98,6 +98,7 @@ money_cents
 mosaic
 numbers-odd-even
 paintings
+parmaarK
 penalty
 planegame
 readingh
