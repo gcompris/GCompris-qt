@@ -36,7 +36,7 @@ Item {
         sourceSize.height: cardItem.width -5
         fillMode: Image.PreserveAspectFit
         source: imgurl
-        z:5
+        z:-5
         //visible: index % 2 != 0 ? false : true
     }
 
