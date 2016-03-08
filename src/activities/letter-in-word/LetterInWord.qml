@@ -191,21 +191,6 @@ ActivityBase {
             }
         }
 
-        BarButton {
-            id: repeatItem
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
-            sourceSize.width: 80 * ApplicationInfo.ratio
-            anchors {
-                top: parent.top
-                right: parent.right
-                margins: 10
-            }
-            onClicked:{
-                Activity.playLetter(Activity.currentLetter);
-                animateX.restart();
-            }
-        }
-
         Item {
             id: planeText
             width: plane.width
@@ -216,6 +201,8 @@ ActivityBase {
 
             Image {
                 id: plane
+                width: itemWidth*3.5
+                height: itemHeight
                 anchors.centerIn: planeText
                 anchors.top: parent.top
                 source: Activity.url + "images/plane.svg"
@@ -240,10 +227,25 @@ ActivityBase {
                 properties: "x"
                 from: - planeText.width
                 //to:background.width/2 - planeText.width/2
-                to: bar.level <= 2 ? background.width/4 : background.width
+                to: bar.level <= 2 ? background.width/3.7 : background.width
                 duration: bar.level <= 2 ? 5500: 11000
                 //easing.type: Easing.OutQuad
                 easing.type: bar.level <= 2 ? Easing.OutQuad: Easing.OutInCirc
+            }
+        }
+
+        BarButton {
+            id: repeatItem
+            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
+            sourceSize.width: 80 * ApplicationInfo.ratio
+            anchors {
+                top: parent.top
+                right: parent.right
+                margins: 10
+            }
+            onClicked:{
+                Activity.playLetter(Activity.currentLetter);
+                animateX.restart();
             }
         }
 
