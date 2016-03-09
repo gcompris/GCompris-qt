@@ -65,6 +65,7 @@ lightsoff
 louis-braille
 magic-hat-minus
 magic-hat-plus
+mashinapetro
 maze
 mazeinvisible
 mazerelative
