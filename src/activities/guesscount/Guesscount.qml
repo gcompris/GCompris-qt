@@ -90,7 +90,7 @@ ActivityBase {
         }
 
         Image {
-            source: Activity.url+"tiger1_RS.jpg"
+            source: Activity.url+"background2.jpg"
             width:parent.width
             height:parent.height
         }
@@ -98,10 +98,12 @@ ActivityBase {
 
         Row {
             id:row1
-            spacing: 500
+            spacing: 460
             anchors{
                 top:parent.top
-                topMargin:10
+                topMargin:30
+                left:parent.left
+                leftMargin: 34
             }
             Rectangle {
                 id:question_no
@@ -109,7 +111,6 @@ ActivityBase {
                 height: 100;
                 radius: 20.0;
                 color: "steelblue"
-                anchors.leftMargin: 100
                 GCText{
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
@@ -151,7 +152,7 @@ ActivityBase {
                     width:400;
                     height: 100;
                     radius: 20.0;
-                    color: "red"
+                    color: "#F70D1A"
                     GCText{
                         anchors.horizontalCenter: parent.horizontalCenter
                         fontSize: largeSize
@@ -165,7 +166,7 @@ ActivityBase {
                     id:root
                     width:100
                     height:100
-                    color: "red"
+                    color: "#F70D1A"
                     MouseArea{
                         id:mousearea
                         anchors.fill:parent
@@ -228,7 +229,7 @@ ActivityBase {
                     width:400;
                     height: 100;
                     radius: 20.0;
-                    color: "green"
+                    color: "#52D017"
                     GCText{
                         anchors.horizontalCenter: parent.horizontalCenter
                         fontSize: largeSize
@@ -259,7 +260,7 @@ ActivityBase {
                             id:rec2
                             width:100
                             height: 100
-                            color:"green"
+                            color:"#52D017"
                             property var datavalue: modelData
                             Drag.active: mousearea.drag.active
                             Drag.keys: [ "number" ]
@@ -313,6 +314,7 @@ ActivityBase {
                     onDropped: {
                         dragTarget.present=Qt.binding(function() { return true })
                         dragTarget.keys="not_allowed"
+
                         if(index==1)
                         {
                             var p=dragTarget.children[1]
@@ -329,6 +331,7 @@ ActivityBase {
 
                         if(row4.children[0].present && row4.children[1].present && row4.children[2].present)
                         {
+
                             switch (row4.children[1].children[1].obj.operation) {
                             case "+":
                                 console.log(row4.children[0].children[1].obj.datavalue+row4.children[2].children[1].obj.datavalue);
@@ -346,15 +349,29 @@ ActivityBase {
                                 console.log(row4.children[0].children[1].obj.datavalue*row4.children[2].children[1].obj.datavalue);
                                 row4.calculated_value=row4.children[0].children[1].obj.datavalue*row4.children[2].children[1].obj.datavalue
 
+
                             }
                             row4.children[5].children[0].text=Number(row4.calculated_value).toString()
+                            if(Math.round(row4.calculated_value) == row4.calculated_value)
+                            {
+                                console.log("integer")
+                            }
+                            else
+
+                            {
+                                // not an integer
+                                console.log(row4.calculated_value)
+                                audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                                row4.children[5].children[0].text=" "
+                            }
+
                             row5.enabled=true
 
                             if(row4.calculated_value==items.guesscount)
                             {
 
                                 row4.children[5].children[0].text=Number(row4.calculated_value).toString()
-                                if(items.question_no==3)
+                                if(items.question_no==3 && items.no_of_rows==1)
                                 {
 
                                     items.bonus.good("smiley")
@@ -375,6 +392,7 @@ ActivityBase {
                             }
 
                         }
+
 
 
 
@@ -421,7 +439,7 @@ ActivityBase {
                         width:100
                         height: 100
                         color:"transparent"
-                        border.color: index==1 ? "red" : "green"
+                        border.color: index==1 ? "#F70D1A" : "#52D017"
                         border.width: 5
                         anchors.fill: parent
                         GCText{
@@ -531,7 +549,6 @@ ActivityBase {
                         {
                             var p=row5dragTarget.children[1]
                             console.log(p.obj.operation)
-                            console.log(row4.enabled)
                             row4.enabled=false
 
                         }
@@ -558,11 +575,23 @@ ActivityBase {
 
                             }
                             row5.children[5].children[0].text=Number(row5.calculated_value).toString()
+                            if(Math.round(row5.calculated_value) == row5.calculated_value)
+                            {
+                                console.log("integer")
+                            }
+                            else
+
+                            {
+                                // not an integer
+                                console.log(row5.calculated_value)
+                                audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                                row5.children[5].children[0].text=" "
+                            }
                             row6.enabled=true
                             if(row5.calculated_value==items.guesscount)
                             {
                                 row5.children[5].children[0].text=Number(row5.calculated_value).toString()
-                                if(items.question_no==3)
+                                if(items.question_no==3 && items.no_of_rows==2)
                                 {
 
                                     items.bonus.good("smiley")
@@ -581,6 +610,8 @@ ActivityBase {
 
 
                         }
+
+
 
 
 
@@ -641,7 +672,7 @@ ActivityBase {
                         width:100
                         height: 100
                         color:"transparent"
-                        border.color: index==0 ? "red" : "green"
+                        border.color: index==0 ? "#F70D1A" : "#52D017"
                         border.width: 5
                         anchors.fill: parent
                         GCText{
@@ -717,7 +748,7 @@ ActivityBase {
                 id:row5_result
                 width:100
                 height: 100
-                color: row4_result.color
+                color: row5result.color
                 border.color: "black"
                 GCText{
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -769,7 +800,6 @@ ActivityBase {
                             case "-":
                                 console.log(row5.calculated_value-row6.children[2].children[1].obj.datavalue);
                                 row6.calculated_value=row5.calculated_value-row6.children[2].children[1].obj.datavalue
-                                console.log(row6.calculated_value)
                                 break;
                             case "/":
                                 console.log(row5.calculated_value/row6.children[2].children[1].obj.datavalue);
@@ -782,11 +812,23 @@ ActivityBase {
 
                             }
                             row6.children[5].children[0].text=Number(row6.calculated_value).toString()
+                            if(Math.round(row6.calculated_value) == row6.calculated_value)
+                            {
+                                console.log("integer")
+                            }
+                            else
+
+                            {
+                                // not an integer
+                                console.log(row6.calculated_value)
+                                audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+                                row6.children[5].children[0].text=" "
+                            }
 
                             if(row6.calculated_value==items.guesscount)
                             {
                                 row6.children[5].children[0].text=Number(row6.calculated_value).toString()
-                                if(items.question_no==3)
+                                if(items.question_no==3 && items.no_of_rows==3)
                                 {
 
                                     items.bonus.good("smiley")
@@ -853,7 +895,7 @@ ActivityBase {
                         width:100
                         height: 100
                         color:"transparent"
-                        border.color: index==0 ? "red" : "green"
+                        border.color: index==0 ? "#F70D1A" : "#52D017"
                         border.width: 5
                         anchors.fill: parent
                         GCText{
