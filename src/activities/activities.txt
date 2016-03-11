@@ -112,6 +112,7 @@ scalesboard_weight_avoirdupois
 simplepaint
 smallnumbers
 smallnumbers2
+space-encounter
 sudoku
 superbrain
 tangram
