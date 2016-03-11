@@ -65,7 +65,7 @@ Rectangle {
             horizontalAlignment: Text.AlignHCenter
             width: parent.width * 0.4
             wrapMode: TextEdit.WordWrap
-            text:qsTr("UNDER CONSTRUCTION")
+            text:qsTr("Level 2 UNDER CONSTRUCTION")
         }
 
 }

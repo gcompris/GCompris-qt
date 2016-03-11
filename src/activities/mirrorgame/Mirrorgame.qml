@@ -146,7 +146,7 @@ ActivityBase {
              context.beginPath();
              context.lineWidth = 4;
              context.strokeStyle = "black"
-             context.moveTo(off.x+60,off.y+40);
+             context.moveTo(torch.x+400,torch.y+10);
              context.lineTo(torch.x+80,torch.y+10);
              context.stroke();
 
@@ -156,12 +156,34 @@ ActivityBase {
             source:"off.svg"
             fillMode: Image.PreserveAspectFit
             x:1180
-            y:180
+            y:140
             width:100
             height:100
+            GCText{
+            id:check
+            width:100
+            height:100
+            x:-50
+            y:100
+            text:qsTr("Click to Check");
+            SequentialAnimation on y {
+                loops: Animation.Infinite
+                NumberAnimation {
+                    from:105
+                    to:110
+                    easing.type: Easing.InSine; duration: 1000
+                }
+                NumberAnimation {
+                    from:110
+                    to:105
+                    easing.type: Easing.OutSine; duration: 1000
+                }
+
+            }
+            }
             MouseArea {
                 anchors.fill: parent
-                onClicked: {
+                onClicked: {check.visible=false;
                             lvl1.checkAnswer()}
             }
         }
@@ -171,7 +193,7 @@ ActivityBase {
             source:"on.svg"
             fillMode: Image.PreserveAspectFit
             x:1180
-            y:180
+            y:140
             width:100
             height:100
 
