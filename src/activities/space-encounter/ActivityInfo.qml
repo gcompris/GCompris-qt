@@ -23,12 +23,12 @@ ActivityInfo {
   icon: "space-encounter/space-encounter.svg"
   author: "Varun Kumar &lt;varun13169@iiitd.ac.in&gt;"
   demo: true
-  title: "Space enCounter"
+  title: qsTr("Space enCounter")
   description: ""
   //intro: "put here in comment the text for the intro voice"
-  goal: ""
-  prerequisite: ""
-  manual: ""
+  goal: qsTr("Press space bar as many times as possible in 10 seconds")
+  prerequisite: qsTr("A little story about asteroid colision, that can be prevented by making a High Score")
+  manual: qsTr("Press space bar to start the game. As soon as it is pressed for the first time a counter starts and player has to press space bar as many times as possible in 10 seconds.")
   credit: ""
   section: "fun"
   createdInVersion: 6000
