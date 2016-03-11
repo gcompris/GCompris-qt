@@ -1,10 +1,9 @@
 /* GCompris - space-encounter.js
  *
- * Copyright (C) 2016 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 Varun Kumar <varun13169@iiitd.ac.in>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *   Varun Kumar <varun13169@iiitd.ac.in>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -23,7 +22,7 @@
 .import QtQuick 2.0 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 1  /**************************************************/
+var numberOfLevel = 1
 var items
 var gameWon = false
 
@@ -47,8 +46,8 @@ function initLevel() {
     items.ticks = 0
     items.playerScore = 0
 
-    items.textbuttText = "Press Space Bar to Start"
-    items.displayCounterText = items.ticks + " Seconds"
+    items.textbuttText = qsTr("Press Space Bar to Start")
+    items.displayCounterText = qsTr("%1 Seconds").arg(items.ticks)
     items.spaceBarButtonColor = "#ABCDEF"
     ///////////////////////////////////////////////////////////////////////////////////
 }
@@ -75,7 +74,7 @@ var spaceButtonColor = true;
 function increment() {
     if(items.flag == true) {
         items.spacePresses = items.spacePresses +1;
-        items.textbuttText = "Your Score " + items.spacePresses;
+        items.textbuttText = qsTr("Your Score %1").arg(items.spacePresses);
         items.timerRunning = true;
         if(spaceButtonColor == true) {
             items.spaceBarButtonColor = "#F53D00"
@@ -91,7 +90,7 @@ function increment() {
 function incrementTicks() {
     if(items.ticks < 5) {
         items.ticks = items.ticks + 1;
-        items.displayCounterText = items.ticks + " Seconds";
+        items.displayCounterText = qsTr("%1 Seconds").arg(items.ticks);
     }
     else {
         items.flag = false;
@@ -101,13 +100,12 @@ function incrementTicks() {
             items.highScore = items.playerScore;
             gameWon = true;
         }
-        items.displayCounterText = "Time Up";
+        items.displayCounterText = qsTr("Time Up");
         gameOver();
     }
 }
 
 function gameOver() {
-    //items.bonus.good("planet");
     if(gameWon == true) {
         items.bonus.good("planet");
     }

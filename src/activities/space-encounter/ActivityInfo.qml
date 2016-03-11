@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2016 Your Name <yy@zz.org>
+ * Copyright (C) 2016 Varun Kumar <varun13169@iiitd.ac.in>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -27,9 +27,9 @@ ActivityInfo {
   description: ""
   //intro: "put here in comment the text for the intro voice"
   goal: qsTr("Press space bar as many times as possible in 10 seconds")
-  prerequisite: qsTr("A little story about asteroid colision, that can be prevented by making a High Score")
-  manual: qsTr("Press space bar to start the game. As soon as it is pressed for the first time a counter starts and player has to press space bar as many times as possible in 10 seconds.")
+  prerequisite: qsTr("A little story about asteroid collision, that can be prevented by making a High Score")
+  manual: qsTr("Press space bar to start the game, as soon as it is pressed for the first time a counter starts and player has to press space bar as many times as possible in 10 seconds.")
   credit: ""
-  section: "fun"
+  section: qsTr("fun")
   createdInVersion: 6000
 }

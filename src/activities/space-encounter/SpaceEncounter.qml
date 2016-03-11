@@ -1,10 +1,9 @@
 /* GCompris - space-encounter.qml
  *
- * Copyright (C) 2016 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 Varun Kumar <varun13169@iiitd.ac.in>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   Varun Kumar <varun13169@iiitd.ac.in>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -32,14 +31,9 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        //width: parent; height: parent;
-        //////////////////////////////////////////////////////////////////////////////
         fillMode: Image.PreserveAspectCrop
         source: "./resource/asteroid.svg"
         sourceSize.width: parent.width
-        //anchors.fill: parent
-        //color: "#ABCDEF"
-        /////////////////////////////////////////////////////////////////////////////////
         signal start
         signal stop
 
@@ -55,7 +49,7 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
-            /////////////////////////////////////////////////////////////////////////
+
             /* Variables */
             property bool flag: true
             property bool timerRunning: false
@@ -66,10 +60,9 @@ ActivityBase {
             property int highScore: 0
             property int playerScore: 0
 
-            property string textbuttText: "Press Space Bar to Start"
-            property string displayCounterText: items.ticks + " Seconds"
+            property string textbuttText: qsTr("Press Space Bar to Start")
+            property string displayCounterText: qsTr("%1 Seconds").arg(items.ticks)
             property string spaceBarButtonColor: "#ABCDEF"
-            //////////////////////////////////////////////////////////////////////////////////////////////
         }
 
         onStart: { 
@@ -117,12 +110,12 @@ ActivityBase {
             anchors.top: parent.top;
             anchors.left: parent.left;
             width: 200; height: 50;
-            color: "transparent"; //"#ABCDEF"
+            color: "transparent";
             GCText {
                 id: highScoreDisplay
                 anchors.centerIn: parent;
                 color: "#FF6633"
-                text: "High Score " + items.highScore;
+                text: qsTr("High Score %1").arg(items.highScore);
             }
         }
 
@@ -130,12 +123,12 @@ ActivityBase {
             anchors.top: parent.top;
             anchors.right: parent.right;
             width: 200; height: 50;
-            color: "transparent" //"#ABCDEF"
+            color: "transparent";
             GCText {
                 id: playerScoredisplay
                 anchors.centerIn: parent;
                 color: "#FF6633"
-                text: "Your Score " + items.playerScore;
+                text: qsTr("Your Score %1").arg(items.playerScore);
             }
         }
 
