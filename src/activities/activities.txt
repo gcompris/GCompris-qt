@@ -59,6 +59,7 @@ hexagon
 imagename
 instruments
 intro_gravity
+jumbled_words
 lang
 leftright
 lightsoff
