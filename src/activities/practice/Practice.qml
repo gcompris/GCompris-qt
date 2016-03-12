@@ -3,8 +3,7 @@
  * Copyright (C) 2016 YOUR NAME <xx@yy.org>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *  Rahul Yadav <rahulyadav170923@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -81,10 +80,16 @@ ActivityBase {
         Row {
             anchors.fill: parent
             spacing: 2
+
             Rectangle {
-                color: "gray"
+                color: "transparent"
                 width: parent.width*0.65
                 height: parent.height
+                Image {
+                    source: Activity.url+"background2.jpg"
+                    width:parent.width
+                    height:parent.height
+                }
                 Grid {
                     id:row1
                     anchors.top:parent.top
@@ -96,11 +101,12 @@ ActivityBase {
 
                         height: 200
                         width: 150
+                        color: "transparent"
                         Rectangle{
                             id:number1
                             height: 50
                             width: parent.width
-                            color:"gray"
+                            color:"transparent"
                         GCText{
                             anchors.centerIn: parent
                             font.pointSize: 20
@@ -137,11 +143,12 @@ ActivityBase {
                     Rectangle{
                         height: 200
                         width: 150
+                        color: "transparent"
                         Rectangle{
                             id:operator_
                             height: 50
                             width: parent.width
-                            color:"gray"
+                            color:"transparent"
                         GCText{
                             anchors.centerIn: parent
                             font.pointSize: 20
@@ -168,6 +175,9 @@ ActivityBase {
                                     font.pixelSize: 40
                                     font.bold: true
                                     maximumLength:1
+                                    /*validator: RegExpValidator{
+                                    regExp:/+/
+                                    }*/
 
                                 }
                         }
@@ -175,11 +185,12 @@ ActivityBase {
                     Rectangle{
                         height: 200
                         width: 150
+                        color: "transparent"
                         Rectangle{
                             id:number2
                             height: 50
                             width: parent.width
-                            color:"gray"
+                            color:"transparent"
                         GCText{
                             anchors.centerIn: parent
                             font.pointSize: 20
@@ -225,11 +236,12 @@ ActivityBase {
                     Rectangle{
                         height: 200
                         width: 150
+                        color: "transparent"
                         Rectangle{
                             id:expected_result
                             height: 50
                             width: parent.width
-                            color:"gray"
+                            color:"transparent"
                         GCText{
                             anchors.centerIn: parent
                             font.pointSize: 20
@@ -265,12 +277,15 @@ ActivityBase {
 
                 }
                 Rectangle {
+                    id:evaluate
                     anchors.top: row1.bottom
                     anchors.right: parent.right
                     anchors.topMargin: 50
-                    anchors.rightMargin: 100
+                    anchors.rightMargin: 50
                     width:200
                     height: 40
+                    signal clicked
+                    onClicked: NumberAnimation { target: evaluate; property: "opacity"; from: 0; to: 1; duration: 200 }
 
                     color: "#53d769"
                     border.color: Qt.lighter(color, 1.1)
@@ -282,8 +297,19 @@ ActivityBase {
 
                     MouseArea {
                         anchors.fill: parent
+                        hoverEnabled: true
+                        onHoveredChanged: {
+                             if(containsMouse)
+                                {
+                                 evaluate.scale=1.15
+                             }
+                             else{
+                                 evaluate.scale=1
+                             }
 
+                        }
                         onClicked: {
+                            evaluate.clicked()
                             if(firstop.text!="" && operator.text!="" && secondop.text!="" && result.text!="")
                             {
                             var input={"firstop":Number(firstop.text),"secondop":Number(secondop.text),"operator":operator.text,"expected_result":Number(result.text),"saved_calculation":false}
@@ -295,41 +321,149 @@ ActivityBase {
                         {
                             input["correct"]=Activity.calculate_result(input)
                             audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
+                            theModel.insert(0,input);
+                            correctquestions.insert(0,input)
                         }
                         else
+                        {
+                            input["correct"]=Activity.calculate_result(input)
                             audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
-
+                            theModel.insert(0,input);
+                            wrongquestions.insert(0,input)
+}
                             }
                             else
                                 audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
-                             theModel.insert(0,input);
+
                         }
 
 
                     }
 
                 }
+                Rectangle {
+                    id:correctanswers
+                    anchors.top: evaluate.bottom
+                    anchors.right: parent.right
+                    anchors.topMargin: 50
+                    anchors.rightMargin: 50
+                    width:350
+                    height: 50
+                    signal clicked
+                    onClicked: NumberAnimation { target: correctanswers; property: "opacity"; from: 0; to: 1; duration: 200 }
+
+                    color: "#53d769"
+                    border.color: Qt.lighter(color, 1.1)
+
+                    GCText {
+                        anchors.centerIn: parent
+                        text: "Correct Answers"
+                    }
+                    MouseArea {
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        onHoveredChanged: {
+                             if(containsMouse)
+                                {
+                                 correctanswers.scale=1.15
+                             }
+                             else{
+                                 correctanswers.scale=1
+                             }
+                         }
+
+                        onClicked: {
+                            correctanswers.clicked()
+                            items.currentmodel=correctquestions
+
+                        }
+                    }
+                }
+                Rectangle {
+                    id:wronganswers
+                    anchors.top: evaluate.bottom
+                    anchors.right: correctanswers.left
+                    anchors.topMargin: 50
+                    anchors.rightMargin: 50
+                    width:350
+                    height: 50
+                    signal clicked
+                    onClicked: NumberAnimation { target: wronganswers; property: "opacity"; from: 0; to: 1; duration: 200 }
+
+                    color: "red"
+                    border.color: Qt.lighter(color, 1.1)
+
+                    GCText {
+                        anchors.centerIn: parent
+                        text: "Wrong Answers"
+                    }
+                    MouseArea {
+                        anchors.fill: parent
+                        hoverEnabled: true
+                        onHoveredChanged: {
+                             if(containsMouse)
+                                {
+                                 wronganswers.scale=1.15
+                             }
+                             else{
+                                 wronganswers.scale=1
+                             }
+                        }
+
+                        onClicked: {
+                            wronganswers.clicked()
+                            items.currentmodel=wrongquestions
+
+                        }
+                    }
+                }
 
             }
             Rectangle {
                 width: parent.width*0.35
                 height:parent.height
+                //color: "lightgray"
+                gradient: Gradient {
+                                GradientStop { position: 0.0; color: "gray" }
+                                GradientStop { position: 1.0; color: "white" }
+                            }
                 ListModel {
                     id: theModel
                 }
                 ListModel{
                     id:saveitems
                 }
+                ListModel{
+                    id:correctquestions
+                }
+                ListModel{
+                    id:wrongquestions
+                }
+
+
 
                 Rectangle{
                 id:header
                 height: 60
                 width: parent.width
-                color: "lightblue"
+                color: "gray"
                 GCText {
+                    id:headertext
                     anchors.centerIn: parent
-                    text: qsTr("Calculation List")
+                    text: switch (items.currentmodel) {
+                          case theModel:
+                              return qsTr("Current Calculations")
+                          case saveitems:
+                              return qsTr("Saved Calculations")
+                          case correctquestions:
+                              return qsTr("Correct Answers")
+                          default:
+                             return qsTr("Wrong Answers")
+                          }
+                    //onTextChanged: NumberAnimation { target: headertext; property: "scale"; from: 0; to: 1; duration: 450; easing.type: Easing.InOutQuad }
+                    onTextChanged: NumberAnimation { target: headertext; property: "opacity"; from: 0; to: 1; duration: 450}
                 }
+
                 }
 
 
@@ -343,7 +477,12 @@ ActivityBase {
 
                     delegate: numberDelegate
                     spacing: 5
+                    populate: Transition {
+                            //NumberAnimation { property: "opacity";from:0; to: 1; duration: 1000 }
+                        NumberAnimation { property: "scale"; from: 0; to: 1; duration: 250; easing.type: Easing.InOutQuad }
+                        }
                 }
+
 
 
                 Component {
@@ -355,10 +494,7 @@ ActivityBase {
                         width: parent.width
                         height: 80
                         color: correct ? "green":"red"
-                        /*gradient: Gradient {
-                                        GradientStop { position: 0.0; color: "#f8306a" }
-                                        GradientStop { position: 1.0; color: "#fb5b40" }
-                                    }*/
+
                         GCText {
                             anchors.margins: 10
                             fontSize: mediumSize
@@ -368,7 +504,7 @@ ActivityBase {
                             id:save
                             width: 80
                             height: 30
-                            visible:!saved_calculation
+                            visible:!saved_calculation && items.currentmodel==theModel
                             anchors.right: parent.right
                             anchors.verticalCenter: parent.verticalCenter
                             anchors.rightMargin: 10
@@ -393,6 +529,7 @@ ActivityBase {
                             id:remove
                             width: 100
                             height: 30
+                            visible: !(items.currentmodel==correctquestions || items.currentmodel==wrongquestions)
                             anchors.right: save.left
                             anchors.verticalCenter: parent.verticalCenter
                             anchors.rightMargin: 10
@@ -425,6 +562,7 @@ ActivityBase {
                             NumberAnimation { target: wrapper; property: "scale"; from: 0; to: 1; duration: 250; easing.type: Easing.InOutQuad }
                         }
 
+
                     }
                 }
                 Rectangle{
@@ -432,26 +570,40 @@ ActivityBase {
                 anchors.bottom: parent.bottom
                 height: 60
                 width: parent.width
-                color: "lightblue"
+                color: "gray"
                 Rectangle{
                     id:clear_all
-                    width: parent.width/3
-                    height: parent.height/1.5
-                    color: "yellow"
+                    width: parent.width/2.75
+                    height: parent.height/1.25
+                    color: "orange"
+                    border.color: "transparent"
+                    border.width: 3
                     anchors{
                         left: parent.left
                         leftMargin: 20
                         verticalCenter: parent.verticalCenter
                     }
+                    signal clicked
+                    onClicked: NumberAnimation { target: clear_all; property: "opacity"; from: 0; to: 1; duration: 200 }
+
                 GCText {
                     anchors.centerIn: parent
                     text: qsTr("clear all")
                 }
                 MouseArea {
                     anchors.fill: parent
+                    hoverEnabled: true
+                    onHoveredChanged: {
+                        if(containsMouse)
+                           clear_all.border.color="lightblue"
+                        else
+                            clear_all.border.color="transparent"
+
+                    }
 
                     onClicked: {
-                            items.currentmodel.clear();
+                        clear_all.clicked()
+                            items.currentmodel.clear()
                     }
                 }
                 }
@@ -459,19 +611,30 @@ ActivityBase {
                     id:saved_list
                     visible: true
                     width: parent.width/2
-                    height: parent.height/1.5
-                    color: "yellow"
+                    height: parent.height/1.25
+                    color: "orange"
+                    border.width:3
+                    border.color: "transparent"
                     anchors{
                         right: parent.right
                         rightMargin: 20
                         verticalCenter: parent.verticalCenter
                     }
+                    onVisibleChanged: NumberAnimation { target: saved_list; property: "scale"; from: 0; to: 1; duration: 450; easing.type: Easing.InOutQuad }
                 GCText {
                     anchors.centerIn: parent
                     text: qsTr("saved list")
                 }
                 MouseArea {
                     anchors.fill: parent
+                    hoverEnabled: true
+                    onHoveredChanged: {
+                        if(containsMouse)
+                           { saved_list.border.color="lightblue";}
+                        else
+                            saved_list.border.color="transparent"
+
+                    }
 
                     onClicked: {
                             items.currentmodel=saveitems
@@ -484,26 +647,39 @@ ActivityBase {
                 Rectangle{
                     id:current_list
                     visible: false
-                    width: parent.width/2.5
-                    height: parent.height/1.5
-                    color: "yellow"
+                    width: parent.width/2
+                    height: parent.height/1.25
+                    color: "orange"
+                    border.width:3
+                    border.color: "transparent"
+
                     anchors{
                         right: parent.right
                         rightMargin: 20
                         verticalCenter: parent.verticalCenter
                     }
+
+                    onVisibleChanged: NumberAnimation { target: current_list; property: "scale"; from: 0; to: 1; duration: 450; easing.type: Easing.InOutQuad }
                 GCText {
                     anchors.centerIn: parent
                     text: qsTr("current list")
                 }
                 MouseArea {
                     anchors.fill: parent
+                    hoverEnabled: true
+                    onHoveredChanged: {
+                         if(containsMouse)
+                            { current_list.border.color="lightblue";}
+                         else
+                             current_list.border.color="transparent"
 
+                     }
                     onClicked: {
                             items.currentmodel=theModel
                         saved_list.visible=true
                         parent.visible=false
                     }
+
                 }
                 }
 

@@ -3,8 +3,7 @@
  * Copyright (C) 2016 YOUR NAME <xx@yy.org>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *   "Rahul Yadav" <rahulyadav170923@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -75,3 +74,4 @@ function calculate_result(input){
      return false
 
 }
+
