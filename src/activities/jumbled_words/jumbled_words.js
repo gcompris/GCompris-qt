@@ -3,8 +3,7 @@
  * Copyright (C) 2016  Komal Parmaar <parmaark@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *    Komal Parmaar <parmaark@gmail.com> (Qt Quick port)
+ *    Komal Parmaar <parmaark@gmail.com>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -22,11 +21,14 @@
 
 .pragma library
 .import QtQuick 2.0 as Quick
-.import GCompris 1.0 as GCompris //for ApplicationInfo
+.import GCompris 1.0 as GCompris
+.import QtGraphicalEffects 1.0 as QtGraphicalEffects
+
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/jumbled_words/resource/"
-var defaultLevelsFile = ":/gcompris/src/activities/jumbled_words/resource/levels-en.json";
+var url1 = "qrc:/gcompris/src/activities/lang/resource/words_sample.json"
+var defaultLevelsFile = "qrc:/gcompris/src/activities/lang/resource/words_sample.json";
 
 var currentLevel
 var maxLevel
@@ -35,12 +37,16 @@ var currentSubLevel
 var items
 var levels;
 var level;
+var temp;
+var copy;
 var questions;
 var answers;
 var items;
 var generate;
+var array = [];
 
 function start(items_) {
+
     items = items_
     loadLevels();
     currentLevel = 0;
@@ -51,23 +57,21 @@ function start(items_) {
 
 function loadLevels()
 {
-    var filename = GCompris.ApplicationInfo.getLocaleFilePath(url + "levels-$LOCALE.json");
+    var filename = GCompris.ApplicationInfo.getLocaleFilePath(url1);
     levels = items.parser.parseFromUrl(filename);
     if (levels == null) {
         console.warn("Jumbled_words: Invalid levels file " + filename);
-        // fallback to default Latin (levels-en.json) file:
         levels = items.parser.parseFromUrl(defaultLevelsFile);
         if (levels == null) {
             console.error("Jumbled_words: Invalid default levels file "
                 + defaultLevelsFile + ". Can't continue!");
-            // any way to error-exit here?
             return;
         }
     }
 }
 
-
 function stop() {
+
 }
 
 function shuffleString(s)
@@ -86,15 +90,19 @@ function shuffleString(s)
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    items.hint.text = "hint";
-
     if (currentSubLevel == 0) {
-            level = levels[currentLevel];
-            maxSubLevel = level.questions.length;
-            items.score.numberOfSubLevels = maxSubLevel;
-            items.score.currentSubLevel = "1";
-            answers = level.questions[Math.floor(Math.random()*maxSubLevel)];
-            var copy = answers;
+        level = levels[currentLevel];
+        maxSubLevel = level.content[0].content.length;
+        for(var i=0;i< maxSubLevel ; i++)
+        {
+            array[i]=i;
+        }
+        array=Core.shuffle(array);
+        items.score.numberOfSubLevels = maxSubLevel;
+        items.score.currentSubLevel = "1";
+        temp=array[currentSubLevel];
+        answers = level.content[0].content[temp].description;
+        copy = answers;
         var demo = shuffleString(answers);
         if(demo == answers)
         {
@@ -102,43 +110,26 @@ function initLevel() {
         }
         else
             questions = demo;
-    } else {
-        generate = level.questions[Math.floor((Math.random()*maxSubLevel))];
-        while(copy==generate)
-        {
-            generate = level.questions[Math.floor((Math.random()*maxSubLevel))];
-        }
+    }
+    else {
+        do{
+            temp=temp=array[currentSubLevel];
+            generate = level.content[0].content[temp].description;
+
+        } while(copy===generate);
         copy=generate;
         answers=generate;
-         demo = shuffleString(answers);
-        if(demo == answers)
-        {
+        demo = shuffleString(answers);
+        do{
             demo = shuffleString(answers);
-        }
-        else
-            questions = demo;
+        }while(demo===answers);
+        questions = demo;
         items.score.currentSubLevel = currentSubLevel + 1;
         }
     items.questionItem.visible = true
     items.questionItem.text = questions;
-
 }
 
-function validateLevels(levels)
-{
-    var i;
-    for (i = 0; i < levels.length; i++) {
-        if (undefined === levels[i].questions
-            || typeof levels[i].questions != "string"
-            || levels[i].questions.length < 1
-            || typeof levels[i].answers != "string"
-            || levels[i].answers.length < 1)
-            return false;
-    }
-    if (i < 1)
-        return false;
-    return true;
-}
 
 function nextLevel() {
     if(maxLevel <= ++currentLevel ) {
@@ -170,16 +161,17 @@ function checkAnswer()
     var value = modelEntry.replace(/\s\s*$/, '') //to remove leading white spaces
     value = modelEntry.replace(/^\s\s*/, '') //to remove trailing white spaces
     if (value === answers) {
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
         items.bonus.good("flower");
-        items.edit.text = "";
-        items.hint.text = "hint";
         return true
     } else {
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/lose.wav")
+        items.bonus.bad("flower");
         return false
     }
 }
 
 function showHint()
 {
-    items.hint.text=level.category;
+    items.hintimage.source=level.imgPrefix+level.content[0].content[temp].image;
 }

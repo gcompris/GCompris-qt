@@ -3,8 +3,7 @@
  * Copyright (C) 2016  Komal Parmaar <parmaark@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *    Komal Parmaar <parmaark@gmail.com> (Qt Quick port)
+ *    Komal Parmaar <parmaark@gmail.com> (Qt Quick)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -25,7 +24,7 @@ import QtGraphicalEffects 1.0
 import GCompris 1.0
 import "../../core"
 import "jumbled_words.js" as Activity
-//import "qrc:/gcompris/src/core/core.js" as Core
+import "qrc:/gcompris/src/core/core.js" as Core
 
 ActivityBase {
     id: activity
@@ -44,6 +43,8 @@ ActivityBase {
 
         Component.onCompleted: {
             activity.start.connect(start)
+            activity.stop.connect(stop)
+
         }
 
 //QML items needed in javascript
@@ -53,15 +54,20 @@ ActivityBase {
             property alias background: background
             property alias parser: parser
             property alias bar: bar
-            property alias timer: timer
             property alias questionItem: questionItem
             property alias bonus: bonus
-            property alias keyboard: keyboard
+            //property alias keyboard: keyboard
             property alias edit: edit
             property alias hint: hintText
+            property alias submit: submit
+            property alias hintimage: hintImage
             property alias score: score
             property alias locale: background.locale
             property alias text: questionText.text
+            property GCAudio audioEffects: activity.audioEffects
+            property GCAudio audioVoices: activity.audioVoices
+
+
 
         }
         onVoiceError: {
@@ -76,12 +82,6 @@ ActivityBase {
         }
         onStop: {
             Activity.stop()
-        }
-
-        Timer {
-            id: timer
-            interval: 600
-            onTriggered: Activity.checkAnswer()
         }
 
         DialogActivityConfig {
@@ -195,8 +195,7 @@ ActivityBase {
                     hoverEnabled: ApplicationInfo.isMobile ? false : true
 
                     onClicked: {
-                        if (Activity.checkAnswer()) {
-                        }
+                        Activity.checkAnswer();
                     }
                 }
             }
@@ -207,7 +206,6 @@ ActivityBase {
                 anchors.verticalCenter: parent.verticalCenter
                 opacity: 1.0
                 z:11
-                text: ""
                 fontSize: 44
                 font.bold: true
                 style: Text.Outline
@@ -247,7 +245,7 @@ ActivityBase {
                     horizontalCenter: parent.horizontalCenter
                 }
                 opacity: 1.0
-                text: "hint"
+                text:qsTr("Hint")
                 fontSize: mediumSize
                 font.bold: true
                 style: Text.Outline
@@ -256,9 +254,33 @@ ActivityBase {
             }
         }
 
+        Image{
+            id : hintImage
+            anchors {
+                    left:parent.left
+                    bottom:flick.top
+            }
+        }
+
+
+
+        Rectangle {
+            id: flickRect
+            anchors.fill: flick
+            border.color: "#FFFFFFFF"
+            border.width: 2
+            height:flick.height
+            color: "#000065"
+            opacity: 0.31
+            radius: 10
+        }
+
         Flickable {
             id: flick
-            anchors.leftMargin: 350 * ApplicationInfo.ratio
+            anchors.leftMargin: 300 * ApplicationInfo.ratio
+            anchors.rightMargin: 300 * ApplicationInfo.ratio
+            anchors.bottomMargin: 50 * ApplicationInfo.ratio
+
             anchors {
                 left: parent.left
                 right: parent.right
@@ -293,20 +315,17 @@ ActivityBase {
                 wrapMode: TextEdit.Wrap
                 textFormat: TextEdit.RichText
                 onCursorRectangleChanged: {
-
                     flick.ensureVisible(cursorRectangle)
-                    timer.start()
                 }
-
-
                 font {
-                    pointSize: (18 + ApplicationSettings.baseFontSize) * ApplicationInfo.fontRatio
+                    pointSize: (44 + ApplicationSettings.baseFontSize) * ApplicationInfo.fontRatio
                     capitalization: ApplicationSettings.fontCapitalization
-                    weight: Font.DemiBold
+                    weight: Font.Bold
                     family: GCSingletonFontLoader.fontLoader.name
                     letterSpacing: ApplicationSettings.fontLetterSpacing
                     wordSpacing: 10
                 }
+
                 cursorDelegate: Rectangle {
                     id: cursor
                     width: 10
@@ -357,6 +376,51 @@ ActivityBase {
             }
         }
 
+        Rectangle {
+            id: submit
+            anchors.fill: submitText
+            border.color: "#FFFFFFFF"
+            border.width: 2
+            height:submitText.height
+            color: "#000065"
+            opacity: 0.31
+            radius: 10
+
+            MouseArea {
+                id: mouseAreaSubmit
+                anchors.fill: parent
+                hoverEnabled: ApplicationInfo.isMobile ? false : true
+                onClicked: {
+                    if(Activity.checkAnswer())
+                    {
+                        edit.text=""
+                        hintText.text="Hint"
+                        hintImage.source=""
+                    }
+                    else
+                    {
+                        edit.text=""
+                        hintText.text="Hint"
+                    }
+                 }
+            }
+        }
+
+        GCText {
+            id: submitText
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors{
+                bottom: bar.top
+                margins: 10
+            }
+            opacity: 1.0
+            text:qsTr("Submit")
+            fontSize: mediumSize
+            font.bold: true
+            style: Text.Outline
+            styleColor: "#2a2a2a"
+           color: "white"
+        }
         GCText {
             id: text
             anchors {
@@ -367,69 +431,6 @@ ActivityBase {
                 margins: 10
               }
         }
-        VirtualKeyboard {
-            id: keyboard
-            anchors.bottom: parent.bottom
-            anchors.horizontalCenter: parent.horizontalCenter
-            width: parent.width
-            onKeypress: {
-                if(text == backspace)
-                    edit.backspace()
-                else
-                    edit.insertText(text)
-            }
-            onError: console.log("VirtualKeyboard error: " + msg);
-            layout: [
-                [
-                    { label: "0" },
-                    { label: "1" },
-                    { label: "2" },
-                    { label: "3" },
-                    { label: "4" },
-                    { label: "5" },
-                    { label: "6" },
-                    { label: "7" },
-                    { label: "8" },
-                    { label: "9" }
-                ],
-                [
-                    { label: "A" },
-                    { label: "B" },
-                    { label: "C" },
-                    { label: "D" },
-                    { label: "E" },
-                    { label: "F" },
-                    { label: "G" },
-                    { label: "H" },
-                    { label: "I" }
-                ],
-                [
-                    { label: "J" },
-                    { label: "K" },
-                    { label: "L" },
-                    { label: "M" },
-                    { label: "N" },
-                    { label: "O" },
-                    { label: "P" },
-                    { label: "Q" },
-                    { label: "R" }
-                ],
-                [
-                    { label: "S" },
-                    { label: "T" },
-                    { label: "U" },
-                    { label: "V" },
-                    { label: "W" },
-                    { label: "X" },
-                    { label: "Y" },
-                    { label: "Z" },
-                    { label: " " },
-                    { label: backspace}
-                ]
-            ]
-
-}
-
 
         Score {
             id: score
@@ -443,18 +444,29 @@ ActivityBase {
 
         Bar {
             id: bar
-            anchors.bottom: keyboard.top
-            content: BarEnumContent { value: help | home | level | reload}
+            content: BarEnumContent { value: help | home | level | reload | config}
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                displayDialog(dialogHelpLeftRight)
             }
             onHomeClicked: activity.home()
             onReloadClicked: {
                edit.text = ''
                hintText.text = 'Hint';
+               hintImage.source="";
             }
-            onPreviousLevelClicked: Activity.previousLevel()
-            onNextLevelClicked: Activity.nextLevel()
+            onPreviousLevelClicked: {
+                hintImage.source="";
+                Activity.previousLevel()
+            }
+            onNextLevelClicked: {
+                hintImage.source="";
+                Activity.nextLevel()
+            }
+            onConfigClicked: {
+                dialogActivityConfig.active = true
+                dialogActivityConfig.setDefaultValues()
+                displayDialog(dialogActivityConfig)
+            }
         }
 
         Bonus {
@@ -471,3 +483,4 @@ ActivityBase {
         }
 }
 }
+

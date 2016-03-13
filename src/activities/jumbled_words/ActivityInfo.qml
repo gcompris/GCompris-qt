@@ -22,15 +22,16 @@ ActivityInfo {
   difficulty: 1
   icon: "jumbled_words/jumbled_words.svg"
   author: "Komal Parmaar &lt;parmaark@gmail.com&gt;"
-  demo: true
-  title: "Jumbled letters"
-  description: "Type in the correct meaningful word from the given jumbled word.
-  A hint box is provided below the jumbled word. Click on the hint box to get a hint."
+  demo: false
+  title: qsTr("Jumbled letters")
+  description: qsTr("A set of jumbled letters is presented. Guess the correct word forming
+  from the jumbled letters and write it in the Input Box. ")
   //intro: "put here in comment the text for the intro voice"
-  goal: "To identify all the jumbled words correctly"
-  prerequisite: "None"
-  manual: ""
+  goal: qsTr("Identify the correct word and its spelling from the jumbled set of letters provided.")
+  prerequisite: qsTr("None")
+  manual: qsTr("Type the word. Click on the Submit button to check whether the word
+  and its spelling is correct or not. You can use the Hint option to get a visual hint for the word.")
   credit: ""
   section: "reading"
-  createdInVersion: 1000
+  createdInVersion: 6000
 }
