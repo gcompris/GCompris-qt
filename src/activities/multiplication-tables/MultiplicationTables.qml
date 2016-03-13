@@ -22,13 +22,6 @@
 import QtQuick 2.1
 
 import "../../core"
-import "./"
-Erase {
-    type: "click"
-}
-
-/*
-import "../../core"
 import "multiplication-tables.js" as Activity
 
 ActivityBase {
@@ -61,25 +54,38 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        GCText {
+        /*GCText {
             anchors.centerIn: parent
             text: "multiplication-tables activity"
             fontSize: largeSize
-        }
+        }*/
         /////////////////////////////////////////////////////
-        Rectangle {
-            width: parent.width/2
-            height: parent.width/2
-            color: "green"
-            Rectangle {
-                anchors.
-            }
-
-            MouseArea {
-                anchors.fill: parent
-                onClicked: { parent.color = 'red' }
+        
+        Column {
+            Repeater{
+                id: repeater_col
+                model: 10
+                Row {
+                    Repeater {
+                        id: repeater_row
+                        model: 10
+                        Rectangle {
+                            width: 100; height: 40
+                            border.width: 1
+                            color: "yellow"
+                            MouseArea {
+                                id: mouseArea
+                                anchors.fill: parent
+                                /*onClicked {
+                                    parent.color: "red"
+                                }*/
+                            }
+                        }
+                    }
+                }
             }
         }
+        repeater_row.itemAt(1).color: "red"
 
 
         /////////////////////////////////////////
@@ -107,4 +113,3 @@ ActivityBase {
     }
 
 }
-*/
