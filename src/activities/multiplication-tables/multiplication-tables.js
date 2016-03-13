@@ -37,6 +37,7 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+
 }
 
 function nextLevel() {
@@ -51,4 +52,12 @@ function previousLevel() {
         currentLevel = numberOfLevel - 1
     }
     initLevel();
+}
+
+function colorit() {
+
+    /*for(var i=0; i<repeater.count; i++)
+    {
+        repeater.itemAt(i).color="red"
+    }*/
 }

@@ -49,44 +49,145 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+
+            property int spacing: 5
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        /*GCText {
-            anchors.centerIn: parent
-            text: "multiplication-tables activity"
-            fontSize: largeSize
-        }*/
         /////////////////////////////////////////////////////
         
-        Column {
-            Repeater{
-                id: repeater_col
-                model: 10
-                Row {
-                    Repeater {
-                        id: repeater_row
-                        model: 10
-                        Rectangle {
-                            width: 100; height: 40
-                            border.width: 1
-                            color: "yellow"
-                            MouseArea {
-                                id: mouseArea
-                                anchors.fill: parent
-                                /*onClicked {
-                                    parent.color: "red"
-                                }*/
-                            }
-                        }
+        Grid {
+            id:grid_row
+            anchors {
+                top: parent.top
+                topMargin: 20
+                left: parent.left
+                leftMargin: 20
+            }
+            spacing: items.spacing
+            columns: 11
+            rows: 1
+            Repeater {
+                id: repeater_grid_row
+                model: 11
+                Rectangle {
+                   id: dots_grid_row
+                   width: main.width/20
+                   height: main.height/20
+                   GCText{ text: index}
+                }
+            }
+
+        }
+
+        Grid {
+            id:grid_col
+            anchors {
+                top: parent.top
+                topMargin: 20
+                left: parent.left
+                leftMargin: 20
+            }
+            spacing: items.spacing
+            columns: 1
+            rows: 11
+            Repeater {
+                id: repeater_grid_col
+                model: 11
+                Rectangle {
+                   id: dots_grid_col
+                   width: main.width/20
+                   height: main.height/20
+                   GCText{ text: index}
+                }
+            }
+
+        }
+
+        Grid {
+            id: grid
+            anchors {
+                top: grid_row.bottom
+                topMargin: items.spacing
+                left: grid_col.right
+                leftMargin: items.spacing
+            }
+
+            spacing: items.spacing
+            columns: 10
+            rows: 10
+
+            Repeater {
+               id: repeater
+               model: 100
+               Rectangle {
+                  id: dots
+                  width: main.width/20
+                  height: main.height/20
+                  state: "default"
+                  states:[
+                      State {
+                          name: "default"
+                          PropertyChanges { target: dots; color: "green"}
+                      },
+                      State {
+                          name: "active"
+                          PropertyChanges { target: dots; color: "red"}
+                      }
+                  ]
+
+                  MouseArea {
+                      anchors.fill: parent
+                      onClicked: {
+                          if (dots.state == "default")
+                              dots.state = "active"
+                          else
+                              dots.state = "default"
+                      }
+                  }
+               }
+            }
+        }
+
+        GCText{
+            id: numberForTable
+            anchors {
+                top: parent.top
+                topMargin: main.height/5 - numberForTable.height/2
+                right: parent.right
+                rightMargin: (main.width - grid.width - grid_col.width - numberForTable.width) / 2
+            }
+            fontSize: 80
+            text: "4"
+        }
+        Rectangle {
+            anchors {
+                bottom: parent.bottom
+                topMargin: items.spacing
+                right: parent.right
+                leftMargin: items.spacing
+            }
+            width: 50
+            height: 50
+            color:"red"
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    if(repeater.itemAt(1).color=="red")
+                    {
+                        repeater.itemAt(2).color="red"
                     }
+                    repeater.itemAt(3).color="red"
+                    //Activity.colorit()
+                    /*for(var i=0; i<repeater.count; i++)
+                    {
+                        repeater.itemAt(i).color="red"
+                    }*/
                 }
             }
         }
-        repeater_row.itemAt(1).color: "red"
-
 
         /////////////////////////////////////////
 
