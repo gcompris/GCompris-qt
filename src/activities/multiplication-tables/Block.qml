@@ -48,22 +48,26 @@ Image {
             playSound()
             block.opacity = 0.0
         }
-    }
-
-    onLeave: {
-        if(opacity != 0) {
+        if(opacity != 1.0) {
+            playSound()
             block.opacity = 1.0
         }
     }
 
+    /*onLeave: {
+        if(opacity != 0) {
+            block.opacity = 1.0
+        }
+    }*/
+
     Behavior on opacity { PropertyAnimation { duration: 200 } }
 
     onOpacityChanged: {
-        if (opacity == 0) {
+        /*if (opacity == 0) {
             mouseArea.enabled = false
             mouseArea.hoverEnabled = false
             Activity.blockKilled()
-        }
+        }*/
     }
 
     MouseArea {
@@ -77,7 +81,7 @@ Image {
                 block.enter()
             }
         }
-        onDoubleClicked: {
+        /*onDoubleClicked: {
             if(block.type === "double_click") {
                 enabled = false
                 block.enter()
@@ -92,7 +96,7 @@ Image {
             if(block.type === "erase") {
                 block.leave()
             }
-        }
+        }*/
     }
 
     function playSound()

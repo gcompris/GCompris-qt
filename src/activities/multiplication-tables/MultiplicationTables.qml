@@ -22,6 +22,13 @@
 import QtQuick 2.1
 
 import "../../core"
+import "./"
+Erase {
+    type: "click"
+}
+
+/*
+import "../../core"
 import "multiplication-tables.js" as Activity
 
 ActivityBase {
@@ -59,6 +66,23 @@ ActivityBase {
             text: "multiplication-tables activity"
             fontSize: largeSize
         }
+        /////////////////////////////////////////////////////
+        Rectangle {
+            width: parent.width/2
+            height: parent.width/2
+            color: "green"
+            Rectangle {
+                anchors.
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: { parent.color = 'red' }
+            }
+        }
+
+
+        /////////////////////////////////////////
 
         DialogHelp {
             id: dialogHelp
@@ -83,3 +107,4 @@ ActivityBase {
     }
 
 }
+*/
