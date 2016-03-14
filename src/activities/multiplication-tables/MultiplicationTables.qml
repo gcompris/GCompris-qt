@@ -196,13 +196,16 @@ ActivityBase {
         Rectangle {
             anchors {
                 bottom: parent.bottom
-                topMargin: items.spacing
-                right: parent.right
-                leftMargin: items.spacing
+                bottomMargin: items.spacing
+                left: bar.right
+                leftMargin: 500
             }
-            width: 50
-            height: 50
-            color:"red"
+            width: 300
+            height: 100
+            color:"yellow"
+            GCText {
+                text: "Check your answer"
+            }
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
@@ -220,7 +223,7 @@ ActivityBase {
                             if( i%10 < items.multiplier && i < items.multiplicand *10 ) {
                                 items.answer = false
                             }  // To check if green then not in red area
-                            //console.log((i+1), "asdfgh", items.multiplicand, "asd", ( i%10 < items.multiplier && i < items.multiplicand *10 ))
+                            //console.log((i+1), "asdfgh", items.multiplicand, "asd", ( i%10 < items.multiplier && i < items.multiplicand *10 ), "answere", items.answer)
                         }
                     }
                     Activity.checkit()

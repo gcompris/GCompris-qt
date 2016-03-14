@@ -43,7 +43,7 @@ function initLevel() {
     tableControl = 1
 
     for(var i=0; i<items.repeater.count; i++) {
-        items.repeater.itemAt(i).color="green"
+        items.repeater.itemAt(i).state="default"
     }
     for(i=0; i<items.gridTableRepeater.count; i++) {
         items.gridTableRepeater.itemAt(i).opacity=0
@@ -62,23 +62,23 @@ function previousLevel() {
     if(--currentLevel < 0) {
         currentLevel = numberOfLevel - 1
     }
+
     initLevel();
 }
 
 function checkit() {
     //console.log(items.multiplier, "asdf", items.multiplicand)
     if(items.answer) {
-        items.gridTableRepeater.itemAt(tableControl).opacity = 1
         items.multiplier++
-        tableControl++
-        console.log(multiplier)
         if(items.multiplier==11) {
             items.bonus.good("flower")
-            items.bonus.win.connect(nextLevel())
         }
+        items.gridTableRepeater.itemAt(tableControl).opacity=1
+        tableControl++
     }
     else {
         items.bonus.bad("flower")
         items.answer = true
     }
+    console.log(items.multiplicand, "asdfgh", items.answer)
 }
