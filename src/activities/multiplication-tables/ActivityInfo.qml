@@ -30,6 +30,6 @@ ActivityInfo {
   prerequisite: qsTr("Basics of multiplication and tables")
   manual: ""
   credit: ""
-  section: "fun"
+  section: "math"
   createdInVersion: 6000
 }
