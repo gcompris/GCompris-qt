@@ -54,10 +54,13 @@ function previousLevel() {
     initLevel();
 }
 
-function colorit() {
-
-    /*for(var i=0; i<repeater.count; i++)
-    {
-        repeater.itemAt(i).color="red"
-    }*/
+function checkit() {
+    if(items.answer) {
+        items.bonus.good("flower")
+        items.answer = true
+    }
+    else {
+        items.bonus.bad("flower")
+        items.answer = true
+    }
 }

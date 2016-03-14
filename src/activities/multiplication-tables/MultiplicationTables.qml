@@ -49,8 +49,12 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property alias repeater: repeater
 
             property int spacing: 5
+            property int multiplier: 1
+            property int multiplicand: 4
+            property bool answer: true
         }
 
         onStart: { Activity.start(items) }
@@ -124,17 +128,20 @@ ActivityBase {
                model: 100
                Rectangle {
                   id: dots
-                  width: main.width/20
-                  height: main.height/20
+                  width: main.width / 20
+                  height: main.height / 20
                   state: "default"
+                  property bool clickedFlag: false
                   states:[
                       State {
                           name: "default"
                           PropertyChanges { target: dots; color: "green"}
+                          PropertyChanges { target: dots; clickedFlag: false}
                       },
                       State {
                           name: "active"
                           PropertyChanges { target: dots; color: "red"}
+                          PropertyChanges { target: dots; clickedFlag: true}
                       }
                   ]
 
@@ -175,16 +182,31 @@ ActivityBase {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    if(repeater.itemAt(1).color=="red")
+                    /*if(repeater.itemAt(1).clickedFlag == true)
                     {
                         repeater.itemAt(2).color="red"
-                    }
-                    repeater.itemAt(3).color="red"
-                    //Activity.colorit()
-                    /*for(var i=0; i<repeater.count; i++)
-                    {
-                        repeater.itemAt(i).color="red"
                     }*/
+                    //repeater.itemAt(11).color="red"
+                    //Activity.colorit()
+                    for(var i=0; i<repeater.count; i++) {
+                        /*if(repeater.itemAt(i).clickedFlag) {
+                            if( (i+1)%10 > items.multiplier ) {
+                                items.answer = false
+                            }
+                            if((i+1) > items.multiplicand *10) {
+                                items.answer = false
+                            }
+                        }*/
+                        if(!(repeater.itemAt(i).clickedFlag)) {
+                            if( (i+1)%10 <= items.multiplier ) {
+                                items.answer = false
+                            }
+                            if((i+1) <= items.multiplicand *10) {
+                                items.answer = false
+                            }
+                        }
+                    }
+                    Activity.checkit()
                 }
             }
         }

@@ -35,7 +35,7 @@ Image {
             name: "invisible"
             PropertyChanges {
                 target: piece
-                opacity: 0
+                opacity: 1
             }
         },
         State {
