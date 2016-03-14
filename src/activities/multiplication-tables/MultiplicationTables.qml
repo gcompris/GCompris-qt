@@ -53,7 +53,7 @@ ActivityBase {
 
             property int spacing: 5
             property int multiplier: 1
-            property int multiplicand: 4
+            property int multiplicand: 1
             property bool answer: true
         }
 
@@ -167,8 +167,18 @@ ActivityBase {
                 rightMargin: (main.width - grid.width - grid_col.width - numberForTable.width) / 2
             }
             fontSize: 80
-            text: "4"
+            text: items.multiplicand
         }
+
+        Rectangle {
+            id: table
+            anchors {
+                top: numberForTable.bottom
+                horizontalCenter: numberForTable.horizontalCenter
+            }
+            color:"blue"
+        }
+
         Rectangle {
             anchors {
                 bottom: parent.bottom
@@ -182,28 +192,21 @@ ActivityBase {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    /*if(repeater.itemAt(1).clickedFlag == true)
-                    {
-                        repeater.itemAt(2).color="red"
-                    }*/
-                    //repeater.itemAt(11).color="red"
-                    //Activity.colorit()
                     for(var i=0; i<repeater.count; i++) {
-                        /*if(repeater.itemAt(i).clickedFlag) {
-                            if( (i+1)%10 > items.multiplier ) {
+                        if(repeater.itemAt(i).clickedFlag) {
+                            if( i%10 >= items.multiplier ) {
                                 items.answer = false
                             }
-                            if((i+1) > items.multiplicand *10) {
+                            if( i >= items.multiplicand *10 ) {
                                 items.answer = false
-                            }
-                        }*/
+                            } // To check if red then not outside red area
+                            //console.log((i+1), "asdfgh", items.multiplicand, "asd", items.multiplier,"asdf",( i%10 >= items.multiplier ), "asdf", ( i >= items.multiplicand *10 ))
+                        }
                         if(!(repeater.itemAt(i).clickedFlag)) {
-                            if( (i+1)%10 <= items.multiplier ) {
+                            if( i%10 < items.multiplier && i < items.multiplicand *10 ) {
                                 items.answer = false
-                            }
-                            if((i+1) <= items.multiplicand *10) {
-                                items.answer = false
-                            }
+                            }  // To check if green then not in red area
+                            //console.log((i+1), "asdfgh", items.multiplicand, "asd", ( i%10 < items.multiplier && i < items.multiplicand *10 ))
                         }
                     }
                     Activity.checkit()
