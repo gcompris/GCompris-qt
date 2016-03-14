@@ -204,6 +204,7 @@ ActivityBase {
             height: 100
             color:"yellow"
             GCText {
+                anchors.horizontalCenter: parent.horizontalCenter
                 text: "Check your answer"
             }
             MouseArea {
