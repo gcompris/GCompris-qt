@@ -23,7 +23,7 @@ ActivityInfo {
   icon: "multiplication-tables/multiplication-tables.svg"
   author: "Your Name &lt;yy@zz.org&gt;"
   demo: true
-  title: "MultiplicationTables activity"
+  title: "Let's Break Some Tables"
   description: ""
   //intro: "put here in comment the text for the intro voice"
   goal: ""

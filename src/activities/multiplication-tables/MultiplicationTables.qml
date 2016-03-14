@@ -1,6 +1,6 @@
 /* GCompris - multiplication-tables.qml
  *
- * Copyright (C) 2016 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 Varun Kumar <varun13169@iiitd.ac.in>
  *
  * Authors:
  *   <THE GTK VERSION AUTHOR> (GTK+ version)
@@ -30,10 +30,15 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
-        anchors.fill: parent
-        color: "#ABCDEF"
+        fillMode: Image.PreserveAspectCrop
+        source: "./resource/numbers.svg"
+        sourceSize.width: parent.width
+        sourceSize.height: parent.height
+
+        //anchors.fill: parent
+        //color: "#ABCDEF"
         signal start
         signal stop
 
@@ -202,10 +207,10 @@ ActivityBase {
             }
             width: 300
             height: 100
-            color:"yellow"
+            color:"#3821CA"
             GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: "Check your answer"
+                text: "Click to Verify\n  Your Answer"
             }
             MouseArea {
                 anchors.fill: parent
