@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2016 Your Name <yy@zz.org>
+ * Copyright (C) 2016 Varun Kumar <varun13169@iiitd.ac.in>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,15 +19,15 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "multiplication-tables/MultiplicationTables.qml"
-  difficulty: 1
+  difficulty: 2
   icon: "multiplication-tables/multiplication-tables.svg"
-  author: "Your Name &lt;yy@zz.org&gt;"
+  author: "Varun Kumar &lt;varun13169@iiitd.ac.in&gt;"
   demo: true
-  title: "Let's Break Some Tables"
+  title: qsTr("Let's Break Some Tables")
   description: ""
   //intro: "put here in comment the text for the intro voice"
   goal: ""
-  prerequisite: ""
+  prerequisite: qsTr("Basics of multiplication and tables")
   manual: ""
   credit: ""
   section: "fun"

@@ -3,8 +3,7 @@
  * Copyright (C) 2016 Varun Kumar <varun13169@iiitd.ac.in>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   Varun Kumar <varun13169@iiitd.ac.in>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -210,7 +209,7 @@ ActivityBase {
             color:"#3821CA"
             GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
-                text: "Click to Verify\n  Your Answer"
+                text: qsTr("Click to Verify\n  Your Answer")
             }
             MouseArea {
                 anchors.fill: parent

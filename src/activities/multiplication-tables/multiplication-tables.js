@@ -1,10 +1,9 @@
 /* GCompris - multiplication-tables.js
  *
- * Copyright (C) 2016 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 Varun Kumar <varun13169@iiitd.ac.in>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *   Varun Kumar <varun13169@iiitd.ac.in>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -67,7 +66,6 @@ function previousLevel() {
 }
 
 function checkit() {
-    //console.log(items.multiplier, "asdf", items.multiplicand)
     if(items.answer) {
         items.multiplier++
         if(items.multiplier==11) {
@@ -80,5 +78,4 @@ function checkit() {
         items.bonus.bad("flower")
         items.answer = true
     }
-    console.log(items.multiplicand, "asdfgh", items.answer)
 }
