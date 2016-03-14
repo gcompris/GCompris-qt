@@ -50,10 +50,13 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property alias repeater: repeater
+            property alias gridTableRepeater: gridTableRepeater
 
             property int spacing: 5
             property int multiplier: 1
             property int multiplicand: 1
+            property int rectHeight: main.height/15
+            property int rectWidth: main.height/15 //main.width/20
             property bool answer: true
         }
 
@@ -78,8 +81,8 @@ ActivityBase {
                 model: 11
                 Rectangle {
                    id: dots_grid_row
-                   width: main.width/20
-                   height: main.height/20
+                   width: items.rectWidth
+                   height: items.rectHeight
                    GCText{ text: index}
                 }
             }
@@ -102,8 +105,8 @@ ActivityBase {
                 model: 11
                 Rectangle {
                    id: dots_grid_col
-                   width: main.width/20
-                   height: main.height/20
+                   width: items.rectWidth
+                   height: items.rectHeight
                    GCText{ text: index}
                 }
             }
@@ -128,8 +131,8 @@ ActivityBase {
                model: 100
                Rectangle {
                   id: dots
-                  width: main.width / 20
-                  height: main.height / 20
+                  width: items.rectWidth
+                  height: items.rectHeight
                   state: "default"
                   property bool clickedFlag: false
                   states:[
@@ -162,7 +165,7 @@ ActivityBase {
             id: numberForTable
             anchors {
                 top: parent.top
-                topMargin: main.height/5 - numberForTable.height/2
+                topMargin: main.height/5 - 2*numberForTable.height/3
                 right: parent.right
                 rightMargin: (main.width - grid.width - grid_col.width - numberForTable.width) / 2
             }
@@ -170,13 +173,24 @@ ActivityBase {
             text: items.multiplicand
         }
 
-        Rectangle {
-            id: table
+        Grid {
+            id: gridTable
             anchors {
                 top: numberForTable.bottom
+                topMargin: -10
                 horizontalCenter: numberForTable.horizontalCenter
             }
-            color:"blue"
+            spacing: 2
+            columns: 1
+            rows: 10
+            Repeater {
+                id: gridTableRepeater
+                model: 10
+                GCText{
+                    text: items.multiplicand + " x " + (index+1) + " = " + items.multiplicand*(index+1)
+                    opacity: 0.0
+                }
+            }
         }
 
         Rectangle {

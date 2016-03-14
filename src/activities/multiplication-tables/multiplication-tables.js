@@ -23,8 +23,9 @@
 .import QtQuick 2.0 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 4
+var numberOfLevel = 10
 var items
+var tableControl = 1
 
 function start(items_) {
     items = items_
@@ -37,7 +38,17 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    items.multiplier = 1
+    items.multiplicand = items.bar.level
+    tableControl = 1
 
+    for(var i=0; i<items.repeater.count; i++) {
+        items.repeater.itemAt(i).color="green"
+    }
+    for(i=0; i<items.gridTableRepeater.count; i++) {
+        items.gridTableRepeater.itemAt(i).opacity=0
+    }
+    items.gridTableRepeater.itemAt(0).opacity = 1
 }
 
 function nextLevel() {
@@ -55,9 +66,16 @@ function previousLevel() {
 }
 
 function checkit() {
+    //console.log(items.multiplier, "asdf", items.multiplicand)
     if(items.answer) {
-        items.bonus.good("flower")
-        items.answer = true
+        items.gridTableRepeater.itemAt(tableControl).opacity = 1
+        items.multiplier++
+        tableControl++
+        console.log(multiplier)
+        if(items.multiplier==11) {
+            items.bonus.good("flower")
+            items.bonus.win.connect(nextLevel())
+        }
     }
     else {
         items.bonus.bad("flower")
