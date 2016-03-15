@@ -304,7 +304,7 @@ ActivityBase {
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
-            onReloadClicked: Activity.initLevel()
+            onReloadClicked: Activity.start(items, url, numberOfLevels)
         }
         Bonus {
             id: bonus

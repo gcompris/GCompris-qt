@@ -19,3 +19,7 @@ All monuments: Wikipedia
 Level 5
 Background http://www.cloudclipart.com/clipart/countries-clipart/usa-clipart/usa-map-silhouette-2-detail
 All monuments: Wikipedia
+
+Level 6
+Background http://www.clipartbest.com/clipart-dcrMeMMc9
+All pyramids: Wikipedia
