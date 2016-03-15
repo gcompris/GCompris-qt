@@ -204,7 +204,7 @@ ActivityBase {
                 left: bar.right
                 leftMargin: 500
             }
-            width: 300
+            width: 250
             height: 100
             color:"#3821CA"
             GCText {
