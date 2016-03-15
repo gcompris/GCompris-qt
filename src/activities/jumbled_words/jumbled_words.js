@@ -20,49 +20,41 @@
  */
 
 .pragma library
-.import QtQuick 2.0 as Quick
 .import GCompris 1.0 as GCompris
-.import QtGraphicalEffects 1.0 as QtGraphicalEffects
-
 .import "qrc:/gcompris/src/core/core.js" as Core
 
 var url = "qrc:/gcompris/src/activities/jumbled_words/resource/"
-var url1 = "qrc:/gcompris/src/activities/lang/resource/words_sample.json"
 var defaultLevelsFile = "qrc:/gcompris/src/activities/lang/resource/words_sample.json";
 
 var currentLevel
 var maxLevel
 var maxSubLevel
 var currentSubLevel
+var levels
+var level
 var items
-var levels;
-var level;
-var temp;
-var copy;
-var questions;
-var answers;
-var items;
-var generate;
-var array = [];
+var index
+var answers
+var jumble=[]
 
 function start(items_) {
 
     items = items_
     loadLevels();
-    currentLevel = 0;
-    currentSubLevel = 0;
-    maxLevel = levels.length;
+    currentLevel = 0
+    currentSubLevel = 0
+    maxLevel = levels.length
     initLevel()
 }
 
 function loadLevels()
 {
-    var filename = GCompris.ApplicationInfo.getLocaleFilePath(url1);
+    var filename = GCompris.ApplicationInfo.getLocaleFilePath(defaultLevelsFile); //To extend to more languages(future)
     levels = items.parser.parseFromUrl(filename);
-    if (levels == null) {
+    if (levels === null) {
         console.warn("Jumbled_words: Invalid levels file " + filename);
         levels = items.parser.parseFromUrl(defaultLevelsFile);
-        if (levels == null) {
+        if (levels === null) {
             console.error("Jumbled_words: Invalid default levels file "
                 + defaultLevelsFile + ". Can't continue!");
             return;
@@ -88,44 +80,32 @@ function shuffleString(s)
     return a.join("");
 }
 
+
 function initLevel() {
     items.bar.level = currentLevel + 1
-    if (currentSubLevel == 0) {
+    var questions
+    items.hintimage.source=Qt.binding(function() { return ""})
+    if (currentSubLevel === 0) {
         level = levels[currentLevel];
         maxSubLevel = level.content[0].content.length;
         for(var i=0;i< maxSubLevel ; i++)
         {
-            array[i]=i;
+            jumble[i]=i;
         }
-        array=Core.shuffle(array);
+        jumble=Core.shuffle(jumble);
         items.score.numberOfSubLevels = maxSubLevel;
-        items.score.currentSubLevel = "1";
-        temp=array[currentSubLevel];
-        answers = level.content[0].content[temp].description;
-        copy = answers;
-        var demo = shuffleString(answers);
-        if(demo == answers)
-        {
-            demo = shuffleString(answers);
-        }
-        else
-            questions = demo;
+        items.score.currentSubLevel = 1;
     }
     else {
-        do{
-            temp=temp=array[currentSubLevel];
-            generate = level.content[0].content[temp].description;
-
-        } while(copy===generate);
-        copy=generate;
-        answers=generate;
-        demo = shuffleString(answers);
-        do{
-            demo = shuffleString(answers);
-        }while(demo===answers);
-        questions = demo;
         items.score.currentSubLevel = currentSubLevel + 1;
-        }
+    }
+
+    index=jumble[currentSubLevel];
+    answers = level.content[0].content[index].description;
+    do{
+        questions = shuffleString(answers);
+    }while(questions === answers);
+
     items.questionItem.visible = true
     items.questionItem.text = questions;
 }
@@ -157,9 +137,9 @@ function nextSubLevel() {
 
 function checkAnswer()
 {
-    var modelEntry = items.edit.getText(0, items.edit.text.length)
-    var value = modelEntry.replace(/\s\s*$/, '') //to remove leading white spaces
-    value = modelEntry.replace(/^\s\s*/, '') //to remove trailing white spaces
+    showHint()
+    var userInput = items.edit.getText(0, items.edit.text.length)
+    var value = userInput.trim() //to remove leading and trailing white spaces
     if (value === answers) {
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
         items.bonus.good("flower");
@@ -173,5 +153,5 @@ function checkAnswer()
 
 function showHint()
 {
-    items.hintimage.source=level.imgPrefix+level.content[0].content[temp].image;
+    items.hintimage.source=level.imgPrefix+level.content[0].content[index].image;
 }

@@ -22,7 +22,7 @@ ActivityInfo {
   difficulty: 1
   icon: "jumbled_words/jumbled_words.svg"
   author: "Komal Parmaar &lt;parmaark@gmail.com&gt;"
-  demo: false
+  demo: true
   title: qsTr("Jumbled letters")
   description: qsTr("A set of jumbled letters is presented. Guess the correct word forming
   from the jumbled letters and write it in the Input Box. ")

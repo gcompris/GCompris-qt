@@ -47,28 +47,21 @@ ActivityBase {
 
         }
 
-//QML items needed in javascript
+    //QML items needed in javascript
         QtObject {
             id: items
             property Item main: activity.main
-            property alias background: background
             property alias parser: parser
             property alias bar: bar
             property alias questionItem: questionItem
             property alias bonus: bonus
-            //property alias keyboard: keyboard
             property alias edit: edit
-            property alias hint: hintText
-            property alias submit: submit
             property alias hintimage: hintImage
             property alias score: score
             property alias locale: background.locale
-            property alias text: questionText.text
+            property alias background: background
             property GCAudio audioEffects: activity.audioEffects
             property GCAudio audioVoices: activity.audioVoices
-
-
-
         }
         onVoiceError: {
             questionItem.visible = true
@@ -177,7 +170,6 @@ ActivityBase {
             visible: true
 
             property alias text: questionText.text
-            property alias hint: hintText.text
 
             Rectangle {
                 id: questionRect
@@ -223,35 +215,7 @@ ActivityBase {
                 source: questionText
             }
 
-            Image {
-                id: hintRect
-                anchors.fill: hintText
-                source: Activity.url + "cloud.svg"
-                sourceSize.width: hintText.width
-                fillMode: Image.PreserveAspectCrop
-                focus: true
-                height:hintText.height
-                MouseArea{
-                    id: mouseArea2
-                    anchors.fill: parent
-                    hoverEnabled: ApplicationInfo.isMobile ? false : true
-                    onClicked: Activity.showHint()
-                }
-            }
 
-            GCText {
-                id: hintText
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                }
-                opacity: 1.0
-                text:qsTr("Hint")
-                fontSize: mediumSize
-                font.bold: true
-                style: Text.Outline
-                styleColor: "#2a2a2a"
-               color: "white"
-            }
         }
 
         Image{
@@ -318,7 +282,7 @@ ActivityBase {
                     flick.ensureVisible(cursorRectangle)
                 }
                 font {
-                    pointSize: (44 + ApplicationSettings.baseFontSize) * ApplicationInfo.fontRatio
+                    pointSize: (40 + ApplicationSettings.baseFontSize) * ApplicationInfo.fontRatio
                     capitalization: ApplicationSettings.fontCapitalization
                     weight: Font.Bold
                     family: GCSingletonFontLoader.fontLoader.name
@@ -343,35 +307,6 @@ ActivityBase {
                             duration: 1000
                         }
                     }
-
-                }
-                function insertText(text) {
-                    edit.insert(cursorPosition, text)
-                }
-                function backspace() {
-                    if(cursorPosition > 0) {
-                        moveCursorSelection(cursorPosition - 1, TextEdit.SelectCharacters)
-                        cut()
-                    }
-                }
-                function formatLineWith(tag) {
-                    var text = getText(0, length)
-                    var initialPosition = cursorPosition
-                    var first = cursorPosition - 1
-                    for(; first >= 0; first--) {
-                        if(text.charCodeAt(first) === 8233)
-                            break
-                    }
-                    first++
-                    var last = cursorPosition
-                    for(; last < text.length; last++) {
-                        if(text.charCodeAt(last) === 8233)
-                            break
-                    }
-                    var line = getText(first, last)
-                    remove(first, last)
-                    insert(first, '<' + tag + '>' + line + '</' + tag + '>')
-                    cursorPosition = initialPosition
                 }
             }
         }
@@ -393,15 +328,9 @@ ActivityBase {
                 onClicked: {
                     if(Activity.checkAnswer())
                     {
-                        edit.text=""
-                        hintText.text="Hint"
-                        hintImage.source=""
+                        Activity.showHint()
                     }
-                    else
-                    {
-                        edit.text=""
-                        hintText.text="Hint"
-                    }
+                    edit.text=""
                  }
             }
         }
@@ -420,16 +349,6 @@ ActivityBase {
             style: Text.Outline
             styleColor: "#2a2a2a"
            color: "white"
-        }
-        GCText {
-            id: text
-            anchors {
-                left: parent.left
-                right:parent.right
-                top: questionItem.top
-                bottom: flick.top
-                margins: 10
-              }
         }
 
         Score {
@@ -450,16 +369,15 @@ ActivityBase {
             }
             onHomeClicked: activity.home()
             onReloadClicked: {
-               edit.text = ''
-               hintText.text = 'Hint';
-               hintImage.source="";
+               edit.text = Qt.binding(function() { return ""})
+               hintImage.source=Qt.binding(function() { return ""});
             }
             onPreviousLevelClicked: {
-                hintImage.source="";
+                edit.text = Qt.binding(function() { return ""})
                 Activity.previousLevel()
             }
             onNextLevelClicked: {
-                hintImage.source="";
+                edit.text = Qt.binding(function() { return ""})
                 Activity.nextLevel()
             }
             onConfigClicked: {
@@ -473,7 +391,6 @@ ActivityBase {
             id: bonus
             Component.onCompleted: {
                 win.connect(Activity.nextSubLevel)
-
             }
         }
 
