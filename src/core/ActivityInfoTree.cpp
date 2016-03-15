@@ -298,17 +298,22 @@ void ActivityInfoTree::filterBySearch(const QString& text)
 {
     m_menuTree.clear();
     if(!text.trimmed().isEmpty()){
+        // perfrom search on each word entered in the searchField
+        QStringList list = text.split(" ",QString::SkipEmptyParts);
+        foreach(auto searchTerm,list){
+            foreach(auto activity,m_menuTreeFull)
+            {
+                if(activity->title().contains(searchTerm.trimmed(),Qt::CaseInsensitive) or
+                    activity->name().contains(searchTerm.trimmed(),Qt::CaseInsensitive) or
+                    activity->description().contains(searchTerm.trimmed(),Qt::CaseInsensitive)){
 
-        foreach(auto activity,m_menuTreeFull)
-        {
-            if(activity->title().contains(text.trimmed(),Qt::CaseInsensitive) or
-                    activity->name().contains(text.trimmed(),Qt::CaseInsensitive) or
-                    activity->description().contains(text.trimmed(),Qt::CaseInsensitive)){
-
-                m_menuTree.push_back(activity);
+                    // add the activity only if it's not added
+                    if(m_menuTree.indexOf(activity) == -1)
+                        m_menuTree.push_back(activity);
+                    }
             }
-        }
 
+        }
     }
     else
         m_menuTree = m_menuTreeFull;
