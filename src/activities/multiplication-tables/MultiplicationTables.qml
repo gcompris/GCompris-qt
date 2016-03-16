@@ -53,6 +53,8 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property alias repeaterGridRow: repeaterGridRow
+            property alias repeaterGridCol: repeaterGridCol
             property alias repeater: repeater
             property alias gridTableRepeater: gridTableRepeater
 
@@ -70,7 +72,7 @@ ActivityBase {
         /////////////////////////////////////////////////////
         
         Grid {
-            id:grid_row
+            id:gridRow
             anchors {
                 top: parent.top
                 topMargin: 20
@@ -81,10 +83,11 @@ ActivityBase {
             columns: 11
             rows: 1
             Repeater {
-                id: repeater_grid_row
+                id: repeaterGridRow
                 model: 11
                 Rectangle {
-                   id: dots_grid_row
+                   id: dotsGridRow
+                   color: "white"
                    width: items.rectWidth
                    height: items.rectHeight
                    GCText{ text: index}
@@ -94,7 +97,7 @@ ActivityBase {
         }
 
         Grid {
-            id:grid_col
+            id:gridCol
             anchors {
                 top: parent.top
                 topMargin: 20
@@ -105,10 +108,11 @@ ActivityBase {
             columns: 1
             rows: 11
             Repeater {
-                id: repeater_grid_col
+                id: repeaterGridCol
                 model: 11
                 Rectangle {
-                   id: dots_grid_col
+                   id: dotsGridCol
+                   color: "white"
                    width: items.rectWidth
                    height: items.rectHeight
                    GCText{ text: index}
@@ -120,9 +124,9 @@ ActivityBase {
         Grid {
             id: grid
             anchors {
-                top: grid_row.bottom
+                top: gridRow.bottom
                 topMargin: items.spacing
-                left: grid_col.right
+                left: gridCol.right
                 leftMargin: items.spacing
             }
 
@@ -131,37 +135,37 @@ ActivityBase {
             rows: 10
 
             Repeater {
-               id: repeater
-               model: 100
-               Rectangle {
-                  id: dots
-                  width: items.rectWidth
-                  height: items.rectHeight
-                  state: "default"
-                  property bool clickedFlag: false
-                  states:[
-                      State {
-                          name: "default"
-                          PropertyChanges { target: dots; color: "green"}
-                          PropertyChanges { target: dots; clickedFlag: false}
-                      },
-                      State {
-                          name: "active"
-                          PropertyChanges { target: dots; color: "red"}
-                          PropertyChanges { target: dots; clickedFlag: true}
-                      }
-                  ]
+                id: repeater
+                model: 100
+                Rectangle {
+                    id: dots
+                    width: items.rectWidth
+                    height: items.rectHeight
+                    state: "default"
+                    property bool clickedFlag: false
+                    states:[
+                        State {
+                            name: "default"
+                            PropertyChanges { target: dots; color: "green"}
+                            PropertyChanges { target: dots; clickedFlag: false}
+                        },
+                        State {
+                            name: "active"
+                            PropertyChanges { target: dots; color: "red"}
+                            PropertyChanges { target: dots; clickedFlag: true}
+                        }
+                    ]
 
-                  MouseArea {
-                      anchors.fill: parent
-                      onClicked: {
-                          if (dots.state == "default")
-                              dots.state = "active"
-                          else
-                              dots.state = "default"
-                      }
-                  }
-               }
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            if (dots.state == "default")
+                                dots.state = "active"
+                            else
+                                dots.state = "default"
+                        }
+                    }
+                }
             }
         }
 
@@ -171,7 +175,7 @@ ActivityBase {
                 top: parent.top
                 topMargin: main.height/5 - 2*numberForTable.height/3
                 right: parent.right
-                rightMargin: (main.width - grid.width - grid_col.width - numberForTable.width) / 2
+                rightMargin: (main.width - grid.width - gridCol.width - numberForTable.width) / 2
             }
             fontSize: 80
             text: items.multiplicand
@@ -214,7 +218,7 @@ ActivityBase {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    for(var i=0; i<repeater.count; i++) {
+                    /*for(var i=0; i<repeater.count; i++) {
                         if(repeater.itemAt(i).clickedFlag) {
                             if( i%10 >= items.multiplier ) {
                                 items.answer = false
@@ -230,7 +234,8 @@ ActivityBase {
                             }  // To check if green then not in red area
                             //console.log((i+1), "asdfgh", items.multiplicand, "asd", ( i%10 < items.multiplier && i < items.multiplicand *10 ), "answere", items.answer)
                         }
-                    }
+                    }*/
+                    Activity.checkPlaceChangedSquares()
                     Activity.checkit()
                 }
             }
