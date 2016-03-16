@@ -201,16 +201,19 @@ ActivityBase {
             }
         }
 
-        Rectangle {
+        Image {
             anchors {
                 bottom: parent.bottom
                 bottomMargin: items.spacing
                 left: bar.right
                 leftMargin: 500
             }
+
+            fillMode: Image.Stretch
+            source: "./resource/redButton.svg"
+
             width: 250
             height: 100
-            color:"#3821CA"
             GCText {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: qsTr("Click to Verify\n  Your Answer")
@@ -218,30 +221,13 @@ ActivityBase {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    /*for(var i=0; i<repeater.count; i++) {
-                        if(repeater.itemAt(i).clickedFlag) {
-                            if( i%10 >= items.multiplier ) {
-                                items.answer = false
-                            }
-                            if( i >= items.multiplicand *10 ) {
-                                items.answer = false
-                            } // To check if red then not outside red area
-                            //console.log((i+1), "asdfgh", items.multiplicand, "asd", items.multiplier,"asdf",( i%10 >= items.multiplier ), "asdf", ( i >= items.multiplicand *10 ))
-                        }
-                        if(!(repeater.itemAt(i).clickedFlag)) {
-                            if( i%10 < items.multiplier && i < items.multiplicand *10 ) {
-                                items.answer = false
-                            }  // To check if green then not in red area
-                            //console.log((i+1), "asdfgh", items.multiplicand, "asd", ( i%10 < items.multiplier && i < items.multiplicand *10 ), "answere", items.answer)
-                        }
-                    }*/
                     Activity.checkPlaceChangedSquares()
                     Activity.checkit()
                 }
             }
         }
 
-        /////////////////////////////////////////
+        //////////////////////////////////////////////////////////////////////////////////////////////
 
         DialogHelp {
             id: dialogHelp
