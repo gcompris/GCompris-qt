@@ -30,10 +30,15 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
-        anchors.fill: parent
-        color: "#ABCDEF"
+        fillMode: Image.PreserveAspectCrop
+        source: "./resource/numbers.svg"
+        sourceSize.width: parent.width
+        sourceSize.height: parent.height
+
+        //anchors.fill: parent
+        //color: "#ABCDEF"
         signal start
         signal stop
 
@@ -49,16 +54,184 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property alias repeaterGridRow: repeaterGridRow
+            property alias repeaterGridCol: repeaterGridCol
+            property alias repeater: repeater
+            property alias gridTableRepeater: gridTableRepeater
+
+            property int spacing: 5
+            property int multiplier: 1
+            property int multiplicand: 1
+            property int rectHeight: main.height/15
+            property int rectWidth: main.height/15 //main.width/20
+            property bool answer: true
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        GCText {
-            anchors.centerIn: parent
-            text: "multiplication-chart activity"
-            fontSize: largeSize
+        /////////////////////////////////////////////////////
+
+        Grid {
+            id:gridRow
+            anchors {
+                top: parent.top
+                topMargin: 20
+                left: parent.left
+                leftMargin: 20
+            }
+            spacing: items.spacing
+            columns: 11
+            rows: 1
+            Repeater {
+                id: repeaterGridRow
+                model: 11
+                Rectangle {
+                   id: dotsGridRow
+                   color: "white"
+                   width: items.rectWidth
+                   height: items.rectHeight
+                   GCText{ text: index}
+                }
+            }
+
         }
+
+        Grid {
+            id:gridCol
+            anchors {
+                top: parent.top
+                topMargin: 20
+                left: parent.left
+                leftMargin: 20
+            }
+            spacing: items.spacing
+            columns: 1
+            rows: 11
+            Repeater {
+                id: repeaterGridCol
+                model: 11
+                Rectangle {
+                   id: dotsGridCol
+                   color: "white"
+                   width: items.rectWidth
+                   height: items.rectHeight
+                   GCText{ text: index}
+                }
+            }
+
+        }
+
+        Grid {
+            id: grid
+            anchors {
+                top: gridRow.bottom
+                topMargin: items.spacing
+                left: gridCol.right
+                leftMargin: items.spacing
+            }
+
+            spacing: items.spacing
+            columns: 10
+            rows: 10
+
+            Repeater {
+                id: repeater
+                model: 100
+                Rectangle {
+                    id: dots
+                    width: items.rectWidth
+                    height: items.rectHeight
+                    state: "default"
+                    property bool clickedFlag: false
+                    states:[
+                        State {
+                            name: "default"
+                            PropertyChanges { target: dots; color: "green"}
+                            PropertyChanges { target: dots; clickedFlag: false}
+                        },
+                        State {
+                            name: "active"
+                            PropertyChanges { target: dots; color: "red"}
+                            PropertyChanges { target: dots; clickedFlag: true}
+                        }
+                    ]
+                    GCText {
+                        text: (Math.floor(index/10) + 1) * (index%10 + 1)
+                    }
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            if (dots.state == "default")
+                                dots.state = "active"
+                            else
+                                dots.state = "default"
+                        }
+                    }
+                }
+            }
+        }
+
+        GCText{
+            id: numberForTable
+            anchors {
+                top: parent.top
+                topMargin: main.height/5 - 2*numberForTable.height/3
+                right: parent.right
+                rightMargin: (main.width - grid.width - gridCol.width - numberForTable.width) / 2
+            }
+            fontSize: 80
+            text: items.multiplicand
+        }
+
+        Grid {
+            id: gridTable
+            anchors {
+                top: numberForTable.bottom
+                topMargin: -10
+                horizontalCenter: numberForTable.horizontalCenter
+            }
+            spacing: 2
+            columns: 1
+            rows: 10
+            Repeater {
+                id: gridTableRepeater
+                model: 10
+                GCText{
+                    text: items.multiplicand + " x " + (index+1) + " = " + items.multiplicand*(index+1)
+                    opacity: 0.0
+                }
+            }
+        }
+
+        Image {
+            anchors {
+                bottom: parent.bottom
+                bottomMargin: items.spacing
+                left: bar.right
+                leftMargin: 500
+            }
+
+            fillMode: Image.Stretch
+            source: "./resource/redButton.svg"
+
+            width: 250
+            height: 100
+            GCText {
+                anchors.horizontalCenter: parent.horizontalCenter
+                text: qsTr("Click to Verify\n  Your Answer")
+            }
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    Activity.checkPlaceChangedSquares()
+                    Activity.checkit()
+                }
+            }
+        }
+
+        //////////////////////////////////////////////////////////////////////////////////////////////
 
         DialogHelp {
             id: dialogHelp
