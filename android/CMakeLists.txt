@@ -30,7 +30,7 @@ if(ACTIVATION_MODE STREQUAL "inapp")
   set(APK_SUFFIX "-inapp${APK_SUFFIX}")
 elseif(ACTIVATION_MODE STREQUAL "internal")
   set(APK_SUFFIX "-internal${APK_SUFFIX}")
-endif(WITH_ACTIVATION_CODE)
+endif(ACTIVATION_MODE STREQUAL "inapp")
 
 if(WITH_DEMO_ONLY)
   set(APK_SUFFIX "-demo${APK_SUFFIX}")
