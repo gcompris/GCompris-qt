@@ -91,6 +91,31 @@ ActivityBase {
                    color: "white"
                    width: items.rectWidth
                    height: items.rectHeight
+                   property bool clickedFlagRow: false
+                   states:[ //////////////////////////////////////////////////////////////////
+                       State {
+                           name: "default"
+                           PropertyChanges { target: clickedFlagRow; color: "white"}
+                           PropertyChanges { target: clickedFlagRow; clickedFlagRow: false}
+                       },
+                       State {
+                           name: "active"
+                           PropertyChanges { target: clickedFlagRow; color: "red"}
+                           PropertyChanges { target: clickedFlagRow; clickedFlagRow: false}
+                       }
+                   ]
+
+                   GCText{ text: index}
+
+                   MouseArea {
+                       anchors.fill: parent
+                       onClicked: {
+                           if (clickedFlagRow.state == "default")
+                               clickedFlagRow.state = "active"
+                           else
+                               clickedFlagRow.state = "default"
+                       }
+                   }/////////////////////////////////////////////////////////////////////
                    GCText{ text: index}
                 }
             }
@@ -116,7 +141,31 @@ ActivityBase {
                    color: "white"
                    width: items.rectWidth
                    height: items.rectHeight
+                   property bool clickedFlagCol: false
+                   states:[
+                       State {
+                           name: "default"
+                           PropertyChanges { target: dotsGridCol; color: "white"}
+                           PropertyChanges { target: dotsGridCol; clickedFlagCol: false}
+                       },
+                       State {
+                           name: "active"
+                           PropertyChanges { target: dotsGridCol; color: "red"}
+                           PropertyChanges { target: dotsGridCol; clickedFlagCol: false}
+                       }
+                   ]
+
                    GCText{ text: index}
+
+                   MouseArea {
+                       anchors.fill: parent
+                       onClicked: {
+                           if (dotsGridCol.state == "default")
+                               dotsGridCol.state = "active"
+                           else
+                               dotsGridCol.state = "default"
+                       }
+                   }
                 }
             }
 
@@ -142,9 +191,10 @@ ActivityBase {
                     id: dots
                     width: items.rectWidth
                     height: items.rectHeight
-                    state: "default"
+                    //state: "default"
                     property bool clickedFlag: false
-                    states:[
+                    color: "green"
+                    /*states:[
                         State {
                             name: "default"
                             PropertyChanges { target: dots; color: "green"}
@@ -155,12 +205,12 @@ ActivityBase {
                             PropertyChanges { target: dots; color: "red"}
                             PropertyChanges { target: dots; clickedFlag: true}
                         }
-                    ]
+                    ]*/
                     GCText {
                         text: (Math.floor(index/10) + 1) * (index%10 + 1)
                     }
 
-                    MouseArea {
+                    /*MouseArea {
                         anchors.fill: parent
                         onClicked: {
                             if (dots.state == "default")
@@ -168,7 +218,7 @@ ActivityBase {
                             else
                                 dots.state = "default"
                         }
-                    }
+                    }*/
                 }
             }
         }
