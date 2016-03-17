@@ -263,8 +263,8 @@ ActivityBase {
             anchors.right: parent.right
             anchors.top: planeText.bottom
             anchors.topMargin: 10 * ApplicationInfo.ratio
-            anchors.leftMargin: 5 * ApplicationInfo.ratio
-            anchors.rightMargin: 5 * ApplicationInfo.ratio
+            anchors.leftMargin: 15 * ApplicationInfo.ratio
+            anchors.rightMargin: 15 * ApplicationInfo.ratio
             anchors.bottomMargin: 10 * ApplicationInfo.ratio
             cellWidth: itemWidth + 43*ApplicationInfo.ratio
             cellHeight: itemHeight + 15*ApplicationInfo.ratio
