@@ -47,7 +47,7 @@ Item {
         anchors.topMargin: -30 * ApplicationInfo.ratio
         sourceSize.width: cardItem.width - 10
         fillMode: Image.PreserveAspectFit
-        source:  Activity.url + "images/cloud.svg"
+        source:  Activity.resUrl2 + "cloud.svg"
         z: (state == 'scaled') ? 1 : -1
         //visible: index % 2 != 0 ? false : true
 

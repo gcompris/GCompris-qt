@@ -37,7 +37,7 @@ ActivityBase {
 
     pageComponent: Image {
         id: background
-        source: Activity.url + "images/background.svg"
+        source: Activity.resUrl + "hillside.svg"
         sourceSize.width: parent.width
         fillMode: Image.PreserveAspectCrop
         focus: true
@@ -205,7 +205,7 @@ ActivityBase {
                 height: itemHeight
                 anchors.centerIn: planeText
                 anchors.top: parent.top
-                source: Activity.url + "images/plane.svg"
+                source: Activity.resUrl + "plane.svg"
                 sourceSize.height: 90 * ApplicationInfo.ratio
             }
 

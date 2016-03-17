@@ -1,1 +1,1 @@
-GCOMPRIS_ADD_RCC(activities/letter-in-word *.qml *.svg *.js resource/images/*)
+GCOMPRIS_ADD_RCC(activities/letter-in-word *.qml *.svg *.js resource/*)

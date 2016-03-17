@@ -28,6 +28,8 @@
 .import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
 
 var url = "qrc:/gcompris/src/activities/letter-in-word/resource/"
+var resUrl = "qrc:/gcompris/src/activities/braille_fun/resource/"
+var resUrl2 = "qrc:/gcompris/src/activities/click_on_letter/resource/"
 
 var levels;
 var currentLevel;
