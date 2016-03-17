@@ -173,8 +173,8 @@ ActivityBase {
         Keys.onReturnPressed: if(currentActiveGrid.currentItem)  currentActiveGrid.currentItem.selectCurrentItem();
         Keys.onRightPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexRight();
         Keys.onLeftPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexLeft();
-        Keys.onDownPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexDown();
-        Keys.onUpPressed: if(currentActiveGrid.currentItem) currentActiveGrid.moveCurrentIndexUp();
+        Keys.onDownPressed: if(currentActiveGrid.currentItem && !currentActiveGrid.atYEnd) currentActiveGrid.moveCurrentIndexDown();
+        Keys.onUpPressed: if(currentActiveGrid.currentItem && !currentActiveGrid.atYBeginning) currentActiveGrid.moveCurrentIndexUp();
 
         GridView {
             id: section
