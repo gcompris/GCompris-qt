@@ -57,7 +57,7 @@ ActivityBase {
             property alias repeaterGridRow: repeaterGridRow
             property alias repeaterGridCol: repeaterGridCol
             property alias repeater: repeater
-            property alias gridTableRepeater: gridTableRepeater
+            //property alias gridTableRepeater: gridTableRepeater
 
             property int spacing: 5
             property int multiplier: 1
@@ -65,6 +65,10 @@ ActivityBase {
             property int rectHeight: main.height/15
             property int rectWidth: main.height/15 //main.width/20
             property bool answer: true
+            property int rowSelected: 0
+            property int colSelected: 0
+            property int rowQues: 0
+            property int colQues: 0
         }
 
         onStart: { Activity.start(items) }
@@ -92,16 +96,17 @@ ActivityBase {
                    width: items.rectWidth
                    height: items.rectHeight
                    property bool clickedFlagRow: false
-                   states:[ //////////////////////////////////////////////////////////////////
+                   state: "default"
+                   states:[
                        State {
                            name: "default"
-                           PropertyChanges { target: clickedFlagRow; color: "white"}
-                           PropertyChanges { target: clickedFlagRow; clickedFlagRow: false}
+                           PropertyChanges { target: dotsGridRow; color: "white"}
+                           PropertyChanges { target: dotsGridRow; clickedFlagRow: false}
                        },
                        State {
                            name: "active"
-                           PropertyChanges { target: clickedFlagRow; color: "red"}
-                           PropertyChanges { target: clickedFlagRow; clickedFlagRow: false}
+                           PropertyChanges { target: dotsGridRow; color: "red"}
+                           PropertyChanges { target: dotsGridRow; clickedFlagRow: false}
                        }
                    ]
 
@@ -110,16 +115,17 @@ ActivityBase {
                    MouseArea {
                        anchors.fill: parent
                        onClicked: {
-                           if (clickedFlagRow.state == "default")
-                               clickedFlagRow.state = "active"
+                           if (dotsGridRow.state == "default")
+                               dotsGridRow.state = "active"
                            else
-                               clickedFlagRow.state = "default"
+                               dotsGridRow.state = "default"
+                           items.rowSelected = index
+                           Activity.makeOtherColInRowWhite()
                        }
-                   }/////////////////////////////////////////////////////////////////////
-                   GCText{ text: index}
+                   }
                 }
-            }
 
+            }
         }
 
         Grid {
@@ -142,6 +148,7 @@ ActivityBase {
                    width: items.rectWidth
                    height: items.rectHeight
                    property bool clickedFlagCol: false
+                   state: "default"
                    states:[
                        State {
                            name: "default"
@@ -164,6 +171,8 @@ ActivityBase {
                                dotsGridCol.state = "active"
                            else
                                dotsGridCol.state = "default"
+                           items.colSelected = index
+                           Activity.makeOtherRowInColWhite()
                        }
                    }
                 }
@@ -192,50 +201,42 @@ ActivityBase {
                     width: items.rectWidth
                     height: items.rectHeight
                     //state: "default"
-                    property bool clickedFlag: false
+                    property bool clickedFlag: false ///
                     color: "green"
-                    /*states:[
-                        State {
-                            name: "default"
-                            PropertyChanges { target: dots; color: "green"}
-                            PropertyChanges { target: dots; clickedFlag: false}
-                        },
-                        State {
-                            name: "active"
-                            PropertyChanges { target: dots; color: "red"}
-                            PropertyChanges { target: dots; clickedFlag: true}
-                        }
-                    ]*/
+
                     GCText {
                         text: (Math.floor(index/10) + 1) * (index%10 + 1)
                     }
 
-                    /*MouseArea {
-                        anchors.fill: parent
-                        onClicked: {
-                            if (dots.state == "default")
-                                dots.state = "active"
-                            else
-                                dots.state = "default"
-                        }
-                    }*/
                 }
             }
         }
 
         GCText{
-            id: numberForTable
+            id: instruction
             anchors {
                 top: parent.top
-                topMargin: main.height/5 - 2*numberForTable.height/3
+                topMargin: main.height/3 - 2*instruction.height/3
                 right: parent.right
-                rightMargin: (main.width - grid.width - gridCol.width - numberForTable.width) / 2
+                rightMargin: (main.width/5)// - grid.width - gridCol.width - instruction.width) / 2
             }
-            fontSize: 80
-            text: items.multiplicand
+            fontSize: regularSize
+            text: "Instruction: \n Column x Row = Answer\n
+1) Select the Column\n2) Select the Row\n3) State the answer"
         }
 
-        Grid {
+        GCText {
+            id: question
+            anchors {
+                horizontalCenter: instruction.horizontalCenter
+                top: instruction.bottom
+                topMargin: 40
+                }
+            fontSize: hugeSize
+            text: items.rowQues + " X " + items.colQues + " = "
+        }
+
+        /*Grid {
             id: gridTable
             anchors {
                 top: numberForTable.bottom
@@ -253,7 +254,7 @@ ActivityBase {
                     opacity: 0.0
                 }
             }
-        }
+        }*/
 
         Image {
             anchors {
