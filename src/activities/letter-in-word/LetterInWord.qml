@@ -120,7 +120,7 @@ ActivityBase {
             onSaveData: {
                 var oldLocale = background.locale;
                 var newLocale =
-                dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
+                        dialogActivityConfig.configItem.availableLangs[dialogActivityConfig.loader.item.localeBox.currentIndex].locale;
                 // Remove .UTF-8
                 if(newLocale.indexOf('.') != -1) {
                     newLocale = newLocale.substring(0, newLocale.indexOf('.'))
@@ -184,7 +184,7 @@ ActivityBase {
 
         Bonus {
             id: bonus
-            interval: 1000
+            interval: 100
             Component.onCompleted: {
                 win.connect(Activity.nextSubLevel);
                 loose.connect(Activity.incorrectSelection);
@@ -211,7 +211,7 @@ ActivityBase {
 
             GCText {
                 id: questionItem
-                anchors.right: planeText.right  
+                anchors.right: planeText.right
                 anchors.rightMargin: 2 * plane.width / 3
                 anchors.verticalCenter: planeText.verticalCenter
                 anchors.bottomMargin: 10 * ApplicationInfo.ratio
@@ -277,6 +277,17 @@ ActivityBase {
             model: wordsModel
             delegate: Card {
                 width: background.itemWidth
+                Connections {
+                    target: bonus
+                    onStart: {
+                        mouseActive = false;
+                    }
+                    onStop: {
+                        mouseActive = true;
+                    }
+                }
+
+
             }
         }
 

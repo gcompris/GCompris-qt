@@ -29,6 +29,7 @@ Item {
     id: cardItem
     //width: cardImage.width
     height: wordPic.height + cardImage.height - 30 * ApplicationInfo.ratio
+    property bool mouseActive: true
 
     Image{
         id: wordPic
@@ -79,14 +80,15 @@ Item {
             clip: false
         }
 
-        states: State {
-            name: "scaled"; when: mouseArea.containsMouse
-            PropertyChanges {
-                target: cardItem
-                scale: /*carriageImage.scale * */ 1.2
-                z: 2
+        states:
+            State {
+                name: "scaled"; when: mouseArea.containsMouse && mouseActive
+                PropertyChanges {
+                    target: cardItem
+                    scale: /*carriageImage.scale * */ 1.2
+                    z: 2
+                }
             }
-        }
 
         transitions: Transition {
             NumberAnimation { properties: "scale"; easing.type: Easing.OutCubic }
@@ -149,31 +151,34 @@ Item {
         anchors.fill: parent
         hoverEnabled: ApplicationInfo.isMobile ? false : true
         onClicked: {
-            if (Activity.checkWord(index)) {
-                successAnimation.restart();
-                particle.burst(30)
-                components.clear();
-                var tempword;
-                var j = 0;
-                for(var i = 0; i < spelling.length; i++) {
-                    if(spelling.charAt(i) == Activity.currentLetter) {
-                        tempword = spelling.substring(j, i);
-                        if(i != j) {
-                            components.append({"textdata": tempword})
+            if(mouseActive){
+                if (Activity.checkWord(index)) {
+                    successAnimation.restart();
+                    particle.burst(30)
+                    components.clear();
+                    var tempword;
+                    var j = 0;
+                    for(var i = 0; i < spelling.length; i++) {
+                        if(spelling.charAt(i) == Activity.currentLetter) {
+                            tempword = spelling.substring(j, i);
+                            if(i != j) {
+                                components.append({"textdata": tempword})
+                            }
+                            components.append({"textdata": Activity.currentLetter});
+
+                            j = i + 1;
                         }
-                        components.append({"textdata": Activity.currentLetter});
-
-                        j = i + 1;
                     }
-                }
-                if(j < spelling.length) {
-                    tempword = spelling.substring(j, spelling.length);
-                    components.append({"textdata": tempword})
+                    if(j < spelling.length) {
+                        tempword = spelling.substring(j, spelling.length);
+                        components.append({"textdata": tempword})
 
+                    }
+
+                } else {
+                    failureAnimation.restart()
                 }
 
-            } else {
-                failureAnimation.restart()
             }
         }
     }
