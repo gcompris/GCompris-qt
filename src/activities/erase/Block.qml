@@ -46,7 +46,7 @@ Image {
     onEnter: {
         if(opacity == 1.0) {
             playSound()
-            block.opacity = 0.0
+            block.opacity = 0
         }
     }
 
