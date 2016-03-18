@@ -121,6 +121,7 @@ ActivityBase {
                                dotsGridRow.state = "default"
                            items.rowSelected = index
                            Activity.makeOtherColInRowWhite()
+                           Activity.changesInMainBoard()
                        }
                    }
                 }
@@ -173,7 +174,7 @@ ActivityBase {
                                dotsGridCol.state = "default"
                            items.colSelected = index
                            Activity.makeOtherRowInColWhite()
-                           //Activity.changesInMainBoard()
+                           Activity.changesInMainBoard()
                        }
                    }
                 }

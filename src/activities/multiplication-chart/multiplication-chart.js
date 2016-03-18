@@ -86,7 +86,24 @@ function makeOtherRowInColWhite() {
     }
 }
 
-//function changesInMainBoard()
+function changesInMainBoard() {
+    for(var i=0; i<items.repeater.count; i++) {
+        if((i%10 == items.rowSelected -1)) {           // && (i <= 9*items.colSelected)) {
+            items.repeater.itemAt(i).color = "pink"
+        }
+        else {
+            items.repeater.itemAt(i).color = "green"
+        }
+
+        if(i>= (items.colSelected-1)*10 && i < items.colSelected*10 ) {
+            items.repeater.itemAt(i).color = "pink"
+        }
+        else {
+            //items.repeater.itemAt(i).color = "green"
+        }
+    }
+}
+
 
 function checkit() {
     if (items.repeaterGridCol.itemAt(items.colQues).state == "active" && items.repeaterGridRow.itemAt(items.rowQues).state == "active") {
