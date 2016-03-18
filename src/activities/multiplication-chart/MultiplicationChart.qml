@@ -173,6 +173,7 @@ ActivityBase {
                                dotsGridCol.state = "default"
                            items.colSelected = index
                            Activity.makeOtherRowInColWhite()
+                           //Activity.changesInMainBoard()
                        }
                    }
                 }
@@ -276,7 +277,7 @@ ActivityBase {
             MouseArea {
                 anchors.fill: parent
                 onClicked: {
-                    Activity.checkPlaceChangedSquares()
+                    // Activity.checkPlaceChangedSquares()
                     Activity.checkit()
                 }
             }

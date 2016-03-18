@@ -44,12 +44,11 @@ function initLevel() {
     items.rowQues = Math.floor((Math.random() * 10) + 1);
     items.colQues = Math.floor((Math.random() * 10) + 1);
 
-    /*for(var i=0; i<items.repeater.count; i++) {           // For initialization of Board
-        items.repeater.itemAt(i).state="default"
-    }*/
-
-    for(i=0; i<items.repeaterGridRow.count; i++) {        // For initialization of top rows color
+    for(var i=0; i<items.repeaterGridRow.count; i++) {        // For initialization of top rows color
         items.repeaterGridRow.itemAt(i).color = "white"
+    }
+    for(var i=0; i<items.repeaterGridCol.count; i++) {        // For initialization of side Column color
+        items.repeaterGridCol.itemAt(i).color = "white"
     }
 
 }
@@ -87,6 +86,16 @@ function makeOtherRowInColWhite() {
     }
 }
 
+//function changesInMainBoard()
+
+function checkit() {
+    if (items.repeaterGridCol.itemAt(items.colQues).state == "active" && items.repeaterGridRow.itemAt(items.rowQues).state == "active") {
+        items.bonus.good("flower")
+    }
+    else {
+        items.bonus.bad("flower")
+    }
+}
 
 
 
