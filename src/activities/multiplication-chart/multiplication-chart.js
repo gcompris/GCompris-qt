@@ -39,6 +39,8 @@ function stop() {
 function initLevel() {
     items.bar.level = currentLevel + 1
     items.multiplier = 1
+    items.rowSelected = 0
+    items.colSelected = 0
     items.multiplicand = items.bar.level
 
     items.rowQues = Math.floor((Math.random() * 10) + 1);
@@ -47,10 +49,12 @@ function initLevel() {
     for(var i=0; i<items.repeaterGridRow.count; i++) {        // For initialization of top rows color
         items.repeaterGridRow.itemAt(i).color = "white"
     }
-    for(var i=0; i<items.repeaterGridCol.count; i++) {        // For initialization of side Column color
+    for(i=0; i<items.repeaterGridCol.count; i++) {        // For initialization of side Column color
         items.repeaterGridCol.itemAt(i).color = "white"
     }
-
+    for(i=0; i<items.repeater.count; i++) {        // For initialization of side Column color
+        items.repeater.itemAt(i).color = "green"
+    }
 }
 
 function nextLevel() {
@@ -88,18 +92,15 @@ function makeOtherRowInColWhite() {
 
 function changesInMainBoard() {
     for(var i=0; i<items.repeater.count; i++) {
-        if((i%10 == items.rowSelected -1)) {           // && (i <= 9*items.colSelected)) {
+        if((i%10 == items.rowSelected -1)) {           // This colors the row on main board corresponding to rowSelect
             items.repeater.itemAt(i).color = "pink"
         }
-        else {
+        else {                                         // This colors every other row green
             items.repeater.itemAt(i).color = "green"
         }
 
-        if(i>= (items.colSelected-1)*10 && i < items.colSelected*10 ) {
+        if(i>= (items.colSelected-1)*10 && i < items.colSelected*10 ) { // After all the above ^^ this colors the column
             items.repeater.itemAt(i).color = "pink"
-        }
-        else {
-            //items.repeater.itemAt(i).color = "green"
         }
     }
 }
@@ -107,6 +108,9 @@ function changesInMainBoard() {
 
 function checkit() {
     if (items.repeaterGridCol.itemAt(items.colQues).state == "active" && items.repeaterGridRow.itemAt(items.rowQues).state == "active") {
+        items.bonus.good("flower")
+    }
+    else if(items.repeaterGridCol.itemAt(items.rowQues).state == "active" && items.repeaterGridRow.itemAt(items.colQues).state == "active") {
         items.bonus.good("flower")
     }
     else {

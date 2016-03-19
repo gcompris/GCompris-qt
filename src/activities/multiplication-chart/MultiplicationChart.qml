@@ -37,8 +37,6 @@ ActivityBase {
         sourceSize.width: parent.width
         sourceSize.height: parent.height
 
-        //anchors.fill: parent
-        //color: "#ABCDEF"
         signal start
         signal stop
 
