@@ -222,10 +222,10 @@ ActivityBase {
                 top: parent.top
                 topMargin: main.height/3 - 2*instruction.height/3
                 right: parent.right
-                rightMargin: (main.width/5)// - grid.width - gridCol.width - instruction.width) / 2
+                rightMargin: (main.width/9)// - grid.width - gridCol.width - instruction.width) / 2
             }
             fontSize: regularSize
-            text: "Instruction: \n Column x Row = Answer\n
+            text: "Instruction: \n Multiplicand x Multiplier = Answer\n
 1) Select the Column\n2) Select the Row\n3) State the answer"
         }
 
