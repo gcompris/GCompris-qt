@@ -58,8 +58,6 @@ ActivityBase {
             //property alias gridTableRepeater: gridTableRepeater
 
             property int spacing: 5
-            property int multiplier: 1
-            property int multiplicand: 1
             property int rectHeight: main.height/15
             property int rectWidth: main.height/15 //main.width/20
             property bool answer: true
@@ -208,8 +206,6 @@ ActivityBase {
                     id: dots
                     width: items.rectWidth
                     height: items.rectHeight
-                    //state: "default"
-                    property bool clickedFlag: false ///
                     color: "green"
 
                     GCText {
@@ -243,26 +239,6 @@ ActivityBase {
             fontSize: hugeSize
             text: items.rowQues + " X " + items.colQues + " = "
         }
-
-        /*Grid {
-            id: gridTable
-            anchors {
-                top: numberForTable.bottom
-                topMargin: -10
-                horizontalCenter: numberForTable.horizontalCenter
-            }
-            spacing: 2
-            columns: 1
-            rows: 10
-            Repeater {
-                id: gridTableRepeater
-                model: 10
-                GCText{
-                    text: items.multiplicand + " x " + (index+1) + " = " + items.multiplicand*(index+1)
-                    opacity: 0.0
-                }
-            }
-        }*/
 
         Image {
             anchors {

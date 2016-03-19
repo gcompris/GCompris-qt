@@ -38,10 +38,8 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    items.multiplier = 1
     items.rowSelected = 0
     items.colSelected = 0
-    items.multiplicand = items.bar.level
 
     items.rowQues = Math.floor((Math.random() * 10) + 1);
     items.colQues = Math.floor((Math.random() * 10) + 1);
