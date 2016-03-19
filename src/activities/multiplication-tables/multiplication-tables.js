@@ -45,7 +45,7 @@ function initLevel() {
         items.repeater.itemAt(i).state="default"
     }
 
-    for(i=0; i<items.gridTableRepeater.count; i++) {      // For initialization of Board
+    for(i=0; i<items.gridTableRepeater.count; i++) {      // For initialization of table's board
         items.gridTableRepeater.itemAt(i).opacity = 0
     }
 
