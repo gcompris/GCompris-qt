@@ -60,14 +60,17 @@ ActivityBase {
             property int spacing: 5
             property int rectHeight: main.height/15
             property int rectWidth: main.height/15 //main.width/20
-            property bool answer: true
+            //property bool answer: true
             property int rowSelected: 0
             property int colSelected: 0
             property int rowQues: 0
             property int colQues: 0
         }
 
-        onStart: { Activity.start(items) }
+        onStart: {
+            Activity.start(items)
+            answer.forceActiveFocus()
+        }
         onStop: { Activity.stop() }
 
         /////////////////////////////////////////////////////
@@ -235,9 +238,28 @@ ActivityBase {
                 horizontalCenter: instruction.horizontalCenter
                 top: instruction.bottom
                 topMargin: 40
-                }
+            }
             fontSize: hugeSize
             text: items.rowQues + " X " + items.colQues + " = "
+        }
+
+        GCText {
+            id: answer
+            anchors {
+                left: question.right
+                top: question.top
+            }
+            property int i: 0
+            focus: true
+            Keys.onPressed: {
+                if (event.key >= 48 && event.key <= 58) {
+                    i = event.key - 48
+                    event.accepted = true
+                }
+            }
+            fontSize: hugeSize
+            text: i //Qt.Key_A + Qt.Key_B
+
         }
 
         Image {
