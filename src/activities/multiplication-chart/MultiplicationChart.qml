@@ -113,11 +113,15 @@ ActivityBase {
                    MouseArea {
                        anchors.fill: parent
                        onClicked: {
-                           if (dotsGridRow.state == "default")
+                           if (dotsGridRow.state == "default") {
                                dotsGridRow.state = "active"
-                           else
+                               items.rowSelected = index
+                           }
+                           else {
                                dotsGridRow.state = "default"
-                           items.rowSelected = index
+                               items.rowSelected = 0
+                           }
+                           //items.rowSelected = index
                            Activity.makeOtherColInRowWhite()
                            Activity.changesInMainBoard()
                        }
@@ -166,11 +170,15 @@ ActivityBase {
                    MouseArea {
                        anchors.fill: parent
                        onClicked: {
-                           if (dotsGridCol.state == "default")
+                           if (dotsGridCol.state == "default") {
                                dotsGridCol.state = "active"
-                           else
+                               items.colSelected = index
+                           }
+                           else {
                                dotsGridCol.state = "default"
-                           items.colSelected = index
+                               items.colSelected = 0
+                           }
+                           //items.colSelected = index
                            Activity.makeOtherRowInColWhite()
                            Activity.changesInMainBoard()
                        }
