@@ -263,32 +263,6 @@ ActivityBase {
             }
         }
 
-        /*Image {
-            anchors {
-                bottom: parent.bottom
-                bottomMargin: items.spacing
-                left: bar.right
-                leftMargin: 500
-            }
-
-            fillMode: Image.Stretch
-            source: "./resource/redButton.svg"
-
-            width: 250
-            height: 100
-            GCText {
-                anchors.horizontalCenter: parent.horizontalCenter
-                text: qsTr("Click to Verify\n  Your Answer")
-            }
-            MouseArea {
-                anchors.fill: parent
-                onClicked: {
-                    // Activity.checkPlaceChangedSquares()
-                    Activity.checkit()
-                }
-            }
-        }*/
-
         //////////////////////////////////////////////////////////////////////////////////////////////
 
         DialogHelp {
