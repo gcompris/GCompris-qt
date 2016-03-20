@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2016 Your Name <yy@zz.org>
+ * Copyright (C) 2016 Varun Kumar <varun13169@iiitd.ac.in>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,15 +21,15 @@ ActivityInfo {
   name: "multiplication-chart/MultiplicationChart.qml"
   difficulty: 1
   icon: "multiplication-chart/multiplication-chart.svg"
-  author: "Your Name &lt;yy@zz.org&gt;"
+  author: "Varun Kumar &lt;varun13169@iiitd.ac.in&gt;"
   demo: true
-  title: "MultiplicationChart activity"
+  title: qsTr("Multiplication Chart")
   description: ""
   //intro: "put here in comment the text for the intro voice"
-  goal: ""
-  prerequisite: ""
-  manual: ""
-  credit: ""
+  goal: qsTr("")
+  prerequisite: qsTr("")
+  manual: qsTr("")
+  credit: qsTr("")
   section: "fun"
   createdInVersion: 6000
 }

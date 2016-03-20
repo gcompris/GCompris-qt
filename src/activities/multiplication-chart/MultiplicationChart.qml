@@ -1,10 +1,10 @@
 /* GCompris - multiplication-chart.qml
  *
- * Copyright (C) 2016 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 Varun Kumar <varun13169@iiitd.ac.in>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *
+ *   Varun Kumar <varun13169@iiitd.ac.in>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -229,12 +229,12 @@ ActivityBase {
                 rightMargin: (main.width/9)// - grid.width - gridCol.width - instruction.width) / 2
             }
             fontSize: regularSize
-            text: "Instruction:\n"+
-                    "   Multiplicand x Multiplier = Answer\n"+
-                    "       1) Select the Column\n"+
-                    "       2) Select the Row\n"+
-                    "       3) State the answer\n"+
-                    "       4) Press Enter"
+            text: qsTr("Instruction:\n")+
+                    qsTr("   Multiplicand x Multiplier = Answer\n")+
+                    qsTr("       1) Select the Column\n")+
+                    qsTr("       2) Select the Row\n")+
+                    qsTr("       3) State the answer\n")+
+                    qsTr("       4) Press Enter")
         }
 
         GCText {

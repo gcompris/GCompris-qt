@@ -1,10 +1,10 @@
 /* GCompris - multiplication-chart.js
  *
- * Copyright (C) 2016 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 Varun Kumar <varun13169@iiitd.ac.in>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *
+ *   Varun Kumar <varun13169@iiitd.ac.in>
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -41,7 +41,7 @@ function initLevel() {
     items.rowSelected = 0
     items.colSelected = 0
     items.enteredInput = 0
-    items.answer.text = ""
+    items.answer.text = qsTr("")
 
     items.rowQues = Math.floor((Math.random() * 10) + 1);
     items.colQues = Math.floor((Math.random() * 10) + 1);
