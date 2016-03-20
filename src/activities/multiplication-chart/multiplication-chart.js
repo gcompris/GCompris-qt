@@ -40,6 +40,8 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.rowSelected = 0
     items.colSelected = 0
+    items.enteredInput = 0
+    items.answer.text = ""
 
     items.rowQues = Math.floor((Math.random() * 10) + 1);
     items.colQues = Math.floor((Math.random() * 10) + 1);
@@ -105,11 +107,16 @@ function changesInMainBoard() {
 
 
 function checkit() {
-    if (items.repeaterGridCol.itemAt(items.colQues).state == "active" && items.repeaterGridRow.itemAt(items.rowQues).state == "active") {
-        items.bonus.good("flower")
-    }
-    else if(items.repeaterGridCol.itemAt(items.rowQues).state == "active" && items.repeaterGridRow.itemAt(items.colQues).state == "active") {
-        items.bonus.good("flower")
+    if(items.enteredInput == items.colQues*items.rowQues) {
+        if (items.repeaterGridCol.itemAt(items.colQues).state == "active" && items.repeaterGridRow.itemAt(items.rowQues).state == "active") {
+            items.bonus.good("flower")
+        }
+        else if(items.repeaterGridCol.itemAt(items.rowQues).state == "active" && items.repeaterGridRow.itemAt(items.colQues).state == "active") {
+            items.bonus.good("flower")
+        }
+        else {
+            items.bonus.bad("flower")
+        }
     }
     else {
         items.bonus.bad("flower")

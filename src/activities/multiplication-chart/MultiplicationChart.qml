@@ -55,12 +55,13 @@ ActivityBase {
             property alias repeaterGridRow: repeaterGridRow
             property alias repeaterGridCol: repeaterGridCol
             property alias repeater: repeater
+            property alias answer: answer
             //property alias gridTableRepeater: gridTableRepeater
 
             property int spacing: 5
             property int rectHeight: main.height/15
             property int rectWidth: main.height/15 //main.width/20
-            //property bool answer: true
+            property int enteredInput: 0
             property int rowSelected: 0
             property int colSelected: 0
             property int rowQues: 0
@@ -228,14 +229,19 @@ ActivityBase {
                 rightMargin: (main.width/9)// - grid.width - gridCol.width - instruction.width) / 2
             }
             fontSize: regularSize
-            text: "Instruction: \n Multiplicand x Multiplier = Answer\n
-1) Select the Column\n2) Select the Row\n3) State the answer"
+            text: "Instruction:\n"+
+                    "   Multiplicand x Multiplier = Answer\n"+
+                    "       1) Select the Column\n"+
+                    "       2) Select the Row\n"+
+                    "       3) State the answer\n"+
+                    "       4) Press Enter"
         }
 
         GCText {
             id: question
             anchors {
                 horizontalCenter: instruction.horizontalCenter
+                horizontalCenterOffset: -30
                 top: instruction.bottom
                 topMargin: 40
             }
@@ -243,26 +249,21 @@ ActivityBase {
             text: items.rowQues + " X " + items.colQues + " = "
         }
 
-        GCText {
+        TextInput {
             id: answer
             anchors {
                 left: question.right
-                top: question.top
+                verticalCenter: question.verticalCenter
             }
-            property int i: 0
-            focus: true
-            Keys.onPressed: {
-                if (event.key >= 48 && event.key <= 58) {
-                    i = event.key - 48
-                    event.accepted = true
-                }
+            font.pixelSize: question.fontSize*2
+            validator: IntValidator { bottom:1; top: 100}
+            onAccepted: {
+                items.enteredInput = text
+                Activity.checkit()
             }
-            fontSize: hugeSize
-            text: i //Qt.Key_A + Qt.Key_B
-
         }
 
-        Image {
+        /*Image {
             anchors {
                 bottom: parent.bottom
                 bottomMargin: items.spacing
@@ -286,7 +287,7 @@ ActivityBase {
                     Activity.checkit()
                 }
             }
-        }
+        }*/
 
         //////////////////////////////////////////////////////////////////////////////////////////////
 
