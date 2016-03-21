@@ -56,11 +56,10 @@ ActivityBase {
             property alias repeaterGridCol: repeaterGridCol
             property alias repeater: repeater
             property alias answer: answer
-            //property alias gridTableRepeater: gridTableRepeater
-
+            /*variables*/
             property int spacing: 5
             property int rectHeight: main.height/15
-            property int rectWidth: main.height/15 //main.width/20
+            property int rectWidth: main.height/15
             property int enteredInput: 0
             property int rowSelected: 0
             property int colSelected: 0
@@ -123,7 +122,6 @@ ActivityBase {
                                dotsGridRow.state = "default"
                                items.rowSelected = 0
                            }
-                           //items.rowSelected = index
                            Activity.makeOtherColInRowWhite()
                            Activity.changesInMainBoard()
                        }
@@ -180,7 +178,6 @@ ActivityBase {
                                dotsGridCol.state = "default"
                                items.colSelected = 0
                            }
-                           //items.colSelected = index
                            Activity.makeOtherRowInColWhite()
                            Activity.changesInMainBoard()
                        }
@@ -226,7 +223,7 @@ ActivityBase {
                 top: parent.top
                 topMargin: main.height/3 - 2*instruction.height/3
                 right: parent.right
-                rightMargin: (main.width/9)// - grid.width - gridCol.width - instruction.width) / 2
+                rightMargin: (main.width/9)
             }
             fontSize: regularSize
             text: qsTr("Instruction:\n")+
@@ -262,8 +259,6 @@ ActivityBase {
                 Activity.checkit()
             }
         }
-
-
 
         //////////////////////////////////////////////////////////////////////////////////////////////
 
