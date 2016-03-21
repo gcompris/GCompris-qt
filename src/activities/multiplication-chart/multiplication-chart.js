@@ -23,7 +23,7 @@
 .import QtQuick 2.0 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 10
+var numberOfLevel = 9
 var items
 
 

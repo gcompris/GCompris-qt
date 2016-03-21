@@ -24,12 +24,20 @@ ActivityInfo {
   author: "Varun Kumar &lt;varun13169@iiitd.ac.in&gt;"
   demo: true
   title: qsTr("Multiplication Chart")
-  description: ""
+  description: qsTr("Simple Multiplication of numbers from 1-10")
   //intro: "put here in comment the text for the intro voice"
-  goal: qsTr("")
-  prerequisite: qsTr("")
-  manual: qsTr("")
-  credit: qsTr("")
-  section: "fun"
+  goal: qsTr("To multiply the given operands, select them on the board and state the answer")
+
+  prerequisite: qsTr("Simple Intro to multipliciation (not a necessity)")
+
+  manual: qsTr(" Multiplicand x Multiplier = Answer\n")+
+          qsTr("    1) Select the Column\n")+
+          qsTr("    2) Select the Row\n")+
+          qsTr("    3) State the answer\n")+
+          qsTr("    4) Press Enter\n")
+
+  credit: qsTr("Montessori Multiplication Charts: http://www.infomontessori.com/mathematics/tables-of-arithmetic-multiplication-charts.htm")
+
+  section: "math"
   createdInVersion: 6000
 }
