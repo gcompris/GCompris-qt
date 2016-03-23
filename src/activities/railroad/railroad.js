@@ -1,6 +1,6 @@
 /* GCompris - railroad.js
  *
- * Copyright (C) 2016 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2015 YOUR NAME <xx@yy.org>
  *
  * Authors:
  *   <THE GTK VERSION AUTHOR> (GTK+ version)
@@ -23,8 +23,46 @@
 .import QtQuick 2.0 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 4
+var numberOfLevel = 3
 var items
+
+var backgroundImage = "railroad-bg.svg"
+
+
+var trainParts = [
+            ["loco1.svg",100,100],
+            ["loco2.svg",100,100],
+            ["loco3.svg",100,100],
+            ["loco4.svg",100,100],
+            ["loco5.svg",100,100],
+            ["loco6.svg",100,100],
+            ["loco7.svg",100,100],
+            ["loco8.svg",100,100],
+            ["loco9.svg",100,100],
+            ["wagon1.svg",100,100],
+            ["wagon2.svg",100,100],
+            ["wagon3.svg",100,100],
+            ["wagon4.svg",100,100],
+            ["wagon5.svg",100,100],
+            ["wagon6.svg",100,100],
+            ["wagon7.svg",100,100],
+            ["wagon8.svg",100,100],
+            ["wagon9.svg",100,100],
+            ["wagon10.svg",100,100],
+            ["wagon11.svg",100,100],
+            ["wagon12.svg",100,100],
+            ["wagon13.svg",100,100],
+
+        ]
+
+
+var url = "qrc:/gcompris/src/activities/railroad/resource/"
+
+if(trainPart.visible == true){
+                   locAndWagonsRepeater.visible = false
+               }
+ else{
+         locAndWagonsRepeater.visible = true         }
 
 function start(items_) {
     items = items_
@@ -37,6 +75,7 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
+    console.log(url + trainParts[1])
 }
 
 function nextLevel() {
@@ -44,6 +83,7 @@ function nextLevel() {
         currentLevel = 0
     }
     initLevel();
+    trainParts[0][1] = 100
 }
 
 function previousLevel() {

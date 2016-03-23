@@ -1,6 +1,6 @@
 /* GCompris - railroad.qml
  *
- * Copyright (C) 2016 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2015 YOUR NAME <xx@yy.org>
  *
  * Authors:
  *   <THE GTK VERSION AUTHOR> (GTK+ version)
@@ -30,12 +30,13 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Rectangle {
+    pageComponent: Image {
         id: background
         anchors.fill: parent
-        color: "#ABCDEF"
         signal start
         signal stop
+        source: Activity.url + "railroad-bg.svg"
+        sourceSize.width: parent.width
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -49,16 +50,62 @@ ActivityBase {
             property alias background: background
             property alias bar: bar
             property alias bonus: bonus
+            property alias locAndWagonsRepeater: locAndWagonsRepeater
+        }
+
+        Flickable {
+            id: engines
+            clip: false
+            width: background.width ; height: 800
+            y: background.width/9.2
+            contentWidth: background.width; contentHeight: 1180
+            // anchors.fill: parent
+            Flow {
+                anchors.fill: parent
+                anchors.margins: 4
+                spacing: 10
+
+                // === Place locs and wagons ===
+                Repeater {
+                    id: locAndWagonsRepeater
+                    model: Activity.trainParts
+                    Item {
+                        id: rail
+                        parent: locAndWagonsRepeater.itemAt(0)
+                        width: locAndWagons.width
+                        height: locAndWagons.height
+                        property bool mouseEnabled : true
+                        property alias railMouseArea: railMouseArea
+                        property int position
+
+                        Image {
+                            id : locAndWagons
+                            source: Activity.url + modelData[0]
+
+                        }
+                        MouseArea{
+                            id : railMouseArea
+                            anchors.fill: parent
+                            enabled: rail.mouseEnabled
+                            onClicked:{
+                                Qt.quit()
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        GCText {
-            anchors.centerIn: parent
-            text: "railroad activity"
-            fontSize: largeSize
+        TrainPart {
+            id: trainpart
+            sourceSize.width: Math.min(activity.width / 6, activity.height / 6)
+            z: 11
         }
+
+
 
         DialogHelp {
             id: dialogHelp
@@ -67,13 +114,14 @@ ActivityBase {
 
         Bar {
             id: bar
-            content: BarEnumContent { value: help | home | level }
+            content: BarEnumContent { value: help | home | level | reload }
             onHelpClicked: {
                 displayDialog(dialogHelp)
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()
             onHomeClicked: activity.home()
+
         }
 
         Bonus {
