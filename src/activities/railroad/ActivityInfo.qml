@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2016 Irshaad Ali <irshaadali14@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,13 +23,13 @@ ActivityInfo {
   icon: "railroad/railroad.svg"
   author: "Irshaad Ali &lt;irshaadali14@gmail.com   &gt;"
   demo: true
-  title: "Railroad activity"
-  description: "A memory game based on trains"
-  //intro: "put here in comment the text for the intro voice"
+  title: qsTr("Railroad activity")
+  description: qsTr("A memory game based on trains")
+  //intro: "put here in comment the text for the intro voice")
   goal: ""
   prerequisite: ""
-  manual: "A train - a locomotive and carriage(s) - is displayed at the top of the main area for a few seconds. Rebuild it at the top of the screen by selecting the appropriate carriages and locomotive. Deselect an item by clicking on it again. Check your construction by clicking on the hand at the bottom."
+  manual: qsTr("A train - a locomotive and carriage(s) - is displayed at the top of the main area for a few seconds. Rebuild it at the top of the screen by selecting the appropriate carriages and locomotive. Deselect an item by clicking on it again. Check your construction by clicking on the hand at the bottom.")
   credit: ""
   section: "discovery"
-  createdInVersion: 4000
+  createdInVersion: 6000
 }

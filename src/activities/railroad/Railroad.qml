@@ -1,10 +1,10 @@
 /* GCompris - railroad.qml
  *
- * Copyright (C) 2015 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 Irshaad Ali <irshaadali14@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+ *   Irshaad Ali <irshaadali14@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -56,9 +56,9 @@ ActivityBase {
         Flickable {
             id: engines
             clip: false
-            width: background.width ; height: 800
+            width: background.width ;
             y: background.width/9.2
-            contentWidth: background.width; contentHeight: 1180
+            contentWidth: background.width;
             // anchors.fill: parent
             Flow {
                 anchors.fill: parent

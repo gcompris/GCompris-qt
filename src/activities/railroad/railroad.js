@@ -1,10 +1,10 @@
 /* GCompris - railroad.js
  *
- * Copyright (C) 2015 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 Irshaad Ali <irshaadali14@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
+ *   Irshaad Ali <irshaadali14@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -30,39 +30,35 @@ var backgroundImage = "railroad-bg.svg"
 
 
 var trainParts = [
-            ["loco1.svg",100,100],
-            ["loco2.svg",100,100],
-            ["loco3.svg",100,100],
-            ["loco4.svg",100,100],
-            ["loco5.svg",100,100],
-            ["loco6.svg",100,100],
-            ["loco7.svg",100,100],
-            ["loco8.svg",100,100],
-            ["loco9.svg",100,100],
-            ["wagon1.svg",100,100],
-            ["wagon2.svg",100,100],
-            ["wagon3.svg",100,100],
-            ["wagon4.svg",100,100],
-            ["wagon5.svg",100,100],
-            ["wagon6.svg",100,100],
-            ["wagon7.svg",100,100],
-            ["wagon8.svg",100,100],
-            ["wagon9.svg",100,100],
-            ["wagon10.svg",100,100],
-            ["wagon11.svg",100,100],
-            ["wagon12.svg",100,100],
-            ["wagon13.svg",100,100],
+            ["loco1.svg"],
+            ["loco2.svg"],
+            ["loco3.svg"],
+            ["loco4.svg"],
+            ["loco5.svg"],
+            ["loco6.svg"],
+            ["loco7.svg"],
+            ["loco8.svg"],
+            ["loco9.svg"],
+            ["wagon1.svg"],
+            ["wagon2.svg"],
+            ["wagon3.svg"],
+            ["wagon4.svg"],
+            ["wagon5.svg"],
+            ["wagon6.svg"],
+            ["wagon7.svg"],
+            ["wagon8.svg"],
+            ["wagon9.svg"],
+            ["wagon10.svg"],
+            ["wagon11.svg"],
+            ["wagon12.svg"],
+            ["wagon13.svg"],
 
         ]
 
 
 var url = "qrc:/gcompris/src/activities/railroad/resource/"
 
-if(trainPart.visible == true){
-                   locAndWagonsRepeater.visible = false
-               }
- else{
-         locAndWagonsRepeater.visible = true         }
+
 
 function start(items_) {
     items = items_

@@ -1,10 +1,10 @@
 /* GCompris - TrainPart.qml
  *
- * Copyright (C) 2014 Emmanuel Charruau <echarruau@gmail.com>
+ * Copyright (C) 2016 Irshaad Ali <irshaadali14@gmail.com>
  *
  * Authors:
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (GTK+ version)
- *   Emmanuel Charruau <echarruau@gmail.com> (Qt Quick port)
+ *   Irshaad Ali <irshaadali14@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -26,9 +26,10 @@ import GCompris 1.0
 
 Image {
     id: trainPart
-    width: 236 ; height: 112
+    sourceSize.width: width
+    sourceSize.height: height
     y: background.width/40
-    source: Activity.url + "loco1.svg"
+    source: Activity.url + "loco8.svg"
     fillMode: Image.PreserveAspectFit
     z: 10
 
@@ -42,7 +43,7 @@ Image {
             if (!animation.running) {
                 trainPart.visible = false
                 engines.visible = true
-                animation.destroy()
+                animation.stop()
             }
             else{
                 engines.visible = false
@@ -58,7 +59,7 @@ Image {
             if(trainPart.visible == true)
                 trainPart.visible = false
             engines.visible = true
-            animation.destroy()
+            animation.stop()
 
         }
 
