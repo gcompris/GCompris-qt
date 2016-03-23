@@ -101,7 +101,7 @@ ActivityBase {
 
         TrainPart {
             id: trainpart
-            sourceSize.width: Math.min(activity.width / 6, activity.height / 6)
+
             z: 11
         }
 
