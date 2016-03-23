@@ -38,11 +38,29 @@ Image {
         id: animation
         to: 1300
         duration: 16000
-        
+        onRunningChanged: {
+            if (!animation.running) {
+                trainPart.visible = false
+                engines.visible = true
+                animation.destroy()
+            }
+            else{
+                engines.visible = false
+            }
+        }
     }
 
 
 
+    MouseArea {
+        anchors.fill: trainPart
+        onClicked: {
+            if(trainPart.visible == true)
+                trainPart.visible = false
+            engines.visible = true
+            animation.destroy()
+
+        }
 
     }
 }
