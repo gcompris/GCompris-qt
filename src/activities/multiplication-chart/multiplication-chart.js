@@ -41,7 +41,7 @@ function initLevel() {
     items.rowSelected = 0
     items.colSelected = 0
     items.enteredInput = 0
-    items.answer.text = qsTr("")
+    items.answer.text = ""
 
     items.rowQues = Math.floor((Math.random() * 10) + 1);
     items.colQues = Math.floor((Math.random() * 10) + 1);

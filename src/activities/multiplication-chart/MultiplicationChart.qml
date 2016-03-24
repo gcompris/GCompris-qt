@@ -33,7 +33,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         fillMode: Image.PreserveAspectCrop
-        source: "./resource/numbers.svg"
+        source: "qrc:/gcompris/src/activities/multiplication-chart/resource/numbers.svg"
         sourceSize.width: parent.width
         sourceSize.height: parent.height
 
