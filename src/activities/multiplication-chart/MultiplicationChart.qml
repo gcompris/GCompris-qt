@@ -60,18 +60,15 @@ ActivityBase {
             property int spacing: 5
             property int rectHeight: main.height/15
             property int rectWidth: main.height/15
-            property int enteredInput: 0
+            //property int enteredInput: 0
             property int rowSelected: 0
             property int colSelected: 0
             property int rowQues: 0
             property int colQues: 0
         }
 
-        onStart: {
-            Activity.start(items)
-            numpad.forceActiveFocus()
-        }
-        onStop: { Activity.stop() }
+        onStart: Activity.start(items, additionalItem)
+        onStop:  Activity.stop()
 
         /////////////////////////////////////////////////////
 
@@ -261,29 +258,6 @@ ActivityBase {
             }
         }*/
 
-        NumPad {
-            id: numpad
-            anchors.top: question.bottom
-            anchors.left: question.left
-            height: 100
-            width: 100
-
-            onAnswerChanged: {
-                //items.enteredInput = parseInt(answer,10)
-                console.log(answer, "This is the outcome")
-
-            }
-        }
-
-        Keys.onPressed: {
-            if(event.isAutoRepeat==0) {
-                numpad.updateAnswer(event.key, true);
-            }
-        }
-
-        Keys.onReleased: {
-            numpad.updateAnswer(event.key, false);
-        }
 
         //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -307,6 +281,27 @@ ActivityBase {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
+    }
+    Item {
+        id: additionalItem
+        property alias numpad: numpad
+    }
+
+    NumPad {
+        id: numpad
+        maxDigit: 3
+
+        onAnswerChanged: {
+            Activity.checkit()
+        }
+    }
+
+    Keys.onPressed: {
+        numpad.updateAnswer(event.key, true);
+    }
+
+    Keys.onReleased: {
+        numpad.updateAnswer(event.key, false);
     }
 
 }

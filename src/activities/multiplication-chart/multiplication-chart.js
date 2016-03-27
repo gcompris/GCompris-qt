@@ -25,11 +25,13 @@
 var currentLevel = 0
 var numberOfLevel = 9
 var items
+var additionalItem
 
 
-function start(items_) {
+function start(items_, additionalItems_) {
     items = items_
     currentLevel = 0
+    additionalItem = additionalItems_
     initLevel()
 }
 
@@ -40,7 +42,9 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.rowSelected = 0
     items.colSelected = 0
-    items.enteredInput = 0
+    //items.enteredInput = 0
+    //additionalItems.enteredInput = 0
+    additionalItem.numpad.resetText()
     //items.answer.text = ""
 
     items.rowQues = Math.floor((Math.random() * 10) + 1);
@@ -107,7 +111,7 @@ function changesInMainBoard() {
 
 
 function checkit() {
-    if(items.enteredInput == items.colQues*items.rowQues) {
+    if(parseInt(additionalItem.numpad.answer,10) == items.colQues*items.rowQues) {
         if (items.repeaterGridCol.itemAt(items.colQues).state == "active" && items.repeaterGridRow.itemAt(items.rowQues).state == "active") {
             items.bonus.good("flower")
         }
@@ -118,7 +122,7 @@ function checkit() {
             items.bonus.bad("flower")
         }
     }
-    else {
+    /*else {
         items.bonus.bad("flower")
-    }
+    }*/
 }
