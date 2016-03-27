@@ -55,12 +55,10 @@ ActivityBase {
             property alias repeaterGridRow: repeaterGridRow
             property alias repeaterGridCol: repeaterGridCol
             property alias repeater: repeater
-            //property alias answer: answer
             /*variables*/
             property int spacing: 5
             property int rectHeight: main.height/15
             property int rectWidth: main.height/15
-            //property int enteredInput: 0
             property int rowSelected: 0
             property int colSelected: 0
             property int rowQues: 0
@@ -243,22 +241,6 @@ ActivityBase {
             text: items.rowQues + " X " + items.colQues + " = " + numpad.answer
         }
 
-
-        /*TextInput {
-            id: answer
-            anchors {
-                left: question.right
-                verticalCenter: question.verticalCenter
-            }
-            font.pixelSize: question.fontSize*2
-            validator: IntValidator { bottom:1; top: 100}
-            onAccepted: {
-                items.enteredInput = text
-                Activity.checkit()
-            }
-        }*/
-
-
         //////////////////////////////////////////////////////////////////////////////////////////////
 
         DialogHelp {
@@ -290,7 +272,6 @@ ActivityBase {
     NumPad {
         id: numpad
         maxDigit: 3
-
         onAnswerChanged: {
             Activity.checkit()
         }

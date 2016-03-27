@@ -42,10 +42,7 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     items.rowSelected = 0
     items.colSelected = 0
-    //items.enteredInput = 0
-    //additionalItems.enteredInput = 0
     additionalItem.numpad.resetText()
-    //items.answer.text = ""
 
     items.rowQues = Math.floor((Math.random() * 10) + 1);
     items.colQues = Math.floor((Math.random() * 10) + 1);
@@ -118,9 +115,9 @@ function checkit() {
         else if(items.repeaterGridCol.itemAt(items.rowQues).state == "active" && items.repeaterGridRow.itemAt(items.colQues).state == "active") {
             items.bonus.good("flower")
         }
-        else {
+        /*else {
             items.bonus.bad("flower")
-        }
+        }*/
     }
     /*else {
         items.bonus.bad("flower")
