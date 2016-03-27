@@ -263,6 +263,8 @@ ActivityBase {
             Component.onCompleted: win.connect(Activity.nextLevel)
         }
     }
+
+
     Item {
         id: additionalItem
         property alias numpad: numpad
