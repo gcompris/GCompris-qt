@@ -216,17 +216,16 @@ ActivityBase {
             id: instruction
             anchors {
                 top: parent.top
-                topMargin: main.height/3 - 2*instruction.height/3
+                topMargin: main.height/4 - 2*instruction.height/3
                 right: parent.right
-                rightMargin: (main.width/9)
+                rightMargin: (main.width/6)
             }
-            fontSize: regularSize
+            fontSize: smallSize
             text: qsTr("Instruction:\n")+
                     qsTr("   Multiplicand x Multiplier = Answer\n")+
                     qsTr("       1) Select the Column\n")+
                     qsTr("       2) Select the Row\n")+
-                    qsTr("       3) State the answer\n")+
-                    qsTr("       4) Press Enter")
+                    qsTr("       3) State the answer\n")
         }
 
         GCText {
@@ -235,7 +234,7 @@ ActivityBase {
                 horizontalCenter: instruction.horizontalCenter
                 horizontalCenterOffset: -30
                 top: instruction.bottom
-                topMargin: 40
+                topMargin: 20
             }
             fontSize: hugeSize
             text: items.rowQues + " X " + items.colQues + " = " + numpad.answer
