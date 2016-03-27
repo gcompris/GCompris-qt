@@ -55,7 +55,7 @@ ActivityBase {
             property alias repeaterGridRow: repeaterGridRow
             property alias repeaterGridCol: repeaterGridCol
             property alias repeater: repeater
-            property alias answer: answer
+            //property alias answer: answer
             /*variables*/
             property int spacing: 5
             property int rectHeight: main.height/15
@@ -69,7 +69,7 @@ ActivityBase {
 
         onStart: {
             Activity.start(items)
-            answer.forceActiveFocus()
+            numpad.forceActiveFocus()
         }
         onStop: { Activity.stop() }
 
@@ -243,10 +243,11 @@ ActivityBase {
                 topMargin: 40
             }
             fontSize: hugeSize
-            text: items.rowQues + " X " + items.colQues + " = "
+            text: items.rowQues + " X " + items.colQues + " = " + numpad.answer
         }
 
-        TextInput {
+
+        /*TextInput {
             id: answer
             anchors {
                 left: question.right
@@ -258,6 +259,29 @@ ActivityBase {
                 items.enteredInput = text
                 Activity.checkit()
             }
+        }*/
+
+        NumPad {
+            id: numpad
+            anchors.top: question.bottom
+            anchors.left: question.left
+            height: 100
+            width: 100
+
+            onAnswerChanged: {
+                items.enteredInput = parseInt(answer,10)
+
+            }
+        }
+
+        Keys.onPressed: {
+            if(event.isAutoRepeat==0) {
+                numpad.updateAnswer(event.key, true);
+            }
+        }
+
+        Keys.onReleased: {
+            numpad.updateAnswer(event.key, false);
         }
 
         //////////////////////////////////////////////////////////////////////////////////////////////
