@@ -146,8 +146,7 @@ ActivityBase {
                    width: items.rectWidth
                    height: items.rectHeight
                    property bool clickedFlagCol: false
-                   //state: "default"
-                   state: index == items.rowSelected ? "active" : "default"
+                   state: "default"
                    states:[
                        State {
                            name: "default"
@@ -174,8 +173,7 @@ ActivityBase {
                                dotsGridCol.state = "default"
                                items.colSelected = 0
                            }
-                           //Activity.makeOtherRowInColWhite()
-                           //state: index == items.rowSelected ? "active" : "default"
+                           Activity.makeOtherRowInColWhite()
                            Activity.changesInMainBoard()
                        }
                    }
@@ -233,8 +231,8 @@ ActivityBase {
         GCText {
             id: question
             anchors {
-                horizontalCenter: instruction.horizontalCenter
-                horizontalCenterOffset: -30
+                left: instruction.left
+                leftMargin: 30
                 top: instruction.bottom
                 topMargin: 20
             }
