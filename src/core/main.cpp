@@ -19,7 +19,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 #include <QtDebug>
-#include <QGuiApplication>
+#include <QApplication>
 #include <QQuickWindow>
 #include <QQmlApplicationEngine>
 #include <QStandardPaths>
@@ -108,7 +108,7 @@ int main(int argc, char *argv[])
     // Disable it because we already support HDPI display natively
     qunsetenv("QT_DEVICE_PIXEL_RATIO");
 
-    QGuiApplication app(argc, argv);
+    QApplication app(argc, argv);
     app.setOrganizationName("KDE");
     app.setApplicationName(GCOMPRIS_APPLICATION_NAME);
     app.setOrganizationDomain("kde.org");
