@@ -122,8 +122,3 @@ function checkit() {
         items.bonus.bad("flower")
     }
 }
-
-
-
-
-

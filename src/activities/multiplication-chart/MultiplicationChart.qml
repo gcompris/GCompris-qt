@@ -269,7 +269,8 @@ ActivityBase {
             width: 100
 
             onAnswerChanged: {
-                items.enteredInput = parseInt(answer,10)
+                //items.enteredInput = parseInt(answer,10)
+                console.log(answer, "This is the outcome")
 
             }
         }
