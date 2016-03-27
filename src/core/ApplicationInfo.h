@@ -267,7 +267,13 @@ public:
 	bool isPortraitMode() const { return m_isPortraitMode; }
 	void setIsPortraitMode(const bool newMode);
     bool isMobile() const { return m_isMobile; }
-    bool hasShader() const { return false; }
+    bool hasShader() const {
+#if defined(Q_OS_ANDROID)
+        return false;
+#else
+        return true;
+#endif
+    }
 	qreal ratio() const { return m_ratio; }
     qreal fontRatio() const { return m_fontRatio; }
     QString localeShort() const {
