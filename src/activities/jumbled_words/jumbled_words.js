@@ -108,6 +108,38 @@ function initLevel() {
 
     items.questionItem.visible = true
     items.questionItem.text = questions;
+
+        /* populate VirtualKeyboard for mobile:
+             * 1. for < 10 letters print them all in the same row
+             * 2. for > 10 letters create 3 rows with equal amount of keys per row
+             *    if possible, otherwise more keys in the upper rows
+             * 3. if we have both upper- and lowercase letters activate the shift
+             *    key*/
+        // first generate a map of needed letters
+        var letters = new Array();
+        items.keyboard.shiftKey = false;
+      var a = questions.split("");
+    var n = a.length;
+   for(var i = n-1; i>=0; i--)
+    {
+        letters.push(a[i]);
+        //letters.push(String.fromCharCode(i));
+    }
+        // generate layout from letter map
+        var layout = new Array();
+        var row = 0;
+        var offset = 0;
+        while (offset < letters.length-1) {
+            var cols = letters.length <= 10 ? letters.length : (Math.ceil((letters.length-offset) / (3 - row)));
+            layout[row] = new Array();
+            for (var j = 0; j < cols; j++)
+                layout[row][j] = { label: letters[j+offset] };
+            offset += j;
+            row++;
+        }
+        items.keyboard.layout = layout;
+
+
 }
 
 
@@ -149,6 +181,23 @@ function checkAnswer()
         items.bonus.bad("flower");
         return false
     }
+}
+
+function processkey(text)
+{
+//    var typedText = text;
+
+//    if (currentLetter !== null) {
+//        // check against a currently typed word
+//        if (!currentLetter.checkMatch(typedText)) {
+//            currentLetter = currentWord[k++];
+//        }
+//    }
+
+//    if (k==currentWord.length) {
+//        // win!
+//       checkAnswer();
+//    }
 }
 
 function showHint()

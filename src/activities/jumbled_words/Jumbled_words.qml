@@ -53,6 +53,7 @@ ActivityBase {
             property Item main: activity.main
             property alias parser: parser
             property alias bar: bar
+            property alias keyboard: keyboard
             property alias questionItem: questionItem
             property alias bonus: bonus
             property alias edit: edit
@@ -157,14 +158,14 @@ ActivityBase {
         Item {
             id: questionItem
             anchors {
-                left: parent.left
+               left: parent.left
                 top: parent.top
                 right:parent.right
-                margins: 10
+                bottom: bar.top
             }
            anchors.leftMargin: 10 * ApplicationInfo.ratio
+           anchors.bottomMargin: 250 * ApplicationInfo.ratio
             anchors.topMargin: parent.height * 0.25
-            z: 10
             width: questionText.width * 2
             height: questionText.height * 1.3
             visible: true
@@ -180,16 +181,6 @@ ActivityBase {
                 color: "#000065"
                 opacity: 0.31
                 radius: 10
-
-                MouseArea {
-                    id: mouseArea
-                    anchors.fill: parent
-                    hoverEnabled: ApplicationInfo.isMobile ? false : true
-
-                    onClicked: {
-                        Activity.checkAnswer();
-                    }
-                }
             }
 
             GCText {
@@ -197,7 +188,6 @@ ActivityBase {
                 anchors.horizontalCenter: parent.horizontalCenter
                 anchors.verticalCenter: parent.verticalCenter
                 opacity: 1.0
-                z:11
                 fontSize: 44
                 font.bold: true
                 style: Text.Outline
@@ -216,98 +206,51 @@ ActivityBase {
             }
 
 
-        }
-
-        Image{
-            id : hintImage
-            anchors {
-                    left:parent.left
-                    bottom:flick.top
-            }
-        }
-
-
-
-        Rectangle {
-            id: flickRect
-            anchors.fill: flick
-            border.color: "#FFFFFFFF"
-            border.width: 2
-            height:flick.height
-            color: "#000065"
-            opacity: 0.31
-            radius: 10
-        }
-
-        Flickable {
-            id: flick
-            anchors.leftMargin: 300 * ApplicationInfo.ratio
-            anchors.rightMargin: 300 * ApplicationInfo.ratio
-            anchors.bottomMargin: 50 * ApplicationInfo.ratio
-
-            anchors {
-                left: parent.left
-                right: parent.right
-                top: questionItem.bottom
-                bottom: bar.top
-                margins: 10
-                centerIn: background.Center
-            }
-            contentWidth: edit.paintedWidth
-            contentHeight: edit.paintedHeight
-            clip: true
-            flickableDirection: Flickable.VerticalFlick
-
-            function ensureVisible(r)
-            {
-                if (contentX >= r.x)
-                    contentX = r.x;
-                else if (contentX+width <= r.x+r.width)
-                    contentX = r.x+r.width-width;
-                if (contentY >= r.y)
-                    contentY = r.y;
-                else if (contentY+height <= r.y+r.height)
-                    contentY = r.y+r.height-height;
-
-            }
-
-            TextEdit {
+            TextInput {
                 id: edit
-                width: flick.width
-                height: flick.height
+                width: questionText.width
+                height:questionText.height
                 focus: true
-                wrapMode: TextEdit.Wrap
-                textFormat: TextEdit.RichText
-                onCursorRectangleChanged: {
-                    flick.ensureVisible(cursorRectangle)
+                anchors {
+                    left:questionText.left
+                    right:questionText.right
+                    centerIn: background.Center
+                    top: questionText.bottom
                 }
+                maximumLength:questionText.text.length
+                horizontalAlignment:TextInput.AlignHCenter
+                wrapMode: TextInput.Wrap
                 font {
                     pointSize: (40 + ApplicationSettings.baseFontSize) * ApplicationInfo.fontRatio
                     capitalization: ApplicationSettings.fontCapitalization
                     weight: Font.Bold
                     family: GCSingletonFontLoader.fontLoader.name
                     letterSpacing: ApplicationSettings.fontLetterSpacing
-                    wordSpacing: 10
                 }
-
-                cursorDelegate: Rectangle {
-                    id: cursor
-                    width: 10
-                    height: parent.cursorRectangle.height
-                    color: 'white'
-                    SequentialAnimation on opacity {
-                        running: true
-                        loops: Animation.Infinite
-                        PropertyAnimation {
-                            to: 0.2
-                            duration: 1000
-                        }
-                        PropertyAnimation {
-                            to: 1
-                            duration: 1000
-                        }
+            }
+            Rectangle {
+                id: flickRect
+                anchors.fill: edit
+                border.color: "#FFFFFFFF"
+                border.width: 2
+                width: questionRect.width
+                height:questionRect.height
+                color: "#000065"
+                opacity: 0.31
+                radius: 10
+            }
+            Keys.onPressed: {
+                    if (event.key === Qt.Key_Return) {
+                        Activity.checkAnswer()
                     }
+                     edit.text=""
                 }
+        }
+        Image{
+            id : hintImage
+            anchors {
+                    left:parent.left
+                    top:score.bottom
             }
         }
 
@@ -317,6 +260,8 @@ ActivityBase {
             border.color: "#FFFFFFFF"
             border.width: 2
             height:submitText.height
+            anchors {
+            }
             color: "#000065"
             opacity: 0.31
             radius: 10
@@ -339,9 +284,10 @@ ActivityBase {
             id: submitText
             anchors.horizontalCenter: parent.horizontalCenter
             anchors{
-                bottom: bar.top
-                margins: 10
+                top:Item.bottom
+                bottom:bar.top
             }
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio
             opacity: 1.0
             text:qsTr("Submit")
             fontSize: mediumSize
@@ -363,6 +309,7 @@ ActivityBase {
 
         Bar {
             id: bar
+            anchors.bottom: keyboard.top
             content: BarEnumContent { value: help | home | level | reload | config}
             onHelpClicked: {
                 displayDialog(dialogHelpLeftRight)
@@ -392,6 +339,18 @@ ActivityBase {
             Component.onCompleted: {
                 win.connect(Activity.nextSubLevel)
             }
+        }
+        VirtualKeyboard {
+            id: keyboard
+            anchors.bottom: parent.bottom
+            anchors.horizontalCenter: parent.horizontalCenter
+            width: parent.width
+
+            onKeypress: {
+                edit.insert(edit.cursorPosition, text)
+                Activity.processkey(text);
+            }
+            onError: console.log("VirtualKeyboard error: " + msg);
         }
 
         JsonParser {
