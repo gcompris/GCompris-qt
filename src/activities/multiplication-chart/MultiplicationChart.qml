@@ -104,7 +104,10 @@ ActivityBase {
                        }
                    ]
 
-                   GCText{ text: index}
+                   GCText{
+                       text: index
+                       anchors.centerIn: parent
+                   }
 
                    MouseArea {
                        anchors.fill: parent
@@ -160,7 +163,10 @@ ActivityBase {
                        }
                    ]
 
-                   GCText{ text: index}
+                   GCText {
+                       text: index
+                       anchors.centerIn: parent
+                   }
 
                    MouseArea {
                        anchors.fill: parent
@@ -206,6 +212,7 @@ ActivityBase {
 
                     GCText {
                         text: (Math.floor(index/10) + 1) * (index%10 + 1)
+                        anchors.centerIn: parent
                     }
 
                 }
