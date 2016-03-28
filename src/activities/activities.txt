@@ -51,6 +51,7 @@ gnumch-inequality
 gnumch-multiples
 gnumch-primes
 graph-coloring
+guesscount
 guessnumber
 hangman
 hanoi
