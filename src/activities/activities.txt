@@ -100,6 +100,7 @@ numbers-odd-even
 paintings
 penalty
 planegame
+practice
 readingh
 readingv
 redraw
