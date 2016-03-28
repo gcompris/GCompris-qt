@@ -1,0 +1,530 @@
+/* GCompris - LandSafe.qml
+ *
+ * Copyright (C) 2016 Holger Kaelberer <holger.k@elberer.de>
+ *
+ * Authors:
+ *   Matilda Bernard <serah4291@gmail.com> (GTK+ version)
+ *   Holger Kaelberer <holger.k@elberer.de> (Qt Quick port)
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
+import QtQuick 2.1
+import Box2D 2.0
+import QtQuick.Particles 2.0
+import GCompris 1.0
+
+import "../../core"
+import "land_safe.js" as Activity
+
+ActivityBase {
+    id: activity
+
+    onStart: focus = true
+    onStop: {}
+
+    Keys.onPressed: Activity.processKeyPress(event)
+    Keys.onReleased: Activity.processKeyRelease(event)
+
+    pageComponent: Image {
+        id: background
+
+        source: Activity.baseUrl + "/background4.jpg";
+        anchors.centerIn: parent
+        anchors.fill: parent
+
+        signal start
+        signal stop
+
+        Component.onCompleted: {
+            activity.start.connect(start)
+            activity.stop.connect(stop)
+        }
+
+        // Add here the QML items you need to access in javascript
+        QtObject {
+            id: items
+            property Item main: activity.main
+            property alias background: background
+            property alias bar: bar
+            property alias bonus: bonus
+            property alias rocket: rocket
+            property alias world: physicsWorld
+            property alias landing: landing
+            property alias ground: ground
+            property alias stats: stats
+            property var rocketCategory: Fixture.Category1
+            property var groundCategory: Fixture.Category2
+            property var landingCategory: Fixture.Category3
+            property var borderCategory: Fixture.Category4
+            property string mode: "rotate"  // "simple"
+            property double lastVelocity: 0.0
+        }
+
+        onStart: { Activity.start(items) }
+        onStop: { Activity.stop() }
+
+        World {
+            id: physicsWorld
+
+            running: false;
+            gravity: Qt.point(0, Activity.gravity)
+            pixelsPerMeter: 0
+            autoClearForces: false
+            //timeStep: 1.0/60.0 // default: 60Hz
+
+            onStepped: {
+                if (Math.abs(rocket.body.linearVelocity.y) > 0.01)  // need to store velocity before it is aaaalmost 0 because of ground/landing contact
+                    items.lastVelocity = stats.velocity.y;
+                stats.velocity = rocket.body.linearVelocity;
+
+                stats.height = Math.max(0, Math.round(Activity.getRealHeight()));
+
+                // update fuel:
+                var dt = timeStep;
+                var dFuel = -(dt * (items.rocket.accel + items.rocket.leftAccel
+                                    + items.rocket.rightAccel));
+                Activity.currentFuel = Math.max(0, Activity.currentFuel + dFuel);
+                stats.fuel = Math.round(Activity.currentFuel / Activity.maxFuel * 100);
+                if (Activity.currentFuel === 0)
+                    // fuel consumed:
+                    items.rocket.accel = items.rocket.leftAccel = items.rocket.rightAccel = 0;
+
+//                console.log("VVV changed: " + items.lastVelocity + " --> " + stats.velocity.y + " / " + rocket.body.linearVelocity.y);
+            }
+
+        }
+
+        MouseArea {
+            id: mouse
+            anchors.fill: parent
+            onClicked: debugDraw.visible = !debugDraw.visible;
+        }
+
+        // bounding fixtures
+        Item {
+            id: leftBorder
+            width: 1
+            height: parent.height
+            anchors.left: parent.left
+            anchors.top: parent.top
+
+            readonly property string collisionName: "leftBorder"
+
+            Body {
+                id: leftBody
+
+                target: leftBorder
+                bodyType: Body.Static
+                sleepingAllowed: false
+                fixedRotation: true
+                linearDamping: 0
+
+                fixtures: Box {
+                    id: leftFixture
+                    categories: items.borderCategory
+                    collidesWith: items.rocketCategory
+                    density: 1
+                    friction: 0
+                    restitution: 0
+                    width: leftBorder.width
+                    height: leftBorder.height
+                }
+            }
+        }
+
+        Item {
+            id: rightBorder
+            width: 1
+            height: parent.height
+            anchors.right: parent.right
+            anchors.rightMargin: 1
+            anchors.top: parent.top
+
+            readonly property string collisionName: "rightBorder"
+
+            Body {
+                id: rightBody
+
+                target: rightBorder
+                bodyType: Body.Static
+                sleepingAllowed: false
+                fixedRotation: true
+                linearDamping: 0
+
+                fixtures: Box {
+                    id: rightFixture
+                    categories: items.borderCategory
+                    collidesWith: items.rocketCategory
+                    density: 1
+                    friction: 0
+                    restitution: 0
+                    width: rightBorder.width
+                    height: rightBorder.height
+                }
+            }
+        }
+
+        GCText {
+            id: stats
+            z: 0
+            property var velocity: rocket.body.linearVelocity
+            property double fuel: 100.0
+            property double heigth: Activity.startingHeightReal
+
+            anchors.left: background.left
+            anchors.leftMargin: 20
+            anchors.top: background.top
+            anchors.topMargin: 20
+            width: 100
+            height: 100
+            color: "gray"
+
+            fontSize: tinySize
+            text: qsTr("Planet: ") + Activity.levels[Activity.currentLevel].planet + "<br/>" +
+                  qsTr("Velocity: ") + Math.round(velocity.y * 10) / 10 + "<br/>" +
+                  qsTr("Fuel: ") + fuel  + "<br/>" +
+                  qsTr("Altitude: ") + height + "<br/>" +
+                  qsTr("Gravity: ") + Math.round(Activity.gravity * 100)/100
+        }
+
+        Item {
+            id: rocket
+            property double accel: 0.0
+            property double leftAccel: 0.0
+            property double rightAccel: 0.0
+            property alias body: rocketBody
+            property alias leftEngine: leftEngine
+            property alias rightEngine: rightEngine
+            property alias explosion: explosion
+            //property float rotate
+
+            rotation: 0
+            width: background.width / 18// * ApplicationInfo.ratio
+            height: width / 232 * 385
+            x: 300
+            y: 50
+            z: 3
+
+            Component.onCompleted: rocket.body.applyForceToCenter(Qt.point(0, 5));
+
+            onAccelChanged: applyForces();
+            onLeftAccelChanged: applyForces();
+            onRightAccelChanged: applyForces();
+            onRotationChanged: if (accel > 0)       // should only happen in
+                                   applyForces();   // "rotation" mode
+
+            // map acceleration to box2d forces applying appropriate factors:
+            function applyForces()
+            {
+                var totForce = (accel / 0.5 * 5)
+                var xForce;
+                var yForce;
+
+                if (items.mode === "simple") {
+                    yForce = -totForce;
+                    xForce = (leftAccel-rightAccel)
+                             * 10 /* base of 10 m/s^2 */
+                             * 5  /* factor to make movement smooth */;
+                } else { // "rotation"
+                    yForce = -(totForce * Math.cos(Activity.degToRad(items.rocket.rotation)));
+                    xForce = (totForce * Math.sin(Activity.degToRad(items.rocket.rotation)));
+                }
+                var yFForce = yForce * items.rocket.body.getMass();
+                var xFForce = xForce * items.rocket.body.getMass();
+                var force = Qt.point(xFForce, yFForce);
+                console.log("applying force " + force + " - " + " - mass=" + items.rocket.body.getMass() + " v=" + items.rocket.body.linearVelocity + " totForce=" + totForce + " - rotation=" + items.rocket.rotation + " - xForce=" + xForce + " xFForce=" + xFForce + " mass=" + items.rocket.body.getMass());
+
+                physicsWorld.clearForces();
+                items.rocket.body.applyForceToCenter(force);
+            }
+
+            Image {
+                id: rocketImage
+
+                width: parent.width
+                height: parent.height
+                sourceSize.width: 1024
+                source: Activity.baseUrl + "/rocket.svg";
+                anchors.centerIn: parent
+                anchors.fill: parent
+            }
+
+            Image {
+                id: explosion
+
+//                width: parent.height
+//                height: width/785*621
+                width: height/621 * 785
+                height: 2*parent.height
+                sourceSize.width: 1024
+                source: Activity.baseUrl + "/explosion.svg";
+                anchors.bottom: parent.bottom
+                anchors.horizontalCenter: parent.horizontalCenter
+                scale: 0
+
+                function show() {
+                    visible = true;
+                    scale = 1;
+                }
+                function hide() {
+                    visible = false;
+                    scale = 0;
+                }
+
+                Behavior on scale {
+                    NumberAnimation {
+                        duration: 150
+                        easing.type: Easing.InExpo
+                    }
+                }
+            }
+
+            Body {
+                id: rocketBody
+
+                target: rocket
+                bodyType: Body.Dynamic
+                sleepingAllowed: false
+                fixedRotation: true
+                linearDamping: 0
+                property double rotation: Activity.degToRad(rocket.rotation % 360)
+
+                onLinearVelocityChanged: console.log("v = " + linearVelocity);
+
+                fixtures: Box {
+                    id: rocketFixture
+                    categories: items.rocketCategory
+                    collidesWith: items.groundCategory | items.landingCategory | items.borderCategory
+                    density: 1
+                    friction: 0
+                    restitution: 0
+                    width: rocket.width
+                    height: rocket.height
+                    rotation: rocketBody.rotation
+
+                    onBeginContact: {
+                        console.log("XXX beginning contact with "
+                                    + other.getBody().target.collisionName
+                                    + " abs v=" + Math.abs(items.lastVelocity) +
+                                    + " maxV=" + Activity.maxLandingVelocity);
+
+                        if (other.getBody().target === leftBorder ||
+                                other.getBody().target === rightBorder)
+                            ; //nothing to do
+                        else if (other.getBody().target === landing &&
+                                 Math.abs(items.lastVelocity) <= Activity.maxLandingVelocity &&
+                                (items.mode === "simple" || rocket.rotation === 0))
+                            Activity.finishLevel(true);
+                        else // ground
+                            Activity.finishLevel(false); // crash
+                    }
+                    onEndContact: console.log("XXX ending contact with " + other.getBody().target.collisionName);
+                }
+            }
+
+            ParticleSystem {
+                id: leftEngine
+
+                anchors.left: parent.left
+                anchors.leftMargin: 10
+                anchors.verticalCenter: parent.verticalCenter
+                height: 30
+
+                ImageParticle {
+                    groups: ["flameLeft"]
+                    source: "qrc:///particleresources/glowdot.png"
+                    color: "#11ff400f"
+                    colorVariation: 0.1
+                }
+                Emitter {
+                    anchors.centerIn: parent
+                    group: "flameLeft"
+
+                    emitRate: rocket.leftAccel > 0 ? 50 : 0  // 50
+                    lifeSpan: rocket.leftAccel > 0 ? 600 : 0 // 600
+                    size: rocket.leftAccel > 0 ? leftEngine.height : 0
+                    endSize: 5
+                    sizeVariation: 5
+                    acceleration: PointDirection { x: -40 }
+                    velocity: PointDirection { x: -40 }
+                }
+            }
+
+            ParticleSystem {
+                id: rightEngine
+
+                anchors.right: parent.right
+                anchors.rightMargin: 10
+                anchors.verticalCenter: parent.verticalCenter
+                height: 30
+
+                ImageParticle {
+                    groups: ["flameRight"]
+                    source: "qrc:///particleresources/glowdot.png"
+                    color: "#11ff400f"
+                    colorVariation: 0.1
+                }
+                Emitter {
+                    anchors.centerIn: parent
+                    group: "flameRight"
+
+                    emitRate: rocket.rightAccel > 0 ? 50 : 0  // 50
+                    lifeSpan: rocket.rightAccel > 0 ? 600 : 0 // 600
+                    size: rocket.rightAccel > 0 ? rightEngine.height : 0
+                    endSize: 5
+                    sizeVariation: 5
+                    acceleration: PointDirection { x: 40 }
+                    velocity: PointDirection { x: 40 }
+                }
+            }
+
+            ParticleSystem {
+                id: bottomEngine
+                anchors.top: parent.bottom
+                anchors.topMargin: 5
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: rocket.width
+
+                ImageParticle {
+                    groups: ["flame"]
+                    source: "qrc:///particleresources/glowdot.png"
+                    color: "#11ff400f"
+                    colorVariation: 0.1
+                }
+                Emitter {
+                    anchors.centerIn: parent
+                    group: "flame"
+
+                    emitRate: rocket.accel > 0 ? (75 + 75*rocket.accel) : 0 // 75-150
+                    lifeSpan: (500 + 500 * rocket.accel) * background.height / 600  // 500 - 1000
+                    size: rocket.width/2 + rocket.width/2*rocket.accel // width*-0.5 - width
+                    endSize: size/1.85
+                    sizeVariation: 10
+                    acceleration: PointDirection { y: 80 }
+                    velocity: PointDirection { y: 80 }
+                }
+            }
+
+        }
+
+        Image {
+            id: ground
+
+            z: 1
+            width: parent.width
+//            height: parent.height
+            source: Activity.baseUrl + "/land4.png";
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+
+            readonly property string collisionName: "ground"
+            property int surfaceOffset: height/2
+
+            Body {
+                id: groundBody
+
+                target: ground
+                bodyType: Body.Static
+                sleepingAllowed: true
+                fixedRotation: true
+                linearDamping: 0
+
+                fixtures: Box {
+                    id: groundFixture
+
+                    categories: items.groundCategory
+                    collidesWith: items.rocketCategory
+                    density: 1
+                    friction: 0
+                    restitution: 0
+                    width: ground.width
+                    height: ground.height - ground.surfaceOffset
+                    x: 0
+                    y: ground.surfaceOffset
+                }
+            }
+        }
+
+        Image {
+            id: landing
+
+            readonly property string collisionName: "landing"
+            property int surfaceOffset: landing.height - 1
+
+            z: 2
+            source: Activity.baseUrl + "/landing_red.png";
+            anchors.left: ground.left
+            anchors.leftMargin: 270
+            anchors.top: ground.top
+            anchors.topMargin: ground.surfaceOffset - height
+            width: 116 * background.width / 900
+
+            Body {
+                id: landingBody
+
+                target: landing
+                bodyType: Body.Static
+                sleepingAllowed: true
+                fixedRotation: true
+                linearDamping: 0
+
+                fixtures: Box {
+                    id: landingFixture
+
+                    categories: items.landingCategory
+                    collidesWith: items.rocketCategory
+                    density: 1
+                    friction: 0
+                    restitution: 0
+                    width: landing.width
+                    height: landing.height - landing.surfaceOffset
+                    y: landing.surfaceOffset
+                }
+            }
+        }
+
+        DebugDraw {
+            id: debugDraw
+            world: physicsWorld
+            visible: false
+            z: 1
+        }
+
+        DialogHelp {
+            id: dialogHelp
+            onClose: home()
+        }
+
+        Bar {
+            id: bar
+            content: BarEnumContent { value: help | home | level }
+            onHelpClicked: {
+                displayDialog(dialogHelp)
+            }
+            onPreviousLevelClicked: Activity.previousLevel()
+            onNextLevelClicked: Activity.nextLevel()
+            onHomeClicked: activity.home()
+        }
+
+        Bonus {
+            id: bonus
+            Component.onCompleted: {
+                loose.connect(Activity.initLevel);
+                win.connect(Activity.nextLevel)
+            }
+        }
+    }
+
+}

@@ -60,6 +60,7 @@ imagename
 instruments
 intro_gravity
 lang
+land_safe
 leftright
 lightsoff
 louis-braille
