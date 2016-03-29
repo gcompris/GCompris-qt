@@ -57,8 +57,8 @@ ActivityBase {
             property alias repeater: repeater
             /*variables*/
             property int spacing: 5
-            property int rectHeight: main.height/15
-            property int rectWidth: main.height/15
+            property int rectHeight: parent.height/15
+            property int rectWidth: parent.height/15
             property int rowSelected: 0
             property int colSelected: 0
             property int rowQues: 0
@@ -122,6 +122,7 @@ ActivityBase {
                            }
                            Activity.makeOtherColInRowWhite()
                            Activity.changesInMainBoard()
+                           Activity.checkit()
                        }
                    }
                 }
@@ -181,6 +182,7 @@ ActivityBase {
                            }
                            Activity.makeOtherRowInColWhite()
                            Activity.changesInMainBoard()
+                           Activity.checkit()
                        }
                    }
                 }
