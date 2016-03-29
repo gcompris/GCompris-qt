@@ -34,14 +34,10 @@ ActivityBase {
         anchors.fill: parent
         signal start
         signal stop
-
-
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
         }
-
-
         // Add here the QML items you need to access in javascript
         QtObject {
             id: items
@@ -59,17 +55,14 @@ ActivityBase {
             property alias row6:row6
             property GCAudio audioEffects: activity.audioEffects
             property var no_of_rows
-
         }
-
-
 
         onStart: {
             console.log(parent.width)
             Activity.start(items)
         }
-        onStop: { Activity.stop() }
 
+        onStop: { Activity.stop() }
 
         DialogHelp {
             id: dialogHelp
@@ -98,22 +91,25 @@ ActivityBase {
             height:parent.height
         }
         //row 1
-
-        Row {
+        Rectangle {
             id:row1
-            spacing: 460
+            width: parent.width
+            height:parent.height/8
             anchors{
                 top:parent.top
-                topMargin:30
-                left:parent.left
-                leftMargin: 34
-            }
+                topMargin:(parent.height/80)*3
+                }
+            color: "transparent"
             Rectangle {
                 id:question_no
-                width:400;
-                height: 100;
+                width:parent.width*0.328;
+                height: parent.height;
                 radius: 20.0;
                 color: "steelblue"
+                anchors{
+                    left:parent.left
+                    leftMargin: parent.width*0.028
+                }
                 GCText{
                     anchors.horizontalCenter: parent.horizontalCenter
                     anchors.verticalCenter: parent.verticalCenter
@@ -122,10 +118,14 @@ ActivityBase {
                 }
             }
             Rectangle{
-                width:350;
-                height:100;
+                width:parent.width*0.35;
+                height:parent.height;
                 radius:20;
                 color:"orange"
+                anchors{
+                    right:parent.right
+                    rightMargin: parent.width*0.028
+                }
                 GCText{
                     id:guess
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -138,59 +138,49 @@ ActivityBase {
         // row 2
         Row {
             id:row2
-            spacing: 50
+            spacing: parent.width*0.041
             width:parent.width
+            height: parent.height/8
             anchors{
                 top:row1.bottom
-                topMargin: 30
+                topMargin: (parent.height/80)*3
+                left:parent.left
+                leftMargin: parent.width*0.082
             }
-
             Rectangle{
                 id:operator
-                width:parent.width/2
-                height:100
-                color:"transparent"
-                Rectangle {
+                width:parent.width*0.328;
+                height:parent.height
+                radius: 20.0;
+                color: "#F70D1A"
+                GCText{
                     anchors.horizontalCenter: parent.horizontalCenter
-                    width:400;
-                    height: 100;
-                    radius: 20.0;
-                    color: "#F70D1A"
-                    GCText{
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        fontSize: largeSize
-                        text: qsTr("Operators")
-                    }
+                    anchors.verticalCenter: parent.verticalCenter
+                    fontSize: mediumSize
+                    text: qsTr("Operators")
                 }
             }
+
             Repeater {
                 model: items.operators
                 Rectangle{
                     id:root
-                    width:100
-                    height:100
+                    width:background.width*0.082
+                    height:background.height/8
                     color: "#F70D1A"
                     MouseArea{
                         id:mousearea
                         anchors.fill:parent
-                        //width: 100
-                        //height: 100
                         property Rectangle obj: rec
                         drag.target: rec
                         onReleased: {
-
-
                             parent = rec.Drag.target !== null ? rec.Drag.target : root
-
-                            //var p=parent.children[1]
-                            //console.log(p.obj.operation)
                             rec.Drag.drop()
                         }
-
                         Rectangle {
                             id:rec
-                            width:100
-                            height: 100
+                            width:root.width
+                            height: root.width
                             color:"transparent"
                             anchors.verticalCenter: parent.verticalCenter
                             anchors.horizontalCenter: parent.horizontalCenter
@@ -200,11 +190,11 @@ ActivityBase {
                             Drag.hotSpot.x: 50
                             Drag.hotSpot.y: 50
                             Image {
+                                width: parent.width
                                 anchors.horizontalCenter: parent.horizontalCenter
                                 anchors.verticalCenter: parent.verticalCenter
                                 source: Activity.url+modelData[0]
                             }
-
                             radius: 20.0
                             states: State {
                                 when: mousearea.drag.active
@@ -219,52 +209,48 @@ ActivityBase {
         // row 3
         Row {
             id:row3
-            spacing: 50
+            spacing: parent.width*0.041
             width:parent.width
+            height: parent.height/8
             anchors{
                 top:row2.bottom
-                topMargin:10
+                topMargin: (parent.height/80)*3
+                left:parent.left
+                leftMargin: parent.width*0.082
             }
             Rectangle{
-                width:parent.width/2
-                height:100
-                color:"transparent"
-                Rectangle {
+                id:numbers
+                width:parent.width*0.328;
+                height:parent.height
+                radius: 20.0;
+                color: "#52D017"
+                GCText{
                     anchors.horizontalCenter: parent.horizontalCenter
-                    width:400;
-                    height: 100;
-                    radius: 20.0;
-                    color: "#52D017"
-                    GCText{
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        fontSize: largeSize
-                        text: qsTr("Numbers")
-                    }
+                    anchors.verticalCenter: parent.verticalCenter
+                    fontSize: mediumSize
+                    text: qsTr("Numbers")
                 }
             }
-
             Repeater{
                 model: items.data
                 Item{
                     id:root2
-                    width:100
-                    height:100
+                    width:background.width*0.082
+                    height:background.height/8
                     MouseArea{
                         id:mousearea
-                        //anchors.fill:rec2
-                        width: 100
-                        height: 100
+                        width: parent.width
+                        height: parent.height
                         property Rectangle obj: rec2
                         drag.target: rec2
                         onReleased: {
                             parent = rec2.Drag.target !== null ? rec2.Drag.target : root2
                             rec2.Drag.drop()
                         }
-
                         Rectangle {
                             id:rec2
-                            width:100
-                            height: 100
+                            width:parent.width
+                            height:parent.height
                             color:"#52D017"
                             anchors.verticalCenter: parent.verticalCenter
                             anchors.horizontalCenter: parent.horizontalCenter
@@ -279,7 +265,6 @@ ActivityBase {
                                 text:Number(modelData).toString()
                                 fontSize: mediumSize
                             }
-
                             radius: 20.0
                             states: State {
                                 when: mousearea.drag.active
@@ -290,18 +275,18 @@ ActivityBase {
                     }
                 }
             }
-
         }
-
         // operation row
         Row{
             id:row4
-            spacing: 50
+            spacing: parent.width*0.041
+            width: parent.width
+            height: parent.height/8
             anchors{
                 top:row3.bottom
-                topMargin:10
+                topMargin:parent.height/80
                 left:parent.left
-                leftMargin: 300
+                leftMargin: parent.height*0.247
             }
             property bool locked
             property var calculated_value
@@ -310,35 +295,26 @@ ActivityBase {
                 model:3
                 DropArea {
                     id: dragTarget
-                    width: 100
-                    height: 100
+                    width:parent.width*0.082
+                    height: parent.height
                     property bool present
                     property var mousearea: dragTarget.children[1]
-
-
-
-
                     onDropped: {
                         dragTarget.present=Qt.binding(function() { return true })
                         dragTarget.keys="not_allowed"
-
                         if(index==1)
                         {
                             var p=dragTarget.children[1]
                             console.log(p.obj.operation)
-
                         }
                         else
                         {
                             var p=dragTarget.children[1]
                             console.log(p.obj.datavalue)
                         }
-
                         var m=row4.children[0]
-
                         if(row4.children[0].present && row4.children[1].present && row4.children[2].present)
                         {
-
                             switch (row4.children[1].children[1].obj.operation) {
                             case "+":
                                 console.log(row4.children[0].children[1].obj.datavalue+row4.children[2].children[1].obj.datavalue);
@@ -355,8 +331,6 @@ ActivityBase {
                             default:
                                 console.log(row4.children[0].children[1].obj.datavalue*row4.children[2].children[1].obj.datavalue);
                                 row4.calculated_value=row4.children[0].children[1].obj.datavalue*row4.children[2].children[1].obj.datavalue
-
-
                             }
                             row4.children[5].children[0].text=Number(row4.calculated_value).toString()
                             if(Math.round(row4.calculated_value) == row4.calculated_value)
@@ -364,50 +338,33 @@ ActivityBase {
                                 console.log("integer")
                             }
                             else
-
                             {
                                 // not an integer
                                 console.log(row4.calculated_value)
                                 audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
                                 row4.children[5].children[0].text=" "
                             }
-
                             row5.enabled=true
-
                             if(row4.calculated_value==items.guesscount)
                             {
-
                                 row4.children[5].children[0].text=Number(row4.calculated_value).toString()
                                 if(items.question_no==3 && items.no_of_rows==1)
                                 {
-
                                     items.bonus.good("smiley")
-
                                 }
                                 if(items.question_no<3 && !Activity.visibility(2))
                                 {
                                     audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
                                     timer.start();
                                 }
-
-
-
                             }
                             else if(items.no_of_rows==1)
                             {
                                 audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
                             }
-
                         }
-
-
-
-
-
-
                     }
                     onExited: {
-                        //console.log("deleted")
                         dragTarget.present=Qt.binding(function() { return false })
                         dragTarget.keys=Activity.decidekeys(index,1)
                         result.children[0].text=" "
@@ -415,16 +372,10 @@ ActivityBase {
                         {
                             row5.enabled=false
                         }
-
-
-
-
-
                     }
                     onChildrenChanged: {
                         if(dragTarget.present==true)
                         {
-                            //console.log("deleted")
                             dragTarget.present=Qt.binding(function() { return false })
                             dragTarget.keys=Activity.decidekeys(index,1)
                             result.children[0].text=" "
@@ -432,19 +383,12 @@ ActivityBase {
                             {
                                 row5.enabled=false
                             }
-
                         }
                     }
-
-
-
-
-
-
                     Rectangle {
                         id:dropRectangle
-                        width:100
-                        height: 100
+                        width:parent.width*0.082
+                        height:parent.height
                         color:"transparent"
                         border.color: index==1 ? "#F70D1A" : "#52D017"
                         border.width: 5
@@ -454,9 +398,7 @@ ActivityBase {
                             anchors.verticalCenter: parent.verticalCenter
                             fontSize: mediumSize
                         }
-
                         radius: 20.0
-
                         states: [
                             State {
                                 when: dragTarget.containsDrag
@@ -464,23 +406,17 @@ ActivityBase {
                                     target: dropRectangle
                                     border.color:"white"
                                 }
-
                             }
                         ]
                         Component.onCompleted: {
                             dragTarget.keys = Activity.decidekeys(index,1)
                         }
-
-
-
                     }
-
                 }
             }
-
             Rectangle {
-                width:100
-                height: 100
+                width:parent.width*0.082
+                height:parent.height
                 color:"transparent"
                 Image {
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -491,8 +427,8 @@ ActivityBase {
             }
             Rectangle {
                 id:result
-                width:100
-                height: 100
+                width:parent.width*0.082
+                height:parent.height
                 border.color: "black"
                 GCText{
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -500,28 +436,27 @@ ActivityBase {
                     fontSize: mediumSize
                     text:" "
                 }
-
                 radius: 20.0
             }
-
         }
-
         //row 5
         Row{
             id:row5
-            spacing: 50
+            spacing: parent.width*0.041
             visible:true
+            width: parent.width
+            height: parent.height/8
             anchors{
                 top:row4.bottom
-                topMargin:10
+                topMargin:parent.height/80
                 left:parent.left
-                leftMargin: 300
+                leftMargin: parent.height*0.247
             }
             property var calculated_value
             Rectangle {
                 id:row4_result
-                width:100
-                height: 100
+                width:parent.width*0.082
+                height: parent.height
                 color:result.color
                 border.color: "black"
                 GCText{
@@ -530,7 +465,6 @@ ActivityBase {
                     fontSize: mediumSize
                     text:result.children[0].text
                 }
-
                 radius: 20.0
             }
             Repeater{
@@ -538,11 +472,10 @@ ActivityBase {
                 model:2
                 DropArea {
                     id: row5dragTarget
-                    width: 100
-                    height: 100
+                    width:parent.width*0.082
+                    height: parent.height
                     property bool present
                     property var mousearea: row5dragTarget.children[1]
-
                     onDropped: {
                         row5dragTarget.present=Qt.binding(function() { return true })
                         row5dragTarget.keys="not_allowed"
@@ -557,10 +490,8 @@ ActivityBase {
                             var p=row5dragTarget.children[1]
                             console.log(p.obj.operation)
                             row4.enabled=false
-
                         }
                         var m=row5.children[0]
-
                         if(row5.children[1].present && row5.children[2].present)
                         {
                             switch (row5.children[1].children[1].obj.operation) {
@@ -579,7 +510,6 @@ ActivityBase {
                             default:
                                 console.log(row4.calculated_value*row5.children[2].children[1].obj.datavalue);
                                 row5.calculated_value=row4.calculated_value*row5.children[2].children[1].obj.datavalue
-
                             }
                             row5.children[5].children[0].text=Number(row5.calculated_value).toString()
                             if(Math.round(row5.calculated_value) == row5.calculated_value)
@@ -587,7 +517,6 @@ ActivityBase {
                                 console.log("integer")
                             }
                             else
-
                             {
                                 // not an integer
                                 console.log(row5.calculated_value)
@@ -600,7 +529,6 @@ ActivityBase {
                                 row5.children[5].children[0].text=Number(row5.calculated_value).toString()
                                 if(items.question_no==3 && items.no_of_rows==2)
                                 {
-
                                     items.bonus.good("smiley")
                                 }
                                 if(items.question_no<3)
@@ -608,49 +536,32 @@ ActivityBase {
                                     audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
                                     timer.start();
                                 }
-
                             }
                             else if(items.no_of_rows==2)
                             {
                                 audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
                             }
-
-
                         }
-
-
-
-
-
-
                     }
                     onExited: {
-                        //console.log("deleted")
                         row5dragTarget.present=Qt.binding(function() { return false })
                         row5dragTarget.keys=Activity.decidekeys(index,2)
                         if(row5.children[1].present==false && row5.children[2].present==false)
                         {
                             row4.enabled=true
-
                         }
                         if(row5.children[1].present==false || row5.children[2].present==false)
                         {
-
                             row5result.children[0].text=" "
                         }
                         if(row5.children[1].present==false || row5.children[2].present==false)
                         {
                             row6.enabled=false
-
                         }
-
-
-
                     }
                     onChildrenChanged: {
                         if(row5dragTarget.present==true)
                         {
-                            //console.log("deleted")
                             row5dragTarget.present=Qt.binding(function() { return false })
                             row5dragTarget.keys=Activity.decidekeys(index,2)
                             if(row5.children[1].present==false && row5.children[2].present==false)
@@ -664,20 +575,13 @@ ActivityBase {
                             if(row5.children[1].present==false || row5.children[2].present==false)
                             {
                                 row6.enabled=false
-
                             }
                         }
                     }
-
-
-
-
-
-
                     Rectangle {
                         id:row5dropRectangle
-                        width:100
-                        height: 100
+                        width:parent.width*0.082
+                        height:parent.height
                         color:"transparent"
                         border.color: index==0 ? "#F70D1A" : "#52D017"
                         border.width: 5
@@ -687,9 +591,7 @@ ActivityBase {
                             anchors.verticalCenter: parent.verticalCenter
                             fontSize: mediumSize
                         }
-
                         radius: 20.0
-
                         states: [
                             State {
                                 when: row5dragTarget.containsDrag
@@ -697,20 +599,14 @@ ActivityBase {
                                     target: row5dropRectangle
                                     border.color:"white"
                                 }
-
                             }
                         ]
                         Component.onCompleted: {
                             row5dragTarget.keys = Activity.decidekeys(index,2)
                         }
-
-
-
                     }
-
                 }
             }
-
             Rectangle {
                 width:100
                 height: 100
@@ -724,8 +620,8 @@ ActivityBase {
             }
             Rectangle {
                 id:row5result
-                width:100
-                height: 100
+                width:parent.width*0.082
+                height:parent.height
                 border.color: "black"
                 GCText{
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -733,28 +629,27 @@ ActivityBase {
                     fontSize: mediumSize
                     text:" "
                 }
-
                 radius: 20.0
             }
-
         }
-
         //row 6
         Row{
             id:row6
-            spacing: 50
+            spacing: parent.width*0.041
             visible:true
+            width:parent.width
+            height: parent.height/8
             anchors{
                 top:row5.bottom
-                topMargin:10
+                topMargin:parent.height/80
                 left:parent.left
-                leftMargin: 300
+                leftMargin: parent.height*0.247
             }
             property var calculated_value
             Rectangle {
                 id:row5_result
-                width:100
-                height: 100
+                width:parent.width*0.082
+                height:parent.height
                 color: row5result.color
                 border.color: "black"
                 GCText{
@@ -763,7 +658,6 @@ ActivityBase {
                     fontSize: mediumSize
                     text:row5result.children[0].text
                 }
-
                 radius: 20.0
             }
             Repeater{
@@ -771,14 +665,10 @@ ActivityBase {
                 model:2
                 DropArea {
                     id: row6dragTarget
-                    width: 100
-                    height: 100
+                    width:parent.width*0.082
+                    height:parent.height
                     property bool present
                     property var mousearea: row6dragTarget.children[1]
-
-
-
-
                     onDropped: {
                         row6dragTarget.present=Qt.binding(function() { return true })
                         row6dragTarget.keys="not_allowed"
@@ -794,9 +684,7 @@ ActivityBase {
                             console.log(p.obj.operation)
                             row5.enabled=false
                         }
-
                         var m=row6.children[0]
-
                         if(row6.children[1].present && row6.children[2].present)
                         {
                             switch (row6.children[1].children[1].obj.operation) {
@@ -815,8 +703,6 @@ ActivityBase {
                             default:
                                 console.log(row5.calculated_value*row6.children[2].children[1].obj.datavalue);
                                 row6.calculated_value=row5.calculated_value*row6.children[2].children[1].obj.datavalue;
-
-
                             }
                             row6.children[5].children[0].text=Number(row6.calculated_value).toString()
                             if(Math.round(row6.calculated_value) == row6.calculated_value)
@@ -824,20 +710,17 @@ ActivityBase {
                                 console.log("integer")
                             }
                             else
-
                             {
                                 // not an integer
                                 console.log(row6.calculated_value)
                                 audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
                                 row6.children[5].children[0].text=" "
                             }
-
                             if(row6.calculated_value==items.guesscount)
                             {
                                 row6.children[5].children[0].text=Number(row6.calculated_value).toString()
                                 if(items.question_no==3 && items.no_of_rows==3)
                                 {
-
                                     items.bonus.good("smiley")
                                 }
                                 if(items.question_no<3)
@@ -845,22 +728,14 @@ ActivityBase {
                                     audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
                                     timer.start()
                                 }
-
                             }
                             else if(items.no_of_rows==3)
                             {
                                 audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
                             }
-
-
                         }
-
-
-
-
                     }
                     onExited: {
-                        //console.log("deleted")
                         row6dragTarget.present=Qt.binding(function() { return false })
                         row6dragTarget.keys=Activity.decidekeys(index,2)
                         if(row6.children[1].present==false && row6.children[2].present==false)
@@ -871,13 +746,10 @@ ActivityBase {
                         {
                             row6result.children[0].text=" "
                         }
-
-
                     }
                     onChildrenChanged: {
                         if(row6dragTarget.present==true)
                         {
-                            //console.log("deleted")
                             row6dragTarget.present=Qt.binding(function() { return false })
                             row6dragTarget.keys=Activity.decidekeys(index,2)
                             if(row6.children[1].present==false && row6.children[2].present==false)
@@ -888,19 +760,12 @@ ActivityBase {
                             {
                                 row6result.children[0].text=" "
                             }
-
                         }
                     }
-
-
-
-
-
-
                     Rectangle {
                         id:row6dropRectangle
-                        width:100
-                        height: 100
+                        width:parent.width*0.082
+                        height:parent.height
                         color:"transparent"
                         border.color: index==0 ? "#F70D1A" : "#52D017"
                         border.width: 5
@@ -910,9 +775,7 @@ ActivityBase {
                             anchors.verticalCenter: parent.verticalCenter
                             fontSize: mediumSize
                         }
-
                         radius: 20.0
-
                         states: [
                             State {
                                 when: row6dragTarget.containsDrag
@@ -920,23 +783,17 @@ ActivityBase {
                                     target: row6dropRectangle
                                     border.color:"white"
                                 }
-
                             }
                         ]
                         Component.onCompleted: {
                             row6dragTarget.keys = Activity.decidekeys(index,2)
                         }
-
-
-
                     }
-
                 }
             }
-
             Rectangle {
-                width:100
-                height: 100
+                width:parent.width*0.082
+                height:parent.height
                 color:"transparent"
                 Image {
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -947,8 +804,8 @@ ActivityBase {
             }
             Rectangle {
                 id:row6result
-                width:100
-                height: 100
+                width:parent.width*0.082
+                height:parent.height
                 border.color: "black"
                 GCText{
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -956,14 +813,9 @@ ActivityBase {
                     fontSize: mediumSize
                     text:" "
                 }
-
                 radius: 20.0
             }
-
         }
-
-
-
         Timer {
             id:timer
             interval: 1500
@@ -972,9 +824,6 @@ ActivityBase {
                 result.children[0].text=" "
                 Activity.run()
             }
-
         }
     }
-
-
 }
