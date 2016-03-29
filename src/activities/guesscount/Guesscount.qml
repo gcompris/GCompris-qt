@@ -192,6 +192,8 @@ ActivityBase {
                             width:100
                             height: 100
                             color:"transparent"
+                            anchors.verticalCenter: parent.verticalCenter
+                            anchors.horizontalCenter: parent.horizontalCenter
                             property var operation:modelData[1]
                             Drag.active: mousearea.drag.active
                             Drag.keys: [ "operator" ]
@@ -207,7 +209,7 @@ ActivityBase {
                             states: State {
                                 when: mousearea.drag.active
                                 ParentChange { target: rec; parent: root }
-                                AnchorChanges { target: rec; anchors.verticalCenter: root.anchors.verticalCenter; anchors.horizontalCenter: root.anchors.horizontalCenter }
+                                AnchorChanges { target: rec; anchors.verticalCenter: undefined; anchors.horizontalCenter: undefined }
                             }
                         }
                     }
@@ -264,6 +266,8 @@ ActivityBase {
                             width:100
                             height: 100
                             color:"#52D017"
+                            anchors.verticalCenter: parent.verticalCenter
+                            anchors.horizontalCenter: parent.horizontalCenter
                             property var datavalue: modelData
                             Drag.active: mousearea.drag.active
                             Drag.keys: [ "number" ]
@@ -280,7 +284,7 @@ ActivityBase {
                             states: State {
                                 when: mousearea.drag.active
                                 ParentChange { target: rec2; parent: root2 }
-                                AnchorChanges { target: rec2; anchors.verticalCenter: root2.anchors.verticalCenter; anchors.horizontalCenter: root2.anchors.horizontalCenter }
+                                AnchorChanges { target: rec2; anchors.verticalCenter: undefined; anchors.horizontalCenter: undefined }
                             }
                         }
                     }
