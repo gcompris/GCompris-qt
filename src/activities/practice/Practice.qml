@@ -90,11 +90,11 @@ ActivityBase {
                 color: "transparent"
                 width: background.width*0.65
                 height: background.height
-                Image {
+                /*Image {
                     source: Activity.url+"background2.jpg"
                     width:parent.width
                     height:parent.height
-                }
+                }*/
                 Grid {
                     id:grid
                     anchors.top:parent.top
@@ -140,7 +140,7 @@ ActivityBase {
                                 maximumLength:2
                                 validator: IntValidator{bottom: -1; top: 100;}
                                 KeyNavigation.right: operator
-                                KeyNavigation.down: evaluate
+                                //KeyNavigation.down: evaluate
 
 
 
@@ -185,7 +185,7 @@ ActivityBase {
                                 maximumLength:1
                                 KeyNavigation.right: secondop
                                 KeyNavigation.left: firstop
-                                KeyNavigation.down: evaluate
+                                //KeyNavigation.down: evaluate
 
                             }
                         }
@@ -228,7 +228,7 @@ ActivityBase {
                                 validator: IntValidator{bottom: -1; top: 100;}
                                 KeyNavigation.right: result
                                 KeyNavigation.left: operator
-                                KeyNavigation.down: evaluate
+                                //KeyNavigation.down: evaluate
 
                             }
                         }
@@ -281,7 +281,7 @@ ActivityBase {
                                 maximumLength:3
                                 validator: IntValidator{bottom: -1; top: 200;}
                                 KeyNavigation.left: secondop
-                                KeyNavigation.down: evaluate
+                                //KeyNavigation.down: evaluate
 
                             }
                         }
@@ -299,8 +299,8 @@ ActivityBase {
                     height: row1.height/20
                     signal clicked
                     onClicked: NumberAnimation { target: evaluate; property: "opacity"; from: 0; to: 1; duration: 200 }
-                    onActiveFocusChanged: {evaluate.scale= activeFocus ? 1.05 : 1 }
-                    Keys.onEnterPressed: { evaluate.children[1].clicked()}
+                    //onActiveFocusChanged: {evaluate.scale= activeFocus ? 1.05 : 1 }
+                    //Keys.onEnterPressed: { evaluate.children[1].clicked()}
                     color: "#53d769"
                     border.color: Qt.lighter(color, 1.1)
 
