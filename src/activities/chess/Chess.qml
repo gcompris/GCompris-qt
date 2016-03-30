@@ -204,9 +204,9 @@ ActivityBase {
 
                 Component {
                     id: square
-                    Rectangle {
-                        color: index % 2 + (Math.floor(index / 8) % 2) == 1 ?
-                                   "#FFFFFF99" : '#FF9999FF';
+                    Image {
+                        source: index % 2 + (Math.floor(index / 8) % 2) == 1 ?
+                                   Activity.url + 'chess-white.svg' : Activity.url + 'chess-black.svg';
                         width: items.cellSize
                         height: items.cellSize
                     }
