@@ -298,7 +298,7 @@ Item {
     }
 
     Rectangle {
-        id: background
+        id: keyboardBackground
 
         width: parent.width
         height: keyboard.height
@@ -382,7 +382,7 @@ Item {
                     } // Row
             } // Item
         } // ListView
-    } // background
+    } // keyboardBackground
 
     /// @endcond
 }
