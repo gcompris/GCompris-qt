@@ -49,7 +49,7 @@ ActivityBase {
     pageComponent: Image {
         id: background
         anchors.fill: parent
-        source: Activity.url + 'background.svg'
+        source: Activity.url + 'background-wood.svg'
         signal start
         signal stop
 
@@ -122,7 +122,7 @@ ActivityBase {
                                         (background.width - chessboard.width) / 2))
 
                 GCText {
-                    color: "black"
+                    color: "white"
                     anchors.horizontalCenter: parent.horizontalCenter
                     width: parent.width
                     fontSize: smallSize
@@ -244,9 +244,9 @@ ActivityBase {
                 Rectangle {
                     id: possibleMove
                     anchors.fill: parent
-                    color: parent.containsDrag ? 'green' : 'transparent'
+                    color: parent.containsDrag ? '#803ACAFF' : 'transparent'
                     border.width: parent.acceptMove ? 5 : 0
-                    border.color: "black"
+                    border.color: '#FF808080'
                     z: 1
                 }
             }
