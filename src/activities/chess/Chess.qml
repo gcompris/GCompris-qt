@@ -188,6 +188,16 @@ ActivityBase {
                 }
             }
 
+            
+            Rectangle {
+                id:boardBg
+                width: items.cellSize * 8.2
+                height: items.cellSize * 8.2
+                z: 09
+                color: "#3A1F0A"
+                
+            
+            
             // The chessboard
             GridView {
                 id: chessboard
@@ -201,6 +211,8 @@ ActivityBase {
                 layoutDirection: Qt.RightToLeft
                 delegate: square
                 rotation: 180
+                z: 10
+                anchors.centerIn: boardBg
 
                 Component {
                     id: square
@@ -222,6 +234,8 @@ ActivityBase {
                         chessboard.rotation = 180
                 }
             }
+            }
+            
         }
 
         Repeater {
