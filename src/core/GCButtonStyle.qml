@@ -42,11 +42,11 @@ ButtonStyle {
 
     background: Rectangle {
         border.width: control.activeFocus ? 4 : 2
-        border.color: "black"
+        border.color: "white"
         radius: 10
         gradient: Gradient {
-            GradientStop { position: 0 ; color: control.pressed ? "#87ff5c" : "#ffe85c" }
-            GradientStop { position: 1 ; color: control.pressed ? "#44ff00" : "#f8d600" }
+            GradientStop { position: 0 ; color: control.pressed ? "#C03ACAFF" : "#42FFFFFF" }
+            GradientStop { position: 1 ; color: control.pressed ? "#803ACAFF" : "#23FFFFFF" }
         }
     }
     label: Item {
@@ -57,6 +57,7 @@ ButtonStyle {
 
         GCText {
             id: labelText
+            color: "white"
             text: control.text
             fontSize: regularSize
             anchors.verticalCenter: parent.verticalCenter
