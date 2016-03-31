@@ -169,6 +169,7 @@ private:
 
     bool checkDownloadRestriction() const;
     DownloadJob* getJobByReply(QNetworkReply *r);
+    DownloadJob* getJobByUrl_locked(const QUrl& url) const;
 
     /** Start a new download specified by the passed DownloadJob */
     bool download(DownloadJob* job);

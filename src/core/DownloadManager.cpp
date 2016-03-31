@@ -168,14 +168,19 @@ bool DownloadManager::updateResource(const QString& path)
 
 bool DownloadManager::downloadResource(const QString& path)
 {
-    qDebug() << "Downloading resource file" << path;
-    DownloadJob* job = new DownloadJob(QUrl(serverUrl.toString() + '/' + path));
-
+    DownloadJob* job = nullptr;
     {
         QMutexLocker locker(&jobsMutex);
+        QUrl url(serverUrl.toString() + '/' + path);
+        if (getJobByUrl_locked(url)) {
+            qDebug() << "Download of" << url << "is already running, skipping second attempt.";
+            return false;
+        }
+        job = new DownloadJob(url);
         activeJobs.append(job);
     }
 
+    qDebug() << "Downloading resource file" << path;
     if (!download(job)) {
         QMutexLocker locker(&jobsMutex);
         activeJobs.removeOne(job);
@@ -305,13 +310,21 @@ bool DownloadManager::download(DownloadJob* job)
     return true;
 }
 
+inline DownloadManager::DownloadJob* DownloadManager::getJobByUrl_locked(const QUrl& url) const
+{
+    for (int i = 0; i < activeJobs.size(); i++)
+        if (activeJobs[i]->url == url || activeJobs[i]->queue.indexOf(url) != -1)
+            return activeJobs[i];
+    return nullptr;
+}
+
 inline DownloadManager::DownloadJob* DownloadManager::getJobByReply(QNetworkReply *r)
 {
     QMutexLocker locker(&jobsMutex);
     for (int i = 0; i < activeJobs.size(); i++)
         if (activeJobs[i]->reply == r)
             return activeJobs[i];
-    return NULL;  // should never happen!
+    return nullptr;  // should never happen!
 }
 
 void DownloadManager::downloadReadyRead()
@@ -349,7 +362,7 @@ inline QStringList DownloadManager::getSystemResourcePaths() const
             '/' + GCOMPRIS_APPLICATION_NAME
     });
 
- #if QT_VERSION >= 0x050400
+#if QT_VERSION >= 0x050400
     // Append standard application directories (like /usr/share/KDE/gcompris-qt)
     results += QStandardPaths::standardLocations(QStandardPaths::AppDataLocation);
 #endif
