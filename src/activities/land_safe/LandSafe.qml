@@ -63,6 +63,8 @@ ActivityBase {
             property alias landing: landing
             property alias ground: ground
             property alias stats: stats
+            property alias intro: intro
+            property alias ok: ok
             property var rocketCategory: Fixture.Category1
             property var groundCategory: Fixture.Category2
             property var landingCategory: Fixture.Category3
@@ -523,6 +525,37 @@ ActivityBase {
             Component.onCompleted: {
                 loose.connect(Activity.initLevel);
                 win.connect(Activity.nextLevel)
+            }
+        }
+
+        IntroMessage {
+            id: intro
+            onIntroDone: {
+                items.world.running = true;
+            }
+            intro: [
+                Activity.introText1
+            ]
+            z: 20
+            anchors {
+                top: parent.top
+                topMargin: 10
+                right: parent.right
+                rightMargin: 5
+                left: parent.left
+                leftMargin: 5
+            }
+        }
+
+        BarButton {
+            id: ok
+            source: "qrc:/gcompris/src/core/resource/bar_ok.svg";
+            sourceSize.width: 75 * ApplicationInfo.ratio
+            visible: false
+            anchors.centerIn: background
+            onClicked: {
+                visible = false;
+                items.world.running = true;
             }
         }
     }

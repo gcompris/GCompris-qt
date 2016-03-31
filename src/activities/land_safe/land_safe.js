@@ -81,6 +81,15 @@ var levels = [
                 "fuel" : 70 }
 ];
 
+var introTextSimple = qsTr("Use the up and down keys to control the thrust."
+                           + "<br/>Use the right and left keys to control direction."
+                           + "<br/>You must drive Tux's ship towards the landing platform."
+                           + "<br/>The landing platform turns green when the velocity is safe to land.")
+
+var introTextRotate = qsTr("The up and down keys control the thrust of the rear engine."
+                           + "<br/>The right and left keys now control the rotation of the ship."
+                           + "<br/>To move the ship in horizontal direction you must first rotate and then accelerate it.")
+
 var currentLevel = 0;
 var numberOfLevel;
 var items;
@@ -97,6 +106,7 @@ var dAccel = maxAccel / accelSteps;//- minAccel;
 var barAtStart;
 var maxFuel = 100.0;
 var currentFuel = 0.0;
+var lastLevel = -1;
 
 function start(items_) {
     items = items_;
@@ -136,8 +146,23 @@ function initLevel() {
 
     items.world.pixelsPerMeter = getHeightPx() / startingHeightReal;
     items.world.gravity = Qt.point(0, gravity)
+    items.world.running = false;
     console.log("Starting level (surfaceOff=" + items.ground.surfaceOffset + ", ppm=" + items.world.pixelsPerMeter + ")");
-    items.world.running = true;
+
+    if (currentLevel === 0 && lastLevel !== 0) {
+        items.ok.visible = false;
+        items.intro.intro = [introTextSimple];
+        items.intro.index = 0;
+    } else if (currentLevel === 5 && lastLevel !== 0) {
+        items.ok.visible = false;
+        items.intro.intro = [introTextRotate];
+        items.intro.index = 0;
+    } else {
+        // go
+        items.intro.index = -1;
+        items.ok.visible = true;
+    }
+    lastLevel = currentLevel;
 }
 
 function getHeightPx()
