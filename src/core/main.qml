@@ -145,7 +145,7 @@ Window {
                     + ", dpi=" + Math.round(Screen.pixelDensity*25.4)
                     + ", sharedWritablePath=" + ApplicationInfo.getSharedWritablePath()
                     + ")");
-        if (ApplicationSettings.exeCount == 1 && !ApplicationSettings.isKioskMode) {
+        if (ApplicationSettings.exeCount === 1 && !ApplicationSettings.isKioskMode) {
             // first run
             var dialog;
             dialog = Core.showMessageDialog(
@@ -175,7 +175,17 @@ Window {
             );
         }
         else {
-            checkWordset()
+            // Register voices-resources for current locale, updates/downloads only if
+            // not prohibited by the settings
+            if (!DownloadManager.areVoicesRegistered())
+                if (DownloadManager.downloadResource(
+                            DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale))) {
+                    DownloadManager.downloadFinished.connect(function() {
+                        checkWordset();
+                        DownloadManager.downloadFinished.disconnect(arguments.callee);
+                    });
+            } else
+                checkWordset()
 
             if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
                 // display log between ApplicationSettings.lastGCVersionRan and ApplicationInfo.GCVersionCode
