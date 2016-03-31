@@ -1,9 +1,9 @@
-/* GCompris
+/* GCompris - photo_hunter.qml
  *
  * Copyright (C) 2016 Stefan Toncu <stefan.toncu@cti.pub.ro>
  *
  * Authors:
- *   Stefan Toncu <stefan.toncu@cti.pub.ro> (Qt Quick version)
+ *   Stefan Toncu <stefan.toncu@cti.pub.ro> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by

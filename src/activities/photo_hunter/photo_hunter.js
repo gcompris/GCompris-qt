@@ -85,8 +85,6 @@ var dataset = [
             }
         ]
 
-
-//3 board file in "board" folder
 var numberOfLevel = dataset.length
 
 function start(items_) {
@@ -99,7 +97,7 @@ function stop() {
 }
 
 function initLevel() {
-    items.bar.level = currentLevel + 1     //boardX starts from 0: board0 -> level1
+    items.bar.level = currentLevel + 1
 
     setUp()
 }

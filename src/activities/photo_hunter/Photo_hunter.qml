@@ -98,7 +98,7 @@ ActivityBase {
                 id: problemTxt
                 anchors.centerIn: parent
                 fontSize: items.cellSize / 7.5
-                text: "Click on the differences between the two images!   " + items.totalFound + "/" + items.total + " found."
+                text: qsTr("Click on the differences between the two images!   " + items.totalFound + "/" + items.total + " found.")
                 color: "white"
             }
         }
