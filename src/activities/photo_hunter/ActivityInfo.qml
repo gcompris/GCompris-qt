@@ -21,14 +21,14 @@ ActivityInfo {
   name: "photo_hunter/Photo_hunter.qml"
   difficulty: 1
   icon: "photo_hunter/photo_hunter.svg"
-  author: "Your Name &lt;yy@zz.org&gt;"
+  author: "Stefan Toncu &lt;stefan.toncu@cti.pub.ro&gt;"
   demo: true
   title: "Photo hunter"
-  description: ""
-  //intro: "put here in comment the text for the intro voice"
-  goal: ""
+  description: "Find the differences between the two pictures!"
+  //intro: "look at the two pictures carefully and click where you see a difference"
+  goal: "Visual Discrimination"
   prerequisite: ""
-  manual: ""
+  manual: "Observe the two pictures carefully. There are some slight differences. When you find a difference you must click on it."
   credit: ""
   section: "fun"
 }
