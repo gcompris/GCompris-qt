@@ -23,7 +23,6 @@ import QtQuick 2.1
 
 import "../../core"
 import "multiplication-chart.js" as Activity
-import GCompris 1.0
 
 ActivityBase {
     id: activity
@@ -57,12 +56,9 @@ ActivityBase {
             property alias repeaterGridCol: repeaterGridCol
             property alias repeater: repeater
             /*variables*/
-            //property int lenght: 0
-            //property int backgroundHeight: background.height
-            //property int backgroundWidth: parent.width
             property int spacing: 5
-            property int rectHeight: parent.height/15
-            property int rectWidth: parent.height/15
+            property int rectHeight: wrap.height/25
+            property int rectWidth: wrap.height/25
             property int rowSelected: 0
             property int colSelected: 0
             property int rowQues: 0
@@ -77,19 +73,19 @@ ActivityBase {
         /////////////////////////////////////////////////////
         Rectangle {
             id: wrap
-            color: "red"
-            opacity: .35
+            color: "transparent"
+            opacity: 1
             height: background.height < background.width ? background.height : background.width
             width:  background.height < background.width ? background.height : background.width
             anchors.centerIn: background
-        }
+
         Grid {
             id:gridRow
             anchors {
                 top: parent.top
-                topMargin: (background.height*5)/192     // 768*5/192 =20
+                topMargin: (wrap.height*5)/192     // 768*5/192 =20
                 left: parent.left
-                leftMargin: (background.width*5*15)/683  // 1366*5*15/683
+                leftMargin: (wrap.width*15)/683  // 1366*15/683 = 150
             }
             spacing: items.spacing
             columns: 11
@@ -120,6 +116,7 @@ ActivityBase {
                    GCText{
                        text: index
                        anchors.centerIn: parent
+                       fontSize: (wrap.height*6)/384  //768*6/384 = 12
                    }
 
                    MouseArea {
@@ -147,9 +144,9 @@ ActivityBase {
             id:gridCol
             anchors {
                 top: parent.top
-                topMargin:  (background.height*5)/192    // 768*5/192 =20
+                topMargin:  (wrap.height*5)/192    // 768*5/192 =20
                 left: parent.left
-                leftMargin: (background.width*5*15)/683  // 1366*5*15/683
+                leftMargin: (wrap.width*15)/683  // 1366*15/683
             }
             spacing: items.spacing
             columns: 1
@@ -180,6 +177,7 @@ ActivityBase {
                    GCText {
                        text: index
                        anchors.centerIn: parent
+                       fontSize: (wrap.height*6)/384  //768*6/384 = 12
                    }
 
                    MouseArea {
@@ -228,7 +226,7 @@ ActivityBase {
                     GCText {
                         text: (Math.floor(index/10) + 1) * (index%10 + 1)
                         anchors.centerIn: parent
-                        fontSizeMode: Text.Fit
+                        fontSize: (wrap.height*6)/384  //768*6/384 = 12
                     }
 
                 }
@@ -239,15 +237,14 @@ ActivityBase {
             id: instruction
             anchors {
                 top: parent.top
-                topMargin: (background.height/4 - 2*instruction.height/3)
+                topMargin: (wrap.height/4 - instruction.height/3)
                 left: grid.right
-                leftMargin: (background.width*17)/683 // 1366*7/683 = 34
-                //right: parent.right
-                //rightMargin: (main.width/6)
+                leftMargin: (wrap.width*17)/683 // 1366*17/683 = 34
             }
-            fontSize: smallSize
+            fontSize: (wrap.height*7)/384  //768*7/384 = 14
             text: qsTr("Instruction:\n")+
-                    qsTr("   Multiplicand x Multiplier = Answer\n")+
+                    qsTr("   Multiplicand x Multiplier\n")+
+                    qsTr("                      = Answer\n")+
                     qsTr("       1) Select the Column\n")+
                     qsTr("       2) Select the Row\n")+
                     qsTr("       3) State the answer\n")
@@ -256,13 +253,14 @@ ActivityBase {
         GCText {
             id: question
             anchors {
-                left: instruction.left
-                leftMargin: (background.width*15)/683 // 1366*15/683 = 30
-                top: instruction.bottom
-                topMargin: (background.width*10)/683 // 1366*10/683 = 20
+                left: wrap.left
+                leftMargin: (wrap.height*115)/384  //768*10/384 = 20
+                top: grid.bottom
+                topMargin: (wrap.height*30)/384  //768*10/384 = 20
             }
-            fontSize: hugeSize
+            fontSize: (wrap.height*16)/384  //768*16/384 = 32
             text: items.rowQues + " X " + items.colQues + " = " + numpad.answer
+        }
         }
 
         //////////////////////////////////////////////////////////////////////////////////////////////
@@ -300,7 +298,6 @@ ActivityBase {
         maxDigit: 3
         onAnswerChanged: {
             Activity.checkit()
-            //console.log(main.height, "asdfghj", background.height, "asdfgh", window.width, "asdf0", ApplicationInfo.fontRatio)
         }
     }
 
