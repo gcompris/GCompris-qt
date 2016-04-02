@@ -30,11 +30,22 @@ import "land_safe.js" as Activity
 ActivityBase {
     id: activity
 
-    onStart: focus = true
-    onStop: {}
+    property bool inForeground: false   // to avoid unneeded reconfigurations
+
+    onStart: {
+        inForeground = true;
+        focus = true;
+    }
+    onStop: inForeground = false;
 
     Keys.onPressed: Activity.processKeyPress(event)
     Keys.onReleased: Activity.processKeyRelease(event)
+
+    onWidthChanged: if (inForeground)
+                        Activity.initLevel();
+
+    onHeightChanged: if (inForeground)
+                         Activity.initLevel();
 
     pageComponent: Image {
         id: background
@@ -42,6 +53,7 @@ ActivityBase {
         source: Activity.baseUrl + "/background4.jpg";
         anchors.centerIn: parent
         anchors.fill: parent
+        fillMode: Image.PreserveAspectCrop
 
         signal start
         signal stop
@@ -71,6 +83,7 @@ ActivityBase {
             property var borderCategory: Fixture.Category4
             property string mode: "rotate"  // "simple"
             property double lastVelocity: 0.0
+            property double scale: background.height / 400
         }
 
         onStart: { Activity.start(items) }
@@ -89,6 +102,11 @@ ActivityBase {
                 if (Math.abs(rocket.body.linearVelocity.y) > 0.01)  // need to store velocity before it is aaaalmost 0 because of ground/landing contact
                     items.lastVelocity = stats.velocity.y;
                 stats.velocity = rocket.body.linearVelocity;
+
+                if (rocket.body.linearVelocity.y > Activity.maxLandingVelocity)
+                    landing.source = Activity.baseUrl + "/landing_red.png";
+                else
+                    landing.source = Activity.baseUrl + "/landing_green.png";
 
                 stats.height = Math.max(0, Math.round(Activity.getRealHeight()));
 
@@ -212,7 +230,7 @@ ActivityBase {
             //property float rotate
 
             rotation: 0
-            width: background.width / 18// * ApplicationInfo.ratio
+            width: items.scale * 28// * ApplicationInfo.ratio
             height: width / 232 * 385
             x: 300
             y: 50
@@ -353,8 +371,8 @@ ActivityBase {
                     anchors.centerIn: parent
                     group: "flameLeft"
 
-                    emitRate: rocket.leftAccel > 0 ? 50 : 0  // 50
-                    lifeSpan: rocket.leftAccel > 0 ? 600 : 0 // 600
+                    emitRate: rocket.leftAccel > 0 ? 50 * items.scale / 1.9 : 0  // 50
+                    lifeSpan: rocket.leftAccel > 0 ? 600 * items.scale / 1.9 : 0 // 600
                     size: rocket.leftAccel > 0 ? leftEngine.height : 0
                     endSize: 5
                     sizeVariation: 5
@@ -381,8 +399,8 @@ ActivityBase {
                     anchors.centerIn: parent
                     group: "flameRight"
 
-                    emitRate: rocket.rightAccel > 0 ? 50 : 0  // 50
-                    lifeSpan: rocket.rightAccel > 0 ? 600 : 0 // 600
+                    emitRate: rocket.rightAccel > 0 ? 50 * items.scale / 1.9 : 0  // 50
+                    lifeSpan: rocket.rightAccel > 0 ? 600 * items.scale / 1.9 : 0 // 600
                     size: rocket.rightAccel > 0 ? rightEngine.height : 0
                     endSize: 5
                     sizeVariation: 5
@@ -408,9 +426,9 @@ ActivityBase {
                     anchors.centerIn: parent
                     group: "flame"
 
-                    emitRate: rocket.accel > 0 ? (75 + 75*rocket.accel) : 0 // 75-150
-                    lifeSpan: (500 + 500 * rocket.accel) * background.height / 600  // 500 - 1000
-                    size: rocket.width/2 + rocket.width/2*rocket.accel // width*-0.5 - width
+                    emitRate: rocket.accel > 0 ? (80 + 60 * rocket.accel) : 0 // 75-150
+                    lifeSpan: (600 + 450 * rocket.accel) * items.scale / 2.5 // 500 - 1000
+                    size: rocket.width/1.8 + rocket.width/2*rocket.accel // width*-0.5 - width
                     endSize: size/1.85
                     sizeVariation: 10
                     acceleration: PointDirection { y: 80 }
@@ -466,12 +484,14 @@ ActivityBase {
             property int surfaceOffset: landing.height - 1
 
             z: 2
-            source: Activity.baseUrl + "/landing_red.png";
+            source: Activity.baseUrl + "/landing_green.png";
             anchors.left: ground.left
             anchors.leftMargin: 270
             anchors.top: ground.top
             anchors.topMargin: ground.surfaceOffset - height
-            width: 116 * background.width / 900
+            sourceSize.width: 1024
+            width: 66 * items.scale
+            height: width / 116 * 34
 
             Body {
                 id: landingBody

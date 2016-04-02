@@ -21,15 +21,15 @@
  */
 
 /* ToDo:
- * - zoom out if too high!
+ * (- zoom out if too high!)
  * - support android
  * - check for shader availability
- * - use polygon fixture for rocket
- * - succesful landing only if on platform
- * - red/green colors for crash/save landing
- * - Einleitung + Ueberleitung simple -> rotate
+ * (- use polygon fixture for rocket)
+ * (- succesful landing only if on platform?)
+ * (- improve graphics of velocity etc.)
+ * - build/activate conditionally (box2d)
  *
- * Gravitational forces:
+ * Some gravitational forces:
  * !- Pluto: 0,62 m/s²
  * - Titan: 1,352 m/s²
  * !- Moon: 1,622 m/s²
@@ -92,7 +92,7 @@ var introTextRotate = qsTr("The up and down keys control the thrust of the rear 
 
 var currentLevel = 0;
 var numberOfLevel;
-var items;
+var items = null;
 var baseUrl = "qrc:/gcompris/src/activities/land_safe/resource";
 var startingHeightReal = 100.0;
 var startingOffsetPx = 10;  // y-value for setting rocket initially
@@ -122,6 +122,9 @@ function stop() {
 }
 
 function initLevel() {
+    if (items === null)
+        return;
+
     items.bar.level = currentLevel + 1
 
     var max = items.background.width - items.landing.width-20;
@@ -147,6 +150,8 @@ function initLevel() {
     items.world.pixelsPerMeter = getHeightPx() / startingHeightReal;
     items.world.gravity = Qt.point(0, gravity)
     items.world.running = false;
+    items.landing.source = baseUrl + "/landing_green.png";
+
     console.log("Starting level (surfaceOff=" + items.ground.surfaceOffset + ", ppm=" + items.world.pixelsPerMeter + ")");
 
     if (currentLevel === 0 && lastLevel !== 0) {
