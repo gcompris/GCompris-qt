@@ -42,6 +42,7 @@ Image {
         Image {
             id: photo
             property alias particleLoader: particleLoader
+            property alias crtImgAnim: crtImgAnim
 
             source: Activity.url + "images/circle.svg"
             width: card.width / 10
@@ -53,18 +54,13 @@ Image {
             y: modelData[1] * card.height / 1700
 
 
+            //instead of scale, there should be an animation for both width and height
+            //-> so it will be able to draw an elipse if needed
             NumberAnimation {
                 id: crtImgAnim;
                 target: photo;
                 property: "scale";
                 from: 0; to: photo.scale;
-                duration: 700
-            }
-
-            NumberAnimation {
-                id: otherImgAnim;
-                property: "scale";
-                from: 0; to: target==null ? 0 : target.scale;
                 duration: 700
             }
 
@@ -99,10 +95,8 @@ Image {
                         img2.repeater.itemAt(index).opacity = 1
                         good++
                         background.checkAnswer()
-                        /*The biding does not work for the target, as it will remain bound to the first image*/
-                        otherImgAnim.target = card===img1 ? img2.repeater.itemAt(index) : img1.repeater.itemAt(index)
-                        crtImgAnim.start()
-                        otherImgAnim.start()
+                        img1.repeater.itemAt(index).crtImgAnim.start()
+                        img2.repeater.itemAt(index).crtImgAnim.start()
                     }
                 }
             }
