@@ -31,11 +31,6 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    //TODO1: work on display:
-    //-corners of images faded?
-    //-...?
-    //TODO2: animations
-
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
@@ -62,23 +57,25 @@ ActivityBase {
             property int totalFound: img1.good + img2.good
 
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
-            property int cellSize: Math.min(background.width / 11 , background.height / (9 + barHeightAddon))
+            property int cellSize: Math.min(background.width / 11 ,
+                                            background.height / (9 + barHeightAddon))
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
         property bool vert: background.width < background.height
-        property double barHeight: (items.barHeightAddon == 1) ? 0 : 160
+        property double barHeight: (items.barHeightAddon == 1) ? 0 : bar.height
 
         function checkAnswer() {
             if (items.img1.good + items.img2.good === items.model.length) {
                 bonus.good("flower")
 
                 //remove the problem from the board after first level
-                if (problem!=null) {
+                if (problem.opacity != 0) {
                     frame.anchors.top = background.top
-                    problem.destroy()
+                    problemTxt.opacity = 0
+                    problem.opacity = 0
                 }
             }
         }
@@ -98,7 +95,7 @@ ActivityBase {
                 id: problemTxt
                 anchors.centerIn: parent
                 fontSize: items.cellSize / 7.5
-                text: qsTr("Click on the differences between the two images!   " + items.totalFound + "/" + items.total + " found.")
+                text: qsTr("Click on the differences between the two images!")
                 color: "white"
             }
         }
@@ -116,7 +113,6 @@ ActivityBase {
             //left/top image
             Observe {
                 id: img1
-                name: img2
                 anchors {
                     top: parent.top
                     horizontalCenter: parent.horizontalCenter
@@ -127,7 +123,6 @@ ActivityBase {
             //right/bottom image
             Observe {
                 id: img2
-                name: img1
                 anchors {
                     top: background.vert ? img1.bottom : parent.top
                     topMargin: background.vert ? 10 : 0

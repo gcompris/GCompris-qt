@@ -34,7 +34,6 @@ Image {
 
     property alias repeater: repeater
     property int good: 0
-    property var name
 
     Repeater {
         id: repeater
@@ -42,9 +41,11 @@ Image {
         model: items.model
         Image {
             id: photo
+            property alias particleLoader: particleLoader
+
             source: Activity.url + "images/circle.svg"
-            sourceSize.width: card.width / 10
-            sourceSize.height: card.height / 10
+            width: card.width / 10
+            height: card.height / 10
 
             opacity: 1
 
@@ -52,13 +53,46 @@ Image {
             y: modelData[1] * card.height / 1700
 
 
-            NumberAnimation {id: crtImgAnim; target: photo; property: "scale"; from: 0; to: 1; duration: 700}
-            NumberAnimation {id: otherImgAnim; property: "scale"; from: 0; to: 1; duration: 700}
+            NumberAnimation {
+                id: crtImgAnim;
+                target: photo;
+                property: "scale";
+                from: 0; to: photo.scale;
+                duration: 700
+            }
+
+            NumberAnimation {
+                id: otherImgAnim;
+                property: "scale";
+                from: 0; to: target==null ? 0 : target.scale;
+                duration: 700
+            }
+
+            // Create a particle only for the strawberry
+            Loader {
+                id: particleLoader
+                anchors.fill: parent
+                active: false
+                sourceComponent: particle
+            }
+
+            Component {
+                id: particle
+                ParticleSystemStarLoader
+                {
+                    id: particles
+                    clip: false
+                }
+            }
 
             MouseArea {
                 id: mouseArea
                 anchors.fill: parent
                 onClicked: {
+                    img1.repeater.itemAt(index).particleLoader.active = active
+                    img1.repeater.itemAt(index).particleLoader.item.burst(40)
+                    img2.repeater.itemAt(index).particleLoader.active = active
+                    img2.repeater.itemAt(index).particleLoader.item.burst(40)
                     if (img1.repeater.itemAt(index).opacity === 0 &&
                             img2.repeater.itemAt(index).opacity === 0) {
                         img1.repeater.itemAt(index).opacity = 1
@@ -66,7 +100,7 @@ Image {
                         good++
                         background.checkAnswer()
                         /*The biding does not work for the target, as it will remain bound to the first image*/
-                        otherImgAnim.target = card.name===img2 ? img2.repeater.itemAt(index) : img1.repeater.itemAt(index)
+                        otherImgAnim.target = card===img1 ? img2.repeater.itemAt(index) : img1.repeater.itemAt(index)
                         crtImgAnim.start()
                         otherImgAnim.start()
                     }
