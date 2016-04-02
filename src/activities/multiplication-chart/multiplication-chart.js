@@ -123,3 +123,14 @@ function checkit() {
         items.bonus.bad("flower")
     }*/
 }
+
+/*
+function whatsMinimum() {
+    if(items.backgroundWidth > items.backgroundHeight) {
+        items.lenght = items.backgroundHeight
+    }
+    else {
+        items.lenght = items.backgroundWidth
+    }
+}
+*/

@@ -23,6 +23,7 @@ import QtQuick 2.1
 
 import "../../core"
 import "multiplication-chart.js" as Activity
+import GCompris 1.0
 
 ActivityBase {
     id: activity
@@ -56,6 +57,9 @@ ActivityBase {
             property alias repeaterGridCol: repeaterGridCol
             property alias repeater: repeater
             /*variables*/
+            //property int lenght: 0
+            //property int backgroundHeight: background.height
+            //property int backgroundWidth: parent.width
             property int spacing: 5
             property int rectHeight: parent.height/15
             property int rectWidth: parent.height/15
@@ -68,15 +72,24 @@ ActivityBase {
         onStart: Activity.start(items, additionalItem)
         onStop:  Activity.stop()
 
-        /////////////////////////////////////////////////////
 
+
+        /////////////////////////////////////////////////////
+        Rectangle {
+            id: wrap
+            color: "red"
+            opacity: .35
+            height: background.height < background.width ? background.height : background.width
+            width:  background.height < background.width ? background.height : background.width
+            anchors.centerIn: background
+        }
         Grid {
             id:gridRow
             anchors {
                 top: parent.top
-                topMargin: 20
+                topMargin: (background.height*5)/192     // 768*5/192 =20
                 left: parent.left
-                leftMargin: 20
+                leftMargin: (background.width*5*15)/683  // 1366*5*15/683
             }
             spacing: items.spacing
             columns: 11
@@ -134,9 +147,9 @@ ActivityBase {
             id:gridCol
             anchors {
                 top: parent.top
-                topMargin: 20
+                topMargin:  (background.height*5)/192    // 768*5/192 =20
                 left: parent.left
-                leftMargin: 20
+                leftMargin: (background.width*5*15)/683  // 1366*5*15/683
             }
             spacing: items.spacing
             columns: 1
@@ -215,6 +228,7 @@ ActivityBase {
                     GCText {
                         text: (Math.floor(index/10) + 1) * (index%10 + 1)
                         anchors.centerIn: parent
+                        fontSizeMode: Text.Fit
                     }
 
                 }
@@ -225,9 +239,11 @@ ActivityBase {
             id: instruction
             anchors {
                 top: parent.top
-                topMargin: main.height/4 - 2*instruction.height/3
-                right: parent.right
-                rightMargin: (main.width/6)
+                topMargin: (background.height/4 - 2*instruction.height/3)
+                left: grid.right
+                leftMargin: (background.width*17)/683 // 1366*7/683 = 34
+                //right: parent.right
+                //rightMargin: (main.width/6)
             }
             fontSize: smallSize
             text: qsTr("Instruction:\n")+
@@ -241,9 +257,9 @@ ActivityBase {
             id: question
             anchors {
                 left: instruction.left
-                leftMargin: 30
+                leftMargin: (background.width*15)/683 // 1366*15/683 = 30
                 top: instruction.bottom
-                topMargin: 20
+                topMargin: (background.width*10)/683 // 1366*10/683 = 20
             }
             fontSize: hugeSize
             text: items.rowQues + " X " + items.colQues + " = " + numpad.answer
@@ -284,6 +300,7 @@ ActivityBase {
         maxDigit: 3
         onAnswerChanged: {
             Activity.checkit()
+            //console.log(main.height, "asdfghj", background.height, "asdfgh", window.width, "asdf0", ApplicationInfo.fontRatio)
         }
     }
 
