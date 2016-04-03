@@ -144,7 +144,7 @@ ActivityBase {
             id:gridCol
             anchors {
                 top: parent.top
-                topMargin:  (wrap.height*5)/192    // 768*5/192 =20
+                topMargin:  (wrap.height*5)/192    // 768*5/192 = 20
                 left: parent.left
                 leftMargin: (wrap.width*15)/683  // 1366*15/683
             }
