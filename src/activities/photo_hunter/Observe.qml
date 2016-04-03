@@ -32,8 +32,45 @@ Image {
     sourceSize.height: background.vert ? (background.height - background.barHeight - 40) /2 :
                                          background.height - background.barHeight - 30
 
+    property GCAudio audioEffects: activity.audioEffects
     property alias repeater: repeater
     property int good: 0
+
+    Image {
+        id: wrong
+        source: Activity.url + "images/wrong.svg"
+        width: 70
+        height: 70
+        opacity: 0
+    }
+
+    NumberAnimation {
+        id: wrongAnim;
+        target: wrong;
+        property: "opacity";
+        from: 0; to: 1;
+        duration: 400
+    }
+
+    NumberAnimation {
+        id: wrongAnim2;
+        target: wrong;
+        property: "opacity";
+        from: 1; to: 0;
+        duration: 400
+    }
+
+    MouseArea {
+        id: big
+        anchors.fill: parent
+        onClicked: {
+            audioEffects.play('qrc:/gcompris/src/core/resource/sounds/brick.wav')
+            wrongAnim.start()
+            wrong.x = mouseX - wrong.width/2
+            wrong.y = mouseY - wrong.height/2
+            wrongAnim2.start()
+        }
+    }
 
     Repeater {
         id: repeater
@@ -91,6 +128,7 @@ Image {
                     img2.repeater.itemAt(index).particleLoader.item.burst(40)
                     if (img1.repeater.itemAt(index).opacity === 0 &&
                             img2.repeater.itemAt(index).opacity === 0) {
+                        audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
                         img1.repeater.itemAt(index).opacity = 1
                         img2.repeater.itemAt(index).opacity = 1
                         good++
