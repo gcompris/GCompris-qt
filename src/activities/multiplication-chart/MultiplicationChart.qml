@@ -75,15 +75,15 @@ ActivityBase {
             id: wrap
             color: "transparent"
             opacity: 1
-            height: background.height < background.width ? background.height : background.width
-            width:  background.height < background.width ? background.height : background.width
+            height: Math.min(background.height , background.width)
+            width:  height
             anchors.centerIn: background
 
         Grid {
             id:gridRow
             anchors {
                 top: parent.top
-                topMargin: (wrap.height*5)/192     // 768*5/192 =20
+                topMargin: (wrap.height*5)/192     // 768*5/192 = 20
                 left: parent.left
                 leftMargin: (wrap.width*15)/683  // 1366*15/683 = 150
             }
