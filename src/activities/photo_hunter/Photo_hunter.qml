@@ -55,6 +55,7 @@ ActivityBase {
             property alias img2: img2
             property int total
             property int totalFound: img1.good + img2.good
+            property alias problemTxt: problemTxt
 
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
             property int cellSize: Math.min(background.width / 11 ,
@@ -94,7 +95,7 @@ ActivityBase {
             GCText {
                 id: problemTxt
                 anchors.centerIn: parent
-                fontSize: items.cellSize / 7.5
+                fontSize: items.cellSize ? items.cellSize / 7.5 : mediumSize
                 text: qsTr("Click on the differences between the two images!")
                 color: "white"
             }

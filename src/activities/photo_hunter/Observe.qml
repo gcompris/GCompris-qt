@@ -79,11 +79,13 @@ Image {
         Image {
             id: photo
             property alias particleLoader: particleLoader
-            property alias crtImgAnim: crtImgAnim
+            property alias scaleAnim: scaleAnim
+            property double widthScale
+            property double heightScale
 
             source: Activity.url + "images/circle.svg"
-            width: card.width / 10
-            height: card.height / 10
+            width: card.width / 10 * widthScale
+            height: card.height / 10 * heightScale
 
             opacity: 1
 
@@ -94,7 +96,7 @@ Image {
             //instead of scale, there should be an animation for both width and height
             //-> so it will be able to draw an elipse if needed
             NumberAnimation {
-                id: crtImgAnim;
+                id: scaleAnim;
                 target: photo;
                 property: "scale";
                 from: 0; to: photo.scale;
@@ -133,8 +135,8 @@ Image {
                         img2.repeater.itemAt(index).opacity = 1
                         good++
                         background.checkAnswer()
-                        img1.repeater.itemAt(index).crtImgAnim.start()
-                        img2.repeater.itemAt(index).crtImgAnim.start()
+                        img1.repeater.itemAt(index).scaleAnim.start()
+                        img2.repeater.itemAt(index).scaleAnim.start()
                     }
                 }
             }
