@@ -29,11 +29,13 @@ ActivityInfo {
   prerequisite: ""
   manual: qsTr("Acceleration due to gravity experienced by the spaceship is directly proportional to the mass of the planet and inversely proportional to the square of the distance from the center of the planet. Thus, with every planet the acceleration will differ and as the spaceship comes closer and closer to the planet the acceleration increases.
 
-Use the up/down keys to control the thrust and the right/left keys to control direction.
+Use the up/down keys to control the thrust and the right/left keys to control direction. On mobile platforms you can control the rocket through the corresponding on-screen buttons.
 
 In higher levels, you can use the right/left keys to rotate the spaceship. By rotating the spaceship you can trigger an acceleration in non-vertical direction using the up/down keys.
 
 The landing platform is green if your speed is fine for a safe landing.")
   credit: ""
   section: "experiments"
+  enabled: ApplicationInfo.hasShader
+  createdInVersion: 6000
 }

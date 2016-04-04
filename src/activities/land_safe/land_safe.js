@@ -25,7 +25,6 @@
  * - check for shader availability
  * (- use polygon fixture for rocket)
  * (- improve graphics of velocity etc.)
- * - build/activate conditionally (box2d)
  *
  * Some gravitational forces:
  * !- Pluto: 0,62 m/s²

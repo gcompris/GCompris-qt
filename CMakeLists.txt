@@ -311,7 +311,7 @@ set(QML_BOX2D_MODULE "auto" CACHE STRING "Policy for qml-box2d module [auto|subm
 
 if (${QML_BOX2D_MODULE} STREQUAL "disabled")
   # disable all activities depending on qml-box2d
-  set(_disabled_activities "balancebox")
+  set(_disabled_activities "balancebox,land_safe")
   message(STATUS "Disabling qml-box2d module and depending activities: ${_disabled_activities}")
 else()
   include(qt_helper)
