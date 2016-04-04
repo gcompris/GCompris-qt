@@ -34,7 +34,8 @@ Rectangle {
         anchors.right: parent.right
         anchors.rightMargin: 20
 
-        text: listModel1.get(index).countS
+        //"listModel1.get(index) ? ... " because of an error received at startup of each level
+        text: listModel1.get(index) ? listModel1.get(index).countS : ""
     }
 
     Rectangle {
@@ -56,11 +57,11 @@ Rectangle {
             anchors.fill: parent
 
             onClicked: {
-//                Debugging
-//                print("c.x: ",area.c.x )
-//                print("c.y: ",area.c.y )
-//                print("d.x: ",area.d.x )
-//                print("d.y: ",area.d.y )
+                //                Debugging
+                //                print("c.x: ",area.c.x )
+                //                print("c.y: ",area.c.y )
+                //                print("d.x: ",area.d.x )
+                //                print("d.y: ",area.d.y )
                 if (items.acceptCandy)
                     if (background.nCrtCandies<items.nCandies) {
                         //add candies in the first rectangle
@@ -101,8 +102,54 @@ Rectangle {
                     sourceSize.height: items.cellSize * 1.5
                     source: "resource/images/candy.svg"
 
+                    property int lastx
+                    property int lasty
+
                     MouseArea {
                         anchors.fill: parent
+
+                        //enables dragging the candie after placed
+                        drag.target: parent
+
+                        onPressed: {
+                            instruction.hide()
+                            //set the initial position
+                            candy2.lastx = candy2.x
+                            candy2.lasty = candy2.y
+                        }
+
+                        onReleased:  {
+                            for (var i=0;i<listModel1.count;i++) {
+                                var c = repeater_drop_areas.itemAt(i)     //DropChild type
+                                var e = drop_areas.mapToItem(background, c.x, c.y)
+                                var d = candy2.parent.mapToItem(background, candy2.x, candy2.y)    //coordinates of "boy/girl rectangle" in background coordinates
+                                var wid = items.leftWidget
+
+                                if (c!==dropChild) {
+                                    //check if the user wants to put a candy to another rectangle
+                                    if (d.x>e.x && d.x<e.x+c.area.width && d.y>e.y+c.childImg.height && d.y<e.y+c.childImg.height+c.area.height) {
+                                        //add the candy to the "i"th recthangle
+                                        listModel1.setProperty(i,"countS",listModel1.get(i).countS+1)
+                                        //remove the candy from current rectangle
+                                        listModel1.setProperty(rect2.indexS,"countS",listModel1.get(rect2.indexS).countS-1);
+                                    }
+                                }
+
+                                //check if the user wants to put back the candy to the leftWidget
+                                if (d.x>0 && d.x<wid.width && d.y>0 && d.y<wid.height) {
+                                    //restore the candy to the leftWidget
+                                    background.nCrtCandies--
+                                    candyWidget.element.opacity = 1
+                                    items.candyWidget.canDrag = true
+                                    //remove the candy from current rectangle
+                                    listModel1.setProperty(rect2.indexS,"countS",listModel1.get(rect2.indexS).countS-1);
+                                }
+                            }
+
+                            //restore the candy to its initial position
+                            candy2.x = candy2.lastx
+                            candy2.y = candy2.lasty
+                        }
 
                         //when clicked, it will restore the candy
                         onClicked:  {

@@ -30,11 +30,14 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
+    //TODO 0: some ReferenceErrors while dragging the candies back from rectangles to widget panel
+               //DropChild.qml line 143/122/...
     //TODO 1: when having many many rectangles, they should resize in order to fit the screen
                //now, if there are more than 5/6/7... they span out of the window
     //TODO 2: have some voices to tell the kids to drag the basket ("rest") and what it means
     //TODO 3: change the "instruction" text to say something helpful for children eg. "now press ok"
                //"now drag the basket to the board" etc.
+
 
     pageComponent: Rectangle {
         id: background
@@ -65,6 +68,7 @@ ActivityBase {
             property alias boyWidget: boyWidget
             property alias candyWidget: candyWidget
             property alias basketWidget: basketWidget
+            property alias leftWidget: leftWidget
 
             property int nBoys
             property int nGirls
@@ -333,23 +337,6 @@ ActivityBase {
                         Behavior on opacity { PropertyAnimation { duration: 500 } }
                     }
                 }
-
-                //TODO - when draging candies and dropping them on top of rectangles, they should be
-                    //automatically added to the respective rectangle (the below piece of code does not work)
-                /*
-                function acceptDrop(x,y) {
-                    print("x: ",x)
-                    for (var i=0;i<listModel1.count;i++) {
-                        print("primul: ",repeater_drop_areas.itemAt(i).area.width)
-                        if ((x>repeater_drop_areas.itemAt(i).area.x  && x<repeater_drop_areas.itemAt(i).area.x+repeater_drop_areas.itemAt(i).area.width) &&
-                                (y>repeater_drop_areas.itemAt(i).area.y  && y<repeater_drop_areas.itemAt(i).area.y+repeater_drop_areas.itemAt(i).area.height)) {
-                            print("i: ",i)
-                            return i
-                        }
-                    }
-                    return -1
-                }
-                */
             }
         }
 
