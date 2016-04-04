@@ -99,7 +99,7 @@ mosaic
 numbers-odd-even
 paintings
 penalty
-photo_hunter
+PhotoHunter
 planegame
 readingh
 readingv

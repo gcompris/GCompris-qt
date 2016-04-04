@@ -1,4 +1,4 @@
-/* GCompris - photo_hunter.qml
+/* GCompris - PhotoHunter.qml
  *
  * Copyright (C) 2016 Stefan Toncu <stefan.toncu@cti.pub.ro>
  *
@@ -23,7 +23,7 @@ import QtQuick 2.1
 import GCompris 1.0
 
 import "../../core"
-import "photo_hunter.js" as Activity
+import "PhotoHunter.js" as Activity
 
 ActivityBase {
     id: activity

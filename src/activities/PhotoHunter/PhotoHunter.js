@@ -1,4 +1,4 @@
-/* GCompris - photo_hunter.qml
+/* GCompris - PhotoHunter.js
  *
  * Copyright (C) 2016 Stefan Toncu <stefan.toncu@cti.pub.ro>
  *
@@ -24,83 +24,84 @@
 
 var currentLevel = 0
 var items
-var url = "qrc:/gcompris/src/activities/photo_hunter/resource/"
+var url = "qrc:/gcompris/src/activities/PhotoHunter/resource/"
+
 
 
 var dataset = [
             {
-                "imageName1": "images/photo1.svg",
-                "imageName2": "images/photo2.svg",
+                "imageName1": "photo1.svg",
+                "imageName2": "photo2.svg",
                 "coordinates": [[27,25],[37,1120],[325,1360]],
                 "radius": [1,1,1],
                 "dim": [[1,1],[1,1],[1,1]]
             },
             {
-                "imageName1": "images/photo4.svg",
-                "imageName2": "images/photo5.svg",
+                "imageName1": "photo4.svg",
+                "imageName2": "photo5.svg",
                 "coordinates": [[930,255],[915,1515],[500,1335]],
                 "radius": [1,1,1.7],
                 "dim": [[1,1],[1,1],[1,1.5]]
             },
             {
-                "imageName1": "images/photo1.svg",
-                "imageName2": "images/photo3.svg",
+                "imageName1": "photo1.svg",
+                "imageName2": "photo3.svg",
                 "coordinates": [[30,840],[505,1030],[470,1360]],
                 "radius": [1,1,1],
                 "dim": [[1,1],[1,1],[1,1]]
             },
             {
-                "imageName1": "images/photo8.svg",
-                "imageName2": "images/photo9.svg",
+                "imageName1": "photo8.svg",
+                "imageName2": "photo9.svg",
                 "coordinates": [[800,40],[593,1375]],
                 "radius": [1,1],
                 "dim": [[1,1],[1,1]]
             },
             {
-                "imageName1": "images/photo10.svg",
-                "imageName2": "images/photo11.svg",
+                "imageName1": "photo10.svg",
+                "imageName2": "photo11.svg",
                 "coordinates": [[965,93],[633,655],[585,1560]],
                 "radius": [1,1,1],
                 "dim": [[1,1],[1,1],[1,1]]
             },
             {
-                "imageName1": "images/photo12.svg",
-                "imageName2": "images/photo13.svg",
+                "imageName1": "photo12.svg",
+                "imageName2": "photo13.svg",
                 "coordinates": [[525,145],[280,1160],[600,1052]],
                 "radius": [1,1,1],
                 "dim": [[1,1],[1,1],[1,1]]
             },
             {
-                "imageName1": "images/photo14.svg",
-                "imageName2": "images/photo15.svg",
+                "imageName1": "photo14.svg",
+                "imageName2": "photo15.svg",
                 "coordinates": [[183,500],[795,215],[950,1450]],
                 "radius": [1,1,1],
                 "dim": [[1,1],[1,1],[1,1]]
             },
             {
-                "imageName1": "images/photo16.svg",
-                "imageName2": "images/photo17.svg",
+                "imageName1": "photo16.svg",
+                "imageName2": "photo17.svg",
                 "coordinates": [[70,600],[950,1120],[325,760]],
                 "radius": [1,1,1],
                 "dim": [[1,1],[1,1],[1,1]]
             },
             {
-                "imageName1": "images/photo18.svg",
-                "imageName2": "images/photo19.svg",
+                "imageName1": "photo18.svg",
+                "imageName2": "photo19.svg",
                 "coordinates": [[435,1075],[17,1195],[782,670],[90,945],[490,400],[300,620]],
                 "radius": [1,1,1,1,1,1],
                 "dim": [[1,1],[1,1],[1,1],[1,1],[1,1],[1,1]]
             },
             {
-                "imageName1": "images/photo20.svg",
-                "imageName2": "images/photo21.svg",
+                "imageName1": "photo20.svg",
+                "imageName2": "photo21.svg",
                 "coordinates": [[275,345],[1013,1232],[595,1460]],
                 "radius": [1,1,1],
                 "dim": [[1,1],[1,1],[1,1]]
             },
             {
-                "imageName1": "images/photo22.svg",
-                "imageName2": "images/photo23.svg",
+                "imageName1": "photo22.svg",
+                "imageName2": "photo23.svg",
                 "coordinates": [[668,403],[727,930],[565,1120],[595,1500]],
                 "radius": [1,1,1,1],
                 "dim": [[1,1],[1,1],[1,1],[1,1]]
@@ -108,6 +109,7 @@ var dataset = [
         ]
 
 var numberOfLevel = dataset.length
+
 
 function start(items_) {
     items = items_

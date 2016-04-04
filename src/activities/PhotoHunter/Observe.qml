@@ -1,4 +1,4 @@
-/* GCompris - photo_hunter.qml
+/* GCompris - Observe.qml
  *
  * Copyright (C) 2016 Stefan Toncu <stefan.toncu@cti.pub.ro>
  *
@@ -23,7 +23,7 @@ import QtQuick 2.1
 import GCompris 1.0
 
 import "../../core"
-import "photo_hunter.js" as Activity
+import "PhotoHunter.js" as Activity
 
 Image {
     id: card
@@ -38,7 +38,7 @@ Image {
 
     Image {
         id: wrong
-        source: Activity.url + "images/wrong.svg"
+        source: Activity.url + "wrong.svg"
         width: 70
         height: 70
         opacity: 0
@@ -83,7 +83,7 @@ Image {
             property double widthScale
             property double heightScale
 
-            source: Activity.url + "images/circle.svg"
+            source: Activity.url + "circle.svg"
             width: card.width / 10 * widthScale
             height: card.height / 10 * heightScale
 
