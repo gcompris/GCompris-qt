@@ -236,7 +236,6 @@ ActivityBase {
                     onDropped: {
                         if(dragTarget.count==1)
                         {
-                            row4.children[modelData].children[1].tile.opacity=1
                             row4.children[modelData].children[1].parent= row4.children[modelData].children[1].reparent
                         }
                         else
