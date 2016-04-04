@@ -25,35 +25,37 @@ var url = "qrc:/gcompris/src/activities/guesscount/resource/"
 var currentLevel = 0
 var numberOfLevel = 4
 var items
-var images = [
-            ["plus.svg","+"],
-            ["minus.svg","-"],
-            ["div.svg","/"],
-            ["multiply.svg","*"],
+var signs = [
+            "+",
+            "-",
+            "/",
+            "*",
         ]
 var dataset=[
             {
                 'level': 1,
                 "data": {
-                    "questions":"3",
+                    "questions":"4",
                     "numbers":[
                         [[1,2],3],
                         [[3,1],3],
-                        [[9,4],5]
+                        [[9,4],5],
+                        [[8,4],2]
                     ]
-                    
+
                 }
             },
             {
                 'level': 2,
                 "data": {
-                    "questions":"3",
+                    "questions":"4",
                     "numbers":[
                         [[6,7],42],
                         [[8,4],2],
-                        [[10,2,2],10]
+                        [[10,2],8],
+                        [[10,2],12],
                     ]
-                    
+
                 }
             },
             {
@@ -63,9 +65,9 @@ var dataset=[
                     "numbers":[
                         [[11,7],77],
                         [[8,16,4],2],
-                        [[10,2,2,3],7]
+                        [[10,2,3],8]
                     ]
-                    
+
                 }
             },
             {
@@ -77,10 +79,10 @@ var dataset=[
                         [[4,2,9],17],
                         [[15,3,2,3],21]
                     ]
-                    
+
                 }
             }
-            
+
         ]
 
 function start(items_) {
@@ -94,7 +96,7 @@ function stop() {
 
 function initLevel() {
     items.bar.level = currentLevel + 1
-    items.operators=shuffle(images)
+    items.operators=shuffle(signs)
     items.total_questions=dataset[currentLevel]["data"]["questions"]
     items.question_no=1
     items.data=dataset[currentLevel]["data"]["numbers"][items.question_no-1][0]
@@ -120,13 +122,12 @@ function initLevel() {
         items.row5.children[5].color="lightblue"
         items.row6.children[5].color="orange"
     }
-    
 }
 
 function run() {
-    
+
     items.question_no=items.question_no+1
-    items.operators=shuffle(images)
+    items.operators=shuffle(signs)
     items.data=dataset[currentLevel]["data"]["numbers"][items.question_no-1][0]
     items.guesscount=dataset[currentLevel]["data"]["numbers"][items.question_no-1][1]
     items.row5.visible=visibility(2)
@@ -150,7 +151,6 @@ function run() {
         items.row5.children[5].color="lightblue"
         items.row6.children[5].color="orange"
     }
-    
 }
 
 function nextLevel() {
@@ -168,7 +168,6 @@ function previousLevel() {
     }
     initLevel();
 }
-
 
 function decidekeys(index,row){
     var keys=[]
@@ -188,7 +187,6 @@ function decidekeys(index,row){
             keys=["number"]
         return keys
     }
-    
 }
 
 function visibility(row){
@@ -198,11 +196,61 @@ function visibility(row){
 }
 
 function shuffle(images){
-    var temp=images[0]
-    images[0]=images[1]
-    images[1]=images[2]
-    images[2]=images[3]
-    images[3]=temp
-    return images
+    var temp=signs[0]
+    signs[0]=signs[1]
+    signs[1]=signs[2]
+    signs[2]=signs[3]
+    signs[3]=temp
+    return signs
+}
+
+function calculate(row,index)
+{
+    switch (row.children[1].children[1].tile.datavalue) {
+    case "+":
+        console.log(row.children[0].children[index].tile.datavalue+row.children[2].children[1].tile.datavalue);
+        row.calculated_value=row.children[0].children[index].tile.datavalue+row.children[2].children[1].tile.datavalue
+        break;
+    case "-":
+        console.log(row.children[0].children[index].tile.datavalue-row.children[2].children[1].tile.datavalue);
+        row.calculated_value=row.children[0].children[index].tile.datavalue-row.children[2].children[1].tile.datavalue
+        break;
+    case "/":
+        console.log(row.children[0].children[index].tile.datavalue/row.children[2].children[1].tile.datavalue);
+        row.calculated_value=row.children[0].children[index].tile.datavalue/row.children[2].children[1].tile.datavalue
+        break;
+    default:
+        console.log(row.children[0].children[index].tile.datavalue*row.children[2].children[1].tile.datavalue);
+        row.calculated_value=row.children[0].children[index].tile.datavalue*row.children[2].children[1].tile.datavalue
+    }
+    return row.calculated_value
+}
+
+function check_if_not_integer(row){
+    if(Math.round(row.calculated_value) == row.calculated_value)
+    {
+        console.log("integer")
+        return 0
+    }
+    return 1
+}
+
+function check_answer(row,items,row_number){
+    if(row.calculated_value==items.guesscount)
+    {
+        if(items.question_no==items.total_questions && items.no_of_rows==row_number)
+        {
+            items.bonus.good("smiley")
+        }
+        if(items.question_no<items.total_questions && items.no_of_rows==row_number)
+        {
+            items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/win.wav")
+            items.timer.start()
+        }
+    }
+    else if(items.no_of_rows==row_number)
+    {
+        items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
+    }
 }
 
