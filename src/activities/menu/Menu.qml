@@ -23,6 +23,8 @@ import "../../core"
 import GCompris 1.0
 import "qrc:/gcompris/src/core/core.js" as Core
 import QtGraphicalEffects 1.0
+import QtQuick.Controls 1.2
+
 
 /**
  * GCompris' top level menu screen.
@@ -45,7 +47,6 @@ ActivityBase {
     id: menuActivity
     focus: true
     activityInfo: ActivityInfoTree.rootMenu
-
     onBack: {
         pageView.pop(to);
         // Restore focus that has been taken by the loaded activity
@@ -77,6 +78,7 @@ ActivityBase {
 
     // @cond INTERNAL_DOCS
     property string url: "qrc:/gcompris/src/activities/menu/resource/"
+    property  string inputText: ""
     property variant sections: [
         {
             icon: menuActivity.url + "all.svg",
@@ -114,6 +116,10 @@ ActivityBase {
             icon: menuActivity.url + "strategy.svg",
             tag: "strategy"
         },
+        {
+            icon: menuActivity.url + "search-icon.svg",
+            tag: "search"
+        }
     ]
     property string currentTag: sections[0].tag
     /// @endcond
@@ -122,6 +128,9 @@ ActivityBase {
         id: background
         source: menuActivity.url + "background.svg"
         sourceSize.width: parent.width
+        height: menuActivity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard ?
+                    main.height - (((keyboard.keyHeight+keyboard.rowSpacing) * keyboard.rows)+keyboard.margin)
+                  :main.height
         fillMode: Image.PreserveAspectCrop
 
         function loadActivity() {
@@ -147,7 +156,7 @@ ActivityBase {
         property int sectionIconWidth:
             horizontal ?
                 Math.min(100 * ApplicationInfo.ratio, main.width / (sections.length + 1)) :
-                Math.min(100 * ApplicationInfo.ratio, (main.height - bar.height) / (sections.length + 1))
+                Math.min(100 * ApplicationInfo.ratio, (background.height - bar.height) / (sections.length + 1))
         property int sectionIconHeight: sectionIconWidth
         property int sectionCellWidth: sectionIconWidth * 1.1
         property int sectionCellHeight: sectionIconHeight * 1.1
@@ -180,14 +189,22 @@ ActivityBase {
             id: section
             model: sections
             width: horizontal ? main.width : sectionCellWidth
-            height: horizontal ? sectionCellHeight : main.height - bar.height
+            height:
+            {
+               if(currentTag === "search"){
+
+                   if(horizontal) return sectionCellHeight + searchbar.height
+                    else return background.height - bar.height
+               }
+               else
+                   return horizontal ? (sectionCellHeight) : main.height - bar.height
+            }
             x: ApplicationSettings.sectionVisible ? section.initialX : -sectionCellWidth
             y: ApplicationSettings.sectionVisible ? section.initialY : -sectionCellHeight
             cellWidth: sectionCellWidth
             cellHeight: sectionCellHeight
             interactive: false
-            keyNavigationWraps: true
-
+            keyNavigationWraps: true 
             property int initialX: 4
             property int initialY: 4
 
@@ -203,6 +220,7 @@ ActivityBase {
                         sourceSize.height: sectionIconHeight
                         anchors.margins: 5
                         anchors.horizontalCenter: parent.horizontalCenter
+
                     }
 
                     ParticleSystemStarLoader {
@@ -218,12 +236,24 @@ ActivityBase {
                     }
 
                     function selectCurrentItem() {
-                        particles.burst(10)
-                        ActivityInfoTree.filterByTag(modelData.tag)
-                        ActivityInfoTree.filterLockedActivities()
-                        ActivityInfoTree.filterEnabledActivities()
-                        menuActivity.currentTag = modelData.tag
-                        section.currentIndex = index
+
+
+                               if(modelData.tag === "search"){
+
+                                   section.currentIndex = index
+                                   menuActivity.currentTag = modelData.tag
+                                   ActivityInfoTree.filterBySearch(input.text);
+                               }
+                               else
+                               {
+                                   particles.burst(10)
+                                   ActivityInfoTree.filterByTag(modelData.tag)
+                                   ActivityInfoTree.filterLockedActivities()
+                                   ActivityInfoTree.filterEnabledActivities()
+                                   menuActivity.currentTag = modelData.tag
+                                   section.currentIndex = index
+                               }
+
                     }
                 }
             }
@@ -245,6 +275,8 @@ ActivityBase {
             }
         }
 
+
+
         // Activities
         property int iconWidth: 120 * ApplicationInfo.ratio
         property int iconHeight: 120 * ApplicationInfo.ratio
@@ -252,7 +284,6 @@ ActivityBase {
             horizontal ? background.width / Math.floor(background.width / iconWidth) :
                          (background.width - section.width) / Math.floor((background.width - section.width) / iconWidth)
         property int activityCellHeight: iconHeight * 1.5
-
         Loader {
             id: warningOverlay
             anchors {
@@ -280,6 +311,7 @@ ActivityBase {
                                "sun on each activity top right.")
                 }
                 Rectangle {
+
                     anchors.fill: instructionTxt
                     anchors.margins: -6
                     z: 1
@@ -299,8 +331,17 @@ ActivityBase {
         GridView {
             id: activitiesGrid
             layer.enabled: true
+
             anchors {
-                top: horizontal ? section.bottom : parent.top
+                top:
+                {
+                    if(menuActivity.currentTag === "search")
+                    {
+                        return horizontal ? (section.bottom ) : searchbar.bottom
+                    }
+                    else
+                        return horizontal ? (section.bottom ) : parent.top
+                }
                 bottom: bar.top
                 left: horizontal ? parent.left : section.right
                 margins: 4
@@ -459,6 +500,131 @@ ActivityBase {
 
         }
 
+
+        Rectangle{
+            id: searchbar
+            width: horizontal ? parent.width/2 : parent.width - (section.width+10)
+            height: horizontal ? parent.height/10 : parent.height/17
+            visible:  menuActivity.currentTag === "search" ? true :false
+            anchors
+            {
+               bottom : horizontal ? activitiesGrid.top : undefined
+               top: horizontal ? undefined : parent.top
+               left: horizontal ? undefined : section.right
+            }
+            anchors.topMargin: horizontal ? undefined : 4
+            anchors.bottomMargin: horizontal ? undefined : 4
+            x: horizontal ? (parent.width/2) - (searchbar.width/2) : 0
+            opacity: 0.5
+            radius: 10
+            border.width: 2
+            border.color: "black"
+            gradient: Gradient {
+
+               GradientStop { position: 0.3; color: "#000" }
+               GradientStop { position: 0.9; color: "#666" }
+               GradientStop { position: 1.0; color: "#AAA" }
+
+           }
+
+            TextField{
+                id : input
+                anchors.fill: parent
+                text: ""
+                textColor: "black"
+                font.pixelSize: 28
+                font.bold: true
+                horizontalAlignment: TextInput.AlignHCenter
+                verticalAlignment: TextInput.AlignVCenter
+                font.family:GCSingletonFontLoader.fontLoader.name
+                activeFocusOnPress:  !ApplicationSettings.isVirtualKeyboard
+                onTextChanged:
+                {
+                    menuActivity.inputText = input.text;
+                    ActivityInfoTree.filterBySearch(input.text);
+                }
+            }
+        }
+
+        VirtualKeyboard{
+            id:keyboard
+            parent: background
+            property string search;
+            property var letter;
+            property int rows;
+            width: horizontal ? main.width :parent.width - (section.width +10)
+            visible: menuActivity.currentTag === "search" && ApplicationSettings.isVirtualKeyboard ?
+                          true :false
+            anchors
+            {
+                top: background.bottom
+                left:  parent.left
+             }
+            onKeypress:
+            {
+                var string  = text
+                if ( string == keyboard.backspace){
+                     backspace(string)
+                     return
+                }
+                if (string == keyboard.space){
+                        space(string)
+                        return
+                }
+                input.text = input.text.concat(string);
+
+                function backspace(string_)
+                {
+                        input.text = input.text.slice(0,-1);
+                }
+                function space(string_)
+                {
+                    input.text = input.text.concat(" ");
+                }
+
+
+            }
+           letter: ActivityInfoTree.characters
+           layout:
+           {
+               var layout = [];
+               var row = 0;
+               var offset = 0;
+               var cols;
+               while (offset < letter.length-1) {
+
+                   if(letter.length <=100){
+                       cols = Math.ceil((letter.length-offset) / (3 - row));
+                   }
+                   else{
+                       cols = background.horizontal ? (Math.ceil((letter.length-offset) / (15 - row)))
+                                                       :(Math.ceil((letter.length-offset) / (22 - row)))
+                       if(row == 0){
+                       layout[row] = new Array();
+                       layout[row].push({ label: keyboard.backspace });
+                       layout[row].push({label: keyboard.space});
+                       row++;
+                       }
+
+                  }
+
+                   layout[row] = new Array();
+                   for (var j = 0; j < cols; j++)
+                       layout[row][j] = { label: letter[j+offset] };
+                   offset += j;
+                   row++;
+               }
+               if(letter.length <=100){
+                   layout[0].push({ label: keyboard.space });
+                   layout[row -1].push({label: keyboard.backspace});
+               }
+
+               keyboard.rows = 3;
+               return layout;
+
+           }
+        }
+
         Bar {
             id: bar
             content: BarEnumContent { value: help | exit | config | about }
@@ -504,9 +670,13 @@ ActivityBase {
             dialogActivityConfig.configItem.save();
         }
         onClose: {
-            ActivityInfoTree.filterByTag(menuActivity.currentTag)
-            ActivityInfoTree.filterLockedActivities()
-            ActivityInfoTree.filterEnabledActivities()
+            if(menuActivity.currentTag != "search"){
+                ActivityInfoTree.filterByTag(menuActivity.currentTag)
+                ActivityInfoTree.filterLockedActivities()
+                ActivityInfoTree.filterEnabledActivities()
+            }
+            else
+                ActivityInfoTree.filterBySearch(menuActivity.inputText);
             home()
         }
     }

@@ -87,6 +87,13 @@ Item {
                            { label: "n", shiftLabel: "N" },
                            { label: "m", shiftLabel: "M" } ]]
 
+
+    /**
+     * type:string
+     * Symbol that can be used for the space key.
+    */
+    readonly property string space : "\u2423"
+
     /**
      * type:string
      * Symbol that can be used for the backspace key.
@@ -290,18 +297,18 @@ Item {
          */
     }
 
-    Behavior on height {
-        NumberAnimation {
-            duration: 500
-            easing.type: Easing.OutCubic
-        }
-    }
+//    Behavior on height {
+//        NumberAnimation {
+//            duration: 500
+//            easing.type: Easing.OutCubic
+//        }
+//    }
 
     Rectangle {
         id: keyboardBackground
 
         width: parent.width
-        height: keyboard.height
+        height: 1000
         color: "#8C8F8C"
         opacity: keyboard.opacity
 
@@ -317,7 +324,7 @@ Item {
             spacing: keyboard.rowSpacing
             orientation: Qt.Vertical
             verticalLayoutDirection: ListView.TopToBottom
-            interactive: false
+            interactive: true
 
             model: rowListModel
 

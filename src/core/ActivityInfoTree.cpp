@@ -28,7 +28,6 @@
 #include <QStandardPaths>
 #include <QCoreApplication>
 #include <QTextStream>
-
 ActivityInfoTree::ActivityInfoTree(QObject *parent) : QObject(parent),
 	m_currentActivity(NULL)
 {}
@@ -137,18 +136,27 @@ void ActivityInfoTree::filterByTag(const QString &tag)
 {
     m_menuTree.clear();
     for(auto activity: m_menuTreeFull) {
-        if((activity->section().indexOf(tag) != -1 ||
-			tag == "all" ||
-            (tag == "favorite" && activity->favorite())) &&
-            (activity->difficulty() >= ApplicationSettings::getInstance()->filterLevelMin() &&
-             activity->difficulty() <= ApplicationSettings::getInstance()->filterLevelMax())) {
-            m_menuTree.push_back(activity);
+            if((activity->section().indexOf(tag) != -1 ||
+                tag == "all" ||
+                (tag == "favorite" && activity->favorite())) &&
+                (activity->difficulty() >= ApplicationSettings::getInstance()->filterLevelMin() &&
+                 activity->difficulty() <= ApplicationSettings::getInstance()->filterLevelMax())) {
+                m_menuTree.push_back(activity);
+            }
         }
-    }
     sortByDifficulty();
     emit menuTreeChanged();
 }
-
+void ActivityInfoTree::filterByDifficulty(const int &levelMin,const int &levelMax)
+{
+    auto it = std::remove_if(m_menuTree.begin(),m_menuTree.end(),[&](const ActivityInfo* activity)
+                                        {
+                                             if(activity->difficulty() >= levelMin and activity->difficulty() <= levelMax)
+                                                 return false;
+                                             else return true;
+                                        });
+        m_menuTree.erase(it,m_menuTree.end());
+}
 void ActivityInfoTree::filterLockedActivities()
 {
     // If we have the full version or if we show all the activities, we don't need to do anything
@@ -283,5 +291,56 @@ void ActivityInfoTree::init()
 
     qmlRegisterSingletonType<QObject>("GCompris", 1, 0, "ActivityInfoTree", menuTreeProvider);
     qmlRegisterType<ActivityInfo>("GCompris", 1, 0, "ActivityInfo");
+
+
+}
+void ActivityInfoTree::filterBySearch(const QString& text)
+{
+    m_menuTree.clear();
+    if(!text.trimmed().isEmpty()){
+        // perfrom search on each word entered in the searchField
+        QStringList list = text.split(" ",QString::SkipEmptyParts);
+        foreach(auto searchTerm,list){
+            foreach(auto activity,m_menuTreeFull)
+            {
+                if(activity->title().contains(searchTerm.trimmed(),Qt::CaseInsensitive) or
+                    activity->name().contains(searchTerm.trimmed(),Qt::CaseInsensitive) or
+                    activity->description().contains(searchTerm.trimmed(),Qt::CaseInsensitive)){
+
+                    // add the activity only if it's not added
+                    if(m_menuTree.indexOf(activity) == -1)
+                        m_menuTree.push_back(activity);
+                    }
+            }
+
+        }
+    }
+    else
+        m_menuTree = m_menuTreeFull;
+    filterEnabledActivities();
+    filterLockedActivities();
+    filterByDifficulty(ApplicationSettings::getInstance()->filterLevelMin(),ApplicationSettings::getInstance()->filterLevelMax());
+    sortByDifficulty();
+    emit menuTreeChanged();
+}
+QVariantList  ActivityInfoTree::allCharacters()
+{
+    QSet<QString> keyboardchars;
+    foreach(auto tree,m_menuTreeFull)
+    {
+        auto title = tree->title();
+        foreach(const QChar letter,title){
+            if(!letter.isSpace() and !letter.isPunct()){
+                keyboardchars.insert(letter.toLower());
+            }
+        }
+    }
+    foreach(const QString &letters, keyboardchars)
+    {
+        keyboardcharacters.push_back(letters);
+    }
+    std::sort(keyboardcharacters.begin(),keyboardcharacters.end());
+
+    return keyboardcharacters;
 }
 
