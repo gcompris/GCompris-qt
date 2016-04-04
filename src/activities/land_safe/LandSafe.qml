@@ -129,6 +129,7 @@ ActivityBase {
             id: mouse
             anchors.fill: parent
             onClicked: debugDraw.visible = !debugDraw.visible;
+            enabled: Activity.debugDraw
         }
 
         // bounding fixtures
@@ -263,7 +264,7 @@ ActivityBase {
                 var yFForce = yForce * items.rocket.body.getMass();
                 var xFForce = xForce * items.rocket.body.getMass();
                 var force = Qt.point(xFForce, yFForce);
-                console.log("applying force " + force + " - " + " - mass=" + items.rocket.body.getMass() + " v=" + items.rocket.body.linearVelocity + " totForce=" + totForce + " - rotation=" + items.rocket.rotation + " - xForce=" + xForce + " xFForce=" + xFForce + " mass=" + items.rocket.body.getMass());
+//                console.log("applying force " + force + " - " + " - mass=" + items.rocket.body.getMass() + " v=" + items.rocket.body.linearVelocity + " totForce=" + totForce + " - rotation=" + items.rocket.rotation + " - xForce=" + xForce + " xFForce=" + xFForce + " mass=" + items.rocket.body.getMass());
 
                 physicsWorld.clearForces();
                 items.rocket.body.applyForceToCenter(force);
@@ -427,7 +428,7 @@ ActivityBase {
                     group: "flame"
 
                     emitRate: rocket.accel > 0 ? (80 + 60 * rocket.accel) : 0 // 75-150
-                    lifeSpan: (600 + 450 * rocket.accel) * items.scale / 2.5 // 500 - 1000
+                    lifeSpan: (700 + 450 * rocket.accel) * items.scale / 2.5 // 500 - 1000
                     size: rocket.width/1.8 + rocket.width/2*rocket.accel // width*-0.5 - width
                     endSize: size/1.85
                     sizeVariation: 10
@@ -517,6 +518,62 @@ ActivityBase {
             }
         }
 
+        Column {
+            id: updownControl
+            anchors.right: parent.right
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.bottom: bar.top
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            width: upButton.width + 20 * ApplicationInfo.ratio
+            height: upButton.height + downButton.height + 20 * ApplicationInfo.ratio
+            visible: items.world.running && ApplicationInfo.isMobile
+
+            z: 19 // below intro, above the rest
+            opacity: 0.4
+            spacing: 10 * ApplicationInfo.ratio
+
+            ControlButton {
+                id: upButton
+                source: Activity.baseUrl + "/arrow_up.svg"
+                onPressed: Activity.processKeyPress({key: Qt.Key_Up});
+            }
+
+            ControlButton {
+                id: downButton
+                source: Activity.baseUrl + "/arrow_down.svg"
+                onPressed: Activity.processKeyPress({key: Qt.Key_Down});
+            }
+        }
+
+        Row {
+            id: leftrightControl
+            anchors.left: parent.left
+            anchors.leftMargin: 10 * ApplicationInfo.ratio
+            anchors.bottom: bar.top
+            anchors.bottomMargin: 10 * ApplicationInfo.ratio
+            width: leftButton.width + rightButton.width + 20 * ApplicationInfo.ratio
+            height: leftButton.height + 10 * ApplicationInfo.ratio
+            visible: items.world.running && ApplicationInfo.isMobile
+
+            z: 19 // below intro, above the rest
+            opacity: 0.4
+            spacing: 10 * ApplicationInfo.ratio
+
+            ControlButton {
+                id: leftButton
+                source: Activity.baseUrl + "/arrow_left.svg"
+                onPressed: Activity.processKeyPress({key: Qt.Key_Left});
+                onReleased: Activity.processKeyRelease({key: Qt.Key_Left});
+            }
+
+            ControlButton {
+                id: rightButton
+                source: Activity.baseUrl + "/arrow_right.svg"
+                onPressed: Activity.processKeyPress({key: Qt.Key_Right});
+                onReleased: Activity.processKeyRelease({key: Qt.Key_Right});
+            }
+        }
+
         DebugDraw {
             id: debugDraw
             world: physicsWorld
@@ -533,7 +590,8 @@ ActivityBase {
             id: bar
             content: BarEnumContent { value: help | home | level }
             onHelpClicked: {
-                displayDialog(dialogHelp)
+                Activity.initLevel();
+                displayDialog(dialogHelp);
             }
             onPreviousLevelClicked: Activity.previousLevel()
             onNextLevelClicked: Activity.nextLevel()

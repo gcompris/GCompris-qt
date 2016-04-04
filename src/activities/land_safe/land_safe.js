@@ -22,10 +22,8 @@
 
 /* ToDo:
  * (- zoom out if too high!)
- * - support android
  * - check for shader availability
  * (- use polygon fixture for rocket)
- * (- succesful landing only if on platform?)
  * (- improve graphics of velocity etc.)
  * - build/activate conditionally (box2d)
  *
@@ -107,6 +105,7 @@ var barAtStart;
 var maxFuel = 100.0;
 var currentFuel = 0.0;
 var lastLevel = -1;
+var debugDraw = false;
 
 function start(items_) {
     items = items_;
