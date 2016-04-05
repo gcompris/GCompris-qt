@@ -53,7 +53,7 @@ var dataset=[
                         [[6,7],42],
                         [[8,4],2],
                         [[10,2],8],
-                        [[10,2],12],
+                        [[8,4],12],
                     ]
 
                 }
@@ -253,4 +253,3 @@ function check_answer(row,items,row_number){
         items.audioEffects.play("qrc:/gcompris/src/core/resource/sounds/crash.wav")
     }
 }
-
