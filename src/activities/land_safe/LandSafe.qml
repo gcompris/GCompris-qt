@@ -321,8 +321,6 @@ ActivityBase {
                 linearDamping: 0
                 property double rotation: Activity.degToRad(rocket.rotation % 360)
 
-                onLinearVelocityChanged: console.log("v = " + linearVelocity);
-
                 fixtures: Box {
                     id: rocketFixture
                     categories: items.rocketCategory
@@ -335,11 +333,7 @@ ActivityBase {
                     rotation: rocketBody.rotation
 
                     onBeginContact: {
-                        console.log("XXX beginning contact with "
-                                    + other.getBody().target.collisionName
-                                    + " abs v=" + Math.abs(items.lastVelocity) +
-                                    + " maxV=" + Activity.maxLandingVelocity);
-
+                        //console.log("XXX beginning contact with " + other.getBody().target.collisionName + " abs v=" + Math.abs(items.lastVelocity) + + " maxV=" + Activity.maxLandingVelocity);
                         if (other.getBody().target === leftBorder ||
                                 other.getBody().target === rightBorder)
                             ; //nothing to do
@@ -350,7 +344,7 @@ ActivityBase {
                         else // ground
                             Activity.finishLevel(false); // crash
                     }
-                    onEndContact: console.log("XXX ending contact with " + other.getBody().target.collisionName);
+//                    onEndContact: console.log("XXX ending contact with " + other.getBody().target.collisionName);
                 }
             }
 

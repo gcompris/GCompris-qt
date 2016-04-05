@@ -150,7 +150,7 @@ function initLevel() {
     items.world.running = false;
     items.landing.source = baseUrl + "/landing_green.png";
 
-    console.log("Starting level (surfaceOff=" + items.ground.surfaceOffset + ", ppm=" + items.world.pixelsPerMeter + ")");
+//    console.log("Starting level (surfaceOff=" + items.ground.surfaceOffset + ", ppm=" + items.world.pixelsPerMeter + ")");
 
     if (currentLevel === 0 && lastLevel !== 0) {
         items.ok.visible = false;
@@ -244,13 +244,6 @@ function processKeyRelease(event)
     var key = event.key;
     event.accepted = true;
     //console.log("XXX release " + key + " = " + event.isAutoRepeat + " = " + Qt.Key_Right);
-    if (key===Qt.Key_1) {
-        items.rocket.explosion.show();
-    }
-    if (key===Qt.Key_0) {
-        items.rocket.explosion.hide();
-    }
-
     if (key === Qt.Key_Right && !event.isAutoRepeat) {
         items.rocket.leftAccel = 0;
     } else if (key === Qt.Key_Left && !event.isAutoRepeat) {

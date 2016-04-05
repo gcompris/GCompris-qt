@@ -21,7 +21,7 @@ ActivityInfo {
   name: "land_safe/LandSafe.qml"
   difficulty: 4
   icon: "land_safe/land_safe.svg"
-  author: "Matilda Bernard <serah4291@gmail.com> (Gtk+), Holger Kaelberer <holger.k@elberer.de> (Qt Quick)"
+  author: "Matilda Bernard &lt;serah4291@gmail.com&gt; (Gtk+), Holger Kaelberer &lt;holger.k@elberer.de&gt; (Qt Quick)"
   demo: true
   title: qsTr("Land Safe")
   description: qsTr("Understanding acceleration due to gravity.")
@@ -29,7 +29,7 @@ ActivityInfo {
   prerequisite: ""
   manual: qsTr("Acceleration due to gravity experienced by the spaceship is directly proportional to the mass of the planet and inversely proportional to the square of the distance from the center of the planet. Thus, with every planet the acceleration will differ and as the spaceship comes closer and closer to the planet the acceleration increases.
 
-Use the up/down keys to control the thrust and the right/left keys to control direction. On mobile platforms you can control the rocket through the corresponding on-screen buttons.
+Use the up/down keys to control the thrust and the right/left keys to control direction. On touch screens you can control the rocket through the corresponding on-screen buttons.
 
 In higher levels, you can use the right/left keys to rotate the spaceship. By rotating the spaceship you can trigger an acceleration in non-vertical direction using the up/down keys.
 
