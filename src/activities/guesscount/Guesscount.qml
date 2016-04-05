@@ -33,7 +33,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        color: "#ABCDEF"
+        color: "gray"
         signal start
         signal stop
 
@@ -65,12 +65,6 @@ ActivityBase {
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
-        GCText {
-            anchors.centerIn: parent
-            text: "guesscount1 activity"
-            fontSize: largeSize
-        }
-
         DialogHelp {
             id: dialogHelp
             onClose: home()
@@ -90,12 +84,6 @@ ActivityBase {
         Bonus {
             id: bonus
             Component.onCompleted: win.connect(Activity.nextLevel)
-        }
-
-        Image {
-            source: Activity.url+"blackboard-2400px.png"
-            width: parent.width
-            height: parent.height
         }
 
         Rectangle {
