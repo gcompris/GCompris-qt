@@ -77,6 +77,8 @@ ActivityBase {
             property alias stats: stats
             property alias intro: intro
             property alias ok: ok
+            property alias leftRightControl: leftRightControl
+            property alias upDownControl: upDownControl
             property var rocketCategory: Fixture.Category1
             property var groundCategory: Fixture.Category2
             property var landingCategory: Fixture.Category3
@@ -513,7 +515,7 @@ ActivityBase {
         }
 
         Column {
-            id: updownControl
+            id: upDownControl
             anchors.right: parent.right
             anchors.rightMargin: 10 * ApplicationInfo.ratio
             anchors.bottom: bar.top
@@ -540,7 +542,7 @@ ActivityBase {
         }
 
         Row {
-            id: leftrightControl
+            id: leftRightControl
             anchors.left: parent.left
             anchors.leftMargin: 10 * ApplicationInfo.ratio
             anchors.bottom: bar.top

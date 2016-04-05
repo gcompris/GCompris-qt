@@ -125,9 +125,10 @@ function initLevel() {
 
     items.bar.level = currentLevel + 1
 
+    items.rocket.explosion.hide();
+    // place rocket randomly:
     var max = items.background.width - items.landing.width-20;
     var min = 20;
-    items.rocket.explosion.hide();
     items.rocket.x = Math.random() * (max- min) + min;
     items.rocket.y = startingOffsetPx;
     items.rocket.rotation = 0;
@@ -135,6 +136,12 @@ function initLevel() {
     items.rocket.leftAccel = 0;
     items.rocket.rightAccel = 0;
     items.rocket.body.linearVelocity = Qt.point(0,0)
+
+    // for landing random placement shall not intersect with bar --
+    // or osd controls on mobile:
+    min = GCompris.ApplicationInfo.isMobile ? items.leftRightControl.width : items.bar.fullButton * items.bar.barZoom;
+    max = GCompris.ApplicationInfo.isMobile ? items.background.width - items.upDownControl.width - items.landing.width : max;
+
     items.landing.anchors.leftMargin = Math.random() * (max- min) + min;
 
     maxAccel = levels[currentLevel].maxAccel;
