@@ -40,6 +40,7 @@ ActivityBase {
         signal start
         signal stop
         signal voiceError
+        signal voiceDone
 
         Component.onCompleted: {
             activity.start.connect(start)
@@ -70,7 +71,8 @@ ActivityBase {
         onStart: {
             questionItem.visible = true
             activity.audioVoices.error.connect(voiceError)
-
+            dialogActivityConfig.getInitialConfiguration()
+            activity.audioVoices.done.connect(voiceDone)
             edit.forceActiveFocus();
             Activity.start(items);
         }
@@ -130,8 +132,8 @@ ActivityBase {
 
                 // Restart the activity with new information
                 if(oldLocale !== newLocale) {
-                    background.stop();
-                    background.start();
+                    Activity.stop()
+                    Activity.start();
                 }
             }
 
@@ -348,7 +350,6 @@ ActivityBase {
 
             onKeypress: {
                 edit.insert(edit.cursorPosition, text)
-                Activity.processkey(text);
             }
             onError: console.log("VirtualKeyboard error: " + msg);
         }

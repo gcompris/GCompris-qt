@@ -22,9 +22,12 @@
 .pragma library
 .import GCompris 1.0 as GCompris
 .import "qrc:/gcompris/src/core/core.js" as Core
+.import "qrc:/gcompris/src/activities/lang/lang_api.js" as Lang
+
 
 var url = "qrc:/gcompris/src/activities/jumbled_words/resource/"
 var defaultLevelsFile = "qrc:/gcompris/src/activities/lang/resource/words.json";
+var baseUrl = "qrc:/gcompris/src/activities/lang/resource/";
 
 var currentLevel
 var maxLevel
@@ -36,6 +39,10 @@ var items
 var index
 var answers
 var jumble=[]
+var dataset
+var maxWordInLesson = 12
+var locale
+var flatWordList
 
 function start(items_) {
 
@@ -49,17 +56,16 @@ function start(items_) {
 
 function loadLevels()
 {
-    var filename = GCompris.ApplicationInfo.getLocaleFilePath(defaultLevelsFile); //To extend to more languages(future)
-    levels = items.parser.parseFromUrl(filename);
-    if (levels === null) {
-        console.warn("Jumbled_words: Invalid levels file " + filename);
-        levels = items.parser.parseFromUrl(defaultLevelsFile);
-        if (levels === null) {
-            console.error("Jumbled_words: Invalid default levels file "
-                + defaultLevelsFile + ". Can't continue!");
-            return;
-        }
-    }
+    locale = GCompris.ApplicationInfo.getVoicesLocale(items.locale)
+
+    // register the voices for the locale
+    GCompris.DownloadManager.updateResource(GCompris.DownloadManager.getVoicesResourceForLocale(locale))
+
+    dataset = Lang.load(items.parser, baseUrl,
+                        GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
+                        "content-"+ locale +".json")
+
+    levels = Lang.getAllLessons(dataset)
 }
 
 function stop() {
@@ -107,14 +113,16 @@ function initLevel()
 {
     items.bar.level = currentLevel + 1
     var questions
+    flatWordList = Lang.getLessonWords(dataset, levels[currentLevel]);
+    var i = 0
+
     items.hintimage.source=Qt.binding(function() { return ""});
     if (currentSubLevel === 0) {
-        level = levels[currentLevel];
-        maxSubLevel = level.content[0].content.length;
+        maxSubLevel = flatWordList.length;
         jumble=[];
-        for(var i=0;i<maxSubLevel ; i++)
+        for(i=0;i<maxSubLevel ; i++)
         {
-           jumble.push(i);
+          jumble.push(i);
         }
         jumble=Core.shuffle(jumble);
         items.score.numberOfSubLevels = maxSubLevel;
@@ -124,11 +132,19 @@ function initLevel()
         items.score.currentSubLevel = currentSubLevel + 1;
     }
     index=jumble[currentSubLevel];
-    answers = level.content[0].content[index].description;
+    answers=flatWordList[index].translatedTxt
     do{
-       questions = shuffleString(answers);
+        if(answers.indexOf(" "))
+        {
+            var a = answers.split(' ');
+            for(i=0;i<a.length;i++){
+                a[i]=shuffleString(a[i]);
+            }
+            questions = a.join(" ");
+        }
+        else
+        questions = shuffleString(answers);
     }while(questions === answers);
-
     items.questionItem.text = questions;
     generateKeyboard(questions);
 }
@@ -173,11 +189,8 @@ function checkAnswer()
     }
 }
 
-function processkey(text)
-{
-}
-
 function showHint()
 {
-    items.hintimage.source=level.imgPrefix+level.content[0].content[index].image;
+    items.hintimage.source=flatWordList[index].image;
+   // items.hintimage.opacity=0.2;
 }
