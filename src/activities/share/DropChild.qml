@@ -10,12 +10,12 @@ Rectangle {
     width: items.cellSize * 3
     height: items.cellSize * 3 + items.cellSize * 1.5
     color: "transparent"
+    z: 5
 
     property string name
     property alias childImg: childImg
     property alias area: area
     property int indexS: index
-
 
     Image {
         id: childImg
@@ -116,9 +116,11 @@ Rectangle {
                             //set the initial position
                             candy2.lastx = candy2.x
                             candy2.lasty = candy2.y
+                            dropChild.z++
                         }
 
                         onReleased:  {
+                            dropChild.z--
                             for (var i=0;i<listModel1.count;i++) {
                                 var c = repeater_drop_areas.itemAt(i)     //DropChild type
                                 var e = drop_areas.mapToItem(background, c.x, c.y)

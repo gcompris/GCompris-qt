@@ -35,8 +35,6 @@ ActivityBase {
     //TODO 1: when having many many rectangles, they should resize in order to fit the screen
         //now, if there are more than 5/6/7... they span out of the window
     //TODO 2: have some voices to tell the kids to drag the basket ("rest") and what it means
-    //TODO 3: when dragging a candy from left to right, it goes under the right rectangle
-
 
     pageComponent: Rectangle {
         id: background
