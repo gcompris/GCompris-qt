@@ -34,6 +34,7 @@ ActivityBase {
 
     Keys.onPressed: {
         Activity.processKey(event)
+        console.log(ApplicationSettings.baseFontSize, "asdfg",  ApplicationInfo.fontRatio)
     }
 
     pageComponent: Image {

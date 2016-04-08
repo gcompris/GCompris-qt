@@ -20,6 +20,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 import QtQuick 2.1
+import GCompris 1.0
 
 import "../../core"
 import "multiplication-chart.js" as Activity
@@ -73,8 +74,8 @@ ActivityBase {
         /////////////////////////////////////////////////////
         Rectangle {
             id: wrap
-            color: "transparent"
-            opacity: 1
+            color: "red"
+            opacity: 0.35
             height: Math.min(background.height , background.width)
             width:  height
             anchors.centerIn: background
@@ -83,9 +84,9 @@ ActivityBase {
             id:gridRow
             anchors {
                 top: parent.top
-                topMargin: (wrap.height*5)/192     // 768*5/192 = 20
+                topMargin: 20*(ApplicationInfo.ratio/1.476923076923077) //(wrap.height*5)/192     // 768*5/192 = 20
                 left: parent.left
-                leftMargin: (wrap.width*15)/683  // 1366*15/683 = 150
+                leftMargin: 20*(ApplicationInfo.ratio/1.476923076923077) //(wrap.width*15)/683  // 1366*15/683 = 150
             }
             spacing: items.spacing
             columns: 11
@@ -116,7 +117,8 @@ ActivityBase {
                    GCText{
                        text: index
                        anchors.centerIn: parent
-                       fontSize: (wrap.height*6)/384  //768*6/384 = 12
+                       fontSize: 12*(ApplicationInfo.fontRatio/1.6) //(wrap.height*6)/384  //768*6/384 = 12
+                       //fontSizeMode: Text.Fit//; minimumPixelSize: 1
                    }
 
                    MouseArea {
@@ -144,9 +146,9 @@ ActivityBase {
             id:gridCol
             anchors {
                 top: parent.top
-                topMargin:  (wrap.height*5)/192    // 768*5/192 = 20
+                topMargin:  20*(ApplicationInfo.ratio/1.476923076923077) //(wrap.height*5)/192    // 768*5/192 = 20
                 left: parent.left
-                leftMargin: (wrap.width*15)/683  // 1366*15/683
+                leftMargin: 20*(ApplicationInfo.ratio/1.476923076923077) //(wrap.width*15)/683  // 1366*15/683 = 150
             }
             spacing: items.spacing
             columns: 1
@@ -177,7 +179,7 @@ ActivityBase {
                    GCText {
                        text: index
                        anchors.centerIn: parent
-                       fontSize: (wrap.height*6)/384  //768*6/384 = 12
+                       fontSize: 12*(ApplicationInfo.fontRatio/1.6) //(wrap.height*6)/384  //768*6/384 = 12
                    }
 
                    MouseArea {
@@ -226,7 +228,7 @@ ActivityBase {
                     GCText {
                         text: (Math.floor(index/10) + 1) * (index%10 + 1)
                         anchors.centerIn: parent
-                        fontSize: (wrap.height*6)/384  //768*6/384 = 12
+                        fontSize: 12*(ApplicationInfo.fontRatio/1.6) //(wrap.height*6)/384  //768*6/384 = 12
                     }
 
                 }
@@ -239,9 +241,9 @@ ActivityBase {
                 top: parent.top
                 topMargin: (wrap.height/4 - instruction.height/3)
                 left: grid.right
-                leftMargin: (wrap.width*17)/683 // 1366*17/683 = 34
+                leftMargin: 20*(ApplicationInfo.ratio/1.476923076923077) //(wrap.width*17)/683 // 1366*17/683 = 34
             }
-            fontSize: (wrap.height*7)/384  //768*7/384 = 14
+            fontSize: 14*(ApplicationInfo.fontRatio/1.6) //(wrap.height*7)/384  //768*7/384 = 14
             text: qsTr("Instruction:\n")+
                     qsTr("   Multiplicand x Multiplier\n")+
                     qsTr("                      = Answer\n")+
@@ -254,11 +256,11 @@ ActivityBase {
             id: question
             anchors {
                 left: wrap.left
-                leftMargin: (wrap.height*115)/384  //768*10/384 = 20
+                leftMargin: 230*(ApplicationInfo.ratio/1.476923076923077) //(wrap.height*115)/384  //768*10/384 = 20
                 top: grid.bottom
-                topMargin: (wrap.height*30)/384  //768*10/384 = 20
+                topMargin: 50*(ApplicationInfo.ratio/1.476923076923077) //(wrap.height*30)/384  //768*10/384 = 20
             }
-            fontSize: (wrap.height*16)/384  //768*16/384 = 32
+            fontSize: 32*(ApplicationInfo.fontRatio/1.6) //(wrap.height*16)/384  //768*16/384 = 32
             text: items.rowQues + " X " + items.colQues + " = " + numpad.answer
         }
         }
@@ -298,6 +300,7 @@ ActivityBase {
         maxDigit: 3
         onAnswerChanged: {
             Activity.checkit()
+            //console.log(ApplicationInfo.ratio, "asdf")
         }
     }
 
