@@ -31,12 +31,11 @@ ActivityBase {
     onStop: {}
 
     //TODO 0: some ReferenceErrors while dragging the candies back from rectangles to widget panel
-               //DropChild.qml line 143/122/...
+        //DropChild.qml line 143/122/...
     //TODO 1: when having many many rectangles, they should resize in order to fit the screen
-               //now, if there are more than 5/6/7... they span out of the window
+        //now, if there are more than 5/6/7... they span out of the window
     //TODO 2: have some voices to tell the kids to drag the basket ("rest") and what it means
-    //TODO 3: change the "instruction" text to say something helpful for children eg. "now press ok"
-               //"now drag the basket to the board" etc.
+    //TODO 3: when dragging a candy from left to right, it goes under the right rectangle
 
 
     pageComponent: Rectangle {
@@ -96,10 +95,11 @@ ActivityBase {
                                items.nCandies - background.nCrtCandies : 0
 
         onRestChanged: {
-            //TODO 3 - it changes every time i drop a candy
-            background.resetCandy()
-            instruction.opacity = 1
-            instruction.text = "now drag the basket in the center and place the remaining candies inside it"
+            if (rest > 0) {
+                background.resetCandy()
+                instruction.opacity = 1
+                instruction.text = "now drag the basket in the center and place the remaining candies inside it"
+            }
         }
 
         function contains(x,y,dest,offsetX,offsetY) {
@@ -182,7 +182,7 @@ ActivityBase {
                             bonus.bad("flower")
                     }
                     else
-                            bonus.bad("flower")
+                        bonus.bad("flower")
                 }
 
                 Repeater {
