@@ -46,22 +46,19 @@ Rectangle {
 
         color: "#cfecf0"
 
-        property var c: parent.mapToItem(background,area.x,area.y)
-        property var d: candyWidget.mapToItem(background,candyWidget.element.x,candyWidget.element.y)
+        property var c: parent.parent.mapToItem(background, dropChild.x, dropChild.y)
+        property var d: candyWidget.mapToItem(background, candyWidget.element.x, candyWidget.element.y)
 
-        opacity: d.x > c.x && d.y > c.y &&
-                 d.x<c.x + area.width && d.y < c.y + area.height ? 0.5 : 1
+        opacity: d.x > c.x &&
+                 d.y > c.y + childImg.height &&
+                 d.x < c.x + dropChild.width &&
+                 d.y < c.y + dropChild.height ? 0.5 : 1
 
         MouseArea {
             id: rect1MouseArea
             anchors.fill: parent
 
             onClicked: {
-                //                Debugging
-                //                print("c.x: ",area.c.x )
-                //                print("c.y: ",area.c.y )
-                //                print("d.x: ",area.d.x )
-                //                print("d.y: ",area.d.y )
                 if (items.acceptCandy)
                     if (background.nCrtCandies<items.nCandies) {
                         //add candies in the first rectangle
@@ -74,8 +71,9 @@ Rectangle {
                             background.resetCandy()
                             candyWidget.element.opacity = 0.6
                         }
-                        //check answer
-                        //drop_areas.check()
+                        //show the basket if there is a rest
+                        if (background.rest!=0 && background.basketShown()===false)
+                            items.basketWidget.element.opacity = 1
                     }
                     else {
                         //items.acceptCandy = false

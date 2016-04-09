@@ -60,7 +60,7 @@ Rectangle {
 
                 var offsetX = background.vert ? widget.width : offset * widget.width
                 var offsetY = background.vert ? offset * widget.height : widget.height
-
+                var basketActive = false
                 switch(widget.name) {
 
                 case "candy":
@@ -84,7 +84,16 @@ Rectangle {
                                 background.resetCandy()
                                 candyWidget.element.opacity = 0.6
                             }
+
+                            //find if the basket is already present on the board
+                            if (c.name === "basket" && background.rest != 0) {
+                                basketActive = true
+                            }
                         }
+
+                        //if there is rest and the basket is not yet present on the board, show the basket
+                        if (background.rest!=0 && basketActive === false)
+                            items.basketWidget.element.opacity = 1
                     }
                     else {
                         //items.acceptCandy = false
@@ -98,6 +107,7 @@ Rectangle {
                     if (background.contains(element.x,element.y,grid,offsetX,offsetY)) {
                         if (widget.canDrag) {
                             widget.canDrag = false
+                            widget.element.opacity = 0
                             listModel1.append({countS: 0, nameS: "basket"});
                         }
                     }

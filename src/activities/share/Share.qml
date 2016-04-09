@@ -31,9 +31,9 @@ ActivityBase {
     onStop: {}
 
     //TODO 0: some ReferenceErrors while dragging the candies back from rectangles to widget panel
-        //DropChild.qml line 143/122/...
+    //DropChild.qml line 143/122/...
     //TODO 1: when having many many rectangles, they should resize in order to fit the screen
-        //now, if there are more than 5/6/7... they span out of the window
+    //now, if there are more than 5/6/7... they span out of the window
     //TODO 2: have some voices to tell the kids to drag the basket ("rest") and what it means
 
     pageComponent: Rectangle {
@@ -66,6 +66,7 @@ ActivityBase {
             property alias candyWidget: candyWidget
             property alias basketWidget: basketWidget
             property alias leftWidget: leftWidget
+            property alias repeater_drop_areas: repeater_drop_areas
 
             property int nBoys
             property int nGirls
@@ -93,7 +94,8 @@ ActivityBase {
                                items.nCandies - background.nCrtCandies : 0
 
         onRestChanged: {
-            if (rest > 0) {
+            //show message for rest if the rest is available and not already displayed on the board
+            if (rest > 0 && basketShown() === false) {
                 background.resetCandy()
                 instruction.opacity = 1
                 instruction.text = "now drag the basket in the center and place the remaining candies inside it"
@@ -107,6 +109,15 @@ ActivityBase {
         function resetCandy() {
             items.acceptCandy = false;
             candyWidget.element.rotation = 0
+        }
+
+        function basketShown() {
+            for (var i=0;i<listModel1.count;i++) {
+                if (repeater_drop_areas.itemAt(i).name === "basket" && background.rest != 0) {
+                    return true
+                }
+            }
+            return false
         }
 
         //center zone
@@ -331,7 +342,8 @@ ActivityBase {
                     src: "resource/images/basket.svg"
                     name: "basket"
                     element {
-                        opacity: (background.rest!==0) ? 1 : 0
+                        //                        opacity: (background.rest!==0) ? 1 : 0
+                        opacity: 0
                         Behavior on opacity { PropertyAnimation { duration: 500 } }
                     }
                 }
