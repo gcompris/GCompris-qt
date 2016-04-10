@@ -74,8 +74,8 @@ ActivityBase {
         /////////////////////////////////////////////////////
         Rectangle {
             id: wrap
-            color: "red"
-            opacity: 0.35
+            color: "transparent"
+            opacity: 1
             height: Math.min(background.height , background.width)
             width:  height
             anchors.centerIn: background
