@@ -1,9 +1,9 @@
 /* GCompris - tangram.qml
  *
- * Copyright (C) 2015 Bruno Coudoin <bruno.coudoin@gcompris.net>
+ * Copyright (C) 2016 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * Authors:
- *   Yves Combe /  Philippe Banwarth (GTK+ version)
+ *   Yves Combe / Philippe Banwarth (GTK+ version)
  *   Bruno Coudoin <bruno.coudoin@gcompris.net> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
