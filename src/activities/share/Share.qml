@@ -102,15 +102,19 @@ ActivityBase {
             }
         }
 
-        function contains(x,y,dest,offsetX,offsetY) {
-            return (x+offsetX>dest.x && x<dest.x+dest.width && y+offsetY>dest.y && y<dest.y+dest.height)
+        //returns true if the x and y is in the "dest" area
+        function contains(x,y,dest) {
+            return (x > dest.x && x < dest.x + dest.width &&
+                    y > dest.y && y < dest.y + dest.height)
         }
 
+        //stop the candy rotation
         function resetCandy() {
             items.acceptCandy = false;
             candyWidget.element.rotation = 0
         }
 
+        //searches in the board for the basket; if it exists, returns true
         function basketShown() {
             for (var i=0;i<listModel1.count;i++) {
                 if (repeater_drop_areas.itemAt(i).name === "basket" && background.rest != 0) {
@@ -120,13 +124,46 @@ ActivityBase {
             return false
         }
 
+        //check if the answer is correct
+        function check() {
+            var ok = 0
+            var rest = items.nCandies - Math.floor(items.nCandies/items.nChildren) * items.nChildren
+            var ok2 = 0
+
+            if (listModel1.count >= items.nChildren) {
+                for (var i=0;i<listModel1.count;i++) {
+                    if (listModel1.get(i).countS===Math.floor(items.nCandies/items.nChildren))
+                        ok++
+                    if (listModel1.get(i).nameS==="basket")
+                        ok2 = listModel1.get(i).countS
+                }
+
+                //condition without rest
+                if (rest==0 && ok==items.nChildren)
+                    bonus.good("flower")
+                //condition with rest
+                else if (rest==ok2 && ok==items.nChildren)
+                    bonus.good("flower")
+                else
+                    bonus.bad("flower")
+            }
+            else
+                bonus.bad("flower")
+        }
+
         //center zone
         Rectangle {
             id: grid
 
-            color: background.contains(boyWidget.element.x,boyWidget.element.y,grid,grid.offsetX,grid.offsetY) ||
-                   background.contains(girlWidget.element.x,girlWidget.element.y,grid,grid.offsetX,grid.offsetY) ||
-                   background.contains(basketWidget.element.x,basketWidget.element.y,grid,grid.offsetX2,grid.offsetY2) ? "pink" : "transparent"
+            //map the coordinates from widgets to grid
+            property var boy: leftWidget.mapFromItem(boyWidget,boyWidget.element.x,boyWidget.element.y)
+            property var girl: leftWidget.mapFromItem(girlWidget,girlWidget.element.x,girlWidget.element.y)
+            property var basket: leftWidget.mapFromItem(basketWidget,basketWidget.element.x,basketWidget.element.y)
+
+            //show that the widget can be dropped here
+            color: background.contains(boy.x,boy.y,grid) ||
+                   background.contains(girl.x,girl.y,grid) ||
+                   background.contains(basket.x,basket.y,grid) ? "pink" : "transparent"
 
             anchors {
                 top: background.vert ? parent.top : leftWidget.bottom
@@ -142,13 +179,6 @@ ActivityBase {
                         background.vert ?
                             background.height - (bar.height * 1.1) :
                             background.height - (bar.height * 1.1) - leftWidget.height
-
-            //offset variables (used because of the positioning of the boy, girl, candy and basket in the left panel)
-            property var offsetX: background.vert ? boyWidget.width : 4 * boyWidget.width
-            property var offsetY: background.vert ? 4 * boyWidget.height : boyWidget.height
-
-            property var offsetX2: background.vert ? boyWidget.width : 6 * boyWidget.width
-            property var offsetY2: background.vert ? 6 * boyWidget.height : boyWidget.height
 
             //shows/hides the Instruction
             MouseArea {
@@ -167,32 +197,6 @@ ActivityBase {
 
                 width: parent.width
                 height: parent.height
-
-                function check() {
-                    var ok = 0
-                    var rest = items.nCandies - Math.floor(items.nCandies/items.nChildren) * items.nChildren
-                    var ok2 = 0
-
-                    if (listModel1.count >= items.nChildren) {
-                        for (var i=0;i<listModel1.count;i++) {
-                            if (listModel1.get(i).countS===Math.floor(items.nCandies/items.nChildren))
-                                ok++
-                            if (listModel1.get(i).nameS==="basket")
-                                ok2 = listModel1.get(i).countS
-                        }
-
-                        //condition without rest
-                        if (rest==0 && ok==items.nChildren)
-                            bonus.good("flower")
-                        //condition with rest
-                        else if (rest==ok2 && ok==items.nChildren)
-                            bonus.good("flower")
-                        else
-                            bonus.bad("flower")
-                    }
-                    else
-                        bonus.bad("flower")
-                }
 
                 Repeater {
                     id: repeater_drop_areas
@@ -242,7 +246,7 @@ ActivityBase {
             }
             opacity: instruction.opacity
             z: instruction.z
-            fontSize: regularSize
+            fontSize: background.vert ? regularSize : smallSize
             color: "white"
             style: Text.Outline
             styleColor: "black"
@@ -288,7 +292,7 @@ ActivityBase {
                         anchors.fill: parent
                         onPressed: ok.opacity = 0.6
                         onReleased: ok.opacity = 1
-                        onClicked: drop_areas.check()
+                        onClicked: background.check()
                     }
                 }
 

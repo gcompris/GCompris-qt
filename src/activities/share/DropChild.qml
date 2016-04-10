@@ -46,7 +46,7 @@ Rectangle {
 
         color: "#cfecf0"
 
-        property var c: parent.parent.mapToItem(background, dropChild.x, dropChild.y)
+        property var c: repeater_drop_areas.mapToItem(background, dropChild.x, dropChild.y)
         property var d: candyWidget.mapToItem(background, candyWidget.element.x, candyWidget.element.y)
 
         opacity: d.x > c.x &&

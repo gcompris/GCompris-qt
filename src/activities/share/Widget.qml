@@ -52,17 +52,11 @@ Rectangle {
             }
 
             onReleased:  {
-                // idea of implementation -> mapFromItem
-                //var compas = mapFromItem(grid,girl.x,girl.y)
-                //if (girl.x>compas.x && girl.x<compas.x+grid.width && girl.y>compas.y && girl.y<compas.y+grid.height) {
 
-                var offset = (widget.name == "basket") ? 6 : 4
-
-                var offsetX = background.vert ? widget.width : offset * widget.width
-                var offsetY = background.vert ? offset * widget.height : widget.height
+                var newCoord = widget.mapToItem(background,element.x,element.y)
                 var basketActive = false
-                switch(widget.name) {
 
+                switch(widget.name) {
                 case "candy":
                     if (background.nCrtCandies<items.nCandies) {
                         items.acceptCandy = true
@@ -104,7 +98,7 @@ Rectangle {
                     break;
 
                 case "basket":
-                    if (background.contains(element.x,element.y,grid,offsetX,offsetY)) {
+                    if (background.contains(newCoord.x,newCoord.y,grid)) {
                         if (widget.canDrag) {
                             widget.canDrag = false
                             widget.element.opacity = 0
@@ -115,7 +109,7 @@ Rectangle {
 
                 //default is for "boy" and "girl"
                 default:
-                    if (background.contains(element.x,element.y,grid,offsetX,offsetY)) {
+                    if (background.contains(newCoord.x,newCoord.y,grid)) {
                         if (widget.nCrt<widget.n) {
                             if (widget.canDrag) {
                                 widget.nCrt ++
