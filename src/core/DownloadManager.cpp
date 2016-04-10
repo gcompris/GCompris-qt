@@ -36,16 +36,43 @@
 const QString DownloadManager::contentsFilename = QString("Contents");
 DownloadManager* DownloadManager::_instance = 0;
 
+void copyPath(QString src, QString dst)
+{
+    QDir dir(src);
+    if (!dir.exists())
+        return;
+
+    Q_FOREACH(const QString &d, dir.entryList(QDir::Dirs | QDir::NoDotAndDotDot)) {
+        QString dst_path = dst + QDir::separator() + d;
+        dir.mkpath(dst_path);
+        copyPath(src+ QDir::separator() + d, dst_path);
+    }
+
+    Q_FOREACH(const QString &f, dir.entryList(QDir::Files)) {
+        qDebug() << "Copying " << src + QDir::separator() + f << " to " << dst + QDir::separator() + f;
+        QFile::copy(src + QDir::separator() + f, dst + QDir::separator() + f);
+    }
+}
+
 /* Public interface: */
 
 DownloadManager::DownloadManager()
   : accessManager(this), serverUrl(ApplicationSettings::getInstance()->downloadServerUrl())
 {
     // Cleanup of previous data directory no more used
-    QDir previousDataLocation = QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/data";
-    if(previousDataLocation.exists()) {
-        qDebug() << "Remove previous directory data: " << previousDataLocation;
-        previousDataLocation.removeRecursively();
+    QList<QDir> previousDataLocations = QList<QDir>() <<
+        QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/data" <<
+        QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/data2";
+
+    Q_FOREACH( QDir prevDir, previousDataLocations ) {
+        if(prevDir.exists()) {
+            if(prevDir.dirName() == "data2") {
+                qDebug() << "Data changed place, move from previous folder to the new one";
+                copyPath(prevDir.absolutePath(), getSystemDownloadPath() + "/data2");
+            }
+            qDebug() << "Remove previous directory data: " << prevDir.absolutePath();
+            prevDir.removeRecursively();
+        }
     }
 }
 
