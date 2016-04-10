@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2016 Bruno Coudoin <bruno.coudoin@gcompris.net>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,8 +21,8 @@ ActivityInfo {
   name: "tangram/Tangram.qml"
   difficulty: 3
   icon: "tangram/tangram.svg"
-  author: "Yves Combe /  Philippe Banwarth"
-  demo: true
+  author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
+  demo: false
   title: qsTr("The tangram puzzle game")
   description: qsTr("The objective is to form a given shape")
   goal: qsTr("From Wikipedia, the free encyclopedia. Tangram (Chinese: literally 'seven boards of cunning') is a Chinese puzzle. While the tangram is often said to be ancient, its existence has only been verified as far back as 1800. It consists of 7 pieces, called tans, which fit together to form a square; taking the square as the unit:
@@ -35,6 +35,6 @@ ActivityInfo {
   prerequisite: qsTr("Mouse-manipulation")
   manual: qsTr("Select the tangram to form. Move a piece by dragging it. The symmetrical button appears on items that supports it. Click on the rotation button or drag around it to show the rotation you want. At first levels, simpler objects are used to introduce the tangram concept.")
   credit: qsTr("The original code was written by Philippe Banwarth in 1999. It was ported to GCompris by Yves Combe in 2005.")
-  section: "/puzzle"
+  section: "puzzle"
   createdInVersion: 6000
 }
