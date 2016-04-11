@@ -28,7 +28,7 @@ ActivityInfo {
   //intro: "put here in comment the text for the intro voice"
   goal: qsTr("To multiply the given operands, select them on the board and state the answer")
 
-  prerequisite: qsTr("Simple Intro to multipliciation (not a necessity)")
+  prerequisite: qsTr("Simple Intro to multiplication (not a necessity)")
 
   manual: qsTr(" Multiplicand x Multiplier = Answer\n")+
           qsTr("    1) Select the Column\n")+

@@ -58,8 +58,10 @@ ActivityBase {
             property alias repeater: repeater
             /*variables*/
             property int spacing: 5
+            /*
             property int rectHeight: wrap.height/25
             property int rectWidth: wrap.height/25
+            */
             property int rowSelected: 0
             property int colSelected: 0
             property int rowQues: 0
@@ -79,6 +81,8 @@ ActivityBase {
             height: Math.min(background.height , background.width)
             width:  height
             anchors.centerIn: background
+            property int rectHeight: wrap.height/25
+            property int rectWidth: wrap.height/25
 
         Grid {
             id:gridRow
@@ -97,8 +101,8 @@ ActivityBase {
                 Rectangle {
                    id: dotsGridRow
                    color: "white"
-                   width: items.rectWidth
-                   height: items.rectHeight
+                   width: wrap.rectWidth
+                   height: wrap.rectHeight
                    property bool clickedFlagRow: false
                    state: "default"
                    states:[
@@ -159,8 +163,8 @@ ActivityBase {
                 Rectangle {
                    id: dotsGridCol
                    color: "white"
-                   width: items.rectWidth
-                   height: items.rectHeight
+                   width: wrap.rectWidth
+                   height: wrap.rectHeight
                    property bool clickedFlagCol: false
                    state: "default"
                    states:[
@@ -221,8 +225,8 @@ ActivityBase {
                 model: 100
                 Rectangle {
                     id: dots
-                    width: items.rectWidth
-                    height: items.rectHeight
+                    width: wrap.rectWidth
+                    height: wrap.rectHeight
                     color: "green"
 
                     GCText {
