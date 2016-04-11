@@ -58,10 +58,6 @@ ActivityBase {
             property alias repeater: repeater
             /*variables*/
             property int spacing: 5
-            /*
-            property int rectHeight: wrap.height/25
-            property int rectWidth: wrap.height/25
-            */
             property int rowSelected: 0
             property int colSelected: 0
             property int rowQues: 0
@@ -84,189 +80,188 @@ ActivityBase {
             property int rectHeight: wrap.height/25
             property int rectWidth: wrap.height/25
 
-        Grid {
-            id:gridRow
-            anchors {
-                top: parent.top
-                topMargin: 20*(ApplicationInfo.ratio/1.476923076923077) //(wrap.height*5)/192     // 768*5/192 = 20
-                left: parent.left
-                leftMargin: 20*(ApplicationInfo.ratio/1.476923076923077) //(wrap.width*15)/683  // 1366*15/683 = 150
-            }
-            spacing: items.spacing
-            columns: 11
-            rows: 1
-            Repeater {
-                id: repeaterGridRow
-                model: 11
-                Rectangle {
-                   id: dotsGridRow
-                   color: "white"
-                   width: wrap.rectWidth
-                   height: wrap.rectHeight
-                   property bool clickedFlagRow: false
-                   state: "default"
-                   states:[
-                       State {
-                           name: "default"
-                           PropertyChanges { target: dotsGridRow; color: "white"}
-                           PropertyChanges { target: dotsGridRow; clickedFlagRow: false}
-                       },
-                       State {
-                           name: "active"
-                           PropertyChanges { target: dotsGridRow; color: "red"}
-                           PropertyChanges { target: dotsGridRow; clickedFlagRow: false}
-                       }
-                   ]
-
-                   GCText{
-                       text: index
-                       anchors.centerIn: parent
-                       fontSize: 12*(ApplicationInfo.fontRatio/1.6) //(wrap.height*6)/384  //768*6/384 = 12
-                       //fontSizeMode: Text.Fit//; minimumPixelSize: 1
-                   }
-
-                   MouseArea {
-                       anchors.fill: parent
-                       onClicked: {
-                           if (dotsGridRow.state == "default") {
-                               dotsGridRow.state = "active"
-                               items.rowSelected = index
-                           }
-                           else {
-                               dotsGridRow.state = "default"
-                               items.rowSelected = 0
-                           }
-                           Activity.makeOtherColInRowWhite()
-                           Activity.changesInMainBoard()
-                           Activity.checkit()
-                       }
-                   }
+            Grid {
+                id:gridRow
+                anchors {
+                    top: parent.top
+                    topMargin: 14*ApplicationInfo.ratio //(wrap.height*5)/192     // 768*5/192 = 20
+                    left: parent.left
+                    leftMargin: 14*ApplicationInfo.ratio //(wrap.width*15)/683  // 1366*15/683 = 150
                 }
-
-            }
-        }
-
-        Grid {
-            id:gridCol
-            anchors {
-                top: parent.top
-                topMargin:  20*(ApplicationInfo.ratio/1.476923076923077) //(wrap.height*5)/192    // 768*5/192 = 20
-                left: parent.left
-                leftMargin: 20*(ApplicationInfo.ratio/1.476923076923077) //(wrap.width*15)/683  // 1366*15/683 = 150
-            }
-            spacing: items.spacing
-            columns: 1
-            rows: 11
-            Repeater {
-                id: repeaterGridCol
-                model: 11
-                Rectangle {
-                   id: dotsGridCol
-                   color: "white"
-                   width: wrap.rectWidth
-                   height: wrap.rectHeight
-                   property bool clickedFlagCol: false
-                   state: "default"
-                   states:[
-                       State {
-                           name: "default"
-                           PropertyChanges { target: dotsGridCol; color: "white"}
-                           PropertyChanges { target: dotsGridCol; clickedFlagCol: false}
-                       },
-                       State {
-                           name: "active"
-                           PropertyChanges { target: dotsGridCol; color: "red"}
-                           PropertyChanges { target: dotsGridCol; clickedFlagCol: false}
-                       }
-                   ]
-
-                   GCText {
-                       text: index
-                       anchors.centerIn: parent
-                       fontSize: 12*(ApplicationInfo.fontRatio/1.6) //(wrap.height*6)/384  //768*6/384 = 12
-                   }
-
-                   MouseArea {
-                       anchors.fill: parent
-                       onClicked: {
-                           if (dotsGridCol.state == "default") {
-                               dotsGridCol.state = "active"
-                               items.colSelected = index
+                spacing: items.spacing
+                columns: 11
+                rows: 1
+                Repeater {
+                    id: repeaterGridRow
+                    model: 11
+                    Rectangle {
+                       id: dotsGridRow
+                       color: "white"
+                       width: wrap.rectWidth
+                       height: wrap.rectHeight
+                       property bool clickedFlagRow: false
+                       state: "default"
+                       states:[
+                           State {
+                               name: "default"
+                               PropertyChanges { target: dotsGridRow; color: "white"}
+                               PropertyChanges { target: dotsGridRow; clickedFlagRow: false}
+                           },
+                           State {
+                               name: "active"
+                               PropertyChanges { target: dotsGridRow; color: "red"}
+                               PropertyChanges { target: dotsGridRow; clickedFlagRow: false}
                            }
-                           else {
-                               dotsGridCol.state = "default"
-                               items.colSelected = 0
-                           }
-                           Activity.makeOtherRowInColWhite()
-                           Activity.changesInMainBoard()
-                           Activity.checkit()
+                       ]
+
+                       GCText{
+                           text: index
+                           anchors.centerIn: parent
+                           fontSize: 8*ApplicationInfo.fontRatio //(wrap.height*6)/384  //768*6/384 = 12
                        }
-                   }
-                }
-            }
 
-        }
-
-        Grid {
-            id: grid
-            anchors {
-                top: gridRow.bottom
-                topMargin: items.spacing
-                left: gridCol.right
-                leftMargin: items.spacing
-            }
-
-            spacing: items.spacing
-            columns: 10
-            rows: 10
-
-            Repeater {
-                id: repeater
-                model: 100
-                Rectangle {
-                    id: dots
-                    width: wrap.rectWidth
-                    height: wrap.rectHeight
-                    color: "green"
-
-                    GCText {
-                        text: (Math.floor(index/10) + 1) * (index%10 + 1)
-                        anchors.centerIn: parent
-                        fontSize: 12*(ApplicationInfo.fontRatio/1.6) //(wrap.height*6)/384  //768*6/384 = 12
+                       MouseArea {
+                           anchors.fill: parent
+                           onClicked: {
+                               if (dotsGridRow.state == "default") {
+                                   dotsGridRow.state = "active"
+                                   items.rowSelected = index
+                               }
+                               else {
+                                   dotsGridRow.state = "default"
+                                   items.rowSelected = 0
+                               }
+                               Activity.makeOtherColInRowWhite()
+                               Activity.changesInMainBoard()
+                               Activity.checkit()
+                           }
+                       }
                     }
 
                 }
             }
-        }
 
-        GCText{
-            id: instruction
-            anchors {
-                top: parent.top
-                topMargin: (wrap.height/4 - instruction.height/3)
-                left: grid.right
-                leftMargin: 20*(ApplicationInfo.ratio/1.476923076923077) //(wrap.width*17)/683 // 1366*17/683 = 34
-            }
-            fontSize: 14*(ApplicationInfo.fontRatio/1.6) //(wrap.height*7)/384  //768*7/384 = 14
-            text: qsTr("Instruction:\n")+
-                    qsTr("   Multiplicand x Multiplier\n")+
-                    qsTr("                      = Answer\n")+
-                    qsTr("       1) Select the Column\n")+
-                    qsTr("       2) Select the Row\n")+
-                    qsTr("       3) State the answer\n")
-        }
+            Grid {
+                id:gridCol
+                anchors {
+                    top: parent.top
+                    topMargin:  14*ApplicationInfo.ratio //(wrap.height*5)/192    // 768*5/192 = 20
+                    left: parent.left
+                    leftMargin: 14*ApplicationInfo.ratio //(wrap.width*15)/683  // 1366*15/683 = 150
+                }
+                spacing: items.spacing
+                columns: 1
+                rows: 11
+                Repeater {
+                    id: repeaterGridCol
+                    model: 11
+                    Rectangle {
+                       id: dotsGridCol
+                       color: "white"
+                       width: wrap.rectWidth
+                       height: wrap.rectHeight
+                       property bool clickedFlagCol: false
+                       state: "default"
+                       states:[
+                           State {
+                               name: "default"
+                               PropertyChanges { target: dotsGridCol; color: "white"}
+                               PropertyChanges { target: dotsGridCol; clickedFlagCol: false}
+                           },
+                           State {
+                               name: "active"
+                               PropertyChanges { target: dotsGridCol; color: "red"}
+                               PropertyChanges { target: dotsGridCol; clickedFlagCol: false}
+                           }
+                       ]
 
-        GCText {
-            id: question
-            anchors {
-                left: wrap.left
-                leftMargin: 230*(ApplicationInfo.ratio/1.476923076923077) //(wrap.height*115)/384  //768*10/384 = 20
-                top: grid.bottom
-                topMargin: 50*(ApplicationInfo.ratio/1.476923076923077) //(wrap.height*30)/384  //768*10/384 = 20
+                       GCText {
+                           text: index
+                           anchors.centerIn: parent
+                           fontSize: 8*ApplicationInfo.fontRatio //(wrap.height*6)/384  //768*6/384 = 12
+                       }
+
+                       MouseArea {
+                           anchors.fill: parent
+                           onClicked: {
+                               if (dotsGridCol.state == "default") {
+                                   dotsGridCol.state = "active"
+                                   items.colSelected = index
+                               }
+                               else {
+                                   dotsGridCol.state = "default"
+                                   items.colSelected = 0
+                               }
+                               Activity.makeOtherRowInColWhite()
+                               Activity.changesInMainBoard()
+                               Activity.checkit()
+                           }
+                       }
+                    }
+                }
+
             }
-            fontSize: 32*(ApplicationInfo.fontRatio/1.6) //(wrap.height*16)/384  //768*16/384 = 32
-            text: items.rowQues + " X " + items.colQues + " = " + numpad.answer
-        }
+
+            Grid {
+                id: grid
+                anchors {
+                    top: gridRow.bottom
+                    topMargin: items.spacing
+                    left: gridCol.right
+                    leftMargin: items.spacing
+                }
+
+                spacing: items.spacing
+                columns: 10
+                rows: 10
+
+                Repeater {
+                    id: repeater
+                    model: 100
+                    Rectangle {
+                        id: dots
+                        width: wrap.rectWidth
+                        height: wrap.rectHeight
+                        color: "green"
+
+                        GCText {
+                            text: (Math.floor(index/10) + 1) * (index%10 + 1)
+                            anchors.centerIn: parent
+                            fontSize: 8*ApplicationInfo.fontRatio //(wrap.height*6)/384  //768*6/384 = 12
+                        }
+
+                    }
+                }
+            }
+
+            GCText{
+                id: instruction
+                anchors {
+                    top: parent.top
+                    topMargin: (wrap.height/4 - instruction.height/3)
+                    left: grid.right
+                    leftMargin: 14*ApplicationInfo.ratio //(wrap.width*17)/683 // 1366*17/683 = 34
+                }
+                fontSize: 9*ApplicationInfo.fontRatio //(wrap.height*7)/384  //768*7/384 = 14
+                text: qsTr("Instruction:\n")+
+                        qsTr("   Multiplicand x Multiplier\n")+
+                        qsTr("                      = Answer\n")+
+                        qsTr("       1) Select the Column\n")+
+                        qsTr("       2) Select the Row\n")+
+                        qsTr("       3) State the answer\n")
+            }
+
+            GCText {
+                id: question
+                anchors {
+                    left: wrap.left
+                    leftMargin: 156*ApplicationInfo.ratio //(wrap.height*115)/384  //768*10/384 = 20
+                    top: grid.bottom
+                    topMargin: 39*ApplicationInfo.ratio //(wrap.height*30)/384  //768*10/384 = 20
+                }
+                fontSize: 20*ApplicationInfo.fontRatio //(wrap.height*16)/384  //768*16/384 = 32
+                text: items.rowQues + " X " + items.colQues + " = " + numpad.answer
+            }
         }
 
         //////////////////////////////////////////////////////////////////////////////////////////////
@@ -304,7 +299,6 @@ ActivityBase {
         maxDigit: 3
         onAnswerChanged: {
             Activity.checkit()
-            //console.log(ApplicationInfo.ratio, "asdf")
         }
     }
 
