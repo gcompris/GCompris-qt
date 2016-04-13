@@ -18,11 +18,12 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
+
 .pragma library
 .import QtQuick 2.0 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 4
+var numberOfLevel = 3
 var items
 
 function start(items_) {
@@ -46,34 +47,37 @@ function initLevel() {
 function setUp() {
     var levelData = items.dataset.item
 
+    items.nBoys = levelData.levels[items.currentSubLevel].nBoys
+    items.nGirls = levelData.levels[items.currentSubLevel].nGirls
+    items.nCandies = levelData.levels[items.currentSubLevel].nCandies
+
     items.background.nCrtCandies = 0
     items.background.nCrtGirls = 0
     items.background.nCrtBoys = 0
+    items.background.resetCandy()
+
     items.acceptCandy = false
 
     items.instruction.text = levelData.levels[items.currentSubLevel].instruction
     items.instruction.opacity = 1
 
-    items.nBoys = levelData.levels[items.currentSubLevel].nBoys
-    items.nGirls = levelData.levels[items.currentSubLevel].nGirls
-    items.nCandies = levelData.levels[items.currentSubLevel].nCandies
     items.nbSubLevel = levelData.levels.length
-
-    items.background.resetCandy()
 
     items.listModel1.clear()
 
     items.girlWidget.nCrt = 0
-    items.boyWidget.nCrt = 0
-
     items.girlWidget.canDrag = true
-    items.boyWidget.canDrag = true
-    items.candyWidget.canDrag = true
-    items.basketWidget.canDrag = true
-
     items.girlWidget.element.opacity = 1
+
+    items.boyWidget.nCrt = 0
+    items.boyWidget.canDrag = true
     items.boyWidget.element.opacity = 1
+
+    items.candyWidget.canDrag = true
     items.candyWidget.element.opacity = 1
+
+    items.basketWidget.canDrag = true
+    items.basketWidget.element.opacity = 0
 }
 
 function nextSubLevel() {

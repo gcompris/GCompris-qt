@@ -18,6 +18,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
+
 import QtQuick 2.1
 import GCompris 1.0
 
@@ -31,9 +32,9 @@ ActivityBase {
     onStop: {}
 
     //TODO 0: some ReferenceErrors while dragging the candies back from rectangles to widget panel
-    //DropChild.qml line 143/122/...
+      //DropChild.qml line 139/161/...
     //TODO 1: when having many many rectangles, they should resize in order to fit the screen
-    //now, if there are more than 5/6/7... they span out of the window
+      //now, if there are more than 5/6/7... they span out of the window
     //TODO 2: have some voices to tell the kids to drag the basket ("rest") and what it means
 
     pageComponent: Rectangle {
@@ -66,16 +67,12 @@ ActivityBase {
             property alias candyWidget: candyWidget
             property alias basketWidget: basketWidget
             property alias leftWidget: leftWidget
-            property alias repeater_drop_areas: repeater_drop_areas
-
             property int nBoys
             property int nGirls
             property int nCandies
             property int nChildren: nBoys + nGirls
-
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
             property int cellSize: Math.min(background.width / 11 , background.height / (9 + barHeightAddon))
-
         }
 
         Loader {
@@ -90,8 +87,10 @@ ActivityBase {
         property int nCrtBoys: 0
         property int nCrtGirls: 0
         property int nCrtCandies: 0
-        property int rest: (items.nCandies - background.nCrtCandies == (items.nCandies-Math.floor(items.nCandies/items.nChildren) * items.nChildren)) ?
-                               items.nCandies - background.nCrtCandies : 0
+        property int rest: (items.nCandies - items.background.nCrtCandies ==
+                            (items.nCandies - Math.floor(items.nCandies / items.nChildren) * items.nChildren)) ?
+                               items.nCandies - items.background.nCrtCandies : 0
+
 
         onRestChanged: {
             //show message for rest if the rest is available and not already displayed on the board
@@ -116,7 +115,7 @@ ActivityBase {
 
         //searches in the board for the basket; if it exists, returns true
         function basketShown() {
-            for (var i=0;i<listModel1.count;i++) {
+            for (var i=0; i<listModel1.count; i++) {
                 if (repeater_drop_areas.itemAt(i).name === "basket" && background.rest != 0) {
                     return true
                 }
@@ -127,28 +126,31 @@ ActivityBase {
         //check if the answer is correct
         function check() {
             var ok = 0
+            var okRest = 0
             var rest = items.nCandies - Math.floor(items.nCandies/items.nChildren) * items.nChildren
-            var ok2 = 0
 
             if (listModel1.count >= items.nChildren) {
-                for (var i=0;i<listModel1.count;i++) {
-                    if (listModel1.get(i).countS===Math.floor(items.nCandies/items.nChildren))
+                for (var i=0; i<listModel1.count; i++)
+                    if (listModel1.get(i).nameS === "basket")
+                        okRest = listModel1.get(i).countS
+                    else if (listModel1.get(i).countS === Math.floor(items.nCandies/items.nChildren))
                         ok++
-                    if (listModel1.get(i).nameS==="basket")
-                        ok2 = listModel1.get(i).countS
-                }
 
                 //condition without rest
-                if (rest==0 && ok==items.nChildren)
+                if (rest == 0 && ok == items.nChildren) {
                     bonus.good("flower")
+                    return
+                }
+
                 //condition with rest
-                else if (rest==ok2 && ok==items.nChildren)
-                    bonus.good("flower")
-                else
-                    bonus.bad("flower")
+                else if (rest == okRest && ok == items.nChildren) {
+                    bonus.good("tux")
+                    return
+                }
             }
-            else
-                bonus.bad("flower")
+
+            //else => bad
+            bonus.bad("flower")
         }
 
         //center zone
@@ -156,14 +158,14 @@ ActivityBase {
             id: grid
 
             //map the coordinates from widgets to grid
-            property var boy: leftWidget.mapFromItem(boyWidget,boyWidget.element.x,boyWidget.element.y)
-            property var girl: leftWidget.mapFromItem(girlWidget,girlWidget.element.x,girlWidget.element.y)
-            property var basket: leftWidget.mapFromItem(basketWidget,basketWidget.element.x,basketWidget.element.y)
+            property var boy: leftWidget.mapFromItem(boyWidget, boyWidget.element.x, boyWidget.element.y)
+            property var girl: leftWidget.mapFromItem(girlWidget, girlWidget.element.x, girlWidget.element.y)
+            property var basket: leftWidget.mapFromItem(basketWidget, basketWidget.element.x, basketWidget.element.y)
 
             //show that the widget can be dropped here
-            color: background.contains(boy.x,boy.y,grid) ||
-                   background.contains(girl.x,girl.y,grid) ||
-                   background.contains(basket.x,basket.y,grid) ? "pink" : "transparent"
+            color: background.contains(boy.x, boy.y, grid) ||
+                   background.contains(girl.x, girl.y, grid) ||
+                   background.contains(basket.x, basket.y, grid) ? "pink" : "transparent"
 
             anchors {
                 top: background.vert ? parent.top : leftWidget.bottom
@@ -175,8 +177,7 @@ ActivityBase {
             width: background.vert ?
                        background.width - leftWidget.width - 40 : background.width - 40
             height: ApplicationSettings.isBarHidden ?
-                        background.height :
-                        background.vert ?
+                        background.height : background.vert ?
                             background.height - (bar.height * 1.1) :
                             background.height - (bar.height * 1.1) - leftWidget.height
 
@@ -204,12 +205,14 @@ ActivityBase {
 
                     DropChild {
                         id: rect2
+                        //"nameS" from listModel1
                         name: nameS
                     }
                 }
             }
         }
 
+        //instruction rectangle
         Rectangle {
             id: instruction
             anchors.fill: instructionTxt
@@ -237,6 +240,7 @@ ActivityBase {
             }
         }
 
+        //instruction for playing the game
         GCText {
             id: instructionTxt
             anchors {
@@ -255,15 +259,13 @@ ActivityBase {
             wrapMode: TextEdit.WordWrap
         }
 
-        //left side, with the images
+        //left widget, with girl/boy/candy/basket widgets in a grid
         Rectangle {
             id: leftWidget
             width: background.vert ?
-                       items.cellSize * 1.74 :
-                       background.width
+                       items.cellSize * 1.74 : background.width
             height: background.vert ?
-                        background.height :
-                        items.cellSize * 1.74
+                        background.height : items.cellSize * 1.74
             color: "#FFFF42"
             border.color: "#FFD85F"
             border.width: 4
@@ -276,13 +278,12 @@ ActivityBase {
 
                 width: background.vert ? leftWidget.width : 3 * bar.height
                 height: background.vert ? background.height - 2 * bar.height : bar.height
-
                 spacing: 10
-
                 columns: background.vert ? 1 : 5
 
+                //ok button
                 Image {
-                    id: ok
+                    id: okButton
                     source:"qrc:/gcompris/src/core/resource/bar_ok.svg"
                     sourceSize.width: items.cellSize * 1.5
                     fillMode: Image.PreserveAspectFit
@@ -290,8 +291,8 @@ ActivityBase {
                     MouseArea {
                         id: mouseArea
                         anchors.fill: parent
-                        onPressed: ok.opacity = 0.6
-                        onReleased: ok.opacity = 1
+                        onPressed: okButton.opacity = 0.6
+                        onReleased: okButton.opacity = 1
                         onClicked: background.check()
                     }
                 }
@@ -319,6 +320,7 @@ ActivityBase {
                     n: items.nCandies
                     nCrt: background.nCrtCandies
 
+                    //swing animation for candies
                     SequentialAnimation {
                         id: anim
                         running: items.acceptCandy ? true : false
@@ -346,7 +348,6 @@ ActivityBase {
                     src: "resource/images/basket.svg"
                     name: "basket"
                     element {
-                        //                        opacity: (background.rest!==0) ? 1 : 0
                         opacity: 0
                         Behavior on opacity { PropertyAnimation { duration: 500 } }
                     }

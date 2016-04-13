@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2016 Stefan Toncu <stefan.toncu@cti.pub.ro>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,16 +19,16 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "share/Share.qml"
-  difficulty: 1
+  difficulty: 2
   icon: "share/share.svg"
-  author: "Stefan Toncu &lt;yy@zz.org&gt;"
+  author: "Stefan Toncu &lt;stefan.toncu@cti.pub.ro&gt;"
   demo: true
-  title: "Share the candies"
-  description: ""
+  title: qsTr("Share the candies")
+  description: qsTr("Try to split the candies to a given number of children")
   //intro: "put here in comment the text for the intro voice"
-  goal: ""
-  prerequisite: ""
-  manual: ""
+  goal: qsTr("Learn the division of numbers")
+  prerequisite: qsTr("Know how to count")
+  manual: qsTr("Follow the instructions shown on the screen: first, drag the given number of boys/girls to the middle, then drag candies to each child's rectangle.")
   credit: ""
-  section: "fun"
+  section: "math"
 }

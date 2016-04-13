@@ -1,14 +1,33 @@
+/* GCompris - DropChild.qml
+ *
+ * Copyright (C) 2016 Stefan Toncu <stefan.toncu@cti.pub.ro>
+ *
+ * Authors:
+ *   Stefan Toncu <stefan.toncu@cti.pub.ro> (Qt Quick version)
+ *
+ *   This program is free software; you can redistribute it and/or modify
+ *   it under the terms of the GNU General Public License as published by
+ *   the Free Software Foundation; either version 3 of the License, or
+ *   (at your option) any later version.
+ *
+ *   This program is distributed in the hope that it will be useful,
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *   GNU General Public License for more details.
+ *
+ *   You should have received a copy of the GNU General Public License
+ *   along with this program; if not, see <http://www.gnu.org/licenses/>.
+ */
+
 import QtQuick 2.1
 import GCompris 1.0
 
 import "../../core"
 
-
-//drop area rectangle
 Rectangle {
     id: dropChild
     width: items.cellSize * 3
-    height: items.cellSize * 3 + items.cellSize * 1.5
+    height: items.cellSize * 4.5
     color: "transparent"
     z: 5
 
@@ -46,13 +65,13 @@ Rectangle {
 
         color: "#cfecf0"
 
-        property var c: repeater_drop_areas.mapToItem(background, dropChild.x, dropChild.y)
-        property var d: candyWidget.mapToItem(background, candyWidget.element.x, candyWidget.element.y)
+        property var dropCh: repeater_drop_areas.mapToItem(background, dropChild.x, dropChild.y)
+        property var candyCoord: candyWidget.mapToItem(background, candyWidget.element.x, candyWidget.element.y)
 
-        opacity: d.x > c.x &&
-                 d.y > c.y + childImg.height &&
-                 d.x < c.x + dropChild.width &&
-                 d.y < c.y + dropChild.height ? 0.5 : 1
+        opacity: candyCoord.x > dropCh.x &&
+                 candyCoord.y > dropCh.y + childImg.height &&
+                 candyCoord.x < dropCh.x + dropChild.width &&
+                 candyCoord.y < dropCh.y + dropChild.height ? 0.5 : 1
 
         MouseArea {
             id: rect1MouseArea
@@ -66,17 +85,15 @@ Rectangle {
                         //the curent number of candies increases
                         background.nCrtCandies ++
                         //on the last one, the candy image from top goes away (destroy)
-                        if (background.nCrtCandies==items.nCandies) {
-                            //items.acceptCandy = false
+                        if (background.nCrtCandies == items.nCandies) {
                             background.resetCandy()
                             candyWidget.element.opacity = 0.6
                         }
                         //show the basket if there is a rest
-                        if (background.rest!=0 && background.basketShown()===false)
+                        if (background.rest!=0 && background.basketShown() === false)
                             items.basketWidget.element.opacity = 1
                     }
                     else {
-                        //items.acceptCandy = false
                         background.resetCandy()
                         candyWidget.element.opacity = 0.6
                     }
@@ -120,29 +137,34 @@ Rectangle {
                         onReleased:  {
                             dropChild.z--
                             for (var i=0;i<listModel1.count;i++) {
-                                var c = repeater_drop_areas.itemAt(i)     //DropChild type
-                                var e = drop_areas.mapToItem(background, c.x, c.y)
-                                var d = candy2.parent.mapToItem(background, candy2.x, candy2.y)    //coordinates of "boy/girl rectangle" in background coordinates
+                                var dropCh = repeater_drop_areas.itemAt(i)     //DropChild type
+                                var dropChCurent = drop_areas.mapToItem(background, dropCh.x, dropCh.y)
+                                //coordinates of "boy/girl rectangle" in background coordinates
+                                var candyCoord = candy2.parent.mapToItem(background, candy2.x, candy2.y)
                                 var wid = items.leftWidget
 
-                                if (c!==dropChild) {
+                                if (dropCh!==dropChild) {
                                     //check if the user wants to put a candy to another rectangle
-                                    if (d.x>e.x && d.x<e.x+c.area.width && d.y>e.y+c.childImg.height && d.y<e.y+c.childImg.height+c.area.height) {
+                                    if (candyCoord.x > dropChCurent.x &&
+                                            candyCoord.x < dropChCurent.x + dropCh.area.width &&
+                                            candyCoord.y > dropChCurent.y + dropCh.childImg.height &&
+                                            candyCoord.y < dropChCurent.y + dropCh.childImg.height+dropCh.area.height) {
                                         //add the candy to the "i"th recthangle
-                                        listModel1.setProperty(i,"countS",listModel1.get(i).countS+1)
+                                        listModel1.setProperty(i, "countS", listModel1.get(i).countS + 1)
                                         //remove the candy from current rectangle
-                                        listModel1.setProperty(rect2.indexS,"countS",listModel1.get(rect2.indexS).countS-1);
+                                        listModel1.setProperty(rect2.indexS, "countS", listModel1.get(rect2.indexS).countS - 1);
                                     }
                                 }
 
                                 //check if the user wants to put back the candy to the leftWidget
-                                if (d.x>0 && d.x<wid.width && d.y>0 && d.y<wid.height) {
+                                if (candyCoord.x > 0 && candyCoord.x < wid.width &&
+                                        candyCoord.y > 0 && candyCoord.y < wid.height) {
                                     //restore the candy to the leftWidget
                                     background.nCrtCandies--
                                     candyWidget.element.opacity = 1
                                     items.candyWidget.canDrag = true
                                     //remove the candy from current rectangle
-                                    listModel1.setProperty(rect2.indexS,"countS",listModel1.get(rect2.indexS).countS-1);
+                                    listModel1.setProperty(rect2.indexS, "countS", listModel1.get(rect2.indexS).countS - 1);
                                 }
                             }
 
@@ -156,7 +178,7 @@ Rectangle {
                             background.nCrtCandies--
                             candyWidget.element.opacity = 1
                             items.candyWidget.canDrag = true
-                            listModel1.setProperty(rect2.indexS,"countS",listModel1.get(rect2.indexS).countS-1);
+                            listModel1.setProperty(rect2.indexS, "countS", listModel1.get(rect2.indexS).countS - 1);
                         }
                     }
                 }
