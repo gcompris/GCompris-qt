@@ -21,27 +21,27 @@ QtObject {
    property variant levels : [
       {
           "instruction" : qsTr("Alice wants to equally share 3 candies between her friends. They are 3: One girl and two boys. Can you help her? Place first the children in the center, then drag the candies to each of them."),
-          "nBoys" : 2,
-          "nGirls" : 1,
-          "nCandies" : 3
+          "totalBoys" : 2,
+          "totalGirls" : 1,
+          "totalCandies" : 3
       },
       {
           "instruction" : qsTr("Now, Alice wants to give 6 candies to her friends"),
-          "nBoys" : 2,
-          "nGirls" : 1,
-          "nCandies" : 6
+          "totalBoys" : 2,
+          "totalGirls" : 1,
+          "totalCandies" : 6
       },
       {
           "instruction" : qsTr("Can you help Alice give 9 candies to her friends: one girl and two boys?"),
-          "nBoys" : 2,
-          "nGirls" : 1,
-          "nCandies" : 9
+          "totalBoys" : 2,
+          "totalGirls" : 1,
+          "totalCandies" : 9
       },
       {
           "instruction" : qsTr("Alice has 12 candies left. She wants to give them all to her friends. Can you help her split the candies equally?"),
-          "nBoys" : 2,
-          "nGirls" : 1,
-          "nCandies" : 12
+          "totalBoys" : 2,
+          "totalGirls" : 1,
+          "totalCandies" : 12
       }
    ]
 }

@@ -32,12 +32,12 @@ Rectangle {
     z: 5
 
     property string name
-    property alias childImg: childImg
+    property alias childImage: childImage
     property alias area: area
     property int indexS: index
 
     Image {
-        id: childImg
+        id: childImage
         sourceSize.width: items.cellSize * 1.5 * 0.7
         sourceSize.height: items.cellSize * 1.5 - 5
         anchors.bottom: area.top
@@ -53,8 +53,8 @@ Rectangle {
         anchors.right: parent.right
         anchors.rightMargin: 20
 
-        //"listModel1.get(index) ? ... " because of an error received at startup of each level
-        text: listModel1.get(index) ? listModel1.get(index).countS : ""
+        //"listModel.get(index) ? ... " because of an error received at startup of each level
+        text: listModel.get(index) ? listModel.get(index).countS : ""
     }
 
     Rectangle {
@@ -65,27 +65,26 @@ Rectangle {
 
         color: "#cfecf0"
 
-        property var dropCh: repeater_drop_areas.mapToItem(background, dropChild.x, dropChild.y)
+        property var childCoordinate: repeater_drop_areas.mapToItem(background, dropChild.x, dropChild.y)
         property var candyCoord: candyWidget.mapToItem(background, candyWidget.element.x, candyWidget.element.y)
 
-        opacity: candyCoord.x > dropCh.x &&
-                 candyCoord.y > dropCh.y + childImg.height &&
-                 candyCoord.x < dropCh.x + dropChild.width &&
-                 candyCoord.y < dropCh.y + dropChild.height ? 0.5 : 1
+        opacity: candyCoord.x > childCoordinate.x &&
+                 candyCoord.y > childCoordinate.y + childImage.height &&
+                 candyCoord.x < childCoordinate.x + childCoordinate.width &&
+                 candyCoord.y < childCoordinate.y + childCoordinate.height ? 0.5 : 1
 
         MouseArea {
-            id: rect1MouseArea
             anchors.fill: parent
 
             onClicked: {
                 if (items.acceptCandy)
-                    if (background.nCrtCandies<items.nCandies) {
+                    if (background.currentCandies < items.totalCandies) {
                         //add candies in the first rectangle
-                        listModel1.setProperty(index,"countS",listModel1.get(index).countS+1)
-                        //the curent number of candies increases
-                        background.nCrtCandies ++
+                        listModel.setProperty(index,"countS",listModel.get(index).countS+1)
+                        //the current number of candies increases
+                        background.currentCandies ++
                         //on the last one, the candy image from top goes away (destroy)
-                        if (background.nCrtCandies == items.nCandies) {
+                        if (background.currentCandies === items.totalCandies) {
                             background.resetCandy()
                             candyWidget.element.opacity = 0.6
                         }
@@ -112,13 +111,13 @@ Rectangle {
                 model: countS
 
                 Image {
-                    id: candy2
+                    id: candyArea
                     sourceSize.width: items.cellSize * 0.7
                     sourceSize.height: items.cellSize * 1.5
                     source: "resource/images/candy.svg"
 
-                    property int lastx
-                    property int lasty
+                    property int lastX
+                    property int lastY
 
                     MouseArea {
                         anchors.fill: parent
@@ -129,56 +128,57 @@ Rectangle {
                         onPressed: {
                             instruction.hide()
                             //set the initial position
-                            candy2.lastx = candy2.x
-                            candy2.lasty = candy2.y
+                            candyArea.lastX = candyArea.x
+                            candyArea.lastY = candyArea.y
                             dropChild.z++
                         }
 
                         onReleased:  {
                             dropChild.z--
-                            for (var i=0;i<listModel1.count;i++) {
-                                var dropCh = repeater_drop_areas.itemAt(i)     //DropChild type
-                                var dropChCurent = drop_areas.mapToItem(background, dropCh.x, dropCh.y)
+                            for (var i=0; i<listModel.count; i++) {
+                                var currentChild = repeater_drop_areas.itemAt(i)     //DropChild type
+                                var childCoordinate = drop_areas.mapToItem(background, currentChild.x, currentChild.y)
                                 //coordinates of "boy/girl rectangle" in background coordinates
-                                var candyCoord = candy2.parent.mapToItem(background, candy2.x, candy2.y)
+
+                                var candyCoordinate = candyArea.parent.mapToItem(background, candyArea.x, candyArea.y)
                                 var wid = items.leftWidget
 
-                                if (dropCh!==dropChild) {
+                                if (currentChild !== dropChild) {
                                     //check if the user wants to put a candy to another rectangle
-                                    if (candyCoord.x > dropChCurent.x &&
-                                            candyCoord.x < dropChCurent.x + dropCh.area.width &&
-                                            candyCoord.y > dropChCurent.y + dropCh.childImg.height &&
-                                            candyCoord.y < dropChCurent.y + dropCh.childImg.height+dropCh.area.height) {
+                                    if (candyCoordinate.x > childCoordinate.x &&
+                                            candyCoordinate.x < childCoordinate.x + currentChild.area.width &&
+                                            candyCoordinate.y > childCoordinate.y + currentChild.childImage.height &&
+                                            candyCoordinate.y < childCoordinate.y + currentChild.childImage.height + currentChild.area.height) {
                                         //add the candy to the "i"th recthangle
-                                        listModel1.setProperty(i, "countS", listModel1.get(i).countS + 1)
+                                        listModel.setProperty(i, "countS", listModel.get(i).countS + 1)
                                         //remove the candy from current rectangle
-                                        listModel1.setProperty(rect2.indexS, "countS", listModel1.get(rect2.indexS).countS - 1);
+                                        listModel.setProperty(rect2.indexS, "countS", listModel.get(rect2.indexS).countS - 1);
                                     }
                                 }
 
                                 //check if the user wants to put back the candy to the leftWidget
-                                if (candyCoord.x > 0 && candyCoord.x < wid.width &&
-                                        candyCoord.y > 0 && candyCoord.y < wid.height) {
+                                if (candyCoordinate.x > 0 && candyCoordinate.x < wid.width &&
+                                        candyCoordinate.y > 0 && candyCoordinate.y < wid.height) {
                                     //restore the candy to the leftWidget
-                                    background.nCrtCandies--
+                                    background.currentCandies--
                                     candyWidget.element.opacity = 1
                                     items.candyWidget.canDrag = true
                                     //remove the candy from current rectangle
-                                    listModel1.setProperty(rect2.indexS, "countS", listModel1.get(rect2.indexS).countS - 1);
+                                    listModel.setProperty(rect2.indexS, "countS", listModel.get(rect2.indexS).countS - 1);
                                 }
                             }
 
                             //restore the candy to its initial position
-                            candy2.x = candy2.lastx
-                            candy2.y = candy2.lasty
+                            candyArea.x = candyArea.lastX
+                            candyArea.y = candyArea.lastY
                         }
 
                         //when clicked, it will restore the candy
                         onClicked:  {
-                            background.nCrtCandies--
+                            background.currentCandies--
                             candyWidget.element.opacity = 1
                             items.candyWidget.canDrag = true
-                            listModel1.setProperty(rect2.indexS, "countS", listModel1.get(rect2.indexS).countS - 1);
+                            listModel.setProperty(rect2.indexS, "countS", listModel.get(rect2.indexS).countS - 1);
                         }
                     }
                 }

@@ -47,13 +47,13 @@ function initLevel() {
 function setUp() {
     var levelData = items.dataset.item
 
-    items.nBoys = levelData.levels[items.currentSubLevel].nBoys
-    items.nGirls = levelData.levels[items.currentSubLevel].nGirls
-    items.nCandies = levelData.levels[items.currentSubLevel].nCandies
+    items.totalBoys = levelData.levels[items.currentSubLevel].totalBoys
+    items.totalGirls = levelData.levels[items.currentSubLevel].totalGirls
+    items.totalCandies = levelData.levels[items.currentSubLevel].totalCandies
 
-    items.background.nCrtCandies = 0
-    items.background.nCrtGirls = 0
-    items.background.nCrtBoys = 0
+    items.background.currentCandies = 0
+    items.background.currentGirls = 0
+    items.background.currentBoys = 0
     items.background.resetCandy()
 
     items.acceptCandy = false
@@ -63,13 +63,13 @@ function setUp() {
 
     items.nbSubLevel = levelData.levels.length
 
-    items.listModel1.clear()
+    items.listModel.clear()
 
-    items.girlWidget.nCrt = 0
+    items.girlWidget.current = 0
     items.girlWidget.canDrag = true
     items.girlWidget.element.opacity = 1
 
-    items.boyWidget.nCrt = 0
+    items.boyWidget.current = 0
     items.boyWidget.canDrag = true
     items.boyWidget.element.opacity = 1
 
@@ -85,7 +85,8 @@ function nextSubLevel() {
     if (items.currentSubLevel === items.nbSubLevel) {
         nextLevel()
     }
-    setUp()
+    else
+        setUp()
 }
 
 function nextLevel() {

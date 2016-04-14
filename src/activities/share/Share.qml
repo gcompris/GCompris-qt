@@ -31,11 +31,7 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    //TODO 0: some ReferenceErrors while dragging the candies back from rectangles to widget panel
-      //DropChild.qml line 139/161/...
-    //TODO 1: when having many many rectangles, they should resize in order to fit the screen
-      //now, if there are more than 5/6/7... they span out of the window
-    //TODO 2: have some voices to tell the kids to drag the basket ("rest") and what it means
+
 
     pageComponent: Rectangle {
         id: background
@@ -59,7 +55,7 @@ ActivityBase {
             property alias instruction: instruction
             property int currentSubLevel: 0
             property int nbSubLevel
-            property alias listModel1: listModel1
+            property alias listModel: listModel
             property bool acceptCandy: false
             property alias dataset: dataset
             property alias girlWidget: girlWidget
@@ -67,10 +63,10 @@ ActivityBase {
             property alias candyWidget: candyWidget
             property alias basketWidget: basketWidget
             property alias leftWidget: leftWidget
-            property int nBoys
-            property int nGirls
-            property int nCandies
-            property int nChildren: nBoys + nGirls
+            property int totalBoys
+            property int totalGirls
+            property int totalCandies
+            property int totalChildren: totalBoys + totalGirls
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
             property int cellSize: Math.min(background.width / 11 , background.height / (9 + barHeightAddon))
         }
@@ -84,12 +80,12 @@ ActivityBase {
         onStop: { Activity.stop() }
 
         property bool vert: background.width > background.height
-        property int nCrtBoys: 0
-        property int nCrtGirls: 0
-        property int nCrtCandies: 0
-        property int rest: (items.nCandies - items.background.nCrtCandies ==
-                            (items.nCandies - Math.floor(items.nCandies / items.nChildren) * items.nChildren)) ?
-                               items.nCandies - items.background.nCrtCandies : 0
+        property int currentBoys: 0
+        property int currentGirls: 0
+        property int currentCandies: 0
+        property int rest: (items.totalCandies - items.background.currentCandies ==
+                            (items.totalCandies - Math.floor(items.totalCandies / items.totalChildren) * items.totalChildren)) ?
+                               items.totalCandies - items.background.currentCandies : 0
 
 
         onRestChanged: {
@@ -97,7 +93,7 @@ ActivityBase {
             if (rest > 0 && basketShown() === false) {
                 background.resetCandy()
                 instruction.opacity = 1
-                instruction.text = "now drag the basket in the center and place the remaining candies inside it"
+                instruction.text = qsTr("now drag the basket in the center and place the remaining candies inside it")
             }
         }
 
@@ -115,7 +111,7 @@ ActivityBase {
 
         //searches in the board for the basket; if it exists, returns true
         function basketShown() {
-            for (var i=0; i<listModel1.count; i++) {
+            for (var i=0; i<listModel.count; i++) {
                 if (repeater_drop_areas.itemAt(i).name === "basket" && background.rest != 0) {
                     return true
                 }
@@ -127,23 +123,23 @@ ActivityBase {
         function check() {
             var ok = 0
             var okRest = 0
-            var rest = items.nCandies - Math.floor(items.nCandies/items.nChildren) * items.nChildren
+            var rest = items.totalCandies - Math.floor(items.totalCandies/items.totalChildren) * items.totalChildren
 
-            if (listModel1.count >= items.nChildren) {
-                for (var i=0; i<listModel1.count; i++)
-                    if (listModel1.get(i).nameS === "basket")
-                        okRest = listModel1.get(i).countS
-                    else if (listModel1.get(i).countS === Math.floor(items.nCandies/items.nChildren))
+            if (listModel.count >= items.totalChildren) {
+                for (var i=0; i<listModel.count; i++)
+                    if (listModel.get(i).nameS === "basket")
+                        okRest = listModel.get(i).countS
+                    else if (listModel.get(i).countS === Math.floor(items.totalCandies/items.totalChildren))
                         ok++
 
                 //condition without rest
-                if (rest == 0 && ok == items.nChildren) {
+                if (rest == 0 && ok == items.totalChildren) {
                     bonus.good("flower")
                     return
                 }
 
                 //condition with rest
-                else if (rest == okRest && ok == items.nChildren) {
+                else if (rest == okRest && ok == items.totalChildren) {
                     bonus.good("tux")
                     return
                 }
@@ -189,7 +185,7 @@ ActivityBase {
             }
 
             ListModel {
-                id: listModel1
+                id: listModel
             }
 
             Flow {
@@ -201,11 +197,11 @@ ActivityBase {
 
                 Repeater {
                     id: repeater_drop_areas
-                    model: listModel1
+                    model: listModel
 
                     DropChild {
                         id: rect2
-                        //"nameS" from listModel1
+                        //"nameS" from listModel
                         name: nameS
                     }
                 }
@@ -301,24 +297,24 @@ ActivityBase {
                     id: girlWidget
                     src: "resource/images/girl.svg"
                     name: "girl"
-                    n: items.nGirls
-                    nCrt: background.nCrtGirls
+                    total: items.totalGirls
+                    current: background.currentGirls
                 }
 
                 Widget {
                     id: boyWidget
                     src: "resource/images/boy.svg"
                     name: "boy"
-                    n: items.nBoys
-                    nCrt: background.nCrtBoys
+                    total: items.totalBoys
+                    current: background.currentBoys
                 }
 
                 Widget {
                     id: candyWidget
                     src: "resource/images/candy.svg"
                     name: "candy"
-                    n: items.nCandies
-                    nCrt: background.nCrtCandies
+                    total: items.totalCandies
+                    current: background.currentCandies
 
                     //swing animation for candies
                     SequentialAnimation {

@@ -34,11 +34,11 @@ Rectangle {
 
     //initial position of the element
     //(these vars are assigned to element after release of click mouse)
-    property int lastx
-    property int lasty
+    property int lastX
+    property int lastY
     property string src
-    property int nCrt: 0
-    property int n: 0
+    property int current: 0
+    property int total: 0
     property string name
     property bool canDrag: true
     property alias element: element
@@ -53,7 +53,7 @@ Rectangle {
         GCText {
             anchors.left: parent.left
             anchors.bottom: parent.bottom
-            text: (widget.name !== "basket") ? widget.n - widget.nCrt : ""
+            text: (widget.name !== "basket") ? widget.total - widget.current : ""
         }
 
         property alias dragAreaElement: dragAreaElement
@@ -69,40 +69,40 @@ Rectangle {
                 if (widget.name !== "candy")
                     background.resetCandy()
                 //set the initial position
-                widget.lastx = element.x
-                widget.lasty = element.y
+                widget.lastX = element.x
+                widget.lastY = element.y
             }
 
             onReleased:  {
-                var newCoord = widget.mapToItem(background, element.x, element.y)
+                var newCoordinate = widget.mapToItem(background, element.x, element.y)
                 var basketActive = false
 
                 switch(widget.name) {
                 case "candy":
-                    if (background.nCrtCandies < items.nCandies) {
+                    if (background.currentCandies < items.totalCandies) {
                         items.acceptCandy = true
 
-                        for (var i = 0; i < listModel1.count; i++) {
-                            var dropCh = repeater_drop_areas.itemAt(i)     //DropChild type
+                        for (var i = 0; i < listModel.count; i++) {
+                            var currentChild = repeater_drop_areas.itemAt(i)
+                            var childCoordinate = drop_areas.mapToItem(background, currentChild.x, currentChild.y)
+                            //coordinates of "boy/girl rectangle" in background coordinates
+                            var currentElement = element.parent.mapToItem(background, element.x, element.y)
 
-                            var dropChCurent = drop_areas.mapToItem(background, dropCh.x, dropCh.y)
-                            var elem = element.parent.mapToItem(background, element.x, element.y)    //coordinates of "boy/girl rectangle" in background coordinates
-
-                            if (elem.x > dropChCurent.x && elem.x < dropChCurent.x + dropCh.area.width &&
-                                    elem.y > dropChCurent.y + dropCh.childImg.height &&
-                                    elem.y < dropChCurent.y + dropCh.childImg.height + dropCh.area.height) {
-                                listModel1.setProperty(i, "countS", listModel1.get(i).countS+1)
-                                background.nCrtCandies ++
+                            if (currentElement.x > childCoordinate.x && currentElement.x < childCoordinate.x + currentChild.area.width &&
+                                    currentElement.y > childCoordinate.y + currentChild.childImage.height &&
+                                    currentElement.y < childCoordinate.y + currentChild.childImage.height + currentChild.area.height) {
+                                listModel.setProperty(i, "countS", listModel.get(i).countS+1)
+                                background.currentCandies ++
                             }
 
-                            if (background.nCrtCandies == items.nCandies) {
+                            if (background.currentCandies == items.totalCandies) {
                                 widget.canDrag = false
                                 background.resetCandy()
                                 candyWidget.element.opacity = 0.6
                             }
 
                             //find if the basket is already present on the board
-                            if (dropCh.name === "basket" && background.rest != 0) {
+                            if (currentChild.name === "basket" && background.rest != 0) {
                                 basketActive = true
                             }
                         }
@@ -119,23 +119,23 @@ Rectangle {
                     break;
 
                 case "basket":
-                    if (background.contains(newCoord.x, newCoord.y, grid)) {
+                    if (background.contains(newCoordinate.x, newCoordinate.y, grid)) {
                         if (widget.canDrag) {
                             widget.canDrag = false
                             widget.element.opacity = 0
-                            listModel1.append({countS: 0, nameS: "basket"});
+                            listModel.append({countS: 0, nameS: "basket"});
                         }
                     }
                     break;
 
                     //default is for "boy" and "girl"
                 default:
-                    if (background.contains(newCoord.x, newCoord.y, grid)) {
-                        if (widget.nCrt < widget.n) {
+                    if (background.contains(newCoordinate.x, newCoordinate.y, grid)) {
+                        if (widget.current < widget.total) {
                             if (widget.canDrag) {
-                                widget.nCrt ++
-                                listModel1.append({countS: 0, nameS: widget.name});
-                                if (widget.nCrt === widget.n) {
+                                widget.current ++
+                                listModel.append({countS: 0, nameS: widget.name});
+                                if (widget.current === widget.total) {
                                     widget.canDrag = false
                                     element.opacity = 0.6
                                 }
@@ -146,8 +146,8 @@ Rectangle {
                     }
                 }
                 //set the widget to its initial coordinates
-                element.x = widget.lastx
-                element.y = widget.lasty
+                element.x = widget.lastX
+                element.y = widget.lastY
             }
         }
     }
