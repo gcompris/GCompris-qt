@@ -251,7 +251,7 @@ ActivityBase {
         property int activityCellWidth:
             horizontal ? background.width / Math.floor(background.width / iconWidth) :
                          (background.width - section.width) / Math.floor((background.width - section.width) / iconWidth)
-        property int activityCellHeight: iconHeight * 1.5
+        property int activityCellHeight: iconHeight * 1.7
 
         Loader {
             id: warningOverlay
