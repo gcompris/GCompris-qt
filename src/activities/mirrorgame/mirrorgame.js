@@ -1,9 +1,9 @@
 /* GCompris - mirrorgame.js
  *
- * Copyright (C) 2016 Shubham Nagaria shubhamrnagaria@gmail.com
+ * Copyright (C) 2016 Shubham Nagaria <shubhamrnagaria@gmail.com>
  *
  * Authors:
- *  Shubham Nagaria shubhamrnagaria@gmail.com
+ *  Shubham Nagaria <shubhamrnagaria@gmail.com>
  *
  *
  *   This program is free software; you can redistribute it and/or modify
@@ -76,9 +76,12 @@ var mirror
 var torch
 var bulbon
 var bulboff
-
-
-
+var component1 = Qt.createComponent("Light-45.qml");
+var component2 = Qt.createComponent("Light45.qml");
+var component3 = Qt.createComponent("Mirror.qml");
+var component4 = Qt.createComponent("Torch.qml");
+var component5 = Qt.createComponent("BulbOn.qml");
+var component6 = Qt.createComponent("BulbOff.qml");
 
 function start(items_) {
     items = items_
@@ -121,8 +124,8 @@ function initLevel() {
             if(arr[y][x]===1)
             {createTorch(x,y);
                 for(var k = 0;k < count;k++) {
-                    for(var row = 0; row < 5;row++) {
-                        for(var column = 0; column < 5; column++) {
+                    for(var row = 0; row < items.rows;row++) {
+                        for(var column = 0; column < items.columns; column++) {
                     if(Light[k].uniquename === "lightpath"+y+x+row+column)
                         Light[k].visible =true;
                         }
@@ -143,11 +146,6 @@ function initLevel() {
 function mod(a,b)
 {   return (a>=b)? (a-b):(b-a);}
 
-function min(a,b)
-{return (a<=b)?a:b;}
-
-function max(a,b)
-{return (a<=b)?b:a;}
 
 function createLightgrid()
 {
@@ -157,11 +155,11 @@ function createLightgrid()
                  for(var z = y+1; z < items.columns; z++){
                      if((x-w) === (y-z) && x!==w && y!==z)
                      {
-                 var component = Qt.createComponent("Light-45.qml");
-                 if (component.status === 1) {
-                 Light[count++] = component.createObject(items.grid,{
-                                                      "x" : min(y,z) * items.cellSize + items.cellSize/2+items.grid.spacing,
-                                                      "y" : min(x,w) * items.cellSize + items.cellSize/2+items.grid.spacing,
+
+                 if (component1.status === 1) {
+                 Light[count++] = component1.createObject(items.grid,{
+                                                      "x" : Math.min(y,z) * items.cellSize + items.cellSize/2+items.grid.spacing,
+                                                      "y" : Math.min(x,w) * items.cellSize + items.cellSize/2+items.grid.spacing,
                                                        "height" : mod(y,z)*items.cellSize*1.414,
                                                        "visible" : false,
                                                         "uniquename" : "lightpath" +x+y+w+z
@@ -176,11 +174,11 @@ function createLightgrid()
 
                     if((x-w) === (z-y) && x!==w && y!==z )
                      {
-                  component = Qt.createComponent("Light45.qml");
-                 if (component.status === 1) {
-                 Light[count++] = component.createObject(items.grid,{
-                                                      "x" : max(y,z) * items.cellSize + items.cellSize/2+items.grid.spacing,
-                                                      "y" : min(x,w) * items.cellSize + items.cellSize/2+items.grid.spacing,
+
+                 if (component2.status === 1) {
+                 Light[count++] = component2.createObject(items.grid,{
+                                                      "x" : Math.max(y,z) * items.cellSize + items.cellSize/2+items.grid.spacing,
+                                                      "y" : Math.min(x,w) * items.cellSize + items.cellSize/2+items.grid.spacing,
                                                        "height" : mod(y,z)*items.cellSize*1.414,
                                                        "visible" : false,
                                                         "uniquename" : "lightpath" +x+y+w+z
@@ -193,9 +191,9 @@ function createLightgrid()
 }
 function createMirror(column, row) {
 
-         var component = Qt.createComponent("Mirror.qml");
-    if (component.status === 1) {
-         mirror[row][column] = component.createObject(items.grid,
+
+    if (component3.status === 1) {
+         mirror[row][column] = component3.createObject(items.grid,
                                                    {"x":column * items.cellSize+items.grid.spacing,
                                                     "y":row * items.cellSize+2*items.grid.spacing,
                                                     "width":items.cellSize,
@@ -204,16 +202,16 @@ function createMirror(column, row) {
 
     } else {
         console.log("error loading block component");
-        console.log(component.errorString());
+        console.log(component3.errorString());
         return false;
     }
     return true;
 }
 function createTorch(column, row) {
 
-         var component = Qt.createComponent("Torch.qml");
-    if (component.status === 1) {
-         torch = component.createObject(items.grid,
+
+    if (component4.status === 1) {
+         torch = component4.createObject(items.grid,
                                                    {"x":column * items.cellSize+items.grid.spacing,
                                                     "y":row * items.cellSize+items.grid.spacing,
                                                     "width":items.cellSize,
@@ -222,7 +220,7 @@ function createTorch(column, row) {
 
     } else {
         console.log("error loading block component");
-        console.log(component.errorString());
+        console.log(component4.errorString());
         return false;
     }
     return true;
@@ -230,9 +228,8 @@ function createTorch(column, row) {
 
 function createBulb(column, row) {
 
-         var component = Qt.createComponent("BulbOn.qml");
-    if (component.status === 1) {
-         bulbon[num] = component.createObject(items.grid,
+    if (component5.status === 1) {
+         bulbon[num] = component5.createObject(items.grid,
                                                    {"x":column * items.cellSize+items.grid.spacing,
                                                     "y":row * items.cellSize+items.grid.spacing,
                                                     "width":items.cellSize,
@@ -242,9 +239,8 @@ function createBulb(column, row) {
                                                    });
 
     }
-    component = Qt.createComponent("BulbOff.qml");
-        if (component.status === 1) {
-             bulboff[num++] = component.createObject(items.grid,
+        if (component6.status === 1) {
+             bulboff[num++] = component6.createObject(items.grid,
                                                        {"x":column * items.cellSize+items.grid.spacing,
                                                         "y":row * items.cellSize+items.grid.spacing,
                                                         "width":items.cellSize,
@@ -260,13 +256,13 @@ function checkLightPath()
 
 
 for(var z = 0;z<numberofmirrors;z++){
-  for(i=0;i<5;i++) {
-    for(j=0;j<5;j++) {
+  for(i=0;i<items.rows;i++) {
+    for(j=0;j<items.columns;j++) {
     var lightavailable = false;
     if(mirror[i][j])
     {
-        for( var row = 0; row < 5; row++){
-             for( var column = 0; column < 5; column++){
+        for( var row = 0; row < items.rows; row++){
+             for( var column = 0; column < items.columns; column++){
                  for(k = 0; k < count; k++) {
 
              if((Light[k].uniquename === "lightpath"+row+column+i+j ||
@@ -279,14 +275,14 @@ for(var z = 0;z<numberofmirrors;z++){
              if(lightavailable)break;}
         if(!lightavailable)continue;
 
-        for( row = 0; row < 5; row++){
-            for( column = 0; column < 5; column++){
+        for( row = 0; row < items.rows; row++){
+            for( column = 0; column < items.columns; column++){
                 for(k = 0; k < count; k++) {
 
             if(Light[k].uniquename === "lightpath"+row+column+i+j && Light[k].visible ===true)
             {
-                for(var row1 = 0; row1 < 5; row1++){
-                    for(var column1 = 0; column1 < 5; column1++){
+                for(var row1 = 0; row1 < items.rows; row1++){
+                    for(var column1 = 0; column1 < items.columns; column1++){
                         for(var k1 = 0; k1 < count; k1++) {
                             if(Light[k1].uniquename === "lightpath"+row+column+row1+column1 &&
                                     Light[k1].uniquename !== "lightpath"+row+column+i+j &&
@@ -298,8 +294,8 @@ for(var z = 0;z<numberofmirrors;z++){
             }
             else if(Light[k].uniquename === "lightpath"+i+j+row+column && Light[k].visible ===true)
             {
-                for(row1 = 0; row1 < 5; row1++){
-                    for(column1 = 0; column1 < 5; column1++){
+                for(row1 = 0; row1 < items.rows; row1++){
+                    for(column1 = 0; column1 < items.columns; column1++){
                         for(k1 = 0; k1 < count; k1++) {
                             if(Light[k1].uniquename === "lightpath"+row+column+row1+column1 &&
                                     Light[k1].uniquename !== "lightpath"+row+column+i+j &&
@@ -319,15 +315,15 @@ for(var z = 0;z<numberofmirrors;z++){
                 var x = currLight[i][j].pop()
                 x.visible = false
             }
-            for(row = 0; row < 5; row++){var done = 0
-                for(column = 0; column < 5; column++){
+            for(row = 0; row < items.rows; row++){var done = 0
+                for(column = 0; column < items.columns; column++){
                     for(k = 0; k < count; k++) {
 
               if(Light[k].uniquename === "lightpath"+row+column+i+j && Light[k].visible === true
                   && row<i && column>j)
                 {
-                 for(var a =0; a < 5;a++) {
-                     for(var b = 0; b < 5; b++) {
+                 for(var a =0; a < items.rows;a++) {
+                     for(var b = 0; b < items.columns; b++) {
                         for(var c = 0; c < count ; c++) {
                      if(Light[c].uniquename === "lightpath"+i+j+a+b && i<a && j<b)
                         {
@@ -339,8 +335,8 @@ for(var z = 0;z<numberofmirrors;z++){
               else if(Light[k].uniquename === "lightpath"+i+j+row+column && Light[k].visible === true
                       && row>i && column>j)
               {
-                  for( a =0; a < 5;a++) {
-                      for( b = 0; b < 5; b++) {
+                  for( a =0; a < items.rows;a++) {
+                      for( b = 0; b < items.columns; b++) {
                          for( c = 0; c < count ; c++) {
                       if(Light[c].uniquename === "lightpath"+a+b+i+j && i<a && j>b)
                          {
@@ -360,15 +356,15 @@ for(var z = 0;z<numberofmirrors;z++){
                   var x = currLight[i][j].pop()
                   x.visible = false
               }
-              for(row = 0; row < 5; row++){
-                  for(column = 0; column < 5; column++){
+              for(row = 0; row < items.rows; row++){
+                  for(column = 0; column < items.columns; column++){
                       for(k = 0; k < count; k++) {
 
 
                  if(Light[k].uniquename === "lightpath"+i+j+row+column && Light[k].visible === true)
                 {
-                    for(  a =0; a < 5;a++) {done = 0
-                        for(  b = 0; b < 5; b++) {
+                    for(  a =0; a < items.rows;a++) {done = 0
+                        for(  b = 0; b < items.columns; b++) {
                            for(  c = 0; c < count ; c++) {
                         if(Light[c].uniquename === "lightpath"+a+b+i+j && row<i && column>j
                                 && a>i && b>j)
@@ -397,14 +393,14 @@ for(var z = 0;z<numberofmirrors;z++){
                   x.visible = false
               }
 
-              for(row = 0; row < 5; row++){ done = 0
-                  for(column = 0; column < 5; column++){
+              for(row = 0; row < items.rows; row++){ done = 0
+                  for(column = 0; column < items.columns; column++){
                       for(k = 0; k < count; k++) {
                 if(Light[k].uniquename === "lightpath"+row+column+i+j && Light[k].visible === true
                         && row<i && column<j)
                   {
-                   for( a =0; a < 5;a++) {
-                       for( b = 0; b < 5; b++) {
+                   for( a =0; a < items.rows;a++) {
+                       for( b = 0; b < items.columns; b++) {
                           for( c = 0; c < count ; c++) {
                        if(Light[c].uniquename === "lightpath"+i+j+a+b && a>i && j>b)
                           {
@@ -415,8 +411,8 @@ for(var z = 0;z<numberofmirrors;z++){
                 else if(Light[k].uniquename === "lightpath"+i+j+row+column && Light[k].visible === true
                         && row>i && column<j)
                 {
-                    for( a =0; a < 5;a++) {
-                        for( b = 0; b < 5; b++) {
+                    for( a =0; a < items.rows;a++) {
+                        for( b = 0; b < items.columns; b++) {
                            for( c = 0; c < count ; c++) {
                         if(Light[c].uniquename === "lightpath"+a+b+i+j && i>a && j>b)
                            {
@@ -433,15 +429,15 @@ for(var z = 0;z<numberofmirrors;z++){
                   var x = currLight[i][j].pop()
                   x.visible = false
               }
-              for(row = 0; row < 5; row++){done = 0
-                  for(column = 0; column < 5; column++){
+              for(row = 0; row < items.rows; row++){done = 0
+                  for(column = 0; column < items.columns; column++){
                       for(k = 0; k < count; k++) {
 
 
                  if(Light[k].uniquename === "lightpath"+row+column+i+j && Light[k].visible === true)
                 {
-                    for( a =0; a < 5;a++) {
-                        for( b = 0; b < 5; b++) {
+                    for( a =0; a < items.rows;a++) {
+                        for( b = 0; b < items.columns; b++) {
                            for( c = 0; c < count ; c++) {
                         if(Light[c].uniquename === "lightpath"+a+b+i+j && row<i && column<j
                                 && a<i && b>j)
@@ -468,10 +464,10 @@ checkAnswer();
 }
 function checkAnswer()
 {
-    for( var a =0; a < 5;a++) {
-        for( var b = 0; b < 5; b++) {
-           for( var c = 0; c < 5 ; c++) {
-               for(var d = 0;d < 5; d++){
+    for( var a =0; a < items.rows;a++) {
+        for( var b = 0; b < items.columns; b++) {
+           for( var c = 0; c < items.rows ; c++) {
+               for(var d = 0;d < items.columns; d++){
                    for(var e = 0;e < count;e++){
                     for(var f = 0;f < num;f++){
                         if(bulboff[f].uniquename === "bulboff"+a+b &&
@@ -496,11 +492,11 @@ function destroyEverything()
    for(var a = 0; a < count ; a++)
    Light[a].visible = false;
 
-   currLight = new Array(5)
-   for(i=0;i<5;i++)
-       currLight[i] = new Array(5)
-   for(i=0;i<5;i++)
-       for(j=0;j<5;j++)
+   currLight = new Array(items.rows)
+   for(i=0;i<items.columns;i++)
+       currLight[i] = new Array(items.columns)
+   for(i=0;i<items.rows;i++)
+       for(j=0;j<items.columns;j++)
        currLight[i][j] = new Array
 
    for(i = 0;i<num;i++)
