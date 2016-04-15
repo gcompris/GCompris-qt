@@ -114,6 +114,7 @@ smallnumbers
 smallnumbers2
 sudoku
 superbrain
+shapes
 tangram
 target
 tic_tac_toe

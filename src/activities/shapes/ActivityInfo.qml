@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2016 Your Name <yy@zz.org>
+ * Copyright (C) 2016 Divym Madaan <divyam3897@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,9 +21,9 @@ ActivityInfo {
   name: "shapes/Shapes.qml"
   difficulty: 1
   icon: "shapes/shapes.svg"
-  author: "Your Name &lt;yy@zz.org&gt;"
+  author: "Divyam Madaan &lt;divyam3897@gmail.com&gt;"
   demo: true
-  title: "Shapes activity"
+  title: qsTr("Shapes activity")
   description: ""
   //intro: "put here in comment the text for the intro voice"
   goal: ""
