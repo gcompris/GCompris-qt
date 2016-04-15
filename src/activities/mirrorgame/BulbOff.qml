@@ -1,4 +1,4 @@
-/* GCompris - BulbOn.qml
+/* GCompris - BulbOff.qml
  *
  * Copyright (C) 2016 Shubham Nagaria <shubhamrnagaria@gmail.com>
  *
