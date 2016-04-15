@@ -247,8 +247,7 @@ function createBulb(column, row) {
     return true;
 }
 function checkLightPath()
-{var i,j,k
-
+{   var i,j,k
 
 for(var z = 0;z<numberofmirrors;z++){
   for(i=0;i<items.rows;i++) {
