@@ -1,9 +1,9 @@
 /* GCompris - Light-45.qml
  *
- * Copyright (C) 2016 Shubham Nagaria shubhamrnagaria@gmail.com
+ * Copyright (C) 2016 Shubham Nagaria <shubhamrnagaria@gmail.com>
  *
  * Authors:
- *   Shubham Nagaria shubhamrnagaria@gmail.com
+ *   Shubham Nagaria <shubhamrnagaria@gmail.com>
  *
  *
  *   This program is free software; you can redistribute it and/or modify
