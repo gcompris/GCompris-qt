@@ -23,11 +23,11 @@ ActivityInfo {
   icon: "mirrorgame/mirrorgame.svg"
   author: "Shubham Nagaria &lt;shubhamrnagaria@gmail.com&gt;"
   demo: true
-  title: "Mirror Game"
-  description: "Click the mirrors to rotate them such that the lights reaches the bulb by reflection"
+  title: qsTr("Mirror Game")
+  description: qsTr("Click the mirrors to rotate them such that the lights reaches the bulb by reflection")
   //intro: "put here in comment the text for the intro voice"
-  goal: "Click the mirrors to rotate them such that the lights reaches the bulb by reflection"
-  prerequisite: "Reflection of Light"
+  goal: qsTr("Click the mirrors to rotate them such that the lights reaches the bulb by reflection")
+  prerequisite: qsTr("Reflection of Light")
   manual: ""
   credit: ""
   section: "experiment"
