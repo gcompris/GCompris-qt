@@ -165,12 +165,9 @@ function createLightgrid()
                                                         "uniquename" : "lightpath" +x+y+w+z
                                                       }); }}
 
-}}}}
+}
 
-    for( x = 0;x < items.rows; x++) {
-         for( y = 1;  y < items.columns; y++){
-             for( w = x+1; w < items.rows; w++){
-                 for( z = y-1; z >=0; z--){
+               for( z = y-1; z >=0; z--){
 
                     if((x-w) === (z-y) && x!==w && y!==z )
                      {
@@ -229,19 +226,17 @@ function createTorch(column, row) {
 function createBulb(column, row) {
 
     if (component5.status === 1) {
-         bulbon[num] = component5.createObject(items.grid,
-                                                   {"x":column * items.cellSize+items.grid.spacing,
+         bulbon[num] = component5.createObject(items.grid,{"x":column * items.cellSize+items.grid.spacing,
                                                     "y":row * items.cellSize+items.grid.spacing,
                                                     "width":items.cellSize,
                                                     "height":items.cellSize,
                                                     "uniquename" : "bulbon" + row+column,
-                                                     "visible":false
+                                                    "visible":false
                                                    });
 
     }
         if (component6.status === 1) {
-             bulboff[num++] = component6.createObject(items.grid,
-                                                       {"x":column * items.cellSize+items.grid.spacing,
+             bulboff[num++] = component6.createObject(items.grid,{"x":column * items.cellSize+items.grid.spacing,
                                                         "y":row * items.cellSize+items.grid.spacing,
                                                         "width":items.cellSize,
                                                         "height":items.cellSize,
