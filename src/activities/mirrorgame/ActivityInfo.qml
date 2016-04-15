@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2016 Shubham Nagaria shubhamrnagaria@gmail.com
+ * Copyright (C) 2016 Shubham Nagaria <shubhamrnagaria@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
