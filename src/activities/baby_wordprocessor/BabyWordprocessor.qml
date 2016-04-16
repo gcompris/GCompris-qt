@@ -34,7 +34,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        color: 'white'
+        color: '#267326'
         signal start
         signal stop
 
@@ -109,6 +109,7 @@ ActivityBase {
                 width: flick.width
                 height: flick.height
                 focus: true
+                color:"white"
                 wrapMode: TextEdit.Wrap
                 onCursorRectangleChanged: flick.ensureVisible(cursorRectangle)
                 textFormat: TextEdit.RichText
@@ -126,7 +127,7 @@ ActivityBase {
                     // height should be set automatically as mention in cursorRectangle property
                     // documentation but it does not work
                     height: parent.cursorRectangle.height
-                    color: 'red'
+                    color: "black"
                     SequentialAnimation on opacity {
                         running: true
                         loops: Animation.Infinite
