@@ -83,7 +83,6 @@ ActivityBase {
             property var rocketCategory: Fixture.Category1
             property var groundCategory: Fixture.Category2
             property var landingCategory: Fixture.Category3
-            property var borderCategory: Fixture.Category4
             property string mode: "rotate"  // "simple"
             property double velocity: 0.0
             property double altitude: 0.0
@@ -127,6 +126,11 @@ ActivityBase {
                 if (Activity.currentFuel === 0)
                     // fuel consumed:
                     items.rocket.accel = items.rocket.leftAccel = items.rocket.rightAccel = 0;
+
+                if (items.rocket.x > background.width)
+                    items.rocket.x = -items.rocket.width;
+                if (items.rocket.x < -items.rocket.width)
+                    items.rocket.x = background.width;
             }
 
         }
@@ -136,70 +140,6 @@ ActivityBase {
             anchors.fill: parent
             onClicked: debugDraw.visible = !debugDraw.visible;
             enabled: Activity.debugDraw
-        }
-
-        // bounding fixtures
-        Item {
-            id: leftBorder
-            width: 1
-            height: parent.height
-            anchors.left: parent.left
-            anchors.top: parent.top
-
-            readonly property string collisionName: "leftBorder"
-
-            Body {
-                id: leftBody
-
-                target: leftBorder
-                bodyType: Body.Static
-                sleepingAllowed: false
-                fixedRotation: true
-                linearDamping: 0
-
-                fixtures: Box {
-                    id: leftFixture
-                    categories: items.borderCategory
-                    collidesWith: items.rocketCategory
-                    density: 1
-                    friction: 0
-                    restitution: 0
-                    width: leftBorder.width
-                    height: leftBorder.height
-                }
-            }
-        }
-
-        Item {
-            id: rightBorder
-            width: 1
-            height: parent.height
-            anchors.right: parent.right
-            anchors.rightMargin: 1
-            anchors.top: parent.top
-
-            readonly property string collisionName: "rightBorder"
-
-            Body {
-                id: rightBody
-
-                target: rightBorder
-                bodyType: Body.Static
-                sleepingAllowed: false
-                fixedRotation: true
-                linearDamping: 0
-
-                fixtures: Box {
-                    id: rightFixture
-                    categories: items.borderCategory
-                    collidesWith: items.rocketCategory
-                    density: 1
-                    friction: 0
-                    restitution: 0
-                    width: rightBorder.width
-                    height: rightBorder.height
-                }
-            }
         }
 
         Item {
@@ -312,7 +252,7 @@ ActivityBase {
                 fixtures: Box {
                     id: rocketFixture
                     categories: items.rocketCategory
-                    collidesWith: items.groundCategory | items.landingCategory | items.borderCategory
+                    collidesWith: items.groundCategory | items.landingCategory
                     density: 1
                     friction: 0
                     restitution: 0
@@ -322,11 +262,8 @@ ActivityBase {
 
                     onBeginContact: {
                         //console.log("XXX beginning contact with " + other.getBody().target.collisionName + " abs v=" + Math.abs(items.lastVelocity) + + " maxV=" + Activity.maxLandingVelocity);
-                        if (other.getBody().target === leftBorder ||
-                                other.getBody().target === rightBorder)
-                            ; //nothing to do
-                        else if (other.getBody().target === landing &&
-                                 Math.abs(items.lastVelocity) <= Activity.maxLandingVelocity &&
+                        if (other.getBody().target === landing &&
+                                Math.abs(items.lastVelocity) <= Activity.maxLandingVelocity &&
                                 (items.mode === "simple" || rocket.rotation === 0))
                             Activity.finishLevel(true);
                         else // ground
@@ -612,18 +549,20 @@ ActivityBase {
 
             z: 19 // below intro, above the rest
             opacity: 0.4
-            spacing: 10 * ApplicationInfo.ratio
+            spacing: 20 * ApplicationInfo.ratio
 
             ControlButton {
                 id: upButton
                 source: Activity.baseUrl + "/arrow_up.svg"
                 onPressed: Activity.processKeyPress({key: Qt.Key_Up});
+                exceed: upDownControl.spacing / 2
             }
 
             ControlButton {
                 id: downButton
                 source: Activity.baseUrl + "/arrow_down.svg"
                 onPressed: Activity.processKeyPress({key: Qt.Key_Down});
+                exceed: upDownControl.spacing / 2
             }
         }
 
@@ -639,13 +578,14 @@ ActivityBase {
 
             z: 19 // below intro, on top of the rest
             opacity: 0.4
-            spacing: 10 * ApplicationInfo.ratio
+            spacing: 20 * ApplicationInfo.ratio
 
             ControlButton {
                 id: leftButton
                 source: Activity.baseUrl + "/arrow_left.svg"
                 onPressed: Activity.processKeyPress({key: Qt.Key_Left});
                 onReleased: Activity.processKeyRelease({key: Qt.Key_Left});
+                exceed: leftRightControl.spacing / 2
             }
 
             ControlButton {
@@ -653,6 +593,7 @@ ActivityBase {
                 source: Activity.baseUrl + "/arrow_right.svg"
                 onPressed: Activity.processKeyPress({key: Qt.Key_Right});
                 onReleased: Activity.processKeyRelease({key: Qt.Key_Right});
+                exceed: leftRightControl.spacing / 2
             }
         }
 

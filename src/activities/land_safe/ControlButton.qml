@@ -24,16 +24,24 @@ import GCompris 1.0
 Image {
     id: root
     state: "notclicked"
-    sourceSize.width: 75 * ApplicationInfo.ratio
+    sourceSize.width: 54 * ApplicationInfo.ratio
 
     signal clicked
     signal pressed
     signal released
 
+    /** How much the mousearea should exceed the visible item on each border */
+    property double exceed: 0
+
     MouseArea {
         id: mouseArea
-        anchors.fill: parent
-        hoverEnabled: true
+        anchors.left: parent.left
+        anchors.leftMargin: -root.exceed
+        anchors.top: parent.top
+        anchors.topMargin: -root.exceed
+        width: root.width + 2*root.exceed
+        height: root.height + 2*root.exceed
+        hoverEnabled: !ApplicationInfo.isMobile
         onClicked: root.clicked()
         onPressed: root.pressed()
         onReleased: root.released()

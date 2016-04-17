@@ -24,9 +24,7 @@
  * - zoom out if too high!
  * - check for shader availability
  * - reduce difficulty: no fuel limits at lower levels
- * - on-screen buttons smaller with bigger MouseArea
  * - test more generic on-screen controls
- * - no left/right borders
  * (- use polygon fixture for rocket)
  *
  * Some gravitational forces:
@@ -47,36 +45,36 @@
 
 var levels = [
                                 /**  simple  **/
-            {   "planet": "Pluto",  "gravity": 0.62,    "maxAccel": 0.2,
+            {   "planet": qsTr("Pluto"),  "gravity": 0.62,    "maxAccel": 0.2,
                 "accelSteps": 3,    "alt": 100.0,       "mode": "simple",
                 "fuel" : 5 },
-            {   "planet": "Moon",   "gravity": 1.62,    "maxAccel": 0.4,
+            {   "planet": qsTr("Moon"),   "gravity": 1.62,    "maxAccel": 0.4,
                 "accelSteps": 4,    "alt": 150.0,       "mode": "simple",
                 "fuel" : 10 },
-            {   "planet": "Mars",   "gravity": 3.71,    "maxAccel": 0.6,
+            {   "planet": qsTr("Mars"),   "gravity": 3.71,    "maxAccel": 0.6,
                 "accelSteps": 5,    "alt": 200.0,       "mode": "simple",
                 "fuel" : 20 },
-            {   "planet": "Vulc@n", "gravity": 5.55,    "maxAccel": 1.0,
+            {   "planet": qsTr("Vulc@n"), "gravity": 5.55,    "maxAccel": 1.0,
                 "accelSteps": 5,    "alt": 300.0,       "mode": "simple",
                 "fuel" : 30 },
-            {   "planet": "Venus",  "gravity": 8.87,    "maxAccel": 1.2,
+            {   "planet": qsTr("Venus"),  "gravity": 8.87,    "maxAccel": 1.2,
                 "accelSteps": 5,    "alt": 300.0,       "mode": "simple",
                 "fuel" : 70 },
 
                                 /**  rotation  **/
-            {   "planet": "Pluto",  "gravity": 0.62,    "maxAccel": 0.2,
+            {   "planet": qsTr("Pluto"),  "gravity": 0.62,    "maxAccel": 0.2,
                 "accelSteps": 3,    "alt": 100.0,       "mode": "rotation",
                 "fuel" : 5 },
-            {   "planet": "Moon",   "gravity": 1.62,    "maxAccel": 0.4,
+            {   "planet": qsTr("Moon"),   "gravity": 1.62,    "maxAccel": 0.4,
                 "accelSteps": 4,    "alt": 150.0,       "mode": "rotation",
                 "fuel" : 10 },
-            {   "planet": "Mars",   "gravity": 3.71,    "maxAccel": 0.6,
+            {   "planet": qsTr("Mars"),   "gravity": 3.71,    "maxAccel": 0.6,
                 "accelSteps": 5,    "alt": 200.0,       "mode": "rotation",
                 "fuel" : 20 },
-            {   "planet": "Vulc@n", "gravity": 5.55,    "maxAccel": 1.0,
+            {   "planet": qsTr("Vulc@n"), "gravity": 5.55,    "maxAccel": 1.0,
                 "accelSteps": 5,    "alt": 300.0,       "mode": "rotation",
                 "fuel" : 30 },
-            {   "planet": "Venus",  "gravity": 8.87,    "maxAccel": 1.2,
+            {   "planet": qsTr("Venus"),  "gravity": 8.87,    "maxAccel": 1.2,
                 "accelSteps": 5,    "alt": 300.0,       "mode": "rotation",
                 "fuel" : 70 }
 ];
