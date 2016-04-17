@@ -152,6 +152,7 @@ ActivityBase {
         //center zone
         Rectangle {
             id: grid
+            z: 4
 
             //map the coordinates from widgets to grid
             property var boy: leftWidget.mapFromItem(boyWidget, boyWidget.element.x, boyWidget.element.y)
@@ -265,6 +266,7 @@ ActivityBase {
             color: "#FFFF42"
             border.color: "#FFD85F"
             border.width: 4
+            z: 4
 
             //grid with ok button and images of a boy, a girl, a candy and a basket
             Grid {
@@ -293,7 +295,7 @@ ActivityBase {
                     }
                 }
 
-                Widget {
+                WidgetOption {
                     id: girlWidget
                     src: "resource/images/girl.svg"
                     name: "girl"
@@ -301,7 +303,7 @@ ActivityBase {
                     current: background.currentGirls
                 }
 
-                Widget {
+                WidgetOption {
                     id: boyWidget
                     src: "resource/images/boy.svg"
                     name: "boy"
@@ -309,7 +311,7 @@ ActivityBase {
                     current: background.currentBoys
                 }
 
-                Widget {
+                WidgetOption {
                     id: candyWidget
                     src: "resource/images/candy.svg"
                     name: "candy"
@@ -339,7 +341,7 @@ ActivityBase {
 
                 }
 
-                Widget {
+                WidgetOption {
                     id: basketWidget
                     src: "resource/images/basket.svg"
                     name: "basket"

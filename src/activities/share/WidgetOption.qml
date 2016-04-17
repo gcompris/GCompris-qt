@@ -1,4 +1,4 @@
-/* GCompris - Widget.qml
+/* GCompris - WidgetOption.qml
  *
  * Copyright (C) 2016 Stefan Toncu <stefan.toncu@cti.pub.ro>
  *

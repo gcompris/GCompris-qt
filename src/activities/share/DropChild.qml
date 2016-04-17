@@ -130,15 +130,20 @@ Rectangle {
                             //set the initial position
                             candyArea.lastX = candyArea.x
                             candyArea.lastY = candyArea.y
+                            //move this rectangle/grid on top of everything
                             dropChild.z++
+                            grid.z++
                         }
 
                         onReleased:  {
+                            //move this rectangle/grid to its previous state
                             dropChild.z--
+                            grid.z--
+                            //check where the candy is being dropped
                             for (var i=0; i<listModel.count; i++) {
-                                var currentChild = repeater_drop_areas.itemAt(i)     //DropChild type
-                                var childCoordinate = drop_areas.mapToItem(background, currentChild.x, currentChild.y)
+                                var currentChild = repeater_drop_areas.itemAt(i)
                                 //coordinates of "boy/girl rectangle" in background coordinates
+                                var childCoordinate = drop_areas.mapToItem(items.background, currentChild.x, currentChild.y)
 
                                 var candyCoordinate = candyArea.parent.mapToItem(background, candyArea.x, candyArea.y)
                                 var wid = items.leftWidget
@@ -153,18 +158,21 @@ Rectangle {
                                         listModel.setProperty(i, "countS", listModel.get(i).countS + 1)
                                         //remove the candy from current rectangle
                                         listModel.setProperty(rect2.indexS, "countS", listModel.get(rect2.indexS).countS - 1);
+                                        break;
                                     }
                                 }
-
-                                //check if the user wants to put back the candy to the leftWidget
-                                if (candyCoordinate.x > 0 && candyCoordinate.x < wid.width &&
-                                        candyCoordinate.y > 0 && candyCoordinate.y < wid.height) {
-                                    //restore the candy to the leftWidget
-                                    background.currentCandies--
-                                    candyWidget.element.opacity = 1
-                                    items.candyWidget.canDrag = true
-                                    //remove the candy from current rectangle
-                                    listModel.setProperty(rect2.indexS, "countS", listModel.get(rect2.indexS).countS - 1);
+                                else {
+                                    //check if the user wants to put back the candy to the leftWidget
+                                    if (candyCoordinate.x > 0 && candyCoordinate.x < wid.width &&
+                                            candyCoordinate.y > 0 && candyCoordinate.y < wid.height) {
+                                        //restore the candy to the leftWidget
+                                        background.currentCandies--
+                                        candyWidget.element.opacity = 1
+                                        items.candyWidget.canDrag = true
+                                        //remove the candy from current rectangle
+                                        listModel.setProperty(rect2.indexS, "countS", listModel.get(rect2.indexS).countS - 1);
+                                        break;
+                                    }
                                 }
                             }
 
