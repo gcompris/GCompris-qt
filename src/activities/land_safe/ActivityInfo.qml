@@ -31,6 +31,8 @@ ActivityInfo {
 
 Use the up/down keys to control the thrust and the right/left keys to control direction. On touch screens you can control the rocket through the corresponding on-screen buttons.
 
+The accelerometer on the right border shows your rocket's overall vertical acceleration including gravitational force. In the upper green area of the accelerometer your acceleration is higher than the gravitational force, in the lower red area it's lower, and on the blue baseline in the yellow middle area the two forces cancel each other out.
+
 In higher levels, you can use the right/left keys to rotate the spaceship. By rotating the spaceship you can trigger an acceleration in non-vertical direction using the up/down keys.
 
 The landing platform is green if your speed is fine for a safe landing.")

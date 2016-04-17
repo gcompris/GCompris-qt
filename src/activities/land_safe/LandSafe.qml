@@ -74,18 +74,23 @@ ActivityBase {
             property alias world: physicsWorld
             property alias landing: landing
             property alias ground: ground
-            property alias stats: stats
             property alias intro: intro
             property alias ok: ok
             property alias leftRightControl: leftRightControl
             property alias upDownControl: upDownControl
+            property alias accelerometer: accelerometer
             property var rocketCategory: Fixture.Category1
             property var groundCategory: Fixture.Category2
             property var landingCategory: Fixture.Category3
             property var borderCategory: Fixture.Category4
             property string mode: "rotate"  // "simple"
+            property double velocity: 0.0
+            property double altitude: 0.0
+            property double fuel: 0.0
             property double lastVelocity: 0.0
+            property double gravity: 0.0
             property double scale: background.height / 400
+            property bool onScreenControls: /* items.world.running && */ ApplicationInfo.isMobile
         }
 
         onStart: { Activity.start(items) }
@@ -95,34 +100,31 @@ ActivityBase {
             id: physicsWorld
 
             running: false;
-            gravity: Qt.point(0, Activity.gravity)
-            pixelsPerMeter: 0
+            gravity: Qt.point(0, items.gravity)
             autoClearForces: false
             //timeStep: 1.0/60.0 // default: 60Hz
 
             onStepped: {
                 if (Math.abs(rocket.body.linearVelocity.y) > 0.01)  // need to store velocity before it is aaaalmost 0 because of ground/landing contact
-                    items.lastVelocity = stats.velocity.y;
-                stats.velocity = rocket.body.linearVelocity;
+                    items.lastVelocity = items.velocity;
+                items.velocity = rocket.body.linearVelocity.y;
 
                 if (rocket.body.linearVelocity.y > Activity.maxLandingVelocity)
                     landing.source = Activity.baseUrl + "/landing_red.png";
                 else
                     landing.source = Activity.baseUrl + "/landing_green.png";
 
-                stats.height = Math.max(0, Math.round(Activity.getRealHeight()));
+                items.altitude = Math.max(0, Math.round(Activity.getRealHeight()));
 
                 // update fuel:
                 var dt = timeStep;
                 var dFuel = -(dt * (items.rocket.accel + items.rocket.leftAccel
                                     + items.rocket.rightAccel));
                 Activity.currentFuel = Math.max(0, Activity.currentFuel + dFuel);
-                stats.fuel = Math.round(Activity.currentFuel / Activity.maxFuel * 100);
+                items.fuel = Math.round(Activity.currentFuel / Activity.maxFuel * 100);
                 if (Activity.currentFuel === 0)
                     // fuel consumed:
                     items.rocket.accel = items.rocket.leftAccel = items.rocket.rightAccel = 0;
-
-//                console.log("VVV changed: " + items.lastVelocity + " --> " + stats.velocity.y + " / " + rocket.body.linearVelocity.y);
             }
 
         }
@@ -198,29 +200,6 @@ ActivityBase {
             }
         }
 
-        GCText {
-            id: stats
-            z: 0
-            property var velocity: rocket.body.linearVelocity
-            property double fuel: 100.0
-            property double heigth: Activity.startingHeightReal
-
-            anchors.left: background.left
-            anchors.leftMargin: 20
-            anchors.top: background.top
-            anchors.topMargin: 20
-            width: 100
-            height: 100
-            color: "gray"
-
-            fontSize: tinySize
-            text: qsTr("Planet: ") + Activity.levels[Activity.currentLevel].planet + "<br/>" +
-                  qsTr("Velocity: ") + Math.round(velocity.y * 10) / 10 + "<br/>" +
-                  qsTr("Fuel: ") + fuel  + "<br/>" +
-                  qsTr("Altitude: ") + height + "<br/>" +
-                  qsTr("Gravity: ") + Math.round(Activity.gravity * 100)/100
-        }
-
         Item {
             id: rocket
             property double accel: 0.0
@@ -239,7 +218,7 @@ ActivityBase {
             y: 50
             z: 3
 
-            Component.onCompleted: rocket.body.applyForceToCenter(Qt.point(0, 5));
+//            Component.onCompleted: rocket.body.applyForceToCenter(Qt.point(0, 5));
 
             onAccelChanged: applyForces();
             onLeftAccelChanged: applyForces();
@@ -247,29 +226,34 @@ ActivityBase {
             onRotationChanged: if (accel > 0)       // should only happen in
                                    applyForces();   // "rotation" mode
 
+            // decompose a force/acceleration vector v using angle into x/y components
+            function decomposeVector(v, angle) {
+                return Qt.point(v * Math.sin(Activity.degToRad(angle)), // x-component
+                                v * Math.cos(Activity.degToRad(items.rocket.rotation)));  // y-component
+            }
+
             // map acceleration to box2d forces applying appropriate factors:
             function applyForces()
             {
                 var totForce = (accel / 0.5 * 5)
-                var xForce;
-                var yForce;
+                var v;
 
-                if (items.mode === "simple") {
-                    yForce = -totForce;
-                    xForce = (leftAccel-rightAccel)
-                             * 10 /* base of 10 m/s^2 */
-                             * 5  /* factor to make movement smooth */;
-                } else { // "rotation"
-                    yForce = -(totForce * Math.cos(Activity.degToRad(items.rocket.rotation)));
-                    xForce = (totForce * Math.sin(Activity.degToRad(items.rocket.rotation)));
+                if (items.mode === "simple")
+                    v = Qt.point((leftAccel-rightAccel)
+                                 * 10 /* base of 10 m/s^2 */
+                                 * 5,  /* factor to make movement smooth */
+                                 -totForce
+                                 );
+                else { // "rotation"
+                    v = decomposeVector(totForce, rotation);
+                    v.y = -v.y;
                 }
-                var yFForce = yForce * items.rocket.body.getMass();
-                var xFForce = xForce * items.rocket.body.getMass();
-                var force = Qt.point(xFForce, yFForce);
-//                console.log("applying force " + force + " - " + " - mass=" + items.rocket.body.getMass() + " v=" + items.rocket.body.linearVelocity + " totForce=" + totForce + " - rotation=" + items.rocket.rotation + " - xForce=" + xForce + " xFForce=" + xFForce + " mass=" + items.rocket.body.getMass());
+                v.x *= items.rocket.body.getMass();
+                v.y *= items.rocket.body.getMass();
 
                 physicsWorld.clearForces();
-                items.rocket.body.applyForceToCenter(force);
+                items.rocket.body.applyForceToCenter(v);
+//                console.log("XXX rocket.acc=" + rocket.accel + " acc.current=" + items.accelerometer.current + " bottomMargin=" + items.accelerometer.currentRect.bottomMargin);
             }
 
             Image {
@@ -514,15 +498,108 @@ ActivityBase {
             }
         }
 
+        Item {
+            id: osdWrapper
+
+            anchors.right: background.right
+            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.bottom: upDownControl.bottom
+            anchors.bottomMargin: -(planetText.height + gravityText.height + 20 * ApplicationInfo.ratio)
+            width: 200
+            height: background.height
+            z: 2
+
+            GCText {
+                id: fuelText
+                anchors.right: parent.right
+                anchors.bottom: altitudeText.top
+                anchors.bottomMargin: 10
+                color: "white"
+                fontSize: tinySize
+                horizontalAlignment: Text.AlignRight
+                text: qsTr("Fuel: %1").arg(items.fuel)
+            }
+            GCText {
+                id: altitudeText
+                anchors.right: parent.right
+                anchors.bottom: velocityText.top
+                anchors.bottomMargin: 10
+                color: "white"
+                fontSize: tinySize
+                horizontalAlignment: Text.AlignRight
+                text: qsTr("Altitude: %1").arg(items.altitude)
+            }
+            GCText {
+                id: velocityText
+                anchors.right: parent.right
+//                anchors.rightMargin: 10 * ApplicationInfo.ratio
+                anchors.bottom: accelText.top
+                anchors.bottomMargin: 10
+                color: "white"
+                fontSize: tinySize
+                horizontalAlignment: Text.AlignRight
+                text: qsTr("Velocity: %1").arg(Math.round(items.velocity * 10) / 10)
+            }
+
+            GCText {
+                id: accelText
+                anchors.bottom: accelerometer.top
+                anchors.bottomMargin: 10 * ApplicationInfo.ratio
+                anchors.right: parent.right
+                fontSize: tinySize
+//                width: 50
+//                height: 50
+                color: "white"
+                horizontalAlignment: Text.AlignRight
+                text: qsTr("Acceleration: %1").arg(Math.round(accelerometer.current * 100) / 100)
+            }
+
+            Accelerometer {
+                id: accelerometer
+
+                current: rocket.decomposeVector(rocket.accel, rocket.rotation).y * 10 - items.gravity
+                anchors.right: parent.right
+                anchors.bottom: gravityText.top
+                anchors.bottomMargin: 10 * ApplicationInfo.ratio
+//                anchors.bottom: upDownControl.bottom
+//                anchors.bottomMargin: upDownControl.bottomMargin
+                width: 15 + 3 * items.scale * ApplicationInfo.ratio
+                height: background.height / 2.5
+                z: 2 // on top of rocket and ground
+                opacity: 1
+            }
+
+            GCText {
+                id: gravityText
+                anchors.bottom: planetText.top
+                anchors.bottomMargin: 10 * ApplicationInfo.ratio
+                anchors.right: parent.right
+                horizontalAlignment: Text.AlignRight
+                fontSize: tinySize
+                color: "white"
+                text: qsTr("Gravity: %1").arg(Math.round(items.gravity * 100) / 100);
+            }
+
+            GCText {
+                id: planetText
+                anchors.right: parent.right
+                anchors.bottom: parent.bottom
+                color: "white"
+                fontSize: tinySize
+                horizontalAlignment: Text.AlignRight
+                text: qsTr("Planet: ") + Activity.levels[Activity.currentLevel].planet
+            }
+        }
+
         Column {
             id: upDownControl
-            anchors.right: parent.right
-            anchors.rightMargin: 10 * ApplicationInfo.ratio
+            anchors.right: background.right
+            anchors.rightMargin: accelerometer.width
             anchors.bottom: bar.top
             anchors.bottomMargin: 10 * ApplicationInfo.ratio
             width: upButton.width + 20 * ApplicationInfo.ratio
             height: upButton.height + downButton.height + 20 * ApplicationInfo.ratio
-            visible: items.world.running && ApplicationInfo.isMobile
+            visible: items.onScreenControls
 
             z: 19 // below intro, above the rest
             opacity: 0.4
@@ -549,9 +626,9 @@ ActivityBase {
             anchors.bottomMargin: 10 * ApplicationInfo.ratio
             width: leftButton.width + rightButton.width + 20 * ApplicationInfo.ratio
             height: leftButton.height + 10 * ApplicationInfo.ratio
-            visible: items.world.running && ApplicationInfo.isMobile
+            visible: items.onScreenControls
 
-            z: 19 // below intro, above the rest
+            z: 19 // below intro, on top of the rest
             opacity: 0.4
             spacing: 10 * ApplicationInfo.ratio
 

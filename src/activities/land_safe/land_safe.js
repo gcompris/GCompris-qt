@@ -21,10 +21,13 @@
  */
 
 /* ToDo:
- * (- zoom out if too high!)
+ * - zoom out if too high!
  * - check for shader availability
+ * - reduce difficulty: no fuel limits at lower levels
+ * - on-screen buttons smaller with bigger MouseArea
+ * - test more generic on-screen controls
+ * - no left/right borders
  * (- use polygon fixture for rocket)
- * (- improve graphics of velocity etc.)
  *
  * Some gravitational forces:
  * !- Pluto: 0,62 m/s²
@@ -93,7 +96,6 @@ var items = null;
 var baseUrl = "qrc:/gcompris/src/activities/land_safe/resource";
 var startingHeightReal = 100.0;
 var startingOffsetPx = 10;  // y-value for setting rocket initially
-var gravity = 1;
 var maxLandingVelocity = 10;
 var leftRightAccel = 0.1;   // accel force set on horizontal accel
 //var minAccel = 0.1;
@@ -125,9 +127,21 @@ function initLevel() {
 
     items.bar.level = currentLevel + 1
 
+    // init level:
+    items.accelerometer.min = -levels[currentLevel].gravity;
+    items.accelerometer.max = levels[currentLevel].maxAccel*10-levels[currentLevel].gravity;
+    maxAccel = levels[currentLevel].maxAccel;
+    accelSteps = levels[currentLevel].accelSteps;
+    dAccel = maxAccel / accelSteps;//- minAccel;
+    startingHeightReal = levels[currentLevel].alt;
+    items.gravity = levels[currentLevel].gravity;
+    items.mode = levels[currentLevel].mode;
+    maxFuel = currentFuel = levels[currentLevel].fuel;
+
+    // reset everything:
     items.rocket.explosion.hide();
     // place rocket randomly:
-    var max = items.background.width - items.landing.width-20;
+    var max = items.background.width - items.accelerometer.width - items.landing.width - items.rocket.width;
     var min = 20;
     items.rocket.x = Math.random() * (max- min) + min;
     items.rocket.y = startingOffsetPx;
@@ -136,26 +150,17 @@ function initLevel() {
     items.rocket.leftAccel = 0;
     items.rocket.rightAccel = 0;
     items.rocket.body.linearVelocity = Qt.point(0,0)
-
-    // for landing random placement shall not intersect with bar --
-    // or osd controls on mobile:
-    min = GCompris.ApplicationInfo.isMobile ? items.leftRightControl.width : items.bar.fullButton * items.bar.barZoom;
-    max = GCompris.ApplicationInfo.isMobile ? items.background.width - items.upDownControl.width - items.landing.width : max;
-
+    // for landing random placement shall not intersect with bar -- or osd
+    // controls on mobile:
+    min = items.onScreenControls ? items.leftRightControl.width : items.bar.fullButton * items.bar.barZoom;
+    max = items.onScreenControls ? items.background.width - items.upDownControl.width - items.landing.width : max;
     items.landing.anchors.leftMargin = Math.random() * (max- min) + min;
-
-    maxAccel = levels[currentLevel].maxAccel;
-    accelSteps = levels[currentLevel].accelSteps;
-    dAccel = maxAccel / accelSteps;//- minAccel;
-    startingHeightReal = levels[currentLevel].alt;
-    gravity = levels[currentLevel].gravity;
-    items.mode = levels[currentLevel].mode;
-    maxFuel = currentFuel = levels[currentLevel].fuel;
-
-    items.world.pixelsPerMeter = getHeightPx() / startingHeightReal;
-    items.world.gravity = Qt.point(0, gravity)
-    items.world.running = false;
     items.landing.source = baseUrl + "/landing_green.png";
+
+    // initialize world:
+    items.world.pixelsPerMeter = getHeightPx() / startingHeightReal;
+    items.world.gravity = Qt.point(0, items.gravity)
+    items.world.running = false;
 
 //    console.log("Starting level (surfaceOff=" + items.ground.surfaceOffset + ", ppm=" + items.world.pixelsPerMeter + ")");
 
@@ -207,6 +212,10 @@ function previousLevel() {
 
 function processKeyPress(event)
 {
+    if (!items.world.running) {
+        event.accepted = false;
+        return;
+    }
     var key = event.key;
     event.accepted = true;
     var newAccel = 0;
@@ -248,6 +257,10 @@ function processKeyPress(event)
 
 function processKeyRelease(event)
 {
+    if (!items.world.running) {
+        event.accepted = false;
+        return;
+    }
     var key = event.key;
     event.accepted = true;
     //console.log("XXX release " + key + " = " + event.isAutoRepeat + " = " + Qt.Key_Right);
