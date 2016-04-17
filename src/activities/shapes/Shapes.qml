@@ -121,7 +121,10 @@ ActivityBase {
                 onClicked: {
                     flipable.flipped = true
                     timer.start()
+                    
+                    
                 }
+                
             }
             Timer {
                 id:timer
@@ -140,23 +143,45 @@ ActivityBase {
                 width:250
                 height:250
                 source:"resource/clock.jpg"
+                MouseArea{
+                    anchors.fill:parent
+                    onClicked:Activity.youLoose()	      
+                    
+                }
+                
             }
             Image{
                 width:250
                 height:250
                 source:"resource/stick.jpg"
+                MouseArea{
+                    anchors.fill:parent
+                    onClicked:Activity.youLoose()	      
+                    
+                }
+                
             }
             Image{
                 width:250
                 height:250
                 source:"resource/triangle.jpg"
+                MouseArea{
+                    anchors.fill:parent
+                    onClicked:Activity.youLoose()	      
+                    
+                }
+                
             }
             Image{
                 width:250
                 height:250
                 source:"resource/rainbow.jpg"
-            }
-        }
+                MouseArea{
+                    anchors.fill:parent
+                    onClicked:Activity.youWon()	      
+                    
+                }
+            }}
         
         DialogHelp {
             id: dialogHelp

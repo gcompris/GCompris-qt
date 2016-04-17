@@ -32,6 +32,14 @@ function start(items_) {
     initLevel()
 }
 
+function youWon() {
+    items.bonus.good("flower")
+}
+
+function youLoose(){
+    items.bonus.bad("flower")
+   
+    }
 function stop() {
 }
 
