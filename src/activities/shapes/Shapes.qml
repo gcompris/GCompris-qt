@@ -121,14 +121,14 @@ ActivityBase {
                 onClicked: {
                     flipable.flipped = true
                     timer.start()
-                    
+                    enabled=false
                     
                 }
                 
             }
             Timer {
                 id:timer
-                interval:2000;
+                interval:3000;
                 running:false;
                 repeat:false;
                 onTriggered: flipable.flipped = false
