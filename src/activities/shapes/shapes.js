@@ -32,7 +32,6 @@ function start(items_) {
     initLevel()
 }
 
-<<<<<<< HEAD
 function youWon() {
     items.bonus.good("flower")
 }
@@ -41,8 +40,6 @@ function youLoose(){
     items.bonus.bad("flower")
    
     }
-=======
->>>>>>> 93b78399df286161810c7b82ab12c77c414d1002
 function stop() {
 }
 
