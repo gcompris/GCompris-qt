@@ -19,7 +19,7 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
-import QtQuick 2.1
+import QtQuick 2.3
 import Box2D 2.0
 import QtQuick.Particles 2.0
 import GCompris 1.0
@@ -158,7 +158,7 @@ ActivityBase {
             height: width / 232 * 385
             x: 300
             y: 50
-            z: 3
+            z: 4
 
 //            Component.onCompleted: rocket.body.applyForceToCenter(Qt.point(0, 5));
 
@@ -201,12 +201,12 @@ ActivityBase {
             Image {
                 id: rocketImage
 
-                width: parent.width
-                height: parent.height
                 sourceSize.width: 1024
                 source: Activity.baseUrl + "/rocket.svg";
                 anchors.centerIn: parent
                 anchors.fill: parent
+                z: 4
+                mipmap: true
             }
 
             Image {
@@ -221,6 +221,7 @@ ActivityBase {
                 anchors.bottom: parent.bottom
                 anchors.horizontalCenter: parent.horizontalCenter
                 scale: 0
+                z: 4
 
                 function show() {
                     visible = true;
@@ -437,11 +438,12 @@ ActivityBase {
                     y: landing.surfaceOffset
                 }
             }
-            ColorOverlay {
-                id: overlay
-                anchors.fill: landing
-                source: landing
-            }
+        }
+        ColorOverlay {
+            id: overlay
+            anchors.fill: landing
+            source: landing
+            z: 3
         }
 
         Item {
@@ -533,7 +535,7 @@ ActivityBase {
                 color: "white"
                 fontSize: tinySize
                 horizontalAlignment: Text.AlignRight
-                text: qsTr("Planet: ") + Activity.levels[Activity.currentLevel].planet
+                text: qsTr("Planet: %1").arg(Activity.levels[bar.level-1].planet)
             }
         }
 
