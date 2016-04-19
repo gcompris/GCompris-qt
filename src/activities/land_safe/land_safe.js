@@ -92,7 +92,7 @@ var currentLevel = 0;
 var numberOfLevel;
 var items = null;
 var baseUrl = "qrc:/gcompris/src/activities/land_safe/resource";
-var startingHeightReal = 100.0;
+var startingAltitudeReal = 100.0;
 var startingOffsetPx = 10;  // y-value for setting rocket initially
 var maxLandingVelocity = 10;
 var leftRightAccel = 0.1;   // accel force set on horizontal accel
@@ -105,6 +105,7 @@ var maxFuel = 100.0;
 var currentFuel = 0.0;
 var lastLevel = -1;
 var debugDraw = false;
+var zoomStack = new Array;
 
 function start(items_) {
     items = items_;
@@ -125,13 +126,15 @@ function initLevel() {
 
     items.bar.level = currentLevel + 1
 
+    items.zoom = 1;
+    zoomStack = [];
     // init level:
     items.accelerometer.min = -levels[currentLevel].gravity;
     items.accelerometer.max = levels[currentLevel].maxAccel*10-levels[currentLevel].gravity;
     maxAccel = levels[currentLevel].maxAccel;
     accelSteps = levels[currentLevel].accelSteps;
     dAccel = maxAccel / accelSteps;//- minAccel;
-    startingHeightReal = levels[currentLevel].alt;
+    startingAltitudeReal = levels[currentLevel].alt;
     items.gravity = levels[currentLevel].gravity;
     items.mode = levels[currentLevel].mode;
     maxFuel = currentFuel = levels[currentLevel].fuel;
@@ -156,7 +159,7 @@ function initLevel() {
     items.landing.overlayColor = "#8000ff00";
 
     // initialize world:
-    items.world.pixelsPerMeter = getHeightPx() / startingHeightReal;
+    items.world.pixelsPerMeter = pxYToAltitude(items.rocket.y) / startingAltitudeReal;
     items.world.gravity = Qt.point(0, items.gravity)
     items.world.running = false;
 
@@ -178,20 +181,27 @@ function initLevel() {
     lastLevel = currentLevel;
 }
 
-function getHeightPx()
+function pxAltitudeToY(alt)
 {
-    var heightPx = items.background.height - items.ground.height + items.ground.surfaceOffset
-            - items.rocket.y - items.rocket.height
+    var y = items.background.height - items.ground.height + items.ground.surfaceOffset
+            - items.rocket.height - 1 - alt;
+    return y;
+}
+
+function pxYToAltitude(y)
+{
+    var altPx = items.background.height - items.ground.height + items.ground.surfaceOffset
+            - y - items.rocket.height
             - 1;  // landing is 1 pixel above ground surface
-    return heightPx;
+    return altPx;
 }
 
 // calc real height of rocket in meters above surface
-function getRealHeight()
+function getAltitudeReal()
 {
-    var heightPx = getHeightPx();
-    var heightReal = heightPx / items.world.pixelsPerMeter;
-    return heightReal;
+    var altPx = pxYToAltitude(items.rocket.y);
+    var altReal = altPx / items.world.pixelsPerMeter;
+    return altReal;
 }
 
 function nextLevel() {

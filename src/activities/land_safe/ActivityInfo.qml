@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Holger Kaelberer <holger.k@elberer.de>
+ * Copyright (C) 2016 Holger Kaelberer <holger.k@elberer.de>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

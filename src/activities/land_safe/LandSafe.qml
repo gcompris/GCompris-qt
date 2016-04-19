@@ -59,6 +59,34 @@ ActivityBase {
         signal start
         signal stop
 
+        function changeZoom(newZoom)
+        {
+            var dZoom = newZoom / items.zoom;
+            var curAltReal = Activity.getAltitudeReal();
+            items.world.pixelsPerMeter *= dZoom;
+            var altPx = curAltReal * items.world.pixelsPerMeter;
+            var rdy;
+            var rdx;
+            var ldx;
+            if (dZoom < 1) {
+                rdy = items.rocket.height*dZoom;
+                rdx = items.rocket.width*dZoom/2;
+                ldx = items.landing.width*dZoom/2;
+            } else {
+                rdy = -items.rocket.height/dZoom*2;
+                rdx = -items.rocket.width/dZoom;
+                ldx = -items.landing.width/dZoom;
+            }
+            items.rocket.y = Activity.pxAltitudeToY(altPx) + rdy;
+            items.rocket.x += rdx
+            items.landing.anchors.leftMargin += ldx;
+            items.zoom = newZoom;
+            if (dZoom < 1)
+                Activity.zoomStack.unshift(curAltReal);
+            else
+                Activity.zoomStack.shift();
+        }
+
         Component.onCompleted: {
             activity.start.connect(start)
             activity.stop.connect(stop)
@@ -90,6 +118,7 @@ ActivityBase {
             property double lastVelocity: 0.0
             property double gravity: 0.0
             property double scale: background.height / 400
+            property double zoom: 1.0
             property bool onScreenControls: /* items.world.running && */ ApplicationInfo.isMobile
         }
 
@@ -115,7 +144,7 @@ ActivityBase {
                     landing.overlayColor = "#80ffff00"  // yellowish
                 else
                     landing.overlayColor = "#8000ff00"  // greenish
-                items.altitude = Math.max(0, Math.round(Activity.getRealHeight()));
+                items.altitude = Math.max(0, Math.round(Activity.getAltitudeReal()));
 
                 // update fuel:
                 var dt = timeStep;
@@ -131,8 +160,12 @@ ActivityBase {
                     items.rocket.x = -items.rocket.width;
                 if (items.rocket.x < -items.rocket.width)
                     items.rocket.x = background.width;
-            }
 
+                if (items.rocket.y < 0)
+                    background.changeZoom(items.zoom / 2);
+                else if (Activity.zoomStack.length > 0 && items.altitude < Activity.zoomStack[0]-1)
+                    background.changeZoom(items.zoom * 2);
+            }
         }
 
         MouseArea {
@@ -154,7 +187,7 @@ ActivityBase {
             //property float rotate
 
             rotation: 0
-            width: items.scale * 28// * ApplicationInfo.ratio
+            width: items.scale * 28 * items.zoom// * ApplicationInfo.ratio
             height: width / 232 * 385
             x: 300
             y: 50
@@ -292,8 +325,8 @@ ActivityBase {
                     anchors.centerIn: parent
                     group: "flameLeft"
 
-                    emitRate: rocket.leftAccel > 0 ? 50 * items.scale / 1.9 : 0  // 50
-                    lifeSpan: rocket.leftAccel > 0 ? 600 * items.scale / 1.9 : 0 // 600
+                    emitRate: (rocket.leftAccel > 0 ? 50 * items.scale / 1.9 : 0) * items.zoom // 50
+                    lifeSpan: (rocket.leftAccel > 0 ? 600 * items.scale / 1.9 : 0) * items.zoom // 600
                     size: rocket.leftAccel > 0 ? leftEngine.height : 0
                     endSize: 5
                     sizeVariation: 5
@@ -320,8 +353,8 @@ ActivityBase {
                     anchors.centerIn: parent
                     group: "flameRight"
 
-                    emitRate: rocket.rightAccel > 0 ? 50 * items.scale / 1.9 : 0  // 50
-                    lifeSpan: rocket.rightAccel > 0 ? 600 * items.scale / 1.9 : 0 // 600
+                    emitRate: (rocket.rightAccel > 0 ? 50 * items.scale / 1.9 : 0) * items.zoom  // 50
+                    lifeSpan: (rocket.rightAccel > 0 ? 600 * items.scale / 1.9 : 0) * items.zoom // 600
                     size: rocket.rightAccel > 0 ? rightEngine.height : 0
                     endSize: 5
                     sizeVariation: 5
@@ -347,8 +380,8 @@ ActivityBase {
                     anchors.centerIn: parent
                     group: "flame"
 
-                    emitRate: rocket.accel > 0 ? (80 + 60 * rocket.accel) : 0 // 75-150
-                    lifeSpan: (700 + 450 * rocket.accel) * items.scale / 2.5 // 500 - 1000
+                    emitRate: (rocket.accel > 0 ? (80 + 60 * rocket.accel) : 0) * items.zoom // 75-150
+                    lifeSpan: ((700 + 450 * rocket.accel) * items.scale / 2.5) * items.zoom // 500 - 1000
                     size: rocket.width/1.8 + rocket.width/2*rocket.accel // width*-0.5 - width
                     endSize: size/1.85
                     sizeVariation: 10
@@ -413,7 +446,7 @@ ActivityBase {
             anchors.top: ground.top
             anchors.topMargin: ground.surfaceOffset - height
             sourceSize.width: 1024
-            width: 66 * items.scale
+            width: 66 * items.scale * items.zoom
             height: width / 116 * 34
 
             Body {
