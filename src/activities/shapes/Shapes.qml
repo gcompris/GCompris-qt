@@ -59,131 +59,184 @@ ActivityBase {
         
         
         
-        Flipable {
-            id: flipable
-            width:background.width
-            height:background.height
-            property bool flipped:false
+        Rectangle{
+            id:leftscreen
+            width:background.width/3
+            height: background.height
+            color:"red"
+            opacity: 0.4
+        }
+        
+        Rectangle{
+            id:middlescreen
+            anchors.left: leftscreen.right
+            width:background.width/3
+            height:background.width
+            color:"white"
+            opacity: 0.4
             
-            front:Image{
-                id:cardfront
-                source:"resource/back.png"
-                width:200
-                height:240
-                x:background.width*0.45
-                y:background.height*0.05
-                GCText{
-                    x:cardfront.width*0.1
-                    y:cardfront.height*0.75
-                    color:"#ffffff"
-                    text:qsTr("semicircle")
-                    font.bold:true
-                    fontSize:mediumSize
-                    
-                }
-                
-            }
-            back:Image{
-                id:cardback
-                width:200
-                height:240
-                source:"resource/emptycard.png"
-                x:background.width*0.45
-                y:background.height*0.05
-                Image{
-                    y:cardback.height*0.3
-                    source:"resource/semicircle.png"
-                    width:200
-                    height:100
-                }
-            }
-            transform: Rotation {
-                id: rotation
-                origin.x: background.width*0.45
-                origin.y: background.height*0.05
-                axis.x: 0; axis.y: 1; axis.z: 0     // set axis.y to 1 to rotate around y-axis
-                angle: 0 // the default angle
-            }
-            states:State{
-                name:"back"
-                
-                PropertyChanges{ target:rotation;angle:180
-                    
-                }
-                when:flipable.flipped
-            }
-            
-            transitions: Transition {
-                NumberAnimation { target: rotation; property: "angle"; duration: 750 }
-            }
-            MouseArea {
-                id:myMouse
-                anchors.fill: cardback && cardfront
-                onClicked: {
-                    flipable.flipped = true
-                    timer.start()
-                    enabled=false
-                    
-                }
-                
-            }
-            Timer {
-                id:timer
-                interval:3000;
-                running:false;
-                repeat:false;
-                onTriggered: flipable.flipped = false
-            }
+        }
+        Rectangle{
+            id:rightscreen
+            anchors.left: middlescreen.right
+            width:background.width/3
+            height:background.width
+            color:"green"
+            opacity: 0.4
+        }
+        Image{
+            id:semi
+            anchors.left:leftscreen.right
+            anchors.right:rightscreen.left
+            anchors.leftMargin:200
+            width:120
+            height:120
+            source:"resource/semicircle.png"
+            opacity:1
+        }
+        GCText{
+            id:information
+            anchors.right:semi.left
+            anchors.left:leftscreen.right
+            text:"SEMICIRCLE
+   Half of circle"
+        }
+        DropArea{
+            anchors.fill:rightscreen && leftscreen
         }
         Grid{
-            columns:4
-            spacing:15
-            x:120
-            y:background.height*0.5
-            Image{
-                width:250
-                height:250
+            anchors.left:leftscreen.right
+            anchors.right:rightscreen.left
+            y:150
+            id:options
+            rows:3
+            columns:3
+            spacing:8
+            
+            Image{ id:clock1
                 source:"resource/clock.jpg"
-                MouseArea{
-                    anchors.fill:parent
-                    onClicked:Activity.youLoose()	      
-                    
-                }
+                width:145;height:150
+                Drag.active: dragArea.drag.active
+                Drag.hotSpot.x: 150
+                Drag.hotSpot.y: 150
+                z: Drag.active=1
+                 y: Drag.active=1
+                 x: Drag.active=1
                 
-            }
-            Image{
-                width:250
-                height:250
-                source:"resource/stick.jpg"
-                MouseArea{
+                MouseArea {
+                    id: dragArea
                     anchors.fill:parent
-                    onClicked:Activity.youLoose()	      
-                    
+                    drag.target: parent
                 }
-                
             }
-            Image{
-                width:250
-                height:250
-                source:"resource/triangle.jpg"
-                MouseArea{
+            Image{ source:"resource/protractor.jpg"
+                width:145;height:150
+                Drag.active: dragArea.drag.active
+                Drag.hotSpot.x: 150
+                Drag.hotSpot.y: 150
+                z: Drag.active1=1
+                 y: Drag.active1=1
+                 x: Drag.active1=1
+                MouseArea {
+                    id: dragArea1
                     anchors.fill:parent
-                    onClicked:Activity.youLoose()	      
-                    
+                    drag.target: parent
                 }
-                
             }
-            Image{
-                width:250
-                height:250
-                source:"resource/rainbow.jpg"
-                MouseArea{
+            Image{ source:"resource/rainbow.jpg"
+                width:145;height:150
+                Drag.active: dragArea.drag.active
+                Drag.hotSpot.x: 150
+                Drag.hotSpot.y: 150
+                z: Drag.active2=1
+                 y: Drag.active2=1
+                 x: Drag.active2=1
+                MouseArea {
+                    id: dragArea2
                     anchors.fill:parent
-                    onClicked:Activity.youWon()	      
-                    
+                    drag.target: parent
                 }
-            }}
-        
+            }
+            Image{ source:"resource/watermelon.jpg"
+                width:145;height:150
+                Drag.active: dragArea.drag.active
+                Drag.hotSpot.x: 150
+                Drag.hotSpot.y: 150
+                z: Drag.active3=1
+                 y: Drag.active3=1
+                MouseArea {
+                    id: dragArea3
+                    anchors.fill:parent
+                    drag.target: parent
+                }
+            }
+            Image{ source:"resource/scale.jpg"
+                width:145;height:150
+                Drag.active: dragArea.drag.active
+                Drag.hotSpot.x: 150
+                Drag.hotSpot.y: 150
+                z: Drag.active4=1
+                 y: Drag.active4=1
+                MouseArea {
+                    id: dragArea4
+                    anchors.fill:parent
+                    drag.target: parent
+                }
+            }
+            
+            Image{ source:"resource/triangle.jpg"
+                width:145;height:150
+                Drag.active: dragArea.drag.active
+                Drag.hotSpot.x: 150
+                Drag.hotSpot.y: 150
+                z: Drag.active5=1
+                 y: Drag.active5=1
+                MouseArea {
+                    id: dragArea5
+                    anchors.fill:parent
+                    drag.target: parent
+                }
+            }
+            Image{ source:"resource/case.jpg"
+                width:145;height:150
+                Drag.active: dragArea.drag.active
+                Drag.hotSpot.x: 150
+                Drag.hotSpot.y: 150
+                z: Drag.active6=1
+                 y: Drag.active6=1
+                MouseArea {
+                    id: dragArea6
+                    anchors.fill:parent
+                    drag.target: parent
+                }
+            }
+            Image{ source:"resource/biscuit.jpg"
+                width:145;height:150
+                Drag.active: dragArea.drag.active
+                Drag.hotSpot.x: 150
+                Drag.hotSpot.y: 150
+                z: Drag.active7=1
+                y: Drag.active7=1
+               MouseArea {
+                    id: dragArea7
+                    anchors.fill:parent
+                    drag.target: parent
+                }
+            }
+            Image{ source:"resource/fan.jpg"
+                width:145;height:150
+                Drag.active: dragArea.drag.active
+                Drag.hotSpot.x: 150
+                Drag.hotSpot.y: 150
+                z: Drag.active8=1
+                y: Drag.active8=1
+                MouseArea {
+                    id: dragArea8
+                    anchors.fill:parent
+                    drag.target: parent
+                }
+            }
+        }
         DialogHelp {
             id: dialogHelp
             onClose: home()
