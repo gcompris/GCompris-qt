@@ -108,17 +108,17 @@ ActivityBase {
                       addNbsp(qsTr("%n hour(s)", "", items.targetH)) + " " +
                       //~ singular %n minute
                       //~ plural %n minutes
-                      addNbsp(qsTr("%n&nbsp;minute(s)", "", items.targetM)) +
+                      addNbsp(qsTr("%n minute(s)", "", items.targetM)) +
                       //~ singular %n second
                       //~ plural %n seconds
                       (s.visible ? " " + addNbsp(qsTr("%n second(s)", "", items.targetS)) : "")
-                fontSize: 18
+                fontSize: mediumSize
                 textFormat: Text.RichText
                 font.weight: Font.DemiBold
                 color: "white"
                 horizontalAlignment: Text.AlignHCenter
                 wrapMode: Text.WordWrap
-                width: clock.width
+                width: background.width
                 anchors {
                     horizontalCenter: parent.horizontalCenter
                     top: parent.top
@@ -220,6 +220,7 @@ ActivityBase {
                 GCText {
                     text: index + 1
                     font {
+                        pointSize: NaN  // need to clear font.pointSize explicitly
                         pixelSize: Math.max(clock.radius / 30, 1)
                         bold: items.currentH === ((index + 1) % 12)
                         underline: items.currentH === ((index + 1) % 12)
