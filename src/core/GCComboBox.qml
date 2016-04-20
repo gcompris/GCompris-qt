@@ -111,11 +111,11 @@ Item {
             implicitWidth: Math.max(200, currentTextBox.width+radius)
             implicitHeight: 50 * ApplicationInfo.ratio
             border.width: 2
-            border.color: "black"
+            border.color: "#373737"
             radius: 10
             gradient: Gradient {
-                GradientStop { position: 0 ; color: mouseArea.pressed ? "#87ff5c" : "#ffe85c" }
-                GradientStop { position: 1 ; color: mouseArea.pressed ? "#44ff00" : "#f8d600" }
+                GradientStop { position: 0 ; color: mouseArea.pressed ? "#C03ACAFF" : "#23373737" }
+                GradientStop { position: 1 ; color: mouseArea.pressed ? "#803ACAFF" : "#13373737" }
             }
             // Current value of combobox
             GCText {
@@ -124,6 +124,7 @@ Item {
                 anchors.verticalCenter: parent.verticalCenter
                 text: currentText
                 fontSize: mediumSize
+                color: "#373737"
             }
             MouseArea {
                 id: mouseArea
