@@ -142,7 +142,7 @@ ActivityBase {
                         id: undo
                         height: 30 * ApplicationInfo.ratio
                         text: qsTr("Undo");
-                        style: GCButtonStyle {}
+                        style: GCButtonStyle { theme: "light" }
                         onClicked: Activity.undo()
                         enabled: items.history.length > 0 ? 1 : 0
                         opacity: enabled
@@ -158,7 +158,7 @@ ActivityBase {
                         id: redo
                         height: 30 * ApplicationInfo.ratio
                         text: qsTr("Redo");
-                        style: GCButtonStyle {}
+                        style: GCButtonStyle { theme: "light" }
                         onClicked: {
                             if (!twoPlayers) {
                                 acceptClick = false;
@@ -180,7 +180,7 @@ ActivityBase {
                     Button {
                         height: 30 * ApplicationInfo.ratio
                         text: qsTr("Swap");
-                        style: GCButtonStyle {}
+                        style: GCButtonStyle { theme: "light" }
                         enabled: items.twoPlayer
                         opacity: enabled
                         onClicked: chessboard.swap()

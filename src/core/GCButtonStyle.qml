@@ -40,13 +40,49 @@ ButtonStyle {
      */
     property real fixedFontSize: -1
 
+    /**
+     * type:string
+     * theme of the button. For now, two themes are accepted: "light" and "dark"
+     *
+     * Default is dark.
+    */
+    property string theme: "dark"
+
+    /**
+     * type:variant
+     * existing themes for the button.
+     * A theme is composed of:
+     *   the colors of the button when selected: selectedColorGradient0 and selectedColorGradient1.
+     *   the colors of the button when not selected: backgroundColorGradient0 and backgroundColorGradient1.
+     *   the button's border color
+     *   the text color
+    */
+    property variant themes: {
+        "dark": {
+            backgroundColorGradient0: "#FFE85C",
+            selectedColorGradient0: "#87FF5C",
+            backgroundColorGradient1: "#F8D600",
+            selectedColorGradient1: "#44FF00",
+            borderColor: "black",
+            textColor: "black"
+        },
+        "light": {
+            backgroundColorGradient0: "#42FFFFFF",
+            selectedColorGradient0: "#C03ACAFF",
+            backgroundColorGradient1: "#23FFFFFF",
+            selectedColorGradient1: "#803ACAFF",
+            borderColor: "white",
+            textColor: "white"
+        }
+    }
+
     background: Rectangle {
         border.width: control.activeFocus ? 4 : 2
-        border.color: "white"
+        border.color: themes[theme].borderColor
         radius: 10
         gradient: Gradient {
-            GradientStop { position: 0 ; color: control.pressed ? "#C03ACAFF" : "#42FFFFFF" }
-            GradientStop { position: 1 ; color: control.pressed ? "#803ACAFF" : "#23FFFFFF" }
+            GradientStop { position: 0 ; color: control.pressed ? themes[theme].selectedColorGradient0 : themes[theme].backgroundColorGradient0 }
+            GradientStop { position: 1 ; color: control.pressed ? themes[theme].selectedColorGradient1 : themes[theme].backgroundColorGradient1 }
         }
     }
     label: Item {
@@ -57,7 +93,7 @@ ButtonStyle {
 
         GCText {
             id: labelText
-            color: "white"
+            color: themes[theme].textColor
             text: control.text
             fontSize: regularSize
             anchors.verticalCenter: parent.verticalCenter
