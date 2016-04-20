@@ -59,12 +59,12 @@ ButtonStyle {
     */
     property variant themes: {
         "dark": {
-            backgroundColorGradient0: "#FFE85C",
-            selectedColorGradient0: "#87FF5C",
-            backgroundColorGradient1: "#F8D600",
-            selectedColorGradient1: "#44FF00",
-            borderColor: "black",
-            textColor: "black"
+            backgroundColorGradient0: "#23373737",
+            selectedColorGradient0: "#C03ACAFF",
+            backgroundColorGradient1: "#13373737",
+            selectedColorGradient1: "#803ACAFF",
+            borderColor: "#FF373737",
+            textColor: "#FF373737"
         },
         "light": {
             backgroundColorGradient0: "#42FFFFFF",
