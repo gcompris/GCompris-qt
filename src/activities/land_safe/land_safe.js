@@ -21,21 +21,21 @@
  */
 
 /* ToDo:
- * - zoom out if too high!
  * - check for shader availability
- * - reduce difficulty: no fuel limits at lower levels
  * - test more generic on-screen controls
  * (- use polygon fixture for rocket)
  *
  * Some gravitational forces:
+ * !- Ceres 0,27
  * !- Pluto: 0,62 m/s²
- * - Titan: 1,352 m/s²
+ * !- Titan: 1,352 m/s²
+ * - Ganymed: 1,428
  * !- Moon: 1,622 m/s²
  * - Io: 1,796 m/s²
  * !- Mars: 3,711 m/s²
  * - Merkur: 3,7 m/s²
  * !- Venus: 8,87 m/s²
- * - Earth: 9,807 m/s²
+ * !- Earth: 9,807 m/s²
  * - Jupiter: 24,79 m/s²
  */
 
@@ -45,38 +45,51 @@
 
 var levels = [
                                 /**  simple  **/
-            {   "planet": qsTr("Pluto"),  "gravity": 0.62,    "maxAccel": 0.2,
-                "accelSteps": 3,    "alt": 100.0,       "mode": "simple",
-                "fuel" : 5 },
-            {   "planet": qsTr("Moon"),   "gravity": 1.62,    "maxAccel": 0.4,
-                "accelSteps": 4,    "alt": 150.0,       "mode": "simple",
+            {   "planet": qsTr("Ceres"),    "gravity":  0.27,   "maxAccel": 0.054,
+                "accelSteps": 2,            "alt": 75.0 ,       "mode": "simple",
+                "fuel" : -1 },
+            {   "planet": qsTr("Pluto"),    "gravity":  0.62,   "maxAccel": 0.186,
+                "accelSteps": 3,            "alt": 100.0,       "mode": "simple",
+                "fuel" : -1 },
+            {   "planet": qsTr("Titan"),    "gravity": 1.352,   "maxAccel": 0.406,
+                "accelSteps": 3,            "alt": 100.0,       "mode": "simple",
+                "fuel" : -1 },
+            {   "planet": qsTr("Moon"),     "gravity": 1.622,   "maxAccel": 0.324,
+                "accelSteps": 4,            "alt": 150.0,       "mode": "simple",
                 "fuel" : 10 },
-            {   "planet": qsTr("Mars"),   "gravity": 3.71,    "maxAccel": 0.6,
-                "accelSteps": 5,    "alt": 200.0,       "mode": "simple",
+            {   "planet": qsTr("Mars"),     "gravity": 3.711,   "maxAccel": 0.619,
+                "accelSteps": 5,            "alt": 200.0,       "mode": "simple",
                 "fuel" : 20 },
-            {   "planet": qsTr("Vulc@n"), "gravity": 5.55,    "maxAccel": 1.0,
-                "accelSteps": 5,    "alt": 300.0,       "mode": "simple",
-                "fuel" : 30 },
-            {   "planet": qsTr("Venus"),  "gravity": 8.87,    "maxAccel": 1.2,
-                "accelSteps": 5,    "alt": 300.0,       "mode": "simple",
+            {   "planet": qsTr("Venus"),    "gravity":  8.87,   "maxAccel": 1.331,
+                "accelSteps": 6,            "alt": 300.0,       "mode": "simple",
+                "fuel" : 70 },
+            {   "planet": qsTr("Earth"),    "gravity": 9.807,   "maxAccel": 1.373,
+                "accelSteps": 7,            "alt": 350.0,       "mode": "simple",
                 "fuel" : 70 },
 
                                 /**  rotation  **/
-            {   "planet": qsTr("Pluto"),  "gravity": 0.62,    "maxAccel": 0.2,
-                "accelSteps": 3,    "alt": 100.0,       "mode": "rotation",
-                "fuel" : 5 },
-            {   "planet": qsTr("Moon"),   "gravity": 1.62,    "maxAccel": 0.4,
-                "accelSteps": 4,    "alt": 150.0,       "mode": "rotation",
+            {   "planet": qsTr("Ceres"),    "gravity":  0.27,   "maxAccel": 0.054,
+                "accelSteps": 2,            "alt": 75.0 ,       "mode": "rotation",
+                "fuel" : -1 },
+            {   "planet": qsTr("Pluto"),    "gravity":  0.62,   "maxAccel": 0.186,
+                "accelSteps": 3,            "alt": 100.0,       "mode": "rotation",
+                "fuel" : -1 },
+            {   "planet": qsTr("Titan"),    "gravity": 1.352,   "maxAccel": 0.406,
+                "accelSteps": 3,            "alt": 100.0,       "mode": "simple",
+                "fuel" : -1 },
+            {   "planet": qsTr("Moon"),     "gravity":  1.62,   "maxAccel": 0.324,
+                "accelSteps": 4,            "alt": 150.0,       "mode": "rotation",
                 "fuel" : 10 },
-            {   "planet": qsTr("Mars"),   "gravity": 3.71,    "maxAccel": 0.6,
-                "accelSteps": 5,    "alt": 200.0,       "mode": "rotation",
+            {   "planet": qsTr("Mars"),     "gravity":  3.71,   "maxAccel": 0.619,
+                "accelSteps": 5,            "alt": 200.0,       "mode": "rotation",
                 "fuel" : 20 },
-            {   "planet": qsTr("Vulc@n"), "gravity": 5.55,    "maxAccel": 1.0,
-                "accelSteps": 5,    "alt": 300.0,       "mode": "rotation",
-                "fuel" : 30 },
-            {   "planet": qsTr("Venus"),  "gravity": 8.87,    "maxAccel": 1.2,
-                "accelSteps": 5,    "alt": 300.0,       "mode": "rotation",
+            {   "planet": qsTr("Venus"),    "gravity":  8.87,   "maxAccel": 1.331,
+                "accelSteps": 5,            "alt": 300.0,       "mode": "rotation",
+                "fuel" : 70 },
+            {   "planet": qsTr("Earth"),    "gravity": 9.807,   "maxAccel": 1.373,
+                "accelSteps": 7,            "alt": 350.0,       "mode": "rotation",
                 "fuel" : 70 }
+
 ];
 
 var introTextSimple = qsTr("Use the up and down keys to control the thrust."
@@ -137,7 +150,8 @@ function initLevel() {
     startingAltitudeReal = levels[currentLevel].alt;
     items.gravity = levels[currentLevel].gravity;
     items.mode = levels[currentLevel].mode;
-    maxFuel = currentFuel = levels[currentLevel].fuel;
+    maxFuel = levels[currentLevel].fuel;
+    currentFuel = (maxFuel == -1 ? 1 : maxFuel); // -1 means unlimited fuel
 
     // reset everything:
     items.rocket.explosion.hide();
@@ -169,7 +183,7 @@ function initLevel() {
         items.ok.visible = false;
         items.intro.intro = [introTextSimple];
         items.intro.index = 0;
-    } else if (currentLevel === 5 && lastLevel !== 0) {
+    } else if (currentLevel === levels.length / 2 && lastLevel !== 0) {
         items.ok.visible = false;
         items.intro.intro = [introTextRotate];
         items.intro.index = 0;
@@ -236,7 +250,7 @@ function processKeyPress(event)
         } else if (key === Qt.Key_Down)
             newAccel = items.rocket.accel - dAccel;
 
-        if (newAccel < dAccel)
+        if (newAccel < 0)
             newAccel = 0;
         if (newAccel > maxAccel)
             newAccel = maxAccel;

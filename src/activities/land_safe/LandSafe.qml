@@ -114,7 +114,7 @@ ActivityBase {
             property string mode: "rotate"  // "simple"
             property double velocity: 0.0
             property double altitude: 0.0
-            property double fuel: 0.0
+            property double fuel: 100
             property double lastVelocity: 0.0
             property double gravity: 0.0
             property double scale: background.height / 400
@@ -146,15 +146,17 @@ ActivityBase {
                     landing.overlayColor = "#8000ff00"  // greenish
                 items.altitude = Math.max(0, Math.round(Activity.getAltitudeReal()));
 
-                // update fuel:
-                var dt = timeStep;
-                var dFuel = -(dt * (items.rocket.accel + items.rocket.leftAccel
-                                    + items.rocket.rightAccel));
-                Activity.currentFuel = Math.max(0, Activity.currentFuel + dFuel);
-                items.fuel = Math.round(Activity.currentFuel / Activity.maxFuel * 100);
-                if (Activity.currentFuel === 0)
-                    // fuel consumed:
-                    items.rocket.accel = items.rocket.leftAccel = items.rocket.rightAccel = 0;
+                if (Activity.maxFuel != -1) {
+                    // update fuel:
+                    var dt = timeStep;
+                    var dFuel = -(dt * (items.rocket.accel + items.rocket.leftAccel
+                                        + items.rocket.rightAccel));
+                    Activity.currentFuel = Math.max(0, Activity.currentFuel + dFuel);
+                    items.fuel = Math.round(Activity.currentFuel / Activity.maxFuel * 100);
+                    if (Activity.currentFuel === 0) // fuel consumed
+                        items.rocket.accel = items.rocket.leftAccel = items.rocket.rightAccel = 0;
+                } else
+                    items.fuel = 100;
 
                 if (items.rocket.x > background.width)
                     items.rocket.x = -items.rocket.width;
@@ -329,7 +331,7 @@ ActivityBase {
                     lifeSpan: (rocket.leftAccel > 0 ? 600 * items.scale / 1.9 : 0) * items.zoom // 600
                     size: rocket.leftAccel > 0 ? leftEngine.height : 0
                     endSize: 5
-                    sizeVariation: 5
+                    sizeVariation: 3
                     acceleration: PointDirection { x: -40 }
                     velocity: PointDirection { x: -40 }
                 }
@@ -357,7 +359,7 @@ ActivityBase {
                     lifeSpan: (rocket.rightAccel > 0 ? 600 * items.scale / 1.9 : 0) * items.zoom // 600
                     size: rocket.rightAccel > 0 ? rightEngine.height : 0
                     endSize: 5
-                    sizeVariation: 5
+                    sizeVariation: 3
                     acceleration: PointDirection { x: 40 }
                     velocity: PointDirection { x: 40 }
                 }
@@ -384,7 +386,7 @@ ActivityBase {
                     lifeSpan: ((700 + 450 * rocket.accel) * items.scale / 2.5) * items.zoom // 500 - 1000
                     size: rocket.width/1.8 + rocket.width/2*rocket.accel // width*-0.5 - width
                     endSize: size/1.85
-                    sizeVariation: 10
+                    sizeVariation: 5
                     acceleration: PointDirection { y: 80 }
                     velocity: PointDirection { y: 80 }
                 }
@@ -568,7 +570,7 @@ ActivityBase {
                 color: "white"
                 fontSize: tinySize
                 horizontalAlignment: Text.AlignRight
-                text: qsTr("Planet: %1").arg(Activity.levels[bar.level-1].planet)
+                text: Activity.levels[bar.level-1].planet
             }
         }
 
