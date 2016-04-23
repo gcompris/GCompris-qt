@@ -47,7 +47,7 @@ def download_file(file, output_dir):
 # argv[3]: output directory (rcc directory)
 if len(sys.argv) != 4:
     print "Usage: download-assets.py \"words,full,en,fr,pt_BR\""
-    sys.exit(1)
+    sys.exit(0)
 
 """Download the voices and words assets depending on the wanted audio format
 """
