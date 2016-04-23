@@ -604,7 +604,7 @@ Item {
 
         if (ApplicationSettings.locale != dialogConfig.languages[languageBox.currentIndex].locale) {
             ApplicationSettings.locale = dialogConfig.languages[languageBox.currentIndex].locale
-            if(!DownloadManager.isDataRegistered(
+            if(ApplicationInfo.isDownloadAllowed && !DownloadManager.isDataRegistered(
                         "voices-" + ApplicationInfo.CompressedAudio + "/" +
                         ApplicationInfo.getVoicesLocale(dialogConfig.languages[languageBox.currentIndex].locale)
                         ))
@@ -621,9 +621,11 @@ Item {
                 qsTr("No"), null,
                 null
                 );
-            } else // check for updates or/and register new voices
-            DownloadManager.updateResource(
-            DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale))
+            } else {
+                // check for updates or/and register new voices
+                DownloadManager.updateResource(
+                            DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale))
+            }
         }
     }
 
