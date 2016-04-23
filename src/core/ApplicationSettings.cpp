@@ -22,6 +22,8 @@
 #include "ApplicationSettings.h"
 #include "ApplicationInfo.h"
 
+#include "DownloadManager.h"
+
 #include <qmath.h>
 #include <QUrl>
 #include <QUrlQuery>
@@ -356,6 +358,14 @@ void ApplicationSettings::notifySectionVisibleChanged()
 
 void ApplicationSettings::notifyWordsetChanged()
 {
+    if(!m_wordset.isEmpty() &&
+       DownloadManager::getInstance()->haveLocalResource(m_wordset) &&
+       !DownloadManager::getInstance()->isDataRegistered("words")) {
+        // words.rcc is there -> register old file first
+        // then try to update in the background
+        DownloadManager::getInstance()->updateResource(m_wordset);
+    }
+
     updateValueInConfig(GENERAL_GROUP_KEY, WORDSET, m_wordset);
     qDebug() << "notifyWordset: " << m_wordset;
 }

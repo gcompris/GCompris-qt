@@ -177,14 +177,25 @@ Window {
         else {
             // Register voices-resources for current locale, updates/downloads only if
             // not prohibited by the settings
-            if (!DownloadManager.areVoicesRegistered())
+            if (!DownloadManager.areVoicesRegistered()) {
                 if (DownloadManager.updateResource(
                             DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale))) {
                     DownloadManager.downloadFinished.connect(function() {
                         checkWordset();
                         DownloadManager.downloadFinished.disconnect(arguments.callee);
                     });
-            } else
+                    DownloadManager.resourceRegistered.connect(function() {
+                        // not sure if needed, we check if the resource registered is the one we updated here?
+                        if(DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale) === arguments[0]) {
+                            DownloadManager.resourceRegistered.disconnect(arguments.callee);
+                            checkWordset();
+                        }
+                    });
+                }
+                else
+                    checkWordset()
+            }
+            else
                 checkWordset()
 
             if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
