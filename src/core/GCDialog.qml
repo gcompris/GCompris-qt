@@ -105,6 +105,8 @@ Item {
     Behavior on opacity { NumberAnimation { duration: 200 } }
     onOpacityChanged: opacity === 0 ? close() : null
 
+    z: 1500
+
     Rectangle {
         anchors.fill: parent
         opacity: 0.8
