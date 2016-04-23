@@ -37,7 +37,7 @@ In higher levels, you can use the right/left keys to rotate the spaceship. By ro
 
 The landing platform is green if your speed is fine for a safe landing.")
   credit: ""
-  section: "experiments"
+  section: "experiment"
   enabled: true //ApplicationInfo.hasShader
   createdInVersion: 6000
 }

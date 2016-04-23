@@ -234,12 +234,11 @@ function previousLevel() {
 
 function processKeyPress(event)
 {
-    if (!items.world.running) {
-        event.accepted = false;
-        return;
-    }
     var key = event.key;
     event.accepted = true;
+    if (!items.world.running) {
+        return;
+    }
     var newAccel = 0;
     if (key === Qt.Key_Up || key === Qt.Key_Down) {
         if (key === Qt.Key_Up) {
@@ -273,8 +272,7 @@ function processKeyPress(event)
                 items.rocket.rotation -= 10;
             //console.log("XXX rotation=" + items.rocket.rotation + " bodyRot=" + items.rocket.body.rotation);
         }
-    } else
-        event.accepted = false;
+    }
 }
 
 function processKeyRelease(event)

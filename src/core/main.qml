@@ -192,11 +192,13 @@ Window {
                         }
                     });
                 }
-                else
+                else {
                     checkWordset()
+                }
             }
-            else
+            else {
                 checkWordset()
+            }
 
             if(changelog.isNewerVersion(ApplicationSettings.lastGCVersionRan, ApplicationInfo.GCVersionCode)) {
                 // display log between ApplicationSettings.lastGCVersionRan and ApplicationInfo.GCVersionCode
