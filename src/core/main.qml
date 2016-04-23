@@ -178,7 +178,7 @@ Window {
             // Register voices-resources for current locale, updates/downloads only if
             // not prohibited by the settings
             if (!DownloadManager.areVoicesRegistered())
-                if (DownloadManager.downloadResource(
+                if (DownloadManager.updateResource(
                             DownloadManager.getVoicesResourceForLocale(ApplicationSettings.locale))) {
                     DownloadManager.downloadFinished.connect(function() {
                         checkWordset();
