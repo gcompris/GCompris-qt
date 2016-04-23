@@ -39,6 +39,5 @@ ActivityInfo {
   credit: qsTr("The images and voices come from the Art4Apps project: http://www.art4apps.org/.<br>"
            + "You can also access this activity online on http://gcompris.net/activity/lang.")
   section: "reading"
-  enabled: DownloadManager.isDataRegistered("words") || ApplicationInfo.isDownloadAllowed
   createdInVersion: 5000
 }
