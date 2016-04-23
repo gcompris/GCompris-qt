@@ -64,7 +64,8 @@ DownloadManager::DownloadManager()
         QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/data" <<
         QStandardPaths::writableLocation(QStandardPaths::DataLocation) + "/data2";
 
-    Q_FOREACH( QDir prevDir, previousDataLocations ) {
+    for(auto it = previousDataLocations.begin(); it != previousDataLocations.end() ; ++ it) {
+        QDir &prevDir = *it;
         if(prevDir.exists()) {
             if(prevDir.dirName() == "data2") {
                 qDebug() << "Data changed place, move from previous folder to the new one";
