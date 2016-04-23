@@ -222,7 +222,7 @@ bool DownloadManager::downloadResource(const QString& path)
 void DownloadManager::registerLocalResources()
 {
     QStringList filenames = getLocalResources();
-    if (filenames == QStringList()) {
+    if (filenames.empty()) {
         qDebug() << "No local resources found";
         return;
     }
@@ -235,7 +235,7 @@ void DownloadManager::registerLocalResources()
 bool DownloadManager::checkForUpdates()
 {
     QStringList filenames = getLocalResources();
-    if (filenames == QStringList()) {
+    if (filenames.empty()) {
         qDebug() << "No local resources found";
         return true;
     }
@@ -382,6 +382,7 @@ inline QStringList DownloadManager::getSystemResourcePaths() const
 {
 
     QStringList results({
+        QCoreApplication::applicationDirPath() + "/" + QString(GCOMPRIS_DATA_FOLDER) + "/rcc/",
         getSystemDownloadPath(),
 #if defined(Q_OS_ANDROID)
         "assets:",

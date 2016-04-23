@@ -196,7 +196,7 @@ add_custom_target(getSvnTranslations
   COMMENT "Re-run cmake after this to be able to run BuildTranslations with the latest files"
   )
 
-# Get all po files in po/. You can get them doing : python2 tools/l10n-fetch-po-files.py
+# Get all po files in po/. You can get them doing: python2 tools/l10n-fetch-po-files.py
 file(GLOB TRANSLATIONS_FILES RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} "po/*.po")
 # Set the output dir for the translation files to /bin
 foreach(PoSource ${TRANSLATIONS_FILES})
@@ -287,6 +287,27 @@ add_custom_target(
   createMp3FromOgg
   DEPENDS ${MP3_FILES}
   )
+
+# predownload assets (voices and images) and install them in the rcc folder
+set(DOWNLOAD_ASSETS "" CACHE STRING "Download and packages images and voices. use a list like: words,en,fr,pt_BR to retrieve multiple files")
+add_custom_command(
+    OUTPUT predownloadAssets
+    COMMAND python2 tools/download-assets.py ${DOWNLOAD_ASSETS} ${COMPRESSED_AUDIO} ${GCOMPRIS_RCC_DIR}
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+    )
+
+add_custom_command(
+  OUTPUT assetsFolders
+  COMMAND cmake -E make_directory "${GCOMPRIS_RCC_DIR}/data2"
+  COMMAND cmake -E make_directory "${GCOMPRIS_RCC_DIR}/data2/voices-${COMPRESSED_AUDIO}"
+  COMMAND cmake -E make_directory "${GCOMPRIS_RCC_DIR}/data2/words"
+  )
+# Install assets
+add_custom_target(getAssets
+  DEPENDS assetsFolders predownloadAssets
+  )
+
+
 
 set(ARCHIVE_NAME ${CMAKE_PROJECT_NAME}-${GCOMPRIS_VERSION})
 add_custom_target(dist
