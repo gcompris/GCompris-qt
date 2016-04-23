@@ -239,7 +239,8 @@ ActivityBase {
         }
     }
 
-    property variant categoriesTranslations: {"other": qsTr("other"),
+    property variant categoriesTranslations: {"otherChapter": qsTr("other"),
+        "otherLesson": qsTr("other"),
         "action": qsTr("action"), "adjective": qsTr("adjective"),
         "color": qsTr("color"), "number": qsTr("number"),
         "people": qsTr("people"), "bodyparts": qsTr("bodyparts"),
