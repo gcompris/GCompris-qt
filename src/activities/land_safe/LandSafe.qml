@@ -300,7 +300,7 @@ ActivityBase {
                         //console.log("XXX beginning contact with " + other.getBody().target.collisionName + " abs v=" + Math.abs(items.lastVelocity) + + " maxV=" + Activity.maxLandingVelocity);
                         if (other.getBody().target === landing &&
                                 Math.abs(items.lastVelocity) <= Activity.maxLandingVelocity &&
-                                (items.mode === "simple" || rocket.rotation === 0))
+                                (items.mode === "simple" || rocket.rotation%360 === 0))
                             Activity.finishLevel(true);
                         else // ground
                             Activity.finishLevel(false); // crash
