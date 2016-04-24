@@ -382,7 +382,7 @@ inline QStringList DownloadManager::getSystemResourcePaths() const
 {
 
     QStringList results({
-        QCoreApplication::applicationDirPath() + "/" + QString(GCOMPRIS_DATA_FOLDER) + "/rcc/",
+        QCoreApplication::applicationDirPath() + '/' + QString(GCOMPRIS_DATA_FOLDER) + "/rcc/",
         getSystemDownloadPath(),
 #if defined(Q_OS_ANDROID)
         "assets:",
