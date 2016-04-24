@@ -18,10 +18,10 @@
 import GCompris 1.0
 
 ActivityInfo {
-  name: "PhotoHunter/PhotoHunter.qml"
-  difficulty: 1
-  icon: "PhotoHunter/PhotoHunter.svg"
-  author: "Stefan Toncu &lt;stefan.toncu@cti.pub.ro&gt;"
+  name: "photo_hunter/PhotoHunter.qml"
+  difficulty: 2
+  icon: "photo_hunter/photo_hunter.svg"
+  author: "Stefan Toncu &lt;stefan.toncu29@gmail.com&gt;"
   demo: true
   title: qsTr("Photo Hunter")
   description: qsTr("Find the differences between the two pictures!")

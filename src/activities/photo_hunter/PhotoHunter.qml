@@ -23,7 +23,7 @@ import QtQuick 2.1
 import GCompris 1.0
 
 import "../../core"
-import "PhotoHunter.js" as Activity
+import "photo_hunter.js" as Activity
 
 ActivityBase {
     id: activity
@@ -69,7 +69,7 @@ ActivityBase {
         property double barHeight: (items.barHeightAddon == 1) ? 0 : bar.height
 
         function checkAnswer() {
-            if (items.img1.good + items.img2.good === items.model.length) {
+            if (items.totalFound === items.model.length) {
                 bonus.good("flower")
 
                 //remove the problem from the board after first level
@@ -114,6 +114,10 @@ ActivityBase {
             //left/top image
             Observe {
                 id: img1
+                sourceSize.width: background.vert ? undefined : (background.width - 30) / 2
+                sourceSize.height: background.vert ?
+                                       (background.height - background.barHeight - 40) /2 :
+                                       background.height - background.barHeight - 30
                 show: true
                 anchors {
                     top: parent.top
@@ -125,6 +129,10 @@ ActivityBase {
             //right/bottom image
             Observe {
                 id: img2
+                sourceSize.width: background.vert ? undefined : (background.width - 30) / 2
+                sourceSize.height: background.vert ?
+                                       (background.height - background.barHeight - 40) /2 :
+                                       background.height - background.barHeight - 30
                 show: false
                 anchors {
                     top: background.vert ? img1.bottom : parent.top

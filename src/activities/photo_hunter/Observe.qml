@@ -23,15 +23,10 @@ import QtQuick 2.1
 import GCompris 1.0
 
 import "../../core"
-import "PhotoHunter.js" as Activity
+import "photo_hunter.js" as Activity
 
 Image {
     id: card
-
-    sourceSize.width: background.vert ? undefined : (background.width - 30) / 2
-    sourceSize.height: background.vert ?
-                           (background.height - background.barHeight - 40) /2 :
-                           background.height - background.barHeight - 30
 
     property GCAudio audioEffects: activity.audioEffects
     property alias repeater: repeater
@@ -48,18 +43,20 @@ Image {
     }
 
     NumberAnimation {
-        id: wrongAnim;
-        target: wrong;
-        property: "opacity";
-        from: 0; to: 1;
+        id: wrongAnim
+        target: wrong
+        property: "opacity"
+        from: 0
+        to: 1
         duration: 400
     }
 
     NumberAnimation {
-        id: wrongAnim2;
-        target: wrong;
-        property: "opacity";
-        from: 1; to: 0;
+        id: wrongAnim2
+        target: wrong
+        property: "opacity"
+        from: 1
+        to: 0
         duration: 400
     }
 
@@ -96,10 +93,11 @@ Image {
             y: modelData[1] * card.height / 1700
 
             NumberAnimation {
-                id: differenceAnimation;
-                target: photo;
-                property: "opacity";
-                from: 0; to: 1;
+                id: differenceAnimation
+                target: photo
+                property: "opacity"
+                from: 0
+                to: 1
                 duration: 500
             }
 
@@ -108,7 +106,7 @@ Image {
             Loader {
                 id: particleLoader
                 anchors.fill: parent
-                active: false
+                active: true
                 sourceComponent: particle
             }
 
@@ -120,39 +118,12 @@ Image {
                 }
             }
 
-            function showParticles(item,index) {
-                item.repeater.itemAt(index).particleLoader.active = active
-                item.repeater.itemAt(index).particleLoader.item.burst(40)
-            }
-
             MouseArea {
                 id: mouseArea
                 anchors.fill: parent
                 onClicked: {
-                    //only if the difference is not yet spotted
-                    if (img2.repeater.itemAt(index).opacity === 0) {
-                        // play good sound
-                        audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
-
-                        //activate the particle loader
-                        photo.showParticles(img1,index)
-                        photo.showParticles(img2,index)
-
-                        // show the actual difference on the second image
-                        img2.repeater.itemAt(index).differenceAnimation.start()
-
-                        // scale animation for the blue circle
-                        img1.circleRepeater.itemAt(index).scaleAnim.start()
-                        img2.circleRepeater.itemAt(index).scaleAnim.start()
-
-                        // set opacity of circle differences to 1
-                        img1.circleRepeater.itemAt(index).opacity = 1
-                        img2.circleRepeater.itemAt(index).opacity = 1
-
-                        // all good; check if all the differences have been spotted
-                        good++
-                        background.checkAnswer()
-                    }
+                    Activity.photoClicked(card,index)
+                    audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
                 }
             }
         }
@@ -178,10 +149,11 @@ Image {
             property alias scaleAnim: scaleAnim
 
             NumberAnimation {
-                id: scaleAnim;
-                target: circle;
-                property: "scale";
-                from: 0; to: circle.scale;
+                id: scaleAnim
+                target: circle
+                property: "scale"
+                from: 0
+                to: circle.scale
                 duration: 700
             }
         }
