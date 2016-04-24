@@ -1,10 +1,10 @@
 /* GCompris - PhotoHunter.qml
  *
- * Copyright (C) 2016 Stefan Toncu <stefan.toncu@cti.pub.ro>
+ * Copyright (C) 2016 Stefan Toncu <stefan.toncu29@gmail.com>
  *
  * Authors:
  *   <Marc Le Douarain> (GTK+ version)
- *   Stefan Toncu <stefan.toncu@cti.pub.ro> (Qt Quick port)
+ *   Stefan Toncu <stefan.toncu29@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -114,6 +114,7 @@ ActivityBase {
             //left/top image
             Observe {
                 id: img1
+                show: true
                 anchors {
                     top: parent.top
                     horizontalCenter: parent.horizontalCenter
@@ -124,6 +125,7 @@ ActivityBase {
             //right/bottom image
             Observe {
                 id: img2
+                show: false
                 anchors {
                     top: background.vert ? img1.bottom : parent.top
                     topMargin: background.vert ? 10 : 0

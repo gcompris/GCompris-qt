@@ -1,10 +1,10 @@
 /* GCompris - Observe.qml
  *
- * Copyright (C) 2016 Stefan Toncu <stefan.toncu@cti.pub.ro>
+ * Copyright (C) 2016 Stefan Toncu <stefan.toncu29@gmail.com>
  *
  * Authors:
  *   <Marc Le Douarain> (GTK+ version)
- *   Stefan Toncu <stefan.toncu@cti.pub.ro> (Qt Quick port)
+ *   Stefan Toncu <stefan.toncu29@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -34,7 +34,9 @@ Image {
 
     property GCAudio audioEffects: activity.audioEffects
     property alias repeater: repeater
+    property alias circleRepeater: circleRepeater
     property int good: 0
+    property bool show: false
 
     Image {
         id: wrong
@@ -76,14 +78,15 @@ Image {
         id: repeater
 
         model: items.model
+
         Image {
             id: photo
             property alias particleLoader: particleLoader
-            property alias scaleAnim: scaleAnim
+            property alias differenceAnimation: differenceAnimation
             property double widthScale
             property double heightScale
 
-            source: Activity.url + "circle.svg"
+            //            source: Activity.url + "1.svg"
             width: card.width / 10 * widthScale
             height: card.height / 10 * heightScale
 
@@ -92,16 +95,14 @@ Image {
             x: modelData[0] * card.width / 1200
             y: modelData[1] * card.height / 1700
 
-
-            //instead of scale, there should be an animation for both width and height
-            //-> so it will be able to draw an elipse if needed
             NumberAnimation {
-                id: scaleAnim;
+                id: differenceAnimation;
                 target: photo;
-                property: "scale";
-                from: 0; to: photo.scale;
-                duration: 700
+                property: "opacity";
+                from: 0; to: 1;
+                duration: 500
             }
+
 
             // Create a particle only for the strawberry
             Loader {
@@ -113,8 +114,7 @@ Image {
 
             Component {
                 id: particle
-                ParticleSystemStarLoader
-                {
+                ParticleSystemStarLoader {
                     id: particles
                     clip: false
                 }
@@ -124,21 +124,62 @@ Image {
                 id: mouseArea
                 anchors.fill: parent
                 onClicked: {
-                    img1.repeater.itemAt(index).particleLoader.active = active
-                    img1.repeater.itemAt(index).particleLoader.item.burst(40)
-                    img2.repeater.itemAt(index).particleLoader.active = active
-                    img2.repeater.itemAt(index).particleLoader.item.burst(40)
-                    if (img1.repeater.itemAt(index).opacity === 0 &&
-                            img2.repeater.itemAt(index).opacity === 0) {
+                    //only if the difference is not yet spotted
+                    if (img2.repeater.itemAt(index).opacity === 0) {
+                        // play good sound
                         audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
-                        img1.repeater.itemAt(index).opacity = 1
-                        img2.repeater.itemAt(index).opacity = 1
+
+                        //activate the particle loader
+                        img1.repeater.itemAt(index).particleLoader.active = active
+                        img1.repeater.itemAt(index).particleLoader.item.burst(40)
+                        img2.repeater.itemAt(index).particleLoader.active = active
+                        img2.repeater.itemAt(index).particleLoader.item.burst(40)
+
+                        // show the actual difference on the second image
+                        img2.repeater.itemAt(index).differenceAnimation.start()
+
+                        // scale animation for the blue circle
+                        img1.circleRepeater.itemAt(index).scaleAnim.start()
+                        img2.circleRepeater.itemAt(index).scaleAnim.start()
+
+                        // set opacity of circle differences to 1
+                        img1.circleRepeater.itemAt(index).opacity = 1
+                        img2.circleRepeater.itemAt(index).opacity = 1
+
+                        // all good; check if all the differences have been spotted
                         good++
                         background.checkAnswer()
-                        img1.repeater.itemAt(index).scaleAnim.start()
-                        img2.repeater.itemAt(index).scaleAnim.start()
                     }
                 }
+            }
+        }
+    }
+
+    Repeater {
+        id: circleRepeater
+
+        model: card.repeater.model
+
+        Rectangle {
+            id: circle
+            color: "transparent"
+            radius: width * 0.5
+            border.color: card.show ? "blue" : "red"
+            border.width: 3
+            opacity: 0
+            x: card.repeater.itemAt(index).x - width/12
+            y: card.repeater.itemAt(index).y - height/12
+            width: card.repeater.itemAt(index).width * 1.2
+            height: card.repeater.itemAt(index).height * 1.2
+
+            property alias scaleAnim: scaleAnim
+
+            NumberAnimation {
+                id: scaleAnim;
+                target: circle;
+                property: "scale";
+                from: 0; to: circle.scale;
+                duration: 700
             }
         }
     }
