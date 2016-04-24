@@ -29,8 +29,9 @@ Image {
     id: card
 
     sourceSize.width: background.vert ? undefined : (background.width - 30) / 2
-    sourceSize.height: background.vert ? (background.height - background.barHeight - 40) /2 :
-                                         background.height - background.barHeight - 30
+    sourceSize.height: background.vert ?
+                           (background.height - background.barHeight - 40) /2 :
+                           background.height - background.barHeight - 30
 
     property GCAudio audioEffects: activity.audioEffects
     property alias repeater: repeater
@@ -86,7 +87,6 @@ Image {
             property double widthScale
             property double heightScale
 
-            //            source: Activity.url + "1.svg"
             width: card.width / 10 * widthScale
             height: card.height / 10 * heightScale
 
@@ -120,6 +120,11 @@ Image {
                 }
             }
 
+            function showParticles(item,index) {
+                item.repeater.itemAt(index).particleLoader.active = active
+                item.repeater.itemAt(index).particleLoader.item.burst(40)
+            }
+
             MouseArea {
                 id: mouseArea
                 anchors.fill: parent
@@ -130,10 +135,8 @@ Image {
                         audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
 
                         //activate the particle loader
-                        img1.repeater.itemAt(index).particleLoader.active = active
-                        img1.repeater.itemAt(index).particleLoader.item.burst(40)
-                        img2.repeater.itemAt(index).particleLoader.active = active
-                        img2.repeater.itemAt(index).particleLoader.item.burst(40)
+                        photo.showParticles(img1,index)
+                        photo.showParticles(img2,index)
 
                         // show the actual difference on the second image
                         img2.repeater.itemAt(index).differenceAnimation.start()
