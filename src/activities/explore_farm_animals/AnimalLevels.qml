@@ -83,7 +83,7 @@ Image {
             var questionTargetId = items.questionOrder[Activity.items.progressbar.value]
             Activity.items.instruction.visible = false
             if (Activity.items.score.currentSubLevel == 1) {
-                audioEffects.play(animalImg.audio);
+                audioVoices.play(animalImg.audio);
                 displayDescription(animalImg)
                 star.visible = true;
             } else {

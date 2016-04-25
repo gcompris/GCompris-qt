@@ -77,7 +77,7 @@ ActivityBase {
         QtObject {
             id: items
 
-            property GCAudio audioEffects: activity.audioEffects
+            property GCAudio audioVoices: activity.audioVoices
             property Item main: activity.main
             property alias background: background
             property alias bar: bar
@@ -154,7 +154,7 @@ ActivityBase {
                 }
                 else {
                     // stop if audio was playing
-                    items.audioEffects.stop()
+                    items.audioVoices.stop()
                 }
             }
 
