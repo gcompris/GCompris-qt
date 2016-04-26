@@ -76,6 +76,7 @@ ActivityBase {
                 if (problem.opacity != 0) {
                     frame.anchors.top = background.top
                     problemTxt.opacity = 0
+                    problemTxt.height = 0
                     problem.opacity = 0
                 }
             }
@@ -89,13 +90,16 @@ ActivityBase {
             anchors.topMargin: 10
             border.width: 2
             border.color: "black"
-
             color: "red"
+
+
 
             GCText {
                 id: problemTxt
                 anchors.centerIn: parent
-                fontSize: items.cellSize ? items.cellSize / 7.5 : mediumSize
+                width: parent.width * 3 / 4
+                fontSize: mediumSize
+                wrapMode: Text.WordWrap
                 text: qsTr("Click on the differences between the two images!")
                 color: "white"
             }
@@ -114,9 +118,9 @@ ActivityBase {
             //left/top image
             Observe {
                 id: img1
-                sourceSize.width: background.vert ? undefined : (background.width - 30) / 2
+                sourceSize.width: background.vert ? undefined : (background.width - 30 - problemTxt.height) / 2
                 sourceSize.height: background.vert ?
-                                       (background.height - background.barHeight - 40) /2 :
+                                       (background.height - background.barHeight - 40 - problemTxt.height) /2 :
                                        background.height - background.barHeight - 30
                 show: true
                 anchors {
@@ -129,9 +133,9 @@ ActivityBase {
             //right/bottom image
             Observe {
                 id: img2
-                sourceSize.width: background.vert ? undefined : (background.width - 30) / 2
+                sourceSize.width: background.vert ? undefined : (background.width - 30 - problemTxt.height) / 2
                 sourceSize.height: background.vert ?
-                                       (background.height - background.barHeight - 40) /2 :
+                                       (background.height - background.barHeight - 40 - problemTxt.height) /2 :
                                        background.height - background.barHeight - 30
                 show: false
                 anchors {

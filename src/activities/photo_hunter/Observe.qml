@@ -101,7 +101,6 @@ Image {
                 duration: 500
             }
 
-
             // Create a particle only for the strawberry
             Loader {
                 id: particleLoader
@@ -120,7 +119,9 @@ Image {
 
             MouseArea {
                 id: mouseArea
-                anchors.fill: parent
+                anchors.centerIn: parent
+                width: parent.width * 3
+                height: parent.height * 3
                 onClicked: {
                     Activity.photoClicked(card,index)
                     audioEffects.play('qrc:/gcompris/src/core/resource/sounds/bleep.wav')
@@ -139,12 +140,12 @@ Image {
             color: "transparent"
             radius: width * 0.5
             border.color: card.show ? "blue" : "red"
-            border.width: 3
+            border.width: 6
             opacity: 0
-            x: card.repeater.itemAt(index).x - width/12
-            y: card.repeater.itemAt(index).y - height/12
-            width: card.repeater.itemAt(index).width * 1.2
-            height: card.repeater.itemAt(index).height * 1.2
+            x: card.repeater.itemAt(index).x - width / 6
+            y: card.repeater.itemAt(index).y - height / 6
+            width: card.repeater.itemAt(index).width * 1.5
+            height: card.repeater.itemAt(index).height * 1.5
 
             property alias scaleAnim: scaleAnim
 
