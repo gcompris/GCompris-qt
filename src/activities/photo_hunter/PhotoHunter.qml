@@ -51,11 +51,13 @@ ActivityBase {
             property alias bar: bar
             property alias bonus: bonus
             property var model
+            property bool notShowed: true
             property alias img1: img1
             property alias img2: img2
             property int total
             property int totalFound: img1.good + img2.good
-            property alias problemTxt: problemTxt
+            property alias problem: problem
+            property alias frame: frame
 
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
             property int cellSize: Math.min(background.width / 11 ,
@@ -74,10 +76,7 @@ ActivityBase {
 
                 //remove the problem from the board after first level
                 if (problem.opacity != 0) {
-                    frame.anchors.top = background.top
-                    problemTxt.opacity = 0
-                    problemTxt.height = 0
-                    problem.opacity = 0
+                    Activity.hideProblem()
                 }
             }
         }
@@ -85,23 +84,28 @@ ActivityBase {
         Rectangle {
             id: problem
             width: parent.width
-            height: problemTxt.height
+            height: problemText.height
             anchors.top: parent.top
             anchors.topMargin: 10
             border.width: 2
             border.color: "black"
             color: "red"
 
-
+            property alias problemText: problemText
 
             GCText {
-                id: problemTxt
+                id: problemText
                 anchors.centerIn: parent
                 width: parent.width * 3 / 4
                 fontSize: mediumSize
                 wrapMode: Text.WordWrap
                 text: qsTr("Click on the differences between the two images!")
                 color: "white"
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: Activity.hideProblem()
             }
         }
 
@@ -118,9 +122,9 @@ ActivityBase {
             //left/top image
             Observe {
                 id: img1
-                sourceSize.width: background.vert ? undefined : (background.width - 30 - problemTxt.height) / 2
+                sourceSize.width: background.vert ? undefined : (background.width - 30 - problemText.height) / 2
                 sourceSize.height: background.vert ?
-                                       (background.height - background.barHeight - 40 - problemTxt.height) /2 :
+                                       (background.height - background.barHeight - 40 - problemText.height) /2 :
                                        background.height - background.barHeight - 30
                 show: true
                 anchors {
@@ -133,9 +137,9 @@ ActivityBase {
             //right/bottom image
             Observe {
                 id: img2
-                sourceSize.width: background.vert ? undefined : (background.width - 30 - problemTxt.height) / 2
+                sourceSize.width: background.vert ? undefined : (background.width - 30 - problemText.height) / 2
                 sourceSize.height: background.vert ?
-                                       (background.height - background.barHeight - 40 - problemTxt.height) /2 :
+                                       (background.height - background.barHeight - 40 - problemText.height) /2 :
                                        background.height - background.barHeight - 30
                 show: false
                 anchors {

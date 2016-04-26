@@ -106,6 +106,11 @@ function initLevel() {
 }
 
 function setUp() {
+    if (items.notShowed === true) {
+        items.notShowed = false
+    }
+    else hideProblem()
+
     loadCoordinate()
 
     for (var i=0;i<items.model.length;i++) {
@@ -178,6 +183,13 @@ function photoClicked(item,index) {
         item.good++
         items.background.checkAnswer()
     }
+}
+
+function hideProblem() {
+    items.frame.anchors.top = items.background.top
+    items.problem.problemText.opacity = 0
+    items.problem.problemText.height = 0
+    items.problem.opacity = 0
 }
 
 function nextLevel() {
