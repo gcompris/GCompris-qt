@@ -87,6 +87,7 @@ Item {
         fontSizeMode: Text.Fit
         font.bold: true
         text: textLabel
+        color: "#373737"
     }
 
     MouseArea {

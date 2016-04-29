@@ -22,23 +22,49 @@ import QtQuick 2.2
 import GCompris 1.0
 
 Rectangle {
+    
+    
+    property string theme: "dark"
+
+    /**
+     * type:variant
+     * existing themes for the button.
+     * A theme is composed of:
+     *   the button's border color
+     *   the text color
+    */
+    property variant themes: {
+        "dark": {
+            borderColor: "#FF373737",
+            textColor: "#FF373737"
+        },
+        "light": {
+            borderColor: "white",
+            textColor: "white"
+        }
+    }
+
+    
+    
     id: iamReady
     anchors.horizontalCenter: parent.horizontalCenter
     anchors.verticalCenter: parent.verticalCenter
-    border.color: "black"
+    border.color: themes[theme].borderColor
     visible: true
-    radius: 4
+    radius: 10
     smooth: true
-    border.width: 0
+    border.width: 4
     width: iamReadyText.width + 50 * ApplicationInfo.ratio
     height: iamReadyText.height + 50 * ApplicationInfo.ratio
-    color: "#AAFFFFFF"
-
+    gradient: Gradient {
+            GradientStop { position: 0 ; color: "#42FFFFFF" }
+            GradientStop { position: 1 ; color: "#23FFFFFF" }
+        }
     signal clicked
 
     GCText {
         id: iamReadyText
-
+        color: themes[theme].textColor
         anchors.horizontalCenter: parent.horizontalCenter
         anchors.verticalCenter: parent.verticalCenter
         font.bold: true

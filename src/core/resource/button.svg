@@ -20,6 +20,18 @@
      id="defs4193">
     <linearGradient
        inkscape:collect="always"
+       id="linearGradient4139">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.25882354"
+         offset="0"
+         id="stop4141" />
+      <stop
+         style="stop-color:#ffffff;stop-opacity:0.13725491"
+         offset="1"
+         id="stop4143" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
        xlink:href="#linearGradient2806"
        id="linearGradient3179"
        gradientUnits="userSpaceOnUse"
@@ -39,16 +51,25 @@
          offset="1"
          id="stop2810" />
     </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4139"
+       id="linearGradient4145"
+       x1="689.05939"
+       y1="244.46375"
+       x2="689.05939"
+       y2="263.87943"
+       gradientUnits="userSpaceOnUse" />
   </defs>
   <sodipodi:namedview
      id="base"
-     pagecolor="#ffffff"
+     pagecolor="#6a6a6a"
      bordercolor="#666666"
      borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="36.077122"
+     inkscape:zoom="1.979899"
+     inkscape:cx="-29.709062"
      inkscape:cy="-6.9318334"
      inkscape:document-units="px"
      inkscape:current-layer="g3171"
@@ -57,10 +78,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1880"
-     inkscape:window-height="1060"
-     inkscape:window-x="-2"
-     inkscape:window-y="-3"
+     inkscape:window-width="1878"
+     inkscape:window-height="1051"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata4196">
@@ -70,7 +91,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -84,7 +105,7 @@
        transform="matrix(3.1219512,0,0,3.1216619,-1853.2217,-272.33077)"
        id="g3171">
       <path
-         style="fill:#f8f8f8;fill-opacity:0;stroke:#ffffff;stroke-width:0.32032734;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+         style="fill:url(#linearGradient4145);fill-opacity:1;stroke:#ffffff;stroke-width:0.32032734;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
          d="m 663.57479,244.78297 c 16.43987,-0.63863 32.33072,0.25546 47.67257,0 -0.32941,6.01379 0.43921,9.15373 0,18.42454 -22.97025,0.66414 -42.1936,-0.15325 -47.67257,0 0.38431,-6.07765 -0.27451,-12.28302 0,-18.42454 z"
          id="rect2991"
          inkscape:connector-curvature="0"
