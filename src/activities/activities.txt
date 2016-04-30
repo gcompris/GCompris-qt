@@ -59,8 +59,8 @@ hexagon
 imagename
 instruments
 intro_gravity
-lang
 land_safe
+lang
 leftright
 lightsoff
 louis-braille
@@ -100,6 +100,7 @@ mosaic
 numbers-odd-even
 paintings
 penalty
+photo_hunter
 planegame
 readingh
 readingv
