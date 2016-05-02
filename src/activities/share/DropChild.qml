@@ -29,6 +29,7 @@ Rectangle {
     width: items.cellSize * 3
     height: items.cellSize * 4.5
     color: "transparent"
+    radius: 0.2
     z: 5
 
     property string name
@@ -62,6 +63,7 @@ Rectangle {
         width: items.cellSize * 3
         height: items.cellSize * 3
         anchors.bottom: parent.bottom
+        radius: width * 0.07
 
         color: "#cfecf0"
 

@@ -54,6 +54,7 @@ function setUp() {
     items.background.currentCandies = 0
     items.background.currentGirls = 0
     items.background.currentBoys = 0
+    items.background.rest = items.totalCandies - Math.floor(items.totalCandies / items.totalChildren) * items.totalChildren
     items.background.resetCandy()
 
     items.acceptCandy = false
@@ -77,7 +78,8 @@ function setUp() {
     items.candyWidget.element.opacity = 1
 
     items.basketWidget.canDrag = true
-    items.basketWidget.element.opacity = 0
+    items.basketWidget.element.opacity = items.background.rest===0 ? 0 : 1
+
 }
 
 function nextSubLevel() {

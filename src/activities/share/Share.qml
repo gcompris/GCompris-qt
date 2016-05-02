@@ -83,19 +83,7 @@ ActivityBase {
         property int currentBoys: 0
         property int currentGirls: 0
         property int currentCandies: 0
-        property int rest: (items.totalCandies - items.background.currentCandies ==
-                            (items.totalCandies - Math.floor(items.totalCandies / items.totalChildren) * items.totalChildren)) ?
-                               items.totalCandies - items.background.currentCandies : 0
-
-
-        onRestChanged: {
-            //show message for rest if the rest is available and not already displayed on the board
-            if (rest > 0 && basketShown() === false) {
-                background.resetCandy()
-                instruction.opacity = 1
-                instruction.text = qsTr("now drag the basket in the center and place the remaining candies inside it")
-            }
-        }
+        property int rest
 
         //returns true if the x and y is in the "dest" area
         function contains(x,y,dest) {

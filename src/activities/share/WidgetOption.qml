@@ -19,7 +19,7 @@
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
 
-import QtQuick 2.5
+import QtQuick 2.1
 import QtQuick.Window 2.2
 import GCompris 1.0
 
@@ -128,7 +128,7 @@ Rectangle {
                     }
                     break;
 
-                    //default is for "boy" and "girl"
+                //default is for "boy" and "girl"
                 default:
                     if (background.contains(newCoordinate.x, newCoordinate.y, grid)) {
                         if (widget.current < widget.total) {
