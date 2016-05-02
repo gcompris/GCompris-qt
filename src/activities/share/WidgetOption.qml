@@ -41,6 +41,7 @@ Rectangle {
     property int total: 0
     property string name
     property bool canDrag: true
+    property bool showCount: true
     property alias element: element
 
     Image {
@@ -49,11 +50,15 @@ Rectangle {
         sourceSize.height: items.cellSize * 1.5
         source: widget.src
 
+        property alias elementText: elementText
+
         //number of available items
         GCText {
+            id: elementText
             anchors.left: parent.left
             anchors.bottom: parent.bottom
-            text: (widget.name !== "basket") ? widget.total - widget.current : ""
+            text: (widget.showCount === true && widget.name !== "basket") ?
+                      widget.total - widget.current : ""
         }
 
         property alias dragAreaElement: dragAreaElement
@@ -61,8 +66,6 @@ Rectangle {
         MouseArea {
             id: dragAreaElement
             anchors.fill: parent
-            enabled: (widget.name === "basket") ?
-                         (background.rest !== 0) ? true : false : "undefined"
             drag.target: (widget.canDrag) ? parent : null
             onPressed: {
                 instruction.hide()

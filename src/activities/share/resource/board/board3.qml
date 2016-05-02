@@ -18,9 +18,9 @@
 import QtQuick 2.0
 
 /*	
-	Level 1 to 3.
-	Numbers of kids are given in the left widget which eases kid work.
-	No rest (no basket).
+	Level 10 to 12
+	Numbers of kids are not given anymore in the left widget.
+	There is a rest and a basket.
 */
 
 QtObject {
@@ -29,33 +29,32 @@ QtObject {
 			"instruction" : qsTr("Paul wants to equally share 2 candies between his friends. They are 2. One girl and one boy. Can you help him? Place first the children in center, then drag the candies to each of them."),
 			"totalBoys" : 1,
 			"totalGirls" : 1,
-			"totalCandies" : 2,
-			"showCount": true,
-			"forceShowBakset": "false"
+			"totalCandies" : 5,
+			"showCount": false,
+			"forceShowBakset": false
 		},
 		{
 			"instruction" : qsTr("Now he wants to give 4 candies to his friends."),
 			"totalBoys" : 1,
-			"totalGirls" : 1,
-			"totalCandies" : 4,
-			"showCount": true,
+			"totalGirls" : 2,
+			"totalCandies" : 7,
+			"showCount": false,
 			"forceShowBakset": false
 		},
 		{
 			"instruction" : qsTr("Can you now give 6 of Paul's candies to his friends?"),
-			"totalBoys" : 1,
-			"totalGirls" : 1,
-			"totalCandies" : 6,
-			"showCount": true,
+			"totalBoys" : 2,
+			"totalGirls" : 2,
+			"totalCandies" : 9,
+			"showCount": false,
 			"forceShowBakset": false
-
 		},
 		{
 			"instruction" : qsTr("Paul has only 10 candies left. He eats 2 candies and he gives the rest to his friends. Can you help him equally split the 8 remaining candies?"),
-			"totalBoys" : 1,
+			"totalBoys" : 3,
 			"totalGirls" : 1,
-			"totalCandies" : 8,
-			"showCount": true,
+			"totalCandies" : 11,
+			"showCount": false,
 			"forceShowBakset": false
 		}
 	]

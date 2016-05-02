@@ -17,31 +17,37 @@
  */
 import QtQuick 2.0
 
+/*  
+    Level 4 to 6
+    Numbers of kids are given in the left widget which eases kid work.
+    But this time there is a rest (basket)
+*/
+
 QtObject {
-   property variant levels : [
-      {
-          "instruction" : qsTr("Alice wants to equally share 3 candies between her friends. They are 3: One girl and two boys. Can you help her? Place first the children in the center, then drag the candies to each of them."),
-          "totalBoys" : 2,
-          "totalGirls" : 1,
-          "totalCandies" : 3
-      },
-      {
-          "instruction" : qsTr("Now, Alice wants to give 6 candies to her friends"),
-          "totalBoys" : 2,
-          "totalGirls" : 1,
-          "totalCandies" : 6
-      },
-      {
-          "instruction" : qsTr("Can you help Alice give 9 candies to her friends: one girl and two boys?"),
-          "totalBoys" : 2,
-          "totalGirls" : 1,
-          "totalCandies" : 9
-      },
-      {
-          "instruction" : qsTr("Alice has 12 candies left. She wants to give them all to her friends. Can you help her split the candies equally?"),
-          "totalBoys" : 2,
-          "totalGirls" : 1,
-          "totalCandies" : 12
-      }
-   ]
+    property variant levels : [
+        {
+            "instruction" : qsTr("George wants to equally share 3 candies between his friends. They are 2. One girl and one boy. Can he equally split the candies to his friends? Place first the children in center, then drag the candies to each of them. Be careful, a rest will remain!"),
+            "totalBoys" : 1,
+            "totalGirls" : 1,
+            "totalCandies" : 3,
+            "showCount": true,
+            "forceShowBakset": false
+        },
+        {
+            "instruction" : qsTr("Maria wants to equally share 5 candies between her friends. They are 2. One girl and two boys. Can she equally split the candies to her friends? Place first the children in center, then drag the candies to each of them. Be careful, a rest will remain!"),
+            "totalBoys" : 2,
+            "totalGirls" : 1,
+            "totalCandies" : 5,
+            "showCount": true,
+            "forceShowBakset": false
+        },
+        {
+            "instruction" : qsTr("John wants to equally share 10 candies between his friends. They are 3. One boy and two girls. Can he equally split the candies to his friends? Place first the children in center, then drag the candies to each of them. Be careful, a rest will remain!"),
+            "totalBoys" : 1,
+            "totalGirls" : 2,
+            "totalCandies" : 10,
+            "showCount": true,
+            "forceShowBakset": false
+        }
+    ]
 }

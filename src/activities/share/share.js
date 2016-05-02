@@ -23,7 +23,7 @@
 .import QtQuick 2.0 as Quick
 
 var currentLevel = 0
-var numberOfLevel = 3
+var numberOfLevel = 5
 var items
 
 function start(items_) {
@@ -39,7 +39,6 @@ function initLevel() {
     items.bar.level = currentLevel + 1
     var filename = "resource/board/"+ "board" + currentLevel + ".qml"
     items.dataset.source = filename
-    var levelData = items.dataset.item
 
     setUp()
 }
@@ -54,7 +53,8 @@ function setUp() {
     items.background.currentCandies = 0
     items.background.currentGirls = 0
     items.background.currentBoys = 0
-    items.background.rest = items.totalCandies - Math.floor(items.totalCandies / items.totalChildren) * items.totalChildren
+    items.background.rest = items.totalCandies -
+            Math.floor(items.totalCandies / items.totalChildren) * (items.totalBoys+items.totalGirls)
     items.background.resetCandy()
 
     items.acceptCandy = false
@@ -69,16 +69,20 @@ function setUp() {
     items.girlWidget.current = 0
     items.girlWidget.canDrag = true
     items.girlWidget.element.opacity = 1
+    items.girlWidget.showCount = levelData.levels[items.currentSubLevel].showCount
 
     items.boyWidget.current = 0
     items.boyWidget.canDrag = true
     items.boyWidget.element.opacity = 1
+    items.boyWidget.showCount = levelData.levels[items.currentSubLevel].showCount
 
     items.candyWidget.canDrag = true
     items.candyWidget.element.opacity = 1
+    items.candyWidget.showCount = levelData.levels[items.currentSubLevel].showCount
 
     items.basketWidget.canDrag = true
-    items.basketWidget.element.opacity = items.background.rest===0 ? 0 : 1
+    items.basketWidget.element.opacity = (levelData.levels[items.currentSubLevel].forceShowBakset === true ||
+                                          items.background.rest !== 0) ? 1 : 0
 
 }
 
