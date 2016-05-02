@@ -48,8 +48,8 @@ DialogBackground {
         "</b></center>" +
         "<center>" + gcVersionTxt + " " + qtVersionTxt + "</center>" + "<br/>" +
 
-        "<img align='right' width='" + 305 * ApplicationInfo.ratio +
-        "' height='" + 190 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/core/resource/gcompris.png'/>" +
+        "<img align='right' width='" + 320 * ApplicationInfo.ratio +
+        "' height='" + 114 * ApplicationInfo.ratio + "' src='qrc:/gcompris/src/core/resource/gcompris.png'/>" +
 
         qsTr("<b>GCompris</b> is a Free Software developed within the KDE community.") +
 
