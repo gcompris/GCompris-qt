@@ -376,9 +376,7 @@ ActivityBase {
             id: bonus
             Component.onCompleted: {
                 win.connect(Activity.nextSubLevel)
-                loose.connect(Activity.initLevel);
             }
-
         }
 
         Score {
