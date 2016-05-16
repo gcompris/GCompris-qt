@@ -273,7 +273,7 @@ foreach(OGG_FILE ${OGG_FILES})
     OUTPUT ${MP3_FILE}
     # Put the good line depending on your installation
     #COMMAND avconv -v warning -i ${OGG_FILE} -acodec mp3 ${MP3_FILE}
-    COMMAND ffmpeg -v warning -i ${OGG_FILE} -acodec mp3 -strict -2 ${AAC_FILE}
+    COMMAND ffmpeg -v warning -i ${OGG_FILE} -acodec mp3 -strict -2 ${MP3_FILE}
     )
   list(APPEND MP3_FILES ${MP3_FILE})
 endforeach()
