@@ -41,7 +41,10 @@ ActivityBase {
         Component.onCompleted: {
             activity.start.connect(start)
         }
-        onStart: edit.forceActiveFocus();
+        onStart: {
+            keyboard.populate();
+            edit.forceActiveFocus();
+        }
 
         Column {
             id: controls
@@ -198,7 +201,9 @@ ActivityBase {
                     edit.insertText(text)
             }
             onError: console.log("VirtualKeyboard error: " + msg);
-            layout: [
+
+            function populate() {
+                layout = [
                 [
                     { label: "0" },
                     { label: "1" },
@@ -246,6 +251,8 @@ ActivityBase {
                     { label: backspace }
                 ]
             ]
+            }
+
         }
 
     }
