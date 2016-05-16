@@ -42,6 +42,13 @@ ActivityBase {
         signal start
         signal stop
 
+        Component.onCompleted: {
+            activity.start.connect(start)
+            activity.stop.connect(stop)
+        }
+
+        onStart: water.state = 'down'
+
         Image {
             id: sky
             source: activity.url + "sky.svg"
@@ -115,7 +122,7 @@ ActivityBase {
                 color: "#4f76d6"
                 width: parent.paintedWidth * 0.205
                 height: minHeight
-                state: "down"
+                state: "undef"
 
                 property int maxHeight: parent.paintedHeight * 0.33
                 property int minHeight: canal.paintedHeight * 0.15
@@ -124,6 +131,8 @@ ActivityBase {
                 Behavior on height { NumberAnimation { duration: water.duration } }
 
                 onStateChanged: {
+                    if( water.state == "undef")
+                        return
                     activity.audioEffects.append(activity.url + 'water_fill.wav')
                     if( water.state == 'up' && boat.state == 'middleDown')
                         boat.state = 'middleUp'
@@ -132,6 +141,10 @@ ActivityBase {
                 }
 
                 states: [
+                    State {
+                        name: "undef"
+                        PropertyChanges { target: water; height: water.minHeight}
+                    },
                     State {
                         name: "down"
                         PropertyChanges { target: water; height: water.minHeight}
