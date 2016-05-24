@@ -99,11 +99,11 @@ function setRandomModel(){
 //    print("names2: ",names2)
 
     items.repeater.model = names.length
-    items.repeater2.model = names2.length
+    items.modelRepeater.model = names2.length
 
     for (i = 0; i < names.length; i++) {
         items.repeater.itemAt(i).source = names[i]
-        items.repeater2.itemAt(i).source = names2[i]
+        items.modelRepeater.itemAt(i).source = names2[i]
     }
 }
 
@@ -124,6 +124,38 @@ function getNextIndex(index) {
     return -1;
 }
 
+function gesture(deltax, deltay) {
+    if (Math.abs(deltax) > 40 || Math.abs(deltay) > 40) {
+        if (deltax > 30 && Math.abs(deltay) < items.sensivity) {
+            move("right")
+        } else if (deltax < -30 && Math.abs(deltay) < items.sensivity) {
+            move("left")
+        } else if (Math.abs(deltax) < items.sensivity && deltay > 30) {
+            move("down")
+        } else if (Math.abs(deltax) < items.sensivity && deltay < 30) {
+            move("up")
+        }
+    }
+}
+
+function move(move) {
+    if (move === "left") {
+        if (items.selected % items.columns != 0)
+            makeMove(-1)
+    } else if (move === "right") {
+        if ((items.selected+1) % items.columns != 0)
+            makeMove(1)
+    } else if (move === "up") {
+        if (items.selected > items.columns-1)
+            makeMove(-items.columns)
+    } else if (move === "down") {
+        if (items.selected < (items.repeater.count-items.columns))
+            makeMove(items.columns)
+    } else if (move === "next") {
+        items.selected = getNextIndex(items.selected)
+    }
+}
+
 function makeMove(add) {
     if (items.repeater.itemAt(items.selected+add).source == "") {
         items.repeater.itemAt(items.selected+add).source = items.repeater.itemAt(items.selected).source
@@ -136,7 +168,7 @@ function makeMove(add) {
 function checkAnswer() {
     var count = 0
     for (var i = 0; i < items.repeater.count; i++) {
-        if (items.repeater.itemAt(i).source != items.repeater2.itemAt(i).source){
+        if (items.repeater.itemAt(i).source != items.modelRepeater.itemAt(i).source){
             count = -1
         }
     }

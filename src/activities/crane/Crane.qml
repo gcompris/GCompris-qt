@@ -19,10 +19,18 @@
  *   You should have received a copy of the GNU General Public License
  *   along with this program; if not, see <http://www.gnu.org/licenses/>.
  */
+
 import QtQuick 2.1
+import GCompris 1.0
 
 import "../../core"
 import "crane.js" as Activity
+
+/*
+  1. add portrait view
+  2. add grid for first levels
+  3. change images from png to svg
+  */
 
 ActivityBase {
     id: activity
@@ -30,10 +38,11 @@ ActivityBase {
     onStart: focus = true
     onStop: {}
 
-    pageComponent: Image {
+    pageComponent: Rectangle {
         id: background
         anchors.fill: parent
         // source: "resource/crane-bg.svgz"
+        color: "#F5F1DE"
 
         signal start
         signal stop
@@ -53,105 +62,142 @@ ActivityBase {
             property alias board: board
             property alias grid: grid
             property alias repeater: repeater
-            property alias repeater2: repeater2
+            property alias modelRepeater: modelRepeater
             property var names
             property var names2
             property int selected
             property int columns
             property int rows
+            property int sensivity: 80
+            property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
+            property int cellSize: Math.min(background.width / 11 , background.height / (9 + barHeightAddon))
         }
 
         onStart: { Activity.start(items) }
         onStop: { Activity.stop() }
 
+        property bool portrait: height > width ? true : false
+
         Keys.onPressed: {
-            if (event.key === Qt.Key_Left) {
-                if (items.selected % items.columns != 0) {
-                    Activity.makeMove(-1)
-                }
-            } else if (event.key === Qt.Key_Right) {
-                if ((items.selected+1) % items.columns != 0) {
-                    Activity.makeMove(1)
-                }
-            } else if (event.key === Qt.Key_Up) {
-                if (items.selected > items.columns-1) {
-                    Activity.makeMove(-items.columns)
-                }
-            } else if (event.key === Qt.Key_Down) {
-                if (items.selected < (items.repeater.count-items.columns)) {
-                    Activity.makeMove(items.columns)
-                }
-            } else if (event.key === Qt.Key_Space || event.key === Qt.Key_Tab) {
-                items.selected = Activity.getNextIndex(items.selected)
+            if (event.key === Qt.Key_Left)
+                Activity.move("left")
+            else if (event.key === Qt.Key_Right)
+                Activity.move("right")
+            else if (event.key === Qt.Key_Up)
+                Activity.move("up")
+            else if (event.key === Qt.Key_Down)
+                Activity.move("down")
+            else if (event.key === Qt.Key_Space || event.key === Qt.Key_Tab)
+                Activity.move("next")
+        }
+
+        //implementation of Swipe effect
+        MouseArea {
+            anchors.fill: parent
+            property int startX;
+            property int startY;
+
+            onPressed: {
+                startX = mouse.x;
+                startY = mouse.y;
             }
+            onReleased: Activity.gesture(mouse.x - startX, mouse.y - startY)
         }
 
         Rectangle {
             id: board
             color: "lightblue"
-            x: 10
-            y: 10
-            width: 600
-            height: 550
+            radius: width * 0.02
+            z: 1
 
-            Grid {
-                id: grid
-                columns: items.columns
-                rows: items.rows
-//                spacing: 5
+            anchors {
+                verticalCenter: crane_vertical.verticalCenter
+                right: crane_vertical.left
+                margins: 15
+            }
 
-                Repeater {
-                    id: repeater
+            width: background.portrait ? parent.width * 0.65 : ((parent.width - anchors.margins * 3 - crane_vertical.width) / 2 ) * 0.9
+            height: background.portrait ? (parent.height - bar.height * 1.45 - crane_top.height - crane_body.height ) / 2 :
+                                          (parent.height - bar.height * 1.45 - crane_top.height - crane_body.height) * 0.9
 
+        }
+
+        Grid {
+            id: grid
+            columns: items.columns
+            rows: items.rows
+            z: 3
+            anchors.fill: board
+
+            Repeater {
+                id: repeater
+
+                Image {
+                    id: figure
+                    width: board.width/items.columns
+                    height: board.height/items.rows
+
+                    property bool showSelected: false
+                    property alias selected: selected
+                    property int _index: index   // make current index accessible from outside
+
+                    MouseArea {
+                        anchors.fill: parent
+
+                        // Swipe effect
+                        property int startX;
+                        property int startY;
+
+                        onPressed: {
+                            startX = mouse.x;
+                            startY = mouse.y;
+                        }
+
+                        onReleased:
+                            Activity.gesture(mouse.x - startX, mouse.y - startY)
+
+                        // Select a figure
+                        onClicked: source != "" ? items.selected = index : undefined
+                    }
+
+                    // selected marker
                     Image {
-                        id: figure
-                        width: board.width/items.columns
-                        height: board.height/items.rows
-
-                        property bool showSelected: false
-                        property alias selected: selected
-                        // make current index accessible from outside
-                        property int _index: index
-
-                        // select a figure
-                        MouseArea {
-                            anchors.fill: parent
-                            onClicked: source != "" ? items.selected = index : undefined
-                        }
-
-                        // selected marker
-                        Image {
-                            id: selected
-                            source: "resource/selected.png"
-                            width: parent.width
-                            height: parent.height
-                            // show only on the selected figure
-                            opacity: parent._index == items.selected ? 1 : 0
-                        }
+                        id: selected
+                        source: "resource/selected.png"
+                        width: parent.width
+                        height: parent.height
+                        // show only on the selected figure
+                        opacity: parent._index == items.selected ? 1 : 0
                     }
                 }
             }
         }
 
         Rectangle {
-            id: board2
+            id: modelBoard
             color: "pink"
-            x: 650
-            y: 10
-            width: 600
-            height: 550
+            radius: width * 0.02
+
+            anchors {
+                left: background.portrait ? board.left : crane_vertical.right
+                top: background.portrait ? crane_body.bottom : parent.top
+                topMargin: background.portrait ? board.anchors.margins : crane_top.height * 1.5
+                margins: board.anchors.margins
+            }
+
+            width: board.width
+            height: board.height
 
             Grid {
-                id: grid2
+                id: modelGrid
                 columns: items.columns
                 rows: items.rows
-//                spacing: 5
 
                 Repeater {
-                    id: repeater2
+                    id: modelRepeater
 
                     Image {
-                        id: figure2
+                        id: modelFigure
                         width: board.width/items.columns
                         height: board.height/items.rows
                     }
@@ -159,7 +205,127 @@ ActivityBase {
             }
         }
 
+        Image {
+            id: crane_top
+            source: "resource/crane_up.svgz"
+            sourceSize.width: background.width * 0.5
+            sourceSize.height: background.height * 0.06
+            width:  background.width * 0.5
+            height: background.height * 0.06
+            z: 3
+            anchors {
+                top: parent.top
+                right: crane_vertical.right
+                rightMargin: 0
+                margins: board.anchors.margins
+            }
+        }
 
+
+        Image {
+            id: crane_vertical
+            source: "resource/crane_vertical.svgz"
+            sourceSize.width: background.width * 0.04
+            sourceSize.height: background.height * 0.73
+            width: background.width * 0.05
+            height: background.portrait ? background.height * 0.45 : background.height * 0.73
+            anchors {
+                top: crane_top.top
+                right: background.portrait ? parent.right : parent.horizontalCenter
+                rightMargin: background.portrait ? width / 2 : - width / 2
+                topMargin: board.anchors.margins
+            }
+        }
+
+        Image {
+            id: crane_body
+            source: "resource/crane_only2.svgz"
+            sourceSize.width: parent.width / 6
+            sourceSize.height: parent.height/ 4
+            mirror: true
+            anchors {
+                top: crane_vertical.bottom
+                topMargin: - (height / 1.8)
+                right: crane_vertical.right
+                margins: board.anchors.margins
+            }
+        }
+
+        Image {
+            id: crane_wire
+            source: "resource/crane-wire.svgz"
+            sourceSize.width: parent.width / 22
+            sourceSize.height: parent.width / 17
+            anchors {
+                right: crane_body.left
+                bottom: crane_command.verticalCenter
+            }
+        }
+
+        Image {
+            id: crane_command
+            source: "resource/command.svgz"
+            sourceSize.width: parent.width / 5
+            sourceSize.height: parent.height/ 3.5
+            mirror: true
+            anchors {
+                bottom: crane_body.bottom
+                right: crane_wire.left
+                rightMargin: 0
+                margins: board.anchors.margins
+            }
+
+            Controls {
+                id: up
+                source: "resource/arrow_up.svgz"
+                anchors {
+                    left: parent.left
+                    leftMargin: parent.width / 10
+                }
+                command: "up"
+            }
+
+            Controls {
+                id: down
+                source: "resource/arrow_down.svgz"
+                anchors {
+                    left: up.right
+                    leftMargin: parent.width / 20
+                }
+                command: "down"
+            }
+
+            Controls {
+                id: left
+                source: "resource/arrow_left.svgz"
+                anchors {
+                    right: right.left
+                    rightMargin: parent.width / 20
+                }
+                command: "left"
+            }
+
+            Controls {
+                id: right
+                source: "resource/arrow_right.svgz"
+                anchors {
+                    right: parent.right
+                    rightMargin: parent.width / 10
+                }
+                command: "right"
+            }
+        }
+
+        Rectangle {
+            id: cable
+            color: "black"
+            width: 5
+            height: convert.y
+            x: convert.x + items.repeater.itemAt(items.selected).width / 2
+            y: crane_top.height/2
+            z: 1
+            property var convert: items.repeater.mapToItem(background,items.repeater.itemAt(items.selected).x,items.repeater.itemAt(items.selected).y)
+        }
 
 
         DialogHelp {
