@@ -29,6 +29,7 @@ clockgame
 color_mix
 color_mix_light
 colors
+crane
 details
 drawnumber
 enumerate
