@@ -115,7 +115,7 @@ ActivityBase {
         GCText {
             id: hidden
             fontSize: largeSize
-            color: "black"
+            color: "#4d4d4d"
             font.letterSpacing: 0.5
             width: parent.width * 0.9
             wrapMode: Text.WordWrap
