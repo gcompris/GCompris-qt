@@ -99,6 +99,7 @@ ActivityBase {
                 width: parent.width * 3 / 4
                 fontSize: mediumSize
                 wrapMode: Text.WordWrap
+                horizontalAlignment: Text.AlignHCenter
                 text: qsTr("Click on the differences between the two images!")
                 color: "white"
             }
