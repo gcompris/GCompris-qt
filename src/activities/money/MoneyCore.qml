@@ -185,8 +185,8 @@ ActivityBase {
                         id: store
                         Image {
                             source: Activity.url + modelData.img
-                            sourceSize.height:  column.itemStoreHeight
-                            sourceSize.width:  column.itemStoreHeight
+                            sourceSize.height: column.itemStoreHeight
+                            sourceSize.width: column.itemStoreHeight
                             GCText {
                                 text: modelData.price
                                 fontSize: 16
@@ -224,8 +224,9 @@ ActivityBase {
                     id: instructions
                     horizontalAlignment: Text.AlignHCenter
                     width: column.width
+                    height: column.height / 6
                     wrapMode: Text.WordWrap
-                    fontSize: regularSize
+                    fontSizeMode: Text.Fit
                 }
             }
 
