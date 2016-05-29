@@ -335,15 +335,15 @@ ActivityBase {
             anchors {
                 left: parent.left
                 top: parent.top
-                margins:10
-
+                margins: 10
             }
             sourceSize.width: 66 * bar.barZoom
-            property int remainingife: items.remainingLife
-            onRemainingifeChanged: clockAnim.start()
+            property int remainingLife: items.remainingLife
+            onRemainingLifeChanged: if(remainingLife >= 0) clockAnim.restart()
 
             SequentialAnimation {
                 id: clockAnim
+                alwaysRunToEnd: true
                 ParallelAnimation {
                     NumberAnimation {
                         target: clock; properties: "opacity";
