@@ -194,6 +194,7 @@ ActivityBase {
             anchors.bottom: parent.bottom
             anchors.horizontalCenter: parent.horizontalCenter
             width: parent.width
+            visible: ApplicationSettings.isVirtualKeyboard && !ApplicationInfo.isMobile
             onKeypress: {
                 if(text == backspace)
                     edit.backspace()
