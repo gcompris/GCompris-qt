@@ -26,10 +26,9 @@ import GCompris 1.0
 import "../../core"
 import "crane.js" as Activity
 
-/*
-  1. add portrait view
-  2. add grid for first levels
-  3. change images from png to svg
+/* TODOs
+  1. add grid for first levels
+  2. change images from png to svg
   */
 
 ActivityBase {
@@ -208,10 +207,10 @@ ActivityBase {
         Image {
             id: crane_top
             source: "resource/crane_up.svgz"
-            sourceSize.width: background.width * 0.5
-            sourceSize.height: background.height * 0.06
-            width:  background.width * 0.5
-            height: background.height * 0.06
+            sourceSize.width: background.portrait ? background.width * 0.8 : background.width * 0.5
+            sourceSize.height: background.portrait ? background.height * 0.03 : background.height * 0.06
+            width:  background.portrait ? background.width * 0.8 : background.width * 0.5
+            height: background.portrait ? background.height * 0.03 : background.height * 0.06
             z: 3
             anchors {
                 top: parent.top
@@ -242,7 +241,6 @@ ActivityBase {
             source: "resource/crane_only2.svgz"
             sourceSize.width: parent.width / 6
             sourceSize.height: parent.height/ 4
-            mirror: true
             anchors {
                 top: crane_vertical.bottom
                 topMargin: - (height / 1.8)
@@ -265,10 +263,11 @@ ActivityBase {
         Image {
             id: crane_command
             source: "resource/command.svgz"
-            sourceSize.width: parent.width / 5
+            sourceSize.width: parent.width / 4
             sourceSize.height: parent.height/ 3.5
             mirror: true
             anchors {
+                top: crane_body.top
                 bottom: crane_body.bottom
                 right: crane_wire.left
                 rightMargin: 0
