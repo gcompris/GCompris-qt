@@ -1,0 +1,55 @@
+# Documentation of a way to build a flatpak
+
+First install flatpak as documented on http://flatpak.org/
+
+This approach is based on the ability of GCompris on linux to be build
+as a standalone.  It will thus package the libraries comming from the
+Qt version used at GCompris build time. Latter on if flatpak is
+successful we can expect that there will be a Qt flatpak runtine to
+use instead.
+
+# Build GCompris to be ready for bunding
+cd ~/Projets/gcompris/gcompris-kde
+cd build
+cmake -DBUILD_STANDALONE=True  ..
+make
+make package
+
+# Prepare the flatpak
+cd ~/Projets/gcompris/flatpak
+mkdir gcompris
+mkdir gcompris/export
+mkdir gcompris/files
+rsync -a ~/Projets/gcompris/gcompris-kde/build/_CPack_Packages/Linux/STGZ/gcompris-qt-0.60-Linux/ gcompris/files
+cp ~/Projets/gcompris/gcompris-kde/gcompris-appdata.xml gcompris/export/net.gcompris.GCompris.appdata.xml
+
+echo '[Application]
+name=net.gcompris.GCompris
+runtime=org.freedesktop.Platform/x86_64/1.4
+command=gcompris-qt.sh
+
+[Context]
+shared=network;ipc;
+sockets=x11;wayland;pulseaudio;session-bus;
+devices=dri;
+filesystems=host;' > gcompris/metadata
+
+# Build the flatpak
+flatpak build-export flatpak-repo gcompris
+flatpak build-update-repo --title="GCompris" flatpak-repo
+
+# Test it locally
+flatpak --user remote-add --no-gpg-verify gcompris-repo flatpak-repo
+flatpak --user install gcompris-repo net.gcompris.GCompris
+flatpak run net.gcompris.GCompris
+flatpak --user remote-delete gcompris-repo
+
+# Upload the flatpak
+rsync -az flatpak-repo gcompris.net:/var/www/
+
+# Test it from the remote
+flatpak --user remote-add --no-gpg-verify gcompris-repo http://gcompris.net/flatpak-repo
+flatpak --user install gcompris-repo net.gcompris.GCompris
+flatpak run net.gcompris.GCompris
+
+
