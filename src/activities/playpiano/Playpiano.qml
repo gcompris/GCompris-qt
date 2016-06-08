@@ -24,6 +24,7 @@ import QtQuick.Controls 1.0
 
 import "../../core"
 import "playpiano.js" as Activity
+import "melodies.js" as Dataset
 
 ActivityBase {
     id: activity
@@ -58,21 +59,18 @@ ActivityBase {
 
         property int currentType: 1
 
-        Grid {
-            columns:2
+        /*Column {
+            spacing: 2
             anchors.fill: parent
-            MultipleStaff {
-                id: staff1
-                width: 400
-                height: 300
-                nbStaves: 1
-                clef: "bassClef"
+            GCText {
+                text: qsTr("Click the piano keys...")
             }
             MultipleStaff {
-                width: 400
+                id: staff
+                width: 500
                 height: 300
-                nbStaves: 2
-                clef: "trebleClef"
+                nbStaves: 1
+                clef: "bass"
             }
             Piano {
                 id: piano
@@ -80,9 +78,49 @@ ActivityBase {
                 height: 300
                 onNoteClicked: {
                     print(note);
-                    onlyNote.value = note;
-                    staff1.addNote(note, currentType)
+                    staff.addNote(note, currentType, piano.useSharpNotation ? "sharp" : "flat")
                     var noteToPlay = 'qrc:/gcompris/src/activities/playpiano/resource/'+'bass'+'_pitches/'+currentType+'/'+note+'.wav';
+                    items.audioEffects.play(noteToPlay);
+                }
+            }
+            Image {
+                source: "qrc:/gcompris/src/activities/playpiano/resource/play.svg"
+                sourceSize.width: 75
+                MouseArea{
+                    anchors.fill: parent
+                    onClicked: staff.play()
+                }
+            }
+        }*/
+
+        Grid {
+            columns: 2
+            anchors.fill: parent
+            MultipleStaff {
+                id: staff1
+                width: 400
+                height: 300
+                nbStaves: 1
+                clef: "bass"
+                nbMaxNotesPerStaff: 6
+            }
+            MultipleStaff {
+                id: staff2
+                width: 400
+                height: 300
+                nbStaves: 2
+                clef: "treble"
+                nbMaxNotesPerStaff: 10
+            }
+            Piano {
+                id: piano
+                width: 500
+                height: 300
+                onNoteClicked: {
+                    onlyNote.value = note;
+                    staff2.addNote(note, currentType, piano.useSharpNotation ? "sharp" : "flat")
+                    var noteToPlay = 'qrc:/gcompris/src/activities/playpiano/resource/'+'bass'+'_pitches/'+currentType+'/'+note+'.wav';
+                    print(noteToPlay);
                     items.audioEffects.play(noteToPlay);
                 }
             }
@@ -125,6 +163,31 @@ ActivityBase {
                         onClicked: currentType = onlyNote.eighthNote
                     }
                 }
+                Image {
+                    source: "qrc:/gcompris/src/activities/playpiano/resource/play.svg"
+                    sourceSize.width: 75
+                    MouseArea{
+                        anchors.fill: parent
+                        onClicked: staff2.play()
+                    }
+                }
+                Image {
+                    source: "qrc:/gcompris/src/activities/playpiano/resource/edit-clear.svg"
+                    sourceSize.width: 75
+                    MouseArea{
+                        anchors.fill: parent
+                        onClicked: staff2.eraseAllNotes()
+                    }
+                }
+
+                Image {
+                    source: "qrc:/gcompris/src/activities/playpiano/resource/open.svg"
+                    sourceSize.width: 50
+                    MouseArea{
+                        anchors.fill: parent
+                        onClicked: loadMelody()
+                    }
+                }
             }
 
             GCDialogCheckBox {
@@ -138,6 +201,11 @@ ActivityBase {
             Image {
                 source: piano.useSharpNotation ? "qrc:/gcompris/src/activities/playpiano/resource/blacksharp.svg" : "qrc:/gcompris/src/activities/playpiano/resource/blackflat.svg"
             }
+        }
+        function loadMelody() {
+            var data = Dataset.get();
+            var selectedMusic = data.filter(function(item) { return item.title === 'Frère jacques'; });
+            staff2.loadFromData(selectedMusic[0]["melody"]);
         }
         DialogHelp {
             id: dialogHelp

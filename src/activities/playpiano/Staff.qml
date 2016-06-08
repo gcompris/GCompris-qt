@@ -36,10 +36,17 @@ Item {
 
     property bool lastPartition: false
 
+    property alias showMetronome: metronome.visible
+    property alias notes: notes
+
+    property int nbMaxNotesPerStaff
+
     Image {
-        source: clef ? "qrc:/gcompris/src/activities/playpiano/resource/"+clef+".svg" : ""
+        id: clefImage
+        source: clef ? "qrc:/gcompris/src/activities/playpiano/resource/"+clef+"Clef.svg" : ""
         sourceSize.width: (nbLines-2)*verticalDistanceBetweenLines
     }
+
     Repeater {
         model: nbLines
         
@@ -69,5 +76,73 @@ Item {
         color: "black"
         x: staff.width-10
         y: 0
+    }
+
+    ListModel {
+        id: notes
+    }
+
+    Rectangle {
+        id: metronome
+        width: 5
+        border.width: 10
+        height: (nbLines-1) * verticalDistanceBetweenLines+5
+        visible: lastPartition
+        color: "red"
+        x: clefImage.width-width/2
+        y: 0
+        Behavior on x {
+            SmoothedAnimation {
+                id: metronomeAnimation
+                duration: -1
+            }
+        }
+    }
+
+    property var mDuration
+    function initMetronome() {
+        var duration = 0;
+        for(var v = 0 ; v < notes.count ; ++ v) {
+            duration += notes.get(v).mDuration;
+        }
+        metronomeAnimation.velocity = 1;
+        mDuration = duration;
+        metronome.x = staff.width;
+        print("duration " + duration)
+    }
+
+    function playNote(noteId) {
+        metronomeAnimation.velocity = staff.width * 1000 / (notes.get(noteId).mDuration * notes.count);
+        print("velocity " + metronomeAnimation.velocity)
+    }
+
+    function eraseAllNotes() {
+        notes.clear();
+    }
+
+    property int noteWidth: 60
+    Row {
+        id: notesRow
+        x: clefImage.width-noteWidth/2
+        Repeater {
+            model: notes
+            Note {
+                value: mValue
+                type: mType
+                blackType: mBlackType
+                width: noteWidth
+                //(nbLines-3)*verticalDistanceBetweenLines == bottom line
+                y: {
+                    if(mValue > 0) {
+                        return (nbLines-3)*verticalDistanceBetweenLines - (parseInt(mValue)-1)*verticalDistanceBetweenLines/2
+                    }
+                    else if(mValue >= -2)
+                        return (nbLines-3)*verticalDistanceBetweenLines - (Math.abs(parseInt(mValue))-1)*verticalDistanceBetweenLines/2
+                    else
+                        return (nbLines-3)*verticalDistanceBetweenLines - (Math.abs(parseInt(mValue)))*verticalDistanceBetweenLines/2
+                }
+            }
+        }
+        spacing: (staff.width-10-clefImage.width)/nbMaxNotesPerStaff-noteWidth
     }
 }

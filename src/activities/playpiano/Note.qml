@@ -1,4 +1,4 @@
-/* GCompris - playpiano.qml
+/* GCompris - Note.qml
  *
  * Copyright (C) 2015 YOUR NAME <xx@yy.org>
  *
@@ -34,6 +34,8 @@ Item {
                               type == halfNote ? "half" :
                               type == quarterNote ? "quarter" : 
                               type == eighthNote ? "eighth" : ""
+    property string blackType: "" // empty, "flat" or "sharp"
+
     width: noteImage.width
     height: noteImage.height
 
@@ -42,15 +44,30 @@ Item {
     readonly property int quarterNote: 4
     readonly property int eighthNote: 8
 
+    readonly property int noteDuration: 2000 / type
+
     property var noteColorMap: { "1": "#FF0000", "2": "#FF7F00", "3": "#FFFF00",
-        "4": "#32CD32", "5": "#6495ED", "6": "#D02090", "7": "#FF1493", "8": "#FF0000",
+        "4": "#32CD32", "5": "#6495ED", "6": "#D02090", "7": "#FF1493", "8": "#FF0000", "9": "#FF7F00", "10": "#FFFF00", "11": "#32CD32",
         "-1": "#FF6347", "-2": "#FFD700", "-3": "#20B2AA", "-4": "#8A2BE2",
         "-5": "#FF00FF" }
+
+    Image {
+        id: blackTypeImage
+        source: blackType !== "" ? "qrc:/gcompris/src/activities/playpiano/resource/black"+blackType+".svg" : ""
+        visible: blackType !== ""
+        sourceSize.width: noteImage.width/2.5
+        anchors.right: noteImage.left
+        anchors.rightMargin: -width/2
+        anchors.bottom: noteImage.bottom
+        anchors.bottomMargin: height/2
+        fillMode: Image.PreserveAspectFit
+    }
 
     Image {
         id: noteImage
         source: "qrc:/gcompris/src/activities/playpiano/resource/"+noteType+"-note.svg"
         sourceSize.width: 60
+        fillMode: Image.PreserveAspectFit
     }
     // If the result is not good enought maybe have a rectangle and use opacity mask with a note
     ColorOverlay {

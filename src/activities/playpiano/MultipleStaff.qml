@@ -25,42 +25,127 @@ import GCompris 1.0
 import "../../core"
 
 Item {
-    id: staff
+    id: multipleStaff
 
     property int nbStaves
     property string clef
-    property int verticalDistanceBetweenLines: 30
     property int distanceBetweenStaff: 20
-    property int nbLines: 5
+
+    property int currentStaff: 0
+
+    property int nbMaxNotesPerStaff: 6
 
     Column {
         Repeater {
+            id: staves
             model: nbStaves
             Staff {
-                clef: staff.clef
-                height: (staff.height-distanceBetweenStaff*(nbStaves-1))/nbStaves
-                width: staff.width
+                id: staff
+                clef: multipleStaff.clef
+                height: (multipleStaff.height-distanceBetweenStaff*(nbStaves-1))/nbStaves
+                width: multipleStaff.width
                 y: index * (height+distanceBetweenStaff)
                 lastPartition: index == nbStaves-1
+                nbMaxNotesPerStaff: multipleStaff.nbMaxNotesPerStaff
             }
         }
     }
 
-    Row {
-        Repeater {
-            model: notes
-            Note {
-                value: mValue
-                type:mType
-                //(nbLines-3)*verticalDistanceBetweenLines == bottom line
-                y: (nbLines-2)*verticalDistanceBetweenLines - (mValue-1)*verticalDistanceBetweenLines/2
+    function addNote(newValue_, newType_, newBlackType_) {
+        if(staves.itemAt(currentStaff).notes.count > nbMaxNotesPerStaff) {
+            if(currentStaff+1 >= nbStaves) {
+                print("no more place!")
+                return
             }
+            else
+                currentStaff++
+        }
+
+        staves.itemAt(currentStaff).notes.append({"mValue": newValue_, "mType": newType_,
+                                                  "mBlackType": newBlackType_, "mDuration": 2000/newType_});
+    }
+
+    function play() {
+        musicTimer.currentPlayedStaff = 0;
+        musicTimer.currentNote = 0;
+        musicTimer.interval = 1000;
+        for(var v = 1 ; v < currentStaff ; ++ v)
+            staves.itemAt(v).showMetronome = false;
+        staves.itemAt(0).showMetronome = true;
+
+        musicTimer.start();
+    }
+
+    function eraseAllNotes() {
+        for(var v = 0 ; v <= currentStaff ; ++ v)
+            staves.itemAt(v).eraseAllNotes();
+        currentStaff = 0;
+    }
+
+    property var whiteNotes: ["C", "D", "E", "F", "G", "A", "B", "2C", "2D", "2E", "2F"]
+    property var blackNotesSharp: ["C#", "D#", "F#", "G#", "A#", "2C#"]
+    property var blackNotesFlat: ["DB", "EB", "GB", "AB", "BB"]
+
+    function loadFromData(data) {
+        eraseAllNotes()
+        var melody = data.split(" ");
+        multipleStaff.clef = melody[0];
+        for(var i = 1 ; i < melody.length ; ++ i) {
+            var noteLength = melody[i].length;
+            var type = parseInt(melody[i][noteLength-1]);
+            var noteStr = melody[i].substr(0, noteLength-1).toUpperCase();
+
+            print(type + " - " + noteStr)
+            if(whiteNotes.indexOf(noteStr) != -1)
+                addNote(""+(whiteNotes.indexOf(noteStr)+1), type, "");
+            else if (blackNotesSharp.indexOf(melody[i][0]) != -1) {
+                addNote(""+(-1*blackNotesSharp.indexOf(noteStr)-1), type, "sharp");
+            }
+            else {
+                addNote(""+(-1*blackNotesFlat.indexOf(noteStr)-1), type, "flat");
+            }
+
+            print(melody[i]);
         }
     }
-    ListModel {
-        id: notes
-    }
-    function addNote(newValue_, newType_) {
-        notes.append({"mValue": newValue_, "mType": newType_});
+
+    Timer {
+        id: musicTimer
+        property int currentPlayedStaff: 0
+        property int currentNote: 0
+        onRunningChanged: {
+            if(!running && staves.itemAt(currentPlayedStaff).notes.get(currentNote) !== undefined) {
+                var currentType = staves.itemAt(currentPlayedStaff).notes.get(currentNote).mType
+                var note = staves.itemAt(currentPlayedStaff).notes.get(currentNote).mValue
+
+                // TODO some notes does not play if they are played in the rcc directly...
+                var noteToPlay = 'qrc:/gcompris/src/activities/playpiano/resource/'+multipleStaff.clef+'_pitches/'+currentType+'/'+note+'.wav';
+                //var noteToPlay = 'C:/Users/Johnny/Desktop/work/gcompris/src/activities/playpiano/resource/'+multipleStaff.clef+'_pitches/'+currentType+'/'+note+'.wav';
+                items.audioEffects.play(noteToPlay);
+
+                if(currentNote == 0) {
+                    staves.itemAt(currentPlayedStaff).initMetronome();
+                }
+                musicTimer.interval = staves.itemAt(currentPlayedStaff).notes.get(currentNote).mDuration;
+                currentNote ++;
+                if(currentNote > nbMaxNotesPerStaff) {
+                    currentNote = 0;
+                    currentPlayedStaff ++;
+                    if(currentPlayedStaff < nbStaves && currentNote < staves.itemAt(currentPlayedStaff).notes.count) {
+                        print("play next staff");
+                        staves.itemAt(currentPlayedStaff).showMetronome = true;
+                        if(currentPlayedStaff>0)
+                            staves.itemAt(currentPlayedStaff-1).showMetronome = false;
+                        staves.itemAt(currentPlayedStaff).playNote(currentNote);
+                        musicTimer.start();
+                    }
+                }
+                else if(staves.itemAt(currentPlayedStaff).notes.get(currentNote) !== undefined) {
+                    print("will play next " + JSON.stringify(staves.itemAt(currentPlayedStaff).notes.get(currentNote)));
+                    staves.itemAt(currentPlayedStaff).playNote(currentNote);
+                    musicTimer.start();
+                }
+            }
+        }
     }
 }
