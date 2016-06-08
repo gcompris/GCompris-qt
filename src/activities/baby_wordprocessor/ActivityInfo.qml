@@ -34,5 +34,6 @@ ActivityInfo {
     Try to fiddle around and find more shortcuts. For example, what is the shortcut to select all the text?")
   credit: ""
   section: "computer keyboard reading"
+  enabled: !ApplicationInfo.isMobile
   createdInVersion: 6000
 }
