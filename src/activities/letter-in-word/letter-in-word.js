@@ -45,8 +45,7 @@ var frequency;
 var incorrectFlag = false;
 var locale;
 
-function start(_items)
-{
+function start(_items) {
     Core.checkForVoices(_items.main);
     items = _items;
     // register the voices for the locale
@@ -60,13 +59,8 @@ function start(_items)
     initLevel();
 }
 
-
-function loadDataset()
-{
+function loadDataset() {
     var resourceUrl = "qrc:/gcompris/src/activities/lang/resource/"
-
-
-
     dataset = Lang.load(items.parser, resourceUrl,
                         GCompris.ApplicationSettings.wordset ? "words.json" : "words_sample.json",
                                                                "content-"+ locale +".json")
@@ -78,7 +72,8 @@ function loadDataset()
         // We will first look again for locale xx (without _XX if exist)
         if(localeUnderscoreIndex > 0) {
             localeShort = locale.substring(0, localeUnderscoreIndex)
-        } else {
+        }
+        else {
             localeShort = locale;
         }
         dataset = Lang.load(items.parser, resourceUrl,
@@ -95,17 +90,15 @@ function loadDataset()
 
 }
 
-function stop()
-{
+function stop() {
     items.animateX.stop()
 }
 
-function shuffleString(s)
-{
+function shuffleString(s) {
     var a = s;
     var n = a.length;
 
-    for(var i = n-1; i>0; i--) {
+    for(var i = n-1; i > 0; --i) {
         var j = Math.floor(Math.random() * (i + 1));
         var tmp = a[i];
         a[i] = a[j];
@@ -115,7 +108,6 @@ function shuffleString(s)
 }
 
 function initLevel() {
-
     var componentsArr;
     items.bar.level = currentLevel + 1;
     if (currentSubLevel == 0 && !incorrectFlag) {
@@ -142,15 +134,15 @@ function initLevel() {
                                         "components": componentsArr
                                     });
         }
-    } else {
+    }
+    else {
         items.score.currentSubLevel = currentSubLevel + 1;
     }
 
     incorrectFlag = false;
 
-    for(var i = 0; i < words.length; i++){
+    for(var i = 0; i < words.length; i++) {
         items.wordsModel.setProperty(i, "selected", false);
-
     }
 
     currentLetter = questions[currentSubLevel];
@@ -165,46 +157,42 @@ function initLevel() {
     }
 }
 
-function calculateFrequency(){
+function calculateFrequency() {
     var freq = [];
-    //regex pattern to detect wether the character is an english alphabet or some accented latin chacarcter
+    //regex pattern to detect whether the character is an english alphabet or some accented latin chacarcter
     var pattern = /[A-Za-z\u00C0-\u017F]/;
-    for(var i = 0; i < words.length; i++){
+    for(var i = 0; i < words.length; i++) {
         var currentWord = words[i].translatedTxt;
-        for(var j = 0; j < currentWord.length; j++){
+        for(var j = 0; j < currentWord.length; j++) {
             var character = currentWord.charAt(j);
-            //consider the character if and only if it is an alphabet or an accented latin chataracter
-            if(pattern.test(character)){
-                if(freq[character]){
+            //consider the character if and only if it is an alphabet or an accented latin character
+            if(pattern.test(character)) {
+                if(freq[character]) {
                     freq[character]++;
                 }
-                else{
+                else {
                     freq[character] = 1;
                 }
             }
-
         }
     }
-
     return freq;
 }
 
-function generateQuestions(){
+function generateQuestions() {
     var freqArr = [];
     var ques = [];
 
-    for(var character in frequency){
+    for(var character in frequency) {
         freqArr.push([character, frequency[character]]);
     }
 
     freqArr.sort(function(a, b) {return b[1] - a[1]});
 
     var limit = Math.min(10, freqArr.length);
-    for(var i = 0; i < limit; i++){
+    for(var i = 0; i < limit; i++) {
         ques.push(freqArr[i][0])
     }
-
-
     return ques;
 }
 
@@ -215,7 +203,7 @@ function playLetter(letter) {
 
 function nextLevel() {
     items.audioVoices.clearQueue()
-    if(maxLevel <= ++currentLevel ) {
+    if(maxLevel <= ++currentLevel) {
         currentLevel = 0
     }
     currentSubLevel = 0;
@@ -239,8 +227,7 @@ function nextSubLevel() {
     initLevel();
 }
 
-function checkAnswer()
-{
+function checkAnswer() {
     var hasWordNotFound = false;
     var modelEntry;
     for(var i = 0; i < words.length; i++) {
@@ -255,8 +242,7 @@ function checkAnswer()
     }
 }
 
-function checkWord(index)
-{
+function checkWord(index) {
     var modelEntry = items.wordsModel.get(index);
     if(modelEntry.spelling.indexOf(currentLetter) != -1) {
         items.wordsModel.setProperty(index, "selected", true);
@@ -269,10 +255,10 @@ function checkWord(index)
     }
 }
 
-function incorrectSelection(){
+function incorrectSelection() {
     incorrectFlag = true;
     var quesLen = questions.length;
-    questions = questions.slice(0,currentSubLevel) + questions.slice(currentSubLevel+1,quesLen) + questions.charAt(currentSubLevel);
+    questions = questions.slice(0, currentSubLevel) + questions.slice(currentSubLevel+1, quesLen) + questions.charAt(currentSubLevel);
     currentSubLevel--;
     nextSubLevel();
 }

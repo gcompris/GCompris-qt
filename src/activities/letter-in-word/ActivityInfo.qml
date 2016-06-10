@@ -19,7 +19,7 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "letter-in-word/LetterInWord.qml"
-  difficulty: 1
+  difficulty: 2
   icon: "letter-in-word/letter-in-word.svg"
   author: "Akshat Tandon &lt;akshat.tandon@research.iiit.ac.ins&gt;"
   demo: true
