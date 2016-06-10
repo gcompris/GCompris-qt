@@ -105,6 +105,10 @@ find_package (KF5 QUIET COMPONENTS
 )
 if(KF5_FOUND)
     include(KDEInstallDirs)
+    install(FILES org.kde.gcompris.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
+    install(FILES org.kde.gcompris.desktop DESTINATION ${KDE_INSTALL_APPDIR})
+
+    add_subdirectory(images)
 endif(KF5_FOUND)
 
 FIND_PROGRAM(LCONVERT_EXECUTABLE lconvert-qt5 lconvert
