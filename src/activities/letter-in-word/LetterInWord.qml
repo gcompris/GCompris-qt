@@ -45,6 +45,8 @@ ActivityBase {
         // system locale by default
         property string locale: "system"
 
+        property bool keyboardMode: false
+
         signal start
         signal stop
         signal voiceError
@@ -69,8 +71,6 @@ ActivityBase {
             property alias locale: background.locale
             property string question
         }
-
-
 
         onStart: {
             activity.audioVoices.error.connect(voiceError)
@@ -195,7 +195,7 @@ ActivityBase {
             id: planeText
             width: plane.width
             height: plane.height
-            x: - width
+            x: -width
             anchors.top: parent.top
             anchors.topMargin: 5 * ApplicationInfo.ratio
 
@@ -236,7 +236,7 @@ ActivityBase {
 
         BarButton {
             id: repeatItem
-            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg";
+            source: "qrc:/gcompris/src/core/resource/bar_repeat.svg"
             sourceSize.width: 80 * ApplicationInfo.ratio
             anchors {
                 top: parent.top
@@ -248,6 +248,22 @@ ActivityBase {
                 animateX.restart();
             }
         }
+
+        Keys.onPressed: {
+            if(event.key === Qt.Key_Space) {
+                wordsView.currentItem.select()
+            }
+        }
+        Keys.onReleased: {
+            keyboardMode = true
+            event.accepted = false
+        }
+        Keys.onEnterPressed: wordsView.currentItem.select();
+        Keys.onReturnPressed: wordsView.currentItem.select();
+        Keys.onRightPressed: wordsView.moveCurrentIndexRight();
+        Keys.onLeftPressed: wordsView.moveCurrentIndexLeft();
+        Keys.onDownPressed: wordsView.moveCurrentIndexDown();
+        Keys.onUpPressed: wordsView.moveCurrentIndexUp();
 
         ListModel {
             id: wordsModel
@@ -273,7 +289,7 @@ ActivityBase {
             //verticalLayoutDirection: GridView.BottomToTop
             layoutDirection: Qt.LeftToRight
 
-
+            keyNavigationWraps: true
             model: wordsModel
             delegate: Card {
                 width: background.itemWidth
@@ -286,8 +302,17 @@ ActivityBase {
                         mouseActive = true;
                     }
                 }
+            }
 
-
+            highlight: Rectangle {
+                width: wordsView.cellWidth - wordsView.spacing
+                height: wordsView.cellHeight - wordsView.spacing
+                color:  "#AAFFFFFF"
+                border.width: 3
+                border.color: "black"
+                visible: background.keyboardMode
+                Behavior on x { SpringAnimation { spring: 2; damping: 0.2 } }
+                Behavior on y { SpringAnimation { spring: 2; damping: 0.2 } }
             }
         }
 

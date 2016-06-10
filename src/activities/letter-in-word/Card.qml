@@ -41,7 +41,6 @@ Item {
         //visible: index % 2 != 0 ? false : true
     }
 
-
     Image {
         id: cardImage
         anchors.top:wordPic.bottom
@@ -70,9 +69,7 @@ Item {
                     color: selected && textdata.length == 1 && textdata == Activity.currentLetter ? "green" : "white"
 
                 }
-
             }
-
         }
 
         ParticleSystemStarLoader {
@@ -151,38 +148,38 @@ Item {
         anchors.fill: parent
         hoverEnabled: ApplicationInfo.isMobile ? false : true
         onClicked: {
-            if(mouseActive){
-                if (Activity.checkWord(index)) {
-                    successAnimation.restart();
-                    particle.burst(30)
-                    components.clear();
-                    var tempword;
-                    var j = 0;
-                    for(var i = 0; i < spelling.length; i++) {
-                        if(spelling.charAt(i) == Activity.currentLetter) {
-                            tempword = spelling.substring(j, i);
-                            if(i != j) {
-                                components.append({"textdata": tempword})
-                            }
-                            components.append({"textdata": Activity.currentLetter});
-
-                            j = i + 1;
-                        }
-                    }
-                    if(j < spelling.length) {
-                        tempword = spelling.substring(j, spelling.length);
-                        components.append({"textdata": tempword})
-
-                    }
-
-                } else {
-                    failureAnimation.restart()
-                }
-
-            }
+            select();
         }
     }
 
+    function select() {
+        if(mouseActive && !successAnimation.running) {
+            if (Activity.checkWord(index)) {
+                successAnimation.restart();
+                particle.burst(30)
+                components.clear();
+                var tempword;
+                var j = 0;
+                for(var i = 0; i < spelling.length; i++) {
+                    if(spelling.charAt(i) == Activity.currentLetter) {
+                        tempword = spelling.substring(j, i);
+                        if(i != j) {
+                            components.append({"textdata": tempword})
+                        }
+                        components.append({"textdata": Activity.currentLetter});
 
+                        j = i + 1;
+                    }
+                }
+                if(j < spelling.length) {
+                    tempword = spelling.substring(j, spelling.length);
+                    components.append({"textdata": tempword})
 
+                }
+            }
+            else {
+                failureAnimation.restart()
+            }
+        }
+    }
 }
