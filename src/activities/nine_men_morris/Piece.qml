@@ -28,7 +28,7 @@ import GCompris 1.0
 
 Image {
     id: piece
-    property QtObject pieceParent 
+    property QtObject pieceParent
     property double moveX
     property double moveY
     property int parentIndex: -1
@@ -41,7 +41,7 @@ Image {
     property int chance
     opacity: 1.0//0.5
 
-	ParallelAnimation {
+    ParallelAnimation {
         id: pieceAnimation
         NumberAnimation {
             target: piece
@@ -72,17 +72,17 @@ Image {
             piece.anchors.centerIn = pieceParent
             piece.parent.state = piece.state
             if (Activity.checkMill(piece))
-				Activity.UpdateRemovablePiece()
+                Activity.UpdateRemovablePiece()
             else if (firstPhase)
-				Activity.continueGame()
-			else
-				Activity.checkGameWon()
+                Activity.continueGame()
+            else
+                Activity.checkGameWon()
         }
     }
-	/*ParentAnimation {
-		id: pieceAnimation
-		target: piece
-		newParent: pieceParent
+    /*ParentAnimation {
+        id: pieceAnimation
+        target: piece
+        newParent: pieceParent
         NumberAnimation { properties: "x,y"; duration: 1000 }
         onStarted: {
             console.log("start")
@@ -93,19 +93,19 @@ Image {
     }*/
 
     states: [
-		State {
-			name: "invisible"
-			PropertyChanges {
-				target: piece
-				visible: false
-			}
-		},
-		State {
-			name: "1" // Player 1
-			PropertyChanges{
-				target: piece
-				source: playSecond ? Activity.url + "black_piece.svg" : Activity.url + "white_piece.svg"
-			}
+        State {
+            name: "invisible"
+            PropertyChanges {
+                target: piece
+                visible: false
+            }
+        },
+        State {
+            name: "1" // Player 1
+            PropertyChanges{
+                target: piece
+                source: playSecond ? Activity.url + "black_piece.svg" : Activity.url + "white_piece.svg"
+            }
         },
         State {
             name: "2" // Player 2
@@ -115,56 +115,57 @@ Image {
             }
         }
     ]
-    
+
     MouseArea {
-		id: area
-		property bool turn: chance ? piece.state == "2" : piece.state == "1"
-		enabled: ((canBeRemoved && !turn) || (!firstPhase && turn)) 
-				  && (piece.parentIndex != -1) && !gameDone
-		anchors.centerIn: parent
-		width: parent.width
-		height: parent.height
-		onClicked: {
-			//console.log("gameDone",gameDone,"enabled",enabled)
-			if (canBeRemoved)
-				Activity.removePiece(index)
-			else {
-				isSelected = true
-				Activity.pieceSelected(index);
-			}
-		}
-	}
-	
-	Rectangle {
-		id: boundary
-		anchors.centerIn: parent
-		width: parent.width
-		height: parent.height
-		visible: ((parent.visible && area.enabled && firstPhase) || isSelected) || canBeRemoved
-		opacity: 1
-		radius: width/2
-		border.width: 3
-		border.color: "green"
-		color: "transparent"
-		z: -1
-	}
-	
+        id: area
+        property bool turn: chance ? piece.state == "2" : piece.state == "1"
+        enabled: ((canBeRemoved && !turn) || (!firstPhase && turn))
+                  && (piece.parentIndex != -1) && !gameDone
+        anchors.centerIn: parent
+        width: parent.width
+        height: parent.height
+        onClicked: {
+            //console.log("gameDone",gameDone,"enabled",enabled)
+            if (canBeRemoved)
+                Activity.removePiece(index)
+            else {
+                isSelected = true
+                Activity.pieceSelected(index);
+            }
+        }
+    }
+
+    Rectangle {
+        id: boundary
+        anchors.centerIn: piece
+        width: piece.width
+        height: width
+        visible: ((piece.visible && area.enabled && firstPhase) || isSelected) || canBeRemoved
+        opacity: 1
+        radius: width/2
+        border.width: width/10//2.5
+        border.color: canBeRemoved ? "red" : "green"
+        color: "transparent"
+        z: -1//3
+        //onWidthChanged: {console.log(width)}
+    }
+
     /*
     Behavior on parent {
-		//ParentAnimation {
-			//NumberAnimation { properties: "x,y"; duration: 1000 }
-		//}
-		NumberAnimation { duration: 1000 }
-	}*/
-	
-	function move(pieceChangeParent) {
-		piece.pieceParent = pieceChangeParent
-		piece.parentIndex = pieceChangeParent.index
-		piece.sourceSize.height = Qt.binding(function() { return pieceParent.width*2.5 })
-		var coord = piece.parent.mapFromItem(pieceChangeParent.parent, pieceChangeParent.x + pieceChangeParent.width/2 -
-						piece.width/2, pieceChangeParent.y + pieceChangeParent.height/2 - piece.height/2)
-		piece.moveX = coord.x
-		piece.moveY = coord.y
-		pieceAnimation.start()
-	}
+        //ParentAnimation {
+            //NumberAnimation { properties: "x,y"; duration: 1000 }
+        //}
+        NumberAnimation { duration: 1000 }
+    }*/
+
+    function move(pieceChangeParent) {
+        piece.pieceParent = pieceChangeParent
+        piece.parentIndex = pieceChangeParent.index
+        piece.sourceSize.height = Qt.binding(function() { return pieceParent.width*2.5 })
+        var coord = piece.parent.mapFromItem(pieceChangeParent.parent, pieceChangeParent.x + pieceChangeParent.width/2 -
+                        piece.width/2, pieceChangeParent.y + pieceChangeParent.height/2 - piece.height/2)
+        piece.moveX = coord.x
+        piece.moveY = coord.y
+        pieceAnimation.start()
+    }
 }

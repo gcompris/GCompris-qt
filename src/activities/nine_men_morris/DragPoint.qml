@@ -27,25 +27,26 @@ import GCompris 1.0
 
 Rectangle {
     id: dragPoint
-	width: parent.width/26
+    width: parent.width/26
     height: width
     radius: width/2
     opacity: 1.0
     border.color: "#803300"
-    border.width: state == "EMPTY" ? 0 : width/6    
+    border.width: state == "EMPTY" ? 0 : width/6
     state: "AVAILABLE"
-	
-	property int index
-	property bool test
-    property bool pieceBeingRemoved
+
+    property int index
+    property bool test
+    //property bool pieceBeingRemoved
     property bool firstPhase
+    property bool pieceBeingMoved
     property QtObject leftPiece
     property QtObject rightPiece
     property QtObject upperPiece
     property QtObject lowerPiece
-    
+
     states: [
-		State {
+        State {
             name: "AVAILABLE" // Green color
             PropertyChanges{
                 target: dragPoint
@@ -81,18 +82,18 @@ Rectangle {
             }
         }
     ]
-    
+
     MouseArea {
-		id: area
-		enabled: parent.state == "AVAILABLE" && !pieceBeingRemoved
-		anchors.centerIn: parent
-		width: 2.5*parent.width
-		height: 2.5*parent.height
-		onClicked: {
-			if (firstPhase)
-				Activity.handleCreate(index)
-			else
-				Activity.movePiece(index)
-		}
-	}
+        id: area
+        enabled: parent.state == "AVAILABLE" && !pieceBeingMoved
+        anchors.centerIn: parent
+        width: 2.5*parent.width
+        height: 2.5*parent.height
+        onClicked: {
+            if (firstPhase)
+                Activity.handleCreate(index)
+            else
+                Activity.movePiece(index)
+        }
+    }
 }
