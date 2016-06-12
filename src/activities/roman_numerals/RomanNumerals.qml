@@ -256,6 +256,7 @@ ActivityBase {
         Column {
             id: column
             anchors.fill: parent
+            anchors.topMargin: 10
             GCText {
                 id: questionLabel
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -263,12 +264,18 @@ ActivityBase {
                 color: 'white'
                 Rectangle {
                     z: -1
-                    color: '#AA333333'
                     border.color: 'black'
                     border.width: 1
                     anchors.centerIn: parent
                     width: parent.width * 1.1
                     height: parent.height
+                    opacity: 0.8
+                    gradient: Gradient {
+                        GradientStop { position: 0.0; color: "#000" }
+                        GradientStop { position: 0.9; color: "#666" }
+                        GradientStop { position: 1.0; color: "#AAA" }
+                    }
+                    radius: 10
                 }
             }
             Item { // Just a margin
@@ -305,7 +312,13 @@ ActivityBase {
 
                 Rectangle {
                     z: -1
-                    color: '#AA333333'
+                    opacity: 0.8
+                    gradient: Gradient {
+                        GradientStop { position: 0.0; color: "#000" }
+                        GradientStop { position: 0.9; color: "#666" }
+                        GradientStop { position: 1.0; color: "#AAA" }
+                    }
+                    radius: 10
                     border.color: 'black'
                     border.width: 1
                     anchors.centerIn: parent
@@ -342,7 +355,13 @@ ActivityBase {
                 color: 'white'
                 Rectangle {
                     z: -1
-                    color: '#AA333333'
+                    opacity: 0.8
+                    gradient: Gradient {
+                        GradientStop { position: 0.0; color: "#000" }
+                        GradientStop { position: 0.9; color: "#666" }
+                        GradientStop { position: 1.0; color: "#AAA" }
+                    }
+                    radius: 10
                     border.color: 'black'
                     border.width: 1
                     anchors.centerIn: parent
@@ -378,7 +397,13 @@ ActivityBase {
                 color: 'white'
                 Rectangle {
                     z: -1
-                    color: '#AA333333'
+                    opacity: 0.8
+                    gradient: Gradient {
+                        GradientStop { position: 0.0; color: "#000" }
+                        GradientStop { position: 0.9; color: "#666" }
+                        GradientStop { position: 1.0; color: "#AAA" }
+                    }
+                    radius: 10
                     border.color: 'black'
                     border.width: 1
                     anchors.centerIn: parent
