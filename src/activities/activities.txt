@@ -108,6 +108,7 @@ redraw
 redraw_symmetrical
 renewable_energy
 reversecount
+roman_numerals
 scalesboard
 scalesboard_weight
 scalesboard_weight_avoirdupois
