@@ -5,7 +5,7 @@
 	<key>BuildMachineOSBuild</key>
 	<string>14D136</string>
 	<key>CFBundleDisplayName</key>
-	<string>GCompris</string>
+	<string>GCompris LITE</string>
 	<key>CFBundleExecutable</key>
 	<string>gcompris</string>
 	<key>CFBundleGetInfoString</key>
@@ -13,7 +13,7 @@
 	<key>CFBundleIconFile</key>
 	<string>gcompris.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>net.gcompris</string>
+	<string>net.gcompris.maxosx.demo</string>
 	<key>CFBundleName</key>
 	<string>gcompris</string>
 	<key>CFBundlePackageType</key>
@@ -23,7 +23,7 @@
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>0.52.1</string>
+	<string>0.52.2</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
