@@ -350,7 +350,7 @@ ActivityBase {
                 anchors.horizontalCenter: parent.horizontalCenter
                 text: items.toArabic ?
                           qsTr("Roman value: %1").arg(value) :
-                          qsTr('Arabic value: %1'.arg(value))
+                          qsTr('Arabic value: %1').arg(value)
                 onTextChanged: timer.start()
                 color: 'white'
                 Rectangle {
