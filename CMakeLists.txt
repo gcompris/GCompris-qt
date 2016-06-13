@@ -105,9 +105,9 @@ find_package (KF5 QUIET COMPONENTS
 )
 if(KF5_FOUND)
     include(KDEInstallDirs)
-    add_subdirectory(images)
 
     if (ECM_VERSION VERSION_GREATER "1.6.0")
+        add_subdirectory(images)
         install(FILES org.kde.gcompris.appdata.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
         install(FILES org.kde.gcompris.desktop DESTINATION ${KDE_INSTALL_APPDIR})
     endif()
