@@ -1,32 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <application>
   <id type="desktop">org.kde.gcompris.desktop</id>
-  <id type="desktop" xml:lang="ast">gcompris.desktop</id>
-  <id type="desktop" xml:lang="ca">gcompris.desktop</id>
-  <id type="desktop" xml:lang="ca-valencia">gcompris.desktop</id>
-  <id type="desktop" xml:lang="de">gcompris.desktop</id>
-  <id type="desktop" xml:lang="el">gcompris.desktop</id>
-  <id type="desktop" xml:lang="en-GB">gcompris.desktop</id>
-  <id type="desktop" xml:lang="es">gcompris.desktop</id>
-  <id type="desktop" xml:lang="fi">gcompris.desktop</id>
-  <id type="desktop" xml:lang="fr">gcompris.desktop</id>
-  <id type="desktop" xml:lang="gl">gcompris.desktop</id>
-  <id type="desktop" xml:lang="it">gcompris.desktop</id>
-  <id type="desktop" xml:lang="ko">gcompris.desktop</id>
-  <id type="desktop" xml:lang="nl">gcompris.desktop</id>
-  <id type="desktop" xml:lang="nn">gcompris.desktop</id>
-  <id type="desktop" xml:lang="pl">gcompris.desktop</id>
-  <id type="desktop" xml:lang="pt">gcompris.desktop</id>
-  <id type="desktop" xml:lang="pt-BR">gcompris.desktop</id>
-  <id type="desktop" xml:lang="ro">gcompris.desktop</id>
-  <id type="desktop" xml:lang="ru">gcompris.desktop</id>
-  <id type="desktop" xml:lang="sk">gcompris.desktop</id>
-  <id type="desktop" xml:lang="sl">gcompris.desktop</id>
-  <id type="desktop" xml:lang="sv">gcompris.desktop</id>
-  <id type="desktop" xml:lang="uk">gcompris.desktop</id>
-  <id type="desktop" xml:lang="x-test">xxgcompris.desktopxx</id>
-  <id type="desktop" xml:lang="zh-CN">gcompris.desktop</id>
-  <id type="desktop" xml:lang="zh-TW">gcompris.desktop</id>
+  <id type="desktop" xml:lang="nl">org.kde.gcompris.desktop</id>
+  <id type="desktop" xml:lang="sv">org.kde.gcompris.desktop</id>
+  <id type="desktop" xml:lang="uk">org.kde.gcompris.desktop</id>
+  <id type="desktop" xml:lang="x-test">xxorg.kde.gcompris.desktopxx</id>
   <metadata_license>CC0-1.0</metadata_license>
   <metadata_license xml:lang="ast">CC0-1.0</metadata_license>
   <metadata_license xml:lang="ca">CC0-1.0</metadata_license>
