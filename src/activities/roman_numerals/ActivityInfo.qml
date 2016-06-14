@@ -22,7 +22,7 @@ ActivityInfo {
   difficulty: 4
   icon: "roman_numerals/roman_numerals.svg"
   author: "Bruno Coudoin &lt;bruno.coudoin@gcompris.net&gt;"
-  demo: false
+  demo: true
   title: qsTr("Roman numerals")
   description: ""
   //intro: "Learn and practice roman to arabic numerals conversion"
