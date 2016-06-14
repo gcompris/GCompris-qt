@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <application>
   <id type="desktop">org.kde.gcompris.desktop</id>
+  <id type="desktop" xml:lang="es">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="nl">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="sv">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="uk">org.kde.gcompris.desktop</id>
