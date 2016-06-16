@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <application>
   <id type="desktop">org.kde.gcompris.desktop</id>
+  <id type="desktop" xml:lang="ca">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="da">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="es">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="fr">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="nl">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="pt">org.kde.gcompris.desktop</id>
+  <id type="desktop" xml:lang="ro">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="sv">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="uk">org.kde.gcompris.desktop</id>
   <id type="desktop" xml:lang="x-test">xxorg.kde.gcompris.desktopxx</id>
