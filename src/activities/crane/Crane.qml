@@ -86,7 +86,10 @@ ActivityBase {
                 Activity.move("up")
             else if (event.key === Qt.Key_Down)
                 Activity.move("down")
-            else if (event.key === Qt.Key_Space || event.key === Qt.Key_Tab)
+            else if (event.key === Qt.Key_Space ||
+                     event.key === Qt.Key_Tab ||
+                     event.key === Qt.Key_Enter ||
+                     event.key === Qt.Key_Return)
                 Activity.move("next")
         }
 

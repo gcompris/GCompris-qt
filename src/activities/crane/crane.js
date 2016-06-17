@@ -55,7 +55,7 @@ function init() {
     items.rows = 6
 
     setRandomModel()
-    items.selected = getNextIndex(0)
+    items.selected = getNextIndex1(0)
 }
 
 function shuffle(input) {
@@ -69,13 +69,16 @@ function shuffle(input) {
     }
 }
 
+var names = []
+var names2 = []
+
+
 function setRandomModel(){
     // randomize the names
     shuffle(allNames)
 
     var numbers = []
-    var names = []
-    var names2 = []
+
 
     for (var i = 0; i < items.columns * items.rows; i++){
         names[i] = ""    // reset the board
@@ -95,8 +98,8 @@ function setRandomModel(){
         names2[numbers[i]] = allNames[i]
 
     //DEBUGGING
-//    print("names: ",names)
-//    print("names2: ",names2)
+    //    print("names: ",names)
+    //    print("names2: ",names2)
 
     items.repeater.model = names.length
     items.modelRepeater.model = names2.length
@@ -108,10 +111,9 @@ function setRandomModel(){
 }
 
 
-function getNextIndex(index) {
-    var i
+function getNextIndex1(index) {
     var length = items.repeater.count
-    for(i = index-1; i >= 0; i--) {
+    for(var i = index-1; i >= 0; i--) {
         if (items.repeater.itemAt(i).source != ""){
             return i
         }
@@ -121,6 +123,62 @@ function getNextIndex(index) {
             return i
         }
     }
+    return -1;
+}
+
+//names
+function getNextIndex(source) {
+    var length = names.length
+
+    //find index of curent image in ordonated "names" list
+    for(var i = 0; i < length; i++) {
+        var name = "qrc:/gcompris/src/activities/crane/" + names[i]
+//        print("name: ",name)
+        if (name == source) {
+            break
+        }
+    }
+
+    //go to next index
+    i++
+
+    //bool variable
+    var ok = false
+
+    //search from current index
+    for (; i<names.length; i++) {
+        if (names[i] != "")  {
+            ok = true  // the item was found in the right part of the list
+            break
+        }
+    }
+
+    // ok == true only if the image is in the right part of the list
+    if (ok==true) {
+        for (var j = 0; j<items.repeater.count; j++) {
+            name = "qrc:/gcompris/src/activities/crane/" + names[i]
+            if (name == items.repeater.itemAt(j).source)
+                return j
+        }
+    }
+    //ok == false, meaning that we have to start the search from left
+    else {   //search from begging of the list
+        for (i=0; i<names.length; i++) {
+            if (names[i] != "")  {
+                ok = true
+                //when finding the first image, stop
+                break
+            }
+        }
+        //search for the index of that image in the repater and
+        //return the index
+        for (j = 0; j<items.repeater.count; j++) {
+            name = "qrc:/gcompris/src/activities/crane/" + names[i]
+            if (name == items.repeater.itemAt(j).source)
+                return j
+        }
+    }
+
     return -1;
 }
 
@@ -152,7 +210,7 @@ function move(move) {
         if (items.selected < (items.repeater.count-items.columns))
             makeMove(items.columns)
     } else if (move === "next") {
-        items.selected = getNextIndex(items.selected)
+        items.selected = getNextIndex(items.repeater.itemAt(items.selected).source)
     }
 }
 
