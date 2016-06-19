@@ -1,170 +1,104 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg
-    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-    xmlns:cc="http://creativecommons.org/ns#"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    xmlns:dc="http://purl.org/dc/elements/1.1/"
-    xmlns:svg="http://www.w3.org/2000/svg"
-    xmlns:ns1="http://sozi.baierouge.fr"
-    id="svg1"
-    sodipodi:docname="rickvanderzwet_Bass_clef_black.svg"
-    inkscape:export-filename="C:\joanna\Gfx\drawings_vector\admin\thumbs\rickvanderzwet_Bass_clef.png"
-    viewBox="0 0 41.161 47.605"
-    sodipodi:version="0.32"
-    inkscape:export-xdpi="378.27289"
-    version="1.0"
-    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-    inkscape:export-ydpi="378.27289"
-    inkscape:version="0.46dev+devel"
-    sodipodi:docbase="/Users/rick/Desktop/svg"
-  >
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:docname="bassClef.svg"
+   viewBox="0 0 95.116 153.12"
+   sodipodi:version="0.32"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:version="0.91 r13725"
+   version="1.1">
+  <defs
+     id="defs7" />
   <sodipodi:namedview
-      id="base"
-      bordercolor="#666666"
-      inkscape:pageshadow="2"
-      inkscape:window-width="1077"
-      pagecolor="#a2a2a2"
-      snaptogrid="false"
-      inkscape:zoom="3.4732669"
-      inkscape:window-x="49"
-      showgrid="false"
-      borderopacity="1.0"
-      inkscape:current-layer="g869"
-      inkscape:cx="43.066075"
-      inkscape:cy="69.102739"
-      inkscape:window-y="23"
-      inkscape:window-height="723"
-      inkscape:pageopacity="0.0000000"
-  />
-  <g
-      id="g869"
-      transform="translate(-80.598 -338.39)"
-    >
-    <path
-        id="path861"
-        style="fill-rule:evenodd;stroke:black;stroke-width:.45574;fill:#000000"
-        d="m94.574 338.62c-8.785 0.21-15.515 6.36-13.334 15.79 0.002 0.01 0.013 0.02 0.016 0.03 0.256 3.25 2.96 5.81 6.276 5.81 3.485 0 6.309-2.82 6.309-6.3 0-3.08-2.191-5.64-5.098-6.2-1.158-0.41-2.896-1.34-2.82-2.84 0.036-0.74 0.903-2.09 2.294-2.77 1.691-0.79 3.434-1.22 5.194-0.86 2.667 0.49 9.489 5.39 10.019 13.88 0.31 6.44-3.31 15.15-6.849 19.27-5.698 6.51-14.851 10.55-13.955 11.27 0.803 0.72 11.61-4.22 17.237-10.42 6.867-7.44 10.267-13.64 9.937-21.17-0.19-7.54-6.03-15.7-15.226-15.49z"
-    />
-    <path
-        id="path1877"
-        sodipodi:rx="9.7721043"
-        sodipodi:ry="9.1613474"
-        style="stroke-linejoin:round;fill-rule:evenodd;stroke:black;stroke-linecap:round;stroke-width:0.894;fill:#000000"
-        sodipodi:type="arc"
-        d="m116.86 36.473a9.7721 9.1613 0 1 1 -19.546 0 9.7721 9.1613 0 1 1 19.546 0z"
-        transform="matrix(.50978 0 0 .50978 61.959 329.32)"
-        sodipodi:cy="36.472969"
-        sodipodi:cx="107.08598"
-    />
-    <path
-        id="path2766"
-        sodipodi:rx="9.7721043"
-        sodipodi:ry="9.1613474"
-        style="stroke-linejoin:round;fill-rule:evenodd;stroke:black;stroke-linecap:round;stroke-width:0.894;fill:#000000"
-        sodipodi:type="arc"
-        d="m116.86 36.473a9.7721 9.1613 0 1 1 -19.546 0 9.7721 9.1613 0 1 1 19.546 0z"
-        transform="matrix(.50978 0 0 .50978 61.959 342.37)"
-        sodipodi:cy="36.472969"
-        sodipodi:cx="107.08598"
-    />
-  </g
-  >
+     id="base"
+     bordercolor="#666666"
+     inkscape:pageshadow="2"
+     guidetolerance="10.0"
+     pagecolor="#ffffff"
+     gridtolerance="10.0"
+     inkscape:zoom="1.7353499"
+     objecttolerance="10.0"
+     borderopacity="1.0"
+     inkscape:current-layer="svg2"
+     inkscape:cx="45.535866"
+     inkscape:cy="99.748538"
+     inkscape:window-y="75"
+     inkscape:window-x="661"
+     inkscape:window-height="643"
+     showgrid="false"
+     inkscape:pageopacity="0.0"
+     inkscape:window-width="823"
+     inkscape:window-maximized="0" />
   <metadata
-    >
-    <rdf:RDF
-      >
-      <cc:Work
-        >
-        <dc:format
-          >image/svg+xml</dc:format
-        >
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
         <dc:type
-            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
-        />
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
         <cc:license
-            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
-        />
-        <dc:publisher
-          >
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
           <cc:Agent
-              rdf:about="http://openclipart.org/"
-            >
-            <dc:title
-              >Openclipart</dc:title
-            >
-          </cc:Agent
-          >
-        </dc:publisher
-        >
-        <dc:title
-          >Bass clef</dc:title
-        >
-        <dc:date
-          >2006-12-03T13:00:29</dc:date
-        >
-        <dc:description
-          >Simple hollow bass clef</dc:description
-        >
-        <dc:source
-          >https://openclipart.org/detail/12475/bass-clef-by-rickvanderzwet-12475</dc:source
-        >
-        <dc:creator
-          >
-          <cc:Agent
-            >
-            <dc:title
-              >rickvanderzwet</dc:title
-            >
-          </cc:Agent
-          >
-        </dc:creator
-        >
-        <dc:subject
-          >
-          <rdf:Bag
-            >
-            <rdf:li
-              >bass</rdf:li
-            >
-            <rdf:li
-              >clef</rdf:li
-            >
-            <rdf:li
-              >line art</rdf:li
-            >
-            <rdf:li
-              >music</rdf:li
-            >
-            <rdf:li
-              >sign</rdf:li
-            >
-          </rdf:Bag
-          >
-        </dc:subject
-        >
-      </cc:Work
-      >
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Treble clef</dc:title>
+        <dc:date>2006-12-03T12:59:04</dc:date>
+        <dc:description>Hollow treble clef for use at drawings</dc:description>
+        <dc:source>https://openclipart.org/detail/12473/treble-clef-by-rickvanderzwet-12473</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>rickvanderzwet</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clef</rdf:li>
+            <rdf:li>line art</rdf:li>
+            <rdf:li>music</rdf:li>
+            <rdf:li>sign</rdf:li>
+            <rdf:li>silhouette</rdf:li>
+            <rdf:li>treble</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
       <cc:License
-          rdf:about="http://creativecommons.org/licenses/publicdomain/"
-        >
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
         <cc:permits
-            rdf:resource="http://creativecommons.org/ns#Reproduction"
-        />
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
         <cc:permits
-            rdf:resource="http://creativecommons.org/ns#Distribution"
-        />
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
         <cc:permits
-            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
-        />
-      </cc:License
-      >
-    </rdf:RDF
-    >
-  </metadata
-  >
-</svg
->
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <path
+     inkscape:connector-curvature="0"
+     id="path861"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.81543082"
+     d="M 38.267774,6.649897 C 23.341767,7.0455894 11.907282,18.633721 15.612871,36.402184 c 0.0032,0.01879 0.02208,0.0377 0.02718,0.05649 0.434952,6.123816 5.029135,10.947484 10.663129,10.947484 5.921126,0 10.719199,-5.313573 10.719199,-11.870761 0,-5.803483 -3.722588,-10.627163 -8.661674,-11.682339 -1.967477,-0.772542 -4.920393,-2.5249 -4.791266,-5.351271 0.06118,-1.39434 1.534223,-3.938085 3.897578,-5.219365 2.873056,-1.48856 5.834475,-2.298794 8.824767,-1.620458 4.531323,0.923285 16.122125,10.156096 17.022612,26.153364 0.526705,12.134567 -5.623791,28.546369 -11.636668,36.30947 -9.681089,12.26646 -25.232338,19.878824 -23.71,21.235483 C 19.332042,96.716947 37.69349,87.408754 47.253946,75.726413 58.921204,61.707608 64.697909,50.02527 64.137232,35.836879 63.814412,21.629643 53.892064,6.2541718 38.267766,6.6498642 Z" />
+  <ellipse
+     ry="8.7999544"
+     rx="8.4639387"
+     cy="24.160589"
+     cx="75.6045"
+     id="path1877"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.81543666;stroke-linecap:round;stroke-linejoin:round" />
+  <ellipse
+     ry="8.7999544"
+     rx="8.4639387"
+     cy="48.750023"
+     cx="75.6045"
+     id="path2766"
+     style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.81543666;stroke-linecap:round;stroke-linejoin:round" />
+</svg>

@@ -1,10 +1,10 @@
 /* GCompris - playpiano.qml
  *
- * Copyright (C) 2015 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   Beth Hadley <bethmhadley@gmail.com> (GTK+ version)
+ *   Johnny Jazeix <jazeix@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -98,11 +98,12 @@ ActivityBase {
             anchors.fill: parent
             MultipleStaff {
                 id: staff1
-                width: 400
-                height: 300
+                width: 300
+                height: 200
                 nbStaves: 1
                 clef: "bass"
                 nbMaxNotesPerStaff: 6
+                noteIsColored: true
             }
             MultipleStaff {
                 id: staff2
@@ -111,6 +112,8 @@ ActivityBase {
                 nbStaves: 2
                 clef: "treble"
                 nbMaxNotesPerStaff: 10
+                noteIsColored: true
+                isMetronomeDisplayed: true
             }
             Piano {
                 id: piano
@@ -118,7 +121,7 @@ ActivityBase {
                 height: 300
                 onNoteClicked: {
                     onlyNote.value = note;
-                    staff2.addNote(note, currentType, piano.useSharpNotation ? "sharp" : "flat")
+                    staff2.addNote(note, currentType, piano.useSharpNotation ? "sharp" : "flat", false)
                     var noteToPlay = 'qrc:/gcompris/src/activities/playpiano/resource/'+'bass'+'_pitches/'+currentType+'/'+note+'.wav';
                     print(noteToPlay);
                     items.audioEffects.play(noteToPlay);
@@ -128,6 +131,8 @@ ActivityBase {
                 id: onlyNote
                 value: "1"
                 type: currentType
+                width: 40
+                height: 40
             }
 
             Row {
@@ -207,6 +212,7 @@ ActivityBase {
             var selectedMusic = data.filter(function(item) { return item.title === 'Frère jacques'; });
             staff2.loadFromData(selectedMusic[0]["melody"]);
         }
+
         DialogHelp {
             id: dialogHelp
             onClose: home()

@@ -1,10 +1,10 @@
-/* GCompris - playpiano.qml
+/* GCompris - Staff.qml
  *
- * Copyright (C) 2015 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   Beth Hadley <bethmhadley@gmail.com> (GTK+ version)
+ *   Johnny Jazeix <jazeix@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -26,20 +26,26 @@ import "../../core"
 
 Item {
     id: staff
-    property int verticalDistanceBetweenLines: 20 // todo width/nbLines * smth
+    property int verticalDistanceBetweenLines: height / nbLines // todo width/nbLines * smth
     
     property string clef
 
     width: 400
+    height: 100
     // Stave
     property int nbLines: 5
 
     property bool lastPartition: false
 
-    property alias showMetronome: metronome.visible
+    property bool isMetronomeDisplayed: false
+    property bool showMetronome: false
+
     property alias notes: notes
 
+    property int firstNoteX: defaultFirstNoteX
+    property int defaultFirstNoteX: clefImage.width
     property int nbMaxNotesPerStaff
+    property bool noteIsColored
 
     Image {
         id: clefImage
@@ -87,28 +93,35 @@ Item {
         width: 5
         border.width: 10
         height: (nbLines-1) * verticalDistanceBetweenLines+5
-        visible: lastPartition
+        visible: isMetronomeDisplayed && showMetronome
         color: "red"
-        x: clefImage.width-width/2
+        x: firstNoteX-width/2
         y: 0
         Behavior on x {
             SmoothedAnimation {
                 id: metronomeAnimation
                 duration: -1
-            }
+           }
         }
     }
 
     property var mDuration
     function initMetronome() {
-        var duration = 0;
+        var staffDuration = 0;
         for(var v = 0 ; v < notes.count ; ++ v) {
-            duration += notes.get(v).mDuration;
+            staffDuration += notes.get(v).mDuration;
         }
         metronomeAnimation.velocity = 1;
-        mDuration = duration;
+        mDuration = staffDuration;
         metronome.x = staff.width;
-        print("duration " + duration)
+        print("total duration " + staffDuration)
+        print("total distance " + metronome.x)
+    }
+
+    function addNote(newValue_, newType_, newBlackType_, highlightWhenPlayed_) {
+        notes.append({"mValue": newValue_, "mType": newType_,
+                      "mBlackType": newBlackType_, "mDuration": 2000/newType_,
+                      "mHighlightWhenPlayed": highlightWhenPlayed_});
     }
 
     function playNote(noteId) {
@@ -120,29 +133,50 @@ Item {
         notes.clear();
     }
 
-    property int noteWidth: 60
+    property int noteWidth: (staff.width-10-clefImage.width) / 10
     Row {
         id: notesRow
-        x: clefImage.width-noteWidth/2
+        x: firstNoteX-noteWidth/2
         Repeater {
             model: notes
             Note {
                 value: mValue
                 type: mType
                 blackType: mBlackType
+                highlightWhenPlayed: mHighlightWhenPlayed
+                noteIsColored: staff.noteIsColored
                 width: noteWidth
-                //(nbLines-3)*verticalDistanceBetweenLines == bottom line
+                height: staff.height
+
+                function play() {
+                    if(highlightWhenPlayed)
+                        highlightTimer.start();
+                }
+
                 y: {
+                    var shift = 0;
+                    if(clef === "bass") {
+                        shift = -3 * verticalDistanceBetweenLines
+                    }
+                    if(blackType !== "") {
+                        if(blackType === "flat") {
+                            shift += - verticalDistanceBetweenLines
+                        }
+                        else {
+                            shift += - verticalDistanceBetweenLines / 2
+                        }
+                    }
+
                     if(mValue > 0) {
-                        return (nbLines-3)*verticalDistanceBetweenLines - (parseInt(mValue)-1)*verticalDistanceBetweenLines/2
+                        return (nbLines-3)*verticalDistanceBetweenLines - (parseInt(mValue)-1)*verticalDistanceBetweenLines/2 + shift
                     }
                     else if(mValue >= -2)
-                        return (nbLines-3)*verticalDistanceBetweenLines - (Math.abs(parseInt(mValue))-1)*verticalDistanceBetweenLines/2
+                        return (nbLines-3)*verticalDistanceBetweenLines - (Math.abs(parseInt(mValue))-1)*verticalDistanceBetweenLines/2 + shift
                     else
-                        return (nbLines-3)*verticalDistanceBetweenLines - (Math.abs(parseInt(mValue)))*verticalDistanceBetweenLines/2
+                        return (nbLines-3)*verticalDistanceBetweenLines - (Math.abs(parseInt(mValue)))*verticalDistanceBetweenLines/2 + shift
                 }
             }
         }
-        spacing: (staff.width-10-clefImage.width)/nbMaxNotesPerStaff-noteWidth
+        spacing: 0
     }
 }

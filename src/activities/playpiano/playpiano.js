@@ -1,10 +1,10 @@
 /* GCompris - playpiano.js
  *
- * Copyright (C) 2015 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   "YOUR NAME" <YOUR EMAIL> (Qt Quick port)
+ *   Beth Hadley <bethmhadley@gmail.com> (GTK+ version)
+ *   Johnny Jazeix <jazeix@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by

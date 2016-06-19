@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@ ActivityInfo {
   name: "playpiano/Playpiano.qml"
   difficulty: 2
   icon: "playpiano/playpiano.svg"
-  author: "Beth Hadley &lt;bethmhadley@gmail.com&gt;"
+  author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   demo: true
   title: qsTr("Play Piano!")
   description: qsTr("Learn to play melodies on the piano keyboard!")
@@ -50,6 +50,6 @@ The following keyboard bindings work in this game:
   - F4: G# / Ab
   - F5: A# / Bb
 ")
-  credit: qsTr("Bruno Coudoin for his mentorship.")
-  section: "/discovery/sound_group"
+  credit: ""
+  section: "discovery sound_group"
 }

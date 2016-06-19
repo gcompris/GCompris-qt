@@ -1,10 +1,10 @@
-/* GCompris - playpiano.qml
+/* GCompris - MultipleStaff.qml
  *
- * Copyright (C) 2015 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   Beth Hadley <bethmhadley@gmail.com> (GTK+ version)
+ *   Johnny Jazeix <jazeix@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -35,6 +35,10 @@ Item {
 
     property int nbMaxNotesPerStaff: 6
 
+    property int firstNoteX: width / 5
+    property bool noteIsColored
+    property bool isMetronomeDisplayed: false
+
     Column {
         Repeater {
             id: staves
@@ -47,22 +51,23 @@ Item {
                 y: index * (height+distanceBetweenStaff)
                 lastPartition: index == nbStaves-1
                 nbMaxNotesPerStaff: multipleStaff.nbMaxNotesPerStaff
+                noteIsColored: multipleStaff.noteIsColored
+                isMetronomeDisplayed: multipleStaff.isMetronomeDisplayed
+                firstNoteX: multipleStaff.firstNoteX
             }
         }
     }
 
-    function addNote(newValue_, newType_, newBlackType_) {
+    function addNote(newValue_, newType_, newBlackType_, highlightWhenPlayed_) {
         if(staves.itemAt(currentStaff).notes.count > nbMaxNotesPerStaff) {
             if(currentStaff+1 >= nbStaves) {
-                print("no more place!")
                 return
             }
             else
                 currentStaff++
         }
 
-        staves.itemAt(currentStaff).notes.append({"mValue": newValue_, "mType": newType_,
-                                                  "mBlackType": newBlackType_, "mDuration": 2000/newType_});
+        staves.itemAt(currentStaff).addNote(newValue_, newType_, newBlackType_, highlightWhenPlayed_);
     }
 
     function play() {
@@ -71,7 +76,8 @@ Item {
         musicTimer.interval = 1000;
         for(var v = 1 ; v < currentStaff ; ++ v)
             staves.itemAt(v).showMetronome = false;
-        staves.itemAt(0).showMetronome = true;
+        // Only display metronome if we want to
+        staves.itemAt(0).showMetronome = isMetronomeDisplayed;
 
         musicTimer.start();
     }
@@ -95,14 +101,13 @@ Item {
             var type = parseInt(melody[i][noteLength-1]);
             var noteStr = melody[i].substr(0, noteLength-1).toUpperCase();
 
-            print(type + " - " + noteStr)
             if(whiteNotes.indexOf(noteStr) != -1)
-                addNote(""+(whiteNotes.indexOf(noteStr)+1), type, "");
+                addNote(""+(whiteNotes.indexOf(noteStr)+1), type, "", false);
             else if (blackNotesSharp.indexOf(melody[i][0]) != -1) {
-                addNote(""+(-1*blackNotesSharp.indexOf(noteStr)-1), type, "sharp");
+                addNote(""+(-1*blackNotesSharp.indexOf(noteStr)-1), type, "sharp", false);
             }
             else {
-                addNote(""+(-1*blackNotesFlat.indexOf(noteStr)-1), type, "flat");
+                addNote(""+(-1*blackNotesFlat.indexOf(noteStr)-1), type, "flat", false);
             }
 
             print(melody[i]);
@@ -120,8 +125,8 @@ Item {
 
                 // TODO some notes does not play if they are played in the rcc directly...
                 var noteToPlay = 'qrc:/gcompris/src/activities/playpiano/resource/'+multipleStaff.clef+'_pitches/'+currentType+'/'+note+'.wav';
-                //var noteToPlay = 'C:/Users/Johnny/Desktop/work/gcompris/src/activities/playpiano/resource/'+multipleStaff.clef+'_pitches/'+currentType+'/'+note+'.wav';
                 items.audioEffects.play(noteToPlay);
+                //staves.itemAt(currentPlayedStaff).notes.get(currentNote).play()
 
                 if(currentNote == 0) {
                     staves.itemAt(currentPlayedStaff).initMetronome();
@@ -133,7 +138,7 @@ Item {
                     currentPlayedStaff ++;
                     if(currentPlayedStaff < nbStaves && currentNote < staves.itemAt(currentPlayedStaff).notes.count) {
                         print("play next staff");
-                        staves.itemAt(currentPlayedStaff).showMetronome = true;
+                        staves.itemAt(currentPlayedStaff).showMetronome = isMetronomeDisplayed;
                         if(currentPlayedStaff>0)
                             staves.itemAt(currentPlayedStaff-1).showMetronome = false;
                         staves.itemAt(currentPlayedStaff).playNote(currentNote);

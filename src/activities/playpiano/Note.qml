@@ -1,10 +1,10 @@
 /* GCompris - Note.qml
  *
- * Copyright (C) 2015 YOUR NAME <xx@yy.org>
+ * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
  *
  * Authors:
- *   <THE GTK VERSION AUTHOR> (GTK+ version)
- *   YOUR NAME <YOUR EMAIL> (Qt Quick port)
+ *   Beth Hadley <bethmhadley@gmail.com> (GTK+ version)
+ *   Johnny Jazeix <jazeix@gmail.com> (Qt Quick port)
  *
  *   This program is free software; you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -36,8 +36,8 @@ Item {
                               type == eighthNote ? "eighth" : ""
     property string blackType: "" // empty, "flat" or "sharp"
 
-    width: noteImage.width
-    height: noteImage.height
+    //width: noteImage.width
+    //height: noteImage.height
 
     readonly property int wholeNote: 1
     readonly property int halfNote: 2
@@ -51,29 +51,57 @@ Item {
         "-1": "#FF6347", "-2": "#FFD700", "-3": "#20B2AA", "-4": "#8A2BE2",
         "-5": "#FF00FF" }
 
+    property var whiteNoteName: { "1": qsTr("C"), "2": qsTr("D"), "3": qsTr("E"),
+        "4": qsTr("F"), "5": qsTr("G"), "6": qsTr("A"), "7": qsTr("B"), "8": qsTr("C") }
+    property var blackNoteName: blackType == "flat" ? flatNoteName : sharpNoteName
+
+    property var sharpNoteName: { "-1": qsTr("C#"), "-2": qsTr("D#"), "-3": qsTr("F#"), "-4": qsTr("G#"),
+                                  "-5": qsTr("A#")}
+    property var flatNoteName: { "-1": qsTr("Db"), "-2": qsTr("Eb"), "-3": qsTr("Gb"), "-4": qsTr("Ab"),
+                                  "-5": qsTr("Bb")}
+
+    property bool highlightWhenPlayed: false
+
     Image {
         id: blackTypeImage
         source: blackType !== "" ? "qrc:/gcompris/src/activities/playpiano/resource/black"+blackType+".svg" : ""
-        visible: blackType !== ""
+        visible: value[0] === '-'
         sourceSize.width: noteImage.width/2.5
         anchors.right: noteImage.left
         anchors.rightMargin: -width/2
         anchors.bottom: noteImage.bottom
-        anchors.bottomMargin: height/2
+        anchors.bottomMargin: -height/2
         fillMode: Image.PreserveAspectFit
+    }
+
+    Image {
+        id: highlightImage
+        source: "qrc:/gcompris/src/activities/playpiano/resource/note-highlight.svg"
+        visible: false
+        sourceSize.width: noteImage.width
+        height: noteImage.height / 2
+        anchors.bottom: noteImage.bottom
     }
 
     Image {
         id: noteImage
         source: "qrc:/gcompris/src/activities/playpiano/resource/"+noteType+"-note.svg"
-        sourceSize.width: 60
-        fillMode: Image.PreserveAspectFit
+        sourceSize.width: 200
+        width: note.width
+        height: note.height
     }
+
     // If the result is not good enought maybe have a rectangle and use opacity mask with a note
     ColorOverlay {
         anchors.fill: noteImage
         source: noteImage
         color: noteColorMap[value]  // make image like it lays under red glass 
         visible: noteIsColored
+    }
+
+    Timer {
+        id: highlightTimer
+        interval: noteDuration
+        onRunningChanged: highlightImage.visible = running
     }
 }
