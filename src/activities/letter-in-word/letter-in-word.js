@@ -108,14 +108,13 @@ function shuffleString(s) {
 }
 
 function initLevel() {
-    var componentsArr;
     items.bar.level = currentLevel + 1;
     if (currentSubLevel == 0 && !incorrectFlag) {
         var level = levels[currentLevel];
         words = Lang.getLessonWords(dataset, level);
         Core.shuffle(words);
         var limit = Math.min(11, words.length)
-        words = words.slice(0,limit)
+        words = words.slice(0, limit)
         frequency = calculateFrequency();
         var tempQuestions = generateQuestions();
         maxSubLevel = tempQuestions.length;
@@ -124,14 +123,11 @@ function initLevel() {
         questions = shuffleString(tempQuestions);
         items.wordsModel.clear();
         for (var i = 0; i < words.length; i++) {
-            componentsArr = [];
-            componentsArr.push({"textdata": words[i].translatedTxt});
-
             items.wordsModel.append({
                                         "spelling": words[i].translatedTxt,
                                         "imgurl": words[i].image,
                                         "selected": false,
-                                        "components": componentsArr
+                                        "textData": words[i].translatedTxt
                                     });
         }
     }
