@@ -1,6 +1,6 @@
 /* GCompris - ActivityInfo.qml
  *
- * Copyright (C) 2015 Your Name <yy@zz.org>
+ * Copyright (C) 2016 Johnny Jazeix <jazeix@gmail.com>
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@ ActivityInfo {
   name: "note_names/NoteNames.qml"
   difficulty: 4
   icon: "note_names/note_names.svg"
-  author: "Beth Hadley &lt;bethmhadley@gmail.com&gt;"
+  author: "Johnny Jazeix &lt;jazeix@gmail.com&gt;"
   demo: true
   title: qsTr("Name that Note!")
   description: qsTr("Learn the names of the notes, in bass and treble clef, with the help of sounds and colors")
@@ -30,5 +30,6 @@ ActivityInfo {
   manual: qsTr("The first level and the eleventh level introduce two different staffs with a C major scale. The following levels then quiz the player on note names. To help learn the names, the note pitches are played when the mouse is rolled over the note, and the pitch names can be color coded.
         ")
   credit: ""
-  section: "/discovery/sound_group"
+  section: "discovery sound"
+  createdInVersion: 7000
 }
