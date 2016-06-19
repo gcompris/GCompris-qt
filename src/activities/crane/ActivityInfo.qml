@@ -24,17 +24,17 @@ import GCompris 1.0
 
 ActivityInfo {
   name: "crane/Crane.qml"
-  difficulty: 1
+  difficulty: 2
   icon: "crane/crane.svg"
   author: "Stefan Toncu &lt;stefan.toncu29@gmail.com&gt;"
   demo: true
-  title: "Build the same model"
-  description: "Drive the crane and copy the model"
+  title: qsTr("Build the same model")
+  description: qsTr("Drive the crane and copy the model")
   //intro: "put here in comment the text for the intro voice"
-  goal: "Motor-coordination"
-  prerequisite: "Mouse/keyboard manipulation"
-  manual: "Move the items in the left frame to copy their position in the right model. Next to the crane itself, you will find four arrows that let you move the items. To select the item to move, just click on it. If you prefer, you can use the arrow keys and the space or tab key instead. On a mobile version, you can also swipe up/down/left/right to move the items in the left frame."
+  goal: qsTr("Motor-coordination")
+  prerequisite: qsTr("Mouse/keyboard manipulation")
+  manual: qsTr("Move the items in the left frame to copy their position in the right model. Next to the crane itself, you will find four arrows that let you move the items. To select the item to move, just click on it. If you prefer, you can use the arrow keys and the space or tab key instead. On a mobile version, you can also swipe up/down/left/right to move the items in the left frame.")
   credit: ""
   section: "puzzle"
-  createdInVersion: 6000
+  createdInVersion: 7000
 }

@@ -40,8 +40,7 @@ ActivityBase {
     pageComponent: Rectangle {
         id: background
         anchors.fill: parent
-        // source: "resource/crane-bg.svgz"
-        color: "#F5F1DE"
+        color: "white"
 
         signal start
         signal stop
@@ -67,9 +66,11 @@ ActivityBase {
             property int selected
             property int columns
             property int rows
+            property bool ok: true
             property int sensivity: 80
             property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
             property int cellSize: Math.min(background.width / 11 , background.height / (9 + barHeightAddon))
+            property bool gameFinished: false
         }
 
         onStart: { Activity.start(items) }
@@ -141,7 +142,25 @@ ActivityBase {
 
                     property bool showSelected: false
                     property alias selected: selected
+                    property alias anim: anim
+                    property int distance
+                    property int indexChange
+                    property int startPoint
+                    property string animationProperty
                     property int _index: index   // make current index accessible from outside
+
+                    SequentialAnimation {
+                        id: anim
+                        PropertyAction { target: items; property: "ok"; value: "false"}
+                        NumberAnimation { target: figure; property: figure.animationProperty; from: figure.startPoint; to: figure.startPoint + distance; duration: 400 }
+                        PropertyAction { target: figure; property: "opacity"; value: 0 }
+                        NumberAnimation { target: figure; property: figure.animationProperty; from: figure.startPoint + distance; to: figure.startPoint; duration: 0; }
+                        PropertyAction { target: figure; property: "opacity"; value: 1 }
+                        PropertyAction { target: items.repeater.itemAt(items.selected + indexChange); property: "source"; value: figure.source }
+                        PropertyAction { target: figure; property: "source"; value: "" }
+                        PropertyAction { target: items; property: "ok"; value: "true"}
+                        ScriptAction { script: Activity.checkAnswer() }
+                    }
 
                     MouseArea {
                         anchors.fill: parent
@@ -170,6 +189,10 @@ ActivityBase {
                         height: parent.height
                         // show only on the selected figure
                         opacity: parent._index == items.selected ? 1 : 0
+
+                        Behavior on opacity {
+                            NumberAnimation { duration: 400 }
+                        }
                     }
                 }
             }
@@ -209,7 +232,7 @@ ActivityBase {
 
         Image {
             id: crane_top
-            source: "resource/crane_up.svgz"
+            source: "resource/crane_up.svg"
             sourceSize.width: background.portrait ? background.width * 0.8 : background.width * 0.5
             sourceSize.height: background.portrait ? background.height * 0.03 : background.height * 0.06
             width:  background.portrait ? background.width * 0.8 : background.width * 0.5
@@ -226,7 +249,7 @@ ActivityBase {
 
         Image {
             id: crane_vertical
-            source: "resource/crane_vertical.svgz"
+            source: "resource/crane_vertical.svg"
             sourceSize.width: background.width * 0.04
             sourceSize.height: background.height * 0.73
             width: background.width * 0.05
@@ -241,7 +264,7 @@ ActivityBase {
 
         Image {
             id: crane_body
-            source: "resource/crane_only2.svgz"
+            source: "resource/crane_only.svg"
             sourceSize.width: parent.width / 6
             sourceSize.height: parent.height/ 4
             anchors {
@@ -254,7 +277,7 @@ ActivityBase {
 
         Image {
             id: crane_wire
-            source: "resource/crane-wire.svgz"
+            source: "resource/crane-wire.svg"
             sourceSize.width: parent.width / 22
             sourceSize.height: parent.width / 17
             anchors {
@@ -265,7 +288,7 @@ ActivityBase {
 
         Image {
             id: crane_command
-            source: "resource/command.svgz"
+            source: "resource/command.svg"
             sourceSize.width: parent.width / 4
             sourceSize.height: parent.height/ 3.5
             mirror: true
@@ -279,7 +302,7 @@ ActivityBase {
 
             Controls {
                 id: up
-                source: "resource/arrow_up.svgz"
+                source: "resource/arrow_up.svg"
                 anchors {
                     left: parent.left
                     leftMargin: parent.width / 10
@@ -289,7 +312,7 @@ ActivityBase {
 
             Controls {
                 id: down
-                source: "resource/arrow_down.svgz"
+                source: "resource/arrow_down.svg"
                 anchors {
                     left: up.right
                     leftMargin: parent.width / 20
@@ -299,7 +322,7 @@ ActivityBase {
 
             Controls {
                 id: left
-                source: "resource/arrow_left.svgz"
+                source: "resource/arrow_left.svg"
                 anchors {
                     right: right.left
                     rightMargin: parent.width / 20
@@ -309,7 +332,7 @@ ActivityBase {
 
             Controls {
                 id: right
-                source: "resource/arrow_right.svgz"
+                source: "resource/arrow_right.svg"
                 anchors {
                     right: parent.right
                     rightMargin: parent.width / 10
@@ -327,6 +350,13 @@ ActivityBase {
             y: crane_top.height/2
             z: 1
             property var convert: items.repeater.mapToItem(background,items.repeater.itemAt(items.selected).x,items.repeater.itemAt(items.selected).y)
+
+            Behavior on x {
+                NumberAnimation { duration: 400 }
+            }
+            Behavior on height {
+                NumberAnimation { duration: 400 }
+            }
         }
 
 

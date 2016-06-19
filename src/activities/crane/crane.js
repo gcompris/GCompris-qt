@@ -21,6 +21,8 @@
  */
 .pragma library
 .import QtQuick 2.0 as Quick
+.import "qrc:/gcompris/src/core/core.js" as Core
+
 
 var currentLevel = 0
 var numberOfLevel = 6
@@ -53,29 +55,18 @@ function initLevel() {
 function init() {    
     items.columns = 7
     items.rows = 6
+    items.gameFinished = false
 
     setRandomModel()
     items.selected = getNextIndex1(0)
 }
 
-function shuffle(input) {
-    for (var i = input.length-1; i >= 0; i--) {
-
-        var randomIndex = Math.floor(Math.random()*(i+1));
-        var itemAtIndex = input[randomIndex];
-
-        input[randomIndex] = input[i];
-        input[i] = itemAtIndex;
-    }
-}
-
 var names = []
 var names2 = []
 
-
 function setRandomModel(){
     // randomize the names
-    shuffle(allNames)
+    Core.shuffle(allNames)
 
     var numbers = []
 
@@ -87,12 +78,12 @@ function setRandomModel(){
     }
 
     //get "howManyFigures[currentLevel]" random numbers
-    shuffle(numbers)
+    Core.shuffle(numbers)
 
     for (i = 0; i < howManyFigures[currentLevel]; i++)
         names[numbers[i]] = allNames[i]
 
-    shuffle(numbers)
+    Core.shuffle(numbers)
 
     for (i = 0; i < howManyFigures[currentLevel]; i++)
         names2[numbers[i]] = allNames[i]
@@ -126,14 +117,12 @@ function getNextIndex1(index) {
     return -1;
 }
 
-//names
 function getNextIndex(source) {
     var length = names.length
 
     //find index of curent image in ordonated "names" list
     for(var i = 0; i < length; i++) {
         var name = "qrc:/gcompris/src/activities/crane/" + names[i]
-//        print("name: ",name)
         if (name == source) {
             break
         }
@@ -196,30 +185,39 @@ function gesture(deltax, deltay) {
     }
 }
 
+
 function move(move) {
-    if (move === "left") {
-        if (items.selected % items.columns != 0)
-            makeMove(-1)
-    } else if (move === "right") {
-        if ((items.selected+1) % items.columns != 0)
-            makeMove(1)
-    } else if (move === "up") {
-        if (items.selected > items.columns-1)
-            makeMove(-items.columns)
-    } else if (move === "down") {
-        if (items.selected < (items.repeater.count-items.columns))
-            makeMove(items.columns)
-    } else if (move === "next") {
-        items.selected = getNextIndex(items.repeater.itemAt(items.selected).source)
-    }
+    if (items.ok == true && items.gameFinished == false) {
+       var item = items.repeater.itemAt(items.selected)
+       if (move === "left") {
+           if (items.selected % items.columns != 0)
+               makeMove(item,-item.width,item.x,-1,"x")
+       } else if (move === "right") {
+           if ((items.selected+1) % items.columns != 0)
+               makeMove(item,item.width,item.x,1,"x")
+       } else if (move === "up") {
+           if (items.selected > items.columns-1)
+               makeMove(item,-item.height,item.y,-items.columns,"y")
+       } else if (move === "down") {
+           if (items.selected < (items.repeater.count-items.columns))
+               makeMove(item,item.height,item.y,items.columns,"y")
+       } else if (move === "next") {
+           items.selected = getNextIndex(items.repeater.itemAt(items.selected).source)
+       }
+   }
 }
 
-function makeMove(add) {
+function makeMove(item,distance,startPoint,add,animationProperty) {
     if (items.repeater.itemAt(items.selected+add).source == "") {
-        items.repeater.itemAt(items.selected+add).source = items.repeater.itemAt(items.selected).source
-        items.repeater.itemAt(items.selected).source = ""
+        //setup the animation
+        item.distance = distance
+        item.indexChange = add
+        item.startPoint = startPoint
+        item.animationProperty = animationProperty
+        //start the animation
+        item.anim.start()
+        //update the selected item
         items.selected += add;
-        checkAnswer()
     }
 }
 
@@ -232,6 +230,7 @@ function checkAnswer() {
     }
     if (count == 0) {
         items.bonus.good("flower")
+        items.gameFinished = true
     }
 }
 
