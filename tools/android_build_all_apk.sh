@@ -77,53 +77,26 @@ builddir=${buildprefix}-${QtTarget}
 mkdir -p ${builddir}
 cd ${builddir}
 
-f_cmake armeabi inapp OFF ON OFF
+f_cmake arm inapp OFF ON OFF
 make
 make BuildTranslations
 make apk_release && make apk_signed && make apk_signed_aligned
 
-f_cmake armeabi internal OFF ON OFF
+f_cmake arm internal OFF ON OFF
 make
 make apk_release && make apk_signed && make apk_signed_aligned
 
-f_cmake armeabi no OFF ON OFF
+f_cmake arm no OFF ON OFF
 make
 make apk_release && make apk_signed && make apk_signed_aligned
 
-f_cmake armeabi no ON ON OFF
+f_cmake arm no ON ON OFF
 make clean
 make
 make BuildTranslations
 make apk_release && make apk_signed && make apk_signed_aligned
 
 # Remove extra apk
-rm -f android/bin/*release-armeabi*
-rm -f android/bin/*release-signed-armeabi*
+rm -f android/bin/*release-arm*
+rm -f android/bin/*release-signed-arm*
 
-# X86
-cd ..
-QtTarget=android_x86
-builddir=${buildprefix}-${QtTarget}
-mkdir -p ${builddir}
-cd ${builddir}
-
-f_cmake x86 inapp OFF ON OFF
-make
-make BuildTranslations
-make apk_release && make apk_signed && make apk_signed_aligned
-
-f_cmake x86 internal OFF ON OFF
-make
-make apk_release && make apk_signed && make apk_signed_aligned
-
-f_cmake x86 no OFF ON OFF
-make
-make apk_release && make apk_signed && make apk_signed_aligned
-
-f_cmake x86 no ON ON OFF
-make
-make apk_release && make apk_signed && make apk_signed_aligned
-
-# Remove extra apk
-rm -f android/bin/*release-x86*
-rm -f android/bin/*release-signed-x86*
