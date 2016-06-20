@@ -30,11 +30,13 @@ var items
 var url = "qrc:/gcompris/src/activities/crane/resource/"
 
 var howManyFigures = [4,5,6,7,7,7]
-var allNames = ["resource/bulb.png","resource/letter-a.png","resource/letter-b.png",
-                "resource/rectangle1.png","resource/rectangle2.png","resource/square1.png",
-                "resource/square2.png","resource/triangle1.png","resource/triangle2.png",
-                "resource/tux.png","resource/water_drop1.png","resource/water_drop2.png",
-                "resource/water_spot1.png","resource/water_spot2.png"]
+var allNames = ["bulb.png","letter-a.png","letter-b.png",
+                "rectangle1.png","rectangle2.png","square1.png",
+                "square2.png","triangle1.png","triangle2.png",
+                "tux.png","water_drop1.png","water_drop2.png",
+                "water_spot1.png","water_spot2.png"]
+var names = []
+var names2 = []
 
 
 function start(items_) {
@@ -58,11 +60,17 @@ function init() {
     items.gameFinished = false
 
     setRandomModel()
-    items.selected = getNextIndex1(0)
-}
 
-var names = []
-var names2 = []
+    //select the first item in the grid
+    for(var i = 0; i < allNames.length; i++)
+        if (items.repeater.itemAt(i).source != "") {
+            items.selected = i
+            break
+        }
+
+    //set opacity for first item's "selection frame"
+    items.repeater.itemAt(items.selected).selected.opacity = 1
+}
 
 function setRandomModel(){
     // randomize the names
@@ -81,12 +89,12 @@ function setRandomModel(){
     Core.shuffle(numbers)
 
     for (i = 0; i < howManyFigures[currentLevel]; i++)
-        names[numbers[i]] = allNames[i]
+        names[numbers[i]] = url + allNames[i]
 
     Core.shuffle(numbers)
 
     for (i = 0; i < howManyFigures[currentLevel]; i++)
-        names2[numbers[i]] = allNames[i]
+        names2[numbers[i]] = url + allNames[i]
 
     //DEBUGGING
     //    print("names: ",names)
@@ -101,32 +109,16 @@ function setRandomModel(){
     }
 }
 
-
-function getNextIndex1(index) {
-    var length = items.repeater.count
-    for(var i = index-1; i >= 0; i--) {
-        if (items.repeater.itemAt(i).source != ""){
-            return i
-        }
-    }
-    for(i = length-1; i > index; i--) {
-        if (items.repeater.itemAt(i).source != ""){
-            return i
-        }
-    }
-    return -1;
-}
-
 function getNextIndex(source) {
     var length = names.length
 
     //find index of curent image in ordonated "names" list
-    for(var i = 0; i < length; i++) {
-        var name = "qrc:/gcompris/src/activities/crane/" + names[i]
-        if (name == source) {
+    for(var i = 0; i < length; i++)
+        if (names[i] == source) {
             break
         }
-    }
+
+//    print("indexOf: ", names.indexOf(source))
 
     //go to next index
     i++
@@ -145,8 +137,7 @@ function getNextIndex(source) {
     // ok == true only if the image is in the right part of the list
     if (ok==true) {
         for (var j = 0; j<items.repeater.count; j++) {
-            name = "qrc:/gcompris/src/activities/crane/" + names[i]
-            if (name == items.repeater.itemAt(j).source)
+            if (names[i] == items.repeater.itemAt(j).source)
                 return j
         }
     }
@@ -162,8 +153,7 @@ function getNextIndex(source) {
         //search for the index of that image in the repater and
         //return the index
         for (j = 0; j<items.repeater.count; j++) {
-            name = "qrc:/gcompris/src/activities/crane/" + names[i]
-            if (name == items.repeater.itemAt(j).source)
+            if (names[i] == items.repeater.itemAt(j).source)
                 return j
         }
     }
@@ -171,6 +161,7 @@ function getNextIndex(source) {
     return -1;
 }
 
+//touchscreen gestures
 function gesture(deltax, deltay) {
     if (Math.abs(deltax) > 40 || Math.abs(deltay) > 40) {
         if (deltax > 30 && Math.abs(deltay) < items.sensivity) {
@@ -185,28 +176,31 @@ function gesture(deltax, deltay) {
     }
 }
 
-
-function move(move) {
+//depeding on the command, make a move to left/right/up/down or select next item
+function move(command) {
     if (items.ok == true && items.gameFinished == false) {
-       var item = items.repeater.itemAt(items.selected)
-       if (move === "left") {
-           if (items.selected % items.columns != 0)
-               makeMove(item,-item.width,item.x,-1,"x")
-       } else if (move === "right") {
-           if ((items.selected+1) % items.columns != 0)
-               makeMove(item,item.width,item.x,1,"x")
-       } else if (move === "up") {
-           if (items.selected > items.columns-1)
-               makeMove(item,-item.height,item.y,-items.columns,"y")
-       } else if (move === "down") {
-           if (items.selected < (items.repeater.count-items.columns))
-               makeMove(item,item.height,item.y,items.columns,"y")
-       } else if (move === "next") {
-           items.selected = getNextIndex(items.repeater.itemAt(items.selected).source)
-       }
-   }
+        var item = items.repeater.itemAt(items.selected)
+        if (command === "left") {
+            if (items.selected % items.columns != 0)
+                makeMove(item,-item.width,item.x,-1,"x")
+        } else if (command === "right") {
+            if ((items.selected+1) % items.columns != 0)
+                makeMove(item,item.width,item.x,1,"x")
+        } else if (command === "up") {
+            if (items.selected > items.columns-1)
+                makeMove(item,-item.height,item.y,-items.columns,"y")
+        } else if (command === "down") {
+            if (items.selected < (items.repeater.count-items.columns))
+                makeMove(item,item.height,item.y,items.columns,"y")
+        } else if (command === "next") {
+            items.repeater.itemAt(items.selected).selected.opacity = 0
+            items.selected = getNextIndex(items.repeater.itemAt(items.selected).source)
+            items.repeater.itemAt(items.selected).selected.opacity = 1
+        }
+    }
 }
 
+//set the environment for making a move and start the animation
 function makeMove(item,distance,startPoint,add,animationProperty) {
     if (items.repeater.itemAt(items.selected+add).source == "") {
         //setup the animation
@@ -214,13 +208,16 @@ function makeMove(item,distance,startPoint,add,animationProperty) {
         item.indexChange = add
         item.startPoint = startPoint
         item.animationProperty = animationProperty
+
         //start the animation
         item.anim.start()
+
         //update the selected item
         items.selected += add;
     }
 }
 
+//check the answer; advance to next level if the answer is good
 function checkAnswer() {
     var count = 0
     for (var i = 0; i < items.repeater.count; i++) {

@@ -21,7 +21,6 @@
  */
 
 import QtQuick 2.1
-import GCompris 1.0
 
 import "../../core"
 import "crane.js" as Activity
@@ -61,15 +60,11 @@ ActivityBase {
             property alias grid: grid
             property alias repeater: repeater
             property alias modelRepeater: modelRepeater
-            property var names
-            property var names2
             property int selected
             property int columns
             property int rows
             property bool ok: true
             property int sensivity: 80
-            property int barHeightAddon: ApplicationSettings.isBarHidden ? 1 : 3
-            property int cellSize: Math.min(background.width / 11 , background.height / (9 + barHeightAddon))
             property bool gameFinished: false
         }
 
@@ -143,6 +138,7 @@ ActivityBase {
                     property bool showSelected: false
                     property alias selected: selected
                     property alias anim: anim
+                    property alias opac: selected.opacity
                     property int distance
                     property int indexChange
                     property int startPoint
@@ -152,11 +148,13 @@ ActivityBase {
                     SequentialAnimation {
                         id: anim
                         PropertyAction { target: items; property: "ok"; value: "false"}
-                        NumberAnimation { target: figure; property: figure.animationProperty; from: figure.startPoint; to: figure.startPoint + distance; duration: 400 }
+                        NumberAnimation { target: figure; property: figure.animationProperty; from: figure.startPoint; to: figure.startPoint + distance; duration: 200 }
                         PropertyAction { target: figure; property: "opacity"; value: 0 }
+                        PropertyAction { target: selected; property: "opacity"; value: 0 }
                         NumberAnimation { target: figure; property: figure.animationProperty; from: figure.startPoint + distance; to: figure.startPoint; duration: 0; }
                         PropertyAction { target: figure; property: "opacity"; value: 1 }
                         PropertyAction { target: items.repeater.itemAt(items.selected + indexChange); property: "source"; value: figure.source }
+                        PropertyAction { target: items.repeater.itemAt(items.selected + indexChange); property: "opac"; value: 1 }
                         PropertyAction { target: figure; property: "source"; value: "" }
                         PropertyAction { target: items; property: "ok"; value: "true"}
                         ScriptAction { script: Activity.checkAnswer() }
@@ -177,7 +175,7 @@ ActivityBase {
                         onReleased:
                             Activity.gesture(mouse.x - startX, mouse.y - startY)
 
-                        // Select a figure
+                        // Select a figure with mouse/touch
                         onClicked: source != "" ? items.selected = index : undefined
                     }
 
@@ -187,12 +185,7 @@ ActivityBase {
                         source: "resource/selected.png"
                         width: parent.width
                         height: parent.height
-                        // show only on the selected figure
-                        opacity: parent._index == items.selected ? 1 : 0
-
-                        Behavior on opacity {
-                            NumberAnimation { duration: 400 }
-                        }
+                        opacity: 0
                     }
                 }
             }
@@ -352,10 +345,10 @@ ActivityBase {
             property var convert: items.repeater.mapToItem(background,items.repeater.itemAt(items.selected).x,items.repeater.itemAt(items.selected).y)
 
             Behavior on x {
-                NumberAnimation { duration: 400 }
+                NumberAnimation { duration: 200 }
             }
             Behavior on height {
-                NumberAnimation { duration: 400 }
+                NumberAnimation { duration: 200 }
             }
         }
 
