@@ -107,9 +107,12 @@ Window {
         audioVoices.append(ApplicationInfo.getAudioFilePath("voices-$CA/$LOCALE/intro/" + name + ".$CA"))
     }
 
+
     function checkWordset() {
-        if(ApplicationSettings.wordset == '')
-            return
+        var wordset = ApplicationSettings.wordset
+        if(wordset == '')
+            // Try the default one, maybe we have it bundled
+            wordset = "data2/words/words.rcc"
 
         // check for words.rcc:
         if (DownloadManager.isDataRegistered("words")) {
