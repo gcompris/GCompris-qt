@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://web.resource.org/cc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns1="http://sozi.baierouge.fr" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg2" viewBox="0 0 249.07 366.83" version="1.0" inkscape:version="0.91 r13725">
+  <g id="g12">
+    <g id="g14">
+      <defs id="defs16">
+        <radialGradient id="1" gradientUnits="userSpaceOnUse" cy="224.79" cx="166.61" r="279.8">
+          <stop id="stop19" style="stop-color:#58b8ff" offset="0"/>
+          <stop id="stop21" style="stop-color:#0500c6" offset=".41"/>
+          <stop id="stop23" style="stop-color:#0500c6" offset="1"/>
+        </radialGradient>
+      </defs>
+      <path id="path25" style="fill-rule:evenodd;fill:url(#1)" d="m110.09 364.99c81.47 18.23 245.02-98.24 39.3-364.99-16.24 66.22-111.86 124.42-136.47 182.94-33.165 78.86-3.0702 159.62 97.17 182.05z"/>
+      <path id="path27" style="fill-rule:evenodd;fill:#0000cd" d="m35.351 308.3c52.711 31.47-29.877-99.14 91.859-223.57-41.837 20.04-73.267 56.66-90.266 82.87-25.65 39.56-56.593 107.88-1.593 140.7z"/>
+      <path id="path29" style="fill-rule:evenodd;fill:#0808ce" d="m35.081 306.26c51.036 30.54-28.814-96.52 89.259-218.17-40.498 19.51-71.059 55.31-87.557 80.75-24.892 38.38-54.968 105.52-1.702 137.42z"/>
+      <path id="path31" style="fill-rule:evenodd;fill:#1111d0" d="m34.812 304.21c49.36 29.63-27.752-93.89 86.658-212.75-39.16 18.96-68.852 53.96-84.847 78.62-24.136 37.2-53.344 103.16-1.811 134.13z"/>
+      <path id="path33" style="fill-rule:evenodd;fill:#1919d2" d="m34.543 302.16c47.683 28.71-26.69-91.26 84.057-207.34-37.821 18.42-66.644 52.62-82.138 76.49-23.378 36.02-51.718 100.82-1.919 130.85z"/>
+      <path id="path35" style="fill-rule:evenodd;fill:#2222d3" d="m34.274 300.11c46.007 27.8-25.629-88.63 81.456-201.92-36.482 17.87-64.437 51.27-79.429 74.36-22.621 34.84-50.093 98.46-2.027 127.56z"/>
+      <path id="path37" style="fill-rule:evenodd;fill:#2a2ad5" d="m34.004 298.06c44.332 26.88-24.566-86 78.856-196.51-35.144 17.34-62.23 49.92-76.72 72.23-21.864 33.67-48.468 96.11-2.136 124.28z"/>
+      <path id="path39" style="fill-rule:evenodd;fill:#3333d7" d="m33.735 296.01c42.656 25.97-23.504-83.36 76.255-191.09-33.805 16.79-60.022 48.57-74.01 70.1-21.107 32.48-46.843 93.76-2.245 120.99z"/>
+      <path id="path41" style="fill-rule:evenodd;fill:#3b3bd8" d="m33.466 293.97c40.979 25.04-22.442-80.74 73.654-185.69-32.466 16.25-57.815 47.23-71.301 67.98-20.35 31.3-45.218 91.4-2.353 117.71z"/>
+      <path id="path43" style="fill-rule:evenodd;fill:#4444da" d="m33.197 291.92c39.303 24.13-21.381-78.11 71.053-180.28-31.127 15.72-55.607 45.89-68.592 65.85-19.592 30.13-43.592 89.05-2.461 114.43z"/>
+      <path id="path45" style="fill-rule:evenodd;fill:#4c4cdc" d="m32.927 289.87c37.628 23.21-20.318-75.48 68.453-174.86-29.789 15.17-53.4 44.53-65.882 63.72-18.836 28.94-41.968 86.7-2.571 111.14z"/>
+      <path id="path47" style="fill-rule:evenodd;fill:#5555dd" d="m32.658 287.82c35.952 22.3-19.256-72.85 65.85-169.45-28.448 14.63-51.19 43.19-63.171 61.59-18.078 27.77-40.343 84.35-2.679 107.86z"/>
+      <path id="path49" style="fill-rule:evenodd;fill:#5d5ddf" d="m32.389 285.77c34.276 21.38-18.195-70.22 63.249-164.03-27.109 14.09-48.983 41.84-60.462 59.46-17.321 26.58-38.717 82-2.787 104.57z"/>
+      <path id="path51" style="fill-rule:evenodd;fill:#6666e1" d="m32.12 283.72c32.599 20.46-17.133-67.58 60.648-158.62-25.77 13.55-46.775 40.5-57.753 57.33-16.563 25.41-37.092 79.65-2.895 101.29z"/>
+      <path id="path53" style="fill-rule:evenodd;fill:#6e6ee2" d="m31.85 281.68c30.924 19.54-16.07-64.96 58.048-153.21-24.432 13-44.568 39.15-55.043 55.2-15.807 24.23-35.468 77.29-3.005 98.01z"/>
+      <path id="path55" style="fill-rule:evenodd;fill:#7777e4" d="m31.581 279.63c29.248 18.63-15.008-62.33 55.447-147.8-23.093 12.47-42.36 37.8-52.334 53.08-15.049 23.04-33.842 74.94-3.113 94.72z"/>
+      <path id="path57" style="fill-rule:evenodd;fill:#7f7fe6" d="m31.312 277.58c27.572 17.71-13.946-59.7 52.846-142.39-21.754 11.93-40.153 36.46-49.625 50.95-14.292 21.87-32.217 72.59-3.221 91.44z"/>
+      <path id="path59" style="fill-rule:evenodd;fill:#8888e7" d="m31.043 275.53c25.895 16.79-12.885-57.07 50.245-136.97-20.416 11.38-37.946 35.11-46.916 48.82-13.534 20.68-30.592 70.23-3.329 88.15z"/>
+      <path id="path61" style="fill-rule:evenodd;fill:#9090e9" d="m30.773 273.48c24.22 15.88-11.822-54.44 47.645-131.56-19.077 10.84-35.738 33.76-44.206 46.69-12.778 19.51-28.967 67.89-3.439 84.87z"/>
+      <path id="path63" style="fill-rule:evenodd;fill:#9999eb" d="m30.504 271.43c22.544 14.97-10.76-51.81 45.044-126.14-17.738 10.3-33.531 32.41-41.497 44.56-12.02 18.33-27.342 65.53-3.547 81.58z"/>
+      <path id="path65" style="fill-rule:evenodd;fill:#a1a1ec" d="m30.235 269.38c20.868 14.05-9.698-49.18 42.443-120.73-16.399 9.76-31.323 31.07-38.788 42.43-11.263 17.15-25.716 63.18-3.655 78.3z"/>
+      <path id="path67" style="fill-rule:evenodd;fill:#aaaaee" d="m29.966 267.34c19.191 13.12-8.637-46.55 39.842-115.32-15.061 9.21-29.116 29.72-36.078 40.3-10.506 15.97-24.092 60.83-3.764 75.02z"/>
+      <path id="path69" style="fill-rule:evenodd;fill:#b2b2f0" d="m29.696 265.29c17.516 12.21-7.574-43.92 37.242-109.91-13.722 8.68-26.908 28.38-33.369 38.18-9.749 14.79-22.467 58.47-3.873 71.73z"/>
+      <path id="path71" style="fill-rule:evenodd;fill:#bbbbf1" d="m29.427 263.24c15.84 11.29-6.512-41.29 34.641-104.49-12.383 8.13-24.701 27.02-30.66 36.04-8.992 13.61-20.841 56.12-3.981 68.45z"/>
+      <path id="path73" style="fill-rule:evenodd;fill:#c3c3f3" d="m29.158 261.19c14.164 10.38-5.45-38.66 32.04-99.08-11.044 7.59-22.493 25.68-27.951 33.92-8.234 12.43-19.216 53.77-4.089 65.16z"/>
+      <path id="path75" style="fill-rule:evenodd;fill:#ccccf5" d="m28.889 259.14c12.487 9.46-4.389-36.03 29.439-93.67-9.706 7.05-20.286 24.34-25.241 31.79-7.478 11.26-17.592 51.42-4.198 61.88z"/>
+      <path id="path77" style="fill-rule:evenodd;fill:#d4d4f6" d="m28.619 257.1c10.812 8.54-3.326-33.41 26.839-88.26-8.367 6.51-18.078 22.98-22.532 29.66-6.72 10.07-15.966 49.06-4.307 58.6z"/>
+      <path id="path79" style="fill-rule:evenodd;fill:#ddddf8" d="m28.35 255.05c9.136 7.62-2.264-30.77 24.237-82.85-7.027 5.97-15.87 21.64-19.822 27.54-5.963 8.89-14.341 46.71-4.415 55.31z"/>
+      <path id="path81" style="fill-rule:evenodd;fill:#e5e5fa" d="m28.081 253c7.46 6.71-1.202-28.14 21.636-77.43-5.688 5.42-13.663 20.29-17.113 25.4-5.205 7.71-12.716 44.36-4.523 52.03z"/>
+      <path id="path83" style="fill-rule:evenodd;fill:#eeeefb" d="m27.812 250.95c5.783 5.79-0.141-25.51 19.035-72.02-4.35 4.89-11.455 18.95-14.403 23.28-4.449 6.53-11.091 42.01-4.632 48.74z"/>
+      <path id="path85" style="fill-rule:evenodd;fill:#f6f6fd" d="m27.542 248.9c4.108 4.88 0.922-22.88 16.435-66.6-3.011 4.34-9.248 17.6-11.694 21.14-3.691 5.36-9.466 39.66-4.741 45.46z"/>
+      <path id="path87" style="fill-rule:evenodd;fill:#ffffff" d="m27.273 246.85c2.432 3.96 1.984-20.25 13.834-61.19-1.672 3.8-7.04 16.25-8.985 19.02-2.934 4.17-7.84 37.3-4.849 42.17z"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>water drop</dc:title>
+        <dc:date>2006-09-30T05:26:46</dc:date>
+        <dc:description>drop, blue, water&#13;\nDone in Skencil.</dc:description>
+        <dc:source>https://openclipart.org/detail/237/water-drop-by-tomas_arad</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>tomas_arad</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>blue</rdf:li>
+            <rdf:li>drop</rdf:li>
+            <rdf:li>no contour</rdf:li>
+            <rdf:li>remix problem</rdf:li>
+            <rdf:li>water</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

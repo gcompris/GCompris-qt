@@ -25,19 +25,19 @@
 
 
 var currentLevel = 0
-var numberOfLevel = 6
+var numberOfLevel = 10
 var items
 var url = "qrc:/gcompris/src/activities/crane/resource/"
 
-var howManyFigures = [4,5,6,7,7,7]
-var allNames = ["bulb.png","letter-a.png","letter-b.png",
-                "rectangle1.png","rectangle2.png","square1.png",
-                "square2.png","triangle1.png","triangle2.png",
+var howManyFigures = [3,3,3,4,5,5,6,7,8,9,10,11,12,13]
+var allNames = ["bulb.png","letter-a.svg","letter-b.svg",
+                "rectangle1.svg","rectangle2.svg","square1.png",
+                "square2.png","triangle1.svg","triangle2.svg",
                 "tux.png","water_drop1.png","water_drop2.png",
                 "water_spot1.png","water_spot2.png"]
+var words = ["cat","dog","win","good","happy"]
 var names = []
 var names2 = []
-
 
 function start(items_) {
     items = items_
@@ -54,7 +54,7 @@ function initLevel() {
     init()
 }
 
-function init() {    
+function init() {
     items.columns = 7
     items.rows = 6
     items.gameFinished = false
@@ -62,22 +62,19 @@ function init() {
     setRandomModel()
 
     //select the first item in the grid
-    for(var i = 0; i < allNames.length; i++)
+    for(var i = 0; i < items.repeater.count; i++) {
         if (items.repeater.itemAt(i).source != "") {
             items.selected = i
             break
         }
+    }
 
     //set opacity for first item's "selection frame"
     items.repeater.itemAt(items.selected).selected.opacity = 1
 }
 
 function setRandomModel(){
-    // randomize the names
-    Core.shuffle(allNames)
-
     var numbers = []
-
 
     for (var i = 0; i < items.columns * items.rows; i++){
         names[i] = ""    // reset the board
@@ -85,29 +82,83 @@ function setRandomModel(){
         numbers[i] = i;  // generate columns*rows numbers
     }
 
-    //get "howManyFigures[currentLevel]" random numbers
-    Core.shuffle(numbers)
+    if (currentLevel >= words.length) {
+        // randomize the names
+        Core.shuffle(allNames)
 
-    for (i = 0; i < howManyFigures[currentLevel]; i++)
-        names[numbers[i]] = url + allNames[i]
+        //get "howManyFigures[currentLevel]" random numbers
+        Core.shuffle(numbers)
 
-    Core.shuffle(numbers)
+        for (i = 0; i < howManyFigures[currentLevel]; i++)
+            names[numbers[i]] = url + allNames[i]
 
-    for (i = 0; i < howManyFigures[currentLevel]; i++)
-        names2[numbers[i]] = url + allNames[i]
+        Core.shuffle(numbers)
 
-    //DEBUGGING
-    //    print("names: ",names)
-    //    print("names2: ",names2)
+        for (i = 0; i < howManyFigures[currentLevel]; i++)
+            names2[numbers[i]] = url + allNames[i]
+
+    } else {
+
+        var model = setModel()
+
+        for (i = 0; i < model.length; i++) {
+            if (model[i] != "") {
+                names[i] = model[i]
+                names2[i] = model[i]
+            }
+        }
+
+        Core.shuffle(names)
+    }
 
     items.repeater.model = names.length
     items.modelRepeater.model = names2.length
 
     for (i = 0; i < names.length; i++) {
         items.repeater.itemAt(i).source = names[i]
+        items.repeater.itemAt(i).opac = 0
         items.modelRepeater.itemAt(i).source = names2[i]
     }
 }
+
+function setModel() {
+    var model = []
+    for (var i = 0; i < items.columns * items.rows; i++){
+        model[i] = ""
+    }
+
+    var randomRow = Math.floor(Math.random() * items.rows)
+    var randomCol = Math.floor(Math.random() * items.columns)
+
+    if (items.columns - randomCol - words[currentLevel].length < 0)
+        randomCol = randomCol - Math.abs(items.columns - randomCol - words[currentLevel].length)
+
+    for (i=0; i<words[currentLevel].length; i++) {
+        model[randomRow * items.columns + randomCol + i] =  url + "Letters/" + words[currentLevel].charAt(i) + ".svg"
+    }
+
+    return model
+}
+
+
+function getNextIndex1(index) {
+
+    var length = items.repeater.count
+
+    for (var i = index + 1; i < length; i++) {
+        if (items.repeater.itemAt(i).source != "") {
+            return i
+        }
+    }
+    for (i = 0; i < index-1; i++) {
+        if (items.repeater.itemAt(i).source != "") {
+            return i
+        }
+    }
+
+    return -1;
+}
+
 
 function getNextIndex(source) {
     var length = names.length
@@ -118,7 +169,7 @@ function getNextIndex(source) {
             break
         }
 
-//    print("indexOf: ", names.indexOf(source))
+    //print("indexOf: ", names.indexOf(source))
 
     //go to next index
     i++
@@ -137,8 +188,9 @@ function getNextIndex(source) {
     // ok == true only if the image is in the right part of the list
     if (ok==true) {
         for (var j = 0; j<items.repeater.count; j++) {
-            if (names[i] == items.repeater.itemAt(j).source)
+            if (names[i] == items.repeater.itemAt(j).source) {
                 return j
+            }
         }
     }
     //ok == false, meaning that we have to start the search from left
@@ -152,9 +204,10 @@ function getNextIndex(source) {
         }
         //search for the index of that image in the repater and
         //return the index
-        for (j = 0; j<items.repeater.count; j++) {
-            if (names[i] == items.repeater.itemAt(j).source)
+        for (j = 0; j < items.repeater.count; j++) {
+            if (names[i] == items.repeater.itemAt(j).source) {
                 return j
+            }
         }
     }
 
@@ -194,7 +247,7 @@ function move(command) {
                 makeMove(item,item.height,item.y,items.columns,"y")
         } else if (command === "next") {
             items.repeater.itemAt(items.selected).selected.opacity = 0
-            items.selected = getNextIndex(items.repeater.itemAt(items.selected).source)
+            items.selected = (currentLevel < words.length) ? getNextIndex1(items.selected) : getNextIndex(items.repeater.itemAt(items.selected).source)
             items.repeater.itemAt(items.selected).selected.opacity = 1
         }
     }

@@ -132,6 +132,9 @@ ActivityBase {
 
                 Image {
                     id: figure
+                    sourceSize.height: board.height/3
+                    sourceSize.width: board.width/3
+
                     width: board.width/items.columns
                     height: board.height/items.rows
 
@@ -176,7 +179,14 @@ ActivityBase {
                             Activity.gesture(mouse.x - startX, mouse.y - startY)
 
                         // Select a figure with mouse/touch
-                        onClicked: source != "" ? items.selected = index : undefined
+                        onClicked: {
+                            if (source != "") {
+                                items.repeater.itemAt(items.selected).opac = 0
+                                items.selected = index
+                                items.repeater.itemAt(items.selected).opac = 1
+                            }
+                        }
+
                     }
 
                     // selected marker
@@ -216,6 +226,8 @@ ActivityBase {
 
                     Image {
                         id: modelFigure
+                        sourceSize.height: board.height/items.rows
+                        sourceSize.width: board.width/items.columns
                         width: board.width/items.columns
                         height: board.height/items.rows
                     }

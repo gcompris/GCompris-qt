@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg2"
+   sodipodi:modified="true"
+   viewBox="0 0 40 40"
+   inkscape:export-ydpi="90"
+   inkscape:export-xdpi="90"
+   version="1.0"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   sodipodi:docname="nlyl-orange-triangle.svg"
+   inkscape:export-filename="C:\Documents and Settings\sm\Desktop\inkscape graphics\orange_triangle.png"
+   inkscape:version="0.91 r13725"
+   sodipodi:version="0.32"
+   width="40"
+   height="40">
+  <defs
+     id="defs4">
+    <filter
+       id="filter3334"
+       height="1.4147"
+       width="1.3822"
+       y="-0.20735"
+       x="-0.19109"
+       inkscape:collect="always">
+      <feGaussianBlur
+         id="feGaussianBlur3336"
+         stdDeviation="23.203114"
+         inkscape:collect="always" />
+    </filter>
+    <linearGradient
+       id="linearGradient3346"
+       y2="122.31302"
+       gradientUnits="userSpaceOnUse"
+       x2="137.69939"
+       gradientTransform="translate(-15.119,-28.647)"
+       y1="214.32419"
+       x1="196.68362"
+       inkscape:collect="always">
+      <stop
+         id="stop3342"
+         style="stop-color:#8c7e03;stop-opacity:0.3197279"
+         offset="0" />
+      <stop
+         id="stop3344"
+         style="stop-color:#ffffff;stop-opacity:0.90476191"
+         offset="1" />
+    </linearGradient>
+    <filter
+       id="filter3392"
+       inkscape:collect="always">
+      <feGaussianBlur
+         id="feGaussianBlur3394"
+         stdDeviation="7.5731554"
+         inkscape:collect="always" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     inkscape:zoom="10.053334"
+     height="300px"
+     borderopacity="1.0"
+     inkscape:current-layer="layer1"
+     inkscape:cx="6.179081"
+     inkscape:window-y="21"
+     width="300px"
+     inkscape:guide-bbox="true"
+     showguides="true"
+     bordercolor="#666666"
+     inkscape:window-x="57"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:window-width="1623"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     pagecolor="#ffffff"
+     gridtolerance="10000"
+     inkscape:cy="29.677664"
+     inkscape:document-units="px"
+     inkscape:window-height="1029"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-maximized="1" />
+  <g
+     id="layer1"
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     transform="translate(19.347399,-279.35586)">
+    <path
+       id="path3256"
+       sodipodi:nodetypes="ccccccc"
+       style="fill:#2d251c;filter:url(#filter3334)"
+       d="m 145.24,30.124 128.67,223.81 -242.85,0 -10e-4,0 114.18,-223.81 0,0.004 z"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.14241272,0,0,0.14241272,-19.350064,279.26916)" />
+    <path
+       id="rect3253"
+       sodipodi:nodetypes="ccccccc"
+       style="fill:#ffe701;fill-opacity:0.90476191"
+       d="m -0.66790147,281.59584 19.65820847,34.1937 -37.102631,0 -1.57e-4,0 17.44442287,-34.1937 0,6.1e-4 z"
+       inkscape:connector-curvature="0" />
+    <path
+       id="path3338"
+       sodipodi:nodetypes="ccccccc"
+       style="fill:url(#linearGradient3346);filter:url(#filter3392)"
+       d="m 126.87,27.712 114.79,201.31 -217.51,0.62 0.001,0 102.72,-201.93 0,0.002 z"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.15278003,0,0,0.15278003,-20.406039,279.23904)" />
+  </g>
+  <metadata
+     id="metadata16">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>orange triangle</dc:title>
+        <dc:date>2007-02-13T16:42:40</dc:date>
+        <dc:description>An orange triangle</dc:description>
+        <dc:source>https://openclipart.org/detail/3199/orange-triangle-by-nlyl</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>nlyl</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>orange</rdf:li>
+            <rdf:li>shape</rdf:li>
+            <rdf:li>triangle</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
