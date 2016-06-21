@@ -22,6 +22,7 @@ import QtQuick 2.1
 
 import "../../core"
 import "nine_men_morris.js" as Activity
+import "."
 
 ActivityBase {
     id: activity
@@ -164,8 +165,8 @@ ActivityBase {
                 top: player1.bottom
                 topMargin: player1.height * 0.5
             }
-            width: player1.width * 1.2//Math.min(Math.min(0.9 * parent.width - board.x - board.width, 0.68 * board.width), 150)
-            height: player1.height * 1.2//0.18 * board.height
+            width: player1.width * 1.2
+            height: player1.height * 1.2
             visible: !items.isTutorial && items.firstPhase
             opacity: 0.8
             radius: 10
@@ -190,12 +191,13 @@ ActivityBase {
                         //source: Activity.url + "white_piece.svg"
                         //width: (grid.height / 4) * 1.1
                         //height: (grid.height / 4) * 1.1
-                        sourceSize.height: Math.min(firstInitial.height * 0.8,firstInitial.width * 0.4)
+                        sourceSize.height: Math.min(firstInitial.height * 0.8, firstInitial.width * 0.4)
                         x: firstInitial.width * 0.06
                         anchors.verticalCenter: firstInitial.verticalCenter
                         chance: items.counter % 2
                         playSecond: items.playSecond
                         gameDone: items.gameDone
+                        pieceBeingMoved: items.pieceBeingMoved
                         //opacity: 1
                     }
                 }
@@ -208,7 +210,7 @@ ActivityBase {
                     right: parent.right
                     rightMargin: parent.width * 0.1
                 }
-                fontSize: Math.max(Math.min(parent.height * 0.4,parent.width * 0.2),12)
+                fontSize: mediumSize //Math.max(Math.min(parent.height * 0.4, parent.width * 0.2),12)
                 color: "white"
                 style: Text.Outline
                 styleColor: "black"
@@ -267,12 +269,13 @@ ActivityBase {
                             //source: Activity.url + "black_piece.svg"
                             //width: (grid.height/4) * 1.1
                             //height: (grid.height/4) * 1.1
-                            sourceSize.height: Math.min(secondInitial.height * 0.8,secondInitial.width * 0.4)
+                            sourceSize.height: Math.min(secondInitial.height * 0.8, secondInitial.width * 0.4)
                             x: secondInitial.width * 0.06
                             anchors.verticalCenter: secondInitial.verticalCenter
                             chance: items.counter % 2
                             playSecond: items.playSecond
                             gameDone: items.gameDone
+                            pieceBeingMoved: items.pieceBeingMoved
                             //opacity: 1
                         }
                 }
@@ -285,7 +288,7 @@ ActivityBase {
                     right: parent.right
                     rightMargin: parent.width * 0.1
                 }
-                fontSize: Math.max(Math.min(parent.height * 0.8,parent.width * 0.4) / 2,12)
+                fontSize: mediumSize //Math.max(Math.min(parent.height * 0.8, parent.width * 0.4) / 2,12)
                 color: "white"
                 style: Text.Outline
                 styleColor: "black"
@@ -316,7 +319,7 @@ ActivityBase {
             style: Text.Outline
             styleColor: "black"
             horizontalAlignment: Text.AlignHLeft
-            width: implicitWidth//Math.min(implicitWidth, 0.9 * parent.width - 2 * player1.width)
+            width: implicitWidth //Math.min(implicitWidth, 0.9 * parent.width - 2 * player1.width)
             height: implicitHeight
             //wrapMode: TextEdit.WordWrap
             visible: !items.isTutorial
@@ -329,7 +332,7 @@ ActivityBase {
             anchors.top: instruction.top
             anchors.horizontalCenter: parent.horizontalCenter
             width: instruction.width + 20
-            height: instruction.height + 2//instruction.fontSize * 2.28 * Math.ceil(instruction.implicitWidth / instruction.width)
+            height: instruction.height + 2 //instruction.fontSize * 2.28 * Math.ceil(instruction.implicitWidth / instruction.width)
             opacity: 0.8
             radius: 10
             border.width: 2
@@ -346,8 +349,8 @@ ActivityBase {
         // Player scores section start
         Rectangle {
             id: player2
-            height: Math.min(background.height/10,Math.min(background.width/9,bar.height * 0.9))
-            width: height * 11/8
+            height: Math.min(background.height / 10, Math.min(background.width / 9, bar.height * 0.9))
+            width: height * 11 / 8
             anchors {
                 top: background.top
                 topMargin: 5
@@ -429,8 +432,8 @@ ActivityBase {
 
         Rectangle {
             id: player1
-            height: Math.min(background.height/10,Math.min(background.width/9,bar.height * 0.9))
-            width: height * 11/8
+            height: Math.min(background.height / 10, Math.min(background.width / 9, bar.height * 0.9))
+            width: height * 11 / 8
             anchors {
                 top: background.top
                 topMargin: 5

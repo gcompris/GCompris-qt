@@ -38,6 +38,7 @@ Image {
     property bool isSelected: false
     property bool playSecond
     property bool gameDone
+    property bool pieceBeingMoved
     property int chance
     opacity: 1.0//0.5
 
@@ -71,7 +72,8 @@ Image {
             piece.parent = pieceParent
             piece.anchors.centerIn = pieceParent
             piece.parent.state = piece.state
-            if (Activity.checkMill(piece))
+            piece.parent.pieceIndex = index
+            if (Activity.checkMill(piece.parentIndex,piece.state))
                 Activity.UpdateRemovablePiece()
             else if (firstPhase)
                 Activity.continueGame()
@@ -79,27 +81,18 @@ Image {
                 Activity.checkGameWon()
         }
     }
-    /*ParentAnimation {
-        id: pieceAnimation
+
+    NumberAnimation {
+        id: removePieceAnimation
         target: piece
-        newParent: pieceParent
-        NumberAnimation { properties: "x,y"; duration: 1000 }
-        onStarted: {
-            console.log("start")
-        }
-        onStopped: {
-            console.log("stop")
-        }
-    }*/
+        property: "opacity"
+        to: 0
+        duration: 430
+        onStarted: {Activity.removePieceSelected(index)}
+        onStopped: {Activity.removePiece(index)}
+    }
 
     states: [
-        State {
-            name: "invisible"
-            PropertyChanges {
-                target: piece
-                visible: false
-            }
-        },
         State {
             name: "1" // Player 1
             PropertyChanges{
@@ -119,15 +112,17 @@ Image {
     MouseArea {
         id: area
         property bool turn: chance ? piece.state == "2" : piece.state == "1"
-        enabled: ((canBeRemoved && !turn) || (!firstPhase && turn))
-                  && (piece.parentIndex != -1) && !gameDone
+        enabled: ((canBeRemoved && !turn) || (!firstPhase && turn)) &&
+                  (piece.parentIndex != -1) && !gameDone && (!pieceBeingMoved || canBeRemoved)
         anchors.centerIn: parent
         width: parent.width
         height: parent.height
         onClicked: {
             //console.log("gameDone",gameDone,"enabled",enabled)
+            console.log("index=",index)
             if (canBeRemoved)
-                Activity.removePiece(index)
+                removePieceAnimation.start()
+                //Activity.removePiece(index)
             else {
                 isSelected = true
                 Activity.pieceSelected(index);
@@ -142,30 +137,25 @@ Image {
         height: width
         visible: ((piece.visible && area.enabled && firstPhase) || isSelected) || canBeRemoved
         opacity: 1
-        radius: width/2
-        border.width: width/10//2.5
+        radius: width / 2
+        border.width: width / 10 //2.5
         border.color: canBeRemoved ? "red" : "green"
         color: "transparent"
-        z: -1//3
-        //onWidthChanged: {console.log(width)}
+        z: -1
     }
-
-    /*
-    Behavior on parent {
-        //ParentAnimation {
-            //NumberAnimation { properties: "x,y"; duration: 1000 }
-        //}
-        NumberAnimation { duration: 1000 }
-    }*/
 
     function move(pieceChangeParent) {
         piece.pieceParent = pieceChangeParent
         piece.parentIndex = pieceChangeParent.index
         piece.sourceSize.height = Qt.binding(function() { return pieceParent.width*2.5 })
         var coord = piece.parent.mapFromItem(pieceChangeParent.parent, pieceChangeParent.x + pieceChangeParent.width/2 -
-                        piece.width/2, pieceChangeParent.y + pieceChangeParent.height/2 - piece.height/2)
+                    piece.width/2, pieceChangeParent.y + pieceChangeParent.height/2 - piece.height/2)
         piece.moveX = coord.x
         piece.moveY = coord.y
         pieceAnimation.start()
+    }
+
+    function remove() {
+        removePieceAnimation.start()
     }
 }

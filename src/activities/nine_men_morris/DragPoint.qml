@@ -36,14 +36,14 @@ Rectangle {
     state: "AVAILABLE"
 
     property int index
-    property bool test
     //property bool pieceBeingRemoved
     property bool firstPhase
     property bool pieceBeingMoved
-    property QtObject leftPiece
-    property QtObject rightPiece
-    property QtObject upperPiece
-    property QtObject lowerPiece
+    property int pieceIndex
+    property QtObject leftPoint
+    property QtObject rightPoint
+    property QtObject upperPoint
+    property QtObject lowerPoint
 
     states: [
         State {
